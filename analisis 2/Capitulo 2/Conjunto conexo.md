@@ -1,0 +1,8 @@
+Con $S \subset \mathbb{R}^n$, $H, G \subset \mathbb{R}^n$ siendo estas abiertas. Entonces se cumple que 
+
+$$  \begin{matrix} 
+		S = (S \cap G) \cup (S \cap H) \\
+		\emptyset = (S \cup G) \cup (S \cup H)
+	\end{matrix} $$
+	
+Si es un [[Conjunto abierto]], entonces aplica que si es [[Conjunto conexo por poligonal]] entonces es conexo

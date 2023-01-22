@@ -1,0 +1,10 @@
+Sean $f, g : U \subseteq \mathbb{R}^n \to \mathbb{R}$ dos funciones definidas en el abierto $U$ de $\mathbb{R}^n$ y sea $x_0$ un punto de $U$ o un [[Punto frontera]] de $U$. Suponiendo que 
+
+$$ \lim_{x \to x_0} f(x) = L, \text{ } \lim_{x \to x_0} g(x) = M $$
+
+### Definicion
+Entonces, la suma esta definida como 
+
+$$ \lim_{x \to x_0} (f + g)(x) = \lim_{x \to x_0} (f(x) + g(x)) = \lim_{x \to x_0}f(x) + \lim_{x \to x_0}g(x) = L + M $$
+
+Es decir que la suma de los limites es la suma de los limites individuales

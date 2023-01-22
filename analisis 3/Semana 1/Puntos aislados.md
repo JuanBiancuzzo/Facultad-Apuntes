@@ -1,0 +1,1 @@
+Son aquellos puntos que no son [[Punto de acumulacion]]

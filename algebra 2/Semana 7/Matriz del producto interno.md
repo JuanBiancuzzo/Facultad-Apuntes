@@ -1,0 +1,3 @@
+La [[Matriz de Gram]] de una base $B$ determina al [[Producto interno]] $\langle \cdot, \cdot \rangle$. En caso este llamamos a $G_B$ la matriz del producto interno $\langle \cdot, \cdot \rangle$ en la base $B$
+
+$$ \langle x, y \rangle := y^T \cdot G_B \cdot x $$

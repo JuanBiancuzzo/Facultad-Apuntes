@@ -1,0 +1,1 @@
+El determinante de la [[Matriz hessiana]] es conocido como determinante Hessiano
