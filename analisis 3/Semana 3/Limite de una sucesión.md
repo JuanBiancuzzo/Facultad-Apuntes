@@ -1,3 +1,7 @@
+---
+dia: 2022-09-13
+materia: analisis 3
+---
 ### Definición 
 ---
 $l \in \mathbb{C}$ es limite de la [[Sucesión]]  $$(\alpha(n))_{n = 1}^\infty \Leftrightarrow \lim_{n \to \infty} |\alpha(n) - l | = 0 \Leftrightarrow \forall \epsilon > 0 : \exists n_\epsilon \in \mathbb{N} : \forall n \geq n_\epsilon : | \alpha(n) - l | < \epsilon $$ 

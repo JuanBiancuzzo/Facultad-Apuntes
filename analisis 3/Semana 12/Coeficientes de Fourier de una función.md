@@ -1,3 +1,7 @@
+---
+dia: 2022-11-29
+materia: analisis 3
+---
 ### Definición
 ---
 Sea $E_P^m$ un subespacio de $E_P$ ([[Conjunto de funciones periódicas]]), con $m \in \mathbb{N}$ donde: $$ E_P^m = gen\Set{e_{-m}, ~e_{-m + 1}, ~\cdots,~ e_{-2}, ~e_{-1}, ~e_{0}, ~e_{1}, ~e_{2}, ~\cdots, ~e_{m - 1}, ~e_{m}} $$

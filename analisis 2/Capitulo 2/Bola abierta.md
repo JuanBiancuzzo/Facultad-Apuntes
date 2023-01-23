@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Ver antes [[Norma de un vector]]
 
 ## Definicion

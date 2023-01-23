@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: algebra 2
+---
 Con dos subespacios $S$ y $T$ la interseccion esta dada por 
 $$S \cap T := \{v \in \mathbb{V} : v \in S \land v \in T \}$$
 

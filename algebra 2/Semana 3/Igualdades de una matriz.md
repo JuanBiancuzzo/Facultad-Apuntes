@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: algebra 2
+---
 Sea $A \in \mathbb{R}^{m \times n}$
 
  1. $nul(A^TA) = nul(A)$

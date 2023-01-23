@@ -1,3 +1,7 @@
+---
+dia: 2022-09-12
+materia: analisis 3
+---
 Sean 
 1) $f : D \to \mathbb{C}$ una función [[Holomorfa]] en un abierto $D \subseteq \mathbb{C}$
 2) $\gamma : I \to D$ una función [[Derivable]] en un intervalo $I \subseteq \mathbb{R}$

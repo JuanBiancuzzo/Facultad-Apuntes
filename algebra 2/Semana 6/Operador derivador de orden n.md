@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: algebra 2
+---
 Partiendo de [[Operador derivacion]], se define 
 
 $$ D^n := D \text{ } \circ \text{ } D \circ \text{ } \cdots \text{ } \circ \text{ } D$$

@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: algebra 2
+---
 Las ecuaciones que resolveremos son las ecuaciones diferenciales lineales homogeneas de orden 2, que tiene la forma 
 $$y'' + a_1 \cdot y' +a_0 \cdot y = 0$$
 con $a_0, a_1 \in \mathbb{R}$

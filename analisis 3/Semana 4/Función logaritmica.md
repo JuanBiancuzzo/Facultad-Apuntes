@@ -1,3 +1,7 @@
+---
+dia: 2022-09-12
+materia: analisis 3
+---
 ### Definición
 ---
 Dado la ecuación $exp(w) = z$ se define el logaritmo $w = log(z)$, es decir, la [[Inversa local]] de la [[Función exponencial]], por lo que necesitamos una region del espacio para que la función $exp(w)$ sea una [[Función biyecctiva]]. 

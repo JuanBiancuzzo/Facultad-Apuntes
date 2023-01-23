@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: algebra 2
+---
 Siendo $T: \mathbb{V} \to \mathbb{W}$ , la imagen de $T$ son todos los vectores de $\mathbb{W}$ que son resultado de la transformacion lineal
 
 ![[Pasted image 20211010152631.png]]

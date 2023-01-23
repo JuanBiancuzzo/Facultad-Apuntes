@@ -1,3 +1,7 @@
+---
+dia: 2022-09-12
+materia: analisis 3
+---
 ### Definición
 ---
 Para cada entero positivo $n$, sea $$ p_n : \mathbb{C} \to \mathbb{C} : p_n(z) = z^n$$

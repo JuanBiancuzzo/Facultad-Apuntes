@@ -1,3 +1,7 @@
+---
+dia: 2022-11-25
+materia: analisis 3
+---
 ### Definición
 ---
 El radio de convergencia de una [[Serie de potencias]] $S = \displaystyle\sum_{n = 0}^{\infty} c_n [\cdot]^n$ es el elemento $R \in [0, \infty]$ de la semirrecta real ampliada definido de la siguiente manera: 

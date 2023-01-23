@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: algebra 2
+---
 Dado $S_1$ y $S_2$ dos subespacios de $\mathbb{V}$, por lo tanto estos cumplen que 
 
 $$ dim(S_1 + S_2) = dim(S_1) + dim(S_2) + dim(S_1 \cap S_2) $$

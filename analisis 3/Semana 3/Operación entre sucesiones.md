@@ -1,3 +1,7 @@
+---
+dia: 2022-09-16
+materia: analisis 3
+---
 Dadas dos [[Sucesión]]es $\alpha = (\alpha_n)_{n = 1}^{\infty}$, $\beta = (\beta)_{n = 1}^{\infty}$ en $\mathbb{K}$ y dados dos constantes $a \in \mathbb{K}$ y $b \in \mathbb{K}$, quedan bien definidas las sucesiones
 
 1) $$ a \cdot \alpha + b \cdot \beta = (a \cdot \alpha_n + b \cdot \beta_n)_{n = 1}^{\infty} $$

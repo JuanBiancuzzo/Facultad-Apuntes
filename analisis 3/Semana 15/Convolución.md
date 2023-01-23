@@ -1,3 +1,7 @@
+---
+dia: 2022-12-04
+materia: analisis 3
+---
 ### Definición
 ---
 Sean $f, ~g \in L^1(\mathbb{R}, \mathbb{C})$ (donde $L^1$ es [[Conjunto de Lebesgue de orden n|conjunto de Lebesgue de orden 1]]) tales que $\overline{f}$ y $\overline{g}$ son acotadas. Entonces, para cada $x \in \mathbb{R}$, la [[Integrales impropias|integral]] $\int_{-\infty}^{+\infty} f(x - t) \cdot g(t) dt$ es [[Absolutamente integrable|absolutamente convergente]]. Queda entonces bien definida la función $f*g : \mathbb{R} \to \mathbb{C}$ tal que para cada $x \in \mathbb{R}$: $$ (f * g)(x) = \int_{-\infty}^{+\infty} f(x - t) \cdot g(t) dt $$

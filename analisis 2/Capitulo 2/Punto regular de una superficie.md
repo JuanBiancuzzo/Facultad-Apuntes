@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Sea $\Sigma$ la superficie de ecuacion $\vec{X} = \vec{F}(u, v)$ con $(u, v) \in D$
 
 ## Definicion

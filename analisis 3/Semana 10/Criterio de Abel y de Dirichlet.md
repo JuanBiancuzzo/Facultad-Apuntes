@@ -1,3 +1,7 @@
+---
+dia: 2022-11-27
+materia: analisis 3
+---
 ### Definición Abel
 ---
 Sean $u : [a, \infty) \to \mathbb{R}$ y $\alpha : [a, \infty) \to \mathbb{R}$ [[Función continua|funciones continuas]] tales que 

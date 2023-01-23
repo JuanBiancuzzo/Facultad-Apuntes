@@ -1,3 +1,7 @@
+---
+dia: 2022-12-04
+materia: analisis 3
+---
 ### Definición
 ---
 Sea $f : \mathbb{R} \to \mathbb{C}$ [[Seccionalmente continua]] y [[Absolutamente integrable]] en $\mathbb{R}$. Entonces para cada constante $\beta \in \mathbb{R}$ se verifica: $$ \lim_{\lambda \to \infty} \int_{-\infty}^{\infty} f(t) ~sen(\lambda t + \beta) dt = 0 $$

@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: algebra 2
+---
 En los espacios vectoriales vamos a poder definir dos operacciones [[Ley de composicion interna]] ($+$) y [[Ley de composicion externa]] ($\cdot$).
 
 Para poder definir un espacio vectorial primero tenemos que entender por [[Cuerpo]] ![[Cuerpo#Cuerpo de un espacio vectorial]] 

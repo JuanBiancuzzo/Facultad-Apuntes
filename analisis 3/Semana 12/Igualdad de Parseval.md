@@ -1,3 +1,7 @@
+---
+dia: 2022-11-29
+materia: analisis 3
+---
 ### Definición
 ---
 Para toda $f \in E_P$ ([[Conjunto de funciones periódicas]]) entonces $$ \sum_{n = -\infty}^\infty | c_n(f) |^2 = \frac{1}{P} \Vert f \Vert_2^2 $$

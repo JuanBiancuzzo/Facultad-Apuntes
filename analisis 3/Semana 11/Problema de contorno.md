@@ -1,3 +1,7 @@
+---
+dia: 2022-12-08
+materia: analisis 3
+---
 ### Definición
 ---
 Tenemos un sistema de ecuaciones donde una es una [[Ecuación diferencial ordinaria]] y otra dan condiciones en $x = 0$ y $x = L$, donde $L$ es el otro extremo . Por ejemplo $$ \begin{cases} 

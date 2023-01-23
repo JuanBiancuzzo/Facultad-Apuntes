@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Como cuando teniamos una funcion de una variable real, teniamos su representacion geometrica como 
 ![[Pasted image 20211101154645.png]]
 

@@ -1,3 +1,7 @@
+---
+dia: 2022-09-12
+materia: analisis 3
+---
 Son la [[Inversa local]] de la [[Función potencia]], por el [[Inversa local#Teorema de Inversibidad local]], sabemos que las inversas locales de $p_n$, que significa $\sqrt[n]{\text{ }}$, existen en torno de cada $z_0 \ne 0$ y que son [[Holomorfa]]s. 
 
 El calculo de sus derivadas $$ (\sqrt[n]{z})' = \frac{1}{p_n'(\sqrt[n]{z}) } = \frac{1}{n \cdot (\sqrt[n]{z})^{n - 1}} $$

@@ -1,3 +1,7 @@
+---
+dia: 2022-11-25
+materia: analisis 3
+---
 ### Definición
 ---
 Es una [[Serie]] donde $$ \sum_{n = - \infty}^{\infty} c_n \cdot (z - z_0)^n $$

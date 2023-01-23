@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Recordando que definimos la derivada como el [[Limite de funciones de una variable]] tal que
 
 $$ f'(x_0) = \lim_{h \to 0}\frac{f(x_0 + h) - f(x_0)}{h} $$

@@ -1,3 +1,7 @@
+---
+dia: 2022-09-19
+materia: analisis 3
+---
 ### Criterio de Chauchy
 ---
 ![[Criterio de Chauchy#Definición]]

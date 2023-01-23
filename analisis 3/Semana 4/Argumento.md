@@ -1,3 +1,7 @@
+---
+dia: 2022-09-12
+materia: analisis 3
+---
 Sea $z \in \mathbb{C}$, tal que $z = x + i \cdot y$, se define como 
 $$ arg : \mathbb{C} - \{0\} \to \mathbb{R} : arg(z) =
 \begin{cases}

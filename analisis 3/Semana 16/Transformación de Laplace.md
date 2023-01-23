@@ -1,3 +1,7 @@
+---
+dia: 2022-12-05
+materia: analisis 3
+---
 ### Definición
 ---
 Sea $\mathbb{L} : \mathbb{O} \to \mathbb{I}$, donde $\mathbb{L}$ es la aplicación de la [[Transformada de Laplace]], de un espacio $\mathbb{O}$ (cuyos elementos se denominan tradicionalmente "[[Función objeto]]") en un espacio $\mathbb{I}$ de funciones [[Holomorfa|holomorfas]], denominadas "funciones imagen", con las siguientes propiedades operativas:

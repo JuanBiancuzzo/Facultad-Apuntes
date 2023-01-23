@@ -1,3 +1,7 @@
+---
+dia: 2022-09-12
+materia: analisis 3
+---
 ### Definición
 ---
 La función $exp : \mathbb{C} \to \mathbb{C}$ esta definida, para cada $z \in \mathbb{C}$, como 

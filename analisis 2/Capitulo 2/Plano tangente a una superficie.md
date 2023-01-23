@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Como con funciones de una variable, donde la derivada nos daba la pendiente de la recta tangente, por lo tanto podriamos construirla
 
 El equivalente seria el plano tangente en un punto $(x_0, y_0)$, en una funcion tal que cualquier punto se pueda escribir $(x_0, y_0, f(x_0, y_0))$

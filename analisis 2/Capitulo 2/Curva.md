@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Dada $\vec{g} : I \subset \mathbb{R} \to \mathbb{R}^m$ si $\begin{cases} I \text{ es un intervalo} \\ \vec{g} \text{ es continua en } I \end{cases}$, el conjunto imagen de $\vec{g}$ se denomina curva
 
 Tambien se puede llegar a una curva, donde tenemos una [[Poligonal de vertices]] donde la cantidad de vertices tiende a infinito

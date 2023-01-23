@@ -1,3 +1,7 @@
+---
+dia: 2022-11-25
+materia: analisis 3
+---
 ### Definición
 ---
 Sea $f : D \to \mathbb{C}$ una función [[Holomorfa]] en un abierto que contiene una corona circular $D(z_0, r_1, r_2) = \set{z \in \mathbb{C} : r_1 < |z - z_0| < r_2}$. Entonces, para cada $z \in D(z_0, r_1, r_2)$ (los $z$ pertenecientes a la [[Corona]]) se tiene el desarrollo de serie de Laurent $$ \sum_{n = - \infty}^{\infty} c_n \cdot (z - z_0)^n 

@@ -1,3 +1,7 @@
+---
+dia: 2022-12-08
+materia: analisis 3
+---
 ### Definición
 ---
 La ecuación de Laplace es la que satisfacen las funciones del núcleo de este [[Operador de Laplace]], es decir: $$ \Delta u = 0 $$ cuyas soluciones son funciones armónicas.

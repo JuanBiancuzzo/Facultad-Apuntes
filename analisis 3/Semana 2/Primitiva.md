@@ -1,3 +1,7 @@
+---
+dia: 2022-09-12
+materia: analisis 3
+---
 ## Definición
 ---
 Dada una función $f : D \to \mathbb{C}$ definida en un [[Conjunto abierto]] $D \subseteq \mathbb{C}$, una primitiva de $f$ es una función [[Derivable]] $F : D  \to \mathbb{C}$ tal que para todo $z \in D : F'(z) = f(z)$

@@ -1,3 +1,7 @@
+---
+dia: 2022-09-28
+materia: analisis 3
+---
 ### Definción
 ---
 Son combinaciones lineal de la [[Función potencia]], de la forma

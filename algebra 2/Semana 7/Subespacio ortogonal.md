@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: algebra 2
+---
 Sea $A \subseteq \mathbb{V}$ un conjunto no vacio de $\mathbb{V}$, el subespacio ortogonal a $A$ denotado por $A^\perp$, se define por
 
 $$ A^\perp := \{x \in \mathbb{V} : \langle x, a \rangle = 0, \forall a \in A \} $$

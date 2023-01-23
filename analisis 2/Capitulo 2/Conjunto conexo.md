@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Con $S \subset \mathbb{R}^n$, $H, G \subset \mathbb{R}^n$ siendo estas abiertas. Entonces se cumple que 
 
 $$  \begin{matrix} 

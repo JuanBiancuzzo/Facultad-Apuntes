@@ -1,3 +1,7 @@
+---
+dia: 2022-12-08
+materia: analisis 3
+---
 ### Definición
 ---
 La función incógnita depende de dos o más variables y se presenta en la ecuación con sus derivadas parciales hasta cierto orden.

@@ -1,3 +1,7 @@
+---
+dia: 2022-11-30
+materia: analisis 3
+---
 ### Definición
 ---
 Sea $f \in E_P$ ([[Conjunto de funciones periódicas]]), y cada entero positivo $m$, $f_m = \sum_{n = -m}^m c_n(f) \cdot e_n$ es la $m$-esima suma de Fourier.

@@ -1,3 +1,7 @@
+---
+dia: 2022-12-05
+materia: analisis 3
+---
 ### Definición
 ---
 Para cada [[Función objeto]] $f : \mathbb{R} \to \mathbb{C}$ y cada complejo $s = \sigma + i \omega$ estudiemos la convergncia de la [[Transformada de Laplace]] $$ F(s) = \int_0^\infty f(t) e^{-st}dt $$

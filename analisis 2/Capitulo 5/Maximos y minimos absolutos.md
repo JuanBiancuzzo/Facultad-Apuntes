@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Dada $f : D \subset \mathbb{R}^n \to \mathbb{R}$, el conjunto $S \subset D$ y el punto $A \in S$ se dice que 
 
  * $f(A)$ es minimo absoluto de $f(x)$ en $S$, cuando $\forall x \in S - {A}$ resulta $f(x) > f(A)$

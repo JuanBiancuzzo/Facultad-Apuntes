@@ -1,3 +1,7 @@
+---
+dia: 2022-11-25
+materia: analisis 3
+---
 La clasificación de singularidades son las siguientes: 
 
 

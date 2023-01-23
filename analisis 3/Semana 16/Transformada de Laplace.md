@@ -1,3 +1,7 @@
+---
+dia: 2022-12-04
+materia: analisis 3
+---
 ### Definición
 ---
 Se denomina transformada de Laplace de $f$ a: $$ F(\sigma 

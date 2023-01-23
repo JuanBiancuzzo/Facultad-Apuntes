@@ -1,3 +1,7 @@
+---
+dia: 2022-11-27
+materia: analisis 3
+---
 ### Definición para $\int_a^\infty f(x) \cdot dx$
 ---
 Dada $f : [a, \infty) \to \mathbb{R}$ [[Seccionalmente continua]], sea $F : [a, \infty) \to \mathbb{R}$ tal que $F(\lambda) = \int_a^\lambda f(x) \cdot dx$. Entonces, si existe el limite $\lim_{\lambda \to \infty} F(\lambda)$ (y es finito), se dice que la integral $\int_a^\infty f(x) \cdot dx$ converge.

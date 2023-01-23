@@ -1,3 +1,7 @@
+---
+dia: 2022-12-04
+materia: analisis 3
+---
 ### Definición
 ---
 Dada una función $f : \mathbb{R} \to \mathbb{C}$ [[Seccionalmente continua]] y [[Absolutamente integrable]] en $\mathbb{R}$, se define como transformada de Fourier de $f$ a la función $\hat{f} : \mathbb{R} \to \mathbb{C}$ tal que para cada $\omega \in \mathbb{R}$: $$ \hat{f}(\omega) = \int_{-\infty}^{+\infty} f(x) e^{-i\omega x}dx $$

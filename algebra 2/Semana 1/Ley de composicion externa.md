@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: algebra 2
+---
 Tambien conocida como producto por escalar
 
 ## Caracteristicas de la composicion externa

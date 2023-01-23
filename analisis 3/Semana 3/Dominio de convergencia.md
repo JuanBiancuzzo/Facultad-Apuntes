@@ -1,3 +1,7 @@
+---
+dia: 2022-09-20
+materia: analisis 3
+---
 ### Definición
 ---
 Sea $\mathbb{D} \subseteq \mathbb{C}$ el conjunto de $z \in \mathbb{C}$ para los cuales la [[Serie de potencias]] converge, es decir

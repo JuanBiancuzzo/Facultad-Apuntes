@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Donde queremos llegar a poder encontrar $PR_{y \to x}$
 
 ![[Pasted image 20211013144255.png]] 

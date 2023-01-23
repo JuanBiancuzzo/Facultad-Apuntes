@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: algebra 2
+---
 Una matriz es un arreglo bidimensional de numeros, de $\mathbb{k}^{m \times n}$ 
 
 $$ A = \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\

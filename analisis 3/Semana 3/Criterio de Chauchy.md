@@ -1,3 +1,7 @@
+---
+dia: 2022-09-19
+materia: analisis 3
+---
 Dada una [[Serie]] $\alpha : \mathbb{N} \to \mathbb{K} : \bigg(\sum_{k = 0}^n \alpha_k \bigg)_{n = 1}^\infty$ , donde $\mathbb{K} \in \{ \mathbb{R}, \mathbb{C} \}$
 Utilizando el teorema [[Teoremas de completitud y de continuidad secuencial#Teorema 2 mathbb K mathbb R mathbb C]]
 

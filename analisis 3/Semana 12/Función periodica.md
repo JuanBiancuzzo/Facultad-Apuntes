@@ -1,3 +1,7 @@
+---
+dia: 2022-11-29
+materia: analisis 3
+---
 ### Definición
 ---
 Dado un número real positivo, una función $f : \mathbb{R} \to \mathbb{C}$ es $P$-periódica sii $$\forall x \in \mathbb{R} : f(x + P) = f(x)$$

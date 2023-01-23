@@ -1,3 +1,7 @@
+---
+dia: 2022-11-29
+materia: analisis 3
+---
 ### Definición
 ---
 La [[Serie de Fourier]] se puede expresar de forma trigonometrica de la siguente forma $$ f_m(x) = \sum_{n = -m}^m c_n(f) \cdot e^{\frac{2n\pi}{P} ix} = c_0(f) + \sum_{n = 1}^m \Bigg[ a_n(f) \cdot cos\bigg( \frac{2n\pi}{P}x \bigg) + b_n(f) \cdot sen\bigg( \frac{2n\pi}{P}x \bigg) \Bigg] $$ donde $$ \begin{align} 

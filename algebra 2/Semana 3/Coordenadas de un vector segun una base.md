@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: algebra 2
+---
 Para entender esto, ver [[Base]] y [[Combinacion lineal]]
 
 El vector de coordenadas de una base, es los "pesos" o $a_1, a_2, \cdots, a_n$  de la combinacion linea, para conseguir ese vector

@@ -1,3 +1,7 @@
+---
+dia: 2022-11-29
+materia: analisis 3
+---
 ### Definición
 ---
 Para toda $f \in E_P$ ([[Conjunto de funciones periódicas]]) y para todo entero positivo $m$ se verifica $$ \sum_{n = - m}^m \vert c_n(f) \vert^2 \le \frac{1}{P} \Vert f \Vert_2^2 $$

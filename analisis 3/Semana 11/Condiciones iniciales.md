@@ -1,3 +1,7 @@
+---
+dia: 2022-12-08
+materia: analisis 3
+---
 ### Definición
 ---
 Tenemos un sistema de ecuaciones donde una es una [[Ecuación diferencial ordinaria]] y otra dan condiciones en $t = 0$. Por ejemplo $$ \begin{cases} 

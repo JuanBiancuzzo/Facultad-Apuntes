@@ -1,3 +1,7 @@
+---
+dia: 2022-09-23
+materia: analisis 3
+---
 ### Definición
 ---
 Sea la inversión (multiplicativa) $J : \mathbb{C} - \{ 0 \} \to \mathbb{C} - \{ 0 \}$, definida por: $$ J(z) = \frac{1}{z} = \frac{\bar{z}}{|z|^2}$$

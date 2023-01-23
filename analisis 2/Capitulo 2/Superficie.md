@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Dada $\vec{F} : D \subset \mathbb{R}^2 \to \mathbb{R}^3$ con $\begin{cases} D \text{ conexo} \\ \vec{F} \text{ continua en } D \end{cases}$ ([[Conjunto conexo]]), el conjunto imagen de $\vec{F}$ se donomina superfice
 
 Esta relacionado a como vemos una [[Curva]]

@@ -1,3 +1,7 @@
+---
+dia: 2022-09-06
+materia: analisis 3
+---
 Dado un conjunto no vacio $U \subseteq \mathbb{C}$, $U$ es conexo sii $\underline{no}$ existen dos abiertos $A$ y $B$ que verifquen simultaneamente que:
 
 1) $U = (A \cdot U) + (B \cdot U)$

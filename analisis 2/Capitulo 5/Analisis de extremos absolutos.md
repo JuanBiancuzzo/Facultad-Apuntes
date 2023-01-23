@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Cuando una funcion es continua en un [[Conjunto compacto]] $S$, produce maximos y minimos absolutos en dicho conjunto
 
 En esta situacion, la estrategia para hallarlos es la siguiente

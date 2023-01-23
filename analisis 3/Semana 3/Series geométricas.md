@@ -1,3 +1,7 @@
+---
+dia: 2022-09-19
+materia: analisis 3
+---
 ### Definicón
 ---
 La serie geométrica es una [[Serie]] q se define para $b \in \mathbb{C}$, como

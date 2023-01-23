@@ -1,3 +1,7 @@
+---
+dia: 2022-09-09
+materia: analisis 3
+---
 1) Sean $f : D \to \mathbb{C}$ y $g : D \to \mathbb{C}$ dos funciones definidas en un conjunto $D \subseteq \mathbb{C}$, ambas [[Función continua]] en un punto $z_0 \in D$. Entonces:
 	1) Para todo subconjunto $D_0 \subseteq D$ tal que $z_0 \in D_0$, la restricción $f_{|D_0} : D_0 \to \mathbb{C}$ es continua en $z_0$
 	2) $f + g$, $f - g$ y $f \cdot g$ son [[Función continua]] en $z_0$. Si además $g$ no se anula en ningún punto de $D$, tambien $\frac{f}{g}$ es continua en $z_0$

@@ -1,3 +1,7 @@
+---
+dia: 2022-11-29
+materia: analisis 3
+---
 ### Definición
 ---
 Para cada $P > 0$, indicaremos con el símbolo $E_P$ el conjunto de todas las funciones $f : \mathbb{R} \to \mathbb{C}$ $P$-[[Función periodica|periódica]] y [[Seccionalmente continua]].

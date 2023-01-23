@@ -1,3 +1,7 @@
+---
+dia: 2022-09-19
+materia: analisis 3
+---
 ### Teorema 1 ($\mathbb{K} = \mathbb{R}$)
 ---
 Toda [[Sucesión]] de números reales $(\alpha_n)_{n = 1}^\infty$ creciente y acotada superiormente es convergente.

@@ -1,3 +1,7 @@
+---
+dia: 2022-11-27
+materia: analisis 3
+---
 ### Definición
 ---
 Si $\forall x \ge a : 0 \le f(x) \le g(x)$, entonces:

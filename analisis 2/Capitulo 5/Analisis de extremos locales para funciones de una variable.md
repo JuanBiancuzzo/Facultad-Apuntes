@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Veremos como analizar los [[Maximos y minimos locales]] para funciones de una variable
 
 ![[Pasted image 20211104153314.png]]

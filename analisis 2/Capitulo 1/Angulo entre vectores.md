@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Partiendo del [[Producto punto]], se define el producto como 
 
 ![[Pasted image 20211013155056.png]]

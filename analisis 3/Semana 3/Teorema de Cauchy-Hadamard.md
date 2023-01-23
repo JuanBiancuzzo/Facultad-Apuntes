@@ -1,3 +1,7 @@
+---
+dia: 2022-09-21
+materia: analisis 3
+---
 ### Definición
 ---
 Sea $\mathbb{D}$ el [[Dominio de convergencia]] de la [[Serie de potencias]] $\displaystyle\sum_{n = 0}^{\infty} c_n \cdot (z - z_0)^n$ y sea $f : \mathbb{D} \to \mathbb{C}$ la funciónn definida por esta [[Serie]]. Entonces

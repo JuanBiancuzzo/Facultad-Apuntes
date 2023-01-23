@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: algebra 2
+---
 Sea $(\mathbb{V}, \langle \cdot, \cdot \rangle)$ un $\mathbb{K}$-espacio euclideo. Y sea $\chi = \{x_1, x_2, \cdots, x_r \}$ un conjunto de vectores de $\mathbb{V}$ se llama la matriz de Gram, y se denota por $G_\chi$ a
 
 $$ G_\chi := \begin{bmatrix}

@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Partiendo de la definicion de [[Funciones implicitas]], plantearemos los siguientes
 
 Consideremos la funcion $z = F(x_1, x_2, \cdots, x_n, y)$. Sea $p = (x'_1, x'_2, \cdots, x'_n, y') \in \mathbb{R}^{n + 1}$ un punto tal que $F(p) = 0$

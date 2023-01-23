@@ -1,3 +1,7 @@
+---
+dia: 2022-09-13
+materia: analisis 3
+---
 Dada una [[Sucesión]] $\alpha : \in \mathbb{N} \to \mathbb{K}$ con $\mathbb{K} \in \{ \mathbb{R}, \mathbb{C} \}$ 
 
 $\alpha$ es convergente a un [[Limite]] $a \in \mathbb{K}$ (se indica $\lim_{n \to \infty} \alpha_n = a$) sii $$ \forall \epsilon > 0 : \exists n_\epsilon \in \mathbb{N} : \forall n \in \mathbb{N} : n \geq n_\epsilon \implies |\alpha_n - a| < \epsilon $$

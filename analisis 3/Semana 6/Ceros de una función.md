@@ -1,3 +1,7 @@
+---
+dia: 2022-11-25
+materia: analisis 3
+---
 ### Definición
 ---
 Sea $f : D \to \mathbb{C}$ una función [[Holomorfa]] en un abierto $D \subseteq \mathbb{C}$. Un cero de $f$ es un punto $z_0 \in D$ tal que $f(z_0) = 0$. Ahora, por ser $f$ holomorfa en $D$, es [[Función analitica|analitica]] en este abierto, por lo que admite un desarrollo en [[Serie de Taylor]], para todo $z_0 \in D(z_0, r)$ con $r > 0$ :

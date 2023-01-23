@@ -1,3 +1,7 @@
+---
+dia: 2022-09-29
+materia: analisis 3
+---
 ### Definición
 ---
 Es una [[Transformación conforme]] donde se define como $$

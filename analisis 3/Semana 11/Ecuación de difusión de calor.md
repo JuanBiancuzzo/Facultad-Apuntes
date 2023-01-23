@@ -1,3 +1,7 @@
+---
+dia: 2022-12-08
+materia: analisis 3
+---
 ### Definición
 ---
 El problema de difusión del calor en un [[Recinto compacto]] $K \subset \mathbb R^n$ es $$ \begin{cases} 

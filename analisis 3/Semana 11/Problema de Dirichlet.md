@@ -1,3 +1,7 @@
+---
+dia: 2022-12-08
+materia: analisis 3
+---
 ### Definición
 ---
 Para un [[Recinto compacto]] $K \in \mathbb{R}^n$ $$ \begin{cases} 

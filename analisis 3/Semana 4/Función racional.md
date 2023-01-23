@@ -1,3 +1,7 @@
+---
+dia: 2022-09-28
+materia: analisis 3
+---
 ### Definición
 ---
 Una función racional es un cociente de las funciónes $P$ y $Q$ donde $P$ y $Q$ son [[Función polinomica]] y $Q$ no es el polinomio nulo.

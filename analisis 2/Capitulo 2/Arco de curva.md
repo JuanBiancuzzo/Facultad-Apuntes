@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Dada una curva $C \subset \mathbb{R}^n$ de ecuacion $\vec{X} = \vec{g}(t)$ con $t \in I$
 
 ## Definicion

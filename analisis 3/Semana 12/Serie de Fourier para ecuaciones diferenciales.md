@@ -1,3 +1,7 @@
+---
+dia: 2022-11-30
+materia: analisis 3
+---
 ### Definición
 ---
 Dado el siguiente [[Ecuación de difusión de calor]] $$ \begin{cases} 

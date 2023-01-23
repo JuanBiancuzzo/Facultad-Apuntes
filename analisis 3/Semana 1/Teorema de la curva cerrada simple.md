@@ -1,3 +1,7 @@
+---
+dia: 2022-09-06
+materia: analisis 3
+---
 Sea $\Gamma \subset \mathbb{C}$  una curva cerrada simple. Entonces existen dos [[Conjunto abierto]] no vacios, $A$ y $B$ tales que:
 
 1) $\mathbb{C} = A + \Gamma + B$

@@ -1,3 +1,7 @@
+---
+dia: 2022-11-29
+materia: analisis 3
+---
 ### Definición
 ---
 Dada $f \in E_P$ ([[Convergenica de funciones periodicas]]) y una [[Sucesión]] $(f_m)_{m = 0}^\infty$ de funciones de $E_P$. 

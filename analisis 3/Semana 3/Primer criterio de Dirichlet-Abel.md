@@ -1,3 +1,7 @@
+---
+dia: 2022-09-19
+materia: analisis 3
+---
 Dados las [[Serie]]s $\alpha : \mathbb{N} \to \mathbb{R} : \bigg(\sum_{k = 0}^n \alpha_k \bigg)_{n = 1}^\infty$ y la serie $\beta : \mathbb{N} \to \mathbb{R} : \bigg(\sum_{k = 0}^n \beta_k \bigg)_{n = 1}^\infty$
 
 ### Definición

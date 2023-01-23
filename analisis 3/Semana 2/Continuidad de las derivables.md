@@ -1,3 +1,7 @@
+---
+dia: 2022-09-09
+materia: analisis 3
+---
 Sea $f : D \to \mathbb{C}$ una función definida en un [[Conjunto abierto]] $D \subseteq \mathbb{C}$ y [[Derivable]] en $z_0 \in D$. Entonces, $f$ es una [[Función continua]] en $z_0$
 
 ### Observación 

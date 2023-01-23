@@ -1,3 +1,7 @@
+---
+dia: 2022-12-08
+materia: analisis 3
+---
 ### Definición
 ---
 Para cada entero positivo $n$ y cada [[Recinto compacto]] $K \subset \mathbb{R}^n$, sea $C^2(K, \mathbb R)$ el espacio de las funciones $u : K \to \mathbb R$ de clase $C^2$ en $K'$ y [[Función continua|continuas]] en $K$. Se trata de un espacio vectorial real de dimensión infinita. Ahora, consideremos el espacio $C^0(K', \mathbb R)$ de las funciones continuas $K' \to \mathbb R$, otro espacio vectorial real de dimensión infinita.

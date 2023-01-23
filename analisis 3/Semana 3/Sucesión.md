@@ -1,3 +1,7 @@
+---
+dia: 2022-09-12
+materia: analisis 3
+---
 ### Definición
 ---
 Una sucesión de números complejos es una función $\alpha : \mathbb{N} \to \mathbb{C}$

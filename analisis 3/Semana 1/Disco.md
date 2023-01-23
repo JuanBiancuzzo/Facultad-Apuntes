@@ -1,3 +1,7 @@
+---
+dia: 2022-09-02
+materia: analisis 3
+---
 Conjuntos de puntos alrededor de un valor $z_0$ a una distancia $r$ del mismo. En ese caso estamos en el conjunto de los complejos, pero no necesariamente nos tendriamos que limitar a este para esta definicion. 
 
 Estos conjuntos los podemos definir como: 

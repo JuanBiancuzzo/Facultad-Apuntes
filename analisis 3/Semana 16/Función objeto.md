@@ -1,3 +1,7 @@
+---
+dia: 2022-12-05
+materia: analisis 3
+---
 ### Definición
 ---
 Indicaremos con $\mathbb{O}$ el conjunto de funciones $f : \mathbb{R} \to \mathbb{C}$ [[Seccionalmente continua]], [[Causales]] y de [[Orden exponencial]]. 

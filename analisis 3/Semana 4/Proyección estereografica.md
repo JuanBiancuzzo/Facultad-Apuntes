@@ -1,3 +1,7 @@
+---
+dia: 2022-09-28
+materia: analisis 3
+---
 ### Definición
 ---
 Es la proyección del plano (complejo en nuestro caso) sobre la esfera unitaria, tal que se define como 

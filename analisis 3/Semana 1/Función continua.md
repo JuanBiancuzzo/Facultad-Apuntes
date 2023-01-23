@@ -1,3 +1,7 @@
+---
+dia: 2022-09-06
+materia: analisis 3
+---
 ### Definicion
 ---
 Una función $f:D \to \mathbb{C}$ definida en un conjunto $D \subseteq \mathbb{C}$ _es continua en un punto_ $z_0 \in D$ sii para cada número real $\epsilon > 0$ existe un numero $\delta > 0$ para el cual se verifica la siguiente implicación (para todo complejo $z$):

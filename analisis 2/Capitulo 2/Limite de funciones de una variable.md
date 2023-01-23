@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Teniendo una funcion $f : I \subseteq \mathbb{R} \to \mathbb{R}$ donde $I$ es un intervalo abierto de $\mathbb{R}$. Sea $x_0 \in I$, y aceptaremos que $f(x_0)$ puede no existir
 
 El limite de $f(x)$ cuando $x$ tiende a $x_0$, es $L$, significa que mientras $x$ se va acercando a $x_0$, $f(x)$ se acerca a $L$

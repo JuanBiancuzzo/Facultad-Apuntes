@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 ![[Pasted image 20211104151841.png]]
 
 En la figura se representa $y = f(x)$ con $a \le x \le b$, por simple observacion es claro que

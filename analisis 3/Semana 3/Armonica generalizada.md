@@ -1,3 +1,7 @@
+---
+dia: 2022-11-25
+materia: analisis 3
+---
 ### Definición
 ---
 Se define la series armonicas generalizada como un caso especifico de una [[Serie]] donde $$ \sum_{n = 1}^{\infty} \frac{1}{n^\alpha} $$ donde $\alpha \in \mathbb{R}$ y donde esta serie converge a $f(x) = \frac{1}{x^\alpha}$.

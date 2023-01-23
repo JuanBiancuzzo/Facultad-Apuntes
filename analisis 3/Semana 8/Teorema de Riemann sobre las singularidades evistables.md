@@ -1,3 +1,7 @@
+---
+dia: 2022-11-26
+materia: analisis 3
+---
 ### Definición
 ---
 Sea $z_0$ una [[Singularidad evitable]] de la función $f : D \to \mathbb{C}$, [[Holomorfa]] en el abierto $D \subset \mathbb{C}$. Entonces, las siguientes afirmaciones son equivalentes:

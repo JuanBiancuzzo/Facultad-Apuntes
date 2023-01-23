@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Teorema de existencia y unicidad de las funciones definidas implicitamente por un sistema de ecuaciones escalares
 
 Sea $\vec{F} : D \subset \mathbb{R}^{n + m} \to \mathbb{R}^m$ con $n \ge 1$ y $m \ge 1$, del tipo $\vec{F}(x_1, \cdots, x_n, y_1, \cdots, y_m)$ con $\vec{F} = (F_1, \cdots, F_m)$ y el punto $\vec{A} = (a_1, \cdots, a_n, b_1, \cdots, b_m)$ tal que

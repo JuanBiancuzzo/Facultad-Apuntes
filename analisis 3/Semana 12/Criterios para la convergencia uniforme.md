@@ -1,3 +1,7 @@
+---
+dia: 2022-11-29
+materia: analisis 3
+---
 ### Definición 
 ---
 Si la [[Serie]] $\Bigg( \displaystyle \sum_{n = -m}^m c_n \Bigg)_{m = 1}^\infty$  [[Convergencia absoluta|converge absolutamente]], entonces por el [[Criterio de Weiestrass]], la serie $\Bigg( \displaystyle \sum_{n = -m}^m c_n \cdot  e_n \Bigg)_{m = 1}^\infty$ converge absolutamente a una función $h \in E_P$ ([[Conjunto de funciones periódicas]]), por ser [[Limite]] uniforme de continuas, esta función $h$ es continua. 

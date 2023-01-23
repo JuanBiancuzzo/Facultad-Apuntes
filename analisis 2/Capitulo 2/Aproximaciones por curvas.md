@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Supongamos que tenemos el siguiente limite
 
 $$ \lim_{(x, y) \to (0, 0)} \frac{x \cdot y}{x^2+y^2} $$

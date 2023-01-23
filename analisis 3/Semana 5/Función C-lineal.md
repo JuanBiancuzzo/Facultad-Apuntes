@@ -1,3 +1,7 @@
+---
+dia: 2022-09-29
+materia: analisis 3
+---
 ### Definición
 ---
 Una función $f : \mathbb{C} \to \mathbb{C}$ es $\mathbb{C}$-lineal, con $(\mathbb{C}, +, \mathbb{C}, \cdot)$, sii

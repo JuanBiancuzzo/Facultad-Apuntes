@@ -1,3 +1,7 @@
+---
+dia: 2022-09-12
+materia: analisis 3
+---
 ### Definición
 ---
 Una función $f : D \to \mathbb{C}$ definida en un [[Conjunto abierto]] $D \subseteq \mathbb{C}$ se dice localmente inversible en $D$ sii para cada $z_0 \in D$ existen abiertos $U_0$ y $V_0$ tales que 

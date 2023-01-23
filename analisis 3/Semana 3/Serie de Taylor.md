@@ -1,3 +1,7 @@
+---
+dia: 2022-09-21
+materia: analisis 3
+---
 ### Definición
 ---
 Dada una función $f : D \to \mathbb{C}$, con un $D \subseteq \mathbb{C}$, se define la [[Serie]] tal que

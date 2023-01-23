@@ -1,3 +1,7 @@
+---
+dia: 2022-09-06
+materia: analisis 3
+---
 ### Definición
 ---
 Sea $f:\mathbb{D} \to \mathbb{C}$ una funcion definida en un conjunto $\mathbb{D} \subseteq \mathbb{C}$, sea $z_0 \in \mathbb{C}$ un [[Punto de acumulacion]] de $\mathbb{D}$ y sea $l \in \mathbb{C}$. Entonces, se dice que "$f$ tiende a $l$ cuando $z$ tiende a $z_0$", o bien que "$l$ es límite de $f$ cuando $z$ tiende a $z_0$", sii:

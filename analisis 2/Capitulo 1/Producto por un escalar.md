@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Estando en $\mathbb{R}^n$, se define
 $$ c \cdot (x_1, x_2, \cdots, x_n) := (c \cdot x_1, c \cdot x_2, \cdots, c \cdot x_n)$$
 

@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: algebra 2
+---
 Sea $S$ un subespacio de $\mathbb{V}$ y $v \in \mathbb{V}$, decimos que $\hat{v}$ es la proyeccion ortogonal del vector $v$ sobre $S$ si verifica
 
 $$ \hat{v} \in S \text{ y } v - \hat{v} \in S^\perp $$

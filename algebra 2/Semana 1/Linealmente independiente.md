@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: algebra 2
+---
 Un conjunto ${v_1,v_2,\cdots,v_r}\subseteq\mathbb{V}$ es linealmente independiente, si dados $a_1,a_2,\cdots,a_r\in\mathbb{K}$ tales que la [[Combinacion lineal]] resulte en el $0_\mathbb{V}$ con $a_1=a_2=\cdots=a_r=0$
 $$a_1v_1+a_2v_2+a_3v_3+\cdots+a_nv_n=0_\mathbb{V}$$
 

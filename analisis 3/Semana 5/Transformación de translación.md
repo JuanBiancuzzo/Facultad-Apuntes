@@ -1,3 +1,7 @@
+---
+dia: 2022-10-15
+materia: analisis 3
+---
 ### Definición
 ---
 Es una [[Transformación conforme]] donde se define como $T_p : \mathbb{C} \to \mathbb{C}$ tal que $$\begin{align} 

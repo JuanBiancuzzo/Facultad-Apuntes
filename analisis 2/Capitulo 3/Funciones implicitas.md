@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Considere la funcion $z = F(x, y)$. Sea $(x_0, y_0) \in \mathbb{R}^2$ un punto tal que $F(x_0, y_0) = 0$
 
 Supongamos que la funcion $F$ tiene [[Derivadas parciales]] continuas en alguna [[Bola abierta]] $B$ con centro en $(x_0, y_0)$ y que $\frac{\partial F}{\partial y}(x_0, y_0) \ne 0$ 

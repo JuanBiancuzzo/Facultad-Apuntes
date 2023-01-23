@@ -1,3 +1,7 @@
+---
+dia: 2022-09-12
+materia: analisis 3
+---
 Se define como el [[Argumento]] pero limitado al rango $[-\pi, \pi]$
 
 $$ Arg : \mathbb{C} - \{ 0 \} \to [-\pi, \pi] : 

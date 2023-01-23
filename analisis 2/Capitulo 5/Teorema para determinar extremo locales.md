@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: analisis 2
+---
 Sea $f : D \subset \mathbb{R}^n \to \mathbb{R}$ con $n > 1$, tal que $f \in C^2(E(\vec{A}))$ y $\nabla f(\vec{A}) = 0$. Sea $H(\vec{A})$ el [[Determinante Hessiano]] de $f$ en $\vec{A}$
 
 ![[Pasted image 20211104155840.png]]

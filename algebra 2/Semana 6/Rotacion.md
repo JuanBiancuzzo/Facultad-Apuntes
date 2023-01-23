@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: algebra 2
+---
 Vamos a usar ![[Propiedades trigonometricas]]
 
 Partiendo de una situacion como esta

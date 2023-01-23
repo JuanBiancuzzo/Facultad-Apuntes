@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: algebra 2
+---
 Sea $\mathbb{V}$ un $\mathbb{K}$-espacio vectorial. Un producto interno en $\mathbb{V}$ es una funcion $\langle \cdot , \cdot \rangle : \mathbb{V} \times \mathbb{V} \to \mathbb{K}$, tal que
 
  1. Para cada $\lambda \in \mathbb{K}$ y para cada $x, y, z \in \mathbb{V}$

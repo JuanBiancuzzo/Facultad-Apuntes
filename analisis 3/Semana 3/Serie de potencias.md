@@ -1,3 +1,7 @@
+---
+dia: 2022-09-20
+materia: analisis 3
+---
 ### Definición
 ---
 Sea $(c_n)_{n = 0}^\infty$ una [[Sucesión]] de n{umeros complejos y sea $z_0 \in \mathbb{C}$. Para todo $z \in \mathbb{C}$, consideremos la [[Sucesión]]  $$ (c_n \cdot (z - z_0)^n)_{n = 0}^\infty $$ y la correspondiente [[Serie]] $$ \sum_{n = 0}^\infty c_n \cdot (z - z_0)^n $$

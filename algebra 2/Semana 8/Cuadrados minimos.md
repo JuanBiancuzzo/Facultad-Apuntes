@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: algebra 2
+---
 Teniendo la [[Transformacion lineal]] $T \in \mathcal{L}(\mathbb{V}, \mathbb{W})$, existe la ecuacion $T(v_0) = w_0$ cuando $w_0 \in Im(T)$ ([[Imagen de una transformacion lineal]])
 
 Entonces si $w_0 \notin Im(T)$, no existe solucion, pero si queremos obtener la solucion aproximada, podemos usar el vector mas cercano a $w_0$ que tenga solucion

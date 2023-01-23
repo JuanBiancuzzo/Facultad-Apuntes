@@ -1,3 +1,7 @@
+---
+dia: 2023-01-22
+materia: algebra 2
+---
 Sea $A \in \mathbb{C}^{m \times n}$ se define 
 
 $$ A^* = \overline{A^T} $$

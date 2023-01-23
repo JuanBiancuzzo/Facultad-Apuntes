@@ -1,3 +1,7 @@
+---
+dia: 2022-09-12
+materia: analisis 3
+---
 Sea $f : D \to \mathbb{C}$ una función definida en un [[Conjunto abierto]] $D \subseteq \mathbb{C}$, [[Derivable]] en $z_0 \in D$
 
 1) Sea $D_0 \subseteq D$ un subconjunto tambien abierto que contiene al punto $z_0$. Entonces, la restricción $f_{|D_0} : D_0 \to \mathbb{C}$ de $f$ a $D_0$ también es [[Derivable]] en $z_0$ y ademas $f'_{D_0}(z_0) = f'(z_0)$.

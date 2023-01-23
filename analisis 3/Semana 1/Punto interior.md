@@ -1,3 +1,7 @@
+---
+dia: 2022-09-02
+materia: analisis 3
+---
 Dado un conjunto no vacio $U \subseteq \mathbb{C}$ y un punto $z_0 \in \mathbb{C}$:
 
 $z_0$ es punto interior de $U$ sii existe $r > 0$ tal que [[Disco abierto]] de dicho radio sea un subconjunto de $U$, es decir: 

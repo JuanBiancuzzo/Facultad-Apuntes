@@ -1,3 +1,7 @@
+---
+dia: 2022-09-28
+materia: analisis 3
+---
 ### Definición
 ---
 Se define como
