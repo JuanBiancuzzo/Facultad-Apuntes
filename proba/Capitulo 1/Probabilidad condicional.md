@@ -1,4 +1,6 @@
 ---
-dia: 2023-01-23
-materia: proba
+dia: 2023-01-22
+materia: null
+---
+### Definición
 ---
