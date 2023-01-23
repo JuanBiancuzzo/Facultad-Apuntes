@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 7
 ---
 Una norma en un $\mathbb{K}$-espacio vectorial $\mathbb{V}$ es una funcion $\lVert \cdot \rVert : \mathbb{V} \to \mathbb{R}^+$ tal que 
 

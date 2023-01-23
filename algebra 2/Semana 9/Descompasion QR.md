@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 9
 ---
 Sea $A \in \mathbb{K}^{m \times n}$ de rango $n$ ([[Rango de una matriz]]). Una descomposicion QR de $A$ es una factorizacion 
 

@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 2
 ---
 Como con funciones de una variable, donde la derivada nos daba la pendiente de la recta tangente, por lo tanto podriamos construirla
 

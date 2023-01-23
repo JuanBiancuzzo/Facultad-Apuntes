@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 2
 ---
 ## Definicion
 Se dice que el conjunto $U \subseteq \mathbb{R}^n$ es un conjunto abierto de $\mathbb{R}^n$ si para cada $x_0 \in U$, $x_0$ es un [[Punto Interno]]

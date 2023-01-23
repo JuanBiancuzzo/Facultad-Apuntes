@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 7
 ---
 Dado $S_1$ y $S_2$ dos subespacios de $\mathbb{V}$, por lo tanto estos cumplen que 
 

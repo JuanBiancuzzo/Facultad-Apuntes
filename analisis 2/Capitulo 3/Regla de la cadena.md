@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 3
 ---
 Sea $g : V \subseteq \mathbb{R}^m \to \mathbb{R}^n$ una funcion definida en el conjunto abierto $V$ de $\mathbb{R}^m$, [[Diferenciable]] en $x_0 \in V$.
 

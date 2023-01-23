@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 7
 ---
 Siendo $B = \{w_1, w_2, \cdots, w_n \}$ la las columnas de la matriz de la [[Proyeccion ortogonal]] seran
 

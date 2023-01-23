@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 6
 ---
 Dados $a_0, a_1, \cdots, a_{n-1} \in \mathbb{K}$ y partiendo del [[Operador derivacion]] se define como $L: C^\infty(\mathbb{R}, \mathbb{K}) \to C^\infty(\mathbb{R}, \mathbb{K})$ , como:
 

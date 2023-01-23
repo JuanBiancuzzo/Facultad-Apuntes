@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 5
 ---
 Veremos como analizar los [[Maximos y minimos locales]] para funciones de una variable
 

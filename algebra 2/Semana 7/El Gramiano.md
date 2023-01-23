@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 7
 ---
 Llamatermos Gramiano de $\chi$ al determinante de la [[Matriz de Gram]]
 

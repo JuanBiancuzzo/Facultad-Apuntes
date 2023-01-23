@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 7
 ---
 Sea $u, v, w \in \mathbb{V}$ (3 punto no alineados) en el $\mathbb{R}$-espacio euclideo $(\mathbb{V}, \langle \cdot, \cdot \rangle)$, el siguiente es el triangulo de vertices $u, v, w$
 

@@ -1,6 +1,7 @@
 ---
 dia: 2022-09-02
 materia: analisis 3
+capitulo: 1
 ---
 Dados un complejo $z_0 \in \mathbb{C}$ y un numero real positivo $r$, se definen los siguientes subconjuntos del plano complejo
 

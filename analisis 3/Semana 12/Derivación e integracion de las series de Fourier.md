@@ -1,6 +1,7 @@
 ---
 dia: 2022-11-30
 materia: analisis 3
+capitulo: 12
 ---
 ### Definición
 ---

@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 3
 ---
 La suma directa es un caso espacifico de la [[Suma entre subespacios]] donde la [[Interseccion entre subespacio]] es el vector nulo
 

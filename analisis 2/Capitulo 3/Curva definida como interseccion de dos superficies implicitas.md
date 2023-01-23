@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 3
 ---
 Esto siendo un caso especifico de [[Multiples funciones implicitas]] y [[Superficie dada en forma implicita]]
 

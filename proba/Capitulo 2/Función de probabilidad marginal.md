@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-23
 materia: proba
+capitulo: 2
 ---
 Dado una [[Función de probabilidad conjunta]] $p_{X, Y}$ se define la función de probabilidad marginal como 
 $$ \begin{matrix}

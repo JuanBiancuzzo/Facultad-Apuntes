@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 3
 ---
 Para entender esto, ver [[Base]] y [[Combinacion lineal]]
 

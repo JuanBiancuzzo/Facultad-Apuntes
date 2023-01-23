@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 2
 ---
 ## Definicion
 La frontrera de un conjunto, es todos los puntos $x_0 \in U$, que sean ![[Punto frontera]]

@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 3
 ---
 Dada la ecuacion escalar $F(x, y) = 0$ y el punto $A = (x_0, y_0)$, si se cumple el [[Teorema Cauchy-Dini para ecuaciones escalares]], con la condicion adicional de que $\nabla F(A) \ne \vec{0}$
 

@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 2
 ---
 Sea $f: U \subseteq \mathbb{R}^n \to \mathbb{R}$ una funcion definida en el abierto $U$ de $\mathbb{R}^n$ y sea $x_0 \in U$
 

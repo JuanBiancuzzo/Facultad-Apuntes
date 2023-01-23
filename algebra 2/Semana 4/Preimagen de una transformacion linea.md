@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 4
 ---
 La preimagen es bastante parecida a la [[Imagen de una transformacion lineal]], pero en la preimagen es el conjunto de vectores para los cuales existe una transformacion lineal de ellos, lo que en funciones llamariamos dominio de la funcion.
 

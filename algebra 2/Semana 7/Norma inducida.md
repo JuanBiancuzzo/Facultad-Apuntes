@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 7
 ---
 Se lo llama norma inducida a la definicion de la [[Norma]] mediante el [[Producto interno]], de la forma
 

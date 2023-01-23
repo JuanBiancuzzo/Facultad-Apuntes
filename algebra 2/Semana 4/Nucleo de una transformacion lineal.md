@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 4
 ---
 El nucleo de la transformada es el conjunto de vectores que si se le aplica la transformacion lineal estos terminan siendo el $0_\mathbb{W}$
 

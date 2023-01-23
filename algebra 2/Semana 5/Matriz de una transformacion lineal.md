@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 5
 ---
 Ver antes [[Transformacion lineal]] y [[Matriz de cambio de base]]
 

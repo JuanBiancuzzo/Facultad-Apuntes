@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 1
 ---
 Un subespacio es un subconjunto de un $\mathbb{K}$-[[Espacio vectorial]] $\mathbb{V}$ con las mismas operacciones de [[Ley de composicion interna]] y [[Ley de composicion externa]] que estan definidas en el espacio vectorial
 

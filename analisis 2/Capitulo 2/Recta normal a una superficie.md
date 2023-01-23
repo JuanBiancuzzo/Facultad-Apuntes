@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 2
 ---
 La recta normal es aquella que pase por el punto $(x_0, y_0)$ en la direccion [[Normal de una superficie]], y perpendicular al [[Plano tangente a una superficie]], dando a la recta de ecuacion
 

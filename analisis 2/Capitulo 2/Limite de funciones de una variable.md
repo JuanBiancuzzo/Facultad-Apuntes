@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 2
 ---
 Teniendo una funcion $f : I \subseteq \mathbb{R} \to \mathbb{R}$ donde $I$ es un intervalo abierto de $\mathbb{R}$. Sea $x_0 \in I$, y aceptaremos que $f(x_0)$ puede no existir
 

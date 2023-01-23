@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 7
 ---
 Sea $A \subseteq \mathbb{V}$ un conjunto no vacio de $\mathbb{V}$, el subespacio ortogonal a $A$ denotado por $A^\perp$, se define por
 

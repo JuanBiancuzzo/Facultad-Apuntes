@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 3
 ---
 La idea de componer funciones, significa "sustituir una funcion en otra", donde teniendo dos funciones de una variable, $y = f(x)$ y $x = g(u)$ podemos reemplazar una en otra, haciendo $y = f(g(u))$. Obteniendo asi la composicion de $f$ con $g$, denotado como $f \circ g$
 

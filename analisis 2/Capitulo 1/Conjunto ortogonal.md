@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 1
 ---
 Partiendo de la definicion de [[Ortogonalidad]] y es teniendo un conjunto de vectores $v_1, v_2, \cdots, v_k$ en $\mathbb{R}^n$, es un conjunto ortogonal si
 

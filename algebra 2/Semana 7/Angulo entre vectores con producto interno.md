@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 7
 ---
 Podemos definir el angulo $\theta$ entre dos vectores no nulos $x$ e $y$ mediante el [[Producto interno]] y la [[Norma]]
 

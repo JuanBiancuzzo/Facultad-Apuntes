@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 3
 ---
 Seguimos expandiendo de la idea [[Funciones implicitas generalizada]]
 

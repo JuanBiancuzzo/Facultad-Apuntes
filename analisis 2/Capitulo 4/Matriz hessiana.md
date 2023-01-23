@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 4
 ---
 ## Definicion
 Sea $f : U \subseteq \mathbb{R}^n \to \mathbb{R}$ una funcion definida en el conjunto abierto $U$ de $\mathbb{R}^n$ y sea $\vec{x} \in U$. Suponga que las [[Derivadas parciales]] de segundo orden existen para $\vec{x}$. $H(\vec{x})$ la matriz cuadrada de orden $n$

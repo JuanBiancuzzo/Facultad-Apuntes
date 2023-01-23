@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 1
 ---
 Un conjunto, o como es [[Linealmente independiente]] podemos llamarlo base, ortonormal es cuando es [[Conjunto ortogonal]] y todos sus vectores sean [[Versor]]es, y por lo que van a cumplir
 

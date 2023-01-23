@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 5
 ---
 Una transformacion lineal es isomorfismo si es [[Monomorfismo]] y [[Epimorfismo]]
 

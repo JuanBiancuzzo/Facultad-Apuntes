@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 4
 ---
 Sean $\mathbb{V}$ y $\mathbb{W}$ dos $\mathbb{K}$-[[Espacio vectorial]], la funcion $T:\mathbb{V}\to\mathbb{W}$ se llama transformacion lineal
 

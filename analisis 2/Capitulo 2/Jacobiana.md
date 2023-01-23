@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 2
 ---
 Con $f : U \subseteq \mathbb{R}^n \to \mathbb{R}^m$ siendo esta diferenciable en el punto $x_0$, la transformacion lineal, y especificamente la matriz asociada con esta, que denotaremos $Df(a) \in \mathbb{R}^{n \times m}$ y se denomina como matriz Jacobiana
 

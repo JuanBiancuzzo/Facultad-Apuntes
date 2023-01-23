@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-23
 materia: proba
+capitulo: 3
 ---
 Es el promedio ponderado que puede tomar una [[Variable aleatoria]] $X$. Analogo al centro de masa de un objeto.
 

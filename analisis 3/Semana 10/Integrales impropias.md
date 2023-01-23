@@ -1,6 +1,7 @@
 ---
 dia: 2022-11-27
 materia: analisis 3
+capitulo: 10
 ---
 ### Definición para $\int_a^\infty f(x) \cdot dx$
 ---

@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 5
 ---
 ![[Pasted image 20211104151841.png]]
 

@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 2
 ---
 ## Algoritmos para producir una base a partir de un sistema de generadores
 Primero ver [[Base]] y [[Sistema de generadores]]

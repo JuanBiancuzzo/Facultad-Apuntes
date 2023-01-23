@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 3
 ---
 Tenemos dos ecuaciones con las variables $u$, $v$, $x$, $y$
 $$ 

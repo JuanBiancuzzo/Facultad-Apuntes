@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 4
 ---
 Dado un campo escalar $f : D \subset \mathbb{R}^n \to \mathbb{R}$ con $n > 1$ con $f \in C^k(E(\vec{A}))$, para todo $\vec{A} + \vec{H} \in E(\vec{A})$ puede expresarse 
 

@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 3
 ---
 Una matriz es un arreglo bidimensional de numeros, de $\mathbb{k}^{m \times n}$ 
 

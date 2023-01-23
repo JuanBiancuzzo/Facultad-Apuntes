@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 1
 ---
 El wronskiano se puede usar para determinar si un conjunto de funciones son [[Linealmente independiente]], para eso se usa lo siguiente
 

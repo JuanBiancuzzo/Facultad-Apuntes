@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 2
 ---
 Se determina si un punto de un conjunto, como un punto interno si para ese $x_0 \in U$ existe algun [[Entorno]] incluido en $U$
 

@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 5
 ---
 Dada $f : D \subset \mathbb{R}^n \to \mathbb{R}$, el conjunto $S \subset D$ y el punto $A \in S$ se dice que 
 

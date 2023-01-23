@@ -1,6 +1,7 @@
 ---
 dia: 2022-11-25
 materia: analisis 3
+capitulo: 5
 ---
 Sea $f: U \to \mathbb{C}$ [[Holomorfa]] en un abierto $U$ del plano complejo que contiene el [[Disco]] $D = \Set{z \in \mathbb{C}: |z| < 1}$ tal que $f(0) = 0$. Entonces:
 1) Para todo $z \in D$ se verifica que $|f(z)| \le |z|$.

@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 2
 ---
 Considerando la funcion $f : U \subseteq \mathbb{R}^2 \to \mathbb{R}$ definida en el conjunto abierto $U$ de $\mathbb{R}^2$. Si esta funcion es [[Diferenciable]], sabemos que existen las derivadas parciales $\frac{\partial f}{\partial x}$ y $\frac{\partial f}{\partial y}$ en cualquier punto $(x, y) \in U$
 

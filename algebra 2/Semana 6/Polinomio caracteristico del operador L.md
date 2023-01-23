@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 6
 ---
 Partiendo del [[Operador diferencial de orden n con coeficientes constantes]], se define un polinomio $p \in \mathbb{K}_n[x]$ que se obtenga de $L$ intercambiando papeles entre $D$ y $x$, tal que
 

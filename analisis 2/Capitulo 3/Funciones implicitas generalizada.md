@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 3
 ---
 Partiendo de la definicion de [[Funciones implicitas]], plantearemos los siguientes
 

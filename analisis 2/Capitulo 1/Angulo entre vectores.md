@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 1
 ---
 Partiendo del [[Producto punto]], se define el producto como 
 

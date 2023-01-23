@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 7
 ---
 Sea $A \in \mathbb{C}^{m \times n}$ se define 
 

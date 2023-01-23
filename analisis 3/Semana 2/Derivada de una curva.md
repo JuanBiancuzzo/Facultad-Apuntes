@@ -1,6 +1,7 @@
 ---
 dia: 2022-09-12
 materia: analisis 3
+capitulo: 2
 ---
 Sean 
 1) $f : D \to \mathbb{C}$ una función [[Holomorfa]] en un abierto $D \subseteq \mathbb{C}$

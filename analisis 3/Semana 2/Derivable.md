@@ -1,6 +1,7 @@
 ---
 dia: 2022-09-09
 materia: analisis 3
+capitulo: 2
 ---
 Sea $f : D \to \mathbb{C}$ una función definida en un [[Conjunto abierto]] $D \subseteq \mathbb{C}$ y sea $z_0 \in D$.  Entonces_
 1) $f$ es derivable en $z_0$ sii existe el [[Limite]] $\lim_{z \to z_0} \frac{f(z) - f(z_0)}{z - z_0}$. Dado que $z_0$ es [[Punto de acumulacion]] de $D - \{ z_0 \}$, este limite es único y se denomina derivada de $f$ en $z_0$. Se indica $f'(z_0)$, es decir:

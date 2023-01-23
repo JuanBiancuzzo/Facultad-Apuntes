@@ -1,6 +1,7 @@
 ---
 dia: 2022-09-13
 materia: analisis 3
+capitulo: 3
 ---
 Dada una [[Sucesión]] $\alpha : \in \mathbb{N} \to \mathbb{K}$ con $\mathbb{K} \in \{ \mathbb{R}, \mathbb{C} \}$ 
 

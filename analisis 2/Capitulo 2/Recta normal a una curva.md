@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 2
 ---
 Sea la curva $C \subset \mathbb{R}^n$ de ecuacion $\mathbb{X}=\vec{g}(t)$ con $t \in I$
 

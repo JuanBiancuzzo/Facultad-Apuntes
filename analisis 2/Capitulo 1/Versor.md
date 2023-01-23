@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 1
 ---
 Los versores $\hat{v}$ son los vectores de [[Espacio Rn]], donde el [[Norma de un vector]] es $1$, pero podemos hacer que cualquier vector sea un versor la siguiente forma
 

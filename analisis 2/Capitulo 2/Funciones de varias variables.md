@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 2
 ---
 Escribimos estas funciones como $f: A \to B$ donde los conjuntos $A$ (el dominio) y $B$ (el codominio) son no vacios
 

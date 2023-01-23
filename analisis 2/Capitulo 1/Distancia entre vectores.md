@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 1
 ---
 La distancia entre dos vectores $x$ y $y$ se puede usar la definicion de norma para definirla, tal que
 

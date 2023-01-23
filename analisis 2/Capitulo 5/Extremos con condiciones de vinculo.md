@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 5
 ---
 En este caso, vamos a aplicar el [[Analisis de extremos locales para campos escalares]], cuando sus variables deben cumplir ciertas condiciones, denominadas **condiciones de vinculo** entre las mismas
 

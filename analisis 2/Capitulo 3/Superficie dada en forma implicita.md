@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 3
 ---
 Dada la ecuacion escalar $F(x, y, z) = 0$ y el pnto $A = (x_0, y_0, z_0)$ si se cumple el [[Teorema Cauchy-Dini para ecuaciones escalares]], con la condicion que $\nabla F(A) \ne \vec{0}$ 
 

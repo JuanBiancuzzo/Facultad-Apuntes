@@ -1,6 +1,7 @@
 ---
 dia: 2022-09-12
 materia: analisis 3
+capitulo: 2
 ---
 Sea $f : D \to \mathbb{C}$ una función definida en un [[Conjunto abierto]] $D \subseteq \mathbb{C}$, [[Derivable]] en $z_0 \in D$
 

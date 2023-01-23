@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 5
 ---
 Dada $f : D \subset \mathbb{R}^n \to \mathbb{R}$ y el punto $A$ es un [[Punto Interno]] a su dominio, se dice que 
 

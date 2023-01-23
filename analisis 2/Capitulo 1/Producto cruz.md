@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 1
 ---
 El producto cruz esta definido para [[Espacio Rn]] con $n=3$ y su definicion es 
 

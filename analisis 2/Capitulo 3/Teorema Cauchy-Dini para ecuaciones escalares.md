@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 3
 ---
 Teorema de existencia y unicidad de la funcion definida implicitamente por una ecuacion escalar
 

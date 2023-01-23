@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 9
 ---
 Este metodo, o mejor llamado algoritmo, nos permite hallar una base ortogonal de cualquier otra base, usando el [[Producto interno]] determinado
 

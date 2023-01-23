@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 2
 ---
 Cuando teniamos una funcion de una variable [[La grafica de una funcion]], se veia como una cuerva tal que $p = (x_0, f(x_0))$ por lo tanto si queriamos la normal, lo veiamos como un vector perpendicular a la recta tangente en ese puento
 

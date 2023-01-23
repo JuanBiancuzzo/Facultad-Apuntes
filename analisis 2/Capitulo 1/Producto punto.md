@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 1
 ---
 Estando en $\mathbb{R}^n$, se define
 $$ x \cdot y = x_1 y_1 + x_2 y_2 + \cdots + x_n y_n$$ 

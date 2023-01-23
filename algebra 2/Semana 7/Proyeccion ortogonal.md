@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 7
 ---
 Sea $S$ un subespacio de $\mathbb{V}$ y $v \in \mathbb{V}$, decimos que $\hat{v}$ es la proyeccion ortogonal del vector $v$ sobre $S$ si verifica
 

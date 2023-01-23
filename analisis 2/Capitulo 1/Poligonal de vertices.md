@@ -1,5 +1,6 @@
 ---
 dia: 2023-01-22
 materia: analisis 2
+capitulo: 1
 ---
 Se denomina poligonal de vertices en los punto $a_1, a_2, \cdots, a_k \in \mathbb{R}^n$ al conjunto formado por la union de los [[Lado]] $\overline{a_1a_2}, \overline{a_2a_3}, \cdots, \overline{a_{k-1}a_k}$, tomados en ese orden

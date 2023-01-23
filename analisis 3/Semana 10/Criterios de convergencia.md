@@ -1,6 +1,7 @@
 ---
 dia: 2022-11-27
 materia: analisis 3
+capitulo: 10
 ---
 Para las integrales de la forma $\int_a^\infty f(x) \cdot dx$, donde todas las funciones involucradas se suponen [[Seccionalmente continua]].
 

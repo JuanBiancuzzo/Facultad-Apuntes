@@ -1,6 +1,7 @@
 ---
 dia: 2022-09-06
 materia: analisis 3
+capitulo: 1
 ---
 Dado un conjunto $U$, es un punto frontera, si es un [[Punto adherente]] al conjunto $U$ y $[\mathbb{C} - U]$
 

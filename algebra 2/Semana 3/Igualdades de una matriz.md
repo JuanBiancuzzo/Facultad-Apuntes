@@ -1,6 +1,7 @@
 ---
 dia: 2023-01-22
 materia: algebra 2
+capitulo: 3
 ---
 Sea $A \in \mathbb{R}^{m \times n}$
 

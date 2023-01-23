@@ -1,6 +1,7 @@
 ---
 dia: 2022-09-19
 materia: analisis 3
+capitulo: 3
 ---
 ### Criterio de Chauchy
 ---
