@@ -16,7 +16,7 @@
   "folder_templates": [
     {
       "folder": "/",
-      "template": "template/Template - Apunte.md"
+      "template": "template/Template - Definicion.md"
     }
   ],
   "syntax_highlighting": true,
