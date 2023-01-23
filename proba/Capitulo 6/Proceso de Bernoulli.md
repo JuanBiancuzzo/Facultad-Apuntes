@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Dado varias [[Variable aleatoria|variables aleatorias]] $X_i$ donde $X_i \sim Ber(p)$ una [[Distribución de Bernoulli|distribución de Bernoulli]], donde tiene 

@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Una función $f_X : \mathbb{R} \to \mathbb{R}$, para $X$ siendo una [[Variable aleatoria continua]], que satisface las siguientes condiciones:

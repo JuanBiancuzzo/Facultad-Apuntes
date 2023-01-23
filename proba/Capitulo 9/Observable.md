@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definción
 ---
 Sea una [[Variable aleatoria]] $X$, definida sobre una [[Espacio de probabilidad]] con distribución $F_X(x)$ que se desconoce. $X$ se denomina observable del experimento aleatorio. Donde los valores de $X$ son la [[Población]].

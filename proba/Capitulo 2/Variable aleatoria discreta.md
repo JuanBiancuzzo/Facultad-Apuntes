@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición 
 ---
 Sea $(\Omega, \mathbb{A}, \mathbb{P})$ un [[Espacio de probabilidad]] y $X$ una [[Variable aleatoria]], diremos que $X$ es una variable aleatoria discreta cuando existe $A \in \mathbb{R}$ finito o infinito numerable tal que $p_X(A) = 1$ donde $p_X(A) = \mathbb{P}(X \in A)$

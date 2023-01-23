@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Dada la [[Distribución normal]] se le llama distribución normal estandar a aquella [[Variable aleatoria]] $X \sim N(\mu = 0, \sigma^2 = 1)$. 

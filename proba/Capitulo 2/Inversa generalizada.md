@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Es la expresión de la inversa de la [[Función de distribución]], y se define como:

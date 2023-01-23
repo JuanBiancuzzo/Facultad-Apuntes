@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Sea $Y$ una [[Variable aleatoria]], $\mathbb{X} = (X_1, X_2, \cdots, X_n)$ un [[Vector aleatorio]], existirá alguna [[Función de variable aleatoria#Para Vector aleatorio]] $g(\mathbb{X})$ que nos sirva para predecir a $Y$. La mejor predicción es la que minimice el error cuadratico medio (que esta dado en función de la [[Esperanza]]) $$ E.C.M = E\bigg[ (Y - g(\mathbb{X}))^2 \bigg] $$

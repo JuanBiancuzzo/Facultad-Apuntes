@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Es la función conjunta (de [[Función de densidad]] o [[Función de probabilidad]]) vista como función del parámetro desconocido $\theta$ $$ \begin{align} 

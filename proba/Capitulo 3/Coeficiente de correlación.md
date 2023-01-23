@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición 
 ---
 La forma de interpretar la [[Covarianza]], entre las [[Variable aleatoria]] $X$ e $Y$ esta dada por $$ \rho_{XY} = \frac{Cov(X, Y)}{\sqrt{Var(X) \cdot Var(Y)}} $$ notemos como se usa la [[Varianza]] de cada variable.

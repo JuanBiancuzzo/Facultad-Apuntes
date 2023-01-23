@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 Es una regla de decisión entre la [[Hipótesis nula]] y la [[Hipótesis alternativa]], ($H_0$ y $H_1$ respectivamente), y la expresamos como una función de la [[Muestra aleatoria]] $\delta(\underline{X})$ que puede tomar los valores $0$ y $1$.
 
 Si $\delta(\underline{X}) = 1$ se rechaza $H_0$, y en caso contrario no se rechaza.

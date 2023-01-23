@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Dada $\underline X = \left(X_1, \cdots, X_n\right)$ una [[Muestra aleatoria]] de una [[Población]] con distribución  $F_\theta(x)$, $\theta \in \Theta$, un intervalo de confianza para $\theta$ de nivel $1-\alpha$ es un intervalo de extremos aleatorios $\left( a(\underline X), b(\underline X) \right)$ tal que $$ \mathbb{P}\left(\theta \in \left( a(\underline X), b(\underline X) \right) \right) = 1 - \alpha $$

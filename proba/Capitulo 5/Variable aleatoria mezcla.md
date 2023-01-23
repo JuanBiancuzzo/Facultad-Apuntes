@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Dado una [[Variable aleatoria]] $X$ se dice que es una variable aleatoria mezcla, si para una [[Partición]] $A_1, \cdots, A_n$ del [[Espacio muestral]] $\Omega$, su [[Función de distribución]] es $$ F_X(x) = \mathbb{P}(X \leq x) = \sum_{k = 1}^n F_{X|A_k}(x) \cdot \mathbb{P}(A_k) $$ donde $F_{X|A_k}(x)$ es la función de distribución de una [[Variable aleatoria condicional]].

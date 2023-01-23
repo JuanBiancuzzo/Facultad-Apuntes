@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Se comete cuando no se rechaza una [[Hipótesis nula]] que era falsa.

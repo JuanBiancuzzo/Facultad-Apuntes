@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 La distriución de $X$ pertenece a una familia de [[Función de distribución|distribuciones]] $\mathbb{F}$ que depende de un parámetro desconocido.

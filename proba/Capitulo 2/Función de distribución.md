@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Sea $(\Omega, \mathbb{A}, \mathbb{P})$ un [[Espacio de probabilidad]] y $X$ una [[Variable aleatoria]], definimos su función de distribución $F_X : \mathbb{R} \to [0, 1]$ dada por 

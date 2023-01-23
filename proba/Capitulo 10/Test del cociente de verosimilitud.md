@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Es una [[Test de hipótesis|test]] para [[Hipótesis]] simple vs [[Hipótesis]] simple, es decir que la [[Hipótesis nula]] y la [[Hipótesis alternativa]] ambas continenen un elemento. $$ H_0 : \theta = \theta_1 ~~~ H_1 : \theta = \theta_2 $$

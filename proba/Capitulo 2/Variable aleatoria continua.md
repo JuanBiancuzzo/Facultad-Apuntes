@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Una [[Variable aleatoria]] es continua si se cumplen las siguientes condiciones

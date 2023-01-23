@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Sea $(\Omega, \mathbb{A}, \mathbb{P})$ un [[Espacio de probabilidad]] y $X : \Omega \to \mathbb{R}$ una función, diremos que $X$ es una variable aleatoria si $X^{-1}(B) \in \mathbb{A}$

@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Tenemos $\underline X = \left(X_1, \cdots, X_n\right)$ una [[Muestra aleatoria]], donde tenemos una información previa sobre $\theta$, haciendo esta una [[Variable aleatoria]] (que nombraremos $\Theta$), con una cierta [[Función de distribución|distribución]] "a priori" $f_\Theta(\theta)$.

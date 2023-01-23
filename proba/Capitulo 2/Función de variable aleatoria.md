@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Sea $Y$ una función de variable aleatoria donde $Y = g(X)$. Entonces se define la [[Función de distribución]] de $Y$ como $$ F_Y(y) = \mathbb{P}(Y \leq y) = \mathbb{P}(g(X) \leq y) $$

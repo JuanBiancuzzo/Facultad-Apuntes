@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Dada $X_1, \cdots, X_n \sim F_\theta(x)$, $\theta \in \Theta$ una [[Muestra aleatoria]]. [[Estimador|Estimamos]] $\theta$ por $\hat{\theta}$. El Riesgo de estimar a $\theta$ con $\hat{\theta}$ se mide con el error cuadrático medio $$ R(\theta, \hat{\theta}) = ECM(\hat{\theta}) = E\bigg[(\theta - \hat{\theta})^2\bigg] $$ donde $E[\cdot]$ es la [[Esperanza]].

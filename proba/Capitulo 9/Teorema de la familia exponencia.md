@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Una [[Familia exponencial]] de $k$ parámetros tiene como [[Estadistico suficiente]] para $\theta \in \mathbb{R}^k$ al vector $$ T = \bigg( r_1(\underline{X}), ~r_2(\underline{X}), ~\cdots, ~r_k(\underline{X})  \bigg) $$

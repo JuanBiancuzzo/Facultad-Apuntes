@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Sean $X$ e $Y$ variables aleatorias con $Var(Y)$ finita, la [[Varianza]] de $Y | X = x$ será $$ Var(Y|X = x) = E[(Y - E[Y|X = x])^2 | X = x] $$ donde llamaremos $\mathcal{T}(x) = Var(Y | X = x)$, con $\mathcal{T} : Sop(X) \to \mathbb{R}$.

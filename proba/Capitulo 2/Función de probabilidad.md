@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición 
 ---
 Sea $X$ una [[Variable aleatoria discreta]], se llama función de probabilidad de $X$ a una función $p_X : \mathbb{R} \to [0, 1]$ tal que $p_X(x) = \mathbb{P}(X = x)$ 

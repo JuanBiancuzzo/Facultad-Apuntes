@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Sean $X$, $Y$ dos [[Variable aleatoria continua]], una función de densidad de probabilidad $f_{X, Y}(x, y)$ de estas dos variables es una función que satisface:

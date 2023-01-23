@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Dada $\underline X = \left( X_1, \cdots, X_n \right)$ una [[Muestra aleatoria]] de una [[Población]] con distribución $F_\theta(x)$, $\theta \in \Theta$, y $U = r(\underline X, \theta)$ una [[Variable aleatoria]] cuya [[Función de distribución|distribución]] no depende de $\theta$.

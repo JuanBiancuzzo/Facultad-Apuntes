@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definción
 ---
 Un proceso puntual aleatorio es un conjunto enumerable de puntos aleatorios ubicados sobre la recta real.

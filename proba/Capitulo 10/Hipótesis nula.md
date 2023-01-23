@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Es la [[Hipótesis]] objeto del ensayo, con el proposito de ser rechazada. Ya que un [[Ensayo de hipótesis|ensayo]] puede o no, rechazar esta hipótesis.

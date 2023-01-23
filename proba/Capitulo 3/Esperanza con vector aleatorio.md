@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 #### Casos especificos
 ---
 Dado una [[Función de variable aleatoria#Para Vector aleatorio]] $h(X, Y)$ cualquiera

@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Diremos que $\hat{\theta}(\underline{X})$ es un [[Estimador]] de máxima [[Función de verosimilitud|verosimilitud]] de $\theta$ si se cumple que $$ f_{\hat{\theta}}(\underline{X}) = \max_{\theta} f_\theta(\underline{x}) $$

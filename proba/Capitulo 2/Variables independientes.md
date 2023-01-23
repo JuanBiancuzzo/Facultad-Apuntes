@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Sea $(X, Y)$ un [[Vector aleatorio]], las [[Variable aleatoria]] $X$ e $Y$ son [[Variables independientes]] si y solo si 

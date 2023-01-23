@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Dada una [[Variable continua condicional]] $Y|X = x$, se define la [[Esperanza]] continua condicional como $$E[Y|X = x] = \int_{-\infty}^{\infty} y \cdot f_{Y|X = x}(y) \cdot dy$$

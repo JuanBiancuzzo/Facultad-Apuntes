@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Sean $X$ e $Y$ dos [[Variable aleatoria]], donde se define la covarianza (en función de la [[Esperanza]]) como $$\begin{align} Cov(X, Y) &= E\bigg[ (X - E[X]) \cdot (Y - E[Y]) \bigg] \\ Cov(X, Y) &= E[X \cdot Y] - E[X] \cdot E[Y] \end{align}$$

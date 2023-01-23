@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definción
 ---
 Dado una [[Variable aleatoria]] $S \sim B(n, p)$ con [[Distribución Binomial]], y definimos $N \sim N(E[S], Var(S))$ entonces con un $n \gg 1$ podemos decir $$ \begin{align} \mathbb{P}(S = x) &\sim f_N \\

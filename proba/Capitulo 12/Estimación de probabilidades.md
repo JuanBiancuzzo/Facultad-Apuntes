@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Si tenemos $X_1, \cdots, X_n$ una [[Muestra aleatoria]] con [[Función de densidad|desnidad]] $f_{\underline X | \Theta = \theta} (\underline x)$ y la distribución a posteriori $f_{\Theta|\underline X = \underline x}(\theta)$ (ver[[Estimación Bayesiana]]), entonces $$ \mathbb{P}\left(X_{n + 1} > a | \underline X = \underline x \right) = \int\limits_a^\infty \int\limits_{-\infty}^\infty f_{X_{n+1}|\Theta = \theta}(x) \cdot f_{\Theta | \underline X = \underline x}(\theta) ~ d\theta ~ dx $$

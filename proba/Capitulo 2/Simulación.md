@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 Dada una [[Variable aleatoria]] $X$, con una cierta [[Función de distribución]] $F_X$, la simulación es usando una [[Variable aleatoria]] $U$, crear una [[Función de variable aleatoria]] $g(U)$ tal que $X$ y $g(U)$ sean [[Eventos equivalentes]].
 
 En terminos generales, pedimos 

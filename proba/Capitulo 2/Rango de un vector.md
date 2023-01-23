@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Dado un [[Vector aleatorio]] $\mathbb{X} = (X_1, X_2, \cdots, X_n)$ y una [[Función de probabilidad conjunta]] $p_{X_1, X_2, ..., X_n}$, se define el rango de $\mathbb{X}$ como:

@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Sea $X$ e $Y$ [[Variable aleatoria continua]] haciendo un [[Vector aleatorio]], con [[Función de densidad conjunta]] $f_{X,Y}(x, y)$ y [[Función de densidad marginal]] $f_X(x)$, entonces para cualquier valor de $X$ con el cual $f_X(x) > 0$, la función de densidad de la variable condicional de $Y$ dado que $X = x$ es   $$ f_{Y | X = x}(y) = \frac{f_{X,Y}(x, y)}{f_X(x)} $$

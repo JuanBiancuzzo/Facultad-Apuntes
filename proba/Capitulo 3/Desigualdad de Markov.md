@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Sea $h : \mathbb{R} \to \mathbb{R}^+$, una [[Función de variable aleatoria]], tal que $h$ es $par$, y restringida a $\mathbb{R}^+$ es creciente, y sea $X$ una [[Variable aleatoria]] tal que la [[Esperanza]] ($E[h(X)]$) existe, entonces 

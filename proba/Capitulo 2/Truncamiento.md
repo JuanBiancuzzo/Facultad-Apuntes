@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Sea $X$ una [[Variable aleatoria]] con una [[Función de distribución]] $F_X$, y $A$ un conjunto de valores en los que se quiere trunca, $A \subseteq \mathbb{R}$, se define el truncamiento como la nueva [[Función de distribución]] $F_U$ donde $U = \{ x \in X : x \in A \}$, que por notación es $F_{X | X \in A}$, y la podemos definir

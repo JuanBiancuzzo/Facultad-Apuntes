@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Un estadistico es cualquier función medible $T_n = T(\underline{X})$ con valores en un espacio euclideo de dimensión finita.

@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición 
 ---
 Sea $(\Omega, \mathbb{A}, \mathbb{P})$ un [[Espacio de probabilidad]], se dice que $X = (X_1, X_2, \cdots, X_n)$ es un vector aleatorio de dimensión $n$, si para cada $j = 1, ..., n$, $X_j : \Omega \to \mathbb{R}$ es una [[Variable aleatoria]].

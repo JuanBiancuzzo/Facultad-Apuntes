@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Sean $X$, $Y$ dos [[Variable aleatoria discreta]] defindas en el [[Espacio muestral]] $\Omega$ de un experimento. La función de probabilidad conjunta se define para cada par de números $(x, y)$ como 

@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Dado [[Variable aleatoria discreta]] $M$ y una [[Partición]] $A_1, \cdots, A_n$ del [[Espacio muestral]], de forma que se define como $$ M = \begin{cases} 

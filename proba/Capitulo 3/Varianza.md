@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Sea $X$ una [[Variable aleatoria]], definimos la varianza de $X$ (usando la [[Esperanza]]) como $$ Var(X) = E[(X - E[X])^2] $$ donde podemos pensar que se usa la función $h(x) = ( x - E[X] )^2$, por lo tanto podemos plantear el calculo de la varianza $$\begin{matrix}

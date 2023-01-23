@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Es equivalencia con el [[Rango]] pero generalizado para cualquier tipo de [[Variable aleatoria]]. Se define el soporte de una [[Variable aleatoria]] como:

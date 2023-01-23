@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Sea $M$ una [[Variable aleatoria mezcladora]] y $X$ una [[Variable aleatoria mezcla]], de manera que conozco la [[Función de probabilidad]] de $M$ y la [[Función de densidad]] de las variables aleatorias $X|M = m, \forall m \in R_M$.

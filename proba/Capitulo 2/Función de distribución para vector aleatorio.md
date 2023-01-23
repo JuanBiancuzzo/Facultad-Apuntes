@@ -1,3 +1,7 @@
+---
+dia: 2023-01-23
+materia: proba
+---
 ### Definición
 ---
 Sea $X = (X_1, \cdot, X_n)$ un [[Vector aleatorio]] de dimensión $n$, definimos una función de distribución de $X$ como $$ F_X(x) = \mathbb{P}(X_1 \leq x_1, \cdots, X_n \leq x_n) $$
