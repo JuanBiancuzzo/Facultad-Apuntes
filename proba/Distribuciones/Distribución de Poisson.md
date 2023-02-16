@@ -15,3 +15,8 @@ $$ X \sim Poi(\mu) $$
 * El [[Rango]] de $X$ es $R_X = \{ x \in \mathbb{Z} : x \geq 0 \}$
 * $\mu > 0$ 
 * La [[Esperanza]] es $E[X] = \mu$ y la [[Varianza]] es $Var(X) = \mu$
+
+
+### Propiedades
+---
+Sea $X_n$ un [[Vector aleatorio]] donde $X_i  \sim Poi(\mu_i)$, y los [[Variables independientes|intependiente]] entre si. Entonces $$ \sum^n X_i \sim Poi\left(\sum^n \mu_i \right) $$ 

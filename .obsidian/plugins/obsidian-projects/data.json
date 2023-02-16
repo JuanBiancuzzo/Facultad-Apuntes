@@ -4,7 +4,9 @@
     {
       "fieldConfig": {},
       "defaultName": "",
-      "templates": [],
+      "templates": [
+        "template/Template - Definicion.md"
+      ],
       "excludedNotes": [
         "template/Template - Definicion.md"
       ],
@@ -255,7 +257,7 @@
               {
                 "field": "materia",
                 "operator": "is",
-                "value": "intro"
+                "value": "numerico"
               }
             ]
           },
