@@ -25,4 +25,8 @@ Si $X_1, \cdots, X_n$ son [[Variables independientes|independientes]] con $X_i \
 
 Si $X_1, \cdots, X_n$ son [[Variables independientes|independientes]] con $X_i \sim N(0,1)$ ([[Distribución normal]]), y $U = \sum_{i = 1}^n X_i^2$ entonces $U \sim \chi_n^2$
 
-Sean $X_1, \cdots, X_n$ son [[Variables independientes|independientes]] con $X_i \sim N(\mu, \sigma^2)$, entonces $W = \sum_{i = 1}^n \frac{(X_i - \overline{X})}{\sigma^2} \sim \chi_{n  - 1}^2$
+Sean $X_1, \cdots, X_n$ son [[Variables independientes|independientes]] con $X_i \sim N(\mu, \sigma^2)$, entonces $W = \displaystyle\sum_{i = 1}^n \frac{(X_i - \overline{X})}{\sigma^2} \sim \chi_{n  - 1}^2$
+
+Sean $X_1, \cdots, X_n$ son [[Variables independientes|independientes]] con $X_i \sim N(\mu, \sigma^2)$, entonces $W = \displaystyle\sum_{i = 1}^n \frac{(X_i - \mu)^2}{\sigma^2} \sim \chi_{n}^2$
+
+Sean $Z \sim N(0, 1)$ ([[Distribución normal]]) y $U \sim \chi_n^2$, entonces si $Z$ y $U$ son [[Variables independientes|independientes]] $$ T = \frac{Z}{\sqrt{\displaystyle\frac{U}{n}}} \sim t_n $$ donde $\lim_{n \to \infty} t_n \sim N(0, 1)$ ([[Distribución t-Student]]).

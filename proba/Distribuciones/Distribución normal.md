@@ -30,3 +30,7 @@ Para cuando $\mu = 1$ y $\sigma = 0$ se le dice distrobución normal estandar.
 ### Propiedades
 ---
 Sean $X_1, \cdots, X_n$ son [[Variables independientes|independientes]] con $X_i \sim N(\mu, \sigma^2)$ entonces $Z = \sqrt{n} \frac{\overline{X} - \mu}{\sigma} \sim N(\mu = 0, \sigma^2 = 1)$.
+
+Si $X_1, \cdots, X_n$ son [[Variables independientes|independientes]] con $X_i \sim N(0,1)$, y $U = \displaystyle\sum_{i = 1}^n X_i^2$ entonces $U \sim \chi_n^2$ ([[Distribución Chi cuadrado]])
+
+Sean $Z \sim N(0, 1)$ y $U \sim \chi_n^2$ ([[Distribución Chi cuadrado]]), entonces si $Z$ y $U$ son [[Variables independientes|independientes]] $$ T = \frac{Z}{\sqrt{\displaystyle\frac{U}{n}}} \sim t_n $$ donde $\lim_{n \to \infty} t_n \sim N(0, 1)$ ([[Distribución t-Student]]).
