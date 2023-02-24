@@ -15,7 +15,7 @@ $$ X \sim \Gamma(\nu, \lambda) $$
 ---
 * El [[Soporte]] de $X$ es $Sop(X) = [0, \infty)$ 
 * $\nu > 0$ y $\lambda > 0$
-* La [[Esperanza]] es $E[X] = \frac{\nu}{\mu}$, si $\nu \in \mathbb{N}$ entonces su [[Supervivencia]] es $S(t) = \displaystyle \sum_{n = 0}^{\nu - 1} \frac{e^{-\lambda \cdot t} \cdot (\lambda \cdot t)^n}{n!}$ y la [[Varianza]] es $Var(X) = \frac{\nu}{\lambda^2}$.
+* La [[Esperanza]] es $E[X] = \frac{\nu}{\lambda}$, si $\nu \in \mathbb{N}$ entonces su [[Supervivencia]] es $S(t) = \displaystyle \sum_{n = 0}^{\nu - 1} \frac{e^{-\lambda \cdot t} \cdot (\lambda \cdot t)^n}{n!}$ y la [[Varianza]] es $Var(X) = \frac{\nu}{\lambda^2}$.
 
 ### Propiedades
 ---

@@ -20,4 +20,6 @@ $$ X \sim G(p) $$
 
 ### Propiedades
 ---
-Si $X_1, \cdots X_n \sim G(p)$, [[Variables independientes|independientes]] entre si, entonces $\displaystyle \sum_{i = 1}^{n} X_i \sim Pas(n, p)$ su suma es una [[Distribución de Pascal]].
+* Si $X_1, \cdots X_n \sim G(p)$, [[Variables independientes|independientes]] entre si, entonces $\displaystyle \sum_{i = 1}^{n} X_i \sim Pas(n, p)$ su suma es una [[Distribución de Pascal]].
+
+* Tiene perdida de memoria.
