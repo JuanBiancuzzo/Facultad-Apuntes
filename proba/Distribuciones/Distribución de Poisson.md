@@ -17,6 +17,6 @@ $$ X \sim Poi(\mu) $$
 * La [[Esperanza]] es $E[X] = \mu$ y la [[Varianza]] es $Var(X) = \mu$
 
 
-### Propiedades
+#### Relaciones
 ---
-Sea $X_n$ un [[Vector aleatorio]] donde $X_i  \sim Poi(\mu_i)$, y los [[Variables independientes|intependiente]] entre si. Entonces $$ \sum^n X_i \sim Poi\left(\sum^n \mu_i \right) $$ 
+![[Relaciones entre distribuciones#Distribución de Poisson]]

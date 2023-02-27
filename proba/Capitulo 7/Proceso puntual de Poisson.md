@@ -5,7 +5,7 @@ capitulo: 7
 ---
 ### Definición
 ---
-Dado un [[Proceso puntual]], donde los arribos sean independientes y entre dos arribos consecutivos su distancia tenga [[Distribución exponencial]]. Con la siguiente notación: $$ \Pi \sim PPP(\lambda) $$ donde $\lambda$ es la intensidad o tasa de ocurrencia
+Dado un [[Proceso puntual]], donde los arribos sean independientes y entre dos arribos consecutivos su distancia tenga [[Distribución Exponencial]]. Con la siguiente notación: $$ \Pi \sim PPP(\lambda) $$ donde $\lambda$ es la intensidad o tasa de ocurrencia
 
 
 ### Variables utiles

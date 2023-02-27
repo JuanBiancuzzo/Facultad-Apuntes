@@ -17,3 +17,10 @@ $$ X \sim Ber(p) $$
 * El [[Rango]] de $X$ es $R_X = \{ 0, 1 \}$
 * $p \in (0, 1)$ 
 * La [[Esperanza]] es $E[X] = p$ y la [[Varianza]] es $Var(X) = p \cdot (1 - p)$
+
+
+#### Relaciones
+---
+![[Relaciones entre distribuciones#Distribución de Bernoulli y Distribución Binomial]]
+
+![[Relaciones entre distribuciones#Distribución de Bernoulli y Distribución Geométrica]]

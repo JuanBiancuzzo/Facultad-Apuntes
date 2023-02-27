@@ -18,8 +18,12 @@ $$ X \sim G(p) $$
 * $p \in (0, 1)$ 
 * La [[Esperanza]] es $E[X] = \frac{1}{p}$ y la [[Varianza]] es $Var(X) = \frac{(1 - p)}{p^2}$
 
-### Propiedades
+#### Propiedades
 ---
-* Si $X_1, \cdots X_n \sim G(p)$, [[Variables independientes|independientes]] entre si, entonces $\displaystyle \sum_{i = 1}^{n} X_i \sim Pas(n, p)$ su suma es una [[Distribución de Pascal]].
-
 * Tiene perdida de memoria.
+
+#### Relaciones
+---
+![[Relaciones entre distribuciones#Distribución Geométrica y Distribución de Pascal]]
+
+![[Relaciones entre distribuciones#Distribución de Bernoulli y Distribución Geométrica]]

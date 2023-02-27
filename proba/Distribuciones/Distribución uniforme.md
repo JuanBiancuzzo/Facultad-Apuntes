@@ -28,3 +28,6 @@ Supongamos que $X$ es una [[Variable aleatoria continua]]que toma todos los valo
 Por definición sabemos que $$ \int_{-\infty}^{\infty}f_X(x)dx = 1$$
 Por lo que en nuesto caso, eso da que $$ (a - b) \cdot k = 1 $$ 
 Entonces podemos encontrar el valor de $k$ como $$ k = \frac{1}{a - b} $$
+#### Relaciones
+---
+![[Relaciones entre distribuciones#Distribución Beta y Distribución uniforme]]

@@ -17,8 +17,8 @@ $$ X \sim Wei(c, \alpha) $$
 * La [[Esperanza]] es $E[X] = \alpha \cdot \Gamma(1 + \frac{1}{c})$, la [[Supervivencia]] es $S(t) = e^{-(\frac{t}{\alpha})^2}$ y la [[Varianza]] es $Var(X) = \alpha^2 \cdot (\Gamma(1 + \frac{2}{c}) - \Gamma^2(1 + \frac{1}{c}))$ donde $\Gamma(x)$ es la [[Función Gamma]].
 
 
-### Observaciones
+#### Relaciones
 ---
-Cuando se tiene una [[Variable aleatoria]] $X \sim Wei(c, 2)$ entonces $X^2 \sim Exp(\frac{1}{c^2})$ ([[Distribución exponencial]]).
+![[Relaciones entre distribuciones#Distribución Weibull y Distribución Exponencial]]
 
-![[Distribución Gamma#Equivalente con Weibull]]
+![[Relaciones entre distribuciones#Distribución Gamma y Distribución Weibull]]

@@ -13,11 +13,11 @@ WHERE contains(distribucion, "Continua")
 
 ### Distribución Uniforme
 ---
-![[Distribución uniforme#Definición]]
+![[Distribución Uniforme#Definición]]
 
 ### Distribución exponencial
 ---
-![[Distribución exponencial#Definición]]
+![[Distribución Exponencial#Definición]]
 
 ### Distribución Gamma
 ---
