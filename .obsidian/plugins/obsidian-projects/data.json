@@ -5,10 +5,20 @@
       "fieldConfig": {},
       "defaultName": "",
       "templates": [
-        "template/Template - Definicion.md"
+        "template/Template - Definicion.md",
+        "template/Taller - Definición.md",
+        "template/Seguridad - Definicion.md",
+        "template/Orga - Definicion.md",
+        "template/Numerico - Definicion.md",
+        "template/Estructura - Definicion.md"
       ],
       "excludedNotes": [
-        "template/Template - Definicion.md"
+        "template/Template - Definicion.md",
+        "template/Taller - Definición.md",
+        "template/Seguridad - Definicion.md",
+        "template/Orga - Definicion.md",
+        "template/Numerico - Definicion.md",
+        "template/Estructura - Definicion.md"
       ],
       "isDefault": true,
       "dataSource": {
