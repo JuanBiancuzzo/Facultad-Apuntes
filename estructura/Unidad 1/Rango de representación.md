@@ -1,5 +1,5 @@
 ---
-dia: 2023-03-13
+dia: 2023-03-14
 materia: estructura
 capitulo: 1
 ---

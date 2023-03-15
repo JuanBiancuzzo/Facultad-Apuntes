@@ -17,6 +17,26 @@
     {
       "folder": "/",
       "template": "template/Template - Definicion.md"
+    },
+    {
+      "folder": "estructura",
+      "template": "template/Estructura - Definicion.md"
+    },
+    {
+      "folder": "taller",
+      "template": "template/Taller - Definición.md"
+    },
+    {
+      "folder": "orga",
+      "template": "template/Orga - Definicion.md"
+    },
+    {
+      "folder": "seguridad",
+      "template": "template/Seguridad - Definicion.md"
+    },
+    {
+      "folder": "numerico",
+      "template": "template/Numerico - Definicion.md"
     }
   ],
   "syntax_highlighting": true,
