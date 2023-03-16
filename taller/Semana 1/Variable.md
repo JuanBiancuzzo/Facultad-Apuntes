@@ -5,4 +5,4 @@ capitulo: 1
 ---
 ### Definición
 ---
-Hola pipe
+Son constantes por default, no son [[Variable mutable|mutable]].
