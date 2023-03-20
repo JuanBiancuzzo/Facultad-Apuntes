@@ -50,7 +50,7 @@ fn main() {
 En el caso que este en subdirectorios
 ``` rust
 // frases/mod.rs -> es necesario que se llame mod.rs
-pub mod saludos;
+pub mod saludos; // tiene que ser el mismo nombre que el archivo siguiente
 ```
 
 ``` rust
