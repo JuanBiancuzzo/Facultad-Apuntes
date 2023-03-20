@@ -20,6 +20,186 @@
         "template/Numerico - Definicion.md",
         "template/Estructura - Definicion.md"
       ],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "/",
+          "recursive": true
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "distribucion": {
+                "hide": true
+              },
+              "materia": {
+                "hide": true
+              },
+              "path": {
+                "hide": true
+              },
+              "name": {
+                "width": 389
+              },
+              "capitulo": {
+                "width": 158
+              }
+            },
+            "sortField": "capitulo",
+            "sortAsc": true
+          },
+          "filter": {
+            "conditions": [
+              {
+                "field": "materia",
+                "operator": "is",
+                "value": "taller"
+              },
+              {
+                "field": "name",
+                "operator": "is-not-empty"
+              }
+            ]
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "4e13d2d0-67cb-48bf-a9d2-b06b678ff65d",
+          "name": "Taller de programación",
+          "type": "table"
+        },
+        {
+          "config": {
+            "fieldConfig": {
+              "distribucion": {
+                "hide": true
+              },
+              "materia": {
+                "hide": true
+              },
+              "path": {
+                "hide": true
+              },
+              "name": {
+                "width": 389
+              }
+            },
+            "sortField": "capitulo",
+            "sortAsc": true
+          },
+          "filter": {
+            "conditions": [
+              {
+                "field": "materia",
+                "operator": "is",
+                "value": "orga"
+              }
+            ]
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "611bec01-8426-480a-b053-08d5c3013a85",
+          "name": "Organización de datos",
+          "type": "table"
+        },
+        {
+          "config": {
+            "fieldConfig": {
+              "distribucion": {
+                "hide": true
+              },
+              "materia": {
+                "hide": true
+              },
+              "path": {
+                "hide": true
+              },
+              "name": {
+                "width": 389
+              }
+            },
+            "sortField": "capitulo",
+            "sortAsc": true
+          },
+          "filter": {
+            "conditions": [
+              {
+                "field": "materia",
+                "operator": "is",
+                "value": "seguridad"
+              }
+            ]
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "ed4bed82-25ae-4daa-bf4f-7fae025f11b1",
+          "name": "Seguridad",
+          "type": "table"
+        },
+        {
+          "config": {
+            "fieldConfig": {
+              "distribucion": {
+                "hide": true
+              },
+              "materia": {
+                "hide": true
+              },
+              "path": {
+                "hide": true
+              },
+              "name": {
+                "width": 389
+              }
+            },
+            "sortField": "capitulo",
+            "sortAsc": true
+          },
+          "filter": {
+            "conditions": [
+              {
+                "field": "materia",
+                "operator": "is",
+                "value": "estructura"
+              }
+            ]
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "c7286000-289c-4b94-86cc-720e898b8244",
+          "name": "Estructura del computador",
+          "type": "table"
+        }
+      ],
+      "id": "51dcc89d-2283-4ff7-83cb-1fbf8fb04f2f",
+      "name": "2023C1"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [
+        "template/Template - Definicion.md",
+        "template/Taller - Definición.md",
+        "template/Seguridad - Definicion.md",
+        "template/Orga - Definicion.md",
+        "template/Numerico - Definicion.md",
+        "template/Estructura - Definicion.md"
+      ],
+      "excludedNotes": [
+        "template/Template - Definicion.md",
+        "template/Taller - Definición.md",
+        "template/Seguridad - Definicion.md",
+        "template/Orga - Definicion.md",
+        "template/Numerico - Definicion.md",
+        "template/Estructura - Definicion.md"
+      ],
       "isDefault": true,
       "dataSource": {
         "kind": "folder",
@@ -58,13 +238,17 @@
                 "field": "materia",
                 "operator": "is",
                 "value": "algebra 2"
+              },
+              {
+                "field": "name",
+                "operator": "is-not-empty"
               }
             ]
           },
           "colors": {
             "conditions": []
           },
-          "id": "4e13d2d0-67cb-48bf-a9d2-b06b678ff65d",
+          "id": "8c28ef8d-f2f9-42fa-8a9e-fe9c06045030",
           "name": "Algebra 2",
           "type": "table"
         },
@@ -99,45 +283,43 @@
           "colors": {
             "conditions": []
           },
-          "id": "611bec01-8426-480a-b053-08d5c3013a85",
+          "id": "ca96f2db-58eb-46a2-bf58-1ac70a90b82d",
           "name": "Analisis 2",
           "type": "table"
-        },
-        {
-          "config": {
-            "fieldConfig": {
-              "distribucion": {
-                "hide": true
-              },
-              "materia": {
-                "hide": true
-              },
-              "path": {
-                "hide": true
-              },
-              "name": {
-                "width": 389
-              }
-            },
-            "sortField": "capitulo",
-            "sortAsc": true
-          },
-          "filter": {
-            "conditions": [
-              {
-                "field": "materia",
-                "operator": "is",
-                "value": "analisis 3"
-              }
-            ]
-          },
-          "colors": {
-            "conditions": []
-          },
-          "id": "ed4bed82-25ae-4daa-bf4f-7fae025f11b1",
-          "name": "Analisis 3",
-          "type": "table"
-        },
+        }
+      ],
+      "id": "c51e186c-6c05-490b-8476-c63abf5b8c15",
+      "name": "2021C2"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [
+        "template/Template - Definicion.md",
+        "template/Taller - Definición.md",
+        "template/Seguridad - Definicion.md",
+        "template/Orga - Definicion.md",
+        "template/Numerico - Definicion.md",
+        "template/Estructura - Definicion.md"
+      ],
+      "excludedNotes": [
+        "template/Template - Definicion.md",
+        "template/Taller - Definición.md",
+        "template/Seguridad - Definicion.md",
+        "template/Orga - Definicion.md",
+        "template/Numerico - Definicion.md",
+        "template/Estructura - Definicion.md"
+      ],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "/",
+          "recursive": true
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
         {
           "config": {
             "fieldConfig": {
@@ -169,8 +351,146 @@
           "colors": {
             "conditions": []
           },
-          "id": "c7286000-289c-4b94-86cc-720e898b8244",
+          "id": "23db5079-d25a-46ab-838e-827784feab43",
           "name": "Fisica 2",
+          "type": "table"
+        },
+        {
+          "config": {
+            "fieldConfig": {
+              "distribucion": {
+                "hide": true
+              },
+              "materia": {
+                "hide": true
+              },
+              "path": {
+                "hide": true
+              },
+              "name": {
+                "width": 389
+              }
+            },
+            "sortField": "capitulo",
+            "sortAsc": true
+          },
+          "filter": {
+            "conditions": [
+              {
+                "field": "materia",
+                "operator": "is",
+                "value": "numerico"
+              }
+            ]
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "466eec03-97e8-4562-b809-b122a779bca6",
+          "name": "Numerico",
+          "type": "table"
+        },
+        {
+          "config": {
+            "fieldConfig": {
+              "distribucion": {
+                "hide": true
+              },
+              "materia": {
+                "hide": true
+              },
+              "path": {
+                "hide": true
+              },
+              "name": {
+                "width": 389
+              }
+            },
+            "sortField": "capitulo",
+            "sortAsc": true
+          },
+          "filter": {
+            "conditions": [
+              {
+                "field": "materia",
+                "operator": "is",
+                "value": "discreta"
+              }
+            ]
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "2d079700-0cb0-46a1-9853-bcfde243f5c7",
+          "name": "Discreta",
+          "type": "table"
+        }
+      ],
+      "id": "0916a650-0b39-468c-8517-4cdd10b33161",
+      "name": "2022C1"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [
+        "template/Template - Definicion.md",
+        "template/Taller - Definición.md",
+        "template/Seguridad - Definicion.md",
+        "template/Orga - Definicion.md",
+        "template/Numerico - Definicion.md",
+        "template/Estructura - Definicion.md"
+      ],
+      "excludedNotes": [
+        "template/Template - Definicion.md",
+        "template/Taller - Definición.md",
+        "template/Seguridad - Definicion.md",
+        "template/Orga - Definicion.md",
+        "template/Numerico - Definicion.md",
+        "template/Estructura - Definicion.md"
+      ],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "/",
+          "recursive": true
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "distribucion": {
+                "hide": true
+              },
+              "materia": {
+                "hide": true
+              },
+              "path": {
+                "hide": true
+              },
+              "name": {
+                "width": 389
+              }
+            },
+            "sortField": "capitulo",
+            "sortAsc": true
+          },
+          "filter": {
+            "conditions": [
+              {
+                "field": "materia",
+                "operator": "is",
+                "value": "analisis 3"
+              }
+            ]
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "1590f44c-156a-466c-98f2-8d5eb56a468e",
+          "name": "Analisis 3",
           "type": "table"
         },
         {
@@ -204,7 +524,7 @@
           "colors": {
             "conditions": []
           },
-          "id": "3f859d09-6f3e-49b8-bbb1-9db7a84318d3",
+          "id": "d4d83322-68c8-4fe4-b852-30e6d4fa74af",
           "name": "Fisica 3",
           "type": "table"
         },
@@ -239,43 +559,8 @@
           "colors": {
             "conditions": []
           },
-          "id": "989e19f7-d26e-456b-8f21-5258583627f8",
+          "id": "d35b3ffd-824e-4027-a834-0ec97edf0ac2",
           "name": "Intro",
-          "type": "table"
-        },
-        {
-          "config": {
-            "fieldConfig": {
-              "distribucion": {
-                "hide": true
-              },
-              "materia": {
-                "hide": true
-              },
-              "path": {
-                "hide": true
-              },
-              "name": {
-                "width": 389
-              }
-            },
-            "sortField": "capitulo",
-            "sortAsc": true
-          },
-          "filter": {
-            "conditions": [
-              {
-                "field": "materia",
-                "operator": "is",
-                "value": "numerico"
-              }
-            ]
-          },
-          "colors": {
-            "conditions": []
-          },
-          "id": "519ccf62-9291-460d-b6e0-7382e4b41b6d",
-          "name": "Numerico",
           "type": "table"
         },
         {
@@ -309,13 +594,13 @@
           "colors": {
             "conditions": []
           },
-          "id": "6082dff9-350d-4c00-ac95-e69287af8dee",
+          "id": "0f24327a-08e5-4e45-b859-d97ee28cf9e1",
           "name": "Proba",
           "type": "table"
         }
       ],
-      "id": "51dcc89d-2283-4ff7-83cb-1fbf8fb04f2f",
-      "name": "Facultad"
+      "id": "fc9f478f-b295-42d8-aea1-9d5317a4fa4b",
+      "name": "2022C2"
     }
   ],
   "preferences": {
