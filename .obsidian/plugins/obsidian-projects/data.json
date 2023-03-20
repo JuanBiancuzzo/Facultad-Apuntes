@@ -286,6 +286,48 @@
           "id": "ca96f2db-58eb-46a2-bf58-1ac70a90b82d",
           "name": "Analisis 2",
           "type": "table"
+        },
+        {
+          "config": {
+            "fieldConfig": {
+              "distribucion": {
+                "hide": true
+              },
+              "materia": {
+                "hide": true
+              },
+              "path": {
+                "hide": true
+              },
+              "name": {
+                "width": 389
+              },
+              "capitulo": {
+                "width": 158
+              }
+            },
+            "sortField": "capitulo",
+            "sortAsc": true
+          },
+          "filter": {
+            "conditions": [
+              {
+                "field": "materia",
+                "operator": "is",
+                "value": "fisica 1"
+              },
+              {
+                "field": "name",
+                "operator": "is-not-empty"
+              }
+            ]
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "74dbb68d-99ff-4978-9d43-36b7e378e751",
+          "name": "Fisica 1",
+          "type": "table"
         }
       ],
       "id": "c51e186c-6c05-490b-8476-c63abf5b8c15",
