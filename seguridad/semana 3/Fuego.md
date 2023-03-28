@@ -8,6 +8,7 @@ capitulo: 3
 Es una reacción y apunta a sus características físicas y químicas.
 
 
+
 ### Clases
 ---
 ##### Tipo A
@@ -23,3 +24,6 @@ Se producen en instalaciones, equipos, maquinarias, motores o conductores energi
 
 ##### Tipo D
 Se origina en metales, por ejemplo: polvo de aluminio, virutas de hierro, etc.
+
+##### Tipo K (Estados unidos)/ F (Europa)
+Aquel que involucra aceites y grasas de cocción combustibles, ya sean vegetales o animales, contenidos en artefactos de cocina.

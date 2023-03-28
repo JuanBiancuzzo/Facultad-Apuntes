@@ -5,6 +5,8 @@ capitulo: 3
 ---
 ### Definición
 ---
+También conocido como el tetraedro del fuego
+
 ![[Tetraedro del fuego.png|600]]
 
 #### Tiene 4 componentes:
@@ -20,3 +22,7 @@ capitulo: 3
 
 ##### Reacción en cadena
 ![[Reacción en cadena#Definición]]
+
+#### Aclaración
+---
+Existe un triangulo del fuego, donde no se incluye la reacción en cadena, pero no es un buen modelo.
