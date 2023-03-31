@@ -30,7 +30,7 @@ El número total de personas a ser evacuadas se calcula como
 $$ N = \frac{S}{F_o} $$
 Donde se calcula la superficie como
 $$ S = S_\text{total} - S_\text{sanitaria} - L \cdot ne $$
-Con $L$ siendo el largo del camino más largo.
+Con $L$ siendo el largo del camino más largo. Donde $ne$ es el ancho de la ruta de [[Evacuación]].
 
 La unidad de ancho de salida, denotada como $n$ se calcula como 
 $$ n = \frac{N}{100} $$
@@ -43,3 +43,12 @@ Donde el mínimo debe ser:
 | 4                  | $2,00 m$         | $1,85 m$             |
 | 5                  | $2,10 m$         | $2,30 m$             |
 | 6                  | $2,90 m$         | $2,80 m$             |
+
+
+La cantidad de salidas, esta dado por 
+| Situación | NME                           |
+| --------- | ----------------------------- |
+| $n \le 3$ | Un medio de escape o escalera |
+| $n \ge 4$ | $\frac{n}{4} + 1$                              |
+
+

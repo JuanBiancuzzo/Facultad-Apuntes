@@ -5,3 +5,6 @@ capitulo: <% await tp.system.prompt("Capitulo: ") %>
 ---
 ### Definición
 ---
+``` python
+
+```
