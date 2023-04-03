@@ -8,8 +8,8 @@ capitulo: 1
 Tiene una cantidad limitada de símbolos, y estos pueden representar todos los números. Un caso especifico es el sistema decimal.
 
 Un sistema numérico posicional queda definido por:
-* Simbolos (en el caso decimal son $0$, $1$, $2$, $\cdots$, $9$.
-* Cantidad de simbolos ([[Base numerica |base]])
+* [[Símbolo|simbolos]] (en el caso decimal son $0$, $1$, $2$, $\cdots$, $9$).
+* Cantidad de simbolos ([[Base numerica|base]])
 * Peso de cada posición (Generalmente son potencias crecientes de la [[Base numerica |base]])
 * Cantidad de posiciones
 
