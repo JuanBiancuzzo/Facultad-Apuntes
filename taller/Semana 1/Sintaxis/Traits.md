@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-`trait` permite definir comportamiento común a las estructuras, similar a las interfaces en otros lenguajes. Representa una capacidad, algo que un [[Tipos de datos|tipo de dato]], [[Estrucutura|estructura]] o [[Enum|enum]] puede hacer.
+`trait` permite definir comportamiento común a las estructuras, similar a las interfaces en otros lenguajes. Representa una capacidad, algo que un [[Tipo de dato|tipo de dato]], [[Estrucutura|estructura]] o [[Enum|enum]] puede hacer.
 
 ``` rust
 trait NombreCompleto {

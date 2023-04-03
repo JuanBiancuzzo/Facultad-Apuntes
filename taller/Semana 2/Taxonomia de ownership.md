@@ -5,7 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-Se puede usar el sistema de [[Tipos de datos|tips]] para validar que [[Variable|algo]] sea mutable o compartido, pero no ambdas a la vez.
+Se puede usar el sistema de [[Tipo de dato|tips]] para validar que [[Variable inmutable|algo]] sea mutable o compartido, pero no ambdas a la vez.
 
 | Tipo     | [[Ownership]]         | Alias | Mutable |
 | -------- | --------------------- | ----- | ------- |

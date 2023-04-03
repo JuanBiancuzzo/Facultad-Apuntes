@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-Permite a las [[Función|funciones]] utilizar cualquier [[Tipos de datos|tipo de dato]], y se puede usar en conjunto de los [[Traits]] para exigir que puedan hacer ciertas cosas, por ejemplo
+Permite a las [[Función|funciones]] utilizar cualquier [[Tipo de dato|tipo de dato]], y se puede usar en conjunto de los [[Traits]] para exigir que puedan hacer ciertas cosas, por ejemplo
 
 ``` rust
 struct Celsius(i32);

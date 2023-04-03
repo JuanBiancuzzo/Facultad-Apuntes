@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-Un elemento que puede contener algún valor o nada. $T$ es un [[Generic|generics]] que puede tomar cualquier [[Tipos de datos|tipo de dato]].
+Un elemento que puede contener algún valor o nada. $T$ es un [[Generic|generics]] que puede tomar cualquier [[Tipo de dato|tipo de dato]].
 
 ``` rust
 enum Option<T> {
