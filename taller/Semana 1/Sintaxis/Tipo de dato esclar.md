@@ -41,7 +41,7 @@ También se puede expresar números literales en diferentes [[Base numerica|base
 | Binario         | `0b1111_0000` |
 | Byte (solo `u8`) | `b'A'`            |
 
-En el caso de que ocurra un [[Overflow]], se realizará un [[Panic]].
+En el caso de que ocurra un [[Overflow|overflow]], se realizará un [[Panic]].
 
 Se puede usar el `_` como separador entre los números para hacer más fácil la lectura, esto no modificará el valor.
 

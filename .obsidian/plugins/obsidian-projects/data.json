@@ -649,6 +649,7 @@
     "projectSizeLimit": 1000,
     "frontmatter": {
       "quoteStrings": "PLAIN"
-    }
+    },
+    "commands": []
   }
 }
