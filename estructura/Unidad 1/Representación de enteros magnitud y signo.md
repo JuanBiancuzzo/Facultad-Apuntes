@@ -7,14 +7,13 @@ capitulo: 1
 ---
 Esta representación reserva el último bit representa el signo, donde el negativo es un $1$ y el positivo un $0$. 
 
-Su [[Rango de representación]] es $$ (-2^{n-1} + 1)_{10} \le x \le (-2^{n-1} - 1)_{10}$$
+Su [[Rango de representación]] es $$ (-2^{n-1} + 1)_{10} \le x \le (2^{n-1} - 1)_{10}$$
 
 
 ### Ejemplo
 ---
 | Decimal | Magnitud y signo |
 | ------- | ---------------- |
-| -8      | -                |
 | -7      | 1111             |
 | -6      | 1110             |
 | -5      | 1101             |

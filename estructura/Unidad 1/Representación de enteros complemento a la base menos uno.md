@@ -15,7 +15,6 @@ Su [[Rango de representación]] es $$ (-2^{n-1} + 1)_{10} \le x \le (-2^{n-1} - 
 ---
 | Decimal | Complemento a la base menos 1 |
 | ------- | ----------------------------- |
-| -8      | -                             |
 | -7      | 1000                          |
 | -6      | 1001                          |
 | -5      | 1010                          |
