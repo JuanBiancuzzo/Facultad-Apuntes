@@ -8,8 +8,8 @@ capitulo: 1
 La suma entre dos números de cualquier base, uno separa por [[Símbolo|símbolos]] 
 $$ \begin{matrix} 
 	& 5 ~ 4 ~ 3_{10} \\
-	+ & \\
-	& 2 ~ 9 ~ 4_{10}
+	
+	+& 2 ~ 9 ~ 4_{10} \\ \hline
 \end{matrix} $$
 Empezamos de derecha a izquierda, por lo tanto deberíamos sumarlos y en el caso que sea mayor a la base, ese valor que sobra se reconoce como carry, la cual se suma para la siguiente operación.
 

@@ -1,6 +1,6 @@
 La idea de componer funciones, significa "sustituir una funcion en otra", donde teniendo dos funciones de una variable, $y = f(x)$ y $x = g(u)$ podemos reemplazar una en otra, haciendo $y = f(g(u))$. Obteniendo asi la composicion de $f$ con $g$, denotado como $f \circ g$
 
-Cuando tenemos [[Funciones de varias variables]], tenemos que tener en cuenta que se corresponda el codominio de una con el dominio de otra
+Cuando tenemos [[Función]], tenemos que tener en cuenta que se corresponda el codominio de una con el dominio de otra
 
 Supongamos que tenemos la funcion $z = f(x, y)$ entonces como necesito dos funciones (su dominio perteneciendo a $\mathbb{R}^2$), una para cada variable, digamos $g_1$ y $g_2$,
 

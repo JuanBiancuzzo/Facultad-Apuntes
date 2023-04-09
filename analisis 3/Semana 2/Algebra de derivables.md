@@ -3,10 +3,10 @@ dia: 2022-09-12
 materia: analisis 3
 capitulo: 2
 ---
-Sea $f : D \to \mathbb{C}$ una función definida en un [[Conjunto abierto]] $D \subseteq \mathbb{C}$, [[Derivable]] en $z_0 \in D$
+Sea $f : D \to \mathbb{C}$ una función definida en un [[analisis 3/Semana 1/Conjunto abierto]] $D \subseteq \mathbb{C}$, [[Derivable]] en $z_0 \in D$
 
 1) Sea $D_0 \subseteq D$ un subconjunto tambien abierto que contiene al punto $z_0$. Entonces, la restricción $f_{|D_0} : D_0 \to \mathbb{C}$ de $f$ a $D_0$ también es [[Derivable]] en $z_0$ y ademas $f'_{D_0}(z_0) = f'(z_0)$.
-2) Sea $g : D \to \mathbb{C}$ otra función definida en un [[Conjunto abierto]] $D \subseteq \mathbb{C}$, [[Derivable]] en $z_0 \in D$, y sea $c \in \mathbb{C}$ una constante. Entonces $f + g$, $f - g$, $f \cdot g$ y $c \cdot f$ son derivables en $z_0$ y ademas se verifican las siguentes igualdades:
+2) Sea $g : D \to \mathbb{C}$ otra función definida en un [[analisis 3/Semana 1/Conjunto abierto]] $D \subseteq \mathbb{C}$, [[Derivable]] en $z_0 \in D$, y sea $c \in \mathbb{C}$ una constante. Entonces $f + g$, $f - g$, $f \cdot g$ y $c \cdot f$ son derivables en $z_0$ y ademas se verifican las siguentes igualdades:
 	1) $(f + g)'(z_0) = f'(z_0) + g'(z_0)$
 	2) $(f - g)'(z_0) = f'(z_0) - g'(z_0)$
 	3) $(c \cdot f)'(z_0) = c \cdot f'(z_0)$
@@ -14,12 +14,12 @@ Sea $f : D \to \mathbb{C}$ una función definida en un [[Conjunto abierto]] $D \
 3) Sea $k : D \to \mathbb{C}$ una función constante en un abierto $D \subseteq \mathbb{C}$. Entonces $k$ es [[Derivable]] en $D$ y su derivada es identicamente nula.
 4) Sea $Id : \mathbb{C} \to \mathbb{C}$ la función $Id(z)$, (es decir, [[Función identidad]]). Entonces, $Id$ es [[Derivable]] en $\mathbb{C}$ y su derivada es la constante $Id'(z) = 1$
 5) Sea $J : \mathbb{C} - \{ 0 \} \to \mathbb{C} - \{ 0 \}$ la inversión multiplicativa $J(z) = \frac{1}{z}$. Entonces, $J$ es [[Derivable]] en todo su dominio y su derivada es $J'(z) = -\frac{1}{z^2}$ 
-6) Sea $g : E \to \mathbb{C}$ otra función definida en un [[Conjunto abierto]] $E \subseteq \mathbb{C}$, tales que:
+6) Sea $g : E \to \mathbb{C}$ otra función definida en un [[analisis 3/Semana 1/Conjunto abierto]] $E \subseteq \mathbb{C}$, tales que:
 	1) La imagen de $f$ esta contenida en el dominio $E$ de $g$, es decir: existe la composición $g \circ f : D \to \mathbb{C}$
 	2) $f$ es derivable en un punto $z_0 \in D$
 	3) $g$ es derivable en el punto $w_0 = g(f(z_0))$
 	Entonces, $g \circ f$ es [[Derivable]] y su derivada es $(g \circ f)'(z_0) = g'(f(z_0)) \cdot f'(z_0)$.
-7) Sea $g : D \to \mathbb{C}$ otra función definida en un [[Conjunto abierto]] $D \subseteq \mathbb{C}$, [[Derivable]] en $z_0 \in D$ y supongamos que $g$ no se anula en ninún punto de $D$. Entonces $\frac{f}{g} : D \to \mathbb{C}$ es [[Derivable]] en $z_0 \in D$ y ademas $$ \bigg(\frac{f}{g} \bigg)'(z_0)= \frac{f'(z_0) \cdot g(z_0) - f(z_0) \cdot g'(z_0)}{g(z_0)^2} $$
+7) Sea $g : D \to \mathbb{C}$ otra función definida en un [[analisis 3/Semana 1/Conjunto abierto]] $D \subseteq \mathbb{C}$, [[Derivable]] en $z_0 \in D$ y supongamos que $g$ no se anula en ninún punto de $D$. Entonces $\frac{f}{g} : D \to \mathbb{C}$ es [[Derivable]] en $z_0 \in D$ y ademas $$ \bigg(\frac{f}{g} \bigg)'(z_0)= \frac{f'(z_0) \cdot g(z_0) - f(z_0) \cdot g'(z_0)}{g(z_0)^2} $$
 
 ### Observación
 ---

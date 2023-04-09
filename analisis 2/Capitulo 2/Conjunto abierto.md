@@ -15,4 +15,4 @@ Con la notacion $int(A)=A^0=\{x \in \mathbb{R}^n : \exists r > 0 : B(x, r) \subs
 Tambien lo podemos pensar de forma mas intuitiva donde la [[Frontera de un conjunto]] no existe
 
 ## Conjunto cerrado
-Ahora podremos definir un [[Conjunto cerrado]]
+Ahora podremos definir un [[analisis 2/Capitulo 2/Conjunto cerrado]]

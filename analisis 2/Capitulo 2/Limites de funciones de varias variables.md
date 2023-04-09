@@ -7,7 +7,7 @@ capitulo: 2
 ![[Limite de funciones de una variable]]
 
 ## Limite
-El concepto de limite [[Funciones de varias variables]] es el mismo que para funciones de una variable, por lo menos en esencia
+El concepto de limite [[Función]] es el mismo que para funciones de una variable, por lo menos en esencia
 
 Pero volveremos a plantear el concepto de cercania, para que se adapte a funciones de varias variables
 
@@ -15,11 +15,11 @@ Pero volveremos a plantear el concepto de cercania, para que se adapte a funcion
  * La herramienta mas basica que usaremos es [[Bola abierta]], que es
 ![[Bola abierta#Definicion]]
 
- * Tambien vamos a definir que determinamos como un [[Conjunto abierto]]
-![[Conjunto abierto#Definicion]]
+ * Tambien vamos a definir que determinamos como un [[analisis 2/Capitulo 2/Conjunto abierto]]
+![[analisis 2/Capitulo 2/Conjunto abierto#Definicion]]
 
 # Definicion
-Sea $f : U \subseteq \mathbb{R}^n \to \mathbb{R}$, con $U$ siendo un [[Conjunto abierto]], y $x_0$ un punto de $U$o bien un [[Punto frontera]] de $U$
+Sea $f : U \subseteq \mathbb{R}^n \to \mathbb{R}$, con $U$ siendo un [[analisis 2/Capitulo 2/Conjunto abierto]], y $x_0$ un punto de $U$o bien un [[analisis 2/Capitulo 2/Punto frontera]] de $U$
 
 $$ \lim_{x \to x_0} f(x) = L $$
 
@@ -35,7 +35,7 @@ $$ x \in B(x_0, \delta) \cap U(x \ne x_0) \iff f(x) \in B(L, \epsilon) $$
  * ![[Aproximaciones por curvas]]
 
 ## Operaciones
-Tomando que $f, g : U \subseteq \mathbb{R}^n \to \mathbb{R}$ dos funciones definidas en el abierto $U$ de $\mathbb{R}^n$ y sea $x_0$ un punto de $U$ o un [[Punto frontera]] de $U$. Suponiendo que 
+Tomando que $f, g : U \subseteq \mathbb{R}^n \to \mathbb{R}$ dos funciones definidas en el abierto $U$ de $\mathbb{R}^n$ y sea $x_0$ un punto de $U$ o un [[analisis 2/Capitulo 2/Punto frontera]] de $U$. Suponiendo que 
 
 $$ \lim_{x \to x_0} f(x) = L, \text{ } \lim_{x \to x_0} g(x) = M $$
 

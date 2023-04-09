@@ -16,7 +16,7 @@ Por otra parte $f(x_2)$ y $f(x_3)$ tambien son minimos y maximos, si se los cons
 ## Teorema
 Toda funcion escalar continua en un [[Conjunto compacto]], produce maximos y minimos absolutos (en sentido amplio) en dicho conjunto
 
-Este es el unico teorema que permite asegurar la existencia en extremos absolutos. Bajo las condiciones del mismo, los extremos absolutos se produciran en un [[Punto Interno]] o en un [[Punto frontera]]
+Este es el unico teorema que permite asegurar la existencia en extremos absolutos. Bajo las condiciones del mismo, los extremos absolutos se produciran en un [[Punto Interno]] o en un [[analisis 3/Semana 1/Punto frontera]]
 
 ## Analisis de existencia de extremos
 ![[Analisis de extremos locales para funciones de una variable]] ![[Analisis de extremos locales para campos escalares]] ![[Analisis de extremos absolutos]]

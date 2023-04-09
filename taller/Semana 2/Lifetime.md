@@ -7,7 +7,7 @@ capitulo: 2
 ---
 Es un tramo, un área, del programa para el cual esa referencia se puede usar de manera segura.
 
-Los lifetimes en signaturas de funciones le permiten a Rust evaluar las relaciones entre las referencias que le pasas a la [[Función]] y aquellas que la función retorna, y asegurarse que se estan usando de manera segura.
+Los lifetimes en signaturas de funciones le permiten a Rust evaluar las relaciones entre las referencias que le pasas a la [[Función rust|función]] y aquellas que la función retorna, y asegurarse que se estan usando de manera segura.
 
 Vamos a usarlo para una [[Estrucutura]], donde uno de sus componente tiene una referencia 
 ``` rust

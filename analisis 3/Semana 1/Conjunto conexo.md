@@ -11,5 +11,4 @@ Dado un conjunto no vacio $U \subseteq \mathbb{C}$, $U$ es conexo sii $\underlin
 ### Propiedad
 ---
 Por teorema:
-	Sea $U \subseteq \mathbb{C}$ un [[Conjunto abierto]] no vacio. Entonces $U$ es un conexo sii es un [[Conjunto arco-conexto]].
-	
+* Sea $U \subseteq \mathbb{C}$ un [[analisis 3/Semana 1/Conjunto abierto]] no vacio. Entonces $U$ es un conexo sii es un [[Conjunto arco-conexto]].

@@ -9,5 +9,5 @@ $$  \begin{matrix}
 		S = (S \cap G) \cup (S \cap H) \\
 		\emptyset = (S \cup G) \cup (S \cup H)
 	\end{matrix} $$
-	
-Si es un [[Conjunto abierto]], entonces aplica que si es [[Conjunto conexo por poligonal]] entonces es conexo
+
+Si es un [[analisis 2/Capitulo 2/Conjunto abierto|conjunto abierto]], entonces aplica que si es [[Conjunto conexo por poligonal]] entonces es conexo

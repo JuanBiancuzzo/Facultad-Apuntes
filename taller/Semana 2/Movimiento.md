@@ -7,7 +7,7 @@ capitulo: 2
 ---
 Se puede mover valores de un [[Ownership|dueño]] a otro. También se puede "tomar prestado una referencia" a un valor. Las referencias son punteros que no adueñan los valores a los que apuntan, y tienen [[Lifetime]] limitados.
 
-Se mueve una variable cuando se pasa otra [[Función]] sin referencia. El origen cede su pertenencia del valor al destinatario, y pasa a ser no inicializada, el destinatario ahora controla el [[Lifetime]] del valor.
+Se mueve una variable cuando se pasa otra [[Función rust|función]] sin referencia. El origen cede su pertenencia del valor al destinatario, y pasa a ser no inicializada, el destinatario ahora controla el [[Lifetime]] del valor.
 
 ``` rust
 let variable: i32 = 3;

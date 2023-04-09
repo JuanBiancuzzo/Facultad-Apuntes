@@ -5,12 +5,12 @@ capitulo: 2
 ---
 ## Definición
 ---
-Dada una función $f : D \to \mathbb{C}$ definida en un [[Conjunto abierto]] $D \subseteq \mathbb{C}$, una primitiva de $f$ es una función [[Derivable]] $F : D  \to \mathbb{C}$ tal que para todo $z \in D : F'(z) = f(z)$
+Dada una función $f : D \to \mathbb{C}$ definida en un [[analisis 3/Semana 1/Conjunto abierto]] $D \subseteq \mathbb{C}$, una primitiva de $f$ es una función [[Derivable]] $F : D  \to \mathbb{C}$ tal que para todo $z \in D : F'(z) = f(z)$
 
 
 ### Proposición
 ---
-Sea $f : D \to \mathbb{C}$ una función [[Derivable]] en un [[Conjunto conexo]] y abierto $D \subseteq \mathbb{C}$ tal que $f'(z) = 0$ para todo $z \in D$. Entonces, $f$ es constante en $D$.
+Sea $f : D \to \mathbb{C}$ una función [[Derivable]] en un [[analisis 3/Semana 1/Conjunto conexo]] y abierto $D \subseteq \mathbb{C}$ tal que $f'(z) = 0$ para todo $z \in D$. Entonces, $f$ es constante en $D$.
 
 ### Corolario
 ---
