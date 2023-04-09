@@ -3,6 +3,8 @@ dia: 2023-01-22
 materia: algebra 2
 capitulo: 2
 ---
+### Definición
+---
 Recordando que, dados dos conjuntos $A$ y $B$, entonces:
  * $A \subseteq B$, si para cada $x \in A$ vale que $x \in B$  
  * $A \subsetneq B$, si para cada $x \in A$ vale que $x \in B$ y existe $z \in B$ tal que $z \notin A$

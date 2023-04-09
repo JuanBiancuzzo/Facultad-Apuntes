@@ -3,6 +3,8 @@ dia: 2023-01-22
 materia: algebra 2
 capitulo: 9
 ---
+### Definición
+---
 Este metodo, o mejor llamado algoritmo, nos permite hallar una base ortogonal de cualquier otra base, usando el [[Producto interno]] determinado
 
 Entonces, entiendo la base $B = \{v_1, v_2, v_3, \cdot, v_n \}$, vamos a construir la base $B_p = \{w_1, w_2, w_3, \cdot, w_n \}$, siendo esta una [[Sistema ortogonal]], de la siguiente forma

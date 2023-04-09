@@ -3,6 +3,8 @@ dia: 2023-01-22
 materia: analisis 2
 capitulo: 2
 ---
+### Definición
+---
 Dado una funcion $f : I \subseteq \mathbb{R}$ es diferenciable en $x_0 \in I$ si existe una constante $A$ tal que 
 
 $$ f(x_0 + h) = f(x_0) + A cdot h + r(h) $$

@@ -3,6 +3,8 @@ dia: 2023-01-22
 materia: analisis 2
 capitulo: 3
 ---
+### Definición
+---
 Esto siendo un caso especifico de [[Multiples funciones implicitas]] y [[Superficie dada en forma implicita]]
 
 Dadas las superficies $\Sigma_1$ de ecuacion $F(x, y, z) = 0$ y$\Sigma_2$ de ecuacion $G(x, y, z) = 0$, y el punto $\vec{A} = (x_0, y_0, z_0)$, cuando se cumple las condiciones del [[Teorema Cauchy-Dini para sistema de ecuaciones escalares]], con la dondicion que $\vec{d}_0 = \nabla F(\vec{A}) \times \nabla G(\vec{A}) \ne \vec{0}$

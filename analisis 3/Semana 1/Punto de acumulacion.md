@@ -3,9 +3,11 @@ dia: 2022-09-02
 materia: analisis 3
 capitulo: 1
 ---
+### Definción
+---
 Dado un conjunto no vacio $U \subseteq \mathbb{C}$ y un punto $z_0 \in \mathbb{C}$:
 
-$z_0$ es punto de acumulacion de $U$ sii para todo $r > 0$ se verifica que la interseccion entre $U$ y un [[Disco abierto reducido]] de dicho $r$ sea diferente del vacio
+$z_0$ es punto de acumulacion de $U$ sii para todo $r > 0$ se verifica que la interseccion entre $U$ y un [[Disco abierto reducida]] de dicho $r$ sea diferente del vacio
 
 $$U \cdot D_0(z_0, \infty) \neq \emptyset$$
 

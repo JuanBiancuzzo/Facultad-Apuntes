@@ -3,6 +3,8 @@ dia: 2022-09-09
 materia: analisis 3
 capitulo: 1
 ---
+### Definición
+---
 Sea $f : D \to \mathbb{C}$ una función definida en un conjunto $D \subset \mathbb{C}$ y sea $z_0 \in \mathbb{C}$ un [[Punto de acumulacion]] de $D$. Entonces, definimos:
 $$ \lim_{z \to z_0} f(z) = \infty \Leftrightarrow \text{ para cada } K > 0 \text{ existe } \delta > 0 \text{ tal que } |f(z)| > K, \forall z \in D \cap D(z_0, \delta) $$
 Siendo $D(z_0, \delta)$ un [[Disco abierto]].

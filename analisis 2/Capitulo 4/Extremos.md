@@ -3,10 +3,9 @@ dia: 2023-01-22
 materia: analisis 2
 capitulo: 4
 ---
-Vamos a dar una idea principal de extremos
-
-## Definicion
-Sea $f : U \subseteq \mathbb{R}^n \to \mathbb{R}$ una funcion definida en el conjunto abierto $U$ de $\mathbb{R}^n$. Se dice que $f$ tiene un maximo o un minimo (extremo) local o relativo en el punto $x_0 \in U$ si $f(x_0) \ge f(x)$ o $f(x_0) \le f(x)$ respectivamente, para toda $x$ en una [[Bola abierta]] B de centro en $x_0$
+### Definición
+---
+Sea $f : U \subseteq \mathbb{R}^n \to \mathbb{R}$ una funcion definida en el conjunto abierto $U$ de $\mathbb{R}^n$. Se dice que $f$ tiene un maximo o un minimo (extremo) local o relativo en el punto $x_0 \in U$ si $f(x_0) \ge f(x)$ o $f(x_0) \le f(x)$ respectivamente, para toda $x$ en una [[Disco abierto]] B de centro en $x_0$
 
 ### Ejemplo
 

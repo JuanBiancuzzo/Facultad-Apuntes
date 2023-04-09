@@ -3,7 +3,9 @@ dia: 2023-01-22
 materia: algebra 2
 capitulo: 3
 ---
-Con dos subespacios $S$ y $T$ la interseccion esta dada por 
+### Definición
+---
+Con dos [[Subespacio]] $S$ y $T$ la interseccion esta dada por 
 $$S \cap T := \{v \in \mathbb{V} : v \in S \land v \in T \}$$
 
 La interseccion es el mayor subespacio contenido entre $S$ y $T$

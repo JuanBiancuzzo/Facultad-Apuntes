@@ -3,11 +3,13 @@ dia: 2023-01-22
 materia: algebra 2
 capitulo: 7
 ---
+### Definición
+---
 Sea $A \in \mathbb{C}^{m \times n}$ se define 
 
 $$ A^* = \overline{A^T} $$
 
-### Propiedades
+#### Propiedades
  * $(A + B)^* = A^* + B^*$, $A, B \in \mathbb{C}^{m \times n}$
  * $(\alpha A)^* = \overline\alpha A^*$, $A \in \mathbb{C}^{m \times n}$, $\alpha \in \mathbb{C}$
  * $(A \cdot B)^* = B^* \cdot A^*$, $A \in \mathbb{C}^{m \times n}$, $B \in \mathbb{C}^{n \times m}$

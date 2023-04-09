@@ -3,6 +3,8 @@ dia: 2023-01-22
 materia: analisis 2
 capitulo: 3
 ---
+### Definición
+---
 Teorema de existencia y unicidad de la funcion definida implicitamente por una ecuacion escalar
 
 Sea $F : D \subset \mathbb{R}^{n + 1} \to \mathbb{R}$, del tipo $F(x_1, \cdots, x_n, y)$, el punto $\vec{A} = (a_1, \cdots, a_n, b)$ tal que:

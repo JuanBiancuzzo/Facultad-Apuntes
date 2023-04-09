@@ -3,6 +3,8 @@ dia: 2023-01-22
 materia: analisis 2
 capitulo: 2
 ---
+### Definición
+---
 Con $f : U \subseteq \mathbb{R}^n \to \mathbb{R}^m$ siendo esta diferenciable en el punto $x_0$, la transformacion lineal, y especificamente la matriz asociada con esta, que denotaremos $Df(a) \in \mathbb{R}^{n \times m}$ y se denomina como matriz Jacobiana
 
 $$ Df(a) = \begin{pmatrix}
@@ -10,7 +12,7 @@ $$ Df(a) = \begin{pmatrix}
 		\vdots & \ddots & \vdots \\
 		\frac{\partial f_m}{\partial x_1} & \cdots & \frac{\partial f_m}{\partial x_n}
 			\end{pmatrix} $$
-			
+
  * Si $n > 1$ y $m > 1$, es un campo vectorial y es una matriz
  * Si $n > 1$ y $m = 1$, es un campo escalar y es un vector horizontal
  * Si $n = 1$ y $m > 1$, es una funcion vectorial de una variable y es un vector vertical

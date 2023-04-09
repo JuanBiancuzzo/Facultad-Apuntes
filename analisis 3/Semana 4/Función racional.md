@@ -9,4 +9,4 @@ Una función racional es un cociente de las funciónes $P$ y $Q$ donde $P$ y $Q$
 
 Se puede pensar como la multiplicación de $P$ con la composición de la [[Función inversión]] con $Q$, es decir $\frac{P}{Q} = P \cdot (J \circ Q)$ 
 
-Su dominio, que es un [[analisis 3/Semana 1/Conjunto abierto]], son los complejos sin los puntos donde $Q$ se anula (las raices). 
+Su dominio, que es un [[Conjunto abierto]], son los complejos sin los puntos donde $Q$ se anula (las raices). 

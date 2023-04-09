@@ -3,6 +3,8 @@ dia: 2023-01-22
 materia: analisis 2
 capitulo: 5
 ---
+### Definición
+---
 En este caso, vamos a aplicar el [[Analisis de extremos locales para campos escalares]], cuando sus variables deben cumplir ciertas condiciones, denominadas **condiciones de vinculo** entre las mismas
 
 La forma mas directa de resolver estas situaciones, consiste en imponer la condicion o condiciones de vinculo mediante la [[Composicion de funciones]]

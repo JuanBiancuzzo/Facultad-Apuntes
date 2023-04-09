@@ -3,6 +3,8 @@ dia: 2023-01-22
 materia: algebra 2
 capitulo: 2
 ---
+### Definición
+---
 Cuando se habla de las columnas pivotales de una matriz, se refieren en el proceso de triangulacion, donde hacia abajo del pivote y hacia la izquierda todos los numeros son 0, ejemplo
 
 $$

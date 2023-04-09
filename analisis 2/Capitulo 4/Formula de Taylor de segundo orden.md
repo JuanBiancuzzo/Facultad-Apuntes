@@ -3,8 +3,9 @@ dia: 2023-01-22
 materia: analisis 2
 capitulo: 4
 ---
-## Teorema
-Sea $f : U \subseteq \mathbb{R}^n \to \mathbb{R}$ una funcion definida en el conjunto abierto $U$ de $\mathbb{R}$, tal que las [[Derivadas parciales de ordenes superiores]], (de segundo orden) son continuas en alguna [[Bola abierta]] $B$ con centro en $\vec{x} \in U$
+### Definición
+---
+Sea $f : U \subseteq \mathbb{R}^n \to \mathbb{R}$ una funcion definida en el conjunto abierto $U$ de $\mathbb{R}$, tal que las [[Derivadas parciales de ordenes superiores]], (de segundo orden) son continuas en alguna [[Disco abierto]] $B$ con centro en $\vec{x} \in U$
 
 Entonces, para todo $x \in \mathbb{R}^n$ tal que $\vec{x} + x \in U$ se tiene la formula
 

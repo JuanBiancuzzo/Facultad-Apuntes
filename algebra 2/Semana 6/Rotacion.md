@@ -3,13 +3,15 @@ dia: 2023-01-22
 materia: algebra 2
 capitulo: 6
 ---
+### Definición
+---
 Vamos a usar ![[Propiedades trigonometricas]]
 
 Partiendo de una situacion como esta
 
 ![[Pasted image 20211019144943.png]]
 
-Nosotros queremos rotar nuestro plano $\mathbb{R}^2$ por un angulo de $50.42\degree$, entonces si la [[Transformacion lineal]] la llamamos $R$, entonces necesitamos determinar
+Nosotros queremos rotar nuestro plano $\mathbb{R}^2$ por un angulo de $50.42\degree$, entonces si la [[Transformación lineal]] la llamamos $R$, entonces necesitamos determinar
 
 $$ R{1 \choose 0} = \text{ } ? $$
 $$ R{0 \choose 1} = \text{ } ? $$

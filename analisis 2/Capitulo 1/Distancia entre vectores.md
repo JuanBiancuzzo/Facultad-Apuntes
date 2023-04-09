@@ -3,7 +3,9 @@ dia: 2023-01-22
 materia: analisis 2
 capitulo: 1
 ---
-La distancia entre dos vectores $x$ y $y$ se puede usar la definicion de norma para definirla, tal que
+### Definición
+---
+La distancia entre dos vectores $x$ y $y$ se puede usar la definicion de [[Norma]] para definirla, tal que
 
 $$dist(x, y) := \lVert y - x \rVert$$
 
@@ -14,7 +16,7 @@ $$dist(x, y) := \lVert y - x \rVert$$
 2. $d(x, y) = d(y, x)$
 3. $d(x, y) \le d(x, z) + d(z, y)$, con $z$ un vector cualquiera de $\mathbb{R}^n$
 
-## Otra forma de verlo
+#### Otra forma de verlo
 Teniendo una [[Base ortonormal]] tal que $B = \{u_1, u_2, \cdots, u_n \}$, podemos escribir la distancia entre dos vectores como
 
 $$ d(v_1, v_2) = \sqrt{\sum^n_{j = 1}(\langle v_2, u_j \rangle - \langle v_1, u_j \rangle)^2} $$

@@ -3,9 +3,11 @@ dia: 2023-01-22
 materia: algebra 2
 capitulo: 5
 ---
+### Definición
+---
 Teniendo dos subespacios $S_1$ y $S_2$ en [[Suma directa entre subespacios]], tal que generen el espacio vectorial $\mathbb{V}$
 
-La *simetria de $\mathbb{V}$ de $S_1$ de la direccion $S_2$*, denotada por $\Sigma_{S_1, S_2}$, es la [[Transformacion lineal]] de $\mathbb{V}$ en $\mathbb{V}$ definida por 
+La *simetria de $\mathbb{V}$ de $S_1$ de la direccion $S_2$*, denotada por $\Sigma_{S_1, S_2}$, es la [[Transformación lineal]] de $\mathbb{V}$ en $\mathbb{V}$ definida por 
 $$\Pi_{S_1, S_2} := \mathbb{I}_\mathbb{V} - 2 \cdot \Pi_{S_1, S_2}$$
 
 Donde $\Pi_{S_1, S_2}$ es la [[Proyector]], de $S_1$ en $S_2$

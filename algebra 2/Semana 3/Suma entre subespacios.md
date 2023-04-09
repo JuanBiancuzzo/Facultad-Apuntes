@@ -3,6 +3,8 @@ dia: 2023-01-22
 materia: algebra 2
 capitulo: 3
 ---
+### Definición
+---
 Con dos subespacios $S$ y $T$ la suma esta definida como 
 $$S+T:=\{v \in \mathbb{V} : \exists \text{ } s \in S, t \in T : v = s + t \}$$
 

@@ -15,7 +15,7 @@ Sea $\mathbb{D}$ el [[Dominio de convergencia]] de la [[Serie de potencias]] $\d
 
 #### Observación
 1) La $r$ se le llama radio de convergencia de la serie.
-2) En los [[analisis 3/Semana 1/Punto frontera]] $fr(D(z_0, r))$ la serie puede o no converger.
+2) En los [[Punto frontera]] $fr(D(z_0, r))$ la serie puede o no converger.
 
 
 ### Propiedades

@@ -1,15 +1,23 @@
 ---
 dia: 2022-09-02
-materia: analisis 3
-capitulo: 1
+materia: analisis 2
+capitulo: 2
+---
+### Definición
 ---
 Conjuntos de puntos alrededor de un valor $z_0$ a una distancia $r$ del mismo. En ese caso estamos en el conjunto de los complejos, pero no necesariamente nos tendriamos que limitar a este para esta definicion. 
 
 Estos conjuntos los podemos definir como: 
 
-![[Disco abierto#Definicion]]
-![[Disco cerrado#Definicion]]
-![[Disco abierto reducido#Definicion]]
+##### Disco abierto
+![[Disco abierto#Definición]]
+
+##### Disco cerrado
+![[Disco cerrado#Definición]]
+
+
+##### Disco abierto reducido
+![[Disco abierto reducida#Definición]]
 
 #### Datos adicionales
 $$D(z_0, \infty) = \mathbb{C}$$

@@ -3,6 +3,8 @@ dia: 2023-01-22
 materia: algebra 2
 capitulo: 1
 ---
+### Definición
+---
 El wronskiano se puede usar para determinar si un conjunto de funciones son [[Linealmente independiente]], para eso se usa lo siguiente
 
 Dado $\{f_1, f_2, \cdots, f_n\}$ perteneciente a $C^{n-1}(I)$ (funciones continuas con $n-1$ derivadas continuas), se define el wronskiano como:

@@ -3,6 +3,8 @@ dia: 2023-01-22
 materia: algebra 2
 capitulo: 9
 ---
+### Definición
+---
 Sea $A \in \mathbb{K}^{m \times n}$ de rango $n$ ([[Rango de una matriz]]). Una descomposicion QR de $A$ es una factorizacion 
 
 $$ A = QR \text{ con } Q \in \mathbb{K}^{m \times n} \text{ y } R \in \mathbb{n \times n} $$
@@ -11,7 +13,7 @@ tales que las columnas de $Q$ son una [[Base ortonormal]] de $col(A)$ consideran
 
 
 Para encontrar $Q$ vamos a necesitar una base ortonormal, para eso vamos a crear una base $B$ a partir de $col(A)$
-Despues para asegurarnos que sea [[Ortogonal]]es entre si, vamos a usar el [[Metodo de Gram-Schmidt]] dejando que $B' = \{ w_1, w_2, \cdots, w_n \}$
+Despues para asegurarnos que sea [[Ortogonalidad]]es entre si, vamos a usar el [[Metodo de Gram-Schmidt]] dejando que $B' = \{ w_1, w_2, \cdots, w_n \}$
 
 Por ultimo, a cada elemento vamos a normalizarlo, obteniendo asi la base ortonormal, que van a ser las columnas de $Q$ tal que 
 

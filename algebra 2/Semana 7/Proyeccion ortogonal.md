@@ -3,6 +3,8 @@ dia: 2023-01-22
 materia: algebra 2
 capitulo: 7
 ---
+### Definición
+---
 Sea $S$ un subespacio de $\mathbb{V}$ y $v \in \mathbb{V}$, decimos que $\hat{v}$ es la proyeccion ortogonal del vector $v$ sobre $S$ si verifica
 
 $$ \hat{v} \in S \text{ y } v - \hat{v} \in S^\perp $$
@@ -11,7 +13,7 @@ Se puede encontrar $\hat{v}$ teniendo una base con el [[Sistema ortogonal]] de $
 
 $$ \hat{v} = \frac{\langle v, v_1 \rangle}{\langle v_1, v_1 \rangle} \cdot v_1 + \frac{\langle v, v_2 \rangle}{\langle v_2, v_2 \rangle} \cdot v_2 + \cdots + \frac{\langle v, v_r \rangle}{\langle v_r, v_r \rangle} \cdot v_r $$
 
-Esta proyeccion tambien escrita como $P_S(v) := \hat{v}$, determinando una [[Transformacion lineal]]
+Esta proyeccion tambien escrita como $P_S(v) := \hat{v}$, determinando una [[Transformación lineal]]
 
 ### Propiedades
  * $P_S^2 = P_S$, esta propiedad la tiene por ser un [[Proyector]]

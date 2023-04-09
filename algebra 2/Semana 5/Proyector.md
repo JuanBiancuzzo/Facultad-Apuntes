@@ -3,9 +3,11 @@ dia: 2023-01-22
 materia: algebra 2
 capitulo: 5
 ---
+### Definición
+---
 Teniendo dos subespacios $S_1$ y $S_2$ en [[Suma directa entre subespacios]], tal que generen el espacio vectorial $\mathbb{V}$. Recordando, $v = v_1 + v_2$ si $v_1 \in S_1$ y $v_2 \in S_2$
 
-Entonces se define la proyeccion de $\mathbb{V}$ sobre $S_1$ en la direccion de $S_2$, denotada por $\Pi_{S_1, S_2}$ es la [[Transformacion lineal]] de $\mathbb{V}$ en $\mathbb{V}$ definida por 
+Entonces se define la proyeccion de $\mathbb{V}$ sobre $S_1$ en la direccion de $S_2$, denotada por $\Pi_{S_1, S_2}$ es la [[Transformación lineal]] de $\mathbb{V}$ en $\mathbb{V}$ definida por 
 $$\Pi_{S_1, S_2}(V) := v_1$$
 
 Donde la [[Imagen de una transformacion lineal]] es $S_1$ y el [[Nucleo de una transformacion lineal]] es $S_2$

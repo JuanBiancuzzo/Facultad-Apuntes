@@ -3,6 +3,8 @@ dia: 2023-01-22
 materia: analisis 2
 capitulo: 2
 ---
+### Definición
+---
 Como con funciones de una variable, donde la derivada nos daba la pendiente de la recta tangente, por lo tanto podriamos construirla
 
 El equivalente seria el plano tangente en un punto $(x_0, y_0)$, en una funcion tal que cualquier punto se pueda escribir $(x_0, y_0, f(x_0, y_0))$
@@ -17,7 +19,7 @@ $$ (\vec{X} - \vec{a}) \cdot \vec{n}_0 = 0 $$
 
 Donde $\vec{n}_0 = \vec{F}'_u(u_0, v_0) \times \vec{F}'_v(u_0, v_0)$
 
-## Nota
+#### Nota
 Si $f$ es [[Diferenciable]], entonces [[Gradiente]] es perpendicular al [[Conjunto de nivel]] de $f(x_0, y_0)$
 
 Para eso podemos parametrizar la curva de nivel, generando un $\vec{g}(t)$, que podemos derivar, por lo que ahora tenemos que 

@@ -3,6 +3,8 @@ dia: 2023-01-22
 materia: analisis 2
 capitulo: 3
 ---
+### Definición
+---
 Sea $g : V \subseteq \mathbb{R}^m \to \mathbb{R}^n$ una funcion definida en el conjunto abierto $V$ de $\mathbb{R}^m$, [[Diferenciable]] en $x_0 \in V$.
 
 Sea $f : U \subseteq \mathbb{R}^n \to \mathbb{R}$ una funcion definida en el conjunto abierto $U$ de $\mathbb{R}^n$, tal que $g(V) \subseteq U$, [[Diferenciable]] en el punto $g(x_0) \in U$.

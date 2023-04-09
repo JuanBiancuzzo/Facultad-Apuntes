@@ -1,6 +1,9 @@
 ---
-dia: 2023-01-22
+dia: 2022-09-06
 materia: analisis 2
 capitulo: 1
 ---
-Con $S \subset \mathbb{R}^n$ es un conjunto acotado cuando se lo puede incluir en una [[Bola abierta]] con centro en el origen y radio finito
+### Definición
+---
+Con $S \subset \mathbb{R}^n$ es un [[Conjunto]] acotado si existe una [[Disco abierto]] tal que $$ S \subseteq D(0, r) $$
+para algun $r$.

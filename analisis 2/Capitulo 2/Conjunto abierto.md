@@ -1,18 +1,10 @@
 ---
-dia: 2023-01-22
+dia: 2022-09-06
 materia: analisis 2
 capitulo: 2
 ---
-## Definicion
-Se dice que el conjunto $U \subseteq \mathbb{R}^n$ es un conjunto abierto de $\mathbb{R}^n$ si para cada $x_0 \in U$, $x_0$ es un [[Punto Interno]]
+### Definición
+---
+Dado un conjunto $U \in \mathbb{C}$, $U$ es abierto sii es vacio o bien todos sus puntos son [[Punto interno]].
 
-En otras palabras, un conjunto abierto es el que todos sus puntos, tiene siempre un "vecino". Donde esto lo representaremos como que $\exists r > 0$ para que haya una [[Bola abierta]]
-
-![[Pasted image 20211101170703.png]]
-
-Con la notacion $int(A)=A^0=\{x \in \mathbb{R}^n : \exists r > 0 : B(x, r) \subset A\}$
-
-Tambien lo podemos pensar de forma mas intuitiva donde la [[Frontera de un conjunto]] no existe
-
-## Conjunto cerrado
-Ahora podremos definir un [[analisis 2/Capitulo 2/Conjunto cerrado]]
+$$\{ z \in U, \exists r > 0: D(z, r) \subseteq U \}$$

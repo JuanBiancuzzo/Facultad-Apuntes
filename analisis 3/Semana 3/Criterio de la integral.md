@@ -5,7 +5,6 @@ capitulo: 3
 ---
 ### Definición
 ---
-
 Dadas las hipotesis
 1) $f : [1, \infty] \to \mathbb{R}$ es [[Integrable]] en cada intervalo cerrado y acotado contenido en su dominio (esto ocurre, en particular, si $f$ es una [[Función continua]] o seccionalmente continua)
 2) $f$ es positiva y decreciente (es decir: para todo par de puntos $1 \leq x \leq y$ se verifica que $0 < f(y) \leq f(x)$) 

@@ -3,23 +3,21 @@ dia: 2023-01-22
 materia: analisis 2
 capitulo: 2
 ---
-### Recordatorio de limites de funciones de una variable
-![[Limite de funciones de una variable]]
-
-## Limite
+### Definición
+---
 El concepto de limite [[Función]] es el mismo que para funciones de una variable, por lo menos en esencia
 
 Pero volveremos a plantear el concepto de cercania, para que se adapte a funciones de varias variables
 
 ### Herramientas
- * La herramienta mas basica que usaremos es [[Bola abierta]], que es
-![[Bola abierta#Definicion]]
+ * La herramienta mas basica que usaremos es [[Disco abierto]], que es
+![[Disco abierto#Definición]]
 
- * Tambien vamos a definir que determinamos como un [[analisis 2/Capitulo 2/Conjunto abierto]]
-![[analisis 2/Capitulo 2/Conjunto abierto#Definicion]]
+ * Tambien vamos a definir que determinamos como un [[Conjunto abierto]]
+![[Conjunto abierto#Definición]]
 
 # Definicion
-Sea $f : U \subseteq \mathbb{R}^n \to \mathbb{R}$, con $U$ siendo un [[analisis 2/Capitulo 2/Conjunto abierto]], y $x_0$ un punto de $U$o bien un [[analisis 2/Capitulo 2/Punto frontera]] de $U$
+Sea $f : U \subseteq \mathbb{R}^n \to \mathbb{R}$, con $U$ siendo un [[Conjunto abierto]], y $x_0$ un punto de $U$o bien un [[analisis 2/Capitulo 2/Punto frontera]] de $U$
 
 $$ \lim_{x \to x_0} f(x) = L $$
 
@@ -40,4 +38,4 @@ Tomando que $f, g : U \subseteq \mathbb{R}^n \to \mathbb{R}$ dos funciones defin
 $$ \lim_{x \to x_0} f(x) = L, \text{ } \lim_{x \to x_0} g(x) = M $$
 
 Es decir que la suma de los limites es la suma de los limites individuales
-![[Suma de limites#Definicion]] ![[Producto de limites#Definicion]] ![[Cociente de limites#Definicion]]
+![[Suma de limites#Definicion]] ![[Producto de limites#Definicion]] ![[Cociente de limites#Definición]]

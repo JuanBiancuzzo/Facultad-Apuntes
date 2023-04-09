@@ -3,6 +3,8 @@ dia: 2023-01-22
 materia: analisis 2
 capitulo: 3
 ---
+### Definición
+---
 Tenemos dos ecuaciones con las variables $u$, $v$, $x$, $y$
 $$ 
 	\begin{matrix} 

@@ -3,6 +3,8 @@ dia: 2023-01-22
 materia: analisis 2
 capitulo: 1
 ---
+### Definición
+---
 El espacio $\mathbb{R}^n$ donde $n$ es natural, es un conjunto de todas las n-adas ordenadas de numeros reales
 $$\mathbb{R}^n=\{(x_1, x_2, \cdots), x_n) | x_1, x_2, \cdots, x_n \in \mathbb{R} \}$$
 

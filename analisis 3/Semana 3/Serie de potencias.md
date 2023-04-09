@@ -5,7 +5,7 @@ capitulo: 3
 ---
 ### Definición
 ---
-Sea $(c_n)_{n = 0}^\infty$ una [[Sucesión]] de n{umeros complejos y sea $z_0 \in \mathbb{C}$. Para todo $z \in \mathbb{C}$, consideremos la [[Sucesión]]  $$ (c_n \cdot (z - z_0)^n)_{n = 0}^\infty $$ y la correspondiente [[Serie]] $$ \sum_{n = 0}^\infty c_n \cdot (z - z_0)^n $$
+Sea $(c_n)_{n = 0}^\infty$ una [[Sucesión]] de números complejos y sea $z_0 \in \mathbb{C}$. Para todo $z \in \mathbb{C}$, consideremos la [[Sucesión]]  $$ (c_n \cdot (z - z_0)^n)_{n = 0}^\infty $$ y la correspondiente [[Serie]] $$ \sum_{n = 0}^\infty c_n \cdot (z - z_0)^n $$
 Notemos como $$ \begin{drcases} 
 f_0(z) = c_0 \\
 f_1(z) = c_0 + c_1 \cdot (z - z_0) \\

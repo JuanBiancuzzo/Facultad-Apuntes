@@ -3,6 +3,8 @@ dia: 2023-01-22
 materia: algebra 2
 capitulo: 7
 ---
+### Definición
+---
 Se lo llama norma inducida a la definicion de la [[Norma]] mediante el [[Producto interno]], de la forma
 
 $$ \lVert x \rVert := \langle x, x \rangle^{1/2} $$

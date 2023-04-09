@@ -3,4 +3,6 @@ dia: 2023-01-22
 materia: analisis 2
 capitulo: 1
 ---
-Con $S \subset \mathbb{R}$ es un conjunto compacto si es un [[analisis 3/Semana 1/Conjunto cerrado]] y un [[Conjunto acotado]]
+### Definción
+---
+Dado un [[Conjunto]] $U \in \mathbb{C}$, $U$ es compacto (por el teorema de Bolzano - Weierstrass - Heine - Borel) sii es [[Conjunto cerrado]] y [[Conjunto acotado]]

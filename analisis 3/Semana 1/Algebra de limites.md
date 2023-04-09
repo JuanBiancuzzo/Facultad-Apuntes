@@ -3,6 +3,10 @@ dia: 2022-09-06
 materia: analisis 3
 capitulo: 1
 ---
+### Definición
+---
+Se determina el algebra de limites con lo siguiente:
+
 Sea $f:D \to \mathbb{C}$ y $g:D \to \mathbb{C}$ dos funciones definidas en un mismo conjunto $D \subseteq \mathbb{C}$ tales que $\lim_{z \to z_0} f(z) = a$ y $\lim_{z \to z_0} g(z) = b$, donde $z_0 \in \mathbb{C}$ es un [[Punto de acumulacion]] de $D$. Entonces:
 
 1) $f + g \xrightarrow{z \to z_0} a + b$ 

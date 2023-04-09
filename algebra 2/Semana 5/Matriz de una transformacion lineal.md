@@ -3,7 +3,9 @@ dia: 2023-01-22
 materia: algebra 2
 capitulo: 5
 ---
-Ver antes [[Transformacion lineal]] y [[Matriz de cambio de base]]
+### Definición
+---
+Ver antes [[Transformación lineal]] y [[Matriz de cambio de base]]
 
 Con $B_1 = \{v_1, v_2, \cdots, v_n\}$ siendo base de $\mathbb{V}$ y $B_2 = \{w_1, w_2, \cdots, w_n\}$ siendo base de $\mathbb{W}$
 

@@ -3,7 +3,8 @@ dia: 2023-01-22
 materia: analisis 2
 capitulo: 4
 ---
-## Definicion
+### Definición
+---
 Al punto $x \in U$ en el que todas las [[Derivadas parciales]] de la funcion $f : U \subseteq \mathbb{R}^n \to \mathbb{R}$ se anulan, se le llama punto critico de la funcion
 
 $$	\begin{matrix}

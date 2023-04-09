@@ -3,6 +3,8 @@ dia: 2023-01-22
 materia: algebra 2
 capitulo: 1
 ---
+### Definición
+---
 Tambien conocida como producto por escalar
 
 ## Caracteristicas de la composicion externa

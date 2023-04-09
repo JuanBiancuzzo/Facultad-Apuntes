@@ -5,7 +5,7 @@ capitulo: 4
 ---
 ### Definición
 ---
-Una función $f : D \to \mathbb{C}$ definida en un [[analisis 3/Semana 1/Conjunto abierto]] $D \subseteq \mathbb{C}$ se dice localmente inversible en $D$ sii para cada $z_0 \in D$ existen abiertos $U_0$ y $V_0$ tales que 
+Una función $f : D \to \mathbb{C}$ definida en un [[Conjunto abierto]] $D \subseteq \mathbb{C}$ se dice localmente inversible en $D$ sii para cada $z_0 \in D$ existen abiertos $U_0$ y $V_0$ tales que 
 1) $z_0 \in U_0$, $f(z_0) \in V_0$, $U_0 \subseteq D$
 2) La restricción de $f$ a $U_0$ es una [[Función biyecctiva]] $f_{|U_0}: U_0 \to V_0$
 
