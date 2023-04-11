@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"type":"text","text":"¿Permite la ropa la circulación del aire o el vapor de agua?","id":"55bd82550197dacd","x":-261,"y":-140,"width":250,"height":100},
+		{"type":"text","text":"[[Estrés térmico]] esperado","id":"0af361a4372a78a6","x":-261,"y":-280,"width":250,"height":60},
+		{"type":"text","text":"¿Se exceden los criterios de selección del [[Temperatura del globo bulbo húmedo#Adiciones por el tipo de ropa|tipo de ropa]]?","id":"dc411a7a22d4c7db","x":-261,"y":40,"width":250,"height":100},
+		{"type":"text","text":"¿Hay datos para hacer un [[Análisis detallado del estrés termico|análisis detallado]]?","id":"365913407cdcb43c","x":-261,"y":240,"width":250,"height":60},
+		{"type":"text","text":"¿Es excesivo el [[Estrés térmico]] basado en el [[Análisis detallado del estrés termico|análisis detallado]]?","id":"0ca36f009b8571e8","x":-261,"y":380,"width":250,"height":95},
+		{"type":"text","text":"Realizar el control (fisiológico) de la [[Tensión térmica]]","id":"8b2fe7ab13aa0015","x":-261,"y":580,"width":250,"height":91},
+		{"type":"text","text":"Riesgo bajo\n* Continuar el trabajo\n* Controlar las condiciones","id":"2903b85f2f0abd35","x":240,"y":10,"width":250,"height":160},
+		{"type":"text","text":"Hacer controles de trabajo especificos\n* Continuar el trabajo\n* Mantener los controles\n* Controlar las condiciones","id":"c2c113da43991869","x":240,"y":325,"width":250,"height":205},
+		{"type":"text","text":"¿Es excesiva la [[Tensión térmica]] basada en el control?","id":"e28f43d328737d3b","x":-261,"y":760,"width":250,"height":96},
+		{"type":"text","text":"Hacer controles generales","id":"2e2fde472ffd5c53","x":-261,"y":960,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"9838a7389d61780a","fromNode":"0af361a4372a78a6","fromSide":"bottom","toNode":"55bd82550197dacd","toSide":"top"},
+		{"id":"5856599c1ba6a70d","fromNode":"55bd82550197dacd","fromSide":"bottom","toNode":"dc411a7a22d4c7db","toSide":"top","label":"Si"},
+		{"id":"8be5e15d8d8fb273","fromNode":"dc411a7a22d4c7db","fromSide":"bottom","toNode":"365913407cdcb43c","toSide":"top","label":"Si"},
+		{"id":"99cebf1323953810","fromNode":"365913407cdcb43c","fromSide":"bottom","toNode":"0ca36f009b8571e8","toSide":"top","label":"Si"},
+		{"id":"0b353f359dc92892","fromNode":"0ca36f009b8571e8","fromSide":"bottom","toNode":"8b2fe7ab13aa0015","toSide":"top","label":"Si"},
+		{"id":"4f812c94a88096ca","fromNode":"55bd82550197dacd","fromSide":"left","toNode":"8b2fe7ab13aa0015","toSide":"left","label":"No"},
+		{"id":"9483a3be443c7e35","fromNode":"365913407cdcb43c","fromSide":"left","toNode":"8b2fe7ab13aa0015","toSide":"left","label":"No"},
+		{"id":"84f8e231bcf69180","fromNode":"dc411a7a22d4c7db","fromSide":"right","toNode":"2903b85f2f0abd35","toSide":"left","label":"No"},
+		{"id":"628692ec23baeba8","fromNode":"0ca36f009b8571e8","fromSide":"right","toNode":"c2c113da43991869","toSide":"left","label":"No"},
+		{"id":"00081e3b70a05db3","fromNode":"8b2fe7ab13aa0015","fromSide":"bottom","toNode":"e28f43d328737d3b","toSide":"top"},
+		{"id":"8ce79a9ac4401e10","fromNode":"e28f43d328737d3b","fromSide":"right","toNode":"c2c113da43991869","toSide":"bottom","label":"No"},
+		{"id":"65bda2794fb7a57c","fromNode":"e28f43d328737d3b","fromSide":"bottom","toNode":"2e2fde472ffd5c53","toSide":"top"},
+		{"id":"082f87da97fa01f7","fromNode":"2e2fde472ffd5c53","fromSide":"right","toNode":"365913407cdcb43c","toSide":"right"}
+	]
+}
