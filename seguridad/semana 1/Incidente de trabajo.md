@@ -5,4 +5,4 @@ capitulo: 1
 ---
 ### Definición
 ---
-Es un suceso no deseado que tiene la potencialidad de conducir a un [[Accidente de trabajo|accidente]], pero no causa [[Lesion|lesiones]].
+Es un suceso no deseado que tiene la potencialidad de conducir a un [[Accidente de trabajo|accidente]], pero no causa [[Lesión|lesiones]].
