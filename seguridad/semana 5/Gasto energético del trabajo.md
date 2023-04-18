@@ -40,7 +40,7 @@ Para cuando el trabajador esta aclimatado, la [[Temperatura]] en $(\degree C)$ u
 | 100% trabajo              | 29.5   | 27.5     | 26     | -          |
 | 75% trabajo, 25% descanso | 30.5   | 28.5     | 27.5   | -          |
 | 50% trabajo, 50% descanso | 31.5   | 29.5     | 28.5   | 27.5       |
-| 25% trabajo, 75% descanso | 32.5   | 31       | 30     | 29.5           |
+| 25% trabajo, 75% descanso | 32.5   | 31       | 30     | 29.5       |
 
 y sin aclimatación, la [[Temperatura]] en $(\degree C)$ umbral de [[Temperatura del globo bulbo húmedo|TGBH]] es 
 | Exigencia del trabajo     | Ligero | Moderado | Pesado | Muy pesado |

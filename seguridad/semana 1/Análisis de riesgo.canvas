@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"1084bef997ce0908","x":-400,"y":-20,"width":240,"height":60,"type":"text","text":"Identificación del [[Riesgo]]"},
+		{"id":"cd43cdbff7525d53","x":-100,"y":-20,"width":225,"height":60,"type":"text","text":"Análisis de cuenciacias"},
+		{"id":"994c35854ef63094","x":180,"y":-20,"width":230,"height":60,"type":"text","text":"Cuantificación del [[Riesgo]]"},
+		{"id":"fc1a779e9c398e61","x":-385,"y":-180,"width":210,"height":60,"type":"text","text":"Qué puede ocurrir?"},
+		{"id":"ea5379a7539147f5","x":-73,"y":-180,"width":172,"height":60,"type":"text","text":"Consecuencias?"},
+		{"id":"474047d96fe99f1b","x":223,"y":-180,"width":144,"height":60,"type":"text","text":"Frecuencia"},
+		{"id":"e40706da0a6225f6","x":-330,"y":200,"width":250,"height":60,"type":"text","text":"Toma de decisiones"},
+		{"id":"a9f15e5247d9c8e5","x":0,"y":200,"width":250,"height":60,"type":"text","text":"Reducción del [[Riesgo]]"}
+	],
+	"edges":[
+		{"id":"10db8189719e297e","fromNode":"cd43cdbff7525d53","fromSide":"right","toNode":"994c35854ef63094","toSide":"left"},
+		{"id":"e2fdf38402db12e2","fromNode":"994c35854ef63094","fromSide":"bottom","toNode":"e40706da0a6225f6","toSide":"top"},
+		{"id":"ad1f14bd904853aa","fromNode":"e40706da0a6225f6","fromSide":"right","toNode":"a9f15e5247d9c8e5","toSide":"left"},
+		{"id":"00feb077647896fc","fromNode":"1084bef997ce0908","fromSide":"right","toNode":"cd43cdbff7525d53","toSide":"left"},
+		{"id":"3553f207b4b5d963","fromNode":"fc1a779e9c398e61","fromSide":"bottom","toNode":"1084bef997ce0908","toSide":"top"},
+		{"id":"48fbb3b536c1b2ea","fromNode":"ea5379a7539147f5","fromSide":"bottom","toNode":"cd43cdbff7525d53","toSide":"top"},
+		{"id":"c7710a42b3db05ab","fromNode":"474047d96fe99f1b","fromSide":"bottom","toNode":"994c35854ef63094","toSide":"top"}
+	]
+}
