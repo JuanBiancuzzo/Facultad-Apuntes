@@ -16,7 +16,7 @@ Ningún efecto, hasta el umbral de percepción.
 Ningún efecto fisiológico peligroso.
 
 ###### Zona 3
-Efectos patológicos reversibles, que aumentan la [[Intensidad]] de la [[Corriente]] y con el tiempo (contracciones musculares, dificultades respiratorias, aumento de la presión sanguínea, perturbación cardiaca, etc.)
+Efectos patológicos reversibles, que aumentan la [[Corriente|Intensidad de la corriente]] y con el tiempo (contracciones musculares, dificultades respiratorias, aumento de la presión sanguínea, perturbación cardiaca, etc.)
 
 ###### Zona 4
 Probable [[Fibrilación ventricular]], [[Paro respiratorio]], [[Quemadura]], paro cardíaco.

@@ -11,9 +11,9 @@ Una variable aleatoria discreta es aquella cuyos valores posibles constituyen un
 
 Se puede definir el rango de una variable discreta![[Rango#Definición]]
 
-### Definición con [[Átomos]]
+### Definición con [[Átomo de una distribución|átomo]]
 ---
-La [[Variable aleatoria]] $X$ será discreta si la suma de las probabilidades de todos los [[Átomos]] es $1$-
+La [[Variable aleatoria]] $X$ será discreta si la suma de las probabilidades de todos los [[Átomo de una distribución|átomos]] es $1$-
 
 
 ### Teorema
