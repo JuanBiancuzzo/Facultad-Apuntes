@@ -20,3 +20,7 @@ Son de naturaliza [[Electromagnética]] y se orginan en el núcleo de algunos [[
 Son partículas constituidas por dos [[Protón|protones]] y dos [[Neutrón|neutrones]], su [[Carga eléctrica]] es $+2$ (tomando como unidad de carga eléctrica de un protón).
 
 ##### Beta
+Son partículas iguales a [[Electron|electrones]] que son emitidas toda vez que un [[Neutrón]] se transforma en un [[Protón]]. Su [[Carga eléctrica]] es $-1$.
+
+##### Rayos X
+Consisten en radiaciones [[Electromagnética|electromagnéticas]] originadas en la colisión de un haz de [[Electron|electrones]] contra un material de alto número [[Átomo|átomico]] como el Tugsteno. La colisión puede tener en el interior de un tubo de rayos x o un acelerador de electrones.
