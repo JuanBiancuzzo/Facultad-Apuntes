@@ -5,7 +5,7 @@ capitulo: 3
 ---
 ### Definición
 ---
-Es el [[Agente extintor]] más comúnmente utilizado, dado su poder enfriante, sofocante, diluyente y emulsionante. Mecanismos de extinción:
+Es un [[Recurso natural]] renovable y por su [[Calidad necesaria del agua|calidad]] es agotable. También es el [[Agente extintor]] más comúnmente utilizado, dado su poder enfriante, sofocante, diluyente y emulsionante. Mecanismos de extinción:
 
 ##### Extinción por enfiamiento
 ![[Extinción por enfriamiento#Definición]]

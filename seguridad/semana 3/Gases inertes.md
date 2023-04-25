@@ -24,7 +24,7 @@ Sus mecanismos de extinción:
 ---
 Las limitaciones y precauciones al usar CO2 son las siguientes
 * Este gas es un tóxico muy débil, pero un asfixiante simple, por lo cual debe ser utilizado con suma precaución. (Desplaza al oxígeno)
-* En fuegos de superficie o brasas que pueden dar lugar a reignición, debe mantenerse una atmósfera inerte hasta tanto la brasa se haya apagado con otro elemento ([[Agua]], por ejemplo).
+* En fuegos de superficie o brasas que pueden dar lugar a reignición, debe mantenerse una atmósfera inerte hasta tanto la brasa se haya apagado con otro elemento ([[seguridad/semana 3/Agua]], por ejemplo).
 * En el caso de llamas autónomas o premezcladas el CO2 no tienen ningún efecto.
 * El algunos casos reacciona con algunos [[Agente químico|agentes químicos]] como el Na, K y especialmente el polvo de Mg incandescente, los cuales descomponen al CO2, avivando la [[Combustible|combustión]].
 * El CO2 se descompone químicamente en humo negro y O2 que favorece la [[Combustible|combustión]].
