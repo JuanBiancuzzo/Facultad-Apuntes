@@ -44,7 +44,7 @@ Entre grupos seguidos, vamos a ver cuales son adyacentes (matemáticamente si ti
 |       | 6, 14   | -110           |
 |       | 10, 14  | 1-10               |
 
-Logrando reducir el número de grupos por 1.
+Logrando reducir el número de grupos por 1. Notemos que usamos todos los [[Implicante|implicantes]], eso de debe tener en cuenta para los últimos pasoso.
 
 Ahora aplicaremos la misma regla, pero únicamente a los que tenga la misma falta de valores, por ejemplo el $(0, 1)$ y el $(8, 9)$.
 
