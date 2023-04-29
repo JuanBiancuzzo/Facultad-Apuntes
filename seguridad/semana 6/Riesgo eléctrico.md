@@ -8,7 +8,7 @@ capitulo: 6
 Se entiende por [[Riesgo]] eléctrico a la posibilidad que la [[Corriente]] eléctrica circule por el cuerpo humano o a la producción de un cortocircuito o arco eléctrico, produciendo daños en personas u objetos.
 
 Este puede ocurrir cuando:
-* Existe un [[Circuito lineal|circuito]] eléctrico
+* Existe un [[Circuito|circuito]] eléctrico
 * Existe una [[Diferencia de potencial]]
 * El cuerpo humano no se encuentra [[Aislado]] y frome parte del circuito.
 
