@@ -8,11 +8,11 @@ capitulo: 6
 El [[Circuito secuencial]] con ecuación característica $$ Q^{n + 1} = J \cdot \overline{Q^n} + \overline{K} \cdot Q^n $$
 y tiene el circuito
 
-![[Flip-Flot JK asincrónico.png|500]]
+![[Flip-Flop JK asincrónico.png|500]]
 
 #### Tabla de estados
 ---
-| $Q_t$ | $S_t$ | $R_t$ |     | $Q_{t+1}$ |
+| $Q_t$ | $J_t$ | $K_t$ |     | $Q_{t+1}$ |
 | ----- | ----- | ----- | --- | --------- |
 | 0     | 0     | 0     |     | 0         |
 | 0     | 0     | 1     |     | 0         |
