@@ -9,4 +9,4 @@ capitulo: 3
 DataFrame.unstack(level = -1, fill_value = None)
 ```
 
-Permite modificar la estructura del [[Data frame]], moviendo columnas a indices. Este siendo el opuesto al [[Stack]].
+Permite modificar la estructura del [[Data frame - Pandas]], moviendo columnas a indices. Este siendo el opuesto al [[Stack]].

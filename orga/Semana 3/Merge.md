@@ -11,7 +11,7 @@ DataFrame.merge(right, how='inner', on=None, left_on=None, right_on=None, 
 	copy=True, indicator=False, validate=None)
 ```
 
-Esta función recibe dos [[Data frame]] y al indicarle como, va a unir esos dos [[Data frame|data frames]].
+Esta función recibe dos [[Data frame - Pandas]] y al indicarle como, va a unir esos dos [[Data frame - Pandas|data frames]].
 
 Tenemos 4 formas de como unirlos:
 * `inner` implica que únicamente los datos que aparezcan en ambos data frames van a permanecer en la unión.

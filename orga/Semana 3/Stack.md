@@ -8,4 +8,4 @@ capitulo: 3
 ``` Python
 DataFrame.stack(level = -1, dropna = True)
 ```
-Permite modificar la estructura del [[Data frame]], moviendo indices a columnas. Este siendo el opuesto al [[Unstack]].
+Permite modificar la estructura del [[Data frame - Pandas]], moviendo indices a columnas. Este siendo el opuesto al [[Unstack]].

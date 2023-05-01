@@ -9,7 +9,7 @@ capitulo: 1
 Series.map(arg, na_action = None)
 ```
 
-Dado una [[Series]] `serie` podemos modificarlo con la función `map(funcion)`. Es el equivalente a [[Apply]].Por ejemplo: 
+Dado una [[Series - Pandas]] `serie` podemos modificarlo con la función `map(funcion)`. Es el equivalente a [[Apply - Pandas|apply]].Por ejemplo: 
 
 ``` python
 def mapeo(valor):

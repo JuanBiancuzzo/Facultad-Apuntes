@@ -10,7 +10,7 @@ DataFrame.apply(func, axis = 0, raw = False, result_type = None, args = (),
 	**kwargs)
 ```
 
-Dado una [[Data frame]] `tabla` podemos modificarlo con la función `apply(funcion)`. Es el equivalente a [[Map]]. Por ejemplo:
+Dado una [[Data frame - Pandas]] `tabla` podemos modificarlo con la función `apply(funcion)`. Es el equivalente a [[Map - Pandas|map]]. Por ejemplo:
 
 ``` python
 def mapeo(valor):
