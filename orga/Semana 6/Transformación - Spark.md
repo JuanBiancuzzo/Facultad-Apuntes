@@ -12,3 +12,17 @@ A un [[Resilent distributed dataset - Spark|RDD]] se le puede aplicar una transf
 * [[ReduceByKey - Spark|ReduceByKey]]
 * [[GroupByKey - Spark|GroupByKey]]
 * [[Distinct - Spark|Distinct]]
+
+También hay transformaciones que se caracterizan por ser aplicados a dos [[Resilent distributed dataset - Spark|RDDs]]
+* [[Union - Spark|Union]]
+* [[Intersection - Spark|Intersection]]
+* [[Subtract - Spark|Subtract]]
+* [[Join - Spark|Join]]
+* [[Broadcast Join - Spark|Broadcast Join]]
+
+También hay transformaciones que se caracterizan por ser aplicados sobre las particiones
+* [[Glom - Spark|Glom]]
+* [[MapPartition - Spark|MapPartion]]
+* [[Repartition - Spark|Repartition]]
+* [[Coalesce - Spark|Coalesce]]
+* [[RepartitionAndSortWithinPartitions - Spark|RepartitionAndSortWithinPartitions]]
