@@ -5,7 +5,7 @@ capitulo: 3
 ---
 ### Definición
 ---
-Propiedad que se corresponde con el tiempo expresado en minutos durante un ensayo de incendio, después del cual el elemnto de contrucción ensayado pierde su pacapidad resistente o funcional. Medido por la [[Carga de fuego]].
+Propiedad que se corresponde con el tiempo expresado en minutos durante un ensayo de incendio, después del cual el elemento de contrucción ensayado pierde su capacidad resistente o funcional. Medido por la [[Carga de fuego]].
 
 | $Q_f$                  | [[Riesgo explosivos]] | [[Riesgo inflamable]] | [[Riesgo muy combustibles]] | [[Riesgo combustibles]] | [[Riesgo poco combustibles]] |
 | ---------------------- | --------------------- | --------------------- | --------------------------- | ----------------------- | ---------------------------- |
