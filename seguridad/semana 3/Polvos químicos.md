@@ -7,13 +7,13 @@ capitulo: 3
 ---
 Los polvos químicos, son [[Agente extintor|agentes extintores]], son compuestos por carbonatos, fosfatos o sulfatos, cuyas bases fundamentalmente son sodio o potasio. Contienen aditivos en su composición a eectos de protegerlos de la humedad y darles determinadas características de fluidez.
 
-Presenta las caracterísiticas de ser agentes de baja toxicidad y elevado poder extintor.
+Presenta las características de ser agentes de baja toxicidad y elevado poder extintor.
 
 Mecanismos de extinción:
-##### Extinción por enfiamiento
+##### Extinción por enfriamiento
 ![[Extinción por enfriamiento#Definición]]
 
-##### Extinción por sofocacion
+##### Extinción por sofocación
 ![[Extinción por sofocación#Definición]]
 
 ##### Extinción cortando la reacción en cadena

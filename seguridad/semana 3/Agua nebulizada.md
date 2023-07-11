@@ -5,9 +5,9 @@ capitulo: 3
 ---
 ### Definición
 ---
-Es un [[Agente extintor]] que no perjudica el medioambiente, no conduce la [[Electricidad]] y se inocuo para los equipos y para las personas.
+Es un [[Agente extintor]] que no perjudica el medio ambiente, no conduce la [[Electricidad]] y se inocuo para los equipos y para las personas.
 
-Este sistema se basa en la expulsión de [[seguridad/semana 3/Agua]] atomizada (gotas de 60 a 200 micras) a mucha presión de manera que se vaporizan por el calor del [[Fuego]].
+Este sistema se basa en la expulsión de [[seguridad/semana 3/Agua|agua]] atomizada (gotas de 60 a 200 micras) a mucha presión de manera que se vaporizan por el calor del [[Fuego]].
 
 La extinción se produce por 3 acciones diferentes:
 * [[Extinción por enfriamiento|Enfriamiento]]
