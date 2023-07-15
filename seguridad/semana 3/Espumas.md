@@ -5,7 +5,7 @@ capitulo: 3
 ---
 ### Definición
 ---
-La espuma es, un [[Agente extintor]], la dispersión de un gas en un líquido, formando burbujas compactas de menor densidad que los líquidos infamables donde se las vierte, en forma de manto. 
+La espuma es, un [[Agente extintor]], la dispersión de un gas en un líquido, formando burbujas compactas de menor densidad que los líquidos inflamables donde se las vierte, en forma de manto. 
 
 Actúan por:
 
