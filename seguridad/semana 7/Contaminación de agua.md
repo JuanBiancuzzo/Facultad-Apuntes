@@ -18,4 +18,5 @@ Se considera que un [[Agua]] está contaminada cuando se ve alterada en su compo
 * Bionutrientes:
 	* Compuestos nitrogenados y fosforados
 * Microorganismos:
-	* Bacterias, virus, hongos
+	* [[Bacteria]], virus, hongos
+
