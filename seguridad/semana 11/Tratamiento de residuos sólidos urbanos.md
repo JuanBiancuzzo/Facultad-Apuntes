@@ -7,5 +7,5 @@ capitulo: 11
 ---
 Los tratamientos son físicos, como:
 * Compactación
-* Incineración
+* [[Incineración]]
 * [[Compostaje]]

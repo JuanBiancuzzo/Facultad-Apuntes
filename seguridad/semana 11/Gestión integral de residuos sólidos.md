@@ -10,9 +10,9 @@ Conjunto de operaciones que tienen por objeto dar a los [[Residuo sólido|residu
 Actualmente, la gestión debe estar alineado con los conceptos de [[Economía circular]].
 
 Una correcta gestión de los residuos implica:
-* Recolección, transporte y almacenamiento
+* [[Recolección y transporte de residuos sólidos urbanos|Recolección, transporte]] y [[Almacenamiento en orígen|almacenamiento]]
 * Valorización
-* Tratamiento
-* Disposición
+* [[Tratamiento de residuos sólidos urbanos|Tratamiento]]
+* [[Tecnología disposición final|Disposición]]
 * Control o vigilancia de las operaciones
 * Control de las emisiones y lixiviado
