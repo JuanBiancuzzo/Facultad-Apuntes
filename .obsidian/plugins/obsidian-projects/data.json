@@ -200,7 +200,7 @@
         "template/Numerico - Definicion.md",
         "template/Estructura - Definicion.md"
       ],
-      "isDefault": true,
+      "isDefault": false,
       "dataSource": {
         "kind": "folder",
         "config": {
@@ -643,6 +643,68 @@
       ],
       "id": "fc9f478f-b295-42d8-aea1-9d5317a4fa4b",
       "name": "2022C2"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [
+        "template/Template - Definicion.md",
+        "template/Taller - Definición.md",
+        "template/Seguridad - Definicion.md",
+        "template/Orga - Definicion.md",
+        "template/Numerico - Definicion.md",
+        "template/Estructura - Definicion.md"
+      ],
+      "excludedNotes": [
+        "template/Template - Definicion.md",
+        "template/Taller - Definición.md",
+        "template/Seguridad - Definicion.md",
+        "template/Orga - Definicion.md",
+        "template/Numerico - Definicion.md",
+        "template/Estructura - Definicion.md"
+      ],
+      "isDefault": true,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "/",
+          "recursive": true
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "distribucion": {
+                "hide": true
+              },
+              "materia": {
+                "hide": false
+              },
+              "path": {
+                "hide": true
+              },
+              "name": {
+                "width": 389
+              }
+            },
+            "sortField": "capitulo",
+            "sortAsc": true
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "ea49341e-32f2-4eb5-b6bb-4b94e5f442b4",
+          "name": "Analisis 2",
+          "type": "table"
+        }
+      ],
+      "id": "8ee8b748-805f-4e84-b67a-bd24b42c2d1d",
+      "name": "Todo"
     }
   ],
   "preferences": {

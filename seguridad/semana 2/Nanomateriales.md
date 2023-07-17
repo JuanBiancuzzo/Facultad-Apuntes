@@ -5,7 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-El nanomaterial es un material natual o artificial, que contiene partículas en un estado no unido, como agregado o aglomerado, y en el que al menos el $50$% de las partíiculas en la distribución de mataño numérico tienen una o más dimensiones externas en el rango de $1 nm$ a $100 nm$.
+El nanomaterial es un material natural o artificial, que contiene partículas en un estado no unido, como agregado o aglomerado, y en el que al menos el $50$% de las partículas en la distribución de tamaño numérico tienen una o más dimensiones externas en el rango de $1 nm$ a $100 nm$.
 
 Características importantes:
 * El nanomaterial debe presentar al menos una dimensión externa en la escala nanométrica
