@@ -8,4 +8,4 @@ capitulo: 1
 Es aquella enfermedad de:
 * Aparición previsible
 * De manifestación lenta y gradual
-* Resultante de la exposición prolongada a un [[Agente de riesgo]] presente en el ambiente laboral
+* Resultante de la exposición prolongada a un [[Riesgo|agente de riesgo]] presente en el ambiente laboral
