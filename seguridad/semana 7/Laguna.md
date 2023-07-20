@@ -8,10 +8,10 @@ capitulo: 7
 Clasificación de las lagunas de estabilización se basa en el dominio relativo de los procesos de eliminación de materia orgánica (aerobio o anaerobio):
 
 ##### Anaerobias
-Trabajan con alta carga orgánica
+Trabajan con alta [[Carga orgánica]]
 
 ##### Facultativas
-Funcionan con carga orgánica más reducidas, permitiendo el desarrollo de algas en las capas superiores, donde se dan condiciones aerobias debido al oxígeno aportado por algas
+Funcionan con [[Carga orgánica]] más reducidas, permitiendo el desarrollo de algas en las capas superiores, donde se dan condiciones aerobias debido al oxígeno aportado por algas
 
 ##### Aerobias
 Trabajan con carga orgánica muy reducida. Su objetivo principal es eliminar microorganismos patógenos

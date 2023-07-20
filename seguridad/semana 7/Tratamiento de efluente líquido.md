@@ -10,7 +10,7 @@ Las [[Tratamiento de efluente#Operaciones y/o procesos|operaciones y/o procesos]
 * [[Tratamiento de efluente líquido primario|Tratamiento primario]]
 	* De naturaleza física
 	* De naturaleza Química
-* [[Tratamiento de efluente líquido secundario|Tratamiento secundario o biológico]]
+* Tratamiento secundario o biológico
 * [[Tratamiento de efluente líquido terciario|Tratamiento terciario o de afino]]
 * Desinfección
-* CTM
+* CTM: Cámara toma muestras

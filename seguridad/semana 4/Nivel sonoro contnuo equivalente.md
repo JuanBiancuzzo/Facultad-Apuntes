@@ -14,6 +14,8 @@ El limite admisible por la resolución 295/03 es de $85dBA$ para una exposición
 Donde $C_i$ es el tiempo al que está expuesto a un determinado nivel de ruido, y $T_i$ es el tiempo máximo permitido a ese nivel.
 
 ##### Tiempos máximos de exposición
+---
+
 | Duración por dia | NPS dBA |
 | ---------------- | ------- |
 | $24 hs$            | $80$      |
