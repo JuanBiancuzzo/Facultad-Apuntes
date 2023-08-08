@@ -12,4 +12,3 @@ capitulo: <% await tp.system.prompt("Capitulo: ") %>
 ---
 ### Definición
 ---
-<% tp.file.cursor() %>
