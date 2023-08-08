@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "",
+  "templates_folder": "_template",
   "templates_pairs": [
     [
       "",
@@ -8,7 +8,7 @@
     ]
   ],
   "trigger_on_file_creation": true,
-  "auto_jump_to_cursor": false,
+  "auto_jump_to_cursor": true,
   "enable_system_commands": false,
   "shell_path": "",
   "user_scripts_folder": "",
@@ -16,27 +16,7 @@
   "folder_templates": [
     {
       "folder": "/",
-      "template": "template/Template - Definicion.md"
-    },
-    {
-      "folder": "numerico",
-      "template": "template/Numerico - Definicion.md"
-    },
-    {
-      "folder": "seguridad",
-      "template": "template/Seguridad - Definicion.md"
-    },
-    {
-      "folder": "estructura",
-      "template": "template/Estructura - Definicion.md"
-    },
-    {
-      "folder": "taller",
-      "template": "template/Taller - Definición.md"
-    },
-    {
-      "folder": "orga",
-      "template": "template/Orga - Definicion.md"
+      "template": "_template/Template - Definicion.md"
     }
   ],
   "syntax_highlighting": true,
@@ -46,5 +26,5 @@
   "startup_templates": [
     ""
   ],
-  "enable_ribbon_icon": true
+  "enable_ribbon_icon": false
 }

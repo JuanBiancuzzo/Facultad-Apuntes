@@ -2,8 +2,5 @@
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",
   "promptDelete": false,
-  "spellcheckLanguages": [
-    "en-GB",
-    "es-AR"
-  ]
+  "spellcheckLanguages": null
 }
