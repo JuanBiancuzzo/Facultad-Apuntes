@@ -7,8 +7,15 @@
 	tR += "---";
 %>
 dia: <% tp.file.creation_date("YYYY-MM-DD") %>
-materia: <% tp.file.folder() %>
-capitulo: <% await tp.system.prompt("Capitulo: ") %>
----
+<%*
+	let carpeta = tp.file.folder(true);
+	let materia = carpeta.split("/")[0];
+	tR += "materia: " + materia;
+%>
+<%* 
+	let capitulo = await tp.system.prompt("Capitulo: ");
+	tR += "capitulo: " + capitulo;
+%>
+<%* tR += "---"; %>
 ### Definición
 ---
