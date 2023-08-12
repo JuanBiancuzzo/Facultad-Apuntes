@@ -20,7 +20,7 @@ Tenemos la siguiente tabla:
 | Moscu   | 50    | 0   |
 | Roma    | 120   | 0   |
 | Paris   | 40    | 0   |
-| Roma80  | 0     |     |
+| Roma  | 80     | 0    |
 | Londres | 50    | 1    |
 
 Al codificarla entremos
