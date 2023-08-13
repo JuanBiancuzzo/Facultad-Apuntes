@@ -9,3 +9,5 @@ materia: orga
 * [[Regresión logística]]
 * [[Random forest]]
 * [[XGBoost]]
+* [[Red neuronal]]
+* [[Red neuronal convolucional]]
