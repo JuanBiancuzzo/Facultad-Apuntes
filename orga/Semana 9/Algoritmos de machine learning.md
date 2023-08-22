@@ -11,3 +11,6 @@ materia: orga
 * [[XGBoost]]
 * [[Red neuronal]]
 * [[Red neuronal convolucional]]
+* [[Red neuronal recurrente]]
+* [[Long short-term memory]]
+* [[GRU]]

@@ -15,8 +15,16 @@ Tiene como hiper-parámetros la
 * Cantidad de neuronas
 * El tamaño del kernel
 * El stride
-* El padding. 
+* l padding. 
 
 #### Reducción del tamaño
 ---
-También se puede reducir el tamaño del input con diferentes métodos como 
+También se puede reducir el tamaño del input con diferentes métodos como max-pooling que dado una [[Matriz]] de valores, tomaremos el máximo de una bloque de $n\times m$. $$ \begin{bmatrix} 
+1 & 1 & 2 & 4 \\
+5 & 6 & 7 & 8 \\
+3 & 2 & 1 & 0 \\
+1 & 2 & 3 & 4 \\
+\end{bmatrix} \xrightarrow[\text{stride 2}]{\text{max pooling con } 2 \times 2 \text{ filtro}} \begin{bmatrix}
+6 & 8 \\
+3 & 4 \\
+\end{bmatrix} $$
