@@ -1,7 +1,7 @@
 ---
 dia: 2022-09-15
-materia: null
-capitulo: null
+materia: fisica 3
+capitulo: 1
 ---
 ### Definición
 ---

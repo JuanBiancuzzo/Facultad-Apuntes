@@ -1,3 +1,8 @@
+---
+dia: 2022-09-15
+materia: fisica 3
+capitulo: 1
+---
 La refrexión de Bragg, es el fenomeno donde el [[Electron]] experimenta el fenomeno de reflexion de ondas, explicado por [[Postulado de de Broglie]].
 
 Donde aparece la relación de Bragg $$ n \cdot \lambda = 2 \cdot d \cdot sen (\varphi) $$
