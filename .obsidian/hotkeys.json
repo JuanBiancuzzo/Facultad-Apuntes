@@ -25,5 +25,13 @@
       ],
       "key": "C"
     }
+  ],
+  "templater-obsidian:_template/Materia - Template.md": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "M"
+    }
   ]
 }
