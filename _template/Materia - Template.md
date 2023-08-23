@@ -31,7 +31,9 @@ estado: <% tp.system.suggester([
 ---
 ```dataviewjs
 	function conseguir_nombre(unidad) {
-		return "Capitulo " + unidad.rows[0].capitulo;
+		let relative_path = unidad.rows[0].file.folder;
+		let spliteado = relative_path.split("/");
+		return spliteado[spliteado.length - 1];
 	}
 
 	const pagina_actual = dv.current();
@@ -43,7 +45,10 @@ estado: <% tp.system.suggester([
 			return pagina.file.name != pagina_actual.file.name;
 		});
 
-	let unidades = paginas.groupBy(pagina => pagina.capitulo);
+	let unidades = paginas.groupBy(pagina => pagina.capitulo)
+		.sort(capitulo => {
+			return capitulo.rows[0].capitulo;
+		});
 		
 	for (let unidad of unidades) {		
 		dv.table([conseguir_nombre(unidad)], (unidad.rows.file).map(pagina => {
