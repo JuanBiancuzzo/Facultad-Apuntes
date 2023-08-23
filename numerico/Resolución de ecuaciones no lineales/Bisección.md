@@ -14,11 +14,11 @@ Para cada iteración se estima el punto medio como $$ m_k = \frac{a_k + b_k}{2} 
 En este método nos podemos asegurar llegar a la raiz en infinitos pasos.
 
 
-### Cota de error
+#### Cota de error
 ---
 El [[Error absoluto|error absoluto]] de este algoritmo es $\Delta x_n = \frac{\Delta x_0}{2^{n}}$ donde $\Delta x_0 = \frac{b_0 - a_0}{2}$. 
 
 
-### Solucion
+#### Solución
 ---
 Se dice que el resultado es $$ \alpha = m_k ~ \pm ~ \Delta x_n $$
