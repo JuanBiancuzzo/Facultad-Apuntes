@@ -1,7 +1,7 @@
 ---
-dia: 2022-09-15
+dia: 2023-08-24
 materia: fisica 3
-capitulo: 1
+capitulo: 13
 ---
 ### Definición
 ---
