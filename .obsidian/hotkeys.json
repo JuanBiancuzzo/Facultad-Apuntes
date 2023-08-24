@@ -33,5 +33,13 @@
       ],
       "key": "M"
     }
+  ],
+  "templater-obsidian:_template/Plot function.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "P"
+    }
   ]
 }
