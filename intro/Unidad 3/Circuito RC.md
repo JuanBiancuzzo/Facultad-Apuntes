@@ -9,10 +9,10 @@ Un circuito RC de primer orden es un circuito eléctrico compuesto de un [[Re
 
 ##### Esquematización
 
-![[Pasted image 20221114123225.png]]
+![[Circuito RC.png]]
 
 ##### Análisis
-Al cerrar la llave (en el instante $t=0$), por [[Leyes de Kirchhoff]] de [[Mallas]], se puede deducir que:
+Al cerrar la llave (en el instante $t=0$), por [[Ley de Nodos de Kirchhoff]] de [[Malla]], se puede deducir que:
 $$\begin{align}
 V_0 (t)= V_R (t) + V_C (t)
 \end{align}

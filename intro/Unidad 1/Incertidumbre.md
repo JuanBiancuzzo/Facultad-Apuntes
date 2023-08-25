@@ -13,11 +13,11 @@ Depende de:
 
 2. **Resolucion:** Es la mínima lectura apreciable (dependede la ubicación del punto decimal).
 
-![[Pasted image 20221114002212.png]]
+![[Resolución por rango.png]]
 
-3. **Cuentas:** La siguiente tabla depende del multimetro o instrumento utilizado, se encuentra en los manuales de los mismos.
+3. **Cuentas:** La siguiente tabla depende del multímetro o instrumento utilizado, se encuentra en los manuales de los mismos.
 
-![[Pasted image 20221114002332.png]]
+![[Incertidumbre por resolución.png]]
 
 De donde:
 $$

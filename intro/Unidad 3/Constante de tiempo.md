@@ -42,7 +42,7 @@ Es decir, que la [[Diferencia de potencial]] de carga sobre un capacitor, en un 
 
 ##### Esquematizándolo
 
-![[Pasted image 20221114141109.png]]
+![[Constante de tiempo.png]]
 
 ##### Tiempo de carga de un capacitor
 El tiempo que tarda un capacitor para cargarse en su totalidad es de $5\tau$.

@@ -28,4 +28,4 @@ Cuando el problema está modelado como un sistema lineal en términos de las var
 
 ##### Esquematizando
 ---
-![[Pasted image 20221114011845.png]]
+![[Sistema lineal.png]]

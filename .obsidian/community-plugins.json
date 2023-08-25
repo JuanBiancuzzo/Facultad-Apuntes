@@ -3,5 +3,7 @@
   "dataview",
   "templater-obsidian",
   "obsidian-git",
-  "obsidian-functionplot"
+  "obsidian-functionplot",
+  "cm-editor-syntax-highlight-obsidian",
+  "obsidian-latex-suite"
 ]

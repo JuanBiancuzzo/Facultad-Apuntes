@@ -9,4 +9,4 @@ Es aquella que genera una intensidad de [[Corriente]] entre sus terminales const
 
 ##### Simbología
 
-![[Pasted image 20221114012211.png]]
+![[Diagrama de una fuente de corriente.png]]
