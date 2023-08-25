@@ -16,7 +16,7 @@ $$
 
 #### Esquematización
 ---
-![[Pasted image 20221114214118.png]]
+![[Potencia máxima.png]]
 
 #### Análisis
 ---
@@ -26,7 +26,7 @@ $$
 P_\text{carga} = V_\text{carga} \cdot I_\text{carga}
 \end{align}
 $$
-Sabiendo que, por [[Divisor de tension]] y por [[Resistores equivalentes]]:
+Sabiendo que, por [[Divisor de tension]] y por [[Resistor equivalente]]:
 $$ 
 \left\{ 
 \begin{array}{ l } 

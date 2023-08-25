@@ -5,12 +5,10 @@ capitulo: 1
 ---
 ### Definición
 ---
-"Es el elemento que introduce una [[Resistencia]] en un circuito electrico."
+Es el elemento que introduce una [[Resistencia]] en un circuito eléctrico
 
-**Simbologia:**
+##### Simbología
+![[Diagrama de una resistencia.png]]
 
-![[Pasted image 20221113220440.png]]
-
-**Codigo de colores:**
-
-![[Pasted image 20221113220727.png]]
+##### Código de colores
+![[Código de colores de una resistencia.png]]

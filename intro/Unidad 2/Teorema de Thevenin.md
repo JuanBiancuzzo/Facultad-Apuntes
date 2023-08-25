@@ -21,5 +21,5 @@ Un [[Circuito lineal]] de dos o mas terminales puede sustituirse por un circuito
 
 #### **Esquematizando:**
 ---
-![[Pasted image 20221114105354.png]]
+![[Equivalente de thevenin.png]]
 

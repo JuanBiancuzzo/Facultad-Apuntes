@@ -9,4 +9,4 @@ Es aquella que genera una [[Diferencia de potencial]] entre sus terminales const
 
 ##### Simbología
 
-![[Pasted image 20221114012051.png]]
+![[Diagrama de una fuente de tensión.png]]
