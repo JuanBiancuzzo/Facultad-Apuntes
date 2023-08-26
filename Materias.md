@@ -1,4 +1,4 @@
-	Lista de todas las materias dividido por los cuatrimestres que los hice
+Lista de todas las materias dividido por los cuatrimestres que los hice
 
 ```dataviewjs
 function nombre_cuatrimestre(cuatrimestre) {

@@ -17,6 +17,10 @@
     {
       "folder": "/",
       "template": "_template/Definición - Template.md"
+    },
+    {
+      "folder": "referencias",
+      "template": "_template/Referencia - Template.md"
     }
   ],
   "syntax_highlighting": true,
