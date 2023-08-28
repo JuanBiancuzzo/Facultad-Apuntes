@@ -5,7 +5,7 @@ capitulo: 13
 ---
 ### Definición
 ---
-Vamos a asumir que:
+Este [[Modelo]] asume que:
 * El caudal másico $[g \cdot s^{-1}]$ es continuo y constante durante el período de tiempo seleccionado
 * El [[Contaminación atmosférica|contaminante]] gaseoso o particulado con un diámetro menor a $10~\mu m$
 * El viento es uniforme en toda la capa donde se produce la dispersión

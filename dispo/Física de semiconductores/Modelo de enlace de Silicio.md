@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-Átomos como el Silicio, tiene 4 [[Electrón|electrones]] débilmente ligados, esto ayuda a generar una [[Red cristalina]] con una [[Red del diamante]], esto produce que tenga una densidad atómica de $5 \times 10^{22}~cm^{-3}$.
+Este [[Modelo]] toma al átomos de Silicio, que tiene 4 [[Electrón|electrones]] débilmente ligados, esto ayuda a generar una [[Red cristalina]] con una [[Red del diamante]], esto produce que tenga una densidad atómica de $5 \times 10^{22}~cm^{-3}$.
 
 #### Concentración de [[Portador de carga|portadores]]
 ---

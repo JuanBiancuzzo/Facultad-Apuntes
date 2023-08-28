@@ -5,7 +5,7 @@ capitulo: 4
 ---
 ### Definición
 ---
-Los threads comparten los recursos del [[Proceso|proceso]], entre ellos, el espacio de memoria. Cada thread mantiene su propia información de estado (stack, PC, registros).
+Los threads comparten los recursos del [[taller/Concurrencia/Proceso|proceso]], entre ellos, el espacio de memoria. Cada thread mantiene su propia información de estado (stack, PC, registros).
 
 Para crear un thread es utilizando el [[Crate]] de la `std`, creando un [[JoinHandle]] de la siguiente forma 
 ``` rust

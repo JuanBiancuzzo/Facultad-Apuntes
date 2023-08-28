@@ -5,7 +5,7 @@ capitulo: 3
 ---
 ### Definición
 ---
-También conocido como el tetraedro del fuego
+Este [[Modelo]] también conocido como el tetraedro del fuego
 
 ![[Tetraedro del fuego.png|600]]
 
