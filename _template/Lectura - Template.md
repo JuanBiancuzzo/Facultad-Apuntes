@@ -1,10 +1,9 @@
 <%* 
 	let titulo = tp.file.title;
 	if (titulo.startsWith("Untitle")) {
-		titulo = await tp.system.prompt("Nombre:");
+		titulo = await tp.system.prompt("Titulo de la lectura:");
 		await tp.file.rename(titulo);
 	}
-	await tp.file.move("/referencias/" + titulo);
 	tR += "---";
 %>
 dia: <% tp.file.creation_date("YYYY-MM-DD") %>

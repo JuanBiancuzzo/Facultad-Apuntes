@@ -10,7 +10,7 @@ Es un [[Modelo]], que tiene un lenguaje gráfico utilizado para especificar, vis
 Este modelo plantea una serie de diagramas, como 
 
 ##### Diagrama de clases
-Describe la estructura interna de un sistema con clases, asociaciones entre las clases e interfaces. Esta estructura es estática
+Describe la estructura de un sistema con clases, asociaciones entre las clases e interfaces. Muestra la estructura interna y estática del sistema
 
 ##### Diagrama de casos de uso
 Mostrar la funcionalidad provista por el sistema y su interacción con los usuarios, a alto nivel

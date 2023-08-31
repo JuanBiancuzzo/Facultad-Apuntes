@@ -41,5 +41,13 @@
       ],
       "key": "P"
     }
+  ],
+  "templater-obsidian:_template/Referencia - Template.md": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "R"
+    }
   ]
 }
