@@ -8,7 +8,7 @@ capitulo: 1
 Partículas cargadas que tienen velocidad neta debido a la presencia de un [[Campo eléctrico]], es decir, una [[Corriente|corriente eléctrica]]. La [[Densidad de corriente|densidad corriente]] arrastre es proporcional a
 * La [[Velocidad de arrastre]] de [[Portador de carga|portadores]] ($v_a$)
 * La [[Modelo de enlace de Silicio|concentración de portadores]] ($n$ o $p$)
-* La [[Carga]] de los portadores ($\pm q$)
+* La [[Carga eléctrica]] de los portadores ($\pm q$)
 
 La densidad de corriente de arrastre se calcula $$ \begin{matrix} 
 	J_n^{arr} = -q \cdot n \cdot v_{a_n} = q \cdot n \cdot \mu_n E \\

@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-La intensidad de corriente ($I$) es una magnitud física que indica la cantidad de [[Carga|cargas]] que atraviesan la sección de un determinado conductor por unidad de tiempo.
+La intensidad de corriente ($I$) es una magnitud física que indica la cantidad de [[Carga eléctrica|cargas]] que atraviesan la sección de un determinado conductor por unidad de tiempo.
 Es decir,
 $$
 \begin{align}
