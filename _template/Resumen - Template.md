@@ -1,18 +1,20 @@
 <%* 
 	let titulo = tp.file.title;
+
+	let libro = "", capitulo = "";
 	if (titulo.startsWith("Untitle")) {
-		titulo = await tp.system.prompt("Nombre del capitulo:");
+		libro = await tp.system.prompt("Nombre del libro: ");
+		capitulo = await tp.system.prompt("Nombre del capitulo:");
+		titulo = libro + " - " + capitulo;
 		await tp.file.rename(titulo);
-	}
-	await tp.file.move("/referencias/" + titulo);
+	} 
+	[libro, capitulo] = titulo.split(" - ");
 	tR += "---";
 %>
 dia: <% tp.file.creation_date("YYYY-MM-DD") %>
 tipo: resumen
-<%*
-	let libro = await tp.system.prompt("Nombre del libro: ");
-	tR += "libro: " + libro;
-%>
+<%* tR += "libro: " + libro; %>
+<%* tR += "capitulo: " + capitulo; %>
 <%* 
 	contador = 1;
 	let autor = await tp.system.prompt("Autor: ");
@@ -28,4 +30,4 @@ tipo: resumen
 <%* tR += "---"; %>
 ### Definición
 ---
-<% tp.file.cursor() %>
+
