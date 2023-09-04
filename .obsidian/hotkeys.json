@@ -49,5 +49,22 @@
       ],
       "key": "R"
     }
-  ]
+  ],
+  "templater-obsidian:_template/Crear referencia.md": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "R"
+    }
+  ],
+  "templater-obsidian:_template/Crear resumen.md": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "L"
+    }
+  ],
+  "editor:toggle-checklist-status": []
 }

@@ -1,5 +1,6 @@
 ---
 dia: 2023-08-25
+tipo: referencia
 referencia: [
 	https://es.wikipedia.org/wiki/Movimiento_browniano,
 ]
