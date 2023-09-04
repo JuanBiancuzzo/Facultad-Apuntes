@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-Partículas cargadas que tienen velocidad neta debido a la presencia de un [[Campo eléctrico]], es decir, una [[Corriente|corriente eléctrica]]. La [[Densidad de corriente|densidad corriente]] arrastre es proporcional a
+Partículas cargadas que tienen velocidad neta debido a la presencia de un [[Campo eléctrico]], es decir, una [[Corriente eléctrica|corriente eléctrica]]. La [[Densidad de corriente|densidad corriente]] arrastre es proporcional a
 * La [[Velocidad de arrastre]] de [[Portador de carga|portadores]] ($v_a$)
 * La [[Modelo de enlace de Silicio|concentración de portadores]] ($n$ o $p$)
 * La [[Carga eléctrica]] de los portadores ($\pm q$)

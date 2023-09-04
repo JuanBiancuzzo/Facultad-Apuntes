@@ -5,7 +5,7 @@ capitulo: 3
 ---
 ### Definición
 ---
-Son aquellos [[Capacitor|capacitores]] atravesados por la misma corriente y comparten la misma [[Malla]]
+Son aquellos [[Capacitor|capacitores]] atravesados por la misma [[Corriente eléctrica|corriente]] ([[Elementos en serie]]) y comparten la misma [[Malla]]
 ![[Capacitores en serie.png]]
 
 Por lo que el equivalente es 

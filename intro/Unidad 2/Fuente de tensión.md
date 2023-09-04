@@ -5,8 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-Es aquella que genera una [[Diferencia de potencial]] entre sus terminales constante e independiente de la carga.
+Es aquella que genera una [[Tensión]] entre sus terminales constante e independiente de la carga.
 
 ##### Simbología
-
 ![[Diagrama de una fuente de tensión.png]]

@@ -5,7 +5,7 @@ capitulo: 2
 ---
 ### Postulado
 ---
-Un [[Circuito lineal]] de dos o mas terminales puede sustituirse por un circuito equivalente formado por una [[Fuente de tension]] ($V_\text{Th}$) en serie con un [[Resistor]] ($R_\text{Th}$). Es decir, el teorema de Thevenin proporciona una técnica para sustituir la parte fija por un circuito equivalente sencillo.
+Un [[Circuito lineal]] de dos o mas terminales puede sustituirse por un circuito equivalente formado por una [[Fuente de tensión]] ($V_\text{Th}$) en serie con un [[Resistor]] ($R_\text{Th}$). Es decir, el teorema de Thevenin proporciona una técnica para sustituir la parte fija por un circuito equivalente sencillo.
 
 #### Condición:
 ---

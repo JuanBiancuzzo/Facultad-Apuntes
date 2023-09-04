@@ -5,7 +5,7 @@ capitulo: 6
 ---
 ### Definición
 ---
-Es similar al [[Multimetro True RMS]], cambia en que puede calcular directamente el valor de la [[Tension eficaz]] total ($V_{eficaz}$).
+Es similar al [[Multimetro True RMS]], cambia en que puede calcular directamente el valor de la [[Tensión eficaz]] total ($V_{eficaz}$).
 
 #### Modos
 ---

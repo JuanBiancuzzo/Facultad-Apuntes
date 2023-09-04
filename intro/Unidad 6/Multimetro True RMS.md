@@ -17,7 +17,7 @@ V_\text{DC} = \frac{1}{T} \cdot \int_{0}^{T} v(t) \cdot dt
 \end{align}
 $$
 - Modo AC: 
-Utiliza la función definida en el apartado de [[Tension eficaz]] para alterna:
+Utiliza la función definida en el apartado de [[Tensión eficaz]] para alterna:
 $$
 \begin{align}
 V_{AC}= \sqrt{\frac{1}{T} \cdot \int_{0}^{T} (v(t) - V_{DC})^2 \cdot dt}

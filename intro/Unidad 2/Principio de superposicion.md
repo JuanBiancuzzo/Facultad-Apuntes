@@ -16,13 +16,13 @@ Cuando el problema está modelado como un sistema lineal en términos de las var
 ##### Condiciones
 ---
 - [[Circuito lineal]].
-- Hay igual cantidad de fuentes ([[Fuente de tension|tensión]] o [[Fuente de corriente|corriente]]) que de circuitos.
+- Hay igual cantidad de fuentes ([[Fuente de tensión|tensión]] o [[Fuente de corriente|corriente]]) que de circuitos.
 - Las fuentes de tension se cierran.
 - Las fuentes de corriente se abren.
 
 ##### Pasos
 ---
-1.  Apagar todas las fuentes independientes excepto una. Calcular la salida ([[Diferencia de potencial]] o [[Corriente]]) debido a la única fuente activa.
+1.  Apagar todas las fuentes independientes excepto una. Calcular la salida ([[intro/Unidad 1/Tensión]] o [[Corriente eléctrica]]) debido a la única fuente activa.
 2.  Repetir el paso anterior para cada una de las fuentes independientes presentes en el circuito.
 3.  La contribución total viene dada por la suma algebraica de las contribuciones de cada una de las fuentes independientes.
 

@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-Un nodo es un punto común en el que se conectan dos o más componentes o ramas.
+Un nodo es un punto común en el que se conectan dos o más componentes o [[Rama|ramas]].
 
 ##### Esquematización
 ![[Nodo.png]]

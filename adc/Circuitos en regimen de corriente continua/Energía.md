@@ -5,3 +5,4 @@ capitulo: 1
 ---
 ### Definición
 ---
+Es la capacidad de realizar [[Trabajo]], medida en Joules $[J]$

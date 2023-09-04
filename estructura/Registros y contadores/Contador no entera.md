@@ -26,4 +26,4 @@ Al tener 3 flip-flop jk, y 3 respuestas de los flip flops, tendremos la siguient
 | 1       | 1       | 0       |     | 0           | 0           | 0           |     | x     | 1     |     | x     | 1     |     | 0     | x      |
 | 1       | 1       | 1       |     | x           | x           | x           |     | x     | x     |     | x     | x     |     | x     | x      |
 
-Ahora usando el [[Mapa de Karnaugh]] o el [[Algoritmo de Quine-McCluskey]] podemos encontrar el [[Circuito]] necesario para concectar los flip-flops, recordando que las x son redundancias.
+Ahora usando el [[Mapa de Karnaugh]] o el [[Algoritmo de Quine-McCluskey]] podemos encontrar el [[estructura/Algebra de boole/Circuito]] necesario para concectar los flip-flops, recordando que las x son redundancias.

@@ -22,7 +22,7 @@ Ahora, sabiendo que:
 $$\begin{align}
 i(t) = \frac{dq(t)}{dt}
 \end{align}$$
-Entonces, la relación entre [[Diferencia de potencial]] y [[Corriente]] en un capacitor está dada por:
+Entonces, la relación entre [[intro/Unidad 1/Tensión]] y [[Corriente eléctrica]] en un capacitor está dada por:
 $$\begin{align}
 i(t) &= C \cdot \frac{dV_C(t)}{dt}
 \end{align}$$

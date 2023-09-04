@@ -26,7 +26,7 @@ $$
 P_\text{carga} = V_\text{carga} \cdot I_\text{carga}
 \end{align}
 $$
-Sabiendo que, por [[Divisor de tension]] y por [[Resistor equivalente]]:
+Sabiendo que, por [[Divisor de tensión]] y por [[Resistor equivalente]]:
 $$ 
 \left\{ 
 \begin{array}{ l } 
