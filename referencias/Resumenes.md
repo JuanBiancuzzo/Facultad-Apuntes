@@ -1,7 +1,8 @@
 
 ```dataviewjs
 const resumenes = dv.pages('"referencias"')
-	.where(pagina => pagina.tipo == "resumen");
+	.where(pagina => pagina.tipo == "resumen")
+	.sort(pagina => pagina.num_capitulo);
 
 const libros = resumenes.groupBy(resumen => [resumen.libro, resumen.autor]);
 
