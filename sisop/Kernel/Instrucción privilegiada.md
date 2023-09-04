@@ -17,12 +17,12 @@ Este conjunto de instrucciones sólo puede ser ejecutado en [[Modo de operación
 | MOVCR       | Copia la información y la guarda en el [[Registro de control]] |
 | LMSW        | Carga un nuevo [[Estado de máquina]] en WORD                   |
 | CLTS        | Limpia el [[Cambio de tarea]] en el registro de control CR0    |
-| MOV         |                                                                |
-| INVD        |                                                                |
-| INVLPG      |                                                                |
-| WBINVD      |                                                                |
-| HLT         |                                                                |
-| RDMSR       |                                                                |
-| WRMSR       |                                                                |
-| RDPMC       |                                                                |
-| RDTSC       |                                                                |
+| MOV         | Copiar y guardar [[Registro debug]] en el registro de debug                                                              |
+| INVD        | Invalida el [[Cache]] sin writeback                            |
+| INVLPG      | Invalida la entrada de TLB                                     |
+| WBINVD      | Invalida el [[Cache]] con writeback                            |
+| HLT         | Para el [[taller/Concurrencia/Proceso\|proceso]]               |
+| RDMSR       | Leer el [[Registro de modelo especifico]]                      |
+| WRMSR       | Escribir el [[Registro de modelo especifico]]                  |
+| RDPMC       | Leer el [[Contador]] de rendimiento                            |
+| RDTSC       | Leer el contador de time stamp                                 |
