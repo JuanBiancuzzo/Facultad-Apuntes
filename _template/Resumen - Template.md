@@ -16,6 +16,12 @@ tipo: resumen
 <%* tR += "libro: " + libro; %>
 <%* tR += "capitulo: " + capitulo; %>
 <%* 
+	let num_capitulo = await tp.system.prompt("Número de capitulo:");
+	if (num_capitulo === null || num_capitulo === "")
+		num_capitulo = "1";
+	tR += "num_capitulo: " + num_capitulo;
+%>
+<%* 
 	contador = 1;
 	let autor = await tp.system.prompt("Autor: ");
 	let autores = "autor: [\n\t" + autor;
