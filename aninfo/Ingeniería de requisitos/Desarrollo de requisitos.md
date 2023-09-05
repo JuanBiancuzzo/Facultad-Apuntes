@@ -8,7 +8,7 @@ capitulo: 2
 Esta conlleva varias actividades
 
 ##### Descubrimiento
-![[Descubrimiento de requisitos#Definición]]
+![[Técnicas de descubrimiento de requisitos#Definición]]
 
 ##### Análisis
 ![[Análisis de requisitos#Definición]]

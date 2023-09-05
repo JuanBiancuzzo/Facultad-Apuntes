@@ -18,7 +18,7 @@ Podemos dividirlo en varias etapas, agrupadas en dos grupos
 Definir el alcance y analizar el mercado mediante benchmarking
 
 ###### Identificación
-Identificar las necesidades de usuarios y clientes, directos e indirectos (como los métodos usados en el [[Descubrimiento de requisitos]])
+Identificar las necesidades de usuarios y clientes, directos e indirectos (como los métodos usados en el [[Técnicas de descubrimiento de requisitos|descubrimiento de requisitos]])
 
 ###### Estructuración de los resultados
 Estructurar, analizar los resultados de las entrevistas y observaciones, identificar patrones
@@ -31,7 +31,7 @@ Explorar un amplio abanico de posibles soluciones
 Construir prototipos para demostrar la funcionalidad del producto/servicio
 
 ###### Evaluación
-Probar la funcionalidad del producto/servicio con usuarios, clientes e interesados
+Probar la funcionalidad del producto/servicio con usuarios, clientes e [[Interesados en el producto|interesados]]
 
 #### Métodos y herramientas
 ---

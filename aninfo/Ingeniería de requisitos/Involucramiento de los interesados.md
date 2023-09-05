@@ -5,4 +5,4 @@ capitulo: 2
 ---
 ### Definición
 ---
-Este involucramiento alinea las necesidades de los interesados con las soluciones a estas necesidades que plantean los desarrolladores
+Este involucramiento alinea las necesidades de los [[Interesados en el producto|interesados]] con las soluciones a estas necesidades que plantean los desarrolladores
