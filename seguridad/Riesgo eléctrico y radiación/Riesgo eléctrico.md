@@ -9,7 +9,7 @@ Se entiende por [[Riesgo]] eléctrico a la posibilidad que la [[Corriente eléct
 
 Este puede ocurrir cuando:
 * Existe un [[estructura/Algebra de boole/Circuito|circuito]] eléctrico
-* Existe una [[intro/Unidad 1/Tensión]]
+* Existe una [[Tensión]]
 * El cuerpo humano no se encuentra [[Aislado]] y frome parte del circuito.
 
 

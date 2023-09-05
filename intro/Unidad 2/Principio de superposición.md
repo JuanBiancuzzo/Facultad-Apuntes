@@ -5,13 +5,7 @@ capitulo: 2
 ---
 ### Postulado
 ---
-El efecto que producen dos o más entradas sobre un [[Circuito lineal]] es igual a la suma de los efectos que produce cada entrada por separado.
-
-##### ¿Para que sirve?
-Permite resolver un problema complejo como la suma de varios problemas sencillos.
-
-##### ¿Cuándo es posible aplicarlo?
-Cuando el problema está modelado como un sistema lineal en términos de las variables que lo conforman.
+Se establece que la [[Tensión]] entre los extremos (o la [[Corriente eléctrica|corriente]] a través) de un elemento en un [[Circuito lineal]] es la suma algebraica de las tensiones (o corrientes) a través de ese elemento debido a que cada fuente independiente actúa sola 
 
 ##### Condiciones
 ---
@@ -22,7 +16,7 @@ Cuando el problema está modelado como un sistema lineal en términos de las var
 
 ##### Pasos
 ---
-1.  Apagar todas las fuentes independientes excepto una. Calcular la salida ([[intro/Unidad 1/Tensión]] o [[Corriente eléctrica]]) debido a la única fuente activa.
+1.  Apagar todas las fuentes ([[Fuente de tensión]] y [[Fuente de corriente]]) independientes excepto una. Calcular la salida ([[Tensión]] o [[Corriente eléctrica]]) debido a la única fuente activa.
 2.  Repetir el paso anterior para cada una de las fuentes independientes presentes en el circuito.
 3.  La contribución total viene dada por la suma algebraica de las contribuciones de cada una de las fuentes independientes.
 

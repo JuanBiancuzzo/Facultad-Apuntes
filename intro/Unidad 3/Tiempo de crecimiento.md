@@ -5,7 +5,7 @@ capitulo: 3
 ---
 ### Definición
 ---
-Se define el tiempo de crecimiento (rise time) como el intervalo de tiempo que tarda la [[intro/Unidad 1/Tensión]] en pasar del $10\%$ al $90\%$ del máximo valor.
+Se define el tiempo de crecimiento (rise time) como el intervalo de tiempo que tarda la [[Tensión]] en pasar del $10\%$ al $90\%$ del máximo valor.
 
 #### Expresión
 ---

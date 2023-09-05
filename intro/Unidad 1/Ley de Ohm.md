@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición 
 ---
-La [[intro/Unidad 1/Tensión]]$(\Delta V)$ en un [[Resistor]] es proporcional a la [[Corriente eléctrica]] ($I$) que lo circula.
+La [[Tensión]]$(\Delta V)$ en un [[Resistor]] es proporcional a la [[Corriente eléctrica]] ($I$) que lo circula.
 $$ \Delta V = I \cdot R $$
 
 Viéndolo desde el punto de vista más general, podemos decir que el [[Campo eléctrico]] es la [[Densidad de corriente]] por la densidad de resistencia $$ E = J \cdot \rho $$ 

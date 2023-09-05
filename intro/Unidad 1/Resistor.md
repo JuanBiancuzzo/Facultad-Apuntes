@@ -8,7 +8,7 @@ capitulo: 1
 Es el elemento que introduce una [[Resistencia]] en un circuito eléctrico
 
 ##### Simbología
-![[Diagrama de una resistencia.png]]
+![[Diagrama de una resistencia.png|500]]
 
 ##### Código de colores
 ![[Código de colores de una resistencia.png]]
