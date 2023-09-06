@@ -12,6 +12,7 @@ y tiene el circuito
 
 #### Tabla de estados
 ---
+
 | D   | Q   |
 | --- | --- |
 | 0   | 0   |

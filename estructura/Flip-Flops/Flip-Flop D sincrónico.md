@@ -10,6 +10,7 @@ A diferencia de su versión [[Flip-Flop D asincrónico|asincrónica]] este nos p
 
 #### Tabla de estados
 ---
+
 | $C_k$ | $Q^n$ | $D^n$ |     | $Q^{n+1}$ |
 | ----- | ----- | ----- | --- | --------- |
 | 0     | 0     | 0     |     | 0         |
