@@ -14,7 +14,7 @@ Esta conlleva varias actividades
 ![[Análisis de requisitos#Definición]]
 
 ##### Especificación
-Documentar los [[Requisito|requisitos]] para facilitar su revisión, evaluación y aprobación
+[[Documentación del descubrimiento de los requisitos|Documentar]] los [[Requisito|requisitos]] para facilitar su revisión, evaluación y aprobación
 
 ##### Verificación
 ![[Verificación#Definición]]
