@@ -9,10 +9,13 @@ La distancia que recorre el [[Portador de carga|portador]] ($W_p$ ancho del [[Se
 $\implies$ la [[Probabilidad]] de [[Recombinación]] es muy baja
 $\implies$ Todo portador que ingresa a la QNR, la atraviesa en su totalidad hasta alcanzar el extremo contrario
 
-# COMPLETAR
+Esto se conoce como la aproximación de [[Diodo]] corto.
 
-En la región p-QNR, los [[Electrón|electrones]] se difunden sin [[Recombinación|recombinarse]] hasta alcanzar el contacto
-* La [[Densidad de corriente eléctrica]] de electrones ($J_n$) es constante en la región p-QNR
-* $n(x)$ tiene que ser lineal
+#### Conclusión
+---
+Por lo que podemos suponer que los [[Portador de carga|portadores]] se difunden sin recombinarse hasta alcanzar el [[Condición de borde en una juntura PN|contacto]]
+* La [[Densidad de corriente eléctrica]] de [[Electrón|electrones]] ($J_n$) es constante en la región p-QNR
+  $\implies$ $n(x)$ tiene que ser lineal
+* La [[Densidad de corriente eléctrica]] de [[Hueco|huecos]] ($J_p$) es constante en la región n-QNR
+  $\implies$ $p(x)$ tiene que ser lineal
 
-Esto se conoce como la aproximación de [[Diodo]] corto
