@@ -8,21 +8,25 @@ Cualquier corrección/ampliación de los contenidos en este proyecto, por favor 
 ---
 Un listado de materias y su estado actual.
 
-| Materia | Estado |
-| --- | --- |
-| Análisis de circuitos | Cursando |
-| Algebra 2 | Falta terminar de pasar el resumen |
-| Análisis 2 | Falta terminar de pasar el resumen |
-| Análisis 3 | Terminado |
-| Análisis de la información | Cursando |
-| Dispositivos semiconductores | Cursando |
-| Estructura del computador | Falta escribir sobre el Murdocca |
-| Física 1 | Falta pasar el resumen |
-| Física 2 | Falta pasar el resumen |
-| Física 3 | Falta pasar el resumen |
-| Introducción a la Ingeniería electrónica | Terminado |
-| Análisis numérico | Falta pasar el resumen |
-| Probabilidad y estadística | Falta capítulo 1 |
-| Seguridad ambiental y del trabajo | Terminado |
-| Sistemas operativos | Cursando |
-| Taller de programación | Escribir sobre el libro de rust |
+| Materia                                  | Estado                             |
+| ---------------------------------------- | ---------------------------------- |
+| Análisis de circuitos                    | Cursando                           |
+| Algebra 2                                | Falta terminar de pasar el resumen |
+| Análisis 2                               | Falta terminar de pasar el resumen |
+| Análisis 3                               | Terminado                          |
+| Análisis de la información               | Cursando                           |
+| Dispositivos semiconductores             | Cursando                           |
+| Estructura del computador                | Falta escribir sobre el Murdocca   |
+| Física 1                                 | Falta pasar el resumen             |
+| Física 2                                 | Falta pasar el resumen             |
+| Física 3                                 | Falta pasar el resumen             |
+| Introducción a la Ingeniería electrónica | Terminado                          |
+| Análisis numérico                        | Falta pasar el resumen             |
+| Probabilidad y estadística               | Falta capítulo 1                   |
+| Seguridad ambiental y del trabajo        | Terminado                          |
+| Sistemas operativos                      | Cursando                           |
+| Taller de programación                   | Escribir sobre el libro de rust    |
+ 
+##### Colaboradores
+---
+* Felipe Perassi

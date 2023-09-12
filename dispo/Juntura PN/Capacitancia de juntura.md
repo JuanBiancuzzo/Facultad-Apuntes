@@ -27,4 +27,4 @@ También lo podemos pensar como que $$ C_{j_0}' = C_j'(V_{PN} = 0) $$
 Entonces podemos plantear $$ C_j'(V_{PN}) = \frac{C_{j_0}'}{\sqrt{1 - \frac{V_{PN}}{\phi_B}}} $$
 La principal dependencia de $C_j'$ es la [[Tensión]] de polarización aplicada 
 
-![[Dependencia de la capacitancia con respecto a la tensión aplicada.png|600]]
+![[Dependencia de la capacitancia con respecto a la tensión aplicada.png]]

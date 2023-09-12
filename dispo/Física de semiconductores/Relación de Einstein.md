@@ -12,5 +12,5 @@ Tenemos que $$ D_{n, ~p} = \frac{\lambda_c^2}{\tau_c}$$ donde $\lambda_c$ es el 
 Podemos ver que la relación entre $D_{n, ~p}$ y $\mu_{n, ~p}$ es $$ \frac{D_{n, ~p}}{\mu_{n, ~p}} = \frac{1}{q} ~ m^*_{n, ~p} ~ \left(\frac{\lambda_c}{\tau_c}\right)^2 $$ que si recordamos que $v_{th} = \frac{\lambda_c}{\tau_c}$, donde $v_{th}$ es la [[Movimiento térmico de portadores|velocidad térmica]], nos queda $$ \frac{D_{n, ~p}}{\mu_{n, ~p}} = \frac{1}{q} ~ m^*_{n, ~p} ~ v_{th}^2 $$
 Los [[Electrón|electrones libres]] y los [[Hueco|huecos]], cuando el [[Semiconductor intrínseco|semiconductor no está degenerado]], cumplen con la [[Estadística de Boltzmann]]. En el caso unidimensional plantado $$ \frac{1}{1} ~ m^*_{n, ~p} ~ v_{th}^2 = \frac{1}{2} k ~ T $$ donde $k$ es la constante de Boltzmann,  y $T$ es la temperatura en Kelvin.
 
-Queda entonces la relación de Einstein $$ \frac{D}{\mu} = \frac{k ~ T}{q} $$ donde $\frac{k ~ T}{q}$ es el potencial térmico en $[V]$
+Queda entonces la relación de Einstein $$ \frac{D}{\mu} = \frac{k ~ T}{q} = V_{th} $$ donde $V_{th} = \frac{k ~ T}{q}$ es el [[Potencial eléctrico|potencial]] térmico en $[V]$
  

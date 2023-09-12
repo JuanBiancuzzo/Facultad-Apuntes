@@ -89,3 +89,9 @@ Por lo que la corriente total es $$ I = q ~ A ~ n_i^2  \left( \frac{1}{N_a} \fra
 Que podemos reducir a $$ I = I_0 \left( \exp\left( \frac{q~V_D}{kT} \right) - 1 \right) $$ donde $I_0$ es la corriente $I$ cuando $V_D = 0$
 
 La [[Condición de borde en una juntura PN|condición de contorno]] usada, es valida tanto para [[Convención de signos para la tensión de polarización#Polarización directa|polarización directa]] como para [[Convención de signos para la tensión de polarización#Polarización inversa|polarización inversa]] por lo que la ecuación es válida en directa y en inversa.
+
+Notemos que podemos aproximarlo como $$ I(V_D) \simeq \begin{cases} 
+	I_0, && ~ && V_D &<& -V_0 \\
+	I_0 \left( \exp\left( \frac{q~V_D}{kT} \right) - 1 \right), && -V_0 &<& V_D &<& V_0 \\
+	I_0 ~ \exp\left( \frac{q~V_D}{kT} \right), && ~~~V_0 &<& V_D \\
+\end{cases}$$ donde $V_0 \simeq 5 \cdot V_{th}$. Recordando que $V_{th}$ es el [[Relación de Einstein|potencial térmico]].
