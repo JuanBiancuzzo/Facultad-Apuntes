@@ -84,9 +84,9 @@ De forma similar para los [[Hueco|huecos]] $$ J_p = q \frac{n_i^2}{N_d} \frac{D_
 
 #### Corriente total
 ---
-Sabemos que la [[Densidad de corriente eléctrica|densidad de corriente]] total sabemos que es $J = J_n + J_p$ por lo tanto $$ J = q ~ n_i^2  \left( \frac{1}{N_a} \frac{D_n}{W_p -x_p} + \frac{1}{N_d} \frac{D_p}{W_n -x_n} \right) \left( \exp\left( \frac{q~V_D}{kT} \right) - 1 \right) $$
-Por lo que la corriente total es $$ I = q ~ A ~ n_i^2  \left( \frac{1}{N_a} \frac{D_n}{W_p -x_p} + \frac{1}{N_d} \frac{D_p}{W_n -x_n} \right) \left( \exp\left( \frac{q~V_D}{kT} \right) - 1 \right) $$
-Que podemos reducir a $$ I = I_0 \left( \exp\left( \frac{q~V_D}{kT} \right) - 1 \right) $$ donde $I_0$ es la corriente $I$ cuando $V_D = 0$
+Sabemos que la [[Densidad de corriente eléctrica|densidad de corriente]] total sabemos que es $J = J_n + J_p$ por lo tanto $$ J(V_D) = q ~ n_i^2  \left( \frac{1}{N_a} \frac{D_n}{W_p -x_p} + \frac{1}{N_d} \frac{D_p}{W_n -x_n} \right) \left( \exp\left( \frac{q~V_D}{kT} \right) - 1 \right) $$
+Por lo que la corriente total es $$ I(V_D) = q ~ A ~ n_i^2  \left( \frac{1}{N_a} \frac{D_n}{W_p -x_p} + \frac{1}{N_d} \frac{D_p}{W_n -x_n} \right) \left( \exp\left( \frac{q~V_D}{kT} \right) - 1 \right) $$
+Que podemos reducir a $$ I(V_D) = I_0 \left( \exp\left( \frac{q~V_D}{kT} \right) - 1 \right) $$ donde $I_0$ reemplaza a la "constante" que lleva la corriente, llamada corriente de saturación inversa.
 
 La [[Condición de borde en una juntura PN|condición de contorno]] usada, es valida tanto para [[Convención de signos para la tensión de polarización#Polarización directa|polarización directa]] como para [[Convención de signos para la tensión de polarización#Polarización inversa|polarización inversa]] por lo que la ecuación es válida en directa y en inversa.
 

@@ -28,3 +28,5 @@ Entonces podemos plantear $$ C_j'(V_{PN}) = \frac{C_{j_0}'}{\sqrt{1 - \frac{V_{P
 La principal dependencia de $C_j'$ es la [[Tensión]] de polarización aplicada 
 
 ![[Dependencia de la capacitancia con respecto a la tensión aplicada.png]]
+
+También lo podemos plantear con el calculo de la [[Capacitancia]] $$ C_J(V_{PN}) = \frac{\partial Q_{SCR}}{\partial v_d} \bigg|_{v_d = V_{PN}} = A \cdot C_J'(V_{PN})$$

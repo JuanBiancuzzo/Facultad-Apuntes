@@ -11,6 +11,8 @@ $\implies$ Todo portador que ingresa a la QNR, la atraviesa en su totalidad hast
 
 Esto se conoce como la aproximación de [[Diodo]] corto.
 
+Se considera diodo corto cuando $W < L_{dif} = \sqrt{D \cdot \tau_T} \simeq 100 \mu m$ 
+
 #### Conclusión
 ---
 Por lo que podemos suponer que los [[Portador de carga|portadores]] se difunden sin recombinarse hasta alcanzar el [[Condición de borde en una juntura PN|contacto]]

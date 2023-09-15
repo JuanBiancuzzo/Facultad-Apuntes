@@ -109,6 +109,6 @@
   "repelStrength": 9.91666666666667,
   "linkStrength": 1,
   "linkDistance": 220,
-  "scale": 0.22832440724330855,
-  "close": false
+  "scale": 0.1218904651331218,
+  "close": true
 }
