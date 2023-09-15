@@ -5,15 +5,15 @@ capitulo: 6
 ---
 ### Definición
 ---
-Se entiende por [[Riesgo]] eléctrico a la posibilidad que la [[Corriente]] eléctrica circule por el cuerpo humano o a la producción de un cortocircuito o arco eléctrico, produciendo daños en personas u objetos.
+Se entiende por [[Riesgo]] eléctrico a la posibilidad que la [[Corriente eléctrica]] eléctrica circule por el cuerpo humano o a la producción de un cortocircuito o arco eléctrico, produciendo daños en personas u objetos.
 
 Este puede ocurrir cuando:
-* Existe un [[Circuito|circuito]] eléctrico
-* Existe una [[Diferencia de potencial]]
+* Existe un [[estructura/Algebra de boole/Circuito|circuito]] eléctrico
+* Existe una [[Tensión]]
 * El cuerpo humano no se encuentra [[Aislado]] y frome parte del circuito.
 
 
-#### Clasificación según la [[Tension eficaz|tensión]]
+#### Clasificación según la [[Tensión eficaz|tensión]]
 ---
 * Muy baja tensión (MBT):
 	* Corresponde a las tensiones hasta $50V$

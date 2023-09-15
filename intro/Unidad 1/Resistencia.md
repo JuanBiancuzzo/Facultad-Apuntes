@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición:
 ---
-La resistencia eléctrica de un componente es una magnitud que representa la oposición a la circulación de [[Corriente]] de dicho componente.
+La resistencia eléctrica de un componente es una magnitud que representa la oposición a la circulación de [[Corriente eléctrica|cirriente]] de dicho componente.
 
 ##### Unidad
 ---

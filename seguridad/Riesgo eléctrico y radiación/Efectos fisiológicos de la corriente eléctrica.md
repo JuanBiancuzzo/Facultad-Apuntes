@@ -5,7 +5,7 @@ capitulo: 6
 ---
 ### Definición
 ---
-| Intensidad de la [[Corriente]] | Efectos                                                                                                                                        |
+| Intensidad de la [[Corriente eléctrica]] | Efectos                                                                                                                                        |
 | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | Hasta $0.1~ mA$                | Sin senaciones                                                                                                                                 |
 | De $0.1~ mA$ a $6~ mA$         | Sensación de shock. contracciones musculares débiles. El límite de psobilidad de desprendimiento para el $0.5\%$ de las muejeres es de $6~ mA$ |

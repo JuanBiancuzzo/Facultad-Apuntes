@@ -38,7 +38,7 @@ De aqui, puedo concluir que si $t=\tau$ :
 $$\begin{align}
 V_C (t)= V_0 \cdot (1 - e^{-t/\tau}) = V_0 \cdot(1 - e^{-1}) \approx 0.63 \cdot V_0
 \end{align}$$
-Es decir, que la [[Diferencia de potencial]] de carga sobre un capacitor, en un tiempo $t=\tau$ es aproximadamente un $63\%$ de la amplitud pico-pico del escalón de entrada.
+Es decir, que la [[intro/Unidad 1/Tensión]] de carga sobre un capacitor, en un tiempo $t=\tau$ es aproximadamente un $63\%$ de la amplitud pico-pico del escalón de entrada.
 
 ##### Esquematizándolo
 

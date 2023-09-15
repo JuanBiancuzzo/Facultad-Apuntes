@@ -12,6 +12,7 @@ y tiene el circuito
 
 #### Tabla de estados
 ---
+
 | $Q_t$ | $J_t$ | $K_t$ |     | $Q_{t+1}$ |
 | ----- | ----- | ----- | --- | --------- |
 | 0     | 0     | 0     |     | 0         |

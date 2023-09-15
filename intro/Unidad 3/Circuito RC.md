@@ -61,7 +61,7 @@ V_C (t)&= V_0 \cdot (1 - e^\text{-t/RC})\\
 i(t) &= C \cdot \frac{dV_C(t)}{dt}\\
 \end{array} \right.
 $$
-Entonces, la [[Corriente]] sobre el capacitor en función del tiempo:
+Entonces, la [[Corriente eléctrica]] sobre el capacitor en función del tiempo:
 $$\begin{align}
 i(t) &= \frac{V_0}{R} \cdot e^\text{-t/RC}\\
 \end{align}

@@ -19,3 +19,4 @@ dia: <% tp.file.creation_date("YYYY-MM-DD") %>
 <%* tR += "---"; %>
 ### Definición
 ---
+<% tp.file.cursor() %>

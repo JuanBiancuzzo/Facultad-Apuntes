@@ -3,16 +3,12 @@ dia: 2023-01-23
 materia: intro
 capitulo: 5
 ---
-### Definicin
+### Definición
 ---
-Se define como potencia a la tasa de transferencia de energía por unidad de tiempo.
-Es decir,
-$$ P = \frac{W}{t} $$
+Es la variación respecto del tiempo de gasto o absorción de [[Energía]]
+$$ P = \frac{dW}{dt} $$
 
 ##### Unidad
 ---
-$$
-\begin{align}
-[P] = \frac{J}{s} = Watt \space (W)
-\end{align}
-$$
+$$ [P] = \frac{J}{s} = Watt \space (W) $$
+

@@ -5,4 +5,6 @@ capitulo: 2
 ---
 ### Definición
 ---
-Un circuito lineal es aquel que no cambia los valores de los componentes electrónicos como su [[Resistencia]], [[Capacitancia]], inductancia, ganancia al variar la [[Diferencia de potencial]] o la [[Corriente]] en el circuito.
+Un [[Circuito eléctrico|circuito]] lineal es aquel que no cambia los valores de los componentes electrónicos como su [[Resistencia]], [[Capacitancia]], [[Inductancia]], ganancia al variar la [[Tensión]] o la [[Corriente eléctrica]] en el circuito.
+
+También lo podemos pensar como aquel circuito cuya salida se relaciona [[Función R-lineal|linealmente]] con su entrada

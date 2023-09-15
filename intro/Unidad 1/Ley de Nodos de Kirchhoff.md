@@ -5,9 +5,9 @@ capitulo: 1
 ---
 ### Definición
 ---
-La suma de todas las corrientes eléctricas entrantes a un nodo es igual a la suma de todas las corrientes salientes. Esta parte del principio de [[Conservación de carga]]
+La suma de todas las [[Corriente eléctrica|corrientes]] eléctricas entrantes a un [[Nodo]] es igual a la suma de todas las corrientes salientes. Esta parte del principio de [[Conservación de carga]]
 
 ![[Ejemplo ley de nodos de kirchhoff.png.png]]
 
-Entonces $$ I_1 + I_2 = I_3 + I_4 $$
+Entonces $$ \sum^n i_\text{entrante} = \sum^m i_\text{saliente} $$
 

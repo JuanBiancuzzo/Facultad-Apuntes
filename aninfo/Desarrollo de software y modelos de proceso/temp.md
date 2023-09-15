@@ -1,5 +1,5 @@
 ---
-dia: 2023-08-24
+dia: 2023-08-26
 materia: aninfo
 capitulo: 11
 ---

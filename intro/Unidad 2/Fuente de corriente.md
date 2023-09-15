@@ -5,8 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-Es aquella que genera una intensidad de [[Corriente]] entre sus terminales constante e independiente de la carga.
+Es aquella que genera una intensidad de [[Corriente eléctrica]] entre sus terminales constante e independiente de la carga.
 
 ##### Simbología
-
 ![[Diagrama de una fuente de corriente.png]]

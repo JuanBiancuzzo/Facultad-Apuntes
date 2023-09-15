@@ -5,7 +5,7 @@ capitulo: 6
 ---
 ### Definición
 ---
-La [[Corriente]] eléctrica, al atravesar el cuerpo humano, ya que este es relativamente un buen [[Conductor]], puede producir alteraciones o [[Lesión|lesiones]], tanto de carácter temporario o permanente.
+La [[Corriente eléctrica]] eléctrica, al atravesar el cuerpo humano, ya que este es relativamente un buen [[Conductor]], puede producir alteraciones o [[Lesión|lesiones]], tanto de carácter temporario o permanente.
 
 Los efectos del contacto eléctico dependerán de los órganos que atraviese la corriente. Una trayectoria de mayor longitud tendrá, en principio, mayor [[Resistencia]] y por lo tanto menor [[Intensidad]]; sin embargo, puede atravesar órganos vitales (corazón, pulmones, hígado, etc.) provocando [[Lesión|lesiones]] mucho más graves.
 

@@ -13,7 +13,7 @@ Este factor de ponderación se puede conocer a partir de la siguiente tabla:
 | Tipo de radiación                                                                     | $w_r$      |
 | ------------------------------------------------------------------------------------- | ---------- |
 | [[Radiación ionizante#Rayos X\|Rayos X]] o [[Radiación ionizante#Gamma\|Rayos gamma]] | $1$        |
-| [[Electron\|Electrones]]                                                              | $1$        |
+| [[Electrón|Electrones]]                                                              | $1$        |
 | [[Neutrón\|Neutrones]]                                                                | $5$ a $20$ |
 | [[Protón\|Protones]]                                                                  | $5$        |
 | [[Radiación ionizante#Alfa\|Partícula alfa]], fragmentos de fisión y núcleos pesados  | $20$           |

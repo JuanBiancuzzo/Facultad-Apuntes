@@ -12,6 +12,7 @@ Este algoritmo se aprovecha de que para saber si dos [[Implicante|implicantes]] 
 ### Ejemplo
 ---
 Tenemos la función que depende de $a$, $b$, $c$ y $d$, y si los pensamos como números en [[Base numerica|base]] 2 las posibilidades, entonces esta función es $1$ cuando ese número es: $0$, $1$, $2$, $5$, $6$, $7$, $8$, $9$, $10$, $14$, donde el $7$ y el $9$ son redundantes. Entonces agrupamos esos números en binario por aquellos que tengan la misma cantidad de $1$.
+
 | grupo | número | representación |
 | ----- | ------ | -------------- |
 | 0     | 0      | 0000           |
@@ -28,6 +29,7 @@ Tenemos la función que depende de $a$, $b$, $c$ y $d$, y si los pensamos como n
 Notemos que los elementos que estan en el mismo grupo nunca van a poder ser adyacentes, como también pasa con los grupos que esten separados por otro, como el 0 y el 2, que estan separados por el grupo 1, ya que estos tiene 2, o más, números que se deberían cambiar para que sean iguales.
 
 Entre grupos seguidos, vamos a ver cuales son adyacentes (matemáticamente si tienen un digito de diferencia, entonces su resta es un multiplo de 2). Vamos a anotar solo el valor que no cambia, de la siguiente forma:
+
 | grupo | números | representación | diferencia |
 | ----- | ------- | -------------- | ---------- |
 | 0     | 0, 1    | 000-           | 1          |
@@ -60,6 +62,7 @@ Ahora aplicaremos la misma regla, pero únicamente a los que tenga el mismo resu
 Notemos que ya no podemos reducir más pero sino se podría hacer un grupo más. 
 
 Por lo tanto ahora tenemos todos los [[Implicante primo|implicantes primos]], en este caso son
+
 | número       | representación |
 | ------------ | -------------- |
 | 1, 5         | 0-01           |
@@ -70,6 +73,7 @@ Por lo tanto ahora tenemos todos los [[Implicante primo|implicantes primos]], en
 | 2, 6, 10, 14 | --10               |
 
 Ahora tenemos que obtener únicamente los [[Implicante escencial|implicantes escenciales]], para eso haremos una tabla de la siguiente forma
+
 | minitérminos | 0   | 1   | 2   | 5   | 6   | 8   | 10  | 14  | Redundantes | 7   | 9   |
 | ------------ | --- | --- | --- | --- | --- | --- | --- | --- | ----------- | --- | --- |
 | 1, 5         |     | x   |     | x   |     |     |     |     |             |     |     |
@@ -106,6 +110,7 @@ Notemos que si usamos el implicante anterior, nos quedamos sin implicantes escen
 De nuevo, como no tenemos implicantes escenciales buscaremos aquellos implicantes primos que tengan la mayor cantidad de minitérminos no redundantes. Por lo tanto elegimos el implicante $(1, ~5)$ que no deja implicantes no redundantes sin usar.
 
 Dejandonos con los implicantes:
+
 | número       | representación |
 | ------------ | -------------- |
 | 1, 5         | 0-01           |

@@ -8,6 +8,7 @@ capitulo: 6
 El [[Circuito secuencial]] con ecuación característica $$ Q^{n + 1} = T \oplus Q^n $$
 #### Tabla de estados
 ---
+
 | $Q_t$ | $T_t$ |     | $Q_{t+1}$ |
 | ----- | ----- | --- | --------- |
 | 0     | 0     |     | 0         |

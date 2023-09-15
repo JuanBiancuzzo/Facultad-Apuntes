@@ -5,7 +5,7 @@ capitulo: 6
 ---
 ### Definición
 ---
-Es la separación mínima, medida entre cualquier punto con [[Tension eficaz|tensión]] y la parte más próxima del cuerpo del operario o herramienta no aislada utilizada por él en la situación más desfavorable que pudiera producirse a fin de prevenir descargas disrruptivas o contactos accidentales.
+Es la separación mínima, medida entre cualquier punto con [[Tensión eficaz|tensión]] y la parte más próxima del cuerpo del operario o herramienta no aislada utilizada por él en la situación más desfavorable que pudiera producirse a fin de prevenir descargas disrruptivas o contactos accidentales.
 
 | Nivel de tensión          | Distancia mínima |
 | ------------------------- | ---------------- |
