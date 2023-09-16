@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"type":"group","id":"f8d39a941750475d","x":0,"y":160,"width":290,"height":500,"label":"Dominio de la solución"},
+		{"type":"group","id":"5639615d614147d5","x":0,"y":-40,"width":290,"height":100,"label":"Dominio del problema"},
+		{"type":"text","text":"Necesidades, expectativas y restricciones","id":"f3c72e8f09dffcd0","x":-400,"y":-120,"width":250,"height":60},
+		{"type":"text","text":"[[Desarrollo de requisitos|Desarrollar requisitos]] de los usuario","id":"2d8efff2cb84f8d7","x":20,"y":-20,"width":250,"height":60},
+		{"type":"text","text":"[[Requisito de usuario|Requisitos de los usuarios]]","id":"be509c9d12138ded","x":-400,"y":80,"width":250,"height":60},
+		{"type":"text","text":"[[Desarrollo de requisitos|Desarrollar requisitos]] del sistema","id":"46491016d3529575","x":20,"y":180,"width":250,"height":60},
+		{"type":"text","text":"[[Requisito del sistema|Requisitos del sistema]] (aka requisitos de la solución)","id":"f0afebde079ccf4a","x":-400,"y":280,"width":250,"height":60},
+		{"type":"text","text":"[[Desarrollo de requisitos|Desarrollar requisitos]] del software","id":"29f697be3348c7ea","x":20,"y":380,"width":250,"height":60},
+		{"type":"text","text":"[[Requisito de software|Requisitos del software]] (aka requisitos de la solución)","id":"880540617299c9dd","x":-400,"y":480,"width":250,"height":60},
+		{"type":"text","text":"Diseñar y [[Desarrollo de software|desarrollar el software]]","id":"7a5ab58a64727af9","x":20,"y":580,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"4bfb736936647b41","fromNode":"f3c72e8f09dffcd0","fromSide":"right","toNode":"2d8efff2cb84f8d7","toSide":"left"},
+		{"id":"0f5ee50e369d8267","fromNode":"2d8efff2cb84f8d7","fromSide":"left","toNode":"be509c9d12138ded","toSide":"right"},
+		{"id":"1eccb497f58e1757","fromNode":"be509c9d12138ded","fromSide":"right","toNode":"46491016d3529575","toSide":"left"},
+		{"id":"4bab2d94a76dbcb3","fromNode":"46491016d3529575","fromSide":"left","toNode":"f0afebde079ccf4a","toSide":"right"},
+		{"id":"c9d5d5751a759fe2","fromNode":"f0afebde079ccf4a","fromSide":"right","toNode":"29f697be3348c7ea","toSide":"left"},
+		{"id":"22ed0013efb8966d","fromNode":"29f697be3348c7ea","fromSide":"left","toNode":"880540617299c9dd","toSide":"right"},
+		{"id":"e209048a2abc6c14","fromNode":"880540617299c9dd","fromSide":"right","toNode":"7a5ab58a64727af9","toSide":"left"}
+	]
+}

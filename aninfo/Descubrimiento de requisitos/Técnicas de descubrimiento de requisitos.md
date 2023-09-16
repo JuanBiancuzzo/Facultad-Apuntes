@@ -15,6 +15,9 @@ Hay múltiples factores que pueden impedir o complicar el descubrimiento de [[Re
 
 Por lo que hay que concentrarse en estudiar el dominio del problema, y utilizar correctamente las siguientes técnicas para conseguir la mayor cantidad de información relevante para entender el que se tiene que crear mediante los requisitos
 
+### Métodos
+---
+
 #### Entrevistas
 ---
 ![[Entrevista#Definición]]
