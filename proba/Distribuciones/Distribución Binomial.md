@@ -3,7 +3,6 @@ dia: 2023-01-23
 materia: proba
 distribucion: Discreta
 ---
-
 ### Definición
 ---
 Binomial modela la cantidad de éxitos obtenidos al repetir $n$ veces de forma independiente un experimento de Bernoulli con probabilidad $p$ de éxito.

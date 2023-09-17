@@ -30,3 +30,6 @@ La principal dependencia de $C_j'$ es la [[Tensión]] de polarización aplicada
 ![[Dependencia de la capacitancia con respecto a la tensión aplicada.png]]
 
 También lo podemos plantear con el calculo de la [[Capacitancia]] $$ C_J(V_{PN}) = \frac{\partial Q_{SCR}}{\partial v_d} \bigg|_{v_d = V_{PN}} = A \cdot C_J'(V_{PN})$$
+
+Notemos que para [[Convención de signos para la tensión de polarización#Polarización directa|polarización directa fuerte]] es decir aproximadamente $>5~V_{th}$, $C_J$ diverge, por lo que conceptualmente decimos que se considera que $C_J$ satura para $v_D \approx \frac{1}{2} \phi_B$ 
+$\implies$ $C_{J, max} = \sqrt{2} ~ C_{J0}$
