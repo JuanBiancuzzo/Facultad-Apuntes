@@ -20,7 +20,6 @@ d &= \text{Distancia entre placas} \\
 \end{cases}
 $$
 
-
 #### Unidad
 ---
 Se utiliza para deducir la unidad de la capacitancia:

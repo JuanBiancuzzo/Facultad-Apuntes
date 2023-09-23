@@ -9,8 +9,8 @@ Un capacitor equivalente es un [[Capacitor]] que puede sustituir a otros capacit
 
 #### Capacitores en serie
 ---
-![[Capacitores en serie]]
+![[Capacitores en serie#Definición]]
 
 #### Capacitores en paralelo
 ---
-![[Capacitores en paralelo]]
+![[Capacitores en paralelo#Definición]]

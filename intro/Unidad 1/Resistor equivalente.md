@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-Un resistor equivalente es un [[Resistor]] que puede sustituir a otros resistores que se encuentran en un determinado circuito para simplificarlo
+Un [[Resistor]] equivalente es un resistor que puede sustituir a otros resistores que se encuentran en un determinado [[Circuito eléctrico|circuito]] 
 
 #### Resistores en serie
 ---

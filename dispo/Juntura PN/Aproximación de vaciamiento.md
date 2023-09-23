@@ -97,7 +97,7 @@ $$ \phi(x) = \begin{cases}
 ##### Límites de la región de carga espacial
 ---
 Aún no conocemos $x_{n_0}$ y $x_{p_0}$, y para encontrarlos necesitamos las condiciones de
-1. [[Neutralidad de carga|Neutralidad de cargas]] de forma global $$ qN_a ~x_{p_0} = qN_d ~x_{pn0} $$
+1. [[Neutralidad de carga|Neutralidad de cargas]] de forma global $$ qN_a ~x_{p_0} = qN_d ~x_{n_0} $$
 2. Pedimos que el [[Potencial eléctrico|potencial]] $\phi(x)$ sea [[Función continua|continua]] en $x = 0$ $$ \phi_p + \frac{qN_a}{2 \varepsilon_{sc}} ~ x^2_{p_0} = \phi_n - \frac{qN_d}{2 \varepsilon_{sc}} ~ x^2_{n_0} $$
 Por lo tanto tenemos que $$ x_{n_0} = \sqrt\frac{2 \varepsilon_{sc} ~ \phi_B ~ N_a}{q~(N_a + N_d) ~ N_d} ~~~~ x_{p_0} = \sqrt\frac{2 \varepsilon_{sc} ~ \phi_B ~ N_d}{q~(N_a + N_d) ~ N_a} $$ donde $\phi_B$ es el [[Potencial de built-in]]
 

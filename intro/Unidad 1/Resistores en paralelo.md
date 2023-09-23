@@ -7,6 +7,6 @@ capitulo: 1
 ---
 Son aquellos [[Resistor|resistores]] que comparten la misma [[Tensión]] entre los mismos [[Nodo]] ([[Elementos en paralelo]])
 ![[Resistencias en paralelo.png]]
-Por lo que el equivalente es $$
-R_\text{equivalente} = ({R_1\space ^\text{-1} + R_2\space ^\text{-1}})\space ^\text{-1} = \frac{R_1 \cdot R_2}{R_1 + R_2}
-$$
+Por lo que el equivalente es  (además de igual a los [[Inductores en paralelo]] y los [[Capacitores en serie]]) $$ \begin{CD} 
+	R_{eq} = \left( \sum_i^N R^{-1} \right)^{-1} @>{N~=~2}>> \frac{R_1 \cdot R_2}{R_1 + R_2}
+\end{CD} $$

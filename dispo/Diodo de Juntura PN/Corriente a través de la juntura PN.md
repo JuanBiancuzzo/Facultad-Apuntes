@@ -36,11 +36,13 @@ Esto implica que la [[Corriente de arrastre|densidad de corriente de arrastre]] 
 y si conozco $p(x)$ puedo calcular la [[Corriente de difusión|densidad de corriente de difusión]] de huecos, por lo tanto sabemos la [[Densidad de corriente eléctrica|densidad de corriente]] de huecos $J^{h^+}$
 
 ##### En la zona SCR
-Sabemos que las [[Modelo de enlace de Silicio#Concentración de Portador de carga portadores|Concentraciones]] de [[Hueco|huecos]] y [[Electrón|electrones]] es "baja", por lo que no hay [[Recombinación]], por lo tanto $$ \begin{align}
+Sabemos que las [[Modelo de enlace de Silicio#Concentración de Portador de carga portadores|Concentraciones]] de [[Hueco|huecos]] y [[Electrón|electrones]] es "baja" por la [[Aproximación de vaciamiento]], por lo que no hay [[Recombinación]], y podemos decir que $$ \begin{align}
 	i_p(-x_p) = i_p(x_n) \\
 	i_n(-x_p) = i_n(x_n)
 \end{align} $$
 La [[Corriente eléctrica|corriente]] de mayoritarios del [[Impureza aceptora#Cantidad de dopante|lado p]] es igual a la corriente de minoritarios del [[Impureza donora#Cantidad de dopante|lado n]]. De igual forma, la [[Corriente eléctrica|corriente]] de mayoritarios del [[Impureza donora#Cantidad de dopante|lado n]] es igual a la corriente de minoritarios del [[Impureza aceptora#Cantidad de dopante|lado p]]
+
+Para que esto se mantenga, se tiene que cumplir la [[Hipótesis de bajo nivel de inyección]].
 
 #### Concentraciones de los [[Portador de carga|portadores]] minoritarios
 ---

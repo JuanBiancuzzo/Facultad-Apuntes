@@ -8,7 +8,6 @@ capitulo: 3
 Son aquellos [[Capacitor|capacitores]] atravesados por la misma [[Corriente eléctrica|corriente]] ([[Elementos en serie]]) y comparten la misma [[Malla]]
 ![[Capacitores en serie.png]]
 
-Por lo que el equivalente es 
-$$
-C_\text{equivalente} = ({C_1\space ^\text{-1} + C_2\space ^\text{-1}})\space ^\text{-1} = \frac{C_1 \cdot C_2}{C_1 + C_2}
-$$
+Por lo que el equivalente es (además de igual a los [[Resistores en paralelo]] y a los [[Inductores en paralelo]]) $$ \begin{CD} 
+	C_{eq} = \left( \sum_i^N C^{-1} \right)^{-1} @>{N~=~2}>> \frac{C_1 \cdot C_2}{C_1 + C_2}
+\end{CD} $$
