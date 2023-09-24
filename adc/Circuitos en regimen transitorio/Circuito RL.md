@@ -10,7 +10,7 @@ Un [[Circuito eléctrico|circuito]] RL de [[Circuito de primer orden|primer ord
 ##### Esquematización
 ![[Circuito RL.png]]
 
-#### Análisis (terminar)
+#### Análisis
 ---
 Al cerrar la llave (en el instante $t=0$), por [[Ley de Nodos de Kirchhoff]] de [[Malla]], se puede deducir que $$ \begin{align} 
 	         v_R(t) &+ v_L(t) = 0 \\
@@ -23,3 +23,4 @@ Integrando y utilizando la condición inicial ($i(0) = i_0$) $$ \begin{align}
 	\ln(i(t)) - \ln(i_0) &= - \frac{Rt}{L}  + 0 \\ 
 	i(t) &= i_0 \exp \left(- \frac{R}{L} ~ t\right)
 \end{align} $$
+Donde consideremos $\tau = \frac{L}{R}$ dándonos $$ i(t) = i_0 ~ \exp \left( - \frac{t}{\tau} \right) $$
