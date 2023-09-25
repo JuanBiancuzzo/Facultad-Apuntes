@@ -9,7 +9,7 @@ Considerando la funcion $f : U \subseteq \mathbb{R}^2 \to \mathbb{R}$ definida e
 
 Entonces podemos considerar las funciones
 
-$$ \frac{\partial f}{\partial x} : U \subseteq \mathbb{R}^2 \to \mathbb{R}  \text{ } \text{ y } \text{ } \frac{\partial f}{\partial y} : U \subseteq \mathbb{R}^2 $$
+$$ \frac{\partial f}{\partial x} : U \subseteq \mathbb{R}^2 \to \mathbb{R}  ~~ \text{ y } ~~ \frac{\partial f}{\partial y} : U \subseteq \mathbb{R}^2 $$
 
 Si simplemente las coinsideramos como funciones, podemos ver que podriamos aplicarles derivadas parciales
 

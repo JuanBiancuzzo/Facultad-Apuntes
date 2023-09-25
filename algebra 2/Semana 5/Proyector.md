@@ -11,7 +11,7 @@ Entonces se define la proyeccion de $\mathbb{V}$ sobre $S_1$ en la direccion de 
 $$\Pi_{S_1, S_2}(V) := v_1$$
 
 Donde la [[Imagen de una transformacion lineal]] es $S_1$ y el [[Nucleo de una transformacion lineal]] es $S_2$
-$$ Im(T) = S_1, \text{ } Nu(T) = S_2$$
+$$ Im(T) = S_1, ~~ Nu(T) = S_2$$
 
 Recordar que eso datos son importantes, ya que podemos plantear lo siguiente:
 Con $\{v_1, v_2, \cdots, v_n \}$ es base de $S_1$, y $\{w_1, w_2, \cdots, w_m \}$ es base de $S_2$ entonces

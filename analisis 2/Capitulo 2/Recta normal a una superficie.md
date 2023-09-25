@@ -15,7 +15,7 @@ $$ \begin{cases}
 		x = x_0 - \frac{\partial f}{\partial x}(x_0, y_0) \cdot t \\
 		y = y_0 - \frac{\partial f}{\partial y}(x_0, y_0) \cdot t \\
 		z = f(x_0, y_0) + t
-	\end{cases}, \text{ } t \in \mathbb{R} $$
+	\end{cases}, ~~~ t \in \mathbb{R} $$
 
 Tambien lo podemos escribir como 
 

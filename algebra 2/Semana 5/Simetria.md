@@ -13,7 +13,7 @@ $$\Pi_{S_1, S_2} := \mathbb{I}_\mathbb{V} - 2 \cdot \Pi_{S_1, S_2}$$
 Donde $\Pi_{S_1, S_2}$ es la [[Proyector]], de $S_1$ en $S_2$
 
 ### Propiedades 
- * $\begin{cases} \Sigma_{S_1, S_2} = \mathbb{I}_\mathbb{V}(V) - 2 \cdot \Pi_{S_1, S_2} = v - 2 \cdot 0_\mathbb{V} =  v, \text{ si } v \in S_1 \\  \text{ } \\  \Sigma_{S_1, S_2} = \mathbb{I}_\mathbb{V}(V) - 2 \cdot \Pi_{S_1, S_2} = v - 2 \cdot v = -v, \text{ si } v \in S_2 \\  \end{cases}$
+ * $\begin{cases} \Sigma_{S_1, S_2} = \mathbb{I}_\mathbb{V}(V) - 2 \cdot \Pi_{S_1, S_2} = v - 2 \cdot 0_\mathbb{V} =  v, \text{ si } v \in S_1 \\  ~~ \\  \Sigma_{S_1, S_2} = \mathbb{I}_\mathbb{V}(V) - 2 \cdot \Pi_{S_1, S_2} = v - 2 \cdot v = -v, \text{ si } v \in S_2 \\  \end{cases}$
  
  *  $\Sigma^2_{S_1, S_2} = \Sigma_{S_1, S_2} \circ \Sigma_{S_1, S_2} = \Sigma_{S_1, S_2}(\Sigma_{S_1, S_2}) = \mathbb{I}_\mathbb{V}$
 

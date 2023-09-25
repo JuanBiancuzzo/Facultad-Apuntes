@@ -7,7 +7,7 @@ capitulo: 2
 ---
 El limite existe y es $L$ si los limites
 
-$$ \lim{x \to x_0} f(x, \phi(x)), \text{ } \lim{x \to x_0} f(x, \psi(x)) $$
+$$ \lim{x \to x_0} f(x, \phi(x)), ~~ \lim{x \to x_0} f(x, \psi(x)) $$
 
 existen (donde $y = \phi(x), y = \psi(x)$ son curvas que pasan por $(x_0, y_0)$), deben valer $L$
 

@@ -13,4 +13,4 @@ Supongamos que la funcion $F$ tiene derivadas parciales $\frac{\partial F}{\part
 
 Entonces $F(x_1, x_2, \cdots, x_n, y) = 0$ puede resolverse para $y$ en terminos de $x$ y definir asi una vecindad $V$ (de $\mathbb{R}^n$) del punto $(x'_1, x'_2, \cdots, x'_n, y')$, una funcion $y = f(x_1, x_2, \cdots, x_n)$ la cual tiene derivadas parciales continuas en $V$ que se puede calcular con las formulas
 
-$$ \frac{\partial f}{\partial x_i}(x_1, x_2, \cdots, x_n) = - \text{ } \frac{\frac{\partial F}{\partial x_i}(x_1, x_2, \cdots, x_n, y)}{\frac{\partial F}{\partial y}(x_1, x_2, \cdots, x_n, y)}, \text{ } (x_1, x_2, \cdots, x_n) \in V $$
+$$ \frac{\partial f}{\partial x_i}(x_1, x_2, \cdots, x_n) = - ~~ \frac{\frac{\partial F}{\partial x_i}(x_1, x_2, \cdots, x_n, y)}{\frac{\partial F}{\partial y}(x_1, x_2, \cdots, x_n, y)}, ~~ (x_1, x_2, \cdots, x_n) \in V $$

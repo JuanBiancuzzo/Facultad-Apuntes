@@ -11,7 +11,7 @@ Supongamos que la funcion $F$ tiene [[Derivadas parciales]] continuas en alguna 
 
 Entonces $F(x, y) = 0$ se puede resolver para $y$ en terminos de $x$ y definir asi una funcion $y = f(x)$ con dominio en una vecinidad de $x_0$, tal que $y_0 = f(x_0)$, la cual tiene derivadas continuas que pueden calcularse como
 
-$$ y' = f'(x) = - \text{ } \frac{\frac{\partial F}{\partial x}(x, y)}{\frac{\partial F}{\partial y}(x, y)} $$
+$$ y' = f'(x) = - ~~ \frac{\frac{\partial F}{\partial x}(x, y)}{\frac{\partial F}{\partial y}(x, y)} $$
 
 Visualmente, esto se veria como 
 

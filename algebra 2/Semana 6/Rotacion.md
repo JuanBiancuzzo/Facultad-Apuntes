@@ -13,8 +13,8 @@ Partiendo de una situacion como esta
 
 Nosotros queremos rotar nuestro plano $\mathbb{R}^2$ por un angulo de $50.42\degree$, entonces si la [[Transformación lineal]] la llamamos $R$, entonces necesitamos determinar
 
-$$ R{1 \choose 0} = \text{ } ? $$
-$$ R{0 \choose 1} = \text{ } ? $$
+$$ R{1 \choose 0} = ~~ ? $$
+$$ R{0 \choose 1} = ~~ ? $$
 
 Entonces veamos el caso ${1 \choose 0}$:
 

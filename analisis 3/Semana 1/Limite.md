@@ -7,7 +7,7 @@ capitulo: 1
 ---
 Sea $f:\mathbb{D} \to \mathbb{C}$ una funcion definida en un conjunto $\mathbb{D} \subseteq \mathbb{C}$, sea $z_0 \in \mathbb{C}$ un [[Punto de acumulacion]] de $\mathbb{D}$ y sea $l \in \mathbb{C}$. Entonces, se dice que "$f$ tiende a $l$ cuando $z$ tiende a $z_0$", o bien que "$l$ es límite de $f$ cuando $z$ tiende a $z_0$", sii:
 
-$$\forall \epsilon \in \mathbb{R}, \epsilon > 0: \exists \delta \in \mathbb{R}, \delta > 0: \text{ } 
+$$\forall \epsilon \in \mathbb{R}, \epsilon > 0: \exists \delta \in \mathbb{R}, \delta > 0: ~~ 
 \begin{drcases} 
 0 < |z - z_0| < \delta \\
 z \in \mathbb{D}

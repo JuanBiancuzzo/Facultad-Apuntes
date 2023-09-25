@@ -11,7 +11,7 @@ Cuando tenemos una [[Superficie]] ya no tenemos una recta tangente, sino un [[Pl
 
 Siendo $p = (x_0, y_0)$, los vectores correspondientes a las derivadas parciales, son
 
-$$ v_1 = \bigg(1, 0, \frac{\partial f}{\partial x}(x_0, y_0) \bigg), \text{ } v_2 = \bigg(0, 1, \frac{\partial f}{\partial y}(x_0, y_0) \bigg) $$
+$$ v_1 = \bigg(1, 0, \frac{\partial f}{\partial x}(x_0, y_0) \bigg), ~~ v_2 = \bigg(0, 1, \frac{\partial f}{\partial y}(x_0, y_0) \bigg) $$
 
 Por lo tanto el vector normal, seria el producto vectorial entre $v_1$ y $v_2$
 

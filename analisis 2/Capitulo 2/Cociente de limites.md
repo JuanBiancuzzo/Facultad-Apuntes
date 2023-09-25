@@ -7,7 +7,7 @@ capitulo: 2
 ---
 Sean $f, g : U \subseteq \mathbb{R}^n \to \mathbb{R}$ dos funciones definidas en el abierto $U$ de $\mathbb{R}^n$ y sea $x_0$ un punto de $U$ o un [[Punto frontera]] de $U$. Suponiendo que 
 
-$$ \lim_{x \to x_0} f(x) = L, \text{ } \lim_{x \to x_0} g(x) = M $$
+$$ \lim_{x \to x_0} f(x) = L, ~~ \lim_{x \to x_0} g(x) = M $$
 
 Entonces, el producto esta definida como 
 

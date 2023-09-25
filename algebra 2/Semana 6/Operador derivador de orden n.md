@@ -7,7 +7,7 @@ capitulo: 6
 ---
 Partiendo de [[Operador derivacion]], se define 
 
-$$ D^n := D \text{ } \circ \text{ } D \circ \text{ } \cdots \text{ } \circ \text{ } D$$
+$$ D^n := D ~~ \circ ~~ D \circ ~~ \cdots ~~ \circ ~~ D$$
 
 y esto no esta limitado a solo el operador, sino que se puede aplicar de la siguiente forma (por ejemplo)
 

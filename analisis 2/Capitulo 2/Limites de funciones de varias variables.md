@@ -35,7 +35,7 @@ $$ x \in B(x_0, \delta) \cap U(x \ne x_0) \iff f(x) \in B(L, \epsilon) $$
 ## Operaciones
 Tomando que $f, g : U \subseteq \mathbb{R}^n \to \mathbb{R}$ dos funciones definidas en el abierto $U$ de $\mathbb{R}^n$ y sea $x_0$ un punto de $U$ o un [[analisis 2/Capitulo 2/Punto frontera]] de $U$. Suponiendo que 
 
-$$ \lim_{x \to x_0} f(x) = L, \text{ } \lim_{x \to x_0} g(x) = M $$
+$$ \lim_{x \to x_0} f(x) = L, ~~ \lim_{x \to x_0} g(x) = M $$
 
 Es decir que la suma de los limites es la suma de los limites individuales
 ![[Suma de limites#Definicion]] ![[Producto de limites#Definicion]] ![[Cociente de limites#Definición]]
