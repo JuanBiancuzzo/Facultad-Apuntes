@@ -9,7 +9,7 @@ Un inductor consta de una bobina de alambre [[Conductor]]
 
 #### Relación con la [[Tensión|tensión]] y la [[Corriente eléctrica|corriente]]
 ---
-	Nos interesa conocer la relación entre la tensión y la corriente del elemento, ya sea la forma [[Ecuación diferencial ordinaria|diferencial]], como la forma integral $$ \begin{CD} 
+Nos interesa conocer la relación entre la tensión y la corriente del elemento, ya sea la forma [[Ecuación diferencial ordinaria|diferencial]], como la forma integral $$ \begin{CD} 
 	\boxed{v = L \frac{di}{dt}} @>>> di = \frac{1}{L} v~dt \\
 	& @VVV \\
 	& & i(t) = \frac{1}{L}\int_{-\infty}^t v(\tau) ~d\tau  & @>>> 

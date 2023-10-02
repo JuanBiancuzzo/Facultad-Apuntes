@@ -56,7 +56,7 @@ Entonces podemos decir que esta en un estado de cuasi-equilibrio $$
 \begin{align}
 	\frac{n(x_1)}{n(x_2)} &\simeq \exp\left( \frac{q ~ (\phi(x_1) - \phi(x_2))}{kT} \right) \\ \\
 	\frac{p(x_1)}{p(x_2)} &\simeq \exp\left(- \frac{q ~ (\phi(x_1) - \phi(x_2))}{kT} \right)
-\end{align}$$
+\end{align} $$
 Suponiendo [[Aproximación de cuasi-neutralidad|cuasi-netralidad]], no cae tensión en la p-QNR entonces $$ \Delta V_{SCR} = \phi(x_n) - \phi(-x_p) = \phi_B - v_D $$ donde $\phi_B$ es el [[Potencial de built-in]].
 
 Por lo que en los bordes de la región SCR, se tiene $$ \begin{align} 
