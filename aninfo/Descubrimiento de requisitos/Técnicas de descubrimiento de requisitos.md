@@ -70,7 +70,7 @@ Por lo que hay que concentrarse en estudiar el dominio del problema, y utilizar 
 * [[Cinco porqués]]
 * [[Diagrama de afinidad]]
 * [[Diagramas de impacto]]
-* [[Diagrama de historia de usuario]]
+* [[Historia de usuario|Diagrama de historia de usuario]]
 
 #### Recomendaciones
 ---
