@@ -5,7 +5,7 @@ capitulo: 3
 ---
 ### Definición
 ---
-La intención es poder aplicar [[Principio de superposición|superposición]] de una fuente de [[Tensión]] aplicada sobre el [[Diodo de Juntura PN|diodo]] ($v_D$), donde tenemos una parte continua ($V_D$) y una pequeña señal dependiente del tiempo ($v_d(t)$) $$ v_D(t) = V_D + v_d(t) $$
+La intención del [[Modelo]] es poder aplicar [[Principio de superposición|superposición]] de una fuente de [[Tensión]] aplicada sobre el [[Diodo de Juntura PN|diodo]] ($v_D$), donde tenemos una parte continua ($V_D$) y una pequeña señal dependiente del tiempo ($v_d(t)$) $$ v_D(t) = V_D + v_d(t) $$
 Con la [[Corriente a través de la juntura PN|corriente del diodo]] es $$ i_D(t) = f(v_D(t) = V_D + v_d(t)) $$ $$ i_D(v_D(t)) = I_0 \left( \exp\left( \frac{q~v_D(t)}{kT} \right) - 1 \right) = I_0 \left( \exp\left( \frac{q~(V_D + v_d(t))}{kT} \right) - 1 \right) $$
 Donde podemos decir que $$ i_{D1} = I_0 \left( \exp\left( \frac{q~V_D}{kT} \right) - 1 \right) ~~~~~ i_{D2} = I_0 \left( \exp\left( \frac{q~v_d(t)}{kT} \right) - 1 \right) $$
 Como el [[Diodo]] es [[Función C-lineal|no lineal]], vemos que $i_D(t) \ne i_{D1} + i_{D2}$, por lo que este [[Modelo|modelo]] intenta linealizar la respuesta [[Entorno|entorno]] a un punto de reposo ($v_D = V_D$)
