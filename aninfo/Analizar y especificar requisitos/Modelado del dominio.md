@@ -24,7 +24,7 @@ Personas, roles u organizaciones, como clientes, socios o alumnos.
 #### Construcción
 ---
 Podemos pensarlo en pasos
-* Identificar clases conceptuales
+* [[Identificar clases conceptuales en el modelo de diseño|Identificar clases conceptuales]]
 * Dibujarlas en un [[Unified modelling language (UML)#Diagrama de clases|diagrama de clases]]
 * Agregar asociaciones y atributos
 * Agregar generalizaciones, especializaciones, composiciones y agregaciones

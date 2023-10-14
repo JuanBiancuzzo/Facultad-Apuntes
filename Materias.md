@@ -30,5 +30,6 @@ for (let cuatri of materiasXcuatri) {
 			materia.estado
 		]
 	}));
+	dv.el("br", "")
 }
 ```
