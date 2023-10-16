@@ -5,4 +5,4 @@ capitulo: 1
 ---
 ### Definición
 ---
-Verificación dinámica del software
+[[Verificación]] dinámica del software

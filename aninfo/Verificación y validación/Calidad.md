@@ -1,7 +1,7 @@
 ---
 dia: 2023-08-26
 materia: aninfo
-capitulo: 1
+capitulo: 5
 ---
 ### Definición
 ---
@@ -17,7 +17,7 @@ Elementos para mantener una buena calidad
 
 ##### Control
 ---
-![[Control de calidad#Definición]]
+![[aninfo/Ingeniería de software/Control de calidad#Definición]]
 
 ##### Aseguramiento
 ---
