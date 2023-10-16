@@ -6,6 +6,7 @@ capitulo: 1
 ### Definición
 ---
 Dado la siguiente [[Data frame - Pandas|tabla]]
+
 |     | materia | nota |
 | --- | ------- | ---- |
 | 0   | 75.06   | 5    |
