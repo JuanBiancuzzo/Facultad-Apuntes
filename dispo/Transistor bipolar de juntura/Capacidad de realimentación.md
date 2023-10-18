@@ -1,0 +1,9 @@
+---
+dia: 2023-10-17
+materia: dispo
+capitulo: 4
+---
+### Definición
+---
+En el [[Transistor bipolar de juntura (TBJ)|TBJ]] se cumple que $N_E \gg N_B$ $$ C_\mu = C_{dBE} + C_{jBE} $$
+para [[Modo activo directo (MAD) del transistor bipolar de juntura (TBJ)|MAD]], la [[Juntura PN|juntura BE]] se encuentra [[Convención de signos para la tensión de polarización#Polarización inversa|inversa]], entonces predomina la [[Capacidad de juntura]] $C_j$ sobre la [[Capacidad de difusión]] $$ C_\mu \simeq C_{jBC} = \frac{C_{jBC0}}{\sqrt{1 + \frac{V_{CE}}{\phi_B}}} $$

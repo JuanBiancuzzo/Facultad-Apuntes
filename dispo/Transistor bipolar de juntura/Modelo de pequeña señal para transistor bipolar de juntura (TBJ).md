@@ -35,11 +35,11 @@ Puntos fundamentales:
 * La señal es pequeña, aunque la respuesta no [[Función R-lineal|lineal]] puede aproximarse a una respuesta lineal
 * Al poder considerar la respuesta lineal, se puede aplicar una pseudo-[[Principio de superposición|superposición]]
 
-Podemos evaluar a las [[Corriente eléctrica|corrientes]] $$ i_C(V_{BE} + v_{be}, V_{CE} + v_{ce}) I_C(V_{BE}, V_{CE}) + \frac{\partial i_C}{\partial v_{BE}} \biggm|_{Q}  v_{be} + \frac{\partial i_C}{\partial v_{CE}} \biggm|_{Q} v_{ce} $$ $$ i_B(V_{BE} + v_{be}, V_{CE} + v_{ce}) I_C(V_{BE}, V_{CE}) + \frac{\partial i_B}{\partial v_{BE}} \biggm|_{Q} v_{be} + \frac{\partial i_B}{\partial v_{BC}} \biggm|_{Q} v_{bc} $$
+Podemos evaluar a las [[Corriente eléctrica|corrientes]] $$ i_C(V_{BE} + v_{be}, V_{CE} + v_{ce}) \approx I_C(V_{BE}, V_{CE}) + \frac{\partial i_C}{\partial v_{BE}} \biggm|_{Q}  v_{be} + \frac{\partial i_C}{\partial v_{CE}} \biggm|_{Q} v_{ce} $$ $$ i_B(V_{BE} + v_{be}, V_{CE} + v_{ce}) \approx I_C(V_{BE}, V_{CE}) + \frac{\partial i_B}{\partial v_{BE}} \biggm|_{Q} v_{be} + \frac{\partial i_B}{\partial v_{BC}} \biggm|_{Q} v_{bc} $$
 donde $Q \equiv$  punto de polarización  $(V_{BE}, V_{CE})$
 
-$$ i_c = \frac{\partial i_C}{\partial v_{BE}} \biggm|_{Q}  v_{be} + \frac{\partial i_C}{\partial v_{CE}} \biggm|_{Q} v_{ce} = g_m ~ + ~ g_o $$
-$$ i_b = \frac{\partial i_B}{\partial v_{BE}} \biggm|_{Q} v_{be} + \frac{\partial i_B}{\partial v_{BC}} \biggm|_{Q} v_{bc} = g_\pi + g_\mu $$
+$$ i_c = \frac{\partial i_C}{\partial v_{BE}} \biggm|_{Q}  v_{be} + \frac{\partial i_C}{\partial v_{CE}} \biggm|_{Q} v_{ce} = g_m v_{be} ~ + ~ g_o v_{ce} $$
+$$ i_b = \frac{\partial i_B}{\partial v_{BE}} \biggm|_{Q} v_{be} + \frac{\partial i_B}{\partial v_{BC}} \biggm|_{Q} v_{bc} = g_\pi v_{be} ~ + ~ g_\mu v_{be} $$
 
 Definimos:
 * $g_m \equiv$ [[Transconductancia]] $[g_m] = S$
@@ -50,3 +50,12 @@ Definimos:
 Produciendo el circuito equivalente
 ![[Circuito equivalente de resistencias de pequeña señal del transistor bipolar de juntura.png]]
 
+#### Modelo para altas frecuencias
+---
+Generalizamos la idea de linealización para todas las corrientes y todas las señales aplicadas sobre cualquiera de las fuentes de polarización. Se aplica las [[Capacidad de juntura|capacitancias de juntura]] y la [[Capacidad de difusión|capacitancia de difusión]].
+
+Donde se definen dos capacidades
+* $C_\pi \equiv$ [[Capacidad de entrada]] $[C_\pi] = F$
+* $C_\mu \equiv$ [[Capacidad de realimentación]] $[C_\mu] = F$
+
+![[Modelo de pequeña señal tbj completo.png]]

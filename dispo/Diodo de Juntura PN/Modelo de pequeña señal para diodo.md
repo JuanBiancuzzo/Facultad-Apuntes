@@ -19,6 +19,25 @@ Dejándonos la ecuación para la corriente $$ \begin{align}
 	i_D(t) &\approx I_D + \underbrace{\frac{I_D + I_0}{V_{th}} \cdot v_d(t)}_{i_d(t)} \\
 	\implies i_D(t) &\approx I_D + i_d(t)
 \end{align} $$
+##### Modelo para bajas frecuencias
+---
+Generalizamos la idea de linealización para todas las corrientes y todas las señales aplicadas sobre cualquiera de las fuentes de polarización. Podemos evaluar la [[Corriente eléctrica|corriente]] $$ i_D(V_D) \approx I_D(V_D) + \frac{\partial i_D}{\partial v_D} \Biggm|_{v_D=V_D} v_d $$
+Entonces, como dijimos $$ i_d = \frac{\partial i_D}{\partial v_D} \Biggm|_{v_D=V_D} v_d = g_d ~ v_d $$
+Definimos $g_d \equiv$ [[Conductancia dinámica]] $[g_d] = S$
+
+Produciendo el circuito equivalente
+![[Circuito equivalente de resistencias de pequeña señal del diodo.png]]
+
+##### Modelo para altas frecuencias
+---
+Generalizamos la idea de linealización para todas las corrientes y todas las señales aplicadas sobre cualquiera de las fuentes de polarización
+
+Donde se definen dos capacidades
+* $C_j \equiv$ [[Capacidad de juntura]] $[C_j] = F$
+* $C_d \equiv$ [[Capacidad de difusión]] $[C_d] = F$
+
+![[Modelo de pequeña señal diodo completo.png]]
+
 #### Rango de validez
 ---
 El [[Error]] que cometemos entre el valor estimado de la señal $i_d(t)$ y el valor real $i_D(t) - I_D$ queremos que sea pequeño, suponiendo que queremos un $10\%$  respecto de la variación real diremos que $$ ((i_D(t) - I_D) - i_d(t)) < 10\% ~ (i_D(t) - I_D) $$
