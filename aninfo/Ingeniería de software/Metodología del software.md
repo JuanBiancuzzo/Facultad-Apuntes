@@ -5,6 +5,6 @@ capitulo: 1
 ---
 ### Definición
 ---
-Los métodos proporcionan un enfoque sistemático para la [[Requisito|especificación]], [[Diseño del software|diseño]], [[Construcción de software|construcción]] y [[Testing de software|verificación]].
+Los métodos proporcionan un enfoque sistemático para la [[Requisito|especificación]], [[Diseño del software|diseño]], [[aninfo/Ingeniería de software/Construcción de software|construcción]] y [[Testing de software|verificación]].
 
 Los modelos ayudan a entender, definir y comunicar
