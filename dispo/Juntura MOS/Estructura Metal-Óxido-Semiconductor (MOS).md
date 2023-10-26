@@ -27,4 +27,6 @@ Pocos [[Hueco|huecos]] cerca de la interfaz $Si$/$SiO_2$ entonces quedan expuest
 
 #### Densidad de [[Carga eléctrica|carga]] espacial
 ---
-p
+Se puede dividir en cuatro zonas la estructura, la zona del metal sus cargas están acumuladas en la superficie, generando una [[Delta de Dirac]] de [[Carga eléctrica|carga]] en la interfaz entre el metal y el oxido.
+
+En el oxido al ser [[Aislado|aislante]] no acumula carga, dejándonos con las últimas dos zonas, dada la [[Aproximación de vaciamiento]], tenemos dividida en dos zonas el [[Semiconductor]], entre $0$ y $x_{d0}$ teniendo una densidad de carga por $$ \rho(x) = q \cdot \left( \underbrace{N_d(x)}_{= ~ 0} - N_a(x) + \underbrace{p_0(x) - n_0(x)}_{n_0;p_0 \ll N_d; N_a} \right) = - q ~ N_a $$
