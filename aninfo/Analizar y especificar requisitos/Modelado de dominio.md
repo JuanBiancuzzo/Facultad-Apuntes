@@ -13,7 +13,9 @@ Las clases de diseño están inspiradas en conceptos del dominio del problema. P
 Manipuladas en una organización, por ejemplo contratos, facturas, pedidos
 
 ###### Objetos y conceptos
-Son objetos y conceptos del mundo real que el sistema necesita conocer y/o monitorear, por ejemplo, un avión, misil, trayectoria
+Son objetos y conceptos del mundo real que el sistema necesita conocer y/o monitorear, por ejemplo, un avión, misil, trayectoria.
+
+Estos objetos tienen propiedades que caracterizan a estos objetos, y esto forma la base del diseño.
 
 ###### Eventos
 Eventos pasados o futuros, por ejemplo arribos, partidas o pagos
@@ -26,7 +28,7 @@ Personas, roles u organizaciones, como clientes, socios o alumnos.
 Podemos pensarlo en pasos
 * [[Identificar clases conceptuales en el modelo de diseño|Identificar clases conceptuales]]
 * Dibujarlas en un [[Unified modelling language (UML)#Diagrama de clases|diagrama de clases]]
-* Agregar asociaciones y atributos
+* Agregar [[Asociación entre objetos]] y [[Clase conceptual|atributos]]
 * Agregar generalizaciones, especializaciones, composiciones y agregaciones
 
 Es un proceso iterativo e incremental

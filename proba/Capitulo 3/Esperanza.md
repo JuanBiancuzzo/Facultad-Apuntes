@@ -3,7 +3,7 @@ dia: 2023-01-23
 materia: proba
 capitulo: 3
 ---
-Es el promedio ponderado que puede tomar una [[Variable aleatoria]] $X$. Analogo al centro de masa de un objeto.
+Es el promedio ponderado que puede tomar una [[Variable aleatoria]] $X$. Análogo al centro de masa de un objeto.
 
 Tambien la llaman media.
 
@@ -12,11 +12,9 @@ Tambien la llaman media.
 Sea $X$ una [[Variable aleatoria]] con [[Función de distribución]] $F_X(x) = \mathbb{P}(X \leq x)$, si $h(X)$ es una [[Función de variable aleatoria]] cualquiera de $X$, si definimos $A$ como el conjunto de [[Átomo de una distribución|átomos]], entonces:
 $$ E[h(X)] = \sum_{x \in A} h(x) \cdot \mathbb{P}(X = x) + \int_{x \in \mathbb{R} - A} h(x) \cdot F_{X}'(x) \cdot dx $$
 ##### Notación
-Se puede espresar $\mu(X) = E[X]$
+Se puede expresar $\mu(X) = E[X]$
 
-
-
-### Casos especificos
+### Casos específicos
 ---
 Dado una [[Función de variable aleatoria]] $h(X)$ cualquiera
 

@@ -9,6 +9,10 @@ Es una descripción de la funcionalidad esperada de un sistema, desde el punto d
 
 Estas no son [[Requisito|requisitos]] en el sentido tradicional, sino que constituyen un recordatorio de que se debe mantener una conversación respecto al tema en cuestión. Lo podemos pensar como un puntero al requisito real.
 
+#### Formato
+---
+Como [actor], quiero poder [función] de modo que/para así [razón]
+
 #### 3 Cs: Card, Conversation, confirmation
 ---
 Al hacer la historia de usuario, hay que tener en cuenta que hay 3 cosas que la componen
@@ -24,39 +28,13 @@ Se deben definir criterios de aceptación para garantizar que se cubren adecuada
 
 Estos criterios de aceptación ayudan a definir la funcionalidad.
 
+El formato del criterio de aceptación esta dado por:
+	Dado que [contexto], cuando [acción] entonces [consecuencias]
+
 #### Criterio de calidad
 ---
-##### Sintáctico
-- Atomic:
-	- Una historia de usuario expresa un [[Requisito|requisito]] para exactamente una característica.
-- Mínimo:
-	- Una historia de usuario no contiene más que un rol, medios y fines.
-- Bien formada:
-	- Una historia de usuario incluye al menos un rol y un medio.
-##### Semántico
-- Libre de conflictos:
-	- Una historia de usuario no debe ser inconsistente con ninguna otra historia de usuario.
-- Conceptualmente sólido:
-	- Los medios expresan una característica y los fines expresan una razón, no otra cosa.
-- Orientada a problemas:
-	- Una historia de usuario sólo especifica el problema, no la solución.
-- Sin ambigüedades:
-	- Una historia de usuario evita términos o abstracciones que puedan dar lugar a múltiples interpretaciones.
-##### Pragmático
-- Completar:
-	- La implementación de un conjunto de historias de usuarios crea una aplicación con funciones completas, no faltan pasos
-- Dependencias explícitas:
-	- Vincula todas las dependencias inevitables y no obvias de las historias de los usuarios.
-- Oración completa:
-	- Una historia de usuario es una oración completa bien formada.
-- Independiente:
-	- La historia de usuario es autónoma, lo que evita dependencias inherentes de otras historias de usuario.
-- Escalable:
-	- Las historias de usuarios escalables no denotan requisitos demasiado generales que sean difíciles de planificar y priorizar.
-- Uniforme:
-	- Todas las historias de usuarios siguen aproximadamente la misma plantilla
-- Único:
-	- Cada historia de usuario es única, se evitan duplicados
+![[Regla INVEST#Definición]]
+![[QUS Framework#Definición]]
 
 #### Ejemplo
 ---
