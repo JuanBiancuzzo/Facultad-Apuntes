@@ -27,5 +27,22 @@ Como la [[Densidad volumétrica de carga eléctrica|densidad de carga]] ($\rho(x
 
 Veamos la aproximación de vaciamiento con esta tensión aplicada
 
-![[Aproximación de vaciamiento#Polarización aplicada]]
+#### Polarización aplicada
+---
+Teniendo en cuenta la [[Tensión de contacto]], y viendo el análisis en la [[Juntura PN con polarización]], vemos que cambian los límites de la zona de vaciamiento (SCR) ($x_{n_0}$ y $x_{p_o}$), y notamos que 
+* en [[Convención de signos para la tensión de polarización#Polarización directa|directa]]: $\Delta V_{SCR} \downarrow \Rightarrow |E| \downarrow \Rightarrow x_d \downarrow$ 
+* en [[Convención de signos para la tensión de polarización#Polarización inversa|inversa]]: $\Delta V_{SCR} \uparrow \Rightarrow |E| \uparrow \Rightarrow x_d \uparrow$ 
+
+Esencialmente
+* El comportamiento de la [[Juntura PN con polarización|juntura PN polarizada]] no se modifica cualitativamente respecto al [[Equilibrio térmico en un semiconductor|equilibrio térmico]]
+* Se modifica el [[Dipolo de carga]] en la zona desierta (SCR) de modo de compensar el [[Tensión|potencial]] forzado externamente
+
+Por lo tanto la formulación analítica de la [[Juntura PN con polarización|juntura PN polarizada]] es idéntica a la del [[Equilibrio térmico en un semiconductor|equilibrio térmico]], pero considerando $$ \phi_B \to \phi_B - V_{PN} $$
+Haciendo que $$ x_n(V_{PN}) = \sqrt\frac{2\varepsilon_{sc} (\phi_B - V_{PN}) N_a}{q(N_a + N_d) N_d} = x_{n_0} ~ \sqrt{1 - \frac{V_{PN}}{\phi_B}} $$
+$$ x_p(V_{PN}) = \sqrt\frac{2\varepsilon_{sc} (\phi_B - V_{PN}) N_d}{q(N_a + N_d) N_a} = x_{p_0} ~ \sqrt{1 - \frac{V_{PN}}{\phi_B}} $$
+$$ x_d(V_{PN}) = \sqrt\frac{2\varepsilon_{sc} (\phi_B - V_{PN}) (N_a + N_d)}{q N_a  N_d) N_d} = x_{d_0} ~ \sqrt{1 - \frac{V_{PN}}{\phi_B}} $$
+$$ |E(V_{PN})| = \sqrt\frac{2q (\phi_B - V_{PN}) N_a N_d}{\varepsilon_{sc}(N_a + N_d)} = |E_0| ~  \sqrt{1 - \frac{V_{PN}}{\phi_B}} $$
+Esto produce que la [[Potencial eléctrico|función de potencial]], el [[Campo eléctrico]] y la [[Densidad volumétrica de carga eléctrica|densidad de carga]] se modifique de la siguiente forma
+
+![[Función de potencial, campo eléctrico y densidad de carga para una juntura PN polarizada.png|600]]
 
