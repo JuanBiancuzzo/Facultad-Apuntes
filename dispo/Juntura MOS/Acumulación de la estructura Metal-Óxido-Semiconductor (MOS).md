@@ -5,4 +5,3 @@ capitulo: 5
 ---
 ### Definición
 ---
-Dada una [[Estructura Metal-Óxido-Semiconductor (MOS)|Estructura MOS]] [[Estructura Metal-Óxido-Semiconductor (MOS) con polarización|polarizada]], se determina u

@@ -4,5 +4,6 @@
   "templater-obsidian",
   "obsidian-git",
   "obsidian-functionplot",
-  "cm-editor-syntax-highlight-obsidian"
+  "cm-editor-syntax-highlight-obsidian",
+  "3d-graph"
 ]

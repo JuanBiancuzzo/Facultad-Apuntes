@@ -97,6 +97,27 @@
         "a": 1,
         "rgb": 5431378
       }
+    },
+    {
+      "query": "path:dispo  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
+    },
+    {
+      "query": "path:adc  ",
+      "color": {
+        "a": 1,
+        "rgb": 5419488
+      }
+    },
+    {
+      "query": "path:sisop",
+      "color": {
+        "a": 1,
+        "rgb": 5395168
+      }
     }
   ],
   "collapse-display": true,
@@ -109,6 +130,6 @@
   "repelStrength": 9.91666666666667,
   "linkStrength": 1,
   "linkDistance": 220,
-  "scale": 0.13948043948512023,
-  "close": true
+  "scale": 0.13035947770844383,
+  "close": false
 }
