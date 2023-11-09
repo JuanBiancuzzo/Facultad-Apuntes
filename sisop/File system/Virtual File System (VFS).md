@@ -19,7 +19,7 @@ Los VFS presentan una serie de estructuras que [[Modelar|modelan]] un [[File sys
 * Dentry
 	* Representa una entrada de [[Directorio]], que es un componente simple de un path
 * File:
-	* Representa a un [[Archivo]] asociado a un determinado [[taller/Concurrencia/Proceso|proceso]] 
+	* Representa a un [[Archivo]] asociado a un determinado [[Proceso|proceso]] 
 
 ![[Objetos del Virtual File System (VFS).png]]
 
@@ -35,4 +35,4 @@ Existe un conjunto de operaciones
 * Las `dentry_operations`:
 	* Son los métodos que se aplican directamente por el kernel a una determinada directory entry, como por ejemplo, `d_compare()` y `d_delete()`
 * Las `file_operations`:
-	* Son los métodos que el kernel aplica directamente sobre un archivo abierto por un [[taller/Concurrencia/Proceso|proceso]], `read()` y `write()`
+	* Son los métodos que el kernel aplica directamente sobre un archivo abierto por un [[Proceso|proceso]], `read()` y `write()`

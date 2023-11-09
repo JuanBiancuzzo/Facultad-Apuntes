@@ -21,7 +21,7 @@ Este conjunto de instrucciones sólo puede ser ejecutado en [[Modo de operación
 | INVD        | Invalida el [[Cache]] sin writeback                            |
 | INVLPG      | Invalida la entrada de TLB                                     |
 | WBINVD      | Invalida el [[Cache]] con writeback                            |
-| HLT         | Para el [[taller/Concurrencia/Proceso\|proceso]]               |
+| HLT         | Para el [[Proceso|proceso]]               |
 | RDMSR       | Leer el [[Registro de modelo especifico]]                      |
 | WRMSR       | Escribir el [[Registro de modelo especifico]]                  |
 | RDPMC       | Leer el [[Contador]] de rendimiento                            |

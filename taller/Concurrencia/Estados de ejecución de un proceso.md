@@ -5,6 +5,6 @@ capitulo: 4
 ---
 ### Definición
 ---
-Dado un [[taller/Concurrencia/Proceso]] podemos describir su estado en el siguiente [[Grafo]]:
+Dado un [[Proceso|proceso]] podemos describir su estado en el siguiente [[Grafo]]:
 ![[Estados de ejecución de un proceso.canvas]]
 

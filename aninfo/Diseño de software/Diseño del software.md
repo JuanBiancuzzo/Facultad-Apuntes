@@ -41,7 +41,7 @@ Definición de la arquitectura, los componentes y las [[Interfaz de usuario (UI)
 * Encapsulamiento y ocultamiento de la información
 * Separación de interfaz e implementación
 * Separación de intereses
-* [[Concurrente|concurrencia]]
+* [[Concurrencia|concurrencia]]
 * Control y manejo de eventos
 * [[Persistencia de datos]]
 * Distribución de componentes

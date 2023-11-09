@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-Este [[aninfo/Ingeniería de software/Proceso|Proceso]] es iterativo e incremental, donde se analiza el problema, descomponiéndolo en problemas más chicos, y después se sintetiza en una solución, donde esta solución nos da a entender el problema y podemos refinarlo, volviendo al análisis del problema
+Este [[Proceso|Proceso]] es iterativo e incremental, donde se analiza el problema, descomponiéndolo en problemas más chicos, y después se sintetiza en una solución, donde esta solución nos da a entender el problema y podemos refinarlo, volviendo al análisis del problema
 
 Hay diferentes modelos como
 

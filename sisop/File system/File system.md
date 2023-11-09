@@ -45,7 +45,7 @@ Es la [[File system#Path|ruta]] relativa que se interpreta a partir del [[Direct
 
 #### Current [[Directorio|directory]]
 ---
-Es el [[Directorio]] actual en el cual se está ejecutando el [[taller/Concurrencia/Proceso|proceso]]
+Es el [[Directorio]] actual en el cual se está ejecutando el [[Proceso|proceso]]
 
 #### Hard link
 ---

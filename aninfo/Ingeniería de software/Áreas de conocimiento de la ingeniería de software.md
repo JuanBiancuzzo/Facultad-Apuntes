@@ -39,4 +39,4 @@ Descubrimiento, análisis, especificación, validación y administración de req
 
 #### Procesos
 ---
-![[aninfo/Ingeniería de software/Proceso#Definición|Proceso]]
+![[Proceso#Definición|Proceso]]

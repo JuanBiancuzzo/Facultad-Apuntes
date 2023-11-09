@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-La [[Calidad]] del software depende de la tecnología que utilicemos, los recursos humanos, y la eficacia y eficiencia de los [[aninfo/Ingeniería de software/Proceso|procesos]].
+La [[Calidad]] del software depende de la tecnología que utilicemos, los recursos humanos, y la eficacia y eficiencia de los [[Proceso|procesos]].
 
 Podemos dividirlo en dos factores de calidad
 

@@ -9,7 +9,7 @@ Este [[File system]] es una versión simplificada de un típico sistema de archi
 
 Para pensar en un file system hay que comprender dos conceptos fundamentales:
 1. El primero es la estructura de datos de un sistema de archivos. En otras palabras como se guarda la información en el disco para organizar los datos y metadatos de los [[Archivo|archivos]]. El sistema de archivos VSFS emplea un simple estructura, que parece un arreglo de bloques.
-2. El segundo aspecto es el método de acceso, como se machean las llamadas hechas por los [[taller/Concurrencia/Proceso|procesos]], como [[Open system call|open()]], [[Read system call|read()]], [[Write system call|write()]], etc. en la estructura del sistema de archivos
+2. El segundo aspecto es el método de acceso, como se machean las llamadas hechas por los [[Proceso|procesos]], como [[Open system call|open()]], [[Read system call|read()]], [[Write system call|write()]], etc. en la estructura del sistema de archivos
 
 #### Organización general
 ---

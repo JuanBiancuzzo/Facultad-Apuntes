@@ -22,7 +22,7 @@ Como empaquetamos esos elementos, en componentes ejecutables
 ---
 Es usar los ejecutables y aplicarlos en el entorno de distribución como servidores 
 
-#### Vista de [[taller/Concurrencia/Proceso|procesos]]
+#### Vista de [[Proceso|procesos]]
 ---
 Son aquellos procesos desde el punto de vista del [[Sistema operativo]]
 

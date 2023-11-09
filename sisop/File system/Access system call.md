@@ -5,7 +5,7 @@ capitulo: 6
 ---
 ### Definición
 ---
-La [[System call]] `access()` chequea si un [[taller/Concurrencia/Proceso|proceso]] tiene o no los permisos para utilizar el [[Archivo]] con un determinado `pathname`. El argumento `mode` determina el tipo de permiso a ser chequeado.
+La [[System call]] `access()` chequea si un [[Proceso|proceso]] tiene o no los permisos para utilizar el [[Archivo]] con un determinado `pathname`. El argumento `mode` determina el tipo de permiso a ser chequeado.
 
 ```c
 #include <unistd.h>

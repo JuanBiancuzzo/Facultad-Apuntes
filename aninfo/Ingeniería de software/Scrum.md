@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-Es un [[aninfo/Ingeniería de software/Proceso|proceso]] de [[Desarrollo de software]], siguiendo el [[Agile|manifesto de agile]].
+Es un [[Proceso|proceso]] de [[Desarrollo de software]], siguiendo el [[Agile|manifesto de agile]].
 
 Este se separa el [[Ciclo de vida de un producto de software|ciclo de vida]] en releases, donde cada release se separa en sprints de un par de semanas, y en estos sprints se puede generar un avance del producto
 

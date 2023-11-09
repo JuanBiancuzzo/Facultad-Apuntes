@@ -1,10 +1,12 @@
 ---
-dia: 2023-04-09
-materia: taller
-capitulo: 4
+dia: 2023-08-26
+materia: sisop
+capitulo: 2
 ---
 ### Definición
 ---
+Es un conjunto de actividades que transforma una entrada en una salida y que consume recursos. También se lo puede definir como un programa en ejecución con derechos restringidos.
+
 Un proceso está formado por:
 
 * Un programa:
