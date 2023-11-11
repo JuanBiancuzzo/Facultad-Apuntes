@@ -3,7 +3,7 @@
   "dataview",
   "templater-obsidian",
   "obsidian-git",
-  "obsidian-functionplot",
   "cm-editor-syntax-highlight-obsidian",
-  "3d-graph"
+  "3d-graph",
+  "obsidian-tikzjax"
 ]
