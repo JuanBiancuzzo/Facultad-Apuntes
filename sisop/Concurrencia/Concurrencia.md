@@ -25,8 +25,13 @@ Datos que necesitan compartir los procesos para cumplir la función del programa
 ### Problemas
 ---
 ##### Condiciones de carrera
-![[Condiciones en carrera#Definición]]
+![[Race condition#Definición]]
 
+##### Atomicity violation
+El deseo de la serialización entre múltiples accesos a memoria es violado.
+
+##### Order violation
+El orden deseado entre accesos a memoria se ha cambiado.
 
 ##### Deadlocks
 ![[Deadlock#Definición]]

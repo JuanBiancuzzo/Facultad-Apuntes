@@ -5,4 +5,4 @@ capitulo: 5
 ---
 ### Definición
 ---
-Donde dos hilos de ejecución estan esperando el uno por el otro para avanzar, requiriendo de un recurso que el otro tiene, previniendo que ambos avancen. No hay proceso productivo.
+Donde dos [[Thread|hilos]] de ejecución están esperando el uno por el otro para avanzar, requiriendo de un recurso que el otro tiene, previniendo que ambos avancen. No hay [[Proceso|proces]] productivo.

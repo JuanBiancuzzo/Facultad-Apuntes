@@ -20,4 +20,4 @@ Para poder limitar la ejecución directa, para poder corregir las desventajas de
 * [[Modo de operación]]
 * [[Instrucción privilegiada]]
 * [[Protección de memoria]]
-* [[Interrupciones por temporizador]]
+* [[Interrupción por temporizador]]
