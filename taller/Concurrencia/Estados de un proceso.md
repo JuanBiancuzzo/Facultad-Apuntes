@@ -10,7 +10,7 @@ Dado un [[Proceso|proceso]] podemos describir su estado en el siguiente [[Grafo]
 
 #### Estados
 ---
-En una visión simplificada, un proceso puede encontrarse en los siguientes estados
+En una visión simplificada (una versión más compleja sería la de [[Estados de un proceso en Linux|estados en linux]]), un [[Proceso|proceso]] puede encontrarse en los siguientes estados
 #### Running
 ---
 El [[Proceso]] se encuentra corriendo en un [[Procesador]]. Está ejecutando instrucciones

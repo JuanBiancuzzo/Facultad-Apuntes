@@ -13,7 +13,9 @@ Por lo que se protege la [[Protección de memoria|memoria]], los [[Puerto I/O|pu
 
 Los modos más utilizados por los [[Sistema operativo|sistemas operativos]] son
 ##### Modo kernel
-También conocido como "modo 0", ejecuta instrucciones en nombre del [[Kernel]] del [[Sistema operativo]] y estas son [[Instrucción privilegiada|instrucciones privilegiadas]]
+![[Kernel mode#Definición]]
+
 ##### Modo usuario
-También conocido como "modo 3", ejecuta instrucciones en nombre del usuario
+![[User mode#Definición]]
+
 
