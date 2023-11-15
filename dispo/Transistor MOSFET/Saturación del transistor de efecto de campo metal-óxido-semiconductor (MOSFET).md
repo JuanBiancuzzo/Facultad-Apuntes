@@ -23,7 +23,7 @@ Geometría del problema:
 
 La condición de saturación es $$ V_{GD} = V_T = V_{GS} - V_{DS} \implies V_{DS ~ (sat)} = V_{GS} - V_T $$
 La corriente de Drain en esta situación puede calcularse como $$ I_{D ~ (sat)} = I_D(V_{DS} = V_{DS ~ (sat)} = V_{GS} - V_T) $$
-Donde la corriente esta dada por la [[Triodo del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Corriente eléctrica|corriente en triodo]] dándonos $$ I_{D ~ (sat)} = \frac{1}{2} \frac{W}{L} \mu_n C'_{ox} (V_{GS} - V_T)^2 $$
+Donde la corriente esta dada por la [[Triodo del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Corriente eléctrica|corriente en triodo]] dándonos $$ I_{D ~ (sat)} = \frac{1}{2} \frac{W}{L} \mu_n C'_{ox} V_{DS ~ (sat)}^2 $$
 
 ##### Curva de salida ($I_D$ vs. $V_{DS}$)
 ---
@@ -50,6 +50,4 @@ Por lo que no hay una capa de [[Inversión de la estructura Metal-Óxido-Semicon
 * El [[Campo eléctrico]] en el canal tampoco cambia porque la distribución de [[Carga eléctrica|carga]] se mantiene. Entonces $E_y(y)$ queda determinado por $V_{DS ~ (sat)}$
 * La [[Corriente eléctrica|corriente]] en el canal es una [[Corriente de arrastre|corriente de arrastre]]. Si la carga y el campo se mantienen entonces $I_D$ es constante
 
-Considerando el [[Efecto de modulación del largo del canal]], donde se utiliza una $L_{(efectiva)}$, produce una corriente $$ I_D = \underbrace{\frac{1}{2} \frac{W}{L} \mu_n C'_{ox} (V_{GS} - V_T)^2}_{I_{D ~ (sat)}} ~ \left( 1 + \frac{\Delta L}{L} \right) $$
-De forma experimental se encuentra que $$ \left( 1 + \frac{\Delta L}{L} \right) = \left( 1 + \lambda ~ V_{DS} \right) $$ 
-Dándonos la corriente $$ I_D = \frac{1}{2} \frac{W}{L} \mu_n C'_{ox} (V_{GS} - V_T)^2 ~ \left( 1 + \lambda ~ V_{DS} \right) $$
+Considerando el [[Efecto de modulación del largo del canal]], donde se utiliza una $L_{(efectiva)}$, produce una corriente $$ I_D = \underbrace{\frac{1}{2} \frac{W}{L} \mu_n C'_{ox} (V_{GS} - V_T)^2}_{I_{D ~ (sat)}} ~ \left( 1 + \lambda ~ V_{DS} \right) $$

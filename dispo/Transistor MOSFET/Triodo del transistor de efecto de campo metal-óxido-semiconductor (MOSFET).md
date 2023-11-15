@@ -56,6 +56,4 @@ Cuando $V_{DS} \uparrow$, la despolarización del canal se hace más prominente,
 
 ##### [[Efecto de modulación del largo del canal]]
 ---
-Considerando el [[Efecto de modulación del largo del canal]], donde se utiliza una $L_{(efectiva)}$, produce una corriente $$ I_D = \frac{W}{L} \mu_n C'_{ox} \left( V_{GS} - \frac{V_{DS}}{2} - V_T \right) V_{DS} ~ \left( 1 + \frac{\Delta L}{L} \right) $$
-De forma experimental se encuentra que $$ \left( 1 + \frac{\Delta L}{L} \right) = \left( 1 + \lambda ~ V_{DS} \right) $$ 
-Dándonos la corriente $$ I_D = \frac{W}{L} \mu_n C'_{ox} \left( V_{GS} - \frac{V_{DS}}{2} - V_T \right) V_{DS} ~ \left( 1 + \lambda ~ V_{DS} \right) $$
+Considerando el [[Efecto de modulación del largo del canal]], donde se utiliza una $L_{(efectiva)}$, produce una corriente $$ I_D = \frac{W}{L} \mu_n C'_{ox} \left( V_{GS} - \frac{V_{DS}}{2} - V_T \right) V_{DS} ~ \left( 1 + \lambda ~ V_{DS} \right) $$

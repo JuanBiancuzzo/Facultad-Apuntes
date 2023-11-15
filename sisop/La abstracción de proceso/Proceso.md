@@ -3,19 +3,37 @@ dia: 2023-08-26
 materia: sisop
 capitulo: 2
 ---
-### Definición
+### Algunas definiciones
 ---
-Es un conjunto de actividades que transforma una entrada en una salida y que consume recursos. También se lo puede definir como un programa en ejecución con derechos restringidos.
+"Es un conjunto de actividades que transforma una entrada en una salida y que consume recursos. También se lo puede definir como un programa en ejecución con derechos restringidos."
 
-Un proceso está formado por:
+"Un proceso es la ejecución de un programa de aplicación con derechos restringidos; el proceso es la abstracción que provee el [[Kernel]] del [[Sistema operativo]] para la ejecución protegida"
 
-* Un programa:
-	* Instrucciones que conforman el programa a ejecutar
-* Datos del usuario:
-	* Espacio de memoria modificable por el usuario, por ejemplo: datos propios del programa, heap
-* Pila del sistema: 
-	* Se utiliza para almacenar parámetros y direcciones de retorno el llamado a subrutinas
-* Estructuras de datos del kernel:
-	* Fila en la tabla de procesos: PCB (Process control block)
+"Es simplemente un [[Programa]] que se está ejecutando en un instante dado"
 
-Podemos decir que un proceso es una instancia de un programa en ejecución
+#### Un proceso incluye
+---
+* Los archivos abiertos
+* Las señales pendientes
+* Datos internos del [[Kernel]]
+* El estado completo del [[Procesador]]
+* Un espacio de [[Dirección de memoria|direcciones de memoria]]
+* Uno o más [[Thread|hijos de ejecución]]
+
+#### API's
+---
+Las acciones básicas que todo [[Sistema operativo|SO]] debe proveer sobre la [[Virtualización del procesador|abstracción de la CPU]]
+* Creación (Create):
+	* Todo sistema operativo debe incluir una forma de crear un nuevo proceso
+* Destrucción (Destroy):
+	* Así como existe una interface para crear un proceso debe existir una interface para destruirlo por la fuerza
+* Espera (Wait):
+	* A veces es útil esperar a que un proceso termine su ejecución por ende algún tipo de interface de esperar debe ser provista
+* Control vario (Miscellaneous Control):
+	* Además de esperar o matar a un proceso, otros tipos de operaciones deben poder realizarse. Por ejemplo, suspender su ejecución por un tiempo y luego reanudarla
+* Estado (Status):
+	* Tiene que existir una forma de saber sobre la situación del proceso y su [[Estados de un proceso|estado]]. Cuánto hace que se está ejecutando, en que estado se encuentra, etc.
+
+#### Contexto de un proceso
+---
+![[Contexto del proceso#Definición]]
