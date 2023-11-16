@@ -15,4 +15,4 @@ $$ \mathbb{P}(\text{"Error de tipo 1"}) = \mathbb{P}_\theta(\text{"Rechazar }H_0
 $$ \mathbb{P}(\text{"Error de tipo 2"}) = \mathbb{P}_\theta(\text{"Rechazar } H_1 \text{"}), ~ \theta \in \Theta_2 $$
 Con los errores siendo [[Error de tipo 1]] y [[Error de tipo 2]].
 
-Y la [[proba/Capitulo 10/Potencia]] del test: $$ \Pi_\delta(\theta) = \mathbb{P}_\theta(\text{"Rechazar }H_0 \text{"}) = \mathbb{P}_\theta(\delta(\underline{X}) = 1) = E_\theta[\delta(\underline{X})] $$
+Y la [[Potencia del test]]: $$ \Pi_\delta(\theta) = \mathbb{P}_\theta(\text{"Rechazar }H_0 \text{"}) = \mathbb{P}_\theta(\delta(\underline{X}) = 1) = E_\theta[\delta(\underline{X})] $$

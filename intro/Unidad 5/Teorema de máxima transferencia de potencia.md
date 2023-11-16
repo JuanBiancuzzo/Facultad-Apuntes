@@ -14,12 +14,11 @@ R_\text{Th} = R_\text{carga}
 \end{align}
 $$
 
-#### Esquematización
+Para [[Fasor|fasores]] nos da $$ Z_L = Z^*_{th} $$
+#### Análisis
 ---
 ![[Potencia máxima.png]]
 
-#### Análisis
----
 Calculo la potencia entregada a la carga con la formula de [[Potencia disipada]]:
 $$
 \begin{align}
@@ -53,7 +52,7 @@ $$
 P_\text{carga} &= \frac{V_\text{Th}^2}{4 \cdot R_\text{Th}}
 \end{align}
 $$
-Y si hicieramos lo mismo para calcular la potencia disipada por el $R_\text{Th}$, nos daria el mismo valor.
+Y si hiciéramos lo mismo para calcular la potencia disipada por el $R_\text{Th}$, nos daría el mismo valor.
 Entonces, entendiendo que:
 $$ 
 \left\{ 
@@ -70,3 +69,17 @@ $$
 $$
 Es decir, se pierde la mitad de la potencia entregada por la fuente.
 
+#### Análisis para fasores
+---
+![[Potencia máxima con fasores.png]]
+
+Con $Z_{th} = R_{th} + j ~ X_{th}$ y $Z_L = R_L + j ~ X_L$ 
+
+Debemos hallar $Z_L$ tal que la [[Potencia promedio|potencia media]] sobre la carga sea máxima. $$ I = \frac{V_th}{Z_{th} + Z_L} = \frac{V_{th}}{(R_{th} + j ~ X_{th}) + (R_L + j ~ X_L)} 
+$$ $$ P = \frac{1}{2} |I|^2 R_L = \frac{1}{2} \frac{|V_{th}|^2 ~ R_L}{(R_{th} + j ~ X_{th})^2 + (R_L + j ~ X_L)^2} $$
+[[Derivable|Derivando]] $$ \frac{\partial P}{\partial X_L} = -\frac{|V_{th}|^2 ~ R_L (X_{th} + X_L)}{\left[ (R_{th} + j ~ X_{th})^2 + (R_L + j ~ X_L)^2 \right] ^2} $$
+Igualando a $0$ y resolviendo el sistema de ecuaciones obteneos $X_L = - X_{th}$ y $R_L = \sqrt{R_{th}^2 + (X_{th} + X_L)^2 }$, y de manera equivalente $$ Z_L = R_L + j X_L = R_{th} - j X_{th} = Z_{th}^* $$
+
+Para la máxima transferencia de [[Potencia promedio|potencia promedio]], la [[Impedancia|impedancia]] de carga $Z_L$ debe ser igual al [[Valor conjutado|conjugado]] de la impedancia compleja de [[Teorema de Thevenin|Thevenin]] $Z_{th}$
+
+Finalmente la potencia máxima obtenida es igual a $$ P_{max} = \frac{|V_{th}|^2}{8 R_{th}} $$

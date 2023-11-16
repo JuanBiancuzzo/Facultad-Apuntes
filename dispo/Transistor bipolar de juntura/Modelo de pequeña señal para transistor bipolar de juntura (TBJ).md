@@ -17,18 +17,7 @@ i_B(V_{BE} + v_{be}, V_{CE} + v_{ce}) \simeq ~ I_B(V_{BE}, V_{CE})
 + \frac{\partial i_B}{\partial v_{BE}} \biggm|_{Q} v_{be} 
 + \frac{\partial i_B}{\partial v_{BC}} \biggm|_{Q} v_{bc} $$
 donde $Q \equiv$  punto de polarización  $(V_{BE}, V_{CE})$.
-#### Evaluando para [[Modo activo directo (MAD) del transistor bipolar de juntura (TBJ)|MAD]]
----
-$$ \begin{align}
-	i_C(V_{BE}) &= I_S \exp \left( \frac{V_{BE}}{V_{th}} \right) \\
-	\frac{\partial i_C(v_{BE})}{\partial v_{BE}} \biggm|_{Q} &= \frac{I_S}{V_{th}} \exp \left( \frac{V_{BE}}{V_{th}} \right) \\
-	v_{BE} &- V_{BE} = v_{be}
-\end{align} $$
 
-El [[Modelo]] linealizado resulta $$ \begin{matrix} 
-	i_C(v_{BE}) \simeq I_S \exp \left( \frac{V_{BE}}{V_{th}} \right) + \frac{I_S}{V_{th}} \exp \left( \frac{V_{BE}}{V_{th}} \right) \cdot v_{be} \\
-	\boxed {i_C(v_{BE}) \simeq I_{CQ} + i_c}
-	\end{matrix} $$ donde $$ i_c = \frac{I_S}{V_{th}} \exp \left( \frac{V_{BE}}{V_{th}} \right) \cdot v_{be} = g_m \cdot v_{be} $$ donde $g_m$ es la [[Transconductancia]]
 #### Rango de validez del modelo
 ---
 El error que cometemos entre el valor estimado de señal $i_c(t)$ y el valor real $i_C(t) - I_C$ debe ser pequeño. Al igual que el [[Modelo de pequeña señal para diodo]], a temperatura ambiente se obtiene $$ v_{be} \approx 5.2~mV $$ donde en la práctica se tolera $$ |v_{be}| < 10~mV $$

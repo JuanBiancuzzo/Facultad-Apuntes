@@ -11,9 +11,9 @@ $$\begin{align}
 	sen(z) &= \frac{1}{2i} \cdot (e^{iz} - e^{-iz})
 \end{align}$$
 
-### Observaciones
+#### Observaciones
 ---
-Donde vemos con la definción de la [[Función coseno]], que cumplen
+Donde vemos con la definición de la [[Función coseno]], que cumplen
 $$\begin{align} sen'(z) = cos(z) && cos'(z) = -sen(z) \end{align}$$
 También notemos la relación que tiene con la [[Función seno hiperbólico]] donde 
 $$ sen(iz) = i \cdot senh(z) $$

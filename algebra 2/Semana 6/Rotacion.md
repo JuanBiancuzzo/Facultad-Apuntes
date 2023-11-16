@@ -5,13 +5,13 @@ capitulo: 6
 ---
 ### Definición
 ---
-Vamos a usar ![[Propiedades trigonometricas]]
+Vamos a usar ![[Propiedades trigonométricas#Definición]]
 
-Partiendo de una situacion como esta
+Partiendo de una situación como esta
 
 ![[Pasted image 20211019144943.png]]
 
-Nosotros queremos rotar nuestro plano $\mathbb{R}^2$ por un angulo de $50.42\degree$, entonces si la [[Transformación lineal]] la llamamos $R$, entonces necesitamos determinar
+Nosotros queremos rotar nuestro plano $\mathbb{R}^2$ por un ángulo de $50.42\degree$, entonces si la [[Transformación lineal]] la llamamos $R$, entonces necesitamos determinar
 
 $$ R{1 \choose 0} = ~~ ? $$
 $$ R{0 \choose 1} = ~~ ? $$
@@ -20,7 +20,7 @@ Entonces veamos el caso ${1 \choose 0}$:
 
 ![[Pasted image 20211019145504.png]]
 
-Podemos ver el triangulo rectangulo, entonces la posicion en $x$ esta dado por el $cos(50.42\degree)$ y la $y$ esta dado por $sin(50.42\degree)$, entonces:
+Podemos ver el triangulo rectángulo, entonces la posición en $x$ esta dado por el $cos(50.42\degree)$ y la $y$ esta dado por $sin(50.42\degree)$, entonces:
 
 $$ R{1 \choose 0} = {cos(50.42\degree) \choose sin(50.42\degree)} $$
 

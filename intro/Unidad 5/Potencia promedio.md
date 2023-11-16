@@ -12,21 +12,13 @@ $$
 P_m= \frac{1}{T} \cdot \int_{0}^{T} p(t) \cdot dt
 \end{align}
 $$
-Además, recordando que para un resistor, la [[Potencia disipada]] se puede escribir como:
-$$
-\begin{align}
-p(t) = \frac{v^2(t)}{R}
-\end{align}
-$$
-Entonces, se concluye en la potencia promedio de alterna:
-$$
-\begin{align}
-P_m= \frac{1}{T} \cdot \int_{0}^{T} \frac{v^2(t)}{R} \cdot dt
-\end{align}
-$$
-Analogamente, la expresion para continua es la que ya se sabia anteriormente:
-$$
-\begin{align}
-P_m=  \frac{V^2}{R}
-\end{align}
-$$
+La potencia promedio, es el promedio de la [[Potencia instantánea|potencia instantánea]] a lo largo de un [[Función senoidal#Función periodica Periodo|periodo]]
+$$ P_m= \frac{1}{T} \cdot \int_{0}^{T} v(t) ~ i(t) ~ dt $$
+
+Tomando estas como funciones [[Función senoidal|senoidales]] $$ \begin{align} 
+	v(t) &= V_m cos(\omega t + \theta_v) \\
+	i(t) &= I_m cos(\omega t + \theta_i)
+\end{align} $$
+y usando [[Propiedades trigonométricas|propiedades trigonométricas]] nos queda la potencia instantánea $$ p(t) = \frac{1}{2} V_m I_m cos(\theta_v - \theta_i) + \frac{1}{2} V_m I_m cos(2 \omega t + \theta_v + \theta_i) $$
+Por lo que la potencia media es $$ P_m = \frac{1}{2} V_m I_m cos(\theta_v - \theta_i) $$
+Con [[Fasor|fasores]] $$ P_m = \frac{1}{2} Re\left(V ~ I^* \right) $$ donde $I^*$ es el [[Valor conjutado|conjugada]] de la corriente.
