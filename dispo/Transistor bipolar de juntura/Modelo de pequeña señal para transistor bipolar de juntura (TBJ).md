@@ -24,7 +24,7 @@ El [[Modelo]] linealizado resulta $$ \begin{matrix}
 	\end{matrix} $$ donde $$ i_c = \frac{I_S}{V_{th}} \exp \left( \frac{V_{BE}}{V_{th}} \right) \cdot v_{be} = g_m \cdot v_{be} $$ donde $g_m$ es la [[Transconductancia]]
 #### Rango de validez del modelo
 ---
-El error que cometemos entre el valor estimado de señal $i_c(t)$ y el valor real $i_C(t) - I_C$ debe ser pequeño. Al igual que el [[Modelo de pequeña señal para diodo]], a temperatura ambiente se obtiene $$ v_be \approx 5.2~mV $$ donde en la práctica se tolera $$ |v_{be}| < 10~mV $$
+El error que cometemos entre el valor estimado de señal $i_c(t)$ y el valor real $i_C(t) - I_C$ debe ser pequeño. Al igual que el [[Modelo de pequeña señal para diodo]], a temperatura ambiente se obtiene $$ v_{be} \approx 5.2~mV $$ donde en la práctica se tolera $$ |v_{be}| < 10~mV $$
 
 #### Modelo para bajas frecuencias
 ---

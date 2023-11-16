@@ -15,7 +15,7 @@ El kernel de Linux posee ciertas características a la hora de ser comparado con
 * El kernel carece de la protección de memoria internamente, no se protege de sí mismo.
 * El kernel no puede ejecutar fácilmente operaciones de punto flotante. 
 * El kernel tiene una pequeña pila de tamaño fijo y no es dinámica. 
-* Debido a que el kernel tiene interrupciones sincrónicas, es preventivo y admite SMP, la sincronización y la [[Concurrencia|concurrencia]] son preocupaciones importantes dentro del kernel.
+* Debido a que el kernel tiene interrupciones sincrónicas, es [[Preemptive|preemptive]] y admite SMP, la sincronización y la [[Concurrencia|concurrencia]] son preocupaciones importantes dentro del kernel.
 * La portabilidad es importante.
 
 El kernel de Linux posee es un único programa ejecutándose en la [[Memoria|memoria]] de la computador. Para tener una idea la versión 3.0 del kernel de Linux liberada el 27 de julio de 2012, comprendía unos 37.792 archivos por un total de 19.688.408 líneas de Código Fuente que ocupaban uno 460,8 MB de memoria. Este tipo de kernel se denomina Kernel Monolítico. 

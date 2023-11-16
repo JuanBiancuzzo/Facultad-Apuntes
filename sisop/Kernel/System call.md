@@ -59,6 +59,7 @@ Las system calls conforman una API
 * [[Signal system call|signal()]]
 * [[Kill system call|kill()]]
 * [[Alarm system call|alarm()]]
+* [[Brk system call|brk()]]
 
 ##### Relacionadas a la intercomunicación entre [[Proceso|procesos]]
 ---
