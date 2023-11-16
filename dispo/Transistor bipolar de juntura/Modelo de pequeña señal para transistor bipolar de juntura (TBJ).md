@@ -9,7 +9,14 @@ El [[Transistor bipolar de juntura (TBJ)|TBJ]] es un dispositivo [[Función R-li
 
 ![[Circuito de pequeña señal del transistor bipolar de juntura (TBJ).png]]
 
-Por lo tanto vamos a aproximarla usando el [[Serie de Taylor#Polinomio de Taylor|polinomio de Taylor]] de primer orden $$ i_C(V_{BE} + v_{be}) \simeq i_C(V_{BE}) + \frac{\partial i_C(v_{BE})}{\partial v_{BE}} \biggm|_{Q} \cdot (v_{BE} - V_{BE}) $$ donde $Q \equiv$ punto de polarización $V_{BE}$
+Por lo tanto vamos a aproximarla usando el [[Serie de Taylor#Polinomio de Taylor|polinomio de Taylor]] de primer orden $$
+i_C(V_{BE} + v_{be}, V_{CE} + v_{ce}) \simeq ~ I_C(V_{BE}, V_{CE})
++ \frac{\partial i_C}{\partial v_{BE}} \biggm|_{Q} v_{be} 
++ \frac{\partial i_C}{\partial v_{CE}} \biggm|_{Q} v_{ce} $$ $$
+i_B(V_{BE} + v_{be}, V_{CE} + v_{ce}) \simeq ~ I_B(V_{BE}, V_{CE})
++ \frac{\partial i_B}{\partial v_{BE}} \biggm|_{Q} v_{be} 
++ \frac{\partial i_B}{\partial v_{BC}} \biggm|_{Q} v_{bc} $$
+donde $Q \equiv$  punto de polarización  $(V_{BE}, V_{CE})$.
 #### Evaluando para [[Modo activo directo (MAD) del transistor bipolar de juntura (TBJ)|MAD]]
 ---
 $$ \begin{align}
