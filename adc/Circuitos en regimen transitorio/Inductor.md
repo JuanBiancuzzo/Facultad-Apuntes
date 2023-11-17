@@ -5,7 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-Un inductor consta de una bobina de alambre [[Conductor]]
+Un inductor consta de una bobina de alambre [[Conductor]], caracterizada por el parámetro $L$ este siendo la [[Autoinductancia|autoinductancia]].
 
 #### Relación con la [[Tensión|tensión]] y la [[Corriente eléctrica|corriente]]
 ---
@@ -15,7 +15,7 @@ Nos interesa conocer la relación entre la tensión y la corriente del elemento,
 	& & i(t) = \frac{1}{L}\int_{-\infty}^t v(\tau) ~d\tau  & @>>> 
 	\boxed{i(t) = \frac{1}{L} \int_{t_0}^t v(\tau) ~d\tau + i(t_0)}
 \end{CD} $$
-Notemos que la tensión sobre un inductor debe ser continua
+Notemos que la tensión sobre un inductor debe ser continua
 
 #### [[intro/Unidad 5/Potencia|Potencia]] instantánea
 ---
