@@ -13,7 +13,7 @@ Sean $X$, $Y$ dos [[Variable aleatoria continua]], una función de densidad de p
 
 #### Calculo de probabilidad en un intervalo
 ---
-Dado $X$, $Y$ dos [[Variable aleatoria continua]], se caclula la probabilidad en un intervalo $A$ como
+Dado $X$, $Y$ dos [[Variable aleatoria continua]], se calcula la probabilidad en un intervalo $A$ como
 $$ \mathbb{P}((X, Y) \in A) = \iint_A f_{X, Y}(x, y) dx dy $$
 
 ### Teorema

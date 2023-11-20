@@ -11,8 +11,8 @@ Este conjunto de instrucciones sólo puede ser ejecutado en [[Modo de operación
 
 | Instrucción | Descripción                                                    |
 | ----------- | -------------------------------------------------------------- |
-| LGDT        | Carga la [[Dirección de memoria\|dirección]] del GDT en GDTR   |
-| LLDT        | Carga la [[Dirección de memoria\|dirección]] del LDT en LDTR   |
+| LGDT        | Carga la [[Espacio de direcciones|dirección]] del GDT en GDTR   |
+| LLDT        | Carga la [[Espacio de direcciones|dirección]] del LDT en LDTR   |
 | LTR         | Carga el [[Registro de tarea]] en TR                           |
 | MOVCR       | Copia la información y la guarda en el [[Registro de control]] |
 | LMSW        | Carga un nuevo [[Estado de máquina]] en WORD                   |

@@ -15,7 +15,7 @@ int brk(void* addr);
 void *sbrk(intptr_t increment);
 ```
 
-El parámetro de `sbrk()` es la [[Dirección de memoria|dirección]] exacta donde el nuevo `break` debe estar. Por otro lado en `sbrk()` se pasa el incremento al cual se le sumará al viejo break para setear el nuevo break. Si se ejecuta `sbrk(0)` se obtiene la dirección del `break` actual.
+El parámetro de `sbrk()` es la [[Espacio de direcciones|dirección]] exacta donde el nuevo `break` debe estar. Por otro lado en `sbrk()` se pasa el incremento al cual se le sumará al viejo break para setear el nuevo break. Si se ejecuta `sbrk(0)` se obtiene la dirección del `break` actual.
 
 ##### Nota
 ---

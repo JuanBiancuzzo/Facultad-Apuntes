@@ -9,7 +9,7 @@ Cada proceso tiene un contexto bien definido que comprende la información neces
 1. User Address Space:
 	* Normalmente está dividido en varias áreas, text, data, [[Stack]], [[Heap]]
 2. Control Information:
-	* El [[Kernel]] utiliza dos estructuras principales para mantener información de control de un proceso, la [[User Area]] y la [[Estructura Proc]]. Cada proceso además tiene su propio [[Stack|kernel stack]] y mapas de traducción de [[Dirección de memoria|direcciones]]
+	* El [[Kernel]] utiliza dos estructuras principales para mantener información de control de un proceso, la [[User Area]] y la [[Estructura Proc]]. Cada proceso además tiene su propio [[Stack|kernel stack]] y mapas de traducción de [[Espacio de direcciones|direcciones]]
 3. Credentials:
 	* Las credenciales del proceso incluyen los groups IDs y user id, asociados con el
 4. Variables de entorno:

@@ -12,7 +12,7 @@ La estructura proc es la parte del espacio del proceso, q se mapea y es visible 
 El contenido de la estructura proc
 * Identificación
 	* Cada proceso tiene un identificador único o process ID (PID) y además pertenece a un determinado grupo de procesos (PGID)
-* Ubicación del mapa de [[Dirección de memoria|direcciones]] del [[Kernel]] del [[User Area|u area]] del proceso
+* Ubicación del mapa de [[Espacio de direcciones|direcciones]] del [[Kernel]] del [[User Area|u area]] del proceso
 * Estado actual del proceso
 * Un puntero hacia el siguiente proceso en el [[Scheduler|planificador]] y al anterior
 * Prioridad

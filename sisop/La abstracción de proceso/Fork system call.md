@@ -28,7 +28,7 @@ pid_t fork(void);
 	* El fork se llama una vez desde el [[Proceso|proceso]] padre, pero devuelve dos valores un valor al proceso padre y otro valor al proceso hijo
 * Ejecución [[Concurrencia|concurrente]]
 	* Ambos procesos se ejecutan en forma concurrente por lo cual no hay determinismo en el orden de ejecución
-* [[Dirección de memoria|Address space]] duplicados pero separados
+* [[Espacio de direcciones|Address space]] duplicados pero separados
 	* Si se pudiera ver el address space, del padre y el hijo, inmediatamente después de ejecutarse el fork, se vería que son identicos.
 * Archivos compartidos
 	* Los user [[File descriptor|file descriptor]] table es heredada con todos sus archivos en el mismo estado

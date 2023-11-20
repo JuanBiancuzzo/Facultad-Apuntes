@@ -5,4 +5,11 @@ capitulo: 3
 ---
 ### Definición
 ---
-Se traduce una [[Dirección de memoria virtual|dirección virtual]] (emitida por la [[Procesador|Procesador]]) en una [[Dirección de memoria|dirección física]] (la [[Memoria]]). Este mapeo se realiza por [[Hardware]], más específicamente por Memory Management Unit.
+Esta técnica transforma cada acceso a [[Memoria|memoria]], en la [[Virtualización de memoria|dirección virtual]] que es provista desde dentro del [[Espacio de direcciones|espacio de direcciones]] en una [[Espacio de direcciones|dirección física]] en la cual la información deseada se encuentra realmente almacenada.
+
+Entonces, en todos y por cada una de las referencias a memoria un [[Traducción de direcciones|mapeo]] es realizado por [[Hardware|hardware]], más específicamente por Memory Management Unit.
+
+Hay que denotar que para que funcione correctamente el mapeo el [[Sistema operativo|sistema operativo]] tiene que involucrarse en los puntos claves para 
+* Setear al hardware de forma correcta
+* Tener un control de la memoria, manteniendo información de en que lugar hay áreas libres y en que lugar hay un área en uso
+* Intervenir en forma criteriosa como mantener el control sobre toda la memoria usada
