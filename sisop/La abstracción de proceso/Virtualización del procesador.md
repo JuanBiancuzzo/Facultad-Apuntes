@@ -5,10 +5,10 @@ capitulo: 2
 ---
 ### Definición
 ---
-La virtualización de [[Procesador|procesamiento]] es la forma de virtualización más primitiva, consiste en dar la ilusión de la existencia de un único [[Procesador]] para cualquier [[Programa]] que requiera de su uso. De esta forma, se provee
+La virtualización de [[Procesador|procesamiento]] es la forma de virtualización más primitiva, consiste en dar la ilusión de la existencia de un único [[Procesador|procesador]] para cualquier [[Programa]] que requiera de su uso. De esta forma, se provee
 
 ##### Simplicidad en la programación
-* Cada [[Proceso]] cree que tiene toda la [[CPU]]
+* Cada [[Proceso]] cree que tiene toda la [[Procesador|Procesador]]
 * Cada proceso cree que todos los dispositivos le pertenecen
 * Distintos dispositivos parecen tener el mismo nivel de interaces
 * Las interfaces con los dispositivos son más potentes que el [[Hardware|bere metal]]

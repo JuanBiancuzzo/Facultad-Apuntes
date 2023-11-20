@@ -9,7 +9,7 @@ Dado que en [[Linux]] los [[Proceso|procesos]] son denominados tasks, los estado
 
 #### Task Running
 ---
-El [[Proceso]] está ejecutándose o peleando por [[CPU]] en la cola de run del [[Scheduler|planificador]]
+El [[Proceso]] está ejecutándose o peleando por [[Procesador|Procesador]] en la cola de run del [[Scheduler|planificador]]
 
 #### Task Interruptible
 ---

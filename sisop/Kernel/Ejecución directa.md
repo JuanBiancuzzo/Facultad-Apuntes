@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-La ejecución directa de un [[Programa]] significa correr un programa directamente en la [[CPU]]. 
+La ejecución directa de un [[Programa]] significa correr un programa directamente en la [[Procesador|Procesador]]. 
 
 ###### Ventajas
 La ejecución es rápida y simple

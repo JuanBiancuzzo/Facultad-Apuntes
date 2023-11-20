@@ -7,34 +7,46 @@ capitulo: 4
 ---
 Se estudiarán las políticas de planificación para un [[Sistema]]
 
-### Mono-Procesador
+#### Mono-Procesador
 ---
 Estas son las que posea un solo [[Procesador|procesador]] con un solo núcleo de procesamiento
 
-#### First In, First Out (FIFO)
+##### First In, First Out (FIFO)
 ---
 ![[Política de planificación First In, First Out (FIFO)#Definición]]
 
-#### Shortest Job First (SJF)
+##### Shortest Job First (SJF)
 ---
 ![[Política de planificación Shortest Job First (SJF)#Definición]]
 
-#### Shortest time-to-completion (STCF)
+##### Shortest time-to-completion (STCF)
 ---
 ![[Política de planificación Shortest time-to-completion (STCF)#Definición]]
 
-#### Round Robin (RR)
+##### Round Robin (RR)
 ---
 ![[Política de planificación Round Robin (RR)#Definición]]
 
-### Multi-Procesador
+#### Multi-Procesador
 ---
 Estas son aquellas que posea más de un [[Procesador|procesador]] y/o con más de un núcleo de procesamiento.
 
-#### Multi-Level Feedback Queue (MLFQ)
+##### Multi-Level Feedback Queue (MLFQ)
 ---
 ![[Política de planificación Multi-Level Feedback Queue (MLFQ)#Definición]]
 
-#### Proportional share
+##### Proportional share
 ---
 ![[Política de planificación Proportional share#Definición]]
+
+##### Cola única
+---
+![[Política de planificación Single Queue Multiprocessor Scheduling (SQMS)#Definición]]
+
+##### Colas multiples
+---
+![[Política de planificación Multi-Queue Multiprocessor Scheduling (MQMS)#Definición]]
+
+##### Completely Fair Scheduler (CSF)
+---
+![[Política de planificación Completely Fair Scheduler (CSF)#Definición]]

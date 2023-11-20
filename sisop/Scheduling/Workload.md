@@ -13,5 +13,5 @@ Los supuestos sobre los procesos o jobs que se encuentran en ejecución son:
 * Cada proceso se ejecuta la misma cantidad de tiempo
 * Todos los procesos llegan al mismo tiempo para ser ejecutados
 * Una vez que empieza un job sigue hasta completarse
-* Todos los jobs usan únicamente [[CPU|cpu]]
+* Todos los jobs usan únicamente [[Procesador|cpu]]
 * El tiempo de ejecución de cada job es conocido

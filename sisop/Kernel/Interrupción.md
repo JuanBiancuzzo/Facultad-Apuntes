@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-Una interrupción es una señal asincrónica enviada hacia el [[Procesador]] de que algún evento externo ha sucedido y pueda requerir de la atención del mismo.
+Una interrupción es una señal asincrónica enviada hacia el [[Procesador|procesador]] de que algún evento externo ha sucedido y pueda requerir de la atención del mismo.
 
 El procesador está continuamente chequeando por si una interrupción se dispara. Si así es, este completa o detiene cualquier instrucción que se esté ejecutando y en vez de ejecutar la siguiente instrucción, el procesador guarda todo el [[Contexto del proceso|contexto]] en el que se estaba ejecutando la instrucción y comienza a ejecutar el manejador de esa interrupción en el [[Kernel]].
 

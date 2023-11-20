@@ -16,7 +16,7 @@ capitulo: 2
 * Los archivos abiertos
 * Las señales pendientes
 * Datos internos del [[Kernel]]
-* El estado completo del [[Procesador]]
+* El estado completo del [[Procesador|procesador]]
 * Un espacio de [[Dirección de memoria|direcciones de memoria]]
 * Uno o más [[Thread|hijos de ejecución]]
 
