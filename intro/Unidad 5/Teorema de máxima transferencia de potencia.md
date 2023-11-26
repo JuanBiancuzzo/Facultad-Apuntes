@@ -61,7 +61,7 @@ P_\text{salida} &= P_\text{carga} = \frac{V_\text{Th}^2}{4 \cdot R_\text{Th}} \\
 P_\text{entrada} &= P_\text{salida} + P_\text{perdida} = \frac{V_\text{Th}^2}{4 \cdot R_\text{Th}} + \frac{V_\text{Th}^2}{4 \cdot R_\text{Th}} \\
 \end{array} \right.
 $$
-Entonces, podemos definir al [[Rendimiento]] como:
+Entonces, podemos definir al [[Rendimiento en potencia]] como:
 $$
 \begin{align}
 \eta = \frac{P_\text{salida}}{P_\text{entrada}} \cdot 100 \%

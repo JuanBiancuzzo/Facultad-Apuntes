@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "",
+  "search": "-file:.png",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -130,6 +130,6 @@
   "repelStrength": 9.91666666666667,
   "linkStrength": 1,
   "linkDistance": 220,
-  "scale": 0.10572990756016307,
+  "scale": 0.08615926719920007,
   "close": true
 }

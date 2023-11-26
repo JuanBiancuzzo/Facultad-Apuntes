@@ -2,5 +2,14 @@
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",
   "promptDelete": false,
-  "spellcheckLanguages": null
+  "spellcheckLanguages": null,
+  "userIgnoreFilters": [
+    "dispo/Diodo de Juntura PN/img/",
+    "dispo/Física de semiconductores/img/",
+    "dispo/Transistor MOSFET/",
+    "dispo/Juntura MOS/img/",
+    "dispo/Amplificador emisor y source común/img/",
+    "dispo/Juntura PN/img/",
+    "dispo/Transistor bipolar de juntura/img/"
+  ]
 }
