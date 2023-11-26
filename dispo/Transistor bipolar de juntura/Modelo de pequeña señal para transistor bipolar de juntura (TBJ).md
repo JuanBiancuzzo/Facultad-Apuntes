@@ -38,10 +38,10 @@ $$ i_c = \frac{\partial i_C}{\partial v_{BE}} \biggm|_{Q}  v_{be} + \frac{\parti
 $$ i_b = \frac{\partial i_B}{\partial v_{BE}} \biggm|_{Q} v_{be} + \frac{\partial i_B}{\partial v_{BC}} \biggm|_{Q} v_{bc} = g_\pi v_{be} ~ + ~ g_\mu v_{be} $$
 
 Definimos:
-* $g_m \equiv$ [[Transconductancia]] $[g_m] = S$
+* $g_m \equiv$ [[Transconductancia para transistor bipolar de juntura (TBJ)|transconductancia]] $[g_m] = S$
 * $g_o \equiv$ [[Conductancia de colector|Conductancia de salida o de colector]] $[g_0] = S$
 * $g_\pi \equiv$ [[Conductancia de base|Conductancia de entrada o de base]] $[g_\pi] = S$
-* $g_\mu \equiv$ [[Conductancia de realimentación]] $[g_\mu] = S$
+* $g_\mu \equiv$ [[Conductancia de realimentación|Conductancia de realimentación]] $[g_\mu] = S$
 
 Produciendo el circuito equivalente
 ![[Circuito equivalente de resistencias de pequeña señal del transistor bipolar de juntura.png]]
