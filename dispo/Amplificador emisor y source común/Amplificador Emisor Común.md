@@ -23,5 +23,15 @@ Donde se tiene
 * $A_{vo} = \frac{v_{out}}{v_{in}} < 0$ la salida está en contrafase con la entrada
 * $|A_v| = \left| \frac{v_{out}}{v_{in}} \right| > 1$, si el amplificador está bien diseñado
 
+#### Calculo de parámetros
+---
+Usando el [[Modelo de pequeña señal para transistor bipolar de juntura (TBJ)#Modelo para bajas frecuencias|modelo de pequeña señal para baja frecuencia]] y pasivando las [[Fuente de tensión|fuentes de tensión continuas]], tendremos
 
+![[Amplificador emisor común con modelo de pequeña señal.png]]
+
+Esto se puede pensar como los parámetros de un [[Cuadripolo|cuadripolo]].
+
+##### Ganancia de tensión $A_{vo}$
+---
+La ganancia de tensión $A_{vo}$ se define sin carga conectada a la salida,
 
