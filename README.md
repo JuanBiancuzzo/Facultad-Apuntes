@@ -10,7 +10,7 @@ Un listado de materias y su estado actual.
 
 | Materia                                  | Estado                             |
 | ---------------------------------------- | ---------------------------------- |
-| Análisis de circuitos                    | Cursando                           |
+| Análisis de circuitos                    | Terminado                          | 
 | Algebra 2                                | Falta terminar de pasar el resumen |
 | Análisis 2                               | Falta terminar de pasar el resumen |
 | Análisis 3                               | Terminado                          |
