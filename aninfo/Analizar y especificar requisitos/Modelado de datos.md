@@ -9,7 +9,7 @@ Se tiene 3 comunidades relacionadas, pero con perspectivas diferentes
 
 #### Diseño de bases de datos
 * Trabajan en el espacio de la solución 
-* Preocupados por el [[Modelo]] lógico de la [[Base de datos]]
+* Preocupados por el [[Modelo]] lógico de la [[Base de datos|base de datos]]
 
 #### [[Modelado de dominio|Modelado conceptual]] de datos
 * Trabajan en el espacio del problema

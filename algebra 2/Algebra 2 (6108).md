@@ -1,7 +1,8 @@
 ---
-cuatri: 23C1
-estado: terminado
-plan: "2009"
+cuatri: 21C2
+estado: en-proceso
+plan: "1986"
+codi: "6108"
 ---
 ### Apuntes
 ---

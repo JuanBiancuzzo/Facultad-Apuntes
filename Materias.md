@@ -8,6 +8,10 @@ function nombre_cuatrimestre(cuatrimestre) {
 	return cuatri + " cuatrimestre del 20" + anio;
 }
 
+function nombre_materia(materia) {
+	return materia.file.name.split("(")[0];
+}
+
 let materiasXcuatri = dv.pages()
 	.where(pagina => {
 		return pagina.cuatri;
@@ -22,11 +26,12 @@ let materiasXcuatri = dv.pages()
 	}, 'desc');
 
 for (let cuatri of materiasXcuatri) {
-	dv.table([nombre_cuatrimestre(cuatri), "Estado", "Plan"], cuatri.rows.map(materia => {
-		let nombre = materia.file.name;
+	dv.table([nombre_cuatrimestre(cuatri), "Código", "Estado", "Plan"], cuatri.rows.map(materia => {
+		let nombre = nombre_materia(materia);
 		let path = materia.file.path;
 		return [
 			nombre + " [[" + path + "|?]]",
+			materia.codigo,
 			materia.estado,
 			materia.plan
 		]

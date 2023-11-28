@@ -8,24 +8,25 @@ Cualquier corrección/ampliación de los contenidos en este proyecto, por favor 
 ---
 Un listado de materias y su estado actual.
 
-| Materia                                  | Estado                             |
-| ---------------------------------------- | ---------------------------------- |
-| Análisis de circuitos                    | Terminado                          | 
-| Algebra 2                                | Falta terminar de pasar el resumen |
-| Análisis 2                               | Falta terminar de pasar el resumen |
-| Análisis 3                               | Terminado                          |
-| Análisis de la información               | Cursando                           |
-| Dispositivos semiconductores             | Cursando                           |
-| Estructura del computador                | Falta escribir sobre el Murdocca   |
-| Física 1                                 | Falta pasar el resumen             |
-| Física 2                                 | Falta pasar el resumen             |
-| Física 3                                 | Falta pasar el resumen             |
-| Introducción a la Ingeniería electrónica | Terminado                          |
-| Análisis numérico                        | Falta pasar el resumen             |
-| Probabilidad y estadística               | Falta capítulo 1                   |
-| Seguridad ambiental y del trabajo        | Terminado                          |
-| Sistemas operativos                      | Cursando                           |
-| Taller de programación                   | Escribir sobre el libro de rust    |
+| Materia                                                                                                  | Estado                             |
+| -------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| [Análisis de circuitos](Análisis%20de%20circuitos%20(6606).md)                                    | Terminado                          |
+| [Algebra 2](Algebra%202%20(6108).md)                                                                     | Falta terminar de pasar el resumen |
+| [Análisis 2](Análisis%202%20(6103).md)                                                                   | Falta terminar de pasar el resumen |
+| [Análisis 3](Análisis%203%20(6110).md)                                                            | Terminado                          |
+| [Análisis de la información](Análisis%20de%20la%20información%20(7509).md)                        | Cursando                           |
+| [Dispositivos semiconductores](Dispositivos%20semiconductores%20(8603).md)                        | Cursando                           |
+| [Estructura del computador](Estructura%20del%20computador%20(6670).md)                            | Falta escribir sobre el Murdocca   |
+| [Física 1](Física%201%20(6201).md)                                                                       | Falta pasar el resumen             |
+| [Física 2](Física%202%20(6203).md)                                                                | Falta pasar el resumen             |
+| [Física 3](Física%203%20(8203).md)                                                                | Falta pasar el resumen             |
+| [Introducción a la Ingeniería electrónica](Introducción%20a%20la%20ingeniería%20electronica%20(8602).md) | Terminado                          |
+| [Análisis numérico](Análisis%20numérico%20(7512).md)                                              | Falta pasar el resumen             |
+| [Organización de datos](Organización%20de%20datos%20(7506).md)                                    | Falta pasar el resumen             |
+| [Probabilidad y estadística](Probabilidad%20y%20estadística%20(6109).md)                          | Falta capítulo 1                   |
+| [Seguridad ambiental y del trabajo](Seguridad%20ambiental%20y%20del%20trabajo%20(9704).md)        | Terminado                          |
+| [Sistemas operativos](Sistemas%20operativos%20(7508).md)                                          | Cursando                           |
+| [Taller de programación](Taller%20de%20programación%20(9508).md)                                  | Escribir sobre el libro de rust    |
  
 ##### Colaboradores
 ---

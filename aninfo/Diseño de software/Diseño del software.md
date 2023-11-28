@@ -29,7 +29,7 @@ Definición de la arquitectura, los componentes y las [[Interfaz de usuario (UI)
 	* Diálogo
 * Datos
 	* Archivos
-	* [[Base de datos]]
+	* [[Base de datos|Base de datos]]
 * Colaboración
 	* Componentes que interactúan para implementar el comportamiento identificado durante el [[Análisis de requisitos|análisis]] y [[Especificación de requisitos|especificación]]
 

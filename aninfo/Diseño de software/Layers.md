@@ -21,4 +21,4 @@ Esta capa se encarga de obtener la información que debe mantenerse a lo largo d
 
 #### Capa de datos
 ---
-Esta capa se encarga de mantener los datos, como por medio de una [[Base de datos]]
+Esta capa se encarga de mantener los datos, como por medio de una [[Base de datos|base de datos]]

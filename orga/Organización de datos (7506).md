@@ -1,7 +1,8 @@
 ---
-cuatri: 23C2
-estado: cursando
-plan: "2009"
+cuatri: 23C1
+estado: en-proceso
+plan: "1986"
+codigo: "7506"
 ---
 ### Apuntes
 ---

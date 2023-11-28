@@ -1,7 +1,8 @@
 ---
-cuatri: 21C2
-estado: en-proceso
+cuatri: 23C2
+estado: cursando
 plan: "1986"
+codigo: "7508"
 ---
 ### Apuntes
 ---

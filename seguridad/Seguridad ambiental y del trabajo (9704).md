@@ -1,7 +1,8 @@
 ---
-cuatri: 23C2
-estado: cursando
-plan: "1986"
+cuatri: 23C1
+estado: terminado
+plan: "2009"
+codigo: "9704"
 ---
 ### Apuntes
 ---

@@ -5,3 +5,4 @@ capitulo: 10
 ---
 ### Definición
 ---
+[[Archivo|Archivos]] y [[Base de datos|base de datos]]

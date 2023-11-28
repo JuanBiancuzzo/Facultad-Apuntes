@@ -1,7 +1,8 @@
 ---
-cuatri: 22C2
-estado: terminado
+cuatri: 23C2
+estado: cursando
 plan: "2009"
+codigo: "8603"
 ---
 ### Apuntes
 ---

@@ -1,7 +1,8 @@
 ---
-cuatri: 23C1
-estado: en-proceso
+cuatri: 22C2
+estado: terminado
 plan: "1986"
+codigo: "6110"
 ---
 ### Apuntes
 ---

@@ -1,7 +1,8 @@
 ---
-cuatri: 22C2
-estado: en-proceso
-plan: "2009"
+cuatri: 23C2
+estado: terminado
+plan: "1986"
+codigo: "6606"
 ---
 ### Apuntes
 ---

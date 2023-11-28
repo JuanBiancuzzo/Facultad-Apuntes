@@ -1,7 +1,8 @@
 ---
-cuatri: 23C2
-estado: terminado
+cuatri: 23C1
+estado: en-proceso
 plan: "2009"
+codigo: "9508"
 ---
 ### Apuntes
 ---
