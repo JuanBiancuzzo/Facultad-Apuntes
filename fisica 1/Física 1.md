@@ -1,6 +1,7 @@
 ---
 cuatri: 21C1
 estado: en-proceso
+plan: "1986"
 ---
 ### Apuntes
 ---

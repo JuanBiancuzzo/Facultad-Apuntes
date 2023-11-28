@@ -22,12 +22,13 @@ let materiasXcuatri = dv.pages()
 	}, 'desc');
 
 for (let cuatri of materiasXcuatri) {
-	dv.table([nombre_cuatrimestre(cuatri), "Estado"], cuatri.rows.map(materia => {
+	dv.table([nombre_cuatrimestre(cuatri), "Estado", "Plan"], cuatri.rows.map(materia => {
 		let nombre = materia.file.name;
 		let path = materia.file.path;
 		return [
 			nombre + " [[" + path + "|?]]",
-			materia.estado
+			materia.estado,
+			materia.plan
 		]
 	}));
 	dv.el("br", "")

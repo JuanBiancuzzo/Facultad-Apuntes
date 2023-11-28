@@ -1,6 +1,7 @@
 ---
 cuatri: 23C2
 estado: cursando
+plan: "1986"
 ---
 ### Apuntes
 ---

@@ -1,6 +1,7 @@
 ---
 cuatri: 22C2
 estado: terminado
+plan: "1986"
 ---
 ### Apuntes
 ---
