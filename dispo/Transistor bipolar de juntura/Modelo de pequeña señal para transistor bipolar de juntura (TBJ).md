@@ -22,7 +22,7 @@ donde $Q \equiv$  punto de polarización  $(V_{BE}, V_{CE})$.
 ---
 El error que cometemos entre el valor estimado de señal $i_c(t)$ y el valor real $i_C(t) - I_C$ debe ser pequeño. Al igual que el [[Modelo de pequeña señal para diodo]], a temperatura ambiente se obtiene $$ v_{be} \approx 5.2~mV $$ donde en la práctica se tolera $$ |v_{be}| < 10~mV $$
 
-#### Modelo para bajas frecuencias
+#### [[Modelo|Modelo]] para bajas frecuencias
 ---
 Generalizamos la idea de linealización para todas las corrientes y todas las señales aplicadas sobre cualquiera de las fuentes de polarización
 
@@ -46,7 +46,7 @@ Definimos:
 Produciendo el circuito equivalente
 ![[Circuito equivalente de resistencias de pequeña señal del transistor bipolar de juntura.png]]
 
-#### Modelo para altas frecuencias
+#### [[Modelo|Modelo]] para altas frecuencias
 ---
 Generalizamos la idea de linealización para todas las corrientes y todas las señales aplicadas sobre cualquiera de las fuentes de polarización. Se aplica las [[Capacidad de juntura|capacitancias de juntura]] y la [[Capacidad de difusión|capacitancia de difusión]].
 
