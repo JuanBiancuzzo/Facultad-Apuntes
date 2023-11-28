@@ -1,0 +1,49 @@
+---
+dia: 2023-11-28
+materia: aninfo
+capitulo: 10
+---
+### Definición
+---
+Una base de datos es una colección ordenada de [[Dato|datos]] administrada por un [[Sistema|sistema]] de gestión
+
+#### Transformación del [[Modelado de dominio|modelo de dominio]] a la base de datos
+---
+![[Transformación de un objeto del modelo de dominio a una base de datos relacional.png]]
+
+##### Atributos multivaluados
+---
+![[Transformación atributos multivaluados a una base de datos relacional.png]]
+
+##### Relaciones 1 a 1
+---
+![[Transformación relación 1 a 1 a una base de datos relacional.png]]
+
+##### Relaciones 1 a 0..*
+---
+![[Transformación relación 1 a 0..muchos a una base de datos relacional.png]]
+
+##### Relación 0..* a 0..*
+---
+![[Transformación relación 0..muchos a 0..muchos a una base de datos relacional.png]]
+
+##### Recursivas 0..1 a 0..1
+---
+![[Transformación recursivas 0..1 a 0..1 a una base de datos relacional.png]]
+
+##### Recursivas 0..1 a 0..*
+---
+![[Transformación recursivas 0..1 a 0..muchos a una base de datos relacional.png]]
+
+##### Recursividad muchos a muchos
+---
+![[Transformación recursivas muchos a muchos a una base de datos relacional.png]]
+
+##### Clases asociativas
+---
+![[Transformación clases asociativas a una base de datos relacional.png]]
+
+##### Herencia
+---
+![[Transformación herencia a una base de datos relacional.png]]
+
