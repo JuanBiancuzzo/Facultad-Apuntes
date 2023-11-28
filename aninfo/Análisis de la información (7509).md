@@ -1,6 +1,6 @@
 ---
 cuatri: 23C2
-estado: cursando
+estado: terminado
 plan: "1986"
 codigo: "7509"
 ---

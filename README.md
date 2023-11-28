@@ -10,11 +10,11 @@ Un listado de materias y su estado actual.
 
 | Materia                                                                                                        | Estado                             |
 | -------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| [Análisis de circuitos](adc/Análisis%20de%20circuitos%20(6606).md)                                             | Terminado                          | 
+| [Análisis de circuitos](adc/Análisis%20de%20circuitos%20(6606).md)                                             | Terminado                          |
 | [Algebra 2](algebra%202/Algebra%202%20(6108).md)                                                               | Falta terminar de pasar el resumen |
 | [Análisis 2](analisis%202/Análisis%202%20(6103).md)                                                            | Falta terminar de pasar el resumen |
 | [Análisis 3](analisis%203/Análisis%203%20(6110).md)                                                            | Terminado                          |
-| [Análisis de la información](aninfo/Análisis%20de%20la%20información%20(7509).md)                              | Cursando                           |
+| [Análisis de la información](aninfo/Análisis%20de%20la%20información%20(7509).md)                              | Terminado                          |
 | [Dispositivos semiconductores](dispo/Dispositivos%20semiconductores%20(8603).md)                               | Cursando                           |
 | [Estructura del computador](estructura/Estructura%20del%20computador%20(6670).md)                              | Falta escribir sobre el Murdocca   |
 | [Física 1](fisica%201/Física%201%20(6201).md)                                                                  | Falta pasar el resumen             |
