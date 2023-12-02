@@ -13,7 +13,7 @@ Es un [[Archivo|archivo]] que posee toda la información de como construir un [[
 * Instrucciones de [[Lenguaje de máquina]]
 	* Almacena el código del algoritmo del programa
 * Dirección del punto de entrada del programa
-	* Identifica la [[Espacio de direcciones|dirección]] la de instrucción con la cual la ejecución del programa debe iniciar
+	* Identifica la [[Dirección de memoria|dirección]] la de instrucción con la cual la ejecución del programa debe iniciar
 * Datos
 	* El programa contiene valores de los datos con los cuales se deben inicializar variables, valores de constantes y de literales utilizadas en el programa
 * Símbolos y tablas de Realocación

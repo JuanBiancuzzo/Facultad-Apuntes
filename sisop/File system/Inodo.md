@@ -12,6 +12,6 @@ Un inodo simplemente es referido por un número llamado `inumbre` que sería lo 
 ![[Inode table.png]]
 
 Para leer el inodo número $32$, el sistema de archivos debe
-1. Calcular el offset en la regio de inodos `32 * sizeof(inode) = 81922` 
+1. Calcular el offset en la región de inodos `32 * sizeof(inode) = 81922` 
 2. Sumarlo a la dirección inicial de las inode table en el disco o sea $12 ~ Kb + 8192 ~ b$
 3. Llegar a la dirección en el disco deseada que es la $20 ~ Kb$

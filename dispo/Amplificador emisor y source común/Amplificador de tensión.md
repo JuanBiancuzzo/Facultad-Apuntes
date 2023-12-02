@@ -26,7 +26,7 @@ El [[Amplificador operacional|amplificador]] debe tener relación lineal de tran
 ![[Resistencia de entrada en un amplificador simplificado.png]]
 
 $$ v_{in} = \frac{R_{in}}{R_s + R_{in}} ~ v_s < v_s $$
-Para que $v_{in}$ tienda a $v_s$, $R_{in}$ tiende a infinito, es decir $$ v_{in} \xrightarrow[y \to 5]{} v_s $$
+Para que $v_{in}$ tienda a $v_s$, $R_{in}$ tiende a infinito, es decir $$ v_{in} \xrightarrow[R_{in} \to \infty]{} v_s $$
 ##### Resistencia de salida ($R_{out}$) baja
 ---
 ![[Resistencia de salida en un amplificador simplificado.png]]

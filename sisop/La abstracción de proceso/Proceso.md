@@ -17,7 +17,7 @@ capitulo: 2
 * Las señales pendientes
 * Datos internos del [[Kernel]]
 * El estado completo del [[Procesador|procesador]]
-* Un espacio de [[Espacio de direcciones|direcciones de memoria]]
+* Un espacio de [[Dirección de memoria|direcciones de memoria]]
 * Uno o más [[Thread|hijos de ejecución]]
 
 #### API's
