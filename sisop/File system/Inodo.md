@@ -7,7 +7,7 @@ capitulo: 6
 ---
 Esta es una de las estructuras almacenadas en el disco más importantes. Casi todos los [[File system|sistemas de archivos]] [[Unix|unix-like]] son así. Su nombre, probablemente provenga de los viejos sistemas [[Unix]] en los que estos se almacenaban en un arreglo, y este arreglo estaba indexado de forma de como acceder a un inodo en particular.
 
-Un inodo simplemente es referido por un número llamado `inumbre` que sería lo que hemos llamado el nombre subyacente en el disco de un archivo. En este sistema de archivos y en varios otros, dado un inumber se puede saber directamente en que parte del disco se encuentra el inodo correspondiente
+Un inodo simplemente es referido por un número llamado `inumbre` que sería lo que hemos llamado el nombre subyacente en el disco de un archivo. En este sistema de archivos y en varios otros, dado un `inumber` se puede saber directamente en que parte del disco se encuentra el inodo correspondiente
 
 ![[Inode table.png]]
 
