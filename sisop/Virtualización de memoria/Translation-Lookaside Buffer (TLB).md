@@ -29,7 +29,7 @@ Para una ejecución correcta y [[Protección de memoria|segura]] de un [[Program
 
 ##### [[Políticas de planificación|Context switch]]
 ---
-Las [[Dirección de memoria virtual|direcciones virtuales]] del viejo [[Proceso|proceso]] ya no son más válidas, y no deben ser válidas, para ell nuevo proceso. De otra forma, el nuevo proceso sería capaz de [[Read system call|leer]] las [[Dirección de memoria|direcciones]] del viejo proceso. 
+Las [[Dirección de memoria virtual|direcciones virtuales]] del viejo [[Proceso|proceso]] ya no son más válidas, y no deben ser válidas, para el nuevo proceso. De otra forma, el nuevo proceso sería capaz de [[Read system call|leer]] las [[Dirección de memoria|direcciones]] del viejo proceso. 
 
 Frente a un context switch, se necesita descartar el contenido de TLB. Este approach se denomina flush de TLB. Debido a que perder esta información no es útil, los [[Procesador|procesadores]] agregan el [[Getpid system call|id del proceso]] que produce cada traslación
 

@@ -23,6 +23,7 @@ La resistencia de la piel depende de varios factores:
 #### Resistencia del cuerpo humano
 ---
 Varía con [[Tensión eficaz|tensión]] aplicada, edad, tipo de piel, estado de la piel
+
 | Estado de la piel | Tensión aplicada $[V]$ | Resistencia obtenida $[Ohm]$ |
 | ----------------- | ---------------------- | ---------------------------- |
 | Piel seca         | 24                     | $10.000$                     |

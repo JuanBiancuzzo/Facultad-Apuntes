@@ -23,7 +23,24 @@ Este modelo se caracteriza por su
 El [[Amplificador operacional|amplificador]] debe tener relación lineal de transferencia entrada-salida. Por lo que la señal de salida es una réplica sin distorsión de la señal de entrada. $$ v_{out} = A_v ~ v_{in} $$
 ##### Resistencia de entrada ($R_{in}$) elevada
 ---
-![[Resistencia de entrada en un amplificador simplificado.png]]
+```tikz 
+\usepackage{circuitikz} 
+\begin{document} 
+\begin{circuitikz}[american, voltage shift=0.5] 	
+	\coordinate (O) at (0, 0);
+
+    \draw (O) to [sV, l_ = $v_s$] ++ (0, 3)
+    to [R, l_ = $R_S$, i^ = $i_{in}$] ++ (3, 0)
+    to ++ (3, 0)
+    to [R, l_ = $R_{in}$] ++ (0, -3)
+    to (O);
+
+    \draw (3.5, 3) to[open, v^ =$v_{in}$, o-o] ++ (0, -3);
+
+	\draw[thick] (7, 4) -- (4.5, 4) -- (4.5, -1) -- (7, -1);
+\end{circuitikz} 
+\end{document} 
+```
 
 $$ v_{in} = \frac{R_{in}}{R_s + R_{in}} ~ v_s < v_s $$
 Para que $v_{in}$ tienda a $v_s$, $R_{in}$ tiende a infinito, es decir $$ v_{in} \xrightarrow[R_{in} \to \infty]{} v_s $$

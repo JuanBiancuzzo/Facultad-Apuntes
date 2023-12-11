@@ -23,3 +23,10 @@ Esto se puede pensar como los [[Parámetros híbridos de un cuadripolo|parámetr
 ---
 La ganancia de tensión $A_{vo}$ se define sin carga conectada a la salida $$ A_{vo} = \frac{v_{out}}{v_{in}} \biggm|_{i_{out} = 0} $$
 Considerando $v_{in} = v_{gs}$ por lo que la ganancia de tensión sin carga es $$ A_{vo} = -g_m (r_0 // R_C) $$ donde $g_m$ es la [[Transconductancia para transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|transconductancia]], y $r_0$ es [[Conductancia del drain|resistencia de salida o del drain]].
+
+##### [[Resistencia|Resistencia]] de entrada $R_{in}$
+---
+La resistencia de entrada $R_{in}$ se define $$ R_{in} = \frac{v_{in}}{i_{in}} $$
+La [[Tensión|tensión]] $v_{in}$ es aplicada directamente a $v_{gs}$, entonces se enciende el generador controlado. 
+
+Sin embargo, la [[Corriente eléctrica|corriente]] $g_m ~ v_{gs}$ no influye en la corriente de entrada $i_{in}$

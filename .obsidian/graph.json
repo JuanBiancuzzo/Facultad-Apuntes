@@ -1,11 +1,11 @@
 {
-  "collapse-filter": false,
+  "collapse-filter": true,
   "search": "-file:.png",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": false,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "path:\"algebra 2\"",
@@ -120,7 +120,7 @@
       }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
@@ -130,6 +130,6 @@
   "repelStrength": 9.91666666666667,
   "linkStrength": 1,
   "linkDistance": 220,
-  "scale": 0.24480696842376073,
+  "scale": 0.21747469148886053,
   "close": true
 }

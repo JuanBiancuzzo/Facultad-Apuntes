@@ -51,7 +51,43 @@ El generador controlado no se enciende, recordando que $v_{in} = v_{be}$, por lo
 ---
 Se puede definir la ganancia de tensión del [[Amplificador de tensión|amplificador]] en funcionamiento. Esto implica tener tanto la fuente de señal ($v_s$ y $R_s$) como la carga conectadas ($R_L$) a la entrada y la salida $$ A_{vs} = \frac{v_{out}}{v_s} \biggm|_{i_{out} \ne 0} $$
 Analizando el modelo macroscópico del amplificador 
-![[Amplificador operacional simplificado.png]]
+
+```tikz 
+\usepackage{circuitikz} 
+\begin{document} 
+\begin{circuitikz}[american, voltage shift=0.5] 	
+	\coordinate (O) at (0, 0);
+    \coordinate (A) at (8, 0);
+
+    \draw (O) to [sV, l_ = $v_s$] ++ (0, 3)
+    to [R, l_ = $R_S$, i^ = $i_{in}$] ++ (3, 0)
+    to ++ (3, 0)
+    to [R, l_ = $R_{in}$] ++ (0, -3)
+    to (O);
+
+    \draw (3.5, 0) to[open, v=$v_{in}$, o-o] ++ (0, 3);
+
+    \draw (A) to ++ (6, 0)
+    to [R, l_ = $R_{L}$] ++ (0, 3)
+    to ++ (-1, 0)
+    to [short, i_ = $i_{out}$] ++ (-2, 0)
+    to [R, l_ = $R_{out}$] ++ (-3, 0)
+    to [sV, l = $A_{vo} ~ v_{in}$] (A);
+
+    \draw (11.25, 0) to[open, v=$v_{out}$, o-o] ++ (0, 3);
+
+    \draw [dashed, blue!50] (-1, -0.5) rectangle (3, 4);
+    \node[above = 2pt] (f) at (1, 4) {Fuente de señal};
+
+    \draw (4.5, -0.5) rectangle (10.5, 4);
+    \draw [dashed, blue!50] (4.25, -0.75) rectangle (10.75, 4.25);
+    \node[above = 2pt] (f) at (7.5, 4.25) {Amplificador};
+    
+    \draw [dashed, blue!50] (13.25, -0.5) rectangle (15, 3.5);
+    \node[above = 2pt] (f) at (14.25, 3.5) {Carga};
+\end{circuitikz} 
+\end{document} 
+```
 
 Tenemos que $$ v_{in} = v_s \frac{R_{in}}{R_{in} + R_s} \implies \frac{v_{in}}{v_s} = \frac{R_{in}}{R_{in} + R_s} $$
 Por lo tanto podemos calcular $$ v_{out} = A_{vo} v_{in} \frac{R_L}{R_{out} + R_L} \implies \frac{v_{out}}{v_{in}} = A_{vo} \frac{R_L}{R_{out} + R_L} $$
