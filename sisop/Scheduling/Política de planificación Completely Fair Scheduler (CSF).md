@@ -13,7 +13,7 @@ Para lograr la meta de ser eficiente, CFS, intenta gastar muy poco tiempo tomand
 ---
 Mientras que los [[Scheduler|planificadores]] tradicionales se basan alrededor del concepto de un [[Time sharing|time-slice]] fijo, CSF opera de forma un poco diferente. Su objetivo es sencillo, dividir de forma justa la [[Procesador|Procesador]] entre todos los [[Proceso|procesos]] que están compitiendo por ella. 
 
-Logra dividir la CPU mediante una simple técnica para contar llamada [[Vruntime|virtual runtime]]. A medida que un proceso se ejecuta este acumula [[Vruntime|vruntime]]. En el caso más básico cada vruntime de un proceso se incrementa con la misma tasa, en proporción al tiempo físico. Cuando una decisión de planificación ocurre, CFS seleccionará el proceso con menos vruntime para que sea el próximo en ser ejecutado.
+Logra dividir la [[Procesador|CPU]] mediante una simple técnica para contar llamada [[Vruntime|virtual runtime]]. A medida que un proceso se ejecuta este acumula [[Vruntime|vruntime]]. En el caso más básico cada vruntime de un proceso se incrementa con la misma tasa, en proporción al tiempo físico. Cuando una decisión de planificación ocurre, CFS seleccionará el proceso con menos vruntime para que sea el próximo en ser ejecutado.
 
 ##### Decisión de parar la ejecución
 ---

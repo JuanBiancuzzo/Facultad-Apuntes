@@ -49,8 +49,8 @@ Obviamente cada bitmap ocupa menos de $4 ~KB$, pero se utiliza un bloque por cad
 
 ##### Super bloque
 ---
-Se podrá observar que queda un único bloque libre en todo el disco. Este bloque es llamada Super bloque (S). El superbloque contiene la información de todo el file system, incluyendo:
-* Cantidad inodos
+Se podrá observar que queda un único bloque libre en todo el disco. Este bloque es llamada Super bloque (S). El superbloque contiene la información de todo el [[File system|file system]], incluyendo:
+* Cantidad [[Inodo|inodos]]
 * Cantidad de bloques
 * Donde comienza la tabla de inodos
 * Donde comienzan los bitmaps

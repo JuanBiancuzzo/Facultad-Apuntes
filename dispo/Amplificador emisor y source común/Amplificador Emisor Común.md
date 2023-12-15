@@ -26,6 +26,81 @@ Donde se tiene
 #### Calculo de parámetros
 ---
 Usando el [[Modelo de pequeña señal para transistor bipolar de juntura (TBJ)#Modelo Modelo para bajas frecuencias|modelo de pequeña señal para baja frecuencia]] y pasivando las [[Fuente de tensión|fuentes de tensión continuas]], tendremos
+```tikz
+\usepackage{circuitikz} 
+\begin{document} 
+\begin{circuitikz}[
+	american,  
+	scale = 0.8,
+    transform shape
+    straight voltages,
+] 	
+	\node[ground] at (0, 0) (Gs) {};
+
+    \draw (Gs.center) to [sV, l = $v_s$] (0, 3)
+    to [R, l_ = $R_s$, v^ = $i_{in}$] (2, 3)
+    to [short] (3, 3)
+    to [R, l = $R_{B1}$] (3, 0)
+    to [short, -*] (4.5, 0);
+\end{circuitikz}
+\end{document}
+```
+
+
+```tikz
+\usepackage{circuitikz} 
+\begin{document} 
+\begin{circuitikz}[
+	american, 
+	voltage shift=0.5, 
+	scale = 0.8,
+    transform shape
+] 	
+	\node[ground] at (0, 0) (Gs) {};
+    \node[ground] at (9, 0) (Ge) {};
+    \node[ground] at (18, 0) (Gl) {};
+
+    \draw (Gs.center) to [sV, l = $v_s$] (0, 3)
+    to [R, l_ = $R_s$, i^ = $i_{in}$] (2, 3)
+    to [short] (3, 3)
+    to [R, l = $R_{B1}$] (3, 0)
+    to [short, -*] (4.5, 0)
+    
+    (3, 3) to [short] (4.5, 3)
+    to [R, l = $R_{B1}$] (4.5, 0)
+    to [short] (Ge.center)
+    
+    (4.5, 3) to [short] (6, 3)
+    to [short, i^ = $i_b$] (7.5, 3)
+    to [R, l = $r_\pi$, -*] (7.5, 0);
+
+    \draw (Gl.center) to [R, l_ = $R_L$] (18, 3)
+    to [short, i_ = $i_{out}$] (16.5, 3)
+    to [short] (15.5, 3)
+    to [R, l_ = $R_{C1}$] (15.5, 0)
+    to [short] (Ge.center)
+    
+    (15.5, 3) to [R, l_ = $R_{C2}$] (12, 3)
+    to [short, i_ = $i_c$] (10.5, 3)
+    to [R, l = $r_o$, -*] (10.5, 0)
+    
+    (10.5, 3) to (9, 3)
+    to [isource, -o] node[above right =1pt] {$g_m ~ v_{be}$} (Ge.center)
+    node[above left] {$e$};
+        
+    
+    \draw (2.5, 3) to[open, v_ = $v_{in}$, o-] ++ (0, -3);
+	\draw [dashed, blue!70] (-1, -1) rectangle (2, 4);
+
+    \draw (16.5, 3) to[open, v_ = $v_{out}$, o-] ++ (0, -3);
+    
+    \draw (6, 0) to[open, v = $v_{be}$, o-o] ++ (0, 3)
+    node [above] {$b$};
+    \draw (12, 0) to[open, v = $v_{ce}$, o-o] ++ (0, 3)
+    node [above] {$c$};
+\end{circuitikz}
+\end{document}
+```
 
 ![[Amplificador emisor común con modelo de pequeña señal.png]]
 
