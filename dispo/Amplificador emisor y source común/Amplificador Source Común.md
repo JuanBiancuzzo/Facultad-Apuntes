@@ -29,4 +29,4 @@ Considerando $v_{in} = v_{gs}$ por lo que la ganancia de tensión sin carga es $
 La resistencia de entrada $R_{in}$ se define $$ R_{in} = \frac{v_{in}}{i_{in}} $$
 La [[Tensión|tensión]] $v_{in}$ es aplicada directamente a $v_{gs}$, entonces se enciende el generador controlado. 
 
-Sin embargo, la [[Corriente eléctrica|corriente]] $g_m ~ v_{gs}$ no influye en la corriente de entrada $i_{in}$
+Sin embargo, la [[Corriente eléctrica|corriente]] $g_m \times v_{gs}$ no influye en la corriente de entrada $i_{in}$ $$ i_{in} = i_{rg} + i_g $$

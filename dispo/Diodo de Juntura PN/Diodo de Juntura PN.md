@@ -10,7 +10,7 @@ La [[Juntura PN]] es un [[Diodo]]
 ![[Diodo de Juntura PN gráfico.png|300]]
 
 Al aplicar una [[Tensión]] ($V_D = V_{PN}$) al [[Diodo]] se modifica la condición de equilibrio y se observan dos consecuencias principales 
-* La [[Aproximación de vaciamiento#Polarización aplicada|región de vaiamiento aumenta o se reduce]]
+* La [[Aproximación de vaciamiento#Polarización aplicada|región de vaciamiento aumenta o se reduce]]
 * Circula [[Corriente eléctrica|corriente]]
 
 Podemos el porque en la [[Juntura PN con polarización]].

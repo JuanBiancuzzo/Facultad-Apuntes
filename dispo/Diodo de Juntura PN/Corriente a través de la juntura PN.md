@@ -73,23 +73,23 @@ Recordando que la tensión de juntura es $\displaystyle\phi_B = \frac{kT}{q} \ln
 \end{align} $$
 #### [[Corriente de difusión|Densidad de corriente de difusión]] en las regiones QNR
 ---
-La ecuación de difusión para [[Electrón|electrones]] en la región p-QNR $$ J_n = q D_N \frac{dn(x)}{dx} $$
+La ecuación de difusión para [[Electrón|electrones]] en la región p-QNR $$ J_n = q D_N^{(p)} \frac{dn(x)}{dx} $$
 Por la [[Aproximación de diodo corto]], podemos decir que la [[Modelo de enlace de Silicio#Concentración de Portador de carga portadores|concentración]] de [[Electrón|electrones]], $n(x)$, suponemos lineal. También por [[Condición de borde en una juntura PN|condiciones de borde]] sabemos que $$ n(x = -W_p) = n_0 = \frac{n_i^2}{N_a} ~~~~~ n(-x_p) = \frac{n_i^2}{N_a} \exp\left( \frac{q~v_D}{kT} \right) $$ donde $W_p$ es el ancho del [[Semiconductor]] del, en este caso, lado p
 
 ![[Concentración lineal de electrones en la región p-QNR con polarización.png]]
 
 Por lo que la derivada de la concentración de electrones queda $$ \frac{dn}{dx} = \frac{n_p(-x_p) - n_p(-W_p)}{-x_p + W_p} $$
 Dándonos una [[Densidad de corriente eléctrica|densidad de corriente de electrones]] $$ \begin{align} 
-	J_n &= qD_n~\frac{dn}{dx} = qD_n \frac{n_p(-x_p) - n_p(-W_p)}{W_p -x_p} \\
-	&= qD_n \frac{1}{W_p -x_p} ~ \left( \frac{n_i^2}{N_a} \exp\left( \frac{q~v_D}{kT} \right) - \frac{n_i^2}{N_a} \right) \\
-	J_n &= q \frac{n_i^2}{N_a} \frac{D_n}{W_p -x_p} ~ \left( \exp\left( \frac{q~v_D}{kT} \right) - 1 \right)
+	J_n &= qD_n^{(p)}~\frac{dn}{dx} = qD_n^{(p)} ~ \frac{n_p(-x_p) - n_p(-W_p)}{W_p -x_p} \\
+	&= qD_n^{(p)} \frac{1}{W_p -x_p} ~ \left( \frac{n_i^2}{N_a} \exp\left( \frac{q~v_D}{kT} \right) - \frac{n_i^2}{N_a} \right) \\
+	J_n &= q \frac{n_i^2}{N_a} \frac{D_n^{(p)}}{W_p -x_p} ~ \left( \exp\left( \frac{q~v_D}{kT} \right) - 1 \right)
 \end{align} $$
-De forma similar para los [[Hueco|huecos]] $$ J_p = q \frac{n_i^2}{N_d} \frac{D_p}{W_n -x_n} ~ \left( \exp\left( \frac{q~v_D}{kT} \right) - 1 \right) $$
+De forma similar para los [[Hueco|huecos]] $$ J_p = q \frac{n_i^2}{N_d} \frac{D_p^{(n)}}{W_n -x_n} ~ \left( \exp\left( \frac{q~v_D}{kT} \right) - 1 \right) $$
 
 #### Corriente total
 ---
-Sabemos que la [[Densidad de corriente eléctrica|densidad de corriente]] total sabemos que es $J = J_n + J_p$ por lo tanto $$ J(v_D) = q ~ n_i^2  \left( \frac{1}{N_a} \frac{D_n}{W_p -x_p} + \frac{1}{N_d} \frac{D_p}{W_n -x_n} \right) \left( \exp\left( \frac{q~v_D}{kT} \right) - 1 \right) $$
-Por lo que la corriente total es $$ i(v_D) = q ~ A ~ n_i^2  \left( \frac{1}{N_a} \frac{D_n}{W_p -x_p} + \frac{1}{N_d} \frac{D_p}{W_n -x_n} \right) \left( \exp\left( \frac{q~v_D}{kT} \right) - 1 \right) $$
+Sabemos que la [[Densidad de corriente eléctrica|densidad de corriente]] total sabemos que es $J = J_n + J_p$ por lo tanto $$ J(v_D) = q ~ n_i^2  \left( \frac{1}{N_a} \frac{D_n^{(p)}}{W_p -x_p} + \frac{1}{N_d} \frac{D_p^{(n)}}{W_n -x_n} \right) \left( \exp\left( \frac{q~v_D}{kT} \right) - 1 \right) $$
+Por lo que la corriente total es $$ i(v_D) = q ~ A ~ n_i^2  \left( \frac{1}{N_a} \frac{D_n^{(p)}}{W_p -x_p} + \frac{1}{N_d} \frac{D_p^{(n)}}{W_n -x_n} \right) \left( \exp\left( \frac{q~v_D}{kT} \right) - 1 \right) $$
 Que podemos reducir a $$ i_D(v_D) = I_0 \left( \exp\left( \frac{q~v_D}{kT} \right) - 1 \right) $$ donde $I_0$ reemplaza a la "constante" que lleva la corriente, llamada corriente de saturación inversa.
 
 La [[Condición de borde en una juntura PN|condición de contorno]] usada, es valida tanto para [[Convención de signos para la tensión de polarización#Polarización directa|polarización directa]] como para [[Convención de signos para la tensión de polarización#Polarización inversa|polarización inversa]] por lo que la ecuación es válida en directa y en inversa.

@@ -11,6 +11,7 @@ capitulo: 2
 4. El funcionamiento es a una temperatura tal que todos los [[Átomo|átomos]] de impurezas están ionizados
 5. Las [[Modelo de enlace de Silicio#Concentración de Portador de carga portadores|concentraciones de portadores]] en los límites de la región espacial de carga vienen dados en función del [[Potencial eléctrico|potencial electrostático]] de contacto
 6. Los contactos al final de la [[Impureza donora#Cantidad de dopante|región n]] y la [[Impureza aceptora#Cantidad de dopante|región p]] son [[Contacto óhmico|contactos perfectamente óhmicos]]. Por lo que la caída de [[Tensión]] entre sus extremos es cero
+
 ### Definición
 ---
 Teniendo una [[Juntura PN en equilibrio térmico|juntura PN en equilibrio]], tenemos las regiones de cuasi neutralidad (QNR's) tienen [[Neutralidad de carga]] por lo que 

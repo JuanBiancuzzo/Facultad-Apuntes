@@ -26,25 +26,6 @@ Donde se tiene
 #### Calculo de parámetros
 ---
 Usando el [[Modelo de pequeña señal para transistor bipolar de juntura (TBJ)#Modelo Modelo para bajas frecuencias|modelo de pequeña señal para baja frecuencia]] y pasivando las [[Fuente de tensión|fuentes de tensión continuas]], tendremos
-```tikz
-\usepackage{circuitikz} 
-\begin{document} 
-\begin{circuitikz}[
-	american,  
-	scale = 0.8,
-    transform shape
-    straight voltages,
-] 	
-	\node[ground] at (0, 0) (Gs) {};
-
-    \draw (Gs.center) to [sV, l = $v_s$] (0, 3)
-    to [R, l_ = $R_s$, v^ = $i_{in}$] (2, 3)
-    to [short] (3, 3)
-    to [R, l = $R_{B1}$] (3, 0)
-    to [short, -*] (4.5, 0);
-\end{circuitikz}
-\end{document}
-```
 
 
 ```tikz
