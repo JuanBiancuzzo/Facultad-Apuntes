@@ -75,5 +75,13 @@
       ],
       "key": "G"
     }
+  ],
+  "templater-obsidian:_template/Tikz - Template.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "T"
+    }
   ]
 }

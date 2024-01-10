@@ -28,11 +28,13 @@
     }
   ],
   "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
     "_template/Materia - Template.md",
     "_template/Plot function.md",
     "_template/Crear referencia.md",
-    "_template/Crear resumen.md"
+    "_template/Crear resumen.md",
+    "_template/Tikz - Template.md"
   ],
   "startup_templates": [
     ""
