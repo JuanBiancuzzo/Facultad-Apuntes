@@ -5,7 +5,7 @@ capitulo: 6
 ---
 ### Definición
 ---
-Dados $a_0, a_1, \cdots, a_{n-1} \in \mathbb{K}$ y partiendo del [[Operador derivacion]] se define como $L: C^\infty(\mathbb{R}, \mathbb{K}) \to C^\infty(\mathbb{R}, \mathbb{K})$ , como:
+Dados $a_0, a_1, \cdots, a_{n-1} \in \mathbb{K}$ y partiendo del [[Operador derivación]] se define como $L: C^\infty(\mathbb{R}, \mathbb{K}) \to C^\infty(\mathbb{R}, \mathbb{K})$ , como:
 
 $$ L = D^n + a_{n-1} D^{n-1} + \cdots + a_1 D + a_0 I$$
 

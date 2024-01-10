@@ -14,6 +14,6 @@ Con $T: \mathbb{V} \to \mathbb{W}$ tal que $T \in \mathbb{L}(\mathbb{V}, \mathbb
 ### Propiedad
 1. $$[T(V)]^{B_2} = [T]_{B_1}^{B_2} \cdot [v]^{B_1}$$
 
-2. ![[Nucleo de una transformacion lineal#Relacion con la matriz de la transformacion lineal]]
+2. ![[Núcleo de una transformación lineal#Relacion con la matriz de la transformacion lineal]]
 
-3. ![[Imagen de una transformacion lineal#Relacion con la matriz de la transformacion lineal]]
+3. ![[Imagen de una transformación lineal#Relacion con la matriz de la transformacion lineal]]
