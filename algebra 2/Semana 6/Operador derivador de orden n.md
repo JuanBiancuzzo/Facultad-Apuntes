@@ -5,7 +5,7 @@ capitulo: 6
 ---
 ### Definición
 ---
-Partiendo de [[Operador derivacion]], se define 
+Partiendo de [[Operador derivación]], se define 
 
 $$ D^n := D ~~ \circ ~~ D \circ ~~ \cdots ~~ \circ ~~ D$$
 

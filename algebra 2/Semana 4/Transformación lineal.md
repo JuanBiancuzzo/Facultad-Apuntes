@@ -18,7 +18,7 @@ Con $\mathbb{V}$ y $\mathbb{W}$ se denota como $\mathbb{L}(\mathbb{V}, \mathbb{W
 ![[Funcional lineal]]
 
 #### Subespacios de las transformaciones lineales
-![[Imagen de una transformacion lineal]] ![[Nucleo de una transformacion lineal]] ![[Preimagen de una transformacion linea]]
+![[Imagen de una transformación lineal]] ![[Núcleo de una transformación lineal]] ![[Preimagen de una transformación lineal]]
 
 #### Caracterizacion
 ![[Monomorfismo]] ![[Epimorfismo]] ![[Isomorfismo]]
