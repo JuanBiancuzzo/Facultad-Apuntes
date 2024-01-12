@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-"Los [[Derecho|derechos]] deben ser ejercidos d buena fe..."
+"Los [[Derecho|derechos]] deben ser ejercidos de buena fe..."
 * Mandato de optimización: ordena un comportamiento cooperativo
 	* Entre las partes de una [[Relación jurídica|relación jurídica]]
 * Concepto Jurídico indeterminado
