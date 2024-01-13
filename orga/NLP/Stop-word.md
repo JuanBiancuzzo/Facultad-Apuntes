@@ -7,4 +7,4 @@ capitulo: 3
 ---
 Son "palabras vacías" son palabras demasiado comunes o sin significado como artículos, pronombres, preposiciones, etc. 
 
-Este proceso de [[Normalización]] quiere remover estas palabras.
+Este proceso de [[Normalización|normalización]] quiere remover estas palabras.
