@@ -8,7 +8,15 @@ capitulo: 1
 Es el elemento que introduce una [[Resistencia]] en un circuito eléctrico
 
 ##### Simbología
-![[Diagrama de una resistencia.png|500]]
+```tikz
+\usepackage{circuitikz} 
+\begin{document} 
+	\begin{circuitikz}[american, voltage shift=0.5, scale=1.3, transform shape, thick]
+		\draw (0, 0) to[R, *-*] ++ (1.7, 0);
+		\draw (0, 1) to[R, european, *-*] ++ (1.7, 0);
+	\end{circuitikz}
+\end{document}
+```
 
 ##### Código de colores
 ![[Código de colores de una resistencia.png]]

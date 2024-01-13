@@ -8,16 +8,27 @@ capitulo: 1
 El intervalo dentro del cual podemos confiar que se encuentra el valor verdadero de una medición efectuada.
 
 ##### Calculo de la incertidumbre
-Depende de:
-1. **Rango:** Depende del punto decimal y de la cantidad de cuentas (máximo número que puede mostrar).
+Depende de
+1. Rango: Depende del punto decimal y de la cantidad de cuentas (máximo número que puede mostrar).
 
-2. **Resolucion:** Es la mínima lectura apreciable (dependede la ubicación del punto decimal).
+2. Resolución: Es la mínima lectura apreciable (depende de la ubicación del punto decimal).
 
-![[Resolución por rango.png]]
+| Rango   | Dígitos |
+| ------- | ------- |
+| $4 ~V$  | $0.001$        |
+| $40 ~V$ | $0.01$        |
+| $400 ~V$        | $0.1$        |
 
 3. **Cuentas:** La siguiente tabla depende del multímetro o instrumento utilizado, se encuentra en los manuales de los mismos.
 
-![[Incertidumbre por resolución.png]]
+| Range | Resolution | Basic uncertainty |
+| ---- | ---- | ---- |
+| $400 ~mV$ | $0.1 ~mV$ | $\pm (0.5 \% ~ m.v. + 2 ~ \text{digits})$ |
+| $4 ~V$ | $0.001 ~V$ | $\pm (1.2 \% ~ m.v. + 2 ~ \text{digits})$ |
+| $40 ~V$ | $0.01 ~V$ | $\pm (1.2 \% ~ m.v. + 2 ~ \text{digits})$ |
+| $400 ~V$ | $0.1 ~V$ | $\pm (1.2 \% ~ m.v. + 2 ~ \text{digits})$ |
+| $600 ~V$ | $1 ~V$ | $\pm (1.5 \% ~ m.v. + 2 ~ \text{digits})$ |
+
 
 De donde:
 $$
