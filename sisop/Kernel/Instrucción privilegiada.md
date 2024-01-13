@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-Al tener [[Modo de operación|modos de operación]], y darle la capacidad de ejecutar instrucciones a un subconjunto de los modos, hace que algunas instrucciones tengan privilegio.
+Al tener [[Modo de operación|modos de operación]], y darle la capacidad de ejecutar instrucciones a un [[Subconjunto|subconjunto]] de los modos, hace que algunas instrucciones tengan privilegio.
 
 Este conjunto de instrucciones sólo puede ser ejecutado en [[Modo de operación#Modo kernel|modo kernel]]
 

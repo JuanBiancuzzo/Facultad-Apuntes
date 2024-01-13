@@ -3,7 +3,7 @@ dia: 2022-09-02
 materia: analisis 3
 capitulo: 1
 ---
-### Definción
+### Definición
 ---
 Dado un conjunto no vacio $U \subseteq \mathbb{C}$ y un punto $z_0 \in \mathbb{C}$:
 

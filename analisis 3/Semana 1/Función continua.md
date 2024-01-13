@@ -17,7 +17,7 @@ Si $f$ es continua en todos los puntos de su dominio, diremos simpleente que $f$
 
 #### Observaciones
 ---
-Obsérvese la "sutil" diferencia con la definición de [[Limite]]: tenemos $|z - z_0| < \delta$ en lugar de $0 < |z - z_0| < \delta$. La razón fundamental es que $|f(z) - f(z_0)| < \epsilon$ se verifica trivialmente para $z = z_0$, que es un punto del dominio de $f$, y lo mismo ocurre con el antecedente.
+Obsérvese la "sutil" diferencia con la definición de [[Límite]]: tenemos $|z - z_0| < \delta$ en lugar de $0 < |z - z_0| < \delta$. La razón fundamental es que $|f(z) - f(z_0)| < \epsilon$ se verifica trivialmente para $z = z_0$, que es un punto del dominio de $f$, y lo mismo ocurre con el antecedente.
 
-Sea $f:D \to \mathbb{C}$ una función definida en un conjunto $D \subseteq \mathbb{C}$ y sea $z_0 \in D$ un punto del dominio de $f$ que ademas es [[Punto de acumulacion]] de $D$. Entonces
+Sea $f:D \to \mathbb{C}$ una función definida en un conjunto $D \subseteq \mathbb{C}$ y sea $z_0 \in D$ un punto del dominio de $f$ que ademas es [[Punto de acumulación]] de $D$. Entonces
 $$ f \text{ es continua en } z_0 \Leftrightarrow \lim_{z \to z_0} f(z) = f(z_0) $$

@@ -13,7 +13,7 @@ existen (donde $y = \phi(x), y = \psi(x)$ son curvas que pasan por $(x_0, y_0)$)
 
 #### Ejemplo
 ---
-Supongamos que tenemos el siguiente [[Limite]]
+Supongamos que tenemos el siguiente [[Límite]]
 
 $$ \lim_{(x, y) \to (0, 0)} \frac{x \cdot y}{x^2+y^2} $$
 

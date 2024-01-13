@@ -5,7 +5,7 @@ capitulo: 3
 ---
 Dada una [[Sucesión]] $\alpha : \in \mathbb{N} \to \mathbb{K}$ con $\mathbb{K} \in \{ \mathbb{R}, \mathbb{C} \}$ 
 
-$\alpha$ es convergente a un [[Limite]] $a \in \mathbb{K}$ (se indica $\lim_{n \to \infty} \alpha_n = a$) sii $$ \forall \epsilon > 0 : \exists n_\epsilon \in \mathbb{N} : \forall n \in \mathbb{N} : n \geq n_\epsilon \implies |\alpha_n - a| < \epsilon $$
+$\alpha$ es convergente a un [[Límite]] $a \in \mathbb{K}$ (se indica $\lim_{n \to \infty} \alpha_n = a$) sii $$ \forall \epsilon > 0 : \exists n_\epsilon \in \mathbb{N} : \forall n \in \mathbb{N} : n \geq n_\epsilon \implies |\alpha_n - a| < \epsilon $$
 
 ### Consecuencias
 ---
@@ -16,7 +16,7 @@ $\alpha$ es convergente a un [[Limite]] $a \in \mathbb{K}$ (se indica $\lim_{n \
 
 * (Para $\mathbb{K} = \mathbb{R}$) Si $\lim_{n \to \infty} \alpha_n = a > 0$, entonces para todo $r \in \mathbb{R}$ tal que $0 < r < a$ existe $n_r \in \mathbb{N}$ tal que para todo $n \geq n_r : \alpha_n \geq r > 0$. Analogamente cuando $a < 0$
 
-* Dada una [[Sucesión]] $\alpha : \mathbb{N} \to \mathbb{K}$: (muchas de estas relacionadas a operaciones de [[Limite]]s)
+* Dada una [[Sucesión]] $\alpha : \mathbb{N} \to \mathbb{K}$: (muchas de estas relacionadas a operaciones de [[Límite]]s)
 	1) $\lim_{n \to \infty} \alpha_n = a \Leftrightarrow \lim_{n \to \infty} | \alpha_n - a | = 0$
 	2) $\lim_{n \to  \infty} \alpha_n = a \Rightarrow \lim_{n \to \infty} |\alpha_n| = |a|$  
 	3) $\lim_{n \to \infty} \alpha_n = 0 \Leftrightarrow \lim_{n \to \infty} |\alpha_n| = 0$

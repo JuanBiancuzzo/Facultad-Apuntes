@@ -7,7 +7,7 @@ capitulo: 2
 ---
 Sea $f : D \to \mathbb{C}$ una función definida en un [[Conjunto abierto]] $D \subseteq \mathbb{C}$, [[Derivable]] en $z_0 \in D$
 
-1) Sea $D_0 \subseteq D$ un subconjunto tambien abierto que contiene al punto $z_0$. Entonces, la restricción $f_{|D_0} : D_0 \to \mathbb{C}$ de $f$ a $D_0$ también es [[Derivable]] en $z_0$ y ademas $f'_{D_0}(z_0) = f'(z_0)$.
+1) Sea $D_0 \subseteq D$ un [[Subconjunto|subconjunto]] también abierto que contiene al punto $z_0$. Entonces, la restricción $f_{|D_0} : D_0 \to \mathbb{C}$ de $f$ a $D_0$ también es [[Derivable]] en $z_0$ y además $f'_{D_0}(z_0) = f'(z_0)$.
 2) Sea $g : D \to \mathbb{C}$ otra función definida en un [[Conjunto abierto]] $D \subseteq \mathbb{C}$, [[Derivable]] en $z_0 \in D$, y sea $c \in \mathbb{C}$ una constante. Entonces $f + g$, $f - g$, $f \cdot g$ y $c \cdot f$ son derivables en $z_0$ y ademas se verifican las siguentes igualdades:
 	1) $(f + g)'(z_0) = f'(z_0) + g'(z_0)$
 	2) $(f - g)'(z_0) = f'(z_0) - g'(z_0)$

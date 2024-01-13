@@ -5,7 +5,7 @@ capitulo: 12
 ---
 ### Definición 
 ---
-Si la [[Serie]] $\Bigg( \displaystyle \sum_{n = -m}^m c_n \Bigg)_{m = 1}^\infty$  [[Convergencia absoluta|converge absolutamente]], entonces por el [[Criterio de Weiestrass]], la serie $\Bigg( \displaystyle \sum_{n = -m}^m c_n \cdot  e_n \Bigg)_{m = 1}^\infty$ converge absolutamente a una función $h \in E_P$ ([[Conjunto de funciones periódicas]]), por ser [[Limite]] uniforme de continuas, esta función $h$ es continua. 
+Si la [[Serie]] $\Bigg( \displaystyle \sum_{n = -m}^m c_n \Bigg)_{m = 1}^\infty$  [[Convergencia absoluta|converge absolutamente]], entonces por el [[Criterio de Weiestrass]], la serie $\Bigg( \displaystyle \sum_{n = -m}^m c_n \cdot  e_n \Bigg)_{m = 1}^\infty$ converge absolutamente a una función $h \in E_P$ ([[Conjunto de funciones periódicas]]), por ser [[Límite]] uniforme de continuas, esta función $h$ es continua. 
 
 Entonces, dada una función $f \in E_P$ tal que la serie $\Bigg( \displaystyle \sum_{n = -m}^m c_n \Bigg)_{m = 1}^\infty$ converge absolutamente, se tiene una [[Función continua]] $h \in E_P$ tal que $$ \lim_{m \to \infty} \bigg\Vert h - \sum_{n = -m}^m c_n(f) \cdot e_n  \bigg\Vert = 0$$
 Puesto que la [[Convergencia uniforme]] implica la [[Convergencia puntual]], tenemos en particular que para $x \in [0, ~P]$ es $$ h(x) = \sum_{n = -\infty}^\infty c_n(f) \cdot e_n $$

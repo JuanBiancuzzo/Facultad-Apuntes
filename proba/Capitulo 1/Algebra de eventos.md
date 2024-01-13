@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-Dado un [[Espacio muestral|espacio muestral]] $\Omega$, sea $\mathscr{A}$ una familia de subconjuntos de $\Omega$, diremos que $\mathscr{A}$ es un [[Algebra|algebra]] de [[Evento|eventos]] si
+Dado un [[Espacio muestral|espacio muestral]] $\Omega$, sea $\mathscr{A}$ una familia de [[Subconjunto|subconjuntos]] de $\Omega$, diremos que $\mathscr{A}$ es un [[Algebra|algebra]] de [[Evento|eventos]] si
 1. $\Omega \in \mathscr{A}$
 2. Si $B \in \mathscr{A}$ entonces $\overline{B} \in \mathscr{A}$ 
 3. Si $B, ~ C \in \mathscr{A}$ entonces $B \cup C \in \mathscr{A}$

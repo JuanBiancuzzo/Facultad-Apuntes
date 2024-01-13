@@ -20,7 +20,7 @@ $$ \int_a^\infty f(x) \cdot dx = \lim_{\lambda \to \infty} \int_a^\lambda f(x) \
 
 ### Definición para $\int_{-\infty}^\infty f(x) \cdot dx$
 ---
-Indiquemos con $\Lambda = \Set{(\mu, \lambda) \in \mathbb{R}^2 : \mu, \lambda \ge 0}$ el primer cuadrante del plano. Dada una función $f : \mathbb{R} \to \mathbb{R}$ [[Seccionalmente continua]], sea $F : \Lambda \to \mathbb{R}$ tal que $F(\mu, \lambda) = \int_{-\mu}^\lambda f(x) \cdot dx$. Entonces, se dice que la integral $\int_{-\infty}^\infty f(x) \cdot dx$ converge sii existe el [[Limite]] (doble) $$ \lim_{(\mu, \lambda) \to (\infty, \infty)} F(\mu, \lambda)$$ y es finito.
+Indiquemos con $\Lambda = \Set{(\mu, \lambda) \in \mathbb{R}^2 : \mu, \lambda \ge 0}$ el primer cuadrante del plano. Dada una función $f : \mathbb{R} \to \mathbb{R}$ [[Seccionalmente continua]], sea $F : \Lambda \to \mathbb{R}$ tal que $F(\mu, \lambda) = \int_{-\mu}^\lambda f(x) \cdot dx$. Entonces, se dice que la integral $\int_{-\infty}^\infty f(x) \cdot dx$ converge sii existe el [[Límite]] (doble) $$ \lim_{(\mu, \lambda) \to (\infty, \infty)} F(\mu, \lambda)$$ y es finito.
 
 ##### Notación
 $$ \int_{-\infty}^\infty f(x) \cdot dx = \lim_{(\mu, \lambda) \to (\infty, \infty)} \int_{-\mu}^\lambda f(x) \cdot dx $$
@@ -38,5 +38,5 @@ En el caso de exitir estos limites, este coincide con el limite de $$\lim_{\lamb
 ---
 1) En las integrales de la forma $\int_a^b f(x) \cdot dx$, donde $f : (a, b) \to \mathbb{R}$ es [[Seccionalmente continua]] en cada intervalo $[c, d] \subset (a, b)$. Diremos que esta integral converge sii existe el límite doble $$ \int_a^b f(x) \cdot dx = \lim_{(\delta, \varepsilon) \to (0, 0)} \int_{a + \delta}^{b - \varepsilon} f(x) \cdot dx $$ donde podemos estudiar la convergencia de las siguientes integrales, donde existe un punto intermedio $a < c < b$, resulta $$ \lim_{(\delta, \varepsilon) \to (0, 0)} \int_{a + \delta}^{b - \varepsilon} f(x) \cdot dx = \lim_{\delta \to 0} \int_{a + \delta}^{c} f(x) \cdot dx + \lim_{\varepsilon \to 0} \int_{c}^{b - \varepsilon} f(x) \cdot dx $$
 
-2) En las integrales de la forma $\int_a^b f(x) \cdot dx$, donde existe un punto interior $c \in (a, b)$ tal que $f : [a, c) \cup (c, b] \to \mathbb{R}$ es [[Seccionalmente continua]] y tiene [[Limite]] laterales infinitos en $c$. Diremos que esta integral converge sii existe (y es finito) el limite doble $$ \int_a^b f(x) \cdot dx = \lim_{(\delta, \varepsilon) \to (0,0)} \Bigg( \int_a^{c - \delta} f(x) \cdot dx + \int_{c + \varepsilon}^b f(x) \cdot dx \Bigg) $$
+2) En las integrales de la forma $\int_a^b f(x) \cdot dx$, donde existe un punto interior $c \in (a, b)$ tal que $f : [a, c) \cup (c, b] \to \mathbb{R}$ es [[Seccionalmente continua]] y tiene [[Límite]] laterales infinitos en $c$. Diremos que esta integral converge sii existe (y es finito) el limite doble $$ \int_a^b f(x) \cdot dx = \lim_{(\delta, \varepsilon) \to (0,0)} \Bigg( \int_a^{c - \delta} f(x) \cdot dx + \int_{c + \varepsilon}^b f(x) \cdot dx \Bigg) $$
 

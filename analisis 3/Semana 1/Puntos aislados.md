@@ -5,4 +5,4 @@ capitulo: 1
 ---
 ### Definción
 ---
-Son aquellos puntos que no son [[Punto de acumulacion]]
+Son aquellos puntos que no son [[Punto de acumulación]]

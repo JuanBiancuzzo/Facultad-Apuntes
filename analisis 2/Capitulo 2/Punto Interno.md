@@ -13,4 +13,4 @@ Tambien lo podemos ver como que existe un [[Disco abierto]] un $r > 0$ tal que $
 ### Propiedad
 ---
 * Si $z_0$ es punto interior de $U$, entonces pertenece a $U$
-* Si $z_0$ es punto interior de $U$, entonces es [[Punto de acumulacion]] de $U$
+* Si $z_0$ es punto interior de $U$, entonces es [[Punto de acumulación]] de $U$
