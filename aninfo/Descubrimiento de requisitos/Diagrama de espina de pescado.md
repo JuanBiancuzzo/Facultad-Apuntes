@@ -1,12 +1,7 @@
 ---
 dia: 2023-09-07
-tipo: referencia
-referencia: [
-	https://es.wikipedia.org/wiki/Diagrama_de_Ishikawa,
-]
-autor: [
-	Wikipedia,
-]
+materia: aninfo
+capitulo: 3
 ---
 ### Definición
 ---

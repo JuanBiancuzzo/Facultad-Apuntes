@@ -1,6 +1,7 @@
 ---
 dia: 2023-10-16
-tipo: referencia
+materia: aninfo
+capitulo: 8
 ---
 ### Definición
 ---

@@ -1,10 +1,8 @@
 [
-  "table-editor-obsidian",
   "dataview",
   "templater-obsidian",
   "obsidian-git",
   "cm-editor-syntax-highlight-obsidian",
-  "3d-graph",
   "obsidian-tikzjax",
   "oz-clear-unused-images"
 ]

@@ -1,9 +1,7 @@
 ---
 dia: 2023-08-26
-tipo: referencia
-referencia: [
-	https://es.wikipedia.org/wiki/Manifiesto_%C3%A1gil,
-]
+materia: aninfo
+capitulo: 2
 ---
 ### Definición
 ---

@@ -1,10 +1,7 @@
 ---
 dia: 2023-09-05
-tipo: referencia
-referencia: [
-	https://en.wikipedia.org/wiki/Onion_model,
-]
-autor: null
+materia: aninfo
+capitulo: 3
 ---
 ### Definición
 ---
