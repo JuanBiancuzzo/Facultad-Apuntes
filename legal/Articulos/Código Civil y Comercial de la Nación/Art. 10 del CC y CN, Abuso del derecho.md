@@ -1,12 +1,14 @@
 ---
-dia: 2024-01-10
-materia: legal
-capitulo: 1
+cuerpo_legal: Código Civil y Comercial de la Nación
+num_articulo: 10
 ---
-### Definición
+
+### Artículo
 ---
 "La ley no ampara el ejercicio abusivo de los derechos. Se considera tal el que contraría los fines del [[Ordenamiento jurídico|ordenamiento jurídico]] o el que excede los límites impuestos por la [[Art. 9 del CC y CN, Principio de buena fe|buena fe]], la moral y las buenas costumbres"
 
+### Interpretación
+---
 * Concepto genérico
 * No hay una enumeración taxativa de situaciones que constituyen abuso del derecho
 * Su determinación es esencialmente casuística

@@ -1,9 +1,9 @@
 ---
-dia: 2024-01-12
-materia: legal
-capitulo: 1
+cuerpo_legal: Código Civil y Comercial de la Nación
+num_articulo: 1256
 ---
-### Definición
+
+### Artículo
 ---
 "El contratista o prestador de servicios está obligado a:  
   
@@ -16,3 +16,6 @@ capitulo: 1
 4. usar diligentemente los materiales provistos por el comitente e informarle inmediatamente en caso de que esos materiales sean impropios o tengan vicios que el contratista o prestador debiese conocer;  
   
 5. ejecutar la obra o el servicio en el tiempo convenido o, en su defecto, en el que razonablemente corresponda según su índole."
+
+### Interpretación
+---

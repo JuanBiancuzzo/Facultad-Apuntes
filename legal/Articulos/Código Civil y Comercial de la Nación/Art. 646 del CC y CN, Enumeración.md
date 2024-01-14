@@ -1,9 +1,9 @@
 ---
-dia: 2024-01-12
-materia: legal
-capitulo: 1
+cuerpo_legal: Código Civil y Comercial de la Nación
+num_articulo: 646
 ---
-### Definición
+
+### Artículo
 ---
 "Son deberes de los progenitores:  
   
@@ -18,3 +18,6 @@ capitulo: 1
 5. respetar y facilitar el derecho del hijo a mantener relaciones personales con abuelos, otros parientes o personas con las cuales tenga un vínculo afectivo;  
   
 6. representarlo y administrar el patrimonio del hijo."
+
+### Interpretación
+---

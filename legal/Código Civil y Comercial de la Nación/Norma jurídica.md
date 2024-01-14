@@ -102,7 +102,7 @@ Son aquellas que están referidas a las primarias y que, por lo tanto, no tienen
 
 A su vez, las reglas secundarias se clasifican en
 * Reglas de reconocimiento
-	* Se destinan a identificar a las normas primarias estableciendo criterios de validez a partir de los cuales se puede considerar a una norma como perteneciente al [[Ordenamiento jurídico|ordenamiento jurídico]]. Por ejemplo el [[Art. 31 de la Constitución Naciona|Art. 31 de la Constitución Nacional]]
+	* Se destinan a identificar a las normas primarias estableciendo criterios de validez a partir de los cuales se puede considerar a una norma como perteneciente al [[Ordenamiento jurídico|ordenamiento jurídico]]. Por ejemplo el [[Art. 31 de la Constitución Nacional|Art. 31 de la Constitución Nacional]]
 * Reglas de cambio
 	* Regulan el proceso por el cual se introducen nuevas normas primarias y se modifican y expulsan las existentes, es decir, reglan la producción, modificación y derogación de las normas primarias, dinamizando así el [[Ordenamiento jurídico|ordenamiento jurídico]]
 * Reglas de adjudicación

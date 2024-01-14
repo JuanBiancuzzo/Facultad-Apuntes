@@ -1,16 +1,20 @@
 ---
-dia: 2024-01-10
-materia: legal
-capitulo: 1
+cuerpo_legal: Código Civil y Comercial de la Nación
+num_articulo: 9
 ---
-### Definición
+
+### Artículo
+---
+"Los [[Derecho|derechos]] deben ser ejercidos de buena fe"
+
+### Interpretación
 ---
 "Los [[Derecho|derechos]] deben ser ejercidos de buena fe..."
 * Mandato de optimización: ordena un comportamiento cooperativo
 	* Entre las partes de una [[Relación jurídica|relación jurídica]]
 * Concepto Jurídico indeterminado
 * Difícil de determinar en abstracto
-* [[Captabilidad|Captable]] en circunstancias concretas
+* Captable en circunstancias concretas
 
 "... Buena fe como lealtad, o aceptación objetiva; y buena fe como creencia, o subjetiva"
 * Como lealtad o buena fe objetiva

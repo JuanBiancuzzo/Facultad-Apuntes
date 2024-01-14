@@ -1,9 +1,9 @@
 ---
-dia: 2024-01-12
-materia: legal
-capitulo: 1
+cuerpo_legal: Código Civil y Comercial de la Nación
+num_articulo: 146
 ---
-### Definición
+
+### Artículo
 ---
 "Son [[Persona jurídica|personas jurídicas]] públicas:  
   
@@ -12,3 +12,6 @@ capitulo: 1
 2. los Estados extranjeros, las organizaciones a las que el [[Derecho|derecho]] internacional público reconozca personalidad jurídica y toda otra persona jurídica constituida en el extranjero cuyo carácter público resulte de su derecho aplicable;  
   
 3. la Iglesia Católica."
+
+### Interpretación
+---
