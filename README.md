@@ -24,7 +24,7 @@ Un listado de materias y su estado actual.
 | [Legislación y ejercicio profesional](legal/Legislación%20y%20ejercicio%20profesional%20(9111).md) | Cursando                           |
 | [Análisis numérico](numerico/Análisis%20numérico%20(7512).md)                                                  | Falta pasar el resumen             |
 | [Organización de datos](orga/Organización%20de%20datos%20(7506).md)                                            | Falta pasar el resumen             |
-| [Probabilidad y estadística](proba/Probabilidad%20y%20estadística%20(6109).md)                                 | Falta capítulo 1                   |
+| [Probabilidad y estadística](proba/Probabilidad%20y%20estadística%20(6109).md)                                 | Terminado                   |
 | [Seguridad ambiental y del trabajo](seguridad/Seguridad%20ambiental%20y%20del%20trabajo%20(9704).md)           | Terminado                          |
 | [Sistemas operativos](sisop/Sistemas%20operativos%20(7508).md)                                                 | Terminado                          |
 | [Taller de programación](taller/Taller%20de%20programación%20(9508).md)                                        | Escribir sobre el libro de rust    |
