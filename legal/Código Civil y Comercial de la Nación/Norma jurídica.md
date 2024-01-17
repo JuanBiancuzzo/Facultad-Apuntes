@@ -10,7 +10,7 @@ Caracterizamos a las normas jurídicas como bilaterales, heterónomas, primordia
 Las normas jurídicas se expresan en un lenguaje (prescriptivo) normativo, que tiene su origen en Kelsen, entre norma jurídica y [[Proposición normativa|proposición normativa]].
 
 Una norma jurídica, por ejemplo la del [[Art. 79 del Código Penal|art. 79 del Código Penal]]
-![[Art. 79 del Código Penal#Definición]]
+![[Art. 79 del Código Penal#Artículo]]
 Una proposición normativa dirá "En el derecho penal argentino, el homicidio simple es reprimido con la pena de prisión de ocho a veinticinco años"
 
 #### Clasificación
@@ -27,7 +27,7 @@ Considera la porción de espacio en la que la norma jurídica es aplicada
 ---
 Considera la determinación del tiempo de vigencia de la norma jurídica
 * Normas de vigencia determinada, cuando su ámbito temporal de validez está preestablecido.
-* Normas de vigencia indeterminada, no tienen fijado el tiempo en que la norma va a regir, pero siempre es determinable. ![[Art. 5 del CC y CN, Vigencia#Definición]]
+* Normas de vigencia indeterminada, no tienen fijado el tiempo en que la norma va a regir, pero siempre es determinable. ![[Art. 5 del CC y CN, Vigencia#Artículo]]
 
 ##### Por su ámbito material de validez
 ---
@@ -45,7 +45,7 @@ Considera a los destinatarios, en el sentido de la determinación o indeterminac
 ---
 Considerando la posibilidad de disposición por parte de los destinatarios, pueden ser
 * Normas imperativas o de orden público, que no pueden ser dejadas de lado por disposición de los destinatarios
-* Normas supletorias o dispositivas, que dejan la posibilidad a los destinatarios de disponer en forma diversa de lo que ellas establecen, como el [[Art. 1256 del CC y CN, Obligaciones del contratista y del prestador|rt. 1256 inc. e del CC y CN]]
+* Normas supletorias o dispositivas, que dejan la posibilidad a los destinatarios de disponer en forma diversa de lo que ellas establecen, como el [[Art. 1256 del CC y CN, Obligaciones del contratista y del prestador#Inciso N°5|art. 1256 inc. e del CC y CN]]
 
 ##### Por el contenido de lo normado
 ---
@@ -57,7 +57,7 @@ Es lo que determina el carácter de la norma, en función de que algo deba, no d
 ##### Por sus fuentes
 ---
 Puede ser
-* Normas legales: emanan del [[Poder legislativo|Poder Legislativo]] (la [[Ley|ley]]). 
+* Normas legales: emanan del [[Poder Legislativo|Poder Legislativo]] (la [[Ley|ley]]). 
 * Normas consuetudinarias: provienen de los grupos sociales que generan una costumbre jurídica. 
 * Normas jurisprudenciales: surgen de las interpretaciones contenidas en los pronunciamientos de los tribunales superiores, como la [[Corte Suprema de Justicia de la Nación|Corte Suprema de Justicia de la Nación]], o de los criterios uniformes emanados de sentencias de distintos [[Tribuna|tribunales]] sobre la misma materia. 
 * Normas contractuales: son creadas por los particulares al celebrar contratos en el marco de la libertad de contratación prevista en el [[Art. 958 del CC y CN, Libertad de contratación|art. 958 del CC y CN]], dentro de los límites impuestos por la ley, el orden público, la [[Moral|moral]] y las buenas costumbres.
@@ -94,7 +94,7 @@ Hart distingue las clases de normas jurídicas atendiendo a la diversa función 
 Son aquellas que están dirigidas a provocar comportamientos en los individuos, imponiéndoles deberes de hacer u omitir ciertos actos; son [[Normas de conducta|normas de conducta]] o de [[Acción humana|comportamiento]] y sus destinatarios son los individuos
 
 Como en el [[Art. 646 del CC y CN, Enumeración|Art. 646 del CC y CN, Enumeración]]
-![[Art. 646 del CC y CN, Enumeración#Definición]]
+![[Art. 646 del CC y CN, Enumeración#Artículo]]
 
 ###### Reglas secundarias
 ---
@@ -102,7 +102,7 @@ Son aquellas que están referidas a las primarias y que, por lo tanto, no tienen
 
 A su vez, las reglas secundarias se clasifican en
 * Reglas de reconocimiento
-	* Se destinan a identificar a las normas primarias estableciendo criterios de validez a partir de los cuales se puede considerar a una norma como perteneciente al [[Ordenamiento jurídico|ordenamiento jurídico]]. Por ejemplo el [[Art. 31 de la Constitución Nacional|Art. 31 de la Constitución Nacional]]
+	* Se destinan a identificar a las normas primarias estableciendo criterios de validez a partir de los cuales se puede considerar a una norma como perteneciente al [[Ordenamiento jurídico|ordenamiento jurídico]]. Por ejemplo el [[Art. 31 de la Ley 24.430, de la Constitución Nacional|Art. 31 de la Ley 24.430, de la Constitución Nacional]]
 * Reglas de cambio
 	* Regulan el proceso por el cual se introducen nuevas normas primarias y se modifican y expulsan las existentes, es decir, reglan la producción, modificación y derogación de las normas primarias, dinamizando así el [[Ordenamiento jurídico|ordenamiento jurídico]]
 * Reglas de adjudicación
@@ -131,7 +131,7 @@ Considera que el [[Derecho|derecho]] no está compuesto únicamente por normas s
 
 ###### Directrices políticas
 ---
-Son estándares que establecen objetivos que han de ser alcanzados, metas o propósitos sociales, económicos, políticos, etc.; son más bien propios del [[Poder legislativo|Poder Legislativo]], ya que se suele recurrir, en ese ámbito, a éstos como argumentos que justifican las normas que crean para alcanzar dichos objetivos y pueden quizá encontrarse en las exposiciones de motivos que encabezan a algunas [[Ley|leyes]].
+Son estándares que establecen objetivos que han de ser alcanzados, metas o propósitos sociales, económicos, políticos, etc.; son más bien propios del [[Poder Legislativo|Poder Legislativo]], ya que se suele recurrir, en ese ámbito, a éstos como argumentos que justifican las normas que crean para alcanzar dichos objetivos y pueden quizá encontrarse en las exposiciones de motivos que encabezan a algunas [[Ley|leyes]].
 
 ###### Principios en sentido estricto
 ---

@@ -3,6 +3,8 @@
     "aliases": "aliases",
     "cssclasses": "multitext",
     "tags": "tags",
-    "num_articulo": "number"
+    "num_articulo": "number",
+    "incisos": "multitext",
+    "num_ley": "number"
   }
 }

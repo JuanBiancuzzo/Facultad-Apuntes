@@ -5,4 +5,18 @@ capitulo: 1
 ---
 ### Definición
 ---
-Regula las relaciones entre los sujetos. Civil, comercial y de trabajo.
+Regula las relaciones entre los [[Sujeto|sujetos]]. Civil, comercial y de trabajo.
+
+#### Ejemplos
+---
+* [[Derecho|Derecho]] de Contratos
+	* regula los acuerdos y relaciones entre [[Persona jurídica|personas jurídicas]]
+* Derechos Reales
+	* regula y se refiere a los derechos sobre la [[Propiedad privada|propiedad privada]]
+* Derecho de las Obligaciones
+	* regula las relaciones jurídicas en las que una parte debe cumplir con una prestación hacia otra
+* Derecho de Familia
+	* regula las relaciones familiar, y como son personas jurídicas
+* Derecho Comercial
+	* regula las actividad comerciales y las relaciones entre quienes comercian
+
