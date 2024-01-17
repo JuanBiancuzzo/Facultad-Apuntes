@@ -1,6 +1,8 @@
 ---
 cuerpo_legal: Código Civil y Comercial de la Nación
 num_articulo: 7
+art_nombre: Eficacia temporal
+art: "A partir de su entrada en vigencia, las leyes se aplican a las consecuencias de las relaciones y situaciones jurídicas existentes.\r\rLa leyes no tienen efecto retroactivo, sean o no de orden público, excepto disposición en contrario. La retroactividad establecida por la ley no puede afectar derechos amparados por garantías constitucionales.\r\rLas nuevas leyes supletorias no son aplicables a los contratos en curso de ejecución, con excepción de las normas más favorables al consumidor en las relaciones de consumo."
 ---
 
 ### Artículo

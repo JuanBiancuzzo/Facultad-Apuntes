@@ -1,6 +1,8 @@
 ---
 cuerpo_legal: Código Civil y Comercial de la Nación
 num_articulo: 8
+art_nombre: Principio de inexcusabilidad
+art: La ignorancia de las leyes no sirve de excusa para su cumplimiento, si la excepción no está autorizada por el ordenamiento jurídico.
 ---
 
 ### Artículo

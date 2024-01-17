@@ -1,6 +1,8 @@
 ---
 cuerpo_legal: Código Civil y Comercial de la Nación
 num_articulo: 9
+art_nombre: Principio de buena fe
+art: Los derechos deben ser ejercidos de buena fe.
 ---
 
 ### Artículo

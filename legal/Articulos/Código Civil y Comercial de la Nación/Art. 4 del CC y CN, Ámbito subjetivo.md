@@ -1,6 +1,8 @@
 ---
 cuerpo_legal: Código Civil y Comercial de la Nación
 num_articulo: 4
+art_nombre: Ámbito subjetivo
+art: Las leyes son obligatorias para todos los que habitan el territorio de la República, sean ciudadanos o extranjeros, residentes, domiciliados o transeúntes, sin perjuicio de lo dispuesto en leyes especiales.
 ---
 
 ### Artículo

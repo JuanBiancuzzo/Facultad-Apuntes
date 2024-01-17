@@ -1,8 +1,9 @@
 ---
 cuerpo_legal: Código Civil y Comercial de la Nación
 num_articulo: 12
+art_nombre: Orden público. Fraude a la ley
+art: "Las convenciones particulares no pueden dejar sin efecto las leyes en cuya observancia está interesado el orden público.\r\rEl acto respecto del cual se invoque el amparo de un texto legal, que persiga un resultado sustancialmente análogo al prohibido por una norma imperativa, se considera otorgado en fraude a la ley. En ese caso, el acto debe someterse a la norma imperativa que se trata de eludir."
 ---
-
 ### Artículo
 ---
 "Las convenciones particulares no pueden dejar sin efecto las [[Ley|leyes]] en cuya observancia está interesado el orden público.  
