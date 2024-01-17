@@ -12,7 +12,7 @@
 
 	if (cuerpo_legal == "Constitución Nacional") {
 		let num_ley_original = titulo.split(" ")[5].replace(",", "");
-		let num_ley = num_ley_original.replace(".", "");
+		let num_ley = num_ley_original.replace(".", "").replace("/", ".");
 		tR += `num_ley: ${parseInt(num_ley)}\n`;
 
 		let nombre_ley = `Ley ${num_ley_original}, de la Constitución Nacional`;
