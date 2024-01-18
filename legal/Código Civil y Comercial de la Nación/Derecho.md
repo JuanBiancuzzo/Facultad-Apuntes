@@ -30,7 +30,7 @@ Una de las varias dificultades con que casi inevitablemente se encuentra los [[J
 
 ##### Derecho como facultad (sentido subjetivo)
 ---
-![[Derecho como facultad#Definición]]
+![[Derecho subjetivo#Definición]]
 
 ##### Derecho como saber científico
 ---

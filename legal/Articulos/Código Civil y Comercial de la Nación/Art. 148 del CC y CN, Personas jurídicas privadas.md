@@ -57,3 +57,10 @@ incisos:
 
 ### Interpretación
 ---
+La enumeración evidencia que se trata de formas asociativas y/o societarias de variadas manifestaciones, siempre en el marco conceptual de entes a los cuales el [[Ordenamiento jurídico|ordenamiento jurídico]] les confiere aptitud para adquirir derechos y contraer obligaciones para el cumplimiento de su objeto y los fines de su creación, siendo de gran relevancia el aludido carácter normativo requerido para su organización y contenido
+
+Sus atributos y efectos, como el nombre, domicilio, patrimonio, duración y objeto, así como su funcionamiento se encuentran regulados por el [[Código Civil y Comercial de la Nación (CC y CN)|Código Civil y Comercial]] en una parte general que se desarrolla entre los arts. [[Art. 151 del CC y CN, Nombre|151]] y [[Art. 167 del CC y CN, Liquidación y responsabilidades|167]] del mismo, así como en otras leyes especiales como las que regulan las sociedades comerciales, las mutuales, las cooperativas, etc.
+
+En todos los casos constituyen agrupamientos a los que el ordenamiento confiere capacidad de adquirir derechos y contraer obligaciones con las más variadas finalidades, que se persigan para satisfacer las diversas necesidades de la vida comunitaria, al amparo de la garantía constitucional de asociarse con fines lícitos establecida en el [[Art. 14 de la Ley 24.430, de la Constitución Nacional|artículo 14 de la Constitución Nacional]]
+
+El tema es propio del Derecho Civil por lo que su profundización mediante un tratamiento exhaustivo de las distintas instituciones será realizado por las disciplinas curriculares destinadas a ése objetivo

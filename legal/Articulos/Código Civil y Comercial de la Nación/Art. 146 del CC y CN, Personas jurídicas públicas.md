@@ -27,3 +27,11 @@ incisos:
 
 ### Interpretación
 ---
+Se advierte de la enumeración mencionada la fuerte pertenencia de dichas entidades al [[Derecho público|Derecho Público]], especialmente al Derecho Constitucional y al Derecho Administrativo, así como en el caso del [[Art. 146 del CC y CN, Personas jurídicas públicas#Inciso N°2|inciso 2]] al [[Derecho Internacional Público|Derecho Internacional Público]]. Razones de organización del poder político, en especial, que la [[Constitución Nacional|Constitución Nacional]] estatuye la forma de gobierno republicano y federal, como históricas, la globalización, las relaciones internacionales entre los [[Estado|Estados]], etc., entre otras, motivan la consideración legal
+
+Las entidades autárquicas son organismos del Estado que tienen funciones administrativas públicas específicas, con un patrimonio propio y atribuciones correspondientes. Según Llambías presentan las siguientes características
+* Tienen una finalidad de bien común
+* Consisten en una organización humana destinada a alcanzar tal finalidad
+* Tienen un patrimonio separado del Estado afectado al logro de aquella finalidad, que se forma con recursos o fondos dejados al manejo de aquella organización. Ejemplos de este tipo de entes son: el Banco Central de la República Argentina, el Banco de la Nación Argentina, etc.
+
+Por último, la Iglesia Católica, representada por el Sumo Pontífice, con sede en el Vaticano, como las diócesis y parroquias, es catalogada como persona jurídica pública por una tradición histórica secular relacionada con la profesión de fe mayoritaria de la población argentina

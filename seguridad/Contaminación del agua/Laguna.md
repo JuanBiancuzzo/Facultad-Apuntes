@@ -48,7 +48,10 @@ Un clima casi constante es la situación ideal de funcionamiento. Las bajas temp
 Particularmente importante en lagunas anaeróbicas (el Ph debe ser superior a 6). Las bacterias metanogénicas son muy sensibles a medios ácidos.
 
 ###### Profundidad de la laguna
-Anaerobias: entre 2 y 4 metros
-Facultativas: entre 1.5 y 2 metros
-Aerobias: Entre 1.2 y 1.5 metros
+* Anaerobias
+	* Entre 2 y 4 metros
+* Facultativas
+	* Entre 1.5 y 2 metros
+* Aerobias
+	* Entre 1.2 y 1.5 metros
 

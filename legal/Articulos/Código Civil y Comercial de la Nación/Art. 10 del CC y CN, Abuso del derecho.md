@@ -13,7 +13,7 @@ art: "El ejercicio regular de un derecho propio o el cumplimiento de una obligac
 ---
 La ley no ampara el ejercicio abusivo de los derechos. Se considera tal el que contraría los fines del ordenamiento jurídico o el que excede los límites impuestos por la buena fe, la moral y las buenas costumbres.
 
-El juez debe ordenar lo necesario para evitar los efectos del ejercicio abusivo o de la situación jurídica abusiva y, si correspondiere, procurar la reposición al estado de hecho anterior y fijar una indemnización.
+El juez debe ordenar lo necesario para evitar los efectos del ejercicio abusivo o de la [[Situación jurídica|situación jurídica]] abusiva y, si correspondiere, procurar la reposición al estado de hecho anterior y fijar una indemnización.
 
 * Concepto genérico
 * No hay una enumeración taxativa de situaciones que constituyen abuso del derecho

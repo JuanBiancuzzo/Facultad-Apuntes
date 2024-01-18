@@ -7,7 +7,7 @@ art: "A partir de su entrada en vigencia, las leyes se aplican a las consecuenci
 
 ### Artículo
 ---
-"A partir de su [[Art. 5 del CC y CN, Vigencia|entrada en vigencia]], las [[Ley|leyes]] se aplican a las consecuencias de las relaciones y situaciones jurídicas existentes.  
+"A partir de su [[Art. 5 del CC y CN, Vigencia|entrada en vigencia]], las [[Ley|leyes]] se aplican a las consecuencias de las [[Relación jurídica|relaciones jurídicas]] o [[Situación jurídica|situaciones jurídicas]] existentes.  
   
 La leyes no tienen efecto [[Retroactividad|retroactivo]], sean o no de [[Art. 12 del CC y CN, Orden público. Fraude a la ley|orden público]], excepto disposición en contrario. La retroactividad establecida por la ley no puede afectar derechos amparados por garantías constitucionales.  
   

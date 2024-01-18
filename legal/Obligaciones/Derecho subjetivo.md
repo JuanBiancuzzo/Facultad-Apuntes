@@ -1,7 +1,7 @@
 ---
-dia: 2024-01-10
+dia: 2024-01-18
 materia: legal
-capitulo: 1
+capitulo: 2
 ---
 ### Definición
 ---

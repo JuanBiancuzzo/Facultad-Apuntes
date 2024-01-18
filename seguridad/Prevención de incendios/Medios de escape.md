@@ -36,6 +36,7 @@ La unidad de ancho de salida, denotada como $n$ se calcula como
 $$ n = \frac{N}{100} $$
 
 Donde el mínimo debe ser:
+
 | Unidades de salida | Edificios nuevos | Edificios existentes |
 | ------------------ | ---------------- | -------------------- |
 | 2                  | $1,10 m$         | $0,96 m$             |
@@ -46,6 +47,7 @@ Donde el mínimo debe ser:
 
 
 La cantidad de salidas, esta dado por 
+
 | Situación | NME                           |
 | --------- | ----------------------------- |
 | $n \le 3$ | Un medio de escape o escalera |
