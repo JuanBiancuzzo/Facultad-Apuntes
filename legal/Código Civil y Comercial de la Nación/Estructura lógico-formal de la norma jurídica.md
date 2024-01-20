@@ -18,7 +18,7 @@ Dado A debe ser B
 Se trata de una fórmula que presenta una condición o hecho antecedente y una consecuencia o hecho consecuente unidos por un nexo como vínculo de imputación o atribución
 
 Como ejemplo
-"Dada la transgresión normativa debe ser la sanción al responsable"
+"Dada la transgresión normativa debe ser la [[Sanción jurídica|sanción]] al responsable"
 
 #### Hipótesis o supuesto de hecho
 ---

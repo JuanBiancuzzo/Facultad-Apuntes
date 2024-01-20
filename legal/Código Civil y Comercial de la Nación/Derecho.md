@@ -7,7 +7,7 @@ capitulo: 1
 ---
 El concepto de derecho no tiene una única definición, o mejor dicho, su definición es ambigua por lo que no permite una definición concreta, pero si nos la preguntamos podemos conseguir las siguientes respuestas
 
-1. La [[Ley|ley]], para referir a reglas que nos protegen según sea nuestro comportamiento, nos imponen ciertas conductas o nos obligan a realizar otras bajo la amenaza de una posible sanción
+1. La [[Ley|ley]], para referir a reglas que nos protegen según sea nuestro comportamiento, nos imponen ciertas conductas o nos obligan a realizar otras bajo la amenaza de una posible [[Sanción jurídica|sanción]]
 2. El [[Legislador|legislador]], como la autoridad u órgano de creación de la ley
 3. Cierto [[Funcionario público|funcionarios públicos]], como el presidente, los gobernadores, funcionarios policiales, jefes de registros, entre otros, como autoridades que tienen el deber de ejecutar aquellas reglas
 4. El [[Juez]], como la autoridad u órgano que resuelve conflictos en caso de transgresiones a la ley y eventualmente impone una posible sanción
@@ -26,7 +26,7 @@ Una de las varias dificultades con que casi inevitablemente se encuentra los [[J
 
 ##### Derecho como norma (sentido objetivo)
 ---
-![[Derecho como norma#Definición]]
+![[Derecho objetivo#Definición]]
 
 ##### Derecho como facultad (sentido subjetivo)
 ---

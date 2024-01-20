@@ -2,6 +2,7 @@
 cuatri: 24C1
 estado: cursando
 ---
+
 ### Apuntes
 ---
 ```dataviewjs

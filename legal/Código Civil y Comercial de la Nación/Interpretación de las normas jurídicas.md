@@ -15,7 +15,7 @@ El empleo tanto del lenguaje natural como el lenguaje especial resulta que las n
 * Palabras del lenguaje común cuyo significado coincide con el asignado en éste, 
 * Palabras del lenguaje común pero con un significado diverso y específico, como prenda, competencia, servidumbre, etc., 
 * Palabras que son propias del lenguaje jurídico y que no se encuentran en el lenguaje común, como hipoteca, estupro, etc., 
-* Palabras, tanto del lenguaje natural como del técnico jurídico , que tienen varios significados que se determinan según el contexto en que el término es empleado, como la palabra «prescripción» que puede ser usada como modo de liberación de obligaciones o de adquisición de derechos por el transcurso del tiempo e incluso como sinónimo de disposición. Otro ejemplo es la palabra «sanción» que puede usarse aludiendo a la consecuencia negativa derivada del incumplimiento normativo, a la técnica de gratificación o sanción premial, o a la aprobación de un proyecto de ley por el órgano legislativo.
+* Palabras, tanto del lenguaje natural como del técnico jurídico , que tienen varios significados que se determinan según el contexto en que el término es empleado, como la palabra «prescripción» que puede ser usada como modo de liberación de obligaciones o de adquisición de derechos por el transcurso del tiempo e incluso como sinónimo de disposición. Otro ejemplo es la palabra [[Sanción jurídica|sanción]] que puede usarse aludiendo a la consecuencia negativa derivada del incumplimiento normativo, a la técnica de gratificación o sanción premial, o a la aprobación de un proyecto de ley por el órgano legislativo.
 
 #### Problemas lingüísticos
 ---

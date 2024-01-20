@@ -1,0 +1,19 @@
+---
+cuerpo_legal: Código Civil y Comercial de la Nación
+num_articulo: 828
+art_nombre: Fuentes
+art: La solidaridad no se presume y debe surgir inequívocamente de la ley o del título constitutivo de la obligación.
+incisos: 
+libro: Libro Tercero
+título: "1"
+capítulo: "3"
+sección: "7"
+parágrafo: "2"
+---
+### Artículo
+---
+"La [[Libro Tercero, Título 1, Capítulo 3, Sección 7, Parágrafo 2, Obligaciones solidarias. Disposiciones generales|solidaridad]] no se presume y debe surgir inequívocamente de la [[Ley|ley]] o del título constitutivo de la [[Obligación|obligación]]."
+
+
+### Interpretación
+---

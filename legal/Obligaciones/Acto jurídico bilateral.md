@@ -9,4 +9,4 @@ Son bilaterales, cuando requieren el consentimiento unánime de dos o más parte
 
 ##### Ejemplo
 ---
-Un [[Contrato|contrato]] de locación se conforma con dos partes (locador y locatario), aunque en cada una de ellas intervengan una o más personas.
+Un [[Libro Tercero, Título 2, Contratos en general|contrato]] de locación se conforma con dos partes (locador y locatario), aunque en cada una de ellas intervengan una o más personas.

@@ -65,7 +65,7 @@ Puede ser
 ##### Por los efectos de su violación
 ---
 Atendiendo a las consecuencias que acarrea su violación, las normas pueden ser
-* Normas *perfectaes*, son aquellas de cuyo incumplimiento sobreviene una sanción consistente en la nulidad del acto, sin posibilidad del restablecimiento al estado de cosas anterior a la violación de la norma. 
+* Normas *perfectaes*, son aquellas de cuyo incumplimiento sobreviene una [[Sanción jurídica|sanción]] consistente en la nulidad del acto, sin posibilidad del restablecimiento al estado de cosas anterior a la violación de la norma. 
 * Normas *plus quam perfectaes*, son aquellas que además de la nulidad del acto imponen al infractor una sanción.
 * Normas minus *quam perfectaes*, son aquellas cuya violación no impide que el acto produzca sus efectos, es decir, no se lo declara nulo, pero establecen una sanción para el infractor. 
 * Normas *imperfectaes*, son las que no establecen una sanción para el caso que la norma sea incumplida.

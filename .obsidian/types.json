@@ -5,6 +5,8 @@
     "tags": "tags",
     "num_articulo": "number",
     "incisos": "multitext",
-    "num_ley": "number"
+    "num_ley": "number",
+    "capitulo": "number",
+    "capítulo": "text"
   }
 }

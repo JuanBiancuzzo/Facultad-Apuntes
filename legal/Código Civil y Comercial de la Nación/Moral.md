@@ -75,4 +75,4 @@ Es importante la aclaración que formula Giorgio del Vecchio respecto de los té
 ---
 Es ésta otra distinción importante. En la moral existen sanciones por el incumplimiento de sus imperativos, pero tienen más bien un carácter interno o subjetivo, carecen de la posibilidad de recurrir a la fuerza física, que sí existe en el derecho, y no están institucionalizadas
 
-En el derecho la sanción tiene un carácter externo, está institucionalizada y preestablecida claramente en las normas del sistema
+En el derecho la [[Sanción jurídica|sanción]] tiene un carácter externo, está institucionalizada y preestablecida claramente en las normas del sistema

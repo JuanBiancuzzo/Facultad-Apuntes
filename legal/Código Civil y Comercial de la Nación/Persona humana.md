@@ -9,6 +9,7 @@ La persona humana integra la sociedad y participa de su estructura jurídica. Es
 ![[Art. 19 del CC y CN, Comienzo de la existencia#Artículo]]
 
 Donde se sigue con el [[Art. 21 del CC y CN, Nacimiento con vida|Art. 21 del CC y CN]]
+
 ![[Art. 21 del CC y CN, Nacimiento con vida#Artículo]]
 
 El [[Art. 51 del CC y CN, Inviolabilidad de la persona humana|Art. 51 del CC y CN]] establece 

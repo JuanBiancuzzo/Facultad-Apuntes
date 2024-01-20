@@ -5,7 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-La relación jurídica se concibe como el vínculo entre [[Sujeto de derecho|sujetos de derecho]] ([[Sujeto de derecho#Sujeto activo|activo o titular]] – [[Sujeto de derecho#Sujeto pasivo|pasivo]]), nacido de un determinado hecho, definido por las [[Norma jurídica|normas jurídicas]], creador de facultades y [[Deber jurídico|deberes jurídicos]], cuyo objeto son ciertas prestaciones, garantizadas por la aplicación de una sanción
+La relación jurídica se concibe como el vínculo entre [[Sujeto de derecho|sujetos de derecho]] ([[Sujeto de derecho#Sujeto activo|activo o titular]] – [[Sujeto de derecho#Sujeto pasivo|pasivo]]), nacido de un determinado hecho, definido por las [[Norma jurídica|normas jurídicas]], creador de facultades y [[Deber jurídico|deberes jurídicos]], cuyo objeto son ciertas prestaciones, garantizadas por la aplicación de una [[Sanción jurídica|sanción]]
 
 La relación jurídica va acompañada de la de igualdad entre las partes que la conforman, el vínculo no implica ya el sometimiento de una de las partes a la voluntad de la otra.
 
