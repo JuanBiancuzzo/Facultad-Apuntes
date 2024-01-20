@@ -17,7 +17,7 @@
 	let nombre_ley = `Ley ${num_ley_original}, de la Constitución Nacional`;
 	let existe_ley = await tp.file.exists(`${carpeta}/${nombre_ley}.md`);
 	if (!existe_ley) {
-		let template = await tp.file.find_tfile("Ley - Template");
+		let template = await tp.file.find_tfile("legal/Ley - Template");
 		let carpeta_ley = await this.app.vault.getAbstractFileByPath(carpeta);
 		tp.file.create_new(template, nombre_ley, false, carpeta_ley);
 	}

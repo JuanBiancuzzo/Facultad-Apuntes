@@ -17,7 +17,7 @@
 
 	let resultado = [];
 	switch (de_donde) {
-		case CCYCN: resultado = await datosCCyCN(); break;
+		case CCYCN: resultado = await datosCCyCN(num_articulo); break;
 		case CP: resultado = datosCP(); break;
 		default: resultado = await datosCN();
 	}
@@ -28,8 +28,8 @@
 	let carpeta = resultado[1];
 	carpeta = `legal/Articulos/${carpeta}`;
 
-	let template_name = resultado[2];
-	let template = await tp.file.find_tfile(`Artículo ${template_name} - Template`);
+	let template = `legal/Artículo ${resultado[2]} - Template`;
+	template = await tp.file.find_tfile(template);
 	carpeta = await crearCarpeta(carpeta);
 	await tp.file.create_new(template, titulo, true, carpeta);
 
@@ -58,7 +58,7 @@
 		return [titulo, carpeta, template_name];
 	}
 
-	async function datosCCyCN() {
+	async function datosCCyCN(num_articulo) {
 		let carpeta = "Código Civil y Comercial de la Nación";
 	
 		const GRUPO_TITULO_PRELIMINAR = 0;
@@ -96,21 +96,21 @@
 		
 		let seccion = await tp.system.prompt("Sección: ");
 		if (seccion == "" || seccion == undefined) {
-			return datosCarpetaDefinidaDelCCyCN(carpeta);
+			return datosCarpetaDefinidaDelCCyCN(carpeta, num_articulo);
 		}
 		carpeta += `/Sección ${seccion}`;
 
 		let paragrafo = await tp.system.prompt("Parágrafo: ");
 		if (paragrafo == "" || paragrafo == undefined) {
-			return datosCarpetaDefinidaDelCCyCN(carpeta);
+			return datosCarpetaDefinidaDelCCyCN(carpeta, num_articulo);
 		}
 		carpeta += `/Parágrafo ${paragrafo}`;
 
-		return datosCarpetaDefinidaDelCCyCN(carpeta);
+		return datosCarpetaDefinidaDelCCyCN(carpeta, num_articulo);
 	}
 
-	async function datosCarpetaDefinidaDelCCyCN(carpeta) {
-		let nombre = await tp.system.prompt("Nombre: ");
+	async function datosCarpetaDefinidaDelCCyCN(carpeta, num_articulo) {
+		let nombre = await tp.system.prompt(`El Art. ${num_articulo} tiene de nombre: `);
 		let titulo = "del CC y CN, " + nombre;
 		let template_name = "CC y CN";
 

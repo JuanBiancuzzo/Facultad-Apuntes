@@ -69,7 +69,7 @@
 			return;	
 		}
 
-		let template = await tp.file.find_tfile(template_name);
+		let template = await tp.file.find_tfile(`legal/${template_name}`);
 		carpeta = await this.app.vault.getAbstractFileByPath(carpeta);
 		await tp.file.create_new(template, nombre, false, carpeta);
 	}
