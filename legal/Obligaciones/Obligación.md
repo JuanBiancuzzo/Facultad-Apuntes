@@ -105,24 +105,24 @@ El vinculo entre los [[Sujeto de derecho#Sujeto pasivo|sujetos pasivos]]
 
 ##### Obligaciones alternativas
 ---
-
+![[Libro Tercero, Título 1, Capítulo 3, Sección 3, Obligaciones alternativas#Artículos]]
 
 ##### Obligaciones facultativas
 ---
+![[Libro Tercero, Título 1, Capítulo 3, Sección 4, Obligaciones facultativas#Artículos]]
 
-
-##### Obligaciones con clausula penal
+##### Obligaciones con cláusula penal
 ---
-
+![[Libro Tercero, Título 1, Capítulo 3, Sección 5, Obligaciones con cláusula penal y sanciones conminatorias#Artículos]]
 
 ##### Obligaciones divisibles
 ---
-
+![[Libro Tercero, Título 1, Capítulo 3, Sección 6, Parágrafo 1, Obligaciones divisibles#Artículos]]
 
 
 ##### Obligaciones indivisibles
 ---
-
+![[Libro Tercero, Título 1, Capítulo 3, Sección 6, Parágrafo 2, Obligaciones indivisibles#Artículos]]
 
 #### Extinción de las obligaciones
 ---
@@ -131,8 +131,16 @@ Medios que satisfacen al acreedor
 * Novación
 	* ![[Libro Tercero, Título 1, Capítulo 5, Sección 3, Novación#Artículos]]
 * Compensación
-	* 
+	* ![[Libro Tercero, Título 1, Capítulo 5, Sección 1, Compensación#Artículos]]
 * Transacción
 	* Ejemplo: Arreglos extrajudiciales
 * Confusión
-	* 
+	* ![[Libro Tercero, Título 1, Capítulo 5, Sección 2, Confusión#Artículos]]
+
+Medios que no satisfacen al acreedor
+* Imposibilidad de pago
+	* ![[Libro Tercero, Título 1, Capítulo 5, Sección 6, Imposibilidad de cumplimiento#Artículos]]
+* Remisión de la deuda, renuncia de los derechos del acreedor
+	* ![[Libro Tercero, Título 1, Capítulo 5, Sección 5, Renuncia y remisión#Artículos]]
+* Prescripción
+	* Es un medio de adquirir un derecho, o de liberarse de una obligación por el transcurso del tiempo. En el caso de los [[Derechos creditorios o personales|derechos creditorios]] la prescripción es liberatoria. En el de los derechos reales se llama prescripción adquisitiva.

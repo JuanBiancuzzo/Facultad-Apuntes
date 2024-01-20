@@ -12,6 +12,8 @@ capitulo: 2
 
 ##### Solidaridad pasiva
 ---
+![[Libro Tercero, Título 1, Capítulo 3, Sección 7, Parágrafo 3, Solidaridad pasiva#Artículos]]
 
 ##### Solidaridad pasiva
 ---
+![[Libro Tercero, Título 1, Capítulo 3, Sección 7, Parágrafo 4, Solidaridad activa#Artículos]]
