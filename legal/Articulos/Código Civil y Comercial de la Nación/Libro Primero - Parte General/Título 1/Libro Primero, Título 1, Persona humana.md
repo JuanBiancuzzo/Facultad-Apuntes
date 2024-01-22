@@ -24,11 +24,14 @@ título: "Persona humana"
 				return !pagina.file.name.includes("Sección");
 			});
 
-		return [nombre, articulos.map(articulo => {
+		let path = pagina.file.path;
+		return [`${nombre} [[${path}|?]]`, articulos
+			.sort(articulo => articulo.num_articulo)
+			.map(articulo => {
+			let art_path = articulo.file.path;
 			let num_art = articulo.num_articulo;
 			let art_nombre = articulo.art_nombre;
-			let path = articulo.file.path;
-			return `Art. ${num_art}, ${art_nombre} [[${path}|?]]`;
+			return `Art. ${num_art}, ${art_nombre} [[${art_path}|?]]`;
 		})];
 	}));
 ```

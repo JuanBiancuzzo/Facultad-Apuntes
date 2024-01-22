@@ -62,5 +62,5 @@ El nuevo [[Código Civil y Comercial de la Nación (CC y CN)|Código Civil y Com
 
 #### Actos jurídicos de disposición
 ---
-![[Acto jurídico de disposición]]
+![[Acto jurídico de disposición#Definición]]
 
