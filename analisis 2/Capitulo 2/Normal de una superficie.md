@@ -5,9 +5,9 @@ capitulo: 2
 ---
 ### Definición
 ---
-Cuando teniamos una funcion de una variable [[La grafica de una funcion]], se veia como una cuerva tal que $p = (x_0, f(x_0))$ por lo tanto si queriamos la normal, lo veiamos como un vector perpendicular a la recta tangente en ese puento
+Cuando teníamos una [[Función|funcion]] de una variable [[Grafica de una función|la grafica de una función]], se veía como una cuerva tal que $p = (x_0, f(x_0))$ por lo tanto si queriamos la normal, lo veiamos como un vector perpendicular a la recta tangente en ese puento
 
-Cuando tenemos una [[Superficie]] ya no tenemos una recta tangente, sino un [[Plano tangente a una superficie]], por lo tanto vamos a usar las [[Derivadas direccionales]], especificamente en las direcciones $\hat{x}$ y $\hat{y}$ que son las [[Derivadas parciales]], para crear nuestro plano tangente a la superficie en el punto $p$
+Cuando tenemos una [[Superficie|superficie]] ya no tenemos una recta tangente, sino un [[Plano tangente|plano tangente a una superficie]], por lo tanto vamos a usar las [[Derivada direccional|derivadas direccionales]], específicamente en las direcciones $\hat{x}$ y $\hat{y}$ que son las [[Derivada parcial|derivadas parciales]], para crear nuestro plano tangente a la superficie en el punto $p$
 
 Siendo $p = (x_0, y_0)$, los vectores correspondientes a las derivadas parciales, son
 

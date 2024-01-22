@@ -19,4 +19,4 @@ La superficie de un cilindro
 ### Conceptos adicionales
 Sea $\Sigma$ la superficie de ecuacion $\vec{X} = \vec{F}(u, v)$ con $(u, v) \in D$
 
-![[Punto regular de una superficie#Definicion]] ![[Punto simple de una superficie#Definicion]] ![[Plano tangente a una superficie]] ![[Recta normal a una superficie]]
+![[Punto regular de una superficie#Definicion]] ![[Punto simple de una superficie#Definicion]] ![[Plano tangente]] ![[Recta normal a una superficie]]

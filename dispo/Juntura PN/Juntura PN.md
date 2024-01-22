@@ -7,12 +7,52 @@ capitulo: 2
 ---
 Una juntura PN se refiere a la unión entre una [[Impureza aceptora#Cantidad de dopante|semiconductor tipo p]] y un [[Impureza donora#Cantidad de dopante|semiconductor tipo n]]
 
-![[Juntura PN.png|450]]
+```tikz
+\begin{document} 
+	\begin{tikzpicture}[scale=1.5, transform shape, thick]
+		\filldraw[fill=black!70] (-3, 0) rectangle +(0.3, 3);
+		\draw (-2.7, 0) rectangle +(2.7, 3);
+		\draw (0, 0) rectangle +(2.7, 3);
+		\filldraw[fill=black!70] (2.7, 0) rectangle +(0.3, 3);
+
+		\draw (0, -0.1) -- ++(0, -0.2)
+			-- ++(0, -0.2) node[below=2pt] {$x = 0$};
+		\draw[->] (0, -0.3) -- ++(0.7, 0)
+			node[right=2pt] {$x$};
+
+		\path (-2.7, 3) node[below right=2pt] {$(N_a)$};
+		\path (-2.7, 0) node[above right=2pt] {p};
+		\path ( 2.7, 3) node[below left=2pt] {$(N_d)$};
+		\path ( 2.7, 0) node[above left=2pt] {n};
+
+		\node[text width=3cm, text centered] (p) at (-2.85, -1) 
+			{Contacto de metal del lado p};
+		\draw[->] (p.north) -- (-2.85, -0.1); 
+		\node[text width=3cm, text centered] (n) at ( 2.85, -1) 
+			{Contacto de metal del lado n};
+		\draw[->] (n.north) -- (2.85, -0.1); 
+	\end{tikzpicture}
+\end{document}
+```
 
 Su distribución de dopantes en una juntura PN es abrupta
 
-![[Distribución de dopantes en una juntura PN.png|600]]
-
+```tikz
+\begin{document} 
+	\begin{tikzpicture}[scale=1.5, transform shape, thick]
+		\draw[->] (-3.5, 0) -- (3.5, 0)
+			node[below right=2pt] {$x$};
+		\draw[->] (0, -0.1) node[below=2pt] {$0$}
+			-- (0, 3.5) node[left=2pt] {$N$};
+		\draw[ultra thick] (0, 2.5) -- ++(-2.8, 0)
+			node[midway, above=2pt] {p-region}
+			node[left=2pt] {$N_a$};
+		\draw[ultra thick] (0, 2) -- ++(2.8, 0)
+			node[midway, above=2pt] {n-region}
+			node[right=2pt] {$N_d$};
+	\end{tikzpicture}
+\end{document}
+```
 Donde podemos decir $$ 
 N_a(x) = \begin{cases} 
 	N_a & x \le 0 \\

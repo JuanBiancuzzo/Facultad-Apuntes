@@ -17,12 +17,14 @@ Es decir que vamos a hacer la derivada de la variable que elijamos y vamos a tom
 
 $$ \frac{\partial f}{\partial x_i}(x_{0_0}, x_{1_0}, \cdots, x_{n_0}) = \lim_{h \to 0} \frac{f(x_{0_0}, x_{1_0}, \cdots, x_{i_0} + h , \cdots, x_{n_0}) - f(x_{0_0}, x_{1_0}, \cdots, x_{n_0})}{h} $$
 
-Tambien lo podemos como un caso especifico de una [[Derivadas direccionales]] en las direcciones de los versores $\hat{x_i}$
+Tambien lo podemos como un caso especifico de una [[Derivada direccional|derivada direccional]] en las direcciones de los versores $\hat{x_i}$
 
-Ahora podremos ver las [[Derivadas parciales de ordenes superiores]]
+Ahora podremos ver las [[Derivada parcial de orden superior|derivadas parciales de ordenes superiores]]
 
-#### Resolucion
-Hay algunos casos, donde la resolucion se ve complijeda ya que no se pueden aplicar las reglas basicas de la derivacion. 
+#### Resolución
+---
+Hay algunos casos, donde la resolución se ve complejidad ya que no se pueden aplicar las reglas básicas de la derivación. 
 
-Por ejemplo, dado la [[Composicion de funciones]], que nos lleva a aplicar la [[Regla de la cadena]], de la siguiente forma
-![[Regla de la cadena]]
+Por ejemplo, dado la [[Composición de funciones]], que nos lleva a aplicar la [[Regla de la cadena|regla de la cadena]], de la siguiente forma
+
+![[Regla de la cadena#Definición]]

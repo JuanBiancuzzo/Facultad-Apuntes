@@ -7,7 +7,7 @@ capitulo: 5
 ---
 En este caso, vamos a aplicar el [[Analisis de extremos locales para campos escalares]], cuando sus variables deben cumplir ciertas condiciones, denominadas **condiciones de vinculo** entre las mismas
 
-La forma mas directa de resolver estas situaciones, consiste en imponer la condicion o condiciones de vinculo mediante la [[Composicion de funciones]]
+La forma mas directa de resolver estas situaciones, consiste en imponer la condicion o condiciones de vinculo mediante la [[Composición de funciones]]
 
 Vamos a tener una expresion a maximar, que llamaremos $f(x, y)$  y una condicion de vinculo que llamaremos $\vec{g}$ y sera una [[Funciones implicitas]], esta va a tener un dominio reducido
 

@@ -5,7 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-La recta normal es aquella que pase por el punto $(x_0, y_0)$ en la direccion [[Normal de una superficie]], y perpendicular al [[Plano tangente a una superficie]], dando a la recta de ecuacion
+La recta normal es aquella que pase por el punto $(x_0, y_0)$ en la dirección [[Normal de una superficie|normal de una superficie]], y perpendicular al [[Plano tangente|plano tangente a una superficie]], dando a la recta de ecuación
 
 $$ r_n = (x_0, y_0, f(x_0, y_0)) + \bigg( -\frac{\partial f}{\partial x}(x_0, y_0), -\frac{\partial f}{\partial y}(x_0, y_0), 1 \bigg) \cdot t $$
 

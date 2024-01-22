@@ -15,7 +15,7 @@ capítulo: "1"
 
 ### Interpretación
 ---
-Esta última expresión pone de relieve la protección jurídica del acuerdo y la posible aplicación derivada del incumplimiento normativo que es la [[Sanción jurídica|sanción jurídica]], impuesta por el [[Poder Judicial|órgano jurisdiccional]] competente instado por la [[|acción procesal]] en defensa de los derechos lesionados
+Esta última expresión pone de relieve la protección jurídica del acuerdo y la posible aplicación derivada del incumplimiento normativo que es la [[Sanción jurídica|sanción jurídica]], impuesta por el [[Poder Judicial|órgano jurisdiccional]] competente instado por la [[Acción procesal|acción procesal]] en defensa de los derechos lesionados
 
 Es un [[Relación jurídica|vínculo jurídico]]
 * Dos partes (acreedor/deudor)

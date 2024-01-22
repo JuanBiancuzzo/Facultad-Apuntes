@@ -24,12 +24,12 @@ de donde (al tomar limite cuando $h \to 0$) se puede ver facilmente la equivalen
 ### Informativas
  * Si $f$ es diferenciable en el punto $a$, entonces $f$ es continua en $a$
  * Si $f$ es diferenciable en el punto $a$, entonces $f$ es derivable en $a$
- * Si $f$ es diferenciable en $x_0$, entonces existen todas las derivadas direccionales (calcular con la definicion de [[Derivadas direccionales]]) y vale que $\nabla f(x_0) \cdot \hat{v}$
+ * Si $f$ es diferenciable en $x_0$, entonces existen todas las derivadas direccionales (calcular con la definicion de [[Derivada direccional]]) y vale que $\nabla f(x_0) \cdot \hat{v}$
 ### Calificativas
  * Una funcion vectorial es diferenciable en un punto si, y solo si, sus componentes son diferenciables en dicho punto
  * Sea $f : U \subseteq \mathbb{R}^n \to \mathbb{R}$ con $n > 1$, si $f \in C^1(E(\vec{a}))$ entonces $f$ es diferenciable en $\vec{a}$
  * $D\vec{f}$ (la [[Jacobiana]] de $f$) continua en un conjunto $H$ es equivalente a $\vec{f} \in C^1(H)$ => $\vec{f}$ diferenciable en $H$
- * Es diferenciable si existen todas las [[Derivadas direccionales]] y son lineales
+ * Es diferenciable si existen todas las [[Derivada direccional]] y son lineales
 
 ---
 ## Notas

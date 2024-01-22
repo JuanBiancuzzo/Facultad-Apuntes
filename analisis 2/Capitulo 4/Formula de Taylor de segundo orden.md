@@ -5,7 +5,7 @@ capitulo: 4
 ---
 ### Definición
 ---
-Sea $f : U \subseteq \mathbb{R}^n \to \mathbb{R}$ una funcion definida en el conjunto abierto $U$ de $\mathbb{R}$, tal que las [[Derivadas parciales de ordenes superiores]], (de segundo orden) son continuas en alguna [[Disco abierto]] $B$ con centro en $\vec{x} \in U$
+Sea $f : U \subseteq \mathbb{R}^n \to \mathbb{R}$ una funcion definida en el conjunto abierto $U$ de $\mathbb{R}$, tal que las [[Derivada parcial de orden superior]], (de segundo orden) son continuas en alguna [[Disco abierto]] $B$ con centro en $\vec{x} \in U$
 
 Entonces, para todo $x \in \mathbb{R}^n$ tal que $\vec{x} + x \in U$ se tiene la formula
 

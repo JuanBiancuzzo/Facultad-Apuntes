@@ -9,7 +9,7 @@ Sea $g : V \subseteq \mathbb{R}^m \to \mathbb{R}^n$ una funcion definida en el c
 
 Sea $f : U \subseteq \mathbb{R}^n \to \mathbb{R}$ una funcion definida en el conjunto abierto $U$ de $\mathbb{R}^n$, tal que $g(V) \subseteq U$, [[Diferenciable]] en el punto $g(x_0) \in U$.
 
-Entonces la [[Composicion de funciones]] $f \circ g: V \subseteq \mathbb{R}^m \to \mathbb{R}$ es [[Diferenciable]] en $x_0$ y sus [[Derivadas parciales]] son
+Entonces la [[Composición de funciones]] $f \circ g: V \subseteq \mathbb{R}^m \to \mathbb{R}$ es [[Diferenciable]] en $x_0$ y sus [[Derivada parcial]] son
 
 $$ \frac{\partial}{\partial x_j}(f \circ g)(x_0) = \sum_{i = 1}^n \frac{\partial f}{\partial y_i}(g(x_0))\frac{\partial g_i}{\partial x_j}(x_0), j = 1, 2, \cdots, m $$
 

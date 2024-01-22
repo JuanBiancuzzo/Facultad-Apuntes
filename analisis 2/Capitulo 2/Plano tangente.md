@@ -5,11 +5,11 @@ capitulo: 2
 ---
 ### Definición
 ---
-Como con funciones de una variable, donde la derivada nos daba la pendiente de la recta tangente, por lo tanto podriamos construirla
+Como con funciones de una variable, donde la derivada nos daba la pendiente de la recta tangente, por lo tanto podríamos construirla
 
-El equivalente seria el plano tangente en un punto $(x_0, y_0)$, en una funcion tal que cualquier punto se pueda escribir $(x_0, y_0, f(x_0, y_0))$
+El equivalente seria el plano tangente en un punto $(x_0, y_0)$, en una [[Función|función]] tal que cualquier punto se pueda escribir $(x_0, y_0, f(x_0, y_0))$
 
-El plano tangente, tiene que tener como normal $N_p = \bigg( -\frac{\partial f}{\partial x}(x_0, y_0), -\frac{\partial f}{\partial y}(x_0, y_0), 1 \bigg)$ ([[Normal de una superficie]]), entonces sabiendo la normal, podemos llegar a la ecuacion que es 
+El plano tangente, tiene que tener como normal $N_p = \bigg( -\frac{\partial f}{\partial x}(x_0, y_0), -\frac{\partial f}{\partial y}(x_0, y_0), 1 \bigg)$ ([[Normal de una superficie]]), entonces sabiendo la normal, podemos llegar a la ecuación que es 
 
 $$ z = f(x_0, y_0) + \frac{\partial f}{\partial x}(x_0, y_0)(x - x_0) + \frac{\partial f}{\partial y}(x_0, y_0)(y - y_0) $$
 

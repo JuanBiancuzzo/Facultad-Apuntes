@@ -30,4 +30,4 @@ $$ d^if(\vec{A}, \vec{X} - \vec{A}) = \bigg[ \frac{\partial}{\partial x_1} (x_1 
 El polinomio $p_j(\vec{X})$ que permite expresar $f(\vec{X}) \approx p_j(\vec{X})$ con $\vec{X} \in E(\vec{A})$ 
 
  * $p_j(\vec{A}) = f(\vec{A})$
- * Hasta el orden $j$ inclusive, las [[Derivadas parciales]] de $p_j$ en $\vec{A}$ son iguales a las correspondientes derivadas parciales de $f$ en dicho punto
+ * Hasta el orden $j$ inclusive, las [[Derivada parcial]] de $p_j$ en $\vec{A}$ son iguales a las correspondientes derivadas parciales de $f$ en dicho punto

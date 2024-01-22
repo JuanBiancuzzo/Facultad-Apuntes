@@ -15,6 +15,27 @@ Al colocar juntos a los [[Semiconductor|semiconductores]] de [[Impureza donora#C
 * Por acción del [[Campo eléctrico]], aparece una [[Corriente de arrastre|corriente de arrastre]]
 
 En equilibrio térmico, la [[Corriente de arrastre|corriente de arrastre]] contrarresta la [[Corriente de difusión|corriente de difusión]] $$ J_\text{arr}(x) = - J_\text{dif}(x) $$
+```tikz
+\begin{document} 
+	\begin{tikzpicture}[scale=1.5, transform shape, thick]
+		\draw[->] (-3.5, 0) -- (3.5, 0)
+			node[below right=2pt] {$x$};
+		\draw[->] (0, -0.1) node[below=2pt] {$0$}
+			-- (0, 3.5) node[left=2pt] {$\log p_0, n_0$};
+			
+		\draw[dashed] (0, 2.8) -- ++(-2.8, 0)
+			node[left=2pt] {$N_a$};
+		\draw[dashed] (0, .4) -- ++(-2.8, 0)
+			node[left=2pt] {$\frac{n_i^2}{N_a}$};
+		
+		\draw[dashed] (0, 2.4) -- ++(2.8, 0)
+			node[right=2pt] {$N_d$};
+		\draw[dashed] (0, 0.8) -- ++(2.8, 0)
+			node[right=2pt] {$\frac{n_i^2}{N_d}$};
+	\end{tikzpicture}
+\end{document}
+```
+
 ![[Distribución de dopantes en una juntura PN en equilibrio térmico con región de carga espacial.png|600]]
 
 Notemos que lejos de la juntura metalúrgica, se comporta como un semiconductor solo. Estas regiones se llaman Regiones cuasi-neutrales (QNR's). Mientras que alrededor de la juntura metalúrgica, las corriente de arrastre debe cancelar a la de difusión creando la Región de carga espacial (SCR)
