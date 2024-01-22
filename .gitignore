@@ -3,6 +3,6 @@
 .obsidian/appearance.json                     
 .obsidian/backlink.json                     
 
-.obsidian/obsidian-git/data.json
-.obsidian/dataview/data.json
-.obsidian/os-clear-unused-images/data.json
+.obsidian/plugins/obsidian-git/data.json
+.obsidian/plugins/dataview/data.json
+.obsidian/plugins/os-clear-unused-images/data.json
