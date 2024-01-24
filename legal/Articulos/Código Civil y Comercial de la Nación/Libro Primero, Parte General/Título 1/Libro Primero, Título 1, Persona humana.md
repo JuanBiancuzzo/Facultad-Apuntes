@@ -1,0 +1,55 @@
+---
+num_título: 1
+título: "Persona humana"
+---
+### Capítulos
+---
+```dataviewjs
+	let pagina_actual = dv.current();
+	let carpeta = pagina_actual.file.folder;
+	const paginas = dv.pages(`"${carpeta}"`)
+		.where(pagina => {
+			if (pagina.file.name.includes("Sección"))
+				return false;
+			return pagina.file.name.includes("Capítulo");
+		})
+		.sort(pagina => pagina.file.name.split(" ")[1]);
+
+	dv.table(["Capítulo", "Artículos"], paginas.map(pagina => {
+		let nombre = `Capítulo ${pagina.num_capítulo}`;
+		let articulos = dv.pages(`"${carpeta}/${nombre}"`)
+			.where(pagina => {
+				if (pagina.file.name.includes("Capítulo"))
+					return false;
+				if (pagina.file.name.includes("Sección"))
+					return false;
+				return !pagina.file.name.includes("Parágrafo");
+			}).sort(pagina => pagina.num_articulo);
+
+		let path = pagina.file.path;
+		return [`${nombre} [[${path}|?]]`, articulos
+			.sort(articulo => articulo.num_articulo)
+			.map(articulo => {
+			let art_path = articulo.file.path;
+			let num_art = articulo.num_articulo;
+			let art_nombre = articulo.art_nombre;
+			return `Art. ${num_art}, ${art_nombre} [[${art_path}|?]]`;
+		})];
+	}));
+```
+
+### Artículos
+---
+```dataviewjs
+	let pagina_actual = dv.current();
+	let carpeta = `"${pagina_actual.file.folder}"`;
+	const paginas = dv.pages(carpeta)
+		.where(pagina => pagina.file.name != pagina_actual.file.name && pagina.num_articulo)
+		.sort(pagina => pagina.num_articulo);
+
+	dv.table(["Artículo", "Contenido"], paginas.map(pagina => {
+		let articulo = `Art. ${pagina.num_articulo} [[${pagina.file.path}|?]]`;
+		let contenido = pagina.art;
+		return [articulo, contenido];
+	}));
+```

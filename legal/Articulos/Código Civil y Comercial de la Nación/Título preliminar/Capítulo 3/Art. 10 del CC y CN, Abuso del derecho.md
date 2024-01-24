@@ -6,6 +6,9 @@ art: El ejercicio regular de un derecho propio o el cumplimiento de una obligaci
 incisos: 
 título: preliminar
 capítulo: "3"
+listado:
+ - "[[Título preliminar|Título preliminar]]"
+ - "[[Título preliminar, Capítulo 3, Ejercicio de los derechos|Capítulo 3]]"
 ---
 ### Artículo
 ---

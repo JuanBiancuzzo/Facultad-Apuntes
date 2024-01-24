@@ -6,6 +6,9 @@ art: "Los casos que este Código rige deben ser resueltos según las leyes que r
 incisos: 
 título: "preliminar"
 capítulo: "1"
+listado:
+ - "[[Título preliminar|Título preliminar]]"
+ - "[[Título preliminar, Capítulo 1, Derecho|Capítulo 1]]"
 ---
 ### Artículo
 ---

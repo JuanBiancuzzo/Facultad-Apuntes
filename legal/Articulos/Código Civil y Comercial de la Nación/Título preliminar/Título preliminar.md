@@ -26,9 +26,9 @@ título: "preliminar"
 				if (pagina.file.name.includes("Sección"))
 					return false;
 				return !pagina.file.name.includes("Parágrafo");
-			});
+			}).sort(pagina => pagina.num_articulo);
 
-		return [nombre, articulos.map(articulo => {
+		return [`${nombre} [[${pagina.file.path}|?]]`, articulos.map(articulo => {
 			let num_art = articulo.num_articulo;
 			let art_nombre = articulo.art_nombre;
 			let path = articulo.file.path;
@@ -43,7 +43,7 @@ título: "preliminar"
 	let pagina_actual = dv.current();
 	let carpeta = `"${pagina_actual.file.folder}"`;
 	const paginas = dv.pages(carpeta)
-		.where(pagina => pagina.file.name != pagina_actual.file.name && pagina.título)
+		.where(pagina => pagina.file.name != pagina_actual.file.name && pagina.num_articulo)
 		.sort(pagina => pagina.num_articulo);
 
 	dv.table(["Artículo", "Contenido"], paginas.map(pagina => {

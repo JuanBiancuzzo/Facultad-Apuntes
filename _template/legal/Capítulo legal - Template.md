@@ -33,7 +33,7 @@
 				if (pagina.file.name.includes("Sección"))
 					return false;
 				return !pagina.file.name.includes("Parágrafo");
-			});
+			}).sort(pagina => pagina.num_articulo);
 
 		return [nombre, articulos.map(articulo => {
 			let num_art = articulo.num_articulo;

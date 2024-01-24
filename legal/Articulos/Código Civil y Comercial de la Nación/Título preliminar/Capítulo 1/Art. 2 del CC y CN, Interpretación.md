@@ -6,8 +6,10 @@ art: "La ley debe ser interpretada teniendo en cuenta sus palabras, sus finalida
 incisos: 
 título: "preliminar"
 capítulo: "1"
+listado:
+ - "[[Título preliminar|Título preliminar]]"
+ - "[[Título preliminar, Capítulo 1, Derecho|Capítulo 1]]"
 ---
-
 ### Artículo
 ---
 "La [[Ley|ley]] debe ser [[Ley#Interpretación|interpretada]] teniendo en cuenta sus palabras, sus finalidades, las leyes análogas, las disposiciones que surgen de los tratados sobre [[Derechos humanos|derechos humanos]], los principios y los valores jurídicos, de modo coherente con todo el [[Ordenamiento jurídico|ordenamiento]]."

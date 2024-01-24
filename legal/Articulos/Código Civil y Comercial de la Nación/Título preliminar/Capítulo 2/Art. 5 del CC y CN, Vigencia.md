@@ -6,6 +6,9 @@ art: "Las leyes rigen después del octavo día de su publicación oficial, o des
 incisos: 
 título: "preliminar"
 capítulo: "2"
+listado:
+ - "[[Título preliminar|Título preliminar]]"
+ - "[[Título preliminar, Capítulo 2, Ley|Capítulo 2]]"
 ---
 ### Artículo
 ---

@@ -6,8 +6,10 @@ art: "A partir de su entrada en vigencia, las leyes se aplican a las consecuenci
 incisos: 
 título: "preliminar"
 capítulo: "2"
+listado:
+ - "[[Título preliminar|Título preliminar]]"
+ - "[[Título preliminar, Capítulo 2, Ley|Capítulo 2]]"
 ---
-
 ### Artículo
 ---
 "A partir de su [[Art. 5 del CC y CN, Vigencia|entrada en vigencia]], las [[Ley|leyes]] se aplican a las consecuencias de las [[Relación jurídica|relaciones jurídicas]] o [[Situación jurídica|situaciones jurídicas]] existentes.  

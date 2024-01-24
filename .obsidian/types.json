@@ -7,6 +7,8 @@
     "incisos": "multitext",
     "num_ley": "number",
     "capitulo": "number",
-    "capítulo": "text"
+    "capítulo": "number",
+    "título": "number",
+    "listado": "multitext"
   }
 }

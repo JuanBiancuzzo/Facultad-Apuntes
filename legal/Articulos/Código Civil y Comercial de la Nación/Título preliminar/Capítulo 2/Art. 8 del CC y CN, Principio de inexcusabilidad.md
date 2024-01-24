@@ -6,6 +6,9 @@ art: "La ignorancia de las leyes no sirve de excusa para su cumplimiento, si la 
 incisos: 
 título: "preliminar"
 capítulo: "2"
+listado:
+ - "[[Título preliminar|Título preliminar]]"
+ - "[[Título preliminar, Capítulo 2, Ley|Capítulo 2]]"
 ---
 ### Artículo
 ---

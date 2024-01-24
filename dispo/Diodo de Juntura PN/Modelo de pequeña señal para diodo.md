@@ -40,7 +40,7 @@ Donde se definen dos capacidades
 
 #### Rango de validez
 ---
-El [[Error]] que cometemos entre el valor estimado de la señal $i_d(t)$ y el valor real $i_D(t) - I_D$ queremos que sea pequeño, suponiendo que queremos un $10\%$  respecto de la variación real diremos que $$ ((i_D(t) - I_D) - i_d(t)) < 10\% ~ (i_D(t) - I_D) $$
+El [[Propagación de errores]] que cometemos entre el valor estimado de la señal $i_d(t)$ y el valor real $i_D(t) - I_D$ queremos que sea pequeño, suponiendo que queremos un $10\%$  respecto de la variación real diremos que $$ ((i_D(t) - I_D) - i_d(t)) < 10\% ~ (i_D(t) - I_D) $$
 Pero esta inecuación no tiene solución, por lo que podemos encontrar una [[Cota superior]] a este error, aplicando la [[Serie de Taylor|serie de Taylor]], ya que notemos que $$ \underbrace{
 	(\underbrace{i_D(t)}_{\displaystyle\sum_{n = 0}^\infty \frac{f^{(n)}(V_D)}{n!} v_d(t)^n} - 
 	\underbrace{(I_D + i_d(t))}_{\displaystyle\sum_{n = 0}^1 \frac{f^{(n)}(V_D)}{n!} v_d(t)^n })

@@ -73,12 +73,12 @@
 			"Libro Sexto - Disposiciones comunes a los Derechos personales y reales"
 		], [
 			GRUPO_TITULO_PRELIMINAR, 
-			"Libro Primero - Parte General", 
-			"Libro Segundo - Relaciones de Familia", 
-			"Libro Tercero - Derechos Personales", 
-			"Libro Cuarto - Derechos Reales", 
-			"Libro Quinto - Transmisión de Derechos por causa de muerte", 
-			"Libro Sexto - Disposiciones comunes a los Derechos personales y reales"
+			"Libro Primero, Parte General", 
+			"Libro Segundo, Relaciones de Familia", 
+			"Libro Tercero, Derechos Personales", 
+			"Libro Cuarto, Derechos Reales", 
+			"Libro Quinto, Transmisión de Derechos por causa de muerte", 
+			"Libro Sexto, Disposiciones comunes a los Derechos personales y reales"
 		]);
 
 		if (grupo != GRUPO_TITULO_PRELIMINAR) {	

@@ -7,7 +7,7 @@ capitulo: 4
 ---
 Una función $f : D \to \mathbb{C}$ definida en un [[Conjunto abierto]] $D \subseteq \mathbb{C}$ se dice localmente inversible en $D$ sii para cada $z_0 \in D$ existen abiertos $U_0$ y $V_0$ tales que 
 1) $z_0 \in U_0$, $f(z_0) \in V_0$, $U_0 \subseteq D$
-2) La restricción de $f$ a $U_0$ es una [[Función biyecctiva]] $f_{|U_0}: U_0 \to V_0$
+2) La restricción de $f$ a $U_0$ es una [[Función biyectiva]] $f_{|U_0}: U_0 \to V_0$
 
 Cada inversa $f_{|U_0}^{-1} : V_0 \to U_0$ se denomina inversa local de $f$ en un entorno del punto $z_0$.
 

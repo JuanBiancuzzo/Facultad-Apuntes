@@ -2,7 +2,6 @@
 cuatri: 24C1
 estado: cursando
 ---
-
 ### Apuntes
 ---
 ```dataviewjs
@@ -33,6 +32,28 @@ estado: cursando
 			return ["[[" + path + "|" + nombre + "]]"];
 		}));
 
+		dv.el("br", "");
+	}
+```
+### Artículos
+---
+```dataviewjs
+	function conseguir_nombre(unidad) {
+		return unidad.rows[0].cuerpo_legal;
+	}
+
+	const unidades = dv.pages('"legal/Articulos"')
+		.where(pagina => pagina.cuerpo_legal)
+		.sort(pagina => pagina.num_articulo)
+		.groupBy(pagina => pagina.cuerpo_legal);
+		
+	for (let unidad of unidades) {		
+		dv.header(3, conseguir_nombre(unidad));
+		dv.table(["Artículos", "Contenido"], (unidad.rows).map(pagina => {
+			let articulo = `[[${pagina.file.path}|Art. ${pagina.num_articulo}]]`;
+			let contenido = pagina.art;
+			return [articulo, contenido];
+		}));
 		dv.el("br", "");
 	}
 ```

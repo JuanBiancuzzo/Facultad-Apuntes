@@ -41,7 +41,7 @@
 		.sort(pagina => pagina.file.name.split(" ")[1]);
 
 	dv.table(["Título", "Artículos"], paginas.map(pagina => {
-		let nombre = `Título ${pagina.título}`;
+		let nombre = `Título ${pagina.num_título}`;
 		let articulos = dv.pages(`"${carpeta}/${nombre}"`)
 			.where(pagina => {
 				if (pagina.file.name.includes("Título"))
@@ -51,9 +51,10 @@
 				if (pagina.file.name.includes("Sección"))
 					return false;
 				return !pagina.file.name.includes("Parágrafo");
-			});
+			})
+			.sort(pagina => pagina.num_título);
 
-		return [nombre, articulos.map(articulo => {
+		return [`${nombre} [[${pagina.file.path}|?]]`, articulos.map(articulo => {
 			let num_art = articulo.num_articulo;
 			let art_nombre = articulo.art_nombre;
 			let path = articulo.file.path;

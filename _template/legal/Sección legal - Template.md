@@ -25,7 +25,8 @@
 	dv.table(["Parágrafo", "Artículos"], paginas.map(pagina => {
 		let nombre = `Parágrafo ${pagina.num_parágrafo}`;
 		let articulos = dv.pages(`"${carpeta}/${nombre}"`)
-			.where(pagina => !pagina.file.name.includes("Parágrafo"));
+			.where(pagina => !pagina.file.name.includes("Parágrafo"))
+			.sort(pagina => pagina.num_articulo);
 
 		return [nombre, articulos.map(articulo => {
 			let num_art = articulo.num_articulo;

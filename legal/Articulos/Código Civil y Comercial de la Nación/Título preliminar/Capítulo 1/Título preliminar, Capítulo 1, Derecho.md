@@ -8,7 +8,7 @@ capítulo: "Derecho"
 	let pagina_actual = dv.current();
 	let carpeta = `"${pagina_actual.file.folder}"`;
 	const paginas = dv.pages(carpeta)
-		.where(pagina => pagina.file.name != pagina_actual.file.name && pagina.título)
+		.where(pagina => pagina.file.name != pagina_actual.file.name && pagina.num_articulo)
 		.sort(pagina => pagina.num_articulo);
 
 	dv.table(["Artículo", "Contenido"], paginas.map(pagina => {

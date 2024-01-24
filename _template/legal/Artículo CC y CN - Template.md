@@ -30,6 +30,7 @@
 	let posicion = 3;
 	const partes = ["Libro", "Título", "Capítulo", "Sección", "Parágrafo"];
 	let nombre_acumulado = "";
+	let grupos = [];
 
 	for (let i in partes) {
 		let nombre_carpeta = carpetas[posicion];
@@ -48,16 +49,17 @@
 		posicion += 1;
 
 		let categoria = parte.toLowerCase();
-		let valor = "";
+		let valor = nombre_carpeta.replace(parte, "").trim();
+		let grupo = valor;
 		if (nombre_carpeta.startsWith("Libro")) {
-			valor = nombre_carpeta.split("-")[0].trim();
-			nombre_acumulado += `${nombre_carpeta.split("-")[0].trim()}, `;		
-			
+			valor = nombre_carpeta.split(",")[0].trim();
+			nombre_acumulado += `${nombre_carpeta.split(",")[0].trim()}, `;	
+			grupo = valor.split(" ")[1];
 		} else {
-			valor = nombre_carpeta.replace(parte, "").trim();
 			nombre_acumulado += `${nombre_carpeta}, `;
 		}
-		
+
+		grupos.push([grupo, parte]);
 		tR += `${categoria}: "${valor}"\n`;
 	}
 
@@ -73,9 +75,49 @@
 		carpeta = await this.app.vault.getAbstractFileByPath(carpeta);
 		await tp.file.create_new(template, nombre, false, carpeta);
 	}
+
+	grupos = grupos.filter(grupo => grupo[0] != undefined)
+				  .map(grupo => [`${grupo[1]} ${grupo[0]}`, grupo[1]]);
+
+	let listado = app.vault.getMarkdownFiles().filter(archivo => {
+		return archivo.path.startsWith("legal/Articulos/Código Civil y Comercial de la Nación"); 
+	}).filter(archivo => {
+		if (archivo.basename.startsWith("Art.")) {
+			return false;
+		}
+
+		let enCamino = grupos.length > 0;
+		let any = false;
+		for (let [grupo, nombre] of grupos) {			
+			if (archivo.basename.includes(nombre)) {
+				let hay_igual = archivo.basename.includes(grupo);
+				enCamino &= hay_igual;
+				any |= hay_igual;
+			}	
+		}
+		return enCamino && any;
+	});
 	
+	tR += "listado:\n";
+
+	let links = listado.map(archivo => {
+		let grupoActual = grupos[0][0];
+		for (let [grupo, nombre] of grupos) {
+			if (!archivo.basename.includes(grupo)) {
+				return `[[${archivo.basename}|${grupoActual}]]`;
+			} else {
+				grupoActual = grupo;
+			}
+		}
+		return `[[${archivo.basename}|${grupoActual}]]`;
+	});
+
+	for (let link of links) {
+		tR += ` - "${link}"\n`;
+	}
 	tR += "---";
 %>
+
 ### Artículo
 ---
 <%*

@@ -6,6 +6,9 @@ art: "El juez debe resolver los asuntos que sean sometidos a su jurisdicción me
 incisos: 
 título: "preliminar"
 capítulo: "1"
+listado:
+ - "[[Título preliminar|Título preliminar]]"
+ - "[[Título preliminar, Capítulo 1, Derecho|Capítulo 1]]"
 ---
 ### Artículo
 ---

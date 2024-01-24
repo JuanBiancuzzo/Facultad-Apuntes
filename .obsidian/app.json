@@ -12,5 +12,9 @@
     "dispo/Transistor bipolar de juntura/img/",
     "dispo/Transistor MOSFET/img/",
     "_template/"
-  ]
+  ],
+  "autoPairMarkdown": false,
+  "showLineNumber": false,
+  "strictLineBreaks": false,
+  "propertiesInDocument": "source"
 }

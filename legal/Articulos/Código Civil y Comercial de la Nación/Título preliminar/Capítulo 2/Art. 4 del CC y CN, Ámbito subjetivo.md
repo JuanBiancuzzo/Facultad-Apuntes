@@ -6,8 +6,10 @@ art: Las leyes son obligatorias para todos los que habitan el territorio de la R
 incisos: 
 título: preliminar
 capítulo: "2"
+listado:
+ - "[[Título preliminar|Título preliminar]]"
+ - "[[Título preliminar, Capítulo 2, Ley|Capítulo 2]]"
 ---
-
 ### Artículo
 ---
 "Las [[Ley|leyes]] son obligatorias para todos los que habitan el territorio de la [[República Argentina|República]], sean ciudadanos o extranjeros, residentes, domiciliados o transeúntes, sin perjuicio de lo dispuesto en leyes especiales."
