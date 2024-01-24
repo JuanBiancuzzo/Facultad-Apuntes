@@ -23,10 +23,23 @@ Supongamos que $X$ es una [[Variable aleatoria continua]]que toma todos los valo
 	k & \text{ si } a < x < b \\
 	0 & \text{ en otro caso }
 \end{cases} $$
-![[Distribución uniforme imagen.png]]
+```tikz
+\begin{document} 
+	\begin{tikzpicture}[scale=1.5, transform shape, thick]
+		\draw[->] (-0.5, 0) -- (2.75, 0);
+		\draw[->] (0, -0.5) -- (0, 1.5)
+			node[above=2pt] {$f_x(x)$};
+		\filldraw[fill=green!20!black, opacity=50] (0.75, 0) 
+			rectangle (2, 0.8);
+		\draw[dashed] (0, 0.8) node[left=2pt] {$k$} -- (0.75, 0.8);
+		\path (0.75, 0) node[below=2pt] {$a$};
+		\path (2, 0) node[below=2pt] {$b$};
+	\end{tikzpicture}
+\end{document}
+```
 
 Por definición sabemos que $$ \int_{-\infty}^{\infty}f_X(x)dx = 1$$
-Por lo que en nuesto caso, eso da que $$ (a - b) \cdot k = 1 $$ 
+Por lo que en nuestro caso, eso da que $$ (a - b) \cdot k = 1 $$ 
 Entonces podemos encontrar el valor de $k$ como $$ k = \frac{1}{a - b} $$
 #### Relaciones
 ---

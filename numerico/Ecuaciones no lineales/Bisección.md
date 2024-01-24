@@ -5,13 +5,13 @@ capitulo: 2
 ---
 ### Definición
 ---
-Se tiene $f(\alpha) = 0$ donde se busca $\alpha$ en un intervalo $[a, b]$ donde se presupone que existe una unica raiz en dicho intervalo, y por lo tanto $f(a) \cdot f(b) < 0$.
+Se tiene $f(\alpha) = 0$ donde se busca $\alpha$ en un intervalo $[a, b]$ donde se presupone que existe una única raíz en dicho intervalo, y por lo tanto $f(a) \cdot f(b) < 0$.
 
 Para cada iteración se estima el punto medio como $$ m_k = \frac{a_k + b_k}{2} $$ en donde si $f(m_k) = 0$ entonces encontramos nuestra raíz, sino seguimos iterando, de la siguiente forma $$ \left(a_{k+1}, b_{k+1} \right) = \begin{cases} 
-	\left(a_k, m_k \right) & \text{si} ~~~ f(a_k) \cdot f(m_k) < 0 \\ \\
-	\left(m_k, b_k \right) & \text{si} ~~~ f(a_k) \cdot f(m_k) > 0  
+	\left(a_k, ~ m_k \right) & \text{si} ~~~ f(a_k) ~ f(m_k) < 0 \\ \\
+	\left(m_k, ~ b_k \right) & \text{si} ~~~ f(a_k) ~ f(m_k) > 0  
 \end{cases}$$
-En este método nos podemos asegurar llegar a la raiz en infinitos pasos.
+En este método nos podemos asegurar llegar a la raíz en infinitos pasos.
 
 
 #### Cota de error

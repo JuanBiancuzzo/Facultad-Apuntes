@@ -5,6 +5,6 @@ capitulo: 1
 ---
 ### Definición
 ---
-Error que aparece en las operaciones (suma, resta, etc)utilizando una cantidad finita de digitos.
+Error que aparece en las operaciones (suma, resta, etc) utilizando una cantidad finita de dígitos.
 
-Su propagación depende del problema númerico y el algoritmo
+Su propagación depende del problema numérico y el algoritmo

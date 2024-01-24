@@ -2,12 +2,34 @@
 dia: 2023-01-22
 materia: proba
 ---
-#### Indice
-```dataview
-TABLE distribucion AS "Tipo de distribucion"
-WHERE contains(distribucion, "Continua") OR contains(distribucion, "Discreta") OR contains(distribucion, "Multivariada")
-SORT distribucion ASC
+#### Índice
+---
+```dataviewjs
+	function conseguir_nombre(unidad) {
+		return unidad.rows[0].distribucion;
+	}
+
+	let paginaActual = dv.current();
+	let carpeta = `"${paginaActual.file.folder}"`;
+	const distribuciones = dv.pages(carpeta)
+		.where(pagina => {
+			if (!pagina.distribucion)
+				return false;
+			return pagina.file.name != paginaActual.file.name
+		})
+		.groupBy(pagina => pagina.distribucion);
+
+	for (let distribucion of distribuciones) {		
+		dv.table([conseguir_nombre(distribucion)], (distribucion.rows).map(pagina => {
+			let path = pagina.file.path;
+			let nombre = pagina.file.name;
+			return [`${nombre} [[${path}|?]]`];
+		}));
+
+		dv.el("br", "");
+	}
 ```
+
 ### Distribuciones
 ---
 ### Distribución de Bernoulli

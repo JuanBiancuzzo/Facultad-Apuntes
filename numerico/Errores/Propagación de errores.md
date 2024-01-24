@@ -9,7 +9,3 @@ Hay 3 tipos de errores:
 * [[Error de truncamiento]]
 * [[Error inherente]]
 * [[Error de redondeo]]
-
-Y se pueden representar de 2 formas:
-* [[Error absoluto]]
-* [[Error relativo]]
