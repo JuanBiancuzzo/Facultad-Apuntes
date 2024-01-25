@@ -16,5 +16,5 @@
   "autoPairMarkdown": false,
   "showLineNumber": false,
   "strictLineBreaks": false,
-  "propertiesInDocument": "source"
+  "propertiesInDocument": "visible"
 }

@@ -18,7 +18,7 @@ listado:
 ---
 ### Artículo
 ---
-"Los efectos de la [[Libro Tercero, Título 1, Capítulo 3, Sección 7, Parágrafo 1, Obligaciones simplemente mancomunadas|obligación simplemente mancomunada]] se rigen por lo dispuesto en la Sección 6a de este Capítulo, según que su objeto sea divisible o indivisible."
+"Los efectos de la [[Libro Tercero, Título 1, Capítulo 3, Sección 7, Parágrafo 1, Obligaciones simplemente mancomunadas|obligación simplemente mancomunada]] se rigen por lo dispuesto en la [[Libro Tercero, Título 1, Capítulo 3, Sección 6, Imposibilidad de cumplimiento|Sección 6a de este Capítulo]], según que su objeto sea [[Libro Tercero, Título 1, Capítulo 3, Sección 6, Parágrafo 1, Obligaciones divisibles|divisible]] o [[Libro Tercero, Título 1, Capítulo 3, Sección 6, Parágrafo 2, Obligaciones indivisibles|indivisible]]."
 
 
 ### Interpretación

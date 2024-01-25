@@ -43,6 +43,7 @@
 				return !pagina.file.name.includes("Parágrafo");
 			}).sort(pagina => pagina.num_articulo);
 
+		nombre = `${nombre} [[${pagina.file.path}|?]]`;
 		return [nombre, articulos.map(articulo => {
 			let num_art = articulo.num_articulo;
 			let art_nombre = articulo.art_nombre;
@@ -58,12 +59,20 @@
 	let pagina_actual = dv.current();
 	let carpeta = `"${pagina_actual.file.folder}"`;
 	const paginas = dv.pages(carpeta)
-		.where(pagina => pagina.file.name != pagina_actual.file.name && pagina.título)
+		.where(pagina => {
+			return pagina.file.name != pagina_actual.file.name && pagina.num_articulo;
+		})
 		.sort(pagina => pagina.num_articulo);
 
-	dv.table(["Artículo", "Contenido"], paginas.map(pagina => {
+	dv.table(["Artículo", "Contenido"], paginas.flatMap(pagina => {
 		let articulo = `Art. ${pagina.num_articulo} [[${pagina.file.path}|?]]`;
 		let contenido = pagina.art;
-		return [articulo, contenido];
+
+		let output = [[articulo, contenido]];
+
+		if (pagina.incisos) { 
+			output.push(["", pagina.incisos]);
+		}
+		return output;
 	}));
 ```

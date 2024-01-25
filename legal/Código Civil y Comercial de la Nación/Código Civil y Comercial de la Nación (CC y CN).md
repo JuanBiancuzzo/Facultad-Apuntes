@@ -67,10 +67,16 @@ Coincidentemente, el [[Art. 962 del CC y CN, Carácter de las normas legales|art
 	}
 
 	function mostrarArticulos(articulos) {
-		dv.table(["Artículo", "Contenido"], articulos.map(pagina => {
+		dv.table(["Artículo", "Contenido"], articulos.flatMap(pagina => {
 			let articulo = `Art. ${pagina.num_articulo} [[${pagina.file.path}|?]]`;
 			let contenido = pagina.art;
-			return [articulo, contenido];
+	
+			let output = [[articulo, contenido]];
+	
+			if (pagina.incisos) { 
+				output.push(["", pagina.incisos]);
+			}
+			return output;
 		}));
 	}
 
