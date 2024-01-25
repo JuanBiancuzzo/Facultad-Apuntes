@@ -1,6 +1,9 @@
 ---
 num_capítulo: 3
 capítulo: "Clases de obligaciones"
+listado:
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 1, Obligaciones en general|Título 1]]"
 ---
 ### Secciones
 ---

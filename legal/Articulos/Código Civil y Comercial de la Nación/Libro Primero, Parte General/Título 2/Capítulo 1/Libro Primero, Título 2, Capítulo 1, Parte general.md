@@ -1,6 +1,9 @@
 ---
 num_capítulo: 1
 capítulo: "Parte general"
+listado:
+ - "[[Libro Primero, Parte General|Libro Primero]]"
+ - "[[Libro Primero, Título 2, Persona jurídica|Título 2]]"
 ---
 ### Secciones
 ---

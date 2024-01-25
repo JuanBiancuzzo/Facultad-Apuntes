@@ -1,6 +1,9 @@
 ---
 num_capítulo: 3
 capítulo: "Deberes y derechos de los progenitores. Reglas generales"
+listado:
+ - "[[Libro Segundo, Relaciones de Familia|Libro Segundo]]"
+ - "[[Libro Segundo, Título 7, Adopción|Título 7]]"
 ---
 ### Secciones
 ---

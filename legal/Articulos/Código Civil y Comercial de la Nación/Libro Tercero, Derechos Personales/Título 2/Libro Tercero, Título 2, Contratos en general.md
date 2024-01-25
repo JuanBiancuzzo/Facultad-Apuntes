@@ -4,6 +4,8 @@ título: Contratos en general
 dia: 2024-01-18
 materia: legal
 capitulo: 2
+listado:
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
 ---
 ### Capítulos
 ---

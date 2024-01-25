@@ -1,6 +1,9 @@
 ---
 num_capítulo: 22
 capítulo: "Donación"
+listado:
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 4, Contratos en particular|Título 4]]"
 ---
 ### Secciones
 ---

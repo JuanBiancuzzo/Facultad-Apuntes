@@ -1,6 +1,10 @@
 ---
 num_sección: 1
 sección: Convenciones matrimoniales
+listado:
+ - "[[Libro Segundo, Relaciones de Familia|Libro Segundo]]"
+ - "[[Libro Segundo, Título 2, Régimen patrimonial del matrimonio|Título 2]]"
+ - "[[Libro Segundo, Título 2, Capítulo 1, Disposiciones generales|Capítulo 1]]"
 ---
 ### Parágrafo
 ---

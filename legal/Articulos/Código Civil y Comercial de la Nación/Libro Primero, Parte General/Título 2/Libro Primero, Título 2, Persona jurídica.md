@@ -1,6 +1,8 @@
 ---
 num_título: 2
 título: "Persona jurídica"
+listado:
+ - "[[Libro Primero, Parte General|Libro Primero]]"
 ---
 ### Capítulos
 ---

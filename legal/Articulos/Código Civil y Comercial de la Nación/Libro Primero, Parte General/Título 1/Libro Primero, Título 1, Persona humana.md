@@ -1,6 +1,8 @@
 ---
 num_título: 1
 título: "Persona humana"
+listado:
+ - "[[Libro Primero, Parte General|Libro Primero]]"
 ---
 ### Capítulos
 ---

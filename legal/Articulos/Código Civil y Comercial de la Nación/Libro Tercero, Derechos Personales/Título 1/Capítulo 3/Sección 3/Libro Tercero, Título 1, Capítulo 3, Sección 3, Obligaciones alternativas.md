@@ -1,6 +1,10 @@
 ---
 num_sección: 3
 sección: Obligaciones alternativas
+listado:
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 1, Obligaciones en general|Título 1]]"
+ - "[[Libro Tercero, Título 1, Capítulo 3, Clases de obligaciones|Capítulo 3]]"
 ---
 ### Parágrafo
 ---

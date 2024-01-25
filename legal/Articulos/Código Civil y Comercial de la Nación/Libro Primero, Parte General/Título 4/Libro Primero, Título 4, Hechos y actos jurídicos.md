@@ -1,6 +1,8 @@
 ---
 num_título: 4
 título: "Hechos y actos jurídicos"
+listado:
+ - "[[Libro Primero, Parte General|Libro Primero]]"
 ---
 ### Capítulos
 ---

@@ -1,6 +1,9 @@
 ---
 num_capítulo: 5
 capítulo: "Actos jurídicos"
+listado:
+ - "[[Libro Primero, Parte General|Libro Primero]]"
+ - "[[Libro Primero, Título 4, Hechos y actos jurídicos|Título 4]]"
 ---
 ### Secciones
 ---

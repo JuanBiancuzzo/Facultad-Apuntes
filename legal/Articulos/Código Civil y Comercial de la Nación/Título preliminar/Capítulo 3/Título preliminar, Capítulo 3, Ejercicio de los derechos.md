@@ -1,6 +1,8 @@
 ---
 num_capítulo: 3
 capítulo: "Ejercicio de los derechos"
+listado:
+ - "[[Título preliminar|Título preliminar]]"
 ---
 ### Artículos
 ---

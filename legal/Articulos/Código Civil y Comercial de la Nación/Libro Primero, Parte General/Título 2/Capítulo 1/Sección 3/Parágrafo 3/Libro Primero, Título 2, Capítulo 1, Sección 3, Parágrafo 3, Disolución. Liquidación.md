@@ -1,6 +1,11 @@
 ---
 num_parágrafo: 3
 parágrafo: Disolución. Liquidación
+listado:
+ - "[[Libro Primero, Parte General|Libro Primero]]"
+ - "[[Libro Primero, Título 2, Persona jurídica|Título 2]]"
+ - "[[Libro Primero, Título 2, Capítulo 1, Sección 3, Persona jurídica privada|Sección 3]]"
+ - "[[Libro Primero, Título 2, Capítulo 1, Parte general|Capítulo 1]]"
 ---
 ### Artículos
 ---

@@ -1,6 +1,9 @@
 ---
 num_capítulo: 2
 capítulo: "Capacidad"
+listado:
+ - "[[Libro Primero, Parte General|Libro Primero]]"
+ - "[[Libro Primero, Título 1, Persona humana|Título 1]]"
 ---
 ### Secciones
 ---

@@ -1,6 +1,9 @@
 ---
 num_capítulo: 1
 capítulo: "Disposición generales"
+listado:
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 2, Contratos en general|Título 2]]"
 ---
 ### Secciones
 ---

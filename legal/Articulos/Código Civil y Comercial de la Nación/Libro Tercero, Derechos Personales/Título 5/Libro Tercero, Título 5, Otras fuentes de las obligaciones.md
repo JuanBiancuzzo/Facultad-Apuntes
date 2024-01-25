@@ -1,6 +1,8 @@
 ---
 num_título: 5
 título: "Otras fuentes de las obligaciones"
+listado:
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
 ---
 ### Capítulos
 ---

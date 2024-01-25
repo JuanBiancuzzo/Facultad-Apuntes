@@ -1,6 +1,8 @@
 ---
 num_título: 1
 título: "Obligaciones en general"
+listado:
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
 ---
 ### Capítulos
 ---

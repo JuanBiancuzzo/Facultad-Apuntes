@@ -1,6 +1,8 @@
 ---
 num_título: 1
 título: "Disposiciones generales"
+listado:
+ - "[[Libro Cuarto, Derechos Reales|Libro Cuarto]]"
 ---
 ### Capítulos
 ---

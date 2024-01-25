@@ -1,6 +1,9 @@
 ---
 num_capítulo: 5
 capítulo: "Otros modos de extinción"
+listado:
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 1, Obligaciones en general|Título 1]]"
 ---
 ### Secciones
 ---

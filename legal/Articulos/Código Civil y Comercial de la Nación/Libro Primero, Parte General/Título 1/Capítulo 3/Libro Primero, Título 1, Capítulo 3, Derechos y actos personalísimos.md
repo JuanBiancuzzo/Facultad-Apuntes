@@ -1,6 +1,9 @@
 ---
 num_capítulo: 3
 capítulo: "Derechos y actos personalísimos"
+listado:
+ - "[[Libro Primero, Parte General|Libro Primero]]"
+ - "[[Libro Primero, Título 1, Persona humana|Título 1]]"
 ---
 ### Secciones
 ---

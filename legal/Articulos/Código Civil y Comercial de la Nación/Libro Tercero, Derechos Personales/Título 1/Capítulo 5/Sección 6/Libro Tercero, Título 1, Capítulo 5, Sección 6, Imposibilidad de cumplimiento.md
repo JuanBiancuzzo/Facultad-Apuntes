@@ -1,6 +1,10 @@
 ---
 num_sección: 6
 sección: Imposibilidad de cumplimiento
+listado:
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 1, Obligaciones en general|Título 1]]"
+ - "[[Libro Tercero, Título 1, Capítulo 5, Otros modos de extinción|Capítulo 5]]"
 ---
 ### Parágrafo
 ---

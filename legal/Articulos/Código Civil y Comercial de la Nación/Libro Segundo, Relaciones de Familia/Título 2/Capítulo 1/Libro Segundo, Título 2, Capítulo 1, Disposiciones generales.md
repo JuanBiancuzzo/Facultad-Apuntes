@@ -1,6 +1,9 @@
 ---
 num_capítulo: 1
 capítulo: "Disposiciones generales"
+listado:
+ - "[[Libro Segundo, Relaciones de Familia|Libro Segundo]]"
+ - "[[Libro Segundo, Título 2, Régimen patrimonial del matrimonio|Título 2]]"
 ---
 ### Secciones
 ---

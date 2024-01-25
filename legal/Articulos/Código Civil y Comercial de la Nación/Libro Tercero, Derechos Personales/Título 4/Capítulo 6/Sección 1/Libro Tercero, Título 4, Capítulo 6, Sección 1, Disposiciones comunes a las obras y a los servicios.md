@@ -1,6 +1,10 @@
 ---
 num_sección: 1
 sección: Disposiciones comunes a las obras y a los servicios
+listado:
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 4, Contratos en particular|Título 4]]"
+ - "[[Libro Tercero, Título 4, Capítulo 6, Obra y servicios|Capítulo 6]]"
 ---
 ### Parágrafo
 ---

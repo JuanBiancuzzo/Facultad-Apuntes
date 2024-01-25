@@ -1,6 +1,9 @@
 ---
 num_capítulo: 3
 capítulo: "Parte especial"
+listado:
+ - "[[Libro Sexto - Disposiciones comunes a los Derechos personales y reales|Libro Sexto]]"
+ - "[[Libro Sexto, Título 4, Disposición de derecho internacional privado|Título 4]]"
 ---
 ### Secciones
 ---

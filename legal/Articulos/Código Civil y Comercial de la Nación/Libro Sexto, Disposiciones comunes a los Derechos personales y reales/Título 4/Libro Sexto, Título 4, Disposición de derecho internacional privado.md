@@ -1,6 +1,8 @@
 ---
 num_título: 4
 título: "Disposición de derecho internacional privado"
+listado:
+ - "[[Libro Sexto - Disposiciones comunes a los Derechos personales y reales|Libro Sexto]]"
 ---
 ### Capítulos
 ---

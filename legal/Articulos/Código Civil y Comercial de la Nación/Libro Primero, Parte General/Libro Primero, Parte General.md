@@ -1,6 +1,7 @@
 ---
 num_libro: 1
 libro: Parte General
+listado:
 ---
 ### Títulos
 ---

@@ -1,6 +1,8 @@
 ---
 num_capítulo: 1
 capítulo: "Derecho"
+listado:
+ - "[[Título preliminar|Título preliminar]]"
 ---
 ### Artículos
 ---

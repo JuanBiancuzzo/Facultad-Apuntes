@@ -1,6 +1,9 @@
 ---
 num_capítulo: 6
 capítulo: "Obra y servicios"
+listado:
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 4, Contratos en particular|Título 4]]"
 ---
 ### Secciones
 ---

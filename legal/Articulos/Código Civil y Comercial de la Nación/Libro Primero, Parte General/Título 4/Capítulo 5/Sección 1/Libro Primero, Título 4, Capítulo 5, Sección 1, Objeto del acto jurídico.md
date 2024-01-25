@@ -1,6 +1,10 @@
 ---
 num_sección: 1
 sección: Objeto del acto jurídico
+listado:
+ - "[[Libro Primero, Parte General|Libro Primero]]"
+ - "[[Libro Primero, Título 4, Hechos y actos jurídicos|Título 4]]"
+ - "[[Libro Primero, Título 4, Capítulo 5, Actos jurídicos|Capítulo 5]]"
 ---
 ### Secciones
 ---

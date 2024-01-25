@@ -1,6 +1,8 @@
 ---
 num_título: 2
 título: "Régimen patrimonial del matrimonio"
+listado:
+ - "[[Libro Segundo, Relaciones de Familia|Libro Segundo]]"
 ---
 ### Capítulos
 ---

@@ -1,6 +1,12 @@
 ---
 num_parágrafo: 1
 parágrafo: Disposiciones generales
+listado:
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 1, Obligaciones en general|Título 1]]"
+ - "[[Libro Tercero, Título 1, Capítulo 3, Clases de obligaciones|Capítulo 3]]"
+ - "[[Libro Tercero, Título 1, Capítulo 3, Sección 10, Obligaciones principales y accesorias|Sección 1]]"
+ - "[[Libro Tercero, Título 1, Capítulo 3, Sección 1, Obligaciones de dar|Sección 1]]"
 ---
 ### Artículos
 ---

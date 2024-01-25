@@ -1,6 +1,10 @@
 ---
 num_sección: 1
 sección: Disposiciones generales
+listado:
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 4, Contratos en particular|Título 4]]"
+ - "[[Libro Tercero, Título 4, Capítulo 22, Donación|Capítulo 22]]"
 ---
 ### Parágrafo
 ---

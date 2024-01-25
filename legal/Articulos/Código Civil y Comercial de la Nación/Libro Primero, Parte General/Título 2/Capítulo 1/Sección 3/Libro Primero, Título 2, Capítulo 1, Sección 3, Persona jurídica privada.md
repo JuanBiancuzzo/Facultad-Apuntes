@@ -1,6 +1,10 @@
 ---
 num_sección: 3
 sección: Persona jurídica privada
+listado:
+ - "[[Libro Primero, Parte General|Libro Primero]]"
+ - "[[Libro Primero, Título 2, Persona jurídica|Título 2]]"
+ - "[[Libro Primero, Título 2, Capítulo 1, Parte general|Capítulo 1]]"
 ---
 ### Secciones
 ---

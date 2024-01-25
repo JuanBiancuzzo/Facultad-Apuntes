@@ -1,6 +1,9 @@
 ---
 num_capítulo: 1
 capítulo: "Principios comunes"
+listado:
+ - "[[Libro Cuarto, Derechos Reales|Libro Cuarto]]"
+ - "[[Libro Cuarto, Título 1, Disposiciones generales|Título 1]]"
 ---
 ### Secciones
 ---

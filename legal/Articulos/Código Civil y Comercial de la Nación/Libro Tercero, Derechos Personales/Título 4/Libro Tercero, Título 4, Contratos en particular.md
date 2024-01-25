@@ -1,6 +1,8 @@
 ---
 num_título: 4
 título: "Contratos en particular"
+listado:
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
 ---
 ### Capítulos
 ---

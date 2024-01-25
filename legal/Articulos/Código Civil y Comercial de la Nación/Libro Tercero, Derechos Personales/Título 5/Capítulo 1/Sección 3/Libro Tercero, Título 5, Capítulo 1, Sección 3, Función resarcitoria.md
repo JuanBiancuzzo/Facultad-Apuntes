@@ -1,6 +1,10 @@
 ---
 num_sección: 3
 sección: Función resarcitoria
+listado:
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 5, Otras fuentes de las obligaciones|Título 5]]"
+ - "[[Libro Tercero, Título 5, Capítulo 1, Responsabilidad civil|Capítulo 1]]"
 ---
 ### Parágrafo
 ---

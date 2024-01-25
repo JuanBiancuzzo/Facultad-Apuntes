@@ -1,6 +1,8 @@
 ---
 num_capítulo: "2"
 capítulo: Ley
+listado:
+ - "[[Título preliminar|Título preliminar]]"
 ---
 ### Artículos
 ---

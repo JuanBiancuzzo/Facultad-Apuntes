@@ -1,6 +1,11 @@
 ---
 num_parágrafo: 1
 parágrafo: Obligaciones divisibles
+listado:
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 1, Obligaciones en general|Título 1]]"
+ - "[[Libro Tercero, Título 1, Capítulo 3, Clases de obligaciones|Capítulo 3]]"
+ - "[[Libro Tercero, Título 1, Capítulo 3, Sección 6, Obligaciones divisibles e indivisibles|Sección 6]]"
 ---
 ### Artículos
 ---

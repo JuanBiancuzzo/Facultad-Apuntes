@@ -1,6 +1,8 @@
 ---
 num_título: 7
 título: "Adopción"
+listado:
+ - "[[Libro Segundo, Relaciones de Familia|Libro Segundo]]"
 ---
 ### Capítulos
 ---

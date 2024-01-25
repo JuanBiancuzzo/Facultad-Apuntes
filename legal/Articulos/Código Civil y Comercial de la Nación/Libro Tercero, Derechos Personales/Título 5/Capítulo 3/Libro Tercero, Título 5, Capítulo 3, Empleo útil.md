@@ -1,6 +1,9 @@
 ---
 num_capítulo: 3
 capítulo: "Empleo útil"
+listado:
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 5, Otras fuentes de las obligaciones|Título 5]]"
 ---
 ### Secciones
 ---
