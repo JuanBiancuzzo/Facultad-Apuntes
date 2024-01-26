@@ -10,7 +10,7 @@ Se puede dividir en tradicionales y modernas
 #### Tradicionales
 ---
 * [[Ley|Ley]]
-* [[Libro Tercero, Título 2, Contratos en general|Contrato]]
+* [[Contrato|Contrato]]
 * [[Cuasicontrato|Cuasicontrato]]
 * [[Acto voluntario#Acto ilícito|Delito]]
 * [[Cuasidelito|Cuasidelito]]

@@ -127,7 +127,13 @@ Garantizar el respeto a su identidad y el derecho a una educación bilingüe e i
 
 #### Inciso N°19
 ---
-"roveer lo conducente al desarrollo humano, al progreso económico con justicia social, a la productividad de la economía nacional, a la generación de empleo, a la formación profesional de los trabajadores, a la defensa del valor de la moneda, a la investigación y al desarrollo científico y tecnológico, su difusión y aprovechamiento.  Proveer al crecimiento armónico de la Nación y al poblamiento de su territorio; promover políticas diferenciadas que tiendan a equilibrar el desigual desarrollo relativo de provincias y regiones. Para estas iniciativas, el Senado será Cámara de origen.  Sancionar leyes de organización y de base de la educación que consoliden la unidad nacional respetando las particularidades provinciales y locales; que aseguren la responsabilidad indelegable del Estado, la participación de la familia y la sociedad, la promoción de los valores democráticos y la igualdad de oportunidades y posibilidades sin discriminación alguna; y que garanticen los principios de gratuidad y equidad de la educación pública estatal y la autonomía y autarquía de las universidades nacionales.  Dictar leyes que protejan la identidad y pluralidad cultural, la libre creación y circulación de las obras del autor; el patrimonio artístico y los espacios culturales y audiovisuales."
+"roveer lo conducente al desarrollo humano, al progreso económico con justicia social, a la productividad de la economía nacional, a la generación de empleo, a la formación profesional de los trabajadores, a la defensa del valor de la moneda, a la investigación y al desarrollo científico y tecnológico, su difusión y aprovechamiento.  
+
+Proveer al crecimiento armónico de la Nación y al poblamiento de su territorio; promover políticas diferenciadas que tiendan a equilibrar el desigual desarrollo relativo de provincias y regiones. Para estas iniciativas, el Senado será Cámara de origen.  
+
+Sancionar leyes de organización y de base de la educación que consoliden la unidad nacional respetando las particularidades provinciales y locales; que aseguren la responsabilidad indelegable del Estado, la participación de la familia y la sociedad, la promoción de los valores democráticos y la igualdad de oportunidades y posibilidades sin discriminación alguna; y que garanticen los principios de gratuidad y equidad de la educación pública estatal y la autonomía y autarquía de las universidades nacionales.  
+
+Dictar leyes que protejan la identidad y pluralidad cultural, la libre creación y circulación de las obras del autor; el patrimonio artístico y los espacios culturales y audiovisuales."
 
 #### Inciso N°20
 ---

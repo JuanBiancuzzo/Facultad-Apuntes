@@ -13,7 +13,7 @@ Es quien tiene el [[Derecho subjetivo|derecho subjetivo]] principal, la prerroga
 
 ###### Ejemplo
 ---
-En un [[Libro Tercero, Título 2, Contratos en general|contrato]] de préstamo de dinero, lo será el que entrega la suma de dinero a otro teniendo la prerrogativa de exigir su devolución en determinado plazo y con cierto interés
+En un [[Contrato|contrato]] de préstamo de dinero, lo será el que entrega la suma de dinero a otro teniendo la prerrogativa de exigir su devolución en determinado plazo y con cierto interés
 
 ##### Sujeto pasivo
 ---

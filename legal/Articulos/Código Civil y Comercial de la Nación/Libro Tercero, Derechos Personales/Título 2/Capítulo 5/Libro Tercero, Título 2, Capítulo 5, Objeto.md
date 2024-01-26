@@ -1,34 +1,34 @@
 ---
-num_título: 2
-título: Contratos en general
+num_capítulo: 5
+capítulo: "Objeto"
 listado:
-  - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero,]]"
+ - "[[Libro Tercero, Título 2, Contratos en general|Título 2,]]"
 ---
-### Capítulos
+### Secciones
 ---
 ```dataviewjs
 	let pagina_actual = dv.current();
 	let carpeta = pagina_actual.file.folder;
 	const paginas = dv.pages(`"${carpeta}"`)
 		.where(pagina => {
-			if (pagina.file.name.includes("Sección"))
+			if (pagina.file.name.includes("Parágrafo"))
 				return false;
-			return pagina.file.name.includes("Capítulo");
+			return pagina.file.name.includes("Sección");
 		})
-		.sort(pagina => parseInt(pagina.num_capítulo));
+		.sort(pagina => parseInt(pagina.num_sección));
 
-	dv.table(["Capítulo", "Artículos"], paginas.map(pagina => {
-		let nombre = `Capítulo ${pagina.num_capítulo}`;
+	dv.table(["Sección", "Artículos"], paginas.map(pagina => {
+		let nombre = `Sección ${pagina.num_sección}`;
 		let articulos = dv.pages(`"${carpeta}/${nombre}"`)
 			.where(pagina => {
-				if (pagina.file.name.includes("Capítulo"))
-					return false;
 				if (pagina.file.name.includes("Sección"))
 					return false;
 				return !pagina.file.name.includes("Parágrafo");
 			}).sort(pagina => pagina.num_articulo);
-
-		return [`${nombre} [[${pagina.file.path}|?]]`, articulos.map(articulo => {
+		
+		nombre = `${nombre} [[${pagina.file.path}|?]]`;
+		return [nombre, articulos.map(articulo => {
 			let num_art = articulo.num_articulo;
 			let art_nombre = articulo.art_nombre;
 			let path = articulo.file.path;
@@ -67,5 +67,3 @@ listado:
 
 ### Interpretación
 ---
-Como enuncia el [[Art. 957 del CC y CN, Definición|art. 957 del CC y CN]] la definición de contrato es: ![[Art. 957 del CC y CN, Definición#Artículo]]
-![[Art. 957 del CC y CN, Definición#Interpretación]]
