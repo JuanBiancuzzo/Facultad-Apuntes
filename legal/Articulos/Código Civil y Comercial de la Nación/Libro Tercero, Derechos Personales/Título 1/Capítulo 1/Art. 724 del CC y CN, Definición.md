@@ -25,4 +25,7 @@ Es un [[Relación jurídica|vínculo jurídico]]
 * Dos partes (acreedor/deudor)
 * Una (deudor) se obliga a la otra (acreedor)
 * Prestación (satisfacción interés lícito)
-* [[Obligación#Presentaciones Dar, Hacer, No hacer|Dar, hacer o no hacer]]
+* La presentación de dar, hacer o de no hacer, vistas en 
+	* [[Libro Tercero, Título 1, Capítulo 3, Sección 1, Obligaciones de dar|Obligación de dar]]
+	* [[Libro Tercero, Título 1, Capítulo 3, Sección 2, Obligaciones de hacer y de no hacer|Obligación de hacer]]
+	* [[Art. 778 del CC y CN, Obligación de no hacer|Obligación de no hacer]]

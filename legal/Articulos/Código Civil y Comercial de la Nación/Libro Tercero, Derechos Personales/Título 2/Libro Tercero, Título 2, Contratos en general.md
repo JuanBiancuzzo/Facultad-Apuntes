@@ -1,11 +1,8 @@
 ---
 num_título: 2
 título: Contratos en general
-dia: 2024-01-18
-materia: legal
-capitulo: 2
 listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+  - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
 ---
 ### Capítulos
 ---
@@ -67,3 +64,8 @@ listado:
 		return output;
 	}));
 ```
+
+### Interpretación
+---
+Como enuncia el [[Art. 957 del CC y CN, Definición|art. 957 del CC y CN]] la definción de contrato es: ![[Art. 957 del CC y CN, Definición#Artículo]]
+![[Art. 957 del CC y CN, Definición#Interpretación]]
