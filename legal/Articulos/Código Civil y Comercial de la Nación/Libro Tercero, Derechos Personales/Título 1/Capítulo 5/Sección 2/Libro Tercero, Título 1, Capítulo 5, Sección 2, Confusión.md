@@ -46,6 +46,10 @@ sección: Confusión
 		if (pagina.incisos) { 
 			output.push(["", pagina.incisos]);
 		}
+		if (pagina.cont_art) {
+			output.push(["", pagina.cont_art]);
+		}
+	
 		return output;
 	}));
 ```

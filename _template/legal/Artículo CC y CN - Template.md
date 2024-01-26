@@ -25,6 +25,12 @@
 		incisos[i] = inciso;
 		tR += ` - "${inciso}" \n`;
 	}
+
+	let cont_art = undefined;
+	if (incisos.length > 0) {
+		cont_art = await tp.system.prompt("Continuación del artículo: ");
+		tR += `cont_art: ${cont_art}\n`;
+	}
 	
 	let carpeta_relativa = `legal/Articulos/${cuerpo_legal}`;
 	let posicion = 3;
@@ -65,7 +71,25 @@
 
 	async function crearSiNoExiste(carpeta, nombre, template_name) {
 		const archivo_buscado = app.vault.getMarkdownFiles()
-			.filter(archivo => archivo.path.includes(carpeta))
+			.filter(archivo => {
+				if (!archivo.path.includes(carpeta))
+					return false;
+				let nombre_carpeta = carpeta.split("/");
+				nombre_carpeta = nombre_carpeta[nombre_carpeta.length - 1];
+				if (nombre_carpeta == nombre) {
+					console.log(`nombre: ${nombre}\nnombre_esperado: ${nombre_carpeta}`);
+					console.log("son igualesss");
+					return true;
+				}
+				let nombre_archivo = archivo.basename.split(", ");
+				nombre_archivo = nombre_archivo
+					.slice(0, nombre_archivo.length - 1)
+					.join(", ");
+				console.log(`nombre: ${nombre}\nnombre_esperado: ${nombre_archivo}`);
+				if (nombre.trim() == nombre_archivo.trim())
+					console.log("Son igualesss");
+				return nombre.trim() == nombre_archivo.trim();
+			})
 			.find(archivo => archivo.name.includes(nombre));
 		if (archivo_buscado != undefined) {
 			return;	
@@ -77,7 +101,7 @@
 	}
 
 	grupos = grupos.filter(grupo => grupo[0] != undefined)
-				  .map(grupo => [`${grupo[1]} ${grupo[0]}`, grupo[1]]);
+				  .map(grupo => [`${grupo[1]} ${grupo[0]},`, grupo[1]]);
 
 	let listado = app.vault.getMarkdownFiles().filter(archivo => {
 		return archivo.path.startsWith("legal/Articulos/Código Civil y Comercial de la Nación"); 
@@ -117,7 +141,6 @@
 	}
 	tR += "---";
 %>
-
 ### Artículo
 ---
 <%*
@@ -125,6 +148,10 @@
 	for (let i = 0; i < incisos.length; i++) {
 		tR += `#### Inciso N°${i + 1}\n---\n`;
 		tR += `"${incisos[i]}"\n\n`;
+	}
+	if (cont_art != undefined) {
+		tR += `#### Sigue el artículo\n---\n`;
+		tR += `"${cont_art}"\n\n`;
 	}
 %>
 ### Interpretación

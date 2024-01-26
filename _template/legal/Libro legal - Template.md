@@ -4,23 +4,72 @@
 	let titulo = tp.file.title;
 	let num_libro = 0;
 	
-	if (titulo == "Libro Primero - Parte General") {
+	if (titulo == "Libro Primero, Parte General") {
 		num_libro = 1;
-	} else if (titulo == "Libro Segundo - Relaciones de Familia") {
+	} else if (titulo == "Libro Segundo, Relaciones de Familia") {
 		num_libro = 2;
-	} else if (titulo == "Libro Tercero - Derechos Personales") {
+	} else if (titulo == "Libro Tercero, Derechos Personales") {
 		num_libro = 3;
-	} else if (titulo == "Libro Cuarto - Derechos Reales") {
+	} else if (titulo == "Libro Cuarto, Derechos Reales") {
 		num_libro = 4;
-	} else if (titulo == "Libro Quinto - Transmisión de Derechos por causa de muerte") {
+	} else if (titulo == "Libro Quinto, Transmisión de Derechos por causa de muerte") {
 		num_libro = 5;
-	} else if (titulo == "Libro Sexto - Disposiciones comunes a los Derechos personales y reales") {
+	} else if (titulo == "Libro Sexto, Disposiciones comunes a los Derechos personales y reales") {
 		num_libro = 6;
 	}
 	
 	tR += `num_libro: ${num_libro}\n`;
-	console.log(titulo);
-	tR += `libro: ${titulo.split("-")[1].trim()}\n`;
+
+	tR += `libro: ${titulo.split(",")[1].trim()}\n`;
+	
+	let carpetas = tp.file.folder(true);
+	
+	let grupos = carpetas.split("/").slice(3).map(grupo => {
+		if (grupo.includes(",")) { grupo = grupo.split(",")[0]; }
+		return grupo;
+	}).map(grupo => {
+		return [grupo + ",", grupo.split(" ")[0]];
+	});
+
+	let listado = app.vault.getMarkdownFiles().filter(archivo => {
+		return archivo.path.startsWith("legal/Articulos/Código Civil y Comercial de la Nación"); 
+	}).filter(archivo => {
+		return !archivo.basename.startsWith("Art.");
+	}).filter(archivo => {
+		let enCamino = grupos.length > 0;
+		let any = false;
+		for (let [grupo, nombre] of grupos.slice(0, grupos.length - 1)) {			
+			if (archivo.basename.includes(nombre)) {
+				let hay_igual = archivo.basename.includes(grupo);
+				enCamino &= hay_igual;
+				any |= hay_igual;
+			}	
+		}
+		let [ultimoGrupo, ultimoNombre] = grupos[grupos.length - 1];
+		if (archivo.basename.includes(ultimoNombre)) {
+			enCamino = false;
+		}
+
+		return enCamino && any;
+	});
+	
+	tR += "listado:\n";
+
+	let links = listado.map(archivo => {
+		let grupoActual = grupos[0][0];
+		for (let [grupo, nombre] of grupos) {
+			if (!archivo.basename.includes(grupo)) {
+				return `[[${archivo.basename}|${grupoActual}]]`;
+			} else {
+				grupoActual = grupo;
+			}
+		}
+		return `[[${archivo.basename}|${grupoActual}]]`;
+	});
+
+	for (let link of links) {
+		tR += ` - "${link}"\n`;
+	}
 	tR += "---";
 %>
 ### Títulos
@@ -85,6 +134,10 @@
 		if (pagina.incisos) { 
 			output.push(["", pagina.incisos]);
 		}
+		if (pagina.cont_art) {
+			output.push(["", pagina.cont_art]);
+		}
+	
 		return output;
 	}));
 ```
