@@ -27,7 +27,29 @@ También lo podemos pensar como que $$ C_{j_0}' = C_j'(V_{PN} = 0) $$
 Entonces podemos plantear $$ C_j'(V_{PN}) = \frac{C_{j_0}'}{\sqrt{1 - \frac{V_{PN}}{\phi_B}}} $$
 La principal dependencia de $C_j'$ es la [[Tensión]] de polarización aplicada 
 
-![[Dependencia de la capacitancia con respecto a la tensión aplicada.png]]
+```tikz
+\usepackage{pgfplots}
+
+\begin{document} 
+	\begin{tikzpicture}[scale=1.3, transform shape]
+		\draw[ultra thick] plot[id=x, samples=50, domain=-2:1.6] 
+			(\x, { 1 /( sqrt(1 - \x / 2) ) });
+		\draw[dashed, ultra thick] plot[id=x, samples=50, domain=1.6:1.8] 
+			(\x, { 1 /( sqrt(1 - \x / 2) ) });
+		
+		\draw[->, thick] (-2.2, 0) -- (2.5, 0)
+			node[below right=2pt] {$V$};
+		\draw[->, thick] (0, -0.2) node[below=2pt] {$0$}
+			-- (0, 3.5) node[above left=2pt] {$C_j$};
+		
+		\draw (2, -0.1) node[below=2pt] {$\phi_B$}
+			-- (2, 0.1);
+		\draw[->, shorten >=5pt, shorten <=12pt, thick] (-1, 2) 
+			node {$C_{j0}$}
+			-- (0, 1);
+	\end{tikzpicture}
+\end{document}
+```
 
 También lo podemos plantear con el calculo de la [[Capacitancia]] $$ C_J(V_{PN}) = \frac{\partial Q_{SCR}}{\partial v_d} \bigg|_{v_d = V_{PN}} = A \cdot C_J'(V_{PN})$$
 
