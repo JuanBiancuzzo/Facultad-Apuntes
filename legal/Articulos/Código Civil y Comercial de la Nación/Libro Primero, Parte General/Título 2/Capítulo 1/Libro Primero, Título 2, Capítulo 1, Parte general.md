@@ -27,7 +27,7 @@ listado:
 				return !pagina.file.name.includes("Parágrafo");
 			}).sort(pagina => pagina.num_articulo);
 
-		nombre = `${nombre} [[${pagina.file.path}|?]]`;
+		nombre = `${nombre}, ${pagina.sección} [[${pagina.file.path}|?]]`;
 		return [nombre, articulos.map(articulo => {
 			let num_art = articulo.num_articulo;
 			let art_nombre = articulo.art_nombre;

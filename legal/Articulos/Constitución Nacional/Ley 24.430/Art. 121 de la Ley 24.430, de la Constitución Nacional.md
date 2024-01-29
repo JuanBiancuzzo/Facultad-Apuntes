@@ -7,7 +7,7 @@ incisos:
 ---
 ### Artículo
 ---
-"Las provincias conservan todo el poder no delegado por esta [[Constitución|Constitución]] al [[Gobierno federal|Gobierno federal]], y el que expresamente se hayan reservado por pactos especiales al tiempo de su incorporación."
+"Las provincias conservan todo el poder no delegado por esta [[Constitución Nacional|Constitución Nacional]] al [[Gobierno federal|Gobierno federal]], y el que expresamente se hayan reservado por pactos especiales al tiempo de su incorporación."
 
 
 ### Interpretación

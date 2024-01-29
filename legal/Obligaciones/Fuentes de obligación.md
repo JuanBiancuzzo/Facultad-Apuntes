@@ -10,7 +10,7 @@ Se puede dividir en tradicionales y modernas
 #### Tradicionales
 ---
 * [[Ley|Ley]]
-* [[Contrato|Contrato]]
+* [[Contrato como fuente de obligación|Contrato]]
 * [[Cuasicontrato|Cuasicontrato]]
 * [[Acto voluntario#Acto ilícito|Delito]]
 * [[Cuasidelito|Cuasidelito]]

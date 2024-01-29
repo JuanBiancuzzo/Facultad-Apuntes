@@ -29,7 +29,7 @@ Este modelo encuentra su expresión, por ejemplo, en el positivismo jurídico de
 ---
 El contenido del derecho tiene una clara dependencia de la moral social vigente, de la misma forma que toda moral social pretende contar con el refuerzo coactivo del derecho para así lograr eficacia social. 
 
-La [[Constitución|Constituciones]] suelen apelar a conceptos como [[Justicia|justicia]], [[Libertad jurídica|libertad]], [[Dignidad humana|dignidad humana]] o derechos fundamentales, que tienen un fuerte componente ético. Quizá esto no pueda ser ode otra manera y de ahí que sea conveniente llamar la atención para evitar la confusión entre la Moral y el [[Derecho]]
+La [[Constitución Nacional|Constituciones]] suelen apelar a conceptos como [[Justicia|justicia]], [[Libertad jurídica|libertad]], [[Dignidad humana|dignidad humana]] o derechos fundamentales, que tienen un fuerte componente ético. Quizá esto no pueda ser ode otra manera y de ahí que sea conveniente llamar la atención para evitar la confusión entre la Moral y el [[Derecho]]
 
 La distinción entre Derecho y Moral no debe dificultar el esfuerzo por constatar las conexiones entre ambas normatividades en la cultura moderna, ni la lucha por la incorporación de criterios razonables de moralidad de el Derecho, ni tampoco la crítica desde criterios de moralidad de Derecho válido.
 

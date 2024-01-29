@@ -14,28 +14,14 @@ El concepto de derecho no tiene una única definición, o mejor dicho, su defini
 5. Nuestras conductas, y las de las demás personas con quienes nos relacionamos intersubjetivamente, en cuento refieran a las reglas mencionadas precedentemente
 6. La libertad, la igualdad, el orden social, la seguridad, la paz, la [[Justicia|justicia]], la solidaridad, como valores sociales que la comunidad se propone alcanzar mediante aquellas reglas y las conductas consecuentes
 
-Los conceptos de [[Estado]] y Derecho son "conceptos conjugados", en el sentido de que se implican mutuamente, porque el derecho es un conjunto de normas emanadas del Estado, normas de conductas dirigidas a la población y [[Norma jurídica|normas]] instrumentales de organización del poder cuya eficacia y validez el Estado asegura, al mismo tiempo que se encuentra sometido a las mismas.
+Los conceptos de [[Estado]] y Derecho son "conceptos conjugados", en el sentido de que se implican mutuamente, porque el derecho es un conjunto de normas emanadas del Estado, normas de conductas dirigidas a la población y [[Norma jurídica|normas]] instrumentales de organización del poder cuya eficacia y validez el Estado asegura, al mismo tiempo que se encuentra sometido a las mismas
+
+Como mencionamos antes, el derecho no tiene una única definición pero hay varias [[Aceptaciones del derecho|aceptaciones de la definción]]
 
 #### Relación con la [[Moral|moral]]
 ---
 ![[Moral#Relación con el Derecho derecho]]
 
-#### Diversas acepciones
+#### Derechos resultantes del [[Contrato|contrato]]
 ---
-Una de las varias dificultades con que casi inevitablemente se encuentra los [[Juez|juristas]] que se proponen definir al derecho tiene su origen en que el término derecho, como casi la mayoría de las palabras, presenta la característica semántica de la ambigüedad.
-
-##### Derecho como norma (sentido objetivo)
----
-![[Derecho objetivo#Definición]]
-
-##### Derecho como facultad (sentido subjetivo)
----
-![[Derecho subjetivo#Definición]]
-
-##### Derecho como saber científico
----
-![[Derecho como saber científico#Definición]]
-
-##### Derecho como ideal de justicia
----
-![[Derecho como ideal de justicia#Definición]]
+![[Contrato#Derechos resultantes del contrato]]

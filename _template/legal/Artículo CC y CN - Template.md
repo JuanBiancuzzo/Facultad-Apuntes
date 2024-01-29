@@ -29,7 +29,9 @@
 	let cont_art = undefined;
 	if (incisos.length > 0) {
 		cont_art = await tp.system.prompt("Continuación del artículo: ");
-		tR += `cont_art: ${cont_art}\n`;
+		if (cont_art != "" && cont_art != undefined) {
+			tR += `cont_art: ${cont_art}\n`;
+		}
 	}
 	
 	let carpeta_relativa = `legal/Articulos/${cuerpo_legal}`;
@@ -149,7 +151,7 @@
 		tR += `#### Inciso N°${i + 1}\n---\n`;
 		tR += `"${incisos[i]}"\n\n`;
 	}
-	if (cont_art != undefined) {
+	if (cont_art != undefined && cont_art != "") {
 		tR += `#### Sigue el artículo\n---\n`;
 		tR += `"${cont_art}"\n\n`;
 	}

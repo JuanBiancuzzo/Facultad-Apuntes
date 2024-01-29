@@ -61,32 +61,26 @@
 	async function datosCCyCN(num_articulo) {
 		let carpeta = "Código Civil y Comercial de la Nación";
 	
-		const GRUPO_TITULO_PRELIMINAR = 0;
-		
-		let grupo = await tp.system.suggester([
-			"Título preliminar", 
-			"Libro Primero - Parte General",
-			"Libro Segundo - Relaciones de Familia",
-			"Libro Tercero - Derechos Personales",
-			"Libro Cuarto - Derechos Reales",
-			"Libro Quinto - Transmisión de Derechos por causa de muerte",
-			"Libro Sexto - Disposiciones comunes a los Derechos personales y reales"
-		], [
-			GRUPO_TITULO_PRELIMINAR, 
-			"Libro Primero, Parte General", 
-			"Libro Segundo, Relaciones de Familia", 
-			"Libro Tercero, Derechos Personales", 
-			"Libro Cuarto, Derechos Reales", 
-			"Libro Quinto, Transmisión de Derechos por causa de muerte", 
-			"Libro Sexto, Disposiciones comunes a los Derechos personales y reales"
-		]);
+		let num_titulo = undefined;
 
-		if (grupo != GRUPO_TITULO_PRELIMINAR) {	
+		if (num_articulo >= 1 && num_articulo <= 18) {
+			num_titulo = "preliminar";
+		} else {
+			let grupo = undefined;
+			if (num_articulo <= 400) {
+				grupo = "Libro Primero, Parte General"; 
+			} else if (num_articulo <= 723) {
+				grupo = "Libro Segundo, Relaciones de Familia";
+			} else if (num_articulo <= 1881) {
+				grupo = "Libro Tercero, Derechos Personales";
+			} else if (num_articulo <= 2276) {
+				grupo = "Libro Cuarto, Derechos Reales";
+			} else if (num_articulo <= 2531) {
+				grupo = "Libro Quinto, Transmisión de Derechos por causa de muerte";
+			} else {
+				grupo = "Libro Sexto, Disposiciones comunes a los Derechos personales y reales";
+			}
 			carpeta += `/${grupo}`;
-		}	
-
-		let num_titulo = "preliminar";
-		if (grupo != GRUPO_TITULO_PRELIMINAR) {
 			num_titulo = await tp.system.prompt("Titulo: ");
 		}
 		carpeta += `/Título ${num_titulo}`;

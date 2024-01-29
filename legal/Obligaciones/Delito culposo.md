@@ -5,7 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-Es toda acción típicamente [[Art. 1717 del CC y CN, Antijuridicidad|antijurídica]] prevista en la [[Código Penal|ley penal]] que produce un resultado dañoso debido a que el agente ha obrado con falta en el deber de previsión, cuidado, diligencia, prudencia
+Es toda acción típicamente [[Art. 1717 del CC y CN, Antijuridicidad|antijurídica]] prevista en la [[Código Penal de la Nación|ley penal]] que produce un resultado dañoso debido a que el agente ha obrado con falta en el deber de previsión, cuidado, diligencia, prudencia
 
 #### Ejemplo
 ---

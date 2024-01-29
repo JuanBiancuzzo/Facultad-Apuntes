@@ -18,4 +18,4 @@ Regula la relaciones de las [[Persona jurídica|personas]] con el [[Estado|estad
 * Derecho Penal
 	* regula las conductas delictivas, las penas y las medidas de seguridad
 * Derecho del consumidor
-	* regula la protección de los [[Consumidor|consumidores]] en las [[Transacción|transacciones]] con [[Proveedor|proveedores]]
+	* regula la protección de los [[Art. 1092 del CC y CN, Relación de consumo. Consumidor|consumidores]] en las [[Transacción|transacciones]] con [[Proveedor|proveedores]]
