@@ -8,9 +8,9 @@ libro: "Libro Cuarto"
 título: "2"
 capítulo: "1"
 listado:
- - "[[Libro Cuarto, Título 2, Capítulo 1, Disposiciones generales|Capítulo 1,]]"
- - "[[Libro Cuarto, Título 2, Posesión y tenencia|Título 2,]]"
- - "[[Libro Cuarto, Derechos Reales|Libro Cuarto,]]"
+ - "[[Libro Cuarto, Título 2, Capítulo 1, Disposiciones generales|Capítulo 1]]"
+ - "[[Libro Cuarto, Título 2, Posesión y tenencia|Título 2]]"
+ - "[[Libro Cuarto, Derechos Reales|Libro Cuarto]]"
 ---
 ### Artículo
 ---

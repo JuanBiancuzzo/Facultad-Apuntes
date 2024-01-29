@@ -2,9 +2,9 @@
 num_sección: 1
 sección: Disposiciones generales
 listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero,]]"
- - "[[Libro Tercero, Título 4, Capítulo 4, Locación|Capítulo 4,]]"
- - "[[Libro Tercero, Título 4, Contratos en particular|Título 4,]]"
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 4, Capítulo 4, Locación|Capítulo 4]]"
+ - "[[Libro Tercero, Título 4, Contratos en particular|Título 4]]"
 ---
 ### Parágrafo
 ---

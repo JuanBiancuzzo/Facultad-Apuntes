@@ -2,7 +2,7 @@
 num_título: 3
 título: "Contratos de consumo"
 listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero,]]"
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
 ---
 ### Capítulos
 ---

@@ -8,9 +8,9 @@ libro: "Libro Cuarto"
 título: "2"
 capítulo: "3"
 listado:
- - "[[Libro Cuarto, Título 2, Posesión y tenencia|Título 2,]]"
- - "[[Libro Cuarto, Título 2, Capítulo 3, Efectos de las relaciones de poder|Capítulo 3,]]"
- - "[[Libro Cuarto, Derechos Reales|Libro Cuarto,]]"
+ - "[[Libro Cuarto, Título 2, Posesión y tenencia|Título 2]]"
+ - "[[Libro Cuarto, Título 2, Capítulo 3, Efectos de las relaciones de poder|Capítulo 3]]"
+ - "[[Libro Cuarto, Derechos Reales|Libro Cuarto]]"
 ---
 ### Artículo
 ---

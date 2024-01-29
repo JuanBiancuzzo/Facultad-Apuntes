@@ -8,9 +8,9 @@ libro: "Libro Tercero"
 título: "4"
 capítulo: "19"
 listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero,]]"
- - "[[Libro Tercero, Título 4, Capítulo 19, Franquicia|Capítulo 19,]]"
- - "[[Libro Tercero, Título 4, Contratos en particular|Título 4,]]"
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 4, Capítulo 19, Franquicia|Capítulo 19]]"
+ - "[[Libro Tercero, Título 4, Contratos en particular|Título 4]]"
 ---
 ### Artículo
 ---

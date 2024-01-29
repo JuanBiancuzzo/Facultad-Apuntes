@@ -7,7 +7,7 @@ incisos:
 título: preliminar
 capítulo: "4"
 listado:
-  - "[[Título preliminar, Capítulo 4, Derechos y bienes|Capítulo 4,]]"
+  - "[[Título preliminar, Capítulo 4, Derechos y bienes|Capítulo 4]]"
   - "[[Título preliminar|Título preliminar]]"
 ---
 ### Artículo

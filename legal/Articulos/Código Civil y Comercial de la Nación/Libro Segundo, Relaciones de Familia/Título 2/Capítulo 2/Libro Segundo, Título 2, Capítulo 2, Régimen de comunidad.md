@@ -2,8 +2,8 @@
 num_capítulo: 2
 capítulo: "Régimen de comunidad"
 listado:
- - "[[Libro Segundo, Relaciones de Familia|Libro Segundo,]]"
- - "[[Libro Segundo, Título 2, Régimen patrimonial del matrimonio|Título 2,]]"
+ - "[[Libro Segundo, Relaciones de Familia|Libro Segundo]]"
+ - "[[Libro Segundo, Título 2, Régimen patrimonial del matrimonio|Título 2]]"
 ---
 ### Secciones
 ---

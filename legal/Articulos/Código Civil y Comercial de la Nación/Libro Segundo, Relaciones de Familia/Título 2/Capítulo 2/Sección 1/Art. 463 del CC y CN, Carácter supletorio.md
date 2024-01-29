@@ -9,10 +9,10 @@ título: "2"
 capítulo: "2"
 sección: "1"
 listado:
- - "[[Libro Segundo, Relaciones de Familia|Libro Segundo,]]"
- - "[[Libro Segundo, Título 2, Capítulo 2, Régimen de comunidad|Capítulo 2,]]"
- - "[[Libro Segundo, Título 2, Capítulo 2, Sección 1, Disposiciones generales|Sección 1,]]"
- - "[[Libro Segundo, Título 2, Régimen patrimonial del matrimonio|Título 2,]]"
+ - "[[Libro Segundo, Relaciones de Familia|Libro Segundo]]"
+ - "[[Libro Segundo, Título 2, Capítulo 2, Régimen de comunidad|Capítulo 2]]"
+ - "[[Libro Segundo, Título 2, Capítulo 2, Sección 1, Disposiciones generales|Sección 1]]"
+ - "[[Libro Segundo, Título 2, Régimen patrimonial del matrimonio|Título 2]]"
 ---
 ### Artículo
 ---

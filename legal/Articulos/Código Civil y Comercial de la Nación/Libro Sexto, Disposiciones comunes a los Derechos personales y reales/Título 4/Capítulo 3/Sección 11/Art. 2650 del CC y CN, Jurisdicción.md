@@ -12,10 +12,10 @@ título: "4"
 capítulo: "3"
 sección: "11"
 listado:
- - "[[Libro Sexto, Disposiciones comunes a los Derechos personales y reales|Libro Sexto,]]"
- - "[[Libro Sexto, Título 4, Disposición de derecho internacional privado|Título 4,]]"
- - "[[Libro Sexto, Título 4, Capítulo 3, Sección 11, Contratos|Sección 11,]]"
- - "[[Libro Sexto, Título 4, Capítulo 3, Parte especial|Capítulo 3,]]"
+ - "[[Libro Sexto, Disposiciones comunes a los Derechos personales y reales|Libro Sexto]]"
+ - "[[Libro Sexto, Título 4, Disposición de derecho internacional privado|Título 4]]"
+ - "[[Libro Sexto, Título 4, Capítulo 3, Sección 11, Contratos|Sección 11]]"
+ - "[[Libro Sexto, Título 4, Capítulo 3, Parte especial|Capítulo 3]]"
 ---
 ### Artículo
 ---

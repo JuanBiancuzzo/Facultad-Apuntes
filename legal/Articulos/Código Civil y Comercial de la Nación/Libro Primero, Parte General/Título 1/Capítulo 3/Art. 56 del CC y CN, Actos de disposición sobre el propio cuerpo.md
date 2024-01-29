@@ -8,9 +8,9 @@ libro: "Libro Primero"
 título: "1"
 capítulo: "3"
 listado:
- - "[[Libro Primero, Parte General|Libro Primero,]]"
- - "[[Libro Primero, Título 1, Persona humana|Título 1,]]"
- - "[[Libro Primero, Título 1, Capítulo 3, Derechos y actos personalísimos|Capítulo 3,]]"
+ - "[[Libro Primero, Parte General|Libro Primero]]"
+ - "[[Libro Primero, Título 1, Persona humana|Título 1]]"
+ - "[[Libro Primero, Título 1, Capítulo 3, Derechos y actos personalísimos|Capítulo 3]]"
 ---
 ### Artículo
 ---

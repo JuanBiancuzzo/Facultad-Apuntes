@@ -9,10 +9,10 @@ título: "4"
 capítulo: "4"
 sección: "3"
 listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero,]]"
- - "[[Libro Tercero, Título 4, Capítulo 4, Sección 3, Tiempo de la locación|Sección 3,]]"
- - "[[Libro Tercero, Título 4, Capítulo 4, Locación|Capítulo 4,]]"
- - "[[Libro Tercero, Título 4, Contratos en particular|Título 4,]]"
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 4, Capítulo 4, Sección 3, Tiempo de la locación|Sección 3]]"
+ - "[[Libro Tercero, Título 4, Capítulo 4, Locación|Capítulo 4]]"
+ - "[[Libro Tercero, Título 4, Contratos en particular|Título 4]]"
 ---
 ### Artículo
 ---

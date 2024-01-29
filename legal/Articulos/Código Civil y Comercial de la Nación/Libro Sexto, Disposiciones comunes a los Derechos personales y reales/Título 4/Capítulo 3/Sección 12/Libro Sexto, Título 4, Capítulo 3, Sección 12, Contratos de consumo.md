@@ -2,9 +2,9 @@
 num_sección: 12
 sección: Contratos de consumo
 listado:
- - "[[Libro Sexto, Disposiciones comunes a los Derechos personales y reales|Libro Sexto,]]"
- - "[[Libro Sexto, Título 4, Disposición de derecho internacional privado|Título 4,]]"
- - "[[Libro Sexto, Título 4, Capítulo 3, Parte especial|Capítulo 3,]]"
+ - "[[Libro Sexto, Disposiciones comunes a los Derechos personales y reales|Libro Sexto]]"
+ - "[[Libro Sexto, Título 4, Disposición de derecho internacional privado|Título 4]]"
+ - "[[Libro Sexto, Título 4, Capítulo 3, Parte especial|Capítulo 3]]"
 ---
 ### Parágrafo
 ---

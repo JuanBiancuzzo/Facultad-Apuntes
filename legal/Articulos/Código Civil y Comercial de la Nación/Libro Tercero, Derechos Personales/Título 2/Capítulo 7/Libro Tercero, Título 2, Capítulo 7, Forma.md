@@ -2,8 +2,8 @@
 num_capítulo: 7
 capítulo: "Forma"
 listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero,]]"
- - "[[Libro Tercero, Título 2, Contratos en general|Título 2,]]"
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 2, Contratos en general|Título 2]]"
 ---
 ### Secciones
 ---

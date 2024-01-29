@@ -2,8 +2,8 @@
 num_capítulo: 2
 capítulo: "Clasificación de los contratos"
 listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero,]]"
- - "[[Libro Tercero, Título 2, Contratos en general|Título 2,]]"
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 2, Contratos en general|Título 2]]"
 ---
 ### Artículos
 ---

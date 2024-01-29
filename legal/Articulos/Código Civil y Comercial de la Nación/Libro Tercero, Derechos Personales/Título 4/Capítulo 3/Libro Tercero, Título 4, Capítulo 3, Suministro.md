@@ -2,8 +2,8 @@
 num_capítulo: 3
 capítulo: "Suministro"
 listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero,]]"
- - "[[Libro Tercero, Título 4, Contratos en particular|Título 4,]]"
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 4, Contratos en particular|Título 4]]"
 ---
 ### Secciones
 ---

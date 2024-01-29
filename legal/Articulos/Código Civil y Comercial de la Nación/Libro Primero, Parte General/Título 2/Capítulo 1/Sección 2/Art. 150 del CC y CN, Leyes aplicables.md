@@ -13,10 +13,10 @@ título: "2"
 capítulo: "1"
 sección: "2"
 listado:
- - "[[Libro Primero, Parte General|Libro Primero,]]"
- - "[[Libro Primero, Título 2, Persona jurídica|Título 2,]]"
- - "[[Libro Primero, Título 2, Capítulo 1, Sección 2, Clasificación|Sección 2,]]"
- - "[[Libro Primero, Título 2, Capítulo 1, Parte general|Capítulo 1,]]"
+ - "[[Libro Primero, Parte General|Libro Primero]]"
+ - "[[Libro Primero, Título 2, Persona jurídica|Título 2]]"
+ - "[[Libro Primero, Título 2, Capítulo 1, Sección 2, Clasificación|Sección 2]]"
+ - "[[Libro Primero, Título 2, Capítulo 1, Parte general|Capítulo 1]]"
 ---
 ### Artículo
 ---

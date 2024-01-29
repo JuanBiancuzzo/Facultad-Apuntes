@@ -8,9 +8,9 @@ libro: "Libro Tercero"
 título: "2"
 capítulo: "7"
 listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero,]]"
- - "[[Libro Tercero, Título 2, Capítulo 7, Forma|Capítulo 7,]]"
- - "[[Libro Tercero, Título 2, Contratos en general|Título 2,]]"
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 2, Capítulo 7, Forma|Capítulo 7]]"
+ - "[[Libro Tercero, Título 2, Contratos en general|Título 2]]"
 ---
 ### Artículo
 ---

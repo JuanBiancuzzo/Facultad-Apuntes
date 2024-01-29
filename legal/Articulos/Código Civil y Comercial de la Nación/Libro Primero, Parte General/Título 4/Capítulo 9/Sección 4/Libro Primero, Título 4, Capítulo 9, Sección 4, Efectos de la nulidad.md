@@ -2,9 +2,9 @@
 num_sección: 4
 sección: Efectos de la nulidad
 listado:
- - "[[Libro Primero, Parte General|Libro Primero,]]"
- - "[[Libro Primero, Título 4, Capítulo 9, Ineficacia de los actos jurídicos|Capítulo 9,]]"
- - "[[Libro Primero, Título 4, Hechos y actos jurídicos|Título 4,]]"
+ - "[[Libro Primero, Parte General|Libro Primero]]"
+ - "[[Libro Primero, Título 4, Capítulo 9, Ineficacia de los actos jurídicos|Capítulo 9]]"
+ - "[[Libro Primero, Título 4, Hechos y actos jurídicos|Título 4]]"
 ---
 ### Parágrafo
 ---

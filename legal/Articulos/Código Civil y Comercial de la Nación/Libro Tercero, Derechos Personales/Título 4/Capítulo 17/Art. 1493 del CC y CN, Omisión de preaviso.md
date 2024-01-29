@@ -8,9 +8,9 @@ libro: "Libro Tercero"
 título: "4"
 capítulo: "17"
 listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero,]]"
- - "[[Libro Tercero, Título 4, Capítulo 17, Agencia|Capítulo 17,]]"
- - "[[Libro Tercero, Título 4, Contratos en particular|Título 4,]]"
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 4, Capítulo 17, Agencia|Capítulo 17]]"
+ - "[[Libro Tercero, Título 4, Contratos en particular|Título 4]]"
 ---
 ### Artículo
 ---

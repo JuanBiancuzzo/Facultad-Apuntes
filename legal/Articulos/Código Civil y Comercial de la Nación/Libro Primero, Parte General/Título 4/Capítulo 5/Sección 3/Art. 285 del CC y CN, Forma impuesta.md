@@ -9,10 +9,10 @@ título: "4"
 capítulo: "5"
 sección: "3"
 listado:
- - "[[Libro Primero, Parte General|Libro Primero,]]"
- - "[[Libro Primero, Título 4, Hechos y actos jurídicos|Título 4,]]"
- - "[[Libro Primero, Título 4, Capítulo 5, Actos jurídicos|Capítulo 5,]]"
- - "[[Libro Primero, Título 4, Capítulo 5, Sección 3, Forma y prueba del acto jurídico|Sección 3,]]"
+ - "[[Libro Primero, Parte General|Libro Primero]]"
+ - "[[Libro Primero, Título 4, Hechos y actos jurídicos|Título 4]]"
+ - "[[Libro Primero, Título 4, Capítulo 5, Actos jurídicos|Capítulo 5]]"
+ - "[[Libro Primero, Título 4, Capítulo 5, Sección 3, Forma y prueba del acto jurídico|Sección 3]]"
 ---
 ### Artículo
 ---

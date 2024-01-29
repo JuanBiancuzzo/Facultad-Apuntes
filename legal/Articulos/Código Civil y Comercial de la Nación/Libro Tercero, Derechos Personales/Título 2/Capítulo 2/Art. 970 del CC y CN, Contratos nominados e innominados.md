@@ -12,9 +12,9 @@ libro: "Libro Tercero"
 título: "2"
 capítulo: "2"
 listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero,]]"
- - "[[Libro Tercero, Título 2, Capítulo 2, Clasificación de los contratos|Capítulo 2,]]"
- - "[[Libro Tercero, Título 2, Contratos en general|Título 2,]]"
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 2, Capítulo 2, Clasificación de los contratos|Capítulo 2]]"
+ - "[[Libro Tercero, Título 2, Contratos en general|Título 2]]"
 ---
 ### Artículo
 ---

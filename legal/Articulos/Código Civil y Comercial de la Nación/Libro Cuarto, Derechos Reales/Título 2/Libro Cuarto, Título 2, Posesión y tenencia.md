@@ -2,7 +2,7 @@
 num_título: 2
 título: "Posesión y tenencia"
 listado:
- - "[[Libro Cuarto, Derechos Reales|Libro Cuarto,]]"
+ - "[[Libro Cuarto, Derechos Reales|Libro Cuarto]]"
 ---
 ### Capítulos
 ---

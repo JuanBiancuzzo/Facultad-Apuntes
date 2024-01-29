@@ -2,8 +2,8 @@
 num_capítulo: 1
 capítulo: "Disposiciones generales"
 listado:
- - "[[Libro Cuarto, Título 2, Posesión y tenencia|Título 2,]]"
- - "[[Libro Cuarto, Derechos Reales|Libro Cuarto,]]"
+ - "[[Libro Cuarto, Título 2, Posesión y tenencia|Título 2]]"
+ - "[[Libro Cuarto, Derechos Reales|Libro Cuarto]]"
 ---
 ### Secciones
 ---

@@ -8,9 +8,9 @@ libro: "Libro Primero"
 título: "4"
 capítulo: "1"
 listado:
- - "[[Libro Primero, Parte General|Libro Primero,]]"
- - "[[Libro Primero, Título 4, Hechos y actos jurídicos|Título 4,]]"
- - "[[Libro Primero, Título 4, Capítulo 1, Disposiciones generales|Capítulo 1,]]"
+ - "[[Libro Primero, Parte General|Libro Primero]]"
+ - "[[Libro Primero, Título 4, Hechos y actos jurídicos|Título 4]]"
+ - "[[Libro Primero, Título 4, Capítulo 1, Disposiciones generales|Capítulo 1]]"
 ---
 ### Artículo
 ---

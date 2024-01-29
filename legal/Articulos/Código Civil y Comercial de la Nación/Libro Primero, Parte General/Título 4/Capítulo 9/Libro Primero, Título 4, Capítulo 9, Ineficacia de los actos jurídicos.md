@@ -2,8 +2,8 @@
 num_capítulo: 9
 capítulo: "Ineficacia de los actos jurídicos"
 listado:
- - "[[Libro Primero, Parte General|Libro Primero,]]"
- - "[[Libro Primero, Título 4, Hechos y actos jurídicos|Título 4,]]"
+ - "[[Libro Primero, Parte General|Libro Primero]]"
+ - "[[Libro Primero, Título 4, Hechos y actos jurídicos|Título 4]]"
 ---
 ### Secciones
 ---

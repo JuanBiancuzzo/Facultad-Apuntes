@@ -2,8 +2,8 @@
 num_capítulo: 1
 capítulo: "Relación de consumo"
 listado:
- - "[[Libro Tercero, Título 3, Contratos de consumo|Título 3,]]"
- - "[[Libro Tercero, Derechos Personales|Libro Tercero,]]"
+ - "[[Libro Tercero, Título 3, Contratos de consumo|Título 3]]"
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
 ---
 ### Secciones
 ---

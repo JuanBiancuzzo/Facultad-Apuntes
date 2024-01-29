@@ -8,9 +8,9 @@ libro: Libro Tercero
 título: "3"
 capítulo: "1"
 listado:
-  - "[[Libro Tercero, Título 3, Contratos de consumo|Título 3,]]"
-  - "[[Libro Tercero, Título 3, Capítulo 1, Relación de consumo|Capítulo 1,]]"
-  - "[[Libro Tercero, Derechos Personales|Libro Tercero,]]"
+  - "[[Libro Tercero, Título 3, Contratos de consumo|Título 3]]"
+  - "[[Libro Tercero, Título 3, Capítulo 1, Relación de consumo|Capítulo 1]]"
+  - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
 ---
 ### Artículo
 ---
