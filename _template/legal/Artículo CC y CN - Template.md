@@ -127,7 +127,7 @@
 	tR += "listado:\n";
 
 	let links = listado.map(archivo => {
-		let grupoActual = grupos[0][0];
+		let grupoActual = grupos[0][0].replace(",", "");
 		for (let [grupo, nombre] of grupos) {
 			if (!archivo.basename.includes(grupo)) {
 				return `[[${archivo.basename}|${grupoActual}]]`;

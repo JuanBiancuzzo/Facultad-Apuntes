@@ -36,10 +36,10 @@ Pero las diferencias son profundas y netas: la ley es una regla general a la cua
 #### Elementos de los contratos
 ---
 Los [[Elementos de un contrato|elementos de los contratos]] esta dada por la voluntad de las personas, y formalmente la estructura del contrato esta dada por
-* Oferta
-* Aceptación
-* Contratos entre ausentes
-* Contratos por adhesión
+* [[Art. 972 del CC y CN, Oferta|Oferta]]
+* [[Art. 979 del CC y CN, Modos de aceptación|Aceptación]]
+* [[Contrato entre ausentes|Contratos entre ausentes]]
+* [[Libro Tercero, Título 2, Capítulo 3, Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas|Contratos por adhesión]]
 
 #### Tratativas precontractuales
 ---
