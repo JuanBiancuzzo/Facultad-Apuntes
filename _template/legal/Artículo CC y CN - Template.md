@@ -72,28 +72,23 @@
 	}
 
 	async function crearSiNoExiste(carpeta, nombre, template_name) {
-		const archivo_buscado = app.vault.getMarkdownFiles()
+		const archivos_similares = app.vault.getMarkdownFiles()
 			.filter(archivo => {
-				if (!archivo.path.includes(carpeta))
+				if (!archivo.path.includes(carpeta) || archivo.basename.includes("Art."))
 					return false;
+				
 				let nombre_carpeta = carpeta.split("/");
 				nombre_carpeta = nombre_carpeta[nombre_carpeta.length - 1];
-				if (nombre_carpeta == nombre) {
-					console.log(`nombre: ${nombre}\nnombre_esperado: ${nombre_carpeta}`);
-					console.log("son igualesss");
+				if (nombre_carpeta === nombre) 
 					return true;
-				}
+				
 				let nombre_archivo = archivo.basename.split(", ");
 				nombre_archivo = nombre_archivo
 					.slice(0, nombre_archivo.length - 1)
 					.join(", ");
-				console.log(`nombre: ${nombre}\nnombre_esperado: ${nombre_archivo}`);
-				if (nombre.trim() == nombre_archivo.trim())
-					console.log("Son igualesss");
-				return nombre.trim() == nombre_archivo.trim();
-			})
-			.find(archivo => archivo.name.includes(nombre));
-		if (archivo_buscado != undefined) {
+				return nombre.trim() === nombre_archivo.trim();
+			});
+		if (archivos_similares.length > 0) {
 			return;	
 		}
 
@@ -125,9 +120,12 @@
 	});
 	
 	tR += "listado:\n";
-
+	grupos = grupos.map(resultado => { 
+		return [resultado[0].replace(",", ""), resultado[1]]; 
+	});
+	
 	let links = listado.map(archivo => {
-		let grupoActual = grupos[0][0].replace(",", "");
+		let grupoActual = grupos[0][0];
 		for (let [grupo, nombre] of grupos) {
 			if (!archivo.basename.includes(grupo)) {
 				return `[[${archivo.basename}|${grupoActual}]]`;

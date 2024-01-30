@@ -43,6 +43,9 @@
 	});
 	
 	tR += "listado:\n";
+	grupos = grupos.map(resultado => { 
+		return [resultado[0].replace(",", ""), resultado[1]]; 
+	});
 
 	let links = listado.map(archivo => {
 		let grupoActual = grupos[0][0];
