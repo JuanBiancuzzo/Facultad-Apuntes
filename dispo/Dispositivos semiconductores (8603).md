@@ -1,6 +1,6 @@
 ---
 cuatri: 23C2
-estado: cursando
+estado: en-proceso
 plan: "2009"
 codigo: "8603"
 ---

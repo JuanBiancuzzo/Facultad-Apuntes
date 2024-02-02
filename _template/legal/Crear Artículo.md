@@ -1,37 +1,81 @@
 <%*
 	let num_articulo = await tp.system.prompt("Artículo n°: ");
+	if (num_articulo == undefined || num_articulo == "") 
+		return;
 
-	const CCYCN = 2;
-	const CP = 3;
-	const CN = 4;
-	const valores = [CCYCN, CP, CN];
+	const dv = this.app.plugins.plugins["dataview"].api;
+	const paginas = dv.pages('"legal/Articulos"')
+		.map(pagina => {
+			return pagina.file.folder
+				.replace("legal/Articulos/", "")
+				.split("/")[0];
+		});
 
-	let de_donde = await tp.system.suggester(
-		[
-			"Código Civil y Comercial de la Nación",
-			"Código Penal",
-			"Constitución Nacional",
-		], valores);
+	const carpetas = [...new Set(paginas)]; 
 
-	if (!valores.includes(de_donde)) { return; }
+	let de_donde = await tp.system.suggester(carpeta => carpeta, carpetas);
+	let archivo_cabecera = dv.pages(`"legal/Articulos/${de_donde}"`)
+		.find(pagina => pagina.file.name.startsWith(`${de_donde}, Ley `));
 
-	let resultado = [];
-	switch (de_donde) {
-		case CCYCN: resultado = await datosCCyCN(num_articulo); break;
-		case CP: resultado = datosCP(); break;
-		default: resultado = await datosCN();
+	let conjunto = [];
+	let grupos = archivo_cabecera.grupos ? archivo_cabecera.grupos : [];
+	for (let grupo of grupos) {
+		let opt = archivo_cabecera[`opt_${grupo.toLowerCase()}`];
+		if (opt === undefined)
+			opt = true;
+		conjunto.push([grupo, opt]);
 	}
 
-	let titulo = resultado[0];
-	titulo = `Art. ${num_articulo} ${titulo}`;
+	let carpeta = await datos(`legal/Articulos/${de_donde}`, conjunto, archivo_cabecera.predefinidos);
+	if (carpeta === undefined) 
+		return;
 
-	let carpeta = resultado[1];
-	carpeta = `legal/Articulos/${carpeta}`;
+	let titulo = `Art. ${num_articulo} ${archivo_cabecera.nombre_abreviado}`;
+	if (archivo_cabecera.art_con_nombre) {
+		let nombre = await tp.system.prompt(`El Art. ${num_articulo} tiene de nombre: `);
+		titulo += `, ${nombre}`;
+	}
 
-	let template = `legal/Artículo ${resultado[2]} - Template`;
-	template = await tp.file.find_tfile(template);
+	let template = await tp.file.find_tfile("legal/Artículo - Template");
 	carpeta = await crearCarpeta(carpeta);
 	await tp.file.create_new(template, titulo, true, carpeta);
+
+	async function datos(carpeta, conjunto, predefinidas) {
+		if (predefinidas !== undefined && predefinidas !== null) {
+			let opcion = await tp.system.suggester(t => t, predefinidas);
+			carpeta += `/${opcion}`;
+			
+			let pos = conjunto
+				.findIndex(item => item[0].toLowerCase().includes(obtenerGrupo(opcion)));
+			conjunto = conjunto.slice(pos + 1);
+		}
+
+		let siguientes = conjunto;
+		for (let [nombre, opt] of conjunto) {
+			let grupo = await preguntar(`El número/nombre de ${nombre.toLowerCase()} es:`, opt);
+			siguientes = siguientes.slice(1);
+
+			if (grupo === "" || grupo === undefined) {
+				if (siguientes.some((_, opt) => !opt))
+					continue;
+				break;
+			}
+
+			carpeta += `/${nombre} ${grupo}`;
+		}
+
+		return carpeta;
+	}
+
+	async function preguntar(prompt, puedeSaltearse) {
+		let respuesta = await tp.system.prompt(prompt);
+		if (puedeSaltearse)
+			return respuesta;
+		while (respuesta == "" || respuesta === undefined) {
+			respuesta = await tp.system.prompt(`Es obligatoria. ${prompt}`);
+		}
+		return respuesta;
+	}
 
 	async function crearCarpeta(carpeta) {
 		let existe_carpeta = await tp.file.exists(carpeta);
@@ -40,74 +84,27 @@
 		}
 		return this.app.vault.getAbstractFileByPath(carpeta);
 	}
-	
-	async function datosCN() {
-		let num_ley = await tp.system.prompt("Ley N°: ");
-		let titulo = `de la Ley ${num_ley}, de la Constitución Nacional`;
-		let carpeta = `Constitución Nacional/Ley ${num_ley}`;
-		let template_name = "CN";
 
-		return [titulo, carpeta, template_name];
-	}
-	
-	function datosCP() {
-		let titulo = "del Código Penal";
-		let carpeta = "Código Penal";
-		let template_name = "CP";
-
-		return [titulo, carpeta, template_name];
-	}
-
-	async function datosCCyCN(num_articulo) {
-		let carpeta = "Código Civil y Comercial de la Nación";
-	
-		let num_titulo = undefined;
-
-		if (num_articulo >= 1 && num_articulo <= 18) {
-			num_titulo = "preliminar";
-		} else {
-			let grupo = undefined;
-			if (num_articulo <= 400) {
-				grupo = "Libro Primero, Parte General"; 
-			} else if (num_articulo <= 723) {
-				grupo = "Libro Segundo, Relaciones de Familia";
-			} else if (num_articulo <= 1881) {
-				grupo = "Libro Tercero, Derechos Personales";
-			} else if (num_articulo <= 2276) {
-				grupo = "Libro Cuarto, Derechos Reales";
-			} else if (num_articulo <= 2531) {
-				grupo = "Libro Quinto, Transmisión de Derechos por causa de muerte";
-			} else {
-				grupo = "Libro Sexto, Disposiciones comunes a los Derechos personales y reales";
-			}
-			carpeta += `/${grupo}`;
-			num_titulo = await tp.system.prompt("Titulo: ");
-		}
-		carpeta += `/Título ${num_titulo}`;
-	
-		let capitulo = await tp.system.prompt("Capitulo: ");	
-		carpeta += `/Capítulo ${capitulo}`;
+	function obtenerGrupo(carpeta) {
+		let tokens = carpeta.toLowerCase().trim().split(" ");
+		let parte = undefined;
+		let hay_numero = false;
 		
-		let seccion = await tp.system.prompt("Sección: ");
-		if (seccion == "" || seccion == undefined) {
-			return datosCarpetaDefinidaDelCCyCN(carpeta, num_articulo);
+		for (let token of tokens) {
+			if (esNumero(token)) {
+				hay_numero = true;
+			} else {
+				parte = token;
+			}
 		}
-		carpeta += `/Sección ${seccion}`;
-
-		let paragrafo = await tp.system.prompt("Parágrafo: ");
-		if (paragrafo == "" || paragrafo == undefined) {
-			return datosCarpetaDefinidaDelCCyCN(carpeta, num_articulo);
-		}
-		carpeta += `/Parágrafo ${paragrafo}`;
-
-		return datosCarpetaDefinidaDelCCyCN(carpeta, num_articulo);
+		return hay_numero ? parte : tokens[0];
 	}
 
-	async function datosCarpetaDefinidaDelCCyCN(carpeta, num_articulo) {
-		let nombre = await tp.system.prompt(`El Art. ${num_articulo} tiene de nombre: `);
-		let titulo = "del CC y CN, " + nombre;
-		let template_name = "CC y CN";
-
-		return [titulo, carpeta, template_name];
+	function esNumero(token) {
+		token = token.trim().toLowerCase();
+		const nombres_numeros = ["primer", "segund", "tercer", "cuart", "quint", "sext", "septim", "octav", "noven", "décim"];
+		if (nombres_numeros.some(nombre => token.includes(nombre))) 
+			return true;
+		return !isNaN(parseInt(token, 10));
 	}
 %>

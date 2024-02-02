@@ -9,6 +9,7 @@ Es un método de representación de los números decimales, en [[Sistemas de num
 Donde $M$ es la mantisa, este tiene un bit que representa el signo. $B$ la base, que en nuestro caso sería $2$, y por último $e$ el exponente que tiene la [[Representación de enteros|representación]] [[Representación de enteros exceso n|exceso n]]. Este es un estandar llamado **IEEE 754**. Hay que tener en cuenta algunos [[Valores especificos de IEEE 754]].
 
 Esta se conoce con dos posibles tamaños, simple presición y doble precisión. La diferencia es que en simple presición son 32 bits, mientras que doble presición es de 64 bits.
+
 | tipo   | Exponente | Mantisa |
 | ------ | --------- | ------- |
 | Simple | 8 bits    | 23 bits |

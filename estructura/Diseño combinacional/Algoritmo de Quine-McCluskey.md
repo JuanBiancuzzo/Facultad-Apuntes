@@ -72,7 +72,7 @@ Por lo tanto ahora tenemos todos los [[Implicante primo|implicantes primos]], en
 | 0, 2, 8, 10  | -0-0           |
 | 2, 6, 10, 14 | --10               |
 
-Ahora tenemos que obtener únicamente los [[Implicante escencial|implicantes escenciales]], para eso haremos una tabla de la siguiente forma
+Ahora tenemos que obtener únicamente los [[Implicante esencial|implicantes escenciales]], para eso haremos una tabla de la siguiente forma
 
 | minitérminos | 0   | 1   | 2   | 5   | 6   | 8   | 10  | 14  | Redundantes | 7   | 9   |
 | ------------ | --- | --- | --- | --- | --- | --- | --- | --- | ----------- | --- | --- |

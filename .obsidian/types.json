@@ -9,6 +9,12 @@
     "capitulo": "number",
     "capítulo": "number",
     "título": "number",
-    "listado": "multitext"
+    "listado": "multitext",
+    "grupos": "multitext",
+    "opt_parágrafo": "checkbox",
+    "art_con_nombre": "checkbox",
+    "num_título": "number",
+    "libro": "text",
+    "parte": "number"
   }
 }

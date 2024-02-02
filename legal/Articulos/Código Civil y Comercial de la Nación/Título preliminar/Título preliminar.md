@@ -1,39 +1,44 @@
 ---
-num_título: preliminar
-título: "preliminar"
+num_título: "0"
+título:
+  - preliminar
 listado:
+  - "[[Código Civil y Comercial de la Nación, Ley 26.994|Código Civil y Comercial de la Nación]]"
 ---
 ### Capítulos
 ---
 ```dataviewjs
+	let grupo = "Capítulo";
+	let categoria = grupo.toLowerCase();
+	let num_categoria = `num_${categoria}`;
+	
 	let pagina_actual = dv.current();
 	let carpeta = pagina_actual.file.folder;
 	const paginas = dv.pages(`"${carpeta}"`)
 		.where(pagina => {
-			if (pagina.file.name.includes("Parágrafo"))
+			if (pagina.file.name.includes("Art. "))
 				return false;
-			if (pagina.file.name.includes("Sección"))
-				return false;
-			return pagina.file.name.includes("Capítulo");
+			return pagina[num_categoria];
 		})
-		.sort(pagina => parseInt(pagina.num_capítulo));
+		.sort(pagina => parseInt(pagina[num_categoria]));
 
-	dv.table(["Capítulo", "Artículos"], paginas.map(pagina => {
-		let nombre = `Capítulo ${pagina.num_capítulo}`;
+	dv.table([grupo, "Artículos"], paginas.map(pagina => {
+		let nombre = pagina.file.name.split(", ");
+		nombre = nombre.slice(-2)[0];
 		let articulos = dv.pages(`"${carpeta}/${nombre}"`)
 			.where(pagina => {
-				if (pagina.file.name.includes("Capítulo"))
+				if (!pagina.file.name.startsWith("Art. "))
 					return false;
-				if (pagina.file.name.includes("Sección"))
-					return false;
-				return !pagina.file.name.includes("Parágrafo");
+				return pagina.num_articulo;
 			}).sort(pagina => pagina.num_articulo);
 
-		return [`${nombre} [[${pagina.file.path}|?]]`, articulos.map(articulo => {
-			let num_art = articulo.num_articulo;
-			let art_nombre = articulo.art_nombre;
-			let path = articulo.file.path;
-			return `Art. ${num_art}, ${art_nombre} [[${path}|?]]`;
+		nombre = `${nombre}, ${pagina[categoria]} [[${pagina.file.path}|?]]`;
+		return [nombre, articulos.map(articulo => {
+			let nombre_final = `Art. ${articulo.num_articulo}`;
+			if (articulo.art_nombre)
+				nombre_final += `, ${articulo.art_nombre}`;
+			nombre_final += ` [[${articulo.file.path}|?]]`;
+			return nombre_final;
 		})];
 	}));
 ```

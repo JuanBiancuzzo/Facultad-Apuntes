@@ -8,6 +8,7 @@ capitulo: 15
 Dada una función $f : \mathbb{R} \to \mathbb{C}$ [[Seccionalmente continua]] y [[Absolutamente integrable]] en $\mathbb{R}$, se define como transformada de Fourier de $f$ a la función $\hat{f} : \mathbb{R} \to \mathbb{C}$ tal que para cada $\omega \in \mathbb{R}$: $$ \hat{f}(\omega) = \int_{-\infty}^{+\infty} f(x) e^{-i\omega x}dx $$
 ### Propiedades
 ---
+
 |     | Condiciones de aplicación                                                                                                          | Función original                                                                     | Transformada de Fourier                                             |
 | --- | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------- |
 | 1   | $f \in L^1(\mathbb{R}, \mathbb{C})$ y [[Condiciones de Dirichlet para la convergencia puntual\|Condiciones de Dirichlet]]          | $f(x) =  \frac{1}{2\pi} \int_{-\infty}^{+\infty} \hat{f}(\omega) e^{i\omega x} d\omega$ | $\hat{f}(\omega) = \int_{-\infty}^{+\infty} f(x) e^{-i\omega x} dx$ |
