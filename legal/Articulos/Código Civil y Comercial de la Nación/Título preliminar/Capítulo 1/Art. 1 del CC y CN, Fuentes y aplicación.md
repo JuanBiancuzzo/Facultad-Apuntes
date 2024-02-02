@@ -17,5 +17,5 @@ listado:
 ### Interpretación
 ---
 Las fuentes de derecho son las siguientes: 
-* Leyes aplicables, tanto del mismo [[Código Civil y Comercial de la Nación (CC y CN)|CC y CN]] como las leyes complementarias, como también los tratados de derechos humanos en los que la Argentina sea parte. 
+* Leyes aplicables, tanto del mismo [[Código Civil y Comercial de la Nación, Ley 26.994|CC y CN]] como las leyes complementarias, como también los tratados de derechos humanos en los que la Argentina sea parte. 
 * El uso, prácticas y costumbres, que no sean contrarios al derecho, en situaciones no regladas legalmente y cuando las leyes o los interesados se refieren a estas.

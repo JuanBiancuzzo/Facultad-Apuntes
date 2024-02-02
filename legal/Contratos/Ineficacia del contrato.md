@@ -44,6 +44,6 @@ Establece el [[Art. 392 del CC y CN, Efectos respecto de terceros en cosas regis
 
 El problema grave se plantea en el caso de que el comprador haya, a su vez, enajenado la cosa. En este caso, la nulidad de la primera transacción acarrearía la nulidad de la segunda. Y el subadquirente se vería así despojado de su propiedad y, quizás, sin poder recuperar lo pagado si su enajenante ha devenido insolvente.
 
-La cuestión ahora es más simple. El [[Código Civil y Comercial de la Nación (CC y CN)|Código Civil y Comercial]] establece lisa y llanamente que los subadquirentes no pueden ampararse en su buena fe y título oneroso si el acto se ha realizado sin intervención del titular del derecho (art. 392, párr. 2º). 
+La cuestión ahora es más simple. El [[Código Civil y Comercial de la Nación, Ley 26.994|Código Civil y Comercial]] establece lisa y llanamente que los subadquirentes no pueden ampararse en su buena fe y título oneroso si el acto se ha realizado sin intervención del titular del derecho (art. 392, párr. 2º). 
 
 Desde luego, si el tercer subadquirente ha sido de mala fe (es decir, si conocía la causa de la nulidad de la anterior transmisión) o si la adquisición del derecho ha sido por título gratuito, la ley no lo ampara y la nulidad del acto anterior deja sin efecto los derechos adquiridos sobre el inmueble o el mueble registrable.

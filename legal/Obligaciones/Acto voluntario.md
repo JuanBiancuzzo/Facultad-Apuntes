@@ -11,7 +11,7 @@ Están definidos en el [[Art. 260 del CC y CN, Acto voluntario|art. 260 del CC y
 
 #### Caracterización de acto lícito e ilícito
 ---
-Como son aquellos actos realizados por la [[Persona humana|persona humana]], pueden ser actos conformes o contrarios al [[Derecho|derecho]], y sobre este aspecto debe tenerse presente que el [[Código Civil y Comercial de la Nación (CC y CN)|CC y CN]] ha eliminado la división de los actos voluntarios en actos lícitos e ilícitos, formulada en el código derogado. 
+Como son aquellos actos realizados por la [[Persona humana|persona humana]], pueden ser actos conformes o contrarios al [[Derecho|derecho]], y sobre este aspecto debe tenerse presente que el [[Código Civil y Comercial de la Nación, Ley 26.994|CC y CN]] ha eliminado la división de los actos voluntarios en actos lícitos e ilícitos, formulada en el código derogado. 
 
 Es útil recordar la tradicional clasificación sobre la base del criterio del grado de acuerdo del acto voluntario con el [[Ordenamiento jurídico|ordenamiento jurídico]]
 

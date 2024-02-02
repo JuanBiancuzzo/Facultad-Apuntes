@@ -12,7 +12,7 @@ El acto jurídico es la expresión más auténtica del principio de autonomía d
 
 #### Clasificación de los actos jurídicos
 ---
-El nuevo [[Código Civil y Comercial de la Nación (CC y CN)|Código Civil y Comercial]] no contiene clasificación alguna de los actos jurídicos, como lo hacía el código derogado, pero la doctrina nacional las ha formulado. Expondremos a continuación las principales clasificaciones.
+El nuevo [[Código Civil y Comercial de la Nación, Ley 26.994|Código Civil y Comercial]] no contiene clasificación alguna de los actos jurídicos, como lo hacía el código derogado, pero la doctrina nacional las ha formulado. Expondremos a continuación las principales clasificaciones.
 
 #### Actos jurídicos positivos y negativos
 ---

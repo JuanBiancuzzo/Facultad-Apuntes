@@ -5,7 +5,7 @@ capitulo: 3
 ---
 ### Definición
 ---
-Si bien existen varias [[Fuentes de obligación|fuentes de las obligaciones]] (el propio [[Código Civil y Comercial de la Nación (CC y CN)|Cód. Civ. y Com.]] regula en el [[Libro Tercero, Título 5, Otras fuentes de las obligaciones|Libro Tercero, título V]], la responsabilidad civil, la gestión de negocios, el empleo útil, el enriquecimiento sin causa, la declaración unilateral de voluntad y los títulos valores, debiéndose añadir también a la ley, la costumbre, el [[Art. 10 del CC y CN, Abuso del derecho|abuso del derecho]] y la equidad), es claro que la fuente principalísima es el contrato. 
+Si bien existen varias [[Fuentes de obligación|fuentes de las obligaciones]] (el propio [[Código Civil y Comercial de la Nación, Ley 26.994|Cód. Civ. y Com.]] regula en el [[Libro Tercero, Título 5, Otras fuentes de las obligaciones|Libro Tercero, título V]], la responsabilidad civil, la gestión de negocios, el empleo útil, el enriquecimiento sin causa, la declaración unilateral de voluntad y los títulos valores, debiéndose añadir también a la ley, la costumbre, el [[Art. 10 del CC y CN, Abuso del derecho|abuso del derecho]] y la equidad), es claro que la fuente principalísima es el contrato. 
 
 Es necesario distinguir el contrato de otras áreas del derecho civil. Veamos:
 

@@ -38,7 +38,7 @@ Considera la índole del contenido que la norma regula y parte de la división d
 ##### Por su ámbito personal de validez
 ---
 Considera a los destinatarios, en el sentido de la determinación o indeterminación del número de casos que regula su enunciado
-* Normas generales, que regulan un número indeterminado de casos, como las normas del [[Código Civil y Comercial de la Nación (CC y CN)|Código Civil y Comercial de la Nación]] o el [[Código Penal de la Nación|Código Penal de la Nación]]
+* Normas generales, que regulan un número indeterminado de casos, como las normas del [[Código Civil y Comercial de la Nación, Ley 26.994|Código Civil y Comercial de la Nación]] o el [[Código Penal de la Nación|Código Penal de la Nación]]
 * Normas individuales o individualizadas, que regulan un número determinado de casos, como una sentencia, una ley de expropiación de un inmueble, etc.
 
 ##### Por su imperatividad
@@ -102,7 +102,7 @@ Son aquellas que están referidas a las primarias y que, por lo tanto, no tienen
 
 A su vez, las reglas secundarias se clasifican en
 * Reglas de reconocimiento
-	* Se destinan a identificar a las normas primarias estableciendo criterios de validez a partir de los cuales se puede considerar a una norma como perteneciente al [[Ordenamiento jurídico|ordenamiento jurídico]]. Por ejemplo el [[Art. 31 de la Ley 24.430, de la Constitución Nacional|Art. 31 de la Ley 24.430, de la Constitución Nacional]]
+	* Se destinan a identificar a las normas primarias estableciendo criterios de validez a partir de los cuales se puede considerar a una norma como perteneciente al [[Ordenamiento jurídico|ordenamiento jurídico]]. Por ejemplo el [[Art. 31 de la Constitución Nacional|Art. 31 de la Constitución Nacional]]
 * Reglas de cambio
 	* Regulan el proceso por el cual se introducen nuevas normas primarias y se modifican y expulsan las existentes, es decir, reglan la producción, modificación y derogación de las normas primarias, dinamizando así el [[Ordenamiento jurídico|ordenamiento jurídico]]
 * Reglas de adjudicación

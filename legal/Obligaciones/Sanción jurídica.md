@@ -49,5 +49,5 @@ La pena es un tipo de sanción exclusiva del Derecho Penal prevista en el Códig
 
 En nuestro derecho las penas están mencionadas en el [[Art. 5 del Código Penal|art. 5 de Código Penal]] que a continuación reproducimos: ![[Art. 5 del Código Penal#Artículo]]
 
-La [[Constitución Nacional|Constitución Nacional]] prohíbe la pena de muerte por causas políticas ([[Art. 18 de la Ley 24.430, de la Constitución Nacional|art. 18 Constitución Nacional]]).
+La [[Constitución Nacional|Constitución Nacional]] prohíbe la pena de muerte por causas políticas ([[Art. 18 de la Constitución Nacional|art. 18 Constitución Nacional]]).
 

@@ -7,8 +7,8 @@ capitulo: 1
 ---
 El Poder Ejecutivo tiene, entre las atribuciones conferidas por la [[Constitución Nacional|Constitución Nacional]] y en ejercicio de su función de administración pública, la potestad de dictar [[Norma jurídica|normas jurídicas]] reglamentarias a las que se las llama, indistintamente, reglamentos o decretos
 
-La autoridad normativa le es conferida al órgano ejecutivo por la Constitución Nacional, así como ésta también es la que establece el procedimiento o forma de producción normativa, en estos términos [[Art. 99 de la Ley 24.430, de la Constitución Nacional|art. 99 de la Constitución Nacional]]
-![[Art. 99 de la Ley 24.430, de la Constitución Nacional#Artículo]]
+La autoridad normativa le es conferida al órgano ejecutivo por la Constitución Nacional, así como ésta también es la que establece el procedimiento o forma de producción normativa, en estos términos [[Art. 99 de la Constitución Nacional|art. 99 de la Constitución Nacional]]
+![[Art. 99 de la Constitución Nacional#Artículo]]
 
 El Poder Ejecutivo no podrá en ningún caso bajo pena de [[Nulidad|nulidad]] absoluta e insanable, emitir disposiciones de carácter legislativo
 
@@ -26,8 +26,8 @@ Se los llama también subordinados por cuanto su existencia se justifica en func
 
 #### Reglamentos delegados
 ---
-Son aquellos decretos que, sin perjuicio de estar en principio prohibidos, son dictados a partir de una delegación de funciones que, excepcionalmente, el Congreso hace al Poder Ejecutivo. Los prevé el [[Art. 76 de la Ley 24.430, de la Constitución Nacional|art. 76 de la Constitución Nacional]] en estos términos
-![[Art. 76 de la Ley 24.430, de la Constitución Nacional#Artículo]]
+Son aquellos decretos que, sin perjuicio de estar en principio prohibidos, son dictados a partir de una delegación de funciones que, excepcionalmente, el Congreso hace al Poder Ejecutivo. Los prevé el [[Art. 76 de la Constitución Nacional|art. 76 de la Constitución Nacional]] en estos términos
+![[Art. 76 de la Constitución Nacional#Artículo]]
 
 La caducidad resultante del transcurso del plazo previsto en el párrafo anterior no importará revisión de las relaciones jurídicas nacidas al amparo de las normas dictadas en consecuencia de la delegación legislativa.
 
