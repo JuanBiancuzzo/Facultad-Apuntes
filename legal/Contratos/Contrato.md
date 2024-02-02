@@ -43,7 +43,7 @@ Los [[Elementos de un contrato|elementos de los contratos]] esta dada por la vol
 
 #### Tratativas precontractuales
 ---
-
+![[Tratativas precontractuales#Definición]]
 
 #### Ineficacia del contrato
 ---
