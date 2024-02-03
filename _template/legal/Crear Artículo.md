@@ -33,6 +33,7 @@
 	let titulo = `Art. ${num_articulo} ${archivo_cabecera.nombre_abreviado}`;
 	if (archivo_cabecera.art_con_nombre) {
 		let nombre = await tp.system.prompt(`El Art. ${num_articulo} tiene de nombre: `);
+		nombre = nombre.replace(",", "");
 		titulo += `, ${nombre}`;
 	}
 
@@ -56,7 +57,7 @@
 			siguientes = siguientes.slice(1);
 
 			if (grupo === "" || grupo === undefined) {
-				if (siguientes.some((_, opt) => !opt))
+				if (hayOpcionObligatorio(siguientes))
 					continue;
 				break;
 			}
@@ -65,6 +66,14 @@
 		}
 
 		return carpeta;
+	}
+
+	function hayOpcionObligatorio(conjunto) {
+		let hayOpcion = false;
+		for (let [_, opt] of conjunto) {
+			hayOpcion |= !opt;
+		}
+		return hayOpcion;
 	}
 
 	async function preguntar(prompt, puedeSaltearse) {

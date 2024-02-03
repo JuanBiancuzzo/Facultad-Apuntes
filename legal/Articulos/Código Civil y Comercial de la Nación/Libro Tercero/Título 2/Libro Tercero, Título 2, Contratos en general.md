@@ -42,6 +42,37 @@ listado:
 	}));
 ```
 
+### Artículos
+---
+```dataviewjs
+	let pagina_actual = dv.current();
+	let carpeta = `"${pagina_actual.file.folder}"`;
+	const paginas = dv.pages(carpeta)
+		.where(pagina => {
+			return pagina.file.name != pagina_actual.file.name && pagina.num_articulo;
+		})
+		.sort(pagina => pagina.num_articulo);
+
+	dv.table(["Artículo", "Contenido"], paginas.flatMap(pagina => {
+		let articulo = `Art. ${pagina.num_articulo}`;
+		if (pagina.art_nombre)
+			articulo += `, ${pagina.art_nombre}`;
+		articulo += `[[${pagina.file.path}|?]]`;
+		let contenido = pagina.art;
+
+		let output = [[articulo, contenido]];
+
+		if (pagina.incisos) { 
+			output.push(["", pagina.incisos]);
+		}
+		if (pagina.cont_art) {
+			output.push(["", pagina.cont_art]);
+		}
+	
+		return output;
+	}));
+```
+
 ### Interpretación
 ---
 El contrato es el principal instrumento de que se valen los hombres para urdir entre ellos el tejido infinito de sus [[Relación jurídica|relaciones jurídicas]], es decir, es la principal fuente de [[Obligación|obligaciones]]. La persona vive contratando o cumpliendo contratos, desde operaciones de gran envergadura hasta contratos cotidianos que la persona realiza muchas veces sin advertir que está contratado: Así ocurre cuando trabaja en relación de dependencia ([[Contrato de trabajo|contrato de trabajo]]), cuando sube a un colectivo ([[Contrato de transporte|contrato de transporte]]), cuando compra golosinas ([[Contrato del consumidor|compraventa]]), cuando adquiere entradas para ir al cine o al fútbol ([[Contrato de espectáculo público|contrato de espectáculo público]])

@@ -29,7 +29,8 @@
     "_template/Materia - Template.md",
     "_template/Tikz - Template.md",
     "_template/legal/Nueva Ley.md",
-    "_template/legal/Crear Artículo.md"
+    "_template/legal/Crear Artículo.md",
+    "_template/legal/Seleccionar.md"
   ],
   "startup_templates": [
     ""

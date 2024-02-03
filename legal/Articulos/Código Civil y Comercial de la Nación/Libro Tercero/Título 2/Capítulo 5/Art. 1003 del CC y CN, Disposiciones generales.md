@@ -19,3 +19,8 @@ listado:
 
 ### Interpretación
 ---
+El objeto debe ser determinado o determinable. No sería posible constreñir al deudor a la entrega de una cosa o al cumplimiento de un hecho si no se puede precisar cuál es la cosa o hecho debido. Muchas veces, el objeto es precisado en su individualidad. En estos casos, el objeto es determinado.
+
+Como podemos interpretar del [[Art. 1005 del CC y CN, Determinación|art. 1005]]
+![[Art. 1005 del CC y CN, Determinación#Interpretación]]
+

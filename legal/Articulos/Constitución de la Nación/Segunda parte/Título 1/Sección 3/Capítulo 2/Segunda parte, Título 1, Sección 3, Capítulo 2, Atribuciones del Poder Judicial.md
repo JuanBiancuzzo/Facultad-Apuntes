@@ -18,7 +18,10 @@ listado:
 		.sort(pagina => pagina.num_articulo);
 
 	dv.table(["Artículo", "Contenido"], paginas.flatMap(pagina => {
-		let articulo = `Art. ${pagina.num_articulo} [[${pagina.file.path}|?]]`;
+		let articulo = `Art. ${pagina.num_articulo}`;
+		if (pagina.art_nombre)
+			articulo += `, ${pagina.art_nombre}`;
+		articulo += `[[${pagina.file.path}|?]]`;
 		let contenido = pagina.art;
 
 		let output = [[articulo, contenido]];
