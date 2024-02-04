@@ -1,31 +1,33 @@
 <%*
 	const dv = this.app.plugins.plugins["dataview"].api;
-	const paginas = dv.pages('"legal/Articulos"')
+
+	let carpeta_articulos = "legal/Articulos";
+	let todos_articulos = dv.pages(`"${carpeta_articulos}"`);
+	let seleccion = await tp.file.selection();
+
+	let carpetas = todos_articulos
 		.map(pagina => {
 			return pagina.file.folder
 				.replace("legal/Articulos/", "")
 				.split("/")[0];
 		});
+	carpetas = [...new Set(carpetas)]; 
+	let leyes = todos_articulos.filter(articulo => carpetas.some(carpeta => {
+		return articulo.file.name.startsWith(`${carpeta}, Ley`);
+	}));
+	if (!leyes)
+		return seleccion;
 
-	const carpetas = [...new Set(paginas)]; 
+	let archivo_cabecera = await tp.system.suggester(ley => ley.file.name, leyes);
+	if (!archivo_cabecera)
+		return seleccion;
 
-	let de_donde = await tp.system.suggester(carpeta => carpeta, carpetas);
-	if (de_donde === null)
-		return "";
-
-
-	let archivos = dv.pages(`"legal/Articulos/${de_donde}"`);
-	let archivo_cabecera = archivos
-		.find(pagina => pagina.file.name.startsWith(`${de_donde}, Ley `));	
-
-	if (archivo_cabecera === undefined)
-		return "";
-
+	let archivos = dv.pages(`"${archivo_cabecera.file.folder}"`);
 	let buscar_articulos = true;
 	if (archivo_cabecera.grupos && archivo_cabecera.grupos.length > 0 && false) {
 		buscar_articulos = await tp.system.suggester(["Buscar artículos", "Buscar grupos"], [true, false]);
 		if (buscar_articulos === null)
-			return "";
+			return seleccion;
 	}
 
 	if (buscar_articulos) {
@@ -34,33 +36,32 @@
 			.sort(pagina => pagina.num_articulo);
 		
 		
-		let [articulo, seleccion] = await articuloPorSeleccion(articulos);
+		let articulo = await articuloPorSeleccion(articulos, seleccion);
 		if (!articulo)
 			articulo = await preguntarPorArticulo(articulos, seleccion);
 
 		if (!articulo)
-			return selecionado ? selecionado : "";
+			return seleccion ? seleccion : "";
 
 		tR += `[[${articulo}]]`;
 	} else {
 		let grupos = archivo_cabecera.grupos;
 	}
 
-	async function articuloPorSeleccion(articulos) {
-		let selecionado = await tp.file.selection();
+	async function articuloPorSeleccion(articulos, seleccion) {
 		let link = undefined;
-		if (selecionado) {
-			let numero = tenerNumeroGrupo(selecionado);
+		if (seleccion) {
+			let numero = tenerNumeroGrupo(seleccion);
 			let articulo = articulos.find(a => a.num_articulo == parseInt(numero, 10));
 			if (articulo)
-				link = `${articulo.file.name}|${selecionado}`;
+				link = `${articulo.file.name}|${seleccion}`;
 			else {
-				let mensaje = `No se pudo encontrar el artículo referido a la selección: ${selecionado}`;
+				let mensaje = `No se pudo encontrar el artículo referido a la selección: ${seleccion}`;
 				let n = new Notice(mensaje);
 			}
 				
 		}
-		return [link, selecionado];
+		return link;
 	}
 
 	async function preguntarPorArticulo(articulos, seleccion) {

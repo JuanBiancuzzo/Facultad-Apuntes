@@ -1,32 +1,49 @@
 <%* 
-	let titulo = tp.file.title;
-	if (titulo.startsWith("Untitle")) {
-		titulo = await tp.system.prompt("Materia:");
-		await tp.file.rename(titulo);
+	let titulo = await tp.system.prompt("Materia:");
+	if (!titulo)
+		return "";
+	
+	let codigo = await tp.system.prompt(`El código de ${titulo} es:`);
+	if (!codigo)
+		return "";
+	
+	await tp.file.rename(`${titulo} (${codigo})`);
+	
+	tR += "---\n";
+
+	let anios = [];
+	console.log(tp.file.creation_date("YY"));
+	for (let anio = tp.file.creation_date("YY"); anio >= 19; anio--) {
+		anios.push(anio);
 	}
-_%>
----
-<%* 
-	let anio = await tp.system.suggester([
-		"2020", "2021", "2022", "2023", "2024", "2025", "2026"
-	], [
-		"20", "21", "22", "23", "24", "25", "26"
-	]);
+	
+	let anio = await tp.system.suggester(terminacion => `Año 20${terminacion}`, 
+		anios, false, "En que año se esta cursando esta materia");
 	
 	let cuatrimestre = await tp.system.suggester([
 		"Primer cuatrimestre", "Segundo cuatrimestre"
 	], [
 		"C1", "C2"
 	]);
+	
+	tR += `cuatri: ${anio}${cuatrimestre}\n`;
 
-	tR += "cuatri: " + anio + cuatrimestre;
+	let estado = await tp.system.suggester(estado => {
+		estado = estado.replaceAll("-", " ");
+		return `${estado.charAt(0).toUpperCase()}${estado.slice(1)}`;
+	}, ["no-empezado", "cursando", "en-proceso", "terminado"], 
+	false, "Cuál es el estado de la materia?");
+
+	let plan = await tp.system.suggester(plan => {
+		return `Plan ${plan}`;
+	}, [2023, 2009, 1986], false, "Cuál es el plan de la materia");
+	
+	tR += `codigo: ${codigo}\n`;
+	tR += `plan: ${plan}\n`;
+
+	tR += `estado: ${estado}\n`;
+	tR += "---";
 %>
-estado: <% tp.system.suggester([
-	"No empezado", "Cursando", "En proceso", "Terminado",
-], [
-	"no-empezado", "cursando", "en-proceso", "terminado",
-]) %>
----
 ### Apuntes
 ---
 ```dataviewjs

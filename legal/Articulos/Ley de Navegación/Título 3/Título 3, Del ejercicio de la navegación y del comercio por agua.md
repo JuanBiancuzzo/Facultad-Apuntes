@@ -1,8 +1,8 @@
 ---
-num_título: 1
-título: Disposiciones Generales
+num_título: 3
+título: "Del ejercicio de la navegación y del comercio por agua"
 listado:
-  - "[[Ley de Contrato de Trabajo, Ley 20.744|Ley de Contrato de Trabajo]]"
+ - "[[Ley de Navegación, Ley 20.094|Ley de Navegación]]"
 ---
 ### Capítulos
 ---

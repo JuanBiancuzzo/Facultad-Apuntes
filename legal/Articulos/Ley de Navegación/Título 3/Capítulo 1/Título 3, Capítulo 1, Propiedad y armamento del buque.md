@@ -1,13 +1,13 @@
 ---
-num_título: 1
-título: Disposiciones Generales
+num_capítulo: 1
+capítulo: "Propiedad y armamento del buque"
 listado:
-  - "[[Ley de Contrato de Trabajo, Ley 20.744|Ley de Contrato de Trabajo]]"
+ - "[[Título 3, Del ejercicio de la navegación y del comercio por agua|Título 3]]"
 ---
-### Capítulos
+### Secciones
 ---
 ```dataviewjs
-	let grupo = "Capítulo";
+	let grupo = "Sección";
 	let categoria = grupo.toLowerCase();
 	let num_categoria = `num_${categoria}`;
 	

@@ -1,10 +1,10 @@
 ---
-num_sección: 5
-sección: Obligaciones con cláusula penal y sanciones conminatorias
+num_sección: 2
+sección: "Disposiciones especiales para las obras"
 listado:
  - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
- - "[[Libro Tercero, Título 1, Obligaciones en general|Título 1]]"
- - "[[Libro Tercero, Título 1, Capítulo 3, Clases de obligaciones|Capítulo 3]]"
+ - "[[Libro Tercero, Título 4, Contratos en particular|Título 4]]"
+ - "[[Libro Tercero, Título 4, Capítulo 6, Obra y servicios|Capítulo 6]]"
 ---
 ### Artículos
 ---
@@ -39,3 +39,4 @@ listado:
 
 ### Interpretación
 ---
+

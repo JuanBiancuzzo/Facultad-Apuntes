@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "",
+  "templates_folder": "_template",
   "templates_pairs": [
     [
       "",
@@ -13,16 +13,7 @@
   "shell_path": "",
   "user_scripts_folder": "",
   "enable_folder_templates": true,
-  "folder_templates": [
-    {
-      "folder": "/",
-      "template": "_template/Definición - Template.md"
-    },
-    {
-      "folder": "legal/Articulos",
-      "template": "_template/Vacío - Template.md"
-    }
-  ],
+  "folder_templates": [],
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
@@ -30,7 +21,9 @@
     "_template/Tikz - Template.md",
     "_template/legal/Nueva Ley.md",
     "_template/legal/Crear Artículo.md",
-    "_template/legal/Seleccionar.md"
+    "_template/legal/Seleccionar.md",
+    "_template/Definición Nueva Página - Template.md",
+    "_template/Definición Misma Página - Template.md"
   ],
   "startup_templates": [
     ""

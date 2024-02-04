@@ -91,5 +91,24 @@
       ],
       "key": "r"
     }
+  ],
+  "file-explorer:new-file": [],
+  "templater-obsidian:_template/Definición Nueva Página - Template.md": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "N"
+    }
+  ],
+  "file-explorer:new-file-in-new-pane": [],
+  "templater-obsidian:_template/Definición Misma Página - Template.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "N"
+    }
   ]
 }

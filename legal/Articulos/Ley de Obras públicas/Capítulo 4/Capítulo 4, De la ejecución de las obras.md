@@ -1,10 +1,8 @@
 ---
-num_sección: 5
-sección: Obligaciones con cláusula penal y sanciones conminatorias
+num_capítulo: 4
+capítulo: "De la ejecución de las obras"
 listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
- - "[[Libro Tercero, Título 1, Obligaciones en general|Título 1]]"
- - "[[Libro Tercero, Título 1, Capítulo 3, Clases de obligaciones|Capítulo 3]]"
+ - "[[Ley de Obras públicas, Ley 13.064|Ley de Obras públicas]]"
 ---
 ### Artículos
 ---
@@ -39,3 +37,4 @@ listado:
 
 ### Interpretación
 ---
+

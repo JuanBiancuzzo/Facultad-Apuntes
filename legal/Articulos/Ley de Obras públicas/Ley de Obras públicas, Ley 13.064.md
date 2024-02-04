@@ -1,8 +1,11 @@
 ---
-num_título: 1
-título: Disposiciones Generales
-listado:
-  - "[[Ley de Contrato de Trabajo, Ley 20.744|Ley de Contrato de Trabajo]]"
+num_ley: 13064
+ley: Ley de Obras públicas
+grupos:
+ - Capítulo
+opt_capítulo: false
+art_con_nombre: false
+nombre_abreviado: de la Ley de Obras públicas
 ---
 ### Capítulos
 ---
@@ -75,4 +78,3 @@ listado:
 
 ### Interpretación
 ---
-

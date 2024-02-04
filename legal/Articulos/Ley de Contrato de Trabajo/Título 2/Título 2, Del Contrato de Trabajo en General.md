@@ -1,8 +1,8 @@
 ---
-num_título: 1
-título: Disposiciones Generales
+num_título: 2
+título: "Del Contrato de Trabajo en General"
 listado:
-  - "[[Ley de Contrato de Trabajo, Ley 20.744|Ley de Contrato de Trabajo]]"
+ - "[[Ley de Contrato de Trabajo, Ley 20.744|Ley de Contrato de Trabajo]]"
 ---
 ### Capítulos
 ---

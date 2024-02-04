@@ -1,10 +1,8 @@
 ---
-num_sección: 5
-sección: Obligaciones con cláusula penal y sanciones conminatorias
+num_capítulo: 7
+capítulo: "De los derechos y deberes de las partes"
 listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
- - "[[Libro Tercero, Título 1, Obligaciones en general|Título 1]]"
- - "[[Libro Tercero, Título 1, Capítulo 3, Clases de obligaciones|Capítulo 3]]"
+ - "[[Título 2, Del Contrato de Trabajo en General|Título 2]]"
 ---
 ### Artículos
 ---
@@ -39,3 +37,4 @@ listado:
 
 ### Interpretación
 ---
+

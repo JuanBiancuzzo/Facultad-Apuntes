@@ -4,18 +4,26 @@
 		return;
 
 	const dv = this.app.plugins.plugins["dataview"].api;
-	const paginas = dv.pages('"legal/Articulos"')
+	let carpeta_articulos = "legal/Articulos";
+	let todos_articulos = dv.pages(`"${carpeta_articulos}"`);
+	let seleccion = await tp.file.selection();
+
+	let carpetas = todos_articulos
 		.map(pagina => {
 			return pagina.file.folder
 				.replace("legal/Articulos/", "")
 				.split("/")[0];
 		});
+	carpetas = [...new Set(carpetas)]; 
+	let leyes = todos_articulos.filter(articulo => carpetas.some(carpeta => {
+		return articulo.file.name.startsWith(`${carpeta}, Ley`);
+	}));
+	if (!leyes)
+		return seleccion;
 
-	const carpetas = [...new Set(paginas)]; 
-
-	let de_donde = await tp.system.suggester(carpeta => carpeta, carpetas);
-	let archivo_cabecera = dv.pages(`"legal/Articulos/${de_donde}"`)
-		.find(pagina => pagina.file.name.startsWith(`${de_donde}, Ley `));
+	let archivo_cabecera = await tp.system.suggester(ley => ley.file.name, leyes);
+	if (!archivo_cabecera)
+		return seleccion;
 
 	let conjunto = [];
 	let grupos = archivo_cabecera.grupos ? archivo_cabecera.grupos : [];
@@ -26,9 +34,9 @@
 		conjunto.push([grupo, opt]);
 	}
 
-	let carpeta = await datos(`legal/Articulos/${de_donde}`, conjunto, archivo_cabecera.predefinidos);
-	if (carpeta === undefined) 
-		return;
+	let carpeta = await datos(archivo_cabecera.file.folder, conjunto, archivo_cabecera.predefinidos);
+	if (!carpeta) 
+		return seleccion;
 
 	let titulo = `Art. ${num_articulo} ${archivo_cabecera.nombre_abreviado}`;
 	if (archivo_cabecera.art_con_nombre) {
@@ -39,7 +47,12 @@
 
 	let template = await tp.file.find_tfile("legal/Artículo - Template");
 	carpeta = await crearCarpeta(carpeta);
-	await tp.file.create_new(template, titulo, true, carpeta);
+	let nuevo_articulo = await tp.file.create_new(template, titulo, false, carpeta);
+	await app.workspace.getLeaf("tab").openFile(nuevo_articulo);
+
+	if (seleccion) {
+		return `[[${nuevo_articulo.basename}|${seleccion}]]`;
+	}
 
 	async function datos(carpeta, conjunto, predefinidas) {
 		if (predefinidas !== undefined && predefinidas !== null) {

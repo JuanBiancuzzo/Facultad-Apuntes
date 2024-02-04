@@ -1,10 +1,8 @@
 ---
-num_sección: 5
-sección: Obligaciones con cláusula penal y sanciones conminatorias
+num_capítulo: 2
+capítulo: "Información al consumidor y protección de su salud"
 listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
- - "[[Libro Tercero, Título 1, Obligaciones en general|Título 1]]"
- - "[[Libro Tercero, Título 1, Capítulo 3, Clases de obligaciones|Capítulo 3]]"
+ - "[[Título 1, Normas de protección y defensa de los consumidores|Título 1]]"
 ---
 ### Artículos
 ---
@@ -39,3 +37,4 @@ listado:
 
 ### Interpretación
 ---
+

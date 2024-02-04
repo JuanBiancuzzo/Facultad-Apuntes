@@ -1,13 +1,20 @@
 ---
-num_título: 1
-título: Disposiciones Generales
-listado:
-  - "[[Ley de Contrato de Trabajo, Ley 20.744|Ley de Contrato de Trabajo]]"
+num_ley: 20094
+ley: LEy de Navegación
+grupos:
+ - Título
+ - Capítulo
+ - Sección
+opt_título: false
+opt_capítulo: true
+opt_sección: true
+art_con_nombre: true
+nombre_abreviado: de la Ley de Navegación
 ---
-### Capítulos
+### Títulos
 ---
 ```dataviewjs
-	let grupo = "Capítulo";
+	let grupo = "Título";
 	let categoria = grupo.toLowerCase();
 	let num_categoria = `num_${categoria}`;
 	
@@ -75,4 +82,3 @@ listado:
 
 ### Interpretación
 ---
-

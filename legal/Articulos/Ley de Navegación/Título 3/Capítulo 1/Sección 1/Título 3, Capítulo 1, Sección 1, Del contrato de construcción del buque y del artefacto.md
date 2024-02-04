@@ -1,10 +1,9 @@
 ---
-num_sección: 5
-sección: Obligaciones con cláusula penal y sanciones conminatorias
+num_sección: 1
+sección: "Del contrato de construcción del buque y del artefacto"
 listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
- - "[[Libro Tercero, Título 1, Obligaciones en general|Título 1]]"
- - "[[Libro Tercero, Título 1, Capítulo 3, Clases de obligaciones|Capítulo 3]]"
+ - "[[Título 3, Del ejercicio de la navegación y del comercio por agua|Título 3]]"
+ - "[[Título 3, Capítulo 1, Propiedad y armamento del buque|Capítulo 1]]"
 ---
 ### Artículos
 ---
@@ -39,3 +38,4 @@ listado:
 
 ### Interpretación
 ---
+
