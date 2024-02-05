@@ -8,7 +8,7 @@
 	let carpetas = todos_articulos
 		.map(pagina => {
 			return pagina.file.folder
-				.replace("legal/Articulos/", "")
+				.replaceAll("legal/Articulos/", "")
 				.split("/")[0];
 		});
 	carpetas = [...new Set(carpetas)]; 
@@ -99,7 +99,7 @@
 		if (numero) 
 			return numero;
 
-		for (let parte of conjunto.replace(".", "").split(" ")) {
+		for (let parte of conjunto.replaceAll(".", "").split(" ")) {
 			if (isNaN(parseInt(parte, 10)) || numero)
 				continue;
 			if (!numero)

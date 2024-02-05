@@ -3,8 +3,8 @@
 	let titulo = tp.file.title.split(",");
 	
 	let ley = titulo[0];
-	let num_ley = titulo[1].replace("Ley", "")
-		.replace(".", "")
+	let num_ley = titulo[1].replaceAll("Ley", "")
+		.replaceAll(".", "")
 		.trim();
 
 	tR += `num_ley: ${num_ley}\n`;

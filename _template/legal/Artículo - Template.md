@@ -94,7 +94,7 @@
 		if (numero !== undefined) 
 			return numero;
 
-		for (let parte of conjunto.replace(".", "").split(" ")) {
+		for (let parte of conjunto.replaceAll(".", "").split(" ")) {
 			if (isNaN(parseInt(parte, 10)))
 				continue;
 			if (numero === undefined)

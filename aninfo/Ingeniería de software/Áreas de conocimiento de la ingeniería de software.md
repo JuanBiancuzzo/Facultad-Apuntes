@@ -19,7 +19,7 @@ Descubrimiento, análisis, especificación, validación y administración de req
 
 #### Construcción
 ---
-![[aninfo/Ingeniería de software/Construcción de software#Definición]]
+![[Construcción de software#Definición]]
 
 #### Testing
 ---

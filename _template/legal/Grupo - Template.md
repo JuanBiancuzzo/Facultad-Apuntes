@@ -23,7 +23,7 @@
 	} else if (num_grupo > 0) {
 		nombre_grupo = ultimo_elemento;
 	} else {
-		nombre_grupo = ultimo_elemento.replace(grupo, "").trim();
+		nombre_grupo = ultimo_elemento.replaceAll(grupo, "").trim();
 	}
 
 	await tp.file.rename(titulo);
@@ -74,7 +74,7 @@
 		if (numero !== undefined) 
 			return numero;
 
-		for (let parte of conjunto.replace(".", "").split(" ")) {
+		for (let parte of conjunto.replaceAll(".", "").split(" ")) {
 			if (isNaN(parseInt(parte, 10)))
 				continue;
 			if (numero === undefined)

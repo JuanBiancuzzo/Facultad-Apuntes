@@ -11,7 +11,7 @@
 	let carpetas = todos_articulos
 		.map(pagina => {
 			return pagina.file.folder
-				.replace("legal/Articulos/", "")
+				.replaceAll("legal/Articulos/", "")
 				.split("/")[0];
 		});
 	carpetas = [...new Set(carpetas)]; 
@@ -41,7 +41,7 @@
 	let titulo = `Art. ${num_articulo} ${archivo_cabecera.nombre_abreviado}`;
 	if (archivo_cabecera.art_con_nombre) {
 		let nombre = await tp.system.prompt(`El Art. ${num_articulo} tiene de nombre: `);
-		nombre = nombre.replace(",", "");
+		nombre = nombre.replaceAll(",", "");
 		titulo += `, ${nombre}`;
 	}
 
@@ -49,10 +49,6 @@
 	carpeta = await crearCarpeta(carpeta);
 	let nuevo_articulo = await tp.file.create_new(template, titulo, false, carpeta);
 	await app.workspace.getLeaf("tab").openFile(nuevo_articulo);
-
-	if (seleccion) {
-		return `[[${nuevo_articulo.basename}|${seleccion}]]`;
-	}
 
 	async function datos(carpeta, conjunto, predefinidas) {
 		if (predefinidas !== undefined && predefinidas !== null) {

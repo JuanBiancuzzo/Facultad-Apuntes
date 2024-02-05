@@ -20,7 +20,7 @@
 	for (let [grupo, parte] of grupos) {
 		carpeta_relativa += `/${grupo}`;
 		let archivo = archivos.find(archivo => {
-			let path = archivo.path.replace(`/${archivo.name}`);
+			let path = archivo.path.replaceAll(`/${archivo.name}`);
 			return path.includes(carpeta_relativa) && !path.includes(`${carpeta_relativa}/`);
 		});
 		if (archivo !== undefined)
@@ -29,7 +29,7 @@
 	
 	tR += "listado:\n";
 	grupos = grupos.map(resultado => { 
-		return [resultado[0].replace(",", ""), resultado[1]]; 
+		return [resultado[0].replaceAll(",", ""), resultado[1]]; 
 	});
 	
 	let links = listado.map(archivo => {

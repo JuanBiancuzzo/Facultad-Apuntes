@@ -33,7 +33,7 @@
 		}
 
 		let archivo = archivos.find(archivo => {
-			let path = archivo.path.replace(`/${archivo.name}`);
+			let path = archivo.path.replaceAll(`/${archivo.name}`);
 			if (!path.includes(carpeta_relativa))
 				return false;
 			if (archivo.basename.startsWith("Art."))
