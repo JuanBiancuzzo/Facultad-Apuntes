@@ -25,16 +25,8 @@
 	if (!archivo_cabecera)
 		return seleccion;
 
-	let conjunto = [];
-	let grupos = archivo_cabecera.grupos ? archivo_cabecera.grupos : [];
-	for (let grupo of grupos) {
-		let opt = archivo_cabecera[`opt_${grupo.toLowerCase()}`];
-		if (opt === undefined)
-			opt = true;
-		conjunto.push([grupo, opt]);
-	}
-
-	let carpeta = await datos(archivo_cabecera.file.folder, conjunto, archivo_cabecera.predefinidos);
+	let conjunto = conseguirConjuntos(archivo_cabecera);
+	let carpeta = await datos(conjunto, archivo_cabecera, num_articulo);
 	if (!carpeta) 
 		return seleccion;
 
@@ -50,8 +42,71 @@
 	let nuevo_articulo = await tp.file.create_new(template, titulo, false, carpeta);
 	await app.workspace.getLeaf("tab").openFile(nuevo_articulo);
 
-	async function datos(carpeta, conjunto, predefinidas) {
-		if (predefinidas !== undefined && predefinidas !== null) {
+	function conseguirConjuntos(archivo_cabecera) {
+		if (!archivo_cabecera.grupos)
+			return [];
+		let conjunto = [];
+		
+		for (let grupo of archivo_cabecera.grupos) {
+			let opt = archivo_cabecera[`opt_${grupo.toLowerCase()}`];
+			if (opt === undefined)
+				opt = true;
+			conjunto.push([grupo, opt]);
+		}
+		
+		return conjunto;
+	}
+
+	function conseguirArtAnteriorYSiguiente(archivoCabecera, numArt) {
+		let articulos = dv.pages(`"${archivoCabecera.file.folder}"`)
+			.where(pagina => pagina.file.name.startsWith("Art."));
+
+		let inferiores = articulos.where(art => art.num_articulo < numArt).values;
+		if (inferiores.length == 0)
+			return null;
+
+		let superiores = articulos.where(art => art.num_articulo > numArt).values;
+		if (superiores.length == 0)
+			return null;
+
+		let inferior = inferiores
+			.reduce((art1, art2) => art1.num_articulo > art2.num_articulo ? art1 : art2);
+
+		let superior = superiores
+			.reduce((art1, art2) => art1.num_articulo < art2.num_articulo ? art1 : art2);	
+		
+		return [inferior, superior];
+	}
+
+	async function datos(conjunto, archivo_cabecera, num_articulo) {
+		let carpeta = archivo_cabecera.file.folder;
+		let predefinidas = archivo_cabecera.predefinidos;
+
+		let avanzado = false;
+		let articulos = conseguirArtAnteriorYSiguiente(archivo_cabecera, num_articulo);
+		
+		if (articulos) {
+			let [artAnterior, artSiguiente] = articulos;
+			let carpetaPos = 0;
+
+			let carpetaAnterior = artAnterior.file.folder.split("/").slice(3);
+			let carpetaSiguiente = artSiguiente.file.folder.split("/").slice(3);
+
+			while (true) {
+				if (Math.min(carpetaAnterior.length, carpetaSiguiente.length) <= carpetaPos)
+					break;
+				if (carpetaAnterior[carpetaPos] != carpetaSiguiente[carpetaPos])
+					break;
+
+				carpeta += `/${carpetaAnterior[carpetaPos]}`;
+				avanzado = true;
+				carpetaPos++;
+			}
+
+			conjunto = conjunto.slice(carpetaPos);
+		}
+
+		if (!avanzado && predefinidas !== undefined && predefinidas !== null) {
 			let opcion = await tp.system.suggester(t => t, predefinidas);
 			carpeta += `/${opcion}`;
 			

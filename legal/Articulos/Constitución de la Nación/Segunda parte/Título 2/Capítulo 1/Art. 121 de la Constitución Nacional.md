@@ -13,7 +13,7 @@ listado:
 ---
 ### Artículo
 ---
-"Las provincias conservan todo el poder no delegado por esta [[Constitución Nacional|Constitución]] al [[Gobierno federal|Gobierno federal]], y el que expresamente se hayan reservado por pactos especiales al tiempo de su incorporación."
+"Las provincias conservan todo el poder no delegado por esta [[Constitución de la Nación, Ley 24.430|Constitución]] al [[Gobierno federal|Gobierno federal]], y el que expresamente se hayan reservado por pactos especiales al tiempo de su incorporación."
 
 
 ### Interpretación

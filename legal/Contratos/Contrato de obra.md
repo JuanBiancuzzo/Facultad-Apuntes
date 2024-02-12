@@ -36,3 +36,7 @@ Pero además, ([[Art. 1256 del CC y CN, Obligaciones del contratista y del prest
 La obligación de poner los materiales puede recaer sobre el contratista o el comitente; a falta de previsión sobre el punto, debe aportarlos el primero, salvo que lo contrario resulte de la costumbre del lugar para esa obra o surja de otros elementos de juicio, particularmente el precio. Tal es la solución que aporta el artículo [[Art. 1256 del CC y CN, Obligaciones del contratista y del prestador|1256, inciso 3]].
 
 Si an sido aportados por el contratista, le pertenecen hasta el momento de la entrega de la obra; el comitente no podrá reivindicarlos y solo tendrá derecho a reclamar su entrega por vía de acción de cumplimiento de contrato, a menos que se trate de cosas muebles incorporadas como accesorias a otras de propiedad del comitente, en cuyo caso éste adquiere la propiedad desde el momento de la incorporación. Si han sido aportados por el comitente, éste conserva la propiedad sobre ellos, a menos que se trate de cosas fungibles.
+
+#### Obligaciones de las partes
+---
+* [[Obligaciones del constructor#Definición]]

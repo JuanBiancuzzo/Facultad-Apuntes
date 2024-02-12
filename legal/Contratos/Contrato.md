@@ -6,6 +6,9 @@ capitulo: 3
 ### Definición
 ---
 Viendo el [[Libro Tercero, Título 2, Contratos en general|Título 2, Libro Tercero del CC y CN]], donde ![[Libro Tercero, Título 2, Contratos en general#Interpretación]]
+Elementos
+* [[Causa de un contrato|Causa]]
+
 #### Derechos resultantes del contrato
 ---
 El contrato es fuente de [[Obligación|obligaciones]] y [[Derecho|derechos]]. En efecto, al celebrarse cualquier contrato, nacen obligaciones en cabeza de las partes contratantes, quienes deberán cumplirlas de acuerdo con las pautas fijadas por ellas

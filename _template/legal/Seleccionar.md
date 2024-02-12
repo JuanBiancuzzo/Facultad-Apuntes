@@ -57,7 +57,7 @@
 				link = `${articulo.file.name}|${seleccion}`;
 			else {
 				let mensaje = `No se pudo encontrar el artículo referido a la selección: ${seleccion}`;
-				let n = new Notice(mensaje);
+				new Notice(mensaje);
 			}
 				
 		}

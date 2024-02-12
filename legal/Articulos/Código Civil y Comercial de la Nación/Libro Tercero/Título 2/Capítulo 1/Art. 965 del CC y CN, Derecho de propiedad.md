@@ -19,4 +19,4 @@ listado:
 
 ### Interpretación
 ---
-Lo que le otorga también la jerarquía constitucional que la propia [[Constitución Nacional|Constitución]] da al derecho de propiedad ([[Art. 17 de l[[Art. 17 de la Constitución Nacional|art. 17 de la Constitución Nacional]]egalmente lo que ya pacíficamente había establecido la jurisprudencia
+Lo que le otorga también la jerarquía constitucional que la propia [[Constitución de la Nación, Ley 24.430|Constitución]] da al derecho de propiedad ([[Art. 17 de l[[Art. 17 de la Constitución Nacional|art. 17 de la Constitución Nacional]]egalmente lo que ya pacíficamente había establecido la jurisprudencia

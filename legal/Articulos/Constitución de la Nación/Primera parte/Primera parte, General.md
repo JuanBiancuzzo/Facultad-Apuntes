@@ -4,10 +4,10 @@ parte: "General"
 listado:
  - "[[Constitución de la Nación, Ley 24.430|Constitución de la Nación]]"
 ---
-### Títulos
+### Capítulos
 ---
 ```dataviewjs
-	let grupo = "Título";
+	let grupo = "Capítulo";
 	let categoria = grupo.toLowerCase();
 	let num_categoria = `num_${categoria}`;
 	

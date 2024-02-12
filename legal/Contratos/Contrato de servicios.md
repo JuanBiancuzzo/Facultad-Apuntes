@@ -14,7 +14,7 @@ Elementos
 * [[Extinción del contrato de servicios|Extinción del contrato]]
 * [[Contratos de servicios profesionales|Contratos de servicios profesionales]]
 
-#### Distinción con el [[Contrato de trabajo|contrato de trabajo]]
+#### Distinción con el [[Art. 21 de la ley de Contrato de Trabajo, Contrato de trabajo|contrato de trabajo]]
 ---
 Dadas las similitudes que presentan ambas figuras, resulta necesario diferenciar el contrato de servicios del contrato de trabajo, en tanto sus características similares han posibilitado que varios empleadores intenten encubrir una relación de empleo detrás de una prestación de servicios con el fin de evadir sus obligaciones laborales y tributarias.
 

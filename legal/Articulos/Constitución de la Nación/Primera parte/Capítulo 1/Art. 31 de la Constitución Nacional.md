@@ -7,7 +7,7 @@ parte: 1
 capítulo: 1
 listado:
   - "[[Primera parte, General|Primera parte]]"
-  - "[[Primera parte, Capítulo 1, Declaraciones, derechos y garantías|Capítulo 1]]"
+  - "[[Primera parte, Capítulo 1, Declaraciones derechos y garantías|Capítulo 1]]"
 ---
 ### Artículo
 ---

@@ -7,11 +7,11 @@ parte: 1
 capítulo: 1
 listado:
   - "[[Primera parte, General|Primera parte]]"
-  - "[[Primera parte, Capítulo 1, Declaraciones, derechos y garantías|Capítulo 1]]"
+  - "[[Primera parte, Capítulo 1, Declaraciones derechos y garantías|Capítulo 1]]"
 ---
 ### Artículo
 ---
-"La Nación Argentina adopta para su gobierno la forma representativa republicana federal, según la establece la presente [[Constitución Nacional|Constitución]]."
+"La Nación Argentina adopta para su gobierno la forma representativa republicana federal, según la establece la presente [[Constitución de la Nación, Ley 24.430|Constitución]]."
 
 
 ### Interpretación
