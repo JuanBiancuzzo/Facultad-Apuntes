@@ -92,6 +92,11 @@
 			let carpetaAnterior = artAnterior.file.folder.split("/").slice(3);
 			let carpetaSiguiente = artSiguiente.file.folder.split("/").slice(3);
 
+			if (carpetaAnterior.join("/") == carpetaSiguiente.join("/")) {
+				carpeta += `/${carpetaAnterior.join("/")}`;
+				return carpeta;
+			}
+
 			while (true) {
 				if (Math.min(carpetaAnterior.length, carpetaSiguiente.length) <= carpetaPos)
 					break;

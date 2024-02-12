@@ -40,3 +40,9 @@ Si an sido aportados por el contratista, le pertenecen hasta el momento de la en
 #### Obligaciones de las partes
 ---
 * [[Obligaciones del constructor#Definición]]
+* [[Obligaciones del comitente#Definición]]
+* [[Responsabilidad de las partes ante terceros#Definición]]
+
+#### Cesión y fin del contrato 
+---
+![[Cesión y fin del contrato de obra#Definición]]
