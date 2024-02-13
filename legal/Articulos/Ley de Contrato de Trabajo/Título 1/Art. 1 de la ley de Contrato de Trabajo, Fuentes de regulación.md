@@ -10,7 +10,7 @@ incisos:
   - Por la voluntad de las partes
   - Por los usos y costumbres
 listado:
-  - "[[Título 1, Disposiciones Generales|Título 1]]"
+  - "[[legal/Articulos/Ley de Contrato de Trabajo/Título 1/Título 1, Disposiciones Generales|Título 1]]"
 título: 1
 ---
 ### Artículo

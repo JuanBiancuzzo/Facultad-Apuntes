@@ -43,6 +43,29 @@ Si an sido aportados por el contratista, le pertenecen hasta el momento de la en
 * [[Obligaciones del comitente#Definición]]
 * [[Responsabilidad de las partes ante terceros#Definición]]
 
+
+#### Suspensiones unilaterales
+---
+Por parte del comitente
+* Se reconoce únicamente el daño emergente, no se reconoce concepto indemnizatorio alguno en relación al beneficio no percibido por las obras no ejecutadas
+* Se devuelve fondo de garantía del contratista
+
+Por parte del contratista
+* Originados por la resperdida de la garantía de ejecución del contrato
+* Debe afrontar los gastos de un nuevo llamado a concurso y los gastos complementarios elución del contrato
+
+
+#### Modificaciones de obra
+---
+Se podrán alterar las obras siempre que no afecte en $\pm$ 20% el monto contratado
+
+#### Recepciones
+---
+Provisoria
+* El Comitente recibe la obra. De este modo el Contratista queda liberado de los Vicios Aparentes. A partir de este momento entra en vigencia el período de Garantía durante el cual el Comitente tendrá 60 días para denunciar los Vicios Ocultos a partir de su descubrimiento. Puede hacer uso del Fondo de Reparo.
+Definitiva
+* Libera al Contratista de la responsabilidad por vicios ocultos (no pudieron apreciarse a simple vista durante el período de Garantía). El Contratista entrega la Documentación Conforme a Obra y el Comitente devuelve los saldos del Fondo de Reparo y Garantía de Contrato.
+
 #### Cesión y fin del contrato 
 ---
 ![[Cesión y fin del contrato de obra#Definición]]
