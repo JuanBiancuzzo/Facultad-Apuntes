@@ -153,7 +153,7 @@ Consiguiendo $$ A_{vs} = \frac{v_{out}}{v_s} = \frac{v_{out}}{v_{in}} \frac{v_{i
 Examinemos la dependencia con la polarización $$ |A_{vo}| = g_m ~ (r_0 // R_C) \approx g_m R_C $$ ya que $r_0 \gg R_C$, y si reescribimos $|A_{vo}|$ de la siguiente forma $$ |A_{vo}| \approx g_m R_C = \frac{I_C}{V_{th}} \frac{V_{CC} - V_{out}}{I_C} = \frac{V_{CC} - V_{out}}{V_{th}} $$
 Para un $V_{out}$ fijo, la ganancia depende sólo de $V_{CC}$, mientras que se elija un $I_C$ y un $R_C$ para obtener el $V_{out}$ deseado.
 
-### Máxima señal sin distorsión
+#### Máxima señal sin distorsión
 ---
 La distorsión ocurre cuando el [[Transistor|transistor]] no está trabajando en el régimen que corresponde. La relación de la señal de salida con la señal de entrada no será [[Función R-lineal|lineal]]. Existirá una deformación de la señal de salida y entonces $$ v_{out} \ne A_{vo} v_{in} $$
 ![[Máxima señal sin distorsión.png]]
@@ -162,9 +162,9 @@ La distorsión ocurre cuando el [[Transistor|transistor]] no está trabajando en
 ---
 ![[Distorsión por alinealidad en un Amplificador emisor común#Definición]]
 
-##### [[Distorsión por corte|Distorsión por corte]]
+##### [[Distorsión por corte en un Amplificador emisor común|Distorsión por corte en un Amplificador emisor común]]
 ---
-![[Distorsión por corte#Definición]]
+![[Distorsión por corte en un Amplificador emisor común#Definición]]
 
 ##### [[Distorsión por saturación|Distorsión por saturación]]
 ---
