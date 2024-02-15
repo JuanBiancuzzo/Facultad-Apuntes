@@ -14,8 +14,20 @@
 	let titulo = tp.file.title;
 	if (titulo.startsWith("Untitle")) {
 		titulo = await tp.system.prompt("Nombre:");
-		if (!titulo)
-			return await salir(seleccion);
+		if (!titulo) return await salir(seleccion);
+
+		let carpetaAnterior = carpeta.split("/").slice(0, -1);
+		let posiblePagina = dv.pages(`"${carpetaAnterior}"`)
+			.find(pagina => pagina.file.name == titulo);
+
+		if (posiblePagina) {
+			let archivoActivo = app.workspace.getActiveFile();
+			let paginaVieja = await tp.file.find_tfile(posiblePagina.file.path);
+			let leaf = await app.workspace.getLeaf("tab");
+			await app.vault.trash(archivoActivo, true);
+			return await leaf.openFile(paginaVieja);
+		}
+		
 		await tp.file.rename(titulo);
 	}
 	

@@ -15,6 +15,7 @@
     "art_con_nombre": "checkbox",
     "num_título": "number",
     "libro": "text",
-    "parte": "number"
+    "parte": "number",
+    "plan": "number"
   }
 }
