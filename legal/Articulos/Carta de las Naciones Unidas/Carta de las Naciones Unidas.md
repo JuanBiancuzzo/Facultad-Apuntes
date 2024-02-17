@@ -1,13 +1,12 @@
 ---
-num_ley: 13064
-ley: Ley de Obras públicas
+documento: Carta de las Naciones Unidas
 grupos:
  - Capítulo
 opt_capítulo: false
 art_con_nombre: false
-nombre_abreviado: de la Ley de Obras públicas
+nombre_abreviado: de la carta de las Naciones Unidas
 tags:
-  - cabezera_articulos
+ - cabezera_articulos
 ---
 ### Capítulos
 ---

@@ -8,6 +8,8 @@ opt_título: false
 opt_capítulo: false
 art_con_nombre: true
 nombre_abreviado: de la Defensa del Consumidor
+tags:
+  - cabezera_articulos
 ---
 ### Títulos
 ---

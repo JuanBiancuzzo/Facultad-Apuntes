@@ -84,8 +84,8 @@
 
 	function obtenerGrupoParcial(cuerpoLegal, grupoInicial) {
 		const dv = this.app.plugins.plugins["dataview"].api;
-		let archivo_cabecera = dv.pages(`"legal/Articulos/${cuerpoLegal}"`)
-			.find(pagina => pagina.file.name.startsWith(`${cuerpoLegal}, Ley `));
+		let archivo_cabecera = dv.pages("#cabezera_articulos")
+			.find(pagina => pagina.file.name.startsWith(cuerpoLegal));
 		let grupo_completo = archivo_cabecera.grupos;
 		return grupo_completo.slice(grupo_completo.findIndex(grupo => {
 			return grupo == grupoInicial;

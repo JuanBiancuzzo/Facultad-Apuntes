@@ -1,6 +1,5 @@
 ---
-num_ley: 10232001
-ley: Regimen de contrataciones de la administración nacional
+documento: Regimen de contrataciones de la administración nacional
 grupos:
   - Título
   - Capítulo
@@ -8,6 +7,8 @@ opt_título: false
 opt_capítulo: true
 art_con_nombre: true
 nombre_abreviado: del APA
+tags:
+  - cabezera_articulos
 ---
 ### Títulos
 ---

@@ -31,8 +31,7 @@
     "_template/legal/Nueva Ley.md",
     "_template/legal/Crear Artículo.md",
     "_template/legal/Seleccionar.md",
-    "_template/Definición Nueva Página - Template.md",
-    "_template/Definición Misma Página - Template.md"
+    "_template/legal/Nuevo Documento.md"
   ],
   "startup_templates": [
     ""

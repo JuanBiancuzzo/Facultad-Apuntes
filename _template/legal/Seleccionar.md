@@ -5,16 +5,7 @@
 	let todos_articulos = dv.pages(`"${carpeta_articulos}"`);
 	let seleccion = await tp.file.selection();
 
-	let carpetas = todos_articulos
-		.map(pagina => {
-			return pagina.file.folder
-				.replaceAll("legal/Articulos/", "")
-				.split("/")[0];
-		});
-	carpetas = [...new Set(carpetas)]; 
-	let leyes = todos_articulos.filter(articulo => carpetas.some(carpeta => {
-		return articulo.file.name.startsWith(`${carpeta}, Ley`);
-	}));
+	let leyes = dv.pages("#cabezera_articulos");
 	if (!leyes)
 		return seleccion;
 

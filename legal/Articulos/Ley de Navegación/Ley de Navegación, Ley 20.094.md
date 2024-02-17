@@ -10,6 +10,8 @@ opt_capítulo: true
 opt_sección: true
 art_con_nombre: true
 nombre_abreviado: de la Ley de Navegación
+tags:
+  - cabezera_articulos
 ---
 ### Títulos
 ---

@@ -8,6 +8,8 @@ opt_título: false
 opt_capítulo: true
 art_con_nombre: true
 nombre_abreviado: de la ley de Contrato de Trabajo
+tags:
+  - cabezera_articulos
 ---
 ### Títulos
 ---

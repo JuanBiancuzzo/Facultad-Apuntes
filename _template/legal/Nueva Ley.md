@@ -1,11 +1,15 @@
 <%*
 	let num_ley = await tp.system.prompt("N° de la ley:");
-	if (num_ley == "" || num_ley == undefined)
+	if (!num_ley) {
+		new Notice("No escribió nada para el número de la ley, no se generará ninguna ley");
 		return;
+	}
 
 	let ley = await tp.system.prompt(`Ley N° ${num_ley} tiene de nombre:`);
-	if (ley == "" || ley == undefined)
+	if (!ley) { 
+		new Notice("No escribió nada para el nombre de la ley, no se generará ninguna ley");
 		return;
+	}
 
 	let nombre_archivo = `${ley}, Ley ${num_ley}`;
 

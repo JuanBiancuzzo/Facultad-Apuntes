@@ -14,6 +14,8 @@ opt_título: false
 opt_capítulo: true
 art_con_nombre: false
 nombre_abreviado: del Regimen Laboral
+tags:
+  - cabezera_articulos
 ---
 ### Títulos
 ---

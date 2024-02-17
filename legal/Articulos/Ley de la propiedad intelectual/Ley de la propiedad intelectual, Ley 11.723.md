@@ -6,6 +6,8 @@ grupos:
 opt_parte: false
 art_con_nombre: false
 nombre_abreviado: de la ley de la propiedad intelectual
+tags:
+  - cabezera_articulos
 ---
 ### Partes
 ---

@@ -2,14 +2,16 @@
 num_ley: 24156
 ley: Administración financiera y de los sistemas de control del sector público nacional
 grupos:
- - Título
- - Capítulo
- - Sección
+  - Título
+  - Capítulo
+  - Sección
 opt_título: false
 opt_capítulo: true
 opt_sección: true
 art_con_nombre: false
 nombre_abreviado: de la administración financiera y sistemas de control
+tags:
+  - cabezera_articulos
 ---
 ### Títulos
 ---

@@ -1,11 +1,8 @@
 ---
-num_ley: 24747
-ley: Ley de la Iniciativa Legislativa popular
-grupos:
-art_con_nombre: false
-nombre_abreviado: de la ley de la Iniciativa Legislativa
-tags:
-  - cabezera_articulos
+num_capítulo: 1
+capítulo: "Propósitos y principios"
+listado:
+ - "[[Carta de las Naciones Unidas|Carta de las Naciones Unidas]]"
 ---
 ### Artículos
 ---
@@ -40,3 +37,4 @@ tags:
 
 ### Interpretación
 ---
+
