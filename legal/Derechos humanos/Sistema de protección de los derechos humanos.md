@@ -5,7 +5,7 @@ capitulo: 6
 ---
 ### Definición
 ---
-Este sistema de protección, bajo las [[Organización de las Naciones Unidas (ONU)|naciones unidas]], se encarga del tratamiento de violaciones de [[Derechos humanos|derechos humanos]] cuando los [[Estado|estados]] que están involucrados en esas violaciones han ratificado un tratado o todavía no entraron los tratados en vigor.
+Este sistema de protección, bajo las [[Organización de las Naciones Unidas (ONU)|naciones unidas]], se encarga del tratamiento de violaciones de [[Derecho humano|derechos humanos]] cuando los [[Estado|estados]] que están involucrados en esas violaciones han ratificado un tratado o todavía no entraron los tratados en vigor.
 
 Inicialmente los estados participes de las Naciones Unidas, pueden organizarse y ponerse de acuerdo con un reclamo para lograr un grupo de trabajo que pueda investigar y resolver dicho reclamo. 
 

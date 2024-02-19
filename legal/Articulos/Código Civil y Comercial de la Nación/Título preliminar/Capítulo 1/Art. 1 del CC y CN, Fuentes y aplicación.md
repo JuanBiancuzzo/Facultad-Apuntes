@@ -12,7 +12,7 @@ listado:
 ---
 ### Artículo
 ---
-"Los casos que este [[Ley|Código]] rige deben ser resueltos según las [[Ley|leyes]] que resulten aplicables, conforme con la [[Constitución de la Nación, Ley 24.430|Constitución de la Nación, Ley 24.430]] y los tratados de [[Derechos humanos|derechos humanos]]  en los que la [[República Argentina|República]] sea parte. A tal efecto, se tendrá en cuenta la finalidad de la [[Norma jurídica|norma]]. Los usos, prácticas y costumbres son vinculantes cuando las leyes o los interesados se refieren a ellos o en situaciones no regladas legalmente, siempre que no sean contrarios a [[Derecho|derecho]]."
+"Los casos que este [[Ley|Código]] rige deben ser resueltos según las [[Ley|leyes]] que resulten aplicables, conforme con la [[Constitución de la Nación, Ley 24.430|Constitución de la Nación, Ley 24.430]] y los tratados de [[Derecho humano|derechos humanos]]  en los que la [[República Argentina|República]] sea parte. A tal efecto, se tendrá en cuenta la finalidad de la [[Norma jurídica|norma]]. Los usos, prácticas y costumbres son vinculantes cuando las leyes o los interesados se refieren a ellos o en situaciones no regladas legalmente, siempre que no sean contrarios a [[Derecho|derecho]]."
 
 ### Interpretación
 ---

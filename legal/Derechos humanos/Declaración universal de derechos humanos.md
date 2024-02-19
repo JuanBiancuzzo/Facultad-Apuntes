@@ -5,7 +5,7 @@ capitulo: 6
 ---
 ### Definición
 ---
-Esta declaración fue elaborada en el contexto de un órgano que si tiene previsto en la carta que estaba en el [[Art. 68 de la carta de las Naciones Unidas|artículo 68]] que obligaba al consejo económico y social a crear una comisión de [[Derechos humanos|derechos humanos]]
+Esta declaración fue elaborada en el contexto de un órgano que si tiene previsto en la carta que estaba en el [[Art. 68 de la carta de las Naciones Unidas|artículo 68]] que obligaba al consejo económico y social a crear una comisión de [[Derecho humano|derechos humanos]]
 
 Lo primero que hace es constituirse en órgano de redacción de un futuro instrumento de derechos humanos, la declaración universal. Esta declaración entonces que es una suerte del listado de derechos humanos se va a adoptar el 10 de diciembre de 1948, que al momento de votar, aquellos que votaron a favor, se pusieron de acuerdo en cuáles debían ser los derechos humanos que había que proteger.
 

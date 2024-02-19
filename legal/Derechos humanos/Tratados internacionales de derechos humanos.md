@@ -8,7 +8,7 @@ capitulo: 6
 La [[Carta de las Naciones Unidas|carta de naciones unidas]], con [[Norma constitucional internacional|normas de cooperación]] que vincula a 193 [[Estado|estados]] en el mundo, la [[Declaración universal de derechos humanos|declaración universal de derechos humanos]], y por lo tanto el tercer punto de esto fue la búsqueda de [[Tratado|tratados]], que son mucho más rápidamente verificables que la costumbres, ya que la verificación es ver cuando un estado se dijo que se [[Obligación|obligaba]] por el tratado.
 
 De estas obligaciones que emergen de los tratados son
-* La obligación de respetar los [[Derechos humanos|derechos humanos]] 
+* La obligación de respetar los [[Derecho humano|derechos humanos]] 
 * Proteger los derechos humanos y garantizarlos
 * La obligación de adoptar medidas
 
@@ -28,7 +28,7 @@ Estos son 9 tratados fundamentales en materia de derechos humanos que se adoptar
 Estos 9 tratados vienen con su sistema de protección, que establecen órganos que están encargados de verificar cómo los [[Estado|estados]] cumplen las [[Obligación|obligaciones]].
 
 Estos tratados tienen en común dos tipos de funciones
-* Tienen que examinar los informes periódicos que presentan los estados, es decir, cada tanto los estados tienen que escribir informes sobre cuáles fueron las medidas que adoptaron para proteger y para garantizar cada uno de esos [[Derechos humanos|derechos]]
+* Tienen que examinar los informes periódicos que presentan los estados, es decir, cada tanto los estados tienen que escribir informes sobre cuáles fueron las medidas que adoptaron para proteger y para garantizar cada uno de esos [[Derecho humano|derechos]]
 * Tramitar comunicaciones, es decir, recibir quejas individuales respecto de situaciones en las cuales los estados no respetaron el tratado, para esto es necesario saber que un estado haya aceptado ser denunciado por personas y luego que esa persona haya [[Agotamiento de los recursos internos|agotado todas las instancias previas]].
 
 6 de los 9 tratados tienen procedimientos de investigación, que trata de estudiar los casos de violación sistemática y generalizada de derechos humanos. En estos casos, sin necesidad de un caso concreto planteado por una víctima, las organizaciones pueden actuar de oficio y decidir una investigación que incluye solicitarle al estado que le autorice una misión del comité para visitar el país y poder tomar contacto con víctimas y con la situación que dio a lugar la violación sistemática o esa discriminación estructural
