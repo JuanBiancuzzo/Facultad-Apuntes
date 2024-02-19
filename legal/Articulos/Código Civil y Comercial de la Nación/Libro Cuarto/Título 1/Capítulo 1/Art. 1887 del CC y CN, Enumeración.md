@@ -32,19 +32,19 @@ listado:
 
 #### Inciso N°1
 ---
-"el dominio"
+"el [[Libro Cuarto, Título 3, Dominio|dominio]]" ![[Libro Cuarto, Título 3, Dominio#Artículos]]
 
 #### Inciso N°2
 ---
-"el condominio"
+"el [[Libro Cuarto, Título 4, Condominio|condominio]]" ![[Libro Cuarto, Título 4, Condominio#Artículos]]
 
 #### Inciso N°3
 ---
-"la propiedad horizontal"
+"la [[Libro Cuarto, Título 5, Propiedad horizontal|propiedad horizontal]]" ![[Libro Cuarto, Título 5, Propiedad horizontal#Artículos]]
 
 #### Inciso N°4
 ---
-"los conjuntos inmobiliarios"
+"los [[Libro Cuarto, Título 6, Conjuntos inmobiliarios|conjuntos inmobiliarios]]" ![[Libro Cuarto, Título 6, Conjuntos inmobiliarios#Artículos]]
 
 #### Inciso N°5
 ---
@@ -56,35 +56,35 @@ listado:
 
 #### Inciso N°7
 ---
-"la superficie"
+"la [[Libro Cuarto, Título 7, Superficie|superficie]]" ![[Libro Cuarto, Título 7, Superficie#Artículos]]
 
 #### Inciso N°8
 ---
-"el usufructo"
+"el [[Libro Cuarto, Título 8, Usufructo|usufructo]]" ![[Libro Cuarto, Título 8, Usufructo#Artículos]]
 
 #### Inciso N°9
 ---
-"el uso"
+"el [[Libro Cuarto, Título 9, Uso|uso]]" ![[Libro Cuarto, Título 9, Uso#Artículos]]
 
 #### Inciso N°10
 ---
-"la habitación"
+"la [[Libro Cuarto, Título 10, Habitación|habitación]]" ![[Libro Cuarto, Título 10, Habitación#Artículos]]
 
 #### Inciso N°11
 ---
-"la servidumbre"
+"la [[Libro Cuarto, Título 11, Servidumbre|servidumbre]]" ![[Libro Cuarto, Título 11, Servidumbre#Artículos]]
 
 #### Inciso N°12
 ---
-"la hipoteca"
+"la [[Libro Cuarto, Título 12, Capítulo 2, Hipoteca|hipoteca]]" ![[Libro Cuarto, Título 12, Capítulo 2, Hipoteca#Artículos]]
 
 #### Inciso N°13
 ---
-"la anticresis"
+"la [[Libro Cuarto, Título 12, Capítulo 3, Anticresis|anticresis]]" ![[Libro Cuarto, Título 12, Capítulo 3, Anticresis#Artículos]]
 
 #### Inciso N°14
 ---
-"la prenda"
+"la [[Libro Cuarto, Título 12, Capítulo 4, Prenda|prenda]]" ![[Libro Cuarto, Título 12, Capítulo 4, Prenda#Artículos]]
 
 
 ### Interpretación

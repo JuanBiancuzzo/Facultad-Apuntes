@@ -75,3 +75,12 @@ listado:
 
 ### Interpretación
 ---
+Las relaciones de poder del sujeto con una cosa son la posesión y la tenencia
+
+##### Posesión
+---
+![[Art. 1909 del CC y CN, Posesión#Artículo]]
+
+##### Tenencia 
+---
+![[Art. 1910 del CC y CN, Tenencia#Artículo]]

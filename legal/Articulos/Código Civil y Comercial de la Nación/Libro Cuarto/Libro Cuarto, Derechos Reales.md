@@ -88,7 +88,7 @@ La regulación de los derechos reales en cuanto a sus elementos, contenido, adqu
 
 #### Persecución y preferencia
 ---
-El derecho real atribuye a su [[Sujeto de derecho#Sujeto activo|titular]] la facultad de perseguir la [[Cosa|cosa]] en poder de quien se encuentra, y de hacer valer su preferencia con respecto a otro derecho real o [[Derechos creditorios o personales|personal]] que haya obtenido oponibilidad posteriormente.
+El derecho real atribuye a su [[Sujeto de derecho#Sujeto activo|titular]] la facultad de perseguir la [[Cosa|cosa]] en poder de quien se encuentra, y de hacer valer su preferencia con respecto a otro derecho real o [[Derechos créditorios o personales|personal]] que haya obtenido oponibilidad posteriormente.
 
 ##### Derecho de persecución
 ---
@@ -100,13 +100,16 @@ El derecho real atribuye a su [[Sujeto de derecho#Sujeto activo|titular]] la fac
 
 #### Cosa propia o ajena
 ---
-Son derechos reales sobre cosa total o parcialmente propia: 
-* El dominio
-* El condominio
-* La propiedad horizontal
-* Los conjuntos inmobiliarios
-* El tiempo compartido
-* El cementerio privado
-* La superficie si existe la propiedad superficiaria
+![[Art. 1888 del CC y CN, Derechos reales sobre cosa propia o ajena#Interpretación]]
 
-Los restantes derechos reales recaen sobre cosa ajena.
+#### Carga o gravamen real
+---
+Las cosas se presumen sin gravamen, excepto prueba en contrario. Toda duda sobre la existencia de un gravamen real, su extensión o el modo de ejercicio, se interpreta a favor del [[Sujeto de derecho#Sujeto activo|titular]] del bien gravado.
+
+#### Derechos reales principales y accesorios
+---
+![[Art. 1889 del CC y CN, Derechos reales principales y accessios#Interpretación]]
+
+#### Derechos reales sobre cosas registrables y no registrables
+---
+![[Art. 1890 del CC y CN, Derechos reales sobre cosas registrables y no registrables#Interpretación]]

@@ -13,11 +13,11 @@ predefinidos:
   - Libro Segundo
   - Libro Tercero
   - Libro Cuarto
-  - Libro Quinto,
+  - Libro Quinto
   - Libro Sexto
 opt_libro: false
 opt_título: false
-opt_capítulo: false
+opt_capítulo: true
 opt_sección: true
 opt_parágrafo: true
 art_con_nombre: true

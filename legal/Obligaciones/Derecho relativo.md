@@ -13,4 +13,4 @@ Son aquellos [[Derecho|derechos]] que se ejercen frente a un [[Sujeto de derecho
 
 ##### Derecho creditorio
 ---
-![[Derechos creditorios o personales#Definición]]
+![[Derechos créditorios o personales#Definición]]
