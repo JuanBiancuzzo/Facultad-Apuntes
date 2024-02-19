@@ -41,32 +41,21 @@ estado: cursando
 ### Artículos
 ---
 ```dataviewjs
-	function conseguir_nombre(unidad) {
-		return unidad.rows[0].cuerpo_legal;
-	}
+	const documentos = dv.pages('"legal/Articulos" and #cabezera_articulos');
 
-	const unidades = dv.pages('"legal/Articulos"')
-		.where(pagina => pagina.cuerpo_legal)
-		.sort(pagina => pagina.num_articulo)
-		.groupBy(pagina => pagina.cuerpo_legal);
-		
-	for (let unidad of unidades) {		
-		dv.header(3, conseguir_nombre(unidad));
-		dv.table(["Artículos", "Contenido"], (unidad.rows).flatMap(pagina => {
-			let articulo = `[[${pagina.file.path}|Art. ${pagina.num_articulo}]]`;
-			let contenido = pagina.art;
+	dv.list(documentos.flatMap(documento => {
+		let nombre;
+		if (documento.ley) {
+			nombre = documento.ley;
+		} else if (documento.documento) {
+			nombre = documento.documento;
+		}
 
-			let output = [[articulo, contenido]];
+		if (!nombre) {
+			return [];
+		}
 
-			if (pagina.incisos) { 
-				output.push(["", pagina.incisos]);
-			}
-			if (pagina.cont_art) {
-				output.push(["", pagina.cont_art]);
-			}
-		
-			return output;
-		}));
-		dv.el("br", "");
-	}
+		let path = documento.file.path;
+		return [`[[${path}|${nombre}]]`];
+	}));
 ```

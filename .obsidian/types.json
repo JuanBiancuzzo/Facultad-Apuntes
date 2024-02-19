@@ -14,7 +14,7 @@
     "opt_parágrafo": "checkbox",
     "art_con_nombre": "checkbox",
     "num_título": "number",
-    "libro": "text",
+    "libro": "number",
     "parte": "number",
     "plan": "number"
   }
