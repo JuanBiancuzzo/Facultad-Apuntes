@@ -18,14 +18,12 @@ listado:
 
 #### Inciso N°1, De etapa única o multiple
 ---
-"
 1. La licitación o el concurso públicos serán de etapa única cuando la comparación de las ofertas y de las calidades de los oferentes se realice en un mismo acto.  
 
 2. Cuando las características específicas de la prestación, tales como el alto grado de complejidad del objeto o la extensión del término del contrato lo justifiquen, la licitación o el concurso públicos deberán instrumentarse bajo la modalidad de etapa múltiple. La licitación o el concurso públicos serán de etapa múltiple cuando se realicen en DOS (2) o más fases la evaluación y comparación de las calidades de los oferentes, los antecedentes empresariales y técnicos, la capacidad económico-financiera, las garantías, las características de la prestación y el análisis de los componentes económicos de las ofertas, mediante preselecciones sucesivas. En todos los casos en que se utilice esta variante, la presentación de los sobres respectivos será simultánea. Sólo se procederá a abrir los sobres correspondientes a las ofertas económicas de aquellos oferentes que hubieran sido precalificados."
 
 #### Inciso N°2, Nacionales o internacionales
 ---
-"
 1. La licitación o el concurso serán nacionales cuando la convocatoria esté dirigida a interesados y oferentes cuyo domicilio o sede principal de sus negocios se encuentre en el país, o tengan sucursal en el país, debidamente inscripta.  
 
 2. La licitación o el concurso serán internacionales cuando, por las características del objeto o la complejidad de la prestación, la convocatoria se extienda a interesados y oferentes del exterior, revistiendo tal carácter aquellos cuya sede principal de sus negocios se encuentre en el extranjero, y no tengan sucursal debidamente registrada en el país."
@@ -33,3 +31,13 @@ listado:
 
 ### Interpretación
 ---
+* Según las fases o etapas de selección ([[Art. 26 del APA, Clases de licitaciones y concursos públicos#Inciso N°1, De etapa única o multiple|Única o multiple]])
+	* De etapa única:
+		* La comparación de las ofertas y calidades de los oferentes se realiza en un mismo acto
+	* De etapa múltiple:
+		* Cuando se realicen en dos o más fases la evaluación y comparación de las calidades de los oferentes, los antecedentes empresariales y técnicos, la capacidad económico financiera, las características de la prestación y el análisis de los componentes económicos de la oferta mediante preselecciones sucesivas
+* Según la ubicación de la sede del proveedor ([[Art. 26 del APA, Clases de licitaciones y concursos públicos#Inciso N°2, Nacionales o internacionales|Naciona o Internacional]])
+	* Nacionales:
+		* Cuando la convocatoria este dirigida a interesados cuyo domicilio o sede principal de sus negocios se encuentre en el país o tengan sucursal en el país debidamente registrada en los organismos habilitados al efecto
+	* Internacionales:
+		* Cuando la convocatoria se extienda a interesados y oferentes del exterior revistiendo tal carácter aquellos cuya sede principal de sus negocios se encuentre en el extranjero y no tengan sucursal debidamente registrada en el país

@@ -12,4 +12,4 @@ Esta caracterizado ([[Art. 25 del APA, Procedimientos de selección|art. 25]]) p
 
 #### Clases
 ---
-![[Clases de licitaciones y concursos públicos y privados#Definición]]
+![[Art. 26 del APA, Clases de licitaciones y concursos públicos#Artículo]]

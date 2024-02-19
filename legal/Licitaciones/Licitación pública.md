@@ -32,4 +32,4 @@ El licitante se abstendrá de incurrir en conductas que coloquen o permitan que 
 
 #### Clases
 ---
-![[Clases de licitaciones y concursos públicos y privados#Definición]]
+![[Art. 26 del APA, Clases de licitaciones y concursos públicos#Artículo]]
