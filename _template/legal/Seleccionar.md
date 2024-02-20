@@ -24,7 +24,7 @@
 	if (buscar_articulos) {
 		let articulos = archivos
 			.filter(pagina => pagina.file.name.startsWith("Art. "))
-			.sort(pagina => pagina.num_articulo);
+			.sort(pagina => parseInt(pagina.num_articulo, 10));
 		
 		
 		let articulo = await articuloPorSeleccion(articulos, seleccion);

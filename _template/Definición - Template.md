@@ -150,9 +150,11 @@
 			.sort(cap => cap);
 		return [...new Set(capitulos)];
 	}
-
+		
 	async function salir(seleccion) {
-		return seleccion;
+		let archivoActivo = app.workspace.getActiveFile();
+		new Notice("Se elimina el archivo, ya que no se pudo crear");
+		await app.vault.trash(archivoActivo, true);
 	}
 
 	tR += "---";

@@ -53,8 +53,92 @@
       },
       "openFile": true,
       "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": false
+      "fileExistsMode": "Nothing",
+      "setFileExistsBehavior": true
+    },
+    {
+      "id": "c64d1ced-dcd2-44ef-865a-a40cf7590741",
+      "name": "Nueva Ley",
+      "type": "Template",
+      "command": true,
+      "templatePath": "_template/legal/Ley - Template.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "Untitle"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Nothing",
+      "setFileExistsBehavior": true
+    },
+    {
+      "id": "60f58eea-e5ae-4e93-8ade-3421b90b3aeb",
+      "name": "Nuevo Documento",
+      "type": "Template",
+      "command": true,
+      "templatePath": "_template/legal/Documento - Template.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "Untitle"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Nothing",
+      "setFileExistsBehavior": true
+    },
+    {
+      "id": "40911c77-0926-4ddf-9016-cfa647400e63",
+      "name": "Crear artículo",
+      "type": "Template",
+      "command": true,
+      "templatePath": "_template/legal/Artículo - Template.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "Untitle"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Nothing",
+      "setFileExistsBehavior": true
     }
   ],
   "macros": [],

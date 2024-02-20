@@ -1,17 +1,40 @@
 <%*
-	tR += "---\n";
-	let titulo = tp.file.title.split(",");
+	tR += "---\n";	
 	
-	let ley = titulo[0];
-	let num_ley = titulo[1].replaceAll("Ley", "")
-		.replaceAll(".", "")
-		.trim();
+	let num_ley = await tp.system.prompt("N° de la ley:");
+	if (!num_ley) {
+		return salir("No escribió nada para el número de la ley, no se generará ninguna ley");
+	}
+
+	let ley = await tp.system.prompt(`Ley N° ${num_ley} tiene de nombre:`);
+	if (!ley) { 
+		return salir("No escribió nada para el nombre de la ley, no se generará ninguna ley");
+	}
+
+	let nombre_archivo = `${ley}, Ley ${num_ley}`;
+	
+	let carpeta = `legal/Articulos/${ley}`;
+	try {
+		await this.app.vault.createFolder(carpeta);
+	} catch {
+		new Notice("La carpeta ya existe");
+	}	
+
+	try {
+		await tp.file.move(`${carpeta}/${nombre_archivo}`);
+	} catch {
+		return salir("No se pudo crear la ley, posiblemente ya existe");
+	}
+	
+	num_ley = num_ley.replaceAll(".", "").trim();
 
 	tR += `num_ley: ${num_ley}\n`;
 	tR += `ley: ${ley}\n`;
 
 	let opcionesDeGrupo = ["Parte", "Libro", "Título", "Capítulo", "Sección", "Parágrafo"];
-	let grupos = await preguntarContinuamente("Grupos en esta ley: ", opcionesDeGrupo);
+	let grupos = await preguntarContinuamenteConOpciones(
+		"Grupos en esta ley: ", opcionesDeGrupo
+	);
 	agregarVector("grupos", grupos);
 
 	let predefinidos = await preguntarContinuamente("Grupo inicial", null);
@@ -60,7 +83,7 @@
 		}
 	}
 
-	async function preguntarContinuamente(prompt, opciones) {
+	async function preguntarContinuamenteConOpciones(prompt, opciones) {
 		let resultado = await preguntar(prompt, opciones);
 		let item = resultado[0];
 		opciones = resultado[1];
@@ -81,22 +104,39 @@
 		return vector;
 	}
 
+	async function preguntarContinuamente(prompt) {
+		let item = await tp.system.prompt(prompt);
+		let vector = [];
+		let item_acumulado = "";
+		while (item) {
+			vector.push(item);
+			item_acumulado += item;
+			item = await tp.system.prompt(`Por ahora: ${item_acumulado}`);
+			item_acumulado += ", \n";
+		}
+		return vector;
+	}
+
 	async function preguntar(prompt, opciones) {
-		if (!opciones)
-			return [await tp.system.prompt(prompt), opciones];
+		if (!opciones || opciones.length == 0)
+			return [undefined, opciones];
 
 		let respuesta = await tp.system.suggester(opcion => opcion, opciones, false, prompt);
 		let index = opciones.indexOf(respuesta);
-		if (index > 0)
+		if (index >= 0)
 			opciones.splice(index, 1);
 		return [respuesta, opciones];
 	}
 
 	function agregarVector(titulo, vector) {
 		tR += `${titulo}:\n`;
-		for (let item of vector) {
-			tR += ` - ${item}\n`;
-		}
+		tR += vector.map(item => ` - ${item}\n`).join("");
+	}
+
+	async function salir(mensaje) {
+		let archivoActivo = app.workspace.getActiveFile();
+		if (mensaje) new Notice(mensaje);			
+		await app.vault.trash(archivoActivo, true);
 	}
 %>
 <% await tp.file.include("[[Mostrar Artículo]]") %>

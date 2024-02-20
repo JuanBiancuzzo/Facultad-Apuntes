@@ -17,12 +17,8 @@
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
-    "_template/Materia - Template.md",
     "_template/Tikz - Template.md",
-    "_template/legal/Nueva Ley.md",
-    "_template/legal/Crear Artículo.md",
-    "_template/legal/Seleccionar.md",
-    "_template/legal/Nuevo Documento.md"
+    "_template/legal/Seleccionar.md"
   ],
   "startup_templates": [
     ""

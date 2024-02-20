@@ -27,7 +27,7 @@ sección: Confusión
 				if (!pagina.file.name.startsWith("Art. "))
 					return false;
 				return pagina.num_articulo;
-			}).sort(pagina => pagina.num_articulo);
+			}).sort(pagina => parseInt(pagina.num_articulo, 10));
 
 		nombre = `${nombre}, ${pagina[categoria]} [[${pagina.file.path}|?]]`;
 		return [nombre, articulos.map(articulo => {
@@ -49,7 +49,7 @@ sección: Confusión
 		.where(pagina => {
 			return pagina.file.name != pagina_actual.file.name && pagina.num_articulo;
 		})
-		.sort(pagina => pagina.num_articulo);
+		.sort(pagina => parseInt(pagina.num_articulo, 10));
 
 	dv.table(["Artículo", "Contenido"], paginas.flatMap(pagina => {
 		let articulo = `Art. ${pagina.num_articulo}`;

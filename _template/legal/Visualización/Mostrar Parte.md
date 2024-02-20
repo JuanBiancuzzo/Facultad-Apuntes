@@ -23,7 +23,7 @@
 				if (!pagina.file.name.startsWith("Art. "))
 					return false;
 				return pagina.num_articulo;
-			}).sort(pagina => pagina.num_articulo);
+			}).sort(pagina => parseInt(pagina.num_articulo, 10));
 
 		nombre = `${nombre}, ${pagina[categoria]} [[${pagina.file.path}|?]]`;
 		return [nombre, articulos.map(articulo => {
