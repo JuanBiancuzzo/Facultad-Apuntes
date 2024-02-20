@@ -101,5 +101,22 @@
       ],
       "key": "N"
     }
+  ],
+  "editor:open-search-replace": [],
+  "harpoon:add": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "A"
+    }
+  ],
+  "harpoon:open": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "H"
+    }
   ]
 }
