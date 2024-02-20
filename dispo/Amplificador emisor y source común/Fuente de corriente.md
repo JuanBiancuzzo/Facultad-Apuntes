@@ -48,3 +48,7 @@ Características
 * Hay un valor máximo de tensión de salida para el cual la fuente funciona correctamente $v_{out} = V_{DD} + V_{DS (sat)}$
 * Presenta una [[Resistencia|resistencia]] de salida $R_{out} = r_0$
 * El [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Canal-P|transistor P-MOS]] es una fuente de corriente
+
+#### Copia de corriente
+---
+Se puede generar una fuente usando el [[Circuito eléctrico|circuito]] que se llama [[Copia de corriente espejo simple|copia de corriente espejo]] ![[Copia de corriente espejo simple#Definición]]

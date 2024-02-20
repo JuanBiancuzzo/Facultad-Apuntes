@@ -118,5 +118,22 @@
       ],
       "key": "H"
     }
+  ],
+  "quickadd:choice:14db13dd-3e3e-48e7-ba52-babc06ef757d": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "N"
+    }
+  ],
+  "file-explorer:new-file": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "N"
+    }
   ]
 }

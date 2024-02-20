@@ -4,5 +4,7 @@
   "obsidian-git",
   "cm-editor-syntax-highlight-obsidian",
   "obsidian-tikzjax",
-  "oz-clear-unused-images"
+  "oz-clear-unused-images",
+  "quickadd",
+  "cmdr"
 ]
