@@ -1,8 +1,8 @@
 ---
 num_título: 2
-título: "Disposiciones especiales"
+título: Disposiciones especiales
 listado:
- - "[[Regimen de contrataciones de la administración nacional, Ley 1023.2001|Regimen de contrataciones de la administración nacional]]"
+  - "[[Regimen de contrataciones de la administración nacional]]"
 ---
 ### Capítulos
 ---

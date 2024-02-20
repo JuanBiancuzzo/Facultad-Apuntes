@@ -10,10 +10,11 @@
 	tR += `num_ley: ${num_ley}\n`;
 	tR += `ley: ${ley}\n`;
 
-	let grupos = await preguntarContinuamente("Grupos de esta ley: ");
+	let opcionesDeGrupo = ["Parte", "Libro", "Título", "Capítulo", "Sección", "Parágrafo"];
+	let grupos = await preguntarContinuamente("Grupos en esta ley: ", opcionesDeGrupo);
 	agregarVector("grupos", grupos);
 
-	let predefinidos = await preguntarContinuamente("Grupo inicial");
+	let predefinidos = await preguntarContinuamente("Grupo inicial", null);
 	if (predefinidos.length > 0)
 		agregarVector("predefinidos", predefinidos);
 
@@ -59,22 +60,36 @@
 		}
 	}
 
+	async function preguntarContinuamente(prompt, opciones) {
+		let resultado = await preguntar(prompt, opciones);
+		let item = resultado[0];
+		opciones = resultado[1];
 
-	async function preguntarContinuamente(prompt) {
-		let item = await tp.system.prompt(prompt);
 		let vector = [];
 		let item_acumulado = "";
-		while (true) {	
-			if (item === "" || item === undefined)
-				break;
+		while (item) {
 			vector.push(item);
 
 			item_acumulado += item;
-			item = await tp.system.prompt(`Por ahora: ${item_acumulado}`);
+			resultado = await preguntar(`Por ahora: ${item_acumulado}`, opciones);
+			item = resultado[0];
+			opciones = resultado[1];
+
 			item_acumulado += ", \n";
 		}
 		
 		return vector;
+	}
+
+	async function preguntar(prompt, opciones) {
+		if (!opciones)
+			return [await tp.system.prompt(prompt), opciones];
+
+		let respuesta = await tp.system.suggester(opcion => opcion, opciones, false, prompt);
+		let index = opciones.indexOf(respuesta);
+		if (index > 0)
+			opciones.splice(index, 1);
+		return [respuesta, opciones];
 	}
 
 	function agregarVector(titulo, vector) {

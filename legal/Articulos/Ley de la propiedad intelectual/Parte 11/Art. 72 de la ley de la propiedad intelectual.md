@@ -8,8 +8,8 @@ incisos:
   - El que edite, venda o reproduzca una obra suprimiendo o cambiando el nombre del autor, el título de la misma o alterando dolosamente su texto
   - El que edite o reproduzca mayor número de los ejemplares debidamente autorizados
 listado:
-  - "[[Parte 10, De las penas|Parte 10]]"
-parte: 10
+  - "[[Parte 11, De las penas|Parte 11]]"
+parte: 11
 ---
 ### Artículo
 ---

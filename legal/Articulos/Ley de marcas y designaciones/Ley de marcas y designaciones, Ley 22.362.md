@@ -1,18 +1,20 @@
 ---
-num_ley: 11723
-ley: Ley de la propiedad intelectual
+num_ley: 22362
+ley: Ley de marcas y designaciones
 grupos:
-  - Parte
-opt_parte: true
+ - Capítulo
+ - Sección
+opt_capítulo: false
+opt_sección: true
 art_con_nombre: false
-nombre_abreviado: de la ley de la propiedad intelectual
+nombre_abreviado: de la ley de marcas y designaciones
 tags:
-  - cabezera_articulos
+ - cabezera_articulos
 ---
-### Partes
+### Capítulos
 ---
 ```dataviewjs
-	let grupo = "Parte";
+	let grupo = "Capítulo";
 	let categoria = grupo.toLowerCase();
 	let num_categoria = `num_${categoria}`;
 	

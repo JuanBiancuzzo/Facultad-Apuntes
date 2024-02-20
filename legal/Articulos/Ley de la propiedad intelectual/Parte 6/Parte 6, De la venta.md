@@ -1,8 +1,8 @@
 ---
-num_parte: 10
-parte: De las penas
+num_parte: 6
+parte: "De la venta"
 listado:
-  - "[[Ley de la propiedad intelectual, Ley 11.723|Ley de la propiedad intelectual]]"
+ - "[[Ley de la propiedad intelectual, Ley 11.723|Ley de la propiedad intelectual]]"
 ---
 ### Artículos
 ---
@@ -37,4 +37,8 @@ listado:
 
 ### Interpretación
 ---
+El autor o sus derechohabientes pueden enajenar o ceder total o parcialmente su obra. La validez es por el plazo que determina la ley y el adquirente no puede alterar su título, forma y contenido 
 
+El autor conserva el derecho a exigir fidelidad de su título y texto y la mención de su nombre 
+
+Debe registrarse en el Registro Nacional de la Propiedad Intelectual

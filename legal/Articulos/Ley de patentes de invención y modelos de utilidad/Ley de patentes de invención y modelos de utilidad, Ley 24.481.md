@@ -1,18 +1,20 @@
 ---
-num_ley: 11723
-ley: Ley de la propiedad intelectual
+num_ley: 24481
+ley: Ley de patentes de invención y modelos de utilidad
 grupos:
-  - Parte
-opt_parte: true
+ - Título
+ - Capítulo
+opt_título: false
+opt_capítulo: true
 art_con_nombre: false
-nombre_abreviado: de la ley de la propiedad intelectual
+nombre_abreviado: de la patente de invención y modelos de utilidad
 tags:
-  - cabezera_articulos
+ - cabezera_articulos
 ---
-### Partes
+### Títulos
 ---
 ```dataviewjs
-	let grupo = "Parte";
+	let grupo = "Título";
 	let categoria = grupo.toLowerCase();
 	let num_categoria = `num_${categoria}`;
 	

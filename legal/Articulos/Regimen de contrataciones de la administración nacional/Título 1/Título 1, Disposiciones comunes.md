@@ -1,8 +1,8 @@
 ---
 num_título: 1
-título: "Disposiciones comunes"
+título: Disposiciones comunes
 listado:
- - "[[Regimen de contrataciones de la administración nacional, Ley 1023.2001|Regimen de contrataciones de la administración nacional]]"
+  - "[[Regimen de contrataciones de la administración nacional]]"
 ---
 ### Capítulos
 ---
