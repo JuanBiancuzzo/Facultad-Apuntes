@@ -22,6 +22,5 @@ En caso de especial gravedad y urgencia el empleador podrá efectuar adelantos q
 
 Los recibos por anticipo o entregas a cuenta de salarios, hechos al trabajador, deberán ajustarse en su forma y contenido a lo que se prevé en los artículos 138, 139 y 140, incisos a), b), g), h) e i) de la presente ley."
 
-
 ### Interpretación
 ---
