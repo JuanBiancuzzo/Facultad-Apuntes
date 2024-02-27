@@ -1,0 +1,9 @@
+---
+dia: 2024-02-27
+materia: dispo
+capitulo: 8
+---
+### Definición
+---
+Las características de un [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|MOSFET]] de [[Transistor de potencia|potencia]]
+ * Contactos de gran superficie y en caras 
