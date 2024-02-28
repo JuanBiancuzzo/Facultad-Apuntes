@@ -1,13 +1,15 @@
 ---
-num_título: 0
-título: preliminar
+num_sección: 3
+sección: "Suspensión del cumplimiento y fuerza mayor"
 listado:
-  - "[[Código Civil y Comercial de la Nación, Ley 26.994|Código Civil y Comercial de la Nación]]"
+ - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
+ - "[[Libro Tercero, Título 2, Contratos en general|Título 2]]"
+ - "[[Libro Tercero, Título 2, Capítulo 9, Efectos|Capítulo 9]]"
 ---
-### Capítulos
+### Parágrafo
 ---
 ```dataviewjs
-	let grupo = "Capítulo";
+	let grupo = "Parágrafo";
 	let categoria = grupo.toLowerCase();
 	let num_categoria = `num_${categoria}`;
 	
@@ -72,3 +74,7 @@ listado:
 		return output;
 	}));
 ```
+
+### Interpretación
+---
+

@@ -3,6 +3,8 @@ cuatri: 22C1
 estado: en-proceso
 plan: "1986"
 codigo: "7512"
+tags:
+  - materia
 ---
 ### Apuntes
 ---

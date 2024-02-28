@@ -8,7 +8,7 @@
     "num_ley": "number",
     "capitulo": "number",
     "capítulo": "number",
-    "título": "number",
+    "título": "text",
     "listado": "multitext",
     "bis": "checkbox"
   }

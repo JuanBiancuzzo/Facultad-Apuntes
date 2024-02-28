@@ -3,6 +3,8 @@ cuatri: 23C2
 estado: en-proceso
 plan: "2009"
 codigo: "8603"
+tags:
+  - materia
 ---
 ### Apuntes
 ---

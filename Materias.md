@@ -9,13 +9,11 @@ function nombre_cuatrimestre(cuatrimestre) {
 }
 
 function nombre_materia(materia) {
-	return materia.file.name.split("(")[0];
+	return materia.file.name.replace(`(${materia.codigo})`, "").trim();
 }
 
-let materiasXcuatri = dv.pages()
-	.where(pagina => {
-		return pagina.cuatri;
-	}).groupBy(pagina => {
+let materiasXcuatri = dv.pages("#materia")
+	.groupBy(pagina => {
 		return pagina.cuatri
 	}).sort(cuatrimestre => {
 		let pagina = cuatrimestre.rows[0];

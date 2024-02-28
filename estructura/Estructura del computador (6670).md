@@ -3,6 +3,8 @@ cuatri: 23C1
 estado: en-proceso
 plan: "1986"
 codigo: "6670"
+tags:
+  - materia
 ---
 ### Apuntes
 ---

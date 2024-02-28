@@ -3,6 +3,8 @@ cuatri: 23C1
 estado: terminado
 plan: "2009"
 codigo: "9704"
+tags:
+  - materia
 ---
 ### Apuntes
 ---

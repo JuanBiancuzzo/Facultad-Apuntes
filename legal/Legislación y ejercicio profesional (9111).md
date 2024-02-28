@@ -3,6 +3,8 @@ cuatri: 24C1
 codigo: "9111"
 plan: 2009
 estado: cursando
+tags:
+  - materia
 ---
 ### Apuntes
 ---

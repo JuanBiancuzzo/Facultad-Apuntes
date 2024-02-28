@@ -3,6 +3,8 @@ cuatri: 23C2
 estado: terminado
 plan: "1986"
 codigo: "6606"
+tags:
+  - "#materia"
 ---
 ### Apuntes
 ---
