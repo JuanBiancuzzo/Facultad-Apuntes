@@ -8,14 +8,14 @@ capitulo: 5
 Se define con la siguiente formula $$ M \pm R \pm C \pm c - V = E $$
 Donde:
 * $M$ es la producción de [[Calor]] metabólico $(Kcal/h)$ 
-* $C$ es el intercambio de [[Calor]] entre el cuerpo y el ambiente por [[Convección]] $(Kcal/h)$ 
+* $C$ es el intercambio de [[Calor]] entre el cuerpo y el ambiente por [[Ley de Newton, Convección de calor]] $(Kcal/h)$ 
 * $c$ es el intercambio de [[Calor]] entre el cuerpo y el ambiente por [[Conducción]] $(Kcal/h)$  (se puede despreciar en el ambiente laboral)
 * $R$ es el intercambio de [[Calor]] entre el cuerpo y el ambiente por [[Radiación]] $(Kcal/h)$ 
 * $V$ es el intercambio de [[Calor]] por ventilación pulmonar $(Kcal/h)$ (se puede despreciar en el ambiente laboral)
 * $E$ es el intercambio de [[Calor]] entre el cuerpo y el ambiente por [[Evaporación]] $(Kcal/h)$ 
 
 Por lo tanto para nosotros es útil expresarlo como $$ M \pm R \pm C = E $$
-#### Intercambio por [[Convección]]
+#### Intercambio por [[Ley de Newton, Convección de calor]]
 ---
 $$ C = K_c \cdot A \cdot (t_{bs} - t_{piel}), ~~ K_c = 6.5 \cdot V^{0.6} $$
 Donde:
