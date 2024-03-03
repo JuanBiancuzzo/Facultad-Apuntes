@@ -40,7 +40,7 @@ tags:
 	}
 ```
 
-### Artículos
+### Leyes y documentos
 ---
 ```dataviewjs
 	const documentos = dv.pages('"legal/Articulos" and #cabezera_articulos');

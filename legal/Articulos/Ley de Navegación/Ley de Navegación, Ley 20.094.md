@@ -1,10 +1,10 @@
 ---
 num_ley: 20094
-ley: LEy de Navegación
+ley: Ley de Navegación
 grupos:
- - Título
- - Capítulo
- - Sección
+  - Título
+  - Capítulo
+  - Sección
 opt_título: false
 opt_capítulo: true
 opt_sección: true
