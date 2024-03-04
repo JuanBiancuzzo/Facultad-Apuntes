@@ -1,3 +1,7 @@
+---
+title: Readme
+---
+
 ### Apuntes
 ---
 Voy a ir poniendo mis apuntes acá, y estoy usando [Obsidian](https://obsidian.md) para escribir y crear los vínculos entre las páginas por lo que es recomendable para poder navegar los apuntes.
