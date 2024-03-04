@@ -1,0 +1,49 @@
+name: Deploy Quartz site to GitHub Pages
+ 
+on:
+  push:
+    branches: [ "main" ] 
+  pull_request:
+    branches: [ "main" ] 
+ 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+ 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+ 
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Building with docker
+        uses: addnab/docker-run-action@v3
+        with:
+          image: juanbiancuzzo/obsidian-static-site:0.1
+          options: -v ${{ github.workspace }}:/usr/src/app/content
+          run: mv content/README.md content/index.md && npx quartz build && mv public content
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: public
+ 
+  deploy:
+    needs: build
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
