@@ -29,6 +29,7 @@ Un listado de materias y su estado actual.
 | [Sistemas operativos](sisop/Sistemas%20operativos%20(7508).md)                                                 | Terminado                          |
 | [Taller de programación](taller/Taller%20de%20programación%20(9508).md)                                        | Escribir sobre el libro de rust    |
  
-##### Colaboradores
+##### Contribuidores
 ---
+* Juan Ignacio Biancuzzo
 * Felipe Perassi
