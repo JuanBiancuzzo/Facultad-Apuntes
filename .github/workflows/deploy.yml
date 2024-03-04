@@ -25,7 +25,7 @@ jobs:
       - name: Building with docker
         uses: addnab/docker-run-action@v3
         with:
-          image: juanbiancuzzo/obsidian-static-site:0.1
+          image: juanbiancuzzo/obsidian-static-site:latest
           options: -v ${{ github.workspace }}:/usr/src/app/content
           run: mv content/README.md content/index.md && npx quartz build && mv public content
 
