@@ -28,6 +28,9 @@ jobs:
           image: juanbiancuzzo/obsidian-static-site:latest
           options: -v ${{ github.workspace }}:/usr/src/app/content
           run: mv content/README.md content/index.md && npx quartz build && mv public content
+          
+      - name: Verificacion
+        run: ls -a
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2

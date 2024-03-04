@@ -27,7 +27,7 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   right: [
     // Component.Graph(),
-    Component.Spacer(),
+    // Component.Spacer(),
     Component.Search(),
     Component.TableOfContents(),
     // Component.Darkmode(),
