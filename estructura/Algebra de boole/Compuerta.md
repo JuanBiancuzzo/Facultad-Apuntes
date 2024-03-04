@@ -8,7 +8,7 @@ capitulo: 3
 Es un símbolo que representa una operación lógica:
 * AND
 * OR
-* NOT
+* [[Inversor|NOT]]
 * NAND
 * NOR
 * XOR
