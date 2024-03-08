@@ -7,7 +7,7 @@ capitulo: 1
 ---
 Podemos simplificar un [[Amplificador operacional]], con el siguiente [[Modelo]]
 
-`` `tikz 
+```tikz 
 \usepackage{circuitikz} 
 \begin{document} 
 \begin{circuitikz}[american, voltage shift=0.5] 	
