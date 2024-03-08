@@ -30,10 +30,11 @@ Usaremos la convención para la polarización de la [[Juntura PN|juntura PN]]
 	\end{circuitikz}
 \end{document}
 ```
+
 ##### Polarización directa
 ---
-Diremos que estamos en directa cuando la [[Tensión]] $V > 0$
+Diremos que estamos en directa cuando la [[Tensión|tensión]] $V > 0$
 
 ##### Polarización inversa
 ---
-Diremos que estamos en inversa cuando la [[Tensión]] $V < 0$
+Diremos que estamos en inversa cuando la [[Tensión|tensión]] $V < 0$
