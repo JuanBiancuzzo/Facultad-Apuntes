@@ -12,12 +12,11 @@ export const sharedPageComponents: SharedLayout = {
         },
     }),
     beforeBody: [
-        Component.Breadcrumbs(),
-        Component.Spacer(),
-        Component.Spacer(),
         Component.Search(),
         Component.Spacer(),
         Component.ArticleTitle(),
+        Component.Spacer(),
+        Component.Breadcrumbs(),
     ],
     left: [
         Component.PageTitle(),
