@@ -61,7 +61,7 @@ Ambos fenómenos suelen modelarse considerando una [[Resistor|resistencia]] ($R_
 ---
 ##### [[Corriente eléctrica|Corriente]] de [[Generación]]
 ---
-En inversa, la corriente (ideal) es menor a la [[Corriente a través de la juntura PN|corriente de saturación inversa]] ($|I_D < I_0$)
+En inversa, la corriente (ideal) es menor a la [[Corriente a través de la juntura PN|corriente de saturación inversa]] ($|I_D < I_0|$)
 
 Al igual que en [[Convención de signos para la tensión de polarización#Polarización directa|directa]], cualquier aporte de [[Carga eléctrica|carga]] adicional a la estructura, será comparable o superior a la carga que atraviesa la [[Juntura PN|juntura]] de manera ideal.
 

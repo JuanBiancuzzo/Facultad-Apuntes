@@ -53,6 +53,7 @@ Su distribución de dopantes en una juntura PN es abrupta
 	\end{tikzpicture}
 \end{document}
 ```
+
 Donde podemos decir $$ 
 N_a(x) = \begin{cases} 
 	N_a & x \le 0 \\

@@ -5,7 +5,7 @@ capitulo: 3
 ---
 ### Definición
 ---
-	Al aplicar una [[Tensión]] sobre la [[Juntura PN]] circula una [[Corriente eléctrica|corriente]]
+Al aplicar una [[Tensión]] sobre la [[Juntura PN]] circula una [[Corriente eléctrica|corriente]]
 
 ![[Corriente eléctrica al aplicar una tensión sobre una juntura PN.png|600]]
 
