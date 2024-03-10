@@ -22,8 +22,8 @@ Veremos como analizar los [[Máximo y mínimo local|máximos y mínimos locales]
 			xtick={0.55, 1.98, 3.4},
 			xticklabels={$x_1$, \smash{\raisebox{3\height}{$x_2$}}, $x_3$},
 			yticklabels={},
-			
 		]
+
 			\addplot[orange, ultra thick, domain=-0.4:1.98] 
 			  {-1 * x^2 + 1.1 * x + 1.4};
 			
