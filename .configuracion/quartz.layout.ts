@@ -11,12 +11,9 @@ export const sharedPageComponents: SharedLayout = {
             GitHub: "https://github.com/JuanBiancuzzo/Facultad-Apuntes",
         },
     }),
-}
-
-// components for pages that display a single page (e.g. a single note)
-export const defaultContentPageLayout: PageLayout = {
     beforeBody: [
         Component.Breadcrumbs(),
+        Component.Spacer(),
         Component.Spacer(),
         Component.Search(),
         Component.Spacer(),
@@ -28,6 +25,10 @@ export const defaultContentPageLayout: PageLayout = {
         Component.Darkmode(),
         Component.DesktopOnly(Component.Explorer()),
     ],
+}
+
+// components for pages that display a single page (e.g. a single note)
+export const defaultContentPageLayout: PageLayout = {
     right: [
         Component.Backlinks(),
     ],
@@ -35,18 +36,5 @@ export const defaultContentPageLayout: PageLayout = {
 
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
-    beforeBody: [
-        Component.Breadcrumbs(),
-        Component.Spacer(),
-        Component.Search(),
-        Component.Spacer(),
-        Component.ArticleTitle(),
-    ],
-    left: [
-        Component.PageTitle(),
-        Component.MobileOnly(Component.Spacer()),
-        Component.Darkmode(),
-        Component.DesktopOnly(Component.Explorer()),
-    ],
     right: [],
 }
