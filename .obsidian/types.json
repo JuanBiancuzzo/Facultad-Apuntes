@@ -10,6 +10,7 @@
     "capítulo": "number",
     "título": "text",
     "listado": "multitext",
-    "bis": "checkbox"
+    "bis": "checkbox",
+    "plan": "number"
   }
 }

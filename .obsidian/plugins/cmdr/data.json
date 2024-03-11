@@ -10,6 +10,12 @@
       "icon": "book",
       "name": "QuickAdd: Materia",
       "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:c6addedc-6a02-4777-95d3-b9d63ce9a4ed",
+      "icon": "bookmark-plus",
+      "name": "QuickAdd: Agregar tema",
+      "mode": "any"
     }
   ],
   "rightRibbon": [],

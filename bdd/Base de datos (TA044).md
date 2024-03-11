@@ -1,10 +1,9 @@
 ---
 cuatri: 24C1
-codigo: "9111"
-plan: 2009
-estado: en-proceso
-tags:
-  - materia
+codigo: TA044
+plan: 2023
+estado: cursando
+tags: materia
 ---
 ### Apuntes
 ---
@@ -40,24 +39,3 @@ tags:
 	}
 ```
 
-### Leyes y documentos
----
-```dataviewjs
-	const documentos = dv.pages('"legal/Articulos" and #cabezera_articulos');
-
-	dv.list(documentos.flatMap(documento => {
-		let nombre;
-		if (documento.ley) {
-			nombre = documento.ley;
-		} else if (documento.documento) {
-			nombre = documento.documento;
-		}
-
-		if (!nombre) {
-			return [];
-		}
-
-		let path = documento.file.path;
-		return [`[[${path}|${nombre}]]`];
-	}));
-```

@@ -18,19 +18,24 @@ Un listado de materias y su estado actual.
 | [Análisis 2](analisis%202/Análisis%202%20(6103).md)                                                            | Falta terminar de pasar el resumen |
 | [Análisis 3](analisis%203/Análisis%203%20(6110).md)                                                            | Terminado                          |
 | [Análisis de la información](aninfo/Análisis%20de%20la%20información%20(7509).md)                              | Terminado                          |
-| [Dispositivos semiconductores](dispo/Dispositivos%20semiconductores%20(8603).md)                               | Falta terminar el resumen                           |
+| [Base de datos](bdd/Base%20de%20datos%20(TA044).md)                                                            | Cursando                           |
+| [Circuitos microelectrónicos](circuitos/Circuitos%20microelectrónicos%20(TB068).md)                            | Cursando                           |
+| [Dispositivos semiconductores](dispo/Dispositivos%20semiconductores%20(8603).md)                               | Falta terminar el resumen          |
 | [Estructura del computador](estructura/Estructura%20del%20computador%20(6670).md)                              | Falta escribir sobre el Murdocca   |
 | [Física 1](fisica%201/Física%201%20(6201).md)                                                                  | Falta pasar el resumen             |
 | [Física 2](fisica%202/Física%202%20(6203).md)                                                                  | Falta pasar el resumen             |
 | [Física 3](fisica%203/Física%203%20(8203).md)                                                                  | Falta pasar el resumen             |
 | [Introducción a la Ingeniería electrónica](intro/Introducción%20a%20la%20ingeniería%20electronica%20(8602).md) | Terminado                          |
-| [Legislación y ejercicio profesional](legal/Legislación%20y%20ejercicio%20profesional%20(9111).md) | Cursando                           |
+| [Legislación y ejercicio profesional](legal/Legislación%20y%20ejercicio%20profesional%20(9111).md)             | Cursando                           |
 | [Análisis numérico](numerico/Análisis%20numérico%20(7512).md)                                                  | Falta pasar el resumen             |
 | [Organización de datos](orga/Organización%20de%20datos%20(7506).md)                                            | Falta pasar el resumen             |
-| [Probabilidad y estadística](proba/Probabilidad%20y%20estadística%20(6109).md)                                 | Terminado                   |
+| [Probabilidad y estadística](proba/Probabilidad%20y%20estadística%20(6109).md)                                 | Terminado                          |
+| [Redes](redes/Redes%20(TA048).md)                                                                              | Cursando                           |
 | [Seguridad ambiental y del trabajo](seguridad/Seguridad%20ambiental%20y%20del%20trabajo%20(9704).md)           | Terminado                          |
+| [Señales y sistemas](señales/Señales%20y%20sistemas%20(TB065).md)                                              | Cursando                           |
 | [Sistemas operativos](sisop/Sistemas%20operativos%20(7508).md)                                                 | Terminado                          |
 | [Taller de programación](taller/Taller%20de%20programación%20(9508).md)                                        | Escribir sobre el libro de rust    |
+
  
 ##### Contribuidores
 ---
