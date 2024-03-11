@@ -32,7 +32,7 @@
 		crearFrontmatter(1, materia);
 	} else {
 		let opciones = temasExistentes.map(([nombre, capitulo]) => {
-			return `Después de ${nombre}, con el capitulo: ${capitulo}`;
+			return `Después de ${nombre}, con el capitulo: ${capitulo + 1}`;
 		}).values;
 		let [primerNombre, primerCapitulo] = temasExistentes[0];
 		opciones.splice(0, 0, `Antes de ${primerNombre}, con el capitulo: ${primerCapitulo}`);
