@@ -26,7 +26,7 @@ Un listado de materias y su estado actual.
 | [Física 2](fisica%202/Física%202%20(6203).md)                                                                  | Falta pasar el resumen             |
 | [Física 3](fisica%203/Física%203%20(8203).md)                                                                  | Falta pasar el resumen             |
 | [Introducción a la Ingeniería electrónica](intro/Introducción%20a%20la%20ingeniería%20electronica%20(8602).md) | Terminado                          |
-| [Legislación y ejercicio profesional](legal/Legislación%20y%20ejercicio%20profesional%20(9111).md)             | Cursando                           |
+| [Legislación y ejercicio profesional](legal/Legislación%20y%20ejercicio%20profesional%20(9111).md)             | Falta terminar el resumen          |
 | [Análisis numérico](numerico/Análisis%20numérico%20(7512).md)                                                  | Falta pasar el resumen             |
 | [Organización de datos](orga/Organización%20de%20datos%20(7506).md)                                            | Falta pasar el resumen             |
 | [Probabilidad y estadística](proba/Probabilidad%20y%20estadística%20(6109).md)                                 | Terminado                          |
