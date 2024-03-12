@@ -7,9 +7,10 @@ tags: materia
 ---
 ### Apuntes 
 ---
-##### Señales y sistemas (1)
+##### Señales y sistemas (2)
 ---
-* [[señales/Señales y sistemas/temp.md|temp]]
+* [[señales/Señales y sistemas/Discretización.md|Discretización]]
+* [[señales/Señales y sistemas/Señal.md|Señal]]
 
 ##### Sistemas LTI (1)
 ---
