@@ -28,6 +28,10 @@
         {
           "action": 0,
           "commandId": "quickadd:choice:5879040f-2b98-41d6-8c55-ca689e52ab57"
+        },
+        {
+          "action": 0,
+          "commandId": "obsidian-git:commit-specified-message"
         }
       ],
       "name": "Commitear",

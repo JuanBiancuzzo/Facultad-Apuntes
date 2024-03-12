@@ -23,7 +23,8 @@
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
     "_template/Tikz - Template.md",
-    "_template/legal/Seleccionar.md"
+    "_template/legal/Seleccionar.md",
+    "_template/Eliminar Actual.md"
   ],
   "startup_templates": [
     ""
