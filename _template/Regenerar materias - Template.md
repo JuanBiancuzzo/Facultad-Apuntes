@@ -1,10 +1,10 @@
 <%* 
 	const dv = this.app.plugins.plugins["dataview"].api;
 	
-	let archivosModificados = this.app.plugins
+	/*let archivosModificados = this.app.plugins
 		.plugins["obsidian-git"]
 		.cachedStatus
-		.all;
+		.all; */
 
 	let materias = dv.pages("#materia")
 		.map(materia => {
@@ -15,18 +15,20 @@
 			return [carpetaMateria, tFile];
 		});
 
-	let archivosActualizar = [];
+	/*let archivosActualizar = [];
 	for ([carpetaMateria, tFile] of materias) {
 		if (archivosModificados.some(archivo => {
 			return archivo.path.split("/")[0] == carpetaMateria;
 		})) {
 			archivosActualizar.push([carpetaMateria, tFile]);
 		}
-	}
+	}*/
 
-	for (let [carpetaMateria, tFile] of archivosActualizar) {
-		await modificarMateria(dv, carpetaMateria, tFile);
+	let esperaModificaciones = [];
+	for (let [carpetaMateria, tFile] of materias) {
+		 esperaModificaciones.push(modificarMateria(dv, carpetaMateria, tFile));
 	}
+	
 
 	let archivoActivo = app.workspace.getActiveFile();
 	new Notice("Ya se regeneró todas las materias");
@@ -52,8 +54,7 @@
 			}).join("\n");
 			nuevoContenido += "\n";
 		}
-
-		await this.app.vault.modify(archivoMateria, nuevoContenido);
+		return this.app.vault.modify(archivoMateria, nuevoContenido);
 	}
 
 	function conseguir_nombre(unidad) {

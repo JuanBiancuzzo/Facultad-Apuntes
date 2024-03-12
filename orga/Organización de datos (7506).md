@@ -6,36 +6,161 @@ codigo: "7506"
 tags:
   - materia
 ---
-### Apuntes
+### Apuntes 
 ---
-```dataviewjs
-	function conseguir_nombre(unidad) {
-		let relative_path = unidad.rows[0].file.folder;
-		let spliteado = relative_path.split("/");
-		return spliteado[spliteado.length - 1];
-	}
-
-	const pagina_actual = dv.current();
-	const carpeta = '"' + pagina_actual.file.folder + '"';
-	const paginas = dv.pages(carpeta)
-		.where(pagina => {
-			if (!pagina.capitulo)
-				return false;
-			return pagina.file.name != pagina_actual.file.name;
-		});
-
-	let unidades = paginas.groupBy(pagina => pagina.capitulo)
-		.sort(capitulo => {
-			return capitulo.rows[0].capitulo;
-		});
-		
-	for (let unidad of unidades) {		
-		dv.table([conseguir_nombre(unidad)], (unidad.rows.file).map(pagina => {
-			let path = pagina.path;
-			let nombre = pagina.name;
-			return ["[[" + path + "|" + nombre + "]]"];
-		}));
-
-		dv.el("br", "");
-	}
-```
+##### Pandas (12)
+---
+[[orga/Pandas/Unstack.md|Unstack]]
+[[orga/Pandas/Stack - Pandas.md|Stack - Pandas]]
+[[orga/Pandas/Series - Pandas.md|Series - Pandas]]
+[[orga/Pandas/Merge - Pandas.md|Merge - Pandas]]
+[[orga/Pandas/Map - Pandas.md|Map - Pandas]]
+[[orga/Pandas/Leer archivos - Pandas.md|Leer archivos - Pandas]]
+[[orga/Pandas/Group - Pandas.md|Group - Pandas]]
+[[orga/Pandas/Data frame - Pandas.md|Data frame - Pandas]]
+[[orga/Pandas/Astype.md|Astype]]
+[[orga/Pandas/Agrupar datos.md|Agrupar datos]]
+[[orga/Pandas/Apply - Pandas.md|Apply - Pandas]]
+[[orga/Pandas/Acceder a datos - Pandas.md|Acceder a datos - Pandas]]
+##### Visualizaciones (21)
+---
+[[orga/Visualizaciones/Violin plot.md|Violin plot]]
+[[orga/Visualizaciones/Treemap.md|Treemap]]
+[[orga/Visualizaciones/Stacked bar plot.md|Stacked bar plot]]
+[[orga/Visualizaciones/Serie de tiempo.md|Serie de tiempo]]
+[[orga/Visualizaciones/Scatter plot.md|Scatter plot]]
+[[orga/Visualizaciones/Sankey diagram.md|Sankey diagram]]
+[[orga/Visualizaciones/Regression plot.md|Regression plot]]
+[[orga/Visualizaciones/Radar chart.md|Radar chart]]
+[[orga/Visualizaciones/Plot.md|Plot]]
+[[orga/Visualizaciones/Plot de relación.md|Plot de relación]]
+[[orga/Visualizaciones/Pie plot.md|Pie plot]]
+[[orga/Visualizaciones/Lollipop plot.md|Lollipop plot]]
+[[orga/Visualizaciones/Lineplot.md|Lineplot]]
+[[orga/Visualizaciones/Histograma.md|Histograma]]
+[[orga/Visualizaciones/Heatmap.md|Heatmap]]
+[[orga/Visualizaciones/Distribución discreta.md|Distribución discreta]]
+[[orga/Visualizaciones/Distribución continua.md|Distribución continua]]
+[[orga/Visualizaciones/Densidy plot.md|Densidy plot]]
+[[orga/Visualizaciones/Correlación.md|Correlación]]
+[[orga/Visualizaciones/Box plot.md|Box plot]]
+[[orga/Visualizaciones/Bar plot.md|Bar plot]]
+##### NLP (17)
+---
+[[orga/NLP/Tokenización.md|Tokenización]]
+[[orga/NLP/Token.md|Token]]
+[[orga/NLP/Term frequency x inverse document frequency (TF-IDF).md|Term frequency x inverse document frequency (TF-IDF)]]
+[[orga/NLP/Stemming.md|Stemming]]
+[[orga/NLP/Term Frequency (TF).md|Term Frequency (TF)]]
+[[orga/NLP/Stop-word.md|Stop-word]]
+[[orga/NLP/Steamming.md|Steamming]]
+[[orga/NLP/Similitud coseno.md|Similitud coseno]]
+[[orga/NLP/Procesamiento del lenguaje natural.md|Procesamiento del lenguaje natural]]
+[[orga/NLP/N-gramas.md|N-gramas]]
+[[orga/NLP/Normalización.md|Normalización]]
+[[orga/NLP/Memory usege.md|Memory usege]]
+[[orga/NLP/Lemmatization.md|Lemmatization]]
+[[orga/NLP/Lematización.md|Lematización]]
+[[orga/NLP/Inverse document frequency.md|Inverse document frequency]]
+[[orga/NLP/Embedding.md|Embedding]]
+[[orga/NLP/Bag of words.md|Bag of words]]
+##### Compresión (15)
+---
+[[orga/Compresión/Navaja de Ockam.md|Navaja de Ockam]]
+[[orga/Compresión/Principio de epicúreo.md|Principio de epicúreo]]
+[[orga/Compresión/Inducción de solomonoff.md|Inducción de solomonoff]]
+[[orga/Compresión/Entropía de shannon.md|Entropía de shannon]]
+[[orga/Compresión/Entropía cruzada.md|Entropía cruzada]]
+[[orga/Compresión/Divergencia de Kullback-Leibler.md|Divergencia de Kullback-Leibler]]
+[[orga/Compresión/Distancia de Kolmogorov.md|Distancia de Kolmogorov]]
+[[orga/Compresión/Distancia de Kolmogorov normalizada.md|Distancia de Kolmogorov normalizada]]
+[[orga/Compresión/Distancia de compresión.md|Distancia de compresión]]
+[[orga/Compresión/Compresión de redondeo.md|Compresión de redondeo]]
+[[orga/Compresión/Complejidad de Kolmogorov.md|Complejidad de Kolmogorov]]
+[[orga/Compresión/Codificación de Huffman.md|Codificación de Huffman]]
+[[orga/Compresión/Bit de información.md|Bit de información]]
+[[orga/Compresión/Cadena aleatorio.md|Cadena aleatorio]]
+[[orga/Compresión/Ajuste de Laplace.md|Ajuste de Laplace]]
+##### Spark (37)
+---
+[[orga/Spark/Variable broadcast - Spark.md|Variable broadcast - Spark]]
+[[orga/Spark/Union - Spark.md|Union - Spark]]
+[[orga/Spark/Transformación - Spark.md|Transformación - Spark]]
+[[orga/Spark/TakeSample - Spark.md|TakeSample - Spark]]
+[[orga/Spark/TakeOrdered - Spark.md|TakeOrdered - Spark]]
+[[orga/Spark/Take - Spark.md|Take - Spark]]
+[[orga/Spark/Subtract - Spark.md|Subtract - Spark]]
+[[orga/Spark/SaveAsTextFile - Spark.md|SaveAsTextFile - Spark]]
+[[orga/Spark/SaveAsPickleFile - Spark.md|SaveAsPickleFile - Spark]]
+[[orga/Spark/Resilent distributed dataset - Spark.md|Resilent distributed dataset - Spark]]
+[[orga/Spark/RepartitionAndSortWithinPartitions - Spark.md|RepartitionAndSortWithinPartitions - Spark]]
+[[orga/Spark/Repartition - Spark.md|Repartition - Spark]]
+[[orga/Spark/ReduceByKey - Spark.md|ReduceByKey - Spark]]
+[[orga/Spark/Reduce - Spark.md|Reduce - Spark]]
+[[orga/Spark/MapPartition - Spark.md|MapPartition - Spark]]
+[[orga/Spark/Map-Reduce.md|Map-Reduce]]
+[[orga/Spark/Map - Spark.md|Map - Spark]]
+[[orga/Spark/Join - Spark.md|Join - Spark]]
+[[orga/Spark/Intersection - Spark.md|Intersection - Spark]]
+[[orga/Spark/GroupByKey - Spark.md|GroupByKey - Spark]]
+[[orga/Spark/Glom - Spark.md|Glom - Spark]]
+[[orga/Spark/FlatMap - Spark.md|FlatMap - Spark]]
+[[orga/Spark/First - Spark.md|First - Spark]]
+[[orga/Spark/Filter - Spark.md|Filter - Spark]]
+[[orga/Spark/File system distribuido.md|File system distribuido]]
+[[orga/Spark/Etapa de shuffle & sort.md|Etapa de shuffle & sort]]
+[[orga/Spark/Distinct - Spark.md|Distinct - Spark]]
+[[orga/Spark/CountByKey - Spark.md|CountByKey - Spark]]
+[[orga/Spark/Count - Spark.md|Count - Spark]]
+[[orga/Spark/Collect - Spark.md|Collect - Spark]]
+[[orga/Spark/Coalesce - Spark.md|Coalesce - Spark]]
+[[orga/Spark/Cluster.md|Cluster]]
+[[orga/Spark/Cache - Spark.md|Cache - Spark]]
+[[orga/Spark/Broadcast Join - Spark.md|Broadcast Join - Spark]]
+[[orga/Spark/Apache spark.md|Apache spark]]
+[[orga/Spark/Almacenamiento distribuido.md|Almacenamiento distribuido]]
+[[orga/Spark/Acción - Spark.md|Acción - Spark]]
+##### Machine learning (35)
+---
+[[orga/Machine learning/Árbol de decisión.md|Árbol de decisión]]
+[[orga/Machine learning/XGBoost.md|XGBoost]]
+[[orga/Machine learning/Variance.md|Variance]]
+[[orga/Machine learning/Validación del modelo.md|Validación del modelo]]
+[[orga/Machine learning/Underfitting.md|Underfitting]]
+[[orga/Machine learning/Tuning.md|Tuning]]
+[[orga/Machine learning/Transformación de features.md|Transformación de features]]
+[[orga/Machine learning/Set desbalanceado.md|Set desbalanceado]]
+[[orga/Machine learning/Regularización.md|Regularización]]
+[[orga/Machine learning/Regresión logística.md|Regresión logística]]
+[[orga/Machine learning/Regresión lineal.md|Regresión lineal]]
+[[orga/Machine learning/Red neuronal.md|Red neuronal]]
+[[orga/Machine learning/Random forest.md|Random forest]]
+[[orga/Machine learning/Problema de regresión.md|Problema de regresión]]
+[[orga/Machine learning/Problema de clasificación.md|Problema de clasificación]]
+[[orga/Machine learning/Overfitting.md|Overfitting]]
+[[orga/Machine learning/One hot encoding.md|One hot encoding]]
+[[orga/Machine learning/Neurona.md|Neurona]]
+[[orga/Machine learning/Neurona no lineal.md|Neurona no lineal]]
+[[orga/Machine learning/Neurona lineal.md|Neurona lineal]]
+[[orga/Machine learning/Métrica de un modelo.md|Métrica de un modelo]]
+[[orga/Machine learning/K-Nearest Neighbors.md|K-Nearest Neighbors]]
+[[orga/Machine learning/Mean encoding.md|Mean encoding]]
+[[orga/Machine learning/Hiper-parámetros de un modelo.md|Hiper-parámetros de un modelo]]
+[[orga/Machine learning/Error de test.md|Error de test]]
+[[orga/Machine learning/Error de entrenamiento.md|Error de entrenamiento]]
+[[orga/Machine learning/Entrenar un modelo.md|Entrenar un modelo]]
+[[orga/Machine learning/Ensamble.md|Ensamble]]
+[[orga/Machine learning/Deep learning.md|Deep learning]]
+[[orga/Machine learning/Binary encoding.md|Binary encoding]]
+[[orga/Machine learning/Cross validation.md|Cross validation]]
+[[orga/Machine learning/Codificación de variables categóricas.md|Codificación de variables categóricas]]
+[[orga/Machine learning/Bias.md|Bias]]
+[[orga/Machine learning/Aprendizaje supervisado.md|Aprendizaje supervisado]]
+[[orga/Machine learning/Aprendizaje automático.md|Aprendizaje automático]]
+##### NLP (5)
+---
+[[orga/NLP/Softmax.md|Softmax]]
+[[orga/NLP/Red neuronal recurrente.md|Red neuronal recurrente]]
+[[orga/NLP/Red neuronal convolucional.md|Red neuronal convolucional]]
+[[orga/NLP/Long short-term memory.md|Long short-term memory]]
+[[orga/NLP/GRU.md|GRU]]

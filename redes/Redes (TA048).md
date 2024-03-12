@@ -5,36 +5,23 @@ plan: 2023
 estado: cursando
 tags: materia
 ---
-### Apuntes
+### Apuntes 
 ---
-```dataviewjs
-	function conseguir_nombre(unidad) {
-		let relative_path = unidad.rows[0].file.folder;
-		let spliteado = relative_path.split("/");
-		return spliteado[spliteado.length - 1];
-	}
-
-	const pagina_actual = dv.current();
-	const carpeta = '"' + pagina_actual.file.folder + '"';
-	const paginas = dv.pages(carpeta)
-		.where(pagina => {
-			if (!pagina.capitulo)
-				return false;
-			return pagina.file.name != pagina_actual.file.name;
-		});
-
-	let unidades = paginas.groupBy(pagina => pagina.capitulo)
-		.sort(capitulo => {
-			return capitulo.rows[0].capitulo;
-		});
-		
-	for (let unidad of unidades) {		
-		dv.table([conseguir_nombre(unidad)], (unidad.rows.file).map(pagina => {
-			let path = pagina.path;
-			let nombre = pagina.name;
-			return ["[[" + path + "|" + nombre + "]]"];
-		}));
-
-		dv.el("br", "");
-	}
-```
+##### Capa de aplicación (1)
+---
+[[redes/Capa de aplicación/temp.md|temp]]
+##### Capa de Transporte (1)
+---
+[[redes/Capa de Transporte/temp.md|temp]]
+##### Capa de Red (1)
+---
+[[redes/Capa de Red/temp.md|temp]]
+##### Capa de Enlace (1)
+---
+[[redes/Capa de Enlace/temp.md|temp]]
+##### Capa Física Inalámbrica (1)
+---
+[[redes/Capa Física Inalámbrica/temp.md|temp]]
+##### Seguridad en Redes (1)
+---
+[[redes/Seguridad en Redes/temp.md|temp]]

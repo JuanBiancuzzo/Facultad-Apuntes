@@ -5,36 +5,26 @@ plan: 2023
 estado: cursando
 tags: materia
 ---
-### Apuntes
+### Apuntes 
 ---
-```dataviewjs
-	function conseguir_nombre(unidad) {
-		let relative_path = unidad.rows[0].file.folder;
-		let spliteado = relative_path.split("/");
-		return spliteado[spliteado.length - 1];
-	}
-
-	const pagina_actual = dv.current();
-	const carpeta = '"' + pagina_actual.file.folder + '"';
-	const paginas = dv.pages(carpeta)
-		.where(pagina => {
-			if (!pagina.capitulo)
-				return false;
-			return pagina.file.name != pagina_actual.file.name;
-		});
-
-	let unidades = paginas.groupBy(pagina => pagina.capitulo)
-		.sort(capitulo => {
-			return capitulo.rows[0].capitulo;
-		});
-		
-	for (let unidad of unidades) {		
-		dv.table([conseguir_nombre(unidad)], (unidad.rows.file).map(pagina => {
-			let path = pagina.path;
-			let nombre = pagina.name;
-			return ["[[" + path + "|" + nombre + "]]"];
-		}));
-
-		dv.el("br", "");
-	}
-```
+##### Circuitos con diodos (1)
+---
+[[circuitos/Circuitos con diodos/temp.md|temp]]
+##### Dispositivos de control de señal y en conmutación (1)
+---
+[[circuitos/Dispositivos de control de señal y en conmutación/temp.md|temp]]
+##### Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias (1)
+---
+[[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/temp.md|temp]]
+##### Amplificadores con varios dispositivos activos de bajo nivel de potencia (1)
+---
+[[circuitos/Amplificadores con varios dispositivos activos de bajo nivel de potencia/temp.md|temp]]
+##### Amplificadores diferenciales (1)
+---
+[[circuitos/Amplificadores diferenciales/temp.md|temp]]
+##### Fuentes de corriente y circuitos con cargas activas (1)
+---
+[[circuitos/Fuentes de corriente y circuitos con cargas activas/temp.md|temp]]
+##### Circuitos integrados analógicos (1)
+---
+[[circuitos/Circuitos integrados analógicos/temp.md|temp]]

@@ -6,36 +6,36 @@ codigo: "7512"
 tags:
   - materia
 ---
-### Apuntes
+### Apuntes 
 ---
-```dataviewjs
-	function conseguir_nombre(unidad) {
-		let relative_path = unidad.rows[0].file.folder;
-		let spliteado = relative_path.split("/");
-		return spliteado[spliteado.length - 1];
-	}
-
-	const pagina_actual = dv.current();
-	const carpeta = '"' + pagina_actual.file.folder + '"';
-	const paginas = dv.pages(carpeta)
-		.where(pagina => {
-			if (!pagina.capitulo)
-				return false;
-			return pagina.file.name != pagina_actual.file.name;
-		});
-
-	let unidades = paginas.groupBy(pagina => pagina.capitulo)
-		.sort(capitulo => {
-			return capitulo.rows[0].capitulo;
-		});
-		
-	for (let unidad of unidades) {		
-		dv.table([conseguir_nombre(unidad)], (unidad.rows.file).map(pagina => {
-			let path = pagina.path;
-			let nombre = pagina.name;
-			return ["[[" + path + "|" + nombre + "]]"];
-		}));
-
-		dv.el("br", "");
-	}
-```
+##### Errores (6)
+---
+[[numerico/Errores/Propagación de errores.md|Propagación de errores]]
+[[numerico/Errores/Error relativo.md|Error relativo]]
+[[numerico/Errores/Error inherente.md|Error inherente]]
+[[numerico/Errores/Error de truncamiento.md|Error de truncamiento]]
+[[numerico/Errores/Error de redondeo.md|Error de redondeo]]
+[[numerico/Errores/Error absoluto.md|Error absoluto]]
+##### Ecuaciones no lineales (3)
+---
+[[numerico/Ecuaciones no lineales/Regula-Falsi.md|Regula-Falsi]]
+[[numerico/Ecuaciones no lineales/Punto fijo.md|Punto fijo]]
+[[numerico/Ecuaciones no lineales/Bisección.md|Bisección]]
+##### Ajuste de funciones (1)
+---
+[[numerico/Ajuste de funciones/temp.md|temp]]
+##### Sistemas de ecuaciones lineales (1)
+---
+[[numerico/Sistemas de ecuaciones lineales/temp.md|temp]]
+##### Integración y Diferenciación Numérica (1)
+---
+[[numerico/Integración y Diferenciación Numérica/temp.md|temp]]
+##### Optimización (1)
+---
+[[numerico/Optimización/temp.md|temp]]
+##### Ecuaciones diferenciales ordinarias a valores iniciales (1)
+---
+[[numerico/Ecuaciones diferenciales ordinarias a valores iniciales/temp.md|temp]]
+##### Ecuaciones diferenciales en derivadas parciales (1)
+---
+[[numerico/Ecuaciones diferenciales en derivadas parciales/temp.md|temp]]
