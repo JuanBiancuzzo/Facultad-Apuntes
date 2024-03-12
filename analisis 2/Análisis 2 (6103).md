@@ -32,6 +32,7 @@ tags:
 [[analisis 2/Capitulo 1/Base ortonormal.md|Base ortonormal]]
 [[analisis 2/Capitulo 1/Conjunto acotado.md|Conjunto acotado]]
 [[analisis 2/Capitulo 1/Conjunto compacto.md|Conjunto compacto]]
+
 ##### Capitulo 2 (43)
 ---
 [[analisis 2/Capitulo 2/Teorema de Schwarz.md|Teorema de Schwarz]]
@@ -77,6 +78,7 @@ tags:
 [[analisis 2/Capitulo 2/Cociente de limites.md|Cociente de limites]]
 [[analisis 2/Capitulo 2/Arco de curva.md|Arco de curva]]
 [[analisis 2/Capitulo 2/Aproximaciones por curvas.md|Aproximaciones por curvas]]
+
 ##### Capitulo 3 (11)
 ---
 [[analisis 2/Capitulo 3/Teorema Cauchy-Dini para sistema de ecuaciones escalares.md|Teorema Cauchy-Dini para sistema de ecuaciones escalares]]
@@ -90,6 +92,7 @@ tags:
 [[analisis 2/Capitulo 3/Curva plana dada de forma implicita.md|Curva plana dada de forma implicita]]
 [[analisis 2/Capitulo 3/Curva definida como interseccion de dos superficies implicitas.md|Curva definida como interseccion de dos superficies implicitas]]
 [[analisis 2/Capitulo 3/Composición de funciones.md|Composición de funciones]]
+
 ##### Capitulo 4 (6)
 ---
 [[analisis 2/Capitulo 4/Punto de ensilladura.md|Punto de ensilladura]]
@@ -98,6 +101,7 @@ tags:
 [[analisis 2/Capitulo 4/Matriz hessiana.md|Matriz hessiana]]
 [[analisis 2/Capitulo 4/Formula de Taylor de segundo orden.md|Formula de Taylor de segundo orden]]
 [[analisis 2/Capitulo 4/Extremos.md|Extremos]]
+
 ##### Capitulo 5 (9)
 ---
 [[analisis 2/Capitulo 5/Teorema para determinar extremo locales.md|Teorema para determinar extremo locales]]
@@ -109,3 +113,4 @@ tags:
 [[analisis 2/Capitulo 5/Analisis de extremos locales para funciones de una variable.md|Analisis de extremos locales para funciones de una variable]]
 [[analisis 2/Capitulo 5/Analisis de extremos locales para campos escalares.md|Analisis de extremos locales para campos escalares]]
 [[analisis 2/Capitulo 5/Analisis de extremos absolutos.md|Analisis de extremos absolutos]]
+

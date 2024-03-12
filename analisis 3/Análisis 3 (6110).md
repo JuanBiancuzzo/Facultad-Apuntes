@@ -22,6 +22,7 @@ tags:
 [[analisis 3/Semana 1/Conjunto arco-conexto.md|Conjunto arco-conexto]]
 [[analisis 3/Semana 1/Algebra de continuidad.md|Algebra de continuidad]]
 [[analisis 3/Semana 1/Algebra de limites.md|Algebra de limites]]
+
 ##### Semana 2 (8)
 ---
 [[analisis 3/Semana 2/Teorema Euler-D'Alembert-Cauchy-Reimann.md|Teorema Euler-D'Alembert-Cauchy-Reimann]]
@@ -32,6 +33,7 @@ tags:
 [[analisis 3/Semana 2/Derivabilidad.md|Derivabilidad]]
 [[analisis 3/Semana 2/Continuidad de las derivables.md|Continuidad de las derivables]]
 [[analisis 3/Semana 2/Algebra de derivables.md|Algebra de derivables]]
+
 ##### Semana 3 (33)
 ---
 [[analisis 3/Semana 3/Teoremas de completitud y de continuidad secuencial.md|Teoremas de completitud y de continuidad secuencial]]
@@ -67,6 +69,7 @@ tags:
 [[analisis 3/Semana 3/Convergencia uniforme.md|Convergencia uniforme]]
 [[analisis 3/Semana 3/Convergencia absoluta.md|Convergencia absoluta]]
 [[analisis 3/Semana 3/Armonica generalizada.md|Armonica generalizada]]
+
 ##### Semana 4 (19)
 ---
 [[analisis 3/Semana 4/Proyección estereografica.md|Proyección estereografica]]
@@ -88,6 +91,7 @@ tags:
 [[analisis 3/Semana 4/Función biyectiva.md|Función biyectiva]]
 [[analisis 3/Semana 4/Argumento.md|Argumento]]
 [[analisis 3/Semana 4/Argumento principal.md|Argumento principal]]
+
 ##### Semana 5 (12)
 ---
 [[analisis 3/Semana 5/Transformación de translación.md|Transformación de translación]]
@@ -102,6 +106,7 @@ tags:
 [[analisis 3/Semana 5/Función R-lineal.md|Función R-lineal]]
 [[analisis 3/Semana 5/Función C-lineal.md|Función C-lineal]]
 [[analisis 3/Semana 5/Circunferencia.md|Circunferencia]]
+
 ##### Semana 6 (8)
 ---
 [[analisis 3/Semana 6/Teorema de Liouville.md|Teorema de Liouville]]
@@ -112,6 +117,7 @@ tags:
 [[analisis 3/Semana 6/Fórmula integrales de Cauchy.md|Fórmula integrales de Cauchy]]
 [[analisis 3/Semana 6/Ceros de una función.md|Ceros de una función]]
 [[analisis 3/Semana 6/Analiticidad de las holomorfas.md|Analiticidad de las holomorfas]]
+
 ##### Semana 8 (15)
 ---
 [[analisis 3/Semana 8/Teorema de Riemann sobre las singularidades evistables.md|Teorema de Riemann sobre las singularidades evistables]]
@@ -129,6 +135,7 @@ tags:
 [[analisis 3/Semana 8/Criterio práctico de clasificación de singularidades.md|Criterio práctico de clasificación de singularidades]]
 [[analisis 3/Semana 8/Corona.md|Corona]]
 [[analisis 3/Semana 8/Clasificación de singularidades.md|Clasificación de singularidades]]
+
 ##### Semana 10 (11)
 ---
 [[analisis 3/Semana 10/Seccionalmente.md|Seccionalmente]]
@@ -142,6 +149,7 @@ tags:
 [[analisis 3/Semana 10/Criterio de acotación para integrales.md|Criterio de acotación para integrales]]
 [[analisis 3/Semana 10/Convergencia absoluta para integrales.md|Convergencia absoluta para integrales]]
 [[analisis 3/Semana 10/Absolutamente integrable.md|Absolutamente integrable]]
+
 ##### Semana 11 (13)
 ---
 [[analisis 3/Semana 11/Teorema de Unicidad para el problema d Dirichlet en Rn.md|Teorema de Unicidad para el problema d Dirichlet en Rn]]
@@ -157,6 +165,7 @@ tags:
 [[analisis 3/Semana 11/Ecuación de Laplace.md|Ecuación de Laplace]]
 [[analisis 3/Semana 11/Condiciones iniciales.md|Condiciones iniciales]]
 [[analisis 3/Semana 11/Ecuación de difusión de calor.md|Ecuación de difusión de calor]]
+
 ##### Semana 12 (20)
 ---
 [[analisis 3/Semana 12/Serie de Fourier.md|Serie de Fourier]]
@@ -179,6 +188,7 @@ tags:
 [[analisis 3/Semana 12/Conjunto de funciones periódicas.md|Conjunto de funciones periódicas]]
 [[analisis 3/Semana 12/Condiciones de Dirichlet para la convergencia puntual.md|Condiciones de Dirichlet para la convergencia puntual]]
 [[analisis 3/Semana 12/Coeficientes de Fourier de una función.md|Coeficientes de Fourier de una función]]
+
 ##### Semana 15 (10)
 ---
 [[analisis 3/Semana 15/Transformada de Fourier.md|Transformada de Fourier]]
@@ -191,6 +201,7 @@ tags:
 [[analisis 3/Semana 15/Convolución.md|Convolución]]
 [[analisis 3/Semana 15/Conjunto de Lebesgue de orden n.md|Conjunto de Lebesgue de orden n]]
 [[analisis 3/Semana 15/Condición de Dini.md|Condición de Dini]]
+
 ##### Semana 16 (14)
 ---
 [[analisis 3/Semana 16/Transformación de Laplace.md|Transformación de Laplace]]
@@ -207,3 +218,4 @@ tags:
 [[analisis 3/Semana 16/Función de Heaviside.md|Función de Heaviside]]
 [[analisis 3/Semana 16/Convergencia de la tranformación de Laplace.md|Convergencia de la tranformación de Laplace]]
 [[analisis 3/Semana 16/Causales.md|Causales]]
+

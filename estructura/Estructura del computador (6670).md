@@ -31,11 +31,13 @@ tags:
 [[estructura/Sistemas numéricos/Cero flag.md|Cero flag]]
 [[estructura/Sistemas numéricos/Carry flag.md|Carry flag]]
 [[estructura/Sistemas numéricos/Base numerica.md|Base numerica]]
+
 ##### Punto flotante (3)
 ---
 [[estructura/Punto flotante/Valores especificos de IEEE 754.md|Valores especificos de IEEE 754]]
 [[estructura/Punto flotante/Suma de puntos flotantes.md|Suma de puntos flotantes]]
 [[estructura/Punto flotante/Punto flotante.md|Punto flotante]]
+
 ##### Algebra de boole (9)
 ---
 [[estructura/Algebra de boole/Teoremas del algebra de Boole.md|Teoremas del algebra de Boole]]
@@ -47,6 +49,7 @@ tags:
 [[estructura/Algebra de boole/Circuito.md|Circuito]]
 [[estructura/Algebra de boole/Circuito combinacional.md|Circuito combinacional]]
 [[estructura/Algebra de boole/Algebra de Boole.md|Algebra de Boole]]
+
 ##### Diseño combinacional (8)
 ---
 [[estructura/Diseño combinacional/Redundancia.md|Redundancia]]
@@ -57,6 +60,7 @@ tags:
 [[estructura/Diseño combinacional/Implicante esencial.md|Implicante esencial]]
 [[estructura/Diseño combinacional/Complejidad de una solución.md|Complejidad de una solución]]
 [[estructura/Diseño combinacional/Algoritmo de Quine-McCluskey.md|Algoritmo de Quine-McCluskey]]
+
 ##### Flip-Flops (11)
 ---
 [[estructura/Flip-Flops/Flip-Flop T sincrónico.md|Flip-Flop T sincrónico]]
@@ -70,6 +74,7 @@ tags:
 [[estructura/Flip-Flops/Circuito sincrónico.md|Circuito sincrónico]]
 [[estructura/Flip-Flops/Circuito secuencial.md|Circuito secuencial]]
 [[estructura/Flip-Flops/Circuito asincrónico.md|Circuito asincrónico]]
+
 ##### Registros y contadores (8)
 ---
 [[estructura/Registros y contadores/Registro.md|Registro]]
@@ -80,3 +85,4 @@ tags:
 [[estructura/Registros y contadores/Contador sincrónico.md|Contador sincrónico]]
 [[estructura/Registros y contadores/Contador no entera.md|Contador no entera]]
 [[estructura/Registros y contadores/Contador asincrónico.md|Contador asincrónico]]
+

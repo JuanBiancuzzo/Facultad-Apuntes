@@ -30,6 +30,7 @@ tags:
 [[intro/Unidad 1/Divisor de tensión.md|Divisor de tensión]]
 [[intro/Unidad 1/División de corriente.md|División de corriente]]
 [[intro/Unidad 1/Corriente eléctrica.md|Corriente eléctrica]]
+
 ##### Unidad 2 (5)
 ---
 [[intro/Unidad 2/Teorema de Thevenin.md|Teorema de Thevenin]]
@@ -37,6 +38,7 @@ tags:
 [[intro/Unidad 2/Principio de superposición.md|Principio de superposición]]
 [[intro/Unidad 2/Fuente de tensión.md|Fuente de tensión]]
 [[intro/Unidad 2/Circuito lineal.md|Circuito lineal]]
+
 ##### Unidad 3 (8)
 ---
 [[intro/Unidad 3/Tiempo de crecimiento.md|Tiempo de crecimiento]]
@@ -47,11 +49,13 @@ tags:
 [[intro/Unidad 3/Capacitor.md|Capacitor]]
 [[intro/Unidad 3/Capacitor equivalente.md|Capacitor equivalente]]
 [[intro/Unidad 3/Capacitancia.md|Capacitancia]]
+
 ##### Unidad 4 (3)
 ---
 [[intro/Unidad 4/Ganancia.md|Ganancia]]
 [[intro/Unidad 4/Filtro RC.md|Filtro RC]]
 [[intro/Unidad 4/Frecuencia de corte de un filtro.md|Frecuencia de corte de un filtro]]
+
 ##### Unidad 5 (9)
 ---
 [[intro/Unidad 5/Teorema de máxima transferencia de potencia.md|Teorema de máxima transferencia de potencia]]
@@ -63,9 +67,11 @@ tags:
 [[intro/Unidad 5/Potencia nominal.md|Potencia nominal]]
 [[intro/Unidad 5/Potencia disipada.md|Potencia disipada]]
 [[intro/Unidad 5/Corriente eficaz.md|Corriente eficaz]]
+
 ##### Unidad 6 (4)
 ---
 [[intro/Unidad 6/Multímetro.md|Multímetro]]
 [[intro/Unidad 6/Multimetro True RMS - AC + DC.md|Multimetro True RMS - AC + DC]]
 [[intro/Unidad 6/Multimetro True RMS.md|Multimetro True RMS]]
 [[intro/Unidad 6/Factor de forma.md|Factor de forma]]
+

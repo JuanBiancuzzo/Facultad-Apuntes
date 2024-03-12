@@ -47,6 +47,7 @@ tags:
 [[legal/Código Civil y Comercial de la Nación/Carácter imperativo.md|Carácter imperativo]]
 [[legal/Código Civil y Comercial de la Nación/Aceptaciones del derecho.md|Aceptaciones del derecho]]
 [[legal/Código Civil y Comercial de la Nación/Acción humana.md|Acción humana]]
+
 ##### Obligaciones (53)
 ---
 [[legal/Obligaciones/Sujeto de derecho.md|Sujeto de derecho]]
@@ -102,6 +103,7 @@ tags:
 [[legal/Obligaciones/Acto jurídico de disposición.md|Acto jurídico de disposición]]
 [[legal/Obligaciones/Acto jurídico bilateral.md|Acto jurídico bilateral]]
 [[legal/Obligaciones/Acción procesal.md|Acción procesal]]
+
 ##### Contratos (40)
 ---
 [[legal/Contratos/Tratativas precontractuales.md|Tratativas precontractuales]]
@@ -144,6 +146,7 @@ tags:
 [[legal/Contratos/Clasificación de contratos.md|Clasificación de contratos]]
 [[legal/Contratos/Cesión y fin del contrato de obra.md|Cesión y fin del contrato de obra]]
 [[legal/Contratos/Causa de un contrato.md|Causa de un contrato]]
+
 ##### Licitaciones (8)
 ---
 [[legal/Licitaciones/Licitación.md|Licitación]]
@@ -154,6 +157,7 @@ tags:
 [[legal/Licitaciones/Contratación directa.md|Contratación directa]]
 [[legal/Licitaciones/Concurso privado.md|Concurso privado]]
 [[legal/Licitaciones/Concurso público.md|Concurso público]]
+
 ##### Derecho laboral (5)
 ---
 [[legal/Derecho laboral/Relación de dependencia.md|Relación de dependencia]]
@@ -161,6 +165,7 @@ tags:
 [[legal/Derecho laboral/Principio de irrenunciabilidad.md|Principio de irrenunciabilidad]]
 [[legal/Derecho laboral/Fuentes del derecho laboral.md|Fuentes del derecho laboral]]
 [[legal/Derecho laboral/Derecho laboral.md|Derecho laboral]]
+
 ##### Derechos humanos (12)
 ---
 [[legal/Derechos humanos/Usucapión.md|Usucapión]]
@@ -175,13 +180,17 @@ tags:
 [[legal/Derechos humanos/Cosa.md|Cosa]]
 [[legal/Derechos humanos/Cambio climático.md|Cambio climático]]
 [[legal/Derechos humanos/Agotamiento de los recursos internos.md|Agotamiento de los recursos internos]]
+
 ##### Derecho real (1)
 ---
 [[legal/Derecho real/Derecho real.md|Derecho real]]
+
 ##### Derechos comerciales y sociales (2)
 ---
 [[legal/Derechos comerciales y sociales/Acto constitutivo de la sociedad.md|Acto constitutivo de la sociedad]]
 [[legal/Derechos comerciales y sociales/Contrato de sociedad.md|Contrato de sociedad]]
+
 ##### Ejercicio profesional (1)
 ---
 [[legal/Ejercicio profesional/temp.md|temp]]
+

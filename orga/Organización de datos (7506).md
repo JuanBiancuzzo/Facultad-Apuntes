@@ -22,6 +22,7 @@ tags:
 [[orga/Pandas/Agrupar datos.md|Agrupar datos]]
 [[orga/Pandas/Apply - Pandas.md|Apply - Pandas]]
 [[orga/Pandas/Acceder a datos - Pandas.md|Acceder a datos - Pandas]]
+
 ##### Visualizaciones (21)
 ---
 [[orga/Visualizaciones/Violin plot.md|Violin plot]]
@@ -45,6 +46,7 @@ tags:
 [[orga/Visualizaciones/Correlación.md|Correlación]]
 [[orga/Visualizaciones/Box plot.md|Box plot]]
 [[orga/Visualizaciones/Bar plot.md|Bar plot]]
+
 ##### NLP (17)
 ---
 [[orga/NLP/Tokenización.md|Tokenización]]
@@ -64,6 +66,7 @@ tags:
 [[orga/NLP/Inverse document frequency.md|Inverse document frequency]]
 [[orga/NLP/Embedding.md|Embedding]]
 [[orga/NLP/Bag of words.md|Bag of words]]
+
 ##### Compresión (15)
 ---
 [[orga/Compresión/Navaja de Ockam.md|Navaja de Ockam]]
@@ -81,6 +84,7 @@ tags:
 [[orga/Compresión/Bit de información.md|Bit de información]]
 [[orga/Compresión/Cadena aleatorio.md|Cadena aleatorio]]
 [[orga/Compresión/Ajuste de Laplace.md|Ajuste de Laplace]]
+
 ##### Spark (37)
 ---
 [[orga/Spark/Variable broadcast - Spark.md|Variable broadcast - Spark]]
@@ -120,6 +124,7 @@ tags:
 [[orga/Spark/Apache spark.md|Apache spark]]
 [[orga/Spark/Almacenamiento distribuido.md|Almacenamiento distribuido]]
 [[orga/Spark/Acción - Spark.md|Acción - Spark]]
+
 ##### Machine learning (35)
 ---
 [[orga/Machine learning/Árbol de decisión.md|Árbol de decisión]]
@@ -157,6 +162,7 @@ tags:
 [[orga/Machine learning/Bias.md|Bias]]
 [[orga/Machine learning/Aprendizaje supervisado.md|Aprendizaje supervisado]]
 [[orga/Machine learning/Aprendizaje automático.md|Aprendizaje automático]]
+
 ##### NLP (5)
 ---
 [[orga/NLP/Softmax.md|Softmax]]
@@ -164,3 +170,4 @@ tags:
 [[orga/NLP/Red neuronal convolucional.md|Red neuronal convolucional]]
 [[orga/NLP/Long short-term memory.md|Long short-term memory]]
 [[orga/NLP/GRU.md|GRU]]
+

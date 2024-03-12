@@ -28,11 +28,9 @@
 	for (let [carpetaMateria, tFile] of materias) {
 		 esperaModificaciones.push(modificarMateria(dv, carpetaMateria, tFile));
 	}
-	
+	await Promise.all(esperaModificaciones);
 
-	let archivoActivo = app.workspace.getActiveFile();
-	new Notice("Ya se regeneró todas las materias");
-	// await app.vault.trash(archivoActivo, true);
+	await salir("Ya se regeneró todas las materias");
 
 	async function modificarMateria(dv, materia, archivoMateria) {
 		let contenido = await this.app.vault.read(archivoMateria);
@@ -52,7 +50,7 @@
 			nuevoContenido += (unidad.rows.file).map(pagina => {
 				return `[[${pagina.path}|${pagina.name}]]`;
 			}).join("\n");
-			nuevoContenido += "\n";
+			nuevoContenido += "\n\n";
 		}
 		return this.app.vault.modify(archivoMateria, nuevoContenido);
 	}
@@ -61,5 +59,11 @@
 		let relative_path = unidad.rows[0].file.folder;
 		let spliteado = relative_path.split("/");
 		return spliteado[spliteado.length - 1];
+	}
+
+	async function salir(mensaje) {
+		let archivoActivo = app.workspace.getActiveFile();
+		new Notice(mensaje);
+		//await app.vault.trash(archivoActivo, true);
 	}
 %>

@@ -27,6 +27,7 @@ tags:
 [[adc/Circuitos en regimen de corriente continua/Amplificador no inversor.md|Amplificador no inversor]]
 [[adc/Circuitos en regimen de corriente continua/Amplificador inversor.md|Amplificador inversor]]
 [[adc/Circuitos en regimen de corriente continua/Amplificador diferencial.md|Amplificador diferencial]]
+
 ##### Circuitos en regimen transitorio (7)
 ---
 [[adc/Circuitos en regimen transitorio/Inductores en serie.md|Inductores en serie]]
@@ -36,6 +37,7 @@ tags:
 [[adc/Circuitos en regimen transitorio/Circuito RL.md|Circuito RL]]
 [[adc/Circuitos en regimen transitorio/Circuito de segundo orden.md|Circuito de segundo orden]]
 [[adc/Circuitos en regimen transitorio/Circuito de primer orden.md|Circuito de primer orden]]
+
 ##### Circuitos en regimen senoidal permanente (6)
 ---
 [[adc/Circuitos en regimen senoidal permanente/Potencia instantánea.md|Potencia instantánea]]
@@ -44,6 +46,7 @@ tags:
 [[adc/Circuitos en regimen senoidal permanente/Fasor.md|Fasor]]
 [[adc/Circuitos en regimen senoidal permanente/Factor de potencia.md|Factor de potencia]]
 [[adc/Circuitos en regimen senoidal permanente/Admitancia.md|Admitancia]]
+
 ##### Circuitos acoplados magneticamente (6)
 ---
 [[adc/Circuitos acoplados magneticamente/Transformación de inductores.md|Transformación de inductores]]
@@ -52,12 +55,14 @@ tags:
 [[adc/Circuitos acoplados magneticamente/Energía almacenada.md|Energía almacenada]]
 [[adc/Circuitos acoplados magneticamente/Bornes homólogos.md|Bornes homólogos]]
 [[adc/Circuitos acoplados magneticamente/Autoinductancia.md|Autoinductancia]]
+
 ##### Respuesta en frecuencia (4)
 ---
 [[adc/Respuesta en frecuencia/Respuesta en frecuencia.md|Respuesta en frecuencia]]
 [[adc/Respuesta en frecuencia/Filtros.md|Filtros]]
 [[adc/Respuesta en frecuencia/Función de transferencia.md|Función de transferencia]]
 [[adc/Respuesta en frecuencia/Diagrama de Bode.md|Diagrama de Bode]]
+
 ##### Cuadripolos (8)
 ---
 [[adc/Cuadripolos/Parámetros híbridos de un cuadripolo.md|Parámetros híbridos de un cuadripolo]]
@@ -68,3 +73,4 @@ tags:
 [[adc/Cuadripolos/Cuadripolo en paralelo.md|Cuadripolo en paralelo]]
 [[adc/Cuadripolos/Cuadripolo en serie.md|Cuadripolo en serie]]
 [[adc/Cuadripolos/Cuadripolo en cascada.md|Cuadripolo en cascada]]
+

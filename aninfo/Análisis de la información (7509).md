@@ -47,6 +47,7 @@ tags:
 [[aninfo/Ingeniería de software/Business process modelling and notation (BPMN).md|Business process modelling and notation (BPMN)]]
 [[aninfo/Ingeniería de software/Aseguramiento de la calidad.md|Aseguramiento de la calidad]]
 [[aninfo/Diseño de software/Diseño del software.md|Diseño del software]]
+
 ##### Ingeniería de software (11)
 ---
 [[aninfo/Ingeniería de software/DT4RE.md|DT4RE]]
@@ -60,6 +61,7 @@ tags:
 [[aninfo/Ingeniería de requisitos/Involucramiento de los interesados.md|Involucramiento de los interesados]]
 [[aninfo/Ingeniería de requisitos/Ingeniería de requisitos.md|Ingeniería de requisitos]]
 [[aninfo/Ingeniería de requisitos/Desarrollo de requisitos.md|Desarrollo de requisitos]]
+
 ##### Ingeniería de requisitos (17)
 ---
 [[aninfo/Ingeniería de requisitos/Minuta de reunión.md|Minuta de reunión]]
@@ -79,6 +81,7 @@ tags:
 [[aninfo/Descubrimiento de requisitos/Brainstorming.md|Brainstorming]]
 [[aninfo/Descubrimiento de requisitos/Análisis de documentos.md|Análisis de documentos]]
 [[aninfo/Descubrimiento de requisitos/Análisis de causa raíz.md|Análisis de causa raíz]]
+
 ##### Analizar y especificar requisitos (31)
 ---
 [[aninfo/Analizar y especificar requisitos/User story mapping.md|User story mapping]]
@@ -112,6 +115,7 @@ tags:
 [[aninfo/Analizar y especificar requisitos/Asociación entre objetos.md|Asociación entre objetos]]
 [[aninfo/Analizar y especificar requisitos/Análisis de requisitos.md|Análisis de requisitos]]
 [[aninfo/Analizar y especificar requisitos/Actor.md|Actor]]
+
 ##### Verificación y validación (12)
 ---
 [[aninfo/Verificación y validación/Walkthrough.md|Walkthrough]]
@@ -126,16 +130,19 @@ tags:
 [[aninfo/Verificación y validación/Control de calidad.md|Control de calidad]]
 [[aninfo/Verificación y validación/Confirmación continua.md|Confirmación continua]]
 [[aninfo/Verificación y validación/Calidad.md|Calidad]]
+
 ##### Prototipado y experiencia del usuario (3)
 ---
 [[aninfo/Prototipado y experiencia del usuario/Prototipado.md|Prototipado]]
 [[aninfo/Prototipado y experiencia del usuario/Interfaz de usuario (UI).md|Interfaz de usuario (UI)]]
 [[aninfo/Prototipado y experiencia del usuario/Experiencia del usuario (UX).md|Experiencia del usuario (UX)]]
+
 ##### Requisitos en contexto (3)
 ---
 [[aninfo/Requisitos en contexto/Story points.md|Story points]]
 [[aninfo/Requisitos en contexto/Requisitos en el ciclo de vida.md|Requisitos en el ciclo de vida]]
 [[aninfo/Requisitos en contexto/Análisis de contexto.md|Análisis de contexto]]
+
 ##### Diseño de software (10)
 ---
 [[aninfo/Diseño de software/SOLID.md|SOLID]]
@@ -148,17 +155,20 @@ tags:
 [[aninfo/Diseño de software/Arquitectura de software.md|Arquitectura de software]]
 [[aninfo/Diseño de software/API REST.md|API REST]]
 [[aninfo/Diseño de software/4 vistas + 1.md|4 vistas + 1]]
+
 ##### Prototipado y experiencia del usuario (4)
 ---
 [[aninfo/Prototipado y experiencia del usuario/Usabilidad.md|Usabilidad]]
 [[aninfo/Prototipado y experiencia del usuario/Prueba de usuario.md|Prueba de usuario]]
 [[aninfo/Prototipado y experiencia del usuario/Proceso de diseño de interfaz de usuario (UI).md|Proceso de diseño de interfaz de usuario (UI)]]
 [[aninfo/Prototipado y experiencia del usuario/Principios de diseño de interfaces de usuario (UI).md|Principios de diseño de interfaces de usuario (UI)]]
+
 ##### Diseño de datos (3)
 ---
 [[aninfo/Diseño de datos/Dato.md|Dato]]
 [[aninfo/Diseño de datos/Base de datos.md|Base de datos]]
 [[aninfo/Diseño de datos/Base de datos relacionales.md|Base de datos relacionales]]
+
 ##### Desarrollo de software y modelos de proceso (5)
 ---
 [[aninfo/Desarrollo de software y modelos de proceso/Scaled Agile Framework (SAFe).md|Scaled Agile Framework (SAFe)]]
@@ -166,6 +176,7 @@ tags:
 [[aninfo/Desarrollo de software y modelos de proceso/Portafolio.md|Portafolio]]
 [[aninfo/Desarrollo de software y modelos de proceso/Organización.md|Organización]]
 [[aninfo/Desarrollo de software y modelos de proceso/Desarrollo de productos.md|Desarrollo de productos]]
+
 ##### Peopleware (6)
 ---
 [[aninfo/Peopleware/Sesgos cognitivos.md|Sesgos cognitivos]]
@@ -174,3 +185,4 @@ tags:
 [[aninfo/Peopleware/Sesgo conginitivo del cambio.md|Sesgo conginitivo del cambio]]
 [[aninfo/Peopleware/Sesgo conginitivo del aversión de riesgo.md|Sesgo conginitivo del aversión de riesgo]]
 [[aninfo/Peopleware/Facilidad cognitiva.md|Facilidad cognitiva]]
+

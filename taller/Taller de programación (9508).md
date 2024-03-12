@@ -32,11 +32,13 @@ tags:
 [[taller/Sintaxis/Estrucutura.md|Estrucutura]]
 [[taller/Sintaxis/Enum.md|Enum]]
 [[taller/Sintaxis/Asignación condicional.md|Asignación condicional]]
+
 ##### Organizacion (3)
 ---
 [[taller/Organizacion/Testing.md|Testing]]
 [[taller/Organizacion/Módulo.md|Módulo]]
 [[taller/Organizacion/Crate.md|Crate]]
+
 ##### Ownership (7)
 ---
 [[taller/Ownership/Taxonomia de ownership.md|Taxonomia de ownership]]
@@ -46,9 +48,11 @@ tags:
 [[taller/Ownership/Lifetime.md|Lifetime]]
 [[taller/Ownership/Copiar.md|Copiar]]
 [[taller/Ownership/Box.md|Box]]
+
 ##### Concurrencia (4)
 ---
 [[taller/Concurrencia/Thread - Rust.md|Thread - Rust]]
 [[taller/Concurrencia/Paralelo.md|Paralelo]]
 [[taller/Concurrencia/JoinHandle.md|JoinHandle]]
 [[taller/Concurrencia/Estados de un proceso.md|Estados de un proceso]]
+

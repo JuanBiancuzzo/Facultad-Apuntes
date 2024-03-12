@@ -32,6 +32,7 @@ tags:
 [[proba/Capitulo 1/Axioma de continuidad.md|Axioma de continuidad]]
 [[proba/Capitulo 1/Anagrama.md|Anagrama]]
 [[proba/Capitulo 1/Algebra de eventos.md|Algebra de eventos]]
+
 ##### Capitulo 2 (31)
 ---
 [[proba/Capitulo 2/Átomo de una distribución.md|Átomo de una distribución]]
@@ -65,6 +66,7 @@ tags:
 [[proba/Capitulo 2/Función de densidad conjunta.md|Función de densidad conjunta]]
 [[proba/Capitulo 2/Eventos equivalentes.md|Eventos equivalentes]]
 [[proba/Capitulo 2/Cuantil.md|Cuantil]]
+
 ##### Capitulo 3 (14)
 ---
 [[proba/Capitulo 3/Varianza.md|Varianza]]
@@ -81,11 +83,13 @@ tags:
 [[proba/Capitulo 3/Desigualdad de Markov.md|Desigualdad de Markov]]
 [[proba/Capitulo 3/Coeficiente de correlación.md|Coeficiente de correlación]]
 [[proba/Capitulo 3/Covarianza.md|Covarianza]]
+
 ##### Capitulo 4 (3)
 ---
 [[proba/Capitulo 4/Propiedades de funciones de distribuciones.md|Propiedades de funciones de distribuciones]]
 [[proba/Capitulo 4/Método del Jacobiano.md|Método del Jacobiano]]
 [[proba/Capitulo 4/Método del Jacobiano generalizado.md|Método del Jacobiano generalizado]]
+
 ##### Capitulo 5 (10)
 ---
 [[proba/Capitulo 5/Varianza condicional.md|Varianza condicional]]
@@ -98,19 +102,23 @@ tags:
 [[proba/Capitulo 5/Esperanza continua condicional.md|Esperanza continua condicional]]
 [[proba/Capitulo 5/Esperanza condicional.md|Esperanza condicional]]
 [[proba/Capitulo 5/Bayes para mezclas.md|Bayes para mezclas]]
+
 ##### Capitulo 6 (1)
 ---
 [[proba/Capitulo 6/Proceso de Bernoulli.md|Proceso de Bernoulli]]
+
 ##### Capitulo 7 (2)
 ---
 [[proba/Capitulo 7/Proceso puntual.md|Proceso puntual]]
 [[proba/Capitulo 7/Proceso puntual de Poisson.md|Proceso puntual de Poisson]]
+
 ##### Capitulo 8 (4)
 ---
 [[proba/Capitulo 8/Teorema central del limite.md|Teorema central del limite]]
 [[proba/Capitulo 8/Normal estandar.md|Normal estandar]]
 [[proba/Capitulo 8/Corrección por continuidad.md|Corrección por continuidad]]
 [[proba/Capitulo 8/Aproximación por la densidad normal.md|Aproximación por la densidad normal]]
+
 ##### Capitulo 9 (25)
 ---
 [[proba/Capitulo 9/Teorema de factorización.md|Teorema de factorización]]
@@ -138,6 +146,7 @@ tags:
 [[proba/Capitulo 9/Estadistico suficiente.md|Estadistico suficiente]]
 [[proba/Capitulo 9/Consistencia en media cuadrática.md|Consistencia en media cuadrática]]
 [[proba/Capitulo 9/Bondad de los estimadores.md|Bondad de los estimadores]]
+
 ##### Capitulo 10 (15)
 ---
 [[proba/Capitulo 10/Tipos de errores al tomar una decisión.md|Tipos de errores al tomar una decisión]]
@@ -155,15 +164,18 @@ tags:
 [[proba/Capitulo 10/Error de tipo 2.md|Error de tipo 2]]
 [[proba/Capitulo 10/Error de tipo 1.md|Error de tipo 1]]
 [[proba/Capitulo 10/Ensayo de hipótesis.md|Ensayo de hipótesis]]
+
 ##### Capitulo 11 (4)
 ---
 [[proba/Capitulo 11/Relación entre region de confianza y test.md|Relación entre region de confianza y test]]
 [[proba/Capitulo 11/Método del pivote.md|Método del pivote]]
 [[proba/Capitulo 11/Intervalos de confianza de nivel asintótico 1-alfa.md|Intervalos de confianza de nivel asintótico 1-alfa]]
 [[proba/Capitulo 11/Intervalo de confianza de nivel 1-alfa.md|Intervalo de confianza de nivel 1-alfa]]
+
 ##### Capitulo 12 (4)
 ---
 [[proba/Capitulo 12/Riesgo de Bayes.md|Riesgo de Bayes]]
 [[proba/Capitulo 12/Función de pérdida.md|Función de pérdida]]
 [[proba/Capitulo 12/Estimación de probabilidades.md|Estimación de probabilidades]]
 [[proba/Capitulo 12/Estimación Bayesiana.md|Estimación Bayesiana]]
+

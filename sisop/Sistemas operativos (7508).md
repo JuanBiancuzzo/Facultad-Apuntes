@@ -26,6 +26,7 @@ tags:
 [[sisop/Kernel/Instrucción privilegiada.md|Instrucción privilegiada]]
 [[sisop/Kernel/Excepción del procesador.md|Excepción del procesador]]
 [[sisop/Kernel/Ejecución directa.md|Ejecución directa]]
+
 ##### La abstracción de proceso (21)
 ---
 [[sisop/La abstracción de proceso/Wait system call.md|Wait system call]]
@@ -49,6 +50,7 @@ tags:
 [[sisop/La abstracción de proceso/Compilador.md|Compilador]]
 [[sisop/La abstracción de proceso/Brk system call.md|Brk system call]]
 [[sisop/La abstracción de proceso/Arquitectura de Von Newman.md|Arquitectura de Von Newman]]
+
 ##### Virtualización de memoria (15)
 ---
 [[sisop/Virtualización de memoria/Virtualización.md|Virtualización]]
@@ -66,6 +68,7 @@ tags:
 [[sisop/Virtualización de memoria/Dirección de memoria.md|Dirección de memoria]]
 [[sisop/Virtualización de memoria/Espacio de direcciones.md|Espacio de direcciones]]
 [[sisop/Virtualización de memoria/Dirección de memoria virtual.md|Dirección de memoria virtual]]
+
 ##### Virtualización de memoria (27)
 ---
 [[sisop/Virtualización de memoria/Stack.md|Stack]]
@@ -95,6 +98,7 @@ tags:
 [[sisop/Scheduling/Cache.md|Cache]]
 [[sisop/Scheduling/Arquitectura multiprocesador.md|Arquitectura multiprocesador]]
 [[sisop/Scheduling/Afinidad de cache.md|Afinidad de cache]]
+
 ##### Concurrencia (12)
 ---
 [[sisop/Concurrencia/Threads Control Block (TCB).md|Threads Control Block (TCB)]]
@@ -109,6 +113,7 @@ tags:
 [[sisop/Concurrencia/Estados de un thread.md|Estados de un thread]]
 [[sisop/Concurrencia/Deadlock.md|Deadlock]]
 [[sisop/Concurrencia/Concurrencia.md|Concurrencia]]
+
 ##### File system (26)
 ---
 [[sisop/File system/Virtual File System (VFS).md|Virtual File System (VFS)]]
@@ -137,3 +142,4 @@ tags:
 [[sisop/File system/Chdir system call.md|Chdir system call]]
 [[sisop/File system/Archivo.md|Archivo]]
 [[sisop/File system/Access system call.md|Access system call]]
+

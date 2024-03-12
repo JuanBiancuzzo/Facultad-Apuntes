@@ -41,6 +41,7 @@ tags:
 [[dispo/Física de semiconductores/Corriente de arrastre.md|Corriente de arrastre]]
 [[dispo/Física de semiconductores/Coeficiente de difusión.md|Coeficiente de difusión]]
 [[dispo/Física de semiconductores/Aproximación de cuasi-neutralidad.md|Aproximación de cuasi-neutralidad]]
+
 ##### Juntura PN (8)
 ---
 [[dispo/Juntura PN/Tensión de contacto.md|Tensión de contacto]]
@@ -51,6 +52,7 @@ tags:
 [[dispo/Juntura PN/Condición de borde en una juntura PN.md|Condición de borde en una juntura PN]]
 [[dispo/Juntura PN/Capacidad de juntura.md|Capacidad de juntura]]
 [[dispo/Juntura PN/Aproximación de vaciamiento.md|Aproximación de vaciamiento]]
+
 ##### Diodo de Juntura PN (12)
 ---
 [[dispo/Diodo de Juntura PN/Tiempo de tránsito.md|Tiempo de tránsito]]
@@ -65,6 +67,7 @@ tags:
 [[dispo/Diodo de Juntura PN/Conductancia dinámica.md|Conductancia dinámica]]
 [[dispo/Diodo de Juntura PN/Coeficiente de emisión o Factor de idealidad.md|Coeficiente de emisión o Factor de idealidad]]
 [[dispo/Diodo de Juntura PN/Capacidad de difusión.md|Capacidad de difusión]]
+
 ##### Transistor bipolar de juntura (18)
 ---
 [[dispo/Transistor bipolar de juntura/Transistor.md|Transistor]]
@@ -85,6 +88,7 @@ tags:
 [[dispo/Transistor bipolar de juntura/Conductancia de base.md|Conductancia de base]]
 [[dispo/Transistor bipolar de juntura/Capacidad de realimentación.md|Capacidad de realimentación]]
 [[dispo/Transistor bipolar de juntura/Capacidad de entrada.md|Capacidad de entrada]]
+
 ##### Juntura MOS (10)
 ---
 [[dispo/Juntura MOS/Vaciamiento de la estructura Metal-Óxido-Semiconductor (MOS).md|Vaciamiento de la estructura Metal-Óxido-Semiconductor (MOS)]]
@@ -97,6 +101,7 @@ tags:
 [[dispo/Juntura MOS/Capacidad de la estructura Metal-Óxido-Semiconductor (MOS).md|Capacidad de la estructura Metal-Óxido-Semiconductor (MOS)]]
 [[dispo/Juntura MOS/Body factor coefficient.md|Body factor coefficient]]
 [[dispo/Juntura MOS/Acumulación de la estructura Metal-Óxido-Semiconductor (MOS).md|Acumulación de la estructura Metal-Óxido-Semiconductor (MOS)]]
+
 ##### Transistor MOSFET (11)
 ---
 [[dispo/Transistor MOSFET/Triodo del transistor de efecto de campo metal-óxido-semiconductor (MOSFET).md|Triodo del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)]]
@@ -110,6 +115,7 @@ tags:
 [[dispo/Transistor MOSFET/Capacidad de overlap.md|Capacidad de overlap]]
 [[dispo/Transistor MOSFET/Conductancia del drain.md|Conductancia del drain]]
 [[dispo/Transistor MOSFET/Capacidad de Gate contra canal de inversión.md|Capacidad de Gate contra canal de inversión]]
+
 ##### Amplificador emisor y source común (12)
 ---
 [[dispo/Amplificador emisor y source común/Fuentes y sumideros de corriente.md|Fuentes y sumideros de corriente]]
@@ -124,6 +130,7 @@ tags:
 [[dispo/Amplificador emisor y source común/Amplificador Source Común.md|Amplificador Source Común]]
 [[dispo/Amplificador emisor y source común/Amplificador Emisor Común.md|Amplificador Emisor Común]]
 [[dispo/Amplificador emisor y source común/Amplificador de tensión.md|Amplificador de tensión]]
+
 ##### Dispositivos de potencia (9)
 ---
 [[dispo/Dispositivos de potencia/Transistor de potencia.md|Transistor de potencia]]
@@ -135,7 +142,9 @@ tags:
 [[dispo/Dispositivos de potencia/Elemento encapsulado.md|Elemento encapsulado]]
 [[dispo/Dispositivos de potencia/Electrónica de potencia.md|Electrónica de potencia]]
 [[dispo/Dispositivos de potencia/Diodo de potencia.md|Diodo de potencia]]
+
 ##### Circuitos digitales y procesos de fabricación CMOS (2)
 ---
 [[dispo/Circuitos digitales y procesos de fabricación CMOS/Inversor.md|Inversor]]
 [[dispo/Circuitos digitales y procesos de fabricación CMOS/Inversor ideal.md|Inversor ideal]]
+
