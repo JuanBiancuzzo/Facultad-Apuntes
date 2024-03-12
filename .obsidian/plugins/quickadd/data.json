@@ -167,6 +167,34 @@
       "openFileInMode": "default",
       "fileExistsMode": "Increment the file name",
       "setFileExistsBehavior": true
+    },
+    {
+      "id": "5879040f-2b98-41d6-8c55-ca689e52ab57",
+      "name": "Regenerar materias",
+      "type": "Template",
+      "command": true,
+      "templatePath": "_template/Regenerar materias - Template.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "temp"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": true
     }
   ],
   "macros": [],

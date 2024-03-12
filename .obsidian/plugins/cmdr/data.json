@@ -22,7 +22,19 @@
   "titleBar": [],
   "statusBar": [],
   "pageHeader": [],
-  "macros": [],
+  "macros": [
+    {
+      "macro": [
+        {
+          "action": 0,
+          "commandId": "quickadd:choice:5879040f-2b98-41d6-8c55-ca689e52ab57"
+        }
+      ],
+      "name": "Commitear",
+      "icon": "git-commit",
+      "startup": false
+    }
+  ],
   "explorer": [],
   "hide": {
     "statusbar": [],

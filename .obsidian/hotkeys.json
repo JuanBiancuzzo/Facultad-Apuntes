@@ -17,15 +17,6 @@
       "key": "P"
     }
   ],
-  "obsidian-git:commit-specified-message": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "C"
-    }
-  ],
   "templater-obsidian:_template/Materia - Template.md": [
     {
       "modifiers": [
@@ -134,6 +125,15 @@
         "Shift"
       ],
       "key": "N"
+    }
+  ],
+  "cmdr:macro-0": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
     }
   ]
 }
