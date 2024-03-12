@@ -9,33 +9,33 @@ tags: materia
 ---
 ##### Señales y sistemas (1)
 ---
-[[señales/Señales y sistemas/temp.md|temp]]
+* [[señales/Señales y sistemas/temp.md|temp]]
 
 ##### Sistemas LTI (1)
 ---
-[[señales/Sistemas LTI/temp.md|temp]]
+* [[señales/Sistemas LTI/temp.md|temp]]
 
 ##### Serie de Fourier (1)
 ---
-[[señales/Serie de Fourier/temp.md|temp]]
+* [[señales/Serie de Fourier/temp.md|temp]]
 
 ##### Transformada de Fourier (1)
 ---
-[[señales/Transformada de Fourier/temp.md|temp]]
+* [[señales/Transformada de Fourier/temp.md|temp]]
 
 ##### Muestreo e Interpolación (1)
 ---
-[[señales/Muestreo e Interpolación/temp.md|temp]]
+* [[señales/Muestreo e Interpolación/temp.md|temp]]
 
 ##### Transformada discreta de Fourier (1)
 ---
-[[señales/Transformada discreta de Fourier/temp.md|temp]]
+* [[señales/Transformada discreta de Fourier/temp.md|temp]]
 
 ##### Transformadas de Laplace y Z (1)
 ---
-[[señales/Transformadas de Laplace y Z/temp.md|temp]]
+* [[señales/Transformadas de Laplace y Z/temp.md|temp]]
 
 ##### Filtros digitales (1)
 ---
-[[señales/Filtros digitales/temp.md|temp]]
+* [[señales/Filtros digitales/temp.md|temp]]
 

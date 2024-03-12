@@ -48,7 +48,7 @@
 			nuevoContenido += `##### ${conseguir_nombre(unidad)} (${unidad.rows.length})\n`;
 			nuevoContenido += "---\n";	
 			nuevoContenido += (unidad.rows.file).map(pagina => {
-				return `[[${pagina.path}|${pagina.name}]]`;
+				return `* [[${pagina.path}|${pagina.name}]]`;
 			}).join("\n");
 			nuevoContenido += "\n\n";
 		}
