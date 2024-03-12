@@ -1,10 +1,9 @@
 name: Deploy Quartz site to GitHub Pages
  
 on:
-  push:
-    branches: [ "main" ] 
-  pull_request:
-    branches: [ "main" ] 
+  workflow_dispatch: # Permite activarlo manualmente
+  schedule: 
+    - cron: '0 3 * * *' # Ejecutar cada 3:00 UTC de cada dia, que es 6:00 de Argentina
  
 permissions:
   contents: read
@@ -16,11 +15,30 @@ concurrency:
   cancel-in-progress: false
  
 jobs:
-  build:
+  count-commits:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
+      - name: Get new commits
+        run: echo "NEW_COMMIT_COUNT=$(git log --oneline --since '24 hours ago' | wc -l)" >> $GITHUB_ENV
+
+    outputs: 
+      count: ${{ env.NEW_COMMIT_COUNT }}
+
+
+  build:
+    needs: count-commits
+
+    if: needs.count-commits.outputs.count > 0
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Get new commits
+        run: echo "NEW_COMMIT_COUNT=$(git log --oneline --since '24 hours ago' | wc -l)" >> $GITHUB_ENV
 
       - name: Building with docker
         uses: addnab/docker-run-action@v3
@@ -47,3 +65,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+
+
