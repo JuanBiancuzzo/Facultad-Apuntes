@@ -24,6 +24,9 @@ jobs:
       - name: Get new commits
         run: echo "NEW_COMMIT_COUNT=$(git log --oneline --since '24 hours ago' | wc -l)" >> $GITHUB_ENV
 
+      - name: Name commits
+        run: echo "Se tiene $NEW_COMMIT_COUNT commits"
+
     outputs: 
       count: ${{ env.NEW_COMMIT_COUNT }}
 
@@ -36,9 +39,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
-      - name: Get new commits
-        run: echo "NEW_COMMIT_COUNT=$(git log --oneline --since '24 hours ago' | wc -l)" >> $GITHUB_ENV
 
       - name: Building with docker
         uses: addnab/docker-run-action@v3
