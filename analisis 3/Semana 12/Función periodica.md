@@ -12,4 +12,4 @@ Esta función es [[Seccionalmente continua]] sii en el intervalo $[0, P]$ (y por
 ### Observaciones
 ---
 * Si $f : \mathbb{R} \to \mathbb{C}$ es $P$-periódica, entonces para todo entero $k$ y todo $x \in \mathbb{R}$: $f(x + kP) = f(x)$
-* Una función $P$-periódica es, tambien. $nP$-periódica para todo entero positivo $n$. 
+* Una función $P$-periódica es, también. $nP$-periódica para todo entero positivo $n$. 
