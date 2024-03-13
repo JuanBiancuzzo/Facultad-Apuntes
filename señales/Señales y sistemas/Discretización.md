@@ -5,12 +5,12 @@ capitulo: 1
 ---
 ### Definición
 ---
-Empezando con una [[Señal#^016a35|señal continua]]n
+Empezando con una [[Señal#^016a35|señal continua]] $\implies$ Después la [[Muestrear|muestreamos]] $\implies$ La [[Cuantizar|cuantizamos]] $\implies$ Finalmente tenemos la [[Señal#^02aea6|señal discreta]]
 
 ```tikz
 \usepackage{amssymb}
 \begin{document} 
-	\begin{tikzpicture}[scale=1.1, transform shape]
+	\begin{tikzpicture}
 		\draw[domain=-1.5:1.5, smooth, cyan] (0, 0) 
 			plot (\x,{2 * sin((2 * \x - 1.6) r )});
 			
@@ -21,15 +21,10 @@ Empezando con una [[Señal#^016a35|señal continua]]n
 			node[midway, below=2pt] {$t \in \mathbb{R}$};
 		\path (-1.7, -2.25) -- (-1.7, 2.25)
 			node[midway, above=2pt, rotate=90] {$x(t) \in \mathbb{R}$};
+		\path (2.5, 0) -- (2.5, 0);
 	\end{tikzpicture}	
-\end{document}
-```
-Después la [[Muestrear|muestreamos]]
 
-```tikz
-\usepackage{amssymb}
-\begin{document} 
-	\begin{tikzpicture}[scale=1.1, transform shape]
+	\begin{tikzpicture}
 		\draw[domain=-1.5:1.5, smooth, dashed] (0, 0) 
 			plot (\x,{2 * sin((2 * \x - 1.6) r )});
 		\foreach \x in {-1.5, -1, -0.5, 0, 0.5, 1, 1.5} {
@@ -46,15 +41,10 @@ Después la [[Muestrear|muestreamos]]
 			node[midway, below=2pt] {$n \in \mathbb{Z}$};
 		\path (-1.7, -2.25) -- (-1.7, 2.25)
 			node[midway, above=2pt, rotate=90] {$x[n] \in \mathbb{R}$};
+		\path (2.5, 0) -- (2.5, 0);
 	\end{tikzpicture}	
-\end{document}
-```
-La [[Cuantizar|cuantizamos]]
 
-```tikz
-\usepackage{amssymb}
-\begin{document} 
-	\begin{tikzpicture}[scale=1.1, transform shape]
+	\begin{tikzpicture}
 		\draw[domain=-1.5:1.5, smooth, dashed] (0, 0) 
 			plot (\x,{2 * sin((2 * \x - 1.6) r )});
 		\foreach \x in {-1.5, -1, -0.5, 0, 0.5, 1} {
@@ -70,15 +60,10 @@ La [[Cuantizar|cuantizamos]]
 			node[midway, below=2pt] {$t \in \mathbb{R}$};
 		\path (-1.7, -2.25) -- (-1.7, 2.25)
 			node[midway, above=2pt, rotate=90] {$x_q(t) \in \mathbb{Z}$};
+		\path (2.5, 0) -- (2.5, 0);
 	\end{tikzpicture}	
-\end{document}
-```
-Finalmente tenemos la [[Señal#^02aea6|señal discreta]]
 
-```tikz
-\usepackage{amssymb}
-\begin{document} 
-	\begin{tikzpicture}[scale=1.1, transform shape]
+	\begin{tikzpicture}
 		\draw[domain=-1.5:1.5, smooth, dashed] (0, 0) 
 			plot (\x,{2 * sin((2 * \x - 1.6) r )});
 		\foreach \x in {-1.5, -1, -0.5, 0, 0.5, 1, 1.5} {
@@ -90,7 +75,7 @@ Finalmente tenemos la [[Señal#^02aea6|señal discreta]]
 			
 		\draw (-1.7, -2.25) rectangle (1.7, 2.25);
 		\path (-1.7, 2.25) -- (1.7, 2.25)
-			node[midway, above=2pt] {Señal analógica};
+			node[midway, above=2pt] {Señal digital};
 		\path (-1.7, -2.25) -- (1.7, -2.25)
 			node[midway, below=2pt] {$n \in \mathbb{Z}$};
 		\path (-1.7, -2.25) -- (-1.7, 2.25)
@@ -98,3 +83,4 @@ Finalmente tenemos la [[Señal#^02aea6|señal discreta]]
 	\end{tikzpicture}	
 \end{document}
 ```
+

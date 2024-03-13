@@ -1,10 +1,12 @@
 <%* 
 	const dv = this.app.plugins.plugins["dataview"].api;
 	
-	/*let archivosModificados = this.app.plugins
+	let archivosModificados = this.app.plugins
 		.plugins["obsidian-git"]
 		.cachedStatus
-		.all; */
+		.all; 
+
+	console.log(archivosModificados);
 
 	let materias = dv.pages("#materia")
 		.map(materia => {
@@ -15,18 +17,20 @@
 			return [carpetaMateria, tFile];
 		});
 
-	/*let archivosActualizar = [];
+	let archivosActualizar = [];
 	for ([carpetaMateria, tFile] of materias) {
 		if (archivosModificados.some(archivo => {
 			return archivo.path.split("/")[0] == carpetaMateria;
 		})) {
 			archivosActualizar.push([carpetaMateria, tFile]);
 		}
-	}*/
+	}
 
 	let esperaModificaciones = [];
-	for (let [carpetaMateria, tFile] of materias) {
-		 esperaModificaciones.push(modificarMateria(dv, carpetaMateria, tFile));
+	for (let [carpetaMateria, tFile] of archivosActualizar) {
+		let tareaActualizar = modificarMateria(dv, carpetaMateria, tFile)
+			.then((_) => new Notice(`Se regeneró ${tFile.basename}`));
+		 esperaModificaciones.push(tareaActualizar);
 	}
 	await Promise.all(esperaModificaciones).then((_) => {
 		new Notice("Ya se regeneró todas las materias");
