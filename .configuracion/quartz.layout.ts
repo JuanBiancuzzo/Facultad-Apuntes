@@ -21,10 +21,9 @@ export const sharedPageComponents: SharedLayout = {
     left: [
         Component.PageTitle(),
         Component.DesktopOnly(Component.Search()),
-        Component.DesktopOnly(Component.Spacer()),
+        Component.DesktopOnly(Component.Explorer()),
         Component.MobileOnly(Component.Spacer()),
         Component.MobileOnly(Component.Darkmode()),
-        Component.DesktopOnly(Component.Explorer()),
     ],
 }
 
