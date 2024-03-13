@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-Sea $A$ un [[Conjunto]] en el cual se definió una operación binaria [[Ley de composicion interna|interna]] $\circ$ tal que $$\begin{matrix} 
+Sea $A$ un [[Conjunto]] en el cual se definió una operación binaria [[Ley de composición interna|interna]] $\circ$ tal que $$\begin{matrix} 
 	\circ: A \times A \to A \\ 
 	(a, b) \to c = a \circ b
 \end{matrix}$$

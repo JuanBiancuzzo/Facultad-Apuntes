@@ -7,8 +7,9 @@ capitulo: 1
 ---
 Tambien conocida como la suma
 
-### Caracteristicas de la composicion interna
-1. La suma $+$ es una *ley de composicion interna*, es decir $u+v\in\mathbb{V}$ para todo $u, v\in\mathbb{V}$
+#### Características de la composición interna
+---
+1. La suma $+$ es una *ley de composición interna*, es decir $u+v\in\mathbb{V}$ para todo $u, v\in\mathbb{V}$
 2. La suma $+$ es *[[Conmutatividad|conmutativa]]*, es decir $u+v=v+u$ para todo $u, v \in\mathbb{V}$
 3. La suma $+$ es *[[Asociatividad|asociativa]]*, es decir $(u+v)+w = u+(v+w)$ para todo $u, v, w \in\mathbb{V}$
 4. La suma $+$ tiene *[[Elemento neutro|elemento neutro]]*, es decir existe un elemento que llamaremos $0_{\mathbb{V}}\in\mathbb{V}$ talque $u+0_{\mathbb{V}} = 0_{\mathbb{V}} + u = u$ para todo $u\in\mathbb{V}$

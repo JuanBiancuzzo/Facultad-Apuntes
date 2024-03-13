@@ -10,13 +10,13 @@ tags:
 ---
 ##### Semana 1 (16)
 ---
+* [[algebra 2/Semana 1/Ley de composición externa.md|Ley de composición externa]]
+* [[algebra 2/Semana 1/Ley de composición interna.md|Ley de composición interna]]
 * [[algebra 2/Semana 1/Wronskiano.md|Wronskiano]]
 * [[algebra 2/Semana 1/Subespacio.md|Subespacio]]
 * [[algebra 2/Semana 1/Subconjunto.md|Subconjunto]]
 * [[algebra 2/Semana 1/Sistema de generadores.md|Sistema de generadores]]
 * [[algebra 2/Semana 1/Linealmente independiente.md|Linealmente independiente]]
-* [[algebra 2/Semana 1/Ley de composicion interna.md|Ley de composicion interna]]
-* [[algebra 2/Semana 1/Ley de composicion externa.md|Ley de composicion externa]]
 * [[algebra 2/Semana 1/Espacio vectorial.md|Espacio vectorial]]
 * [[algebra 2/Semana 1/Elemento neutro.md|Elemento neutro]]
 * [[algebra 2/Semana 1/Distributividad.md|Distributividad]]
@@ -70,7 +70,7 @@ tags:
 
 ##### Semana 6 (6)
 ---
-* [[algebra 2/Semana 6/Rotacion.md|Rotacion]]
+* [[algebra 2/Semana 6/Rotación.md|Rotación]]
 * [[algebra 2/Semana 6/Propiedades trigonométricas.md|Propiedades trigonométricas]]
 * [[algebra 2/Semana 6/Polinomio caracteristico del operador L.md|Polinomio caracteristico del operador L]]
 * [[algebra 2/Semana 6/Operador derivador de orden n.md|Operador derivador de orden n]]
@@ -79,11 +79,11 @@ tags:
 
 ##### Semana 7 (17)
 ---
+* [[algebra 2/Semana 7/Proyección ortogonal.md|Proyección ortogonal]]
 * [[algebra 2/Semana 7/Teorema de Pitagoras.md|Teorema de Pitagoras]]
 * [[algebra 2/Semana 7/Teorema de la dimension de la suma de subespacios.md|Teorema de la dimension de la suma de subespacios]]
 * [[algebra 2/Semana 7/Subespacio ortogonal.md|Subespacio ortogonal]]
 * [[algebra 2/Semana 7/Sistema ortogonal.md|Sistema ortogonal]]
-* [[algebra 2/Semana 7/Proyeccion ortogonal.md|Proyeccion ortogonal]]
 * [[algebra 2/Semana 7/Producto interno.md|Producto interno]]
 * [[algebra 2/Semana 7/Norma.md|Norma]]
 * [[algebra 2/Semana 7/Norma inducida.md|Norma inducida]]

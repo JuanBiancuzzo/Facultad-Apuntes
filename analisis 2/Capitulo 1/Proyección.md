@@ -27,4 +27,4 @@ Donde queremos llegar a poder encontrar $PR_{y \to x}$
 
 $$PR_{y \to x} = \frac{y \cdot x}{\lVert x \rVert ^ 2} x = \frac{y \cdot x}{\lVert x \rVert} \hat{x}$$
 
-Donde usamos las definiciones de [[Norma]] y [[Versor]]
+Donde usamos las definiciones de [[Norma|norma]] y [[Versor|versor]]

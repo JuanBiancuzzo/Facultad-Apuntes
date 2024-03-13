@@ -10,9 +10,9 @@ tags:
 ---
 ##### Capitulo 1 (22)
 ---
+* [[analisis 2/Capitulo 1/Proyección.md|Proyección]]
 * [[analisis 2/Capitulo 1/Versor.md|Versor]]
 * [[analisis 2/Capitulo 1/Suma ordenadas.md|Suma ordenadas]]
-* [[analisis 2/Capitulo 1/Proyeccion.md|Proyeccion]]
 * [[analisis 2/Capitulo 1/Producto punto.md|Producto punto]]
 * [[analisis 2/Capitulo 1/Producto por un escalar.md|Producto por un escalar]]
 * [[analisis 2/Capitulo 1/Producto cruz.md|Producto cruz]]
