@@ -3,7 +3,7 @@ name: Deploy Quartz site to GitHub Pages
 on:
   workflow_dispatch: # Permite activarlo manualmente
   schedule: 
-    - cron: '0 3 * * *' # Ejecutar cada 3:00 UTC de cada dia, que es 6:00 de Argentina
+    - cron: '0 10 * * *' # Ejecutar cada 10:00 UTC de cada dia, que es 7:00 de Argentina
  
 permissions:
   contents: read
