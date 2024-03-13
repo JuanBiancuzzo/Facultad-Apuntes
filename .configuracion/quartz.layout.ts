@@ -31,7 +31,6 @@ export const sharedPageComponents: SharedLayout = {
 export const defaultContentPageLayout: PageLayout = {
     right: [
         Component.DesktopOnly(Component.TableOfContents()),
-        Component.DesktopOnly(Component.Spacer()),
         Component.Backlinks(),
     ],
 }
