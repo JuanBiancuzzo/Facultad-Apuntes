@@ -9,12 +9,12 @@ tags: materia
 ---
 ##### Señales y sistemas (6)
 ---
-* [[señales/Señales y sistemas/Delta de dirac.md|Delta de dirac]]
-* [[señales/Señales y sistemas/Espacio de Hilbert.md|Espacio de Hilbert]]
-* [[señales/Señales y sistemas/Señal estocástica.md|Señal estocástica]]
-* [[señales/Señales y sistemas/Señal determinística.md|Señal determinística]]
-* [[señales/Señales y sistemas/Discretización.md|Discretización]]
+* [[señales/Señales y sistemas/Delta de Dirac.md|Delta de Dirac]]
 * [[señales/Señales y sistemas/Señal.md|Señal]]
+* [[señales/Señales y sistemas/Señal determinística.md|Señal determinística]]
+* [[señales/Señales y sistemas/Señal estocástica.md|Señal estocástica]]
+* [[señales/Señales y sistemas/Espacio de Hilbert.md|Espacio de Hilbert]]
+* [[señales/Señales y sistemas/Discretización.md|Discretización]]
 
 ##### Sistemas LTI (1)
 ---
