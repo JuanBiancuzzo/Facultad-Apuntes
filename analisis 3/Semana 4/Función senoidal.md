@@ -7,7 +7,7 @@ capitulo: 4
 ---
 Teniendo la [[Función seno|función de Seno]] $$ v(t) = V_m ~ sen(\omega t + \phi) $$ donde $V_m$ es la amplitud, $\omega$ es la frecuencia angular en radiantes y $\phi$ es la fase.
 
-##### [[Función periodica|Periodo]]
+##### [[Función periódica|Periodo]]
 ---
 Su periodo se define como $$ T = \frac{2 \pi}{\omega} $$
 

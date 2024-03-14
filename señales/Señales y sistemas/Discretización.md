@@ -84,4 +84,4 @@ Empezando con una [[Señal#^016a35|señal continua]] $\implies$ Después la [[Mu
 \end{document}
 ```
 
-En este ejemplo se muestrea con un [[Función periodica|período]] de $T$, y se define $f_s = \frac{1}{T}$ como [[Función senoidal#Frecuencia|frecuencia]]  de muestreo
+En este ejemplo se muestrea con un [[Función periódica|período]] de $T$, y se define $f_s = \frac{1}{T}$ como [[Función senoidal#Frecuencia|frecuencia]]  de muestreo

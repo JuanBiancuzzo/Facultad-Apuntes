@@ -33,3 +33,7 @@ $$ \text{Señales} ~~~ \begin{cases}
 #### Discretización
 ---
 ![[Discretización#Definición]]
+
+#### Medidas de señales
+---
+![[Medida de una señal#Definición]]

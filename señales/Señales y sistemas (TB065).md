@@ -7,14 +7,15 @@ tags: materia
 ---
 ### Apuntes 
 ---
-##### Señales y sistemas (6)
+##### Señales y sistemas (7)
 ---
-* [[señales/Señales y sistemas/Delta de Dirac.md|Delta de Dirac]]
+* [[señales/Señales y sistemas/Señal compleja.md|Señal compleja]]
 * [[señales/Señales y sistemas/Señal.md|Señal]]
-* [[señales/Señales y sistemas/Señal determinística.md|Señal determinística]]
 * [[señales/Señales y sistemas/Señal estocástica.md|Señal estocástica]]
-* [[señales/Señales y sistemas/Espacio de Hilbert.md|Espacio de Hilbert]]
+* [[señales/Señales y sistemas/Señal determinística.md|Señal determinística]]
 * [[señales/Señales y sistemas/Discretización.md|Discretización]]
+* [[señales/Señales y sistemas/Espacio de Hilbert.md|Espacio de Hilbert]]
+* [[señales/Señales y sistemas/Delta de Dirac.md|Delta de Dirac]]
 
 ##### Sistemas LTI (1)
 ---
