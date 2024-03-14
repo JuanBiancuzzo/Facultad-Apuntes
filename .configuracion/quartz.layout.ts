@@ -20,7 +20,7 @@ export const sharedPageComponents: SharedLayout = {
         Component.Search(),
 
         Component.DesktopOnly(Component.Explorer()),
-
+        Component.DesktopOnly(Component.Spacer()),
     ],
     beforeBody: [
         Component.ArticleTitle(),
@@ -34,6 +34,7 @@ export const defaultContentPageLayout: PageLayout = {
     right: [
         Component.DesktopOnly(Component.TableOfContents()),
         Component.Backlinks(),
+        Component.DesktopOnly(Component.Spacer()),
     ],
 }
 
