@@ -16,6 +16,6 @@
   "autoPairMarkdown": false,
   "showLineNumber": false,
   "strictLineBreaks": false,
-  "propertiesInDocument": "hidden",
+  "propertiesInDocument": "visible",
   "readableLineLength": true
 }

@@ -7,8 +7,9 @@ tags: materia
 ---
 ### Apuntes 
 ---
-##### Señales y sistemas (7)
+##### Señales y sistemas (8)
 ---
+* [[señales/Señales y sistemas/Sistema.md|Sistema]]
 * [[señales/Señales y sistemas/Señal compleja.md|Señal compleja]]
 * [[señales/Señales y sistemas/Señal.md|Señal]]
 * [[señales/Señales y sistemas/Señal estocástica.md|Señal estocástica]]

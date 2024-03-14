@@ -1,6 +1,7 @@
 ```tikz
 \usepackage{circuitikz} 
 \usepackage{pgfplots}
+\usepackage{amssymb}
 \begin{document} 
 	\begin{circuitikz}[american, voltage shift=0.5, scale=1.3, transform shape, thick]
 	\end{circuitikz}
