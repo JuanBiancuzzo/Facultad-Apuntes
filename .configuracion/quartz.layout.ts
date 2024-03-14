@@ -11,19 +11,21 @@ export const sharedPageComponents: SharedLayout = {
             GitHub: "https://github.com/JuanBiancuzzo/Facultad-Apuntes",
         },
     }),
-    beforeBody: [
-        Component.MobileOnly(Component.Search()),
+    left: [
+        Component.PageTitle(),
+
         Component.MobileOnly(Component.Spacer()),
+        Component.MobileOnly(Component.Darkmode()),
+
+        Component.Search(),
+
+        Component.DesktopOnly(Component.Explorer()),
+
+    ],
+    beforeBody: [
         Component.ArticleTitle(),
         Component.Spacer(),
         Component.Breadcrumbs(),
-    ],
-    left: [
-        Component.PageTitle(),
-        Component.DesktopOnly(Component.Search()),
-        Component.DesktopOnly(Component.Explorer()),
-        Component.MobileOnly(Component.Spacer()),
-        Component.MobileOnly(Component.Darkmode()),
     ],
 }
 
@@ -39,3 +41,5 @@ export const defaultContentPageLayout: PageLayout = {
 export const defaultListPageLayout: PageLayout = {
     right: [],
 }
+
+
