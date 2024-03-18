@@ -27,9 +27,10 @@ tags: materia
 * [[señales/Señales y sistemas/Delta de Dirac.md|Delta de Dirac]]
 * [[señales/Señales y sistemas/Bounded Input-Bounded Output (BIBO).md|Bounded Input-Bounded Output (BIBO)]]
 
-##### Sistemas LTI (1)
+##### Sistemas LTI (2)
 ---
-* [[señales/Sistemas LTI/temp.md|temp]]
+* [[señales/Sistemas LTI/Representación de una señal mediante impulsos.md|Representación de una señal mediante impulsos]]
+* [[señales/Sistemas LTI/Sistema lineal e invariante en el tiempo (LTI).md|Sistema lineal e invariante en el tiempo (LTI)]]
 
 ##### Serie de Fourier (1)
 ---
