@@ -25,3 +25,7 @@ Existen 3 [[RFC|RFC]]
 * 7230
 * 7540
 
+```dataviewjs
+const lista = "Hola tanto tiempo".split(" ");
+dv.list(lista);
+```

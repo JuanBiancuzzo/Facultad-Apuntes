@@ -162,10 +162,9 @@ tags:
 * [[aninfo/Prototipado y experiencia del usuario/Proceso de diseño de interfaz de usuario (UI).md|Proceso de diseño de interfaz de usuario (UI)]]
 * [[aninfo/Prototipado y experiencia del usuario/Principios de diseño de interfaces de usuario (UI).md|Principios de diseño de interfaces de usuario (UI)]]
 
-##### Diseño de datos (3)
+##### Diseño de datos (2)
 ---
 * [[aninfo/Diseño de datos/Dato.md|Dato]]
-* [[aninfo/Diseño de datos/Base de datos.md|Base de datos]]
 * [[aninfo/Diseño de datos/Base de datos relacionales.md|Base de datos relacionales]]
 
 ##### Desarrollo de software y modelos de proceso (5)

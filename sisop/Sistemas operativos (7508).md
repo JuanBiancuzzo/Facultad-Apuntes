@@ -13,11 +13,11 @@ tags:
 * [[sisop/Kernel/Unix.md|Unix]]
 * [[sisop/Kernel/User mode.md|User mode]]
 * [[sisop/Kernel/System call.md|System call]]
-* [[sisop/Kernel/Sistema operativo.md|Sistema operativo]]
 * [[sisop/Kernel/Micro kernel.md|Micro kernel]]
+* [[sisop/Kernel/Sistema operativo.md|Sistema operativo]]
 * [[sisop/Kernel/Modo de operación.md|Modo de operación]]
-* [[sisop/Kernel/Linux.md|Linux]]
 * [[sisop/Kernel/Kernel.md|Kernel]]
+* [[sisop/Kernel/Linux.md|Linux]]
 * [[sisop/Kernel/Kernel monolítico.md|Kernel monolítico]]
 * [[sisop/Kernel/Kernel mode.md|Kernel mode]]
 * [[sisop/Kernel/IOPL.md|IOPL]]
@@ -65,8 +65,8 @@ tags:
 * [[sisop/Virtualización de memoria/Protección de memoria.md|Protección de memoria]]
 * [[sisop/Virtualización de memoria/Memory Management Unit (MMU).md|Memory Management Unit (MMU)]]
 * [[sisop/Virtualización de memoria/Memoria.md|Memoria]]
-* [[sisop/Virtualización de memoria/Dirección de memoria.md|Dirección de memoria]]
 * [[sisop/Virtualización de memoria/Espacio de direcciones.md|Espacio de direcciones]]
+* [[sisop/Virtualización de memoria/Dirección de memoria.md|Dirección de memoria]]
 * [[sisop/Virtualización de memoria/Dirección de memoria virtual.md|Dirección de memoria virtual]]
 
 ##### Virtualización de memoria (27)
@@ -116,15 +116,15 @@ tags:
 
 ##### File system (26)
 ---
-* [[sisop/File system/Virtual File System (VFS).md|Virtual File System (VFS)]]
 * [[sisop/File system/Write system call.md|Write system call]]
+* [[sisop/File system/Virtual File System (VFS).md|Virtual File System (VFS)]]
 * [[sisop/File system/Very Simple File System (VSFV).md|Very Simple File System (VSFV)]]
 * [[sisop/File system/Unlink system call.md|Unlink system call]]
 * [[sisop/File system/Unix file systems system calls.md|Unix file systems system calls]]
-* [[sisop/File system/Stat system call.md|Stat system call]]
 * [[sisop/File system/Umask system call.md|Umask system call]]
-* [[sisop/File system/Read system call.md|Read system call]]
+* [[sisop/File system/Stat system call.md|Stat system call]]
 * [[sisop/File system/Rmdir system call.md|Rmdir system call]]
+* [[sisop/File system/Read system call.md|Read system call]]
 * [[sisop/File system/Opendir system call.md|Opendir system call]]
 * [[sisop/File system/Open system call.md|Open system call]]
 * [[sisop/File system/Mkdir system call.md|Mkdir system call]]

@@ -7,6 +7,10 @@ tags: materia
 ---
 ### Apuntes 
 ---
+##### General (1)
+---
+* [[bdd/General/Base de datos.md|Base de datos]]
+
 ##### SQL (1)
 ---
 * [[bdd/SQL/temp.md|temp]]

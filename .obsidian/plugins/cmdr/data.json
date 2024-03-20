@@ -45,7 +45,8 @@
     "leftRibbon": [
       "Insert template",
       "Open quick switcher",
-      "Clear Unused Images"
+      "Clear Unused Images",
+      "Open Mermaid Toolbar"
     ]
   },
   "spacing": "8",
