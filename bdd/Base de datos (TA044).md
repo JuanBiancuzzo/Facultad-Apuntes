@@ -7,3 +7,7 @@ tags: materia
 ---
 ### Apuntes 
 ---
+##### SQL (1)
+---
+* [[bdd/SQL/temp.md|temp]]
+

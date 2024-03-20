@@ -5,4 +5,4 @@ capitulo: 6
 ---
 ### Definición
 ---
-Conjunto de computadoras que trabajan juntas y pueden ser vistas como un sistema único.
+Conjunto de [[Computadora|computadoras]] que trabajan juntas y pueden ser vistas como un [[Sistema|sistema]] único.

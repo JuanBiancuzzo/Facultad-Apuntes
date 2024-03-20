@@ -9,6 +9,7 @@ tags: materia
 ---
 ##### Señales y sistemas (17)
 ---
+* [[señales/Señales y sistemas/Delta de dirac.md|Delta de dirac]]
 * [[señales/Señales y sistemas/Sistema invertible.md|Sistema invertible]]
 * [[señales/Señales y sistemas/Transformación.md|Transformación]]
 * [[señales/Señales y sistemas/Sistema.md|Sistema]]
@@ -24,7 +25,6 @@ tags: materia
 * [[señales/Señales y sistemas/Medida de una señal.md|Medida de una señal]]
 * [[señales/Señales y sistemas/Espacio de Hilbert.md|Espacio de Hilbert]]
 * [[señales/Señales y sistemas/Discretización.md|Discretización]]
-* [[señales/Señales y sistemas/Delta de Dirac.md|Delta de Dirac]]
 * [[señales/Señales y sistemas/Bounded Input-Bounded Output (BIBO).md|Bounded Input-Bounded Output (BIBO)]]
 
 ##### Sistemas LTI (2)

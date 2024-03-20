@@ -7,13 +7,27 @@ tags: materia
 ---
 ### Apuntes 
 ---
-##### Capa de aplicación (1)
+##### Redes de computadoras (6)
 ---
-* [[redes/Capa de aplicación/temp.md|temp]]
+* [[redes/Redes de computadoras/ISP.md|ISP]]
+* [[redes/Redes de computadoras/IXP.md|IXP]]
+* [[redes/Redes de computadoras/Protocolo.md|Protocolo]]
+* [[redes/Redes de computadoras/Red.md|Red]]
+* [[redes/Redes de computadoras/Modelo TCP IP.md|Modelo TCP IP]]
+* [[redes/Redes de computadoras/Internet.md|Internet]]
 
-##### Capa de Transporte (1)
+##### Capa de aplicación (5)
 ---
-* [[redes/Capa de Transporte/temp.md|temp]]
+* [[redes/Capa de aplicación/Domain Name System (DNS).md|Domain Name System (DNS)]]
+* [[redes/Capa de aplicación/Datacenter.md|Datacenter]]
+* [[redes/Capa de aplicación/Redes de distribución de contenido (CDN).md|Redes de distribución de contenido (CDN)]]
+* [[redes/Capa de aplicación/Hypertext Transfer Protocol (HTTP).md|Hypertext Transfer Protocol (HTTP)]]
+* [[redes/Capa de aplicación/Capa de aplicación.md|Capa de aplicación]]
+
+##### Capa de Transporte (2)
+---
+* [[redes/Capa de Transporte/UDP.md|UDP]]
+* [[redes/Capa de Transporte/TCP.md|TCP]]
 
 ##### Capa de Red (1)
 ---
