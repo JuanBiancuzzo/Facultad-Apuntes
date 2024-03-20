@@ -7,8 +7,9 @@ tags: materia
 ---
 ### Apuntes 
 ---
-##### Señales y sistemas (19)
+##### Señales y sistemas (20)
 ---
+* [[señales/Señales y sistemas/Sistema LTI estable.md|Sistema LTI estable]]
 * [[señales/Señales y sistemas/Sistema LTI causal.md|Sistema LTI causal]]
 * [[señales/Señales y sistemas/Sistema LTI invertible.md|Sistema LTI invertible]]
 * [[señales/Señales y sistemas/Delta de dirac.md|Delta de dirac]]
@@ -29,8 +30,9 @@ tags: materia
 * [[señales/Señales y sistemas/Discretización.md|Discretización]]
 * [[señales/Señales y sistemas/Bounded Input-Bounded Output (BIBO).md|Bounded Input-Bounded Output (BIBO)]]
 
-##### Sistemas LTI (3)
+##### Sistemas LTI (4)
 ---
+* [[señales/Sistemas LTI/Sistemas descriptos por ecuaciones diferenciales ordinarias.md|Sistemas descriptos por ecuaciones diferenciales ordinarias]]
 * [[señales/Sistemas LTI/Memoria de un sistema LTI.md|Memoria de un sistema LTI]]
 * [[señales/Sistemas LTI/Representación de una señal mediante impulsos.md|Representación de una señal mediante impulsos]]
 * [[señales/Sistemas LTI/Sistema lineal e invariante en el tiempo (LTI).md|Sistema lineal e invariante en el tiempo (LTI)]]
