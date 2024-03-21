@@ -7,28 +7,7 @@ capitulo: 1
 ---
 Una base de datos es una colección ordenada de [[Dato|datos]] administrada por un [[Sistema|sistema]] de gestión
 
-```dataviewjs
-let materia = "bdd";
 
-let unidades = dv.pages(`( "${materia}" and -#materia )`)
-	.where(pagina => pagina.capitulo)
-	.groupBy(pagina => parseInt(pagina.capitulo, 10))
-	.sort(capitulo => parseInt(capitulo.rows[0].capitulo, 10));
-	
-for (let unidad of unidades) {	
-	
-	dv.table([conseguir_nombre(unidad)], (unidad.rows.file).map(pagina => {
-		return [`[[${pagina.path}|${pagina.name}]]`];
-	}));
-	dv.el("br", "");
-}
-
-function conseguir_nombre(unidad) {
-	let relative_path = unidad.rows[0].file.folder;
-	let spliteado = relative_path.split("/");
-	return spliteado[spliteado.length - 1];
-}
-```
 
 ![[Base de datos.png]]
 
