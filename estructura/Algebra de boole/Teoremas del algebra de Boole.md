@@ -5,7 +5,7 @@ capitulo: 3
 ---
 ### Definición
 ---
-Dado los [[Postulados de Huntington|axiomas]] del [[Algebra de Boole]], se pueden deducir y demostrar los siguientes teoremas fundamentales:
+Dado los [[Postulados de Huntington|axiomas]] del [[Álgebra de Boole]], se pueden deducir y demostrar los siguientes teoremas fundamentales:
 
 1) Ley de idempotencia: $$ \forall a \in B: ~ a \oplus a = a $$$$ \forall a \in B: ~ a \odot a = a $$
 2) Ley de dominación: $$ \forall a \in B: ~ a \oplus U = U $$ donde $U$ es el [[Conjunto]] de todos los elementos. $$ \forall a \in B: ~a \odot \emptyset = \emptyset $$

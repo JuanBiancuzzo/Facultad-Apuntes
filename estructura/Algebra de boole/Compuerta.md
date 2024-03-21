@@ -5,15 +5,9 @@ capitulo: 3
 ---
 ### Definición
 ---
-Es un símbolo que representa una operación lógica:
-* AND
-* OR
-* [[Inversor|NOT]]
-* NAND
-* NOR
-* XOR
+Es un símbolo que representa una [[Operación lógica|operación lógica]] ![[Operación lógica#Definición]]
 
-Hay una relación directa entre las operaciones del [[Algebra de Boole]] y estas compuertas:
+Hay una relación directa entre las operaciones del [[Álgebra de Boole|álgebra de Boole]] y estas compuertas:
 * AND es un $a \cdot b$
 * OR es un $a + b$
 * NOT es un $a'$

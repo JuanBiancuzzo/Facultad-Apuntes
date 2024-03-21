@@ -5,7 +5,7 @@ capitulo: 3
 ---
 ### Definición
 ---
-Diremos que este [[Conjunto]] y las operaciones así definidas: $\left(B, ', \oplus, \odot \right)$ son un [[Algebra de Boole]], si cumple los siguiente axiomas:
+Diremos que este [[Conjunto]] y las operaciones así definidas: $\left(B, ', \oplus, \odot \right)$ son un [[Álgebra de Boole]], si cumple los siguiente axiomas:
 
 1) Ley [[Asociatividad|asociativa]] con respecto a la suma: $$ \forall a, b, c \in B: ~ (a \oplus b) \oplus c = a \oplus (b \oplus c) $$
 2) Ley [[Asociatividad|asociativa]] con respecto al producto: $$ \forall a, b, c \in B: ~ (a \odot b) \odot c = a \odot (b \odot c) $$

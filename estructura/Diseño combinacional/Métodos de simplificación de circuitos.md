@@ -11,7 +11,7 @@ Hay 3 métodos:
 * Tabulación
 
 ##### Algebraico
-Se trabaja directamente sobre la expresión algebraica. Se basa en eliminar términos y literales aplicando los [[Postulados de Huntington|postulados]] y los teoremas del [[Algebra de Boole]].
+Se trabaja directamente sobre la expresión algebraica. Se basa en eliminar términos y literales aplicando los [[Postulados de Huntington|postulados]] y los teoremas del [[Álgebra de Boole]].
 
 
 ##### Gráfico

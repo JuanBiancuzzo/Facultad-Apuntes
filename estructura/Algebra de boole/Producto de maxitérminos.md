@@ -8,6 +8,7 @@ capitulo: 3
 Dada una [[Función lógica]], lo que expresa este método es que se puede expresar como producto de sumas, con el objetivo de replicar esta función si necesidad de conocer cual es pero conociendo su output.
 
 Veamos un ejemplo, sea la siguiente función: 
+
 | $x$ | $y$ | $f(x, y)$ |
 | --- | --- | ------ |
 | 0   | 0   | 0      |

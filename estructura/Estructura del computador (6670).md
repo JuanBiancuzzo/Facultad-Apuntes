@@ -10,12 +10,12 @@ tags:
 ---
 ##### Sistemas numéricos (21)
 ---
-* [[estructura/Sistemas numéricos/Símbolo.md|Símbolo]]
 * [[estructura/Sistemas numéricos/Suma de enteros.md|Suma de enteros]]
 * [[estructura/Sistemas numéricos/Sistemas de numeración.md|Sistemas de numeración]]
+* [[estructura/Sistemas numéricos/Símbolo.md|Símbolo]]
 * [[estructura/Sistemas numéricos/Sistema posicional.md|Sistema posicional]]
-* [[estructura/Sistemas numéricos/Signo flag.md|Signo flag]]
 * [[estructura/Sistemas numéricos/Sistema aditivos.md|Sistema aditivos]]
+* [[estructura/Sistemas numéricos/Signo flag.md|Signo flag]]
 * [[estructura/Sistemas numéricos/Resta de enteros.md|Resta de enteros]]
 * [[estructura/Sistemas numéricos/Representación de enteros.md|Representación de enteros]]
 * [[estructura/Sistemas numéricos/Representación de enteros magnitud y signo.md|Representación de enteros magnitud y signo]]
@@ -27,18 +27,18 @@ tags:
 * [[estructura/Sistemas numéricos/Overflow.md|Overflow]]
 * [[estructura/Sistemas numéricos/Flags.md|Flags]]
 * [[estructura/Sistemas numéricos/Conversión entre diferentes bases.md|Conversión entre diferentes bases]]
-* [[estructura/Sistemas numéricos/Complemento a la base.md|Complemento a la base]]
 * [[estructura/Sistemas numéricos/Cero flag.md|Cero flag]]
+* [[estructura/Sistemas numéricos/Complemento a la base.md|Complemento a la base]]
 * [[estructura/Sistemas numéricos/Carry flag.md|Carry flag]]
 * [[estructura/Sistemas numéricos/Base numerica.md|Base numerica]]
 
 ##### Punto flotante (3)
 ---
-* [[estructura/Punto flotante/Valores especificos de IEEE 754.md|Valores especificos de IEEE 754]]
 * [[estructura/Punto flotante/Suma de puntos flotantes.md|Suma de puntos flotantes]]
+* [[estructura/Punto flotante/Valores especificos de IEEE 754.md|Valores especificos de IEEE 754]]
 * [[estructura/Punto flotante/Punto flotante.md|Punto flotante]]
 
-##### Algebra de boole (9)
+##### Algebra de boole (8)
 ---
 * [[estructura/Algebra de boole/Teoremas del algebra de Boole.md|Teoremas del algebra de Boole]]
 * [[estructura/Algebra de boole/Suma de minitérminos.md|Suma de minitérminos]]
@@ -48,7 +48,6 @@ tags:
 * [[estructura/Algebra de boole/Compuerta.md|Compuerta]]
 * [[estructura/Algebra de boole/Circuito.md|Circuito]]
 * [[estructura/Algebra de boole/Circuito combinacional.md|Circuito combinacional]]
-* [[estructura/Algebra de boole/Algebra de Boole.md|Algebra de Boole]]
 
 ##### Diseño combinacional (8)
 ---

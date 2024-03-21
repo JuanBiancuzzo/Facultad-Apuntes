@@ -5,4 +5,4 @@ capitulo: 3
 ---
 ### Definición
 ---
-Es una [[Función]] cuyo [[Conjunto]] de llegada (el dominio) y el conjunto de salida (el codominio), son elementos definidos por el [[Algebra de Boole]].
+Es una [[Función]] cuyo [[Conjunto]] de llegada (el dominio) y el conjunto de salida (el codominio), son elementos definidos por el [[Álgebra de Boole]].
