@@ -19,7 +19,7 @@ Se puede clasificar un sistema con
 ---
 ![[Memoria de un sistema#Definición]]
 
-##### Invertibilidad
+##### Invertible
 ---
 ![[Sistema invertible#Definición]]
 

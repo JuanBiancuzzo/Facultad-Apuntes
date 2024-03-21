@@ -11,8 +11,11 @@ tags: materia
 ---
 * [[bdd/General/Base de datos.md|Base de datos]]
 
-##### SQL (12)
+##### SQL (15)
 ---
+* [[bdd/SQL/Sentencia DROP TABLE.md|Sentencia DROP TABLE]]
+* [[bdd/SQL/Sentencia DELETE.md|Sentencia DELETE]]
+* [[bdd/SQL/Sentencia UPDATE.md|Sentencia UPDATE]]
 * [[bdd/SQL/NULL.md|NULL]]
 * [[bdd/SQL/Registro SQL.md|Registro SQL]]
 * [[bdd/SQL/Sentencia INSERT INTO.md|Sentencia INSERT INTO]]

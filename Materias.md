@@ -34,6 +34,6 @@ for (let cuatri of materiasXcuatri) {
 			materia.plan
 		]
 	}));
-	dv.el("br", "")
+	dv.el("br", "");
 }
 ```

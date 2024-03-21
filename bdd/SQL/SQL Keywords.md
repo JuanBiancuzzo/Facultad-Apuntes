@@ -26,8 +26,8 @@ Las keywords de [[Structured Query Language (SQL)|SQL]] se puede separar en
 ---
 * [[Sentencia SELECT|SELECT]] extrae información de una [[Base de datos|base de datos]]
 * [[Sentencia SELECT DISTINC|SELECT DISTINC]] extrae información diferente de una base de datos (sin repetir)
-* `UPDATE` modifica información de una base de datos
-* `DELETE` elimina información de una base de datos
+* [[Sentencia UPDATE|UPDATE]] modifica información de una base de datos
+* [[Sentencia DELETE|DELETE]] elimina información de una base de datos
 * [[Sentencia INSERT INTO|INSERT INTO]] agrega nueva información a la base de datos
 * `CREATE DATABASE` crea una nueva base de datos
 * `ALTER DATABASE` modifica una base de datos

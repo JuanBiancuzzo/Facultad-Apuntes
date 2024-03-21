@@ -1,7 +1,7 @@
 ---
 dia: 2024-03-20
 materia: señales
-capitulo: 1
+capitulo: 2
 ---
 ### Definición
 ---
