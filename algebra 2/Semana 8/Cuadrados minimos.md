@@ -28,7 +28,7 @@ Sean $A \in \mathbb{R}^{m \times n}$ y $b \in \mathbb{R}^m$. Entonces son equiva
  * $\hat{x} \in \mathbb{R}^n$ es una solucion de cuadrados minimos de la ecuacion $Ax = b$, donde $b$ no pertenece a la conjunto columna de $A$ (ver [[Subespacios fundamentales de una matriz]])
  * $\lVert A\hat{x} - b \rVert = min\{\lVert Ax - b \rVert : x \in \mathbb{R}^n\}$ o, equivalentemente, $\lVert A\hat{x} - b \rVert \le \lVert Ax - b \rVert$ para todo $x \in \mathbb{R}^n$
  * $\hat{x} \in \mathbb{R}^n$ es una solucion de la ecuacion $Ax=P_{col(A)}(b)$ es decir $A\hat{x} = P_{col(A)}(b)$
- * $\hat{x} \in \mathbb{R}^n$ es una solucion de la [[Ecuacion normal]], es decir $A^TA\hat{x} = A^T b$
+ * $\hat{x} \in \mathbb{R}^n$ es una solucion de la [[Ecuación normal]], es decir $A^TA\hat{x} = A^T b$
 
 En este caso, si $\hat{x}_p$ es una solucion de cuadrados minimos, entonces la vamos a escribir $\hat{x}$ como
 

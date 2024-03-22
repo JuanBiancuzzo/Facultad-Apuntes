@@ -5,7 +5,7 @@ capitulo: 3
 ---
 ### Definición
 ---
-El vector de coordenadas de una [[Base]], es los "pesos" o $a_1, a_2, \cdots, a_n$  de la [[Combinacion lineal]], para conseguir ese vector
+El vector de coordenadas de una [[Base]], es los "pesos" o $a_1, a_2, \cdots, a_n$  de la [[Combinación lineal]], para conseguir ese vector
 
 $$\text{ Dado } x \in \mathbb{V}, \text{ existe } a_1,a_2,\cdots,a_n\in\mathbb{K}, \text{ tales que } x=a_1 \cdot v_1 + \cdots + a_n \cdot v_n$$
 $$[x]^B = \begin{bmatrix} a_1 \\ \vdots \\ a_n \end{bmatrix}$$

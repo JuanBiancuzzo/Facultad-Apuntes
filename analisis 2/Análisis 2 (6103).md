@@ -10,10 +10,10 @@ tags:
 ---
 ##### Capitulo 1 (22)
 ---
-* [[analisis 2/Capitulo 1/Proyección.md|Proyección]]
 * [[analisis 2/Capitulo 1/Versor.md|Versor]]
 * [[analisis 2/Capitulo 1/Suma ordenadas.md|Suma ordenadas]]
 * [[analisis 2/Capitulo 1/Producto punto.md|Producto punto]]
+* [[analisis 2/Capitulo 1/Proyección.md|Proyección]]
 * [[analisis 2/Capitulo 1/Producto por un escalar.md|Producto por un escalar]]
 * [[analisis 2/Capitulo 1/Producto cruz.md|Producto cruz]]
 * [[analisis 2/Capitulo 1/Potencias de vectores.md|Potencias de vectores]]
@@ -29,18 +29,18 @@ tags:
 * [[analisis 2/Capitulo 1/Conjunto ortogonal.md|Conjunto ortogonal]]
 * [[analisis 2/Capitulo 1/Conjunto convexo.md|Conjunto convexo]]
 * [[analisis 2/Capitulo 1/Conjunto conexo por poligonal.md|Conjunto conexo por poligonal]]
-* [[analisis 2/Capitulo 1/Base ortonormal.md|Base ortonormal]]
-* [[analisis 2/Capitulo 1/Conjunto acotado.md|Conjunto acotado]]
 * [[analisis 2/Capitulo 1/Conjunto compacto.md|Conjunto compacto]]
+* [[analisis 2/Capitulo 1/Conjunto acotado.md|Conjunto acotado]]
+* [[analisis 2/Capitulo 1/Base ortonormal.md|Base ortonormal]]
 
 ##### Capitulo 2 (43)
 ---
 * [[analisis 2/Capitulo 2/Teorema de Schwarz.md|Teorema de Schwarz]]
 * [[analisis 2/Capitulo 2/Superficie.md|Superficie]]
 * [[analisis 2/Capitulo 2/Suma entre funciones.md|Suma entre funciones]]
-* [[analisis 2/Capitulo 2/Suma de limites.md|Suma de limites]]
 * [[analisis 2/Capitulo 2/Recta tangente a una curva.md|Recta tangente a una curva]]
 * [[analisis 2/Capitulo 2/Recta normal a una superficie.md|Recta normal a una superficie]]
+* [[analisis 2/Capitulo 2/Suma de limites.md|Suma de limites]]
 * [[analisis 2/Capitulo 2/Recta normal a una curva.md|Recta normal a una curva]]
 * [[analisis 2/Capitulo 2/Punto simple de una superficie.md|Punto simple de una superficie]]
 * [[analisis 2/Capitulo 2/Punto simple de la curva.md|Punto simple de la curva]]
@@ -82,24 +82,24 @@ tags:
 ##### Capitulo 3 (11)
 ---
 * [[analisis 2/Capitulo 3/Teorema Cauchy-Dini para sistema de ecuaciones escalares.md|Teorema Cauchy-Dini para sistema de ecuaciones escalares]]
+* [[analisis 2/Capitulo 3/Regla de la cadena.md|Regla de la cadena]]
 * [[analisis 2/Capitulo 3/Teorema Cauchy-Dini para ecuaciones escalares.md|Teorema Cauchy-Dini para ecuaciones escalares]]
 * [[analisis 2/Capitulo 3/Superficie dada en forma implicita.md|Superficie dada en forma implicita]]
-* [[analisis 2/Capitulo 3/Regla de la cadena.md|Regla de la cadena]]
 * [[analisis 2/Capitulo 3/Regla de Cramer.md|Regla de Cramer]]
 * [[analisis 2/Capitulo 3/Multiples funciones implicitas.md|Multiples funciones implicitas]]
 * [[analisis 2/Capitulo 3/Funciones implicitas.md|Funciones implicitas]]
 * [[analisis 2/Capitulo 3/Funciones implicitas generalizada.md|Funciones implicitas generalizada]]
-* [[analisis 2/Capitulo 3/Curva plana dada de forma implicita.md|Curva plana dada de forma implicita]]
 * [[analisis 2/Capitulo 3/Curva definida como interseccion de dos superficies implicitas.md|Curva definida como interseccion de dos superficies implicitas]]
+* [[analisis 2/Capitulo 3/Curva plana dada de forma implicita.md|Curva plana dada de forma implicita]]
 * [[analisis 2/Capitulo 3/Composición de funciones.md|Composición de funciones]]
 
 ##### Capitulo 4 (6)
 ---
-* [[analisis 2/Capitulo 4/Punto de ensilladura.md|Punto de ensilladura]]
 * [[analisis 2/Capitulo 4/Punto critico.md|Punto critico]]
-* [[analisis 2/Capitulo 4/Polinomio de Taylor.md|Polinomio de Taylor]]
-* [[analisis 2/Capitulo 4/Matriz hessiana.md|Matriz hessiana]]
+* [[analisis 2/Capitulo 4/Punto de ensilladura.md|Punto de ensilladura]]
 * [[analisis 2/Capitulo 4/Formula de Taylor de segundo orden.md|Formula de Taylor de segundo orden]]
+* [[analisis 2/Capitulo 4/Matriz hessiana.md|Matriz hessiana]]
+* [[analisis 2/Capitulo 4/Polinomio de Taylor.md|Polinomio de Taylor]]
 * [[analisis 2/Capitulo 4/Extremos.md|Extremos]]
 
 ##### Capitulo 5 (9)

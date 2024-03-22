@@ -17,4 +17,4 @@ $$ x \cdot y = x_1 y_1 + x_2 y_2 + \cdots + x_n y_n$$
 
 ### Operacciones
 
-![[Potencias de vectores]] ![[Norma#Definición]] ![[Distancia entre vectores]] ![[Angulo entre vectores]]
+![[Potencias de vectores]] ![[Norma#Definición]] ![[Distancia entre vectores]] ![[Ángulo entre vectores]]

@@ -7,8 +7,9 @@ tags: materia
 ---
 ### Apuntes 
 ---
-##### Redes de computadoras (6)
+##### Redes de computadoras (7)
 ---
+* [[redes/Redes de computadoras/Host.md|Host]]
 * [[redes/Redes de computadoras/ISP.md|ISP]]
 * [[redes/Redes de computadoras/IXP.md|IXP]]
 * [[redes/Redes de computadoras/Protocolo.md|Protocolo]]

@@ -11,9 +11,9 @@ tags: materia
 ---
 * [[discreta/Álgebra de conjuntos/temp.md|temp]]
 
-##### Álgebra de boole (3)
+##### Álgebra de Boole (3)
 ---
-* [[discreta/Álgebra de boole/Operador lógico NOT.md|Operador lógico NOT]]
-* [[discreta/Álgebra de boole/Operación lógica.md|Operación lógica]]
-* [[discreta/Álgebra de boole/Álgebra de Boole.md|Álgebra de Boole]]
+* [[discreta/Álgebra de Boole/Operador lógico NOT.md|Operador lógico NOT]]
+* [[discreta/Álgebra de Boole/Operación lógica.md|Operación lógica]]
+* [[discreta/Álgebra de Boole/Álgebra de Boole.md|Álgebra de Boole]]
 
