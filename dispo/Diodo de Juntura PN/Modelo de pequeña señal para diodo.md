@@ -5,14 +5,14 @@ capitulo: 3
 ---
 ### Definición
 ---
-La intención del [[Modelo]] es poder aplicar [[Principio de superposición|superposición]] de una fuente de [[Tensión]] aplicada sobre el [[Diodo de Juntura PN|diodo]] ($v_D$), donde tenemos una parte continua ($V_D$) y una pequeña señal dependiente del tiempo ($v_d(t)$) $$ v_D(t) = V_D + v_d(t) $$
-Con la [[Corriente a través de la juntura PN|corriente del diodo]] es $$ i_D(t) = f(v_D(t) = V_D + v_d(t)) $$ $$ i_D(v_D(t)) = I_0 \left( \exp\left( \frac{q~v_D(t)}{kT} \right) - 1 \right) = I_0 \left( \exp\left( \frac{q~(V_D + v_d(t))}{kT} \right) - 1 \right) $$
+La intención del [[Modelo|modelo]] es poder aplicar [[Principio de superposición|superposición]] de una fuente de [[Tensión|tensión]] aplicada sobre el [[Diodo de Juntura PN|diodo]] ($v_D$), donde tenemos una parte continua ($V_D$) y una pequeña señal dependiente del tiempo ($v_d(t)$) $$ v_D(t) = V_D + v_d(t) $$
+Con la [[Corriente del Diodo|corriente del diodo]] es $$ i_D(t) = f(v_D(t) = V_D + v_d(t)) $$ $$ i_D(v_D(t)) = I_0 \left( \exp\left( \frac{q~v_D(t)}{kT} \right) - 1 \right) = I_0 \left( \exp\left( \frac{q~(V_D + v_d(t))}{kT} \right) - 1 \right) $$
 Donde podemos decir que $$ i_{D1} = I_0 \left( \exp\left( \frac{q~V_D}{kT} \right) - 1 \right) ~~~~~ i_{D2} = I_0 \left( \exp\left( \frac{q~v_d(t)}{kT} \right) - 1 \right) $$
 Como el [[Diodo]] es [[Función C-lineal|no lineal]], vemos que $i_D(t) \ne i_{D1} + i_{D2}$, por lo que este [[Modelo|modelo]] intenta linealizar la respuesta [[Entorno|entorno]] a un punto de reposo ($v_D = V_D$)
 
 #### Modelo
 ---
-Queremos [[Función R-lineal|linealizar]] la [[Corriente a través de la juntura PN|corriente]] del [[Diodo]], para eso sabemos que podemos aplicar un [[Serie de Taylor#Polinomio de Taylor|polinomio de Taylor de orden 1]] para aproximar nuestra [[Corriente a través de la juntura PN|corriente]] dándonos $$ i_D(t) \approx i_D(t) \biggm|_{v_D = V_D} + \frac{\partial i_D(t)}{\partial v_D(t)} \Biggm|_{v_D=V_D} \cdot \underbrace{v_D(t) - V_D}_{=~ v_d(t)} $$
+Queremos [[Función R-lineal|linealizar]] la [[Corriente del Diodo|corriente]] del [[Diodo]], para eso sabemos que podemos aplicar un [[Serie de Taylor#Polinomio de Taylor|polinomio de Taylor de orden 1]] para aproximar nuestra [[Corriente del Diodo|corriente]] dándonos $$ i_D(t) \approx i_D(t) \biggm|_{v_D = V_D} + \frac{\partial i_D(t)}{\partial v_D(t)} \Biggm|_{v_D=V_D} \cdot \underbrace{v_D(t) - V_D}_{=~ v_d(t)} $$
 Reemplazando la corriente del diodo $$ i_D(t) \approx \underbrace{I_0 \left[ \exp\left( \frac{V_D}{V_{th}} \right) - 1 \right]}_{I_D} + \frac{1}{V_{th}} ~ I_0 ~ \left[ \exp\left( \frac{V_D}{V_{th}} \right) \right] \cdot v_d(t) $$ donde $V_{th}$ es el [[Relación de Einstein|potencial térmico]].
 
 Dejándonos la ecuación para la corriente $$ \begin{align} 
@@ -23,7 +23,7 @@ Dejándonos la ecuación para la corriente $$ \begin{align}
 ---
 Generalizamos la idea de linealización para todas las corrientes y todas las señales aplicadas sobre cualquiera de las fuentes de polarización. Podemos evaluar la [[Corriente eléctrica|corriente]] $$ i_D(V_D) \approx I_D(V_D) + \frac{\partial i_D}{\partial v_D} \Biggm|_{v_D=V_D} v_d $$
 Entonces, como dijimos $$ i_d = \frac{\partial i_D}{\partial v_D} \Biggm|_{v_D=V_D} v_d = g_d ~ v_d $$
-Definimos $g_d \equiv$ [[Conductancia dinámica]] $[g_d] = S$
+Definimos $g_d \equiv$ [[Conductancia dinámica|conductancia dinámica]] $[g_d] = S$
 
 Produciendo el circuito equivalente
 ![[Circuito equivalente de resistencias de pequeña señal del diodo.png]]
@@ -61,4 +61,4 @@ En directa tenemos que $$ \begin{align}
 	\frac{1}{2} \frac{I_D + I_0}{V_{th}^2} \cdot v_d^2 &< 0.1 \cdot \frac{I_D + I_0}{V_{th}} ~ v_d \\
 	v_d &< 0.2 \cdot V_{th}
 \end{align} $$
-Que a temperatura ambiente se obtiene $v_d < 5.2 ~mV$ pero en la práctica por las aproximaciones dadas al encontrar la [[Corriente a través de la juntura PN|corriente del diodo]], termina valiendo que $$ |v_d| < 10 ~mV ~ \text{(pico)} $$
+Que a temperatura ambiente se obtiene $v_d < 5.2 ~mV$ pero en la práctica por las aproximaciones dadas al encontrar la [[Corriente del Diodo|corriente del diodo]], termina valiendo que $$ |v_d| < 10 ~mV ~ \text{(pico)} $$

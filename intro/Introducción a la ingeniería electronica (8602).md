@@ -58,12 +58,12 @@ tags:
 
 ##### Unidad 5 (9)
 ---
+* [[intro/Unidad 5/Potencia media.md|Potencia media]]
 * [[intro/Unidad 5/Teorema de máxima transferencia de potencia.md|Teorema de máxima transferencia de potencia]]
 * [[intro/Unidad 5/Tensión eficaz.md|Tensión eficaz]]
 * [[intro/Unidad 5/Rendimiento en potencia.md|Rendimiento en potencia]]
 * [[intro/Unidad 5/Tension promedio.md|Tension promedio]]
 * [[intro/Unidad 5/Potencia.md|Potencia]]
-* [[intro/Unidad 5/Potencia promedio.md|Potencia promedio]]
 * [[intro/Unidad 5/Potencia nominal.md|Potencia nominal]]
 * [[intro/Unidad 5/Potencia disipada.md|Potencia disipada]]
 * [[intro/Unidad 5/Corriente eficaz.md|Corriente eficaz]]

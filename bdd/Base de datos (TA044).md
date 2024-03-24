@@ -11,8 +11,12 @@ tags: materia
 ---
 * [[bdd/General/Base de datos.md|Base de datos]]
 
-##### SQL (19)
+##### SQL (23)
 ---
+* [[bdd/SQL/Carácter wildcard de SQL.md|Carácter wildcard de SQL]]
+* [[bdd/SQL/Operador LIKE.md|Operador LIKE]]
+* [[bdd/SQL/Función de agregación AVG.md|Función de agregación AVG]]
+* [[bdd/SQL/Función de agregación SUM.md|Función de agregación SUM]]
 * [[bdd/SQL/Sentencia DISTINC.md|Sentencia DISTINC]]
 * [[bdd/SQL/Función de agregación COUNT.md|Función de agregación COUNT]]
 * [[bdd/SQL/Función de agregación MAX.md|Función de agregación MAX]]

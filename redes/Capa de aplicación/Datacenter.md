@@ -16,7 +16,7 @@ Conveniencia
 #### Implementación
 ---
 * Enter deep
-	* Dentro de los [[ISP|ISP]]
+	* Dentro de los [[Internet Service Providers (ISPs)|Internet Service Providers (ISPs)]]
 	* Muchos lugares
 	* Más dificultad y costos de mantenimiento
 * Bring home

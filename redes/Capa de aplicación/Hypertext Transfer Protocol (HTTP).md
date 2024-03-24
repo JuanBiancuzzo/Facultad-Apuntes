@@ -6,7 +6,7 @@ capitulo: 2
 ### Definición
 ---
 Este [[Protocolo|protocolo]]
-* Esta implementado sobre [[TCP|TCP]]
+* Esta implementado sobre [[Transmission Control Protocol (TCP)|Transmission Control Protocol (TCP)]]
 * Tiene la [[Arquitectura cliente servidor|arquitectura cliente-servidor]]
 * Tiene un request y una response. 
 	* El request es de tamaño variable

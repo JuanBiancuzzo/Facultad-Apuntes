@@ -23,7 +23,7 @@ $\implies$ pequeño incremento en $q_{p_n}$
 $\implies$ pequeño incremento en $|q_{n_n}|$
 
 Se comporta como un [[Capacitor]] de [[Capacitancia]] $$ C_{dn} = \frac{dq_{p_n}}{d v_D} \biggm|_{v_D}$$
-Podemos escribir $q_{p_n}$ en términos de la $I_p$ ([[Corriente a través de la juntura PN#Corriente de difusión Densidad de corriente de difusión en las regiones QNR|fracción de la corriente del diodo debido a los huecos del lado N-QNR]]) $$ \begin{align} 
+Podemos escribir $q_{p_n}$ en términos de la $I_p$ ([[Corriente del Diodo#Corriente de difusión Densidad de corriente de difusión en las regiones QNR|fracción de la corriente del diodo debido a los huecos del lado N-QNR]]) $$ \begin{align} 
 	q_{p_n} &= \frac{(W_n - x_n)^2}{2D_p}  ~ qA ~ \frac{n_i^2}{N_d} \frac{D_p}{W_n - x_n} \left( \exp \left( \frac{v_D}{V_{th}} \right) - 1 \right) \\
 	        &= \frac{(W_n - x_n)^2}{2D_p} ~ I_p \\
 	q_{p_n} &= \tau_{T_p} ~ I_p
