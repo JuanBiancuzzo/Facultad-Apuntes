@@ -5,11 +5,11 @@ capitulo: 2
 ---
 ### Definición
 ---
-Partiendo del análisis con la [[Aproximación de vaciamiento]] donde asumimos que no hay una tensión aplicada y que se encuentra el [[Semiconductor]] en [[Equilibrio térmico en un semiconductor|equilibrio térmico]].
+Partiendo del análisis con la [[Aproximación de vaciamiento|aproximación de vaciamiento]] donde asumimos que no hay una tensión aplicada y que se encuentra el [[Semiconductor|semiconductor]] en [[Equilibrio térmico en un semiconductor|equilibrio térmico]].
 
-Siguiendo la [[Convención de signos para la tensión de polarización]], veamos que pasa cuando se le aplica una [[Tensión]] $V_{PN}$ 
+Siguiendo la [[Convención de signos para la tensión de polarización|convención de signos]], veamos que pasa cuando se le aplica una [[Tensión]] $V_{PN}$ 
 
-Sabemos que en las regiones de p-QNR y n-QNR, no puede modificarse el [[Potencial eléctrico|potencial]] ya que se mantiene la [[Aproximación de cuasi-neutralidad]] en esas regiones, ya que la [[Densidad volumétrica de carga eléctrica|carga]] sigue siendo $0$ $$ \begin{align} 
+Sabemos que en las regiones de p-QNR y n-QNR, no puede modificarse el [[Potencial eléctrico|potencial]] ya que se mantiene la [[Aproximación de cuasi-neutralidad|aproximación de cuasi-neutralidad]] en esas regiones, ya que la [[Densidad volumétrica de carga eléctrica|carga]] sigue siendo $0$ $$ \begin{align} 
 	\rho(x) = 0 \implies \Delta V_\text{p-QNR} \simeq 0 \\
 	\rho(x) = 0 \implies \Delta V_\text{n-QNR} \simeq 0
 \end{align} $$

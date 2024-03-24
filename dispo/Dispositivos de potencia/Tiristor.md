@@ -18,8 +18,10 @@ Donde se puede analizar como dos [[Transistor bipolar de juntura (TBJ)|TBJ]]s
 * Al forzar $I_G$ $(I_{B2})$ se genera una realimentación positiva que mantiene al dispositivo en conducción
 * Para cesar la conducción se requiere quitar la [[Corriente eléctrica|corriente]] de ánodo a cátodo.
 
-#### Curva característica del tiristor
+#### Curva característica
 ---
+Veamos la [[Curva característica de un componente|curva característica]] del tiristor
+
 ![[Curva característica del tiristor.png]]
 
 $V_{B0}$ ([[Tensión|tensión]] de ruptura): mínima tensión de $V_{AK}$ que dispara al tiristor

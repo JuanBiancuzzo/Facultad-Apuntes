@@ -5,7 +5,7 @@ capitulo: 3
 ---
 ### Definición
 ---
-El coeficiente de emisión ($n$) modifica la expresión de la [[Corriente a través de la juntura PN|corriente del diodo]] $$ I_D = I_0 \left[ \exp \left( \frac{V_D}{n~V_{th}} \right) - 1 \right] $$
+El coeficiente de emisión ($n$) modifica la expresión de la [[Corriente del Diodo|corriente del diodo]] $$ I_D = I_0 \left[ \exp \left( \frac{V_D}{n~V_{th}} \right) - 1 \right] $$
 Es un factor empírico, y puede tomar valores entre $1$ y $2$ dependiendo del [[Diodo]], el tipo de [[Semiconductor]] y el proceso de fabricación.
 
 Debe introducirse ya que ciertas hipótesis no se cumplen de forma rigurosa. 

@@ -7,10 +7,11 @@ tags: materia
 ---
 ### Apuntes 
 ---
-##### Redes de computadoras (7)
+##### Redes de computadoras (8)
 ---
+* [[redes/Redes de computadoras/Packet switches.md|Packet switches]]
+* [[redes/Redes de computadoras/Internet Service Providers (ISPs).md|Internet Service Providers (ISPs)]]
 * [[redes/Redes de computadoras/Host.md|Host]]
-* [[redes/Redes de computadoras/ISP.md|ISP]]
 * [[redes/Redes de computadoras/IXP.md|IXP]]
 * [[redes/Redes de computadoras/Protocolo.md|Protocolo]]
 * [[redes/Redes de computadoras/Red.md|Red]]
@@ -25,10 +26,11 @@ tags: materia
 * [[redes/Capa de aplicación/Hypertext Transfer Protocol (HTTP).md|Hypertext Transfer Protocol (HTTP)]]
 * [[redes/Capa de aplicación/Capa de aplicación.md|Capa de aplicación]]
 
-##### Capa de Transporte (2)
+##### Capa de Transporte (3)
 ---
-* [[redes/Capa de Transporte/UDP.md|UDP]]
-* [[redes/Capa de Transporte/TCP.md|TCP]]
+* [[redes/Capa de Transporte/Capa de transporte.md|Capa de transporte]]
+* [[redes/Capa de Transporte/Transmission Control Protocol (TCP).md|Transmission Control Protocol (TCP)]]
+* [[redes/Capa de Transporte/User Datagram Protocol (UDP).md|User Datagram Protocol (UDP)]]
 
 ##### Capa de Red (1)
 ---

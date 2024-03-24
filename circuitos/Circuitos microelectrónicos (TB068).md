@@ -7,9 +7,17 @@ tags: materia
 ---
 ### Apuntes 
 ---
-##### Circuitos con diodos (1)
+##### Circuitos con diodos (9)
 ---
-* [[circuitos/Circuitos con diodos/temp.md|temp]]
+* [[circuitos/Circuitos con diodos/Circuito rectificador.md|Circuito rectificador]]
+* [[circuitos/Circuitos con diodos/Máxima potencia.md|Máxima potencia]]
+* [[circuitos/Circuitos con diodos/Modelo de orden 1 para diodo.md|Modelo de orden 1 para diodo]]
+* [[circuitos/Circuitos con diodos/Modelo de orden 0 para diodo.md|Modelo de orden 0 para diodo]]
+* [[circuitos/Circuitos con diodos/Resistencia dinámica de un componente.md|Resistencia dinámica de un componente]]
+* [[circuitos/Circuitos con diodos/Pequeña señal alterna.md|Pequeña señal alterna]]
+* [[circuitos/Circuitos con diodos/Resistencia estática de un componente.md|Resistencia estática de un componente]]
+* [[circuitos/Circuitos con diodos/Curva de carga de un componente.md|Curva de carga de un componente]]
+* [[circuitos/Circuitos con diodos/Curva característica de un componente.md|Curva característica de un componente]]
 
 ##### Dispositivos de control de señal y en conmutación (1)
 ---
