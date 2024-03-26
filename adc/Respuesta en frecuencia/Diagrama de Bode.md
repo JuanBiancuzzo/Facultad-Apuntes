@@ -5,7 +5,7 @@ capitulo: 5
 ---
 ### Definición
 ---
-Los diagramas de Bode son gráficas semi[[Función logaritmica|logarítmicas]] de la magnitud (en [[Decibel|decibeles]]) y de la fase de una [[Función de transferencia|función de transferencia]] ($H(s)$) en función de [[Función senoidal#Frecuencia|frecuencia]].
+Los diagramas de Bode son gráficas semi[[Función logaritmica|logarítmicas]] de la magnitud (en [[Decibel|decibeles]]) y de la fase de una [[Transferencia del sistema|función de transferencia]] ($H(s)$) en función de [[Función senoidal#Frecuencia|frecuencia]].
 
 Viendo el efecto que tiene las propiedades de los [[Función logaritmica|logaritmos]] y las características de los [[Decibel|dB]], podemos sumar las contribuciones independientes de la constante, de cada [[Singularidad|polo]] y de cada cero. Por lo tanto, podemos verlas por separado
 

@@ -5,4 +5,4 @@ capitulo: 12
 ---
 ### Definición
 ---
-Sean $f : \mathbb{R} \to \mathbb{C}$ y $g : \mathbb{R} \to \mathbb{C}$, donde pertenecen al [[Conjunto de funciones periódicas]], por lo que se define el producto interno como: $$ <f, g> = \int_0^P \overline{f(t)}\cdot g(t) \cdot dt $$
+Sean $f : \mathbb{R} \to \mathbb{C}$ y $g : \mathbb{R} \to \mathbb{C}$, donde pertenecen al [[Conjunto de funciones periódicas]], por lo que se define el [[Producto interno|producto interno]] como: $$ <f, g> = \int_0^P \overline{f(t)}\cdot g(t) \cdot dt $$

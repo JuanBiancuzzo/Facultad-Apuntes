@@ -25,8 +25,8 @@ Se calculan haciendo $I_1$ o $I_2$ iguales a cero $$ \begin{matrix}
 \end{matrix} $$
 Donde 
 * $z_{11} =$ [[Impedancia|Impedancia]] de entrada en [[Circuito eléctrico|circuito]] abierto
-* $z_{12} =$ Impedancia de [[Función de transferencia|transferencia]] en circuito abierto del puerto 1 al puerto 2
-* $z_{21} =$ Impedancia de [[Función de transferencia|transferencia]] en circuito abierto del puerto 2 al puerto 1
+* $z_{12} =$ Impedancia de [[Transferencia del sistema|transferencia]] en circuito abierto del puerto 1 al puerto 2
+* $z_{21} =$ Impedancia de [[Transferencia del sistema|transferencia]] en circuito abierto del puerto 2 al puerto 1
 * $z_{22} =$ Impedancia de salida en circuito abierto
 
 Cuando $z_{11} = z_{22}$ se dice que la red de dos puertos es simétrica.

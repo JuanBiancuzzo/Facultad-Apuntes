@@ -9,18 +9,17 @@ Dada una función $f : \mathbb{R} \to \mathbb{C}$ [[Seccionalmente continua]] y 
 ### Propiedades
 ---
 
-|     | Condiciones de aplicación                                                                                                          | Función original                                                                     | Transformada de Fourier                                             |
-| --- | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------- |
-| 1   | $f \in L^1(\mathbb{R}, \mathbb{C})$ y [[Condiciones de Dirichlet para la convergencia puntual\|Condiciones de Dirichlet]]          | $f(x) =  \frac{1}{2\pi} \int_{-\infty}^{+\infty} \hat{f}(\omega) e^{i\omega x} d\omega$ | $\hat{f}(\omega) = \int_{-\infty}^{+\infty} f(x) e^{-i\omega x} dx$ |
-| 2   | $f \in L^1(\mathbb{R}, \mathbb{C})$                                                                                                | $f(x - x_0), ~ x_0 \in \mathbb{R}$                                                   | $e^{-i\omega x_0} ~\hat{f}(\omega)$                                 |
-| 3   | $f \in L^1(\mathbb{R}, \mathbb{C})$                                                                                                | $e^{i \omega_0 x} ~ f(x), ~ \omega_0 \in \mathbb{R}$                                 | $\hat{f}(\omega - \omega_0)$                                        |
-| 4   | $f \in L^1(\mathbb{R}, \mathbb{C})$                                                                                                | $f(\alpha x), ~ \alpha \in \mathbb{R}, \alpha > 0$                                   | $\frac{1}{\alpha} \hat{f}( \frac{\omega}{\alpha})$                                                                    |
-| 5   | $f$ es de clase $C^1$, $f, f' \in L^1(\mathbb{R}, \mathbb{C})$                                                                     | $f'(x)$                                                                              | $i\omega \hat{f}(\omega)$                                           |
-| 6   | $f, x f \in L^1(\mathbb{R}, \mathbb{C})$                                                                                           | $-ixf(x)$                                                                             | $\hat{f}'(\omega)$                                                  |
-| 7   | $f, \hat{f} \in L^1(\mathbb{R}, \mathbb{C})$ y [[Condiciones de Dirichlet para la convergencia puntual\|Condiciones de Dirichlet]] | $\hat{f}(\omega)$                                                                    | $2\pi f(-x)$                                                        |
+|     | Condiciones de aplicación                                      | Función original                                                                        | Transformada de Fourier                                             |
+| --- | -------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| 1   | $f \in L^1(\mathbb{R}, \mathbb{C})$ y                          | $f(x) =  \frac{1}{2\pi} \int_{-\infty}^{+\infty} \hat{f}(\omega) e^{i\omega x} d\omega$ | $\hat{f}(\omega) = \int_{-\infty}^{+\infty} f(x) e^{-i\omega x} dx$ |
+| 2   | $f \in L^1(\mathbb{R}, \mathbb{C})$                            | $f(x - x_0), ~ x_0 \in \mathbb{R}$                                                      | $e^{-i\omega x_0} ~\hat{f}(\omega)$                                 |
+| 3   | $f \in L^1(\mathbb{R}, \mathbb{C})$                            | $e^{i \omega_0 x} ~ f(x), ~ \omega_0 \in \mathbb{R}$                                    | $\hat{f}(\omega - \omega_0)$                                        |
+| 4   | $f \in L^1(\mathbb{R}, \mathbb{C})$                            | $f(\alpha x), ~ \alpha \in \mathbb{R}, \alpha > 0$                                      | $\frac{1}{\alpha} \hat{f}( \frac{\omega}{\alpha})$                  |
+| 5   | $f$ es de clase $C^1$, $f, f' \in L^1(\mathbb{R}, \mathbb{C})$ | $f'(x)$                                                                                 | $i\omega \hat{f}(\omega)$                                           |
+| 6   | $f, x f \in L^1(\mathbb{R}, \mathbb{C})$                       | $-ixf(x)$                                                                               | $\hat{f}'(\omega)$                                                  |
+| 7   | $f, \hat{f} \in L^1(\mathbb{R}, \mathbb{C})$                   | $\hat{f}(\omega)$                                                                       | $2\pi f(-x)$                                                        |
 
 Donde $L^1$ es la [[Conjunto de Lebesgue de orden n|conjunto de Lebesgue de orden 1]].
-
 
 ### Definición para $L^2(\mathbb{R}, \mathbb{C})$
 ---

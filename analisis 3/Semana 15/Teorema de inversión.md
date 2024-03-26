@@ -3,7 +3,7 @@ dia: 2022-12-04
 materia: analisis 3
 capitulo: 15
 ---
-El teorema de inversión es u teorema de [[Convergencia puntual]], análogo al de [[Condiciones de Dirichlet para la convergencia puntual|Dirichlet]] para [[Serie de Fourier]]. 
+El teorema de inversión es u teorema de [[Convergencia puntual]], análogo al de [[Condición de Dirichlet para la convergencia puntual|Dirichlet]] para [[Serie de Fourier]]. 
 
 ### Definición
 ---

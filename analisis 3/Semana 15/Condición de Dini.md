@@ -10,4 +10,4 @@ En el punto $x$: existe $\delta > 0$ para el cual converge la [[Integrales impro
 
 ### Observaciones
 ---
-* Si en $x$ se verifica la [[Condiciones de Dirichlet para la convergencia puntual|condición de Dirichlet]] entonces también se verifica la de Dini. La recíproca no es cierta. 
+* Si en $x$ se verifica la [[Condición de Dirichlet para la convergencia puntual|condición de Dirichlet]] entonces también se verifica la de Dini. La recíproca no es cierta. 

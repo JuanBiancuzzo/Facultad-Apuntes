@@ -25,6 +25,6 @@ Se calculan haciendo $I_1$ o $I_2$ iguales a cero $$ \begin{matrix}
 \end{matrix} $$
 Donde 
 * $y_{11} =$ [[Admitancia|Admitancia]] de entrada en corto[[Circuito eléctrico|circuito]]
-* $y_{12} =$ Admitancia de [[Función de transferencia|transferencia]] en cortocircuito del puerto 2 al puerto 1
-* $y_{21} =$ Admitancia de [[Función de transferencia|transferencia]] en cortocircuito del puerto 1 al puerto 2
+* $y_{12} =$ Admitancia de [[Transferencia del sistema|transferencia]] en cortocircuito del puerto 2 al puerto 1
+* $y_{21} =$ Admitancia de [[Transferencia del sistema|transferencia]] en cortocircuito del puerto 1 al puerto 2
 * $y_{22} =$ Admitancia de salida en cortocircuito

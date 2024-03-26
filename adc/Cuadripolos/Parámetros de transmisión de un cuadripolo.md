@@ -25,7 +25,7 @@ Se calculan haciendo $I_2$ o $V_2$ iguales a cero $$ \begin{matrix}
 \end{matrix} $$
 Donde 
 * $A =$ Relación de [[Tensión|tensión]] en un [[Circuito eléctrico|circuito]] abierto
-* $B =$ [[Impedancia|Impedancia]] negativa de [[Función de transferencia|transferencia]] en cortocircuito
+* $B =$ [[Impedancia|Impedancia]] negativa de [[Transferencia del sistema|transferencia]] en cortocircuito
 * $C =$ [[Admitancia|Admitancia]] de transferencia en un circuito abierto
 * $D =$ Relación negativa de [[Corriente eléctrica|corrientes]] en cortocircuito
 
@@ -51,6 +51,6 @@ Se calculan haciendo $I_1$ o $V_2$ iguales a cero $$ \begin{matrix}
 \end{matrix} $$
 Donde 
 * $a =$ [[Ganancia|Ganancia]] de [[Tensión|tensión]] en [[Circuito eléctrico|circuito]] abierto
-* $b =$ [[Impedancia|Impedancia]] negativa de [[Función de transferencia|transferencia]] en cortocircuito
+* $b =$ [[Impedancia|Impedancia]] negativa de [[Transferencia del sistema|transferencia]] en cortocircuito
 * $c =$ [[Admitancia|Admitancia]] de transferencia en circuito abierto
 * $d =$ Ganancia negativa de [[Corriente eléctrica|corriente]] en cortocircuito
