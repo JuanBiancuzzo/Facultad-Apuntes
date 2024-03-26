@@ -15,13 +15,13 @@ $$  \begin{align}
 
 #### [[Modelo de Ebers-Moll]]
 ---
-![[Modelo de Ebers-Moll para corte.png]]
+![[Modelo de Ebers-Moll para corte.webp]]
 
 Solo existen corrientes de fuga despreciables.
 
 ### Análisis
 ---
-![[Perfil de portadores minoritarios en corte.png]]
+![[Perfil de portadores minoritarios en corte.webp]]
 
 La base extrae [[Hueco|huecos]] del emisor $$ I_E = \frac{I_S}{\beta_F} $$ donde $\beta_F$ es la [[Ganancia de corriente en modo activo directo (MAD)|ganancia en MAD]] 
 

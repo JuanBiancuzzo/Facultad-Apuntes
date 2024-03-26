@@ -15,7 +15,7 @@ Este par base-limite va a permitir que el address space pueda ser ubicado en cua
 
 En esta configuración, cada [[Programa|programa]] es escrito y [[Compilador#Fase de compilación|compilado]] como si fuera cargado en la dirección física 0. A su vez cuando se inicia la ejecución del programa el OS decide en que lugar va a carga el mismo y para hacerlo setea el registro base en un determinado valor. 
 
-![[Traslación de direcciones con registros de base y segmento.png]]
+![[Traslación de direcciones con registros de base y segmento.webp]]
 
 #### Registro Base
 ---

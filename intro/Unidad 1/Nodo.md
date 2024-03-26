@@ -8,4 +8,4 @@ capitulo: 1
 Un nodo es un punto común en el que se conectan dos o más componentes o [[Rama|ramas]].
 
 ##### Esquematización
-![[Nodo.png]]
+![[Nodo.webp]]

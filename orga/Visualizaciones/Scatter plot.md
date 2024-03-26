@@ -7,4 +7,4 @@ capitulo: 2
 ---
 Es un [[Plot de relación]], para dos variables con [[Distribución continua]]. 
 
-![[Scatter plot.png|600]]
+![[Scatter plot.webp|600]]

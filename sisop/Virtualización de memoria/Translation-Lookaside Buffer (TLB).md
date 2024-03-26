@@ -15,11 +15,11 @@ Normalmente se chequean todas las entradas del buffer contra la virtual page, si
 
 Cuando, del proceso anterior, no existe macheo en el TLB, se dice que se tiene un TLB miss.
 
-![[TBL hit y miss.png]]
+![[TBL hit y miss.webp]]
 
 Para que sea útil, la búsqueda de la TLB necesita ser mucho más rápido que realizar una traslación completa de una [[Dirección de memoria|dirección de memoria]]. Por ende, las entradas de la tabla de la TLB son implementadas en una [[Memoria|memoria]] muy rápida, memoria estática on chip, situada muy cerca del [[Procesador|procesador]]. De hecho, para mantener esta búsqueda rápida, muchos [[Sistema|sistemas]] en la actualidad incluyen múltiples niveles de TLB. En general cuanto más pequeña es la memoria, más rápida es la búsqueda
 
-![[TBL on chip.png]]
+![[TBL on chip.webp]]
 
 #### Consistencia de la TLB
 ---

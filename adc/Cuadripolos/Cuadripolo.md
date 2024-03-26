@@ -9,7 +9,7 @@ Las redes de dos puertos resultan útiles en las comunicaciones, los [[Control d
 
 Una vez se conocen sus parámetros se puede tratar a la red como una "caja negra", y es análogo a los [[Teorema de Thevenin|equivalentes de Thevenin]] y [[Teorema de Norton|Norton]].
 
-![[Cuadripolo.png]]
+![[Cuadripolo.webp]]
 
 Los parámetros de las red, son cantidades que relacionan $V_1$, $V_2$, $I_1$ e $I_2$.
 

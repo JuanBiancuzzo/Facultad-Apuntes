@@ -7,6 +7,6 @@ capitulo: 2
 ---
 Es un [[Plot]] para una [[Distribución discreta]] donde se muestran las proporciones para cada valor.
 
-![[Pie plot.png|600]]
+![[Pie plot.webp|600]]
 
 Donde se pierde las cantidades.

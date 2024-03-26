@@ -7,4 +7,4 @@ capitulo: 2
 ---
 Este [[Plot]] muestra las proporciones como un [[Pie plot]] pero para varias variables al mismo tiempo.
 
-![[Stacked bar plot.png|600]]
+![[Stacked bar plot.webp|600]]

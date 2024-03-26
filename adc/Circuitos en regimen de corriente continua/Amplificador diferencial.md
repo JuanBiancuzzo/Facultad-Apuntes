@@ -11,4 +11,4 @@ $$ v_o = \frac{R_2 ~ (1 + R_1/R_2)}{R_1 ~ (1 + R_3/R_4)} ~ v_2 - \frac{R_2}{R_1}
 
 vemos que el [[Circuito eléctrico|circuito]] amplifica la diferencia entre dos entradas pero rechaza toda señal común a las dos entradas
 
-![[Amplificador diferencial.png]]
+![[Amplificador diferencial.webp]]

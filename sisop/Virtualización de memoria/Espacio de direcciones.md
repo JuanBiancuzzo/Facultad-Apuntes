@@ -21,7 +21,7 @@ Por ejemplo
 ---
 Se presenta un pequeño espacio de direcciones de $16 ~ kb$
 
-![[Espacio de direcciones de 16k.png]]
+![[Espacio de direcciones de 16k.webp]]
 
 El código fuente del [[Programa|programa]] vive en lo alto del espacio de direcciones empezando de $0$ en este ejemplo y esta empaquetado en la primer $1 ~ kb$ del espacio de direcciones. El código fuente es estático por ende se puede poner al principio del espacio de direcciones y no necesitará más espacio mientras que el programa se ejecute.
 

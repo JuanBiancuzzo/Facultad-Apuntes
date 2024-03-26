@@ -11,10 +11,10 @@ $$ v_o = \left( 1 + \frac{R_f}{R_1} \right) ~ v_i $$
 
 vemos que el [[Circuito eléctrico|circuito]] tiene [[Ganancia]] negativa
 
-![[Amplificador no inversor.png|450]]
+![[Amplificador no inversor.webp|450]]
 
 #### Seguidor
 ---
 Es un caso especifico del no inversor, donde $v_o = v_i$
 
-![[Amplificador seguidor.png|450]]
+![[Amplificador seguidor.webp|450]]

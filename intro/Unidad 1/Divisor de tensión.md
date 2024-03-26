@@ -7,7 +7,7 @@ capitulo: 1
 ---
 Un divisor de [[Tensión]] es un [[Circuito eléctrico|circuito]] que divide la tensión de entrada en el circuito en otras dos diferentes y más pequeñas de salida, con [[Resistor|resistores]]
 
-![[Divisor de tensión.png]]
+![[Divisor de tensión.webp]]
 
 Entonces
 $$ V_{R_1} = \frac{V_0 \cdot R_1}{R_1 + R_2} $$

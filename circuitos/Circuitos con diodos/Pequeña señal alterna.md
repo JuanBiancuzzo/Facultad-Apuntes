@@ -58,7 +58,7 @@ Si ahora asumimos que hay una pequeña [[Señal|señal]] alterna en el circuito
 
 Ésta se ve como una ligera variación de la [[Curva de carga de un componente|curva de carga]]
 
-![[Curva de carga de pequeña señal alterna.png]]
+![[Curva de carga de pequeña señal alterna.webp]]
 
 Al avanzar el tiempo, la curva de carga (recta en este caso particular) se mueve, haciendo que el punto de intersección con la [[Curva característica de un componente|curva característica del componente X]] cambie. Los distintos puntos de intersección reflejan los valores instantáneos de [[Tensión|tensión]] y [[Corriente eléctrica|corriente]] 
 
@@ -66,13 +66,13 @@ Al avanzar el tiempo, la curva de carga (recta en este caso particular) se mueve
 ---
 Lo más sencillo sería reemplazar el componente X por su [[Resistencia estática de un componente|resistencia estática en el punto Q]], al fin y al cabo la tensión total en cada nodo dependerá de la tensión continua (que es grande) y la alterna (que es pequeña). Y por definición, el punto Q encontrado usando X o su resistencia estática sería exactamente el mismo
 
-![[Aproximación de primero orden de la curva de carga de pequeña señal alterna.png]]
+![[Aproximación de primero orden de la curva de carga de pequeña señal alterna.webp]]
 
 Podríamos reducir sustancialmente el [[Error relativo|error]] si en vez de utilizar la resistencia estática pudiéramos usar la [[Derivable|derivada]] de la [[Curva característica de un componente|ecuación característica en Q]]. Lamentablemente ésta, tal como puede verse, no es la ecuación de una [[Resistencia|resistencia]] en el plano $I_x - V_x$
 
-![[Aproximación de segundo orden de la curva de carga de pequeña señal alterna.png]]
+![[Aproximación de segundo orden de la curva de carga de pequeña señal alterna.webp]]
 
 ##### Cambio de ejes coordenados
 ---
 La solución viene de ver las cosas desde otro punto de vista. Por eso planteamos un cambio de variable $$ I_x = I _x ~ Q + i_x ~~~~~ V_x = V_x ~ Q + v_x $$
-![[cambio de ejes de curva de carga de pequeña señal alterna.png]]
+![[cambio de ejes de curva de carga de pequeña señal alterna.webp]]

@@ -13,7 +13,7 @@ Viendo el efecto que tiene las propiedades de los [[Función logaritmica|logarit
 ---
 Para la ganancia $K > 0$, la magnitud es de $20 ~ \log (K)$ y la fase es de $n \cdot 2 \pi$ con $n \in \mathbb{Z}$. 
 
-![[Diagrama de Bode para el término constante.png]]
+![[Diagrama de Bode para el término constante.webp]]
 
 Para el caso de $K < 0$ la magnitud no cambia, pero la fase vale $(1 + 2n) \cdot 2 \pi$ con $n \in \mathbb{Z}$.
 
@@ -23,7 +23,7 @@ Para el cero $(s^N = (\sigma + j ~ \omega)^N)$ magnitud es de $20 ~ \log (\omega
 
 Para el [[Singularidad|polo]] $\left(\frac{1}{s^N} = \frac{1}{(\sigma + j ~ \omega)^N} \right)$ magnitud es de $20 ~ \log (\omega)$, y la fase correspondiente a $-N \pi$. Su pendiente es de $-20 N ~ \frac{dB}{\text{década}}$ 
 
-![[Diagrama de Bode para ceros o polos en el origen.png]]
+![[Diagrama de Bode para ceros o polos en el origen.webp]]
 
 #### Ceros
 ---
@@ -40,7 +40,7 @@ Para la fase $$ \phi = \tan^{-1} \left( \frac{s}{z_1} \right)^N = \begin{cases}
 \end{cases} $$
 Con una pendiente de $20 N ~ \frac{dB}{\text{década}}$
 
-![[Diagrama de Bode para cero simple.png]]
+![[Diagrama de Bode para cero simple.webp]]
 
 #### [[Singularidad|Polo]] simple
 ---
@@ -63,7 +63,7 @@ Para la magnitud $$ \begin{align}
 	&= -20 \log \left| 1 + s \frac{p_i + p_i^*}{p_i p_i^*} + \frac{s^2}{p_i p_i^*} \right| \\
 	H_{dB}(s) &= -20 \log \left| 1 + s \frac{2 \zeta_2}{\omega_n} + \left(\frac{s}{\omega_n}\right)^2 \right|
 \end{align} $$
-![[Diagrama de Bode para polos complejos conjugados.png]]
+![[Diagrama de Bode para polos complejos conjugados.webp]]
 
 Con una pendiente de $-40 ~ \frac{dB}{\text{década}}$.
 

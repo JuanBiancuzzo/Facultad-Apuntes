@@ -12,4 +12,4 @@ La [[Potencia|potencia]] aparente es un valor complejo y por lo tanto podemos de
 * $Q$ es la potencia reactiva y es una medida del intercambio de [[Energía|energía]] entre la [[Fuente de tensión|fuente]] y la parte reactiva de la carga, en $[VAR]$
 #### Triángulo de potencia
 ---
-![[Triángulo de potencia.png]]
+![[Triángulo de potencia.webp]]

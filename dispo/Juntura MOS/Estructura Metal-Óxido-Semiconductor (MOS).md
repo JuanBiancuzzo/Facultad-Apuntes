@@ -13,7 +13,7 @@ La estructura se componen de
 * [[Semiconductor]]
 	* Soporta carga en volumen
 
-![[Estructura  MOS.png]]
+![[Estructura  MOS.webp]]
 
 * La condición de [[Equilibrio térmico en un semiconductor|equilibrio]] no puede establecerse a través del óxido, se requiere de un cable para permitir el intercambio de [[Carga eléctrica|carga]] entre la [[Juntura metal-semiconductor]]
 * La estructura MOS es un sandwich de 3 materiales con [[Tensión|potenciales diferentes]], por lo que [[Campo eléctrico|campos eléctricos]] diferentes, por lo que hay un reacomodamiento de cargas  y por último produciendo una región de carga espacial
@@ -21,7 +21,7 @@ La estructura se componen de
 
 #### Concentraciones de los [[Portador de carga|portadores]]
 ---
-![[Concentración de portadores en la estructura MOS.png]]
+![[Concentración de portadores en la estructura MOS.webp]]
 
 Pocos [[Hueco|huecos]] cerca de la interfaz $Si$/$SiO_2$ entonces quedan expuestos [[Átomo|átomos]] [[Impureza aceptora|aceptores]] ionizados y se genera una zona de [[Carga eléctrica|carga]] espacial en volumen (SCR) o zona desierta de [[Portador de carga|portadores]].
 
@@ -37,7 +37,7 @@ Por el metal, se genera una carga en la interfaz metal y el oxido, dándonos con
 	0,                          && ~~~x_{d0}  &<&  x  &
 \end{cases} $$
 
-![[Densidad de carga en una estructura MOS.png]]
+![[Densidad de carga en una estructura MOS.webp]]
 
 #### [[Campo eléctrico]]
 ---
@@ -53,7 +53,7 @@ Produciendo el campo $$ E_0(x) = \begin{cases}
 	-\frac{q~N_a}{\varepsilon_s}(x - x_{d0}), &&  ~~~~0     &<&  x  &\le&  ~~~x_{d0} \\
 	0,                          && ~~~x_{d0}  &<&  x  &
 \end{cases} $$
-![[Campo eléctrico en una estructura MOS.png]]
+![[Campo eléctrico en una estructura MOS.webp]]
 
 Donde $$E_{ox} = \frac{qN_a x_{do}}{\varepsilon_{ox}}$$ y $$E_s = \frac{qN_a x_{do}}{\varepsilon_s}$$
 
@@ -66,7 +66,7 @@ En el gate (polysilicio [[Dopaje|dopado]] [[Impureza donora#Cantidad de dopante|
 En el semiconductor (sustrato), en la región QNR [[Impureza aceptora#Cantidad de dopante|tipo p]] $$ p_0 = N_a \implies \phi_p = \phi_{sust} = - \frac{kT}{q} \ln \left( \frac{N_a}{n_i} \right) $$
 Por lo que el potencial de juntura esta dado por $$ \phi_B = \phi_{gate} - \phi_{sust} = 550 ~mV + \frac{kT}{q} \ln \left( \frac{N_a}{n_i} \right) $$
 Ahora, integrando $$ \phi_0(x_2) - \phi_0(x_1) = - \int_{x_1}^{x_2} E(x) ~ dx $$
-![[Potencial eléctrico en una estructura MOS.png]]
+![[Potencial eléctrico en una estructura MOS.webp]]
 
 $$ \phi(x) = \begin{cases} 	
 	\phi_{gate},                          

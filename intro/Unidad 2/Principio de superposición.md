@@ -22,4 +22,4 @@ Se establece que la [[Tensión]] entre los extremos (o la [[Corriente eléctrica
 
 ##### Esquematizando
 ---
-![[Sistema lineal.png]]
+![[Sistema lineal.webp]]

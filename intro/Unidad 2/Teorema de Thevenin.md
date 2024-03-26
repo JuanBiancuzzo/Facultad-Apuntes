@@ -17,5 +17,5 @@ Se establece que un [[Circuito lineal]] de dos terminales puede reemplazarse por
 
 #### Esquematizando
 ---
-![[Equivalente de thevenin.png]]
+![[Equivalente de thevenin.webp]]
 

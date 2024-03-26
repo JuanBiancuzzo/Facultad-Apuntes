@@ -7,7 +7,7 @@ capitulo: 3
 ---
 La [[Juntura PN|juntura PN]] es un [[Diodo|diodo]] 
 
-![[Diodo de Juntura PN gráfico.png|300]]
+![[Diodo de Juntura PN gráfico.webp|300]]
 
 Al aplicar una [[Tensión|tensión]] ($V_D = V_{PN}$) al [[Diodo|diodo]] se modifica la condición de equilibrio y se observan dos consecuencias principales 
 * La [[Aproximación de vaciamiento#Polarización aplicada|región de vaciamiento aumenta o se reduce]]
@@ -22,7 +22,7 @@ Al aplicar una [[Tensión|tensión]] de polarización, la [[Modelo de enlace de 
 $$ \Delta V_{SCR} \downarrow = \phi_B - V_D < \phi_B \implies |E_{SCR}| \downarrow ~ \implies |J_{arr}| \downarrow $$
 Donde $\phi_B$ es el [[Potencial de built-in|potencial de built-in]], $E$ es el [[Campo eléctrico|campo eléctrico]] y $J_{arr}$ es la [[Corriente de arrastre|densidad de corriente de arrastre]]
 
-![[Concentración de portadores en escala logarítmica en directa.png|450]]
+![[Concentración de portadores en escala logarítmica en directa.webp|450]]
 
 Se altera el balance de [[Corriente eléctrica|corrientes]] $$ |J_{dif}| > |J_{arr}| $$ donde $J_{dif}$ es la [[Corriente de difusión|densidad de corriente de difusión]]
 
@@ -38,7 +38,7 @@ Hay una gran difusión de $h^+$ en n-QNR y de $e^-$ en p-QNR entonces la corrien
 $$ \Delta V_{SCR} \uparrow = \phi_B - V_D > \phi_B \implies |E_{SCR}| \uparrow ~ \implies |J_{arr}| \uparrow $$
 Donde $\phi_B$ es el [[Potencial de built-in|potencial de built-in]], $E$ es el [[Campo eléctrico|campo eléctrico]] y $J_{arr}$ es la [[Corriente de arrastre|densidad de corriente de arrastre]]
 
-![[Concentración de portadores en escala logarítmica en inversa.png|450]]
+![[Concentración de portadores en escala logarítmica en inversa.webp|450]]
 
 Se altera el balance de [[Corriente eléctrica|corrientes]] $$ |J_{arr}| > |J_{dif}| $$ donde $J_{dif}$ es la [[Corriente de difusión|densidad de corriente de difusión]]
 

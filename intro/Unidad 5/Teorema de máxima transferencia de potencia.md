@@ -17,7 +17,7 @@ $$
 Para [[Fasor|fasores]] nos da $$ Z_L = Z^*_{th} $$
 #### Análisis
 ---
-![[Potencia máxima.png]]
+![[Potencia máxima.webp]]
 
 Calculo la potencia entregada a la carga con la formula de [[Potencia disipada]]:
 $$
@@ -71,7 +71,7 @@ Es decir, se pierde la mitad de la potencia entregada por la fuente.
 
 #### Análisis para fasores
 ---
-![[Potencia máxima con fasores.png]]
+![[Potencia máxima con fasores.webp]]
 
 Con $Z_{th} = R_{th} + j ~ X_{th}$ y $Z_L = R_L + j ~ X_L$ 
 

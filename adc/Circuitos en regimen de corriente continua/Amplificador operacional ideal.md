@@ -13,7 +13,7 @@ Es un [[Amplificador operacional simplificado]] donde
 Donde físicamente se tiene valores muy grandes de [[Resistencia]] para simular estas situaciones ideales.
 
 Con esta idealización podemos plantear lo siguiente
-![[Amplificador operacional ideal.png|500]]
+![[Amplificador operacional ideal.webp|500]]
 
 $$ \boxed{i_1 = i_2 = 0} $$
 $$ \boxed{v_1 = v_2} $$

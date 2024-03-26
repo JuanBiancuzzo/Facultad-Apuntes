@@ -7,7 +7,7 @@ capitulo: 4
 ---
 Este [[Modelo]] representa el [[Transistor bipolar de juntura (TBJ)|TBJ]] con dos [[Diodo|diodos]] y una [[Fuente de corriente]]
 
-![[Modelo de Ebers-Moll.png]]
+![[Modelo de Ebers-Moll.webp]]
 
 Hay 3 parámetros en este modelo
 * $I_S$: [[Corriente eléctrica|corriente]] de saturación

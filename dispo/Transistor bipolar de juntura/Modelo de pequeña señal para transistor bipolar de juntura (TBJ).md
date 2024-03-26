@@ -7,7 +7,7 @@ capitulo: 4
 ---
 El [[Transistor bipolar de juntura (TBJ)|TBJ]] es un dispositivo [[Función R-lineal|alineal]] por lo que no cumple el [[Principio de superposición]]. Entonces teniendo el [[Circuito eléctrico|circuito]]
 
-![[Circuito de pequeña señal del transistor bipolar de juntura (TBJ).png]]
+![[Circuito de pequeña señal del transistor bipolar de juntura (TBJ).webp]]
 
 Por lo tanto vamos a aproximarla usando el [[Serie de Taylor#Polinomio de Taylor|polinomio de Taylor]] de primer orden $$
 i_C(V_{BE} + v_{be}, V_{CE} + v_{ce}) \simeq ~ I_C(V_{BE}, V_{CE})
@@ -44,7 +44,7 @@ Definimos:
 * $g_\mu \equiv$ [[Conductancia de realimentación|Conductancia de realimentación]] $[g_\mu] = S$
 
 Produciendo el circuito equivalente
-![[Circuito equivalente de resistencias de pequeña señal del transistor bipolar de juntura.png]]
+![[Circuito equivalente de resistencias de pequeña señal del transistor bipolar de juntura.webp]]
 
 #### [[Modelo|Modelo]] para altas frecuencias
 ---
@@ -54,4 +54,4 @@ Donde se definen dos capacidades
 * $C_\pi \equiv$ [[Capacidad de entrada]] $[C_\pi] = F$
 * $C_\mu \equiv$ [[Capacidad de realimentación]] $[C_\mu] = F$
 
-![[Modelo de pequeña señal tbj completo.png]]
+![[Modelo de pequeña señal tbj completo.webp]]

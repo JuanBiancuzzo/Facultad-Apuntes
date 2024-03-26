@@ -11,7 +11,7 @@ Es un elemento de un [[Circuito eléctrico|circuito]] activo:
 * Utilizados en instrumentos, computadoras analógicas y posteriormente en todo circuito
 
 ##### Simbología
-![[Amplificador operacional.png|500]]
+![[Amplificador operacional.webp|500]]
 
 Donde $V^+$ es la entrada no inversora, $V^-$ es la entrada inversora, $V_{out}$ es la salida, $V^+_S$ alimentación positiva y $V^-_S$ es la alimentación negativa
 

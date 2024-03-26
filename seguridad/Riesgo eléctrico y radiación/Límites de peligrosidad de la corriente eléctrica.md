@@ -7,7 +7,7 @@ capitulo: 6
 ---
 Se define en cuatro zonas de peligrosidad establecidad por la IEC (international electrotechnical commission) que resumen los efectos de la [[Corriente eléctrica|corriente alterna]] que pasa a través del cuerpo humano en [[Función]] del tiempo.
 
-![[Límites de peligrosidad de la corriente eléctrica.png]]
+![[Límites de peligrosidad de la corriente eléctrica.webp]]
 
 ###### Zona 1
 Ningún efecto, hasta el umbral de percepción.

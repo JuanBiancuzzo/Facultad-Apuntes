@@ -11,11 +11,11 @@ Ofrece una entrada [[Transistor de efecto de campo metal-óxido-semiconductor (M
 * Posee baja [[Resistencia|resistencia]] de encendido
 * Son costos
 
-![[Transistor bipolar de puerta aislada (IGBT).png]]
+![[Transistor bipolar de puerta aislada (IGBT).webp]]
 
 El IGBT presenta las características de entrada del [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|MOSFET]] y las de salida del [[Transistor bipolar de juntura (TBJ)|TBJ]]. Con al curva de salida
 
-![[Curva de salida del IGBT.png]]
+![[Curva de salida del IGBT.webp]]
 
 #### Estructura
 ---

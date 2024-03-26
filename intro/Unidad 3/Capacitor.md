@@ -8,7 +8,7 @@ capitulo: 3
 El capacitor es un dispositivo electrónico que almacena energía (representada por la [[Capacitancia]])  en un [[Campo eléctrico]] interno.
 
 ##### Simbología
-![[Diagrama de un capacitor.png|400]]
+![[Diagrama de un capacitor.webp|400]]
 
 
 #### Relación con la [[Tensión|tensión]] y la [[Corriente eléctrica|corriente]]

@@ -7,7 +7,7 @@ capitulo: 3
 ---
 Al aplicar una [[Tensión]] sobre la [[Juntura PN]] circula una [[Corriente eléctrica|corriente]]
 
-![[Corriente eléctrica al aplicar una tensión sobre una juntura PN.png|600]]
+![[Corriente eléctrica al aplicar una tensión sobre una juntura PN.webp|600]]
 
 * Para tensiones negativas ([[Convención de signos para la tensión de polarización#Polarización inversa|inversa]]) la corriente es muy pequeña
 * Para tensiones positivas ([[Convención de signos para la tensión de polarización#Polarización directa|directa]]) la corriente crece exponencialmente
@@ -76,7 +76,7 @@ Recordando que la tensión de juntura es $\displaystyle\phi_B = \frac{kT}{q} \ln
 La ecuación de difusión para [[Electrón|electrones]] en la región p-QNR $$ J_n = q D_N^{(p)} \frac{dn(x)}{dx} $$
 Por la [[Aproximación de diodo corto]], podemos decir que la [[Modelo de enlace de Silicio#Concentración de Portador de carga portadores|concentración]] de [[Electrón|electrones]], $n(x)$, suponemos lineal. También por [[Condición de borde en una juntura PN|condiciones de borde]] sabemos que $$ n(x = -W_p) = n_0 = \frac{n_i^2}{N_a} ~~~~~ n(-x_p) = \frac{n_i^2}{N_a} \exp\left( \frac{q~v_D}{kT} \right) $$ donde $W_p$ es el ancho del [[Semiconductor]] del, en este caso, lado p
 
-![[Concentración lineal de electrones en la región p-QNR con polarización.png]]
+![[Concentración lineal de electrones en la región p-QNR con polarización.webp]]
 
 Por lo que la derivada de la concentración de electrones queda $$ \frac{dn}{dx} = \frac{n_p(-x_p) - n_p(-W_p)}{-x_p + W_p} $$
 Dándonos una [[Densidad de corriente eléctrica|densidad de corriente de electrones]] $$ \begin{align} 

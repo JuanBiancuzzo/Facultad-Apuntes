@@ -26,7 +26,7 @@ Una alternativa para la resistencia de polarización $R_D$ es utilizar fuentes d
 
 ##### El transistor N-MOS como fuente de corriente
 ---
-![[el transistor N-MOS como fuente de corriente.png]]
+![[el transistor N-MOS como fuente de corriente.webp]]
 
 $$ i_{out} = \frac{1}{2} \mu ~ C'_{ox} \frac{W}{L} (V_{REF} - V_T)^2 ~ (1 + \lambda \cdot v_{out}) $$
 
@@ -39,7 +39,7 @@ Características
 
 ##### El transistor P-MOS como fuente de corriente
 ---
-![[el transistor P-MOS como fuente de corriente.png]]
+![[el transistor P-MOS como fuente de corriente.webp]]
 
 $$ i_{out} = \frac{1}{2} \mu ~ C'_{ox} \frac{W}{L} ~ (V_{REF} - V_{DD} - V_T)^2 ~ (1 - \lambda (v_{out} - V_{DD}) ) $$
 Características

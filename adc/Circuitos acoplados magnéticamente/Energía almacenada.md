@@ -9,7 +9,7 @@ Un [[Inductor|inductor]] [[Acoplación magnética|asilado magnéticamente]] esta
 
 En el caso de dos inductores [[Acoplación magnética|acoplados magnéticamente]], con [[Bornes homólogos|bornes homólogados]]
 
-![[Dos bobinas en paralelo y bornes homólogos.png]]
+![[Dos bobinas en paralelo y bornes homólogos.webp]]
 
 $$ w = \frac{1}{2} L_1 i_1^2 + \frac{1}{2} L_2 i_2^2 + M i_1 i_2 $$
 
@@ -17,6 +17,6 @@ Donde $M$ es la [[Inductancia mutua]].
 
 Para [[Bornes homólogos|bornes no homólogos]]
 
-![[Dos bobinas en paralelo y bornes no homólogos.png]]
+![[Dos bobinas en paralelo y bornes no homólogos.webp]]
 
 $$ w = \frac{1}{2} L_1 i_1^2 + \frac{1}{2} L_2 i_2^2 - M i_1 i_2 $$

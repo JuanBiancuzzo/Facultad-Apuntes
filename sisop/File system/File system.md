@@ -21,7 +21,7 @@ Los filesystems amoldan su visión de conceptos como "esta es la forma de como a
 
 El resultado es una capa de abstracción general que le permite al kernel manejar muchos tipos de sistemas de archivos de forma fácil y limpia.
 
-![[abstracción del file system.png]]
+![[abstracción del file system.webp]]
 
 #### Definiciones
 ---

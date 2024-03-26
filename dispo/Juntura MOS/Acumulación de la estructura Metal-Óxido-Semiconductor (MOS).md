@@ -22,16 +22,16 @@ La estructura se comporta como un [[Capacitor de placas planas paralelas|capacit
 
 #### Concentraciones de los [[Portador de carga|portadores]]
 ---
-![[Concentración de portadores en la estructura MOS en regimen de acumulación.png]]
+![[Concentración de portadores en la estructura MOS en regimen de acumulación.webp]]
 
 #### Densidad de [[Carga eléctrica|carga]] espacial
 ---
-![[Densidad de carga en una estructura MOS en regimen de acumulación.png]]
+![[Densidad de carga en una estructura MOS en regimen de acumulación.webp]]
 
 #### [[Campo eléctrico]]
 ---
-![[Campo eléctrico en una estructura MOS en regimen de acumulación.png]]
+![[Campo eléctrico en una estructura MOS en regimen de acumulación.webp]]
 
 #### [[Potencial eléctrico|Función potencial]]
 ---
-![[Potencial eléctrico en una estructura MOS en regimen de acumulación.png]]
+![[Potencial eléctrico en una estructura MOS en regimen de acumulación.webp]]

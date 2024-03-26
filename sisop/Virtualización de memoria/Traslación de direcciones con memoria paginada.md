@@ -11,7 +11,7 @@ El [[Traslación de direcciones|address translation]] es similar a como se traba
 
 Teniendo en cuenta que los page frames tienen un tamaño fijo, y son potencia de 2, las entradas en la page table sólo tienen que proveer los bit superiores de la dirección de la page frame. De esta forma van a ser más compactos. No es necesario tener un límite, la página entera se reserva como una unidad
 
-![[Memoria paginada.png]]
+![[Memoria paginada.webp]]
 
 #### Translación con Page Table
 ---
@@ -27,4 +27,4 @@ El [[Procesador|procesador]] va a ejecutar una instrucción después de otra usa
 
 Las estructuras de datos que también son contiguas usando direcciones virtuales, en la realidad una matriz muy grande podría estar desparramada por distintos page frames físicos. La paginación encuentra el mismo [[Traslación de direcciones con tabla de segmentos#Problemas|problema que la segmentación]], saber qué espacio de la memoria está vacío es muy complicado
 
-![[Translación con Page Table.png]]
+![[Translación con Page Table.webp]]

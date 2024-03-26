@@ -15,10 +15,10 @@ Esta resistencia se denomina resistencia dinámica, y podemos usarla para calcul
 * Utilizar la ecuación alineal de X (celeste) para encontrar el punto Q
 * Encontrar la derivada de X en el punto Q
 
-![[Resistencia dinámica.png]]
+![[Resistencia dinámica.webp]]
 
 * Hacer el cambio de ejes
 * Encontrar $v_x(t)$ e $i_x(t)$ utilizando la curva de carga de X (azul), que es función del tiempo, y la resistencia dinámica (rojo)
 * Volver a los ejes de tensiones y corrientes totales. Para esto hay que sumar la constantes $I_{xQ}$ y $V_{xQ}$ que se restó al pasar a los ejes de alterna
 
-![[cambio de ejes de curva de carga de pequeña señal alterna.png]]
+![[cambio de ejes de curva de carga de pequeña señal alterna.webp]]

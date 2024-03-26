@@ -44,5 +44,5 @@ $$ x_d(V_{PN}) = \sqrt\frac{2\varepsilon_{sc} (\phi_B - V_{PN}) (N_a + N_d)}{q N
 $$ |E(V_{PN})| = \sqrt\frac{2q (\phi_B - V_{PN}) N_a N_d}{\varepsilon_{sc}(N_a + N_d)} = |E_0| ~  \sqrt{1 - \frac{V_{PN}}{\phi_B}} $$
 Esto produce que la [[Potencial eléctrico|función de potencial]], el [[Campo eléctrico]] y la [[Densidad volumétrica de carga eléctrica|densidad de carga]] se modifique de la siguiente forma
 
-![[Función de potencial, campo eléctrico y densidad de carga para una juntura PN polarizada.png|600]]
+![[Función de potencial, campo eléctrico y densidad de carga para una juntura PN polarizada.webp|600]]
 

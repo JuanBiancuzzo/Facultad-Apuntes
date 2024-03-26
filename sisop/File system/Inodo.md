@@ -9,7 +9,7 @@ Esta es una de las estructuras almacenadas en el disco más importantes. Casi to
 
 Un inodo simplemente es referido por un número llamado `inumbre` que sería lo que hemos llamado el nombre subyacente en el disco de un archivo. En este sistema de archivos y en varios otros, dado un `inumber` se puede saber directamente en que parte del disco se encuentra el inodo correspondiente
 
-![[Inode table.png]]
+![[Inode table.webp]]
 
 Para leer el inodo número $32$, el sistema de archivos debe
 1. Calcular el offset en la región de inodos `32 * sizeof(inode) = 81922` 

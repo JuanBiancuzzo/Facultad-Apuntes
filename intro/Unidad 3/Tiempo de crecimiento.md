@@ -23,5 +23,5 @@ $$
 Notar que depende de la [[Constante de tiempo]].
 Entonces, esquematizandolo:
 
-![[Tiempo de carga de un capacitor.png]]
+![[Tiempo de carga de un capacitor.webp]]
 

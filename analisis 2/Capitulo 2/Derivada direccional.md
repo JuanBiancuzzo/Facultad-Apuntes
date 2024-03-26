@@ -11,7 +11,7 @@ $$ f'_\hat{v} = \lim{h \to 0}\frac{f(x_0 + h \cdot v) - f(x_0)}{h} $$
 
 Donde lo podríamos visualizar 
 
-![[Pasted image 20211101192627.png]]
+![[Pasted image 20211101192627.webp]]
 
 ### Diferenciabilidad
 ---

@@ -7,4 +7,4 @@ capitulo: 2
 ---
 Es un [[Plot de relación]], para dos variables con [[Distribución continua]]. Muy parecido al [[Scatter plot]] pero muestra la [[Recta de regresión]] para estos puntos, con una cierta incertidumbre.
 
-![[Regression plot.png|600]]
+![[Regression plot.webp|600]]

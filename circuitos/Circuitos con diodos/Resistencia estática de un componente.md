@@ -7,7 +7,7 @@ capitulo: 1
 ---
 Definimos como resistencia estática de un componente al valor de [[Resistencia|resistencia]] por el cual tendríamos que reemplazarlo de forma que no varía ninguna [[Tensión|tensión]] ni [[Corriente eléctrica|corriente]] en el [[Circuito eléctrico|circuito]]
 
-![[Resistencia estática de un componente.png]]
+![[Resistencia estática de un componente.webp]]
 
 En este grafico podemos ver en verde la [[Curva característica de un componente|curva característica]] de un [[Resistor|resistor]]. La misma se interseca con la [[Curva de carga de un componente|curva de carga]] en el mismo punto Q que el componente X. Éste es el valor de la resistencia estática de X en el punto Q
 

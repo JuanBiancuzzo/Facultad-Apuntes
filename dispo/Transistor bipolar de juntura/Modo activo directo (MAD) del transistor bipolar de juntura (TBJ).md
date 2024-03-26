@@ -15,13 +15,13 @@ $$ \begin{align}
 
 #### [[Modelo de Ebers-Moll]]
 ---
-![[Modelo de Ebers-Moll para modo activo directo.png]]
+![[Modelo de Ebers-Moll para modo activo directo.webp]]
 
 Típicamente $V_{BE~(on)} \simeq 0.7~V$. $I_B$ depende del circuito externo.
 
 ### Análisis
 ---
-![[Distribución de portadores en transistor NPN en escala semilog.png]]
+![[Distribución de portadores en transistor NPN en escala semilog.webp]]
 
 * El perfil de [[Electrón|electrones]] sugiere que habrá [[Corriente de difusión|difusión]] desde emisor hacia colector, donde serán extraídos por el [[Campo eléctrico]] en la SCR
 * El perfil de [[Hueco|huecos]] sugiere que solamente habrá difusión desde base hacia emisor.
@@ -43,7 +43,7 @@ Para $I_E$
 1. Inyección de $e^-$ de E a B ($\sim ~ I_C$)
 2. Inyección de $h^+$ de B a E ($\sim ~ I_B$)
 
-![[Perfil de portadores minoritarios en modo activo directo.png]]
+![[Perfil de portadores minoritarios en modo activo directo.webp]]
 
 Por lo que podemos entender que $$ I_C = - I_n = \frac{qA_{BE} ~ D_n^B ~ n_i^2}{W_B ~ N_{aB}} \cdot \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - 1 \right) = I_S  \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - 1 \right) $$ donde $I_S$ es la corriente de saturación del colector, en $[A]$
 

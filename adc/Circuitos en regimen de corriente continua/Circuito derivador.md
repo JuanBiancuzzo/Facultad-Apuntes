@@ -11,4 +11,4 @@ $$ v_o = - RC \frac{dv_i}{dt} $$
 
 En este caso, veamos como también se usa [[Capacitor|capacitores]]
 
-![[Circuito derivador.png]]
+![[Circuito derivador.webp]]

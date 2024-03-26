@@ -11,6 +11,6 @@ $$ v_o = - \left( \frac{R_f}{R_1} ~ v_1 + \frac{R_f}{R_2} ~ v_2 + \frac{R_f}{R_3
 
 vemos que el [[Circuito eléctrico|circuito]] combina varias entradas y produce una salida que es la suma ponderada de las entradas.
 
-![[Amplificador sumador.png|450]]
+![[Amplificador sumador.webp|450]]
 
 Notemos que podemos resolverlo por [[Principio de superposición|superposición]] y nos quedan [[Amplificador inversor|amplificadores inversores]].

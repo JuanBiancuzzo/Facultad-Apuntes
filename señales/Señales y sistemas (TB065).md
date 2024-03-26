@@ -39,7 +39,7 @@ tags: materia
 
 ##### Serie de Fourier (1)
 ---
-* [[señales/Serie de Fourier/temp.md|temp]]
+* [[Mutuamente ortogonal|Mutuamente ortogonal]]
 
 ##### Transformada de Fourier (1)
 ---

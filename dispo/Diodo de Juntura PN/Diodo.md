@@ -13,7 +13,7 @@ Se establece un [[Convención de signos para la tensión de polarización|conven
 ---
 Comparemos la corriente que fluye por un diodo real en comparación al [[Corriente del Diodo|diodo ideal]], dándonos la [[Curva característica de un componente|curva característica]]
 
-![[El diodo ideal vs. el diodo real.png|500]]
+![[El diodo ideal vs. el diodo real.webp|500]]
 
 Al medir la características de la [[Corriente eléctrica|corriente]]-[[Tensión|tensión]] de un diodo real se observa que es necesario introducir factores empíricos en la [[Corriente del Diodo|ecuación teórica]] para que la misma ajuste correctamente la curva experimental
 

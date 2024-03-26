@@ -7,4 +7,4 @@ capitulo: 2
 ---
 Es una [[Serie de tiempo]] que no sufre la suavización como el [[Lineplot]], ya que no une los puntos.
 
-![[Lollipop plot.png|600]]
+![[Lollipop plot.webp|600]]

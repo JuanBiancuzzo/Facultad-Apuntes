@@ -33,7 +33,7 @@ Donde
 ---
 Un caso de [[Cuadripolo|cuadripolo]] es un [[Amplificador Emisor Común|amplificador mono-etapa emisor común]] 
 
-![[Amplificador emisor común como un cuadripolo.png]]
+![[Amplificador emisor común como un cuadripolo.webp]]
 
 ### Inversos
 ---

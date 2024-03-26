@@ -7,7 +7,7 @@ capitulo: 7
 ---
 Consideremos el siguiente [[Amplificador de tensión|amplificador]] implementado con un [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|MOSFET]]  [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Canal-N|canal N]]
 
-![[Amplificador source común.png]]
+![[Amplificador source común.webp]]
 
 La fuente de polarización ($V_{GG}$ y $R_G$) representa el [[Teorema de Thevenin|equivalente de Thevenin]] del [[Circuito eléctrico|circuito]] de polarización del MOSFET. 
 
@@ -15,7 +15,7 @@ La fuente de polarización ($V_{GG}$ y $R_G$) representa el [[Teorema de Theveni
 ---
 Usando el [[Modelo de pequeña señal para Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Modelo Modelo para bajas frecuencias|modelo de pequeña señal para baja frecuencia]] y pasivando las [[Fuente de tensión|fuentes de tensión continuas]], tendremos
 
-![[Amplificador source común con modelo de pequeña señal.png]]
+![[Amplificador source común con modelo de pequeña señal.webp]]
 
 Esto se puede pensar como los [[Parámetros híbridos de un cuadripolo|parámetros de un cuadripolo]]
 

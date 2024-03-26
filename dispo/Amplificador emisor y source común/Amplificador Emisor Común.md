@@ -7,7 +7,7 @@ capitulo: 7
 ---
 Este es un [[Amplificador de tensión|amplificador de tensión]], basado en un [[Transistor bipolar de juntura (TBJ)|TBJ]] 
 
-![[Amplificador emisor común.png]]
+![[Amplificador emisor común.webp]]
 
 Suponiendo que $R_L \to \infty$ y no afecta al funcionamiento del [[Circuito eléctrico|circuito]].
 
@@ -83,7 +83,7 @@ Usando el [[Modelo de pequeña señal para transistor bipolar de juntura (TBJ)#M
 \end{document}
 ```
 
-![[Amplificador emisor común con modelo de pequeña señal.png]]
+![[Amplificador emisor común con modelo de pequeña señal.webp]]
 
 Esto se puede pensar como los [[Parámetros híbridos de un cuadripolo|parámetros de un cuadripolo]]
 
@@ -156,7 +156,7 @@ Para un $V_{out}$ fijo, la ganancia depende sólo de $V_{CC}$, mientras que se e
 #### Máxima señal sin distorsión
 ---
 La distorsión ocurre cuando el [[Transistor|transistor]] no está trabajando en el régimen que corresponde. La relación de la señal de salida con la señal de entrada no será [[Función R-lineal|lineal]]. Existirá una deformación de la señal de salida y entonces $$ v_{out} \ne A_{vo} v_{in} $$
-![[Máxima señal sin distorsión.png]]
+![[Máxima señal sin distorsión.webp]]
 
 ##### [[Distorsión por alinealidad en un Amplificador emisor común|Distorsión por alinealidad]]
 ---

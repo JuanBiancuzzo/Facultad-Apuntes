@@ -21,7 +21,7 @@ Los VFS presentan una serie de estructuras que [[Modelar|modelan]] un [[File sys
 * File:
 	* Representa a un [[Archivo]] asociado a un determinado [[Proceso|proceso]] 
 
-![[Objetos del Virtual File System (VFS).png]]
+![[Objetos del Virtual File System (VFS).webp]]
 
 A tener en cuenta que un directorio es tratado como un archivo normal, no hay un objeto especifico para directorios. En [[Unix]] los directorios son archivos normales que listan los archivos contenidos en ellos.
 

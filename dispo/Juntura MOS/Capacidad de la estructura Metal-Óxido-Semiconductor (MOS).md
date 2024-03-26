@@ -7,7 +7,7 @@ capitulo: 5
 ---
 La [[Estructura Metal-Óxido-Semiconductor (MOS)|estructura MOS]] es muy similar a un [[Capacitor de placas planas paralelas]], donde una de las placas se constituye con un [[Semiconductor]] en lugar de un metal.
 
-![[Curva C-V teórica de la estructura MOS.png]]
+![[Curva C-V teórica de la estructura MOS.webp]]
 
 #### En [[Acumulación de la estructura Metal-Óxido-Semiconductor (MOS)|acumulación]]
 ---

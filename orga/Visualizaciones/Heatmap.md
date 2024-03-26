@@ -7,6 +7,6 @@ capitulo: 2
 ---
 Es un [[Plot de relación]], para dos variables con [[Distribución discreta]]. Nos permite ver muchos valores al mismo tiempo.
 
-![[Heatmap.png|600]]
+![[Heatmap.webp|600]]
 
 Donde el valor mostrado suele ser algun agregado, por ejemplo la [[Mediana]] o algun otro valor en general.

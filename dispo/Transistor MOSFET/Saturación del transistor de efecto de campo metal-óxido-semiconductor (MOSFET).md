@@ -7,11 +7,11 @@ capitulo: 6
 ---
 Teniendo un [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|MOSFET]] con $V_{GS} > V_T$, $V_{GD} < V_T$ con $V_{DS} > 0$
 
-![[Regimen de saturación del MOSFET.png]]
+![[Regimen de saturación del MOSFET.webp]]
 
 La [[Corriente eléctrica|corriente]] $I_D$ es independiente de $V_{DS}$: $I_D = I_{D ~ sat}$
 
-![[Curva de salida del MOSFET sin efecto de modulación del largo del canal.png]]
+![[Curva de salida del MOSFET sin efecto de modulación del largo del canal.webp]]
 
 #### [[Corriente eléctrica]]
 ---
@@ -19,7 +19,7 @@ Donde la corriente esta dada por $$ I_D = \frac{1}{2} \frac{W}{L} \mu_n C'_{ox} 
 #### Calculo de la [[Corriente eléctrica|corriente]]
 ---
 Geometría del problema:
-![[Geometría de un MOSFET.png]]
+![[Geometría de un MOSFET.webp]]
 
 La condición de saturación es $$ V_{GD} = V_T = V_{GS} - V_{DS} \implies V_{DS ~ (sat)} = V_{GS} - V_T $$
 La corriente de Drain en esta situación puede calcularse como $$ I_{D ~ (sat)} = I_D(V_{DS} = V_{DS ~ (sat)} = V_{GS} - V_T) $$
@@ -27,16 +27,16 @@ Donde la corriente esta dada por la [[Triodo del transistor de efecto de campo m
 
 ##### Curva de salida ($I_D$ vs. $V_{DS}$)
 ---
-![[Curva de salida del MOSFET sin efecto de modulación del largo del canal.png]]
+![[Curva de salida del MOSFET sin efecto de modulación del largo del canal.webp]]
 
 ##### Curva de transferencia en saturación ($I_D$ vs. $V_{GS}$)
 ---
-![[Curva de transferencia del MOSFET sin efecto de modulación del largo del canal.png]]
+![[Curva de transferencia del MOSFET sin efecto de modulación del largo del canal.webp]]
 
 ##### Pinch-off ($V_{DS} = V_{GS} - V_T$)
 ---
 La [[Carga eléctrica|carga]] del canal en el  extremo del Drain $$ Q'_n(L) = -C'_{ox} (V_{GS} - V_{DS} - V_T) = 0 $$
-![[Pinch-off en el MOSFET.png]]
+![[Pinch-off en el MOSFET.webp]]
 
 Por lo que no hay una capa de [[Inversión de la estructura Metal-Óxido-Semiconductor (MOS)|inversión]] en el extremo del Drain. A esta situación se la suele conocer como pinch-off
 * La ecuación de control de carga es inexacta en el entorno de $V_T$

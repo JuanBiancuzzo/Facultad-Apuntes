@@ -11,4 +11,4 @@ El ciclo de una instrucción en una arquitectura de Von Newman es
 3. Ejecutar la instrucción (Execute)
 4. CP $\implies$ Próxima instrucción
 
-![[Arquitectura de Von Newman.png]]
+![[Arquitectura de Von Newman.webp]]

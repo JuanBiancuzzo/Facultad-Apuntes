@@ -17,7 +17,7 @@ El número de segmento es el índice de la tabla para ubicar el inicio del segme
 
 En una dirección virtual utilizando esta técnica, los bit de más alto orden son utilizados como índice en la tabla de segmentos. El resto se toma como offset y es sumado el registro base y comparado contra el registro de segmento. El número de segmentos depende de la cantidad de bits que se utilizan como índice.
 
-![[Traslación de direcciones con tabla de segmentos.png]]
+![[Traslación de direcciones con tabla de segmentos.webp]]
 
 #### Detalles
 ---

@@ -21,6 +21,6 @@ G (f_\text{corte})= \frac{V_0}{V_i}(f_\text{corte})=\frac{1}{\sqrt{2}}
 \end{align}$$
 Esto generalmente se utiliza en gráficos de ganancia vs frecuencia, como el que se muestra a continuación.
 
-![[Frecuencia de corte.png]]
+![[Frecuencia de corte.webp]]
 
 

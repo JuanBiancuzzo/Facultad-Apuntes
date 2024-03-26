@@ -7,7 +7,7 @@ capitulo: 3
 ---
 Este [[Modelo]] también conocido como el tetraedro del fuego
 
-![[Tetraedro del fuego.png|600]]
+![[Tetraedro del fuego.webp|600]]
 
 #### Tiene 4 componentes:
 ---

@@ -9,7 +9,7 @@ Un [[Circuito eléctrico|circuito]] RC de [[Circuito de primer orden|primer ord
 
 ##### Esquematización
 
-![[Circuito RC.png]]
+![[Circuito RC.webp]]
 
 #### Análisis
 ---

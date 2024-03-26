@@ -13,19 +13,19 @@ En el régimen de vaciamiento son validos todos los resultados obtenidos para $V
 
 #### Concentraciones de los [[Portador de carga|portadores]]
 ---
-![[Concentración de portadores en la estructura MOS en regimen de vaciamiento.png]]
+![[Concentración de portadores en la estructura MOS en regimen de vaciamiento.webp]]
 
 #### Densidad de [[Carga eléctrica|carga]] espacial
 ---
-![[Densidad de carga en una estructura MOS en regimen de vaciamiento.png]]
+![[Densidad de carga en una estructura MOS en regimen de vaciamiento.webp]]
 
 #### [[Campo eléctrico]]
 ---
-![[Campo eléctrico en una estructura MOS en regimen de vaciamiento.png]]
+![[Campo eléctrico en una estructura MOS en regimen de vaciamiento.webp]]
 
 #### [[Potencial eléctrico|Función potencial]]
 ---
-![[Potencial eléctrico en una estructura MOS en regimen de vaciamiento.png]]
+![[Potencial eléctrico en una estructura MOS en regimen de vaciamiento.webp]]
 
 Ahora la caída de potencial a lo largo de la región SCR del [[Semiconductor]] $$ \begin{align} 
 	V_B (V_{GB}) &= \frac{1}{2} E(x = 0) ~ x_d(V_{GB}) \\

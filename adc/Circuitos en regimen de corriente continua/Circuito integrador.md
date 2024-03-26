@@ -11,4 +11,4 @@ $$ v_o = - \frac{1}{RC} \int_0^t v_i(\tau) ~ d\tau $$
 
 En este caso, veamos como también se usa [[Capacitor|capacitores]]
 
-![[Circuito integrador.png]]
+![[Circuito integrador.webp]]

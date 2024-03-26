@@ -10,4 +10,4 @@ Es un [[Amplificador operacional|amplificador]], que utilizando las condiciones 
 $$ v_0 = -\frac{R_f}{R_1} ~ v_i $$
 vemos que el [[Circuito eléctrico|circuito]] tiene [[Ganancia]] negativa
 
-![[Amplificador inversor.png|450]]
+![[Amplificador inversor.webp|450]]

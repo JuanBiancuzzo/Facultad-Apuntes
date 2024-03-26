@@ -7,7 +7,7 @@ capitulo: 6
 ---
 Teniendo un [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|MOSFET]] con $V_{GS} > V_T$, $V_{GD} > V_T$ con $V_{DS} > 0$
 
-![[Regimen triodo del MOSFET.png]]
+![[Regimen triodo del MOSFET.webp]]
 
 Los [[Electrón|electrones]] fluyen del source al drain, por lo que hay [[Corriente eléctrica]]
 * $V_{GS} \uparrow \implies |Q_n| \uparrow \implies I_D \uparrow$ 
@@ -20,7 +20,7 @@ Donde la corriente esta dada por $$ I_D = \frac{W}{L} \mu_n C'_{ox} \left( V_{GS
 #### Calculo de la [[Corriente eléctrica|corriente]]
 ---
 Geometría del problema:
-![[Geometría de un MOSFET.png]]
+![[Geometría de un MOSFET.webp]]
 
 La corriente es uniforme y fluye en la dirección $y$ $$ I_y = W Q'_n(y) ~ v_y(y) $$ y como la corriente de Drain es inversa a la corriente del canal $$ I_D = -W Q'_n(y) ~ v_y(y) $$
 Reescribiendo en términos de la [[Tensión|tensión]] del canal $V_c(y)$
@@ -50,7 +50,7 @@ El "local channel overdrive" se reduce cerca del drain.
 
 El impacto que tiene $V_{DS}$ sobre la corriente esta dado por
 
-![[Impacto de Vds en la corriente de Drain en un MOSFET en régimen triodo.png]]
+![[Impacto de Vds en la corriente de Drain en un MOSFET en régimen triodo.webp]]
 
 Cuando $V_{DS} \uparrow$, la despolarización del canal se hace más prominente, por lo tanto $I_D$ crece más lentamente con $V_{DS}$.
 

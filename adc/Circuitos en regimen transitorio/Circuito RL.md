@@ -8,7 +8,7 @@ capitulo: 2
 Un [[Circuito eléctrico|circuito]] RL de [[Circuito de primer orden|primer orden]] es un circuito eléctrico compuesto de un [[Inductor]] y un [[Capacitor]].
 
 ##### Esquematización
-![[Circuito RL.png]]
+![[Circuito RL.webp]]
 
 #### Análisis
 ---

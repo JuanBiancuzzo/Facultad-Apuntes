@@ -7,7 +7,7 @@ capitulo: 1
 ---
 En el caso de Linux y contrariamente a lo que la mayoría de los usuarios creen, Linux no es un sistema operativo sino que Linus desarrolló solo un [[Kernel|kernel]]. El resto de los componentes de Linux son desarrollos de terceros como por ejemplo GNU.
 
-![[Linux kernel.png]]
+![[Linux kernel.webp]]
 
 El kernel de Linux posee ciertas características a la hora de ser comparado con otros [[Programa|programas]]: 
 * El kernel no tiene acceso a la biblioteca C ni a los encabezados C estándar. 

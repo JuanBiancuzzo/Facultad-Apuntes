@@ -30,14 +30,14 @@ La virtual address tiene 3 componentes
 * Un offset dentro de la página
 	* La physical address esta compuesta por el physical page frame que pertenece a la page table con el offset 
 
-![[Segmentación paginada.png]]
+![[Segmentación paginada.webp]]
 #### [[Traslación de direcciones|Address translation]] con 3 niveles de page tables
 ---
-![[Tres niveles de paginación.png]]
+![[Tres niveles de paginación.webp]]
 
 #### [[Traslación de direcciones|Address translation]] con [[Hash table|Tabla de Hash]] por [[Software|software]]
 ---
-![[Tabla de hash.png]]
+![[Tabla de hash.webp]]
 
 #### Multinivel segmentación paginada
 ---

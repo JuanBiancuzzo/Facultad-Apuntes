@@ -9,7 +9,7 @@ Viendo al [[Sistema]] como un conjunto de capas, el [[Sistema operativo|sistema 
 
 Gracias a la existencia del kernel los programas son independientes del [[Hardware]] subyacente, es fácil moverlos entre sistemas [[Unix]] que se ejecutan en hardware diferentes dado que los programas no hacen suposiciones sobre el hardware subyacente, sino que se comunican con el kernel y no con el hardware directamente.
 
-![[Representación en capas de la conexión entre un sistema operativo y el hardware.png]]
+![[Representación en capas de la conexión entre un sistema operativo y el hardware.webp]]
 
 Este contiene por un lado una capa para la gestión de dispositivos específicos y por otro una serie de servicios para la gestión de dispositivos agnósticos del hardware que son utilizados por las aplicaciones.
 

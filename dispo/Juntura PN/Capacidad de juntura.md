@@ -20,7 +20,7 @@ Por lo tanto produciendo un cambio en la tensión $\Delta V$ entre los lados de 
 * Cambio de $\Delta Q_j$ en $-x_p$
 * Cambio de $-\Delta Q_j$ en $x_n$
 
-![[Densidad de carga con variación de tensión en una juntura PN.png]]
+![[Densidad de carga con variación de tensión en una juntura PN.webp]]
 
 Se parece a un [[Capacitor de placas planas paralelas]] donde podemos calcular su [[Capacitancia]] por unidad de área $$ C_j'(V_{PN}) = \frac{\varepsilon_{sc}}{x_d(V_{PN})} = \sqrt\frac{q \varepsilon_{sc} N_a N_d}{2 (\phi_B - V_{PN}) (N_a + N_d)} $$
 También lo podemos pensar como que $$ C_{j_0}' = C_j'(V_{PN} = 0) $$

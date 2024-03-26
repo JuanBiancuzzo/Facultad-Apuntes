@@ -5,7 +5,7 @@ capitulo: 7
 ---
 ### Definición
 ---
-![[Copia de corriente espejo simple.png]]
+![[Copia de corriente espejo simple.webp]]
 
 Despreciando el [[Efecto de modulación del largo del canal|efecto de modulación del largo del canal]] $$ I_{REF} = i_{D1} = \frac{1}{2} \mu_n C'_{ox} \left( \frac{W}{L} \right)_1 (V_{REF} - V_T)^2 $$ $$ i_{out} = i_{D2} = \frac{1}{2} \mu_n C'_{ox} \left( \frac{W}{L} \right)_2 (V_{REF} - V_T)^2 $$
 $$ \implies i_{out} = I_{REF} ~ \frac{\left( \frac{W}{L} \right)_2}{\left( \frac{W}{L} \right)_1} $$
@@ -19,7 +19,7 @@ Es importante contar con transistores "bien apareados":
 
 #### Fuente espejo con P-MOSFET
 ---
-![[Copia de corriente espejo simple P-MOSFET.png]]
+![[Copia de corriente espejo simple P-MOSFET.webp]]
 
 Despreciando el [[Efecto de modulación del largo del canal|efecto de modulación del largo del canal]] $$ I_{REF} = -i_{D1} = \frac{1}{2} \mu_p C'_{ox} \left( \frac{W}{L} \right)_1 (V_{REF} - V_{DD} - V_T)^2 $$ $$ i_{out} = -i_{D2} = \frac{1}{2} \mu_p C'_{ox} \left( \frac{W}{L} \right)_2 (V_{REF} - V_{DD} - V_T)^2 $$
 $$ \implies i_{out} = I_{REF} ~ \frac{\left( \frac{W}{L} \right)_2}{\left( \frac{W}{L} \right)_1} $$
@@ -27,18 +27,18 @@ $$ \implies i_{out} = I_{REF} ~ \frac{\left( \frac{W}{L} \right)_2}{\left( \frac
 ---
 Dado que $I_G = 0$, de una sola referencia de [[Tensión|tensión]] es posible obtener múltiples fuentes espejo
 
-![[Copia de corriente espejo simple múltiples.png]]
+![[Copia de corriente espejo simple múltiples.webp]]
 
 $$ I_{out ~ (n)} = I_{REF} ~ \frac{\left( \frac{W}{L} \right)_n}{\left( \frac{W}{L} \right)_R} $$
 
 La misma idea se aplica a [[Fuente de corriente|fuentes de corriente]] [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Canal-N|NMOS]]
-![[Copia de corriente espejo simple múltiples NMOS.png]]
+![[Copia de corriente espejo simple múltiples NMOS.webp]]
 
 #### Con un TBJ
 ---
 Veamos un ejemplo con [[Transistor bipolar de juntura (TBJ)|TBJ]] de tipo [[Transistor bipolar de juntura (TBJ)#PNP|PNP]]
 
-![[Copia de corriente espejo simple con un TBJ.png]]
+![[Copia de corriente espejo simple con un TBJ.webp]]
 
 En este caso, la relación de corriente ($I_{out} / I_{REF}$) se da por la relación de áreas entre los TBJ ($A_2 / A_1$) $$ \begin{matrix}
 	V_{BE1} = V_{BE2} \implies J_{C1} = J_{C2} \\

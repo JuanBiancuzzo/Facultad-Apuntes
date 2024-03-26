@@ -11,6 +11,6 @@ Para poder simplificar un [[Circuito eléctrico|circuito]] con dos o más [[Indu
 ---
 Usando [[Fasor|fasores]], se tiene la siguiente transformación 
 
-![[Transformación de bobinas.png]]
+![[Transformación de bobinas.webp]]
 
 Notemos la orientación de las [[Fuente de tensión|fuentes]] dada por tener [[Bornes homólogos|bornes no homólogos]]

@@ -7,7 +7,7 @@ capitulo: 6
 ---
 Este transistor tiene como componente principal a la [[Estructura Metal-Óxido-Semiconductor (MOS)|estructura MOS]]
 
-![[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET).png]]
+![[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET).webp]]
 
 Elementos claves
 * Debajo del gate se forma una capa de inversión controlada por la tensión $V_G$
@@ -19,12 +19,12 @@ Elementos claves
 ##### Canal-N
 ---
 Dispositivo de canal-n (n-MOSFET) sobre un substrato [[Impureza aceptora#Cantidad de dopante|tipo p]] (capa de inversión de [[Electrón|electrones]])
-![[MOSFET canal N.png]]
+![[MOSFET canal N.webp]]
 
 ##### Canal-P
 ---
 Dispositivo de canal-p (p-MOSFET) sobre un substrato [[Impureza donora#Cantidad de dopante|tipo n]] (capa de inversión de [[Hueco|huecos]])
-![[MOSFET canal P.png]]
+![[MOSFET canal P.webp]]
 
 #### Regímenes de operación
 ---
@@ -57,16 +57,16 @@ Al modificar $V_{BS}$ cambian las condiciones de contorno del lado del [[Semicon
 
 ##### Densidad de [[Carga eléctrica|carga]]
 ---
-![[Densidad de carga en la capa de inversión de un MOSFET al aumentar la tensión Vbs.png]]
+![[Densidad de carga en la capa de inversión de un MOSFET al aumentar la tensión Vbs.webp]]
 
 Donde la $Q_G$ se mantiene, pero la carga $Q_B$ y $Q_n$ se compensan entre sí para la [[Conservación de carga]].
 ##### [[Campo eléctrico]]
 ---
-![[Campo eléctrico en la capa de inversión de un MOSFET al aumentar la tensión Vbs.png]]
+![[Campo eléctrico en la capa de inversión de un MOSFET al aumentar la tensión Vbs.webp]]
 
 ##### [[Potencial eléctrico|Función potencial]]
 ---
-![[Función potencial en la capa de inversión de un MOSFET al aumentar la tensión Vbs.png]]
+![[Función potencial en la capa de inversión de un MOSFET al aumentar la tensión Vbs.webp]]
 
 * Al considerar $V_{GS}$ fijo, $V_{ox}$ no cambia porque el canal se encuentra al mismo potencial que el Source.
 * Como $V_{ox}$ no cambia, la suma de las [[Carga eléctrica|cargas]] de deserción e inversión no cambian.

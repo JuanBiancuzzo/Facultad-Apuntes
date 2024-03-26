@@ -11,20 +11,20 @@ Al intercambiar el tipo de dopaje, pueden obtenerse dos combinaciones distintas
 
 ##### NPN
 ---
-![[TBJ con regiones NPN.png]]
+![[TBJ con regiones NPN.webp]]
 
 Donde tenemos, por construcción $$ N_{dE} > N_{aB} > N_{dC} $$
 
 ##### PNP
 ---
-![[TBJ con regiones PNP.png]]
+![[TBJ con regiones PNP.webp]]
 
 Donde tenemos, por construcción $$ N_{aE} > N_{dB} > N_{aC} $$
 ### Modos de operación
 ---
 Independientemente de si el TBJ es NPN o PNP, tiene 4 modos de operación. Tomaremos como referencia el NPN, pero se aplica de la misma forma para el PNP
 
-![[Transistor NPN.png]]
+![[Transistor NPN.webp]]
 
 #### [[Modo activo directo (MAD) del transistor bipolar de juntura (TBJ)|Modo activo directo (MAD)]]
 ---

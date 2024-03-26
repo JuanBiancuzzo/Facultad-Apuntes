@@ -7,7 +7,7 @@ capitulo: 6
 ---
 El [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|MOSFET]] es un dispositivo [[Función R-lineal|alineal]] por lo que no cumple el [[Principio de superposición]]. Entonces teniendo el [[Circuito eléctrico|circuito]]
 
-![[Circuito de pequeña señal del Transistor de efecto de campo metal-óxido-semiconductor (MOSFET).png]]
+![[Circuito de pequeña señal del Transistor de efecto de campo metal-óxido-semiconductor (MOSFET).webp]]
 
 Por lo tanto vamos a aproximarla usando el [[Serie de Taylor#Polinomio de Taylor|polinomio de Taylor]] de primer orden $$ \begin{align}
 	i_D(V_{GS} + v_{gs}, V_{DS} + v_{ds}, V_{BS} + v_{bs}) \simeq& ~ I_DQ(V_{GS}, V_{DS}, V_{BS}) \\
@@ -34,13 +34,13 @@ Definimos:
 * $g_{mb} \equiv$ [[Transconductancia del backgate|transconductancia del backgate]] $[S]$
 
 Dándonos el modelo completo que pequeña señal a baja frecuencia 
-![[Modelo completo del MOSFET para pequeña señal a baja frecuencia.png]]
+![[Modelo completo del MOSFET para pequeña señal a baja frecuencia.webp]]
 
 #### [[Modelo|Modelo]] para altas frecuencias
 ---
 Las [[Capacitancia|capacitancias]] parásitas del [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|MOSFET]] limitan su respuesta dinámica y en [[Función senoidal#Frecuencia|frecuencia]]. El régimen más importante para aplicaciones analógicas es el de [[Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|saturación]].
 
-![[Estructura MOSFET con capacitancias.png]]
+![[Estructura MOSFET con capacitancias.webp]]
 
 Definimos:
 * $C_{gs} \equiv$ [[Capacidad de Gate contra canal de inversión|capacitancia de Gate contra canal de inversión]] + [[Capacidad de overlap|capacitancia de overlap]]
@@ -49,5 +49,5 @@ Definimos:
 * $C_{db} \equiv$ [[Capacidad de juntura|capacidad de juntura]] Drain-Bulk $= C'j(V_{BD}) ~ A_D$
 
 Dándonos el modelo completo que pequeña señal a alta frecuencia
-![[Modelo completo del MOSFET para pequeña señal a alta frecuencia.png]]
+![[Modelo completo del MOSFET para pequeña señal a alta frecuencia.webp]]
 

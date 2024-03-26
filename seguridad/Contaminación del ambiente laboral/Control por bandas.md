@@ -10,7 +10,7 @@ Hay dos tipos bandas de control, bandas de severidad, bandas de exposición:
 #### Bandas de control
 * Es un método administrativo cualitativo que estratifica el riesgo potencial en niveles (bandas) y asigna controles a cada una de ellas.
 * Se aplica a nanomateriales [[Insoluble]].
-* ![[Control banding.png|600]]
+* ![[Control banding.webp|600]]
 
 #### Bandas de severidad
 * La puntuación por severidad se obtiene como un 70% del nanomaterial y un 30% del material parental

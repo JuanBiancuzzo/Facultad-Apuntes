@@ -7,7 +7,7 @@ capitulo: 1
 ---
 Una división de [[Corriente eléctrica|corriente]] es un [[Circuito eléctrico|circuito]] que divide la corriente de entrada en el circuito en otras dos diferentes y más pequeñas de salida, con [[Resistor|resistores]]
 
-![[División de corriente.png]]
+![[División de corriente.webp]]
 
 Entonces
 $$ I_{R_1} = \frac{I_0 \cdot R_2}{R_1 + R_2} $$

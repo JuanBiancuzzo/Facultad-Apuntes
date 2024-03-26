@@ -19,6 +19,8 @@ export const sharedPageComponents: SharedLayout = {
 
         Component.Search(),
 
+        Component.DesktopOnly(Component.Darkmode()),
+
         Component.DesktopOnly(Component.Explorer()),
         Component.DesktopOnly(Component.Spacer()),
     ],

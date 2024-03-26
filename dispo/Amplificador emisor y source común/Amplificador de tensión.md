@@ -46,6 +46,6 @@ $$ v_{in} = \frac{R_{in}}{R_s + R_{in}} ~ v_s < v_s $$
 Para que $v_{in}$ tienda a $v_s$, $R_{in}$ tiende a infinito, es decir $$ v_{in} \xrightarrow[R_{in} \to \infty]{} v_s $$
 ##### Resistencia de salida ($R_{out}$) baja
 ---
-![[Resistencia de salida en un amplificador simplificado.png]]
+![[Resistencia de salida en un amplificador simplificado.webp]]
 $$ v_{out} = \frac{R_L}{R_{out} + R_L} ~ A_{vo} v_{in} < A_{vo} v_{in} $$
 Para que $v_{out}$ tienda a $A_{vo} v_{in}$, entonces $R_{out}$ tiende a 0, es decir $$ v_{out} \xrightarrow[R_{out} \to 0]{} A_{vo} v_{in} $$

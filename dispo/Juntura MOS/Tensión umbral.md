@@ -11,7 +11,7 @@ Al no poder despreciar su aporte de carga, no vale la [[Aproximación de vaciami
 
 Se define la situación umbral cuando $n(0) = N_a$. Por lo que superando el umbral, no se puede despreciar la contribución de los [[Electrón|electrones]] a la [[Electrostática]].
 
-![[Concentración de portadores en una estructura metal óxido semiconductor (MOS) en situación umbral.png]]
+![[Concentración de portadores en una estructura metal óxido semiconductor (MOS) en situación umbral.webp]]
 
 #### Cálculo de la [[Tensión|tensión]] umbral
 ---
@@ -21,7 +21,7 @@ Usaremos la siguiente hipótesis:
 * Utilizar la [[Electrostática]] de vaciamiento (despreciar la concentración de [[Electrón|electrones]] para tensión umbral)
 
 Primero, calculamos $\phi(0)$ para $V_{GB} = V_T$ con la [[Relación de Boltzmann]] $$ \phi(0) \biggm|_{V_T} = \frac{kT}{q} \ln \left( \frac{n(0) \bigm|_{V_T}}{n_i} \right) = \frac{kT}{q} \ln \left( \frac{N_a}{n_i} \right) = - \phi_p $$
-![[Función de potencial en una estructura metal óxido semiconductor (MOS) en situación umbral.png]]
+![[Función de potencial en una estructura metal óxido semiconductor (MOS) en situación umbral.webp]]
 
 Resultando en $$ V_B(V_T) = - 2 \phi_p $$
 Segundo, calculamos la caída de [[Potencial eléctrico|potencial]] en el óxido para la tensión umbral $$ V_{ox}(V_T) = E_{ox}(V_T) ~ t_{ox} = \frac{q ~ N_a ~ x_d(V_T)}{\varepsilon_{ox}} ~ t_{ox} $$
@@ -38,4 +38,4 @@ Si aplicamos la tensión $V_{BS}$, la misma afecta la caída del [[Potencial el�
 
 Además la [[Tensión|diferencia de potencial]] entre el Gate y el semiconductor también se incrementa $-V_{BS}$. Por lo que podemos reescribir la ecuación como $$ V_T - V_{FB} - V_{BS} = - 2\phi_p - V_{BS} + \gamma \sqrt{-2 \phi_p - V_{BS}} $$ despejando, obtenemos $$ V_T(V_{BS}) = V_{FB} - 2\phi_p + \gamma \sqrt{-2 \phi_p - V_{BS}} $$
 Si definimos $V_{T0} = V_T(V_{BS} = 0)$ podemos reescribirla como $$ V_T(V_{BS}) = V_{T0} + \gamma ~ \left( \sqrt{-2 \phi_p - V_{BS}} - \sqrt{-2 \phi_p} \right) $$
-![[Curva de transferencia de un MOSFET al disminuir Vbs.png]]
+![[Curva de transferencia de un MOSFET al disminuir Vbs.webp]]

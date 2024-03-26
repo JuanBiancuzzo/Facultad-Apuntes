@@ -8,4 +8,4 @@ capitulo: 2
 Es aquella que genera una [[Tensión]] entre sus terminales constante e independiente de la carga.
 
 ##### Simbología
-![[Diagrama de una fuente de tensión.png]]
+![[Diagrama de una fuente de tensión.webp]]

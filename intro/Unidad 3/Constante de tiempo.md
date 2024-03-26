@@ -42,7 +42,7 @@ Es decir, que la [[intro/Unidad 1/Tensión]] de carga sobre un capacitor, en un 
 
 ##### Esquematizándolo
 
-![[Constante de tiempo.png]]
+![[Constante de tiempo.webp]]
 
 ##### Tiempo de carga de un capacitor
 El tiempo que tarda un capacitor para cargarse en su totalidad es de $5\tau$.

@@ -14,17 +14,17 @@ Si una [[Corriente eléctrica|corriente]] entra a la terminar marcada de la bobi
 Si consideramos un [[Circuito eléctrico|circuito]] con 2 [[Inductor|bobinas]] [[Acoplación magnética|acopladas magnéticamente]]
 
 ##### Bornes homólogos
-![[Dos bobinas en paralelo y bornes homólogos.png]]
+![[Dos bobinas en paralelo y bornes homólogos.webp]]
 
 ##### Bornes no homólogos
-![[Dos bobinas en paralelo y bornes no homólogos.png]]
+![[Dos bobinas en paralelo y bornes no homólogos.webp]]
 
 #### [[Inductores en serie|Bobinas en serie]]
 ---
 Si consideramos un [[Circuito eléctrico|circuito]] con 2 [[Inductor|bobinas]] [[Acoplación magnética|acopladas magnéticamente]]
 
 ##### Bornes homólogos
-![[Dos bobinas en serie y bornes homólogos.png]]
+![[Dos bobinas en serie y bornes homólogos.webp]]
 
 ##### Bornes no homólogos
-![[Dos bobinas en serie y bornes no homólogos.png]]
+![[Dos bobinas en serie y bornes no homólogos.webp]]

@@ -17,13 +17,13 @@ $$  \begin{align}
 
 #### [[Modelo de Ebers-Moll]]
 ---
-![[Modelo de Ebers-Moll para saturación.png]]
+![[Modelo de Ebers-Moll para saturación.webp]]
 
 El dispositivo se comporta como dos [[Diodo|diodos]] en [[Convención de signos para la tensión de polarización#Polarización directa|directa]] con la base como ánodo común. Luego puede obtenerse $V_{CE ~ (sat)} = V_{BE ~ (on)} - V_{BC ~ (on)} \simeq 0.2~V$. $I_B$ e $I_C$ dependen del circuito externo.
 
 ### Análisis
 ---
-![[Perfil de portadores minoritarios en saturación.png]]
+![[Perfil de portadores minoritarios en saturación.webp]]
 
 El régimen de saturación es la superposición del régimen [[Modo activo directo (MAD) del transistor bipolar de juntura (TBJ)|activo]] y [[Modo activo inverso (MAI) del transistor bipolar de juntura (TBJ)|reverso]] entonces $$ I_C = I_S ~ \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - \exp \left( \frac{V_{BC}}{V_{th}} \right) \right) - \frac{I_S}{\beta_R} \left( \exp \left( \frac{V_{BC}}{V_{th}} \right) - 1 \right) $$ donde $\beta_R$ es la [[Ganancia de corriente en modo activo inverso (MAI)|ganancia en MAI]]
 

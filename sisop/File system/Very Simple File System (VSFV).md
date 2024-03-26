@@ -19,13 +19,13 @@ Lo primero que se debe hacer es dividir al disco en bloques, los [[File system|s
 ---
 La versión del sistema de archivos debe ser la de una partición de $N$ bloques (de $0$ a $N-1$) de un tamaño de $N * 4 ~ KB$ bloques. Si suponemos en un disco muy pequeño, de unos $64$ bloques, este podría verse así
 
-![[Organización en disco de un Very Simple File System (VSFV) vacio.png]]
+![[Organización en disco de un Very Simple File System (VSFV) vacio.webp]]
 
 A la hora de armar un sistema de archivos una de las cosas que es necesario almacenar son los datos, de hecho la mayor cantidad de espacio ocupado en un file system es por los datos de usuarios. Esta región se llama por ende data region.
 
 Otra vez en nuestro pequeño disco es ocupado por ejemplo por $56$ bloques de datos de los $64$
 
-![[Organización en disco de un Very Simple File System (VSFV) con data region.png]]
+![[Organización en disco de un Very Simple File System (VSFV) con data region.webp]]
 
 ##### Inodos
 ---
@@ -33,7 +33,7 @@ Como se ha visto anteriormente el sistema de archivos debe mantener información
 
 Los inodos también deben ser guardarse en el disco, para ello se los guarda en una tabla llamada inode table que simplemente es un array de inodos almacenados en el disco.
 
-![[Organización en disco de un Very Simple File System (VSFV) con data region e inodos.png]]
+![[Organización en disco de un Very Simple File System (VSFV) con data region e inodos.webp]]
 
 Cabe destacar que los inodos no son estructuras muy grandes, normalmente ocupan unos $128$ o $256$ bytes. Suponiendo que los inodos ocupan $256$ bytes, un bloque de $4 ~ KB$ puede guardar $16$ inodos por ende nuestro sistema de archivos tendrá como máximo $80$ inodos. Esto representa también la cantidad máxima de archivos que podrá contener nuestro sistema de archivos.
 
@@ -43,7 +43,7 @@ El sistema de archivos tiene los datos (D) y los inodos (I) pero todavía nos fa
 
 Un bitmap es una estructura bastante sencilla en la que se mapea $0$ si un objeto está libre y $1$ si el objeto está ocupado. En este caso cada (i) sería el bitmap de inodos y (d) sería el bitmap de datos
 
-![[Organización en disco de un Very Simple File System (VSFV) con data region, inodos y bitmaps de alocación.png]]
+![[Organización en disco de un Very Simple File System (VSFV) con data region, inodos y bitmaps de alocación.webp]]
 
 Obviamente cada bitmap ocupa menos de $4 ~KB$, pero se utiliza un bloque por cada uno indefectiblemente. 
 
@@ -55,4 +55,4 @@ Se podrá observar que queda un único bloque libre en todo el disco. Este bloqu
 * Donde comienza la tabla de inodos
 * Donde comienzan los bitmaps
 
-![[Organización en disco de un Very Simple File System (VSFV) completo.png]]
+![[Organización en disco de un Very Simple File System (VSFV) completo.webp]]

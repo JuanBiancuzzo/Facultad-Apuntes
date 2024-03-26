@@ -7,7 +7,7 @@ capitulo: 3
 ---
 Usando el efecto de incremento de [[Corriente eléctrica|corriente]] [[Convención de signos para la tensión de polarización#Polarización inversa|inversa]], dado por la [[Ruptura inversa]], dando a lugar a este nuevo [[Diodo]].
 
-![[Corriente del diodo zener.png]]
+![[Corriente del diodo zener.webp]]
 
 * Se utiliza en [[Convención de signos para la tensión de polarización#Polarización inversa|polarización inversa]]
 * Presenta una región de [[Tensión]] casi constante para un rango amplio de corrientes

@@ -7,7 +7,7 @@ capitulo: 5
 ---
 Dada una [[Estructura Metal-Óxido-Semiconductor (MOS)|Estructura MOS]] [[Estructura Metal-Óxido-Semiconductor (MOS) con polarización|polarizada]], para $V_{GB} > V_T$, donde $V_T$ es la [[Tensión umbral]]. La concentración de [[Electrón|electrones]] en la interfaz $Si$/$SiO_2$ supera a la concentración de [[Impureza aceptora|átomos aceptores]] por lo que se produce la inversión del material
 
-![[Concentración de portadores en una estructura metal óxido semiconductor en inversión.png]]
+![[Concentración de portadores en una estructura metal óxido semiconductor en inversión.webp]]
 
 La concentración de [[Electrón|electrones]] en la interfaz $Si$/$SiO_2$ está modulada por $V_{GB} \implies V_{GB} \uparrow \implies n(0) \uparrow \implies |Q'_n| \uparrow$ . El [[Campo eléctrico]] controla la densidad de la [[Carga eléctrica|carga]] móvil. Esta es la esencia del [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|MOSFET]].
 
@@ -28,16 +28,16 @@ Varias consecuencias
 
 ##### Concentraciones de los [[Portador de carga|portadores]]
 ---
-![[Concentración de portadores en la estructura MOS en regimen de inversión.png]]
+![[Concentración de portadores en la estructura MOS en regimen de inversión.webp]]
 
 ##### Densidad de [[Carga eléctrica|carga]] espacial
 ---
-![[Densidad de carga en una estructura MOS en regimen de inversión.png]]
+![[Densidad de carga en una estructura MOS en regimen de inversión.webp]]
 
 ##### [[Campo eléctrico]]
 ---
-![[Campo eléctrico en una estructura MOS en regimen de inversión.png]]
+![[Campo eléctrico en una estructura MOS en regimen de inversión.webp]]
 
 ##### [[Potencial eléctrico|Función potencial]]
 ---
-![[Potencial eléctrico en una estructura MOS en regimen de inversión.png]]
+![[Potencial eléctrico en una estructura MOS en regimen de inversión.webp]]

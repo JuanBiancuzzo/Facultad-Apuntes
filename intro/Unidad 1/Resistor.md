@@ -19,4 +19,4 @@ Es el elemento que introduce una [[Resistencia]] en un circuito eléctrico
 ```
 
 ##### Código de colores
-![[Código de colores de una resistencia.png]]
+![[Código de colores de una resistencia.webp]]

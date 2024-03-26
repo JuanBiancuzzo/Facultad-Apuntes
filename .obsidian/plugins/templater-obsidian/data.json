@@ -24,7 +24,7 @@
   "enabled_templates_hotkeys": [
     "_template/Tikz - Template.md",
     "_template/legal/Seleccionar.md",
-    "_template/Eliminar Actual.md"
+    "_template/Insertar código.md"
   ],
   "startup_templates": [
     ""

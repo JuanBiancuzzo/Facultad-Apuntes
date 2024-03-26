@@ -7,4 +7,4 @@ capitulo: 2
 ---
 El mejor uso de este [[Plot]] es cuando se lo piensa como un [[Plot de relación]], donde se tiene varias variables que influyen entre si.
 
-![[Radar chart.png]]
+![[Radar chart.webp]]

@@ -17,5 +17,5 @@ Se establece que un [[Circuito lineal]] de dos terminales puede reemplazarse por
 
 #### Esquematizando
 ---
-![[Equivalente de norton.png]]
+![[Equivalente de norton.webp]]
 

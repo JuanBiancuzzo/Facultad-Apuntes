@@ -9,7 +9,7 @@ La inductancia mutua es la capacidad de un [[Inductor|inductor]] de inducir una 
 
 Según la [[Ley de Faraday|ley de Faraday]], si tenemos un [[Circuito eléctrico|circuito]] con dos [[Inductor|bobina]] lo suficientemente próximas, tal que "comparten" el [[Campo eléctrico|campo eléctrico]], es decir, que están [[Acoplación magnética|magnéticamente acopladas]], entonces 
 
-![[Circuito con dos bobinas con inductancia mutua.png]]
+![[Circuito con dos bobinas con inductancia mutua.webp]]
 
 $$ \phi_1 = \phi_{11} + \phi_{12} $$
 Con las [[Tensión|tensiones]] $$ \begin{align}

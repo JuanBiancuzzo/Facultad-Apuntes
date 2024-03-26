@@ -26,7 +26,7 @@ Entonces, como dijimos $$ i_d = \frac{\partial i_D}{\partial v_D} \Biggm|_{v_D=V
 Definimos $g_d \equiv$ [[Conductancia dinámica|conductancia dinámica]] $[g_d] = S$
 
 Produciendo el circuito equivalente
-![[Circuito equivalente de resistencias de pequeña señal del diodo.png]]
+![[Circuito equivalente de resistencias de pequeña señal del diodo.webp]]
 
 ##### Modelo para altas frecuencias
 ---
@@ -36,7 +36,7 @@ Donde se definen dos capacidades
 * $C_j \equiv$ [[Capacidad de juntura]] $[C_j] = F$
 * $C_d \equiv$ [[Capacidad de difusión]] $[C_d] = F$
 
-![[Modelo de pequeña señal diodo completo.png]]
+![[Modelo de pequeña señal diodo completo.webp]]
 
 #### Rango de validez
 ---
