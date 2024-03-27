@@ -5,13 +5,11 @@ capitulo: 12
 ---
 ### Definición
 ---
-La [[Serie]] de Fourier de $f \in E_P$ ([[Conjunto de funciones periódicas|conjunto de funciones periódicas]] de [[Función senoidal#Función periódica Periodo|periodo]] $P$) es la serie $$ f(t) = \sum_{n = -\infty}^\infty c_n(f) \cdot \exp\left( i n \frac{2\pi}{P}  t\right) $$ donde los coeficientes $c_n(f)$ son los [[Coeficientes de Fourier de una función|coeficientes de Fourier]]. 
+La [[Serie]] de Fourier de $f \in E_P$ ([[Conjunto de funciones periódicas|conjunto de funciones periódicas]] de [[Función senoidal#Función periódica Periodo|periodo]] $P$) es la serie $$ f(t) = \sum_{n = -\infty}^\infty c_n(f) \cdot \exp\left( i \frac{2 \pi n}{P}  t\right) $$ donde los coeficientes $c_n(f)$ son los [[Coeficientes de Fourier de una función|coeficientes de Fourier]]. 
 
 Donde esta igualdad se da cuando la [[Señal|señal]] $f(t)$ tiene [[Medida de una señal#Energía|energía]] finita, y para variaciones acotadas, se cumple la [[Condición de Dirichlet para la convergencia puntual|condición de Dirichlet para convergencia puntual]]
 
 Cada proyección $f_m = \sum_{n = - m}^m c_n(f) \cdot e_n$ se denomina suma de Fourier.
-
-Donde e
 
 #### Caso de señal real
 ---

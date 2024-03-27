@@ -38,8 +38,8 @@ tags:
 * [[aninfo/Ingeniería de software/Conway's law.md|Conway's law]]
 * [[aninfo/Ingeniería de software/Control de calidad.md|Control de calidad]]
 * [[aninfo/Ingeniería de software/Construcción de software.md|Construcción de software]]
-* [[aninfo/Ingeniería de software/Configuración.md|Configuración]]
 * [[aninfo/Ingeniería de software/Ciclo PDCA.md|Ciclo PDCA]]
+* [[aninfo/Ingeniería de software/Configuración.md|Configuración]]
 * [[aninfo/Ingeniería de software/Ciclo de vida de un producto de software.md|Ciclo de vida de un producto de software]]
 * [[aninfo/Ingeniería de software/Calidad del software.md|Calidad del software]]
 * [[aninfo/Ingeniería de software/C4.md|C4]]
@@ -92,8 +92,8 @@ tags:
 * [[aninfo/Analizar y especificar requisitos/Representación de requisitos.md|Representación de requisitos]]
 * [[aninfo/Analizar y especificar requisitos/Regla INVEST.md|Regla INVEST]]
 * [[aninfo/Analizar y especificar requisitos/QUS Framework.md|QUS Framework]]
-* [[aninfo/Analizar y especificar requisitos/Modelado de dominio.md|Modelado de dominio]]
 * [[aninfo/Analizar y especificar requisitos/Patrones del modelado de dominio.md|Patrones del modelado de dominio]]
+* [[aninfo/Analizar y especificar requisitos/Modelado de dominio.md|Modelado de dominio]]
 * [[aninfo/Analizar y especificar requisitos/Modelado de datos.md|Modelado de datos]]
 * [[aninfo/Analizar y especificar requisitos/Identificar clases conceptuales en el modelo de diseño.md|Identificar clases conceptuales en el modelo de diseño]]
 * [[aninfo/Analizar y especificar requisitos/Historia de usuario.md|Historia de usuario]]
@@ -117,8 +117,8 @@ tags:
 
 ##### Verificación y validación (12)
 ---
-* [[aninfo/Verificación y validación/Verificación.md|Verificación]]
 * [[aninfo/Verificación y validación/Walkthrough.md|Walkthrough]]
+* [[aninfo/Verificación y validación/Verificación.md|Verificación]]
 * [[aninfo/Verificación y validación/Verificación de requerimientos.md|Verificación de requerimientos]]
 * [[aninfo/Verificación y validación/Validación.md|Validación]]
 * [[aninfo/Verificación y validación/Validación de requerimientos.md|Validación de requerimientos]]
@@ -149,11 +149,11 @@ tags:
 * [[aninfo/Diseño de software/Modelar.md|Modelar]]
 * [[aninfo/Diseño de software/Model view controller (MVC).md|Model view controller (MVC)]]
 * [[aninfo/Diseño de software/Microservicio.md|Microservicio]]
-* [[aninfo/Diseño de software/General Responsibility Assignment Software Patterns (GRASP).md|General Responsibility Assignment Software Patterns (GRASP)]]
 * [[aninfo/Diseño de software/Layers.md|Layers]]
-* [[aninfo/Diseño de software/API REST.md|API REST]]
+* [[aninfo/Diseño de software/General Responsibility Assignment Software Patterns (GRASP).md|General Responsibility Assignment Software Patterns (GRASP)]]
 * [[aninfo/Diseño de software/Arquitectura de software.md|Arquitectura de software]]
 * [[aninfo/Diseño de software/4 vistas + 1.md|4 vistas + 1]]
+* [[aninfo/Diseño de software/API REST.md|API REST]]
 
 ##### Prototipado y experiencia del usuario (4)
 ---

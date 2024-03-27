@@ -25,7 +25,7 @@ Donde se tiene
 
 #### Calculo de parámetros
 ---
-Usando el [[Modelo de pequeña señal para transistor bipolar de juntura (TBJ)#Modelo Modelo para bajas frecuencias|modelo de pequeña señal para baja frecuencia]] y pasivando las [[Fuente de tensión|fuentes de tensión continuas]], tendremos
+Usando el [[Modelo de pequeña señal del transistor bipolar de juntura (TBJ)#Modelo Modelo para bajas frecuencias|modelo de pequeña señal para baja frecuencia]] y pasivando las [[Fuente de tensión|fuentes de tensión continuas]], tendremos
 
 
 ```tikz

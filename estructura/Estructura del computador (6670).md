@@ -11,8 +11,8 @@ tags:
 ##### Sistemas numéricos (21)
 ---
 * [[estructura/Sistemas numéricos/Suma de enteros.md|Suma de enteros]]
-* [[estructura/Sistemas numéricos/Sistemas de numeración.md|Sistemas de numeración]]
 * [[estructura/Sistemas numéricos/Símbolo.md|Símbolo]]
+* [[estructura/Sistemas numéricos/Sistemas de numeración.md|Sistemas de numeración]]
 * [[estructura/Sistemas numéricos/Sistema posicional.md|Sistema posicional]]
 * [[estructura/Sistemas numéricos/Sistema aditivos.md|Sistema aditivos]]
 * [[estructura/Sistemas numéricos/Signo flag.md|Signo flag]]
@@ -27,15 +27,15 @@ tags:
 * [[estructura/Sistemas numéricos/Overflow.md|Overflow]]
 * [[estructura/Sistemas numéricos/Flags.md|Flags]]
 * [[estructura/Sistemas numéricos/Conversión entre diferentes bases.md|Conversión entre diferentes bases]]
-* [[estructura/Sistemas numéricos/Cero flag.md|Cero flag]]
 * [[estructura/Sistemas numéricos/Complemento a la base.md|Complemento a la base]]
+* [[estructura/Sistemas numéricos/Cero flag.md|Cero flag]]
 * [[estructura/Sistemas numéricos/Carry flag.md|Carry flag]]
 * [[estructura/Sistemas numéricos/Base numerica.md|Base numerica]]
 
 ##### Punto flotante (3)
 ---
-* [[estructura/Punto flotante/Suma de puntos flotantes.md|Suma de puntos flotantes]]
 * [[estructura/Punto flotante/Valores especificos de IEEE 754.md|Valores especificos de IEEE 754]]
+* [[estructura/Punto flotante/Suma de puntos flotantes.md|Suma de puntos flotantes]]
 * [[estructura/Punto flotante/Punto flotante.md|Punto flotante]]
 
 ##### Algebra de boole (8)
