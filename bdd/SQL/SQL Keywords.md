@@ -26,6 +26,7 @@ Las keywords de [[Structured Query Language (SQL)|SQL]] se puede separar en
 * [[Operador NOT#En SQL|NOT]] se usa como el [[Operación lógica|operador lógico]] 
 * [[Operador LIKE|LIKE]] se usa para determinar un valor cumple un patrón
 * [[Operador IN|IN]] se usa para especificar varios valores
+* [[Operador BETWEEN|BETWEEN]] se usa para determinar un rango de selección
 
 #### Comandos
 ---
