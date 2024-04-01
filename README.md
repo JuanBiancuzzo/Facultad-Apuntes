@@ -11,14 +11,17 @@ Un listado de materias y su estado actual.
 | Materia                                                                                                        | Estado                             |
 | -------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
 | [Análisis de circuitos](adc/Análisis%20de%20circuitos%20(6606).md)                                             | Terminado                          |
-| [Álgebra 2](Álgebra%202%20(6108).md)                                                               | Falta terminar de pasar el resumen |
+| [Álgebra 2](Álgebra%202%20(6108).md)                                                                           | Falta terminar de pasar el resumen |
+| [Algoritmos y programación 1](algo%201/Algoritmos%20y%20programaci%C3%B3n%201%20(7540))                        | Falta hacer el resumen             |
+| [Algoritmos y programación 2](algo%202/Algoritmos%20y%20programaci%C3%B3n%202%20(7541))                        | Falta hacer el resumen             |
+| [Algoritmos y programación 3](algo%203/Algoritmos%20y%20programaci%C3%B3n%203%20(7507))                        | Falta hacer el resumen             |
 | [Análisis 2](analisis%202/Análisis%202%20(6103).md)                                                            | Falta terminar de pasar el resumen |
 | [Análisis 3](analisis%203/Análisis%203%20(6110).md)                                                            | Terminado                          |
 | [Análisis de la información](aninfo/Análisis%20de%20la%20información%20(7509).md)                              | Terminado                          |
 | [Base de datos](bdd/Base%20de%20datos%20(TA044).md)                                                            | Cursando                           |
 | [Circuitos microelectrónicos](circuitos/Circuitos%20microelectrónicos%20(TB068).md)                            | Cursando                           |
 | [Matemática discreta](discreta/Matemática%20discreta%20(6107).md)                                              | Sin empezar el resumen             |
-| [Dispositivos semiconductores](dispo/Dispositivos%20semiconductores%20(8603).md)                               | Terminado          |
+| [Dispositivos semiconductores](dispo/Dispositivos%20semiconductores%20(8603).md)                               | Terminado                          |
 | [Estructura del computador](estructura/Estructura%20del%20computador%20(6670).md)                              | Falta escribir sobre el Murdocca   |
 | [Física 1](fisica%201/Física%201%20(6201).md)                                                                  | Falta pasar el resumen             |
 | [Física 2](fisica%202/Física%202%20(6203).md)                                                                  | Falta pasar el resumen             |
