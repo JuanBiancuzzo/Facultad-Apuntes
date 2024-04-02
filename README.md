@@ -15,8 +15,8 @@ Un listado de materias y su estado actual.
 | [Algoritmos y programación 1](algo%201/Algoritmos%20y%20programaci%C3%B3n%201%20(7540))                        | Falta hacer el resumen             |
 | [Algoritmos y programación 2](algo%202/Algoritmos%20y%20programaci%C3%B3n%202%20(7541))                        | Falta hacer el resumen             |
 | [Algoritmos y programación 3](algo%203/Algoritmos%20y%20programaci%C3%B3n%203%20(7507))                        | Falta hacer el resumen             |
-| [Análisis 2](analisis%202/Análisis%202%20(6103).md)                                                            | Falta terminar de pasar el resumen |
-| [Análisis 3](analisis%203/Análisis%203%20(6110).md)                                                            | Terminado                          |
+| [Análisis matemático 2](Análisis%20matemático%202%20(6103).md)                                                 | Falta terminar de pasar el resumen |
+| [Análisis matemático 3](Análisis%20matemático%203%20(6110).md)                                                 | Terminado                          |
 | [Análisis de la información](aninfo/Análisis%20de%20la%20información%20(7509).md)                              | Terminado                          |
 | [Base de datos](bdd/Base%20de%20datos%20(TA044).md)                                                            | Cursando                           |
 | [Circuitos microelectrónicos](circuitos/Circuitos%20microelectrónicos%20(TB068).md)                            | Cursando                           |
@@ -35,7 +35,7 @@ Un listado de materias y su estado actual.
 | [Seguridad ambiental y del trabajo](seguridad/Seguridad%20ambiental%20y%20del%20trabajo%20(9704).md)           | Terminado                          |
 | [Señales y sistemas](señales/Señales%20y%20sistemas%20(TB065).md)                                              | Cursando                           |
 | [Sistemas operativos](sisop/Sistemas%20operativos%20(7508).md)                                                 | Terminado                          |
-| [Taller de programación](taller/Taller%20de%20programación%20(9508).md)                                        | Escribir sobre el libro de rust    |
+| [Taller de programación 1](Taller%20de%20programación%201%20(9508).md)                                         | Falta pasar el libro               |
 
  
 ##### Contribuidores
