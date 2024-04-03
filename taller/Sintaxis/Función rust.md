@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-Las funciones, al igual que en c tienen que especificar el [[Tipo de dato|valor de retorno]] y tienen la siguiente sintaxis
+Las funciones, al igual que en c tienen que especificar el [[Tipo de dato rust|valor de retorno]] y tienen la siguiente sintaxis
 ``` rust
 fn sumar_uno(numero: i32) -> i32 {
 	numero + 1

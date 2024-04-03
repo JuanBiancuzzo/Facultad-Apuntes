@@ -12,7 +12,7 @@ let x: i32 = 5;
 let x: i32 = x + 1; 
 ```
 
-Donde el `i32` es el [[Tipo de dato|tipo de dato]].
+Donde el `i32` es el [[Tipo de dato rust|tipo de dato]].
 
 No hay problema en usar la variable que se esta reutilizando en la definición de su valor.
 

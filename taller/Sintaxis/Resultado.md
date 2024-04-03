@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-Representar el estado que puede tener un error. $T$ es un [[Generic|generics]] que puede tomar cualquier [[Tipo de dato|tipo de dato]]. $E$ es un [[Generic|generics]] que puede tomar cualquier [[Tipo de dato|tipo de dato]] que representa un error.
+Representar el estado que puede tener un error. $T$ es un [[Generic|generics]] que puede tomar cualquier [[Tipo de dato rust|tipo de dato]]. $E$ es un [[Generic|generics]] que puede tomar cualquier [[Tipo de dato rust|tipo de dato]] que representa un error.
 
 ``` rust
 enum Result<T, E> {

@@ -13,7 +13,7 @@ Para declarar una constante se hace de la siguiente forma:
 ``` rust
 const CONSTANTE: u16 = 45;
 ```
-Donde el `u16` es el [[Tipo de dato|tipo de dato]]. Notemos que por convención se escriben las constantes en mayusculas. 
+Donde el `u16` es el [[Tipo de dato rust|tipo de dato]]. Notemos que por convención se escriben las constantes en mayusculas. 
 
 Para la constante es necesario aclarar el tipo de dato. También una propiedad que no lo tienen las [[Variable inmutable|variables inmutables]] y las [[Variable mutable|variables mutables]] es que estas pueden ser declaradas en cualquier [[Scope]], incluso en el global.
 
