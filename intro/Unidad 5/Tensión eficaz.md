@@ -5,7 +5,7 @@ capitulo: 5
 ---
 ### Definición
 ---
-Definimos la [[Tensión|tensión]] eficaz, es su [[Valor cuadrático medio]], de una tensión variable en el tiempo $v(t)$ con período $T$ como:
+Definimos la [[Tensión|tensión]] eficaz, es su [[Valor cuadrático medio|valor cuadrático medio]], de una tensión variable en el tiempo $v(t)$ con período $T$ como:
 $$ V_{ef}= \sqrt{\frac{1}{T} \cdot \int_{0}^{T} v^2(t) \cdot dt} $$
 
 La tensión eficaz total a partir de $V_{DC}$ y $V_{AC}$:

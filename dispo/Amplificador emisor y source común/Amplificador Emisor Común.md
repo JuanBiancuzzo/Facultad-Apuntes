@@ -87,25 +87,25 @@ Usando el [[Modelo de pequeña señal del transistor bipolar de juntura (TBJ)#Mo
 
 Esto se puede pensar como los [[Parámetros híbridos de un cuadripolo|parámetros de un cuadripolo]]
 
-##### [[Ganancia|Ganancia]] de [[Tensión|tensión]] $A_{vo}$
+##### Ganancia de tensión $A_{vo}$
 ---
-La ganancia de tensión $A_{vo}$ se define sin carga conectada a la salida $$ A_{vo} = \frac{v_{out}}{v_{in}} \biggm|_{i_{out} = 0} $$
+La [[Ganancia|ganancia]] de [[Tensión|tensión]] $A_{vo}$ se define sin carga conectada a la salida $$ A_{vo} = \frac{v_{out}}{v_{in}} \biggm|_{i_{out} = 0} $$
 Considerando $v_{in} = v_{be}$ por lo que la ganancia de tensión sin carga es $$ A_{vo} = -g_m (r_0 // R_C) $$ donde $g_m$ es la [[Transconductancia para transistor bipolar de juntura (TBJ)|transconductancia]], y $r_0$ es [[Conductancia de colector|resistencia de salida o de colector]].
 
 Conociendo $R_{out}$ se puede calcula la ganancia como $$ A_{vo} = -g_m ~ R_{out} $$
-##### [[Resistencia|Resistencia]] de entrada $R_{in}$
+##### Resistencia de entrada $R_{in}$
 ---
-La resistencia de entrada $R_{in}$ se define $$ R_{in} = \frac{v_{in}}{i_{in}} $$
+La [[Resistencia|resistencia]] de entrada $R_{in}$ se define $$ R_{in} = \frac{v_{in}}{i_{in}} $$
 La tensión $v_{in}$ es aplicada directamente en $v_{be}$, entonces se enciende el generador controlado, pero la corriente $g_m ~ v_{be}$ no influye en la [[Corriente eléctrica|corriente]] $i_{in}$, por lo que $$ R_{in} = (r_\pi // R_B) $$ donde $r_\pi$ es la [[Conductancia de base|resistencia de entrada o de base]]
 
-##### [[Resistencia|Resistencia]] de salida $R_{out}$
+##### Resistencia de salida $R_{out}$
 ---
-La resistencia de salida $R_{out}$ se define $$ R_{out} = \frac{v_{out}}{i_{out}} \biggm|_{v_{in} = 0} $$
+La [[Resistencia|resistencia]] de salida $R_{out}$ se define $$ R_{out} = \frac{v_{out}}{i_{out}} \biggm|_{v_{in} = 0} $$
 El generador controlado no se enciende, recordando que $v_{in} = v_{be}$, por lo que $$ R_{out} = (r_0 // R_C) $$ donde $r_0$ es la [[Conductancia de colector|resistencia de salida o de colector]]
 
-##### [[Ganancia|Ganancia]] de [[Tensión|tensión]] $A_{vs}$
+##### Ganancia de tensión $A_{vs}$
 ---
-Se puede definir la ganancia de tensión del [[Amplificador de tensión|amplificador]] en funcionamiento. Esto implica tener tanto la fuente de señal ($v_s$ y $R_s$) como la carga conectadas ($R_L$) a la entrada y la salida $$ A_{vs} = \frac{v_{out}}{v_s} \biggm|_{i_{out} \ne 0} $$
+Se puede definir la [[Ganancia|ganancia]] de [[Tensión|tensión]] del [[Amplificador de tensión|amplificador]] en funcionamiento. Esto implica tener tanto la fuente de señal ($v_s$ y $R_s$) como la carga conectadas ($R_L$) a la entrada y la salida $$ A_{vs} = \frac{v_{out}}{v_s} \biggm|_{i_{out} \ne 0} $$
 Analizando el modelo macroscópico del amplificador 
 
 ```tikz 
@@ -158,19 +158,19 @@ Para un $V_{out}$ fijo, la ganancia depende sólo de $V_{CC}$, mientras que se e
 La distorsión ocurre cuando el [[Transistor|transistor]] no está trabajando en el régimen que corresponde. La relación de la señal de salida con la señal de entrada no será [[Función R-lineal|lineal]]. Existirá una deformación de la señal de salida y entonces $$ v_{out} \ne A_{vo} v_{in} $$
 ![[Máxima señal sin distorsión.webp]]
 
-##### [[Distorsión por alinealidad en un Amplificador emisor común|Distorsión por alinealidad]]
+##### Distorsión por alinealidad
 ---
 ![[Distorsión por alinealidad en un Amplificador emisor común#Definición]]
 
-##### [[Distorsión por corte en un Amplificador emisor común|Distorsión por corte en un Amplificador emisor común]]
+##### Distorsión por corte en un Amplificador emisor común
 ---
 ![[Distorsión por corte en un Amplificador emisor común#Definición]]
 
-##### [[Distorsión por saturación|Distorsión por saturación]]
+##### Distorsión por saturación
 ---
 ![[Distorsión por saturación#Definición]]
 
-#### [[Rendimiento en potencia|Eficiencia de conversión de potencia ]]
+#### Eficiencia de conversión de potencia
 ---
 $$ \eta = \frac{P_{OUT}}{P_{DC}} \cdot 100 $$
 Donde $P_{out}$ es la [[Potencia|potencia eficaz]] de la señal de salida $$ P_{OUT} = \frac{1}{2} \frac{\hat{v}^2_{out}}{R_L} $$

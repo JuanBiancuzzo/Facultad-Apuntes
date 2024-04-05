@@ -19,14 +19,14 @@ Usando el [[Modelo de pequeña señal para Transistor de efecto de campo metal-�
 
 Esto se puede pensar como los [[Parámetros híbridos de un cuadripolo|parámetros de un cuadripolo]]
 
-##### [[Ganancia|Ganancia]] de [[Tensión|tensión]] $A_{vo}$
+##### Ganancia de tensión $A_{vo}$
 ---
-La ganancia de tensión $A_{vo}$ se define sin carga conectada a la salida $$ A_{vo} = \frac{v_{out}}{v_{in}} \biggm|_{i_{out} = 0} $$
+La [[Ganancia|ganancia]] de [[Tensión|tensión]] $A_{vo}$ se define sin carga conectada a la salida $$ A_{vo} = \frac{v_{out}}{v_{in}} \biggm|_{i_{out} = 0} $$
 Considerando $v_{in} = v_{gs}$ por lo que la ganancia de tensión sin carga es $$ A_{vo} = -g_m (r_0 // R_C) $$ donde $g_m$ es la [[Transconductancia para transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|transconductancia]], y $r_0$ es [[Conductancia del drain|resistencia de salida o del drain]].
 
-##### [[Resistencia|Resistencia]] de entrada $R_{in}$
+##### Resistencia de entrada $R_{in}$
 ---
-La resistencia de entrada $R_{in}$ se define $$ R_{in} = \frac{v_{in}}{i_{in}} $$
+La [[Resistencia|resistencia]] de entrada $R_{in}$ se define $$ R_{in} = \frac{v_{in}}{i_{in}} $$
 La [[Tensión|tensión]] $v_{in}$ es aplicada directamente a $v_{gs}$, entonces se enciende el generador controlado. 
 
 Sin embargo, la [[Corriente eléctrica|corriente]] $g_m \times v_{gs}$ no influye en la corriente de entrada $i_{in}$ $$ i_{in} = i_{rg} + i_g $$
@@ -66,15 +66,15 @@ La relación de la señal de salida con la señal de entrada no será lineal.
 
 Existirá una deformación de la señal de salida y entonces $v_{out} \ne A_{vo} ~ v_{in}$
 
-##### [[Distorsión por alinealidad en un Amplificador source común|Distorsión por alinealidad]]
+##### Distorsión por alinealidad
 ---
 ![[Distorsión por alinealidad en un Amplificador source común#Definición]]
 
-##### [[Distorsión por corte en un Amplificador source común|Distorsión por corte]]
+##### Distorsión por corte
 ---
 ![[Distorsión por corte en un Amplificador source común#Definición]]
 
-##### [[Distorsión por tríodo en un Amplificador source común|Distorsión por tríodo]]
+##### Distorsión por tríodo
 ---
 ![[Distorsión por tríodo en un Amplificador source común#Definición]]
 
