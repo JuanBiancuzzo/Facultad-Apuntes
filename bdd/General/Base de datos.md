@@ -130,7 +130,7 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 			Número \\
 		};
 
-		\draw (empleado.south) -- (telefono.north)
+		\draw[thick] (empleado-4-1.south) -- (telefono-1-1.north)
 			node[pos=0, below right=2pt] {$1$}
 			node[pos=1, above right=2pt] {*};
 
@@ -164,7 +164,66 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 
 ##### Relaciones 1 a 1
 ---
-![[Transformación relación 1 a 1 a una base de datos relacional.webp]]
+
+```tikz
+\usetikzlibrary{matrix}
+\begin{document}
+	\tikzset{ 
+	    table/.style={
+		    matrix of nodes,    
+		    text depth=0.5ex,
+	        text height=2ex,
+	            
+	        nodes={
+	            rectangle,
+	            draw=black,
+	            align=center,
+	            text width=8em,
+	            font=\bfseries
+	        },        
+	
+	        row 1/.style={
+	            nodes={
+	                fill=black,
+	                text=white,
+	                font=\bfseries
+	            }
+	        }
+	    }
+	}
+
+	\begin{tikzpicture}
+	
+		\matrix (persona) at (0, 0) [table] {
+			Persona \\
+			DNI \\
+			Nombre \\
+		};
+	
+		\matrix (auto) at (8, 0) [table] {
+			Auto \\
+			Patente \\
+			Modelo \\
+		};
+
+		\draw[thick] (persona-2-1.east) -- (auto-2-1.west)
+			node[pos=0, above right=2pt] {1}
+			node[pos=1, above left=2pt] {1};
+	
+		\path (persona.south) -- ++(0, -1)
+			node[pos=0.5, font=\bfseries] 
+				{Persona(DNI, Nombre, PatenteAuto)}
+			node[pos=1, font=\bfseries] 
+				{Auto(Patente, Modelo)};
+		\path (auto.south) -- ++(0, -1)
+			node[pos=0.5, font=\bfseries] 
+				{Persona(DNI, Nombre)}
+			node[pos=1, font=\bfseries] 
+				{Auto(Patente, Modelo, DNI)};
+	
+	\end{tikzpicture}
+\end{document}
+```
 
 ##### Relaciones 1 a 0..*
 ---
@@ -176,15 +235,150 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 
 ##### Recursivas 0..1 a 0..1
 ---
-![[Transformación recursivas 0..1 a 0..1 a una base de datos relacional.webp]]
+
+```tikz
+\usetikzlibrary{matrix}
+\begin{document}
+	\begin{tikzpicture}
+	
+		\matrix (persona) at (0, 0) [
+			matrix of nodes,
+			text depth=0.5ex, 
+			text height=2ex,
+			nodes={
+	            rectangle,
+	            draw=black,
+	            align=center,
+	            text width=8em,
+	            font=\bfseries
+	        },
+	        row 1/.style={
+	            nodes={
+	                fill=black,
+	                text=white,
+	                font=\bfseries
+	            }
+	        }
+		] {
+			Persona \\
+			DNI \\
+		};
+
+		\draw [thick, rounded corners=1em] (persona-2-1.west)
+			-- ++(-0.8, 0) 
+				node[midway, above=2pt] {0..1}
+			-- ++(0, -1)
+			-- ++(4.7, 0)
+				node[midway, below=2pt] {Es cónuyge de}
+			-- ++(0, 1)
+			-- (persona-2-1.east)
+				node[midway, above=2pt] {0..1};
+
+		\draw[->, ultra thick] (3, 0) -- ++(2, 0)
+			node[right=1em, font=\bfseries] {Persona(DNI, DNI-Cónuyge)};
+	
+	\end{tikzpicture}
+\end{document}
+```
 
 ##### Recursivas 0..1 a 0..*
 ---
-![[Transformación recursivas 0..1 a 0..muchos a una base de datos relacional.webp]]
+
+```tikz
+\usetikzlibrary{matrix}
+\begin{document}
+	\begin{tikzpicture}
+	
+		\matrix (persona) at (0, 0) [
+			matrix of nodes,
+			text depth=0.5ex, 
+			text height=2ex,
+			nodes={
+	            rectangle,
+	            draw=black,
+	            align=center,
+	            text width=8em,
+	            font=\bfseries
+	        },
+	        row 1/.style={
+	            nodes={
+	                fill=black,
+	                text=white,
+	                font=\bfseries
+	            }
+	        }
+		] {
+			Persona \\
+			DNI \\
+		};
+
+		\draw [thick, rounded corners=1em] (persona-2-1.west)
+			-- ++(-0.8, 0) 
+				node[midway, above=2pt] {0..1}
+			-- ++(0, -1)
+			-- ++(4.7, 0)
+				node[midway, below=2pt] {Es madre de}
+			-- ++(0, 1)
+			-- (persona-2-1.east)
+				node[midway, above=2pt] {0..*};
+
+		\draw[->, ultra thick] (3, 0) -- ++(2, 0)
+			node[right=1em, font=\bfseries] {Persona(DNI, DNI-Madre)};
+	
+	\end{tikzpicture}
+\end{document}
+```
 
 ##### Recursividad muchos a muchos
 ---
-![[Transformación recursivas muchos a muchos a una base de datos relacional.webp]]
+
+```tikz
+\usetikzlibrary{matrix}
+\begin{document}
+	\begin{tikzpicture}
+	
+		\matrix (pieza) at (0, 0) [
+			matrix of nodes,
+			text depth=0.5ex, 
+			text height=2ex,
+			nodes={
+	            rectangle,
+	            draw=black,
+	            align=center,
+	            text width=8em,
+	            font=\bfseries
+	        },
+	        row 1/.style={
+	            nodes={
+	                fill=black,
+	                text=white,
+	                font=\bfseries
+	            }
+	        }
+		] {
+			Pieza \\
+			Código \\
+		};
+
+		\draw [thick, rounded corners=1em] (pieza-2-1.west)
+			-- ++(-0.8, 0) 
+				node[midway, above=2pt] {0..*}
+			-- ++(0, -1)
+				node[midway, left=2pt] {Compuesto}
+			-- ++(4.7, 0)
+				node[midway, below=2pt] {Tiene}
+			-- ++(0, 1)
+				node[midway, right=2pt] {Componente}
+			-- (pieza-2-1.east)
+				node[midway, above=2pt] {0..*};
+
+		\draw[->, ultra thick] (3, 0) -- ++(2, 0)
+			node[right=1em, font=\bfseries, text width=17em, align=center] 
+				{Pieza(Código) Compueso(Codigo-Compuesto, Código-Componente)};
+	
+	\end{tikzpicture}
+\end{document}
+```
 
 ##### Clases asociativas
 ---
