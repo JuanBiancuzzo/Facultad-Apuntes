@@ -657,5 +657,103 @@ Se puede ver que son las [[Serie de tiempo|serie de tiempo]] acá.
 
 ##### Herencia
 ---
-![[Transformación herencia a una base de datos relacional.webp]]
 
+```tikz
+\usetikzlibrary{matrix}
+\usetikzlibrary {arrows.meta}
+
+\begin{document}
+
+	\definecolor{azul}{RGB}{23, 65, 125}
+	
+	\tikzset{ 
+	    table/.style={
+		    matrix of nodes,    
+		    text depth=0.5ex,
+	        text height=2ex,
+	        nodes in empty cells,
+	            
+	        nodes={
+	            rectangle,
+	            draw=black,
+	            align=center,
+	            text width=8em,
+	            font=\bfseries
+	        },        
+	
+	        row 1/.style={
+	            nodes={
+	                fill=azul,
+	                draw=black,
+	                font=\bfseries
+	            }
+	        }
+	    }
+	}
+
+	\begin{tikzpicture}
+	
+		\matrix (persona) at (0, 4.5) [table] {
+			Persona \\
+			- CUIL {id} \\
+		};
+	
+		\matrix (fisica) at (-4, 1) [table, nodes={text width=10em}] {
+			Física \\
+			- ApellidoYNombre \\
+			- fechaNacimiento \\
+		};
+
+		\matrix (juridica) at (4, 1) [table, nodes={text width=10em}] {
+			Jurídica \\
+			- razonSocial (u) \\
+		};
+
+		\draw[thick] (fisica-1-1.north) 
+			-- (-4, 2.5) 
+			-- (4, 2.5)
+				node[midway] (puntoMedio) {}
+			-- (juridica-1-1.north);
+		\draw[thick] (puntoMedio) -- ++(0, 0.2)
+			-- ++(0, -0.2);
+
+		\draw[thick, -{Stealth[inset=0pt, length=15pt, open, angle'=45]}]
+			(puntoMedio) -- (persona-2-1.south);
+
+		\draw[ultra thick, ->] (0, 0) -- ++(0, -1.5);
+
+		\matrix (personaBdd) at (-5, -2.5) [table] {
+			 CUIL \\
+			 \\
+		};
+		\path (personaBdd.north) 
+			node[above=2pt, font=\bfseries] {Persona};
+
+		\matrix (juridicaBdd) at (4.5, -2.5) [table] {
+			 CUIL & RazónSocial \\
+			 & \\
+		};
+		\path (juridicaBdd.north) 
+			node[above=2pt, font=\bfseries] {Persona Jurídica};
+
+		\draw[ultra thick] (personaBdd-1-1.east) -- (juridicaBdd-1-1.west);
+
+		\matrix (fisicaBdd) at (0, -5) [table, nodes={text width=10em}] {
+			 CUIL & ApellidoYNombre & FechaNacimiento \\
+			 & & \\
+		};
+		\path (fisicaBdd.north) 
+			node[above=2pt, font=\bfseries] {Persona Física};
+
+		\draw [ultra thick, rounded corners=1em] (personaBdd-1-1.west) 
+			-- ++(-0.7, 0)
+			-- ++(0, -2.5)
+			-- (fisicaBdd-1-1.west);
+
+		\path (fisicaBdd.south) -- ++(0, -0.5)
+			node[below=2pt, align=center, font=\bfseries]
+				{Persona(CUIL) \\ PersonaFísica(CUIL, apellidoYNombre, fechaNacimiento) \\ PersonaJurídica(CUIL, razónSocial)};
+
+	\end{tikzpicture}
+\end{document}
+```
