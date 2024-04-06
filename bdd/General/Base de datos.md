@@ -7,17 +7,53 @@ capitulo: 1
 ---
 Una base de datos es una colección ordenada de [[Dato|datos]] administrada por un [[Sistema|sistema]] de gestión
 
-|                             | Base de datos relacionales | Base de datos NoSQL | Base de datos con series en el tiempo | Base de datos NewSQL | Base de datos en memoria | Base de datos distribuidas |
-| --------------------------- | -------------------------- | ------------------- | ------------------------------------- | -------------------- | ------------------------ | -------------------------- |
-| Tipos de datos soportados   | Datos estructurados        |                     |                                       |                      |                          |                            |
-| Modelo de guardado de datos |                            |                     |                                       |                      |                          |                            |
-| Caso de uso principal       |                            |                     |                                       |                      |                          |                            |
-| ACID compliance*            |                            |                     |                                       |                      |                          |                            |
-| Escalabilidad               |                            |                     |                                       |                      |                          |                            |
-\* ACID es un acrónimo en inglés de Atomicity, Consistency, Isolation and Durability
+#### Tipos de base de datos
+---
+Tenemos lo siguientes tipos de base de datos, donde ACID es un acrónimo en inglés de Atomicity, Consistency, Isolation and Durability
 
+##### Base de datos relacionales
+---
 
-![[Base de datos.webp]]
+| Tipos de datos soportados | Modelo de guardado de datos             | Caso de uso principal                                 | Cumple ACID | Escalabilidad        |
+| ------------------------- | --------------------------------------- | ----------------------------------------------------- | ----------- | -------------------- |
+| Datos estructurados       | Pre definidos, modelo relacional fijado | Proceso a partir de transacciones y queries complejas | Si          | Escala verticalmente |
+
+##### Base de datos NoSQL
+---
+
+| Tipos de datos soportados                   | Modelo de guardado de datos | Caso de uso principal             | Cumple ACID                            | Escalabilidad          |
+| ------------------------------------------- | --------------------------- | --------------------------------- | -------------------------------------- | ---------------------- |
+| Datos no estructurados o semi estructurados | Sin modelo pre definido     | rendimiento alto y disponibilidad | Depende de la base de datos que se use | Escala horizontalmente |
+
+##### Base de datos con series en el tiempo
+---
+
+| Tipos de datos soportados | Modelo de guardado de datos | Caso de uso principal                   | Cumple ACID | Escalabilidad        |
+| ------------------------- | --------------------------- | --------------------------------------- | ----------- | -------------------- |
+| Serie de tiempo           | Modelo concepctual          | Guardar y analizar las series de tiempo | No          | Escala verticalmente |
+
+Se puede ver que son las [[Serie de tiempo|serie de tiempo]] acá.
+
+##### Base de datos NewSQL
+---
+
+| Tipos de datos soportados                                  | Modelo de guardado de datos                  | Caso de uso principal                                        | Cumple ACID | Escalabilidad          |
+| ---------------------------------------------------------- | -------------------------------------------- | ------------------------------------------------------------ | ----------- | ---------------------- |
+| Datos estructurados, no estructurados y semi estructurados | Se puede definir o no el modelo de los datos | Guardar grandes cantidad de datos y correr queries complejas | No          | Escala horizontalmente |
+
+##### Base de datos en memoria
+---
+
+| Tipos de datos soportados                                  | Modelo de guardado de datos                    | Caso de uso principal       | Cumple ACID | Escalabilidad        |
+| ---------------------------------------------------------- | ---------------------------------------------- | --------------------------- | ----------- | -------------------- |
+| Datos estructurados, no estructurados y semi estructurados | Depende de la base de datos que se este usando | Respuesta rápida de queries | Si          | Escala verticalmente |
+
+##### Base de datos distribuidos
+---
+
+| Tipos de datos soportados                                  | Modelo de guardado de datos                    | Caso de uso principal                        | Cumple ACID                                    | Escalabilidad          |
+| ---------------------------------------------------------- | ---------------------------------------------- | -------------------------------------------- | ---------------------------------------------- | ---------------------- |
+| Datos estructurados, no estructurados y semi estructurados | Depende de la base de datos que se este usando | Guardar y analizar grandes cantidad de datos | Depende de la base de datos que se este usando | Escala horizontalmente |
 
 #### Transformación del [[Modelado de dominio|modelo de dominio]] a la base de datos
 ---
@@ -25,6 +61,9 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 ```tikz
 \usetikzlibrary{matrix}
 \begin{document}
+
+	\definecolor{azul}{RGB}{23, 65, 125}
+	
 	\tikzset{ 
 	    table/.style={
 		    matrix of nodes,    
@@ -41,7 +80,7 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 	
 	        row 1/.style={
 	            nodes={
-	                fill=orange,
+	                fill=azul,
 	                draw=black,
 	                font=\bfseries
 	            }
@@ -82,6 +121,9 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 ```tikz
 \usetikzlibrary{matrix}
 \begin{document}
+
+	\definecolor{azul}{RGB}{23, 65, 125}
+	
 	\tikzset{ 
 	    table/.style={
 		    matrix of nodes,    
@@ -98,7 +140,7 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 	
 	        row 1/.style={
 	            nodes={
-	                fill=orange,
+	                fill=azul,
 	                draw=black,
 	                font=\bfseries
 	            }
@@ -168,6 +210,9 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 ```tikz
 \usetikzlibrary{matrix}
 \begin{document}
+
+	\definecolor{azul}{RGB}{23, 65, 125}
+	
 	\tikzset{ 
 	    table/.style={
 		    matrix of nodes,    
@@ -184,7 +229,7 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 	
 	        row 1/.style={
 	            nodes={
-	                fill=orange,
+	                fill=azul,
 	                draw=black,
 	                font=\bfseries
 	            }
@@ -211,15 +256,10 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 			node[pos=1, above left=2pt] {1};
 	
 		\path (persona.south) -- ++(0, -1)
-			node[pos=0.5, font=\bfseries] 
-				{Persona(DNI, Nombre, PatenteAuto)}
-			node[pos=1, font=\bfseries] 
-				{Auto(Patente, Modelo)};
-		\path (auto.south) -- ++(0, -1)
-			node[pos=0.5, font=\bfseries] 
-				{Persona(DNI, Nombre)}
-			node[pos=1, font=\bfseries] 
-				{Auto(Patente, Modelo, DNI)};
+			node[font=\bfseries, align=center] 
+				{Persona(DNI, Nombre, PatenteAuto) \\ Auto(Patente, Modelo)};
+		\path (auto.south) -- ++(0, -1) 
+			node[font=\bfseries, align=center] {Persona(DNI, Nombre) \\ Auto(Patente, Modelo, DNI)};
 	
 	\end{tikzpicture}
 \end{document}
@@ -227,18 +267,182 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 
 ##### Relaciones 1 a 0..*
 ---
-![[Transformación relación 1 a 0..muchos a una base de datos relacional.webp]]
+
+```tikz
+\usetikzlibrary{matrix}
+\begin{document}
+
+	\definecolor{azul}{RGB}{23, 65, 125}
+	
+	\tikzset{ 
+	    table/.style={
+		    matrix of nodes,    
+		    text depth=0.5ex,
+	        text height=2ex,
+	            
+	        nodes={
+	            rectangle,
+	            draw=black,
+	            align=center,
+	            text width=8em,
+	            font=\bfseries
+	        },        
+	
+	        row 1/.style={
+	            nodes={
+	                fill=azul,
+	                draw=black,
+	                font=\bfseries
+	            }
+	        }
+	    }
+	}
+
+	\begin{tikzpicture}
+	
+		\matrix (oficina) at (0, 1) [table] {
+			Oficina \\
+			IdOficina \\
+			Capacidad \\
+			Ocupación \\
+			Ubicación \\
+		};
+	
+		\matrix (persona) at (6, 1) [table] {
+			Persona \\
+			DNI \\
+			Nombre \\
+			Apellido \\
+			Sueldo \\
+		};
+
+		\draw[thick] (oficina-2-1.east) -- (persona-2-1.west)
+			node[pos=0, above right=2pt] {1}
+			node[pos=1, above left=2pt] {0..*};
+
+		\draw[ultra thick, ->] (3, 0) -- ++(0, -2);
+	
+		\path (-1, -2.75) -- (7, -2.75)
+			node[midway, font=\bfseries] {Oficina};
+		\matrix (empleadoBdd) at (3, -4) [table, nodes={text width=6em}] {
+			ID & Capacidad & Ocupación & Ubicación \\
+			PM1 & 150 & 100 & Pto Mader \\
+		};
+
+		\path (-1, -6.5) -- (7, -6.5)
+			node[midway, font=\bfseries] {Empleado};
+		\matrix (telefonoBdd) at (3, -8) [table, nodes={text width=6em}] {
+			DNI & Nombre & Apellido & Sueldo & ID \\
+			22222222 & Juan & Ceo & 100000 & PM1 \\
+			33333333 & Felipe & Codeo & 1 & PM1 \\
+		};
+
+		\draw [ultra thick, rounded corners=1em] (empleadoBdd-1-1.west) 
+			-- ++ (-0.7, 0)
+			-- ++ (0, -1.7)
+			-- ++ (12, 0)
+			-- ++ (0, -1.9)
+			-- (telefonoBdd-1-5.east);
+	
+	\end{tikzpicture}
+\end{document}
+```
 
 ##### Relación 0..* a 0..*
 ---
-![[Transformación relación 0..muchos a 0..muchos a una base de datos relacional.webp]]
+
+```tikz
+\usetikzlibrary{matrix}
+\begin{document}
+
+	\definecolor{azul}{RGB}{23, 65, 125}
+	
+	\tikzset{ 
+	    table/.style={
+		    matrix of nodes,    
+		    text depth=0.5ex,
+	        text height=2ex,
+	            
+	        nodes={
+	            rectangle,
+	            draw=black,
+	            align=center,
+	            text width=8em,
+	            font=\bfseries
+	        },        
+	
+	        row 1/.style={
+	            nodes={
+	                fill=azul,
+	                draw=black,
+	                font=\bfseries
+	            }
+	        }
+	    }
+	}
+
+	\begin{tikzpicture}
+	
+		\matrix (actor) at (0, 0) [table] {
+			Actor \\
+			DNI \\
+		};
+	
+		\matrix (pelicula) at (5, 0) [table] {
+			Película \\
+			Código \\
+		};
+
+		\draw[thick] (actor-2-1.east) -- (pelicula-2-1.west)
+			node[pos=0, above right=2pt] {0..*}
+			node[pos=1, above left=2pt] {0..*}
+			node[midway, below=1em] (puntoMedio) {};
+
+		\draw[->, ultra thick] (puntoMedio) -- ++(0, -1.5)
+			node[below=1em, font=\bfseries, align=center] 
+				{Actor(DNI) \\ Pelicula(Código) \\ Actuación(DNI, Código)};
+
+		\draw[->, ultra thick] (7, -1) -- ++(1, 0);
+
+		\path (9, 1.25) -- ++ (2, 0)
+			node[midway, font=\bfseries] {Actor};
+		\matrix at (10, 0) [table, nodes={text width=6em}] {
+			DNI \\
+			22222222 \\
+			33333333 \\
+		};
+
+		\path (13, 1.25) -- ++ (2, 0)
+			node[midway, font=\bfseries] {Película};
+		\matrix at (14, 0) [table, nodes={text width=6em}] {
+			Código \\
+			LUJ8 \\
+			A4E \\
+		};
+
+		\path (10, -1.8) -- ++ (4, 0)
+			node[midway, font=\bfseries] {Actuación};
+		\matrix at (12, -3.5) [table, nodes={text width=6em}] {
+			DNI & Código \\
+			22222222 & LUJ8 \\
+			33333333 & LUJ8 \\
+			33333333 & A4E \\
+		};
+
+	\end{tikzpicture}
+\end{document}
+```
 
 ##### Recursivas 0..1 a 0..1
 ---
 
 ```tikz
 \usetikzlibrary{matrix}
+
 \begin{document}
+
+	\definecolor{azul}{RGB}{23, 65, 125}
+	
 	\begin{tikzpicture}
 	
 		\matrix (persona) at (0, 0) [
@@ -247,15 +451,14 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 			text height=2ex,
 			nodes={
 	            rectangle,
-	            draw=black,
 	            align=center,
+	            draw=black,
 	            text width=8em,
 	            font=\bfseries
 	        },
 	        row 1/.style={
 	            nodes={
-	                fill=orange,
-	                draw=black,
+	                fill=azul,
 	                font=\bfseries
 	            }
 	        }
@@ -287,6 +490,9 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 ```tikz
 \usetikzlibrary{matrix}
 \begin{document}
+
+	\definecolor{azul}{RGB}{23, 65, 125}
+	
 	\begin{tikzpicture}
 	
 		\matrix (persona) at (0, 0) [
@@ -302,7 +508,7 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 	        },
 	        row 1/.style={
 	            nodes={
-	                fill=orange,
+	                fill=azul,
 	                draw=black,
 	                font=\bfseries
 	            }
@@ -335,6 +541,9 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 ```tikz
 \usetikzlibrary{matrix}
 \begin{document}
+
+	\definecolor{azul}{RGB}{23, 65, 125}
+	
 	\begin{tikzpicture}
 	
 		\matrix (pieza) at (0, 0) [
@@ -350,7 +559,7 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 	        },
 	        row 1/.style={
 	            nodes={
-	                fill=orange,
+	                fill=azul,
 	                draw=black,
 	                font=\bfseries
 	            }
@@ -373,8 +582,8 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 				node[midway, above=2pt] {0..*};
 
 		\draw[->, ultra thick] (3, 0) -- ++(2, 0)
-			node[right=1em, font=\bfseries, text width=17em, align=center] 
-				{Pieza(Código) Compueso(Codigo-Compuesto, Código-Componente)};
+			node[right=1em, font=\bfseries, align=center] 
+				{Pieza(Código) \\ Compueso(Codigo-Compuesto, \\ Código-Componente)};
 	
 	\end{tikzpicture}
 \end{document}
@@ -386,6 +595,9 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 ```tikz
 \usetikzlibrary{matrix}
 \begin{document}
+
+	\definecolor{azul}{RGB}{23, 65, 125}
+
 	\tikzset{ 
 	    table/.style={
 		    matrix of nodes,    
@@ -402,7 +614,7 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 	
 	        row 1/.style={
 	            nodes={
-	                fill=orange,
+	                fill=azul,
 	                draw=black,
 	                font=\bfseries
 	            }
@@ -412,38 +624,36 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 
 	\begin{tikzpicture}
 	
-		\matrix (persona) at (0, 0) [table] {
-			Persona \\
-			DNI \\
-			Nombre \\
+		\matrix (cliente) at (0, 0) [table] {
+			Cliente \\
+			CUIL \\
 		};
 	
-		\matrix (auto) at (8, 0) [table] {
-			Auto \\
-			Patente \\
-			Modelo \\
+		\matrix (producto) at (6, 0) [table] {
+			Producto \\
+			Código \\
 		};
 
-		\draw[thick] (persona-2-1.east) -- (auto-2-1.west)
-			node[pos=0, above right=2pt] {1}
-			node[pos=1, above left=2pt] {1};
-	
-		\path (persona.south) -- ++(0, -1)
-			node[pos=0.5, font=\bfseries] 
-				{Persona(DNI, Nombre, PatenteAuto)}
-			node[pos=1, font=\bfseries] 
-				{Auto(Patente, Modelo)};
-		\path (auto.south) -- ++(0, -1)
-			node[pos=0.5, font=\bfseries] 
-				{Persona(DNI, Nombre)}
-			node[pos=1, font=\bfseries] 
-				{Auto(Patente, Modelo, DNI)};
+		\matrix (venta) at (3, -2.5) [table] {
+			Venta \\
+			Cantidad \\
+		};
+
+		\draw[thick] (cliente-2-1.east) -- (producto-2-1.west)
+			node[pos=0, above right=2pt] {0..*}
+			node[pos=1, above left=2pt] {0..*}
+			node[midway, above=2pt] {Compra}
+			node[midway] (puntoMedio) {};
+
+		\draw[thick, dashed] (venta-1-1.north) -- (puntoMedio);
+
+		\draw[->, ultra thick] (8, 0) -- ++(2, 0)
+			node[right=1em, font=\bfseries, align=center] 
+				{Cliente(CUIL) \\ Producto(Codigo) \\ Venta(Cantidad, CUIL, Código)};
 	
 	\end{tikzpicture}
 \end{document}
 ```
-
-![[Transformación clases asociativas a una base de datos relacional.webp]]
 
 ##### Herencia
 ---
