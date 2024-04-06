@@ -41,8 +41,8 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 	
 	        row 1/.style={
 	            nodes={
-	                fill=black,
-	                text=white,
+	                fill=orange,
+	                draw=black,
 	                font=\bfseries
 	            }
 	        }
@@ -98,8 +98,8 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 	
 	        row 1/.style={
 	            nodes={
-	                fill=black,
-	                text=white,
+	                fill=orange,
+	                draw=black,
 	                font=\bfseries
 	            }
 	        }
@@ -184,8 +184,8 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 	
 	        row 1/.style={
 	            nodes={
-	                fill=black,
-	                text=white,
+	                fill=orange,
+	                draw=black,
 	                font=\bfseries
 	            }
 	        }
@@ -254,8 +254,8 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 	        },
 	        row 1/.style={
 	            nodes={
-	                fill=black,
-	                text=white,
+	                fill=orange,
+	                draw=black,
 	                font=\bfseries
 	            }
 	        }
@@ -302,8 +302,8 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 	        },
 	        row 1/.style={
 	            nodes={
-	                fill=black,
-	                text=white,
+	                fill=orange,
+	                draw=black,
 	                font=\bfseries
 	            }
 	        }
@@ -350,8 +350,8 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 	        },
 	        row 1/.style={
 	            nodes={
-	                fill=black,
-	                text=white,
+	                fill=orange,
+	                draw=black,
 	                font=\bfseries
 	            }
 	        }
@@ -402,8 +402,8 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 	
 	        row 1/.style={
 	            nodes={
-	                fill=black,
-	                text=white,
+	                fill=orange,
+	                draw=black,
 	                font=\bfseries
 	            }
 	        }

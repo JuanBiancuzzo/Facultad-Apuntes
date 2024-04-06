@@ -367,7 +367,7 @@ Establecer desconexión
 		* Para establecer la conexión
 	* RST
 		* Es una forma de finalizar de forma extrema, donde se espera que el que lo envía no tiene tiempo para finalizar de forma correcta, como apagar la compu de forma forzosa 
-	* URGA
+	* URG
 	* ACK
 		* Para avisar que tiene información en el campo de Acknowledgment number
 	* PSH
