@@ -68,7 +68,7 @@ $$ donde cambia el tipo de [[Dopaje|dopante]] ($x = 0$) se denomina [[Juntura me
 
 ##### Concentración de [[Portador de carga|portadores]]
 ---
-![[Concentración de portadores en escala lineal de una juntura PN en equilibrio térmico.png|600]]
+![[Concentración de portadores en escala lineal de una juntura PN en equilibrio térmico.webp]]
 $$ n_0(x) = \begin{cases} 
 	\sim 0, &&            &&   x  &\le&  - x_{p_0}  \\
 	\sim 0, && -x_{p_0}   &<&  x  &\le&  ~~~~0      \\
@@ -86,7 +86,7 @@ $$ p_0(x) = \begin{cases}
 ---
 $$ \rho(x) = q ~ (N_d + p_0 - N_a - n_0) $$
 
-![[Densidad de carga en escala lineal de una juntura PN en equilibrio térmico.png|600]]
+![[Densidad de carga en escala lineal de una juntura PN en equilibrio térmico.webp]]
 
 $$ \rho(x) = \begin{cases} 
 	~\sim 0,  &&            &&   x  &\le&  - x_{p_0}  \\
@@ -99,7 +99,7 @@ $$ \rho(x) = \begin{cases}
 ---
 $$ E(x_2) - E(x_1) = \frac{1}{\varepsilon_{sc}} \int_{x_1}^{x_2} \rho(x) ~ dx $$
 
-![[Campo eléctrico en escala lineal de una juntura PN en equilibrio térmico.png|600]]
+![[Campo eléctrico en escala lineal de una juntura PN en equilibrio térmico.webp]]
 
 En particular para $-x_{p_0} < x \le 0$
 $$ E(x) - \underbrace{E(-x_{p_0})}_{= ~ 0} = \frac{1}{\varepsilon_{sc}} \int_{-x_{p_0}}^x -qN_a ~ dx = -\frac{q~N_a}{\varepsilon_{sc}} ~~ x \bigg\vert_{-x_{p_0}}^x = - \frac{q ~ N_a}{\varepsilon_{sc}} ~ (x + x_{p_0}) $$
@@ -120,7 +120,7 @@ Esto nos sirve para encontrar el potencial en QNR-P y QNR-N $$ \begin{align}
 	\text{P - QNR}: && p_0 = N_a \implies \phi_p = - \frac{kT}{q} \ln\left( \frac{N_a}{n_i} \right) \\\\ 
 	\text{N - QNR}: && n_0 = N_d \implies \phi_n = \frac{kT}{q} \ln\left( \frac{N_d}{n_i} \right)
 \end{align} $$
-![[Potencial eléctrico en escala lineal de una juntura PN.png|600]]
+![[Potencial eléctrico en escala lineal de una juntura PN.webp]]
 
 $$ \phi(x) = \begin{cases} 
 	\phi_p,   &&            &&   x  &\le&  - x_{p_0}  \\
