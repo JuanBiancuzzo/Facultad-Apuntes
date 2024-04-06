@@ -382,6 +382,67 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 
 ##### Clases asociativas
 ---
+
+```tikz
+\usetikzlibrary{matrix}
+\begin{document}
+	\tikzset{ 
+	    table/.style={
+		    matrix of nodes,    
+		    text depth=0.5ex,
+	        text height=2ex,
+	            
+	        nodes={
+	            rectangle,
+	            draw=black,
+	            align=center,
+	            text width=8em,
+	            font=\bfseries
+	        },        
+	
+	        row 1/.style={
+	            nodes={
+	                fill=black,
+	                text=white,
+	                font=\bfseries
+	            }
+	        }
+	    }
+	}
+
+	\begin{tikzpicture}
+	
+		\matrix (persona) at (0, 0) [table] {
+			Persona \\
+			DNI \\
+			Nombre \\
+		};
+	
+		\matrix (auto) at (8, 0) [table] {
+			Auto \\
+			Patente \\
+			Modelo \\
+		};
+
+		\draw[thick] (persona-2-1.east) -- (auto-2-1.west)
+			node[pos=0, above right=2pt] {1}
+			node[pos=1, above left=2pt] {1};
+	
+		\path (persona.south) -- ++(0, -1)
+			node[pos=0.5, font=\bfseries] 
+				{Persona(DNI, Nombre, PatenteAuto)}
+			node[pos=1, font=\bfseries] 
+				{Auto(Patente, Modelo)};
+		\path (auto.south) -- ++(0, -1)
+			node[pos=0.5, font=\bfseries] 
+				{Persona(DNI, Nombre)}
+			node[pos=1, font=\bfseries] 
+				{Auto(Patente, Modelo, DNI)};
+	
+	\end{tikzpicture}
+\end{document}
+```
+
 ![[Transformación clases asociativas a una base de datos relacional.webp]]
 
 ##### Herencia

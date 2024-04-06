@@ -5,7 +5,7 @@ capitulo: 4
 ---
 ### Definición
 ---
-El TBJ está en conducción pero la [[Corriente eléctrica|corriente]] depende de $V_{BE}$ y de $V_{BC}$. La base está inundada de [[Portador de carga|portadores]] minoritarios. Con $V_{BE} > 0$ y $V_{BC} > 0$
+El [[Transistor bipolar de juntura (TBJ)|TBJ]] está en conducción pero la [[Corriente eléctrica|corriente]] depende de $V_{BE}$ y de $V_{BC}$. La base está inundada de [[Portador de carga|portadores]] minoritarios. Con $V_{BE} > 0$ y $V_{BC} > 0$
 
 $$  \begin{align} 
 	I_C &= I_S ~ \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - \exp \left( \frac{V_{BC}}{V_{th}} \right) \right) - \frac{I_S}{\beta_R} \left( \exp \left( \frac{V_{BC}}{V_{th}} \right) - 1 \right) \\
