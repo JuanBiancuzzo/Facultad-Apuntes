@@ -9,51 +9,13 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 
 #### Tipos de base de datos
 ---
-Tenemos lo siguientes tipos de base de datos, donde ACID es un acrónimo en inglés de Atomicity, Consistency, Isolation and Durability
-
-##### Base de datos relacionales
----
-
-| Tipos de datos soportados | Modelo de guardado de datos             | Caso de uso principal                                 | Cumple ACID | Escalabilidad        |
-| ------------------------- | --------------------------------------- | ----------------------------------------------------- | ----------- | -------------------- |
-| Datos estructurados       | Pre definidos, modelo relacional fijado | Proceso a partir de transacciones y queries complejas | Si          | Escala verticalmente |
-
-##### Base de datos NoSQL
----
-
-| Tipos de datos soportados                   | Modelo de guardado de datos | Caso de uso principal             | Cumple ACID                            | Escalabilidad          |
-| ------------------------------------------- | --------------------------- | --------------------------------- | -------------------------------------- | ---------------------- |
-| Datos no estructurados o semi estructurados | Sin modelo pre definido     | rendimiento alto y disponibilidad | Depende de la base de datos que se use | Escala horizontalmente |
-
-##### Base de datos con series en el tiempo
----
-
-| Tipos de datos soportados | Modelo de guardado de datos | Caso de uso principal                   | Cumple ACID | Escalabilidad        |
-| ------------------------- | --------------------------- | --------------------------------------- | ----------- | -------------------- |
-| Serie de tiempo           | Modelo concepctual          | Guardar y analizar las series de tiempo | No          | Escala verticalmente |
-
-Se puede ver que son las [[Serie de tiempo|serie de tiempo]] acá.
-
-##### Base de datos NewSQL
----
-
-| Tipos de datos soportados                                  | Modelo de guardado de datos                  | Caso de uso principal                                        | Cumple ACID | Escalabilidad          |
-| ---------------------------------------------------------- | -------------------------------------------- | ------------------------------------------------------------ | ----------- | ---------------------- |
-| Datos estructurados, no estructurados y semi estructurados | Se puede definir o no el modelo de los datos | Guardar grandes cantidad de datos y correr queries complejas | No          | Escala horizontalmente |
-
-##### Base de datos en memoria
----
-
-| Tipos de datos soportados                                  | Modelo de guardado de datos                    | Caso de uso principal       | Cumple ACID | Escalabilidad        |
-| ---------------------------------------------------------- | ---------------------------------------------- | --------------------------- | ----------- | -------------------- |
-| Datos estructurados, no estructurados y semi estructurados | Depende de la base de datos que se este usando | Respuesta rápida de queries | Si          | Escala verticalmente |
-
-##### Base de datos distribuidos
----
-
-| Tipos de datos soportados                                  | Modelo de guardado de datos                    | Caso de uso principal                        | Cumple ACID                                    | Escalabilidad          |
-| ---------------------------------------------------------- | ---------------------------------------------- | -------------------------------------------- | ---------------------------------------------- | ---------------------- |
-| Datos estructurados, no estructurados y semi estructurados | Depende de la base de datos que se este usando | Guardar y analizar grandes cantidad de datos | Depende de la base de datos que se este usando | Escala horizontalmente |
+Tenemos lo siguientes tipos de base de datos
+* [[Base de datos relacionales|Base de datos relacionales]]
+* [[Base de datos NoSQL|Base de datos NoSQL]]
+* [[Base de datos con series de tiempo|Base de datos con series de tiempo]]
+* [[Base de datos NewSQL|Base de datos NewSQL]]
+* [[Base de datos en memoria|Base de datos en memoria]]
+* [[Base de datos distribuidos|Base de datos distribuidos]]
 
 #### Transformación del [[Modelado de dominio|modelo de dominio]] a la base de datos
 ---

@@ -7,8 +7,14 @@ tags: materia
 ---
 ### Apuntes 
 ---
-##### General (1)
+##### General (7)
 ---
+* [[bdd/General/Base de datos distribuidos.md|Base de datos distribuidos]]
+* [[bdd/General/Base de datos en memoria.md|Base de datos en memoria]]
+* [[bdd/General/Base de datos NewSQL.md|Base de datos NewSQL]]
+* [[bdd/General/Base de datos con series de tiempo.md|Base de datos con series de tiempo]]
+* [[bdd/General/Base de datos NoSQL.md|Base de datos NoSQL]]
+* [[bdd/General/Base de datos relacionales.md|Base de datos relacionales]]
 * [[bdd/General/Base de datos.md|Base de datos]]
 
 ##### SQL (26)
