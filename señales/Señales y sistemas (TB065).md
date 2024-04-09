@@ -27,8 +27,10 @@ tags: materia
 * [[señales/Señales y sistemas/Espacio de Hilbert.md|Espacio de Hilbert]]
 * [[señales/Señales y sistemas/Bounded Input-Bounded Output (BIBO).md|Bounded Input-Bounded Output (BIBO)]]
 
-##### Sistemas LTI (7)
+##### Sistemas LTI (9)
 ---
+* [[señales/Sistemas LTI/Transferencia del sistema.md|Transferencia del sistema]]
+* [[señales/Sistemas LTI/Respuesta en frecuencia.md|Respuesta en frecuencia]]
 * [[señales/Sistemas LTI/Sistemas descriptos por ecuaciones diferenciales ordinarias.md|Sistemas descriptos por ecuaciones diferenciales ordinarias]]
 * [[señales/Sistemas LTI/Sistema LTI invertible.md|Sistema LTI invertible]]
 * [[señales/Sistemas LTI/Sistema LTI estable.md|Sistema LTI estable]]

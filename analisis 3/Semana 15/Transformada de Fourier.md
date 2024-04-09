@@ -23,8 +23,45 @@ Dada una función $f : \mathbb{R} \to \mathbb{C}$ [[Seccionalmente continua|secc
 
 Donde $L^1$ es la [[Conjunto de Lebesgue de orden n|conjunto de Lebesgue de orden 1]].
 
+
 Consideramos la [[Delta de Dirac|delta de Dirac]] $\delta(t)$. Aunque no podemos decir que $\delta(t) \in L^2(\mathbb{R})$, podemos definir su transformada de Fourier en un sentido distribucional $$ X(j\omega) = \int_{-\infty}^{\infty} \delta(t) \exp(-j\omega t) ~ dt = 1 $$
 Podemos pensar que de alguna forma un impulso unitario tiene contribuciones de todos los armónicos posibles en forma pareja. Además podemos escribir $$ \delta(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} \exp(j\omega t) ~ d\omega $$
+
+Vamos a asumir que las [[Señal|señales]] a considerar son tales que existe su transformada de Fourier
+
+##### Linealidad
+---
+Sean $x(t)$ e $y(t)$ funciones, tenemos que $$ \mathcal{F}[a ~ x(t) + b ~ y(t)] = a ~ \mathcal{F}[x(t)] + b ~ \mathcal{F}[y(t)], ~~~ a, b \in \mathbb{C} $$
+
+##### Desplazamiento temporal
+---
+Sea $x(t)$ tal que $X(j\omega) = \mathcal{F}[x(t)]$, tenemos que $$ \mathcal{F}[x(t-t_0)] = \exp(-j\omega t_0) X(j\omega) $$
+
+
+##### Conjugación y simetría conjugada
+---
+Sea $x(t)$ tal que $X(j\omega) = \mathcal{F}[x(t)]$, tenemos $$ \mathcal{F}[x^*(t - t_0)] = X^*(-j\omega) $$
+* Si $x(t)$ es real $X(j\omega) = X^*(-j\omega)$. Esto implica $\mathcal{Re}(X(j\omega)) = \mathcal{Re}(X(-j\omega))$  y $\mathcal{Im}(X(j\omega)) = -\mathcal{Im}(X(-j\omega))$
+	* Si además $x(t)$ es [[Función par|par]] se puede chequear que $X(j\omega) = X^*(j\omega)$. Entonces $X(j\omega)$ es real y par
+	* Si además $x(t)$ es [[Función impar|impar]] se puede chequear que $X(j\omega) = -X^*(j\omega)$. Entonces $X(j\omega)$ es imaginaria pura e 
+
+* Si $x(t)$ es imaginaria $X(j\omega) = -X^*(-j\omega)$. Esto implica $\mathcal{Re}(X(j\omega)) = -\mathcal{Re}(X(-j\omega))$  y $\mathcal{Im}(X(j\omega)) = \mathcal{Im}(X(-j\omega))$
+	* Si además $x(t)$ es par se puede chequear que $X(j\omega) = X^*(j\omega)$. Entonces $X(j\omega)$ es imaginaria pura y par
+	* Si además $x(t)$ es impar se puede chequear que $X(j\omega) = -X^*(j\omega)$. Entonces $X(j\omega)$ es real e impar
+
+##### Derivación
+---
+Sea $x(t)$ tal que $X(j\omega) = \mathcal{F}[x(t)]$, temeos que $$ \mathcal{F}\left[ \frac{dx}{dt}(t) \right] = j\omega X(j\omega) $$
+
+##### Integración
+---
+Sea $x(t)$ tal que $X(j\omega) = \mathcal{F}[x(t)]$, tenemos que $$ \mathcal{F}\left[ \int_{-\infty}^{t} x(\tau) ~ d\tau \right] = \frac{X(j\omega)}{j\omega} + \pi X(0) \delta(\omega) $$
+Notar que $\displaystyle X(0) = \int_{-\infty}^{\infty} x(\tau) ~ d\tau$ 
+
+##### Convolución
+---
+Sean las funciones $x(t)$ y $y(t)$, tenemos que $$ \mathcal{F}[x(t) * y(t)] = \mathcal{F}[x(t)] ~ \mathcal{F}[y(t)] $$
+Donde $x(t) * y(t)$ es la [[Convolución|convolución]] de las dos señales.
 
 #### Teorema
 ---

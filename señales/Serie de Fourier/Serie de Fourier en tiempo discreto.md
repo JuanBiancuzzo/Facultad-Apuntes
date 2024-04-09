@@ -21,7 +21,7 @@ Consideremos el caso de un sistema de discreto continuo cuya [[Representación d
 \end{align} $$
 La acción de un sistema LTI sobre una exponencial se puede escribir entonces como $$ y(t) = z^{n} ~ H(z) $$ donde $H(z)$ es lo que se denomina la [[Transferencia del sistema|transferencia del sistema]]. Ósea el sistema entrega a la salida la misma señal de entrada pasada por un escalar que depende sólo del sistema y del valor de $s$
 
-Se dice que $z^n$ es un [[Autovalor|autovalor]] para los sistemas LTI y que $H(z)$ corresponde al autovalor asociado con $z^n$ y el sistema con [[Respuesta al impulso|respuesta al impulso]] $h[n]$
+Se dice que $z^n$ es un [[Autovalor|autovalor]] para los sistemas LTI y que $H(z)$ corresponde al autovalor asociado con $z^n$ y el sistema con [[Respuesta en frecuencia|respuesta al impulso]] $h[n]$
 
 Por lo tanto, si tomamos $z = \exp(j\omega_0)$, entonces $x[n] = \exp(j\omega_0 n)$ con $\omega \in [-\pi, \pi)$, por lo tanto se define la transferencia como $H(\exp(j\omega_0))$ que es la [[Respuesta en frecuencia|respuesta en frecuencia del sistema]] $$ H(\exp(j\omega_0)) = \sum_{n = -\infty}^{\infty} h[n] \exp(-j\omega_0 t) ~ dt $$
 Que podemos concluir que la acción de un sistema LTI sobre una señal periódica es modificar los [[Coeficientes de Fourier de una señal discreta|coeficientes de Fourier]] de la señal original mediante una multiplicación por la respuesta en frecuencia evaluada en cada uno de los múltiplos de la armónica fundamental

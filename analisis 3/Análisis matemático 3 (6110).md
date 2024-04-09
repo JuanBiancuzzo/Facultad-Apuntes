@@ -188,8 +188,10 @@ tags:
 * [[analisis 3/Semana 12/Convergencia media.md|Convergencia media]]
 * [[analisis 3/Semana 12/Coeficientes de Fourier de una función.md|Coeficientes de Fourier de una función]]
 
-##### Semana 15 (11)
+##### Semana 15 (13)
 ---
+* [[analisis 3/Semana 15/Función impar.md|Función impar]]
+* [[analisis 3/Semana 15/Función par.md|Función par]]
 * [[analisis 3/Semana 15/Operador reflexión temporal.md|Operador reflexión temporal]]
 * [[analisis 3/Semana 15/Teorema de Plancherel.md|Teorema de Plancherel]]
 * [[analisis 3/Semana 15/Transformada de Fourier.md|Transformada de Fourier]]

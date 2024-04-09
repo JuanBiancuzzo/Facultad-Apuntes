@@ -56,12 +56,14 @@ tags:
 * [[adc/Circuitos acoplados magnéticamente/Bornes homólogos.md|Bornes homólogos]]
 * [[adc/Circuitos acoplados magnéticamente/Autoinductancia.md|Autoinductancia]]
 
-##### Respuesta en frecuencia (4)
+##### Respuesta en frecuencia (6)
 ---
-* [[adc/Respuesta en frecuencia/Respuesta en frecuencia.md|Respuesta en frecuencia]]
-* [[adc/Respuesta en frecuencia/Transferencia del sistema.md|Transferencia del sistema]]
+* [[adc/Respuesta en frecuencia/Filtro.md|Filtro]]
+* [[adc/Respuesta en frecuencia/Filtro notch.md|Filtro notch]]
+* [[adc/Respuesta en frecuencia/Filtro pasa-alto.md|Filtro pasa-alto]]
+* [[adc/Respuesta en frecuencia/Filtro pasa-bandas.md|Filtro pasa-bandas]]
+* [[adc/Respuesta en frecuencia/Filtro pasa-bajo.md|Filtro pasa-bajo]]
 * [[adc/Respuesta en frecuencia/Diagrama de Bode.md|Diagrama de Bode]]
-* [[adc/Respuesta en frecuencia/Filtros.md|Filtros]]
 
 ##### Cuadripolos (8)
 ---

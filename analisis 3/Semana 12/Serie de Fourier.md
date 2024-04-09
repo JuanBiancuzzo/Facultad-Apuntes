@@ -27,7 +27,7 @@ Los [[Sistema lineal e invariante en el tiempo (LTI)|sistemas LTI]] reaccionan d
 \end{align} $$
 La acción de un sistema LTI sobre una exponencial se puede escribir entonces como $$ y(t) = \exp(st) ~ H(s) $$ donde $H(s)$ es lo que se denomina la [[Transferencia del sistema|transferencia del sistema]]. Ósea el sistema entrega a la salida la misma señal de entrada pasada por un escalar que depende sólo del sistema y del valor de $s$
 
-Se dice que $\exp(st)$ es un [[Autovalor|autovalor]] para los sistemas LTI y que $H(s)$ corresponde al autovalor asociado con $\exp(st)$ y el sistema con [[Respuesta al impulso|respuesta al impulso]] $h(t)$
+Se dice que $\exp(st)$ es un [[Autovalor|autovalor]] para los sistemas LTI y que $H(s)$ corresponde al autovalor asociado con $\exp(st)$ y el sistema con [[Respuesta en frecuencia|respuesta al impulso]] $h(t)$
 
 Por lo tanto, si tomamos $s = j\omega_0$ por lo tanto se define la transferencia como $H(j\omega_0)$ que es la [[Respuesta en frecuencia|respuesta en frecuencia del sistema]] $$ H(j\omega_0) = \int_{-\infty}^{\infty} h(t) \exp(-j\omega_0 t) ~ dt $$
 Que podemos concluir que la acción de un sistema LTI sobre una señal periódica es modificar los [[Coeficientes de Fourier de una función|coeficientes de Fourier]] de la señal original mediante una multiplicación por la respuesta en frecuencia evaluada en cada uno de los múltiplos de la armónica fundamental

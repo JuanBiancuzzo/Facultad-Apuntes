@@ -5,7 +5,7 @@ capitulo: 4
 ---
 ### Definición
 ---
-El [[Circuito RC]] es uno de los [[Filtros]] mas básicos que se utilizan para eliminar frecuencias indeseadas.
+El [[Circuito RC]] es uno de los [[Filtro]] mas básicos que se utilizan para eliminar frecuencias indeseadas.
 
 ##### Características
 - Dependiendo de donde se tome la tension de salida, sobre el [[Resistor]] o sobre el [[Capacitor]], se obtienen diferentes tipos de respuestas en frecuencia para el mismo circuito.
