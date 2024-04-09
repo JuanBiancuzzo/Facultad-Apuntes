@@ -41,7 +41,7 @@ distribucion: Continua
 
 ### Distribución normal
 ---
-![[Distribución normal#Definición]]
+![[Distribución Normal#Definición]]
 
 ### Distribución Chi cuadrado
 ---

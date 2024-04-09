@@ -20,4 +20,4 @@ Se define $\mu = (E[X_1], E[X_2], \cdots, E[X_p])$ y $\Sigma = \begin{bmatrix} C
 ---
 * Si $X \sim N_p(0, diag(\lambda_1, \cdots, \lambda_p))$ entonces $X_1, \cdots, X_p$ son [[Variables independientes|independientes]] y $X_i \sim N(0, \lambda_i)$.
 * Si $X \sim N_p(\mu, \Sigma)$ y $A \in \mathbb{R}^{p \times p}$ entonces $A \cdot X + b \sim N_p(\mu = A \cdot \mu + b, \Sigma = A \cdot \Sigma \cdot A^T)$.
-* Sea $Y = \displaystyle\sum_{i = 1}^{n} a_i \cdot X_i$ entonces $Y \sim N\bigg(\mu = \displaystyle\sum_{i = 1}^{n} a_i \cdot \mu_i, \sigma^2 = \sum_{i = 1}^{n} a_i^2 \cdot \sigma_i^2 \bigg)$ tiene una [[Distribución normal]].
+* Sea $Y = \displaystyle\sum_{i = 1}^{n} a_i \cdot X_i$ entonces $Y \sim N\bigg(\mu = \displaystyle\sum_{i = 1}^{n} a_i \cdot \mu_i, \sigma^2 = \sum_{i = 1}^{n} a_i^2 \cdot \sigma_i^2 \bigg)$ tiene una [[Distribución Normal]].

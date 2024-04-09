@@ -5,7 +5,7 @@ capitulo: 15
 ---
 ### Definición
 ---
-Dada una función $f : \mathbb{R} \to \mathbb{C}$ [[Seccionalmente continua]] y [[Absolutamente integrable]] en $\mathbb{R}$, se define como transformada de Fourier de $f$ a la función $\hat{f} : \mathbb{R} \to \mathbb{C}$ tal que para cada $\omega \in \mathbb{R}$: $$ \hat{f}(\omega) = \int_{-\infty}^{+\infty} f(x) e^{-i\omega x}dx $$
+Dada una función $f : \mathbb{R} \to \mathbb{C}$ [[Seccionalmente continua|seccionalmente continua]] y [[Absolutamente integrable|absolutamente integrable]] en $\mathbb{R}$, se define como transformada de Fourier de $f$ a la función $\hat{f} : \mathbb{R} \to \mathbb{C}$ tal que para cada $\omega \in \mathbb{R}$: $$ \hat{f}(\omega) = \int_{-\infty}^{+\infty} f(x) e^{-i\omega x}dx $$
 ### Propiedades
 ---
 
@@ -21,9 +21,14 @@ Dada una función $f : \mathbb{R} \to \mathbb{C}$ [[Seccionalmente continua]] y 
 
 Donde $L^1$ es la [[Conjunto de Lebesgue de orden n|conjunto de Lebesgue de orden 1]].
 
-### Definición para $L^2(\mathbb{R}, \mathbb{C})$
+Sea $x(t) \in L_1(\mathbb{R})$ de variación acotada sobre cualquier intervalo finito de la recta. Entonces vale $$ \lim_{M \to \infty} \int_{-\infty}^{\infty} x(u) \frac{M}{\pi} sinc \left( \frac{M}{\pi} (t - u) \right) ~ du = \frac{x(t - 0^{-}) + x(t + 0^{+})}{2} $$
+
+### Definición para $L^2(\mathbb{R}, \mathbb{C})$ 
 ---
 Dada $f \in L^2(\mathbb{R}, \mathbb{C})$, para cada $b > 0$ y cada $\omega \in \mathbb{R}$, la integral $$ \hat{f}_b(\omega) = \int_{-b}^{b} f(x) e^{-i\omega x} dx $$
 es convergente y dicha fórmula define una función $\hat{f}_b \in L^2(\mathbb{R}, \mathbb{C})$. Además, existe una función $\hat{f} \in L^2(\mathbb{R}, \mathbb{C})$ tal que $\lim_{b \to \infty} \Vert \hat{f} - \hat{f}_b \Vert_2 = 0$. Esta función $\hat{f}$ se define como la transformada de Fourier de $f$ en $L^2(\mathbb{R}, \mathbb{C})$ y verifica la [[Identidad de Perseval para la transformación de Fourier|identidad de Perseval]].
 
-Si además $f \in L^1(\mathbb{R}, \mathbb{C})$, entonces la transformada de Fourier de $f$ en $L^2(\mathbb{R}, \mathbb{C})$ coincide con la transformada de Fourier de $f$ en $L^1(\mathbb{R}, \mathbb{C})$, es decir: $$ \hat{f}(\omega) = \int_{-\infty}^{+\infty} f(x) e^{i\omega x} dx $$
+Si además $f \in L^1(\mathbb{R}, \mathbb{C})$, entonces la transformada de Fourier de $f$ en $L^2(\mathbb{R}, \mathbb{C})$ coincide con la transformada de Fourier de $f$ en $L^1(\mathbb{R}, \mathbb{C})$, es decir: $$ \hat{f}(\omega) = \int_{-\infty}^{+\infty} f(x) e^{-i\omega x} dx $$
+#### Teorema de Plancherel
+---
+![[Teorema de Plancherel#Definición]]

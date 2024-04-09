@@ -9,6 +9,7 @@ tags: materia
 ---
 ##### Señales y sistemas (17)
 ---
+* [[señales/Señales y sistemas/Delta de Dirac.md|Delta de Dirac]]
 * [[señales/Señales y sistemas/Transformación.md|Transformación]]
 * [[señales/Señales y sistemas/Sistema lineal.md|Sistema lineal]]
 * [[señales/Señales y sistemas/Sistema.md|Sistema]]
@@ -25,7 +26,6 @@ tags: materia
 * [[señales/Señales y sistemas/Memoria de un sistema.md|Memoria de un sistema]]
 * [[señales/Señales y sistemas/Espacio de Hilbert.md|Espacio de Hilbert]]
 * [[señales/Señales y sistemas/Bounded Input-Bounded Output (BIBO).md|Bounded Input-Bounded Output (BIBO)]]
-* [[señales/Señales y sistemas/Delta de dirac.md|Delta de dirac]]
 
 ##### Sistemas LTI (7)
 ---
@@ -45,9 +45,11 @@ tags: materia
 * [[señales/Serie de Fourier/Conjunto ortogonal completo.md|Conjunto ortogonal completo]]
 * [[señales/Serie de Fourier/Coeficientes de Fourier de una señal discreta.md|Coeficientes de Fourier de una señal discreta]]
 
-##### Transformada de Fourier (1)
+##### Transformada de Fourier (3)
 ---
-* [[señales/Transformada de Fourier/temp.md|temp]]
+* [[señales/Transformada de Fourier/Función sinc.md|Función sinc]]
+* [[señales/Transformada de Fourier/Espacio de Schwartz.md|Espacio de Schwartz]]
+* [[señales/Transformada de Fourier/Antitransforamda de Fourier.md|Antitransforamda de Fourier]]
 
 ##### Muestreo e Interpolación (1)
 ---

@@ -25,7 +25,7 @@ Consideremos un [[Sistema lineal e invariante en el tiempo (LTI)|sistema LTI]] e
 ```
 
 Usando la propiedad de asociatividad de la [[Convolución|convolución]] tenemos que $$ x(t) = g(t) ~*~ \left[ h(t) ~*~ x(t) \right] = g(t) ~*~ \left[ g(t) ~*~ h(t) \right] $$
-Por lo que podemos decir $$ \delta(t) = g(t) ~*~ h(t) $$ donde $\delta(t)$ es la [[Delta de dirac|delta de Dirac]]
+Por lo que podemos decir $$ \delta(t) = g(t) ~*~ h(t) $$ donde $\delta(t)$ es la [[Delta de Dirac|delta de Dirac]]
 
 #### Nota
 ---

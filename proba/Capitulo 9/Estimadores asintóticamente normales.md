@@ -5,7 +5,7 @@ capitulo: 9
 ---
 ### Definición
 ---
-Se dice que $\hat{\theta}_n$ es una sucesión de [[Estimador|estimadores]] asintóticamente normales si $\sqrt{n} \cdot (\hat{\theta}_n - q(\theta))$ converge en distribución a una [[Distribución normal|normal]] con [[Esperanza]] $0$ y [[Varianza]] $\displaystyle\frac{q'(\theta)^2}{I(\theta)}$ donde $I(\theta)$ es el [[Número de información de fisher]].
+Se dice que $\hat{\theta}_n$ es una sucesión de [[Estimador|estimadores]] asintóticamente normales si $\sqrt{n} \cdot (\hat{\theta}_n - q(\theta))$ converge en distribución a una [[Distribución Normal|normal]] con [[Esperanza]] $0$ y [[Varianza]] $\displaystyle\frac{q'(\theta)^2}{I(\theta)}$ donde $I(\theta)$ es el [[Número de información de fisher]].
 
 
 ### Teorema

@@ -23,15 +23,15 @@ Con la representación
 También se puede entender la delta de Dirac con el [[Límite|límite]], donde $$ \lim_{\Delta \to 0} \delta_\Delta (t) = \delta(t) $$ y gráficamente se ve
 ```tikz
 \begin{document} 
-
-	\definecolor{col1}{rgb}{1.0, 0.1, 0.1}
-	\definecolor{col2}{rgb}{1.0, 0.0, 0.5}
-	\definecolor{col3}{rgb}{0.9, 0.2, 0.7}
-	\definecolor{col4}{rgb}{0.7, 0.4, 0.9}
-	\definecolor{col5}{rgb}{0.4, 0.5, 0.9}
-	\definecolor{col6}{rgb}{0.0, 0.5, 0.8}
-
 	\begin{tikzpicture}[scale=1.3, transform shape, ultra thick]
+	
+		\definecolor{col1}{rgb}{1.0, 0.1, 0.1}
+		\definecolor{col2}{rgb}{1.0, 0.0, 0.5}
+		\definecolor{col3}{rgb}{0.9, 0.2, 0.7}
+		\definecolor{col4}{rgb}{0.7, 0.4, 0.9}
+		\definecolor{col5}{rgb}{0.4, 0.5, 0.9}
+		\definecolor{col6}{rgb}{0.0, 0.5, 0.8}
+		
 		\draw[->] (-0.2, 0) -- (3.5, 0)
 			node[right=2pt] {$t$};
 		\draw[->] (0, -0.2) node[below=2pt] {$0$}

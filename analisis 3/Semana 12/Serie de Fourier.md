@@ -16,7 +16,7 @@ Cada proyección $f_m = \sum_{n = - m}^m c_n(f) \cdot e_n$ se denomina suma de F
 Notemos que para el caso donde $f(x) \in \mathbb{R}$, entonces se cumple que $x(t) = x^*(t)$ lo cual implica que $c_n = c^*_{-n}$, de esta forma simplificando la representación de una [[Señal|señal]] $$ x(t) = c_0 + \sum_{n=1}^{\infty} 2 ~ \mathcal{Re} \Set{c_n ~ \exp\left( i n \frac{2\pi}{T}  t\right) } $$
 
 Por lo que podemos concluir que para señales reales, los componentes armónicos negativos y positivos están relacionados y nos podemos quedar con las componentes positivas
-ct
+
 #### Sistemas LTI
 ---
 Los [[Sistema lineal e invariante en el tiempo (LTI)|sistemas LTI]] reaccionan de una forma muy satisfactoria a [[Señal|señales]] [[Función exponencial|exponenciales]]. Consideremos el caso de un sistema de tiempo continuo cuya [[Representación de una señal mediante impulsos|respuesta al impulso]] es $h(t)$. Supongamos que la entrada al mismo es $\exp(st)$ donde $s \in \mathbb{C}$. La salida del sistema se puede escribir como $$ \begin{align} y(t) 
