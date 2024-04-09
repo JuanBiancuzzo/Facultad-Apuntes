@@ -18,7 +18,7 @@ Esta relacionada por una [[Transformada de Fourier|transformada de Fourier]], ve
 		\begin{axis}[
 			xmin=-15, ymin=0,
 			xmax=15, ymax=0.4, 
-			samples=150,
+			samples=100,
 			grid=major,
 			xlabel=$t$,
 			ylabel=Amplitud,
@@ -53,7 +53,7 @@ Esta relacionada por una [[Transformada de Fourier|transformada de Fourier]], ve
 		\begin{axis}[
 			xmin=-5, ymin=0,
 			xmax=5, ymax=1, 
-			samples=150,
+			samples=200,
 			grid=major,
 			xlabel=$\omega$,
 			ylabel=Amplitud,

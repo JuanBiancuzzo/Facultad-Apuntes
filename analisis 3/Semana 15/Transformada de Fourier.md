@@ -5,6 +5,8 @@ capitulo: 15
 ---
 ### Definición
 ---
+Sea $\mathcal{F} : L^1(\mathbb{R}, \mathbb{C}) \to C_\bullet^0(\mathbb{R}, \mathbb{C})$ la [[Transformación lineal|transformación lineal]] (donde $L^1$ es el [[Conjunto de Lebesgue de orden n|conjunto de Lebesgue]] de orden $1$, y $C_\bullet^0$ es el [[Conjunto de Lebesgue de orden n|Conjunto de Lebesgue]] de orden $\infty$) tal que $\mathcal{F}(f) = \hat{f}$  bien definida donde su [[Transformada de Fourier|transformada de Fourier]] $\hat{f}$ es [[Función continua|continua]] y verifica el [[Semana 15/Lema de Riemann-Lebesgue|lema de Riemann-Lebesgue]]
+
 Dada una función $f : \mathbb{R} \to \mathbb{C}$ [[Seccionalmente continua|seccionalmente continua]] y [[Absolutamente integrable|absolutamente integrable]] en $\mathbb{R}$, se define como transformada de Fourier de $f$ a la función $\hat{f} : \mathbb{R} \to \mathbb{C}$ tal que para cada $\omega \in \mathbb{R}$: $$ \hat{f}(\omega) = \int_{-\infty}^{+\infty} f(x) e^{-i\omega x}dx $$
 ### Propiedades
 ---
@@ -21,6 +23,11 @@ Dada una función $f : \mathbb{R} \to \mathbb{C}$ [[Seccionalmente continua|secc
 
 Donde $L^1$ es la [[Conjunto de Lebesgue de orden n|conjunto de Lebesgue de orden 1]].
 
+Consideramos la [[Delta de Dirac|delta de Dirac]] $\delta(t)$. Aunque no podemos decir que $\delta(t) \in L^2(\mathbb{R})$, podemos definir su transformada de Fourier en un sentido distribucional $$ X(j\omega) = \int_{-\infty}^{\infty} \delta(t) \exp(-j\omega t) ~ dt = 1 $$
+Podemos pensar que de alguna forma un impulso unitario tiene contribuciones de todos los armónicos posibles en forma pareja. Además podemos escribir $$ \delta(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} \exp(j\omega t) ~ d\omega $$
+
+#### Teorema
+---
 Sea $x(t) \in L_1(\mathbb{R})$ de variación acotada sobre cualquier intervalo finito de la recta. Entonces vale $$ \lim_{M \to \infty} \int_{-\infty}^{\infty} x(u) \frac{M}{\pi} sinc \left( \frac{M}{\pi} (t - u) \right) ~ du = \frac{x(t - 0^{-}) + x(t + 0^{+})}{2} $$
 
 ### Definición para $L^2(\mathbb{R}, \mathbb{C})$ 
@@ -32,3 +39,4 @@ Si además $f \in L^1(\mathbb{R}, \mathbb{C})$, entonces la transformada de Four
 #### Teorema de Plancherel
 ---
 ![[Teorema de Plancherel#Definición]]
+

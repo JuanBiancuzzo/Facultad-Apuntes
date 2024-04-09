@@ -28,4 +28,4 @@ Sean $f, ~g, ~h \in L^1(\mathbb{R}, \mathbb{C})$ (donde $L^1$ es [[Conjunto de L
 2) $g * f = g * f$
 3) $f * (g + h) = (f * g) + (f * h)$
 4) $(cf) * g = f * (cg) = c(f * g)$
-5) $\mathbb{f}(f * g) = \mathbb{f}(f) \cdot \mathbb{f}(g)$, donde $\mathbb{f}$ es la [[Transformación de Fourier]]. Es decir, $\forall \omega \in \mathbb{R} : \hat{f * g}(\omega) = \hat{f}(\omega) \cdot \hat{g}(\omega)$.
+5) $\mathbb{f}(f * g) = \mathbb{f}(f) \cdot \mathbb{f}(g)$, donde $\mathbb{f}$ es la [[Transformada de Fourier]]. Es decir, $\forall \omega \in \mathbb{R} : \hat{f * g}(\omega) = \hat{f}(\omega) \cdot \hat{g}(\omega)$.

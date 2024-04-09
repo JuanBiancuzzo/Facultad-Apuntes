@@ -5,15 +5,17 @@ capitulo: 16
 ---
 ### Definición
 ---
-Se denomina transformada de Laplace de $f$ a: $$ F(\sigma 
- + i \omega) = \int\limits_0^\infty f(t) e^{-(\sigma + i\omega)t} dt = \int\limits_{-\infty}^\infty f(t) H(t) e^{-(\sigma + i \omega)t} dt $$
-Para $\sigma > 0$ es la [[Transformada de Fourier]] $\hat{f}_\sigma$ de la función $f_\sigma(t) = f(t) H(t) e^{-\sigma t}$. Donde $H(t)$ es la [[Función de Heaviside|función de Heaviside]]
+Sea $\mathcal{L} : \mathbb{O} \to \mathbb{I}$, donde $\mathcal{L}$ es la aplicación de la [[Transformada de Laplace|transformada de Laplace]], de un espacio $\mathbb{O}$ (cuyos elementos se denominan tradicionalmente "[[Función objeto|función objeto]]") en un espacio $\mathbb{I}$ de funciones [[Holomorfa|holomorfas]], denominadas "funciones imagen"
 
+Definiendo $\mathcal{L}(f(t)) = F(\sigma + i\omega)$, se denomina transformada de Laplace de $f$ a: $$ F(\sigma 
+ + i \omega) = \int\limits_{-\infty}^\infty f(t) ~ H(t) ~ \exp(-(\sigma + i \omega)t) ~ dt = \int\limits_0^\infty f(t) ~ \exp(-(\sigma + i \omega)t) ~ dt $$
+Para $\sigma > 0$ es la [[Transformada de Fourier|transformada de Fourier]] $\hat{f}_\sigma$ de la función $f_\sigma(t) = f(t) H(t) e^{-\sigma t}$. Donde $H(t)$ es la [[Función de Heaviside|función de Heaviside]]
+
+Notemos que $F(s)$ es [[Función C-lineal|función C-lineal]]
 
 ### Propiedades
 ---
-Valores iniciales $$ f(0) = \lim_{s \to \infty} s ~ F(s) $$
-Valor final $$ f(\infty) = \lim_{s \to 0} s ~ F(s) $$
+Veamos las siguientes propiedades de la transformada de Laplace
 
 |                                    | Función objeto          | Transformada de Laplace                                              | Observaciones                                                                       |
 | ---------------------------------- | ----------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
@@ -29,6 +31,12 @@ Valor final $$ f(\infty) = \lim_{s \to 0} s ~ F(s) $$
 | Desplazamiento                     | $e^{s_0 t} f(t)$        | $F(s - s_0)$                                                         | $s_0$ es una constante compleja. $Re(s - s_0) > \sigma(F)$                          |
 | Desplazamiento temporal            | $f(t - t_0) H(t - t_0)$ | $e^{-t_0 s}~F(s)$                                                    | $t_0$ es una constante real                                                         |
 | [[Convolución]]                    | $(f * g)(t)$            | $F(s)~G(s)$                                                          |                                                                                     |
+| Valor inicial                      | $f(0)$                  | $\lim_{s \to \infty} s ~ F(s)$                                       |                                                                                     |
+| Valor final                        | $f(\infty)$             | $\lim_{s \to 0} s ~ F(s)$                                            |                                                                                     |
+
+#### Tabla de transformaciones conocidas
+---
+Vamos a enumerar algunas transformaciones conocidas
 
 | Función objeto                             | Transformada de Laplace                              | RC                         | Observaciones                                                                 |
 | ------------------------------------------ | ---------------------------------------------------- | -------------------------- | ----------------------------------------------------------------------------- |

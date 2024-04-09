@@ -188,14 +188,13 @@ tags:
 * [[analisis 3/Semana 12/Convergencia media.md|Convergencia media]]
 * [[analisis 3/Semana 12/Coeficientes de Fourier de una función.md|Coeficientes de Fourier de una función]]
 
-##### Semana 15 (12)
+##### Semana 15 (11)
 ---
 * [[analisis 3/Semana 15/Operador reflexión temporal.md|Operador reflexión temporal]]
 * [[analisis 3/Semana 15/Teorema de Plancherel.md|Teorema de Plancherel]]
 * [[analisis 3/Semana 15/Transformada de Fourier.md|Transformada de Fourier]]
 * [[analisis 3/Semana 15/Teorema de inversión.md|Teorema de inversión]]
 * [[analisis 3/Semana 15/Norma de una función.md|Norma de una función]]
-* [[analisis 3/Semana 15/Transformación de Fourier.md|Transformación de Fourier]]
 * [[analisis 3/Semana 15/Lema del seno cardinal.md|Lema del seno cardinal]]
 * [[analisis 3/Semana 15/Convolución.md|Convolución]]
 * [[analisis 3/Semana 15/Lema de Riemann-Lebesgue.md|Lema de Riemann-Lebesgue]]
@@ -203,9 +202,8 @@ tags:
 * [[analisis 3/Semana 15/Conjunto de Lebesgue de orden n.md|Conjunto de Lebesgue de orden n]]
 * [[analisis 3/Semana 15/Condición de Dini.md|Condición de Dini]]
 
-##### Semana 16 (14)
+##### Semana 16 (13)
 ---
-* [[analisis 3/Semana 16/Transformación de Laplace.md|Transformación de Laplace]]
 * [[analisis 3/Semana 16/Transformada de Laplace.md|Transformada de Laplace]]
 * [[analisis 3/Semana 16/Teorema del valor inicial.md|Teorema del valor inicial]]
 * [[analisis 3/Semana 16/Teorema del valor final.md|Teorema del valor final]]
