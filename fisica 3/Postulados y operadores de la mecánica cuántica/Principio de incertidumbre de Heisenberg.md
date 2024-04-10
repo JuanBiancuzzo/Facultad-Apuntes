@@ -27,9 +27,8 @@ Esta relacionada por una [[Transformada de Fourier|transformada de Fourier]], ve
 			grid=major,
 			xlabel=$t$,
 			ylabel=Amplitud,
+			legend style={fill=white},
 		]
-
-		\foreach \sigma/\C in {1/blue, 5/red, 10/green} {}
 		
 		\addplot[cyan, ultra thick, domain=-15:15] 
 			{ (2 * 3.14 * 1)^(-0.5) * exp(-\x^2 * (2 * 1^2)^(-1)) };
@@ -62,9 +61,8 @@ Esta relacionada por una [[Transformada de Fourier|transformada de Fourier]], ve
 			grid=major,
 			xlabel=$\omega$,
 			ylabel=Amplitud,
+			legend style={fill=white}
 		]
-
-		\foreach \sigma/\C in {1/blue, 5/red, 10/green} {}
 		
 		\addplot[cyan, ultra thick, domain=-5:5] 
 			{ exp(-\x^2 * 1^2 * (2)^(-1)) };
