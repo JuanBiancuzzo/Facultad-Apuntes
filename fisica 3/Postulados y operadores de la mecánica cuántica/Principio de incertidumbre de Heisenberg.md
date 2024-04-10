@@ -7,6 +7,11 @@ capitulo: 7
 ---
 En [[Mecánica cuántica|mecánica cuántica]], principio de incertidumbre establece la imposibilidad de que determinados pares de [[Magnitud física observable|magnitud física observables]] y complementarias sean conocidas por precisión arbitraria
 
+$$ \begin{align} 
+	\Delta_t \Delta_E &\ge \frac{\hbar}{2} \\
+	\Delta_x \Delta_p &\ge \frac{\hbar}{2}
+\end{align} $$
+
 Esta relacionada por una [[Transformada de Fourier|transformada de Fourier]], veamos un ejemplo, donde tenemos una [[Señal|señal]] que representa la [[Distribución continua|distribución]] de una magnitud física observable a partir de una [[Distribución Normal|distribución normal]] $x(t) = \frac{1}{\sqrt{2\pi\sigma}} \exp\left( - \frac{t^2}{2\sigma^2} \right)$ con $\sigma > 0$ donde su transformada de Fourier $$ X(j\omega) = \int_{-\infty}^{\infty} \frac{1}{\sqrt{2\pi\sigma}} \exp\left( - \frac{t^2}{2\sigma^2} \right) ~ dt = \exp(- \frac{\omega^2 \sigma^2}{2}) $$ donde notemos que también es una distribución normal escalada
 
 ```tikz
@@ -78,4 +83,4 @@ Esta relacionada por una [[Transformada de Fourier|transformada de Fourier]], ve
 \end{document}
 ```
 
-Demostrando que mientras más localizado uno, más deslocalizado en el otro, y viceversa. A
+Demostrando que mientras más localizado uno, más deslocalizado en el otro, y viceversa. 
