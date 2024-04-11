@@ -56,8 +56,9 @@ tags:
 * [[intro/Unidad 4/Filtro RC.md|Filtro RC]]
 * [[intro/Unidad 4/Frecuencia de corte de un filtro.md|Frecuencia de corte de un filtro]]
 
-##### Unidad 5 (9)
+##### Unidad 5 (10)
 ---
+* [[intro/Unidad 5/Potencia eficaz.md|Potencia eficaz]]
 * [[intro/Unidad 5/Teorema de máxima transferencia de potencia.md|Teorema de máxima transferencia de potencia]]
 * [[intro/Unidad 5/Tensión eficaz.md|Tensión eficaz]]
 * [[intro/Unidad 5/Tension promedio.md|Tension promedio]]
