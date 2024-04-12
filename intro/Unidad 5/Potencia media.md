@@ -5,8 +5,7 @@ capitulo: 5
 ---
 ### Definición
 ---
-Al igual que en la [[Tension promedio]], la potencia promedio ($P_m$)es el cociente entre el periodo y el area bajo la curva de la función $p(t)$.
-Es decir, 
+Al igual que en la [[Tension promedio|tension promedio]], la potencia promedio ($P_m$) es el cociente entre el periodo y el area bajo la curva de la función $p(t)$. Es decir, 
 $$
 \begin{align}
 P_m= \frac{1}{T} \cdot \int_{0}^{T} p(t) \cdot dt

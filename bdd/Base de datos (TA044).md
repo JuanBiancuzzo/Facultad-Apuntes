@@ -17,8 +17,9 @@ tags: materia
 * [[bdd/General/Base de datos relacionales.md|Base de datos relacionales]]
 * [[bdd/General/Base de datos.md|Base de datos]]
 
-##### SQL (26)
+##### SQL (27)
 ---
+* [[bdd/SQL/Sentencia JOIN.md|Sentencia JOIN]]
 * [[bdd/SQL/Sentencia WHERE.md|Sentencia WHERE]]
 * [[bdd/SQL/SQL Keywords.md|SQL Keywords]]
 * [[bdd/SQL/Sentencia TOP o LIMIT.md|Sentencia TOP o LIMIT]]
