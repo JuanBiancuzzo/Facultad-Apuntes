@@ -24,8 +24,8 @@ Donde visualmente se puede entender como
 		\fill[ultra thick, green!35!darkgray] ( 1.25, 0) circle (2)
 			node[font=\bfseries, black, scale=1.75, right=2pt] {$B$};
 	
-		\draw[ultra thick, white] (-1.25, 0) circle (2);		
-		\draw[ultra thick, white] ( 1.25, 0) circle (2);
+		\draw[ultra thick, darkgray] (-1.25, 0) circle (2);		
+		\draw[ultra thick, darkgray] ( 1.25, 0) circle (2);
 
 		\path (0, 2.75) node[font=\bfseries, black, scale=1.75]
 				{$A + B$};
