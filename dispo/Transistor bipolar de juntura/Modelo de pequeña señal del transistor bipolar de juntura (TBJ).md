@@ -37,7 +37,7 @@ donde $Q \equiv$  punto de polarización  $(V_{BE}, V_{CE})$
 $$ i_c = \frac{\partial i_C}{\partial v_{BE}} \biggm|_{Q}  v_{be} + \frac{\partial i_C}{\partial v_{CE}} \biggm|_{Q} v_{ce} = g_m v_{be} ~ + ~ g_o v_{ce} $$
 $$ i_b = \frac{\partial i_B}{\partial v_{BE}} \biggm|_{Q} v_{be} + \frac{\partial i_B}{\partial v_{BC}} \biggm|_{Q} v_{bc} = g_\pi v_{be} ~ + ~ g_\mu v_{be} $$
 
-Definimos:
+Definimos
 * $g_m \equiv$ [[Transconductancia para transistor bipolar de juntura (TBJ)|transconductancia]] $[g_m] = S$
 * $g_o \equiv$ [[Conductancia de colector|Conductancia de salida o de colector]] $[g_0] = S$
 * $g_\pi \equiv$ [[Conductancia de base|Conductancia de entrada o de base]] $[g_\pi] = S$

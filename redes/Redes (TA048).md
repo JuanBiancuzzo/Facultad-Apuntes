@@ -35,7 +35,7 @@ tags: materia
 
 ##### Capa de Red (1)
 ---
-* [[redes/Capa de Red/temp.md|temp]]
+* [[redes/Capa de Red/Clase 12-4.md|Clase 12-4]]
 
 ##### Capa de Enlace (1)
 ---
