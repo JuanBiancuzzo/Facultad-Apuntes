@@ -18,8 +18,9 @@ tags: materia
 * [[redes/Redes de computadoras/Host.md|Host]]
 * [[redes/Redes de computadoras/Internet Service Providers (ISPs).md|Internet Service Providers (ISPs)]]
 
-##### Capa de aplicación (6)
+##### Capa de aplicación (7)
 ---
+* [[redes/Capa de aplicación/Clase 26-3 .md|Clase 26-3 ]]
 * [[redes/Capa de aplicación/Hypertext Transfer Protocol (HTTP).md|Hypertext Transfer Protocol (HTTP)]]
 * [[redes/Capa de aplicación/Comando dig.md|Comando dig]]
 * [[redes/Capa de aplicación/Redes de distribución de contenido (CDN).md|Redes de distribución de contenido (CDN)]]
@@ -27,11 +28,14 @@ tags: materia
 * [[redes/Capa de aplicación/Domain Name System (DNS).md|Domain Name System (DNS)]]
 * [[redes/Capa de aplicación/Datacenter.md|Datacenter]]
 
-##### Capa de Transporte (3)
+##### Capa de Transporte (6)
 ---
+* [[redes/Capa de Transporte/Clase 9-4.md|Clase 9-4]]
+* [[redes/Capa de Transporte/Clase 5-4.md|Clase 5-4]]
+* [[redes/Capa de Transporte/Clase 26-3.md|Clase 26-3]]
+* [[redes/Capa de Transporte/Clase 22-3.md|Clase 22-3]]
 * [[redes/Capa de Transporte/User Datagram Protocol (UDP).md|User Datagram Protocol (UDP)]]
 * [[redes/Capa de Transporte/Transmission Control Protocol (TCP).md|Transmission Control Protocol (TCP)]]
-* [[redes/Capa de Transporte/Capa de transporte.md|Capa de transporte]]
 
 ##### Capa de Red (1)
 ---
