@@ -32,7 +32,7 @@ Este [[Filtro|filtro]] se lo puede caracterizar por su [[Transferencia del siste
 
 #### Forma real
 ---
-Sabiendo que los filtros pueden representarse un pasa bajos de la siguiente forma $$ H(s) = h_0 \frac{w_0^2 - s^2}{s^2 + \frac{w_0}{Q} s + w_0^2} $$
+Sabiendo que los filtros pueden representarse un pasa bajos de la siguiente forma $$ H(s) = h_0 \frac{s^2 + w_0^2}{s^2 + \frac{w_0}{Q} s + w_0^2} $$
 Donde vamos a definir $\omega_d = \mathcal{Im}(\omega_p)$ donde $w_p$ son las [[Función raíz|raíz]] de $s^2 + \frac{w_0}{Q} s + w_0^2$ y por lo tanto la amplitud de la transferencia
 
 ```tikz

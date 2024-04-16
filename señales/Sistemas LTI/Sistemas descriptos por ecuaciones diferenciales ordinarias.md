@@ -25,7 +25,14 @@ Notar que la ecuación es recursiva, ya que el valor de la salida al instante $n
 
 #### Aplicando la transformada de Fourier
 ---
-Si aplicamos el operador de [[Transformada de Fourier|Fourier]] $\mathcal{F}[\cdot]]$ a ambos lados obtenemos, aplicando [[Transformada de Fourier#Linealidad|linealidad]]  $$ \sum_{k = 0}^{N} a_k ~ \mathcal{F}\left[\frac{d^k y(t)}{dt^k}\right] = \sum_{k = 0}^{M} b_k ~ \mathcal{F}\left[\frac{d^k x(t)}{dt^k} \right], ~~ \forall N, ~ M \in \mathbb{N}_0 $$ 
+Si aplicamos el operador de [[Transformada de Fourier|Fourier]] $\mathcal{F}[\cdot]$ a ambos lados obtenemos, aplicando [[Transformada de Fourier#Linealidad|linealidad]]  $$ \sum_{k = 0}^{N} a_k ~ \mathcal{F}\left[\frac{d^k y(t)}{dt^k}\right] = \sum_{k = 0}^{M} b_k ~ \mathcal{F}\left[\frac{d^k x(t)}{dt^k} \right], ~~ \forall N, ~ M \in \mathbb{N}_0 $$ 
 Usando la propiedad de [[Transformada de Fourier#Derivación|derivación]] $$ Y(j\omega) \sum_{k = 0}^{N} a_k ~ (j\omega)^k = X(j \omega) \sum_{k = 0}^{M} b_k ~ (j\omega)^k $$
 Para un [[Sistema lineal e invariante en el tiempo (LTI)|sistema LTI]] sabemos que $$ Y(j\omega) = H(j\omega) ~ X(j\omega), ~~~ H(j\omega) = \frac{Y(j\omega)}{X(j\omega)} $$
-Entonces obtenemos la [[Transferencia del sistema#Transformada de Laplace|transferencia transformada]] $$ H(j\omega) = \frac{\displaystyle \sum_{k = 0}^{N} a_k ~ (j\omega)^k}{\displaystyle \sum_{k = 0}^{M} b_k ~ (j\omega)^k} $$
+Entonces obtenemos la [[Transferencia del sistema#Transformada de Laplace|transferencia transformada]] $$ H(j\omega) = \frac{\displaystyle \sum_{k = 0}^{M} b_k ~ (j\omega)^k}{\displaystyle \sum_{k = 0}^{N} a_k ~ (j\omega)^k} $$
+#### Aplicando la transformada de Fourier discreta
+---
+Si aplicamos el operador de [[Transformada de Fourier|Fourier]] $\mathcal{F}\Set{\cdot}$ a ambos lados obtenemos, aplicando [[Transformada de Fourier en tiempo discreto#Linealidad|linealidad]]  $$ \sum_{k = 0}^{N} a_k ~ \mathcal{F}\Set{y(n - k)} = \sum_{k = 0}^{M} b_k ~ \mathcal{F}\Set{x(n - k)}, ~~ \forall N, ~ M \in \mathbb{N}_0 $$ 
+Usando la propiedad de [[Transformada de Fourier en tiempo discreto#Diferencia|diferencia]] $$ Y\left(e^{j\Omega}\right) \sum_{k = 0}^{N} a_k ~ \exp(-j\Omega k) = X\left(e^{j\Omega}\right) \sum_{k = 0}^{M} b_k ~ \exp(-j\Omega k) $$
+Para un [[Sistema lineal e invariante en el tiempo (LTI)|sistema LTI]] sabemos que $$ Y\left(e^{j\Omega}\right) = H\left(e^{j\Omega}\right) ~ X\left(e^{j\Omega}\right), ~~~ H\left(e^{j\Omega}\right) = \frac{Y\left(e^{j\Omega}\right)}{X\left(e^{j\Omega}\right)} $$
+Entonces obtenemos la [[Transferencia del sistema#Transformada de Laplace|transferencia transformada]] $$ H\left(e^{j\Omega}\right) = \frac{\displaystyle \sum_{k = 0}^{M} b_k ~ \exp(-j\Omega k)}{\displaystyle \sum_{k = 0}^{N} a_k ~ \exp(-j\Omega k)} $$
+

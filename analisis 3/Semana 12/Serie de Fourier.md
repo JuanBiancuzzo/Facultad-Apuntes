@@ -5,7 +5,7 @@ capitulo: 12
 ---
 ### Definición
 ---
-La [[Serie]] de Fourier de $f \in E_P$ ([[Conjunto de funciones periódicas|conjunto de funciones periódicas]] de [[Función senoidal#Función periódica Periodo|periodo]] $P$) es la serie $$ f(t) = \sum_{n = -\infty}^\infty c_n(f) \cdot \exp\left( i \frac{2 \pi n}{P}  t\right) $$ donde los coeficientes $c_n(f)$ son los [[Coeficientes de Fourier de una función|coeficientes de Fourier]]. 
+La [[Serie]] de Fourier de $f \in E_P$ ([[Conjunto de funciones periódicas|conjunto de funciones periódicas]] de [[Función senoidal#Función periódica Periodo|periodo]] $P$) es la serie $$ f(t) = \sum_{n = -\infty}^\infty c_n(f) \cdot \exp\left( i \frac{2 \pi n}{P}  t\right) $$ donde los coeficientes $c_n(f)$ son los [[Coeficientes de Fourier|coeficientes de Fourier]]. 
 
 Donde esta igualdad se da cuando la [[Señal|señal]] $f(t)$ tiene [[Medida de una señal#Energía|energía]] finita, y para variaciones acotadas, se cumple la [[Condición de Dirichlet para la convergencia puntual|condición de Dirichlet para convergencia puntual]]
 
@@ -30,11 +30,11 @@ La acción de un sistema LTI sobre una exponencial se puede escribir entonces co
 Se dice que $\exp(st)$ es un [[Autovalor|autovalor]] para los sistemas LTI y que $H(s)$ corresponde al autovalor asociado con $\exp(st)$ y el sistema con [[Respuesta en frecuencia|respuesta al impulso]] $h(t)$
 
 Por lo tanto, si tomamos $s = j\omega_0$ por lo tanto se define la transferencia como $H(j\omega_0)$ que es la [[Respuesta en frecuencia|respuesta en frecuencia del sistema]] $$ H(j\omega_0) = \int_{-\infty}^{\infty} h(t) \exp(-j\omega_0 t) ~ dt $$
-Que podemos concluir que la acción de un sistema LTI sobre una señal periódica es modificar los [[Coeficientes de Fourier de una función|coeficientes de Fourier]] de la señal original mediante una multiplicación por la respuesta en frecuencia evaluada en cada uno de los múltiplos de la armónica fundamental
+Que podemos concluir que la acción de un sistema LTI sobre una señal periódica es modificar los [[Coeficientes de Fourier|coeficientes de Fourier]] de la señal original mediante una multiplicación por la respuesta en frecuencia evaluada en cada uno de los múltiplos de la armónica fundamental
 
 #### Propiedades
 ---
-Vamos a asumir que las señales $x(t)$ son periódicas con periodo $T$ y que cumplen todas las propiedades que discutimos arriba para que existe su representación en serie de Fourier. Denotaremos los [[Coeficientes de Fourier de una función|coeficientes de Fourier]] como $a_k$ y el proceso de mapeo de $x(t)$ en sus coeficientes y viceversa lo escribimos como $$ x(t) \xleftrightarrow{~\mathcal{FS}} a_k $$
+Vamos a asumir que las señales $x(t)$ son periódicas con periodo $T$ y que cumplen todas las propiedades que discutimos arriba para que existe su representación en serie de Fourier. Denotaremos los [[Coeficientes de Fourier|coeficientes de Fourier]] como $a_k$ y el proceso de mapeo de $x(t)$ en sus coeficientes y viceversa lo escribimos como $$ x(t) \xleftrightarrow{~\mathcal{FS}} a_k $$
 ##### Linealidad
 ---
 Sean $x(t)$ e $y(t)$ [[Función periódica|función periódicas]] de periodo $T$ tales que $x(t) \xleftrightarrow{~\mathcal{FS}} a_k$, $y(t) \xleftrightarrow{~\mathcal{FS}} b_k$. Entonces $$ \alpha x(t) + \beta y(t) \xleftrightarrow{~\mathcal{FS}} \alpha a_k + \beta b_k $$

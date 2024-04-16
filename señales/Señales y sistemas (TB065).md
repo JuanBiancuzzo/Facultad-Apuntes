@@ -39,8 +39,10 @@ tags: materia
 * [[señales/Sistemas LTI/Representación de una señal mediante impulsos.md|Representación de una señal mediante impulsos]]
 * [[señales/Sistemas LTI/Memoria de un sistema LTI.md|Memoria de un sistema LTI]]
 
-##### Serie de Fourier (5)
+##### Serie de Fourier (7)
 ---
+* [[señales/Serie de Fourier/Antitransforamda de Fourier en tiempo discreto.md|Antitransforamda de Fourier en tiempo discreto]]
+* [[señales/Serie de Fourier/Transformada de Fourier en tiempo discreto.md|Transformada de Fourier en tiempo discreto]]
 * [[señales/Serie de Fourier/Serie de Fourier en tiempo discreto.md|Serie de Fourier en tiempo discreto]]
 * [[señales/Serie de Fourier/Mutuamente ortogonal.md|Mutuamente ortogonal]]
 * [[señales/Serie de Fourier/Desigualdad de Bessel.md|Desigualdad de Bessel]]

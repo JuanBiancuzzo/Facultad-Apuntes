@@ -33,9 +33,11 @@ es decir que podemos sumar las contribuciones independientes de la constante, de
 
 ##### Otro punto de vista
 ---
-Teniendo un [[Sistemas descriptos por ecuaciones diferenciales ordinarias|sistema descripto por ecuaciones diferenciales]], es decir ![[Sistemas descriptos por ecuaciones diferenciales ordinarias#^134cea]]
+Teniendo un [[Sistemas descriptos por ecuaciones diferenciales ordinarias|sistema descripto por ecuaciones diferenciales]] o [[Sistemas descriptos por ecuaciones diferenciales ordinarias#Las ecuaciones en diferencias|ecuciones en diferencias]], es decir ![[Sistemas descriptos por ecuaciones diferenciales ordinarias#^134cea]]
 
 ![[Sistemas descriptos por ecuaciones diferenciales ordinarias#Aplicando la transformada de Fourier]]
+
+![[Sistemas descriptos por ecuaciones diferenciales ordinarias#Aplicando la transformada de Fourier discreta]]
 
 
 

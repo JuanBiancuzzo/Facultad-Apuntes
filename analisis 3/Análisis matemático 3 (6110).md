@@ -168,6 +168,7 @@ tags:
 
 ##### Semana 12 (19)
 ---
+* [[analisis 3/Semana 12/Coeficientes de Fourier.md|Coeficientes de Fourier]]
 * [[analisis 3/Semana 12/Serie de Fourier.md|Serie de Fourier]]
 * [[analisis 3/Semana 12/Serie de Fourier para ecuaciones diferenciales.md|Serie de Fourier para ecuaciones diferenciales]]
 * [[analisis 3/Semana 12/Producto interno entre funciones periodicas.md|Producto interno entre funciones periodicas]]
@@ -186,7 +187,6 @@ tags:
 * [[analisis 3/Semana 12/Conjunto de funciones periódicas.md|Conjunto de funciones periódicas]]
 * [[analisis 3/Semana 12/Condición de Dirichlet para la convergencia puntual.md|Condición de Dirichlet para la convergencia puntual]]
 * [[analisis 3/Semana 12/Convergencia media.md|Convergencia media]]
-* [[analisis 3/Semana 12/Coeficientes de Fourier de una función.md|Coeficientes de Fourier de una función]]
 
 ##### Semana 15 (13)
 ---

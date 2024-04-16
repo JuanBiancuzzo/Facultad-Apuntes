@@ -37,8 +37,10 @@ tags: materia
 * [[redes/Capa de Transporte/User Datagram Protocol (UDP).md|User Datagram Protocol (UDP)]]
 * [[redes/Capa de Transporte/Transmission Control Protocol (TCP).md|Transmission Control Protocol (TCP)]]
 
-##### Capa de Red (1)
+##### Capa de Red (3)
 ---
+* [[redes/Capa de Red/Capa de Red.md|Capa de Red]]
+* [[redes/Capa de Red/Data Plane.md|Data Plane]]
 * [[redes/Capa de Red/Clase 12-4.md|Clase 12-4]]
 
 ##### Capa de Enlace (1)
