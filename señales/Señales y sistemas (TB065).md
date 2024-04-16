@@ -39,21 +39,21 @@ tags: materia
 * [[señales/Sistemas LTI/Representación de una señal mediante impulsos.md|Representación de una señal mediante impulsos]]
 * [[señales/Sistemas LTI/Memoria de un sistema LTI.md|Memoria de un sistema LTI]]
 
-##### Serie de Fourier (7)
+##### Serie de Fourier (4)
 ---
-* [[señales/Serie de Fourier/Antitransforamda de Fourier en tiempo discreto.md|Antitransforamda de Fourier en tiempo discreto]]
-* [[señales/Serie de Fourier/Transformada de Fourier en tiempo discreto.md|Transformada de Fourier en tiempo discreto]]
 * [[señales/Serie de Fourier/Serie de Fourier en tiempo discreto.md|Serie de Fourier en tiempo discreto]]
 * [[señales/Serie de Fourier/Mutuamente ortogonal.md|Mutuamente ortogonal]]
 * [[señales/Serie de Fourier/Desigualdad de Bessel.md|Desigualdad de Bessel]]
 * [[señales/Serie de Fourier/Conjunto ortogonal completo.md|Conjunto ortogonal completo]]
-* [[señales/Serie de Fourier/Coeficientes de Fourier de una señal discreta.md|Coeficientes de Fourier de una señal discreta]]
 
-##### Transformada de Fourier (3)
+##### Transformada de Fourier (6)
 ---
+* [[señales/Transformada de Fourier/Transformada de Fourier en tiempo discreto.md|Transformada de Fourier en tiempo discreto]]
+* [[señales/Transformada de Fourier/Antitransforamda de Fourier en tiempo discreto.md|Antitransforamda de Fourier en tiempo discreto]]
 * [[señales/Transformada de Fourier/Función sinc.md|Función sinc]]
 * [[señales/Transformada de Fourier/Espacio de Schwartz.md|Espacio de Schwartz]]
 * [[señales/Transformada de Fourier/Antitransforamda de Fourier.md|Antitransforamda de Fourier]]
+* [[señales/Serie de Fourier/Coeficientes de Fourier de una señal discreta.md|Coeficientes de Fourier de una señal discreta]]
 
 ##### Muestreo e Interpolación (1)
 ---
