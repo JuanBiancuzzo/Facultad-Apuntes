@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-Empezando con una [[Señal#^016a35|señal continua]] $\implies$ Después la [[Muestrear|muestreamos]] $\implies$ La [[Cuantizar|cuantizamos]] $\implies$ Finalmente tenemos la [[Señal#^02aea6|señal discreta]]
+Empezando con una [[Señal#^016a35|señal continua]] $\implies$ Después la [[Muestreo|muestreamos]] $\implies$ La [[Cuantizar|cuantizamos]] $\implies$ Finalmente tenemos la [[Señal#^02aea6|señal discreta]]
 
 ```tikz
 \usepackage{amssymb}
