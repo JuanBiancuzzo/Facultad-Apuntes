@@ -56,6 +56,3 @@ Sea $x(n)$ tal que $X\left( e^{j\Omega} \right) = \mathcal{F}\Set{x(n)}$ e $y(n)
 ---
 Sea $x(n)$ tal que $X\left( e^{j\Omega} \right) = \mathcal{F}\Set{x(n)}$ e $y(n)$ tal que $Y\left( e^{j\Omega} \right) = \mathcal{F}\Set{y(n)}$. Sea $z(n) = x(n) ~ y(n)$. Tenemos $$ \mathcal{F}\Set{z(n)} = \frac{1}{2\pi} \int_{-\pi}^{\pi} X\left( e^{j\nu} \right) ~ Y\left( e^{j(\Omega - \nu)} \right) ~ d\nu $$
 Donde esta es similar a la [[Convolución|convolución tradicional]] o aperiódica, ya que no va desde $-\infty$ a $\infty$, esta al ir desde $-\pi$ a $\pi$ se la conoce como [[Convolución periódica|convolución periódica]].
-
-#### Sistemas LTI
----
