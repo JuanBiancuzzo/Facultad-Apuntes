@@ -74,7 +74,7 @@ Dirección IP: @IP
 	* Otra forma es que se puede reducir la parte de host para determinar una red para dividir más
 	* Mask
 		* Determina cual es la red y cual es el host, con 1 para la red y 0 para los host
-		* Se puede poner ip/mask (anotación)
+		* Se puede poner ip(prefijo)/mask (anotación)
 		* ip & mask = red con host con 0, borrando host
 		* ip & not mask =  host con red con 0, borrando red
 		* Por retrocompatibilidad las mask (que pueden tener cualquier valor) en cada clase siempre tiene un valor mayor a la mask de la misma clase
@@ -120,6 +120,8 @@ Internet (para IP)
 	* Tiene una tabla (tabla de ruteo) que dependiendo de la red/mask, se determina la salida
 	* Siempre sale por la salida más especifica
 		* Se ordena por el tamaño de la mask, de más grande a más chicas
+		* LPM
+			* Longest Prefix Match
 	* Default = 0.0.0.0/0 que matchea con cualquier ip enviada
 		* No siempre existe ruta por default (no suele pasar)
 		* En caso de que no exista lo dropea
@@ -152,21 +154,6 @@ Internet (para IP)
 		* round robin
 
 Datagramas IP
-* Versión
-* Direcciones
-	* Origen
-	* Destino 
-* Protocolo
-	* TCP
-	* UDP
-* Checksum
-* robustez: TTL (time to live) -> muy importante
-	* Cada vez q pasa por un router, se descuenta uno a ese valor
-	* Puede haber un bucle, para que no haya paquetes que se queden se muere por TTL
-		* los bucles son por la incoherencias de las tablas de ruteo
-	* Tiene 8 bits, y generalmente se lo pone en 64 o 128
-	* Fundamental para que funcione el internet!!!!
-* Tamaño del encabezado
 * fragmentación (ID, flags, off-set) 
 	* Cuando se conectan dos routers, pueden enviar un máximo tamaño de paquete
 		* MTU: Maximum Transfers Unit
@@ -177,10 +164,22 @@ Datagramas IP
 		* off-set para determinar en donde se cortó -> determina un orden
 	* el host es el que rearma todos los fragmentos ya que no se puede asegurar que todos los fragmentos pasen por el mismo router
 	* Permite diferentes tecnologías y se adapta a todo
+* La fragmentación es costosa y puede producir ataques
+	* Ataque al host
+		* Un atacante envía un fragmento, pero no envía el resto
+		* El receptor crea un buffer para almacenar los fragmentos para luego reconstruirlos
+			* Gasta recursos
+	* Ataque al routers
+		* Un atacante envía un paquete para ser fragmentado, y explota la cantidad de fragmentación
+	* IPv6 directamente no fragmenta para evitar estos problemas
+	  
+* Tamaño mínimo del header ip es 20, que es decir que no tenga opciones
+	* Recomendable considerar el MTU = header + payload máximo
+	  
 * Encabezado
 	* Versión 
 		* 4 bits
-	* IHL 
+	* IHL (header length)
 		* 4 bits
 	* Type of service
 		* Ahora no se usa para lo que originalmente fue diseñado
@@ -188,19 +187,41 @@ Datagramas IP
 		* 8 bits
 	* Total length
 		* 16 bits
-	* Id
+		* Es el largo del paquete o el fragmento
+	* Id 
 		* 16 bits
-	* Flgas
-		* Uno de los flags es que no se fragmente
-		* 4 bits
+		* Es el mismo en todos los fragmentos y distinto a todos los paquetes
+	* Flags
+		* 3 bits
+		* bit 0 (x) reservado (no se usa)
+		* bit 1 (D) Do not fragment
+			* Uno de los flags es que no se fragmente
+		* bit 2 (M) More fragments
+			* Identifica si hay más fragmentos y no es el último
+			* Si esta en 1, los fragmentos tienen M = 1
+			* Si es 0, el último fragmento tiene M = 0 y el resto tiene M = 1
 	* Fragment offset
-		* 12 bits
+		* 13 bits
+			* No se puede representar completamente una fragmentación total del paquete
+			* Con un offset de N, tenemos que pensarlo como N + 3 bits en 1, porque se asume que son 1 esos 3 bits faltantes
+			* Es múltiplo de 8, entonces el fragmento mínimo es de 8
+				* Esto implica que el fragmento tiene que ser divisible por 8
+		* Representa un offset del paquete original en el cual empieza este fragmento
 	* TTL
 		* 8 bits
+		* TTL (time to live) -> muy importante
+			* Cada vez q pasa por un router, se descuenta uno a ese valor
+			* Puede haber un bucle, para que no haya paquetes que se queden se muere por TTL
+				* los bucles son por la incoherencias de las tablas de ruteo
+			* Tiene 8 bits, y generalmente se lo pone en 64 o 128
+			* Fundamental para que funcione el internet!!!!
 	* Protocol
 		* 8 bits
+		* TCP
+		* UDP
 	* Checksum
 		* 16 bits
+		* Por cada fragmentación se cambia el checksum
 	* Source Address
 		* 32 bits
 	* Destination Address

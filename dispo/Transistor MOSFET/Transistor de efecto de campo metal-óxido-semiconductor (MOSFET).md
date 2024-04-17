@@ -7,7 +7,39 @@ capitulo: 6
 ---
 Este transistor tiene como componente principal a la [[Estructura Metal-Óxido-Semiconductor (MOS)|estructura MOS]]
 
-![[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET).webp]]
+```tikz
+\begin{document} 
+	\begin{tikzpicture}[scale=1.3, transform shape, ultra thick]
+		\draw (0, 0) rectangle (10, 3)
+			node[midway, font=\bfseries] {$p$};
+			
+		\draw (0, 2) rectangle (3, 3)
+			node[midway] {$n^+$};
+		\filldraw (0.4, 3) rectangle (2.6, 3.2);
+		\draw ({(2.6 + 0.4) * 0.5}, 3.2) -- ++(0, 0.4)
+			node[above=2pt, font=\bfseries] {Source};
+		
+		\draw (7, 2) rectangle (10, 3)
+			node[midway, font=\bfseries] {$n^+$};
+		\filldraw (7.4, 3) rectangle (9.6, 3.2);
+		\draw ({(9.6 + 7.4) * 0.5}, 3.2) -- ++(0, 0.4)
+			node[above=2pt, font=\bfseries] {Drain};
+
+		\filldraw[fill=gray] (3, 3) rectangle (7, 3.4);
+		\draw (3, 3.4) rectangle (7, 4)
+			node[midway, font=\bfseries] {poly-n};
+		\filldraw (3, 4) rectangle (7, 4.4);
+		\draw ({(7 + 3) * 0.5}, 4.4) -- ++(0, 0.4)
+			node[above=2pt, font=\bfseries] {Gate};
+			
+		\draw (0, 0) rectangle (10, 3);
+		\filldraw (0, -0.2) rectangle (10, 0);
+		\draw (5, -0.2) -- ++(0, -0.4)
+			node[below=2pt, font=\bfseries] {Body};
+		
+	\end{tikzpicture}
+\end{document}
+```
 
 Elementos claves
 * Debajo del gate se forma una capa de inversión controlada por la tensión $V_G$

@@ -57,6 +57,7 @@ Vemos que la [[Transformada de Fourier|transformada de Fourier]] $x_p(t)$ es una
 		\w = 1;
 		\T = 2 * \w + 0.5;
 		\xmax = 7;
+		\cant = 2;
 	}
 
 	\begin{tikzpicture}[scale=1, transform shape, ultra thick]
@@ -80,7 +81,7 @@ Vemos que la [[Transformada de Fourier|transformada de Fourier]] $x_p(t)$ es una
 			-- ++ (0, 3)
 			node[right=2pt] {$P(j\omega)$};
 
-		\foreach \x in {-2, ..., 2} {
+		\foreach \x in {-\cant, ..., \cant} {
 			\draw[->] ({\x * \T}, \y2) 
 				node[below=2pt] {$\x ~ \omega_s$}
 				-- ({\x * \T}, {\y2 + 2});
@@ -93,7 +94,7 @@ Vemos que la [[Transformada de Fourier|transformada de Fourier]] $x_p(t)$ es una
 			-- ++ (0, 3)
 			node[right=2pt] {$X_p(j\omega)$};
 
-		\foreach \x in {-2, ..., 2} {
+		\foreach \x in {-\cant, ..., \cant} {
 			\draw[red] ({-\w + \x * \T}, \y3) 
 				-- ({\x * \T}, {\y3 + 2})
 				-- ({\w + \x * \T}, \y3);
