@@ -11,7 +11,7 @@ Este transistor tiene como componente principal a la [[Estructura Metal-Óxido-S
 \begin{document} 
 	\begin{tikzpicture}[scale=1.3, transform shape, ultra thick]
 		\draw (0, 0) rectangle (10, 3)
-			node[midway, font=\bfseries] {$p$};
+			node[pos=0.2, font=\bfseries] {$p$};
 			
 		\draw (0, 2) rectangle (3, 3)
 			node[midway] {$n^+$};
@@ -32,7 +32,6 @@ Este transistor tiene como componente principal a la [[Estructura Metal-Óxido-S
 		\draw ({(7 + 3) * 0.5}, 4.4) -- ++(0, 0.4)
 			node[above=2pt, font=\bfseries] {Gate};
 			
-		\draw (0, 0) rectangle (10, 3);
 		\filldraw (0, -0.2) rectangle (10, 0);
 		\draw (5, -0.2) -- ++(0, -0.4)
 			node[below=2pt, font=\bfseries] {Body};
@@ -61,19 +60,9 @@ Dispositivo de canal-p (p-MOSFET) sobre un substrato [[Impureza donora#Cantidad 
 #### Regímenes de operación
 ---
 El [[Transistor]] tiene 3 regímenes de operación
-
-##### [[Corte del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|Corte]]
----
-![[Corte del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Definición]]
-
-##### [[Triodo del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|Triodo/Linea]]
----
-![[Triodo del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Definición]]
-
-##### [[Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|Saturación]]
----
-![[Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Definición]]
-
+* [[Corte del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|Corte]]
+* [[Triodo del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|Triodo/Linea]]
+* [[Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|Saturación]]
 
 #### Características del MOSFET con $V_{BS} \ne 0~V$
 ---
@@ -89,9 +78,61 @@ Al modificar $V_{BS}$ cambian las condiciones de contorno del lado del [[Semicon
 
 ##### Densidad de [[Carga eléctrica|carga]]
 ---
-![[Densidad de carga en la capa de inversión de un MOSFET al aumentar la tensión Vbs.webp]]
+```tikz
+\usetikzlibrary{math}
 
-Donde la $Q_G$ se mantiene, pero la carga $Q_B$ y $Q_n$ se compensan entre sí para la [[Conservación de carga]].
+\begin{document} 
+	\tikzmath {
+		\cero = 1;
+		\qNa = 1;
+		\xdmax = 4;
+		\qn = - \qNa - 1;
+		\dif = 0.05;
+	}
+	
+	\begin{tikzpicture}[scale=1.2, transform shape]
+		\draw[->] (-0.5, 0) 
+			node[above=2pt] {$0$}
+			node[below=2pt] {$-t_{ox}$}
+			-- ({\xdmax + 1}, 0) node[below right=2pt] {$x$};
+		\draw[->] (0, {\qn - 0.5}) -- (0, 1.5)
+			node[left=2pt] {$\rho$};
+
+		\draw[ultra thick] (-0.5, 0) 
+			-- (0, 0)
+			-- (0, \qNa)
+			-- (0, 0)
+			-- (\cero, 0)
+				node[above=2pt] {$0$}
+			-- (\cero, \qn)
+				node[right=2pt] {$Q_n$}
+			-- (\cero, -\qNa)
+			-- ({\xdmax - 1}, -\qNa)
+			-- ({\xdmax - 1}, 0)
+			-- ({\xdmax + 0.8}, 0);
+
+		\draw[dashed, ultra thick] (-0.5, -\dif) 
+			-- ({0 - \dif}, -\dif)
+			-- ({0 - \dif}, \qNa);
+		\draw[dashed, ultra thick] ({0 - \dif}, -\dif)
+			-- ({\cero + \dif}, -\dif)
+			-- ({\cero + \dif}, {\qn + 0.3});
+		\draw[dashed, ultra thick] ({\cero + \dif}, {-\qNa - \dif})
+			-- (\xdmax, {-\qNa - \dif})
+				node[right=2pt] {$-q~N_a$}
+			-- (\xdmax, -\dif)
+				node[above=2pt, scale=0.9] {$x_{d~max}(V_{BS})$}
+			-- ({\xdmax + 0.8}, -\dif);
+
+		\draw[ultra thick] ({\xdmax + 2}, 0.5) -- ++(2, 0)
+			node[right=2pt] {$V_{BS} = 0$};
+		\draw[dashed, ultra thick] ({\xdmax + 2}, 0) -- ++(2, 0)
+			node[right=2pt] {$V_{BS} < 0$};
+	\end{tikzpicture}
+\end{document}
+```
+
+Donde la $Q_G$ se mantiene, pero la carga $Q_B$ y $Q_n$ se compensan entre sí para la [[Conservación de carga|conservación de carga]].
 ##### [[Campo eléctrico]]
 ---
 ![[Campo eléctrico en la capa de inversión de un MOSFET al aumentar la tensión Vbs.webp]]

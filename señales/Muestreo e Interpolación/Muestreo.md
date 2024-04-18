@@ -16,6 +16,7 @@ El puente entre el mundo analógico de las [[Señal|señales]] de interés y el 
 	    block/.style={
 		    cyan, 
 		    draw=cian, 
+		    text=black,
 			rounded corners, 
 			align=center, 
 			font=\bfseries,

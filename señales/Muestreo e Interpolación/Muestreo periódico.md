@@ -48,4 +48,4 @@ En ese caso [[Muestreo|muestrear]] una [[Señal|señal]] es generar una [[Serie 
 \end{document}
 ```
 
-La clave es que el [[Conversor Analógico-Digital|conversor A/D]] asegure que las muestras $x(n)$ con $n \in \mathbb{Z}$ provee la misma [[Información|información]] que la señal original $x_c(t)$ o lo que es lo mismo, si es posible reconstruir $x_c(t)$ con solamente los valores $x(n)$
+La clave es que el [[Conversor Analógico-Digital|conversor AD]] asegure que las muestras $x(n)$ con $n \in \mathbb{Z}$ provee la misma [[Información|información]] que la señal original $x_c(t)$ o lo que es lo mismo, si es posible reconstruir $x_c(t)$ con solamente los valores $x(n)$

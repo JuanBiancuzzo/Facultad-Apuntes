@@ -10,27 +10,27 @@ tags:
 ---
 ##### Sintaxis (22)
 ---
-* [[taller/Sintaxis/Tipo de dato escalar rust.md|Tipo de dato escalar rust]]
-* [[taller/Sintaxis/Tipo de dato rust.md|Tipo de dato rust]]
+* [[taller/Sintaxis/While loop.md|While loop]]
 * [[taller/Sintaxis/Variable mutable.md|Variable mutable]]
 * [[taller/Sintaxis/Variable inmutable.md|Variable inmutable]]
-* [[taller/Sintaxis/While loop.md|While loop]]
-* [[taller/Sintaxis/Variable consante.md|Variable consante]]
+* [[taller/Sintaxis/Tipo de dato rust.md|Tipo de dato rust]]
 * [[taller/Sintaxis/Traits.md|Traits]]
+* [[taller/Sintaxis/Variable consante.md|Variable consante]]
+* [[taller/Sintaxis/Tipo de dato escalar rust.md|Tipo de dato escalar rust]]
 * [[taller/Sintaxis/Tipo de dato compuesto.md|Tipo de dato compuesto]]
-* [[taller/Sintaxis/Resultado.md|Resultado]]
 * [[taller/Sintaxis/Shadowing.md|Shadowing]]
+* [[taller/Sintaxis/Resultado.md|Resultado]]
 * [[taller/Sintaxis/Opción.md|Opción]]
-* [[taller/Sintaxis/Manejo de errores.md|Manejo de errores]]
 * [[taller/Sintaxis/Match.md|Match]]
+* [[taller/Sintaxis/Manejo de errores.md|Manejo de errores]]
 * [[taller/Sintaxis/Loop.md|Loop]]
 * [[taller/Sintaxis/Impls.md|Impls]]
-* [[taller/Sintaxis/Función asociada.md|Función asociada]]
-* [[taller/Sintaxis/Generic.md|Generic]]
-* [[taller/Sintaxis/For loop.md|For loop]]
 * [[taller/Sintaxis/Función rust.md|Función rust]]
-* [[taller/Sintaxis/Estrucutura.md|Estrucutura]]
+* [[taller/Sintaxis/Función asociada.md|Función asociada]]
+* [[taller/Sintaxis/For loop.md|For loop]]
+* [[taller/Sintaxis/Generic.md|Generic]]
 * [[taller/Sintaxis/Enum.md|Enum]]
+* [[taller/Sintaxis/Estrucutura.md|Estrucutura]]
 * [[taller/Sintaxis/Asignación condicional.md|Asignación condicional]]
 
 ##### Organizacion (3)
@@ -42,12 +42,12 @@ tags:
 ##### Ownership (7)
 ---
 * [[taller/Ownership/Taxonomia de ownership.md|Taxonomia de ownership]]
+* [[taller/Ownership/Ownership.md|Ownership]]
 * [[taller/Ownership/Movimiento.md|Movimiento]]
 * [[taller/Ownership/Referencia.md|Referencia]]
-* [[taller/Ownership/Ownership.md|Ownership]]
 * [[taller/Ownership/Lifetime.md|Lifetime]]
-* [[taller/Ownership/Copiar.md|Copiar]]
 * [[taller/Ownership/Box.md|Box]]
+* [[taller/Ownership/Copiar.md|Copiar]]
 
 ##### Concurrencia (4)
 ---

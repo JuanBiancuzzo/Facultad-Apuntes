@@ -24,13 +24,13 @@ También se puede entender la delta de Dirac con el [[Límite|límite]], donde $
 ```tikz
 \begin{document} 
 	\begin{tikzpicture}[scale=1.3, transform shape, ultra thick]
-	
-		\definecolor{col1}{rgb}{1.0, 0.1, 0.1}
-		\definecolor{col2}{rgb}{1.0, 0.0, 0.5}
-		\definecolor{col3}{rgb}{0.9, 0.2, 0.7}
-		\definecolor{col4}{rgb}{0.7, 0.4, 0.9}
-		\definecolor{col5}{rgb}{0.4, 0.5, 0.9}
-		\definecolor{col6}{rgb}{0.0, 0.5, 0.8}
+
+		\definecolor{col1}{RGB}{255, 0, 127} 
+		\definecolor{col2}{RGB}{255, 25, 25} 
+		\definecolor{col3}{RGB}{229, 51, 178} 
+		\definecolor{col4}{RGB}{178, 102, 229} 
+		\definecolor{col5}{RGB}{102, 127, 229} 
+		\definecolor{col6}{RGB}{0, 127, 204}
 		
 		\draw[->] (-0.2, 0) -- (3.5, 0)
 			node[right=2pt] {$t$};

@@ -7,15 +7,15 @@ capitulo: 2
 ---
 "Es un conjunto de actividades que transforma una entrada en una salida y que consume recursos. También se lo puede definir como un programa en ejecución con derechos restringidos."
 
-"Un proceso es la ejecución de un programa de aplicación con derechos restringidos; el proceso es la abstracción que provee el [[Kernel]] del [[Sistema operativo]] para la ejecución protegida"
+"Un proceso es la ejecución de un programa de aplicación con derechos restringidos; el proceso es la abstracción que provee el [[Kernel|kernel]] del [[Sistema operativo|sistema operativo]] para la ejecución protegida"
 
-"Es simplemente un [[Programa]] que se está ejecutando en un instante dado"
+"Es simplemente un [[Programa|programa]] que se está ejecutando en un instante dado"
 
 #### Un proceso incluye
 ---
-* Los archivos abiertos
+* Los [[Archivo|archivos]] abiertos
 * Las señales pendientes
-* Datos internos del [[Kernel]]
+* Datos internos del [[Kernel|kernel]]
 * El estado completo del [[Procesador|procesador]]
 * Un espacio de [[Dirección de memoria|direcciones de memoria]]
 * Uno o más [[Thread|hijos de ejecución]]

@@ -5,7 +5,7 @@ capitulo: 8
 ---
 ### Definición
 ---
-Usamos varias vistas para que nos muestre cada una aspectos particulares de la [[Arquitectura de software|arquitectura]]
+Usamos varias vistas para que nos muestre cada una aspectos particulares de la [[Arquitectura de aplicaciones|arquitectura]]
 
 #### Vista lógica
 ---

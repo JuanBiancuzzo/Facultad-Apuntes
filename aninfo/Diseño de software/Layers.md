@@ -5,7 +5,7 @@ capitulo: 8
 ---
 ### Definición
 ---
-Es un estilo [[Arquitectura de software|arquitectónico]] que propone una separación del código en capas
+Es un estilo [[Arquitectura de aplicaciones|arquitectónico]] que propone una separación del código en capas
 
 #### Capa de presentación
 ---

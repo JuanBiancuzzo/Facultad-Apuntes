@@ -5,7 +5,7 @@ capitulo: 8
 ---
 ### Definición
 ---
-Es un estilo [[Arquitectura de software|arquitectónico]] que propone una separación del problema en 3 grupos
+Es un estilo [[Arquitectura de aplicaciones|arquitectónico]] que propone una separación del problema en 3 grupos
 
 #### Model
 ---

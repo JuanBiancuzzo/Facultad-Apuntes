@@ -41,7 +41,7 @@ La virtual address tiene 3 componentes
 
 #### Multinivel segmentación paginada
 ---
-Este es el sistema utilizado por las [[Arquitectura de software|arquitecturas x86]] para 64 y 32 bit.
+Este es el sistema utilizado por las [[Arquitectura de aplicaciones|arquitecturas x86]] para 64 y 32 bit.
 
 En la arquitectura x86 cada proceso posee una Global Descriptor Table (GDT), que es equivalente a la segment table. La GDT es almacenada en la [[Memoria|memoria]], cada entrada a esta tabla apunta a una tabla de páginas (multinivel) para ese segmento. Para inicializar el proceso de [[Traslación de direcciones|address translation]] el [[Sistema operativo|sistema operativo]] setea la GDT e inicializa un [[Registro|registro]] llamado GDTR que contiene la [[Dirección de memoria|dirección]] y la longitud de la GDT.
 
