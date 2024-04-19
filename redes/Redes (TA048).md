@@ -7,8 +7,12 @@ tags: materia
 ---
 ### Apuntes 
 ---
-##### Redes de computadoras (10)
+##### Redes de computadoras (14)
 ---
+* [[redes/Redes de computadoras/Malware.md|Malware]]
+* [[redes/Redes de computadoras/Ataque a la red.md|Ataque a la red]]
+* [[redes/Redes de computadoras/Tiempo de transmisión.md|Tiempo de transmisión]]
+* [[redes/Redes de computadoras/Paquete.md|Paquete]]
 * [[redes/Redes de computadoras/Servidor.md|Servidor]]
 * [[redes/Redes de computadoras/Request For Comments (RFC).md|Request For Comments (RFC)]]
 * [[redes/Redes de computadoras/Internet.md|Internet]]
@@ -33,8 +37,11 @@ tags: materia
 * [[redes/Capa de aplicación/Comando dig.md|Comando dig]]
 * [[redes/Capa de aplicación/Capa de aplicación.md|Capa de aplicación]]
 
-##### Capa de Transporte (6)
+##### Capa de Transporte (9)
 ---
+* [[redes/Capa de Transporte/Distributed Denial of Service (DDoS).md|Distributed Denial of Service (DDoS)]]
+* [[redes/Capa de Transporte/Denial of Service (DoS).md|Denial of Service (DoS)]]
+* [[redes/Capa de Transporte/Capa de transporte.md|Capa de transporte]]
 * [[redes/Capa de Transporte/User Datagram Protocol (UDP).md|User Datagram Protocol (UDP)]]
 * [[redes/Capa de Transporte/Transmission Control Protocol (TCP).md|Transmission Control Protocol (TCP)]]
 * [[redes/Capa de Transporte/Clase 26-3.md|Clase 26-3]]
@@ -51,11 +58,11 @@ tags: materia
 
 ##### Capa de Enlace (1)
 ---
-* [[redes/Capa de Enlace/temp.md|temp]]
+* [[redes/Capa de Enlace/Capa de enlace.md|Capa de enlace]]
 
 ##### Capa Física Inalámbrica (1)
 ---
-* [[redes/Capa Física Inalámbrica/temp.md|temp]]
+* [[redes/Capa Física Inalámbrica/Capa física.md|Capa física]]
 
 ##### Seguridad en Redes (1)
 ---

@@ -9,7 +9,7 @@ Los dispositivos conectados a [[Internet|internet]] a menudo se designan como [[
 
 #### Núcleo de la red
 ---
-
+Los [[Host|host]] intercambian mensajes unos con otros. Para enviar un mensaje desde un host de origen hasta un host de destino, el origen divide los mensajes largos en fragmentos de datos más pequeños que se conocen como [[Paquete|paquetes]]
 
 
 * Entrega confiable
