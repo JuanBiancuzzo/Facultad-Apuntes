@@ -7,8 +7,11 @@ tags: materia
 ---
 ### Apuntes 
 ---
-##### Redes de computadoras (14)
+##### Redes de computadoras (17)
 ---
+* [[redes/Redes de computadoras/Digital Subscriber Line (DSL).md|Digital Subscriber Line (DSL)]]
+* [[redes/Redes de computadoras/Aplicación Programming Interface (API).md|Aplicación Programming Interface (API)]]
+* [[redes/Redes de computadoras/Servicio.md|Servicio]]
 * [[redes/Redes de computadoras/Malware.md|Malware]]
 * [[redes/Redes de computadoras/Ataque a la red.md|Ataque a la red]]
 * [[redes/Redes de computadoras/Tiempo de transmisión.md|Tiempo de transmisión]]

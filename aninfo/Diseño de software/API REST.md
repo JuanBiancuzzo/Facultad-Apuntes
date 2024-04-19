@@ -5,7 +5,7 @@ capitulo: 8
 ---
 ### Definición
 ---
-Métodos
+Esta [[Aplicación Programming Interface (API)|API]] tiene los métodos
 
 | Nombre | Descripción                       | General  |
 | ------ | --------------------------------- | -------- |

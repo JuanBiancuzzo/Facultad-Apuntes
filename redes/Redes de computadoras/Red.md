@@ -11,13 +11,4 @@ Los dispositivos conectados a [[Internet|internet]] a menudo se designan como [[
 ---
 Los [[Host|host]] intercambian mensajes unos con otros. Para enviar un mensaje desde un host de origen hasta un host de destino, el origen divide los mensajes largos en fragmentos de datos más pequeños que se conocen como [[Paquete|paquetes]]
 
-
-* Entrega confiable
-	* Lo que se envía llega al destino
-	* Lo que se envía llega en orden
-	* La información no llega corrupta
-* Seguridad
-	* Poder encriptar la [[Información|información]], y este [[Servicio|servicio]] se puede implementar 
-* Tiempo
-* Asegurar que llegue el [[Paquete|paquete]] en un tiempo dado
-* [[Throughput|Throughput]]
+Los paquetes se transmiten a través de cada enlace de comunicaciones a una velocidad igual a la [[Velocidad de transmisión|velocidad de transmisión]] máxima del enlace
