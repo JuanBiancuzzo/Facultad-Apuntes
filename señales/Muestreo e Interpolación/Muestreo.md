@@ -13,8 +13,7 @@ El puente entre el mundo analógico de las [[Señal|señales]] de interés y el 
 	\definecolor{cian}{RGB}{94, 146, 153}
 
 	\tikzset{ 
-	    block/.style={
-		    cyan, 
+	    block/.style={ 
 		    draw=cian, 
 		    text=black,
 			rounded corners, 

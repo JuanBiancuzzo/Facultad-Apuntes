@@ -1,7 +1,7 @@
 ---
 dia: 2023-09-06
 materia: aninfo
-capitulo: 3
+capitulo: 2
 ---
 ### Definición
 ---

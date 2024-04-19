@@ -8,7 +8,7 @@ tags:
 ---
 ### Apuntes 
 ---
-##### Diseño de software (36)
+##### Diseño de software (39)
 ---
 * [[aninfo/Diseño de software/Diseño del software.md|Diseño del software]]
 * [[aninfo/Ingeniería de software/Teoría de las restricciones (TOC).md|Teoría de las restricciones (TOC)]]
@@ -17,7 +17,6 @@ tags:
 * [[aninfo/Ingeniería de software/Unified modelling language (UML).md|Unified modelling language (UML)]]
 * [[aninfo/Ingeniería de software/Six sigma.md|Six sigma]]
 * [[aninfo/Ingeniería de software/Scrum.md|Scrum]]
-* [[aninfo/Ingeniería de software/temp.md|temp]]
 * [[aninfo/Ingeniería de software/Modelo.md|Modelo]]
 * [[aninfo/Ingeniería de software/Objeto.md|Objeto]]
 * [[aninfo/Ingeniería de software/Rational unified process.md|Rational unified process]]
@@ -30,9 +29,11 @@ tags:
 * [[aninfo/Ingeniería de software/IDEF0.md|IDEF0]]
 * [[aninfo/Ingeniería de software/Gestión de la configuración del software.md|Gestión de la configuración del software]]
 * [[aninfo/Ingeniería de software/Gestión de la calidad.md|Gestión de la calidad]]
+* [[aninfo/Ingeniería de software/DT4RE.md|DT4RE]]
 * [[aninfo/Ingeniería de software/Feature driven development.md|Feature driven development]]
 * [[aninfo/Ingeniería de software/Extreme programming.md|Extreme programming]]
 * [[aninfo/Ingeniería de software/Diseño estructurado.md|Diseño estructurado]]
+* [[aninfo/Ingeniería de software/Design thinking.md|Design thinking]]
 * [[aninfo/Ingeniería de software/Desarrollo de software.md|Desarrollo de software]]
 * [[aninfo/Ingeniería de software/Disciplined agile delivery.md|Disciplined agile delivery]]
 * [[aninfo/Ingeniería de software/Costo de falla.md|Costo de falla]]
@@ -46,25 +47,22 @@ tags:
 * [[aninfo/Ingeniería de software/Ciclo de vida de un producto de software.md|Ciclo de vida de un producto de software]]
 * [[aninfo/Ingeniería de software/C4.md|C4]]
 * [[aninfo/Ingeniería de software/Business process modelling and notation (BPMN).md|Business process modelling and notation (BPMN)]]
-
-##### Ingeniería de requisitos (11)
----
-* [[aninfo/Ingeniería de requisitos/temp.md|temp]]
-* [[aninfo/Ingeniería de requisitos/Stakeholder.md|Stakeholder]]
-* [[aninfo/Ingeniería de requisitos/Requisito.md|Requisito]]
-* [[aninfo/Ingeniería de requisitos/Modelado de requisitos.md|Modelado de requisitos]]
-* [[aninfo/Ingeniería de requisitos/Ingeniería de requisitos.md|Ingeniería de requisitos]]
-* [[aninfo/Ingeniería de requisitos/Involucramiento de los interesados.md|Involucramiento de los interesados]]
-* [[aninfo/Ingeniería de requisitos/Desarrollo de requisitos.md|Desarrollo de requisitos]]
-* [[aninfo/Ingeniería de software/DT4RE.md|DT4RE]]
-* [[aninfo/Ingeniería de software/Design thinking.md|Design thinking]]
 * [[aninfo/Ingeniería de software/Business analysis.md|Business analysis]]
 * [[aninfo/Ingeniería de software/Agile.md|Agile]]
 
-##### Ingeniería de requisitos (17)
+##### Ingeniería de requisitos (8)
 ---
+* [[aninfo/Ingeniería de requisitos/Proceso de ingeniería de requisitos.md|Proceso de ingeniería de requisitos]]
+* [[aninfo/Ingeniería de requisitos/Requisito.md|Requisito]]
+* [[aninfo/Ingeniería de requisitos/Modelado de requisitos.md|Modelado de requisitos]]
 * [[aninfo/Ingeniería de requisitos/Minuta de reunión.md|Minuta de reunión]]
+* [[aninfo/Ingeniería de requisitos/Ingeniería de requisitos.md|Ingeniería de requisitos]]
+* [[aninfo/Ingeniería de requisitos/Involucramiento de los interesados.md|Involucramiento de los interesados]]
 * [[aninfo/Ingeniería de requisitos/Documentación del descubrimiento de los requisitos.md|Documentación del descubrimiento de los requisitos]]
+* [[aninfo/Ingeniería de requisitos/Desarrollo de requisitos.md|Desarrollo de requisitos]]
+
+##### Descubrimiento de requisitos (15)
+---
 * [[aninfo/Descubrimiento de requisitos/Técnicas de descubrimiento de requisitos.md|Técnicas de descubrimiento de requisitos]]
 * [[aninfo/Descubrimiento de requisitos/temp.md|temp]]
 * [[aninfo/Descubrimiento de requisitos/Taller.md|Taller]]

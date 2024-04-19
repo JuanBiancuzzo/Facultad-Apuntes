@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-Proveen el [[Servicio|servicio]] de [[Internet|internet]], mediante una amplia variedad de tipos de acceso a la [[Red|red]] a los host.
+Proveen el [[Servicio|servicio]] de [[Internet|internet]], mediante una amplia variedad de tipos de acceso a la [[Red|red]] a los host. Esta es una red de [[Packet switches|packet switches]] y Communication links
 
 #### Niveles
 ---
@@ -15,3 +15,7 @@ Las redes de cada ISP, sea superiores (como tier 1) o inferiores, se administra 
 ---
 Estos son [[Router|routers]] de alta velocidad interconectados a través de enlaces de fibra óptica de alta velocidad
 
+
+##### Tier 2, ...
+---
+Se interconectan a través de niveles más altos del ISPs

@@ -9,6 +9,7 @@ tags: materia
 ---
 ##### Redes de computadoras (17)
 ---
+* [[redes/Redes de computadoras/Internet exchange Point (IXP).md|Internet exchange Point (IXP)]]
 * [[redes/Redes de computadoras/Digital Subscriber Line (DSL).md|Digital Subscriber Line (DSL)]]
 * [[redes/Redes de computadoras/Aplicación Programming Interface (API).md|Aplicación Programming Interface (API)]]
 * [[redes/Redes de computadoras/Servicio.md|Servicio]]
@@ -24,11 +25,11 @@ tags: materia
 * [[redes/Redes de computadoras/Protocolo.md|Protocolo]]
 * [[redes/Redes de computadoras/Modelo TCP IP.md|Modelo TCP IP]]
 * [[redes/Redes de computadoras/Internet Service Providers (ISPs).md|Internet Service Providers (ISPs)]]
-* [[redes/Redes de computadoras/IXP.md|IXP]]
 * [[redes/Redes de computadoras/Host.md|Host]]
 
-##### Capa de aplicación (10)
+##### Capa de aplicación (11)
 ---
+* [[redes/Capa de aplicación/Socket.md|Socket]]
 * [[redes/Capa de aplicación/Comunicación entre procesos.md|Comunicación entre procesos]]
 * [[redes/Capa de aplicación/Data center.md|Data center]]
 * [[redes/Capa de aplicación/Arquitectura peer-to-peer (P2P).md|Arquitectura peer-to-peer (P2P)]]

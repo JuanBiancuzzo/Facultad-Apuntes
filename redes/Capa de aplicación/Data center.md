@@ -20,5 +20,5 @@ Establece un grupo de conveniencias
 	* Muchos lugares
 	* Más dificultad y costos de mantenimiento
 * Bring home
-	* Cerca de [[IXP|IXP]]
+	* Cerca de [[Internet exchange Point (IXP)|Internet exchange Point (IXP)]]
 	* [[Cluster|Cluster]] grandes en lugares estratégicos

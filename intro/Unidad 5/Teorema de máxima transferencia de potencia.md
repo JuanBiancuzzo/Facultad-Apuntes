@@ -17,7 +17,21 @@ $$
 Para [[Fasor|fasores]] nos da $$ Z_L = Z^*_{th} $$
 #### Análisis
 ---
-![[Potencia máxima.webp]]
+
+```tikz
+\usepackage{circuitikz}
+
+\begin{document} 
+	\begin{circuitikz}
+		[american, voltage shift=0.5, scale=1.3, transform shape, thick]
+
+		\draw (0, 0) to[V, invert, l^=$V_{th}$] ++(0, 3)
+			to[short, R=$R_{th}$] ++(3, 0)
+			to[short, R=$R_L$, v_=$V_{R_L}$] ++(0, -3)
+			to ++(-3, 0);
+	\end{circuitikz}
+\end{document}
+```
 
 Calculo la potencia entregada a la carga con la formula de [[Potencia disipada]]:
 $$
@@ -71,7 +85,22 @@ Es decir, se pierde la mitad de la potencia entregada por la fuente.
 
 #### Análisis para fasores
 ---
-![[Potencia máxima con fasores.webp]]
+```tikz
+\usepackage{circuitikz}
+
+\begin{document} 
+	\begin{circuitikz}
+		[american, voltage shift=0.5, scale=1.3, transform shape, thick]
+
+		\draw (0, 0) to[V, invert, l^=$V_{th}$] ++(0, 3)
+			to[generic, -o, l_=$Z_{th}$] ++(3, 0)
+			to[short, i^=$I$] ++(1, 0)
+			to[generic, l^=$Z_{L}$] ++(0, -3)
+			to[short, -o] ++(-1, 0)
+			to ++(-3, 0);
+	\end{circuitikz}
+\end{document}
+```
 
 Con $Z_{th} = R_{th} + j ~ X_{th}$ y $Z_L = R_L + j ~ X_L$ 
 
