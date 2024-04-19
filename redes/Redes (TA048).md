@@ -7,8 +7,10 @@ tags: materia
 ---
 ### Apuntes 
 ---
-##### Redes de computadoras (8)
+##### Redes de computadoras (10)
 ---
+* [[redes/Redes de computadoras/Servidor.md|Servidor]]
+* [[redes/Redes de computadoras/Request For Comments (RFC).md|Request For Comments (RFC)]]
 * [[redes/Redes de computadoras/Internet.md|Internet]]
 * [[redes/Redes de computadoras/Red.md|Red]]
 * [[redes/Redes de computadoras/Packet switches.md|Packet switches]]

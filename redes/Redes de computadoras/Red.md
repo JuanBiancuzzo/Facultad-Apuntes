@@ -5,6 +5,12 @@ capitulo: 1
 ---
 ### Definición
 ---
+Los dispositivos conectados a [[Internet|internet]] a menudo se designan como [[Host|hosts]], porque se sitúan en la frontera de Internet, en los extremos de la comunicación.
+
+#### Núcleo de la red
+---
+
+
 
 * Entrega confiable
 	* Lo que se envía llega al destino

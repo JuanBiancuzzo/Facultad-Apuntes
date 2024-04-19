@@ -20,7 +20,7 @@ Este [[Protocolo|protocolo]]
 
 Disertación de la arquitectura REST -> Datazo cap 2/3
 
-Existen 3 [[RFC|RFC]]
+Existen 3 [[Request For Comments (RFC)|Request For Comments (RFC)]]
 * 1945
 * 7230
 * 7540

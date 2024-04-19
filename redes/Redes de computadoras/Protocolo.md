@@ -5,8 +5,8 @@ capitulo: 1
 ---
 ### Definición
 ---
-Conjunto definido de reglas y procedimientos que determinan cómo se transmiten los datos en las [[Red|redes de computadoras]]
+Un protocolo define el formato y el orden de los mensajes intercambiados entre dos o más [[Host|host]] que se comunican entre sí, así como las acciones tomadas en la transmisión y/o la recepción de un mensaje u otro suceso
 
-Define:
-* Mensajes de petición y respuesta
-* 
+#### Protocolo de Red
+---
+Las [[Host|host]] que intercambian mensajes y llevan a cabo las acciones son los componentes [[Hardware|hardware]] o [[Software|software]] de cierto dispositivo. Cualquier actividad de [[Internet|internet]] que implique dos o más entidades remotas que se comunican por la [[Red|red]] están gobernadas por un protocolo

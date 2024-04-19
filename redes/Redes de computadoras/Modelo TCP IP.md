@@ -5,9 +5,10 @@ capitulo: 1
 ---
 ### Definición
 ---
-Este [[Modelo|modelo]] tiene 5 capas
+[[Host|Host]], [[Router|routers]] y otros dispositivos ejecutan [[Protocolo|protocolos]] que controlan el envío y recepción de [[Información|información]] dentro de [[Internet|internet]]
+
+Este [[Modelo|modelo]] que representa la estructura general tiene 5 capas
 * [[Capa de aplicación|Capa de Aplicación]]
-	* Ejemplos: [[Hypertext Transfer Protocol (HTTP)|HTTP]], [[Domain Name System (DNS)|DNS]] 
 * [[Capa de transporte|Capa de Transporte]]
 * [[Capa de red|Capa de Red]]
 * [[Capa de enlace|Capa de Enlace]]
