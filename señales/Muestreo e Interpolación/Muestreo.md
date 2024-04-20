@@ -15,7 +15,6 @@ El puente entre el mundo analógico de las [[Señal|señales]] de interés y el 
 	\tikzset{ 
 	    block/.style={ 
 		    draw=cian, 
-		    text=black,
 			rounded corners, 
 			align=center, 
 			font=\bfseries,
@@ -23,7 +22,7 @@ El puente entre el mundo analógico de las [[Señal|señales]] de interés y el 
 			minimum height=2cm
 	    },
 	    texto/.style={
-		    cyan, 
+		    text=black, 
 			align=center, 
 			font=\bfseries,
 			scale=0.8
@@ -31,7 +30,7 @@ El puente entre el mundo analógico de las [[Señal|señales]] de interés y el 
 	}
 
 	\begin{tikzpicture}[
-		scale=1, transform shape, ultra thick
+		scale=0.95, transform shape, ultra thick
 		
 	]
 		\node [block] (entrada) at (-0.5, 0) {Entrada};
@@ -72,6 +71,7 @@ El puente entre el mundo analógico de las [[Señal|señales]] de interés y el 
 		\draw[cian] (da.east) -- (salida.west)
 			node[texto, midway, above=2pt] {Señal\\análogica};
 
+		\path (-2, -4) rectangle (17, 3);	
 	\end{tikzpicture}
 \end{document}
 ```

@@ -53,8 +53,9 @@ tags: materia
 * [[redes/Capa de Transporte/Clase 5-4.md|Clase 5-4]]
 * [[redes/Capa de Transporte/Clase 22-3.md|Clase 22-3]]
 
-##### Capa de Red (4)
+##### Capa de Red (5)
 ---
+* [[redes/Capa de Red/Clase 19-4.md|Clase 19-4]]
 * [[redes/Capa de Red/Clase 12-4.md|Clase 12-4]]
 * [[redes/Capa de Red/Capa de Red.md|Capa de Red]]
 * [[redes/Capa de Red/Data Plane.md|Data Plane]]
