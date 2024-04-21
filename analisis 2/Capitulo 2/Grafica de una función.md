@@ -35,4 +35,4 @@ $$\{(x_1, x_2, \cdots, x_n, y) \in \mathbb{R}^{n+1} : (x_1, x_2, \cdots, x_n) \i
 
 Un ejemplo, donde $f : U \subseteq \mathbb{R}^2 \to \mathbb{R}$, tal que su grafica sea
 
-![[Pasted image 20211101155219.webp]]
+![[Grafica de una función.webp]]

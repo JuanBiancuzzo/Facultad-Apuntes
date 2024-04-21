@@ -21,7 +21,7 @@ tags: materia
 
 ##### Dispositivos de control de señal y en conmutación (1)
 ---
-* [[circuitos/Dispositivos de control de señal y en conmutación/temp.md|temp]]
+* [[Dispositivo de control de potencia|Dispositivo de control de potencia]]
 
 ##### Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias (1)
 ---

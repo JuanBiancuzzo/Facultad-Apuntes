@@ -12,7 +12,7 @@ Esta relacionado a como vemos una [[Curva]]
 ### Ejemplo
 $$ \vec{F} : [0, 2\pi] \times [0, 2] \subset \mathbb{R}^2 \to \mathbb{R}^3 : \vec{F}(u, v) = (cos(u), sen(u), v) $$ que se veria 
 
-![[Pasted image 20211103160817.webp]]
+![[Superficie cilindrica.webp]]
 
 La superficie de un cilindro
 

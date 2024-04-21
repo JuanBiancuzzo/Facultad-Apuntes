@@ -25,7 +25,7 @@ si dado cualquier $\epsilon > 0$ existe un $\delta  > 0$ tal que
 
 $$ x \in B(x_0, \delta) \cap U(x \ne x_0) \iff f(x) \in B(L, \epsilon) $$
 
-![[Pasted image 20211101173904.webp]]
+![[Límites de una función de varias variables.webp]]
 
 
 ## Formas de resolver limites
