@@ -21,7 +21,55 @@ Los filesystems amoldan su visión de conceptos como "esta es la forma de como a
 
 El resultado es una capa de abstracción general que le permite al kernel manejar muchos tipos de sistemas de archivos de forma fácil y limpia.
 
-![[abstracción del file system.webp]]
+```tikz
+\begin{document} 
+
+	\tikzset{ 
+	    block/.style={ 
+		    draw,
+			rounded corners, 
+			align=center, 
+			font=\bfseries,
+			minimum width=2.2cm, 
+			minimum height=1.2cm,
+			scale=0.9
+	    },
+	    texto/.style={
+		    text=black, 
+			align=center, 
+			font=\bfseries,
+			scale=0.9
+	    }
+	}
+
+	\begin{tikzpicture}[scale=1.2, transform shape, ultra thick]
+		\node[block] (write) at (-5.5, 0) {write()};
+		\node[block] (sys_write) at (-1.75, 0) {sys write()};
+		\node[block] (filesystem) at ( 1.75, 0) {filesystem's\\write method};
+		\node[block] (physical) at ( 5.5, 0) {};
+
+		\draw[->] (write) -- (sys_write)
+			node[midway] (mid_write_sys) {};
+		\draw[->] (sys_write) -- (filesystem)
+			node[midway] (mid_sys_file) {};
+		\draw[->] (filesystem) -- (physical)
+			node[midway] (mid_file_phy) {};
+
+		\draw[thin] (mid_write_sys) -- ++(0, 1.5) -- ++(0, -3);
+		\draw[thin] (mid_sys_file) -- ++(0, 1.5) -- ++(0, -3);
+		\draw[thin] (mid_file_phy) -- ++(0, 1.5) -- ++(0, -3);
+
+		\path (write.south) -- ++(0, -1)
+			node[texto, below=2pt] {user-space};
+		\path (sys_write.south) -- ++(0, -1)
+			node[texto, below=2pt] {VFS};
+		\path (filesystem.south) -- ++(0, -1)
+			node[texto, below=2pt] {filesystem};
+		\path (physical.south) -- ++(0, -1)
+			node[texto, below=2pt] {physical media};
+	\end{tikzpicture}
+\end{document}
+```
 
 #### Definiciones
 ---
