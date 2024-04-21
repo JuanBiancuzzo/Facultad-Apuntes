@@ -3,8 +3,6 @@
   "templater-obsidian",
   "obsidian-git",
   "obsidian-tikzjax",
-  "oz-clear-unused-images",
   "quickadd",
-  "cmdr",
-  "image-converter"
+  "cmdr"
 ]
