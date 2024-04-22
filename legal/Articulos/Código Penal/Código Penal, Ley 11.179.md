@@ -2,19 +2,19 @@
 num_ley: 11179
 ley: Código Penal
 grupos:
- - Libro
- - Título
- - Capítulo
+  - Libro
+  - Título
+  - Capítulo
 predefinidos:
- - Libro Primero
- - Libro Segundo
+  - Libro Primero
+  - Libro Segundo
 opt_libro: false
 opt_título: false
 opt_capítulo: true
 art_con_nombre: false
 nombre_abreviado: del Código Penal
 tags:
-  - cabezera_articulos
+  - legal/cabezera_articulos
 ---
 ### Libros
 ---

@@ -2,14 +2,14 @@
 num_ley: 22362
 ley: Ley de marcas y designaciones
 grupos:
- - Capítulo
- - Sección
+  - Capítulo
+  - Sección
 opt_capítulo: false
 opt_sección: true
 art_con_nombre: false
 nombre_abreviado: de la ley de marcas y designaciones
 tags:
- - cabezera_articulos
+  - legal/cabezera_articulos
 ---
 ### Capítulos
 ---

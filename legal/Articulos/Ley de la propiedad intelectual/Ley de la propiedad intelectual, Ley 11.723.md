@@ -7,7 +7,7 @@ opt_parte: true
 art_con_nombre: false
 nombre_abreviado: de la ley de la propiedad intelectual
 tags:
-  - cabezera_articulos
+  - legal/cabezera_articulos
 ---
 ### Partes
 ---

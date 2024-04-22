@@ -16,7 +16,7 @@ opt_capítulo: false
 art_con_nombre: false
 nombre_abreviado: de la Constitución Nacional
 tags:
-  - cabezera_articulos
+  - legal/cabezera_articulos
 ---
 ### Partes
 ---

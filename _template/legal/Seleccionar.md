@@ -5,7 +5,7 @@
 	let todos_articulos = dv.pages(`"${carpeta_articulos}"`);
 	let seleccion = await tp.file.selection();
 
-	let leyes = dv.pages("#cabezera_articulos");
+	let leyes = dv.pages("#legal/cabezera_articulos");
 	if (!leyes)
 		return seleccion;
 

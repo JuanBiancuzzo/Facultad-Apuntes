@@ -8,7 +8,7 @@ opt_capítulo: true
 art_con_nombre: true
 nombre_abreviado: del APA
 tags:
-  - cabezera_articulos
+  - legal/cabezera_articulos
 ---
 ### Títulos
 ---

@@ -2,14 +2,14 @@
 num_ley: 24481
 ley: Ley de patentes de invención y modelos de utilidad
 grupos:
- - Título
- - Capítulo
+  - Título
+  - Capítulo
 opt_título: false
 opt_capítulo: true
 art_con_nombre: false
 nombre_abreviado: de la patente de invención y modelos de utilidad
 tags:
- - cabezera_articulos
+  - legal/cabezera_articulos
 ---
 ### Títulos
 ---

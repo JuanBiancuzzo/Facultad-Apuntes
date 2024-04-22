@@ -11,7 +11,7 @@ opt_sección: true
 art_con_nombre: false
 nombre_abreviado: de la administración financiera y sistemas de control
 tags:
-  - cabezera_articulos
+  - legal/cabezera_articulos
 ---
 ### Títulos
 ---

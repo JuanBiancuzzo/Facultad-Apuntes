@@ -6,7 +6,7 @@
 	if (!numArticulo) 
 		return await salir("No se ingreso un número para el artículo");
 
-	let leyes = dv.pages("#cabezera_articulos");
+	let leyes = dv.pages("#legal/cabezera_articulos");
 	if (!leyes)
 		return salir("No hay archivo que represente a los artículos, crear una ley o documento");
 

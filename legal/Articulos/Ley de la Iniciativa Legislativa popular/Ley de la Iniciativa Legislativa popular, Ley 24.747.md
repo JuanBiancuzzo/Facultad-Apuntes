@@ -1,11 +1,11 @@
 ---
 num_ley: 24747
 ley: Ley de la Iniciativa Legislativa popular
-grupos:
+grupos: 
 art_con_nombre: false
 nombre_abreviado: de la ley de la Iniciativa Legislativa
 tags:
-  - cabezera_articulos
+  - legal/cabezera_articulos
 ---
 ### Artículos
 ---

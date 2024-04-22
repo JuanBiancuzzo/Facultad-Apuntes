@@ -1,12 +1,12 @@
 ---
 documento: Carta de las Naciones Unidas
 grupos:
- - Capítulo
+  - Capítulo
 opt_capítulo: false
 art_con_nombre: false
 nombre_abreviado: de la carta de las Naciones Unidas
 tags:
- - cabezera_articulos
+  - legal/cabezera_articulos
 ---
 ### Capítulos
 ---

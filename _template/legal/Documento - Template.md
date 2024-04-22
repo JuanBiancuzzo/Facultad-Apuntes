@@ -47,7 +47,7 @@
 
 	let nombreAbreviado = await tp.system.prompt(`Cual es la abreviación del ${documento}, como lo sería "del CC y CN"`);
 	tR += `nombre_abreviado: ${nombreAbreviado}\n`;
-	tR += "tags:\n - cabezera_articulos\n";
+	tR += "tags:\n - legal/cabezera_articulos\n";
 	tR += "---\n";
 
 	if (grupos.length > 0) {

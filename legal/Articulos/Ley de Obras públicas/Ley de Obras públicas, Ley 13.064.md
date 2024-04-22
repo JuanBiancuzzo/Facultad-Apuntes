@@ -2,12 +2,12 @@
 num_ley: 13064
 ley: Ley de Obras públicas
 grupos:
- - Capítulo
+  - Capítulo
 opt_capítulo: false
 art_con_nombre: false
 nombre_abreviado: de la Ley de Obras públicas
 tags:
-  - cabezera_articulos
+  - legal/cabezera_articulos
 ---
 ### Capítulos
 ---

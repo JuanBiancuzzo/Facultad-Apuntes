@@ -11,7 +11,8 @@
     "dispo/Juntura PN/img/",
     "dispo/Transistor bipolar de juntura/img/",
     "dispo/Transistor MOSFET/img/",
-    "_template/"
+    "_template/",
+    "legal/Articulos/"
   ],
   "autoPairMarkdown": false,
   "showLineNumber": false,

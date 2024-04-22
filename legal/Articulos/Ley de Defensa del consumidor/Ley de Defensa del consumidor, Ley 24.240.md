@@ -2,14 +2,14 @@
 num_ley: 24240
 ley: Ley de Defensa del consumidor
 grupos:
- - Título
- - Capítulo
+  - Título
+  - Capítulo
 opt_título: false
 opt_capítulo: false
 art_con_nombre: true
 nombre_abreviado: de la Defensa del Consumidor
 tags:
-  - cabezera_articulos
+  - legal/cabezera_articulos
 ---
 ### Títulos
 ---

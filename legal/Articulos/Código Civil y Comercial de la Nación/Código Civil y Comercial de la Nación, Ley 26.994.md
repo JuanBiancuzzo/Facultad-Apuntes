@@ -23,7 +23,7 @@ opt_parágrafo: true
 art_con_nombre: true
 nombre_abreviado: del CC y CN
 tags:
-  - cabezera_articulos
+  - legal/cabezera_articulos
 ---
 ### Libros
 ---

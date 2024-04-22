@@ -2,14 +2,14 @@
 num_ley: 20744
 ley: Ley de Contrato de Trabajo
 grupos:
- - Título
- - Capítulo
+  - Título
+  - Capítulo
 opt_título: false
 opt_capítulo: true
 art_con_nombre: true
 nombre_abreviado: de la ley de Contrato de Trabajo
 tags:
-  - cabezera_articulos
+  - legal/cabezera_articulos
 ---
 ### Títulos
 ---

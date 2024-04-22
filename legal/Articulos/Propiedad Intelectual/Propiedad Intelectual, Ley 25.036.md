@@ -1,11 +1,11 @@
 ---
 num_ley: 25036
 ley: Propiedad Intelectual
-grupos:
+grupos: 
 art_con_nombre: false
 nombre_abreviado: de la Propiedad Intelectual
 tags:
- - cabezera_articulos
+  - legal/cabezera_articulos
 ---
 ### Artículos
 ---
