@@ -19,13 +19,100 @@ Lo primero que se debe hacer es dividir al disco en bloques, los [[File system|s
 ---
 La versión del sistema de archivos debe ser la de una partición de $N$ bloques (de $0$ a $N-1$) de un tamaño de $N * 4 ~ KB$ bloques. Si suponemos en un disco muy pequeño, de unos $64$ bloques, este podría verse así
 
-![[Organización en disco de un Very Simple File System (VSFV) vacio.webp]]
+```tikz
+\usetikzlibrary{math}
+
+\begin{document} 
+	\tikzmath {
+		\sep = 0.25;
+		\dim = 0.25;
+		\lineas = 1;
+		\dis = 2/3;
+	}
+	\begin{tikzpicture}[scale=2, transform shape]
+		\foreach \y in {0, 1} {
+			\foreach \x in {0, 1, 2, 3} {
+				\foreach \i in {0, ..., 7} {
+					\draw[very thick] (
+						{\x * ( 2 + \sep ) + \i * \dim}, 
+						{-\y * \lineas}
+					) rectangle ++(\dim, \dim);
+				}
+
+				\tikzmath {
+					\min = int((\y * 32) + (\x * 8));
+					\max = int(\min + 7);
+				}
+				
+				\path ({\x * ( 2 + \sep )}, {-\y * \lineas - \dis * \dim})
+					-- ++({8 * \dim}, 0)
+					node[pos=0.05, scale=0.5] {$\min$}
+					node[pos=0.95, scale=0.5] {$\max$};
+			}
+		}
+	\end{tikzpicture}
+\end{document}
+```
 
 A la hora de armar un sistema de archivos una de las cosas que es necesario almacenar son los datos, de hecho la mayor cantidad de espacio ocupado en un file system es por los datos de usuarios. Esta región se llama por ende data region.
 
 Otra vez en nuestro pequeño disco es ocupado por ejemplo por $56$ bloques de datos de los $64$
 
-![[Organización en disco de un Very Simple File System (VSFV) con data region.webp]]
+```tikz
+\usetikzlibrary{math}
+
+\begin{document} 
+	\tikzmath {
+		\sep = 0.25;
+		\dim = 0.25;
+		\lineas = 1.25;
+		\dis = 2/3;
+	}
+	\begin{tikzpicture}[scale=2, transform shape]
+		\foreach \y in {0, 1} {
+			\foreach \x in {0, 1, 2, 3} {
+				\foreach \i in {0, ..., 7} {
+					\draw[very thick] (
+						{\x * ( 2 + \sep ) + \i * \dim}, 
+						{-\y * \lineas}
+					) rectangle ++(\dim, \dim);
+				}
+
+				\tikzmath {
+					\min = int((\y * 32) + (\x * 8));
+					\max = int(\min + 7);
+				}
+				
+				\path ({\x * ( 2 + \sep )}, {-\y * \lineas - \dis * \dim})
+					-- ++({8 * \dim}, 0)
+					node[pos=0.05, scale=0.5] {$\min$}
+					node[pos=0.95, scale=0.5] {$\max$};
+			}
+		}
+
+		\draw[very thick, |-|] ({2 + \sep}, {\dis * \dim + \dim})
+			-- ++({2 * ( 2 + \sep ) + 8 * \dim}, 0)
+				node[midway, above=2pt, scale=0.6] {Data Region};
+		\draw[very thick, |-|] (0, {-\lineas + \dis * \dim + \dim})
+			-- ++({3 * ( 2 + \sep ) + 8 * \dim}, 0)
+				node[midway, above=2pt, scale=0.6] {Data Region};
+		\foreach \x in {1, 2, 3} {
+			\foreach \i in {0, ..., 7} {
+				\path[very thick] ({\x * ( 2 + \sep ) + \i * \dim}, 0) 
+					rectangle ++(\dim, \dim)
+					node[midway, scale=0.5] {D};
+			}
+		}
+		\foreach \x in {0, 1, 2, 3} {
+			\foreach \i in {0, ..., 7} {
+				\path[very thick] ({\x * ( 2 + \sep ) + \i * \dim}, -\lineas) 
+					rectangle ++(\dim, \dim)
+					node[midway, scale=0.5] {D};
+			}
+		}
+	\end{tikzpicture}
+\end{document}
+```
 
 ##### Inodos
 ---
@@ -33,7 +120,70 @@ Como se ha visto anteriormente el sistema de archivos debe mantener información
 
 Los inodos también deben ser guardarse en el disco, para ello se los guarda en una tabla llamada inode table que simplemente es un array de inodos almacenados en el disco.
 
-![[Organización en disco de un Very Simple File System (VSFV) con data region e inodos.webp]]
+```tikz
+\usetikzlibrary{math}
+
+\begin{document} 
+	\tikzmath {
+		\sep = 0.25;
+		\dim = 0.25;
+		\lineas = 1.25;
+		\dis = 2/3;
+	}
+	\begin{tikzpicture}[scale=2, transform shape]
+		\foreach \y in {0, 1} {
+			\foreach \x in {0, 1, 2, 3} {
+				\foreach \i in {0, ..., 7} {
+					\draw[very thick] (
+						{\x * ( 2 + \sep ) + \i * \dim}, 
+						{-\y * \lineas}
+					) rectangle ++(\dim, \dim);
+				}
+
+				\tikzmath {
+					\min = int((\y * 32) + (\x * 8));
+					\max = int(\min + 7);
+				}
+				
+				\path ({\x * ( 2 + \sep )}, {-\y * \lineas - \dis * \dim})
+					-- ++({8 * \dim}, 0)
+					node[pos=0.05, scale=0.5] {$\min$}
+					node[pos=0.95, scale=0.5] {$\max$};
+			}
+		}
+
+		\draw[very thick, |-|] ({2 + \sep}, {\dis * \dim + \dim})
+			-- ++({2 * ( 2 + \sep ) + 8 * \dim}, 0)
+				node[midway, above=2pt, scale=0.6] {Data Region};
+		\draw[very thick, |-|] (0, {-\lineas + \dis * \dim + \dim})
+			-- ++({3 * ( 2 + \sep ) + 8 * \dim}, 0)
+				node[midway, above=2pt, scale=0.6] {Data Region};
+		\foreach \x in {1, 2, 3} {
+			\foreach \i in {0, ..., 7} {
+				\path[very thick] ({\x * ( 2 + \sep ) + \i * \dim}, 0) 
+					rectangle ++(\dim, \dim)
+					node[midway, scale=0.5] {D};
+			}
+		}
+		\foreach \x in {0, 1, 2, 3} {
+			\foreach \i in {0, ..., 7} {
+				\path[very thick] ({\x * ( 2 + \sep ) + \i * \dim}, -\lineas) 
+					rectangle ++(\dim, \dim)
+					node[midway, scale=0.5] {D};
+			}
+		}
+
+		\draw[very thick, |-|] ({3 * \dim}, {\dis * \dim + \dim})
+			-- ++({5 * \dim}, 0)
+				node[midway, above=2pt, scale=0.6] {Inodes};
+		\foreach \i in {3, ..., 7} {
+			\filldraw[very thick, fill=darkgray] ({\i * \dim}, 0) 
+				rectangle ++(\dim, \dim)
+				node[midway, scale=0.5] {I};
+		}
+	\end{tikzpicture}
+\end{document}
+```
 
 Cabe destacar que los inodos no son estructuras muy grandes, normalmente ocupan unos $128$ o $256$ bytes. Suponiendo que los inodos ocupan $256$ bytes, un bloque de $4 ~ KB$ puede guardar $16$ inodos por ende nuestro sistema de archivos tendrá como máximo $80$ inodos. Esto representa también la cantidad máxima de archivos que podrá contener nuestro sistema de archivos.
 
@@ -43,7 +193,76 @@ El sistema de archivos tiene los datos (D) y los inodos (I) pero todavía nos fa
 
 Un bitmap es una estructura bastante sencilla en la que se mapea $0$ si un objeto está libre y $1$ si el objeto está ocupado. En este caso cada (i) sería el bitmap de inodos y (d) sería el bitmap de datos
 
-![[Organización en disco de un Very Simple File System (VSFV) con data region, inodos y bitmaps de alocación.webp]]
+```tikz
+\usetikzlibrary{math}
+
+\begin{document} 
+	\tikzmath {
+		\sep = 0.25;
+		\dim = 0.25;
+		\lineas = 1.25;
+		\dis = 2/3;
+	}
+	\begin{tikzpicture}[scale=2, transform shape]
+		\foreach \y in {0, 1} {
+			\foreach \x in {0, 1, 2, 3} {
+				\foreach \i in {0, ..., 7} {
+					\draw[very thick] (
+						{\x * ( 2 + \sep ) + \i * \dim}, 
+						{-\y * \lineas}
+					) rectangle ++(\dim, \dim);
+				}
+
+				\tikzmath {
+					\min = int((\y * 32) + (\x * 8));
+					\max = int(\min + 7);
+				}
+				
+				\path ({\x * ( 2 + \sep )}, {-\y * \lineas - \dis * \dim})
+					-- ++({8 * \dim}, 0)
+					node[pos=0.05, scale=0.5] {$\min$}
+					node[pos=0.95, scale=0.5] {$\max$};
+			}
+		}
+
+		\draw[very thick, |-|] ({2 + \sep}, {\dis * \dim + \dim})
+			-- ++({2 * ( 2 + \sep ) + 8 * \dim}, 0)
+				node[midway, above=2pt, scale=0.6] {Data Region};
+		\draw[very thick, |-|] (0, {-\lineas + \dis * \dim + \dim})
+			-- ++({3 * ( 2 + \sep ) + 8 * \dim}, 0)
+				node[midway, above=2pt, scale=0.6] {Data Region};
+		\foreach \x in {1, 2, 3} {
+			\foreach \i in {0, ..., 7} {
+				\path[very thick] ({\x * ( 2 + \sep ) + \i * \dim}, 0) 
+					rectangle ++(\dim, \dim)
+					node[midway, scale=0.5] {D};
+			}
+		}
+		\foreach \x in {0, 1, 2, 3} {
+			\foreach \i in {0, ..., 7} {
+				\path[very thick] ({\x * ( 2 + \sep ) + \i * \dim}, -\lineas) 
+					rectangle ++(\dim, \dim)
+					node[midway, scale=0.5] {D};
+			}
+		}
+
+		\draw[very thick, |-|] ({3 * \dim}, {\dis * \dim + \dim})
+			-- ++({5 * \dim}, 0)
+				node[midway, above=2pt, scale=0.6] {Inodes};
+		\foreach \i in {3, ..., 7} {
+			\filldraw[very thick, fill=darkgray] ({\i * \dim}, 0) 
+				rectangle ++(\dim, \dim)
+				node[midway, scale=0.5] {I};
+		}
+		
+		\foreach \i/\tag in {1/i, 2/d} {
+			\filldraw[very thick, fill=black] ({\i * \dim}, 0) 
+				rectangle ++(\dim, \dim)
+				node[midway, scale=0.5, white] {\tag};
+		}
+	\end{tikzpicture}
+\end{document}
+```
 
 Obviamente cada bitmap ocupa menos de $4 ~KB$, pero se utiliza un bloque por cada uno indefectiblemente. 
 
@@ -55,4 +274,77 @@ Se podrá observar que queda un único bloque libre en todo el disco. Este bloqu
 * Donde comienza la tabla de inodos
 * Donde comienzan los bitmaps
 
-![[Organización en disco de un Very Simple File System (VSFV) completo.webp]]
+```tikz
+\usetikzlibrary{math}
+
+\begin{document} 
+	\tikzmath {
+		\sep = 0.25;
+		\dim = 0.25;
+		\lineas = 1.25;
+		\dis = 2/3;
+	}
+	\begin{tikzpicture}[scale=2, transform shape]
+		\foreach \y in {0, 1} {
+			\foreach \x in {0, 1, 2, 3} {
+				\foreach \i in {0, ..., 7} {
+					\draw[very thick] (
+						{\x * ( 2 + \sep ) + \i * \dim}, 
+						{-\y * \lineas}
+					) rectangle ++(\dim, \dim);
+				}
+
+				\tikzmath {
+					\min = int((\y * 32) + (\x * 8));
+					\max = int(\min + 7);
+				}
+				
+				\path ({\x * ( 2 + \sep )}, {-\y * \lineas - \dis * \dim})
+					-- ++({8 * \dim}, 0)
+					node[pos=0.05, scale=0.5] {$\min$}
+					node[pos=0.95, scale=0.5] {$\max$};
+			}
+		}
+
+		\draw[very thick, |-|] ({2 + \sep}, {\dis * \dim + \dim})
+			-- ++({2 * ( 2 + \sep ) + 8 * \dim}, 0)
+				node[midway, above=2pt, scale=0.6] {Data Region};
+		\draw[very thick, |-|] (0, {-\lineas + \dis * \dim + \dim})
+			-- ++({3 * ( 2 + \sep ) + 8 * \dim}, 0)
+				node[midway, above=2pt, scale=0.6] {Data Region};
+		\foreach \x in {1, 2, 3} {
+			\foreach \i in {0, ..., 7} {
+				\path[very thick] ({\x * ( 2 + \sep ) + \i * \dim}, 0) 
+					rectangle ++(\dim, \dim)
+					node[midway, scale=0.5] {D};
+			}
+		}
+		\foreach \x in {0, 1, 2, 3} {
+			\foreach \i in {0, ..., 7} {
+				\path[very thick] ({\x * ( 2 + \sep ) + \i * \dim}, -\lineas) 
+					rectangle ++(\dim, \dim)
+					node[midway, scale=0.5] {D};
+			}
+		}
+
+		\draw[very thick, |-|] ({3 * \dim}, {\dis * \dim + \dim})
+			-- ++({5 * \dim}, 0)
+				node[midway, above=2pt, scale=0.6] {Inodes};
+		\foreach \i in {3, ..., 7} {
+			\filldraw[very thick, fill=darkgray] ({\i * \dim}, 0) 
+				rectangle ++(\dim, \dim)
+				node[midway, scale=0.5] {I};
+		}
+		
+		\foreach \i/\tag in {1/i, 2/d} {
+			\filldraw[very thick, fill=black] ({\i * \dim}, 0) 
+				rectangle ++(\dim, \dim)
+				node[midway, scale=0.5, white] {\tag};
+		}
+		
+		\path[very thick] (0, 0) rectangle ++(\dim, \dim)
+				node[midway, scale=0.5] {S};
+	\end{tikzpicture}
+\end{document}
+```
+

@@ -21,17 +21,18 @@ Con la representación
 \end{document}
 ```
 También se puede entender la delta de Dirac con el [[Límite|límite]], donde $$ \lim_{\Delta \to 0} \delta_\Delta (t) = \delta(t) $$ y gráficamente se ve
+
 ```tikz
 \begin{document} 
+	\definecolor{col1}{RGB}{255, 0, 127} 
+	\definecolor{col2}{RGB}{255, 25, 25} 
+	\definecolor{col3}{RGB}{229, 51, 178} 
+	\definecolor{col4}{RGB}{178, 102, 229} 
+	\definecolor{col5}{RGB}{102, 127, 229} 
+	\definecolor{col6}{RGB}{0, 127, 204}
+	
 	\begin{tikzpicture}[scale=1.3, transform shape, ultra thick]
 
-		\definecolor{col1}{RGB}{255, 0, 127} 
-		\definecolor{col2}{RGB}{255, 25, 25} 
-		\definecolor{col3}{RGB}{229, 51, 178} 
-		\definecolor{col4}{RGB}{178, 102, 229} 
-		\definecolor{col5}{RGB}{102, 127, 229} 
-		\definecolor{col6}{RGB}{0, 127, 204}
-		
 		\draw[->] (-0.2, 0) -- (3.5, 0)
 			node[right=2pt] {$t$};
 		\draw[->] (0, -0.2) node[below=2pt] {$0$}

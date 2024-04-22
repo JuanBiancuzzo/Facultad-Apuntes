@@ -47,3 +47,4 @@ Estas están caracterizadas por dos curvas
 * [[Curva de transferencia|Curva de transferencia]]
 * [[Curva de salida|Curva de salida]]
 
+

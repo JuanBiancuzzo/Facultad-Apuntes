@@ -60,3 +60,5 @@ Relaciona la [[Tensión|tensión]] de salida de un componente, con la [[Corrient
 ```
 
 Donde notemos que el punto $Q$ es el punto en el cual trabaja el componente. También como esta relacionado a la [[Curva de transferencia|curva de transferencia]] donde se determina la tensión de entrada
+
+También notemos que la curva que tenemos ahí es la [[Recta de carga estática de un componente|recta de carga estática]] de nuestro componente

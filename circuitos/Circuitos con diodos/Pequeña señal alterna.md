@@ -64,7 +64,7 @@ Al avanzar el tiempo, la curva de carga (recta en este caso particular) se mueve
 
 #### Aproximación
 ---
-Lo más sencillo sería reemplazar el componente X por su [[Resistencia estática de un componente|resistencia estática en el punto Q]], al fin y al cabo la tensión total en cada nodo dependerá de la tensión continua (que es grande) y la alterna (que es pequeña). Y por definición, el punto Q encontrado usando X o su resistencia estática sería exactamente el mismo
+Lo más sencillo sería reemplazar el componente X por su [[Recta de carga estática de un componente|resistencia estática en el punto Q]], al fin y al cabo la tensión total en cada nodo dependerá de la tensión continua (que es grande) y la alterna (que es pequeña). Y por definición, el punto Q encontrado usando X o su resistencia estática sería exactamente el mismo
 
 ![[Aproximación de primero orden de la curva de carga de pequeña señal alterna.webp]]
 

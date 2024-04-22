@@ -9,19 +9,23 @@ tags: materia
 ---
 ##### Circuitos con diodos (9)
 ---
-* [[circuitos/Circuitos con diodos/Circuito rectificador.md|Circuito rectificador]]
-* [[circuitos/Circuitos con diodos/Máxima potencia.md|Máxima potencia]]
-* [[circuitos/Circuitos con diodos/Modelo de orden 1 para diodo.md|Modelo de orden 1 para diodo]]
-* [[circuitos/Circuitos con diodos/Modelo de orden 0 para diodo.md|Modelo de orden 0 para diodo]]
-* [[circuitos/Circuitos con diodos/Resistencia dinámica de un componente.md|Resistencia dinámica de un componente]]
+* [[circuitos/Circuitos con diodos/Recta de carga dinámica de un componente.md|Recta de carga dinámica de un componente]]
+* [[circuitos/Circuitos con diodos/Recta de carga estática de un componente.md|Recta de carga estática de un componente]]
 * [[circuitos/Circuitos con diodos/Pequeña señal alterna.md|Pequeña señal alterna]]
-* [[circuitos/Circuitos con diodos/Resistencia estática de un componente.md|Resistencia estática de un componente]]
+* [[circuitos/Circuitos con diodos/Modelo de orden 1 para diodo.md|Modelo de orden 1 para diodo]]
+* [[circuitos/Circuitos con diodos/Máxima potencia.md|Máxima potencia]]
+* [[circuitos/Circuitos con diodos/Modelo de orden 0 para diodo.md|Modelo de orden 0 para diodo]]
 * [[circuitos/Circuitos con diodos/Curva de carga de un componente.md|Curva de carga de un componente]]
 * [[circuitos/Circuitos con diodos/Curva característica de un componente.md|Curva característica de un componente]]
+* [[circuitos/Circuitos con diodos/Circuito rectificador.md|Circuito rectificador]]
 
-##### Dispositivos de control de señal y en conmutación (1)
+##### Dispositivos de control de señal y en conmutación (5)
 ---
-* [[Dispositivo de control de potencia|Dispositivo de control de potencia]]
+* [[circuitos/Dispositivos de control de señal y en conmutación/Máxima potencia de trabajo.md|Máxima potencia de trabajo]]
+* [[circuitos/Dispositivos de control de señal y en conmutación/Análisis de potencias.md|Análisis de potencias]]
+* [[circuitos/Dispositivos de control de señal y en conmutación/Dispositivo de control de potencia.md|Dispositivo de control de potencia]]
+* [[circuitos/Dispositivos de control de señal y en conmutación/Curva de transferencia.md|Curva de transferencia]]
+* [[circuitos/Dispositivos de control de señal y en conmutación/Curva de salida.md|Curva de salida]]
 
 ##### Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias (1)
 ---

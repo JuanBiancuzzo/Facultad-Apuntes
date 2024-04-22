@@ -8,7 +8,38 @@ capitulo: 3
 El capacitor es un dispositivo electrónico que almacena energía (representada por la [[Capacitancia]])  en un [[Campo eléctrico]] interno.
 
 ##### Simbología
-![[Diagrama de un capacitor.webp|400]]
+---
+```tikz
+\usepackage{circuitikz} 
+\usetikzlibrary{decorations.pathreplacing}
+
+\begin{document} 
+	\tikzset{ 
+	    llave/.style={
+		    decorate, 
+			decoration={
+				brace, 
+				amplitude=10pt, 
+			}
+	    }
+	}
+	\begin{circuitikz}[american, voltage shift=0.5, scale=1.3, transform shape]
+		\draw (0, 2) to[C, l^=$C$] ++(0, 1);
+		\path (-1, 3) -- ++(2, 0) 
+				node[midway, yshift=2em]{Símbolo general};
+
+		\draw (-2, 0) to[cC, invert, l^=$C$] ++(0, 1);
+		\draw ( 0, 0) to[elko, invert, l^=$C$] ++(0, 1);
+		\draw [llave, decoration={mirror}, ultra thick] (-3, -0.5) 
+			-- ++(4, 0) 
+				node[midway, yshift=-2em]{Polarizado};
+
+		\draw ( 2, 0) to[vC, l^=$C$] ++(0, 1);
+		\path (1, -0.5) -- ++(2, 0) 
+				node[midway, yshift=-2em]{Variable};
+	\end{circuitikz}
+\end{document}
+```
 
 
 #### Relación con la [[Tensión|tensión]] y la [[Corriente eléctrica|corriente]]
