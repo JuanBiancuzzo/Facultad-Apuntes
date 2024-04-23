@@ -194,7 +194,7 @@ Vemos que si $X_c(j\omega) = 0$ para $|\omega| > W$ y si $2W < \omega_s$ las rep
 \end{document}
 ```
 
-Vemos que aunque $X_c(j\omega) = 0$ para $|\omega| > W$ si $2W \ge \omega_s$ las replicas se solapan, es decir que existe [[Aliasing|aliasing]]. 
+Vemos que aunque $X_c(j\omega) = 0$ para $|\omega| > W$ si $2W \ge \omega_s$ las replicas se solapan, es decir que existe [[Aliasing|aliasing]]
 
 En el caso que $x_c(t)$ no fuera de [[Señal de banda limitada|banda limitada]], las replicas se solaparían para cualquier elección de $\omega_s$
 

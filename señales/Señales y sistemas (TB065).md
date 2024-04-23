@@ -55,8 +55,10 @@ tags: materia
 * [[señales/Transformada de Fourier/Antitransforamda de Fourier en tiempo discreto.md|Antitransforamda de Fourier en tiempo discreto]]
 * [[señales/Serie de Fourier/Coeficientes de Fourier de una señal discreta.md|Coeficientes de Fourier de una señal discreta]]
 
-##### Muestreo e Interpolación (5)
+##### Muestreo e Interpolación (7)
 ---
+* [[señales/Muestreo e Interpolación/Conversor Digital-Analógico.md|Conversor Digital-Analógico]]
+* [[señales/Muestreo e Interpolación/Filtro antialiasing.md|Filtro antialiasing]]
 * [[señales/Muestreo e Interpolación/Muestreo.md|Muestreo]]
 * [[señales/Muestreo e Interpolación/Teorema Whittaker-Kotelnikov-Nyquist-Shannon.md|Teorema Whittaker-Kotelnikov-Nyquist-Shannon]]
 * [[señales/Muestreo e Interpolación/Muestreo periódico.md|Muestreo periódico]]

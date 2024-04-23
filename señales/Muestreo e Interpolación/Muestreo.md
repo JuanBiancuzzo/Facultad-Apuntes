@@ -79,3 +79,5 @@ El puente entre el mundo analógico de las [[Señal|señales]] de interés y el 
 Hay dos tipos de muestro
 1. [[Muestreo periódico|Muestreo periódico o uniforme]]
 2. [[Muestreo aperiódico|Muestreo aperiódico]]
+
+Notemos que tiene como componentes el [[Conversor Analógico-Digital|conversor Analógico-Digital (A/D)]] y el [[Conversor Digital-Analógico|conversor Digital-Analógico (D/A)]] 

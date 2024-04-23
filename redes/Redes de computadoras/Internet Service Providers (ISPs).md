@@ -7,6 +7,8 @@ capitulo: 1
 ---
 Proveen el [[Servicio|servicio]] de [[Internet|internet]], mediante una amplia variedad de tipos de acceso a la [[Red|red]] a los host. Esta es una red de [[Packet switches|packet switches]] y Communication links
 
+![[Red de ISPs.png]]
+
 #### Niveles
 ---
 Las redes de cada ISP, sea superiores (como tier 1) o inferiores, se administra de forma independiente, ejecuta el [[Internet Protocol Address (IP address)|Protocolo IP]] y se ajusta a determinados convenios de denominación y de asignación de direcciones 

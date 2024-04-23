@@ -11,24 +11,26 @@ Un protocolo define el formato y el orden de los mensajes intercambiados entre d
 ---
 Las [[Host|host]] que intercambian mensajes y llevan a cabo las acciones son los componentes [[Hardware|hardware]] o [[Software|software]] de cierto dispositivo. Cualquier actividad de [[Internet|internet]] que implique dos o más entidades remotas que se comunican por la [[Red|red]] están gobernadas por un protocolo
 
+
 ```tikz
 \usetikzlibrary{math}
 
 \begin{document} 
-	\tikzmath {
-		\dist = 6;
-		\tresponse = 1.5;
-		\delay = 0.3;
-		\itime = 0.5;
-
-		\ftime = \itime + 4 * (\tresponse + \delay) + 0.5;
-	}
 	\def\mensajes{{
 		"TCP connection\\request", 
 		"TCP connection\\response", 
 		"GET url", 
 		"file"
 	}}
+	\tikzmath {
+		\dist = 6;
+		\tresponse = 1.5;
+		\delay = 0.3;
+		\itime = 0.5;
+
+		\ftime = \itime + dim(\mensajes) * (\tresponse + \delay) + 0.5;
+	}
+	
 	
 	\begin{tikzpicture}[scale=1.3, transform shape, ultra thick]
 		\draw[|->] ({-\dist / 2}, \ftime) -- ++(0, -\ftime)
@@ -37,11 +39,12 @@ Las [[Host|host]] que intercambian mensajes y llevan a cabo las acciones son los
 			node[pos=0, above=2pt] {Servidor}
 			node[pos=1, right=2pt] {$t$};
 
-		\foreach \i in {0, ..., 3} {
+		\tikzmath { \lenmenos = dim(\mensajes) - 1; }
+		\foreach \i in {0, ..., \lenmenos} {
 			\tikzmath { 
 				\signo = mod(\i, 2) * 2 - 1; 
 				\angulo = atan(\signo * \tresponse / \dist);
-				\mensaje = \mensajes[\i];
+				\mensaje = array(\mensajes, \i);
 			}
 			\draw[->] (
 				{\signo * \dist / 2}, 
