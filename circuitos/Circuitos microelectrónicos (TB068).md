@@ -21,15 +21,19 @@ tags: materia
 
 ##### Dispositivos de control de señal y en conmutación (5)
 ---
-* [[circuitos/Dispositivos de control de señal y en conmutación/Máxima potencia de trabajo.md|Máxima potencia de trabajo]]
+* [[circuitos/Dispositivos de control de señal y en conmutación/Potencia de trabajo.md|Potencia de trabajo]]
 * [[circuitos/Dispositivos de control de señal y en conmutación/Análisis de potencias.md|Análisis de potencias]]
 * [[circuitos/Dispositivos de control de señal y en conmutación/Dispositivo de control de potencia.md|Dispositivo de control de potencia]]
 * [[circuitos/Dispositivos de control de señal y en conmutación/Curva de transferencia.md|Curva de transferencia]]
 * [[circuitos/Dispositivos de control de señal y en conmutación/Curva de salida.md|Curva de salida]]
 
-##### Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias (1)
+##### Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias (5)
 ---
-* [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/temp.md|temp]]
+* [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Retroalimentación de un circuito.md|Retroalimentación de un circuito]]
+* [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Reflexión por relación de tensiones.md|Reflexión por relación de tensiones]]
+* [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Reflexión por relación de corrientes.md|Reflexión por relación de corrientes]]
+* [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Estabilidad del punto de reposo.md|Estabilidad del punto de reposo]]
+* [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Amplificador.md|Amplificador]]
 
 ##### Amplificadores con varios dispositivos activos de bajo nivel de potencia (1)
 ---
