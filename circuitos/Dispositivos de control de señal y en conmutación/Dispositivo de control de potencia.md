@@ -47,4 +47,9 @@ Estas están caracterizadas por dos curvas
 * [[Curva de transferencia|Curva de transferencia]]
 * [[Curva de salida|Curva de salida]]
 
-
+#### Transistores como dispositivos de control de potencia
+---
+Tenemos 3 tipos de [[Transistor|transistores]] que nos vamos a analizar
+* [[Transistor bipolar de juntura (TBJ)|TBJ]]
+* [[Transistor de efecto de campo de unión (JFET)|JFET]]
+* [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|MOSFET]]
