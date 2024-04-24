@@ -29,8 +29,9 @@ tags: materia
 * [[circuitos/Dispositivos de control de señal y en conmutación/Curva de salida.md|Curva de salida]]
 * [[circuitos/Dispositivos de control de señal y en conmutación/Análisis de potencias.md|Análisis de potencias]]
 
-##### Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias (5)
+##### Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias (6)
 ---
+* [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Distorsión de un amplificador.md|Distorsión de un amplificador]]
 * [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Retroalimentación de un circuito.md|Retroalimentación de un circuito]]
 * [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Reflexión por relación de tensiones.md|Reflexión por relación de tensiones]]
 * [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Reflexión por relación de corrientes.md|Reflexión por relación de corrientes]]
