@@ -115,9 +115,8 @@ Un [[Filtro|filtro]] antialiasing intenta reducir el [[Aliasing|aliasing]] de un
 			-- ++(0, 0.1);
 		\draw ({-2 * \ws}, \y3) node[below=2pt] {$-\omega_s$}
 			-- ++(0, 0.1);
-		\draw (-\ws, {-triangulo(-\ws) + \y3}) node[below=2pt] 
-				{$-\frac{\omega_s}{2}$}
-			-- ++(0, 0.1);
+		\path (-\ws, {-triangulo(-\ws) + \y3}) node[below=2pt] 
+				{$-\frac{\omega_s}{2}$};
 		\draw ({-2 * \ws + \W}, \y3) node[below=2pt] 
 				{$~~ W - \omega_s$}
 			-- ++(0, 0.1);
@@ -127,9 +126,8 @@ Un [[Filtro|filtro]] antialiasing intenta reducir el [[Aliasing|aliasing]] de un
 			-- ++(0, 0.1);
 		\draw ({2 * \ws}, \y3) node[below=2pt] {$\omega_s$}
 			-- ++(0, 0.1);
-		\draw (\ws, {-triangulo(\ws) + \y3}) node[below=2pt] 
-				{$\frac{\omega_s}{2}$}
-			-- ++(0, 0.1);
+		\path (\ws, {-triangulo(\ws) + \y3}) node[below=2pt] 
+				{$\frac{\omega_s}{2}$};
 		\draw ( \W, \y3) node[above=2pt] {$~W$}
 			-- ++(0, 0.1);
 	\end{tikzpicture}
@@ -248,9 +246,8 @@ Si aplicamos el filtro, entonces tenemos lo siguiente
 			-- ++(0, 0.1);
 		\draw ({-2 * \ws}, \y3) node[below=2pt] {$-\omega_s$}
 			-- ++(0, 0.1);
-		\draw (-\ws, {-triangulo(-\ws) + \y3}) node[below=2pt] 
-				{$-\frac{\omega_s}{2}$}
-			-- ++(0, 0.1);
+		\path (-\ws, {-triangulo(-\ws) + \y3}) node[below=2pt] 
+				{$-\frac{\omega_s}{2}$};
 		\draw ({-2 * \ws + \W}, \y3) node[below=2pt] 
 				{$~~ W - \omega_s$}
 			-- ++(0, 0.1);
@@ -260,9 +257,8 @@ Si aplicamos el filtro, entonces tenemos lo siguiente
 			-- ++(0, 0.1);
 		\draw ({2 * \ws}, \y3) node[below=2pt] {$\omega_s$}
 			-- ++(0, 0.1);
-		\draw (\ws, {-triangulo(\ws) + \y3}) node[below=2pt] 
-				{$\frac{\omega_s}{2}$}
-			-- ++(0, 0.1);
+		\path (\ws, {-triangulo(\ws) + \y3}) node[below=2pt] 
+				{$\frac{\omega_s}{2}$};
 		\draw ( \W, \y3) node[above=2pt] {$~W$}
 			-- ++(0, 0.1);
 	\end{tikzpicture}
