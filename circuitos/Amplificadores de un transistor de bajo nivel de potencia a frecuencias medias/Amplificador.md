@@ -5,6 +5,20 @@ capitulo: 3
 ---
 ### Definición
 ---
+Se tienen distintas configuraciones de amplificadores como
+* [[Amplificador Emisor Común|Amplificador emisor común]]
+* [[Amplificador Colector Común|Amplificador colector común]]
+* [[Amplificador Base Común|Amplificador base común]] 
+* [[Amplificador Source Común|Amplificador source común]]
+* [[Amplificador Drain Común|Amplificador drain común]]
+* [[Amplificador Gate Común|Amplificador gate común]]
+
+#### Resolución
+---
+La resolución de un amplificador significa encontrar el punto de polarización, continua o reposo $Q$ y en señal encontrar los parámetros como la [[Ganancia|ganancia]] con respecto a la [[Señal|señal]] de entrada $A_v$ y con el generador $v_s$ dando $A_{vs}$, como también las resistencias de entrada $R_i$ y de salida $R_o$
+
+##### Ejemplo
+---
 Teniendo un amplificador básico para el cual plantear una idea general, vamos a usar un [[Amplificador Emisor Común|amplificador emisor común]] que usa un [[Transistor bipolar de juntura (TBJ)|TBJ]] 
 
 ![[Amplificador básico.png]]
