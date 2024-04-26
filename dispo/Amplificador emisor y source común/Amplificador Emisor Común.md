@@ -9,6 +9,13 @@ Este es un [[Amplificador de tensión|amplificador de tensión]], basado en un [
 
 ![[Amplificador emisor común.webp]]
 
+$$ \begin{cases} 
+	A_v = \\
+	A_{vs} = \\
+	R_i = \\
+	R_o = \\
+\end{cases} $$
+
 Suponiendo que $R_L \to \infty$ y no afecta al funcionamiento del [[Circuito eléctrico|circuito]].
 
 Donde se tiene

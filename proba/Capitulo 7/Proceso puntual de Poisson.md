@@ -5,14 +5,14 @@ capitulo: 7
 ---
 ### Definición
 ---
-Dado un [[Proceso puntual]], donde los arribos sean independientes y entre dos arribos consecutivos su distancia tenga [[Distribución Exponencial]]. Con la siguiente notación: $$ \Pi \sim PPP(\lambda) $$ donde $\lambda$ es la intensidad o tasa de ocurrencia
+Dado un [[Proceso puntual|proceso puntual]], donde los arribos sean independientes y entre dos arribos consecutivos su distancia tenga [[Distribución Exponencial|distribución exponencial]]. Con la siguiente notación: $$ \Pi \sim PPP(\lambda) $$ donde $\lambda$ es la intensidad o tasa de ocurrencia
 
 
 ### Variables utiles
 ---
 Por lo que vamos a definir las siguientes [[Variable aleatoria|variables aleatorias]]. 
 
-Definimos como $N(a, b)$  a la cantidad de arribos entre $a$ y $b$, donde $a < b$. Esta variable tiene [[Distribución de Poisson]], $N(a, b) \sim Poi(\mu = \lambda \cdot (b - a))$. Por convención de notación diremos que $N(0, t) \equiv N(t)$.
+Definimos como $N(a, b)$  a la cantidad de arribos entre $a$ y $b$, donde $a < b$. Esta variable tiene [[Distribución de Poisson|distribución de Poisson]], $N(a, b) \sim Poi(\mu = \lambda \cdot (b - a))$. Por convención de notación diremos que $N(0, t) \equiv N(t)$.
 
 Definimos a las variables $G_n$ como el tiempo hasta el $n$-esimo arribo. Donde cumplen que tienen [[Distribución Gamma]], $G_n \sim \Gamma(n, \lambda)$.
 
