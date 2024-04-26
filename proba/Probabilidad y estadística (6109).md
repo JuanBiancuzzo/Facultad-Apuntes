@@ -8,7 +8,7 @@ tags:
 ---
 ### Apuntes 
 ---
-o##### Capitulo 1 (22)
+##### Capitulo 1 (22)
 ---
 * [[proba/Capitulo 1/Eventos independientes.md|Eventos independientes]]
 * [[proba/Capitulo 1/Teorema de Bayes.md|Teorema de Bayes]]
