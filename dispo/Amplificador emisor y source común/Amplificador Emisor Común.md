@@ -7,15 +7,82 @@ capitulo: 7
 ---
 Este es un [[Amplificador de tensión|amplificador de tensión]], basado en un [[Transistor bipolar de juntura (TBJ)|TBJ]] 
 
-![[Amplificador emisor común.webp]]
+```tikz
+\usetikzlibrary{math}
+\usepackage[
+	europeanvoltages,
+	europeancurrents,
+	americanresistors, 
+	americaninductors, 
+	americanports, 
+	americangfsurgearrester
+]{circuitikz} 
 
-$$ \begin{cases} 
-	A_v = \\
-	A_{vs} = \\
-	R_i = \\
-	R_o = \\
-\end{cases} $$
 
+\ctikzset{
+	resistors/scale=0.7,
+	capacitors/scale=0.7,
+}
+
+\begin{document} 
+	\begin{circuitikz}[scale=1.2, transform shape, thick]		
+		%%% Amplificador
+		\draw (0, 4) node[above=2pt] {$V_{CC}$} 
+				node (vcc) {}
+			to[R, l^=$R_C$, *-] ++(0, -1.5)
+				node[flowarrow, anchor=west, rotate=-90] (vc) 
+					{\rotatebox{90}{$i_C$}}
+			to[short] ++(0, -0.1)
+				node[npn, xscale=1.2, yscale=1.5, anchor=C] (npn) {};
+		
+		\draw ($ (npn.E) + (0.3, 0.2) $) to[open, v_=$v_{CE}$] 
+			($ (vc.west) + (0.3, -0.5) $);
+		\draw (npn.E) to[short] ++(0, -0.5) node[ground] {}
+			to[open, v^=$v_{BE}$] (npn.B);
+
+		\draw ($ (vcc) + (-2.5, -0.5) $) node[above=2pt] {$V_{BB}$} 
+				node (vbb) {}
+			to[R, l^=$R_B$, *-] ($ (npn.B -| 0, 0) + (vbb |- 0, 0) $)
+				node (vb) {}
+			to[short, i_=$i_B$] (npn.B);
+
+		%%% Fuente
+		\draw (vb) to[C, l^=$C$, *-o] ++(-2, 0)
+				node (vin) {}
+			to[R, l_=$R_s$] ++(-2, 0)
+			to[sV, l_=$v_s$] ++(0, -2)
+				node[ground] (gr) {};
+		\draw ($ (gr -| 0, 0) + (vin |- 0, 0)  + (0, -1) $)
+			to[open, v^=$v_{in}$] (vin);
+
+		%%% Carga
+		\draw (vc.west) to[C, l_=$C$, *-o] ++(2.5, 0)
+				node (vout) {}
+			to[short] ++(1, 0)
+			to[R, l_=$R_L$] ++(0, -2)
+			node[ground] (gr) {};
+
+		\draw ($ (gr) + (0.4, -0.5) $) to[open, v_=$v_{out}$] 
+			($ (gr |- 0, 0) + (vout -| 0, 0) + (0.4, 0) $);
+	\end{circuitikz}
+\end{document}
+```
+
+^6b9228
+
+$$ \begin{matrix} 
+	&&& \text{En general} \\
+	A_v =  &&&  |A_v| \gg 1 \\
+	A_{vs} = &&& \\
+	R_i = &&& \\
+	R_o = &&& \\
+	C_{eq} = &&& \\
+\end{matrix} $$
+
+^daaa29
+
+#### Calculo de parámetros
+---
 Suponiendo que $R_L \to \infty$ y no afecta al funcionamiento del [[Circuito eléctrico|circuito]].
 
 Donde se tiene
@@ -30,8 +97,6 @@ Donde se tiene
 * $A_{vo} = \frac{v_{out}}{v_{in}} < 0$ la salida está en contrafase con la entrada
 * $|A_v| = \left| \frac{v_{out}}{v_{in}} \right| > 1$, si el amplificador está bien diseñado
 
-#### Calculo de parámetros
----
 Usando el [[Modelo de pequeña señal del transistor bipolar de juntura (TBJ)#Modelo Modelo para bajas frecuencias|modelo de pequeña señal para baja frecuencia]] y pasivando las [[Fuente de tensión|fuentes de tensión continuas]], tendremos
 
 

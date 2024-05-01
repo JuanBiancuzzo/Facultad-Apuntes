@@ -6,12 +6,33 @@ capitulo: 3
 ### Definición
 ---
 Se tienen distintas configuraciones de amplificadores como
+
+##### Amplificadores usando un TBJ
+---
 * [[Amplificador Emisor Común|Amplificador emisor común]]
+   ![[Amplificador Emisor Común#^6b9228]]  ![[Amplificador Emisor Común#^daaa29]]
 * [[Amplificador Colector Común|Amplificador colector común]]
-* [[Amplificador Base Común|Amplificador base común]] 
-* [[Amplificador Source Común|Amplificador source común]]
-* [[Amplificador Drain Común|Amplificador drain común]]
-* [[Amplificador Gate Común|Amplificador gate común]]
+   ![[Amplificador Colector Común#^5c5e25]]  ![[Amplificador Colector Común#^e8dc2c]]
+* [[Amplificador Base Común|Amplificador base común]]
+   ![[Amplificador Base Común#^4ae162]]  ![[Amplificador Base Común#^364fd0]]
+
+##### Amplificadores usando un MOSFET
+---
+* [[Amplificador Source Común con un MOSFET|Amplificador source común]]
+   ![[Amplificador Source Común con un MOSFET#^bef7b2]]  ![[Amplificador Source Común con un MOSFET#^27b24b]]
+* [[Amplificador Drain Común con un MOSFET|Amplificador drain común]]
+   ![[Amplificador Drain Común con un MOSFET#^6e8ccc]]  ![[Amplificador Drain Común con un MOSFET#^84a8e4]]
+* [[Amplificador Gate Común con un MOSFET|Amplificador gate común]]
+   ![[Amplificador Gate Común con un MOSFET#^699639]]  ![[Amplificador Gate Común con un MOSFET#^5ee09c]]
+
+##### Amplificadores usando un JFET
+---
+* [[Amplificador Source Común con un JFET|Amplificador source común]]
+   ![[Amplificador Source Común con un JFET#^f67315]]  ![[Amplificador Source Común con un JFET#^837c41]]
+* [[Amplificador Drain Común con un JFET|Amplificador drain común]]
+   ![[Amplificador Drain Común con un JFET#^9a3871]]  ![[Amplificador Drain Común con un JFET#^1b22df]]
+* [[Amplificador Gate Común con un JFET|Amplificador gate común]]
+   ![[Amplificador Gate Común con un JFET#^9a23eb]]  ![[Amplificador Gate Común con un JFET#^f4b95c]]
 
 #### Resolución
 ---

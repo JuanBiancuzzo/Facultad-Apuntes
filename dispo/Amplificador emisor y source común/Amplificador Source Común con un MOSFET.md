@@ -7,7 +7,79 @@ capitulo: 7
 ---
 Consideremos el siguiente [[Amplificador de tensión|amplificador]] implementado con un [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|MOSFET]]  [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Canal-N|canal N]]
 
-![[Amplificador source común.webp]]
+```tikz
+\usetikzlibrary{math}
+\usepackage[
+	europeanvoltages,
+	europeancurrents,
+	americanresistors, 
+	americaninductors, 
+	americanports, 
+	americangfsurgearrester,
+]{circuitikz} 
+
+\ctikzset{
+	resistors/scale=0.7,
+	capacitors/scale=0.7,
+	tripoles/mos style/arrows,
+}
+
+\begin{document} 
+	\begin{circuitikz}[scale=1.2, transform shape, thick]		
+		%%% Amplificador
+		\draw (0, 4) node[above=2pt] {$V_{DD}$} 
+			to[R, l^=$R_D$, *-] ++(0, -1.5)
+				node[flowarrow, anchor=west, rotate=-90] (vd) 
+					{\rotatebox{90}{$i_D$}}
+			to[short] ++(0, -0.1)
+				node[nigfetd, xscale=1.2, yscale=1.5, anchor=D] (nmos) {};
+		
+		\draw ($ (nmos.S) + (0.3, 0.2) $) to[open, v_=$v_{DS}$] 
+			($ (vd.west) + (0.3, -0.5) $);
+		\draw (nmos.S) to[short] ++(0, -0.5) node[ground] {}
+			to[open, v^=$v_{GS}$] (nmos.G);
+
+		\draw (-2.5, 4) node[above=2pt] {$V_{GG}$} 
+				node (vgg) {}
+			to[R, l^=$R_G$, *-] ++(0, -1.5)
+			to ($ (nmos.G -| 0, 0) + (vgg |- 0, 0) $)
+				node (vg) {}
+			to[short, i_=$i_G$] (nmos.G);
+
+		%%% Fuente
+		\draw (vg) to[C, l^=$C$, *-o] ++(-2, 0)
+				node (vin) {}
+			to[R, l_=$R_s$] ++(-2, 0)
+			to[sV, l_=$v_s$] ++(0, -2)
+				node[ground] (gr) {};
+		\draw ($ (gr -| 0, 0) + (vin |- 0, 0)  + (0, -1) $)
+			to[open, v^=$v_{in}$] (vin);
+
+		%%% Carga
+		\draw (vd.west) to[C, l_=$C$, *-o] ++(2.5, 0)
+				node (vout) {}
+			to[short] ++(1, 0)
+			to[R, l_=$R_L$] ++(0, -2)
+			node[ground] (gr) {};
+
+		\draw ($ (gr) + (0.4, -0.5) $) to[open, v_=$v_{out}$] 
+			($ (gr |- 0, 0) + (vout -| 0, 0) + (0.4, 0) $);
+	\end{circuitikz}
+\end{document}
+```
+
+^bef7b2
+
+$$ \begin{matrix} 
+	&&& \text{En general} \\
+	A_v = -g_m ~ (R_D // r_{ds}) &&&  |A_v| \gg 1 \\
+	A_{vs} = &&& \\
+	R_i = &&& \\
+	R_o = &&& \\
+	C_{eq} = &&& \\
+\end{matrix} $$
+
+^27b24b
 
 La fuente de polarización ($V_{GG}$ y $R_G$) representa el [[Teorema de Thevenin|equivalente de Thevenin]] del [[Circuito eléctrico|circuito]] de polarización del MOSFET. 
 

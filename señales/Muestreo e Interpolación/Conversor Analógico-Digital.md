@@ -13,9 +13,9 @@ Podemos [[Modelo|modelar]] un conversor A/D de la siguiente forma
 		\node[draw, circle, scale=1.3] 
 			(x) at (0, 0) {$\times$};
 		
-		\node[draw, font=\bfseries, text width=4cm, inner sep=5pt] 
+		\node[draw, font=\bfseries, align=center, inner sep=5pt] 
 			(conversor) at (5, 0) 
-			{Conversor de tren de impulsos a secuencia de tiempo discreto};
+			{Conversor de tren de\\impulsos a secuencia\\de tiempo discreto};
 
 		\draw[<-] (x) -- ++(-2.5, 0)
 			node[font=\bfseries, above right=2pt] {$x_c(t)$};
@@ -144,7 +144,7 @@ Vemos que si $X_c(j\omega) = 0$ para $|\omega| > W$ y si $2W < \omega_s$ las rep
 
 		\path (0, {\y1 + 2}) node[above right=2pt] {$1$};
 		
-		\draw (-\xmax, \y2) -- (\xmax, \y2)
+		\draw[->] (-\xmax, \y2) -- (\xmax, \y2)
 			node[below=2pt] {$\omega$};
 		\draw[->] (0, {\y2 - 0.1}) 
 			-- ++ (0, 3)
@@ -157,7 +157,7 @@ Vemos que si $X_c(j\omega) = 0$ para $|\omega| > W$ y si $2W < \omega_s$ las rep
 		}
 		\path (0, {\y2 + 2}) node[above right=2pt] {$\frac{2\pi}{T}$};
 			
-		\draw (-\xmax, \y3) -- (\xmax, \y3)
+		\draw[->] (-\xmax, \y3) -- (\xmax, \y3)
 			node[below=2pt] {$\omega$};
 		\draw[->] (0, {\y3 - 0.1})
 			-- ++ (0, 3)

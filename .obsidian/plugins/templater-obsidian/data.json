@@ -24,7 +24,10 @@
   "enabled_templates_hotkeys": [
     "_template/Tikz - Template.md",
     "_template/legal/Seleccionar.md",
-    "_template/Insertar código.md"
+    "_template/Insertar código.md",
+    "_template/Diagrama Red - Template.md",
+    "_template/TikzCircuit - Template.md",
+    "_template/TikzPlot - Template.md"
   ],
   "startup_templates": [
     ""
