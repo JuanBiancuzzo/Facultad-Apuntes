@@ -44,7 +44,7 @@ Este es un [[Amplificador de tensión|amplificador de tensión]], basado en un [
 				node[ground] (gr) {};
 
 		\draw (npn.E) to[short] ++(1.5, 0)
-			to[C, l^=$C$] ($ (gr -| 1.5, 0) + (npn.E |- 0, 0) $)
+			to[C, l^=$C_E$] ($ (gr -| 1.5, 0) + (npn.E |- 0, 0) $)
 				node[ground] {};
 			
 		\draw (npn.E) to[open, v^=$v_{BE}$] (npn.B);
@@ -59,7 +59,7 @@ Este es un [[Amplificador de tensión|amplificador de tensión]], basado en un [
 		\draw (vb) to[short, i_=$i_B$] (npn.B);
 
 		%%% Fuente
-		\draw (vb) to[C, l^=$C$, *-o] ++(-2, 0)
+		\draw (vb) to[C, l^=$C_s$, *-o] ++(-2, 0)
 				node (vin) {}
 			to[R, l_=$R_s$] ++(-2, 0)
 			to[sV, l_=$v_s$] ++(0, -2)
@@ -68,7 +68,7 @@ Este es un [[Amplificador de tensión|amplificador de tensión]], basado en un [
 			to[open, v^=$v_{in}$] (vin);
 
 		%%% Carga
-		\draw (vc.west) to[C, l_=$C$, *-o] ++(2.5, 0)
+		\draw (vc.west) to[C, l_=$C_L$, *-o] ++(2.5, 0)
 				node (vout) {}
 			to[short] ++(1, 0)
 			to[R, l_=$R_L$] ++(0, -2)
@@ -82,14 +82,21 @@ Este es un [[Amplificador de tensión|amplificador de tensión]], basado en un [
 
 ^6b9228
 
-$$ \begin{matrix} 
-	&&& \text{En general} \\
-	A_v =  &&&  |A_v| \gg 1 \\
-	A_{vs} = &&& \\
-	R_i = &&& \\
-	R_o = &&& \\
-	C_{eq} = &&& \\
-\end{matrix} $$
+$$\begin{align} 
+	 & \text{Con capacitor} ~ C_E && \text{Sin capacitor} ~ C_E \\
+	A_v &=  < 0 \\
+	A_{vs} &= \\
+	R_i &= (R_{B1} // R_{B2} // r_\pi) && = (R_{B1} // R_{B2} // (r_\pi + \beta ~ R_E))  \\
+	R_o &= (R_C // r_{ce}) && =  \\
+	C_{eq} &= \\
+\end{align} \begin{matrix} 
+	\text{En general} \\
+	|A_v| \uparrow\uparrow \\
+	\\
+	R_i \uparrow\uparrow \\
+	R_o \uparrow\uparrow \\
+	\text{Velocidad lento} \\
+\end{matrix}$$
 
 ^daaa29
 

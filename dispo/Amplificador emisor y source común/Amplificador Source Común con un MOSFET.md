@@ -75,14 +75,20 @@ Consideremos el siguiente [[Amplificador de tensión|amplificador]] implementado
 
 ^bef7b2
 
-$$ \begin{align} 
-	&&&& \text{En general} \\
-	A_v &= -g_m ~ (R_D // r_{ds}) &&&  |A_v| \gg 1 \\
-	A_{vs} &= &&& \\
-	R_i &= (R_{G1} // R_{G2}) &&& \\
-	R_o &= (r_{ds} // R_s) &&& \\
-	C_{eq} &= &&& \\
-\end{align} $$
+$$\begin{align} \\
+	A_v &= - g_m (R_D // (r_{ds} + R_S)) < 0 \\
+	A_{vs} &= \\
+	R_i &= (R_{G1} // R_{G2}) \\
+	R_o &= (R_D // (r_{ds} + R_S) ) \\
+	C_{eq} &= \\
+\end{align} \begin{matrix} 
+	\text{En general} \\
+	|A_v| \uparrow\uparrow \\
+	\\
+	R_i \downarrow\downarrow \\
+	R_o \uparrow\uparrow \\
+	\text{Velocidad media} \\
+\end{matrix}$$
 
 ^27b24b
 

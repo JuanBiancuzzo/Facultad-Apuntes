@@ -80,13 +80,19 @@ capitulo: 3
 
 ^5c5e25
 
-$$ \begin{matrix} 
-	&&& \text{En general} \\
-	A_v =  &&&  |A_v| \gg 1 \\
-	A_{vs} = &&& \\
-	R_i = &&& \\
-	R_o = &&& \\
-	C_{eq} = &&& \\
+$$ \begin{align} \\
+	A_v &=  > 0 \\
+	A_{vs} &= \\
+	R_i &=  \\
+	R_o &=  \\
+	C_{eq} &= \\
+\end{align} \begin{matrix} 
+	\text{En general} \\
+	|A_v| \uparrow\uparrow \\
+	\\
+	R_i \downarrow\downarrow \\
+	R_o \uparrow\uparrow \\
+	\text{Velocidad media} \\
 \end{matrix} $$
 
 ^e8dc2c

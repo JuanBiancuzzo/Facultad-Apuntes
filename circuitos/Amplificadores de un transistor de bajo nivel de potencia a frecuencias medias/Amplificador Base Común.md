@@ -78,13 +78,19 @@ capitulo: 3
 
 ^4ae162
 
-$$ \begin{matrix} 
-	&&& \text{En general} \\
-	A_v =  &&&  |A_v| \gg 1 \\
-	A_{vs} = &&& \\
-	R_i = &&& \\
-	R_o = &&& \\
-	C_{eq} = &&& \\
+$$ \begin{align} \\
+	A_v &=  > 0 \\
+	A_{vs} &= \\
+	R_i &=  \\
+	R_o &=  \\
+	C_{eq} &= \\
+\end{align} \begin{matrix} 
+	\text{En general} \\
+	|A_v| < 1 \\
+	\\
+	R_i \uparrow\uparrow \\
+	R_o \downarrow\downarrow \\
+	\text{Velocidad alta} \\
 \end{matrix} $$
 
 ^364fd0
