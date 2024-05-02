@@ -37,14 +37,26 @@ Este es un [[Amplificador de tensión|amplificador de tensión]], basado en un [
 		
 		\draw ($ (npn.E) + (0.3, 0.2) $) to[open, v_=$v_{CE}$] 
 			($ (vc.west) + (0.3, -0.5) $);
-		\draw (npn.E) to[short] ++(0, -0.5) node[ground] {}
-			to[open, v^=$v_{BE}$] (npn.B);
+			
+		\draw (npn.E) to[short] ++(0, -0.5) 
+			to[R, l^=$R_E$] ++(0, -1)
+			to[short] ++(0, -0.5)
+				node[ground] (gr) {};
 
-		\draw ($ (vcc) + (-2.5, -0.5) $) node[above=2pt] {$V_{BB}$} 
+		\draw (npn.E) to[short] ++(1.5, 0)
+			to[C, l^=$C$] ($ (gr -| 1.5, 0) + (npn.E |- 0, 0) $)
+				node[ground] {};
+			
+		\draw (npn.E) to[open, v^=$v_{BE}$] (npn.B);
+
+		\draw ($ (vcc) + (-2.5, 0) $) node[above=2pt] {$V_{BB}$} 
 				node (vbb) {}
-			to[R, l^=$R_B$, *-] ($ (npn.B -| 0, 0) + (vbb |- 0, 0) $)
+			to[R, l^=$R_{B1}$, *-] ($ (npn.B -| 0, 0) + (vbb |- 0, 0) $)
 				node (vb) {}
-			to[short, i_=$i_B$] (npn.B);
+			to[R, l^=$R_{B2}$, *-] ($ (gr -| 0, 0) + (vbb |- 0, 0) $)
+				node[ground] (gr) {};
+		
+		\draw (vb) to[short, i_=$i_B$] (npn.B);
 
 		%%% Fuente
 		\draw (vb) to[C, l^=$C$, *-o] ++(-2, 0)

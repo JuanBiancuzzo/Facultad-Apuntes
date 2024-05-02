@@ -16,32 +16,45 @@ capitulo: 3
 	americangfsurgearrester
 ]{circuitikz} 
 
+
 \ctikzset{
 	resistors/scale=0.7,
-	capacitors/scale=0.7
+	capacitors/scale=0.7,
 }
 
 \begin{document} 
 	\begin{circuitikz}[scale=1.2, transform shape, thick]		
 		%%% Amplificador
-		\draw (0, 2) node[above=2pt] {$V_{CC}$} 
+		\draw (0, 4) node[above=2pt] {$V_{CC}$} 
 				node (vcc) {}
-			to[short, *-] ++(0, -0.2)
+			to[R, l^=$R_C$, *-] ++(0, -2)
 				node[flowarrow, anchor=west, rotate=-90] (vc) 
 					{\rotatebox{90}{$i_C$}}
-			to[short] ++(0, -0.7)
+			to[short] ++(0, -0.1)
 				node[npn, xscale=1.2, yscale=1.5, anchor=C] (npn) {};
 		
 		\draw ($ (npn.E) + (0.3, 0.2) $) to[open, v_=$v_{CE}$] 
-			($ (vc.west) + (0.3, -1) $);
-		\draw (npn.E) to[short] ++(0, -0.5) node[ground] {}
-			to[open, v^=$v_{BE}$] (npn.B);
+			($ (vc.west) + (0.3, -0.5) $);
+			
+		\draw (npn.E) to[short] ++(0, -0.5) 
+			to[R, l^=$R_E$] ++(0, -1)
+			to[short] ++(0, -0.5)
+				node[ground] (gr) {};
 
-		\draw ($ (vcc) + (-2.5, 0.5) $) node[above=2pt] {$V_{BB}$} 
+		\draw ($ (vc) + (0, 0.35) $) to[short] ++(2.5, 0)
+			to[C, l^=$C$] ++(0, -1.5)
+				node[ground] {};
+			
+		\draw (npn.E) to[open, v^=$v_{BE}$] (npn.B);
+
+		\draw ($ (vcc) + (-2.5, 0) $) node[above=2pt] {$V_{BB}$} 
 				node (vbb) {}
-			to[R, l^=$R_B$, *-] ($ (npn.B -| 0, 0) + (vbb |- 0, 0) $)
+			to[R, l^=$R_{B1}$, *-] ($ (npn.B -| 0, 0) + (vbb |- 0, 0) $)
 				node (vb) {}
-			to[short, i_=$i_B$] (npn.B);
+			to[R, l^=$R_{B2}$, *-] ($ (gr -| 0, 0) + (vbb |- 0, 0) $)
+				node[ground] (gr) {};
+		
+		\draw (vb) to[short, i_=$i_B$] (npn.B);
 
 		%%% Fuente
 		\draw (vb) to[C, l^=$C$, *-o] ++(-2, 0)
@@ -53,9 +66,9 @@ capitulo: 3
 			to[open, v^=$v_{in}$] (vin);
 
 		%%% Carga
-		\draw (npn.E) to[C, l_=$C$, *-o] ++(2.5, 0)
+		\draw (npn.E) to[C, l_=$C$, *-o] ++(2, 0)
 				node (vout) {}
-			to[short] ++(1, 0)
+			to[short] ++(0.5, 0)
 			to[R, l_=$R_L$] ++(0, -2)
 			node[ground] (gr) {};
 

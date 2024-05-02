@@ -24,25 +24,35 @@ capitulo: 3
 \begin{document} 
 	\begin{circuitikz}[scale=1.2, transform shape, thick]		
 		%%% Amplificador
-		\draw (0, 5) node[above=2pt] {$V_{CC}$} 
+		\draw (0, 5) node[below=2pt] {$V_{CC}$}
+			to[short, *-] ++(0, 0.5) 
 				node (vcc) {}
-			to[R, l^=$R_C$, *-] ++(0, -1.5)
+			to[R, l^=$R_C$] ++(0, 2)
 				node (vc) {}
-			to[short] ++ (-0.65, 0)
-				node[npn, xscale=1.2, yscale=-1.5, rotate=-90, anchor=C] (npn) {};
+			to[short] ++ (-1, 0)
+				node[npn, xscale=1.5, yscale=-1.2, rotate=-90, anchor=C] (npn) {};
 		
-		\draw (npn.B) to[short] ++(0, -0.5) 
-			node[ground] (gr) {};
+		\draw (npn.B) to[short] 
+			($ (npn.B |- 0, 0) + (vcc -| 0, 0) $)
+				node (vb) {};
+
+		\draw (vcc) to[R, l^=$R_{B1}$, *-*] (vb)
+			to[R, l^=$R_{B2}$] ++(0, -2)
+				node[ground] (gr) {};
 		
-		\draw (npn.E) to[open, v_=$v_{BE}$] (gr);
+		\draw (vb) to[short] ++(-1.25, 0)
+			to[C, l_=$C$] ($ (gr -| -1.25, 0) + (vb |- 0, 0) $)
+				node[ground] {};
+		
+		\draw (npn.E) to[open, v_=$v_{BE}$] (vb);
 		\draw ($ (npn.E) + (-0.1, 0.2) $) to[open, v^=$v_{CE}$] 
 			($ (npn.C) + (0.1, 0.2) $);
 
-		\draw ($ (vcc) + (-3.15, 0) $) node[above=2pt] {$V_{BB}$} 
-				node (vbb) {}
-			to[R, l^=$R_B$, *-] ($ (npn.E -| 0, 0) + (vbb |- 0, 0) $)
+		\draw ($ (npn.E -| 0, 0) + (vcc |- 0, 0) + (-4.5, 0) $)
 				node (ve) {}
-			to[short, i_=$i_E$] (npn.E);
+			to[R, l_=$R_E$, *-] ++ (0, -2)
+				node[ground] {};
+		\draw (ve) to[short, i_=$i_E$] (npn.E);
 
 		%%% Fuente
 		\draw (ve) to[C, l^=$C$, *-o] ++(-2, 0)
@@ -54,9 +64,9 @@ capitulo: 3
 			to[open, v^=$v_{in}$] (vin);
 
 		%%% Carga
-		\draw (vc) to[C, l_=$C$, *-o] ++(2.5, 0)
+		\draw (vc) to[C, l_=$C$, *-o] ++(2, 0)
 				node (vout) {}
-			to[short] ++(1, 0)
+			to[short] ++(0.5, 0)
 			to[R, l_=$R_L$] ++(0, -2)
 			node[ground] (gr) {};
 
