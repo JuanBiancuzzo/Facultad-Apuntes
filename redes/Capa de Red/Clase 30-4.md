@@ -89,4 +89,3 @@ TCP
 					* Dir de broadcast = 200.10.0.127
 			* Siempre conexión punto a punto de routers, porque también es una subred
 			* El router también tiene una ip por cada subred que pertenezca
-

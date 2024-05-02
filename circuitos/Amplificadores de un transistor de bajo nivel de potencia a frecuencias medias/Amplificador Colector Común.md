@@ -16,10 +16,9 @@ capitulo: 3
 	americangfsurgearrester
 ]{circuitikz} 
 
-
 \ctikzset{
 	resistors/scale=0.7,
-	capacitors/scale=0.7,
+	capacitors/scale=0.7
 }
 
 \begin{document} 

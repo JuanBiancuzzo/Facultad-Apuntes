@@ -24,20 +24,21 @@ capitulo: 3
 \begin{document} 
 	\begin{circuitikz}[scale=1.2, transform shape, thick]		
 		%%% Amplificador
-		\draw (0, 4) node[above=2pt] {$V_{CC}$} 
+		\draw (0, 5) node[above=2pt] {$V_{CC}$} 
 				node (vcc) {}
 			to[R, l^=$R_C$, *-] ++(0, -1.5)
-				node[flowarrow, anchor=west, rotate=-90] (vc) 
-					{\rotatebox{90}{$i_C$}}
-			to[short] ++(0, -0.1)
+				node (vc) {}
+			to[short] ++ (-0.65, 0)
 				node[npn, xscale=1.2, yscale=-1.5, rotate=-90, anchor=C] (npn) {};
 		
-		\draw ($ (npn.B) + (0.3, 0.2) $) to[open, v^=$v_{CE}$] 
-			($ (vc.west) + (0.3, -0.5) $);
-		\draw (npn.B) to[short] ++(0, -0.5) node[ground] {}
-			to[open, v_=$v_{BE}$] (npn.E);
+		\draw (npn.B) to[short] ++(0, -0.5) 
+			node[ground] (gr) {};
+		
+		\draw (npn.E) to[open, v_=$v_{BE}$] (gr);
+		\draw ($ (npn.E) + (-0.1, 0.2) $) to[open, v^=$v_{CE}$] 
+			($ (npn.C) + (0.1, 0.2) $);
 
-		\draw ($ (vcc) + (-2.5, -0.5) $) node[above=2pt] {$V_{BB}$} 
+		\draw ($ (vcc) + (-3.15, 0) $) node[above=2pt] {$V_{BB}$} 
 				node (vbb) {}
 			to[R, l^=$R_B$, *-] ($ (npn.E -| 0, 0) + (vbb |- 0, 0) $)
 				node (ve) {}
@@ -53,7 +54,7 @@ capitulo: 3
 			to[open, v^=$v_{in}$] (vin);
 
 		%%% Carga
-		\draw (vc.west) to[C, l_=$C$, *-o] ++(2.5, 0)
+		\draw (vc) to[C, l_=$C$, *-o] ++(2.5, 0)
 				node (vout) {}
 			to[short] ++(1, 0)
 			to[R, l_=$R_L$] ++(0, -2)
