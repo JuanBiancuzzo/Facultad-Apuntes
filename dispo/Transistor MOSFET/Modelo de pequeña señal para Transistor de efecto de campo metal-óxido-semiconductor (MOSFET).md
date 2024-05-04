@@ -29,12 +29,59 @@ Por lo que el límite del modelo de pequeña señal depende de la polarización.
 ---
 Corriente $i_d$ de pequeña señal $$ i_d \simeq g_m ~ v_{gs} + g_0 ~ v_{ds} + g_{mb} ~ v_{bs} $$
 Definimos: 
-* $g_m \equiv$ [[Transconductancia para transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|transconductancia]] $[S]$
-* $g_0 \equiv$ [[Conductancia del drain|Conductancia de salida o conductancia del drain]] $[S]$
-* $g_{mb} \equiv$ [[Transconductancia del backgate|transconductancia del backgate]] $[S]$
+* $g_m \equiv$ [[Transconductancia para transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|transconductancia]] $[S]$ ![[Transconductancia para transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#^f33d60]]
+* $g_0 \equiv$ [[Conductancia del drain|Conductancia de salida o conductancia del drain]] $[S]$ ![[Conductancia del drain#^479383]]
+* $g_{mb} \equiv$ [[Transconductancia del backgate|transconductancia del backgate]] $[S]$ ![[Transconductancia del backgate#^0500ed]]
 
 Dándonos el modelo completo que pequeña señal a baja frecuencia 
-![[Modelo completo del MOSFET para pequeña señal a baja frecuencia.webp]]
+
+```tikz
+\usepackage[
+	europeanvoltages,
+	americancurrents,
+	americanresistors, 
+	americaninductors, 
+	americanports, 
+	americangfsurgearrester
+]{circuitikz} 
+
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\ctikzset{
+	resistors/scale=0.7,
+	capacitors/scale=0.7,
+}
+
+\begin{document} 
+	\begin{circuitikz}[voltage shift=0.5, scale=1.3, transform shape, thick]
+
+		\draw (0, 0) 
+				node (vs) {}
+				node[left=2pt] {$S$}
+			to[short, o-] ++(7, 0)
+			to[R, l_=$r_0$] ++(0, 3)
+				node (vd) {};
+
+		\draw ($ (vd) + (2, 0) $) 
+				node[right=2pt] {$D$}
+			 to[short, i_=$i_d$, o-] ++(-2, 0)
+			 to[short, *-] ++(-2.5, 0)
+				 node (ivbs) {}
+			to[isource, l^=$g_{mb} ~ v_{bs}$, -*] ++(0, -3);
+
+		\draw (ivbs) to[short, *-] ++(-2.5, 0)
+			to[isource, l^=$g_m ~ v_{gs}$, -*] ++(0, -3);
+
+		\draw (vs) to[open, v_=$v_{gs}$, -o] ++(0, 3)
+			node[left=2pt] {$G$};
+		\draw (vs) to[open, v^=$v_{bs}$, -o] ++(0, -3)
+			node[left=2pt] {$B$};
+
+	\end{circuitikz}
+\end{document}
+```
 
 #### [[Modelo|Modelo]] para altas frecuencias
 ---
@@ -49,5 +96,69 @@ Definimos:
 * $C_{db} \equiv$ [[Capacidad de juntura|capacidad de juntura]] Drain-Bulk $= C'j(V_{BD}) ~ A_D$
 
 Dándonos el modelo completo que pequeña señal a alta frecuencia
-![[Modelo completo del MOSFET para pequeña señal a alta frecuencia.webp]]
+
+```tikz
+\usepackage[
+	europeanvoltages,
+	americancurrents,
+	americanresistors, 
+	americaninductors, 
+	americanports, 
+	americangfsurgearrester
+]{circuitikz} 
+
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\ctikzset{
+	resistors/scale=0.7,
+	capacitors/scale=0.7,
+}
+
+\begin{document} 
+	\begin{circuitikz}[voltage shift=0.5, scale=1.1, transform shape, thick]
+
+		\draw (0, 0) 
+				node (vs) {}
+				node[left=2pt] {$S$}
+			to[short, o-] ++(9.5, 0)
+			to[R, l_=$r_0$] ++(0, 3)
+				node (vd) {};
+
+		\draw ($ (vd) + (4.5, 0) $) 
+				node[right=2pt] {$D$}
+			 to[short, i_=$i_d$, o-] ++(-2, 0)
+			 to[short] ++(-2.5, 0)
+			 to[short, *-] ++(-2.5, 0)
+				 node (ivbs) {}
+			to[isource, l^=$g_{mb} ~ v_{bs}$, -*] ++(0, -3);
+
+		\draw (ivbs) to[short, *-] ++(-2.5, 0)
+				node (ivgs) {}
+			to[isource, l^=$g_m ~ v_{gs}$, -*] ++(0, -3);
+
+		\draw (ivgs) to[C, l_=$C_{gd}$, *-] ++(-2.5, 0)
+				node (cgs) {}
+			to[C, l^=$C_{gs}$, -*] ++(0, -3);
+
+		\draw (vs) to[open, v_=$v_{gs}$] ++(0, 3)
+			node (vg) {}
+			node[left=2pt] {$G$};
+		\draw (vg) to[short, o-*] (cgs);
+			
+		\draw (vs) to[open, v^=$v_{bs}$] ++(0, -3)
+			node (vb) {}
+			node[left=2pt] {$B$};
+		
+		\draw (vb) to[short, o-] ++(4.5, 0)
+				node (csb) {}
+			to[C, l_=$C_{sb}$, -*] ++(0, 3);
+		\draw (csb) to[C, l^=$C_{db}$] ++(5, 0)
+			to[short] ++(2.5, 0)
+			to[short, -*] ++(0, 6);
+
+	\end{circuitikz}
+\end{document}
+```
 

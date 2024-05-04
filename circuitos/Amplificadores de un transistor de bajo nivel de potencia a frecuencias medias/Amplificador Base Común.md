@@ -75,9 +75,16 @@ capitulo: 3
 	\end{circuitikz}
 \end{document}
 ```
-
 ^4ae162
 
+$$\begin{array}{r lc : c }
+	 &  && \text{En general} \\
+	A_v &= - g_m ~ (R_C // R_L) < 0 && |A_v| \uparrow\uparrow \\\\
+	A_{vs} &= \frac{R_B // r_\pi}{R_s + R_B // r_\pi} ~ A_v  && |A_{vs}| \uparrow\uparrow \\\\
+	R_i &= (R_{B1} // R_{B2} // r_\pi) && R_i \downarrow\downarrow \\\\
+	R_o &= (R_C // r_{ce}) && R_o \uparrow\uparrow \\\\
+	C_{eq} &=   && \text{Velocidad media}
+\end{array} $$
 $$ \begin{align} \\
 	A_v &=  > 0 \\
 	A_{vs} &= \\

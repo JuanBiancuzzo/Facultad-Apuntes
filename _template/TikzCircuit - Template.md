@@ -1,7 +1,7 @@
 ```tikz
 \usepackage[
 	europeanvoltages,
-	europeancurrents,
+	americancurrents,
 	americanresistors, 
 	americaninductors, 
 	americanports, 
@@ -18,7 +18,7 @@
 }
 
 \begin{document} 
-	\begin{circuitikz}[american, voltage shift=0.5, scale=1.3, transform shape, thick]
+	\begin{circuitikz}[voltage shift=0.5, scale=1.3, transform shape, thick]
 	\end{circuitikz}
 \end{document}
 ```

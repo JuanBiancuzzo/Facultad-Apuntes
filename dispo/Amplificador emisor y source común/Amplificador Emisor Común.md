@@ -82,21 +82,14 @@ Este es un [[Amplificador de tensión|amplificador de tensión]], basado en un [
 
 ^6b9228
 
-$$\begin{align} 
-	 & \text{Con capacitor} ~ C_E && \text{Sin capacitor} ~ C_E \\
-	A_v &=  < 0 \\
-	A_{vs} &= \\
-	R_i &= (R_{B1} // R_{B2} // r_\pi) && = (R_{B1} // R_{B2} // (r_\pi + \beta ~ R_E))  \\
-	R_o &= (R_C // r_{ce}) && =  \\
-	C_{eq} &= \\
-\end{align} \begin{matrix} 
-	\text{En general} \\
-	|A_v| \uparrow\uparrow \\
-	\\
-	R_i \uparrow\uparrow \\
-	R_o \uparrow\uparrow \\
-	\text{Velocidad lento} \\
-\end{matrix}$$
+$$\begin{array}{r lc lc : c }
+	 & \text{Con capacitor} ~ C_E && \text{Sin capacitor} ~ C_E  && \text{En general} \\
+	A_v &= - g_m ~ (R_C // R_L) < 0 && = -\frac{g_m ~ (R_C // R_L)}{g_m ~ R_E + 1} && |A_v| \uparrow\uparrow \\\\
+	A_{vs} &= \frac{R_B // r_\pi}{R_s + R_B // r_\pi} ~ A_v && = \frac{R_B // (r_\pi + R_E)}{R_s + R_B // (r_\pi + R_E)} ~ A_v && |A_{vs}| \uparrow\uparrow \\\\
+	R_i &= (R_{B1} // R_{B2} // r_\pi) && = (R_{B1} // R_{B2} // (r_\pi + \beta ~ R_E)) && R_i \uparrow\uparrow \\\\
+	R_o &= (R_C // r_{ce}) && = (1 + g_m (R_E // r_\pi)) ~ r_{ce} + (R_E // r_\pi) && R_o \uparrow\uparrow \\\\
+	C_{eq} &=   && = && \text{Velocidad lento}
+\end{array} $$
 
 ^daaa29
 
