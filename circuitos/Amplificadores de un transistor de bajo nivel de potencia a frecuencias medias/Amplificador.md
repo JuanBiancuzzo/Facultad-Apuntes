@@ -13,7 +13,7 @@ Se tienen distintas configuraciones de amplificadores como
 ##### Amplificador emisor común
    ![[Amplificador Emisor Común#^6b9228]]  ![[Amplificador Emisor Común#^daaa29]]
 
-##### Amplificador colector común
+##### Amplificador colector común / Seguidor
    ![[Amplificador Colector Común#^5c5e25]]  ![[Amplificador Colector Común#^e8dc2c]]
 
 ##### Amplificador base común

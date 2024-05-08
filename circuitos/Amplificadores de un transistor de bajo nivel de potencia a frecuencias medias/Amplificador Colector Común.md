@@ -81,8 +81,8 @@ capitulo: 3
 
 $$\begin{array}{r lc : c }
 	 &  && \text{En general} \\
-	A_v &= - g_m ~ (R_C // R_L) < 0 && |A_v| \uparrow\uparrow \\\\
-	A_{vs} &= \frac{R_B // r_\pi}{R_s + R_B // r_\pi} ~ A_v  && |A_{vs}| \uparrow\uparrow \\\\
+	A_v &= \frac{g_m ~ (R_C // R_L)}{g_m ~ (R_C // R_L) + 1} > 0 && |A_v| < 1 \\\\
+	A_{vs} &= \frac{R_B // r_\pi}{R_s + R_B // r_\pi} ~ A_v  && |A_{vs}| < 1 \\\\
 	R_i &= (R_{B1} // R_{B2} // r_\pi) && R_i \downarrow\downarrow \\\\
 	R_o &= (R_C // r_{ce}) && R_o \uparrow\uparrow \\\\
 	C_{eq} &=   && \text{Velocidad media}

@@ -5,13 +5,13 @@ capitulo: 4
 ---
 ### Definición
 ---
-La [[Corriente eléctrica|corriente]] $I_C$ e $I_B$ despreciables, se encuentra en "bloqueo". Con $V_{BE} < 0$ y $V_{BC} < 0$
+La [[Corriente eléctrica|corriente]] $I_C$ e $I_B$ despreciables, se encuentra en "bloqueo". 
 
-$$  \begin{align} 
+Con $V_{BE} < 0$ y $V_{BC} < 0$ $$  \begin{align} 
 	I_C &= \frac{I_S}{\beta_R} \\
 	I_B &= -I_S \left( \frac{1}{\beta_R} + \frac{1}{\beta_R} \right) \\
 	I_E &= \frac{I_S}{\beta_F}
-\end{align}  $$
+\end{align}  $$ ^640694
 
 #### [[Modelo de Ebers-Moll]]
 ---

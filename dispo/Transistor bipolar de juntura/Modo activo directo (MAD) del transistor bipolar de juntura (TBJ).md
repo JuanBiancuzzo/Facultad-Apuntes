@@ -5,13 +5,13 @@ capitulo: 4
 ---
 ### Definición
 ---
-La [[Corriente eléctrica|corriente]] de colector se controla a través de $V_{BE}$ y tiene poca dependencia con la tensión del colector. Con $V_{BE} > 0$ y $V_{BC} < 0$
+La [[Corriente eléctrica|corriente]] de colector se controla a través de $V_{BE}$ y tiene poca dependencia con la tensión del colector. 
 
-$$ \begin{align} 
+Con $V_{BE} > 0$ y $V_{BC} < 0$ $$ \begin{align} 
 	I_C &= I_S \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - 1 \right) \\
 	I_B &= \frac{I_S}{\beta_F} ~ \exp \left( \frac{V_{BE}}{V_{th}} \right) \\
 	I_E &= -\frac{I_S}{\beta_F} ~ \exp \left( \frac{V_{BE}}{V_{th}} \right)  \left( \beta_F + 1 \right) - \frac{I_S}{\beta_F}
-\end{align} $$
+\end{align} $$ ^bfa932
 
 #### [[Modelo de Ebers-Moll]]
 ---

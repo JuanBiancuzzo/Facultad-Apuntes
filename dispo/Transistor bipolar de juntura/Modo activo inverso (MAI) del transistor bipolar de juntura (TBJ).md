@@ -5,13 +5,13 @@ capitulo: 4
 ---
 ### Definición
 ---
-La ganancia es pobre, el dispositivo no es útil en esta región y debe evitarse. Con $V_{BE} < 0$ y $V_{BC} > 0$
+La ganancia es pobre, el dispositivo no es útil en esta región y debe evitarse. 
 
-$$  \begin{align} 
+Con $V_{BE} < 0$ y $V_{BC} > 0$ $$  \begin{align} 
 	I_C &= -I_S \exp \left( \frac{V_{BC}}{V_{th}} \right) - \frac{I_S}{\beta_R} \left( \exp \left( \frac{V_{BC}}{V_{th}} \right) - 1 \right) \\
 	I_B &= \frac{I_S}{\beta_R} ~ \left( \exp \left( \frac{V_{BC}}{V_{th}} \right) - 1\right) \\
 	I_E &= I_S ~ \exp \left( \frac{V_{BC}}{V_{th}} \right)
-\end{align}  $$
+\end{align}  $$ ^71eca7
 
 #### [[Modelo de Ebers-Moll]]
 ---
