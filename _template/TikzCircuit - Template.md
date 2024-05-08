@@ -1,6 +1,6 @@
 ```tikz
 \usepackage[
-	europeanvoltages,
+	straightvoltages,
 	americancurrents,
 	americanresistors, 
 	americaninductors, 

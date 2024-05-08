@@ -29,8 +29,13 @@ tags: materia
 * [[circuitos/Dispositivos de control de señal y en conmutación/Dispositivo de control de potencia.md|Dispositivo de control de potencia]]
 * [[circuitos/Dispositivos de control de señal y en conmutación/Análisis de potencias.md|Análisis de potencias]]
 
-##### Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias (13)
+##### Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias (17)
 ---
+* [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Realimentación de un circuito.md|Realimentación de un circuito]]
+* [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Realimentación de un amplificador de corriente.md|Realimentación de un amplificador de corriente]]
+* [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Realimentación de un amplificador de transconductancia.md|Realimentación de un amplificador de transconductancia]]
+* [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Realimentación de un amplificador de transresistencia.md|Realimentación de un amplificador de transresistencia]]
+* [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Realimentación de un amplificador de tensión.md|Realimentación de un amplificador de tensión]]
 * [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Amplificador Gate Común con un JFET.md|Amplificador Gate Común con un JFET]]
 * [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Amplificador Drain Común con un JFET.md|Amplificador Drain Común con un JFET]]
 * [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Amplificador Source Común con un JFET.md|Amplificador Source Común con un JFET]]
@@ -38,7 +43,6 @@ tags: materia
 * [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Amplificador Drain Común con un MOSFET.md|Amplificador Drain Común con un MOSFET]]
 * [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Amplificador Base Común.md|Amplificador Base Común]]
 * [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Amplificador Colector Común.md|Amplificador Colector Común]]
-* [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Retroalimentación de un circuito.md|Retroalimentación de un circuito]]
 * [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Reflexión por relación de tensiones.md|Reflexión por relación de tensiones]]
 * [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Reflexión por relación de corrientes.md|Reflexión por relación de corrientes]]
 * [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Estabilidad del punto de reposo.md|Estabilidad del punto de reposo]]

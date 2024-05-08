@@ -7,7 +7,48 @@ capitulo: 4
 ---
 El [[Transistor bipolar de juntura (TBJ)|TBJ]] es un dispositivo [[Función R-lineal|alineal]] por lo que no cumple el [[Principio de superposición]]. Entonces teniendo el [[Circuito eléctrico|circuito]]
 
-![[Circuito de pequeña señal del transistor bipolar de juntura (TBJ).webp]]
+```tikz
+\usepackage[
+	straightvoltages,
+	americancurrents,
+	americanresistors, 
+	americaninductors, 
+	americanports, 
+	americangfsurgearrester
+]{circuitikz} 
+
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\ctikzset{
+	resistors/scale=0.7,
+	capacitors/scale=0.7,
+}
+
+\begin{document} 
+	\begin{circuitikz}[voltage shift=0.5, scale=1.3, transform shape, thick]
+		\draw (0, 0) node[ground] (gr) {};
+		\draw (0, 0) to[american, V, invert, l^=$V_{BE}$] ++(0, 2)
+			to[sV, l^=$v_{be}$] ++(2, 0)
+			to[short, i^=$I_B + i_b$] ++(1, 0)
+				node[npn, xscale=1.2, yscale=1.5, anchor=B] (npn) {};
+		
+		\draw (npn.E) to[short] ($ (gr -| 0, 0) + (npn.E |- 0, 0) $)
+			node[ground] (gr) {};
+
+		\draw ($ (gr -| 2, 0) + (npn.E |- 0, 0) $) 
+				node[ground] {}
+			to[american, V, invert, l^=$V_{CE}$] ++(0, 2)
+			to[sV, l^=$v_{ce}$] ++(0, 2)
+				node (temp) {}
+			to[short] ($ (temp.center -| 0, 0) + (npn.C |- 0, 0) $)
+			to[short, i^=$I_C + i_c$] (npn.C);
+	
+	\end{circuitikz}
+\end{document}
+```
+
 
 Por lo tanto vamos a aproximarla usando el [[Serie de Taylor#Polinomio de Taylor|polinomio de Taylor]] de primer orden $$
 i_C(V_{BE} + v_{be}, V_{CE} + v_{ce}) \simeq ~ I_C(V_{BE}, V_{CE})
