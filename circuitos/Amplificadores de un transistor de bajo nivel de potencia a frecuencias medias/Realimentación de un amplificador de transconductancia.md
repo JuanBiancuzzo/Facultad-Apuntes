@@ -34,6 +34,7 @@ Este [[Amplificador de transconductancia|amplificador de transconductancia]], al
 		\node (ampli_out_up) at (3, {4 * 2.5 / 5 + 1}) {};
 		\node (ampli_out_down) at (3, {1 * 2.5 / 5 + 1}) {};
 		\node (ampli_center) at (0, {2.5 / 2 + 1}) {};
+		\node (ampli_north) at (0, 3.5) {};
 
 		\draw (-2, -2) rectangle (2, 0);
 		\node (reali_in_up) at (-2, {4 * 2 / 5 - 2}) {};
@@ -41,6 +42,7 @@ Este [[Amplificador de transconductancia|amplificador de transconductancia]], al
 		\node (reali_out_up) at (2, {4 * 2 / 5 - 2}) {};
 		\node (reali_out_down) at (2, {1 * 2 / 5 - 2}) {};
 		\node (reali_center) at (0, {2 / 2 - 2}) {};
+		\node (reali_south) at (0, -2) {};
 
 		\draw (reali_in_down) to[short] ++(-4, 0)
 				node (temp) {}
@@ -71,8 +73,31 @@ Este [[Amplificador de transconductancia|amplificador de transconductancia]], al
 			to[R, v_=$v_0$, l^=$R_L$] (temp |- ampli_out_up)
 			to[short, f_=$i_0$] (ampli_out_up);
 
-		\path (ampli_center) node[scale=1.5] {$G_m = \frac{i_o}{v_i}$};
-		\path (reali_center) node[scale=1.4] {$k = \frac{v_f}{i_o}$};
+		\draw (ampli_in_down) to[short] ++(1, 0)
+				node (temp) {}
+			to[R, l_=$R_i$] (temp |- ampli_in_up)
+			to[short] (ampli_in_up);
+		\draw (ampli_out_down) to[short] ++(-3, 0)
+				node (temp) {}
+			to[american, isource, invert, l_=$G_m i_i$] (temp |- ampli_out_up)
+			to[short] (ampli_out_up);
+		\draw (ampli_out_down) to[short] ++(-1.5, 0)
+				node (temp) {}
+			to[R, l_=$R_o$] (temp |- ampli_out_up)
+			to[short] (ampli_out_up);
+		
+
+		\draw (reali_out_down) to[short] ++(-1, 0) 
+				node (temp) {}
+			to[R, l_=$R_{ri}$] (temp |- reali_out_up)
+			to[short] (reali_out_up);
+		\draw (reali_in_down) to[short] ++(1.5, 0)
+				node (temp) {}
+			to[american, vsource, invert, l_=$kv_o$] (temp |- reali_in_up)
+			to[R, l^=$R_{ro}$] (reali_in_up);
+
+		\path (ampli_north) node[above=1pt, scale=1.3] {$G_m = \frac{i_o}{v_i}$};
+		\path (reali_south) node[below=1pt, scale=1.2] {$k = \frac{v_f}{i_o}$};
 	\end{circuitikz}
 \end{document}
 ```
@@ -85,16 +110,16 @@ Podemos ver la realimentación como $$ \begin{matrix}
 \end{matrix} $$ donde $A_{vo} = \frac{i_o}{v_i}$
 #### Modelo ideal amplificador
 ---
-$r_i \to \infty$
+$R_i \to \infty$
 * Para que toda la corriente $i_i$ pase por la resistencia interna del amplificador
 
- $r_o \to \infty$ 
+ $R_o \to \infty$ 
  * Para que la corriente generada por la fuente no afecte la corriente $i_o$
 
 #### Modelo ideal realimentación
 ---
-$r_i \to 0$
+$R_{ri} \to 0$
 * Para generar baja impedancia al paso de la corriente $i_o$
 
- $r_o \to 0$ 
+ $R_{ro} \to 0$ 
  * Para que no existan caídas de tensión luego del generador

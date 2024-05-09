@@ -34,6 +34,7 @@ Este [[Amplificador de tensión|amplificador de tensión]], al realimentarlo, po
 		\node (ampli_out_up) at (3, {4 * 2.5 / 5 + 1}) {};
 		\node (ampli_out_down) at (3, {1 * 2.5 / 5 + 1}) {};
 		\node (ampli_center) at (0, {2.5 / 2 + 1}) {};
+		\node (ampli_north) at (0, 3.5) {};
 
 		\draw (-2, -2) rectangle (2, 0);
 		\node (reali_in_up) at (-2, {4 * 2 / 5 - 2}) {};
@@ -41,42 +42,57 @@ Este [[Amplificador de tensión|amplificador de tensión]], al realimentarlo, po
 		\node (reali_out_up) at (2, {4 * 2 / 5 - 2}) {};
 		\node (reali_out_down) at (2, {1 * 2 / 5 - 2}) {};
 		\node (reali_center) at (0, {2 / 2 - 2}) {};
+		\node (reali_south) at (0, -2) {};
 
 		\draw (reali_in_down) to[short] ++(-4, 0)
 				node (temp) {}
-			to[sV, l^=$v_s$] ($ (temp |- 0, 0) + (ampli_in_up -| 0, 0) $)
+			to[sV, l^=$v_s$] (temp |- ampli_in_up)
 			to[short, f^=$i_i$] (ampli_in_up);
 			
 		\draw (reali_in_up) to[short] ++(-2, 0)
 				node (temp) {}
-			to[short] ($ (temp |- 0, 0) + (ampli_in_down -| 0, 0) $)
+			to[short] (temp |- ampli_in_down)
 			to[short] (ampli_in_down);
 		
 		\draw ($ (reali_in_down) + (-2, 0) $)
 			to[open, v^=$v_f$] ($ (reali_in_up) + (-2, 0) $);
-		\draw ($ (temp |- 0, 0) + (ampli_in_down -| 0, 0) $)
-			to[open, v^=$v_i$] 
-				($ (temp |- 0, 0) + (ampli_in_up -| 0, 0) $);
+		\draw (temp |- ampli_in_down) 
+			to[open, v^=$v_i$] (temp |- ampli_in_up);
 
 		\draw (ampli_out_down) to[short] ++({4 * (2 / 3)}, 0)
 				node (muestreo_down) {}
 			to[short] ++({4 * (1 / 3)}, 0)
 				node (temp) {}
-			to[R, v_=$v_0$, l^=$R_L$] 
-				($ (temp |- 0, 0) + (ampli_out_up -| 0, 0) $)
+			to[R, v_=$v_0$, l^=$R_L$] (temp |- ampli_out_up)
 			to[short, f_=$i_0$] ++({-4 * (2 / 3)}, 0)
 				node (muestreo_up) {}
 			to[short] ++({-4 * (1 / 3)}, 0);
 
-		\draw (reali_out_down) to[short]
-			($ (muestreo_down |- 0, 0) + (reali_out_down -| 0, 0) $)
+		\draw (reali_out_down) to[short] (muestreo_down |- reali_out_down)
 			to[short, -*] (muestreo_down);
-		\draw (reali_out_up) to[short]
-			($ (muestreo_up |- 0, 0) + (reali_out_up -| 0, 0) $)
+		\draw (reali_out_up) to[short] (muestreo_up |- reali_out_up)
 			to[short, -*] (muestreo_up);
 
-		\path (ampli_center) node[scale=1.5] {$A_v = \frac{v_o}{v_i}$};
-		\path (reali_center) node[scale=1.4] {$k = \frac{v_f}{v_o}$};
+		\draw (ampli_in_down) to[short] ++(1, 0)
+				node (temp) {}
+			to[R, l_=$R_i$] (temp |- ampli_in_up)
+			to[short] (ampli_in_up);
+		\draw (ampli_out_down) to[short] ++(-2, 0)
+				node (temp) {}
+			to[american, vsource, invert, l^=$A_v v_i$] (temp |- ampli_out_up)
+			to[R, l_=$R_0$] (ampli_out_up);
+
+		\draw (reali_out_down) to[short] ++(-1, 0) 
+				node (temp) {}
+			to[R, l_=$R_{ri}$] (temp |- reali_out_up)
+			to[short] (reali_out_up);
+		\draw (reali_in_down) to[short] ++(1.5, 0)
+				node (temp) {}
+			to[american, vsource, invert, l_=$kv_o$] (temp |- reali_in_up)
+			to[R, l^=$R_{ro}$] (reali_in_up);
+
+		\path (ampli_north) node[above=1pt, scale=1.3] {$A_v = \frac{v_o}{v_i}$};
+		\path (reali_south) node[below=1pt, scale=1.2] {$k = \frac{v_f}{v_o}$};
 	\end{circuitikz}
 \end{document}
 ```
@@ -97,8 +113,8 @@ $R_i \to \infty$
 
 #### Modelo ideal realimentación
 ---
-$R_i \to \infty$
+$R_{ri} \to \infty$
 * Para que se pueda medir exactamente toda la tensión $v_o$
 
- $R_o \to 0$ 
+ $R_{ro} \to 0$ 
  * Para que no existan caídas de tensión sobre la resistencia de salida del amplificador
