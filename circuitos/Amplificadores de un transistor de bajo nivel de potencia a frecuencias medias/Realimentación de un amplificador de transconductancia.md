@@ -54,8 +54,8 @@ Este [[Amplificador de transconductancia|amplificador de transconductancia]], al
 			to[short] ($ (temp |- 0, 0) + (ampli_in_down -| 0, 0) $)
 			to[short] (ampli_in_down);
 		
-		\draw ($ (reali_in_down) + (-2, 0) $)
-			to[open, v^=$v_f$] ($ (reali_in_up) + (-2, 0) $);
+		\draw ($ (reali_in_down) + (-1.5, 0) $)
+			to[open, v^=$v_f$] ($ (reali_in_up) + (-1.5, 0) $);
 		\draw (temp |- ampli_in_down)
 			to[open, v^=$v_i$] (temp |- ampli_in_up);
 
