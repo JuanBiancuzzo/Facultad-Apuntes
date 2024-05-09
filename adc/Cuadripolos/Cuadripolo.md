@@ -9,7 +9,56 @@ Las redes de dos puertos resultan útiles en las comunicaciones, los [[Control d
 
 Una vez se conocen sus parámetros se puede tratar a la red como una "caja negra", y es análogo a los [[Teorema de Thevenin|equivalentes de Thevenin]] y [[Teorema de Norton|Norton]].
 
-![[Cuadripolo.webp]]
+```tikz
+\usepackage[
+	straightvoltages,
+	americancurrents,
+	americanresistors, 
+	americaninductors, 
+	americanports, 
+	americangfsurgearrester
+]{circuitikz} 
+
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\ctikzset{
+	resistors/scale=0.7,
+	capacitors/scale=0.7,
+}
+
+\begin{document} 
+
+	\tikzmath {
+		\width = 2;
+		\height = 1.75;
+	}
+
+	\begin{circuitikz}[voltage shift=0.5, scale=1.2, transform shape, ultra thick]
+		\draw (-\height, -\width) rectangle (\height, \width);
+		\node (cuadri_in_up)    at (-\height, {4 * (2 * \width) / 5 - \height}) {};
+		\node (cuadri_in_down)  at (-\height, {1 * (2 * \width) / 5 - \height}) {};
+		\node (cuadri_out_up)   at ( \height, {4 * (2 * \width) / 5 - \height}) {};
+		\node (cuadri_out_down) at ( \height, {1 * (2 * \width) / 5 - \height}) {};
+		\node (cuadri_center)   at ( 0, 0) {};
+
+		\path (cuadri_center) node[align=center, scale=1.5] {Red\\lineal};
+
+		\draw (cuadri_in_down) to[short, f^=$I_1$, -o] ++(-3, 0);
+		\draw (cuadri_out_down) to[short, f_=$I_2$, -o] ++(3, 0);
+
+		\draw ($ (cuadri_in_up) + (-3, 0) $) to[short, f^=$I_1$, o-] ++(3, 0);
+		\draw ($ (cuadri_out_up) + (3, 0) $) to[short, f_=$I_2$, o-] ++(-3, 0);
+
+		\draw ($ (cuadri_in_down) + (-3, 0) $) to[open, v^=$V_1$] 
+			($ (cuadri_in_up) + (-3, 0) $);
+		\draw ($ (cuadri_out_down) + (3, 0) $) to[open, v_=$V_2$] 
+			($ (cuadri_out_up) + (3, 0) $);
+
+	\end{circuitikz}
+\end{document}
+```
 
 Los parámetros de las red, son cantidades que relacionan $V_1$, $V_2$, $I_1$ e $I_2$.
 
@@ -21,28 +70,28 @@ Se tiene $4$ tipos de parámetros
 * Parámetros híbridos y su inverso
 * Parámetros de transmisión y su inverso
 
-##### [[Parámetros de impedancia de un cuadripolo|Parámetros de impedancia]]
+##### Parámetros de impedancia
 ---
 ![[Parámetros de impedancia de un cuadripolo#Definición]]
 
-##### [[Parámetros de admitancia de un cuadripolo|Parámetros de admitancia]]
+##### Parámetros de admitancia
 ---
 ![[Parámetros de admitancia de un cuadripolo#Definición]]
 
-##### [[Parámetros híbridos de un cuadripolo|Parámetros híbridos]]
+##### Parámetros híbridos
 ---
 ![[Parámetros híbridos de un cuadripolo#Definición]]
 
-##### [[Parámetros híbridos de un cuadripolo|Parámetros híbridos inversos]]
+##### Parámetros híbridos inversos
 ---
 ![[Parámetros híbridos de un cuadripolo#Inversos]]
 
 
-##### [[Parámetros de transmisión de un cuadripolo|Parámetros de transmisión]]
+##### Parámetros de transmisión
 ---
 ![[Parámetros de transmisión de un cuadripolo#Definición]]
 
-##### [[Parámetros de transmisión de un cuadripolo|Parámetros de transmisión inversos]]
+##### Parámetros de transmisión inversos
 ---
 ![[Parámetros de transmisión de un cuadripolo#Inversos]]
 
@@ -50,14 +99,14 @@ Se tiene $4$ tipos de parámetros
 ---
 Hay varias posibles conexiones
 
-##### [[Cuadripolo en serie|Conexión en serie]]
+##### Conexión en serie
 ---
 ![[Cuadripolo en serie#Definición]]
 
-##### [[Cuadripolo en paralelo|Conexión en paralelo]]
+##### Conexión en paralelo
 ---
 ![[Cuadripolo en paralelo#Definición]]
 
-##### [[Cuadripolo en cascada|Conexión en cascada]]
+##### Conexión en cascada
 ---
 ![[Cuadripolo en cascada#Definición]]

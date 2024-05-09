@@ -89,16 +89,16 @@ Podemos ver la realimentación como $$ \begin{matrix}
 \end{matrix} $$
 #### Modelo ideal amplificador
 ---
-$r_i \to \infty$
+$R_i \to \infty$
 * Para que toda la [[Corriente eléctrica|corriente]] $i_i$ pase por la resistencia interna del amplificador
 
- $r_o \to 0$ 
+ $R_o \to 0$ 
  * Para que no existan caídas de tensión tal que toda la corriente pase por la resistencia de carga $R_L$
 
 #### Modelo ideal realimentación
 ---
-$r_i \to \infty$
+$R_i \to \infty$
 * Para que se pueda medir exactamente toda la tensión $v_o$
 
- $r_o \to 0$ 
+ $R_o \to 0$ 
  * Para que no existan caídas de tensión sobre la resistencia de salida del amplificador
