@@ -36,20 +36,20 @@ Este [[Amplificador de transconductancia|amplificador de transconductancia]], al
 		\node (ampli_center) at (0, {2.5 / 2 + 1}) {};
 		\node (ampli_north) at (0, 3.5) {};
 
-		\draw (-2, -2) rectangle (2, 0);
-		\node (reali_in_up) at (-2, {4 * 2 / 5 - 2}) {};
-		\node (reali_in_down) at (-2, {1 * 2 / 5 - 2}) {};
-		\node (reali_out_up) at (2, {4 * 2 / 5 - 2}) {};
-		\node (reali_out_down) at (2, {1 * 2 / 5 - 2}) {};
-		\node (reali_center) at (0, {2 / 2 - 2}) {};
-		\node (reali_south) at (0, -2) {};
+		\draw (-2.5, -2) rectangle (2.5, 0);
+		\node (reali_in_up)    at (-2.5, {4 * 2 / 5 - 2}) {};
+		\node (reali_in_down)  at (-2.5, {1 * 2 / 5 - 2}) {};
+		\node (reali_out_up)   at (2.5, {4 * 2 / 5 - 2}) {};
+		\node (reali_out_down) at (2.5, {1 * 2 / 5 - 2}) {};
+		\node (reali_center)   at (0, {2 / 2 - 2}) {};
+		\node (reali_south)    at (0, -2) {};
 
-		\draw (reali_in_down) to[short] ++(-4, 0)
+		\draw (reali_in_down) to[short] ++(-3.5, 0)
 				node (temp) {}
 			to[sV, l^=$v_s$] ($ (temp |- 0, 0) + (ampli_in_up -| 0, 0) $)
 			to[short, f^=$i_i$] (ampli_in_up);
 			
-		\draw (reali_in_up) to[short] ++(-2, 0)
+		\draw (reali_in_up) to[short] ++(-1.5, 0)
 				node (temp) {}
 			to[short] ($ (temp |- 0, 0) + (ampli_in_down -| 0, 0) $)
 			to[short] (ampli_in_down);
@@ -91,9 +91,9 @@ Este [[Amplificador de transconductancia|amplificador de transconductancia]], al
 				node (temp) {}
 			to[R, l_=$R_{ri}$] (temp |- reali_out_up)
 			to[short] (reali_out_up);
-		\draw (reali_in_down) to[short] ++(1.5, 0)
+		\draw (reali_in_down) to[short] ++(2, 0)
 				node (temp) {}
-			to[american, vsource, invert, l_=$kv_o$] (temp |- reali_in_up)
+			to[american, vsource, invert, l_=$ki_o$] (temp |- reali_in_up)
 			to[R, l^=$R_{ro}$] (reali_in_up);
 
 		\path (ampli_north) node[above=1pt, scale=1.3] {$G_m = \frac{i_o}{v_i}$};

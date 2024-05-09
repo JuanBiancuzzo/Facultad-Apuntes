@@ -29,27 +29,27 @@ Este [[Amplificador de tensión|amplificador de tensión]], al realimentarlo, po
 \begin{document} 
 	\begin{circuitikz}[voltage shift=0.5, scale=1.1, transform shape, thick]
 		\draw (-3, 1) rectangle (3, 3.5);
-		\node (ampli_in_up) at (-3, {4 * 2.5 / 5 + 1}) {};
-		\node (ampli_in_down) at (-3, {1 * 2.5 / 5 + 1}) {};
-		\node (ampli_out_up) at (3, {4 * 2.5 / 5 + 1}) {};
+		\node (ampli_in_up)    at (-3, {4 * 2.5 / 5 + 1}) {};
+		\node (ampli_in_down)  at (-3, {1 * 2.5 / 5 + 1}) {};
+		\node (ampli_out_up)   at (3, {4 * 2.5 / 5 + 1}) {};
 		\node (ampli_out_down) at (3, {1 * 2.5 / 5 + 1}) {};
-		\node (ampli_center) at (0, {2.5 / 2 + 1}) {};
-		\node (ampli_north) at (0, 3.5) {};
+		\node (ampli_center)   at (0, {2.5 / 2 + 1}) {};
+		\node (ampli_north)    at (0, 3.5) {};
 
-		\draw (-2, -2) rectangle (2, 0);
-		\node (reali_in_up) at (-2, {4 * 2 / 5 - 2}) {};
-		\node (reali_in_down) at (-2, {1 * 2 / 5 - 2}) {};
-		\node (reali_out_up) at (2, {4 * 2 / 5 - 2}) {};
-		\node (reali_out_down) at (2, {1 * 2 / 5 - 2}) {};
-		\node (reali_center) at (0, {2 / 2 - 2}) {};
-		\node (reali_south) at (0, -2) {};
+		\draw (-2.5, -2) rectangle (2.5, 0);
+		\node (reali_in_up)    at (-2.5, {4 * 2 / 5 - 2}) {};
+		\node (reali_in_down)  at (-2.5, {1 * 2 / 5 - 2}) {};
+		\node (reali_out_up)   at (2.5, {4 * 2 / 5 - 2}) {};
+		\node (reali_out_down) at (2.5, {1 * 2 / 5 - 2}) {};
+		\node (reali_center)   at (0, {2 / 2 - 2}) {};
+		\node (reali_south)    at (0, -2) {};
 
-		\draw (reali_in_down) to[short] ++(-4, 0)
+		\draw (reali_in_down) to[short] ++(-3.5, 0)
 				node (temp) {}
 			to[sV, l^=$v_s$] (temp |- ampli_in_up)
 			to[short, f^=$i_i$] (ampli_in_up);
 			
-		\draw (reali_in_up) to[short] ++(-2, 0)
+		\draw (reali_in_up) to[short] ++(-1.5, 0)
 				node (temp) {}
 			to[short] (temp |- ampli_in_down)
 			to[short] (ampli_in_down);
@@ -86,7 +86,7 @@ Este [[Amplificador de tensión|amplificador de tensión]], al realimentarlo, po
 				node (temp) {}
 			to[R, l_=$R_{ri}$] (temp |- reali_out_up)
 			to[short] (reali_out_up);
-		\draw (reali_in_down) to[short] ++(1.5, 0)
+		\draw (reali_in_down) to[short] ++(2, 0)
 				node (temp) {}
 			to[american, vsource, invert, l_=$kv_o$] (temp |- reali_in_up)
 			to[R, l^=$R_{ro}$] (reali_in_up);

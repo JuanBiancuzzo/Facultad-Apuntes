@@ -36,13 +36,13 @@ Este [[Amplificador de transresistencia|amplificador de transresistencia]], al r
 		\node (ampli_center) at (0, {2.5 / 2 + 1}) {};
 		\node (ampli_north) at (0, 3.5) {};
 
-		\draw (-2, -2) rectangle (2, 0);
-		\node (reali_in_up) at (-2, {4 * 2 / 5 - 2}) {};
-		\node (reali_in_down) at (-2, {1 * 2 / 5 - 2}) {};
-		\node (reali_out_up) at (2, {4 * 2 / 5 - 2}) {};
-		\node (reali_out_down) at (2, {1 * 2 / 5 - 2}) {};
-		\node (reali_center) at (0, {2 / 2 - 2}) {};
-		\node (reali_south) at (0, -2) {};
+		\draw (-2.5, -2) rectangle (2.5, 0);
+		\node (reali_in_up)    at (-2.5, {4 * 2 / 5 - 2}) {};
+		\node (reali_in_down)  at (-2.5, {1 * 2 / 5 - 2}) {};
+		\node (reali_out_up)   at (2.5, {4 * 2 / 5 - 2}) {};
+		\node (reali_out_down) at (2.5, {1 * 2 / 5 - 2}) {};
+		\node (reali_center)   at (0, {2 / 2 - 2}) {};
+		\node (reali_south)    at (0, -2) {};
 
 		\draw (ampli_in_down) to[short] ++({-4 * (2 / 3)}, 0)
 				node (muestreo_down) {}
@@ -90,10 +90,15 @@ Este [[Amplificador de transresistencia|amplificador de transresistencia]], al r
 				node (temp) {}
 			to[R, l_=$R_{ri}$] (temp |- reali_out_up)
 			to[short] (reali_out_up);
-		\draw (reali_in_down) to[short] ++(1.5, 0)
+			
+		\draw (reali_in_down) to[short] ++(2.5, 0)
 				node (temp) {}
-			to[isource, invert, l_=$kv_o$] (temp |- reali_in_up)
-			to[R, l^=$R_{ro}$] (reali_in_up);
+			to[isource, invert, l^=$kv_o$] (temp |- reali_in_up)
+			to[short] (reali_in_up);			
+		\draw (reali_in_down) to[short] ++(1, 0)
+				node (temp) {}
+			to[R, l^=$R_{ro}$] (temp |- reali_in_up)
+			to[short] (reali_in_up);
 
 		\path (ampli_north) node[above=1pt, scale=1.3] {$R_m = \frac{v_o}{i_i}$};
 		\path (reali_south) node[below=1pt, scale=1.2] {$k = \frac{i_f}{v_o}$};
