@@ -1,11 +1,11 @@
 ---
-dia: 2024-03-21
+dia: 2024-05-10
 materia: bdd
-capitulo: 2
+capitulo: 1
 ---
 ### Definición
 ---
-Corresponde a cada fila que compone la [[Tabla SQL|tabla]]. Ahí se componen los datos y los registros. Eventualmente pueden ser nulos en su almacenamiento
+Corresponde al nombre de la columna. Debe ser único y además de tener un tipo de dato asociado
 
 #### Ejemplo
 ---
@@ -19,8 +19,12 @@ Teniendo la tabla
 | 36    | Sofia  | 4           |
 | ...   | ...    | ...         |
 
-Y un posible registro sería
+Y una posible campo sería
 
-| index | nombre |
-| ----- | ------ |
-| 34    | Juan   |
+| nombre |
+| ------ |
+| ...    |
+| Juan   |
+| Lucia  |
+| Sofia  |
+| ...    |

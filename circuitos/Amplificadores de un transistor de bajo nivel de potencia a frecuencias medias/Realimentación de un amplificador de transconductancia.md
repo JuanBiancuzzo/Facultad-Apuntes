@@ -79,9 +79,9 @@ Este [[Amplificador de transconductancia|amplificador de transconductancia]], al
 			to[short] (ampli_in_up);
 		\draw (ampli_out_down) to[short] ++(-3, 0)
 				node (temp) {}
-			to[american, isource, invert, l_=$G_m i_i$] (temp |- ampli_out_up)
+			to[american, isource, invert, l_=$G_m v_i$] (temp |- ampli_out_up)
 			to[short] (ampli_out_up);
-		\draw (ampli_out_down) to[short] ++(-1.5, 0)
+		\draw (ampli_out_down) to[short] ++(-1, 0)
 				node (temp) {}
 			to[R, l_=$R_o$] (temp |- ampli_out_up)
 			to[short] (ampli_out_up);
@@ -96,13 +96,13 @@ Este [[Amplificador de transconductancia|amplificador de transconductancia]], al
 			to[american, vsource, invert, l_=$ki_o$] (temp |- reali_in_up)
 			to[R, l^=$R_{ro}$] (reali_in_up);
 
-		\path (ampli_north) node[above=1pt, scale=1.3] {$G_m = \frac{i_o}{v_i}$};
+		\path (ampli_north) node[above=1pt, scale=1.3] {$G_{mo} = \frac{i_o}{v_i}$};
 		\path (reali_south) node[below=1pt, scale=1.2] {$k = \frac{v_f}{i_o}$};
 	\end{circuitikz}
 \end{document}
 ```
 
-Donde la [[Ganancia|ganancia]] del [[Amplificador|amplificador]] esta dada por $$ A = \frac{v_0}{v_s} $$
+Donde la [[Admitancia|transconductancia]] del [[Amplificador|amplificador]] esta dada por $$ G_m = \frac{i_0}{v_s} $$
 Podemos ver la realimentación como $$ \begin{matrix} 
 	v_s = v_i + v_f \\
 	\implies v_i = v_s - v_f = v_s - k ~ i_0 = v_s - k ~ A_{vo} ~ v_i \\

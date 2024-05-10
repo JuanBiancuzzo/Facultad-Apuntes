@@ -91,18 +91,19 @@ Este [[Amplificador de tensión|amplificador de tensión]], al realimentarlo, po
 			to[american, vsource, invert, l_=$kv_o$] (temp |- reali_in_up)
 			to[R, l^=$R_{ro}$] (reali_in_up);
 
-		\path (ampli_north) node[above=1pt, scale=1.3] {$A_v = \frac{v_o}{v_i}$};
+		\path (ampli_north) node[above=1pt, scale=1.3] {$A_{vo} = \frac{v_o}{v_i}$};
 		\path (reali_south) node[below=1pt, scale=1.2] {$k = \frac{v_f}{v_o}$};
 	\end{circuitikz}
 \end{document}
 ```
 
-Donde la [[Ganancia|ganancia]] del [[Amplificador|amplificador]] esta dada por $$ A = \frac{v_0}{v_s} $$
+Donde la [[Ganancia|ganancia]] del [[Amplificador|amplificador]] esta dada por $$ A_v = \frac{v_0}{v_s} $$
 Podemos ver la realimentación como $$ \begin{matrix} 
 	v_s = v_i + v_f \\
-	\implies v_i = v_s - v_f = v_s - k ~ v_0 = v_s - k ~ A_v ~ v_i \\
-	\boxed{ v_i ~ (1 + k ~ A_v) = v_s } 
-\end{matrix} $$
+	\implies v_i = v_s - v_f = v_s - k ~ v_0 = v_s - k ~ A_{vo} ~ v_i \\
+	v_i ~ (1 + k ~ A_{vo}) = v_s \\
+	\boxed{ A_v = \frac{A_v}{1 + k ~ A_{vo}} = \frac{A_v}{1 + T}} 
+\end{matrix} $$ donde $T$ es la [[Ganancia de lazo|ganancia de lazo]]
 #### Modelo ideal amplificador
 ---
 $R_i \to \infty$

@@ -51,7 +51,7 @@ Este [[Amplificador de transresistencia|amplificador de transresistencia]], al r
 			to[sV, l^=$v_s$] (temp |- ampli_in_up)
 			to[short, f^=$i_s$] ++({4 * (2 / 3)}, 0)
 				node (muestreo_up) {}
-			to[short, f^=$i_0$] ++({4 * (1 / 3)}, 0);
+			to[short, f^=$i_i$] ++({4 * (1 / 3)}, 0);
 
 		\draw (reali_in_down) to[short] (muestreo_down |- reali_in_down)
 			to[short, -*] (muestreo_down);
@@ -100,13 +100,13 @@ Este [[Amplificador de transresistencia|amplificador de transresistencia]], al r
 			to[R, l^=$R_{ro}$] (temp |- reali_in_up)
 			to[short] (reali_in_up);
 
-		\path (ampli_north) node[above=1pt, scale=1.3] {$R_m = \frac{v_o}{i_i}$};
+		\path (ampli_north) node[above=1pt, scale=1.3] {$R_{mo} = \frac{v_o}{i_i}$};
 		\path (reali_south) node[below=1pt, scale=1.2] {$k = \frac{i_f}{v_o}$};
 	\end{circuitikz}
 \end{document}
 ```
 
-Donde la [[Ganancia|ganancia]] del [[Amplificador|amplificador]] esta dada por $$ A = \frac{v_0}{i_s} $$
+Donde la [[Impedancia|transresistencia]] del [[Amplificador|amplificador]] esta dada por $$ R_o = \frac{v_0}{i_s} $$
 Podemos ver la realimentación como $$ \begin{matrix} 
 	i_s = i_i + i_f \\
 	\implies i_i = i_s - i_f = i_s - k ~ v_0 = i_s - k ~ R_m ~ i_i \\

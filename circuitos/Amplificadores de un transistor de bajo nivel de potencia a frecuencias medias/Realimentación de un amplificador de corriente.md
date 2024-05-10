@@ -51,7 +51,7 @@ Este [[Amplificador de corriente|amplificador de corriente]], al realimentarlo, 
 			to[sV, l^=$v_s$] (temp |- ampli_in_up)
 			to[short, f^=$i_s$] ++({4 * (2 / 3)}, 0)
 				node (muestreo_up) {}
-			to[short, f^=$i_0$] ++({4 * (1 / 3)}, 0);
+			to[short, f^=$i_i$] ++({4 * (1 / 3)}, 0);
 
 		\draw (reali_in_down) to[short] (muestreo_down |- reali_in_down)
 			to[short, -*] (muestreo_down);
@@ -104,13 +104,13 @@ Este [[Amplificador de corriente|amplificador de corriente]], al realimentarlo, 
 			to[R, l^=$R_{ro}$] (temp |- reali_in_up)
 			to[short] (reali_in_up);
 
-		\path (ampli_north) node[above=1pt, scale=1.3] {$A_o = \frac{i_o}{i_i}$};
+		\path (ampli_north) node[above=1pt, scale=1.3] {$A_{io} = \frac{i_o}{i_i}$};
 		\path (reali_south) node[below=1pt, scale=1.2] {$k = \frac{i_f}{i_o}$};
 	\end{circuitikz}
 \end{document}
 ```
 
-Donde la [[Ganancia|ganancia]] del [[Amplificador|amplificador]] esta dada por $$ A = \frac{i_0}{i_s} $$
+Donde la [[Ganancia|ganancia]] del [[Amplificador|amplificador]] esta dada por $$ A_i = \frac{i_0}{i_s} $$
 Podemos ver la realimentación como $$ \begin{matrix} 
 	i_s = i_i + i_f \\
 	\implies i_i = i_s - i_f = i_s - k ~ i_0 = i_s - k ~ A_o ~ i_i \\
