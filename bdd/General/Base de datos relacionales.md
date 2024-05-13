@@ -5,15 +5,15 @@ capitulo: 1
 ---
 ### Definición
 ---
-Las [[Base de datos|base de datos]] relacionales, son tablas con columnas (atributos), tiene claves primarias y claves foráneas
+Las [[Base de datos|base de datos]] relacionales, son [[Tabla SQL|tablas]] con [[Campo SQL|columnas (atributos)]], tiene claves primarias y claves foráneas
 
 #### Claves primarias
 ---
-Las claves primarias identifican las distintas filas (instancias) en una tabla
+![[Clave primaria#Definición]]
 
 #### Claves foráneas
 ---
-Las claves foráneas referencian a claves primarias de otras tablas y son empleadas para implementar las relaciones (o asociaciones)
+![[Clave foránea#Definición]]
 
 #### Características
 ---

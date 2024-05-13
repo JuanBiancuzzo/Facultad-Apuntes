@@ -5,7 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-Esta [[Sentencia SQL|sentencia]] se usa para seleccionar información única, es decir, que no se repita la información, de una [[Base de datos|base de datos]] 
+Esta [[Sentencia de SQL|sentencia]] se usa para seleccionar información única, es decir, que no se repita la información, de una [[Base de datos|base de datos]] 
 
 En una [[Tabla SQL|tabla]], las columnas en general tienen valores duplicados y a veces se necesita obtener solo los valores distintos 
 

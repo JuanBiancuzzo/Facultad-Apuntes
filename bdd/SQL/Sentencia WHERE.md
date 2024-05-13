@@ -5,7 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-Esta [[Sentencia SQL|sentencia]] se usa para filtrar [[Registro SQL|registro SQL]] a partir de una condición
+Esta [[Sentencia de SQL|sentencia]] se usa para filtrar [[Registro SQL|registro SQL]] a partir de una condición
 
 #### Sintaxis
 ---

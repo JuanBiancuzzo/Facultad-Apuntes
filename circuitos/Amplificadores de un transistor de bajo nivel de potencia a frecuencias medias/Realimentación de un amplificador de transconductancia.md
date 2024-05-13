@@ -105,9 +105,9 @@ Este [[Amplificador de transconductancia|amplificador de transconductancia]], al
 Donde la [[Admitancia|transconductancia]] del [[Amplificador|amplificador]] esta dada por $$ G_m = \frac{i_0}{v_s} $$
 Podemos ver la realimentación como $$ \begin{matrix} 
 	v_s = v_i + v_f \\
-	\implies v_i = v_s - v_f = v_s - k ~ i_0 = v_s - k ~ A_{vo} ~ v_i \\
-	\boxed{ v_i ~ (1 + k ~ A_{vo}) = v_s } 
-\end{matrix} $$ donde $A_{vo} = \frac{i_o}{v_i}$
+	\implies v_i = v_s - v_f = v_s - k ~ i_0 = v_s - k ~ G_{mo} ~ v_i \\
+	\boxed{ v_i ~ (1 + k ~ G_{mo}) = v_s } 
+\end{matrix} $$
 #### Modelo ideal amplificador
 ---
 $R_i \to \infty$

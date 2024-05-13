@@ -5,7 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-Esta [[Sentencia SQL|sentencia]] se usa para limitar a un número especifico de [[Registro SQL|registros]] que se devuelven. Se suele usar en conjunción con la [[Sentencia SELECT|sentencia SELECT]]
+Esta [[Sentencia de SQL|sentencia]] se usa para limitar a un número especifico de [[Registro SQL|registros]] que se devuelven. Se suele usar en conjunción con la [[Sentencia SELECT|sentencia SELECT]]
 
 #### Sintaxis
 ---

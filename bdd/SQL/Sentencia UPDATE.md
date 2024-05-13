@@ -5,7 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-Esta [[Sentencia SQL|sentencia]] se usa para modificar un [[Registro SQL|registro]] de una [[Tabla SQL|tabla]]
+Esta [[Sentencia de SQL|sentencia]] se usa para modificar un [[Registro SQL|registro]] de una [[Tabla SQL|tabla]]
 
 ### Sintaxis
 ---

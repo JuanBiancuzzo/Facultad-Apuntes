@@ -5,7 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-Esta [[Sentencia SQL|sentencia]] se usa para seleccionar información de una [[Base de datos|base de datos]]
+Esta [[Sentencia de SQL|sentencia]] se usa para seleccionar información de una [[Base de datos|base de datos]]
 
 #### Sintaxis
 ---

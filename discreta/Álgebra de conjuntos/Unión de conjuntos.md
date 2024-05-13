@@ -32,3 +32,6 @@ Donde visualmente se puede entender como
 	\end{tikzpicture}
 \end{document}
 ```
+
+^b372ff
+

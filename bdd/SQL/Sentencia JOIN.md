@@ -5,7 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-Esta [[Sentencia SQL|sentencia]] se usa para combinar filas de dos o más [[Tabla SQL|tablas]] basado en la relación entre las columnas de ambas
+Esta [[Sentencia de SQL|sentencia]] se usa para combinar filas de dos o más [[Tabla SQL|tablas]] basado en la relación entre las columnas de ambas
 
 #### Uniones
 ---
@@ -15,7 +15,7 @@ Tenemos 4 formas de como unirlos
 ---
 `(INNER) JOIN` devuelve los [[Registro SQL|registros]] que tienen el mismo valor en ambas [[Tabla SQL|tablas]]
 
-![[Intersección de conjuntos#Representación gráfica]]
+![[Intersección de conjuntos#^184e9c]]
 
 
 ```SQL
@@ -31,7 +31,7 @@ Donde `JOIN` y `INNER JOIN` devuelven lo mismo.
 ---
 `LEFT (OUTER) JOIN` devuelve todos los registros de la tabla izquierda y los registros que tengan el mismo valor de la tabla derecha
 
-![[Unión izquierda de conjuntos#Representación gráfica]]
+![[Unión izquierda de conjuntos#^a436b3]]
 
 ```SQL
 SELECT nombre_columna(s)
@@ -46,7 +46,7 @@ En caso de que falten datos, se agrega [[NULL|NULL]]
 ---
 `RIGHT (OUTER) JOIN` devuelve todos los registros de la tabla derecha y los registros que tengan el mismo valor de la tabla izquierda
 
-![[Unión derecha de conjuntos#Representación gráfica]]
+![[Unión derecha de conjuntos#^1974bd]]
 
 ```SQL
 SELECT nombre_columna(s)
@@ -61,7 +61,7 @@ En caso de que falten datos, se agrega [[NULL|NULL]]
 ---
 `FULL (OUTER) JOIN` devuelve todos los registros de la tabla izquierda y derecha
 
-![[Unión de conjuntos#Representación gráfica]]
+![[Unión de conjuntos#^b372ff]]
 
 ```SQL
 SELECT nombre_columna(s)

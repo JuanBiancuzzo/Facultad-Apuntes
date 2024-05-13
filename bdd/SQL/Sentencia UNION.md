@@ -5,7 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-Esta [[Sentencia SQL|sentencia]] se usa para combinar dos o más resultados de una sentencia [[Sentencia SELECT|SELECT]]
+Esta [[Sentencia de SQL|sentencia]] se usa para combinar dos o más resultados de una sentencia [[Sentencia SELECT|SELECT]]
 * Todos estos resultados de SELECT tiene que tener la misma cantidad de columnas
 * Las columnas tienen que tener tipos de datos similares
 * Las columnas tienen que tener el mismo orden

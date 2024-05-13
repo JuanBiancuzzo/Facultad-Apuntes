@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-
+Son base de datos no distribuidas. Tienen distintos nodos, que se conectan entre sí y se actualizan. Guardan datos no estructurados (a diferencia de las [[Base de datos relacionales|base de datos relacionales]]), como archivos o imagenes
 
 #### Características
 ---

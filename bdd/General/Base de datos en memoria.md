@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-
+Son sistemas de gestión de base de datos que almacenan y manipulan datos en [[Random Access Memory (RAM)|RAM]] en lugar de disco físico, lo cual lo hace más rápido pero impone una limitación en el tamaño de la base de datos
 
 #### Características
 ---

@@ -113,8 +113,8 @@ Este [[Amplificador de corriente|amplificador de corriente]], al realimentarlo, 
 Donde la [[Ganancia|ganancia]] del [[Amplificador|amplificador]] esta dada por $$ A_i = \frac{i_0}{i_s} $$
 Podemos ver la realimentación como $$ \begin{matrix} 
 	i_s = i_i + i_f \\
-	\implies i_i = i_s - i_f = i_s - k ~ i_0 = i_s - k ~ A_o ~ i_i \\
-	\boxed{ i_i ~ (1 + k ~ R_m) = i_s } 
+	\implies i_i = i_s - i_f = i_s - k ~ i_0 = i_s - k ~ A_{io} ~ i_i \\
+	\boxed{ i_i ~ (1 + k ~ A_{io}) = i_s } 
 \end{matrix} $$
 
 #### Modelo ideal amplificador

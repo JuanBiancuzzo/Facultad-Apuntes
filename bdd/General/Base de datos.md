@@ -10,12 +10,12 @@ Una base de datos es una colección ordenada de [[Dato|datos]] administrada por 
 #### Tipos de base de datos
 ---
 Tenemos lo siguientes tipos de base de datos
-* [[Base de datos relacionales|Base de datos relacionales]]
-* [[Base de datos NoSQL|Base de datos NoSQL]]
-* [[Base de datos con series de tiempo|Base de datos con series de tiempo]]
-* [[Base de datos NewSQL|Base de datos NewSQL]]
-* [[Base de datos en memoria|Base de datos en memoria]]
-* [[Base de datos distribuidos|Base de datos distribuidos]]
+* [[Base de datos relacionales|Base de datos relacionales]] ![[Base de datos relacionales#Características]]
+* [[Base de datos NoSQL|Base de datos NoSQL]] ![[Base de datos NoSQL#Características]]
+* [[Base de datos con series de tiempo|Base de datos con series de tiempo]] ![[Base de datos con series de tiempo#Características]]
+* [[Base de datos NewSQL|Base de datos NewSQL]] ![[Base de datos NewSQL#Características]]
+* [[Base de datos en memoria|Base de datos en memoria]] ![[Base de datos en memoria#Características]]
+* [[Base de datos distribuidos|Base de datos distribuidos]] ![[Base de datos distribuidos#Características]]
 
 #### Transformación del [[Modelado de dominio|modelo de dominio]] a la base de datos
 ---
