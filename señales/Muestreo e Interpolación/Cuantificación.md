@@ -197,6 +197,9 @@ Generalmente el número de niveles de cuantificación es potencia de dos. Es dec
 * [[Complemento a la base|Complemento a dos]]
 * [[Representación de enteros exceso n|Offset binario]]
 
+
+#### Calculo de error
+---
 Notemos que el $\Delta$ que estuvimos usando se calcula como $$ \Delta = \frac{2 X_M}{2^{B + 1}} = \frac{X_M}{2^B} $$
 Que introduce un [[Error de truncamiento|error de truncamiento]] $e(n)$ al cuantizador dado por $$ - \frac{\Delta}{2} < e(n) \le \frac{\Delta}{2} $$
 Si $x(n)$ queda fuera de este intervalo, el cuantizador truncará la salida y el error es mucho mayor
@@ -204,4 +207,20 @@ Si $x(n)$ queda fuera de este intervalo, el cuantizador truncará la salida y el
 Lamentablemente $e(n)$ no será conocido siempre. Por esta  razón, nos interesará hacer un análisis de los errores introducidos por el cuantizador. Como en general, no es posible saber con qué tipos de entradas un cuantizador va a ser usado sería conveniente que 
 * El análisis debería ser válido para un gran número de señales
 * Debe ser independiente, en la medida de lo posible, de las características de las señales $x(n)$ a la entrada del cuantizador
+
+Una medida de la degradación que el ruido introduce en la señal de interés es la relación señal-ruido (SNR) $$ SNR = 10 ~ \log_{10}\left( \frac{\sigma_x^2}{\sigma_e^2} \right) $$ donde $\sigma_x^2$ y $\sigma_e^2$ son la [[Varianza|varianza]] de la señal $x(n)$ y del error, respectivamente, con $$ \begin{align} 
+	\sigma_e^2 &= \int_{-\frac{\Delta}{2}}^{\frac{\Delta}{2}} e^2 p_e(e) ~ de \\
+	&= \frac{1}{\Delta} \int_{-\frac{\Delta}{2}}^{\frac{\Delta}{2}} e^2 ~ de \\
+	&= \frac{\Delta^2}{12} \\
+	&= \frac{X_M^2}{12 ~ 2^{2B}}
+\end{align} $$
+Por lo tanto, reemplazando $$ \begin{align} 
+	SNR &= 10 ~ \log_{10}\left( \sigma_x^2 \frac{12 ~ 2^{2B}}{X_M^2} \right) \\
+	&= 10 \log_{10} (12) + 20 B \log_{10} (2) - 20 \log_{10} \left( \frac{X_M}{\sigma_x} \right) (dB)
+\end{align} $$
+Observamos lo siguiente
+* Por cada bit extra que nuestro conversor puede entregar tenemos que la SNR aumenta $6$ dB
+* Cuanto más pequeña es $\sigma_x$ con respecto al rango dinámico del conversor $X_M$ mayor es la penalidad en SNR que debemos pagar
+* Es importante tener una fórmula para el término $20 \log_{10} \left( \frac{X_M}{\sigma_x} \right)$ que nos permita en forma general evaluar el número de bit necesarios para una determinada SNR deseada. En general se asume que la señal $x(n)$ tiene una amplitud que se distribuye en forma [[Distribución Normal|gaussiana]]. La [[Probabilidad|probabilidad]] de que la amplitud de la señal supere el valor de $3\sigma_x$ es menor al $0.3~\%$. Entonces podemos acondicionar la señal analógica de forma tal que $\sigma
+Para calcular el valor verdadero de la SNR vamos a usar la siguiente expresión $$ SNR = \frac{\displaystyle\sum_{n = 0}^{N - 1} x^2(n) }{\displaystyle\sum_{n = 0}^{N - 1} e^2(n) } $$
 
