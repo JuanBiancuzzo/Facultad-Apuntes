@@ -92,8 +92,8 @@ Las [[Capacitancia|capacitancias]] parásitas del [[Transistor de efecto de camp
 Definimos:
 * $C_{gs} \equiv$ [[Capacidad de Gate contra canal de inversión|capacitancia de Gate contra canal de inversión]] + [[Capacidad de overlap|capacitancia de overlap]]
 * $C_{gd} \equiv$ [[Capacidad de overlap|capacitancia de overlap]]
-* $C_{sb} \equiv$ [[Capacidad de juntura|capacidad de juntura]] Source-Bulk $= C'j(V_{BS}) ~ A_S$
-* $C_{db} \equiv$ [[Capacidad de juntura|capacidad de juntura]] Drain-Bulk $= C'j(V_{BD}) ~ A_D$
+* $C_{sb} \equiv$ [[Capacidad de juntura|capacidad de juntura Source-Bulk]] $= C'j(V_{BS}) ~ A_S$
+* $C_{db} \equiv$ [[Capacidad de juntura|capacidad de juntura Drain-Bulk]] $= C'j(V_{BD}) ~ A_D$
 
 Dándonos el modelo completo que pequeña señal a alta frecuencia
 

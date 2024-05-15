@@ -8,8 +8,8 @@ capitulo: 5
 El [[Muestreo periódico|muestreo]] de [[Señal#^02aea6|señales de tiempo discreto]] obedece a los mismo principios que las [[Señal#^016a35|señales de tiempo continuo]] y las ideas de fondo son básicamente las mismas
 
 Dada una señal de tiempo discreto $x(n)$ consideramos la siguiente señal $$ x_p(n) = \begin{cases} 
-	x(n), & \text{si} ~ n ~ \text{es múltiplo de} ~ N \\
-	0, & \text{en otro caso}
+	x(n) &~~~ \text{si} ~ n ~ \text{es múltiplo de} ~ N \\
+	0 &~~~ \text{en otro caso}
 \end{cases} $$
 ```tikz
 \usetikzlibrary{math}
@@ -17,11 +17,10 @@ Dada una señal de tiempo discreto $x(n)$ consideramos la siguiente señal $$ x_
 
 \begin{document} 
 	\tikzmath {
-		\M = 4;
-		\points = \M * 4;
-		\sep = 0.5;
-		\y1 = 0;
-		\y2 = \y1 - 3;
+		\M = 5;
+		\multi = 4;
+		\points = \M * \multi;
+		\sep = 0.4;
 
 		\altura = 1.75;
 	}
@@ -32,23 +31,43 @@ Dada una señal de tiempo discreto $x(n)$ consideramos la siguiente señal $$ x_
 			);
 		},
 	]
-		\draw[->] ({-\sep * 2}, \y1) -- ++({(\points + 4) * \sep}, 0)
+		\tikzmath { \y = 0; }
+		
+		\draw[->] ({-\sep * 2}, \y) -- ++({(\points + 4) * \sep}, 0)
 			node[below=2pt] {$n$};
+		\draw[->] (-\sep, {\y - \sep}) -- ++(0, {\altura + 2 * \sep})
+			node[left=2pt, scale = 0.7] {$x(n)$};
 
-		\draw[<->] (0, {\y1 - 0.25}) -- ++({(\M - 1) * \sep}, 0)
+		\draw[<->] (0, {\y - 0.25}) -- ++({(\M - 1) * \sep}, 0)
 			node[midway, below=2pt] {$N$};
 
 		\foreach \x in {0, ..., \points} {
-			\draw ({\x * \sep}, \y1) -- ++(0, {senial(\x)});
-			\fill ({\x * \sep}, {senial(\x) + \y1}) circle (0.075);
+			\draw ({\x * \sep}, \y) -- ++(0, {senial(\x)});
+			\fill ({\x * \sep}, {senial(\x) + \y}) circle (0.075);
 		}
 
-		\draw[->] ({-\sep * 2}, \y2) -- ++({(\points + 4) * \sep}, 0)
+		\tikzmath { \y = -3; }
+
+		\draw[->] ({-\sep * 2}, \y) -- ++({(\points + 4) * \sep}, 0)
 			node[below=2pt] {$n$};
+		\draw[->] (-\sep, {\y - \sep}) -- ++(0, {\altura + 2 * \sep})
+			node[left=2pt, scale = 0.7] {$x_p(n)$};
 
 		\foreach \x in {0, \M, ..., \points} {
-			\draw ({\x * \sep}, \y2) -- ++(0, {senial(\x)});
-			\fill ({\x * \sep}, {senial(\x) + \y2}) circle (0.075);
+			\draw[red] ({\x * \sep}, \y) -- ++(0, {senial(\x)});
+			\fill ({\x * \sep}, {senial(\x) + \y}) circle (0.075);
+		}
+
+		\tikzmath { \y = -6; }
+
+		\draw[->] ({-\sep * 2}, \y) -- ++({(\points + 4) * \sep}, 0)
+			node[below=2pt] {$n$};
+		\draw[->] (-\sep, {\y - \sep}) -- ++(0, {\altura + 2 * \sep})
+			node[left=2pt, scale = 0.7] {$x_d(n)$};
+
+		\foreach \x in {0, ..., \multi} {
+			\draw[blue] (\x * \sep, \y) -- ++(0, {senial(\x * \M)});
+			\fill (\x * \sep, {senial(\x * \M) + \y}) circle (0.075);
 		}
 	\end{tikzpicture}
 \end{document}

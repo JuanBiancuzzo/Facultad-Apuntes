@@ -3,6 +3,7 @@ dia: 2024-04-23
 materia: circuitos
 capitulo: 3
 ---
+
 ### Definición
 ---
 Esta técnica permite simplificar el calculo de [[Circuito eléctrico|circuitos]]

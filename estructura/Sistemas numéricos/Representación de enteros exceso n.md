@@ -15,6 +15,7 @@ Su [[Rango de representación]] es $$ (-2^{n-1} + 1)_{10} \le x \le (2^{n-1})_{1
 
 ### Ejemplo
 ---
+
 | Decimal | Magnitud y signo |
 | ------- | ---------------- |
 | -7      | 0000             |
