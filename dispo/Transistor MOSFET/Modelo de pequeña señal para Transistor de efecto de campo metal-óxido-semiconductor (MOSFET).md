@@ -5,7 +5,7 @@ capitulo: 6
 ---
 ### Definición
 ---
-El [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|MOSFET]] es un dispositivo [[Función R-lineal|alineal]] por lo que no cumple el [[Principio de superposición]]. Entonces teniendo el [[Circuito eléctrico|circuito]]
+El [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] es un dispositivo [[Función R-lineal|alineal]] por lo que no cumple el [[Principio de superposición]]. Entonces teniendo el [[Circuito eléctrico|circuito]]
 
 ![[Circuito de pequeña señal del Transistor de efecto de campo metal-óxido-semiconductor (MOSFET).webp]]
 
@@ -85,7 +85,7 @@ Dándonos el modelo completo que pequeña señal a baja frecuencia
 
 #### [[Modelo|Modelo]] para altas frecuencias
 ---
-Las [[Capacitancia|capacitancias]] parásitas del [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|MOSFET]] limitan su respuesta dinámica y en [[Función senoidal#Frecuencia|frecuencia]]. El régimen más importante para aplicaciones analógicas es el de [[Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|saturación]].
+Las [[Capacitancia|capacitancias]] parásitas del [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] limitan su respuesta dinámica y en [[Función senoidal#Frecuencia|frecuencia]]. El régimen más importante para aplicaciones analógicas es el de [[Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|saturación]].
 
 ![[Estructura MOSFET con capacitancias.webp]]
 

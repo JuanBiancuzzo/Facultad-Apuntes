@@ -9,7 +9,7 @@ Dada una [[Estructura Metal-Óxido-Semiconductor (MOS)|Estructura MOS]] [[Estruc
 
 ![[Concentración de portadores en una estructura metal óxido semiconductor en inversión.webp]]
 
-La concentración de [[Electrón|electrones]] en la interfaz $Si$/$SiO_2$ está modulada por $V_{GB} \implies V_{GB} \uparrow \implies n(0) \uparrow \implies |Q'_n| \uparrow$ . El [[Campo eléctrico]] controla la densidad de la [[Carga eléctrica|carga]] móvil. Esta es la esencia del [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|MOSFET]].
+La concentración de [[Electrón|electrones]] en la interfaz $Si$/$SiO_2$ está modulada por $V_{GB} \implies V_{GB} \uparrow \implies n(0) \uparrow \implies |Q'_n| \uparrow$ . El [[Campo eléctrico]] controla la densidad de la [[Carga eléctrica|carga]] móvil. Esta es la esencia del [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]].
 
 #### Relación carga ($Q'_n$) vs. Tensión de control ($V_{GB}$)
 ---

@@ -70,12 +70,12 @@ tags:
 
 ##### Transistor bipolar de juntura (18)
 ---
+* [[dispo/Transistor bipolar de juntura/Modo activo inverso del TBJ.md|Modo activo inverso del TBJ]]
+* [[dispo/Transistor bipolar de juntura/Modo activo directo del TBJ.md|Modo activo directo del TBJ]]
+* [[dispo/Transistor bipolar de juntura/Transistor bipolar de juntura.md|Transistor bipolar de juntura]]
 * [[dispo/Transistor bipolar de juntura/Transistor.md|Transistor]]
-* [[dispo/Transistor bipolar de juntura/Transistor bipolar de juntura (TBJ).md|Transistor bipolar de juntura (TBJ)]]
-* [[dispo/Transistor bipolar de juntura/Modo activo inverso (MAI) del transistor bipolar de juntura (TBJ).md|Modo activo inverso (MAI) del transistor bipolar de juntura (TBJ)]]
 * [[dispo/Transistor bipolar de juntura/Transconductancia para transistor bipolar de juntura (TBJ).md|Transconductancia para transistor bipolar de juntura (TBJ)]]
 * [[dispo/Transistor bipolar de juntura/Saturación del transistor bipolar de juntura (TBJ).md|Saturación del transistor bipolar de juntura (TBJ)]]
-* [[dispo/Transistor bipolar de juntura/Modo activo directo (MAD) del transistor bipolar de juntura (TBJ).md|Modo activo directo (MAD) del transistor bipolar de juntura (TBJ)]]
 * [[dispo/Transistor bipolar de juntura/Modelo de pequeña señal del transistor bipolar de juntura (TBJ).md|Modelo de pequeña señal del transistor bipolar de juntura (TBJ)]]
 * [[dispo/Transistor bipolar de juntura/Ganancia de corriente en modo activo directo (MAD).md|Ganancia de corriente en modo activo directo (MAD)]]
 * [[dispo/Transistor bipolar de juntura/Ganancia de corriente en modo activo inverso (MAI).md|Ganancia de corriente en modo activo inverso (MAI)]]
@@ -104,9 +104,9 @@ tags:
 
 ##### Transistor MOSFET (11)
 ---
+* [[dispo/Transistor MOSFET/Transistor de efecto de campo metal-óxido-semiconductor.md|Transistor de efecto de campo metal-óxido-semiconductor]]
 * [[dispo/Transistor MOSFET/Triodo del transistor de efecto de campo metal-óxido-semiconductor (MOSFET).md|Triodo del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)]]
 * [[dispo/Transistor MOSFET/Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET).md|Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)]]
-* [[dispo/Transistor MOSFET/Transistor de efecto de campo metal-óxido-semiconductor (MOSFET).md|Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)]]
 * [[dispo/Transistor MOSFET/Transconductancia para transistor de efecto de campo metal-óxido-semiconductor (MOSFET).md|Transconductancia para transistor de efecto de campo metal-óxido-semiconductor (MOSFET)]]
 * [[dispo/Transistor MOSFET/Transconductancia del backgate.md|Transconductancia del backgate]]
 * [[dispo/Transistor MOSFET/Modelo de pequeña señal para Transistor de efecto de campo metal-óxido-semiconductor (MOSFET).md|Modelo de pequeña señal para Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)]]

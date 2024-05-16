@@ -69,9 +69,13 @@ tags: materia
 * [[señales/Muestreo e Interpolación/Decimación en tiempo discreto.md|Decimación en tiempo discreto]]
 * [[señales/Muestreo e Interpolación/Conversor Analógico-Digital.md|Conversor Analógico-Digital]]
 
-##### Transformada discreta de Fourier (1)
+##### Transformada discreta de Fourier (5)
 ---
-* [[señales/Transformada discreta de Fourier/Transformada Discreta de Fourier (DFT).md|Transformada Discreta de Fourier (DFT)]]
+* [[señales/Transformada discreta de Fourier/Transformación Inversa Discreta de Fourier.md|Transformación Inversa Discreta de Fourier]]
+* [[señales/Transformada discreta de Fourier/Convolución circular.md|Convolución circular]]
+* [[señales/Transformada discreta de Fourier/Transformada Discreta de Fourier.md|Transformada Discreta de Fourier]]
+* [[señales/Transformada discreta de Fourier/Fast Fourier Transform.md|Fast Fourier Transform]]
+* [[señales/Transformada discreta de Fourier/Convolución periódica.md|Convolución periódica]]
 
 ##### Transformadas de Laplace y Z (1)
 ---

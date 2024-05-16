@@ -5,7 +5,7 @@ capitulo: 7
 ---
 ### Definición
 ---
-Consideremos el siguiente [[Amplificador de tensión|amplificador]] implementado con un [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|MOSFET]]  [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Canal-N|canal N]]
+Consideremos el siguiente [[Amplificador de tensión|amplificador]] implementado con un [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]]  [[Transistor de efecto de campo metal-óxido-semiconductor#Canal-N|canal N]]
 
 ```tikz
 \usetikzlibrary{math}
@@ -143,7 +143,7 @@ Consecuencia de un elevado valor de $R_D$:
 
 #### Máxima señal sin distorsión
 ---
-La distorsión ocurre cuando el [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|transistor]] no está trabajando en el [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Regímenes de operación|régimen]] que corresponde. 
+La distorsión ocurre cuando el [[Transistor de efecto de campo metal-óxido-semiconductor|transistor]] no está trabajando en el [[Transistor de efecto de campo metal-óxido-semiconductor#Regímenes de operación|régimen]] que corresponde. 
 
 La relación de la señal de salida con la señal de entrada no será lineal. 
 

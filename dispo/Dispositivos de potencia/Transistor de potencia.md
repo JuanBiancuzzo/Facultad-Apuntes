@@ -20,8 +20,8 @@ Para evitar la aparición de puntos calientes (hot-spots) se usan diseños inter
 
 #### Principios básicos de funcionamiento
 ---
-* En un [[Transistor bipolar de juntura (TBJ)|TBJ]], $I_C$ se controla con $I_B$
-* En un [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|MOSFET]], $I_D$ se controla con $V_{GS}$
+* En un [[Transistor bipolar de juntura|TBJ]], $I_C$ se controla con $I_B$
+* En un [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]], $I_D$ se controla con $V_{GS}$
 
 Los objetos son: asilar la [[Malla|malla]] de control de la malla de salida, y con una [[Potencia|potencia]] se controlar otra mucho mayor
 
@@ -44,7 +44,7 @@ En el TBJ la [[Corriente eléctrica volumetrica|corriente circula a través del 
 ---
 Es una aproximación de las características 
 
-| Parámetros                                             | [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)\|MOSFET]] | [[Transistor bipolar de juntura (TBJ)\|TBJ]] |
+| Parámetros                                             | [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] | [[Transistor bipolar de juntura|TBJ]] |
 | ------------------------------------------------------ | ---------------------------------------------------------------------------- | -------------------------------------------- |
 | [[Impedancia\|Impedancia]] de entrada                  | Alta $(10^{10} ~ \Omega)$                                                    | Media $(10^{4} ~ \Omega)$                    |
 | [[Ganancia\|Ganancia]] en corriente                    | Alta $(10^{7})$                                                              | Media $(10 ~ \text{a} ~ 100)$                |

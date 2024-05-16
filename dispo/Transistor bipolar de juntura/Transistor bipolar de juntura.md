@@ -2,6 +2,8 @@
 dia: 2023-09-25
 materia: dispo
 capitulo: 4
+aliases:
+  - TBJ
 ---
 ### Definición
 ---
@@ -28,7 +30,7 @@ Con una estructura
 ---
 Independientemente de si el TBJ es NPN o PNP, tiene 4 modos de operación. Tomaremos como referencia el NPN, pero se aplica de la misma forma para el PNP
 
-* [[Modo activo directo (MAD) del transistor bipolar de juntura (TBJ)|Modo activo directo (MAD)]] ![[Modo activo directo (MAD) del transistor bipolar de juntura (TBJ)#^bfa932]]
-* [[Modo activo inverso (MAI) del transistor bipolar de juntura (TBJ)|Modo activo inverso (MAI)]] ![[Modo activo inverso (MAI) del transistor bipolar de juntura (TBJ)#^71eca7]]
+* [[Modo activo directo del TBJ|Modo activo directo (MAD)]] ![[Modo activo directo del TBJ#^bfa932]]
+* [[Modo activo inverso del TBJ|Modo activo inverso (MAI)]] ![[Modo activo inverso del TBJ#^71eca7]]
 * [[Corte del transistor bipolar de juntura (TBJ)|Corte]] ![[Corte del transistor bipolar de juntura (TBJ)#^640694]]
 * [[Saturación del transistor bipolar de juntura (TBJ)|Saturación]] ![[Saturación del transistor bipolar de juntura (TBJ)#^7f7ec7]]

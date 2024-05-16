@@ -9,7 +9,7 @@ El tiristor o SCR (Silicon Controlled Rectifier) es uno de los principales dispo
 
 ![[Tiristor.webp]]
 
-Donde se puede analizar como dos [[Transistor bipolar de juntura (TBJ)|TBJ]]s
+Donde se puede analizar como dos [[Transistor bipolar de juntura|TBJ]]s
 
 ![[Relación entre un Tiristor y la dos TBJs.webp]]
 

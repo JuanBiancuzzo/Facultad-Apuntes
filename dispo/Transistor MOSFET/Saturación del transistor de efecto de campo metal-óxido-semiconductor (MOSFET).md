@@ -5,7 +5,7 @@ capitulo: 6
 ---
 ### Definición
 ---
-Teniendo un [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|MOSFET]] con $V_{GS} > V_T$, $V_{GD} < V_T$ con $V_{DS} > 0$
+Teniendo un [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] con $V_{GS} > V_T$, $V_{GD} < V_T$ con $V_{DS} > 0$
 
 ```tikz
 \begin{document} 

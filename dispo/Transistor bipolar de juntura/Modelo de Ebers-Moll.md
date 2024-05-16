@@ -5,7 +5,7 @@ capitulo: 4
 ---
 ### Definición
 ---
-Este [[Modelo]] representa el [[Transistor bipolar de juntura (TBJ)|TBJ]] con dos [[Diodo|diodos]] y una [[Fuente de corriente]]
+Este [[Modelo]] representa el [[Transistor bipolar de juntura|TBJ]] con dos [[Diodo|diodos]] y una [[Fuente de corriente]]
 
 ![[Modelo de Ebers-Moll.webp]]
 
@@ -21,4 +21,4 @@ Notemos que las corrientes producidas son las mismas que el transistor en [[Satu
 	
 	I_E &= -\frac{I_S}{\beta_F} \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - 1 \right) - I_S \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - \exp \left( \frac{V_{BC}}{V_{th}} \right) \right)
 \end{align}  $$
-Pero donde podemos simplificar dependiendo del [[Transistor bipolar de juntura (TBJ)#Modos de operación|modo de operación]]
+Pero donde podemos simplificar dependiendo del [[Transistor bipolar de juntura#Modos de operación|modo de operación]]

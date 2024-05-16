@@ -5,7 +5,7 @@ capitulo: 6
 ---
 ### Definición
 ---
-En un [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|MOSFET]], se calcula la $C_{gs,~i}$ $$ Q_G = - (Q_N + Q_B) $$
+En un [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]], se calcula la $C_{gs,~i}$ $$ Q_G = - (Q_N + Q_B) $$
 Dónde $$ Q_N(V_{GS}) = W \int_0^L Q'_n(y) ~ dy = W \int_0^{V_{GS} - V_T} Q'_n(V_c) ~ \frac{dy}{dV_c} ~ dV_c $$
 Siendo $$ \frac{dV_c}{dy} = -E_y(y) = - \frac{I_D}{W \mu_n Q_n(V_c)} $$
 Entonces $$ Q_N(V_{GS}) = - \frac{W^2 \mu_n}{I_D} \int_0^{V_{GS} - V_T} Q'^2_n(V_c) ~ dV_c $$

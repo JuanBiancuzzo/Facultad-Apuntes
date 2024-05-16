@@ -110,7 +110,7 @@ La [[Transferencia del sistema|función de transferencia]]:
 
 ##### Cálculo de $V_M$ 
 ---
-Para calcular $V_M$ consideramos que $I_{Dn} = -I_{Dp}$ y que ambos [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|transistores]] están [[Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|saturados]] $$ \overbrace{
+Para calcular $V_M$ consideramos que $I_{Dn} = -I_{Dp}$ y que ambos [[Transistor de efecto de campo metal-óxido-semiconductor|transistores]] están [[Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|saturados]] $$ \overbrace{
 	k_n ( \underbrace{V_M}_{V{GSn}} - V_{Tn} )^2
 }^{I_{Dn}} = \overbrace{
 	k_p ( \underbrace{V_{DD} - V_M}_{V{SGp}} - V_{Tp} )^2
@@ -150,14 +150,14 @@ En CMOS las cargas siempre son [[Capacitancia|capacitivas]]
 Cuando $V_{IN} = HI \to LO$, entonces $V_{OUT} = LO \to HI$
 * La batería aporta [[Energía|energía]] ($I_{bateria} \ne 0 ~ A$)
 * El [[Capacitor|capacitor]] se carga
-* [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Canal-P|PMOS]] disipa energía ($I_{Dp} \ne 0~A$ y $V_{DSp} \ne 0~V$)
-* [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Canal-N|NMOS]] no disipa energía ($I_{Dn} = 0~A$)
+* [[Transistor de efecto de campo metal-óxido-semiconductor#Canal-P|PMOS]] disipa energía ($I_{Dp} \ne 0~A$ y $V_{DSp} \ne 0~V$)
+* [[Transistor de efecto de campo metal-óxido-semiconductor#Canal-N|NMOS]] no disipa energía ($I_{Dn} = 0~A$)
 
 Cuando $V_{IN} = LO \to HI$, entonces $V_{OUT} = HI \to LO$
 * La batería no aporta [[Energía|energía]] ($I_{bateria} = 0 ~ A$)
 * El capacitor se carga
-* [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Canal-P|PMOS]] no disipa energía ($I_{Dp} = 0~A$)
-* [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Canal-N|NMOS]] disipa energía ($I_{Dn} \ne 0~A$ y $V_{DSn} \ne 0~V$)
+* [[Transistor de efecto de campo metal-óxido-semiconductor#Canal-P|PMOS]] no disipa energía ($I_{Dp} = 0~A$)
+* [[Transistor de efecto de campo metal-óxido-semiconductor#Canal-N|NMOS]] disipa energía ($I_{Dn} \ne 0~A$ y $V_{DSn} \ne 0~V$)
 
 Lo importante es la Energía disipada en cada transición
 

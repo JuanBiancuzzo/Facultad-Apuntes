@@ -31,7 +31,7 @@ Ahora encontrando la caída de potencial en el óxido queda $$ V_{ox}(V_T) = \fr
 
 Finalmente, sumamos las caídas de potencial en toda la estructura $$ V_T + \phi_B = V_B(V_T) + V_{ox}(V_T) = -2\phi_p + \gamma \sqrt{-2 \phi_p} $$
 Siendo $\phi_B = -V_{FV}$ ([[Tensión de Flatband]]), se despeja $V_T$: $$ V_T = V_{FB} - 2\phi_p + \gamma \sqrt{-2 \phi_p} $$
-#### Para un [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|MOSFET]]
+#### Para un [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]]
 ---
 Supongamos $V_{GS} = V_T$. En esta situación el valor de $V_T$ podría despejarse de la igualdad $$ V_T - V_{FB} = - 2\phi_p + \gamma \sqrt{-2 \phi_p} $$ 
 Si aplicamos la tensión $V_{BS}$, la misma afecta la caída del [[Potencial eléctrico|potencial]] en el [[Semiconductor]], dando que $V_B = -2 \phi_p$ pasa a ser $V_B = -2 \phi_p - V_{BS}$

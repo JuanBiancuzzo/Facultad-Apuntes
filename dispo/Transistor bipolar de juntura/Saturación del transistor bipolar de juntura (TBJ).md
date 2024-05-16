@@ -5,7 +5,7 @@ capitulo: 4
 ---
 ### Definición
 ---
-El [[Transistor bipolar de juntura (TBJ)|TBJ]] está en conducción pero la [[Corriente eléctrica|corriente]] depende de $V_{BE}$ y de $V_{BC}$. La base está inundada de [[Portador de carga|portadores]] minoritarios. 
+El [[Transistor bipolar de juntura|TBJ]] está en conducción pero la [[Corriente eléctrica|corriente]] depende de $V_{BE}$ y de $V_{BC}$. La base está inundada de [[Portador de carga|portadores]] minoritarios. 
 
 Con $V_{BE} > 0$ y $V_{BC} > 0$ $$  \begin{align} 
 	I_C &= I_S ~ \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - \exp \left( \frac{V_{BC}}{V_{th}} \right) \right) - \frac{I_S}{\beta_R} \left( \exp \left( \frac{V_{BC}}{V_{th}} \right) - 1 \right) \\
@@ -25,7 +25,7 @@ El dispositivo se comporta como dos [[Diodo|diodos]] en [[Convención de signos 
 ---
 ![[Perfil de portadores minoritarios en saturación.webp]]
 
-El régimen de saturación es la superposición del régimen [[Modo activo directo (MAD) del transistor bipolar de juntura (TBJ)|activo]] y [[Modo activo inverso (MAI) del transistor bipolar de juntura (TBJ)|reverso]] entonces $$ I_C = I_S ~ \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - \exp \left( \frac{V_{BC}}{V_{th}} \right) \right) - \frac{I_S}{\beta_R} \left( \exp \left( \frac{V_{BC}}{V_{th}} \right) - 1 \right) $$ donde $\beta_R$ es la [[Ganancia de corriente en modo activo inverso (MAI)|ganancia en MAI]]
+El régimen de saturación es la superposición del régimen [[Modo activo directo del TBJ|activo]] y [[Modo activo inverso del TBJ|reverso]] entonces $$ I_C = I_S ~ \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - \exp \left( \frac{V_{BC}}{V_{th}} \right) \right) - \frac{I_S}{\beta_R} \left( \exp \left( \frac{V_{BC}}{V_{th}} \right) - 1 \right) $$ donde $\beta_R$ es la [[Ganancia de corriente en modo activo inverso (MAI)|ganancia en MAI]]
 
 $$ I_B = \frac{I_S}{\beta_F} \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - 1 \right) + \frac{I_S}{\beta_R} \left( \exp \left( \frac{V_{BC}}{V_{th}} \right) - 1 \right) $$ donde $\beta_F$ es la [[Ganancia de corriente en modo activo directo (MAD)|ganancia en MAD]]
 
@@ -33,4 +33,4 @@ $$ I_E = -\frac{I_S}{\beta_F} \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) -
 
 $I_C$ y $I_E$ pueden tener cualquier signo, dependiendo de la magnitud relativa de $V_{BE}$, $V_{BC}$, $\beta_F$ y $\beta_R$
 
-En saturación el colector y la base están inundados de [[Portador de carga|portadores]] minoritarios en exceso, esto demora mucho el tiempo para sacar el [[Transistor bipolar de juntura (TBJ)|TBJ]] de saturación
+En saturación el colector y la base están inundados de [[Portador de carga|portadores]] minoritarios en exceso, esto demora mucho el tiempo para sacar el [[Transistor bipolar de juntura|TBJ]] de saturación

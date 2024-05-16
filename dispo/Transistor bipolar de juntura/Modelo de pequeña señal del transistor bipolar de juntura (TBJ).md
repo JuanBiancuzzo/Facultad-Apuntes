@@ -5,7 +5,7 @@ capitulo: 4
 ---
 ### Definición
 ---
-El [[Transistor bipolar de juntura (TBJ)|TBJ]] es un dispositivo [[Función R-lineal|alineal]] por lo que no cumple el [[Principio de superposición]]. Entonces teniendo el [[Circuito eléctrico|circuito]]
+El [[Transistor bipolar de juntura|TBJ]] es un dispositivo [[Función R-lineal|alineal]] por lo que no cumple el [[Principio de superposición]]. Entonces teniendo el [[Circuito eléctrico|circuito]]
 
 ```tikz
 \usepackage[

@@ -32,10 +32,10 @@ $$ i_{out} = \frac{1}{2} \mu ~ C'_{ox} \frac{W}{L} (V_{REF} - V_T)^2 ~ (1 + \lam
 
 Características
 * El valor de la [[Corriente eléctrica|corriente]] de salida es $i_D$ y está definida por una [[Tensión|tensión]] de referencia $V_{REF}$
-* El [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|transistor]] funciona como fuente de corriente en [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET) Saturación|régimen de saturación]] 
+* El [[Transistor de efecto de campo metal-óxido-semiconductor|transistor]] funciona como fuente de corriente en [[Transistor de efecto de campo metal-óxido-semiconductor#Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET) Saturación|régimen de saturación]] 
 * Hay un valor mínimo de tensión de salida para el cual la fuente funciona correctamente $v_{out} = V_{DS(sat)}$
 * Presenta una resistencia de salida $R_{out} = r_0$
-* El [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Canal-N|transistor N-MOS]] es un sumidero de corriente
+* El [[Transistor de efecto de campo metal-óxido-semiconductor#Canal-N|transistor N-MOS]] es un sumidero de corriente
 
 ##### El transistor P-MOS como fuente de corriente
 ---
@@ -44,10 +44,10 @@ Características
 $$ i_{out} = \frac{1}{2} \mu ~ C'_{ox} \frac{W}{L} ~ (V_{REF} - V_{DD} - V_T)^2 ~ (1 - \lambda (v_{out} - V_{DD}) ) $$
 Características
 * El valor de la [[Corriente eléctrica|corriente]] de salida es $i_{out} = - i_D$ y está definido por una tensión de referencia $V_{REF}$
-* El [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|transistor]] funciona como fuente de corriente en [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET) Saturación|régimen de saturación]]
+* El [[Transistor de efecto de campo metal-óxido-semiconductor|transistor]] funciona como fuente de corriente en [[Transistor de efecto de campo metal-óxido-semiconductor#Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET) Saturación|régimen de saturación]]
 * Hay un valor máximo de tensión de salida para el cual la fuente funciona correctamente $v_{out} = V_{DD} + V_{DS (sat)}$
 * Presenta una [[Resistencia|resistencia]] de salida $R_{out} = r_0$
-* El [[Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Canal-P|transistor P-MOS]] es una fuente de corriente
+* El [[Transistor de efecto de campo metal-óxido-semiconductor#Canal-P|transistor P-MOS]] es una fuente de corriente
 
 #### Copia de corriente
 ---
