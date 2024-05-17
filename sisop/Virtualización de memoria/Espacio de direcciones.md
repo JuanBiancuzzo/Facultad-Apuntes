@@ -35,4 +35,4 @@ Por supuesto que cuando se describe de esta forma el espacio de direcciones lo q
 
 En realidad el programa no se encuentra en el rango de las direcciones de [[Memoria|memoria]] física entre $0 ~ b$ y $16 ~ kb$. Cuando el sistema operativo realiza esto, se dice que esta [[Virtualización de memoria|virtualizando memoria]].
 
-Por ejemplo, cuando un [[Proceso|proceso]] trata de cargar el contenido de la dirección 0, que a partir de ahora llamaremos la dirección virtual $0$, de alguna forma el sistema operativo con ayuda de [[Memory Management Unit (MMU)|MMU]] se asegura que no se cargue la dirección física $0$ real más bien que se cargue la dirección física en la cual el espacio de direcciones de ese proceso se encuentre.
+Por ejemplo, cuando un [[Proceso|proceso]] trata de cargar el contenido de la dirección 0, que a partir de ahora llamaremos la dirección virtual $0$, de alguna forma el sistema operativo con ayuda de [[Memory Management Unit|MMU]] se asegura que no se cargue la dirección física $0$ real más bien que se cargue la dirección física en la cual el espacio de direcciones de ese proceso se encuentre.

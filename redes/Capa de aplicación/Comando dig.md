@@ -5,7 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-Es un comando donde te permite obtener más información sobre las queries a un [[Domain Name System (DNS)|DNS]]. Esta herramienta interroga a los [[Domain Name System (DNS)|DNS]] name servers. Haciendo una [[DNS Query|query DNS]] y muestra las respuesta a su respuesta
+Es un comando donde te permite obtener más información sobre las queries a un [[Domain Name System|DNS]]. Esta herramienta interroga a los [[Domain Name System|DNS]] name servers. Haciendo una [[DNS Query|query DNS]] y muestra las respuesta a su respuesta
 
 #### Uso general
 ---

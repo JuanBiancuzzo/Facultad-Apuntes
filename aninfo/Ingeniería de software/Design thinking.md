@@ -42,6 +42,6 @@ Probar la funcionalidad del producto/servicio con usuarios, clientes e [[Interes
 * Persona
 	* Arquetipo de usuarios
 * Customer journey
-	* Interacción del usuario, es similar al [[Unified modelling language (UML)#Diagrama de casos de uso|diagrama de casos de uso de UML]]
+	* Interacción del usuario, es similar al [[Unified modelling language#Diagrama de casos de uso|diagrama de casos de uso de UML]]
 * Paper prototype
 * Wireframes

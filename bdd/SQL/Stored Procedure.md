@@ -5,7 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-Conjunto de instrucciones [[Structured Query Language (SQL)|SQL]] que se guardan en la [[Base de datos|base de datos]] y se puede ejecutar de manera repetida cuando sea necesario. Utilizados para realizar tareas repetitivas o complejas en una base de datos de una manera más eficiente y segura
+Conjunto de instrucciones [[Structured Query Language|SQL]] que se guardan en la [[Base de datos|base de datos]] y se puede ejecutar de manera repetida cuando sea necesario. Utilizados para realizar tareas repetitivas o complejas en una base de datos de una manera más eficiente y segura
 
 Usos comunes
 * Procesamiento  de base de datos

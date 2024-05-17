@@ -25,7 +25,7 @@ Estas son las que posea un solo [[Procesador|procesador]] con un solo núcleo de
 
 ##### Round Robin (RR)
 ---
-![[Política de planificación Round Robin (RR)#Definición]]
+![[Política de planificación Round Robin#Definición]]
 
 #### Multi-Procesador
 ---

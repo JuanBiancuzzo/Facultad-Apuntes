@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-El proceso mediante el cual se definen la arquitectura, los componentes, las [[Interfaz de usuario (UI)|interfaces]] y otras características de un [[Sistema]] o componente.
+El proceso mediante el cual se definen la arquitectura, los componentes, las [[Interfaz de usuario|interfaces]] y otras características de un [[Sistema]] o componente.
 * Es una actividad creativa
 * Implica tomar decisiones que pueden ser trascendentales para el sistema
 * Emergente
@@ -13,7 +13,7 @@ El proceso mediante el cual se definen la arquitectura, los componentes, las [[I
 
 #### De los requisitos al diseño y la construcción
 ---
-Definición de la arquitectura, los componentes y las [[Interfaz de usuario (UI)|interfaces]] de un producto de software. Se analizan los [[Requisito|requisitos]] con el objetivo de producir una descripción de la estructura interna del software
+Definición de la arquitectura, los componentes y las [[Interfaz de usuario|interfaces]] de un producto de software. Se analizan los [[Requisito|requisitos]] con el objetivo de producir una descripción de la estructura interna del software
 
 * Arquitectura: 
 	* Organización general

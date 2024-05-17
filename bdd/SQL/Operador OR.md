@@ -9,7 +9,7 @@ Este [[Operación lógica|operador lógico]] aplica la lógica de [[Operador ló
 
 #### En SQL
 ---
-En [[Structured Query Language (SQL)|SQL]] se usa en la cláusula [[Sentencia WHERE|WHERE]], y se usa para filtrar [[Registro SQL|registros]] con más de una condición, donde alguna tiene que cumplir
+En [[Structured Query Language|SQL]] se usa en la cláusula [[Sentencia WHERE|WHERE]], y se usa para filtrar [[Registro SQL|registros]] con más de una condición, donde alguna tiene que cumplir
 
 ```SQL
 SELECT columna1, columna2, ...

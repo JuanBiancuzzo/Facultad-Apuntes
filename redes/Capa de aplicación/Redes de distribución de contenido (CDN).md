@@ -7,7 +7,7 @@ capitulo: 2
 ---
 Estas [[Red|redes]] son los Netflix, Google, etc. de distribuir contenido
 * Acerca el contenido a los [[Arquitectura cliente servidor#Cliente]]
-	* Minimizar [[Latencia|latencia]] (mejor [[Experiencia del usuario (UX)|UX]])
+	* Minimizar [[Latencia|latencia]] (mejor [[Experiencia del usuario|UX]])
 	* Maximizar [[Throughput|throughput]]
 * Minimizar el [[Tráfico|tráfico]] en el [[Internet Service Providers (ISPs)#Tier 1|núcleo de internet]]
 	* Evitar replicación de [[Paquete|paquetes]]
@@ -30,7 +30,7 @@ Estas [[Red|redes]] son los Netflix, Google, etc. de distribuir contenido
 
 #### Funcionamiento
 ---
-Usando un [[Domain Name System (DNS)|DNS]]
+Usando un [[Domain Name System|DNS]]
 
 #### Arquitectura
 ---

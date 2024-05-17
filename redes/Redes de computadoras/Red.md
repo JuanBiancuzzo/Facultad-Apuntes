@@ -22,11 +22,11 @@ Los dispositivos conectados a internet a menudo se designan como sistemas termin
 Enlaces físicos que conectan un sistema terminal con el primer [[Router|router]] de una ruta entre el host y cualquier otro host distante
 
 * [[Acceso telefónico|Acceso telefónico]]
-* [[Digital Subscriber Line (DSL)|DSL]]
+* [[Digital Subscriber Line|DSL]]
 * [[Acceso a una red por cable|Cables]]
-* [[Fiber-To-The-Home (FTTH)|Tecnología FTTH]]
+* [[Fiber-To-The-Home|Tecnología FTTH]]
 * [[Ethernet|Ethernet]]
-* [[Wireless Fidelity (WiFi)|WiFi]]
+* [[Wireless Fidelity|WiFi]]
 * [[Acceso inalámbrico de área extensa]]
 
 ###### Medios físicos

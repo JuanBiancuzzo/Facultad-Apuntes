@@ -2,6 +2,9 @@
 dia: 2024-04-19
 materia: redes
 capitulo: 3
+aliases:
+  - DoS
+  - DDoS
 ---
 ### Definición
 ---

@@ -70,7 +70,7 @@ Física
 * MTU (maximum transfer unit) - Reduciéndolo
 
 > [!important]
-> Ver el [[Request For Comments (RFC)|RFC]] 1531 DHCP (octubre 1993)
+> Ver el [[Request For Comments|RFC]] 1531 DHCP (octubre 1993)
 
 #### NAT una middlebox
 ---
@@ -95,7 +95,7 @@ Características
 	* Next header 
 		* el código (no un puntero) del header que se acopla
 		* Esto puede ser "infinito"
-		* Puede producir un [[Denial of Service (DoS)|DoS]]
+		* Puede producir un [[Denial of Service|DoS]]
 			* Se soluciona que en cada router se dropea el paquete si este no encuentra el header de capa de transporte en el next header
 * Fragmentación prohibido en routers 
 	* Sólo los extremos pueden hacerlo

@@ -9,7 +9,7 @@ Este [[Operación lógica|operador lógico]] aplica la lógica de [[Operador ló
 
 #### En SQL
 ---
-En [[Structured Query Language (SQL)|SQL]] se usa en la cláusula [[Sentencia WHERE|WHERE]], y se usa en combinación de otros [[SQL Keywords#Operadores|operadores]] para dar el resultado opuesto 
+En [[Structured Query Language|SQL]] se usa en la cláusula [[Sentencia WHERE|WHERE]], y se usa en combinación de otros [[SQL Keywords#Operadores|operadores]] para dar el resultado opuesto 
 
 ```SQL
 SELECT columna1, columna2, ...

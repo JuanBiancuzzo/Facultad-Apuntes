@@ -9,7 +9,7 @@ capitulo: 2
 
 #### En SQL
 ---
-En [[Structured Query Language (SQL)|SQL]] los alias son usados para darle a las [[Tabla SQL|tablas]] o columnas de las tablas un nombre temporal ya que solo duran lo que dura la query. En general se usan para hacer nombres más legible.
+En [[Structured Query Language|SQL]] los alias son usados para darle a las [[Tabla SQL|tablas]] o columnas de las tablas un nombre temporal ya que solo duran lo que dura la query. En general se usan para hacer nombres más legible.
 
 ##### Sintaxis
 ---

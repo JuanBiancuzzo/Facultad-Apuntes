@@ -14,4 +14,4 @@ La información que se almacena en un archivo se divide en dos partes:
 	* Propietario
 	* Información de seguridad
 1. Datos:
-	* Son los datos propiamente dichos que quieren ser almacenados. Desde el punto de vista del [[Sistema operativo]], un archivo o [[Virtual File System (VFS)#Objetos|file]] no es más que un arreglo de bytes sin tipo.
+	* Son los datos propiamente dichos que quieren ser almacenados. Desde el punto de vista del [[Sistema operativo]], un archivo o [[Virtual File System#Objetos|file]] no es más que un arreglo de bytes sin tipo.

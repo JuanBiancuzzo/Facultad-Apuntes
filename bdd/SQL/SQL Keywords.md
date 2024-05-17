@@ -5,7 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-Las keywords de [[Structured Query Language (SQL)|SQL]] se puede separar en 
+Las keywords de [[Structured Query Language|SQL]] se puede separar en 
 * [[SQL Keywords#Comandos|Comandos]]
 * [[SQL Keywords#Cláusulas|Cláusulas]]
 * [[SQL Keywords#Operadores|Operadores]]

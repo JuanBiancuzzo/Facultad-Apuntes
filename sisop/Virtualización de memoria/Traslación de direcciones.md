@@ -13,7 +13,7 @@ El [[Sistema operativo|S.O.]] está en el medio de ese proceso y determina si el
 
 Desde la perspectiva del programador el proceso de address translation es completamente transparente, si bien, el hecho es que en realidad la memoria es almacenada en un lugar completamente diferente de donde él cree que está siendo almacenada
 
-Un ejemplo de su implementación sería el [[Memory Management Unit (MMU)|Memory management unit]].
+Un ejemplo de su implementación sería el [[Memory Management Unit|Memory management unit]].
 
 #### Formalmente
 ---

@@ -7,7 +7,7 @@ capitulo: 4
 ---
 Esta [[Políticas de planificación|técnica de planificación]] intenta acatar a los siguientes dos problemas
 * Intentar optimizar el tiempo de [[Métrica Turn Around de planificación|turn around]], que se realiza mediante la ejecución de la tarea más corta primero, desafortunadamente el [[Sistema operativo|sistema operativo]] nunca sabe a priori cuanto va a tardar en correr una tarea
-* Intenta minimizar el [[Métrica Tiempo de respuesta de planificación|tiempo de respuesta]], desafortunadamente los algoritmos como [[Política de planificación Round Robin (RR)|round-robin]] reducen el tiempo de respuesta pero son terribles en turn around.
+* Intenta minimizar el [[Métrica Tiempo de respuesta de planificación|tiempo de respuesta]], desafortunadamente los algoritmos como [[Política de planificación Round Robin|round-robin]] reducen el tiempo de respuesta pero son terribles en turn around.
 
 #### Reglas básicas
 ---
@@ -15,7 +15,7 @@ MLFQ tiene un conjunto de distintas [[Cola|colas]], cada una de estas colas tien
 
 En un determinado tiempo, una tarea que está lista para ser corrida está en una única cola. MLFQ usa las prioridades para decidir cual tarea debería correr en un determinado tiempo $t_0$, la tarea con mayor prioridad o la tarea en la cola más alta será elegida para ser corrida.
 
-Dado el caso que existan más de una tarea con la misma prioridad entonces se utiliza el algoritmo [[Política de planificación Round Robin (RR)|round-robin]] para planificar estas tareas entre ellas.
+Dado el caso que existan más de una tarea con la misma prioridad entonces se utiliza el algoritmo [[Política de planificación Round Robin|round-robin]] para planificar estas tareas entre ellas.
 
 Las reglas son
 * Si la prioridad de A es mayor que la prioridad de B, A se ejecuta y B no

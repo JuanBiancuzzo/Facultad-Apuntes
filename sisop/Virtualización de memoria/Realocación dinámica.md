@@ -25,4 +25,4 @@ La técnica de [[Memoria|memoria]] segmentada permite dar la ilusión de que una
 
 #### Eficiencia
 ---
-Uno de los problemas con [[Traslación de direcciones|address translation]] reside en la velocidad de la traslación para ello se utilizan técnicas que mejoran esta velocidad. Para mejorar el address translation se utiliza un mecanismo de hardware llamado [[Translation-Lookaside Buffer (TLB)|Translation-Lookaside Buffer (TLB)]]
+Uno de los problemas con [[Traslación de direcciones|address translation]] reside en la velocidad de la traslación para ello se utilizan técnicas que mejoran esta velocidad. Para mejorar el address translation se utiliza un mecanismo de hardware llamado [[Translation-Lookaside Buffer|Translation-Lookaside Buffer]]

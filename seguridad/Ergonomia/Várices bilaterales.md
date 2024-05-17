@@ -33,6 +33,6 @@ Las posibles medidas de control serían:
 * Controles administrativos
 	* Disponer pausas
 	* Realizar rotaciones de los trabajadores
-	* Educar e instruir a los trabajadores, supervisores, ingenieros y directores sobre el origen y la prevención de lesiones [[Trastorno musculoesquelético (TME)|musculoesquelético]]
+	* Educar e instruir a los trabajadores, supervisores, ingenieros y directores sobre el origen y la prevención de lesiones [[Trastorno musculoesquelético|musculoesquelético]]
 	* Implementar un plan de detección precoz de síntomas de los trabajadores
 	* Disponer evaluación, y vigilancia médica y de salud de los puestos con factores de [[Riesgo|riesgo]]

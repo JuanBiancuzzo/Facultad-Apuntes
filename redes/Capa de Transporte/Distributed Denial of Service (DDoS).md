@@ -5,4 +5,4 @@ capitulo: 3
 ---
 ### Definición
 ---
-Los ataques [[Denial of Service (DoS)|DoS]] distribuidos controlan varios orígenes y hace que cada uno de ellos bombardee el objetivo con [[Tráfico|tráfico]]
+Los ataques [[Denial of Service|DoS]] distribuidos controlan varios orígenes y hace que cada uno de ellos bombardee el objetivo con [[Tráfico|tráfico]]

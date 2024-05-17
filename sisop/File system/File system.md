@@ -13,7 +13,7 @@ Es un tipo genérico de interfaz para cualquier tipo de filesystem que es posibl
 
 Esta capa de abstracción habilita a [[Linux]] a soportar el sistemas de archivos diferentes, incluso si estos difieren en características y comportamiento.
 
-Esto es posible porque [[Virtual File System (VFS)|VFS]] provee un [[Modelo]] común de archivos que pueda representar cualquier característica y comportamiento general de cualquier sistema de archivos.
+Esto es posible porque [[Virtual File System|VFS]] provee un [[Modelo]] común de archivos que pueda representar cualquier característica y comportamiento general de cualquier sistema de archivos.
 
 Esta capa de abstracción trabaja mediante la definición de interfaces conceptuales básicas y de estructuras que cualquier sistema de archivos soporta.
 

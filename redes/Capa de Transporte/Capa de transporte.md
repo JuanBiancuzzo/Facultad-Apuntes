@@ -6,9 +6,9 @@ capitulo: 3
 ### Definición
 ---
 Transporta los mensajes de la [[Capa de aplicación|capa de aplicación]] entre los [[Host|host]] de la aplicación. En [[Internet|internet]], existen dos [[Protocolo|protocolos]] de transporte
-* [[Transmission Control Protocol (TCP)|TCP]]
+* [[Transmission Control Protocol|TCP]]
 	* Servicio orientado a la conexión
-* [[User Datagram Protocol (UDP)|UDP]]
+* [[User Datagram Protocol|UDP]]
 	* Proporciona a sus aplicaciones un servicio sin conexión
 
 En esta capa, denominaremos a los [[Paquete|paquetes]] como segmentos

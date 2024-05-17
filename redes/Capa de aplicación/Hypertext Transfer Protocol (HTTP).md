@@ -6,7 +6,7 @@ capitulo: 2
 ### Definición
 ---
 Este [[Protocolo|protocolo]]
-* Esta implementado sobre [[Transmission Control Protocol (TCP)|Transmission Control Protocol (TCP)]]
+* Esta implementado sobre [[Transmission Control Protocol|Transmission Control Protocol]]
 * Tiene la [[Arquitectura cliente servidor|arquitectura cliente-servidor]]
 * Tiene un request y una response. 
 	* El request es de tamaño variable
@@ -20,7 +20,7 @@ Este [[Protocolo|protocolo]]
 
 Disertación de la arquitectura REST -> Datazo cap 2/3
 
-Existen 3 [[Request For Comments (RFC)|Request For Comments (RFC)]]
+Existen 3 [[Request For Comments|Request For Comments]]
 * 1945
 * 7230
 * 7540

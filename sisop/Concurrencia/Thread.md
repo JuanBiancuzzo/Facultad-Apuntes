@@ -49,9 +49,9 @@ Cada thread tiene dos estados
 * El estado per thread
 * El estado compartido entre varios thread
 
-##### [[Threads Control Block (TCB)|El estado per-thread]]
+##### [[Threads Control Block|El estado per-thread]]
 ---
-![[Threads Control Block (TCB)#Definición]]
+![[Threads Control Block#Definición]]
 
 ##### [[Thread Shared State|Shared state o Estado compartido]]
 ---

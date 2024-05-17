@@ -28,5 +28,5 @@ Es la separación en 4 dominios de especialización
 #### Arquitectura para aplicaciones de red
 ---
 Las arquitecturas predominantes en el paradigma moderno de aplicaciones de red son
-* [[Arquitectura peer-to-peer (P2P)|Arquitectura peer-to-peer (P2P)]]
+* [[Arquitectura peer-to-peer|Arquitectura peer-to-peer]]
 * [[Arquitectura cliente servidor|Arquitectura cliente-servidor]] 

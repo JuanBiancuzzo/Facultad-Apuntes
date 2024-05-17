@@ -25,7 +25,7 @@ La virtualización de [[Memoria|memoria]] tiene 3 metas
 ---
 El [[Sistema operativo|sistema operativo]] debería implementar la virtualización de memoria de forma tal que sea invisible al [[Programa|programa]] que se esta ejecutando. El programa debe comportarse como si él estuviera alojado en su propia área de [[Memoria|memoria]] física privada.
 
-Por detrás de escena, el sistema operativo y el [[Hardware|hardware]] ([[Memory Management Unit (MMU)|MMU]]) hacen todo el trabajo para multiplexar memoria a lo largo de los diferentes [[Proceso|procesos]] y por ende implementar la ilusión.
+Por detrás de escena, el sistema operativo y el [[Hardware|hardware]] ([[Memory Management Unit|MMU]]) hacen todo el trabajo para multiplexar memoria a lo largo de los diferentes [[Proceso|procesos]] y por ende implementar la ilusión.
 
 ##### Eficiencia
 ---

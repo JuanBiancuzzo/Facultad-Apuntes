@@ -9,9 +9,9 @@ Una secuencia de acciones realizadas por un [[Sistema]] que generan un resultado
 
 Un caso de uso incluye siempre un [[Escenario]] principal (o camino feliz) y uno o varios escenarios alternativos o secundarios.
 
-Estos son tecnológicamente neutros, es decir, no son sobre una implementación. Por lo que no deben incluir aspectos de implementación, inclusive aquellos relacionados con la [[Interfaz de usuario (UI)|interfaz de usuario]].
+Estos son tecnológicamente neutros, es decir, no son sobre una implementación. Por lo que no deben incluir aspectos de implementación, inclusive aquellos relacionados con la [[Interfaz de usuario|interfaz de usuario]].
 
-La representación de [[Modelo]] visual, puede estar dada por un [[Unified modelling language (UML)#Diagrama de casos de uso|diagrama de casos de uso en UML]] 
+La representación de [[Modelo]] visual, puede estar dada por un [[Unified modelling language#Diagrama de casos de uso|diagrama de casos de uso en UML]] 
 
 #### Formatos
 ---

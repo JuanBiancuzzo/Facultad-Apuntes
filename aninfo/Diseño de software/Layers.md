@@ -9,7 +9,7 @@ Es un estilo [[Arquitectura de aplicaciones|arquitectónico]] que propone una se
 
 #### Capa de presentación
 ---
-Se concentra toda la lógica que se encarga con el diálogo con el usuario (parecido al [[Model view controller (MVC)#View|View del MVC]])
+Se concentra toda la lógica que se encarga con el diálogo con el usuario (parecido al [[Model view controller#View|View del MVC]])
 
 #### Capa de negocios
 ---

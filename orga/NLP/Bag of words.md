@@ -5,7 +5,7 @@ capitulo: 3
 ---
 ### Definición
 ---
-Es similar a [[Term Frequency (TF)|TF]] donde dado un conjunto de [[Token|tokens]] se toman los primeros `k` [[Token|tokens]] más comunes. Después se genera una [[Matriz booleana|matriz booleana]], de `n` por `k`, donde `n` son la cantidad de frase/páginas. El booleano representa si aparece o no dicho token en esa frase o página.
+Es similar a [[Term Frequency|TF]] donde dado un conjunto de [[Token|tokens]] se toman los primeros `k` [[Token|tokens]] más comunes. Después se genera una [[Matriz booleana|matriz booleana]], de `n` por `k`, donde `n` son la cantidad de frase/páginas. El booleano representa si aparece o no dicho token en esa frase o página.
 
 Dado un query del usuario, vamos a hacer un vector booleano para esa query con los mismos tokens anterior. Finalmente haremos la [[Similitud coseno|similitud coseno]] entre la query y los datos que obtuvimos anteriormente.
 
