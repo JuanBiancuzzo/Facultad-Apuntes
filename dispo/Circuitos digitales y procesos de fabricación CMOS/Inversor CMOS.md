@@ -110,7 +110,7 @@ La [[Transferencia del sistema|función de transferencia]]:
 
 ##### Cálculo de $V_M$ 
 ---
-Para calcular $V_M$ consideramos que $I_{Dn} = -I_{Dp}$ y que ambos [[Transistor de efecto de campo metal-óxido-semiconductor|transistores]] están [[Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|saturados]] $$ \overbrace{
+Para calcular $V_M$ consideramos que $I_{Dn} = -I_{Dp}$ y que ambos [[Transistor de efecto de campo metal-óxido-semiconductor|transistores]] están [[Saturación del transistor de efecto de campo metal-óxido-semiconductor|saturados]] $$ \overbrace{
 	k_n ( \underbrace{V_M}_{V{GSn}} - V_{Tn} )^2
 }^{I_{Dn}} = \overbrace{
 	k_p ( \underbrace{V_{DD} - V_M}_{V{SGp}} - V_{Tp} )^2
@@ -247,14 +247,14 @@ Tiempo de propagación promedio $$ t_p = \frac{1}{2} (t_{PHL} + t_{PLH}) $$
 * Tiempo de propagación de alto a bajo ($t_{PHL}$)
 	* Durante los primeros momentos de descarga
 		* El [[Capacitor|capacitor]] está cargado a $C_L ~ V_{DD}$
-		* El NMOS está [[Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|saturado]] (conduce, corriente, etc)
-		* El PMOS está [[Corte del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|cortado]] (no conduce)
+		* El NMOS está [[Saturación del transistor de efecto de campo metal-óxido-semiconductor|saturado]] (conduce, corriente, etc)
+		* El PMOS está [[Corte del transistor de efecto de campo metal-óxido-semiconductor|cortado]] (no conduce)
 	* Tiempo para descargar la mitad a $C_L$ $$ t_{PHL} \simeq \frac{\frac{1}{2} ~ \text{carga inicial de} ~ C_L}{\text{corriente de descarga}} = \frac{\frac{1}{2} C_L V_{DD}}{k_n ( \underbrace{V_{Gsn}}_{V_{DD}}  - V_{Tn})^2} $$
 * Tiempo de propagación de bajo a alto ($t_{PLH}$)
 	* Durante los primeros momentos de descarga
 		* El capacitor está descargado
-		* El PMOS está [[Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|saturado]] (conduce, corriente, etc)
-		* El NMOS está [[Corte del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|cortado]] (no conduce)
+		* El PMOS está [[Saturación del transistor de efecto de campo metal-óxido-semiconductor|saturado]] (conduce, corriente, etc)
+		* El NMOS está [[Corte del transistor de efecto de campo metal-óxido-semiconductor|cortado]] (no conduce)
 	* Tiempo para descargar la mitad a $C_L$ $$ t_{PLH} \simeq \frac{\frac{1}{2} ~ \text{carga final de} ~ C_L}{\text{corriente de carga}} = \frac{\frac{1}{2} C_L V_{DD}}{k_p ( \underbrace{V_{Gsp}}_{-V_{DD}}  - V_{Tp})^2} $$
 	  Considerando que $2~\mu_p = \mu_n$, $V_{Tp} \simeq -V_{Tn}$ y el caso simétrico: $k_n = k_p$, entonces $L_p = L_n$, $W_p = 2 W_n$ y recordando que $t_p = \frac{1}{2} (t_{PHL} + t_{PLH})$, obtenemos $$ t_p \simeq \frac{C_L V_{DD}}{\mu C'_{ox} \frac{W_n}{L_n} (V_{DD} - V_{Tn})^2} $$
 	  Dependencias fundamentales del tiempo de propagación

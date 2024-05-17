@@ -20,7 +20,7 @@ Es aquella que genera una intensidad de [[Corriente eléctrica|corriente]] entre
 
 #### Implementación
 ---
-Como se analizó en [[Amplificador Source Común con un MOSFET#Relación de compromiso de $A_{vo}$, $R_D$, $V_{DD}$ e $I_{DQ}$|Relaciones de compromiso para el Amplificador Source Común]], es necesario tener una [[Resistencia|resistencia]] de polarización $R_D$ elevada para aumentar la [[Ganancia|ganancia]]
+Como se analizó en [[Amplificador Source Común con un transistor de efecto de campo metal-óxido-semiconductor#Relación de compromiso de $A_{vo}$, $R_D$, $V_{DD}$ e $I_{DQ}$|Relaciones de compromiso para el Amplificador Source Común]], es necesario tener una [[Resistencia|resistencia]] de polarización $R_D$ elevada para aumentar la [[Ganancia|ganancia]]
 
 Una alternativa para la resistencia de polarización $R_D$ es utilizar fuentes de corriente.
 

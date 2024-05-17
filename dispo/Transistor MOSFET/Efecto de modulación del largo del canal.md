@@ -5,7 +5,7 @@ capitulo: 6
 ---
 ### Definición
 ---
-Estando en el [[Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|regimen de saturación]] del [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]]. El [[Modelo]] planteado hasta el momento $I_D$ no debería incrementarse. Experimentalmente se observa que la [[Corriente eléctrica|corriente]] aumenta ligeramente
+Estando en el [[Saturación del transistor de efecto de campo metal-óxido-semiconductor|regimen de saturación]] del [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]]. El [[Modelo]] planteado hasta el momento $I_D$ no debería incrementarse. Experimentalmente se observa que la [[Corriente eléctrica|corriente]] aumenta ligeramente
 
 ![[Curva de salida del MOSFET con efecto de modulación del largo del canal.webp]]
 

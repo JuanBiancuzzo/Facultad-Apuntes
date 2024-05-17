@@ -2,6 +2,8 @@
 dia: 2023-11-10
 materia: dispo
 capitulo: 6
+aliases:
+  - Saturación del MOSFET
 ---
 ### Definición
 ---
@@ -74,7 +76,7 @@ Geometría del problema:
 
 La condición de saturación es $$ V_{GD} = V_T = V_{GS} - V_{DS} \implies V_{DS ~ (sat)} = V_{GS} - V_T $$
 La corriente de Drain en esta situación puede calcularse como $$ I_{D ~ (sat)} = I_D(V_{DS} = V_{DS ~ (sat)} = V_{GS} - V_T) $$
-Donde la corriente esta dada por la [[Triodo del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Corriente eléctrica|corriente en triodo]] dándonos $$ I_{D ~ (sat)} = \frac{1}{2} \frac{W}{L} \mu_n C'_{ox} V_{DS ~ (sat)}^2 $$
+Donde la corriente esta dada por la [[Triodo del transistor de efecto de campo metal-óxido-semiconductor#Corriente eléctrica|corriente en triodo]] dándonos $$ I_{D ~ (sat)} = \frac{1}{2} \frac{W}{L} \mu_n C'_{ox} V_{DS ~ (sat)}^2 $$
 
 ##### Curva de salida ($I_D$ vs. $V_{DS}$)
 ---

@@ -62,9 +62,9 @@ Dispositivo de canal-p (p-MOSFET) sobre un substrato [[Impureza donora#Cantidad 
 #### Regímenes de operación
 ---
 El [[Transistor]] tiene 3 regímenes de operación
-* [[Corte del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|Corte]]
-* [[Triodo del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|Triodo/Linea]]
-* [[Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|Saturación]]
+* [[Corte del transistor de efecto de campo metal-óxido-semiconductor|Corte]]
+* [[Triodo del transistor de efecto de campo metal-óxido-semiconductor|Triodo/Linea]]
+* [[Saturación del transistor de efecto de campo metal-óxido-semiconductor|Saturación]]
 
 #### Características del MOSFET con $V_{BS} \ne 0~V$
 ---

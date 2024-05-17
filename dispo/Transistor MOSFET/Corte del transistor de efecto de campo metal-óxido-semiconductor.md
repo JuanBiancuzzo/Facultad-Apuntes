@@ -2,6 +2,8 @@
 dia: 2023-11-10
 materia: dispo
 capitulo: 6
+aliases:
+  - Corte del MOSFET
 ---
 ### Definición
 ---

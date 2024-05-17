@@ -2,6 +2,8 @@
 dia: 2024-04-30
 materia: circuitos
 capitulo: 3
+aliases:
+  - Amplificador Drain Común con un JFET
 ---
 ### Definición
 ---

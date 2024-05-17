@@ -3,7 +3,8 @@ dia: 2023-10-14
 materia: dispo
 capitulo: 4
 aliases:
-  - MAD
+  - MAD del TBJ
+  - Modo activo directo del TBJ
 ---
 ### Definición
 ---

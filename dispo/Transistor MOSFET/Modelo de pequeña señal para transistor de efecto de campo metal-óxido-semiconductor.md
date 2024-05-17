@@ -2,6 +2,9 @@
 dia: 2023-11-16
 materia: dispo
 capitulo: 6
+aliases:
+  - MPS para transistor de efecto de campo metal-óxido-semiconductor
+  - MPS para MOSFET
 ---
 ### Definición
 ---
@@ -22,7 +25,7 @@ Recordando que $i_D$ esta dada por $$ i_D = \begin{cases}
 	k (v_{GS} - V_T)^2 (1 + \lambda v_{DS}) & v_{GS} > V_T, ~ v_{DS} > V_{DS ~ (sat)} \\
 	2k \left( v_{GS} - \frac{v_{DS}}{2} - V_T \right) v_{DS} (1 + \lambda v_{DS}) & v_{GS} > V_T, ~ v_{DS} < V_{DS ~ (sat)}\\
 \end{cases} $$
-Tomando la corriente correspondiente al [[Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|régimen de saturación]]. Al [[Serie de Taylor|aproximar]] una función cuadrática con un polinomio de primer orden, se comete un error. El error está dado por el término de orden 2 del polinomio. Si aceptamos un $10\%$ de error en la linealización $$ k ~ v^2_{gs} < 10\% ~ 2k ~ (V_{GS} - V_T) ~ v_{gs} $$ $$ v_{gs} < 0.2 ~ (V_{GS} - V_T) $$ 
+Tomando la corriente correspondiente al [[Saturación del transistor de efecto de campo metal-óxido-semiconductor|régimen de saturación]]. Al [[Serie de Taylor|aproximar]] una función cuadrática con un polinomio de primer orden, se comete un error. El error está dado por el término de orden 2 del polinomio. Si aceptamos un $10\%$ de error en la linealización $$ k ~ v^2_{gs} < 10\% ~ 2k ~ (V_{GS} - V_T) ~ v_{gs} $$ $$ v_{gs} < 0.2 ~ (V_{GS} - V_T) $$ 
 Por lo que el límite del modelo de pequeña señal depende de la polarización.
 
 #### [[Modelo|Modelo]] para bajas frecuencias
@@ -85,7 +88,7 @@ Dándonos el modelo completo que pequeña señal a baja frecuencia
 
 #### [[Modelo|Modelo]] para altas frecuencias
 ---
-Las [[Capacitancia|capacitancias]] parásitas del [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] limitan su respuesta dinámica y en [[Función senoidal#Frecuencia|frecuencia]]. El régimen más importante para aplicaciones analógicas es el de [[Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|saturación]].
+Las [[Capacitancia|capacitancias]] parásitas del [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] limitan su respuesta dinámica y en [[Función senoidal#Frecuencia|frecuencia]]. El régimen más importante para aplicaciones analógicas es el de [[Saturación del transistor de efecto de campo metal-óxido-semiconductor|saturación]].
 
 ![[Estructura MOSFET con capacitancias.webp]]
 

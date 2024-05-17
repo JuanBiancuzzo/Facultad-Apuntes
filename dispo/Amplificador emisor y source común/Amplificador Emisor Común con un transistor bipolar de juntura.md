@@ -2,6 +2,9 @@
 dia: 2023-11-26
 materia: dispo
 capitulo: 7
+aliases:
+  - Amplificador Emisor Común
+  - Amplificador Emisor Común con un TBJ
 ---
 ### Definición
 ---
@@ -103,12 +106,12 @@ Donde se tiene
 	* $v_{out}(t)$ es la señal alterna, dependiente del tiempo
 * $V_{BB}$ y $R_B$ representan el [[Teorema de Thevenin|equivalente de Thevenin]] del circuito de polarización de la Base
 * $V_{CC}$ y $R_C$ representan el [[Teorema de Thevenin|equivalente de Thevenin]] del circuito de polarización de la Colector
-* $V_{BB}$, $R_B$, $V_{CC}$ y $R_C$ seleccionados para polarizar el [[Transistor|transistor]] en [[Modo activo directo del TBJ|MAD]] y obtener el punto $Q = Quiescent = Resposo$ deseado
+* $V_{BB}$, $R_B$, $V_{CC}$ y $R_C$ seleccionados para polarizar el [[Transistor|transistor]] en [[Modo activo directo del transistor bipolar de juntura|MAD]] y obtener el punto $Q = Quiescent = Resposo$ deseado
 * Si $v_s \uparrow \implies v_{BE} \uparrow \implies i_B \uparrow \implies i_C \uparrow \implies i_R \uparrow \implies v_{OUT} \downarrow$ 
 * $A_{vo} = \frac{v_{out}}{v_{in}} < 0$ la salida está en contrafase con la entrada
 * $|A_v| = \left| \frac{v_{out}}{v_{in}} \right| > 1$, si el amplificador está bien diseñado
 
-Usando el [[Modelo de pequeña señal del transistor bipolar de juntura (TBJ)#Modelo Modelo para bajas frecuencias|modelo de pequeña señal para baja frecuencia]] y pasivando las [[Fuente de tensión|fuentes de tensión continuas]], tendremos
+Usando el [[Modelo de pequeña señal del transistor bipolar de juntura#Modelo Modelo para bajas frecuencias|modelo de pequeña señal para baja frecuencia]] y pasivando las [[Fuente de tensión|fuentes de tensión continuas]], tendremos
 
 
 ```tikz

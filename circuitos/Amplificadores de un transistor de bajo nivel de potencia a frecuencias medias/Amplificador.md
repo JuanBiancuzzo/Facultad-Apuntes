@@ -11,37 +11,37 @@ Se tienen distintas configuraciones de amplificadores como
 ---
 
 ##### Amplificador emisor común
-   ![[Amplificador Emisor Común#^6b9228]]  ![[Amplificador Emisor Común#^daaa29]]
+   ![[Amplificador Emisor Común con un transistor bipolar de juntura#^6b9228]]  ![[Amplificador Emisor Común con un transistor bipolar de juntura#^daaa29]]
 
 ##### Amplificador colector común / Seguidor
-   ![[Amplificador Colector Común#^5c5e25]]  ![[Amplificador Colector Común#^e8dc2c]]
+   ![[Amplificador Colector Común con un transistor bipolar de juntura#^5c5e25]]  ![[Amplificador Colector Común con un transistor bipolar de juntura#^e8dc2c]]
 
 ##### Amplificador base común
-   ![[Amplificador Base Común#^4ae162]]  ![[Amplificador Base Común#^364fd0]]
+   ![[Amplificador Base Común con un transistor bipolar de juntura#^4ae162]]  ![[Amplificador Base Común con un transistor bipolar de juntura#^364fd0]]
 
 #### Amplificadores usando un MOSFET
 ---
 
 ##### Amplificador source común
-   ![[Amplificador Source Común con un MOSFET#^bef7b2]]  ![[Amplificador Source Común con un MOSFET#^27b24b]]
+   ![[Amplificador Source Común con un transistor de efecto de campo metal-óxido-semiconductor#^bef7b2]]  ![[Amplificador Source Común con un transistor de efecto de campo metal-óxido-semiconductor#^27b24b]]
 
 ##### Amplificador drain común
-   ![[Amplificador Drain Común con un MOSFET#^6e8ccc]]  ![[Amplificador Drain Común con un MOSFET#^84a8e4]]
+   ![[Amplificador Drain Común con un transistor de efecto de campo metal-óxido-semiconductor#^6e8ccc]]  ![[Amplificador Drain Común con un transistor de efecto de campo metal-óxido-semiconductor#^84a8e4]]
 
 ##### Amplificador gate común
-   ![[Amplificador Gate Común con un MOSFET#^699639]]  ![[Amplificador Gate Común con un MOSFET#^5ee09c]]
+   ![[Amplificador Gate Común con un transistor de efecto de campo metal-óxido-semiconductor#^699639]]  ![[Amplificador Gate Común con un transistor de efecto de campo metal-óxido-semiconductor#^5ee09c]]
 
 #### Amplificadores usando un JFET
 ---
 
 ##### Amplificador source común
-   ![[Amplificador Source Común con un JFET#^f67315]]  ![[Amplificador Source Común con un JFET#^837c41]]
+   ![[Amplificador Source Común con un transistor de efecto de campo de unión#^f67315]]  ![[Amplificador Source Común con un transistor de efecto de campo de unión#^837c41]]
 
 ##### Amplificador drain común
-   ![[Amplificador Drain Común con un JFET#^9a3871]]  ![[Amplificador Drain Común con un JFET#^1b22df]]
+   ![[Amplificador Drain Común con un transistor de efecto de campo de unión#^9a3871]]  ![[Amplificador Drain Común con un transistor de efecto de campo de unión#^1b22df]]
 
 ##### Amplificador gate común
-   ![[Amplificador Gate Común con un JFET#^9a23eb]]  ![[Amplificador Gate Común con un JFET#^f4b95c]]
+   ![[Amplificador Gate Común con un transistor de efecto de campo de unión#^9a23eb]]  ![[Amplificador Gate Común con un transistor de efecto de campo de unión#^f4b95c]]
 
 #### Resolución
 ---
@@ -49,7 +49,7 @@ La resolución de un amplificador significa encontrar el punto de polarización,
 
 ##### Ejemplo
 ---
-Teniendo un amplificador básico para el cual plantear una idea general, vamos a usar un [[Amplificador Emisor Común|amplificador emisor común]] que usa un [[Transistor bipolar de juntura|TBJ]] 
+Teniendo un amplificador básico para el cual plantear una idea general, vamos a usar un [[Amplificador Emisor Común con un transistor bipolar de juntura|amplificador emisor común]] que usa un [[Transistor bipolar de juntura|TBJ]] 
 
 ![[Amplificador básico.png]]
 
@@ -58,7 +58,7 @@ Para resolverlo, debemos encontrar el punto de continua o reposo ($Q$), donde pa
 ![[Amplificador general en continua.png]]
 
 Recorriendo la [[Malla|malla]] de entrada, tenemos $$ I_B = \frac{V_{BB} - V_{BE}}{R_B} = I_{BQ}  $$
-Suponiendo [[Modo activo directo del TBJ|MAD]] podemos encontrar la relación entre $I_B$ e $I_C$, dado por $I_B ~ \beta_F = I_C$, usando eso y la malla de salida $$ V_{CEQ} = V_{CC} - I_{CQ} ~ R_C $$ si $V_{CEQ} > 0$ entonces nuestra suposición es correcta, y si no se cumple significa que no esta en ese [[Transistor bipolar de juntura#Modos de operación|modo de operación]]
+Suponiendo [[Modo activo directo del transistor bipolar de juntura|MAD]] podemos encontrar la relación entre $I_B$ e $I_C$, dado por $I_B ~ \beta_F = I_C$, usando eso y la malla de salida $$ V_{CEQ} = V_{CC} - I_{CQ} ~ R_C $$ si $V_{CEQ} > 0$ entonces nuestra suposición es correcta, y si no se cumple significa que no esta en ese [[Transistor bipolar de juntura#Modos de operación|modo de operación]]
 
 De esta forma ya tenemos los valores de reposo. Ahora encontremos los valores importantes para pequeña señal, con origen en $Q$
 

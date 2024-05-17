@@ -2,6 +2,8 @@
 dia: 2023-09-16
 materia: dispo
 capitulo: 3
+aliases:
+  - MPS para diodo
 ---
 ### Definición
 ---

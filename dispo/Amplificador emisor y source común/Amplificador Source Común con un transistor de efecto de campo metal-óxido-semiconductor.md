@@ -2,6 +2,8 @@
 dia: 2023-11-28
 materia: dispo
 capitulo: 7
+aliases:
+  - Amplificador Source Común con un MOSFET
 ---
 ### Definición
 ---
@@ -96,7 +98,7 @@ La fuente de polarización ($V_{GG}$ y $R_G$) representa el [[Teorema de Theveni
 
 #### Calculo de parámetros
 ---
-Usando el [[Modelo de pequeña señal para Transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#Modelo Modelo para bajas frecuencias|modelo de pequeña señal para baja frecuencia]] y pasivando las [[Fuente de tensión|fuentes de tensión continuas]], tendremos
+Usando el [[Modelo de pequeña señal para transistor de efecto de campo metal-óxido-semiconductor#Modelo Modelo para bajas frecuencias|modelo de pequeña señal para baja frecuencia]] y pasivando las [[Fuente de tensión|fuentes de tensión continuas]], tendremos
 
 ![[Amplificador source común con modelo de pequeña señal.webp]]
 

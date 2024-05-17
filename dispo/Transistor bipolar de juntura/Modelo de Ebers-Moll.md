@@ -14,7 +14,7 @@ Hay 3 parámetros en este modelo
 * $\beta_F$: [[Ganancia de corriente en modo activo directo (MAD)|ganancia en MAD]]
 * $\beta_R$: [[Ganancia de corriente en modo activo inverso (MAI)|ganancia en MAI]]
 
-Notemos que las corrientes producidas son las mismas que el transistor en [[Saturación del transistor bipolar de juntura (TBJ)|saturación]], es decir que las corrientes están dadas por $$  \begin{align} 
+Notemos que las corrientes producidas son las mismas que el transistor en [[Saturación del transistor bipolar de juntura|saturación]], es decir que las corrientes están dadas por $$  \begin{align} 
 	I_C &= I_S ~ \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - \exp \left( \frac{V_{BC}}{V_{th}} \right) \right) - \frac{I_S}{\beta_R} \left( \exp \left( \frac{V_{BC}}{V_{th}} \right) - 1 \right) \\
 	
 	I_B &= \frac{I_S}{\beta_F} \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - 1 \right) + \frac{I_S}{\beta_R} \left( \exp \left( \frac{V_{BC}}{V_{th}} \right) - 1 \right) \\

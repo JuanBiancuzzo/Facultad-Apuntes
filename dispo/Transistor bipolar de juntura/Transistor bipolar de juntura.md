@@ -30,7 +30,7 @@ Con una estructura
 ---
 Independientemente de si el TBJ es NPN o PNP, tiene 4 modos de operación. Tomaremos como referencia el NPN, pero se aplica de la misma forma para el PNP
 
-* [[Modo activo directo del TBJ|Modo activo directo (MAD)]] ![[Modo activo directo del TBJ#^bfa932]]
-* [[Modo activo inverso del TBJ|Modo activo inverso (MAI)]] ![[Modo activo inverso del TBJ#^71eca7]]
-* [[Corte del transistor bipolar de juntura (TBJ)|Corte]] ![[Corte del transistor bipolar de juntura (TBJ)#^640694]]
-* [[Saturación del transistor bipolar de juntura (TBJ)|Saturación]] ![[Saturación del transistor bipolar de juntura (TBJ)#^7f7ec7]]
+* [[Modo activo directo del transistor bipolar de juntura|Modo activo directo (MAD)]] ![[Modo activo directo del transistor bipolar de juntura#^bfa932]]
+* [[Modo activo inverso del transistor bipolar de juntura|Modo activo inverso (MAI)]] ![[Modo activo inverso del transistor bipolar de juntura#^71eca7]]
+* [[Corte del transistor bipolar de juntura|Corte]] ![[Corte del transistor bipolar de juntura#^640694]]
+* [[Saturación del transistor bipolar de juntura|Saturación]] ![[Saturación del transistor bipolar de juntura#^7f7ec7]]

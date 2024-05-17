@@ -2,6 +2,9 @@
 dia: 2024-04-30
 materia: circuitos
 capitulo: 3
+aliases:
+  - Amplificador Base Común
+  - Amplificador Base Común con TBJ
 ---
 ### Definición
 ---

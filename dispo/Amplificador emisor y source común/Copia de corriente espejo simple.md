@@ -44,7 +44,7 @@ En este caso, la relación de corriente ($I_{out} / I_{REF}$) se da por la relac
 	V_{BE1} = V_{BE2} \implies J_{C1} = J_{C2} \\
 	I_{REF} = - (I_{C1} + I_{B1} + I_{B2})
 \end{matrix} $$
-En [[Modo activo directo del TBJ|MAD]]: $I_C = \beta I_B$ $$ \begin{matrix} 
+En [[Modo activo directo del transistor bipolar de juntura|MAD]]: $I_C = \beta I_B$ $$ \begin{matrix} 
 	\displaystyle I_{REF} = - \left( I_{C1} + \frac{I_{C1}}{\beta} + \frac{I_{C2}}{\beta} \right) \\
 	\displaystyle I_C = A ~ J_C \implies I_{C1} = A_1 ~ \frac{I_{C2}}{A_2} \\ 
 	\displaystyle \implies I_{OUT} = - I_{C2} = \frac{I_{REF}}{\frac{A_1}{A_2} + \frac{1}{\beta} ~ \frac{A_1}{A_2} + \frac{1}{\beta}} \approx \frac{A_2}{A_1} ~ I_{REF}

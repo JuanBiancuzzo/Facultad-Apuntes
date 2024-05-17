@@ -51,5 +51,5 @@ Estas están caracterizadas por dos curvas
 ---
 Tenemos 3 tipos de [[Transistor|transistores]] que nos vamos a analizar
 * [[Transistor bipolar de juntura|TBJ]]
-* [[Transistor de efecto de campo de unión (JFET)|JFET]]
+* [[Transistor de efecto de campo de unión|JFET]]
 * [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]]

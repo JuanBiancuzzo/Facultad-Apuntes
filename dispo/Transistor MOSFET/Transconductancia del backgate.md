@@ -5,7 +5,7 @@ capitulo: 6
 ---
 ### Definición
 ---
-Con un [[Transistor de efecto de campo metal-óxido-semiconductor#Canal-N|MOSFET de canal-N]] en [[Saturación del transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|régimen de saturación]] $$ i_D = \frac{1}{2} \frac{W}{L} (v_{GS} - V_T(v_{BS}))^2 (1 + \lambda v_{DS}) $$
+Con un [[Transistor de efecto de campo metal-óxido-semiconductor#Canal-N|MOSFET de canal-N]] en [[Saturación del transistor de efecto de campo metal-óxido-semiconductor|régimen de saturación]] $$ i_D = \frac{1}{2} \frac{W}{L} (v_{GS} - V_T(v_{BS}))^2 (1 + \lambda v_{DS}) $$
 Recordando que $V_T(v_{BS})$ donde $V_T$ es la [[Tensión umbral#Para un Transistor de efecto de campo metal-óxido-semiconductor (MOSFET) MOSFET|tensión umbral]] tenemos que 
 
 $$ \begin{matrix} 

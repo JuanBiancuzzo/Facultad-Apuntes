@@ -4,13 +4,6 @@
   "promptDelete": false,
   "spellcheckLanguages": null,
   "userIgnoreFilters": [
-    "dispo/Diodo de Juntura PN/img/",
-    "dispo/Física de semiconductores/img/",
-    "dispo/Juntura MOS/img/",
-    "dispo/Amplificador emisor y source común/img/",
-    "dispo/Juntura PN/img/",
-    "dispo/Transistor bipolar de juntura/img/",
-    "dispo/Transistor MOSFET/img/",
     "_template/"
   ],
   "autoPairMarkdown": false,

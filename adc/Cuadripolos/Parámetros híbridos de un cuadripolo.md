@@ -31,7 +31,7 @@ Donde
 
 #### Ejemplo
 ---
-Un caso de [[Cuadripolo|cuadripolo]] es un [[Amplificador Emisor Común|amplificador mono-etapa emisor común]] 
+Un caso de [[Cuadripolo|cuadripolo]] es un [[Amplificador Emisor Común con un transistor bipolar de juntura|amplificador mono-etapa emisor común]] 
 
 ![[Amplificador emisor común como un cuadripolo.webp]]
 
