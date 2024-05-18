@@ -5,7 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-Se puede definir la transferencia de un [[Sistema lineal e invariante en el tiempo (LTI)|sistema LTI]] a partir de su [[Respuesta en frecuencia|respuesta en frecuencia]] $h(t)$, donde se puede definir completamente este sistema $$ y(t) = \mathcal{T}[x(t)] $$ de la forma $$ y(t) = h(t) * x(t) $$ donde $h(t) * x(t)$ es la [[Convolución|convolución]] entre la respuesta en frecuencia y la [[Señal|señal]]
+Se puede definir la transferencia de un [[Sistema lineal e invariante en el tiempo|sistema LTI]] a partir de su [[Respuesta en frecuencia|respuesta en frecuencia]] $h(t)$, donde se puede definir completamente este sistema $$ y(t) = \mathcal{T}[x(t)] $$ de la forma $$ y(t) = h(t) * x(t) $$ donde $h(t) * x(t)$ es la [[Convolución|convolución]] entre la respuesta en frecuencia y la [[Señal|señal]]
 
 #### Transformada de Laplace
 ---

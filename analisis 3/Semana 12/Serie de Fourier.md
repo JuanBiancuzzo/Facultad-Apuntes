@@ -19,7 +19,7 @@ Por lo que podemos concluir que para señales reales, los componentes armónicos
 
 #### Sistemas LTI
 ---
-Los [[Sistema lineal e invariante en el tiempo (LTI)|sistemas LTI]] reaccionan de una forma muy satisfactoria a [[Señal|señales]] [[Función exponencial|exponenciales]]. Consideremos el caso de un sistema de tiempo continuo cuya [[Representación de una señal mediante impulsos|respuesta al impulso]] es $h(t)$. Supongamos que la entrada al mismo es $\exp(st)$ donde $s \in \mathbb{C}$. La salida del sistema se puede escribir como $$ \begin{align} y(t) 
+Los [[Sistema lineal e invariante en el tiempo|sistemas LTI]] reaccionan de una forma muy satisfactoria a [[Señal|señales]] [[Función exponencial|exponenciales]]. Consideremos el caso de un sistema de tiempo continuo cuya [[Representación de una señal mediante impulsos|respuesta al impulso]] es $h(t)$. Supongamos que la entrada al mismo es $\exp(st)$ donde $s \in \mathbb{C}$. La salida del sistema se puede escribir como $$ \begin{align} y(t) 
 	&= \int_{-\infty}^{\infty} h(\tau) ~ x(t - \tau) ~ d\tau \\
 	&= \int_{-\infty}^{\infty} h(\tau) ~ \exp(s(t - \tau)) ~ d\tau \\
 	&= \exp(st) ~ \int_{-\infty}^{\infty} h(\tau) ~ \exp(s\tau) ~ d\tau 

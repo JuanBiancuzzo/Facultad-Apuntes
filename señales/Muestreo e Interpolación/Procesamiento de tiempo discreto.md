@@ -60,7 +60,7 @@ La posibilidad de poder [[Muestreo|muestrear]] una [[Señal#^02aea6|señal de ti
 
 La etapa de procesamiento en tiempo discreto se puede modelar como un [[Sistema|sistema]] de tiempo discreto. Dependiendo de la naturaleza del procesamiento a realizar dicho sistema puede ser [[Sistema lineal|no lineal]] y [[Sistema invariante en el tiempo|variante en el tiempo]]
 
-Aunque nosotros vamos a modelarlo con [[Sistema lineal e invariante en el tiempo (LTI)|sistemas LTI]], dado que el sistema será LTI, lo podemos representar con su [[Respuesta en frecuencia|respuesta en frecuencia]]
+Aunque nosotros vamos a modelarlo con [[Sistema lineal e invariante en el tiempo|sistemas LTI]], dado que el sistema será LTI, lo podemos representar con su [[Respuesta en frecuencia|respuesta en frecuencia]]
 
 ```tikz
 \usetikzlibrary{calc}

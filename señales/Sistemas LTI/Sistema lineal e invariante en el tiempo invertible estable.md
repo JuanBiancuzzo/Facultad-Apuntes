@@ -2,10 +2,12 @@
 dia: 2024-03-20
 materia: señales
 capitulo: 2
+aliases:
+  - Sistema LTI estable
 ---
 ### Definición
 ---
-Sea $\mathcal{T}$ un [[Sistema lineal e invariante en el tiempo (LTI)|sistema LTI]] en tiempo continuo tal que $\mathcal{T}[\delta(t)] = h(t)$. Dicho sistema será estable en el sentido [[Bounded Input-Bounded Output (BIBO)|BIBO]] sí y sólo sí $$ \int_{-\infty}^{\infty} |h(t)| ~ dt < \infty $$ o lo que es lo mismo $h(t) \in L_1(\mathbb{R})$
+Sea $\mathcal{T}$ un [[Sistema lineal e invariante en el tiempo|sistema LTI]] en tiempo continuo tal que $\mathcal{T}[\delta(t)] = h(t)$. Dicho sistema será estable en el sentido [[Bounded Input-Bounded Output (BIBO)|BIBO]] sí y sólo sí $$ \int_{-\infty}^{\infty} |h(t)| ~ dt < \infty $$ o lo que es lo mismo $h(t) \in L_1(\mathbb{R})$
 
 #### Demostración
 ---

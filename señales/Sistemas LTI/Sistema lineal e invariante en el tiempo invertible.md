@@ -2,10 +2,12 @@
 dia: 2024-03-20
 materia: señales
 capitulo: 2
+aliases:
+  - Sistema LTI invariante
 ---
 ### Definición
 ---
-Consideremos un [[Sistema lineal e invariante en el tiempo (LTI)|sistema LTI]] en tiempo continuo con [[Representación de una señal mediante impulsos|respuesta al impulso]] $h(t)$. El [[Sistema invertible|sistema inverso]] $g(t)$ (si existe) debe cumplir con
+Consideremos un [[Sistema lineal e invariante en el tiempo|sistema LTI]] en tiempo continuo con [[Representación de una señal mediante impulsos|respuesta al impulso]] $h(t)$. El [[Sistema invertible|sistema inverso]] $g(t)$ (si existe) debe cumplir con
 
 ```tikz
 \begin{document} 

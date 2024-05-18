@@ -10,7 +10,7 @@ Esta función, que se define como la convolución entre $f$ y $g$, es [[Absoluta
 
 #### Suma de convolución
 ---
-Sea $\mathcal{T}$ un [[Sistema lineal e invariante en el tiempo (LTI)|sistema LTI]] de tiempo discreto tal que $\mathcal{T}[\delta[n]] = h[n]$ donde $\delta[n]$ es la [[Delta de Dirac|delta de Dirac]]. La respuesta $y[n]$ del sistema $\mathcal{T}$ a cualquier entrada $x[n]$ de tiempo discreto se escribe como $$ y[n] = h[n] * x[n] = \sum_{k=-\infty}^{\infty} x[k] ~ h[n - k] $$ esto se conoce como suma de convolución
+Sea $\mathcal{T}$ un [[Sistema lineal e invariante en el tiempo|sistema LTI]] de tiempo discreto tal que $\mathcal{T}[\delta[n]] = h[n]$ donde $\delta[n]$ es la [[Delta de Dirac|delta de Dirac]]. La respuesta $y[n]$ del sistema $\mathcal{T}$ a cualquier entrada $x[n]$ de tiempo discreto se escribe como $$ y[n] = h[n] * x[n] = \sum_{k=-\infty}^{\infty} x[k] ~ h[n - k] $$ esto se conoce como suma de convolución
 
 De esta forma la acción de un sistema LTI en tiempo discreto queda totalmente caracterizada por una única señal: la [[Representación de una señal mediante impulsos|respuesta al impulso]] del mismo $h[n]$
 

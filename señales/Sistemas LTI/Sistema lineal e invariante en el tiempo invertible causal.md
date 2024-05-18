@@ -2,10 +2,12 @@
 dia: 2024-03-20
 materia: señales
 capitulo: 2
+aliases:
+  - Sistema LTI causal
 ---
 ### Definición
 ---
-Sabemos que para que un [[Sistema|sistema]] sea [[Sistema causal|causal]] tiene que ocurrir ![[Sistema causal#Definición]]
+Sabemos que para que un [[Sistema lineal e invariante en el tiempo|sistema]] sea [[Sistema causal|causal]] tiene que ocurrir ![[Sistema causal#Definición]]
 Podemos entonces $$ \begin{matrix} 
 	y(t) &= \displaystyle \int_{-\infty}^{\infty} x(t - \tau) ~ h(\tau) ~ d\tau \\ 
 	 &= \displaystyle \int_{-\infty}^{0} x(t - \tau) ~ h(\tau) ~ d\tau \\ 
