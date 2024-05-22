@@ -5,108 +5,64 @@ capitulo: 6
 aliases:
   - DFT
   - Discrete Fourier Transform
+  - IDFT
+  - Inverse Discrete Fourier Transform
+  - Transformación Inversa Discreta de Fourier
 ---
 ### Definición
 ---
  Es un [[Muestreo|muestreo]] equispaciado en frecuencia de la [[Transformada de Fourier|transformada de Fourier]] de una secuencia de [[Señal#^02aea6|tiempo discreto]]. El gran punto a favor de la DFT es que existen [[Algoritmo|algoritmos]] computacionalmente muy eficientes para el cálculo de la misma como la [[Fast Fourier Transform|FFT]] 
 
-  Consideremos las exponenciales discretas con frecuencia fundamentales $\frac{2\pi}{N}k$ $$ \begin{align} 
-	W_N &= \exp\left(-j\frac{2\pi}{N}\right) \\
-	W_N^{kn} &= \exp\left(-j\frac{2\pi}{N}kn\right), ~~~ n, ~k \in \mathbb{Z} \\
-	&= W_N^{(pN + k)n} = W_N^{k(pN+n)}, ~~~ \forall p \in \mathbb{Z} \\
-\end{align} $$
-Sólo existen $N$ [[Función exponencial#Señal discreta|exponencial discretas]] distintas con frecuencia fundamental $\Omega_0 = \frac{2\pi}{N}$. Esto es sustancialmente diferente al caso continuo
-
-```tikz
-\usepackage{amssymb}
-\usetikzlibrary{math}
-\usetikzlibrary{calc}
-
-\begin{document} 
-	\tikzmath {
-		\radio = 1;
-		\ymax = 1.8;
-		\xmax = 1.5;
-		\puntos = 10; 
-	}
-	\begin{tikzpicture}[scale=1.5, transform shape,
-		declare function = {
-			DFTX(\kn) = cos(-360 * \kn / \puntos);
-			DFTY(\kn) = sin(-360 * \kn / \puntos);
-		}
-	]
-		\foreach \it in {1, ..., 4} {
-			\tikzmath { 
-				\cX = 4.5 * Mod(\it - 1, 2);
-				\cY = -4.5 * floor( (\it - 1) / 2); 
-			}
-			\coordinate (centro) at (\cX, \cY);
-	
-			\draw ($ (centro) + (0, -\ymax) $)
-				-- ($ (centro) + (0, \ymax) $)
-					node[right=2pt, scale=0.7] 
-						{$Im\left(W_{\puntos}^{\it n}\right)$};
-			\draw ($ (centro) + (-\xmax, 0) $) -- ($ (centro) + (\xmax, 0) $);
-			
-			\draw[dashed] (centro) circle (\radio);
-			\tikzmath { 
-				\maxpuntos = ifthenelse( 
-					iseven(\it),  
-					int(\puntos / 2),
-					\puntos
-				); 
-			}
-			\foreach \i in {1, ..., \maxpuntos} {
-				\tikzmath { \n = int(\i - 1); }
-				\draw[thick, cyan] ($ (centro) + (
-							{\radio * DFTX(\it * \n)}, 
-							{\radio * DFTY(\it * \n)}
-					) $) circle (0.1);
-
-				\tikzmath {
-					\siguiente = int(\n + 5);
-					\label = ifthenelse(
-						iseven(\it),
-						"\n, \siguiente",
-						"\n"
-					);
-				}
-				\path ($ (centro) + (
-					{(\radio + 0.4) * DFTX(\it * \n)}, 
-					{(\radio + 0.4) * DFTY(\it * \n)}
-				) $) node[scale=0.6] {$ n = \label $};
-			}
-		}
-	\end{tikzpicture}
-\end{document}
-```
-
-$$ \begin{array}{c} 
-	\tilde{x} =  \tilde{x}[n + N], ~~ \forall n \in \mathbb{Z}, ~~ N \in \mathbb{Z} \\
-	\tilde{x}[n] \xleftrightarrow{~\mathcal{FS}} a[k] \\
-	a[k] = a[k + rN], ~~~ \forall r \in \mathbb{Z}
+  Consideremos una secuencia $x[n]$ de longitud $M$. Es decir $x[n] = 0$ para $n < 0$ y $n \ge M$. Sea $N \ge M$. Siempre podremos definir la secuencia periódica $\tilde{x}[n]$ con periodo $N$ $$ \tilde{x}[n] = \sum_{l = -\infty}^{\infty} x[n - lN] = x[n~\text{mod}~N] $$
+  Dado que $M \le N$ siempre podremos recuperar $x[n]$ a partir de un periodo de $\tilde{x}[n]$. Es decir $$ x[n] = \begin{cases} 
+	  \tilde{x}[n] & 0 \le n \le N - 1 \\
+	  0 & \text{en otro caso}
+  \end{cases} $$
+  Sean $a[k] = X\left( e^\left( j \frac{2\pi}{N} k \right) \right) = X\left( e^{j\omega} \right) \biggm|_{\omega = \frac{2\pi}{N}k}$, $k \in \mathbb{Z}$ los [[Coeficientes de Fourier|coeficientes del desarrollo de Fourier]] de $\tilde{x}[n]$. Esta secuencia es periódica con periodo $N$. Definimos la siguiente secuencia $$ X[k] = \begin{cases} 
+	  a[k] & 0 \le k \le N - 1 \\
+	  0 & \text{en otro caso}
+  \end{cases} $$
+  Recordando que definimos $W_N = \exp\left(-j\frac{2\pi}{N}\right)$ entonces podemos expresar las ecuaciones de síntesis y de análisis $$ \begin{array}{c c} 
+	\displaystyle X[k] = \sum_{n = 0}^{N - 1} x[n] ~ W_N^{kn}, & \text{Ecuación de análisis} \\
+	\displaystyle x[n] = \frac{1}{N} \sum_{k = 0}^{N - 1} X[k] ~ W_N^{-kn}, & \text{Ecuación de síntesis} \\
 \end{array} $$
+Donde la ecuación de síntesis es la IDFT (Inverse Discrete Fourier Transform)
 
-Podemos escribir, cambiando levemente la definición $$ \begin{align}
-	a[k] &= \sum_{n = 0}^{N - 1} \tilde{x}[n] W_N^{kn}, & \text{Ecuación de análisis} \\
-	\tilde{x}[n] &= \frac{1}{N} \sum_{k = 0}^{N - 1} a[k] W_N^{-kn}, & \text{Ecuación de sintésis}
-\end{align} $$
-En forma matricial $$ \begin{align} 
-	a &= W x \\
-	x &= \frac{1}{N} W^H a \\
-	x &= [\tilde{x}[0] ~ \tilde{x}[1] ~ \cdots \tilde{x}[N - 1]]^T \\
-	a &= [a[0] ~ a[1] ~ \cdots a[N - 1]]^T \\
-	W^{-1} &= \frac{1}{N} W^H
-\end{align} $$
-$$ W = \begin{bmatrix} 
-	1 & 1 & 1 & \cdots & 1 & 1 \\
-	1 & e^\left( -j \frac{2\pi}{N} \right) & e^\left( -j \frac{2\pi}{N} ~ 2 \right) & \cdots & e^\left( -j \frac{2\pi}{N} ~ (N - 2) \right) & e^\left( -j \frac{2\pi}{N} ~ (N - 1) \right) \\
-	1 & e^\left( -j \frac{2\pi}{N} ~ 2 \right) & e^\left( -j \frac{2\pi}{N} ~ 3 \right) & \cdots & e^\left( -j \frac{2\pi}{N} ~ 2(N - 2) \right) & e^\left( -j \frac{2\pi}{N} ~ 2(N - 1) \right) \\
-	\vdots & \vdots & \vdots & \ddots & \vdots & \vdots \\
-	1 & e^\left( -j \frac{2\pi}{N} ~ (N - 2) \right) & e^\left( -j \frac{2\pi}{N} ~ 2(N - 2) \right) & \cdots & e^\left( -j \frac{2\pi}{N} ~ (N - 2)(N - 2) \right) & e^\left( -j \frac{2\pi}{N} ~ (N - 1)(N - 2) \right) \\
-	1 & e^\left( -j \frac{2\pi}{N} ~ (N - 1) \right) & e^\left( -j \frac{2\pi}{N} ~ 2(N - 1) \right) & \cdots & e^\left( -j \frac{2\pi}{N} ~ (N - 1)(N - 2) \right) & e^\left( -j \frac{2\pi}{N} ~ (N - 1)(N - 1) \right) \\
-\end{bmatrix} $$
+Se puede denotar de forma compacta, dado una cantidad $N$ de puntos, como $$ x[n] \xleftrightarrow[N]{~\mathcal{DFT}} X[k] $$
+Notar que tenemos que $$ X[k] = X\left( e^\left( j \frac{2\pi}{N} k \right) \right) = X\left( e^{j\omega} \right) \biggm|_{\omega = \frac{2\pi}{N}k}, ~~ k \in \Set{0, 1, \cdots, N - 1} $$
+Por lo que podemos decir que la DFT es igual a las muestras de la [[Transformada de Fourier|transformada de Fourier]] de $x[n]$ evaluada en los puntos $\omega_k = \frac{2\pi}{N}k, ~~ k \in \Set{0, 1, \cdots, N - 1}$, o sea $N$ muestras en el intervalo $[0, ~2\pi)$ 
+
+#### Aclaraciones
+---
+* A pesar de estar definidas en un intervalo de $[0, ~N-1]$ para la ecuación de análisis como la de síntesis. Existe una periocidad implícita en ambas definiciones que es necesario tener en cuenta cuando se analicen las propiedades de la DFT, aún sólo estemos interesados en el intervalo $[0, ~ N - 1]$
+* Sea $x = [x[0] ~ x[1] ~ \cdots x[N - 1]]^T$ y $X = [X[0] ~ X[1] ~ \cdots X[N - 1]]^T$, donde $$ \begin{align} 
+	  X &= W x \\
+	  x &= \frac{1}{N} W^H X
+  \end{align} $$ donde la definición de $W \in \mathbb{C}^{N \times N}$ es ![[Serie discreta de Fourier#^eb7ec0]]
 
 #### Propiedades
 ---
-Vamos a asumir que las señales $x(t)$ son periódicas con periodo $T$ y que cumplen todas las propiedades que discutimos arriba para que existe su representación en serie de Fourier. Denotaremos los [[Coeficientes de Fourier|coeficientes de Fourier]] como $a_k$ y el proceso de mapeo de $x(t)$ en sus coeficientes y viceversa lo escribimos como $$ x(t) \xleftrightarrow{~\mathcal{FS}} a_k $$
+Al analizar las propiedades de la DFT debemos considerar la periocidad implícita en la secuencia $x[n]$ y en la misma DFT $X[k]$. Veremos que dicha periodicidad influencia fuertemente las propiedades de la DFT
+
+##### Linealidad
+---
+Sea $x[n]$ una señal de longitud $N_1$ e $y[n]$ una señal de longitud $N_2$. Consideremos $z[n] = \alpha x[n] + \beta y[n]$. Es claro que la longitud de $z[n]$ será $N_3 \ge \max\Set{N_1, N_2}$, donde la otra secuencia se completa con $0$ usando [[Expansión en tiempo discreto|expansión]]
+
+Sea entonces $x[n] \xleftrightarrow[N_3]{~\mathcal{DFT}} X[k]$ e $y[n] \xleftrightarrow[N_3]{~\mathcal{DFT}} Y[k]$. Es claro que $$ z[n] \xleftrightarrow[N_3]{~\mathcal{DFT}} \alpha X[k] + \beta Y[k] $$
+##### Desplazamiento circular de una secuencia
+---
+Sea una secuencia $x[n]$ de longitud $N$ y $x[n] \xleftrightarrow[N]{~\mathcal{DFT}} X[k]$. Entonces $$ x[(n - m) \mod N] \xleftrightarrow[N]{~\mathcal{DFT}} W_N^{km} ~ X[k] $$
+Sobre la izquierda tenemos que lo se denomina un desplazamiento circular
+
+##### Dualidad
+---
+Sea una secuencia $x[n]$ de longitud $N$ y $x[n] \xleftrightarrow[N]{~\mathcal{DFT}} X[k]$. Entonces $$ X[n] \xleftrightarrow[N]{~\mathcal{DFT}} Nx[(-k) \mod N] $$
+
+##### Simetría conjugada
+---
+Sea una secuencia $x[n]$ de longitud $N$ y $x[n] \xleftrightarrow[N]{~\mathcal{DFT}} X[k]$. Entonces $$ x^*[n] \xleftrightarrow[N]{~\mathcal{DFT}} X^*[(-k) \mod N] $$
+
+##### Convolución
+---
+Sean $x[n]$ e $y[n]$ unas señales de longitud $N$. Considerando $z[n] = x[n] ~ \underset{N}{\circledcirc} ~ y[n]$. Si $x[n] \xleftrightarrow[N]{~\mathcal{DFT}} X[k]$ e $y[n] \xleftrightarrow[N]{~\mathcal{DFT}} Y[k]$ tenemos que $$ z[n] \xleftrightarrow[N]{~\mathcal{DFT}} X[k] ~ Y[k] $$
+Donde esta convolución se conoce como la [[Convolución circular|convolución circular]] de $N$ puntos entre $x[n]$ e $y[n]$**

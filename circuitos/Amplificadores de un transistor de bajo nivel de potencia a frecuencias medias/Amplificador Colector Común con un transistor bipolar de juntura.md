@@ -5,6 +5,7 @@ capitulo: 3
 aliases:
   - Amplificador Colector Común
   - Amplificador Colector Común del TBJ
+  - Seguidor
 ---
 ### Definición
 ---
@@ -18,7 +19,6 @@ aliases:
 	americanports, 
 	americangfsurgearrester
 ]{circuitikz} 
-
 
 \ctikzset{
 	resistors/scale=0.7,
@@ -43,10 +43,6 @@ aliases:
 			to[R, l^=$R_E$] ++(0, -1)
 			to[short] ++(0, -0.5)
 				node[ground] (gr) {};
-
-		\draw ($ (vc) + (0, 0.35) $) to[short] ++(2.5, 0)
-			to[C, l^=$C$] ++(0, -1.5)
-				node[ground] {};
 			
 		\draw (npn.E) to[open, v^=$v_{BE}$] (npn.B);
 
@@ -82,12 +78,11 @@ aliases:
 ```
 ^5c5e25
 
-$$\begin{array}{r lc : c }
-	 &  && \text{En general} \\
-	A_v &= \frac{g_m ~ (R_C // R_L)}{g_m ~ (R_C // R_L) + 1} > 0 && |A_v| < 1 \\\\
-	A_{vs} &= \frac{R_B // r_\pi}{R_s + R_B // r_\pi} ~ A_v  && |A_{vs}| < 1 \\\\
-	R_i &= (R_{B1} // R_{B2} // r_\pi) && R_i \downarrow\downarrow \\\\
-	R_o &= (R_C // r_{ce}) && R_o \uparrow\uparrow \\\\
+Donde tomamos $R_B = R_{B1} // R_{B2}$ , $R_{CA} = R_E // R_L$ $$\begin{array}{r lc : c }
+	 &&& \text{En general} \\
+	A_v =& \displaystyle \frac{g_m ~ R_{CA}}{g_m ~ R_{CA} + 1} > 0 && |A_v| < 1 \\\\
+	R_{ib} =& \displaystyle \frac{R_{CA} ~(\beta ~ r_{ce} - R_C)}{R_{CA} - R_C + r_{ce}} + r_\pi && R_i \downarrow\downarrow \\\\
+	R_{oe} =& \displaystyle \frac{r_\pi + R_B // R_S}{\beta} && R_o \uparrow\uparrow \\\\
 	C_{eq} &=   && \text{Velocidad media}
 \end{array} $$
 

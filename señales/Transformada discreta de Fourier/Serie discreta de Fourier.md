@@ -104,6 +104,8 @@ $$ W = \begin{bmatrix}
 	1 & e^\left( -j \frac{2\pi}{N} ~ (N - 1) \right) & e^\left( -j \frac{2\pi}{N} ~ 2(N - 1) \right) & \cdots & e^\left( -j \frac{2\pi}{N} ~ (N - 1)(N - 2) \right) & e^\left( -j \frac{2\pi}{N} ~ (N - 1)(N - 1) \right) \\
 \end{bmatrix} $$
 
+^eb7ec0
+
 #### Propiedades
 ---
 Tenemos las siguientes propiedades, donde tomamos que  $$ \tilde{x}[n] \xleftrightarrow{~\mathcal{FS}} a[k] $$

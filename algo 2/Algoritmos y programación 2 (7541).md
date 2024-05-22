@@ -7,3 +7,7 @@ tags: materia
 ---
 ### Apuntes 
 ---
+##### General (1)
+---
+* [[algo 2/General/Complejidad computacional.md|Complejidad computacional]]
+

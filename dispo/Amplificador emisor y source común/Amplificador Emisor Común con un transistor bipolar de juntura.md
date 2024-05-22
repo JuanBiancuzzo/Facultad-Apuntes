@@ -46,9 +46,7 @@ Este es un [[Amplificador de tensión|amplificador de tensión]], basado en un [
 			to[short] ++(0, -0.5)
 				node[ground] (gr) {};
 
-		\draw (npn.E) to[short] ++(1.5, 0)
-			to[C, l^=$C_E$] ($ (gr -| 1.5, 0) + (npn.E |- 0, 0) $)
-				node[ground] {};
+		
 			
 		\draw (npn.E) to[open, v^=$v_{BE}$] (npn.B);
 
@@ -85,12 +83,12 @@ Este es un [[Amplificador de tensión|amplificador de tensión]], basado en un [
 
 ^6b9228
 
-$$\begin{array}{r lc lc : c }
-	 & \text{Con capacitor} ~ C_E && \text{Sin capacitor} ~ C_E  && \text{En general} \\
-	A_v &= - g_m ~ (R_C // R_L) < 0 && = -\frac{g_m ~ (R_C // R_L)}{g_m ~ R_E + 1} && |A_v| \uparrow\uparrow \\\\
-	R_i &= (R_{B1} // R_{B2} // r_\pi) && = (R_{B1} // R_{B2} // (r_\pi + \beta ~ R_E)) && R_i \uparrow\uparrow \\\\
-	R_o &= (R_C // r_{ce}) && = (1 + g_m (R_E // r_\pi)) ~ r_{ce} + (R_E // r_\pi) && R_o \uparrow\uparrow \\\\
-	C_{eq} &=   && = && \text{Velocidad lento}
+Donde tomamos $R_B = R_{B1} // R_{B2}$, y $R_{CA} = R_C // R_L$ $$\begin{array}{r c : lc }
+	 &&& \text{En general} \\
+	A_v =& \displaystyle -\frac{g_m ~R_{CA}}{1 + g_m ~ R_E} \underset{g_m ~ R_E \gg 1}{\approx} -\frac{R_{CA}}{R_E} && |A_v| \uparrow\uparrow \\\\
+	R_i =& R_B // (r_\pi + \beta ~ R_E) && R_i \uparrow\uparrow \\\\
+	R_{oc} =& r_{ce} + (r_\pi // R_E) (g_m r_{ce} + 1) \underset{g_m r_o \gg 1}{\approx} r_{ce} (1 + \frac{\beta ~ R_E}{r_\pi + R_E}) && R_o \uparrow\uparrow \\\\
+	C_{eq} =& && \text{Velocidad lento}
 \end{array} $$
 
 ^daaa29

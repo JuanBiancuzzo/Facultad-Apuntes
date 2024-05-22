@@ -43,10 +43,6 @@ aliases:
 			to[R, l^=$R_{B2}$] ++(0, -2)
 				node[ground] (gr) {};
 		
-		\draw (vb) to[short] ++(-1.25, 0)
-			to[C, l_=$C$] ($ (gr -| -1.25, 0) + (vb |- 0, 0) $)
-				node[ground] {};
-		
 		\draw (npn.E) to[open, v_=$v_{BE}$] (vb);
 		\draw ($ (npn.E) + (-0.1, 0.2) $) to[open, v^=$v_{CE}$] 
 			($ (npn.C) + (0.1, 0.2) $);
@@ -80,27 +76,11 @@ aliases:
 ```
 ^4ae162
 
-$$\begin{array}{r lc : c }
+Donde tomamos $R_B = R_{B1} // R_{B2}$ , $R_{CA} = R_C // R_L$ $$\begin{array}{r lc : c }
 	 &  && \text{En general} \\
-	A_v &= - g_m ~ (R_C // R_L) < 0 && |A_v| \uparrow\uparrow \\\\
-	A_{vs} &= \frac{R_B // r_\pi}{R_s + R_B // r_\pi} ~ A_v  && |A_{vs}| \uparrow\uparrow \\\\
-	R_i &= (R_{B1} // R_{B2} // r_\pi) && R_i \downarrow\downarrow \\\\
-	R_o &= (R_C // r_{ce}) && R_o \uparrow\uparrow \\\\
-	C_{eq} &=   && \text{Velocidad media}
+	A_v =& \displaystyle \frac{g_m ~ R_{CA}}{\frac{R_B}{r_\pi} + 1} && |A_v| \uparrow\uparrow \\\\
+	R_{ie} =& r_{ce} // \left( \frac{1}{g_m} + \frac{R_B}{\beta} \right) && R_i \downarrow\downarrow \\\\
+	R_{oc} =& r_{ce} ~ \left( 1 + \frac{\beta ~ R_s}{R_s + r_\pi + R_B} \right) && R_o \uparrow\uparrow \\\\
+	C_{eq} =&   && \text{Velocidad media}
 \end{array} $$
-$$ \begin{align} \\
-	A_v &=  > 0 \\
-	A_{vs} &= \\
-	R_i &=  \\
-	R_o &=  \\
-	C_{eq} &= \\
-\end{align} \begin{matrix} 
-	\text{En general} \\
-	|A_v| < 1 \\
-	\\
-	R_i \uparrow\uparrow \\
-	R_o \downarrow\downarrow \\
-	\text{Velocidad alta} \\
-\end{matrix} $$
-
 ^364fd0

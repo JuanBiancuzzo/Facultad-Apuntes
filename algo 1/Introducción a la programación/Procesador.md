@@ -4,6 +4,7 @@ materia: algo 1
 capitulo: 1
 aliases:
   - CPU
+  - Microprocesador
 ---
 ### Definición
 ---
