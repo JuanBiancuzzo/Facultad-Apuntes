@@ -93,7 +93,7 @@ Este [[Amplificador de transresistencia|amplificador de transresistencia]], al r
 			
 		\draw (reali_in_down) to[short] ++(2.5, 0)
 				node (temp) {}
-			to[isource, invert, l^=$kv_o$] (temp |- reali_in_up)
+			to[isource, l^=$kv_o$] (temp |- reali_in_up)
 			to[short] (reali_in_up);			
 		\draw (reali_in_down) to[short] ++(1, 0)
 				node (temp) {}

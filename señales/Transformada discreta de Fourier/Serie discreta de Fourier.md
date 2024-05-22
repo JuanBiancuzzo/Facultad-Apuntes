@@ -1,14 +1,11 @@
 ---
-dia: 2024-03-11
+dia: 2024-05-22
 materia: señales
 capitulo: 6
-aliases:
-  - DFT
-  - Discrete Fourier Transform
 ---
 ### Definición
 ---
- Es un [[Muestreo|muestreo]] equispaciado en frecuencia de la [[Transformada de Fourier|transformada de Fourier]] de una secuencia de [[Señal#^02aea6|tiempo discreto]]. El gran punto a favor de la DFT es que existen [[Algoritmo|algoritmos]] computacionalmente muy eficientes para el cálculo de la misma como la [[Fast Fourier Transform|FFT]] 
+Es un [[Muestreo|muestreo]] equispaciado en frecuencia de la [[Transformada de Fourier|transformada de Fourier]] de una secuencia de [[Señal#^02aea6|tiempo discreto]]
 
   Consideremos las exponenciales discretas con frecuencia fundamentales $\frac{2\pi}{N}k$ $$ \begin{align} 
 	W_N &= \exp\left(-j\frac{2\pi}{N}\right) \\
@@ -109,4 +106,25 @@ $$ W = \begin{bmatrix}
 
 #### Propiedades
 ---
-Vamos a asumir que las señales $x(t)$ son periódicas con periodo $T$ y que cumplen todas las propiedades que discutimos arriba para que existe su representación en serie de Fourier. Denotaremos los [[Coeficientes de Fourier|coeficientes de Fourier]] como $a_k$ y el proceso de mapeo de $x(t)$ en sus coeficientes y viceversa lo escribimos como $$ x(t) \xleftrightarrow{~\mathcal{FS}} a_k $$
+Tenemos las siguientes propiedades, donde tomamos que  $$ \tilde{x}[n] \xleftrightarrow{~\mathcal{FS}} a[k] $$
+##### Linealidad
+---
+Si $\tilde{x}[n] \xleftrightarrow{~\mathcal{FS}} a_k$ y $\tilde{y}[n] \xleftrightarrow{~\mathcal{FS}} n_k$ con $\tilde{x}[n]$ e $\tilde{y}[n]$ secuencias [[Función periódica|periódicas]] de periodo $N$ tenemos $$ \alpha \tilde{x}[n] + \beta \tilde{y}[n] \xleftrightarrow{~\mathcal{FS}} \alpha a[k] + \beta b[k] $$
+
+##### Desplazamiento temporal
+---
+Si $\tilde{x}[n] \xleftrightarrow{~\mathcal{FS}} a[k]$ entonces la versión desplazada $\tilde{x}[n - m]$ de la secuencia temporal cumple con $$ \tilde{x}[n - m] \xleftrightarrow{~\mathcal{FS}} W_N^{km} ~ a[k] = e^\left( -j \frac{2\pi}{N} km \right) ~ a[k] $$
+
+##### Dualidad
+---
+Si $\tilde{x}[n] \xleftrightarrow{~\mathcal{FS}} a[k]$ entonces $$ a[n] \xleftrightarrow{~\mathcal{FS}} N \tilde{x}[-k] $$
+
+##### Simetría conjugada
+---
+Si $\tilde{x}[n] \xleftrightarrow{~\mathcal{FS}} a[k]$ entonces $$ \tilde{x}^*[n] \xleftrightarrow{~\mathcal{FS}} a^*[-k] $$
+
+##### Convolución
+---
+Si $\tilde{x}[n] \xleftrightarrow{~\mathcal{FS}} a[k]$ y $\tilde{y}[n] \xleftrightarrow{~\mathcal{FS}} b[k]$ con $\tilde{x}[n]$ e $\tilde{y}[n]$ secuencias periódicas de periodo $N$. Tenemos que $$ \tilde{x}[n] \circledast \tilde{y}[n] = \sum_{m = 0}^{N - 1} \tilde{x}[m] ~ \tilde{y}[n - m] \xleftrightarrow{~\mathcal{FS}} a[k] ~ b[k] $$
+
+Donde se conoce esta convolución coo una [[Convolución periódica|convolución periódica]], ya que las señales se periodizan

@@ -79,7 +79,7 @@ Este [[Amplificador de transconductancia|amplificador de transconductancia]], al
 			to[short] (ampli_in_up);
 		\draw (ampli_out_down) to[short] ++(-3, 0)
 				node (temp) {}
-			to[american, isource, invert, l_=$G_m v_i$] (temp |- ampli_out_up)
+			to[american, isource, l_=$G_m v_i$] (temp |- ampli_out_up)
 			to[short] (ampli_out_up);
 		\draw (ampli_out_down) to[short] ++(-1, 0)
 				node (temp) {}
