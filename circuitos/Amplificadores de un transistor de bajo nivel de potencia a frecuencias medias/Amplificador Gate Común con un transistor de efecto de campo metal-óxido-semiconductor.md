@@ -42,10 +42,6 @@ aliases:
 			to[R, l^=$R_{G2}$] ++(0, -2)
 				node[ground] (gr) {};
 		
-		\draw (vb) to[short] ++(-1, 0)
-			to[C, l_=$C$] ($ (gr -| -1, 0) + (vb |- 0, 0) $)
-				node[ground] {};
-		
 		\draw (npn.S) to[open, v_=$v_{GS}$] (vb);
 		\draw ($ (npn.S) + (-0.1, 0.2) $) to[open, v^=$v_{DS}$] 
 			($ (npn.D) + (0.1, 0.2) $);
@@ -80,13 +76,11 @@ aliases:
 
 ^699639
 
-$$ \begin{align} 
-	&&&& \text{En general} \\
-	A_v &= \frac{g_m ~ (R_S // r_{ds})}{1 + g_m ~ (R_S // r_{ds})} &&&  |A_v| \gg 1 \\
-	A_{vs} &= &&& \\
-	R_i &= (R_{G1} // R_{G2}) &&& \\
-	R_o &= \left(R_S // r_{ds} // \frac{1}{g_m}\right) &&& \\
-	C_{eq} &= &&& \\
-\end{align} $$
-
+Donde tomamos $R_G = R_{G1} // R_{G2}$ , $R_{CA} = R_D // R_L$ $$\begin{array}{rl c|c c}
+	 &&&& \text{En general} \\
+	A_v =& g_m ~ R_{CA} > 0 &&& |A_v| \uparrow\uparrow \\\\
+	R_{is} =& \displaystyle \frac{R_{CA} + r_{ds}}{1 + g_m ~ r_{ds}} \underset{r_{ds} \gg 1}{\approx} \frac{1}{g_m} &&& R_i \downarrow\downarrow \\\\
+	R_{od} =& r_{ds} + (g_m ~ r_{ds} + 1) (R_S + R_s) \xrightarrow[r_{ds} \gg 1]{} \infty &&& R_o \uparrow\uparrow \\\\
+	C_{eq} =&   &&& \text{Velocidad media} \\\\
+\end{array} $$
 ^5ee09c

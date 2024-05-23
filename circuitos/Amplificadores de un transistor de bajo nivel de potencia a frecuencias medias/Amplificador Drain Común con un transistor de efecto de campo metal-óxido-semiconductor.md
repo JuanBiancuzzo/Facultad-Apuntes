@@ -30,9 +30,12 @@ aliases:
 		\draw (0, 4) node[above=2pt] {$V_{DD}$} 
 				node (vdd) {}
 			to[short, *-] ++(0, -0.5)
-				node (vd) {}
-			to[short, i^=$i_D$] ++(0, -0.5)
+			to[R, l^=$R_D$] ++(0, -1)
+				node[flowarrow, anchor=west, rotate=-90] (vd) 
+					{\rotatebox{90}{$i_D$}}
+			to[short] ++(0, -0.1)
 				node[nigfetd, xscale=1.2, yscale=1.5, anchor=D] (nmos) {};
+		
 		
 		\draw ($ (nmos.S) + (0.3, 0.2) $) to[open, v_=$v_{DS}$] 
 			($ (vd.west) + (0.3, -0.5) $);
@@ -74,13 +77,12 @@ aliases:
 
 ^6e8ccc
 
-$$ \begin{align} 
-	&&&& \text{En general} \\
-	A_v &= \frac{g_m ~ (R_S // r_{ds})}{1 + g_m ~ (R_S // r_{ds})} &&&  |A_v| \gg 1 \\
-	A_{vs} &= &&& \\
-	R_i &= (R_{G1} // R_{G2}) &&& \\
-	R_o &= \left(R_S // r_{ds} // \frac{1}{g_m}\right) &&& \\
-	C_{eq} &= &&& \\
-\end{align} $$
+Donde tomamos $R_G = R_{G1} // R_{G2}$ , $R_{CA} = R_S // R_L$ $$\begin{array}{rl c|c c}
+	 &&&& \text{En general} \\
+	A_v =& \displaystyle \frac{g_m ~ R_{CA}}{g_m ~ R_{CA} + 1} > 0 &&& |A_v| < 1 \\\\
+	R_{ig} =& R_G &&& R_i \uparrow\uparrow \\\\
+	R_{os} =& \displaystyle \frac{R_D + r_{ds}}{1 + g_m ~ r_{ds}} \underset{r_{ds} \gg 1}{\approx} \frac{1}{g_m} &&& R_o \downarrow\downarrow \\\\
+	C_{eq} &=   &&& \text{Velocidad media} \\\\
+\end{array} $$
 
 ^84a8e4

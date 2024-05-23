@@ -83,12 +83,12 @@ Este es un [[Amplificador de tensión|amplificador de tensión]], basado en un [
 
 ^6b9228
 
-Donde tomamos $R_B = R_{B1} // R_{B2}$, y $R_{CA} = R_C // R_L$ $$\begin{array}{r c : lc }
-	 &&& \text{En general} \\
-	A_v =& \displaystyle -\frac{g_m ~R_{CA}}{1 + g_m ~ R_E} \underset{g_m ~ R_E \gg 1}{\approx} -\frac{R_{CA}}{R_E} && |A_v| \uparrow\uparrow \\\\
-	R_i =& R_B // (r_\pi + \beta ~ R_E) && R_i \uparrow\uparrow \\\\
-	R_{oc} =& r_{ce} + (r_\pi // R_E) (g_m r_{ce} + 1) \underset{g_m r_o \gg 1}{\approx} r_{ce} (1 + \frac{\beta ~ R_E}{r_\pi + R_E}) && R_o \uparrow\uparrow \\\\
-	C_{eq} =& && \text{Velocidad lento}
+Donde tomamos $R_B = R_{B1} // R_{B2}$, y $R_{CA} = R_C // R_L$ $$\begin{array}{rl c|c c}
+	 &&&& \text{En general} \\
+	A_v =& \displaystyle -\frac{g_m ~R_{CA}}{1 + g_m ~ R_E} \underset{g_m ~ R_E \gg 1}{\approx} -\frac{R_{CA}}{R_E} &&& |A_v| \uparrow\uparrow \\\\
+	R_i =& R_B // (r_\pi + \beta ~ R_E) &&& R_i \uparrow\uparrow \\\\
+	R_{oc} =& r_{ce} + (r_\pi // R_E) (g_m r_{ce} + 1) \underset{g_m r_o \gg 1}{\approx} r_{ce} (1 + \frac{\beta ~ R_E}{r_\pi + R_E}) &&& R_o \uparrow\uparrow \\\\
+	C_{eq} =& &&& \text{Velocidad lento} \\\\
 \end{array} $$
 
 ^daaa29

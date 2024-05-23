@@ -77,20 +77,13 @@ Consideremos el siguiente [[Amplificador de tensión|amplificador]] implementado
 
 ^bef7b2
 
-$$\begin{align} \\
-	A_v &= - g_m (R_D // (r_{ds} + R_S)) < 0 \\
-	A_{vs} &= \\
-	R_i &= (R_{G1} // R_{G2}) \\
-	R_o &= (R_D // (r_{ds} + R_S) ) \\
-	C_{eq} &= \\
-\end{align} \begin{matrix} 
-	\text{En general} \\
-	|A_v| \uparrow\uparrow \\
-	\\
-	R_i \downarrow\downarrow \\
-	R_o \uparrow\uparrow \\
-	\text{Velocidad media} \\
-\end{matrix}$$
+Donde tomamos $R_G = R_{G1} // R_{G2}$ , $R_{CA} = R_D // R_L$ $$\begin{array}{rl c|c c}
+	 &&&& \text{En general} \\
+	A_v =& \displaystyle -\frac{g_m ~R_{CA}}{1 + g_m ~ R_S} \underset{g_m ~ R_S \gg 1}{\approx} -\frac{R_{CA}}{R_S} &&& |A_v| \uparrow\uparrow \\\\
+	R_i =& R_G &&& R_i \uparrow\uparrow \\\\
+	R_{oc} =& r_{ds} ~ (1 - g_m ~ R_S) \xrightarrow[r_{ds} \gg 1]{} \infty &&& R_o \uparrow\uparrow \\\\
+	C_{eq} =& &&& \text{Velocidad lento} \\\\
+\end{array} $$
 
 ^27b24b
 
