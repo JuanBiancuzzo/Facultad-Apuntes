@@ -1,11 +1,10 @@
 ---
 dia: 2024-04-23
 materia: circuitos
-capitulo: 3
+capitulo: 2
 aliases:
   - Teorema de Miller
 ---
-
 ### Definición
 ---
 Esta técnica permite simplificar el calculo de [[Circuito eléctrico|circuitos]]

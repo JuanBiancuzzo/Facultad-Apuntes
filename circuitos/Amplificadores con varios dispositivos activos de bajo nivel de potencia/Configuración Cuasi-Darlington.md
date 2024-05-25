@@ -1,5 +1,5 @@
 ---
-dia: 2024-03-11
+dia: 2024-05-12
 materia: circuitos
 capitulo: 4
 ---
