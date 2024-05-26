@@ -2,6 +2,8 @@
 dia: 2023-10-14
 materia: dispo
 capitulo: 4
+aliases:
+  - Transconductancia para TBJ
 ---
 ### Definición
 ---

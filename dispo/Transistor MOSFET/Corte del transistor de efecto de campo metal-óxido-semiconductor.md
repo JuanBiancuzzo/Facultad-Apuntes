@@ -55,4 +55,6 @@ Teniendo un [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] 
 \end{document}
 ```
 
-No tenemos capa de inversión en ningún, por lo que no fluye [[Corriente eléctrica|corriente]] $$ I_D = 0 $$
+No tenemos capa de inversión en ningún, por lo que no fluye [[Corriente eléctrica|corriente]] 
+
+$$ I_D = 0 $$ ^ef3a86

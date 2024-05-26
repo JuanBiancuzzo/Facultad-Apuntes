@@ -32,7 +32,7 @@ Por lo que el límite del modelo de pequeña señal depende de la polarización.
 ---
 Corriente $i_d$ de pequeña señal $$ i_d \simeq g_m ~ v_{gs} + g_0 ~ v_{ds} + g_{mb} ~ v_{bs} $$
 Definimos: 
-* $g_m \equiv$ [[Transconductancia para transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|transconductancia]] $[S]$ ![[Transconductancia para transistor de efecto de campo metal-óxido-semiconductor (MOSFET)#^f33d60]]
+* $g_m \equiv$ [[Transconductancia para transistor de efecto de campo metal-óxido-semiconductor|transconductancia]] $[S]$ ![[Transconductancia para transistor de efecto de campo metal-óxido-semiconductor#^f33d60]]
 * $g_0 \equiv$ [[Conductancia del drain|Conductancia de salida o conductancia del drain]] $[S]$ ![[Conductancia del drain#^479383]]
 * $g_{mb} \equiv$ [[Transconductancia del backgate|transconductancia del backgate]] $[S]$ ![[Transconductancia del backgate#^0500ed]]
 

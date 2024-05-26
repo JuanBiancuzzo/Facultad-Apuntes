@@ -2,6 +2,8 @@
 dia: 2023-11-20
 materia: dispo
 capitulo: 6
+aliases:
+  - Transconductancia para MOSFET
 ---
 ### Definición
 ---

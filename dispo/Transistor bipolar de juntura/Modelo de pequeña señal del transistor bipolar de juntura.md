@@ -82,7 +82,7 @@ $$ i_c = \frac{\partial i_C}{\partial v_{BE}} \biggm|_{Q}  v_{be} + \frac{\parti
 $$ i_b = \frac{\partial i_B}{\partial v_{BE}} \biggm|_{Q} v_{be} + \frac{\partial i_B}{\partial v_{BC}} \biggm|_{Q} v_{bc} = g_\pi v_{be} ~ + ~ g_\mu v_{be} $$
 
 Definimos
-* $g_m \equiv$ [[Transconductancia para transistor bipolar de juntura (TBJ)|transconductancia]] $[g_m] = S$ ![[Transconductancia para transistor bipolar de juntura (TBJ)#^71b01c]]
+* $g_m \equiv$ [[Transconductancia para transistor bipolar de juntura|transconductancia]] $[g_m] = S$ ![[Transconductancia para transistor bipolar de juntura#^71b01c]]
 * $g_o \equiv$ [[Conductancia de colector|Conductancia de salida o de colector]] $[g_0] = S$ ![[Conductancia de colector#^bc1d19]]
 * $g_\pi \equiv$ [[Conductancia de base|Conductancia de entrada o de base]] $[g_\pi] = S$ ![[Conductancia de base#^952529]]
 * $g_\mu \equiv$ [[Conductancia de realimentación|Conductancia de realimentación]] $[g_\mu] = S$ ![[Conductancia de realimentación#^333a61]]

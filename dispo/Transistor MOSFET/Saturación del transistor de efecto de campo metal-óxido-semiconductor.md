@@ -68,7 +68,16 @@ La [[Corriente eléctrica|corriente]] $I_D$ es independiente de $V_{DS}$: $I_D =
 
 #### Corriente
 ---
-Donde la [[Corriente eléctrica|corriente]] esta dada por $$ I_D = \frac{1}{2} \frac{W}{L} \mu_n C'_{ox} (V_{GS} - V_T)^2 ~ \left( 1 + \lambda ~ V_{DS} \right) $$
+Donde la [[Corriente eléctrica|corriente]] esta dada por 
+
+$$ \begin{align} 
+	I_D &= \frac{1}{2} \frac{W}{L} \mu_n C'_{ox} (V_{GS} - V_T)^2 ~ \left( 1 + \lambda ~ V_{DS} \right) \\
+	&= k ~ (V_{GS} - V_T)^2 ~ \left( 1 + \lambda ~ V_{DS} \right) 
+\end{align} $$
+
+^c13b85
+
+
 #### Calculo de la corriente
 ---
 Geometría del problema:
@@ -104,3 +113,8 @@ Por lo que no hay una capa de [[Inversión de la estructura Metal-Óxido-Semicon
 * La [[Corriente eléctrica|corriente]] en el canal es una [[Corriente de arrastre|corriente de arrastre]]. Si la carga y el campo se mantienen entonces $I_D$ es constante
 
 Considerando el [[Efecto de modulación del largo del canal]], donde se utiliza una $L_{(efectiva)}$, produce una corriente $$ I_D = \underbrace{\frac{1}{2} \frac{W}{L} \mu_n C'_{ox} (V_{GS} - V_T)^2}_{I_{D ~ (sat)}} ~ \left( 1 + \lambda ~ V_{DS} \right) $$
+
+^6198bc
+
+
+^3d5409

@@ -13,7 +13,7 @@ Se diseñan y fabrican para
 * Conmutar rápidamente
 
 Tenemos
-* [[MOSFET de potencia|MOSFET de potencia]]
+* [[Transistor de efecto de campo metal-óxido-semiconductor de potencia|Transistor de efecto de campo metal-óxido-semiconductor de potencia]]
 * [[TBJ de potencia|TBJ de potencia]]
 
 Para evitar la aparición de puntos calientes (hot-spots) se usan diseños interdigitados (finger interleaving), donde se busca disminuir la densidad de corriente.

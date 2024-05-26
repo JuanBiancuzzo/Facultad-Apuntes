@@ -15,7 +15,7 @@ $$ \begin{matrix}
 
 ^0500ed
 
-donde $g_m$ es la [[Transconductancia para transistor de efecto de campo metal-óxido-semiconductor (MOSFET)|transconductancia]]
+donde $g_m$ es la [[Transconductancia para transistor de efecto de campo metal-óxido-semiconductor|transconductancia]]
 
 Recordando que $$ V_T(V_{BS}) = V_{T0} + \gamma ~ \left( \sqrt{-2 \phi_p - V_{BS}} - \sqrt{-2 \phi_p} \right) $$
 Resulta $$ g_{mb} = g_m \frac{\gamma}{2 \sqrt{-2\phi_p - V_{BS}}} $$ donde $\gamma$ es [[Body factor coefficient|body factor coefficient]]

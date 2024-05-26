@@ -69,9 +69,15 @@ Los [[Electrón|electrones]] fluyen del source al drain, por lo que hay [[Corrie
 
 #### Corriente
 ---
-Donde la [[Corriente eléctrica|corriente]] esta dada por $$ I_D = \frac{W}{L} \mu_n C'_{ox} \left( V_{GS} - \frac{V_{DS}}{2} - V_T \right) V_{DS} ~ \left( 1 + \lambda ~ V_{DS} \right) $$
+Donde la [[Corriente eléctrica|corriente]] esta dada por 
+$$ \begin{align} 
+	I_D &= \frac{W}{L} \mu_n C'_{ox} \left( V_{GS} - \frac{V_{DS}}{2} - V_T \right) V_{DS} ~ \left( 1 + \lambda ~ V_{DS} \right) \\
+	&= 2k \left( V_{GS} - \frac{V_{DS}}{2} - V_T \right) V_{DS} ~ \left( 1 + \lambda ~ V_{DS} \right)
+\end{align} $$
 
-#### Calculo de la corriente
+^628376
+
+### Calculo de la corriente
 ---
 Geometría del problema:
 
