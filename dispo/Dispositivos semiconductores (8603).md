@@ -70,6 +70,7 @@ tags:
 
 ##### Transistor bipolar de juntura (18)
 ---
+* [[dispo/Transistor bipolar de juntura/Ganancia de corriente de pequeña señal para el transistor bipolar de juntura.md|Ganancia de corriente de pequeña señal para el transistor bipolar de juntura]]
 * [[dispo/Transistor bipolar de juntura/Transconductancia para transistor bipolar de juntura.md|Transconductancia para transistor bipolar de juntura]]
 * [[dispo/Transistor bipolar de juntura/Transistor.md|Transistor]]
 * [[dispo/Transistor bipolar de juntura/Transistor bipolar de juntura.md|Transistor bipolar de juntura]]
@@ -80,7 +81,6 @@ tags:
 * [[dispo/Transistor bipolar de juntura/Modelo de Ebers-Moll.md|Modelo de Ebers-Moll]]
 * [[dispo/Transistor bipolar de juntura/Ganancia de corriente en modo activo inverso (MAI).md|Ganancia de corriente en modo activo inverso (MAI)]]
 * [[dispo/Transistor bipolar de juntura/Ganancia de corriente en modo activo directo (MAD).md|Ganancia de corriente en modo activo directo (MAD)]]
-* [[dispo/Transistor bipolar de juntura/Ganancia de corriente de pequeña señal para el transistor bipolar de juntura (TBJ).md|Ganancia de corriente de pequeña señal para el transistor bipolar de juntura (TBJ)]]
 * [[dispo/Transistor bipolar de juntura/Efecto Early.md|Efecto Early]]
 * [[dispo/Transistor bipolar de juntura/Corte del transistor bipolar de juntura.md|Corte del transistor bipolar de juntura]]
 * [[dispo/Transistor bipolar de juntura/Conductancia de realimentación.md|Conductancia de realimentación]]

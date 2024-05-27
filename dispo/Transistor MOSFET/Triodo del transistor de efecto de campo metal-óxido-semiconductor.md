@@ -7,7 +7,7 @@ aliases:
 ---
 ### Definición
 ---
-Teniendo un [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] con $V_{GS} > V_T$, $V_{GD} > V_T$ con $V_{DS} > 0$
+Teniendo un [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] con $V_{GS} > V_T$, $V_{DS} < V_{GS} - V_T = V_{DS(sat)}$ con $V_{DS} > 0$
 
 ```tikz
 \begin{document} 
@@ -66,6 +66,7 @@ Teniendo un [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] 
 Los [[Electrón|electrones]] fluyen del source al drain, por lo que hay [[Corriente eléctrica|corriente]]
 * $V_{GS} \uparrow \implies |Q_n| \uparrow \implies I_D \uparrow$ 
 * $V_{DS} \uparrow \implies |E_y| \uparrow \implies I_D \uparrow$ 
+
 
 #### Corriente
 ---

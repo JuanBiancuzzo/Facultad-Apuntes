@@ -33,9 +33,9 @@ No alcanza con tener algunos grupos ágiles y otros tradicionales. Para generali
 ![[Nexus#Definición]]
 
 
-##### [[Scaled Agile Framework (SAFe)|SAFe]]
+##### [[Scaled Agile Framework|SAFe]]
 ---
-![[Scaled Agile Framework (SAFe)#Definición]]
+![[Scaled Agile Framework#Definición]]
 
 ##### [[Disciplined Agile Delivery (DAD)|DAD]]
 ---

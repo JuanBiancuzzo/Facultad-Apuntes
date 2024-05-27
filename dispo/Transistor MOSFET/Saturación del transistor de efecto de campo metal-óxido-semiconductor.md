@@ -62,9 +62,66 @@ Teniendo un [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] 
 \end{document}
 ```
 
-La [[Corriente eléctrica|corriente]] $I_D$ es independiente de $V_{DS}$: $I_D = I_{D ~ sat}$
+Para cuando la [[Corriente eléctrica|corriente]] $I_D$ es independiente de $V_{DS}$: $I_D = I_{D ~ sat}$
 
-![[Curva de salida del MOSFET sin efecto de modulación del largo del canal.webp]]
+```tikz
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\begin{document} 
+	\tikzmath {
+		\vt = 2;
+		\k = 0.5;
+		\l = 0;
+		\step = 0.1;
+	}
+	\begin{tikzpicture}[scale=1.5, transform shape, ultra thick,
+		declare function = {
+			triodo(\vds, \vgs) = 2 * \k * (\vgs - 0.5 * \vds - \vt) * \vds;
+			saturacion(\vgs) = \k * (\vgs - \vt)^2;
+			estrangulacion(\vds) = saturacion(\vds + \vt);
+		},
+	]
+
+		\draw[->] (-0.2, 0) 
+				node[left=2pt] {$0$}
+			-- (8, 0)
+				node[below=2pt] {$V_{DS}$};
+		\draw[->] (0, -0.2) 
+				node[below=2pt] {$0$}
+			-- (0, 5)
+				node[left=2pt] {$I_D$};
+
+		\foreach \vds in {0, \step, ..., 3} {
+			\draw[dashed] (\vds, {estrangulacion(\vds)}) 
+				-- ({\vds + \step}, {estrangulacion(\vds + \step)});
+		}
+		\path (3, {estrangulacion(3)})
+			node[above=2pt, scale=0.9] {$V_{DS(sat)} = V_{GS} - V_T$};
+		\path (0, {estrangulacion(2.9)}) -- ++(2.9, 0)
+			node[midway] {Triodo};
+		\path (2.9, {estrangulacion(2.9)}) -- (7, {estrangulacion(2.9)})
+			node[midway] {Saturación};
+		\path (0, 0) -- (7, 0)
+			node[midway, below=2pt] {Corte}
+			node[above left=2pt, scale=0.9] {$V_{GS} = V_T$};
+		
+		\foreach \vgs in {3.5, 4, 4.5, 4.8} {
+			\tikzmath { \vdsmax = \vgs - \vt; }
+			\foreach \vds in {0, \step, ..., \vdsmax} {
+				\draw (\vds, {triodo(\vds, \vgs)})
+					-- ({\vds + \step}, {triodo(\vds + \step, \vgs)});
+			}
+			\draw (\vdsmax, {saturacion(\vgs)}) -- (7, {saturacion(\vgs)})
+				node[right=2pt, scale=0.9] {$V_{GS} = \vgs$};
+		}
+
+	\end{tikzpicture}
+\end{document}
+```
+
+^1e0c9b
 
 #### Corriente
 ---
@@ -89,11 +146,74 @@ Donde la corriente esta dada por la [[Triodo del transistor de efecto de campo m
 
 ##### Curva de salida ($I_D$ vs. $V_{DS}$)
 ---
-![[Curva de salida del MOSFET sin efecto de modulación del largo del canal.webp]]
+Tenemos la [[Curva de salida|curva de salida]] sin [[Efecto de modulación del largo del canal|efecto de modulación del largo del cana]]
+
+![[Saturación del transistor de efecto de campo metal-óxido-semiconductor#^1e0c9b]]
+
 
 ##### Curva de transferencia en saturación ($I_D$ vs. $V_{GS}$)
 ---
-![[Curva de transferencia del MOSFET sin efecto de modulación del largo del canal.webp]]
+Tenemos la [[Curva de transferencia|curva de transferencia]] 
+
+```tikz
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\begin{document} 
+	\tikzmath {
+		\vt = 2.5;
+		\k = 0.25;
+		\vds = 3;
+		\step = 0.1;
+	}
+	\begin{tikzpicture}[scale=1.5, transform shape, ultra thick,
+		declare function = {
+			triodo(\vgs) = 2 * \k * (\vgs - 0.5 * \vds - \vt) * \vds;
+			saturacion(\vgs) = \k * (\vgs - \vt)^2;
+			estrangulacion(\vds) = saturacion(\vds + \vt);
+		},
+	]
+
+		\draw[->] (-0.2, 0) 
+				node[left=2pt] {$0$}
+			-- (8, 0)
+				node[below=2pt] {$V_{GS}$};
+		\draw[->] (0, -0.2) 
+				node[below=2pt] {$0$}
+			-- (0, 5)
+				node[left=2pt] {$I_D$};
+		
+		\draw (\vt, -0.1)
+				node[below=2pt] {$V_T$}
+			-- (\vt, 0.1);
+		\draw[dashed] ({\vds + \vt}, 0) -- ++(0, 4.5);
+		\draw[dashed] (\vt, 0) -- ++(0, 4.5);
+
+		\tikzmath { 
+			\vtstep = \vt + \step; 
+			\satmax = \vds + \vt;
+		}
+		\foreach \vgs in {\vt, \vtstep, ..., \satmax} {
+			\draw (\vgs, {saturacion(\vgs)}) 
+				-- ({\vgs + \step}, {saturacion(\vgs + \step)});
+		}
+		\tikzmath {
+			\satstep = \satmax + \step;
+		}
+		\foreach \vgs in {\satmax, \satstep, ..., 7} {
+			\draw (\vgs, {triodo(\vgs)}) 
+				-- ({\vgs + \step}, {triodo(\vgs + \step)});
+		}
+
+		\path (\vt, 4) -- ({\vds + \vt}, 4)
+			node[midway, above=2pt] {Saturación}
+			node[midway, scale=0.85] {$V_{GS} < V_{DS} + V_T$};
+
+	\end{tikzpicture}
+\end{document}
+```
+
 
 ##### Pinch-off ($V_{DS} = V_{GS} - V_T$)
 ---
@@ -114,7 +234,3 @@ Por lo que no hay una capa de [[Inversión de la estructura Metal-Óxido-Semicon
 
 Considerando el [[Efecto de modulación del largo del canal]], donde se utiliza una $L_{(efectiva)}$, produce una corriente $$ I_D = \underbrace{\frac{1}{2} \frac{W}{L} \mu_n C'_{ox} (V_{GS} - V_T)^2}_{I_{D ~ (sat)}} ~ \left( 1 + \lambda ~ V_{DS} \right) $$
 
-^6198bc
-
-
-^3d5409
