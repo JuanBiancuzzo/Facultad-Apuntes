@@ -19,9 +19,58 @@ Por ejemplo
 
 #### Ejemplo
 ---
-Se presenta un pequeño espacio de direcciones de $16 ~ kb$
+Se presenta un pequeño espacio de direcciones de $16 ~ KB$
 
-![[Espacio de direcciones de 16k.webp]]
+```tikz
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\begin{document} 
+	\begin{tikzpicture}[scale=1.4, transform shape, ultra thick]
+		\tikzmath {
+			\ancho = 5;
+			\alto = 1;
+			\dist = 0.7;
+		}
+
+		\begin{scope}
+			\clip (0, \alto) rectangle ++(\ancho, {5 * \alto});
+
+			\tikzmath {
+				\maxlargo = 5 * \alto + \ancho;
+				\step = 0.25;
+			}
+			\coordinate (inicio) at (\ancho, \alto);
+
+			\foreach \x in {0, \step, ..., \maxlargo} {
+				\draw[gray, opacity=0.6] ($ (inicio) + (-\x, 0) $)
+					-- ++(\maxlargo, \maxlargo);
+			}
+
+		\end{scope}
+
+		\draw (0, 0) rectangle ++(\ancho, \alto)
+			node[midway, scale=1] {Stack};
+		\draw (0, \alto) rectangle ++(\ancho, {5 * \alto})
+			node[midway, font=\bfseries] (free) {(free)};
+		\draw (0, {6 * \alto}) rectangle ++(\ancho, \alto)
+			node[midway, scale=1] {Heap};
+		\draw (0, {7 * \alto}) rectangle ++(\ancho, \alto)
+			node[midway, scale=1] {Program Code};
+		
+		\draw[->] ({\ancho / 2}, \alto) -- ($ (free) + (0, -0.5) $);
+		\draw[->] ({\ancho / 2}, {6 * \alto}) -- ($ (free) + (0, 0.5) $);
+
+		\path (-\dist, {0 * \alto}) node[scale=0.9] {$ 16 ~ KB $};
+		\path (-\dist, {1 * \alto}) node[scale=0.9] {$ 15 ~ KB $};
+		\path (-\dist, {6 * \alto}) node[scale=0.9] {$ 2 ~ KB $};
+		\path (-\dist, {7 * \alto}) node[scale=0.9] {$ 1 ~ KB $};
+		\path (-\dist, {8 * \alto}) node[scale=0.9] {$ 0 ~ KB $};
+
+	\end{tikzpicture}
+\end{document}
+```
 
 El código fuente del [[Programa|programa]] vive en lo alto del espacio de direcciones empezando de $0$ en este ejemplo y esta empaquetado en la primer $1 ~ kb$ del espacio de direcciones. El código fuente es estático por ende se puede poner al principio del espacio de direcciones y no necesitará más espacio mientras que el programa se ejecute.
 

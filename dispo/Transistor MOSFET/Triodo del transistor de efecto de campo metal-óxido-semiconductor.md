@@ -116,6 +116,6 @@ El impacto que tiene $V_{DS}$ sobre la corriente esta dado por
 
 Cuando $V_{DS} \uparrow$, la despolarización del canal se hace más prominente, por lo tanto $I_D$ crece más lentamente con $V_{DS}$.
 
-##### [[Efecto de modulación del largo del canal]]
+##### Efecto de modulación del largo del canal
 ---
-Considerando el [[Efecto de modulación del largo del canal]], donde se utiliza una $L_{(efectiva)}$, produce una corriente $$ I_D = \frac{W}{L} \mu_n C'_{ox} \left( V_{GS} - \frac{V_{DS}}{2} - V_T \right) V_{DS} ~ \left( 1 + \lambda ~ V_{DS} \right) $$
+Considerando el [[Efecto de modulación del largo del canal|efecto de modulación del largo del canal]], donde se utiliza una $L_{(efectiva)}$, produce una corriente $$ I_D = \frac{W}{L} \mu_n C'_{ox} \left( V_{GS} - \frac{V_{DS}}{2} - V_T \right) V_{DS} ~ \left( 1 + \lambda ~ V_{DS} \right) $$

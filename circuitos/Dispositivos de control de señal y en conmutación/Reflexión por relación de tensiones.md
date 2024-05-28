@@ -3,7 +3,7 @@ dia: 2024-04-23
 materia: circuitos
 capitulo: 2
 aliases:
-  - Teorema de Miller
+  - Teorema de Miller de tensiones
 ---
 ### Definición
 ---
