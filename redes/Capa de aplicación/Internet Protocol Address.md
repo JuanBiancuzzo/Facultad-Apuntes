@@ -1,10 +1,10 @@
 ---
-dia: 2024-05-28
+dia: 2024-05-29
 materia: redes
-capitulo: 1
+capitulo: 2
 aliases:
-  - WWW
-  - Web
+  - IP
+  - IP address
 ---
 ### Definición
 ---

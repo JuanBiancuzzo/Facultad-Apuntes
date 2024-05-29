@@ -5,7 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-Es un comando donde te permite obtener más información sobre las queries a un [[Domain Name System|DNS]]. Esta herramienta interroga a los [[Domain Name System|DNS]] name servers. Haciendo una [[DNS Query|query DNS]] y muestra las respuesta a su respuesta
+Es un comando donde te permite obtener más información sobre las queries a un [[Domain Name System|DNS]]. Esta herramienta interroga a los [[Domain Name System|DNS]] name servers. Haciendo una [[Domain Name System Message|query DNS]] y muestra las respuesta a su respuesta
 
 #### Uso general
 ---
@@ -14,7 +14,7 @@ dig @server name type
 ```
 
 Donde
-* `server` es el nombre o la [[Internet Protocol Address (IP address)|IP address]] del name server al que se le quiere hacer la query
+* `server` es el nombre o la [[Internet Protocol Address|IP address]] del name server al que se le quiere hacer la query
 	* Si se usa [[Internet Protocol Versión 4 (IPv4)|IPv4]] se separa los números con un punto
 		* Ejemplo: `127.0.0.1`
 	* Si se usa [[Internet Protocol Versión 6 (IPv6)|IPv6]] se los separa con doble punto
