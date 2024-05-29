@@ -6,7 +6,7 @@ Cualquier corrección/ampliación de los contenidos en este proyecto, por favor 
 
 ##### Materias
 ---
-Un listado de materias y su estado actual.
+Un listado de materias y su estado actual
 
 | Materia                                                                                                        | Estado                             |
 | -------------------------------------------------------------------------------------------------------------- | ---------------------------------- |

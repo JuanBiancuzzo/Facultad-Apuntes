@@ -12,4 +12,4 @@ capitulo: 1
 ---
 [[Internet|Internet]] como una infraestructura que proporciona servicios a las [[Aplicación|aplicaciones]]. Se dice que las aplicaciones son distribuidas porque implican a varios [[Host|hosts]] que intercambian datos entre sí
 
-Host conectados a internet proporcionan una [[Aplicación Programming Interface (API)|API]], interfaz de [[Socket|sockets]].
+Host conectados a internet proporcionan una [[Aplicación Programming Interface|API]], interfaz de [[Socket|sockets]].

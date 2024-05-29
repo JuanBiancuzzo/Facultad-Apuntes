@@ -5,4 +5,4 @@ capitulo: 1
 ---
 ### Definición
 ---
-Dado dos [[Host|host]] de origen y destino, que intercambian [[Paquete|paquetes]] de tamaño $L$ bits a través de un enlace cuya [[Velocidad de transmisión|velocidad de transmisión]] es $R$ bits/s, entonces el tiempo necesario para transmitir el paquete es igual a $$ \frac{L}{R} ~ \text{segundos} $$
+Dado dos [[Host|host]] de origen y destino, que intercambian [[Paquete|paquetes]] de tamaño $L$ bits a través de un enlace cuya [[Delay in packet switches#Tiempo de propagación|velocidad de transmisión]] es $R$ bits/s, entonces el tiempo necesario para transmitir el paquete es igual a $$ \frac{L}{R} ~ \text{segundos} $$

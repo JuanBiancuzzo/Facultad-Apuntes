@@ -2,14 +2,17 @@
 dia: 2024-03-19
 materia: redes
 capitulo: 2
+aliases:
+  - CDN
+  - Content provider networks
 ---
 ### Definición
 ---
 Estas [[Red|redes]] son los Netflix, Google, etc. de distribuir contenido
-* Acerca el contenido a los [[Arquitectura cliente servidor#Cliente]]
+* Acerca el contenido a los [[Arquitectura cliente servidor#Cliente|clientes]]
 	* Minimizar [[Latencia|latencia]] (mejor [[Experiencia del usuario|UX]])
 	* Maximizar [[Throughput|throughput]]
-* Minimizar el [[Tráfico|tráfico]] en el [[Internet Service Providers (ISPs)#Tier 1|núcleo de internet]]
+* Minimizar el [[Tráfico|tráfico]] en el [[Internet Service Providers#Tier 1|núcleo de internet]]
 	* Evitar replicación de [[Paquete|paquetes]]
 	* Contenido transmitido es "grande"
 * Plataforma distribuida

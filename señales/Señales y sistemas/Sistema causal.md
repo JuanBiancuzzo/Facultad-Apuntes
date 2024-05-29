@@ -14,3 +14,4 @@ Se dice que el sistema es anti-causal cuando su salida depende únicamente del p
 #### Nota
 ---
 Para aplicaciones de tiempo real, el sistema sí o sí tiene que ser causal.
+

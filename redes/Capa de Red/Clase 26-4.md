@@ -72,7 +72,7 @@ Resumen
 	Ahora los tier 1 y tier 2 queriendo tener clientes de stubs entonces se empezaron a agregar tiers y actualmente hay 82 niveles
 		Definimos el nivel por la cantidad de vecinos y el nivel de esos vecinos
 	
-	Los [[Redes de distribución de contenido (CDN)|CDN]] actúan como tier 1 por la necesidad de conexiones necesarias como google, netflix, facebook, etc. Se conectan a IXP y algunas tier 2 o tier 1. Entonces son de niveles muy alto porque tienen muchos vecinos y esos vecinos tienen muchos vecinos
+	Los [[Redes de distribución de contenido|CDN]] actúan como tier 1 por la necesidad de conexiones necesarias como google, netflix, facebook, etc. Se conectan a IXP y algunas tier 2 o tier 1. Entonces son de niveles muy alto porque tienen muchos vecinos y esos vecinos tienen muchos vecinos
 
 
 ### Protocolos de ruteo (internos)

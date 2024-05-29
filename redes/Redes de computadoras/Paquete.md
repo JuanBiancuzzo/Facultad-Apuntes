@@ -2,10 +2,15 @@
 dia: 2024-04-18
 materia: redes
 capitulo: 1
+aliases:
+  - Mensaje
+  - Segmento
+  - Datagrama
+  - Tramas
 ---
 ### Definición
 ---
-Los paquetes se transmiten a través de cada enlace de comunicaciones a una velocidad igual a la [[Velocidad de transmisión|velocidad de transmisión]] máxima del enlace
+Los paquetes se transmiten a través de cada enlace de comunicaciones a una velocidad igual a la [[Delay in packet switches#Tiempo de propagación|velocidad de transmisión]] máxima del enlace
 
 ```tikz
 \usetikzlibrary{decorations.pathreplacing}

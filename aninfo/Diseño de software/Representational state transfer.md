@@ -2,10 +2,13 @@
 dia: 2023-10-16
 materia: aninfo
 capitulo: 8
+aliases:
+  - API REST
+  - REST
 ---
 ### Definición
 ---
-Esta [[Aplicación Programming Interface (API)|API]] tiene los métodos
+Es un estilo de [[Arquitectura de aplicaciones|arquitectura de software]] para sistemas hipermedia distribuidos como la [[World Wide Web]]. Esta [[Aplicación Programming Interface|API]] tiene los métodos
 
 | Nombre | Descripción                       | General  |
 | ------ | --------------------------------- | -------- |

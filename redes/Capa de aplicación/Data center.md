@@ -5,7 +5,7 @@ capitulo: 2
 ---
 ### Definición
 ---
-Los data centers tiene miles de [[Servidor|servidores]] que en general las utilizan las [[Redes de distribución de contenido (CDN)|CDN]] como un centro de computo. Este [[Servicio|servicio]] que proveen se paga las conexiones y el [[Bandwidth|bandwidth]] de mandar información al data center.
+Los data centers tiene miles de [[Servidor|servidores]] que en general las utilizan las [[Redes de distribución de contenido|CDN]] como un centro de computo. Este [[Servicio|servicio]] que proveen se paga las conexiones y el [[Bandwidth|bandwidth]] de mandar información al data center.
 
 Establece un grupo de conveniencias
 * Elimina el tiempo de configurar un servidor propio
@@ -16,7 +16,7 @@ Establece un grupo de conveniencias
 #### Implementación
 ---
 * Enter deep
-	* Dentro de los [[Internet Service Providers (ISPs)|ISPs]]
+	* Dentro de los [[Internet Service Providers|ISPs]]
 	* Muchos lugares
 	* Más dificultad y costos de mantenimiento
 * Bring home

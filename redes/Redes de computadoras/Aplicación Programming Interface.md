@@ -2,6 +2,8 @@
 dia: 2024-04-19
 materia: redes
 capitulo: 1
+aliases:
+  - API
 ---
 ### Definición
 ---

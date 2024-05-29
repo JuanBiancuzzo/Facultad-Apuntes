@@ -7,3 +7,4 @@ aliases:
 ---
 ### Definición
 ---
+Es el punto de encuentro entre distintos [[Internet Service Providers|ISPs]]
