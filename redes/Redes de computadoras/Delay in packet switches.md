@@ -4,6 +4,7 @@ materia: redes
 capitulo: 1
 aliases:
   - Intensidad del tráfico
+  - Latencia
 ---
 ### Definición
 ---
@@ -14,7 +15,7 @@ A medida que un [[Paquete|paquete]] viaja de un nodo al siguiente, este sufre de
 * Tiempo de propagación
 
 El [[Round trip time|tiempo de ida y vuelta]] de un paquete, se puede calcular como $$ t_{total} = \sum_i t^i_{procesamiento} + t^i_{encolado} + t^i_{transmisión} + t^i_{propagación} $$
-Donde $i$ representa el i-esimo [[Router|router]] del camino hecho por el paquete
+Donde $i$ representa el i-esimo [[Router|router]] del camino hecho por el paquete. Esto también se denomina latencia
 
 #### Tiempo de procesamiento
 ---

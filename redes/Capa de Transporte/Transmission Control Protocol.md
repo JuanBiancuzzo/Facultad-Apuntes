@@ -61,3 +61,14 @@ El protocolo TCP tiene los siguientes parámetros
 
 #### Secuencia de cierre
 ---
+
+
+#### Socket programming
+---
+El protocolo TCP, por otro lado, es orientado a conexiones. Antes de que dos [[Host|hosts]] pueden comunicarse entre sí, está la fase de handshake
+
+Cuando se crea una conexión TCP, debe indicarse la dirección y el puerto de destino. De esta forma, para enviar información una vez creado el socket no es necesario indicar el destinatario 
+
+Una vez creado el [[Socket|socket]], el cliente inicia un handshake de tres pasos y establece una conexión con el [[Servidor|servidor]]. Primero el cliente le envía un mensaje a un servidor, que contiene un listening socket esperando a establecer conexiones con los clientes. Este, al recibir el mensaje, creará una conexión TCP particular para este cliente
+
+Desde el punto de vista de la aplicación, los sockets están directamente conectados a través de una tubería
