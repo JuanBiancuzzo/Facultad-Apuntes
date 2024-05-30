@@ -78,8 +78,9 @@ tags: materia
 * [[señales/Transformada discreta de Fourier/Convolución periódica.md|Convolución periódica]]
 * [[señales/Transformada discreta de Fourier/Fast Fourier Transform.md|Fast Fourier Transform]]
 
-##### Transformadas de Laplace y Z (1)
+##### Transformadas de Laplace y Z (2)
 ---
+* [[señales/Transformadas de Laplace y Z/Transformada Z.md|Transformada Z]]
 * [[señales/Transformadas de Laplace y Z/Región de convergencia de la transformada de Laplace.md|Región de convergencia de la transformada de Laplace]]
 
 ##### Filtros digitales (1)

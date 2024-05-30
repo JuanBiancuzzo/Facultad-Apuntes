@@ -52,5 +52,5 @@ Estas [[Red|redes]] son los Netflix, Google, etc. de distribuir contenido
 	* [[Ancho de banda|Ancho de banda]]
 	* Volumen de transferencia
 * Disponibilidad por redundancia
-	* Resiliencia ante [[Distributed Denial of Service (DDoS)|DDoS]]
+	* Resiliencia ante [[Denial of Service|DDoS]]
 	* Resiste congestiones

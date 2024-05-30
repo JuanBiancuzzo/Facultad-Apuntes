@@ -10,5 +10,5 @@ Una vez que el [[Malware|malware]] ha infectado un [[Host|dispositivo]], puede h
 #### Tipos de ataques
 ---
 * [[Denial of Service|Denegación de servicio]] 
-* [[Distributed Denial of Service (DDoS)|DoS distribuidos]]
+* [[Denial of Service|DoS distribuidos]]
 

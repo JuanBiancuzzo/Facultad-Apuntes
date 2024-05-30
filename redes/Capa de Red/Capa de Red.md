@@ -10,3 +10,5 @@ Responsable de trasladar los [[Paquete|paquetes]] de la capa de red, conocidos c
 El [[Protocolo|protocolo]] de la [[Capa de transporte|capa de transporte]] ([[Transmission Control Protocol|TCP]] o [[User Datagram Protocol|UDP]]) de un host de origen pasa un [[Paquete|segmento]] de la capa de transporte y una dirección de destino a la capa de red. Luego, la capa de red proporciona el servicio de suministrar el segmento a la capa de transporte del host de destino
 
 La capa de red incluye el conocido [[Internet Protocol Address|protocolo IP]], que define los capos del datagrama, así como la forma en que actúan lo hosts y los [[Router|routers]] sobre estos campos. La capa de red también contiene [[Enrutamiento|protocolos de enrutamiento]], que determinan las rutas que los datagramas siguen entre los orígenes y los destinos 
+
+El [[Internet Protocol Address|protocolo IP]] provee comunicación lógica entre hosts, ofrece un [[Servicio de best-effort delivery|servicio de best-effort delivery]]. Debido a esto se dice que el protocolo IP es un unreliable service

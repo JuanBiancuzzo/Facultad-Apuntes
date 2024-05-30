@@ -65,9 +65,9 @@ tags: materia
 
 ##### Capa de Transporte (10)
 ---
+* [[redes/Capa de Transporte/Servicio de best-effort delivery.md|Servicio de best-effort delivery]]
 * [[redes/Capa de Transporte/User Datagram Protocol.md|User Datagram Protocol]]
 * [[redes/Capa de Transporte/Transmission Control Protocol.md|Transmission Control Protocol]]
-* [[redes/Capa de Transporte/Distributed Denial of Service (DDoS).md|Distributed Denial of Service (DDoS)]]
 * [[redes/Capa de Transporte/Protocolo de entrega confiable.md|Protocolo de entrega confiable]]
 * [[redes/Capa de Transporte/Clase 26-3.md|Clase 26-3]]
 * [[redes/Capa de Transporte/Denial of Service.md|Denial of Service]]
