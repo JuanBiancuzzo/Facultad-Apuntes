@@ -6,9 +6,9 @@ capitulo: 3
 ### Definición
 ---
 La capa de transporte permite a las aplicaciones comunicarse
-* [[Multiplexar]]
+* [[Multiplexación y demultiplexación]]
 	* Mandar todos los mensajes al mismo socket 
-* [[Demultiplexar]] 
+* [[Multiplexación y demultiplexación]] 
 	* Agarrar todos los mensajes del socket y mandarlos a sus correspondientes procesos
 esto permite tener varias comunicaciones por un mismo medio (cable o aire)
 

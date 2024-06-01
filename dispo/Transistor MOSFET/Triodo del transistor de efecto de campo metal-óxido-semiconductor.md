@@ -80,9 +80,9 @@ $$ \begin{align}
 
 ### Calculo de la corriente
 ---
-Geometría del problema:
+Geometría del problema
 
-![[Geometría de un MOSFET.webp]]
+![[Saturación del transistor de efecto de campo metal-óxido-semiconductor#^6c03f5]]
 
 La corriente es uniforme y fluye en la dirección $y$ $$ I_y = W Q'_n(y) ~ v_y(y) $$ y como la corriente de Drain es inversa a la corriente del canal $$ I_D = -W Q'_n(y) ~ v_y(y) $$
 Reescribiendo en términos de la [[Tensión|tensión]] del canal $V_c(y)$

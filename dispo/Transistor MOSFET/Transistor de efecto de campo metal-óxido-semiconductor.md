@@ -52,12 +52,220 @@ Elementos claves
 ##### Canal-N
 ---
 Dispositivo de canal-n (n-MOSFET) sobre un substrato [[Impureza aceptora#Cantidad de dopante|tipo p]] (capa de inversión de [[Electrón|electrones]])
-![[MOSFET canal N.webp]]
+
+```tikz
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\begin{document} 
+	\begin{tikzpicture}[scale=1.1, transform shape, thick]
+		\begin{scope}[ultra thick]
+			\draw (-1, 0) -- ++(1, 0)
+				node[pos=0, above=2pt] {G};
+			\draw (0, 0.8) -- ++(0, -1.6);
+			\draw (0.3, 1) -- ++(0, -2);
+	
+			\draw (0.3, 0) -- ++(2, 0)
+				node[right=2pt] {B};
+			\draw (0.3, 0.6) -- ++(1, 0)
+				-- ++(0, 2)
+					node[above=2pt] {D};
+			\draw (0.3, -0.6) -- ++(1, 0)
+				-- ++(0, -2)
+					node[below=2pt] {S};
+		\end{scope}
+
+		\fill (-1, 0) circle (0.1)
+			node (gate) {};
+		\fill (1.3, 2.6) circle (0.1)
+			node (drain) {};
+		\fill (1.3, -2.6) circle (0.1)
+			node (source) {};
+		\fill (2.3, 0) circle (0.1)
+			node (body) {};
+
+		\tikzmath {
+			\sep = 0.3;
+			\dist = 1;
+		}
+
+		\draw[->] ($ (drain.center) + (-\sep, -\sep) $)
+			-- ++(0, -1)
+				node[midway, left=2pt] {$I_D$};
+
+		\draw[->] ($ (source.center) + (-\sep, 0) $)
+			.. controls
+				($ (source.center -| gate.center) + (\dist, 0) $)
+					and
+				($ (source.center -| gate.center) + (0, \dist) $)
+			.. ($ (gate.center) + (0, -\sep) $)
+				node[midway, below left=2pt] {$V_{GS}$};
+				
+		\draw[->] ($ (source.center) + (\sep, 0) $)
+			.. controls
+				($ (source.center -| body.center) + ({\dist / 4}, \dist) $)
+					and
+				($ (source.center -| body.center) + (0, {\dist * (7 / 4)}) $)
+			.. ($ (body.center) + (0, -\sep) $)
+				node[midway, left=2pt] {$V_{BS}$};
+
+		\draw[->] ($ (source.center) + (\sep, 0) $)
+			.. controls
+				($ (source.center) + ({2.5 * \dist}, 0) $)
+					and
+				($ (drain.center) + ({2.5 * \dist}, 0) $)
+			.. ($ (drain.center) + (\sep, 0) $)
+				node[midway, right=2pt] {$V_{DS} > 0$};
+	\end{tikzpicture}
+
+	\begin{tikzpicture}[scale=1.1, transform shape, thick]
+
+		\path (-1, 0) -- ++(-1, 0);
+ 
+		\begin{scope}[ultra thick]
+			\draw (-1, 0) -- ++(1, 0)
+				node[pos=0, above=2pt] {G};
+			\draw (0, 0.8) -- ++(0, -1.6);
+			\draw (0.3, 1) -- ++(0, -2);
+	
+			\draw (0.3, 0) -- ++(2, 0)
+				node[right=2pt] {B};
+			\draw (0.3, 0.6) -- ++(1, 0)
+				-- ++(0, 2)
+					node[above=2pt] {D};
+			\draw[->] (0.3, -0.6) -- ++(1, 0);
+			\draw (1.3, -0.6) -- ++(0, -2)
+					node[below=2pt] {S};
+		\end{scope}
+
+		\fill (-1, 0) circle (0.1)
+			node (gate) {};
+		\fill (1.3, 2.6) circle (0.1)
+			node (drain) {};
+		\fill (1.3, -2.6) circle (0.1)
+			node (source) {};
+		\fill (2.3, 0) circle (0.1)
+			node (body) {};
+
+		\tikzmath { \sep = 0.3; }
+
+		\draw[->] ($ (drain.center) + (-\sep, -\sep) $)
+			-- ++(0, -1)
+				node[midway, left=2pt] {$I_D$};
+	\end{tikzpicture}
+\end{document}
+```
 
 ##### Canal-P
 ---
 Dispositivo de canal-p (p-MOSFET) sobre un substrato [[Impureza donora#Cantidad de dopante|tipo n]] (capa de inversión de [[Hueco|huecos]])
-![[MOSFET canal P.webp]]
+
+```tikz
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\begin{document} 
+	\begin{tikzpicture}[scale=1.1, transform shape, thick]
+		\begin{scope}[ultra thick]
+			\draw (-1, 0) -- ++(0.75, 0)
+				node[pos=0, below=2pt] {G};
+			\draw (-0.15, 0) circle (0.1);
+			\draw (0, 0.8) -- ++(0, -1.6);
+			\draw (0.3, 1) -- ++(0, -2);
+	
+			\draw (0.3, 0) -- ++(2, 0)
+				node[right=2pt] {B};
+			\draw (0.3, 0.6) -- ++(1, 0)
+				-- ++(0, 2)
+					node[above=2pt] {S};
+			\draw (0.3, -0.6) -- ++(1, 0)
+				-- ++(0, -2)
+					node[below=2pt] {D};
+		\end{scope}
+
+		\fill (-1, 0) circle (0.1)
+			node (gate) {};
+		\fill (1.3, 2.6) circle (0.1)
+			node (source) {};
+		\fill (1.3, -2.6) circle (0.1)
+			node (drain) {};
+		\fill (2.3, 0) circle (0.1)
+			node (body) {};
+
+		\tikzmath {
+			\sep = 0.3;
+			\dist = 1;
+		}
+
+		\draw[->] ($ (drain.center) + (-\sep, \sep) $)
+			-- ++(0, 1)
+				node[midway, left=2pt] {$I_D$};
+
+		\draw[<-] ($ (source.center) + (-\sep, 0) $)
+			.. controls
+				($ (source.center -| gate.center) + (\dist, 0) $)
+					and
+				($ (source.center -| gate.center) + (0, -\dist) $)
+			.. ($ (gate.center) + (0, \sep) $)
+				node[midway, above left=2pt] {$V_{SG}$};
+				
+		\draw[<-] ($ (source.center) + (\sep, 0) $)
+			.. controls
+				($ (source.center -| body.center) + ({\dist / 4}, -\dist) $)
+					and
+				($ (source.center -| body.center) + (0, {-\dist * (7 / 4)}) $)
+			.. ($ (body.center) + (0, \sep) $)
+				node[midway, left=2pt] {$V_{SB}$};
+
+		\draw[<-] ($ (source.center) + (\sep, 0) $)
+			.. controls
+				($ (source.center) + ({2.5 * \dist}, 0) $)
+					and
+				($ (drain.center) + ({2.5 * \dist}, 0) $)
+			.. ($ (drain.center) + (\sep, 0) $)
+				node[midway, right=2pt] {$V_{SD} > 0$};
+	\end{tikzpicture}
+
+	\begin{tikzpicture}[scale=1.1, transform shape, thick]
+
+		\path (-1, 0) -- ++(-1, 0);
+ 
+		\begin{scope}[ultra thick]
+			\draw (-1, 0) -- ++(1, 0)
+				node[pos=0, below=2pt] {G};
+			\draw (0, 0.8) -- ++(0, -1.6);
+			\draw (0.3, 1) -- ++(0, -2);
+	
+			\draw (0.3, 0) -- ++(2, 0)
+				node[right=2pt] {B};
+			\draw[<-] (0.3, 0.6) -- ++(1, 0);
+			\draw (1.3, 0.6) -- ++(0, 2)
+					node[above=2pt] {S};
+			\draw (0.3, -0.6) -- ++(1, 0)
+				-- ++(0, -2)
+					node[below=2pt] {D};
+		\end{scope}
+
+		\fill (-1, 0) circle (0.1)
+			node (gate) {};
+		\fill (1.3, 2.6) circle (0.1)
+			node (source) {};
+		\fill (1.3, -2.6) circle (0.1)
+			node (drain) {};
+		\fill (2.3, 0) circle (0.1)
+			node (body) {};
+
+		\tikzmath { \sep = 0.3; }
+
+		\draw[->] ($ (drain.center) + (-\sep, \sep) $)
+			-- ++(0, 1)
+				node[midway, left=2pt] {$I_D$};
+	\end{tikzpicture}
+\end{document}
+```
+
 
 #### Regímenes de operación
 ---

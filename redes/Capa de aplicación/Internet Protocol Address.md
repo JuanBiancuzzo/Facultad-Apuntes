@@ -5,6 +5,7 @@ capitulo: 2
 aliases:
   - IP
   - IP address
+  - Protocolo IP
 ---
 ### Definición
 ---

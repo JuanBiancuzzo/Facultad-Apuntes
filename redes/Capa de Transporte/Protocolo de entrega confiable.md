@@ -2,6 +2,9 @@
 dia: 2024-05-28
 materia: redes
 capitulo: 3
+aliases:
+  - Principio de entrega confiable
+  - Principles of reliable data transfer
 ---
 ### Definición
 ---
