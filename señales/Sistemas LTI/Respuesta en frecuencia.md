@@ -2,6 +2,8 @@
 dia: 2023-11-17
 materia: señales
 capitulo: 2
+aliases:
+  - Respuesta al impulso
 ---
 ### Definición
 ---
