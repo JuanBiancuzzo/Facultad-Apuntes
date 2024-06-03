@@ -40,12 +40,29 @@ El protocolo TCP tiene la siguiente estructura
  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 ```
 
+Como el [[User Datagram Protocol|protocolo UDP]], el header de TCP contiene los puertos de origen y destino, y un campo de [[Detección de errores|checksum]]. Además, contiene los siguientes campos
+* Número de secuencia
+* Número de acknowledgment
+* Campo de receive window
+* Campo de header length 
+* Campos opcionales
+* Campo de flags
+	* [[Protocolo de entrega confiable|ACK]] bit
+		* Indica que el valor almacenado en el campo de acknowledgment es válido
+	* RST, SYN, FIN bit
+		* Utilizamos en la [[Transmission Control Protocol#Three-Way Handshake|secuencia de inicio]] y la [[Transmission Control Protocol#Secuencia de cierre|secuencia de cierre]] de la conexión 
+	* CWR, ECE bit
+		* Utilizados en las [[Control de congestión#^d695dd|notificaciones explícitas de congestión]]
+	* PSH bit
+		* Indica que el receptor de enviar los datos de la capa de arriba de forma inmediata
+	* URG bit
+		* Indica que hay información en el segmento que es marcada como segmento. La dirección del último bit de información urgente es indicado en el urgent data pointer field
 
 #### Parámetros del protocolo
 ---
 El protocolo TCP tiene los siguientes parámetros
 * `size`: Que indica el tamaño del archivo que se debe enviar
-* `MSS`: Es el tamaño máximo de los segmentos. Se usa este valor como unidad para el análisis
+* `MSS (Maximum segment size)`: Es el tamaño máximo de los segmentos. Se usa este valor como unidad para el análisis
 * `LW`: Es el valor que toma la ventana de congestión luego de una perdida, al volver a la etapa de slow start. En general toma un valor de `1 MSS`.
 * `IW`: Es el valor que toma la ventana de congestión al inicio del protocolo
 * `RTO`: Es el tiempo establecido para los timer interrupts del ACK de los paquetes
@@ -57,11 +74,119 @@ El protocolo TCP tiene los siguientes parámetros
 
 #### Three-Way Handshake
 ---
+Debido a que se envían tres segmentos de información al establecer la conexión, se refiere usualmente como three-way handshake. Los primeros dos segmentos no contienen información de la aplicación, mientras que el último puede hacerlo
 
+En el primer mensaje tiene la flag de SYN prendido, por eso se lo llama mensaje SYN, y también se manda el número de secuencia, el tamaño de la ventana, el MSS, entre otras cosas.
+
+El recibe el segundo mensaje, el flag de SYN y de ACK están prendido, por eso se lo llama mensaje SYN ACK, y el receptor envía la información necesaria, los mencionados anteriormente 
+
+El último mensaje de los tres, el flag de ACK está prendido, y este se llama mensaje ACK ACK
 
 #### Secuencia de cierre
 ---
+Cualquiera de los dos [[Proceso|procesos]] puede elegir terminar la conexión, al ocurrir esto, se liberan los recursos utilizados en la misma
+1. El emisor envía un close command, con el FIN bit prendido
+2. El receptor lo recibe y envía un ACK para el segmento recibido
+3. El receptor envía su propio segmento de cierre, con el Fin bit prendido
+4. Finalmente, el cliente envía el ACK para el segmento de cierre y ambos hosts liberan los recursos utilizados
 
+#### Diagrama de estado del emisor
+---
+```tikz
+\usetikzlibrary{shapes, shapes.geometric, arrows.meta, automata, positioning}
+
+\begin{document} 
+	\begin{tikzpicture}[
+		shorten >=1pt,
+		node distance=4cm,
+		on grid,>={Stealth[round]},
+		every state/.style={draw, ellipse},
+		accepting/.style=accepting by arrow,
+		scale=1.1, transform shape,
+		ultra thick
+	]
+	
+	\node[state] (closed)                                  {CLOSED};
+	\node[state] (syn_sent)    [below right=of closed]     {SYN\_SENT};
+	\node[state] (established) [below=of syn_sent]         {ESTABLISHED};
+	\node[state] (fin_wait_1)  [below left=of established] {FIN\_WAIT\_1};
+	\node[state] (fin_wait_2)  [above left=of fin_wait_1]  {FIN\_WAIT\_2};
+	\node[state] (time_wait)   [above=of fin_wait_2]       {TIME\_WAIT};
+
+	\path[->] (closed) edge[bend left]
+			node[pos=0.3, above right=2pt] {Inicia la conexión}
+			node[pos=0.8, right=2pt] {Enviar mensaje SYN}  
+			(syn_sent)
+		(syn_sent) edge
+			node[align=center, right=2pt] {Recibe SYN ACK\\Envia ACK ACK}
+			(established)
+		(established) edge[bend left] 
+			node[pos=0.3, right=2pt] {Envia FIN}
+			node[pos=0.8, below right=2pt] {Se inicial el cierre} 
+			(fin_wait_1)
+		(fin_wait_1) edge[bend left]
+			node[align=center, below left=2pt] {Recibe ACK\\No se envia nada}
+			(fin_wait_2)
+		(fin_wait_2) edge
+			node[align=center, left=2pt] {Recibe FIN\\Envia ACK}
+			(time_wait)
+		(time_wait) edge[bend left]
+			node[above left=2pt] {Espera 30 segundos}
+			(closed);
+	  
+	\end{tikzpicture}
+\end{document}
+```
+
+El último estado del cliente se utiliza para reenviar un ACK en caso de que este se haya perdido en la red
+
+Cuando un cliente envía un SYN SEGMENT a una dirección y puerto en el que no hay ningún [[Socket|listening socket]], este le reenviará un segmento especial de reset con el RST bit prendido
+
+#### Diagrama de estado del receptor
+---
+```tikz
+\usetikzlibrary{shapes, shapes.geometric, arrows.meta, automata, positioning}
+
+\begin{document} 
+	\begin{tikzpicture}[
+		shorten >=1pt,
+		node distance=4cm,
+		on grid,>={Stealth[round]},
+		every state/.style={draw, ellipse},
+		accepting/.style=accepting by arrow,
+		scale=1.1, transform shape,
+		ultra thick
+	]
+	
+	\node[state] (closed)                                  {CLOSED};
+	\node[state] (listen)      [below right=of closed]     {LISTEN};
+	\node[state] (syn_rcvd)    [below=of listen]           {SYN\_RCVD};
+	\node[state] (established) [below left=of syn_rcvd]    {ESTABLISHED};
+	\node[state] (close_wait)  [above left=of established] {CLOSE\_WAIT};
+	\node[state] (last_ack)    [above=of close_wait]       {LAST\_ACK};
+
+	\path[->] (closed) edge[bend left] 
+			node[above right=2pt] {Se crea un listen socket}
+			(listen)
+		(listen) edge
+			node[align=center, right=2pt] {Recibe SYN\\Envia SYN ACK}
+			(syn_rcvd)
+		(syn_rcvd) edge[bend left] 
+			node[align=center, below right=2pt] {Recibe ACK\\No se envia nada} 
+			(established)
+		(established) edge[bend left]
+			node[align=center, below left=2pt] {Recibe FIN\\Envia ACK}
+			(close_wait)
+		(close_wait) edge
+			node[left=2pt] {Envia FIN}
+			(last_ack)
+		(last_ack) edge[bend left]
+			node[align=center, above left=2pt] {Recibe ACK\\No se envia nada}
+			(closed);
+	  
+	\end{tikzpicture}
+\end{document}
+```
 
 #### Socket programming
 ---

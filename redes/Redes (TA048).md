@@ -63,8 +63,10 @@ tags: materia
 * [[redes/Capa de aplicación/Arquitectura cliente servidor.md|Arquitectura cliente servidor]]
 * [[redes/Capa de aplicación/Arquitectura peer-to-peer.md|Arquitectura peer-to-peer]]
 
-##### Capa de Transporte (18)
+##### Capa de Transporte (20)
 ---
+* [[redes/Capa de Transporte/Control de flujo.md|Control de flujo]]
+* [[redes/Capa de Transporte/Control de congestión.md|Control de congestión]]
 * [[redes/Capa de Transporte/Recovery time objective.md|Recovery time objective]]
 * [[redes/Capa de Transporte/Protocolo Selective Repeat.md|Protocolo Selective Repeat]]
 * [[redes/Capa de Transporte/Protocolo Go-Back-N.md|Protocolo Go-Back-N]]
