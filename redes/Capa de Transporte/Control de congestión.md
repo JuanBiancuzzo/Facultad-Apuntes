@@ -22,8 +22,6 @@ Cuando un paquete es perdido a lo largo de un camino, la capacidad de transmisi�
 Examinemos algunos enfoques específicos de [[Transmission Control Protocol|TCP]] para lidiar con el control de congestión
 * End-to-end
 	* En este enfoque, de control de congestión, la [[Capa de Red|capa de red]] no provee soporte explícito a la capa de transporte, incluso la presencia de congestión debe ser inferida por los [[Host|hosts]] en función del comportamiento observado
-* Network-assisted ^d695dd
-	* En este enfoque, de control de flujo, los [[Router|router]] proveen feedback explícito a los [[Host|hosts]] respecto al estado de congestión de la red. Existen dos formas para un router de comunicarse con los hosts
-		* Consiste en enviar notificaciones en la forma de un choke packet
-		* Consiste en actualizar un campo en los paquetes que viajan entre los hosts para indicar congestión
+* Network-assisted
+	* ![[Explicit congestion notification#Definición]]
 

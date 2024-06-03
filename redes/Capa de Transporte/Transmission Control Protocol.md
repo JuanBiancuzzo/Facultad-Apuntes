@@ -14,6 +14,8 @@ Para proveer una [[Protocolo de entrega confiable|entrega confiable]], utiliza
 * Un [[Transmission Control Protocol#Three-Way Handshake|handshake]]
 * Una [[Transmission Control Protocol#Secuencia de cierre|secuencia de cierre]]
 
+Además suma un [[Control de congestión de Transmission Control Protocol|control de congestión]]
+
 #### Estructura del protocolo
 ---
 El protocolo TCP tiene la siguiente estructura
@@ -52,7 +54,7 @@ Como el [[User Datagram Protocol|protocolo UDP]], el header de TCP contiene los 
 	* RST, SYN, FIN bit
 		* Utilizamos en la [[Transmission Control Protocol#Three-Way Handshake|secuencia de inicio]] y la [[Transmission Control Protocol#Secuencia de cierre|secuencia de cierre]] de la conexión 
 	* CWR, ECE bit
-		* Utilizados en las [[Control de congestión#^d695dd|notificaciones explícitas de congestión]]
+		* Utilizados en las [[Explicit congestion notification|notificaciones explícitas de congestión]]
 	* PSH bit
 		* Indica que el receptor de enviar los datos de la capa de arriba de forma inmediata
 	* URG bit
@@ -71,6 +73,18 @@ El protocolo TCP tiene los siguientes parámetros
 * `rwnd`: Es el valor de la ventana de recepción del host del otro lado de la conexión. Representa la cantidad de paquetes que puede a lo sumo tener en vuelo
 * `version`: Puede ser [[Tahoe|Tahoe]] o [[Reno|Reno]]
 
+#### Entrega confiable
+---
+TCP entonces crea un servicio confiable de transferencia de datos encima del [[Servicio de best-effort delivery|servicio best-effort]] del [[Internet Protocol Address|IP]]
+
+Si bien conceptualmente podemos asumir la utilización de un timer por paquete, en la práctica esto es muy costoso, por lo que se suele utilizar un único timer de retransmisión para múltiples paquetes transmitidos no todavía confirmados
+
+Usa alguno de los siguientes métodos para asegurar este servicio
+* Retransmisión después de un [[Recovery time objective|timeout]]
+* Duplicar el timeout por cada perdida, y reducirla cuando lleguen más rápido
+* El uso de [[Fast Retransmit|fast retransmit]]
+* El uso de [[Protocolo Go-Back-N|Go-Back N]]
+* El uso de [[Protocolo Selective Repeat|Selective Repeat]]
 
 #### Three-Way Handshake
 ---
@@ -187,6 +201,29 @@ Cuando un cliente envía un SYN SEGMENT a una dirección y puerto en el que no h
 	\end{tikzpicture}
 \end{document}
 ```
+
+
+#### Control de flujo
+---
+Cuando una conexión TCP recibe información correcta y en secuencia, la coloca en el receive buffer. Si la aplicación es relativamente lenta en leer esta información, el receptor puede fácilmente causar un overflow en el buffer de lectura. El servicio de [[Control de flujo|control de flujo]] elimina la posibilidad de que esto ocurra, provee un servicio de speed-matching para emparejar la velocidad de lectura con la velocidad de bajada. Este servicio el distinto al de [[Control de congestión|control de congestión]], ambos producen el mismo efecto, pero por razones distintas
+
+Para implementar este mecanismo, un host mantener la siguiente información
+* `LastByteRead`
+	* El número del último byte que fue leído por la aplicación
+* `LastByteRcvd`
+	* El número del último byte que fue recibido a través de la red
+* `rwnd`
+	* También conocida como receiver window. Definida a partir de las anteriores variables como el espacio libre en el buffer
+
+El host agregará este último campo a los paquetes transferidos a través de la red, para comunicarle al otro host del estado actual del buffer. Este a su vez deberá mantener las siguientes variables
+* `LastByteSend`
+	* El número del último byte que fue enviado a través de internet
+* `LastByteAck`
+	* El número del último byte que fue confirmado por el host
+
+A partir de estos dos valores, podremos calcular la cantidad de datos sin verificar que fueron enviados. El protocolo tratará de que esta cantidad nunca sea mayor al tamaño de la ventana del receptor
+
+Para permitir que un host que únicamente recibe información le comunique al otro host su window, entonces este valor también se agregara a los mensajes de ACK
 
 #### Socket programming
 ---

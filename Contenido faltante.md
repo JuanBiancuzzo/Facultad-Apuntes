@@ -18,7 +18,7 @@ Lista de archivos que existen referencias pero no existe el archivo
 		.filter(([_, outlink]) => {
 			let ext = outlink.path.split(".");
 			ext = ext[ext.length - 1];
-			if (ext == "webp" || ext == "png" || ext == ".canvas")
+			if (ext == "webp" || ext == "png" || ext == "canvas")
 				return false;
 			return dv.page(outlink.path) === undefined;
 		})
@@ -28,7 +28,13 @@ Lista de archivos que existen referencias pero no existe el archivo
 				.rows
 				.groupBy(grupo => grupo[0])
 				.values
-				.map(grupo => grupo.key);
+				.map(group => group.key);
+				
+			let cantidad = materias_relacionadas.length;
+			
+			materias_relacionadas = materias_relacionadas.map(carpeta => {
+				return `${carpeta} (${cantidad})`;
+			});
 			
 			return [archivo.key, materias_relacionadas];
 		})
