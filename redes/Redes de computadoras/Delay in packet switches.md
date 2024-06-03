@@ -5,6 +5,7 @@ capitulo: 1
 aliases:
   - Intensidad del tráfico
   - Latencia
+  - Delay
 ---
 ### Definición
 ---

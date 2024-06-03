@@ -10,7 +10,7 @@ aliases:
 Es un [[Protocolo|protocolo]] de [[Capa de transporte|capa de transporte]] que implementa un [[Protocolo de entrega confiable|protocolo de entrega confiable]]
 
 Para proveer una [[Protocolo de entrega confiable|entrega confiable]], utiliza
-* Un [[Paquete|segmento]] ACK para indicarle al otro extremo de la conexión que recibió correctamente el segmento
+* Un [[Paquete|segmento]] [[Protocolo de entrega confiable|ACK]] para indicarle al otro extremo de la conexión que recibió correctamente el segmento
 * Un [[Transmission Control Protocol#Three-Way Handshake|handshake]]
 * Una [[Transmission Control Protocol#Secuencia de cierre|secuencia de cierre]]
 

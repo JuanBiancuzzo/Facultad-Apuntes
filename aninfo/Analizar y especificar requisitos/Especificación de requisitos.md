@@ -16,7 +16,7 @@ Para los [[Requisito de usuario|requisitos de usuario]] tenemos
 ![[Especificación de requisitos del usuario (URD)#Definición]]
 
 Para los [[Requisito de software|requisitos de software]] tenemos
-![[Especificación de requisitos de software (SRS)#Definición]]
+![[Especificación de requisitos de software#Definición]]
 
 Para los [[Requisito del sistema|requisitos de sistema]] tenemos
 ![[Especificación de requisitos de sistema#Definición]]

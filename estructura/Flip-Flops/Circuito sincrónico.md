@@ -5,7 +5,7 @@ capitulo: 6
 ---
 ### Definición
 ---
-Es aquel [[Circuito secuencial]] que su comportamiento cambia únicamente cuando se lo indica con una señal que llamaremos reloj o clock.
+Es aquel [[Circuito secuencial|circuito secuencial]] que su comportamiento cambia únicamente cuando se lo indica con una señal que llamaremos reloj o clock.
 
 A pesar de ser sincrónicos, suelen tener entradas [[Circuito asincrónico|asincrónicas]], estas siendo 
 * Preset
