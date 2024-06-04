@@ -28,7 +28,33 @@ Entonces, como dijimos $$ i_d = \frac{\partial i_D}{\partial v_D} \Biggm|_{v_D=V
 Definimos $g_d \equiv$ [[Conductancia dinámica|conductancia dinámica]] $[g_d] = S$
 
 Produciendo el circuito equivalente
-![[Circuito equivalente de resistencias de pequeña señal del diodo.webp]]
+
+```tikz
+\usepackage[
+	straightvoltages,
+	americancurrents,
+	americanresistors, 
+	americaninductors, 
+	americanports, 
+	americangfsurgearrester
+]{circuitikz} 
+
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\ctikzset{
+	resistors/scale=0.7,
+	capacitors/scale=0.7,
+}
+
+\begin{document} 
+	\begin{circuitikz}[voltage shift=0.5, scale=1.3, transform shape, thick]
+		\draw (0, 0) to[R, l^=$g_d$, o-o] (0, -2);
+	\end{circuitikz}
+\end{document}
+```
+
 
 ##### Modelo para altas frecuencias
 ---
@@ -38,7 +64,42 @@ Donde se definen dos capacidades
 * $C_j \equiv$ [[Capacidad de juntura]] $[C_j] = F$
 * $C_d \equiv$ [[Capacidad de difusión]] $[C_d] = F$
 
-![[Modelo de pequeña señal diodo completo.webp]]
+```tikz
+\usepackage[
+	straightvoltages,
+	americancurrents,
+	americanresistors, 
+	americaninductors, 
+	americanports, 
+	americangfsurgearrester
+]{circuitikz} 
+
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\ctikzset{
+	resistors/scale=0.7,
+	capacitors/scale=0.7,
+}
+
+\begin{document} 
+	\begin{circuitikz}[voltage shift=0.5, scale=1.3, transform shape, thick]
+		\draw (0, -1) to[short, o-] ++(0, 1)
+			to[C, l_=$C_j$] ++(0, 2)
+			to[short, -o] ++(0, 1);
+
+		\draw (0, 0) to[short, *-] ++(1.5, 0)
+			to[C, l_=$C_d$] ++(0, 2)
+			to[short, -*] ++(-1.5, 0);
+
+		\draw (0, 0) to[short, *-] ++(-1.5, 0)
+			to[R, l_=$g_d$] ++(0, 2)
+			to[short, -*] ++(1.5, 0);
+
+	\end{circuitikz}
+\end{document}
+```
 
 #### Rango de validez
 ---

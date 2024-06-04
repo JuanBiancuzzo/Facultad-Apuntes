@@ -5,10 +5,46 @@ capitulo: 2
 ---
 ### Definición
 ---
-Un [[Circuito eléctrico|circuito]] RL de [[Circuito de primer orden|primer orden]] es un circuito eléctrico compuesto de un [[Inductor]] y un [[Capacitor]].
+Un [[Circuito eléctrico|circuito]] RL de [[Circuito de primer orden|primer orden]] es un circuito eléctrico compuesto de un [[Inductor|inductor]] y un [[Capacitor|capacitor]]
 
 ##### Esquematización
-![[Circuito RL.webp]]
+---
+
+```tikz
+\usepackage[
+	americanvoltages,
+	americancurrents,
+	americanresistors, 
+	americaninductors, 
+	americanports, 
+	americangfsurgearrester
+]{circuitikz} 
+
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\ctikzset{
+	resistors/scale=0.7,
+	capacitors/scale=0.7,
+	inductors/scale=0.7,
+	cute inductors,
+}
+
+\begin{document} 
+	\begin{circuitikz}[voltage shift=0.5, scale=1.7, transform shape, thick,
+		loops/.style={circuitikz/inductors/coils=#1}
+	]
+		\draw (0, 0) node[ground] {} to[short, *-] ++(-1, 0)
+			to[L, loops=4, l^=$L$, v=$v_L$] ++(0, 2)
+			to[short, -o] ++(1, 0)
+			to[short, o-] ++(1, 0)
+			to[R, l_=$R$, v^=$v_R$] ++(0, -2)
+			to[short] ++(-1, 0);
+	\end{circuitikz}
+\end{document}
+```
+
 
 #### Análisis
 ---
