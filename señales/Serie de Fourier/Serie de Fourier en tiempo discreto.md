@@ -5,7 +5,7 @@ capitulo: 3
 ---
 ### Definición
 ---
-Una [[Señal|señal]] periódica en tiempo discreto satisface $$ x[n] = x[n + N], ~ \forall n \in \mathbb{Z} $$ donde $N$ es el periodo. Consideremos las [[Función exponencial|exponenciales discretas]] con frecuencias fundamentales $k ~ \omega_0$ $$ f_k[n] = \exp(j k \omega_0 n), ~ \forall k \in \mathbb{Z} $$
+Una [[Señal|señal]] periódica en tiempo discreto satisface $$ x[n] = x[n + N], ~ \forall n \in \mathbb{Z} $$ donde $N$ es el periodo. Consideremos las [[Función exponencial|exponenciales discretas]] con frecuencias fundamentales $k ~ \omega_0$ $$ f_k[n] = e^{j k \omega_0 n}, ~ \forall k \in \mathbb{Z} $$
 Donde tenemos que acordarnos la propiedad ![[Función exponencial#Ambigüedad discreta]]
 De esta forma la serie de Fourier en tiempo discreto no es una [[Serie|serie]] sino una suma finita $$ x[n] = \sum_{k = \langle N \rangle} a_k ~ f_k[n] $$ donde la notación $k = \langle N \rangle$ significa que la suma se extiende por $N$ valores consecutivos de $k$
 

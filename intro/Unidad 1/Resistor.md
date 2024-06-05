@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-Es el elemento que introduce una [[Resistencia]] en un circuito eléctrico
+Es el elemento que introduce una [[Resistencia|resistencia]] en un circuito eléctrico
 
 ##### Simbología
 ---

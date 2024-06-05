@@ -1,7 +1,7 @@
 ---
-dia: 2024-02-28
-materia: dispo
-capitulo: 8
+dia: 2024-06-04
+materia: circuitos
+capitulo: 4
 aliases:
   - Insulated-gate bipolar transistor
   - IGBT

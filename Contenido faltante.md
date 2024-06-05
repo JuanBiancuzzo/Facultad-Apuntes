@@ -26,20 +26,30 @@ Lista de archivos que existen referencias pero no existe el archivo
 		.map(archivo => {
 			let materias_relacionadas = archivo
 				.rows
-				.groupBy(grupo => grupo[0])
-				.values
-				.map(group => group.key);
-				
-			let cantidad = materias_relacionadas.length;
-			
-			materias_relacionadas = materias_relacionadas.map(carpeta => {
-				return `${carpeta} (${cantidad})`;
-			});
-			
-			return [archivo.key, materias_relacionadas];
-		})
-		.sort(([_, relacionadas]) => -relacionadas.length);
+				.groupBy(([carpeta, _]) => carpeta)
+				.map(grupo => [grupo.key, grupo.rows.length]);
 
-	dv.table(["Archivo", "Materias relacionados"], archivos)
+			let nombres = materias_relacionadas
+				.slice() // Hacemos una copia
+				.sort(([_, largo]) => -largo)
+				.map(([carpeta, largo]) => {
+					return `${carpeta} (${largo})`;
+				});
+
+			let cantidad = materias_relacionadas
+				.map(([_, largo]) => largo)
+				.values
+				.reduce((acum, actual) => acum + actual, 0);
+
+			return [archivo.key, nombres, cantidad];
+		})
+		.sort(([_, _1, cantidad]) => -cantidad);
+
+	dv.table(
+		["Archivo", "Materias relacionados"], 
+		archivos.map(([archivo, materias_relacionadas, _]) => {
+			return [archivo, materias_relacionadas];
+		})
+	);
 ```
 

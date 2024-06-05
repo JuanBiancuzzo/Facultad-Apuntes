@@ -25,3 +25,16 @@ Examinemos algunos enfoques específicos de [[Transmission Control Protocol|TCP]
 * Network-assisted
 	* ![[Explicit congestion notification#Definición]]
 
+#### Fairness
+---
+Un mecanismo de control de congestión se dice que es justo si la tasa de transmisión promedio común para todas las conexiones. Todas obtienen una porción equitativa del [[Ancho de banda|ancho de banda]] del enlace
+
+Si bien el [[Algoritmo|algoritmo]] de control de congestión en la teoría es justo. En la práctica, los [[Host|hosts]] con menos [[Round trip time|RTT]] tienden a obtener mejor [[Throughput de una red|throughput]] que aquellos con mayor RTT
+
+##### Fairness con UDP
+---
+Muchas aplicaciones de multimedia prefieren utilizar [[User Datagram Protocol|UDP]] para que su tasa de transmisión no se vea entorpecida por el mecanismo de control de congestión. Desde la perspectiva de [[Transmission Control Protocol|TCP]], estas aplicaciones multimedia no están siendo justas con el resto de usuarios
+
+##### Fairness con TCP
+---
+Incluso si podemos forzar a que el [[Tráfico|tráfico]] de UDP se comporte de forma justa, el problema no está totalmente resuelto. Nada impide a una aplicación basada en TCP de utilizar múltiples conexiones paralelas, efectivamente obteniendo una mayor porción del [[Bandwidth|bandwidth]] en un medio congestionado
