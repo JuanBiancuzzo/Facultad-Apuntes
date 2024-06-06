@@ -5,7 +5,7 @@ capitulo: 5
 ---
 ### Definición
 ---
-El teorema de máxima transferencia de [[intro/Unidad 5/Potencia|potencia]] establece que, dada una fuente, con un [[Resistor]] de fuente fijado de antemano, el resistor de carga que maximiza la transferencia de potencia es aquel con un valor igual al resistor de fuente.
+El teorema de máxima transferencia de [[Potencia|potencia]] establece que, dada una fuente, con un [[Resistor]] de fuente fijado de antemano, el resistor de carga que maximiza la transferencia de potencia es aquel con un valor igual al resistor de fuente.
 
 Es decir, se toma un [[Circuito eléctrico|circuito]] equivalente como en el [[Teorema de Thevenin]], en donde el resistor de carga para maximizar la potencia que disipa, debe cumplir que:
 $$

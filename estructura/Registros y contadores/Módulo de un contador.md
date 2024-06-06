@@ -5,4 +5,4 @@ capitulo: 7
 ---
 ### Definición
 ---
-El módulo de un contador se lo puede entender como la cantidad de [[intro/Unidad 1/Nodo|nodos]] en el ciclo en el que este, de en su [[Diagrama de estado]].
+El módulo de un contador se lo puede entender como la cantidad de [[Nodo|nodos]] en el ciclo en el que este, de en su [[Diagrama de estado]].

@@ -5,7 +5,7 @@ capitulo: 5
 ---
 ### Definición
 ---
-[[intro/Unidad 5/Potencia|Potencia]] maxima que puede disipar el [[Resistor]] sin sufrir deterioro.
+[[Potencia|Potencia]] maxima que puede disipar el [[Resistor]] sin sufrir deterioro.
 
 ##### Características
 - A mayor resistor, mayor potencia nominal.

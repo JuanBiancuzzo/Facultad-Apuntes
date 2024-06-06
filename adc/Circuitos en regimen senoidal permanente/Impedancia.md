@@ -15,7 +15,7 @@ capitulo: 3
 
 Se define la impedancia como $$ \boxed{Z = \frac{V}{I} ~ \text{osea} ~ V = Z ~ I} $$
 Existe una equivalencia entre el dominio temporal y el dominio [[Fasor|fasorial]], por razón, los teoremas y herramientas de [[Análisis de circuitos (6606)|análisis de circuitos]] que vimos hasta ahora, también tienen su equivalente fasorial
-* [[Ley de Ohm|Ley de ohm]], [[Ley de Nodos de Kirchhoff|ley de nodos]] y [[Ley de Mallas de Kirchhoff|ley de mallas]] de Kirchoff
+* [[Ley de Ohm|Ley de ohm]], [[Ley de Nodos de Kirchhoff|ley de nodos]] y [[Ley de mallas de Kirchhoff|ley de mallas]] de Kirchoff
 * [[Divisor de tensión]] y [[Divisor de corriente|corriente]]
 * [[Teorema de Thevenin|Equivalente de Thevenin]] y [[Teorema de Norton|Norton]]
 * [[Principio de superposición|Superposición]]

@@ -52,7 +52,7 @@ Nos interesa conocer la relación entre la tensión y la corriente del elemento,
 \end{CD} $$
 Notemos que la tensión sobre un capacitor debe ser continua
 
-#### [[intro/Unidad 5/Potencia|Potencia]] instantánea
+#### [[Potencia|Potencia]] instantánea
 ---
 El calculo de la potencia esta dada por $$ p = v~i = Cv\frac{dv}{dt} $$
 

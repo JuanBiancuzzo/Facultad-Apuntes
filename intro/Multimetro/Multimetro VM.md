@@ -4,7 +4,7 @@ materia: intro
 ---
 ### Definición
 ---
-El multimetro de valor medio es un tipo de [[multímetro]] que “sólo sabe” calcular valor medio
+El multimetro de valor medio es un tipo de [[Multímetro]] que “sólo sabe” calcular valor medio
 
 #### Modos
 ---
