@@ -5,7 +5,7 @@ capitulo: 15
 ---
 ### Definición
 ---
-Sea $\mathcal{F} : L^1(\mathbb{R}, \mathbb{C}) \to C_\bullet^0(\mathbb{R}, \mathbb{C})$ la [[Transformación lineal|transformación lineal]] (donde $L^1$ es el [[Conjunto de Lebesgue de orden n|conjunto de Lebesgue]] de orden $1$, y $C_\bullet^0$ es el [[Conjunto de Lebesgue de orden n|Conjunto de Lebesgue]] de orden $\infty$) tal que $\mathcal{F}(f) = \hat{f}$  bien definida donde su [[Transformada de Fourier|transformada de Fourier]] $\hat{f}$ es [[Función continua|continua]] y verifica el [[Semana 15/Lema de Riemann-Lebesgue|lema de Riemann-Lebesgue]]
+Sea $\mathcal{F} : L^1(\mathbb{R}, \mathbb{C}) \to C_\bullet^0(\mathbb{R}, \mathbb{C})$ la [[Transformación lineal|transformación lineal]] (donde $L^1$ es el [[Conjunto de Lebesgue de orden n|conjunto de Lebesgue]] de orden $1$, y $C_\bullet^0$ es el [[Conjunto de Lebesgue de orden n|Conjunto de Lebesgue]] de orden $\infty$) tal que $\mathcal{F}(f) = \hat{f}$  bien definida donde su [[Transformada de Fourier|transformada de Fourier]] $\hat{f}$ es [[Función continua|continua]] y verifica el [[analisis 3/Transformada de Fourier/Lema de Riemann-Lebesgue|lema de Riemann-Lebesgue]]
 
 Dada una función $f : \mathbb{R} \to \mathbb{C}$ [[Seccionalmente continua|seccionalmente continua]] y [[Absolutamente integrable|absolutamente integrable]] en $\mathbb{R}$, se define como transformada de Fourier de $f$ a la función $\hat{f} : \mathbb{R} \to \mathbb{C}$ tal que para cada $\omega \in \mathbb{R}$: $$ \hat{f}(\omega) = \int_{-\infty}^{+\infty} f(x) e^{-i\omega x}dx $$
 ### Propiedades

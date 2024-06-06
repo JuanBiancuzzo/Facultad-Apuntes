@@ -92,8 +92,10 @@ tags: materia
 * [[redes/Capa de Transporte/Capa de transporte.md|Capa de transporte]]
 * [[redes/Capa de Transporte/Clase 22-3.md|Clase 22-3]]
 
-##### Capa de Red (7)
+##### Capa de Red (9)
 ---
+* [[redes/Capa de Red/Plano de control.md|Plano de control]]
+* [[redes/Capa de Red/Plano de datos.md|Plano de datos]]
 * [[redes/Capa de Red/Clase 26-4.md|Clase 26-4]]
 * [[redes/Capa de Red/Clase 30-4.md|Clase 30-4]]
 * [[redes/Capa de Red/Clase 19-4.md|Clase 19-4]]

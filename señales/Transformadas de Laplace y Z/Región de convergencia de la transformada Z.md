@@ -8,7 +8,7 @@ aliases:
 ### Definición
 ---
 Sea una [[Señal|señal]] $x(n)$. Definiremos la ROC de la [[Transformada Z|transformada Z]] $x(n) \xleftrightarrow{~~\mathcal{Z}} X(z)$ como $$ ROC\Set{X(z)} = \Set{ z = r ~ e^{j\Omega} \in \mathbb{C} : \sum_{k = -\infty}^{\infty} |x(k)| ~ r^{-k} < \infty } $$
-Notar que la ROC de la transformada Z de una señal $x(n)$ esta definida donde $x(n) ~ r^{-n}$ es [[analisis 3/Semana 3/Criterios de convergencia|absolutamente sumable]], lo que implica que la [[Transformada de Fourier|transformada de Fourier]] de $x(n) ~ r^{-n}$ está bien definida
+Notar que la ROC de la transformada Z de una señal $x(n)$ esta definida donde $x(n) ~ r^{-n}$ es [[analisis 3/Series/Criterios de convergencia|absolutamente sumable]], lo que implica que la [[Transformada de Fourier|transformada de Fourier]] de $x(n) ~ r^{-n}$ está bien definida
 
 #### Propiedades
 ---

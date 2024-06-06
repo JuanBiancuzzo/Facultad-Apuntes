@@ -44,4 +44,4 @@ $$ Si $\alpha$ es acotada tanto superior como interiormente, entonces es una aco
 ---
 ![[Sucesión convergente#Consecuencias]]
 
-![[Semana 3/Criterios de convergencia]]
+![[analisis 3/Series/Criterios de convergencia]]

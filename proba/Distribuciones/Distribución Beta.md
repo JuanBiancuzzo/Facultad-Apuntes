@@ -6,7 +6,7 @@ distribucion: Continua
 
 ### Definición
 ---
-Se dice que una [[Variable aleatoria]] $X$ tiene distribución Beta de parametros $a$ y $b$ si su [[Función de densidad]] es $$ f_X(x) = \frac{\Gamma(a + b)}{\Gamma(a)\cdot\Gamma(b)} \cdot x^{a - 1} \cdot (1 - x)^{b - 1} $$ donde $\Gamma(x)$ es la [[Función Gamma]].
+Se dice que una [[Variable aleatoria]] $X$ tiene distribución Beta de parametros $a$ y $b$ si su [[Función de densidad]] es $$ f_X(x) = \frac{\Gamma(a + b)}{\Gamma(a)\cdot\Gamma(b)} \cdot x^{a - 1} \cdot (1 - x)^{b - 1} $$ donde $\Gamma(x)$ es la [[proba/Distribuciones/Función Gamma]].
 
 ##### Notación
 $$ X \sim \beta(a, b) $$
