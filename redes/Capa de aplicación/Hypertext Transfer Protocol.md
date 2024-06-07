@@ -4,6 +4,7 @@ materia: redes
 capitulo: 2
 aliases:
   - HTTP
+  - HTTPS
 ---
 ### Definición
 ---

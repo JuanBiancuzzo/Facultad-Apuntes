@@ -7,6 +7,10 @@ aliases:
 ---
 ### Definición
 ---
+Es un [[Protocolo|protocolo]] de [[Capa de transporte|capa de transporte]] que en general se usa para aplicaciones de tiempo real
+* Aplicaciones sensibles a la latencia
+* Permite perdida de paquetes
+* Los que se mande audio (específicamente voz) que no agrega overhead no deseada
 
 #### Estructura
 ---
