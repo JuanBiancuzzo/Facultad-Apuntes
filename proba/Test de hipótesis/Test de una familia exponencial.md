@@ -16,4 +16,4 @@ Sea $\underline{X} = \left( X_1, \cdots, X_n \right)$ una [[Muestra aleatoria]] 
 	0 & \text{si } -T \le k_\alpha 
 \end{cases} $$Que para un [[Test con nivel de significación|nivel]] $\alpha$ dado se tendrá $$ \alpha = \mathbb{P}_{\theta_1}(\delta(\underline{X}) = 1) $$
 
-En el caso de la [[Distribución Uniforme|Uniforme]] (que no pertenece a una familia exponencia), este se puede tomar como el caso 1, donde $T$ es $T = Max(X_1, \cdots, X_n)$ es decir su [[Estadistico suficiente]].
+En el caso de la [[Distribución uniforme|Uniforme]] (que no pertenece a una familia exponencia), este se puede tomar como el caso 1, donde $T$ es $T = Max(X_1, \cdots, X_n)$ es decir su [[Estadistico suficiente]].

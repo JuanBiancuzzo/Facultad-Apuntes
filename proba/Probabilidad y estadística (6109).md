@@ -8,8 +8,9 @@ tags:
 ---
 ### Apuntes 
 ---
-##### Teoría de probabilidades (22)
+##### Teoría de probabilidades (23)
 ---
+* [[proba/Teoría de probabilidades/Calculo de probabilidad.md|Calculo de probabilidad]]
 * [[proba/Teoría de probabilidades/Regla del producto.md|Regla del producto]]
 * [[proba/Teoría de probabilidades/Teorema de Bayes.md|Teorema de Bayes]]
 * [[proba/Teoría de probabilidades/Variación.md|Variación]]

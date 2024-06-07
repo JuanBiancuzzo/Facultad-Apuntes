@@ -10,7 +10,7 @@ $$ F_X(x) = F_{U}(g(u)) $$
 
 Usando la [[Inversa generalizada]] podemos despejsar $x$, dejando
 $$ x = F_X^{-1} \circ F_U(g(u)) $$
-Y si planteamos que $U \sim U(0, 1)$ una [[Distribución Uniforme]], tenemos 
+Y si planteamos que $U \sim U(0, 1)$ una [[Distribución uniforme]], tenemos 
 $$ x = F_X^{-1}(g(u)) $$
 
 Y conseguimos:
