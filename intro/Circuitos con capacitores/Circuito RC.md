@@ -8,8 +8,55 @@ capitulo: 3
 Un [[Circuito eléctrico|circuito]] RC de [[Circuito de primer orden|primer orden]] es un circuito eléctrico compuesto de un [[Resistor]] y un [[Capacitor]].
 
 ##### Esquematización
+---
 
-![[Circuito RC.webp]]
+```tikz
+\usepackage[
+	straightvoltages,
+	americancurrents,
+	americanresistors, 
+	americaninductors, 
+	americanports, 
+	americangfsurgearrester
+]{circuitikz} 
+
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\ctikzset{
+	resistors/scale=0.7,
+	capacitors/scale=0.7,
+	inductors/scale=0.7,
+	cute inductors,
+	bipoles/cuteswitch/thickness=0.5,
+	bipoles/cuteswitch/width=0.75
+}
+
+\begin{document} 
+	\begin{circuitikz}[
+		voltage shift=0.5, scale=1.3, transform shape, thick,
+		loops/.style={circuitikz/inductors/coils=#1}
+	]
+
+		\coordinate (centro) at (0, 0);
+
+		\draw (centro) 
+				node[ground] {}
+			to[short] ++(-3, 0)
+			to[battery1, l^=$V_0$, invert] ++(0, 3)
+			to[short] ++(2, 0)
+				node[cuteclosedswitchshape] (llave) {};
+
+		\draw (centro) to[short] ++(3, 0)
+			to[C, l_=$C$] ++(0, 3)
+			to[short] ++(-0.5, 0)
+			to[R, l^=$R$] ++(-2, 0)
+			to[short] (llave.out);
+
+	\end{circuitikz}
+\end{document}
+```
 
 #### Análisis
 ---
