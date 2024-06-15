@@ -15,9 +15,9 @@ dig @server name type
 
 Donde
 * `server` es el nombre o la [[Internet Protocol Address|IP address]] del name server al que se le quiere hacer la query
-	* Si se usa [[Internet Protocol Versión 4 (IPv4)|IPv4]] se separa los números con un punto
+	* Si se usa [[Internet Protocol Versión 4|IPv4]] se separa los números con un punto
 		* Ejemplo: `127.0.0.1`
-	* Si se usa [[Internet Protocol Versión 6 (IPv6)|IPv6]] se los separa con doble punto
+	* Si se usa [[Internet Protocol Versión 6|IPv6]] se los separa con doble punto
 		* Ejemplo: `2001:db8:85a3:0:0:8a2e:370:7334`
 	Si no hay una provee un servidor, se consulta `/etc/resolv.conf`, si se encuentra una dirección y se usa alguna de las opciones `-4` o `-6` fue usada, entonces las que cumplan con la versión del IP se usaran, en cualquier caso que no encuentre ninguna opción entonces se hace la query al local host
 *  `name` es el nombre del [[Resource record|resource record]] que se quiere buscar

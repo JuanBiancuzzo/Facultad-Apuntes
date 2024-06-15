@@ -4,7 +4,7 @@
 \usetikzlibrary{calc}
 
 \begin{document} 
-	\begin{tikzpicture}[scale=1.5, transform shape]
+	\begin{tikzpicture}[scale=1.5, transform shape, thick]
 	\end{tikzpicture}
 \end{document}
 ```

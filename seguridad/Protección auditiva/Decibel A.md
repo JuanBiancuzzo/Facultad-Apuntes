@@ -2,6 +2,8 @@
 dia: 2023-11-17
 materia: seguridad
 capitulo: 4
+aliases:
+  - dBA
 ---
 ### Definición
 ---

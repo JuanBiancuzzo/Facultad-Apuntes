@@ -27,7 +27,8 @@
     "_template/Insertar código.md",
     "_template/Diagrama Red - Template.md",
     "_template/TikzCircuit - Template.md",
-    "_template/TikzPlot - Template.md"
+    "_template/TikzPlot - Template.md",
+    "_template/redes/TikzNetting - Template.md"
   ],
   "startup_templates": [
     ""

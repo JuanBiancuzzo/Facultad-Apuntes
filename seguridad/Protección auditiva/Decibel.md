@@ -2,6 +2,8 @@
 dia: 2023-04-03
 materia: seguridad
 capitulo: 4
+aliases:
+  - dB
 ---
 ### Definición
 ---

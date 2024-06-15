@@ -4,6 +4,7 @@ materia: redes
 capitulo: 1
 aliases:
   - WiFi
+  - IEEE 802.11
 ---
 ### Definición
 ---

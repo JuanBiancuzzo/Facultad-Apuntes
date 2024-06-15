@@ -55,6 +55,17 @@ En el caso que $L \cdot a > R$, se empieza a perder [[Paquete|información]] ya 
 
 Definimos intensidad del tráfico a la relación entre el arribo y la transmisión $$ \frac{L \cdot a}{R} $$
 
+El encolamiento de paquetes puede ocurrir tanto en los [[Router input port|puertos de entrada]] como en los de [[Router output port|salida]], aunque el lugar y la extensión de la espera dependerá del tráfico
+
+##### Input delay
+---
+![[Router input port#Delay]]
+
+##### Output delay
+---
+![[Router output port#Delay]]
+
+
 #### Tiempo de transmisión
 ---
 Es la cantidad de tiempo requerida para insertar los bits del paquete al [[Acceso a una red por cable|medio]]. Sea $L$ el largo de bits de un paquete, y $R$ la tasa de transmisión del link en bits/secs. Entonces se puede calcular el tiempo de transmisión será de $$ t_{trasmisión} = \frac{L}{R} $$

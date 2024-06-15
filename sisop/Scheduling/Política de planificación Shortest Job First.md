@@ -2,10 +2,12 @@
 dia: 2023-11-15
 materia: sisop
 capitulo: 4
+aliases:
+  - Política de planificación SJF
 ---
 ### Definición
 ---
-Para resolver el problema que se presenta en la [[Política de planificación First In, First Out (FIFO)|política FIFO]], se modifica la política para que se ejecute el [[Proceso|proceso]] de duración mínima, una vez finalizado esto se ejecuta el proceso de duración mínima, y así sucesivamente.
+Para resolver el problema que se presenta en la [[Política de planificación First In, First Out|política FIFO]], se modifica la política para que se ejecute el [[Proceso|proceso]] de duración mínima, una vez finalizado esto se ejecuta el proceso de duración mínima, y así sucesivamente.
 
 #### Usando [[Métrica Turn Around de planificación|Turn around]]
 ---

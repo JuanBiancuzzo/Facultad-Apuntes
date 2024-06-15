@@ -13,15 +13,15 @@ Estas son las que posea un solo [[Procesador|procesador]] con un solo núcleo de
 
 ##### First In, First Out (FIFO)
 ---
-![[Política de planificación First In, First Out (FIFO)#Definición]]
+![[Política de planificación First In, First Out#Definición]]
 
 ##### Shortest Job First (SJF)
 ---
-![[Política de planificación Shortest Job First (SJF)#Definición]]
+![[Política de planificación Shortest Job First#Definición]]
 
 ##### Shortest time-to-completion (STCF)
 ---
-![[Política de planificación Shortest time-to-completion (STCF)#Definición]]
+![[Política de planificación Shortest time-to-completion#Definición]]
 
 ##### Round Robin (RR)
 ---
@@ -33,7 +33,7 @@ Estas son aquellas que posea más de un [[Procesador|procesador]] y/o con más d
 
 ##### Multi-Level Feedback Queue (MLFQ)
 ---
-![[Política de planificación Multi-Level Feedback Queue (MLFQ)#Definición]]
+![[Política de planificación Multi-Level Feedback Queue#Definición]]
 
 ##### Proportional share
 ---
@@ -49,4 +49,4 @@ Estas son aquellas que posea más de un [[Procesador|procesador]] y/o con más d
 
 ##### Completely Fair Scheduler (CSF)
 ---
-![[Política de planificación Completely Fair Scheduler (CSF)#Definición]]
+![[Política de planificación Completely Fair Scheduler#Definición]]

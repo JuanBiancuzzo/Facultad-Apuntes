@@ -3,7 +3,7 @@ dia: 2023-11-15
 materia: sisop
 capitulo: 4
 aliases:
-  - RR
+  - Política de planificación RR
 ---
 ### Definición
 ---

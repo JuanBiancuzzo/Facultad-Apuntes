@@ -6,4 +6,4 @@ capitulo: 1
 ### Definición
 ---
 Con $S \subset \mathbb{R}^n$ es un [[Conjunto]] acotado si existe una [[Disco abierto]] tal que $$ S \subseteq D(0, r) $$
-para algun $r$.
+para algún $r$.
