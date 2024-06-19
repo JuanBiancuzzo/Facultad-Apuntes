@@ -2,6 +2,8 @@
 dia: 2024-03-20
 materia: señales
 capitulo: 2
+aliases:
+  - Sistemas descriptos por ecuaciones en diferencias
 ---
 ### Definición
 ---

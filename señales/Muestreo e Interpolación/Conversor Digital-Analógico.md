@@ -87,4 +87,5 @@ Supongamos, entonces, que $x_c(t)$ es una [[Señal de banda limitada|señal de b
 Es claro que $$ X_p(j\omega) ~ H_r(j\omega) = \frac{1}{T} \sum_{k = -\infty}^{\infty} X_c(j(\omega - k \omega_s)) ~ H_r(j\omega) = X_c(j\omega) $$
 donde $X_c(j\omega)$ es la [[Transformada de Fourier|transformada de Fourier]] de $x_c(t)$
 
-Por lo que aplicando este filtro a esta [[Señal#^02aea6|señal discreta]] (sin solapamiento) nos devuelve la señal original $x_c(t)$
+Por lo que aplicando este filtro a esta [[Señal#^02aea6|señal discreta]] (sin solapamiento) nos devuelve la señal original $x_c(t)$. Este filtro es lo que se llama un [[Interpolador|interpolador de banda limitada]], pero puede ser muy complejo de implementar en la práctica, por lo que existen los [[Interpolador|interpoladores de orden k]]
+
