@@ -11,7 +11,7 @@ Con un [[Transistor de efecto de campo metal-óxido-semiconductor#Canal-N|MOSFET
 
 Entonces 
 
-$$ g_m = \frac{\partial i_D}{\partial v_{GS}} \biggm|_{Q} = \frac{W}{L} \mu C'_{ox} (V_{GS} - V_T) (1 + \lambda V_{DS}) = \sqrt{2 \frac{W}{L} \mu_n C'_{ox} I_D} $$ ^f33d60
+$$ g_m = \frac{\partial i_D}{\partial v_{GS}} \biggm|_{Q} = \frac{W}{L} \mu C'_{ox} (V_{GS} - V_T) (1 + \lambda V_{DS}) = \sqrt{2 \frac{W}{L} \mu_n C'_{ox} I_D} = 2\sqrt{k I_D} $$ ^f33d60
 
 donde $Q \equiv$  punto de polarización  $(V_{GS}, V_{DS}, V_{BS})$.
 
