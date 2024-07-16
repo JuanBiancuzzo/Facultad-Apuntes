@@ -1,14 +1,12 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 9
-art_nombre: Principio de buena fe
-art: "Los derechos deben ser ejercidos de buena fe."
-incisos: 
-título: "preliminar"
-capítulo: "3"
-listado:
- - "[[Título preliminar|Título preliminar]]"
- - "[[Título preliminar, Capítulo 3, Ejercicio de los derechos|Capítulo 3]]"
+num: 9
+nombre: Principio de buena fe
+articulo:
+  - - tipo: texto
+    - texto: Los derechos deben ser ejercidos de buena fe.
+previo: "[[Capítulo 3, Ejercicio de los derechos|Capítulo 3, Ejercicio de los derechos]]"
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---
@@ -43,3 +41,4 @@ Funciones:
 * Interpretativa
 * Fuente de obligaciones secundarias
 * Correctiva
+

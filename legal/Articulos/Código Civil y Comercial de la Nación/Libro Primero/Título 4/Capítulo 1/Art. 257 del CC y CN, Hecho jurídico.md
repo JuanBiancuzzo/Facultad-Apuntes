@@ -1,21 +1,19 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 257
-art_nombre: Hecho jurídico
-art: "El hecho jurídico es el acontecimiento que, conforme al ordenamiento jurídico, produce el nacimiento, modificación o extinción de relaciones o situaciones jurídicas."
-incisos: 
-libro: 1
-título: "4"
-capítulo: "1"
-listado:
- - "[[Libro Primero, Parte General|Libro Primero]]"
- - "[[Libro Primero, Título 4, Hechos y actos jurídicos|Título 4]]"
- - "[[Libro Primero, Título 4, Capítulo 1, Disposiciones generales|Capítulo 1]]"
+num: 257
+nombre: Hecho jurídico
+articulo: 
+ - 
+   - tipo: texto
+   - texto: "El hecho jurídico es el acontecimiento que, conforme al ordenamiento jurídico, produce el nacimiento, modificación o extinción de relaciones o situaciones jurídicas."
+
+
+previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero/Título 4/Capítulo 1/Capítulo 1, Disposiciones generales.md|Capítulo 1, Disposiciones generales]]"
+tags: 
+ - legal/articulo
 ---
 ### Artículo
 ---
 "El [[Hecho jurídico|hecho jurídico]] es el acontecimiento que, conforme al [[Ordenamiento jurídico|ordenamiento jurídico]], produce el nacimiento, modificación o extinción de [[Relación jurídica|relaciones jurídicas]] o [[Situación jurídica|situaciones jurídicas]]"
-
 
 ### Interpretación
 ---

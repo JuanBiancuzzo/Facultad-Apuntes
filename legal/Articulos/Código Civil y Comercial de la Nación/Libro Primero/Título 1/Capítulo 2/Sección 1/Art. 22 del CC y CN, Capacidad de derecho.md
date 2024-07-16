@@ -1,18 +1,13 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 22
-art_nombre: Capacidad de derecho
-art: Toda persona humana goza de la aptitud para ser titular de derechos y deberes jurídicos. La ley puede privar o limitar esta capacidad respecto de hechos, simples actos, o actos jurídicos determinados.
-incisos: 
-libro: "1"
-título: "1"
-capítulo: "2"
-sección: "1"
-listado:
-  - "[[Libro Primero, Parte General|Libro Primero]]"
-  - "[[Libro Primero, Título 1, Persona humana|Título 1]]"
-  - "[[Libro Primero, Título 1, Capítulo 2, Capacidad|Capítulo 2]]"
-  - "[[Libro Primero, Título 1, Capítulo 2, Sección 1, Principios generales|Sección 1]]"
+num: 22
+nombre: Capacidad de derecho
+articulo: 
+ - 
+   - tipo: texto
+   - texto: "Toda persona humana goza de la aptitud para ser titular de derechos y deberes jurídicos. La ley puede privar o limitar esta capacidad respecto de hechos, simples actos, o actos jurídicos determinados"
+previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero/Título 1/Capítulo 2/Sección 1/Sección 1, Principios generales.md|Sección 1, Principios generales]]"
+tags: 
+ - legal/articulo
 ---
 ### Artículo
 ---

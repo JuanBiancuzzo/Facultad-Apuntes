@@ -1,21 +1,19 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 969
-art_nombre: Contratos formales
-art: "Los contratos para los cuales la ley exige una forma para su validez, son nulos si la solemnidad no ha sido satisfecha. Cuando la forma requerida para los contratos, lo es sólo para que éstos produzcan sus efectos propios, sin sanción de nulidad, no quedan concluidos como tales mientras no se ha otorgado el instrumento previsto, pero valen como contratos en los que las partes se obligaron a cumplir con la expresada formalidad. Cuando la ley o las partes no imponen una forma determinada, ésta debe constituir sólo un medio de prueba de la celebración del contrato."
-incisos: 
-libro: 3
-título: "2"
-capítulo: "2"
-listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
- - "[[Libro Tercero, Título 2, Capítulo 2, Clasificación de los contratos|Capítulo 2]]"
- - "[[Libro Tercero, Título 2, Contratos en general|Título 2]]"
+num: 969
+nombre: Contratos formales
+articulo: 
+ - 
+   - tipo: texto
+   - texto: "Los contratos para los cuales la ley exige una forma para su validez, son nulos si la solemnidad no ha sido satisfecha. Cuando la forma requerida para los contratos, lo es sólo para que éstos produzcan sus efectos propios, sin sanción de nulidad, no quedan concluidos como tales mientras no se ha otorgado el instrumento previsto, pero valen como contratos en los que las partes se obligaron a cumplir con la expresada formalidad. Cuando la ley o las partes no imponen una forma determinada, ésta debe constituir sólo un medio de prueba de la celebración del contrato."
+
+
+previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 2/Capítulo 2, Clasificación de los contratos.md|Capítulo 2, Clasificación de los contratos]]"
+tags: 
+ - legal/articulo
 ---
 ### Artículo
 ---
 "Los contratos para los cuales la ley exige una forma para su validez, son nulos si la solemnidad no ha sido satisfecha. Cuando la forma requerida para los contratos, lo es sólo para que éstos produzcan sus efectos propios, sin sanción de nulidad, no quedan concluidos como tales mientras no se ha otorgado el instrumento previsto, pero valen como contratos en los que las partes se obligaron a cumplir con la expresada formalidad. Cuando la ley o las partes no imponen una forma determinada, ésta debe constituir sólo un medio de prueba de la celebración del contrato."
-
 
 ### Interpretación
 ---

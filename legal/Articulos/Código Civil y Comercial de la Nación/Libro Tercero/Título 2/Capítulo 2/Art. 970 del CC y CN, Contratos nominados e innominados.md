@@ -1,41 +1,44 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 970
-art_nombre: Contratos nominados e innominados
-art: "Los contratos son nominados e innominados según que la ley los regule especialmente o no. Los contratos innominados están regidos, en el siguiente orden, por:"
-incisos: 
- - "la voluntad de las partes" 
- - "las normas generales sobre contratos y obligaciones" 
- - "los usos y prácticas del lugar de celebración" 
- - "las disposiciones correspondientes a los contratos nominados afines que son compatibles y se adecuan a su finalidad." 
-libro: 3
-título: "2"
-capítulo: "2"
-listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
- - "[[Libro Tercero, Título 2, Capítulo 2, Clasificación de los contratos|Capítulo 2]]"
- - "[[Libro Tercero, Título 2, Contratos en general|Título 2]]"
+num: 970
+nombre: Contratos nominados e innominados
+articulo: 
+ - 
+   - tipo: texto
+   - texto: "Los contratos son nominados e innominados según que la ley los regule especialmente o no. Los contratos innominados están regidos, en el siguiente orden, por:"
+
+ - 
+   - tipo: enumeracion
+   - enumeracion: 5
+   - textos:
+     - 
+       - tipo: texto
+       - texto: "la voluntad de las partes;"
+    
+     - 
+       - tipo: texto
+       - texto: "las normas generales sobre contratos y obligaciones;"
+    
+     - 
+       - tipo: texto
+       - texto: "los usos y prácticas del lugar de celebración;"
+    
+     - 
+       - tipo: texto
+       - texto: "las disposiciones correspondientes a los contratos nominados afines que son compatibles y se adecuan a su finalidad."
+    
+    
+previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 2/Capítulo 2, Clasificación de los contratos.md|Capítulo 2, Clasificación de los contratos]]"
+tags: 
+ - legal/articulo
 ---
 ### Artículo
 ---
-"Los contratos son nominados e innominados según que la ley los regule especialmente o no. Los contratos innominados están regidos, en el siguiente orden, por:"
+"Los contratos son nominados e innominados según que la ley los regule especialmente o no. Los contratos innominados están regidos, en el siguiente orden, por:
 
-#### Inciso N°1
----
-"la voluntad de las partes"
-
-#### Inciso N°2
----
-"las normas generales sobre contratos y obligaciones"
-
-#### Inciso N°3
----
-"los usos y prácticas del lugar de celebración"
-
-#### Inciso N°4
----
-"las disposiciones correspondientes a los contratos nominados afines que son compatibles y se adecuan a su finalidad."
-
+ a. la voluntad de las partes;
+ b. las normas generales sobre contratos y obligaciones;
+ c. los usos y prácticas del lugar de celebración;
+ d. las disposiciones correspondientes a los contratos nominados afines que son compatibles y se adecuan a su finalidad."
 
 ### Interpretación
 ---

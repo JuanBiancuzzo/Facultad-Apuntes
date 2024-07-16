@@ -1,14 +1,12 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 8
-art_nombre: Principio de inexcusabilidad
-art: "La ignorancia de las leyes no sirve de excusa para su cumplimiento, si la excepción no está autorizada por el ordenamiento jurídico."
-incisos: 
-título: "preliminar"
-capítulo: "2"
-listado:
- - "[[Título preliminar|Título preliminar]]"
- - "[[Título preliminar, Capítulo 2, Ley|Capítulo 2]]"
+num: 8
+nombre: Principio de inexcusabilidad
+articulo:
+  - - tipo: texto
+    - texto: La ignorancia de las leyes no sirve de excusa para su cumplimiento, si la excepción no está autorizada por el ordenamiento jurídico.
+previo: "[[Capítulo 2, Ley|Capítulo 2, Ley]]"
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---

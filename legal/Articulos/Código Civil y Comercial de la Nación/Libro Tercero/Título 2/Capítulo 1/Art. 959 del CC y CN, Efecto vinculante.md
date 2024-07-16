@@ -1,21 +1,19 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 959
-art_nombre: Efecto vinculante
-art: "Todo contrato válidamente celebrado es obligatorio para las partes. Su contenido sólo puede ser modificado o extinguido por acuerdo de partes o en los supuestos en que la ley lo prevé."
-incisos: 
-libro: 3
-título: "2"
-capítulo: "1"
-listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
- - "[[Libro Tercero, Título 2, Contratos en general|Título 2]]"
- - "[[Libro Tercero, Título 2, Capítulo 1, Disposición generales|Capítulo 1]]"
+num: 959
+nombre: Efecto vinculante
+articulo: 
+ - 
+   - tipo: texto
+   - texto: "Todo contrato válidamente celebrado es obligatorio para las partes. Su contenido sólo puede ser modificado o extinguido por acuerdo de partes o en los supuestos en que la ley lo prevé."
+
+
+previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 1/Capítulo 1, Disposiciones generales.md|Capítulo 1, Disposiciones generales]]"
+tags: 
+ - legal/articulo
 ---
 ### Artículo
 ---
 "Todo contrato válidamente celebrado es obligatorio para las partes. Su contenido sólo puede ser modificado o extinguido por acuerdo de partes o en los supuestos en que la ley lo prevé."
-
 
 ### Interpretación
 ---

@@ -11,14 +11,9 @@
   "auto_jump_to_cursor": true,
   "enable_system_commands": false,
   "shell_path": "",
-  "user_scripts_folder": "",
+  "user_scripts_folder": "_scripts/templater",
   "enable_folder_templates": true,
-  "folder_templates": [
-    {
-      "folder": "/",
-      "template": "_template/Definición - Template.md"
-    }
-  ],
+  "folder_templates": [],
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
@@ -28,7 +23,8 @@
     "_template/Diagrama Red - Template.md",
     "_template/TikzCircuit - Template.md",
     "_template/TikzPlot - Template.md",
-    "_template/redes/TikzNetting - Template.md"
+    "_template/redes/TikzNetting - Template.md",
+    "_template/legal2/Editar texto Artículo.md"
   ],
   "startup_templates": [
     ""

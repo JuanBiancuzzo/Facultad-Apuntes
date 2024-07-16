@@ -42,7 +42,7 @@ Los [[Elementos de un contrato|elementos de los contratos]] esta dada por la vol
 * [[Art. 972 del CC y CN, Oferta|Oferta]]
 * [[Art. 979 del CC y CN, Modos de aceptación|Aceptación]]
 * [[Contrato entre ausentes|Contratos entre ausentes]]
-* [[Libro Tercero, Título 2, Capítulo 3, Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas|Contratos por adhesión]]
+* [[Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas|Contratos por adhesión]]
 
 #### Tratativas precontractuales
 ---

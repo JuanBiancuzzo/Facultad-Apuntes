@@ -1,21 +1,19 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 968
-art_nombre: Contratos conmutativos y aleatorios
-art: "Los contratos a título oneroso son conmutativos cuando las ventajas para todos los contratantes son ciertas. Son aleatorios, cuando las ventajas o las pérdidas, para uno de ellos o para todos, dependen de un acontecimiento incierto."
-incisos: 
-libro: 3
-título: "2"
-capítulo: "2"
-listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
- - "[[Libro Tercero, Título 2, Capítulo 2, Clasificación de los contratos|Capítulo 2]]"
- - "[[Libro Tercero, Título 2, Contratos en general|Título 2]]"
+num: 968
+nombre: Contratos conmutativos y aleatorios
+articulo: 
+ - 
+   - tipo: texto
+   - texto: "Los contratos a título oneroso son conmutativos cuando las ventajas para todos los contratantes son ciertas. Son aleatorios, cuando las ventajas o las pérdidas, para uno de ellos o para todos, dependen de un acontecimiento incierto."
+
+
+previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 2/Capítulo 2, Clasificación de los contratos.md|Capítulo 2, Clasificación de los contratos]]"
+tags: 
+ - legal/articulo
 ---
 ### Artículo
 ---
 "Los contratos a título oneroso son conmutativos cuando las ventajas para todos los contratantes son ciertas. Son aleatorios, cuando las ventajas o las pérdidas, para uno de ellos o para todos, dependen de un acontecimiento incierto."
-
 
 ### Interpretación
 ---

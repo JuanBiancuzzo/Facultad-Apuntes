@@ -1,27 +1,25 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 162
-art_nombre: Transformación. Fusión. Escisión
-art: "Las personas jurídicas pueden transformarse, fusionarse o escindirse en los casos previstos por este Código o por la ley especial.  En todos los casos es necesaria la conformidad unánime de los miembros de la persona o personas jurídicas, excepto disposición especial o estipulación en contrario del estatuto."
-incisos: 
-libro: 1
-título: "2"
-capítulo: "1"
-sección: "3"
-parágrafo: "2"
-listado:
- - "[[Libro Primero, Parte General|Libro Primero]]"
- - "[[Libro Primero, Título 2, Persona jurídica|Título 2]]"
- - "[[Libro Primero, Título 2, Capítulo 1, Sección 3, Parágrafo 2, Funcionamiento|Parágrafo 2]]"
- - "[[Libro Primero, Título 2, Capítulo 1, Sección 3, Persona jurídica privada|Sección 3]]"
- - "[[Libro Primero, Título 2, Capítulo 1, Parte general|Capítulo 1]]"
+num: 162
+nombre: Transformación. Fusión. Escisión
+articulo: 
+ - 
+   - tipo: texto
+   - texto: "Las personas jurídicas pueden transformarse, fusionarse o escindirse en los casos previstos por este Código o por la ley especial."
+
+ - 
+   - tipo: texto
+   - texto: "En todos los casos es necesaria la conformidad unánime de los miembros de la persona o personas jurídicas, excepto disposición especial o estipulación en contrario del estatuto."
+
+
+previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 3/Parágrafo 2/Parágrafo 2, Funcionamiento.md|Parágrafo 2, Funcionamiento]]"
+tags: 
+ - legal/articulo
 ---
 ### Artículo
 ---
-"Las personas jurídicas pueden transformarse, fusionarse o escindirse en los casos previstos por este Código o por la ley especial.  
+"Las [[Persona jurídica|personas jurídicas]] pueden transformarse, fusionarse o escindirse en los casos previstos por este [[Código Civil y Comercial de la Nación|Código]] o por la ley especial.
 
 En todos los casos es necesaria la conformidad unánime de los miembros de la persona o personas jurídicas, excepto disposición especial o estipulación en contrario del estatuto."
-
 
 ### Interpretación
 ---

@@ -1,27 +1,23 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 972
-art_nombre: Oferta
-art: "La oferta es la manifestación dirigida a persona determinada o determinable, con la intención de obligarse y con las precisiones necesarias para establecer los efectos que debe producir de ser aceptada."
-incisos: 
-libro: 3
-título: "2"
-capítulo: "3"
-sección: "1"
-listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
- - "[[Libro Tercero, Título 2, Capítulo 3, Formación del consentimiento|Capítulo 3]]"
- - "[[Libro Tercero, Título 2, Capítulo 3, Sección 1, Consentimiento, oferta y aceptación|Sección 1]]"
- - "[[Libro Tercero, Título 2, Contratos en general|Título 2]]"
+num: 972
+nombre: Oferta
+articulo: 
+ - 
+   - tipo: texto
+   - texto: "La oferta es la manifestación dirigida a persona determinada o determinable, con la intención de obligarse y con las precisiones necesarias para establecer los efectos que debe producir de ser aceptada."
+
+
+previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 3/Sección 1/Sección 1, Consentimiento, oferta y aceptación.md|Sección 1, Consentimiento, oferta y aceptación]]"
+tags: 
+ - legal/articulo
 ---
 ### Artículo
 ---
 "La oferta es la manifestación dirigida a persona determinada o determinable, con la intención de obligarse y con las precisiones necesarias para establecer los efectos que debe producir de ser aceptada."
 
-
 ### Interpretación
 ---
-Oferta es una proposición unilateral que una de las partes dirige a otra para celebrar un contrato. O, como lo define el [[Código Civil[[Código Civil y Comercial de la Nación, Ley 26.994|Código Civil y Comercial]]stación dirigida a persona determinada o determinable, con la intención de obligarse y con las precisiones necesarias para establecer los efectos que debe producir de ser aceptada. 
+Oferta es una proposición unilateral que una de las partes dirige a otra para celebrar un contrato. O, como lo define el [[Código Civil y Comercial de la Nación|Código Civil y Comercial]] estación dirigida a persona determinada o determinable, con la intención de obligarse y con las precisiones necesarias para establecer los efectos que debe producir de ser aceptada. 
 
 No es un [[Acto jurídico|acto]] preparatorio del contrato, sino una de las declaraciones contractuales. Así, pues, solo hay oferta cuando el contrato puede quedar concluido con la sola aceptación de la otra parte, sin necesidad de una nueva manifestación del que hizo la primera proposición. 
 

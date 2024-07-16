@@ -1,26 +1,19 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 259
-art_nombre: Acto jurídico
-art: "El acto jurídico es el acto voluntario lícito que tiene por fin inmediato la adquisición, modificación o extinción de relaciones o situaciones jurídicas."
-incisos: 
-libro: 1
-título: "4"
-capítulo: "1"
-listado:
- - "[[Libro Primero, Parte General|Libro Primero]]"
- - "[[Libro Primero, Título 4, Hechos y actos jurídicos|Título 4]]"
- - "[[Libro Primero, Título 4, Capítulo 1, Disposiciones generales|Capítulo 1]]"
+num: 259
+nombre: Acto jurídico
+articulo: 
+ - 
+   - tipo: texto
+   - texto: "El acto jurídico es el acto voluntario lícito que tiene por fin inmediato la adquisición, modificación o extinción de relaciones o situaciones jurídicas."
+
+
+previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero/Título 4/Capítulo 1/Capítulo 1, Disposiciones generales.md|Capítulo 1, Disposiciones generales]]"
+tags: 
+ - legal/articulo
 ---
 ### Artículo
 ---
-"El acto jurídico es el acto voluntario lícito que tiene por fin inmediato la adquisición, modificación o extinción de [[Relación jurídica|relaciones jurídicas]] o [[Situación jurídica|situaciones jurídicas]]."
-
+"El acto jurídico es el acto voluntario lícito que tiene por fin inmediato la adquisición, modificación o extinción de [[Relación jurídica|relaciones]] o [[Situación jurídica|situaciones jurídicas]]."
 
 ### Interpretación
 ---
-Que el acto sea voluntario implica haber sido ejecutado con discernimiento, intención y libertad, produciendo una manifestación que los exteriorice
-
-Que el acto sea lícito consiste en que ese obrar no se encuentra prohibido por el [[Ordenamiento jurídico|ordenamiento jurídico]]
-
-Finalmente, el acto debe ser realizado por uno o más [[Sujeto de derecho|sujetos]] o parte con la expresa finalidad de provocar efectos jurídicos. Esta es la característica que lo distingue de los [[Acto voluntario#Simple acto lícito|simples actos]]

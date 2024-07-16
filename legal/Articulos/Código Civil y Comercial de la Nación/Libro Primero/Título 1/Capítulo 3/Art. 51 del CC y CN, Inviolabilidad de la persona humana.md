@@ -1,20 +1,18 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 51
-art_nombre: Inviolabilidad de la persona humana
-art: "La persona humana es inviolable y en cualquier circunstancia tiene derecho al reconocimiento y respeto de su dignidad."
-incisos: 
-libro: 1
-título: "1"
-capítulo: "3"
-listado:
- - "[[Libro Primero, Parte General|Libro Primero]]"
- - "[[Libro Primero, Título 1, Persona humana|Título 1]]"
- - "[[Libro Primero, Título 1, Capítulo 3, Derechos y actos personalísimos|Capítulo 3]]"
+num: 51
+nombre: Inviolabilidad de la persona humana
+articulo: 
+ - 
+   - tipo: texto
+   - texto: "La persona humana es inviolable y en cualquier circunstancia tiene derecho al reconocimiento y respeto de su dignidad."
+
+previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero/Título 1/Capítulo 3/Capítulo 3, Derechos y actos personalísimos.md|Capítulo 3, Derechos y actos personalísimos]]"
+tags: 
+ - legal/articulo
 ---
 ### Artículo
 ---
-"La [[Persona humana|persona humana]] es inviolable y en cualquier circunstancia tiene [[Derecho|derecho]] al reconocimiento y respeto de su dignidad"
+"La [[Persona humana|persona humana]] es inviolable y en cualquier circunstancia tiene [[Derecho|derecho]] al reconocimiento y respeto de su dignidad."
 
 ### Interpretación
 ---

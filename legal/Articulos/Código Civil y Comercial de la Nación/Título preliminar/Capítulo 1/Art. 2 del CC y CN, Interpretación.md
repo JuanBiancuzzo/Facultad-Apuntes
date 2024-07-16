@@ -1,14 +1,12 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 2
-art_nombre: Interpretación
-art: "La ley debe ser interpretada teniendo en cuenta sus palabras, sus finalidades, las leyes análogas, las disposiciones que surgen de los tratados sobre derechos humanos, los principios y los valores jurídicos, de modo coherente con todo el ordenamiento."
-incisos: 
-título: "preliminar"
-capítulo: "1"
-listado:
- - "[[Título preliminar|Título preliminar]]"
- - "[[Título preliminar, Capítulo 1, Derecho|Capítulo 1]]"
+num: 2
+nombre: Interpretación
+articulo:
+  - - tipo: texto
+    - texto: La ley debe ser interpretada teniendo en cuenta sus palabras, sus finalidades, las leyes análogas, las disposiciones que surgen de los tratados sobre derechos humanos, los principios y los valores jurídicos, de modo coherente con todo el ordenamiento.
+previo: "[[Capítulo 1, Derecho|Capítulo 1, Derecho]]"
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---
@@ -21,4 +19,4 @@ Las reglas de interpretación sostienen
 2. Interpretar la ley por la utilidad que otorga, sin tener en cuenta la intención histórica u original del mismo. 
 3. Usando leyes similares o análogas a esta. 
 4. Interpretarla en referencia al [[Ordenamiento jurídico|ordenamiento jurídico]], de manera de situar esta interpretación en concordancia con todo el [[Sistema|sistema]]. 
-5. Aludir a los principios y valores jurídicos. Cabe remarcar que se agregar reglas para las leyes de algunas ´areas especificas, como la interpretación al regular algunas instituciones o figuras, o [[Contrato del consumidor|contratos de consumo]]
+5. Aludir a los principios y valores jurídicos. Cabe remarcar que se agregar reglas para las leyes de algunas ´areas especificas, como la interpretación al regular algunas instituciones o figuras, o [[Contrato del consumidor|contratos de consumo

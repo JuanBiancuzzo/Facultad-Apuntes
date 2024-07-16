@@ -22,7 +22,7 @@ capitulo: 2
 
 ### Según dependencia: Obligaciones principales o accesorias
 ---
-![[Libro Tercero, Título 1, Capítulo 3, Sección 10, Obligaciones principales y accesorias#Artículos]]
+![[Sección 10, Obligaciones principales y accesorias#Artículos]]
 
 ### Según dependencia: Obligaciones mancomunadas o solidarias
 ---
@@ -30,7 +30,7 @@ El vinculo entre los [[Sujeto de derecho#Sujeto pasivo|sujetos pasivos]]
 
 #### Obligaciones mancomunadas
 ---
-![[Libro Tercero, Título 1, Capítulo 3, Sección 7, Parágrafo 1, Obligaciones simplemente mancomunadas#Artículos]]
+![[Parágrafo 1, Obligaciones simplemente mancomunadas#Artículos]]
 
 #### Obligaciones solidarias
 ---
@@ -38,21 +38,21 @@ El vinculo entre los [[Sujeto de derecho#Sujeto pasivo|sujetos pasivos]]
 
 ### Obligaciones alternativas
 ---
-![[Libro Tercero, Título 1, Capítulo 3, Sección 3, Obligaciones alternativas#Artículos]]
+![[Sección 3, Obligaciones alternativas#Artículos]]
 
 ### Obligaciones facultativas
 ---
-![[Libro Tercero, Título 1, Capítulo 3, Sección 4, Obligaciones facultativas#Artículos]]
+![[Sección 4, Obligaciones facultativas#Artículos]]
 
 ### Obligaciones con cláusula penal
 ---
-![[Libro Tercero, Título 1, Capítulo 3, Sección 5, Obligaciones con cláusula penal y sanciones conminatorias#Artículos]]
+![[Sección 5, Obligaciones con cláusula penal y sanciones conminatorias#Artículos]]
 
 ### Obligaciones divisibles
 ---
-![[Libro Tercero, Título 1, Capítulo 3, Sección 6, Parágrafo 1, Obligaciones divisibles#Artículos]]
+![[Parágrafo 1, Obligaciones divisibles#Artículos]]
 
 
 ### Obligaciones indivisibles
 ---
-![[Libro Tercero, Título 1, Capítulo 3, Sección 6, Parágrafo 2, Obligaciones indivisibles#Artículos]]
+![[Parágrafo 2, Obligaciones indivisibles#Artículos]]

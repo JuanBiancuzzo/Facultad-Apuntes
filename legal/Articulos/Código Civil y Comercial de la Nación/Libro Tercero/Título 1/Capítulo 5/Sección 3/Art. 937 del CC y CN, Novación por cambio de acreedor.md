@@ -1,23 +1,19 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 937
-art_nombre: Novación por cambio de acreedor
-art: "La novación por cambio de acreedor requiere el consentimiento del deudor. Si este consentimiento no es prestado, hay cesión de crédito."
-incisos: 
-libro: 3
-título: "1"
-capítulo: "5"
-sección: "3"
-listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
- - "[[Libro Tercero, Título 1, Obligaciones en general|Título 1]]"
- - "[[Libro Tercero, Título 1, Capítulo 5, Otros modos de extinción|Capítulo 5]]"
- - "[[Libro Tercero, Título 1, Capítulo 5, Sección 3, Novación|Sección 3]]"
+num: 937
+nombre: Novación por cambio de acreedor
+articulo: 
+ - 
+   - tipo: texto
+   - texto: "La novación por cambio de acreedor requiere el consentimiento del deudor. Si este consentimiento no es prestado, hay cesión de crédito."
+
+
+previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 1/Capítulo 5/Sección 3/Sección 3, Novación.md|Sección 3, Novación]]"
+tags: 
+ - legal/articulo
 ---
 ### Artículo
 ---
 "La novación por cambio de acreedor requiere el consentimiento del deudor. Si este consentimiento no es prestado, hay cesión de crédito."
-
 
 ### Interpretación
 ---

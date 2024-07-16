@@ -1,23 +1,19 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 987
-art_nombre: Interpretación
-art: "Las cláusulas ambiguas predispuestas por una de las partes se interpretan en sentido contrario a la parte predisponente."
-incisos: 
-libro: 3
-título: "2"
-capítulo: "3"
-sección: "2"
-listado:
- - "[[Libro Tercero, Derechos Personales|Libro Tercero]]"
- - "[[Libro Tercero, Título 2, Capítulo 3, Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas|Sección 2]]"
- - "[[Libro Tercero, Título 2, Capítulo 3, Formación del consentimiento|Capítulo 3]]"
- - "[[Libro Tercero, Título 2, Contratos en general|Título 2]]"
+num: 987
+nombre: Interpretación
+articulo: 
+ - 
+   - tipo: texto
+   - texto: "Las cláusulas ambiguas predispuestas por una de las partes se interpretan en sentido contrario a la parte predisponente."
+
+
+previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 3/Sección 2/Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas.md|Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas]]"
+tags: 
+ - legal/articulo
 ---
 ### Artículo
 ---
 "Las cláusulas ambiguas predispuestas por una de las partes se interpretan en sentido contrario a la parte predisponente."
-
 
 ### Interpretación
 ---

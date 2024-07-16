@@ -1,18 +1,24 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 10
-art_nombre: Abuso del derecho
-art: El ejercicio regular de un derecho propio o el cumplimiento de una obligación legal no puede constituir como ilícito ningún acto.  La ley no ampara el ejercicio abusivo de los derechos. Se considera tal el que contraría los fines del ordenamiento jurídico o el que excede los límites impuestos por la buena fe, la moral y las buenas costumbres.  El juez debe ordenar lo necesario para evitar los efectos del ejercicio abusivo o de la situación jurídica abusiva y, si correspondiere, procurar la reposición al estado de hecho anterior y fijar una indemnización.
-incisos: 
-título: preliminar
-capítulo: "3"
-listado:
- - "[[Título preliminar|Título preliminar]]"
- - "[[Título preliminar, Capítulo 3, Ejercicio de los derechos|Capítulo 3]]"
+num: 10
+nombre: Abuso del derecho
+articulo:
+  - - tipo: texto
+    - texto: El ejercicio regular de un derecho propio o el cumplimiento de una obligación legal no puede constituir como ilícito ningún acto.
+  - - tipo: texto
+    - texto: La ley no ampara el ejercicio abusivo de los derechos. Se considera tal el que contraría los fines del ordenamiento jurídico o el que excede los límites impuestos por la buena fe, la moral y las buenas costumbres.
+  - - tipo: texto
+    - texto: El juez debe ordenar lo necesario para evitar los efectos del ejercicio abusivo o de la situación jurídica abusiva y, si correspondiere, procurar la reposición al estado de hecho anterior y fijar una indemnización.
+previo: "[[Capítulo 3, Ejercicio de los derechos|Capítulo 3, Ejercicio de los derechos]]"
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---
-"La [[Ley|ley]] no ampara el ejercicio abusivo de los [[Derecho|derechos]]. Se considera tal el que contraría los fines del [[Ordenamiento jurídico|ordenamiento jurídico]] o el que excede los límites impuestos por la [[Art. 9 del CC y CN, Principio de buena fe|buena fe]], la [[Moral|moral]] y las buenas costumbres"
+"El ejercicio regular de un derecho propio o el cumplimiento de una obligación legal no puede constituir como ilícito ningún acto.
+
+La [[Ley|ley]] no ampara el ejercicio abusivo de los [[Derecho|derechos]]. Se considera tal el que contraría los fines del [[Ordenamiento jurídico|ordenamiento jurídico]] o el que excede los límites impuestos por la [[Art. 9 del CC y CN, Principio de buena fe|buena fe]], la [[Moral|moral]] y las buenas costumbres
+
+El juez debe ordenar lo necesario para evitar los efectos del ejercicio abusivo o de la situación jurídica abusiva y, si correspondiere, procurar la reposición al estado de hecho anterior y fijar una indemnización."
 
 ### Interpretación
 ---

@@ -10,18 +10,18 @@ Se dividen en formas en las que satisfacen al acreedor y las que no lo satisface
 #### Medios que satisfacen al acreedor
 ---
 * Pago
-* Novación ![[Libro Tercero, Título 1, Capítulo 5, Sección 3, Novación#Artículos]]
+* Novación ![[Sección 3, Novación#Artículos]]
 
-* Compensación ![[Libro Tercero, Título 1, Capítulo 5, Sección 1, Compensación#Artículos]]
+* Compensación ![[Sección 1, Compensación#Artículos]]
 
 * Transacción
 	* Ejemplo: Arreglos extrajudiciales
-* Confusión![[Libro Tercero, Título 1, Capítulo 5, Sección 2, Confusión#Artículos]]
+* Confusión![[Sección 2, Confusión#Artículos]]
 
 #### Medios que no satisfacen al acreedor
 ---
-* Imposibilidad de pago ![[Libro Tercero, Título 1, Capítulo 5, Sección 6, Imposibilidad de cumplimiento#Artículos]]
-* Remisión de la deuda, renuncia de los derechos del acreedor ![[Libro Tercero, Título 1, Capítulo 5, Sección 5, Renuncia y remisión#Artículos]]
+* Imposibilidad de pago ![[Sección 6, Imposibilidad de cumplimiento#Artículos]]
+* Remisión de la deuda, renuncia de los derechos del acreedor ![[Sección 5, Renuncia y remisión#Artículos]]
 
 * Prescripción
 	* Es un medio de adquirir un derecho, o de liberarse de una obligación por el transcurso del tiempo. En el caso de los [[Derechos créditorios o personales|derechos creditorios]] la prescripción es liberatoria. En el de los derechos reales se llama prescripción adquisitiva.

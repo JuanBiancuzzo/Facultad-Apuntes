@@ -10,5 +10,6 @@
   "showLineNumber": false,
   "strictLineBreaks": false,
   "propertiesInDocument": "visible",
-  "readableLineLength": true
+  "readableLineLength": true,
+  "attachmentFolderPath": "./img"
 }

@@ -1,29 +1,31 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 159
-art_nombre: Deber de lealtad y diligencia. Interés contrario
-art: "Los administradores de la persona jurídica deben obrar con lealtad y diligencia.  No pueden perseguir ni favorecer intereses contrarios a los de la persona jurídica. Si en determinada operación los tuvieran por sí o por interpósita persona, deben hacerlo saber a los demás miembros del órgano de administración o en su caso al órgano de gobierno y abstenerse de cualquier intervención relacionada con dicha operación.  Les corresponde implementar sistemas y medios preventivos que reduzcan el riesgo de conflictos de intereses en sus relaciones con la persona jurídica."
-incisos: 
-libro: 1
-título: "2"
-capítulo: "1"
-sección: "3"
-parágrafo: "2"
-listado:
- - "[[Libro Primero, Parte General|Libro Primero]]"
- - "[[Libro Primero, Título 2, Persona jurídica|Título 2]]"
- - "[[Libro Primero, Título 2, Capítulo 1, Sección 3, Parágrafo 2, Funcionamiento|Parágrafo 2]]"
- - "[[Libro Primero, Título 2, Capítulo 1, Sección 3, Persona jurídica privada|Sección 3]]"
- - "[[Libro Primero, Título 2, Capítulo 1, Parte general|Capítulo 1]]"
+num: 159
+nombre: Deber de lealtad y diligencia. Interés contrario
+articulo: 
+ - 
+   - tipo: texto
+   - texto: "Los administradores de la persona jurídica deben obrar con lealtad y diligencia."
+
+ - 
+   - tipo: texto
+   - texto: "No pueden perseguir ni favorecer intereses contrarios a los de la persona jurídica. Si en determinada operación los tuvieran por sí o por interpósita persona, deben hacerlo saber a los demás miembros del órgano de administración o en su caso al órgano de gobierno y abstenerse de cualquier intervención relacionada con dicha operación."
+
+ - 
+   - tipo: texto
+   - texto: "Les corresponde implementar sistemas y medios preventivos que reduzcan el riesgo de conflictos de intereses en sus relaciones con la persona jurídica."
+
+
+previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 3/Parágrafo 2/Parágrafo 2, Funcionamiento.md|Parágrafo 2, Funcionamiento]]"
+tags: 
+ - legal/articulo
 ---
 ### Artículo
 ---
-"Los administradores de la persona jurídica deben obrar con lealtad y diligencia.  
+"Los administradores de la persona jurídica deben obrar con lealtad y diligencia.
 
-No pueden perseguir ni favorecer intereses contrarios a los de la persona jurídica. Si en determinada operación los tuvieran por sí o por interpósita persona, deben hacerlo saber a los demás miembros del órgano de administración o en su caso al órgano de gobierno y abstenerse de cualquier intervención relacionada con dicha operación.  
+No pueden perseguir ni favorecer intereses contrarios a los de la persona jurídica. Si en determinada operación los tuvieran por sí o por interpósita persona, deben hacerlo saber a los demás miembros del órgano de administración o en su caso al órgano de gobierno y abstenerse de cualquier intervención relacionada con dicha operación.
 
 Les corresponde implementar sistemas y medios preventivos que reduzcan el riesgo de conflictos de intereses en sus relaciones con la persona jurídica."
-
 
 ### Interpretación
 ---

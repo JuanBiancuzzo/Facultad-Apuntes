@@ -1,0 +1,22 @@
+---
+tipo: Parágrafo
+nombre: Disolución. Liquidación
+num: 3
+previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 3/Sección 3, Persona jurídica privada.md|Sección 3, Persona jurídica privada]]"
+tags: 
+  - legal/Parágrafo
+---
+### Interpretación
+---
+
+### Subsecciones
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
+```
+
+### Artículos
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/legal/mostrarArticulos", { paginaActual: dv.current() });
+```

@@ -21,4 +21,4 @@ Se puede dividir la formación de un contrato en:
 
 #### Contratos por adhesión
 ---
-![[Libro Tercero, Título 2, Capítulo 3, Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas#Interpretación]]
+![[Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas#Interpretación]]

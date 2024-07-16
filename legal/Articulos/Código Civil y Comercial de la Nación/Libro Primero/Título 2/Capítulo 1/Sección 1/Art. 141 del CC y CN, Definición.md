@@ -1,18 +1,14 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 141
-art_nombre: Definición
-art: "Son personas jurídicas todos los entes a los cuales el ordenamiento jurídico les confiere aptitud para adquirir derechos y contraer obligaciones para el cumplimiento de su objeto y los fines de su creación."
-incisos: 
-libro: 1
-título: "2"
-capítulo: "1"
-sección: "1"
-listado:
- - "[[Libro Primero, Parte General|Libro Primero]]"
- - "[[Libro Primero, Título 2, Persona jurídica|Título 2]]"
- - "[[Libro Primero, Título 2, Capítulo 1, Sección 1, Personalidad. Composición|Sección 1]]"
- - "[[Libro Primero, Título 2, Capítulo 1, Parte general|Capítulo 1]]"
+num: 141
+nombre: Definición
+articulo: 
+ - 
+   - tipo: texto
+   - texto: "Son personas jurídicas todos los entes a los cuales el ordenamiento jurídico les confiere aptitud para adquirir derechos y contraer obligaciones para el cumplimiento de su objeto y los fines de su creación."
+
+previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 1/Sección 1, Personalidad. Composición.md|Sección 1, Personalidad. Composición]]"
+tags: 
+ - legal/articulo
 ---
 ### Artículo
 ---

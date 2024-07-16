@@ -21,7 +21,7 @@ Para que sea posible aplicar la teoría de la imprevisión es necesario:
 * Que la excesiva onerosidad se haya producido como consecuencia de una alteración extraordinaria de las circunstancias existentes al tiempo de su celebración y al riesgo asumido por la parte que es afectada. La alteración responde a acontecimientos graves e imprevisibles.
 * Es necesario que el perjudicado no hubiese obrado con culpa, pues la excesiva onerosidad debe sobrevenir por causas ajenas a las partes
 * Debe tratarse de acontecimientos de carácter general o social
-* La teoría de la imprevisión ha sido regulada en el [[Art. 1078 del CC y CN, Disposiciones generales para la extinción por declaración de una de las partes#Inciso N°3|artículo 1078, inciso 3]] ![[Art. 1078 del CC y CN, Disposiciones generales para la extinción por declaración de una de las partes#Inciso N°3]] con otras palabras, si el [[Libro Tercero, Título 1, Capítulo 4, Sección 2, Mora|moroso]] pretende alegar la teoría de la imprevisión para dar por concluido el contrato, la otra parte podrá frenarlo lícitamente
+* La teoría de la imprevisión ha sido regulada en el [[Art. 1078 del CC y CN, Disposiciones generales para la extinción por declaración de una de las partes#Inciso N°3|artículo 1078, inciso 3]] ![[Art. 1078 del CC y CN, Disposiciones generales para la extinción por declaración de una de las partes#Inciso N°3]] con otras palabras, si el [[Sección 2, Mora|moroso]] pretende alegar la teoría de la imprevisión para dar por concluido el contrato, la otra parte podrá frenarlo lícitamente
 
 #### Efectos
 ---

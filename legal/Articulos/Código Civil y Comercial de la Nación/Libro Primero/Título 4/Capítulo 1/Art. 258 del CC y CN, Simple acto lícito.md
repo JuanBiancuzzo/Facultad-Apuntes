@@ -1,21 +1,19 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 258
-art_nombre: Simple acto lícito
-art: "El simple acto lícito es la acción voluntaria no prohibida por la ley, de la que resulta alguna adquisición, modificación o extinción de relaciones o situaciones jurídicas."
-incisos: 
-libro: 1
-título: "4"
-capítulo: "1"
-listado:
- - "[[Libro Primero, Parte General|Libro Primero]]"
- - "[[Libro Primero, Título 4, Hechos y actos jurídicos|Título 4]]"
- - "[[Libro Primero, Título 4, Capítulo 1, Disposiciones generales|Capítulo 1]]"
+num: 258
+nombre: Simple acto lícito
+articulo: 
+ - 
+   - tipo: texto
+   - texto: "El simple acto lícito es la acción voluntaria no prohibida por la ley, de la que resulta alguna adquisición, modificación o extinción de relaciones o situaciones jurídicas."
+
+
+previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero/Título 4/Capítulo 1/Capítulo 1, Disposiciones generales.md|Capítulo 1, Disposiciones generales]]"
+tags: 
+ - legal/articulo
 ---
 ### Artículo
 ---
-"El simple acto lícito es la acción voluntaria no prohibida por la [[Ley|ley]], de la que resulta alguna adquisición, modificación o extinción de [[Relación jurídica|relaciones jurídicas]] o [[Situación jurídica|situaciones jurídicas]]."
-
+"El simple acto lícito es la acción voluntaria no prohibida por la [[Ley|ley]], de la que resulta alguna adquisición, modificación o extinción de [[Relación jurídica|relaciones]] o [[Situación jurídica|situaciones jurídicas]]."
 
 ### Interpretación
 ---

@@ -1,36 +1,39 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 261
-art_nombre: Acto involuntario
-art: "Es involuntario por falta de discernimiento:"
-incisos:
-  - el acto de quien, al momento de realizarlo, está privado de la razón
-  - el acto ilícito de la persona menor de edad que no ha cumplido diez años
-  - el acto lícito de la persona menor de edad que no ha cumplido trece años, sin perjuicio de lo establecido en disposiciones especiales
-libro: 1
-título: "4"
-capítulo: "1"
-listado:
- - "[[Libro Primero, Parte General|Libro Primero]]"
- - "[[Libro Primero, Título 4, Hechos y actos jurídicos|Título 4]]"
- - "[[Libro Primero, Título 4, Capítulo 1, Disposiciones generales|Capítulo 1]]"
+num: 261
+nombre: Acto involuntario
+articulo: 
+ - 
+   - tipo: texto
+   - texto: "Es involuntario por falta de discernimiento:"
+
+ - 
+   - tipo: enumeracion
+   - enumeracion: 5
+   - textos:
+     - 
+       - tipo: texto
+       - texto: "el acto de quien, al momento de realizarlo, está privado de la razón;"
+    
+     - 
+       - tipo: texto
+       - texto: "el acto ilícito de la persona menor de edad que no ha cumplido diez años;"
+    
+     - 
+       - tipo: texto
+       - texto: "el acto lícito de la persona menor de edad que no ha cumplido trece años, sin perjuicio de lo establecido en disposiciones especiales."
+    
+    
+previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero/Título 4/Capítulo 1/Capítulo 1, Disposiciones generales.md|Capítulo 1, Disposiciones generales]]"
+tags: 
+ - legal/articulo
 ---
 ### Artículo
 ---
-"Es involuntario por falta de discernimiento:"
+"Es involuntario por falta de discernimiento:
 
-#### Inciso N°1
----
-"el acto de quien, al momento de realizarlo, está privado de la razón"
-
-#### Inciso N°2
----
-"el acto ilícito de la persona menor de edad que no ha cumplido diez años"
-
-#### Inciso N°3
----
-"el acto lícito de la persona menor de edad que no ha cumplido trece años, sin perjuicio de lo establecido en disposiciones especiales"
-
+ a. el acto de quien, al momento de realizarlo, está privado de la razón;
+ b. el acto ilícito de la persona menor de edad que no ha cumplido diez años;
+ c. el acto lícito de la persona menor de edad que no ha cumplido trece años, sin perjuicio de lo establecido en disposiciones especiales."
 
 ### Interpretación
 ---

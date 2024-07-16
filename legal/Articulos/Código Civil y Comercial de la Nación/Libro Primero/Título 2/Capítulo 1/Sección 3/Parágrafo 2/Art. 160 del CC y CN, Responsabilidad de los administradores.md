@@ -1,25 +1,19 @@
 ---
-cuerpo_legal: Código Civil y Comercial de la Nación
-num_articulo: 160
-art_nombre: Responsabilidad de los administradores
-art: "Los administradores responden en forma ilimitada y solidaria frente a la persona jurídica, sus miembros y terceros, por los daños causados por su culpa en el ejercicio o con ocasión de sus funciones, por acción u omisión."
-incisos: 
-libro: 1
-título: "2"
-capítulo: "1"
-sección: "3"
-parágrafo: "2"
-listado:
- - "[[Libro Primero, Parte General|Libro Primero]]"
- - "[[Libro Primero, Título 2, Persona jurídica|Título 2]]"
- - "[[Libro Primero, Título 2, Capítulo 1, Sección 3, Parágrafo 2, Funcionamiento|Parágrafo 2]]"
- - "[[Libro Primero, Título 2, Capítulo 1, Sección 3, Persona jurídica privada|Sección 3]]"
- - "[[Libro Primero, Título 2, Capítulo 1, Parte general|Capítulo 1]]"
+num: 160
+nombre: Responsabilidad de los administradores
+articulo: 
+ - 
+   - tipo: texto
+   - texto: "Los administradores responden en forma ilimitada y solidaria frente a la persona jurídica, sus miembros y terceros, por los daños causados por su culpa en el ejercicio o con ocasión de sus funciones, por acción u omisión."
+
+
+previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 3/Parágrafo 2/Parágrafo 2, Funcionamiento.md|Parágrafo 2, Funcionamiento]]"
+tags: 
+ - legal/articulo
 ---
 ### Artículo
 ---
 "Los administradores responden en forma ilimitada y solidaria frente a la persona jurídica, sus miembros y terceros, por los daños causados por su culpa en el ejercicio o con ocasión de sus funciones, por acción u omisión."
-
 
 ### Interpretación
 ---
