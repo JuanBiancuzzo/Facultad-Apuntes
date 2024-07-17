@@ -1,31 +1,21 @@
 ---
 num: 261
 nombre: Acto involuntario
-articulo: 
- - 
-   - tipo: texto
-   - texto: "Es involuntario por falta de discernimiento:"
-
- - 
-   - tipo: enumeracion
-   - enumeracion: 5
-   - textos:
-     - 
-       - tipo: texto
-       - texto: "el acto de quien, al momento de realizarlo, está privado de la razón;"
-    
-     - 
-       - tipo: texto
-       - texto: "el acto ilícito de la persona menor de edad que no ha cumplido diez años;"
-    
-     - 
-       - tipo: texto
-       - texto: "el acto lícito de la persona menor de edad que no ha cumplido trece años, sin perjuicio de lo establecido en disposiciones especiales."
-    
-    
+articulo:
+  - tipo: texto
+    texto: "Es involuntario por falta de discernimiento:"
+  - tipo: enumeracion
+    enumeracion: 5
+    textos:
+      - tipo: texto
+        texto: el acto de quien, al momento de realizarlo, está privado de la razón;
+      - tipo: texto
+        texto: el acto ilícito de la persona menor de edad que no ha cumplido diez años;
+      - tipo: texto
+        texto: el acto lícito de la persona menor de edad que no ha cumplido trece años, sin perjuicio de lo establecido en disposiciones especiales.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero/Título 4/Capítulo 1/Capítulo 1, Disposiciones generales.md|Capítulo 1, Disposiciones generales]]"
-tags: 
- - legal/articulo
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---

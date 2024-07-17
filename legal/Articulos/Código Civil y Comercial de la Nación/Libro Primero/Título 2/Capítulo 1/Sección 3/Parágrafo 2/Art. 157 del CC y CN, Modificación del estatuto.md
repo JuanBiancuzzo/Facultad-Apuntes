@@ -1,19 +1,14 @@
 ---
 num: 157
 nombre: Modificación del estatuto
-articulo: 
- - 
-   - tipo: texto
-   - texto: "El estatuto de las personas jurídicas puede ser modificado en la forma que el mismo o la ley establezcan."
-
- - 
-   - tipo: texto
-   - texto: "La modificación del estatuto produce efectos desde su otorgamiento. Si requiere inscripción es oponible a terceros a partir de ésta, excepto que el tercero la conozca."
-
-
+articulo:
+  - tipo: texto
+    texto: El estatuto de las personas jurídicas puede ser modificado en la forma que el mismo o la ley establezcan.
+  - tipo: texto
+    texto: La modificación del estatuto produce efectos desde su otorgamiento. Si requiere inscripción es oponible a terceros a partir de ésta, excepto que el tercero la conozca.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 3/Parágrafo 2/Parágrafo 2, Funcionamiento.md|Parágrafo 2, Funcionamiento]]"
-tags: 
- - legal/articulo
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---

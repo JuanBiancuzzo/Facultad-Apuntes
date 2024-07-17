@@ -1,15 +1,12 @@
 ---
 num: 986
 nombre: Cláusulas particulares
-articulo: 
- - 
-   - tipo: texto
-   - texto: "Las cláusulas particulares son aquellas que, negociadas individualmente, amplían, limitan, suprimen o interpretan una cláusula general. En caso de in-compatibilidad entre cláusulas generales y particulares, prevalecen estas últimas."
-
-
+articulo:
+  - tipo: texto
+    texto: Las cláusulas particulares son aquellas que, negociadas individualmente, amplían, limitan, suprimen o interpretan una cláusula general. En caso de in-compatibilidad entre cláusulas generales y particulares, prevalecen estas últimas.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 3/Sección 2/Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas.md|Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas]]"
-tags: 
- - legal/articulo
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---

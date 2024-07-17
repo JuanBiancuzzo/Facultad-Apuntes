@@ -2,17 +2,17 @@
 num: 146
 nombre: Persona jurídicas públicas
 articulo:
-  - - tipo: texto
-    - texto: "Son personas jurídicas públicas:"
-  - - tipo: enumeracion
-    - enumeracion: 5
-    - textos:
-        - - tipo: texto
-          - texto: el Estado nacional, las Provincias, la Ciudad Autónoma de Buenos Aires, los municipios, las entidades autárquicas y las demás organizaciones constituidas en la República a las que el ordenamiento jurídico atribuya ese carácter;
-        - - tipo: texto
-          - texto: los Estados extranjeros, las organizaciones a las que el derecho internacional público reconozca personalidad jurídica y toda otra persona jurídica constituida en el extranjero cuyo carácter público resulte de su derecho aplicable;
-        - - tipo: texto
-          - texto: la Iglesia Católica.
+  - tipo: texto
+    texto: "Son personas jurídicas públicas:"
+  - tipo: enumeracion
+    enumeracion: 5
+    textos:
+      - tipo: texto
+        texto: el Estado nacional, las Provincias, la Ciudad Autónoma de Buenos Aires, los municipios, las entidades autárquicas y las demás organizaciones constituidas en la República a las que el ordenamiento jurídico atribuya ese carácter;
+      - tipo: texto
+        texto: los Estados extranjeros, las organizaciones a las que el derecho internacional público reconozca personalidad jurídica y toda otra persona jurídica constituida en el extranjero cuyo carácter público resulte de su derecho aplicable;
+      - tipo: texto
+        texto: la Iglesia Católica.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 2/Sección 2, Clasificación.md|Sección 2, Clasificación]]"
 tags:
   - legal/articulo

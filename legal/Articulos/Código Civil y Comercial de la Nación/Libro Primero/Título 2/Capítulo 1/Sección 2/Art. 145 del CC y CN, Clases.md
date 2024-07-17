@@ -1,14 +1,12 @@
 ---
 num: 145
 nombre: Clases
-articulo: 
- - 
-   - tipo: texto
-   - texto: "Las personas jurídicas son públicas o privadas"
-
+articulo:
+  - tipo: texto
+    texto: Las personas jurídicas son públicas o privadas
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 2/Sección 2, Clasificación.md|Sección 2, Clasificación]]"
-tags: 
- - legal/articulo
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---

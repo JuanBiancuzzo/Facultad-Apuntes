@@ -1,35 +1,23 @@
 ---
 num: 970
 nombre: Contratos nominados e innominados
-articulo: 
- - 
-   - tipo: texto
-   - texto: "Los contratos son nominados e innominados según que la ley los regule especialmente o no. Los contratos innominados están regidos, en el siguiente orden, por:"
-
- - 
-   - tipo: enumeracion
-   - enumeracion: 5
-   - textos:
-     - 
-       - tipo: texto
-       - texto: "la voluntad de las partes;"
-    
-     - 
-       - tipo: texto
-       - texto: "las normas generales sobre contratos y obligaciones;"
-    
-     - 
-       - tipo: texto
-       - texto: "los usos y prácticas del lugar de celebración;"
-    
-     - 
-       - tipo: texto
-       - texto: "las disposiciones correspondientes a los contratos nominados afines que son compatibles y se adecuan a su finalidad."
-    
-    
+articulo:
+  - tipo: texto
+    texto: "Los contratos son nominados e innominados según que la ley los regule especialmente o no. Los contratos innominados están regidos, en el siguiente orden, por:"
+  - tipo: enumeracion
+    enumeracion: 5
+    textos:
+      - tipo: texto
+        texto: la voluntad de las partes;
+      - tipo: texto
+        texto: las normas generales sobre contratos y obligaciones;
+      - tipo: texto
+        texto: los usos y prácticas del lugar de celebración;
+      - tipo: texto
+        texto: las disposiciones correspondientes a los contratos nominados afines que son compatibles y se adecuan a su finalidad.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 2/Capítulo 2, Clasificación de los contratos.md|Capítulo 2, Clasificación de los contratos]]"
-tags: 
- - legal/articulo
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---

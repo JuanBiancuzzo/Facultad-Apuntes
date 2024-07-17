@@ -1,15 +1,12 @@
 ---
 num: 967
 nombre: Contratos a título oneroso y a título gratuito
-articulo: 
- - 
-   - tipo: texto
-   - texto: "Los contratos son a título oneroso cuando las ventajas que procuran a una de las partes les son concedidas por una prestación que ella ha hecho o se obliga a hacer a la otra. Son a título gratuito cuando aseguran a uno o a otro de los contratantes alguna ventaja, independiente de toda prestación a su cargo."
-
-
+articulo:
+  - tipo: texto
+    texto: Los contratos son a título oneroso cuando las ventajas que procuran a una de las partes les son concedidas por una prestación que ella ha hecho o se obliga a hacer a la otra. Son a título gratuito cuando aseguran a uno o a otro de los contratantes alguna ventaja, independiente de toda prestación a su cargo.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 2/Capítulo 2, Clasificación de los contratos.md|Capítulo 2, Clasificación de los contratos]]"
-tags: 
- - legal/articulo
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---

@@ -2,8 +2,8 @@
 num: 984
 nombre: Definición
 articulo:
-  - - tipo: texto
-    - texto: El contrato por adhesión es aquel mediante el cual uno de los contratantes adhiere a cláusulas generales predispuestas unilateralmente, por la otra parte o por un tercero, sin que el adherente haya participado en su redacción
+  - tipo: texto
+    texto: El contrato por adhesión es aquel mediante el cual uno de los contratantes adhiere a cláusulas generales predispuestas unilateralmente, por la otra parte o por un tercero, sin que el adherente haya participado en su redacción
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 3/Sección 2/Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas.md|Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas]]"
 tags:
   - legal/articulo

@@ -36,10 +36,10 @@ La recepción de la obra por el comitente, sin formular reserva alguna, produce 
 2) Trabajos adicionales
 	*  Si se han realizado trabajos adicionales, la recepción implica el reconocimiento de que fueron hechos con la autorización del comitente, quien está obligado a pagarlos.
 3) Vicios aparentes
-	* El comitente pierde el derecho a reclamar por la existencia de vicios aparentes ([[Art. 747 del CC y CN, Entrega|arts. 747]] y [[Art. 1272 del CC y CN, lazos de garantía#Inciso N°1|1272, inc 1]]]), a menos que ellos sean causa de la ruina de la obra
+	* El comitente pierde el derecho a reclamar por la existencia de vicios aparentes ([[Art. 747 del CC y CN, Entrega|arts. 747]] y [[Art. 1272 del CC y CN, Plazos de garantía#Inciso N°1|1272, inc 1]]]), a menos que ellos sean causa de la ruina de la obra
 	  Por vicios aparentes debe entenderse aquellos que son de fácil comprobación, tal como el estado de la pintura y revoques, tabiques divisorios que no están conformes con los planos, falta de cumplimiento de las estipulaciones relativas a la calidad de los pisos, etc.
 4) Vicios ocultos
-	* El [[Art. 1272 del CC y CN, lazos de garantía#Inciso N°2|artículo 1272, inc 2)]], remite a la regulación general sobre vicios ocultos para los defectos que se manifestaren en la obra
+	* El [[Art. 1272 del CC y CN, Plazos de garantía#Inciso N°2|artículo 1272, inc 2)]], remite a la regulación general sobre vicios ocultos para los defectos que se manifestaren en la obra
 	  
 	  Así, y por imperio de los [[Art. 1054 del CC y CN, Ejercicio de la responsabilidad por defectos ocultos|artículos 1054]] y [[Art. 1055 del CC y CN, Caducidad de la garantía por defectos ocultos|1055]], se establecen dos plazos de caducidad de la acción
 	  

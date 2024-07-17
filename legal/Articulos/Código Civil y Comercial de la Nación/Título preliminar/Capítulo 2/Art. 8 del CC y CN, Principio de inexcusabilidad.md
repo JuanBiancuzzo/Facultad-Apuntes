@@ -2,8 +2,8 @@
 num: 8
 nombre: Principio de inexcusabilidad
 articulo:
-  - - tipo: texto
-    - texto: La ignorancia de las leyes no sirve de excusa para su cumplimiento, si la excepción no está autorizada por el ordenamiento jurídico.
+  - tipo: texto
+    texto: La ignorancia de las leyes no sirve de excusa para su cumplimiento, si la excepción no está autorizada por el ordenamiento jurídico.
 previo: "[[Capítulo 2, Ley|Capítulo 2, Ley]]"
 tags:
   - legal/articulo

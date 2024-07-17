@@ -29,94 +29,6 @@
       "setFileExistsBehavior": true
     },
     {
-      "id": "d3cbe2f4-6b2d-4808-aafb-6925a8158706",
-      "name": "Materia",
-      "type": "Template",
-      "command": true,
-      "templatePath": "_template/Materia - Template.md",
-      "fileNameFormat": {
-        "enabled": true,
-        "format": "Untitle"
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": false
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default",
-      "fileExistsMode": "Nothing",
-      "setFileExistsBehavior": true
-    },
-    {
-      "id": "60f58eea-e5ae-4e93-8ade-3421b90b3aeb",
-      "name": "Nuevo Documento",
-      "type": "Template",
-      "command": true,
-      "templatePath": "_template/legal2/Documento - Template.md",
-      "fileNameFormat": {
-        "enabled": true,
-        "format": "Untitle"
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [
-          "/"
-        ],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": false
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": true
-    },
-    {
-      "id": "40911c77-0926-4ddf-9016-cfa647400e63",
-      "name": "Crear artículo",
-      "type": "Template",
-      "command": true,
-      "templatePath": "_template/legal2/Artículo - Template.md",
-      "fileNameFormat": {
-        "enabled": true,
-        "format": "Untitle"
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [
-          "/"
-        ],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": false
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": true
-    },
-    {
       "id": "c6addedc-6a02-4777-95d3-b9d63ce9a4ed",
       "name": "Agregar tema",
       "type": "Template",
@@ -131,6 +43,34 @@
         "folders": [],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": true,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": true
+    },
+    {
+      "id": "681ce301-02f5-47f3-a822-2e704c767e88",
+      "name": "Regenerar materia especifica",
+      "type": "Template",
+      "command": true,
+      "templatePath": "_template/Regenerar materia - Template.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "temp"
+      },
+      "folder": {
+        "enabled": false,
+        "folders": [],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
         "chooseFromSubfolders": false
       },
       "appendLink": false,
@@ -173,18 +113,50 @@
       "setFileExistsBehavior": true
     },
     {
-      "id": "681ce301-02f5-47f3-a822-2e704c767e88",
-      "name": "Regenerar materia especifica",
+      "id": "60f58eea-e5ae-4e93-8ade-3421b90b3aeb",
+      "name": "Nuevo Documento",
       "type": "Template",
       "command": true,
-      "templatePath": "_template/Regenerar materia - Template.md",
+      "templatePath": "_template/legal/Documento - Template.md",
       "fileNameFormat": {
         "enabled": true,
-        "format": "temp"
+        "format": "Untitle"
       },
       "folder": {
+        "enabled": true,
+        "folders": [
+          "/"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
         "enabled": false,
-        "folders": [],
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": true
+    },
+    {
+      "id": "40911c77-0926-4ddf-9016-cfa647400e63",
+      "name": "Crear artículo",
+      "type": "Template",
+      "command": true,
+      "templatePath": "_template/legal/Artículo - Template.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "Untitle"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "/"
+        ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
         "chooseFromSubfolders": false

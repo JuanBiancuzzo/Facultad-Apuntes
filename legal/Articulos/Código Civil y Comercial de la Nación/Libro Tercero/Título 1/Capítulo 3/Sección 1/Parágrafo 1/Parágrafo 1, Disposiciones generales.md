@@ -6,14 +6,11 @@ previo: "[[Sección 1, Obligaciones de dar|Sección 1, Obligaciones de dar]]"
 tags:
   - legal/Parágrafo
 ---
+```dataviewjs
+    await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
+```
 ### Interpretación
 ---
-
-### Subsecciones
----
-```dataviewjs
-	await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
-```
 
 ### Artículos
 ---

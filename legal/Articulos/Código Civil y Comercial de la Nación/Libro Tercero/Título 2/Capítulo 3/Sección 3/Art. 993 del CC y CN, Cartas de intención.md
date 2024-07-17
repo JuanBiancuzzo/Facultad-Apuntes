@@ -1,15 +1,12 @@
 ---
 num: 993
 nombre: Cartas de intención
-articulo: 
- - 
-   - tipo: texto
-   - texto: "Los instrumentos mediante los cuales una parte, o todas ellas, expresan un consentimiento para negociar sobre ciertas bases, limitado a cuestiones relativas a un futuro contrato, son de interpretación restrictiva. Sólo tienen la fuerza obligatoria de la oferta si cumplen sus requisitos."
-
-
+articulo:
+  - tipo: texto
+    texto: Los instrumentos mediante los cuales una parte, o todas ellas, expresan un consentimiento para negociar sobre ciertas bases, limitado a cuestiones relativas a un futuro contrato, son de interpretación restrictiva. Sólo tienen la fuerza obligatoria de la oferta si cumplen sus requisitos.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 3/Sección 3/Sección 3, Tratativas contractuales.md|Sección 3, Tratativas contractuales]]"
-tags: 
- - legal/articulo
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---

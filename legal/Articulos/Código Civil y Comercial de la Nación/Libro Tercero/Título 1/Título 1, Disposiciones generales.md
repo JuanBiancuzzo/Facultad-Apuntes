@@ -6,14 +6,11 @@ previo: "[[Libro 3, Derechos Personales|Libro 3, Derechos Personales]]"
 tags:
   - legal/Título
 ---
+```dataviewjs
+    await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
+```
 ### Interpretación
 ---
-
-### Subsecciones
----
-```dataviewjs
-	await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
-```
 
 ### Artículos
 ---

@@ -2,29 +2,29 @@
 num: 148
 nombre: Personas jurídicas privadas
 articulo:
-  - - tipo: texto
-    - texto: "Son personas jurídicas privadas:"
-  - - tipo: enumeracion
-    - enumeracion: 5
-    - textos:
-        - - tipo: texto
-          - texto: las sociedades;
-        - - tipo: texto
-          - texto: las asociaciones civiles;
-        - - tipo: texto
-          - texto: las simples asociaciones;
-        - - tipo: texto
-          - texto: las fundaciones;
-        - - tipo: texto
-          - texto: las iglesias, confesiones, comunidades o entidades religiosas;
-        - - tipo: texto
-          - texto: las mutuales;
-        - - tipo: texto
-          - texto: las cooperativas;
-        - - tipo: texto
-          - texto: el consorcio de propiedad horizontal;
-        - - tipo: texto
-          - texto: toda otra contemplada en disposiciones de este Código o en otras leyes y cuyo carácter de tal se establece o resulta de su finalidad y normas de funcionamiento.
+  - tipo: texto
+    texto: "Son personas jurídicas privadas:"
+  - tipo: enumeracion
+    enumeracion: 5
+    textos:
+      - tipo: texto
+        texto: las sociedades;
+      - tipo: texto
+        texto: las asociaciones civiles;
+      - tipo: texto
+        texto: las simples asociaciones;
+      - tipo: texto
+        texto: las fundaciones;
+      - tipo: texto
+        texto: las iglesias, confesiones, comunidades o entidades religiosas;
+      - tipo: texto
+        texto: las mutuales;
+      - tipo: texto
+        texto: las cooperativas;
+      - tipo: texto
+        texto: el consorcio de propiedad horizontal;
+      - tipo: texto
+        texto: toda otra contemplada en disposiciones de este Código o en otras leyes y cuyo carácter de tal se establece o resulta de su finalidad y normas de funcionamiento.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 2/Sección 2, Clasificación.md|Sección 2, Clasificación]]"
 tags:
   - legal/articulo

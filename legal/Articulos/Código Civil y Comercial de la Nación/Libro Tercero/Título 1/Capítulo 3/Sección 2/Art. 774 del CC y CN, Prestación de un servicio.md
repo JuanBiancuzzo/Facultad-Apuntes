@@ -2,20 +2,19 @@
 num: 774
 nombre: Prestación de un servicio
 articulo:
-  - - tipo: texto
-    - texto: "La prestación de un servicio puede consistir:"
-  - - tipo: enumeracion
-    - enumeracion: 5
-    - textos:
-        - - tipo: texto
-          - texto: en realizar cierta actividad, con la diligencia apropiada, independientemente de su éxito. Las cláusulas que comprometen a los buenos oficios, o a aplicar los mejores esfuerzos están comprendidas en este inciso;
-        - - tipo: texto
-          - texto: en procurar al acreedor cierto resultado concreto, con independencia de su eficacia;
-        - - tipo: texto
-          - texto: en procurar al acreedor el resultado eficaz prometido. La cláusula llave en mano o producto en mano está comprendida en este inciso.
-        - 
-    - tipo: texto
-    - texto: Si el resultado de la actividad del deudor consiste en una cosa, para su entrega se aplican las reglas de las obligaciones de dar cosas ciertas para constituir derechos reales.
+  - tipo: texto
+    texto: "La prestación de un servicio puede consistir:"
+  - tipo: texto
+    enumeracion: 5
+    textos:
+      - - tipo: texto
+        - texto: en realizar cierta actividad, con la diligencia apropiada, independientemente de su éxito. Las cláusulas que comprometen a los buenos oficios, o a aplicar los mejores esfuerzos están comprendidas en este inciso;
+      - - tipo: texto
+        - texto: en procurar al acreedor cierto resultado concreto, con independencia de su eficacia;
+      - - tipo: texto
+        - texto: en procurar al acreedor el resultado eficaz prometido. La cláusula llave en mano o producto en mano está comprendida en este inciso.
+      - 
+    texto: Si el resultado de la actividad del deudor consiste en una cosa, para su entrega se aplican las reglas de las obligaciones de dar cosas ciertas para constituir derechos reales.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 1/Capítulo 3/Sección 2/Sección 2, Obligaciones de hacer y de no hacer.md|Sección 2, Obligaciones de hacer y de no hacer]]"
 tags:
   - legal/articulo

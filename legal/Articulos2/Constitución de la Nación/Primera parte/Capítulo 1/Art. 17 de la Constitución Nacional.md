@@ -52,6 +52,6 @@ propiedad privada.
 | Exigiblidad | A toda la sociedad | Al deudor |
 | Relación | [[Cosa\|Cosa]] - [[Persona humana\|Persona]] - Sociedad | Dos partes |
 | Objeto | Cosa en el presente | Prestación ([[Libro Tercero, Título 1, Capítulo 3, Sección 1, Obligaciones de dar\|de dar]] - [[Sección 2, Obligaciones de hacer y de no hacer\|hacer]] - [[Art. 778 del CC y CN, Obligación de no hacer\|no hacer]]) |
-| [[Relación jurídica\|Relaciones jurídicas]] | [[Libro Cuarto, Derechos Reales\|Reales]] | [[Derechos créditorios o personales\|Personales]] |
+| [[Relación jurídica\|Relaciones jurídicas]] | [[Libro 4, Derechos Reales\|Reales]] | [[Derechos créditorios o personales\|Personales]] |
 | Forma | Prescrita por Ley | No en general. Sí en particular |
-| [[Libro Cuarto, Título 1, Capítulo 2, Adquisición, transmisión, extinción y oponibilidad#Prescripción\|Prescripción]] | [[Libro Cuarto, Título 1, Capítulo 2, Adquisición, transmisión, extinción y oponibilidad#Prescripción adquisitiva\|Adquisitiva]] | [[Libro Cuarto, Título 1, Capítulo 2, Adquisición, transmisión, extinción y oponibilidad#Prescripción liberatoria\|Liberatoria]] |
+| [[Capítulo 2, Adquisición, transmisión, extinción y oponibilidad#Prescripción\|Prescripción]] | [[Capítulo 2, Adquisición, transmisión, extinción y oponibilidad#Prescripción adquisitiva\|Adquisitiva]] | [[Capítulo 2, Adquisición, transmisión, extinción y oponibilidad#Prescripción liberatoria\|Liberatoria]] |

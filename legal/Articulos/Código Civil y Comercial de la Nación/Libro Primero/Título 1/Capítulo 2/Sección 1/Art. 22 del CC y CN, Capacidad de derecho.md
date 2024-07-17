@@ -1,13 +1,12 @@
 ---
 num: 22
 nombre: Capacidad de derecho
-articulo: 
- - 
-   - tipo: texto
-   - texto: "Toda persona humana goza de la aptitud para ser titular de derechos y deberes jurídicos. La ley puede privar o limitar esta capacidad respecto de hechos, simples actos, o actos jurídicos determinados"
+articulo:
+  - tipo: texto
+    texto: Toda persona humana goza de la aptitud para ser titular de derechos y deberes jurídicos. La ley puede privar o limitar esta capacidad respecto de hechos, simples actos, o actos jurídicos determinados
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero/Título 1/Capítulo 2/Sección 1/Sección 1, Principios generales.md|Sección 1, Principios generales]]"
-tags: 
- - legal/articulo
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---

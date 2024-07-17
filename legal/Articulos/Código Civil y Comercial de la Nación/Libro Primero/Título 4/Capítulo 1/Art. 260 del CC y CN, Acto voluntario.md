@@ -1,15 +1,12 @@
 ---
 num: 260
 nombre: Acto voluntario
-articulo: 
- - 
-   - tipo: texto
-   - texto: "El acto voluntario es el ejecutado con discernimiento, intención y libertad, que se manifiesta por un hecho exterior."
-
-
+articulo:
+  - tipo: texto
+    texto: El acto voluntario es el ejecutado con discernimiento, intención y libertad, que se manifiesta por un hecho exterior.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero/Título 4/Capítulo 1/Capítulo 1, Disposiciones generales.md|Capítulo 1, Disposiciones generales]]"
-tags: 
- - legal/articulo
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---

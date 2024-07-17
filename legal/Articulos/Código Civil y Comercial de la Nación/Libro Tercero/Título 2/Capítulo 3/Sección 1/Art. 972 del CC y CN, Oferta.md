@@ -1,15 +1,12 @@
 ---
 num: 972
 nombre: Oferta
-articulo: 
- - 
-   - tipo: texto
-   - texto: "La oferta es la manifestación dirigida a persona determinada o determinable, con la intención de obligarse y con las precisiones necesarias para establecer los efectos que debe producir de ser aceptada."
-
-
+articulo:
+  - tipo: texto
+    texto: La oferta es la manifestación dirigida a persona determinada o determinable, con la intención de obligarse y con las precisiones necesarias para establecer los efectos que debe producir de ser aceptada.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 3/Sección 1/Sección 1, Consentimiento, oferta y aceptación.md|Sección 1, Consentimiento, oferta y aceptación]]"
-tags: 
- - legal/articulo
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---

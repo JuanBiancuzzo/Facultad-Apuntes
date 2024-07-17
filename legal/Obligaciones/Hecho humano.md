@@ -7,7 +7,7 @@ capitulo: 2
 ---
 Son aquellos en los que ha intervenido el hombre para su acontecer.
 
-Se dividen en actos voluntarios e involuntarios. Cabe advertir que al realizar esta distinción, el nuevo enfoque del [[Código Civil y Comercial de la Nación, Ley 26.994|CC y CN]] sustituye la terminología que refería a hechos voluntarios e involuntarios en el código derogado
+Se dividen en actos voluntarios e involuntarios. Cabe advertir que al realizar esta distinción, el nuevo enfoque del [[Código Civil y Comercial de la Nación|CC y CN]] sustituye la terminología que refería a hechos voluntarios e involuntarios en el código derogado
 
 #### Actos voluntarios
 ---

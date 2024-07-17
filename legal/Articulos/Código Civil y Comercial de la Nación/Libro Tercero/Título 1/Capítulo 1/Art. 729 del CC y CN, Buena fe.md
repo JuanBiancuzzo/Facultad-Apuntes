@@ -2,8 +2,8 @@
 num: 729
 nombre: Buena fe
 articulo:
-  - - tipo: texto
-    - texto: Deudor y acreedor deben obrar con cuidado, previsión y según las exigencias de la buena fe.
+  - tipo: texto
+    texto: Deudor y acreedor deben obrar con cuidado, previsión y según las exigencias de la buena fe.
 previo: "[[Capítulo 1 - Disposiciones generales]]"
 tags:
   - legal/articulo

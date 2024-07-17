@@ -38,7 +38,7 @@ Considera la índole del contenido que la norma regula y parte de la división d
 ##### Por su ámbito personal de validez
 ---
 Considera a los destinatarios, en el sentido de la determinación o indeterminación del número de casos que regula su enunciado
-* Normas generales, que regulan un número indeterminado de casos, como las normas del [[Código Civil y Comercial de la Nación, Ley 26.994|Código Civil y Comercial de la Nación]] o el [[Código Penal de la Nación|Código Penal de la Nación]]
+* Normas generales, que regulan un número indeterminado de casos, como las normas del [[Código Civil y Comercial de la Nación|Código Civil y Comercial de la Nación]] o el [[Código Penal de la Nación|Código Penal de la Nación]]
 * Normas individuales o individualizadas, que regulan un número determinado de casos, como una sentencia, una ley de expropiación de un inmueble, etc.
 
 ##### Por su imperatividad

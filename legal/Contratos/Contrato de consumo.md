@@ -16,7 +16,7 @@ Desde esta perspectiva, para la existencia de un "contrato de consumo", resulta 
 
 #### Consumidor
 ---
-El [[Código Civil y Comercial de la Nación, Ley 26.994|Código Civil y Comercial]] sustituyó la definición de consumidor que daba el [[Art. 1 de la Defensa del Consumidor, Objeto. Consumidor. Equiparación|artículo 1°]] de la [[Ley de Defensa del consumidor, Ley 24.240|ley 24.240]], por otra que repitió, textualmente en el [[Art. 1092 del CC y CN, Relación de consumo. Consumidor|artículo 1092]]
+El [[Código Civil y Comercial de la Nación|Código Civil y Comercial]] sustituyó la definición de consumidor que daba el [[Art. 1 de la Defensa del Consumidor, Objeto. Consumidor. Equiparación|artículo 1°]] de la [[Ley de Defensa del consumidor, Ley 24.240|ley 24.240]], por otra que repitió, textualmente en el [[Art. 1092 del CC y CN, Relación de consumo. Consumidor|artículo 1092]]
 ![[Art. 1092 del CC y CN, Relación de consumo. Consumidor#Artículo]]
 
 #### Proveedor

@@ -13,11 +13,16 @@ aliases:
   - Ley 26.994
   - CC y CN
 ---
-### Secciones principales
----
 ```dataviewjs
 	await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
 ```
+### Definición
+---
+En general, en materia contractual las [[Norma jurídica|normas]] del Código Civil y Comercial de la Nación son supletorias porque suplen la voluntad de las partes, debido a que el [[Art. 958 del CC y CN, Libertad de contratación|art. 958 del CC y CN]]
+![[Art. 958 del CC y CN, Libertad de contratación#Artículo]]
+
+Coincidentemente, el [[Art. 962 del CC y CN, Carácter de las normas legales|art. 962 del CC y CN]]
+![[Art. 962 del CC y CN, Carácter de las normas legales#Artículo]]
 
 ### Artículos
 ---
@@ -25,51 +30,3 @@ aliases:
 	await dv.view("_scripts/dataview/legal/mostrarArticulos", { paginaActual: dv.current() });
 ```
 
-<%* 
-	const dv = app.plugins.plugins.dataview.api;
-	let articulos = dv.pages('"legal/Articulos" and #legal/articulo')
-		.filter(articulo => articulo.articulo)
-		.map(articulo => { 
-			return {
-				tArchivo: tp.file.find_tfile(articulo.file.path),
-				texto: reconstruirTextos(articulo.articulo)
-			};
-		});
-
-	console.log(articulos);
-
-	return;
-
-	console.log("Control");
-	let modificaciones = [];
-	for (let { tArchivo, texto } of articulos) {
-		let modificacion = app.fileManager.processFrontMatter(tArchivo, (frontmatter) => {
-			frontmatter["articulo"] = texto;
-	    });
-	    
-	    modificaciones.push(modificacion);
-	}
-	
-	await Promise.all(modificaciones);
-
-	function reconstruirTextos(texto) {
-		let nuevoTexto = [];
-
-		for (let textoEnumeracion of texto) {
-			let resultado = {};
-			for (let parte of textoEnumeracion) {
-				for (let key of Object.keys(parte)) {
-					resultado[key] = parte[key];
-				}			
-			}
-
-			if (resultado.tipo == "enumeracion") {
-				resultado["textos"] = reconstruirTextos(resultado.textos);
-			}
-
-			nuevoTexto.push(resultado);
-		}
-
-		return nuevoTexto;
-	}
-_%>

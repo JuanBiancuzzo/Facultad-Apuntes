@@ -1,15 +1,12 @@
 ---
 num: 1006
 nombre: Determinación por un tercero
-articulo: 
- - 
-   - tipo: texto
-   - texto: "Las partes pueden pactar que la determinación del objeto sea efectuada por un tercero. En caso de que el tercero no realice la elección, sea imposible o no haya observado los criterios expresamente establecidos por las partes o por los usos y costumbres, puede recurrirse a la determinación judicial, petición que debe tramitar por el procedimiento más breve que prevea la legislación procesal."
-
-
+articulo:
+  - tipo: texto
+    texto: Las partes pueden pactar que la determinación del objeto sea efectuada por un tercero. En caso de que el tercero no realice la elección, sea imposible o no haya observado los criterios expresamente establecidos por las partes o por los usos y costumbres, puede recurrirse a la determinación judicial, petición que debe tramitar por el procedimiento más breve que prevea la legislación procesal.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 5/Capítulo 5, Objeto.md|Capítulo 5, Objeto]]"
-tags: 
- - legal/articulo
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---

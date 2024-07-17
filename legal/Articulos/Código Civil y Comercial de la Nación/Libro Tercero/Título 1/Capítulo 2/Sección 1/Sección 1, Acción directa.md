@@ -6,14 +6,11 @@ previo: "[[Capítulo 2, Acciones y garantía común de los acreedores|Capítulo 
 tags:
   - legal/Sección
 ---
+```dataviewjs
+    await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
+```
 ### Interpretación
 ---
-
-### Subsecciones
----
-```dataviewjs
-	await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
-```
 
 ### Artículos
 ---

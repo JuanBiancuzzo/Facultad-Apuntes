@@ -2,8 +2,8 @@
 num: 958
 nombre: Libertad de contratación
 articulo:
-  - - tipo: texto
-    - texto: Las partes son libres para celebrar un contrato y determinar su contenido, dentro de los límites impuestos por la ley o el orden público. Las normas legales siempre son de aplicación supletoria a la voluntad de las partes expresada en el contrato, aunque la ley no lo determine en forma expresa para un tipo contractual determinado, salvo que la norma sea expresamente imperativa, y siempre con interpretación restrictiva.
+  - tipo: texto
+    texto: Las partes son libres para celebrar un contrato y determinar su contenido, dentro de los límites impuestos por la ley o el orden público. Las normas legales siempre son de aplicación supletoria a la voluntad de las partes expresada en el contrato, aunque la ley no lo determine en forma expresa para un tipo contractual determinado, salvo que la norma sea expresamente imperativa, y siempre con interpretación restrictiva.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 1/Capítulo 1, Disposiciones generales.md|Capítulo 1, Disposiciones generales]]"
 tags:
   - legal/articulo

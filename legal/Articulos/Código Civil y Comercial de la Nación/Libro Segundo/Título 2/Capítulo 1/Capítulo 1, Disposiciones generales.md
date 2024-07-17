@@ -6,14 +6,11 @@ previo: "[[Título 2, Régimen patrimonial del matrimonio|Título 2, Régimen pa
 tags:
   - legal/Capítulo
 ---
+```dataviewjs
+    await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
+```
 ### Interpretación
 ---
-
-### Subsecciones
----
-```dataviewjs
-	await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
-```
 
 ### Artículos
 ---

@@ -1,15 +1,12 @@
 ---
 num: 979
 nombre: Modos de aceptación
-articulo: 
- - 
-   - tipo: texto
-   - texto: "Toda declaración o acto del destinatario que revela conformidad con la oferta constituye aceptación. El silencio importa aceptación sólo cuando existe el deber de expedirse, el que puede resultar de la voluntad de las partes, de los usos o de las prácticas que las partes hayan establecido entre ellas, o de una relación entre el silencio actual y las declaraciones precedentes."
-
-
+articulo:
+  - tipo: texto
+    texto: Toda declaración o acto del destinatario que revela conformidad con la oferta constituye aceptación. El silencio importa aceptación sólo cuando existe el deber de expedirse, el que puede resultar de la voluntad de las partes, de los usos o de las prácticas que las partes hayan establecido entre ellas, o de una relación entre el silencio actual y las declaraciones precedentes.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 3/Sección 1/Sección 1, Consentimiento, oferta y aceptación.md|Sección 1, Consentimiento, oferta y aceptación]]"
-tags: 
- - legal/articulo
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---

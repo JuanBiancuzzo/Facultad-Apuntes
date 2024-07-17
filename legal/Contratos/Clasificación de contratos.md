@@ -7,7 +7,7 @@ capitulo: 3
 ---
 Existen diferentes formas de clasificar los [[Contrato|contratos]], todos ellos persiguiendo un mismo objetivo: encontrar los rasgos comunes de ellos. 
 
-Primero analizaremos la clasificación que el propio [[Código Civil y Comercial de la Nación, Ley 26.994|Código Civil y Comercial]] establece de manera expresa. También hemos de ver otras clasificaciones que surgen del propio ordenamiento legal aunque de manera no tan clara. Finalmente, hemos de revisar otra clasificación que se ha visto en la doctrina y en la legislación comparada que apunta al contenido [[Economía|económico]] y social de cada [[Contrato|contrato]].
+Primero analizaremos la clasificación que el propio [[Código Civil y Comercial de la Nación|Código Civil y Comercial]] establece de manera expresa. También hemos de ver otras clasificaciones que surgen del propio ordenamiento legal aunque de manera no tan clara. Finalmente, hemos de revisar otra clasificación que se ha visto en la doctrina y en la legislación comparada que apunta al contenido [[Economía|económico]] y social de cada [[Contrato|contrato]].
 
 #### Contratos unilaterales y bilaterales
 ---
@@ -58,7 +58,7 @@ Las formas tienen carácter excepcional en nuestro derecho. Salvo disposición e
 ---
 Son contratos consensuales los que quedan concluidos por el mero consentimiento, sea o no formal. Son reales los que quedan concluidos solo con la entrega de la cosa sobre la cual versa el contrato. Así los definía el Código Civil de Vélez Sarsfield en los arts. 1140 y 1141.
 
-De acuerdo con el concepto antes expresado, los contratos reales requieren como condición de su existencia la entrega de la cosa. El mero acuerdo de voluntades es ineficaz para obligar a las partes. Pero esta categoría parece carecer de sentido en el derecho moderno, en el que impera el principio de la autonomía de la voluntad; basta el acuerdo de voluntades expresado en la forma señalada por la ley para que el contrato tenga fuerza obligatoria, sin otro límite que la legitimidad de la causa y el objeto. Bien puede decirse que la categoría de contratos reales es hoy un anacronismo. Por eso, ha hecho bien el [[Código Civil y Comercial de la Nación, Ley 26.994|Código Civil y Comercial]] en suprimir esta clasificación.
+De acuerdo con el concepto antes expresado, los contratos reales requieren como condición de su existencia la entrega de la cosa. El mero acuerdo de voluntades es ineficaz para obligar a las partes. Pero esta categoría parece carecer de sentido en el derecho moderno, en el que impera el principio de la autonomía de la voluntad; basta el acuerdo de voluntades expresado en la forma señalada por la ley para que el contrato tenga fuerza obligatoria, sin otro límite que la legitimidad de la causa y el objeto. Bien puede decirse que la categoría de contratos reales es hoy un anacronismo. Por eso, ha hecho bien el [[Código Civil y Comercial de la Nación|Código Civil y Comercial]] en suprimir esta clasificación.
 
 #### Contratos principales y accesorios
 ---

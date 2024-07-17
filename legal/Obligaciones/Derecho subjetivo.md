@@ -82,7 +82,7 @@ Una de las más importantes clasificaciones que se han formulado de los derechos
 
 ##### Derechos reales
 ---
-![[Libro Cuarto, Derechos Reales#Definición]]
+![[Libro 4, Derechos Reales#Definición]]
 
 ##### Derecho intelectual
 ---

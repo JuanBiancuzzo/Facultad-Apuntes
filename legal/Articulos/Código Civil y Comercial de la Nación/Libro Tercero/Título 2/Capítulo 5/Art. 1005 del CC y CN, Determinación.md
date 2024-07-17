@@ -1,15 +1,12 @@
 ---
 num: 1005
 nombre: Determinación
-articulo: 
- - 
-   - tipo: texto
-   - texto: "Cuando el objeto se refiere a bienes, éstos deben estar determinados en su especie o género según sea el caso, aunque no lo estén en su cantidad, si ésta puede ser determinada. Es determinable cuando se establecen los criterios suficientes para su individualización."
-
-
+articulo:
+  - tipo: texto
+    texto: Cuando el objeto se refiere a bienes, éstos deben estar determinados en su especie o género según sea el caso, aunque no lo estén en su cantidad, si ésta puede ser determinada. Es determinable cuando se establecen los criterios suficientes para su individualización.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 5/Capítulo 5, Objeto.md|Capítulo 5, Objeto]]"
-tags: 
- - legal/articulo
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---

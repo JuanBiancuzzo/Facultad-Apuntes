@@ -11,7 +11,7 @@ Regula las relaciones entre los [[Sujeto de derecho|sujetos]]. Civil, comercial 
 ---
 * [[Derecho|Derecho]] de Contratos
 	* regula los acuerdos y relaciones entre [[Persona jurídica|personas jurídicas]]
-* [[Libro Cuarto, Derechos Reales|Derechos Reales]]
+* [[Libro 4, Derechos Reales|Derechos Reales]]
 	* regula y se refiere a los derechos sobre la [[Propiedad privada|propiedad privada]]
 * Derecho de las Obligaciones
 	* regula las relaciones jurídicas en las que una parte debe cumplir con una prestación hacia otra

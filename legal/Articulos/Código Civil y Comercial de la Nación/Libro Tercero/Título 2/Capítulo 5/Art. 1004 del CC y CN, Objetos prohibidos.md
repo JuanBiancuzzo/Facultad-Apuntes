@@ -2,15 +2,15 @@
 num: 1004
 nombre: Objetos prohibidos
 articulo:
-  - - tipo: texto
-    - texto: No pueden ser objeto de los contratos los hechos que son imposibles o están prohibidos por las leyes, son contrarios a la moral, al orden público, a la dignidad de la persona humana, o lesivos de los derechos ajenos; ni los bienes que por un motivo especial se prohíbe que lo sean. Cuando tengan por objeto derechos sobre el cuerpo humano se aplican los artículos 17 y 56.
+  - tipo: texto
+    texto: No pueden ser objeto de los contratos los hechos que son imposibles o están prohibidos por las leyes, son contrarios a la moral, al orden público, a la dignidad de la persona humana, o lesivos de los derechos ajenos; ni los bienes que por un motivo especial se prohíbe que lo sean. Cuando tengan por objeto derechos sobre el cuerpo humano se aplican los artículos 17 y 56.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 5/Capítulo 5, Objeto.md|Capítulo 5, Objeto]]"
 tags:
   - legal/articulo
 ---
 ### Artículo
 ---
-"No pueden ser [[Libro Tercero, Título 2, Capítulo 5, Objeto|objeto]] de los [[Contrato|contratos]] los hechos que son imposibles o están prohibidos por las leyes, son contrarios a la moral, al orden público, a la dignidad de la persona humana, o lesivos de los derechos ajenos; ni los bienes que por un motivo especial se prohíbe que lo sean. Cuando tengan por objeto derechos sobre el cuerpo humano se aplican los [[Art. 17 del CC y CN, Derechos sobre el cuerpo humano|artículos 17]] y [[Art. 56 del CC y CN, Actos de disposición sobre el propio cuerpo|56]]."
+"No pueden ser [[Capítulo 5, Objeto|objeto]] de los [[Contrato|contratos]] los hechos que son imposibles o están prohibidos por las leyes, son contrarios a la moral, al orden público, a la dignidad de la persona humana, o lesivos de los derechos ajenos; ni los bienes que por un motivo especial se prohíbe que lo sean. Cuando tengan por objeto derechos sobre el cuerpo humano se aplican los [[Art. 17 del CC y CN, Derechos sobre el cuerpo humano|artículos 17]] y [[Art. 56 del CC y CN, Actos de disposición sobre el propio cuerpo|56]]."
 
 ### Interpretación
 ---

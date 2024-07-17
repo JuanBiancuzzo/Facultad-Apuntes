@@ -2,8 +2,8 @@
 num: 1003
 nombre: Disposiciones generales
 articulo:
-  - - tipo: texto
-    - texto: Se aplican al objeto del contrato las disposiciones de la Sección 1a, Capítulo 5, Título IV del Libro Primero de este Código. Debe ser lícito, posible, determinado o determinable, susceptible de valoración económica y corresponder a un interés de las partes, aun cuando éste no sea patrimonial.
+  - tipo: texto
+    texto: Se aplican al objeto del contrato las disposiciones de la Sección 1a, Capítulo 5, Título IV del Libro Primero de este Código. Debe ser lícito, posible, determinado o determinable, susceptible de valoración económica y corresponder a un interés de las partes, aun cuando éste no sea patrimonial.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 5/Capítulo 5, Objeto.md|Capítulo 5, Objeto]]"
 tags:
   - legal/articulo

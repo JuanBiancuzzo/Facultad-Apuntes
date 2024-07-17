@@ -72,16 +72,16 @@ async function preguntarTodoTexto(tp, texto = []) {
             if (accion == SALIR) {
                 continue;
             } else if (accion == AGREGAR_TEXTO) {
-                let nuevoTexto = await preguntarTexto(`Ingresar texto después de: ${contenidoAEditar.texto}`);
+                let nuevoTexto = await preguntarTexto(tp, `Ingresar texto después de: ${contenidoAEditar.texto}`);
                 previo.textos.splice(indices.pop() + 1, 0, nuevoTexto);
 
             } else if (accion == AGREGAR_ENUMERACION) {
-                let nuevaEnumeracion = await preguntarEnumeracion();
+                let nuevaEnumeracion = await preguntarEnumeracion(tp);
                 previo.textos.splice(indices.pop() + 1, 0, nuevaEnumeracion);
 
 
             } else if (accion == EDITAR) {
-                contenidoAEditar["texto"] = (await preguntarTexto(`Se modifica: "${contenidoAEditar.texto}"`)).texto;
+                contenidoAEditar["texto"] = (await preguntarTexto(tp, `Se modifica: "${contenidoAEditar.texto}"`)).texto;
 
             } else if (accion == ELIMINAR) {
                 texto = eliminarParteTexto(indices, texto);
@@ -137,11 +137,11 @@ async function preguntarEnumeracion(tp) {
         )
     };
 
-    let simbolo = (resultado.enumeracion == NUMERICO) ? 1 : cte.caracteres[0];
+    let simbolo = (resultado.enumeracion == NUMERICO) ? 1 : tp.user.constantes().caracteres[0];
     let textos = [ await preguntarTexto(tp, ` ${simbolo}. Ingresar el texto que iría acá`) ];
     while (true) {
         let posicion = textos.filter(t => t.tipo == TEXTO).length;
-        simbolo = (resultado.enumeracion == NUMERICO) ? posicion + 1 : cte.caracteres[posicion];
+        simbolo = (resultado.enumeracion == NUMERICO) ? posicion + 1 : tp.user.constantes().caracteres[posicion];
 
         let opciones = [` ${simbolo}. Agregar texto`, " ⊕ Agregar enumeración", " ↶ Dejar de editar"];
         let valores = [AGREGAR_TEXTO, AGREGAR_ENUMERACION, SALIR];
@@ -242,7 +242,7 @@ function describirMetadataEnumeracion(data) {
     tR    += describirMetadata(data.textos)
                 .split("\n")
                 .map(texto => `    ${texto}`)
-                .join("\n");
+                .join("\n") + "\n";
     return tR;
 }
 

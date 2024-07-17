@@ -20,7 +20,7 @@ En la norma transcrita se determina claramente la irretroactividad de las leyes 
 
 #### La ley con relación al espacio
 ---
-Teniendo en cuenta su ámbito espacial, las leyes pueden tener aplicación en todo el territorio del Estado o un alcance restringido a un sector de éste. A las primeras se las denomina leyes nacionales como, por ejemplo, el [[Código Civil y Comercial de la Nación, Ley 26.994|Código Civil y Comercial de la Nación]], el [[Código Penal de la Nación|Código Penal de la Nación]], etc., y a las segundas provinciales o locales, como los Códigos Procesales sancionados por el [[Poder Legislativo|Poder Legislativo]] de cada provincia que rigen sólo en sus respectivos territorios
+Teniendo en cuenta su ámbito espacial, las leyes pueden tener aplicación en todo el territorio del Estado o un alcance restringido a un sector de éste. A las primeras se las denomina leyes nacionales como, por ejemplo, el [[Código Civil y Comercial de la Nación|Código Civil y Comercial de la Nación]], el [[Código Penal de la Nación|Código Penal de la Nación]], etc., y a las segundas provinciales o locales, como los Códigos Procesales sancionados por el [[Poder Legislativo|Poder Legislativo]] de cada provincia que rigen sólo en sus respectivos territorios
 
 Si bien, en principio, las leyes se dictan para regir en el territorio de un [[Estado|Estado]], se dan ocasiones en las que las leyes de un Estado se aplican fuera del territorio de éste y aun por un [[Juez|juez]] extranjero. Es lo que ocurre en situaciones jurídicas sometidas a dos o más sistemas jurídicos nacionales, configurándose supuestos propios del [[Derecho internacional|Derecho Internacional]]
 

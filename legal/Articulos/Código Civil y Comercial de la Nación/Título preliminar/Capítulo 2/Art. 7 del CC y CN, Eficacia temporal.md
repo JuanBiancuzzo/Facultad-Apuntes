@@ -2,12 +2,12 @@
 num: 7
 nombre: Eficacia temporal
 articulo:
-  - - tipo: texto
-    - texto: A partir de su entrada en vigencia, las leyes se aplican a las consecuencias de las relaciones y situaciones jurídicas existentes.
-  - - tipo: texto
-    - texto: La leyes no tienen efecto retroactivo, sean o no de orden público, excepto disposición en contrario. La retroactividad establecida por la ley no puede afectar derechos amparados por garantías constitucionales.
-  - - tipo: texto
-    - texto: Las nuevas leyes supletorias no son aplicables a los contratos en curso de ejecución, con excepción de las normas más favorables al consumidor en las relaciones de consumo.
+  - tipo: texto
+    texto: A partir de su entrada en vigencia, las leyes se aplican a las consecuencias de las relaciones y situaciones jurídicas existentes.
+  - tipo: texto
+    texto: La leyes no tienen efecto retroactivo, sean o no de orden público, excepto disposición en contrario. La retroactividad establecida por la ley no puede afectar derechos amparados por garantías constitucionales.
+  - tipo: texto
+    texto: Las nuevas leyes supletorias no son aplicables a los contratos en curso de ejecución, con excepción de las normas más favorables al consumidor en las relaciones de consumo.
 previo: "[[Capítulo 2, Ley|Capítulo 2, Ley]]"
 tags:
   - legal/articulo

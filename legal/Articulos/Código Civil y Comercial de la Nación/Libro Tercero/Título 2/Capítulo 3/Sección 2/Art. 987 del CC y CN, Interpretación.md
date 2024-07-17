@@ -1,15 +1,12 @@
 ---
 num: 987
 nombre: Interpretación
-articulo: 
- - 
-   - tipo: texto
-   - texto: "Las cláusulas ambiguas predispuestas por una de las partes se interpretan en sentido contrario a la parte predisponente."
-
-
+articulo:
+  - tipo: texto
+    texto: Las cláusulas ambiguas predispuestas por una de las partes se interpretan en sentido contrario a la parte predisponente.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 3/Sección 2/Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas.md|Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas]]"
-tags: 
- - legal/articulo
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---

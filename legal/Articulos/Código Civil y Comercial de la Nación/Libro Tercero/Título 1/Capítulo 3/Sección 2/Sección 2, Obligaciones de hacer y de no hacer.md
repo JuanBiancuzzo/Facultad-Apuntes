@@ -6,6 +6,9 @@ previo: "[[Capítulo 3, Clases de obligaciones|Capítulo 3, Clases de obligacion
 tags:
   - legal/Sección
 ---
+```dataviewjs
+    await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
+```
 ### Interpretación
 ---
 #### Hacer como prestación de un servició
@@ -31,13 +34,6 @@ Como enuncia el [[Art. 776 del CC y CN, Incorporación de terceros|art. 776 del 
 Como enuncia el [[Art. 777 del CC y CN, Ejecución forzada|art. 777 del CC y CN]]
 
 ![[Art. 777 del CC y CN, Ejecución forzada#Artículo]]
-
-
-### Subsecciones
----
-```dataviewjs
-	await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
-```
 
 ### Artículos
 ---

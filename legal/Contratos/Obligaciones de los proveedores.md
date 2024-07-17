@@ -22,7 +22,7 @@ Establecidos los requisitos que debe reunir el deber de información, cabe indag
 
 #### La publicidad
 ---
-La sociedad de consumo para poder funcionar requiere de mecanismos que permitan dar a conocer un producto o servicio, instalarlo en la sociedad y generar la creencia de la necesidad del mismo para que sea demandado en el mercado. Esta función se cumple a través de la publicidad y el marketing. La [[Ley de Defensa del consumidor, Ley 24.240|ley 24.240]] fue pionera en regular la publicidad en algunos aspectos, completándose la regulación con la sanción del [[Código Civil y Comercial de la Nación, Ley 26.994|Código Civil y Comercial]] ([[Art. 1101 del CC y CN, Publicidad|arts. 1101]] a [[Art. 1103 del CC y CN, Efectos de la publicidad|1103]]).
+La sociedad de consumo para poder funcionar requiere de mecanismos que permitan dar a conocer un producto o servicio, instalarlo en la sociedad y generar la creencia de la necesidad del mismo para que sea demandado en el mercado. Esta función se cumple a través de la publicidad y el marketing. La [[Ley de Defensa del consumidor, Ley 24.240|ley 24.240]] fue pionera en regular la publicidad en algunos aspectos, completándose la regulación con la sanción del [[Código Civil y Comercial de la Nación|Código Civil y Comercial]] ([[Art. 1101 del CC y CN, Publicidad|arts. 1101]] a [[Art. 1103 del CC y CN, Efectos de la publicidad|1103]]).
 
 1) Efectos vinculantes de la publicidad
 2) Publicidad ilícita

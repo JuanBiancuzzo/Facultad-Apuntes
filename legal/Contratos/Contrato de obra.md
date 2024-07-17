@@ -7,7 +7,7 @@ capitulo: 3
 ---
 Se llama contrato de obra al contrato en virtud del cual una de las partes, actuando independientemente, se compromete a realizar una obra y la otra a pagar por esa obra un precio en dinero, que se llama retribución ([[Art. 1251 del CC y CN, Definición|art. 1251]]).
 
-El [[Código Civil y Comercial de la Nación, Ley 26.994|Código Civil y Comercial]] denomina, al que ejecuta la obra, contratista, y al que la paga, comitente. Es la terminología que seguiremos en nuestro estudio.
+El [[Código Civil y Comercial de la Nación|Código Civil y Comercial]] denomina, al que ejecuta la obra, contratista, y al que la paga, comitente. Es la terminología que seguiremos en nuestro estudio.
 
 Elementos
 * [[Formación del contrato de obra|Formación del contrato]]

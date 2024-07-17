@@ -1,15 +1,12 @@
 ---
 num: 989
 nombre: Control judicial de las cláusulas abusivas
-articulo: 
- - 
-   - tipo: texto
-   - texto: "La aprobación administrativa de las cláusulas generales no obsta a su control judicial."
-
-
+articulo:
+  - tipo: texto
+    texto: La aprobación administrativa de las cláusulas generales no obsta a su control judicial.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 3/Sección 2/Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas.md|Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas]]"
-tags: 
- - legal/articulo
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---

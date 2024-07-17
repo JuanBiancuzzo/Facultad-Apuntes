@@ -1,15 +1,12 @@
 ---
 num: 965
 nombre: Derecho de propiedad
-articulo: 
- - 
-   - tipo: texto
-   - texto: "Los derechos resultantes de los contratos integran el derecho de propiedad del contratante."
-
-
+articulo:
+  - tipo: texto
+    texto: Los derechos resultantes de los contratos integran el derecho de propiedad del contratante.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 1/Capítulo 1, Disposiciones generales.md|Capítulo 1, Disposiciones generales]]"
-tags: 
- - legal/articulo
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---

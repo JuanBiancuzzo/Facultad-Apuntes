@@ -2,8 +2,8 @@
 num: 2
 nombre: Interpretación
 articulo:
-  - - tipo: texto
-    - texto: La ley debe ser interpretada teniendo en cuenta sus palabras, sus finalidades, las leyes análogas, las disposiciones que surgen de los tratados sobre derechos humanos, los principios y los valores jurídicos, de modo coherente con todo el ordenamiento.
+  - tipo: texto
+    texto: La ley debe ser interpretada teniendo en cuenta sus palabras, sus finalidades, las leyes análogas, las disposiciones que surgen de los tratados sobre derechos humanos, los principios y los valores jurídicos, de modo coherente con todo el ordenamiento.
 previo: "[[Capítulo 1, Derecho|Capítulo 1, Derecho]]"
 tags:
   - legal/articulo

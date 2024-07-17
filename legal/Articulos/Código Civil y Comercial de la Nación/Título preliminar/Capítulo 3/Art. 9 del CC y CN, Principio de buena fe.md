@@ -2,8 +2,8 @@
 num: 9
 nombre: Principio de buena fe
 articulo:
-  - - tipo: texto
-    - texto: Los derechos deben ser ejercidos de buena fe.
+  - tipo: texto
+    texto: Los derechos deben ser ejercidos de buena fe.
 previo: "[[Capítulo 3, Ejercicio de los derechos|Capítulo 3, Ejercicio de los derechos]]"
 tags:
   - legal/articulo

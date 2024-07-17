@@ -6,14 +6,11 @@ previo: "[[Capítulo 3, Clases de obligaciones|Capítulo 3, Clases de obligacion
 tags:
   - legal/Sección
 ---
+```dataviewjs
+    await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
+```
 ### Interpretación
 ---
-
-### Subsecciones
----
-```dataviewjs
-	await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
-```
 
 ### Artículos
 ---

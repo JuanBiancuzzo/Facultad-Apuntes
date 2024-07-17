@@ -27,4 +27,4 @@ Es dable aclarar que para poder hablar con propiedad de un pago indebido, el mis
 
 #### Empleo útil
 ---
-![[Libro Tercero, Título 5, Capítulo 3, Empleo útil#Artículos]]
+![[Capítulo 3, Empleo útil#Artículos]]

@@ -1,23 +1,16 @@
 ---
 num: 159
 nombre: Deber de lealtad y diligencia. Interés contrario
-articulo: 
- - 
-   - tipo: texto
-   - texto: "Los administradores de la persona jurídica deben obrar con lealtad y diligencia."
-
- - 
-   - tipo: texto
-   - texto: "No pueden perseguir ni favorecer intereses contrarios a los de la persona jurídica. Si en determinada operación los tuvieran por sí o por interpósita persona, deben hacerlo saber a los demás miembros del órgano de administración o en su caso al órgano de gobierno y abstenerse de cualquier intervención relacionada con dicha operación."
-
- - 
-   - tipo: texto
-   - texto: "Les corresponde implementar sistemas y medios preventivos que reduzcan el riesgo de conflictos de intereses en sus relaciones con la persona jurídica."
-
-
+articulo:
+  - tipo: texto
+    texto: Los administradores de la persona jurídica deben obrar con lealtad y diligencia.
+  - tipo: texto
+    texto: No pueden perseguir ni favorecer intereses contrarios a los de la persona jurídica. Si en determinada operación los tuvieran por sí o por interpósita persona, deben hacerlo saber a los demás miembros del órgano de administración o en su caso al órgano de gobierno y abstenerse de cualquier intervención relacionada con dicha operación.
+  - tipo: texto
+    texto: Les corresponde implementar sistemas y medios preventivos que reduzcan el riesgo de conflictos de intereses en sus relaciones con la persona jurídica.
 previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 3/Parágrafo 2/Parágrafo 2, Funcionamiento.md|Parágrafo 2, Funcionamiento]]"
-tags: 
- - legal/articulo
+tags:
+  - legal/articulo
 ---
 ### Artículo
 ---

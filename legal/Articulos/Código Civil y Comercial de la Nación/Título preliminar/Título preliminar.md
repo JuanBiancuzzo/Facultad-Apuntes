@@ -5,10 +5,10 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Código Civil
 tags:
   - legal/Título
 ---
-### Subsecciones
----
 ```dataviewjs
-	await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
+
+    await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
+
 ```
 
 ### Artículos
