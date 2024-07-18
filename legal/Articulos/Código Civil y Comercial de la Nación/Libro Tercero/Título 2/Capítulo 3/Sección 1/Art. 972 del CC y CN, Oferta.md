@@ -25,7 +25,7 @@ En consecuencia, la oferta debe ser distinguida:
 
 	Por ello, a menos que se trate de la excepción prevista, se requiere una declaración de voluntad del interesado y una ulterior aceptación de quien hizo la oferta general. 
 
-	En línea con lo establecido en el Código Civil y Comercial, la [[Ley de Defensa del consumidor, Ley 24.240|ley 24.240]], llamada de defensa del consumidor, establece desde que fue promulgada que la oferta dirigida a consumidores potenciales indeterminados obliga a quien la emite durante el tiempo en que se realice, debiendo contener la fecha precisa de comienzo y de finalización, así como también sus modalidades, condiciones o limitaciones ([[Art. 7 de la Defensa del Consumidor, Oferta|art. 7°]]). 
+	En línea con lo establecido en el Código Civil y Comercial, la [[Ley de Defensa del consumidor|ley 24.240]], llamada de defensa del consumidor, establece desde que fue promulgada que la oferta dirigida a consumidores potenciales indeterminados obliga a quien la emite durante el tiempo en que se realice, debiendo contener la fecha precisa de comienzo y de finalización, así como también sus modalidades, condiciones o limitaciones ([[Art. 7 de la Defensa del Consumidor, Oferta|art. 7°]]). 
    
 	Asimismo, configura una declaración obligatoria para el que la emite la oferta de objetos por medio de un aparato automático, en cuyo caso el contrato queda concluido con la conducta del comprador que introduce la moneda haciendo funcionar el mecanismo.
 

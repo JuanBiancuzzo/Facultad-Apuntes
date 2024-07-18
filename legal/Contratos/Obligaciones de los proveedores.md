@@ -5,7 +5,7 @@ capitulo: 3
 ---
 ### Definición
 ---
-La [[Ley de Defensa del consumidor, Ley 24.240|ley 24.240]] ha establecido una serie de obligaciones esenciales en cabeza de los proveedores, que son la otra cara de una misma moneda: a cada obligación impuesta a los proveedores se le corresponde un derecho básico de los consumidores. Así, el derecho a la información se tutela mediante la regulación del cumplimiento del deber de proveerla y el control de la publicidad; el derecho a la seguridad se manifiesta en la responsabilidad objetiva impuesta al proveedor por los daños sufridos por el consumidor o usuario y que fueren causados por defectos en el producto o servicio, y el derecho a la garantía sobre los productos, se manifiestan en la regulación que de ella hace la ley 24.240.
+La [[Ley de Defensa del consumidor|ley 24.240]] ha establecido una serie de obligaciones esenciales en cabeza de los proveedores, que son la otra cara de una misma moneda: a cada obligación impuesta a los proveedores se le corresponde un derecho básico de los consumidores. Así, el derecho a la información se tutela mediante la regulación del cumplimiento del deber de proveerla y el control de la publicidad; el derecho a la seguridad se manifiesta en la responsabilidad objetiva impuesta al proveedor por los daños sufridos por el consumidor o usuario y que fueren causados por defectos en el producto o servicio, y el derecho a la garantía sobre los productos, se manifiestan en la regulación que de ella hace la ley 24.240.
 
 #### Deber de información
 ---
@@ -22,7 +22,7 @@ Establecidos los requisitos que debe reunir el deber de información, cabe indag
 
 #### La publicidad
 ---
-La sociedad de consumo para poder funcionar requiere de mecanismos que permitan dar a conocer un producto o servicio, instalarlo en la sociedad y generar la creencia de la necesidad del mismo para que sea demandado en el mercado. Esta función se cumple a través de la publicidad y el marketing. La [[Ley de Defensa del consumidor, Ley 24.240|ley 24.240]] fue pionera en regular la publicidad en algunos aspectos, completándose la regulación con la sanción del [[Código Civil y Comercial de la Nación|Código Civil y Comercial]] ([[Art. 1101 del CC y CN, Publicidad|arts. 1101]] a [[Art. 1103 del CC y CN, Efectos de la publicidad|1103]]).
+La sociedad de consumo para poder funcionar requiere de mecanismos que permitan dar a conocer un producto o servicio, instalarlo en la sociedad y generar la creencia de la necesidad del mismo para que sea demandado en el mercado. Esta función se cumple a través de la publicidad y el marketing. La [[Ley de Defensa del consumidor|ley 24.240]] fue pionera en regular la publicidad en algunos aspectos, completándose la regulación con la sanción del [[Código Civil y Comercial de la Nación|Código Civil y Comercial]] ([[Art. 1101 del CC y CN, Publicidad|arts. 1101]] a [[Art. 1103 del CC y CN, Efectos de la publicidad|1103]]).
 
 1) Efectos vinculantes de la publicidad
 2) Publicidad ilícita

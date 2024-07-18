@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-El Poder Ejecutivo tiene, entre las atribuciones conferidas por la [[Constitución de la Nación, Ley 24.430|Constitución de la Nación, Ley 24.430]] y en ejercicio de su función de administración pública, la potestad de dictar [[Norma jurídica|normas jurídicas]] reglamentarias a las que se las llama, indistintamente, reglamentos o decretos
+El Poder Ejecutivo tiene, entre las atribuciones conferidas por la [[Constitución de la Nación|Constitución de la Nación]] y en ejercicio de su función de administración pública, la potestad de dictar [[Norma jurídica|normas jurídicas]] reglamentarias a las que se las llama, indistintamente, reglamentos o decretos
 
 La autoridad normativa le es conferida al órgano ejecutivo por la Constitución Nacional, así como ésta también es la que establece el procedimiento o forma de producción normativa, en estos términos [[Art. 99 de la Constitución Nacional|art. 99 de la Constitución Nacional]]
 ![[Art. 99 de la Constitución Nacional#Artículo]]

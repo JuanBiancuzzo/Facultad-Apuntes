@@ -19,7 +19,21 @@ if (paginaActual.file.tags.some( tag=> tag.includes("legal/documento") )) {
     dv.paragraph(`<div style="text-align: center;">${titulo}</div>`);
 }
 
-let articulosMostrados = mostrarSecciones(paginaActual);
+const carpetaActual = paginaActual.file.folder;
+const nivelActual = carpetaActual.split("/").length;
+
+let articulosActual = dv.pages(`"${carpetaActual}" and #legal/articulo`)
+    .filter(archivo => archivo.file.folder.split("/").length == nivelActual)
+    .sort(articulo => articulo.num + (articulo.isBis ? 0.5 : 0));
+
+for (let articulo of articulosActual){
+    let textoHTML = mostrarArticulo(articulo);
+    dv.paragraph(`<div style="padding-bottom: 1.5em"> ${textoHTML} </div>`);
+}
+
+let articulosMostrados = articulosActual.length;
+
+articulosMostrados += mostrarSecciones(paginaActual);
 if (articulosMostrados == 0) {
     dv.paragraph("No tiene artículos")
 }
@@ -56,7 +70,8 @@ function mostrarSecciones(pagina) {
 
 function mostrarArticulos(pagina) {
     const carpeta = pagina.file.folder;
-    let articulos = dv.pages(`"${carpeta}" and #legal/articulo`);
+    let articulos = dv.pages(`"${carpeta}" and #legal/articulo`)
+        .sort(articulo => articulo.num + (articulo.isBis ? 0.5 : 0));
 
     for (let articulo of articulos){
         let textoHTML = mostrarArticulo(articulo);
@@ -67,7 +82,8 @@ function mostrarArticulos(pagina) {
 }
 
 function mostrarArticulo(articulo) {
-    let referencia = crearReferencia(articulo.file.path, `Artículo ${articulo.num}${(articulo.nombre) ? `, ${articulo.nombre}` : ""}`);
+    let titulo = `Artículo ${articulo.num}${articulo.esBis ? " bis" : ""}${(articulo.nombre) ? `, ${articulo.nombre}` : ""}`;
+    let referencia = crearReferencia(articulo.file.path, titulo);
     let textoHTML = `<b> ${referencia} </b>`;
     
     let texto = articulo.articulo;

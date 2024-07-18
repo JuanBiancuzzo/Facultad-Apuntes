@@ -5,7 +5,7 @@ capitulo: 3
 ---
 ### Definición
 ---
-El [[Código Civil y Comercial de la Nación|código civil y comercial]] ha regulado entre los [[Art. 1262 del CC y CN, Sistemas de contratación|artículos 1262]] y [[Art. 1266 del CC y CN, Obra por pieza o medida|1266]] los sistemas a los que puede ajustarse la ejecución de una ora material; siguiendo para ello, los estipulados en la [[Ley de Obras públicas, Ley 13.064|ley de obras públicas]]
+El [[Código Civil y Comercial de la Nación|código civil y comercial]] ha regulado entre los [[Art. 1262 del CC y CN, Sistemas de contratación|artículos 1262]] y [[Art. 1266 del CC y CN, Obra por pieza o medida|1266]] los sistemas a los que puede ajustarse la ejecución de una ora material; siguiendo para ello, los estipulados en la [[Ley de Obras públicas|ley de obras públicas]]
 
 Ambas normas refieren que las contrataciones pueden ser ejecutadas por unidad de medida, por coste y costas, o por ajuste alzado, sin perjuicio de otros sistemas de contratación que se establezcan ([[Art. 1262 del CC y CN, Sistemas de contratación|art. 1262]]; [[Art. 5 de la Ley de Obras públicas|art 5°, ley 13.064]]). Son estos los sistemas más frecuentes también en las contrataciones privadas.
 

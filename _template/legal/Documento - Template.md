@@ -90,5 +90,5 @@ _%>
 ### Artículos
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
+	await dv.view("_scripts/dataview/legal/mostrarArticulos", { paginaActual: dv.current() });
 ```

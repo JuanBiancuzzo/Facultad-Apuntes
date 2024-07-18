@@ -5,7 +5,7 @@ capitulo: 1
 ---
 ### Definición
 ---
-Para la creación de la [[Ley|ley]] es necesario que se cumpla con el procedimiento que, como ya adelantamos, está establecido en la [[Constitución de la Nación, Ley 24.430|Constitución de la Nación, Ley 24.430]], bajo el título "De la formación y sanción de las leyes". Las diferentes etapas del proceso [[Poder Legislativo|legislativo]] son:
+Para la creación de la [[Ley|ley]] es necesario que se cumpla con el procedimiento que, como ya adelantamos, está establecido en la [[Constitución de la Nación|Constitución de la Nación]], bajo el título "De la formación y sanción de las leyes". Las diferentes etapas del proceso [[Poder Legislativo|legislativo]] son:
 
 ##### Iniciativa
 ---

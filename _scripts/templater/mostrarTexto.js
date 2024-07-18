@@ -173,7 +173,8 @@ async function preguntarTexto(tp, mensaje = "Ingrese el texto") {
         tipo: TEXTO, 
         texto: await tp.user.preguntar().prompt(
             tp, mensaje,
-            "No se ingresó el texto"
+            "No se ingresó el texto",
+            null, true
         )
     };
 }
@@ -230,7 +231,7 @@ function describirMetadata(textos) {
 
 function describirMetadataTexto(data) {
     let tR = `  - tipo: ${TEXTO}\n`;
-    tR    += `    texto: "${data.texto}"\n\n`;
+    tR    += `    texto: "${data.texto.split("\n").join("\\n")}"\n\n`;
     return tR;
 }
 

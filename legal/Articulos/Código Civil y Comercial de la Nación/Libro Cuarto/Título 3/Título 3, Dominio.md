@@ -43,7 +43,7 @@ Estas caracteres del dominio están dado en le [[legal/Articulos/Código Civil y
 
 ##### Expropiación
 ---
-Esta previsto en la [[Constitución de la Nación, Ley 24.430|Constitución Nacional]] en el [[Art. 17 de la Constitución Nacional|art. 17]] ![[Art. 17 de la Constitución Nacional#Artículo]]
+Esta previsto en la [[Constitución de la Nación|Constitución Nacional]] en el [[Art. 17 de la Constitución Nacional|art. 17]] ![[Art. 17 de la Constitución Nacional#Artículo]]
 ![[Art. 17 de la Constitución Nacional#Interpretación]]
 
 ### Artículos

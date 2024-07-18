@@ -7,7 +7,7 @@ capitulo: 3
 ---
 Según el [[Art. 1251 del CC y CN, Definición|artículo 1251]], el contrato de servicios tiene lugar cuando una de las partes se obligare a prestar un servicio y la otra a pagarle por ese servicio un precio en dinero
 
-Resulta pues menester diferenciar el contrato de servicios, actividad autónoma e independiente que ejerce un sujeto, con el contrato de trabajo regulado en la [[Ley de Contrato de Trabajo, Ley 20.744|ley 20.744]], en donde un sujeto denominado empleado pone a disposición de otro denominado empleador su fuerza de trabajo a cambio de un salario que si bien puede ser libremente pactado, no puede apartarse de los mínimos que establecen las convenciones colectivas de trabajo
+Resulta pues menester diferenciar el contrato de servicios, actividad autónoma e independiente que ejerce un sujeto, con el contrato de trabajo regulado en la [[Ley de Contrato de Trabajo|ley 20.744]], en donde un sujeto denominado empleado pone a disposición de otro denominado empleador su fuerza de trabajo a cambio de un salario que si bien puede ser libremente pactado, no puede apartarse de los mínimos que establecen las convenciones colectivas de trabajo
 
 Elementos
 * [[Obligaciones de las partes de un contrato de servicios|Obligaciones de las partes]]
@@ -30,7 +30,7 @@ La primera gran nota distintiva del contrato de servicios es la autonomía de la
 
 ###### Técnica
 ---
-El empleador tiene la facultad de organizar el empleo y de indicarle al trabajador qué tareas debe realizar ([[Art. 64 de la ley de Contrato de Trabajo, Facultad de organización|arts. 64]] a [[Art. 66 de la ley de Contrato de Trabajo, Facultad de modificar las formas y modalidades del trabajo|66]], [[Ley de Contrato de Trabajo, Ley 20.744|ley 20.744 de Contrato de Trabajo]]). También el empleador tendrá facultades disciplinarias sobre el empleado (apercibimiento, suspensión y despido) ([[Art. 67 de la ley de Contrato de Trabajo, Facultades disciplinarias. Limitación|arts. 67 y ss., ley 20.744]]).
+El empleador tiene la facultad de organizar el empleo y de indicarle al trabajador qué tareas debe realizar ([[Art. 64 de la ley de Contrato de Trabajo, Facultad de organización|arts. 64]] a [[Art. 66 de la ley de Contrato de Trabajo, Facultad de modificar las formas y modalidades del trabajo|66]], [[Ley de Contrato de Trabajo|ley 20.744 de Contrato de Trabajo]]). También el empleador tendrá facultades disciplinarias sobre el empleado (apercibimiento, suspensión y despido) ([[Art. 67 de la ley de Contrato de Trabajo, Facultades disciplinarias. Limitación|arts. 67 y ss., ley 20.744]]).
 
 ###### [[Economía|Económica]]
 ---
@@ -72,7 +72,7 @@ Esta función tuitiva se sustenta en una serie de principios propios del derecho
 
 3. Presunción de la relación laboral. Como ya hemos dicho antes, toda prestación de servicio hace surgir la presunción iuris tantum de la existencia de una relación laboral ([[Art. 23 de la ley de Contrato de Trabajo, Presunción de la existencia del contrato de trabajo|art. 23, ley 20.744]]).
 
-##### La tutela del usuario del servicio que efectúa la [[Ley de Defensa del consumidor, Ley 24.240|Ley de Defensa del Consumidor]], inaplicable a las relaciones
+##### La tutela del usuario del servicio que efectúa la [[Ley de Defensa del consumidor|Ley de Defensa del Consumidor]], inaplicable a las relaciones
 ---
 Así como en las relaciones de empleo el [[Legislador|legislador]] ha querido proteger al trabajador en su condición de débil de la relación jurídica, en aquellos contratos de servicios donde se manifieste una relación de consumo, la norma protegerá al usuario
 

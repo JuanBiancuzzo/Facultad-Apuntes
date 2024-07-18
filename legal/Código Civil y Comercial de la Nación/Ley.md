@@ -14,7 +14,7 @@ La ley, en cuanto resultado de la actividad del órgano legislativo puede ser en
 * En sentido amplio
 	* Es considerada como sinónimo de [[Derecho|derecho]] escrito de contenido general
 	* La palabra ley es más comprensiva y puede emplearse para referir a las leyes nacionales y provinciales, los decretos del [[Poder Ejecutivo|órgano ejecutivo]]
-	* Las disposición de las autoridades municipales y a la misma [[Constitución de la Nación, Ley 24.430|Constitución de la Nación, Ley 24.430]] en cuanto se menciona como la "ley fundamental"
+	* Las disposición de las autoridades municipales y a la misma [[Constitución de la Nación|Constitución de la Nación]] en cuanto se menciona como la "ley fundamental"
 * En sentido estricto
 	* Es considerada como el instrumento que, siguiendo los procedimientos establecidos en la Constitución Nacional para su creación, tiene un contenido jurídico general
 

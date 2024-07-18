@@ -26,8 +26,9 @@
             "No se eligió un documento"
         );
             
-        let subSecciones = herramientas.seccionesSiguientes(documento).sort(sec => sec.num);
-        let grupos = documento.grupos;
+        let subSecciones = herramientas.seccionesSiguientes(documento)
+            .sort(sec => sec.num);
+        let grupos = documento.grupos ? documento.grupos : [];
         
         let path = [ { tipo: "archivo", archivo: documento } ];
 
@@ -74,6 +75,22 @@
             tp, "Cuál es el número del artículo?", 
             "No se ingresó el número del artículo"
         ), 10);
+
+        let posiblesArchivosConflictivos = dv.pages(`"${documento.file.folder}" and #legal/articulo`)
+            .filter(articulo => articulo.num == numero && !articulo.esBis);
+
+        let esBis = false;
+        if (posiblesArchivosConflictivos.length > 0) {
+            esBis = await preguntar.suggester(
+                tp, ["Es bis", "No es bis"], [true, false],
+                `El artículo ${numero} es bis?`,
+                "No se ingresó la forma de determinar si es bis o no"
+            );
+
+            if (!esBis) {
+                throw new Error("Ya existe un artículo así");
+            }
+        }
 
         if (!numero || numero < 0)
             throw new Error("No se ingresó el número del artículo correcto");
@@ -123,6 +140,9 @@
         if (nombre) {
             tR += `nombre: ${nombre}\n`;
         }
+        if (esBis) {
+            tR += `esBis: ${esBis}\n`;
+        }
 
         tR += `articulo: \n${mostrarTexto.metadata(texto)}\n`;
 
@@ -135,7 +155,7 @@
         // Mover el archivo
         // Mover a la carpeta del previo
         // Cambiar nombre de forma acorde
-        let nuevoNombre = `Art. ${numero} ${documento.abreviacion}${(nombre) ? `, ${nombre}` : ""}.md`;
+        let nuevoNombre = `Art. ${numero}${esBis ? " bis" : ""} ${documento.abreviacion}${(nombre) ? `, ${nombre}` : ""}.md`;
         await app.vault.rename(tArchivo, `${previo.file.folder}/${nuevoNombre}`);
 
     } catch ({ name: _, message: mensaje }) {

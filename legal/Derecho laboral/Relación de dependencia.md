@@ -5,7 +5,7 @@ capitulo: 5
 ---
 ### Definición
 ---
-La relación de dependencia es el trabajo protegido por la [[Ley de Contrato de Trabajo, Ley 20.744|LCT]], por estatutos profesionales, etc. Existen elementos que la caracterizan y estos son
+La relación de dependencia es el trabajo protegido por la [[Ley de Contrato de Trabajo|LCT]], por estatutos profesionales, etc. Existen elementos que la caracterizan y estos son
 
 #### Jurídica
 * Sometimiento a autoridad del empleador
