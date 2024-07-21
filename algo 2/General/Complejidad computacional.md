@@ -1,7 +1,8 @@
 ---
 dia: 2024-05-22
-materia: algo 2
 capitulo: 1
+tags:
+  - algo-2/General
 ---
 ### Definición
 ---

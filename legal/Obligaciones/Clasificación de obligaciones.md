@@ -1,7 +1,8 @@
 ---
 dia: 2024-01-26
-materia: legal
 capitulo: 2
+tags:
+  - legal/Obligaciones
 ---
 ### Según sus efectos: Civiles o Naturales
 ---

@@ -1,7 +1,8 @@
 ---
 dia: 2023-03-22
-materia: taller
 capitulo: 3
+tags:
+  - taller/Ownership
 ---
 ### Definición
 ---

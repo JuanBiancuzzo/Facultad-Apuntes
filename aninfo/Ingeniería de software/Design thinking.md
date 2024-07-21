@@ -1,7 +1,8 @@
 ---
 dia: 2023-08-31
-materia: aninfo
 capitulo: 1
+tags:
+  - aninfo/Ingeniería-de-software
 ---
 ### Definición
 ---

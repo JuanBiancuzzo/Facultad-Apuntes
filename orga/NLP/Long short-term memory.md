@@ -1,7 +1,8 @@
 ---
 dia: 2023-08-13
-materia: orga
 capitulo: 10
+tags:
+  - orga/NLP
 ---
 ### Definición
 ---

@@ -1,6 +1,5 @@
 ---
 dia: 2024-03-11
-materia: señales
 capitulo: 6
 aliases:
   - DFT
@@ -8,6 +7,8 @@ aliases:
   - IDFT
   - Inverse Discrete Fourier Transform
   - Transformación Inversa Discreta de Fourier
+tags:
+  - señales/Transformada-discreta-de-Fourier
 ---
 ### Definición
 ---

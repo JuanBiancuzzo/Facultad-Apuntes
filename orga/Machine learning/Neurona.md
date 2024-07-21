@@ -1,7 +1,8 @@
 ---
 dia: 2023-08-12
-materia: orga
 capitulo: 9
+tags:
+  - orga/Machine-learning
 ---
 ### Definición
 ---

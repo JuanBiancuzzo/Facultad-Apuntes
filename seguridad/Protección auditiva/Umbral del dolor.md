@@ -1,7 +1,8 @@
 ---
 dia: 2023-04-04
-materia: seguridad
 capitulo: 4
+tags:
+  - seguridad/Protección-auditiva
 ---
 ### Definición
 ---

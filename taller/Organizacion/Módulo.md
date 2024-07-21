@@ -1,7 +1,8 @@
 ---
 dia: 2023-03-17
-materia: taller
 capitulo: 2
+tags:
+  - taller/Organizacion
 ---
 ### Definición
 ---

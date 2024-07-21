@@ -1,7 +1,8 @@
 ---
 dia: 2023-09-08
-materia: dispo
 capitulo: 2
+tags:
+  - dispo/Juntura-PN
 ---
 ### Definición
 ---

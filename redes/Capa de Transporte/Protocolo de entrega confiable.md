@@ -1,6 +1,5 @@
 ---
 dia: 2024-05-28
-materia: redes
 capitulo: 3
 aliases:
   - Principio de entrega confiable
@@ -8,6 +7,8 @@ aliases:
   - reliable data transfer protocol
   - Acknowledgement
   - ACK
+tags:
+  - redes/Capa-de-Transporte
 ---
 ### Definición
 ---

@@ -1,9 +1,10 @@
 ---
 dia: 2024-06-02
-materia: redes
 capitulo: 3
 aliases:
   - Checksum
+tags:
+  - redes/Capa-de-Transporte
 ---
 ### Definición
 ---

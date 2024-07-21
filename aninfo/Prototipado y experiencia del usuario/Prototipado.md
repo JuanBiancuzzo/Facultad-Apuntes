@@ -1,7 +1,8 @@
 ---
 dia: 2023-09-05
-materia: aninfo
 capitulo: 6
+tags:
+  - aninfo/Prototipado-y-experiencia-del-usuario
 ---
 ### Definición
 ---

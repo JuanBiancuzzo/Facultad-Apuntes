@@ -1,7 +1,8 @@
 ---
 dia: 2022-12-05
-materia: analisis 3
 capitulo: 16
+tags:
+  - analisis-3/Transformada-de-Laplace
 ---
 ### Definción
 ---

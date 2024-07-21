@@ -1,9 +1,10 @@
 ---
 dia: 2023-11-08
-materia: sisop
 capitulo: 6
 aliases:
   - VFS
+tags:
+  - sisop/File-system
 ---
 ### Definición
 ---

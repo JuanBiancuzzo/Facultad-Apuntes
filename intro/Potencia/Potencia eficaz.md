@@ -1,7 +1,8 @@
 ---
 dia: 2024-04-11
-materia: intro
 capitulo: 5
+tags:
+  - intro/Potencia
 ---
 ### Definición
 ---

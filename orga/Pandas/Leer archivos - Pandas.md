@@ -1,7 +1,8 @@
 ---
 dia: 2023-03-16
-materia: orga
 capitulo: 1
+tags:
+  - orga/Pandas
 ---
 ### Definición
 ---

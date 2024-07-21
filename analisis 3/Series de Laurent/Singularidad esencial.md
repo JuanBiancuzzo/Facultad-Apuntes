@@ -1,9 +1,10 @@
 ---
 dia: 2022-11-26
-materia: analisis 3
 capitulo: 8
 aliases:
   - Polo esencial
+tags:
+  - analisis-3/Series-de-Laurent
 ---
 ### Definición
 ---

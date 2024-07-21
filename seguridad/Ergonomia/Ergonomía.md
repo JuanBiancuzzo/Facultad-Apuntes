@@ -1,7 +1,8 @@
 ---
 dia: 2023-07-17
-materia: seguridad
 capitulo: 15
+tags:
+  - seguridad/Ergonomia
 ---
 ### Definición
 ---

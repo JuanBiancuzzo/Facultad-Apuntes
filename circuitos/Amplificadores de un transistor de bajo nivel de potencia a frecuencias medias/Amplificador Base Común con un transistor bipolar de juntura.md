@@ -1,10 +1,11 @@
 ---
 dia: 2024-04-30
-materia: circuitos
 capitulo: 3
 aliases:
   - Amplificador Base Común
   - Amplificador Base Común con TBJ
+tags:
+  - circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
 ---
 ### Definición
 ---

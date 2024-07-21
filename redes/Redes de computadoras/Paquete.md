@@ -1,12 +1,13 @@
 ---
 dia: 2024-04-18
-materia: redes
 capitulo: 1
 aliases:
   - Mensaje
   - Segmento
   - Datagrama
   - Tramas
+tags:
+  - redes/Redes-de-computadoras
 ---
 ### Definición
 ---

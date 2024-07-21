@@ -1,7 +1,8 @@
 ---
 dia: 2023-03-29
-materia: taller
 capitulo: 4
+tags:
+  - taller/Concurrencia
 ---
 ### Definición
 ---

@@ -1,9 +1,10 @@
 ---
 dia: 2023-07-17
-materia: seguridad
 capitulo: 15
 aliases:
   - TME
+tags:
+  - seguridad/Ergonomia
 ---
 ### Definición
 ---

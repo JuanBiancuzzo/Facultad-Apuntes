@@ -1,7 +1,8 @@
 ---
 dia: 2023-09-23
-materia: dispo
 capitulo: 3
+tags:
+  - dispo/Diodo-de-Juntura-PN
 ---
 ### Definición
 ---

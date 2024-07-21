@@ -1,7 +1,8 @@
 ---
 dia: 2024-04-19
-materia: aninfo
 capitulo: 2
+tags:
+  - aninfo/Ingeniería-de-requisitos
 ---
 ### Definición
 ---

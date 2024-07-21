@@ -1,7 +1,8 @@
 ---
 dia: 2022-09-13
-materia: analisis 3
 capitulo: 3
+tags:
+  - analisis-3/Series
 ---
 ### Definicion
 ---

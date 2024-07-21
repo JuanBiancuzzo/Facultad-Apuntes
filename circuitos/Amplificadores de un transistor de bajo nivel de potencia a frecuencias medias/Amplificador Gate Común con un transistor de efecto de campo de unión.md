@@ -1,9 +1,10 @@
 ---
 dia: 2024-04-30
-materia: circuitos
 capitulo: 3
 aliases:
   - Amplificador Gate Común con un JFET
+tags:
+  - circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
 ---
 ### Definición
 ---

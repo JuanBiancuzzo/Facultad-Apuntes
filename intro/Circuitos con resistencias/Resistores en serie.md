@@ -1,7 +1,8 @@
 ---
 dia: 2023-08-24
-materia: intro
 capitulo: 1
+tags:
+  - intro/Circuitos-con-resistencias
 ---
 ### Definición
 ---

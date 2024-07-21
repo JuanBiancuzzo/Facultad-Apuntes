@@ -1,7 +1,8 @@
 ---
 dia: 2022-11-25
-materia: analisis 3
 capitulo: 6
+tags:
+  - analisis-3/Propiedades-de-las-funciones-holomorfas
 ---
 ### Definición
 ---

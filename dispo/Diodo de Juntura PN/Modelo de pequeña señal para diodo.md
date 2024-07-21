@@ -1,9 +1,10 @@
 ---
 dia: 2023-09-16
-materia: dispo
 capitulo: 3
 aliases:
   - MPS para diodo
+tags:
+  - dispo/Diodo-de-Juntura-PN
 ---
 ### Definición
 ---

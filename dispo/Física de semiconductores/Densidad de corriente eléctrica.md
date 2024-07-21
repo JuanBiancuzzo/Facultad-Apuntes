@@ -1,7 +1,8 @@
 ---
 dia: 2023-09-02
-materia: dispo
 capitulo: 1
+tags:
+  - dispo/Física-de-semiconductores
 ---
 ### Definición
 ---

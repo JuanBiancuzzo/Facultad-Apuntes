@@ -1,9 +1,10 @@
 ---
 dia: 2023-10-16
-materia: aninfo
 capitulo: 6
 aliases:
   - UX
+tags:
+  - aninfo/Prototipado-y-experiencia-del-usuario
 ---
 ### Principios
 ---

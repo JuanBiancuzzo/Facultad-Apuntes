@@ -1,9 +1,10 @@
 ---
 dia: 2024-05-31
-materia: señales
 capitulo: 7
 aliases:
   - ROC de la transformada Z
+tags:
+  - señales/Transformadas-de-Laplace-y-Z
 ---
 ### Definición
 ---

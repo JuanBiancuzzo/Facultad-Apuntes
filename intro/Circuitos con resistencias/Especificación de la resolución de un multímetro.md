@@ -1,7 +1,8 @@
 ---
 dia: 2023-01-23
-materia: intro
 capitulo: 1
+tags:
+  - intro/Circuitos-con-resistencias
 ---
 ### Esquematización
 ---

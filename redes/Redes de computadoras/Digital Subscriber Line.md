@@ -1,9 +1,10 @@
 ---
 dia: 2024-04-19
-materia: redes
 capitulo: 1
 aliases:
   - DSL
+tags:
+  - redes/Redes-de-computadoras
 ---
 ### Definición
 ---

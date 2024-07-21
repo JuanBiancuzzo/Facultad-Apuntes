@@ -1,7 +1,8 @@
 ---
 dia: 2023-03-14
-materia: numerico
 capitulo: 2
+tags:
+  - numerico/Ecuaciones-no-lineales
 ---
 ### Definición
 ---

@@ -1,7 +1,8 @@
 ---
 dia: 2022-09-06
-materia: analisis 2
 capitulo: 2
+tags:
+  - analisis-2/Capitulo-2
 ---
 ### Definición
 ---

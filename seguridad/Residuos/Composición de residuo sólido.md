@@ -1,7 +1,8 @@
 ---
 dia: 2023-07-16
-materia: seguridad
 capitulo: 11
+tags:
+  - seguridad/Residuos
 ---
 ### Definición
 ---

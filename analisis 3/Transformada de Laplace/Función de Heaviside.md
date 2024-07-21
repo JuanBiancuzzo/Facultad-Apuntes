@@ -1,7 +1,8 @@
 ---
 dia: 2023-11-17
-materia: analisis 3
 capitulo: 16
+tags:
+  - analisis-3/Transformada-de-Laplace
 ---
 ### Definición
 ---

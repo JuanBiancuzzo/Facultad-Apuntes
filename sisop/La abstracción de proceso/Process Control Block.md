@@ -1,9 +1,10 @@
 ---
 dia: 2023-12-11
-materia: sisop
 capitulo: 2
 aliases:
   - PCB
+tags:
+  - sisop/La-abstracción-de-proceso
 ---
 ### Definición
 ---

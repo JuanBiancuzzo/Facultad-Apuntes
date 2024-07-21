@@ -1,7 +1,8 @@
 ---
 dia: 2024-02-21
-materia: legal
 capitulo: 3
+tags:
+  - legal/Contratos
 ---
 ### Definición
 ---

@@ -1,7 +1,8 @@
 ---
 dia: 2024-02-13
-materia: legal
 capitulo: 4
+tags:
+  - legal/Licitaciones
 ---
 ### Definición
 ---

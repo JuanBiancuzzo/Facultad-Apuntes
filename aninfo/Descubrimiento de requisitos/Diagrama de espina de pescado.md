@@ -1,7 +1,8 @@
 ---
 dia: 2023-09-07
-materia: aninfo
 capitulo: 3
+tags:
+  - aninfo/Descubrimiento-de-requisitos
 ---
 ### Definición
 ---

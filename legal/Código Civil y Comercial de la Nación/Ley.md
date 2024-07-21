@@ -1,9 +1,10 @@
 ---
 dia: 2024-01-12
-materia: legal
 capitulo: 1
 aliases:
   - Código
+tags:
+  - legal/Código-Civil-y-Comercial-de-la-Nación
 ---
 ### Definición
 ---

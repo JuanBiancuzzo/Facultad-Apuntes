@@ -1,9 +1,10 @@
 ---
 dia: 2023-03-30
-materia: orga
 capitulo: 3
 aliases:
   - TF
+tags:
+  - orga/NLP
 ---
 ### Definición
 ---

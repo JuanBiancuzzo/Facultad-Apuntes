@@ -1,7 +1,8 @@
 ---
 dia: 2023-01-23
-materia: intro
 capitulo: 4
+tags:
+  - intro/Respuesta-en-frecuencia
 ---
 ### Definición
 ---

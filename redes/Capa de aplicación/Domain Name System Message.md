@@ -1,11 +1,12 @@
 ---
 dia: 2024-05-29
-materia: redes
 capitulo: 2
 aliases:
   - DNS Query
   - DNS Message
   - DNS Response
+tags:
+  - redes/Capa-de-aplicación
 ---
 ### Definición
 ---

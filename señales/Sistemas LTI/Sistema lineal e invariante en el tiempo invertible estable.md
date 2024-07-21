@@ -1,9 +1,10 @@
 ---
 dia: 2024-03-20
-materia: señales
 capitulo: 2
 aliases:
   - Sistema LTI estable
+tags:
+  - señales/Sistemas-LTI
 ---
 ### Definición
 ---

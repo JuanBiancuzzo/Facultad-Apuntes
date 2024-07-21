@@ -1,7 +1,8 @@
 ---
 dia: 2024-02-27
-materia: dispo
 capitulo: 8
+tags:
+  - dispo/Dispositivos-de-potencia
 ---
 ### Definición
 ---

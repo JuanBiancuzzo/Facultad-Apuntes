@@ -1,9 +1,10 @@
 ---
 dia: 2023-10-14
-materia: dispo
 capitulo: 4
 aliases:
   - Ganancia de corriente de pequeña señal para TBJ
+tags:
+  - dispo/Transistor-bipolar-de-juntura
 ---
 ### Definición
 ---

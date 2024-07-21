@@ -1,11 +1,12 @@
 ---
 dia: 2024-06-03
-materia: redes
 capitulo: 3
 aliases:
   - GBN
   - Sliding-window protocol
   - Protocolo de ventana desplizante
+tags:
+  - redes/Capa-de-Transporte
 ---
 ### Definición
 ---

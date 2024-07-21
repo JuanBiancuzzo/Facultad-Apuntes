@@ -13,7 +13,7 @@
     console.log(texto);
     
     let nuevoTexto = await mostrarTexto.preguntar(tp, texto);
-    let modificacion = app.fileManager.processFrontMatter(tArchivo, (frontmatter) => {
+    let modificacion = await app.fileManager.processFrontMatter(tArchivo, (frontmatter) => {
         frontmatter["articulo"] = nuevoTexto;
     });
 

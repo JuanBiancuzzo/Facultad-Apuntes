@@ -1,7 +1,8 @@
 ---
 dia: 2022-10-15
-materia: analisis 3
 capitulo: 5
+tags:
+  - analisis-3/Transformaciones-conformes
 ---
 ### Definición
 ---

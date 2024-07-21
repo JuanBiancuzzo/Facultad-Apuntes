@@ -1,7 +1,8 @@
 ---
 dia: 2022-09-19
-materia: analisis 3
 capitulo: 3
+tags:
+  - analisis-3/Series
 ---
 Dada una [[Serie]] $\alpha : \mathbb{N} \to \mathbb{R} : \bigg(\sum_{k = 0}^n \alpha_k \bigg)_{n = 1}^\infty$ tal que podemos escribir una [[Serie]] $\beta : \mathbb{N} \to \mathbb{R} : \bigg( \sum_{k = 0}^n (-1)^n \alpha_k \bigg)$
 

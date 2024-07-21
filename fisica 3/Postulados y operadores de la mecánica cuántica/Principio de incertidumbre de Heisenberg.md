@@ -1,7 +1,8 @@
 ---
 dia: 2023-08-24
-materia: fisica 3
 capitulo: 7
+tags:
+  - fisica-3/Postulados-y-operadores-de-la-mecánica-cuántica
 ---
 ### Definición
 ---

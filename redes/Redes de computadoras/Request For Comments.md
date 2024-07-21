@@ -1,9 +1,10 @@
 ---
 dia: 2024-04-18
-materia: redes
 capitulo: 1
 aliases:
   - RFC
+tags:
+  - redes/Redes-de-computadoras
 ---
 ### Definición
 ---

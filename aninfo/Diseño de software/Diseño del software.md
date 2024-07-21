@@ -1,7 +1,8 @@
 ---
 dia: 2023-08-26
-materia: aninfo
 capitulo: 1
+tags:
+  - aninfo/Diseño-de-software
 ---
 ### Definición
 ---

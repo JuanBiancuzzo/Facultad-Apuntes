@@ -1,12 +1,13 @@
 ---
 dia: 2024-06-01
-materia: redes
 capitulo: 3
 aliases:
   - Multiplexación
   - Multiplexing
   - Demultiplexación
   - Demultiplexing
+tags:
+  - redes/Capa-de-Transporte
 ---
 ### Definición
 ---

@@ -1,7 +1,8 @@
 ---
 dia: 2023-04-23
-materia: estructura
 capitulo: 4
+tags:
+  - estructura/Diseño-combinacional
 ---
 ### Definición
 ---

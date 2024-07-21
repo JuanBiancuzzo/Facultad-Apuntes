@@ -1,7 +1,8 @@
 ---
 dia: 2023-11-28
-materia: bdd
 capitulo: 1
+tags:
+  - bdd/General
 ---
 ### Definición
 ---

@@ -1,7 +1,8 @@
 ---
 dia: 2024-01-08
-materia: legal
 capitulo: 5
+tags:
+  - legal/Derecho-laboral
 ---
 ### Definición
 ---

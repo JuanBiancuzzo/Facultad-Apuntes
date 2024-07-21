@@ -1,7 +1,8 @@
 ---
 dia: 2023-01-23
-materia: proba
 capitulo: 2
+tags:
+  - proba/Variables-y-vectores-aleatorios
 ---
 Es una caso especifico de la [[Distribución de Bernoulli]], donde se escribe
 $$ \mathbb{1}\{ X \in A \} = \begin{cases} 

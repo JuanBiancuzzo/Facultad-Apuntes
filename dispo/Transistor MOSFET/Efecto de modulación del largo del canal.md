@@ -1,7 +1,8 @@
 ---
 dia: 2023-11-11
-materia: dispo
 capitulo: 6
+tags:
+  - dispo/Transistor-MOSFET
 ---
 ### Definición
 ---

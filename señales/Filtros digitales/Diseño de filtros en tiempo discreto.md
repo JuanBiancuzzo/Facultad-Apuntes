@@ -1,7 +1,8 @@
 ---
 dia: 2024-07-05
-materia: señales
 capitulo: 8
+tags:
+  - señales/Filtros-digitales
 ---
 ### Definición
 ---

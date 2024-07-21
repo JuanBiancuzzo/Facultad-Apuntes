@@ -8,24 +8,8 @@ tags:
 ---
 ### Apuntes 
 ---
-##### Kernel (16)
----
-* [[sisop/Kernel/Modo de operación.md|Modo de operación]]
-* [[sisop/Kernel/User mode.md|User mode]]
-* [[sisop/Kernel/Unix.md|Unix]]
-* [[sisop/Kernel/System call.md|System call]]
-* [[sisop/Kernel/Sistema operativo.md|Sistema operativo]]
-* [[sisop/Kernel/Micro kernel.md|Micro kernel]]
-* [[sisop/Kernel/Linux.md|Linux]]
-* [[sisop/Kernel/Kernel.md|Kernel]]
-* [[sisop/Kernel/Kernel monolítico.md|Kernel monolítico]]
-* [[sisop/Kernel/Kernel mode.md|Kernel mode]]
-* [[sisop/Kernel/IOPL.md|IOPL]]
-* [[sisop/Kernel/Interrupción.md|Interrupción]]
-* [[sisop/Kernel/Interrupción por temporizador.md|Interrupción por temporizador]]
-* [[sisop/Kernel/Excepción del procesador.md|Excepción del procesador]]
-* [[sisop/Kernel/Instrucción privilegiada.md|Instrucción privilegiada]]
-* [[sisop/Kernel/Ejecución directa.md|Ejecución directa]]
+Obtener todos los resumenes, ordenarlos por el capitulo, y copiarlos en este archivo
+
 
 ##### La abstracción de proceso (21)
 ---

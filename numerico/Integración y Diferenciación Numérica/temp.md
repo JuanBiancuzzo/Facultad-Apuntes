@@ -1,7 +1,8 @@
 ---
 dia: 2023-08-23
-materia: numerico
 capitulo: 5
+tags:
+  - numerico/Integración-y-Diferenciación-Numérica
 ---
 ### Definición
 ---

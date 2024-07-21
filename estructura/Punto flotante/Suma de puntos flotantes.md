@@ -1,7 +1,8 @@
 ---
 dia: 2023-04-08
-materia: estructura
 capitulo: 2
+tags:
+  - estructura/Punto-flotante
 ---
 ### Definición
 ---

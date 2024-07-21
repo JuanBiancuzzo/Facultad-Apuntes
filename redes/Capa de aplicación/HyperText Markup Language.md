@@ -1,9 +1,10 @@
 ---
 dia: 2024-05-29
-materia: redes
 capitulo: 2
 aliases:
   - HTML
+tags:
+  - redes/Capa-de-aplicación
 ---
 ### Definición
 ---

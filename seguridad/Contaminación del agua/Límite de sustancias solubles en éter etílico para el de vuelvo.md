@@ -1,7 +1,8 @@
 ---
 dia: 2023-04-25
-materia: seguridad
 capitulo: 6
+tags:
+  - seguridad/Contaminación-del-agua
 ---
 ### Definición
 ---

@@ -1,7 +1,8 @@
 ---
 dia: 2023-01-23
-materia: proba
 capitulo: 1
+tags:
+  - proba/Teoría-de-probabilidades
 ---
 ### Función de probabilidad de una variable aleatoria
 ---

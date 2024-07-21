@@ -1,10 +1,11 @@
 ---
 dia: 2023-10-14
-materia: dispo
 capitulo: 4
 aliases:
   - MAI del TBJ
   - Modo activo inverso del TBJ
+tags:
+  - dispo/Transistor-bipolar-de-juntura
 ---
 ### Definición
 ---

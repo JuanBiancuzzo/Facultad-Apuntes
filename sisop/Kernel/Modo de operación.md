@@ -1,7 +1,8 @@
 ---
 dia: 2023-09-04
-materia: sisop
 capitulo: 1
+tags:
+  - sisop/Kernel
 ---
 ### Definición
 ---

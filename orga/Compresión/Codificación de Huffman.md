@@ -1,7 +1,8 @@
 ---
 dia: 2023-04-03
-materia: orga
 capitulo: 4
+tags:
+  - orga/Compresión
 ---
 ### Definición
 ---

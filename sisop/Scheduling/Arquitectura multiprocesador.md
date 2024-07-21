@@ -1,7 +1,8 @@
 ---
 dia: 2023-11-18
-materia: sisop
 capitulo: 4
+tags:
+  - sisop/Scheduling
 ---
 ### Definición
 ---

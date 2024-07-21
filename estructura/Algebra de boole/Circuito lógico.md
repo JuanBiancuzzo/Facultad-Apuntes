@@ -1,7 +1,8 @@
 ---
 dia: 2023-04-28
-materia: estructura
 capitulo: 3
+tags:
+  - estructura/Algebra-de-boole
 ---
 ### Definición
 ---

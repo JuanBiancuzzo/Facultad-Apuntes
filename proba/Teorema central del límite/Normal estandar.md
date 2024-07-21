@@ -1,7 +1,8 @@
 ---
 dia: 2023-01-23
-materia: proba
 capitulo: 9
+tags:
+  - proba/Teorema-central-del-límite
 ---
 ### Definición
 ---

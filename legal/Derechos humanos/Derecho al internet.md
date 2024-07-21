@@ -1,7 +1,8 @@
 ---
 dia: 2024-02-17
-materia: legal
 capitulo: 6
+tags:
+  - legal/Derechos-humanos
 ---
 ### Definición
 ---

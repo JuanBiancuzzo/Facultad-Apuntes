@@ -1,7 +1,8 @@
 ---
 dia: 2023-01-23
-materia: proba
 capitulo: 2
+tags:
+  - proba/Variables-y-vectores-aleatorios
 ---
 ### Definición 
 ---

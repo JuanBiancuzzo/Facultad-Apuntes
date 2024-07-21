@@ -1,7 +1,8 @@
 ---
 dia: 2024-05-14
-materia: señales
 capitulo: 5
+tags:
+  - señales/Muestreo-e-Interpolación
 ---
 ### Definición
 ---

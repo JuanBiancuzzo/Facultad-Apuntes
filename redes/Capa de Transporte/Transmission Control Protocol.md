@@ -1,9 +1,10 @@
 ---
 dia: 2024-03-11
-materia: redes
 capitulo: 3
 aliases:
   - TCP
+tags:
+  - redes/Capa-de-Transporte
 ---
 ### Definición
 ---

@@ -1,9 +1,10 @@
 ---
 dia: 2024-03-11
-materia: redes
 capitulo: 5
 aliases:
   - Capa de link
+tags:
+  - redes/Capa-de-Enlace
 ---
 ### Definición
 ---

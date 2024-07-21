@@ -1,7 +1,8 @@
 ---
 dia: 2023-01-23
-materia: intro
 capitulo: 2
+tags:
+  - intro/Reducción-de-circuitos
 ---
 ### Postulado
 ---

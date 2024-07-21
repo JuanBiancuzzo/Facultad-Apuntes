@@ -1,7 +1,8 @@
 ---
 dia: 2024-04-09
-materia: analisis 3
 capitulo: 15
+tags:
+  - analisis-3/Transformada-de-Fourier
 ---
 ### Definición
 ---

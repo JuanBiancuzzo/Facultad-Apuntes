@@ -1,7 +1,8 @@
 ---
 dia: 2023-01-22
-materia: analisis 2
 capitulo: 5
+tags:
+  - analisis-2/Capitulo-5
 ---
 ### Definición
 ---

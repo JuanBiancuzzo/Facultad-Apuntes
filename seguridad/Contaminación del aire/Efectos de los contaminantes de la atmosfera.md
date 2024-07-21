@@ -1,7 +1,8 @@
 ---
 dia: 2023-07-16
-materia: seguridad
 capitulo: 13
+tags:
+  - seguridad/Contaminación-del-aire
 ---
 ### Definición
 ---

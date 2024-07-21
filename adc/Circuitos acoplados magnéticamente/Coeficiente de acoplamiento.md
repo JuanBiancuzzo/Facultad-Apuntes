@@ -1,7 +1,8 @@
 ---
 dia: 2023-11-16
-materia: adc
 capitulo: 4
+tags:
+  - adc/Circuitos-acoplados-magnéticamente
 ---
 ### Definición
 ---

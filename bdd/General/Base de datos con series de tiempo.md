@@ -1,7 +1,8 @@
 ---
 dia: 2024-04-07
-materia: bdd
 capitulo: 1
+tags:
+  - bdd/General
 ---
 ### Definición
 ---

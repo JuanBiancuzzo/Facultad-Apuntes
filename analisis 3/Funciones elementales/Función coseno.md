@@ -1,7 +1,8 @@
 ---
 dia: 2022-09-28
-materia: analisis 3
 capitulo: 4
+tags:
+  - analisis-3/Funciones-elementales
 ---
 ### Definición
 ---

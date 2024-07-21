@@ -1,7 +1,8 @@
 ---
 dia: 2023-04-08
-materia: algebra 2
 capitulo: 1
+tags:
+  - algebra-2/Espacios-Vectoriales
 ---
 ### Definición
 ---

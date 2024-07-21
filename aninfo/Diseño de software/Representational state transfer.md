@@ -1,10 +1,11 @@
 ---
 dia: 2023-10-16
-materia: aninfo
 capitulo: 8
 aliases:
   - API REST
   - REST
+tags:
+  - aninfo/Diseño-de-software
 ---
 ### Definición
 ---

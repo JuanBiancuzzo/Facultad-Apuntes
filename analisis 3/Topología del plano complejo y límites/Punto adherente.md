@@ -1,7 +1,8 @@
 ---
 dia: 2022-09-02
-materia: analisis 3
 capitulo: 1
+tags:
+  - analisis-3/Topología-del-plano-complejo-y-límites
 ---
 ### Definición
 ---

@@ -1,7 +1,8 @@
 ---
 dia: 2023-03-20
-materia: orga
 capitulo: 2
+tags:
+  - orga/Visualizaciones
 ---
 ### Definición
 ---

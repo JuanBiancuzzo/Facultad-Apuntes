@@ -1,7 +1,8 @@
 ---
 dia: 2023-03-29
-materia: sisop
 capitulo: 5
+tags:
+  - sisop/Concurrencia
 ---
 ### Definición
 ---

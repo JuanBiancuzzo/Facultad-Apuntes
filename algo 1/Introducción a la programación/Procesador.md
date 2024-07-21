@@ -1,10 +1,11 @@
 ---
 dia: 2024-04-03
-materia: algo 1
 capitulo: 1
 aliases:
   - CPU
   - Microprocesador
+tags:
+  - algo-1/Introducción-a-la-programación
 ---
 ### Definición
 ---

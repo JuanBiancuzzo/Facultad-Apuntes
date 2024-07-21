@@ -1,7 +1,8 @@
 ---
 dia: 2024-05-12
-materia: bdd
 capitulo: 2
+tags:
+  - bdd/SQL
 ---
 ### Definición
 ---

@@ -1,10 +1,11 @@
 ---
 dia: 2024-06-07
-materia: redes
 capitulo: 3
 aliases:
   - Quick UDP Internet Connections
   - QUIC
+tags:
+  - redes/Capa-de-Transporte
 ---
 ### Definición
 ---

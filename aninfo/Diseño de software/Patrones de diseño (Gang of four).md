@@ -1,7 +1,8 @@
 ---
 dia: 2023-10-22
-materia: aninfo
 capitulo: 8
+tags:
+  - aninfo/Diseño-de-software
 ---
 ### Creational Design Patterns
 ---

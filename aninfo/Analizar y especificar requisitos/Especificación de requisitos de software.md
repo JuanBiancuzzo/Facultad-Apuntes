@@ -1,9 +1,10 @@
 ---
 dia: 2023-09-17
-materia: aninfo
 capitulo: 4
 aliases:
   - SRS
+tags:
+  - aninfo/Analizar-y-especificar-requisitos
 ---
 ### Definición
 ---

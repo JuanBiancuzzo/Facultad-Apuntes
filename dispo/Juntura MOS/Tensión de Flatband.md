@@ -1,7 +1,8 @@
 ---
 dia: 2023-11-09
-materia: dispo
 capitulo: 5
+tags:
+  - dispo/Juntura-MOS
 ---
 ### Definición
 ---

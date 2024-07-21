@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "-file:.png",
+  "search": "-path:legal/Articulos  ",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -130,6 +130,6 @@
   "repelStrength": 9.91666666666667,
   "linkStrength": 1,
   "linkDistance": 220,
-  "scale": 0.08666984039173371,
+  "scale": 0.10889521929491189,
   "close": true
 }

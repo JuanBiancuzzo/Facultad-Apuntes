@@ -1,7 +1,8 @@
 ---
 dia: 2024-04-21
-materia: circuitos
 capitulo: 2
+tags:
+  - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
 ---
 ### Definición
 ---

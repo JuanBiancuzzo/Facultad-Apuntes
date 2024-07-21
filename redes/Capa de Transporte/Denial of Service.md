@@ -1,11 +1,12 @@
 ---
 dia: 2024-04-19
-materia: redes
 capitulo: 3
 aliases:
   - DoS
   - DDoS
   - Distributed Denial of Service
+tags:
+  - redes/Capa-de-Transporte
 ---
 ### Definición
 ---

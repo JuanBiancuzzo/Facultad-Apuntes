@@ -1,7 +1,8 @@
 ---
 dia: 2024-05-22
-materia: señales
 capitulo: 6
+tags:
+  - señales/Transformada-discreta-de-Fourier
 ---
 ### Definición
 ---

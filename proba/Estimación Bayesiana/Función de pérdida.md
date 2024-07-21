@@ -1,7 +1,8 @@
 ---
 dia: 2023-01-23
-materia: proba
 capitulo: 13
+tags:
+  - proba/Estimación-Bayesiana
 ---
 ### Definición
 ---

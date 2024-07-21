@@ -1,7 +1,8 @@
 ---
 dia: 2023-03-28
-materia: seguridad
 capitulo: 3
+tags:
+  - seguridad/Prevención-de-incendios
 ---
 ### Definición
 ---

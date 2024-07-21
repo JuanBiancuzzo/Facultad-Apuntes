@@ -1,7 +1,8 @@
 ---
 dia: 2022-09-12
-materia: analisis 3
 capitulo: 4
+tags:
+  - analisis-3/Funciones-elementales
 ---
 Se define como el [[Argumento]] pero limitado al rango $[-\pi, \pi]$
 

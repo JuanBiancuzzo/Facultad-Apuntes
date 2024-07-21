@@ -1,7 +1,8 @@
 ---
 dia: 2024-02-29
-materia: fisica 2
 capitulo: 1
+tags:
+  - fisica-2/Termodinámica
 ---
 ### Definición
 ---

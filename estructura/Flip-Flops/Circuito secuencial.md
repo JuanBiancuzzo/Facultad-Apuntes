@@ -1,7 +1,8 @@
 ---
 dia: 2023-04-28
-materia: estructura
 capitulo: 6
+tags:
+  - estructura/Flip-Flops
 ---
 ### Definición
 ---

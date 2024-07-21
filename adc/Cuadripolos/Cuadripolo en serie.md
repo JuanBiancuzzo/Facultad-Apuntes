@@ -1,7 +1,8 @@
 ---
 dia: 2023-11-27
-materia: adc
 capitulo: 6
+tags:
+  - adc/Cuadripolos
 ---
 ### Definición
 ---

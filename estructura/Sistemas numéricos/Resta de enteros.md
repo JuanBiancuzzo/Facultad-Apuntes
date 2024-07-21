@@ -1,7 +1,8 @@
 ---
 dia: 2023-04-06
-materia: estructura
 capitulo: 1
+tags:
+  - estructura/Sistemas-numéricos
 ---
 ### Definición
 ---

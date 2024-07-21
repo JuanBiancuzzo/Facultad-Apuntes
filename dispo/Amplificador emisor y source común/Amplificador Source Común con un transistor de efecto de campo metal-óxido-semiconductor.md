@@ -1,9 +1,10 @@
 ---
 dia: 2023-11-28
-materia: dispo
 capitulo: 7
 aliases:
   - Amplificador Source Común con un MOSFET
+tags:
+  - dispo/Amplificador-emisor-y-source-común
 ---
 ### Definición
 ---

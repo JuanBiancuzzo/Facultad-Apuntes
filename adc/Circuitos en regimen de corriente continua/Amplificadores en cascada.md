@@ -1,7 +1,8 @@
 ---
 dia: 2023-09-05
-materia: adc
 capitulo: 1
+tags:
+  - adc/Circuitos-en-regimen-de-corriente-continua
 ---
 ### Definición
 ---

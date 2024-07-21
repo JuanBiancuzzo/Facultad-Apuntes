@@ -1,9 +1,10 @@
 ---
 dia: 2024-04-21
-materia: redes
 capitulo: 1
 aliases:
   - IETF
+tags:
+  - redes/Redes-de-computadoras
 ---
 ### Definición
 ---

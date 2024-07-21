@@ -1,7 +1,8 @@
 ---
 dia: 2023-01-23
-materia: proba
 capitulo: 2
+tags:
+  - proba/Variables-y-vectores-aleatorios
 ---
 Dada una [[Función de densidad conjunta]], con $X$, $Y$ dos [[Variable aleatoria continua]] que forman un [[Vector aleatorio]], se define la función de densidad marginal como 
 

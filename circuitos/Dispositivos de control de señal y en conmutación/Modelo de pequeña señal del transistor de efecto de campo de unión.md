@@ -1,10 +1,11 @@
 ---
 dia: 2024-04-23
-materia: circuitos
 capitulo: 2
 aliases:
   - MPS del transistor de efecto de campo de unión
   - MPS del JFET
+tags:
+  - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
 ---
 ### Definición
 ---

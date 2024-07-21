@@ -1,7 +1,8 @@
 ---
 dia: 2023-10-16
-materia: aninfo
 capitulo: 5
+tags:
+  - aninfo/Verificación-y-validación
 ---
 ### Definición
 ---

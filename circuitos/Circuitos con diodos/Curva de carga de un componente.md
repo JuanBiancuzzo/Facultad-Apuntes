@@ -1,7 +1,8 @@
 ---
 dia: 2024-03-23
-materia: circuitos
 capitulo: 1
+tags:
+  - circuitos/Circuitos-con-diodos
 ---
 ### Definición
 ---

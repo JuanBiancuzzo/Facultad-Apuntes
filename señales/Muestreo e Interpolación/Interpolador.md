@@ -1,10 +1,11 @@
 ---
 dia: 2024-06-16
-materia: señales
 capitulo: 5
 aliases:
   - Interpolador de banda limitada
   - Interpolador de orden k
+tags:
+  - señales/Muestreo-e-Interpolación
 ---
 ### Definición
 ---

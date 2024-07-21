@@ -3,8 +3,8 @@
 	
 	let archivosModificados = this.app.plugins
 		.plugins["obsidian-git"]
-		.cachedStatus
-		.all; 
+		.cachedStatus.all
+		.map(); 
 
 	console.log(archivosModificados);
 

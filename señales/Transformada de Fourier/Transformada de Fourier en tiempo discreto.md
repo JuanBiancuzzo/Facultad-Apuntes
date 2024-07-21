@@ -1,7 +1,8 @@
 ---
 dia: 2024-04-15
-materia: señales
 capitulo: 4
+tags:
+  - señales/Transformada-de-Fourier
 ---
 ### Definición
 ---

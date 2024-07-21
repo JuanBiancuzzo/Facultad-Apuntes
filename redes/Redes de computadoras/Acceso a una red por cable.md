@@ -1,11 +1,12 @@
 ---
 dia: 2024-04-22
-materia: redes
 capitulo: 1
 aliases:
   - Cable de cobra de par trenzado
   - Cable coaxial
   - Fibra óptica
+tags:
+  - redes/Redes-de-computadoras
 ---
 ### Definición
 ---

@@ -1,7 +1,8 @@
 ---
 dia: 2023-01-23
-materia: adc
 capitulo: 5
+tags:
+  - adc/Respuesta-en-frecuencia
 ---
 ### Definición
 ---

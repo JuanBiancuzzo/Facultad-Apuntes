@@ -1,7 +1,8 @@
 ---
 dia: 2023-01-23
-materia: proba
 capitulo: 11
+tags:
+  - proba/Test-de-hipótesis
 ---
 ### Error de tipo I
 ![[Error de tipo 1#Definición]]

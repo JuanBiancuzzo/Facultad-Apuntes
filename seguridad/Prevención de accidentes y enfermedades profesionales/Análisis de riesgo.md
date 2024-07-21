@@ -1,7 +1,8 @@
 ---
 dia: 2023-04-16
-materia: seguridad
 capitulo: 1
+tags:
+  - seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
 ---
 ### Definición
 ---

@@ -1,7 +1,8 @@
 ---
 dia: 2024-04-12
-materia: discreta
 capitulo: 1
+tags:
+  - discreta/Álgebra-de-conjuntos
 ---
 ### Definición
 ---

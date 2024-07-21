@@ -1,10 +1,11 @@
 ---
 dia: 2024-06-15
-materia: redes
 capitulo: 4
 aliases:
   - DHCP
   - Protocolo dinámico de configuración de hosts
+tags:
+  - redes/Capa-de-Red
 ---
 ### Definición
 ---

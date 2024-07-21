@@ -1,7 +1,8 @@
 ---
 dia: 2023-11-20
-materia: sisop
 capitulo: 3
+tags:
+  - sisop/Virtualización-de-memoria
 ---
 ### Definición
 ---

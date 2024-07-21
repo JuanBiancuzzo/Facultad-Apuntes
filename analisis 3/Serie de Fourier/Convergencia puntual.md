@@ -1,7 +1,8 @@
 ---
 dia: 2022-11-29
-materia: analisis 3
 capitulo: 12
+tags:
+  - analisis-3/Serie-de-Fourier
 ---
 ### Definición
 ---

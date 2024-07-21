@@ -1,9 +1,10 @@
 ---
 dia: 2023-10-22
-materia: aninfo
 capitulo: 8
 aliases:
   - Arquitectura de software
+tags:
+  - aninfo/Diseño-de-software
 ---
 ### Definición
 ---

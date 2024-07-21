@@ -1,9 +1,10 @@
 ---
 dia: 2024-06-15
-materia: redes
 capitulo: 4
 aliases:
   - MTU
+tags:
+  - redes/Capa-de-Red
 ---
 ### Definición
 ---

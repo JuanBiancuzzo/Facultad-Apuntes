@@ -1,7 +1,8 @@
 ---
 dia: 2024-05-29
-materia: señales
 capitulo: 7
+tags:
+  - señales/Transformadas-de-Laplace-y-Z
 ---
 ### Definición
 ---

@@ -1,7 +1,8 @@
 ---
 dia: 2023-01-23
-materia: proba
 capitulo: 6
+tags:
+  - proba/Esperanza-condicional
 ---
 ### Definición
 ---

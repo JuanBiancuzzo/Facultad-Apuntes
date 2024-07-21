@@ -1,10 +1,11 @@
 ---
 dia: 2024-06-03
-materia: redes
 capitulo: 3
 aliases:
   - ECN
   - Control de congestión asistida por la red
+tags:
+  - redes/Capa-de-Transporte
 ---
 ### Definición
 ---

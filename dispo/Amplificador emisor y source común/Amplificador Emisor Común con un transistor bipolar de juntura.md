@@ -1,10 +1,11 @@
 ---
 dia: 2023-11-26
-materia: dispo
 capitulo: 7
 aliases:
   - Amplificador Emisor Común
   - Amplificador Emisor Común con un TBJ
+tags:
+  - dispo/Amplificador-emisor-y-source-común
 ---
 ### Definición
 ---

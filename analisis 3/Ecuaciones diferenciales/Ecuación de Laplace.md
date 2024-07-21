@@ -1,7 +1,8 @@
 ---
 dia: 2022-12-08
-materia: analisis 3
 capitulo: 11
+tags:
+  - analisis-3/Ecuaciones-diferenciales
 ---
 ### Definición
 ---

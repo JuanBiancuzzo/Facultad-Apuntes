@@ -1,10 +1,11 @@
 ---
 dia: 2023-10-14
-materia: dispo
 capitulo: 4
 aliases:
   - MAD del TBJ
   - Modo activo directo del TBJ
+tags:
+  - dispo/Transistor-bipolar-de-juntura
 ---
 ### Definición
 ---

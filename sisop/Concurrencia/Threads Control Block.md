@@ -1,9 +1,10 @@
 ---
 dia: 2023-11-12
-materia: sisop
 capitulo: 5
 aliases:
   - TCB
+tags:
+  - sisop/Concurrencia
 ---
 ### Definición
 ---

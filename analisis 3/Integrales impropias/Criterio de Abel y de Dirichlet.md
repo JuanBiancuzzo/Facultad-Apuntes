@@ -1,7 +1,8 @@
 ---
 dia: 2022-11-27
-materia: analisis 3
 capitulo: 10
+tags:
+  - analisis-3/Integrales-impropias
 ---
 ### Definición Abel
 ---

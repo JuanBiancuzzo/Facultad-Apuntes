@@ -1,7 +1,8 @@
 ---
 dia: 2024-01-19
-materia: legal
 capitulo: 2
+tags:
+  - legal/Obligaciones
 ---
 ### Definición
 ---

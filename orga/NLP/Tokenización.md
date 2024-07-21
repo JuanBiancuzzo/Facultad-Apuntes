@@ -1,7 +1,8 @@
 ---
 dia: 2024-01-13
-materia: orga
 capitulo: 3
+tags:
+  - orga/NLP
 ---
 ### Definición
 ---

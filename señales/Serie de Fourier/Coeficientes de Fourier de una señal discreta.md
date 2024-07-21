@@ -1,7 +1,8 @@
 ---
 dia: 2024-03-26
-materia: señales
 capitulo: 4
+tags:
+  - señales/Serie-de-Fourier
 ---
 ### Definición
 ---

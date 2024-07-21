@@ -1,7 +1,8 @@
 ---
 dia: 2024-03-20
-materia: señales
 capitulo: 2
+tags:
+  - señales/Sistemas-LTI
 ---
 ### Definición
 ---

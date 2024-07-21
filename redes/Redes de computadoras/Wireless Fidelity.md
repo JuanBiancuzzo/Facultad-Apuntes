@@ -1,10 +1,11 @@
 ---
 dia: 2024-04-22
-materia: redes
 capitulo: 1
 aliases:
   - WiFi
   - IEEE 802.11
+tags:
+  - redes/Redes-de-computadoras
 ---
 ### Definición
 ---

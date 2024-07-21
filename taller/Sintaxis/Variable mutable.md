@@ -1,7 +1,8 @@
 ---
 dia: 2023-04-01
-materia: taller
 capitulo: 1
+tags:
+  - taller/Sintaxis
 ---
 ### Definición
 ---

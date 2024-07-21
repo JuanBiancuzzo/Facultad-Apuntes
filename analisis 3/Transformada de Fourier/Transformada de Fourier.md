@@ -1,7 +1,9 @@
 ---
 dia: 2022-12-04
-materia: analisis 3
 capitulo: 15
+tags:
+  - analisis-3/Transformada-de-Fourier
+  - señales/Transformada-de-Fourier
 ---
 ### Definición
 ---

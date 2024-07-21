@@ -1,9 +1,10 @@
 ---
 dia: 2023-12-02
-materia: sisop
 capitulo: 3
 aliases:
   - TLB
+tags:
+  - sisop/Virtualización-de-memoria
 ---
 ### Definición
 ---

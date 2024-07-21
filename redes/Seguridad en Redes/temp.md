@@ -1,7 +1,8 @@
 ---
 dia: 2024-03-11
-materia: redes
 capitulo: 7
+tags:
+  - redes/Seguridad-en-Redes
 ---
 ### Definición
 ---

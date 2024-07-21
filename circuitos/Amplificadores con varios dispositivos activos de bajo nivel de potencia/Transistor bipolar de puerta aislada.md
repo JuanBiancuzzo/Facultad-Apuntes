@@ -1,10 +1,11 @@
 ---
 dia: 2024-06-04
-materia: circuitos
 capitulo: 4
 aliases:
   - Insulated-gate bipolar transistor
   - IGBT
+tags:
+  - circuitos/Amplificadores-con-varios-dispositivos-activos-de-bajo-nivel-de-potencia
 ---
 ### Definición
 ---

@@ -1,9 +1,10 @@
 ---
 dia: 2023-11-19
-materia: sisop
 capitulo: 4
 aliases:
   - Política de planificación CSF
+tags:
+  - sisop/Scheduling
 ---
 ### Definición
 ---

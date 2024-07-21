@@ -1,9 +1,10 @@
 ---
 dia: 2023-09-25
-materia: dispo
 capitulo: 4
 aliases:
   - TBJ
+tags:
+  - dispo/Transistor-bipolar-de-juntura
 ---
 ### Definición
 ---

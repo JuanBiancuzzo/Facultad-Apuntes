@@ -1,10 +1,11 @@
 ---
 dia: 2024-05-29
-materia: redes
 capitulo: 2
 aliases:
   - DNS Records
   - RR
+tags:
+  - redes/Capa-de-aplicación
 ---
 ### Definición
 ---

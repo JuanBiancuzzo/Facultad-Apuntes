@@ -1,9 +1,10 @@
 ---
 dia: 2023-11-15
-materia: sisop
 capitulo: 4
 aliases:
   - Política de planificación MLFQ
+tags:
+  - sisop/Scheduling
 ---
 ### Definición
 ---

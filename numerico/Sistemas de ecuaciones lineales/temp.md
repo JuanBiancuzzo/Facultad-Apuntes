@@ -1,7 +1,8 @@
 ---
 dia: 2023-08-23
-materia: numerico
 capitulo: 4
+tags:
+  - numerico/Sistemas-de-ecuaciones-lineales
 ---
 ### Definición
 ---

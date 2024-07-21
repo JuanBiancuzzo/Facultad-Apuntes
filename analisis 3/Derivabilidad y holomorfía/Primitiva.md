@@ -1,7 +1,8 @@
 ---
 dia: 2022-09-12
-materia: analisis 3
 capitulo: 2
+tags:
+  - analisis-3/Derivabilidad-y-holomorfía
 ---
 ## Definición
 ---

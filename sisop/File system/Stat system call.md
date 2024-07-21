@@ -1,7 +1,8 @@
 ---
 dia: 2023-11-08
-materia: sisop
 capitulo: 6
+tags:
+  - sisop/File-system
 ---
 ### Definición
 ---

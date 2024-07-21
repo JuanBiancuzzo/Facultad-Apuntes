@@ -1,7 +1,8 @@
 ---
 dia: 2024-01-13
-materia: proba
 capitulo: 1
+tags:
+  - proba/Teoría-de-probabilidades
 ---
 ### Definición
 ---

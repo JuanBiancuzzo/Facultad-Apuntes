@@ -1,9 +1,10 @@
 ---
 dia: 2023-11-28
-materia: aninfo
 capitulo: 11
 aliases:
   - SAFe
+tags:
+  - aninfo/Desarrollo-de-software-y-modelos-de-proceso
 ---
 ### Definición
 ---

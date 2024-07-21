@@ -1,9 +1,10 @@
 ---
 dia: 2023-01-22
-materia: algebra 2
 capitulo: 3
 aliases:
   - Gramiano
+tags:
+  - algebra-2/Espacios-euclídeos
 ---
 ### Definición
 ---

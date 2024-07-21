@@ -1,9 +1,10 @@
 ---
 dia: 2024-05-29
-materia: redes
 capitulo: 2
 aliases:
   - IMAP
+tags:
+  - redes/Capa-de-aplicación
 ---
 ### Definición
 ---

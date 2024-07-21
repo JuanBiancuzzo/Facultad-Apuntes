@@ -1,7 +1,8 @@
 ---
 dia: 2024-06-06
-materia: algebra 2
 capitulo: 8
+tags:
+  - algebra-2/Formas-cuadráticas
 ---
 ### Definición
 ---
