@@ -60,29 +60,3 @@
 %>
 ### Apuntes
 ---
-<%*
-	const dv = this.app.plugins.plugins["dataview"].api;
-	
-	let carpeta = tp.file.folder(true);
-	let materia = carpeta.split("/")[0];
-
-	let unidades = dv.pages(`"${materia}" and -#materia`)
-		.where(pagina => pagina.capitulo)
-		.groupBy(pagina => parseInt(pagina.capitulo, 10))
-		.sort(capitulo => parseInt(capitulo.rows[0].capitulo, 10));
-		
-	for (let unidad of unidades) {	
-		tR += `##### ${conseguir_nombre(unidad)} (${unidad.rows.length})\n`;
-		tR += "---\n";	
-		tR += (unidad.rows.file).map(pagina => {
-			return `[[${pagina.path}|${pagina.name}]]`;
-		}).join("\n");
-		tR += "\n";
-	}
-
-	function conseguir_nombre(unidad) {
-		let relative_path = unidad.rows[0].file.folder;
-		let spliteado = relative_path.split("/");
-		return spliteado[spliteado.length - 1];
-	}
-%>

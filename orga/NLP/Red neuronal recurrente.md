@@ -8,7 +8,7 @@ tags:
 ### Definición
 ---
 Es una [[Red neuronal]] donde la [[Neurona]] no solo tiene como [[Hiper-parámetros de un modelo|hiper-parámetro]] la función y como parámetros a $\omega$ y $b$ sino que tiene otro hiper-parámetro del valor anterior, dándonos $$ O_t(x) = f(\omega \cdot x + u \cdot O_{t - 1} + b) $$
-El problema de estas es que el calculo a partir del [[Descenso del gradiente|descenso del gradiente]], suele llevar a valores inestables de forma numérica.
+El problema de estas es que el calculo a partir del [[Descenso del gradiente|descenso del gradiente]], suele llevar a valores inestables de forma numérica. 
 
 #### Múltiples RNR
 ---

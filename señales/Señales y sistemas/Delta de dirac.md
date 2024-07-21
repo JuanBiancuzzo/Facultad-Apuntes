@@ -1,7 +1,9 @@
 ---
 dia: 2024-03-13
-materia: señales
 capitulo: 1
+tags:
+  - señales/Señales-y-sistemas
+  - nota
 ---
 ### Definición
 ---

@@ -1,12 +1,13 @@
 <%* 
-	const dv = this.app.plugins.plugins["dataview"].api;
+	const dv = app.plugins.plugins["dataview"].api;
 	
-	let archivosModificados = this.app.plugins
+	let archivosModificados = (await app.plugins
 		.plugins["obsidian-git"]
-		.cachedStatus.all
-		.map(); 
+		.updateCachedStatus())
+		.all; 
 
 	console.log(archivosModificados);
+	return;
 
 	let materias = dv.pages("#materia")
 		.map(materia => {
@@ -37,35 +38,6 @@
 	});
 
 	return salir();
-
-	async function modificarMateria(dv, materia, archivoMateria) {
-		let contenido = await this.app.vault.read(archivoMateria);
-		let patronBuscado = "### Apuntes"
-		let indexApuntes = contenido.indexOf(patronBuscado);
-
-		let nuevoContenido = `${contenido.slice(0, indexApuntes + patronBuscado.length)} \n---\n`;
-
-		let unidades = dv.pages(`"${materia}" and -#materia`)
-			.where(pagina => pagina.capitulo)
-			.groupBy(pagina => parseInt(pagina.capitulo, 10))
-			.sort(capitulo => parseInt(capitulo.rows[0].capitulo, 10));
-			
-		for (let unidad of unidades) {	
-			nuevoContenido += `##### ${conseguir_nombre(unidad)} (${unidad.rows.length})\n`;
-			nuevoContenido += "---\n";	
-			nuevoContenido += (unidad.rows.file).map(pagina => {
-				return `* [[${pagina.path}|${pagina.name}]]`;
-			}).join("\n");
-			nuevoContenido += "\n\n";
-		}
-		return this.app.vault.modify(archivoMateria, nuevoContenido);
-	}
-
-	function conseguir_nombre(unidad) {
-		let relative_path = unidad.rows[0].file.folder;
-		let spliteado = relative_path.split("/");
-		return spliteado[spliteado.length - 1];
-	}
 
 	async function salir() {
 		let archivoActivo = app.workspace.getActiveFile();
