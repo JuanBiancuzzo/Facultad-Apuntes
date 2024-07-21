@@ -3,6 +3,7 @@ dia: 2024-04-18
 capitulo: 1
 tags:
   - redes/Redes-de-computadoras
+  - nota
 ---
 ### Definición
 ---

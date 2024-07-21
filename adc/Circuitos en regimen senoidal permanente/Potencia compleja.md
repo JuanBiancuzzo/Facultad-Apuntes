@@ -3,6 +3,7 @@ dia: 2023-11-16
 capitulo: 3
 tags:
   - adc/Circuitos-en-regimen-senoidal-permanente
+  - nota
 ---
 ### Definición
 ---

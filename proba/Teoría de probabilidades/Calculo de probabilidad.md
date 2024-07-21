@@ -3,6 +3,7 @@ dia: 2023-01-23
 capitulo: 1
 tags:
   - proba/Teoría-de-probabilidades
+  - nota
 ---
 ### Función de probabilidad de una variable aleatoria
 ---

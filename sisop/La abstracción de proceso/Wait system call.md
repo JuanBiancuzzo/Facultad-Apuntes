@@ -3,6 +3,7 @@ dia: 2023-11-16
 capitulo: 2
 tags:
   - sisop/La-abstracción-de-proceso
+  - nota
 ---
 ### Definición
 ---

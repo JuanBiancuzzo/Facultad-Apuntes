@@ -3,6 +3,7 @@ dia: 2022-09-12
 capitulo: 2
 tags:
   - analisis-3/Derivabilidad-y-holomorfía
+  - nota
 ---
 ### Definición
 ---

@@ -3,6 +3,7 @@ dia: 2024-06-14
 capitulo: 4
 tags:
   - redes/Capa-de-Red
+  - nota
 ---
 ### Definición
 ---

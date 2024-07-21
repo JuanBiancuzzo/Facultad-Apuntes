@@ -3,6 +3,7 @@ dia: 2023-10-17
 capitulo: 4
 tags:
   - dispo/Transistor-bipolar-de-juntura
+  - nota
 ---
 ### Definición
 ---

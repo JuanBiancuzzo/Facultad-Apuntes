@@ -5,6 +5,7 @@ aliases:
   - Política de planificación CSF
 tags:
   - sisop/Scheduling
+  - nota
 ---
 ### Definición
 ---

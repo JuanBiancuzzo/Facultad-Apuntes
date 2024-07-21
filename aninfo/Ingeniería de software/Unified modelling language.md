@@ -5,6 +5,7 @@ aliases:
   - UML
 tags:
   - aninfo/Ingeniería-de-software
+  - nota
 ---
 ### Definición
 ---

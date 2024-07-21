@@ -3,6 +3,7 @@ dia: 2024-01-12
 capitulo: 2
 tags:
   - legal/Obligaciones
+  - nota
 ---
 ### Definición
 ---

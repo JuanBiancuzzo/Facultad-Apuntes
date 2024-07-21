@@ -6,6 +6,7 @@ aliases:
   - IEEE 802.11
 tags:
   - redes/Redes-de-computadoras
+  - nota
 ---
 ### Definición
 ---

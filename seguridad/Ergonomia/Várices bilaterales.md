@@ -3,6 +3,7 @@ dia: 2023-07-17
 capitulo: 15
 tags:
   - seguridad/Ergonomia
+  - nota
 ---
 ### Definición
 ---

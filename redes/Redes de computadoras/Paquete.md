@@ -8,6 +8,7 @@ aliases:
   - Tramas
 tags:
   - redes/Redes-de-computadoras
+  - nota
 ---
 ### Definición
 ---

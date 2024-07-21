@@ -3,6 +3,7 @@ dia: 2023-01-23
 capitulo: 3
 tags:
   - intro/Circuitos-con-capacitores
+  - nota
 ---
 ### Definición
 ---

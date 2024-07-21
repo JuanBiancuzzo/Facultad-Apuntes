@@ -3,6 +3,7 @@ dia: 2023-01-23
 capitulo: 6
 tags:
   - proba/Esperanza-condicional
+  - nota
 ---
 ### Definición
 ---

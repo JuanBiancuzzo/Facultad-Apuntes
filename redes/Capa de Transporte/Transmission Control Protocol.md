@@ -5,6 +5,7 @@ aliases:
   - TCP
 tags:
   - redes/Capa-de-Transporte
+  - nota
 ---
 ### Definición
 ---

@@ -3,6 +3,7 @@ dia: 2024-04-09
 capitulo: 15
 tags:
   - analisis-3/Transformada-de-Fourier
+  - nota
 ---
 ### Definición
 ---

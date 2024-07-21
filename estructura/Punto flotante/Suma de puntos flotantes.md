@@ -3,6 +3,7 @@ dia: 2023-04-08
 capitulo: 2
 tags:
   - estructura/Punto-flotante
+  - nota
 ---
 ### Definición
 ---

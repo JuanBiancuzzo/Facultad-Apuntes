@@ -3,6 +3,7 @@ dia: 2024-01-13
 capitulo: 1
 tags:
   - algebra-2/Espacios-Vectoriales
+  - nota
 ---
 ### Definición
 ---

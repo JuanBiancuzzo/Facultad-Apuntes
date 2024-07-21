@@ -3,6 +3,7 @@ dia: 2023-08-26
 capitulo: 2
 tags:
   - aninfo/Ingeniería-de-requisitos
+  - nota
 ---
 ### Definición
 ---

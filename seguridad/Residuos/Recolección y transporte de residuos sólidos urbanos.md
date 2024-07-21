@@ -3,6 +3,7 @@ dia: 2023-07-16
 capitulo: 11
 tags:
   - seguridad/Residuos
+  - nota
 ---
 ### Definición
 ---

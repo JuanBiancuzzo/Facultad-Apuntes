@@ -3,6 +3,7 @@ dia: 2023-01-23
 capitulo: 13
 tags:
   - proba/Estimación-Bayesiana
+  - nota
 ---
 ### Definición
 ---

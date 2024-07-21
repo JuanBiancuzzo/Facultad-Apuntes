@@ -7,6 +7,7 @@ aliases:
   - DNS Response
 tags:
   - redes/Capa-de-aplicación
+  - nota
 ---
 ### Definición
 ---

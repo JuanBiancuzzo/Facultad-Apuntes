@@ -5,6 +5,7 @@ aliases:
   - Política de planificación STCF
 tags:
   - sisop/Scheduling
+  - nota
 ---
 ### Definición
 ---

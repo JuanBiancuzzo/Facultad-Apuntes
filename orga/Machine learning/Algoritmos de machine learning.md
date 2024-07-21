@@ -1,6 +1,10 @@
 ---
 dia: 2023-07-20
 materia: orga
+capitulo: 9
+tags:
+  - orga/Machine-learning
+  - nota
 ---
 ### Lista de algoritmos de machine learning
 ---

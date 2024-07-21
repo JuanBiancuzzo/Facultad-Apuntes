@@ -5,6 +5,7 @@ aliases:
   - Política de planificación MLFQ
 tags:
   - sisop/Scheduling
+  - nota
 ---
 ### Definición
 ---

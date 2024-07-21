@@ -3,6 +3,7 @@ dia: 2023-11-27
 capitulo: 6
 tags:
   - adc/Cuadripolos
+  - nota
 ---
 ### Definición
 ---

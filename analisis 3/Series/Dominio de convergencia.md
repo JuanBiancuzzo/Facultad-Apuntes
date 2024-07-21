@@ -3,6 +3,7 @@ dia: 2022-09-20
 capitulo: 3
 tags:
   - analisis-3/Series
+  - nota
 ---
 ### Definición
 ---

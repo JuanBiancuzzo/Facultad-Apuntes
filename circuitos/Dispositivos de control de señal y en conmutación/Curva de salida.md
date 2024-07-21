@@ -3,6 +3,7 @@ dia: 2024-04-20
 capitulo: 2
 tags:
   - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
+  - nota
 ---
 ### Definición
 ---

@@ -5,6 +5,7 @@ aliases:
   - Convolución cíclica
 tags:
   - señales/Transformada-discreta-de-Fourier
+  - nota
 ---
 ### Definición
 ---

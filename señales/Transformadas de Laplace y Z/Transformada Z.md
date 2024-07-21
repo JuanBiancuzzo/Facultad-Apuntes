@@ -3,6 +3,7 @@ dia: 2024-05-29
 capitulo: 7
 tags:
   - señales/Transformadas-de-Laplace-y-Z
+  - nota
 ---
 ### Definición
 ---

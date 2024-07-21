@@ -3,6 +3,7 @@ dia: 2023-11-16
 capitulo: 5
 tags:
   - intro/Potencia
+  - nota
 ---
 ### Definición
 ---

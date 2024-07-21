@@ -5,6 +5,7 @@ aliases:
   - SAFe
 tags:
   - aninfo/Desarrollo-de-software-y-modelos-de-proceso
+  - nota
 ---
 ### Definición
 ---

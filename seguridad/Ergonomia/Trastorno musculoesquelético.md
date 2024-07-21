@@ -5,6 +5,7 @@ aliases:
   - TME
 tags:
   - seguridad/Ergonomia
+  - nota
 ---
 ### Definición
 ---

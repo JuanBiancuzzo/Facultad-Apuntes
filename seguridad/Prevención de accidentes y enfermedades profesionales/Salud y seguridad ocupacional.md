@@ -3,6 +3,7 @@ dia: 2023-03-13
 capitulo: 1
 tags:
   - seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
+  - nota
 ---
 ### Definición
 ---

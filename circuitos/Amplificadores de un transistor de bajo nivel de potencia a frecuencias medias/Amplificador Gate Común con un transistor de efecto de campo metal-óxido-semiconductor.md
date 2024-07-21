@@ -5,6 +5,7 @@ aliases:
   - Amplificador Gate Común con un MOSFET
 tags:
   - circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
+  - nota
 ---
 ### Definición
 ---

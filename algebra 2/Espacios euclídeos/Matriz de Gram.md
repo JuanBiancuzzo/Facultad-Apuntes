@@ -5,6 +5,7 @@ aliases:
   - Gramiano
 tags:
   - algebra-2/Espacios-euclídeos
+  - nota
 ---
 ### Definición
 ---

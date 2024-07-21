@@ -5,6 +5,7 @@ aliases:
   - DNS
 tags:
   - redes/Capa-de-aplicación
+  - nota
 ---
 ### Definición
 ---

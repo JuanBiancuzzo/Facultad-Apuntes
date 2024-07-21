@@ -156,9 +156,9 @@ tags:
 ##### Prototipado y experiencia del usuario (4)
 ---
 * [[aninfo/Prototipado y experiencia del usuario/Usabilidad.md|Usabilidad]]
-* [[aninfo/Prototipado y experiencia del usuario/Principios de diseño de interfaces de usuario (UI).md|Principios de diseño de interfaces de usuario (UI)]]
+* [[Principios de diseño de interfaces de usuario|Principios de diseño de interfaces de usuario]]
 * [[aninfo/Prototipado y experiencia del usuario/Prueba de usuario.md|Prueba de usuario]]
-* [[aninfo/Prototipado y experiencia del usuario/Proceso de diseño de interfaz de usuario (UI).md|Proceso de diseño de interfaz de usuario (UI)]]
+* [[Proceso de diseño de interfaz de usuario|Proceso de diseño de interfaz de usuario]]
 
 ##### Diseño de datos (1)
 ---

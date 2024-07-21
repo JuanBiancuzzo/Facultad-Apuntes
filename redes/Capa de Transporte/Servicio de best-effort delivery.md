@@ -3,6 +3,7 @@ dia: 2024-05-29
 capitulo: 3
 tags:
   - redes/Capa-de-Transporte
+  - nota
 ---
 ### Definición
 ---

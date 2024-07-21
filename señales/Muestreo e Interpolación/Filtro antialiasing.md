@@ -3,6 +3,7 @@ dia: 2024-04-22
 capitulo: 5
 tags:
   - señales/Muestreo-e-Interpolación
+  - nota
 ---
 ### Definición
 ---

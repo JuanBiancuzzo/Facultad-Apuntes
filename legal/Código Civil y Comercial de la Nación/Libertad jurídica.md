@@ -3,6 +3,7 @@ dia: 2024-01-11
 capitulo: 1
 tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
+  - nota
 ---
 ### Definición
 ---

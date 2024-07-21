@@ -3,6 +3,7 @@ dia: 2023-01-23
 capitulo: 4
 tags:
   - intro/Respuesta-en-frecuencia
+  - nota
 ---
 ### Definición
 ---

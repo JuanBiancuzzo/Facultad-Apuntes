@@ -7,6 +7,7 @@ aliases:
   - Fibra óptica
 tags:
   - redes/Redes-de-computadoras
+  - nota
 ---
 ### Definición
 ---

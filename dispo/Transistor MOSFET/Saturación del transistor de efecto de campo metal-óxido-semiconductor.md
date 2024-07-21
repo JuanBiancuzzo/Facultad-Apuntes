@@ -5,6 +5,7 @@ aliases:
   - Saturación del MOSFET
 tags:
   - dispo/Transistor-MOSFET
+  - nota
 ---
 ### Definición
 ---

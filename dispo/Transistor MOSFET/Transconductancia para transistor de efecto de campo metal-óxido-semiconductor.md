@@ -5,6 +5,7 @@ aliases:
   - Transconductancia para MOSFET
 tags:
   - dispo/Transistor-MOSFET
+  - nota
 ---
 ### Definición
 ---

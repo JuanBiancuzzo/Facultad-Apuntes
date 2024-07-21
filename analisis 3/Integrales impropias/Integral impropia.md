@@ -3,6 +3,7 @@ dia: 2022-11-27
 capitulo: 10
 tags:
   - analisis-3/Integrales-impropias
+  - nota
 ---
 ### Definición para $\int_a^\infty f(x) \cdot dx$
 ---

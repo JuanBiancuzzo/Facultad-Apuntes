@@ -5,6 +5,7 @@ aliases:
   - IPv6
 tags:
   - redes/Capa-de-Red
+  - nota
 ---
 ### Definición
 ---

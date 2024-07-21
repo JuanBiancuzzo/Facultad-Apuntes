@@ -5,6 +5,7 @@ aliases:
   - Puerto
 tags:
   - redes/Capa-de-aplicación
+  - nota
 ---
 ### Definición
 ---

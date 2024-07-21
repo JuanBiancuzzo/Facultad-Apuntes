@@ -5,6 +5,7 @@ aliases:
   - Triodo del MOSFET
 tags:
   - dispo/Transistor-MOSFET
+  - nota
 ---
 ### Definición
 ---

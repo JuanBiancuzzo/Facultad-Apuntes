@@ -6,6 +6,7 @@ aliases:
   - Content provider networks
 tags:
   - redes/Capa-de-aplicación
+  - nota
 ---
 ### Definición
 ---

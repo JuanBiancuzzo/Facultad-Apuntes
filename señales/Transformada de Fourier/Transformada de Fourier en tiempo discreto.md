@@ -3,6 +3,7 @@ dia: 2024-04-15
 capitulo: 4
 tags:
   - señales/Transformada-de-Fourier
+  - nota
 ---
 ### Definición
 ---

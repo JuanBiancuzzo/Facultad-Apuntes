@@ -3,6 +3,7 @@ dia: 2023-01-23
 capitulo: 5
 tags:
   - proba/Variables-aleatorias-condicionadas
+  - nota
 ---
 ### Definición
 ---

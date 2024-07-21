@@ -3,6 +3,7 @@ dia: 2023-01-23
 capitulo: 2
 tags:
   - proba/Variables-y-vectores-aleatorios
+  - nota
 ---
 Dado una [[Función de probabilidad conjunta]] $p_{X, Y}$ se define la función de probabilidad marginal como 
 $$ \begin{matrix}

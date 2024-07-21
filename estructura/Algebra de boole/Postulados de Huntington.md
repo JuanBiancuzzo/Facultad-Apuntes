@@ -3,6 +3,7 @@ dia: 2023-04-08
 capitulo: 3
 tags:
   - estructura/Algebra-de-boole
+  - nota
 ---
 ### Definición
 ---

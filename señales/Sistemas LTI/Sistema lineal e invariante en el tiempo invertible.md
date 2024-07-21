@@ -5,6 +5,7 @@ aliases:
   - Sistema LTI invariante
 tags:
   - señales/Sistemas-LTI
+  - nota
 ---
 ### Definición
 ---

@@ -6,6 +6,7 @@ aliases:
   - Web
 tags:
   - redes/Redes-de-computadoras
+  - nota
 ---
 ### Definición
 ---

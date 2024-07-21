@@ -7,6 +7,7 @@ aliases:
   - Protocolo de ventana desplizante
 tags:
   - redes/Capa-de-Transporte
+  - nota
 ---
 ### Definición
 ---

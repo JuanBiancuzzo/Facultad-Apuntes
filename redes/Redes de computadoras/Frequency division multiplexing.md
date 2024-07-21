@@ -5,6 +5,7 @@ aliases:
   - FDM
 tags:
   - redes/Redes-de-computadoras
+  - nota
 ---
 ### Definición
 ---

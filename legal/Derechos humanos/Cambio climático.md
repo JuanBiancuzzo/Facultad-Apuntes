@@ -3,6 +3,7 @@ dia: 2024-02-17
 capitulo: 6
 tags:
   - legal/Derechos-humanos
+  - nota
 ---
 ### Definición
 ---

@@ -3,6 +3,7 @@ dia: 2023-01-23
 capitulo: 1
 tags:
   - intro/Circuitos-con-resistencias
+  - nota
 ---
 ### Definición
 ---

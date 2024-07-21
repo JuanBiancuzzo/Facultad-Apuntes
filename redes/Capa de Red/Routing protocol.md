@@ -5,6 +5,7 @@ aliases:
   - Protocolo de ruteo
 tags:
   - redes/Capa-de-Red
+  - nota
 ---
 ### Definición
 ---

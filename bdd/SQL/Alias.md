@@ -3,6 +3,7 @@ dia: 2024-03-29
 capitulo: 2
 tags:
   - bdd/SQL
+  - nota
 ---
 ### Definición
 ---

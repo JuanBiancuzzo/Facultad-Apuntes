@@ -5,6 +5,7 @@ aliases:
   - Corte del MOSFET
 tags:
   - dispo/Transistor-MOSFET
+  - nota
 ---
 ### Definición
 ---

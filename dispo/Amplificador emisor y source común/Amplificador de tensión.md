@@ -3,6 +3,7 @@ dia: 2023-11-26
 capitulo: 7
 tags:
   - dispo/Amplificador-emisor-y-source-común
+  - nota
 ---
 ### Definición
 ---

@@ -3,6 +3,7 @@ dia: 2023-01-22
 capitulo: 3
 tags:
   - algebra-2/Espacios-euclídeos
+  - nota
 ---
 ### Definición
 ---

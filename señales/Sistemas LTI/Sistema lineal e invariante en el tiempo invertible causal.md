@@ -5,6 +5,7 @@ aliases:
   - Sistema LTI causal
 tags:
   - señales/Sistemas-LTI
+  - nota
 ---
 ### Definición
 ---

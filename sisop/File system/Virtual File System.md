@@ -5,6 +5,7 @@ aliases:
   - VFS
 tags:
   - sisop/File-system
+  - nota
 ---
 ### Definición
 ---

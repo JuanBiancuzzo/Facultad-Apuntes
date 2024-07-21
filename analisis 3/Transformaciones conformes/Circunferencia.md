@@ -3,6 +3,7 @@ dia: 2022-10-13
 capitulo: 5
 tags:
   - analisis-3/Transformaciones-conformes
+  - nota
 ---
 ### Definición
 ---

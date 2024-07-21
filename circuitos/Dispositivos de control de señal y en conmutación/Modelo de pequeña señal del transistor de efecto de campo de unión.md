@@ -6,6 +6,7 @@ aliases:
   - MPS del JFET
 tags:
   - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
+  - nota
 ---
 ### Definición
 ---

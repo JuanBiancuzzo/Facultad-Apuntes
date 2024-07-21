@@ -5,6 +5,7 @@ aliases:
   - SQL
 tags:
   - bdd/General
+  - nota
 ---
 ### Definición
 ---

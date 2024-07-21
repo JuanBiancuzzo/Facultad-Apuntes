@@ -5,6 +5,7 @@ aliases:
   - LAN
 tags:
   - redes/Capa-de-aplicación
+  - nota
 ---
 ### Definición
 ---

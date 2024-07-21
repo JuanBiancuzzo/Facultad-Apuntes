@@ -3,6 +3,7 @@ dia: 2024-03-11
 capitulo: 3
 tags:
   - señales/Serie-de-Fourier
+  - nota
 ---
 ### Definición
 ---

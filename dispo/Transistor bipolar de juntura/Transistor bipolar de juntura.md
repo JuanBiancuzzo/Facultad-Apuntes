@@ -5,6 +5,7 @@ aliases:
   - TBJ
 tags:
   - dispo/Transistor-bipolar-de-juntura
+  - nota
 ---
 ### Definición
 ---

@@ -3,6 +3,7 @@ dia: 2023-09-05
 capitulo: 2
 tags:
   - intro/Reducción-de-circuitos
+  - nota
 ---
 ### Definición
 ---

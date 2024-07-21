@@ -5,6 +5,7 @@ aliases:
   - FTP
 tags:
   - redes/Capa-de-aplicación
+  - nota
 ---
 ### Definición
 ---

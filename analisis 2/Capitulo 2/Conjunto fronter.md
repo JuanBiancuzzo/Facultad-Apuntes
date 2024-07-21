@@ -3,6 +3,7 @@ dia: 2023-01-22
 capitulo: 2
 tags:
   - analisis-2/Capitulo-2
+  - nota
 ---
 ### Definicion
 ---

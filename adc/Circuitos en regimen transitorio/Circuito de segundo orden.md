@@ -3,6 +3,7 @@ dia: 2023-09-23
 capitulo: 2
 tags:
   - adc/Circuitos-en-regimen-transitorio
+  - nota
 ---
 ### Definición
 ---

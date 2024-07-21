@@ -5,6 +5,7 @@ aliases:
   - IP stack
 tags:
   - redes/Redes-de-computadoras
+  - nota
 ---
 ### Definición
 ---

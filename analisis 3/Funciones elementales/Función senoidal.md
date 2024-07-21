@@ -3,6 +3,7 @@ dia: 2023-11-16
 capitulo: 4
 tags:
   - analisis-3/Funciones-elementales
+  - nota
 ---
 ### Definición
 ---

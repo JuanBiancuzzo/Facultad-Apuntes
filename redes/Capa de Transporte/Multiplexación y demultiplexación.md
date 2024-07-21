@@ -8,6 +8,7 @@ aliases:
   - Demultiplexing
 tags:
   - redes/Capa-de-Transporte
+  - nota
 ---
 ### Definición
 ---

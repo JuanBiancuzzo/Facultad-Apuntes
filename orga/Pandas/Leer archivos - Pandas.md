@@ -3,6 +3,7 @@ dia: 2023-03-16
 capitulo: 1
 tags:
   - orga/Pandas
+  - nota
 ---
 ### Definición
 ---

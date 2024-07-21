@@ -5,6 +5,7 @@ aliases:
   - Subnet
 tags:
   - redes/Capa-de-Red
+  - nota
 ---
 ### Definición
 ---

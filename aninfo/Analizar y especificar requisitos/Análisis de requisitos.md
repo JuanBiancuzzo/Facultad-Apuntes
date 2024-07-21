@@ -3,6 +3,7 @@ dia: 2023-08-31
 capitulo: 4
 tags:
   - aninfo/Analizar-y-especificar-requisitos
+  - nota
 ---
 ### Definición
 ---

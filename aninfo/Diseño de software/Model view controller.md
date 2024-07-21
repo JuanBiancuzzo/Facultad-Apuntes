@@ -5,6 +5,7 @@ aliases:
   - MVC
 tags:
   - aninfo/Diseño-de-software
+  - nota
 ---
 ### Definición
 ---

@@ -4,6 +4,7 @@ capitulo: 12
 tags:
   - analisis-3/Serie-de-Fourier
   - señales/Serie-de-Fourier
+  - nota
 ---
 ### Definición
 ---

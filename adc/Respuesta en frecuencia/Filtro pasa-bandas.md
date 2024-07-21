@@ -3,6 +3,7 @@ dia: 2024-04-09
 capitulo: 5
 tags:
   - adc/Respuesta-en-frecuencia
+  - nota
 ---
 ### Definición
 ---

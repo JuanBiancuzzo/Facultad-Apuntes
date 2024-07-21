@@ -3,6 +3,7 @@ dia: 2023-04-29
 capitulo: 7
 tags:
   - estructura/Registros-y-contadores
+  - nota
 ---
 ### Definición
 ---

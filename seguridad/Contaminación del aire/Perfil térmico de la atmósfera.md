@@ -3,6 +3,7 @@ dia: 2023-07-16
 capitulo: 13
 tags:
   - seguridad/Contaminación-del-aire
+  - nota
 ---
 ### Definición
 ---

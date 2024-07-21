@@ -6,6 +6,7 @@ aliases:
   - Amplificador Emisor Común con un TBJ
 tags:
   - dispo/Amplificador-emisor-y-source-común
+  - nota
 ---
 ### Definición
 ---

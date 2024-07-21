@@ -5,6 +5,7 @@ aliases:
   - PPP
 tags:
   - proba/Proceso-de-Poisson
+  - nota
 ---
 ### Definición
 ---

@@ -3,6 +3,7 @@ dia: 2023-04-29
 capitulo: 6
 tags:
   - estructura/Flip-Flops
+  - nota
 ---
 ### Definición
 ---

@@ -3,6 +3,7 @@ dia: 2024-03-23
 capitulo: 1
 tags:
   - circuitos/Circuitos-con-diodos
+  - nota
 ---
 ### Definición
 ---

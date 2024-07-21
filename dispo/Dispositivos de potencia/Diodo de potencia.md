@@ -3,6 +3,7 @@ dia: 2023-08-23
 capitulo: 8
 tags:
   - dispo/Dispositivos-de-potencia
+  - nota
 ---
 ### Definición
 ---

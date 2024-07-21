@@ -3,6 +3,7 @@ dia: 2024-03-11
 capitulo: 1
 tags:
   - señales/Señales-y-sistemas
+  - nota
 ---
 ### Definición
 ---

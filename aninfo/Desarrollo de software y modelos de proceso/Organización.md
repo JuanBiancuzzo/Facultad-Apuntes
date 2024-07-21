@@ -3,6 +3,7 @@ dia: 2023-08-26
 capitulo: 11
 tags:
   - aninfo/Desarrollo-de-software-y-modelos-de-proceso
+  - nota
 ---
 ### Definición
 ---

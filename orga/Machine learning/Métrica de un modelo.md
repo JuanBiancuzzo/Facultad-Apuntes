@@ -3,6 +3,7 @@ dia: 2023-05-26
 capitulo: 9
 tags:
   - orga/Machine-learning
+  - nota
 ---
 ### Definición
 ---

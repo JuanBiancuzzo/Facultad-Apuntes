@@ -5,6 +5,7 @@ aliases:
   - PCB
 tags:
   - sisop/La-abstracción-de-proceso
+  - nota
 ---
 ### Definición
 ---

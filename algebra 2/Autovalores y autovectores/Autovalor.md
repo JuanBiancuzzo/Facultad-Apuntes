@@ -3,6 +3,7 @@ dia: 2023-01-22
 capitulo: 4
 tags:
   - algebra-2/Autovalores-y-autovectores
+  - nota
 ---
 ### Definición
 ---

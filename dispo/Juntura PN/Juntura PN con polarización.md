@@ -3,6 +3,7 @@ dia: 2023-09-06
 capitulo: 2
 tags:
   - dispo/Juntura-PN
+  - nota
 ---
 ### Definición
 ---

@@ -3,6 +3,7 @@ dia: 2023-09-05
 capitulo: 3
 tags:
   - aninfo/Descubrimiento-de-requisitos
+  - nota
 ---
 ### Definición
 ---

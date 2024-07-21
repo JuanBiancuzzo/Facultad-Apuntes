@@ -3,6 +3,7 @@ dia: 2022-09-02
 capitulo: 1
 tags:
   - analisis-3/Topología-del-plano-complejo-y-límites
+  - nota
 ---
 ### Definición
 ---

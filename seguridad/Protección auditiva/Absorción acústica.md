@@ -3,6 +3,7 @@ dia: 2023-04-04
 capitulo: 4
 tags:
   - seguridad/Protección-auditiva
+  - nota
 ---
 ### Definición
 ---

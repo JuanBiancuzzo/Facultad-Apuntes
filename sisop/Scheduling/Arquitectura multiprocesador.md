@@ -3,6 +3,7 @@ dia: 2023-11-18
 capitulo: 4
 tags:
   - sisop/Scheduling
+  - nota
 ---
 ### Definición
 ---

@@ -3,6 +3,7 @@ dia: 2024-05-29
 capitulo: 2
 tags:
   - redes/Capa-de-aplicación
+  - nota
 ---
 ### Definición
 ---

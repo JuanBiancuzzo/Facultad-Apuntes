@@ -6,6 +6,7 @@ aliases:
   - Transformada Rápida de Fourier
 tags:
   - señales/Transformada-discreta-de-Fourier
+  - nota
 ---
 ### Definición
 ---

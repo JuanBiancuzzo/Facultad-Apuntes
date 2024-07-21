@@ -5,6 +5,7 @@ aliases:
   - TOC
 tags:
   - aninfo/Ingeniería-de-software
+  - nota
 ---
 ### Definición
 ---

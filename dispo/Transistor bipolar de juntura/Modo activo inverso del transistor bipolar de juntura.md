@@ -6,6 +6,7 @@ aliases:
   - Modo activo inverso del TBJ
 tags:
   - dispo/Transistor-bipolar-de-juntura
+  - nota
 ---
 ### Definición
 ---

@@ -5,6 +5,7 @@ aliases:
   - TLB
 tags:
   - sisop/Virtualización-de-memoria
+  - nota
 ---
 ### Definición
 ---

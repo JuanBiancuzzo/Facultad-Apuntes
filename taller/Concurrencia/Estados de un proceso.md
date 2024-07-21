@@ -3,6 +3,7 @@ dia: 2023-04-09
 capitulo: 4
 tags:
   - taller/Concurrencia
+  - nota
 ---
 ### Definición
 ---

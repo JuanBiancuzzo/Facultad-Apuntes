@@ -3,6 +3,7 @@ dia: 2023-03-22
 capitulo: 3
 tags:
   - taller/Ownership
+  - nota
 ---
 ### Definición
 ---

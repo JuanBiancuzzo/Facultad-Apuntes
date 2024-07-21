@@ -3,6 +3,7 @@ dia: 2023-01-23
 capitulo: 4
 tags:
   - proba/Función-de-variable-aleatoria
+  - nota
 ---
 
 ### [[Distribución de Poisson]]

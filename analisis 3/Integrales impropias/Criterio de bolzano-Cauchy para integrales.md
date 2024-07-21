@@ -3,6 +3,7 @@ dia: 2022-11-27
 capitulo: 10
 tags:
   - analisis-3/Integrales-impropias
+  - nota
 ---
 ### Definción
 ---

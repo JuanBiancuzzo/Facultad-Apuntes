@@ -4,6 +4,7 @@ capitulo: 15
 tags:
   - analisis-3/Transformada-de-Fourier
   - señales/Transformada-de-Fourier
+  - nota
 ---
 ### Definición
 ---

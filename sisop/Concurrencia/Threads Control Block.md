@@ -5,6 +5,7 @@ aliases:
   - TCB
 tags:
   - sisop/Concurrencia
+  - nota
 ---
 ### Definición
 ---

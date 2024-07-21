@@ -5,6 +5,7 @@ aliases:
   - SSH
 tags:
   - redes/Capa-de-aplicación
+  - nota
 ---
 ### Definición
 ---

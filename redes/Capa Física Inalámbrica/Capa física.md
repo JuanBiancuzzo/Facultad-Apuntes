@@ -3,6 +3,7 @@ dia: 2024-03-11
 capitulo: 6
 tags:
   - redes/Capa-Física-Inalámbrica
+  - nota
 ---
 ### Definición
 ---

@@ -3,6 +3,7 @@ dia: 2023-09-04
 capitulo: 1
 tags:
   - sisop/Kernel
+  - nota
 ---
 ### Definición
 ---

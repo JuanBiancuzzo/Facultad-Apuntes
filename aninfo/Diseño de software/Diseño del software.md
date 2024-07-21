@@ -1,8 +1,9 @@
 ---
 dia: 2023-08-26
-capitulo: 1
+capitulo: 8
 tags:
   - aninfo/Diseño-de-software
+  - nota
 ---
 ### Definición
 ---

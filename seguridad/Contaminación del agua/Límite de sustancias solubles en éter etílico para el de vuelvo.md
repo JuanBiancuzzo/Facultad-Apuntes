@@ -1,8 +1,9 @@
 ---
 dia: 2023-04-25
-capitulo: 6
+capitulo: 7
 tags:
   - seguridad/Contaminación-del-agua
+  - nota
 ---
 ### Definición
 ---

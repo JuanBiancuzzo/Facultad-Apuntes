@@ -5,6 +5,7 @@ aliases:
   - Arquitectura de software
 tags:
   - aninfo/Diseño-de-software
+  - nota
 ---
 ### Definición
 ---

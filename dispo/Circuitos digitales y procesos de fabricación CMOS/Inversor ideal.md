@@ -3,6 +3,7 @@ dia: 2024-02-29
 capitulo: 9
 tags:
   - dispo/Circuitos-digitales-y-procesos-de-fabricación-CMOS
+  - nota
 ---
 ### Definición
 ---

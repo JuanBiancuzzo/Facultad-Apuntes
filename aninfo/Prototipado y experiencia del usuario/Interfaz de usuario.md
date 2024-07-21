@@ -1,10 +1,11 @@
 ---
 dia: 2023-10-16
-capitulo: 6
+capitulo: 9
 aliases:
   - UI
 tags:
   - aninfo/Prototipado-y-experiencia-del-usuario
+  - nota
 ---
 ### Definición
 ---

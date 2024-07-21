@@ -3,6 +3,7 @@ dia: 2023-08-26
 capitulo: 5
 tags:
   - aninfo/Verificación-y-validación
+  - nota
 ---
 ### Definición
 ---

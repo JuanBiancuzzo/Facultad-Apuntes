@@ -5,6 +5,7 @@ aliases:
   - Tabla de routeo
 tags:
   - redes/Capa-de-Red
+  - nota
 ---
 ### Definición
 ---

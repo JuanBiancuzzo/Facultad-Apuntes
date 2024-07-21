@@ -3,6 +3,7 @@ dia: 2024-05-15
 capitulo: 6
 tags:
   - señales/Transformada-discreta-de-Fourier
+  - nota
 ---
 ### Definición
 ---

@@ -3,6 +3,7 @@ dia: 2023-03-14
 capitulo: 2
 tags:
   - numerico/Ecuaciones-no-lineales
+  - nota
 ---
 ### Definición
 ---

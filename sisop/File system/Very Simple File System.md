@@ -5,6 +5,7 @@ aliases:
   - VSFV
 tags:
   - sisop/File-system
+  - nota
 ---
 ### Definición
 ---

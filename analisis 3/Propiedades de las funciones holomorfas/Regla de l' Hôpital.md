@@ -3,6 +3,7 @@ dia: 2022-11-25
 capitulo: 6
 tags:
   - analisis-3/Propiedades-de-las-funciones-holomorfas
+  - nota
 ---
 ### Definición
 ---

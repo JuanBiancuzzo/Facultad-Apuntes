@@ -8,6 +8,7 @@ aliases:
   - Dirección IP
 tags:
   - redes/Capa-de-aplicación
+  - nota
 ---
 ### Definición
 ---

@@ -3,6 +3,7 @@ dia: 2023-11-28
 capitulo: 1
 tags:
   - bdd/General
+  - nota
 ---
 ### Definición
 ---

@@ -3,6 +3,7 @@ dia: 2023-03-15
 capitulo: 1
 tags:
   - taller/Sintaxis
+  - nota
 ---
 ### Definición
 ---

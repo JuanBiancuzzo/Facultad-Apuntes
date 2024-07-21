@@ -3,6 +3,7 @@ dia: 2023-01-23
 capitulo: 6
 tags:
   - intro/Multimetro
+  - nota
 ---
 ### Definición
 ---

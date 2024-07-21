@@ -3,6 +3,7 @@ dia: 2024-02-20
 capitulo: 5
 tags:
   - legal/Derecho-laboral
+  - nota
 ---
 ### Definición
 ---

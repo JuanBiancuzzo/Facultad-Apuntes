@@ -7,6 +7,7 @@ aliases:
   - Distributed Denial of Service
 tags:
   - redes/Capa-de-Transporte
+  - nota
 ---
 ### Definición
 ---

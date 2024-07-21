@@ -6,6 +6,7 @@ aliases:
   - Amplificador Base Común con TBJ
 tags:
   - circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
+  - nota
 ---
 ### Definición
 ---

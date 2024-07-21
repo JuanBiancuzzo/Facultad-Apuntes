@@ -3,6 +3,7 @@ dia: 2023-11-20
 capitulo: 6
 tags:
   - dispo/Transistor-MOSFET
+  - nota
 ---
 ### Definición
 ---

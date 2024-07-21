@@ -5,6 +5,7 @@ aliases:
   - Polo
 tags:
   - analisis-3/Series-de-Laurent
+  - nota
 ---
 ### Definición
 ---

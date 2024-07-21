@@ -6,6 +6,7 @@ aliases:
   - HTTPS
 tags:
   - redes/Capa-de-aplicación
+  - nota
 ---
 ### Definición
 ---

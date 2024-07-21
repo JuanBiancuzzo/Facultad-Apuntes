@@ -3,6 +3,7 @@ dia: 2022-11-25
 capitulo: 8
 tags:
   - analisis-3/Series-de-Laurent
+  - nota
 ---
 ### Definición
 ---

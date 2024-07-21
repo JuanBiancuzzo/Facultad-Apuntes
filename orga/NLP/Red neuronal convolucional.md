@@ -2,7 +2,8 @@
 dia: 2023-08-12
 capitulo: 10
 tags:
-  - orga/NLP
+  - orga/NLP/cap10
+  - nota
 ---
 ### Definición
 ---

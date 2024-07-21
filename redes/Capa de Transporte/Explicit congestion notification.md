@@ -6,6 +6,7 @@ aliases:
   - Control de congestión asistida por la red
 tags:
   - redes/Capa-de-Transporte
+  - nota
 ---
 ### Definición
 ---

@@ -5,6 +5,7 @@ aliases:
   - Interfaz de un router
 tags:
   - redes/Capa-de-Red
+  - nota
 ---
 ### Definición
 ---

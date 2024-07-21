@@ -9,6 +9,7 @@ aliases:
   - Transformación Inversa Discreta de Fourier
 tags:
   - señales/Transformada-discreta-de-Fourier
+  - nota
 ---
 ### Definición
 ---

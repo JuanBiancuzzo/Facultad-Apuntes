@@ -3,6 +3,7 @@ dia: 2024-02-13
 capitulo: 4
 tags:
   - legal/Licitaciones
+  - nota
 ---
 ### Definición
 ---

@@ -5,6 +5,7 @@ aliases:
   - Política de planificación RR
 tags:
   - sisop/Scheduling
+  - nota
 ---
 ### Definición
 ---

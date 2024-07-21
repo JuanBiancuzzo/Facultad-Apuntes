@@ -3,6 +3,7 @@ dia: 2023-03-29
 capitulo: 5
 tags:
   - sisop/Concurrencia
+  - nota
 ---
 ### Definición
 ---

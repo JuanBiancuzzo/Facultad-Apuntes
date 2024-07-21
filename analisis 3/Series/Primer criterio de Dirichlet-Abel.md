@@ -3,6 +3,7 @@ dia: 2022-09-19
 capitulo: 3
 tags:
   - analisis-3/Series
+  - nota
 ---
 Dados las [[Serie|series]] $\alpha : \mathbb{N} \to \mathbb{R} : \bigg(\sum_{k = 0}^n \alpha_k \bigg)_{n = 1}^\infty$ y la serie $\beta : \mathbb{N} \to \mathbb{R} : \bigg(\sum_{k = 0}^n \beta_k \bigg)_{n = 1}^\infty$
 

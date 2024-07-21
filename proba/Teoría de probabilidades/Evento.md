@@ -3,6 +3,7 @@ dia: 2023-04-03
 capitulo: 1
 tags:
   - proba/Teoría-de-probabilidades
+  - nota
 ---
 ### Definición
 ---

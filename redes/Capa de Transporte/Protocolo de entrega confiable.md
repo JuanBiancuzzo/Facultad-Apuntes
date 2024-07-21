@@ -9,6 +9,7 @@ aliases:
   - ACK
 tags:
   - redes/Capa-de-Transporte
+  - nota
 ---
 ### Definición
 ---

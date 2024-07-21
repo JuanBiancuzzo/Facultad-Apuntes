@@ -5,6 +5,7 @@ aliases:
   - dBA
 tags:
   - seguridad/Protección-auditiva
+  - nota
 ---
 ### Definición
 ---

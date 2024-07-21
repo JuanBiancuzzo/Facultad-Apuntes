@@ -5,6 +5,7 @@ aliases:
   - Amplificador Source Común con un MOSFET
 tags:
   - dispo/Amplificador-emisor-y-source-común
+  - nota
 ---
 ### Definición
 ---

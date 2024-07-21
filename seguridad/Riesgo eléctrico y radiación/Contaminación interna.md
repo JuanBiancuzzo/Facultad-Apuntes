@@ -3,6 +3,7 @@ dia: 2023-04-25
 capitulo: 6
 tags:
   - seguridad/Riesgo-eléctrico-y-radiación
+  - nota
 ---
 ### Definición
 ---

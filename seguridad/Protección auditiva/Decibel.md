@@ -5,6 +5,7 @@ aliases:
   - dB
 tags:
   - seguridad/Protección-auditiva
+  - nota
 ---
 ### Definición
 ---

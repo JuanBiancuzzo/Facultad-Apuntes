@@ -3,6 +3,7 @@ dia: 2024-01-08
 capitulo: 3
 tags:
   - legal/Contratos
+  - nota
 ---
 ### Definición
 ---

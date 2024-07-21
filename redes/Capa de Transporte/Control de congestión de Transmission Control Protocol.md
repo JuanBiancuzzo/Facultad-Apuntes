@@ -5,6 +5,7 @@ aliases:
   - Control de congestión de TCP
 tags:
   - redes/Capa-de-Transporte
+  - nota
 ---
 ### Definición
 ---

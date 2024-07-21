@@ -3,6 +3,7 @@ dia: 2023-04-06
 capitulo: 1
 tags:
   - estructura/Sistemas-numéricos
+  - nota
 ---
 ### Definición
 ---

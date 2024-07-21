@@ -5,6 +5,7 @@ aliases:
   - Teorema de Miller de corrientes
 tags:
   - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
+  - nota
 ---
 ### Definición
 ---

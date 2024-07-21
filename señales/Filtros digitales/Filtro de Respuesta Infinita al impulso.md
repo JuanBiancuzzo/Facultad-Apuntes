@@ -7,6 +7,7 @@ aliases:
   - Filtro de Infinite impulse response
 tags:
   - señales/Filtros-digitales
+  - nota
 ---
 ### Definición
 ---

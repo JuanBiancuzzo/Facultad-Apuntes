@@ -5,6 +5,7 @@ aliases:
   - SMTP
 tags:
   - redes/Capa-de-aplicación
+  - nota
 ---
 ### Definición
 ---

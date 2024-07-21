@@ -5,6 +5,7 @@ aliases:
   - Sistema LTI estable
 tags:
   - señales/Sistemas-LTI
+  - nota
 ---
 ### Definición
 ---

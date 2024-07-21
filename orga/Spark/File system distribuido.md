@@ -3,6 +3,7 @@ dia: 2023-04-27
 capitulo: 6
 tags:
   - orga/Spark
+  - nota
 ---
 ### Definición
 ---

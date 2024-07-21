@@ -3,6 +3,7 @@ dia: 2024-05-12
 capitulo: 1
 tags:
   - bdd/General
+  - nota
 ---
 ### Definición
 ---

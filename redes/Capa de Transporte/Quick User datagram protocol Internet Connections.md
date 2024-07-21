@@ -6,6 +6,7 @@ aliases:
   - QUIC
 tags:
   - redes/Capa-de-Transporte
+  - nota
 ---
 ### Definición
 ---

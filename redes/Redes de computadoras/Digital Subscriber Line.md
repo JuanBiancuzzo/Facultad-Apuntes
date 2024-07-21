@@ -5,6 +5,7 @@ aliases:
   - DSL
 tags:
   - redes/Redes-de-computadoras
+  - nota
 ---
 ### Definición
 ---

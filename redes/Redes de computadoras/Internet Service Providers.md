@@ -5,6 +5,7 @@ aliases:
   - ISPs
 tags:
   - redes/Redes-de-computadoras
+  - nota
 ---
 ### Definición
 ---

@@ -3,6 +3,7 @@ dia: 2024-07-05
 capitulo: 8
 tags:
   - señales/Filtros-digitales
+  - nota
 ---
 ### Definición
 ---

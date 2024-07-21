@@ -5,6 +5,7 @@ aliases:
   - Código
 tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
+  - nota
 ---
 ### Definición
 ---

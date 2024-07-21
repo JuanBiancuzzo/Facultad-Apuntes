@@ -6,6 +6,7 @@ aliases:
   - RR
 tags:
   - redes/Capa-de-aplicación
+  - nota
 ---
 ### Definición
 ---
