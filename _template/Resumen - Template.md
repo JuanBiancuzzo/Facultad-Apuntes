@@ -2,6 +2,10 @@
     const dv = app.plugins.plugins.dataview.api;
 
 	let [titulo, capitulo] = tp.file.title.split("-").map(texto => texto.trim());   
+	
+	console.log(tp.file.title);
+	console.log(titulo);
+	
 	let tareaRename = tp.file.rename(titulo);
 	let multiples = titulo.includes("Parte");
 	
