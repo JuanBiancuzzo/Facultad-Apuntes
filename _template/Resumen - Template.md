@@ -1,13 +1,10 @@
 <%*
-    const dv = app.plugins.plugins.dataview.api;
+	let [titulo, capitulo] = tp.file.title.split("-");	
+	await tp.file.rename(titulo);
 
-	let [titulo, capitulo] = tp.file.title.split("-").map(texto => texto.trim());   
-	
-	console.log(tp.file.title);
-	console.log(titulo);
-	
-	let tareaRename = tp.file.rename(titulo);
 	let multiples = titulo.includes("Parte");
+	capitulo = parseInt(capitulo, 10);
+	console.log(titulo);
 	
 	let tag = tp.file.folder(true).replaceAll(" ", "-");
 	if (multiples) tag += `/cap${capitulo}`;
@@ -17,12 +14,11 @@
     tR += `tags: \n - ${tag}\n - resumen\n`;
     if (multiples) tR += "multiples: true\n";
     tR += "---\n";
-
-	await tareaRename;
 _%>
 ### Índice
 ---
 <%*
+	const dv = app.plugins.plugins.dataview.api;
 	let materias = dv.pages(`#${tag} and #nota`);
 	for (let materia of materias) {
 		tR += ` * [[${materia.file.path}|${materia.file.name}]]\n`;
