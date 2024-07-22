@@ -4,7 +4,6 @@
 
 	let multiples = titulo.includes("Parte");
 	capitulo = parseInt(capitulo, 10);
-	console.log(titulo);
 	
 	let tag = tp.file.folder(true).replaceAll(" ", "-");
 	if (multiples) tag += `/cap${capitulo}`;

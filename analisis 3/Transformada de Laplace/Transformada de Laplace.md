@@ -4,6 +4,7 @@ capitulo: 16
 tags:
   - analisis-3/Transformada-de-Laplace
   - nota
+  - señales/Transformadas-de-Laplace-y-Z
 ---
 ### Definición
 ---
