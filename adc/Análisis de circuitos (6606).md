@@ -10,7 +10,7 @@ tags:
 ---
 ##### Circuitos en regimen de corriente continua 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[adc/Circuitos en regimen de corriente continua/Resumen.md#Resumen]]
 
 * [[adc/Circuitos en regimen de corriente continua/Rama.md|Rama]]
@@ -33,7 +33,7 @@ tags:
 
 ##### Circuitos en regimen transitorio 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[adc/Circuitos en regimen transitorio/Resumen.md#Resumen]]
 
 * [[adc/Circuitos en regimen transitorio/Inductores en serie.md|Inductores en serie]]
@@ -46,7 +46,7 @@ tags:
 
 ##### Circuitos en regimen senoidal permanente 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[adc/Circuitos en regimen senoidal permanente/Resumen.md#Resumen]]
 
 * [[adc/Circuitos en regimen senoidal permanente/Potencia instantánea.md|Potencia instantánea]]
@@ -58,7 +58,7 @@ tags:
 
 ##### Circuitos acoplados magnéticamente 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[adc/Circuitos acoplados magnéticamente/Resumen.md#Resumen]]
 
 * [[adc/Circuitos acoplados magnéticamente/Transformación de inductores.md|Transformación de inductores]]
@@ -70,7 +70,7 @@ tags:
 
 ##### Respuesta en frecuencia 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[adc/Respuesta en frecuencia/Resumen.md#Resumen]]
 
 * [[adc/Respuesta en frecuencia/Filtro.md|Filtro]]
@@ -82,7 +82,7 @@ tags:
 
 ##### Cuadripolos 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[adc/Cuadripolos/Resumen.md#Resumen]]
 
 * [[adc/Cuadripolos/Parámetros híbridos de un cuadripolo.md|Parámetros híbridos de un cuadripolo]]

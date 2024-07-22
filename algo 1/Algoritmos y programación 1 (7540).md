@@ -10,7 +10,7 @@ tags:
 ---
 ##### Introducción a la programación 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[algo 1/Introducción a la programación/Resumen.md#Resumen]]
 
 * [[algo 1/Introducción a la programación/Variable.md|Variable]]

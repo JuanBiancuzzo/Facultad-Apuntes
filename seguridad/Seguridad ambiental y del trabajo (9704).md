@@ -10,7 +10,7 @@ tags:
 ---
 ##### Prevención de accidentes y enfermedades profesionales 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[seguridad/Prevención de accidentes y enfermedades profesionales/Resumen.md#Resumen]]
 
 * [[seguridad/Prevención de accidentes y enfermedades profesionales/Accidente de trabajo.md|Accidente de trabajo]]
@@ -37,7 +37,7 @@ tags:
 
 ##### Contaminación del ambiente laboral 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[seguridad/Contaminación del ambiente laboral/Resumen.md#Resumen]]
 
 * [[seguridad/Contaminación del ambiente laboral/Absorción dermica de nanomateriales.md|Absorción dermica de nanomateriales]]
@@ -69,7 +69,7 @@ tags:
 
 ##### Prevención de incendios 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[seguridad/Prevención de incendios/Resumen.md#Resumen]]
 
 * [[seguridad/Prevención de incendios/Agua nebulizada.md|Agua nebulizada]]
@@ -112,7 +112,7 @@ tags:
 
 ##### Protección auditiva 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[seguridad/Protección auditiva/Resumen.md#Resumen]]
 
 * [[seguridad/Protección auditiva/Absorción acústica.md|Absorción acústica]]
@@ -135,7 +135,7 @@ tags:
 
 ##### Estrés termico 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[seguridad/Estrés termico/Resumen.md#Resumen]]
 
 * [[seguridad/Estrés termico/Análisis detallado del estrés termico.md|Análisis detallado del estrés termico]]
@@ -159,7 +159,7 @@ tags:
 
 ##### Riesgo eléctrico y radiación 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[seguridad/Riesgo eléctrico y radiación/Resumen.md#Resumen]]
 
 * [[seguridad/Riesgo eléctrico y radiación/Blindaje como medida de protección contra radiación.md|Blindaje como medida de protección contra radiación]]
@@ -199,7 +199,7 @@ tags:
 
 ##### Contaminación del agua 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[seguridad/Contaminación del agua/Resumen.md#Resumen]]
 
 * [[seguridad/Contaminación del agua/Bacteria.md|Bacteria]]
@@ -249,7 +249,7 @@ tags:
 
 ##### Residuos 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[seguridad/Residuos/Resumen.md#Resumen]]
 
 * [[seguridad/Residuos/Almacenamiento en orígen.md|Almacenamiento en orígen]]
@@ -285,7 +285,7 @@ tags:
 
 ##### Contaminación del aire 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[seguridad/Contaminación del aire/Resumen.md#Resumen]]
 
 * [[seguridad/Contaminación del aire/Atmósfera.md|Atmósfera]]
@@ -306,7 +306,7 @@ tags:
 
 ##### Ergonomia 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[seguridad/Ergonomia/Resumen.md#Resumen]]
 
 * [[seguridad/Ergonomia/Bipedestación.md|Bipedestación]]

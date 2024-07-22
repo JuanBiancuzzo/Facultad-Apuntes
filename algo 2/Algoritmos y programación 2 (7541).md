@@ -9,7 +9,7 @@ tags: materia
 ---
 ##### General 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[algo 2/General/Resumen.md#Resumen]]
 
 * [[algo 2/General/Complejidad computacional.md|Complejidad computacional]]

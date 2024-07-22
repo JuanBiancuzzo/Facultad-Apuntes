@@ -9,7 +9,7 @@ tags: materia
 ---
 ##### Álgebra de conjuntos 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[discreta/Álgebra de conjuntos/Resumen.md#Resumen]]
 
 * [[discreta/Álgebra de conjuntos/Intersección de conjuntos.md|Intersección de conjuntos]]
@@ -19,7 +19,7 @@ tags: materia
 
 ##### Álgebra de Boole 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[discreta/Álgebra de Boole/Resumen.md#Resumen]]
 
 * [[discreta/Álgebra de Boole/Álgebra de Boole.md|Álgebra de Boole]]

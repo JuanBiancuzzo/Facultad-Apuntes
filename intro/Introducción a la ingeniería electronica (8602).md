@@ -10,7 +10,7 @@ tags:
 ---
 ##### Circuitos con resistencias 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[intro/Circuitos con resistencias/Resumen.md#Resumen]]
 
 * [[intro/Circuitos con resistencias/Corriente eléctrica.md|Corriente eléctrica]]
@@ -36,7 +36,7 @@ tags:
 
 ##### Reducción de circuitos 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[intro/Reducción de circuitos/Resumen.md#Resumen]]
 
 * [[intro/Reducción de circuitos/Circuito lineal.md|Circuito lineal]]
@@ -47,7 +47,7 @@ tags:
 
 ##### Circuitos con capacitores 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[intro/Circuitos con capacitores/Resumen.md#Resumen]]
 
 * [[intro/Circuitos con capacitores/Capacitancia.md|Capacitancia]]
@@ -61,7 +61,7 @@ tags:
 
 ##### Respuesta en frecuencia 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[intro/Respuesta en frecuencia/Resumen.md#Resumen]]
 
 * [[intro/Respuesta en frecuencia/Filtro RC.md|Filtro RC]]
@@ -70,7 +70,7 @@ tags:
 
 ##### Potencia 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[intro/Potencia/Resumen.md#Resumen]]
 
 * [[intro/Potencia/Corriente eficaz.md|Corriente eficaz]]
@@ -86,7 +86,7 @@ tags:
 
 ##### Multimetro 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[intro/Multimetro/Resumen.md#Resumen]]
 
 * [[intro/Multimetro/Factor de forma.md|Factor de forma]]

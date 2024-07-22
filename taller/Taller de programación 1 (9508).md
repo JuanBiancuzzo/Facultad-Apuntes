@@ -10,7 +10,7 @@ tags:
 ---
 ##### Sintaxis 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[taller/Sintaxis/Resumen.md#Resumen]]
 
 * [[taller/Sintaxis/Asignación condicional.md|Asignación condicional]]
@@ -38,7 +38,7 @@ tags:
 
 ##### Organizacion 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[taller/Organizacion/Resumen.md#Resumen]]
 
 * [[taller/Organizacion/Crate.md|Crate]]
@@ -47,7 +47,7 @@ tags:
 
 ##### Ownership 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[taller/Ownership/Resumen.md#Resumen]]
 
 * [[taller/Ownership/Box.md|Box]]
@@ -60,7 +60,7 @@ tags:
 
 ##### Concurrencia 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[taller/Concurrencia/Resumen.md#Resumen]]
 
 * [[taller/Concurrencia/Estados de un proceso.md|Estados de un proceso]]

@@ -15,7 +15,7 @@ async function modificarMateria(tp, dv, carpeta) {
     for (let resumen of resumenes) {
         let nombre = resumen.file.folder.split("/").pop();
         nuevoContenido += `##### ${nombre} \n---\n`;
-        nuevoContenido += `> [!summery]- Resumen\n> ![[${resumen.file.path}#Resumen]]\n\n`;
+        nuevoContenido += `> [!summary]- Resumen\n> ![[${resumen.file.path}#Resumen]]\n\n`;
 
         let tag = resumen.file.folder.replaceAll(" ", "-");
         if (resumen.multiples) tag += `/cap${resumen.capitulo}`;        

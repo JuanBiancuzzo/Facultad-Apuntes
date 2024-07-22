@@ -10,7 +10,7 @@ tags:
 ---
 ##### Kernel 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[sisop/Kernel/Resumen.md#Resumen]]
 
 * [[sisop/Kernel/Excepción del procesador.md|Excepción del procesador]]
@@ -32,7 +32,7 @@ tags:
 
 ##### La abstracción de proceso 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[sisop/La abstracción de proceso/Resumen.md#Resumen]]
 
 * [[sisop/La abstracción de proceso/Arquitectura de Von Newman.md|Arquitectura de Von Newman]]
@@ -59,7 +59,7 @@ tags:
 
 ##### Virtualización de memoria 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[sisop/Virtualización de memoria/Resumen.md#Resumen]]
 
 * [[sisop/Virtualización de memoria/Dirección de memoria virtual.md|Dirección de memoria virtual]]
@@ -82,7 +82,7 @@ tags:
 
 ##### Scheduling 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[sisop/Scheduling/Resumen.md#Resumen]]
 
 * [[sisop/Scheduling/Afinidad de cache.md|Afinidad de cache]]
@@ -113,7 +113,7 @@ tags:
 
 ##### Concurrencia 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[sisop/Concurrencia/Resumen.md#Resumen]]
 
 * [[sisop/Concurrencia/Concurrencia.md|Concurrencia]]
@@ -131,7 +131,7 @@ tags:
 
 ##### File system 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[sisop/File system/Resumen.md#Resumen]]
 
 * [[sisop/File system/Access system call.md|Access system call]]

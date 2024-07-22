@@ -10,7 +10,7 @@ tags:
 ---
 ##### Sistemas numéricos 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[estructura/Sistemas numéricos/Resumen.md#Resumen]]
 
 * [[estructura/Sistemas numéricos/Base numerica.md|Base numerica]]
@@ -37,7 +37,7 @@ tags:
 
 ##### Punto flotante 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[estructura/Punto flotante/Resumen.md#Resumen]]
 
 * [[estructura/Punto flotante/Punto flotante.md|Punto flotante]]
@@ -46,7 +46,7 @@ tags:
 
 ##### Algebra de boole 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[estructura/Algebra de boole/Resumen.md#Resumen]]
 
 * [[estructura/Algebra de boole/Circuito combinacional.md|Circuito combinacional]]
@@ -60,7 +60,7 @@ tags:
 
 ##### Diseño combinacional 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[estructura/Diseño combinacional/Resumen.md#Resumen]]
 
 * [[estructura/Diseño combinacional/Algoritmo de Quine-McCluskey.md|Algoritmo de Quine-McCluskey]]
@@ -74,7 +74,7 @@ tags:
 
 ##### Flip-Flops 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[estructura/Flip-Flops/Resumen.md#Resumen]]
 
 * [[estructura/Flip-Flops/Circuito asincrónico.md|Circuito asincrónico]]
@@ -91,7 +91,7 @@ tags:
 
 ##### Registros y contadores 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[estructura/Registros y contadores/Resumen.md#Resumen]]
 
 * [[estructura/Registros y contadores/Contador asincrónico.md|Contador asincrónico]]

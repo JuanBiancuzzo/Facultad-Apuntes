@@ -12,8 +12,6 @@
 		.updateCachedStatus()) // consigo todos los archivos modificados
 		.all
 		.map(archivo => dv.page(archivo.path)); // consigo su representación en dv
-
-	archivosModificar = dv.array(dv.pages("#nota"));
 	
 	let tagsModificados = archivosModificar
 		.filter(archivo => archivo && tp.user.whiteList().archivoFacultad(archivo)) // filtro para obtener los archivos únicamente de la facu
@@ -74,7 +72,6 @@
 		.then((_) => mostrarMensaje("Materias regenerados"));	
 
 	return;
-	await app.vault.trash(tArchivo, true);
 
 	function mostrarMensaje(mensaje) {
 		console.log(mensaje);

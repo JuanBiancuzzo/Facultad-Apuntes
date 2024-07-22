@@ -10,7 +10,7 @@ tags:
 ---
 ##### Ingeniería de software 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[aninfo/Ingeniería de software/Resumen.md#Resumen]]
 
 * [[aninfo/Ingeniería de software/Agile.md|Agile]]
@@ -54,7 +54,7 @@ tags:
 
 ##### Ingeniería de requisitos 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[aninfo/Ingeniería de requisitos/Resumen.md#Resumen]]
 
 * [[aninfo/Ingeniería de requisitos/Desarrollo de requisitos.md|Desarrollo de requisitos]]
@@ -68,7 +68,7 @@ tags:
 
 ##### Descubrimiento de requisitos 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[aninfo/Descubrimiento de requisitos/Resumen.md#Resumen]]
 
 * [[aninfo/Descubrimiento de requisitos/Análisis de causa raíz.md|Análisis de causa raíz]]
@@ -89,7 +89,7 @@ tags:
 
 ##### Analizar y especificar requisitos 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[aninfo/Analizar y especificar requisitos/Resumen.md#Resumen]]
 
 * [[aninfo/Analizar y especificar requisitos/Actor.md|Actor]]
@@ -126,7 +126,7 @@ tags:
 
 ##### Verificación y validación 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[aninfo/Verificación y validación/Resumen.md#Resumen]]
 
 * [[aninfo/Verificación y validación/Calidad.md|Calidad]]
@@ -144,7 +144,7 @@ tags:
 
 ##### Requisitos en contexto 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[aninfo/Requisitos en contexto/Resumen.md#Resumen]]
 
 * [[aninfo/Requisitos en contexto/Análisis de contexto.md|Análisis de contexto]]
@@ -153,7 +153,7 @@ tags:
 
 ##### Diseño de software 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[aninfo/Diseño de software/Resumen.md#Resumen]]
 
 * [[aninfo/Diseño de software/4 vistas + 1.md|4 vistas + 1]]
@@ -170,7 +170,7 @@ tags:
 
 ##### Prototipado y experiencia del usuario 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[aninfo/Prototipado y experiencia del usuario/Resumen.md#Resumen]]
 
 * [[aninfo/Prototipado y experiencia del usuario/Experiencia del usuario.md|Experiencia del usuario]]
@@ -183,14 +183,14 @@ tags:
 
 ##### Diseño de datos 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[aninfo/Diseño de datos/Resumen.md#Resumen]]
 
 * [[aninfo/Diseño de datos/Dato.md|Dato]]
 
 ##### Desarrollo de software y modelos de proceso 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[aninfo/Desarrollo de software y modelos de proceso/Resumen.md#Resumen]]
 
 * [[aninfo/Desarrollo de software y modelos de proceso/Desarrollo de productos.md|Desarrollo de productos]]
@@ -201,7 +201,7 @@ tags:
 
 ##### Peopleware 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[aninfo/Peopleware/Resumen.md#Resumen]]
 
 * [[aninfo/Peopleware/Facilidad cognitiva.md|Facilidad cognitiva]]

@@ -10,7 +10,7 @@ tags:
 ---
 ##### Teoría de probabilidades 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[proba/Teoría de probabilidades/Resumen.md#Resumen]]
 
 * [[proba/Teoría de probabilidades/Algebra de eventos.md|Algebra de eventos]]
@@ -39,7 +39,7 @@ tags:
 
 ##### Variables y vectores aleatorios 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[proba/Variables y vectores aleatorios/Resumen.md#Resumen]]
 
 * [[proba/Variables y vectores aleatorios/Cuantil.md|Cuantil]]
@@ -76,7 +76,7 @@ tags:
 
 ##### Representación de variables aleatorias 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[proba/Representación de variables aleatorias/Resumen.md#Resumen]]
 
 * [[proba/Representación de variables aleatorias/Coeficiente de correlación.md|Coeficiente de correlación]]
@@ -96,7 +96,7 @@ tags:
 
 ##### Función de variable aleatoria 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[proba/Función de variable aleatoria/Resumen.md#Resumen]]
 
 * [[proba/Función de variable aleatoria/Método del Jacobiano generalizado.md|Método del Jacobiano generalizado]]
@@ -105,7 +105,7 @@ tags:
 
 ##### Variables aleatorias condicionadas 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[proba/Variables aleatorias condicionadas/Resumen.md#Resumen]]
 
 * [[proba/Variables aleatorias condicionadas/Bayes para mezclas.md|Bayes para mezclas]]
@@ -117,7 +117,7 @@ tags:
 
 ##### Esperanza condicional 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[proba/Esperanza condicional/Resumen.md#Resumen]]
 
 * [[proba/Esperanza condicional/Esperanza condicional.md|Esperanza condicional]]
@@ -127,14 +127,14 @@ tags:
 
 ##### Proceso de Bernoulli 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[proba/Proceso de Bernoulli/Resumen.md#Resumen]]
 
 * [[proba/Proceso de Bernoulli/Proceso de Bernoulli.md|Proceso de Bernoulli]]
 
 ##### Proceso de Poisson 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[proba/Proceso de Poisson/Resumen.md#Resumen]]
 
 * [[proba/Proceso de Poisson/Proceso puntual de Poisson.md|Proceso puntual de Poisson]]
@@ -142,7 +142,7 @@ tags:
 
 ##### Teorema central del límite 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[proba/Teorema central del límite/Resumen.md#Resumen]]
 
 * [[proba/Teorema central del límite/Aproximación por la densidad normal.md|Aproximación por la densidad normal]]
@@ -152,7 +152,7 @@ tags:
 
 ##### Inferencia estadística 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[proba/Inferencia estadística/Resumen.md#Resumen]]
 
 * [[proba/Inferencia estadística/Bondad de los estimadores.md|Bondad de los estimadores]]
@@ -183,7 +183,7 @@ tags:
 
 ##### Test de hipótesis 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[proba/Test de hipótesis/Resumen.md#Resumen]]
 
 * [[proba/Test de hipótesis/Ensayo de hipótesis.md|Ensayo de hipótesis]]
@@ -204,7 +204,7 @@ tags:
 
 ##### Intervalos de confianza 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[proba/Intervalos de confianza/Resumen.md#Resumen]]
 
 * [[proba/Intervalos de confianza/Intervalo de confianza de nivel 1-alfa.md|Intervalo de confianza de nivel 1-alfa]]
@@ -214,7 +214,7 @@ tags:
 
 ##### Estimación Bayesiana 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[proba/Estimación Bayesiana/Resumen.md#Resumen]]
 
 * [[proba/Estimación Bayesiana/Estimación Bayesiana.md|Estimación Bayesiana]]

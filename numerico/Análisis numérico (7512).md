@@ -10,7 +10,7 @@ tags:
 ---
 ##### Errores 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[numerico/Errores/Resumen.md#Resumen]]
 
 * [[numerico/Errores/Error absoluto.md|Error absoluto]]
@@ -22,7 +22,7 @@ tags:
 
 ##### Ecuaciones no lineales 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[numerico/Ecuaciones no lineales/Resumen.md#Resumen]]
 
 * [[numerico/Ecuaciones no lineales/Bisección.md|Bisección]]
@@ -31,42 +31,42 @@ tags:
 
 ##### Ajuste de funciones 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[numerico/Ajuste de funciones/Resumen.md#Resumen]]
 
 * [[numerico/Ajuste de funciones/temp.md|temp]]
 
 ##### Sistemas de ecuaciones lineales 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[numerico/Sistemas de ecuaciones lineales/Resumen.md#Resumen]]
 
 * [[numerico/Sistemas de ecuaciones lineales/temp.md|temp]]
 
 ##### Integración y Diferenciación Numérica 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[numerico/Integración y Diferenciación Numérica/Resumen.md#Resumen]]
 
 * [[numerico/Integración y Diferenciación Numérica/temp.md|temp]]
 
 ##### Optimización 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[numerico/Optimización/Resumen.md#Resumen]]
 
 * [[numerico/Optimización/temp.md|temp]]
 
 ##### Ecuaciones diferenciales ordinarias a valores iniciales 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[numerico/Ecuaciones diferenciales ordinarias a valores iniciales/Resumen.md#Resumen]]
 
 * [[numerico/Ecuaciones diferenciales ordinarias a valores iniciales/temp.md|temp]]
 
 ##### Ecuaciones diferenciales en derivadas parciales 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[numerico/Ecuaciones diferenciales en derivadas parciales/Resumen.md#Resumen]]
 
 * [[numerico/Ecuaciones diferenciales en derivadas parciales/temp.md|temp]]

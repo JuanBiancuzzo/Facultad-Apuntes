@@ -9,7 +9,7 @@ tags: materia
 ---
 ##### General 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[bdd/General/Resumen.md#Resumen]]
 
 * [[bdd/General/Administrador de base de datos.md|Administrador de base de datos]]
@@ -31,7 +31,7 @@ tags: materia
 
 ##### SQL 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[bdd/SQL/Resumen.md#Resumen]]
 
 * [[bdd/SQL/Carácter wildcard de SQL.md|Carácter wildcard de SQL]]

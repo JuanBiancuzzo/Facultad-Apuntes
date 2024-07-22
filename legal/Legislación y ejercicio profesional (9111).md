@@ -10,7 +10,7 @@ tags:
 ---
 ##### Código Civil y Comercial de la Nación 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[legal/Código Civil y Comercial de la Nación/Resumen.md#Resumen]]
 
 * [[legal/Código Civil y Comercial de la Nación/Acción humana.md|Acción humana]]
@@ -53,7 +53,7 @@ tags:
 
 ##### Obligaciones 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[legal/Obligaciones/Resumen.md#Resumen]]
 
 * [[legal/Obligaciones/Acción procesal.md|Acción procesal]]
@@ -112,7 +112,7 @@ tags:
 
 ##### Contratos 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[legal/Contratos/Resumen.md#Resumen]]
 
 * [[legal/Contratos/Causa de un contrato.md|Causa de un contrato]]
@@ -158,7 +158,7 @@ tags:
 
 ##### Licitaciones 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[legal/Licitaciones/Resumen.md#Resumen]]
 
 * [[legal/Licitaciones/Concurso privado.md|Concurso privado]]
@@ -172,7 +172,7 @@ tags:
 
 ##### Derecho laboral 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[legal/Derecho laboral/Resumen.md#Resumen]]
 
 * [[legal/Derecho laboral/Fuentes del derecho laboral.md|Fuentes del derecho laboral]]
@@ -182,7 +182,7 @@ tags:
 
 ##### Derechos humanos 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[legal/Derechos humanos/Resumen.md#Resumen]]
 
 * [[legal/Derechos humanos/Agotamiento de los recursos internos.md|Agotamiento de los recursos internos]]
@@ -200,14 +200,14 @@ tags:
 
 ##### Derecho real 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[legal/Derecho real/Resumen.md#Resumen]]
 
 * [[legal/Derecho real/Derecho real.md|Derecho real]]
 
 ##### Derechos comerciales y sociales 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[legal/Derechos comerciales y sociales/Resumen.md#Resumen]]
 
 * [[legal/Derechos comerciales y sociales/Acto constitutivo de la sociedad.md|Acto constitutivo de la sociedad]]
@@ -215,7 +215,7 @@ tags:
 
 ##### Ejercicio profesional 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[legal/Ejercicio profesional/Resumen.md#Resumen]]
 
 * [[legal/Ejercicio profesional/temp.md|temp]]

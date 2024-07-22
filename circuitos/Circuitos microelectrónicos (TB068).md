@@ -9,7 +9,7 @@ tags: materia
 ---
 ##### Circuitos con diodos 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[circuitos/Circuitos con diodos/Resumen.md#Resumen]]
 
 * [[circuitos/Circuitos con diodos/Curva característica de un componente.md|Curva característica de un componente]]
@@ -24,7 +24,7 @@ tags: materia
 
 ##### Dispositivos de control de señal y en conmutación 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[circuitos/Dispositivos de control de señal y en conmutación/Resumen.md#Resumen]]
 
 * [[circuitos/Dispositivos de control de señal y en conmutación/Análisis de potencias.md|Análisis de potencias]]
@@ -39,7 +39,7 @@ tags: materia
 
 ##### Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Resumen.md#Resumen]]
 
 * [[circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Amplificador Base Común con un transistor bipolar de juntura.md|Amplificador Base Común con un transistor bipolar de juntura]]
@@ -60,7 +60,7 @@ tags: materia
 
 ##### Amplificadores con varios dispositivos activos de bajo nivel de potencia 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[circuitos/Amplificadores con varios dispositivos activos de bajo nivel de potencia/Resumen.md#Resumen]]
 
 * [[circuitos/Amplificadores con varios dispositivos activos de bajo nivel de potencia/Cuasi-Darlington.md|Cuasi-Darlington]]
@@ -69,21 +69,21 @@ tags: materia
 
 ##### Amplificadores diferenciales 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[circuitos/Amplificadores diferenciales/Resumen.md#Resumen]]
 
 * [[circuitos/Amplificadores diferenciales/temp.md|temp]]
 
 ##### Fuentes de corriente y circuitos con cargas activas 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[circuitos/Fuentes de corriente y circuitos con cargas activas/Resumen.md#Resumen]]
 
 * [[circuitos/Fuentes de corriente y circuitos con cargas activas/temp.md|temp]]
 
 ##### Circuitos integrados analógicos 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[circuitos/Circuitos integrados analógicos/Resumen.md#Resumen]]
 
 * [[circuitos/Circuitos integrados analógicos/temp.md|temp]]

@@ -10,7 +10,7 @@ tags:
 ---
 ##### Física de semiconductores 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[dispo/Física de semiconductores/Resumen.md#Resumen]]
 
 * [[dispo/Física de semiconductores/Aproximación de cuasi-neutralidad.md|Aproximación de cuasi-neutralidad]]
@@ -47,7 +47,7 @@ tags:
 
 ##### Juntura PN 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[dispo/Juntura PN/Resumen.md#Resumen]]
 
 * [[dispo/Juntura PN/Aproximación de vaciamiento.md|Aproximación de vaciamiento]]
@@ -61,7 +61,7 @@ tags:
 
 ##### Diodo de Juntura PN 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[dispo/Diodo de Juntura PN/Resumen.md#Resumen]]
 
 * [[dispo/Diodo de Juntura PN/Aproximación de diodo corto.md|Aproximación de diodo corto]]
@@ -79,7 +79,7 @@ tags:
 
 ##### Transistor bipolar de juntura 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[dispo/Transistor bipolar de juntura/Resumen.md#Resumen]]
 
 * [[dispo/Transistor bipolar de juntura/Capacidad de entrada.md|Capacidad de entrada]]
@@ -103,7 +103,7 @@ tags:
 
 ##### Juntura MOS 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[dispo/Juntura MOS/Resumen.md#Resumen]]
 
 * [[dispo/Juntura MOS/Acumulación de la estructura Metal-Óxido-Semiconductor (MOS).md|Acumulación de la estructura Metal-Óxido-Semiconductor (MOS)]]
@@ -119,7 +119,7 @@ tags:
 
 ##### Transistor MOSFET 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[dispo/Transistor MOSFET/Resumen.md#Resumen]]
 
 * [[dispo/Transistor MOSFET/Capacidad de Gate contra canal de inversión.md|Capacidad de Gate contra canal de inversión]]
@@ -136,7 +136,7 @@ tags:
 
 ##### Amplificador emisor y source común 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[dispo/Amplificador emisor y source común/Resumen.md#Resumen]]
 
 * [[dispo/Amplificador emisor y source común/Amplificador Source Común con un transistor de efecto de campo metal-óxido-semiconductor.md|Amplificador Source Común con un transistor de efecto de campo metal-óxido-semiconductor]]
@@ -154,7 +154,7 @@ tags:
 
 ##### Dispositivos de potencia 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[dispo/Dispositivos de potencia/Resumen.md#Resumen]]
 
 * [[dispo/Dispositivos de potencia/Diodo de potencia.md|Diodo de potencia]]
@@ -168,7 +168,7 @@ tags:
 
 ##### Circuitos digitales y procesos de fabricación CMOS 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[dispo/Circuitos digitales y procesos de fabricación CMOS/Resumen.md#Resumen]]
 
 * [[dispo/Circuitos digitales y procesos de fabricación CMOS/Compuertas CMOS.md|Compuertas CMOS]]

@@ -10,7 +10,7 @@ tags:
 ---
 ##### Capitulo 1 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[analisis 2/Capitulo 1/Resumen.md#Resumen]]
 
 * [[analisis 2/Capitulo 1/Versor.md|Versor]]
@@ -38,7 +38,7 @@ tags:
 
 ##### Capitulo 2 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[analisis 2/Capitulo 2/Resumen.md#Resumen]]
 
 * [[analisis 2/Capitulo 2/Teorema de Schwarz.md|Teorema de Schwarz]]
@@ -87,7 +87,7 @@ tags:
 
 ##### Capitulo 3 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[analisis 2/Capitulo 3/Resumen.md#Resumen]]
 
 * [[analisis 2/Capitulo 3/Teorema Cauchy-Dini para sistema de ecuaciones escalares.md|Teorema Cauchy-Dini para sistema de ecuaciones escalares]]
@@ -104,7 +104,7 @@ tags:
 
 ##### Capitulo 4 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[analisis 2/Capitulo 4/Resumen.md#Resumen]]
 
 * [[analisis 2/Capitulo 4/Punto de ensilladura.md|Punto de ensilladura]]
@@ -116,7 +116,7 @@ tags:
 
 ##### Capitulo 5 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[analisis 2/Capitulo 5/Resumen.md#Resumen]]
 
 * [[analisis 2/Capitulo 5/Teorema para determinar extremo locales.md|Teorema para determinar extremo locales]]

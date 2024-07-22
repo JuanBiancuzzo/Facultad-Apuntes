@@ -9,7 +9,7 @@ tags: materia
 ---
 ##### Redes de computadoras 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[redes/Redes de computadoras/Resumen.md#Resumen]]
 
 * [[redes/Redes de computadoras/Acceso a una red por cable.md|Acceso a una red por cable]]
@@ -46,7 +46,7 @@ tags: materia
 
 ##### Capa de aplicación 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[redes/Capa de aplicación/Resumen.md#Resumen]]
 
 * [[redes/Capa de aplicación/Arquitectura cliente servidor.md|Arquitectura cliente servidor]]
@@ -73,7 +73,7 @@ tags: materia
 
 ##### Capa de Transporte 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[redes/Capa de Transporte/Resumen.md#Resumen]]
 
 * [[redes/Capa de Transporte/Capa de transporte.md|Capa de transporte]]
@@ -103,7 +103,7 @@ tags: materia
 
 ##### Capa de Red 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[redes/Capa de Red/Resumen.md#Resumen]]
 
 * [[redes/Capa de Red/Capa de Red.md|Capa de Red]]
@@ -135,21 +135,21 @@ tags: materia
 
 ##### Capa de Enlace 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[redes/Capa de Enlace/Resumen.md#Resumen]]
 
 * [[redes/Capa de Enlace/Capa de enlace.md|Capa de enlace]]
 
 ##### Capa Física Inalámbrica 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[redes/Capa Física Inalámbrica/Resumen.md#Resumen]]
 
 * [[redes/Capa Física Inalámbrica/Capa física.md|Capa física]]
 
 ##### Seguridad en Redes 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[redes/Seguridad en Redes/Resumen.md#Resumen]]
 
 * [[redes/Seguridad en Redes/temp.md|temp]]

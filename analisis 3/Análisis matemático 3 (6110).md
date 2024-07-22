@@ -10,7 +10,7 @@ tags:
 ---
 ##### Topología del plano complejo y límites 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[analisis 3/Topología del plano complejo y límites/Resumen.md#Resumen]]
 
 * [[analisis 3/Topología del plano complejo y límites/Algebra de continuidad.md|Algebra de continuidad]]
@@ -28,7 +28,7 @@ tags:
 
 ##### Derivabilidad y holomorfía 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[analisis 3/Derivabilidad y holomorfía/Resumen.md#Resumen]]
 
 * [[analisis 3/Derivabilidad y holomorfía/Teorema Euler-D'Alembert-Cauchy-Reimann.md|Teorema Euler-D'Alembert-Cauchy-Reimann]]
@@ -42,7 +42,7 @@ tags:
 
 ##### Series 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[analisis 3/Series/Resumen.md#Resumen]]
 
 * [[analisis 3/Series/Armonica generalizada.md|Armonica generalizada]]
@@ -81,7 +81,7 @@ tags:
 
 ##### Funciones elementales 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[analisis 3/Funciones elementales/Resumen.md#Resumen]]
 
 * [[analisis 3/Funciones elementales/Función sobreyectiva.md|Función sobreyectiva]]
@@ -106,7 +106,7 @@ tags:
 
 ##### Transformaciones conformes 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[analisis 3/Transformaciones conformes/Resumen.md#Resumen]]
 
 * [[analisis 3/Transformaciones conformes/Circunferencia.md|Circunferencia]]
@@ -124,7 +124,7 @@ tags:
 
 ##### Propiedades de las funciones holomorfas 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[analisis 3/Propiedades de las funciones holomorfas/Resumen.md#Resumen]]
 
 * [[analisis 3/Propiedades de las funciones holomorfas/Analiticidad de las holomorfas.md|Analiticidad de las holomorfas]]
@@ -138,7 +138,7 @@ tags:
 
 ##### Series de Laurent 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[analisis 3/Series de Laurent/Resumen.md#Resumen]]
 
 * [[analisis 3/Series de Laurent/Clasificación de singularidades.md|Clasificación de singularidades]]
@@ -159,7 +159,7 @@ tags:
 
 ##### Integrales impropias 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[analisis 3/Integrales impropias/Resumen.md#Resumen]]
 
 * [[analisis 3/Integrales impropias/Absolutamente integrable.md|Absolutamente integrable]]
@@ -176,7 +176,7 @@ tags:
 
 ##### Ecuaciones diferenciales 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[analisis 3/Ecuaciones diferenciales/Resumen.md#Resumen]]
 
 * [[analisis 3/Ecuaciones diferenciales/Teorema de Unicidad para el problema d Dirichlet en Rn.md|Teorema de Unicidad para el problema d Dirichlet en Rn]]
@@ -195,7 +195,7 @@ tags:
 
 ##### Serie de Fourier 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[analisis 3/Serie de Fourier/Resumen.md#Resumen]]
 
 * [[analisis 3/Serie de Fourier/Coeficientes de Fourier.md|Coeficientes de Fourier]]
@@ -220,7 +220,7 @@ tags:
 
 ##### Transformada de Fourier 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[analisis 3/Transformada de Fourier/Resumen.md#Resumen]]
 
 * [[analisis 3/Transformada de Fourier/Condición de Dini.md|Condición de Dini]]
@@ -239,7 +239,7 @@ tags:
 
 ##### Transformada de Laplace 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[analisis 3/Transformada de Laplace/Resumen.md#Resumen]]
 
 * [[analisis 3/Transformada de Laplace/Convergencia de la tranformación de Laplace.md|Convergencia de la tranformación de Laplace]]

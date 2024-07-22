@@ -10,7 +10,7 @@ tags:
 ---
 ##### Espacios Vectoriales 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[algebra 2/Espacios Vectoriales/Resumen.md#Resumen]]
 
 * [[algebra 2/Espacios Vectoriales/Wronskiano.md|Wronskiano]]
@@ -48,7 +48,7 @@ tags:
 
 ##### Transformaciones lineales 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[algebra 2/Transformaciones lineales/Resumen.md#Resumen]]
 
 * [[algebra 2/Transformaciones lineales/Transformación lineal.md|Transformación lineal]]
@@ -72,7 +72,7 @@ tags:
 
 ##### Espacios euclídeos 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[algebra 2/Espacios euclídeos/Resumen.md#Resumen]]
 
 * [[algebra 2/Espacios euclídeos/Ángulo entre vectores.md|Ángulo entre vectores]]
@@ -99,35 +99,35 @@ tags:
 
 ##### Autovalores y autovectores 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[algebra 2/Autovalores y autovectores/Resumen.md#Resumen]]
 
 * [[algebra 2/Autovalores y autovectores/Autovalor.md|Autovalor]]
 
 ##### Sistema de ecuaciones diferenciales 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[algebra 2/Sistema de ecuaciones diferenciales/Resumen.md#Resumen]]
 
 * [[algebra 2/Sistema de ecuaciones diferenciales/temp.md|temp]]
 
 ##### Matrices unitarias y ortogonales 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[algebra 2/Matrices unitarias y ortogonales/Resumen.md#Resumen]]
 
 * [[algebra 2/Matrices unitarias y ortogonales/temp.md|temp]]
 
 ##### Descomposición en valores singulares 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[algebra 2/Descomposición en valores singulares/Resumen.md#Resumen]]
 
 * [[algebra 2/Descomposición en valores singulares/temp.md|temp]]
 
 ##### Formas cuadráticas 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[algebra 2/Formas cuadráticas/Resumen.md#Resumen]]
 
 * [[algebra 2/Formas cuadráticas/temp.md|temp]]

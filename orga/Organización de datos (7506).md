@@ -10,7 +10,7 @@ tags:
 ---
 ##### Pandas 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[orga/Pandas/Resumen.md#Resumen]]
 
 * [[orga/Pandas/Acceder a datos - Pandas.md|Acceder a datos - Pandas]]
@@ -28,7 +28,7 @@ tags:
 
 ##### Visualizaciones 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[orga/Visualizaciones/Resumen.md#Resumen]]
 
 * [[orga/Visualizaciones/Bar plot.md|Bar plot]]
@@ -55,7 +55,7 @@ tags:
 
 ##### NLP 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[orga/NLP/Resumen Parte I.md#Resumen]]
 
 * [[orga/NLP/Bag of words.md|Bag of words]]
@@ -78,7 +78,7 @@ tags:
 
 ##### Compresión 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[orga/Compresión/Resumen.md#Resumen]]
 
 * [[orga/Compresión/Ajuste de Laplace.md|Ajuste de Laplace]]
@@ -99,7 +99,7 @@ tags:
 
 ##### Spark 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[orga/Spark/Resumen.md#Resumen]]
 
 * [[orga/Spark/Almacenamiento distribuido.md|Almacenamiento distribuido]]
@@ -142,7 +142,7 @@ tags:
 
 ##### Machine learning 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[orga/Machine learning/Resumen.md#Resumen]]
 
 * [[orga/Machine learning/Algoritmos de machine learning.md|Algoritmos de machine learning]]
@@ -184,7 +184,7 @@ tags:
 
 ##### NLP 
 ---
-> [!summery]- Resumen
+> [!summary]- Resumen
 > ![[orga/NLP/Resumen Parte II.md#Resumen]]
 
 * [[orga/NLP/GRU.md|GRU]]
