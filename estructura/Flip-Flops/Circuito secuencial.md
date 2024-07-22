@@ -8,5 +8,4 @@ tags:
 ### Definición
 ---
 Es aquel [[Circuito lógico|circuito]] que se puede representar una [[Función|función]] en el [[Álgebra de Boole|álgebra de Boole]] que su salida dependiente de sus entradas, y a diferencia del [[Circuito combinacional]], de la historia del mismo circuito.
-
 Estos se lo puede categorizar como [[Circuito sincrónico|circuitos sincrónicos]] y [[Circuito asincrónico|circuitos asincrónicos]]
