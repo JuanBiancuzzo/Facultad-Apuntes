@@ -4,9 +4,9 @@ tags:
  - numerico/Ecuaciones-diferenciales-ordinarias-a-valores-iniciales
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[numerico/Ecuaciones diferenciales ordinarias a valores iniciales/temp.md|temp]]
+* [[numerico/Ecuaciones diferenciales ordinarias a valores iniciales/temp.md|temp]]
 
 ### Resumen
 ---

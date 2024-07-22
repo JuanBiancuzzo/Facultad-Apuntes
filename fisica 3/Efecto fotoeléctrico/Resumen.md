@@ -4,9 +4,9 @@ tags:
  - fisica-3/Efecto-fotoeléctrico
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 3/Efecto fotoeléctrico/temp.md|temp]]
+* [[fisica 3/Efecto fotoeléctrico/temp.md|temp]]
 
 ### Resumen
 ---

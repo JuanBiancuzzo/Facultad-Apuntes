@@ -4,9 +4,9 @@ tags:
  - proba/Proceso-de-Bernoulli
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[proba/Proceso de Bernoulli/Proceso de Bernoulli.md|Proceso de Bernoulli]]
+* [[proba/Proceso de Bernoulli/Proceso de Bernoulli.md|Proceso de Bernoulli]]
 
 ### Resumen
 ---

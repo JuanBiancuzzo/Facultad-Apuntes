@@ -4,9 +4,9 @@ tags:
  - circuitos/Amplificadores-diferenciales
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[circuitos/Amplificadores diferenciales/temp.md|temp]]
+* [[circuitos/Amplificadores diferenciales/temp.md|temp]]
 
 ### Resumen
 ---

@@ -4,9 +4,9 @@ tags:
  - algebra-2/Formas-cuadráticas
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[algebra 2/Formas cuadráticas/temp.md|temp]]
+* [[algebra 2/Formas cuadráticas/temp.md|temp]]
 
 ### Resumen
 ---

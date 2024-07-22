@@ -4,9 +4,9 @@ tags:
  - fisica-2/Circuitos-en-régimen-alterno-permanente
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 2/Circuitos en régimen alterno permanente/temp.md|temp]]
+* [[fisica 2/Circuitos en régimen alterno permanente/temp.md|temp]]
 
 ### Resumen
 ---

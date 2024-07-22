@@ -4,9 +4,9 @@ tags:
  - circuitos/Fuentes-de-corriente-y-circuitos-con-cargas-activas
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[circuitos/Fuentes de corriente y circuitos con cargas activas/temp.md|temp]]
+* [[circuitos/Fuentes de corriente y circuitos con cargas activas/temp.md|temp]]
 
 ### Resumen
 ---

@@ -4,9 +4,9 @@ tags:
  - aninfo/Diseño-de-datos
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[aninfo/Diseño de datos/Dato.md|Dato]]
+* [[aninfo/Diseño de datos/Dato.md|Dato]]
 
 ### Resumen
 ---

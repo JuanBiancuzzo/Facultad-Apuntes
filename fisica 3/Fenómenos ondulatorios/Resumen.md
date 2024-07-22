@@ -4,9 +4,9 @@ tags:
  - fisica-3/Fenómenos-ondulatorios
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 3/Fenómenos ondulatorios/temp.md|temp]]
+* [[fisica 3/Fenómenos ondulatorios/temp.md|temp]]
 
 ### Resumen
 ---

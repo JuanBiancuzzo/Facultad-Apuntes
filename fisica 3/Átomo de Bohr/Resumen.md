@@ -4,9 +4,9 @@ tags:
  - fisica-3/Átomo-de-Bohr
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 3/Átomo de Bohr/temp.md|temp]]
+* [[fisica 3/Átomo de Bohr/temp.md|temp]]
 
 ### Resumen
 ---

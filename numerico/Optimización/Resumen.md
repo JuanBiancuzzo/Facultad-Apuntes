@@ -4,9 +4,9 @@ tags:
  - numerico/Optimización
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[numerico/Optimización/temp.md|temp]]
+* [[numerico/Optimización/temp.md|temp]]
 
 ### Resumen
 ---

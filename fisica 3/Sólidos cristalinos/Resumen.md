@@ -4,9 +4,9 @@ tags:
  - fisica-3/Sólidos-cristalinos
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 3/Sólidos cristalinos/temp.md|temp]]
+* [[fisica 3/Sólidos cristalinos/temp.md|temp]]
 
 ### Resumen
 ---

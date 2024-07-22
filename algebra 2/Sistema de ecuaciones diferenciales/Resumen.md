@@ -4,9 +4,9 @@ tags:
  - algebra-2/Sistema-de-ecuaciones-diferenciales
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[algebra 2/Sistema de ecuaciones diferenciales/temp.md|temp]]
+* [[algebra 2/Sistema de ecuaciones diferenciales/temp.md|temp]]
 
 ### Resumen
 ---

@@ -8,8 +8,11 @@ tags:
 ---
 ### Apuntes 
 ---
-##### Introducción a la programación (8)
+##### Introducción a la programación 
 ---
+> [!summery]- Resumen
+> ![[algo 1/Introducción a la programación/Resumen.md#Resumen]]
+
 * [[algo 1/Introducción a la programación/Variable.md|Variable]]
 * [[algo 1/Introducción a la programación/Tipo de dato.md|Tipo de dato]]
 * [[algo 1/Introducción a la programación/Tipo de dato primitivo.md|Tipo de dato primitivo]]

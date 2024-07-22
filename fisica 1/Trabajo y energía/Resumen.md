@@ -4,9 +4,9 @@ tags:
  - fisica-1/Trabajo-y-energía
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 1/Trabajo y energía/temp.md|temp]]
+* [[fisica 1/Trabajo y energía/temp.md|temp]]
 
 ### Resumen
 ---

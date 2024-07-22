@@ -4,9 +4,9 @@ tags:
  - algebra-2/Descomposición-en-valores-singulares
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[algebra 2/Descomposición en valores singulares/temp.md|temp]]
+* [[algebra 2/Descomposición en valores singulares/temp.md|temp]]
 
 ### Resumen
 ---

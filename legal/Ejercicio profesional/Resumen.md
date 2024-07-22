@@ -4,9 +4,9 @@ tags:
  - legal/Ejercicio-profesional
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[legal/Ejercicio profesional/temp.md|temp]]
+* [[legal/Ejercicio profesional/temp.md|temp]]
 
 ### Resumen
 ---

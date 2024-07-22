@@ -4,9 +4,9 @@ tags:
  - circuitos/Circuitos-integrados-analógicos
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[circuitos/Circuitos integrados analógicos/temp.md|temp]]
+* [[circuitos/Circuitos integrados analógicos/temp.md|temp]]
 
 ### Resumen
 ---

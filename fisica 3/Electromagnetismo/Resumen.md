@@ -4,9 +4,9 @@ tags:
  - fisica-3/Electromagnetismo
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 3/Electromagnetismo/temp.md|temp]]
+* [[fisica 3/Electromagnetismo/temp.md|temp]]
 
 ### Resumen
 ---

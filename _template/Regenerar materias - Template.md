@@ -13,7 +13,7 @@
 		.all
 		.map(archivo => dv.page(archivo.path)); // consigo su representación en dv
 
-	archivosModificar = dv.array(dv.pages("#nota")).distinct(archivo => archivo.file.folder);
+	archivosModificar = dv.array(dv.pages("#nota"));
 	
 	let tagsModificados = archivosModificar
 		.filter(archivo => archivo && tp.user.whiteList().archivoFacultad(archivo)) // filtro para obtener los archivos únicamente de la facu
@@ -37,6 +37,8 @@
 	// Sacamos los repetidos que generamos
 	tagsModificados = dv.array(tagsModificados).distinct(({ tipo, tag, carpeta }) => tag);
 
+	console.log(tagsModificados);
+
 	let resumenesModificar = tagsModificados
 		.flatMap(({ tipo, tag, carpeta }) => (tipo == MATERIA) ? [] : [ { tag: tag, carpeta: carpeta } ]);
 	
@@ -50,7 +52,6 @@
 		if (spliteado.length > 2)
 			capitulo = parseInt(spliteado[2].replace("cap", ""), 10);
 		
-		carpeta = spliteado.splice(0, 2).join("/");	
 		let tarea = regenerar.resumen(tp, dv, carpeta, capitulo)
 			.then((_) => mostrarMensaje(`Se regeneró: ${nombreResumen} de ${materia}`));
 		tareas.push(tarea);

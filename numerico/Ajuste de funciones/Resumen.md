@@ -4,9 +4,9 @@ tags:
  - numerico/Ajuste-de-funciones
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[numerico/Ajuste de funciones/temp.md|temp]]
+* [[numerico/Ajuste de funciones/temp.md|temp]]
 
 ### Resumen
 ---

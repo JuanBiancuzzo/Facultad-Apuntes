@@ -4,9 +4,9 @@ tags:
  - fisica-3/Juntura-metal-semiconductor
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 3/Juntura metal-semiconductor/temp.md|temp]]
+* [[fisica 3/Juntura metal-semiconductor/temp.md|temp]]
 
 ### Resumen
 ---

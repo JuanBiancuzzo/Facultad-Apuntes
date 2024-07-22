@@ -4,9 +4,9 @@ tags:
  - legal/Derecho-real
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[legal/Derecho real/Derecho real.md|Derecho real]]
+* [[legal/Derecho real/Derecho real.md|Derecho real]]
 
 ### Resumen
 ---

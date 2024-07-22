@@ -4,9 +4,9 @@ tags:
  - fisica-3/Radiación-de-cuerpo-negro
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 3/Radiación de cuerpo negro/temp.md|temp]]
+* [[fisica 3/Radiación de cuerpo negro/temp.md|temp]]
 
 ### Resumen
 ---

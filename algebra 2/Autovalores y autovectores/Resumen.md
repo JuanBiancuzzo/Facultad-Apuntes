@@ -4,9 +4,9 @@ tags:
  - algebra-2/Autovalores-y-autovectores
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[algebra 2/Autovalores y autovectores/Autovalor.md|Autovalor]]
+* [[algebra 2/Autovalores y autovectores/Autovalor.md|Autovalor]]
 
 ### Resumen
 ---

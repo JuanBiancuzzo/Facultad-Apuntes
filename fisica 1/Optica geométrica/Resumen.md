@@ -4,9 +4,9 @@ tags:
  - fisica-1/Optica-geométrica
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 1/Optica geométrica/temp.md|temp]]
+* [[fisica 1/Optica geométrica/temp.md|temp]]
 
 ### Resumen
 ---

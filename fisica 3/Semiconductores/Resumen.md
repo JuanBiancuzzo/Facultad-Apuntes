@@ -4,9 +4,9 @@ tags:
  - fisica-3/Semiconductores
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 3/Semiconductores/temp.md|temp]]
+* [[fisica 3/Semiconductores/temp.md|temp]]
 
 ### Resumen
 ---

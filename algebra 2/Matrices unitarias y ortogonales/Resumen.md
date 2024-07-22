@@ -4,9 +4,9 @@ tags:
  - algebra-2/Matrices-unitarias-y-ortogonales
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[algebra 2/Matrices unitarias y ortogonales/temp.md|temp]]
+* [[algebra 2/Matrices unitarias y ortogonales/temp.md|temp]]
 
 ### Resumen
 ---

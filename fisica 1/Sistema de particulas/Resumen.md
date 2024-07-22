@@ -4,9 +4,9 @@ tags:
  - fisica-1/Sistema-de-particulas
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 1/Sistema de particulas/temp.md|temp]]
+* [[fisica 1/Sistema de particulas/temp.md|temp]]
 
 ### Resumen
 ---

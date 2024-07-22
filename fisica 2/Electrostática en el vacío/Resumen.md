@@ -4,9 +4,9 @@ tags:
  - fisica-2/Electrostática-en-el-vacío
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 2/Electrostática en el vacío/temp.md|temp]]
+* [[fisica 2/Electrostática en el vacío/temp.md|temp]]
 
 ### Resumen
 ---

@@ -4,9 +4,9 @@ tags:
  - numerico/Integración-y-Diferenciación-Numérica
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[numerico/Integración y Diferenciación Numérica/temp.md|temp]]
+* [[numerico/Integración y Diferenciación Numérica/temp.md|temp]]
 
 ### Resumen
 ---

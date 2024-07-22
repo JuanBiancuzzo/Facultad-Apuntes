@@ -4,9 +4,9 @@ tags:
  - fisica-2/Magnetismo-estacionario-en-medios-materiales
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 2/Magnetismo estacionario en medios materiales/temp.md|temp]]
+* [[fisica 2/Magnetismo estacionario en medios materiales/temp.md|temp]]
 
 ### Resumen
 ---

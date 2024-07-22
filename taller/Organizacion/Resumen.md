@@ -4,11 +4,11 @@ tags:
  - taller/Organizacion
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[taller/Organizacion/Crate.md|Crate]]
- * [[taller/Organizacion/Módulo.md|Módulo]]
- * [[taller/Organizacion/Testing.md|Testing]]
+* [[taller/Organizacion/Crate.md|Crate]]
+* [[taller/Organizacion/Módulo.md|Módulo]]
+* [[taller/Organizacion/Testing.md|Testing]]
 
 ### Resumen
 ---

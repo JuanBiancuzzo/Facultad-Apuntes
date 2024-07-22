@@ -4,9 +4,9 @@ tags:
  - redes/Capa-de-Enlace
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[redes/Capa de Enlace/Capa de enlace.md|Capa de enlace]]
+* [[redes/Capa de Enlace/Capa de enlace.md|Capa de enlace]]
 
 ### Resumen
 ---

@@ -4,9 +4,9 @@ tags:
  - fisica-2/Inducción-electromagnética
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 2/Inducción electromagnética/temp.md|temp]]
+* [[fisica 2/Inducción electromagnética/temp.md|temp]]
 
 ### Resumen
 ---

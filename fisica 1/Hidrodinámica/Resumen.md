@@ -4,9 +4,9 @@ tags:
  - fisica-1/Hidrodinámica
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 1/Hidrodinámica/temp.md|temp]]
+* [[fisica 1/Hidrodinámica/temp.md|temp]]
 
 ### Resumen
 ---

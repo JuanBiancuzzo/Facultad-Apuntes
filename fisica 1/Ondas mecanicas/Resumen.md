@@ -4,9 +4,9 @@ tags:
  - fisica-1/Ondas-mecanicas
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 1/Ondas mecanicas/temp.md|temp]]
+* [[fisica 1/Ondas mecanicas/temp.md|temp]]
 
 ### Resumen
 ---

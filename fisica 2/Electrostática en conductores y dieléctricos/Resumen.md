@@ -4,9 +4,9 @@ tags:
  - fisica-2/Electrostática-en-conductores-y-dieléctricos
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 2/Electrostática en conductores y dieléctricos/temp.md|temp]]
+* [[fisica 2/Electrostática en conductores y dieléctricos/temp.md|temp]]
 
 ### Resumen
 ---

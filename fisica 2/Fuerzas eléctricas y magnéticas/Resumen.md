@@ -4,9 +4,9 @@ tags:
  - fisica-2/Fuerzas-eléctricas-y-magnéticas
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 2/Fuerzas eléctricas y magnéticas/temp.md|temp]]
+* [[fisica 2/Fuerzas eléctricas y magnéticas/temp.md|temp]]
 
 ### Resumen
 ---

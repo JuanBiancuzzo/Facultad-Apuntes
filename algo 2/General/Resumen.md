@@ -4,9 +4,9 @@ tags:
  - algo-2/General
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[algo 2/General/Complejidad computacional.md|Complejidad computacional]]
+* [[algo 2/General/Complejidad computacional.md|Complejidad computacional]]
 
 ### Resumen
 ---

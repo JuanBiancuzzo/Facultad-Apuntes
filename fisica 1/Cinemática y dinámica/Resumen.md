@@ -4,9 +4,9 @@ tags:
  - fisica-1/Cinemática-y-dinámica
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 1/Cinemática y dinámica/temp.md|temp]]
+* [[fisica 1/Cinemática y dinámica/temp.md|temp]]
 
 ### Resumen
 ---

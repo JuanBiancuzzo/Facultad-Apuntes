@@ -4,9 +4,9 @@ tags:
  - numerico/Ecuaciones-diferenciales-en-derivadas-parciales
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[numerico/Ecuaciones diferenciales en derivadas parciales/temp.md|temp]]
+* [[numerico/Ecuaciones diferenciales en derivadas parciales/temp.md|temp]]
 
 ### Resumen
 ---

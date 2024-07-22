@@ -4,9 +4,9 @@ tags:
  - numerico/Sistemas-de-ecuaciones-lineales
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[numerico/Sistemas de ecuaciones lineales/temp.md|temp]]
+* [[numerico/Sistemas de ecuaciones lineales/temp.md|temp]]
 
 ### Resumen
 ---

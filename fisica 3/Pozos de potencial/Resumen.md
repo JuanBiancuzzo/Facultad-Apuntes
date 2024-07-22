@@ -4,9 +4,9 @@ tags:
  - fisica-3/Pozos-de-potencial
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 3/Pozos de potencial/temp.md|temp]]
+* [[fisica 3/Pozos de potencial/temp.md|temp]]
 
 ### Resumen
 ---

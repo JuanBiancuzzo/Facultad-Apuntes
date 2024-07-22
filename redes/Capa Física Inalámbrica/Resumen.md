@@ -4,9 +4,9 @@ tags:
  - redes/Capa-Física-Inalámbrica
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[redes/Capa Física Inalámbrica/Capa física.md|Capa física]]
+* [[redes/Capa Física Inalámbrica/Capa física.md|Capa física]]
 
 ### Resumen
 ---

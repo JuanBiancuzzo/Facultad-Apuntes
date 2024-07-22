@@ -4,9 +4,9 @@ tags:
  - fisica-2/Magnetostática-en-el-vacío
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 2/Magnetostática en el vacío/temp.md|temp]]
+* [[fisica 2/Magnetostática en el vacío/temp.md|temp]]
 
 ### Resumen
 ---

@@ -4,9 +4,9 @@ tags:
  - fisica-1/Cuerpo-rígido
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[fisica 1/Cuerpo rígido/temp.md|temp]]
+* [[fisica 1/Cuerpo rígido/temp.md|temp]]
 
 ### Resumen
 ---

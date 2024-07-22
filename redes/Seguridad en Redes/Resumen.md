@@ -4,9 +4,9 @@ tags:
  - redes/Seguridad-en-Redes
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[redes/Seguridad en Redes/temp.md|temp]]
+* [[redes/Seguridad en Redes/temp.md|temp]]
 
 ### Resumen
 ---
