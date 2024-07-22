@@ -42,18 +42,16 @@
 			return resultado;
 		});
 
-	let tareas = [];
-	let tTemplate = app.vault.getAbstractFileByPath("Resumen - Template");
+	let tTemplate = tp.file.find_tfile("_template/Resumen - Template");
 	for (let { titulo, carpeta, cap } of temas) {
-		titulo = `${carpeta}/${titulo} - ${cap}`;
+		titulo = `${titulo} - ${cap}`;
 		carpeta = app.vault.getAbstractFileByPath(carpeta);
 		
-		let tarea = tp.file.create_new(
+		await tp.file.create_new(
 			tTemplate, titulo, false, carpeta
 		);
-		tareas.push(tarea);
 	}
-	await Promise.all(tarea).then((_) => console.log("Terminado"));
+	console.log("Terminado")
 
 	return;
 
