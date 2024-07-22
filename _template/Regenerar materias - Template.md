@@ -2,7 +2,7 @@
 	const dv = app.plugins.plugins["dataview"].api;
 	const tArchivo = tp.file.find_tfile(tp.file.path(true));
 
-	const tagsMetaInfo = ["resumen", "materia"];
+	const tagsMetaInfo = [ "resumen", "materia" ];
 	const regenerar = tp.user.regenerar();
 	const RESUMEN = "Resumen";
 	const MATERIA = "Materia";
@@ -13,6 +13,8 @@
 		.all
 		.map(archivo => dv.page(archivo.path)); // consigo su representación en dv
 
+	archivosModificar = dv.array(dv.pages("#nota")).distinct(archivo => archivo.file.folder);
+	
 	let tagsModificados = archivosModificar
 		.filter(archivo => archivo && tp.user.whiteList().archivoFacultad(archivo)) // filtro para obtener los archivos únicamente de la facu
 		.filter(archivo => !dv.array(archivo.tags).some(tag => tagsMetaInfo.includes(tag) ) ) // Saco a los archivos que son resumenes o materias
