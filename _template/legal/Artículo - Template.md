@@ -14,153 +14,146 @@
     const ELIMINAR = 2;
     
     const tArchivo = tp.file.find_tfile(tp.file.path(true));
-    let texto;
 
-    try {
+    const documentos = dv.pages(`"${cte.pathArticulos}" and #legal/documento`);
 
-        const documentos = dv.pages(`"${cte.pathArticulos}" and #legal/documento`);
-
-        let documento = await preguntar.suggester(
-            tp, (doc) => describir.documento(doc), documentos,
-            "En que documento se encuentra",
-            "No se eligió un documento"
-        );
-            
-        let subSecciones = herramientas.seccionesSiguientes(documento)
-            .sort(sec => sec.num);
-        let grupos = documento.grupos ? documento.grupos : [];
+    let documento = await preguntar.suggester(
+        tp, (doc) => describir.documento(doc), documentos,
+        "En que documento se encuentra",
+        "No se eligió un documento"
+    );
         
-        let path = [ { tipo: "archivo", archivo: documento } ];
-
-        while (grupos.length > 0 || subSecciones > 0) {
-            let opciones = [
-                ...subSecciones.map(sec => describir.seccion(sec)), 
-                ...grupos.map(grupo => ` ⊕ Agregar ${grupo}`),
-                " ↶ En esta sección"
-            ];
-            let valores = [...subSecciones, ...grupos, SALIR];
-
-            let accion = await preguntar.suggester(
-                tp, opciones, valores,
-                "Elegir o crear una sección",
-                "No se eligió una sección"
-            );
+    let subSecciones = herramientas.seccionesSiguientes(documento)
+        .sort(sec => sec.num);
+    let grupos = documento.grupos ? documento.grupos : [];
     
-            let tipoSeccion;
-            if (accion == SALIR) {
-                break;
+    let path = [ { tipo: "archivo", archivo: documento } ];
 
-            } else if (grupos.includes(accion)) {
-                // Se crea una seccion
-                tipoSeccion = accion;
-                let nuevaSeccion = await preguntar.legal.seccion(tp, tipoSeccion);
-                path.push(nuevaSeccion);
-    
-                subSecciones = [];
+    while (grupos.length > 0 || subSecciones > 0) {
+        let opciones = [
+            ...subSecciones.map(sec => describir.seccion(sec)), 
+            ...grupos.map(grupo => ` ⊕ Agregar ${grupo}`),
+            " ↶ En esta sección"
+        ];
+        let valores = [...subSecciones, ...grupos, SALIR];
 
-            } else {
-                // Se eligió una sección
-                let seccionSiguiente = accion;
-                tipoSeccion = seccionSiguiente.tipo;
-                path.push( { tipo: "archivo", archivo: seccionSiguiente } );
+        let accion = await preguntar.suggester(
+            tp, opciones, valores,
+            "Elegir o crear una sección",
+            "No se eligió una sección"
+        );
 
-                subSecciones = herramientas.seccionesSiguientes(seccionSiguiente);    
-            }
+        let tipoSeccion;
+        if (accion == SALIR) {
+            break;
 
-            let indexSeccion = grupos.indexOf(tipoSeccion);
-            grupos = grupos.slice(indexSeccion + 1);
+        } else if (grupos.includes(accion)) {
+            // Se crea una seccion
+            tipoSeccion = accion;
+            let nuevaSeccion = await preguntar.legal.seccion(tp, tipoSeccion);
+            path.push(nuevaSeccion);
+
+            subSecciones = [];
+
+        } else {
+            // Se eligió una sección
+            let seccionSiguiente = accion;
+            tipoSeccion = seccionSiguiente.tipo;
+            path.push( { tipo: "archivo", archivo: seccionSiguiente } );
+
+            subSecciones = herramientas.seccionesSiguientes(seccionSiguiente);    
         }
 
-        let numero = parseInt(await preguntar.prompt(
-            tp, "Cuál es el número del artículo?", 
-            "No se ingresó el número del artículo"
-        ), 10);
-
-        let posiblesArchivosConflictivos = dv.pages(`"${documento.file.folder}" and #legal/articulo`)
-            .filter(articulo => articulo.num == numero && !articulo.esBis);
-
-        let esBis = false;
-        if (posiblesArchivosConflictivos.length > 0) {
-            esBis = await preguntar.suggester(
-                tp, ["Es bis", "No es bis"], [true, false],
-                `El artículo ${numero} es bis?`,
-                "No se ingresó la forma de determinar si es bis o no"
-            );
-
-            if (!esBis) {
-                throw new Error("Ya existe un artículo así");
-            }
-        }
-
-        if (!numero || numero < 0)
-            throw new Error("No se ingresó el número del artículo correcto");
-
-        let nombre;
-        if (documento.artConNombre) {
-            nombre = await preguntar.prompt(
-                tp, "Cuál es el nombre del artículo?",
-                "No se agregó el nombre del artículo"
-            );
-        }
-
-        texto = await mostrarTexto.preguntar(tp);
-
-        // Crear archivos necesarios, y guardarlos en el path
-        let carpetaActual = cte.pathArticulos;
-        let tipoPrevio = null;
-
-        for (let [index, { tipo, ...datos }] of path.entries()) {
-            if (tipo == "archivo") {
-                carpetaActual = `${datos.archivo.file.folder}/`;
-                tipoPrevio = datos.archivo.file.tags
-                    .find(tag => tag.startsWith("#legal"))
-                    .replace("#legal/", "");
-                continue;
-            }
-
-            let { nombre: nombreSeccion, numero: numeroSeccion } = datos;
-            
-            let nuevoNombre = `${tipo} - ${nombreSeccion} - ${numeroSeccion} - ${tipoPrevio}`;
-            carpetaActual += `${tipo} ${numeroSeccion}`;
-
-            let template = tp.file.find_tfile("Seccion - Template");
-            let tCarpeta = await app.vault.createFolder(carpetaActual);
-
-            let tArchivo = await tp.file.create_new(template, nuevoNombre, false, tCarpeta);
-            let archivo = dv.page(tArchivo.path);
-
-            path[index] = { tipo: "archivo", archivo: archivo };
-            tipoPrevio = tipo;
-            carpetaActual += "/";
-        }
-
-        // Agregar metadata
-        tR += "---\n";
-        tR += `num: ${numero}\n`;
-        if (nombre) {
-            tR += `nombre: ${nombre}\n`;
-        }
-        if (esBis) {
-            tR += `esBis: ${esBis}\n`;
-        }
-
-        tR += `articulo: \n${mostrarTexto.metadata(texto)}\n`;
-
-        let previo = path.pop().archivo;
-        tR += `previo: "[[${previo.file.path}|${previo.file.name}]]"\n`;
-
-        tR += "tags: \n - legal/articulo\n";
-        tR += "---\n";;
-
-        // Mover el archivo
-        // Mover a la carpeta del previo
-        // Cambiar nombre de forma acorde
-        let nuevoNombre = `Art. ${numero}${esBis ? " bis" : ""} ${documento.abreviacion}${(nombre) ? `, ${nombre}` : ""}.md`;
-        await app.vault.rename(tArchivo, `${previo.file.folder}/${nuevoNombre}`);
-
-    } catch ({ name: _, message: mensaje }) {
-        return await tp.user.eliminar().eliminar(tp, tArchivo, mensaje);
+        let indexSeccion = grupos.indexOf(tipoSeccion);
+        grupos = grupos.slice(indexSeccion + 1);
     }
+
+    let numero = parseInt(await preguntar.prompt(
+        tp, "Cuál es el número del artículo?", 
+        "No se ingresó el número del artículo"
+    ), 10);
+
+    let posiblesArchivosConflictivos = dv.pages(`"${documento.file.folder}" and #legal/articulo`)
+        .filter(articulo => articulo.num == numero && !articulo.esBis);
+
+    let esBis = false;
+    if (posiblesArchivosConflictivos.length > 0) {
+        esBis = await preguntar.suggester(
+            tp, ["Es bis", "No es bis"], [true, false],
+            `El artículo ${numero} es bis?`,
+            "No se ingresó la forma de determinar si es bis o no"
+        );
+
+        if (!esBis) {
+            throw new Error("Ya existe un artículo así");
+        }
+    }
+
+    if (!numero || numero < 0)
+        throw new Error("No se ingresó el número del artículo correcto");
+
+    let nombre;
+    if (documento.artConNombre) {
+        nombre = await preguntar.prompt(
+            tp, "Cuál es el nombre del artículo?",
+            "No se agregó el nombre del artículo"
+        );
+    }
+
+    let texto = await mostrarTexto.preguntar(tp);
+
+    // Crear archivos necesarios, y guardarlos en el path
+    let carpetaActual = cte.pathArticulos;
+    let tipoPrevio = null;
+
+    for (let [index, { tipo, ...datos }] of path.entries()) {
+        if (tipo == "archivo") {
+            carpetaActual = `${datos.archivo.file.folder}/`;
+            tipoPrevio = datos.archivo.file.tags
+                .find(tag => tag.startsWith("#legal"))
+                .replace("#legal/", "");
+            continue;
+        }
+
+        let { nombre: nombreSeccion, numero: numeroSeccion } = datos;
+        
+        let nuevoNombre = `${tipo} - ${nombreSeccion} - ${numeroSeccion} - ${tipoPrevio}`;
+        carpetaActual += `${tipo} ${numeroSeccion}`;
+
+        let template = tp.file.find_tfile("Seccion - Template");
+        let tCarpeta = await app.vault.createFolder(carpetaActual);
+
+        let tArchivo = await tp.file.create_new(template, nuevoNombre, false, tCarpeta);
+        let archivo = dv.page(tArchivo.path);
+
+        path[index] = { tipo: "archivo", archivo: archivo };
+        tipoPrevio = tipo;
+        carpetaActual += "/";
+    }
+
+    // Agregar metadata
+    tR += "---\n";
+    tR += `num: ${numero}\n`;
+    if (nombre) {
+        tR += `nombre: ${nombre}\n`;
+    }
+    if (esBis) {
+        tR += `esBis: ${esBis}\n`;
+    }
+
+    tR += `articulo: \n${mostrarTexto.metadata(texto)}\n`;
+
+    let previo = path.pop().archivo;
+    tR += `previo: "[[${previo.file.path}|${previo.file.name}]]"\n`;
+
+    tR += "tags: \n - legal/articulo\n";
+    tR += "---\n";;
+
+    // Mover el archivo
+    // Mover a la carpeta del previo
+    // Cambiar nombre de forma acorde
+    let nuevoNombre = `Art. ${numero}${esBis ? " bis" : ""} ${documento.abreviacion}${(nombre) ? `, ${nombre}` : ""}.md`;
+    await app.vault.rename(tArchivo, `${previo.file.folder}/${nuevoNombre}`);
 
 _%>
 ### Artículo

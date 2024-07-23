@@ -13,7 +13,12 @@
   "shell_path": "",
   "user_scripts_folder": "_scripts/templater",
   "enable_folder_templates": true,
-  "folder_templates": [],
+  "folder_templates": [
+    {
+      "folder": "/",
+      "template": "_template/Nota - Template.md"
+    }
+  ],
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
@@ -24,8 +29,6 @@
     "_template/tikz/TikzNetting - Template.md",
     "_template/legal/Editar texto Artículo.md"
   ],
-  "startup_templates": [
-    ""
-  ],
+  "startup_templates": [],
   "enable_ribbon_icon": false
 }
