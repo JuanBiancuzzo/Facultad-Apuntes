@@ -18,7 +18,7 @@ async function modificarMateria(tp, dv, carpeta) {
         nuevoContenido += `> [!summary]- Resumen\n> ![[${resumen.file.path}#Resumen]]\n\n`;
 
         let tag = resumen.file.folder.replaceAll(" ", "-");
-        if (resumen.multiples) tag += `/cap${resumen.capitulo}`;        
+        if (resumen.parte) tag += `/${resumen.parte}`;        
 
         nuevoContenido += dv.pages(`#${tag} and #nota`).map(pagina => {
             return `* [[${pagina.file.path}|${pagina.file.name}]]`;
