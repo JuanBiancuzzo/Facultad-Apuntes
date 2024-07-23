@@ -4,7 +4,7 @@
     
     let tArchivo = tp.file.find_tfile(tp.file.path(true));
     let tPadre = tArchivo.parent;
-	
+
 	if (!tPadre || tPadre.isRoot()) {
 		console.log("Esta en el root");
 		return;

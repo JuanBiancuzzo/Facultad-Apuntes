@@ -22,7 +22,6 @@
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
-    "_template/Definición - Template.md",
     "_template/tikz/Tikz - Template.md",
     "_template/tikz/TikzPlot - Template.md",
     "_template/tikz/TikzCircuit - Template.md",

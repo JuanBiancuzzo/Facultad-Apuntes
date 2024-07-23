@@ -50,8 +50,7 @@
 			.then((_) => mostrarMensaje(`Se regeneró: ${nombreResumen} de ${materia}`));
 		tareas.push(tarea);
 	}
-	await Promise.all(tareas)
-		.then((_) => mostrarMensaje("Resumenes regenerados"));	
+	await Promise.all(tareas).then((_) => mostrarMensaje("Resumenes regenerados"));	
 
 	let materiasModificar = tagsModificados
 		.flatMap(({ tipo, tag, carpeta }) => (tipo == RESUMEN) ? [] : [ { tag: tag, carpeta: carpeta.split("/")[0] } ]);
@@ -64,10 +63,9 @@
 		tareas.push(tarea);
 	}
 
-	await Promise.all(tareas)
-		.then((_) => mostrarMensaje("Materias regenerados"));	
+	await Promise.all(tareas).then((_) => mostrarMensaje("Materias regenerados"));	
 
-	await app.vault.trash(tArchivo, true);
+	await app.vault.delete(tArchivo.parent, true);
 
 	function mostrarMensaje(mensaje) {
 		console.log(mensaje);
