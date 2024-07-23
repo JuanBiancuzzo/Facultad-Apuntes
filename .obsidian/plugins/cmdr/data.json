@@ -6,15 +6,15 @@
   "fileMenu": [],
   "leftRibbon": [
     {
-      "id": "quickadd:choice:d3cbe2f4-6b2d-4808-aafb-6925a8158706",
-      "icon": "book",
-      "name": "QuickAdd: Materia",
-      "mode": "any"
-    },
-    {
       "id": "quickadd:choice:c6addedc-6a02-4777-95d3-b9d63ce9a4ed",
       "icon": "bookmark-plus",
       "name": "QuickAdd: Agregar tema",
+      "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:e516c7e7-35e3-4917-b453-678f35596fdc",
+      "icon": "album",
+      "name": "QuickAdd: Nueva materia",
       "mode": "any"
     }
   ],

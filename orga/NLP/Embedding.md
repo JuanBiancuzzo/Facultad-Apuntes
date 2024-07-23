@@ -2,7 +2,7 @@
 dia: 2024-01-13
 capitulo: 3
 tags:
-  - orga/NLP/cap3
+  - orga/NLP/1
   - nota
 ---
 ### Definición

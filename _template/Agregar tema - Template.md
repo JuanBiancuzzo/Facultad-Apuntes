@@ -1,112 +1,186 @@
 <%*
-	const dv = this.app.plugins.plugins["dataview"].api;
+	const dv = this.app.plugins.plugins.dataview.api;
+	const preguntar = tp.user.preguntar();
 
-	let carpeta = tp.file.folder(true);
-	let materia;
-	if (carpeta == "/") {
-		let materiaArchivo = await preguntarMateria(dv);
-		if (!materiaArchivo)
-			return salir("No se ingreso una materia");
-		materia = materiaArchivo.file.folder.split("/")[0];
-	} else {
-		materia = carpeta.split("/")[0];
-	}
-	
-	let tema = await tp.system.prompt("Cuál va a ser el nuevo tema?");
-	if (!tema) return salir("No se ingreso un tema");
-	
-	let pathActual = tp.file.path(true);
-	let temasExistentes = dv.pages(`"${materia}" and -#materia`)
-		.filter(archivo => archivo.file.path != pathActual)
-		.sort(archivo => parseInt(archivo.capitulo, 10))
-		.groupBy(archivo => parseInt(archivo.capitulo, 10))
-		.map(grupoCapitulo => {
-			let primero = grupoCapitulo.rows[0];
-			let capitulo = parseInt(primero.capitulo, 10);
-			let nombre = primero.file.folder.split("/")[1];
-			return [nombre, capitulo];
+	const AGREGAR_TEMA = "agregar_tema";
+
+	let tArchivo = tp.file.find_tfile(tp.file.path(true));
+	// Nos quedamos con la carpeta que sería la materia
+	let carpeta = tp.file.folder(true).split("/")[0];
+
+	try {
+		let materias = dv.pages(`"${carpeta}" and #materia`);
+		let materia;
+
+		switch (materias.length) {
+			case 0: throw new Error("No se puede elegir una materia");
+			case 1: materia = materias[0]; break;
+			default:
+				materia = await preguntar.suggester(
+					tp, materia => materia.file.name, 
+					materias, 
+					"Que materia se va a agregar el tema?",
+					"No se eligió una materia"
+				);
+				
+				break;
+		}
+
+		let resumenes = dv.pages(`"${materia.file.folder}" and #resumen`)
+			.sort(resumen => resumen.capitulo);
+		let nombreResumenes = resumenes.map(resumen => {
+			let repre = `En ${resumen.file.folder.split("/")[1]}`;
+			if (resumen.multiples) 
+				repre += `, Parte ${resumen.parte}`;
+			return repre;
 		});
-
-	if (temasExistentes.length == 0) {
-		moverArchivo(tema, materia);
-		crearFrontmatter(1, materia);
-	} else {
-		let opciones = temasExistentes.map(([nombre, capitulo]) => {
-			return `Después de ${nombre}, con el capitulo: ${capitulo + 1}`;
-		}).values;
-		let [primerNombre, primerCapitulo] = temasExistentes[0];
-		opciones.splice(0, 0, `Antes de ${primerNombre}, con el capitulo: ${primerCapitulo}`);
 		
-		let resultados = temasExistentes.map(([_, capitulo]) => capitulo + 1).values;
-		resultados.splice(0, 0, primerCapitulo);
+		let eleccion = AGREGAR_TEMA;
+		if (resumenes.length > 0) {
+			eleccion = await preguntar.suggester(
+				tp, [" ⊕ Agregar nuevo tema",  ...nombreResumenes ],
+				[ AGREGAR_TEMA, ...resumenes ],
+				"Que es lo que quiere hacer?",
+				"No se eligió donde crear el tema"
+			);
+		}
 
-		let capitulo = await tp.system.suggester(opciones, resultados, false, "Donde se ubica el nuevo tema?");
-		if (!capitulo)
-			return salir("No se ingreso la ubicación del tema");
+		let multiples = false;
+		let nuevaCarpeta;
+		if (eleccion == AGREGAR_TEMA) {
+			let nombre = await preguntar.prompt(
+				tp, "Nombre del nuevo tema:",
+				"No se ingresó el nombre del tema"
+			);
 
-		let tArchivos = dv.pages(`"${materia}" and -#materia`)
-			.filter(archivo => {
-				if (archivo.file.path == pathActual)
-					return false;
-				return archivo.capitulo >= capitulo;
-			})
-			.map(archivo => tp.file.find_tfile(archivo.file.path))
-			.values;
+			eleccion = resumenes.find(resumen => resumen.file.folder.split("/")[1] == nombre);
+			nuevaCarpeta = `${materia.file.folder}/${nombre}`;
+		} 
 
-		for (let tArchivo of tArchivos) {
-			await app.fileManager.processFrontMatter(tArchivo, (frontmatter) => {
-				frontmatter["capitulo"] = frontmatter["capitulo"] + 1; 
+		if (eleccion) {
+			multiples = true;
+			nuevaCarpeta = eleccion.file.folder;
+			let tResumen = tp.file.find_tfile(eleccion.file.path);
+			await app.fileManager.processFrontMatter(tResumen, (frontmatter) => {
+				frontmatter["parte"] = 1;
 			});
 		}
 
-		moverArchivo(tema, materia);
-		crearFrontmatter(capitulo, materia);
-	}
+		resumenes = dv.pages(`"${materia.file.folder}" and #resumen`)
+			.sort(resumen => resumen.capitulo);
 
-	async function preguntarMateria(dv) {
-		let materias = dv.pages("#materia");
-		return tp.system.suggester(
-			materia => materia.file.name, 
-			materias, 
-			false, 
-			"En que materia estaría este archivo?");
-	}
+		let capitulo = 1;
+		let parte = 1;
+		if (resumenes.length > 0) {
+			// Preguntamos orden => obtenemos el número del capitulo
+			let antes = `Antes de ${nombreResumenes[0]}`;
+			let nuevaPos = await preguntar.suggester(
+				tp, [ antes, ...nombreResumenes.map(nombre => `Después de ${nombre}`)],
+				[0, ...resumenes.map(resumen => resumen.capitulo)]
+			)
+			capitulo = nuevaPos + 1;
 
-	async function moverArchivo(tema, materia) {
-		try {
-			await this.app.vault.createFolder(`${materia}/${tema}`);
-		} catch {}
+			// Con el capitulo, podemos reordenar
+			let actualizar = [];
+			for (let resumen of resumenes) {
+				if (resumen.capitulo < capitulo) {
+					if (multiples && nuevaCarpeta == resumen.file.folder) {
+						let parteResumen = resumen.parte ? resumen.parte : 1;
+						renombrar.push({ resumen: resumen, nuevoCapitulo: resumen.capitulo, nuevaParte: parteResumen });
+						parte = parteResumen + 1;
+					}
+					continue;
+				}
 
-		let tempCreado = false;
-		let contador = 0;
-		let nombre = "temp";
-		while (!tempCreado) {
-			try {
-				await tp.file.move(`${materia}/${tema}/${nombre}`);
-				tempCreado = true;
-			} catch {}	
-			contador++;	
-			nombre = `temp (${contador})`;
+				let info = { resumen: resumen, nuevoCapitulo: resumen.capitulo + 1 };
+				if (multiples && nuevaCarpeta == resumen.file.folder) {
+					info["nuevaParte"] = (resumen.parte ? resumen.parte : 1) + 1;
+				} else {
+					info["nuevaParte"] = resumen.parte;
+				}
+				actualizar.push(info);
+			}
+
+			for (let { resumen, nuevoCapitulo, nuevaParte } of actualizar) {
+				let tResumen = tp.file.find_tfile(resumen.file.path);
+
+				let tagPrevio = resumen.tags.find(tag => tag != "resumen");
+
+				let nuevoTag = resumen.file.folder.replaceAll(" ", "-");
+				if (resumen.parte !== nuevaParte) {
+					nuevoTag += `/${nuevaParte}`;
+				}
+
+				let actualizarCapitulo = resumen.capitulo !== nuevoCapitulo;
+				let actualizarParte = resumen.parte !== nuevaParte;
+
+				let tArchivos = dv.pages(`#${tagPrevio} and #nota`)
+					.map(archivo => tp.file.find_tfile(archivo.file.path));
+
+				let tareas = [];
+				let tarea = app.fileManager.processFrontMatter(tResumen, (frontmatter) => {
+					if (actualizarCapitulo) {
+						frontmatter["capitulo"] = nuevoCapitulo;
+					}
+
+					if (actualizarParte) {
+						frontmatter["parte"] = nuevaParte;
+						frontmatter["tags"] = [ nuevoTag, "resumen" ];
+					}						
+				});
+				tareas.push(tarea);
+
+				for (let tArchivoMod of tArchivos) {
+					tarea = app.fileManager.processFrontMatter(tArchivoMod, (frontmatter) => {
+						if (actualizarCapitulo) {
+							frontmatter["capitulo"] = nuevoCapitulo;
+						}
+
+						if (actualizarParte) {
+							frontmatter["tags"].remove(tagPrevio);
+							frontmatter["tags"].push(nuevoTag);
+						}
+					});
+					tareas.push(tarea);
+				}
+				await Promise.all(tareas);
+
+				if (actualizarParte) {
+					let nuevoTitulo = `Resumen Parte ${nuevaParte}`;
+					await app.vault.rename(tResumen, `${nuevaCarpeta}/${nuevoTitulo}.md`);
+				}
+			}
 		}
-	}
 
-	function crearFrontmatter(capitulo, materia) {
-		tR += "---\n";
-		
-		let dia = tp.file.creation_date("YYYY-MM-DD");
-		tR += `dia: ${dia}\n`;
-		tR += `materia: ${materia}\n`;
-		tR += `capitulo: ${capitulo}\n`
-		
-		tR += "---\n";
-		
-		tR += "### Definición\n---";
-	}
+		let tag = nuevaCarpeta.replaceAll(" ", "-");
+		if (multiples) tag += `/${parte}`;
 
-	async function salir(mensaje) {
-		let archivoActivo = app.workspace.getActiveFile();
-		new Notice(mensaje);
-		await app.vault.trash(archivoActivo, true);
-	}
-%>
-<% tp.file.cursor() %>
+		tR += "---\n";
+		tR += `capitulo: ${capitulo}\n`;
+		tR += `tags: \n - ${tag}\n - resumen\n`;
+		if (multiples) {
+			tR += `parte: ${parte}\n`;
+		}
+		tR += "---\n";
+
+		if (!multiples) {
+			await app.vault.createFolder(nuevaCarpeta);
+		}
+
+		let titulo = "Resumen";
+		if (multiples) {
+			titulo += ` Parte ${parte}`;
+		}
+		await app.vault.rename(tArchivo, `${nuevaCarpeta}/${titulo}.md`);
+		
+	} catch ({ name: _, message: mensaje }) {
+        return await tp.user.eliminar().eliminar(tp, tArchivo, mensaje);
+    }
+_%>
+### Índice
+---
+ * Sin notas todavía
+
+### Resumen
+---
+Pendiente...<% tp.file.cursor() %>

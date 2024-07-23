@@ -43,14 +43,10 @@
 	let tareas = [];
 	for (let { tag, carpeta } of resumenesModificar) {
 		let spliteado = tag.split("/");
-		let materia = spliteado[0];
-		materia = `${materia.charAt(0).toUpperCase()}${materia.slice(1)}`;
+		const materia = `${spliteado[0].charAt(0).toUpperCase()}${spliteado[0].slice(1)}`;
 		const nombreResumen = spliteado[1];
-		let capitulo;
-		if (spliteado.length > 2)
-			capitulo = parseInt(spliteado[2].replace("cap", ""), 10);
 		
-		let tarea = regenerar.resumen(tp, dv, carpeta, capitulo)
+		let tarea = regenerar.resumen(tp, dv, carpeta, tag)
 			.then((_) => mostrarMensaje(`Se regeneró: ${nombreResumen} de ${materia}`));
 		tareas.push(tarea);
 	}
@@ -71,7 +67,7 @@
 	await Promise.all(tareas)
 		.then((_) => mostrarMensaje("Materias regenerados"));	
 
-	return;
+	await app.vault.trash(tArchivo, true);
 
 	function mostrarMensaje(mensaje) {
 		console.log(mensaje);

@@ -19,12 +19,12 @@ tags:
 * [[orga/Pandas/Astype.md|Astype]]
 * [[orga/Pandas/Data frame - Pandas.md|Data frame - Pandas]]
 * [[orga/Pandas/Group - Pandas.md|Group - Pandas]]
+* [[orga/Pandas/Leer archivos - Pandas.md|Leer archivos - Pandas]]
 * [[orga/Pandas/Map - Pandas.md|Map - Pandas]]
 * [[orga/Pandas/Merge - Pandas.md|Merge - Pandas]]
 * [[orga/Pandas/Series - Pandas.md|Series - Pandas]]
 * [[orga/Pandas/Stack - Pandas.md|Stack - Pandas]]
 * [[orga/Pandas/Unstack.md|Unstack]]
-* [[orga/Pandas/Leer archivos - Pandas.md|Leer archivos - Pandas]]
 
 ##### Visualizaciones 
 ---
@@ -56,8 +56,13 @@ tags:
 ##### NLP 
 ---
 > [!summary]- Resumen
-> ![[orga/NLP/Resumen Parte I.md#Resumen]]
+> ![[orga/NLP/Resumen Parte 1.md#Resumen]]
 
+* [[orga/NLP/GRU.md|GRU]]
+* [[orga/NLP/Long short-term memory.md|Long short-term memory]]
+* [[orga/NLP/Red neuronal recurrente.md|Red neuronal recurrente]]
+* [[orga/NLP/Red neuronal convolucional.md|Red neuronal convolucional]]
+* [[orga/NLP/Softmax.md|Softmax]]
 * [[orga/NLP/Bag of words.md|Bag of words]]
 * [[orga/NLP/Embedding.md|Embedding]]
 * [[orga/NLP/Inverse document frequency.md|Inverse document frequency]]
@@ -72,7 +77,7 @@ tags:
 * [[orga/NLP/Stemming.md|Stemming]]
 * [[orga/NLP/Stop-word.md|Stop-word]]
 * [[orga/NLP/Term Frequency.md|Term Frequency]]
-* [[orga/NLP/Term frequency x inverse document frequency (TF-IDF).md|Term frequency x inverse document frequency (TF-IDF)]]
+* [[orga/NLP/Term frequency x inverse document frequency.md|Term frequency x inverse document frequency]]
 * [[orga/NLP/Token.md|Token]]
 * [[orga/NLP/Tokenización.md|Tokenización]]
 
@@ -102,8 +107,8 @@ tags:
 > [!summary]- Resumen
 > ![[orga/Spark/Resumen.md#Resumen]]
 
-* [[orga/Spark/Almacenamiento distribuido.md|Almacenamiento distribuido]]
 * [[orga/Spark/Acción - Spark.md|Acción - Spark]]
+* [[orga/Spark/Almacenamiento distribuido.md|Almacenamiento distribuido]]
 * [[orga/Spark/Apache spark.md|Apache spark]]
 * [[orga/Spark/Broadcast Join - Spark.md|Broadcast Join - Spark]]
 * [[orga/Spark/Cache - Spark.md|Cache - Spark]]
@@ -153,15 +158,14 @@ tags:
 * [[orga/Machine learning/Codificación de variables categóricas.md|Codificación de variables categóricas]]
 * [[orga/Machine learning/Cross validation.md|Cross validation]]
 * [[orga/Machine learning/Deep learning.md|Deep learning]]
-* [[orga/Machine learning/Ensamble.md|Ensamble]]
 * [[orga/Machine learning/Entrenar un modelo.md|Entrenar un modelo]]
 * [[orga/Machine learning/Error de entrenamiento.md|Error de entrenamiento]]
 * [[orga/Machine learning/Error de test.md|Error de test]]
 * [[orga/Machine learning/Hiper-parámetros de un modelo.md|Hiper-parámetros de un modelo]]
 * [[orga/Machine learning/K-Nearest Neighbors.md|K-Nearest Neighbors]]
 * [[orga/Machine learning/Mean encoding.md|Mean encoding]]
-* [[orga/Machine learning/Neurona lineal.md|Neurona lineal]]
 * [[orga/Machine learning/Métrica de un modelo.md|Métrica de un modelo]]
+* [[orga/Machine learning/Neurona lineal.md|Neurona lineal]]
 * [[orga/Machine learning/Neurona no lineal.md|Neurona no lineal]]
 * [[orga/Machine learning/Neurona.md|Neurona]]
 * [[orga/Machine learning/One hot encoding.md|One hot encoding]]
@@ -181,15 +185,33 @@ tags:
 * [[orga/Machine learning/Variance.md|Variance]]
 * [[orga/Machine learning/XGBoost.md|XGBoost]]
 * [[orga/Machine learning/Árbol de decisión.md|Árbol de decisión]]
+* [[orga/Machine learning/Ensamble.md|Ensamble]]
 
 ##### NLP 
 ---
 > [!summary]- Resumen
-> ![[orga/NLP/Resumen Parte II.md#Resumen]]
+> ![[orga/NLP/Resumen Parte 2.md#Resumen]]
 
 * [[orga/NLP/GRU.md|GRU]]
 * [[orga/NLP/Long short-term memory.md|Long short-term memory]]
 * [[orga/NLP/Red neuronal recurrente.md|Red neuronal recurrente]]
 * [[orga/NLP/Red neuronal convolucional.md|Red neuronal convolucional]]
 * [[orga/NLP/Softmax.md|Softmax]]
+* [[orga/NLP/Bag of words.md|Bag of words]]
+* [[orga/NLP/Embedding.md|Embedding]]
+* [[orga/NLP/Inverse document frequency.md|Inverse document frequency]]
+* [[orga/NLP/Lematización.md|Lematización]]
+* [[orga/NLP/Lemmatization.md|Lemmatization]]
+* [[orga/NLP/Memory usege.md|Memory usege]]
+* [[orga/NLP/N-gramas.md|N-gramas]]
+* [[orga/NLP/Normalización.md|Normalización]]
+* [[orga/NLP/Procesamiento del lenguaje natural.md|Procesamiento del lenguaje natural]]
+* [[orga/NLP/Similitud coseno.md|Similitud coseno]]
+* [[orga/NLP/Steamming.md|Steamming]]
+* [[orga/NLP/Stemming.md|Stemming]]
+* [[orga/NLP/Stop-word.md|Stop-word]]
+* [[orga/NLP/Term Frequency.md|Term Frequency]]
+* [[orga/NLP/Term frequency x inverse document frequency.md|Term frequency x inverse document frequency]]
+* [[orga/NLP/Token.md|Token]]
+* [[orga/NLP/Tokenización.md|Tokenización]]
 

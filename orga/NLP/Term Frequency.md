@@ -4,7 +4,7 @@ capitulo: 3
 aliases:
   - TF
 tags:
-  - orga/NLP/cap3
+  - orga/NLP/1
   - nota
 ---
 ### Definición

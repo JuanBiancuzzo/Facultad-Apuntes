@@ -21,7 +21,12 @@
 		case 1: resumen = resumenes[0]; break;
 		default:
 			resumen = await preguntar.suggester(
-				tp, resumen => `${resumen.file.folder.split("/")[1]}, capitulo ${resumen.capitulo}`, 
+				tp, resumen => {
+					let repre = `${resumen.file.folder.split("/")[1]}`;
+					if (resumen.multiple) 
+						repre += `, Parte ${resumen.parte}`;
+					return repre;
+				}, 
 				resumenes, 
 				"Que tema se incluye esta nota?",
 				"No se eligió un tema para la nota"

@@ -30,15 +30,10 @@ async function modificarMateria(tp, dv, carpeta) {
     return app.vault.modify(tArchivo, nuevoContenido);
 }
 
-async function modificarResumen(tp, dv, carpeta, capitulo) {
-    let archivosResumenes = dv.pages(`"${carpeta}" and #resumen`);
-    let archivo = archivosResumenes[0];
-    if (capitulo) {
-        archivo = archivosResumenes.filter(archivo => archivo.capitulo == capitulo)[0];
-    }
-    if (!archivo)
-        console.log(carpeta);
-    let tArchivo = tp.file.find_tfile(archivo.file.path);
+async function modificarResumen(tp, dv, carpeta, tag) {
+    let resumen = dv.pages(`"${carpeta}" and #resumen`)
+        .find(resumen => resumen.tags.includes(tag));
+    let tArchivo = tp.file.find_tfile(resumen.file.path);
 
     let patronIndice = "### Índice";
     let patronResumen = "### Resumen";
@@ -50,7 +45,6 @@ async function modificarResumen(tp, dv, carpeta, capitulo) {
     let indexResumen = contenido.indexOf(patronResumen);
     let contendioResumen = contenido.slice(indexResumen);
 
-    let tag = carpeta.replaceAll(" ", "-");
     nuevoContenido += dv.pages(`#${tag} and #nota`).map(pagina => {
         return `* [[${pagina.file.path}|${pagina.file.name}]]`;
     }).join("\n");

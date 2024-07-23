@@ -12,6 +12,7 @@
     "listado": "multitext",
     "bis": "checkbox",
     "plan": "number",
-    "algo": "text"
+    "algo": "text",
+    "parte": "number"
   }
 }

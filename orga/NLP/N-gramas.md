@@ -2,9 +2,9 @@
 dia: 2024-01-13
 capitulo: 3
 tags:
-  - orga/NLP/cap3
+  - orga/NLP/1
   - nota
 ---
 ### Definición
 ---
-Entendiendo a que un $1$-grama es un método como [[Term frequency x inverse document frequency (TF-IDF)|TF-IDF]], donde cada palabra tiene su propio peso, los $n$-gramas son las combinaciones de $n$ palabras. En nuestro vector tendríamos de $1$-grama, $2$-grama, $\cdots$, $n$-grama.
+Entendiendo a que un $1$-grama es un método como [[Term frequency x inverse document frequency|TF-IDF]], donde cada palabra tiene su propio peso, los $n$-gramas son las combinaciones de $n$ palabras. En nuestro vector tendríamos de $1$-grama, $2$-grama, $\cdots$, $n$-grama.

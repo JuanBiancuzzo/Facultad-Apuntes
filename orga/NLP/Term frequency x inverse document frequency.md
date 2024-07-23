@@ -2,8 +2,10 @@
 dia: 2023-03-30
 capitulo: 3
 tags:
-  - orga/NLP/cap3
+  - orga/NLP/1
   - nota
+aliases:
+  - TF-IDF
 ---
 ### Definición
 ---
