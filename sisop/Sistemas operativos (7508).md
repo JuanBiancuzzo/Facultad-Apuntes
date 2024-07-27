@@ -15,7 +15,6 @@ tags:
 
 * [[sisop/Kernel/Excepción del procesador.md|Excepción del procesador]]
 * [[sisop/Kernel/IOPL.md|IOPL]]
-* [[sisop/Kernel/Instrucción privilegiada.md|Instrucción privilegiada]]
 * [[sisop/Kernel/Interrupción por temporizador.md|Interrupción por temporizador]]
 * [[sisop/Kernel/Kernel mode.md|Kernel mode]]
 * [[sisop/Kernel/Kernel monolítico.md|Kernel monolítico]]
@@ -28,6 +27,7 @@ tags:
 * [[sisop/Kernel/Unix.md|Unix]]
 * [[sisop/Kernel/User mode.md|User mode]]
 * [[algo 1/Introducción a la programación/Procesador.md|Procesador]]
+* [[sisop/Kernel/Instrucción privilegiada.md|Instrucción privilegiada]]
 * [[sisop/Kernel/Ejecución directa.md|Ejecución directa]]
 * [[sisop/Kernel/Interrupción.md|Interrupción]]
 

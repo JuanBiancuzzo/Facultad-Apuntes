@@ -7,7 +7,7 @@ tags:
 ---
 ### Definición
 ---
-Esta expresión recorre las condiciones y devuelve el valor de la primera condición que se verifique. Se puede pensar como una [[Sentencia if-else|sentencia if-then-else]]
+Esta expresión recorre las condiciones y devuelve el valor de la primera condición que se verifique. Se puede pensar como una [[If else statement|sentencia if else]]
 
 #### Sintaxis
 ---

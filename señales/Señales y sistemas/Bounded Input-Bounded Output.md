@@ -4,6 +4,8 @@ capitulo: 1
 tags:
   - señales/Señales-y-sistemas
   - nota
+aliases:
+  - BIBO
 ---
 ### Definición
 ---

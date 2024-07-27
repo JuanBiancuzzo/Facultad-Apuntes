@@ -45,7 +45,7 @@
 	
 	let tareas = [];
 	for (let { tag, carpeta } of resumenesModificar) {
-		let spliteado = tag.split("/");
+		let spliteado = carpeta.split("/");
 		const materia = `${spliteado[0].charAt(0).toUpperCase()}${spliteado[0].slice(1)}`;
 		const nombreResumen = spliteado[1];
 		

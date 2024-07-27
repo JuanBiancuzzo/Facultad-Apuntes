@@ -23,6 +23,14 @@ tags:
 * [[algo 1/Introducción a la programación/Operaciones.md|Operaciones]]
 * [[algo 1/Introducción a la programación/Operación relacional.md|Operación relacional]]
 * [[algo 1/Introducción a la programación/Operación aritmética.md|Operación aritmética]]
+* [[algo 1/Introducción a la programación/Bloque de acción.md|Bloque de acción]]
+* [[algo 1/Introducción a la programación/If statement.md|If statement]]
+* [[algo 1/Introducción a la programación/If else statement.md|If else statement]]
+* [[algo 1/Introducción a la programación/If else if statement.md|If else if statement]]
+* [[algo 1/Introducción a la programación/Switch statement.md|Switch statement]]
+* [[algo 1/Introducción a la programación/Estructura de control selectiva.md|Estructura de control selectiva]]
+* [[algo 1/Introducción a la programación/Estructura de control.md|Estructura de control]]
+* [[algo 1/Introducción a la programación/Estructura de control iterativa.md|Estructura de control iterativa]]
 
 ### Resumen
 ---

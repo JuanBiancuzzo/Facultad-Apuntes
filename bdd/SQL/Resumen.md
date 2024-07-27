@@ -8,7 +8,6 @@ tags:
 ---
 * [[bdd/SQL/Alias.md|Alias]]
 * [[bdd/SQL/Carácter wildcard de SQL.md|Carácter wildcard de SQL]]
-* [[bdd/SQL/Expresión CASE.md|Expresión CASE]]
 * [[bdd/SQL/Función de agregación AVG.md|Función de agregación AVG]]
 * [[bdd/SQL/Función de agregación COUNT.md|Función de agregación COUNT]]
 * [[bdd/SQL/Función de agregación MAX.md|Función de agregación MAX]]
@@ -41,6 +40,7 @@ tags:
 * [[bdd/SQL/Stored Procedure.md|Stored Procedure]]
 * [[discreta/Álgebra de Boole/Operador lógico NOT.md|Operador lógico NOT]]
 * [[bdd/SQL/SQL Keywords.md|SQL Keywords]]
+* [[bdd/SQL/Expresión CASE.md|Expresión CASE]]
 
 ### Resumen
 ---
