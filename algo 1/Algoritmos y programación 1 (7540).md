@@ -37,5 +37,9 @@ tags:
 * [[algo 1/Introducción a la programación/Switch statement.md|Switch statement]]
 * [[algo 1/Introducción a la programación/Estructura de control selectiva.md|Estructura de control selectiva]]
 * [[algo 1/Introducción a la programación/Estructura de control.md|Estructura de control]]
+* [[algo 1/Introducción a la programación/While statement.md|While statement]]
+* [[algo 1/Introducción a la programación/Do while statement.md|Do while statement]]
+* [[algo 1/Introducción a la programación/For statement.md|For statement]]
 * [[algo 1/Introducción a la programación/Estructura de control iterativa.md|Estructura de control iterativa]]
+* [[analisis 2/Capitulo 2/Función.md|Función]]
 
