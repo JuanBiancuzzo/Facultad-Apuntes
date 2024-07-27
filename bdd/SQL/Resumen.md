@@ -6,6 +6,7 @@ tags:
 ---
 ### Índice 
 ---
+* [[bdd/SQL/Alias.md|Alias]]
 * [[bdd/SQL/Carácter wildcard de SQL.md|Carácter wildcard de SQL]]
 * [[bdd/SQL/Expresión CASE.md|Expresión CASE]]
 * [[bdd/SQL/Función de agregación AVG.md|Función de agregación AVG]]
@@ -21,13 +22,11 @@ tags:
 * [[bdd/SQL/Operador EXISTS.md|Operador EXISTS]]
 * [[bdd/SQL/Operador IN.md|Operador IN]]
 * [[bdd/SQL/Operador LIKE.md|Operador LIKE]]
-* [[bdd/SQL/Operador NOT.md|Operador NOT]]
 * [[bdd/SQL/Operador OR.md|Operador OR]]
 * [[bdd/SQL/Registro SQL.md|Registro SQL]]
 * [[bdd/SQL/Sentencia DELETE.md|Sentencia DELETE]]
 * [[bdd/SQL/Sentencia DISTINC.md|Sentencia DISTINC]]
 * [[bdd/SQL/Sentencia DROP TABLE.md|Sentencia DROP TABLE]]
-* [[bdd/SQL/SQL Keywords.md|SQL Keywords]]
 * [[bdd/SQL/Sentencia GROUP BY.md|Sentencia GROUP BY]]
 * [[bdd/SQL/Sentencia HAVING.md|Sentencia HAVING]]
 * [[bdd/SQL/Sentencia INSERT INTO.md|Sentencia INSERT INTO]]
@@ -40,7 +39,8 @@ tags:
 * [[bdd/SQL/Sentencia WHERE.md|Sentencia WHERE]]
 * [[bdd/SQL/Sentencia de SQL.md|Sentencia de SQL]]
 * [[bdd/SQL/Stored Procedure.md|Stored Procedure]]
-* [[bdd/SQL/Alias.md|Alias]]
+* [[discreta/Álgebra de Boole/Operador lógico NOT.md|Operador lógico NOT]]
+* [[bdd/SQL/SQL Keywords.md|SQL Keywords]]
 
 ### Resumen
 ---

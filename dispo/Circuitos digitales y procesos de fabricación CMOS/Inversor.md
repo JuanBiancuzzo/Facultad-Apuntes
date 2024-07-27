@@ -7,7 +7,7 @@ tags:
 ---
 ### Definición
 ---
-En la electrónica digital la información se representa mediante dos rangos distintos de [[Tensión|tensión]]
+En la electrónica digital la [[algo 1/Introducción a la programación/Información.md|información]] se representa mediante dos rangos distintos de [[Tensión|tensión]]
 
 ```tikz
 \begin{document} 
@@ -100,4 +100,4 @@ Clave para la regeneración de [[Señal|señal]]
 
 #### El inversor CMOS
 ---
-![[Inversor CMOS#Definición]]
+![[Inversor MOS Complementaria#Definición]]

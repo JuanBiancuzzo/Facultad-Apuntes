@@ -7,7 +7,6 @@ tags:
 ### Índice 
 ---
 * [[sisop/Scheduling/Afinidad de cache.md|Afinidad de cache]]
-* [[sisop/Scheduling/Arquitectura multiprocesador.md|Arquitectura multiprocesador]]
 * [[sisop/Scheduling/Localidad espacial.md|Localidad espacial]]
 * [[sisop/Scheduling/Localidad temporal.md|Localidad temporal]]
 * [[sisop/Scheduling/Multiple fix partitions.md|Multiple fix partitions]]
@@ -29,6 +28,7 @@ tags:
 * [[sisop/Scheduling/Time sharing.md|Time sharing]]
 * [[sisop/Scheduling/Vruntime.md|Vruntime]]
 * [[sisop/Scheduling/Workload.md|Workload]]
+* [[sisop/Scheduling/Arquitectura multiprocesador.md|Arquitectura multiprocesador]]
 * [[sisop/Scheduling/Cache.md|Cache]]
 * [[sisop/Scheduling/Política de planificación Completely Fair Scheduler.md|Política de planificación Completely Fair Scheduler]]
 

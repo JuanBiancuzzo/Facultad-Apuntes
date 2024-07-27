@@ -7,11 +7,13 @@
 	const RESUMEN = "Resumen";
 	const MATERIA = "Materia";
 
+	const resumenes = dv.pages("#resumen");
+
 	let archivosModificar = (await app.plugins
 		.plugins["obsidian-git"]
 		.updateCachedStatus()) // consigo todos los archivos modificados
 		.all
-		.map(archivo => dv.page(archivo.path)); // consigo su representación en dv
+		.map(archivo => dv.page(archivo.path)); // consigo su representa	ción en dv
 	
 	let tagsModificados = archivosModificar
 		.filter(archivo => archivo && tp.user.whiteList().archivoFacultad(archivo)) // filtro para obtener los archivos únicamente de la facu
@@ -20,7 +22,8 @@
 		.flatMap(archivo => { 
 			let resultado = [];
 			for (let tag of archivo.tags) {
-				resultado.push({ tag: tag, carpeta: archivo.file.folder });
+				let resumen = resumenes.find(resumen => resumen.tags.includes(tag));
+				if (resumen) resultado.push({ tag: tag, carpeta: resumen.file.folder });
 			}
 			return resultado;
 		}) // Consigo todos los tags
@@ -54,6 +57,8 @@
 
 	let materiasModificar = tagsModificados
 		.flatMap(({ tipo, tag, carpeta }) => (tipo == RESUMEN) ? [] : [ { tag: tag, carpeta: carpeta.split("/")[0] } ]);
+
+	console.log(materiasModificar);
 
 	tareas = [];
 	for (let { tag, carpeta } of materiasModificar) {

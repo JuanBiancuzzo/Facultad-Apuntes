@@ -5,11 +5,15 @@
 	let tArchivo = tp.file.find_tfile(tp.file.path(true));
 	let carpeta = tp.file.folder(true);
 
-	let titulo = await preguntar.prompt(tp, "Nombre:", "No se ingresó un nombre para la nota");
-	if (paginaHecha = tp.file.find_tfile(titulo)) {
-		let leaf = await app.workspace.getLeaf("tab");
-		await leaf.openFile(paginaHecha);
-		throw new Error("Este archivo ya existe");
+	let titulo = tp.file.title;
+
+	if (titulo.startsWith("Untitle")) {
+		titulo = await preguntar.prompt(tp, "Nombre:", "No se ingresó un nombre para la nota");
+		if (paginaHecha = tp.file.find_tfile(titulo)) {
+			let leaf = await app.workspace.getLeaf("tab");
+			await leaf.openFile(paginaHecha);
+			throw new Error("Este archivo ya existe");
+		}
 	}
 
 	let resumenes = dv.pages(`"${carpeta}" and #resumen`)

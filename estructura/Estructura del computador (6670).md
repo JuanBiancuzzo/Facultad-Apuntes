@@ -56,7 +56,7 @@ tags:
 * [[estructura/Algebra de boole/Postulados de Huntington.md|Postulados de Huntington]]
 * [[estructura/Algebra de boole/Producto de maxitérminos.md|Producto de maxitérminos]]
 * [[estructura/Algebra de boole/Suma de minitérminos.md|Suma de minitérminos]]
-* [[estructura/Algebra de boole/Teoremas del algebra de Boole.md|Teoremas del algebra de Boole]]
+* [[Álgebra de Boole|Álgebra de Boole]]
 
 ##### Diseño combinacional 
 ---

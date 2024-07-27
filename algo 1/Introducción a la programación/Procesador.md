@@ -7,6 +7,7 @@ aliases:
 tags:
   - algo-1/Introducción-a-la-programación
   - nota
+  - sisop/Kernel
 ---
 ### Definición
 ---

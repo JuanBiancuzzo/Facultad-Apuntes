@@ -29,7 +29,7 @@ Las keywords de [[Structured Query Language|SQL]] se puede separar en
 ---
 * [[Operador AND#En SQL|AND]] se usa como el [[Operación lógica|operador lógico]] 
 * [[Operador OR#En SQL|OR]] se usa como el [[Operación lógica|operador lógico]] 
-* [[Operador NOT#En SQL|NOT]] se usa como el [[Operación lógica|operador lógico]] 
+* [[Operador lógico NOT#En SQL|NOT]] se usa como el [[Operación lógica|operador lógico]] 
 * [[Operador LIKE|LIKE]] se usa para determinar un valor cumple un patrón
 * [[Operador IN|IN]] se usa para especificar varios valores
 * [[Operador BETWEEN|BETWEEN]] se usa para determinar un rango de selección

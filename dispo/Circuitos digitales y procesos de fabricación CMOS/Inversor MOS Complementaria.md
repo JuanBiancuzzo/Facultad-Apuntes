@@ -4,6 +4,8 @@ capitulo: 9
 tags:
   - dispo/Circuitos-digitales-y-procesos-de-fabricación-CMOS
   - nota
+aliases:
+  - Inversor CMOS
 ---
 ### Definición
 ---

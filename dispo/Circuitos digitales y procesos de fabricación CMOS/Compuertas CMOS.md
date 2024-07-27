@@ -134,4 +134,4 @@ $$ Y = X, ~ \text{if} ~ \overline{A} ~ \text{and} ~ \overline{B} = \overline{A +
 
 ##### Inversión
 ---
-![[Inversor CMOS#Definición]]
+![[Inversor MOS Complementaria#Definición]]

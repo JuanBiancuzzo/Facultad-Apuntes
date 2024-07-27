@@ -33,6 +33,11 @@ async function modificarMateria(tp, dv, carpeta) {
 async function modificarResumen(tp, dv, carpeta, tag) {
     let resumen = dv.pages(`"${carpeta}" and #resumen`)
         .find(resumen => resumen.tags.includes(tag));
+    if (!resumen) {
+        console.log("Error en encontrar resumen");
+        console.log(carpeta);
+        console.log(tag);
+    }
     let tArchivo = tp.file.find_tfile(resumen.file.path);
 
     let patronIndice = "### Índice";

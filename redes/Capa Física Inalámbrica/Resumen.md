@@ -1,8 +1,8 @@
 ---
 capitulo: 6
-tags: 
- - redes/Capa-Física-Inalámbrica
- - resumen
+tags:
+  - redes/Capa-Física-Inalámbrica
+  - resumen
 ---
 ### Índice 
 ---

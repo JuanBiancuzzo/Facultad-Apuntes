@@ -19,14 +19,15 @@ tags:
 * [[sisop/Kernel/Interrupción por temporizador.md|Interrupción por temporizador]]
 * [[sisop/Kernel/Kernel mode.md|Kernel mode]]
 * [[sisop/Kernel/Kernel monolítico.md|Kernel monolítico]]
-* [[sisop/Kernel/Linux.md|Linux]]
 * [[sisop/Kernel/Kernel.md|Kernel]]
+* [[sisop/Kernel/Linux.md|Linux]]
 * [[sisop/Kernel/Micro kernel.md|Micro kernel]]
 * [[sisop/Kernel/Modo de operación.md|Modo de operación]]
 * [[sisop/Kernel/Sistema operativo.md|Sistema operativo]]
 * [[sisop/Kernel/System call.md|System call]]
 * [[sisop/Kernel/Unix.md|Unix]]
 * [[sisop/Kernel/User mode.md|User mode]]
+* [[algo 1/Introducción a la programación/Procesador.md|Procesador]]
 * [[sisop/Kernel/Ejecución directa.md|Ejecución directa]]
 * [[sisop/Kernel/Interrupción.md|Interrupción]]
 
@@ -37,7 +38,6 @@ tags:
 
 * [[sisop/La abstracción de proceso/Arquitectura de Von Newman.md|Arquitectura de Von Newman]]
 * [[sisop/La abstracción de proceso/Brk system call.md|Brk system call]]
-* [[sisop/La abstracción de proceso/Compilador.md|Compilador]]
 * [[sisop/La abstracción de proceso/Contexto de los registros.md|Contexto de los registros]]
 * [[sisop/La abstracción de proceso/Contexto del nivel del sistema.md|Contexto del nivel del sistema]]
 * [[sisop/La abstracción de proceso/Contexto del nivel del usuario.md|Contexto del nivel del usuario]]
@@ -49,13 +49,14 @@ tags:
 * [[sisop/La abstracción de proceso/Fork system call.md|Fork system call]]
 * [[sisop/La abstracción de proceso/Getpid system call.md|Getpid system call]]
 * [[sisop/La abstracción de proceso/Getppid system call.md|Getppid system call]]
-* [[sisop/La abstracción de proceso/Process Control Block.md|Process Control Block]]
 * [[sisop/La abstracción de proceso/Proceso.md|Proceso]]
+* [[sisop/La abstracción de proceso/Process Control Block.md|Process Control Block]]
 * [[sisop/La abstracción de proceso/Unix process system calls.md|Unix process system calls]]
-* [[sisop/La abstracción de proceso/Programa.md|Programa]]
 * [[sisop/La abstracción de proceso/User Area.md|User Area]]
 * [[sisop/La abstracción de proceso/Virtualización del procesador.md|Virtualización del procesador]]
 * [[sisop/La abstracción de proceso/Wait system call.md|Wait system call]]
+* [[sisop/La abstracción de proceso/Programa.md|Programa]]
+* [[sisop/La abstracción de proceso/Compilador.md|Compilador]]
 
 ##### Virtualización de memoria 
 ---
@@ -86,7 +87,6 @@ tags:
 > ![[sisop/Scheduling/Resumen.md#Resumen]]
 
 * [[sisop/Scheduling/Afinidad de cache.md|Afinidad de cache]]
-* [[sisop/Scheduling/Arquitectura multiprocesador.md|Arquitectura multiprocesador]]
 * [[sisop/Scheduling/Localidad espacial.md|Localidad espacial]]
 * [[sisop/Scheduling/Localidad temporal.md|Localidad temporal]]
 * [[sisop/Scheduling/Multiple fix partitions.md|Multiple fix partitions]]
@@ -108,6 +108,7 @@ tags:
 * [[sisop/Scheduling/Time sharing.md|Time sharing]]
 * [[sisop/Scheduling/Vruntime.md|Vruntime]]
 * [[sisop/Scheduling/Workload.md|Workload]]
+* [[sisop/Scheduling/Arquitectura multiprocesador.md|Arquitectura multiprocesador]]
 * [[sisop/Scheduling/Cache.md|Cache]]
 * [[sisop/Scheduling/Política de planificación Completely Fair Scheduler.md|Política de planificación Completely Fair Scheduler]]
 
@@ -121,13 +122,13 @@ tags:
 * [[sisop/Concurrencia/Estados de un thread.md|Estados de un thread]]
 * [[sisop/Concurrencia/Lock.md|Lock]]
 * [[sisop/Concurrencia/Operación atómica.md|Operación atómica]]
-* [[sisop/Concurrencia/Race condition.md|Race condition]]
 * [[sisop/Concurrencia/POSIX Threads.md|POSIX Threads]]
+* [[sisop/Concurrencia/Race condition.md|Race condition]]
 * [[sisop/Concurrencia/Sincronización de un programa multithreading.md|Sincronización de un programa multithreading]]
 * [[sisop/Concurrencia/Thread Shared State.md|Thread Shared State]]
 * [[sisop/Concurrencia/Thread scheduler.md|Thread scheduler]]
-* [[sisop/Concurrencia/Threads Control Block.md|Threads Control Block]]
 * [[sisop/Concurrencia/Thread.md|Thread]]
+* [[sisop/Concurrencia/Threads Control Block.md|Threads Control Block]]
 
 ##### File system 
 ---
@@ -149,8 +150,8 @@ tags:
 * [[sisop/File system/Link system call.md|Link system call]]
 * [[sisop/File system/Lseek system call.md|Lseek system call]]
 * [[sisop/File system/Mkdir system call.md|Mkdir system call]]
-* [[sisop/File system/Opendir system call.md|Opendir system call]]
 * [[sisop/File system/Open system call.md|Open system call]]
+* [[sisop/File system/Opendir system call.md|Opendir system call]]
 * [[sisop/File system/Read system call.md|Read system call]]
 * [[sisop/File system/Rmdir system call.md|Rmdir system call]]
 * [[sisop/File system/Stat system call.md|Stat system call]]

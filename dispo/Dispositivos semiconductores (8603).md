@@ -68,12 +68,12 @@ tags:
 * [[dispo/Diodo de Juntura PN/Capacidad de difusión.md|Capacidad de difusión]]
 * [[dispo/Diodo de Juntura PN/Coeficiente de emisión o Factor de idealidad.md|Coeficiente de emisión o Factor de idealidad]]
 * [[dispo/Diodo de Juntura PN/Conductancia dinámica.md|Conductancia dinámica]]
-* [[dispo/Diodo de Juntura PN/Diodo Zener.md|Diodo Zener]]
 * [[dispo/Diodo de Juntura PN/Corriente del Diodo.md|Corriente del Diodo]]
+* [[dispo/Diodo de Juntura PN/Diodo Zener.md|Diodo Zener]]
 * [[dispo/Diodo de Juntura PN/Diodo de Juntura PN.md|Diodo de Juntura PN]]
 * [[dispo/Diodo de Juntura PN/Hipótesis de bajo nivel de inyección.md|Hipótesis de bajo nivel de inyección]]
-* [[dispo/Diodo de Juntura PN/Ruptura inversa.md|Ruptura inversa]]
 * [[dispo/Diodo de Juntura PN/Modelo de pequeña señal para diodo.md|Modelo de pequeña señal para diodo]]
+* [[dispo/Diodo de Juntura PN/Ruptura inversa.md|Ruptura inversa]]
 * [[dispo/Diodo de Juntura PN/Tiempo de tránsito.md|Tiempo de tránsito]]
 * [[dispo/Diodo de Juntura PN/Diodo.md|Diodo]]
 
@@ -108,8 +108,8 @@ tags:
 
 * [[dispo/Juntura MOS/Acumulación de la estructura Metal-Óxido-Semiconductor (MOS).md|Acumulación de la estructura Metal-Óxido-Semiconductor (MOS)]]
 * [[dispo/Juntura MOS/Body factor coefficient.md|Body factor coefficient]]
-* [[dispo/Juntura MOS/Capacidad de óxido.md|Capacidad de óxido]]
 * [[dispo/Juntura MOS/Capacidad de la estructura Metal-Óxido-Semiconductor (MOS).md|Capacidad de la estructura Metal-Óxido-Semiconductor (MOS)]]
+* [[dispo/Juntura MOS/Capacidad de óxido.md|Capacidad de óxido]]
 * [[dispo/Juntura MOS/Estructura Metal-Óxido-Semiconductor (MOS) con polarización.md|Estructura Metal-Óxido-Semiconductor (MOS) con polarización]]
 * [[dispo/Juntura MOS/Estructura Metal-Óxido-Semiconductor (MOS).md|Estructura Metal-Óxido-Semiconductor (MOS)]]
 * [[dispo/Juntura MOS/Inversión de la estructura Metal-Óxido-Semiconductor (MOS).md|Inversión de la estructura Metal-Óxido-Semiconductor (MOS)]]
@@ -139,8 +139,8 @@ tags:
 > [!summary]- Resumen
 > ![[dispo/Amplificador emisor y source común/Resumen.md#Resumen]]
 
-* [[dispo/Amplificador emisor y source común/Amplificador Source Común con un transistor de efecto de campo metal-óxido-semiconductor.md|Amplificador Source Común con un transistor de efecto de campo metal-óxido-semiconductor]]
 * [[dispo/Amplificador emisor y source común/Amplificador Emisor Común con un transistor bipolar de juntura.md|Amplificador Emisor Común con un transistor bipolar de juntura]]
+* [[dispo/Amplificador emisor y source común/Amplificador Source Común con un transistor de efecto de campo metal-óxido-semiconductor.md|Amplificador Source Común con un transistor de efecto de campo metal-óxido-semiconductor]]
 * [[dispo/Amplificador emisor y source común/Amplificador de tensión.md|Amplificador de tensión]]
 * [[dispo/Amplificador emisor y source común/Copia de corriente espejo simple.md|Copia de corriente espejo simple]]
 * [[dispo/Amplificador emisor y source común/Distorsión por alinealidad en un Amplificador emisor común.md|Distorsión por alinealidad en un Amplificador emisor común]]
@@ -158,8 +158,8 @@ tags:
 > ![[dispo/Dispositivos de potencia/Resumen.md#Resumen]]
 
 * [[dispo/Dispositivos de potencia/Diodo de potencia.md|Diodo de potencia]]
-* [[dispo/Dispositivos de potencia/Elemento encapsulado.md|Elemento encapsulado]]
 * [[dispo/Dispositivos de potencia/Electrónica de potencia.md|Electrónica de potencia]]
+* [[dispo/Dispositivos de potencia/Elemento encapsulado.md|Elemento encapsulado]]
 * [[dispo/Dispositivos de potencia/TBJ de potencia.md|TBJ de potencia]]
 * [[dispo/Dispositivos de potencia/Transistor de efecto de campo metal-óxido-semiconductor de potencia.md|Transistor de efecto de campo metal-óxido-semiconductor de potencia]]
 * [[dispo/Dispositivos de potencia/Modelo térmico equivalente.md|Modelo térmico equivalente]]
@@ -171,8 +171,8 @@ tags:
 > [!summary]- Resumen
 > ![[dispo/Circuitos digitales y procesos de fabricación CMOS/Resumen.md#Resumen]]
 
-* [[dispo/Circuitos digitales y procesos de fabricación CMOS/Compuertas CMOS.md|Compuertas CMOS]]
 * [[dispo/Circuitos digitales y procesos de fabricación CMOS/Inversor ideal.md|Inversor ideal]]
+* [[dispo/Circuitos digitales y procesos de fabricación CMOS/Compuertas CMOS.md|Compuertas CMOS]]
 * [[dispo/Circuitos digitales y procesos de fabricación CMOS/Inversor.md|Inversor]]
-* [[dispo/Circuitos digitales y procesos de fabricación CMOS/Inversor CMOS.md|Inversor CMOS]]
+* [[dispo/Circuitos digitales y procesos de fabricación CMOS/Inversor MOS Complementaria.md|Inversor MOS Complementaria]]
 

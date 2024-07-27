@@ -4,6 +4,9 @@ capitulo: 2
 tags:
   - sisop/La-abstracción-de-proceso
   - nota
+  - algo-1/Introducción-a-la-programación
+aliases:
+  - Compilación
 ---
 ### Definición
 ---
