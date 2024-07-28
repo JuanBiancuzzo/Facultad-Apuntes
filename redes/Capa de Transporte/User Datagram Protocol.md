@@ -1,6 +1,5 @@
 ---
 dia: 2024-03-19
-capitulo: 3
 aliases:
   - UDP
 tags:

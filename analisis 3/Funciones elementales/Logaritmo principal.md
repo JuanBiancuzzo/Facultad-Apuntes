@@ -1,6 +1,5 @@
 ---
 dia: 2022-09-22
-capitulo: 4
 tags:
   - analisis-3/Funciones-elementales
   - nota

@@ -1,6 +1,5 @@
 ---
 dia: 2024-02-20
-capitulo: 7
 tags:
   - dispo/Amplificador-emisor-y-source-común
   - nota

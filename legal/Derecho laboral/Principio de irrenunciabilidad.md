@@ -1,6 +1,5 @@
 ---
 dia: 2024-01-08
-capitulo: 5
 tags:
   - legal/Derecho-laboral
   - nota

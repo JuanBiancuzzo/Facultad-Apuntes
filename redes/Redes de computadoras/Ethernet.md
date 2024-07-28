@@ -1,6 +1,5 @@
 ---
 dia: 2024-04-22
-capitulo: 1
 tags:
   - redes/Redes-de-computadoras
   - nota

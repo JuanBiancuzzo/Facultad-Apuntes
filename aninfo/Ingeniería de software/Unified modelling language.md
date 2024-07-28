@@ -1,6 +1,5 @@
 ---
 dia: 2023-08-27
-capitulo: 1
 aliases:
   - UML
 tags:

@@ -1,6 +1,5 @@
 ---
 dia: 2024-01-08
-capitulo: 6
 tags:
   - legal/Derechos-humanos
   - nota

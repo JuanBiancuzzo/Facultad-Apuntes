@@ -1,6 +1,5 @@
 ---
 dia: 2023-08-26
-capitulo: 1
 tags:
   - señales/Señales-y-sistemas
   - nota

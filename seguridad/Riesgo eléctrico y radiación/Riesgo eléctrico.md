@@ -1,6 +1,5 @@
 ---
 dia: 2023-04-17
-capitulo: 6
 tags:
   - seguridad/Riesgo-eléctrico-y-radiación
   - nota

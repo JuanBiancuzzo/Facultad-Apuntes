@@ -1,6 +1,5 @@
 ---
 dia: 2024-04-23
-capitulo: 2
 aliases:
   - Teorema de Miller de tensiones
 tags:

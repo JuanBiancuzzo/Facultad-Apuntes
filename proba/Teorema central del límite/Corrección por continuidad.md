@@ -1,6 +1,5 @@
 ---
 dia: 2023-01-23
-capitulo: 9
 tags:
   - proba/Teorema-central-del-límite
   - nota

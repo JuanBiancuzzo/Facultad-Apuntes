@@ -1,6 +1,5 @@
 ---
 dia: 2024-04-23
-capitulo: 2
 aliases:
   - MPS del transistor de efecto de campo de unión
   - MPS del JFET

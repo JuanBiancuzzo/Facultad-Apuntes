@@ -1,6 +1,5 @@
 ---
 dia: 2024-03-11
-capitulo: 7
 aliases:
   - ROC de la transformada de Laplace
 tags:

@@ -1,6 +1,5 @@
 ---
 dia: 2023-11-16
-capitulo: 6
 aliases:
   - MPS para transistor de efecto de campo metal-óxido-semiconductor
   - MPS para MOSFET

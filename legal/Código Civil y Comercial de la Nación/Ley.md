@@ -1,6 +1,5 @@
 ---
 dia: 2024-01-12
-capitulo: 1
 aliases:
   - Código
 tags:

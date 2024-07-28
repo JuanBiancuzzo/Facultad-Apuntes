@@ -1,6 +1,5 @@
 ---
 dia: 2022-11-26
-capitulo: 8
 tags:
   - analisis-3/Series-de-Laurent
   - nota

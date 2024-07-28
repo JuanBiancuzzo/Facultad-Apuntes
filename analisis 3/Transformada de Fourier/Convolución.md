@@ -1,6 +1,5 @@
 ---
 dia: 2022-12-04
-capitulo: 15
 tags:
   - analisis-3/Transformada-de-Fourier
   - nota

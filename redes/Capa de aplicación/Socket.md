@@ -1,6 +1,5 @@
 ---
 dia: 2024-04-19
-capitulo: 2
 aliases:
   - Puerto
 tags:

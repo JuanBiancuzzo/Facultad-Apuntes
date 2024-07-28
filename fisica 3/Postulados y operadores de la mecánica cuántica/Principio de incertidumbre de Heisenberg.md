@@ -1,6 +1,5 @@
 ---
 dia: 2023-08-24
-capitulo: 7
 tags:
   - fisica-3/Postulados-y-operadores-de-la-mecánica-cuántica
   - nota

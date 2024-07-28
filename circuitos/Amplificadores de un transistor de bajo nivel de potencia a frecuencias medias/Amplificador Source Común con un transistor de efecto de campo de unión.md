@@ -1,6 +1,5 @@
 ---
 dia: 2024-04-30
-capitulo: 3
 aliases:
   - Amplificador Source Común con un JFET
 tags:

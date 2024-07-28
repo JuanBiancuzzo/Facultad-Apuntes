@@ -1,6 +1,5 @@
 ---
 dia: 2024-03-16
-capitulo: 2
 tags:
   - señales/Sistemas-LTI
   - nota

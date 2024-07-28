@@ -1,6 +1,5 @@
 ---
 dia: 2022-11-25
-capitulo: 8
 aliases:
   - Polo evitable
 tags:

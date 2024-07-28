@@ -1,6 +1,5 @@
 ---
 dia: 2023-11-10
-capitulo: 6
 aliases:
   - Triodo del MOSFET
 tags:

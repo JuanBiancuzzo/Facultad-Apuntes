@@ -1,6 +1,5 @@
 ---
 dia: 2023-11-26
-capitulo: 7
 aliases:
   - Amplificador Emisor Común
   - Amplificador Emisor Común con un TBJ

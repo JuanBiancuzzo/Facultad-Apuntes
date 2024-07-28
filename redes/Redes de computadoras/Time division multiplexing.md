@@ -1,6 +1,5 @@
 ---
 dia: 2024-05-29
-capitulo: 1
 aliases:
   - TDM
 tags:

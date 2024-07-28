@@ -1,6 +1,5 @@
 ---
 dia: 2024-03-21
-capitulo: 2
 tags:
   - bdd/SQL
   - nota

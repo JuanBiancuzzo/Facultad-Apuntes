@@ -1,6 +1,5 @@
 ---
 dia: 2022-12-04
-capitulo: 16
 tags:
   - analisis-3/Transformada-de-Laplace
   - nota

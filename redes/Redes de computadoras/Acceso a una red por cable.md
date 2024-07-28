@@ -1,6 +1,5 @@
 ---
 dia: 2024-04-22
-capitulo: 1
 aliases:
   - Cable de cobra de par trenzado
   - Cable coaxial

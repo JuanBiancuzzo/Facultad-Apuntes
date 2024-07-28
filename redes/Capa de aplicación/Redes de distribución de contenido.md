@@ -1,6 +1,5 @@
 ---
 dia: 2024-03-19
-capitulo: 2
 aliases:
   - CDN
   - Content provider networks

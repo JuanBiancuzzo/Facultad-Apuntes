@@ -1,6 +1,5 @@
 ---
 dia: 2022-09-12
-capitulo: 3
 tags:
   - analisis-3/Series
   - nota

@@ -1,6 +1,5 @@
 ---
 dia: 2023-11-19
-capitulo: 4
 aliases:
   - Política de planificación CSF
 tags:

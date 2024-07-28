@@ -1,6 +1,5 @@
 ---
 dia: 2023-10-22
-capitulo: 7
 tags:
   - aninfo/Requisitos-en-contexto
   - nota

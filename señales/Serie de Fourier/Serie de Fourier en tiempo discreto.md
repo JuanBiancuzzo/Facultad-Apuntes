@@ -1,6 +1,5 @@
 ---
 dia: 2024-03-26
-capitulo: 3
 tags:
   - señales/Serie-de-Fourier
   - nota

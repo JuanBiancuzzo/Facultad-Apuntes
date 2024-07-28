@@ -1,6 +1,5 @@
 ---
 dia: 2023-04-03
-capitulo: 4
 aliases:
   - dB
 tags:

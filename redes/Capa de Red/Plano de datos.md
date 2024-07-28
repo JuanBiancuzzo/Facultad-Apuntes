@@ -1,6 +1,5 @@
 ---
 dia: 2024-06-05
-capitulo: 4
 aliases:
   - Data plane
 tags:

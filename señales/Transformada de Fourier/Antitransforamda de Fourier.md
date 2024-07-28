@@ -1,6 +1,5 @@
 ---
 dia: 2024-03-11
-capitulo: 4
 tags:
   - señales/Transformada-de-Fourier
   - nota

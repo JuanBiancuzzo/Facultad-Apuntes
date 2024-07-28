@@ -1,6 +1,5 @@
 ---
 dia: 2024-06-01
-capitulo: 3
 tags:
   - redes/Capa-de-Transporte
   - nota

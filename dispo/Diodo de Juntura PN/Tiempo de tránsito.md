@@ -1,6 +1,5 @@
 ---
 dia: 2023-09-17
-capitulo: 3
 tags:
   - dispo/Diodo-de-Juntura-PN
   - nota

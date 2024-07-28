@@ -1,6 +1,5 @@
 ---
 dia: 2023-09-06
-capitulo: 1
 tags:
   - dispo/Física-de-semiconductores
   - nota

@@ -1,6 +1,5 @@
 ---
 dia: 2024-06-14
-capitulo: 4
 aliases:
   - Fragmentación de IP
 tags:

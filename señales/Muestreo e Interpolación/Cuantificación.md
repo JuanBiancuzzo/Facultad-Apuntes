@@ -1,6 +1,5 @@
 ---
 dia: 2024-05-14
-capitulo: 5
 tags:
   - señales/Muestreo-e-Interpolación
   - nota

@@ -1,6 +1,5 @@
 ---
 dia: 2023-08-26
-capitulo: 9
 tags:
   - aninfo/Prototipado-y-experiencia-del-usuario
   - nota

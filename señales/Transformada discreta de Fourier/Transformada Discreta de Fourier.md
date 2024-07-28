@@ -1,6 +1,5 @@
 ---
 dia: 2024-03-11
-capitulo: 6
 aliases:
   - DFT
   - Discrete Fourier Transform

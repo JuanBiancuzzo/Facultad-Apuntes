@@ -1,6 +1,5 @@
 ---
 dia: 2024-05-10
-capitulo: 1
 tags:
   - bdd/General
   - nota

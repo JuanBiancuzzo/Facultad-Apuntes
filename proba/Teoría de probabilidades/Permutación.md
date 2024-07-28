@@ -1,6 +1,5 @@
 ---
 dia: 2024-01-13
-capitulo: 1
 tags:
   - proba/Teoría-de-probabilidades
   - nota

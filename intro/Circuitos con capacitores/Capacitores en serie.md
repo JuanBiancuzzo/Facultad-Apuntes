@@ -1,6 +1,5 @@
 ---
 dia: 2023-08-24
-capitulo: 3
 tags:
   - intro/Circuitos-con-capacitores
   - nota

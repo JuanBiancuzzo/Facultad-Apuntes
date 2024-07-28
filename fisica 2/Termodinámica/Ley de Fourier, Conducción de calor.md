@@ -1,6 +1,5 @@
 ---
 dia: 2024-02-29
-capitulo: 1
 tags:
   - fisica-2/Termodinámica
   - nota

@@ -1,6 +1,5 @@
 ---
 dia: 2024-01-18
-capitulo: 2
 tags:
   - legal/Obligaciones
   - nota

@@ -1,6 +1,5 @@
 ---
 dia: 2024-06-15
-capitulo: 4
 aliases:
   - DHCP
   - Protocolo dinámico de configuración de hosts

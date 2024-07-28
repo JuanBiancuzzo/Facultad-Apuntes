@@ -1,6 +1,5 @@
 ---
 dia: 2024-04-22
-capitulo: 1
 aliases:
   - WiFi
   - IEEE 802.11

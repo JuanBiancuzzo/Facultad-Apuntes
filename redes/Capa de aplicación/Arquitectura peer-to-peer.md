@@ -1,6 +1,5 @@
 ---
 dia: 2024-04-18
-capitulo: 2
 aliases:
   - P2P
 tags:

@@ -1,6 +1,5 @@
 ---
 dia: 2023-10-16
-capitulo: 4
 tags:
   - dispo/Transistor-bipolar-de-juntura
   - nota

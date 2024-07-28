@@ -1,6 +1,5 @@
 ---
 dia: 2023-11-11
-capitulo: 6
 tags:
   - dispo/Transistor-MOSFET
   - nota

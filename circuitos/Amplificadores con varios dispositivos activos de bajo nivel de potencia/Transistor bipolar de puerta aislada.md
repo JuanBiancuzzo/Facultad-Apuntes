@@ -1,6 +1,5 @@
 ---
 dia: 2024-06-04
-capitulo: 4
 aliases:
   - Insulated-gate bipolar transistor
   - IGBT

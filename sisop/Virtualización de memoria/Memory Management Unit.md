@@ -1,6 +1,5 @@
 ---
 dia: 2023-11-14
-capitulo: 3
 aliases:
   - MMU
 tags:

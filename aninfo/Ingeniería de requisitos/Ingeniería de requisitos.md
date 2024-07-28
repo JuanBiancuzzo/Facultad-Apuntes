@@ -1,6 +1,5 @@
 ---
 dia: 2023-08-31
-capitulo: 2
 tags:
   - aninfo/Ingeniería-de-requisitos
   - nota

@@ -1,6 +1,5 @@
 ---
 dia: 2023-11-20
-capitulo: 6
 aliases:
   - Transconductancia para MOSFET
 tags:

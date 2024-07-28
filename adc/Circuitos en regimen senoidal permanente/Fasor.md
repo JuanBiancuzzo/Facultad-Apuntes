@@ -1,6 +1,5 @@
 ---
 dia: 2023-09-03
-capitulo: 3
 tags:
   - adc/Circuitos-en-regimen-senoidal-permanente
   - nota

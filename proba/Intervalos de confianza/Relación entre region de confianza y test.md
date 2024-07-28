@@ -1,6 +1,5 @@
 ---
 dia: 2023-01-23
-capitulo: 12
 tags:
   - proba/Intervalos-de-confianza
   - nota

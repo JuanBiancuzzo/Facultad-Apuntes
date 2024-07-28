@@ -1,6 +1,5 @@
 ---
 dia: 2024-05-28
-capitulo: 3
 aliases:
   - Principio de entrega confiable
   - Principles of reliable data transfer

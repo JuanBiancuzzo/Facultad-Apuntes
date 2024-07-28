@@ -1,6 +1,5 @@
 ---
 dia: 2023-12-11
-capitulo: 2
 aliases:
   - PCB
 tags:

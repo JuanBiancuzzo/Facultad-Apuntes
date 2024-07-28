@@ -1,6 +1,5 @@
 ---
 dia: 2023-04-21
-capitulo: 4
 tags:
   - estructura/Diseño-combinacional
   - nota

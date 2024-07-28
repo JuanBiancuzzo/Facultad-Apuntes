@@ -1,6 +1,5 @@
 ---
 dia: 2023-01-22
-capitulo: 1
 aliases:
   - Espacio nulo
   - Espacio columna

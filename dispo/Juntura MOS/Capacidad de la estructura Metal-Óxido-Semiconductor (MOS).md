@@ -1,6 +1,5 @@
 ---
 dia: 2023-11-10
-capitulo: 5
 tags:
   - dispo/Juntura-MOS
   - nota

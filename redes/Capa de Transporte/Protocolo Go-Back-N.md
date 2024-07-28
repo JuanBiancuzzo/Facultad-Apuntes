@@ -1,6 +1,5 @@
 ---
 dia: 2024-06-03
-capitulo: 3
 aliases:
   - GBN
   - Sliding-window protocol

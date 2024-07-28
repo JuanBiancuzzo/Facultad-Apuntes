@@ -1,6 +1,5 @@
 ---
 dia: 2023-03-23
-capitulo: 2
 tags:
   - orga/Visualizaciones
   - nota

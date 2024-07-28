@@ -1,6 +1,5 @@
 ---
 dia: 2023-11-28
-capitulo: 7
 aliases:
   - Amplificador Source Común con un MOSFET
 tags:

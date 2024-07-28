@@ -1,6 +1,5 @@
 ---
 dia: 2023-08-26
-capitulo: 10
 tags:
   - aninfo/Diseño-de-datos
   - nota

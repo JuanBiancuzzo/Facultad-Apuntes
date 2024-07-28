@@ -1,6 +1,5 @@
 ---
 dia: 2023-10-22
-capitulo: 8
 tags:
   - aninfo/Diseño-de-software
   - nota

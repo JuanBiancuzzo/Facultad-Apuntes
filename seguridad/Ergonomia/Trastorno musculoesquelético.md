@@ -1,6 +1,5 @@
 ---
 dia: 2023-07-17
-capitulo: 15
 aliases:
   - TME
 tags:

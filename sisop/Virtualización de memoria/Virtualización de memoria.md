@@ -1,6 +1,5 @@
 ---
 dia: 2023-11-12
-capitulo: 3
 tags:
   - sisop/Virtualización-de-memoria
   - nota

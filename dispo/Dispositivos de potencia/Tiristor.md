@@ -1,6 +1,5 @@
 ---
 dia: 2024-02-28
-capitulo: 8
 tags:
   - dispo/Dispositivos-de-potencia
   - nota

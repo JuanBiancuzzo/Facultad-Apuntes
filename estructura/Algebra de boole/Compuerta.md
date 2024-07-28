@@ -1,6 +1,5 @@
 ---
 dia: 2023-04-09
-capitulo: 3
 tags:
   - estructura/Algebra-de-boole
   - nota

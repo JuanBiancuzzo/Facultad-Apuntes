@@ -1,6 +1,5 @@
 ---
 dia: 2024-01-13
-capitulo: 3
 tags:
   - orga/NLP/1
   - nota

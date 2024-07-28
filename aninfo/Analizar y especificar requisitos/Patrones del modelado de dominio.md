@@ -1,6 +1,5 @@
 ---
 dia: 2023-10-26
-capitulo: 4
 tags:
   - aninfo/Analizar-y-especificar-requisitos
   - nota

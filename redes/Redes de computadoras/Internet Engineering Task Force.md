@@ -1,6 +1,5 @@
 ---
 dia: 2024-04-21
-capitulo: 1
 aliases:
   - IETF
 tags:

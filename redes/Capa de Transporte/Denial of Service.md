@@ -1,6 +1,5 @@
 ---
 dia: 2024-04-19
-capitulo: 3
 aliases:
   - DoS
   - DDoS

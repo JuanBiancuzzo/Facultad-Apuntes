@@ -1,6 +1,5 @@
 ---
 dia: 2024-05-12
-capitulo: 1
 aliases:
   - SQL
 tags:

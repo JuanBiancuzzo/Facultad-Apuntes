@@ -1,6 +1,5 @@
 ---
 dia: 2023-04-16
-capitulo: 1
 tags:
   - seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
   - nota

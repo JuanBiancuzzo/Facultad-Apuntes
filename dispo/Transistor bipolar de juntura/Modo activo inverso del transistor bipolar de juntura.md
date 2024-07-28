@@ -1,6 +1,5 @@
 ---
 dia: 2023-10-14
-capitulo: 4
 aliases:
   - MAI del TBJ
   - Modo activo inverso del TBJ

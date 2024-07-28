@@ -1,6 +1,5 @@
 ---
 dia: 2023-09-03
-capitulo: 1
 tags:
   - intro/Circuitos-con-resistencias
   - nota

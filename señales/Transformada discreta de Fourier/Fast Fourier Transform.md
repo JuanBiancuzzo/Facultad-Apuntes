@@ -1,6 +1,5 @@
 ---
 dia: 2024-05-15
-capitulo: 6
 aliases:
   - FFT
   - Transformada Rápida de Fourier

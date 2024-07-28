@@ -1,6 +1,5 @@
 ---
 dia: 2023-09-08
-capitulo: 2
 tags:
   - dispo/Juntura-PN
   - nota

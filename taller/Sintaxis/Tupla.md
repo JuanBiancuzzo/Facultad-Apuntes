@@ -1,6 +1,5 @@
 ---
 dia: 2024-07-28
-capitulo: 1
 tags:
   - taller/Sintaxis
   - nota

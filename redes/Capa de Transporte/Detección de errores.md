@@ -1,6 +1,5 @@
 ---
 dia: 2024-06-02
-capitulo: 3
 aliases:
   - Checksum
 tags:

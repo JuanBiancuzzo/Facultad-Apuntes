@@ -1,6 +1,5 @@
 ---
 dia: 2023-11-15
-capitulo: 4
 tags:
   - sisop/Scheduling
   - nota

@@ -1,6 +1,5 @@
 ---
 dia: 2024-02-13
-capitulo: 3
 tags:
   - legal/Contratos
   - nota

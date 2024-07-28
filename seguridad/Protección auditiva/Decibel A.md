@@ -1,6 +1,5 @@
 ---
 dia: 2023-11-17
-capitulo: 4
 aliases:
   - dBA
 tags:

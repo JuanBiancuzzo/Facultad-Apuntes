@@ -1,6 +1,5 @@
 ---
 dia: 2023-03-30
-capitulo: 3
 aliases:
   - TF
 tags:

@@ -1,6 +1,5 @@
 ---
 dia: 2024-05-31
-capitulo: 7
 aliases:
   - ROC de la transformada Z
 tags:

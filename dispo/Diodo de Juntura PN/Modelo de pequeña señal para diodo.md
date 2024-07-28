@@ -1,6 +1,5 @@
 ---
 dia: 2023-09-16
-capitulo: 3
 aliases:
   - MPS para diodo
 tags:

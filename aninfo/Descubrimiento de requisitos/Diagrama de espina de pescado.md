@@ -1,6 +1,5 @@
 ---
 dia: 2023-09-07
-capitulo: 3
 tags:
   - aninfo/Descubrimiento-de-requisitos
   - nota

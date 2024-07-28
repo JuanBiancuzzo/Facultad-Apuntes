@@ -1,6 +1,5 @@
 ---
 dia: 2024-06-15
-capitulo: 4
 aliases:
   - Interfaz de un router
 tags:

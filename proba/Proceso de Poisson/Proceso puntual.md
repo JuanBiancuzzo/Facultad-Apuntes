@@ -1,6 +1,5 @@
 ---
 dia: 2023-01-23
-capitulo: 8
 tags:
   - proba/Proceso-de-Poisson
   - nota

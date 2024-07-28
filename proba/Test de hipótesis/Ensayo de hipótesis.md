@@ -1,6 +1,5 @@
 ---
 dia: 2023-01-23
-capitulo: 11
 tags:
   - proba/Test-de-hipótesis
   - nota

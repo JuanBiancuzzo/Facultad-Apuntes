@@ -1,6 +1,5 @@
 ---
 dia: 2023-08-26
-capitulo: 2
 tags:
   - sisop/La-abstracción-de-proceso
   - nota

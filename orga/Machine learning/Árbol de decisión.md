@@ -1,6 +1,5 @@
 ---
 dia: 2023-08-11
-capitulo: 9
 tags:
   - orga/Machine-learning
   - nota

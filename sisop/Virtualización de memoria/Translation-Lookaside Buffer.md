@@ -1,6 +1,5 @@
 ---
 dia: 2023-12-02
-capitulo: 3
 aliases:
   - TLB
 tags:

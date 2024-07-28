@@ -1,6 +1,5 @@
 ---
 dia: 2023-08-13
-capitulo: 10
 tags:
   - orga/NLP/2
   - nota

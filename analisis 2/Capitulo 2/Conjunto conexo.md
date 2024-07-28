@@ -1,6 +1,5 @@
 ---
 dia: 2022-09-06
-capitulo: 2
 tags:
   - analisis-2/Capitulo-2
   - nota

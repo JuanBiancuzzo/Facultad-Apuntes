@@ -1,6 +1,5 @@
 ---
 dia: 2023-10-14
-capitulo: 4
 aliases:
   - Saturación del TBJ
 tags:

@@ -1,6 +1,5 @@
 ---
 dia: 2023-11-28
-capitulo: 11
 aliases:
   - SAFe
 tags:

@@ -1,6 +1,5 @@
 ---
 dia: 2024-02-26
-capitulo: 7
 tags:
   - legal/Derecho-real
   - nota

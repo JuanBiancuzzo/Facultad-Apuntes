@@ -1,6 +1,5 @@
 ---
 dia: 2024-06-16
-capitulo: 5
 aliases:
   - Interpolador de banda limitada
   - Interpolador de orden k

@@ -1,6 +1,5 @@
 ---
 dia: 2024-05-22
-capitulo: 6
 tags:
   - señales/Transformada-discreta-de-Fourier
   - nota

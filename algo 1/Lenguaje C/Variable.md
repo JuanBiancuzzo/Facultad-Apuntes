@@ -1,6 +1,5 @@
 ---
 dia: 2024-04-03
-capitulo: 2
 tags:
   - algo-1/Lenguaje-C
   - nota

@@ -1,6 +1,5 @@
 ---
 dia: 2023-08-23
-capitulo: 9
 tags:
   - dispo/Circuitos-digitales-y-procesos-de-fabricación-CMOS
   - nota

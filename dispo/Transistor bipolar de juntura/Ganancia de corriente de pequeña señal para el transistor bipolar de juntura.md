@@ -1,6 +1,5 @@
 ---
 dia: 2023-10-14
-capitulo: 4
 aliases:
   - Ganancia de corriente de pequeña señal para TBJ
 tags:

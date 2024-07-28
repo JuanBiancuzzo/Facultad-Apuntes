@@ -1,6 +1,5 @@
 ---
 dia: 2024-06-15
-capitulo: 4
 aliases:
   - Subnet
 tags:

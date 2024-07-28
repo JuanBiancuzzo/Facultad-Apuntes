@@ -1,6 +1,5 @@
 ---
 dia: 2024-03-24
-capitulo: 1
 tags:
   - circuitos/Circuitos-con-diodos
   - nota

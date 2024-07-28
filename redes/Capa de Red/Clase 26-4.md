@@ -1,6 +1,5 @@
 ---
 dia: 2024-04-26
-capitulo: 4
 tags:
   - redes/Capa-de-Red
   - nota

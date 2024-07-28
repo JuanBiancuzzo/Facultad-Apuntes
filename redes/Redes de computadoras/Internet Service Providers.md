@@ -1,6 +1,5 @@
 ---
 dia: 2024-03-19
-capitulo: 1
 aliases:
   - ISPs
 tags:

@@ -1,6 +1,5 @@
 ---
 dia: 2024-04-03
-capitulo: 1
 aliases:
   - CPU
   - Microprocesador

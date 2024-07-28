@@ -1,6 +1,5 @@
 ---
 dia: 2024-02-27
-capitulo: 8
 aliases:
   - MOSFET de potencia
 tags:

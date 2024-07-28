@@ -1,6 +1,5 @@
 ---
 dia: 2023-11-17
-capitulo: 2
 aliases:
   - Respuesta al impulso
 tags:

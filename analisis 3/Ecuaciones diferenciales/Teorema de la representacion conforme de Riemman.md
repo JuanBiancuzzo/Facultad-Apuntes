@@ -1,6 +1,5 @@
 ---
 dia: 2022-12-08
-capitulo: 11
 tags:
   - analisis-3/Ecuaciones-diferenciales
   - nota
