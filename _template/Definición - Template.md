@@ -42,12 +42,10 @@
 	await tp.file.move(`${resumen.file.folder}/${titulo}`, tArchivo);
 	
 	let dia = tp.file.creation_date("YYYY-MM-DD");
-	let capitulo = resumen.capitulo;
 	let tag = resumen.tags.find(tag => tag != "resumen");
 	
 	tR += "---\n";
 	tR += `dia: ${dia}\n`;
-	tR += `capitulo: ${capitulo}\n`;
 	tR += `tags: \n - ${tag}\n - nota\n`;
 	tR += "---\n";
 _%>

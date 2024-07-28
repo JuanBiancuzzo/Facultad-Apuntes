@@ -30,7 +30,7 @@
 			.sort(resumen => resumen.capitulo);
 		let nombreResumenes = resumenes.map(resumen => {
 			let repre = `En ${resumen.file.folder.split("/")[1]}`;
-			if (resumen.multiples) 
+			if (resumen.parte) 
 				repre += `, Parte ${resumen.parte}`;
 			return repre;
 		});
@@ -86,7 +86,7 @@
 				if (resumen.capitulo < capitulo) {
 					if (multiples && nuevaCarpeta == resumen.file.folder) {
 						let parteResumen = resumen.parte ? resumen.parte : 1;
-						renombrar.push({ resumen: resumen, nuevoCapitulo: resumen.capitulo, nuevaParte: parteResumen });
+						actualizar.push({ resumen: resumen, nuevoCapitulo: resumen.capitulo, nuevaParte: parteResumen });
 						parte = parteResumen + 1;
 					}
 					continue;
@@ -132,10 +132,6 @@
 
 				for (let tArchivoMod of tArchivos) {
 					tarea = app.fileManager.processFrontMatter(tArchivoMod, (frontmatter) => {
-						if (actualizarCapitulo) {
-							frontmatter["capitulo"] = nuevoCapitulo;
-						}
-
 						if (actualizarParte) {
 							frontmatter["tags"].remove(tagPrevio);
 							frontmatter["tags"].push(nuevoTag);
