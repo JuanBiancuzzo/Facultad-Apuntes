@@ -23,7 +23,6 @@ tags:
 * [[analisis 2/Capitulo 2/Plano tangente.md|Plano tangente]]
 * [[analisis 2/Capitulo 2/Grafica de una función.md|Grafica de una función]]
 * [[analisis 2/Capitulo 2/Plano normal a una curva.md|Plano normal a una curva]]
-* [[analisis 2/Capitulo 2/Limites de funciones de varias variables.md|Limites de funciones de varias variables]]
 * [[analisis 2/Capitulo 2/Limites iterados.md|Limites iterados]]
 * [[analisis 2/Capitulo 2/Jacobiana.md|Jacobiana]]
 * [[analisis 2/Capitulo 2/Gradiente.md|Gradiente]]
@@ -36,7 +35,6 @@ tags:
 * [[analisis 2/Capitulo 2/Derivada direccional.md|Derivada direccional]]
 * [[analisis 2/Capitulo 2/Curva.md|Curva]]
 * [[analisis 2/Capitulo 2/Continuidad en un abierto.md|Continuidad en un abierto]]
-* [[analisis 2/Capitulo 2/Continuidad en un punto.md|Continuidad en un punto]]
 * [[analisis 2/Capitulo 2/Conjunto cerrado.md|Conjunto cerrado]]
 * [[analisis 2/Capitulo 2/Conjunto fronter.md|Conjunto fronter]]
 * [[analisis 2/Capitulo 2/Conjunto de nivel.md|Conjunto de nivel]]
@@ -49,6 +47,8 @@ tags:
 * [[analisis 2/Capitulo 2/Producto entre funciones.md|Producto entre funciones]]
 * [[analisis 2/Capitulo 2/Cociente entre funciones.md|Cociente entre funciones]]
 * [[analisis 2/Capitulo 2/Función.md|Función]]
+* [[analisis 2/Capitulo 2/Continuidad en un punto.md|Continuidad en un punto]]
+* [[analisis 2/Capitulo 2/Limites de funciones de varias variables.md|Limites de funciones de varias variables]]
 
 ### Resumen
 ---

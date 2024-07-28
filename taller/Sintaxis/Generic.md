@@ -7,7 +7,7 @@ tags:
 ---
 ### Definición
 ---
-Permite a las [[Función rust|funciones]] utilizar cualquier [[Tipo de dato rust|tipo de dato]], y se puede usar en conjunto de los [[Traits]] para exigir que puedan hacer ciertas cosas, por ejemplo
+Permite a las [[Función|funciones]] utilizar cualquier [[Tipo de dato|tipo de dato]], y se puede usar en conjunto de los [[Traits]] para exigir que puedan hacer ciertas cosas, por ejemplo
 
 ``` rust
 struct Celsius(i32);
@@ -25,7 +25,7 @@ impl std::cmp::PartialEq for Celsius {
 
 Donde `std::cmp::PartialEq` es un [[Traits|trait]] para comparar dos objetos del mismo tipo.
 
-También se usa para [[Función rust|funciones]] de la siguiente forma
+También se usa para [[Función|funciones]] de la siguiente forma
 ``` rust
 fn comparar<T: std::cmp::PartialEq>(primero: T, segundo: T) {
 	if primero == segundo {

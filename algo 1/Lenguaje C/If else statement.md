@@ -1,9 +1,9 @@
 ---
 dia: 2024-07-27
-capitulo: 1
+capitulo: 2
 tags:
-  - algo-1/Introducción-a-la-programación
   - nota
+  - algo-1/Lenguaje-C
 aliases:
   - Sentencia si sino
   - Sentencia if else

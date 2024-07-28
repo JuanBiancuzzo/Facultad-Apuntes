@@ -6,6 +6,7 @@ tags:
   - nota
 aliases:
   - Estructura de control secuencial
+  - Scope
 ---
 ### Definición
 ---

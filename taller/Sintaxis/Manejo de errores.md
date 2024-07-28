@@ -7,7 +7,7 @@ tags:
 ---
 ### Definición
 ---
-Siempre que una [[Función rust|función]] devuelva un [[Resultado]], significa que puede ocurrir un error y por lo tanto hay que manejarlo. En el caso de ser una [[Opción]] también hay que manejarlo.
+Siempre que una [[Función|función]] devuelva un [[Resultado]], significa que puede ocurrir un error y por lo tanto hay que manejarlo. En el caso de ser una [[Opción]] también hay que manejarlo.
 
 Para eso tenemos las operaciones:
 * operador $?$: Este propaga el error o la opción a la función que lo llame. Para el caso de los [[Resultado|resultados]] el error tiene que coincidir. 

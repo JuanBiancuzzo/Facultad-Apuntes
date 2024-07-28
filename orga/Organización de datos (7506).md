@@ -16,7 +16,6 @@ tags:
 * [[orga/Pandas/Acceder a datos - Pandas.md|Acceder a datos - Pandas]]
 * [[orga/Pandas/Agrupar datos.md|Agrupar datos]]
 * [[orga/Pandas/Apply - Pandas.md|Apply - Pandas]]
-* [[orga/Pandas/Astype.md|Astype]]
 * [[orga/Pandas/Data frame - Pandas.md|Data frame - Pandas]]
 * [[orga/Pandas/Group - Pandas.md|Group - Pandas]]
 * [[orga/Pandas/Leer archivos - Pandas.md|Leer archivos - Pandas]]
@@ -25,6 +24,7 @@ tags:
 * [[orga/Pandas/Series - Pandas.md|Series - Pandas]]
 * [[orga/Pandas/Stack - Pandas.md|Stack - Pandas]]
 * [[orga/Pandas/Unstack.md|Unstack]]
+* [[orga/Pandas/Astype.md|Astype]]
 
 ##### Visualizaciones 
 ---
@@ -105,7 +105,6 @@ tags:
 * [[orga/Spark/Acción - Spark.md|Acción - Spark]]
 * [[orga/Spark/Almacenamiento distribuido.md|Almacenamiento distribuido]]
 * [[orga/Spark/Apache spark.md|Apache spark]]
-* [[orga/Spark/Broadcast Join - Spark.md|Broadcast Join - Spark]]
 * [[orga/Spark/Cache - Spark.md|Cache - Spark]]
 * [[orga/Spark/Cluster.md|Cluster]]
 * [[orga/Spark/Coalesce - Spark.md|Coalesce - Spark]]
@@ -139,6 +138,7 @@ tags:
 * [[orga/Spark/Transformación - Spark.md|Transformación - Spark]]
 * [[orga/Spark/Union - Spark.md|Union - Spark]]
 * [[orga/Spark/Variable broadcast - Spark.md|Variable broadcast - Spark]]
+* [[orga/Spark/Broadcast Join - Spark.md|Broadcast Join - Spark]]
 
 ##### Machine learning 
 ---
@@ -149,21 +149,19 @@ tags:
 * [[orga/Machine learning/Aprendizaje automático.md|Aprendizaje automático]]
 * [[orga/Machine learning/Aprendizaje supervisado.md|Aprendizaje supervisado]]
 * [[orga/Machine learning/Bias.md|Bias]]
-* [[orga/Machine learning/Binary encoding.md|Binary encoding]]
 * [[orga/Machine learning/Codificación de variables categóricas.md|Codificación de variables categóricas]]
 * [[orga/Machine learning/Cross validation.md|Cross validation]]
 * [[orga/Machine learning/Deep learning.md|Deep learning]]
+* [[orga/Machine learning/Ensamble.md|Ensamble]]
 * [[orga/Machine learning/Entrenar un modelo.md|Entrenar un modelo]]
 * [[orga/Machine learning/Error de entrenamiento.md|Error de entrenamiento]]
 * [[orga/Machine learning/Error de test.md|Error de test]]
 * [[orga/Machine learning/Hiper-parámetros de un modelo.md|Hiper-parámetros de un modelo]]
 * [[orga/Machine learning/K-Nearest Neighbors.md|K-Nearest Neighbors]]
-* [[orga/Machine learning/Mean encoding.md|Mean encoding]]
 * [[orga/Machine learning/Métrica de un modelo.md|Métrica de un modelo]]
 * [[orga/Machine learning/Neurona lineal.md|Neurona lineal]]
 * [[orga/Machine learning/Neurona no lineal.md|Neurona no lineal]]
 * [[orga/Machine learning/Neurona.md|Neurona]]
-* [[orga/Machine learning/One hot encoding.md|One hot encoding]]
 * [[orga/Machine learning/Overfitting.md|Overfitting]]
 * [[orga/Machine learning/Problema de clasificación.md|Problema de clasificación]]
 * [[orga/Machine learning/Problema de regresión.md|Problema de regresión]]
@@ -173,23 +171,25 @@ tags:
 * [[orga/Machine learning/Regresión logística.md|Regresión logística]]
 * [[orga/Machine learning/Regularización.md|Regularización]]
 * [[orga/Machine learning/Set desbalanceado.md|Set desbalanceado]]
-* [[orga/Machine learning/Transformación de features.md|Transformación de features]]
 * [[orga/Machine learning/Tuning.md|Tuning]]
 * [[orga/Machine learning/Underfitting.md|Underfitting]]
 * [[orga/Machine learning/Validación del modelo.md|Validación del modelo]]
 * [[orga/Machine learning/Variance.md|Variance]]
 * [[orga/Machine learning/XGBoost.md|XGBoost]]
 * [[orga/Machine learning/Árbol de decisión.md|Árbol de decisión]]
-* [[orga/Machine learning/Ensamble.md|Ensamble]]
+* [[orga/Machine learning/Binary encoding.md|Binary encoding]]
+* [[orga/Machine learning/Mean encoding.md|Mean encoding]]
+* [[orga/Machine learning/One hot encoding.md|One hot encoding]]
+* [[orga/Machine learning/Transformación de features.md|Transformación de features]]
 
 ##### NLP 
 ---
 > [!summary]- Resumen
 > ![[orga/NLP/Resumen Parte 2.md#Resumen]]
 
-* [[orga/NLP/Long short-term memory.md|Long short-term memory]]
-* [[orga/NLP/Red neuronal recurrente.md|Red neuronal recurrente]]
-* [[orga/NLP/Red neuronal convolucional.md|Red neuronal convolucional]]
-* [[orga/NLP/Softmax.md|Softmax]]
 * [[orga/NLP/GRU.md|GRU]]
+* [[orga/NLP/Long short-term memory.md|Long short-term memory]]
+* [[orga/NLP/Red neuronal convolucional.md|Red neuronal convolucional]]
+* [[orga/NLP/Red neuronal recurrente.md|Red neuronal recurrente]]
+* [[orga/NLP/Softmax.md|Softmax]]
 

@@ -4,17 +4,13 @@ capitulo: 1
 tags:
   - algo-1/Introducción-a-la-programación
   - nota
+  - taller/Sintaxis
 ---
 ### Definición
 ---
-Al solucionar un problema mediante un [[Algoritmo|algoritmo]] no es posible utilizar cualquier tipo de [[Información|información]]. Se utilizar cualquier tipo de información. Se utilizan ciertos tipos de datos. Un tipo se puede definir como un [[Conjunto|conjunto]] de valores que una [[Variable|variable]] de ese tipo de dato puede tomar. 
+Al solucionar un problema mediante un [[Algoritmo|algoritmo]] no es posible utilizar cualquier tipo de [[Información|información]]. Se utilizar cualquier tipo de información. Se utilizan ciertos tipos de datos. Un tipo se puede definir como un [[Conjunto|conjunto]] de valores que una [[Variable|variable]] de ese tipo de dato puede tomar, ya sea [[Variable inmutable|inmutable]], [[Variable mutable|mutable]] o [[Constante|constante]]. 
 
 Una variable implica reservar parte del espacio de la [[Memoria|memoria]] de la [[Computadora|computadora]], asignarle a ese espacio un nombre y además especificar el tipo de información que almacena para poder determinar cuanto espacio reservar
 
-#### Primitivos vs Compuestos
----
-Existen dos tipos de tipos de datos, los simples o primitivos, y los compuestos o estructurados
+Existen dos tipos de tipos de datos, los [[Tipo de dato primitivo|simples o primitivos]], y los [[Tipo de dato compuesto|compuestos o estructurados]]
 
-##### Primitivos
----
-![[Tipo de dato primitivo#Definición]]

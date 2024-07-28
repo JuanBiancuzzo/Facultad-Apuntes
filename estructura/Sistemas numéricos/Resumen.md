@@ -19,7 +19,6 @@ tags:
 * [[estructura/Sistemas numéricos/Representación de enteros complemento a la base.md|Representación de enteros complemento a la base]]
 * [[estructura/Sistemas numéricos/Representación de enteros exceso n.md|Representación de enteros exceso n]]
 * [[estructura/Sistemas numéricos/Representación de enteros magnitud y signo.md|Representación de enteros magnitud y signo]]
-* [[estructura/Sistemas numéricos/Representación de enteros.md|Representación de enteros]]
 * [[estructura/Sistemas numéricos/Resta de enteros.md|Resta de enteros]]
 * [[estructura/Sistemas numéricos/Signo flag.md|Signo flag]]
 * [[estructura/Sistemas numéricos/Sistema aditivos.md|Sistema aditivos]]
@@ -27,6 +26,7 @@ tags:
 * [[estructura/Sistemas numéricos/Sistemas de numeración.md|Sistemas de numeración]]
 * [[estructura/Sistemas numéricos/Suma de enteros.md|Suma de enteros]]
 * [[estructura/Sistemas numéricos/Símbolo.md|Símbolo]]
+* [[estructura/Sistemas numéricos/Representación de enteros.md|Representación de enteros]]
 
 ### Resumen
 ---

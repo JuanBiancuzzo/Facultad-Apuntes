@@ -14,11 +14,11 @@ El compilador se encarga del proceso de compilación que se divide en diferentes
 
 #### Fase de procesamiento
 ---
-El preprocesador modifica el código de fuente original de un [[Programa]], de acuerdo a las directivas. El resultado de este [[Proceso]] es otro programa.
+El preprocesador modifica el código de fuente original de un [[Programa|programa]], de acuerdo a las directivas. El resultado de este [[Proceso|proceso]] es otro programa.
 
 #### Fase de compilación
 ---
-El compilador traduce el programa final de la [[Compilador#Fase de procesamiento|fase de procesamiento]] a un archivo de texto `.s` que contiene un programa en lenguaje [[Lenguaje assembly]]
+El compilador traduce el programa final de la [[Compilador#Fase de procesamiento|fase de procesamiento]] a un archivo de texto `.s` que contiene un programa en lenguaje [[Lenguaje assembly|lenguaje assembly]]
 
 #### Fase de ensamblaje
 ---

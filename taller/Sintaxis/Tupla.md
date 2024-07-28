@@ -1,16 +1,12 @@
 ---
-dia: 2023-04-02
+dia: 2024-07-28
 capitulo: 1
 tags:
   - taller/Sintaxis
   - nota
+aliases:
+  - Tuple
 ---
 ### Definición
----
-Son grupo de varios tipos, uno dentro del otro. En rust hay dos tipo primitivos que son compuestos:
-* Tuplas
-* Arrays
-
-### Tupla
 ---
 Es lo forma general de agrupar varios tipos de datos en uno. Son de longitud fija y no se pueden achicar ni agrandar.

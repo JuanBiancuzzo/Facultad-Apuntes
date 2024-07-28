@@ -4,6 +4,7 @@ capitulo: 1
 tags:
   - algo-1/Introducción-a-la-programación
   - nota
+  - taller/Sintaxis
 ---
 ### Definición
 ---
@@ -37,3 +38,10 @@ Son aquellos que no pueden determinarse su sucesor y un predecesor
 | Real         | depende de la plataforma                        |
 | Simple       | $1.5 \times 10^{-45} \cdots 3.4 \times 10^{38}$ |
 | Doble        | $5 \times 10^{-324} \cdots 1.7 \times 10^{308}$ |
+
+#### Representación algorítmica
+---
+* [[Representación de enteros|Enteros]]
+* [[Punto flotante|Punto flotante]]
+* [[Valor booleano|Booleanos]]
+* [[Representación de un caracter|Caracteres]]

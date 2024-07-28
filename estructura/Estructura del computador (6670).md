@@ -26,7 +26,6 @@ tags:
 * [[estructura/Sistemas numéricos/Representación de enteros complemento a la base.md|Representación de enteros complemento a la base]]
 * [[estructura/Sistemas numéricos/Representación de enteros exceso n.md|Representación de enteros exceso n]]
 * [[estructura/Sistemas numéricos/Representación de enteros magnitud y signo.md|Representación de enteros magnitud y signo]]
-* [[estructura/Sistemas numéricos/Representación de enteros.md|Representación de enteros]]
 * [[estructura/Sistemas numéricos/Resta de enteros.md|Resta de enteros]]
 * [[estructura/Sistemas numéricos/Signo flag.md|Signo flag]]
 * [[estructura/Sistemas numéricos/Sistema aditivos.md|Sistema aditivos]]
@@ -34,15 +33,16 @@ tags:
 * [[estructura/Sistemas numéricos/Sistemas de numeración.md|Sistemas de numeración]]
 * [[estructura/Sistemas numéricos/Suma de enteros.md|Suma de enteros]]
 * [[estructura/Sistemas numéricos/Símbolo.md|Símbolo]]
+* [[estructura/Sistemas numéricos/Representación de enteros.md|Representación de enteros]]
 
 ##### Punto flotante 
 ---
 > [!summary]- Resumen
 > ![[estructura/Punto flotante/Resumen.md#Resumen]]
 
-* [[estructura/Punto flotante/Punto flotante.md|Punto flotante]]
 * [[estructura/Punto flotante/Suma de puntos flotantes.md|Suma de puntos flotantes]]
 * [[estructura/Punto flotante/Valores especificos de IEEE 754.md|Valores especificos de IEEE 754]]
+* [[estructura/Punto flotante/Punto flotante.md|Punto flotante]]
 
 ##### Algebra de boole 
 ---
@@ -56,7 +56,7 @@ tags:
 * [[estructura/Algebra de boole/Postulados de Huntington.md|Postulados de Huntington]]
 * [[estructura/Algebra de boole/Producto de maxitérminos.md|Producto de maxitérminos]]
 * [[estructura/Algebra de boole/Suma de minitérminos.md|Suma de minitérminos]]
-* [[Álgebra de Boole|Álgebra de Boole]]
+* [[discreta/Álgebra de Boole/Álgebra de Boole.md|Álgebra de Boole]]
 
 ##### Diseño combinacional 
 ---
@@ -78,6 +78,7 @@ tags:
 > ![[estructura/Flip-Flops/Resumen.md#Resumen]]
 
 * [[estructura/Flip-Flops/Circuito asincrónico.md|Circuito asincrónico]]
+* [[estructura/Flip-Flops/Circuito secuencial.md|Circuito secuencial]]
 * [[estructura/Flip-Flops/Circuito sincrónico.md|Circuito sincrónico]]
 * [[estructura/Flip-Flops/Flip-Flop D asincrónico.md|Flip-Flop D asincrónico]]
 * [[estructura/Flip-Flops/Flip-Flop D sincrónico.md|Flip-Flop D sincrónico]]
@@ -87,7 +88,6 @@ tags:
 * [[estructura/Flip-Flops/Flip-Flop RS sincrónico.md|Flip-Flop RS sincrónico]]
 * [[estructura/Flip-Flops/Flip-Flop T asincrónico.md|Flip-Flop T asincrónico]]
 * [[estructura/Flip-Flops/Flip-Flop T sincrónico.md|Flip-Flop T sincrónico]]
-* [[estructura/Flip-Flops/Circuito secuencial.md|Circuito secuencial]]
 
 ##### Registros y contadores 
 ---
