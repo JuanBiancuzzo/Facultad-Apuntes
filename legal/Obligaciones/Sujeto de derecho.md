@@ -3,6 +3,8 @@ dia: 2024-01-18
 tags:
   - legal/Obligaciones
   - nota
+aliases:
+  - Titular
 ---
 ### Definición
 ---

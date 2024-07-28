@@ -20,8 +20,10 @@ async function modificarMateria(tp, dv, carpeta) {
         let tag = resumen.file.folder.replaceAll(" ", "-");
         if (resumen.parte) tag += `/${resumen.parte}`;        
 
-        nuevoContenido += dv.pages(`#${tag} and #nota`).map(pagina => {
-            return `* [[${pagina.file.path}|${pagina.file.name}]]`;
+        nuevoContenido += dv.pages(`#${tag} and -#resumen and -#materia`).map(pagina => {
+            let aliases = pagina.aliases ? pagina.aliases : [];
+            aliases = aliases.map(alias => ` (${alias})`).join(",");
+            return `* [[${pagina.file.path}|${pagina.file.name}${aliases}]]`;
         }).join("\n");
 
         nuevoContenido += "\n\n";
@@ -50,8 +52,10 @@ async function modificarResumen(tp, dv, carpeta, tag) {
     let indexResumen = contenido.indexOf(patronResumen);
     let contendioResumen = contenido.slice(indexResumen);
 
-    nuevoContenido += dv.pages(`#${tag} and #nota`).map(pagina => {
-        return `* [[${pagina.file.path}|${pagina.file.name}]]`;
+    nuevoContenido += dv.pages(`#${tag} and -#resumen and -#materia`).map(pagina => {
+        let aliases = pagina.aliases ? pagina.aliases : [];
+        aliases = aliases.map(alias => ` (${alias})`).join(",");
+        return `* [[${pagina.file.path}|${pagina.file.name}${aliases}]]`;
     }).join("\n");
 
     return app.vault.modify(tArchivo, `${nuevoContenido}\n\n${contendioResumen}`);
