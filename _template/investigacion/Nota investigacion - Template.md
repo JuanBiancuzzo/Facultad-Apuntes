@@ -65,7 +65,7 @@
 	for (let numRef of numReferencias) {
 		tR += ` - "${numRef}"\n`;
 	}
-
+	tR += "tags: \n - nota/investigacion\n";
 	tR += "---";
 %>
 ```dataviewjs

@@ -27,7 +27,7 @@
 			}
 			return resultado;
 		}) // Consigo todos los tags
-		.filter(({ tag, carpeta }) => tag != "nota") // Saco el tag de nota
+		.filter(({ tag, carpeta }) => !tag.startsWith("nota")) // Saco el tag de nota
 		.flatMap(({ tag, carpeta }) => {
 			return [
 				{ tipo: RESUMEN, tag: tag, carpeta: carpeta },

@@ -61,15 +61,39 @@ async function modificarResumen(tp, dv, carpeta, tag) {
     return app.vault.modify(tArchivo, `${nuevoContenido}\n\n${contendioResumen}`);
 }
 
-function conseguir_nombre(unidad) {
-    let relative_path = unidad.rows[0].file.folder;
-    let spliteado = relative_path.split("/");
-    return spliteado[spliteado.length - 1];
+async function modificarIndice(tp, dv, carpeta, tag) {
+    let resumen = dv.pages(`"${carpeta}" and #resumen`)
+        .find(resumen => resumen.tags.includes(tag));
+    if (!resumen) {
+        console.log("Error en encontrar resumen");
+        console.log(carpeta);
+        console.log(tag);
+    }
+    let tArchivo = tp.file.find_tfile(resumen.file.path);
+
+    let patronIndice = "### Índice";
+    let patronResumen = "### Resumen";
+    let contenido = await app.vault.read(tArchivo);
+    
+    let indexInidce = contenido.indexOf(patronIndice);
+    let nuevoContenido = `${contenido.slice(0, indexInidce + patronIndice.length)} \n---\n`;
+    
+    let indexResumen = contenido.indexOf(patronResumen);
+    let contendioResumen = contenido.slice(indexResumen);
+
+    nuevoContenido += dv.pages(`#${tag} and -#resumen and -#materia`).map(pagina => {
+        let aliases = pagina.aliases ? pagina.aliases : [];
+        aliases = aliases.map(alias => ` (${alias})`).join(",");
+        return `* [[${pagina.file.path}|${pagina.file.name}${aliases}]]`;
+    }).join("\n");
+
+    return app.vault.modify(tArchivo, `${nuevoContenido}\n\n${contendioResumen}`);
 }
 
 module.exports = () => {
     return {
         materia: modificarMateria,
-        resumen: modificarResumen
+        resumen: modificarResumen,
+        indice: modificarIndice,
     };
 };

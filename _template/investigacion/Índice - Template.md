@@ -15,7 +15,7 @@
 			tp, "Temática: (Apretar ESC para salir)", "No se ingresó un tema"
 		);
 
-		if (validar.validarNombre(tp, nuevoTema)) 
+		if (!validar.validarNombre(tp, nuevoTema)) 
 			throw new Error("Nombre invalido");
 		
 		let descripcion = tp.user.describirTemas(indices);
