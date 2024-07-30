@@ -2,7 +2,7 @@
 dia: 2023-03-22
 tags:
   - taller/Ownership
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

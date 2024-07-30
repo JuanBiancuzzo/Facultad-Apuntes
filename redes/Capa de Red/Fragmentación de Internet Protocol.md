@@ -4,7 +4,7 @@ aliases:
   - Fragmentación de IP
 tags:
   - redes/Capa-de-Red
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

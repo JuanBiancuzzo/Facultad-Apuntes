@@ -2,7 +2,7 @@
 dia: 2023-09-03
 tags:
   - adc/Circuitos-en-regimen-de-corriente-continua
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

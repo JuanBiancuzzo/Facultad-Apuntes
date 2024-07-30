@@ -2,7 +2,7 @@
 dia: 2023-01-22
 tags:
   - algebra-2/Transformaciones-lineales
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

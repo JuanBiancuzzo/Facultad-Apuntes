@@ -2,7 +2,7 @@
 dia: 2023-01-23
 tags:
   - proba/Función-de-variable-aleatoria
-  - nota
+  - nota/facultad
 ---
 
 ### [[Distribución de Poisson]]

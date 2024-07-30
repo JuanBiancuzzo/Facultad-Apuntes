@@ -2,7 +2,7 @@
 dia: 2023-08-23
 tags:
   - dispo/Transistor-bipolar-de-juntura
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

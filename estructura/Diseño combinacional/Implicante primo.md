@@ -2,7 +2,7 @@
 dia: 2023-04-23
 tags:
   - estructura/Diseño-combinacional
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

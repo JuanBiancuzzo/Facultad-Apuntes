@@ -2,7 +2,7 @@
 dia: 2023-09-23
 tags:
   - adc/Circuitos-en-regimen-transitorio
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

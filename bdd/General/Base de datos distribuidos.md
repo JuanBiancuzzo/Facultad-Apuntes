@@ -2,7 +2,7 @@
 dia: 2024-04-07
 tags:
   - bdd/General
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

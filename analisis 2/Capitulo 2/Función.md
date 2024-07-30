@@ -2,7 +2,7 @@
 dia: 2023-01-22
 tags:
   - analisis-2/Capitulo-2
-  - nota
+  - nota/facultad
   - algo-1/Lenguaje-C
   - taller/Sintaxis
 ---

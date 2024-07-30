@@ -2,7 +2,7 @@
 dia: 2023-08-26
 tags:
   - aninfo/Diseño-de-datos
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

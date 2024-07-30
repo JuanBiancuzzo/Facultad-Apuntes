@@ -4,7 +4,7 @@ aliases:
   - HTML
 tags:
   - redes/Capa-de-aplicación
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

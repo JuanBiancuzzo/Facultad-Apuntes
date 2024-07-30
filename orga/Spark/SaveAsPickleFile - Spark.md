@@ -2,7 +2,7 @@
 dia: 2023-05-02
 tags:
   - orga/Spark
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

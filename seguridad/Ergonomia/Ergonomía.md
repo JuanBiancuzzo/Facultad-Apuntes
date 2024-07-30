@@ -2,7 +2,7 @@
 dia: 2023-07-17
 tags:
   - seguridad/Ergonomia
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

@@ -2,7 +2,7 @@
 dia: 2022-12-04
 tags:
   - analisis-3/Integrales-impropias
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

@@ -2,7 +2,7 @@
 dia: 2024-04-09
 tags:
   - adc/Respuesta-en-frecuencia
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

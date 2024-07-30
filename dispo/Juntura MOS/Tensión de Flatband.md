@@ -2,7 +2,7 @@
 dia: 2023-11-09
 tags:
   - dispo/Juntura-MOS
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

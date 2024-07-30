@@ -3,7 +3,7 @@ dia: 2023-07-20
 materia: orga
 tags:
   - orga/Machine-learning
-  - nota
+  - nota/facultad
 ---
 ### Lista de algoritmos de machine learning
 ---

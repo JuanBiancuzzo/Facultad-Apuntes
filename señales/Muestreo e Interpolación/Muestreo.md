@@ -2,7 +2,7 @@
 dia: 2024-04-16
 tags:
   - señales/Muestreo-e-Interpolación
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

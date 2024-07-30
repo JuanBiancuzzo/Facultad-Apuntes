@@ -2,7 +2,7 @@
 dia: 2022-12-04
 tags:
   - analisis-3/Transformada-de-Laplace
-  - nota
+  - nota/facultad
   - señales/Transformadas-de-Laplace-y-Z
 ---
 ### Definición

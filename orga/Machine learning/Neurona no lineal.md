@@ -2,7 +2,7 @@
 dia: 2023-08-12
 tags:
   - orga/Machine-learning
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

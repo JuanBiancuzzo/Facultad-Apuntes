@@ -2,7 +2,7 @@
 dia: 2024-01-13
 tags:
   - orga/NLP/1
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

@@ -4,7 +4,7 @@ aliases:
   - Corte del TBJ
 tags:
   - dispo/Transistor-bipolar-de-juntura
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

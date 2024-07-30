@@ -2,7 +2,7 @@
 dia: 2022-09-22
 tags:
   - analisis-3/Funciones-elementales
-  - nota
+  - nota/facultad
 ---
 ### Definción
 ---

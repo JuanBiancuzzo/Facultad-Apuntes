@@ -4,7 +4,7 @@ aliases:
   - P2P
 tags:
   - redes/Capa-de-aplicación
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

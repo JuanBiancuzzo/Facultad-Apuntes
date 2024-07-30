@@ -2,7 +2,7 @@
 dia: 2024-02-09
 tags:
   - legal/Derecho-laboral
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

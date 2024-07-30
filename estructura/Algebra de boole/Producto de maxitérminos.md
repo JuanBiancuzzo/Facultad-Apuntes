@@ -2,7 +2,7 @@
 dia: 2023-04-08
 tags:
   - estructura/Algebra-de-boole
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

@@ -2,7 +2,7 @@
 dia: 2024-07-05
 tags:
   - señales/Filtros-digitales
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

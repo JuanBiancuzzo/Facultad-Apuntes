@@ -2,7 +2,7 @@
 dia: 2023-01-23
 tags:
   - proba/Test-de-hipótesis
-  - nota
+  - nota/facultad
 ---
 ### Error de tipo I
 ![[Error de tipo 1#Definición]]

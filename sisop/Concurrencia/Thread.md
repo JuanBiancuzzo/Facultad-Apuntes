@@ -2,7 +2,7 @@
 dia: 2023-11-09
 tags:
   - sisop/Concurrencia
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

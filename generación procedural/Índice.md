@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-08
 tags:
-  - Índice
+  - índice
 aliases:
   - Procedural generation
 ---

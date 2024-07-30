@@ -2,7 +2,7 @@
 dia: 2023-09-07
 tags:
   - aninfo/Descubrimiento-de-requisitos
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

@@ -2,7 +2,7 @@
 dia: 2023-01-23
 tags:
   - proba/Representación-de-variables-aleatorias
-  - nota
+  - nota/facultad
 ---
 Es el promedio ponderado que puede tomar una [[Variable aleatoria]] $X$. Análogo al centro de masa de un objeto.
 

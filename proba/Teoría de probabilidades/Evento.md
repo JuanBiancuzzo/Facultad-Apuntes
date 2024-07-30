@@ -2,7 +2,7 @@
 dia: 2023-04-03
 tags:
   - proba/Teoría-de-probabilidades
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

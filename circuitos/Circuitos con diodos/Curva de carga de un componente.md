@@ -2,7 +2,7 @@
 dia: 2024-03-23
 tags:
   - circuitos/Circuitos-con-diodos
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

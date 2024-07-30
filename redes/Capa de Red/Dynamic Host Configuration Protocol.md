@@ -5,7 +5,7 @@ aliases:
   - Protocolo dinámico de configuración de hosts
 tags:
   - redes/Capa-de-Red
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

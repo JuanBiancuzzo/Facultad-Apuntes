@@ -2,7 +2,7 @@
 dia: 2023-03-14
 tags:
   - numerico/Ecuaciones-no-lineales
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

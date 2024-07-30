@@ -2,7 +2,7 @@
 dia: 2022-09-06
 tags:
   - analisis-3/Topología-del-plano-complejo-y-límites
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

@@ -2,7 +2,7 @@
 dia: 2024-05-12
 tags:
   - bdd/SQL
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

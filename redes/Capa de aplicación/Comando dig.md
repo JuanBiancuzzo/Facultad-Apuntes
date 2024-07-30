@@ -2,7 +2,7 @@
 dia: 2024-03-28
 tags:
   - redes/Capa-de-aplicación
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

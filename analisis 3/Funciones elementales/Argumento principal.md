@@ -2,7 +2,7 @@
 dia: 2022-09-12
 tags:
   - analisis-3/Funciones-elementales
-  - nota
+  - nota/facultad
 ---
 Se define como el [[Argumento]] pero limitado al rango $[-\pi, \pi]$
 

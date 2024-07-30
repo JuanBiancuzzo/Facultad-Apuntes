@@ -2,7 +2,7 @@
 dia: 2024-03-21
 tags:
   - discreta/Álgebra-de-conjuntos
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

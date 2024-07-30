@@ -2,7 +2,7 @@
 dia: 2024-01-17
 tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

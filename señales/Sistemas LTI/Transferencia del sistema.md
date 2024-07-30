@@ -2,7 +2,7 @@
 dia: 2023-11-17
 tags:
   - señales/Sistemas-LTI
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

@@ -2,7 +2,7 @@
 dia: 2023-11-18
 tags:
   - sisop/Scheduling
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

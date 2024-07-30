@@ -2,7 +2,7 @@
 dia: 2023-08-31
 tags:
   - aninfo/Ingeniería-de-requisitos
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

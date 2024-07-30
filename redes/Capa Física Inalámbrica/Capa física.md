@@ -2,7 +2,7 @@
 dia: 2024-03-11
 tags:
   - redes/Capa-Física-Inalámbrica
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

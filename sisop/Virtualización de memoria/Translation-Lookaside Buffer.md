@@ -4,7 +4,7 @@ aliases:
   - TLB
 tags:
   - sisop/Virtualización-de-memoria
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

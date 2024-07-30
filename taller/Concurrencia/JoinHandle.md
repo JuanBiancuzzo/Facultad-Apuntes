@@ -2,7 +2,7 @@
 dia: 2023-03-29
 tags:
   - taller/Concurrencia
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

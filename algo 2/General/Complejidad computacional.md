@@ -2,7 +2,7 @@
 dia: 2024-05-22
 tags:
   - algo-2/General
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

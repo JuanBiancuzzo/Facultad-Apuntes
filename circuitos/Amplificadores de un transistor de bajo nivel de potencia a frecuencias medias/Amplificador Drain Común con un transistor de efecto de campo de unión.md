@@ -4,7 +4,7 @@ aliases:
   - Amplificador Drain Común con un JFET
 tags:
   - circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

@@ -2,7 +2,7 @@
 dia: 2023-09-04
 tags:
   - sisop/Kernel
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

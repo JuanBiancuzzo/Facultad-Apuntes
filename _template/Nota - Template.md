@@ -1,5 +1,4 @@
 <%*
-    const cte = tp.user.constantes();
     const pertenece = tp.user.whiteList();
 
     const dv = app.plugins.plugins.dataview.api;
@@ -16,7 +15,7 @@
 	
 	try {
         if (pertenece.archivoFacultad(path)) {
-            let template = tPadre.path.startsWith(cte.pathArticulos)
+            let template = pertenece.articuloLegal(tp, path)
                 ? "legal/Artículo - Template"
                 : "Definición - Template";
             

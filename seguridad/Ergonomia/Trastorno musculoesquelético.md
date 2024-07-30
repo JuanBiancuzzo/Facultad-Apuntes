@@ -4,7 +4,7 @@ aliases:
   - TME
 tags:
   - seguridad/Ergonomia
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

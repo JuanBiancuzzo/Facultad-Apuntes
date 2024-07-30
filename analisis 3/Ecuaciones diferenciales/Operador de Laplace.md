@@ -2,7 +2,7 @@
 dia: 2022-12-08
 tags:
   - analisis-3/Ecuaciones-diferenciales
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

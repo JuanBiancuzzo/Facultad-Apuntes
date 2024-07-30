@@ -2,7 +2,7 @@
 dia: 2023-04-04
 tags:
   - seguridad/Protección-auditiva
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

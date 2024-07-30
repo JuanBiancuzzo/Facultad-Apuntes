@@ -4,7 +4,7 @@ aliases:
   - Capa de link
 tags:
   - redes/Capa-de-Enlace
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

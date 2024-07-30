@@ -2,7 +2,7 @@
 dia: 2023-03-23
 tags:
   - orga/Visualizaciones
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

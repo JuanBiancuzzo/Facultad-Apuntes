@@ -2,7 +2,7 @@
 dia: 2023-01-23
 tags:
   - proba/Proceso-de-Poisson
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

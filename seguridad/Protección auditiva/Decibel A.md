@@ -4,7 +4,7 @@ aliases:
   - dBA
 tags:
   - seguridad/Protección-auditiva
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

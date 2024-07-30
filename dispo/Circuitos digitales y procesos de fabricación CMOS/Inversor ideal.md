@@ -2,7 +2,7 @@
 dia: 2024-02-29
 tags:
   - dispo/Circuitos-digitales-y-procesos-de-fabricación-CMOS
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

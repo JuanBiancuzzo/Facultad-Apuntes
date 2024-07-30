@@ -2,7 +2,7 @@
 dia: 2023-11-16
 tags:
   - adc/Circuitos-en-regimen-senoidal-permanente
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

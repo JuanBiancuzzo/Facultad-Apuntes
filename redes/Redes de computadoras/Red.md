@@ -4,7 +4,7 @@ aliases:
   - Network
 tags:
   - redes/Redes-de-computadoras
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

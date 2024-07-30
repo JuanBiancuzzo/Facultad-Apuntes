@@ -2,7 +2,7 @@
 dia: 2022-09-12
 tags:
   - analisis-3/Derivabilidad-y-holomorfía
-  - nota
+  - nota/facultad
 ---
 ## Definición
 ---

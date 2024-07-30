@@ -2,7 +2,7 @@
 dia: 2023-08-27
 tags:
   - aninfo/Verificación-y-validación
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

@@ -2,7 +2,7 @@
 dia: 2023-11-12
 tags:
   - sisop/Virtualización-de-memoria
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

@@ -2,7 +2,7 @@
 dia: 2023-05-30
 tags:
   - seguridad/Residuos
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

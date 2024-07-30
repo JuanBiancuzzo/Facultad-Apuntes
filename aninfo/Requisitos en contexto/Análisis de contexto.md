@@ -2,7 +2,7 @@
 dia: 2023-08-26
 tags:
   - aninfo/Requisitos-en-contexto
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

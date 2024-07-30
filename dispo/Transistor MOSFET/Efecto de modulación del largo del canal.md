@@ -2,7 +2,7 @@
 dia: 2023-11-11
 tags:
   - dispo/Transistor-MOSFET
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

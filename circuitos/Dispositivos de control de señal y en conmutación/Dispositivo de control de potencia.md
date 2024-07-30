@@ -2,7 +2,7 @@
 dia: 2024-03-11
 tags:
   - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

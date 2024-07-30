@@ -2,7 +2,7 @@
 dia: 2022-09-12
 tags:
   - analisis-3/Funciones-elementales
-  - nota
+  - nota/facultad
 ---
 Son la [[Inversa local|inversa local]] de la [[Función potencia|función potencia]], por el [[Inversa local#Teorema de Inversibidad local|teorema de inversibilidad]], sabemos que las inversas locales de $p_n$, que significa $\sqrt[n]{~~}$, existen en torno de cada $z_0 \ne 0$ y que son [[Holomorfa]]s. 
 

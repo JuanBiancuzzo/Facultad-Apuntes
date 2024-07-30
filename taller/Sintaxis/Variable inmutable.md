@@ -2,7 +2,7 @@
 dia: 2023-03-15
 tags:
   - taller/Sintaxis
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

@@ -2,7 +2,7 @@
 dia: 2024-01-08
 tags:
   - legal/Derechos-humanos
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

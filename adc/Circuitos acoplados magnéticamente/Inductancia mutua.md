@@ -2,7 +2,7 @@
 dia: 2023-11-16
 tags:
   - adc/Circuitos-acoplados-magnéticamente
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

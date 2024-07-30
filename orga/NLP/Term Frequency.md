@@ -4,7 +4,7 @@ aliases:
   - TF
 tags:
   - orga/NLP/1
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

@@ -2,7 +2,7 @@
 dia: 2023-04-11
 tags:
   - seguridad/Estrés-termico
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

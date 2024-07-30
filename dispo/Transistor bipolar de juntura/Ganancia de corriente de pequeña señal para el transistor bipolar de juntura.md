@@ -4,7 +4,7 @@ aliases:
   - Ganancia de corriente de pequeña señal para TBJ
 tags:
   - dispo/Transistor-bipolar-de-juntura
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

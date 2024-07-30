@@ -2,7 +2,7 @@
 dia: 2023-01-23
 tags:
   - proba/Teoría-de-probabilidades
-  - nota
+  - nota/facultad
 ---
 ### Función de probabilidad de una variable aleatoria
 ---

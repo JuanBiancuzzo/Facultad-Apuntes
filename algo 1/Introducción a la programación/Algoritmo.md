@@ -2,7 +2,7 @@
 dia: 2024-04-03
 tags:
   - algo-1/Introducción-a-la-programación
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

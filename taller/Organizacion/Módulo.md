@@ -2,7 +2,7 @@
 dia: 2023-03-17
 tags:
   - taller/Organizacion
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

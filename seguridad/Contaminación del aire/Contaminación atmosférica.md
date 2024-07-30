@@ -2,7 +2,7 @@
 dia: 2023-07-16
 tags:
   - seguridad/Contaminación-del-aire
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

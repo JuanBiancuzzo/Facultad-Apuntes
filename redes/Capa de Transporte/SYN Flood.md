@@ -2,7 +2,7 @@
 dia: 2024-06-07
 tags:
   - redes/Capa-de-Transporte
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

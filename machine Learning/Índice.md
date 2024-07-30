@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-12
 tags:
-  - Índice
+  - índice
 aliases:
   - AI
 ---

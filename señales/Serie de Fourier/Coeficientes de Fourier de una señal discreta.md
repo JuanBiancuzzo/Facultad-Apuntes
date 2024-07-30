@@ -2,7 +2,7 @@
 dia: 2024-03-26
 tags:
   - señales/Serie-de-Fourier
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

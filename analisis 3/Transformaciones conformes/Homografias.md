@@ -2,7 +2,7 @@
 dia: 2022-11-19
 tags:
   - analisis-3/Transformaciones-conformes
-  - nota
+  - nota/facultad
 ---
 ### Definición 
 ---

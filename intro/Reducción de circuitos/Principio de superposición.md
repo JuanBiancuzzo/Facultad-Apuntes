@@ -2,7 +2,7 @@
 dia: 2023-01-23
 tags:
   - intro/Reducción-de-circuitos
-  - nota
+  - nota/facultad
 ---
 ### Postulado
 ---

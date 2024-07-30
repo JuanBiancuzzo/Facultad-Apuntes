@@ -6,7 +6,7 @@ aliases:
   - Espacio fila
 tags:
   - algebra-2/Espacios-Vectoriales
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

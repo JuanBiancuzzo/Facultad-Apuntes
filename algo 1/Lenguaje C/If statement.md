@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-27
 tags:
-  - nota
+  - nota/facultad
   - algo-1/Lenguaje-C
 aliases:
   - Sentencia si

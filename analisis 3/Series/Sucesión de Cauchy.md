@@ -2,7 +2,7 @@
 dia: 2022-09-13
 tags:
   - analisis-3/Series
-  - nota
+  - nota/facultad
 ---
 Dada una [[Sucesión]] $\alpha : \in \mathbb{N} \to \mathbb{K}$ con $\mathbb{K} \in \{ \mathbb{R}, \mathbb{C} \}$ 
 

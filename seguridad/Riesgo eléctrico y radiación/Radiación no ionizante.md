@@ -2,7 +2,7 @@
 dia: 2023-04-25
 tags:
   - seguridad/Riesgo-eléctrico-y-radiación
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

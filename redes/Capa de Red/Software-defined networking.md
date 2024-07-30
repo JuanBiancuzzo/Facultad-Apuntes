@@ -5,7 +5,7 @@ aliases:
   - Redes definidas por software
 tags:
   - redes/Capa-de-Red
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

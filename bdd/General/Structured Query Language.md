@@ -4,7 +4,7 @@ aliases:
   - SQL
 tags:
   - bdd/General
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

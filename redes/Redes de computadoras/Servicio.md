@@ -2,7 +2,7 @@
 dia: 2024-04-19
 tags:
   - redes/Redes-de-computadoras
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

@@ -2,7 +2,7 @@
 dia: 2023-11-28
 tags:
   - aninfo/Peopleware
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

@@ -4,7 +4,7 @@ aliases:
   - ROC de la transformada de Laplace
 tags:
   - señales/Transformadas-de-Laplace-y-Z
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

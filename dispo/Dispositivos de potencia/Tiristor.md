@@ -2,7 +2,7 @@
 dia: 2024-02-28
 tags:
   - dispo/Dispositivos-de-potencia
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

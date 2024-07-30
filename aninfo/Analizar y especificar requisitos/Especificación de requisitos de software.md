@@ -4,7 +4,7 @@ aliases:
   - SRS
 tags:
   - aninfo/Analizar-y-especificar-requisitos
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

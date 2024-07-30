@@ -2,7 +2,7 @@
 dia: 2023-09-03
 tags:
   - intro/Circuitos-con-resistencias
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

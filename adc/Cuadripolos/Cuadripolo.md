@@ -2,7 +2,7 @@
 dia: 2023-09-03
 tags:
   - adc/Cuadripolos
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

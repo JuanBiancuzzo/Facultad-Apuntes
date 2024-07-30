@@ -4,7 +4,7 @@ aliases:
   - Checksum
 tags:
   - redes/Capa-de-Transporte
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

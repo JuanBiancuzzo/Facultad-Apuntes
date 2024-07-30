@@ -4,7 +4,7 @@ aliases:
   - Sistemas descriptos por ecuaciones en diferencias
 tags:
   - señales/Sistemas-LTI
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

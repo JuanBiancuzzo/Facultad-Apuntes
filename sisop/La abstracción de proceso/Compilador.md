@@ -2,7 +2,7 @@
 dia: 2023-11-12
 tags:
   - sisop/La-abstracción-de-proceso
-  - nota
+  - nota/facultad
   - algo-1/Introducción-a-la-programación
 aliases:
   - Compilación

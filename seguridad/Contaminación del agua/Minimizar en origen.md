@@ -2,7 +2,7 @@
 dia: 2023-07-15
 tags:
   - seguridad/Contaminación-del-agua
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

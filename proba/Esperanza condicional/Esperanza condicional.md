@@ -2,7 +2,7 @@
 dia: 2023-01-23
 tags:
   - proba/Esperanza-condicional
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

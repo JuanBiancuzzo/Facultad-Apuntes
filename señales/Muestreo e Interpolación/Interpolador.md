@@ -5,7 +5,7 @@ aliases:
   - Interpolador de orden k
 tags:
   - señales/Muestreo-e-Interpolación
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

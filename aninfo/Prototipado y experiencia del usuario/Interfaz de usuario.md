@@ -4,7 +4,7 @@ aliases:
   - UI
 tags:
   - aninfo/Prototipado-y-experiencia-del-usuario
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

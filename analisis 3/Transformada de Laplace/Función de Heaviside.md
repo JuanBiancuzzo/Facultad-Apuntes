@@ -2,7 +2,7 @@
 dia: 2023-11-17
 tags:
   - analisis-3/Transformada-de-Laplace
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

@@ -4,7 +4,7 @@ aliases:
   - MTU
 tags:
   - redes/Capa-de-Red
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

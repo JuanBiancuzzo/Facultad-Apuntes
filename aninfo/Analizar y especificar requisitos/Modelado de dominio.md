@@ -2,7 +2,7 @@
 dia: 2023-09-24
 tags:
   - aninfo/Analizar-y-especificar-requisitos
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

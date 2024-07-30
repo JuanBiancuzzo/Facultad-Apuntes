@@ -2,7 +2,7 @@
 dia: 2023-08-24
 tags:
   - intro/Circuitos-con-capacitores
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

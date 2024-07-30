@@ -2,7 +2,7 @@
 dia: 2022-11-27
 tags:
   - analisis-3/Integrales-impropias
-  - nota
+  - nota/facultad
 ---
 Para las integrales de la forma $\int_a^\infty f(x) \cdot dx$, donde todas las funciones involucradas se suponen [[Seccionalmente continua]].
 

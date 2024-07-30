@@ -4,7 +4,7 @@ aliases:
   - Polo esencial
 tags:
   - analisis-3/Series-de-Laurent
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

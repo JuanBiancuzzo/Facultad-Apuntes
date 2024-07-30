@@ -2,7 +2,7 @@
 dia: 2023-04-03
 tags:
   - orga/Compresión
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

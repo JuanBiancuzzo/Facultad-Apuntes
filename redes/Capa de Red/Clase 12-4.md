@@ -2,7 +2,7 @@
 dia: 2024-03-11
 tags:
   - redes/Capa-de-Red
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

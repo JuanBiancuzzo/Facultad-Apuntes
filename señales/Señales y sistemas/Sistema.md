@@ -2,7 +2,7 @@
 dia: 2023-08-26
 tags:
   - señales/Señales-y-sistemas
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

@@ -2,7 +2,7 @@
 dia: 2023-11-27
 tags:
   - dispo/Amplificador-emisor-y-source-común
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

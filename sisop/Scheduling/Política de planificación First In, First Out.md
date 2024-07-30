@@ -4,7 +4,7 @@ aliases:
   - Política de planificación FIFO
 tags:
   - sisop/Scheduling
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

@@ -2,7 +2,7 @@
 dia: 2023-04-11
 tags:
   - fisica-2/Termodinámica
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

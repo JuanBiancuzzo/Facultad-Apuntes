@@ -4,7 +4,7 @@ aliases:
   - MOSFET de potencia
 tags:
   - dispo/Dispositivos-de-potencia
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

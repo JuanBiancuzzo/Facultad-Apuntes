@@ -2,7 +2,7 @@
 dia: 2022-09-19
 tags:
   - analisis-3/Series
-  - nota
+  - nota/facultad
 ---
 Dada una [[Serie]] $\alpha : \mathbb{N} \to \mathbb{R} : \bigg(\sum_{k = 0}^n \alpha_k \bigg)_{n = 1}^\infty$ 
 

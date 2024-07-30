@@ -4,7 +4,7 @@ aliases:
   - MPS para diodo
 tags:
   - dispo/Diodo-de-Juntura-PN
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

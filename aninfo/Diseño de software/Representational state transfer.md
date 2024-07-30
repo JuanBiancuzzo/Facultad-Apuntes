@@ -5,7 +5,7 @@ aliases:
   - REST
 tags:
   - aninfo/Diseño-de-software
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

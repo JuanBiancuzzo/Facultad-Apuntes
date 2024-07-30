@@ -2,7 +2,7 @@
 dia: 2023-11-16
 tags:
   - intro/Potencia
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

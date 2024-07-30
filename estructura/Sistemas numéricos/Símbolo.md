@@ -2,7 +2,7 @@
 dia: 2023-04-02
 tags:
   - estructura/Sistemas-numéricos
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

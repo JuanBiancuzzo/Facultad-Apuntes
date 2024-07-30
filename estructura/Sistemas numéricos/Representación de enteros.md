@@ -2,7 +2,7 @@
 dia: 2023-04-05
 tags:
   - estructura/Sistemas-numéricos
-  - nota
+  - nota/facultad
   - taller/Sintaxis
   - algo-1/Lenguaje-C
 aliases:

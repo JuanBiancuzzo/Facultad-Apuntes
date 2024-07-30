@@ -2,7 +2,7 @@
 dia: 2023-01-22
 tags:
   - algebra-2/Autovalores-y-autovectores
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

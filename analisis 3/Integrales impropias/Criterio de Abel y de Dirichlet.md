@@ -2,7 +2,7 @@
 dia: 2022-11-27
 tags:
   - analisis-3/Integrales-impropias
-  - nota
+  - nota/facultad
 ---
 ### Definición Abel
 ---

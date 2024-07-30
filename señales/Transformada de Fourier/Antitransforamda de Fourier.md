@@ -2,7 +2,7 @@
 dia: 2024-03-11
 tags:
   - señales/Transformada-de-Fourier
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

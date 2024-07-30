@@ -2,7 +2,7 @@
 dia: 2023-09-05
 tags:
   - aninfo/Prototipado-y-experiencia-del-usuario
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

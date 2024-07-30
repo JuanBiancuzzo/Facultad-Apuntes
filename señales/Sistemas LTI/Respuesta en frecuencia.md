@@ -4,7 +4,7 @@ aliases:
   - Respuesta al impulso
 tags:
   - señales/Sistemas-LTI
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

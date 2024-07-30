@@ -2,7 +2,7 @@
 dia: 2023-01-23
 tags:
   - proba/Teorema-central-del-límite
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

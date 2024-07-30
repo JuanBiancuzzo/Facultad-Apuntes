@@ -2,7 +2,7 @@
 dia: 2023-03-28
 tags:
   - seguridad/Prevención-de-incendios
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

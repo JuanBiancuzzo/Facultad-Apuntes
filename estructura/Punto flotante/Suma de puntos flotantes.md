@@ -2,7 +2,7 @@
 dia: 2023-04-08
 tags:
   - estructura/Punto-flotante
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

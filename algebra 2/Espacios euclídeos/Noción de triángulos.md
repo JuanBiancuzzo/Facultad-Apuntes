@@ -2,7 +2,7 @@
 dia: 2023-01-22
 tags:
   - algebra-2/Espacios-euclídeos
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

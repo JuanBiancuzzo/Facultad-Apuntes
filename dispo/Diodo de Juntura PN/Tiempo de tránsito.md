@@ -2,7 +2,7 @@
 dia: 2023-09-17
 tags:
   - dispo/Diodo-de-Juntura-PN
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

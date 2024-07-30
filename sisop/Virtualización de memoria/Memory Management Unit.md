@@ -4,7 +4,7 @@ aliases:
   - MMU
 tags:
   - sisop/Virtualización-de-memoria
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

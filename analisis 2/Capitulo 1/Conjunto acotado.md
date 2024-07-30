@@ -2,7 +2,7 @@
 dia: 2022-09-06
 tags:
   - analisis-2/Capitulo-1
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

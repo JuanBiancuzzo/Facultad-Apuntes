@@ -2,7 +2,7 @@
 dia: 2023-01-23
 tags:
   - proba/Variables-y-vectores-aleatorios
-  - nota
+  - nota/facultad
 ---
 Decimos que dos [[Evento]]s son equivalentes si acumulan la misma probabilidad. Esto se puede ver con una [[Función de distribución]] de ambos [[Evento]]s.
 

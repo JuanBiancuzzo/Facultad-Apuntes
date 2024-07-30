@@ -2,7 +2,7 @@
 dia: 2024-05-29
 tags:
   - señales/Transformadas-de-Laplace-y-Z
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

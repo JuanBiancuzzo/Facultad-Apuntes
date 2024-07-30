@@ -2,7 +2,7 @@
 dia: 2022-11-25
 tags:
   - analisis-3/Series
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

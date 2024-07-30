@@ -2,7 +2,7 @@
 dia: 2023-01-22
 tags:
   - algebra-2/Espacios-Vectoriales
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

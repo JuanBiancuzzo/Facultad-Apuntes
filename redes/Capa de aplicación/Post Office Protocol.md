@@ -6,7 +6,7 @@ aliases:
   - Post Office Protocol - Version 3
 tags:
   - redes/Capa-de-aplicación
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

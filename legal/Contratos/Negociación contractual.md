@@ -2,7 +2,7 @@
 dia: 2024-02-02
 tags:
   - legal/Contratos
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

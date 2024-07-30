@@ -2,7 +2,7 @@
 dia: 2023-04-16
 tags:
   - seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

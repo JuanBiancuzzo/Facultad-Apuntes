@@ -2,7 +2,7 @@
 dia: 2023-08-26
 tags:
   - sisop/La-abstracción-de-proceso
-  - nota
+  - nota/facultad
 ---
 ### Algunas definiciones
 ---

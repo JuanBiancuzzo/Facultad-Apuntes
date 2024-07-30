@@ -4,7 +4,7 @@ aliases:
   - Polo aislado
 tags:
   - analisis-3/Series-de-Laurent
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

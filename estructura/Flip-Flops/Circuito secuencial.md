@@ -2,7 +2,7 @@
 dia: 2023-04-28
 tags:
   - estructura/Flip-Flops
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

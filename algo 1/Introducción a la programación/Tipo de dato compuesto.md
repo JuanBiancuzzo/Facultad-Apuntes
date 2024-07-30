@@ -2,7 +2,7 @@
 dia: 2023-04-02
 tags:
   - taller/Sintaxis
-  - nota
+  - nota/facultad
   - algo-1/Introducción-a-la-programación
 aliases:
   - Tipo de dato estructurado

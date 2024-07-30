@@ -2,7 +2,7 @@
 dia: 2024-01-19
 tags:
   - legal/Obligaciones
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

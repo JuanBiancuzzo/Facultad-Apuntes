@@ -4,7 +4,7 @@ aliases:
   - UML
 tags:
   - aninfo/Ingeniería-de-software
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

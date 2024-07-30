@@ -2,7 +2,7 @@
 dia: 2024-02-20
 tags:
   - dispo/Amplificador-emisor-y-source-común
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

@@ -10,6 +10,11 @@ function whiteListArchivoInvestigacion(archivoPath) {
     return indice.some(indice => archivoPath.startsWith(indice));
 }
 
+function whiteListArticuloLegal(tp, archivoPath) {
+    const cte = tp.user.constantes();
+    return archivoPath.startsWith(cte.pathArticulos)
+}
+
 function whiteListArchivoProyecto(archivoPath) {
     return false;
 }
@@ -29,6 +34,7 @@ function validarNombre(tp, nombre) {
 module.exports = () => {
     return {
         archivoFacultad: whiteListArchivoFacultad,
+        articuloLegal: whiteListArticuloLegal,
         archivoInvestigacion: whiteListArchivoInvestigacion,
         archivoProyecto: whiteListArchivoProyecto,
         archivoLibro: whiteListArchivoLibro,

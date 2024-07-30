@@ -2,7 +2,7 @@
 dia: 2024-01-26
 tags:
   - legal/Obligaciones
-  - nota
+  - nota/facultad
 ---
 ### Según sus efectos: Civiles o Naturales
 ---

@@ -2,7 +2,7 @@
 dia: 2023-09-05
 tags:
   - intro/Reducción-de-circuitos
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

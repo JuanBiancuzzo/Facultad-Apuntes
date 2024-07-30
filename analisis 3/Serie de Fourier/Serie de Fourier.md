@@ -3,7 +3,7 @@ dia: 2022-11-29
 tags:
   - analisis-3/Serie-de-Fourier
   - señales/Serie-de-Fourier
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

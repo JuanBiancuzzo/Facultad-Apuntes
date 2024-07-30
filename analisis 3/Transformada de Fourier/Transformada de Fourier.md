@@ -3,7 +3,7 @@ dia: 2022-12-04
 tags:
   - analisis-3/Transformada-de-Fourier
   - señales/Transformada-de-Fourier
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---

@@ -2,7 +2,7 @@
 dia: 2024-07-28
 tags:
   - taller/Sintaxis
-  - nota
+  - nota/facultad
 aliases:
   - Tuple
 ---

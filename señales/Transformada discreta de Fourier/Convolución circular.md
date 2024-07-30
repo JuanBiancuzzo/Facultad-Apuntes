@@ -2,7 +2,7 @@
 dia: 2024-05-15
 tags:
   - señales/Transformada-discreta-de-Fourier
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---
