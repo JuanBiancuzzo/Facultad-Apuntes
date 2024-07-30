@@ -1,6 +1,7 @@
 <%*
     const dv = app.plugins.plugins.dataview.api;
-    const herramientas = tp.user.herramientas();
+    const validar = tp.user.whiteList();
+    const cte = tp.user.constantes();
     const preguntar = tp.user.preguntar();
 
     const tArchivo = tp.file.find_tfile(tp.file.path(true));
@@ -12,12 +13,12 @@
         );
 
         let documentos = dv.pages('"legal/Articulos" and #legal/documento');
-        let nombreValido = herramientas.esNombreValido(nombre);
+        let nombreValido = validar.validarNombre(tp, nombre);
 
         while (documentos.some(doc => doc.file.name == nombre) || !nombreValido) {
             const mensaje = nombreValido
                 ? "Ya existe un documento con ese nombre"
-                : `El nombre es invalido, no puede contener ${herramientas.cte.caracteresInvalidos.join(" ")}`;
+                : `El nombre es invalido, no puede contener ${cte.caracteresInvalidos.join(" ")}`;
             
             console.log(mensaje);
             new Notice(mensaje);
@@ -26,7 +27,7 @@
                 tp, "Nombre del documento?", "No se ingresó el nombre del documento"
             );
 
-            nombreValido = herramientas.esNombreValido(nombre);
+            nombreValido = validar.validarNombre(tp, nombre);
         }
 
         let abreviacion = await preguntar.prompt(

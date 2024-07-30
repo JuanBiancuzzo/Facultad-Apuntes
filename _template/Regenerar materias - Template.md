@@ -16,7 +16,7 @@
 		.map(archivo => dv.page(archivo.path)); // consigo su representa	ción en dv
 	
 	let tagsModificados = archivosModificar
-		.filter(archivo => archivo && tp.user.whiteList().archivoFacultad(archivo)) // filtro para obtener los archivos únicamente de la facu
+		.filter(archivo => archivo && tp.user.whiteList().archivoFacultad(archivo.file.path)) // filtro para obtener los archivos únicamente de la facu
 		.filter(archivo => !dv.array(archivo.tags).some(tag => tagsMetaInfo.includes(tag) ) ) // Saco a los archivos que son resumenes o materias
 		.filter(archivo => archivo.tags.includes("nota")) // Mantengo todos los que sean notas
 		.flatMap(archivo => { 
@@ -69,8 +69,6 @@
 	}
 
 	await Promise.all(tareas).then((_) => mostrarMensaje("Materias regenerados"));	
-
-	await app.vault.delete(tArchivo.parent, true);
 
 	function mostrarMensaje(mensaje) {
 		console.log(mensaje);

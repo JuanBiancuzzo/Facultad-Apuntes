@@ -26,7 +26,9 @@
     "_template/tikz/TikzPlot - Template.md",
     "_template/tikz/TikzCircuit - Template.md",
     "_template/tikz/TikzNetting - Template.md",
-    "_template/legal/Editar texto Artículo.md"
+    "_template/legal/Editar texto Artículo.md",
+    "_template/investigacion/Modificar referencia.md",
+    "_template/investigacion/Agregar cita.md"
   ],
   "startup_templates": [],
   "enable_ribbon_icon": false

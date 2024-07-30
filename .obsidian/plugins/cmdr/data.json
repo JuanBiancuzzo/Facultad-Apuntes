@@ -6,15 +6,27 @@
   "fileMenu": [],
   "leftRibbon": [
     {
+      "id": "quickadd:choice:e024d912-7e83-44a5-a17c-6175a73cc40f",
+      "icon": "book",
+      "name": "Nuevo tema",
+      "mode": "any"
+    },
+    {
       "id": "quickadd:choice:c6addedc-6a02-4777-95d3-b9d63ce9a4ed",
       "icon": "bookmark-plus",
-      "name": "QuickAdd: Agregar tema",
+      "name": "Agregar tema de materia",
       "mode": "any"
     },
     {
       "id": "quickadd:choice:e516c7e7-35e3-4917-b453-678f35596fdc",
       "icon": "album",
-      "name": "QuickAdd: Nueva materia",
+      "name": "Nueva materia",
+      "mode": "any"
+    },
+    {
+      "id": "templater-obsidian:_template/investigacion/Agregar cita.md",
+      "icon": "bookmark",
+      "name": "Agregar cita",
       "mode": "any"
     }
   ],

@@ -10,7 +10,7 @@ tags:
 ---
 ### Artículo
 ---
-"Hay posesión cuando una persona, por sí o por medio de otra, ejerce un poder de hecho sobre una [[Cosa|cosa]], comportándose como [[Sujeto de derecho#Sujeto activo|titular]] de un [[Libro 4, Derechos Reales|derecho real]], lo sea o no."
+"Hay posesión cuando una persona, por sí o por medio de otra, ejerce un poder de hecho sobre una [[Cosa|cosa]], comportándose como [[Sujeto de derecho#Sujeto activo|titular]] de un [[Derecho real|derecho real]], lo sea o no."
 
 ### Interpretación
 ---

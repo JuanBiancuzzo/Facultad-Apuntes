@@ -2,8 +2,8 @@
 tipo: Título
 nombre: Derechos reales de garantía
 num: 12
-previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Cuarto/Libro 4, Derechos Reales.md|Libro 4, Derechos Reales]]"
-tags: 
+previo: "[[Derecho real|Libro 4, Derechos Reales]]"
+tags:
   - legal/Título
 ---
 ```dataviewjs

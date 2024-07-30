@@ -6,7 +6,7 @@ tags:
 ---
 ### Índice 
 ---
-* [[legal/Derecho real/Derecho real.md|Derecho real]]
+* [[Derecho real|Libro 4, Derechos Reales]]
 
 ### Resumen
 ---

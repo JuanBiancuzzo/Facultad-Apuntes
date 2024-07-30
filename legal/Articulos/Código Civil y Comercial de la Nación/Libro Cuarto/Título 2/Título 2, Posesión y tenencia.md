@@ -2,7 +2,7 @@
 tipo: Título
 nombre: Posesión y tenencia
 num: 2
-previo: "[[Libro 4, Derechos Reales|Libro 4, Derechos Reales]]"
+previo: "[[Derecho real|Libro 4, Derechos Reales]]"
 tags:
   - legal/Título
 ---

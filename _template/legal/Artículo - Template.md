@@ -23,7 +23,7 @@
         "No se eligió un documento"
     );
         
-    let subSecciones = herramientas.seccionesSiguientes(documento)
+    let subSecciones = seccionesSiguientes(documento)
         .sort(sec => sec.num);
     let grupos = documento.grupos ? documento.grupos : [];
     
@@ -61,7 +61,7 @@
             tipoSeccion = seccionSiguiente.tipo;
             path.push( { tipo: "archivo", archivo: seccionSiguiente } );
 
-            subSecciones = herramientas.seccionesSiguientes(seccionSiguiente);    
+            subSecciones = seccionesSiguientes(seccionSiguiente);    
         }
 
         let indexSeccion = grupos.indexOf(tipoSeccion);
@@ -154,6 +154,14 @@
     // Cambiar nombre de forma acorde
     let nuevoNombre = `Art. ${numero}${esBis ? " bis" : ""} ${documento.abreviacion}${(nombre) ? `, ${nombre}` : ""}.md`;
     await app.vault.rename(tArchivo, `${previo.file.folder}/${nuevoNombre}`);
+
+    function seccionesSiguientes(archivo) {
+        const carpeta = archivo.file.folder;
+        const nivel = carpeta.split("/").length;
+    
+        return subSecciones = dv.pages(`"${carpeta}" and -#legal/articulo`)
+            .filter(seccion => seccion.file.folder.split("/").length == nivel + 1);
+    }
 
 _%>
 ### Artículo

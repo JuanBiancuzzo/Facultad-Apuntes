@@ -10,7 +10,7 @@ tags:
 ---
 ### Artículo
 ---
-"El [[Libro 4, Derechos Reales|derecho real]] es el poder jurídico, de estructura legal, que se ejerce directamente sobre su objeto, en forma autónoma y que atribuye a su titular las facultades de persecución y preferencia, y las demás previstas en este [[Código Civil y Comercial de la Nación|Código]]"
+"El [[Derecho real|derecho real]] es el poder jurídico, de estructura legal, que se ejerce directamente sobre su objeto, en forma autónoma y que atribuye a su titular las facultades de persecución y preferencia, y las demás previstas en este [[Código Civil y Comercial de la Nación|Código]]"
 
 ### Interpretación
 ---

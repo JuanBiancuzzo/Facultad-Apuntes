@@ -11,7 +11,7 @@ tags:
 ```
 ### Interpretación
 ---
-La adquisición derivada por actos entre vivos de un [[Libro 4, Derechos Reales|derecho real]] requiere la concurrencia de [[Art. 1892 del CC y CN, Título y modos suficientes|título y modo suficiente]].
+La adquisición derivada por actos entre vivos de un [[Derecho real|derecho real]] requiere la concurrencia de [[Art. 1892 del CC y CN, Título y modos suficientes|título y modo suficiente]].
 
 Donde se entiende por título, el [[Acto jurídico|acto jurídico]] revestido de las formas establecidas por la [[Ley|ley]], que tiene por finalidad transmitir o constituir el derecho real. El modo suficiente se puede dar de distintas formas, la tradición posesoria y la inscripción registral
 

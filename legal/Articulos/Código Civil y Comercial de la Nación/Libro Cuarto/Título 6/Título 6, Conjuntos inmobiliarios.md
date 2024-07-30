@@ -2,7 +2,7 @@
 tipo: Título
 nombre: Conjuntos inmobiliarios
 num: 6
-previo: "[[Libro 4, Derechos Reales|Libro 4, Derechos Reales]]"
+previo: "[[Derecho real|Libro 4, Derechos Reales]]"
 tags:
   - legal/Título
 ---

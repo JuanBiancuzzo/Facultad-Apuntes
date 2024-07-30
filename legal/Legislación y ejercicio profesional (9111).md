@@ -203,7 +203,7 @@ tags:
 > [!summary]- Resumen
 > ![[legal/Derecho real/Resumen.md#Resumen]]
 
-* [[legal/Derecho real/Derecho real.md|Derecho real]]
+* [[Derecho real|Libro 4, Derechos Reales]]
 
 ##### Derechos comerciales y sociales 
 ---

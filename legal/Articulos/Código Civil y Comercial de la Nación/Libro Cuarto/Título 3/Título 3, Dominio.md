@@ -2,7 +2,7 @@
 tipo: Título
 nombre: Dominio
 num: 3
-previo: "[[Libro 4, Derechos Reales|Libro 4, Derechos Reales]]"
+previo: "[[Derecho real|Libro 4, Derechos Reales]]"
 tags:
   - legal/Título
 ---
@@ -11,7 +11,7 @@ tags:
 ```
 ### Interpretación
 ---
-El dominio es el [[Libro 4, Derechos Reales|derecho real]] en virtud del cual una cosa se encuentra sometida a la voluntad y a la acción de una [[Persona humana|persona]]
+El dominio es el [[Derecho real|derecho real]] en virtud del cual una cosa se encuentra sometida a la voluntad y a la acción de una [[Persona humana|persona]]
 
 El dominio puede ser perfecto o imperfecto
 * [[Art. 1941 del CC y CN, Dominio perfecto#Artículo|Dominio perfecto]]
