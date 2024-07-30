@@ -1,11 +1,11 @@
 ---
 dia: 2024-07-08
 etapa: empezado
-tema: Docker
-indice: "[[Herramientas/Docker/Índice|Índice]]"
 referencias:
   - "37"
   - "158"
+tags:
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

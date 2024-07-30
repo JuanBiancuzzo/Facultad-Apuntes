@@ -5,6 +5,8 @@ referencias:
   - "156"
 aliases:
   - GDD
+tags:
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

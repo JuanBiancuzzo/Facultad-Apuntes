@@ -3,6 +3,8 @@ dia: 2024-07-19
 etapa: ampliar
 referencias:
   - "173"
+tags:
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

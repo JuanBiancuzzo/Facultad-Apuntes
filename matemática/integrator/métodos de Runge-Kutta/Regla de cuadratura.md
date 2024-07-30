@@ -1,10 +1,10 @@
 ---
 dia: 2024-07-08
 etapa: terminado
-tema: Métodos de Runge-Kutta
-indice: "[[matemática/integrator/métodos de Runge-Kutta/Índice|Índice]]"
 referencias:
   - "65"
+tags:
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

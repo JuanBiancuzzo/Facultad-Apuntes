@@ -1,10 +1,10 @@
 ---
 dia: 2024-07-08
 etapa: terminado
-tema: Reglas APA
-indice: "[[Reglas APA/Índice|Índice]]"
 referencias:
   - "6"
+tags:
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

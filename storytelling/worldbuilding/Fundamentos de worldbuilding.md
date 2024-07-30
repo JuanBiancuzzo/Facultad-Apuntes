@@ -1,8 +1,6 @@
 ---
 dia: 2024-07-09
 etapa: sin-empezar
-tema: Worldbuilding
-indice: "[[Storytelling/Worldbuilding/Índice|Índice]]"
 referencias:
   - "103"
   - "104"
@@ -10,6 +8,8 @@ referencias:
   - "106"
   - "107"
   - "116"
+tags:
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

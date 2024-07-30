@@ -4,6 +4,8 @@ etapa: sin-empezar
 referencias:
   - "160"
   - "161"
+tags:
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

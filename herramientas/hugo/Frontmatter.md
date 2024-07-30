@@ -5,6 +5,8 @@ referencias:
   - "172"
 aliases:
   - Metadata
+tags:
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

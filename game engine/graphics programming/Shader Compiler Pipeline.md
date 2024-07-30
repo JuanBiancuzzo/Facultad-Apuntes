@@ -1,11 +1,11 @@
 ---
 dia: 2024-07-09
 etapa: sin-empezar
-tema: Shaders
-indice: "[[Shaders|Shaders]]"
 referencias:
   - "137"
   - "138"
+tags:
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
