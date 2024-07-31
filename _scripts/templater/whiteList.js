@@ -6,7 +6,7 @@ function whiteListArchivoFacultad(archivoPath) {
 
 function whiteListArchivoInvestigacion(archivoPath) {
     const dv = app.plugins.plugins.dataview.api;
-    const indice = dv.pages("#Índice").map(indice => indice.file.folder);
+    const indice = dv.pages("#índice").map(indice => indice.file.folder);
     return indice.some(indice => archivoPath.startsWith(indice));
 }
 
@@ -16,7 +16,9 @@ function whiteListArticuloLegal(tp, archivoPath) {
 }
 
 function whiteListArchivoProyecto(archivoPath) {
-    return false;
+    const dv = app.plugins.plugins.dataview.api;
+    const proyecto = dv.pages("#proyecto").map(proyecto => proyecto.file.folder);
+    return proyecto.some(proyecto => archivoPath.startsWith(proyecto));
 }
 
 function whiteListArchivoLibro(archivoPath) {

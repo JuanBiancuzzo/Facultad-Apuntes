@@ -39,7 +39,7 @@
 		
 		tR += "---\n"; 
 		tR += `dia: ${dia}\n`;
-		tR += `tags: \n - índice\n - ${path.replaceAll(" ", "-")}`;
+		tR += `tags: \n - índice\n - ${path.replaceAll(" ", "-")}\n`;
 		tR += "---\n";
 
 	} catch ({ name: _, message: mensaje }) {

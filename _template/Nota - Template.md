@@ -25,7 +25,7 @@
             tR += await tp.file.include("[[Nota investigacion - Template]]");
             
         } else if (pertenece.archivoProyecto(path)) {
-            // Nota proyecto
+            tR += await tp.file.include("[[Nota proyecto - Template]]");
             
         } else if (pertenece.archivoLibro(path)) {
             // Nota libros

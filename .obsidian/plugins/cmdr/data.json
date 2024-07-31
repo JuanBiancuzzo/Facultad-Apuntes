@@ -8,7 +8,7 @@
     {
       "id": "quickadd:choice:e024d912-7e83-44a5-a17c-6175a73cc40f",
       "icon": "book",
-      "name": "Nuevo tema",
+      "name": "Nuevo Tema",
       "mode": "any"
     },
     {
@@ -20,13 +20,19 @@
     {
       "id": "quickadd:choice:e516c7e7-35e3-4917-b453-678f35596fdc",
       "icon": "album",
-      "name": "Nueva materia",
+      "name": "Nueva Materia",
       "mode": "any"
     },
     {
       "id": "templater-obsidian:_template/investigacion/Agregar cita.md",
       "icon": "bookmark",
-      "name": "Agregar cita",
+      "name": "Agregar Cita",
+      "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:e08ebefc-0939-4918-88d3-e2f5937667ac",
+      "icon": "box",
+      "name": "Nuevo Proyecto",
       "mode": "any"
     }
   ],
@@ -34,23 +40,7 @@
   "titleBar": [],
   "statusBar": [],
   "pageHeader": [],
-  "macros": [
-    {
-      "macro": [
-        {
-          "action": 0,
-          "commandId": "quickadd:choice:5879040f-2b98-41d6-8c55-ca689e52ab57"
-        },
-        {
-          "action": 0,
-          "commandId": "obsidian-git:commit-specified-message"
-        }
-      ],
-      "name": "Commitear",
-      "icon": "git-commit",
-      "startup": false
-    }
-  ],
+  "macros": [],
   "explorer": [],
   "hide": {
     "statusbar": [],

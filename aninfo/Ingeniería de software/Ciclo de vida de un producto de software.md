@@ -35,7 +35,7 @@ Se puede separar en dos grandes fases
 
 ##### [[Desarrollo de software|Desarrollo]]
 ---
-Es la ejecución de un [[Proyecto]]
+Es la ejecución de un [[Algo]]
 
 ##### Producción
 ---

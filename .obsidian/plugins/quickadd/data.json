@@ -2,13 +2,13 @@
   "choices": [
     {
       "id": "c6addedc-6a02-4777-95d3-b9d63ce9a4ed",
-      "name": "Agregar tema",
+      "name": "Agregar tema de materia",
       "type": "Template",
       "command": true,
       "templatePath": "_template/Agregar tema - Template.md",
       "fileNameFormat": {
         "enabled": true,
-        "format": "Resumen"
+        "format": "temp resumen"
       },
       "folder": {
         "enabled": true,
@@ -29,44 +29,14 @@
       "setFileExistsBehavior": true
     },
     {
-      "id": "5879040f-2b98-41d6-8c55-ca689e52ab57",
-      "name": "Regenerar materias",
-      "type": "Template",
-      "command": true,
-      "templatePath": "_template/Regenerar materias - Template.md",
-      "fileNameFormat": {
-        "enabled": true,
-        "format": "temp"
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [
-          "temp"
-        ],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": false
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": true
-    },
-    {
       "id": "60f58eea-e5ae-4e93-8ade-3421b90b3aeb",
-      "name": "Nuevo Documento",
+      "name": "Nuevo documento",
       "type": "Template",
       "command": true,
       "templatePath": "_template/legal/Documento - Template.md",
       "fileNameFormat": {
         "enabled": true,
-        "format": "Untitle"
+        "format": "temp documento"
       },
       "folder": {
         "enabled": true,
@@ -96,7 +66,7 @@
       "templatePath": "_template/Materia - Template.md",
       "fileNameFormat": {
         "enabled": true,
-        "format": "temp"
+        "format": "temp materia"
       },
       "folder": {
         "enabled": true,
@@ -126,7 +96,37 @@
       "templatePath": "_template/investigacion/Índice - Template.md",
       "fileNameFormat": {
         "enabled": true,
-        "format": "Índice"
+        "format": "temp índice"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "temp"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": true
+    },
+    {
+      "id": "e08ebefc-0939-4918-88d3-e2f5937667ac",
+      "name": "Nuevo proyecto",
+      "type": "Template",
+      "command": true,
+      "templatePath": "_template/proyectos/Proyecto - Template.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "temp proyecto"
       },
       "folder": {
         "enabled": true,
