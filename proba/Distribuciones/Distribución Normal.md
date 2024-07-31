@@ -1,9 +1,8 @@
 ---
 dia: 2023-01-23
-materia: proba
-distribucion: Continua
+tags:
+  - distribucion/continua
 ---
-
 ### Definición
 ---
 La [[Variable aleatoria]] $X$ que toma los valores $x \in \mathbb{R}$ tiene una distribución normal si su [[Función de densidad]] es de la forma $$ f_X(x) = \varphi(x) = \frac{1}{\sqrt{2 \cdot \pi \cdot \sigma }} \cdot e^{-(x - \mu)^2 \cdot (2 \cdot \sigma^2)^{-1}} $$

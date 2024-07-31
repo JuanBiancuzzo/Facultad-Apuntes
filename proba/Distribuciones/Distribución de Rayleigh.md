@@ -1,9 +1,8 @@
 ---
 dia: 2023-01-23
-materia: proba
-distribucion: Continua
+tags:
+  - distribucion/continua
 ---
-
 ### Definición
 ---
 Se dice que una [[Variable aleatoria]] $X$ tiene distribución de Rayleigh de parametro $\sigma$ si su [[Función de densidad]] es $$ f_X(x) = \frac{x}{\sigma^2}\cdot e^{-\displaystyle\frac{x^2}{2 \cdot \sigma^2}} $$

@@ -1,9 +1,8 @@
 ---
 dia: 2023-01-23
-materia: proba
-distribucion: Multivariada
+tags:
+  - distribucion/multivariada
 ---
-
 ### Definición
 ---
 La variable aleatoria Multinomial modela la cantidad de observaciones de cada resultado posible al repetir $n$ veces de forma independiente un experimento que toma valores en $\Set{1, \cdots, k}$ con probabilidades $p_i$ para cada resultado $i \in \Set{1, \cdots, k}$

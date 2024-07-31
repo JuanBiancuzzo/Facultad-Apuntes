@@ -1,11 +1,9 @@
 ---
 dia: 2023-02-27
-materia: proba
 ---
-
 ### [[Distribución Beta]] y [[Distribución uniforme]]
 ---
-Dada $X$ con distribución Beta de parametros $1$ y $1$, $X \sim \beta(1, 1)$ es equivalente a una distribución uniforme de parametros $0$ y $1$, $X \sim U(0, 1)$.
+Dada $X$ con distribución Beta de parámetros $1$ y $1$, $X \sim \beta(1, 1)$ es equivalente a una distribución uniforme de parámetros $0$ y $1$, $X \sim U(0, 1)$.
 
 ### [[Distribución Chi cuadrado]]
 ---

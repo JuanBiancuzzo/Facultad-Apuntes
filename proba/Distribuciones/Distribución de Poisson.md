@@ -1,9 +1,8 @@
 ---
 dia: 2023-01-23
-materia: proba
-distribucion: Discreta
+tags:
+  - distribucion/discreta
 ---
-
 ### Definición
 ---
 Se dice que una [[Variable aleatoria]] $X$ tiene distribución de Poisson de parámetro $\mu$ si su [[Función de probabilidad]] es $$ p_X(x) = \frac{1}{x!} \cdot \mu^x \cdot e^{-\mu}$$

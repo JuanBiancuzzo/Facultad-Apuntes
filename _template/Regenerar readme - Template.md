@@ -1,17 +1,16 @@
-<%*
-    const dv = app.plugins.plugins.dataview.api;
-_%>
 ### Apuntes
 ---
 Voy a ir poniendo mis apuntes acá, y estoy usando [Obsidian](https://obsidian.md) para escribir y crear los vínculos entre las páginas por lo que es recomendable para poder navegar los apuntes.
 
 Cualquier corrección/ampliación de los contenidos en este proyecto, por favor hacer un [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) para poder visualizar los cambios pedidos. En el caso de sugerir cualquier cosa, por favor crear un [issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue) donde ahí lo podré ver. 
 
-##### Materias
+#### Materias
 ---
 Un listado de materias y su estado actual
 
 <%*
+    const dv = app.plugins.plugins.dataview.api;
+    
     const materias = dv.pages("#materia")
         .sort(materia => materia.file.name);
 
@@ -25,7 +24,7 @@ Un listado de materias y su estado actual
     tR += `${tabla}\n`;
 _%>
 
-##### Investigación
+#### Investigación
 ---
 Un listado de los temas investigados y su estado actual
 
@@ -45,7 +44,7 @@ Un listado de los temas investigados y su estado actual
     tR += `${tabla}\n`;
 _%>
 
-##### Contribuidores
+#### Contribuidores
 ---
 * Juan Ignacio Biancuzzo
 * Felipe Perassi

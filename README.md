@@ -4,7 +4,7 @@ Voy a ir poniendo mis apuntes acá, y estoy usando [Obsidian](https://obsidian.m
 
 Cualquier corrección/ampliación de los contenidos en este proyecto, por favor hacer un [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) para poder visualizar los cambios pedidos. En el caso de sugerir cualquier cosa, por favor crear un [issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue) donde ahí lo podré ver. 
 
-##### Materias
+#### Materias
 ---
 Un listado de materias y su estado actual
 
@@ -37,7 +37,7 @@ Un listado de materias y su estado actual
 | [Sistemas operativos](sisop/Sistemas%20operativos%20(7508).md)                                                 | Terminado                                                     |
 | [Taller de programación 1](taller/Taller%20de%20programación%201%20(9508).md)                                  | Falta pasar las presentaciones de los últimos temas           |
 
-##### Investigación
+#### Investigación
 ---
 Un listado de los temas investigados y su estado actual
 
@@ -62,7 +62,7 @@ Un listado de los temas investigados y su estado actual
 | [Reglas APA](reglas%20APA/Índice.md)                       | Falta resumir |
 | [Storytelling](storytelling/Índice.md)                     | Falta resumir |
 
-##### Contribuidores
+#### Contribuidores
 ---
 * Juan Ignacio Biancuzzo
 * Felipe Perassi

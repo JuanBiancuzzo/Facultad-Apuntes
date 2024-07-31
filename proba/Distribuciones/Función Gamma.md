@@ -1,9 +1,8 @@
 ---
 dia: 2023-01-22
-materia: proba
-distribucion: Continua
+tags:
+  - distribucion/continua
 ---
-
 ### Definición
 ---
 Es la función $\Gamma : \mathbb{C} \to \mathbb{C}$ definida como $$ \Gamma(z) = \int_0^\infty t^{z - 1} \cdot e^{-t} \cdot dt $$
