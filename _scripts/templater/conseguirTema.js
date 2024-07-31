@@ -1,10 +1,10 @@
 async function conseguirTema(tp, dv) {
     let carpeta = tp.file.folder(true);
-    let todosIndices = dv.pages("#Índice");
+    let todosIndices = dv.pages("#índice");
 	if (carpeta == "/" || carpeta == "")
 		return await preguntarTema(tp, todosIndices);
 
-    let archivos = dv.pages(`"${carpeta}" and #Índice`);
+    let archivos = dv.pages(`"${carpeta}" and #índice`);
 
     switch (archivos.values.length) {
         case 0: return await preguntarTema(tp, todosIndices);

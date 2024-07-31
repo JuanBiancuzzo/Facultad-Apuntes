@@ -55,7 +55,7 @@ function posicionOrden(pagina) {
 	return orden.indexOf(String(pagina.etapa));
 }
 
-let temas = dv.pages("#Índice");
+let temas = dv.pages("#índice");
 
 dv.table(["Archivo", "Tema", "Etapa"], temas.flatMap(tema => {
 	let archivos = dv.pages(`"${tema.file.folder}"`)

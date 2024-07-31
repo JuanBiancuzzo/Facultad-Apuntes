@@ -8,7 +8,7 @@
 
 	try {
 
-		let indices = dv.pages("#Índice")
+		let indices = dv.pages("#índice")
 			.filter(indice => indice.file.name !== undefined);
 
 		let nuevoTema = await preguntar.prompt(
@@ -39,7 +39,7 @@
 		
 		tR += "---\n"; 
 		tR += `dia: ${dia}\n`;
-		tR += "tags: \n - Índice\n";
+		tR += `tags: \n - índice\n - ${path.replaceAll(" ", "-")}`;
 		tR += "---\n";
 
 	} catch ({ name: _, message: mensaje }) {

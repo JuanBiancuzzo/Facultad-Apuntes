@@ -3,37 +3,42 @@
 Lista de todas las carpetas siendo investigadas, con todos los links que usan. Cualquier cosa ver el [[README|read me]].
 
 ```dataviewjs
-const indices = dv.pages('#Índice')
-	.sort(archivo => archivo.file.name);
+const indices = dv.pages('#índice')
+	.sort(archivo => archivo.file.folder.split("/").pop());
 const referencias = dv.pages('"_referencias"');
 
 let citaView = require(app.vault.adapter.basePath + "/_scripts/dataview/citaView.js");
 
+console.log(indices);
+
 for (let indice of indices) {
-	let paginas = dv.pages(`"${indice.file.folder}" and -#Índice`)
-        .filter(pagina => pagina.tema && pagina.referencias)
-        .filter(pagina => pagina.tema == indice.tema);
+	let paginas = dv.pages(`"${indice.file.folder}" and -#índice`)
+        .filter(pagina => pagina.file.folder == indice.file.folder)
+        .filter(pagina => pagina.referencias);
 
 	let referenciasTema = paginas
-        .flatMap(pagina => pagina.referencias)
-        .map(ref => parseInt(ref, 10))
-        .sort(ref => ref)
-        .values;
+        .flatMap(pagina => pagina.referencias)
+        .map(ref => parseInt(ref, 10))
+        .sort(ref => ref)
+        .values;
 
 	if (referenciasTema.length == 0)
 		continue;
 
-	dv.header(5, `${indice.tema} [[${indice.file.path}|?]]`);
+	let nombre = indice.file.folder.split("/").pop();
+	nombre = `${nombre.charAt(0).toUpperCase()}${nombre.slice(1)}`;
+	
+	dv.header(5, `${nombre} [[${indice.file.path}|?]]`);
 	dv.el("hr", "");
 
 	let archivoReferencias = referencias
-        .filter(ref => referenciasTema.indexOf(ref.numReferencia) >= 0)
-        .sort(ref => ref.numReferencia);
+        .filter(ref => referenciasTema.indexOf(ref.numReferencia) >= 0)
+        .sort(ref => ref.numReferencia);
 
 	let resultado = "";
-    for (let referencia of archivoReferencias) {
-        resultado += citaView.mostrarCita(referencia);
-    }
+    for (let referencia of archivoReferencias) {
+        resultado += citaView.mostrarCita(referencia);
+    }
 
 	dv.el("div", resultado);
 }

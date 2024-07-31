@@ -2,7 +2,7 @@ const citaView = require(app.vault.adapter.basePath + "/_scripts/dataview/citaVi
 
 const { indice } = input
 
-let paginas = dv.pages(`"${indice.file.folder}" and -#Índice`)
+let paginas = dv.pages(`"${indice.file.folder}" and -#índice`)
     .filter(pagina => pagina.referencias)
     .filter(pagina => pagina.file.folder == indice.file.folder);
 

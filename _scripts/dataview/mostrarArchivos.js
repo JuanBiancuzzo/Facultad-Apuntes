@@ -1,6 +1,6 @@
 const { indice } = input;
 
-let archivos = dv.pages(`"${indice.file.folder}" and -#Índice`)
+let archivos = dv.pages(`"${indice.file.folder}" and -#índice`)
     .filter(archivo => archivo.file.folder == indice.file.folder)
     .sort(archivo => {
         let referencias = archivo.referencias;
