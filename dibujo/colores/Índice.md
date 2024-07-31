@@ -2,6 +2,7 @@
 dia: 2024-07-24
 tags:
   - índice
+  - dibujo/colores
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });

@@ -2,6 +2,7 @@
 dia: 2024-07-09
 tags:
   - índice
+  - data-structures
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });

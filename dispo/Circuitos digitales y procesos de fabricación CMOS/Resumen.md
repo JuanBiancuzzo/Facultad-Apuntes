@@ -6,10 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[dispo/Circuitos digitales y procesos de fabricación CMOS/Inversor ideal.md|Inversor ideal]]
-* [[dispo/Circuitos digitales y procesos de fabricación CMOS/Compuertas CMOS.md|Compuertas CMOS]]
-* [[dispo/Circuitos digitales y procesos de fabricación CMOS/Inversor.md|Inversor]]
-* [[dispo/Circuitos digitales y procesos de fabricación CMOS/Inversor MOS Complementaria.md|Inversor MOS Complementaria]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

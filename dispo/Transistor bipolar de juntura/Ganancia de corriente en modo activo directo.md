@@ -3,6 +3,8 @@ dia: 2023-10-14
 tags:
   - dispo/Transistor-bipolar-de-juntura
   - nota/facultad
+aliases:
+  - Ganancia de corriente en MAD
 ---
 ### Definición
 ---

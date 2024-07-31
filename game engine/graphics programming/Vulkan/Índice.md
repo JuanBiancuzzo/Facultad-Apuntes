@@ -2,6 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
+  - game-engine/graphics-programming/Vulkan
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });

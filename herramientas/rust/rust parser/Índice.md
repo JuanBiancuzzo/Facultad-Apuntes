@@ -2,6 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
+  - herramientas/rust/rust-parser
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });

@@ -2,6 +2,7 @@
 dia: 2024-07-17
 tags:
   - índice
+  - dibujo
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });

@@ -6,7 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[proba/Proceso de Bernoulli/Proceso de Bernoulli.md|Proceso de Bernoulli]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

@@ -6,7 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[numerico/Ecuaciones diferenciales en derivadas parciales/temp.md|temp]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

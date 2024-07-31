@@ -8,6 +8,7 @@ aliases:
   - Extensible Markup Language
 tags:
   - nota/investigacion
+  - lenguaje-de-marcado
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

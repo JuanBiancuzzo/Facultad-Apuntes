@@ -6,9 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[discreta/Álgebra de Boole/Álgebra de Boole.md|Álgebra de Boole]]
-* [[discreta/Álgebra de Boole/Operación lógica.md|Operación lógica]]
-* [[discreta/Álgebra de Boole/Operador lógico NOT.md|Operador lógico NOT]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

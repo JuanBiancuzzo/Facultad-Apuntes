@@ -2,6 +2,7 @@
 dia: 2024-07-19
 tags:
   - índice
+  - herramientas/hugo
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });

@@ -5,6 +5,7 @@ referencias:
   - "10"
 tags:
   - nota/investigacion
+  - reglas-APA
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

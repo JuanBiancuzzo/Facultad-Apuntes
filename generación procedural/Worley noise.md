@@ -5,6 +5,7 @@ referencias:
   - "62"
 tags:
   - nota/investigacion
+  - generación-procedural
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

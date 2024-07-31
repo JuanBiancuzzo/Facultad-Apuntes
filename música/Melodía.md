@@ -5,6 +5,7 @@ referencias:
   - "55"
 tags:
   - nota/investigacion
+  - música
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

@@ -6,7 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[circuitos/Fuentes de corriente y circuitos con cargas activas/temp.md|temp]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

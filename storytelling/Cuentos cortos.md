@@ -8,6 +8,7 @@ referencias:
   - "89"
 tags:
   - nota/investigacion
+  - storytelling
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

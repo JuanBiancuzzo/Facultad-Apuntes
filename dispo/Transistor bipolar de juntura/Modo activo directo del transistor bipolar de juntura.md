@@ -51,7 +51,7 @@ Para $I_E$
 
 Por lo que podemos entender que $$ I_C = - I_n = \frac{qA_{BE} ~ D_n^B ~ n_i^2}{W_B ~ N_{aB}} \cdot \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - 1 \right) = I_S  \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - 1 \right) $$ donde $I_S$ es la corriente de saturación del colector, en $[A]$
 
-Y también que $$ I_B = - I_p = \frac{qA_{BE} ~ D_p^E ~ n_i^2}{W_E ~ N_{dB}} \cdot \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - 1 \right) = \frac{I_S}{\beta_F}  \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - 1 \right) $$donde $\beta_F$ es la [[Ganancia de corriente en modo activo directo (MAD)|ganancia de corriente en MAD]]
+Y también que $$ I_B = - I_p = \frac{qA_{BE} ~ D_p^E ~ n_i^2}{W_E ~ N_{dB}} \cdot \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - 1 \right) = \frac{I_S}{\beta_F}  \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - 1 \right) $$donde $\beta_F$ es la [[Ganancia de corriente en modo activo directo|ganancia de corriente en MAD]]
 
 Recordando que $V_{BE} > 0$ al estar en directa, por lo que podemos aproximar $I_B$ a $$ I_B = \frac{I_S}{\beta_F}  \exp \left( \frac{V_{BE}}{V_{th}} \right) $$
 

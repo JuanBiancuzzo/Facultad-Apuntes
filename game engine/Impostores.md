@@ -7,6 +7,7 @@ aliases:
   - Impostors
 tags:
   - nota/investigacion
+  - game-engine
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

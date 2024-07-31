@@ -5,6 +5,7 @@ referencias:
   - "38"
 tags:
   - nota/investigacion
+  - matemática/fractales
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

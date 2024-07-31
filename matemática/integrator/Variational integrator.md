@@ -5,6 +5,7 @@ referencias:
   - "93"
 tags:
   - nota/investigacion
+  - matemática/integrator
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

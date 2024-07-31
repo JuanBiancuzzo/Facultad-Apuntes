@@ -2,6 +2,7 @@
 dia: 2024-07-13
 tags:
   - índice
+  - generación-procedural/constraint-satisfacton
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });

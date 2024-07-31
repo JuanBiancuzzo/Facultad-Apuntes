@@ -5,6 +5,7 @@ referencias:
   - "169"
 tags:
   - nota/investigacion
+  - matemática/koopman-operator-theory
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

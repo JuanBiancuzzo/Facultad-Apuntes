@@ -6,7 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[fisica 3/Homojunturas y diodo PN/temp.md|temp]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

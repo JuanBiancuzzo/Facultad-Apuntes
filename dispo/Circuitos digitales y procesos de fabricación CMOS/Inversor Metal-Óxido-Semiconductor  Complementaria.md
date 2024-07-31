@@ -5,6 +5,7 @@ tags:
   - nota/facultad
 aliases:
   - Inversor CMOS
+  - Inversor MOS Complementaria
 ---
 ### Definición
 ---

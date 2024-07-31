@@ -6,7 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[redes/Capa Física Inalámbrica/Capa física.md|Capa física]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

@@ -6,9 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[circuitos/Amplificadores con varios dispositivos activos de bajo nivel de potencia/Cuasi-Darlington.md|Cuasi-Darlington]]
-* [[circuitos/Amplificadores con varios dispositivos activos de bajo nivel de potencia/Darlington.md|Darlington]]
-* [[circuitos/Amplificadores con varios dispositivos activos de bajo nivel de potencia/Transistor bipolar de puerta aislada.md|Transistor bipolar de puerta aislada]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

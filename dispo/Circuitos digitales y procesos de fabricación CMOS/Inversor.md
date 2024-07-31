@@ -99,4 +99,4 @@ Clave para la regeneración de [[Señal|señal]]
 
 #### El inversor CMOS
 ---
-![[Inversor MOS Complementaria#Definición]]
+![[Inversor Metal-Óxido-Semiconductor  Complementaria#Definición]]

@@ -7,6 +7,7 @@ aliases:
   - Citar un APP
 tags:
   - nota/investigacion
+  - reglas-APA
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

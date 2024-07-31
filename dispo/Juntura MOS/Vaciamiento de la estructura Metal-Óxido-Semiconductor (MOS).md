@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Dada una [[Estructura Metal-Óxido-Semiconductor (MOS)|Estructura MOS]] [[Estructura Metal-Óxido-Semiconductor (MOS) con polarización|polarizada]]: 
+Dada una [[Estructura Metal-Óxido-Semiconductor (MOS)|Estructura MOS]] [[Estructura Metal-Óxido-Semiconductor con polarización|polarizada]]: 
 * Para $V_{GB} >0$ la fuente mueve [[Hueco|huecos]] desde el sustrato hacia el gate, entonces la región de vaciamiento crece. 
 * Para $V_{GB} < 0$ la fuente mueve [[Hueco|huecos]] desde el gate hacia el sustrato entonces la región de vaciamiento se contrae.
 

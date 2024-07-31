@@ -2,6 +2,7 @@
 dia: 2024-07-12
 tags:
   - índice
+  - machine-Learning
 aliases:
   - AI
 ---

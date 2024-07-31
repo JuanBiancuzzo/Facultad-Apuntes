@@ -5,6 +5,7 @@ referencias:
   - "117"
 tags:
   - nota/investigacion
+  - storytelling/worldbuilding
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

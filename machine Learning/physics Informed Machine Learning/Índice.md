@@ -2,6 +2,7 @@
 dia: 2024-07-13
 tags:
   - índice
+  - machine-Learning/physics-Informed-Machine-Learning
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });

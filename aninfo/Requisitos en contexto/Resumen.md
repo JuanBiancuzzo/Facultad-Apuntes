@@ -6,9 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[aninfo/Requisitos en contexto/Análisis de contexto.md|Análisis de contexto]]
-* [[aninfo/Requisitos en contexto/Story points.md|Story points]]
-* [[aninfo/Requisitos en contexto/Requisitos en el ciclo de vida.md|Requisitos en el ciclo de vida]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

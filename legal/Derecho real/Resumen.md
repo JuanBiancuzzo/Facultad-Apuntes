@@ -6,7 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[Derecho real|Libro 4, Derechos Reales]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

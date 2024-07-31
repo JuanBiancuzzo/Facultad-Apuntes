@@ -5,6 +5,7 @@ referencias:
   - "64"
 tags:
   - nota/investigacion
+  - matemática/integrator/métodos-de-Runge-Kutta
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

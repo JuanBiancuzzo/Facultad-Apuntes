@@ -6,9 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[señales/Filtros digitales/Diseño de filtros en tiempo discreto.md|Diseño de filtros en tiempo discreto]]
-* [[señales/Filtros digitales/Filtro de Respuesta Finita al impulso.md|Filtro de Respuesta Finita al impulso]]
-* [[señales/Filtros digitales/Filtro de Respuesta Infinita al impulso.md|Filtro de Respuesta Infinita al impulso]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

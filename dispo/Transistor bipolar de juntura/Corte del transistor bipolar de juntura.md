@@ -26,9 +26,9 @@ Solo existen corrientes de fuga despreciables.
 ---
 ![[Perfil de portadores minoritarios en corte.webp]]
 
-La base extrae [[Hueco|huecos]] del emisor $$ I_E = \frac{I_S}{\beta_F} $$ donde $\beta_F$ es la [[Ganancia de corriente en modo activo directo (MAD)|ganancia en MAD]] 
+La base extrae [[Hueco|huecos]] del emisor $$ I_E = \frac{I_S}{\beta_F} $$ donde $\beta_F$ es la [[Ganancia de corriente en modo activo directo|ganancia en MAD]] 
 
-La base extrae huecos del colector $$ I_C = \frac{I_S}{\beta_R} $$ donde $\beta_R$ es la [[Ganancia de corriente en modo activo inverso (MAI)|ganancia en MAI]]
+La base extrae huecos del colector $$ I_C = \frac{I_S}{\beta_R} $$ donde $\beta_R$ es la [[Ganancia de corriente en modo activo inverso|ganancia en MAI]]
 
 Luego la corriente de base es $$ I_B = -I_C - I_B $$
 Estas son solo pequeñas [[Corriente eléctrica|corrientes]] de fuga ($\sim pA$) que en la mayoría de las aplicaciones prácticas pueden despreciarse

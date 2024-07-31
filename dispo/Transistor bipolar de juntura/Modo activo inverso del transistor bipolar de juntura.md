@@ -28,6 +28,6 @@ Típicamente $V_{BC~(on)} \simeq 0.5~V$ (los [[Dopaje|dopajes]] de la [[Juntura 
 ![[Perfil de portadores minoritarios en modo activo inverso.webp]]
 
 El colector inyecta [[Electrón|electrones]] en la base, el emisor colecta electrones de la base $$ I_E = I_S ~ \exp \left( \frac{V_{BC}}{V_{th}} \right) $$
-La base inyecta [[Hueco|huecos]] al colector, se [[Recombinación|recombinan]] en el contacto con el colector y el sustrato $$ I_B = \frac{I_S}{\beta_R} ~ \left( \exp \left( \frac{V_{BC}}{V_{th}} \right) - 1\right) $$donde $\beta_F$ es la [[Ganancia de corriente en modo activo inverso (MAI)|ganancia de corriente en MAI]]
+La base inyecta [[Hueco|huecos]] al colector, se [[Recombinación|recombinan]] en el contacto con el colector y el sustrato $$ I_B = \frac{I_S}{\beta_R} ~ \left( \exp \left( \frac{V_{BC}}{V_{th}} \right) - 1\right) $$donde $\beta_F$ es la [[Ganancia de corriente en modo activo inverso|ganancia de corriente en MAI]]
 
 Por lo que la corriente de colector es $$ I_C = -I_E - I_B $$ $$ I_C = -I_S \exp \left( \frac{V_{BC}}{V_{th}} \right) - \frac{I_S}{\beta_R} \left( \exp \left( \frac{V_{BC}}{V_{th}} \right) - 1 \right) $$

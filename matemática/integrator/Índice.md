@@ -2,6 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
+  - matemática/integrator
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });

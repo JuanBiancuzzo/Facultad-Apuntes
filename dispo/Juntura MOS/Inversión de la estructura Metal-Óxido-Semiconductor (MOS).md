@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Dada una [[Estructura Metal-Óxido-Semiconductor (MOS)|Estructura MOS]] [[Estructura Metal-Óxido-Semiconductor (MOS) con polarización|polarizada]], para $V_{GB} > V_T$, donde $V_T$ es la [[Tensión umbral]]. La concentración de [[Electrón|electrones]] en la interfaz $Si$/$SiO_2$ supera a la concentración de [[Impureza aceptora|átomos aceptores]] por lo que se produce la inversión del material
+Dada una [[Estructura Metal-Óxido-Semiconductor (MOS)|Estructura MOS]] [[Estructura Metal-Óxido-Semiconductor con polarización|polarizada]], para $V_{GB} > V_T$, donde $V_T$ es la [[Tensión umbral]]. La concentración de [[Electrón|electrones]] en la interfaz $Si$/$SiO_2$ supera a la concentración de [[Impureza aceptora|átomos aceptores]] por lo que se produce la inversión del material
 
 ![[Concentración de portadores en una estructura metal óxido semiconductor en inversión.webp]]
 

@@ -5,6 +5,7 @@ referencias:
   - "155"
 tags:
   - nota/investigacion
+  - herramientas/git
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

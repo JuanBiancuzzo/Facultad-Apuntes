@@ -6,7 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[redes/Seguridad en Redes/temp.md|temp]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

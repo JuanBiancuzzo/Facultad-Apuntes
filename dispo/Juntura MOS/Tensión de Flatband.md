@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Para cierta tensión $V_{GB}$, en una [[Estructura Metal-Óxido-Semiconductor (MOS) con polarización|estructura MOS polarizada]], la región de vaciamiento desaparece, produciendo
+Para cierta tensión $V_{GB}$, en una [[Estructura Metal-Óxido-Semiconductor con polarización|estructura MOS polarizada]], la región de vaciamiento desaparece, produciendo
 
 ![[Curvas de densidad de carga, campo eléctrico, potencial y portadores, en flatband.webp]]
 

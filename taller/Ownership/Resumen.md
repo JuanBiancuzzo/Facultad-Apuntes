@@ -6,13 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[taller/Ownership/Box.md|Box]]
-* [[taller/Ownership/Copiar.md|Copiar]]
-* [[taller/Ownership/Ownership.md|Ownership]]
-* [[taller/Ownership/Referencia.md|Referencia]]
-* [[taller/Ownership/Lifetime.md|Lifetime]]
-* [[taller/Ownership/Movimiento.md|Movimiento]]
-* [[taller/Ownership/Taxonomia de ownership.md|Taxonomia de ownership]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

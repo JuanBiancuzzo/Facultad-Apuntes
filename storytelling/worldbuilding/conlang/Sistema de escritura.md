@@ -5,6 +5,7 @@ referencias:
   - "35"
 tags:
   - nota/investigacion
+  - storytelling/worldbuilding/conlang
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

@@ -5,6 +5,7 @@ referencias:
   - "147"
 tags:
   - nota/investigacion
+  - machine-Learning/red-Neuronal
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

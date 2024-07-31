@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Existe un $V_{GB}$, en una [[Estructura Metal-Óxido-Semiconductor (MOS) con polarización|estructura MOS polarizada]], tal que la densidad de minoritarios crece lo suficiente como para ser comparable con la densidad de [[Impureza aceptora|impurezas]].
+Existe un $V_{GB}$, en una [[Estructura Metal-Óxido-Semiconductor con polarización|estructura MOS polarizada]], tal que la densidad de minoritarios crece lo suficiente como para ser comparable con la densidad de [[Impureza aceptora|impurezas]].
 
 Al no poder despreciar su aporte de carga, no vale la [[Aproximación de vaciamiento|aproximación de vaciamiento]] en un entorno a $x = 0$ $$ \rho(x = 0) = q \left( \underbrace{p(x)}_{\ll N_a} + \underbrace{N_d}_{= ~ 0} - N_a - \underbrace{n(x = 0)}_{\approx N_a} \right) $$
 

@@ -6,7 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[redes/Capa de Enlace/Capa de enlace.md|Capa de enlace]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

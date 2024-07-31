@@ -8,6 +8,7 @@ referencias:
   - "53"
 tags:
   - nota/investigacion
+  - storytelling/worldbuilding/geoficción
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

@@ -6,7 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[algebra 2/Matrices unitarias y ortogonales/temp.md|temp]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

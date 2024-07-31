@@ -5,6 +5,7 @@ referencias:
   - "174"
 tags:
   - nota/investigacion
+  - herramientas/hugo
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

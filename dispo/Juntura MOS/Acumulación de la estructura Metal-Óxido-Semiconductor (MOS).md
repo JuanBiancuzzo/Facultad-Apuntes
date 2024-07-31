@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Dada una [[Estructura Metal-Óxido-Semiconductor (MOS)|Estructura MOS]] [[Estructura Metal-Óxido-Semiconductor (MOS) con polarización|polarizada]], sabemos que en [[Tensión de Flatband|Flatband]] al distribución de portadores mayoritarios en el [[Semiconductor|SC]] es uniforme e igual al [[Dopaje]].
+Dada una [[Estructura Metal-Óxido-Semiconductor (MOS)|Estructura MOS]] [[Estructura Metal-Óxido-Semiconductor con polarización|polarizada]], sabemos que en [[Tensión de Flatband|Flatband]] al distribución de portadores mayoritarios en el [[Semiconductor|SC]] es uniforme e igual al [[Dopaje]].
 
 A un lado de Flatband ($V_{GB} > V_{FB}$) "se quitan" mayoritarios generando la SCR ([[Vaciamiento de la estructura Metal-Óxido-Semiconductor (MOS)|Régimen de vaciamiento]]).
 

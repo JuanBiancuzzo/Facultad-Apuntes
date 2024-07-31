@@ -2,6 +2,7 @@
 dia: 2024-07-23
 tags:
   - índice
+  - matemática/lógica
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });

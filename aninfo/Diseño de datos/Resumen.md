@@ -6,7 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[aninfo/Diseño de datos/Dato.md|Dato]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

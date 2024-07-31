@@ -6,7 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[circuitos/Circuitos integrados analógicos/temp.md|temp]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

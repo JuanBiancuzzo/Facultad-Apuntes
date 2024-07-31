@@ -28,9 +28,9 @@ El dispositivo se comporta como dos [[Diodo|diodos]] en [[Convención de signos 
 ---
 ![[Perfil de portadores minoritarios en saturación.webp]]
 
-El régimen de saturación es la superposición del régimen [[Modo activo directo del transistor bipolar de juntura|activo]] y [[Modo activo inverso del transistor bipolar de juntura|reverso]] entonces $$ I_C = I_S ~ \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - \exp \left( \frac{V_{BC}}{V_{th}} \right) \right) - \frac{I_S}{\beta_R} \left( \exp \left( \frac{V_{BC}}{V_{th}} \right) - 1 \right) $$ donde $\beta_R$ es la [[Ganancia de corriente en modo activo inverso (MAI)|ganancia en MAI]]
+El régimen de saturación es la superposición del régimen [[Modo activo directo del transistor bipolar de juntura|activo]] y [[Modo activo inverso del transistor bipolar de juntura|reverso]] entonces $$ I_C = I_S ~ \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - \exp \left( \frac{V_{BC}}{V_{th}} \right) \right) - \frac{I_S}{\beta_R} \left( \exp \left( \frac{V_{BC}}{V_{th}} \right) - 1 \right) $$ donde $\beta_R$ es la [[Ganancia de corriente en modo activo inverso|ganancia en MAI]]
 
-$$ I_B = \frac{I_S}{\beta_F} \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - 1 \right) + \frac{I_S}{\beta_R} \left( \exp \left( \frac{V_{BC}}{V_{th}} \right) - 1 \right) $$ donde $\beta_F$ es la [[Ganancia de corriente en modo activo directo (MAD)|ganancia en MAD]]
+$$ I_B = \frac{I_S}{\beta_F} \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - 1 \right) + \frac{I_S}{\beta_R} \left( \exp \left( \frac{V_{BC}}{V_{th}} \right) - 1 \right) $$ donde $\beta_F$ es la [[Ganancia de corriente en modo activo directo|ganancia en MAD]]
 
 $$ I_E = -\frac{I_S}{\beta_F} \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - 1 \right) - I_S \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - \exp \left( \frac{V_{BC}}{V_{th}} \right) \right) $$
 

@@ -4,12 +4,11 @@ tags:
  - señales/Transformadas-de-Laplace-y-Z
  - resumen
 ---
-### Índice
+### Índice 
 ---
- * [[analisis 3/Transformada de Laplace/Transformada de Laplace.md|Transformada de Laplace]]
- * [[señales/Transformadas de Laplace y Z/Región de convergencia de la transformada Z.md|Región de convergencia de la transformada Z]]
- * [[señales/Transformadas de Laplace y Z/Transformada Z.md|Transformada Z]]
- * [[señales/Transformadas de Laplace y Z/Región de convergencia de la transformada de Laplace.md|Región de convergencia de la transformada de Laplace]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

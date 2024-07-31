@@ -6,8 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[proba/Proceso de Poisson/Proceso puntual de Poisson.md|Proceso puntual de Poisson]]
-* [[proba/Proceso de Poisson/Proceso puntual.md|Proceso puntual]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

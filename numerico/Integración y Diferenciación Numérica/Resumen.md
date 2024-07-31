@@ -6,7 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[numerico/Integración y Diferenciación Numérica/temp.md|temp]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

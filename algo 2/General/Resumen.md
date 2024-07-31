@@ -6,7 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[algo 2/General/Complejidad computacional.md|Complejidad computacional]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

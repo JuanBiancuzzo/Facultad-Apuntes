@@ -8,6 +8,7 @@ aliases:
   - Backpropagation
 tags:
   - nota/investigacion
+  - machine-Learning
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

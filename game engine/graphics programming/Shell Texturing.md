@@ -5,6 +5,7 @@ referencias:
   - "164"
 tags:
   - nota/investigacion
+  - game-engine/graphics-programming
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

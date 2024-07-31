@@ -5,6 +5,7 @@ referencias:
   - "145"
 tags:
   - nota/investigacion
+  - game-creation
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

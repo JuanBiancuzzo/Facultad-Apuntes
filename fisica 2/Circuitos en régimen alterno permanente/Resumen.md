@@ -6,7 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[fisica 2/Circuitos en régimen alterno permanente/temp.md|temp]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

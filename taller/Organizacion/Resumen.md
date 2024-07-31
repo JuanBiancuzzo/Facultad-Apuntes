@@ -6,9 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[taller/Organizacion/Crate.md|Crate]]
-* [[taller/Organizacion/Módulo.md|Módulo]]
-* [[taller/Organizacion/Testing.md|Testing]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

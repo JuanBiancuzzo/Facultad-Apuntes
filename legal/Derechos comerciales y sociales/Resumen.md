@@ -6,8 +6,9 @@ tags:
 ---
 ### Índice 
 ---
-* [[legal/Derechos comerciales y sociales/Acto constitutivo de la sociedad.md|Acto constitutivo de la sociedad]]
-* [[legal/Derechos comerciales y sociales/Contrato de sociedad.md|Contrato de sociedad]]
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
 
 ### Resumen
 ---

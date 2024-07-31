@@ -46,7 +46,7 @@
 	
 	tR += "---\n";
 	tR += `dia: ${dia}\n`;
-	tR += `tags: \n - ${tag}\n - nota\n`;
+	tR += `tags: \n - ${tag}\n - nota/facultad\n`;
 	tR += "---\n";
 _%>
 ### Definición

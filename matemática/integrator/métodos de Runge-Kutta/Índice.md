@@ -2,6 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
+  - matemática/integrator/métodos-de-Runge-Kutta
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });

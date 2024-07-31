@@ -5,6 +5,7 @@ referencias:
   - "162"
 tags:
   - nota/investigacion
+  - dibujo
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
