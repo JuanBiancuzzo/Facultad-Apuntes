@@ -37,7 +37,31 @@ Un listado de materias y su estado actual
 | [Sistemas operativos](sisop/Sistemas%20operativos%20(7508).md)                                                 | Terminado                          |
 | [Taller de programación 1](Taller%20de%20programación%201%20(9508).md)                                         | Falta pasar el libro               |
 
- 
+##### Investigación
+---
+Un listado de los temas investigados y su estado actual
+
+| Tema                                                       | Estado    |
+| ---------------------------------------------------------- | --------- |
+| [Animation](animation/Índice.md)                           | Empezando |
+| [Asynchronous](asynchronous/Índice.md)                     | Empezando |
+| [Cocinar](cocinar/Índice.md)                               | Empezando |
+| [Data structures](data%20structures/Índice.md)             | Empezando |
+| [Dibujo](dibujo/Índice.md)                                 | Empezando |
+| [Game creation](game%20creation/Índice.md)                 | Empezando |
+| [Game engine](game%20engine/Índice.md)                     | Empezando |
+| [Generación procedural](generación%20procedural/Índice.md) | Empezando |
+| [Herramientas](herramientas/Índice.md)                     | Empezando |
+| [Lagrangian mechanics](lagrangian%20mechanics/Índice.md)   | Empezando |
+| [Lenguaje de marcado](lenguaje%20de%20marcado/Índice.md)   | Empezando |
+| [Libros](libros/Índice.md)                                 | Empezando |
+| [Machine Learning](machine%20Learning/Índice.md)           | Empezando |
+| [Matemática](matemática/Índice.md)                         | Empezando |
+| [Música](música/Índice.md)                                 | Empezando |
+| [Networking](networking/Índice.md)                         | Empezando |
+| [Reglas APA](reglas%20APA/Índice.md)                       | Empezando |
+| [Storytelling](storytelling/Índice.md)                     | Empezando |
+
 ##### Contribuidores
 ---
 * Juan Ignacio Biancuzzo
