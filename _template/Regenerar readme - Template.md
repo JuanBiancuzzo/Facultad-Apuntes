@@ -22,8 +22,8 @@ Un listado de materias y su estado actual
         return [ `[${nombre}](${path})`, materia.estado ];
     }));
 
-    tR += tabla;
-%>
+    tR += `${tabla}\n`;
+_%>
 
 ##### Investigación
 ---
@@ -42,8 +42,8 @@ Un listado de los temas investigados y su estado actual
         return [ `[${nombre}](${path})`, indice.estado ];
     }));
 
-    tR += tabla;
-%>
+    tR += `${tabla}\n`;
+_%>
 
 ##### Contribuidores
 ---

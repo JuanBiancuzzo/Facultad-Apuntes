@@ -37,7 +37,6 @@ Un listado de materias y su estado actual
 | [Sistemas operativos](sisop/Sistemas%20operativos%20(7508).md)                                                 | Terminado                                                     |
 | [Taller de programación 1](taller/Taller%20de%20programación%201%20(9508).md)                                  | Falta pasar las presentaciones de los últimos temas           |
 
-
 ##### Investigación
 ---
 Un listado de los temas investigados y su estado actual
@@ -62,7 +61,6 @@ Un listado de los temas investigados y su estado actual
 | [Networking](networking/Índice.md)                         | Falta resumir |
 | [Reglas APA](reglas%20APA/Índice.md)                       | Falta resumir |
 | [Storytelling](storytelling/Índice.md)                     | Falta resumir |
-
 
 ##### Contribuidores
 ---
