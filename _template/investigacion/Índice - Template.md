@@ -39,6 +39,7 @@
 		
 		tR += "---\n"; 
 		tR += `dia: ${dia}\n`;
+		tR += "estado: 'Sin empezar'\n";
 		tR += `tags: \n - índice\n - ${path.replaceAll(" ", "-")}\n`;
 		tR += "---\n";
 

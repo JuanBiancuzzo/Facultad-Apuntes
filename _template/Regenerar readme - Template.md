@@ -44,6 +44,24 @@ Un listado de los temas investigados y su estado actual
     tR += `${tabla}\n`;
 _%>
 
+#### Investigación
+---
+Un listado de los proyectos y su estado actual
+
+<%* 
+    const proyectos = dv.pages("#proyecto")
+        .sort(proyecto => proyecto.dia, direction="desc");
+
+    tabla = dv.markdownTable(["Proyecto", "Estado"], proyectos.map(proyecto => {
+        let nombre = proyecto.file.name.trim();
+        let path = `${proyecto.file.path}`.replaceAll(" ", "%20");
+        
+        return [ `[${nombre}](${path})`, proyecto.estado ];
+    }));
+
+    tR += `${tabla}\n`;
+_%>
+
 #### Contribuidores
 ---
 * Juan Ignacio Biancuzzo

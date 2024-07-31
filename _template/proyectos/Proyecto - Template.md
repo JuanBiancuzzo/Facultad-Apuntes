@@ -30,6 +30,7 @@
 		
 		tR += "---\n"; 
 		tR += `dia: ${dia}\n`;
+		tR += "estado: 'Sin empezar'\n";
 		tR += `tags: \n - proyecto\n - ${path.trim().replaceAll(" ", "-")}\n`;
 		tR += "---\n";
 

@@ -4,6 +4,8 @@ tags:
   - índice
   - herramientas/hugo
 estado: Falta resumir
+aliases:
+  - Hugo
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });
