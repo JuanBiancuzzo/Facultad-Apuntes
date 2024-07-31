@@ -9,8 +9,6 @@ const referencias = dv.pages('"_referencias"');
 
 let citaView = require(app.vault.adapter.basePath + "/_scripts/dataview/citaView.js");
 
-console.log(indices);
-
 for (let indice of indices) {
 	let paginas = dv.pages(`"${indice.file.folder}" and -#índice`)
         .filter(pagina => pagina.file.folder == indice.file.folder)
@@ -31,12 +29,13 @@ for (let indice of indices) {
 	dv.header(5, `${nombre} [[${indice.file.path}|?]]`);
 	dv.el("hr", "");
 
-	let archivoReferencias = referencias
-        .filter(ref => referenciasTema.indexOf(ref.numReferencia) >= 0)
-        .sort(ref => ref.numReferencia);
-
 	let resultado = "";
-    for (let referencia of archivoReferencias) {
+    for (let numRef of referenciasTema) {
+	    let referencia = referencias.find(ref => ref.numReferencia == numRef);
+	    if (!referencia) {
+		    console.log(numRef);
+		    continue;
+	    }
         resultado += citaView.mostrarCita(referencia);
     }
 
