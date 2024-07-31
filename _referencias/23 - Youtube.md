@@ -6,4 +6,6 @@ nombreVideo: Giving Personality to Procedural Animations using Math
 nombreCanal: t3ssel8r
 fecha: 2022-06-29
 url: https://youtu.be/KPoeNZZ6H4s?si=Ws3Mr3uZNvFIJh5z
+tags:
+  - referencia/youtube
 ---

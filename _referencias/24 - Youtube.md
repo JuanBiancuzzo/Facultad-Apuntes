@@ -6,4 +6,6 @@ nombreVideo: Creating Dynamic Character Movements with Foot Inverse Kinematics a
 nombreCanal: Nick Maltbie
 fecha: 2023-06-28
 url: https://youtu.be/jfKTmEWJESw?si=pooIO9_Bjd0iV8X5
+tags:
+  - referencia/youtube
 ---

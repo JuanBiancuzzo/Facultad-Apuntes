@@ -6,4 +6,6 @@ nombreVideo: "Lecture #5: Worldbuilding Part One — Brandon Sanderson on Writin
 nombreCanal: Brandon Sanderson
 fecha: 2020-03-05
 url: https://youtu.be/ATNvOk5rIJA?si=kt1kOn6HICwuyYsn
+tags:
+  - referencia/youtube
 ---
