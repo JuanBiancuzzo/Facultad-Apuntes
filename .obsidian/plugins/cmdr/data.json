@@ -40,7 +40,23 @@
   "titleBar": [],
   "statusBar": [],
   "pageHeader": [],
-  "macros": [],
+  "macros": [
+    {
+      "macro": [
+        {
+          "action": 0,
+          "commandId": "quickadd:choice:8dff36af-27d9-4a24-97e8-fc99f3033c4d"
+        },
+        {
+          "action": 0,
+          "commandId": "obsidian-git:commit-specified-message"
+        }
+      ],
+      "name": "Commitear",
+      "icon": "star",
+      "startup": false
+    }
+  ],
   "explorer": [],
   "hide": {
     "statusbar": [],
