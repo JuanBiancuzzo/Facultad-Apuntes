@@ -14,7 +14,7 @@ tags:
 
 ### Interpretación
 ---
-La prescripción para adquirir es el modo por el cual el poseedor de una [[Cosa|cosa]] adquiere un [[Derecho real|derecho real]] sobre ella, mediante la posesión durante el tiempo fijado por la ley.
+La prescripción para adquirir es el modo por el cual el poseedor de una [[Cosa|cosa]] adquiere un [[Libro 4, Derechos Reales|derecho real]] sobre ella, mediante la posesión durante el tiempo fijado por la ley.
 
 Esta forma de adquisición de derecho también se conoce como [[Usucapión|usucapión]].
 

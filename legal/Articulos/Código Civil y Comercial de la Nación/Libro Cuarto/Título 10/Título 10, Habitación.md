@@ -2,7 +2,7 @@
 tipo: Título
 nombre: Habitación
 num: 10
-previo: "[[Derecho real|Libro 4, Derechos Reales]]"
+previo: "[[Libro 4, Derechos Reales|Libro 4, Derechos Reales]]"
 tags:
   - legal/Título
 ---

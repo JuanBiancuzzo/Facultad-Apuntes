@@ -12,7 +12,7 @@ tags:
 ---
 ### Artículo
 ---
-"La prenda es el [[Derecho real|derecho real]] de garantía sobre cosas muebles no registrables o créditos instrumentados. Se constituye por el dueño o la totalidad de los copropietarios, por contrato formalizado en instrumento público o privado y tradición al acreedor prendario o a un tercero designado por las partes. Esta prenda se rige por las disposiciones contenidas en el presente [[Capítulo 4, Prenda|Capítulo]]."
+"La prenda es el [[Libro 4, Derechos Reales|derecho real]] de garantía sobre cosas muebles no registrables o créditos instrumentados. Se constituye por el dueño o la totalidad de los copropietarios, por contrato formalizado en instrumento público o privado y tradición al acreedor prendario o a un tercero designado por las partes. Esta prenda se rige por las disposiciones contenidas en el presente [[Capítulo 4, Prenda|Capítulo]]."
 
 ### Interpretación
 ---

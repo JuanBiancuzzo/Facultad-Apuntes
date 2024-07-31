@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-La [[Carta de las Naciones Unidas|carta de naciones unidas]], con [[Norma constitucional internacional|normas de cooperación]] que vincula a 193 [[Estado|estados]] en el mundo, la [[Declaración universal de derechos humanos|declaración universal de derechos humanos]], y por lo tanto el tercer punto de esto fue la búsqueda de [[Tratado|tratados]], que son mucho más rápidamente verificables que la costumbres, ya que la verificación es ver cuando un estado se dijo que se [[Obligación|obligaba]] por el tratado.
+La [[Carta de las Naciones Unidas|carta de naciones unidas]], con [[Norma constitucional internacional|normas de cooperación]] que vincula a 193 [[Estado|estados]] en el mundo, la [[Declaración universal de derechos humanos|declaración universal de derechos humanos]], y por lo tanto el tercer punto de esto fue la búsqueda de [[Tratado|tratados]], que son mucho más rápidamente verificables que la costumbres, ya que la verificación es ver cuando un estado se dijo que se [[Art. 724 del CC y CN, Definición|obligaba]] por el tratado.
 
 De estas obligaciones que emergen de los tratados son
 * La obligación de respetar los [[Derecho humano|derechos humanos]] 
@@ -26,7 +26,7 @@ Estos son 9 tratados fundamentales en materia de derechos humanos que se adoptar
 8. En 1999 la convención sobre la eliminación de la discriminación en las personas con discapacidad
 9. En 2006 sobre la protección de las personas contra la desaparición forzada 
 
-Estos 9 tratados vienen con su sistema de protección, que establecen órganos que están encargados de verificar cómo los [[Estado|estados]] cumplen las [[Obligación|obligaciones]].
+Estos 9 tratados vienen con su sistema de protección, que establecen órganos que están encargados de verificar cómo los [[Estado|estados]] cumplen las [[Art. 724 del CC y CN, Definición|obligaciones]].
 
 Estos tratados tienen en común dos tipos de funciones
 * Tienen que examinar los informes periódicos que presentan los estados, es decir, cada tanto los estados tienen que escribir informes sobre cuáles fueron las medidas que adoptaron para proteger y para garantizar cada uno de esos [[Derecho humano|derechos]]

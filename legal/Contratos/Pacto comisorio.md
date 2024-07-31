@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-La inejecución de sus [[Obligación|obliaciones]] por una de las partes permite a la otra pedir la resolución del [[Contrato|contrato]]; en el [[Contrato de obra|contrato de obra]], la cláusula resolutoria (pacto comisorio) es implícita o tácita. 
+La inejecución de sus [[Art. 724 del CC y CN, Definición|obliaciones]] por una de las partes permite a la otra pedir la resolución del [[Contrato|contrato]]; en el [[Contrato de obra|contrato de obra]], la cláusula resolutoria (pacto comisorio) es implícita o tácita. 
 
 En cuanto al incumplimiento del comitente, el contrato puede ser resuelto por el contratista porque el comitente no dio los materiales prometidos o porque no pagó las prestaciones convenidas. 
 

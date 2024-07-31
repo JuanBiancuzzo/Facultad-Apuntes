@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Se denomina cuasicontrato al [[Acto voluntario#Acto lícito|hecho voluntario lícito]], no encaminado a la producción de un efecto jurídico, del cual la ley deriva [[Obligación|obligaciones]]. Se suele enunciar como cuasicontrato: la gestión de negocios, el pago indebido y el empleo útil.
+Se denomina cuasicontrato al [[Acto voluntario#Acto lícito|hecho voluntario lícito]], no encaminado a la producción de un efecto jurídico, del cual la ley deriva [[Art. 724 del CC y CN, Definición|obligaciones]]. Se suele enunciar como cuasicontrato: la gestión de negocios, el pago indebido y el empleo útil.
 
 #### Gestión de negocios
 ---

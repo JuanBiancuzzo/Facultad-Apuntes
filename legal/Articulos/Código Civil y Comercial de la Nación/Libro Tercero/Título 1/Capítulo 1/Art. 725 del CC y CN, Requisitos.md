@@ -10,7 +10,7 @@ tags:
 ---
 ### Artículo
 ---
-"La prestación que constituye el objeto de la [[Obligación|obligación]] debe ser material y jurídicamente posible, lícita, determinada o determinable, susceptible de valoración económica y debe corresponder a un interés patrimonial o extrapatrimonial del acreedor."
+"La prestación que constituye el objeto de la [[Art. 724 del CC y CN, Definición|obligación]] debe ser material y jurídicamente posible, lícita, determinada o determinable, susceptible de valoración económica y debe corresponder a un interés patrimonial o extrapatrimonial del acreedor."
 
 ### Interpretación
 ---

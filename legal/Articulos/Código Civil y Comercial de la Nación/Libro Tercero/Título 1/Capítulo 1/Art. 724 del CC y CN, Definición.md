@@ -9,7 +9,7 @@ tags:
   - legal/articulo
   - legal/Obligaciones
 aliases:
-  - Art. 724 del CC y CN, Definición
+  - Obligación
 ---
 ### Artículo
 ---

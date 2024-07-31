@@ -12,7 +12,7 @@ tags:
 ---
 ### Artículo
 ---
-"Los [[Derecho|derechos]] y [[Obligación|obligaciones]] del concebido o implantado en la mujer quedan irrevocablemente adquiridos si nace con vida.  
+"Los [[Derecho|derechos]] y [[Art. 724 del CC y CN, Definición|obligaciones]] del concebido o implantado en la mujer quedan irrevocablemente adquiridos si nace con vida.  
 
 Si no nace con vida, se considera que la persona nunca existió. El nacimiento con vida se presume."
 

@@ -10,7 +10,7 @@ tags:
 ---
 ### Artículo
 ---
-"No hay [[Obligación|obligación]] sin causa, es decir, sin que derive de algún hecho idóneo para producirla, de conformidad con el [[Ordenamiento jurídico|ordenamiento jurídico]]."
+"No hay [[Art. 724 del CC y CN, Definición|obligación]] sin causa, es decir, sin que derive de algún hecho idóneo para producirla, de conformidad con el [[Ordenamiento jurídico|ordenamiento jurídico]]."
 
 ### Interpretación
 ---

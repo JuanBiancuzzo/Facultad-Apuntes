@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Las [[Obligación|obligaciones]] del dueño o comitente, conforme al [[Art. 1257 del CC y CN, Obligaciones del comitente|artículo 1257]] son
+Las [[Art. 724 del CC y CN, Definición|obligaciones]] del dueño o comitente, conforme al [[Art. 1257 del CC y CN, Obligaciones del comitente|artículo 1257]] son
 1) pagar la retribución
 2) proporcionar al contratista o al prestador la colaboración necesaria, conforme a las características de la obra o del servicios
 3) recibir la obra si fuera ejecutada conforme a lo dispuesto en el [[Art. 1256 del CC y CN, Obligaciones del contratista y del prestador|artículo 1256]]

@@ -37,7 +37,7 @@ La omisión del contratista de cumplir con este deber lo hará responsable por t
 ---
 En principio, los materiales para la ejecución de la obra han de ser aportados por el contratista. Es más, el [[Art. 1262 del CC y CN, Sistemas de contratación|artículo 1262]], in fine, señala que si las partes no aclaran lo contrario, debe presumirse dicho aporte. 
 
-Esta [[Obligación|obligación]], de la que puede ser dispensado ([[Art. 1256 del CC y CN, Obligaciones del contratista y del prestador#Inciso N°3|art. 1256, inc. 3]]]), tiene su sustento en reafirmar la autonomía del contratista respecto del comitente; en tanto, en algunos supuestos, la provisión de materiales podría inferir no un contrato de obra, sino una relación de empleo. Tal como dice la norma citada, los materiales proveídos por el contratista deben ser adecuados para la ejecución de la obra, respondiendo éste por su mala calidad.
+Esta [[Art. 724 del CC y CN, Definición|obligación]], de la que puede ser dispensado ([[Art. 1256 del CC y CN, Obligaciones del contratista y del prestador#Inciso N°3|art. 1256, inc. 3]]]), tiene su sustento en reafirmar la autonomía del contratista respecto del comitente; en tanto, en algunos supuestos, la provisión de materiales podría inferir no un contrato de obra, sino una relación de empleo. Tal como dice la norma citada, los materiales proveídos por el contratista deben ser adecuados para la ejecución de la obra, respondiendo éste por su mala calidad.
 
 #### Usar diligentemente los materiales provistos por el comitente e informarle si esos materiales son impropios
 ---

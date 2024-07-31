@@ -58,7 +58,7 @@ La administración no reconoce responsabilidad precontractual derivada de estudi
 	* Cuando abandone las obras o interrumpa los trabajos por plazo mayor de 8 días en tres ocasiones
 	* Cuando el abandono o interrupción sean continuados por el término de un mes
 	* Por muestre, quiebra o concurso civil del contratista
-	* Fraude grave, negligencia o incumplimiento de las [[Obligación|obligaciones]]
+	* Fraude grave, negligencia o incumplimiento de las [[Art. 724 del CC y CN, Definición|obligaciones]]
 	* Cuando no se cumpla el plazo de inicio
 	* Por transferencia del contrato sin autorización
 	  

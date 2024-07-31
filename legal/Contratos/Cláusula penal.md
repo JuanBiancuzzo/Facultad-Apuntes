@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-La [[Sección 5, Obligaciones con cláusula penal y sanciones conminatorias|cláusula penal]] es un instituto polivalente, proporciona un incentivo para la conducta debida del deudor, esto es el cumplimiento específico de su [[Obligación|obligación]] ([[Cláusula penal#Función compulsiva|función compulsiva o estimulativa]]), y fija de antemano el monto indemnizatorio para el caso de incumplimiento ([[Cláusula penal#Función indemnizatoria|función indemnizatoria]]), sea éste definitivo (cláusula penal compensatoria) o temporario (cláusula penal moratoria)
+La [[Sección 5, Obligaciones con cláusula penal y sanciones conminatorias|cláusula penal]] es un instituto polivalente, proporciona un incentivo para la conducta debida del deudor, esto es el cumplimiento específico de su [[Art. 724 del CC y CN, Definición|obligación]] ([[Cláusula penal#Función compulsiva|función compulsiva o estimulativa]]), y fija de antemano el monto indemnizatorio para el caso de incumplimiento ([[Cláusula penal#Función indemnizatoria|función indemnizatoria]]), sea éste definitivo (cláusula penal compensatoria) o temporario (cláusula penal moratoria)
 
 Es aquella en que una persona, para asegurar el cumplimiento de una obligación, se sujeta a una pena o multa en caso de retardar o de no ejecutar la obligación, y esta pena o multa entra en lugar de la indemnización de perjuicios e intereses, cuando el deudor se hubiese constituido en [[Sección 2, Mora|mora]].
 

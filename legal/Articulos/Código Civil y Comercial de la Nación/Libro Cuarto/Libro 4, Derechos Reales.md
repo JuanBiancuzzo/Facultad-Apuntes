@@ -7,7 +7,7 @@ tags:
   - legal/Libro
   - legal/Derecho-real
 aliases:
-  - Libro 4, Derechos Reales
+  - Derecho real
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });

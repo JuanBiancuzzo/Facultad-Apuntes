@@ -7,7 +7,7 @@ tags:
 ### Definición
 ---
 Finalmente, existe el llamado contrato plurilateral, cuyos rasgos distintivos son los siguientes: 
-1. Las [[Obligación|obligaciones]] no son correlativas para las partes, sino que cada una adquiere [[Derecho|derechos]] y obligaciones respecto de todas las demás
+1. Las [[Art. 724 del CC y CN, Definición|obligaciones]] no son correlativas para las partes, sino que cada una adquiere [[Derecho|derechos]] y obligaciones respecto de todas las demás
 2. El vicio del consentimiento de uno de los contratantes afecta su intervención pero no anula necesariamente el contrato
 3. Las obligaciones de las partes pueden ser de objeto diferente que confluyen en un fin común (dar, aportar, hacer)
 4. Admite el ingreso de nuevas partes o el retiro de alguna de ellas

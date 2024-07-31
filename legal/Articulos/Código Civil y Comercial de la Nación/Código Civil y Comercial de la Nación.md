@@ -9,6 +9,7 @@ grupos:
 artConNombre: true
 tags:
   - legal/documento
+  - legal/Código-Civil-y-Comercial-de-la-Nación
 aliases:
   - Ley 26.994
   - CC y CN

@@ -12,11 +12,11 @@ Elementos
 
 #### Derechos resultantes del contrato
 ---
-El contrato es fuente de [[Obligación|obligaciones]] y [[Derecho|derechos]]. En efecto, al celebrarse cualquier contrato, nacen obligaciones en cabeza de las partes contratantes, quienes deberán cumplirlas de acuerdo con las pautas fijadas por ellas
+El contrato es fuente de [[Art. 724 del CC y CN, Definición|obligaciones]] y [[Derecho|derechos]]. En efecto, al celebrarse cualquier contrato, nacen obligaciones en cabeza de las partes contratantes, quienes deberán cumplirlas de acuerdo con las pautas fijadas por ellas
 
 Las obligaciones que cada una de las partes asuma importa un derecho en cabeza de la otra. Así, en una compraventa, la obligación que asume el comprador de pagar el precio estipulado importa de derecho del vendedor a cobrarlo, o la obligación que este último ha asumido de entregar la cosa vendida importa el derecho del comprador a recibirla
 
-Estos derechos que nacen del contrato forman parte del [[Art. 154 del CC y CN, Patrimonio|patrimonio]] de las personas involucradas, del mismo modo que lo integran los [[Derecho real|derechos reales]] que se puedan tener. Por ello, el [[Art. 965 del CC y CN, Derecho de propiedad|artículo 965 del CC y CN]] dispone, con razón, que ![[Art. 965 del CC y CN, Derecho de propiedad#Artículo]]
+Estos derechos que nacen del contrato forman parte del [[Art. 154 del CC y CN, Patrimonio|patrimonio]] de las personas involucradas, del mismo modo que lo integran los [[Libro 4, Derechos Reales|derechos reales]] que se puedan tener. Por ello, el [[Art. 965 del CC y CN, Derecho de propiedad|artículo 965 del CC y CN]] dispone, con razón, que ![[Art. 965 del CC y CN, Derecho de propiedad#Artículo]]
 ![[Art. 965 del CC y CN, Derecho de propiedad#Interpretación]]
 
 #### Naturaleza jurídica del contrato

@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Se puede dividir en las [[Obligación|obligaciones]] del prestador del servicio y el usuario
+Se puede dividir en las [[Art. 724 del CC y CN, Definición|obligaciones]] del prestador del servicio y el usuario
 
 #### Obligaciones del prestador de servicios
 ---

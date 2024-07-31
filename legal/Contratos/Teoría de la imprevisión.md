@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Cuando se celebra un [[Contrato|contrato]], y por causas totalmente imprevisibles, se altera significativamente las circunstancias, haciendo que el cumplimiento, del deudor, de sus [[Obligación|obligaciones]] sea sumamente gravoso y quizás origine la ruina del deudor. Entonces la justicia de reajustar las cláusulas del contrato y, en ciertos casos, de considerarlo insubsistente. 
+Cuando se celebra un [[Contrato|contrato]], y por causas totalmente imprevisibles, se altera significativamente las circunstancias, haciendo que el cumplimiento, del deudor, de sus [[Art. 724 del CC y CN, Definición|obligaciones]] sea sumamente gravoso y quizás origine la ruina del deudor. Entonces la justicia de reajustar las cláusulas del contrato y, en ciertos casos, de considerarlo insubsistente. 
 
 #### Diferencias con el caso fortuito
 ---

@@ -42,6 +42,6 @@ Al requerir que las razones para expropiar sean “de utilidad pública” (la C
 | Exigiblidad | A toda la sociedad | Al deudor |
 | Relación | [[Cosa\|Cosa]] - [[Persona humana\|Persona]] - Sociedad | Dos partes |
 | Objeto | Cosa en el presente | Prestación ([[Libro Tercero, Título 1, Capítulo 3, Sección 1, Obligaciones de dar\|de dar]] - [[Sección 2, Obligaciones de hacer y de no hacer\|hacer]] - [[Art. 778 del CC y CN, Obligación de no hacer\|no hacer]]) |
-| [[Relación jurídica\|Relaciones jurídicas]] | [[Derecho real\|Reales]] | [[Derechos créditorios o personales\|Personales]] |
+| [[Relación jurídica\|Relaciones jurídicas]] | [[Libro 4, Derechos Reales\|Reales]] | [[Derechos créditorios o personales\|Personales]] |
 | Forma | Prescrita por Ley | No en general. Sí en particular |
 | [[Capítulo 2, Adquisición, transmisión, extinción y oponibilidad#Prescripción\|Prescripción]] | [[Capítulo 2, Adquisición, transmisión, extinción y oponibilidad#Prescripción adquisitiva\|Adquisitiva]] | [[Capítulo 2, Adquisición, transmisión, extinción y oponibilidad#Prescripción liberatoria\|Liberatoria]] |
