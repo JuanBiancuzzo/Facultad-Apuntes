@@ -1,6 +1,6 @@
 ---
 cuatri: 23C1
-estado: terminado
+estado: Terminado
 plan: "2009"
 codigo: "9704"
 tags:

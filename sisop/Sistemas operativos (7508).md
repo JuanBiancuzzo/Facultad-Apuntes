@@ -1,6 +1,6 @@
 ---
 cuatri: 23C2
-estado: terminado
+estado: Terminado
 plan: "1986"
 codigo: "7508"
 tags:

@@ -2,8 +2,9 @@
 cuatri: 24C1
 codigo: TB065
 plan: 2023
-estado: cursando
-tags: materia
+estado: Falta pasar las presentaciones del último tema
+tags:
+  - materia
 ---
 ### Apuntes 
 ---

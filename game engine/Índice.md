@@ -3,6 +3,7 @@ dia: 2024-07-08
 tags:
   - índice
   - game-engine
+estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });

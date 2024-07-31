@@ -5,6 +5,7 @@ tags:
   - machine-Learning
 aliases:
   - AI
+estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });

@@ -2,8 +2,9 @@
 cuatri: 24C1
 codigo: TB068
 plan: 2023
-estado: cursando
-tags: materia
+estado: Falta últimos temas
+tags:
+  - materia
 ---
 ### Apuntes 
 ---

@@ -1,6 +1,6 @@
 ---
 cuatri: 23C1
-estado: en-proceso
+estado: Falta pasar los videos de los últimos temas
 plan: "1986"
 codigo: "7506"
 tags:

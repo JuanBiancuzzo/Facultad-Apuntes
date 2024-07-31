@@ -2,7 +2,7 @@
 cuatri: 20C1
 codigo: 7540
 plan: 1986
-estado: en-proceso
+estado: Voy por el 2do pdf
 tags:
   - materia
 ---

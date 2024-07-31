@@ -1,6 +1,6 @@
 ---
 cuatri: 22C1
-estado: en-proceso
+estado: Falta pasar el resumen
 plan: "1986"
 codigo: "7512"
 tags:

@@ -1,6 +1,6 @@
 ---
 cuatri: 21C2
-estado: en-proceso
+estado: Falta terminar de pasar el resumen
 plan: "1986"
 codigo: "6103"
 tags:

@@ -3,6 +3,7 @@ dia: 2024-07-08
 tags:
   - índice
   - música
+estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });

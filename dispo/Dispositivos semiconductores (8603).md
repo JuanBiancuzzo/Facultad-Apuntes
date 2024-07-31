@@ -1,6 +1,6 @@
 ---
 cuatri: 23C2
-estado: terminado
+estado: Terminado
 plan: "2009"
 codigo: "8603"
 tags:

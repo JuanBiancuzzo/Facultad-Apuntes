@@ -2,7 +2,7 @@
 cuatri: 24C1
 codigo: "9111"
 plan: 2009
-estado: en-proceso
+estado: Falta terminar los últimos capítulos y acomodar los artículos
 tags:
   - materia
 ---

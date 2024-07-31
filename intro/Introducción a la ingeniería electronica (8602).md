@@ -1,6 +1,6 @@
 ---
 cuatri: 22C2
-estado: terminado
+estado: Terminado
 plan: "2009"
 codigo: "8602"
 tags:

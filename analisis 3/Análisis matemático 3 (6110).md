@@ -1,6 +1,6 @@
 ---
 cuatri: 22C2
-estado: terminado
+estado: Terminado
 plan: "1986"
 codigo: "6110"
 tags:

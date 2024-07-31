@@ -2,8 +2,9 @@
 cuatri: 24C1
 codigo: TA048
 plan: 2023
-estado: cursando
-tags: materia
+estado: Falta pasar el resumen
+tags:
+  - materia
 ---
 ### Apuntes 
 ---
