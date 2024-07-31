@@ -23,7 +23,7 @@ Un listado de materias y su estado actual
     }));
 
     tR += tabla;
-_%>
+%>
 
 ##### Investigación
 ---
@@ -43,7 +43,7 @@ Un listado de los temas investigados y su estado actual
     }));
 
     tR += tabla;
-_%>
+%>
 
 ##### Contribuidores
 ---
