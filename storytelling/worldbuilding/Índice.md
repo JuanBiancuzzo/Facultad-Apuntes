@@ -3,6 +3,7 @@ dia: 2024-07-09
 tags:
   - índice
   - storytelling/worldbuilding
+estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });

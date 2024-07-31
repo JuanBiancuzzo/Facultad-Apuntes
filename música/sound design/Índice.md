@@ -3,6 +3,7 @@ dia: 2024-07-17
 tags:
   - índice
   - música/sound-design
+estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });

@@ -33,9 +33,9 @@ Al analizar un posible [[Proyecto|proyecto]], hay que considerar los costos de t
 ---
 Se puede separar en dos grandes fases
 
-##### [[Desarrollo de software|Desarrollo]]
+##### Desarrollo
 ---
-Es la ejecución de un [[Algo]]
+Es la ejecución de un [[Proyecto|proyecto]]
 
 ##### Producción
 ---

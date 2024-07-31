@@ -3,6 +3,7 @@ dia: 2024-07-15
 tags:
   - índice
   - herramientas/git
+estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });
