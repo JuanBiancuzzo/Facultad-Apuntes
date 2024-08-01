@@ -61,6 +61,7 @@ Un listado de los temas investigados y su estado actual
 | [Networking](networking/Índice.md)                         | Falta resumir |
 | [Reglas APA](reglas%20APA/Índice.md)                       | Falta resumir |
 | [Storytelling](storytelling/Índice.md)                     | Falta resumir |
+| [Compilador](compilador/Índice.md)                         | Sin empezar   |
 
 #### Investigación
 ---

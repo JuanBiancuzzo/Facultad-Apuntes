@@ -14,6 +14,7 @@
 		let nuevoTema = await preguntar.prompt(
 			tp, "Temática: (Apretar ESC para salir)", "No se ingresó un tema"
 		);
+		nuevoTema = `${nuevoTema.charAt(0).toLowerCase()}${nuevoTema.slice(1)}`.trim();
 
 		if (!validar.validarNombre(tp, nuevoTema)) 
 			throw new Error("Nombre invalido");
