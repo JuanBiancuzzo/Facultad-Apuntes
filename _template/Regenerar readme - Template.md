@@ -31,7 +31,10 @@ Un listado de los temas investigados y su estado actual
 <%*
     const indices = dv.pages("#índice")
         .filter(indice => indice.file.folder.split("/").length == 1)
-        .sort(indice => indice.file.name);
+        .sort(indice => {
+            let nombre = indice.file.folder.split("/").pop();
+            return `${nombre.charAt(0).toUpperCase()}${nombre.slice(1)}`.trim();
+        });
 
     tabla = dv.markdownTable(["Tema de investigación", "Estado"], indices.map(indice => {
         let nombre = indice.file.folder.split("/").pop();

@@ -1,9 +1,9 @@
 ---
 dia: 2024-07-31
-estado: 'Sin empezar'
-tags: 
- - índice
- - compilador
+estado: Sin empezar
+tags:
+  - índice
+  - compilador
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });

@@ -46,6 +46,7 @@ Un listado de los temas investigados y su estado actual
 | [Animation](animation/Índice.md)                           | Falta resumir |
 | [Asynchronous](asynchronous/Índice.md)                     | Falta resumir |
 | [Cocinar](cocinar/Índice.md)                               | Falta resumir |
+| [Compilador](compilador/Índice.md)                         | Sin empezar   |
 | [Data structures](data%20structures/Índice.md)             | Falta resumir |
 | [Dibujo](dibujo/Índice.md)                                 | Falta resumir |
 | [Game creation](game%20creation/Índice.md)                 | Falta resumir |
@@ -61,7 +62,6 @@ Un listado de los temas investigados y su estado actual
 | [Networking](networking/Índice.md)                         | Falta resumir |
 | [Reglas APA](reglas%20APA/Índice.md)                       | Falta resumir |
 | [Storytelling](storytelling/Índice.md)                     | Falta resumir |
-| [Compilador](compilador/Índice.md)                         | Sin empezar   |
 
 #### Investigación
 ---
