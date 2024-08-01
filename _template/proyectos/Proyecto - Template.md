@@ -45,3 +45,12 @@ Ingresar descripción corta del proyecto
 
 ### Presentar
 ---
+
+
+
+
+### Notas
+---
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarNotas", { proyecto: dv.current() });
+```
