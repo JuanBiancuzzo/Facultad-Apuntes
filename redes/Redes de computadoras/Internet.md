@@ -12,7 +12,7 @@ El término red de computadoras está comenzando a quedar algo desactualizado a 
 
 Los [[Host|hosts]] están conectados por una [[Red|red de comunicación]]. Cada link de esta red trasmitiendo a diferentes velocidades que se mide en [[Delay in packet switches#Tiempo de propagación|velocidad de transmisión]] que se mide en bits por segundo
 
-Los end systems acceden al internet mediante [[Internet Service Providers|ISPs]], cada ISP en si es una [[Packet switches|red de packet switches]] y links de comunicación
+Los end systems acceden al internet mediante [[Internet Service Provider|ISPs]], cada ISP en si es una [[Packet switches|red de packet switches]] y links de comunicación
 
 El internet se puede entender por dos lados
 1. Como una [[Red|red]] de redes

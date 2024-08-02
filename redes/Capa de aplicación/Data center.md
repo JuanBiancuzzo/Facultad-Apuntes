@@ -17,7 +17,7 @@ Establece un grupo de conveniencias
 #### Implementación
 ---
 * Enter deep
-	* Dentro de los [[Internet Service Providers|ISPs]]
+	* Dentro de los [[Internet Service Provider|ISPs]]
 	* Muchos lugares
 	* Más dificultad y costos de mantenimiento
 * Bring home

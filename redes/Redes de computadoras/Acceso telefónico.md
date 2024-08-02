@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Se utiliza el término "acceso telefónico" (dial-up) porque el [[Software|software]] del usuario realmente llama al número de teléfono de un [[Internet Service Providers|ISP]] y establece una conexión telefónica tradicional con el mismo. El [[Router|módem]] convierte la salida digital del [[Computadora|PC]] en una [[Señal|señal analógica]] apropiada para ser transmitida a través de la línea telefónica analógica. En el otro extremo de la conexión, un módem del ISP convierte la señal analógica que recibe en una señal digital que será la señal de entrada para el [[Router|router]] del ISP
+Se utiliza el término "acceso telefónico" (dial-up) porque el [[Software|software]] del usuario realmente llama al número de teléfono de un [[Internet Service Provider|ISP]] y establece una conexión telefónica tradicional con el mismo. El [[Router|módem]] convierte la salida digital del [[Computadora|PC]] en una [[Señal|señal analógica]] apropiada para ser transmitida a través de la línea telefónica analógica. En el otro extremo de la conexión, un módem del ISP convierte la señal analógica que recibe en una señal digital que será la señal de entrada para el [[Router|router]] del ISP
 
 #### Inconvenientes
 ---

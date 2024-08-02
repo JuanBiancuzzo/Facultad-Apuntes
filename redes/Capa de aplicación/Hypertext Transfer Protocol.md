@@ -37,7 +37,7 @@ Las cookies pueden usarse para crear una capa de use session por encima del 
 
 #### Web caching
 ---
-Un web cache, también conocido como un servidor proxy, es una entidad que satisface pedidos HTTP en nombre del servidor de origen. Usualmente, estos web caches son instalados por los [[Internet Service Providers|ISP]]. El navegador puede ser configurado para que los pedidos HTTP se dirijan directamente el caché
+Un web cache, también conocido como un servidor proxy, es una entidad que satisface pedidos HTTP en nombre del servidor de origen. Usualmente, estos web caches son instalados por los [[Internet Service Provider|ISP]]. El navegador puede ser configurado para que los pedidos HTTP se dirijan directamente el caché
 
 A través del uso de [[Redes de distribución de contenido|CDN]], los web caches cada vez cumplen un rol más importante en el [[Internet|internet]]. Estas compañías instalan múltiples caches distribuidos geográficamente para localizar el tráfico de internet
 

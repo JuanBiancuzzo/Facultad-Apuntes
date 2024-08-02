@@ -12,7 +12,7 @@ Los dispositivos conectados a [[Internet|internet]] a menudo se designan como [[
 
 Se lo puede entender de dos formas
 * Red de redes
-	* Como una interconexión entre [[Internet Service Providers|ISPs]] donde la comunicación es por medio de [[Protocolo#Protocolo de Red|protocolos]] que definen como mandar y recibir mensajes
+	* Como una interconexión entre [[Internet Service Provider|ISPs]] donde la comunicación es por medio de [[Protocolo#Protocolo de Red|protocolos]] que definen como mandar y recibir mensajes
 * Infraestructura
 	* La red provee de servicios a las [[Aplicación|aplicaciones]], esta es poder mandar y recibir mensajes de un host a otro
 

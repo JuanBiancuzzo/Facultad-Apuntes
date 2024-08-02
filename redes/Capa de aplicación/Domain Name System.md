@@ -40,7 +40,7 @@ Cada organización con host públicos tiene que proveer registros públicos para
 
 ##### Local
 ---
-Los servidores locales DNS no pertenecen estrictamente a la jerarquía, pero son centrales en la arquitectura. Cada [[Internet Service Providers|ISP]] tiene uno. Cuando un host hace una [[Domain Name System Message|consulta DNS]], esta se le envía a su DNS local, el cual se encarga de hacer la consulta
+Los servidores locales DNS no pertenecen estrictamente a la jerarquía, pero son centrales en la arquitectura. Cada [[Internet Service Provider|ISP]] tiene uno. Cuando un host hace una [[Domain Name System Message|consulta DNS]], esta se le envía a su DNS local, el cual se encarga de hacer la consulta
 
 #### Caching
 ---

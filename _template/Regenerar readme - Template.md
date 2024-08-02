@@ -47,7 +47,7 @@ Un listado de los temas investigados y su estado actual
     tR += `${tabla}\n`;
 _%>
 
-#### Investigación
+#### Proyectos
 ---
 Un listado de los proyectos y su estado actual
 

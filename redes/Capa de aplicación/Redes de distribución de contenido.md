@@ -13,7 +13,7 @@ La mayoría de grandes compañías de streaming utilizan CDN. Estas redes gestio
 
 Usualmente, estas redes adoptan una de dos filosofías
 * Enter Deep
-	* Una filosofía consiste en entrar completamente en las redes de acceso de los [[Internet Service Providers|ISP]], el objetivo es acercarse a los [[Host|end users]]
+	* Una filosofía consiste en entrar completamente en las redes de acceso de los [[Internet Service Provider|ISP]], el objetivo es acercarse a los [[Host|end users]]
 * Bring Home
 	* Esta segunda filosofía consiste en construir grandes agrupamientos en un pequeño número de lugares. Esto resulta en menos mantenimiento, pero un mayor [[Delay in packet switches|delay]]
 
@@ -37,7 +37,7 @@ Estas [[Red|redes]] son los Netflix, Google, etc. de distribuir contenido
 * Acerca el contenido a los [[Arquitectura cliente servidor#Cliente|clientes]]
 	* Minimizar [[Delay in packet switches|latencia]] (mejor [[Experiencia del usuario|UX]])
 	* Maximizar [[Throughput de una red|throughput]]
-* Minimizar el [[Tráfico|tráfico]] en el [[Internet Service Providers#Tier 1|núcleo de internet]]
+* Minimizar el [[Tráfico|tráfico]] en el [[Internet Service Provider#Tier 1|núcleo de internet]]
 	* Evitar replicación de [[Paquete|paquetes]]
 	* Contenido transmitido es "grande"
 * Plataforma distribuida

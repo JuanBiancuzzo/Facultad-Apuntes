@@ -8,4 +8,4 @@ tags:
 ---
 ### Definición
 ---
-Es el punto de encuentro entre distintos [[Internet Service Providers|ISPs]]
+Es el punto de encuentro entre distintos [[Internet Service Provider|ISPs]]

@@ -69,5 +69,5 @@ En la [[Capa de transporte|capa de transporte]]
 * La información de la capa anterior y su respectivo header lo llama Segmento
 En la [[Capa de red|capa de red]] 
 * La información de la capa anterior y su respectivo header lo llama Datagram
-En la [[Capa de enlace|capa de enlace]] 
+En la [[Capa de Enlace|capa de enlace]] 
 * La información de la capa anterior y su respectivo header lo llama Tramas

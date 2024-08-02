@@ -63,7 +63,7 @@ Un listado de los temas investigados y su estado actual
 | [Reglas APA](reglas%20APA/Índice.md)                       | Falta resumir |
 | [Storytelling](storytelling/Índice.md)                     | Falta resumir |
 
-#### Investigación
+#### Proyectos
 ---
 Un listado de los proyectos y su estado actual
 

@@ -76,7 +76,7 @@ Para optimizar usar un diagrama de conjuntos con los puertos, para poder ver si 
 MTU
 * Maximum transmission unit
 * Máximo tamaño de paquete de datos que se puede transferir en IP
-* Depende de la [[Capa de enlace|capa de enlace]]
+* Depende de la [[Capa de Enlace|capa de enlace]]
 * Que hacemos con paquetes de tamaño X cuando debe enviarse por una red con MTU < X?
 	* Podemos droppiarlo
 	* Fragmentarlo

@@ -1,7 +1,7 @@
 ---
 dia: 2024-03-19
 aliases:
-  - ISPs
+  - ISP
 tags:
   - redes/Redes-de-computadoras
   - nota/facultad

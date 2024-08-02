@@ -18,6 +18,6 @@ Los [[Routing|routing algorithms]] determinan el contenido de la [[Forwarding ta
 ---
 Otro enforque utilizado para estos algoritmos es el de utilizar un controlador remoto, el cual calculará y distribuirá los forwarding tables a todos los routers. En este caso, los routers únicamente realizan la operación de [[Forwarding|forwarding]]
 
-Estos controladores son implementados en un [[Data center|data center]] remoto con alta confiabilidad y redundancia, y puede ser administrado por un [[Internet Service Providers|ISP]] o alguna otra organización. Para la comunicación entre los elementos, utilizaremos mensajes conteniendo forwarding tables y otras piezas de routing para comunicar los controladores con los routers
+Estos controladores son implementados en un [[Data center|data center]] remoto con alta confiabilidad y redundancia, y puede ser administrado por un [[Internet Service Provider|ISP]] o alguna otra organización. Para la comunicación entre los elementos, utilizaremos mensajes conteniendo forwarding tables y otras piezas de routing para comunicar los controladores con los routers
 
 Se dice que este enfoque es de [[Software-defined networking|Software-defined networking (SDN)]], debido a que las tablas computadas y la interacción entre routers se implementa en software

@@ -8,7 +8,7 @@ tags:
 ---
 ### Definición
 ---
-Cuando se utiliza el acceso mediante DSL, la compañía telefónica del cliente también actúa como [[Internet Service Providers|ISP]]
+Cuando se utiliza el acceso mediante DSL, la compañía telefónica del cliente también actúa como [[Internet Service Provider|ISP]]
 
 Cada [[Router|módem]] DSL de un cliente utiliza la línea telefónica existente para intercambiar datos con un multiplexor de acceso DSL (DSLAM). La línea telefónica transporta simultáneamente los datos y las señales telefónicas, las cuales se codifican a frecuencias distintas
 

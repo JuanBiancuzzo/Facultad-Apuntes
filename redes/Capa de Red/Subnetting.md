@@ -2,6 +2,7 @@
 dia: 2024-06-15
 aliases:
   - Subnet
+  - Subred
 tags:
   - redes/Capa-de-Red
   - nota/facultad
@@ -35,4 +36,16 @@ Cada [[Internet Protocol Address|dirección IP]] tiene un tamaño de $32$ bits y
 \end{document}
 ```
 
-Para determinar una subnet
+Para determinar una subnet, se desconectan todas las interfaces de su host o [[Router|router]] asociado, creando islas aisladas llamadas subnets
+
+Una organización suele ser asignado un [[Block of Addresses|rango de conexiones]] con una [[Classless Interdomain Routing|mascara]] común. Fuera de la organización, únicamente se utilizarán los bits del prefijo para enviar el [[Paquete|paquete]]. Esto reduce considerablemente el tamaño de las [[Forwarding table|forwarding tables]]. Los restantes bits serán usado dentro de la organización para distinguir las direcciones IP, es posible que los bits restantes a su vez estén organizados en otra estructuras de subredes
+
+#### Método de subnetting
+---
+Partiremos de un espacio de direcciones $S$ con longitud de [[Classless Interdomain Routing|mascara]] $M$. Debido a que cada red debe reservar una dirección para la Network Address y otra para el Broadcast Address, tendremos un total de $T$ redes para entregar $$ T = 2^{32 - M} - 2 $$
+Esto también aplica para las subredes, por lo que si tendremos una subred con $A$ hosts y $R$ routers, entonces necesitaremos un total de $T_a$ redes para entregar $$ T_a = A + R + 2 $$
+Las conexiones entre los routers también son subredes, por lo que una conexión punto a punto entre dos routers necesitaría $2 + 2 = 4$ direcciones, mientras que una entre tres routers necesitaría $3 + 2 = 5$ direcciones
+
+Debido a como se funcionan las mascaras, solo se puede entregar cantidades de direcciones que sean potencias de dos, por lo que si una subred necesita $5$ direcciones, debemos entregarle por lo menos $2^3 = 8$. Nos quedaremos con la menor potencia de dos que nos proporcione al menos la cantidad de redes necesarias
+
+Para evitar tener tablas mal configuradas, debemos entregar subespacios de direcciones de forma creciente en orden de mayor cantidad de redes solicitadas a menor
