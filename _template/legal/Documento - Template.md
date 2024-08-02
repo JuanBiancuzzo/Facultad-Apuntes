@@ -1,15 +1,17 @@
 <%*
-    const dv = app.plugins.plugins.dataview.api;
     const validar = tp.user.whiteList();
     const cte = tp.user.constantes();
     const preguntar = tp.user.preguntar();
+    const error = tp.user.error();
+
+    const dv = app.plugins.plugins.dataview.api;
 
     const tArchivo = tp.file.find_tfile(tp.file.path(true));
     let secciones;
 
     try {
         let nombre = await preguntar.prompt(
-            tp, "Nombre del documento?", "No se ingresó el nombre del documento"
+            tp, "Nombre del documento?", error.Prompt("No se ingresó el nombre del documento")
         );
 
         let documentos = dv.pages('"legal/Articulos" and #legal/documento');
@@ -24,7 +26,7 @@
             new Notice(mensaje);
 
             nombre = await preguntar.prompt(
-                tp, "Nombre del documento?", "No se ingresó el nombre del documento"
+                tp, "Nombre del documento?", error.Prompt("No se ingresó el nombre del documento")
             );
 
             nombreValido = validar.validarNombre(tp, nombre);
@@ -32,7 +34,7 @@
 
         let abreviacion = await preguntar.prompt(
             tp, `La abreviación para ${nombre}, como "del CC y CN" para el Código Civil y Comercial de la Nación`,
-            "No se ingresó una abreviación"
+            error.Prompt("No se ingresó una abreviación")
         );
 
         secciones = [];
@@ -56,7 +58,7 @@
             articulosConNombre = await preguntar.suggester(
                 tp, ["✓ Sí", "X No"], [true, false], 
                 "Los artículos tienen nombre?",
-                "Se salió del prompt, se asume que no es opcional",
+                error.Prompt("Se salió del prompt, se asume que no es opcional"),
             );
         } catch ({ name: _, message: mensaje }) {
             console.log(mensaje);

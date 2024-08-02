@@ -79,7 +79,7 @@ async function citarCita(tp, tipoCita) {
     if (cita) {
         return cita.f(tp).citar(tp);
     } else {
-        throw new Error(`El tipo de cita "${tipoCita}" no existe todavia`);
+        throw tp.user.error().Prompt(`El tipo de cita "${tipoCita}" no existe todavia`);
     }
 }
 

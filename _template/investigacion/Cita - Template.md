@@ -16,7 +16,14 @@
 
 	try {
 		tR += await tp.user.cita().citar(tp, tipoCita);
-	} catch ({ name, message }) {
-		return await tp.user.eliminar(tp, tArchivo, message);
+	} catch ({ name: nombre, message: mensaje }) {
+		const eliminar = tp.user.eliminar();
+        switch (nombre) {
+            case errorNombre.quit:
+                return await eliminar.directo(tArchivo, mensaje);
+                
+            case errorNombre.prompt:
+                return await eliminar.preguntar(tp, tArchivo, mensaje);
+        }
 	}
 %>

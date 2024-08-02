@@ -1,20 +1,25 @@
 <%* 
-	const dv = this.app.plugins.plugins.dataview.api;
 	const preguntar = tp.user.preguntar();
+	const error = tp.user.error();
+
+	const dv = this.app.plugins.plugins.dataview.api;
 
 	const tArchivo = tp.file.find_tfile(tp.file.path(true));
 
 	try {
 		let nombreMateria = await preguntar.prompt(
-			tp, "Materia:", "No se ingresó nombre de la materia"
+			tp, "Materia:", 
+			error.Prompt("No se ingresó nombre de la materia")
 		);
 		
 		let codigo = await preguntar.prompt(
-			tp, `El código de ${nombreMateria} es:`, "No se ingresó el código de la materia"
+			tp, `El código de ${nombreMateria} es:`, 
+			error.Prompt("No se ingresó el código de la materia")
 		);
 
 		let reducido = await preguntar.prompt(
-			tp, `Nombre de la materia ${nombreMateria} reducido:`, "No se ingresó el nombre reducido"
+			tp, `Nombre de la materia ${nombreMateria} reducido:`, 
+			error.Prompt("No se ingresó el nombre reducido")
 		);
 
 		let anios = [];
@@ -25,7 +30,7 @@
 		let anio = await preguntar.suggester(
 			tp, terminacion => `Año 20${terminacion}`, 
 			anios, "En que año se esta cursando esta materia",
-			"No se ingresó el año en el que se hizo/hace la materia"
+			error.Prompt("No se ingresó el año en el que se hizo/hace la materia")
 		);
 
 		let cuatrimestre = await preguntar.suggester(
@@ -35,7 +40,7 @@
 		let plan = await preguntar.suggester(
 			tp, plan => `Plan ${plan}`, 
 			[2023, 2009, 1986], "Cuál es el plan de la materia",
-			"No se ingresó el plan de la materia"
+			error.Prompt("No se ingresó el plan de la materia")
 		);
 
 		tR += "---\n";
@@ -49,8 +54,15 @@
 		await app.vault.createFolder(reducido);
 		await app.vault.rename(tArchivo, `${reducido}/${nombreMateria} (${codigo}).md`);
 
-	} catch ({ name: _, message: mensaje }) {
-        return await tp.user.eliminar().eliminar(tp, tArchivo, mensaje);
+	} catch ({ name: nombre, message: mensaje }) {
+        const eliminar = tp.user.eliminar();
+        switch (nombre) {
+            case errorNombre.quit:
+                return await eliminar.directo(tArchivo, mensaje);
+                
+            case errorNombre.prompt:
+                return await eliminar.preguntar(tp, tArchivo, mensaje);
+        }
     }
 _%>
 ### Apuntes

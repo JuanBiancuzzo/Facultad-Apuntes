@@ -10,6 +10,8 @@ const AGREGAR_TEXTO = "agregar_texto";
 const AGREGAR_ENUMERACION = "agregar_enumeracion";
 
 async function preguntarTodoTexto(tp, texto = []) {
+    const error = tp.user.error();
+    
     while (true) {
         let descripcionTexto = describirTexto(tp, texto);
 
@@ -24,7 +26,7 @@ async function preguntarTodoTexto(tp, texto = []) {
         let accion = await tp.user.preguntar().suggester(
             tp, opciones, valores,
             "Escribir lo que el artículo enuncia",
-            "Se salió de la edición de texto"
+            error.Prompt("Se salió de la edición de texto")
         );
 
         if (accion == SALIR) {
@@ -66,7 +68,7 @@ async function preguntarTodoTexto(tp, texto = []) {
             accion = await tp.user.preguntar().suggester(
                 tp, opciones, valores,
                 `Que se quiere hacer con "${contenidoAEditar.texto}"`,
-                "No se eligió si editar, "
+                error.Prompt("No se eligió editar")
             );
 
             if (accion == SALIR) {
@@ -128,12 +130,14 @@ function eliminarParteTexto(indices, texto) {
 }
 
 async function preguntarEnumeracion(tp) {
+    const error = tp.user.error();
+
     let resultado = { 
         tipo: ENUMERACION,
         enumeracion: await tp.user.preguntar().suggester(
             tp, [" 1. Numérico", " a. Alfanumérico"], [NUMERICO, ALFANUMERICO],
             "Qué tipo de enumeración se va a usar?",
-            "No se ingresó"
+            error.Prompt("No se ingresó")
         )
     };
 
@@ -149,7 +153,7 @@ async function preguntarEnumeracion(tp) {
         let accion = await tp.user.preguntar().suggester(
             tp, opciones, valores,
             "Qué vas a hacer ahora?",
-            "No se eligió una acción al crear la enumeración"
+            error.Prompt("No se eligió una acción al crear la enumeración")
         );
 
         if (accion == SALIR) {
@@ -169,11 +173,13 @@ async function preguntarEnumeracion(tp) {
 }
 
 async function preguntarTexto(tp, mensaje = "Ingrese el texto") {
+    const error = tp.user.error();
+
     return {
         tipo: TEXTO, 
         texto: await tp.user.preguntar().prompt(
             tp, mensaje,
-            "No se ingresó el texto",
+            error.Prompt("No se ingresó el texto"),
             null, true
         )
     };

@@ -38,7 +38,7 @@
         const tArchivoViejo = tp.file.find_tfile(path);
         await leafAUsar.openFile(tArchivoViejo);
 
-        throw new Error("Esa nota ya existe");
+        throw tp.user.error().Quit("Esa nota ya existe");
 	}
 _%>
 ### Progreso

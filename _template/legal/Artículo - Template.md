@@ -1,10 +1,12 @@
 <%*
-    const dv = app.plugins.plugins.dataview.api;
     const herramientas = tp.user.herramientas();
     const preguntar = tp.user.preguntar();
+    const error = tp.user.error();
     const describir = tp.user.describir().legal;
     const cte = tp.user.constantes();
     const mostrarTexto = tp.user.mostrarTexto();
+
+    const dv = app.plugins.plugins.dataview.api;
 
     const AGREGAR_TEXTO = "AGREGAR_TEXTO";
     const AGREGAR_ENUMERACION = "AGREGAR_ENUMERACION";
@@ -20,7 +22,7 @@
     let documento = await preguntar.suggester(
         tp, (doc) => describir.documento(doc), documentos,
         "En que documento se encuentra",
-        "No se eligió un documento"
+        error.Quit("No se eligió un documento")
     );
         
     let subSecciones = seccionesSiguientes(documento)
@@ -85,18 +87,18 @@
         );
 
         if (!esBis) {
-            throw new Error("Ya existe un artículo así");
+            throw error.Quit("Ya existe un artículo así");
         }
     }
 
     if (!numero || numero < 0)
-        throw new Error("No se ingresó el número del artículo correcto");
+        throw error.Prompt("No se ingresó el número del artículo correcto");
 
     let nombre;
     if (documento.artConNombre) {
         nombre = await preguntar.prompt(
             tp, "Cuál es el nombre del artículo?",
-            "No se agregó el nombre del artículo"
+            error.Prompt("No se agregó el nombre del artículo")
         );
     }
 

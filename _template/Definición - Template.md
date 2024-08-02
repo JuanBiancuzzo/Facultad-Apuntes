@@ -1,6 +1,8 @@
 <%* 
-	const dv = this.app.plugins.plugins.dataview.api;
+	const error = tp.user.error();
 	const preguntar = tp.user.preguntar();
+
+	const dv = this.app.plugins.plugins.dataview.api;
 
 	let tArchivo = tp.file.find_tfile(tp.file.path(true));
 	let carpeta = tp.file.folder(true);
@@ -9,10 +11,10 @@
 
 	if (titulo.startsWith("Untitle")) {
 		titulo = await preguntar.prompt(tp, "Nombre:", "No se ingresó un nombre para la nota");
-		if (paginaHecha = tp.file.find_tfile(titulo)) {
+		if (paginaHecha = tp.file.find_tfile(titulo)) { // CAMBIARRRRRR
 			let leaf = await app.workspace.getLeaf("tab");
 			await leaf.openFile(paginaHecha);
-			throw new Error("Este archivo ya existe");
+			throw error.Quit("Este archivo ya existe");
 		}
 	}
 
@@ -33,7 +35,7 @@
 				}, 
 				resumenes, 
 				"Que tema se incluye esta nota?",
-				"No se eligió un tema para la nota"
+				error.Prompt("No se eligió un tema para la nota")
 			);
 			
 			break;

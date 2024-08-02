@@ -1,33 +1,34 @@
 async function citarYoutube(tp) {
+    const error = tp.user.error();
     let tR = "";  
 
     tR += await tp.user.preguntar().simple(
         tp, 
         "nombreVideo",
         "Nombre del video:",
-        "No se ingresa nombre del video"
+        error.Quit("No se ingresa nombre del video")
     )
 
     tR += await tp.user.preguntar().simple(
         tp, 
         "nombreCanal",
         "Nombre del canal de Youtube:",
-        "No se ingresó nombre del canal"
+        error.Quit("No se ingresó nombre del canal")
     )
 
     tR += await tp.user.preguntar().fecha(
         tp, 
         "fecha",
         "Fecha del video:", 
-        "No se ingresó un formato de fecha válido", 
-        "No se ingresó la fecha del video"
+        error.Quit("No se ingresó un formato de fecha válido"), 
+        error.Quit("No se ingresó la fecha del video")
     )
 
     tR += await tp.user.preguntar().simple(
         tp, 
         "url",
         "Ingresar el url del video de Youtube:",
-        "No se ingresó el url del video"
+        error.Quit("No se ingresó el url del video")
     )
 
     return tR;

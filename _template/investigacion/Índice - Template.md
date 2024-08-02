@@ -1,5 +1,6 @@
 <%* 
 	const preguntar = tp.user.preguntar();
+	const error = tp.user.error();
 	const validar = tp.user.whiteList();
 
 	const dv = app.plugins.plugins.dataview.api;
@@ -12,7 +13,7 @@
 			.filter(indice => indice.file.name !== undefined);
 
 		let nuevoTema = await preguntar.prompt(
-			tp, "Temática: (Apretar ESC para salir)", "No se ingresó un tema"
+			tp, "Temática: (Apretar ESC para salir)", error.Prompt("No se ingresó un tema")
 		);
 		nuevoTema = `${nuevoTema.charAt(0).toLowerCase()}${nuevoTema.slice(1)}`.trim();
 
@@ -24,7 +25,7 @@
 			tp, ["⊕ Crear un nuevo tema", ...descripcion.map(desc => desc.descripcion)], 
 			[CREAR_TEMA, ...descripcion.map(desc => desc.archivo)], 
 			"Crear un nuevo tema o elegir de que tema va a ser subtema",
-			"No se eligió como definir el tema"
+			error.Prompt("No se eligió como definir el tema")
 		);
 
 		let path = (eleccion === CREAR_TEMA) ? nuevoTema : `${eleccion.file.folder}/${nuevoTema}`;
@@ -33,7 +34,7 @@
 			await app.vault.createFolder(path);
 			await tp.file.move(`${path}/Índice`);
 		} catch (_) {
-			throw new Error("No se pudo crear y mover el tema");
+			throw error.Quit("No se pudo crear y mover el tema");
 		}
 
 		let dia = tp.file.creation_date("YYYY-MM-DD");
@@ -44,8 +45,15 @@
 		tR += `tags: \n - índice\n - ${path.replaceAll(" ", "-")}\n`;
 		tR += "---\n";
 
-	} catch ({ name: _, message: mensaje }) {
-		return await tp.user.eliminar().eliminar(tp, tArchivo, mensaje);
+	} catch ({ name: nombre, message: mensaje }) {
+		const eliminar = tp.user.eliminar();
+        switch (nombre) {
+            case errorNombre.quit:
+                return await eliminar.directo(tArchivo, mensaje);
+                
+            case errorNombre.prompt:
+                return await eliminar.preguntar(tp, tArchivo, mensaje);
+        }
 	}
 _%>
 ```dataviewjs

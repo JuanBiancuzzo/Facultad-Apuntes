@@ -9,8 +9,6 @@
         console.log(mensaje);
         new Notice(mensaje);
     }
-
-    console.log(texto);
     
     let nuevoTexto = await mostrarTexto.preguntar(tp, texto);
     let modificacion = await app.fileManager.processFrontMatter(tArchivo, (frontmatter) => {

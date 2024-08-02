@@ -16,8 +16,18 @@ async function eliminarArchivo(tp, tArchivo, mensaje = undefined) {
     }
 }
 
+async function eliminarArchivoDirectamente(tArchivo, mensaje = undefined) {
+    if (mensaje) {
+        new Notice(`Hubo un error\n${mensaje}`);
+        console.log(`Hubo un error\n${mensaje}`);
+    }
+
+    await app.vault.trash(tArchivo, true);
+}
+
 module.exports = () => {
     return {
-        eliminar: eliminarArchivo
+        preguntar: eliminarArchivo,
+        directo: eliminarArchivoDirectamente
     };
 };

@@ -1,5 +1,6 @@
 <%*
     const pertenece = tp.user.whiteList();
+    const errorNombre = tp.user.error().nombre;
 
     const dv = app.plugins.plugins.dataview.api;
     
@@ -35,7 +36,15 @@
 
         }
     
-    } catch ({ name: _, message: mensaje }) {
-        return await tp.user.eliminar().eliminar(tp, tArchivo, mensaje);
+    } catch ({ name: nombre, message: mensaje }) {
+        const eliminar = tp.user.eliminar();
+
+        switch (nombre) {
+            case errorNombre.quit:
+                return await eliminar.directo(tArchivo, mensaje);
+                
+            case errorNombre.prompt:
+                return await eliminar.preguntar(tp, tArchivo, mensaje);
+        }
     }
 _%>

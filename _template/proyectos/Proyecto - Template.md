@@ -1,5 +1,6 @@
 <%*
     const preguntar = tp.user.preguntar();
+	const error = tp.user.error();
     const validar = tp.user.whiteList();
     
     const dv = app.plugins.plugins.dataview.api;
@@ -11,11 +12,12 @@
 			.filter(indice => indice.file.name !== undefined);
 
 		let nuevoProyecto = await preguntar.prompt(
-			tp, "Nombre del proyecto: (Apretar ESC para salir)", "No se ingresó un nombre para el proyecto"
+			tp, "Nombre del proyecto: (Apretar ESC para salir)", 
+			error.Prompt("No se ingresó un nombre para el proyecto")
 		);
 
 		if (!validar.validarNombre(tp, nuevoProyecto) || proyectos.find(proyecto => proyecto.file.name == nuevoProyecto)) 
-			throw new Error("Nombre invalido");
+			throw error.Prompt("Nombre invalido");
 
 		let path = nuevoProyecto.toLowerCase();
 
@@ -23,7 +25,7 @@
 			await app.vault.createFolder(path);
 			await tp.file.move(`${path}/${nuevoProyecto}`);
 		} catch (_) {
-			throw new Error("No se pudo crear y mover el proyecto");
+			throw error.Quit("No se pudo crear y mover el proyecto");
 		}
 
 		let dia = tp.file.creation_date("YYYY-MM-DD");
@@ -34,9 +36,16 @@
 		tR += `tags: \n - proyecto\n - ${path.trim().replaceAll(" ", "-")}\n`;
 		tR += "---\n";
 
-	} catch ({ name: _, message: mensaje }) {
-		return await tp.user.eliminar().eliminar(tp, tArchivo, mensaje);
-	}
+	} catch ({ name: nombre, message: mensaje }) {
+        const eliminar = tp.user.eliminar();
+        switch (nombre) {
+            case errorNombre.quit:
+                return await eliminar.directo(tArchivo, mensaje);
+                
+            case errorNombre.prompt:
+                return await eliminar.preguntar(tp, tArchivo, mensaje);
+        }
+    }
 _%>
 ### Descripción
 ---

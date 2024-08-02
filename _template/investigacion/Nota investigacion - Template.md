@@ -1,5 +1,7 @@
 <%* 
 	const preguntar = tp.user.preguntar();
+	const error = tp.user.error();
+
 	const DEJAR_CITAR = "cita rapida";
 	const NUEVA_CITA = "nueva cita";
 	const dv = app.plugins.plugins.dataview.api;
@@ -28,7 +30,7 @@
 	let valores = [DEJAR_CITAR, NUEVA_CITA, ...referencias.map(ref => ref.numReferencia)];
 	
 	let citar = await preguntar.suggester(tp, opciones, valores,
-		"Agregar una cita", "No se eligió una acción a hacer", 13
+		"Agregar una cita", error.Prompt("No se eligió una acción a hacer"), 13
 	);
 
 	let numReferencias = [];
@@ -51,7 +53,7 @@
 		}
 
 		citar = await preguntar.suggester(tp, opciones, valores,
-			"Agregar una cita", "No se eligió una acción a hacer", 13
+			"Agregar una cita", error.Prompt("No se eligió una acción a hacer"), 13
 		);	
 	}
 

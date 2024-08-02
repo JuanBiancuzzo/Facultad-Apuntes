@@ -1,6 +1,8 @@
 <%*
-	const dv = this.app.plugins.plugins.dataview.api;
 	const preguntar = tp.user.preguntar();
+	const error = tp.user.error();
+
+	const dv = this.app.plugins.plugins.dataview.api;
 
 	const AGREGAR_TEMA = "agregar_tema";
 
@@ -13,14 +15,14 @@
 		let materia;
 
 		switch (materias.length) {
-			case 0: throw new Error("No se puede elegir una materia");
+			case 0: throw error.Quit("No se puede elegir una materia");
 			case 1: materia = materias[0]; break;
 			default:
 				materia = await preguntar.suggester(
 					tp, materia => materia.file.name, 
 					materias, 
 					"Que materia se va a agregar el tema?",
-					"No se eligió una materia"
+					error.Prompt("No se eligió una materia")
 				);
 				
 				break;
@@ -41,7 +43,7 @@
 				tp, [" ⊕ Agregar nuevo tema",  ...nombreResumenes ],
 				[ AGREGAR_TEMA, ...resumenes ],
 				"Que es lo que quiere hacer?",
-				"No se eligió donde crear el tema"
+				error.Prompt("No se eligió donde crear el tema")
 			);
 		}
 
@@ -50,7 +52,7 @@
 		if (eleccion == AGREGAR_TEMA) {
 			let nombre = await preguntar.prompt(
 				tp, "Nombre del nuevo tema:",
-				"No se ingresó el nombre del tema"
+				error.Prompt("No se ingresó el nombre del tema")
 			);
 
 			eleccion = resumenes.find(resumen => resumen.file.folder.split("/")[1] == nombre);
@@ -169,8 +171,15 @@
 		}
 		await app.vault.rename(tArchivo, `${nuevaCarpeta}/${titulo}.md`);
 		
-	} catch ({ name: _, message: mensaje }) {
-        return await tp.user.eliminar().eliminar(tp, tArchivo, mensaje);
+	} catch ({ name: nombre, message: mensaje }) {
+        const eliminar = tp.user.eliminar();
+        switch (nombre) {
+            case errorNombre.quit:
+                return await eliminar.directo(tArchivo, mensaje);
+                
+            case errorNombre.prompt:
+                return await eliminar.preguntar(tp, tArchivo, mensaje);
+        }
     }
 _%>
 ### Índice

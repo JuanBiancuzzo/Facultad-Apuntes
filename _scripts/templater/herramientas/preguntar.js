@@ -40,7 +40,7 @@ async function preguntarFecha(tp, key, mensaje, errorFormatoIncorrecto, errorFec
 
         fechaVideo = moment(fechaVideoTexto, formato);
         if (!(formato && fechaVideo.isValida())) {
-            throw new Error(errorFormatoIncorrecto);
+            throw errorFormatoIncorrecto;
         }
     }
 
@@ -57,7 +57,7 @@ async function proxyPrompt(tp, prompt_text, mensajeError = undefined, default_va
         let respuesta = await tp.system.prompt(prompt_text, default_value, true, multiline);
         return respuesta;
     } catch {
-        throw new Error(mensajeError);
+        if (mensajeError) throw mensajeError;
     }
 }
 
@@ -68,19 +68,21 @@ async function proxySuggester(tp, text_items, items, placeholder = "", mensajeEr
         );
         return respuesta;
     } catch {
-        throw new Error(mensajeError);
+        if (mensajeError) throw mensajeError;
     }
 }
 
 async function preguntarSeccion(tp, tipo) {
+    const error = tp.user.error();
+    
     let numero = await proxyPrompt(
         tp, `Cuál es el número de la sección: ${tipo}?`,
-        "No se ingresó el número de la sección"
+        error.Prompt("No se ingresó el número de la sección")
     );
     
     let nombre = await proxyPrompt(
         tp, `Cuál es el nombre de la sección: ${tipo}?`,
-        "No se ingresó el nombre de la sección"
+        error.Prompt("No se ingresó el nombre de la sección")
     );
     
     return {
