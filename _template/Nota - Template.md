@@ -46,5 +46,9 @@
             case errorNombre.prompt:
                 return await eliminar.preguntar(tp, tArchivo, mensaje);
         }
+
+        let error = new Error(mensaje);
+        error.name;
+        throw error;
     }
 _%>

@@ -12,7 +12,7 @@ El rol principal del control plane es el de coordinar estos envíos para que los
 
 #### Control por cada Router
 ---
-Los [[Routing algorithms|routing algorithms]] determinan el contenido de la [[Forwarding table|forwarding table]]. Para hacerlo, se comunican con los [[Algoritmo|algoritmos]] de otros routers intercambiando routing information de acuerdo a un [[Routing protocol|routing protocol]], computado así su propia tabla
+Los [[Routing algorithms|routing algorithms]] determinan el contenido de la [[Forwarding table|forwarding table]]. Para hacerlo, se comunican con los [[algo 1/Introducción a la programación/Algoritmo|algoritmos]] de otros routers intercambiando routing information de acuerdo a un [[Routing protocol|routing protocol]], computado así su propia tabla
 
 #### Control centralizado
 ---

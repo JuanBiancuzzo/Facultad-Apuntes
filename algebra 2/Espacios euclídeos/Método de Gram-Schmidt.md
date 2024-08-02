@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Este método, o mejor llamado [[Algoritmo|algoritmo]], nos permite hallar una base ortogonal de cualquier otra base, usando el [[Producto interno|producto interno]] determinado
+Este método, o mejor llamado [[algo 1/Introducción a la programación/Algoritmo|algoritmo]], nos permite hallar una base ortogonal de cualquier otra base, usando el [[Producto interno|producto interno]] determinado
 
 Entonces, entiendo la base $B = \{v_1, v_2, v_3, \cdot, v_n \}$, vamos a construir la base $B_p = \{w_1, w_2, w_3, \cdot, w_n \}$, siendo esta un [[Sistema ortogonal|sistema ortogonal]], de la siguiente forma
 

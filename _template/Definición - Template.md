@@ -8,14 +8,8 @@
 	let carpeta = tp.file.folder(true);
 
 	let titulo = tp.file.title;
-
 	if (titulo.startsWith("Untitle")) {
 		titulo = await preguntar.prompt(tp, "Nombre:", "No se ingresó un nombre para la nota");
-		if (paginaHecha = tp.file.find_tfile(titulo)) { // CAMBIARRRRRR
-			let leaf = await app.workspace.getLeaf("tab");
-			await leaf.openFile(paginaHecha);
-			throw error.Quit("Este archivo ya existe");
-		}
 	}
 
 	let resumenes = dv.pages(`"${carpeta}" and #resumen`)
@@ -23,7 +17,7 @@
 	let resumen;
 	
 	switch (resumenes.length) {
-		case 0: throw new Error("No es una nota posible");
+		case 0: throw error.Quit("No es una nota posible");
 		case 1: resumen = resumenes[0]; break;
 		default:
 			resumen = await preguntar.suggester(
@@ -40,11 +34,38 @@
 			
 			break;
 	}
-
-	await tp.file.move(`${resumen.file.folder}/${titulo}`, tArchivo);
 	
 	let dia = tp.file.creation_date("YYYY-MM-DD");
 	let tag = resumen.tags.find(tag => tag != "resumen");
+	
+	let paginaHecha = tp.file.find_tfile(titulo)
+	if (paginaHecha) {
+		let path = `${paginaHecha.parent.path}/${titulo}.md`;
+		let leafAUsar;
+
+        app.workspace.iterateRootLeaves((leaf) => {
+            let tArchivoActual = leaf.view.file;
+            if (!tArchivoActual) 
+                return;
+
+            if (tArchivoActual.path == path) 
+                leafAUsar = leaf;
+        });
+
+        if (!leafAUsar) leafAUsar = await app.workspace.getLeaf("tab");
+		await leafAUsar.openFile(paginaHecha);
+
+		await app.fileManager.processFrontMatter(paginaHecha, (frontmatter) => {
+			let index = frontmatter["tags"]?.indexOf(tag);
+			if (!index || index < 0) {
+				frontmatter["tags"].push(tag);
+			} 
+		});
+
+		throw error.Quit("Este archivo ya existe");
+	}
+
+	await tp.file.move(`${resumen.file.folder}/${titulo}`, tArchivo);
 	
 	tR += "---\n";
 	tR += `dia: ${dia}\n`;

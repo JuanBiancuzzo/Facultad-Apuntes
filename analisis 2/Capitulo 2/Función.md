@@ -12,7 +12,7 @@ Escribimos estas funciones como $f: A \to B$ donde los conjuntos $A$ (el dominio
 
 #### Expresión en C
 ---
-Se puede representar un [[Algoritmo|algoritmo]]
+Se puede representar un [[algo 1/Introducción a la programación/Algoritmo|algoritmo]]
 ```c
 tipoDeDato nombreAlgoritmo(tipoDeDato variable1, ...) {
 	accion1;

@@ -20,7 +20,7 @@ Para decidir como exactamente se modificará la ventana de congestión, se segui
 
 La estrategia de TCP entonces será la de [[Bandwidth|bandwidth]] probing. La tasa de transmisión se aumentará lentamente en respuesta a los ACK recibidos y disminuirá al encontrarse con una perdida. El objetivo es alcanzar una velocidad estable que no cause perdida de paquetes
 
-Ahora podremos definir el [[Algoritmo|algoritmo]] de congestión de control de TCP, el cual tiene tres componentes principales
+Ahora podremos definir el [[algo 1/Introducción a la programación/Algoritmo|algoritmo]] de congestión de control de TCP, el cual tiene tres componentes principales
 * [[Slow Start|Slow Start]]
 * [[Congestion Avoidance|Congestion Avoidance]]
 * [[Fast Recovery|Fast Recovery]]

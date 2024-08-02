@@ -1,9 +1,8 @@
 ---
 dia: 2024-03-13
-capitulo: 1
 tags:
   - señales/Señales-y-sistemas
-  - nota
+  - nota/facultad
 ---
 ### Definición
 ---
