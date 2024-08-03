@@ -133,4 +133,4 @@ $$ Y = X, ~ \text{if} ~ \overline{A} ~ \text{and} ~ \overline{B} = \overline{A +
 
 ##### Inversión
 ---
-![[Inversor Metal-Óxido-Semiconductor  Complementaria#Definición]]
+![[Inversor Metal-Óxido-Semiconductor Complementaria#Definición]]

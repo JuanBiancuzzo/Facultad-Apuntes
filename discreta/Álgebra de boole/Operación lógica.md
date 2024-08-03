@@ -9,9 +9,9 @@ tags:
 ---
 Los [[Operaciones|operadores]] [[Álgebra de Boole|booleanos]] devuelven tras realizar la operación un resultado booleano, en este caso sería verdadero o falso
 
-* [[Operador lógico AND|AND]] (`&&`)
-* [[Operador lógico OR|OR]] (`||`)
-* [[Operador lógico NOT|NOT]] (`!`)
-* [[Operador lógico NAND|NAND]]
-* [[Operador lógico NOR|NOR]]
-* [[Operador lógico XOR|XOR]]
+* [[Operador AND|AND]] (`&&`)
+* [[Operador OR|OR]] (`||`)
+* [[Operador NOT|NOT]] (`!`)
+* [[Operador NAND|NAND]]
+* [[Operador NOR|NOR]]
+* [[Operador XOR|XOR]]

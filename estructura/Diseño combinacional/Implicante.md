@@ -6,4 +6,4 @@ tags:
 ---
 ### Definición
 ---
-En un [[Mapa de Karnaugh]], los implicantes son [[Subconjunto|subconjuntos]] del mapa, representables con su propio mapa, que tienen todos el mismo valor y donde su [[Cardinal]] es una potencia de 2.
+En un [[Mapa de Karnaugh]], los implicantes son [[Subconjunto|subconjuntos]] del mapa, representables con su propio mapa, que tienen todos el mismo valor y donde su [[Cardinalidad|cardinal]] es una potencia de 2.

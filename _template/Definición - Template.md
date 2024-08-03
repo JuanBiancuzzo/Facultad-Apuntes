@@ -14,8 +14,8 @@
 
 	let resumenes = dv.pages(`"${carpeta}" and #resumen`)
 		.sort(resumen => resumen.capitulo);
+		
 	let resumen;
-	
 	switch (resumenes.length) {
 		case 0: throw error.Quit("No es una nota posible");
 		case 1: resumen = resumenes[0]; break;
@@ -38,8 +38,8 @@
 	let dia = tp.file.creation_date("YYYY-MM-DD");
 	let tag = resumen.tags.find(tag => tag != "resumen");
 	
-	let paginaHecha = tp.file.find_tfile(titulo)
-	if (paginaHecha) {
+	let paginaHecha = tp.file.find_tfile(titulo);
+	if (paginaHecha && paginaHecha.path != `${carpeta}/${titulo}.md`) {
 		let path = `${paginaHecha.parent.path}/${titulo}.md`;
 		let leafAUsar;
 
@@ -58,11 +58,15 @@
 		await app.fileManager.processFrontMatter(paginaHecha, (frontmatter) => {
 			let index = frontmatter["tags"]?.indexOf(tag);
 			if (!index || index < 0) {
-				frontmatter["tags"].push(tag);
+				if (frontmatter["tags"]) {
+					frontmatter["tags"].push(tag);
+				} else {
+					frontmatter["tags"] = [ tag ];
+				}
 			} 
 		});
 
-		throw error.Quit("Este archivo ya existe");
+		 throw error.Quit("Este archivo ya existe");
 	}
 
 	await tp.file.move(`${resumen.file.folder}/${titulo}`, tArchivo);

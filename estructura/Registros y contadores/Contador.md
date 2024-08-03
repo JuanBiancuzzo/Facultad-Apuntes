@@ -12,4 +12,4 @@ Estos [[Circuito secuencial|circuitos secuenciales]] nos permiten contar la cant
 
 Con cada ciclo del reloj la salida de $n$ bits del contador cambia de estado y vuelve a su estado inicial una vez agotada la capacidad de cuenta.
 
-Los contadores son mejor representados como [[Diagrama de estado]], ya que nos permite visualizar este cambio en cada ciclo del reloj.
+Los contadores son mejor representados como [[Diagrama de estado|diagrama de estado]], ya que nos permite visualizar este cambio en cada ciclo del reloj.

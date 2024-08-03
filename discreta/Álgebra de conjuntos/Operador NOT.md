@@ -1,11 +1,73 @@
 ---
-dia: 2024-02-29
+dia: 2024-03-21
 tags:
-  - dispo/Circuitos-digitales-y-procesos-de-fabricación-CMOS
+  - discreta/Álgebra-de-conjuntos
   - nota/facultad
+  - bdd/SQL
+  - dispo/Circuitos-digitales-y-procesos-de-fabricación-CMOS
+  - discreta/Álgebra-proposicional
+aliases:
+  - Inversor
+  - Negación
 ---
 ### Definición
 ---
+Este [[Operación lógica|operador lógico]] tiene varias representaciones 
+
+#### Álgebra de proposiciones
+---
+Considerando las [[Función proposicional|funciones proposicionales]] correspondientes $p'$ dada por la [[Tabla de verdad|tabla de verdad]] $$ \begin{array}{|c|c|}
+\hline
+p & p'\\
+\hline
+0 & 1 \\
+1 & 0 \\
+\hline
+\end{array} $$
+#### Álgebra de conjunto
+---
+Definimos la negación $P'$ como el [[Conjunto|conjunto]] de elementos que no pertenecen a $P$
+
+#### En SQL
+---
+En [[Structured Query Language|SQL]] se usa en la cláusula [[Sentencia WHERE|WHERE]], y se usa en combinación de otros [[SQL Keywords#Operadores|operadores]] para dar el resultado opuesto 
+
+```SQL
+SELECT columna1, columna2, ...
+FROM nombre_tabla
+WHERE NOT condicion;
+```
+
+#### Electronica
+---
+En la electrónica digital la [[algo 1/Introducción a la programación/Información.md|información]] se representa mediante dos rangos distintos de [[Tensión|tensión]]
+
+```tikz
+\begin{document} 
+	\begin{tikzpicture}[scale=1.2, transform shape, ultra thick]
+		\draw[->] (0, -0.2) --
+			(0, 0) -- (0, 4)
+			node[pos=0, left=2pt] {$V_{MIN}$}
+			node[pos=0.25, left=2pt] {$V_{OL}$}
+			node[pos=0.5, left=2pt] {$V_{OH}$}
+			node[pos=0.75, left=2pt] {$V_{MAX}$}
+			node[pos=1, above left=2pt] {$V$};
+		\draw (0, 0) rectangle (3, 1)
+			node[midway] {$0$ lógico};
+		\draw (0, 1) rectangle (3, 2)
+			node[midway] {región indefinida};
+		\draw (0, 2) rectangle (3, 3)
+			node[midway] {$1$ lógico};
+	\end{tikzpicture}
+\end{document}
+```
+
+* El $0$ lógico: $V_{MIN} \le V < V_{OL}$
+* El $1$ lógico: $V_{OH} < V \le V_{MAX}$
+* Valor lógico indefinido: $V_{OL} \le V \le V_{OH}$
+
+Una de las operaciones sería la inversión
+
 ```tikz
 \usepackage{circuitikz}
 
@@ -95,9 +157,17 @@ Definimos punto de conmutación o umbral lógico $$ V_M \equiv \text{tensión de
 * Para $0 \le V_{IN} < V_M ~~ \implies V_{OUT} = V^+$
 * Para $V_M < V_{IN} \le V^+ ~~ \implies V_{OUT} = 0$
 
-#### Propiedad fundamental: Regeneración de la señal
+##### Propiedad fundamental: Regeneración de la señal
 ---
-Un [[Inversor|inversor]] tiene dos estados lógicos de salida bien definidos ($0$ o $V^+$) incluso con ruido en $V_{IN}$
+Un inversor tiene dos estados lógicos de salida bien definidos ($0$ o $V^+$) incluso con ruido en $V_{IN}$
 * Regeneración de nivel
 * Supresión de ruido
 * Perfeccionamiento del borde de un pulso
+
+##### Implementación
+---
+Partiendo de la una representación [[Inversor real|real]] del inversor, con la siguiente curva 
+
+![[Inversor real#^51a100]]
+
+Donde se puede implementar con [[Inversor Metal-Óxido-Semiconductor Complementaria|tecnología CMOS]]

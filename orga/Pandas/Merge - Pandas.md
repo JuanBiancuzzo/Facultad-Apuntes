@@ -22,7 +22,7 @@ Tenemos 4 formas de como unirlos, que por defecto es un `inner`
 ---
 `inner` implica que únicamente los datos que aparezcan en ambos [[Data frame - Pandas|data frame]] van a permanecer en la unión
 
-![[Intersección de conjuntos#Representación gráfica]]
+![[Operador AND#^c09f24]]
 
 ##### Left
 ---
@@ -40,7 +40,7 @@ Tenemos 4 formas de como unirlos, que por defecto es un `inner`
 ---
 `outer` implica que todos los datos de ambos [[Data frame - Pandas|data frame]] permanecen en la unión. Dejando `Nan`'s en los datos que no se pueden completar.
 
-![[Unión de conjuntos#Representación gráfica]]
+![[Operador OR#^fccd72]]
 
 
 

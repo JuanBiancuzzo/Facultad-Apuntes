@@ -3,6 +3,7 @@ dia: 2023-04-08
 tags:
   - algebra-2/Espacios-Vectoriales
   - nota/facultad
+  - discreta/Álgebra-de-conjuntos
 ---
 ### Definición
 ---

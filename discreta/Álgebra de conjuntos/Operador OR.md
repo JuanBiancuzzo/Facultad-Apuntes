@@ -3,10 +3,54 @@ dia: 2024-03-21
 tags:
   - bdd/SQL
   - nota/facultad
+  - discreta/Álgebra-de-conjuntos
+  - discreta/Álgebra-proposicional
+aliases:
+  - Disyunción
 ---
 ### Definición
 ---
-Este [[Operación lógica|operador lógico]] aplica la lógica de [[Operador lógico OR|operador lógico OR]]
+Este [[Operación lógica|operador lógico]] tiene varias representaciones 
+
+#### Álgebra de proposiciones
+---
+Considerando las [[Función proposicional|funciones proposicionales]] correspondientes $p + q$ dada por la [[Tabla de verdad|tabla de verdad]] $$ \begin{array}{|c:c|c|}
+\hline
+p & q & p + q\\
+\hline
+0 & 0 & 0 \\
+0 & 1 & 1 \\
+1 & 0 & 1 \\
+1 & 1 & 1 \\
+\hline
+\end{array} $$
+#### Álgebra de conjunto
+---
+Definimos la disyunción $P \cup Q$ como el [[Conjunto|conjunto]] de elementos que se encuentran o en $P$, o en $Q$
+
+```tikz
+\begin{document} 
+	\begin{tikzpicture}
+		\path[fill=black, even odd rule] (-1.25, 0) circle (2.08)
+			(-1.25, 0) circle (1.92);
+		\path[fill=black, even odd rule] ( 1.25, 0) circle (2.08)
+			( 1.25, 0) circle (1.92);
+
+		\fill[ultra thick, green!35!darkgray] (-1.25, 0) circle (2)
+			node[font=\bfseries, black, scale=1.75, left=2pt] {$A$};
+		\fill[ultra thick, green!35!darkgray] ( 1.25, 0) circle (2)
+			node[font=\bfseries, black, scale=1.75, right=2pt] {$B$};
+	
+		\draw[ultra thick, darkgray] (-1.25, 0) circle (2);		
+		\draw[ultra thick, darkgray] ( 1.25, 0) circle (2);
+
+		\path (0, 2.75) node[font=\bfseries, black, scale=1.75]
+				{$A \cup B$};
+	\end{tikzpicture}
+\end{document}
+```
+
+^fccd72
 
 #### En SQL
 ---

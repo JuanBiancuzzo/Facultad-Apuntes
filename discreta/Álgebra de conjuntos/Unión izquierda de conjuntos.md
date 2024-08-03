@@ -11,7 +11,6 @@ Dado dos [[Conjunto|conjuntos]] $A$ y $B$, se define la función en [[Álgebra d
 ---
 Donde visualmente se puede entender como 
 
-
 ```tikz
 \begin{document} 
 	\begin{tikzpicture}

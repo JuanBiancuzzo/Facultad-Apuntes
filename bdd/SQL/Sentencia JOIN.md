@@ -16,7 +16,7 @@ Tenemos 4 formas de como unirlos
 ---
 `(INNER) JOIN` devuelve los [[Registro SQL|registros]] que tienen el mismo valor en ambas [[Tabla SQL|tablas]]
 
-![[Intersección de conjuntos#^184e9c]]
+![[Operador AND#^c09f24]]
 
 
 ```SQL
@@ -62,7 +62,7 @@ En caso de que falten datos, se agrega [[NULL|NULL]]
 ---
 `FULL (OUTER) JOIN` devuelve todos los registros de la tabla izquierda y derecha
 
-![[Unión de conjuntos#^b372ff]]
+![[Operador OR#^fccd72]]
 
 ```SQL
 SELECT nombre_columna(s)

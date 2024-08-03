@@ -1,10 +1,10 @@
 ---
-capitulo: 3
+capitulo: 2
 tags:
-  - discreta/Álgebra-de-Boole
+  - discreta/Álgebra-proposicional
   - resumen
 ---
-### Índice 
+### Índice
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });

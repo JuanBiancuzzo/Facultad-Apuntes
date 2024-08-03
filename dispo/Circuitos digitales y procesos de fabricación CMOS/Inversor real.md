@@ -1,42 +1,13 @@
 ---
-dia: 2023-08-23
-tags:
-  - dispo/Circuitos-digitales-y-procesos-de-fabricación-CMOS
-  - nota/facultad
+dia: 2024-08-03
+tags: 
+ - dispo/Circuitos-digitales-y-procesos-de-fabricación-CMOS
+ - nota/facultad
 ---
 ### Definición
 ---
-En la electrónica digital la [[algo 1/Introducción a la programación/Información.md|información]] se representa mediante dos rangos distintos de [[Tensión|tensión]]
+Partiendo del [[Operador NOT|inversor ideal]] podemos ver como podría ser la idea general de un inversor más real
 
-```tikz
-\begin{document} 
-	\begin{tikzpicture}[scale=1.2, transform shape, ultra thick]
-		\draw[->] (0, -0.2) --
-			(0, 0) -- (0, 4)
-			node[pos=0, left=2pt] {$V_{MIN}$}
-			node[pos=0.25, left=2pt] {$V_{OL}$}
-			node[pos=0.5, left=2pt] {$V_{OH}$}
-			node[pos=0.75, left=2pt] {$V_{MAX}$}
-			node[pos=1, above left=2pt] {$V$};
-		\draw (0, 0) rectangle (3, 1)
-			node[midway] {$0$ lógico};
-		\draw (0, 1) rectangle (3, 2)
-			node[midway] {región indefinida};
-		\draw (0, 2) rectangle (3, 3)
-			node[midway] {$1$ lógico};
-	\end{tikzpicture}
-\end{document}
-```
-
-* El $0$ lógico: $V_{MIN} \le V < V_{OL}$
-* El $1$ lógico: $V_{OH} < V \le V_{MAX}$
-* Valor lógico indefinido: $V_{OL} \le V \le V_{OH}$
-
-Una de las operaciones sería la inversión
-![[Inversor ideal#Definición]]
-
-#### Inversor "real"
----
 ```tikz
 \usepackage{pgfplots}
 
@@ -82,6 +53,8 @@ Una de las operaciones sería la inversión
 \end{document}
 ```
 
+^51a100
+
 * Rango de entrada válido para $0$ o $1$ lógico
 	* $V_{IL} \equiv$ máx. [[Tensión|tensión]] de entrada considerada $0$ lógico
 	* $V_{IH} \equiv$ mín. [[Tensión|tensión]] de entrada considerada $1$ lógico
@@ -96,7 +69,3 @@ Una de las operaciones sería la inversión
 
 Clave para la regeneración de [[Señal|señal]]
 * Elevada $|A_v|$ en la región indefinida y baja fuera de ella
-
-#### El inversor CMOS
----
-![[Inversor Metal-Óxido-Semiconductor  Complementaria#Definición]]

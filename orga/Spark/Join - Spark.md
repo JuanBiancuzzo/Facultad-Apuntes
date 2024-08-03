@@ -18,7 +18,7 @@ Cuando se llama para sets de datos del tipo $(Key,~Value_1)$ y $(Key, Value_2)$ 
 izquierdaRDD.join(derechaRDD)
 ```
 
-![[Intersección de conjuntos#Representación gráfica]]
+![[Operador AND#^c09f24]]
 
 ##### Left outer join
 ---
@@ -48,4 +48,4 @@ Cuando se llama para sets de datos del tipo $(Key,~Value_1)$ y $(Key, Value_2)$ 
 izquierdaRDD.fullOuterJoin(derechaRDD)
 ```
 
-![[Unión de conjuntos#Representación gráfica]]
+![[Operador OR#^fccd72]]
