@@ -3,6 +3,9 @@ dia: 2023-01-22
 tags:
   - algebra-2/Espacios-euclídeos
   - nota/facultad
+  - analisis-2/Nomenclatura
+aliases:
+  - Producto escalar
 ---
 ### Definición
 ---

@@ -8,7 +8,7 @@ if (!referenciasArchivo)
 
 referenciasArchivo = referenciasArchivo.map(ref => parseInt(ref, 10));
 
-let referencias = dv.pages('"_referencias"')
+let referencias = dv.pages('#referencia')
 	.filter(ref => referenciasArchivo.indexOf(ref.numReferencia) >= 0);
 
 for (let referencia of referencias) {

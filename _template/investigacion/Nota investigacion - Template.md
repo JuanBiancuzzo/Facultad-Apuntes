@@ -14,7 +14,7 @@
 		return;
 	}	
 
-	let referencias = dv.pages('"_referencias"')
+	let referencias = dv.pages('#referencia')
 		.flatMap(referencia => {
 			let desc = tp.user.cita().metadata(tp, referencia);
 			if (!desc) {
@@ -76,10 +76,9 @@
 ### Definición
 ---
 <% tp.file.cursor() %>
-
-
-### Referencias
----
-```dataviewjs
-	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
-```
+<%*
+if (numReferencias.length > 0) {
+	tR += "\n\n\n";
+	tR += await tp.file.include("[[Referencia - Template]]");
+}
+%>

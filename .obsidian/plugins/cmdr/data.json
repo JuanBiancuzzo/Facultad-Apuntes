@@ -24,15 +24,15 @@
       "mode": "any"
     },
     {
-      "id": "templater-obsidian:_template/investigacion/Agregar cita.md",
-      "icon": "bookmark",
-      "name": "Agregar Cita",
-      "mode": "any"
-    },
-    {
       "id": "quickadd:choice:e08ebefc-0939-4918-88d3-e2f5937667ac",
       "icon": "box",
       "name": "Nuevo Proyecto",
+      "mode": "any"
+    },
+    {
+      "id": "templater-obsidian:_template/investigacion/Modificar referencia.md",
+      "icon": "bookmark",
+      "name": "Agregar cita",
       "mode": "any"
     }
   ],

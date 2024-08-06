@@ -5,8 +5,10 @@ tags:
   - nota/facultad
   - discreta/Álgebra-de-conjuntos
   - discreta/Álgebra-proposicional
+  - analisis-2/Nomenclatura
 aliases:
   - Conjunción
+  - Intersección de conjuntos
 ---
 ### Definición
 ---
@@ -26,6 +28,8 @@ p & q & pq\\
 \end{array} $$ ^39ff30
 #### Álgebra de conjunto
 ---
+$A \cap B$ se lee "A intersección B" y es el conjunto que contiene los elementos comunes a ambos 
+
 Definimos la conjunción $P \cap Q$ como el [[Conjunto|conjunto]] de elementos que se encuentran en $P$ y en $Q$
 
 ```tikz

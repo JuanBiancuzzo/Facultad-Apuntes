@@ -5,8 +5,10 @@ tags:
   - nota/facultad
   - discreta/Álgebra-de-conjuntos
   - discreta/Álgebra-proposicional
+  - analisis-2/Nomenclatura
 aliases:
   - Disyunción
+  - Unión de conjuntos
 ---
 ### Definición
 ---
@@ -26,6 +28,8 @@ p & q & p + q\\
 \end{array} $$
 #### Álgebra de conjunto
 ---
+$A \cup B$ se lee "A unión B" y es el conjunto que contiene los elementos de ambos $$ \forall a, b : a \in A \cup B, ~\text{y} ~ b \in A \cup B, ~\text{donde} a \in A, b \in B $$
+
 Definimos la disyunción $P \cup Q$ como el [[Conjunto|conjunto]] de elementos que se encuentran o en $P$, o en $Q$
 
 ```tikz

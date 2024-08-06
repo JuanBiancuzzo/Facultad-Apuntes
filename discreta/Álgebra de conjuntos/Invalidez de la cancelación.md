@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Para los número reales
+Para los [[Número real|número reales]]
 * $p + q = q  \implies p = 0$
 
 Para la [[Álgebra de proposiciones|lógica proposicional]]
