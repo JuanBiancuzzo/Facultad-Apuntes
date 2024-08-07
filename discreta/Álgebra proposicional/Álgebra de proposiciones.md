@@ -56,3 +56,4 @@ El álgebra proposicional tiene las siguientes operaciones
 * [[Ley de De Morgan|Ley de De Morgan]] ![[Ley de De Morgan#^9e560c]] ![[Ley de De Morgan#^fbb41e]]
 * [[Idempotente|Idempotencia]] ![[Idempotente#^4f2f11]]
 * [[Absorción|Absorción]] ![[Absorción#^49d912]]
+

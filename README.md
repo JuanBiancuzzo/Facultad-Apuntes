@@ -67,9 +67,10 @@ Un listado de los temas investigados y su estado actual
 ---
 Un listado de los proyectos y su estado actual
 
-| Proyecto                                                                                                       | Estado           |
-| -------------------------------------------------------------------------------------------------------------- | ---------------- |
-| [Obsidian Static Site Generator](obsidian%20static%20site%20generator/Obsidian%20Static%20Site%20Generator.md) | Recién empezando |
+| Proyecto                                                                                                                                       | Estado           |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| [Better animations in my humble opinion](better%20animations%20in%20my%20humble%20opinion/Better%20animations%20in%20my%20humble%20opinion.md) | Sin empezar      |
+| [Obsidian Static Site Generator](obsidian%20static%20site%20generator/Obsidian%20Static%20Site%20Generator.md)                                 | Recién empezando |
 
 #### Contribuidores
 ---

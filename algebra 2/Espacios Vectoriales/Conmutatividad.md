@@ -16,6 +16,10 @@ Para el [[Álgebra de proposiciones|álgebra de proposiciones]] se entiende como
 
 $$ p + q = q + p, ~~~~ pq = qp $$ ^370681
 
-Para un [[Espacio vectorial|espacio vectorial]] $V$, y la operación suma $+$, se tiene
+Para el [[Álgebra de conjuntos|álgebra de conjuntos]] se entiende como 
+
+$$ P \cup Q = Q \cup P, ~~~~ P \cap Q = Q \cap P $$ ^90c16b
+
+Para un [[Espacio vectorial|espacio vectorial]] $V$, y la [[Ley de composición interna|operación suma]] $+$, se tiene
 
 $$ u + v = v + u, ~~~ \forall u, v \in\mathbb{V} $$ ^67ee7b

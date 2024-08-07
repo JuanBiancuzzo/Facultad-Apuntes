@@ -21,6 +21,9 @@ Donde también se cumple para las operaciones [[Operador NAND|NAND]] $(\uparrow)
 
 $$ (p \uparrow q)' = p' \downarrow q', ~~~~ (p \downarrow q)' = p' \uparrow q' $$ ^fbb41e
 
+Para el [[Álgebra de conjuntos|álgebra de conjuntos]] se entiende como 
+
+$$ (P \cup Q)' = P' \cap Q' , ~~~~ (P \cap Q)' = P' \cup Q' $$ ^5efbce
 
 ### Referencias
 ---

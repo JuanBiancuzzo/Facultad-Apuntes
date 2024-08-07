@@ -16,6 +16,10 @@ Para el [[Álgebra de proposiciones|álgebra de proposiciones]] se entiende como
 
 $$ (p')' = p $$ ^3ddcb0
 
+Para el [[Álgebra de conjuntos|álgebra de conjuntos]] se entiende como 
+
+$$ (P')' = P $$ ^59fc5a
+
 ### Referencias
 ---
 ```dataviewjs

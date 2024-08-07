@@ -29,16 +29,16 @@ Es más simple trabajar con expresiones que están iguales al vacío (o la ident
 
 #### Identidades
 ---
-* [[Conmutatividad|Conmutatividad]] ![[Conmutatividad#^370681]]
-* [[Distributividad|Distributividad]] ![[Distributividad#^5d5bd9]]
-* [[Elemento neutro|Neutros]] ![[Elemento neutro#^d06bfa]]
-* [[Complementario|Complementarios]] ![[Complementario#^2a2c00]]
-* [[Acotación|Acotación]] ![[Acotación#^8d99f4]]
-* [[Asociatividad|Asociatividad]] ![[Asociatividad#^ce342d]]
-* [[Involución|Involución]] ![[Involución#^3ddcb0]]
-* [[Ley de De Morgan|Ley de De Morgan]] ![[Ley de De Morgan#^9e560c]] ![[Ley de De Morgan#^fbb41e]]
-* [[Idempotente|Idempotencia]] ![[Idempotente#^4f2f11]]
-* [[Absorción|Absorción]] ![[Absorción#^49d912]]
+* [[Conmutatividad|Conmutatividad]] ![[Conmutatividad#^90c16b]]
+* [[Distributividad|Distributividad]] ![[Distributividad#^2904a4]]
+* [[Elemento neutro|Neutros]] ![[Elemento neutro#^7e8bad]]
+* [[Complementario|Complementarios]] ![[Complementario#^ea3733]]
+* [[Acotación|Acotación]] ![[Acotación#^f5e1e9]]
+* [[Asociatividad|Asociatividad]] ![[Asociatividad#^28e538]]
+* [[Involución|Involución]] ![[Involución#^59fc5a]]
+* [[Ley de De Morgan|Ley de De Morgan]] ![[Ley de De Morgan#^5efbce]]
+* [[Idempotente|Idempotencia]] ![[Idempotente#^13da65]]
+* [[Absorción|Absorción]] ![[Absorción#^bf732a]]
 
 ### Referencias
 ---

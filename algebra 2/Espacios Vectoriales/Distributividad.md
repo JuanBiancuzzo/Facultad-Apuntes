@@ -18,3 +18,15 @@ Sea $A$ un [[Conjunto|conjunto]] dado en el que se han definido dos operaciones 
 Para el [[Álgebra de proposiciones|álgebra de proposiciones]] se entiende como 
 
 $$ p ~ (q + r) = pq + pr, ~~~~ p + qr = (p + q)(p + r) $$ ^5d5bd9
+
+Para el [[Álgebra de conjuntos|álgebra de conjuntos]] se entiende como 
+
+$$ P \cap (Q \cup R) = (P \cap Q) \cup (P \cap R), ~~~~ P \cup (Q \cap R) = (P \cup Q) \cap (P \cup R) $$ ^2904a4
+
+Para un [[Espacio vectorial|espacio vectorial]] $V$, un [[Cuerpo|cuerpo]] $\mathbb{K}$ y la operación [[algebra 2/Espacios Vectoriales/Ley de composición externa.md|producto por escalar]] $\cdot$ respecto a los escalar, se tiene
+
+$$ (\alpha + \beta) \cdot u = \alpha \cdot u + \beta \cdot u, ~~~ \forall u \in\mathbb{V}, ~~ \alpha, \beta \in\mathbb{K} $$ ^787267
+
+Para un [[Espacio vectorial|espacio vectorial]] $V$, un [[Cuerpo|cuerpo]] $\mathbb{K}$ y la operación producto por escalar $\cdot$ respecto de la suma de vectores, se tiene
+
+$$ \alpha \cdot (u + v) = \alpha \cdot u + \alpha \cdot v, ~~~ \forall u, v   \in\mathbb{V}, ~~ \alpha \in\mathbb{K} $$ ^cb49a0

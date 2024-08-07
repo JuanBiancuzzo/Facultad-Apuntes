@@ -20,6 +20,11 @@ Para el [[Álgebra de proposiciones|álgebra de proposiciones]] se entiende como
 
 $$ p + T = T, ~~~~ pF = F $$ ^8d99f4
 
+Para el [[Álgebra de conjuntos|álgebra de conjuntos]] se entiende como 
+
+$$ P \cup \mathbb{U} = \mathbb{U}, ~~~~ P \cap \emptyset = \emptyset $$ ^f5e1e9
+
+donde $\mathbb{U}$ es el conjunto universal
 
 ### Referencias
 ---

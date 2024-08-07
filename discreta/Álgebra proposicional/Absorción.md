@@ -16,6 +16,9 @@ Para el [[Álgebra de proposiciones|álgebra de proposiciones]] se entiende como
 
 $$ p + pq = p, ~~~~ p(p + q) = p $$ ^49d912
 
+Para el [[Álgebra de conjuntos|álgebra de conjuntos]] se entiende como 
+
+$$ P \cup (P \cap Q) = P, ~~~~ P \cap (P \cup Q) = P $$ ^bf732a
 
 ### Referencias
 ---
