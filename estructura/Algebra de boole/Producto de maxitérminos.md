@@ -3,10 +3,13 @@ dia: 2023-04-08
 tags:
   - estructura/Algebra-de-boole
   - nota/facultad
+  - discreta/Álgebra-proposicional
+aliases:
+  - Producto de sumas
 ---
 ### Definición
 ---
-Dada una [[Función lógica]], lo que expresa este método es que se puede expresar como producto de sumas, con el objetivo de replicar esta función si necesidad de conocer cual es pero conociendo su output.
+Dada una [[Función lógica|función lógica]], lo que expresa este método es que se puede expresar como producto de sumas, con el objetivo de replicar esta función si necesidad de conocer cual es pero conociendo su output.
 
 Veamos un ejemplo, sea la siguiente función: 
 
@@ -21,7 +24,7 @@ Lo que vamos a buscar ahora es crear una función para cada posición. Estas fun
 	f(x, y) & \text{si} ~~ x = i, y = j \\
 	1 
 \end{cases} $$
-Entonces en este caso para $g_{0, 1}(x, y) = 1$ y en todos los otros casos es una [[Función]] partida.
+Entonces en este caso para $g_{0, 1}(x, y) = 1$ y en todos los otros casos es una [[Función|función]] partida.
 
 Para replicar las siguientes funciones, veamos un caso que puede representar los otros casos $$  g_{1,0}(x, y) = \begin{cases} 
 	0 & \text{si} ~~ x = 1, y = 0 \\

@@ -3,10 +3,13 @@ dia: 2023-04-08
 tags:
   - estructura/Algebra-de-boole
   - nota/facultad
+  - discreta/Álgebra-proposicional
+aliases:
+  - Suma de productos
 ---
 ### Definición
 ---
-Dada una [[Función lógica]], lo que expresa este método es que se puede expresar como producto de sumas, con el objetivo de replicar esta función si necesidad de conocer cual es pero conociendo su output.
+Dada una [[Función lógica|función lógica]], lo que expresa este método es que se puede expresar como producto de sumas, con el objetivo de replicar esta función si necesidad de conocer cual es pero conociendo su output.
 
 Veamos un ejemplo, sea la siguiente función: 
 
@@ -17,11 +20,11 @@ Veamos un ejemplo, sea la siguiente función:
 | 1   | 0   | 1      |
 | 1   | 1   | 1       |
 
-Lo que vamos a buscar ahora es crear una función para cada posición. Estas funciones diremos que llamaremos $g_{i,j}(x, y)$ tienen la particularidad de que estan definidas de la siguiente forma $$ g_{i,j}(x, y) = \begin{cases} 
+Lo que vamos a buscar ahora es crear una función para cada posición. Estas funciones diremos que llamaremos $g_{i,j}(x, y)$ tienen la particularidad de que están definidas de la siguiente forma $$ g_{i,j}(x, y) = \begin{cases} 
 	f(x, y) & \text{si} ~~ x = i, y = j \\
 	0 
 \end{cases} $$
-Entonces en este caso para $g_{0, 1}(x, y) = 0$ y en todos los otros casos es una [[Función]] partida.
+Entonces en este caso para $g_{0, 1}(x, y) = 0$ y en todos los otros casos es una [[Función|función]] partida.
 
 Para replicar las siguientes funciones, veamos un caso que puede representar los otros casos $$  g_{1,0}(x, y) = \begin{cases} 
 	1 & \text{si} ~~ x = 1, y = 0 \\
