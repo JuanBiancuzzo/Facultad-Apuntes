@@ -20,6 +20,10 @@ Para el [[Álgebra de conjuntos|álgebra de conjuntos]] se entiende como
 
 $$ P \cup (P \cap Q) = P, ~~~~ P \cap (P \cup Q) = P $$ ^bf732a
 
+Para el [[Álgebra de Boole|álgebra de Boole]] $(B,~+,~\cdot,~',~0_B,~1_B)$ se tiene 
+
+$$ \forall x, y \in B: ~~~~~ x + xy = x, ~~~ x(x + y) = x $$ ^350a2d
+
 ### Referencias
 ---
 ```dataviewjs

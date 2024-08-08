@@ -25,6 +25,10 @@ $$ P \cup \emptyset = P, ~~~~ P \cap \mathbb{U} = P $$ ^7e8bad
 
 donde $\mathbb{U}$ es el conjunto universal
 
+Para el [[Álgebra de Boole|álgebra de Boole]] $(B,~+,~\cdot,~',~0_B,~1_B)$ se tiene 
+
+$$ \forall x \in B: ~~~~~ x + 0_B = x, ~~~ x ~ 1_B = x $$ ^bd2780
+
 Para un [[Espacio vectorial|espacio vectorial]] $V$, y la [[Ley de composición interna|operación suma]] $+$ se tiene
 
 $$ u + 0_\mathbb{V} = u, ~~~ \forall u \in\mathbb{V} $$ ^a984dd

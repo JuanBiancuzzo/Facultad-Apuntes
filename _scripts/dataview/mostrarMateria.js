@@ -9,7 +9,7 @@ for (let resumen of resumenes) {
 
     dv.paragraph(`> [!summary]- Resumen\n> ![[${resumen.file.path}#Resumen]]`)
     
-    let tagRepresentante = resumen.tags.find(tag => !tag.startsWith("nota"));
+    let tagRepresentante = resumen.tags.find(tag => !tag.startsWith("resumen"));
     let mostrar = dv.pages(`#${tagRepresentante} and -#resumen`)
     .map(archivo => {
         let nombre = archivo.file.name;

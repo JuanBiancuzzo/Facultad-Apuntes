@@ -17,4 +17,4 @@ rdd2 = rdd.repartition(2)
 rdd.glom().collect()
 # Devuelve [[1, 2, 6, 7, 8, 9, 10], [3, 4, 5]]
 ```
-[[Apache spark|Spark]] no hace un shaffle de registros individuales sino de a bloques con un mínimo (no es un problema cuando se manejan grandes cantidades de datos)
+[[Apache spark|Spark]] no hace un shaffle de registros individuales sino de a bloques con un [[Mínimo|mínimo]] (no es un problema cuando se manejan grandes cantidades de datos)

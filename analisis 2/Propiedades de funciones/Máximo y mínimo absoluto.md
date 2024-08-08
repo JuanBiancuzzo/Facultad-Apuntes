@@ -8,7 +8,7 @@ tags:
 ---
 Dada $f : D \subset \mathbb{R}^n \to \mathbb{R}$, el [[Conjunto|conjunto]] $S \subset D$ y el punto $A \in S$ se dice que 
 
- * $f(A)$ es mínimo absoluto de $f(x)$ en $S$, cuando $\forall x \in S - {A}$ resulta $f(x) > f(A)$
- * $f(A)$ es máximo absoluto de $f(x)$ en $S$, cuando $\forall x \in S - {A}$ resulta $f(x) < f(A)$
+ * $f(A)$ es [[Mínimo|mínimo]] absoluto de $f(x)$ en $S$, cuando $\forall x \in S - {A}$ resulta $f(x) > f(A)$
+ * $f(A)$ es [[Máximo|máximo]] absoluto de $f(x)$ en $S$, cuando $\forall x \in S - {A}$ resulta $f(x) < f(A)$
 
 Estas definiciones están dadas en sentido estricto, si se desea definir [[analisis 2/Funciones de varias variables/Extremo.md|extremos]] locales en sentido amplio debe reemplazarse "$>$" por "$\ge$" y "$<$" por "$\le$"

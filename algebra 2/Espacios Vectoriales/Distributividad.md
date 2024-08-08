@@ -23,6 +23,10 @@ Para el [[Álgebra de conjuntos|álgebra de conjuntos]] se entiende como
 
 $$ P \cap (Q \cup R) = (P \cap Q) \cup (P \cap R), ~~~~ P \cup (Q \cap R) = (P \cup Q) \cap (P \cup R) $$ ^2904a4
 
+Para el [[Álgebra de Boole|álgebra de Boole]] $(B,~+,~\cdot,~',~0_B,~1_B)$ se tiene 
+
+$$ \forall x, y, z \in B: ~~~~~ x (y + z) = xy + xz, ~~~ x + yz = (x + y)(x + z) $$ ^174ba9
+
 Para un [[Espacio vectorial|espacio vectorial]] $V$, un [[Cuerpo|cuerpo]] $\mathbb{K}$ y la operación [[algebra 2/Espacios Vectoriales/Ley de composición externa.md|producto por escalar]] $\cdot$ respecto a los escalar, se tiene
 
 $$ (\alpha + \beta) \cdot u = \alpha \cdot u + \beta \cdot u, ~~~ \forall u \in\mathbb{V}, ~~ \alpha, \beta \in\mathbb{K} $$ ^787267

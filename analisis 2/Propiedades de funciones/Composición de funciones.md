@@ -26,27 +26,28 @@ De cualquier forma, esto se vería, gráficamente como
 
 ```tikz
 \begin{document} 
-	\begin{tikzpicture}
-
+	\begin{tikzpicture}[ultra thick]
 		\coordinate (u) at (0, 0) {};
 		\coordinate (x) at (6, 0) {};
 		\coordinate (y) at (12, 0) {};
 	
-		\foreach \coor/\letra in {(u)/u, (x)/x, (y)/y} {
-			\draw[thick] \coor circle (2);
-			\filldraw \coor circle (0.1)
-				node[above left=2pt] {$\letra$};
+		\foreach \coor/\letra/\dir in {
+			(u)/u/above left, (x)/x/below, (y)/y/above right,
+		} {
+			\draw \coor circle (1.5);
+			\filldraw \coor circle (0.1);
+			\path \coor node[\dir=2pt, scale=1.5] {$\letra$};
 		}		
 
 		\draw [->, shorten >=20pt, shorten <=10pt] (u) 
 			.. controls +(2, 2) and +(-2, 2) .. (x)
-			node[midway, above=2pt] {$g$};
+			node[midway, above=2pt, scale=1.5] {$g$};
 		\draw [->, shorten >=20pt, shorten <=10pt] (x) 
 			.. controls +(2, 2) and +(-2, 2) .. (y)
-			node[midway, above=2pt] {$f$};
+			node[midway, above=2pt, scale=1.5] {$f$};
 		\draw [->, shorten >=10pt, shorten <=10pt] (u) 
 			.. controls +(2, -3.8) and +(-2, -3.8) .. (y)
-			node[midway, above=1pt] {$f \circ g$};
+			node[midway, above=1pt, scale=1.5] {$f \circ g$};
 			
 	\end{tikzpicture}
 \end{document}

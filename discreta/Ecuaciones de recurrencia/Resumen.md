@@ -1,10 +1,10 @@
 ---
-capitulo: 3
+capitulo: 7
 tags: 
- - estructura/Algebra-de-boole
+ - discreta/Ecuaciones-de-recurrencia
  - resumen
 ---
-### Índice 
+### Índice
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });

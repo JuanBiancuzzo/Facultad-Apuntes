@@ -173,6 +173,8 @@
 		
 	} catch ({ name: nombre, message: mensaje }) {
         const eliminar = tp.user.eliminar();
+		const errorNombre = error.nombre;
+
         switch (nombre) {
             case errorNombre.quit:
                 return await eliminar.directo(tArchivo, mensaje);
@@ -180,6 +182,8 @@
             case errorNombre.prompt:
                 return await eliminar.preguntar(tp, tArchivo, mensaje);
         }
+
+		console.log(nombre, mensaje);
     }
 _%>
 ### Índice

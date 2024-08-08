@@ -1,8 +1,8 @@
 ---
 dia: 2023-04-09
 tags:
-  - estructura/Algebra-de-boole
   - nota/facultad
+  - estructura/Álgebra-de-Boole
 ---
 ### Definición
 ---

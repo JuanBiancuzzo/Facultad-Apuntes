@@ -23,6 +23,10 @@ $$ P \cup P' = \mathbb{U}, ~~~~ P \cap p' = \emptyset, ~~~~ \mathbb{U}' = \empty
 
 donde $\mathbb{U}$ es el conjunto universal
 
+Para el [[Álgebra de Boole|álgebra de Boole]] $(B,~+,~\cdot,~',~0_B,~1_B)$ se tiene 
+
+$$ \forall x \in B: ~~~~~ x + x' = 1_B, ~~~ xx' = 0_B $$ ^634d78
+
 Para un [[Espacio vectorial|espacio vectorial]] $V$, y la [[Ley de composición interna|operación suma]] $+$, se tiene
 
 $$ u + (-u) = (-u) + u = 0_\mathbb{V}, ~~~ \forall u \in\mathbb{V} $$ ^2ecf94

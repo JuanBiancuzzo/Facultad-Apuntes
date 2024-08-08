@@ -9,7 +9,7 @@ tags:
 ---
 ### Definición
 ---
-El [[Transistor bipolar de juntura|TBJ]] es un dispositivo [[Función R-lineal|alineal]] por lo que no cumple el [[Principio de superposición]]. Entonces teniendo el [[Circuito eléctrico|circuito]]
+El [[Transistor bipolar de juntura|TBJ]] es un dispositivo [[Función lineal|alineal]] por lo que no cumple el [[Principio de superposición]]. Entonces teniendo el [[Circuito eléctrico|circuito]]
 
 ```tikz
 \usepackage[
@@ -73,7 +73,7 @@ Generalizamos la idea de linealización para todas las corrientes y todas las se
 
 Puntos fundamentales:
 * Podemos separar la respuesta del transistor en polarización y pequeña señal
-* La señal es pequeña, aunque la respuesta no [[Función R-lineal|lineal]] puede aproximarse a una respuesta lineal
+* La señal es pequeña, aunque la respuesta no [[Función lineal|lineal]] puede aproximarse a una respuesta lineal
 * Al poder considerar la respuesta lineal, se puede aplicar una pseudo-[[Principio de superposición|superposición]]
 
 Podemos evaluar a las [[Corriente eléctrica|corrientes]] $$ i_C(V_{BE} + v_{be}, V_{CE} + v_{ce}) \approx I_C(V_{BE}, V_{CE}) + \frac{\partial i_C}{\partial v_{BE}} \biggm|_{Q}  v_{be} + \frac{\partial i_C}{\partial v_{CE}} \biggm|_{Q} v_{ce} $$ $$ i_B(V_{BE} + v_{be}, V_{CE} + v_{ce}) \approx I_C(V_{BE}, V_{CE}) + \frac{\partial i_B}{\partial v_{BE}} \biggm|_{Q} v_{be} + \frac{\partial i_B}{\partial v_{BC}} \biggm|_{Q} v_{bc} $$

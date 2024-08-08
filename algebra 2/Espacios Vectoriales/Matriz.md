@@ -30,7 +30,7 @@ $$ A = \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\
 
 ##### Matriz de una transformación lineal
 ---
-![[Matriz de una transformacion lineal#Definición]]
+![[Matriz de una transformación lineal#Definición]]
 
 ##### Matriz de proyección ortogonal
 ---

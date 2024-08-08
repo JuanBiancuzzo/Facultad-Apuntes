@@ -31,7 +31,7 @@ $$
 
 Habiendo calculado todos estos determinantes, se puede afirmar lo siguiente
  * Si $H(\vec{A}) \ne 0$, se dan tres posibles situaciones
-	  1. $H_1 < 0, H_2 > 0, \cdots$ signos alternados hasta $H_n$ : $f(\vec{A})$ es máximo local
-	  2. $H_k > 0, k = 1, \cdots, n$ : $f(\vec{A})$ es mínimo local
+	  1. $H_1 < 0, H_2 > 0, \cdots$ signos alternados hasta $H_n$ : $f(\vec{A})$ es [[discreta/Relaciones/Máximo.md|máximo]] local
+	  2. $H_k > 0, k = 1, \cdots, n$ : $f(\vec{A})$ es [[Mínimo|mínimo]] local
 	  3. Otra situaciones: $f(\vec{A})$ no es [[analisis 2/Funciones de varias variables/Extremo.md|extremo]] local
  * Si $H(\vec{A}) = 0$, este teorema no permite determinar si $f(\vec{A})$ es o no es extremo local

@@ -9,7 +9,7 @@ tags:
 Una sucesión de números complejos es una función $\alpha : \mathbb{N} \to \mathbb{C}$
 
 
-Notacion:
+Notación
 	* $\forall n \in \mathbb{N} : \alpha (n) = \alpha_n$
 	* $\alpha = (\alpha_n)_{n = 1}^\infty = (\alpha_1, \alpha_2, ...)$
 
@@ -33,7 +33,7 @@ $$ Si $\alpha$ es acotada tanto superior como interiormente, entonces es una aco
 	![[Subsucesión#Definición]] 
 
 4) Con $\mathbb{K} \in \{ \mathbb{R}, \mathbb{C} \}$ 
-	![[Serie#Definicion]]
+	![[Serie#Definición]]
 
 
 ![[Operación entre sucesiones]]

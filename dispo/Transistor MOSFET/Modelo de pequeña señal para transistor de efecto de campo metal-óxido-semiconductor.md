@@ -9,7 +9,7 @@ tags:
 ---
 ### Definición
 ---
-El [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] es un dispositivo [[Función R-lineal|alineal]] por lo que no cumple el [[Principio de superposición]]. Entonces teniendo el [[Circuito eléctrico|circuito]]
+El [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] es un dispositivo [[Función lineal|alineal]] por lo que no cumple el [[Principio de superposición]]. Entonces teniendo el [[Circuito eléctrico|circuito]]
 
 ![[Circuito de pequeña señal del Transistor de efecto de campo metal-óxido-semiconductor (MOSFET).webp]]
 

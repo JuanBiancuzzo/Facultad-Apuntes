@@ -22,6 +22,10 @@ Para el [[Álgebra de conjuntos|álgebra de conjuntos]] se entiende como
 
 $$ (P \cup Q) \cup R = P \cup (R \cap Q) , ~~~~ (P \cap Q) \cap R = P \cap (Q \cup R) $$ ^28e538
 
+Para el [[Álgebra de Boole|álgebra de Boole]] $(B,~+,~\cdot,~',~0_B,~1_B)$ se tiene 
+
+$$ \forall x, y, z \in B: ~~~~~ (x + y) + z = x + (y + z), ~~~ (xy)z = x(yz) $$ ^19417d
+
 Para un [[Espacio vectorial|espacio vectorial]] $V$, y la [[Ley de composición interna|operación suma]] $+$, se tiene
 
 $$ (u + v) + w = u + (v + w), ~~~ \forall u, v, w \in\mathbb{V} $$ ^70b300

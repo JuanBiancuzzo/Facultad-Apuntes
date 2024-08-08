@@ -25,6 +25,10 @@ Para el [[Álgebra de conjuntos|álgebra de conjuntos]] se entiende como
 
 $$ (P \cup Q)' = P' \cap Q' , ~~~~ (P \cap Q)' = P' \cup Q' $$ ^5efbce
 
+Para el [[Álgebra de Boole|álgebra de Boole]] $(B,~+,~\cdot,~',~0_B,~1_B)$ se tiene 
+
+$$ \forall x, y \in B: ~~~~~ (x + y)' = x' y', ~~~ (xy)' = x' + y' $$ ^094b93
+
 ### Referencias
 ---
 ```dataviewjs

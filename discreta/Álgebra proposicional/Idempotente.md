@@ -22,6 +22,10 @@ Para el [[Álgebra de conjuntos|álgebra de conjuntos]] se entiende como
 
 $$ P \cup P = P, ~~~~ P \cup P = P $$ ^13da65
 
+Para el [[Álgebra de Boole|álgebra de Boole]] $(B,~+,~\cdot,~',~0_B,~1_B)$ se tiene 
+
+$$ \forall x \in B: ~~~~~ x + x = x, ~~~ xx = x $$ ^1d327b
+
 ### Referencias
 ---
 ```dataviewjs

@@ -3,6 +3,7 @@ dia: 2023-01-23
 tags:
   - proba/Representación-de-variables-aleatorias
   - nota/facultad
+  - discreta/Relaciones
 ---
 ### Definición
 ---

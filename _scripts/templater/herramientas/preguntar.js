@@ -61,9 +61,9 @@ async function proxyPrompt(tp, prompt_text, mensajeError = undefined, default_va
     }
 }
 
-async function proxySuggester(tp, text_items, items, placeholder = "", mensajeError = undefined, limit = undefined) {
+async function proxySuggester(tp, text_items, items, placeholder = "", mensajeError = undefined, limit = undefined) {    
     try {
-        let respuesta = tp.system.suggester(
+        let respuesta = await tp.system.suggester(
             text_items, items, true, placeholder, limit
         );
         return respuesta;

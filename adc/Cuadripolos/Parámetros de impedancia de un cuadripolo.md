@@ -31,4 +31,4 @@ Donde
 * $z_{22} =$ Impedancia de salida en circuito abierto
 
 Cuando $z_{11} = z_{22}$ se dice que la red de dos puertos es simétrica.
-Cuando la red de dos puertos es [[Función R-lineal|lineal]] y no tiene [[Fuente de tensión|fuentes dependientes]], las impedancias de transferencia son iguales ($z_{12} = z_{21}$), y se dice que los dos puertos son recíprocos.
+Cuando la red de dos puertos es [[Función lineal|lineal]] y no tiene [[Fuente de tensión|fuentes dependientes]], las impedancias de transferencia son iguales ($z_{12} = z_{21}$), y se dice que los dos puertos son recíprocos.

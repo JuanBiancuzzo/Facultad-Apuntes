@@ -20,6 +20,10 @@ Para el [[Álgebra de conjuntos|álgebra de conjuntos]] se entiende como
 
 $$ (P')' = P $$ ^59fc5a
 
+Para el [[Álgebra de Boole|álgebra de Boole]] $(B,~+,~\cdot,~',~0_B,~1_B)$ se tiene 
+
+$$ \forall x \in B: ~~~~~ (x')' = x $$ ^cbabbb
+
 ### Referencias
 ---
 ```dataviewjs

@@ -240,7 +240,7 @@ Para un $V_{out}$ fijo, la ganancia depende sólo de $V_{CC}$, mientras que se e
 
 #### Máxima señal sin distorsión
 ---
-La distorsión ocurre cuando el [[Transistor|transistor]] no está trabajando en el régimen que corresponde. La relación de la señal de salida con la señal de entrada no será [[Función R-lineal|lineal]]. Existirá una deformación de la señal de salida y entonces $$ v_{out} \ne A_{vo} v_{in} $$
+La distorsión ocurre cuando el [[Transistor|transistor]] no está trabajando en el régimen que corresponde. La relación de la señal de salida con la señal de entrada no será [[Función lineal|lineal]]. Existirá una deformación de la señal de salida y entonces $$ v_{out} \ne A_{vo} v_{in} $$
 ![[Máxima señal sin distorsión.webp]]
 
 ##### Distorsión por alinealidad

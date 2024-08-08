@@ -13,5 +13,6 @@
   "readableLineLength": true,
   "attachmentFolderPath": "./img",
   "showRibbon": true,
-  "showIndentGuide": false
+  "showIndentGuide": false,
+  "useTab": false
 }

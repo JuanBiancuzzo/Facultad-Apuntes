@@ -26,6 +26,10 @@ $$ P \cup \mathbb{U} = \mathbb{U}, ~~~~ P \cap \emptyset = \emptyset $$ ^f5e1e9
 
 donde $\mathbb{U}$ es el conjunto universal
 
+Para el [[Álgebra de Boole|álgebra de Boole]] $(B,~+,~\cdot,~',~0_B,~1_B)$ se tiene 
+
+$$ \forall x \in B: ~~~~~ x + 1_B = 1_B, ~~~ x ~ 0_B = 0_B $$ ^90ffb1
+
 ### Referencias
 ---
 ```dataviewjs
