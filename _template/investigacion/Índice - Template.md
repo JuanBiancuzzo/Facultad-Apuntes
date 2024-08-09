@@ -46,7 +46,9 @@
 		tR += "---\n";
 
 	} catch ({ name: nombre, message: mensaje }) {
+		const errorNombre = error.nombre;
 		const eliminar = tp.user.eliminar();
+
         switch (nombre) {
             case errorNombre.quit:
                 return await eliminar.directo(tArchivo, mensaje);
