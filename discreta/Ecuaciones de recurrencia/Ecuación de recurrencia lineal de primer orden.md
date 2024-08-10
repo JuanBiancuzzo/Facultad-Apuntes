@@ -1,8 +1,8 @@
 ---
 dia: 2024-08-08
-tags: 
- - discreta/Ecuaciones-de-recurrencia
- - nota/facultad
+tags:
+  - discreta/Ecuaciones-de-recurrencia
+  - nota/facultad
 ---
 ### Definición
 ---

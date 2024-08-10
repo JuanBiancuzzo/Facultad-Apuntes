@@ -3,6 +3,8 @@ dia: 2024-01-13
 tags:
   - proba/Teoría-de-probabilidades
   - nota/facultad
+aliases:
+  - Número combinatorio
 ---
 ### Definición
 ---

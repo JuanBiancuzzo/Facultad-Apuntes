@@ -125,5 +125,24 @@
       ],
       "key": "C"
     }
-  ]
+  ],
+  "omnisearch:show-modal-infile": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "F"
+    }
+  ],
+  "omnisearch:show-modal": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "F"
+    }
+  ],
+  "editor:open-search": [],
+  "global-search:open": []
 }

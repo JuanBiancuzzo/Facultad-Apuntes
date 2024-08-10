@@ -11,6 +11,7 @@
 \usepackage{amssymb}
 \usetikzlibrary{math}
 \usetikzlibrary{calc}
+\usepackage{ifthen}
 
 \ctikzset{
 	resistors/scale=0.7,
