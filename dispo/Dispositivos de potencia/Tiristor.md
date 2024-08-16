@@ -26,7 +26,7 @@ Veamos la [[Curva característica de un componente|curva característica]] del t
 ![[Curva característica del tiristor.webp]]
 
 $V_{B0}$ ([[Tensión|tensión]] de ruptura): mínima tensión de $V_{AK}$ que dispara al tiristor
-* $I_L$ Corriente de latch (enganche): es la [[Mínima|mínima]] corriente de encendido del tiristor
+* $I_L$ Corriente de latch (enganche): es la [[Mínimo|mínima]] corriente de encendido del tiristor
 * $I_H$ Corriente de hold (retención): mínimo corriente que lo mantiene encendido
 * $I_R$ Corriente reversa: corriente que circula para $V_K > V_A$
 

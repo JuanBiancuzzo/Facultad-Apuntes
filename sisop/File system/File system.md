@@ -10,11 +10,11 @@ Permite al usuario organizar sus datos para que se persistan a través de un lar
 
 #### Capa de abstracción
 ---
-Es un tipo genérico de interfaz para cualquier tipo de filesystem que es posible sólo porque el [[Kernel]] implementa una capa de abstracción que rodea esta interface para con el [[Sistema]] de [[Archivo]] de bajo nivel.
+Es un tipo genérico de interfaz para cualquier tipo de filesystem que es posible sólo porque el [[Kernel|kernel]] implementa una capa de abstracción que rodea esta interface para con el [[File system|sistema de archivos]] de bajo nivel.
 
-Esta capa de abstracción habilita a [[Linux]] a soportar el sistemas de archivos diferentes, incluso si estos difieren en características y comportamiento.
+Esta capa de abstracción habilita a [[Linux|Linux]] a soportar el sistemas de archivos diferentes, incluso si estos difieren en características y comportamiento.
 
-Esto es posible porque [[Virtual File System|VFS]] provee un [[Modelo]] común de archivos que pueda representar cualquier característica y comportamiento general de cualquier sistema de archivos.
+Esto es posible porque [[Virtual File System|VFS]] provee un [[Modelo|modelo]] común de archivos que pueda representar cualquier característica y comportamiento general de cualquier sistema de archivos.
 
 Esta capa de abstracción trabaja mediante la definición de interfaces conceptuales básicas y de estructuras que cualquier sistema de archivos soporta.
 
@@ -78,11 +78,11 @@ Veamos algunas definiciones
 
 #### Path
 ---
-Es el string que identifica unívocamente a un [[Directorio]] o [[Archivo]] dentro de un dispositivo
+Es el string que identifica unívocamente a un [[Directorio|directorio]] o [[Archivo|archivo]] dentro de un dispositivo
 
-#### Root [[Directorio|directory]]
+#### Root directory
 ---
-Es el [[Directorio]] de que cuelgan todos los demás
+Es el directorio de que cuelgan todos los demás
 
 #### Absolute path
 ---
@@ -90,15 +90,15 @@ Es la [[File system#Path|ruta]] desde el [[File system#Root Directorio directory
 
 #### Relative path
 ---
-Es la [[File system#Path|ruta]] relativa que se interpreta a partir del [[Directorio]] actual.
+Es la [[File system#Path|ruta]] relativa que se interpreta a partir del [[Directorio|directorio]] actual.
 
 #### Current [[Directorio|directory]]
 ---
-Es el [[Directorio]] actual en el cual se está ejecutando el [[Proceso|proceso]]
+Es el directorio actual en el cual se está ejecutando el [[Proceso|proceso]]
 
 #### Hard link
 ---
-Es el mapeo entre el nombre y el [[Archivo]] subyacente, esto implica que la estructura de un file system que permite múltiples hard links ya no es de [[Árbol]] invertido. Aquellos [[Sistema operativo]] que lo permiten se cuidan de no crear ciclos asegurándose que la estructura sea un grafo dirigido acíclico.
+Es el mapeo entre el nombre y el [[Archivo|archivo]] subyacente, esto implica que la estructura de un file system que permite múltiples hard links ya no es de [[Árbol|árbol]] invertido. Aquellos [[Sistema operativo|sistemas operativos]] que lo permiten se cuidan de no crear ciclos asegurándose que la estructura sea un grafo dirigido acíclico.
 
 #### Soft link
 ---

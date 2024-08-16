@@ -29,7 +29,7 @@ Un listado de materias y su estado actual
 | [Física 3](fisica%203/Física%203%20(8203).md)                                                                  | Falta pasar el resumen                                        |
 | [Introducción a la ingeniería electronica](intro/Introducción%20a%20la%20ingeniería%20electronica%20(8602).md) | Terminado                                                     |
 | [Legislación y ejercicio profesional](legal/Legislación%20y%20ejercicio%20profesional%20(9111).md)             | Falta terminar los últimos capítulos y acomodar los artículos |
-| [Matemática discreta](discreta/Matemática%20discreta%20(6107).md)                                              | Falta hacer el resumen                                        |
+| [Matemática discreta](discreta/Matemática%20discreta%20(6107).md)                                              | Terminado                                                     |
 | [Organización de datos](orga/Organización%20de%20datos%20(7506).md)                                            | Falta pasar los videos de los últimos temas                   |
 | [Probabilidad y estadística](proba/Probabilidad%20y%20estadística%20(6109).md)                                 | Terminado                                                     |
 | [Redes](redes/Redes%20(TA048).md)                                                                              | Falta pasar el resumen                                        |
@@ -43,27 +43,28 @@ Un listado de materias y su estado actual
 ---
 Un listado de los temas investigados y su estado actual
 
-| Tema de investigación                                      | Estado        |
-| ---------------------------------------------------------- | ------------- |
-| [Animation](animation/Índice.md)                           | Falta resumir |
-| [Asynchronous](asynchronous/Índice.md)                     | Falta resumir |
-| [Cocinar](cocinar/Índice.md)                               | Falta resumir |
-| [Compilador](compilador/Índice.md)                         | Sin empezar   |
-| [Data structures](data%20structures/Índice.md)             | Falta resumir |
-| [Dibujo](dibujo/Índice.md)                                 | Falta resumir |
-| [Game creation](game%20creation/Índice.md)                 | Falta resumir |
-| [Game engine](game%20engine/Índice.md)                     | Falta resumir |
-| [Generación procedural](generación%20procedural/Índice.md) | Falta resumir |
-| [Herramientas](herramientas/Índice.md)                     | Falta resumir |
-| [Lagrangian mechanics](lagrangian%20mechanics/Índice.md)   | Falta resumir |
-| [Lenguaje de marcado](lenguaje%20de%20marcado/Índice.md)   | Falta resumir |
-| [Libros](libros/Índice.md)                                 | Falta resumir |
-| [Machine Learning](machine%20Learning/Índice.md)           | Falta resumir |
-| [Matemática](matemática/Índice.md)                         | Falta resumir |
-| [Música](música/Índice.md)                                 | Falta resumir |
-| [Networking](networking/Índice.md)                         | Falta resumir |
-| [Reglas APA](reglas%20APA/Índice.md)                       | Falta resumir |
-| [Storytelling](storytelling/Índice.md)                     | Falta resumir |
+| Tema de investigación                                                | Estado        |
+| -------------------------------------------------------------------- | ------------- |
+| [Animation](animation/Índice.md)                                     | Falta resumir |
+| [Asynchronous](asynchronous/Índice.md)                               | Falta resumir |
+| [Cocinar](cocinar/Índice.md)                                         | Falta resumir |
+| [Compilador](compilador/Índice.md)                                   | Sin empezar   |
+| [Data structures](data%20structures/Índice.md)                       | Falta resumir |
+| [Dibujo](dibujo/Índice.md)                                           | Falta resumir |
+| [Game creation](game%20creation/Índice.md)                           | Falta resumir |
+| [Game engine](game%20engine/Índice.md)                               | Falta resumir |
+| [Generación procedural](generación%20procedural/Índice.md)           | Falta resumir |
+| [Herramientas](herramientas/Índice.md)                               | Falta resumir |
+| [Lagrangian mechanics](lagrangian%20mechanics/Índice.md)             | Falta resumir |
+| [Lenguaje de marcado](lenguaje%20de%20marcado/Índice.md)             | Falta resumir |
+| [Lenguajes de programación](lenguajes%20de%20programación/Índice.md) | Sin empezar   |
+| [Libros](libros/Índice.md)                                           | Falta resumir |
+| [Machine Learning](machine%20Learning/Índice.md)                     | Falta resumir |
+| [Matemática](matemática/Índice.md)                                   | Falta resumir |
+| [Música](música/Índice.md)                                           | Falta resumir |
+| [Networking](networking/Índice.md)                                   | Falta resumir |
+| [Reglas APA](reglas%20APA/Índice.md)                                 | Falta resumir |
+| [Storytelling](storytelling/Índice.md)                               | Falta resumir |
 
 #### Proyectos
 ---

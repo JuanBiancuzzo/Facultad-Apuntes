@@ -8,7 +8,7 @@ aliases:
 ---
 ### Definición
 ---
-Cuando una [[Relación|relación]] es reflexiva, antisimétrica y [[Transitividad|transitiva]], se llama relación de orden
+Cuando una [[Relación|relación]] es reflexiva, antisimétrica y [[Transitividad en relaciones de orden|transitiva]], se llama relación de orden
 
 El [[Conjunto|conjunto]] donde se ha introducido esa relación se llama conjunto ordenado
 

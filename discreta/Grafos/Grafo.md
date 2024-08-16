@@ -15,3 +15,11 @@ El grafo se puede denominar según su [[Tamaño de un grafo|tamaño]] y [[Orden 
 * Se define $\delta(G)$ como el [[Grado de un vértice|grado]] [[Mínimo|mínimo]] del grafo ^647b10
 * Se define $\Delta(G)$ como el grado [[Máximo|máximo]] del grafo ^8663e2
 * Se denota $\bar{d}(G)$ como el grado promedio del grafo
+
+#### Operación
+---
+* [[Grafo potencia|Potencia]]
+* [[Suma de grafos|Suma (Disjunta)]]
+* [[Ensamble de grafos|Ensamble]]
+* [[Producto cartesiano entre grafos|Producto cartesiano]]
+* [[Eliminación en grafos|Eliminación de vértice/arista]]

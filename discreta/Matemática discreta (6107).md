@@ -2,7 +2,7 @@
 cuatri: 22C1
 codigo: 6107
 plan: 1986
-estado: Falta hacer el resumen
+estado: Terminado
 tags:
   - materia
 ---

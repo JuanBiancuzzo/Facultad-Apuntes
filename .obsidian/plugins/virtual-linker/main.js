@@ -116,6 +116,13 @@ var PrefixTree = class {
     this.fetcher = new LinkerMetaInfoFetcher(this.app, this.settings);
     this.updateTree();
   }
+  clear() {
+    this.root = new PrefixNode();
+    this._currentNodes = [];
+    this.setIndexedFilePaths.clear();
+    this.mapIndexedFilePathsToUpdateTime.clear();
+    this.mapFilePathToLeaveNodes.clear();
+  }
   getCurrentMatchNodes(index, excludedNote) {
     const matchNodes = [];
     if (excludedNote === void 0 && this.settings.excludeLinksToOwnNote) {
@@ -174,9 +181,13 @@ var PrefixTree = class {
       return;
     }
     const metadata = this.app.metadataCache.getFileCache(file);
-    const aliases = (_c = (_b = metadata == null ? void 0 : metadata.frontmatter) == null ? void 0 : _b.aliases) != null ? _c : [];
+    let aliases = (_c = (_b = metadata == null ? void 0 : metadata.frontmatter) == null ? void 0 : _b.aliases) != null ? _c : [];
+    if (!Array.isArray(aliases)) {
+      aliases = [aliases];
+    }
+    aliases = aliases.filter((alias) => alias && alias.trim().length > 0);
     let names = [file.basename];
-    if (aliases) {
+    if (aliases && this.settings.includeAliases) {
       names.push(...aliases);
     }
     names = names.filter((name) => name && name.trim().length > 0);
@@ -228,13 +239,13 @@ var PrefixTree = class {
     const currentVaultFiles = /* @__PURE__ */ new Set();
     let files = new Array();
     const allFiles = this.app.vault.getMarkdownFiles();
+    allFiles.forEach((f) => currentVaultFiles.add(f.path));
     if (allFiles.length != this.setIndexedFilePaths.size || !updateFiles || updateFiles.length == 0) {
       files = allFiles;
     } else {
       files = updateFiles.map((f) => f ? this.app.vault.getAbstractFileByPath(f) : null).filter((f) => f !== null && f instanceof import_obsidian2.TFile);
     }
     for (const file of files) {
-      currentVaultFiles.add(file.path);
       const mtime = file.stat.mtime;
       if (this.fileIsUpToDate(file)) {
         continue;
@@ -297,6 +308,9 @@ var LinkerCache = class {
       LinkerCache.instance = new LinkerCache(app, settings);
     }
     return LinkerCache.instance;
+  }
+  clearCache() {
+    this.cache.clear();
   }
   reset() {
     this.cache.resetSearch();
@@ -461,6 +475,7 @@ var GlossaryLinker = class extends import_obsidian3.MarkdownRenderChild {
               link.setAttribute("data-href", `${linkpath}`);
               link.classList.add("internal-link");
               link.classList.add("virtual-link-a");
+              link.setAttribute("origin-text", this.text);
               link.target = "_blank";
               link.rel = "noopener";
               span.appendChild(link);
@@ -1123,7 +1138,7 @@ var AutoLinkerPlugin = class {
     var _a;
     const activeView = this.app.workspace.getActiveViewOfType(import_obsidian4.MarkdownView);
     let updateIsOnActiveView = false;
-    if (this.settings.excludeLinksInCurrentLine || this.settings.excludeLinksToOwnNote) {
+    if (this.settings.fixIMEProblem || this.settings.excludeLinksInCurrentLine || this.settings.excludeLinksToOwnNote) {
       const domFromUpdate = update.view.dom;
       const domFromWorkspace = activeView == null ? void 0 : activeView.contentEl;
       updateIsOnActiveView = domFromWorkspace ? isDescendant(domFromWorkspace, domFromUpdate, 3) : false;
@@ -1151,6 +1166,8 @@ var AutoLinkerPlugin = class {
     }
     const dom = view.dom;
     const mappedFile = this.viewUpdateDomToFileMap.get(dom);
+    const explicitlyLinkedFiles = /* @__PURE__ */ new Set();
+    const alreadyLinkedFiles = /* @__PURE__ */ new Set();
     for (let { from, to } of view.visibleRanges) {
       this.linkerCache.reset();
       const text = view.state.doc.sliceString(from, to);
@@ -1194,13 +1211,14 @@ var AutoLinkerPlugin = class {
       const excludedTypes = [
         "codeblock",
         "code-block",
+        "inline-code",
         "internal-link",
-        "link"
+        "link",
+        "url"
       ];
       if (!this.settings.includeHeaders) {
         excludedTypes.push("header-");
       }
-      const explicitlyLinkedFiles = /* @__PURE__ */ new Set();
       const app = this.app;
       (0, import_language.syntaxTree)(view.state).iterate({
         from,
@@ -1211,7 +1229,7 @@ var AutoLinkerPlugin = class {
           for (const excludedType of excludedTypes) {
             if (type.contains(excludedType)) {
               excludedIntervalTree.insert([node.from, node.to]);
-              if (type.contains("internal-link_link-has-alias") || type.endsWith("internal-link")) {
+              if (type.contains("internal-link_link-has-alias") || type.endsWith("internal-link") || type == "string_url") {
                 const text2 = view.state.doc.sliceString(node.from, node.to);
                 const linkedFile = app.metadataCache.getFirstLinkpathDest(text2, (_a = mappedFile == null ? void 0 : mappedFile.path) != null ? _a : "");
                 if (linkedFile) {
@@ -1227,6 +1245,13 @@ var AutoLinkerPlugin = class {
       if (this.settings.excludeLinksToRealLinkedFiles) {
         for (const addition of additions) {
           if (explicitlyLinkedFiles.has(addition.file)) {
+            additionsToDelete.set(addition.id, true);
+          }
+        }
+      }
+      if (this.settings.onlyLinkOnce) {
+        for (const addition of additions) {
+          if (alreadyLinkedFiles.has(addition.file)) {
             additionsToDelete.set(addition.id, true);
           }
         }
@@ -1263,17 +1288,38 @@ var AutoLinkerPlugin = class {
       for (const addition of additions) {
         if (!additionsToDelete.has(addition.id)) {
           filteredAdditions.push(addition);
+          alreadyLinkedFiles.add(addition.file);
         }
       }
       const cursorPos = view.state.selection.main.from;
       const excludeLine = viewIsActive && this.settings.excludeLinksInCurrentLine;
+      const fixIMEProblem = viewIsActive && this.settings.fixIMEProblem;
+      let needImeFix = false;
       const lineStart = view.state.doc.lineAt(cursorPos).from;
       const lineEnd = view.state.doc.lineAt(cursorPos).to;
       filteredAdditions.forEach((addition) => {
         const [from2, to2] = [addition.from, addition.to];
         const cursorNearby = cursorPos >= from2 - 0 && cursorPos <= to2 + 0;
         const additionIsInCurrentLine = from2 >= lineStart && to2 <= lineEnd;
-        if (!cursorNearby && (!excludeLine || !additionIsInCurrentLine)) {
+        if (fixIMEProblem) {
+          needImeFix = true;
+          if (additionIsInCurrentLine && cursorPos > to2) {
+            let gapString = view.state.sliceDoc(to2, cursorPos);
+            let strBeforeAdd = view.state.sliceDoc(lineStart, from2);
+            const regAddInLineStart = /(^\s*$)|(^\s*- +$)|(^\s*#{1,6} $)|(^\s*>+ *$)|(^\s*- +#{1,6} +$)|(^\s*> \[![\w-]+\][+-]? +$)/;
+            if (!regAddInLineStart.test(strBeforeAdd)) {
+              needImeFix = false;
+            } else {
+              const regStrMayIMEon = /^[a-zA-Z]+[a-zA-Z' ]*[a-zA-Z]$|^[a-zA-Z]$/;
+              if (!regStrMayIMEon.test(gapString) || /[' ]{2}/.test(gapString)) {
+                needImeFix = false;
+              }
+            }
+          } else {
+            needImeFix = false;
+          }
+        }
+        if (!cursorNearby && !needImeFix && !(excludeLine && additionIsInCurrentLine)) {
           builder.add(from2, to2, import_view.Decoration.replace({
             widget: addition.widget
           }));
@@ -1310,9 +1356,11 @@ var DEFAULT_SETTINGS = {
   tagToExcludeFile: "linker-exclude",
   tagToIncludeFile: "linker-include",
   excludeLinksToOwnNote: true,
+  fixIMEProblem: false,
   excludeLinksInCurrentLine: false,
   onlyLinkOnce: true,
-  excludeLinksToRealLinkedFiles: true
+  excludeLinksToRealLinkedFiles: true,
+  includeAliases: true
 };
 var LinkerPlugin = class extends import_obsidian5.Plugin {
   constructor() {
@@ -1321,6 +1369,9 @@ var LinkerPlugin = class extends import_obsidian5.Plugin {
   }
   async onload() {
     await this.loadSettings();
+    this.updateManager.registerCallback(() => {
+      LinkerCache.getInstance(this.app, this.settings).clearCache();
+    });
     this.registerMarkdownPostProcessor((element, context) => {
       context.addChild(new GlossaryLinker(this.app, this.settings, context, element));
     });
@@ -1374,29 +1425,44 @@ var LinkerPlugin = class extends import_obsidian5.Plugin {
           return;
         }
         const isVirtualLink = targetElement.classList.contains("virtual-link-a");
-        if (isVirtualLink) {
+        const from = parseInt(targetElement.getAttribute("from") || "-1");
+        const to = parseInt(targetElement.getAttribute("to") || "-1");
+        if (from === -1 || to === -1) {
+          menu.addItem((item) => {
+            item.setTitle("[Virtual Linker] Converting to real link is not possible in read mode, switch to edit or source mode to convert.").setIcon("link");
+          });
+        } else if (isVirtualLink) {
           menu.addItem((item) => {
             item.setTitle("[Virtual Linker] Convert to real link").setIcon("link").onClick(() => {
-              var _a;
-              const from = parseInt(targetElement.getAttribute("from") || "-1");
-              const to = parseInt(targetElement.getAttribute("to") || "-1");
+              var _a, _b;
+              const from2 = parseInt(targetElement.getAttribute("from") || "-1");
+              const to2 = parseInt(targetElement.getAttribute("to") || "-1");
+              if (from2 === -1 || to2 === -1) {
+                console.error("No from or to position");
+                return;
+              }
               const text = targetElement.getAttribute("origin-text") || "";
               const target = file;
               const activeFile = app.workspace.getActiveFile();
-              const activeFilePath = activeFile == null ? void 0 : activeFile.path;
-              let replacement = "";
-              if (settings.useMarkdownLinks) {
-                replacement = `[${text}](${target.path})`;
-              } else {
-                replacement = `[[${target.path}|${text}]]`;
-              }
+              const activeFilePath = (_a = activeFile == null ? void 0 : activeFile.path) != null ? _a : "";
               if (!activeFile) {
                 console.error("No active file");
                 return;
               }
-              const editor = (_a = app.workspace.getActiveViewOfType(import_obsidian5.MarkdownView)) == null ? void 0 : _a.editor;
-              const fromEditorPos = editor == null ? void 0 : editor.offsetToPos(from);
-              const toEditorPos = editor == null ? void 0 : editor.offsetToPos(to);
+              const replacementPath = app.metadataCache.fileToLinktext(target, activeFilePath);
+              let replacement = "";
+              if (replacementPath === text) {
+                replacement = `[[${replacementPath}]]`;
+              } else {
+                if (settings.useMarkdownLinks) {
+                  replacement = `[${text}](${replacementPath})`;
+                } else {
+                  replacement = `[[${replacementPath}|${text}]]`;
+                }
+              }
+              const editor = (_b = app.workspace.getActiveViewOfType(import_obsidian5.MarkdownView)) == null ? void 0 : _b.editor;
+              const fromEditorPos = editor == null ? void 0 : editor.offsetToPos(from2);
+              const toEditorPos = editor == null ? void 0 : editor.offsetToPos(to2);
               if (!fromEditorPos || !toEditorPos) {
                 console.warn("No editor positions");
                 return;
@@ -1539,9 +1605,12 @@ var LinkerSettingTab = class extends import_obsidian5.PluginSettingTab {
   display() {
     const { containerEl } = this;
     containerEl.empty();
-    new import_obsidian5.Setting(containerEl).setName("Matching behavior").setHeading();
     new import_obsidian5.Setting(containerEl).setName("Activate Virtual Linker").addToggle((toggle) => toggle.setValue(this.plugin.settings.linkerActivated).onChange(async (value) => {
       await this.plugin.updateSettings({ linkerActivated: value });
+    }));
+    new import_obsidian5.Setting(containerEl).setName("Matching behavior").setHeading();
+    new import_obsidian5.Setting(containerEl).setName("Include aliases").setDesc("If activated, the virtual linker will also include aliases for the files.").addToggle((toggle) => toggle.setValue(this.plugin.settings.includeAliases).onChange(async (value) => {
+      await this.plugin.updateSettings({ includeAliases: value });
     }));
     new import_obsidian5.Setting(containerEl).setName("Only link once").setDesc("If activated, there will not be several identical virtual links in the same note (Wikipedia style).").addToggle((toggle) => toggle.setValue(this.plugin.settings.onlyLinkOnce).onChange(async (value) => {
       await this.plugin.updateSettings({ onlyLinkOnce: value });
@@ -1574,7 +1643,10 @@ var LinkerSettingTab = class extends import_obsidian5.PluginSettingTab {
         await this.plugin.updateSettings({ suppressSuffixForSubWords: value });
       }));
     }
-    new import_obsidian5.Setting(containerEl).setName("Avoid linking in current line").setDesc("If activated, there will be no links in the current line. This is the recommended setting if you are using IME (input method editor) for typing, e.g. for chinese characters, because instant linking might interfere with IME.").addToggle((toggle) => toggle.setValue(this.plugin.settings.excludeLinksInCurrentLine).onChange(async (value) => {
+    new import_obsidian5.Setting(containerEl).setName("Fix IME problem").setDesc("If activated, there will be no links in the current line start which is followed immediately by the Input Method Editor (IME). This is the recommended setting if you are using IME (input method editor) for typing, e.g. for chinese characters, because instant linking might interfere with IME.").addToggle((toggle) => toggle.setValue(this.plugin.settings.fixIMEProblem).onChange(async (value) => {
+      await this.plugin.updateSettings({ fixIMEProblem: value });
+    }));
+    new import_obsidian5.Setting(containerEl).setName("Avoid linking in current line").setDesc("If activated, there will be no links in the current line.").addToggle((toggle) => toggle.setValue(this.plugin.settings.excludeLinksInCurrentLine).onChange(async (value) => {
       await this.plugin.updateSettings({ excludeLinksInCurrentLine: value });
     }));
     new import_obsidian5.Setting(containerEl).setName("Matched files").setHeading();

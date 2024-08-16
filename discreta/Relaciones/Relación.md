@@ -59,5 +59,5 @@ En una relación, se pueden presentar las siguientes propiedades independientes,
 * Simétrica $\forall x,~y \in A: ~ xRy \iff yRx$
 * Antisimétrica $\forall x,~y \in A: ~ (xRy,~yRx) \implies x = y$
 * Asimétrica $\forall x,~y \in A: ~ xRy \implies yR'x$
-* [[Transitividad|Transitiva]] $\forall x,~y \in A: ~ (xRy,~yRz) \implies xRz$
+* [[Transitividad en relaciones de orden|Transitiva]] $\forall x,~y \in A: ~ (xRy,~yRz) \implies xRz$
 * Anti transitiva $\forall x,~y \in A: ~ (xRy,~yRz) \implies xR'z$

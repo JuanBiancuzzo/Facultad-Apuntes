@@ -4,6 +4,10 @@ tags:
   - discreta/Álgebra-de-conjuntos
   - nota/facultad
   - discreta/Álgebra-proposicional
+aliases:
+  - Recíproca
+  - Contrarrecíproca
+  - Contraria
 ---
 ### Definición
 ---

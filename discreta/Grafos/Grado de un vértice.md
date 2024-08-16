@@ -9,4 +9,6 @@ aliases:
 ---
 ### Definición
 ---
-El grado de un vértice $d(v)$, es la cantidad de aristas que inciden sobre ese vértice. La [[Sucesión|sucesión]] de grados $d(G)$ es un vector no decreciente con el grado de cada uno de los vértices
+Sea $G$ un [[Grafo|grafo]], el grado de un vértice $d(v)$, es la cantidad de aristas que inciden sobre ese vértice. La [[Sucesión|sucesión]] de grados $d(G)$ es un vector no decreciente con el grado de cada uno de los vértices
+
+Para un [[Grafo orientado|grafo orientado]], tendremos el grado entrante $d^+(v)$ y el grado saliente $d^-(v)$. Esto es, el número de aristas que salen o entran a un vértice. De igual forma, definimos las sucesiones $d^+(G)$, $d^-(G)$. Estas, al igual que antes, se definen en orden no creciente

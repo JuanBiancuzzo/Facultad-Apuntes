@@ -4,6 +4,7 @@ tags:
   - algebra-2/Transformaciones-lineales
   - nota/facultad
   - discreta/Álgebra-de-Boole
+  - discreta/Grafos
 referencias:
   - "192"
 ---
@@ -38,7 +39,15 @@ Una [[algebra 2/Transformaciones lineales/Transformación lineal.md|transformaci
 
 Viendo [[Matriz de una transformación lineal|matriz de una TL]], se puede definir $T$ isomorfismo si y solo si, $dim(\mathbb{V}) = dim(\mathbb{W})$ y $[T]_{B_1}^{B_2}$ es inversible
 
+#### Grafos
+---
+Dos [[Grafo|grafos]] se consideran iguales si coinciden los tres elementos de la terna que los definen. En cambio, dos [[Grafo simple|grafos simples]] son isomorfos si preservan todos sus [[Invariante de un grafo|invariantes]], pero la [[Demostración de equivalencia#Usando proposiciones|recíproca]] es falsa
 
+Dado dos grafos simples $G$ y $H$, se considera que son isomorfos con $G \cong H \iff \exists\theta: ~~ V(G) \to V(H) (H)$ [[Función biyectiva|biyectiva]] tal que $uv \in E(G) \iff \theta(u)\theta(v) \in E(H)$. Es decir, si preserva las adyacencias
+
+Además, $G \cong H$ con el isomorfismo definido por $\theta: ~~ V(G) \to V(H)$ si y solo si la correspondiente [[Matriz|matriz]] de permutación $P\in\Set{0,~1}^{n \times n}$ satisface $A_G = P^{-1}A_H P$ donde $A_G$ es la [[Matriz de adyacencia|matriz de adyacencia]] de $G$, y $A_H$ la de $H$
+
+Para calcular $P$, permutaremos las filas de la matriz identidad $I_n$ como indica la permutación $\theta$
 
 
 ### Referencias

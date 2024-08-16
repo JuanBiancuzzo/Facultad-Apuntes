@@ -13,7 +13,7 @@ await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
 ```
 ### Documentos
 ---
-Se tiene varios documentos utilizados a lo largo de la cursada, estos siendo
+Se tiene varios documentos utilizados a lo largo de la ecursada, estos siendo
 ```dataviewjs
 let mostrar = dv.pages(`#legal/documento`)
 	.sort(documento => -dv.pages(`"${documento.file.folder}"`).length)

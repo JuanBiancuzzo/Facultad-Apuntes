@@ -65,7 +65,9 @@
       "Open quick switcher",
       "Clear Unused Images",
       "Open Mermaid Toolbar",
-      "Open homepage"
+      "Open homepage",
+      "Templater",
+      "Omnisearch"
     ]
   },
   "spacing": "8",

@@ -68,4 +68,4 @@ Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo|grafo]], definido como $p$ [
 \end{document}
 ```
 
-Los libros son [[Grafo bipartito|bipartitos]], ya que las [[Grafo estrella|estrellas]] lo son, y los vértices de cada estrella son solo adyacentes a sus análogos en la segunda estrella. De esta forma, se pueden colorear inversamente las estrellas, formando un grafo bipartito
+Los libros son [[Grafo k-partito|bipartitos]], ya que las [[Grafo estrella|estrellas]] lo son, y los vértices de cada estrella son solo adyacentes a sus análogos en la segunda estrella. De esta forma, se pueden colorear inversamente las estrellas, formando un grafo bipartito

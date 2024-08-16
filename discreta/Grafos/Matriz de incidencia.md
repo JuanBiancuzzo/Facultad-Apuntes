@@ -11,3 +11,5 @@ Sea $G = \big( V(G),~E(G),~\Psi_G \big)$  un [[Grafo|grafo]], se define $M_G$ a 
 Se puede contar la cantidad de [[Camino|caminos]] de longitud $q$ entre $v_i$ y $v_j$ con $A_G^q(i,~ j)$
 
 También se puede relacionar con la [[Matriz de adyacencia|matriz de adyacencia]] con $$ M_G ~ M_G^T = A_G + D $$ donde $D$ es una matriz diagonal de los [[Grado de un vértice|grados de los vértices del grafo]]
+
+Para un [[Grafo orientado|grafo orientado]], definiremos con un $1$ si la arista parte del vértice, y con un $-1$ si la arista llega al vértice

@@ -3,6 +3,8 @@ capitulo: 2
 tags:
   - algo-1/Lenguaje-C
   - resumen
+aliases:
+  - Lenguaje C
 ---
 ### Índice 
 ---

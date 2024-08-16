@@ -56,4 +56,4 @@ Denotado como $S_n$, y se puede visualizar de la siguiente forma
 \end{document}
 ```
 
-Notemos que es un [[Grafo bipartito|grafo bipartito]]
+Notemos que es un [[Grafo k-partito|grafo bipartito]]

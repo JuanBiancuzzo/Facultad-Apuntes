@@ -4,6 +4,7 @@ tags:
   - proba/Representación-de-variables-aleatorias
   - nota/facultad
   - discreta/Relaciones
+  - discreta/Grafos
 ---
 ### Definición
 ---

@@ -2,8 +2,8 @@
 tipo: Capítulo
 nombre: El Consejo Económico y Social
 num: 10
-previo: "[[legal/Articulos/Carta de las Naciones Unidas/Carta de las Naciones Unidas.md|Carta de las Naciones Unidas]]"
-tags: 
+previo: "[[Capítulo 10, El Consejo Económico y Social]]"
+tags:
   - legal/Capítulo
 ---
 ```dataviewjs

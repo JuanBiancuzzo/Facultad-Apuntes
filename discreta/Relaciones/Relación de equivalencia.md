@@ -9,7 +9,7 @@ tags:
 Una relación de equivalencia es una [[Relación|relación]] que cumple simultáneamente las propiedades
 * Reflexiva
 * Simétrica
-* [[Transitividad|Transitiva]]
+* [[Transitividad en relaciones de orden|Transitiva]]
 
 
 ```mermaid

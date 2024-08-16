@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Sean $\mathbb{V}$ y $\mathbb{W}$ dos $\mathbb{K}$-[[Espacio vectorial]], la función $T:\mathbb{V}\to\mathbb{W}$ se llama [[Transformación|transformación]] lineal
+Sean $\mathbb{V}$ y $\mathbb{W}$ dos $\mathbb{K}$-[[Espacio vectorial]], la [[analisis 2/Nomenclatura/Función.md|función]] $T:\mathbb{V}\to\mathbb{W}$ se llama [[Transformación|transformación]] lineal
 
 #### Condición necesaria para ser transformación lineal
 ---

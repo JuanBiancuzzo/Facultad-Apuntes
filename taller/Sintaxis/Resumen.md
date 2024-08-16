@@ -4,7 +4,7 @@ tags:
   - taller/Sintaxis
   - resumen
 aliases:
-  - Rust
+  - Lenguaje Rust
 ---
 ### Índice 
 ---
