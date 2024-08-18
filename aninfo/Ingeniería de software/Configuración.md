@@ -6,4 +6,4 @@ tags:
 ---
 ### Definición
 ---
-Un conjunto de elementos que forman parte del producto/[[Sistema]], combinados de acuerdo a procedimientos específicos
+Un [[Conjunto|conjunto]] de elementos que forman parte del producto/[[Sistema|sistema]], combinados de acuerdo a procedimientos específicos

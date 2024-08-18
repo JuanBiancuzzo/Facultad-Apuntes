@@ -41,7 +41,7 @@ Los campos clave de un [[Paquete|datagrama]] son
 	* Permiten distinguir los paquetes según el tipo de servicio que ofrecen, permitiendo a las redes detectar paquetes de tiempo real del resto
 * Identifier, flags, fragmentation offset
 	* Estos tres campos son utilizados en el conocido [[Fragmentación de Internet Protocol|fragmentación de IP]] 
-* Time-to-live
+* Time-to-live ^b40fdb
 	* Se usa para indicar cuándo tiempo podrá circular un datagrama en la red, este número es decrementado por cada [[Router|router]] que atraviesa el datagrama
 * Protocol
 	* Este campo es típicamente utilizado una vez el paquete llega a destino, para determinar que protocolo de [[Capa de transporte|capa de transporte]] específico se está utilizando

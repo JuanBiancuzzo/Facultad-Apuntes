@@ -15,7 +15,7 @@ Se designa $M = \left( \Sigma, Q, q_0, \Upsilon, F \right)$ el autómata finito 
 * $\Upsilon: Q \times \Sigma \to Q$ es la [[Función|función]] de transición
 * $F \subset Q$ es el conjunto de aceptación
 
-Podremos representar la función de transición a partir de una tabla, o a partir de un [[Grafo dirigido|grafo dirigido]]. El estado inicial suele indicarse con una flecha $\stackrel{\text{in}}{\to}$. Los estados que pertenecen al conjunto de aceptación se muestran en un doble círculo
+Podremos representar la función de transición a partir de una tabla, o a partir de un [[Grafo orientado|grafo dirigido]]. El estado inicial suele indicarse con una flecha $\stackrel{\text{in}}{\to}$. Los estados que pertenecen al conjunto de aceptación se muestran en un doble círculo
 
 ```tikz
 \usepackage{amssymb}

@@ -13,7 +13,7 @@ Este [[Algoritmo|algoritmo]] es iterativo (el proceso continúa hasta que no hay
 
 Curiosamente, el algoritmo es auto-terminante. No hay una señal para la finalización, simplemente lo hace. Este algoritmo es utilizado por muchos [[Protocolo|protocolo]] de ruteo en la práctica
 
-Este algoritmo se desarrolló alrededor de la [[Ecuación de Bellman-Ford|ecuación de Bellman-Ford]]. Sea $dx(y)$ el [[Camino|camino]] de menor costo entre $x$, $y$. Entonces $$ dx(y) = \min\Set{ c(x,~v) + dv(y) : ~~ \forall v } $$ siendo $c(x,~v)$ el costo de viaje desde el nodo $x$ a su adyacente $v$
+Este algoritmo se desarrolló alrededor de la [[Algoritmo de Bellman-Ford|ecuación de Bellman-Ford]]. Sea $dx(y)$ el [[Camino|camino]] de menor costo entre $x$, $y$. Entonces $$ dx(y) = \min\Set{ c(x,~v) + dv(y) : ~~ \forall v } $$ siendo $c(x,~v)$ el costo de viaje desde el nodo $x$ a su adyacente $v$
 
 #### Algoritmo
 ---

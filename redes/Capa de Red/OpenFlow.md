@@ -5,6 +5,7 @@ tags:
   - nota/facultad
 aliases:
   - Match-plus-action
+  - OperFlow Protocol
 ---
 ### Definición
 ---
@@ -115,7 +116,7 @@ Cada entrada en la tabla conocida como flow table incluye, un conjunto de valore
 
 Un conjunto de contadores que serán actualizados cuando el paquete coincide con la entrada. Un conjunto de acciones que deben tomarse cuando un paquete coincide con la entrada de la tabla
 
-#### Match
+##### Match
 ---
 La primera observación importante que las abstracciones de OpenFlow permite que el match se realice a partir de campos seleccionados a través de múltiples [[Protocolo|protocolos]], permitiendo así al [[Packet switches|packet switch]] funcionar tanto como un dispositivo de [[Capa de Red|capa de red]] como un dispositivo de [[Capa de Enlace|capa de enlace]]
 
@@ -123,7 +124,7 @@ Las entradas de la tabla también permiten comodines, permitiendo, por ejemplo, 
 
 Por último vamos que no todos los headers de IP pueden ser utilizados para el match. Algunos headers fueron ignorados para priorizar funcionalidad por sobre complejidad
 
-#### Action
+##### Action
 ---
 Cada entrada de la tabla puede tener cero o múltiples acciones. Si hay múltiples acciones, estás se realizan en el orden especificado. Algunas de las acciones más comunes son
 
@@ -133,3 +134,25 @@ Cada entrada de la tabla puede tener cero o múltiples acciones. Si hay múltipl
 	* Una entrada sin acciones indica que el paquete será ignorado
 * Modify-field
 	* Algunos valores de los headers del paquete pueden ser reescritos antes de ser enviados al/los puertos especificados
+
+#### Protocolo
+---
+Este protocolo opera entre un controlador [[Software-defined networking|SDN]] y un [[Software-defined networking Controller|SDN-controlled]] switch, a través de [[Transmission Control Protocol|TCP]] en el [[Socket|puerto]] por defecto 6653
+
+Entre los [[Paquete|mensajes]] más importantes enviados desde el controlador al switch están
+* Configuration
+    * Este mensaje permite al controlador consultar o establecer los parámetros de [[Configuración|configuración]] del switch
+* Modify-State
+    * Este mensaje es utilizado por el controlador para agregar, eliminar, o modificar entradas en la tabla de flujo del switch, y establecer propiedades en los puertos del mismo
+* Read-State
+    * Este mensaje es utilizado por el controlador para recolectar estadísticas y contadores de la tabla de flujo y los puertos
+* Send-Packet
+    * Este mensaje es utilizado por el controlador para enviar un paquete particular a un puerto específico del switch
+
+Entre los mensajes más importantes enviados desde el switch al controlador, están
+* Flow-removed
+    * Este mensaje informa al controlador que una entrada en la tabla de flujo fue eliminada, por ejemplo, por un [[Recovery time objective|timeout]] o por la recepción de un mensaje modify-state
+* Port-Status
+    * Este mensaje informa al controlador de un cambio en el estado de un puerto
+* Packet-In
+    * Este mensaje informa al controlador del arribo de un paquete sin correspondiente entrada en la tabla. También pueden ser enviados paquetes que tengan una entrada en la tabla, en consecuencia de una acción determinada

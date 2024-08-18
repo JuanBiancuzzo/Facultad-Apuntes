@@ -5,6 +5,7 @@ tags:
   - nota/facultad
 aliases:
   - Digrafo
+  - Grafo dirigido
 ---
 ### Definición
 ---
