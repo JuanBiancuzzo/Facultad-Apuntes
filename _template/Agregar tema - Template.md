@@ -108,7 +108,7 @@
 
 				let tagPrevio = resumen.tags.find(tag => tag != "resumen");
 
-				let nuevoTag = resumen.file.folder.replaceAll(" ", "-");
+				let nuevoTag = crearTag(resumen.file.folder);
 				if (resumen.parte !== nuevaParte) {
 					nuevoTag += `/${nuevaParte}`;
 				}
@@ -150,7 +150,7 @@
 			}
 		}
 
-		let tag = nuevaCarpeta.replaceAll(" ", "-");
+		let tag = crearTag(nuevaCarpeta);
 		if (multiples) tag += `/${parte}`;
 
 		tR += "---\n";
@@ -185,6 +185,10 @@
 
 		console.log(nombre, mensaje);
     }
+
+	function crearTag(folderPath) {
+		return folderPath.replaceAll(",", "").replaceAll(" ", "-");
+	}
 _%>
 ### Índice
 ---

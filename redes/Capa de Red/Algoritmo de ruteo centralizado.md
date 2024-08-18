@@ -17,3 +17,12 @@ Los algoritmos de ruteo pueden fallar, causando oscilaciones, cuando el costo de
 
 Otra solución es la de asegurar que no todos los routers ejecutarán el algoritmo al mismo tiempo. Curiosamente, los tiempos de sincronización de los routers pueden sincronizarse con el tiempo de forma automática. Debido a esto, se podría aleatorizar el tiempo en el que envía un link advertisement
 
+#### Análisis
+---
+Podemos analizar el algoritmos bajo tres categorías
+* Complejidad del [[Paquete|mensaje]]
+    * Se requiere que se envíen $O(N\cdot E)$ mensajes. Además, cuando cambian los costos del enlace de un nodo, deberá enviar los nuevos costos a todos los nodos
+* Velocidad de convergencia
+    * Vimos que la complejidad del algoritmo es de $O(N^2)$
+* Robustez
+    * El cómputo es separado en los distintos nodos, por lo que es un enfoque más robusto

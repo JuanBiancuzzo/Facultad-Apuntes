@@ -22,7 +22,7 @@ Un listado de materias y su estado actual
 | [Base de datos](bdd/Base%20de%20datos%20(TA044).md)                                                            | Falta ampliar                                                 |
 | [Circuitos microelectrónicos](circuitos/Circuitos%20microelectrónicos%20(TB068).md)                            | Falta últimos temas                                           |
 | [Dispositivos semiconductores](dispo/Dispositivos%20semiconductores%20(8603).md)                               | Terminado                                                     |
-| [Electroganetismo aplicado](electro/Electroganetismo%20aplicado%20(TB069).md)                                  | Voy a cursarla este cuatri                                    |
+| [Electromagnetismo aplicado](electro/Electromagnetismo%20aplicado%20(TB069).md)                                | Voy a cursarla este cuatri                                    |
 | [Estructura del computador](estructura/Estructura%20del%20computador%20(6670).md)                              | Falta escribir sobre el Murdocca                              |
 | [Física 1](fisica%201/Física%201%20(8201).md)                                                                  | Falta pasar el resumen                                        |
 | [Física 2](fisica%202/Física%202%20(6203).md)                                                                  | Falta pasar el resumen                                        |
