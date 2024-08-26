@@ -18,3 +18,7 @@ Debido a la velocidad necesaria, los input ports, output ports, y el switching f
 #### Packet Scheduling
 ---
 ![[Packet Scheduling#Definición]]
+
+#### Comparación con un link-layer switch
+---
+![[Link-layer switches#Comparación con un router]]
