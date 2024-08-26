@@ -14,8 +14,8 @@ $$\begin{align}
 
 ### Observaciones
 ---
-Donde vemos con la definción de la [[Función seno]], que cumplen
+Donde vemos con la definición del [[Función seno|seno]], que cumplen
 $$\begin{align} sen'(z) = cos(z) && cos'(z) = -sen(z) \end{align}$$
 
-Tambien notemos la relación que tiene con la [[Función coseno hiperbólico]] donde 
+Tambien notemos la relación que tiene con el [[Función coseno hiperbólico|coseno hiperbólico]] donde 
 $$ cos(-iz) = cosh(z) $$

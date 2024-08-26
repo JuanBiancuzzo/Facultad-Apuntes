@@ -6,4 +6,4 @@ tags:
 ---
 ### Definición
 ---
-Agente que puede oxidar a un combustible. Ejemplo: Oxígeno del aire. Otros: el polvo de magnesio puede arder en atmósferas de $CO_2$ y el calcio en atmósferas de Nitrógeno.
+[[Agente]] que puede oxidar a un [[Combustible|combustible]]. Ejemplo: Oxígeno del aire. Otros: el polvo de magnesio puede arder en atmósferas de $CO_2$ y el calcio en atmósferas de Nitrógeno

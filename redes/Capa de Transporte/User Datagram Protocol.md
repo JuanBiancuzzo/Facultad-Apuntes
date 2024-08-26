@@ -31,7 +31,7 @@ Los datos de la aplicación ocupan el dato field del segmento. El UDP header tie
  +---------------- ...
 ```
 
-Los primeros dos son las direcciones y puerto de origen, y destino. Luego, sigue el length field el cual tiene el largo explícito del segmento. Este es importante, ya que puede variar entre un segmento y otro. El último campo, [[Detección de errores|checksum]], es utilizado para verificar si hubo algún error durante el envío del segmento
+Los primeros dos son las direcciones y puerto de origen, y destino. Luego, sigue el length field el cual tiene el largo explícito del segmento. Este es importante, ya que puede variar entre un segmento y otro. El último campo, [[Checksumming method|checksum]], es utilizado para verificar si hubo algún error durante el envío del segmento
 
 #### Beneficios
 ---

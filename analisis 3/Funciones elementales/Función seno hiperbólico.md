@@ -14,7 +14,7 @@ $$\begin{align}
 
 ### Observaciones
 ---
-Donde vemos con la definción de la [[Función coseno hiperbólico]], que cumplen
+Donde vemos con la definición del [[Función coseno hiperbólico|coseno hiperbólico]], que cumplen
 $$\begin{align} senh'(z) = cosh(z) && cosh'(z) = senh(z) \end{align}$$
-También notemos la relación que tiene con la [[Función seno]] donde 
+También notemos la relación que tiene con el [[Función seno|seno]] donde 
 $$ senh(iz) = i \cdot senh(z) $$

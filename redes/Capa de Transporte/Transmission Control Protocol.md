@@ -43,7 +43,7 @@ El protocolo TCP tiene la siguiente estructura
  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 ```
 
-Como el [[User Datagram Protocol|protocolo UDP]], el header de TCP contiene los puertos de origen y destino, y un campo de [[Detección de errores|checksum]]. Además, contiene los siguientes campos
+Como el [[User Datagram Protocol|protocolo UDP]], el header de TCP contiene los puertos de origen y destino, y un campo de [[Checksumming method|checksum]]. Además, contiene los siguientes campos
 * Número de secuencia
 * Número de acknowledgment
 * Campo de receive window

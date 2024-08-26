@@ -6,10 +6,10 @@ tags:
 ---
 ### Definición
 ---
-Determina el contenido de reductores totales presentes en una muestra (orgánicos e inorgánicos). Se obtiene mediante en un ensayo normalizado:
+Determina el contenido de reductores totales presentes en una [[Muestra|muestra]] (orgánicos e inorgánicos). Se obtiene mediante en un ensayo normalizado:
 * Reactivo: dicromato de potasio
-* [[Temperatura]] de [[Ebullición]]
+* [[Temperatura|Temperatura]] de [[Ebullición|ebullición]]
 * Duración del ensayo: 2hs
 
 Relación entre la [[Demanda bioquímica de oxígeno|demanda bioquímica]] y la demanda química, esta dada por $$ \frac{DBO_{5,~20}}{DQO} $$
-Si esta supera el $0.6$ indica la presencia predominante de contaminacion orgánica de naturaleza biodegradable.
+Si esta supera el $0.6$ indica la presencia predominante de contaminación orgánica de naturaleza biodegradable.

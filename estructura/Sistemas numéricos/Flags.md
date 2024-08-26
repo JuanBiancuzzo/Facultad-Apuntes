@@ -24,4 +24,4 @@ Al ocurrir una operación como [[Suma de enteros|suma]] entre números, se aplic
 ![[Signo flag#Definición]]
 
 ##### Paridad
-![[Paridad#Definición]]
+![[Parity check#Definición]]

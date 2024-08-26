@@ -16,9 +16,9 @@ La cantidad de oxígeno disuelto medido en $O_2$ es un indicador importante de l
 ---
 * La absorción de oxígeno atmosférico
 * La fotosíntesis (llevada a cabo por algas y cianobacterias)
-* Por [[Déficit de oxígeno]], o bien del [[Grado de saturación]]
-* [[Temperatura]]
-* [[Presión]] atmosférica
+* Por [[Déficit de oxígeno|déficit de oxígeno]], o bien del [[Grado de saturación|grado de saturación]]
+* [[Temperatura|Temperatura]]
+* [[Presión|Presión]] atmosférica
 * Grado de turbulencia del agua y, como consecuencia, de la velocidad y profundidad de la misma
 
 ##### Principales salidas de oxígeno

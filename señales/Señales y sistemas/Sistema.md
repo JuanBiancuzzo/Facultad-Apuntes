@@ -3,6 +3,7 @@ dia: 2023-08-26
 tags:
   - señales/Señales-y-sistemas
   - nota/facultad
+  - embebidos/Diseño-desarrollo-y-depuración
 ---
 ### Definición
 ---

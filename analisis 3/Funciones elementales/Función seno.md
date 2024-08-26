@@ -14,7 +14,7 @@ $$\begin{align}
 
 #### Observaciones
 ---
-Donde vemos con la definición de la [[Función coseno]], que cumplen
+Donde vemos con la definición del [[Función coseno|coseno]], que cumplen
 $$\begin{align} sen'(z) = cos(z) && cos'(z) = -sen(z) \end{align}$$
-También notemos la relación que tiene con la [[Función seno hiperbólico]] donde 
+También notemos la relación que tiene con el [[Función seno hiperbólico|seno hiperbólico]] donde 
 $$ sen(iz) = i \cdot senh(z) $$

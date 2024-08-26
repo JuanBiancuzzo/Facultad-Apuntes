@@ -6,4 +6,4 @@ tags:
 ---
 ### Definición
 ---
-Material que cede electrones a un agente oxidante. Estado: sólido, líquido o gaseoso.
+Material que cede [[Electrón|electrones]] a un agente oxidante. Estado: sólido, líquido o gaseoso.

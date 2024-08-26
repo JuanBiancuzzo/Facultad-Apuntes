@@ -3,6 +3,8 @@ dia: 2024-02-29
 tags:
   - fisica-2/Termodinámica
   - nota/facultad
+aliases:
+  - Ley de Fourier
 ---
 ### Definición
 ---

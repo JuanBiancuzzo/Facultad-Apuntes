@@ -5,7 +5,10 @@ aliases:
 tags:
   - redes/Redes-de-computadoras
   - nota/facultad
+  - redes/Capa-de-Enlace
 ---
 ### Definición
 ---
-El tiempo se divide en frames de duración fija, y cada frame se divide en time-slots fijos
+Un [[Protocolo|protocolo]] TDM divide el tiempo en time [[Frame|frames]], que a su vez son divididos en  time slots, siendo $n$ el número de nodos conectados al canal. Cada uno de los time slots es asignado a uno de los nodos, por lo que solo puede transmitir [[Información|información]] en momentos seleccionados
+
+Este protocolo es totalmente justo, pero tienen la desventaja de limitar la tasa de transmisión cuando hay un solo nodo enviando datos

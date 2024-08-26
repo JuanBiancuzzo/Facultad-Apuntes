@@ -6,4 +6,4 @@ tags:
 ---
 ### Definición
 ---
-Es el caso donde al aplicar una operación, y el resultado no cae dentro del [[Rango de representación]]. 
+    Es el caso donde al aplicar una operación, y el resultado no cae dentro del [[Rango de representación|rango de representación]]

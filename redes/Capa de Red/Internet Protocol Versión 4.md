@@ -2,6 +2,8 @@
 dia: 2024-06-14
 aliases:
   - IPv4
+  - TTL
+  - Broadcast
 tags:
   - redes/Capa-de-Red
   - nota/facultad

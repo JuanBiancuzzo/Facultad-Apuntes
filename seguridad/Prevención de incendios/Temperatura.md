@@ -3,7 +3,8 @@ dia: 2023-03-28
 tags:
   - seguridad/Prevención-de-incendios
   - nota/facultad
+  - fisica-2/Termodinámica
 ---
 ### Definición
 ---
-Es la mínima temperatura a la que una sustancia sólida, líquida o gaseosa debe ser calentada a fin de iniciar una combustión que se sostenga por si misma.
+Es la medida de la concentración de [[Calor|calor]]

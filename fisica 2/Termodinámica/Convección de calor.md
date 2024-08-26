@@ -3,6 +3,8 @@ dia: 2023-04-11
 tags:
   - fisica-2/Termodinámica
   - nota/facultad
+aliases:
+  - Ley de Newton
 ---
 ### Definición
 ---

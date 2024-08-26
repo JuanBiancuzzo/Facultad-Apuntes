@@ -12,6 +12,6 @@ También se puede interpretar como al experimentar variaciones mínimas de su [[
 
 Este equilibro, se logra con el intercambio de [[Calor]] por medio de:
 * [[Conducción]]
-* [[Ley de Newton, Convección de calor]]
+* [[Convección de calor]]
 * [[Radiación]]
 * Ventilación pulmonar
