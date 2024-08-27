@@ -8,7 +8,7 @@ referencias:
 ---
 ### Definición
 ---
-En esta, el [[Bandwidth|bandwidth]] del [[Enlace|enlace]] es compartido en el tiempo, en la [[Función senoidal|frecuencia]] y en código, a múltiples estaciones simultáneamente
+En esta, el [[Bandwidth|bandwidth]] del [[Acceso a una red por cable|enlace]] es compartido en el tiempo, en la [[Función senoidal|frecuencia]] y en código, a múltiples estaciones simultáneamente
 
 Tenemos los [[Protocolo|protocolos]]
 * [[Time division multiplexing|Time division multiplexing (TDM)]]

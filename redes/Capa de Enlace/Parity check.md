@@ -13,7 +13,7 @@ aliases:
 ---
 El remitente incluye un bit adicional que indica que la cantidad de unos del [[Paquete|paquete]] completo es un par (o impar) (esto incluye el propio bit de paridad). Si ocurre una cantidad impar de errores, entonces este error es suficiente. Si este número es par, entonces no se detecta el error
 
-Si la [[Probabilidad|probabilidad]] de error del [[Enlace|enlace]] es pequeña, esta técnica será suficiente, ya que la probabilidad de dos errores es baja. Sin embargo, se encontró que cuando ocurre un error de un bit, suele ocurrir más de uno. En condiciones de ráfaga, la probabilidad de detectar errores con esta técnica será de $50\%$, para eso es mejor el [[Cyclic Redundancy Check|método de CRC]]
+Si la [[Probabilidad|probabilidad]] de error del [[Acceso a una red por cable|enlace]] es pequeña, esta técnica será suficiente, ya que la probabilidad de dos errores es baja. Sin embargo, se encontró que cuando ocurre un error de un bit, suele ocurrir más de uno. En condiciones de ráfaga, la probabilidad de detectar errores con esta técnica será de $50\%$, para eso es mejor el [[Cyclic Redundancy Check|método de CRC]]
 
 En la generalización bidimensional del esquema de paridad, los datos se separan en $i$ filas, y $j$ columnas. Se calcula un valor por cada columna y por cada fila. Los resultantes $i + j + 1$ bits de paridad serán utilizados para la detección de errores
 

@@ -4,9 +4,11 @@ aliases:
   - Cable de cobra de par trenzado
   - Cable coaxial
   - Fibra óptica
+  - Enlace
 tags:
   - redes/Redes-de-computadoras
   - nota/facultad
+  - redes/Capa-de-Enlace
 ---
 ### Definición
 ---
@@ -33,3 +35,5 @@ Al igual que el par trenzado, el cable coaxial consta de dos [[Conductor|conduct
 La fibra óptica es un medio flexible y de muy pequeño espesor que conduce pulsos de luz, representando cada pulso un bit. Un único cable de fibra óptica puede soportar velocidades de bit tremendamente altas, de hasta decenas o incluso centenares de gigabits por segundo
 
 Es inmune a las interferencias [[Electromagnética|electromagnéticas]], presenta una atenuación de la [[Señal|señal]] muy baja para distancias de hasta $100$ kilómetros y es muy difícil que alguien pueda llevar a cabo un "pinchazo" en una de estas líneas
+
+
