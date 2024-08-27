@@ -65,6 +65,6 @@ tags:
 \end{document}
 ```
 
-Esto quiere decir que:
-- El primer valor (es siempre entero) corresponde a la cantidad de dígitos que van del 0 al 9 en el display del [[Multímetro]].
-- El segundo valor (la fracción) corresponde al primer digito que se muestra en el display. El denominador es la cantidad de valores que tendrá (contando desde el 0) y el numerador es el máximo valor que podrá mostrar. Entonces, se entiende que estos números serán siempre consecutivos.
+Esto quiere decir que
+- El primer valor (es siempre entero) corresponde a la cantidad de dígitos que van del 0 al 9 en el display del [[Multímetro|multímetro]]
+- El segundo valor (la fracción) corresponde al primer digito que se muestra en el display. El denominador es la cantidad de valores que tendrá (contando desde el 0) y el numerador es el máximo valor que podrá mostrar. Entonces, se entiende que estos números serán siempre consecutivos
