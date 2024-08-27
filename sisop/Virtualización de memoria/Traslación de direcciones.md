@@ -60,9 +60,9 @@ Gestión de caché: El sistema operativo puede organizar cómo se posicionan los
 ---
 El sistema operativo puede utilizar la traducción de memoria para evitar que un programa con errores sobrescriba su propia región de código; al detectar errores de puntero más temprano, se facilita su depuración. Los depuradores también utilizan la traducción de direcciones para instalar puntos de interrupción de datos, deteniendo un programa cuando hace referencia a una ubicación de memoria específica. 
 
-##### Efficient [[Puerto I/O|I/O]]
+##### Efficient I/O
 ---
-Los sistemas operativos de servidor a menudo están limitados por la velocidad a la que pueden transferir datos hacia y desde el disco y la red. La traducción de direcciones permite transferir datos de manera segura directamente entre aplicaciones en modo usuario y dispositivos de E/S.
+Los sistemas operativos de servidor a menudo están limitados por la velocidad a la que pueden transferir datos hacia y desde el disco y la red. La traducción de direcciones permite transferir datos de manera segura directamente entre aplicaciones en modo usuario y [[Puerto Input-Output|dispositivos de E/S]].
 
 ##### [[Memoria|Memory]] mapped files
 ---

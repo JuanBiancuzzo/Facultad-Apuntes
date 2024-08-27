@@ -14,11 +14,11 @@ Un listado de materias y su estado actual
     const materias = dv.pages("#materia")
         .sort(materia => materia.file.name);
 
-    let tabla = dv.markdownTable(["Materia", "Estado"], materias.map(materia => {
+    let tabla = dv.markdownTable(["Materia", "Código", "Estado"], materias.map(materia => {
         let nombre = materia.file.name.replace(`(${materia.codigo})`, "").trim();
         let path = `${materia.file.path}`.replaceAll(" ", "%20");
         
-        return [ `[${nombre}](${path})`, materia.estado ];
+        return [ `[${nombre}](${path})`, materia.codigo, materia.estado ];
     }));
 
     tR += `${tabla}\n`;

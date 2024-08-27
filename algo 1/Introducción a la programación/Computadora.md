@@ -3,10 +3,11 @@ dia: 2024-04-03
 tags:
   - algo-1/Introducción-a-la-programación
   - nota/facultad
+  - embebidos/Diseño-desarrollo-y-depuración
 ---
 ### Definición
 ---
-Es una máquina electrónica que, mediante determinados [[Programa|programas]], permite almacenar y tratar [[Información|información]], y resolver problemas de diversa índole
+Una computadora es un dispositivo que puede aceptar instrucciones humanas, las procesa y responde a ellas; o una computadora es un dispositivo informático que se utiliza para procesar datos bajo el control de un [[Programa|programa]] de computadora
 
 #### Partes fundamentales
 ---
@@ -17,4 +18,50 @@ Es una máquina electrónica que, mediante determinados [[Programa|programas]], 
 * Los periféricos de entrada y salida de datos
 	* Transfieren datos entre la computadora y el entorno externo
 * Las [[Bus|inter-conexiones o buses]]
-	* Es el mecanismos que proporcionan la comunicación entre la CPU, la memora principal y la Entrada/Salida
+	* Es el mecanismos que proporcionan la comunicación entre la CPU, la memora principal y la [[Puerto Input-Output|Entrada/Salida]]
+
+```tikz
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usepackage{ifthen}
+
+\begin{document} 
+\begin{tikzpicture}[scale=1.1, transform shape, thick]
+    \draw (-1, -0.5) rectangle ++(2, 1) node[midway] {ALU};
+    \draw (-1, 2) rectangle ++(2, 1) 
+        node[midway, align=center] {Control\\Unit};
+    \draw (-1, -3) rectangle ++(2, 1) 
+        node[midway, align=center] {Memory\\Unit};
+    \draw (-1.15, -3.15) rectangle (1.15, 3.15);
+    
+    \draw (-4.5, -0.5) rectangle ++(2, 1) node[midway] {Input};
+    \draw (2.5, -0.5) rectangle ++(2, 1) node[midway] {Output};
+    
+    \foreach \cx in {-1.8, 1.8} {
+        \coordinate (center) at (\cx, 0);
+        \fill ($ (center) + (-0.5, 0.075) $) 
+            -- ++(0.8, 0)
+            -- ++(0, 0.075)
+            -- ++(0.2, -0.15)
+            -- ++(-0.2, -0.15)
+            -- ++(0, 0.075)
+            -- ++(-0.8, 0);
+    }
+    
+    \foreach \cy in {-1.25, 1.25} {
+        \coordinate (center) at (0, \cy);
+        \foreach \signo in {-1, 1} {
+            \fill ($ (center) + (-0.075, 0) $)
+                -- ++(0, {\signo * 0.2})
+                -- ++(-0.075, 0)
+                -- ++(0.15, {\signo * 0.2})
+                -- ++(0.15, {\signo * -0.2})
+                -- ++(-0.075, 0)
+                -- ++(0, {\signo * -0.2});
+        }
+    }
+    
+\end{tikzpicture}
+\end{document}
+```

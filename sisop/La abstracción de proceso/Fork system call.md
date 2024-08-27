@@ -20,7 +20,7 @@ pid_t fork(void);
 1. Crea y asigna una nueva entrada en la Process table para el nuevo [[Proceso|proceso]]
 2. Asigna un número de [[Getpid system call|ID]] único al proceso hijo
 3. Crea una copia lógica del contexto del proceso padre, algunas de esas partes pueden ser compartidas como la sección [[Contexto del nivel del usuario|text]]
-4. Realiza ciertas operaciones de [[Puerto I/O|I/O]] 
+4. Realiza ciertas operaciones de [[Puerto Input-Output|I/O]] 
 5. Devuelve el número de ID del hijo al  proceso padre, y un $0$ al proceso hijo
 
 #### Características

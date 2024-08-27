@@ -7,9 +7,9 @@ tags:
 ---
 ### Definición
 ---
-Conjunto de reglas o principios sobre una materia racionalmente enlazados entre sí.
+Conjunto de reglas o principios sobre una materia racionalmente enlazados entre sí ^c520d7
 
-También se lo puede entender como un objeto que acepta [[Señal|señales]], las [[Transformación|transforma]] de acuerdo a una determinada ley y proporciona a su salida dicha señales transformada.
+También se lo puede entender como un objeto que acepta [[Señal|señales]], las [[Transformación|transforma]] de acuerdo a una determinada ley y proporciona a su salida dicha señales transformada
 
 La forma de [[Modelar|modelizar]] un sistema de forma universal, de forma matemática e independiente de su naturaleza física, es con un [[Operador|operador]] que pueda operar entre dos [[Espacio vectorial|espacios]] de [[Señal|señales]]
 
