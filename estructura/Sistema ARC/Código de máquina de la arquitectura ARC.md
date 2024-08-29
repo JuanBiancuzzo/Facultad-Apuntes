@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Las [[Lenguaje assembly|instrucciones]] son traducidas en código de máquina. Hay $5$ formatos de instrucción
+Las [[Set instrucciones ARC#Sintaxis|instrucciones]] son traducidas en código de máquina. Hay $5$ formatos de instrucción
 
 ```tikz
 \usepackage{amssymb}
@@ -24,7 +24,7 @@ Las [[Lenguaje assembly|instrucciones]] son traducidas en código de máquina. H
     }
     
     \foreach \idu/\idd/\pos/\cantidad [parse=true] in 
-        {0/0/0/2, 0/1/-2/1, 1/0/-4.5/2, 1/1/-7/2} 
+        {0/0/0/2, 0/1/-2/1, 1/0/-5/2, 1/1/-7.5/2} 
     {
         \coordinate (centro\idu\idd) 
             at (0, {\pos + \cantidad * \alto + \diffVertical * (\alto - 1)});
@@ -57,31 +57,66 @@ Las [[Lenguaje assembly|instrucciones]] son traducidas en código de máquina. H
                     node[midway, scale=0.9] {\idd};
         }
     }
-
-    \def\array001{{5, 3, 22}}
-    \def\array002{{1, 4, 3, 22}}
-    \def\array011{{30}}
-    \def\array101{{5, 6, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5}}
-    \def\array102{{5, 6, 5, 1, 13}}
-    \def\array111{{5, 6, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5}}
-    \def\array112{{5, 6, 5, 1, 13}}
     
-    \foreach \nombre/\idd in {array001/001, array002/002, array011/011, array101/101, array102/102, array111/111, array112/112} {
+    \foreach \idd in {101, 111} {
+        \coordinate (temp) at ($ (esquina\idd) + ({19 * \ancho}, 0) $);
+        \fill[white] ($ (temp) + (\sep, \sep) $) rectangle 
+            ++({8 * \ancho - 2 * \sep}, {\alto - 2 * \sep});
+    }
+    
+    \foreach \idd/\array in {
+        001/{5, 3, 22}, 
+        002/{1, 4, 3, 22}, 
+        011/{30}, 
+        101/{5, 6, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5}, 
+        102/{5, 6, 5, 1, 13}, 
+        111/{5, 6, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5}, 
+        112/{5, 6, 5, 1, 13}} {
         \path ($ (esquina\idd) + ({2 * \ancho}, 0) $) node (temp) {};
-        \foreach \largo in \array001 {
-            \fill[white] (temp) rectangle 
-                ++({\largo * \ancho - 2 * \sep}, {\alto - 2 * \sep});
-            \path ($ (temp) + (\largo * \ancho) $) node (temp) {};
+        \foreach \largo [count=\i] in \array {
+            \fill[white] ($ (temp) + (\sep, \sep) $) rectangle 
+                ++({\largo * \ancho - 2 * \sep}, {\alto - 2 * \sep})
+                    node[midway] (centro\idd-\i) {};
+            \path ($ (temp) + ({\largo * \ancho}, 0) $) node (temp) {};
         }
     }
+    
+    \path (centro001-1) node[scale=0.9] {rd};
+    \path (centro001-2) node[scale=0.9] {op$2$};
+    \path (centro001-3) node[scale=0.9] {imm$22$};
+    
+    \path (centro002-1) node[scale=0.9] {$0$};
+    \path (centro002-2) node[scale=0.9] {cond};
+    \path (centro002-3) node[scale=0.9] {op$2$};
+    \path (centro002-4) node[scale=0.9] {disp$22$};
 
     \path (centro00) 
         -- ++(0, -\alto) node[midway, left=0.2cm] {SETHI Fromat}
         -- ++(0, -\diffVertical)
         -- ++(0, -\alto) node[midway, left=0.2cm] {Branch Fromat};
     
+    \path (centro011-1) node[scale=0.9] {disp$30$};
+    
     \path (centro01) 
         -- ++(0, -\alto) node[midway, left=0.2cm] {CALL Fromat};
+    
+    \foreach \ubi in {101, 102, 111, 112} {
+        \path (centro\ubi-1) node[scale=0.9] {rd};
+        \path (centro\ubi-2) node[scale=0.9] {op$3$};
+        \path (centro\ubi-3) node[scale=0.9] {rs$1$};
+    }
+    
+    \foreach \ubi in {101, 111} {
+        \foreach \i in {4, ..., 12} {
+            \path (centro\ubi-\i) node[scale=0.9] {$0$};
+        }
+        \path (centro\ubi-13) node[scale=0.9] {rs$2$};
+    }
+
+    \foreach \ubi in {102, 112} {
+        \path (centro\ubi-4) node[scale=0.9] {$1$};
+        \path (centro\ubi-5) node[scale=0.9] {simm$13$};
+    }    
     
     \path (centro10) -- ++(0, {-2 * \alto - \diffVertical})
             node[midway, align=center, left=0.2cm]
@@ -90,6 +125,18 @@ Las [[Lenguaje assembly|instrucciones]] son traducidas en código de máquina. H
     \path (centro11) -- ++(0, {-2 * \alto - \diffVertical})
             node[midway, align=center, left=0.2cm]
                 {Memory\\Fromat};
+    
+    \draw ($ (centro00) + (0, 0.4) $) 
+        -- ++(0, 0.2)
+        -- ++({2 * \ancho}, 0)
+            node[midway, above=2pt] {op}
+        -- ++(0, -0.2);
+    
+    \draw ($ (centro10) + ({18 * \ancho}, 0.4) $) 
+        -- ++(0, 0.2)
+        -- ++(\ancho, 0)
+            node[midway, above=2pt] {i}
+        -- ++(0, -0.2);
     
 \end{tikzpicture}
 \end{document}
@@ -135,3 +182,18 @@ $$ \begin{matrix}
     1000 & \text{ba} \\\hline 
 \end{array} 
 \end{matrix}$$
+
+#### Modos de direccionamiento
+---
+- Inmediato
+    - La constante está incluida en la instrucción
+- Por [[Registro]]
+    - El registro tiene el dato
+- Directo o Absoluto
+    - La [[Dirección de memoria|dirección de memoria]] está incluida en la instrucción
+- Indirecta
+    - Contiene la dirección de memoria donde está el puntero al dato (poco usado, lento)
+- Indirecta por Registro
+    - El registro tiene el puntero al dato
+- Indexado por Registro
+    - Un registro da la dirección inicial, el otro un incremento.

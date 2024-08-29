@@ -12,7 +12,7 @@ aliases:
 ---
 ### Definición
 ---
-El Program Status Register (PSR) guarda los flags de [[Unidad Aritmético Lógica (ALU)|ALU]], las instrucciones son las siguientes
+El Program Status Register (PSR) guarda los flags de [[Unidad Aritmético Lógica|ALU]], las instrucciones son las siguientes
 
 | Mnemónico | Función                                                |
 | --------- | ------------------------------------------------------ |

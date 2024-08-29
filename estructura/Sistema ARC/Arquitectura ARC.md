@@ -108,4 +108,4 @@ El mapa de memoria está especificado por el siguiente gráfico
 \end{document}
 ```
 
-La mitad de la memoria se utiliza para los [[Puerto Input-Output|dispositivos de entrada y salida]], la otra mitad se utiliza para el [[Sistema operativo|sistema operativo]] ($2048$ bytes) y para la [[Memoria RAM|memoria RAM]]
+La mitad de la memoria se utiliza para los [[Puerto Input-Output|dispositivos de entrada y salida]], la otra mitad se utiliza para el [[Sistema operativo|sistema operativo]] ($2048$ bytes) y para la [[Random Access Memory|memoria RAM]]

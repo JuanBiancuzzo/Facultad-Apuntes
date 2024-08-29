@@ -23,7 +23,7 @@ Un listado de materias y su estado actual
 | [Circuitos microelectrónicos](circuitos/Circuitos%20microelectrónicos%20(TB068).md)                            | TB068  | Falta últimos temas                                           |
 | [Dispositivos semiconductores](dispo/Dispositivos%20semiconductores%20(8603).md)                               | 8603   | Terminado                                                     |
 | [Electromagnetismo aplicado](electro/Electromagnetismo%20aplicado%20(TB069).md)                                | TB069  | Voy a cursarla este cuatri                                    |
-| [Estructura del computador](estructura/Estructura%20del%20computador%20(6670).md)                              | 6670   | Falta escribir sobre el Murdocca                              |
+| [Estructura del computador](estructura/Estructura%20del%20computador%20(6670).md)                              | 6670   | Terminado                                                     |
 | [Física 1](fisica%201/Física%201%20(8201).md)                                                                  | 8201   | Falta pasar el resumen                                        |
 | [Física 2](fisica%202/Física%202%20(6203).md)                                                                  | 6203   | Falta pasar el resumen                                        |
 | [Física 3](fisica%203/Física%203%20(8203).md)                                                                  | 8203   | Falta pasar el resumen                                        |

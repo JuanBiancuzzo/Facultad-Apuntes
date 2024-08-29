@@ -4,6 +4,7 @@ tags:
   - sisop/La-abstracción-de-proceso
   - nota/facultad
   - embebidos/Microcontroladores-de-32-bits
+  - estructura/Microarquitectura
 ---
 ### Definición
 ---

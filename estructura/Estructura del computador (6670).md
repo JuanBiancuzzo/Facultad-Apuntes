@@ -1,6 +1,6 @@
 ---
 cuatri: 23C1
-estado: Falta escribir sobre el Murdocca
+estado: Terminado
 plan: "1986"
 codigo: "6670"
 tags:

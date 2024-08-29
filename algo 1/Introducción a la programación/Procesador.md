@@ -15,7 +15,7 @@ Controla el funcionamiento de la [[Computadora|computadora]] y lleva a cabo sus 
 El procesador es un dispositivo electrónico que determina qué, cuándo y con cuáles datos una instrucción o acción debe ser ejecutada. Las partes de la unidad central de procesamiento son
 1. Unidad de control
 	* Controla el funcionamiento de la CPU y por lo tanto, de la computadora
-2. [[Unidad Aritmético Lógica (ALU)|Unidad Aritmético Lógica (ALU)]]
+2. [[Unidad Aritmético Lógica|Unidad Aritmético Lógica]]
 	* Lleva a cabo las funciones de procesamiento de datos del computador
 3. [[Registro|Registros]]
 	* Proporcionan almacenamiento interno a la CPU
