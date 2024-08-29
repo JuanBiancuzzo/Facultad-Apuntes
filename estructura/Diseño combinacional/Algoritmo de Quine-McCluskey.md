@@ -12,7 +12,7 @@ Este [[algo 1/Introducción a la programación/Algoritmo|algoritmo]] se aprovech
 
 ### Ejemplo
 ---
-Tenemos la función que depende de $a$, $b$, $c$ y $d$, y si los pensamos como números en [[Base numerica|base]] 2 las posibilidades, entonces esta función es $1$ cuando ese número es: $0$, $1$, $2$, $5$, $6$, $7$, $8$, $9$, $10$, $14$, donde el $7$ y el $9$ son redundantes. Entonces agrupamos esos números en binario por aquellos que tengan la misma cantidad de $1$.
+Tenemos la función que depende de $a$, $b$, $c$ y $d$, y si los pensamos como números en [[Base númerica|base]] 2 las posibilidades, entonces esta función es $1$ cuando ese número es: $0$, $1$, $2$, $5$, $6$, $7$, $8$, $9$, $10$, $14$, donde el $7$ y el $9$ son redundantes. Entonces agrupamos esos números en binario por aquellos que tengan la misma cantidad de $1$.
 
 | grupo | número | representación |
 | ----- | ------ | -------------- |

@@ -3,6 +3,7 @@ dia: 2023-08-26
 tags:
   - sisop/La-abstracción-de-proceso
   - nota/facultad
+  - aninfo/Diseño-de-software
 ---
 ### Algunas definiciones
 ---

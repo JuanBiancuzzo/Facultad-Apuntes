@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Hay 4 casos para esta conversión entre [[Base numerica|base]]:
+Hay 4 casos para esta conversión entre [[Base númerica|base]]:
 
 #### Conversión de cualquier base a base $10$
 Para poder convertir cualquier número en cualquier base, a base $10$, se utiliza lo siguiente:
