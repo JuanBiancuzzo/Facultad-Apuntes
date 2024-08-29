@@ -3,6 +3,7 @@ dia: 2024-04-16
 tags:
   - señales/Muestreo-e-Interpolación
   - nota/facultad
+  - embebidos/Diseño-desarrollo-y-depuración
 ---
 ### Definición
 ---

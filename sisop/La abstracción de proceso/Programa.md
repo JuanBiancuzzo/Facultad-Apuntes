@@ -4,6 +4,7 @@ tags:
   - sisop/La-abstracción-de-proceso
   - nota/facultad
   - algo-1/Introducción-a-la-programación
+  - embebidos/Diseño-desarrollo-y-depuración
 ---
 ### Definición
 ---

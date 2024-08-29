@@ -1,8 +1,9 @@
 ---
 dia: 2024-08-29
-tags: 
- - estructura/Compiladores-y-ensambladores
- - nota/facultad
+tags:
+  - estructura/Compiladores-y-ensambladores
+  - nota/facultad
+  - embebidos/Diseño-desarrollo-y-depuración
 ---
 ### Definición
 ---

@@ -2,27 +2,40 @@
 dia: 2023-08-27
 aliases:
   - UML
+  - Diagrama de clases UML#Diagrama de clases
+  - Diagrama de casos de uso UML#Diagrama de casos de uso
+  - Diagrama de secuencia UML#Diagrama de secuencia
+  - Diagrama de estado UML#Diagrama de estado
+  - Diagrama de actividad UML#Diagrama de actividad
 tags:
   - aninfo/Ingeniería-de-software
   - nota/facultad
+  - embebidos/Diseño-desarrollo-y-depuración
 ---
 ### Definición
 ---
-Es un [[Modelo]], que tiene un lenguaje gráfico utilizado para especificar, visualizar, construir y documentar [[Sistema|sistemas]] basados en software. 
+Es un [[Modelo|modelo]], que tiene un lenguaje gráfico utilizado para especificar, visualizar, construir y documentar [[Sistema|sistemas]] basados en [[Software|software]]
+
+Su objetivo es definir una forma estándar de visualizar la forma en que se ha diseñado un sistema
 
 Este modelo plantea una serie de diagramas, como 
 
-##### Diagrama de clases
+#### Diagrama de clases
+---
 Describe la estructura de un [[Sistema]] con clases, asociaciones entre las clases e interfaces. Muestra la estructura interna y estática del sistema
 
-##### Diagrama de casos de uso
+#### Diagrama de casos de uso
+---
 Mostrar la funcionalidad provista por el [[Sistema]] y su interacción con los [[Actor|usuarios]], a alto nivel
 
-##### Diagrama de secuencia
+#### Diagrama de secuencia
+---
 Mostrar la interacción entre una serie de clases para completar una acción
 
-##### Diagrama de estado
-Mostrar el ciclo de vida de una clase o colaboración (como una [[Máquina de estados]])
+#### Diagrama de estado
+---
+Mostrar el ciclo de vida de una clase o colaboración (como una [[Máquina de estados|máquina de estados]])
 
-##### Diagrama de actividad
+#### Diagrama de actividad
+---
 Mostrar el flujo de actividades a lo largo de un ciclo de trabajo

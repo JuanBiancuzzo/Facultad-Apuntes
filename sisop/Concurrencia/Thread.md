@@ -3,6 +3,9 @@ dia: 2023-11-09
 tags:
   - sisop/Concurrencia
   - nota/facultad
+aliases:
+  - Multithreading
+  - Multihilos
 ---
 ### Definición
 ---

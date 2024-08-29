@@ -3,6 +3,7 @@ dia: 2024-07-27
 tags:
   - nota/facultad
   - algo-1/Lenguaje-C
+  - taller/Sintaxis
 aliases:
   - Sentencia while
   - Sentencia mientras
@@ -31,4 +32,25 @@ while (expresion) {
 ```
 
 ^b1e802
+
+#### Rust
+---
+El while puede repetir su bloque de código mientras se cumpla su condición
+
+``` rust
+let mut i = 0;
+
+while i < 30 {
+	println!("{}", i);
+	i += 1;
+}
+```
+
+O al igual que la [[Asignación condicional|asignación condicional]] se puede hacer
+
+``` rust
+while let Some(i) = opcional {
+	// código
+}
+```
 

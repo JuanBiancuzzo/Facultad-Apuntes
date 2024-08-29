@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - algo-1/Introducción-a-la-programación
   - estructura/Compiladores-y-ensambladores
+  - embebidos/Diseño-desarrollo-y-depuración
 aliases:
   - Compilador de una sola pasada#^compilador-pasadas
   - Compilador de múltiples pasadas#^compilador-pasadas

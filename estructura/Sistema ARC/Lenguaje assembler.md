@@ -3,9 +3,11 @@ dia: 2024-08-29
 tags:
   - estructura/Sistema-ARC
   - nota/facultad
+  - embebidos/Diseño-desarrollo-y-depuración
 aliases:
   - Lenguaje ensamblador
   - Lenguaje assembler
+  - Assembly
 referencias:
   - "202"
 ---

@@ -7,6 +7,7 @@ tags:
   - algo-1/Introducción-a-la-programación
   - nota/facultad
   - sisop/Kernel
+  - embebidos/Diseño-desarrollo-y-depuración
 ---
 ### Definición
 ---

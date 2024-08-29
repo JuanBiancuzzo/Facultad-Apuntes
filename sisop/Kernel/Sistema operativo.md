@@ -3,6 +3,7 @@ dia: 2023-11-15
 tags:
   - sisop/Kernel
   - nota/facultad
+  - embebidos/Diseño-desarrollo-y-depuración
 ---
 ### Definición
 ---

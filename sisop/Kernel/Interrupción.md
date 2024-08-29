@@ -3,6 +3,7 @@ dia: 2023-11-15
 tags:
   - sisop/Kernel
   - nota/facultad
+  - embebidos/Microcontroladores-de-32-bits
 ---
 ### Definición
 ---
