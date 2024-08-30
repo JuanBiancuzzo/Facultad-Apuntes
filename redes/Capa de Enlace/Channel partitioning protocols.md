@@ -11,9 +11,9 @@ referencias:
 En esta, el [[Bandwidth|bandwidth]] del [[Acceso a una red por cable|enlace]] es compartido en el tiempo, en la [[Función senoidal|frecuencia]] y en código, a múltiples estaciones simultáneamente
 
 Tenemos los [[Protocolo|protocolos]]
-* [[Time division multiplexing|Time division multiplexing (TDM)]]
-* [[Frequency division multiplexing|Frequency division multiplexing (FDM)]]
-* [[Code division multiple access|Code division multiple access (CDMA)]]
+* [[Time Division Multiplexing|Time division multiplexing (TDM)]]
+* [[Frequency Division Multiplexing|Frequency division multiplexing (FDM)]]
+* [[Code Division Multiple Access|Code division multiple access (CDMA)]]
 
 ### Referencias
 ---

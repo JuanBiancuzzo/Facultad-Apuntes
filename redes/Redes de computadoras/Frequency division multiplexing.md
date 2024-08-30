@@ -2,6 +2,10 @@
 dia: 2024-05-29
 aliases:
   - FDM
+  - Acceso múltiple por división de frecuencia
+  - Multiplexing por división de frecuencia
+  - FDMA
+  - Frequency division multiplexing Access
 tags:
   - redes/Redes-de-computadoras
   - nota/facultad

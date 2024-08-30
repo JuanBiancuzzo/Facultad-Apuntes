@@ -5,6 +5,7 @@ aliases:
 tags:
   - dispo/Diodo-de-Juntura-PN
   - nota/facultad
+  - circuitos/Circuitos-con-diodos
 ---
 ### Definición
 ---

@@ -5,6 +5,7 @@ aliases:
 tags:
   - redes/Capa-de-Transporte
   - nota/facultad
+  - redes/Capa-Física-Inalámbrica
 ---
 ### Definición
 ---
@@ -59,7 +60,7 @@ Como el [[User Datagram Protocol|protocolo UDP]], el header de TCP contiene los 
 	* PSH bit
 		* Indica que el receptor de enviar los datos de la capa de arriba de forma inmediata
 	* URG bit
-		* Indica que hay información en el segmento que es marcada como segmento. La dirección del último bit de información urgente es indicado en el urgent data pointer field
+		* Indica que hay información en el [[Paquete|segmento]] que es marcada como segmento. La dirección del último [[Bit de información|bit de información]] urgente es indicado en el urgent data pointer field
 
 #### Parámetros del protocolo
 ---
@@ -206,9 +207,9 @@ Cuando un cliente envía un SYN SEGMENT a una dirección y puerto en el que no h
 
 #### Control de flujo
 ---
-Cuando una conexión TCP recibe información correcta y en secuencia, la coloca en el receive buffer. Si la aplicación es relativamente lenta en leer esta información, el receptor puede fácilmente causar un overflow en el buffer de lectura. El servicio de [[Control de flujo|control de flujo]] elimina la posibilidad de que esto ocurra, provee un servicio de speed-matching para emparejar la velocidad de lectura con la velocidad de bajada. Este servicio el distinto al de [[Control de congestión|control de congestión]], ambos producen el mismo efecto, pero por razones distintas
+Cuando una conexión TCP recibe información correcta y en secuencia, la coloca en el receive buffer. Si la aplicación es relativamente lenta en leer esta información, el receptor puede fácilmente causar un [[Overflow|overflow]] en el buffer de lectura. El servicio de [[Control de flujo|control de flujo]] elimina la posibilidad de que esto ocurra, provee un servicio de speed-matching para emparejar la velocidad de lectura con la velocidad de bajada. Este servicio el distinto al de [[Control de congestión|control de congestión]], ambos producen el mismo efecto, pero por razones distintas
 
-Para implementar este mecanismo, un host mantener la siguiente información
+Para implementar este mecanismo, un [[Host|host]] mantener la siguiente información
 * `LastByteRead`
 	* El número del último byte que fue leído por la aplicación
 * `LastByteRcvd`
@@ -218,7 +219,7 @@ Para implementar este mecanismo, un host mantener la siguiente información
 
 El host agregará este último campo a los paquetes transferidos a través de la red, para comunicarle al otro host del estado actual del buffer. Este a su vez deberá mantener las siguientes variables
 * `LastByteSend`
-	* El número del último byte que fue enviado a través de internet
+	* El número del último byte que fue enviado a través de [[Internet|internet]]
 * `LastByteAck`
 	* El número del último byte que fue confirmado por el host
 
@@ -235,3 +236,17 @@ Cuando se crea una conexión TCP, debe indicarse la dirección y el puerto de de
 Una vez creado el [[Socket|socket]], el cliente inicia un handshake de tres pasos y establece una conexión con el [[Servidor|servidor]]. Primero el cliente le envía un mensaje a un servidor, que contiene un listening socket esperando a establecer conexiones con los clientes. Este, al recibir el mensaje, creará una conexión TCP particular para este cliente
 
 Desde el punto de vista de la aplicación, los sockets están directamente conectados a través de una tubería
+
+#### Impacto con redes inalámbricas
+---
+Si bien los protocolos de [[Capa de transporte|capa de transporte]] como TCP pueden operar en redes inalámbricas, experimentan diferencias en el rendimiento de las redes inalámbricas de las redes cableadas
+
+Recordemos que la ventana de congestión de TCP disminuye cuando se pierden paquetes, esto se debe a que asume que la perdida ocurre debido a la congestión de la red, y no debido a un handoff o corrupción de bits. Cuando ocurre esto, no hay una razón real para disminuir la ventana de congestión
+
+Existen tres tipos de enfoques distintos para lidiar con este problema
+
+* Local recovery: Estos protocolos se encargan de recuperar los errores de bits donde ocurren. En estos enfoques, TCP no está al tanto de que los segmentos que atraviesan los paquetes son inalámbricos
+* TCP sender awareness of wireless links: Otro enfoque es que TCP pueda distinguir entre estos enlaces y únicamente invocar [[Control de congestión|control de congestión]] cuando se pierda un paquete debido a la congestión
+* Split-connection approaches: En estos enfoques, la conexión punto a punto entre un usuario móvil y otro punto se separa en dos conexiones de capa de transporte. Una desde el móvil hasta el wireless access point, y otra desde allí al otro end point.
+
+Por otro lado, consideremos la movilidad desde la [[Capa de aplicación|capa de aplicación]]. Aquellas aplicaciones que operan sobre enlaces inalámbricos deben tratar el ancho de banda como un recurso escaso. Aunque la movilidad ofrece desafíos, ofrece la posibilidad de aplicaciones dependientes de la localización del contexto, como aplicaciones de navegabilidad

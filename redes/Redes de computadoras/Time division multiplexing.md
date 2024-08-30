@@ -2,6 +2,8 @@
 dia: 2024-05-29
 aliases:
   - TDM
+  - Time Division Multiplexing Access
+  - TDMA
 tags:
   - redes/Redes-de-computadoras
   - nota/facultad

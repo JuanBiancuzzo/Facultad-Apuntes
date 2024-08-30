@@ -3,6 +3,7 @@ dia: 2023-09-23
 tags:
   - dispo/Diodo-de-Juntura-PN
   - nota/facultad
+  - circuitos/Circuitos-con-diodos
 ---
 ### Definición
 ---

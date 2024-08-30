@@ -11,8 +11,8 @@ Los links de una [[Red|red]] de [[Internet|internet]] que no sean [[Host|host]] 
 #### Multiplexing 
 ---
 Para permitir que un mismo link pueda ser utilizado por más de un [[Circuito eléctrico|circuito]], se utiliza alguna de las siguientes técnicas
-* [[Frequency division multiplexing|Frequency division multiplexing]]
-* [[Time division multiplexing|Time division multiplexing]]
+* [[Frequency Division Multiplexing|Frequency Division Multiplexing]]
+* [[Time Division Multiplexing|Time Division Multiplexing]]
 
 #### Delay
 ---
