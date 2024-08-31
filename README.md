@@ -32,7 +32,7 @@ Un listado de materias y su estado actual
 | [Matemática discreta](discreta/Matemática%20discreta%20(6107).md)                                              | 6107   | Terminado                                                     |
 | [Organización de datos](orga/Organización%20de%20datos%20(7506).md)                                            | 7506   | Falta pasar los videos de los últimos temas                   |
 | [Probabilidad y estadística](proba/Probabilidad%20y%20estadística%20(6109).md)                                 | 6109   | Terminado                                                     |
-| [Redes](redes/Redes%20(TA048).md)                                                                              | TA048  | Falta pasar el resumen                                        |
+| [Redes](redes/Redes%20(TA048).md)                                                                              | TA048  | Terminado                                                     |
 | [Seguridad ambiental y del trabajo](seguridad/Seguridad%20ambiental%20y%20del%20trabajo%20(9704).md)           | 9704   | Terminado                                                     |
 | [Señales y sistemas](señales/Señales%20y%20sistemas%20(TB065).md)                                              | TB065  | Falta pasar las presentaciones del último tema                |
 | [Sistemas operativos](sisop/Sistemas%20operativos%20(7508).md)                                                 | 7508   | Terminado                                                     |
