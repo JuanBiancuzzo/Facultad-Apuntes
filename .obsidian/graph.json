@@ -1,6 +1,6 @@
 {
-  "collapse-filter": false,
-  "search": "-path:legal/Articulos  ",
+  "collapse-filter": true,
+  "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -8,128 +8,205 @@
   "collapse-color-groups": true,
   "colorGroups": [
     {
-      "query": "path:\"algebra 2\"",
+      "query": "tag:#adc  ",
       "color": {
         "a": 1,
         "rgb": 14701138
       }
     },
     {
-      "query": "path:\"analisis 2\"",
+      "query": "tag:#algebra-2  ",
       "color": {
         "a": 1,
         "rgb": 14725458
       }
     },
     {
-      "query": "path:\"analisis 3\"",
+      "query": "tag:#algo-1  ",
       "color": {
         "a": 1,
         "rgb": 11657298
       }
     },
     {
-      "query": "path:intro",
+      "query": "tag:#algo-2  ",
       "color": {
         "a": 1,
         "rgb": 5431378
       }
     },
     {
-      "query": "path:proba",
+      "query": "tag:#analisis-2  ",
       "color": {
         "a": 1,
         "rgb": 5431473
       }
     },
     {
-      "query": "path:seguridad",
+      "query": "tag:#analisis-3  ",
       "color": {
         "a": 1,
         "rgb": 5419488
       }
     },
     {
-      "query": "path:taller",
+      "query": "tag:#aninfo  ",
       "color": {
         "a": 1,
         "rgb": 5395168
       }
     },
     {
-      "query": "path:numerico",
+      "query": "tag:#bdd  ",
       "color": {
         "a": 1,
         "rgb": 11621088
       }
     },
     {
-      "query": "path:orga",
+      "query": "tag:#circuitos  ",
       "color": {
         "a": 1,
         "rgb": 14701233
       }
     },
     {
-      "query": "path:estructura",
+      "query": "tag:#discreta  ",
       "color": {
         "a": 1,
         "rgb": 14701138
       }
     },
     {
-      "query": "path:\"fisica 3\"",
+      "query": "tag:#dispo  ",
       "color": {
         "a": 1,
         "rgb": 14725458
       }
     },
     {
-      "query": "path:\"fisica 2\"",
+      "query": "tag:#electro  ",
       "color": {
         "a": 1,
         "rgb": 11657298
       }
     },
     {
-      "query": "path:aninfo",
+      "query": "tag:#embebidos  ",
       "color": {
         "a": 1,
         "rgb": 5431378
       }
     },
     {
-      "query": "path:dispo  ",
+      "query": "tag:#estructura  ",
       "color": {
         "a": 1,
         "rgb": 5431473
       }
     },
     {
-      "query": "path:adc  ",
+      "query": "tag:#fisica-1 ",
       "color": {
         "a": 1,
         "rgb": 5419488
       }
     },
     {
-      "query": "path:sisop",
+      "query": "tag:#fisica-2",
       "color": {
         "a": 1,
         "rgb": 5395168
       }
+    },
+    {
+      "query": "tag:#fisica-3",
+      "color": {
+        "a": 1,
+        "rgb": 5395168
+      }
+    },
+    {
+      "query": "tag:#intro ",
+      "color": {
+        "a": 1,
+        "rgb": 5395121
+      }
+    },
+    {
+      "query": "tag:#legal  ",
+      "color": {
+        "a": 1,
+        "rgb": 14592939
+      }
+    },
+    {
+      "query": "tag:#numerico  ",
+      "color": {
+        "a": 1,
+        "rgb": 14352164
+      }
+    },
+    {
+      "query": "tag:#orga  ",
+      "color": {
+        "a": 1,
+        "rgb": 1376228
+      }
+    },
+    {
+      "query": "tag:#proba  ",
+      "color": {
+        "a": 1,
+        "rgb": 6094711
+      }
+    },
+    {
+      "query": "tag:#redes  ",
+      "color": {
+        "a": 1,
+        "rgb": 16720932
+      }
+    },
+    {
+      "query": "tag:#seguridad  ",
+      "color": {
+        "a": 1,
+        "rgb": 5395026
+      }
+    },
+    {
+      "query": "tag:#señales  ",
+      "color": {
+        "a": 1,
+        "rgb": 12277463
+      }
+    },
+    {
+      "query": "tag:#sisop  ",
+      "color": {
+        "a": 1,
+        "rgb": 9106901
+      }
+    },
+    {
+      "query": "tag:#taller  ",
+      "color": {
+        "a": 1,
+        "rgb": 10254772
+      }
     }
   ],
-  "collapse-display": false,
+  "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
-  "collapse-forces": false,
+  "collapse-forces": true,
   "centerStrength": 0.516666666666667,
   "repelStrength": 9.91666666666667,
   "linkStrength": 1,
   "linkDistance": 220,
-  "scale": 0.09106416144895477,
-  "close": true
+  "scale": 0.09479901406111725,
+  "close": false
 }
