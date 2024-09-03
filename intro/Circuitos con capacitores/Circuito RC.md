@@ -61,7 +61,7 @@ Un [[Circuito eléctrico|circuito]] RC de [[Circuito de primer orden|primer ord
 
 #### Análisis
 ---
-Al cerrar la llave (en el instante $t=0$), por [[Ley de Nodos de Kirchhoff]] de [[Malla]], se puede deducir que $$ v_0(t)= v_R (t) + v_C (t) $$
+Al cerrar la llave (en el instante $t=0$), por [[Ley de nodos de Kirchhoff]] de [[Malla]], se puede deducir que $$ v_0(t)= v_R (t) + v_C (t) $$
 Ahora, por [[Ley de Ohm]]
 $$ v_0 (t)= i(t) \cdot R + v_C (t) $$
 

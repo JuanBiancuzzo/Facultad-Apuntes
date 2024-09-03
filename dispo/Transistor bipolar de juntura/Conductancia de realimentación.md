@@ -10,7 +10,7 @@ Dada una [[Corriente eléctrica|señal]] pequeña, se define la conductancia de 
 
 Los cambios en $v_{BE}$ también producen cambios en $i_B$ $$ I_B = I_{B1} + I_{B2} $$ donde: 
 * $I_{B1}$: [[Corriente eléctrica|corriente]] debido a la inyección de [[Hueco|huecos]] de la base hacia el emisor
-* $I_{B2}$: corriente de [[Recombinación]] de [[Portador de carga|portadores]] en la base
+* $I_{B2}$: corriente de [[Recombinación]] de [[Carga eléctrica|portadores]] en la base
 
 Para el cálculo de polarización, $I_{B2}$ se considera despreciable y $I_{B1}$ es predominante.
 

@@ -10,7 +10,7 @@ tags:
 ---
 ### Definición
 ---
-Los ataques [[Denial of Service|DoS]] distribuidos controlan varios orígenes y hace que cada uno de ellos bombardee el objetivo con [[Tráfico|tráfico]]
+Los ataques DoS distribuidos controlan varios orígenes y hace que cada uno de ellos bombardee el objetivo con [[Tráfico|tráfico]]
 
 Vuelve inutilizable una [[Red|red]], [[Host|host]] o cualquier otro elemento. Puede clasificarse en una de las 3 categorías
 * Ataque de vulnerabilidad

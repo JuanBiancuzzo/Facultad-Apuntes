@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Para un [[Recinto compacto]] $K \in \mathbb{R}^n$ $$ \begin{cases} 
+Para un [[Conjunto compacto]] $K \in \mathbb{R}^n$ $$ \begin{cases} 
 	\Delta u(x) = 0 && x \in K \\
 	u(x) = \varphi(x) && x \in \partial K
 \end{cases} $$

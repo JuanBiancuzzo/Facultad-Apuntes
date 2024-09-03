@@ -27,7 +27,7 @@ En la figura se puede ver como afectan a la características del diodo las difer
 ---
 En la directa débil (es decir entre $0~V$ y $\approx 5~V_{th}$ que es [[Relación de Einstein|potencial térmico]]), la corriente (ideal) es muy baja, por lo que cualquier aporte de [[Carga eléctrica|carga]] que atraviesa la juntura de manera ideal.
 
-En directa, la [[Portador de carga|concentración de portadores]] en la SCR aumenta respecto de [[Equilibrio térmico en un semiconductor|equilibrio térmico]] por lo que la [[Recombinación|recombinación]] supera a la [[Generación|generación]].
+En directa, la [[Carga eléctrica|concentración de portadores]] en la SCR aumenta respecto de [[Equilibrio térmico en un semiconductor|equilibrio térmico]] por lo que la [[Recombinación|recombinación]] supera a la [[Generación|generación]].
 
 Si un par de portadores se recombina, no están disponible para formar parte de la corriente ideal, entonces se debe compensar esa pérdida de portadores a través de una nueva componente de corriente, una corriente de recombinación.
 
@@ -67,7 +67,7 @@ En inversa, la corriente (ideal) es menor a la [[Corriente del Diodo|corriente d
 
 Al igual que en [[Convención de signos para la tensión de polarización#Polarización directa|directa]], cualquier aporte de [[Carga eléctrica|carga]] adicional a la estructura, será comparable o superior a la carga que atraviesa la [[Juntura PN|juntura]] de manera ideal.
 
-En inversa, la [[Portador de carga|concentración de portadores]] en la SCR disminuye respecto del [[Equilibrio térmico en un semiconductor|equilibrio térmico]]
+En inversa, la [[Carga eléctrica|concentración de portadores]] en la SCR disminuye respecto del [[Equilibrio térmico en un semiconductor|equilibrio térmico]]
 $\implies$ la [[Generación|generación]] supera a la [[Recombinación|recombinación]]
 
 Si se genera un par de portadores, son separados por el [[Campo eléctrico]]

@@ -6,14 +6,14 @@ tags:
 ---
 ### Definición
 ---
-Considerando la [[Juntura PN]] en [[Convención de signos para la tensión de polarización#Polarización directa|directa]], la situación de los [[Portador de carga|portadores]] mayoritarios es
+Considerando la [[Juntura PN]] en [[Convención de signos para la tensión de polarización#Polarización directa|directa]], la situación de los [[Carga eléctrica|portadores]] mayoritarios es
 
 ![[Concentración de portadores en escala logarítmica en directa.webp|600]]
 
 En la QNR aumenta la concentración de minoritarios, si la concentración de mayoritarios no cambia entonces no cumpliría la condición de [[Aproximación de cuasi-neutralidad|cuasi-neutralidad]] eléctrica, la cual exige que el exceso de minoritarios sea igual al exceso de mayoritarios $$ p'(x) = p(x) - p_0 \simeq n(x) - n_0 = n'(x) $$
 ![[Condición de causi-neutralidad eléctrica aplicada a un exceso de portadores.webp]]
 
-Integramos la [[Carga eléctrica|carga]] acumulada por los [[Portador de carga|portadores]] en exceso, que al ser un triangulo podemos calcularlo como $$ Q_{p_n} = qA ~ \frac{(p(x_n) - p_0) ~ (W_n - x_n)}{2}$$
+Integramos la [[Carga eléctrica|carga]] acumulada por los [[Carga eléctrica|portadores]] en exceso, que al ser un triangulo podemos calcularlo como $$ Q_{p_n} = qA ~ \frac{(p(x_n) - p_0) ~ (W_n - x_n)}{2}$$
 Como es la n-QNR, podemos calcular $p_0$ por la [[Ley de acción de masas]] donde $p_0 = \frac{n_i^2}{N_d}$ y por la [[Relación de Boltzmann]] nos queda que $$ Q_{p_n} = qA ~ \frac{W_n - x_n}{2} \frac{n_i^2}{N_d} \left( \exp \left( \frac{v_D}{V_{th}} \right) - 1 \right) = - Q_{n_n} $$
 Ahora veamos que sucede si se produce un incremento [[Modelo de pequeña señal para diodo|pequeño]] en $v_D$ 
 

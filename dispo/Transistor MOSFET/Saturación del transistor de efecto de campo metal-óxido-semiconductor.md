@@ -335,7 +335,7 @@ Por lo que no hay una capa de [[Inversión de la estructura Metal-Óxido-Semicon
 * La ecuación de control de carga es inexacta en el entorno de $V_T$
 * La concentración de [[Electrón|electrones]] es pequeña, pero no es cero
 * Los electrones se mueven rápido debido a que el [[Campo eléctrico|campo eléctrico]] es muy elevado
-* No hay ningún impedimento para el movimiento de los [[Portador de carga|portadores]].
+* No hay ningún impedimento para el movimiento de los [[Carga eléctrica|portadores]].
 
 ##### [[Tensión|Tensiones]] $V_{DS} > V_{GS} - V_T$
 ---

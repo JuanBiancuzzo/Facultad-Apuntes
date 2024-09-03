@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-En el [[Modelo]] de [[Transistor bipolar de juntura|TBJ]], que planteamos, en [[Modo activo directo del transistor bipolar de juntura|MAD]], la [[Corriente eléctrica|corriente]] $I_C$ no debería incrementarse frente a cambios de la [[Tensión|tensión]] $V_{CE}$ ya que la [[Juntura PN|juntura]] Base-Colector no influye en el perfil de [[Portador de carga|portadores]] minoritarios en la base, y por lo tanto no altera el [[Corriente de difusión|flujo de difusión]].
+En el [[Modelo]] de [[Transistor bipolar de juntura|TBJ]], que planteamos, en [[Modo activo directo del transistor bipolar de juntura|MAD]], la [[Corriente eléctrica|corriente]] $I_C$ no debería incrementarse frente a cambios de la [[Tensión|tensión]] $V_{CE}$ ya que la [[Juntura PN|juntura]] Base-Colector no influye en el perfil de [[Carga eléctrica|portadores]] minoritarios en la base, y por lo tanto no altera el [[Corriente de difusión|flujo de difusión]].
 
 Pero la región de vaciamiento de la juntura BC se ve afectada frente a cambios de la tensión $V_{CE}$ aumentando o disminuyendo.
 

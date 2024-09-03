@@ -39,7 +39,7 @@ En el TBJ las [[Capacitancia|capacidades]] son mayores que en el MOSFET, entonce
 
 #### Resistencia de paso o de encendido
 ---
-En el TBJ la [[Corriente eléctrica volumetrica|corriente circula a través del área del Emisor]]. En el MOSFET la circulación de [[Corriente eléctrica superficial|corriente es en superficie]]. Entonces el TBJ tiene menor [[Resistencia|resistencia]] de paso (maneja corrientes mayores) que el MOSFET.
+En el TBJ la [[Corriente eléctrica#Densidad de corriente volumétrica|corriente circula a través del área del Emisor]]. En el MOSFET la circulación de [[Corriente eléctrica#Densidad de corriente superficial|corriente es en superficie]]. Entonces el TBJ tiene menor [[Resistencia|resistencia]] de paso (maneja corrientes mayores) que el MOSFET.
 
 #### Comparación aproximada
 ---

@@ -14,4 +14,4 @@ Usando [[Fasor|fasores]], se tiene la siguiente transformación
 
 ![[Transformación de bobinas.webp]]
 
-Notemos la orientación de las [[Fuente de tensión|fuentes]] dada por tener [[Bornes homólogos|bornes no homólogos]]
+Notemos la orientación de las [[Fuente de tensión|fuentes]] dada por tener [[Bornes homologos|bornes no homólogos]]

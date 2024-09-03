@@ -32,7 +32,7 @@ Típicamente $V_{BE~(on)} \simeq 0.7~V$. $I_B$ depende del circuito externo.
 
 Siguiendo un análisis similar al [[Corriente del Diodo#Calculo de la corriente|calculo de corriente en una juntura PN]] encontramos que para la zona de [[Impureza donora#Cantidad de dopante|tipo N]] en el Emisor, la corriente de minoritarios queda $$ I_p = - q A_{BE} ~ D_p^E \cdot \frac{p(-x_{BE}) - p_0}{W_E} = - \frac{q A_{BE} ~ D_p^E}{W_E} \cdot \frac{n_i^2}{N_{dE}} ~ \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - 1 \right) $$
 Para la zona de [[Impureza aceptora#Cantidad de dopante|tipo P]] en la Base, la corriente de minoritarios queda $$ I_n = - q A_{BE} ~ D_n^B \cdot \frac{n(0)}{W_B} = - \frac{q A_{BE} ~ D_n^B}{W_B} \cdot \frac{n_i^2}{N_{aE}} ~ \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - 1 \right) $$
-Y por [[Ley de Nodos de Kirchhoff]] sabemos que $I_E = -I_C - I_B$, por lo que tendríamos todas las corrientes, solo necesitamos saber cual corresponde a cual. Analizando las corrientes del transistor
+Y por [[Ley de nodos de Kirchhoff]] sabemos que $I_E = -I_C - I_B$, por lo que tendríamos todas las corrientes, solo necesitamos saber cual corresponde a cual. Analizando las corrientes del transistor
 
 Por lo que podemos deducir que para la corriente $I_C$
 1. Inyección de $e^-$ de E a B, difusión de B y extracción en C

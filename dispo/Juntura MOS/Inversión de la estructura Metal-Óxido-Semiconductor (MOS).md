@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Dada una [[Estructura Metal-Óxido-Semiconductor (MOS)|Estructura MOS]] [[Estructura Metal-Óxido-Semiconductor con polarización|polarizada]], para $V_{GB} > V_T$, donde $V_T$ es la [[Tensión umbral]]. La concentración de [[Electrón|electrones]] en la interfaz $Si$/$SiO_2$ supera a la concentración de [[Impureza aceptora|átomos aceptores]] por lo que se produce la inversión del material
+Dada una [[Estructura Metal-Óxido-Semiconductor|Estructura MOS]] [[Estructura Metal-Óxido-Semiconductor con polarización|polarizada]], para $V_{GB} > V_T$, donde $V_T$ es la [[Tensión umbral]]. La concentración de [[Electrón|electrones]] en la interfaz $Si$/$SiO_2$ supera a la concentración de [[Impureza aceptora|átomos aceptores]] por lo que se produce la inversión del material
 
 ![[Concentración de portadores en una estructura metal óxido semiconductor en inversión.webp]]
 
@@ -24,10 +24,10 @@ Entonces, a medida que $V_{GB} \uparrow$ y $\phi(0) \uparrow$, $|Q'_n|$ cambiar�
 Varias consecuencias
 * $x_d$ no aumenta demasiado después de superado el umbral $$ x_d(int.) \simeq x_d(V_T) = \sqrt{\frac{2 \varepsilon_s (-2 \phi_p)}{q ~ N_a}} = x_{d ~ max}$$
 * $V_B$ no aumenta demasiado después de superado el umbral $$ V_B(inv.) \simeq V_B(V_T) = -2 \phi_p $$
-* Todo la diferencia de [[Potencial eléctrico|potencial]] adicional una vez superado $V_T$ es utilizado para aumentar la inversión de carga $Q'_n$. 
+* Todo la diferencia de [[Función potencial|potencial]] adicional una vez superado $V_T$ es utilizado para aumentar la inversión de carga $Q'_n$. 
 
 
-##### Concentraciones de los [[Portador de carga|portadores]]
+##### Concentraciones de los [[Carga eléctrica|portadores]]
 ---
 ![[Concentración de portadores en la estructura MOS en regimen de inversión.webp]]
 
@@ -39,6 +39,6 @@ Varias consecuencias
 ---
 ![[Campo eléctrico en una estructura MOS en regimen de inversión.webp]]
 
-##### [[Potencial eléctrico|Función potencial]]
+##### [[Función potencial|Función potencial]]
 ---
 ![[Potencial eléctrico en una estructura MOS en regimen de inversión.webp]]

@@ -10,7 +10,7 @@ Si tenemos un [[Semiconductor]] [[Dopaje|dopado]] de forma no uniforme
 
 ![[Distribución no uniforme de dopante donores.webp|570]]
 
-Si lo dejamos que llegue al [[Equilibrio térmico en un semiconductor|equilibrio térmico]], sabemos que la [[Densidad de corriente eléctrica|corriente total]] debería ser nula  $$J_n^\text{arr} + J_n^\text{dif} = 0 $$
+Si lo dejamos que llegue al [[Equilibrio térmico en un semiconductor|equilibrio térmico]], sabemos que la [[Corriente eléctrica#Densidad de corriente|corriente total]] debería ser nula  $$J_n^\text{arr} + J_n^\text{dif} = 0 $$
 y sabemos que por esta distribución no uniforme, hay [[Corriente de difusión]], haciendo que [[Electrón|electrones]] (en este caso ya que hay una distribución no uniforme de [[Impureza donora|concentración donora]], pero si fuera una [[Impureza aceptora|concentración aceptora]] habría una corriente de difusión de [[Hueco|huecos]]), produciendo una zona de [[Carga eléctrica|cargas]] positivas y negativas, produciendo un [[Campo eléctrico]], dando una [[Corriente de arrastre]]
 
 ![[Distribución no uniforme de dopante con corrientes de difusión y arrastre.webp|570]]

@@ -3,16 +3,20 @@ dia: 2023-01-23
 tags:
   - intro/Circuitos-con-capacitores
   - nota/facultad
+  - fisica-2/Electrostática-en-conductores-y-dieléctricos
 ---
 ### Definición
 ---
 La capacitancia ($C$) es la propiedad del [[Capacitor]] que representa la energía que este almacena.
-No depende ni de la carga ni de la tensión aplicada. Depende exclusivamente de la geometría y el material [[Material dieléctrico|aislante]]
+No depende ni de la carga ni de la tensión aplicada. Depende exclusivamente de la geometría y el material [[Dieléctrico|aislante]]
 
-De forma genérica se calcula la capacitancia como $$ C = \frac{dq}{dV} $$ que si asumimos que es una relación lineal, como suele ocurrir, podemos simplificar a $$ C = \frac{Q}{\Delta V} $$
+De forma genérica se calcula la capacitancia como $$ C = \frac{dq}{dV} $$ que si asumimos que es una relación lineal, como suele ocurrir, podemos simplificar a 
+
+$$ C = \frac{Q}{\Delta V} $$ ^47ee97
+
 Entonces, por ejemplo, para un capacitor de placas planas paralelas:
 $$C = \frac{\epsilon \cdot A}{d}$$
-Donde:
+Donde: ^3cd320
 $$ 
 \begin{cases}
 \epsilon &= \text{Permitividad del aislante} \\

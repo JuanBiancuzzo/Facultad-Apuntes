@@ -49,7 +49,7 @@ Un [[Circuito eléctrico|circuito]] RL de [[Circuito de primer orden|primer ord
 
 #### Análisis
 ---
-Al cerrar la llave (en el instante $t=0$), por [[Ley de Nodos de Kirchhoff]] de [[Malla]], se puede deducir que $$ \begin{align} 
+Al cerrar la llave (en el instante $t=0$), por [[Ley de nodos de Kirchhoff]] de [[Malla]], se puede deducir que $$ \begin{align} 
 	         v_R(t) &+ v_L(t) = 0 \\
 	L \frac{di}{dt} &+ Ri = 0 \\
 	  \frac{di}{dt} &+ \frac{R}{L}i = 0

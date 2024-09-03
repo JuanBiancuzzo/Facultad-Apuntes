@@ -10,22 +10,26 @@ Si bien al [[Inductancia mutua|inductancia mutua]] es positiva $M > 0$, la [[Ten
 
 Si una [[Corriente eléctrica|corriente]] entra a la terminar marcada de la bobina, la polaridad de referencia para la tensión mutua en la segunda bobina es positiva en la terminal con la marga de la segunda bobina.
 
-#### [[Inductores en paralelo|Bobinas en paralelo]]
+#### Bobinas en paralelo
 ---
-Si consideramos un [[Circuito eléctrico|circuito]] con 2 [[Inductor|bobinas]] [[Acoplación magnética|acopladas magnéticamente]]
+Si consideramos un [[Circuito eléctrico|circuito]] con 2 [[Inductor|bobinas]] en [[Inductores en paralelo|paralelo]] [[Acoplación magnética|acopladas magnéticamente]]
 
 ##### Bornes homólogos
+---
 ![[Dos bobinas en paralelo y bornes homólogos.webp]]
 
 ##### Bornes no homólogos
+---
 ![[Dos bobinas en paralelo y bornes no homólogos.webp]]
 
-#### [[Inductores en serie|Bobinas en serie]]
+#### Bobinas en serie
 ---
-Si consideramos un [[Circuito eléctrico|circuito]] con 2 [[Inductor|bobinas]] [[Acoplación magnética|acopladas magnéticamente]]
+Si consideramos un [[Circuito eléctrico|circuito]] con 2 [[Inductor|bobinas]] en [[Inductores en serie|serie]]  [[Acoplación magnética|acopladas magnéticamente]]
 
 ##### Bornes homólogos
+---
 ![[Dos bobinas en serie y bornes homólogos.webp]]
 
 ##### Bornes no homólogos
+---
 ![[Dos bobinas en serie y bornes no homólogos.webp]]

@@ -8,7 +8,7 @@ tags:
 ---
 ### Definición
 ---
-El [[Transistor]] bipolar de juntura es la superposición de tres regiones con [[Dopaje|dopajes]] contrarios, formando dos [[Juntura PN|junturas PN]]. Estas tienen que estar suficientemente juntas como para que los [[Portador de carga|portadores]] minoritarios interactúen (pueden difundirse rápido sin [[Recombinación|recombinarse]] en la base). También tiene que estar suficientemente separados como para que las regiones de deserción (SCR) no se solapen (punch-through).
+El [[Transistor]] bipolar de juntura es la superposición de tres regiones con [[Dopaje|dopajes]] contrarios, formando dos [[Juntura PN|junturas PN]]. Estas tienen que estar suficientemente juntas como para que los [[Carga eléctrica|portadores]] minoritarios interactúen (pueden difundirse rápido sin [[Recombinación|recombinarse]] en la base). También tiene que estar suficientemente separados como para que las regiones de deserción (SCR) no se solapen (punch-through).
 
 Al intercambiar el tipo de dopaje, pueden obtenerse dos combinaciones distintas
 

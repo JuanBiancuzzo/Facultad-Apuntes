@@ -15,7 +15,7 @@ Podemos definir la concentración de donores como $$ N_d = [cm^{-3}] $$
 ---
 Si $N_d \ll n_i$, el dopaje es irrelevante (podemos aproximarlo a un [[Semiconductor intrínseco]]), esto implica que $n_0 = p_0 = n_i$ 
 
-Si $N_d \gg n_i$, el dopaje controla la concentración de [[Portador de carga|portadores]] ([[Semiconductor extrínseco]]), esto implica que $$ \begin{matrix} n_0 = N_d && p_0 = \frac{n_i^2}{N_d}  \end{matrix} $$
+Si $N_d \gg n_i$, el dopaje controla la concentración de [[Carga eléctrica|portadores]] ([[Semiconductor extrínseco]]), esto implica que $$ \begin{matrix} n_0 = N_d && p_0 = \frac{n_i^2}{N_d}  \end{matrix} $$
 En el caso que $n_0 \ll p_0$ se dirá que el semiconductor es de tipo $n$
 
 ##### Concentración

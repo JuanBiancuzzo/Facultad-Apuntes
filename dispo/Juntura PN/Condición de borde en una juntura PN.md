@@ -11,7 +11,7 @@ En las [[Juntura PN|junturas PN]] la [[Recombinación]] y la [[Generación]] ocu
   $\implies$ gran cantidad de enlaces rotos:
 	* Centros de generación y recombinación
 * Los dispositivos modernos son muy pequeños
-  $\implies$ las dimensiones son comparables con el [[Movimiento térmico de portadores|camino libre medio]] $\lambda_c$ de los [[Portador de carga|portadores]]
+  $\implies$ las dimensiones son comparables con el [[Movimiento térmico de portadores|camino libre medio]] $\lambda_c$ de los [[Carga eléctrica|portadores]]
   $\implies$ la recombinación en QRN es poco [[Probabilidad|probable]]
   $\implies$ el efecto de superficie es muy significativo
 * Por [[Aproximación de vaciamiento#Hipótesis|hipótesis de vaciamiento]], en la SCR hay pocos portadores

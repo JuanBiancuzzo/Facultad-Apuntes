@@ -10,7 +10,7 @@ Es un [[Agente extintor]], donde los más utilizados son el Dióxido de carbono 
 
 Se recomienda su aplicación en la extinción de líquidos inflamable, o en equipos eléctricos; circunstancialmente, se lo emplea en el caso de [[Combustible|combustibles]] sólidos, por sus condiciones de inertes y limpios.
 
-Desde un punto de vista general, sus propiedades más importantes, son sus características no [[Conductividad eléctrica|conductivas]] y [[Extinción por sofocación|sofocantes]].
+Desde un punto de vista general, sus propiedades más importantes, son sus características no [[Conductividad eléctrica|conductivas]] y [[Extinción por sofocación|sofocantes]]
 
 Sus mecanismos de extinción:
 

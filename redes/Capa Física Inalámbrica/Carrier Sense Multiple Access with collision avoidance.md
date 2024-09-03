@@ -8,10 +8,10 @@ aliases:
   - CSMA con prevención de colisiones
   - CSMA with collision avoidance
   - CSMA/CA
-  - Request to Send
-  - RTS
-  - Clear to Send
-  - CTS
+  - Request to Send#^RTS
+  - RTS#^RTS
+  - Clear to Send#^CTS
+  - CTS#^CTS
 ---
 ### Definición
 ---

@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Definimos tiempo de tránsito como el tiempo medio empleado por un [[Portador de carga|portador]] para difundirse a traves de la región QNR
+Definimos tiempo de tránsito como el tiempo medio empleado por un [[Carga eléctrica|portador]] para difundirse a traves de la región QNR
 
 #### [[Hueco|Huecos]]
 ---

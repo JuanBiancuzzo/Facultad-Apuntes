@@ -8,7 +8,7 @@ aliases:
 ---
 ### Definición
 ---
-Teniendo una [[Estructura Metal-Óxido-Semiconductor (MOS)|estructura MOS]] al aplicarle una [[Tensión]], la electrostática del MOS se ve afectada, entonces la diferencia de potencial a lo largo de la estructura ahora es distinta de $0$.
+Teniendo una [[Estructura Metal-Óxido-Semiconductor|estructura MOS]] al aplicarle una [[Tensión]], la electrostática del MOS se ve afectada, entonces la diferencia de potencial a lo largo de la estructura ahora es distinta de $0$.
 
 ![[Estructura  MOS con polarización.webp]]
 
@@ -26,7 +26,7 @@ Tomando que el [[Semiconductor]] es de [[Impureza aceptora#Cantidad de dopante|t
 
 ##### Vaciamiento
 ---
-![[Vaciamiento de la estructura Metal-Óxido-Semiconductor (MOS)#Definición]]
+![[Vaciamiento de la estructura Metal-Óxido-Semiconductor#Definición]]
 
 ##### Inversión
 ---

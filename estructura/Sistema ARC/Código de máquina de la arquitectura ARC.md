@@ -181,7 +181,7 @@ $$ \begin{matrix}
     0111 & \text{bvs} \\
     1000 & \text{ba} \\\hline 
 \end{array} 
-\end{matrix}$$
+\end{matrix} $$
 
 #### Modos de direccionamiento
 ---

@@ -15,7 +15,7 @@ Podemos definir la concentración de aceptores como $$ N_a = [cm^{-3}] $$
 ---
 Si $N_a \ll n_i$, el dopaje es irrelevante (podemos aproximarlo a un [[Semiconductor intrínseco]]), esto implica que $n_0 = p_0 = n_i$ 
 
-Si $N_a \gg n_i$, el dopaje controla la concentración de [[Portador de carga|portadores]] ([[Semiconductor extrínseco]]), esto implica que $$ \begin{matrix} p_0 = N_a && n_0 = \frac{n_i^2}{N_a}  \end{matrix} $$
+Si $N_a \gg n_i$, el dopaje controla la concentración de [[Carga eléctrica|portadores]] ([[Semiconductor extrínseco]]), esto implica que $$ \begin{matrix} p_0 = N_a && n_0 = \frac{n_i^2}{N_a}  \end{matrix} $$
 En el caso que $p_0 \ll n_0$ se dirá que el semiconductor es de tipo $p$
 
 ##### Concentración

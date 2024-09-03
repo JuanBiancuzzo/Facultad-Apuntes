@@ -6,4 +6,4 @@ tags:
 ---
 ### Definición
 ---
-Un [[Sistema]] en [[Equilibrio térmico]] no intercambia [[Energía]] con el medio que lo rodea
+Un [[Sistema|sistema]] en equilibrio no intercambia [[Energía|energía]] con el medio que lo rodea

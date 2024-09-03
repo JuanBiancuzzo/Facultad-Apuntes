@@ -11,7 +11,7 @@ Se entiende por [[Riesgo]] eléctrico a la posibilidad que la [[Corriente eléct
 Este puede ocurrir cuando:
 * Existe un [[Circuito lógico|circuito]] eléctrico
 * Existe una [[Tensión]]
-* El cuerpo humano no se encuentra [[Aislado]] y frome parte del circuito.
+* El cuerpo humano no se encuentra [[Dieléctrico]] y frome parte del circuito.
 
 
 #### Clasificación según la [[Tensión eficaz|tensión]]

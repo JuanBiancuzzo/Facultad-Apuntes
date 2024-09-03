@@ -25,8 +25,8 @@ Primero, calculamos $\phi(0)$ para $V_{GB} = V_T$ con la [[Relación de Boltzman
 ![[Función de potencial en una estructura metal óxido semiconductor (MOS) en situación umbral.webp]]
 
 Resultando en $$ V_B(V_T) = - 2 \phi_p $$
-Segundo, calculamos la caída de [[Potencial eléctrico|potencial]] en el óxido para la tensión umbral $$ V_{ox}(V_T) = E_{ox}(V_T) ~ t_{ox} = \frac{q ~ N_a ~ x_d(V_T)}{\varepsilon_{ox}} ~ t_{ox} $$
-Obtenemos $x_d(V_T)$ usando la relación entre $V_B$ y $x_d$ en [[Vaciamiento de la estructura Metal-Óxido-Semiconductor (MOS)|vaciamiento]] $$ V_B(V_T) = \frac{q ~ N_a ~ x_d^2(V_T)}{2 ~ \varepsilon_{s}} = -2 \phi_p $$
+Segundo, calculamos la caída de [[Función potencial|potencial]] en el óxido para la tensión umbral $$ V_{ox}(V_T) = E_{ox}(V_T) ~ t_{ox} = \frac{q ~ N_a ~ x_d(V_T)}{\varepsilon_{ox}} ~ t_{ox} $$
+Obtenemos $x_d(V_T)$ usando la relación entre $V_B$ y $x_d$ en [[Vaciamiento de la estructura Metal-Óxido-Semiconductor|vaciamiento]] $$ V_B(V_T) = \frac{q ~ N_a ~ x_d^2(V_T)}{2 ~ \varepsilon_{s}} = -2 \phi_p $$
 Despejamos $x_d(V_T)$ nos queda $$ x_d(V_T) = x_{d ~ max} = \sqrt{\frac{2 ~ \varepsilon_s (-2 \phi_p)}{q ~ N_a}} $$
 Ahora encontrando la caída de potencial en el óxido queda $$ V_{ox}(V_T) = \frac{q ~ N_a ~ x_d(V_T)}{\varepsilon_{ox}} ~ t_{ox} = \gamma \sqrt{-2 \phi_o} $$ donde $\gamma$ es el [[Body factor coefficient]].
 
@@ -35,7 +35,7 @@ Siendo $\phi_B = -V_{FV}$ ([[Tensión de Flatband]]), se despeja $V_T$: $$ V_T =
 #### Para un [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]]
 ---
 Supongamos $V_{GS} = V_T$. En esta situación el valor de $V_T$ podría despejarse de la igualdad $$ V_T - V_{FB} = - 2\phi_p + \gamma \sqrt{-2 \phi_p} $$ 
-Si aplicamos la tensión $V_{BS}$, la misma afecta la caída del [[Potencial eléctrico|potencial]] en el [[Semiconductor]], dando que $V_B = -2 \phi_p$ pasa a ser $V_B = -2 \phi_p - V_{BS}$
+Si aplicamos la tensión $V_{BS}$, la misma afecta la caída del [[Función potencial|potencial]] en el [[Semiconductor]], dando que $V_B = -2 \phi_p$ pasa a ser $V_B = -2 \phi_p - V_{BS}$
 
 Además la [[Tensión|diferencia de potencial]] entre el Gate y el semiconductor también se incrementa $-V_{BS}$. Por lo que podemos reescribir la ecuación como $$ V_T - V_{FB} - V_{BS} = - 2\phi_p - V_{BS} + \gamma \sqrt{-2 \phi_p - V_{BS}} $$ despejando, obtenemos $$ V_T(V_{BS}) = V_{FB} - 2\phi_p + \gamma \sqrt{-2 \phi_p - V_{BS}} $$
 Si definimos $V_{T0} = V_T(V_{BS} = 0)$ podemos reescribirla como $$ V_T(V_{BS}) = V_{T0} + \gamma ~ \left( \sqrt{-2 \phi_p - V_{BS}} - \sqrt{-2 \phi_p} \right) $$

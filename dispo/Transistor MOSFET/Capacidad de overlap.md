@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Es la [[Capacitancia|capacitancia]] de una [[Estructura Metal-Óxido-Semiconductor (MOS)|estructura MOS]] parásita debido a que las difusiones de Source y Drain se extienden por debajo del óxido de Gate
+Es la [[Capacitancia|capacitancia]] de una [[Estructura Metal-Óxido-Semiconductor|estructura MOS]] parásita debido a que las difusiones de Source y Drain se extienden por debajo del óxido de Gate
 
 ![[Capacidad de overlap.webp]]
 

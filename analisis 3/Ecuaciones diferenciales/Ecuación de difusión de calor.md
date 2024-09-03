@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-El problema de difusión del calor en un [[Recinto compacto]] $K \subset \mathbb R^n$ es $$ \begin{cases} 
+El problema de difusión del calor en un [[Conjunto compacto]] $K \subset \mathbb R^n$ es $$ \begin{cases} 
 	\Delta u(x, t) - k \displaystyle \frac{\partial u(x, t)}{\partial t} = 0 && x \in K', t > 0 \\
 	u(x, t) = \varphi(x, t) && x \in \partial K, t \ge 0 \\
 	u(x, 0) = u_0(X) && x \in K

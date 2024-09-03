@@ -4,6 +4,8 @@ tags:
   - algebra-2/Espacios-euclídeos
   - nota/facultad
   - analisis-2/Nomenclatura
+aliases:
+  - Módulo
 ---
 ### Definición
 ---

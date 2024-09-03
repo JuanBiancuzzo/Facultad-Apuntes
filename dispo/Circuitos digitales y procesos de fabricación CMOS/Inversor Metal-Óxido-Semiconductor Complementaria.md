@@ -43,7 +43,7 @@ El [[Circuito eléctrico|circuito]] es
 \end{document}
 ```
 
-Este dispositivo puede implementarse solo en tecnología [[Estructura Metal-Óxido-Semiconductor (MOS)|MOS]] complementaria (CMOS) ya que requiere un [[Transistor|transistor]] de cada tipo
+Este dispositivo puede implementarse solo en tecnología [[Estructura Metal-Óxido-Semiconductor|MOS]] complementaria (CMOS) ya que requiere un [[Transistor|transistor]] de cada tipo
 
 #### Principio de funcionamiento
 ---

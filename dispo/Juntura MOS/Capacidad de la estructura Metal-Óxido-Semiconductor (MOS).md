@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-La [[Estructura Metal-Óxido-Semiconductor (MOS)|estructura MOS]] es muy similar a un [[Capacitor de placas planas paralelas]], donde una de las placas se constituye con un [[Semiconductor]] en lugar de un metal.
+La [[Estructura Metal-Óxido-Semiconductor|estructura MOS]] es muy similar a un [[Capacitor de placas planas paralelas]], donde una de las placas se constituye con un [[Semiconductor]] en lugar de un metal.
 
 ![[Curva C-V teórica de la estructura MOS.webp]]
 
@@ -16,14 +16,14 @@ Con $V_{GB} < V_{FB}$
 
 ![[Acumulación de la estructura Metal-Óxido-Semiconductor (MOS)#Densidad de Carga eléctrica carga espacial]]
 
-Toda la [[Carga eléctrica|carga]] se encuentra en la interfaz con el aislante, y el [[Potencial eléctrico|potencial eléctrico]] se aplica al aislante $$ v_{ox} = v_{GB} - V_{FB} = E ~ t_{ox} $$
+Toda la [[Carga eléctrica|carga]] se encuentra en la interfaz con el aislante, y el [[Función potencial|potencial eléctrico]] se aplica al aislante $$ v_{ox} = v_{GB} - V_{FB} = E ~ t_{ox} $$
 La carga por unidad de área en la compuerta es $$ Q'(v_{GB}) = \frac{\varepsilon_{ox}}{t_{ox}} (v_{GB} - V_{FB}) = C'_{ox}(v_{GB} - V_{FB}) $$ $$ C' = C'_{ox} $$ donde $C'_{ox}$ es la [[Capacidad de óxido|capacidad del óxido]]
 
-#### En [[Vaciamiento de la estructura Metal-Óxido-Semiconductor (MOS)|vaciamiento]]
+#### En [[Vaciamiento de la estructura Metal-Óxido-Semiconductor|vaciamiento]]
 ---
 Con $V_{FB} < V_{GB} < V_{T}$ 
 
-![[Vaciamiento de la estructura Metal-Óxido-Semiconductor (MOS)#Densidad de Carga eléctrica carga espacial]]
+![[Vaciamiento de la estructura Metal-Óxido-Semiconductor#Densidad de Carga eléctrica carga espacial]]
 
 La [[Carga eléctrica|carga]] se distribuye a lo largo de la SCR. La extensión de la SCR depende de $v_{GB}$ por lo que $$ \begin{matrix} 
 	Q'(v_{GB}) = q ~ N_a ~ x_d(v_{GB}) \\ 

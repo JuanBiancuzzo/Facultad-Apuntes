@@ -23,7 +23,7 @@ El IGBT presenta las características de entrada del [[Transistor de efecto de c
 
 #### Estructura
 ---
-* La [[Estructura Metal-Óxido-Semiconductor (MOS)|estructura MOS]] permite controlar la circulación de carga entre la regiones $n+$ y la región $n-$
+* La [[Estructura Metal-Óxido-Semiconductor|estructura MOS]] permite controlar la circulación de carga entre la regiones $n+$ y la región $n-$
 * La región $n-$ se comporta como la base de un [[Transistor bipolar de juntura#PNP|transistor PNP]]
 * La corriente que circula entre el emisor y colector del PNP es controlada por la tensión de gate
 

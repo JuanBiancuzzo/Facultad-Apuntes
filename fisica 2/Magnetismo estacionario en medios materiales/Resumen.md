@@ -1,8 +1,8 @@
 ---
-capitulo: 7
-tags: 
- - fisica-2/Magnetismo-estacionario-en-medios-materiales
- - resumen
+capitulo: 6
+tags:
+  - fisica-2/Magnetismo-estacionario-en-medios-materiales
+  - resumen
 ---
 ### Índice 
 ---

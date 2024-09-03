@@ -8,7 +8,7 @@ tags:
 ---
 ### Definición
 ---
-Este transistor tiene como componente principal a la [[Estructura Metal-Óxido-Semiconductor (MOS)|estructura MOS]]
+Este transistor tiene como componente principal a la [[Estructura Metal-Óxido-Semiconductor|estructura MOS]]
 
 ```tikz
 \begin{document} 
@@ -348,7 +348,7 @@ Donde la $Q_G$ se mantiene, pero la carga $Q_B$ y $Q_n$ se compensan entre sí p
 ---
 ![[Campo eléctrico en la capa de inversión de un MOSFET al aumentar la tensión Vbs.webp]]
 
-##### [[Potencial eléctrico|Función potencial]]
+##### [[Función potencial|Función potencial]]
 ---
 ![[Función potencial en la capa de inversión de un MOSFET al aumentar la tensión Vbs.webp]]
 

@@ -1,8 +1,8 @@
 ---
-capitulo: 8
-tags: 
- - fisica-2/Inducción-electromagnética
- - resumen
+capitulo: 7
+tags:
+  - fisica-2/Inducción-electromagnética
+  - resumen
 ---
 ### Índice 
 ---
