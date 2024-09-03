@@ -53,6 +53,7 @@ Un listado de los temas investigados y su estado actual
 | [Dibujo](dibujo/Índice.md)                                           | Falta resumir |
 | [Game creation](game%20creation/Índice.md)                           | Falta resumir |
 | [Game engine](game%20engine/Índice.md)                               | Falta resumir |
+| [Generación de energía](generación%20de%20energía/Índice.md)         | Sin empezar   |
 | [Generación procedural](generación%20procedural/Índice.md)           | Falta resumir |
 | [Herramientas](herramientas/Índice.md)                               | Falta resumir |
 | [Lagrangian mechanics](lagrangian%20mechanics/Índice.md)             | Falta resumir |
