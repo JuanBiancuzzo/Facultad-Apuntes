@@ -51,6 +51,7 @@ Un listado de los temas investigados y su estado actual
 | [Compilador](compilador/Índice.md)                                   | Sin empezar   |
 | [Data structures](data%20structures/Índice.md)                       | Falta resumir |
 | [Dibujo](dibujo/Índice.md)                                           | Falta resumir |
+| [Física](física/Índice.md)                                           | Sin empezar   |
 | [Game creation](game%20creation/Índice.md)                           | Falta resumir |
 | [Game engine](game%20engine/Índice.md)                               | Falta resumir |
 | [Generación de energía](generación%20de%20energía/Índice.md)         | Sin empezar   |
