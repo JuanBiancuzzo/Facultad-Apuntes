@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - Ley de Ampere
+  - Ley de Ampère-Maxwell#Ley de Ampère-Maxwell
+  - Ley de Ampere-Maxwell#Ley de Ampère-Maxwell
 ---
 ### Definición
 ---
@@ -22,4 +24,11 @@ Tomando el [[Material magnético#^campo-magnetico|campo magnético real]] se pue
 $$ \begin{align} 
     \oint_C \vec{H} ~ d\vec{l} = i_{real} \tag{integral} \\
     \nabla \times \vec{H} = \vec{J}_{real} \tag{diferencial}
+\end{align} $$
+
+#### Ley de Ampère-Maxwell
+---
+Maxwell introdujo un término adicional, que corresponde a las [[Campo de desplazamiento|corrientes de desplazamiento]]. Esto se debe a que cuando trabajamos con corrientes que dependen del tiempo, la ley de ampere es inválida. El flujo de la corriente sobre una superficie cerrada no es nulo (como indica la ley original) $$ \begin{align} 
+    \oint_C \vec{H} ~ d\vec{l} &= \iint_S \vec{J} ~ d\vec{A} + \frac{d}{dt} \iint_S \vec{D} ~ d\vec{A} \tag{integral} \\ 
+    \nabla \times \vec{H} &= \vec{J} + \frac{\partial\vec{D}}{\partial t} \tag{diferencial}
 \end{align} $$

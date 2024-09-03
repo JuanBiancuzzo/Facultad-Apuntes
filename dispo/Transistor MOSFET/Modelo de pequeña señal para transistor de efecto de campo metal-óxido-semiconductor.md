@@ -87,9 +87,9 @@ Dándonos el modelo completo que pequeña señal a baja frecuencia
 \end{document}
 ```
 
-#### [[Modelo|Modelo]] para altas frecuencias
+#### Modelo para altas frecuencias
 ---
-Las [[Capacitancia|capacitancias]] parásitas del [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] limitan su respuesta dinámica y en [[Función senoidal#Frecuencia|frecuencia]]. El régimen más importante para aplicaciones analógicas es el de [[Saturación del transistor de efecto de campo metal-óxido-semiconductor|saturación]].
+Las [[Capacitancia|capacitancias]] parásitas del [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] limitan su respuesta dinámica y en [[Función periódica#Frecuencia|frecuencia]]. El régimen más importante para aplicaciones analógicas es el de [[Saturación del transistor de efecto de campo metal-óxido-semiconductor|saturación]].
 
 ![[Estructura MOSFET con capacitancias.webp]]
 

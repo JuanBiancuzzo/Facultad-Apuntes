@@ -54,7 +54,7 @@ Teniendo un amplificador básico para el cual plantear una idea general, vamos a
 
 ![[Amplificador básico.png]]
 
-Para resolverlo, debemos encontrar el punto de continua o reposo ($Q$), donde para [[Función senoidal#Frecuencia|frecuencia]] $0$ (es decir continua) los [[Capacitor|capacitores]] se comportan como abiertos que ya están cargados 
+Para resolverlo, debemos encontrar el punto de continua o reposo ($Q$), donde para [[Función periódica#Frecuencia|frecuencia]] $0$ (es decir continua) los [[Capacitor|capacitores]] se comportan como abiertos que ya están cargados 
 
 ![[Amplificador general en continua.png]]
 

@@ -10,7 +10,7 @@ Se puede definir la transferencia de un [[Sistema lineal e invariante en el tiem
 
 #### Transformada de Laplace
 ---
-Usando la [[Transformada de Laplace|transformada de Laplace]] de la función de transferencia $H(s)$, (notemos que se puede hacer lo mismo en estos casos para la [[Transformada de Fourier|transformada de Fourier]]) es el cociente del [[Fasor|fasor]], que depende en [[Función senoidal#Frecuencia|frecuencia]], de salida $Y(s)$ y el fasor de entrada $X(s)$, suponiendo que todas las condiciones iniciales son nulas $$ H(s) = \frac{Y(s)}{X(s)} $$
+Usando la [[Transformada de Laplace|transformada de Laplace]] de la función de transferencia $H(s)$, (notemos que se puede hacer lo mismo en estos casos para la [[Transformada de Fourier|transformada de Fourier]]) es el cociente del [[Fasor|fasor]], que depende en [[Función periódica#Frecuencia|frecuencia]], de salida $Y(s)$ y el fasor de entrada $X(s)$, suponiendo que todas las condiciones iniciales son nulas $$ H(s) = \frac{Y(s)}{X(s)} $$
 Notemos que usando la [[Transformada de Fourier#Convolución|propiedad de convolución]] de la transformada, y la definición mencionada anteriormente $$ Y(s) = H(s) ~ X(s) $$
 
 Esta función también se puede expresar como un cociente de [[Función polinomica|polinomios]] $$ H(s) = \frac{N(s)}{D(s)} $$

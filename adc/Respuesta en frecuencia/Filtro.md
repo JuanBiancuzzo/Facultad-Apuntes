@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Un filtro es un [[Circuito eléctrico|circuito]] que tiene una [[Respuesta en frecuencia|respuesta en frecuencia]] tal que permite eliminar ciertas componentes de [[Función senoidal#Frecuencia|frecuencia]] no deseadas.
+Un filtro es un [[Circuito eléctrico|circuito]] que tiene una [[Respuesta en frecuencia|respuesta en frecuencia]] tal que permite eliminar ciertas componentes de [[Función periódica#Frecuencia|frecuencia]] no deseadas.
 
 Por ejemplo, en [[Sistema|sistemas]] de audio, existen filtros para eliminar el ruido que esta compuesto por altas frecuencias, y los llamados ecualizadores que permiten modular la respuesta en frecuencia del equipo.
 

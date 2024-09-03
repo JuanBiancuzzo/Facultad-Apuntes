@@ -91,12 +91,16 @@ La carga final del capacitor resulta proporcional a la diferencia de potencial d
 
 #### Relación con la tensión y la corriente
 ---
-Nos interesa conocer la relación entre la [[Tensión|tensión]] y la [[Corriente eléctrica|corriente]] del elemento, ya sea la forma [[Ecuación diferencial ordinaria|diferencial]], como la forma integral $$ \begin{CD} 
+Nos interesa conocer la relación entre la [[Tensión|tensión]] y la [[Corriente eléctrica|corriente]] del elemento, ya sea la forma [[Ecuación diferencial ordinaria|diferencial]], como la forma integral 
+
+$$ \begin{CD} 
 	i = \frac{dq}{dt} @>>> \boxed{i = C \frac{dv}{dt}} \\
 	& @VVV \\
 	& & v(t) = \frac{1}{C}\int_{-\infty}^t i(\tau) ~d\tau  & @>>> 
 	\boxed{v(t) = \frac{1}{C} \int_{t_0}^t i(\tau) ~d\tau + v(t_0)}
 \end{CD} $$
+^relacion-tension-corriente
+
 Notemos que la tensión sobre un capacitor debe ser continua
 
 #### Potencia instantánea

@@ -1,12 +1,18 @@
 ---
 dia: 2024-08-29
-tags: 
- - estructura/Microarquitectura
- - nota/facultad
+tags:
+  - estructura/Microarquitectura
+  - nota/facultad
+aliases:
+  - Unidad de datos de la arquitectura ARC#En la arquitectura ARC
 ---
 ### Definición
 ---
-La unidad de datos es la parte del procesador que se encarga de realizar las operaciones y guardar los registros. Para realizar esto utiliza tres buses. Se puede realizar con menos buses, pero son soluciones más lentas, ya que requiere más ciclos de reloj para guardar los datos a usar en registros correspondientes, para luego ser usados
+La unidad de datos es la parte del [[Procesador|procesador]] que se encarga de realizar las operaciones y guardar los registros
+
+#### En la arquitectura ARC
+---
+Para realizar esto utiliza tres buses. Se puede realizar con menos buses, pero son soluciones más lentas, ya que requiere más ciclos de reloj para guardar los datos a usar en registros correspondientes, para luego ser usados
 
 ![[Unidad de datos.png]]
 
@@ -26,7 +32,7 @@ Además de los registros utilizados por el programador, el microprocesador tiene
 * Registro IR
     * En este registro se cargará la instrucción que se debe ejecutar
 
-La unidad de control contiene también el multiplexor del bus C. Este define si debe leer la información proveniente de la ALU o de la línea de datos
+La [[Unidad de control#En la arquitectura ARC|unidad de control]] contiene también el multiplexor del bus C. Este define si debe leer la información proveniente de la ALU o de la línea de datos
 
 No todos los registros se implementan de la misma forma, hay algunos con características especiales
 

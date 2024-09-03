@@ -1,10 +1,18 @@
 ---
 dia: 2024-08-29
-tags: 
- - estructura/Sistema-ARC
- - nota/facultad
+tags:
+  - estructura/Sistema-ARC
+  - nota/facultad
+aliases:
+  - Código de máquina en la arquitectura ARC#En la arquitectura ARC
+referencias:
+  - "219"
 ---
 ### Definición
+---
+El [[Lenguaje|lenguaje]] de máquina o código máquina es el sistema de códigos directamente interpretable por un circuito microprogramable, como el [[Procesador|microprocesador]] de una [[Computadora|computadora]] o el microcontrolador de un autómata<sup><a href="#ref-219" style="color: inherit; text-decoration: none;">[219]</a></sup> 
+
+#### En la arquitectura ARC
 ---
 Las [[Set instrucciones ARC#Sintaxis|instrucciones]] son traducidas en código de máquina. Hay $5$ formatos de instrucción
 
@@ -197,3 +205,10 @@ $$ \begin{matrix}
     - El registro tiene el puntero al dato
 - Indexado por Registro
     - Un registro da la dirección inicial, el otro un incremento.
+
+
+### Referencias
+---
+```dataviewjs
+await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+```

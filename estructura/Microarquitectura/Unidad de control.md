@@ -1,10 +1,21 @@
 ---
 dia: 2024-08-29
-tags: 
- - estructura/Microarquitectura
- - nota/facultad
+tags:
+  - estructura/Microarquitectura
+  - nota/facultad
+aliases:
+  - Unidad de control de la arquitectura ARC#En la arquitectura ARC
+  - UC
+  - Control unit
+  - CU
+referencias:
+  - "220"
 ---
 ### Definición
+---
+La unidad de control, es uno de los tres bloques funcionales principales en los que se divide una [[Procesador|CPU]]. Su función es buscar las instrucciones en la [[Memoria|memoria]] principal, decodificarlas y ejecutarlas, empleando para ello la unidad de proceso<sup><a href="#ref-220" style="color: inherit; text-decoration: none;">[220]</a></sup> 
+
+#### En la arquitectura ARC
 ---
 Hay dos formas de implementarla, con lógica micro-programada o con lógica cableada. El diseño cableado puede ser más difícil de diseñar y de modificar. El microprograma se puede grabar, mientras que el diseño cableado debe cambiar completamente. Sin embargo, es un método más rápido. Nos vamos a centrar en diseño micro-programado
 
@@ -29,3 +40,11 @@ Para diseñarlo, se utilizan [[Contador|contadores]] que permiten indicar en que
     * Estos tres multiplexores deciden si tomar el registro indicado por el MIR o por el IR, dependiendo de los correspondientes bits en el MIR
 
 Como la lectura de [[Memoria|memoria]] puede ser más lenta, se utiliza el ACK (Acknowledge), por este canal se envía un 1 una vez que termino la operación en memoria. Permite indicarle a la unidad de control que puede seguir con la próxima instrucción
+
+
+
+### Referencias
+---
+```dataviewjs
+await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+```

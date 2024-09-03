@@ -38,7 +38,7 @@ No siempre son periódicas, por ejemplo si tenemos $T_1 = 1$ y $T_2 = \sqrt{2}$ 
 Hay infinitas exponenciales complejas relacionadas armónicamente de periodo $T_0$ $$ \phi_k(t) = \exp\left( j\omega_k t \right) = \exp\left( jk\omega_0 ~ t \right) = \exp\left( jk \frac{2\pi}{T_0} t \right) $$
 ###### Velocidad de variación
 ---
-La velocidad de variación aumenta linealmente con la [[Función senoidal#Frecuencia|frecuencia]]
+La velocidad de variación aumenta linealmente con la [[Función periódica#Frecuencia|frecuencia]]
 
 ```tikz
 \begin{document} 

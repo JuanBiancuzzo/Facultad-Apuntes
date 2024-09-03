@@ -2,6 +2,7 @@
 dia: 2023-12-02
 aliases:
   - TLB
+  - Buffer de traducción adelantada
 tags:
   - sisop/Virtualización-de-memoria
   - nota/facultad

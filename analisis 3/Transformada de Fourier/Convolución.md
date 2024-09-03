@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Sean $f, ~g \in L^1(\mathbb{R}, \mathbb{C})$ (donde $L^1$ es [[Conjunto de Lebesgue de orden n|conjunto de Lebesgue de orden 1]]) tales que $\overline{f}$ y $\overline{g}$ son acotadas. Entonces, para cada $x \in \mathbb{R}$, la [[Integral impropia|integral]] $\int_{-\infty}^{+\infty} f(x - t) \cdot g(t) dt$ es [[Absolutamente integrable|absolutamente convergente]]. Queda entonces bien definida la función $f*g : \mathbb{R} \to \mathbb{C}$ tal que para cada $x \in \mathbb{R}$: $$ (f * g)(x) = \int_{-\infty}^{+\infty} f(x - t) \cdot g(t) dt $$
+Sean $f, ~g \in L^1(\mathbb{R}, \mathbb{C})$ (donde $L^1$ es [[Conjunto de Lebesgue de orden n|conjunto de Lebesgue de orden 1]]) tales que $\overline{f}$ y $\overline{g}$ son acotadas. Entonces, para cada $x \in \mathbb{R}$, la [[Integral impropia|integral]] $\int_{-\infty}^{+\infty} f(x - t) \cdot g(t) dt$ es [[Absolutamente integrable|absolutamente convergente]]. Queda entonces bien definida la [[Función|función]] $f*g : \mathbb{R} \to \mathbb{C}$ tal que para cada $x \in \mathbb{R}$: $$ (f * g)(x) = \int_{-\infty}^{+\infty} f(x - t) \cdot g(t) dt $$
 Esta función, que se define como la convolución entre $f$ y $g$, es [[Absolutamente integrable]] y verifica la desigualdad $$ \Vert f * g \Vert_1 \le \Vert f \Vert_1 ~ \Vert g \Vert_1 $$
 
 #### Suma de convolución

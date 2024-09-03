@@ -4,6 +4,8 @@ tags:
   - intro/Reducción-de-circuitos
   - nota/facultad
   - fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+aliases:
+  - Generador de tensión
 ---
 ### Definición
 ---

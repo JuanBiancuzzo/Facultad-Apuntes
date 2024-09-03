@@ -13,7 +13,7 @@ Es un [[Archivo|archivo]] que posee toda la información de como construir un [[
 	* Cada archivo ejecutable posee meta información describiendo el formato ejecutable. Esto permite al [[Kernel]] interpretar la información contenida en el mismo archivo
 * Common Object File Format
 * Executable and [[Compilador#Fase de linkeo|linking]] format
-* Instrucciones de [[Lenguaje de máquina]]
+* Instrucciones de [[Código de máquina|lenguaje de máquina]]
 	* Almacena el código del algoritmo del programa
 * Dirección del punto de entrada del programa
 	* Identifica la [[Dirección de memoria|dirección]] la de instrucción con la cual la ejecución del programa debe iniciar

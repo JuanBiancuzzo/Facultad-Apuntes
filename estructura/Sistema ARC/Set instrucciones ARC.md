@@ -4,15 +4,15 @@ tags:
   - estructura/Sistema-ARC
   - nota/facultad
 aliases:
-  - Program Status Register
-  - PSR
+  - Program Status Register#^PSR
+  - PSR#^PSR
   - Sintaxis de ensamblador en ARC#Sintaxis
   - Subrutinas de ensamblador en ARC#Subrutinas
   - Macros de ensamblador en ARC#Macros
 ---
 ### Definición
 ---
-El Program Status Register (PSR) guarda los flags de [[Unidad Aritmético Lógica|ALU]], las instrucciones son las siguientes
+El Program Status Register (PSR) guarda los flags de [[Unidad Aritmético Lógica|ALU]], las instrucciones son las siguientes ^PSR
 
 | Mnemónico | Función                                                |
 | --------- | ------------------------------------------------------ |
@@ -99,4 +99,4 @@ Las macro se accede en tiempo de ensamblado, por lo que es más rápido. La subr
 
 Los parámetros de una macro son interpretados por el ensamblador, mientras que los de una subrutina es accedida por [[Memoria|memoria]] o [[Registro|registro]]
 
-El [[Código de máquina de la arquitectura ARC|código de máquina]] de una macro se repite tantas veces como se invoque. En el caso de la subrutina, el código se encuentra en un solo lugar y se referencia a él cuándo se necesita
+El [[Código de máquina|código de máquina]] de una macro se repite tantas veces como se invoque. En el caso de la subrutina, el código se encuentra en un solo lugar y se referencia a él cuándo se necesita

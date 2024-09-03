@@ -45,13 +45,13 @@ En el TBJ la [[Corriente eléctrica#Densidad de corriente volumétrica|corriente
 ---
 Es una aproximación de las características 
 
-| Parámetros                                             | [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] | [[Transistor bipolar de juntura|TBJ]] |
-| ------------------------------------------------------ | ---------------------------------------------------------------------------- | -------------------------------------------- |
-| [[Impedancia\|Impedancia]] de entrada                  | Alta $(10^{10} ~ \Omega)$                                                    | Media $(10^{4} ~ \Omega)$                    |
-| [[Ganancia\|Ganancia]] en corriente                    | Alta $(10^{7})$                                                              | Media $(10 ~ \text{a} ~ 100)$                |
-| Resistencia ON (conducción)                            | Media / Alta                                                                 | Baja                                         |
-| Resistencia OFF (corte)                                | Alta                                                                         | Alta                                         |
-| Voltaje $V_{CE}$/$V_{DS}$ máx. aplicable               | Alto $(1000 ~ V)$                                                            | Alto $(1200 ~ V)$                            |
-| Máxima [[Temperatura\|temperatura]]                    | Alta $(200^\circ C)$                                                         | Media $(150^\circ C)$                        |
-| [[Función senoidal#Frecuencia\|Frecuencia]] de trabajo | Alta $(100-500 ~ Khz)$                                                       | Baja $(10-80 ~ Khz)$                         |
-| Costo                                                  | Alto                                                                         | Medio                                        |
+| Parámetros                                              | [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] | [[Transistor bipolar de juntura|TBJ]] |
+| ------------------------------------------------------- | --------------------------------------------------------- | ----------------------------- | ------------------------------- | ----- |
+| [[Impedancia\|Impedancia]] de entrada                   | Alta $(10^{10} ~ \Omega)$                                                    | Media $(10^{4} ~ \Omega)$                    |
+| [[Ganancia\|Ganancia]] en corriente                     | Alta $(10^{7})$                                                              | Media $(10 ~ \text{a} ~ 100)$                |
+| Resistencia ON (conducción)                             | Media / Alta                                                                 | Baja                                         |
+| Resistencia OFF (corte)                                 | Alta                                                                         | Alta                                         |
+| Voltaje $V_{CE}$/$V_{DS}$ máx. aplicable                | Alto $(1000 ~ V)$                                                            | Alto $(1200 ~ V)$                            |
+| Máxima [[Temperatura\|temperatura]]                     | Alta $(200^\circ C)$                                                         | Media $(150^\circ C)$                        |
+| [[Función periódica#Frecuencia\|Frecuencia]] de trabajo | Alta $(100-500 ~ Khz)$                                                       | Baja $(10-80 ~ Khz)$                         |
+| Costo                                                   | Alto                                                                         | Medio                                        |

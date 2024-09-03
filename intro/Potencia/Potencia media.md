@@ -12,7 +12,7 @@ $$
 P_m= \frac{1}{T} \cdot \int_{0}^{T} p(t) \cdot dt
 \end{align}
 $$
-La potencia promedio, es el promedio de la [[Potencia instantánea|potencia instantánea]] a lo largo de un [[Función senoidal#Función periodica Periodo|periodo]]
+La potencia promedio, es el promedio de la [[Potencia instantánea|potencia instantánea]] a lo largo de un [[Función periódica#^periodo|periodo]]
 $$ P_m= \frac{1}{T} \cdot \int_{0}^{T} v(t) ~ i(t) ~ dt $$
 
 Tomando estas como funciones [[Función senoidal|senoidales]] $$ \begin{align} 

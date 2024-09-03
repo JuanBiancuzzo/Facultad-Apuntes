@@ -25,7 +25,7 @@ Un listado de materias y su estado actual
 | [Electromagnetismo aplicado](electro/Electromagnetismo%20aplicado%20(TB069).md)                                | TB069  | Voy a cursarla este cuatri                                    |
 | [Estructura del computador](estructura/Estructura%20del%20computador%20(6670).md)                              | 6670   | Terminado                                                     |
 | [Física 1](fisica%201/Física%201%20(8201).md)                                                                  | 8201   | Falta pasar el resumen                                        |
-| [Física 2](fisica%202/Física%202%20(6203).md)                                                                  | 6203   | Falta pasar el resumen                                        |
+| [Física 2](fisica%202/Física%202%20(6203).md)                                                                  | 6203   | Falta resumir sobre termodinámica                             |
 | [Física 3](fisica%203/Física%203%20(8203).md)                                                                  | 8203   | Falta pasar el resumen                                        |
 | [Introducción a la ingeniería electronica](intro/Introducción%20a%20la%20ingeniería%20electronica%20(8602).md) | 8602   | Terminado                                                     |
 | [Legislación y ejercicio profesional](legal/Legislación%20y%20ejercicio%20profesional%20(9111).md)             | 9111   | Falta terminar los últimos capítulos y acomodar los artículos |

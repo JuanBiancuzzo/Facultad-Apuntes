@@ -7,6 +7,8 @@ aliases:
   - Ley de Faraday-Lenz#Ley de Faraday-Lenz
   - Regla de flujo#Ley de Faraday-Lenz
   - Ley de Maxwell-Faraday#Ley de Maxwell-Faraday
+  - Tensión inducida#^tension-inducida
+  - Fuerza electromotriz inducida#^tension-inducida
 ---
 ### Definición
 ---
@@ -18,7 +20,11 @@ Esta ley, también conocida como regla de flujo, propone que la variación del f
 
 La corriente inducida va a generar un campo magnético, que va a contrarrestar la variación de flujo del campo magnético inicial 
 
-Expresada matemáticamente $$ \mathcal{E} = -\frac{d\phi}{dt} $$
+Expresada matemáticamente $$ \mathcal{E} = -\frac{d\phi}{dt} $$ ^tension-inducida
 #### Ley de Maxwell-Faraday
 ---
-Si desarrollamos la expresión anterior y la relacionamos con la circulación del [[Campo eléctrico|campo eléctrico]], llegamos a la primera definición que vincula el campo eléctrico con el [[Campo de inducción magnética|campo de inducción magnética]] $$ \nabla \times \vec{E} = - \frac{\partial\vec{B}}{\partial t} $$
+Maxwell reinterpretó la ley de Faraday. Indicando que todo campo variable en el tiempo genera, además de un [[Campo de inducción magnética|campo magnético inducido]], un [[Campo eléctrico|campo eléctrico]] $$ \begin{align} 
+    \oint_{C} \vec{E} ~ d\vec{l} &= -\frac{d}{dt} \iint_S \vec{B} ~ d\vec{A} \tag{integral} \\
+    \nabla \times \vec{E} &= - \frac{\partial\vec{B}}{\partial t} \tag{diferencial}
+\end{align} $$
+Esta nueva interpretación parece cerrar el ciclo del electromagnetismo. Los campos eléctricos ejercen [[Ley de Coulomb|fuerzas]] sobre las [[Carga eléctrica|cargas]] estacionarias, quienes crean campos eléctricos. Por otro lado, los campos magnéticos ejercen fuerzas sobre las corrientes, quienes crean campos magnéticos. Gracias a la [[Ley de Ohm|ley de Ohm]], [[Ley de Biot y Savalt|Biot-Savalt]] y [[Ley de Ampère|Ampère]], encontramos que los campos eléctricos generan corrientes y a su vez, campos magnéticos

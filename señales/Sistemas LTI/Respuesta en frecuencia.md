@@ -8,9 +8,9 @@ tags:
 ---
 ### Definición
 ---
-La respuesta en [[Función senoidal#Frecuencia|frecuencia]] de un [[Circuito eléctrico|circuito]] es la variación de su comportamiento al cambiar la frecuencia de la [[Señal|señal]], donde se define como $h(t)$
+La respuesta en [[Función periódica#Frecuencia|frecuencia]] de un [[Circuito eléctrico|circuito]] es la variación de su comportamiento al cambiar la frecuencia de la [[Señal|señal]], donde se define como $h(t)$
 
-Si recordamos que una señal [[Función senoidal#Función periodica Periodo|periódica]] puede descomponerse en una suma de [[Función senoidal|senoides]] por la [[Serie de Fourier|serie de Fourier]] y la propiedad de [[Circuito lineal|linealidad de los circuitos]], entonces la respuesta en frecuencia brinda una descripción completa del circuito en estado estacionario.
+Si recordamos que una señal [[Función periódica#^periodo|periódica]] puede descomponerse en una suma de [[Función senoidal|senoides]] por la [[Serie de Fourier|serie de Fourier]] y la propiedad de [[Circuito lineal|linealidad de los circuitos]], entonces la respuesta en frecuencia brinda una descripción completa del circuito en estado estacionario.
 
 #### Aplicando transformada de Fourier o de Laplace
 ---

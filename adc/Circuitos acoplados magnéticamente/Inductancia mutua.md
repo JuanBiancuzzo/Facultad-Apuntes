@@ -27,5 +27,5 @@ Por cuestiones relacionadas a la [[Conservación de la energía|conservación de
 ---
 Se puede determinar el valor de  $M_{ij}$ como $$ M_{ij} = k ~ \sqrt{L_1 L_2} $$ donde $k$ es el [[Coeficiente de acoplamiento|coeficiente de acoplamiento]]
 
-Como la [[Energía|energía]] almacenada en un [[Circuito eléctrico|circuito]] pasivo no puede ser negativa. Si consideramos el caso con $i_1 > 0$ e $i_2 > 0$ y entrantes por [[Bornes homologos|bornes no homólogos]] $$ \frac{1}{2} L_1 i_1^2 + \frac{1}{2} L_2 i_2^2 - M i_1 i_2 \ge 0 $$
+Como la [[Energía|energía]] almacenada en un [[Circuito eléctrico|circuito]] pasivo no puede ser negativa. Si consideramos el caso con $i_1 > 0$ e $i_2 > 0$ y entrantes por [[Acoplación magnética|bornes no homólogos]] $$ \frac{1}{2} L_1 i_1^2 + \frac{1}{2} L_2 i_2^2 - M i_1 i_2 \ge 0 $$
 Completando cuadrados, se deduce que $$ M \le \sqrt{L_1 L_2} $$

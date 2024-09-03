@@ -4,14 +4,17 @@ tags:
   - intro/Potencia
   - nota/facultad
   - fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - fisica-2/Circuitos-en-régimen-alterno-permanente
+  - adc/Circuitos-en-regimen-senoidal-permanente
 aliases:
   - Balance de potencia#Balance de potencia
+  - Potencia activa
+referencias:
+  - "222"
 ---
 ### Definición
 ---
-Es la variación respecto del tiempo de gasto o absorción de [[Energía]]
-$$ P = \frac{dW}{dt} $$
-
+Es la potencia capaz de transformar la [[Energía|energía]] en [[Trabajo|trabajo]]. Este potencial es, la que realmente es consumida por los [[Circuito eléctrico|circuitos]]. Se designa con la letra $P$ $$ P = \frac{dW}{dt} $$
 ##### Unidad
 ---
 $$ [P] = \frac{J}{s} = \text{Watt} \space (W) $$
@@ -19,3 +22,11 @@ $$ [P] = \frac{J}{s} = \text{Watt} \space (W) $$
 #### Balance de potencia
 ---
 En un [[Circuito eléctrico|circuito]] cerrado, la potencia total del circuito deberá ser nula $$ P_\text{entrada} = P_{absorbida} + P_{disipada} $$
+
+
+### Referencias
+---
+```dataviewjs
+await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+```
+
