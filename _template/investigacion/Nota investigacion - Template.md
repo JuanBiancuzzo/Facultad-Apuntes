@@ -52,6 +52,8 @@
 			numReferencias.push(citar);
 		}
 
+		opciones[0] = "Dejar de citar";
+
 		citar = await preguntar.suggester(tp, opciones, valores,
 			"Agregar una cita", error.Prompt("No se eligió una acción a hacer"), 13
 		);	

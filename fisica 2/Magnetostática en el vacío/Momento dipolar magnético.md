@@ -6,4 +6,4 @@ tags:
 ---
 ### Definición
 ---
-El momento dipolar magnético $\vec{\mu}$ se alinea con el [[Campo magnético|campo magnético]], esta se define como $$ \vec{\mu} = I ~ \vec{A} $$ donde $I$ es la [[Corriente eléctrica|corriente]] y $\vec{A}$ la dirección normal de la [[Superficie|superficie]] cuya magnitud es el área de esa superficie
+El momento dipolar magnético $\vec{\mu}$ se alinea con el [[Campo de inducción magnética|campo magnético]], esta se define como $$ \vec{\mu} = I ~ \vec{A} $$ donde $I$ es la [[Corriente eléctrica|corriente]] y $\vec{A}$ la dirección normal de la [[Superficie|superficie]] cuya magnitud es el área de esa superficie

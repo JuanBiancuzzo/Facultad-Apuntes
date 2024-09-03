@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Por la experiencia, se encontró que los [[Campo magnético|campos magnéticos]] son generados por [[Carga eléctrica|cargas]] en movimiento ([[Corriente eléctrica|corrientes]]). Además, se encontraron las siguientes relaciones $$ \begin{matrix} 
+Por la experiencia, se encontró que los [[Campo de inducción magnética|campos magnéticos]] son generados por [[Carga eléctrica|cargas]] en movimiento ([[Corriente eléctrica|corrientes]]). Además, se encontraron las siguientes relaciones $$ \begin{matrix} 
 \displaystyle \vec{B} \perp I ~ d\vec{l} \\
 \displaystyle \vec{B} \perp (\vec{r} - \vec{r}') \\
 \displaystyle \lVert \vec{B} \rVert \propto \frac{1}{\lVert \vec{r} - \vec{r}' \rVert^2} \\

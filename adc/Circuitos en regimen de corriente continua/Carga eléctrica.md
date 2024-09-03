@@ -20,7 +20,7 @@ Las cargas del [[Dieléctrico|dieléctrico]] se dividen en dos. Las cargas en la
 
 ##### Cargas volumétricas
 ---
-A partir de la [[Teorema de Gauss#Para el campo eléctrico|ley de Gauss]] en su forma diferencial, y las [[Dieléctrico#^relacion-constitutiva|relaciones constitutivas]], podemos relación la densidad volumétrica de cargas polarizadas con la densidad volumétrica de cargas libres en el dieléctrico $$ \rho_P = - \frac{X_E}{\epsilon_r} ~ \rho_\text{libres} $$ siendo $X_E$ la [[Material lineal, isótropo y homogéneo#^susceptibilidad-dielectrica|susceptibilidad dieléctrica]] y $\epsilon_r$ la [[Permitividad eléctrica#Permitividad dieléctrica relativa|permitividad dieléctrica relativa]]
+A partir de la [[Teorema de Gauss#Para el campo eléctrico|ley de Gauss]] en su forma diferencial, y las [[Relación constitutiva#Para campo eléctrico|relaciones constitutivas]], podemos relación la densidad volumétrica de cargas polarizadas con la densidad volumétrica de cargas libres en el dieléctrico $$ \rho_P = - \frac{X_E}{\epsilon_r} ~ \rho_\text{libres} $$ siendo $X_E$ la [[Material lineal, isótropo y homogéneo#^susceptibilidad-dielectrica|susceptibilidad dieléctrica]] y $\epsilon_r$ la [[Permitividad eléctrica#Permitividad dieléctrica relativa|permitividad dieléctrica relativa]]
 
 Si el dieléctrico está descargado, entonces la densidad volumétrica de cargas polarizadas es nula
 

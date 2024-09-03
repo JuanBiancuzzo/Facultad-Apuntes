@@ -272,4 +272,4 @@ Las líneas de [[Campo eléctrico|campo]] son salientes de las [[Carga eléctric
 
 #### Caso campo magnético
 ---
-Las líneas de [[Campo magnético|campo]] son salientes del polo positivo (fuentes), y entrantes en el polo negativo (sumidero)
+Las líneas de [[Campo de inducción magnética|campo]] son salientes del polo positivo (fuentes), y entrantes en el polo negativo (sumidero)

@@ -5,9 +5,6 @@ tags:
   - nota/facultad
 aliases:
   - Aislante
-  - Campo de desplazamiento#^campo-desplazamiento
-  - Campo de polarización#^campo-polarizacion
-  - Relación constitutiva#^relacion-constitutiva
 ---
 ### Definición
 ---
@@ -111,4 +108,4 @@ Como no sabemos las cargas de polarización, entonces vamos a asignar a cada tip
 * [[Campo de desplazamiento]] ![[Campo de desplazamiento#^bcec0e]]  
 * [[Campo de polarización]] ![[Campo de polarización#^e697cd]]
 
-Si combinamos estas definiciones, llegamos a las relación constitutiva $$ \vec{E} = \frac{1}{\epsilon_0} \left( \vec{D} - \vec{P} \right) \iff \vec{D} = \epsilon_0 ~ \vec{E} + \vec{P} $$ ^relacion-constitutiva
+Si combinamos estas definiciones, llegamos a las [[Relación constitutiva#Para campo eléctrico|relación constitutiva]]

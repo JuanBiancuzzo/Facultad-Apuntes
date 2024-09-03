@@ -9,7 +9,7 @@
 
 	let titulo = tp.file.title;
 	if (titulo.startsWith("Untitle")) {
-		titulo = await preguntar.prompt(tp, "Nombre:", "No se ingresó un nombre para la nota");
+		titulo = await preguntar.prompt(tp, "Nombre:", error.Prompt("No se ingresó un nombre para la nota"));
 	}
 
 	let resumenes = dv.pages(`"${carpeta}" and #resumen`)

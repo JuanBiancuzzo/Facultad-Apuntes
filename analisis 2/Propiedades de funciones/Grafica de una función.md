@@ -7,7 +7,7 @@ tags:
 ---
 ### Definición
 ---
-Cuando teníamos una función de una variable real, teníamos su representación geométrica como 
+Cuando teníamos una [[Función|función]] de una variable real, teníamos su representación geométrica como 
 
 ```tikz
 \usepackage{pgfplots}

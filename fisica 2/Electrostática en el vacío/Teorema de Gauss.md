@@ -1,10 +1,11 @@
 ---
 dia: 2024-09-01
 tags:
-  - fisica-2/Electrostática-en-el-vacío
   - nota/facultad
   - analisis-2/Funciones-de-varias-variables
   - fisica-2/Magnetostática-en-el-vacío
+  - fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - fisica-2/Electrostática-en-el-vacío
 aliases:
   - Ley de Gauss
   - Ley de Gauss para el Campo eléctrico#Para el campo eléctrico
@@ -26,11 +27,11 @@ Si la superficie no es cerrada, se puede usar el teorema cerrando la superficie,
 La ley de Gauss tiene dos formas, la forma integral y la forma diferencial. Ambas relacionan el [[Campo eléctrico|campo eléctrico]] con la [[Carga eléctrica|carga]] encerrada, o con la densidad de carga $$ \begin{align} 
     {\subset\!\supset} \llap{\iint}_{\partial V} \vec{D} ~ d\vec{\sigma} &= Q_{\text{enc}}^{\text{libres}} \tag{integral} \\\\
     \nabla \vec{D} &= \rho_{\text{libres}} \tag{diferencial}
-\end{align} $$ donde $\vec{D}$ es el [[Campo desplazamiento|campo desplazamiento]]
+\end{align} $$ donde $\vec{D}$ es el [[Campo de desplazamiento|campo desplazamiento]]
 
 #### Para el campo magnético
 ---
-La ley de Gauss, relacionan el [[Campo magnético|campo magnético]]. Sin embargo, a diferencia de la ley de Gauss para el campo eléctrico, no podemos monopolizar los polos. Todo imán tiene ambos polos, incluso si los dividimos. Debido a esto, el flujo a través de una [[Superficie|superficie]] cerrada es nulo $$ \begin{align} 
+La ley de Gauss, relacionan el [[Campo de inducción magnética|campo de inducción magnética]]. Sin embargo, a diferencia de la ley de Gauss para el campo eléctrico, no podemos monopolizar los polos. Todo imán tiene ambos polos, incluso si los dividimos. Debido a esto, el flujo a través de una [[Superficie|superficie]] cerrada es nulo $$ \begin{align} 
     {\subset\!\supset} \llap{\iint}_{\partial V} \vec{B} ~ d\vec{\sigma} &= 0 \tag{integral} \\\\
     \nabla \vec{B} &= 0 \tag{diferencial}
 \end{align} $$

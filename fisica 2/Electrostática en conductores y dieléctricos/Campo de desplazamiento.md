@@ -25,3 +25,5 @@ Si la [[Tensi√≥n|diferencia de potencial]] es constante, entonces el [[Campo el√
 Como la diferencia de potencial es constante, entonces ahora lo que cambia son las cargas $$ \begin{align} 
     Q = \epsilon_r ~ Q_0 && C = \epsilon_r ~ C_0
 \end{align} $$
+
+
