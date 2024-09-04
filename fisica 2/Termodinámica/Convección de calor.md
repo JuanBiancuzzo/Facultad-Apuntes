@@ -10,4 +10,7 @@ aliases:
 ---
 La ley de Newton estable que 
 
-$$ \text{\.q} = h \cdot A \cdot \left(T_\text{Más caliente} - T_\text{Más frio} \right)  $$ ^6ed9a1
+$$ \text{\.q} = h \cdot A \cdot \left(T_\text{Más caliente} - T_\text{Más frio} \right)  $$ siendo $h$ el [[Coeficiente de convección|coeficiente de convección]]
+ ^6ed9a1
+
+Se produce por una diferencia de [[Temperatura|temperatura]] entre un sólido y un fluido

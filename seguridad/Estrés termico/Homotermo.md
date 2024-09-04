@@ -10,8 +10,8 @@ Poseer mecanismos compensatorios adecuados para mantener una constancia relativa
 
 También se puede interpretar como al experimentar variaciones mínimas de su [[Temperatura del cuerpo|temperatura corporal]] en relación a las variaciones de la temperatura del ambiente.
 
-Este equilibro, se logra con el intercambio de [[Calor]] por medio de:
-* [[Conducción]]
-* [[Convección de calor]]
-* [[Radiación]]
+Este equilibro, se logra con el intercambio de [[Calor|calor]] por medio de:
+* [[Conducción de calor|Conducción]]
+* [[Convección de calor|Convección]]
+* [[Radiación|Radiación]]
 * Ventilación pulmonar
