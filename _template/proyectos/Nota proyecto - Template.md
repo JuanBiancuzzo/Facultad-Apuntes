@@ -4,10 +4,15 @@
 
     let fecha = tp.file.creation_date("YYYY-MM-DD");
     let path = tArchivo.parent.path;
+
+    let tag = path.trim()
+        .split(" ")
+        .filter(token => token.trim() != "-" && token.trim() != "")
+        .join("-");
 		
     tR += "---\n"; 
     tR += `dia: ${fecha}\n`;
-    tR += `tags: \n - ${path.trim().replaceAll(" ", "-")}\n - nota/proyecto \n`;
+    tR += `tags: \n - ${tag}\n - nota/proyecto \n`;
     tR += "---\n";
 
     let [ anio, mes, dia ] = fecha.split("-").map(num => parseInt(num, 10));
