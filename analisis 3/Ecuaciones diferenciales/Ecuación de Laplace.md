@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-La ecuación de Laplace es la que satisfacen las funciones del núcleo de este [[Operador de Laplace]], es decir: $$ \Delta u = 0 $$ cuyas soluciones son funciones armónicas.
+La ecuación de Laplace es la que satisfacen las funciones del núcleo de este [[Laplaciano]], es decir: $$ \Delta u = 0 $$ cuyas soluciones son funciones armónicas.
 
 ### Propiedades
 ---

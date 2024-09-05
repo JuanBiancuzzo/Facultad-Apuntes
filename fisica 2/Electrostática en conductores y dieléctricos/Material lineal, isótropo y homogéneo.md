@@ -23,6 +23,6 @@ Usando las [[Relación constitutiva#Para campo eléctrico|relaciones constitutiv
 
 #### Para campo magnético
 ---
-Podemos obtener la siguiente relación $$ \vec{B} = \mu \vec{H}, ~~~~~~ \mu = \mu_0 ~ \mu_r $$ siendo $\mu$ la [[Permeabilidad magnética|permeabilidad magnética]] del material, $\mu_0$ la [[Permeabilidad magnética|permeabilidad del vacío]] y $\mu_r$ la [[Permeabilidad magnética|permeabilidad relativa]]
+Podemos obtener la siguiente relación $$ \vec{B} = \mu \vec{H}, ~~~~~~ \mu = \mu_0 ~ \mu_r $$ siendo $\mu$ la [[Permeabilidad magnética|permeabilidad magnética]] del material, $\mu_0$ la [[Permeabilidad magnética|permeabilidad del vacío]] y $\mu_r$ la [[Permeabilidad magnética#^permeabilidad-magnetica-relativa|permeabilidad relativa]]
 
 Usando las [[Relación constitutiva#Para campo magnético|relaciones constitutivas]], podemos llegar a la siguiente expresión $$ \vec{M} = (\mu_r - 1) ~ \vec{B}, ~~~~~ \mu_r - 1 = X_M $$ siendo $X_M$ la susceptibilidad magnética ($X_E \ge 0$) ^susceptibilidad-magnetica

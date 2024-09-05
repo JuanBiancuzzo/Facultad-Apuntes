@@ -4,6 +4,7 @@ tags:
   - fisica-2/Electrostática-en-el-vacío
   - nota/facultad
   - fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - electro/Campos-eléctricos-y-magnéticos
 aliases:
   - Densidad lineal de carga#^densidad-lineal
   - Densidad superficial de carga#^densidad-superficial

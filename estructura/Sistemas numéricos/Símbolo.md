@@ -6,4 +6,4 @@ tags:
 ---
 ### Definición
 ---
-Son la representación gráfica de los números, en un sistema decimal, este tiene 10 simbolos, pero en el sistema roman hay 7. 
+Son la representación gráfica de los números, en un sistema decimal, este tiene $10$ símbolos, pero en el sistema roman hay $7$

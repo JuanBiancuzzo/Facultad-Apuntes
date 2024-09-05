@@ -4,6 +4,7 @@ tags:
   - fisica-2/Electrostática-en-el-vacío
   - nota/facultad
   - fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - electro/Campos-eléctricos-y-magnéticos
 aliases:
   - Constante dieléctrica
   - Permitividad del vacío#^permitividad-vacio

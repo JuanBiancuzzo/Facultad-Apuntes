@@ -3,6 +3,8 @@ dia: 2023-01-22
 tags:
   - nota/facultad
   - analisis-2/Nomenclatura
+aliases:
+  - Perpendicularidad entre vectores
 ---
 ### Definición
 ---

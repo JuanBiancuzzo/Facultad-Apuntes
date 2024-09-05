@@ -6,4 +6,4 @@ tags:
 ---
 ### Definición
 ---
-La ecuación de Poisson es la que satisfacen las funciones, la versión no homogénea de las [[Ecuación de Laplace]] de este [[Operador de Laplace|operador]], es decir: $$ \Delta u = f $$ donde $f$ es una función conocida.
+La ecuación de Poisson es la que satisfacen las funciones, la versión no homogénea de las [[Ecuación de Laplace|ecuación de Laplace]] de este [[Laplaciano|operador]], es decir $$ \Delta u = f $$ donde $f$ es una [[Función|función]] conocida

@@ -11,4 +11,4 @@ El problema de difusión del calor en un [[Conjunto compacto]] $K \subset \mathb
 	u(x, t) = \varphi(x, t) && x \in \partial K, t \ge 0 \\
 	u(x, 0) = u_0(X) && x \in K
 \end{cases} $$
-Donde el [[Operador de Laplace]] se aplica sobre las variables espaciales.
+Donde el [[Laplaciano]] se aplica sobre las variables espaciales.

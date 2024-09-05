@@ -4,11 +4,12 @@ tags:
   - nota/facultad
   - analisis-2/Nomenclatura
 aliases:
+  - Producto escalar
 ---
 ### Definición
 ---
-Estando en $\mathbb{R}^n$, se define $$ x ~ y = x_1 ~ y_1 + x_2 ~ y_2 + \cdots + x_n ~ y_n$$ 
-### Propiedades
+Estando en $\mathbb{R}^n$, se define $$ x ~ y = x_1 ~ y_1 + x_2 ~ y_2 + \cdots + x_n ~ y_n$$  ^c99be2
+#### Propiedades
 ---
 1. $x \cdot x \ge 0$ donde $x \cdot x = 0 \iff x = 0$
 2. $x \cdot y = y \cdot y$

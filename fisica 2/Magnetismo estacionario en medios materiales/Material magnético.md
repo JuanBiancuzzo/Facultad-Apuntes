@@ -3,6 +3,7 @@ dia: 2023-08-24
 tags:
   - fisica-2/Magnetismo-estacionario-en-medios-materiales
   - nota/facultad
+  - electro/Campos-eléctricos-y-magnéticos
 aliases:
   - Campo de magnetización#^campo-magnetizacion
   - Campo magnético#^campo-magnetico
