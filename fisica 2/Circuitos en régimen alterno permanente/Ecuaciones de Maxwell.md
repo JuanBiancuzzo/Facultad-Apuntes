@@ -1,8 +1,9 @@
 ---
 dia: 2024-09-03
-tags: 
- - fisica-2/Circuitos-en-régimen-alterno-permanente
- - nota/facultad
+tags:
+  - fisica-2/Circuitos-en-régimen-alterno-permanente
+  - nota/facultad
+  - electro/Campo-electromagnético
 ---
 ### Definición
 ---

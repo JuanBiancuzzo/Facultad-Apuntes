@@ -3,6 +3,7 @@ dia: 2024-09-02
 tags:
   - fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
   - nota/facultad
+  - electro/Campo-electromagnético
 referencias:
   - "213"
 aliases:

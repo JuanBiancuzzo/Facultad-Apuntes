@@ -74,7 +74,7 @@ Un listado de los proyectos y su estado actual
 
 | Proyecto                                                                                                                                                    | Estado           |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| [Primer proyecto de robótica - Auto remoto](primer%20proyecto%20de%20robótica%20-%20auto%20remoto/Primer%20proyecto%20de%20robótica%20-%20Auto%20remoto.md) | Sin empezar      |
+| [Primer proyecto de robótica - Auto remoto](primer%20proyecto%20de%20robótica%20-%20auto%20remoto/Primer%20proyecto%20de%20robótica%20-%20Auto%20remoto.md) | En proceso       |
 | [Plugins de Obsidian](plugins%20de%20obsidian/Plugins%20de%20Obsidian.md)                                                                                   | Sin empezar      |
 | [Porfolio](porfolio/Porfolio.md)                                                                                                                            | Sin empezar      |
 | [Better animations in my humble opinion](better%20animations%20in%20my%20humble%20opinion/Better%20animations%20in%20my%20humble%20opinion.md)              | Sin empezar      |

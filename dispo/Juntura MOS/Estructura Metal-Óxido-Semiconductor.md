@@ -60,7 +60,7 @@ Produciendo el campo $$ E_0(x) = \begin{cases}
 
 Donde $$E_{ox} = \frac{qN_a x_{do}}{\varepsilon_{ox}}$$ y $$E_s = \frac{qN_a x_{do}}{\varepsilon_s}$$
 
-#### [[Función potencial|Función Potencial]] 
+#### Función Potencial
 ---
 Recordando la [[Relación de Boltzmann|relación de Boltzmann]], tenemos que $$ \phi(x) = \frac{kT}{q} \ln\left( \frac{n_0}{n_i} \right) = - \frac{kT}{q} \ln\left( \frac{p_0}{n_i} \right) $$ donde $n_i$ es la [[Semiconductor intrínseco|concentración de un semiconductor intrínseco]].
 

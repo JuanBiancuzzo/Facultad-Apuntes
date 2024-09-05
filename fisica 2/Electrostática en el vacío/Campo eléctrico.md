@@ -9,10 +9,11 @@ aliases:
   - Densidad lineal de carga#^densidad-lineal
   - Densidad superficial de carga#^densidad-superficial
   - Densidad volumétrica de carga#^densidad-volumetrica
+  - Campo electrostático
 ---
 ### Definición
 ---
-El campo eléctrico es una magnitud vectorial que en cada punto $p$ apunta en la dirección de la [[Ley de Coulomb|fuerza eléctrica]] si pusiéramos en el punto $p$ una carga $q_0 = 1~C$ $$ \vec{E} = \frac{\vec{F_0}}{q_0} \implies \left[ \vec{E} \right] = \frac{N}{C} $$
+El campo eléctrico es una magnitud vectorial que en cada punto $p$ apunta en la dirección de la [[Ley de Coulomb|fuerza eléctrica]] si pusiéramos en el punto $p$ una [[Carga eléctrica|carga]] $q_0 = 1~C$ $$ \vec{E} = \frac{\vec{F_0}}{q_0} \implies \left[ \vec{E} \right] = \frac{N}{C} $$
 #### Carga puntual
 ---
 Usando la [[Ley de Coulomb|ley de Coulomb]], podemos encontrar que el campo eléctrico de una carga puntual $q_0$ en $\vec{r_0}$ es $$ \vec{E}(\vec{r}) = \frac{q_0}{4\pi \epsilon_0} ~ \frac{\vec{r} - \vec{r}_0}{\lVert \vec{r} - \vec{r}_0 \rVert^3} $$
@@ -33,4 +34,5 @@ Si está distribuida, la carga, en una volumen, entonces podemos definir la dens
 #### Campo modificado por un dieléctrico
 ---
 Siendo $\vec{E}_0$ el campo eléctrico sin [[Dieléctrico|dieléctrico]] y $\vec{E}$ el campo eléctrico con dieléctrico, entonces $$ \vec{E} = \frac{1}{\epsilon_r} \vec{E}_0 $$
-Vemos entonces como afecta a la [[Capacitancia|capacidad]] y el [[Función potencial#Potencial eléctrico|potencial]] de un [[Capacitor|capacitor]] $$ \Delta V = \frac{1}{\epsilon_r} \Delta V_0 \iff C = \epsilon_r ~ C_0 $$
+Vemos entonces como afecta a la [[Capacitancia|capacidad]] y el [[Tensión|potencial]] de un [[Capacitor|capacitor]] $$ \Delta V = \frac{1}{\epsilon_r} \Delta V_0 \iff C = \epsilon_r ~ C_0 $$
+

@@ -331,7 +331,7 @@ Tenemos la [[Curva de transferencia|curva de transferencia]]
 La [[Carga eléctrica|carga]] del canal en el  extremo del Drain $$ Q'_n(L) = -C'_{ox} (V_{GS} - V_{DS} - V_T) = 0 $$
 ![[Pinch-off en el MOSFET.webp]]
 
-Por lo que no hay una capa de [[Inversión de la estructura Metal-Óxido-Semiconductor (MOS)|inversión]] en el extremo del Drain. A esta situación se la suele conocer como pinch-off
+Por lo que no hay una capa de [[Inversión de la estructura Metal-Óxido-Semiconductor|inversión]] en el extremo del Drain. A esta situación se la suele conocer como pinch-off
 * La ecuación de control de carga es inexacta en el entorno de $V_T$
 * La concentración de [[Electrón|electrones]] es pequeña, pero no es cero
 * Los electrones se mueven rápido debido a que el [[Campo eléctrico|campo eléctrico]] es muy elevado

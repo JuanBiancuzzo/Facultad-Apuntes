@@ -4,6 +4,7 @@ tags:
   - adc/Circuitos-en-regimen-senoidal-permanente
   - nota/facultad
   - fisica-2/Circuitos-en-régimen-alterno-permanente
+  - electro/Campo-electromagnético
 referencias:
   - "221"
 ---

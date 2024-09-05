@@ -52,15 +52,15 @@ function mostrarCitaWeb(archivo) {
         let [{nombre: nombre}, {apellido: apellido}] = autore;
 
         if (nombre && apellido) {
-            autores += `${apellido}, ${nombre[0]}.`;
+            autores += `${apellido}, ${nombre[0]}. `;
         } else if (nombre && !apellido) {
-            autores += `${nombre}.`;
+            autores += `${nombre}. `;
         } else {
-            autores += `${apellido}.`;
+            autores += `${apellido}. `;
         }
     }
 
-    return `${autores} (${dia} de ${mes} del ${anio}). <i>${tituloArticulo}</i>. ${nombrePagina}. ${url}`;
+    return `${autores}(${dia} de ${mes} del ${anio}). <i>${tituloArticulo}</i>. ${nombrePagina}. ${url}`;
 }
 
 function mostrarCitaWiki(archivo) {

@@ -3,6 +3,8 @@ dia: 2023-11-03
 tags:
   - dispo/Juntura-MOS
   - nota/facultad
+aliases:
+  - Acumulación de la estructura MOS
 ---
 ### Definición
 ---
@@ -27,12 +29,12 @@ La estructura se comporta como un [[Capacitor de placas planas paralelas|capacit
 
 #### Densidad de carga espacial
 ---
-![[Densidad de carga en una estructura MOS en regimen de acumulación.webp]]
+![[Densidad de carga en una estructura MOS en regimen de acumulación.webp]] ^820fd4
 
 #### [[Campo eléctrico]]
 ---
 ![[Campo eléctrico en una estructura MOS en regimen de acumulación.webp]]
 
-#### [[Función potencial|Función potencial]]
+#### Función potencial
 ---
 ![[Potencial eléctrico en una estructura MOS en regimen de acumulación.webp]]

@@ -39,8 +39,8 @@ En equilibrio térmico, la [[Corriente de arrastre|corriente de arrastre]] contr
 
 ![[Distribución de dopantes en una juntura PN en equilibrio térmico con región de carga espacial.webp|600]]
 
-Notemos que lejos de la juntura metalúrgica, se comporta como un semiconductor solo. Estas regiones se llaman Regiones cuasi-neutrales (QNR's). Mientras que alrededor de la juntura metalúrgica, las corriente de arrastre debe cancelar a la de difusión creando la Región de carga espacial (SCR)
+Notemos que lejos de la juntura metalúrgica, se comporta como un [[Semiconductor|semiconductor]] solo. Estas regiones se llaman Regiones cuasi-neutrales (QNR's). Mientras que alrededor de la juntura metalúrgica, las corriente de arrastre debe cancelar a la de difusión creando la Región de carga espacial (SCR)
 
-Veamos como podemos usar la aproximación de vaciamiento, podemos encontrar las [[Modelo de enlace de Silicio#Concentración de Portador de carga portadores|concentración de portadores]], la [[Densidad volumétrica de carga eléctrica|densidad de carga]], el [[Campo eléctrico]] y el [[Función potencial]] sabiendo la [[Impureza donora#Cantidad de dopante|concentración donora]] y la [[Impureza aceptora#Cantidad de dopante|concentración aceptora]]
+Veamos como podemos usar la [[Aproximación de vaciamiento|aproximación de vaciamiento]], podemos encontrar las [[Modelo de enlace de Silicio#Concentración de Portador de carga portadores|concentración de portadores]], la [[Densidad volumétrica de carga eléctrica|densidad de carga]], el [[Campo eléctrico|campo eléctrico]] y el [[Tensión|función potencial]] sabiendo la [[Impureza donora#Cantidad de dopante|concentración donora]] y la [[Impureza aceptora#Cantidad de dopante|concentración aceptora]]
 
 ![[Aproximación de vaciamiento#Definición]]

@@ -1,7 +1,11 @@
 const { indice } = input;
 
-let archivos = dv.pages(`"${indice.file.folder}" and -#índice`)
-    .filter(archivo => archivo.file.folder == indice.file.folder)
+let tag = indice.file.folder.trim()
+    .split(" ")
+    .filter(token => token.trim() != "-" && token.trim() != "")
+    .join("-");
+
+let archivos = dv.pages(`#${tag} and -#índice`)
     .sort(archivo => {
         let referencias = archivo.referencias;
         if (!referencias || referencias.length == 0)
@@ -16,8 +20,8 @@ let archivos = dv.pages(`"${indice.file.folder}" and -#índice`)
         return refMinimo;
     });
 
-dv.table(["Archivo", "Estado", "Referencia"], archivos.map(archivo => {
-    let titulo = `${archivo.file.name} [[${archivo.file.path}|?]]`;
+dv.table(["Archivo", "Estado", "Referencia"], archivos.flatMap(archivo => {
+    let titulo = `[[${archivo.file.path}|${archivo.file.name}]]`;
     let referencias = archivo.referencias;
 
     let textoReferencias = "Este archivo no tiene referencias";
@@ -35,5 +39,5 @@ dv.table(["Archivo", "Estado", "Referencia"], archivos.map(archivo => {
         case "terminado": textoEtapa = "Esta terminado"; break;
     }
 
-    return [titulo, textoEtapa, textoReferencias];
+    return [[titulo, textoEtapa, textoReferencias]];
 }));

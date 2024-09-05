@@ -10,7 +10,7 @@ Partiendo del análisis con la [[Aproximación de vaciamiento|aproximación de v
 
 Siguiendo la [[Convención de signos para la tensión de polarización|convención de signos]], veamos que pasa cuando se le aplica una [[Tensión]] $V_{PN}$ 
 
-Sabemos que en las regiones de p-QNR y n-QNR, no puede modificarse el [[Función potencial|potencial]] ya que se mantiene la [[Aproximación de cuasi-neutralidad|aproximación de cuasi-neutralidad]] en esas regiones, ya que la [[Densidad volumétrica de carga eléctrica|carga]] sigue siendo $0$ $$ \begin{align} 
+Sabemos que en las regiones de p-QNR y n-QNR, no puede modificarse el [[Tensión|potencial]] ya que se mantiene la [[Aproximación de cuasi-neutralidad|aproximación de cuasi-neutralidad]] en esas regiones, ya que la [[Densidad volumétrica de carga eléctrica|carga]] sigue siendo $0$ $$ \begin{align} 
 	\rho(x) = 0 \implies \Delta V_\text{p-QNR} \simeq 0 \\
 	\rho(x) = 0 \implies \Delta V_\text{n-QNR} \simeq 0
 \end{align} $$
@@ -43,7 +43,7 @@ Haciendo que $$ x_n(V_{PN}) = \sqrt\frac{2\varepsilon_{sc} (\phi_B - V_{PN}) N_a
 $$ x_p(V_{PN}) = \sqrt\frac{2\varepsilon_{sc} (\phi_B - V_{PN}) N_d}{q(N_a + N_d) N_a} = x_{p_0} ~ \sqrt{1 - \frac{V_{PN}}{\phi_B}} $$
 $$ x_d(V_{PN}) = \sqrt\frac{2\varepsilon_{sc} (\phi_B - V_{PN}) (N_a + N_d)}{q N_a  N_d) N_d} = x_{d_0} ~ \sqrt{1 - \frac{V_{PN}}{\phi_B}} $$
 $$ |E(V_{PN})| = \sqrt\frac{2q (\phi_B - V_{PN}) N_a N_d}{\varepsilon_{sc}(N_a + N_d)} = |E_0| ~  \sqrt{1 - \frac{V_{PN}}{\phi_B}} $$
-Esto produce que la [[Función potencial|función de potencial]], el [[Campo eléctrico]] y la [[Densidad volumétrica de carga eléctrica|densidad de carga]] se modifique de la siguiente forma
+Esto produce que la [[Tensión|función de potencial]], el [[Campo eléctrico]] y la [[Densidad volumétrica de carga eléctrica|densidad de carga]] se modifique de la siguiente forma
 
 ![[Función de potencial, campo eléctrico y densidad de carga para una juntura PN polarizada.webp|600]]
 

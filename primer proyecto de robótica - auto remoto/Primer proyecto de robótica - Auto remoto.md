@@ -1,6 +1,6 @@
 ---
 dia: 2024-09-05
-estado: Sin empezar
+estado: En proceso
 tags:
   - proyecto
   - primer-proyecto-de-robótica-auto-remoto

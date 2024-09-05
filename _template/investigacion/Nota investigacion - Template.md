@@ -12,7 +12,8 @@
 
 	if (posiblesIndices.length == 0) {
 		return;
-	}	
+	}
+	let indice = posiblesIndices[0];
 
 	let referencias = dv.pages('#referencia')
 		.flatMap(referencia => {
@@ -69,7 +70,11 @@
 	for (let numRef of numReferencias) {
 		tR += ` - "${numRef}"\n`;
 	}
-	tR += "tags: \n - nota/investigacion\n";
+	let tag = indice.file.folder.trim()
+		.split(" ")
+		.filter(token => token.trim() != "-" && token.trim() != "")
+		.join("-");
+	tR += `tags: \n - ${tag}\n - nota/investigacion\n`;
 	tR += "---";
 %>
 ```dataviewjs

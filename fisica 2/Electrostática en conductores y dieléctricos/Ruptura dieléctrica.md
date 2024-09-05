@@ -1,8 +1,9 @@
 ---
 dia: 2024-09-02
-tags: 
- - fisica-2/Electrostática-en-conductores-y-dieléctricos
- - nota/facultad
+tags:
+  - fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - nota/facultad
+  - electro/Campos-eléctricos-y-magnéticos
 ---
 ### Definición
 ---

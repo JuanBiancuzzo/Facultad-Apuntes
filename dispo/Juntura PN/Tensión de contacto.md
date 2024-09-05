@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Dado una [[Juntura PN]], tenemos que la distribución de la [[Función potencial|función potencial]] hasta aquí 
+Dado una [[Juntura PN]], tenemos que la distribución de la [[Tensión|función potencial]] hasta aquí 
 
 ![[Potencial eléctrico en escala lineal de una juntura PN.webp|600]]
 

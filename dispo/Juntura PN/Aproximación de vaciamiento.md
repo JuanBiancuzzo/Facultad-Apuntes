@@ -10,7 +10,7 @@ tags:
 2. No existen [[Carga eléctrica|portadores]] en la región espacial de carga, estos sólo la atraviesan. Por tanto, se supondrá que esta región consta únicamente de impurezas tanto [[Impureza donora|donoras]] como [[Impureza aceptora|aceptoras]] ionizadas
 3. Fuera de los límites de la región espacial de carga, el [[Semiconductor]] es neutro
 4. El funcionamiento es a una temperatura tal que todos los [[Átomo|átomos]] de impurezas están ionizados
-5. Las [[Modelo de enlace de Silicio#Concentración de Portador de carga portadores|concentraciones de portadores]] en los límites de la región espacial de carga vienen dados en función del [[Función potencial|potencial electrostático]] de contacto
+5. Las [[Modelo de enlace de Silicio#Concentración de Portador de carga portadores|concentraciones de portadores]] en los límites de la región espacial de carga vienen dados en función del [[Tensión|potencial electrostático]] de contacto
 6. Los contactos al final de la [[Impureza donora#Cantidad de dopante|región n]] y la [[Impureza aceptora#Cantidad de dopante|región p]] son [[Contacto óhmico|contactos perfectamente óhmicos]]. Por lo que la caída de [[Tensión]] entre sus extremos es cero
 
 ### Definición

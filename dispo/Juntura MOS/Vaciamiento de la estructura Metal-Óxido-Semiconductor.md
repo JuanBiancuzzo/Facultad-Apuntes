@@ -8,25 +8,25 @@ aliases:
 ---
 ### Definición
 ---
-Dada una [[Estructura Metal-Óxido-Semiconductor|Estructura MOS]] [[Estructura Metal-Óxido-Semiconductor con polarización|polarizada]]: 
+Dada una [[Estructura Metal-Óxido-Semiconductor|Estructura MOS]] [[Estructura Metal-Óxido-Semiconductor con polarización|polarizada]]
 * Para $V_{GB} >0$ la fuente mueve [[Hueco|huecos]] desde el sustrato hacia el gate, entonces la región de vaciamiento crece. 
 * Para $V_{GB} < 0$ la fuente mueve [[Hueco|huecos]] desde el gate hacia el sustrato entonces la región de vaciamiento se contrae.
 
 En el régimen de vaciamiento son validos todos los resultados obtenidos para $V_{GB} = 0$ mediante $\phi_B \to \phi_B + V_{GB}$
 
-#### Concentraciones de los [[Carga eléctrica|portadores]]
+#### Concentraciones de los portadores
 ---
 ![[Concentración de portadores en la estructura MOS en regimen de vaciamiento.webp]]
 
-#### Densidad de [[Carga eléctrica|carga]] espacial
+#### Densidad de carga espacial
 ---
 ![[Densidad de carga en una estructura MOS en regimen de vaciamiento.webp]]
 
-#### [[Campo eléctrico]]
+#### Campo eléctrico
 ---
 ![[Campo eléctrico en una estructura MOS en regimen de vaciamiento.webp]]
 
-#### [[Función potencial|Función potencial]]
+#### Función potencial
 ---
 ![[Potencial eléctrico en una estructura MOS en regimen de vaciamiento.webp]]
 

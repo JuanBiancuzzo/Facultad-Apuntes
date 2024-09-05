@@ -10,7 +10,7 @@ aliases:
 ---
 ### Definición
 ---
-En el sistema esférico la posición $P$ en el [[Espacio|espacio]] se describe mediante el [[Norma|módulo]] del vector posición y los ángulos que forma con dos ejes perpendiculares que pasan por el origen de coordenadas, que coinciden con los ejes $z$, $y$, $x$ del [[Sistema cartesiano|sistema cartesiano]] correspondiente $$ P = (\rho_p,~\theta_p,~\varphi_p) $$
+En el sistema esférico la posición $P$ en el [[Espacio|espacio]] se describe mediante el [[Norma|módulo]] del vector posición y los ángulos que forma con dos ejes perpendiculares que pasan por el origen de coordenadas, que coinciden con los ejes $z$, $y$, $x$ del [[Sistema cartesiano|sistema cartesiano]] correspondiente $$ P = (r_p,~\theta_p,~\varphi_p) $$
 ```tikz
 \usetikzlibrary{math}
 \usetikzlibrary{calc}
@@ -56,7 +56,7 @@ En el sistema esférico la posición $P$ en el [[Espacio|espacio]] se describe m
     \end{scope}
     \path (0, \meg, 0) -- (P) node[midway, below=2pt] {$\theta_p$};
     
-    \draw[->, ultra thick] (0, 0, 0) -- (P) node[below, left=2pt] {$\rho_p$};
+    \draw[->, ultra thick] (0, 0, 0) -- (P) node[below, left=2pt] {$r_p$};
     
 \end{tikzpicture}
 \end{document}

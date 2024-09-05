@@ -279,7 +279,7 @@ El [[Transistor]] tiene 3 regímenes de operación
 ---
 Hay un cuarto terminal en los MOSFET, el body o bulk. Este terminal es especialmente importante en los [[Circuito eléctrico|circuitos]] integrados.
 
-El contacto de Body permite la aplicación de una polarización al body respecto de la capa de [[Inversión de la estructura Metal-Óxido-Semiconductor (MOS)|inversión]].
+El contacto de Body permite la aplicación de una polarización al body respecto de la capa de [[Inversión de la estructura Metal-Óxido-Semiconductor|inversión]].
 
 Para un n-MOSFET, $V_{BS}$ puede ser únicamente negativa para asegurar que la [[Juntura PN]] entre Source y Bulk esté en [[Diodo de Juntura PN#Para $V_D < 0$ (en Convención de signos para la tensión de polarización Polarización inversa inversa )|inversa]].
 
@@ -343,15 +343,15 @@ Al modificar $V_{BS}$ cambian las condiciones de contorno del lado del [[Semicon
 \end{document}
 ```
 
-Donde la $Q_G$ se mantiene, pero la carga $Q_B$ y $Q_n$ se compensan entre sí para la [[Conservación de carga|conservación de carga]].
-##### [[Campo eléctrico]]
+Donde la $Q_G$ se mantiene, pero la carga $Q_B$ y $Q_n$ se compensan entre sí para la [[Ecuación de continuidad#En electromagnetismo|conservación de carga]]
+##### Campo eléctrico
 ---
 ![[Campo eléctrico en la capa de inversión de un MOSFET al aumentar la tensión Vbs.webp]]
 
-##### [[Función potencial|Función potencial]]
+##### Función potencial
 ---
 ![[Función potencial en la capa de inversión de un MOSFET al aumentar la tensión Vbs.webp]]
 
 * Al considerar $V_{GS}$ fijo, $V_{ox}$ no cambia porque el canal se encuentra al mismo potencial que el Source.
 * Como $V_{ox}$ no cambia, la suma de las [[Carga eléctrica|cargas]] de deserción e inversión no cambian.
-* Al aumentar la carga de deserción, entonces hay menos carga de inversión $Q'_n$. La carga de inversión es 
+* Al aumentar la carga de deserción, entonces hay menos carga de inversión $Q'_n$. La carga de inversión es... (sin querer lo borre, por favor ayuda)

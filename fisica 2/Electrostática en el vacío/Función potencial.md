@@ -3,30 +3,29 @@ dia: 2024-09-01
 tags:
   - fisica-2/Electrostática-en-el-vacío
   - nota/facultad
+referencias:
+  - "232"
 aliases:
-  - Potencial eléctrico#Potencial eléctrico
-  - Potencial gravitatorio#Potencial gravitatorio
+  - Función potencial escalar#Potencial escalar
+  - Función potencial vectorial#Potencial vectorial
 ---
 ### Definición
 ---
+En física se define el potencial como una magnitud que puede ser escalar o vectorial, que sirve para describir la evolución o variación probable de otra magnitud. Generalmente los potenciales aparecen para describir a un campo físico y también aparece para medir otro potencial en termodinámica<sup><a href="#ref-232" style="color: inherit; text-decoration: none;">[232]</a></sup> 
 
-
-#### Potencial gravitatorio
+#### Potencial escalar
 ---
+Se denomina potencial escalar a una propiedad de cada punto de un [[Rotor|campo conservativo]], que representa la energía potencial  que tendría una unidad de fuente ([[Carga eléctrica|carga eléctrica]], [[Masa efectiva|masa]], etc., dependiendo de la naturaleza de la materia bajo estudio) situada en determinado punto de la región donde esté definido el respectivo campo. Al ser una magnitud definida para cada punto del campo, en sí mismo forma un [[Campo escalar|campos escalares]] 
 
+También se usa potencial como adjetivo: se dice que un campo es potencial, si el campo puede ser definido como el [[Gradiente|gradiente]] de un campo escalar. En ese caso se dirá que el [[Campo vectorial|campo vectorial]] tendrá su potencial en ese campo escalar $$ F = - \nabla U $$
+En este caso $U$ es el campo escalar potencial de la fuerza $F$
 
-#### Potencial eléctrico
+#### Potencial vectorial
 ---
-Si queremos encontrar la función potencial, y no pensarla solo como una diferencia entre dos puntos, entonces tengo que encontrar un valor de referencia. Como cuando calculamos la fuerza potencial gravitatoria, que depende de un valor de referencia
+Algunos [[Divergencia|campos solenoidales]] no pueden ser derivados de un potencial escalar, sin embargo bajo condiciones matemáticas razonables pueden expresarse en términos de un potencial vectorial. Las ventajas de esto es con frecuencia la [[Ecuación diferencial en derivadas parciales|ecuación diferencial]] que satisface el potencial vectorial es algo más simple que la ecuación que satisface el propio campo vectorial
 
-##### Distribuciones de cargas acotadas
+### Referencias
 ---
-En el caso de [[Campo eléctrico#Distribución continua|distribuciones acotadas]], podemos analizar el potencial en el infinito. Esto hará que tienda a $0$ $$ \begin{align} 
-    \Delta V^{\infty x_1} = V(x_1) - \underbrace{V(\infty)}_{\to ~ 0} = V(A) &= - \frac{1}{4\pi\epsilon_0} \int \left( \frac{1}{\vec{r}_{x_1} - \vec{r}'} - \frac{1}{\infty} \right) ~ dq' \\
-    V(A) &= - \frac{1}{4\pi\epsilon_0} \int \frac{1}{\vec{r}_{x_1} - \vec{r}'} ~ dq' \\
-\end{align} $$
-##### Distribuciones de cargas no acotadas
----
-En el caso de distribuciones no acotadas, nuestra integral no está definida. Por lo que no podemos usar esta definición. Sin embargo, podemos elegir un punto arbitrario $P$ y forzarlo a valer $0$ $$ \Delta V^{Px_1} = V(x_1) - \underbrace{V(P)}_0 = V(x_1) =-\int_{x_1}^P \vec{E} ~ d\vec{l}$$
-De esta forma, si resuelvo esta integral, encuentro la función potencial
-
+```dataviewjs
+await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+```

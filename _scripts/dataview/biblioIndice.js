@@ -1,10 +1,26 @@
 const citaView = require(app.vault.adapter.basePath + "/_scripts/dataview/citaView.js");
 
-const { indice } = input
+const { indice } = input;
 
-let paginas = dv.pages(`"${indice.file.folder}" and -#índice`)
-    .filter(pagina => pagina.referencias)
-    .filter(pagina => pagina.file.folder == indice.file.folder);
+let tag = indice.file.folder.trim()
+    .split(" ")
+    .filter(token => token.trim() != "-" && token.trim() != "")
+    .join("-");
+
+let paginas = dv.pages(`#${tag} and -#índice`)
+    .sort(archivo => {
+        let referencias = archivo.referencias;
+        if (!referencias || referencias.length == 0)
+            return 0;
+
+        referencias = referencias.map(ref => parseInt(ref, 10));
+        let refMinimo = referencias[0];
+        for (let i = 1; i < referencias.length; i++) {
+            if (referencias[i] < refMinimo)
+                refMinimo = referencias[i];
+        }
+        return refMinimo;
+    });
 
 let referenciasTema = paginas
     .flatMap(pagina => pagina.referencias)

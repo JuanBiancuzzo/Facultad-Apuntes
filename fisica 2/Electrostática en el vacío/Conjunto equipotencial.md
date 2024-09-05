@@ -6,4 +6,4 @@ tags:
 ---
 ### Definición
 ---
-[[Conjunto]] de puntos que tienen exactamente el mismo [[Función potencial|potencial]]. Desplazarte por un conjunto equipotencial no cuesta [[Trabajo|trabajo]]
+[[Conjunto|Conjunto]] de puntos que tienen exactamente el mismo [[Función potencial|potencial]]. Desplazarte por un conjunto equipotencial no cuesta [[Trabajo|trabajo]]
