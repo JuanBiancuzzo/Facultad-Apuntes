@@ -1,9 +1,12 @@
 ---
 dia: 2024-09-03
-estado: 'Sin empezar'
-tags: 
- - índice
- - física/física-cuantica
+estado: Sin empezar
+tags:
+  - índice
+  - física/física-cuántica
+aliases:
+  - Mecánica cuántica
+  - Física cuántica
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });
