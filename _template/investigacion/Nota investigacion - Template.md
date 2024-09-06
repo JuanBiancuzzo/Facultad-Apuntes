@@ -43,7 +43,7 @@
 			let numReferencia = tp.user.generarNumReferencia(dv);
 			
 			try { 
-				await tp.user.cita().generar(tp, numReferencia) 
+				await tp.user.cita().generar(tp, numReferencia);
 			} catch (_) { 
 				continue; 
 			}

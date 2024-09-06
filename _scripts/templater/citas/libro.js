@@ -1,5 +1,8 @@
 async function citarLibro(tp) {
-    return "";
+    const error = tp.user.error();
+    let resultado = {};
+    
+    return resultado;
 }
 
 function describirLibro(archivo) {

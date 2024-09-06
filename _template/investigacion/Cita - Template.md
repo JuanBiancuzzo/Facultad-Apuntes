@@ -13,9 +13,13 @@
 	tR += `numReferencia: ${parseInt(numReferencia, 10)}\n`;
 
 	try {
-		tR += await tp.user.cita().citar(tp, tipoCita);
+		let datos = await tp.user.cita().citar(tp, tipoCita);
+		tR += tp.user.cita().mostrar(datos);
+
 	} catch ({ name: nombre, message: mensaje }) {
 		const eliminar = tp.user.eliminar();
+		const errorNombre = tp.user.error().nombre;
+
         switch (nombre) {
             case errorNombre.quit:
                 return await eliminar.directo(tArchivo, mensaje);

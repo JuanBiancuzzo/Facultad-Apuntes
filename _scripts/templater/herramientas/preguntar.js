@@ -1,34 +1,11 @@
-async function preguntarAutores(tp, key, mensajeNombre, mensajeApellido, errorNombre, errorApellido) {
-    let tR = `${key}:\n`;
+async function preguntarAutore(tp, mensajeNombre, mensajeApellido, errorNombre, errorApellido) {
+    let apellido = await preguntarSimple(tp, mensajeApellido, errorApellido);
+    let nombre = await preguntarSimple(tp, mensajeNombre, errorNombre);
 
-    let nombre = await preguntarSimple(tp, "", mensajeNombre, errorNombre);
-    nombre = nombre.slice(2);
-    let apellido = await preguntarSimple(tp, "", mensajeApellido, errorApellido);
-    apellido = apellido.slice(2);
-
-    tR += ` - autore:\n`;
-    tR += `   - nombre: ${nombre}`;
-    tR += `   - apellido: ${apellido}`;
-
-    while (true) {
-        try {
-            let nombre = await preguntarSimple(tp, "", mensajeNombre, errorNombre);
-            nombre = nombre.slice(2);
-            let apellido = await preguntarSimple(tp, "", mensajeApellido, errorApellido);
-            apellido = apellido.slice(2);
-            
-            tR += ` - autore:\n`;
-            tR += `   - nombre: ${nombre}`;
-            tR += `   - apellido: ${apellido}`;
-        } catch (_) {
-            break;
-        }
-    }    
-
-    return tR;
+    return { "autore": [{ "nombre": nombre }, { "apellido": apellido }] };
 }
 
-async function preguntarFecha(tp, key, mensaje, errorFormatoIncorrecto, errorFechaIncorrecta) {
+async function preguntarFecha(tp, mensaje, errorFormatoIncorrecto, errorFechaIncorrecta) {
     let fechaVideoTexto = await proxyPrompt(tp, `${mensaje} (formato: DD/MM/YYYY)`, errorFechaIncorrecta);
     let fechaVideo = moment(fechaVideoTexto, "D/MM/YYYY");
 
@@ -44,12 +21,12 @@ async function preguntarFecha(tp, key, mensaje, errorFormatoIncorrecto, errorFec
         }
     }
 
-    return `${key}: ${fechaVideo.format("YYYY-MM-DD")}\n`;
+    return fechaVideo.format("YYYY-MM-DD");
 }
 
-async function preguntarSimple(tp, key, mensaje, errorInputIncorrecto) {
-    let value = await proxyPrompt(tp, mensaje, errorInputIncorrecto);
-    return `${key}: "${value}"\n`;
+async function preguntarSimple(tp, mensaje, errorInputIncorrecto) {
+    let resultado = await proxyPrompt(tp, mensaje, errorInputIncorrecto);
+    return resultado;
 }
 
 async function proxyPrompt(tp, prompt_text, mensajeError = undefined, default_value = null, multiline = false) {
@@ -93,7 +70,7 @@ async function preguntarSeccion(tp, tipo) {
 }
 
 module.exports = () => ({
-    autores: preguntarAutores,
+    autore: preguntarAutore,
     fecha: preguntarFecha,
     simple: preguntarSimple,
     prompt: proxyPrompt,

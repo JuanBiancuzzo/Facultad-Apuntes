@@ -14,7 +14,7 @@
   "splitCamelCase": true,
   "openInNewPane": false,
   "vimLikeNavigationShortcut": false,
-  "ribbonIcon": true,
+  "ribbonIcon": false,
   "showExcerpt": true,
   "renderLineReturnInExcerpts": true,
   "showCreateButton": false,
