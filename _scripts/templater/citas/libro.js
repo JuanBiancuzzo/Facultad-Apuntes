@@ -75,6 +75,38 @@ async function citarLibro(tp) {
                 error.Quit("No se ingresó la editorial del libro")
             )
         },
+        "edicion": {
+            tipo: SIMPLE,
+            valor: null,
+            minimo: (_) => true,
+            representarElemento: (edicion) => {
+                let representacion = "N° de la edición";
+                if (edicion) representacion += `: N° ${edicion}`;
+                return representacion;
+            },
+            preguntar: async (tp, edicion) => await preguntar.numero(
+                tp, edicion 
+                    ? `Modificar el N° de la edición: "${edicion}"` 
+                    : "Ingresar el N° de la edición del libro:",
+                error.Quit("No se ingresó el número de la edicion del libro")
+            )
+        },
+        "volumen": {
+            tipo: SIMPLE,
+            valor: null,
+            minimo: (_) => true,
+            representarElemento: (volumen) => {
+                let representacion = "N° del volumen";
+                if (volumen) representacion += `: N° ${volumen}`;
+                return representacion;
+            },
+            preguntar: async (tp, volumen) => await preguntar.numero(
+                tp, volumen 
+                    ? `Modificar el N° del voluemn: "${volumen}"` 
+                    : "Ingresar el N° del volumen del libro:",
+                error.Quit("No se ingresó el número del volumen del libro")
+            )
+        },
         "url": {
             tipo: SIMPLE,
             valor: null,
@@ -103,7 +135,9 @@ async function citarLibro(tp) {
                     : tp.user.generarNumReferencia();
 
                 let capitulo = await preguntar.numero(
-                    tp, capituloInfo ? `Modificar el capítulo: ${capituloInfo.capitulo}` : "Número del capítulo:",
+                    tp, capituloInfo 
+                        ? `Modificar el capítulo: ${capituloInfo.capitulo}` 
+                        : "Número del capítulo:",
                     error.Quit("No se ingresó correctamente el capítulo")
                 );
 
@@ -115,6 +149,14 @@ async function citarLibro(tp) {
         }
     };
 }
+/*
+    * Capitulo
+        * Número (necesario)
+        * Nombre del capitulo (si tiene)
+        * Editor (si es un libro que es un conjunto de capiulos hechos por distintos autores)
+        * Página inicial (si esta, el final también lo tiene que tener)
+            * Página final 
+*/
 
 function describirLibro(archivo) {
     let autores = [];
