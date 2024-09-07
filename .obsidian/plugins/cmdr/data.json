@@ -34,6 +34,12 @@
       "icon": "bookmark",
       "name": "Agregar cita",
       "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:c0cdf993-4976-486c-be58-2935f90f64aa",
+      "icon": "book-open",
+      "name": "Agregar Libro",
+      "mode": "any"
     }
   ],
   "rightRibbon": [],

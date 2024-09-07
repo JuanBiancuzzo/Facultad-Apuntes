@@ -29,6 +29,13 @@ async function preguntarSimple(tp, mensaje, errorInputIncorrecto) {
     return resultado;
 }
 
+async function preguntarNumero(tp, mensaje, errorInputIncorrecto) {
+    let resultado = await proxyPrompt(tp, mensaje, errorInputIncorrecto);
+    if (Number.isNaN(parseInt(resultado, 10)))
+        throw errorInputIncorrecto;
+    return resultado;
+}
+
 async function proxyPrompt(tp, prompt_text, mensajeError = undefined, default_value = null, multiline = false) {
     try {
         let respuesta = await tp.system.prompt(prompt_text, default_value, true, multiline);
@@ -73,6 +80,7 @@ module.exports = () => ({
     autore: preguntarAutore,
     fecha: preguntarFecha,
     simple: preguntarSimple,
+    numero: preguntarNumero,
     prompt: proxyPrompt,
     suggester: proxySuggester,
     legal: {

@@ -13,26 +13,54 @@ const MESES = [
     "Diciembre"
 ];
 
-function mostrarCita(archivo) {
+function mostrarCita(archivo, num) {
     let tipoCita = archivo.tipoCita;
 
     let texto = "falta info";
     switch (tipoCita) {
-        case "Libro": texto = mostrarCitaLibro(archivo); break;
+        case "Libro": texto = mostrarCitaLibro(archivo, num); break;
         case "Youtube": texto = mostrarCitaYoutube(archivo); break;
         case "Web": texto = mostrarCitaWeb(archivo); break;
         case "Wikipedia": texto = mostrarCitaWiki(archivo); break;
     }
 
-    const ref = `<p id="ref-${archivo.numReferencia}" style="margin-right: 0.5em">[${archivo.numReferencia}]</p>`;
+    const ref = `<p id="ref-${num}" style="margin-right: 0.5em">[${num}]</p>`;
     const divStyle = "display:flex; flex-direction: row;";
     return `<div style="${divStyle}"> ${ref} <p> ${texto} </p> </div>`;
 }
 
 exports.mostrarCita = mostrarCita;
 
-function mostrarCitaLibro(archivo) {
-    return "Libro";
+function mostrarCitaLibro(archivo, num) {
+    const tituloObra = archivo.tituloObra;
+    const editorial = archivo.editorial;
+    const nombreAutores = archivo.nombreAutores;
+    const anio = archivo.anio;
+
+    const url = archivo.url ? ` ${url}.` : "";
+    const capitulos = archivo.capitulos ? archivo.capitulos : [];
+
+    let infoCapitulo = "";
+    for (let { numReferencia, capitulo } of capitulos) {
+        if (num == numReferencia) {
+            infoCapitulo = ` cap ${capitulo}.`
+        }
+    }
+
+    let autores = "";
+    for (let {autore: autore} of nombreAutores) {
+        let [{nombre: nombre}, {apellido: apellido}] = autore;
+
+        if (nombre && apellido) {
+            autores += `${apellido}, ${nombre[0]}. `;
+        } else if (nombre && !apellido) {
+            autores += `${nombre}. `;
+        } else {
+            autores += `${apellido}. `;
+        }
+    }
+
+    return `${autores}(${anio}). <i>${tituloObra}</i>. ${editorial}.${infoCapitulo}${url}`;
 }
 
 function mostrarCitaWeb(archivo) {

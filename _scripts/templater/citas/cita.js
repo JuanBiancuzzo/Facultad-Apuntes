@@ -5,42 +5,34 @@ const CITAS = [
     {
         tipo: TIPO_LIBRO,
         texto: "Citar Libro",
-        f: (tp) => {
-            return {
-                describir: tp.user.libro().describir,
-                citar: tp.user.libro().citar
-            };
-        }
+        f: (tp) => ({
+            describir: tp.user.libro().describir,
+            citar: tp.user.libro().citar
+        })
     },
     {
         tipo: "Youtube",
         texto: "Citar Youtube",
-        f: (tp) => {
-            return {
-                describir: tp.user.youtube().describir,
-                citar: tp.user.youtube().citar
-            };
-        }
+        f: (tp) => ({
+            describir: tp.user.youtube().describir,
+            citar: tp.user.youtube().citar
+        })
     },
     {
         tipo: "Web",
         texto: "Citar Página web",
-        f: (tp) => {
-            return {
-                describir: tp.user.web().describir,
-                citar: tp.user.web().citar
-            };
-        }
+        f: (tp) => ({
+            describir: tp.user.web().describir,
+            citar: tp.user.web().citar
+        })
     },
     {
         tipo: "Wikipedia",
         texto: "Citar Wikipedia",
-        f: (tp) => {
-            return {
-                describir: tp.user.wiki().describir,
-                citar: tp.user.wiki().citar
-            };
-        }
+        f: (tp) => ({
+            describir: tp.user.wiki().describir,
+            citar: tp.user.wiki().citar
+        })
     },
 ]
 
@@ -64,31 +56,28 @@ async function generarCita(tp, numReferencia) {
     )
 }
 
+// editar esto
 function describirCita(tp, archivo) {
     let tipoCita = archivo.tipoCita;
-    let numReferencia = archivo.numReferencia;
-    let texto = CITAS.find(cita => cita.tipo === tipoCita)?.f(tp).describir(archivo);
+    let textos = CITAS.find(cita => cita.tipo === tipoCita)?.f(tp).describir(archivo);
 
-    return (!texto) ? undefined : {
+    return (!textos) ? [] : textos.map(({ numReferencia, texto }) => ({
         archivo: archivo,
         tipoCita: tipoCita,
         numReferencia: numReferencia,
         texto: texto,
-    }
+    }));
 }
 
 function descripcionTexto(desc) {
     return `[${desc.numReferencia}] ${desc.texto}`;
 }
 
-function condicionMinima(valores, simple, multiple) {
+function condicionMinima(valores) {
     for (let [key, value] of Object.entries(valores)) {
-        let tipo = value["tipo"];
-        let valor = value["valor"];
+        let minimo = value["minimo"];
 
-        if (tipo == multiple && valor.length == 0)
-            return false;
-        if (tipo == simple && valor == null)
+        if (!minimo(value["valor"]))
             return false;
     }
     return true;
@@ -102,27 +91,36 @@ function actualizarDatos(valoresActuales, simple, multiple) {
         let tipo = value["tipo"];
         let valor = value["valor"];
         let representarElemento = value["representarElemento"];
+
         let texto = "";
+        let opcionalTexto = value["minimo"](valor) ? " (opcional)" : "";
 
         switch (tipo) {
             case simple: 
                 texto = representarElemento(valor);
                 
                 opciones.push(key);
-                valores.push((valor ? ` ✏️ Modificar `: ` ⊕ Ingresar `) + texto);
+                valores.push((valor ? ` ✏️ Modificar `: `${opcionalTexto} ⊕ Ingresar `) + texto);
                 break;
             
             case multiple:
                 for (let index in valor) {
-                    texto = representarElemento(valor[index]);
-                    
+                    texto = representarElemento(valor[index]);                    
                     opciones.push(`${key}-${index}`);
                     valores.push(` ✏️ Modificar ${texto}`);
+                }
+
+                if (valor.length > 0) {
+                    let index = valor.length - 1;
+                    texto = representarElemento(valor[index]);
+                    
+                    opciones.push(`${key}-${index + 1}`);
+                    valores.push(` ⊖ Eliminar ${texto}`);
                 }
                 
                 texto = representarElemento(null);
                 opciones.push(key);
-                valores.push((valor.length == 0 ? ` ⊕ Ingresar ` : ` ⊕ Agregar `) + texto);
+                valores.push(opcionalTexto + (valor.length == 0 ? ` ⊕ Ingresar ` : ` ⊕ Agregar `) + texto);
                 
                 break;
         }
@@ -156,15 +154,21 @@ async function citarCita(tp, tipoCita) {
                 let nuevoValor = await extra["preguntar"](tp, extra["valor"]);
                 datos[key]["valor"] = nuevoValor;
                 
-            } else if (tipo == MULTIPLE && respuesta == key) {                
-                let nuevoValor = await extra["preguntar"](tp, null);
+            } else if (tipo == MULTIPLE && respuesta == key) {             
+                // No me gusta nada el hecho de pasar el length, porque si se esta
+                // editando, ese no se refiere al numRef + length + 1 para asignarselo   
+                let nuevoValor = await extra["preguntar"](tp, datos[key]["valor"].length + 1, null);
                 datos[key]["valor"].push(nuevoValor);
 
             } else if (tipo == MULTIPLE && respuesta.startsWith(key)) {
                 let index = parseInt(respuesta.replaceAll(`${key}-`, ""), 10);
 
-                let nuevoValor = await extra["preguntar"](tp, extra["valor"][index]);
-                datos[key]["valor"][index] = nuevoValor;
+                if (index < datos[key]["valor"].length) {
+                    let nuevoValor = await extra["preguntar"](tp, index + 1, extra["valor"][index]);
+                    datos[key]["valor"][index] = nuevoValor;
+                } else {
+                    datos[key]["valor"].pop();
+                }
             }
         }
         if (respuesta == SALIR) {
@@ -172,7 +176,7 @@ async function citarCita(tp, tipoCita) {
         }
         
         [ opciones, valores ] = actualizarDatos(datos, SIMPLE, MULTIPLE);
-        if (condicionMinima(datos, SIMPLE, MULTIPLE)) {
+        if (condicionMinima(datos)) {
             opciones.push(SALIR);
             valores.push(" ↶ Dejar de editar");
         }
@@ -193,8 +197,13 @@ async function citarCita(tp, tipoCita) {
 }
 
 function mostrarCita(contenido) {
+    if (!contenido)
+        return "false";
+
     let tR = "";
-    if (Array.isArray(contenido)) {
+    if (Array.isArray(contenido) && contenido.length == 0) {
+        tR += "false";
+    } else if (Array.isArray(contenido)) {
         tR += "\n";
         for (let value of contenido) {
             let nuevoValor = mostrarCita(value).split("\n");

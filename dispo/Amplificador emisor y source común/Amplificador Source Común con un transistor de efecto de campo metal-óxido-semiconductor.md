@@ -92,7 +92,7 @@ La fuente de polarización ($V_{GG}$ y $R_G$) representa el [[Teorema de Theveni
 
 #### Calculo de parámetros
 ---
-Usando el [[Modelo de pequeña señal para transistor de efecto de campo metal-óxido-semiconductor#Modelo Modelo para bajas frecuencias|modelo de pequeña señal para baja frecuencia]] y pasivando las [[Fuente de tensión|fuentes de tensión continuas]], tendremos
+Usando el [[Modelo de pequeña señal para transistor de efecto de campo metal-óxido-semiconductor#Modelo para bajas frecuencias|modelo de pequeña señal para baja frecuencia]] y pasivando las [[Fuente de tensión|fuentes de tensión continuas]], tendremos
 
 ![[Amplificador source común con modelo de pequeña señal.webp]]
 

@@ -25,15 +25,7 @@ try {
     } else if (modificacion == AGREGAR) {
 
         let referencias = dv.pages('#referencia')
-            .flatMap(referencia => {
-                let desc = tp.user.cita().metadata(tp, referencia);
-                if (!desc) {
-                    console.log("El siguiente archivo tuvo un erro al describirse");
-                    console.log(referencia);
-                    return [];
-                }
-                return [ desc ];
-            })
+            .flatMap(referencia => tp.user.cita().metadata(tp, referencia))
             .sort(ref => -ref.numReferencia);
 
         let opciones = referencias.map(ref => tp.user.cita().describir(ref));
@@ -50,19 +42,11 @@ try {
         if (!referenciasArchivo)
             referenciasArchivo = [];
         
-        referenciasArchivo = referenciasArchivo.map(ref =>  parseInt(ref, 10));
+        referenciasArchivo = referenciasArchivo.map(ref => parseInt(ref, 10));
         
         let referencias = dv.pages('#referencia')
+            .flatMap(referencia => tp.user.cita().metadata(tp, referencia))
             .filter(ref => referenciasArchivo.indexOf(ref.numReferencia) >= 0)
-            .flatMap(referencia => {
-                let desc = tp.user.cita().metadata(tp, referencia);
-                if (!desc) {
-                    console.log("El siguiente archivo tuvo un erro al describirse");
-                    console.log(referencia);
-                    return [];
-                }
-                return [ desc ];
-            })
             .sort(ref => -ref.numReferencia);
 
         let opciones = referencias.map(ref => tp.user.cita().describir(ref));
@@ -78,9 +62,9 @@ try {
     let contenido = await app.vault.read(tArchivo);
     
     let hayReferencias = referenciasFinal.length > 0;
-    let hayTopicoReferencias = contenido.includes(TEXTO_REFERENCIA);
+    let hayTopicoReferencias = incluye(contenido, TEXTO_REFERENCIA);
 
-    let nuevoContenido;
+    let nuevoContenido = contenido;
 
     if (hayReferencias && !hayTopicoReferencias) {
         // Agregar el topico
@@ -90,7 +74,7 @@ try {
         // Sacar el topico
         nuevoContenido = contenido.replace(TEXTO_REFERENCIA, "");
 
-    }
+    } 
 
     await app.vault.modify(tArchivo, nuevoContenido);
 
@@ -100,6 +84,33 @@ try {
     console.log(mensaje);
     console.log(e);
     new Notice(mensaje);
+}
+
+function incluye(referencia, posibleIncluido) {
+    referencia = referencia.split("\n").map(l => l.trim());
+    posibleIncluido = posibleIncluido.split("\n").map(l => l.trim());
+    
+    let empezo = false;
+    let contador = 0;
+
+    for (let linea of referencia) {
+        let lineaIgual = linea == posibleIncluido[contador];
+
+        if (!empezo && lineaIgual) {
+            empezo = true;
+            contador++;
+        } else if (empezo && lineaIgual) {
+            contador++;
+            if (contador >= posibleIncluido.length) {
+                return true;
+            }
+        } else if (empezo && !lineaIgual) {
+            empezo = false;
+            contador = 0;
+        }
+    }
+    
+    return false;
 }
 
 async function agregarReferencia(tArchivo, numReferencia) {

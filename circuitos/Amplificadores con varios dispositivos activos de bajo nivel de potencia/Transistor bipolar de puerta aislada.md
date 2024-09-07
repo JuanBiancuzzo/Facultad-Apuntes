@@ -6,6 +6,8 @@ aliases:
 tags:
   - circuitos/Amplificadores-con-varios-dispositivos-activos-de-bajo-nivel-de-potencia
   - nota/facultad
+  - dispo/Transistor-MOSFET
+  - dispo/Transistor-bipolar-de-juntura
 ---
 ### Definición
 ---

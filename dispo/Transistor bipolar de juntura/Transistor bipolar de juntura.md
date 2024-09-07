@@ -5,6 +5,7 @@ aliases:
 tags:
   - dispo/Transistor-bipolar-de-juntura
   - nota/facultad
+  - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
 ---
 ### Definición
 ---

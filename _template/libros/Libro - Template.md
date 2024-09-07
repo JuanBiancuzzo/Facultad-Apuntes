@@ -1,9 +1,8 @@
 <%* 
 	const tArchivo = tp.file.find_tfile(tp.file.path(true));	
 
-	let titulo = tp.file.title;
-	let [numReferencia, tipoCita] = titulo.split("-") // tipoCita siempre va a ser Libro
-		.map(texto => texto.trim());
+	let tipoCita = "Libro";
+	let numReferencia = tp.user.generarNumReferencia(dv);
 	
 	const dia = tp.file.creation_date("YYYY-MM-DD");
 	
@@ -14,12 +13,23 @@
 
 	try {
         let infoLibro = await tp.user.cita().citar(tp, tipoCita);
+
+		let titulo = infoLibro["tituloObra"];
+		let autores = [];
+		for (let {autore: autore} of infoLibro["nombreAutores"]) {
+			let [{nombre: nombre}, {apellido: apellido}] = autore;
+			autores.push(`${nombre} ${apellido}`);
+		}
 		
-        console.log(infoLibro);
+        await tp.file.rename(`${titulo} de ${autores.join(", ")}`);
 		
 		tR += tp.user.cita().mostrar(infoLibro);
 	} catch ({ name: nombre, message: mensaje }) {
 		const eliminar = tp.user.eliminar();
+		const errorNombre = tp.user.error().nombre;
+
+		console.log(mensaje);
+
         switch (nombre) {
             case errorNombre.quit:
                 return await eliminar.directo(tArchivo, mensaje);
@@ -31,3 +41,6 @@
 	tR += `tags: \n - referencia/${tipoCita.toLowerCase()}\n`;
 	tR += "---";
 %>
+### Resumen
+---
+<% tp.file.cursor() %>

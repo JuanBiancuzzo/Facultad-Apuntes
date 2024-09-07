@@ -18,9 +18,8 @@ La referencias de Youtube siguen el estándar de **quién** (autor, usuario de
 
 Nombre del autor. \[Nombre de usuario en Youtube\] (fecha). _Título del video_ \[Archivo de video\]. Youtube. http://youtube.com/url-del-video
 
-
 ### Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
 ```

@@ -9,6 +9,7 @@ async function citarWiki(tp) {
         "nombreArticulo": {
             tipo: SIMPLE,
             valor: null,
+            minimo: (valor) => valor != null,
             representarElemento: (nombreVideo) => {
                 let representacion = "nombre del artículo";
                 if (nombreVideo) representacion += `: ${nombreVideo}`;
@@ -22,6 +23,7 @@ async function citarWiki(tp) {
         "fecha": {
             tipo: SIMPLE,
             valor: null,
+            minimo: (valor) => valor != null,
             representarElemento: (fecha) => {
                 let representacion = "fecha de artículo";
                 if (fecha) representacion += `: ${describir.fecha(fecha, cte.meses)}`;
@@ -38,6 +40,7 @@ async function citarWiki(tp) {
         "url": {
             tipo: SIMPLE,
             valor: null,
+            minimo: (valor) => valor != null,
             representarElemento: (url) => {
                 let representacion = "url";
                 if (url) representacion += `: ${url}`;
@@ -52,7 +55,10 @@ async function citarWiki(tp) {
 }
 
 function describirWiki(archivo) {
-    return `Artículo de wikipedia: ${archivo.nombreArticulo}`;
+    return [{
+        numReferencia: archivo.numReferencia,
+        texto: `Artículo de wikipedia: ${archivo.nombreArticulo}`
+    }];
 }
 
 module.exports = () => {

@@ -16,15 +16,7 @@
 	let indice = posiblesIndices[0];
 
 	let referencias = dv.pages('#referencia')
-		.flatMap(referencia => {
-			let desc = tp.user.cita().metadata(tp, referencia);
-			if (!desc) {
-				console.log("El siguiente archivo tuvo un erro al describirse");
-				console.log(referencia);
-				return [];
-			}
-			return [ desc ];
-		})
+		.flatMap(referencia => tp.user.cita().metadata(tp, referencia))
 		.sort(ref => -ref.numReferencia);
 
 	let opciones = ["No citar ahora", "Nueva cita", ...referencias.map(ref => tp.user.cita().describir(ref))];

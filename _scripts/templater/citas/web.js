@@ -9,16 +9,17 @@ async function citarWeb(tp) {
         "nombreAutores": {
             tipo: MULTIPLE,
             valor: [],
+            minimo: (valor) => valor.length > 0,
             representarElemento: (autore) => {
                 if (autore == null) return "autore";
                 let [{nombre: nombre}, {apellido: apellido}] = autore["autore"];
                 return `${apellido}, ${nombre}`;
             },
-            preguntar: async (tp, valor) => {
+            preguntar: async (tp, i, autore) => {
                 let textoNombre = "Nombre del autore";
                 let textoApellido = "Apellido del autore";
-                if (valor) {
-                    let [{nombre: nombre}, {apellido: apellido}] = valor["autore"];
+                if (autore) {
+                    let [{nombre: nombre}, {apellido: apellido}] = autore["autore"];
                     textoNombre += `, donde antes era ${nombre}`;
                     textoApellido += `, donde antes era ${apellido}`;
                 }
@@ -33,6 +34,7 @@ async function citarWeb(tp) {
         "fechaPublicacion": {
             tipo: SIMPLE,
             valor: null,
+            minimo: (valor) => valor != null,
             representarElemento: (fecha) => {
                 let representacion = "fecha de publicación";
                 if (fecha) representacion += `: ${describir.fecha(fecha, cte.meses)}`;
@@ -49,6 +51,7 @@ async function citarWeb(tp) {
         "tituloArticulo": {
             tipo: SIMPLE,
             valor: null,
+            minimo: (valor) => valor != null,
             representarElemento: (titulo) => {
                 let representacion = "título del articulo";
                 if (titulo) representacion += `: ${titulo}`;
@@ -62,6 +65,7 @@ async function citarWeb(tp) {
         "nombrePagina": {
             tipo: SIMPLE,
             valor: null,
+            minimo: (valor) => valor != null,
             representarElemento: (nombrePagina) => {
                 let representacion = "nombre de la página";
                 if (nombrePagina) representacion += `: ${nombrePagina}`;
@@ -75,6 +79,7 @@ async function citarWeb(tp) {
         "url": {
             tipo: SIMPLE,
             valor: null,
+            minimo: (valor) => valor != null,
             representarElemento: (url) => {
                 let representacion = "url";
                 if (url) representacion += `: ${url}`;
@@ -95,7 +100,10 @@ function describirWeb(archivo) {
         autores += `${apellido}, ${nombre[0]}.`;
     }
 
-    return `${archivo.tituloArticulo} de ${autores}, publicado en ${archivo.nombrePagina}`;
+    return [{
+        numReferencia: archivo.numReferencia,
+        texto: `${archivo.tituloArticulo} de ${autores}, publicado en ${archivo.nombrePagina}`
+    }];
 }
 
 module.exports = () => {

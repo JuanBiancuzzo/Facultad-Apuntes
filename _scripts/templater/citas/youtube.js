@@ -9,6 +9,7 @@ async function citarYoutube(tp) {
         "nombreVideo": {
             tipo: SIMPLE,
             valor: null,
+            minimo: (valor) => valor != null,
             representarElemento: (nombreVideo) => {
                 let representacion = "nombre del video";
                 if (nombreVideo) representacion += `: ${nombreVideo}`;
@@ -22,6 +23,7 @@ async function citarYoutube(tp) {
         "nombreCanal": {
             tipo: SIMPLE,
             valor: null,
+            minimo: (valor) => valor != null,
             representarElemento: (nombreCanal) => {
                 let representacion = "nombre del canal";
                 if (nombreCanal) representacion += `: ${nombreCanal}`;
@@ -35,6 +37,7 @@ async function citarYoutube(tp) {
         "fecha": {
             tipo: SIMPLE,
             valor: null,
+            minimo: (valor) => valor != null,
             representarElemento: (fecha) => {
                 let representacion = "fecha de video";
                 if (fecha) representacion += `: ${describir.fecha(fecha, cte.meses)}`;
@@ -51,6 +54,7 @@ async function citarYoutube(tp) {
         "url": {
             tipo: SIMPLE,
             valor: null,
+            minimo: (valor) => valor != null,
             representarElemento: (url) => {
                 let representacion = "url";
                 if (url) representacion += `: ${url}`;
@@ -65,7 +69,10 @@ async function citarYoutube(tp) {
 }
 
 function describirYoutube(archivo) {
-    return `${archivo.nombreVideo} de ${archivo.nombreCanal}`;
+    return [{
+        numReferencia: archivo.numReferencia,
+        texto: `${archivo.nombreVideo} de ${archivo.nombreCanal}`
+    }]
 }
 
 module.exports = () => {

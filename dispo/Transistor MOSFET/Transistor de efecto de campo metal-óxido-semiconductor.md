@@ -5,6 +5,7 @@ aliases:
 tags:
   - dispo/Transistor-MOSFET
   - nota/facultad
+  - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
 ---
 ### Definición
 ---
