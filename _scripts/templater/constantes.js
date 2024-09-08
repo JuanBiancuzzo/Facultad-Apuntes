@@ -4,6 +4,8 @@ const MESES = [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", 
 
 const MULTIPLE = "Multiple";
 const SIMPLE = "Simple"; 
+const RECURSIVO = "Recursivo"; 
+const AUTOMATICO = "Automatico";
 
 module.exports = () => ({
     pathArticulos: "legal/Articulos",
@@ -13,5 +15,7 @@ module.exports = () => ({
     tipoDatoCita: {
         multiple: MULTIPLE,
         simple: SIMPLE,
+        recursivo: RECURSIVO,
+        automatico: AUTOMATICO,
     }
 });

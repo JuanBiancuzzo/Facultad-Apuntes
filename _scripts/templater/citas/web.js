@@ -1,21 +1,43 @@
-async function citarWeb(tp) {
-    const { simple: SIMPLE, multiple: MULTIPLE } = tp.user.constantes().tipoDatoCita;
+const NOMBRE_AUTORES = "nombreAutores";
+const FECHA_PUBLICACION = "fechaPublicacion";
+const TITULO_ARTICULO = "tituloArticulo";
+const NOMBRE_PAGINA = "nombrePagina";
+const URL = "url";
+
+function valorDefault() {
+    return {
+        [NOMBRE_AUTORES]: [],
+        [FECHA_PUBLICACION]: null,
+        [TITULO_ARTICULO]: null,
+        [NOMBRE_PAGINA]: null,
+        [URL]: null
+    };
+}
+
+async function citarWeb(tp, datosIniciales = undefined) {
+    const { 
+        simple: SIMPLE, 
+        multiple: MULTIPLE, 
+        ..._extra 
+    } = tp.user.constantes().tipoDatoCita;
     const preguntar = tp.user.preguntar();
     const describir = tp.user.describir();
     const cte = tp.user.constantes();
     const error = tp.user.error();
 
+    if (!datosIniciales) datosIniciales = valorDefault();
+
     return {
-        "nombreAutores": {
+        [NOMBRE_AUTORES]: {
             tipo: MULTIPLE,
-            valor: [],
+            valor: datosIniciales[NOMBRE_AUTORES],
             minimo: (valor) => valor.length > 0,
             representarElemento: (autore) => {
                 if (autore == null) return "autore";
                 let [{nombre: nombre}, {apellido: apellido}] = autore["autore"];
                 return `${apellido}, ${nombre}`;
             },
-            preguntar: async (tp, i, autore) => {
+            preguntar: async (tp, autore, _seguidorRef) => {
                 let textoNombre = "Nombre del autore";
                 let textoApellido = "Apellido del autore";
                 if (autore) {
@@ -28,12 +50,16 @@ async function citarWeb(tp) {
                     tp, `${textoNombre}:`, `${textoApellido}:`,
                     error.Quit("No se ingresa el nombre del autore de forma correcta"),
                     error.Quit("No se ingresa el apellido del autore de forma correcta")
-                )
+                );
+            },
+            eliminarUltimo: (listaValores, _seguidorRef) => {
+                listaValores.pop();
+                return listaValores;
             }
         },
-        "fechaPublicacion": {
+        [FECHA_PUBLICACION]: {
             tipo: SIMPLE,
-            valor: null,
+            valor: datosIniciales[FECHA_PUBLICACION],
             minimo: (valor) => valor != null,
             representarElemento: (fecha) => {
                 let representacion = "fecha de publicación";
@@ -48,9 +74,9 @@ async function citarWeb(tp) {
                 error.Quit("No se ingresó la fecha de publicación de la página")
             )
         },
-        "tituloArticulo": {
+        [TITULO_ARTICULO]: {
             tipo: SIMPLE,
-            valor: null,
+            valor: datosIniciales[TITULO_ARTICULO],
             minimo: (valor) => valor != null,
             representarElemento: (titulo) => {
                 let representacion = "título del articulo";
@@ -62,9 +88,9 @@ async function citarWeb(tp) {
                 error.Quit("No se ingresó nombre del artículo")
             )
         },
-        "nombrePagina": {
+        [NOMBRE_PAGINA]: {
             tipo: SIMPLE,
-            valor: null,
+            valor: datosIniciales[NOMBRE_PAGINA],
             minimo: (valor) => valor != null,
             representarElemento: (nombrePagina) => {
                 let representacion = "nombre de la página";
@@ -76,9 +102,9 @@ async function citarWeb(tp) {
                 error.Quit("No se ingresó nombre de la página")
             )
         },
-        "url": {
+        [URL]: {
             tipo: SIMPLE,
-            valor: null,
+            valor: datosIniciales[URL],
             minimo: (valor) => valor != null,
             representarElemento: (url) => {
                 let representacion = "url";

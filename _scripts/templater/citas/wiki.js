@@ -1,14 +1,28 @@
-async function citarWiki(tp) {
-    const { simple: SIMPLE, multiple: _ } = tp.user.constantes().tipoDatoCita;
+const NOMBRE_ARTICULO = "nombreArticulo";
+const FECHA = "fecha";
+const URL = "url";
+
+function valorDefault() {
+    return {
+        [NOMBRE_ARTICULO]: null,
+        [FECHA]: null,
+        [URL]: null,
+    }
+}
+
+async function citarWiki(tp, datosIniciales = undefined) {
+    const { simple: SIMPLE, ..._extra } = tp.user.constantes().tipoDatoCita;
     const preguntar = tp.user.preguntar();
     const describir = tp.user.describir();
     const cte = tp.user.constantes();
     const error = tp.user.error();
 
+    if (!datosIniciales) datosIniciales = valorDefault();
+
     return {
-        "nombreArticulo": {
+        [NOMBRE_ARTICULO]: {
             tipo: SIMPLE,
-            valor: null,
+            valor: datosIniciales[NOMBRE_ARTICULO],
             minimo: (valor) => valor != null,
             representarElemento: (nombreVideo) => {
                 let representacion = "nombre del artículo";
@@ -20,9 +34,9 @@ async function citarWiki(tp) {
                 error.Quit("No se ingresa nombre del artículo")
             )
         },
-        "fecha": {
+        [FECHA]: {
             tipo: SIMPLE,
-            valor: null,
+            valor: datosIniciales[FECHA],
             minimo: (valor) => valor != null,
             representarElemento: (fecha) => {
                 let representacion = "fecha de artículo";
@@ -37,9 +51,9 @@ async function citarWiki(tp) {
                 error.Quit("No se ingresó la fecha del video")
             )
         },
-        "url": {
+        [URL]: {
             tipo: SIMPLE,
-            valor: null,
+            valor: datosIniciales[URL],
             minimo: (valor) => valor != null,
             representarElemento: (url) => {
                 let representacion = "url";

@@ -1,14 +1,30 @@
-async function citarYoutube(tp) {
-    const { simple: SIMPLE, multiple: _ } = tp.user.constantes().tipoDatoCita;
+const NOMBRE_VIDEO = "nombreVideo";
+const NOMBRE_CANAL = "nombreCanal";
+const FECHA = "fecha";
+const URL = "url";
+
+function valorDefault() {
+    return {
+        [NOMBRE_VIDEO]: null,
+        [NOMBRE_CANAL]: null,
+        [FECHA]: null,
+        [URL]: null,
+    }
+}
+
+async function citarYoutube(tp, datosIniciales = undefined) {
+    const { simple: SIMPLE, ..._extra } = tp.user.constantes().tipoDatoCita;
     const preguntar = tp.user.preguntar();
     const describir = tp.user.describir();
     const cte = tp.user.constantes();
     const error = tp.user.error();
 
+    if (!datosIniciales) datosIniciales = valorDefault();
+
     return {
-        "nombreVideo": {
+        [NOMBRE_VIDEO]: {
             tipo: SIMPLE,
-            valor: null,
+            valor: datosIniciales[NOMBRE_VIDEO],
             minimo: (valor) => valor != null,
             representarElemento: (nombreVideo) => {
                 let representacion = "nombre del video";
@@ -20,9 +36,9 @@ async function citarYoutube(tp) {
                 error.Quit("No se ingresa nombre del video")
             )
         },
-        "nombreCanal": {
+        [NOMBRE_CANAL]: {
             tipo: SIMPLE,
-            valor: null,
+            valor: datosIniciales[NOMBRE_CANAL],
             minimo: (valor) => valor != null,
             representarElemento: (nombreCanal) => {
                 let representacion = "nombre del canal";
@@ -34,9 +50,9 @@ async function citarYoutube(tp) {
                 error.Quit("No se ingresó nombre del canal")
             )
         },
-        "fecha": {
+        [FECHA]: {
             tipo: SIMPLE,
-            valor: null,
+            valor: datosIniciales[FECHA],
             minimo: (valor) => valor != null,
             representarElemento: (fecha) => {
                 let representacion = "fecha de video";
@@ -51,7 +67,7 @@ async function citarYoutube(tp) {
                 error.Quit("No se ingresó la fecha del video")
             )
         },
-        "url": {
+        [URL]: {
             tipo: SIMPLE,
             valor: null,
             minimo: (valor) => valor != null,

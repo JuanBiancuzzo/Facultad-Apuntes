@@ -31,36 +31,64 @@ function mostrarCita(archivo, num) {
 
 exports.mostrarCita = mostrarCita;
 
-function mostrarCitaLibro(archivo, num) {
-    const tituloObra = archivo.tituloObra;
-    const editorial = archivo.editorial;
-    const nombreAutores = archivo.nombreAutores;
-    const anio = archivo.anio;
-
-    const url = archivo.url ? ` ${url}.` : "";
-    const capitulos = archivo.capitulos ? archivo.capitulos : [];
-
-    let infoCapitulo = "";
-    for (let { numReferencia, capitulo } of capitulos) {
-        if (num == numReferencia) {
-            infoCapitulo = ` cap ${capitulo}.`
-        }
-    }
-
-    let autores = "";
-    for (let {autore: autore} of nombreAutores) {
+function mostrarNombreAutores(autores) {
+    let resultado = [];
+    for (let {autore: autore} of autores) {
         let [{nombre: nombre}, {apellido: apellido}] = autore;
 
         if (nombre && apellido) {
-            autores += `${apellido}, ${nombre[0]}. `;
+            resultado.push(`${apellido}, ${nombre[0]}`);
         } else if (nombre && !apellido) {
-            autores += `${nombre}. `;
+            resultado.push(nombre);
         } else {
-            autores += `${apellido}. `;
+            resultado.push(apellido);
         }
     }
 
-    return `${autores}(${anio}). <i>${tituloObra}</i>. ${editorial}.${infoCapitulo}${url}`;
+    return resultado.join(". ");
+}
+
+/**
+    const NUMERO_CAPITULO = "numeroCapitulo";
+    const NOMBRE_CAPITULO = "nombreCapitulo";
+    const EDITORES = "editores";
+    const PAGINAS = "paginas";
+ */
+function mostrarCitaLibro(archivo, num) {
+    const tituloObra = ` <i>${archivo.tituloObra}</i>.`;
+    const editorial = ` ${archivo.editorial}.`;
+    const nombreAutores = mostrarNombreAutores(archivo.nombreAutores);
+    const anio = ` (${archivo.anio}).`;
+    const url = archivo.url ? ` ${url}.` : "";
+
+    let datosSeparados = [];
+    if (archivo.edicion) datosSeparados.push(`${archivo.edicion} ed.`);
+    if (archivo.volumen) datosSeparados.push(`Vol. ${archivo.volumen}.`);
+    let datosJuntos = datosSeparados.length > 0 
+        ? ` (${datosSeparados.join(", ")}).`
+        : "";
+    
+    const capitulos = archivo.capitulos ? archivo.capitulos : [];
+    const capitulo = capitulos.find(({numReferencia, ..._}) => numReferencia == num);
+
+    if (!capitulo) 
+        return `${nombreAutores}.${anio}${tituloObra}${datosJuntos}${editorial}${url}`;
+
+    if (capitulo.paginas) datosSeparados.push(`pp. ${capitulo.paginas.inicio}-${capitulo.paginas.final}`);
+    datosJuntos = datosSeparados.length > 0 
+        ? ` (${datosSeparados.join(", ")}).`
+        : "";
+
+    const numeroCapitulo = `Capitulo ${capitulo.numeroCapitulo}`;
+    const nombreCapitulo = capitulo.nombreCapitulo ? ` ${capitulo.nombreCapitulo}` : "";
+    const tituloCapitulo = `${numeroCapitulo}${nombreCapitulo}`;
+    
+    const editores = capitulo.editores ? capitulo.editores : [];
+    const textoEditores = editores.length > 0 
+        ? ` en ${mostrarNombreAutores(editores)} (Ed.)`
+        : "";
+
+    return `${nombreAutores}.${anio}${tituloCapitulo}${textoEditores}, ${tituloObra}${datosJuntos}${editorial}${url}`;
 }
 
 function mostrarCitaWeb(archivo) {

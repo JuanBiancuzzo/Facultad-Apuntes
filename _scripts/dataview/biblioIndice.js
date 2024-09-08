@@ -29,13 +29,22 @@ let referenciasTema = paginas
     .values;
 
 if (referenciasTema.length > 0) {
-    let archivoReferencias = dv.pages('"_referencias"')
-        .filter(ref => referenciasTema.indexOf(ref.numReferencia) >= 0)
-        .sort(ref => ref.numReferencia);
+    let referencias = dv.pages('#referencia')
+        .flatMap(ref => {
+            let resultado = [ { archivo: ref, num: ref.numReferencia } ]
+            if (ref.tipoCita != "Libro" || !ref.capitulos)
+                return resultado;
+            for (let { numReferencia, capitulo: _ } of ref.capitulos) {			
+                resultado.push({ archivo: ref, num: numReferencia });
+            }
+            return resultado;
+        })
+        .filter(ref => referenciasTema.indexOf(ref.num) >= 0)
+        .sort(ref => ref.num);
 
     let resultado = "";
-    for (let referencia of archivoReferencias) {
-        resultado += citaView.mostrarCita(referencia);
+    for (let { archivo, num } of referencias) {
+        resultado += citaView.mostrarCita(archivo, num);
     }
 
     dv.el("div", resultado);

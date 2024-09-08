@@ -36,6 +36,31 @@ const CITAS = [
     },
 ]
 
+class SeguidorReferencias {
+    constructor(numReferenciaInicial) {
+        this.numReferenciaActual = numReferenciaInicial;
+        this.devultos = [];
+    }
+
+    conseguirReferencia() {
+        if (this.devultos.length > 0)
+            return this.devultos.shift();
+        
+        let devolver = this.numReferenciaActual;
+        this.numReferenciaActual++;
+        return devolver;
+    }
+
+    devolverReferencia(numReferencia) {
+        let index = this.devultos.findIndex((element) => element > numReferencia);
+        if (index >= 0) {
+            this.devultos.splice(index, 0, numero);
+        } else {
+            this.devultos.push(numero);
+        }
+    }
+}
+
 async function generarCita(tp, numReferencia) {
     let tipoCita = await tp.system.suggester(
         CITAS.map(cita => cita.texto),
@@ -76,14 +101,19 @@ function descripcionTexto(desc) {
 function condicionMinima(valores) {
     for (let [key, value] of Object.entries(valores)) {
         let minimo = value["minimo"];
-
         if (!minimo(value["valor"]))
             return false;
     }
     return true;
 }
 
-function actualizarDatos(valoresActuales, simple, multiple) {
+function actualizarDatos(tp, valoresActuales) {
+    const { 
+        simple: SIMPLE, 
+        multiple: MULTIPLE,
+        resursivo: RECURSIVO
+    } = tp.user.constantes().tipoDatoCita;
+    
     let opciones = [];
     let valores = [];
 
@@ -96,16 +126,17 @@ function actualizarDatos(valoresActuales, simple, multiple) {
         let opcionalTexto = value["minimo"](valor) ? " (opcional)" : "";
 
         switch (tipo) {
-            case simple: 
+            case SIMPLE: 
                 texto = representarElemento(valor);
                 
                 opciones.push(key);
                 valores.push((valor ? ` ✏️ Modificar `: `${opcionalTexto} ⊕ Ingresar `) + texto);
                 break;
             
-            case multiple:
+            case MULTIPLE:
+            case RECURSIVO:
                 for (let index in valor) {
-                    texto = representarElemento(valor[index]);                    
+                    texto = representarElemento(valor[index]);      
                     opciones.push(`${key}-${index}`);
                     valores.push(` ✏️ Modificar ${texto}`);
                 }
@@ -129,18 +160,19 @@ function actualizarDatos(valoresActuales, simple, multiple) {
     return [opciones, valores];
 }
 
-async function citarCita(tp, tipoCita) {    
-    const { simple: SIMPLE, multiple: MULTIPLE } = tp.user.constantes().tipoDatoCita;
+async function rellenarDatos(tp, generarInicio, seguidorRef, datosIniciales = undefined) {
+    const { 
+        simple: SIMPLE, 
+        multiple: MULTIPLE,
+        resursivo: RECURSIVO,
+        automatico: AUTOMATICO,
+    } = tp.user.constantes().tipoDatoCita;
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
 
-    let cita = CITAS.find(cita => cita.tipo === tipoCita);
-
-    if (!cita) throw error.Prompt(`El tipo de cita "${tipoCita}" no existe todavia`);
+    let datos = await generarInicio(tp, datosIniciales);
     
-    let datos = await cita.f(tp).citar(tp);
-    
-    let [ opciones, valores ] = actualizarDatos(datos, SIMPLE, MULTIPLE);
+    let [ opciones, valores ] = actualizarDatos(tp, datos);
     let respuesta = await preguntar.suggester(
         tp, valores, opciones, 
         "Completar para poder citar", 
@@ -155,27 +187,51 @@ async function citarCita(tp, tipoCita) {
                 datos[key]["valor"] = nuevoValor;
                 
             } else if (tipo == MULTIPLE && respuesta == key) {             
-                // No me gusta nada el hecho de pasar el length, porque si se esta
-                // editando, ese no se refiere al numRef + length + 1 para asignarselo   
-                let nuevoValor = await extra["preguntar"](tp, datos[key]["valor"].length + 1, null);
-                datos[key]["valor"].push(nuevoValor);
+                datos[key]["valor"].push(
+                    await extra["preguntar"](tp, null, seguidorRef)
+                );
 
             } else if (tipo == MULTIPLE && respuesta.startsWith(key)) {
                 let index = parseInt(respuesta.replaceAll(`${key}-`, ""), 10);
 
                 if (index < datos[key]["valor"].length) {
-                    let nuevoValor = await extra["preguntar"](tp, index + 1, extra["valor"][index]);
-                    datos[key]["valor"][index] = nuevoValor;
+                    datos[key]["valor"][index] = await extra["preguntar"](  
+                        tp, extra["valor"][index], seguidorRef
+                    );
                 } else {
-                    datos[key]["valor"].pop();
+                    datos[key]["valor"] = extra["eliminarUltimo"](
+                        extra["valor"], seguidorRef
+                    );
                 }
+            } else if (tipo == RECURSIVO && respuesta == key) {
+                datos[key]["valor"].push(await rellenarDatos(
+                    tp, extra["generarInicio"], 
+                    seguidorRef
+                ));
+
+            } else if (tipo == RECURSIVO && respuesta.startsWith(key)) {
+                let index = parseInt(respuesta.replaceAll(`${key}-`, ""), 10);
+
+                if (index < datos[key]["valor"].length) {
+                    datos[key]["valor"][index] = await rellenarDatos(
+                        tp, extra["generarInicio"], 
+                        seguidorRef, 
+                        extra["valor"][index]
+                    );
+                } else {
+                    datos[key]["valor"] = extra["eliminarUltimo"](
+                        extra["valor"], seguidorRef
+                    );
+                }
+            } else if (tipo == AUTOMATICO) {
+                datos[key]["valor"] = await datos[key]["asignar"](tp, datos[key]["valor"], seguidorRef);
             }
         }
         if (respuesta == SALIR) {
             break;
         }
         
-        [ opciones, valores ] = actualizarDatos(datos, SIMPLE, MULTIPLE);
+        [ opciones, valores ] = actualizarDatos(tp, datos);
         if (condicionMinima(datos)) {
             opciones.push(SALIR);
             valores.push(" ↶ Dejar de editar");
@@ -196,28 +252,15 @@ async function citarCita(tp, tipoCita) {
     return respuestaFinal;
 }
 
-function mostrarCita(contenido) {
-    if (!contenido)
-        return "false";
+async function citarCita(tp, tipoCita, numReferenciaSiguiente) {    
+    const error = tp.user.error();
 
-    let tR = "";
-    if (Array.isArray(contenido) && contenido.length == 0) {
-        tR += "false";
-    } else if (Array.isArray(contenido)) {
-        tR += "\n";
-        for (let value of contenido) {
-            let nuevoValor = mostrarCita(value).split("\n");
-            tR += `- ${nuevoValor.shift()}\n${nuevoValor.map(v => `  ${v}`).join("\n")}\n`;
-        }
-    } else if (typeof contenido === "object") { // Asumo que si no es un array, debería ser un string o un dict que es object
-        for (let [key, value] of Object.entries(contenido)) {
-            tR += `${key}: ${mostrarCita(value)}\n`;
-        }
-    } else {
-        tR += contenido;
-    }
+    let cita = CITAS.find(cita => cita.tipo === tipoCita);
+    if (!cita) 
+        throw error.Prompt(`El tipo de cita "${tipoCita}" no existe todavia`);
 
-    return tR;
+    let seguidorRef = new SeguidorReferencias(numReferenciaSiguiente);
+    return await rellenarDatos(tp, cita.f(tp).citar, seguidorRef);
 }
 
 module.exports = () => ({
@@ -225,5 +268,4 @@ module.exports = () => ({
     metadata: describirCita,
     describir: descripcionTexto,
     citar: citarCita,
-    mostrar: mostrarCita,
 })

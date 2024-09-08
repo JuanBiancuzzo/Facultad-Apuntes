@@ -14,7 +14,7 @@
 
 	try {
 		let datos = await tp.user.cita().citar(tp, tipoCita);
-		tR += tp.user.cita().mostrar(datos);
+		tR += tp.obsidian.stringifyYaml(datos);
 
 	} catch ({ name: nombre, message: mensaje }) {
 		const eliminar = tp.user.eliminar();

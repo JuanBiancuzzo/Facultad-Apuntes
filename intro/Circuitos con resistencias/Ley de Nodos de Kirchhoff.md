@@ -7,7 +7,7 @@ tags:
 ---
 ### Definición
 ---
-La suma de todas las [[Corriente eléctrica|corrientes]] eléctricas entrantes a un [[Nodo]] es igual a la suma de todas las corrientes salientes. Esta parte del principio de [[Conservación de carga]]
+La suma de todas las [[Corriente eléctrica|corrientes]] eléctricas entrantes a un [[Nodo]] es igual a la suma de todas las corrientes salientes. Esta parte del principio de [[Ecuación de continuidad#En electromagnetismo|conservación de carga]]
 
 ```tikz
 \usepackage{circuitikz} 
