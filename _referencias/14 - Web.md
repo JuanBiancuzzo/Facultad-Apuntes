@@ -3,9 +3,8 @@ dia: 2024-07-05
 tipoCita: Web
 numReferencia: 14
 nombreAutores:
-  - autore:
-      - nombre: Carlos
-      - apellido: Sanchez
+  - apellido: Carlos
+    nombre: Sanchez
 fechaPublicacion: 2020-04-14
 tituloArticulo: ¿Cómo citar un Podcast?
 nombrePagina: Normas APA

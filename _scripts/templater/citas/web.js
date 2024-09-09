@@ -34,23 +34,26 @@ async function citarWeb(tp, datosIniciales = undefined) {
             minimo: (valor) => valor.length > 0,
             representarElemento: (autore) => {
                 if (autore == null) return "autore";
-                let [{nombre: nombre}, {apellido: apellido}] = autore["autore"];
-                return `${apellido}, ${nombre}`;
+                return `${autore.apellido}, ${autore.nombre}`;
             },
             preguntar: async (tp, autore, _seguidorRef) => {
                 let textoNombre = "Nombre del autore";
                 let textoApellido = "Apellido del autore";
                 if (autore) {
-                    let [{nombre: nombre}, {apellido: apellido}] = autore["autore"];
-                    textoNombre += `, donde antes era ${nombre}`;
-                    textoApellido += `, donde antes era ${apellido}`;
+                    textoNombre += `, donde antes era ${autore.nombre}`;
+                    textoApellido += `, donde antes era ${autore.apellido}`;
                 }
-                
-                return await preguntar.autore(
-                    tp, `${textoNombre}:`, `${textoApellido}:`,
-                    error.Quit("No se ingresa el nombre del autore de forma correcta"),
-                    error.Quit("No se ingresa el apellido del autore de forma correcta")
-                );
+
+                return {
+                    apellido: await preguntar.simple(
+                        tp, `${textoApellido}:`, 
+                        error.Quit("No se ingresa el apellido del autore de forma correcta")
+                    ),
+                    nombre: await preguntar.simple(
+                        tp, `${textoNombre}:`, 
+                        error.Quit("No se ingresa el nombre del autore de forma correcta")
+                    ),
+                };
             },
             eliminarUltimo: (listaValores, _seguidorRef) => {
                 listaValores.pop();
@@ -121,8 +124,7 @@ async function citarWeb(tp, datosIniciales = undefined) {
 
 function describirWeb(archivo) {
     let autores = "";
-    for (let {autore: autore} of archivo.nombreAutores) {
-        let [{nombre: nombre}, {apellido: apellido}] = autore;
+    for (let { nombre, apellido } of archivo.nombreAutores) {
         autores += `${apellido}, ${nombre[0]}.`;
     }
 

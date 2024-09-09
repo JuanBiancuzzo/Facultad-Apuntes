@@ -5,7 +5,7 @@ Lista de todas las carpetas siendo investigadas, con todos los links que usan. C
 ```dataviewjs
 const indices = dv.pages('#índice')
 	.sort(archivo => archivo.file.folder.split("/").pop());
-const referencias = dv.pages('"_referencias"');
+const referencias = dv.pages('#referencia');
 
 let citaView = require(app.vault.adapter.basePath + "/_scripts/dataview/citaView.js");
 

@@ -53,23 +53,26 @@ async function citarLibro(tp, datosIniciales = undefined) {
             minimo: (valor) => valor.length > 0,
             representarElemento: (autore) => {
                 if (autore == null) return "autore";
-                let [{nombre: nombre}, {apellido: apellido}] = autore["autore"];
-                return `${apellido}, ${nombre}`;
+                return `${autore.apellido}, ${autore.nombre}`;
             },
-            preguntar: async (tp, valor, _seguidorRef) => {
+            preguntar: async (tp, autore, _seguidorRef) => {
                 let textoNombre = "Nombre del autore";
                 let textoApellido = "Apellido del autore";
-                if (valor) {
-                    let [{nombre: nombre}, {apellido: apellido}] = valor["autore"];
-                    textoNombre += `, donde antes era ${nombre}`;
-                    textoApellido += `, donde antes era ${apellido}`;
+                if (autore) {
+                    textoNombre += `, donde antes era ${autore.nombre}`;
+                    textoApellido += `, donde antes era ${autore.apellido}`;
                 }
                 
-                return await preguntar.autore(
-                    tp, `${textoNombre}:`, `${textoApellido}:`,
-                    error.Quit("No se ingresa el nombre del autore de forma correcta"),
-                    error.Quit("No se ingresa el apellido del autore de forma correcta")
-                );
+                return {
+                    apellido: await preguntar.simple(
+                        tp, `${textoApellido}:`, 
+                        error.Quit("No se ingresa el apellido del autore de forma correcta")
+                    ),
+                    nombre: await preguntar.simple(
+                        tp, `${textoNombre}:`, 
+                        error.Quit("No se ingresa el nombre del autore de forma correcta")
+                    ),
+                };
             },
             eliminarUltimo: (listaValores, _seguidorRef) => {
                 listaValores.pop();
@@ -245,23 +248,26 @@ async function citarCapitulo(tp, datosIniciales = undefined) {
             minimo: (_) => true,
             representarElemento: (editore) => {
                 if (editore == null) return "editore";
-                let [{nombre: nombre}, {apellido: apellido}] = editore["autore"];
-                return `${apellido}, ${nombre}`;
+                return `${editore.apellido}, ${editore.nombre}`;
             },
             preguntar: async (tp, editore, _seguidorRef) => {
                 let textoNombre = "Nombre del editore";
                 let textoApellido = "Apellido del editore";
                 if (editore) {
-                    let [{nombre: nombre}, {apellido: apellido}] = editore["autore"];
-                    textoNombre += `, donde antes era ${nombre}`;
-                    textoApellido += `, donde antes era ${apellido}`;
+                    textoNombre += `, donde antes era ${editore.nombre}`;
+                    textoApellido += `, donde antes era ${editore.apellido}`;
                 }
-                
-                return await preguntar.autore(
-                    tp, `${textoNombre}:`, `${textoApellido}:`,
-                    error.Quit("No se ingresa el nombre del editore de forma correcta"),
-                    error.Quit("No se ingresa el apellido del editore de forma correcta")
-                );
+
+                return {
+                    apellido: await preguntar.simple(
+                        tp, `${textoApellido}:`, 
+                        error.Quit("No se ingresa el apellido del editore de forma correcta")
+                    ),
+                    nombre: await preguntar.simple(
+                        tp, `${textoNombre}:`, 
+                        error.Quit("No se ingresa el nombre del editore de forma correcta")
+                    ),
+                };
             },
             eliminarUltimo: (listaValores, _seguidorRef) => {
                 listaValores.pop();
@@ -305,8 +311,7 @@ async function citarCapitulo(tp, datosIniciales = undefined) {
 
 function describirLibro(archivo) {
     let autores = [];
-    for (let {autore: autore} of archivo.nombreAutores) {
-        let [{nombre: nombre}, {apellido: apellido}] = autore;
+    for (let { nombre, apellido } of archivo.nombreAutores) {
         autores.push(`${nombre} ${apellido}`);
     }
 

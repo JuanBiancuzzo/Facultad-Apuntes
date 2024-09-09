@@ -16,9 +16,8 @@
 
 		let titulo = infoLibro["tituloObra"];
 		let autores = [];
-		for (let {autore: autore} of infoLibro["nombreAutores"]) {
-			let [{nombre: nombre}, {apellido: apellido}] = autore;
-			autores.push(`${nombre} ${apellido}`);
+		for (let autore of infoLibro["nombreAutores"]) {
+			autores.push(`${autore.nombre} ${autore.apellido}`);
 		}
 		
         await tp.file.rename(`${titulo} de ${autores.join(", ")}`);

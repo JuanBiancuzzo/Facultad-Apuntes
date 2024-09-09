@@ -33,9 +33,7 @@ exports.mostrarCita = mostrarCita;
 
 function mostrarNombreAutores(autores) {
     let resultado = [];
-    for (let {autore: autore} of autores) {
-        let [{nombre: nombre}, {apellido: apellido}] = autore;
-
+    for (let { nombre, apellido } of autores) {
         if (nombre && apellido) {
             resultado.push(`${apellido}, ${nombre[0]}`);
         } else if (nombre && !apellido) {
@@ -48,12 +46,6 @@ function mostrarNombreAutores(autores) {
     return resultado.join(". ");
 }
 
-/**
-    const NUMERO_CAPITULO = "numeroCapitulo";
-    const NOMBRE_CAPITULO = "nombreCapitulo";
-    const EDITORES = "editores";
-    const PAGINAS = "paginas";
- */
 function mostrarCitaLibro(archivo, num) {
     const tituloObra = ` <i>${archivo.tituloObra}</i>.`;
     const editorial = ` ${archivo.editorial}.`;
@@ -72,7 +64,7 @@ function mostrarCitaLibro(archivo, num) {
     const capitulo = capitulos.find(({numReferencia, ..._}) => numReferencia == num);
 
     if (!capitulo) 
-        return `${nombreAutores}.${anio}${tituloObra}${datosJuntos}${editorial}${url}`;
+        return `${nombreAutores}. ${anio}${tituloObra}${datosJuntos}${editorial}${url}`;
 
     if (capitulo.paginas) datosSeparados.push(`pp. ${capitulo.paginas.inicio}-${capitulo.paginas.final}`);
     datosJuntos = datosSeparados.length > 0 
@@ -88,11 +80,11 @@ function mostrarCitaLibro(archivo, num) {
         ? ` en ${mostrarNombreAutores(editores)} (Ed.)`
         : "";
 
-    return `${nombreAutores}.${anio}${tituloCapitulo}${textoEditores}, ${tituloObra}${datosJuntos}${editorial}${url}`;
+    return `${nombreAutores}. ${anio}${tituloCapitulo}${textoEditores}, ${tituloObra}${datosJuntos}${editorial}${url}`;
 }
 
 function mostrarCitaWeb(archivo) {
-    const nombreAutores = archivo.nombreAutores;
+    const nombreAutores = mostrarNombreAutores(archivo.nombreAutores);
     const tituloArticulo = archivo.tituloArticulo;
     const nombrePagina = archivo.nombrePagina;
     
@@ -102,21 +94,8 @@ function mostrarCitaWeb(archivo) {
     const anio = fecha.year;
     
     const url = archivo.url;
-    
-    let autores = "";
-    for (let {autore: autore} of nombreAutores) {
-        let [{nombre: nombre}, {apellido: apellido}] = autore;
 
-        if (nombre && apellido) {
-            autores += `${apellido}, ${nombre[0]}. `;
-        } else if (nombre && !apellido) {
-            autores += `${nombre}. `;
-        } else {
-            autores += `${apellido}. `;
-        }
-    }
-
-    return `${autores}(${dia} de ${mes} del ${anio}). <i>${tituloArticulo}</i>. ${nombrePagina}. ${url}`;
+    return `${nombreAutores}. (${dia} de ${mes} del ${anio}). <i>${tituloArticulo}</i>. ${nombrePagina}. ${url}`;
 }
 
 function mostrarCitaWiki(archivo) {
