@@ -3,16 +3,23 @@ dia: 2024-08-28
 tags:
   - estructura/Sistema-ARC
   - nota/facultad
+  - embebidos/Microcontroladores-de-32-bits
 aliases:
-  - Program Status Register#^PSR
-  - PSR#^PSR
   - Sintaxis de ensamblador en ARC#Sintaxis
   - Subrutinas de ensamblador en ARC#Subrutinas
   - Macros de ensamblador en ARC#Macros
+  - Arquitectura de set de instrucciones
+  - ISA
+  - Arquitectura de set de instrucciones de ARC#Set de instrucciones de ARC
+  - ISA de ARC#Set de instrucciones de ARC
 ---
 ### Definición
 ---
-El Program Status Register (PSR) guarda los flags de [[Unidad Aritmético Lógica|ALU]], las instrucciones son las siguientes ^PSR
+Un [[Codificación de código máquina|código binario]] determinado sólo se puede ejecutar en una [[Arquitectura del microprocesador|arquitectura de procesador]] específica. En general, cada nuevo familia de procesadores agrega algunas instrucciones o cambia la codificación, o incluso el conjunto de instrucciones completo
+
+#### Set de instrucciones de ARC
+---
+Las instrucciones son las siguientes
 
 | Mnemónico | Función                                                |
 | --------- | ------------------------------------------------------ |

@@ -3,8 +3,10 @@ dia: 2024-08-27
 tags:
   - estructura/Sistema-ARC
   - nota/facultad
+  - embebidos/Memorias
 aliases:
   - RAM
+  - Memoria de acceso aleatorio
 ---
 ### Definición
 ---

@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-La [[System call]] `creat()` equivale a llamar a `open()` con los flags `O_CREAT | O_WRONGLY | O_TRUNC`
+La [[System call|system call]] `creat()` equivale a llamar a `open()` con los flags `O_CREAT | O_WRONGLY | O_TRUNC`
 
 ```c
 #include <sys/types.h>

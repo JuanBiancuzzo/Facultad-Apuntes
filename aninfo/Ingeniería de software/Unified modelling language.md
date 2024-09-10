@@ -34,7 +34,7 @@ Mostrar la interacción entre una serie de clases para completar una acción
 
 #### Diagrama de estado
 ---
-Mostrar el ciclo de vida de una clase o colaboración (como una [[Máquina de estados|máquina de estados]])
+Las máquinas de estaos se basan en la notación de [[Diagrama de estado Harel|diagrama de estados introducidas por David Harel]]. El [[Diagrama de estado|diagrama de estado]] UML amplía la notación de los diagramas de estado de Harel mediante principios [[Programación oientada a objetos (OOP) (POO)|orientados a objetos]] 
 
 #### Diagrama de actividad
 ---

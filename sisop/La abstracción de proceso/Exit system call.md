@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-La [[System call]] `exit()` permite terminar el [[Proceso|proceso]]. 
+La [[System call|system call]] `exit()` permite terminar el [[Proceso|proceso]]. 
 * Ignora todas las [[Signal system call|signal]]
 * Cierra todos los [[Archivo|archivos]] abiertos
 * En consecuencia se libera todos los locks mantenidos por este proceso sobre esos archivos
@@ -16,7 +16,7 @@ La [[System call]] `exit()` permite terminar el [[Proceso|proceso]].
 * Libera todas las secciones y [[Memoria|memoria]] asociada al proceso
 * Registra información sobre el proceso 
 * Pone el [[Estados de un proceso|estado]] del proceso en [[Estados de un proceso en Linux#Task Zombie|"zombie"]]
-* Le asigna el parent [[Proceso|PID]] de los procesos hijos al PID de `init`
+* Le asigna el parent [[Getpid system call|PID]] de los procesos hijos al PID de `init`
 * Le manda una signal o señal de [[Estados de un proceso en Linux#Task Dead|muerte]] al proceso padre
 * Context switch
 

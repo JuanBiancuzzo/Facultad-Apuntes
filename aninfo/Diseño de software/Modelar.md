@@ -8,13 +8,13 @@ tags:
 ---
 Existen dos posibles caminos 
 
-#### Modelado [[Agile|ágil]]
+#### Modelado ágil
 ---
 * Modelos informales
 * Costo de mantener los [[Modelo|modelados]] vs utilidad de los modelos
 
-#### [[Ingeniería de software]] basada en modelos
+#### Ingeniería de software basada en modelos
 ---
-* Los modelos evolucionan y se transforman en el software
+* Los modelos evolucionan y se transforman en el [[Software|software]]
 * Relativamente populares en determinados segmentos
 

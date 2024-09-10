@@ -4,6 +4,7 @@ tags:
   - redes/Capa-de-Enlace
   - nota/facultad
   - estructura/Sistemas-numéricos
+  - embebidos/Microcontroladores-de-32-bits
 aliases:
   - Paridad
   - Forward error correction

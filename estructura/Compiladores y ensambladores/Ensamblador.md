@@ -21,7 +21,7 @@ Algunas de estas directivas generan información en [[Memoria|memoria]]
 ---
 Consiste de tres pasos
 1. Pre proceso
-    * Expande las [[Set instrucciones ARC#Macros|macros]], registra las definiciones y las remplaza por el código correspondiente
+    * Expande las [[Instruction Set Architecture#Macros|macros]], registra las definiciones y las remplaza por el código correspondiente
 2. Primera Pasada
     * Detecta identificadores y les asigna una posición de memoria, genera la tabla de símbolos
 3. Segunda Pasada

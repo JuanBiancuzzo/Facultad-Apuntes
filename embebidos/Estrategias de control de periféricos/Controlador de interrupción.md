@@ -1,0 +1,17 @@
+---
+dia: 2024-09-10
+tags:
+  - embebidos/Estrategias-de-control-de-periféricos
+  - nota/facultad
+  - embebidos/Microcontroladores-de-32-bits
+aliases: []
+---
+### Definición
+---
+Un controlador de interrupciones es una unidad que recibe [[Interrupción|interrupciones]] externas y genera una [[Solicitud de interrupción|IRQ]] al [[Procesador|procesador]] 
+
+![[Controlador de interrupciones.png]]
+
+Esta conexión simplificada entre un controlador de interrupciones y el procesador. En el caso de interrupciones de [[Hardware|hardware]], se pueden generar $n$ solicitudes de interrupción externas
+
+El controlador de interrupciones está asociado con un mecanismo que permite descubrir la solicitud de mayor prioridad, en forma de ID o identificador de solicitud de interrupción. Esta información a menudo se denomina vector. A veces, el [[Contador|contador]] de interrupciones se trata como un elemento interno del propio procesador; en otras [[Arquitectura del microprocesador|arquitecturas]] puede ser una interfaz programable bajo el control del procesador

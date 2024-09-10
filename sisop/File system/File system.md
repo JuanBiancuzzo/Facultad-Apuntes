@@ -3,6 +3,11 @@ dia: 2023-08-23
 tags:
   - sisop/File-system
   - nota/facultad
+aliases:
+  - Hard link#Hard link
+  - Soft link#Soft link
+  - Sistema de archivos
+  - File path#Path
 ---
 ### Definición
 ---
@@ -92,7 +97,7 @@ Es la [[File system#Path|ruta]] desde el [[File system#Root Directorio directory
 ---
 Es la [[File system#Path|ruta]] relativa que se interpreta a partir del [[Directorio|directorio]] actual.
 
-#### Current [[Directorio|directory]]
+#### Current directory
 ---
 Es el directorio actual en el cual se está ejecutando el [[Proceso|proceso]]
 

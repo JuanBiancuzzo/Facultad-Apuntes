@@ -3,6 +3,8 @@ dia: 2023-04-29
 tags:
   - estructura/Registros-y-contadores
   - nota/facultad
+aliases:
+  - Acumulador
 ---
 ### Definición
 ---

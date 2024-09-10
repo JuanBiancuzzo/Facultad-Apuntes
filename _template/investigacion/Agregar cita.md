@@ -12,17 +12,9 @@
 
         try {
 
-            let referencias = dv.pages('"_referencias"')
+            let referencias = dv.pages('#referencia')
+                .flatMap(referencia => tp.user.cita().metadata(tp, referencia))
                 .filter(ref => referenciasActuales.indexOf(ref.numReferencia) >= 0)
-                .flatMap(referencia => {
-                    let desc = tp.user.cita().metadata(tp, referencia);
-                    if (!desc) {
-                        console.log("El siguiente archivo tuvo un erro al describirse");
-                        console.log(referencia);
-                        return [];
-                    }
-                    return [ desc ];
-                })
                 .sort(ref => parseInt(ref.numReferencia, 10));
             
             let cita = await tp.system.suggester(

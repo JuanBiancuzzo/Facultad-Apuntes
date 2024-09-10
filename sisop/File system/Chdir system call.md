@@ -3,10 +3,13 @@ dia: 2023-11-08
 tags:
   - sisop/File-system
   - nota/facultad
+aliases:
+  - Fchdir system call
 ---
 ### Definición
 ---
-La [[System call]] `chdir()`
+La [[System call|system call]] `chdir()`
+
 ```c
 #include <unistd.h>
 

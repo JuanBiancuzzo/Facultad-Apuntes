@@ -3,10 +3,12 @@ dia: 2023-11-08
 tags:
   - sisop/File-system
   - nota/facultad
+aliases:
+  - Fchmod system call
 ---
 ### Definición
 ---
-La [[System call]] `chmod()` cambia los bits de modos de acceso
+La [[System call|system call]] `chmod()` cambia los bits de modos de acceso
 
 ```c
 #include <sys/stat.h>
@@ -24,4 +26,4 @@ int fchmod(int fd, mode_t mode);
 * `S_IWOTH (00002)` write by others 
 * `S_IXOTH (00001)` execute/search by others
 
-La única diferencia entre ambas system calls es la forma en que se accede al [[Archivo]] en cuestión
+La única diferencia entre ambas system calls es la forma en que se accede al [[Archivo|archivo]] en cuestión

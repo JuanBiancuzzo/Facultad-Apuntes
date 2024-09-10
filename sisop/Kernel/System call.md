@@ -12,20 +12,20 @@ Desde el punto de vista del [[Programa]], llamar a una system call es más o men
 1. El programa realiza un llamado a una system call mediante la invocación de una función wrapper en la biblioteca
 2. Dicha función wrapper tiene que proporcionar todos los argumentos al system call `trap_handling`. Estos argumentos son pasados al wrapper por el [[Stack]], pero el [[Kernel]] los espera en determinados [[Registro|registros]]. La función wrapper copia estos valores a los registros
 3. Dado que todas las system calls son accedidas de la misma forma, el kernel tiene que saber identificarlas de alguna forma. Para poder hacer esto, la función wrapper copia el número de la system call a un determinado registro de la [[Procesador|Procesador]] la `%eax`
-4. La función wrapper ejecuta una instrucción de código máquina llamada `trap_machine_instruction`, esta causa que el [[Procesador|procesador]] pase de [[User mode]] a [[Kernel mode]] y ejecute el código apuntado por la [[Dirección de memoria|dirección]] `0x80` del vector de [[Trap|traps]] del sistema
+4. La función wrapper ejecuta una instrucción de código máquina llamada `trap_machine_instruction`, esta causa que el [[Procesador|procesador]] pase de [[User mode]] a [[Kernel mode|kernel mode]] y ejecute el código apuntado por la [[Dirección de memoria|dirección]] `0x80` del vector de [[Trap|traps]] del sistema
 5. En respuesta al [[Trap|trap]] de la posición 128 (`0x80`), el kernel invoca su propia función llamada `system_call()` para manejar esa trap. Este manejador
-	1. Graba el valor de los registros en el stack del kernel
+	1. Graba el valor de los registros en el [[Stack|stack]] del kernel
 	2. Verifica la validez del número de system call
 	3. Invoca el servicio correspondiente a la system call llamada a través del vector de system calls, el servicio realiza su tarea y finalmente le devuelve un resultado de estado a la rutina `system_call()`
 	4. Se restauran los registros almacenados en el stack del kernel y se agrega el valor de retorno en el stack
-	5. Se devuelve el control al wrapper y simultáneamente se pasa a [[User mode]]
+	5. Se devuelve el control al wrapper y simultáneamente se pasa a [[User mode|user mode]]
 6. Si el valor de retorno de la rutina de servicios de la system call da error, la función wrapper setea el valor en `errno`
 
 #### API
 ---
 Las system calls conforman una API
 
-##### [[Unix file systems system calls|Relacionados a sistema de archivos]]
+##### Relacionados a sistema de archivos
 ---
 * [[Creat system call|creat()]]
 * [[Open system call|open()]]
@@ -45,7 +45,7 @@ Las system calls conforman una API
 * [[Ioctl  system call|ioctl()]]
 * [[Chdir system call|chdir()]]
 
-##### [[Unix process system calls|Relacionadas a los procesos]]
+##### Relacionadas a los procesos
 ---
 * [[Exec system call|exec()]]
 * [[Fork system call|fork()]]
@@ -62,7 +62,7 @@ Las system calls conforman una API
 * [[Alarm system call|alarm()]]
 * [[Brk system call|brk()]]
 
-##### Relacionadas a la intercomunicación entre [[Proceso|procesos]]
+##### Relacionadas a la intercomunicación entre procesos
 ---
 * [[Pipe system call|pipe()]]
 * [[Msgget system call|msgget()]]

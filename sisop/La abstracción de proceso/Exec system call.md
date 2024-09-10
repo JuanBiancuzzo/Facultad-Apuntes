@@ -3,13 +3,20 @@ dia: 2023-11-16
 tags:
   - sisop/La-abstracción-de-proceso
   - nota/facultad
+aliases:
+  - Exec system call
+  - Execl system call
+  - Execle system call
+  - Execlp system call
+  - Execv system call
+  - Execcvp system call
 ---
 ### Definición
 ---
-La [[System call]] `exec()`  tiene 6 variantes
+La [[System call|system call]] `exec()`  tiene 6 variantes
 * `exec()`
 * `execl()`
-*  `execle()`
+* `execle()`
 * `execlp()`
 * `execv()`
 * `execcvp()`

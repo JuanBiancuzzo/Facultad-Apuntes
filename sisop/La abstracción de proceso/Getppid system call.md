@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-La [[System call]] `getppid()` permite obtener el `PID` ([[Proceso|process]] identification) del proceso padre.
+La [[System call|system call]] `getppid()` permite obtener el `PID` ([[Proceso|process]] identification) del proceso padre.
 
 ```c
 #include <sys/types.h>

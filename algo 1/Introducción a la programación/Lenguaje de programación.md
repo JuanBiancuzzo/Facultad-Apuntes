@@ -4,6 +4,9 @@ tags:
   - algo-1/Introducción-a-la-programación
   - nota/facultad
   - embebidos/Diseño-desarrollo-y-depuración
+aliases:
+  - Lenguaje de programación de bajo nivel#Lenguaje de bajo nivel
+  - Lenguaje de programación de alto nivel#Lenguaje de alto nivel
 ---
 ### Definición
 ---

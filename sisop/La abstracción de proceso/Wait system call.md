@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-La [[System call]] `wait()` permite sincronizar [[Proceso|procesos]], esperando a que finalice el proceso hijo.
+La [[System call|system call]] `wait()` permite sincronizar [[Proceso|procesos]], esperando a que finalice el proceso hijo.
 
 ```c
 #include <sys/types.h>

@@ -6,4 +6,4 @@ tags:
 ---
 ### Definición
 ---
-Un multímetro es un instrumento eléctrico portátil capaz de medir directamente magnitudes eléctricas activas, como [[Corriente eléctrica]] y [[Tensión]], o pasivas, como [[Resistencia]], [[Capacitancia]] y otras.
+Un multímetro es un instrumento eléctrico portátil capaz de medir directamente magnitudes eléctricas activas, como [[Corriente eléctrica|corriente]] y [[Tensión|tensión]], o pasivas, como [[Resistencia|resistencia]], [[Capacitancia|capacitancia]] y otras.

@@ -3,6 +3,7 @@ dia: 2024-08-29
 tags:
   - estructura/Microarquitectura
   - nota/facultad
+  - embebidos/Microcontroladores-de-32-bits
 aliases:
   - Solución del problema de conexionado
 ---

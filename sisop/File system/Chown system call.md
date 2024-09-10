@@ -3,10 +3,12 @@ dia: 2023-11-08
 tags:
   - sisop/File-system
   - nota/facultad
+aliases:
+  - Fchwn system call
 ---
 ### Definición
 ---
-La [[System call]] `chown()` cambia el id del propietario del [[Archivo]] y el grupo de un archivo
+La [[System call|system call]] `chown()` cambia el id del propietario del [[Archivo|archivo]] y el grupo de un archivo
 
 ```c
 #include <unistd.h>

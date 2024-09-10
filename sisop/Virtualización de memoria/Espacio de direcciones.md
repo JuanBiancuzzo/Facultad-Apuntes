@@ -4,6 +4,7 @@ tags:
   - sisop/Virtualización-de-memoria
   - nota/facultad
   - estructura/Sistema-ARC
+  - embebidos/Memorias
 aliases:
   - Address space
 ---

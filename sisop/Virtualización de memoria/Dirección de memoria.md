@@ -3,6 +3,8 @@ dia: 2023-12-01
 tags:
   - sisop/Virtualización-de-memoria
   - nota/facultad
+aliases:
+  - Espacio de direcciones
 ---
 ### Definición
 ---

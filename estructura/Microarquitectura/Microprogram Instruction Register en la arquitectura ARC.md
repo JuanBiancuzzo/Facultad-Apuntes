@@ -60,13 +60,13 @@ Cada parte de la MIR tiene un propósito distinto
 * Cmux: Contiene un 1 si la información de C debe ser cargada en el bus C
 * RD: Contiene un 1 si la instrucción es de lectura de la [[Memoria|memoria]]
 * WR: Contiene un 1 si la instrucción es de escritura en memoria
-* [[Unidad Aritmético Lógica|ALU]]: Contiene el código de la instrucción de la ALU a ser ejecutada. Si no se necesita ninguna instrucción se realiza alguna que no altere [[Flags|flags]]
+* [[Unidad Aritmético Lógica|ALU]]: Contiene el código de la instrucción de la ALU a ser ejecutada. Si no se necesita ninguna instrucción se realiza alguna que no altere [[Unidad Aritmético Lógica#Flags|flags]]
 * COND: Indica el tipo de salto que debe hacer luego de realizar la instrucción
 * JUMP ADDR: Indica la dirección a la cual saltar en caso de que la condición lo indique
 
 La [[Arquitectura del microprocesador#^decode|instrucción DECODE]] lee la instrucción del registro IR y determina la instrucción de la ROM que se debe ejecutar
 
-Para obtener que instrucción de la [[Read Only Memory (ROM)|ROM]] se debe realizar, se utiliza el OP, seguido del OP$3$. Con un total de $8$ bits. Como las instrucciones están en $11$ bits. El primer bit siempre vale $1$, mientras que los últimos dos bits siempre están en $0$
+Para obtener que instrucción de la [[Read Only Memory|ROM]] se debe realizar, se utiliza el OP, seguido del OP$3$. Con un total de $8$ bits. Como las instrucciones están en $11$ bits. El primer bit siempre vale $1$, mientras que los últimos dos bits siempre están en $0$
 
 Para las [[Lenguaje assembler|instrucciones de Assembly]] que no contienen OP$3$, se le asigna a toda instrucción posible un mismo microcódigo, delegándole al mismo identificar cuál operación es. Por ejemplo
 * branches

@@ -12,7 +12,6 @@ Un protocolo define el formato y el orden de los mensajes intercambiados entre d
 ---
 Las [[Host|host]] que intercambian mensajes y llevan a cabo las acciones son los componentes [[Hardware|hardware]] o [[Software|software]] de cierto dispositivo. Cualquier actividad de [[Internet|internet]] que implique dos o más entidades remotas que se comunican por la [[Red|red]] están gobernadas por un protocolo
 
-
 ```tikz
 \usetikzlibrary{math}
 

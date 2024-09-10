@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-La [[System call]] `link()` crea un nuevo nombre para un [[Archivo]]. Esto también se conoce como un [[File system#Hard link|link (hard link)]]
+La [[System call|system call]] `link()` crea un nuevo nombre para un [[Archivo|archivo]]. Esto también se conoce como un [[File system#Hard link|link (hard link)]]
 
 ```c
 #include <unistd.h>

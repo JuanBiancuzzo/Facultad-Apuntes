@@ -3,8 +3,13 @@ dia: 2024-08-29
 tags:
   - estructura/Microarquitectura
   - nota/facultad
+  - embebidos/Microcontroladores-de-32-bits
 aliases:
   - ALU
+  - Flags de la Unidad Aritmético Lógica#Flags
+  - Flags de la ALU#Flags
+  - Program Status Register#^PSR
+  - PSR#^PSR
 ---
 ### Definición
 ---
@@ -16,4 +21,12 @@ Para implementar las operaciones, utiliza dos componentes
 
 En la tabla no están todas las operaciones, la operación `subcc` por ejemplo se puede realizar con un complemento y un suma. De esto se encarga la unidad de control
 
-La ALU calcula los [[Flags|flags]] de cada operación y los carga en el [[Set instrucciones ARC|registro PSR]] en cada de ser necesario
+#### Flags
+---
+La ALU calcula los flags de cada operación y los carga en el registro PSR en cada de ser necesario 
+^PSR
+*  Carry identificado en general por una `C` ![[Carry flag#Definición]]
+* Overflow identificado en general por una `V` ![[Overflow#Definición]]
+* Cero identificado en general por una `Z` ![[Cero flag#Definición]]
+* Negativo identificado en general por una `N` ![[Signo flag#Definición]]
+* Paridad identificado en general por una `P` ![[Parity check#Definición]]

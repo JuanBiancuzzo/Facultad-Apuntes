@@ -3,17 +3,31 @@ dia: 2024-08-29
 tags:
   - estructura/Microarquitectura
   - nota/facultad
+  - embebidos/Microcontroladores-de-32-bits
 aliases:
   - Unidad de control de la arquitectura ARC#En la arquitectura ARC
   - UC
   - Control unit
   - CU
+  - Program Counter#^PC
+  - Contador de programa#^PC
+  - PC#^PC
 referencias:
   - "220"
 ---
 ### Definición
 ---
 La unidad de control, es uno de los tres bloques funcionales principales en los que se divide una [[Procesador|CPU]]. Su función es buscar las instrucciones en la [[Memoria|memoria]] principal, decodificarlas y ejecutarlas, empleando para ello la unidad de proceso<sup><a href="#ref-220" style="color: inherit; text-decoration: none;">[220]</a></sup> 
+
+El código se almacena en una memoria externa al propio procesador, pero puede estar en el mismo chip
+
+Para acceder al código actual es necesario saber dónde está la siguiente instrucción, leerla decodificarla y ejecutarla. Se utiliza un [[Registro|registro]] especifico para proporcionar esta dirección y se denomina contador del programa ^PC
+
+Su contenido se pasa al [[Arquitectura de una computadora#^bus-direccion|bus de direcciones]] externo para seleccionar la [[Instruction Set Architecture|instrucción]] de la memoria. Normalmente, la siguiente instrucción se encuentra en la siguiente [[Dirección de memoria|dirección]]. El PC se incrementa automáticamente según el tamaño de la instrucción
+
+Cuando el programa tiene una bifurcación(`branch` o `jump`), la nueva dirección debe cargarse desde el código de la instrucción o el contenido de un registro global o mediante alguna otra operación
+
+El PC recibe un nuevo valor, que es la dirección desde la cual leerá la siguiente instrucción
 
 #### En la arquitectura ARC
 ---
@@ -22,7 +36,7 @@ Hay dos formas de implementarla, con lógica micro-programada o con lógica cabl
 ![[Unidad de control.png]]
 
 Para diseñarlo, se utilizan [[Contador|contadores]] que permiten indicar en que estado nos encontramos
-* [[Read Only Memory (ROM)|ROM]]
+* [[Read Only Memory|ROM]]
     * Esta contiene $2048$ instrucciones, de $41$ bits cada una. Acá está programada la lógica de cada instrucción del sistema
 * [[Microprogram Instruction Register en la arquitectura ARC|Instrucciones MIR]]
     * Acá se almacenan las instrucciones de la ROM que deben ser ejecutadas

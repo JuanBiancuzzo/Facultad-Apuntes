@@ -9,7 +9,11 @@ aliases:
 ---
 ### Definición
 ---
-Esta [[Estructura de control selectiva|estructura de control selectiva]] alterar el flujo normal del [[Programa|programa]] según se cumpla o no una determinada condición, esta dada por
+Esta [[Estructura de control selectiva|estructura de control selectiva]] alterar el flujo normal del [[Programa|programa]] según se cumpla o no una determinada condición
+
+#### En C
+---
+Esta dada por
 
 ```c
 if (expresion) 

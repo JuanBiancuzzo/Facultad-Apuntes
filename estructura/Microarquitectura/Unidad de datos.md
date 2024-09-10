@@ -8,7 +8,11 @@ aliases:
 ---
 ### Definición
 ---
-La unidad de datos es la parte del [[Procesador|procesador]] que se encarga de realizar las operaciones y guardar los registros
+Esta unidad es para guardar y ejecutar las operaciones, se utilizan [[Registro|registros]] como fuentes y destinos de datos. Estos podrían ser simples y únicos, como fue el caso de los primeros [[Procesador|procesadores]], en los que se denominaban acumuladores
+
+En los procesadores modernos puede haber $16$, $32$ o incluso más. De hecho dependiendo del modo del procesador, pueden existir muchos bancos de registros
+
+Para escribir o leer el contenido de estos registros, el acceso se realiza a través de uno o más [[Bus|buses]] de datos internos
 
 #### En la arquitectura ARC
 ---
