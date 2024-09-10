@@ -65,6 +65,15 @@ Un listado de los proyectos y su estado actual
     tR += `${tabla}\n`;
 _%>
 
+#### Subproyectos
+---
+Tenemos los subproyectos específicos que son
+
+| Proyecto                             |                                                                                    |
+| ------------------------------------ | ---------------------------------------------------------------------------------- |
+| [Biblioteca](Biblioteca%20propia.md) | Tiene la intención de colectar libros que me interese analizar y poder referenciar |
+
+
 #### Contribuidores
 ---
 * Juan Ignacio Biancuzzo

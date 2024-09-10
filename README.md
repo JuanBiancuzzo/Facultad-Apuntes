@@ -60,7 +60,6 @@ Un listado de los temas investigados y su estado actual
 | [Lagrangian mechanics](lagrangian%20mechanics/Índice.md)             | Falta resumir |
 | [Lenguaje de marcado](lenguaje%20de%20marcado/Índice.md)             | Falta resumir |
 | [Lenguajes de programación](lenguajes%20de%20programación/Índice.md) | Sin empezar   |
-| [Libros](libros/Índice.md)                                           | Falta resumir |
 | [Machine Learning](machine%20Learning/Índice.md)                     | Falta resumir |
 | [Matemática](matemática/Índice.md)                                   | Falta resumir |
 | [Música](música/Índice.md)                                           | Falta resumir |
@@ -79,6 +78,15 @@ Un listado de los proyectos y su estado actual
 | [Porfolio](porfolio/Porfolio.md)                                                                                                                            | Sin empezar      |
 | [Better animations in my humble opinion](better%20animations%20in%20my%20humble%20opinion/Better%20animations%20in%20my%20humble%20opinion.md)              | Sin empezar      |
 | [Obsidian Static Site Generator](obsidian%20static%20site%20generator/Obsidian%20Static%20Site%20Generator.md)                                              | Recién empezando |
+
+#### Subproyectos
+---
+Tenemos los subproyectos específicos que son
+
+| Proyecto                             |                                                                                    |
+| ------------------------------------ | ---------------------------------------------------------------------------------- |
+| [Biblioteca](Biblioteca%20propia.md) | Tiene la intención de colectar libros que me interese analizar y poder referenciar |
+
 
 #### Contribuidores
 ---
