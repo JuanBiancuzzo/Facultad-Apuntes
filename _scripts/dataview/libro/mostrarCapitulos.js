@@ -1,0 +1,1 @@
+const { titulo, autores, capitulos } = input;

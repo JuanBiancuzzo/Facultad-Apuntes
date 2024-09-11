@@ -16,7 +16,6 @@ Así, una posición en la memoria puede verse como un cajón específico y dentr
 
 Si todos los cajones están alojados en un solo gabinete, esto representa el chip de memoria
 
-
 ```tikz
 \usepackage{amssymb}
 \usetikzlibrary{math}
@@ -25,7 +24,7 @@ Si todos los cajones están alojados en un solo gabinete, esto representa el chi
 
 \begin{document} 
 \begin{tikzpicture}[scale=0.8, transform shape, thick]
-    \tikzmath { \ancho = 2.4; \alto = 0.6; }    
+    \tikzmath { \ancho = 0.6; \alto = 2.4; }    
     
     \foreach \i in {0, 1} {
     \foreach \j in {0, 1} {
@@ -34,15 +33,15 @@ Si todos los cajones están alojados en un solo gabinete, esto representa el chi
     \foreach \r in {0, 1} {
         \tikzmath { \cantidad = \i + 2 * \j + 4 * \k + 8 * \q + 16 * \r; }
         
-        \draw (0, {-\cantidad * \alto}) rectangle ++(\ancho, \alto);
-        \path (0, {-\cantidad * \alto}) rectangle ++(-\ancho, \alto)
-            node[midway] {$\r\q\k\j\i$};
+        \draw ({\cantidad * \ancho}, 0) rectangle ++(\ancho, \alto);
+        \path ({(\cantidad + 0.5) * \ancho}, \alto) 
+            node[left=2pt, rotate=-90] {$\r\q\k\j\i$};
     }}}}}
 
-    \path (0, \alto) -- ++(\ancho, 0)
-        node[pos=0.1, above=2pt] {b$7$}
-        node[pos=0.5, above=2pt] {$\cdots$}
-        node[pos=0.9, above=2pt] {b$0$};
+    \path (0, 0) -- ++(0, \alto)
+        node[pos=0.1, below=2pt, rotate=-90] {b$7$}
+        node[pos=0.5, below=2pt, rotate=-90] {$\cdots$}
+        node[pos=0.9, below=2pt, rotate=-90] {b$0$};
     
 \end{tikzpicture}
 \end{document}

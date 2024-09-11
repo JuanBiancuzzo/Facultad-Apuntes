@@ -16,12 +16,19 @@ function describirFecha(fecha, infoMeses) {
     return `${dia} de ${mes} del ${anio}`;
 }
 
+function describirCapitulo(infoLibro, infoCapitulo) {
+    let capitulo = `${infoLibro.tituloObra} de ${autores.join(", ")}, `;
+    capitulo += `capítulo ${infoCapitulo.numeroCapitulo}`;
+    return capitulo;
+}
+
 module.exports = () => {
     return {
         legal: {
             documento: describirLegalDocumento,
             seccion: describirLegalSeccion
         },
-        fecha: describirFecha
+        fecha: describirFecha,
+        capitulo: describirCapitulo,
     };
 };

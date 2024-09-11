@@ -73,7 +73,6 @@ Tenemos los subproyectos específicos que son
 | ------------------------------------ | ---------------------------------------------------------------------------------- |
 | [Biblioteca](Biblioteca%20propia.md) | Tiene la intención de colectar libros que me interese analizar y poder referenciar |
 
-
 #### Contribuidores
 ---
 * Juan Ignacio Biancuzzo
