@@ -10,7 +10,7 @@ aliases:
 ---
 ### Definición
 ---
-Una $k$-coloración es una asignación al [[Conjunto|conjunto]] de vértices tal que dos vértices adyacentes no son del mismo color. Notemos que por la propiedad definición, los [[Grafo|grafos]] no deben tener [[Lazo|lazos]]
+Una $k$-coloración es una asignación al [[Conjunto|conjunto]] de vértices tal que dos [[Nodo|vértices]] adyacentes no son del mismo color. Notemos que por la propiedad definición, los [[Grafo|grafos]] no deben tener [[Lazo|lazos]]
 
 El número cromático de un grafo, designado con $\chi(G)$, es el mínimo $k$ para el cual es posible una coloración. Es decir, existe una $\chi$-coloración y para toda $k$-coloración, entonces $\chi \le k$. Los grafos con un número cromático de uno, son solo los [[Grafo nulo|grafos nulos]] $N_n$
 

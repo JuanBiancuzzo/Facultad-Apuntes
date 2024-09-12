@@ -10,7 +10,7 @@ aliases:
 ---
 El [[Algoritmo|algoritmo]] Depth First Search busca encontrar una [[Grafo conexo#^338349|orientación fuertemente conexo para un grafo]]
 
-1. Se elige un vértice $v$ cualquiera, y se lo etiqueta como el primero
+1. Se elige un [[Nodo|vértice]] $v$ cualquiera, y se lo etiqueta como el primero
 2. Se toma un vértice cualquiera, adyacente al anterior
 3. Se avanza en profundidad, cuidando de no crear ciclos, formando un [[Árbol generador|árbol generador]]. Cada vértice se etiqueta en orden que se recorre
 4. Se orienta cada arista que es parte del árbol generador, de menor a mayor. Las agregan las aristas que no son parte de árbol generador, orientándolas del vértice mayor al vértice menor, a partir de la secuencia definida previamente

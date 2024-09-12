@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Dado el [[Grafo|grafo]] sin [[Lazo|lazos]] $G$, se define su grafo arista $L$ como el grafo tal que sus vértices sean las aristas de $G$, y dos vértices son adyacentes si y solo si sus aristas asociadas al grafo original indician sobre el mismo vértice
+Dado el [[Grafo|grafo]] sin [[Lazo|lazos]] $G$, se define su grafo arista $L$ como el grafo tal que sus [[Nodo|vértices]] sean las aristas de $G$, y dos vértices son adyacentes si y solo si sus aristas asociadas al grafo original indician sobre el mismo vértice
 
 Sea $u$ el vértice de $L(G)$ asociada a las aristas $xy$ de $G$, siendo $x$ e $y$ dos vértices, entonces el [[Grado de un vértice|grado]] de $u$, $d(u)$ estará dado por el grado de ambos vértices $x$, $y$, Sin embargo, debemos descontar dos vecinos, ya que estos estarán contados en la propia arista $$ d(u) = d(x) + d(y) - 2 $$
 Si $G$ es [[Isomorfismo#Grafos|isomorfo]] a $L(G)$, entonces (y la [[Demostración de equivalencia#Usando proposiciones|recíproca]] es verdadera) $G$ es [[Grafo regular|2-regular]]. Esto implica que es un [[Camino#Ciclo (Cicle)|ciclo]], o una suma disjunta de ciclos

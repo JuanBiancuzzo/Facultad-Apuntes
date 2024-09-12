@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Definimos un grafo $G = \big( V(G),~E(G),~\Psi_G \big)$ como una terna de un [[Conjunto|conjunto]] de vértices $V(G)$, un conjunto de aristas $E(G)$ y una [[Función de incidencia|función de incidencia]] $\Psi_G$ que relaciona los vértices con las aristas
+Definimos un grafo $G = \big( V(G),~E(G),~\Psi_G \big)$ como una terna de un [[Conjunto|conjunto]] de [[Nodo|vértices]] $V(G)$, un conjunto de aristas $E(G)$ y una [[Función de incidencia|función de incidencia]] $\Psi_G$ que relaciona los vértices con las aristas
 
 El grafo se puede denominar según su [[Tamaño de un grafo|tamaño]] y [[Orden de un grafo|orden]], de la forma $G(n,~m)$
 
@@ -21,5 +21,5 @@ El grafo se puede denominar según su [[Tamaño de un grafo|tamaño]] y [[Orden 
 * [[Grafo potencia|Potencia]]
 * [[Suma de grafos|Suma (Disjunta)]]
 * [[Ensamble de grafos|Ensamble]]
-* [[Producto cartesiano entre grafos|Producto cartesiano]]
+* [[Producto cartesiano#Entre grafos|Producto cartesiano]]
 * [[Eliminación en grafos|Eliminación de vértice/arista]]

@@ -20,7 +20,7 @@ Cualquiera de las siguientes definiciones de árbol son equivalentes. El grafo $
 
 #### Propiedad
 ---
-Si a un árbol se le quita una hoja (vértice de [[Grado de un vértice|grado]] $1$), el grafo resultante es un árbol. Esto se debe a que no se generan ciclos ni se pierde la conexidad
+Si a un árbol se le quita una hoja ([[Nodo|vértice]] de [[Grado de un vértice|grado]] $1$), el grafo resultante es un árbol. Esto se debe a que no se generan ciclos ni se pierde la conexidad
 
 #### Demostraciones
 ---

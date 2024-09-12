@@ -9,7 +9,7 @@ aliases:
 ---
 ### Definición
 ---
-En la programación con RTOS se utiliza un Núcleo de [[Sistema operativo|Sistema Operativo]] ([[Kernel]]) con un [[Scheduler|Planificador (Scheduler)]] y [[Device Driver (Controlador de dispositivo)|Controladores de dispositivos (Device Drivers)]] entre el [[Hardware|hardware]] y el código de la aplicación
+En la programación con RTOS se utiliza un Núcleo de [[Sistema operativo|Sistema Operativo]] ([[Kernel]]) con un [[Scheduler|Planificador (Scheduler)]] y [[Device Driver|Controladores de dispositivos (Device Drivers)]] entre el [[Hardware|hardware]] y el código de la aplicación
 * Posibilita lo siguiente
     * Multitasking
     * [[Thread|Multithreading]]

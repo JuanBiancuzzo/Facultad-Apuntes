@@ -8,7 +8,7 @@ tags:
 ---
 Sea $G$ un [[Grafo|grafo]], entonces definimos su espectro $\sigma(G)$ como el [[Espectro de una matriz|espectro de su matriz]] [[Matriz de adyacencia|de adyacencia]], $\sigma\big( A_G \big)$
 
-Notemos que la matriz de adyacencia depende del etiquetado de sus vértices, sin embargo, el espectro no depende de él. Sean $A$, $B$  dos matrices de adyacencia para dos grafos $G$, $H$ [[Isomorfismo#Grafos|isomorfos]]. Entonces las matrices $A$, $B$ son [[Matrices semejantes|semejantes]] (la misma permutación de vértices que define el isomorfismo, puede definir el cambio de las matrices)
+Notemos que la matriz de adyacencia depende del etiquetado de sus [[Nodo|vértices]], sin embargo, el espectro no depende de él. Sean $A$, $B$  dos matrices de adyacencia para dos grafos $G$, $H$ [[Isomorfismo#Grafos|isomorfos]]. Entonces las matrices $A$, $B$ son [[Matrices semejantes|semejantes]] (la misma permutación de vértices que define el isomorfismo, puede definir el cambio de las matrices)
 
 Si dos matrices son semejantes, comparten el mismo espectro. Además, una matriz simétrica es semejante a su matriz diagonal $$ G \sim H \iff A_G \sim A_H $$
 La suma de autovalores de la matriz de adyacencia será, por ser cuadrada, la traza de la misma $$ \sum_{k = 1}^{n} \lambda_k = 0 $$

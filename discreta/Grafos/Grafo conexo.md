@@ -11,9 +11,9 @@ aliases:
 ---
 Un [[Grafo|grafo]] es conexo si para cualquier par de vértices $u$, $v$ existe un [[Camino|camino]] $u-v$. En caso contrario es disconexo
 
-La componente conexa [[Maximal|maximal]] de un vértice es el [[Conjunto|conjunto]] de todos los vértices que están conectados con un camino. Existe un camino trivial que conecta todos los vértices consigo mismo. Un grafo conexo tiene una sola componente conexa
+La componente conexa [[Maximal|maximal]] de un [[Nodo|vértice]] es el [[Conjunto|conjunto]] de todos los vértices que están conectados con un camino. Existe un camino trivial que conecta todos los vértices consigo mismo. Un grafo conexo tiene una sola componente conexa
 
-Si un grafo es conexo, la [[Longitud de un camino|distancia]] entre cualquier par de vértices es de a lo sumo $n - 1$, ya que si es mayor, entonces se estaría repitiendo algún vértice y no sería el camino mínimo.
+Si un grafo es conexo, la [[Longitud de un camino|distancia]] entre cualquier par de vértices es de a lo sumo $n - 1$, ya que si es mayor, entonces se estaría repitiendo algún vértice y no sería el camino mínimo
 
 Podemos verificar que un grafo es conexo a partir de la [[Matriz de adyacencia|matriz de adyacencia]] de $A_G$, donde todas las siguientes afirmaciones implica la otra
 * $G$ es conexo

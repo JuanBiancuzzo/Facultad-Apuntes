@@ -12,4 +12,4 @@ Se puede contar la cantidad de [[Camino|caminos]] de longitud $q$ entre $v_i$ y 
 
 También se puede relacionar con la [[Matriz de adyacencia|matriz de adyacencia]] con $$ M_G ~ M_G^T = A_G + D $$ donde $D$ es una matriz diagonal de los [[Grado de un vértice|grados de los vértices del grafo]]
 
-Para un [[Grafo orientado|grafo orientado]], definiremos con un $1$ si la arista parte del vértice, y con un $-1$ si la arista llega al vértice
+Para un [[Grafo orientado|grafo orientado]], definiremos con un $1$ si la arista parte del [[Nodo|vértice]], y con un $-1$ si la arista llega al vértice

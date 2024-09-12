@@ -3,10 +3,22 @@ dia: 2023-01-23
 tags:
   - intro/Circuitos-con-resistencias
   - nota/facultad
+aliases:
+  - Vértice
+referencias:
+  - "242"
 ---
 ### Definición
 ---
-Un nodo es un punto común en el que se conectan dos o más componentes o [[Rama|ramas]].
+Un nodo o vértice es un espacio en el que se juntan, una cantidad (puede ser nula) de conexiones de otros nodos
+
+#### En teoría de grafos
+---
+En teoría de grafos, un vértice o nodo es la unidad fundamental de la que están formados los grafos<sup><a href="#ref-242" style="color: inherit; text-decoration: none;">[242]</a></sup> 
+
+#### En electrónica
+---
+Un nodo es un punto común en el que se conectan dos o más componentes o [[Rama|ramas]]
 
 ##### Esquematización
 ---
@@ -30,7 +42,7 @@ Un nodo es un punto común en el que se conectan dos o más componentes o [[Rama
 }
 
 \begin{document} 
-	\begin{circuitikz}[voltage shift=0.5, scale=1.3, transform shape, thick]
+	\begin{circuitikz}[voltage shift=0.5, scale=1.1, transform shape, thick]
 	
 	\draw (0, 0) to[battery1, l^=$V_g$, v_=$i_4$] ++(-3, -2.25);
 	\draw (0, -3) to[short, v=$i_3$] (0, 0);
@@ -42,4 +54,11 @@ Un nodo es un punto común en el que se conectan dos o más componentes o [[Rama
 
 	\end{circuitikz}
 \end{document}
+```
+
+
+### Referencias
+---
+```dataviewjs
+await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
 ```

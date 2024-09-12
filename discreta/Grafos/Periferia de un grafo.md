@@ -1,8 +1,8 @@
 ---
 dia: 2024-08-12
-tags: 
- - discreta/Grafos
- - nota/facultad
+tags:
+  - discreta/Grafos
+  - nota/facultad
 ---
 ### Definición
 ---

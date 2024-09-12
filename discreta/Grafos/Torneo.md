@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Un torneo es un [[Grafo simple completo|grafo completo]] [[Grafo orientado|orientado]]. Se denomina así, ya que podemos considerar las aristas como el resultado de los partidos entre cada vértice
+Un torneo es un [[Grafo simple completo|grafo completo]] [[Grafo orientado|orientado]]. Se denomina así, ya que podemos considerar las aristas como el resultado de los partidos entre cada [[Nodo|vértice]]
 
 #### Transitividad
 ---

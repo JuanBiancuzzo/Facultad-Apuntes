@@ -4,7 +4,7 @@ tags:
   - discreta/Grafos
   - nota/facultad
 aliases:
-  - Anticlique
+  - Anticlique#^anticlique
   - Clan
   - Conjunto independente de vértices
 ---
@@ -14,7 +14,7 @@ Un clique es un [[Subconjunto|subconjunto]] de vértices tal que cualquier par d
 
 El número de clique $\omega(G)$ es el [[Cardinalidad|cardinal]] del clique [[Máximo|máximo]]
 
-Un anticlique es un subconjunto de vértices tal que cualquier par de vértices no está unido por una arista, también llamado conjunto independiente
+Un anticlique es un subconjunto de vértices tal que cualquier par de vértices no está unido por una arista, también llamado conjunto independiente ^anticlique
 
 El número de independencia $\alpha(G)$ es el cardinal del anticlique máximo
 

@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Análogo al [[Cubrimiento de vértices|cubrimiento de vértices]], sea $G$ un [[Grafo|grafo]], $S \subset V(G)$ es un cubrimiento de aristas si y solo cualquier vértice del grafo es alcanzado por una de las aristas del cubrimiento
+Análogo al [[Cubrimiento de vértices|cubrimiento de vértices]], sea $G$ un [[Grafo|grafo]], $S \subset V(G)$ es un cubrimiento de aristas si y solo cualquier [[Nodo|vértice]] del grafo es alcanzado por una de las aristas del cubrimiento
 
 Un cubrimiento de aristas será [[Minimal|minimal]] si no incluye a otro [[Apareamiento|matching]] y es [[Mínimo|minimo]] si no hay otro con menor [[Cardinalidad|cardinal]]
 
