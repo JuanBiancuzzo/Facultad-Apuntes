@@ -1,6 +1,9 @@
 <%* 
 	const tArchivo = tp.file.find_tfile(tp.file.path(true));	
 	const describir = tp.user.describir();
+	
+	const { pipeline } = require('stream');
+	const { Readable } = require('stream/web');
 	const fs = require('fs');
 
 	const SIZE = Object.freeze({
@@ -17,43 +20,10 @@
 	});
 
 	const KEY_ARRAY = [ KEY.ISBN, KEY.OCLC, KEY.LCCN, KEY.OLID ];
-
 	const EXT = "jpg";
 
-	class KeyValueCover {
-		constructor(datos) {
-			if (!datos) throw Error("Es undefiend los datos");
-			if (datos.length <= 0) throw Error("Existe pero no hay datos");
 
-			this.paresKeyValue = [];
-			for (let dato of datos) {
-				for (let key of KEY_ARRAY) {
-					if (!(key in dato)) continue;
-
-					dato[key].forEach(value => this.paresKeyValue.push({ 
-						key: key,
-						value: value
-					}));
-				}
-			}
-			this.posicion = 0;
-		}
-
-		siguiente() {
-			if (this.paresKeyValue.length <= 0 || this.vacio()) return [ undefined, undefined ];
-
-			let { key, value } = this.paresKeyValue[this.posicion];
-			this.posicion++;
-
-			return [ key, value ];
-		}
-
-		vacio() {
-			return this.paresKeyValue.length <= this.posicion;
-		}
-	}
-
-	let tipoCita = "Libro";
+	const tipoCita = "Libro";
 	let numReferencia = tp.user.generarNumReferencia();
 	
 	const dia = tp.file.creation_date("YYYY-MM-DD");
@@ -73,9 +43,18 @@
 			autores.push(`${autore.nombre} ${autore.apellido}`);
 		}
 		
-        await tp.file.rename(`${infoLibro.tituloObra} de ${autores.join(", ")}`);
+		let nombreArchivo = `${infoLibro.tituloObra} de ${autores.join(", ")}`;
+        await tp.file.rename(nombreArchivo);
 
 		tR += tp.obsidian.stringifyYaml(infoLibro);
+
+		let datos = await dataLibroAPI(infoLibro.tituloObra, infoLibro.nombreAutores[0]);
+		let generador = generadorKeyValueCover(datos);
+
+		let nombreImagen = `${nombreArchivo}.${EXT}`;
+		let cover = await guardarImagen(generador, nombreImagen, SIZE.MEDIUM);	
+		tR += `cover: ${cover}\n`;
+
 	} catch ({ name: nombre, message: mensaje }) {
 		const eliminar = tp.user.eliminar();
 		const errorNombre = tp.user.error().nombre;
@@ -92,8 +71,6 @@
         }
 	}
 
-	tR += `cover: false\n`;
-
 	let aliases = (infoLibro.capitulos ? infoLibro.capitulos : [])
 		.map(infoCapitulo => describir.capitulo(infoLibro, infoCapitulo));
 	tR += `aliases: ${tp.obsidian.stringifyYaml(aliases)}`;
@@ -102,41 +79,65 @@
 	tR += "---";
 
 	async function dataLibroAPI(titulo, autore) {
-		titulo = titulo.replaceAll(" ", "-");
-		autore = `${autore.nombre}+${autore.apellido}`.replaceAll(" ", "-");
+		titulo = titulo.replaceAll(" ", "-").toLowerCase();
+		autore = `${autore.nombre}+${autore.apellido}`.replaceAll(" ", "-").toLowerCase();
 
 		let respuesta = await fetch(`https://openlibrary.org/search.json?title=${titulo}&author=${autore}`);
 		let data = await respuesta.json();
 		return data.docs;
 	}
 
+	function* generadorKeyValueCover(datos) {
+		if (!datos) throw Error("Es undefiend los datos");
+		if (datos.length <= 0) throw Error("Existe pero no hay datos");
+
+		for (let dato of datos) {
+			for (let key of KEY_ARRAY) {
+				if (!(key in dato)) continue;
+
+				for (let value of dato[key]) {
+					yield { key: key, value: value };
+				}
+			}
+		}
+	}
+
 	async function guardarImagen(generador, nombreImagen, size) {
-		let path = app.vault.adapter.basePath + `\\libros\\covers\\${nombreImagen}`;
-		let respuesta;
+		new Notice("Buscando portada...");
+		let respuesta;		
 
-		do {
-			let [ key, value ] = generador.siguiente();
-			if (!key || !value)
-				break;
-
-			let url = `https://covers.openlibrary.org/b/${key}/${value}-${size}.${EXT}`;
+		for (let { key, value } of generador) {
+			url = `https://covers.openlibrary.org/b/${key}/${value}-${size}.${EXT}`;
 			respuesta = await fetch(url);
+			
+			if (respuesta.ok)
+				break;
+		}
 
-		} while(!respuesta.ok || !generador.vacio());
-
-		if (generador.vacio())
+		if (!generador.next()) {
+			new Notice("No se pudo encontrar protada para este libro");
 			return false;
+		}
 
-		console.log(respuesta);
-		
-		let blob = await respuesta.blob();
-		let contenido = await blob.text();
-		
-		await fs.writeFile(path, contenido, function (err) {
-			if (err) throw err;
-			console.log('Saved!');
+		const path = app.vault.adapter.basePath + `\\libros\\covers\\${nombreImagen}`;
+		const fileStream = fs.createWriteStream(path);		
+		const writableStream = new WritableStream({
+			write(chunk) {
+				fileStream.write(chunk);
+			},
+			close() {
+				fileStream.end();
+				new Notice("Descarga completada");
+			},
+			abort(err) {
+				new Notice("Hubo un error en la descarga");
+				console.error('Error downloading the image: ', err.message);
+			}
 		});
 		
+		new Notice("Descargando portada...");
+		await respuesta.body.pipeTo(writableStream);
+
 		return nombreImagen;
 	}
 %>
@@ -154,30 +155,4 @@
 		.map(infoCapitulo => describir.capitulo(infoLibro, infoCapitulo))
 		.map(string => `#### ${string}\n---\n\n\n`)
 		.join("\n");
-%> <%*
-
-
-	// https://covers.openlibrary.org/b/isbn/9781473211513-M.jpg 9781473211513
-	// https://openlibrary.org/search.json?q=the+lord+of+the+rings
-	// https://openlibrary.org/search.json?title=the+way+of+kings&author=brandon+sanderson
-
-	try {
-		let datos = await dataLibroAPI(infoLibro.tituloObra, infoLibro.nombreAutores[0]);
-		console.log(datos);
-		if (!datos)
-			throw Error("No hay datos");
-
-		let autores = [];
-		for (let autore of infoLibro.nombreAutores) {
-			autores.push(`${autore.nombre} ${autore.apellido}`);
-		}
-		let nombreImagen = `${infoLibro.tituloObra} de ${autores.join(", ")}.${EXT}`;
-
-		let generador = new KeyValueCover(datos);
-		let cover = await guardarImagen(generador, nombreImagen, SIZE.MEDIUM);		
-		console.log(cover);
-		
-	} catch(e) {
-		console.log(e);
-	}
-%>
+%> 

@@ -13,6 +13,7 @@
     "bis": "checkbox",
     "plan": "number",
     "algo": "text",
-    "parte": "number"
+    "parte": "number",
+    "cover": "text"
   }
 }
