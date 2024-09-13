@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-Dispositivo que produce [[Energía]] radiante [[Electromagnética]] dentro del espectro óptico comprendido entre la zona final del ultravioleta y el infrarrojo.
+Dispositivo que produce [[Energía]] radiante [[Campo electromagnético]] dentro del espectro óptico comprendido entre la zona final del ultravioleta y el infrarrojo.
 
 #### Clasificación según nivel de seguridad
 ---

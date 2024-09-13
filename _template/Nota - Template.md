@@ -29,7 +29,7 @@
             tR += await tp.file.include("[[Nota proyecto - Template]]");
             
         } else if (pertenece.archivoLibro(path)) {
-            // Nota libros
+            tR += await tp.file.include("[[Libro - Template]]");
 
         } else if (pertenece.archivoComida(path)) {
             // Nota receta

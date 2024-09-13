@@ -1,5 +1,7 @@
 ---
 dia: 2024-07-12
+tags:
+  - Biblioteca
 ---
 ### ¿Qué se va a investigar?
 ---

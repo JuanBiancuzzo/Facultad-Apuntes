@@ -22,7 +22,8 @@ function whiteListArchivoProyecto(archivoPath) {
 }
 
 function whiteListArchivoLibro(archivoPath) {
-    return false;
+    let root = archivoPath.split("/")[0];
+    return root == "libros";
 }
 
 function whiteListArchivoComida(archivoPath) {

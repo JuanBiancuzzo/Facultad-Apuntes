@@ -6,7 +6,7 @@ tags:
 ---
 ### Definición
 ---
-El [[Circuito secuencial]] con ecuación característica $$ Q^{n + 1} = S + \overline{R} \cdot Q^n $$
+El [[Circuito secuencial|circuito]] con ecuación característica $$ Q^{n + 1} = S + \overline{R} \cdot Q^n $$
 y tiene el circuito
 
 ```tikz

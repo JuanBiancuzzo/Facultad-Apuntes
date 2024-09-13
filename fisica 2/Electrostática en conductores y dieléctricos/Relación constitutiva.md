@@ -24,6 +24,8 @@ $$ \vec{E} = \frac{1}{\epsilon_0} \left( \vec{D} - \vec{P} \right) \iff \vec{D} 
 ---
 Si combinamos las expresiones del [[Campo de inducción magnética|campo de inducción magnética]] $\vec{B}$, con el [[Material magnético#^campo-magnetico|campo magnético]] $\vec{H}$ y el [[Material magnético#^campo-magnetizacion|campo de magnetización]] $\vec{M}$ llegamos a la siguiente relación constitutiva $$ \vec{B} = \mu_0 ~ (\vec{M} + \vec{H}) $$ siendo $\mu_0$ la [[Permeabilidad magnética#^permeabilidad-magnetica-en-el-vacio|permeabilidad magnética del vacío]]
 
+
+
 ### Referencias
 ---
 ```dataviewjs

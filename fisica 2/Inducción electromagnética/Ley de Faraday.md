@@ -9,6 +9,7 @@ aliases:
   - Ley de Maxwell-Faraday#Ley de Maxwell-Faraday
   - Tensión inducida#^tension-inducida
   - Fuerza electromotriz inducida#^tension-inducida
+  - FEM#^tension-inducida
 ---
 ### Definición
 ---

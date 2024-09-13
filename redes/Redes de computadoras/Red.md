@@ -34,7 +34,7 @@ Enlaces físicos que conectan un sistema terminal con el primer [[Router|router]
 
 ###### Medios físicos
 ---
-Cada par transmisor-receptor, el bit se envía mediante [[Electromagnética|ondas electromagnéticas]] o pulsos ópticos a lo largo de un medio físico como mencionaremos a continuación. Pueden tener muchas formas y no tiene por qué ser del mismo tipo para cada par transmisor-receptor existente a lo largo de la ruta
+Cada par transmisor-receptor, el bit se envía mediante [[Campo electromagnético|ondas electromagnéticas]] o pulsos ópticos a lo largo de un medio físico como mencionaremos a continuación. Pueden tener muchas formas y no tiene por qué ser del mismo tipo para cada par transmisor-receptor existente a lo largo de la ruta
 
 * [[Acceso a una red por cable#Cable de cobra de par trenzado|Cable de cobre de par trenzado]]
 * [[Acceso a una red por cable#Cable coaxial|Cable coaxial]]

@@ -7,6 +7,10 @@ aliases:
   - Ley de Ampere
   - Ley de Ampère-Maxwell#Ley de Ampère-Maxwell
   - Ley de Ampere-Maxwell#Ley de Ampère-Maxwell
+  - Densidad de corriente de conducción#^corriente-conduccion
+  - Corriente de conducción#^corriente-conduccion
+  - Densidad de corriente de desplazamiento#^corriente-desplazamiento
+  - Corriente de desplazamiento#^corriente-desplazamiento
 ---
 ### Definición
 ---
@@ -28,7 +32,12 @@ $$ \begin{align}
 
 #### Ley de Ampère-Maxwell
 ---
-Maxwell introdujo un término adicional, que corresponde a las [[Campo de desplazamiento|corrientes de desplazamiento]]. Esto se debe a que cuando trabajamos con corrientes que dependen del tiempo, la ley de ampere es inválida. El flujo de la corriente sobre una superficie cerrada no es nulo (como indica la ley original) $$ \begin{align} 
+Maxwell introdujo un término adicional, que corresponde a las corrientes de desplazamiento. Esto se debe a que cuando trabajamos con corrientes que dependen del tiempo, la ley de ampere es inválida. El flujo de la corriente sobre una superficie cerrada no es nulo (como indica la ley original) $$ \begin{align} 
     \oint_C \vec{H} ~ d\vec{l} &= \iint_S \vec{J} ~ d\vec{A} + \frac{d}{dt} \iint_S \vec{D} ~ d\vec{A} \tag{integral} \\ 
     \nabla \times \vec{H} &= \vec{J} + \frac{\partial\vec{D}}{\partial t} \tag{diferencial}
 \end{align} $$
+
+Como se menciona antes, se describe la corriente de conducción $$ \vec{J}_c = \sigma \vec{E} $$ 
+^corriente-conduccion
+
+Como también, lo que aporta Maxwell, es la corriente de desplazamiento $$ \vec{J}_d = \frac{\partial \vec{D}}{\partial t} $$ ^corriente-desplazamiento

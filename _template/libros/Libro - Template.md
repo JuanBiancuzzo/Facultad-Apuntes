@@ -1,9 +1,6 @@
 <%* 
 	const tArchivo = tp.file.find_tfile(tp.file.path(true));	
 	const describir = tp.user.describir();
-	
-	const { pipeline } = require('stream');
-	const { Readable } = require('stream/web');
 	const fs = require('fs');
 
 	const SIZE = Object.freeze({
@@ -11,15 +8,7 @@
 		MEDIUM: "M",
 		LARGE: "L",
 	});
-	
-	const KEY = Object.freeze({
-		ISBN: "isbn",
-		OCLC: "oclc",
-		LCCN: "lccn",
-		OLID: "olid",
-	});
 
-	const KEY_ARRAY = [ KEY.ISBN, KEY.OCLC, KEY.LCCN, KEY.OLID ];
 	const EXT = "jpg";
 
 
@@ -88,8 +77,8 @@
 	}
 
 	function* generadorKeyValueCover(datos) {
-		if (!datos) throw Error("Es undefiend los datos");
-		if (datos.length <= 0) throw Error("Existe pero no hay datos");
+		if (!datos || datos.length <= 0) datos = [];
+		const KEY_ARRAY = [ "isbn", "oclc", "lccn", "olid" ];
 
 		for (let dato of datos) {
 			for (let key of KEY_ARRAY) {
@@ -109,14 +98,14 @@
 		for (let { key, value } of generador) {
 			url = `https://covers.openlibrary.org/b/${key}/${value}-${size}.${EXT}`;
 			respuesta = await fetch(url);
-			
+
 			if (respuesta.ok)
 				break;
 		}
 
-		if (!generador.next()) {
+		if (!generador.next().value) {
 			new Notice("No se pudo encontrar protada para este libro");
-			return false;
+			return "";
 		}
 
 		const path = app.vault.adapter.basePath + `\\libros\\covers\\${nombreImagen}`;
@@ -137,7 +126,6 @@
 		
 		new Notice("Descargando portada...");
 		await respuesta.body.pipeTo(writableStream);
-
 		return nombreImagen;
 	}
 %>

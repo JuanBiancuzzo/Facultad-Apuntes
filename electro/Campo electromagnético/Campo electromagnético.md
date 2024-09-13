@@ -14,51 +14,7 @@ Convencionalmente, dado un [[Sistema|sistema]] de referencia, el campo electroma
 
 El campo puede verse como la combinación de un campo eléctrico y un [[Material magnético#^campo-magnetico|campo magnético]]. El campo eléctrico es producido por cargas estacionarias y el campo magnético por cargas en movimiento (corrientes); estos dos se describen a menudo como las fuentes del campo. La forma en que las cargas y las corrientes interactúan con el campo electromagnético se describe mediante las [[Ecuaciones de Maxwell|ecuaciones de Maxwell]] y la [[Fuerza de Lorentz|ley de fuerza de Lorentz]]<sup><a href="#ref-231" style="color: inherit; text-decoration: none;">[231]</a></sup> 
 
-```tikz
-\usetikzlibrary{math}
-\usetikzlibrary{calc}
-\usetikzlibrary{3d}
-
-\usepackage{ifthen}
-\usepackage{amssymb}
-
-\begin{document} 
-    \definecolor{rojo}{RGB}{247, 156, 133}
-    \definecolor{azul}{RGB}{195, 195, 213}
-\begin{tikzpicture}[scale=1.1, transform shape, thick, z={(10:10mm)}, x={(-45:5mm)}]
-    \tikzmath { \definicion = 0.1; }
-    
-    \begin{scope}[canvas is zx plane at y=0] % electrico
-        \draw[gray, opacity=0.8] (0, -2) grid (12, 2);
-        \draw[ultra thick] (0, 0) \foreach \x [parse=true] in 
-            {\definicion, 2 * \definicion, ..., 12 + \definicion} 
-        { -- (\x, {sin(\x * 90)}) };
-        
-        \fill[red, opacity=0.5] (0, 0) \foreach \x [parse=true] in 
-            {\definicion, 2 * \definicion, ..., 12 + \definicion} 
-        { -- (\x, {sin(\x * 90)}) } -- cycle;
-        
-        \foreach \x in {0, 0.5, ..., 12} {
-            \draw[opacity=0.8] (\x, 0) -- ++(0, {sin(\x * 90)});
-        }
-    \end{scope}
-    
-    \begin{scope}[canvas is zy plane at x=0] % magnetico
-        \draw[ultra thick] (0, 0) \foreach \x [parse=true] in 
-            {\definicion, 2 * \definicion, ..., 12 + \definicion} 
-        { -- (\x, {sin(\x * 90)}) };
-        
-        \fill[blue, opacity=0.5] (0, 0) \foreach \x [parse=true] in 
-            {\definicion, 2 * \definicion, ..., 12 + \definicion} 
-        { -- (\x, {sin(\x * 90)}) } -- cycle;
-        
-        \foreach \x in {0, 0.5, ..., 12} {
-            \draw[opacity=0.8] (\x, 0) -- ++(0, {sin(\x * 90)});
-        }
-    \end{scope}
-\end{tikzpicture}
-\end{document}
-```
+![[Ecuación de onda plana en un dieléctrico perfecto#^onda-transversal]]
 
 
 ### Referencias
@@ -66,3 +22,4 @@ El campo puede verse como la combinación de un campo eléctrico y un [[Material
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
 ```
+

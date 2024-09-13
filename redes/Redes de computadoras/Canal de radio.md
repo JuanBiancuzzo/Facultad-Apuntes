@@ -12,7 +12,7 @@ Se puede definir un canal de radio en
 
 #### Via terrestre
 ---
-Transportan [[Señal|señales]] dentro del espectro [[Electromagnética|electromagnético]]. Dependen de forma significativa del entorno de propagación y de la distancia a la que la señal tenga que sea transportada
+Transportan [[Señal|señales]] dentro del espectro [[Campo electromagnético|electromagnético]]. Dependen de forma significativa del entorno de propagación y de la distancia a la que la señal tenga que sea transportada
 
 #### Via satélite
 ---

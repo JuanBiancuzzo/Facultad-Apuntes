@@ -15,7 +15,7 @@ Los efectos de la ionización que produce este tipo de radiaciones pueden ser si
 Hay 4 tipos de emisiones radiactivas:
 
 ##### Gamma
-Son de naturaliza [[Electromagnética]] y se orginan en el núcleo de algunos [[Átomo|átomos]] radiactivos. Sus [[Energía|energías]] se encuentran en un rango de algunos $keV$ hasta algunos $MeV$.
+Son de naturaliza [[Campo electromagnético]] y se orginan en el núcleo de algunos [[Átomo|átomos]] radiactivos. Sus [[Energía|energías]] se encuentran en un rango de algunos $keV$ hasta algunos $MeV$.
 
 ##### Alfa
 Son partículas constituidas por dos [[Protón|protones]] y dos [[Neutrón|neutrones]], su [[Carga eléctrica]] es $+2$ (tomando como unidad de carga eléctrica de un protón).
@@ -24,4 +24,4 @@ Son partículas constituidas por dos [[Protón|protones]] y dos [[Neutrón|neutr
 Son partículas iguales a [[Electrón|electrones]] que son emitidas toda vez que un [[Neutrón]] se transforma en un [[Protón]]. Su [[Carga eléctrica]] es $-1$.
 
 ##### Rayos X
-Consisten en radiaciones [[Electromagnética|electromagnéticas]] originadas en la colisión de un haz de [[Electrón|electrones]] contra un material de alto número [[Átomo|átomico]] como el Tugsteno. La colisión puede tener en el interior de un tubo de rayos x o un acelerador de electrones.
+Consisten en radiaciones [[Campo electromagnético|electromagnéticas]] originadas en la colisión de un haz de [[Electrón|electrones]] contra un material de alto número [[Átomo|átomico]] como el Tugsteno. La colisión puede tener en el interior de un tubo de rayos x o un acelerador de electrones.
