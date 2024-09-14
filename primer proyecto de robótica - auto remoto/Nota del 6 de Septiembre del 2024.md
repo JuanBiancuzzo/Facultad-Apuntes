@@ -31,7 +31,7 @@ void setup() {
 }
 ```
 
-Para usarlo, en el loop principal, usamos la [[Función|función]] `IrReceiver.decode()` el cual devuelve un [[Valor booleano|booleano]] representando si pudo decodificar un mensaje o no.  Luego de esto, se tiene que resumir su funcionamiento con `IrReceiver.resumen()`
+Para usarlo, en el loop principal, usamos la [[Función|función]] `IrReceiver.decode()` el cual devuelve un [[Valor booleano|booleano]] representando si pudo decodificar un mensaje o no.  Luego de esto, se tiene que resumir su funcionamiento con `IrReceiver.resume()`
 
 La clase `IrReceiver`, guarda su información que logró decodificar en `IrReceiver.decodedIRData` que tiene la estructura 
 

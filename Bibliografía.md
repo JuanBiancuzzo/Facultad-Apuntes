@@ -3,8 +3,7 @@
 Lista de todas las carpetas siendo investigadas, con todos los links que usan. Cualquier cosa ver el [[README|read me]].
 
 ```dataviewjs
-const indices = dv.pages('#índice')
-	.sort(archivo => archivo.file.folder.split("/").pop());
+let indices = dv.pages('#índice').sort(archivo => archivo.file.folder.split("/").pop());
 const referencias = dv.pages('#referencia');
 
 let citaView = require(app.vault.adapter.basePath + "/_scripts/dataview/citaView.js");
@@ -36,7 +35,7 @@ for (let indice of indices) {
 		    console.log(numRef);
 		    continue;
 	    }
-        resultado += citaView.mostrarCita(referencia);
+        resultado += citaView.mostrarCita(referencia, numRef);
     }
 
 	dv.el("div", resultado);

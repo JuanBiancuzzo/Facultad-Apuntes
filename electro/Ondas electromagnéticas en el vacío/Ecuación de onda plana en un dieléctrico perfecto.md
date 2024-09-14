@@ -4,8 +4,8 @@ tags:
   - electro/Ondas-electromagnéticas-en-el-vacío
   - nota/facultad
 aliases:
-  - Ecuación de ondas reducidas de Helmholtz
-  - Ecuación de Helmholtz
+  - Ecuación de ondas reducidas de Helmholtz en un dieléctrico perfecto
+  - Ecuación de Helmholtz en un dieléctrico perfecto
   - Impedancia intrínseca del vacío#^impedancia-intrinseca-vacio
   - Ecuación de onda transversal electromagnética#Onda TEM
   - TEM#Onda TEM
@@ -19,12 +19,17 @@ Considere el vacío que es un medio dieléctrico perfecto, y los campos con vari
 $$
 Planteándolo con una representación fasorial ![[Ecuaciones de Maxwell#^ecuaciones-fasoriales]]
 
-Para obtener la ecuación de ondas se aplica el [[Rotor|rotor]] a la ecuación de $\nabla \times \vec{H} = j \omega \epsilon_0 \vec{E}$ se obtiene $$ \nabla \times \nabla \times \vec{H} = j \omega \epsilon_0 \nabla \times \vec{E} $$ recordando $$ \nabla \times \nabla \times \vec{H} = \nabla ( \nabla ~ \vec{H}) - \nabla^2 \vec{H} = -\nabla^2 \vec{H} $$ se tiene $$ -\nabla^2 \vec{H} = j \omega \epsilon_0 (-j\omega \mu_0 \vec{H}) $$
+Para obtener la ecuación de ondas se aplica el [[Rotor|rotor]] a la ecuación de $\nabla \times \vec{H} = j \omega \epsilon_0 \vec{E}$ se obtiene $$ \nabla \times \nabla \times \vec{H} = j \omega \epsilon_0 \nabla \times \vec{E} $$ recordando $$ \begin{matrix} 
+    \nabla \times \nabla \times \vec{H} = \nabla ( \nabla ~ \vec{H}) - \nabla^2 \vec{H} = -\nabla^2 \vec{H} \\ 
+    \nabla \times \vec{E} = -j\omega\mu_0 \vec{H}
+\end{matrix} $$ se tiene $$ -\nabla^2 \vec{H} = j \omega \epsilon_0 (-j\omega \mu_0 \vec{H}) $$
 Se llega a las ecuación de ondas reducidas de Helmholtz $$ \begin{align} 
     \nabla^2 \vec{H} + \omega^2 \mu_0 \epsilon_0 \vec{H} &= 0 \\
     \nabla^2 \vec{E} + \omega^2 \mu_0 \epsilon_0 \vec{E} &= 0
 \end{align} $$ haciendo $\gamma$ $$ \gamma^2 = -\omega^2 \mu_0 \epsilon_0 $$
-Se llega a la ecuación de onda reducida o ecuación de Helmholtz siguiente $$ \nabla^2 \vec{E} - \gamma^2 \vec{E} = 0 $$Se obtiene un resultado análogo con el campo magnético $$ \nabla^2 \vec{H} - \gamma^2 \vec{H} = 0 $$ operado con la constante de propagación $\gamma$ en el vacío se obtiene $$ \gamma = j\omega \sqrt{\mu_0 \epsilon_0} $$ donde $\gamma$, en general es una magnitud compleja $$ \gamma = \alpha + j\beta $$ con $\alpha$ en $\left[ \frac{1}{m} \right]$ constante de atenuación, y $\beta$ en $\left[ \frac{rac}{m} \right]$ constante de fase
+
+Se llega a la ecuación de onda reducida o ecuación de Helmholtz siguiente $$ \nabla^2 \vec{E} - \gamma^2 \vec{E} = 0 $$ 
+Se obtiene un resultado análogo con el campo magnético $$ \nabla^2 \vec{H} - \gamma^2 \vec{H} = 0 $$ operado con la constante de propagación $\gamma$ en el vacío se obtiene $$ \gamma = j\omega \sqrt{\mu_0 \epsilon_0} $$ donde $\gamma$, en general es una magnitud compleja $$ \gamma = \alpha + j\beta $$ con $\alpha$ en $\left[ \frac{1}{m} \right]$ constante de atenuación, y $\beta$ en $\left[ \frac{rac}{m} \right]$ constante de fase
 
 En este caso, $\gamma$ es puramente imaginario
 
@@ -41,6 +46,7 @@ Calculando el campo magnético, que podemos despejar de la [[Ley de Faraday#Ley 
     \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
     E_x & 0 & 0
 \end{vmatrix} = \frac{j}{\omega \mu_0} \frac{d}{dz} E_x ~ \hat{y} $$
+
 Resolviendo el campo magnético $$ \vec{H} = \frac{\beta}{\omega \mu_0} \left( E_0^+ ~ e^{-j\beta z} - E_0^- ~ e^{j\beta z} \right) ~ \hat{y} $$
 Donde podemos definir la [[Impedancia|impedancia]] intrínseca del vacío como $$ \frac{1}{Z_{00}} = \sqrt{\frac{\epsilon_0}{\mu_0}} = \frac{\beta}{\omega \mu_0} $$ 
 ^impedancia-intrinseca-vacio
