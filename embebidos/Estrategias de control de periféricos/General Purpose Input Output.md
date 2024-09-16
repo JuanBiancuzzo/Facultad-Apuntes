@@ -279,7 +279,7 @@ La segunda, es cuando la corriente la otorga una fuente externa, y se lo refiere
 ```
 
 >[!caution]
-> Es importante que la fuente externa sea la misma que alimente el microcontrolador, o se puede destruir el IC
+> Es importante que la fuente externa sea la misma que alimente el microcontrolador, o se puede destruir el [[Circuito integrado|circuito integrado]]
 
 ##### Corriente de salida
 ---
@@ -288,6 +288,87 @@ Los microcontroladores en general son capaces de manejar bajos niveles de corrie
 Estos límites están en los data sheets del microcontrolador, debajo del título "Especificaciones eléctricas" o similares. Se dan dos valores `Ioh` corriente de salida en $1$ (Current output high), y `Iol` corriente de salida en $0$ (Current output low). También se puede dar una [[Función|curva]] que represente la relación máxima entre `Voh` vs. `Ioh`, y `Vol` vs. `Ioh`
 
 También es útil revisar la sección sobre el pin que se va a usar, donde cualquier excepción se va a nombrar ahí
+
+##### Manejar cargas usando transistores
+---
+Los [[Transistor|transistores]] son [[Amplificador de corriente|amplificadores de corrientes]], con una corriente pequeña por la base de un [[Transistor bipolar de juntura|TBJ]], permite amplificar la corriente del colector por un factor llamado [[Ganancia de corriente en modo activo directo|hFE]] en las data sheets
+
+En los microcontroladores se usan los transistores como switches de prendido y apagado, y veamos un ejemplo
+
+```tikz
+\usepackage[
+	straightvoltages,
+	americancurrents,
+	americanresistors, 
+	americaninductors, 
+	americanports, 
+	americangfsurgearrester
+]{circuitikz} 
+
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usepackage{ifthen}
+
+\ctikzset{
+	resistors/scale=0.7,
+	capacitors/scale=0.7,
+	inductors/scale=0.7,
+	cute inductors,
+}
+
+\begin{document} 
+\begin{circuitikz}[
+    voltage shift=0.5, scale=1.2, transform shape, thick,
+    loops/.style={circuitikz/inductors/coils=#1}
+]
+    
+    \draw[ultra thick] (0, 2) 
+        -- ++(2, 0)
+            node[midway] (vdd) {}
+        -- ++(0, -4)
+            node[pos=0.80] (p0) {}
+        -- ++(-2, 0)
+            node[midway] (gnd) {};
+    
+    \draw (vdd.center) to[short, -*] ++(0, 0.75) 
+        node[right=2pt] {$V_{dd}$};
+    \draw (gnd.center) to[short, l^=GND] ++(0, -0.75)
+        node[tlground] {}; 
+    
+    \draw (p0.center) node[above right=2pt] {P$0$}
+        to[R, l^=$R1$] ++(2.5, 0)
+            node[npn, xscale=1, yscale=1.5, anchor=B] (npn) {};
+    \draw (npn.E) -- ($ (npn.E |- gnd.center) + (0, -0.75) $) 
+        node[tlground] {};
+    \draw (npn.C) to[R, l_=$R2$] ++(0, 2) 
+        to[short, -*] ($ (npn.C |- vdd.center) + (0, 0.75) $)
+            node[right=2pt] {$V_{cc}$};
+    
+\end{circuitikz}
+\end{document}
+```
+
+Donde vamos a poder aumentar la corriente que pueda otorgar $P0$, por el factor hFE o hasta que este sea limitado por la fuente $V_{cc}$
+
+Esto no solo se puede hacer con un [[Transistor bipolar de juntura#NPN|NPN]], que se lo llama low side switch ya que conecta la carga con la tierra, sino que también con un [[Transistor bipolar de juntura#PNP|PNP]], al cual se lo llamaba high side switch ya que conecta la fuente con la carga
+
+De igual forma se puede usar un [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]], el cual un [[Transistor de efecto de campo metal-óxido-semiconductor#Canal-N|canal N]] se comporta como un NPN, y un [[Transistor de efecto de campo metal-óxido-semiconductor#Canal-P|canal P]] se comporta como un PNP
+
+##### Arduino
+---
+Para settear un pin en [[placa de Desarrollo/arduino/Índice|Arduino]] como output de la siguiente forma 
+
+```c++
+pinMode(num_pin, OUTPUT);
+```
+
+Donde podemos set como $1$ con `HIGH`, y $0$ con `LOW` de la siguiente forma
+
+```c++
+digitalWrite(num_pin, HIGH); 
+digitalWrite(num_pin, LOW); 
+```
 
 #### Input 
 ---
@@ -366,7 +447,7 @@ Por regla general, se quiere que si se desea leer un $0$, que la tensión en el 
 La separación depende del microcontrolador como también del pin que se este usando, como a veces incluso por la [[Temperatura|temperatura]]
 
 > [!caution]
-> En el caso de que el pin reciba más de $V_{dd}$ puede dañar el IC. En caso de que reciba menos de $0$ V, puede causar daños internos del circuito y destruir el IC
+> En el caso de que el pin reciba más de $V_{dd}$ puede dañar el circuito integrado. En caso de que reciba menos de $0$ V, puede causar daños internos del circuito y destruir el circuito integrado
 
 ##### Resistencias de pull up y pull down
 ---
@@ -438,11 +519,27 @@ No hay una forma de determinar el valor de esa resistencia. En el caso de un val
 
 En casos de estar en un circuito muy ruidoso, es preferible aumentar esa resistencia pero al aumentarla genera un mayor aumento de energía y que ese componente sea capaz de manejar esa corriente
 
+##### Arduino
+---
+Para settear un pin en [[placa de Desarrollo/arduino/Índice|Arduino]] como input de la siguiente forma 
+
+```c++
+pinMode(num_pin, INPUT);
+```
+
+También podemos settear una resistencia de pull up, o pull down
+
+```c++
+digitalWrite(num_pin, HIGH); // Settear la resistencia de pull up
+digitalWrite(num_pin, LOW); // Settear la resistencia de pull down
+```
+
 #### Cambiar entre input y output
 ---
 Hay aplicaciones en las que cambiar entre input y output es útil o necesario, como lo puede ser la comunicación entre dos microcontroladores
 
 Hay que tener en cuenta que algunos microcontroladores pueden tardar un par de ciclos de reloj para cambiar de dirección y la información que se lee de estos sea confiable
+
 
 ### Referencias
 ---

@@ -4,6 +4,8 @@ estado: Sin empezar
 tags:
   - índice
   - placa-de-Desarrollo/arduino
+aliases:
+  - Arduino
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });

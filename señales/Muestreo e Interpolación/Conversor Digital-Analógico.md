@@ -3,6 +3,10 @@ dia: 2024-04-23
 tags:
   - señales/Muestreo-e-Interpolación
   - nota/facultad
+aliases:
+  - Conversor D/A
+  - Digital to analog converter
+  - D/A converter
 ---
 ### Definición
 ---

@@ -37,8 +37,9 @@ let mostrar = archivos.map(({ path, nombre, aliases }) => {
             .map(alias => `<p class="alias"> ${alias} </p>`)
             .join("") + "</div>";
     }
+    let clase = (aliases.length <= 3) ? "nota" : "nota-larga";
 
-    return `<div class="nota"> ${crearReferencia(path, nombre)} ${mostrarAliases} </div>`;
+    return `<div class="${clase}"> ${crearReferencia(path, nombre)} ${mostrarAliases} </div>`;
 }).join("");
 
 dv.el("div", `<div class="grilla"> ${mostrar} </div>`);

@@ -3,6 +3,7 @@ dia: 2024-03-11
 tags:
   - señales/Transformada-de-Fourier
   - nota/facultad
+  - analisis-3/Transformada-de-Fourier
 ---
 ### Definición
 ---

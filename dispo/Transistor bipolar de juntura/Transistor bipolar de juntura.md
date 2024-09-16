@@ -2,6 +2,8 @@
 dia: 2023-09-25
 aliases:
   - TBJ
+  - NPN#NPN
+  - PNP#PNP
 tags:
   - dispo/Transistor-bipolar-de-juntura
   - nota/facultad

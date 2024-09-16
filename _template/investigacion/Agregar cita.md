@@ -1,8 +1,4 @@
 <%*
-
-    // Queriendo generar lo siguiente
-    // <sup><a href="#ref-54" style="color: inherit; text-decoration: none;">[54]</a></sup>
-
     const dv = app.plugins.plugins["dataview"].api;
     let path = tp.file.path(true);
 
@@ -17,11 +13,14 @@
                 .filter(ref => referenciasActuales.indexOf(ref.numReferencia) >= 0)
                 .sort(ref => parseInt(ref.numReferencia, 10));
             
-            let cita = await tp.system.suggester(
-                referencias.map(ref => tp.user.cita().describir(ref)), 
-                referencias.map(ref => ref.numReferencia),
-                true, "Referenciar cita (si no hay nada que referenciar, apretar ESC)", 10
-            );
+            let cita = referencias[0].numReferencia;
+            if (referencias.length > 1) {
+                cita = await tp.system.suggester(
+                    referencias.map(ref => tp.user.cita().describir(ref)), 
+                    referencias.map(ref => ref.numReferencia),
+                    true, "Referenciar cita (si no hay nada que referenciar, apretar ESC)", 10
+                );
+            }
 
             tR += `<sup><a href="#ref-${cita}" style="color: inherit; text-decoration: none;">[${cita}]</a></sup> `;
 
@@ -36,5 +35,4 @@
         console.log(mensaje);
         new Notice(mensaje);
     }    
-
 _%>

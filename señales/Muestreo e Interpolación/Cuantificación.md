@@ -3,10 +3,11 @@ dia: 2024-05-14
 tags:
   - señales/Muestreo-e-Interpolación
   - nota/facultad
+  - embebidos/Estrategias-de-control-de-periféricos
 ---
 ### Definición
 ---
-Una versión más real de un [[Conversor Analógico-Digital|conversor A-D]] tienen la siguiente estructura ideal ![[Conversor Analógico-Digital#^8b8439]]
+Una versión más real de un [[Conversor Analógico-Digital|conversor A/D]] tienen la siguiente estructura ideal ![[Conversor Analógico-Digital#^8b8439]]
 Este [[Modelo|modelo]] matemático de un conversor ideal que es útil para el análisis de las principales características del [[Muestreo|muestreo]] en el dominio de la frecuencia
 * El proceso de tomar la muestra $x_c(n T)$ en la práctica no se hace con un tren de [[Delta de Dirac|impulsos]]
 * En general la muestra $x_c(nT)$ es un número real con infinitos decimales. En la práctica, en una [[Computadora|computador]], sólo podemos representar números con finitos decimales

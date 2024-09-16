@@ -3,6 +3,11 @@ dia: 2024-04-16
 tags:
   - señales/Muestreo-e-Interpolación
   - nota/facultad
+  - embebidos/Estrategias-de-control-de-periféricos
+aliases:
+  - Conversor A/D
+  - A/D converter
+  - Analog to digital converter
 ---
 ### Definición
 ---

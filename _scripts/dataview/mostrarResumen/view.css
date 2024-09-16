@@ -1,14 +1,29 @@
 .grilla {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 1em;
 }
 
-.nota {
+.nota, .nota-larga {
     border-radius: 1em;
     border: 2px solid #dadada; 
     padding: 1em 2em;
     min-height: 4em;
+}
+
+.nota {
+    flex: 1 1 calc(50% - 1em);
+    order: 1;
+}
+
+.nota-larga {
+    flex: 2 1 calc(100% - 1em);
+    order: 2;
+}
+
+.nota-larga .aliases {
+    column-count: 3;
+    column-gap: 1em;
 }
 
 .alias {
