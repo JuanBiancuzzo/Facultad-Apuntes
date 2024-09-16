@@ -32,10 +32,10 @@ let archivos = dv.pages(`#${tagRepresentante} and -#resumen`)
 let mostrar = archivos.map(({ path, nombre, aliases }) => {
     let mostrarAliases = "";
     if (aliases.length > 0) {
-        mostrarAliases += aliases
+        mostrarAliases += '<div class="aliases">' + aliases
             .filter(alias => !alias.includes("#"))
             .map(alias => `<p class="alias"> ${alias} </p>`)
-            .join("");
+            .join("") + "</div>";
     }
 
     return `<div class="nota"> ${crearReferencia(path, nombre)} ${mostrarAliases} </div>`;
