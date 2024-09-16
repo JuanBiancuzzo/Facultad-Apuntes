@@ -77,3 +77,4 @@ Tenemos los subproyectos específicos que son
 ---
 * Juan Ignacio Biancuzzo
 * Felipe Perassi
+* Rocio Nicole Heredia Piñon
