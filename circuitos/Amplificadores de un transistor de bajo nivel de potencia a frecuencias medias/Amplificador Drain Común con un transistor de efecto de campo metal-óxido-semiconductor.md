@@ -83,7 +83,6 @@ Donde tomamos $R_G = R_{G1} // R_{G2}$ , $R_{CA} = R_S // R_L$ $$\begin{array}{r
 	A_v =& \displaystyle \frac{g_m ~ R_{CA}}{g_m ~ R_{CA} + 1} > 0 &&& |A_v| < 1 \\\\
 	R_{ig} =& R_G &&& R_i \uparrow\uparrow \\\\
 	R_{os} =& \displaystyle \frac{R_D + r_{ds}}{1 + g_m ~ r_{ds}} \underset{r_{ds} \gg 1}{\approx} \frac{1}{g_m} &&& R_o \downarrow\downarrow \\\\
-	C_{eq} &=   &&& \text{Velocidad media} \\\\
 \end{array} $$
 
 ^84a8e4

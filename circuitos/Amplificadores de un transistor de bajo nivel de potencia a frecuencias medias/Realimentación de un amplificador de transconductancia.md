@@ -103,7 +103,7 @@ Este [[Amplificador de transconductancia|amplificador de transconductancia]], al
 \end{document}
 ```
 
-Donde la [[Admitancia|transconductancia]] del [[Amplificador|amplificador]] esta dada por $$ G_m = \frac{i_0}{v_s} $$
+Donde la [[Admitancia|transconductancia]] del [[Amplificador operacional|amplificador]] esta dada por $$ G_m = \frac{i_0}{v_s} $$
 Podemos ver la realimentación como $$ \begin{matrix} 
 	v_s = v_i + v_f \\
 	\implies v_i = v_s - v_f = v_s - k ~ i_0 = v_s - k ~ G_{mo} ~ v_i \\

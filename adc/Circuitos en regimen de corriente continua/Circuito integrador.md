@@ -8,8 +8,8 @@ tags:
 ---
 Es un [[Circuito eléctrico|circuito]], que utilizando las condiciones de [[Amplificador operacional ideal|amplificador ideal]] podemos encontrar que 
 
-$$ v_o = - \frac{1}{RC} \int_0^t v_i(\tau) ~ d\tau $$
+$$ v_o = - \frac{1}{RC} \int_0^t v_i(\tau) ~ d\tau $$ ^0d5b6b
 
 En este caso, veamos como también se usa [[Capacitor|capacitores]]
 
-![[Circuito integrador.webp]]
+![[Circuito integrador.webp]] ^020b32

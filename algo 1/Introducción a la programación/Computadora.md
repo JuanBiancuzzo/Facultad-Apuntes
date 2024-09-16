@@ -18,7 +18,7 @@ Una computadora es un dispositivo que puede aceptar instrucciones humanas, las p
 * Los periféricos de entrada y salida de datos
 	* Transfieren datos entre la computadora y el entorno externo
 * Las [[Bus|inter-conexiones o buses]]
-	* Es el mecanismos que proporcionan la comunicación entre la CPU, la memora principal y la [[Puerto Input-Output|Entrada/Salida]]
+	* Es el mecanismos que proporcionan la comunicación entre la CPU, la memora principal y la [[General Purpose Input Output|Entrada/Salida]]
 
 ```tikz
 \usepackage{amssymb}

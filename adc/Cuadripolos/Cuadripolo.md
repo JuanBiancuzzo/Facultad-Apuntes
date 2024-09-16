@@ -110,4 +110,4 @@ Hay varias posibles conexiones
 
 ##### Conexión en cascada
 ---
-![[Cuadripolo en cascada#Definición]]
+![[Amplificadores en cascada#Punto de vista del cuadripolo|Cuadripolo en cascada]]

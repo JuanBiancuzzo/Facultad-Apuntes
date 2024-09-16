@@ -81,13 +81,11 @@ tags:
 
 ^9a23eb
 
-$$ \begin{matrix} 
-	&&& \text{En general} \\
-	A_v =  &&&  |A_v| \gg 1 \\
-	A_{vs} = &&& \\
-	R_i = &&& \\
-	R_o = &&& \\
-	C_{eq} = &&& \\
-\end{matrix} $$
+$$\begin{array}{rl c|c c}
+	 &&&& \text{En general} \\
+	A_v =&  &&& |A_v| \\\\
+	R_{is} =&  &&& R_i \\\\
+	R_{od} =&  &&& R_o \\\\
+\end{array} $$
 
 ^f4b95c

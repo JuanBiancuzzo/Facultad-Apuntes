@@ -107,7 +107,7 @@ Este [[Amplificador de transresistencia|amplificador de transresistencia]], al r
 \end{document}
 ```
 
-Donde la [[Impedancia|transresistencia]] del [[Amplificador|amplificador]] esta dada por $$ R_o = \frac{v_0}{i_s} $$
+Donde la [[Impedancia|transresistencia]] del [[Amplificador operacional|amplificador]] esta dada por $$ R_o = \frac{v_0}{i_s} $$
 Podemos ver la realimentación como $$ \begin{matrix} 
 	i_s = i_i + i_f \\
 	\implies i_i = i_s - i_f = i_s - k ~ v_0 = i_s - k ~ R_m ~ i_i \\

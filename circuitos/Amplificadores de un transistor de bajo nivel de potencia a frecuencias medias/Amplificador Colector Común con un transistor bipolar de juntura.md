@@ -84,7 +84,6 @@ Donde tomamos $R_B = R_{B1} // R_{B2}$ , $R_{CA} = R_E // R_L$ $$\begin{array}{r
 	A_v =& \displaystyle \frac{g_m ~ R_{CA}}{g_m ~ R_{CA} + 1} > 0 &&& |A_v| < 1 \\\\
 	R_{ib} =& \displaystyle r_\pi + \frac{R_{CA} ~(\beta ~ r_{ce} - R_C)}{R_{CA} - R_C + r_{ce}} \underset{r_{ce} \gg 1}{\approx} r_\pi + \beta ~ R_{CA} &&& R_i \uparrow\uparrow \\\\
 	R_{oe} =& \displaystyle \frac{r_\pi + R_B // R_S}{\beta} &&& R_o \downarrow\downarrow \\\\
-	C_{eq} &=   &&& \text{Velocidad media} \\\\
 \end{array} $$
 
 ^e8dc2c

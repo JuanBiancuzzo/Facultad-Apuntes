@@ -82,6 +82,5 @@ Donde tomamos $R_B = R_{B1} // R_{B2}$ , $R_{CA} = R_C // R_L$ $$\begin{array}{r
 	A_v =& \displaystyle \frac{g_m ~ R_{CA}}{\frac{R_B}{r_\pi} + 1} > 0 &&& |A_v| \uparrow\uparrow \\\\
 	R_{ie} =& r_{ce} // \left( \frac{1}{g_m} + \frac{R_B}{\beta} \right) &&& R_i \downarrow\downarrow \\\\
 	R_{oc} =& r_{ce} ~ \left( 1 + \frac{\beta ~ R_s}{R_s + r_\pi + R_B} \right) \xrightarrow[r_{ce} \gg 1]{} \infty &&& R_o \uparrow\uparrow \\\\
-	C_{eq} =&   &&& \text{Velocidad media} \\\\
 \end{array} $$
 ^364fd0

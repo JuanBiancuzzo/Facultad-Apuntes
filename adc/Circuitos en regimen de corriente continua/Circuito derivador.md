@@ -8,8 +8,8 @@ tags:
 ---
 Es un [[Circuito eléctrico|circuito]], que utilizando las condiciones de [[Amplificador operacional ideal|amplificador ideal]] podemos encontrar que 
 
-$$ v_o = - RC \frac{dv_i}{dt} $$
+$$ v_o = - RC \frac{dv_i}{dt} $$ ^3062c0
 
 En este caso, veamos como también se usa [[Capacitor|capacitores]]
 
-![[Circuito derivador.webp]]
+![[Circuito derivador.webp]] ^f731f9

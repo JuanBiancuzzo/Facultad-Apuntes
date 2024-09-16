@@ -64,6 +64,7 @@ Un listado de los temas investigados y su estado actual
 | [Matemática](matemática/Índice.md)                                   | Falta resumir |
 | [Música](música/Índice.md)                                           | Falta resumir |
 | [Networking](networking/Índice.md)                                   | Falta resumir |
+| [Placa de Desarrollo](placa%20de%20Desarrollo/Índice.md)             | Sin empezar   |
 | [Reglas APA](reglas%20APA/Índice.md)                                 | Falta resumir |
 | [Storytelling](storytelling/Índice.md)                               | Falta resumir |
 

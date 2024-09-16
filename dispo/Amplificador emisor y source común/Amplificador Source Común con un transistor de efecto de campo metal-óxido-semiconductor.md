@@ -5,6 +5,7 @@ aliases:
 tags:
   - dispo/Amplificador-emisor-y-source-común
   - nota/facultad
+  - circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
 ---
 ### Definición
 ---
@@ -83,7 +84,6 @@ Donde tomamos $R_G = R_{G1} // R_{G2}$ , $R_{CA} = R_D // R_L$ $$\begin{array}{r
 	A_v =& \displaystyle -\frac{g_m ~R_{CA}}{1 + g_m ~ R_S} \underset{g_m ~ R_S \gg 1}{\approx} -\frac{R_{CA}}{R_S} &&& |A_v| \uparrow\uparrow \\\\
 	R_i =& R_G &&& R_i \uparrow\uparrow \\\\
 	R_{oc} =& r_{ds} ~ (1 - g_m ~ R_S) \xrightarrow[r_{ds} \gg 1]{} \infty &&& R_o \uparrow\uparrow \\\\
-	C_{eq} =& &&& \text{Velocidad lento} \\\\
 \end{array} $$
 
 ^27b24b

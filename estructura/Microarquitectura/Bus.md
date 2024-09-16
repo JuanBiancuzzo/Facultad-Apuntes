@@ -25,4 +25,4 @@ Este sistema de buses permite conectar componente de una [[Computadora|computado
 
 ![[Diagrama de Bus.png]]
 
-En este sistema, los [[Puerto Input-Output|dispositivos de entrada y salida]] están mapeados en [[Memoria|memoria]]. En caso de no ser así, se deberá usar un bus distinto para comunicarse con ellos
+En este sistema, los [[General Purpose Input Output|dispositivos de entrada y salida]] están mapeados en [[Memoria|memoria]]. En caso de no ser así, se deberá usar un bus distinto para comunicarse con ellos

@@ -10,7 +10,7 @@ Es un mecanismo que proveen todos los [[Procesador|procesadores]] y algunos micr
 
 Dado que este mecanismo es proveído por el hardware cada instrucción a ser ejecutada el mismo chequea en que modo de operación se encuentra. Por lo que podemos diferenciar entre [[Instrucción privilegiada|instrucciones privilegiadas]]
 
-Por lo que se protege la [[Protección de memoria|memoria]], los [[Puerto Input-Output|purtos de I/O]] y las posibilidad de ejecutar ciertas instrucciones.
+Por lo que se protege la [[Protección de memoria|memoria]], los [[General Purpose Input Output|purtos de I/O]] y las posibilidad de ejecutar ciertas instrucciones.
 
 Los modos más utilizados por los [[Sistema operativo|sistemas operativos]] son
 ##### Modo kernel

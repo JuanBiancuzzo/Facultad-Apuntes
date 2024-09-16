@@ -6,6 +6,7 @@ aliases:
 tags:
   - dispo/Amplificador-emisor-y-source-común
   - nota/facultad
+  - circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
 ---
 ### Definición
 ---
@@ -89,7 +90,6 @@ Donde tomamos $R_B = R_{B1} // R_{B2}$, y $R_{CA} = R_C // R_L$ $$\begin{array}{
 	A_v =& \displaystyle -\frac{g_m ~R_{CA}}{1 + g_m ~ R_E} \underset{g_m ~ R_E \gg 1}{\approx} -\frac{R_{CA}}{R_E} &&& |A_v| \uparrow\uparrow \\\\
 	R_i =& R_B // (r_\pi + \beta ~ R_E) &&& R_i \uparrow\uparrow \\\\
 	R_{oc} =& r_{ce} + (r_\pi // R_E) (g_m r_{ce} + 1) \underset{g_m r_o \gg 1}{\approx} r_{ce} (1 + \frac{\beta ~ R_E}{r_\pi + R_E}) &&& R_o \uparrow\uparrow \\\\
-	C_{eq} =& &&& \text{Velocidad lento} \\\\
 \end{array} $$
 
 ^daaa29

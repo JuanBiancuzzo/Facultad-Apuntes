@@ -3,6 +3,11 @@ dia: 2023-11-12
 tags:
   - sisop/Virtualización-de-memoria
   - nota/facultad
+  - embebidos/Memorias
+aliases:
+  - Virtual memory
+  - Mapeo de memoria
+  - Memory-Mapped
 ---
 ### Definición
 ---
@@ -11,12 +16,16 @@ Esta es una abstracción por la cual la [[Memoria|memoria]] física puede ser co
 Un comportamiento clave de la memoria virtual son las [[Dirección de memoria virtual|direcciones virtuales]]. 
 
 La virtualización de memoria le hace creer al [[Proceso|proceso]] que este tiene toda la memoria disponible para ser reservada y usada como si este estuviera siendo ejecutado sólo en la computadora. Todos los procesos en [[Linux]], están divididos en 4 segmentos:
-* Text: Instrucciones del programa
-* Data: Variables Globales
-* [[Heap|Heap]]: Memoria dinámica alocable
-* [[Stack|Stack]]: Variables locales y trace de llamadas
+* Text
+    * Instrucciones del programa
+* Data
+    * Variables Globales
+* [[Heap|Heap]]
+    * Memoria dinámica alocable
+* [[Stack|Stack]]
+    * Variables locales y trace de llamadas
 
-Todas estas secciones pertenecientes a un proceso se denominan [[Espacio de direcciones|espacio de direcciones]] del proceso.
+Todas estas secciones pertenecientes a un proceso se denominan [[Espacio de direcciones|espacio de direcciones]] del proceso
 
 #### Metas
 ---

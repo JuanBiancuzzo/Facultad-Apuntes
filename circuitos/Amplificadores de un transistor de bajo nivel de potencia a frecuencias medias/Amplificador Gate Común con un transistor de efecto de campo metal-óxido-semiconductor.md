@@ -82,6 +82,5 @@ Donde tomamos $R_G = R_{G1} // R_{G2}$ , $R_{CA} = R_D // R_L$ $$\begin{array}{r
 	A_v =& g_m ~ R_{CA} > 0 &&& |A_v| \uparrow\uparrow \\\\
 	R_{is} =& \displaystyle \frac{R_{CA} + r_{ds}}{1 + g_m ~ r_{ds}} \underset{r_{ds} \gg 1}{\approx} \frac{1}{g_m} &&& R_i \downarrow\downarrow \\\\
 	R_{od} =& r_{ds} + (g_m ~ r_{ds} + 1) (R_S + R_s) \xrightarrow[r_{ds} \gg 1]{} \infty &&& R_o \uparrow\uparrow \\\\
-	C_{eq} =&   &&& \text{Velocidad media} \\\\
 \end{array} $$
 ^5ee09c

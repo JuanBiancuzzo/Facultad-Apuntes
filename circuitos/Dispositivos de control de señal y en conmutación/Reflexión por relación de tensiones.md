@@ -37,7 +37,7 @@ Tomemos como ejemplo el siguiente circuito
 Donde vemos que la [[Resistor|resistor]] $R_G$ complica el circuito ya que al querer la [[Corriente eléctrica|corriente]] $i_d$ involucra más partes del circuito. Por lo tanto es un buen caso para aplicar la reflexión 
 
 Sabemos que la corriente $i_i$ pasa completamente por $R_G$ y queremos que se mantenga esa corriente, por lo tanto tenemos que $$ i_i = \frac{v_i - v_o}{R_G} $$
-Por la [[Ganancia|ganancia]] del [[Amplificador|amplificador]] que es $A_v = \frac{v_o}{v_i}$, podemos reescribirlo como $$ i_i = \frac{v_i - A_v ~v_i}{R_G} = v_i \frac{1 - A_v}{R_G} \implies \frac{v_i}{i_i} = R_G^* = \frac{R_G}{1 - A_v} $$
+Por la [[Ganancia|ganancia]] del [[Amplificador operacional|amplificador]] que es $A_v = \frac{v_o}{v_i}$, podemos reescribirlo como $$ i_i = \frac{v_i - A_v ~v_i}{R_G} = v_i \frac{1 - A_v}{R_G} \implies \frac{v_i}{i_i} = R_G^* = \frac{R_G}{1 - A_v} $$
 Este resistor en una caída de tensión de $v_i$ su corriente va a ser $i_i$, por lo tanto podemos reescribir el circuito como
 
 ![[Resistencia reflejada por tensión.png]]

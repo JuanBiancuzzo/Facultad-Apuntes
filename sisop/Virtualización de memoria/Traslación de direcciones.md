@@ -62,7 +62,7 @@ El sistema operativo puede utilizar la traducción de memoria para evitar que un
 
 ##### Efficient I/O
 ---
-Los sistemas operativos de servidor a menudo están limitados por la velocidad a la que pueden transferir datos hacia y desde el disco y la red. La traducción de direcciones permite transferir datos de manera segura directamente entre aplicaciones en modo usuario y [[Puerto Input-Output|dispositivos de E/S]].
+Los sistemas operativos de servidor a menudo están limitados por la velocidad a la que pueden transferir datos hacia y desde el disco y la red. La traducción de direcciones permite transferir datos de manera segura directamente entre aplicaciones en modo usuario y [[General Purpose Input Output|dispositivos de E/S]].
 
 ##### [[Memoria|Memory]] mapped files
 ---

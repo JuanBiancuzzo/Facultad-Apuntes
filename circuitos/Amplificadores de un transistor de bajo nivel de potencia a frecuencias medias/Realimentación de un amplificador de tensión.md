@@ -98,7 +98,7 @@ Este [[Amplificador de tensión|amplificador de tensión]], al realimentarlo, po
 \end{document}
 ```
 
-Donde la [[Ganancia|ganancia]] del [[Amplificador|amplificador]] esta dada por $$ A_v = \frac{v_0}{v_s} $$
+Donde la [[Ganancia|ganancia]] del [[Amplificador operacional|amplificador]] esta dada por $$ A_v = \frac{v_0}{v_s} $$
 Podemos ver la realimentación como $$ \begin{matrix} 
 	v_s = v_i + v_f \\
 	\implies v_i = v_s - v_f = v_s - k ~ v_0 = v_s - k ~ A_{vo} ~ v_i \\

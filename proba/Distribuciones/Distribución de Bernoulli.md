@@ -14,7 +14,7 @@ $$ X \sim Ber(p) $$
 
 #### Notas
 ---
-* El [[Rango|rango]] de $X$ es $R_X = \{ 0, 1 \}$
+* El [[Rango de una variable aleatoria|rango]] de $X$ es $R_X = \{ 0, 1 \}$
 * $p \in (0, 1)$ 
 * La [[Esperanza|esperanza]] es $E[X] = p$ y la [[Varianza|varianza]] es $Var(X) = p \cdot (1 - p)$
 

@@ -3,6 +3,7 @@ dia: 2024-08-27
 tags:
   - embebidos/Microcontroladores-de-32-bits
   - nota/facultad
+  - placa-de-Desarrollo/placa-de-desarrollo-Nucleo-64/placa-STM32-F302R8
 aliases:
   - ARM 7
 ---

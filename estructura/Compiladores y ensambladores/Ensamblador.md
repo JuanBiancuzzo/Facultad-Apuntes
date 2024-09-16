@@ -42,5 +42,5 @@ Para generarla, el ensamblador recorre el archivo línea por línea, Incluye su 
 Es una tabla que contiene el nombre de los símbolos, su dirección, si son extern o global, o si son relocalizables
 
 No todos los símbolos son relocalizables, por ejemplo
-* Direcciones de [[Puerto Input-Output|entrada/salida]]
+* Direcciones de [[General Purpose Input Output|entrada/salida]]
 * Rutinas del sistema
