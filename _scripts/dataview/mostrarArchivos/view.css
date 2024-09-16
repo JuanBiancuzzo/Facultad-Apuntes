@@ -7,7 +7,7 @@
 .nota, .nota-larga {
     border-radius: 1em;
     border: 2px solid #dadada; 
-    padding: 1em 2em;
+    padding: 0 0 1em 2em;
     min-height: 4em;
 }
 
@@ -22,8 +22,38 @@
 }
 
 .nota-larga .aliases {
-    column-count: 3;
+    column-count: 2;
     column-gap: 1em;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nombre {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    padding-right: 2.7em;
+}
+
+.etapa {
+    position: relative;
+    margin: 0;
+}
+
+.etapa svg {
+    position: absolute;
+    top: 0;
+    right: 1em;
+    width: 1.5em;
+}
+
+.referencias {
+    text-indent: 1em;
+    font-size: 0.9rem;
 }
 
 .alias {

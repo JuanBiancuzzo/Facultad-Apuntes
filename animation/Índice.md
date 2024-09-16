@@ -13,7 +13,6 @@ await dv.view("_scripts/dataview/mostrarSubTemas", { indice: dv.current() });
 ---
 Vamos a ver como producir las mejores animaciones, con el menor esfuerzo posible y la mayor expresividad posible. Esto nos va a llevar a aprender sobre muchas cosas como inverse kinematic, rigging y otras cosas
 
-
 #### Archivos
 ---
 ```dataviewjs

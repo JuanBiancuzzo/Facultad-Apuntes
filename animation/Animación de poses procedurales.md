@@ -6,6 +6,8 @@ referencias:
 tags:
   - nota/investigacion
   - animation
+aliases:
+  - Procedural pose animation
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });

@@ -9,7 +9,7 @@ switch (etapa) {
 	case "empezado": estadoCallout = "help"; 
 		texto = "Todavía no esta terminado, puede modificarse";
 		break;
-	case "ampliar": estadoCallout = "todo"; 
+	case "ampliar": estadoCallout = "hint"; 
 		texto = "Se puede ampliar el contenido";
 		break;
 	case "terminado": estadoCallout = "done"; 
