@@ -93,8 +93,8 @@ La diferencia entre las tensiones se consigue a partir de [[Transistor de efecto
         
     \end{scope}
 
-    \draw (vdd.center) to[short, l_=$V_{dd}$, -*] ++(0, 0.75)
-        node[above=2pt] {$5$ V};
+    \draw (vdd.center) to[short, -*] ++(0, 0.75)
+        node[above=2pt] {$V_{dd}$};
     
     \draw (gnd.center) to[short, l=GND] ++(0, -0.75)
         node[tlground] {};
@@ -182,8 +182,8 @@ La primera es cuando el microcontrolador otorga la [[Corriente eléctrica|corrie
         
     \end{scope}
 
-    \draw (vdd.center) to[short, l_=$V_{dd}$, -*] ++(0, 0.75)
-        node[above=2pt] {$5$ V};
+    \draw (vdd.center) to[short, -*] ++(0, 0.75)
+        node[above=2pt] {$V_{dd}$};
     
     \draw (gnd.center) to[short, l=GND] ++(0, -0.75)
         node[tlground] {};
@@ -243,7 +243,7 @@ La segunda, es cuando la corriente la otorga una fuente externa, y se lo refiere
         -- ++(0, -1.5)
         -- cycle;
     \draw (temp.center) to[short, -*] ++ (0, 0.5)
-        node[above] {$5$ V};
+        node[above] {$V_{dd}$};
         
     \begin{scope}
         \circuitikzset{color=rojo}
@@ -263,8 +263,8 @@ La segunda, es cuando la corriente la otorga una fuente externa, y se lo refiere
         
     \end{scope}
 
-    \draw (vdd.center) to[short, l_=$V_{dd}$, -*] ++(0, 0.75)
-        node[above=2pt] {$5$ V};
+    \draw (vdd.center) to[short, -*] ++(0, 0.75)
+        node[above=2pt] {$V_{dd}$};
     
     \draw (gnd.center) to[short, l=GND] ++(0, -0.75)
         node[tlground] {};
@@ -347,9 +347,9 @@ Tomando idealmente podemos pensar que tomamos, de $\frac{V_{dd}}{2}$ para arriba
             node[midway, fill=white, rotate=45, above=2pt] {No sobrepasar};
     \end{scope}
     
-    \draw[->] (-0.5, 0) -- (\largo, 0)
+    \draw[->] (-0.3, 0) -- ({\largo + 0.1}, 0)
         node[below left=2pt] {$V_{dd}$};
-    \draw[->] (0, -0.5) -- (0, \largo)
+    \draw[->] (0, -0.3) -- (0, {\largo + 0.1})
         node[rotate=90, above left=2pt] {Tensión del pin};
     \draw[dashed] (0, 0) -- (\largo, {\largo / 2});
     
@@ -422,10 +422,12 @@ A veces se quiere tener como default que se lea un $0$ o un $1$. Esto nos permit
         -- ++(3, 0) node[pos=0.6] (temp1) {}
             node[below=2pt] {Pull Down};
     
-    \draw (temp0.center) to[R, l_=R$1$, *-*] ++(0, 2.5)
-        node[right=2pt] {$V_{dd}$}; 
-    \draw (temp1.center) to[R, l^=R$2$, *-] ++(0, -2.5)
-        node[tlground] {}; 
+    \draw (temp0.center) to[R, l_=R$1$, *-*] 
+        ($ (temp0.center |- vdd.center) + (0, 0.75) $)
+            node[right=2pt] {$V_{dd}$}; 
+    \draw (temp1.center) to[R, l^=R$2$, *-] 
+        ($ (temp1.center |- gnd.center) + (0, -0.75) $)
+            node[tlground] {}; 
     
 \end{circuitikz}
 \end{document}

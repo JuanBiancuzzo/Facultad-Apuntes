@@ -2,11 +2,11 @@
 dia: 2023-08-27
 aliases:
   - UML
-  - Diagrama de clases UML#Diagrama de clases
   - Diagrama de casos de uso UML#Diagrama de casos de uso
   - Diagrama de secuencia UML#Diagrama de secuencia
   - Diagrama de estado UML#Diagrama de estado
   - Diagrama de actividad UML#Diagrama de actividad
+  - Diagrama de clases UML#Diagrama de clases
 tags:
   - aninfo/Ingeniería-de-software
   - nota/facultad
