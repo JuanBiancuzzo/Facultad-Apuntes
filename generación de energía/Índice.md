@@ -1,9 +1,9 @@
 ---
 dia: 2024-09-03
-estado: 'Sin empezar'
-tags: 
- - índice
- - generación-de-energía
+estado: Sin empezar
+tags:
+  - índice
+  - generación-de-energía
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });
