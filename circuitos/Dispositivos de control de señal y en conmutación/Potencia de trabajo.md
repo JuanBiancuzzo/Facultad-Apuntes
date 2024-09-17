@@ -3,6 +3,8 @@ dia: 2024-04-21
 tags:
   - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
   - nota/facultad
+aliases:
+  - Bajo nivel de potencia#Bajo nivel de potencia
 ---
 ### Definición
 ---
@@ -79,6 +81,13 @@ Donde SOA se refiere a una área de operación segura.
 
 Definimos bajo nivel de potencia como trabajar por debajo de la curva $P_{max}$, y un componente que trabaje cerca de la curva, la definimos como trabajando a alto o máximo nivel de potencia
 
+#### Bajo nivel de potencia
+---
+La definición bajo nivel de potencia, en un carácter comercial es si la [[Potencia disipada|potencia disipada]] esta por debajo de $1~W$
+
+También lo podemos definir como la situación, donde la [[Recta de carga dinámica de un componente|curva de carga dinámica]] esta muy por debajo del límite establecido por la curva de potencia máxima 
+
 #### Notas
 ---
 Por fuera del área de operación segura se espera que si se mantiene el punto de trabajo ($Q$) por un período suficientemente largo, este dejará de funcionar. En el caso de que este este por poco tiempo, ya que aumentar la [[Temperatura|temperatura]] es un proceso lento, se puede pasar, aunque sea por poco tiempo, afuera de la SOA
+

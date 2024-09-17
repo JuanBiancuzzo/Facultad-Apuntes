@@ -2,6 +2,7 @@
 dia: 2023-11-10
 aliases:
   - MOSFET
+  - Transistor MOSFET
 tags:
   - dispo/Transistor-MOSFET
   - nota/facultad
@@ -61,7 +62,7 @@ Dispositivo de canal-n (n-MOSFET) sobre un substrato [[Impureza aceptora#Cantida
 \usetikzlibrary{calc}
 
 \begin{document} 
-	\begin{tikzpicture}[scale=1.1, transform shape, thick]
+	\begin{tikzpicture}[scale=0.8, transform shape, thick]
 		\begin{scope}[ultra thick]
 			\draw (-1, 0) -- ++(1, 0)
 				node[pos=0, above=2pt] {G};
@@ -169,7 +170,7 @@ Dispositivo de canal-p (p-MOSFET) sobre un substrato [[Impureza donora#Cantidad 
 \usetikzlibrary{calc}
 
 \begin{document} 
-	\begin{tikzpicture}[scale=1.1, transform shape, thick]
+	\begin{tikzpicture}[scale=0.8, transform shape, thick]
 		\begin{scope}[ultra thick]
 			\draw (-1, 0) -- ++(0.75, 0)
 				node[pos=0, below=2pt] {G};
@@ -275,6 +276,10 @@ El [[Transistor]] tiene 3 regímenes de operación
 * Corte ![[Corte del transistor de efecto de campo metal-óxido-semiconductor#^ef3a86]]
 * Triodo/Linea ![[Triodo del transistor de efecto de campo metal-óxido-semiconductor#^628376]]
 * Saturación ![[Saturación del transistor de efecto de campo metal-óxido-semiconductor#^c13b85]]
+
+#### Curvas características
+---
+![[Curvas características del MOSFET.png]]
 
 #### Características del MOSFET con $V_{BS} \ne 0~V$
 ---

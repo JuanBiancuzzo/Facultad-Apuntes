@@ -41,7 +41,7 @@ Por lo que podemos deducir que para la corriente $I_C$
 Para $I_B$
 1. Inyección de $h^+$ de B a E
 2. Extracción de $h^+$ de C a B (Despreciable por lo mismo que antes)
-3. [[Recombinación]] de $e^-$ provenientes de E con $h^+$ de B (que es despreciable por la hipótesis inicial del transistor)
+3. [[Recombinación|Recombinación]] de $e^-$ provenientes de E con $h^+$ de B (que es despreciable por la hipótesis inicial del transistor)
 
 Para $I_E$ 
 1. Inyección de $e^-$ de E a B ($\sim ~ I_C$)

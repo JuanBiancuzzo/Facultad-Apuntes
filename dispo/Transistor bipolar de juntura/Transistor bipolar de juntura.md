@@ -11,20 +11,19 @@ tags:
 ---
 ### Definición
 ---
-El [[Transistor]] bipolar de juntura es la superposición de tres regiones con [[Dopaje|dopajes]] contrarios, formando dos [[Juntura PN|junturas PN]]. Estas tienen que estar suficientemente juntas como para que los [[Carga eléctrica|portadores]] minoritarios interactúen (pueden difundirse rápido sin [[Recombinación|recombinarse]] en la base). También tiene que estar suficientemente separados como para que las regiones de deserción (SCR) no se solapen (punch-through).
+El [[Transistor]] bipolar de juntura es la superposición de tres regiones con [[Dopaje|dopajes]] contrarios, formando dos [[Juntura PN|junturas PN]]. Estas tienen que estar suficientemente juntas como para que los [[Carga eléctrica|portadores]] minoritarios interactúen (pueden difundirse rápido sin [[Recombinación|recombinarse]] en la base). También tiene que estar suficientemente separados como para que las regiones de deserción (SCR) no se solapen (punch-through)
 
 Al intercambiar el tipo de dopaje, pueden obtenerse dos combinaciones distintas
 
 ##### NPN
 ---
-
 ```tikz
 \usepackage{amssymb}
 \usetikzlibrary{math}
 \usetikzlibrary{calc}
 
 \begin{document} 
-	\begin{tikzpicture}[scale=1.1, transform shape, thick]
+	\begin{tikzpicture}[scale=0.8, transform shape, thick]
 		\begin{scope}[ultra thick]
 			\draw (0, 0) -- ++(-1.8, 0)
 				node[left=2pt] {B};
@@ -79,17 +78,15 @@ Al intercambiar el tipo de dopaje, pueden obtenerse dos combinaciones distintas
 ```
 
 Donde tenemos, por construcción $$ N_{dE} > N_{aB} > N_{dC} $$
-
 ##### PNP
 ---
-
 ```tikz
 \usepackage{amssymb}
 \usetikzlibrary{math}
 \usetikzlibrary{calc}
 
 \begin{document} 
-	\begin{tikzpicture}[scale=1.1, transform shape, thick]
+	\begin{tikzpicture}[scale=0.8, transform shape, thick]
 		\begin{scope}[ultra thick]
 			\draw (0, 0) -- ++(-1.8, 0)
 				node[left=2pt] {B};
@@ -147,6 +144,10 @@ Donde tenemos, por construcción $$ N_{aE} > N_{dB} > N_{aC} $$
 
 Con una estructura
 ![[Transistor NPN.webp]]
+
+#### Curvas características
+---
+![[Curvas características del TBJ.png]]
 
 ### Modos de operación
 ---

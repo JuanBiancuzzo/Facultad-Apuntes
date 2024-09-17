@@ -161,8 +161,8 @@ Donde
 * La zona rallada diagonalmente es la potencia que disipa la carga $R_c$ en alterna dado por $$P_o = \frac{1}{2} ~ \hat{i_o} ~ \hat{v_i}$$ donde $\hat{i_o}$ es la [[Corriente eléctrica|corriente]] pico dado por $\hat{v_i}$ que es la [[Tensión|tensión]] pico de entrada, también llamada excursión
 	* Esta potencia disipada, es entregada por el componente, representado por el triángulo sobre la zona rallada horizontalmente
  
-La [[Señal|señal]] de alterna va a mover el punto de reposo $Q$ por la [[Recta de carga estática de un componente|recta de carga estática]].
+La [[Señal|señal]] de alterna va a mover el punto de reposo $Q$ por la [[Recta de carga dinámica de un componente|recta de carga dinámica]], que en este caso coincide con la [[Recta de carga estática de un componente|recta de carga estática]]
 
-En el caso que excursión sea la máxima posible, es decir que este en el medio entre $0$ y $V_A$, por lo tanto la máxima potencia disipada es $$ P_o = \frac{1}{2} ~ \hat{i}_0 \cdot \frac{1}{2} V_A $$
-Por lo tanto el [[Rendimiento en potencia|rendimiento]] máximo es $$ \eta = \frac{P_o}{P_A} = \frac{1}{4} $$
+En el caso que excursión sea la máxima posible, es decir que este en el medio entre $0$ y $V_A$, por lo tanto la [[Máxima potencia|máxima potencia]] disipada es $$ P_o = \frac{1}{2} ~ \hat{i}_0 \cdot \frac{1}{2} V_A $$
+Por lo tanto el [[Rendimiento en potencia|rendimiento]] [[Máximo|máximo]] es $$ \eta = \frac{P_o}{P_A} = \frac{1}{4} $$
 Es decir, un rendimiento máximo del $25\%$, que es muy bajo, ya que esto es el máximo que puede conseguir

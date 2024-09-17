@@ -3,6 +3,8 @@ dia: 2024-03-23
 tags:
   - circuitos/Circuitos-con-diodos
   - nota/facultad
+aliases:
+  - Curva de carga dinámica de un componente
 ---
 ### Definición
 ---

@@ -110,7 +110,7 @@ Donde se tiene
 * $A_{vo} = \frac{v_{out}}{v_{in}} < 0$ la salida está en contrafase con la entrada
 * $|A_v| = \left| \frac{v_{out}}{v_{in}} \right| > 1$, si el amplificador está bien diseñado
 
-Usando el [[Modelo de pequeña señal del transistor bipolar de juntura#Modelo Modelo para bajas frecuencias|modelo de pequeña señal para baja frecuencia]] y pasivando las [[Fuente de tensión|fuentes de tensión continuas]], tendremos
+Usando el [[Modelo de pequeña señal del transistor bipolar de juntura#Modelo para bajas frecuencias|modelo de pequeña señal para baja frecuencia]] y pasivando las [[Fuente de tensión|fuentes de tensión continuas]], tendremos
 
 
 ```tikz
@@ -175,18 +175,18 @@ Esto se puede pensar como los [[Parámetros híbridos de un cuadripolo|parámetr
 ##### Ganancia de tensión $A_{vo}$
 ---
 La [[Ganancia|ganancia]] de [[Tensión|tensión]] $A_{vo}$ se define sin carga conectada a la salida $$ A_{vo} = \frac{v_{out}}{v_{in}} \biggm|_{i_{out} = 0} $$
-Considerando $v_{in} = v_{be}$ por lo que la ganancia de tensión sin carga es $$ A_{vo} = -g_m (r_0 // R_C) $$ donde $g_m$ es la [[Transconductancia para transistor bipolar de juntura|transconductancia]], y $r_0$ es [[Conductancia de colector|resistencia de salida o de colector]].
+Considerando $v_{in} = v_{be}$ por lo que la ganancia de tensión sin carga es $$ A_{vo} = -g_m (r_0 // R_C) $$ donde $g_m$ es la [[Modelo de pequeña señal del transistor bipolar de juntura#Transconductancia|transconductancia]], y $r_0$ es [[Modelo de pequeña señal del transistor bipolar de juntura#Conductancia de salida o de colector|resistencia de salida o de colector]]
 
 Conociendo $R_{out}$ se puede calcula la ganancia como $$ A_{vo} = -g_m ~ R_{out} $$
 ##### Resistencia de entrada $R_{in}$
 ---
 La [[Resistencia|resistencia]] de entrada $R_{in}$ se define $$ R_{in} = \frac{v_{in}}{i_{in}} $$
-La tensión $v_{in}$ es aplicada directamente en $v_{be}$, entonces se enciende el generador controlado, pero la corriente $g_m ~ v_{be}$ no influye en la [[Corriente eléctrica|corriente]] $i_{in}$, por lo que $$ R_{in} = (r_\pi // R_B) $$ donde $r_\pi$ es la [[Conductancia de base|resistencia de entrada o de base]]
+La tensión $v_{in}$ es aplicada directamente en $v_{be}$, entonces se enciende el generador controlado, pero la corriente $g_m ~ v_{be}$ no influye en la [[Corriente eléctrica|corriente]] $i_{in}$, por lo que $$ R_{in} = (r_\pi // R_B) $$ donde $r_\pi$ es la [[Modelo de pequeña señal del transistor bipolar de juntura#Conductancia de entrada o de base|resistencia de entrada o de base]]
 
 ##### Resistencia de salida $R_{out}$
 ---
 La [[Resistencia|resistencia]] de salida $R_{out}$ se define $$ R_{out} = \frac{v_{out}}{i_{out}} \biggm|_{v_{in} = 0} $$
-El generador controlado no se enciende, recordando que $v_{in} = v_{be}$, por lo que $$ R_{out} = (r_0 // R_C) $$ donde $r_0$ es la [[Conductancia de colector|resistencia de salida o de colector]]
+El generador controlado no se enciende, recordando que $v_{in} = v_{be}$, por lo que $$ R_{out} = (r_0 // R_C) $$ donde $r_0$ es la [[Modelo de pequeña señal del transistor bipolar de juntura#Conductancia de salida o de colector|resistencia de salida o de colector]]
 
 ##### Ganancia de tensión $A_{vs}$
 ---

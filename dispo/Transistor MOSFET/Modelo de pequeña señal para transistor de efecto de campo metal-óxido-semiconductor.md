@@ -4,9 +4,17 @@ aliases:
   - MPS para transistor de efecto de campo metal-óxido-semiconductor
   - MPS para MOSFET
   - Modelo de pequeña señal para MOSFET
+  - Transconductancia para transistor de efecto de campo metal-óxido-semiconductor#Transconductancia
+  - Transconductancia para MOSFET#Transconductancia
+  - Conductancia del drain para transistor de efecto de campo metal-óxido-semiconductor#Conductancia del drain o conductancia de salida
+  - Conductancia de salida para transistor de efecto de campo metal-óxido-semiconductor#Conductancia del drain o conductancia de salida
+  - Conductancia del drain para MOSFET#Conductancia del drain o conductancia de salida
+  - Conductancia de salida para MOSFET#Conductancia del drain o conductancia de salida
+  - Transconductancia del backgate#Transconductancia del backgate
 tags:
   - dispo/Transistor-MOSFET
   - nota/facultad
+  - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
 ---
 ### Definición
 ---
@@ -33,10 +41,7 @@ Por lo que el límite del modelo de pequeña señal depende de la polarización.
 #### Modelo para bajas frecuencias
 ---
 Corriente $i_d$ de pequeña señal $$ i_d \simeq g_m ~ v_{gs} + g_0 ~ v_{ds} + g_{mb} ~ v_{bs} $$
-Definimos: 
-* $g_m \equiv$ [[Transconductancia para transistor de efecto de campo metal-óxido-semiconductor|transconductancia]] $[S]$ ![[Transconductancia para transistor de efecto de campo metal-óxido-semiconductor#^f33d60]]
-* $g_0 \equiv$ [[Conductancia del drain|Conductancia de salida o conductancia del drain]] $[S]$ ![[Conductancia del drain#^479383]]
-* $g_{mb} \equiv$ [[Transconductancia del backgate|transconductancia del backgate]] $[S]$ ![[Transconductancia del backgate#^0500ed]]
+Tomando $i_D$ como $$ i_D = \frac{1}{2} \frac{W}{L} (v_{GS} - V_T)^2 (1 + \lambda v_{DS}) $$ donde tomamos como punto de polarización $Q$ en  $(V_{GS}, V_{DS}, V_{BS})$
 
 Dándonos el modelo completo que pequeña señal a baja frecuencia 
 
@@ -87,6 +92,29 @@ Dándonos el modelo completo que pequeña señal a baja frecuencia
 	\end{circuitikz}
 \end{document}
 ```
+
+##### Transconductancia
+---
+La transconductancia $g_m \equiv [S]$ $$ g_m = \frac{\partial i_D}{\partial v_{GS}} \biggm|_{Q} = \frac{W}{L} \mu C'_{ox} (V_{GS} - V_T) (1 + \lambda V_{DS}) = \sqrt{2 \frac{W}{L} \mu_n C'_{ox} I_D} = 2\sqrt{k I_D} $$ 
+##### Conductancia del drain o conductancia de salida
+---
+Conductancia del drain o conductancia de salida $g_0 \equiv [S]$ $$ g_0 = \frac{\partial i_D}{\partial v_{DS}} \biggm|_{Q} = \frac{1}{2} \frac{W}{L} (v_{GS} - V_T)^2 \lambda = I_{D ~ (sat)} \lambda \propto \frac{I_{D ~ (sat)}}{L} $$ 
+###### Validez
+---
+Es válido mientras $$ v_{ds} < V_{DSQ} - V_{DS ~ (sat)} $$ es decir, mientras el [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] esté polarizado en el [[Saturación del transistor de efecto de campo metal-óxido-semiconductor|régimen de saturación]] 
+
+##### Transconductancia del backgate
+---
+Transconductancia del backgate $g_{mb} \equiv [S]$, Recordando que $V_T(v_{BS})$ donde $V_T$ es la [[Tensión umbral#Para un Transistor de efecto de campo metal-óxido-semiconductor (MOSFET) MOSFET|tensión umbral]] tenemos que  $$ \begin{matrix} 
+	g_{mb} = \frac{\partial i_D}{\partial v_{BS}} \biggm|_{Q} = \frac{W}{L} (v_{GS} - V_T(v_{BS})) (1 + \lambda v_{DS}) \left( - \frac{\partial V_T}{\partial v_{BS}} \biggm|_{Q} \right) \\
+	g_{mb} = g_m \left( - \frac{\partial V_T}{\partial v_{BS}} \biggm|_{Q} \right)
+\end{matrix} $$
+
+Recordando que $$ V_T(V_{BS}) = V_{T0} + \gamma ~ \left( \sqrt{-2 \phi_p - V_{BS}} - \sqrt{-2 \phi_p} \right) $$ resulta $$ g_{mb} = g_m \frac{\gamma}{2 \sqrt{-2\phi_p - V_{BS}}} $$ donde $\gamma$ es [[Body factor coefficient|body factor coefficient]]
+
+###### Validez
+---
+Es válido mientras (esta mal según pipe pero no esta confiado que es este el que esta mal) $$ v_{bs} < 0.4 ~ (V_{GS} - V_T) (-2\phi_p - V_{BS}) $$
 
 #### Modelo para altas frecuencias
 ---

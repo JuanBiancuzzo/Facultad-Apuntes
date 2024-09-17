@@ -101,7 +101,7 @@ Esto se puede pensar como los [[Parámetros híbridos de un cuadripolo|parámetr
 ##### Ganancia de tensión $A_{vo}$
 ---
 La [[Ganancia|ganancia]] de [[Tensión|tensión]] $A_{vo}$ se define sin carga conectada a la salida $$ A_{vo} = \frac{v_{out}}{v_{in}} \biggm|_{i_{out} = 0} $$
-Considerando $v_{in} = v_{gs}$ por lo que la ganancia de tensión sin carga es $$ A_{vo} = -g_m (r_0 // R_C) $$ donde $g_m$ es la [[Transconductancia para transistor de efecto de campo metal-óxido-semiconductor|transconductancia]], y $r_0$ es [[Conductancia del drain|resistencia de salida o del drain]].
+Considerando $v_{in} = v_{gs}$ por lo que la ganancia de tensión sin carga es $$ A_{vo} = -g_m (r_0 // R_C) $$ donde $g_m$ es la [[Modelo de pequeña señal para transistor de efecto de campo metal-óxido-semiconductor##Transconductancia|transconductancia]], y $r_0$ es [[Modelo de pequeña señal para transistor de efecto de campo metal-óxido-semiconductor#Conductancia del drain o conductancia de salida|resistencia de salida o del drain]]
 
 ##### Resistencia de entrada $R_{in}$
 ---

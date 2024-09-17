@@ -32,6 +32,32 @@ Los [[Microcontrolador|microcontroladores]] generalmente combinan sus puertos en
 
 La gran mayoría de los puertos de entrada/salida en los microcontroladores se puede settear como entrada o salida, esto se tiene que configurar lo antes posible para que se ejecute cuando arranque o se este reseteando el microcontrolador
 
+##### Hardware en la placa STM32
+---
+Veamos el diagrama de bloques, que también contiene esquemas que modelan un pin de puerto GPIO típico
+
+![[GPIO en la placa STM32.png]]
+
+Podemos ver que el pin de entrada/salida, que tiene conectados circuitos robustos de [[Sensor#Protección|protección contra sobretensiones]]
+
+El pin GPIO está protegido hasta un nivel de entrada aplicado de $5~V$ a pesar de que el suministro de voltaje principal de la [[Microcontrolador|MCU]] es de $3.3~V$ y los voltajes del [[Procesador|procesador]] central son de $1.8~V$ 
+
+Esto hace que la interfaz sea bastante sensilla sin la necesidad de emplear cambiadores de nivel de voltaje. O divisores de voltaje de resistencia
+
+La inspección de la sección del controlador de entrada revela tres posibles entradas que pueden enviarse a la MCU central son
+* Analog
+    * Bypasses de [[Schmitt trigger|Schmitt trigger]]
+* Alternate function
+    * Schmitt trigger output
+* Read
+    * Salida de una de las líneas de registro de lectura asociada
+
+Asimismo, la sección de salida tiene múltiples formas de crear una salida de señal para el pin de entrada/salida son
+* Write
+    * Salida de una línea de registro de escritura asociada. El registro de salida también tiene un línea de control Read/Write
+* Alternate function
+    * Generada desde un periférico MCU interno
+
 #### Output
 ---
 Los pins individuales de salida tiene dos posibles [[Tensión|tensiones]] de salida dependiendo de como este setteado el pin

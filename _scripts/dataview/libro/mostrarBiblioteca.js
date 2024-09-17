@@ -1,4 +1,4 @@
 const { tag } = input;
 
-console.log(dv.pages(`#${tag}`));
-dv.table(["Nombre"], dv.pages(`#${tag}`).map(a => [a.file.name]));
+console.log(dv.pages(`#biblioteca/${tag}`));
+dv.table(["Nombre"], dv.pages(`#biblioteca/${tag}`).map(a => [a.file.name]));
