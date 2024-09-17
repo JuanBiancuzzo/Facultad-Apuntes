@@ -5,7 +5,7 @@ tags:
   - nota/facultad
 aliases:
   - PWM
-  - Modulación por ancho de pulsos
+  - Pulse Width Modulation
 referencias:
   - "241"
 ---
