@@ -2,22 +2,21 @@
 dia: 2024-09-12
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 250
-tituloObra: How Emotions Are Made
+numReferencia: 245
+tituloObra: Fooled by Randomness
 nombreAutores:
-  - apellido: Feldman Barrett
-    nombre: Lisa
-anio: "2017"
-editorial: Houghton Mifflin Hardcourt
+  - apellido: Taleb
+    nombre: Nissim Nicholas
+anio: "2001"
+editorial: Random House
 edicion: 
 volumen: 
 url: 
 capitulos: 
-cover: How Emotions Are Made de Lisa Feldman Barrett.jpg
 aliases: 
 tags:
   - referencia/libro
-  - Biblioteca
+  - biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

@@ -2,23 +2,23 @@
 dia: 2024-09-12
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 244
-tituloObra: The almanack of Naval Ravikant
+numReferencia: 248
+tituloObra: Thinking, Fast and Slow
 nombreAutores:
-  - apellido: Jorgenson
-    nombre: Eric
-anio: "2020"
-editorial: Magrathea Publishing
+  - apellido: Kahneman
+    nombre: Daniel
+anio: "2011"
+editorial: Farrar, Straus and Giroux
 edicion: 
 volumen: 
 url: 
-capitulos: []
-cover: The almanack of Naval Ravikant de Eric Jorgenson.jpg
-aliases: []
-tags: 
- - referencia/libro
- - Biblioteca
- - nota/investigacion
+capitulos: 
+cover: Thinking, Fast and Slow de Daniel Kahneman.jpg
+aliases: 
+tags:
+  - referencia/libro
+  - biblioteca/libro
+  - nota/investigacion
 ---
 ```dataviewjs
 	let actual = dv.current();

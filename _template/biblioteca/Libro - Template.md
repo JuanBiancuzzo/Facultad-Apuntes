@@ -64,7 +64,7 @@
 		.map(infoCapitulo => describir.capitulo(infoLibro, infoCapitulo));
 	tR += `aliases: ${tp.obsidian.stringifyYaml(aliases)}`;
 
-	tR += `tags: \n - referencia/${tipoCita.toLowerCase()}\n - Biblioteca\n - nota/investigacion\n`;
+	tR += `tags: \n - referencia/${tipoCita.toLowerCase()}\n - biblioteca/libro\n - nota/investigacion\n`;
 	tR += "---";
 
 	async function dataLibroAPI(titulo, autore) {
@@ -108,7 +108,7 @@
 			return "";
 		}
 
-		const path = app.vault.adapter.basePath + `\\libros\\covers\\${nombreImagen}`;
+		const path = app.vault.adapter.basePath + `\\biblioteca\\libros\\covers\\${nombreImagen}`;
 		const fileStream = fs.createWriteStream(path);		
 		const writableStream = new WritableStream({
 			write(chunk) {

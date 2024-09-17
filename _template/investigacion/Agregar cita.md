@@ -1,5 +1,5 @@
 <%*
-    const dv = app.plugins.plugins["dataview"].api;
+    const dv = app.plugins.plugins.dataview.api;
     let path = tp.file.path(true);
 
     let archivo = dv.page(path);

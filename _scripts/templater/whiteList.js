@@ -22,8 +22,9 @@ function whiteListArchivoProyecto(archivoPath) {
 }
 
 function whiteListArchivoLibro(archivoPath) {
-    let root = archivoPath.split("/")[0];
-    return root == "libros";
+    const dv = app.plugins.plugins.dataview.api;
+    const itemBiblioteca = dv.pages("#biblioteca/libro").map(item => item.file.folder);
+    return itemBiblioteca.some(item => archivoPath.startsWith(item));
 }
 
 function whiteListArchivoComida(archivoPath) {

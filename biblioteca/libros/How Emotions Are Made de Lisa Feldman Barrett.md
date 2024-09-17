@@ -2,23 +2,23 @@
 dia: 2024-09-12
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 248
-tituloObra: Thinking, Fast and Slow
+numReferencia: 250
+tituloObra: How Emotions Are Made
 nombreAutores:
-  - apellido: Kahneman
-    nombre: Daniel
-anio: "2011"
-editorial: Farrar, Straus and Giroux
+  - apellido: Feldman Barrett
+    nombre: Lisa
+anio: "2017"
+editorial: Houghton Mifflin Hardcourt
 edicion: 
 volumen: 
 url: 
-capitulos: []
-cover: Thinking, Fast and Slow de Daniel Kahneman.jpg
-aliases: []
-tags: 
- - referencia/libro
- - Biblioteca
- - nota/investigacion
+capitulos: 
+cover: How Emotions Are Made de Lisa Feldman Barrett.jpg
+aliases: 
+tags:
+  - referencia/libro
+  - biblioteca/libro
+  - nota/investigacion
 ---
 ```dataviewjs
 	let actual = dv.current();

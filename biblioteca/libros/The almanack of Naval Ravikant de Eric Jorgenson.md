@@ -2,23 +2,23 @@
 dia: 2024-09-12
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 249
-tituloObra: How we learn
+numReferencia: 244
+tituloObra: The almanack of Naval Ravikant
 nombreAutores:
-  - apellido: Dehaene
-    nombre: Stanislas
+  - apellido: Jorgenson
+    nombre: Eric
 anio: "2020"
-editorial: Viking
+editorial: Magrathea Publishing
 edicion: 
 volumen: 
 url: 
-capitulos: []
-cover: How we learn de Stanislas Dehaene.jpg
-aliases: []
-tags: 
- - referencia/libro
- - Biblioteca
- - nota/investigacion
+capitulos: 
+cover: The almanack of Naval Ravikant de Eric Jorgenson.jpg
+aliases: 
+tags:
+  - referencia/libro
+  - biblioteca/libro
+  - nota/investigacion
 ---
 ```dataviewjs
 	let actual = dv.current();

@@ -12,7 +12,7 @@ tags:
 ```
 ### Definición
 ---
-Debes utilizar el estilo de cita de páginas web si no hay otra categoría de referencia que se ajuste más específicamente al tipo de trabajo que quieras citar.
+Debes utilizar el estilo de cita de páginas web si no hay otra categoría de referencia que se ajuste más específicamente al tipo de trabajo que quieras citar
 
 * Página web con contenido estático
 	* Apellido, A., Apellido, B., y Apellido, C. (20 de mayo de 2020). __Título del artículo de la página web__. Nombre del sitio web. https://url.com

@@ -2,22 +2,22 @@
 dia: 2024-09-12
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 246
-tituloObra: How to lie with statistics
+numReferencia: 247
+tituloObra: The Body Keeps the Score
 nombreAutores:
-  - apellido: Geis
-    nombre: Irving
-anio: "1954"
-editorial: W. W. Norton & Company
+  - apellido: van der Kolk
+    nombre: Bessel
+anio: "2014"
+editorial: Viking Press
 edicion: 
 volumen: 
 url: 
 capitulos: 
-cover: How to lie with statistics de Irving Geis.jpg
+cover: The Body Keeps the Score de Bessel van der Kolk.jpg
 aliases: 
 tags:
   - referencia/libro
-  - Biblioteca
+  - biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

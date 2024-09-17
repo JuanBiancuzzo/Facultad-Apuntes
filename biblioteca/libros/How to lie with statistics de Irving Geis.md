@@ -2,22 +2,23 @@
 dia: 2024-09-12
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 245
-tituloObra: Fooled by Randomness
+numReferencia: 246
+tituloObra: How to lie with statistics
 nombreAutores:
-  - apellido: Taleb
-    nombre: Nissim Nicholas
-anio: "2001"
-editorial: Random House
+  - apellido: Geis
+    nombre: Irving
+anio: "1954"
+editorial: W. W. Norton & Company
 edicion: 
 volumen: 
 url: 
-capitulos: []
-aliases: []
-tags: 
- - referencia/libro
- - Biblioteca
- - nota/investigacion
+capitulos: 
+cover: How to lie with statistics de Irving Geis.jpg
+aliases: 
+tags:
+  - referencia/libro
+  - biblioteca/libro
+  - nota/investigacion
 ---
 ```dataviewjs
 	let actual = dv.current();

@@ -2,23 +2,23 @@
 dia: 2024-09-12
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 247
-tituloObra: The Body Keeps the Score
+numReferencia: 249
+tituloObra: How we learn
 nombreAutores:
-  - apellido: van der Kolk
-    nombre: Bessel
-anio: "2014"
-editorial: Viking Press
+  - apellido: Dehaene
+    nombre: Stanislas
+anio: "2020"
+editorial: Viking
 edicion: 
 volumen: 
 url: 
-capitulos: []
-cover: The Body Keeps the Score de Bessel van der Kolk.jpg
-aliases: []
-tags: 
- - referencia/libro
- - Biblioteca
- - nota/investigacion
+capitulos: 
+cover: How we learn de Stanislas Dehaene.jpg
+aliases: 
+tags:
+  - referencia/libro
+  - biblioteca/libro
+  - nota/investigacion
 ---
 ```dataviewjs
 	let actual = dv.current();

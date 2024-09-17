@@ -73,7 +73,7 @@ async function generarCita(tp, numReferencia) {
 
     if (tipoCita == TIPO_LIBRO) {
         template = tp.file.find_tfile("Libro - Template");
-        carpeta = app.vault.getAbstractFileByPath("libros");
+        carpeta = app.vault.getAbstractFileByPath("biblioteca/libros");
     }
 
     return await tp.file.create_new(
