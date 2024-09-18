@@ -10,7 +10,7 @@ aliases:
 ---
 ### Definición
 ---
-Una interrupción es una señal asincrónica enviada hacia el [[Procesador|procesador]] de que algún evento externo ha sucedido y pueda requerir de la atención del mismo
+Una interrupción es una [[Señal|señal]] asincrónica enviada hacia el [[Procesador|procesador]] de que algún evento externo ha sucedido y pueda requerir de la atención del mismo
 
 Las fuentes de posibles interrupciones de [[Hardware|hardware]] son todas las interfaces programables a las que sirve el procesador; por ejemplo, una interfaz serie que está lista para enviar o recibir un datos, un cambio de nivel de [[General Purpose Input Output|GPIO]], un [[Paquete|paquete]] de datos que se recibe en una [[Red|red]], un temporizador que detecta un tiempo específico, etc.
 

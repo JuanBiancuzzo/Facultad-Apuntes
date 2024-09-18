@@ -42,11 +42,10 @@ let datos = dv.pages(`"${materia.file.folder}" and #resumen`)
     });
 
 for (let { resumen, archivos } of datos) {
-
-    dv.header(3, resumen.file.folder.split("/").pop());
-    dv.el("hr", "");
-
+    let nombreTema = resumen.file.folder.split("/").pop();
+    dv.el("div", `<h3> ${nombreTema} </h3> <hr>`);
     dv.paragraph(`> [!summary]- Resumen\n> ![[${resumen.file.path}#Resumen]]`);
+
     let mostrar = archivos.map(({ path, nombre, aliases }) => {
         let mostrarAliases = "";
         if (aliases.length > 0) {
@@ -59,9 +58,9 @@ for (let { resumen, archivos } of datos) {
 
         return `<div class="${clase}"> ${crearReferencia(path, nombre)} ${mostrarAliases} </div>`;
     }).join("");
+    
 
-    dv.el("div", `<div class="grilla"> ${mostrar} </div>`);
-    dv.el("br", "");
+    dv.el("div", `<div class="grilla"> ${mostrar} </div><br>`);
 }
 
 function crearReferencia(path, texto) {

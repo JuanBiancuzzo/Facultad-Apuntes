@@ -37,11 +37,3 @@
     margin: 0;
     padding: 0;
 }
-
-.capitulo {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0; 
-    padding: 10px;
-    transition: transform 0.3s ease-in-out;
-}

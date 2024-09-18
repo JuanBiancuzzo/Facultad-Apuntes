@@ -7,8 +7,8 @@ tags:
 ### Definición
 ---
 Es una [[Serie|serie]] donde $$ \sum_{n = - \infty}^{\infty} c_n \cdot (z - z_0)^n $$
-Donde sus partes son:
-1) Para cada $n \in \mathbb{Z}$, $c_n$ es un numero complejo denominado coeficiente n-ésimo de la serie de Laurent. Estos coeficientes forman una [[Sucesión|sucesión]] $(c_n)^{\infty}_{n = -\infty}$.
+Donde sus partes son
+1) Para cada $n \in \mathbb{Z}$, $c_n$ es un numero complejo denominado coeficiente $n$-ésimo de la serie de Laurent. Estos coeficientes forman una [[Sucesión|sucesión]] $(c_n)^{\infty}_{n = -\infty}$.
 2) $z_0$ es un numero complejo, denominado centro de la serie
 3) $z$ es un numero complejo variable. Esto sugiere que puede haber una función $f : D \to \mathbb{C}$ definida por $f(z) =  \displaystyle\sum_{n = - \infty}^{\infty} c_n \cdot (z - z_0)^n$ para cada $z \in D$, siendo $D \subset \mathbb{D}$ un dominio de convergencia.
 4) ![[Serie principal de Laurent#Definición]]
