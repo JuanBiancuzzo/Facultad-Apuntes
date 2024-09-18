@@ -1,10 +1,10 @@
-# Apuntes
+### Apuntes
 ---
 Voy a ir poniendo mis apuntes acá, y estoy usando [Obsidian](https://obsidian.md) para escribir y crear los vínculos entre las páginas por lo que es recomendable para poder navegar los apuntes.
 
 Cualquier corrección/ampliación de los contenidos en este proyecto, por favor hacer un [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) para poder visualizar los cambios pedidos. En el caso de sugerir cualquier cosa, por favor crear un [issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue) donde ahí lo podré ver. 
 
-## Materias
+#### Materias
 ---
 Un listado de materias y su estado actual
 
@@ -39,7 +39,7 @@ Un listado de materias y su estado actual
 | [Taller de programación 1](taller/Taller%20de%20programación%201%20(9508).md)                                  | 9508   | Falta pasar las presentaciones de los últimos temas |
 | [Taller de sistemas embebidos](embebidos/Taller%20de%20sistemas%20embebidos%20(TA134).md)                      | TA134  | Voy a cursarla este cuatri                          |
 
-## Investigación
+#### Investigación
 ---
 Un listado de los temas investigados y su estado actual
 
@@ -68,19 +68,19 @@ Un listado de los temas investigados y su estado actual
 | [Reglas APA](reglas%20APA/Índice.md)                                 | Falta resumir |
 | [Storytelling](storytelling/Índice.md)                               | Falta resumir |
 
-## Proyectos
+#### Proyectos
 ---
 Un listado de los proyectos y su estado actual
 
 | Proyecto                                                                                                                                                    | Estado           |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
 | [Primer proyecto de robótica - Auto remoto](primer%20proyecto%20de%20robótica%20-%20auto%20remoto/Primer%20proyecto%20de%20robótica%20-%20Auto%20remoto.md) | En proceso       |
-| [Porfolio](porfolio/Porfolio.md)                                                                                                                            | Sin empezar      |
 | [Plugins de Obsidian](plugins%20de%20obsidian/Plugins%20de%20Obsidian.md)                                                                                   | Sin empezar      |
+| [Porfolio](porfolio/Porfolio.md)                                                                                                                            | Sin empezar      |
 | [Better animations in my humble opinion](better%20animations%20in%20my%20humble%20opinion/Better%20animations%20in%20my%20humble%20opinion.md)              | Sin empezar      |
 | [Obsidian Static Site Generator](obsidian%20static%20site%20generator/Obsidian%20Static%20Site%20Generator.md)                                              | Recién empezando |
 
-## Subproyectos
+#### Subproyectos
 ---
 Tenemos los subproyectos específicos que son
 
@@ -88,7 +88,7 @@ Tenemos los subproyectos específicos que son
 | ------------------------------------ | ---------------------------------------------------------------------------------- |
 | [Biblioteca](Biblioteca%20propia.md) | Tiene la intención de colectar libros que me interese analizar y poder referenciar |
 
-## Contribuidores
+#### Contribuidores
 ---
 * Juan Ignacio Biancuzzo
 * Felipe Perassi

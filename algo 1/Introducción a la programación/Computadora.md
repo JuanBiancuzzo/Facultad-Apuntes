@@ -7,7 +7,7 @@ tags:
 ---
 # Definición
 ---
-Una computadora es un dispositivo que puede aceptar instrucciones humanas, las procesa y responde a ellas; o una computadora es un dispositivo informático que se utiliza para procesar datos bajo el control de un [[Programa|programa]] de computadora
+Una computadora es un dispositivo que puede aceptar instrucciones humanas, las procesa y responde a ellas; o una computadora es un dispositivo informático que se utiliza para procesar datos bajo el control de un [[Programa|programa]] de computadora ^743ae8
 
 ## Partes fundamentales
 ---
