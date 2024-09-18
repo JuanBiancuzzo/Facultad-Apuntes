@@ -23,7 +23,7 @@ Podemos notar que $|A_v| \gg 1$ y $A_v < 0$, entonces tenemos que para un [[Resi
 
 Para [[Inductor|inductores]] y [[Capacitor|capacitores]] $$ \begin{align} 
 	z_f^* &\approx \frac{j \omega L}{|A_v|} \\
-	z_f^* &\approx \frac{1}{j \omega \omega |A_v|} \\
+	z_f^* &\approx \frac{1}{j \omega |A_v|} \\
 \end{align} $$ donde disminuye o aumenta $|A_v|$ veces, respectivamente
 
 También en el caso de que $A_v > 0$, entonces $$ Z_f^* \approx -\frac{Z_f}{A_v - 1} $$ por lo que tenemos una impedancia negativa, que tiene sentido al ser a partir de un dispositivo activo
