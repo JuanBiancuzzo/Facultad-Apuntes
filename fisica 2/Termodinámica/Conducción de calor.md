@@ -6,7 +6,7 @@ tags:
 aliases:
   - Ley de Fourier
 ---
-### Definición
+# Definición
 ---
 La ley de Fourier que establece que 
 

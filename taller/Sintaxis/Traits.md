@@ -4,7 +4,7 @@ tags:
   - taller/Sintaxis
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 `trait` permite definir comportamiento común a las estructuras, similar a las interfaces en otros lenguajes. Representa una capacidad, algo que un [[Tipo de dato|tipo de dato]], [[Estrucutura|estructura]] o [[Enum|enum]] puede hacer.
 

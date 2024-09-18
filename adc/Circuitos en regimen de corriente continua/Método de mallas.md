@@ -4,7 +4,7 @@ tags:
   - adc/Circuitos-en-regimen-de-corriente-continua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En el análisis por [[Malla|mallas]] interesa hallar las [[Corriente eléctrica|corrientes]] de mallas (diferentes a las corrientes de los elementos) sobre [[Circuito eléctrico|circuitos]] [[Grafo planar|planares]]. Dado un circuito con $n$ mallas sin [[Fuente de corriente|fuentes de corriente]], el análisis por mallas del circuito implica los pasos siguientes:
 

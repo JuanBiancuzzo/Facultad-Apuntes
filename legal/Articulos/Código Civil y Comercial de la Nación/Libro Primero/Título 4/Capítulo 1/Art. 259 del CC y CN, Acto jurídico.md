@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El acto jurídico es el acto voluntario lícito que tiene por fin inmediato la adquisición, modificación o extinción de [[Relación jurídica|relaciones]] o [[Situación jurídica|situaciones jurídicas]]."
 
-### Interpretación
+# Interpretación
 ---

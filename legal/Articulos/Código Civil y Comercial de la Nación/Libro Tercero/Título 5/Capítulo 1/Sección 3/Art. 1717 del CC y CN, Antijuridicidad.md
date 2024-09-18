@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Cualquier acción u omisión que causa un daño a otro es antijurídica si no está justificada."
 
-### Interpretación
+# Interpretación
 ---

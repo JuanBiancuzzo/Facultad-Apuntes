@@ -4,12 +4,12 @@ tags:
   - redes/Redes-de-computadoras
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 
 
 
-#### Desde la red
+## Desde la red
 ---
 [[Internet|Internet]] como una infraestructura que proporciona servicios a las [[Aplicación|aplicaciones]]. Se dice que las aplicaciones son distribuidas porque implican a varios [[Host|hosts]] que intercambian datos entre sí
 

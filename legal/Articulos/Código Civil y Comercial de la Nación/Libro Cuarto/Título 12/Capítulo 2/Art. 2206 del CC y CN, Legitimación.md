@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Cuarto/
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Pueden constituir hipoteca los titulares de los derechos reales de dominio, condominio, propiedad horizontal, conjuntos inmobiliarios y superficie."
 
-### Interpretación
+# Interpretación
 ---

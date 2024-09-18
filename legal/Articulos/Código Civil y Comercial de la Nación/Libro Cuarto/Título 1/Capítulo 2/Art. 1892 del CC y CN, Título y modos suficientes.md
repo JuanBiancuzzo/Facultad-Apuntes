@@ -20,7 +20,7 @@ previo: "[[Capítulo 2, Adquisición, transmisión, extinción y oponibilidad|Ca
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La adquisición derivada por actos entre vivos de un derecho real requiere la concurrencia de título y modo suficientes.
 
@@ -35,7 +35,7 @@ El primer uso es modo suficiente de adquisición de la servidumbre positiva.
 Para que el título y el modo sean suficientes para adquirir un derecho real, sus otorgantes deben ser capaces y estar legitimados al efecto.
 A la adquisición por causa de muerte se le aplican las disposiciones del [[Libro 5, Transmisión de derechos por causa de muerte|Libro Quinto]]."
 
-### Interpretación
+# Interpretación
 ---
 
 

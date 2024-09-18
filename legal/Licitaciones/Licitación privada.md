@@ -4,7 +4,7 @@ tags:
   - legal/Licitaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Existe cuando los participantes son sólo aquellos que la Administración determine e invita en forma personal.
 
@@ -15,6 +15,6 @@ Esta caracterizado ([[Art. 25 del APA, Procedimientos de selección|art. 25]]) p
 * Criterio de selección del cocontratante recae primordialmente en factores económicos
 * Se puede realizar cuando el monto estimado del contrato fuere de hasta 15 millones
 
-#### Clases
+## Clases
 ---
 ![[Art. 26 del APA, Clases de licitaciones y concursos públicos#Artículo]]

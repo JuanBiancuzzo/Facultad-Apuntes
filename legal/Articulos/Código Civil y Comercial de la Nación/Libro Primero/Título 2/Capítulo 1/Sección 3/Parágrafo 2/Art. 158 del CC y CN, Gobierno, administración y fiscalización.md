@@ -17,7 +17,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El estatuto debe contener normas sobre el gobierno, la administración y representación y, si la ley la exige, sobre la fiscalización interna de la persona jurídica.
 
@@ -26,5 +26,5 @@ En ausencia de previsiones especiales rigen las siguientes reglas:
  a. si todos los que deben participar del acto lo consienten, pueden participar en una asamblea o reunión del órgano de gobierno, utilizando medios que les permitan a los participantes comunicarse simultáneamente entre ellos. El acta debe ser suscripta por el presidente y otro administrador, indicándose la modalidad adoptada, debiendo guardarse las constancias, de acuerdo al medio utilizado para comunicarse;
  b. los miembros que deban participar en una asamblea, o los integrantes del consejo, pueden autoconvocarse para deliberar, sin necesidad de citación previa. Las decisiones que se tomen son válidas, si concurren todos y el temario a tratar es aprobado por unanimidad."
 
-### Interpretación
+# Interpretación
 ---

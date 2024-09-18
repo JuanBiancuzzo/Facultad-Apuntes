@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El contrato de locación de cosa inmueble o mueble registrable, de una universalidad que incluya a alguna de ellas, o de parte material de un inmueble, debe ser hecho por escrito.  Esta regla se aplica también a sus prórrogas y modificaciones."
 
-### Interpretación
+# Interpretación
 ---

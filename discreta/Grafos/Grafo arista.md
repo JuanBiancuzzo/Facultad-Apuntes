@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado el [[Grafo|grafo]] sin [[Lazo|lazos]] $G$, se define su grafo arista $L$ como el grafo tal que sus [[Nodo|vértices]] sean las aristas de $G$, y dos vértices son adyacentes si y solo si sus aristas asociadas al grafo original indician sobre el mismo vértice
 

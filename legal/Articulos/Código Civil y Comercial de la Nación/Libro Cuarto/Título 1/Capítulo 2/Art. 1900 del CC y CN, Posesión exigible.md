@@ -8,9 +8,9 @@ previo: "[[Capítulo 2, Adquisición, transmisión, extinción y oponibilidad|Ca
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La posesión para prescribir debe ser ostensible y continua."
 
-### Interpretación
+# Interpretación
 ---

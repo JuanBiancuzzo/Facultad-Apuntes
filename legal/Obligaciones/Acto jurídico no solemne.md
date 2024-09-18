@@ -4,7 +4,7 @@ tags:
   - legal/Obligaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los actos no solemnes requieren el cumplimiento de las formalidades exigidas por la ley sólo como medio de prueba (ad probationem), por ejemplo, la compraventa inmobiliaria que requiere para su perfeccionamiento de escritura pública. 
 

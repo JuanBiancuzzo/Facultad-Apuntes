@@ -6,7 +6,7 @@ tags:
 aliases:
   - RISC
 ---
-### Definición
+# Definición
 ---
 Todas las instrucciones ocupan el mismo espacio y es más rápido. Tiene más registros disponibles, ya que todo debe estar en ellos para operar. Para utilizar el [[Stack|stack]], se debe hacer de forma manual. Su set de instrucciones es más reducido, no contiene instrucciones redundantes
 

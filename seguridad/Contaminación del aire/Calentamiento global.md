@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-aire
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los gases de efecto invernadero forman un "escudo" que atrapa localmente parte de la energía irradiada. 
 

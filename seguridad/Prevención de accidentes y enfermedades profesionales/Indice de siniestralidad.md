@@ -4,22 +4,22 @@ tags:
   - seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un registro de [[Accidente de trabajo|accidentes]] e [[Incidente de trabajo|incidentes]] en el funcionamiento de una actividad de producción o servicio.
 
 Se caracteriza por 3 indices:
 
-##### Indice de frecuencia (IF)
+### Indice de frecuencia (IF)
 $$ IF = \frac{1.000.000~ \cdot \text{Número de accidentes}}{\text{Hs hombre trabajadas}} $$
 
-##### Indice de incidencia (II)
+### Indice de incidencia (II)
 $$ II = \frac{1.000~ \cdot \text{Número de accidentes}}{\text{Número promedio de trabajadores en el período}} $$
 
-##### Indice de gravedad (IG)
+### Indice de gravedad (IG)
 $$ IG = \frac{1.000~ \cdot \text{Total de días perdidos}}{\text{Hs hombre trabajadas}} $$
 
-#### Cómo se utilizan los índices
+## Cómo se utilizan los índices
 ---
 Primero se compara con la [[Mediana|media]] del sector
 * La SRT determina los índices de siniestralidad para un determinado período y por sector de actividad.

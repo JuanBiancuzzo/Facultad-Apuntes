@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-ambiente-laboral
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Ley de harber: el producto de la concentración por el tiempo es una constante (constante del mismo efecto) 
 $$ K = c \cdot t $$

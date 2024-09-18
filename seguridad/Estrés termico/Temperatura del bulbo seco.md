@@ -4,6 +4,6 @@ tags:
   - seguridad/Estrés-termico
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la [[Temperatura]] del aire que registra con un sensor térmico protegido de las [[Radiación|radiaciones]].

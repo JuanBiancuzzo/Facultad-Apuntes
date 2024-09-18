@@ -4,7 +4,7 @@ tags:
   - dispo/Dispositivos-de-potencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El tiristor o SCR (Silicon Controlled Rectifier) es uno de los principales dispositivos de [[Potencia|potencia]]. Consiste en un sandwich PNPN:
 
@@ -19,7 +19,7 @@ Donde se puede analizar como dos [[Transistor bipolar de juntura|TBJ]]s
 * Al forzar $I_G$ $(I_{B2})$ se genera una realimentación positiva que mantiene al dispositivo en conducción
 * Para cesar la conducción se requiere quitar la [[Corriente eléctrica|corriente]] de ánodo a cátodo.
 
-#### Curva característica
+## Curva característica
 ---
 Veamos la [[Curva característica de un componente|curva característica]] del tiristor
 
@@ -37,7 +37,7 @@ Para forzar el estado de conducción
 * Luz: Aumenta la corriente de fuga
 * $\frac{dV}{dt}$: Por efecto [[Capacitancia|capacitivo]], aumenta la corriente a través del dispositivo
 
-#### Zona segura de operación
+## Zona segura de operación
 ---
 ![[Zona segura de operación del Tiristor.webp]]
 

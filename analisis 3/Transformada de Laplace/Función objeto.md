@@ -4,12 +4,12 @@ tags:
   - analisis-3/Transformada-de-Laplace
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Indicaremos con $\mathbb{O}$ el [[Conjunto|conjunto]] de funciones $f : \mathbb{R} \to \mathbb{C}$ [[Seccionalmente continua|seccionalmente continua]], [[Sistema causal|causal]] y de [[Orden exponencial|orden exponencial]]. 
 
 
-### Proposición
+# Proposición
 ---
 1) $\mathbb{O}$ es un [[Espacio vectorial|espacio vectorial]] complejo de dimensión infinita, con las operaciones habituales de suma y producto por escalar
 2) $\mathbb{O}$ es cerrado sobre el producto

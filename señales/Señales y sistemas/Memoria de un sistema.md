@@ -4,7 +4,7 @@ tags:
   - señales/Señales-y-sistemas
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se puede clasificar un [[Sistema|sistema]] con tener memoria o no. Se dice que un sistema no tiene memoria cuando su salida en tiempo $t$ depende solamente de su entrada en el tiempo $t$. 
 

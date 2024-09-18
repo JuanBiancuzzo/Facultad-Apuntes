@@ -4,7 +4,7 @@ tags:
   - aninfo/Verificación-y-validación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 
 ```tikz

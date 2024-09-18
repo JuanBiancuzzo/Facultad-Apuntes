@@ -4,12 +4,12 @@ tags:
  - legal/Derechos-comerciales-y-sociales
  - resumen
 ---
-### Índice 
+# Índice 
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 ```
 
-### Resumen
+# Resumen
 ---
 Pendiente...

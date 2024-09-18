@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Propiedades-de-funciones
 ---
-### Definición
+# Definición
 ---
 Sea $f: U \subseteq \mathbb{R}^n \to \mathbb{R}$ una [[Función|función]] definida en el abierto $U$ de $\mathbb{R}^n$ 
 

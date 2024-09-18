@@ -4,7 +4,7 @@ tags:
   - analisis-3/Topología-del-plano-complejo-y-límites
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se determina el algebra de continuidad con lo siguiente:
 

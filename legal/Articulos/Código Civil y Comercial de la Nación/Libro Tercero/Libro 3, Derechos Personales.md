@@ -9,7 +9,7 @@ tags:
 ```dataviewjs
     await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
 ```
-### Interpretación
+# Interpretación
 ---
 Este libro se divide en 5 títulos, que se refieren respectivamente a las [[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero/Título 1/Título 1, Disposiciones generales|"Obligaciones en general"]], a los [[Título 2, Contratos en general|"Contratos en general"]], a los [[Título 3, Contratos de consumo|"Contratos de consumo]], a los [[Título 4, Contratos en particular|"Contratos en particular"]] y, finalmente, a [[Título 5, Otras fuentes de las obligaciones|"Otras fuentes de las obligaciones"]], en donde se refiere a la responsabilidad civil, la gestión de negocios, el empleo útil, el enriquecimiento sin causa, la declaración unilateral de voluntad y a los títulos valores
 
@@ -19,7 +19,7 @@ Lo más importante del método de nuestro [[Código Civil y Comercial de la Naci
 3. De lo previsto en materia de [[Hecho jurídico|hechos]] y [[Acto jurídico|actos jurídicos]] ([[Título 4, Hechos y actos jurídicos|Libro Primero, título IV]]), sobre todo en lo que se trata de los elementos del acto jurídico y de los vicios tanto del consentimiento como del acto jurídico
 4. Las disposiciones de derecho internacional privado fijadas en las [[Sección 10, Forma de los actos jurídicos|sección 10]], [[Sección 11, Contratos|sección 11]] y [[Sección 12, Contratos de consumo|sección 12, del capítulo 3, del título IV, del Libro Sexto]].
 
-### Artículos
+# Artículos
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/legal/mostrarArticulos", { paginaActual: dv.current() });

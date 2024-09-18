@@ -34,7 +34,7 @@ previo: "[[legal/Articulos/Ley de Obras públicas/Capítulo 8/Capítulo 8, De la
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Producida la rescisión del contrato en virtud de las causales previstas en el artículo anterior, ella tendrá las siguientes consecuencias:
 
@@ -46,5 +46,5 @@ tags:
  f. No se liquidará a favor del contratista suma alguna por concepto de indemnización o de beneficio que hubiera podido obtener sobre las obras no ejecutadas.
 En el caso del [[Art. 53 de la Ley de Obras públicas#^d|inciso d) del artículo 53]], no será de aplicación el inciso e) del presente artículo."
 
-### Interpretación
+# Interpretación
 ---

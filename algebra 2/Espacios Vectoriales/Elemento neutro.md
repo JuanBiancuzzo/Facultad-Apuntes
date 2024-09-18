@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - discreta/Álgebra-proposicional
 ---
-### Definición
+# Definición
 ---
 Sea $A$ un [[Conjunto|conjunto]] en el cual se definió una operación binaria [[Ley de composición interna|interna]] $\circ$ tal que $$\begin{matrix} 
 	\circ: A \times A \to A \\ 
@@ -13,7 +13,7 @@ Sea $A$ un [[Conjunto|conjunto]] en el cual se definió una operación binaria [
 \end{matrix}$$
 es un elemento $e$ del conjunto $A$, tal que para cualquier otro elemento $a$ de $A$, se cumple: $$ a \circ e = e \circ a = a $$
 
-#### Casos específicos
+## Casos específicos
 ---
 Para el [[Álgebra de proposiciones|álgebra de proposiciones]] se entiende como 
 

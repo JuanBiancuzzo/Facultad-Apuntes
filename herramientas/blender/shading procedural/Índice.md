@@ -9,7 +9,7 @@ estado: Falta resumir
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });
 await dv.view("_scripts/dataview/mostrarSubTemas", { indice: dv.current() });
 ```
-### ¿Qué se va a investigar?
+# ¿Qué se va a investigar?
 ---
 Para aprender como animar personajes usando la herramienta de Blender, nos basáremos en el trabajo de:
 * [RyanKingArt](https://www.youtube.com/@RyanKingArt)
@@ -19,14 +19,14 @@ Y siguiendo las series de videos:
 * [Shading series of Ducky3D](https://youtube.com/playlist?list=PLNShHVjao84dtGx6VxFhkeSDPX1gt4NuS&si=FIgNOiZ4jnpOfPF2)
 
 
-#### Archivos
+## Archivos
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarArchivos", { indice: dv.current() });
 ```
 
 
-### Bibliografía
+# Bibliografía
 ---
 ```dataviewjs
 await dv.view('_scripts/dataview/biblioIndice', { indice: dv.current() });

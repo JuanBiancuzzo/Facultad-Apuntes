@@ -3,20 +3,20 @@ dia: 2023-01-23
 tags:
   - distribucion/continua
 ---
-### Definición
+# Definición
 ---
 Para una [[Variable aleatoria continua]] se define su [[Función de densidad]] de forma que $$ f_X(x) = \frac{1}{b - a} \cdot \mathbb{1} \{ a < x < b \}$$
 
-##### Notación
+### Notación
 $$ X \sim U(a, b) $$
 
-#### Notas
+## Notas
 ---
 * El [[Soporte]] de $X$ es $Sop(X) = [a, b]$ 
 * $a < b$
 * La [[Esperanza]] es $E[X] = \frac{a + b}{2}$ y la [[Varianza]] es $Var(X) = \frac{(b - a)^2}{12}$.
 
-### Razonamiento
+# Razonamiento
 ---
 Supongamos que $X$ es una [[Variable aleatoria continua]]que toma todos los valores sobre el intervalo $[a, b]$. Si la [[Función de densidad]] esta dada por $$ f_X(x) = \begin{cases} 
 	k & \text{ si } a < x < b \\
@@ -40,6 +40,6 @@ Supongamos que $X$ es una [[Variable aleatoria continua]]que toma todos los valo
 Por definición sabemos que $$ \int_{-\infty}^{\infty}f_X(x)dx = 1$$
 Por lo que en nuestro caso, eso da que $$ (a - b) \cdot k = 1 $$ 
 Entonces podemos encontrar el valor de $k$ como $$ k = \frac{1}{a - b} $$
-#### Relaciones
+## Relaciones
 ---
 ![[Relaciones entre distribuciones#Distribución Beta y Distribución uniforme]]

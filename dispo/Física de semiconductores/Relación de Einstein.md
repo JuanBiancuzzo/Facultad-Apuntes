@@ -4,7 +4,7 @@ tags:
   - dispo/Física-de-semiconductores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La física fundamental de la [[Corriente de difusión|difusión]] y el [[Corriente de arrastre|arrastre]] es la misma, colisiones entre partículas y los átomos del medio, por lo que podemos pensar que debe existir una relación entre el [[Coeficiente de difusión|coeficiente de difusión]] ($D$) y la [[Movilidad|movilidad]] ($\mu$)
 

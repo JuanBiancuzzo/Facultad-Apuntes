@@ -4,6 +4,6 @@ tags:
   - sisop/File-system
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Proveen los nombres para estos [[Archivo|archivos]]. En particular un directorio es una lista de nombre human-friendly y su mapeo a un archivo o a otro directorio.

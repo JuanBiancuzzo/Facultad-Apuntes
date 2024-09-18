@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un [[Grafo simple|grafo simple]] [[Grafo conexo|conexo]] es [[Grafo Hamiltoniano|Hamiltoniano]] si se cumple que $2d(v) \le n(G)$ (dos veces el [[Grado de un vértice|grado]] de un [[Nodo|vértice]] es mayor al [[Orden de un grafo|orden]] de $G$) para todos los vértices
 

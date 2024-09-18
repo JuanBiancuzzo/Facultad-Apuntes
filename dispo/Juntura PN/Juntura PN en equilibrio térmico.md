@@ -4,7 +4,7 @@ tags:
   - dispo/Juntura-PN
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Que la [[Juntura PN|juntura]] este en [[Equilibrio térmico en un semiconductor|equilibrio térmico]] nos permite hacer suposiciones que simplifican el nivel del problema.
 

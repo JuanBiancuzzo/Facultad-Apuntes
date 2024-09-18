@@ -4,7 +4,7 @@ tags:
   - estructura/Sistemas-numéricos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El complementario a la base de un número esta dado por la ecuación
 $$ B = C - n $$

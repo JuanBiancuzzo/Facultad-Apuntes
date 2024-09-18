@@ -8,7 +8,7 @@ aliases:
   - Care-of address#^COA
   - COA#^COA
 ---
-### Definición
+# Definición
 ---
 Con agent advertisement, un nodo extranjero o local publicita sus servicios a partir una extensión del existing [[Router|router]] discovery protocol. El agente periódicamente envía mensajes [[Internet Control Message Protocol|ICMP]] con el type field en 9, a todos los links a los que está conectado. Esto permite a los nodos móviles, aprender la dirección de los agentes. Los campos más 
 importantes en la extensión, son

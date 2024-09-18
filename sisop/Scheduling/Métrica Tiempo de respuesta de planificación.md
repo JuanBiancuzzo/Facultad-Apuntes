@@ -4,7 +4,7 @@ tags:
   - sisop/Scheduling
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El tiempo de respuesta surge con el advenimiento del [[Time sharing]] ya que los usuarios se sientan en una [[Terminal|terminal]] de una [[Computadora|computadora]] y pretenden una interacción con rapidez. Por eso nace el tiempo de respuesta como [[Métrica]] $$ T_\text{repuesta} = T_\text{first run} - T_\text{arribo} $$
 Para entender la definición veamos el siguiente ejemplo. Suponiendo que A dura $100$, y B y C duran $10$, y A llegue en $t = 0$, y B y C llegan $10$ después.

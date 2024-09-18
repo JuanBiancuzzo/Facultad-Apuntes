@@ -3,13 +3,13 @@ dia: 2023-01-23
 tags:
   - distribucion/continua
 ---
-### Definición
+# Definición
 ---
 Se dice que una [[Variable aleatoria]] $X$ tiene distribución de Pareto de parametros $m$ y $\alpha$ si su [[Función de densidad]] es $$ f_X(x) = \frac{\alpha \cdot m^\alpha}{x^{\alpha + 1}} $$
 
-##### Notación
+### Notación
 $$ X \sim Par(m, \alpha) $$
-#### Notas
+## Notas
 ---
 * El [[Soporte]] de $X$ es $Sop(X) = \Set{x \in \mathbb{R} : x \geq m }$ 
 * $m > 0$ y $\alpha > m$

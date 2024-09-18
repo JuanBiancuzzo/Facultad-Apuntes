@@ -13,11 +13,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El tiempo de la locación, cualquiera sea su objeto, no puede exceder de veinte años para el destino habitacional y cincuenta años para los otros destinos.
 
 El contrato es renovable expresamente por un lapso que no exceda de los máximos previstos contados desde su inicio."
 
-### Interpretación
+# Interpretación
 ---

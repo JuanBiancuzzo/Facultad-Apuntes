@@ -8,7 +8,7 @@ aliases:
   - Bus de datos#^bus-datos
   - Bus de control#^bus-control
 ---
-### Definición
+# Definición
 ---
 Se trata, a nivel de [[Hardware|hardware]], de un sistema compuesto por $3$ elementos básicos
 * [[Procesador|Procesador(es) o microprocesador(es)]] para gestión de datos y ejecución de [[Programa|programas]]

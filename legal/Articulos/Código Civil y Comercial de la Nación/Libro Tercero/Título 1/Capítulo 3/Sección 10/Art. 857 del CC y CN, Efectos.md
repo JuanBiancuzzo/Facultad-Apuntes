@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La extinción, [[Nulidad|nulidad]] o ineficacia del crédito principal, extinguen los [[Derecho|derechos]] y obligaciones accesorios, excepto disposición legal o convencional en contrario."
 
-### Interpretación
+# Interpretación
 ---

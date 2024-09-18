@@ -4,7 +4,7 @@ tags:
  - dispo/Circuitos-digitales-y-procesos-de-fabricación-CMOS
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Partiendo del [[Operador NOT|inversor ideal]] podemos ver como podría ser la idea general de un inversor más real
 

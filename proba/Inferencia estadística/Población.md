@@ -4,6 +4,6 @@ tags:
   - proba/Inferencia-estadística
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Totalidad de los resultados experimentales posibles.

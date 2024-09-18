@@ -6,5 +6,5 @@ tags:
   - redes/Capa-de-Red
   - nota/facultad
 ---
-### Definición
+# Definición
 ---

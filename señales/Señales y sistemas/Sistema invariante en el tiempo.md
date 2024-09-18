@@ -4,7 +4,7 @@ tags:
   - señales/Señales-y-sistemas
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un [[Sistema|sistema]] es invariante en el tiempo si un desplazamiento temporal en la entrada provoca un desplazamiento temporal en la salida. 
 

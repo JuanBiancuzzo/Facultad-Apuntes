@@ -4,7 +4,7 @@ tags:
   - seguridad/Protección-auditiva
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la media aritmética del nivel de [[Presión sonora]] (NPS) de las bandas, medidas en octavas recordando que empiezan en $31.5Hz$ y se van duplicando, cuyos centros de frencuencias son $500$, $1000$ y $2000Hz$.
 

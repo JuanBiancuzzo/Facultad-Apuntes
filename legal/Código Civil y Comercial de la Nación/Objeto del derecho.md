@@ -4,6 +4,6 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La ciencia estudia el derecho en sus aspectos estáticos (orden social, como conjunto de normas)

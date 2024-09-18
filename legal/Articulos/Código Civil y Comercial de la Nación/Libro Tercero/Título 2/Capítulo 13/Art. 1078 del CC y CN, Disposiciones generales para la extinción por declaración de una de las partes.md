@@ -38,7 +38,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Excepto disposición legal o convencional en contrario, se aplican a la rescisión unilateral, a la revocación y a la resolución las siguientes reglas generales:
 
@@ -58,5 +58,5 @@ tags:
  
  h. la extinción del contrato deja subsistentes las estipulaciones referidas a las restituciones, a la reparación de daños, a la solución de las controversias y a cualquiera otra que regule los derechos y obligaciones de las partes tras la extinción."
 
-### Interpretación
+# Interpretación
 ---

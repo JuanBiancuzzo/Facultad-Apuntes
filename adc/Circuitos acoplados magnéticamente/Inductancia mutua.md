@@ -7,7 +7,7 @@ tags:
 aliases:
   - Coeficiente de inducción mutuo
 ---
-### Definición
+# Definición
 ---
 La inductancia mutua es la capacidad de un [[Inductor|inductor]] de inducir una [[Tensión|tensión]] en un inductor cercano, medida en henrys $[H]$
 
@@ -23,7 +23,7 @@ Con las [[Tensión|tensiones]] $$ \begin{align}
 
 Por cuestiones relacionadas a la [[Conservación de la energía|conservación de la energía]] $M_{12} = M_{21}$
 
-#### Relaciones
+## Relaciones
 ---
 Se puede determinar el valor de  $M_{ij}$ como $$ M_{ij} = k ~ \sqrt{L_1 L_2} $$ donde $k$ es el [[Coeficiente de acoplamiento|coeficiente de acoplamiento]]
 

@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Propiedades-de-funciones
 ---
-### Definición
+# Definición
 ---
 El [[algebra 2/Espacios Vectoriales/Conjunto.md|conjunto]] de nivel se puede pensar como [[Grafica de una función|la grafica de una función]] donde en vez de ser para cualquier $y \in B$ donde $B$ es el [[Codominio|codominio]], sino $y$ siendo un valor $k$ constante
 
@@ -14,7 +14,7 @@ Tambien visto como
 
 $$ L_k = {X \in \mathbb{R}^n : X \in Dom(f) \land f(X) = k} $$
 
-#### Ejemplo
+## Ejemplo
 ---
 Con $f : \mathbb{R}^2 \to \mathbb{R} : f(x, y) = e^{y - x^2}$ los conjuntos de nivel seria
 

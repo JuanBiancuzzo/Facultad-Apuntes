@@ -6,7 +6,7 @@ tags:
 aliases:
   - DFS
 ---
-### Definición
+# Definición
 ---
 El [[Algoritmo|algoritmo]] Depth First Search busca encontrar una [[Grafo conexo#^338349|orientación fuertemente conexo para un grafo]]
 

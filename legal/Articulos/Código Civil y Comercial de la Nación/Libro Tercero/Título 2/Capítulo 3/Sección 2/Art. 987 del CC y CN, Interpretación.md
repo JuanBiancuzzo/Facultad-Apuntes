@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Las cláusulas ambiguas predispuestas por una de las partes se interpretan en sentido contrario a la parte predisponente."
 
-### Interpretación
+# Interpretación
 ---
 Las cláusulas ambiguas predispuestas por una de las partes se interpretan en sentido contrario a la parte predisponente. 
 

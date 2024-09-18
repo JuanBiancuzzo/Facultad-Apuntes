@@ -4,7 +4,7 @@ tags:
   - legal/Contratos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Con respecto al momento del cumplimiento, los contratos pueden clasificarse de la siguiente manera: 
 1. De ejecución inmediata

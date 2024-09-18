@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $G$ un [[Grafo|grafo]], entonces definimos su espectro $\sigma(G)$ como el [[Espectro de una matriz|espectro de su matriz]] [[Matriz de adyacencia|de adyacencia]], $\sigma\big( A_G \big)$
 

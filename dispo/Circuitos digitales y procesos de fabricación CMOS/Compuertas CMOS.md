@@ -4,7 +4,7 @@ tags:
   - dispo/Circuitos-digitales-y-procesos-de-fabricación-CMOS
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Para generar cualquier [[Compuerta|compuerta]] o cualquier [[Función lógica|función lógica]] a partir de una estructura CMOS, es decir tecnología [[Estructura Metal-Óxido-Semiconductor|MOS]] complementaria con la siguiente estructura
 
@@ -47,11 +47,11 @@ Para generar cualquier [[Compuerta|compuerta]] o cualquier [[Función lógica|fu
 \end{document}
 ```
 
-#### Complementariedad
+## Complementariedad
 ---
 Para evitar que exista un camino de conducción entre $V_{DD}$ y  $GND$ se definen dos grupos de complementariedad
 
-##### Producto
+### Producto
 ---
 ```tikz
 \usepackage{circuitikz} 
@@ -91,7 +91,7 @@ $$ Y = X, ~ \text{if} ~ A ~ \text{and} ~ B $$
 ```
 $$ Y = X, ~ \text{if} \overline{A} ~ \text{or} ~ \overline{B} = \overline{AB} $$
 
-##### Suma
+### Suma
 ---
 ```tikz
 \usepackage{circuitikz} 
@@ -131,6 +131,6 @@ $$ Y = X, ~ \text{if} ~ A ~ \text{or} ~ B $$
 ```
 $$ Y = X, ~ \text{if} ~ \overline{A} ~ \text{and} ~ \overline{B} = \overline{A + B} $$
 
-##### Inversión
+### Inversión
 ---
 ![[Inversor Metal-Óxido-Semiconductor Complementaria#Definición]]

@@ -4,7 +4,7 @@ tags:
   - señales/Muestreo-e-Interpolación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El [[Muestreo periódico|muestreo]] de [[Señal#^02aea6|señales de tiempo discreto]] obedece a los mismo principios que las [[Señal#^016a35|señales de tiempo continuo]] y las ideas de fondo son básicamente las mismas
 

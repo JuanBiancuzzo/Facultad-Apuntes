@@ -4,13 +4,13 @@ tags:
   - legal/Contratos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Viendo el [[Título 2, Contratos en general|Título 2, Libro Tercero del CC y CN]], donde ![[Título 2, Contratos en general#Interpretación]]
 Elementos
 * [[Causa de un contrato|Causa]]
 
-#### Derechos resultantes del contrato
+## Derechos resultantes del contrato
 ---
 El contrato es fuente de [[Art. 724 del CC y CN, Definición|obligaciones]] y [[Derecho|derechos]]. En efecto, al celebrarse cualquier contrato, nacen obligaciones en cabeza de las partes contratantes, quienes deberán cumplirlas de acuerdo con las pautas fijadas por ellas
 
@@ -19,7 +19,7 @@ Las obligaciones que cada una de las partes asuma importa un derecho en cabeza d
 Estos derechos que nacen del contrato forman parte del [[Art. 154 del CC y CN, Patrimonio|patrimonio]] de las personas involucradas, del mismo modo que lo integran los [[Libro 4, Derechos Reales|derechos reales]] que se puedan tener. Por ello, el [[Art. 965 del CC y CN, Derecho de propiedad|artículo 965 del CC y CN]] dispone, con razón, que ![[Art. 965 del CC y CN, Derecho de propiedad#Artículo]]
 ![[Art. 965 del CC y CN, Derecho de propiedad#Interpretación]]
 
-#### Naturaleza jurídica del contrato
+## Naturaleza jurídica del contrato
 ---
 El contrato es un [[Acto jurídico|acto jurídico]]. Recordemos la definición del [[Art. 259 del CC y CN, Acto jurídico|artículo 259]]: ![[Art. 259 del CC y CN, Acto jurídico#Artículo]] 
 Obvio es que dentro de ese concepto cabe el contrato. En otras palabras, acto jurídico es el género, contrato la especie. El contrato es, entonces, un acto jurídico que tiene las siguientes características específicas: 
@@ -29,7 +29,7 @@ Obvio es que dentro de ese concepto cabe el contrato. En otras palabras, acto ju
 
 Para precisar la naturaleza del contrato, veamos sus puntos de contacto y sus diferencias con la ley, el acto administrativo y la sentencia. 
 
-##### Con la ley 
+### Con la ley 
 ---
 [[Ley|Ley]] y contrato tienen un punto de contacto: ambos constituyen una regla jurídica a la cual deben someterse las personas. El [[Art. 4 del CC y CN, Ámbito subjetivo|artículo 4º]] dispone que ![[Art. 4 del CC y CN, Ámbito subjetivo#Artículo]] 
 mientras que el [[Art. 959 del CC y CN, Efecto vinculante|artículo 959]] establece que ![[Art. 959 del CC y CN, Efecto vinculante#Artículo]]
@@ -37,7 +37,7 @@ Y, con vigor expresivo, el [[Art. 1197 del CC y CN, Plazo máximo|artículo 1197
 
 Pero las diferencias son profundas y netas: la ley es una regla general a la cual están sometidas todas las personas; ella se establece teniendo en mira un interés general o colectivo; el contrato, en cambio, es una regla solo obligatoria para las partes que lo han firmado y sus sucesores; se contrae teniendo en mira un interés individual. De ahí que los contratos estén subordinados a la ley; las normas imperativas (también llamadas indisponibles) no pueden ser dejadas de lado por los contratantes, quienes están sometidos a ellas, no importa lo que hayan convenido en sus contratos. Además, la ley no requiere de prueba, y difiere del contrato en sus efectos y vigencia.
 
-#### Elementos de los contratos
+## Elementos de los contratos
 ---
 Los [[Elementos de un contrato|elementos de los contratos]] esta dada por la voluntad de las personas, y formalmente la estructura del contrato esta dada por
 * [[Art. 972 del CC y CN, Oferta|Oferta]]
@@ -45,10 +45,10 @@ Los [[Elementos de un contrato|elementos de los contratos]] esta dada por la vol
 * [[Contrato entre ausentes|Contratos entre ausentes]]
 * [[Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas|Contratos por adhesión]]
 
-#### Tratativas precontractuales
+## Tratativas precontractuales
 ---
 ![[Tratativas precontractuales#Definición]]
 
-#### Ineficacia del contrato
+## Ineficacia del contrato
 ---
 ![[Ineficacia del contrato#Definición]]

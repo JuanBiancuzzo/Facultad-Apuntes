@@ -16,7 +16,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "En los contratos de larga duración el tiempo es esencial para el cumplimiento del objeto, de modo que se produzcan los efectos queridos por las partes o se satisfaga la necesidad que las indujo a contratar.
 
@@ -24,5 +24,5 @@ Las partes deben ejercitar sus derechos conforme con un deber de colaboración, 
 
 La parte que decide la rescisión debe dar a la otra la oportunidad razonable de renegociar de [[Art. 9 del CC y CN, Principio de buena fe|buena fe]], sin incurrir en ejercicio [[Art. 10 del CC y CN, Abuso del derecho|abusivo de los derechos]]."
 
-### Interpretación
+# Interpretación
 ---

@@ -13,14 +13,14 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
 ```
-### Definición
+# Definición
 ---
 La literatura gris es una categoría de recursos que incluye informes técnicos o de investigación de agencias gubernamentales, institutos de investigación, organizaciones o empresas o asociaciones. Este tipo de literatura incluye (pero no se limita a)
 * documentos de trabajo
 * documento de políticas
 * informes
 
-#### Formato general
+## Formato general
 ---
 > [!quote]
 > Apellido, N. N (año). _Título del informe_ (Informe n° xxx). Nombre del editor. URL
@@ -28,7 +28,7 @@ La literatura gris es una categoría de recursos que incluye informes técnicos 
 * Si el informe no tiene número de informe, deje esa información fuera de la referencia
 * Si el editor es el mismo que el autor, que suele ser el caso de los autores de grupo, omita al editor del elemento fuente
 
-#### Informe escrito del sitio web de una agencia
+## Informe escrito del sitio web de una agencia
 ---
 La agencia específica responsable del informe aparece como el autor. Los nombres de las agencias matrices que no están presentes en el nombre del autor del grupo aparecen en el elemento fuente como editor
 
@@ -38,7 +38,7 @@ La agencia específica responsable del informe aparece como el autor. Los nombre
 
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

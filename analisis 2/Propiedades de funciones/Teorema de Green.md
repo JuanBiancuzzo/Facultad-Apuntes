@@ -4,7 +4,7 @@ tags:
  - analisis-2/Propiedades-de-funciones
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $\vec{f} : D \subset \mathbb{R}^2 \to \mathbb{R}^2$ y $C$ una [[Curva|curva]] cerrada, plana, suave o suave a trozos, orientada en sentido positivo, perteneciente a $D$. Entonces podemos aplicar el teorema de Green
 

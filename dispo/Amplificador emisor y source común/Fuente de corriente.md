@@ -4,11 +4,11 @@ tags:
   - dispo/Amplificador-emisor-y-source-común
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es aquella que genera una intensidad de [[Corriente eléctrica|corriente]] entre sus terminales constante e independiente de la carga.
 
-##### Simbología
+### Simbología
 ---
 ```tikz
 \usepackage{circuitikz} 
@@ -19,13 +19,13 @@ Es aquella que genera una intensidad de [[Corriente eléctrica|corriente]] entre
 \end{document}
 ```
 
-#### Implementación
+## Implementación
 ---
 Como se analizó en [[Amplificador Source Común con un transistor de efecto de campo metal-óxido-semiconductor#Relación de compromiso de $A_{vo}$, $R_D$, $V_{DD}$ e $I_{DQ}$|Relaciones de compromiso para el Amplificador Source Común]], es necesario tener una [[Resistencia|resistencia]] de polarización $R_D$ elevada para aumentar la [[Ganancia|ganancia]]
 
 Una alternativa para la resistencia de polarización $R_D$ es utilizar fuentes de corriente.
 
-##### El transistor N-MOS como fuente de corriente
+### El transistor N-MOS como fuente de corriente
 ---
 ![[el transistor N-MOS como fuente de corriente.webp]]
 
@@ -38,7 +38,7 @@ Características
 * Presenta una resistencia de salida $R_{out} = r_0$
 * El [[Transistor de efecto de campo metal-óxido-semiconductor#Canal-N|transistor N-MOS]] es un sumidero de corriente
 
-##### El transistor P-MOS como fuente de corriente
+### El transistor P-MOS como fuente de corriente
 ---
 ![[el transistor P-MOS como fuente de corriente.webp]]
 
@@ -50,6 +50,6 @@ Características
 * Presenta una [[Resistencia|resistencia]] de salida $R_{out} = r_0$
 * El [[Transistor de efecto de campo metal-óxido-semiconductor#Canal-P|transistor P-MOS]] es una fuente de corriente
 
-#### Copia de corriente
+## Copia de corriente
 ---
 Se puede generar una fuente usando el [[Circuito eléctrico|circuito]] que se llama [[Copia de corriente espejo simple|copia de corriente espejo]] ![[Copia de corriente espejo simple#Definición]]

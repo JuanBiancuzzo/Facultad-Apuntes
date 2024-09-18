@@ -4,7 +4,7 @@ tags:
   - orga/Visualizaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Este [[Plot]] permite mostrar las parte de un todo, y muestra en proporción cuanto cada subgrupo ocupa este todo.
 

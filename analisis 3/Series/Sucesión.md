@@ -4,7 +4,7 @@ tags:
   - analisis-3/Series
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Una sucesión de números complejos es una función $\alpha : \mathbb{N} \to \mathbb{C}$
 
@@ -13,7 +13,7 @@ Notación
 	* $\forall n \in \mathbb{N} : \alpha (n) = \alpha_n$
 	* $\alpha = (\alpha_n)_{n = 1}^\infty = (\alpha_1, \alpha_2, ...)$
 
-#### Caracterización
+## Caracterización
 ---
 Dada una sucesión $\alpha : \mathbb{N} \to \mathbb{K}$:
 1) Con $\mathbb{K} = \mathbb{R}$: $$ \begin{matrix}
@@ -41,7 +41,7 @@ $$ Si $\alpha$ es acotada tanto superior como interiormente, entonces es una aco
 
 ![[Teoremas de completitud y de continuidad secuencial]]
 
-### Convergencia
+# Convergencia
 ---
 ![[Sucesión convergente#Consecuencias]]
 

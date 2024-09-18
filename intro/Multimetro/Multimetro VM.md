@@ -2,11 +2,11 @@
 dia: 2023-01-23
 materia: intro
 ---
-### Definición
+# Definición
 ---
 El [[Multímetro|multímetro]] de valor medio es un tipo de multímetro que “sólo sabe” calcular valor medio
 
-#### Modos
+## Modos
 ---
 - Modo DC:
 Se utiliza la formula de la [[Tensión promedio|tensión promedio]]

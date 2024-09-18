@@ -4,6 +4,6 @@ tags:
   - bdd/General
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se encarga de gestionar, diseñar, planificar, mantener, resguardar y mantener la base de datos segura

@@ -16,7 +16,7 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 12/Capítulo 3/Cap
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Las partes, por mutuo acuerdo, podrán extinguir el contrato de trabajo. El acto deberá formalizarse mediante escritura pública o ante la autoridad judicial o administrativa del trabajo.
 
@@ -24,5 +24,5 @@ Será nulo y sin valor el acto que se celebre sin la presencia personal del trab
 
 Se considerará igualmente que la relación laboral ha quedado extinguida por voluntad concurrente de las partes, si ello resultase del comportamiento concluyente y recíproco de las mismas, que traduzca inequívocamente el abandono de la relación."
 
-### Interpretación
+# Interpretación
 ---

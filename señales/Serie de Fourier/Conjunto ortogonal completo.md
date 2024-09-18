@@ -4,7 +4,7 @@ tags:
   - señales/Serie-de-Fourier
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un [[Conjunto ortogonal|conjunto ortogonal]] $\set{p_k(t)}_{k = 0}^{\infty} \in \mathcal{H}$ se conoce como conjunto ortogonal completo si no existe ninguna función $q(t) \in \mathcal{H}$ fuera del conjunto que satisfaga la condición de ortogonalidad con respecto a las señales $p_n(t), ~ n \in \mathbb{N} \bigcup \set{0}$. Es decir, $\nexists q(t) \in \mathcal{H}$ tal que $$ \int_{t_1}^{t_2} q(t) ~ p_n^* (t) ~ dt = 0, ~ \forall n \in \mathbb{N}_0 $$
 

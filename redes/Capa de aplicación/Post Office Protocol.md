@@ -8,7 +8,7 @@ tags:
   - redes/Capa-de-aplicación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un [[Protocolo|protocolo]] extremadamente simple. Progresa a través de estas 3 etapas
 * Authorization

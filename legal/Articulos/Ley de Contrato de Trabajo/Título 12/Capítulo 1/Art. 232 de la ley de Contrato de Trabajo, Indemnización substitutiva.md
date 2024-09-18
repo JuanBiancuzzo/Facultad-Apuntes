@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 12/Capítulo 1/Cap
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La parte que omita el preaviso o lo otorgue de modo insuficiente deberá abonar a la otra una indemnización substitutiva equivalente a la remuneración que correspondería al trabajador durante los plazos señalados en el [[Art. 231 de la ley de Contrato de Trabajo, Plazos|artículo 231]]."
 
-### Interpretación
+# Interpretación
 ---

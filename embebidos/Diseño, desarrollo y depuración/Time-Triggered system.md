@@ -7,7 +7,7 @@ aliases:
   - Sistemas activados por intervalos
   - T-TS
 ---
-### Definición
+# Definición
 ---
 Como solución a [[Sistema embebido|sistemas embebidos]] orientados a control, tenemos los sistemas disparados/activados por tiempo
 * Un disparador/activador (trigger) es un suceso (sincronismo) que provoca el inicio de alguna acción en el sistema de control

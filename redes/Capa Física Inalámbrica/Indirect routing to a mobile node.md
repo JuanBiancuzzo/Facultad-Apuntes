@@ -9,7 +9,7 @@ aliases:
   - Home-agent datagram encapsulation protocol#^home-agent-datagram-encapsulation-protocol
   - Foreign-agent decapsulation protocol#^foreign-agent-decapsulation-protocol
 ---
-### Definición
+# Definición
 ---
 En este enfoque, se envían los paquetes directamente a la dirección permanente, sin enterarse de que el usuario es un usuario móvil. El agente local tiene la importante [[Función|función]] de recibir estos [[Paquete|paquetes]] y reenviarlos a la [[Red|red]] extranjera. Desde allí, el foreign agent le reenviará los paquetes al usuario
 

@@ -9,12 +9,12 @@ aliases:
 referencias:
   - "204"
 ---
-### Definición
+# Definición
 ---
 La capa de abstracción de hardware es un elemento del [[Sistema operativo|sistema operativo]] que funciona como una interfaz entre el [[Software|software]] y el [[Hardware|hardware]] del sistema, proveyendo una plataforma de hardware consistente sobre la cual corren las aplicaciones<sup><a href="#ref-204" style="color: inherit; text-decoration: none;">[204]</a></sup> 
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

@@ -4,7 +4,7 @@ tags:
   - taller/Ownership
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Estrucutura]] que te da un puntero al heap de la memoria que se quiera guardar.
 

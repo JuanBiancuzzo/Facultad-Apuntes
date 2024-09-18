@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Propiedades-de-funciones
 ---
-### Definición
+# Definición
 ---
 ```tikz
 \usepackage{pgfplots}
@@ -43,10 +43,10 @@ Estos son los [[Máximo y mínimo absoluto|máximos y mínimos absolutos]] de la
 
 Por otra parte $f(x_2)$ y $f(x_3)$ también son mínimos y máximos, si se los considera en un entorno de $x_2$ y $x_3$ respectivamente. En este caso se trata de [[Máximo y mínimo local|máximo y mínimo local]]
 
-#### Teorema
+## Teorema
 Toda función escalar continua en un [[Conjunto compacto]], produce máximos y mínimos absolutos (en sentido amplio) en dicho conjunto
 
 Este es el único teorema que permite asegurar la existencia en extremos absolutos. Bajo las condiciones del mismo, los extremos absolutos se producirán en un [[Punto interno]] o en un [[Punto frontera]]
 
-#### Análisis de existencia de extremos
+## Análisis de existencia de extremos
 ![[Analisis de extremos locales para funciones de una variable#Definición]] ![[Análisis de extremos locales para campos escalares]] ![[Análisis de extremos absolutos]]

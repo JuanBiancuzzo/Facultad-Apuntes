@@ -10,7 +10,7 @@ aliases:
   - Prefijo de una dirección IP
   - Prefix of an IP Address
 ---
-### Definición
+# Definición
 ---
 La estrategia de asignación de [[Internet Protocol Versión 4|direcciones de internet]] se conoce como Classless Interdomain Routing. La [[redes/Capa de aplicación/Internet Protocol Address.md|dirección IP]] se divide en dos secciones y tiene la forma `a.b.c.d/x`, donde `x` indica el número de bits en la primera parte de la dirección, esta sección se la conoce como el mascara. La sección de `a.b.c.d` se la conoce como prefijo.
 

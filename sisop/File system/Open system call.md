@@ -4,7 +4,7 @@ tags:
   - sisop/File-system
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[System call|system call]] `open()` convierte el nombre de un [[Archivo|archivo]] en una entrada de la tabla de [[File descriptor|descriptores]] de archivos, y devuelve dicho valor. Siempre devuelve el [[File descriptor|descriptor]] más pequeño que no está abierto
 

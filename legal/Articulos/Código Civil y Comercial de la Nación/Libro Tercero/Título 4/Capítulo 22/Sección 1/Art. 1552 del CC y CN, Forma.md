@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Deben ser hechas en escritura pública, bajo pena de [[Nulidad|nulidad]], las donaciones de cosas inmuebles, las de cosas muebles registrables y las de prestaciones periódicas o vitalicias."
 
-### Interpretación
+# Interpretación
 ---

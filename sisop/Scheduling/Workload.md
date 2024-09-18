@@ -4,7 +4,7 @@ tags:
   - sisop/Scheduling
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El workload es la carga de trabajo de un [[Proceso|proceso]] corriendo en el [[Sistema]].
 

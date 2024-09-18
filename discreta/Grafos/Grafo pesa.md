@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo simple|grafo simple]], el grafo es que se llama Pesa $B_p$ que se obtiene de conectar dos copias de un [[Grafo simple completo|grafo completo]] $K_p$ con un puente
 

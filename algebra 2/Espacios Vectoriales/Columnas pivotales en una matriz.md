@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-Vectoriales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Cuando se habla de las columnas pivotales de una matriz, se refieren en el proceso de triangulación, donde hacia abajo del pivote y hacia la izquierda todos los números son 0, ejemplo
 

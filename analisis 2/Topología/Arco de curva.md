@@ -4,11 +4,11 @@ tags:
   - nota/facultad
   - analisis-2/Topología/2
 ---
-### Definición
+# Definición
 ---
 Dada una [[analisis 2/Topología/Curva.md|curva]] $C \subset \mathbb{R}^n$ de ecuación $\vec{X} = \vec{g}(t)$ con $t \in I$. Un arco de curva es una curva de ecuación $\vec{X} = \vec{g}(t)$ con $t \in [a, b]$,  es decir, el intervalo $I$ es un [[Conjunto compacto|conjunto compacto]]
 
-#### Cerrado
+## Cerrado
 ---
 Un arco de curva cerrado es aquel para el cual se cumple que $\vec{g}(a)=\vec{g}(b)$, es decir que los extremos coinciden
 

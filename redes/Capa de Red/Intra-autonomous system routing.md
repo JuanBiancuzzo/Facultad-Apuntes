@@ -6,7 +6,7 @@ tags:
 aliases:
   - Intra-AS routing
 ---
-### Definición
+# Definición
 ---
 En la práctica, la idea de que todos los routers ejecutan el mismo [[Routing algorithms|algoritmo de ruteo]] es demasiado errónea por dos importantes razones
 * Escala

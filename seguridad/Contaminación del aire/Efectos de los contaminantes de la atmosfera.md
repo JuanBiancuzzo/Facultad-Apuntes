@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-aire
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los efectos de los [[Contaminación atmosférica|contaminantes]] depende de:
 * Toxicidad del contaminante

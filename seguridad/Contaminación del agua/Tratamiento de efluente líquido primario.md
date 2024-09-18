@@ -4,6 +4,6 @@ tags:
   - seguridad/Contaminación-del-agua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 [[Tratamiento con rejas|Rejas]], [[Tratamiento de desbaste|desbaste]], desarenadores, [[Tratamiento de sedimentación#Primario|sedimentador primario]].

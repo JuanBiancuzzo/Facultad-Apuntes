@@ -4,7 +4,7 @@ tags:
   - aninfo/Analizar-y-especificar-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Desarrollado en las primera fases/iteraciones. Se define el [[Sistema]] a desarrollar desde el punto de vista de las partes [[Interesados en el producto|interesadas]], donde esta es la base para [[Especificación de requisitos|especificaciones]] más detalladas.
 

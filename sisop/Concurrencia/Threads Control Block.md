@@ -6,7 +6,7 @@ tags:
   - sisop/Concurrencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Cada [[Thread]] debe tener una estructura que represente su estado. Esta estructura se denomina Thread Control Block. Se crea una entrada por cada thread. La TCB almacena el [[Thread#Estados de un thread|estado per-thread de un thread]]:
 * El estado del Cómputo que debe ser realizado por el thread.

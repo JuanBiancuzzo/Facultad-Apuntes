@@ -9,7 +9,7 @@ tags:
   - dispo/Transistor-MOSFET
   - dispo/Transistor-bipolar-de-juntura
 ---
-### Definición
+# Definición
 ---
 Ofrece una entrada [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] y una [[Corriente eléctrica|corriente]] de [[Transistor bipolar de juntura|TBJ]]
 * Se controla por [[Tensión|tensión]]
@@ -23,7 +23,7 @@ El IGBT presenta las características de entrada del [[Transistor de efecto de c
 
 ![[Curva de salida del IGBT.webp]]
 
-#### Estructura
+## Estructura
 ---
 * La [[Estructura Metal-Óxido-Semiconductor|estructura MOS]] permite controlar la circulación de carga entre la regiones $n+$ y la región $n-$
 * La región $n-$ se comporta como la base de un [[Transistor bipolar de juntura#PNP|transistor PNP]]

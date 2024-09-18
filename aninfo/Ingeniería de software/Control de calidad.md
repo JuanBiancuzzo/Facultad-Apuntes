@@ -4,6 +4,6 @@ tags:
   - aninfo/Ingeniería-de-software
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Las actividades y técnicas de evaluación empleadas para cumplir con los [[Requisito|requerimientos]] de calidad. Lo podemos ver en el software con el [[Testing de software|testing]]

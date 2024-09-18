@@ -4,7 +4,7 @@ tags:
   - orga/Machine-learning
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El modelo tiene muy buen resultado para el [[Validación del modelo|set de entrenamiento]] pero no es tan bueno para el [[Validación del modelo|set de testeo]]. El modelo generaliza mal, y es demasiado expresivo.
 

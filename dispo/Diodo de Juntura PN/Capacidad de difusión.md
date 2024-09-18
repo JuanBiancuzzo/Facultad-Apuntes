@@ -4,7 +4,7 @@ tags:
   - dispo/Diodo-de-Juntura-PN
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Considerando la [[Juntura PN]] en [[Convención de signos para la tensión de polarización#Polarización directa|directa]], la situación de los [[Carga eléctrica|portadores]] mayoritarios es
 

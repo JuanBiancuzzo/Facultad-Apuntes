@@ -7,7 +7,7 @@ tags:
   - dispo/Transistor-bipolar-de-juntura
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La ganancia es pobre, el dispositivo no es útil en esta región y debe evitarse. 
 
@@ -17,13 +17,13 @@ Con $V_{BE} < 0$ y $V_{BC} > 0$ $$  \begin{align}
 	I_E &= I_S ~ \exp \left( \frac{V_{BC}}{V_{th}} \right)
 \end{align}  $$ ^71eca7
 
-#### [[Modelo de Ebers-Moll]]
+## [[Modelo de Ebers-Moll]]
 ---
 ![[Modelo de Ebers-Moll para modo activo inverso.webp]]
 
 Típicamente $V_{BC~(on)} \simeq 0.5~V$ (los [[Dopaje|dopajes]] de la [[Juntura PN|juntura BC]] son menores). $I_B$ también depende del circuito externo.
 
-### Análisis
+# Análisis
 ---
 ![[Perfil de portadores minoritarios en modo activo inverso.webp]]
 

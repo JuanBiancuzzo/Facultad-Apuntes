@@ -6,7 +6,7 @@ tags:
   - dispo/Transistor-bipolar-de-juntura
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[Corriente eléctrica|corriente]] $I_C$ e $I_B$ despreciables, se encuentra en "bloqueo". 
 
@@ -16,13 +16,13 @@ Con $V_{BE} < 0$ y $V_{BC} < 0$ $$  \begin{align}
 	I_E &= \frac{I_S}{\beta_F}
 \end{align}  $$ ^640694
 
-#### [[Modelo de Ebers-Moll]]
+## [[Modelo de Ebers-Moll]]
 ---
 ![[Modelo de Ebers-Moll para corte.webp]]
 
 Solo existen corrientes de fuga despreciables.
 
-### Análisis
+# Análisis
 ---
 ![[Perfil de portadores minoritarios en corte.webp]]
 

@@ -6,7 +6,7 @@ tags:
   - redes/Capa-de-Red
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La frontera entre el [[Host|host]] y el enlace es conocida como interfaz. La frontera entre un [[Router|router]] y cualquier de sus links también se conoce como interfaz
 

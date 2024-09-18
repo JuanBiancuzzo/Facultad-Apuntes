@@ -6,7 +6,7 @@ tags:
 aliases:
   - Principios de diseño de UI
 ---
-### Definición
+# Definición
 ---
 * Usable por todos
 * Flexibilidad en el uso

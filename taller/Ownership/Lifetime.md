@@ -4,7 +4,7 @@ tags:
   - taller/Ownership
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un tramo, un área, del programa para el cual esa referencia se puede usar de manera segura.
 

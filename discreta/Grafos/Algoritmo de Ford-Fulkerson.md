@@ -6,7 +6,7 @@ tags:
 aliases:
   - Flujo de un grafo
 ---
-### Definición
+# Definición
 ---
 Una red de transporte es un [[Grafo orientado|digrafo]] $G$ [[Grafo conexo#^c4c708|conexo]] y sin [[Lazo|lazos]], donde se verifica que
 

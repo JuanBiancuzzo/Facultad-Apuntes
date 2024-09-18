@@ -6,7 +6,7 @@ tags:
   - redes/Capa-de-Red
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La motivación para el desarrollo de la dirección IPv6 es la realización de que el espacio de direcciones de [[Internet Protocol Versión 4|IPv4]] se estaba utilizando. Los desarrolladores tomaron esta oportunidad para mejorar algunos aspectos de IPv4, basados en la experiencia ganada por IPv4
 * Expanded addressing capabilities
@@ -65,7 +65,7 @@ Los campos clave de un [[Paquete|datagrama]] son
 
 El header, a diferencia de IPv4, no tienen el [[Fragmentación de Internet Protocol|flag de fragmentación]], ni el [[Internet Protocol Versión 4#^93d41c|checksum]], ni el [[Internet Protocol Versión 4#^d6224c|campo de opciones]]. Este último se reemplaza por el campo de `next header`
 
-#### Transición de IPv4 a IPv6
+## Transición de IPv4 a IPv6
 ---
 El problema es que mientras que los sistemas IPv6 son backward-compatible, los sistemas IPv6 no soportan el envío de datagramas IPv6. La mayoría de los sistemas utilizan IPv4 y la transición es un proceso muy costoso
 

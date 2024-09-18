@@ -4,18 +4,18 @@ tags:
   - seguridad/Contaminación-del-ambiente-laboral
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta dividido en etapas:
 
-#### Identificación de agentes
+## Identificación de agentes
 ![[Etapa de identificacion de agentes#Definición]]
 
-#### Evaluación del riesgo
+## Evaluación del riesgo
 ![[Etapa de evaluación del riesgo#Definición]]
 
-#### Implementación de medidas correctivas y preventivas
+## Implementación de medidas correctivas y preventivas
 ![[Etapa de implementación de medidas correctivas y preventivas#Definición]]
 
-#### Seguimiento
+## Seguimiento
 ![[Etapa de seguimiento]]

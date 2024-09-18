@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo|grafo]], se puede pensarse coloquialmente como una [[Grafo estrella|estrella]] y un [[Camino#Ciclo (Cicle)|ciclo]] en los satélites
 

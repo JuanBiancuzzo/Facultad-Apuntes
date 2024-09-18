@@ -4,7 +4,7 @@ tags:
   - orga/Visualizaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una buena combinación entre [[Plot de relación]] y [[Serie de tiempo]]. Nuevamente, no necesariamente tiene que ser el tiempo en si, pero algo relacionado al mismo.
 

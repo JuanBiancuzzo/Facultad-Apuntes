@@ -4,5 +4,5 @@ tags:
   - circuitos/Amplificadores-con-varios-dispositivos-activos-de-bajo-nivel-de-potencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---

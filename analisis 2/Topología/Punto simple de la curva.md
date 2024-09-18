@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Topología/2
 ---
-### Definición
+# Definición
 ---
 Dada una curva $C \subset \mathbb{R}^n$ de ecuación $\vec{X} = \vec{g}(t)$ con $t \in I$. Un punto $a∈C$ es un punto simple de la curva cuando, a traves de $\vec(g)$, es [[Codominio|imagen]] de un único $t_0∈I$
 

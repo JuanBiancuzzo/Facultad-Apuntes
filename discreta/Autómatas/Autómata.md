@@ -10,7 +10,7 @@ referencias:
 aliases:
   - Teoría de autómatas
 ---
-### Definición
+# Definición
 ---
 En electrónica un autómata es un sistema secuencial, aunque en ocasiones la palabra es utilizada también para referirse a un robot. Puede definirse como un equipo electrónico programable en lenguaje no informático y diseñado para controlar, en tiempo real y en ambiente industrial, procesos secuenciales. Sin embargo, la rápida evolución de los autómatas hace que esta definición no esté cerrada <sup><a href="#ref-239" style="color: inherit; text-decoration: none;">[239]</a></sup> 
 
@@ -20,7 +20,7 @@ Un autómata es un [[Modelo|modelo]] matemático para una [[Máquina de estado|m
 
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

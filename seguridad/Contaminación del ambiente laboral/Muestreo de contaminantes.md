@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-ambiente-laboral
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Significa recoger una cantidad suficiente de aire para analizar el contaminantes que contiene. La muestra debe ser representativa del ambiente que se quiere evaluar.
 

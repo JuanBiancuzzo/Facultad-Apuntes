@@ -4,7 +4,7 @@ tags:
   - circuitos/Circuitos-con-diodos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Tomemos este [[Circuito eléctrico|circuito]] de ejemplo 
 
@@ -63,7 +63,7 @@ Si ahora asumimos que hay una pequeña [[Señal|señal]] alterna en el circuito
 
 Al avanzar el tiempo, la curva de carga (recta en este caso particular) se mueve, haciendo que el punto de intersección con la [[Curva característica de un componente|curva característica del componente X]] cambie. Los distintos puntos de intersección reflejan los valores instantáneos de [[Tensión|tensión]] y [[Corriente eléctrica|corriente]] 
 
-#### Aproximación
+## Aproximación
 ---
 Lo más sencillo sería reemplazar el componente X por su [[Recta de carga estática de un componente|resistencia estática en el punto Q]], al fin y al cabo la tensión total en cada nodo dependerá de la tensión continua (que es grande) y la alterna (que es pequeña). Y por definición, el punto Q encontrado usando X o su resistencia estática sería exactamente el mismo
 
@@ -73,7 +73,7 @@ Podríamos reducir sustancialmente el [[Error relativo|error]] si en vez de util
 
 ![[Aproximación de segundo orden de la curva de carga de pequeña señal alterna.webp]]
 
-##### Cambio de ejes coordenados
+### Cambio de ejes coordenados
 ---
 La solución viene de ver las cosas desde otro punto de vista. Por eso planteamos un cambio de variable $$ I_x = I _x ~ Q + i_x ~~~~~ V_x = V_x ~ Q + v_x $$
 ![[cambio de ejes de curva de carga de pequeña señal alterna.webp]]

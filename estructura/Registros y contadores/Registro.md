@@ -6,7 +6,7 @@ tags:
 aliases:
   - Acumulador
 ---
-### Definición
+# Definición
 ---
 Tienen la capacidad de guardar información, y su estructura se conforma por $n$ [[Flip-Flop D sincrónico|flip-flop operando sincrónicamente]] y [[Compuerta|compuertas lógicas]].
 

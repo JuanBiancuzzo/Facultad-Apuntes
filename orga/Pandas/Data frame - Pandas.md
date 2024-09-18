@@ -4,7 +4,7 @@ tags:
   - orga/Pandas
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 ``` Python
 class pandas.DataFrame(data=None, index=None, columns=None, dtype=None, copy=None)

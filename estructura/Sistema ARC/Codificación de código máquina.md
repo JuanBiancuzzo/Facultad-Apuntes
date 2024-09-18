@@ -8,11 +8,11 @@ aliases:
   - Código binario
   - Codificación de código máquina en la arquitectura ARC#En la arquitectura ARC
 ---
-### Definición
+# Definición
 ---
 Dado una [[Arquitectura del microprocesador|arquitectura de un procesador]], y su [[Instruction Set Architecture|set de instrucciones]], se determina una forma de codificar cada instrucción
 
-#### En la arquitectura ARC
+## En la arquitectura ARC
 ---
 Las [[Instruction Set Architecture#Sintaxis|instrucciones]] son traducidas en [[Código de máquina|código de máquina]]. Hay $5$ formatos de instrucción
 
@@ -191,7 +191,7 @@ $$ \begin{matrix}
 \end{array} 
 \end{matrix} $$
 
-##### Modos de direccionamiento
+### Modos de direccionamiento
 ---
 - Inmediato
     - La constante está incluida en la instrucción

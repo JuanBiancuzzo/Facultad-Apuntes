@@ -4,7 +4,7 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 A un [[Resilent distributed dataset - Spark|RDD]] se le puede aplicar una transformación, que se pueden entender como funciones aplicada a todos sus datos, como:
 * [[Map - Spark|Map]]

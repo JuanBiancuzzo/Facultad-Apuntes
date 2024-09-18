@@ -4,7 +4,7 @@ tags:
   - analisis-3/Funciones-elementales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se define como
 $$\begin{align} 
@@ -12,7 +12,7 @@ $$\begin{align}
 	sen(z) &= \frac{1}{2i} \cdot (e^{iz} - e^{-iz})
 \end{align}$$
 
-#### Observaciones
+## Observaciones
 ---
 Donde vemos con la definición del [[Función coseno|coseno]], que cumplen
 $$\begin{align} sen'(z) = cos(z) && cos'(z) = -sen(z) \end{align}$$

@@ -4,6 +4,6 @@ tags:
   - estructura/Sistemas-numéricos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son sistemas de números donde la posición no es relevante para expresar el número.

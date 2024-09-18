@@ -8,11 +8,11 @@ aliases:
 referencias:
   - "189"
 ---
-### Definición
+# Definición
 ---
 En matemática y [[Álgebra de proposiciones|lógica]], la idempotencia es la propiedad para realizar una acción determinada varias veces y aún así conseguir el mismo resultado que se obtendría si se realizase una sola vez
 
-#### Casos específicos
+## Casos específicos
 ---
 Para el [[Álgebra de proposiciones|álgebra de proposiciones]] se entiende como 
 
@@ -26,7 +26,7 @@ Para el [[Álgebra de Boole|álgebra de Boole]] $(B,~+,~\cdot,~',~0_B,~1_B)$ se 
 
 $$ \forall x \in B: ~~~~~ x + x = x, ~~~ xx = x $$ ^1d327b
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

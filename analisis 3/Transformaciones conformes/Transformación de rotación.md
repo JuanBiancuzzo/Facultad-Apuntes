@@ -4,7 +4,7 @@ tags:
   - analisis-3/Transformaciones-conformes
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Transformación conforme]] donde se define como $$
 \begin{align} 
@@ -15,7 +15,7 @@ con la matriz asociada $$ A  = \begin{bmatrix}
 	sen(\alpha) & cos(\alpha)
 \end{bmatrix}$$
 
-### Observación
+# Observación
 ---
 * Para todo complejo $z$ se cumple que $|R_{\alpha}(z)| = |z|$
 * Para todo par de complejos $z$ y $w$ se cumple que $d(R_\alpha(z), R_\alpha(w)) = d(z, w)$

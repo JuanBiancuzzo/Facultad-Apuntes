@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Nomenclatura
 ---
-### Definición
+# Definición
 ---
 Donde queremos llegar a poder encontrar $PR_{y \to x}$
 

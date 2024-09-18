@@ -6,7 +6,7 @@ tags:
 aliases:
   - CC
 ---
-### Definición
+# Definición
 ---
 La corriente continua ocurre cuando las [[Carga eléctrica|cargas]] dentro de los conductores se mueven a velocidad constante, los [[Electrón|electrones]] se mueven siempre en la misma dirección. Esto ocurre en los [[Circuito eléctrico|circuitos eléctricos]]
 

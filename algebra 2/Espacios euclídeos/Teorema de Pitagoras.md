@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-euclídeos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Si [[Norma|norma]] entre $u$, $v$ es $0$ entonces
 

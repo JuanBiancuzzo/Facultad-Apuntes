@@ -16,7 +16,7 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 1/Título 1, Dispo
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "En caso de duda sobre la aplicación de normas legales o convencionales prevalecerá la más favorable al trabajador, considerándose la norma o conjuntos de normas que rija cada una de las instituciones del derecho del trabajo.
 
@@ -24,5 +24,5 @@ Si la duda recayese en la interpretación o alcance de la ley, o en la apreciaci
 
 En tal sentido se aplicará la regla general procesal, en virtud de la cual los hechos deben ser probados por quien los invoca, con plena vigencia de la facultad de los magistrados en la obtención de la verdad objetiva y el respeto a la seguridad jurídica."
 
-### Interpretación
+# Interpretación
 ---

@@ -4,7 +4,7 @@ tags:
   - orga/Machine-learning
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un método en el cual se puede [[Transformación de features|transformar]] variables categóricas en variables numéricas, y hay diferentes formas como:
 * [[One hot encoding]]

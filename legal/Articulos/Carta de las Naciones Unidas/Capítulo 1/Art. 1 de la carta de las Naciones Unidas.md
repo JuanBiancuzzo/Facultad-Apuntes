@@ -25,7 +25,7 @@ previo: "[[legal/Articulos/Carta de las Naciones Unidas/Capítulo 1/Capítulo 1,
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los propósitos de las Naciones Unidas son:
 
@@ -34,5 +34,5 @@ tags:
  3. Realizar la cooperación internacional en la solución de problemas internacionales de carácter económico, social, cultural o humanitario, y en el desarrollo y estímulo del respeto a los derechos humanos y a las libertades fundamentales de todos, sin hacer distinción por motivos de raza, sexo, idioma o religión; y
  4. Servir de centro que armonice los esfuerzos de las naciones para alcanzar estos propósitos comunes."
 
-### Interpretación
+# Interpretación
 ---

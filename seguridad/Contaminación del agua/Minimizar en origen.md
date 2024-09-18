@@ -4,11 +4,11 @@ tags:
   - seguridad/Contaminación-del-agua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Reducción en origen de la carga contaminante del efluente
 
-##### Técnicas de producción más limpia
+### Técnicas de producción más limpia
 ---
 * Intervención de ingeniería:
 	* En las operaciones y procesos de producción de productos y servicios.

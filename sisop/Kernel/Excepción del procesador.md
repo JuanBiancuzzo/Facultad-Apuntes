@@ -4,7 +4,7 @@ tags:
   - sisop/Kernel
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Una forma de [[Kernel#De User mode Modo usuario a Kernel mode Modo kernel|pasar de modo usuario a modo kernel]] es por un evento de [[Hardware]] causado por un [[Programa]] de usuario. El funcionamiento es igual al de una [[Interrupción]]. 
 

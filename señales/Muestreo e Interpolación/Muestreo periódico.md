@@ -4,7 +4,7 @@ tags:
   - señales/Muestreo-e-Interpolación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En ese caso [[Muestreo|muestrear]] una [[Señal|señal]] es generar una [[Serie de tiempo|secuencia de tiempo discreto]] según $$ x(n) = x_c(nT), ~~ n \in \mathbb{Z} $$ donde $T$ es el período de muestreo y $x_c(t)$ es la señal de tiempo continuo
 
@@ -51,7 +51,7 @@ En ese caso [[Muestreo|muestrear]] una [[Señal|señal]] es generar una [[Serie 
 
 La clave es que el [[Conversor Analógico-Digital|conversor AD]] asegure que las muestras $x(n)$ con $n \in \mathbb{Z}$ provee la misma [[Información|información]] que la señal original $x_c(t)$ o lo que es lo mismo, si es posible reconstruir $x_c(t)$ con solamente los valores $x(n)$
 
-#### Transformada de Fourier
+## Transformada de Fourier
 ---
 Podemos analizar como es la [[Transformada de Fourier en tiempo discreto|transformada de Fourier]] de la secuencia de tiempo $x(n)$. Denotaremos la frecuencia para la transformada de tiempo discreto como $\Omega$. Sabemos que $$ X\left( e^{j\Omega} \right) = \sum_{n=-\infty}^{\infty} x(n) ~ \exp(-j\Omega n) $$
 Por otro lado dado que $x_p(t) = \sum_{n=-\infty}^{\infty} x(n) ~ \delta(t - nT)$, tenemos que $$ X_p(j\omega) = \sum_{n=-\infty}^{\infty} x(n) ~ \exp(-j\omega T n) $$

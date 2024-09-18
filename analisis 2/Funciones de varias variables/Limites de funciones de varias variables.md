@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Funciones-de-varias-variables
 ---
-### Definición
+# Definición
 ---
 El concepto de limite [[Función|función]] es el mismo que para funciones de una variable, por lo menos en esencia. Pero volveremos a plantear el concepto de cercanía, para que se adapte a funciones de varias variables
 
@@ -19,12 +19,12 @@ $$ x \in B(x_0, \delta) \cap U(x \ne x_0) \iff f(x) \in B(L, \epsilon) $$
 ![[Límites de una función de varias variables.webp]]
 
 
-#### Formas de resolver limites
+## Formas de resolver limites
 ---
  * [[Limites iterados|Limites iterados]]
  * [[Aproximaciones por curvas|Aproximar por curvas]]
 
-#### Operaciones
+## Operaciones
 ---
 Tomando que $f, g : U \subseteq \mathbb{R}^n \to \mathbb{R}$ dos funciones definidas en el abierto $U$ de $\mathbb{R}^n$ y sea $x_0$ un punto de $U$ o un [[Punto frontera]] de $U$. Suponiendo que 
 

@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Están prohibidas las prácticas que limitan la libertad de contratar del consumidor, en especial, las que subordinan la provisión de productos o servicios a la adquisición simultánea de otros, y otras similares que persigan el mismo objetivo."
 
-### Interpretación
+# Interpretación
 ---

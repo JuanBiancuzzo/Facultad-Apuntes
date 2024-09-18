@@ -4,6 +4,6 @@ tags:
  - discreta/Autómatas
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un [[Lenguaje|lenguaje]] es regular si sus [[Palabra|palabras]] se expresan con [[Expresión regular|expresiones regulares]] 

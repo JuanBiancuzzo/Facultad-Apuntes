@@ -4,6 +4,6 @@ tags:
   - seguridad/Ergonomia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la disciplina científica dedicada al conocimiento de las interacciones entre los seres humanos y otros elementos de un sistema

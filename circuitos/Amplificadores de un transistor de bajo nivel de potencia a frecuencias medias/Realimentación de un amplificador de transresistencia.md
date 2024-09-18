@@ -4,7 +4,7 @@ tags:
   - circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Este [[Amplificador de transresistencia|amplificador de transresistencia]], al realimentarlo, podemos pensarlo como muestreo de [[Tensión|tensión]] y suma de [[Corriente eléctrica|corriente]]. Esto lo podemos ver con el siguiente modelo
 
@@ -114,7 +114,7 @@ Podemos ver la realimentación como $$ \begin{matrix}
 	\boxed{ i_i ~ (1 + k ~ R_m) = i_s } 
 \end{matrix} $$
 
-#### Modelo ideal amplificador
+## Modelo ideal amplificador
 ---
 $R_i \to 0$
 * Para que la corriente de entrada tenga baja impedancia de paso
@@ -122,7 +122,7 @@ $R_i \to 0$
  $R_o \to 0$ 
  * Para que no afecte la caída de tensión al valor de la fuente
 
-#### Modelo ideal realimentación
+## Modelo ideal realimentación
 ---
 $R_{ri} \to \infty$
 * Para no afectar la caída de tensión $v_o$ sobre la resistencia de carga $R_L$

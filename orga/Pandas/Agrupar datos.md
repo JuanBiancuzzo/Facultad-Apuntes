@@ -4,7 +4,7 @@ tags:
   - orga/Pandas
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 ``` python
 DataFrame.groupby(by = None, axis = 0, level = None, as_index = True, 

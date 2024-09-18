@@ -7,6 +7,6 @@ aliases:
   - Home MSC
   - GMSC
 ---
-### Definición
+# Definición
 ---
 Un switch especial es contactado en la red local que usa [[Home Location Register|HLR]], conocido como Gateway Mobile Services Switching Center (GMSC)

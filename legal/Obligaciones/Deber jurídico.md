@@ -4,7 +4,7 @@ tags:
   - legal/Obligaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El deber jurídico es la obligación que se tiene frente al [[Sujeto de derecho#Sujeto activo|titular]] del [[Derecho subjetivo|derecho subjetivo]] correspondiente. El derecho subjetivo es siempre correlativo de un deber jurídico de la misma clase, porque el derecho subjetivo se ejerce frente al que tiene el respectivo deber jurídico y, viceversa
 

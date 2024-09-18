@@ -4,6 +4,6 @@ tags:
   - orga/Visualizaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son aquellos [[Plot|plots]] donde permite mostrar como se relacionan dos o más variable de la misma distribución (Ya sea [[Distribución continua|continua]] o [[Distribución discreta|discreta]]) pero no necesariamente con las mismas unidades.

@@ -4,7 +4,7 @@ tags:
   - estructura/Flip-Flops
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 A diferencia de su versión [[Flip-Flop D asincrónico|asincrónica]] este nos permite tener un reloj o clock para activar su comportamiento. con ecuación característica $$ Q^{n + 1} = D \cdot C_k + Q^n \cdot \overline{C_k} $$
 ```tikz
@@ -54,7 +54,7 @@ A diferencia de su versión [[Flip-Flop D asincrónico|asincrónica]] este nos p
 ```
 
 
-#### Tabla de estados
+## Tabla de estados
 ---
 
 | $C_k$ | $Q^n$ | $D^n$ |     | $Q^{n+1}$ |

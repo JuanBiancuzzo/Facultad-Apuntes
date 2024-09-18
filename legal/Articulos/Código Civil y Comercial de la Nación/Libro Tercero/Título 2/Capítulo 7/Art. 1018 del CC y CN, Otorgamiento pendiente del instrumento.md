@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El otorgamiento pendiente de un instrumento previsto constituye una obligación de hacer si el futuro contrato no requiere una forma bajo sanción de nulidad. Si la parte condenada a otorgarlo es remisa, el juez lo hace en su representación, siempre que las contraprestaciones estén cumplidas, o sea asegurado su cumplimiento."
 
-### Interpretación
+# Interpretación
 ---

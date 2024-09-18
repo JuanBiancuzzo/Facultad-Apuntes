@@ -4,7 +4,7 @@ tags:
   - sisop/La-abstracción-de-proceso
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[System call|system call]] `fork()` es la única forma que un usuario cree un [[Proceso|proceso]] en el [[Sistema operativo|sistema operativo]] [[Unix|UNIX]]. El proceso que invoca a `fork()` es llamado proceso padre, el nuevo proceso creado es llamado hijo.
 
@@ -15,7 +15,7 @@ La [[System call|system call]] `fork()` es la única forma que un usuario cree
 pid_t fork(void);
 ```
 
-#### Que hace?
+## Que hace?
 ---
 1. Crea y asigna una nueva entrada en la Process table para el nuevo [[Proceso|proceso]]
 2. Asigna un número de [[Getpid system call|ID]] único al proceso hijo
@@ -23,7 +23,7 @@ pid_t fork(void);
 4. Realiza ciertas operaciones de [[General Purpose Input Output|I/O]] 
 5. Devuelve el número de ID del hijo al  proceso padre, y un $0$ al proceso hijo
 
-#### Características
+## Características
 ---
 * Una llamada dos valores de retorno
 	* El fork se llama una vez desde el [[Proceso|proceso]] padre, pero devuelve dos valores un valor al proceso padre y otro valor al proceso hijo

@@ -5,18 +5,18 @@ tags:
  - proyecto
  - porfolio
 ---
-### Descripción
+# Descripción
 ---
 Crear una forma de mostrar mis proyectos y quien soy para presentarme
 
 
-### Presentar
+# Presentar
 ---
 
 
 
 
-### Notas
+# Notas
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarNotas", { proyecto: dv.current() });

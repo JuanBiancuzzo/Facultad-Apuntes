@@ -4,11 +4,11 @@ tags:
   - redes/Redes-de-computadoras
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Una vez que el [[Malware|malware]] ha infectado un [[Host|dispositivo]], puede hacer todo tipo de maldades como por ejemplo borrar nuestros [[Archivo|archivos]] o instalar [[Software|software]] espía que recopile nuestra [[Información|información]] personal
 
-#### Tipos de ataques
+## Tipos de ataques
 ---
 * [[Denial of Service|Denegación de servicio]] 
 * [[Denial of Service|DoS distribuidos]]

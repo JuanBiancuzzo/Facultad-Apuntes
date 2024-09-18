@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Funciones-de-varias-variables
 ---
-### Definición
+# Definición
 ---
 Tenemos dos ecuaciones con las variables $u$, $v$, $x$, $y$
 $$ 

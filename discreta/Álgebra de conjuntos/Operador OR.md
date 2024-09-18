@@ -10,11 +10,11 @@ aliases:
   - Disyunción
   - Unión de conjuntos
 ---
-### Definición
+# Definición
 ---
 Este [[Operación lógica|operador lógico]] tiene varias representaciones 
 
-#### Álgebra de proposiciones
+## Álgebra de proposiciones
 ---
 Considerando las [[Función proposicional|funciones proposicionales]] correspondientes $p + q$ dada por la [[Tabla de verdad|tabla de verdad]] $$ \begin{array}{|c:c|c|}
 \hline
@@ -26,7 +26,7 @@ p & q & p + q\\
 1 & 1 & 1 \\
 \hline
 \end{array} $$
-#### Álgebra de conjunto
+## Álgebra de conjunto
 ---
 $A \cup B$ se lee "A unión B" y es el conjunto que contiene los elementos de ambos $$ \forall a, b : a \in A \cup B, ~\text{y} ~ b \in A \cup B, ~\text{donde} a \in A, b \in B $$
 
@@ -56,7 +56,7 @@ Definimos la disyunción $P \cup Q$ como el [[Conjunto|conjunto]] de elementos q
 
 ^fccd72
 
-#### En SQL
+## En SQL
 ---
 En [[Structured Query Language|SQL]] se usa en la cláusula [[Sentencia WHERE|WHERE]], y se usa para filtrar [[Registro SQL|registros]] con más de una condición, donde alguna tiene que cumplir
 
@@ -66,7 +66,7 @@ FROM nombre_tabla
 WHERE condicion1 OR condicion2 OR condicion3 ...;
 ```
 
-##### Combinarlo con el operador AND
+### Combinarlo con el operador AND
 ---
 Se puede combinar el [[Operador AND#En SQL|operador AND]] con el operador OR, donde el operador AND tiene precedencia ante el OR, pero se puede especificar esta usando paréntesis 
 

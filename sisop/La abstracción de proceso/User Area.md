@@ -4,7 +4,7 @@ tags:
   - sisop/La-abstracción-de-proceso
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La información de control sobre un [[Proceso]] es mantenida en dos per process data structures. La [[Estructura Proc]] y la user area. Estas estructuras dependen de la implementación del [[Kernel]] mismo.
 

@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Regimen legal de la propiedad intelectual/Regimen leg
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Nadie tiene derecho a publicar, sin permiso de los autores o de sus derechohabientes, una producción científica, literaria, artística o musical que se haya anotado o copiado durante su lectura, ejecución o exposición públicas o privadas."
 
-### Interpretación
+# Interpretación
 ---

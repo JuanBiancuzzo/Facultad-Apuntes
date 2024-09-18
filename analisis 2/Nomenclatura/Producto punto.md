@@ -6,10 +6,10 @@ tags:
 aliases:
   - Producto escalar
 ---
-### Definición
+# Definición
 ---
 Estando en $\mathbb{R}^n$, se define $$ x ~ y = x_1 ~ y_1 + x_2 ~ y_2 + \cdots + x_n ~ y_n$$  ^c99be2
-#### Propiedades
+## Propiedades
 ---
 1. $x \cdot x \ge 0$ donde $x \cdot x = 0 \iff x = 0$
 2. $x \cdot y = y \cdot y$
@@ -17,7 +17,7 @@ Estando en $\mathbb{R}^n$, se define $$ x ~ y = x_1 ~ y_1 + x_2 ~ y_2 + \cdots +
 4. $(c x) \cdot y = c (x \cdot y), c \in \mathbb{R}$
 
 
-#### Operaciones
+## Operaciones
 ---
 * [[Potencias de un vector|Potencias de un vector]]
 * [[Norma|Norma]]

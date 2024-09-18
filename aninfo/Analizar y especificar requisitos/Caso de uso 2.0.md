@@ -4,6 +4,6 @@ tags:
   - aninfo/Analizar-y-especificar-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son [[Caso de uso|casos de uso]] donde en vez de tener una secuencia de acciones, se tiene historias como las [[Historia de usuario|historias de usuario]].

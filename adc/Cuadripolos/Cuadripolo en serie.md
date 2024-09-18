@@ -4,7 +4,7 @@ tags:
   - adc/Cuadripolos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Si se tiene dos [[Cuadripolo|cuadripolos]] conectados en [[Elementos en serie|serie]]
 

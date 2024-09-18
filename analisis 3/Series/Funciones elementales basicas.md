@@ -4,7 +4,7 @@ tags:
   - analisis-3/Series
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Hay solamente tres elementales algebraicas basicas:
 

@@ -4,7 +4,7 @@ tags:
   - señales/Señales-y-sistemas
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un [[Espacio vectorial|espacio]] de Hilbert es un espacio de [[Producto interno|producto interno]] completo. Los espacios de dimensión finita como lo es $\mathbb{R}$, con [[Norma|norma euclidiana]], son espacios de Hilbert, al igual que los espacios de dimensión infinita $L_2$ y $l^2$.
 

@@ -4,6 +4,6 @@ tags:
   - redes/Capa-de-Transporte
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El [[Protocolo|protocolo]] que implementa el servicio de best-effort delivery, hará su mejor esfuerzo para entregar la información, pero que puede garantizar nada

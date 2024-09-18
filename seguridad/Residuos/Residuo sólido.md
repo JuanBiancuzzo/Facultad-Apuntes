@@ -4,7 +4,7 @@ tags:
   - seguridad/Residuos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un tipo de [[Residuo]] que se puede clasificar según su orígen
  * Domiciliarios

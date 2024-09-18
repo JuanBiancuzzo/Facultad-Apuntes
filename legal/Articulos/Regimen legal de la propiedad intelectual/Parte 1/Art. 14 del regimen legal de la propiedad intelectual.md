@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Regimen legal de la propiedad intelectual/Parte 1/Par
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Para asegurar la protección de la Ley argentina, el autor de una obra extranjera sólo necesita acreditar el cumplimiento de las formalidades establecidas para su protección por las Leyes del país en que se haya hecho la publicación, salvo lo dispuesto en el [[Art. 23 del regimen legal de la propiedad intelectual|artículo 23]], sobre contratos de traducción."
 
-### Interpretación
+# Interpretación
 ---

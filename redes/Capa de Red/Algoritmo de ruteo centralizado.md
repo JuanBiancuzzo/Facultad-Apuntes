@@ -7,7 +7,7 @@ aliases:
   - Link-state algorithms
   - LS algorithms
 ---
-### Definición
+# Definición
 ---
 Un [[Routing algorithms|algoritmo de ruteo]] centralizado computará los caminos de menos costo utilizando el conocimiento global de la [[Red|red]]. Se deberán conocer todos los [[Router|routers]], [[Red#Redes de accesos|enlaces]], y sus costos, para esto todos los nodos realizan un [[Internet Protocol Versión 4#Broadcast|broadcast]] de su información
 
@@ -17,7 +17,7 @@ Los algoritmos de ruteo pueden fallar, causando oscilaciones, cuando el costo de
 
 Otra solución es la de asegurar que no todos los routers ejecutarán el algoritmo al mismo tiempo. Curiosamente, los tiempos de sincronización de los routers pueden sincronizarse con el tiempo de forma automática. Debido a esto, se podría aleatorizar el tiempo en el que envía un link advertisement
 
-#### Análisis
+## Análisis
 ---
 Podemos analizar el algoritmos bajo tres categorías
 * Complejidad del [[Paquete|mensaje]]

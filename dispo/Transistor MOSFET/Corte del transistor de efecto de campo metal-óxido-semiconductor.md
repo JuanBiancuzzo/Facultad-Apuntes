@@ -6,7 +6,7 @@ tags:
   - dispo/Transistor-MOSFET
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Teniendo un [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] con $V_{GS} < V_T$, $V_{GD} < V_T$ con $V_{DS} > 0$
 

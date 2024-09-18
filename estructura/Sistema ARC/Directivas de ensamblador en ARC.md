@@ -4,7 +4,7 @@ tags:
  - estructura/Sistema-ARC
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Las directivas son los comandos que afectan en el momento de ensamblado, por lo que no generan código objeto sino información necesaria para el ensamblado
 

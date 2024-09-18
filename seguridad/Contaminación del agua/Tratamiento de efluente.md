@@ -4,22 +4,22 @@ tags:
   - seguridad/Contaminación-del-agua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Conjunto de operaciones y/o procesos tendientes al eliminar del líquido efluente aquellos agentes que generan contaminación o perturbación en el medio [[Cuerpo receptor|receptor]] superando los [[Límites de vuelco|límites admisibles de vuelvo]].
 
-#### Operaciones y/o procesos
+## Operaciones y/o procesos
 ---
-##### Físicos
+### Físicos
 [[Tratamiento con rejas|Rejas]], [[Tratamiento de desbaste|desbaste]], desarenadores, [[Tratamiento de sedimentación|sedimentadores]].
 
-##### [[Tratamiento químico|Químicos]]
+### [[Tratamiento químico|Químicos]]
 Oxido reducción, [[Tratamiento de desinfección|desinfección]], neutralización, [[Tratamiento de coagulación|coagulación]] y [[Tratamiento de floculación|floculación]].
 
-##### [[Tratamiento biológico|Biológicos]]
+### [[Tratamiento biológico|Biológicos]]
 [[Tratamiento lecho percolador|Tratamiento lecho percolador]], [[Tratamiento de barro activado|barros activados]], [[Laguna|lagunas]].
 
-### Clasificación
+# Clasificación
 ---
 * La reacción entre [[Demanda bioquímica de oxígeno|demanda bioquímica]] y [[Demanda química de oxígeno|demanda química]], si esta es mayor a $0.6$ entonces se aplica un [[Tratamiento de efluente#Biológicos|tratamiento biológico]] y si es menor a $0.2$ con un [[Tratamiento de efluente#Químicos|tratamiento químico]].
 * Para la [[Demanda bioquímica de oxígeno|demanda bioquímica]] se aplica un [[Tratamiento de efluente#Biológicos|tratamiento biológico]]

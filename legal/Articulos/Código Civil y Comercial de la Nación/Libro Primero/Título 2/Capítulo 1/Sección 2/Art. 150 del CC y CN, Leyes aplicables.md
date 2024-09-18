@@ -19,7 +19,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Las personas jurídicas privadas que se constituyen en la República, se rigen:
 
@@ -29,5 +29,5 @@ tags:
 
 Las personas jurídicas privadas que se constituyen en el extranjero se rigen por lo dispuesto en la ley general de sociedades."
 
-### Interpretación
+# Interpretación
 ---

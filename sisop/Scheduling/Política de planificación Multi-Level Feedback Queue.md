@@ -6,13 +6,13 @@ tags:
   - sisop/Scheduling
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta [[Políticas de planificación|técnica de planificación]] intenta acatar a los siguientes dos problemas
 * Intentar optimizar el tiempo de [[Métrica Turn Around de planificación|turn around]], que se realiza mediante la ejecución de la tarea más corta primero, desafortunadamente el [[Sistema operativo|sistema operativo]] nunca sabe a priori cuanto va a tardar en correr una tarea
 * Intenta minimizar el [[Métrica Tiempo de respuesta de planificación|tiempo de respuesta]], desafortunadamente los algoritmos como [[Política de planificación Round Robin|round-robin]] reducen el tiempo de respuesta pero son terribles en turn around.
 
-#### Reglas básicas
+## Reglas básicas
 ---
 MLFQ tiene un conjunto de distintas [[Cola|colas]], cada una de estas colas tiene asignado un nivel de prioridad.
 

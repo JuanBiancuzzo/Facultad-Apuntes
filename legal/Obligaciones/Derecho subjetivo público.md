@@ -4,7 +4,7 @@ tags:
   - legal/Obligaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los derechos subjetivos públicos son las facultades que los particulares pueden hacer valer frente al Estado en cuanto [[Art. 146 del CC y CN, Persona jurídicas públicas|persona jurídica de carácter público]], así como los que el [[Estado|Estado]] puede ejercer respecto de los particulares
 

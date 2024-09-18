@@ -10,7 +10,7 @@ aliases:
   - FHSS
   - 802.15.1
 ---
-### Definición
+# Definición
 ---
 Es una tecnología de bajo alcance, costo, y consumo de energía. Se utiliza comúnmente para conectar periféricos con una [[Computadora|computadora]]. Estas redes, llamadas 802.15.1, a veces son conocidas como wireless personal area networks (WPAN)
 

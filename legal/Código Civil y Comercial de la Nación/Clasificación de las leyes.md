@@ -4,11 +4,11 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Algunos de los criterios de clasificación que oportunamente analizamos respecto de las [[Norma jurídica#Clasificación|normas jurídicas]] tienen aplicación para las [[Ley|leyes]]
 
-#### La ley con relación al tiempo
+## La ley con relación al tiempo
 ---
 Teniendo en cuenta su ámbito temporal de obligatoriedad, como ya señalamos, la ley puede ser de vigencia determinada o indeterminada, según se haya prefijado o no su inicio o lapso de duración. 
 
@@ -19,7 +19,7 @@ Así lo establece el [[Art. 7 del CC y CN, Eficacia temporal|art. 7 del CC y CN]
 
 En la norma transcrita se determina claramente la irretroactividad de las leyes como principio general y la retroactividad como excepción. Las leyes son [[Retroactividad|irretroactivas]] porque, a partir de su entrada en [[Art. 5 del CC y CN, Vigencia|vigencia]], rigen hacia el futuro, aunque su aplicación alcance a los efectos de relaciones ya existentes. Son retroactivas sólo excepcionalmente cuando expresamente lo prevén y aun así sin afectar derechos amparados por garantías constitucionales
 
-#### La ley con relación al espacio
+## La ley con relación al espacio
 ---
 Teniendo en cuenta su ámbito espacial, las leyes pueden tener aplicación en todo el territorio del Estado o un alcance restringido a un sector de éste. A las primeras se las denomina leyes nacionales como, por ejemplo, el [[Código Civil y Comercial de la Nación|Código Civil y Comercial de la Nación]], el [[Código Penal de la Nación|Código Penal de la Nación]], etc., y a las segundas provinciales o locales, como los Códigos Procesales sancionados por el [[Poder Legislativo|Poder Legislativo]] de cada provincia que rigen sólo en sus respectivos territorios
 
@@ -32,10 +32,10 @@ Asimismo, las formas y solemnidades de los actos se rigen por la ley del lugar d
 
 En materia penal, todos los delitos cometidos o cuyos efectos deban producirse en el territorio de la Nación argentina o en los lugares sometidos a su [[Jurisdicción|jurisdicción]], así como los cometidos en el extranjero por agentes o empleados de autoridades argentinas en el desempeño de su cargo, se rigen por la ley penal argentina, el [[Código Penal de la Nación|Código Penal de la Nación]] ([[Art. 1 del Código Penal|art. 1ro. del CP]]).
 
-#### Elaboración de enunciados legales
+## Elaboración de enunciados legales
 ---
 ![[Técnica jurídica#Definición]]
 
-#### Codificación
+## Codificación
 ---
 ![[Codificación de leyes#Definición]]

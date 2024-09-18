@@ -4,7 +4,7 @@ tags:
   - analisis-3/Series
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dadas dos [[Sucesión|sucesiones]] $\alpha = (\alpha_n)_{n = 1}^{\infty}$, $\beta = (\beta)_{n = 1}^{\infty}$ en $\mathbb{K}$ y dados dos constantes $a \in \mathbb{K}$ y $b \in \mathbb{K}$, quedan bien definidas las sucesiones
 

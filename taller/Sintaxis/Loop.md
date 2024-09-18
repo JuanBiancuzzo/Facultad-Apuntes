@@ -4,7 +4,7 @@ tags:
   - taller/Sintaxis
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un loop infinito que solo se puede salir con un `break`, por ejemplo
 

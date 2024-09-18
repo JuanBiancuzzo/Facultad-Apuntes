@@ -8,7 +8,7 @@ tags:
 aliases:
   - Address space
 ---
-### Definición
+# Definición
 ---
 El espacio de direcciones o address space es la abstracción fundamental sobre la [[Memoria|memoria]] de una [[Computadora|computadora]]
 
@@ -22,7 +22,7 @@ Por ejemplo
 * Finalmente se utiliza el [[Heap|heap]] para reservar memoria de forma dinámica
 * Existen otras cosas de la memoria, como variables estáticas, constantes, etc.
 
-#### Ejemplo
+## Ejemplo
 ---
 Se presenta un pequeño espacio de direcciones de $16 ~ KB$
 

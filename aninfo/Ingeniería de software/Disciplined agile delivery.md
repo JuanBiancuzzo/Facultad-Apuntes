@@ -4,6 +4,6 @@ tags:
   - aninfo/Ingeniería-de-software
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un [[Proceso|proceso]] de [[Desarrollo de software]], es una aplicación de [[Scrum]], q usa [[Agile]], en un contexto más diciplinado

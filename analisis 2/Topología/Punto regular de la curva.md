@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Topología/2
 ---
-### Definición
+# Definición
 ---
 Dada una curva $C \subset \mathbb{R}^n$ de ecuación $\vec{X} = \vec{g}(t)$ con $t \in I$. Un punto $a = \vec{g}(t_0)∈C$  es punto regular de la curva cuando $\vec{g}$ es [[Derivable|derivable]] en $t_0$ y $\vec{g}(t_0)≠0$
 

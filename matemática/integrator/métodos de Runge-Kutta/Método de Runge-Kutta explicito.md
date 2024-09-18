@@ -10,7 +10,7 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
 ```
-### Definición
+# Definición
 ---
 De la familia de [[Método de Runge-Kutta|métodos de Runge-Kutta]], se puede generalizar $$ y_{n + 1} = y_n + h ~ \sum_{i = 1}^{s} b_i, k_i $$ donde $$ \begin{cases} 
 	k_1 &= f(t_n, ~ y_n), \\
@@ -29,7 +29,7 @@ c_s    & a_{s1} & a_{s2} & \cdots & a_{s, s-1} \\\hline
        & b_1    & b_2    & \cdots & b_{s - 1} & b_s \\
 \end{array} $$
 
-#### Ejemplo
+## Ejemplo
 ---
 El método de Runge-Kutta de Orden 4, tiene el tablero 
 $$ \begin{array}{c|c c c c}
@@ -41,7 +41,7 @@ $$ \begin{array}{c|c c c c}
 \end{array} $$
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

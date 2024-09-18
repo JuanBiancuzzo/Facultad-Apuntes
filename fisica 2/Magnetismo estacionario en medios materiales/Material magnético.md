@@ -8,7 +8,7 @@ aliases:
   - Campo de magnetización#^campo-magnetizacion
   - Campo magnético#^campo-magnetico
 ---
-### Definición
+# Definición
 ---
 Una [[Partícula|partícula]] cargada orbita alrededor de su núcleo. Esto se puede pensar como [[Corriente eléctrica|corriente]] a través de una espira circular, por lo que tiene un [[Momento angular|momento angular]]. Este momento angular se alineará con el [[Campo de inducción magnética|campo de inducción magnético]] en ese punto del espacio, por acción de un [[Torque|torque]]
 

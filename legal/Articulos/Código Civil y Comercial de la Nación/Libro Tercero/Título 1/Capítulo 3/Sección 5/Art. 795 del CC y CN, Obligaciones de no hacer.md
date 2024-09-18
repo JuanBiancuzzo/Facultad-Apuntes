@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "En las obligaciones de no hacer el deudor incurre en la pena desde el momento que ejecuta el acto del cual se obligó a abstenerse."
 
-### Interpretación
+# Interpretación
 ---

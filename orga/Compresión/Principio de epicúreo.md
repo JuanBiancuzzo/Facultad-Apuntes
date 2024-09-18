@@ -4,6 +4,6 @@ tags:
   - orga/Compresión
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado varias teorías consistentes con la información, todas pueden ser validas.

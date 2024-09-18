@@ -7,14 +7,14 @@ tags:
 aliases:
   - Amplificador
 ---
-### Definición
+# Definición
 ---
 Es un elemento de un [[Circuito eléctrico|circuito]] activo
 * Diseñado como un amplificador de [[Tensión|tensión]]
 * Diseñado para realizar operaciones matemáticas de suma, resta, multiplicación, división, diferenciación e integración, sobre [[Señal|señales eléctricas]]
 * Utilizados en instrumentos, computadoras analógicas y posteriormente en todo circuito
 
-##### Simbología
+### Simbología
 ---
 ```tikz
 \usepackage{amssymb}
@@ -62,7 +62,7 @@ Es un elemento de un [[Circuito eléctrico|circuito]] activo
 
 Donde $V^+$ es la entrada no inversora, $V^-$ es la entrada inversora, $V_{out}$ es la salida, $V^+_S$ alimentación positiva y $V^-_S$ es la alimentación negativa
 
-#### Configuraciones
+## Configuraciones
 ---
 El amplificador se puede utilizar de muchas maneras, las configuraciones más conocidas son
  * Inversor ![[Amplificador inversor#^cf9861]] ![[Amplificador inversor#^119653]]
@@ -73,28 +73,28 @@ El amplificador se puede utilizar de muchas maneras, las configuraciones más co
 * Derivador ![[Circuito derivador#^f731f9]] ![[Circuito derivador#^3062c0]]
 * Cascada ![[Amplificadores en cascada#^7d5f4d]]
 
-#### Implementaciones
+## Implementaciones
 ---
 Se tienen distintas configuraciones de amplificadores como
 
-##### Amplificadores usando un TBJ
+### Amplificadores usando un TBJ
 ---
 * Amplificador emisor común ![[Amplificador Emisor Común con un transistor bipolar de juntura#^6b9228]]  ![[Amplificador Emisor Común con un transistor bipolar de juntura#^daaa29]]
 * Amplificador colector común / Seguidor ![[Amplificador Colector Común con un transistor bipolar de juntura#^5c5e25]]  ![[Amplificador Colector Común con un transistor bipolar de juntura#^e8dc2c]]
 * Amplificador base común ![[Amplificador Base Común con un transistor bipolar de juntura#^4ae162]]  ![[Amplificador Base Común con un transistor bipolar de juntura#^364fd0]]
 
-##### Amplificadores usando un MOSFET
+### Amplificadores usando un MOSFET
 ---
 * Amplificador source común ![[Amplificador Source Común con un transistor de efecto de campo metal-óxido-semiconductor#^bef7b2]]  ![[Amplificador Source Común con un transistor de efecto de campo metal-óxido-semiconductor#^27b24b]]
 *  Amplificador drain común ![[Amplificador Drain Común con un transistor de efecto de campo metal-óxido-semiconductor#^6e8ccc]] ![[Amplificador Drain Común con un transistor de efecto de campo metal-óxido-semiconductor#^84a8e4]]
  * Amplificador gate común ![[Amplificador Gate Común con un transistor de efecto de campo metal-óxido-semiconductor#^699639]]  ![[Amplificador Gate Común con un transistor de efecto de campo metal-óxido-semiconductor#^5ee09c]]
 
-##### Amplificadores usando un JFET
+### Amplificadores usando un JFET
 ---
 * Amplificador source común ![[Amplificador Source Común con un transistor de efecto de campo de unión#^f67315]]  ![[Amplificador Source Común con un transistor de efecto de campo de unión#^837c41]]
 * Amplificador drain común ![[Amplificador Drain Común con un transistor de efecto de campo de unión#^9a3871]]  ![[Amplificador Drain Común con un transistor de efecto de campo de unión#^1b22df]]
 * Amplificador gate común ![[Amplificador Gate Común con un transistor de efecto de campo de unión#^9a23eb]]  ![[Amplificador Gate Común con un transistor de efecto de campo de unión#^f4b95c]]
-##### Resolución
+### Resolución
 ---
 La resolución de un amplificador significa encontrar el punto de polarización, continua o reposo $Q$ y en señal encontrar los parámetros como la [[Ganancia|ganancia]] con respecto a la [[Señal|señal]] de entrada $A_v$ y con el generador $v_s$ dando $A_{vs}$, como también las resistencias de entrada $R_i$ y de salida $R_o$
 

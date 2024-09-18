@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Hay donación cuando una parte se obliga a transferir gratuitamente una cosa a otra, y ésta lo acepta."
 
-### Interpretación
+# Interpretación
 ---

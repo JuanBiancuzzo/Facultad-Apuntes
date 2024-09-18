@@ -4,11 +4,11 @@ tags:
   - legal/Derechos-humanos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un cambio climático se define​​ como la variación en el estado del sistema climático terrestre, formado por la [[Atmósfera|atmósfera]], la hidrosfera, la criosfera, la litosfera y la biosfera, que perdura durante periodos de tiempo suficientemente largos (décadas o más tiempo)​ hasta alcanzar un nuevo equilibrio.
 
-#### Cuestión de derecho
+## Cuestión de derecho
 ---
 La Conferencia de las Naciones Unidas sobre el Medio Ambiente y el Desarrollo, en la declaración de rio de 1992, se menciona que para la [[Dignidad humana|vida digna]] es necesario una calidad de ambiente apta para los humanos, un medio ambiente sano.
 
@@ -16,7 +16,7 @@ El cambio climático afecta el medio ambiente produciendo que este deje de ser s
 
 No cualquiera puede reclamar ante un daño ambiental, solo aquellos que estas siendo afectados por este daño, donde el foco es la persona y como esta siendo afectada.
 
-##### Acuerdos
+### Acuerdos
 ---
 Los principales acuerdos fueron
 * Declaración de Rio de 1992, la conferencia de las Naciones Unidas sobre el Medio Ambiente y el Desarrollo

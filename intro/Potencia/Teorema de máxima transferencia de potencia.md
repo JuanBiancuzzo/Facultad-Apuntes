@@ -4,7 +4,7 @@ tags:
   - intro/Potencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El teorema de máxima transferencia de [[Potencia|potencia]] establece que, dada una fuente, con un [[Resistor]] de fuente fijado de antemano, el resistor de carga que maximiza la transferencia de potencia es aquel con un valor igual al resistor de fuente.
 
@@ -16,7 +16,7 @@ R_\text{Th} = R_\text{carga}
 $$
 
 Para [[Fasor|fasores]] nos da $$ Z_L = Z^*_{th} $$
-#### Análisis
+## Análisis
 ---
 
 ```tikz
@@ -84,7 +84,7 @@ $$
 $$
 Es decir, se pierde la mitad de la potencia entregada por la fuente.
 
-#### Análisis para fasores
+## Análisis para fasores
 ---
 ```tikz
 \usepackage{circuitikz}

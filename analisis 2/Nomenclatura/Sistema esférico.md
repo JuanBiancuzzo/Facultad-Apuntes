@@ -8,7 +8,7 @@ aliases:
   - Transformar coordenadas esféricas a cartesianas#^esfericas-cartesianas
   - Transformar coordenadas esféricas a cilíndricas#^esfericas-cilindricas
 ---
-### Definición
+# Definición
 ---
 En el sistema esférico la posición $P$ en el [[Espacio|espacio]] se describe mediante el [[Norma|módulo]] del vector posición y los ángulos que forma con dos ejes perpendiculares que pasan por el origen de coordenadas, que coinciden con los ejes $z$, $y$, $x$ del [[Sistema cartesiano|sistema cartesiano]] correspondiente $$ P = (r_p,~\theta_p,~\varphi_p) $$
 ```tikz
@@ -62,7 +62,7 @@ En el sistema esférico la posición $P$ en el [[Espacio|espacio]] se describe m
 \end{document}
 ```
 
-#### Transformar coordenadas
+## Transformar coordenadas
 ---
 Para pasarlo a [[Sistema cartesiano|coordenadas cartesianas]] 
 $$ \begin{align} 
@@ -86,7 +86,7 @@ $$ \begin{align}
 
 De cilíndricas ![[Sistema cilíndrico#^cilindricas-esfericas]]
 
-#### Diferencial de longitud
+## Diferencial de longitud
 ---
 $$ \begin{array}{|c|c|c|} \hline
    \text{Coordenada que} & & \\
@@ -96,7 +96,7 @@ $$ \begin{array}{|c|c|c|} \hline
    \varphi & r \sin(\theta) ~ d\varphi & r \sin(\theta) ~ \hat{\varphi} ~ d\varphi \\
    \theta & r ~ d\theta & r ~ \hat{\theta} ~ d\theta \\
 \hline \end{array} $$
-#### Diferencial de área
+## Diferencial de área
 ---
 $$ \begin{array}{|c|c|c|} \hline
    \text{Coordenada que se} & & \\
@@ -106,22 +106,22 @@ $$ \begin{array}{|c|c|c|} \hline
    \varphi & r ~ d\theta ~ dr & r ~ \hat{\varphi} ~ d\theta ~ dr \\
    \theta & r \sin(\theta) ~ dr ~ d\varphi & r \sin(\theta) ~ \hat{\theta} ~ dr ~ d\varphi \\
 \hline \end{array} $$
-#### Diferencial de volumen
+## Diferencial de volumen
 ---
 $$ dV =  r^2 \sin(\theta) ~ dr ~ d\varphi ~ d\theta $$
 
-#### Fórmula del gradiente
+## Fórmula del gradiente
 ---
 ![[Gradiente#^gradiente-esferico]]
 
-#### Fórmula de la divergencia
+## Fórmula de la divergencia
 ---
 ![[Divergencia#^divergencia-esferico]]
 
-#### Fórmula del rotor
+## Fórmula del rotor
 ---
 ![[Rotor#^rotor-esferico]]
 
-#### Fórmula del laplaciano
+## Fórmula del laplaciano
 ---
 ![[Laplaciano#^laplaciano-esferico]]

@@ -4,7 +4,7 @@ tags:
   - orga/Compresión
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado la [[Probabilidad#Laplace|probabilidad de Laplace]], que asume [[Evento equiprobable|eventos equiprobables]], donde
 ![[Probabilidad#Laplace]]

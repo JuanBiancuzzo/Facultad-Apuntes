@@ -6,7 +6,7 @@ tags:
   - seguridad/Ergonomia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Comprenden cualquier daño o trastorno de las articulaciones y otros tejidos. Normalmente afectan:
 * Espalda
@@ -23,7 +23,7 @@ La mayoría de los TME [[Enfermedad profesional|relacionados con el trabajo]] se
 * Trabajo a un ritmo elevado
 * Estar de pie o sentado durante mucho tiempo en la misma posición
 
-#### Efectos de la postura
+## Efectos de la postura
 ---
 
 | Postura de trabajo                               | Partes del cuerpo afectadas                             |

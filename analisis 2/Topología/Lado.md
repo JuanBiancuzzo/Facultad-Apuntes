@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Topología/1
 ---
-### Definición
+# Definición
 ---
 El lado, es el segmento que une dos puntos que pertenecen en $\mathbb{R}^n$
 

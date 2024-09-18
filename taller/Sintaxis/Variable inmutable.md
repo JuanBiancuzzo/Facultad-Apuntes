@@ -4,7 +4,7 @@ tags:
   - taller/Sintaxis
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Las [[Variable|variables]] en rust son inmutables por default, y su declaración es:
 ``` rust

@@ -6,16 +6,16 @@ tags:
 aliases:
   - Aislante
 ---
-### Definición
+# Definición
 ---
 Los aislantes o dieléctricos no poseen [[Electrón|electrones]] libres, por lo que no será posible el desplazamiento de [[Carga eléctrica|carga]] a través de ellos
 
-#### Modelo elemental
+## Modelo elemental
 ---
 * Cada [[Molécula|molécula]] del material adquiere un [[Momento dipolar dieléctrico|momento dipolar eléctrico]] inducido proporcional al [[Campo eléctrico|campo]] externo $\vec{E}$
 * Las moléculas poseen una distribución de carga positiva y negativa, por lo que son reorientadas por el campo externo, en lugar de estar orientadas al azar
 
-#### Polarización
+## Polarización
 ---
 El dieléctrico se polariza por acción del campo eléctrico externo
 

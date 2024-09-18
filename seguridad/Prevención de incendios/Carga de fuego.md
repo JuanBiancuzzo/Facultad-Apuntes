@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-incendios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es el peso equivalente en madera, por unidad de superficie ($Kg / m^2$) capaz de desarrollar una cantidad de calor equivalente a la de los materiales contenidos en el lugar de incendio.
 

@@ -6,7 +6,7 @@ tags:
 referencias:
   - "231"
 ---
-### Definición
+# Definición
 ---
 Un campo electromagnético es un campo físico, de tipo tensorial, producido por aquellos elementos cargados eléctricamente, que afecta a partículas con [[Carga eléctrica|carga eléctrica]]
 
@@ -17,7 +17,7 @@ El campo puede verse como la combinación de un campo eléctrico y un [[Material
 ![[Ecuación de onda plana en un dieléctrico perfecto#^onda-transversal]]
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

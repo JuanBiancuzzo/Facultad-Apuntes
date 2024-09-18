@@ -11,11 +11,11 @@ aliases:
 ```dataviewjs
 	await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
 ```
-### Definición
+# Definición
 ---
 Esta ley tiene correcciones expresadas en [[Propiedad Intelectual|Propiedad Intelectual Ley 25.036]]
 
-### Artículos
+# Artículos
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/legal/mostrarArticulos", { paginaActual: dv.current() });

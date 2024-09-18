@@ -6,7 +6,7 @@ tags:
   - redes/Redes-de-computadoras
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La red de distribución [[Acceso a una red por cable#Fibra óptica|óptica]] más simple se denomina fibra directa, en la que existe una fibra que sale de la central hasta cada domicilio. Sin embargo, lo más habitual es que cada fibra saliente de la central sea compartida por muchas viviendas y esta no se divida en fibras individuales específicas del cliente hasta llegar a un punto muy próximo a las viviendas
 

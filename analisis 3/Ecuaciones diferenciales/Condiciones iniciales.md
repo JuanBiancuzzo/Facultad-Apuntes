@@ -4,7 +4,7 @@ tags:
   - analisis-3/Ecuaciones-diferenciales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Tenemos un sistema de ecuaciones donde una es una [[Ecuación diferencial ordinaria]] y otra dan condiciones en $t = 0$. Por ejemplo $$ \begin{cases} 
 	y''(t) + y(t) = 0 \\

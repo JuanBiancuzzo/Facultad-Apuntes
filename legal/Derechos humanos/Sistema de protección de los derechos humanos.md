@@ -4,7 +4,7 @@ tags:
   - legal/Derechos-humanos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Este sistema de protección, bajo las [[Organización de las Naciones Unidas (ONU)|naciones unidas]], se encarga del tratamiento de violaciones de [[Derecho humano|derechos humanos]] cuando los [[Estado|estados]] que están involucrados en esas violaciones han ratificado un tratado o todavía no entraron los tratados en vigor.
 

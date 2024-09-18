@@ -4,11 +4,11 @@ tags:
   - algebra-2/Espacios-Vectoriales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Tambien conocida como la suma
 
-#### Características de la composición interna
+## Características de la composición interna
 ---
 1. La suma $+$ es una ley de composición interna, es decir $u+v\in\mathbb{V}$ para todo $u, v\in\mathbb{V}$
 2. La suma $+$ es [[Conmutatividad|conmutativa]] ![[Conmutatividad#^67ee7b]]

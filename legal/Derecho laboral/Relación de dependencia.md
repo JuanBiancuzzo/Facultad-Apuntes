@@ -4,19 +4,19 @@ tags:
   - legal/Derecho-laboral
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La relación de dependencia es el trabajo protegido por la [[Ley de Contrato de Trabajo|LCT]], por estatutos profesionales, etc. Existen elementos que la caracterizan y estos son
 
-#### Jurídica
+## Jurídica
 * Sometimiento a autoridad del empleador
 * Facultades de dirección, control y disciplina del empleador hacia el trabajador
 
-#### Económica
+## Económica
 * Trabajo por riesgo y cuenta ajena: la idea de trabajar por cuenta ajena implica que el trabajador realiza su labor asumiendo un riesgo económico mínimo a comparación del empleador
 * Ajenidad al riesgo empresario
 
-#### Técnica
+## Técnica
 * Subordinación a los criterios del empleador
 	* Implica que el trabajador sigue los criterios y métodos establecidos por el empleador
 * Calificación y subordinación

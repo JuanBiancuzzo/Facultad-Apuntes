@@ -8,7 +8,7 @@ tags:
   - redes/Capa-de-Transporte
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los ataques DoS distribuidos controlan varios orígenes y hace que cada uno de ellos bombardee el objetivo con [[Tráfico|tráfico]]
 

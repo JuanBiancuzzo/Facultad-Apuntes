@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Regimen legal de la propiedad intelectual/Regimen leg
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La propiedad intelectual de las obras anónimas pertenecientes a instituciones, corporaciones o personas jurídicas, durará cincuenta años contados desde su publicación."
 
-### Interpretación
+# Interpretación
 ---

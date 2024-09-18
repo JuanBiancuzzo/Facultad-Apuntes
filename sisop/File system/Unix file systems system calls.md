@@ -4,86 +4,86 @@ tags:
   - sisop/File-system
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Las [[System call|system calls]] de archivos pueden dividirse en dos clases:
 * Las que operan sobre los [[Archivo|archivos]]
 * Las que operan sobre los [[Archivo|metadatos de los archivos]]
 
-#### `Open()`
+## `Open()`
 ---
 ![[Open system call#Definición]]
 
-#### `Creat()`
+## `Creat()`
 ---
 ![[Creat system call#Definición]]
 
-#### `Close()`
+## `Close()`
 ---
 ![[Close system call#Definición]]
 
-#### `Read()`
+## `Read()`
 ---
 ![[Read system call#Definición]]
 
-#### `Write()`
+## `Write()`
 ---
 ![[Write system call#Definición]]
 
-#### `Lseek()`
+## `Lseek()`
 ---
 ![[Lseek system call#Definición]]
 
-#### `Dup()`
+## `Dup()`
 ---
 ![[Dup system call#Definición]]
 
-#### `Link()`
+## `Link()`
 ---
 ![[Link system call#Definición]]
 
-#### `Unlink()`
+## `Unlink()`
 ---
 ![[Unlink system call#Definición]]
 
-#### `Mkdir()`
+## `Mkdir()`
 ---
 ![[Mkdir system call#Definición]]
 
  
-#### `Rmdir()`
+## `Rmdir()`
 ---
 ![[Rmdir system call#Definición]]
 
  
-#### `Chdir()`
+## `Chdir()`
 ---
 ![[Chdir system call#Definición]]
  
-#### `Opendir()`
+## `Opendir()`
 ---
 ![[Opendir system call#Definición]]
 
-#### `Closedir()`
+## `Closedir()`
 ---
 ![[Closedir system call#Definición]]
 
-#### `Stat()`
+## `Stat()`
 ---
 ![[Stat system call#Definición]]
 
-#### `Access()`
+## `Access()`
 ---
 ![[Access system call#Definición]]
 
-#### `Chmod()`
+## `Chmod()`
 ---
 ![[Chmod system call#Definición]]
  
-#### `Chown()`
+## `Chown()`
 ---
 ![[Chown system call#Definición]]
  
-#### `Umask()`
+## `Umask()`
 ---
 ![[Umask system call#Definición]]

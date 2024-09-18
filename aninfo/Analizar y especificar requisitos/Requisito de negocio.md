@@ -4,7 +4,7 @@ tags:
   - aninfo/Analizar-y-especificar-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 [[Requisito|Requisitos]] de alto nivel del [[Sistema]]/software, desde el punto de vista de la organización que lo solicita. Respondiendo a por qué la organización necesita el [[Sistema]]/software.
 

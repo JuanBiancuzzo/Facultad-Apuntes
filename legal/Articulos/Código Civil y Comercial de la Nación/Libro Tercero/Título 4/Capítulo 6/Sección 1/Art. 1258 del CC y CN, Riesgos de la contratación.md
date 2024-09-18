@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Si los bienes necesarios para la ejecución de la obra o del servicio perecen por fuerza mayor, la pérdida la soporta la parte que debía proveerlos."
 
-### Interpretación
+# Interpretación
 ---

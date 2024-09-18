@@ -4,7 +4,7 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El Poder Ejecutivo tiene, entre las atribuciones conferidas por la [[Constitución de la Nación|Constitución de la Nación]] y en ejercicio de su función de administración pública, la potestad de dictar [[Norma jurídica|normas jurídicas]] reglamentarias a las que se las llama, indistintamente, reglamentos o decretos
 
@@ -19,24 +19,24 @@ El jefe de gabinete de ministros personalmente y dentro de los diez días somete
 
 Los reglamentos, como resultado de la producción normativa del órgano ejecutivo, pueden ser de diferente tipo
 
-#### Reglamentos de ejecución o subordinados
+## Reglamentos de ejecución o subordinados
 ---
 Son los decretos reglamentarios de las leyes sancionadas por el Congreso a los que se refiere el inciso 2 de la norma constitucional transcrita. 
 
 Se los llama también subordinados por cuanto su existencia se justifica en función de que exista una ley a reglamentar y se destinan a facilitar la ejecución de dicha ley, complementándola en los detalles pero sin poder modificar su contenido sustancial. Es decir, el decreto reglamentario necesita de la ley que reglamenta para tener razón de ser, mientras que la ley del Congreso no precisa del decreto para tener vigencia.
 
-#### Reglamentos delegados
+## Reglamentos delegados
 ---
 Son aquellos decretos que, sin perjuicio de estar en principio prohibidos, son dictados a partir de una delegación de funciones que, excepcionalmente, el Congreso hace al Poder Ejecutivo. Los prevé el [[Art. 76 de la Constitución Nacional|art. 76 de la Constitución Nacional]] en estos términos
 ![[Art. 76 de la Constitución Nacional#Artículo]]
 
 La caducidad resultante del transcurso del plazo previsto en el párrafo anterior no importará revisión de las relaciones jurídicas nacidas al amparo de las normas dictadas en consecuencia de la delegación legislativa.
 
-#### Reglamentos autónomos
+## Reglamentos autónomos
 ---
 Son aquellos que el Poder Ejecutivo destina a regular el ejercicio de sus propias funciones o actividades de administración.
 
-#### Decretos de necesidad y urgencia
+## Decretos de necesidad y urgencia
 ---
 Estos decretos fueron incorporados por la reforma constitucional de 1994. Conforme surge del inciso 3 de la norma transcrita, el decreto de este tipo tiene el carácter de medida excepcional ya que por medio de él el Poder Ejecutivo ejerce funciones legislativas en cuanto produce, modifica o deroga normas legales, lo que, por regla, le está expresamente vedado
 

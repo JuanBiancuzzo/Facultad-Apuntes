@@ -4,11 +4,11 @@ tags:
   - intro/Circuitos-con-resistencias
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es el elemento que introduce una [[Resistencia|resistencia]] en un circuito eléctrico
 
-##### Simbología
+### Simbología
 ---
 ```tikz
 \usepackage{circuitikz} 
@@ -20,7 +20,7 @@ Es el elemento que introduce una [[Resistencia|resistencia]] en un circuito elé
 \end{document}
 ```
 
-##### Código de colores
+### Código de colores
 ---
 
 ```tikz

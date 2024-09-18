@@ -11,7 +11,7 @@ aliases:
 referencias:
   - "240"
 ---
-### Definición
+# Definición
 ---
 Una máquina de estados es un [[Modelo|modelo]] de comportamiento. Consta de un número finito de estados y, por lo tanto, también se denomina máquina de estados finitos
 
@@ -19,7 +19,7 @@ Según el estado actual y una entrada determinada, la máquina realiza transicio
 
 Hay tipos básicos como las [[Máquina Mealy|máquinas Mealy]] y [[Máquina de Moore|Moore]] y tipos más complejos como los [[Diagrama de estado Harel|diagrama de estado Harel]] y [[Unified modelling language#Diagrama de estado|UML]]
 
-#### Componentes
+## Componentes
 ---
 Los componentes básicos de una máquina de estados son
 * Los estados
@@ -33,7 +33,7 @@ Una transición de estados define para qué entrada se cambia un estado de uno a
 
 Dependiendo del tipo de máquina de estados, los estados y/o transiciones producen salidas
 
-#### Implementación
+## Implementación
 ---
 Tenemos múltiples opciones para codificar en [[algo 1/Lenguaje C/Resumen|C]] diagramas de estados finito, a saber
 * Mediante combinaciones de [[Switch statement#En C|switch]], múltiples [[If statement#En C|if]] o punteros a función
@@ -109,7 +109,7 @@ Notas
 * `(*)` La transición a `setting` se ejecuta cuando `me->code == me->defuse`
 * `(**)` La autotransición a `timing` se ejecuta cuando `(e->fine_time == 0) and (me->timeout != 0)`
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

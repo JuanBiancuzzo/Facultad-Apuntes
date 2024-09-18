@@ -6,12 +6,12 @@ codigo: "6109"
 tags:
   - materia
 ---
-### Apuntes 
+# Apuntes 
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
 ```
-### Distribuciones
+# Distribuciones
 ---
 Se tiene $3$ tipos de distribuciones
 

@@ -4,6 +4,6 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Conjunto de [[Computadora|computadoras]] que trabajan juntas y pueden ser vistas como un [[Sistema|sistema]] único.

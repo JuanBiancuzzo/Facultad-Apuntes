@@ -4,7 +4,7 @@ tags:
   - bdd/SQL
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Conjunto de instrucciones [[Structured Query Language|SQL]] que se guardan en la [[Base de datos|base de datos]] y se puede ejecutar de manera repetida cuando sea necesario. Utilizados para realizar tareas repetitivas o complejas en una base de datos de una manera más eficiente y segura
 

@@ -4,7 +4,7 @@ tags:
   - dispo/Diodo-de-Juntura-PN
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado un [[Diodo de Juntura PN]], al aplicar una [[Tensión|tensión]] se mantiene la condición minoritarios en las regiones de cuasi neutrales, si 
 $$ \begin{align} 

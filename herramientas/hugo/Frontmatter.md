@@ -12,7 +12,7 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
 ```
-### Definición
+# Definición
 ---
 Es [[algo 1/Introducción a la programación/Información.md|información]] sobre nuestro contenido, que se suele escribir en uno de estos 3 "lenguajes":
 * YAML
@@ -20,7 +20,7 @@ Es [[algo 1/Introducción a la programación/Información.md|información]] sobr
 * JSON
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

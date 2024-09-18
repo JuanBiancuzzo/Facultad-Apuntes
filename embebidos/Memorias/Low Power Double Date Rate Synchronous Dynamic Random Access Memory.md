@@ -11,6 +11,6 @@ aliases:
   - Low Power Double Date Rate Synchronous Dynamic Random Access Memory
   - DDR de bajo consumo
 ---
-### Definición
+# Definición
 ---
 Una versión de [[Double Date Rate Synchronous Dynamic Random Access Memory|DDR (SDRAM)]] con un consumo de [[Energía|energía]] significativamente menor, dirigida a [[Computadora|computadoras]] móviles (tablets y smartphones)

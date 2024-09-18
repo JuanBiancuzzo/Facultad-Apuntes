@@ -7,7 +7,7 @@ aliases:
   - Adaptador de red
   - NIC
 ---
-### Definición
+# Definición
 ---
 Esta es un controlador de [[Capa de Enlace|capa de enlace]] que implementa múltiples servicios, usualmente por [[Hardware|hardware]]
 

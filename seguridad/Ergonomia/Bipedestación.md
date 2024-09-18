@@ -4,6 +4,6 @@ tags:
   - seguridad/Ergonomia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la habilidad para mantenerse en posición erecta, de pie

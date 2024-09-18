@@ -4,7 +4,7 @@ tags:
   - dispo/Diodo-de-Juntura-PN
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La distancia que recorre el [[Carga eléctrica#Cargas libres|portador]] ($W_p$ ancho del [[Semiconductor|semiconductor]]) es comparable con el [[Movimiento térmico de portadores|camino libre medio]] ($\lambda_c$)
 $\implies$ la [[Probabilidad|probabilidad]] de [[Recombinación|recombinación]] es muy baja
@@ -14,7 +14,7 @@ Esto se conoce como la aproximación de [[Diodo|diodo]] corto
 
 Se considera diodo corto cuando $W < L_{dif} = \sqrt{D \cdot \tau_T} \simeq 100 \mu m$ 
 
-#### Conclusión
+## Conclusión
 ---
 Por lo que podemos suponer que los [[Carga eléctrica|portadores]] se difunden sin recombinarse hasta alcanzar el [[Condición de borde en una juntura PN|contacto]]
 * La [[Corriente eléctrica#Densidad de corriente|densidad de corriente]] de [[Electrón|electrones]] ($J_n$) es constante en la región p-QNR

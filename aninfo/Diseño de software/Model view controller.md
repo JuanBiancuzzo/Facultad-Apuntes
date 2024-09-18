@@ -6,18 +6,18 @@ tags:
   - aninfo/Diseño-de-software
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un estilo [[Arquitectura de aplicaciones|arquitectónico]] que propone una separación del problema en 3 grupos
 
-#### Model
+## Model
 ---
 Encapsula el estado de la aplicación, notificando el view de cualquier cambio en el estado
 
-#### View
+## View
 ---
 Muestra o renderiza el [[Modelo]], y actualizándose con las correspondientes notificaciones
 
-#### Controller
+## Controller
 ---
 Mapea las acciones del usuario a actualizaciones del modelo, modificando su estado

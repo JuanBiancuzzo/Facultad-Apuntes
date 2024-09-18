@@ -5,11 +5,11 @@ tags:
   - nota/facultad
   - taller/Sintaxis
 ---
-### Definición
+# Definición
 ---
 Al igual que una [[Variable inmutable|variable inmutable]], las constantes no pueden modificarse, pero hay diferencias entre sí. Una constante es un valor que no cambia durante todo el [[algo 1/Introducción a la programación/Algoritmo|algoritmo]], este valor posee un identificador único
 
-#### Representación en C
+## Representación en C
 ---
 Se puede definir una constante como
 ```c
@@ -18,7 +18,7 @@ const int CONSTANTE = 45;
 
 Notemos que ponemos el nombre en mayúsculas, lo cual es una convención, pero no es realmente necesario.
 
-#### Representación en Rust
+## Representación en Rust
 ---
 A diferencia de las variables inmutables, no se le puede aplicar el modificador de `mut` para hacerlas [[Variable mutable|mutables]]
 

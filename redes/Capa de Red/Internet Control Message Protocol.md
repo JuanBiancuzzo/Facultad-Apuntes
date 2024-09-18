@@ -6,7 +6,7 @@ tags:
 aliases:
   - ICMP
 ---
-### Definición
+# Definición
 ---
 El protocolo internet control message protocol es utilizado por [[Host|hosts]] y [[Router|routers]] para comunicar [[Información|información]] de [[Capa de Red|capa de red]] entre ellos. Uno de los usos más típicos es el de reporte de errores, como el conocido [[Paquete|mensaje]] "Destination Network Unreachable". En algún punto del recorrido, un router no pudo encontrar un paquete, por lo que el [[Internet Protocol Address|protocolo IP]] envía un mensaje de error al host
 

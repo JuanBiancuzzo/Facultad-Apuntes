@@ -4,7 +4,7 @@ tags:
   - adc/Circuitos-en-regimen-transitorio
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un [[Circuito eléctrico|circuito]] de primer orden se caracteriza por una [[Ecuación diferencial ordinaria|ecuación diferencial]] de primer orden
 

@@ -4,7 +4,7 @@ tags:
   - dispo/Dispositivos-de-potencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la aplicación de dispositivos electrónicos a:
 * Sistemas de control:
@@ -16,7 +16,7 @@ Es la aplicación de dispositivos electrónicos a:
 	* Fuentes de alimentación: [[Fuente de alimentación regulada|reguladas]] o [[Fuente de alimentación conmutadas|conmutadas]]
 	* [[Ondulador|Onduladores (CC/CA)]]
 
-#### Efectos indeseados
+## Efectos indeseados
 ---
 Estos circuitos operan en conmutación constantemente:
 * Se introduce ruido en las señales $\implies$ Usar filtros

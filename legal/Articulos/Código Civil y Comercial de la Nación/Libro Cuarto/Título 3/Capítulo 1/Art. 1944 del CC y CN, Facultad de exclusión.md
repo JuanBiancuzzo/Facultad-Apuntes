@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Cuarto/
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El dominio es excluyente. El dueño puede excluir a extraños del uso, goce o disposición de la cosa, remover por propia autoridad los objetos puestos en ella, y encerrar sus inmuebles con muros, cercos o fosos, sujetándose a las normas locales."
 
-### Interpretación
+# Interpretación
 ---
 
 

@@ -4,7 +4,7 @@ tags:
   - taller/Ownership
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la restricción que produce el lenguaje que permite evitar errores con punteros. Esto lo logra con las siguientes reglas
 * Cada valor en Rust tiene una variable que es su dueña

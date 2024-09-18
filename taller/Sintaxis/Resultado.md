@@ -4,7 +4,7 @@ tags:
   - taller/Sintaxis
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Representar el estado que puede tener un error. $T$ es un [[Generic|generics]] que puede tomar cualquier [[Tipo de dato|tipo de dato]]. $E$ es un [[Generic|generics]] que puede tomar cualquier [[Tipo de dato|tipo de dato]] que representa un error.
 

@@ -4,7 +4,7 @@ tags:
   - intro/Circuitos-con-resistencias
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Una división de corriente es un [[Circuito eléctrico|circuito]] que divide la [[Corriente eléctrica|corriente]] de entrada en el circuito en otras dos diferentes y más pequeñas de salida, con [[Resistor|resistores]]
 

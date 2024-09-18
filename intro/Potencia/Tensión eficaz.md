@@ -4,7 +4,7 @@ tags:
   - intro/Potencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Definimos la [[Tensión|tensión]] eficaz, es su [[Valor cuadrático medio|valor cuadrático medio]], de una tensión variable en el tiempo $v(t)$ con período $T$ como:
 $$ V_{ef}= \sqrt{\frac{1}{T} \cdot \int_{0}^{T} v^2(t) \cdot dt} $$

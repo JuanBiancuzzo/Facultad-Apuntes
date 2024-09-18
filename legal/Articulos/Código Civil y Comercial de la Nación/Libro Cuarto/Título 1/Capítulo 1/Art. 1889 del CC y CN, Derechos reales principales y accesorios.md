@@ -8,11 +8,11 @@ previo: "[[Capítulo 1, Principios comunes|Capítulo 1, Principios comunes]]"
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los derechos reales son principales, excepto los accesorios de un crédito en función de garantía. Son accesorios la hipoteca, la anticresis y la prenda."
 
-### Interpretación
+# Interpretación
 ---
 Los derechos reales son principales, excepto los accesorios de un crédito en función de garantía.
 

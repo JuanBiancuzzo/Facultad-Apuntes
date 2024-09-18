@@ -4,11 +4,11 @@ tags:
   - intro/Circuitos-con-resistencias
   - nota/facultad
 ---
-### Definición 
+# Definición 
 ---
 El intervalo dentro del cual podemos confiar que se encuentra el valor verdadero de una medición efectuada.
 
-##### Calculo de la incertidumbre
+### Calculo de la incertidumbre
 Depende de
 1. Rango: Depende del punto decimal y de la cantidad de cuentas (máximo número que puede mostrar).
 

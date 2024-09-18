@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un automorfismo en $G$ es un [[Isomorfismo#Grafos|isomorfismo]] de $G$ en sí mismo. Es decir, una permutación $\theta$ tal que se preservan las adyacencias
 

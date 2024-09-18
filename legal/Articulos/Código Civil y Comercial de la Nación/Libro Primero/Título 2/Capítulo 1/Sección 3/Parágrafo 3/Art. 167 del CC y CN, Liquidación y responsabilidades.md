@@ -12,7 +12,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Vencido el plazo de duración, resuelta la disolución u ocurrida otra causa y declarada en su caso por los miembros, la [[Persona jurídica|persona jurídica]] no puede realizar operaciones, debiendo en su liquidación concluir las pendientes.
 
@@ -20,5 +20,5 @@ La liquidación consiste en el cumplimiento de las obligaciones pendientes con l
 
 En caso de infracción responden ilimitada y solidariamente sus administradores y aquellos miembros que, conociendo o debiendo conocer la situación y contando con el poder de decisión necesario para ponerle fin, omiten adoptar las medidas necesarias al efecto."
 
-### Interpretación
+# Interpretación
 ---

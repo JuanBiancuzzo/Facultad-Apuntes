@@ -4,11 +4,11 @@ tags:
   - redes/Capa-de-aplicación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un comando donde te permite obtener más información sobre las queries a un [[Domain Name System|DNS]]. Esta herramienta interroga a los [[Domain Name System|DNS]] name servers. Haciendo una [[Domain Name System Message|query DNS]] y muestra las respuesta a su respuesta
 
-#### Uso general
+## Uso general
 ---
 ```bash
 dig @server name type
@@ -30,14 +30,14 @@ Donde
 	* etc
 	El tipo puede ser cualquier tipo valido de query, y en el caso que no se le agregue ningún tipo se asume que el tipo es `A`
 
-##### Opción
+### Opción
 ---
 * `-4`: Indica que solo se usen direcciones IPv4
 * `-6`: Indica que solo se usen direcciones IPv6
 * `-b address[#port]`: determina la dirección IP de la query, la cual tiene que ser valida. Es opcional agregar al final el puerto de la forma \#puerto
 * `-c class`: determina el tipo de clase de la query, donde el default es la clase `IN`
 
-##### Flags
+### Flags
 ---
 * `+recurse`, `+norecurse`: Esta flag setea el bit de búsqueda recursiva, el cual el default es que sea recursivo y el cual se desactiva en el caso que se usen las flags `+nssearch` o `+trace` 
 * `+nssearch`, `+nonssearch`: Esta flag es usada, dig intenta encontrar los name servers autoritativos

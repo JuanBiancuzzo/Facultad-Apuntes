@@ -8,7 +8,7 @@ aliases:
   - Transformar coordenadas cartesianas a cilíndricas#^cartesianas-cilindricas
   - Transformar coordenadas cartesianas a esféricas#^cartesianas-esfericas
 ---
-### Definición
+# Definición
 ---
 En el sistema cartesiano, la posición de un punto $P$ en el [[Espacio|espacio]] se describe mediante las [[Proyección ortogonal|proyecciones]] del vector posición sobre los $n$ ejes rectos mutuamente [[Ortogonalidad|perpendiculares]] que se cruzan en el origen de coordenadas 
 
@@ -44,7 +44,7 @@ En el caso que $n$ sea igual a $3$ podemos describir el punto $P$ como $$ P = (x
 \end{tikzpicture}
 \end{document}
 ```
-#### Transformar coordenadas
+## Transformar coordenadas
 ---
 Para pasarlo a [[Sistema cilíndrico|coordenadas cilíndricas]] 
 $$ \begin{align} 
@@ -66,7 +66,7 @@ $$ \begin{align}
 
 De esféricas ![[Sistema esférico#^esfericas-cartesianas]]
 
-#### Diferencial de longitud
+## Diferencial de longitud
 ---
 $$ \begin{array}{|c|c|c|} \hline
    \text{Coordenada que} & & \\
@@ -76,7 +76,7 @@ $$ \begin{array}{|c|c|c|} \hline
    y & dy & \hat{y} ~ dy \\
    z & dz & \hat{z} ~ dz \\
 \hline \end{array} $$
-#### Diferencial de área
+## Diferencial de área
 ---
 $$ \begin{array}{|c|c|c|} \hline
    \text{Coordenada que se} & & \\
@@ -86,22 +86,22 @@ $$ \begin{array}{|c|c|c|} \hline
    y & dx ~ dz & \hat{y} ~ dx ~ dz \\
    z & dx ~ dy & \hat{z} ~ dx ~ dy \\
 \hline \end{array} $$
-#### Diferencial de volumen
+## Diferencial de volumen
 ---
 $$ dV =  dx ~ dy ~ dz $$
 
-#### Fórmula del gradiente
+## Fórmula del gradiente
 ---
 ![[Gradiente#^gradiente-cartesiano]]
 
-#### Fórmula de la divergencia
+## Fórmula de la divergencia
 ---
 ![[Divergencia#^divergencia-cartesiano]]
 
-#### Fórmula del rotor
+## Fórmula del rotor
 ---
 ![[Rotor#^rotor-cartesiano]]
 
-#### Fórmula del laplaciano
+## Fórmula del laplaciano
 ---
 ![[Laplaciano#^laplaciano-cartesiano]]

@@ -6,6 +6,6 @@ tags:
 aliases:
   - IP
 ---
-### Definición
+# Definición
 ---
 El periférico integrado (IP) en [[ARM's Cortex-M|ARM Cortex-M]] contiene un dispositivo de [[Hardware|hardware]] llamado [[Controlador de interrupción#Para ARM Cortex-M|controlador de interrupción vectorial anidado]] cuyo propósito es gestionar [[Interrupción|excepciones]] 

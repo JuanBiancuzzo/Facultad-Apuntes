@@ -22,7 +22,7 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 10/Capítulo 1/Cap
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Vigente el plazo de conservación del empleo, si del accidente o enfermedad resultase una disminución definitiva en la capacidad laboral del trabajador y éste no estuviere en condiciones de realizar las tareas que anteriormente cumplía, el empleador deberá asignarle otras que pueda ejecutar sin disminución de su remuneración.
 
@@ -34,5 +34,5 @@ Cuando de la enfermedad o accidente se derivara incapacidad absoluta para el tra
 
 Este beneficio no es incompatible y se acumula con los que los estatutos especiales o convenios colectivos puedan disponer para tal supuesto."
 
-### Interpretación
+# Interpretación
 ---

@@ -4,7 +4,7 @@ tags:
   - dispo/Física-de-semiconductores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El coeficiente de difusión mide la facilidad con la que se difunden los [[Carga eléctrica|portadores]] en respuesta al un gradiente de [[Modelo de enlace de Silicio#Concentración de Portador de carga portadores|concentración]]. Esta esta limitada por la vibraciones de los [[Átomo|átomos]] de $Si$ de la [[Red cristalina|red]] y de los [[Dopaje|dopantes]] ionizados.
 

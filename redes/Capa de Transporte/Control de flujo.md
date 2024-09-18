@@ -4,11 +4,11 @@ tags:
   - redes/Capa-de-Transporte
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El control de flujo se el control de cuantos [[Paquete|paquetes]] enviar dependiendo de cuanto espacio tiene, el receptos, para aceptar. Esto permite no congestionar la [[Red|red]] evitando enviar paquetes que el receptor no podría aceptar
 
-#### Problemática
+## Problemática
 ---
 A medida que la tasa de arribo de paquetes se acerca a la capacidad del medio, entonces se experimentan grandes [[Delay in packet switches#Tiempo de encolado|tiempos de encolado]]
 

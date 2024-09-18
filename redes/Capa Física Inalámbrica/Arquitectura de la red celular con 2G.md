@@ -7,7 +7,7 @@ aliases:
   - Red 2G
   - Red Celular 2G
 ---
-### Definición
+# Definición
 ---
 El término celular proviene de que las regiones cubiertas por una [[Red|red]] celular se conocen como celdas. Cada celda contiene un [[Base Transceiver Station|base transceiver station (BTS)]] que transmite [[Señal|señal]] desde y hacia las estaciones móviles dentro de la celda
 

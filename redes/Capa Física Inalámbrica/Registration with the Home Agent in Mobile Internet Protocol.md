@@ -4,7 +4,7 @@ tags:
   - redes/Capa-Física-Inalámbrica
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Una vez un nodo móvil recibe un COA, esta dirección debe ser registrada con el agente local. Veremos el caso en el que esta funcionalidad es realizada por el agente externo.
 

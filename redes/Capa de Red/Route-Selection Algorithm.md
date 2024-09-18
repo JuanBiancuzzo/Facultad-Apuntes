@@ -4,7 +4,7 @@ tags:
  - redes/Capa-de-Red
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En la práctica, se utiliza un [[Algoritmo|algoritmo]] más complejo que incorpora [[Hot Potato Routing Protocol|hot potato routing]]. Por cada prefijo de destino, la entrada del algoritmo es un [[Conjunto|conjunto]] de todas las rutas a ese prefijo que son conocidas y aceptadas por el [[Router|router]]. Si hay más de un [[Camino|camino]] posible, se invocan reglas de eliminación hasta quedar uno solo
 

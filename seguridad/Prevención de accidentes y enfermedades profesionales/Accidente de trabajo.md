@@ -4,12 +4,12 @@ tags:
   - seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se considera accidente de trabajo a todo acontecimiento súbito y violento ocurrido por el hecho o en ocasión del trabajo, o en el trayecto entre el domicilio del trabajo y el lugar de trabajo (siempre y cuando damnificado no hubiere interrumpido o alterado dicho trayecto por causas ajenas al trabajo) y que **genera** una lesión en el trabajador.
 
 
-#### [[Riesgo|Riesgos]] que pueden generar accidentes
+## [[Riesgo|Riesgos]] que pueden generar accidentes
 ---
 * Mecánicos:
 	* Uso de equipos de izaje
@@ -19,7 +19,7 @@ Se considera accidente de trabajo a todo acontecimiento súbito y violento ocurr
 * Edilicios
 
 
-#### Causas de accidentes de trabajo
+## Causas de accidentes de trabajo
 ---
 * Condición peligrosa:
 	* Es aquella condición física, generalmente observable que hace posible la generación de un accidente.

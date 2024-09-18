@@ -4,12 +4,12 @@ tags:
   - orga/Machine-learning
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un método de [[Codificación de variables categóricas|codificación]] de variables categóricas en variables numéricas, eso lo hace determinar un valor para cada categoría, expresarlo en binario y ponerlo en columnas. Esto es mejor que el [[One hot encoding]] ya que la cantidad de columnas es $\log_2(k)$ donde $k$ es la cantidad de categorías en esa variable.
 
 
-##### Ejemplo
+### Ejemplo
 ---
 Tenemos la siguiente tabla:
 

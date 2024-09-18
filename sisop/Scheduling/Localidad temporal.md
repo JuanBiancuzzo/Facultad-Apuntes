@@ -4,7 +4,7 @@ tags:
   - sisop/Scheduling
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La idea detrás de la localidad temporal es que cuando cierta cantidad de datos son accedidos, es muy [[Probabilidad|probable]] que sean accedidos otra vez en un futuro cercano.
 

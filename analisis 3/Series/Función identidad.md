@@ -4,6 +4,6 @@ tags:
   - analisis-3/Series
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $Id : \mathbb{C} \to \mathbb{C}$ , definida por: $$ Id(z) = z $$

@@ -4,7 +4,7 @@ tags:
   - seguridad/Estrés-termico
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se establece como $$ M = MB + MI + MII $$ donde:
 * $MB = 70W$ ([[Watt|watts]])

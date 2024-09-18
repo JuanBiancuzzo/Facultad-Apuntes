@@ -4,7 +4,7 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Conforme la organización federal de nuestro país, establecida en el [[Art. 1 de la Constitución Nacional|art. 1º de la Constitución Nacional]], coexisten en él un gobierno federal con los gobiernos de provincias las que, conforme el [[Art. 121 de la Constitución Nacional|art. 121 CN]], conservan todo el poder no delegado al gobierno federal así como el que se hayan reservado por pactos especiales al tiempo de su incorporación
 

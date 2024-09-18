@@ -9,7 +9,7 @@ aliases:
   - Ajuste de Lorentz#^condicion-de-lorentz
   - Potencial vectorial magnético
 ---
-### Definición
+# Definición
 ---
 En el vacío es posible hallar una solución general de las [[Ecuaciones de Maxwell|ecuaciones de Maxwell]] en términos de los potenciales electrodinámicos o potenciales retardados vectorial $A$ y escalar $V$ (esta también conocido como [[Tensión|diferencia de potencial]] $\Delta V$), que se pueden deducir de las ecuaciones de Maxwell $$ \begin{matrix} 
     E(r,~t) = - \nabla V(r,~t) - \frac{\partial A}{\partial t}(r,~t) && B(r,~t) = \nabla \times A(r,~t)

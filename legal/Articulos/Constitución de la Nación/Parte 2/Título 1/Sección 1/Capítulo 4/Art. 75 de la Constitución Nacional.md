@@ -109,7 +109,7 @@ previo: "[[legal/Articulos/Constitución de la Nación/Parte 2/Título 1/Secció
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Corresponde al Congreso:
 
@@ -206,5 +206,5 @@ tags:
 	
  32. Hacer todas las leyes y reglamentos que sean convenientes para poner en ejercicio los poderes antecedentes, y todos los otros concedidos por la presente Constitución al Gobierno de la Nación Argentina."
 
-### Interpretación
+# Interpretación
 ---

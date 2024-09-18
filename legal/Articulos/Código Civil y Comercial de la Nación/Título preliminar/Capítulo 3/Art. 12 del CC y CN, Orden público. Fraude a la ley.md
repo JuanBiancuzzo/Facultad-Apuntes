@@ -10,13 +10,13 @@ previo: "[[Capítulo 3, Ejercicio de los derechos|Capítulo 3, Ejercicio de los 
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Las convenciones particulares no pueden dejar sin efecto las [[Ley|leyes]] en cuya observancia está interesado el orden público.  
   
 El acto respecto del cual se invoque el amparo de un texto legal, que persiga un resultado sustancialmente análogo al prohibido por una [[Norma jurídica|norma]] [[Carácter imperativo|imperativa]], se considera otorgado en fraude a la ley. En ese caso, el acto debe someterse a la norma imperativa que se trata de eludir."
 
-### Interpretación
+# Interpretación
 ---
 Como establece este artículo, el fraude a la ley es el acto de eludir la prohibición de una norma imperativa bajo la cobertura de otra u otras [[Norma jurídica|normas]].
 

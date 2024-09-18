@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Definimos la operación de suma disjunta entre $G$ y $H$ como $G + H$, donde $$ \begin{align} 
     V(G + H) &= V(G) + V(H) \\

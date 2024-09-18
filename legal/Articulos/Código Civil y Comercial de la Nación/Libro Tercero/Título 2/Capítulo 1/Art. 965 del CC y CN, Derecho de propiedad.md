@@ -8,10 +8,10 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los [[Derecho|derechos]] resultantes de los [[Contrato|contratos]] integran el derecho de propiedad del contratante."
 
-### Interpretación
+# Interpretación
 ---
 Lo que le otorga también la jerarquía constitucional que la propia [[Constitución de la Nación|Constitución]] da al derecho de propiedad ([[Art. 17 de la Constitución Nacional|art. 17 de la Constitución Nacional]]) de legalmente lo que ya pacíficamente había establecido la jurisprudencia

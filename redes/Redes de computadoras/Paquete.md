@@ -9,7 +9,7 @@ tags:
   - redes/Redes-de-computadoras
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los paquetes se transmiten a través de cada enlace de comunicaciones a una velocidad igual a la [[Delay in packet switches#Tiempo de propagación|velocidad de transmisión]] máxima del enlace
 

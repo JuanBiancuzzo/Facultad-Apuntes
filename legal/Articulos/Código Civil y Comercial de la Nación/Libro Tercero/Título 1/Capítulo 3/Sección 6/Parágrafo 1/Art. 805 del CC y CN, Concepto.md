@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Obligación divisible es la que tiene por objeto prestaciones susceptibles de cumplimiento parcial."
 
-### Interpretación
+# Interpretación
 ---

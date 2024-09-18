@@ -13,11 +13,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Quien, sin ser gestor de negocios ni mandatario, realiza un gasto, en interés total o parcialmente ajeno, tiene derecho a que le sea reembolsado su valor, en cuanto haya resultado de utilidad, aunque después ésta llegue a cesar.
 
 El reembolso incluye los intereses, desde la fecha en que el gasto se efectúa."
 
-### Interpretación
+# Interpretación
 ---

@@ -8,7 +8,7 @@ aliases:
   - Clan
   - Conjunto independente de vértices
 ---
-### Definición
+# Definición
 ---
 Un clique es un [[Subconjunto|subconjunto]] de vértices tal que cualquier par de ellos están unido por una arista, también llamado clan
 

@@ -29,7 +29,7 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 1/Título 1, Dispo
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El contrato de trabajo y la relación de trabajo se rige:
 
@@ -39,5 +39,5 @@ tags:
  d. Por la voluntad de las partes.
  e. Por los usos y costumbres."
 
-### Interpretación
+# Interpretación
 ---

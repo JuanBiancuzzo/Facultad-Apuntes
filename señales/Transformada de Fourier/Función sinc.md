@@ -4,10 +4,10 @@ tags:
   - señales/Transformada-de-Fourier
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se define la [[Función|función]] sinc de la siguiente forma $$ \text{sinc}(t) \equiv \frac{\sin(t)}{t} $$
-#### Sinc normalizada
+## Sinc normalizada
 ---
 Se puede normalizar de la siguiente forma $$ \text{sinc}(t) \equiv \frac{\text{sinc}(\pi t)}{\pi t}, ~~~ \int_{-\infty}^{\infty} \text{sinc}(t) ~ dt = 1 $$
 

@@ -8,7 +8,7 @@ aliases:
 referencias:
   - "212"
 ---
-### Definición
+# Definición
 ---
 La conductividad eléctrica (símbolo $\sigma$) es la medida de la capacidad de un material o sustancia para dejar pasar la [[Corriente eléctrica|corriente eléctrica]] a través de él. La conductividad depende de la estructura atómica y molecular del material<sup><a href="#ref-212" style="color: inherit; text-decoration: none;">[212]</a></sup> 
 
@@ -17,7 +17,7 @@ Se puede relacionar el [[Campo eléctrico|campo eléctrico]] con la [[Corriente 
 La conductividad es inversa de la resistividad (símbolo $\rho$) por lo tanto $$ \sigma = \frac{1}{\rho} $$
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

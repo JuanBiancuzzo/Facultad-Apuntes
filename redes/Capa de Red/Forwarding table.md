@@ -6,7 +6,7 @@ tags:
   - redes/Capa-de-Red
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En la versión más simple, una tabla de ruteo tiene dos columnas
 
@@ -18,11 +18,11 @@ $$ \text{Dirección destino} ~ \& ~ \text{Mascara} == \text{Prefijo} $$
 
 El paquete deberá ser enviado a la [[Router interface|interfaz]] indicada por la entrada de la tabla con el prefijo más restrictivo (más largo) que coincide. Esto se debe a que si una subred particular está incluida en otra, entonces debe enviarle el paquete a la particular
 
-#### Default Gateway
+## Default Gateway
 ---
 Es el puerto configurado para cualquier para cualquier entrada que no coincide con las tabla, se denota con `0.0.0.0./0`, esto se debe a que, por lo que vimos recién, cualquier dirección IP coincidirá con esta entrada, pero no la preferirá por sobre cualquier otra entrada, ya que es de longitud mínima
 
-#### Optimización
+## Optimización
 ---
 Existen dos procedimientos para optimizar tablas
 1. [[Address aggregation|Agregación de entradas]]

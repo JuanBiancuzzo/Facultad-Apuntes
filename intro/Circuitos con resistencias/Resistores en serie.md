@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
 ---
-### Definición
+# Definición
 ---
 Son aquellos [[Resistor|resistores]] atravesados por la misma [[Corriente eléctrica|corriente]] ([[Elementos en serie]]) y comparten la misma [[Malla]]
 

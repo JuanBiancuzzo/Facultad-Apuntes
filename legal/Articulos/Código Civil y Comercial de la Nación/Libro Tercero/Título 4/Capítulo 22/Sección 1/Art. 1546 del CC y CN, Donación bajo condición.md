@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Están prohibidas las donaciones hechas bajo la condición suspensiva de producir efectos a partir del fallecimiento del donante."
 
-### Interpretación
+# Interpretación
 ---

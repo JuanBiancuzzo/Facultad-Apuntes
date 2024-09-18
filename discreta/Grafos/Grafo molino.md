@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo|grafo]], se define como un molino de $q$ aspas de longitud $p - 1$, puede formarse con el ensamble $W_d(p,~ q) = N_{1}~q~K_{p-1}$
 

@@ -6,7 +6,7 @@ tags:
 aliases:
   - Bobinas en serie
 ---
-### Definición
+# Definición
 ---
 Son aquellos [[Inductor|inductores]] atravesados por la misma [[Corriente eléctrica|corriente]] ([[Elementos en serie|elementos en serie]]) y comparten la misma [[Malla|malla]]
 

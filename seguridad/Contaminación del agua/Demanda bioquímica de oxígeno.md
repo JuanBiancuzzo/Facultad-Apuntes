@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-agua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la cantidad de oxígeno disuelto en una muestra que necesita una población heterogénea de bacterias aeróbicas para degradar la materia orgánica disuelta presente en una muestra.
 

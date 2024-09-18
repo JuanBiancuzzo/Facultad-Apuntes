@@ -4,6 +4,6 @@ tags:
   - orga/Machine-learning
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En contraposición de la [[Neurona lineal]], la función es una que no sea la [[Función identidad]].

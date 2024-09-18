@@ -4,6 +4,6 @@ tags:
   - seguridad/Contaminación-del-ambiente-laboral
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Conjunto de trastornos que derivan de la presencia de el organismo de un [[Toxicidad|tóxico]].

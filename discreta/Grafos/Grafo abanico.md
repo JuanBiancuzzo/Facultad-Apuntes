@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo|grafo]], el abanico se define por $F(p,~ q) = N_p ~ P_q$
 

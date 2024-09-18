@@ -4,7 +4,7 @@ tags:
   - estructura/Sistemas-numéricos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Tiene una cantidad limitada de símbolos, y estos pueden representar todos los números. Un caso especifico es el sistema decimal.
 

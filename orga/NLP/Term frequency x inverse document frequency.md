@@ -6,7 +6,7 @@ tags:
 aliases:
   - TF-IDF
 ---
-### Definición
+# Definición
 ---
 Es similar a [[Term Frequency|term frequency]], donde dado un conjunto de [[Token|tokens]] se toman los primeros `k` [[Token|tokens]] más comunes. Después se genera una [[Matriz]], de `n` por `k`, donde `n` son la cantidad de frase/páginas. El valor en cada posición de la matriz representa la cantidad de veces que aparece dicho token en esa frase o página multiplicado por la [[Inverse document frequency]] de ese token.
 

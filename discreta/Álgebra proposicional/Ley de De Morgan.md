@@ -7,11 +7,11 @@ tags:
 referencias:
   - "188"
 ---
-### Definición
+# Definición
 ---
 En [[Álgebra de proposiciones|lógica proposicional]] y [[Álgebra de Boole|álgebra de Boole]], las leyes de De Morgan son un par de reglas de [[señales/Señales y sistemas/Transformación.md|transformación]]. Las normas permiten la expresión de las [[Operador AND|conjunciones]] y [[Operador OR|disyunciones]] puramente de términos de vía [[discreta/Álgebra de conjuntos/Operador NOT.md|negación]]<sup><a href="#ref-188" style="color: inherit; text-decoration: none;">[188]</a></sup> 
 
-#### Casos específicos
+## Casos específicos
 ---
 Para el [[Álgebra de proposiciones|álgebra de proposiciones]] se entiende como 
 
@@ -29,7 +29,7 @@ Para el [[Álgebra de Boole|álgebra de Boole]] $(B,~+,~\cdot,~',~0_B,~1_B)$ se 
 
 $$ \forall x, y \in B: ~~~~~ (x + y)' = x' y', ~~~ (xy)' = x' + y' $$ ^094b93
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

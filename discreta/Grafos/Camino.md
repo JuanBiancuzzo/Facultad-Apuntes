@@ -15,16 +15,16 @@ aliases:
   - Circuito
   - Ciclo
 ---
-### Definición
+# Definición
 ---
 Sea $G = \big( V(G),~E(G),~\Psi_G \big)$  un [[Grafo|grafo]], un camino $v_0-v_q$ es una [[Sucesión|sucesión]] alternada de vértices y aristas para viajar desde $v_0$ a $v_q$ $$ v_0 ~ e_1 ~ v_1 ~ e_2 v_2 ~ \cdots ~ e_q ~ v_q, ~~~ \Psi_G(e_k) = \Set{ v_{k-1},~ v_k } ~~ \forall k = 1,~ 2,~ \cdots,~ q $$
 Un camino es cerrado si $v_0 = v_q$ de lo contrario es un camino abierto
 
-#### Recorrido (Trail)
+## Recorrido (Trail)
 ---
 Si el camino es abierto que no repite aristas es un recorrido
 
-#### Camino simple (Path)
+## Camino simple (Path)
 ---
 Si el camino es abierto que no repite vértices es un camino simple
 
@@ -71,11 +71,11 @@ Si el camino es abierto que no repite vértices es un camino simple
 \end{document}
 ```
 
-#### Circuito (Circuit)
+## Circuito (Circuit)
 ---
 Si el camino es cerrado que no repite aristas es un circuito
 
-#### Ciclo (Cicle)
+## Ciclo (Cicle)
 ---
 Si el camino es cerrado que no repite vértices es un ciclo
 

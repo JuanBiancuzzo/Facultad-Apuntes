@@ -4,19 +4,19 @@ tags:
   - bdd/General
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Las [[Base de datos|base de datos]] relacionales, son [[Tabla SQL|tablas]] con [[Campo SQL|columnas (atributos)]], tiene claves primarias y claves foráneas
 
-#### Claves primarias
+## Claves primarias
 ---
 ![[Clave primaria#Definición]]
 
-#### Claves foráneas
+## Claves foráneas
 ---
 ![[Clave foránea#Definición]]
 
-#### Características
+## Características
 ---
 Tenemos las siguientes características de esta [[Base de datos|base de datos]], donde ACID es un acrónimo en inglés de Atomicity, Consistency, Isolation and Durability
 

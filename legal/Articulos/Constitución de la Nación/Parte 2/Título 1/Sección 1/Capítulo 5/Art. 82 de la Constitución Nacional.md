@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Constitución de la Nación/Parte 2/Título 1/Secció
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La voluntad de cada Cámara debe manifestarse expresamente; se excluye, en todos los casos, la sanción tácita o ficta."
 
-### Interpretación
+# Interpretación
 ---

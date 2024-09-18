@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-agua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Determina el contenido de reductores totales presentes en una [[Muestra|muestra]] (orgánicos e inorgánicos). Se obtiene mediante en un ensayo normalizado:
 * Reactivo: dicromato de potasio

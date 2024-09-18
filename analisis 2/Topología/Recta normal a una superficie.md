@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Topología/2
 ---
-### Definición
+# Definición
 ---
 La recta normal es aquella que pase por el punto $(x_0, y_0)$ en la dirección [[Normal de una superficie|normal de una superficie]], y perpendicular al [[Plano tangente|plano tangente a una superficie]], dando a la recta de ecuación
 

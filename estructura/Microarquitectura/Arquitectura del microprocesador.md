@@ -8,7 +8,7 @@ aliases:
   - Arquitectura de procesador
   - Ciclo fetch-decode-execute
 ---
-### Definición
+# Definición
 ---
 Para ejecutar un [[Programa|programa]], el [[Procesador|microprocesador]] realiza el llamado ciclo fetch, o ciclo de búsqueda-ejecución
 1. Buscar en memoria la próxima instrucción a ser ejecutada ^fetch

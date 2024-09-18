@@ -5,11 +5,11 @@ tags:
   - nota/facultad
   - embebidos/Diseño-desarrollo-y-depuración
 ---
-### Definición
+# Definición
 ---
 Una computadora es un dispositivo que puede aceptar instrucciones humanas, las procesa y responde a ellas; o una computadora es un dispositivo informático que se utiliza para procesar datos bajo el control de un [[Programa|programa]] de computadora
 
-#### Partes fundamentales
+## Partes fundamentales
 ---
 * La [[Procesador|Unidad Central de Procesamiento o CPU]]
 	* Controla el funcionamiento de la computadora y lleva a cabo sus funciones de procesamiento de datos

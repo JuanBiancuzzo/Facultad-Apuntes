@@ -4,7 +4,7 @@ tags:
   - seguridad/Riesgo-eléctrico-y-radiación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Consiste en la evaluación de las [[Dosis Absorbida de radiación ionizante|dosis recibidas]] por cada trabajador en períodos regulares de tiempo.
 

@@ -6,7 +6,7 @@ tags:
 aliases:
   - DOCSIS
 ---
-### Definición
+# Definición
 ---
 Recordemos que una cable access [[Red|network]] típicamente consiste en miles de residential cable modems conectados a un único cable modem termination system (CMTS). DOCSIS utiliza [[Frequency Division Multiplexing|FDM]] para dividir el downstream (con el CMTS como único remitente) y el upstream. Debido a que en el downstream hay un único remitente, no es necesario prevenir colisiones
 

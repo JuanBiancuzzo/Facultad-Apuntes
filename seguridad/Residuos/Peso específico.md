@@ -4,6 +4,6 @@ tags:
   - seguridad/Residuos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Peso del [[Residuo]] por unidad  de volumen ($Kg \cdot m^{-3}$).

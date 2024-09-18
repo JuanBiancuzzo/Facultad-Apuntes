@@ -4,7 +4,7 @@ tags:
   - aninfo/Descubrimiento-de-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Reunión de un grupo de personas con el objetivo común de encontrar una solución a un problema compartido por todos sobre el cual tienen distintas visiones, donde hay un facilitador preparado y neutral, que facilita las actividad, también puede haber una exposición de algunos expertos
 

@@ -4,7 +4,7 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Transformación - Spark|transformación]] que nos permite hacer un [[Etapa de shuffle & sort|reshuffle]] de los datos en el [[Resilent distributed dataset - Spark|RDD]] de forma aleatoria para crear más o menos particiones y balancearlas.
 

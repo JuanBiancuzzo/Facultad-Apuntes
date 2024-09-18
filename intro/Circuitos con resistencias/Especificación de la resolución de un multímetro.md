@@ -4,7 +4,7 @@ tags:
   - intro/Circuitos-con-resistencias
   - nota/facultad
 ---
-### Esquematización
+# Esquematización
 ---
 ```tikz
 \usepackage{circuitikz} 

@@ -11,11 +11,11 @@ aliases:
   - Potencia de un inductor#Potencia instantánea
   - Potencia de una bobina#Potencia instantánea
 ---
-### Definición
+# Definición
 ---
 Un inductor consta de una bobina de alambre [[Conductor|conductor]], caracterizada por el parámetro $L$ este siendo la [[Autoinductancia|autoinductancia]]
 
-#### Relación con la tensión y la corriente
+## Relación con la tensión y la corriente
 ---
 Nos interesa conocer la relación entre la [[Tensión|tensión]] y la [[Corriente eléctrica|corriente]] del elemento, ya sea la forma [[Ecuación diferencial ordinaria|diferencial]], como la forma integral 
 
@@ -29,11 +29,11 @@ $$ \begin{CD}
 
 Notemos que la tensión sobre un inductor debe ser continua
 
-#### Potencia instantánea
+## Potencia instantánea
 ---
 El calculo de la [[Potencia|potencia]] esta dada por $$ p = v~i = \left(L\frac{dv}{dt}\right)~i $$
 
-#### Energía almacenada
+## Energía almacenada
 ---
 El calculo de la [[Energía almacenada en un inductor|energía almacenada]] esta dada por $$ \omega = \int_{-\infty}^t p(\tau) d\tau = \frac{1}{2} L i^2 $$
 El inductor (ideal) no disipa [[Energía|energía]], solo la almacena y la vuelve a entregar en otro momento

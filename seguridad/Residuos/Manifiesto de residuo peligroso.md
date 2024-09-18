@@ -4,7 +4,7 @@ tags:
   - seguridad/Residuos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un instrumento de la gestión de los residuos peligrosos en el que se documenta la naturaleza y cantidad de [[Residuo peligroso y especial|residuos peligroso]] generados, su origen, transferencia del [[Generador de residuos peligrosos|generador]] al transportista, y de éste a la planta de [[Tecnología de tratamiento|tratamiento]] o de [[Tecnología disposición final|disposición final]] y los procesos de tratamiento a los que fuere sometido.  
 

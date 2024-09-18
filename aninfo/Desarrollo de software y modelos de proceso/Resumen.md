@@ -4,12 +4,12 @@ tags:
  - aninfo/Desarrollo-de-software-y-modelos-de-proceso
  - resumen
 ---
-### Índice 
+# Índice 
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 ```
 
-### Resumen
+# Resumen
 ---
 Pendiente...

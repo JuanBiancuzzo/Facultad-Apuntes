@@ -4,7 +4,7 @@ tags:
   - analisis-3/Serie-de-Fourier
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado el siguiente [[Ecuación de difusión de calor]] $$ \begin{cases} 
 	(1) && \frac{\partial^2 u(x,t)}{\partial x^2} - \mu \frac{\partial u(x, t)}{\partial t} = 0 && 0 < x < l && t > 0 \\
@@ -13,6 +13,6 @@ Dado el siguiente [[Ecuación de difusión de calor]] $$ \begin{cases}
 \end{cases} $$
 Donde $u(x, t)$ es la temperatura, en el punto de abscisa $x$ y en el instante $t$, de una varilla de longitud $l$.
 
-##### Primer paso
+### Primer paso
 
 

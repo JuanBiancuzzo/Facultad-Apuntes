@@ -4,6 +4,6 @@ tags:
   - seguridad/Riesgo-eléctrico-y-radiación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los [[Radiación ionizante#Rayos X|rayos x]] y [[Radiación ionizante#Gamma|gamma]] (radiaciones [[Campo electromagnético|electromagnéticas]]) y los [[Neutrón|neutrones]], que no poseen [[Carga eléctrica]], al interactuar con la materia, liberan partículas cargadas que son las que a su vez ionizan los [[Átomo|átomos]] del material.

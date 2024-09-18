@@ -4,7 +4,7 @@ tags:
   - aninfo/Analizar-y-especificar-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Agrupar [[Historia de usuario]], para tener un mayor nivel de control y detalle.
 

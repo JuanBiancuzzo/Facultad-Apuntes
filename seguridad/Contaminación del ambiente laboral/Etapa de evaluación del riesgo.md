@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-ambiente-laboral
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La evaluación de [[Riesgo]] esta dada por:
 * Forma de utilización de las sustancias: si se utiliza en circuito cerrado, si hay liberación al ambiente, si se utiliza en forma líquida o gaseosa.

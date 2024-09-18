@@ -8,11 +8,11 @@ previo: "[[Capítulo 3, Ejercicio de los derechos|Capítulo 3, Ejercicio de los 
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los [[Derecho|derechos]] deben ser ejercidos de buena fe"
 
-### Interpretación
+# Interpretación
 ---
 "Los [[Derecho|derechos]] deben ser ejercidos de buena fe..."
 * Mandato de optimización: ordena un comportamiento cooperativo
@@ -27,7 +27,7 @@ tags:
 * Como creencia o buena fe subjetiva
 	* Protege razonable certeza de una persona sobre la existencia o alcance de una relación jurídica
 
-#### Derivaciones y funciones
+## Derivaciones y funciones
 ---
 Fundamento de 2 [[Doctrina|doctrinas]]
 * Actos propios

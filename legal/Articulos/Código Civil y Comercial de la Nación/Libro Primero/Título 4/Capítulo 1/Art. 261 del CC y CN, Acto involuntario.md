@@ -17,7 +17,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Es involuntario por falta de discernimiento:
 
@@ -25,6 +25,6 @@ tags:
  b. el acto ilícito de la persona menor de edad que no ha cumplido diez años;
  c. el acto lícito de la persona menor de edad que no ha cumplido trece años, sin perjuicio de lo establecido en disposiciones especiales."
 
-### Interpretación
+# Interpretación
 ---
 Aunque el mencionado texto legal se refiere sólo a la falta de discernimiento debe destacarse que también la ausencia de los restantes elementos internos, intención y libertad, provocaría la involuntariedad del acto

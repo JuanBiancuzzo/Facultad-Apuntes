@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-euclídeos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Podemos encontrar la distancia minima entre un vector $v$ y un subespacio $S$, haciendo 
 

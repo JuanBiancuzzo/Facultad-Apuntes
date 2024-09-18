@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Constitución de la Nación/Primera parte/Capítulo 1
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Todos los habitantes de la Nación gozan de los siguientes derechos conforme a las leyes que reglamenten su ejercicio; a saber: de trabajar y ejercer toda industria lícita; de navegar y comerciar; de peticionar a las autoridades; de entrar, permanecer, transitar y salir del territorio argentino; de publicar sus ideas por la prensa sin censura previa; de usar y disponer de su propiedad; de asociarse con fines útiles; de profesar libremente su culto; de enseñar y aprender."
 
-### Interpretación
+# Interpretación
 ---

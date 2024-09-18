@@ -4,19 +4,19 @@ tags:
   - seguridad/Estrés-termico
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esos efectos pueden afectar la salud, la seguridad y el rendimiento:
 
-##### Salud
+### Salud
 * Hipertensión
 * Efermedades de las glándulas sudoríparas
 * Cataratas
 * Enfermedades gastrointestinales
 * Suceptibilidad aumentada a contaminantes químicos
 
-##### Seguridad
+### Seguridad
 * Incremento de [[Accidente de trabajo|accidentes]] e incidentes
 
-##### Rendimiento
+### Rendimiento
 * Descenso del rendimiento en el trabajo

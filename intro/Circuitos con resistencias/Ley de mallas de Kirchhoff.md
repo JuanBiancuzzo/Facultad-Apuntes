@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
 ---
-### Definición
+# Definición
 ---
 Al circular una [[Malla|malla]], la suma de todas las subidas de [[Tensión|tensión]] es igual a la suma de todas las caídas de tensión. Esta parte del principio de [[Conservación de la energía|conservación de la energía]].
 

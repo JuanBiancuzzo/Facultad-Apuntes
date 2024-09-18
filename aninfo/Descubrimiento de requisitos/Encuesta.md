@@ -4,7 +4,7 @@ tags:
   - aninfo/Descubrimiento-de-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Obtención de información de mucha gente mediante un cuestionario. Es muy útil cuando hay muchos [[Interesados en el producto|interesados]] potenciales.
 

@@ -6,5 +6,5 @@ tags:
 aliases:
   - Vector de Poyting
 ---
-### Definición
+# Definición
 ---

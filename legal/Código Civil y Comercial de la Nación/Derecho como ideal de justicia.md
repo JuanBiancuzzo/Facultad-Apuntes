@@ -4,7 +4,7 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se emplea la palabra derecho en un sentido axiológico, es decir, con referencia al valor jurídico supremo o armonizador que es la justicia.
 

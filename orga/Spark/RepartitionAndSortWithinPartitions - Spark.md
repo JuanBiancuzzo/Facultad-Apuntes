@@ -4,7 +4,7 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Transformación - Spark|transformación]] que nos permite [[Partición - Spark|reparticionar]] (como [[Repartition - Spark|repartition]]) un [[Resilent distributed dataset - Spark|RDD]] de acuerdo a un particionador y ordena los registros en base a su clave. 
 

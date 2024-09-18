@@ -4,7 +4,7 @@ tags:
   - dispo/Amplificador-emisor-y-source-común
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Hay que verificar que para un [[Transistor bipolar de juntura|TBJ]], que $v_{be}$ se encuentra dentro del rango de validez del [[Modelo de pequeña señal del transistor bipolar de juntura|modelo de pequeña señal]]
 

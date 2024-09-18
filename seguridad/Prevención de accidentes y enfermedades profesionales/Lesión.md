@@ -4,11 +4,11 @@ tags:
   - seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es el daño, alteración morbosa o funcional de los tejidos del organismo.
 
-### Puede generar
+# Puede generar
 ---
 * Incapacidad laboral temporal:
 	* Es aquella situación en la que los trabajadores, a causa de [[Accidente de trabajo|accidente laboral]], se encuentran imposibilitados temporariamente para realizar su trabajo habitual.

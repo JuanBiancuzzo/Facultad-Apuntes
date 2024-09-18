@@ -4,7 +4,7 @@ tags:
   - aninfo/Peopleware
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Recordamos mejor
 * [[Evento|Eventos]] poco frecuentes

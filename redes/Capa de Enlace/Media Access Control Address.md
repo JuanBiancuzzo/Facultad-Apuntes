@@ -11,7 +11,7 @@ aliases:
   - Dirección LAN
   - Dirección física
 ---
-### Definición
+# Definición
 ---
 Todos los adaptadores de hosts ([[Interfaz de red|interfaces de red]]) contienen una dirección propia de [[Capa de Enlace|capa de enlace]], esto no es así para los [[Router|routers]], los cuales no contienen direcciones de capa de enlace
 

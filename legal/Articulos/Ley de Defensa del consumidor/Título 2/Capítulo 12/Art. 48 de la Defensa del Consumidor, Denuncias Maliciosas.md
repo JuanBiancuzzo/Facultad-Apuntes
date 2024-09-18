@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Ley de Defensa del consumidor/Título 2/Capítulo 12/
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Quienes presentaren denuncias maliciosas o sin justa causa ante la autoridad de aplicación, serán sancionados según lo previsto en los [[Art. 47 de la Defensa del Consumidor, Sanciones#^a|incisos a)]] y [[Art. 47 de la Defensa del Consumidor, Sanciones#^b|b)]] del artículo anterior, sin perjuicio de las que pudieren corresponder por aplicación de las normas civiles y penales."
 
-### Interpretación
+# Interpretación
 ---

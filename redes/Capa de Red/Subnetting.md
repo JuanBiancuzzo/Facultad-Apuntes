@@ -7,7 +7,7 @@ tags:
   - redes/Capa-de-Red
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un host típicamente tiene un único enlace para conectarse a la [[Red|red]]. Cuando el protocolo de red del [[Host|host]] quiere enviar un [[Paquete|datagrama]], lo hace a través de un [[Router interface|interfaz]]
 
@@ -40,7 +40,7 @@ Para determinar una subnet, se desconectan todas las interfaces de su host o [[R
 
 Una organización suele ser asignado un [[Block of Addresses|rango de conexiones]] con una [[Classless Interdomain Routing|mascara]] común. Fuera de la organización, únicamente se utilizarán los bits del prefijo para enviar el [[Paquete|paquete]]. Esto reduce considerablemente el tamaño de las [[Forwarding table|forwarding tables]]. Los restantes bits serán usado dentro de la organización para distinguir las direcciones IP, es posible que los bits restantes a su vez estén organizados en otra estructuras de subredes
 
-#### Método de subnetting
+## Método de subnetting
 ---
 Partiremos de un espacio de direcciones $S$ con longitud de [[Classless Interdomain Routing|mascara]] $M$. Debido a que cada red debe reservar una dirección para la Network Address y otra para el Broadcast Address, tendremos un total de $T$ redes para entregar $$ T = 2^{32 - M} - 2 $$
 Esto también aplica para las subredes, por lo que si tendremos una subred con $A$ hosts y $R$ routers, entonces necesitaremos un total de $T_a$ redes para entregar $$ T_a = A + R + 2 $$

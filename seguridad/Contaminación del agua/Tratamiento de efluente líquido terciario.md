@@ -4,6 +4,6 @@ tags:
   - seguridad/Contaminación-del-agua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En los tratamientos terciarios se mejoran las características de los [[Efluente líquido|E. L]] después de un [[Tratamiento biológico]]

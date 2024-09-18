@@ -7,7 +7,7 @@ aliases:
   - Global System for Mobile Communications
   - GSM
 ---
-### Definición
+# Definición
 ---
 Para esta descripción, adoptaremos la terminología de los estándares Global System for Mobile Communications (GMS). Por lo general, las tecnologías de redes de celular pertenecen a una de varias generaciones
 * La primera generación 1G era un sistema [[Frequency Division Multiplexing|FDMA]] diseñado exclusivamente para comunicación por voz
@@ -17,7 +17,7 @@ Para esta descripción, adoptaremos la terminología de los estándares Global S
 
 Una red de proveedor celular tiene un número de [[Mobile Switching Center|MSC]], con algunos especiales conocidos como MSC gateway, que conectan la red del proveedor a la red telefónica pública
 
-#### Handoff
+## Handoff
 ---
 Un handoff ocurre cuando una estación móvil cambia su asociación de una [[Base Transceiver Station|estación base]] a otra durante una llamada. Esto puede ocurrir por otras diversas razones, además de la movilidad de un nodo, incluyendo que la [[Señal|señal]] de la estación actual deterioro lo suficiente y está en peligro de perderse, o una celda fue sobrecargada y debe delegar móviles a otras celdas cercanas
 

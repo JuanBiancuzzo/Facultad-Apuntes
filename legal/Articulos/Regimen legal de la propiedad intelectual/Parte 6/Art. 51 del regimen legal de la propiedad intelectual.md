@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Regimen legal de la propiedad intelectual/Parte 6/Par
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El autor o sus derechohabientes pueden enajenar o ceder total o parcialmente su obra. Esta enajenación es válida sólo durante el término establecido por la Ley y confiere a su adquirente el derecho a su aprovechamiento económico sin poder alterar su título, forma y contenido."
 
-### Interpretación
+# Interpretación
 ---

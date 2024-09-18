@@ -7,9 +7,9 @@ previo: "[[Capítulo 1, Declaraciones derechos y garantías|Capítulo 1, Declara
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El Gobierno federal sostiene el culto católico apostólico romano."
 
-### Interpretación
+# Interpretación
 ---

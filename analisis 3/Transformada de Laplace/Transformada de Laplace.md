@@ -5,14 +5,14 @@ tags:
   - nota/facultad
   - señales/Transformadas-de-Laplace-y-Z
 ---
-### Definición
+# Definición
 ---
 Sea $\mathcal{L} : \mathbb{O} \to \mathbb{I}$, donde $\mathcal{L}$ es la aplicación de la [[Transformada de Laplace|transformada de Laplace]], de un espacio $\mathbb{O}$ (cuyos elementos se denominan tradicionalmente "[[Función objeto|función objeto]]") en un espacio $\mathbb{I}$ de funciones [[Holomorfa|holomorfas]], denominadas "funciones imagen"
 
 Definiendo $\mathcal{L}(f(t)) = F(s) = F(\sigma + i\omega)$, se denomina transformada de Laplace de $f$ a $$ F(\sigma + i \omega) = \int\limits_{-\infty}^\infty f(t) ~ \exp(-(\sigma + i \omega)t) ~ dt $$
 Notemos que $F(s)$ es [[Función lineal|función C-lineal]], y que para definir correctamente necesitamos ver la [[Región de convergencia de la transformada de Laplace|región de convergencia]] la cual determina correctamente a la transformada de Laplace
 
-#### Relación con la transformada de Fourier
+## Relación con la transformada de Fourier
 ---
 Se puede decir que la [[Transformada de Fourier|transformada de Fourier]] es un caso especifico de una transformada de Laplace, por lo siguiente
 
@@ -24,7 +24,7 @@ $$ \begin{align}
 
 La transformada de Laplace $F(s)$ de $f(t)$ es la transformada de Fourier de $f(t) ~\exp(-\sigma t)$
 
-### Propiedades
+# Propiedades
 ---
 Veamos las siguientes propiedades de la transformada de Laplace
 
@@ -45,7 +45,7 @@ Veamos las siguientes propiedades de la transformada de Laplace
 | Valor inicial                      | $f(0)$                  | $\lim_{s \to \infty} s ~ F(s)$                                       |                                                                                     |
 | Valor final                        | $f(\infty)$             | $\lim_{s \to 0} s ~ F(s)$                                            |                                                                                     |
 
-#### Tabla de transformaciones conocidas
+## Tabla de transformaciones conocidas
 ---
 Vamos a enumerar algunas transformaciones conocidas
 

@@ -4,6 +4,6 @@ tags:
   - señales/Señales-y-sistemas
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se dice que un [[Sistema|sistema]] es lineal, si el mismo satisface las siguientes propiedades ![[Función lineal#Definición]]

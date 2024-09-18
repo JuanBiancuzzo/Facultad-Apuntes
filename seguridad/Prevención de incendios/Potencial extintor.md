@@ -4,13 +4,13 @@ tags:
   - seguridad/Prevención-de-incendios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la capacidad del conjunto matafuego-[[Agente extintor]] de extinguir un [[Fuego]] normalizado.
 
 Para detemrinar los requerimientos de poder exintor mínimo necesario de un [[Sector de incendio|sector]], se calcula la [[Carga de fuego]] y con el [[Riesgo de incendio]], de las siguientes tablas se determina el potencial extintor mínimo.
 
-##### Fuesgos clase A
+### Fuesgos clase A
 | Carga de fuego         | [[Riesgo explosivos]] | [[Riesgo inflamable]] | [[Riesgo muy combustibles]] | [[Riesgo combustibles]] | [[Riesgo poco combustibles]] |
 | ---------------------- | --------------------- | --------------------- | --------------------------- | ----------------------- | ---------------------------- |
 | Hasta $15 Kg/m^2$      | -                     | -                     | 1A                          | 1A                      | 1A                           |
@@ -20,7 +20,7 @@ Para detemrinar los requerimientos de poder exintor mínimo necesario de un [[Se
 | Mayor a $100 Kg/m^2$   | Depende de cada caso  | Depende de cada caso  | Depende de cada caso        | Depende de cada caso    | Depende de cada caso                             |
 
 
-##### Fuesgos clase B
+### Fuesgos clase B
 | Carga de fuego         | [[Riesgo explosivos]] | [[Riesgo inflamable]] | [[Riesgo muy combustibles]] | [[Riesgo combustibles]] | [[Riesgo poco combustibles]] |
 | ---------------------- | --------------------- | --------------------- | --------------------------- | ----------------------- | ---------------------------- |
 | Hasta $15 Kg/m^2$      | -                     | 6B                    | 4B                          | $\cdots$                | $\cdots$                     |

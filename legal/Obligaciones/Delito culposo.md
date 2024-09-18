@@ -4,11 +4,11 @@ tags:
   - legal/Obligaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es toda acción típicamente [[Art. 1717 del CC y CN, Antijuridicidad|antijurídica]] prevista en la [[Código Penal de la Nación|ley penal]] que produce un resultado dañoso debido a que el agente ha obrado con falta en el deber de previsión, cuidado, diligencia, prudencia
 
-#### Ejemplo
+## Ejemplo
 ---
 Quien conduciendo a excesiva velocidad causa la muerte a una [[Persona humana|persona]] que cruzaba por la senda peatonal
 

@@ -4,7 +4,7 @@ tags:
   - seguridad/Estrés-termico
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se define con la siguiente formula $$ M \pm R \pm C \pm c - V = E $$
 Donde:
@@ -16,7 +16,7 @@ Donde:
 * $E$ es el intercambio de calor entre el cuerpo y el ambiente por [[Evaporación|evaporación]] $(Kcal/h)$ 
 
 Por lo tanto para nosotros es útil expresarlo como $$ M \pm R \pm C = E $$
-#### Intercambio por convección de calor
+## Intercambio por convección de calor
 ---
 $$ C = K_c \cdot A \cdot (t_{bs} - t_{piel}), ~~ K_c = 6.5 \cdot V^{0.6} $$
 Donde:
@@ -26,7 +26,7 @@ Donde:
 * $A$ es la superficie corporal, de aproximadamente $1.8 m^2$, para un hombre de $1.7m$ y $70kg$
 
 
-#### Intercambio por radiación
+## Intercambio por radiación
 ---
 $$ R = 8.43 \left( \left(\frac{T_{mr}}{100}\right)^4 - \left(\frac{T_p}{100}\right)^4  \right) $$ $$ \left(\frac{T_{mr}}{100}\right)^4 = 2.47 \cdot V^{0.5} \cdot (t_g - t_{bs}) + \left(\frac{T_{g}}{100}\right)^4 $$
 Donde:

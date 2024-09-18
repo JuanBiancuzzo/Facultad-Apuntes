@@ -4,6 +4,6 @@ tags:
   - seguridad/Prevención-de-incendios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se refiere al efecto destructivo del [[Fuego]] cuando se pierde el control del mismo.

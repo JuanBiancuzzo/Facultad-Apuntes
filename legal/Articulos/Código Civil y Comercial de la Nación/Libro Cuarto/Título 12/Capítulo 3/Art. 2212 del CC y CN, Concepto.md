@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Cuarto/
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La anticresis es el derecho real de garantía que recae sobre cosas registrables individualizadas, cuya posesión se entrega al acreedor o a un tercero designado por las partes, a quien se autoriza a percibir los frutos para imputarlos a una deuda."
 
-### Interpretación
+# Interpretación
 ---

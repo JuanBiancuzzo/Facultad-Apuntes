@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $G = \big( V(G),~E(G),~\Psi_G \big)$  un [[Grafo|grafo]], se define $M_G$ a la [[algebra 2/Espacios Vectoriales/Matriz.md|matriz]] de incidencia de $G$ tal que $A_G(i,~ j)$ lleva un uno si la arista $j$ incide en $i$, y lleva un dos si es un [[Lazo|lazo]]
 

@@ -4,11 +4,11 @@ tags:
   - bdd/SQL
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta [[SQL Keywords#Funciones de agregación|función de agregación]] devuelve el valor más grande de una columna seleccionada
 
-#### Sintaxis
+## Sintaxis
 ---
 ```SQL
 SELECT MAX (nombre_columna)
@@ -18,7 +18,7 @@ WHERE condicion;
 
 En caso de un valor sea [[NULL|NULL]] se ignora
 
-#### Alias
+## Alias
 ---
 Cuando se usa `MAX`, la columna que se devuelve no tiene un nombre descriptivo por lo que es útil usar un [[Alias#En SQL|alias]] para cambiarle el nombre 
 
@@ -27,7 +27,7 @@ SELECT MAX (Precio) AS PrecioMasGrande
 FROM Productos;
 ```
 
-#### Group by
+## Group by
 ---
 Cuando se una `MAX` con la [[Sentencia GROUP BY|sentencia GROUP BY]] el resultado es el valor más grande de cada categoría
 

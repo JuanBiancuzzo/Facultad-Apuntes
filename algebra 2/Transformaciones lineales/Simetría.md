@@ -4,7 +4,7 @@ tags:
   - algebra-2/Transformaciones-lineales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Teniendo dos [[Subespacio|subespacios]] $S_1$ y $S_2$ en [[Suma directa entre subespacios|suma directa]], tal que generen el espacio vectorial $\mathbb{V}$
 
@@ -13,7 +13,7 @@ $$\Pi_{S_1, S_2} := \mathbb{I}_\mathbb{V} - 2 \cdot \Pi_{S_1, S_2}$$
 
 Donde $\Pi_{S_1, S_2}$ es la [[Proyector|proyector]], de $S_1$ en $S_2$
 
-#### Propiedades 
+## Propiedades 
 ---
  * $\begin{cases} \Sigma_{S_1, S_2} = \mathbb{I}_\mathbb{V}(V) - 2 \cdot \Pi_{S_1, S_2} = v - 2 \cdot 0_\mathbb{V} =  v, \text{ si } v \in S_1 \\  ~~ \\  \Sigma_{S_1, S_2} = \mathbb{I}_\mathbb{V}(V) - 2 \cdot \Pi_{S_1, S_2} = v - 2 \cdot v = -v, \text{ si } v \in S_2 \\  \end{cases}$
  

@@ -8,12 +8,12 @@ aliases:
 referencias:
   - "237"
 ---
-### Definición
+# Definición
 ---
 Los SoM es un [[Circuito eléctrico|circuito]] que integra un sistema de funcionalidad en un solo modulo. A diferencia a [[Single board computer (SBC)|SBC]], los SoM tiene una única funcionalidad como los [[System on a Chip|SoC]]
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

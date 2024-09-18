@@ -4,7 +4,7 @@ tags:
   - orga/Machine-learning
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En un [[Aprendizaje supervisado|aprendizaje supervisado]] se tiene que validar la respuesta de nuestro modelo, por lo que tendremos que dividir nuestro set de datos en dos:
 * Set de entrenamiento

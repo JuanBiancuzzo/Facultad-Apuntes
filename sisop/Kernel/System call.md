@@ -4,7 +4,7 @@ tags:
   - sisop/Kernel
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Las system calls son funciones que permiten a los [[Proceso|procesos]] de usuario pedirle al [[Kernel]] que realice operaciones en su nombre. Una system call es cualquier función que el kernel expone que puede ser utilizada por un proceso a [[User mode|nivel usuario]].
 
@@ -21,11 +21,11 @@ Desde el punto de vista del [[Programa]], llamar a una system call es más o men
 	5. Se devuelve el control al wrapper y simultáneamente se pasa a [[User mode|user mode]]
 6. Si el valor de retorno de la rutina de servicios de la system call da error, la función wrapper setea el valor en `errno`
 
-#### API
+## API
 ---
 Las system calls conforman una API
 
-##### Relacionados a sistema de archivos
+### Relacionados a sistema de archivos
 ---
 * [[Creat system call|creat()]]
 * [[Open system call|open()]]
@@ -45,7 +45,7 @@ Las system calls conforman una API
 * [[Ioctl  system call|ioctl()]]
 * [[Chdir system call|chdir()]]
 
-##### Relacionadas a los procesos
+### Relacionadas a los procesos
 ---
 * [[Exec system call|exec()]]
 * [[Fork system call|fork()]]
@@ -62,7 +62,7 @@ Las system calls conforman una API
 * [[Alarm system call|alarm()]]
 * [[Brk system call|brk()]]
 
-##### Relacionadas a la intercomunicación entre procesos
+### Relacionadas a la intercomunicación entre procesos
 ---
 * [[Pipe system call|pipe()]]
 * [[Msgget system call|msgget()]]

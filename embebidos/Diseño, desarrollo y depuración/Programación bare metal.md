@@ -7,7 +7,7 @@ aliases:
   - Super-loop
   - Polling & interrupts
 ---
-### Definición
+# Definición
 ---
 La [[Aplicación|aplicación]] se escribe accediendo directamente al [[Hardware|hardware]] sin utilizar una interfaz de programación externa (sin [[Sistema operativo|sistema operativo]])
 * La aplicación accede directamente a los registros de hardware del [[Microcontrolador|microcontrolador]]

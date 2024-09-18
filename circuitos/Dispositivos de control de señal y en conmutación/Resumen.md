@@ -4,12 +4,12 @@ tags:
  - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
  - resumen
 ---
-### Índice 
+# Índice 
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 ```
 
-### Resumen
+# Resumen
 ---
 Pendiente...

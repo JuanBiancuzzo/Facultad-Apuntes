@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Regimen legal de la propiedad intelectual/Regimen leg
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Al editor de una obra anónima o seudónima corresponderán, con relación a ella, los derechos y las obligaciones del autor, quien podrá recabarlos para sí justificando su personalidad. Los autores que empleen seudónimos, podrán registrarlos adquiriendo la propiedad de los mismos."
 
-### Interpretación
+# Interpretación
 ---

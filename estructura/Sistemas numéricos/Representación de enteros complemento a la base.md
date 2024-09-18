@@ -4,7 +4,7 @@ tags:
   - estructura/Sistemas-numéricos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Su forma de representación aplica para los números negativos el [[Complemento a la base|complemento]].
 
@@ -15,7 +15,7 @@ $$ \sum_{i = 0}^{N-1} b_i \cdot 2^i ~ - b_i \cdot 2^N $$
 
 Su [[Rango de representación]] es $$ (-2^{n-1})_{10} \le x \le (-2^{n-1} - 1)_{10}$$
 
-### Ejemplo
+# Ejemplo
 ---
 | Decimal | Complemento a la base |
 | ------- | --------------------- |

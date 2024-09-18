@@ -4,6 +4,6 @@ tags:
   - taller/Ownership
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se puede copiar en vez de [[Movimiento|mover]] el dueño, esto se logra implementando el [[Traits|trait]] `Copy`.

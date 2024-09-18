@@ -28,7 +28,7 @@ previo: "[[legal/Articulos/Administración financiera y de los sistemas de contr
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Las disposiciones de esta Ley serán de aplicación en todo el Sector Público Nacional, el que a tal efecto está integrado por:
 
@@ -42,5 +42,5 @@ tags:
 
 Serán aplicables las normas de esta ley, en lo relativo a la rendición de cuentas de las organizaciones privadas a las que se hayan acordado subsidios o aportes y a las instituciones o fondos cuya administración, guarda o conservación está a cargo del Estado nacional a través de sus Jurisdicciones o Entidades."
 
-### Interpretación
+# Interpretación
 ---

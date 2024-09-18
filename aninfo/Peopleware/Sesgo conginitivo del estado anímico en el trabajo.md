@@ -4,7 +4,7 @@ tags:
   - aninfo/Peopleware
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Depende menos de factores generales, como beneficios y estatus. Son más importantes los aspectos situacionales:
 * Oportunidades de socializar con los compañeros

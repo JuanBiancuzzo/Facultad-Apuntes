@@ -6,7 +6,7 @@ tags:
   - redes/Capa-de-Transporte
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Este [[Protocolo|protocolo]] consiste en repetir selectivamente únicamente aquellos [[Paquete|paquetes]] que se perdieron. Se utiliza una ventana de tamaño $n$ tanto para el receptor como para el remitente
 

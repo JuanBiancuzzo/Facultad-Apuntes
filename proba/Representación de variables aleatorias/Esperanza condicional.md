@@ -4,7 +4,7 @@ tags:
   - proba/Representación-de-variables-aleatorias
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dada una [[Variable aleatoria]] $X$, si se quiere calcular la [[Esperanza]] pero cuando $X$ es una variable truncada ([[Truncamiento]]), en el conjunto $B$
 

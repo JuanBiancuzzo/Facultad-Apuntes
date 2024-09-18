@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Funciones-de-varias-variables
 ---
-### Definición
+# Definición
 ---
 Considere la [[Función|función]] $z = F(x, y)$. Sea $(x_0, y_0) \in \mathbb{R}^2$ un punto tal que $F(x_0, y_0) = 0$
 
@@ -44,6 +44,6 @@ Visualmente, esto se vería como
 
 En este caso, se aplica el [[Teorema Cauchy-Dini para ecuaciones escalares]]
 
-#### Aplicaciones
+## Aplicaciones
 ---
 ![[Curva plana dada de forma implicita#Definición]] ![[Superficie dada en forma implicita#Definición]] ![[Curva definida como interseccion de dos superficies implicitas#Definición]]

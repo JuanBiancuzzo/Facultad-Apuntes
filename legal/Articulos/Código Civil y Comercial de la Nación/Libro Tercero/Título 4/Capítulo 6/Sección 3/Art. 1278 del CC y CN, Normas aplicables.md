@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Resultan aplicables a los servicios las normas de la [[Sección 1, Disposiciones comunes a las obras y a los servicios|Sección 1ª de este Capítulo]] y las correspondientes a las obligaciones de hacer."
 
-### Interpretación
+# Interpretación
 ---

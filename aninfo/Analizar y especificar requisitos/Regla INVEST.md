@@ -4,7 +4,7 @@ tags:
   - aninfo/Analizar-y-especificar-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Para determinar la calidad de las [[Historia de usuario|historias de usuario]] están las siguientes reglas
 * I - Independiente de otras historias.

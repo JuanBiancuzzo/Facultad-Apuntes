@@ -4,7 +4,7 @@ tags:
  - discreta/Álgebra-de-conjuntos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Definiremos la densidad de verdad de una [[Proposición|proposición]] como el porcentaje de elementos del [[Dominio de una función|dominio]] que afirman la proposición
 

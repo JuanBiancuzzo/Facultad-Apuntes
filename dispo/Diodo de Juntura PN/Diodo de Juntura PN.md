@@ -4,7 +4,7 @@ tags:
   - dispo/Diodo-de-Juntura-PN
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[Juntura PN|juntura PN]] es un [[Diodo|diodo]] 
 
@@ -15,11 +15,11 @@ Al aplicar una [[Tensión|tensión]] ($V_D = V_{PN}$) al [[Diodo|diodo]] se modi
 * Circula [[Corriente eléctrica|corriente]]
 
 Podemos el porque en la [[Juntura PN con polarización|juntura PN con polarización]].
-#### Aplicando una tensión de polarización
+## Aplicando una tensión de polarización
 ---
 Al aplicar una [[Tensión|tensión]] de polarización, la [[Modelo de enlace de Silicio#Concentración de Portador de carga portadores|concentración de portadores]] se modifica
 
-##### Para $V_D > 0$ (en [[Convención de signos para la tensión de polarización#Polarización directa|directa]])
+### Para $V_D > 0$ (en [[Convención de signos para la tensión de polarización#Polarización directa|directa]])
 $$ \Delta V_{SCR} \downarrow = \phi_B - V_D < \phi_B \implies |E_{SCR}| \downarrow ~ \implies |J_{arr}| \downarrow $$
 Donde $\phi_B$ es el [[Potencial de built-in|potencial de built-in]], $E$ es el [[Campo eléctrico|campo eléctrico]] y $J_{arr}$ es la [[Corriente de arrastre|densidad de corriente de arrastre]]
 
@@ -34,7 +34,7 @@ Debido a este desbalance, aparece una [[Corriente eléctrica|corriente]] neta (d
 
 Hay una gran difusión de $h^+$ en n-QNR y de $e^-$ en p-QNR entonces la corriente puede ser grande
 
-##### Para $V_D < 0$ (en [[Convención de signos para la tensión de polarización#Polarización inversa|inversa]])
+### Para $V_D < 0$ (en [[Convención de signos para la tensión de polarización#Polarización inversa|inversa]])
 ---
 $$ \Delta V_{SCR} \uparrow = \phi_B - V_D > \phi_B \implies |E_{SCR}| \uparrow ~ \implies |J_{arr}| \uparrow $$
 Donde $\phi_B$ es el [[Potencial de built-in|potencial de built-in]], $E$ es el [[Campo eléctrico|campo eléctrico]] y $J_{arr}$ es la [[Corriente de arrastre|densidad de corriente de arrastre]]

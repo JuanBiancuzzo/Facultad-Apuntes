@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - embebidos/Microcontroladores-de-32-bits
 ---
-### Definición
+# Definición
 ---
 Cuando se suman o restan dos números, podemos tener un acarreo. En el caso de una [[Suma de enteros|suma entre número binarios]], el acarreo es un bit. Es como tener un bit más en el [[Registro|registro]] de resultado.  Este bit de resultado suplementario se convierte en el [[Unidad Aritmético Lógica#Flags|flag]] de acarreo
 

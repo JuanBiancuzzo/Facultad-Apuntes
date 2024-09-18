@@ -12,13 +12,13 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
 ```
-### Definición
+# Definición
 ---
 * [Chapter 21. True Impostors de GPU Gems 3](https://developer.nvidia.com/gpugems/gpugems3/part-iv-image-effects/chapter-21-true-impostors)
 
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

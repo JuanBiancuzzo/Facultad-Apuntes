@@ -4,7 +4,7 @@ tags:
   - legal/Derechos-humanos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 D.R.A.E. Del lat. usucapio, -ōnis.
 1. f. Der. Adquisición de una propiedad o de un derecho real mediante su

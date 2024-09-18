@@ -4,7 +4,7 @@ tags:
   - taller/Sintaxis
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se crea una variable en la condición, en el caso de que exista, por ejemplo
 

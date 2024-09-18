@@ -4,7 +4,7 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Acción - Spark|acción]] que nos permite contar la cantidad de ocurrencias de registros de un [[Resilent distributed dataset - Spark|RDD]] para cada clave.
 

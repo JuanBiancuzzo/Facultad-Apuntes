@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - circuitos/Circuitos-con-diodos
 ---
-### Definición
+# Definición
 ---
 Usando el efecto de incremento de [[Corriente eléctrica|corriente]] [[Convención de signos para la tensión de polarización#Polarización inversa|inversa]], dado por la [[Ruptura inversa|ruptura inversa]], dando a lugar a este nuevo [[Diodo|diodo]]
 

@@ -4,15 +4,15 @@ tags:
   - bdd/SQL
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 
 
-#### En SQL
+## En SQL
 ---
 En [[Structured Query Language|SQL]] los alias son usados para darle a las [[Tabla SQL|tablas]] o columnas de las tablas un nombre temporal ya que solo duran lo que dura la query. En general se usan para hacer nombres más legible.
 
-##### Sintaxis
+### Sintaxis
 ---
 ```SQL
 SELECT nombre_columna AS alias
@@ -25,14 +25,14 @@ SELECT nombre_columna alias
 FROM nombre_tabla;
 ```
 
-###### Multiples columnas
+#### Multiples columnas
 ---
 ```SQL
 SELECT nombre_columna AS alias, nombre_columna2 AS alias2, ...
 FROM nombre_tabla;
 ```
 
-###### Alias con espacios
+#### Alias con espacios
 ---
 ```SQL
 SELECT nombre_columna AS [nombre con espacios]

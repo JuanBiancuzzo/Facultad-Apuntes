@@ -4,6 +4,6 @@ tags:
   - orga/Machine-learning
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Red neuronal]] que tiene varias capas de [[Neurona|neuronas]]

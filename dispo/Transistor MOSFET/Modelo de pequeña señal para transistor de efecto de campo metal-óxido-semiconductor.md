@@ -16,7 +16,7 @@ tags:
   - nota/facultad
   - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
 ---
-### Definición
+# Definición
 ---
 El [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] es un dispositivo [[Función lineal|alineal]] por lo que no cumple el [[Principio de superposición|principio de superposición]]. Entonces teniendo el [[Circuito eléctrico|circuito]]
 
@@ -28,7 +28,7 @@ Por lo tanto vamos a aproximarla usando el [[Serie de Taylor#Polinomio de Taylor
 	+& ~ \frac{\partial i_D}{\partial v_{DS}} \biggm|_{Q} v_{ds} \\ 
 	+& ~ \frac{\partial i_D}{\partial v_{BS}} \biggm|_{Q} v_{bs} \\  
 \end{align} $$ donde $Q \equiv$  punto de polarización  $(V_{GS}, V_{DS}, V_{BS})$.
-#### Rango de validez del modelo
+## Rango de validez del modelo
 ---
 Recordando que $i_D$ esta dada por $$ i_D = \begin{cases} 
 	0 & v_{GS} < V_T \\
@@ -38,7 +38,7 @@ Recordando que $i_D$ esta dada por $$ i_D = \begin{cases}
 Tomando la corriente correspondiente al [[Saturación del transistor de efecto de campo metal-óxido-semiconductor|régimen de saturación]]. Al [[Serie de Taylor|aproximar]] una función cuadrática con un polinomio de primer orden, se comete un error. El error está dado por el término de orden 2 del polinomio. Si aceptamos un $10\%$ de error en la linealización $$ k ~ v^2_{gs} < 10\% ~ 2k ~ (V_{GS} - V_T) ~ v_{gs} $$ $$ v_{gs} < 0.2 ~ (V_{GS} - V_T) $$ 
 Por lo que el límite del modelo de pequeña señal depende de la polarización.
 
-#### Modelo para bajas frecuencias
+## Modelo para bajas frecuencias
 ---
 Corriente $i_d$ de pequeña señal $$ i_d \simeq g_m ~ v_{gs} + g_0 ~ v_{ds} + g_{mb} ~ v_{bs} $$
 Tomando $i_D$ como $$ i_D = \frac{1}{2} \frac{W}{L} (v_{GS} - V_T)^2 (1 + \lambda v_{DS}) $$ donde tomamos como punto de polarización $Q$ en  $(V_{GS}, V_{DS}, V_{BS})$
@@ -93,17 +93,17 @@ Dándonos el modelo completo que pequeña señal a baja frecuencia
 \end{document}
 ```
 
-##### Transconductancia
+### Transconductancia
 ---
 La transconductancia $g_m \equiv [S]$ $$ g_m = \frac{\partial i_D}{\partial v_{GS}} \biggm|_{Q} = \frac{W}{L} \mu C'_{ox} (V_{GS} - V_T) (1 + \lambda V_{DS}) = \sqrt{2 \frac{W}{L} \mu_n C'_{ox} I_D} = 2\sqrt{k I_D} $$ 
-##### Conductancia del drain o conductancia de salida
+### Conductancia del drain o conductancia de salida
 ---
 Conductancia del drain o conductancia de salida $g_0 \equiv [S]$ $$ g_0 = \frac{\partial i_D}{\partial v_{DS}} \biggm|_{Q} = \frac{1}{2} \frac{W}{L} (v_{GS} - V_T)^2 \lambda = I_{D ~ (sat)} \lambda \propto \frac{I_{D ~ (sat)}}{L} $$ 
-###### Validez
+#### Validez
 ---
 Es válido mientras $$ v_{ds} < V_{DSQ} - V_{DS ~ (sat)} $$ es decir, mientras el [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] esté polarizado en el [[Saturación del transistor de efecto de campo metal-óxido-semiconductor|régimen de saturación]] 
 
-##### Transconductancia del backgate
+### Transconductancia del backgate
 ---
 Transconductancia del backgate $g_{mb} \equiv [S]$, Recordando que $V_T(v_{BS})$ donde $V_T$ es la [[Tensión umbral#Para un Transistor de efecto de campo metal-óxido-semiconductor (MOSFET) MOSFET|tensión umbral]] tenemos que  $$ \begin{matrix} 
 	g_{mb} = \frac{\partial i_D}{\partial v_{BS}} \biggm|_{Q} = \frac{W}{L} (v_{GS} - V_T(v_{BS})) (1 + \lambda v_{DS}) \left( - \frac{\partial V_T}{\partial v_{BS}} \biggm|_{Q} \right) \\
@@ -112,11 +112,11 @@ Transconductancia del backgate $g_{mb} \equiv [S]$, Recordando que $V_T(v_{BS})$
 
 Recordando que $$ V_T(V_{BS}) = V_{T0} + \gamma ~ \left( \sqrt{-2 \phi_p - V_{BS}} - \sqrt{-2 \phi_p} \right) $$ resulta $$ g_{mb} = g_m \frac{\gamma}{2 \sqrt{-2\phi_p - V_{BS}}} $$ donde $\gamma$ es [[Body factor coefficient|body factor coefficient]]
 
-###### Validez
+#### Validez
 ---
 Es válido mientras (esta mal según pipe pero no esta confiado que es este el que esta mal) $$ v_{bs} < 0.4 ~ (V_{GS} - V_T) (-2\phi_p - V_{BS}) $$
 
-#### Modelo para altas frecuencias
+## Modelo para altas frecuencias
 ---
 Las [[Capacitancia|capacitancias]] parásitas del [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] limitan su respuesta dinámica y en [[Función periódica#Frecuencia|frecuencia]]. El régimen más importante para aplicaciones analógicas es el de [[Saturación del transistor de efecto de campo metal-óxido-semiconductor|saturación]].
 

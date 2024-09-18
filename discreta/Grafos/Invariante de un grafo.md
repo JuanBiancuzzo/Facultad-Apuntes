@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se define las invariantes de un [[Grafo|grafo]] a cualquier propiedad que se mantiene ante [[Isomorfismo#Grafos|isomorfismos]]. Ningún [[Conjunto|conjunto]] de variantes es un juego completo
 * [[Grafo conexo|Conexidad]]

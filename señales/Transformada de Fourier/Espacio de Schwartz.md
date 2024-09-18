@@ -4,7 +4,7 @@ tags:
   - señales/Transformada-de-Fourier
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El espacio de Schwartz o espacio de funciones de decrecimiento rápido $\mathcal{S} \left(\mathbb{R}^n\right)$ definido sobre el [[Espacio Rn|espacio euclídeo]] $\mathbb{R}^n$ es el [[Conjunto|conjunto]] de [[Función|funciones]] $$ \mathcal{S} \left(\mathbb{R}^n\right) = \Set{ f \in C^{\infty} \left( \mathbb{R}^n \right) | \forall \alpha, \beta : \lVert f \rVert_{\alpha, ~ \beta} < \infty } $$
 Donde 

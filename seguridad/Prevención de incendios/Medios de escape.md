@@ -4,13 +4,13 @@ tags:
   - seguridad/Prevención-de-incendios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Medio de salida que constituye la línea natural de escape (tránsito). Tiene como objetivo garantizar una evacuación rápida y segura.
 
 Para el calculo de número de salidas y ancho mínimo de los medios de escape denenden del factor de ocupación que notaremos como $F_o$ con unidades de ($m^2/\text{persona}$) y la superficie del [[Sector de incendio|sector]] con unidades de ($m^2$).
 
-##### Factor de ocupación
+### Factor de ocupación
 | Uso                                                                                                                | $X$ en $m^2$ |
 | ------------------------------------------------------------------------------------------------------------------ | ------------ |
 | Sitios de asambleas, auditorios, salas de concienrtos, salas de baile                                              | 1            |

@@ -4,7 +4,7 @@ tags:
   - señales/Serie-de-Fourier
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Una [[Señal|señal]] periódica en tiempo discreto satisface $$ x[n] = x[n + N], ~ \forall n \in \mathbb{Z} $$ donde $N$ es el periodo. Consideremos las [[Función exponencial|exponenciales discretas]] con frecuencias fundamentales $k ~ \omega_0$ $$ f_k[n] = e^{j k \omega_0 n}, ~ \forall k \in \mathbb{Z}, ~~~ \omega_0 = \frac{2\pi}{N} $$
 Donde tenemos que acordarnos la propiedad ![[Función exponencial#Ambigüedad discreta]]
@@ -12,7 +12,7 @@ De esta forma la serie de Fourier en tiempo discreto no es una [[Serie|serie]] s
 
 Donde $a_k$ son los [[Coeficientes de Fourier de una señal discreta|Coeficientes de Fourier]]
 
-#### Sistemas LTI
+## Sistemas LTI
 ---
 Consideremos el caso de un sistema de discreto continuo cuya [[Representación de una señal mediante impulsos|respuesta al impulso]] es $h[n]$. Supongamos que la entrada al mismo es $x[n] = z^n$ donde $z \in \mathbb{C}$. La salida del sistema se puede escribir como $$ \begin{align} y(t) 
 	&= \sum_{k = -\infty}^{\infty} h(\tau) ~ x(t - \tau) \\

@@ -4,7 +4,7 @@ tags:
   - orga/Visualizaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un [[Plot]] donde se muestra en el eje x una [[Distribución continua]] y en el eje y, la cantidad correspondiente al mismo.
 

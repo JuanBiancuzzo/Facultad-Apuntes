@@ -6,11 +6,11 @@ tags:
 aliases:
   - EMV
 ---
-### Definición
+# Definición
 ---
 Diremos que $\hat{\theta}(\underline{X})$ es un [[Estimador|estimador]] de máxima [[Función de verosimilitud|verosimilitud]] de $\theta$ si se cumple que $$ f_{\hat{\theta}}(\underline{X}) = \max_{\theta} f_\theta(\underline{x}) $$
 Es decir, buscamos el valor de $\theta$ que maximiza la [[Función de verosimilitud|función de verosimilitud]] $$ \hat{\theta} = arg~max_\theta~ L(\theta) $$ 
-#### Método
+## Método
 ---
 A partir de la [[Función|función]] de verosimilitud $L(\theta)$, busco el valor de $\theta$ que maximiza dicha función
 

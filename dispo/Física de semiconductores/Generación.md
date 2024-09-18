@@ -4,7 +4,7 @@ tags:
   - dispo/Física-de-semiconductores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la ruptura de un [[Enlace covalente]] que da lugar a un [[Electrón]] $e^-$ y un [[Hueco]] $h^+$. Requiere energía de una fuente externa como térmica, óptica u otra.
 

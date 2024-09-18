@@ -4,6 +4,6 @@ tags:
   - aninfo/Diseño-de-software
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un estilo [[Arquitectura de aplicaciones|arquitectónico]] donde a través de una [[Representational state transfer]], uno puede acceder a lógica especifica

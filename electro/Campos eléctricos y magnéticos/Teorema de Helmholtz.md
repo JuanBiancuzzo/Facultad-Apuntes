@@ -4,7 +4,7 @@ tags:
   - electro/Campos-eléctricos-y-magnéticos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El teorema de Helmholtz muestra que todo [[Campo vectorial|campo vectorial]] está unívocamente definido si se conocen su [[Divergencia|divergencia]] y su [[Rotor|rotor]]
 

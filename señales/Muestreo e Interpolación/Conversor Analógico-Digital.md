@@ -9,7 +9,7 @@ aliases:
   - A/D converter
   - Analog to digital converter
 ---
-### Definición
+# Definición
 ---
 Podemos [[Modelo|modelar]] un conversor A/D de la siguiente forma
 
@@ -48,7 +48,7 @@ Donde vamos a definir $x_c(t)$ como la [[Señal#^016a35|señal continua]] a conv
 \end{align} $$
 Este modelo matemático nos va a permitir analizar la acción de este [[Sistema|sistema]] en el dominio de la frecuencia
 
-#### Respuesta en frecuencia
+## Respuesta en frecuencia
 ---
 Veamos que $x_p(t) = x_c(t) ~ p(t) = \sum_{n = -\infty}^{\infty} x_c(t) ~ \delta(t - nT)$, en el dominio en el tiempo. En el dominio de la frecuencia tenemos que $$ X_p(j\omega) = \frac{1}{2\pi} X_c(j\omega) \ast P(j\omega) $$
 Donde sabemos que $$ P(j\omega) = \frac{2\pi}{T} \sum_{k=-\infty}^{\infty} \delta(\omega - k\omega_s) $$ donde $\omega_s = \frac{2\pi}{T}$ es la frecuencia de muestreo. Es claro entonces que podemos escribir $$ X_p(j\omega) = \frac{1}{T} \frac{2\pi}{T} \sum_{k=-\infty}^{\infty} X_c(j(\omega - k\omega_s)) $$

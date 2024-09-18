@@ -4,7 +4,7 @@ tags:
   - legal/Contratos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La obra encargada debe ejecutarse, en primer término, siguiendo las estipulaciones del [[Contrato de obra|contrato]]. Es que, toda vez que el comitente contrata la obra en su propio interés, no puede el contratista ejecutarla apartándose de las previsiones contractuales pactadas.
 
@@ -12,11 +12,11 @@ Ahora bien, en el cumplimiento de las estipulaciones acordadas, el contratista, 
 1) Falta de estipulación
 2) Obra que debe realizarse a satisfacción del comitente
 
-#### Ejecución de la obra por intermedio de terceros
+## Ejecución de la obra por intermedio de terceros
 ---
 Salvo que el comitente haya tenido en mira las condiciones personales del contratista, éste está autorizado a realizarla, ya sea personalmente, ya sea por intermedio de obreros dependientes de él, ya sea, en fin, por subcontratistas, manteniendo el deber de dirección y la responsabilidad sobre estos terceros ([[Art. 1254 del CC y CN, Cooperación de terceros|art. 1254]]).
 
-#### Sanciones por incumplimiento de esta obligación
+## Sanciones por incumplimiento de esta obligación
 ---
 El dueño de la obra o comitente está protegido contra el incumplimiento o el cumplimiento deficiente de la obligación de ejecutar la obra, con los siguientes derechos y acciones:
 1) Derecho a no pagar el precio

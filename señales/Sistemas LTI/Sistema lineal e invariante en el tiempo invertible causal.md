@@ -6,7 +6,7 @@ tags:
   - señales/Sistemas-LTI
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sabemos que para que un [[Sistema lineal e invariante en el tiempo|sistema]] sea [[Sistema causal|causal]] tiene que ocurrir ![[Sistema causal#Definición]]
 Podemos entonces $$ \begin{matrix} 

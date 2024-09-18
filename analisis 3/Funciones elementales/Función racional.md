@@ -4,7 +4,7 @@ tags:
   - analisis-3/Funciones-elementales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Una función racional es un cociente de las funciónes $P$ y $Q$ donde $P$ y $Q$ son [[Función polinomica]] y $Q$ no es el polinomio nulo.
 

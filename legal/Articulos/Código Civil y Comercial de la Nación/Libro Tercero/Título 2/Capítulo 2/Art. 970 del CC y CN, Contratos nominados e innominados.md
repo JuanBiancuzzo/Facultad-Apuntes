@@ -19,7 +19,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los contratos son nominados e innominados según que la ley los regule especialmente o no. Los contratos innominados están regidos, en el siguiente orden, por:
 
@@ -28,7 +28,7 @@ tags:
  c. los usos y prácticas del lugar de celebración;
  d. las disposiciones correspondientes a los contratos nominados afines que son compatibles y se adecuan a su finalidad."
 
-### Interpretación
+# Interpretación
 ---
 Son contratos nominados los que están previstos y regulados especialmente en la ley. Son los contratos más importantes y frecuentes y por ello han merecido una atención especial del legislador. Su regulación legal, salvo disposiciones excepcionales, solo tiene carácter supletorio; esto es, se aplica en caso de silencio del contrato, pero las partes tienen libertad para prescindir de la solución legal y regular de una manera distinta las relaciones. Por lo tanto, el propósito del legislador no es sustituir la voluntad de las partes por la de la ley; simplemente desea evitar conflictos para el caso de que las partes no hayan previsto cierto evento, lo que es muy frecuente. Para ello dicta normas inspiradas en lo que es costumbre convenir o que están fundadas en una larga experiencia o en una detenida consideración acerca de cómo puede ser hallado un equilibrio tolerable entre ambas partes y exigible en justicia a cada una de ellas.
 

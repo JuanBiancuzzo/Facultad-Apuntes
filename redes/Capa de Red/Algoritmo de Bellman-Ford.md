@@ -6,12 +6,12 @@ tags:
 referencias:
   - "195"
 ---
-### Definición
+# Definición
 ---
 El [[Algoritmo|algoritmo]] de Bellman-Ford genera el [[Camino|Camino simple]] más corto en un [[Grafo orientado|grafo dirigido]] ponderado (en el que el peso de alguna de las aristas puede ser negativo). El [[Algoritmo de Dijkstra|algoritmo de Dijkstra]] resuelve el mismo problema en un tiempo menor, pero requiere que los pesos de las aristas no sean negativos, salvo que el grafo sea dirigido y sin [[Camino#Ciclo (Cicle)|ciclos]]. Por lo que el Algoritmo Bellman-Ford normalmente se utiliza cuando hay aristas con peso negativo. Este algoritmo fue desarrollado por Richard Bellman, Samuel End y Lester Ford<sup><a href="#ref-195" style="color: inherit; text-decoration: none;">[195]</a></sup> 
 
 Tiene una [[Complejidad computacional|complejidad]] $O(|E| ~ |V|)$
-#### Implementación
+## Implementación
 ---
 ```
 function bellmanFord(G, S):
@@ -35,7 +35,7 @@ function bellmanFord(G, S):
 ```
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

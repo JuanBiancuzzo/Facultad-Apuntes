@@ -4,7 +4,7 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Acción - Spark|acción]] que nos permite obtener el primer registros de un [[Resilent distributed dataset - Spark|RDD]].
 

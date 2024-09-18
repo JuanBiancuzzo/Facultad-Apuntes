@@ -4,7 +4,7 @@ tags:
   - proba/Variables-y-vectores-aleatorios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sean $X$, $Y$ dos [[Variable aleatoria discreta]] defindas en el [[Espacio muestral]] $\Omega$ de un experimento. La función de probabilidad conjunta se define para cada par de números $(x, y)$ como 
 $$ p_{X, Y}(x, y) = \mathbb{P}(X = x, Y = y) $$
@@ -13,7 +13,7 @@ Donde debe cumplir:
 2) $\sum_x \sum_y p_{X, Y}(x, y) = 1$
 
 
-#### Caclulo de probabilidad de un intervalo
+## Caclulo de probabilidad de un intervalo
 ---
 Dado un conjunto $A \subseteq R_{X, Y}$ es el rango [[Rango de un vector]], entonces se puede calcular la probabilidad como:
 $$ \mathbb{P}((X, Y) \in A) = \sum \sum{}_{(x, y) \in A}p_{X, y}(x, y) $$

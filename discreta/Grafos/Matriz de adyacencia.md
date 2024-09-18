@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $G = \big( V(G),~E(G),~\Psi_G \big)$  un [[Grafo|grafo]], se define $A_G$ a la [[algebra 2/Espacios Vectoriales/Matriz.md|matriz]] de adyacencia de $G$ tal que $A_G(i,~ j)$ es la cantidad de aristas que conectan al [[Nodo|vértice]] $v_i$ con el vértice $v_j$. Donde los [[Lazo|lazos]] cuentan doble
 

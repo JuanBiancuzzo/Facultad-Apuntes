@@ -4,12 +4,12 @@ tags:
  - embebidos/Estrategias-de-control-de-periféricos
  - resumen
 ---
-### Índice
+# Índice
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 ```
 
-### Resumen
+# Resumen
 ---
 Pendiente...

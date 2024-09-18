@@ -8,7 +8,7 @@ Dada una [[Sucesión]] $\alpha : \in \mathbb{N} \to \mathbb{K}$ con $\mathbb{K} 
 
 $\alpha$ es convergente a un [[Límite]] $a \in \mathbb{K}$ (se indica $\lim_{n \to \infty} \alpha_n = a$) sii $$ \forall \epsilon > 0 : \exists n_\epsilon \in \mathbb{N} : \forall n \in \mathbb{N} : n \geq n_\epsilon \implies |\alpha_n - a| < \epsilon $$
 
-### Consecuencias
+# Consecuencias
 ---
 * Si una [[Sucesión]] converge a un limite, este limite es único.
 * Toda [[Sucesión]] convergente es una [[Sucesión de Cauchy]]

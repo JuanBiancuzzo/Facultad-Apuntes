@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - embebidos/Estrategias-de-control-de-periféricos
 ---
-### Definición
+# Definición
 ---
 Para que el [[Kernel|Kernel]] pueda tomar el control de la [[Computadora|computadora]] debe haber algún mecanismo que periódicamente le permita al kernel desalojar el [[Proceso|proceso]] de [[User mode|usuario]] en ejecución y volver a tomar el control del [[Procesador|procesador]], y así de toda la máquina
 

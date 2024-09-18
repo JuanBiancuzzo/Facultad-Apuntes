@@ -4,7 +4,7 @@ tags:
   - numerico/Errores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Hay 3 tipos de errores:
 * [[Error de truncamiento]]

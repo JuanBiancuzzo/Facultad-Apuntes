@@ -7,7 +7,7 @@ aliases:
   - Sentencia si sino si
   - Sentencia if else if
 ---
-### Definición
+# Definición
 ---
 Esta [[Estructura de control selectiva|estructura de control selectiva]] alterar el flujo normal del [[Programa|programa]] según se cumpla o no una determinada condición, se la denomina if múltiple o if anidado, esta dada por
 

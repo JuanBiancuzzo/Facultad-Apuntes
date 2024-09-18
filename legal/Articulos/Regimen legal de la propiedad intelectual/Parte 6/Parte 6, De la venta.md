@@ -9,7 +9,7 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
 ```
-### Interpretación
+# Interpretación
 ---
 El autor o sus derechohabientes pueden enajenar o ceder total o parcialmente su obra. La validez es por el plazo que determina la ley y el adquirente no puede alterar su título, forma y contenido 
 
@@ -17,7 +17,7 @@ El autor conserva el derecho a exigir fidelidad de su título y texto y la menci
 
 Debe registrarse en el Registro Nacional de la Propiedad Intelectual
 
-### Artículos
+# Artículos
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/legal/mostrarArticulos", { paginaActual: dv.current() });

@@ -19,7 +19,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Sexto/T
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Las demandas que versen sobre relaciones de consumo pueden interponerse, a elección del consumidor, ante los [[Juez|jueces]] del lugar de celebración del contrato, del cumplimiento de la prestación del servicio, de la entrega de bienes, del cumplimiento de la obligación de garantía, del domicilio del demandado o del lugar donde el consumidor realiza actos necesarios para la celebración del [[Contrato|contrato]].
 
@@ -29,5 +29,5 @@ La acción entablada contra el consumidor por la otra parte contratante sólo pu
 
 En esta materia no se admite el acuerdo de elección de foro."
 
-### Interpretación
+# Interpretación
 ---

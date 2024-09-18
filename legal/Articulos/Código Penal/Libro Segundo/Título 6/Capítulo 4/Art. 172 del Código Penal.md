@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Código Penal/Libro Segundo/Título 6/Capítulo 4/Cap
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Será reprimido con prisión de un mes a seis años, el que defraudare a otro con nombre supuesto, calidad simulada, falsos títulos, influencia mentida, abuso de confianza o aparentando bienes, crédito, comisión, empresa o negociación o valiéndose de cualquier otro ardid o engaño."
 
-### Interpretación
+# Interpretación
 ---

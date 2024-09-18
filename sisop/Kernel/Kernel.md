@@ -4,7 +4,7 @@ tags:
   - sisop/Kernel
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Viendo al [[Sistema]] como un conjunto de capas, el [[Sistema operativo|sistema operativo]] se denomina comúnmente kernel del sistema, o simplemente kernel, lo que enfatiza su aislamiento de los [[Programa|programas]] de los usuarios. A pesar de esto, el kernel también es un programa.
 
@@ -78,7 +78,7 @@ Este contiene por un lado una capa para la gestión de dispositivos específicos
 
 Cuando el código fuente de esta capa es ejecutado, la [[Computadora]] pasa a un estado llamado modo supervisor.
 
-#### Tareas especificas del kernel
+## Tareas especificas del kernel
 ---
 Este [[Programa]] hace
 * [[Scheduler|Planificar]] la ejecución de las aplicaciones
@@ -88,27 +88,27 @@ Este [[Programa]] hace
 * Acceder a los dispositivos
 * Proveer un API
 
-#### Tipos de kernel
+## Tipos de kernel
 ---
 Existen básicamente dos tipos de estructuras del kernel
 
-##### Kernel Monolítico
+### Kernel Monolítico
 ![[Kernel monolítico#Definición]]
 
-##### Micro Kernel
+### Micro Kernel
 ![[Micro kernel#Definición]]
 
-#### Modos de operación
+## Modos de operación
 ---
 ![[Modo de operación#Definición]]
 
-#### Transferencia entre modos
+## Transferencia entre modos
 ---
 Una vez que el [[Hardware]] posee los mecanismos necesarios para que pueda ejecutarse un kernel, tiene que haber una o varias formas de alternar entre [[User mode|modo usuario]] y [[Kernel mode|modo kernel]]
 
 Este tipo de transición no son eventos raros y por ende deben tener un mecanismo que sea seguro y rápido.
 
-##### De [[User mode|Modo usuario]] a [[Kernel mode|Modo kernel]]
+### De [[User mode|Modo usuario]] a [[Kernel mode|Modo kernel]]
 ---
 Existen tres formas por las cuales se debería pasar de modo usuario a modo kernel
 * [[Interrupción|Interrupciones]]
@@ -120,7 +120,7 @@ De hecho estas tres formas representan
 * Evento interno inesperado (excepciones)
 * Evento interno intencional (system calls)
 
-##### De [[Kernel mode|Modo kernel]] a [[User mode|Modo usuario]]
+### De [[Kernel mode|Modo kernel]] a [[User mode|Modo usuario]]
 ---
 Así como hay varias formas de pasar de modo usuario a modo kernel, también hay varias formas de pasar de modo kernel a modo usuario
 * Un [[Proceso#API's|nuevo proceso]]:

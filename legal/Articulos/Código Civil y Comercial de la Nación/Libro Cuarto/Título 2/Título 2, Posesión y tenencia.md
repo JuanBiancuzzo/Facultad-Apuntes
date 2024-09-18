@@ -9,19 +9,19 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
 ```
-### Interpretación
+# Interpretación
 ---
 Las relaciones de poder del sujeto con una cosa son la posesión y la tenencia
 
-##### Posesión
+### Posesión
 ---
 ![[Art. 1909 del CC y CN, Posesión#Artículo]]
 
-##### Tenencia 
+### Tenencia 
 ---
 ![[Art. 1910 del CC y CN, Tenencia#Artículo]]
 
-### Artículos
+# Artículos
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/legal/mostrarArticulos", { paginaActual: dv.current() });

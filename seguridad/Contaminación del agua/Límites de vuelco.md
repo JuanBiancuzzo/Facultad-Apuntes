@@ -4,33 +4,33 @@ tags:
   - seguridad/Contaminación-del-agua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Estos son los parámetros son los determinantes en cuanto al vuelvo a un [[Cuerpo receptor]].
 
-#### pH
+## pH
 ![[Límite de pH para el de vuelvo#Definición]]
 
 
-#### [[Temperatura]]
+## [[Temperatura]]
 ![[Límite de temperatura para el de vuelvo#Definición]]
 
 
-#### Sulfuros
+## Sulfuros
 Pueden encontrarse disueltos en un líquido, en estado coloidal o en suspensión. Pueden crear problemas de contaminación atmosférica al liberar sulfuro de hidrógeno, en PH ácidos.
 
 
-#### Turbiedad
+## Turbiedad
 Es el resultado de la presencia en un líquido de partículas insolubles que tienen tamaño coloidal (diámetro medio menor a $1~\mu m)$. Estas partículas dispersan la luz y en consecuencia disminuye el ingreso de las misma a la masa de líquido.
 
 
-#### Sólidos sedimentables compactos
+## Sólidos sedimentables compactos
 ![[Límite de sólido sedimentable para el de vuelvo#Definición]]
 
 
-#### Sustancias solubles en éter etílico
+## Sustancias solubles en éter etílico
 ![[Límite de sustancias solubles en éter etílico para el de vuelvo#Definición]]
 
 
-#### Cromo hexavalente
+## Cromo hexavalente
 ![[Límite de cromo hexavalente para el de vuelvo#Definición]]

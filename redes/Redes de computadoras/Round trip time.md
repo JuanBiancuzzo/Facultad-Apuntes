@@ -6,7 +6,7 @@ tags:
   - redes/Redes-de-computadoras
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 
 

@@ -4,6 +4,6 @@ tags:
   - aninfo/Ingeniería-de-software
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Creación del software mediante la combinación de actividades de codificación, verificación, [[Testing de software|pruebas unitarias y de integración]]. La codificar también es [[Diseño del software|diseñar]] 

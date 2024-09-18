@@ -4,7 +4,7 @@ tags:
   - proba/Variables-aleatorias-condicionadas
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado [[Variable aleatoria discreta]] $M$ y una [[Partición]] $A_1, \cdots, A_n$ del [[Espacio muestral]], de forma que se define como $$ M = \begin{cases} 
 	a_1 & \text{si } A_1 \\

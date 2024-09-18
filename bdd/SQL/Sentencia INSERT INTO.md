@@ -4,11 +4,11 @@ tags:
   - bdd/SQL
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta [[Sentencia de SQL|sentencia]] se usa para agregar un nuevo [[Registro SQL|registro]] en una [[Tabla SQL|tabla]]
 
-#### Sintaxis
+## Sintaxis
 ---
 Existen dos formas de usar esta sentencia
 1. Especificar las columnas y los valores a insertar
@@ -25,7 +25,7 @@ INSERT INTO nombre_tabla
 VALUES (valor1, valor2, valor3, ...);
 ```
 
-#### Notas
+## Notas
 ---
 * En el caso que no se agregue valores para todas las columnas se inserta [[NULL|NULL]]
 * Se puede insertar varias filas de la siguiente forma 

@@ -4,7 +4,7 @@ tags:
   - orga/NLP/1
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un token son unidades de significados, es decir para una frase, los tokens pueden ser las palabras, para un lenguaje de programación pueden ser las variables, las palabras claves, los paréntesis.
 

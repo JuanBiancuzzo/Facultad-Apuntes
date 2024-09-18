@@ -4,7 +4,7 @@ tags:
   - algebra-2/Transformaciones-lineales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Partiendo de [[Operador derivación|operador derivación]], se define 
 

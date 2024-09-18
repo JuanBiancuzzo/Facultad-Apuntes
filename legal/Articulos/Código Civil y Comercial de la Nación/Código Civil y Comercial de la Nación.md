@@ -17,7 +17,7 @@ aliases:
 ```dataviewjs
 	await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
 ```
-### Definición
+# Definición
 ---
 En general, en materia contractual las [[Norma jurídica|normas]] del Código Civil y Comercial de la Nación son supletorias porque suplen la voluntad de las partes, debido a que el [[Art. 958 del CC y CN, Libertad de contratación|art. 958 del CC y CN]]
 ![[Art. 958 del CC y CN, Libertad de contratación#Artículo]]
@@ -25,7 +25,7 @@ En general, en materia contractual las [[Norma jurídica|normas]] del Código Ci
 Coincidentemente, el [[Art. 962 del CC y CN, Carácter de las normas legales|art. 962 del CC y CN]]
 ![[Art. 962 del CC y CN, Carácter de las normas legales#Artículo]]
 
-### Artículos
+# Artículos
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/legal/mostrarArticulos", { paginaActual: dv.current() });

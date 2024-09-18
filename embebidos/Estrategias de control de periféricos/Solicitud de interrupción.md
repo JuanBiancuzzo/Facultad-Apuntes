@@ -6,7 +6,7 @@ tags:
 aliases:
   - IRQ
 ---
-### Definición
+# Definición
 ---
 Es el producto de una [[Interrupción|interrupción]], y su configuración mínima requerida para administrar una IRC dentro de una interfaz programable es 
 

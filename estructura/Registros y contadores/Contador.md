@@ -4,7 +4,7 @@ tags:
   - estructura/Registros-y-contadores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Estos [[Circuito secuencial|circuitos secuenciales]] nos permiten contar la cantidad de veces que ocurre un evento. Ejemplos de esto pueden ser
 * Medir el tiempo, donde el evento es el paso del tiempo

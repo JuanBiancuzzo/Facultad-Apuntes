@@ -4,6 +4,6 @@ tags:
   - seguridad/Prevención-de-incendios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Debido a su capacidad de absorción de calor, bajando la temperatura de muchas sustancias en [[Combustible|combustión]]

@@ -4,7 +4,7 @@ tags:
   - taller/Sintaxis
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son los métodos que en otros lenguajes se llaman funciones estáticas. Son métodos que no involucran a una instancia concreta utilizando [[Impls]], por ejemplo un constructor
 

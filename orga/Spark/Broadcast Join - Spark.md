@@ -4,11 +4,11 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Transformación - Spark|transformación]] que nos permite combinar un [[Resilent distributed dataset - Spark|RDD]] y una [[Variable broadcast - Spark|variable broadcasteada]] en base a las claves de los registros. Junta cada registro del primer [[Resilent distributed dataset - Spark|RDD]] con cada valor del segundo [[Variable broadcast - Spark|variable broadcasteada]] que tengan la misma clave. Este no agrupa, sino que es de a pares de registro.
 
-#### Ejemplo
+## Ejemplo
 ---
 Inicializamos
 ``` python

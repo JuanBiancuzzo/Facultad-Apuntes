@@ -23,7 +23,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Si se trata de la extinción de un contrato bilateral:
 
@@ -31,5 +31,5 @@ tags:
  b. las prestaciones cumplidas quedan firmes y producen sus efectos en cuanto resulten equivalentes, si son divisibles y han sido recibidas sin reserva respecto del efecto cancelatorio de la obligación;
  c. para estimar el valor de las restituciones del acreedor se toman en cuenta las ventajas que resulten o puedan resultar de no haber efectuado la propia prestación, su utilidad frustrada y, en su caso, otros daños."
 
-### Interpretación
+# Interpretación
 ---

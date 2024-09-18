@@ -6,11 +6,11 @@ tags:
   - discreta/Álgebra-de-Boole
   - estructura/Álgebra-de-Boole
 ---
-### Definición
+# Definición
 ---
 El concepto de átomo tiene diferentes definiciones dependiendo del área de investigación
 
-#### Álgebra de Boole
+## Álgebra de Boole
 ---
 En el [[Álgebra de Boole|álgebra de Boole]], se llama átomo a los sucesores inmediatos del $0_B$. En otras palabras, $a \ne 0_B$ es un átomo si y solo si $$ \forall x \in B, ~~~~~ ax = b \implies x = a \lor x= 0_B $$
 Es decir, si $x \le b$, entonces $x$ deberá ser el propio elemento o el [[Elemento neutro|elemento neutro]] $0_B$

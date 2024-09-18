@@ -4,7 +4,7 @@ tags:
   - analisis-3/Transformada-de-Fourier
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $f : \mathbb{R} \to \mathbb{C}$ [[Seccionalmente continua]] y [[Absolutamente integrable]] en $\mathbb{R}$. Entonces para cada constante $\beta \in \mathbb{R}$ se verifica: $$ \lim_{\lambda \to \infty} \int_{-\infty}^{\infty} f(t) ~sen(\lambda t + \beta) dt = 0 $$
 En particular,

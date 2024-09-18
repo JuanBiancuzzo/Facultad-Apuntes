@@ -17,12 +17,12 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Son incapaces de ejercicio:
  a. la persona por nacer;
  b. la persona que no cuenta con la edad y grado de madurez suficiente, con el alcance dispuesto en la [[Sección 2, Persona menor de edad|Sección 2ª de este Capítulo]];
  c. la persona declarada incapaz por sentencia judicial, en la extensión dispuesta en esa decisión."
 
-### Interpretación
+# Interpretación
 ---

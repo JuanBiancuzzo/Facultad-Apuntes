@@ -4,11 +4,11 @@ tags:
   - bdd/SQL
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta [[SQL Keywords#Funciones de agregación|función de agregación]] devuelve la suma de filas que se seleccionen
 
-#### Sintaxis
+## Sintaxis
 ---
 ```SQL 
 SELECT SUM(nombre_columna)
@@ -18,7 +18,7 @@ WHERE condicion;
 
 Los valor que sea [[NULL|NULL]] se ignoran
 
-#### Expresión
+## Expresión
 ---
 Se puede agregar una expresión matemática de la siguiente forma
 
@@ -34,7 +34,7 @@ SELECT SUM(cantidad * precio)
 FROM detallesDeLaOrden;
 ```
 
-#### Alias
+## Alias
 ---
 Si se le quiere dar un nombre más descriptivo al resultado se puede usar un [[Alias#En SQL|alias]] 
 
@@ -43,7 +43,7 @@ SELECT SUM (nombre_columna) AS [Numero de registros]
 FROM Productos;
 ```
 
-#### Group by
+## Group by
 ---
 Cuando se una `SUM` con la [[Sentencia GROUP BY|sentencia GROUP BY]] el resultado es la suma de filas de cada categoría
 

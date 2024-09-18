@@ -4,7 +4,7 @@ tags:
   - seguridad/Ergonomia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Las várices son venas que sufrieron dilataciones, tortuosidades o alargamiento. Generalmente se ubican en el sistema venoso superficial de las piernas, y son la alteración venosa más común.
 
@@ -17,14 +17,14 @@ Se la considera una [[Enfermedad profesional|enfermedad profesional]], donde se 
 | Con portación de cargas                             | Realizan tareas donde se permanece de pie durante 2 horas seguidas o más, sin posibilidades de sentarse ni desplazarse o con escasa deambulación, levantando y/o transportando cargas mayores a $2~kg$ |
 | Con exposición a [[Estrés térmico\|estrés térmico]] | Trabaja de pie, sin posibilidad de sentarse, sometido a carga térmica, durante más de 2 horas seguidas                                                                                                 |
 
-##### Factores influyentes
+### Factores influyentes
 ---
 * Edad
 * Inactividad física
 * Obesidad
 * Debilidad de las paredes venosas
 
-### Medidas correctivas
+# Medidas correctivas
 ---
 Las posibles medidas de control serían:
 * Controles de ingeniería

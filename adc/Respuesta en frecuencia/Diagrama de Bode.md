@@ -4,13 +4,13 @@ tags:
   - adc/Respuesta-en-frecuencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los diagramas de Bode son gráficas semi[[Función logaritmica|logarítmicas]] de la magnitud (en [[Decibel|decibeles]]) y de la fase de una [[Transferencia del sistema|función de transferencia]] ($H(s)$) en función de [[Función periódica#Frecuencia|frecuencia]].
 
 Viendo el efecto que tiene las propiedades de los [[Función logaritmica|logaritmos]] y las características de los [[Decibel|dB]], podemos sumar las contribuciones independientes de la constante, de cada [[Singularidad|polo]] y de cada cero. Por lo tanto, podemos verlas por separado
 
-#### Término [[Función constante|constante]]
+## Término [[Función constante|constante]]
 ---
 Para la ganancia $K > 0$, la magnitud es de $20 ~ \log (K)$ y la fase es de $n \cdot 2 \pi$ con $n \in \mathbb{Z}$
 
@@ -63,7 +63,7 @@ Para la ganancia $K > 0$, la magnitud es de $20 ~ \log (K)$ y la fase es de $n \
 
 Para el caso de $K < 0$ la magnitud no cambia, pero la fase vale $(1 + 2n) \cdot 2 \pi$ con $n \in \mathbb{Z}$.
 
-#### Cero (o [[Singularidad|polo]]) en el origen
+## Cero (o [[Singularidad|polo]]) en el origen
 ---
 Para el cero $(s^N = (\sigma + j ~ \omega)^N)$ magnitud es de $20 ~ \log (\omega)$, y la fase correspondiente a $N\pi$. Su pendiente es de $20 N ~ \frac{dB}{\text{década}}$
 
@@ -127,7 +127,7 @@ Para el [[Singularidad|polo]] $\left(\frac{1}{s^N} = \frac{1}{(\sigma + j ~ \ome
 \end{document}
 ```
 
-#### Ceros
+## Ceros
 ---
 Para la magnitud $$ \begin{align} 
 	H_{dB}(s) &= 20 ~ \log \left| 1 + \frac{s}{z_1} \right|^N \\
@@ -144,7 +144,7 @@ Con una pendiente de $20 N ~ \frac{dB}{\text{década}}$
 
 ![[Diagrama de Bode para cero simple.webp]]
 
-#### [[Singularidad|Polo]] simple
+## [[Singularidad|Polo]] simple
 ---
 Similar al cero simple, para la magnitud $$ \begin{align} 
 	H_{dB}(s) &= -20 ~ \log \left| 1 + \frac{s}{p_1} \right|^N \\
@@ -158,7 +158,7 @@ Para la fase $$ \phi = \tan^{-1} \left( \frac{p_1}{s} \right)^N = \begin{cases}
 	-N \pi, & \omega \to \infty
 \end{cases} $$
 Con una pendiente de $-20 N ~ \frac{dB}{\text{década}}$
-#### [[Singularidad|Polos]] (o ceros) complejos conjugados
+## [[Singularidad|Polos]] (o ceros) complejos conjugados
 ---
 Para la magnitud $$ \begin{align} 
 	H_{dB}(s) &= -20 \log \left| \left(1 + \frac{s}{p_i} \right) \left(1 + \frac{s}{p_i^*} \right) \right| \\

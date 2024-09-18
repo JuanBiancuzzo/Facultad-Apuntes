@@ -9,11 +9,11 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
 ```
-### Definición
+# Definición
 ---
 Markdown es un [[Lenguaje de marcado|lenguaje de marcado]] ligero creado por John Gruber y Aaron Swartz que trata de conseguir la máxima legibilidad y facilidad de publicación tanto en su forma de entrada como de salida, inspirándose en muchas convenciones existentes para marcar mensajes de correo electrónico usando texto plano<sup><a href="#ref-206" style="color: inherit; text-decoration: none;">[206]</a></sup> 
 
-#### Elementos
+## Elementos
 ---
 * Headers ($1$ - $6$)
     * H1
@@ -71,7 +71,7 @@ Markdown es un [[Lenguaje de marcado|lenguaje de marcado]] ligero creado por Joh
         * `.`
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El emancipado requiere autorización judicial para disponer de los bienes recibidos a título gratuito. La autorización debe ser otorgada cuando el acto sea de toda necesidad o de ventaja evidente."
 
-### Interpretación
+# Interpretación
 ---

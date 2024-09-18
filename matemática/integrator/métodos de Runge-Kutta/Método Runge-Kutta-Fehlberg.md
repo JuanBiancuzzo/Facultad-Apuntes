@@ -10,7 +10,7 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
 ```
-### Definición
+# Definición
 ---
 El método Runge-Kutta-Fehlberg usa dos [[Método de Runge-Kutta|métodos de Runge-Kutta]] de orden 5 y 4. Donde tiene la tabla $$ \begin{array}{c | c c c c c c} 
 	0             & \\
@@ -29,7 +29,7 @@ El método Runge-Kutta-Fehlberg usa dos [[Método de Runge-Kutta|métodos de Run
 
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

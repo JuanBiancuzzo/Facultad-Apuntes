@@ -4,7 +4,7 @@ tags:
   - sisop/Scheduling
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El concepto de afinidad de cache se tiene que tener en cuenta al armar un [[Scheduler|planificador]] con [[Arquitectura multiprocesador|multiprocesadores]] con [[Cache|cache]].
 

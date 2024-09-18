@@ -4,11 +4,11 @@ tags:
   - bdd/General
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son base de datos no distribuidas. Tienen distintos nodos, que se conectan entre sí y se actualizan. Guardan datos no estructurados (a diferencia de las [[Base de datos relacionales|base de datos relacionales]]), como archivos o imagenes
 
-#### Características
+## Características
 ---
 Tenemos las siguientes características de esta [[Base de datos|base de datos]], donde ACID es un acrónimo en inglés de Atomicity, Consistency, Isolation and Durability
 

@@ -7,7 +7,7 @@ tags:
   - redes/Capa-de-aplicación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los servidores [[Domain Name System|DNS]] almacenan resource records (RR). Estos tienen la siguiente estructura $$ (\text{Name}, \text{Value}, \text{Type}, \text{TTL}) $$
 Donde TTL representa el tiempo de vida del recurso, cuando debería ser removido del [[Cache|cache]]. El significado de name y value dependerá del type

@@ -6,7 +6,7 @@ tags:
   - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 
 ```tikz

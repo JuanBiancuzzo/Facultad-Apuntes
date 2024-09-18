@@ -8,10 +8,10 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La aceptación puede ser retractada si la comunicación de su retiro es recibida por el destinatario antes o al mismo tiempo que ella."
 
-### Interpretación
+# Interpretación
 ---
 La aceptación puede ser retractada si la comunicación de su retiro es recibida por el destinatario antes o al mismo tiempo que ella. Como puede advertirse, se sigue un criterio idéntico al de la retractación de la oferta.

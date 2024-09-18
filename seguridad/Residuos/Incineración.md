@@ -4,7 +4,7 @@ tags:
   - seguridad/Residuos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un proceso para la eliminación de residuos peligrosos que ya no pueden ser [[Reciclaje|reciclados]], neutralizados o dispuestos por otra tecnología. 
 

@@ -4,7 +4,7 @@ tags:
   - sisop/Scheduling
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 * Cada [[Proceso|proceso]] se ejecuta la misma cantidad de tiempo
 * Todos los procesos llegan al mismo tiempo para ser ejecutados

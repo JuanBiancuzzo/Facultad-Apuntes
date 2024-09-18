@@ -5,7 +5,7 @@ tags:
   - nota/facultad
 algo: Fstat system call
 ---
-### Definición
+# Definición
 ---
 La [[System call|system call]] `stat()` devuelve información sobre un [[Archivo|archivo]], en el buffer apuntado por `statbuf`. No se requiere ningún permiso sobre el archivo en cuestión, pero si en los [[Directorio|directorios]] que conforma el [[File system#Path|path]] hasta llegar el archivo
 

@@ -9,13 +9,13 @@ aliases:
 referencias:
   - "200"
 ---
-### Definición
+# Definición
 ---
 El principio de superposición es una herramienta matemática que permite descomponer un [[Función lineal|problema lineal]] o de otro tipo en dos o más subproblemas más sencillos, de tal manera que el problema original se obtiene como "superposición" de estos subproblemas más sencillos
 
 Técnicamente, el principio de superposición afirma que cuando las ecuaciones de comportamiento que rigen un problema físico son lineales, entonces el resultado de una medida o la solución de un problema práctico relacionado con una magnitud extensiva asociada al fenómeno, cuando están presentes los conjuntos de factores causantes A y B, puede obtenerse como la suma de los efectos de A más los efectos de B<sup><a href="#ref-200" style="color: inherit; text-decoration: none;">[200]</a></sup> 
 
-##### Esquematizando
+### Esquematizando
 ---
 
 ```tikz
@@ -54,22 +54,22 @@ Técnicamente, el principio de superposición afirma que cuando las ecuaciones d
 \end{document}
 ```
 
-#### Superposición de fuerzas
+## Superposición de fuerzas
 ---
 
 
-#### Para circuitos
+## Para circuitos
 ---
 Se establece que la [[Tensión|tensión]] entre los extremos (o la [[Corriente eléctrica|corriente]] a través) de un elemento en un [[Circuito lineal|circuito lineal]] es la suma algebraica de las tensiones (o corrientes) a través de ese elemento debido a que cada fuente independiente actúa sola 
 
-##### Condiciones
+### Condiciones
 ---
 - Circuito lineal
 - Hay igual cantidad de fuentes ([[Fuente de tensión|tensión]] o [[Fuente de corriente|corriente]]) que de circuitos.
 - Las fuentes de tension se cierran.
 - Las fuentes de corriente se abren.
 
-##### Pasos
+### Pasos
 ---
 1.  Apagar todas las fuentes ([[Fuente de tensión|fuente de tensión]] y [[Fuente de corriente|fuente de corriente]]) independientes excepto una. Calcular la salida (tensión o corriente eléctrica) debido a la única fuente activa
 2.  Repetir el paso anterior para cada una de las fuentes independientes presentes en el circuito
@@ -77,7 +77,7 @@ Se establece que la [[Tensión|tensión]] entre los extremos (o la [[Corriente e
 
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

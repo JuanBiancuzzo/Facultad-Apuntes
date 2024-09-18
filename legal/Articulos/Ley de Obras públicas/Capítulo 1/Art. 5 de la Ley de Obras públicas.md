@@ -28,7 +28,7 @@ previo: "[[legal/Articulos/Ley de Obras públicas/Capítulo 1/Capítulo 1, De la
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La licitación y/o contratación de obras públicas se hará sobre la base de uno de los siguientes sistemas:
 
@@ -39,5 +39,5 @@ tags:
 
 En todos los casos la contratación podrá hacerse con o sin provisión de materiales por parte del Estado."
 
-### Interpretación
+# Interpretación
 ---

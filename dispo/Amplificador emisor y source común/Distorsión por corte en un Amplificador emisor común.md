@@ -4,7 +4,7 @@ tags:
   - dispo/Amplificador-emisor-y-source-común
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Límite superior de la señal de salida, para $v_s$ demasiado negativa el [[Transistor bipolar de juntura|transistor]] se va a [[Corte del transistor bipolar de juntura|régimen de corte]], por lo que la [[Corriente eléctrica|corriente]] de señal anula la corriente de polarización $$ \begin{align} 
 	i_c = -I_{CQ} \implies i_C = 0 \\

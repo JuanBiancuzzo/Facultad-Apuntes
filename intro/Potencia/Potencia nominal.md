@@ -4,10 +4,10 @@ tags:
   - intro/Potencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 [[Potencia|Potencia]] maxima que puede disipar el [[Resistor]] sin sufrir deterioro.
 
-##### Características
+### Características
 - A mayor resistor, mayor potencia nominal.
 - Generalmente, su valor viene indicado en el resistor.

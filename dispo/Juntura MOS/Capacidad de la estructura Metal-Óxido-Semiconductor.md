@@ -6,13 +6,13 @@ tags:
 aliases:
   - Capacidad de la estructura MOS
 ---
-### Definición
+# Definición
 ---
 La [[Estructura Metal-Óxido-Semiconductor|estructura MOS]] es muy similar a un [[Capacitor de placas planas paralelas|Capacitor de placas planas paralelas]], donde una de las placas se constituye con un [[Semiconductor|semiconductor]] en lugar de un metal.
 
 ![[Curva C-V teórica de la estructura MOS.webp]]
 
-#### En [[Acumulación de la estructura Metal-Óxido-Semiconductor (MOS)|acumulación]]
+## En [[Acumulación de la estructura Metal-Óxido-Semiconductor (MOS)|acumulación]]
 ---
 Con $V_{GB} < V_{FB}$ 
 
@@ -21,7 +21,7 @@ Con $V_{GB} < V_{FB}$
 Toda la [[Carga eléctrica|carga]] se encuentra en la interfaz con el aislante, y el [[Tensión|potencial eléctrico]] se aplica al aislante $$ v_{ox} = v_{GB} - V_{FB} = E ~ t_{ox} $$
 La carga por unidad de área en la compuerta es $$ Q'(v_{GB}) = \frac{\varepsilon_{ox}}{t_{ox}} (v_{GB} - V_{FB}) = C'_{ox}(v_{GB} - V_{FB}) $$ $$ C' = C'_{ox} $$ donde $C'_{ox}$ es la [[Capacidad de óxido|capacidad del óxido]]
 
-#### En [[Vaciamiento de la estructura Metal-Óxido-Semiconductor|vaciamiento]]
+## En [[Vaciamiento de la estructura Metal-Óxido-Semiconductor|vaciamiento]]
 ---
 Con $V_{FB} < V_{GB} < V_{T}$ 
 
@@ -37,7 +37,7 @@ $$ C' = q ~ N_a ~ \frac{d ~ x_d(v_{GB})}{d ~ v_{GB}} \biggm|_{V_{GB}} = \frac{C'
 
 En vaciamiento, la capacidad disminuye a medida que aumenta la [[Tensión]] aplicada.
 
-#### En [[Inversión de la estructura Metal-Óxido-Semiconductor|inversión]]
+## En [[Inversión de la estructura Metal-Óxido-Semiconductor|inversión]]
 ---
 Con $V_{GB} > V_{T}$ 
 

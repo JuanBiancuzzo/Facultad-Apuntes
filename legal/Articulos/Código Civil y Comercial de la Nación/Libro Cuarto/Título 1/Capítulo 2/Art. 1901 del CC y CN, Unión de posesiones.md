@@ -10,11 +10,11 @@ previo: "[[Capítulo 2, Adquisición, transmisión, extinción y oponibilidad|Ca
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El heredero continúa la posesión de su causante.
 
 El sucesor particular puede unir su posesión a la de sus antecesores, siempre que derive inmediatamente de las otras. En la prescripción breve las posesiones unidas deben ser de buena fe y estar ligadas por un vínculo jurídico."
 
-### Interpretación
+# Interpretación
 ---

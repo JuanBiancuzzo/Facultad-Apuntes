@@ -6,13 +6,13 @@ tags:
 referencias:
   - "216"
 ---
-### Definición
+# Definición
 ---
 Se denomina circuito magnético a un dispositivo en el cual las [[Líneas de campo#Caso campo magnético|líneas de fuerza]] del [[Campo de inducción magnética|campo magnético]] se hallan canalizadas trazando un [[Camino#Circuito (Circuit)|camino cerrado]]
 
 En estos circuitos, vamos a calcular los tres campos [[Material magnético#^campo-magnetico|campo magnético]] $\vec{H}$, [[Material magnético#^campo-magnetizacion|campo de magnetización]] $\vec{M}$ y [[Campo de inducción magnética|campo de inducción magnética]] $\vec{B}$, dentro del material.
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

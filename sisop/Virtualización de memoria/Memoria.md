@@ -8,7 +8,7 @@ aliases:
   - Malloc#`malloc()`
   - Free#`free()`
 ---
-### Definición
+# Definición
 ---
 Una memoria puede verse como una gran cantidad de cajones separados, cada uno con su propio número de identificación, comenzando desde $0$ y aumentando a partir de entonces
 
@@ -273,15 +273,15 @@ Para un ciclo de escritura, ocurre el mismo proceso pero a la inversa. La señal
 
 Sin embargo, los transistores están diseñados para soportar esto. El valor a escribir siempre gana gracias a los transistores más potentes. Cuando ya no se selecciona el chip, los transistores que pasan se cierran y el par inversor mantiene el valor memorizado
 
-#### Clasificación
+## Clasificación
 ---
 ![[Clasificación de memorias.png]]
 
-#### API
+## API
 ---
 Es importante, cuando se está trabajando con memoria, cuáles son las funciones que permiten obtener y liberar memoria, y los errores comunes al utilizar estas herramientas
 
-##### `malloc()`
+### `malloc()`
 ---
 La utilización de la función `malloc()` es bastante sencilla se le pasa la cantidad de bites que es necesaria reservar en el [[Heap|heap]] y si hay espacio en el mismo devuelve un puntero al [[Espacio de direcciones|nuevo espacio]] reservado, en caso de fallar devuelve un `NULL`
 
@@ -299,7 +299,7 @@ Si bien esta forma de usar malloc puede parecer sencilla hay que prestar mucha a
 2. Devuelve `NULL` si algo salió mal y setea errno
 3. No inicializa el bloque de memoria, este último se puede solucionar usando `calloc()`
 
-##### `free()`
+### `free()`
 ---
 De la misma forma en que la memoria es creada una ve que deja de utilizarse debe ser [[Heap|liberada]], al igual que en la contabilidad el debe tiene que balancear si se ha reservado espacio para alguna cantidad $X$ de memoria una vez que no se utiliza más debe ser liberada, para ello se utiliza `free()`
 

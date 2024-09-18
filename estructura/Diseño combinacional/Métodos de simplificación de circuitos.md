@@ -4,22 +4,22 @@ tags:
   - estructura/Diseño-combinacional
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Hay 3 métodos:
 * Algebraico
 * Gráfico
 * Tabulación
 
-##### Algebraico
+### Algebraico
 Se trabaja directamente sobre la expresión algebraica. Se basa en eliminar términos y literales aplicando los [[Postulados de Huntington|postulados]] y los teoremas del [[Álgebra de Boole]].
 
 
-##### Gráfico
+### Gráfico
 Usando el mapa de Karnaugh
 ![[Mapa de Karnaugh#Definición]]
 
 
-##### Tabulación
+### Tabulación
 Usando el algoritmo de Quine-McCluskey
 ![[Algoritmo de Quine-McCluskey#Definición]]

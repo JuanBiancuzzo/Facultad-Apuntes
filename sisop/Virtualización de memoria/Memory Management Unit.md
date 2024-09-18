@@ -7,7 +7,7 @@ tags:
   - nota/facultad
   - embebidos/Memorias
 ---
-### Definición
+# Definición
 ---
 Esta técnica transforma cada acceso a [[Memoria|memoria]], en la [[Virtualización de memoria|dirección virtual]] que es provista desde dentro del [[Espacio de direcciones|espacio de direcciones]] en una [[Dirección de memoria|dirección física]] en la cual la información deseada se encuentra realmente almacenada
 
@@ -24,7 +24,7 @@ La segunda tarea realizada por una MMU es la protección de diferentes áreas de
 
 La tercer y última capacidad de una MMU es proporcionar [[Dirección de memoria virtual|memorias virtuales]], lo cual es un medio para ofrecer más [[Dirección de memoria|espacio de direcciones]] lógicas que el espacio de memoria físicamente disponible
 
-#### Implementación
+## Implementación
 ---
 Consideremos la siguiente representación de MMU
 

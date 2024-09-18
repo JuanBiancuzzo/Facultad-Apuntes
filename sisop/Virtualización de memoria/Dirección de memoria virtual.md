@@ -4,7 +4,7 @@ tags:
   - sisop/Virtualización-de-memoria
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Dirección de memoria|dirección de memoria]] creada para que cada [[Proceso|proceso]] tenga una [[Memoria|memoria]] que inicia en el mismo lugar, la dirección 0.
 

@@ -4,11 +4,11 @@ tags:
   - bdd/SQL
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la representación de la falta de [[Información|información]]
 
-#### En SQL
+## En SQL
 ---
 En [[Structured Query Language|SQL]] si un campo tiene el valor `NULL` es que ese campo no tiene valor
 

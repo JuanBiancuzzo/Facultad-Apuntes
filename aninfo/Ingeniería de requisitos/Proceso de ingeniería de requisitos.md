@@ -4,6 +4,6 @@ tags:
   - aninfo/Ingeniería-de-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 ![[Proceso de ingeniería de requisitos.canvas]]

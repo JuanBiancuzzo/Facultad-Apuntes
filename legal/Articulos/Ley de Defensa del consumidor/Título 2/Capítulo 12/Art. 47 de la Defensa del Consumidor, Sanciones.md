@@ -27,7 +27,7 @@ previo: "[[legal/Articulos/Ley de Defensa del consumidor/Título 2/Capítulo 12/
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Verificada la existencia de la infracción, quienes la hayan cometido serán pasibles de las siguientes sanciones, las que se podrán aplicar independiente o conjuntamente, según resulte de las circunstancias del caso:
 
@@ -47,7 +47,7 @@ En todos los casos, el infractor publicará o la autoridad de aplicación podrá
 
 El cincuenta por ciento (50%) del monto percibido en concepto de multas y otras penalidades impuestas por la autoridad de aplicación conforme el presente artículo será asignado a un fondo especial destinado a cumplir con los fines del capítulo XVI —educación al consumidor— de la presente ley y demás actividades que se realicen para la ejecución de políticas de consumo, conforme lo previsto en el artículo 43, inciso a), de la misma. El fondo será administrado por la autoridad nacional de aplicación."
 
-### Interpretación
+# Interpretación
 ---
 
 

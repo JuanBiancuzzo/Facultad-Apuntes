@@ -6,7 +6,7 @@ tags:
 aliases:
   - MDC
 ---
-### Definición
+# Definición
 ---
 Consiste en agrupar en contenedores pequeños y cercanos entre sí miles de [[Host|hosts]], agrupados en decenas de racks. Múltiples contenedores son a su vez interconectados entre ellos y con el [[Internet|internet]]. Estos contenedores ya son prefabricaos y son difíciles de mantener, por lo que su rendimiento se degradara lentamente, pero continuaran operando. Una vez la tasa de errores pasa cierto umbral, son removidos y reemplazados por uno nuevo
 

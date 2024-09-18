@@ -4,11 +4,11 @@ tags:
   - aninfo/Verificación-y-validación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son revisiones formales y detalladas de artefactos. Tienen como objetivo encontrar defectos, cualquier falla o imperfección en un producto o proceso. Tiene pasos claramente establecidos y roles diferenciados. También tienen un facilitador capacitado.
 
-#### Reglas
+## Reglas
 ---
 * El objetivo es encontrar defectos, no repararlos ni discutir cómo hacerlo. 
 * Se inspeccionan productos, no se evalúa a los productores.
@@ -20,7 +20,7 @@ Son revisiones formales y detalladas de artefactos. Tienen como objetivo encontr
 	* Presentador
 	* Secretario
 
-#### Beneficios
+## Beneficios
 ---
 * Pueden identificar tempranamente hasta un 80% de los defectos de un producto de software
 * En combinación con el [[Testing de software|testing]] pueden reducir los defectos en software liberado en un factor de 10. 
@@ -28,7 +28,7 @@ Son revisiones formales y detalladas de artefactos. Tienen como objetivo encontr
 * Requieren una inversión de alrededor de 15% del costo total de desarrollo
 * En el ámbito de la [[Ingeniería de requisitos|ingeniería de requerimientos]], se pueden emplear en la [[Verificación]]
 
-#### Etapas
+## Etapas
 ---
 ![[Etapas de la inspección.canvas]]
 

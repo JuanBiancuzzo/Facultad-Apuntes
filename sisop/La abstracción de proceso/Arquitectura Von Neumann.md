@@ -6,7 +6,7 @@ tags:
   - embebidos/Microcontroladores-de-32-bits
   - estructura/Microarquitectura
 ---
-### Definición
+# Definición
 ---
 Para transferir datos dentro y fuera del [[Procesador|procesador]], dos [[Buffer|buffers]] específicos acceden al [[Arquitectura de una computadora#^bus-datos|bus de datos]] externo. A veces se utiliza un buffer bidireccional, con un [[Buffer tri-state|buffer tri-state]] que permite diferenciar la dirección de transferencia. Los datos pueden ser una instrucción, un acceso a una variable en memoria o un acceso a una interfaz programable; cualquier cosa que pueda proporcionar o recibir datos
 

@@ -4,14 +4,14 @@ tags:
   - bdd/SQL
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta [[Sentencia de SQL|sentencia]] se usa para combinar dos o más resultados de una sentencia [[Sentencia SELECT|SELECT]]
 * Todos estos resultados de SELECT tiene que tener la misma cantidad de columnas
 * Las columnas tienen que tener tipos de datos similares
 * Las columnas tienen que tener el mismo orden
 
-#### Sintaxis
+## Sintaxis
 ---
 ```SQL
 SELECT nombre_columna(s) FROM tabla1

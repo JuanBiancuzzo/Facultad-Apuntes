@@ -4,5 +4,5 @@ tags:
   - legal/Derechos-comerciales-y-sociales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---

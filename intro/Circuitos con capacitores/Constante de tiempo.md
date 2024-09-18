@@ -4,21 +4,21 @@ tags:
   - intro/Circuitos-con-capacitores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La constante de tiempo ($\tau$) es un indicador de la velocidad de reacción del [[Circuito eléctrico|circuito]] ante una perturbación (debido a un escalón de [[Tensión|tensión]]). Cuanto mayor sea este valor, el valor final del estado de equilibrio se alcanzará más rápidamente
 
-##### Expresión
+### Expresión
 $$\begin{align}
 \tau = R \cdot C
 \end{align}$$
 
-##### Unidades
+### Unidades
 $$\begin{align}
 [\tau] = \Omega \cdot F = segundos \space (s)
 \end{align}$$
 
-##### Características
+### Características
 ---
 Reformulo, lo obtenido en el apartado de [[Circuito RC|circuito RC]]
 $$ \begin{cases}
@@ -36,7 +36,7 @@ $$ V_C (t)= V_0 \cdot \left( 1 - e^{-\frac{t}{\tau}} \right) = V_0 \cdot \left( 
 
 Es decir, que la [[Tensión|tensión]] de carga sobre un capacitor, en un tiempo $t=\tau$ es aproximadamente un $63\%$ de la amplitud pico-pico del escalón de entrada.
 
-##### Esquematizándolo
+### Esquematizándolo
 ---
 
 ```tikz
@@ -89,6 +89,6 @@ Es decir, que la [[Tensión|tensión]] de carga sobre un capacitor, en un tiempo
 \end{document}
 ```
 
-##### Tiempo de carga de un capacitor
+### Tiempo de carga de un capacitor
 ---
 El tiempo que tarda un capacitor para cargarse en su totalidad es de $5\tau$.

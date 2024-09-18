@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Topología/2
 ---
-### Definición
+# Definición
 ---
 Esto siendo un caso especifico de [[Multiples funciones implícitas]] y [[Superficie dada en forma implicita]]
 

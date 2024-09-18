@@ -6,7 +6,7 @@ tags:
   - redes/Capa-de-Transporte
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El enfoque tomado por [[Transmission Control Protocol|TCP]] entonces es que cada remitente limite la tasa a la cual envía [[Tráfico|tráfico]] a través de sus conexiones en función de la [[Control de congestión|congestión]] recibida
 
@@ -130,6 +130,6 @@ Ahora podremos definir el [[algo 1/Introducción a la programación/Algoritmo|al
 	* Se reinicia los ACK duplicados a $0$
 	* Si se puede, se retransmite el segmento perdido
 
-#### Manejo del bandwidth
+## Manejo del bandwidth
 ---
 Para obtener altas [[Delay in packet switches#Tiempo de propagación|velocidad de transmisión]] utilizando TCP, debemos conseguir una muy baja [[Probabilidad|probabilidad]] de perdida de paquetes. Debido a esto, hoy en día se están investigando nuevas versiones de TCP específicas para ambientes de alta velocidad

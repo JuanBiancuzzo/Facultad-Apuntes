@@ -7,7 +7,7 @@ aliases:
   - Inmersión
   - Espesor de un grafo
 ---
-### Definición
+# Definición
 ---
 Un [[Grafo|grafo]] $G$ es planar si y solo si puede representarse en un plano (inmersión), tal que sus aristas no tengan puntos de cruce
 
@@ -15,7 +15,7 @@ La planeidad es un concepto particular de cuando la inmersión se exige en un pl
 
 Si un grafo no es planar, hablamos de su espesor. Esta es la cantidad mínima de capas que son necesarias para representarlo
 
-#### Demostración
+## Demostración
 ---
 Por definición de [[Fórmula de Euler|grado de una cara]], cada arista que separa dos caras contribuye a la suma de grados de las caras en dos unidades. Cada arista que no separa caras también contribuye en dos. Luego, tendremos que $$ \sum_{k = 1}^{f} d(f_k) = 2m \tag{1} $$
 Si $G$ es un primo conexo con $n(G) \ge 3$, entonces podremos demostrar el criterio de rechazo tal que si no se cumple, descartamos la posibilidad de que el grafo sea planar $$ m \le 3(n - 2) $$

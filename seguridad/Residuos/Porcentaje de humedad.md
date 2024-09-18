@@ -4,7 +4,7 @@ tags:
   - seguridad/Residuos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se puede calcular como $$ M = \frac{w - d}{w} \cdot 100 $$
 Donde:

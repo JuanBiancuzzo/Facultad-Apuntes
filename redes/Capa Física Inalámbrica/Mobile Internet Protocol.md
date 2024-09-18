@@ -6,7 +6,7 @@ tags:
 aliases:
   - Mobile IP
 ---
-### Definición
+# Definición
 ---
 La arquitectura de [[Internet|internet]] y los protocolos para soportar la movilidad, conocidos como mobile [[Internet Protocol Address|IP]], se definen principalmente en el [[Request For Comments|RFC]] 5499 para [[Internet Protocol Versión 4|IPv4]]. Este estándar consiste en tres elementos importantes
 * [[Agent Discovery in Mobile Internet Protocol|Agent Discovery]]

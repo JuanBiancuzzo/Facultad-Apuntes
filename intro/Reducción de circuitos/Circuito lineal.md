@@ -4,7 +4,7 @@ tags:
   - intro/Reducción-de-circuitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un [[Circuito eléctrico|circuito]] lineal es aquel que no cambia los valores de los componentes electrónicos como su [[Resistencia]], [[Capacitancia]], [[Inductancia mutua|inductancia]], ganancia al variar la [[Tensión]] o la [[Corriente eléctrica]] en el circuito.
 

@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El consentimiento para la disposición de los derechos personalísimos es admitido si no es contrario a la ley, la moral o las buenas costumbres. Este consentimiento no se presume, es de interpretación restrictiva, y libremente revocable."
 
-### Interpretación
+# Interpretación
 ---

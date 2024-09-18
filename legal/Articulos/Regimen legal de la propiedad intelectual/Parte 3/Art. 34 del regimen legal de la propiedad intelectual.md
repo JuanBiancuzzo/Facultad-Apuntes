@@ -18,7 +18,7 @@ previo: "[[legal/Articulos/Regimen legal de la propiedad intelectual/Parte 3/Par
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Para las obras fotográficas la duración del derecho de propiedad es de VEINTE (20) años a partir de la fecha de la primera publicación.
 
@@ -28,5 +28,5 @@ Debe inscribirse sobre la obra fotográfica o cinematográfica la fecha, el luga
 
 Las cesiones totales o parciales de derechos temporales o espaciales de explotación de películas cinematográficas sólo serán oponibles a terceros a partir del momento de su inscripción en el Registro Nacional de Propiedad Intelectual."
 
-### Interpretación
+# Interpretación
 ---

@@ -4,7 +4,7 @@ tags:
   - sisop/Scheduling
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un mecanismo que usan los [[Sistema operativo|sistemas operativos]] para determinar cuanto tiempo de la [[Procesador|Procesador]] le toca a cada [[Proceso|proceso]].
 

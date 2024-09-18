@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Contrato es el [[Acto jurídico|acto jurídico]] mediante el cual dos o más partes manifiestan su consentimiento para crear, regular, modificar, transferir o extinguir [[Relación jurídica|relaciones jurídicas]] patrimoniales."
 
-### Interpretación
+# Interpretación
 ---
 Este hace hincapié en dos aspectos importantes. 
 * El acuerdo de voluntades manifestado en el consentimiento tiende a reglar relaciones jurídicas con contenido patrimonial

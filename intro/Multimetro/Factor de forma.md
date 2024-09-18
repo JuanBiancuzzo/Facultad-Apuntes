@@ -4,7 +4,7 @@ tags:
   - intro/Multimetro
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es el cociente entre el valor eficaz verdadero de una señal y su valor medio rectificado.
 Es decir,

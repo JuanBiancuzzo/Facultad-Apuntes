@@ -10,11 +10,11 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
 ```
-### Definición
+# Definición
 ---
 En esta entrada, detallaremos el proceso de citar y referenciar diversos tipos de fuentes, como libros, enciclopedias, diccionarios, monografías, tesis, entre otros. También abordaremos la citación de libros exclusivamente electrónicos y aquellos libros que, estando agotados, podrían encontrarse únicamente en repositorios en línea.
 
-#### Formato general
+## Formato general
 ---
 * Libro impreso
 	* Apellido, N. (año). Título del trabajo. Editorial.
@@ -39,12 +39,12 @@ En esta entrada, detallaremos el proceso de citar y referenciar diversos tipos d
 			* Renteria Salazar, P. (2006). El comienzo de la renovación. En M. A. Flórez Góngora (Ed.), _Bogotá: Renovacion Urbana, Renovacion Humana_ (pp. 80-100). Empresa De Renovacion Urbana.
 		* Si no tienes los números de página en el ejemplo anterior, el título del capítulo o de la entrada es suficiente. Si el libro no tiene número de edición o volumen, omitir esta información
 
-##### Número de edición o volumen
+### Número de edición o volumen
 ---
 Apellido Autor, N. N. (1994). _Título del trabajo._ ==(3ª ed., Vol. 4).== Editorial.
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

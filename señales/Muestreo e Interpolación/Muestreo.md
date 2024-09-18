@@ -4,7 +4,7 @@ tags:
   - señales/Muestreo-e-Interpolación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El puente entre el mundo analógico de las [[Señal|señales]] de interés y el mundo digital donde el procesamiento es más simple y barato es lo que se conoce como muestreo o sampling: obtener una representación de una [[Señal#^016a35|señal de tiempo continuo]], lo más fiel posible, mediante  una [[Señal#^02aea6|señal de tiempo discreto]]
 

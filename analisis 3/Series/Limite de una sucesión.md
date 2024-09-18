@@ -4,12 +4,12 @@ tags:
   - analisis-3/Series
   - nota/facultad
 ---
-### Definición 
+# Definición 
 ---
 $l \in \mathbb{C}$ es limite de la [[Sucesión]]  $$(\alpha(n))_{n = 1}^\infty \Leftrightarrow \lim_{n \to \infty} |\alpha(n) - l | = 0 \Leftrightarrow \forall \epsilon > 0 : \exists n_\epsilon \in \mathbb{N} : \forall n \geq n_\epsilon : | \alpha(n) - l | < \epsilon $$ 
-### Propiedades
+# Propiedades
 ---
-##### Unicidad del limite (Cuando existe)
+### Unicidad del limite (Cuando existe)
 Sea $l$ y $l'$ limites de $(\alpha(n))_{n = 1}^\infty$ entonces
 $$
 \begin{matrix}
@@ -18,7 +18,7 @@ $$
 \end{matrix}
 $$
 
-#### Limites de componentes
+## Limites de componentes
 Si $\alpha(n) = x(n) + i \cdot y(n)$, y $l = a + i \cdot b$ entonces
 $$ \lim_{n \to \infty} (x(n) + i \cdot y(n)) = a + i \cdot b = 
 \begin{cases}

@@ -4,7 +4,7 @@ tags:
   - sisop/Concurrencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un programa concurrente, las diferentes partes de un programa se ejecutan independientemente. No necesariamente al mismo tiempo.
 
@@ -12,27 +12,27 @@ Este programa consiste de un conjunto finito de procesos secuenciales. Y estos [
 
 El proceso concurrente, es intercalar estas instrucciones atómicas del conjunto de procesos secuenciales.
 
-### Desafíos
+# Desafíos
 ---
 Se necesita sincronizar y comunicar entre procesos diferentes.
 
-##### Sincronizar
+### Sincronizar
 Coordinación temporal entre distintos procesos.
 
-##### Comunicar
+### Comunicar
 Datos que necesitan compartir los procesos para cumplir la función del programa.
 
 
-### Problemas
+# Problemas
 ---
-##### Condiciones de carrera
+### Condiciones de carrera
 ![[Race condition#Definición]]
 
-##### Atomicity violation
+### Atomicity violation
 El deseo de la serialización entre múltiples accesos a memoria es violado.
 
-##### Order violation
+### Order violation
 El orden deseado entre accesos a memoria se ha cambiado.
 
-##### Deadlocks
+### Deadlocks
 ![[Deadlock#Definición]]

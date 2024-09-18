@@ -4,103 +4,103 @@ tags:
   - sisop/La-abstracción-de-proceso
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Las [[System call|system calls]] de [[Proceso|procesos]] pueden separar en
 * Al manejo de los proceso
 * La intercomunicación entre los procesos
-#### `exec()`
+## `exec()`
 ---
 ![[Exec system call#Definición]]
 
-#### `fork()`
+## `fork()`
 ---
 ![[Fork system call#Definición]]
 
-#### `wait()`
+## `wait()`
 ---
 ![[Wait system call#Definición]]
 
-#### `exit()`
+## `exit()`
 ---
 ![[Exit system call#Definición]]
 
-#### `getuid()`
+## `getuid()`
 ---
 ![[Getuid system call#Definición]]
 
-#### `geteuid()`
+## `geteuid()`
 ---
 ![[Geteuid system call#Definición]]
 
-#### `getgid()`
+## `getgid()`
 ---
 ![[Getgid system call#Definición]]
 
-#### `getegid()`
+## `getegid()`
 ---
 ![[Getegid system call#Definición]]
 
-#### `getpid()`
+## `getpid()`
 ---
 ![[Getpid system call#Definición]]
 
-#### `getppid()`
+## `getppid()`
 ---
 ![[Getppid system call#Definición]]
 
-#### `signal()`
+## `signal()`
 ---
 ![[Signal system call#Definición]]
 
-#### `kill()`
+## `kill()`
 ---
 ![[Kill system call#Definición]]
 
-#### `alarm()`
+## `alarm()`
 ---
 ![[Alarm system call#Definición]]
 
-#### `brk()`
+## `brk()`
 ---
 ![[Brk system call#Definición]]
 
-#### `pipe()`
+## `pipe()`
 ---
 ![[Pipe system call#Definición]]
 
-#### `msgget()`
+## `msgget()`
 ---
 ![[Msgget system call#Definición]]
 
-#### `msgsnd()`
+## `msgsnd()`
 ---
 ![[Msgsnd system call#Definición]]
 
-#### `msgrcv()`
+## `msgrcv()`
 ---
 ![[Msgrcv system call#Definición]]
 
-#### `msgctl()`
+## `msgctl()`
 ---
 ![[Msgctl system call#Definición]]
 
-#### `semget()`
+## `semget()`
 ---
 ![[Semget system call#Definición]]
 
-#### `semop()`
+## `semop()`
 ---
 ![[Semop system call#Definición]]
 
-#### `shmget()`
+## `shmget()`
 ---
 ![[Shmget system call#Definición]]
 
-#### `shmat()`
+## `shmat()`
 ---
 ![[Shmat system call#Definición]]
 
-#### `shmdt()`
+## `shmdt()`
 ---
 ![[Shmdt system call#Definición]]

@@ -28,7 +28,7 @@ previo: "[[legal/Articulos/Regimen de contrataciones de la administración nacio
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La convocatoria a presentar ofertas en las licitaciones y concursos públicos que no se realicen en formato digital, deberá efectuarse mediante la publicación de avisos en el órgano oficial de publicación de los actos de gobierno por el término de DOS (2) días, con un mínimo de VEINTE (20) días corridos de antelación a la fecha fijada para la apertura, computados a partir del día siguiente a la última publicación.
 
@@ -44,5 +44,5 @@ Con el fin de cumplir el principio de transparencia, se difundirán por INTERNET
 
 Quedan exceptuadas de la obligación de difusión en todas las etapas del procedimiento, las contrataciones directas encuadradas en el apartado [[Art. 25 del APA, Procedimientos de selección#^5ea6df|6 del inciso d) del artículo 25]] y de difusión de la convocatoria las de los apartados 5, para los casos de emergencia, y 8."
 
-### Interpretación
+# Interpretación
 ---

@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La duración de la [[Persona jurídica|persona jurídica]] es ilimitada en el tiempo, excepto que la [[Ley|ley]] o el estatuto dispongan lo contrario."
 
-### Interpretación
+# Interpretación
 ---

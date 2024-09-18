@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El deudor puede eximirse de cumplir la obligación con el pago de la pena únicamente si se reservó expresamente este derecho."
 
-### Interpretación
+# Interpretación
 ---

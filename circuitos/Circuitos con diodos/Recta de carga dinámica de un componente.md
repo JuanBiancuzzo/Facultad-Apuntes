@@ -6,13 +6,13 @@ tags:
 aliases:
   - Curva de carga dinámica de un componente
 ---
-### Definición
+# Definición
 ---
 Es la mejor aproximación de la [[Curva característica de un componente|curva del componente X]] en el punto Q dado que su derivada en el punto, sí representa la ecuación de una [[Resistencia|resistencia]]
 
 Esta resistencia se denomina resistencia dinámica, y podemos usarla para calcular con la mejor aproximación lineal posible el movimiento del punto solución con la [[Señal|señal]] alterna
 
-#### Para poder utilizarla
+## Para poder utilizarla
 ---
 * Pasivar las [[Fuente de tensión|fuentes de alterna]] y determinar la [[Curva de carga de un componente|curva de carga]] del componente alineal (naranja)
 * Utilizar la ecuación alineal de X (celeste) para encontrar el punto Q

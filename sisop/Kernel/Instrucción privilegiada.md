@@ -4,7 +4,7 @@ tags:
   - sisop/Kernel
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Al tener [[Modo de operación|modos de operación]], y darle la capacidad de ejecutar instrucciones a un [[Subconjunto|subconjunto]] de los modos, hace que algunas instrucciones tengan privilegio.
 

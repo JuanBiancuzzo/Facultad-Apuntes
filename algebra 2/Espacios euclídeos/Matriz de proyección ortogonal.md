@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-euclídeos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Siendo $B = \{w_1, w_2, \cdots, w_n \}$ la las columnas de la matriz de la [[Proyección ortogonal|proyección ortogonal]] serán
 

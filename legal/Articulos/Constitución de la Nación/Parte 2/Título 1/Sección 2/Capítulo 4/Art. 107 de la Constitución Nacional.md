@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Constitución de la Nación/Parte 2/Título 1/Secció
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Gozarán por sus servicios de un sueldo establecido por la ley, que no podrá ser aumentado ni disminuido en favor o perjuicio de los que se hallen en ejercicio."
 
-### Interpretación
+# Interpretación
 ---

@@ -4,14 +4,14 @@ tags:
   - sisop/Scheduling
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La cache se basa en la noción de localidad, de la cual hay dos tipos
 
-##### Localidad temporal
+### Localidad temporal
 ---
 ![[Localidad temporal#Definición]]
 
-##### Localidad espacial
+### Localidad espacial
 ---
 ![[Localidad espacial#Definición]]

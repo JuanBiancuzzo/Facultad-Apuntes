@@ -6,7 +6,7 @@ tags:
 aliases:
   - Producto vectorial
 ---
-### Definición
+# Definición
 ---
 El producto cruz esta definido para [[Espacio Rn|espacio Rn]] con $n=3$ y su definición es $$ u \times v = det \begin{pmatrix} \hat{i} & \hat{j} & \hat{k} \\ u_1 & u_2 & u_3 \\ v_1 & v_2 & v_3 \end{pmatrix} $$ ^f60aee
 

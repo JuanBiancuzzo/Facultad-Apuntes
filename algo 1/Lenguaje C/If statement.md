@@ -7,11 +7,11 @@ aliases:
   - Sentencia si
   - Sentencia if
 ---
-### Definición
+# Definición
 ---
 Esta [[Estructura de control selectiva|estructura de control selectiva]] alterar el flujo normal del [[Programa|programa]] según se cumpla o no una determinada condición
 
-#### En C
+## En C
 ---
 Esta dada por
 

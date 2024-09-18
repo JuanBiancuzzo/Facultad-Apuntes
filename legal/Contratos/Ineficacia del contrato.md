@@ -4,7 +4,7 @@ tags:
   - legal/Contratos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Cuando nos referimos a la ineficacia del contrato, apuntamos a ciertos vicios que pueden afectarlo. Ya hemos visto cómo la incapacidad o la restringida capacidad de uno de los contratantes provoca la nulidad del contrato celebrado, y, por lo tanto, lo torna ineficaz. 
 
@@ -12,7 +12,7 @@ Pero, además, la ineficacia puede tener otras causas. En efecto, el contrato pu
 
 En todos estos casos, será nulo
 
-#### Nulidad del contrato y sus efectos entre las partes
+## Nulidad del contrato y sus efectos entre las partes
 ---
 El principio general en esta materia está sentado en el [[Art. 390 del CC y CN, Restitución|artículo 390]]: la nulidad pronunciada por los jueces vuelve las cosas al mismo estado en que se hallaban antes del acto declarado nulo. La solución es perfectamente lógica, puesto que anular implica tenerlo por no ocurrido. Ya veremos, sin embargo, cómo la cuestión, que desde el punto de vista lógico parece simple, presenta ciertos problemas.
 
@@ -39,7 +39,7 @@ Finalmente, el [[Art. 1936 del CC y CN, Responsabilidad por destrucción según 
 
 Más grave es la situación de quien posee cosas muebles por hurto, estafa, o abuso de confianza, o inmuebles por violencia, clandestinidad, o abuso de confianza (lo que se denomina [[Art. 1921 del CC y CN, Posesión viciosa|posesión viciosa, conf. art. 1921]]). Este poseedor responde por la destrucción total o parcial de la cosa, aunque se hubiera producido igualmente de estar en poder de quien tiene derecho a su restitución.
 
-#### Nulidad del contrato y sus efectos respecto de terceros
+## Nulidad del contrato y sus efectos respecto de terceros
 ---
 Establece el [[Art. 392 del CC y CN, Efectos respecto de terceros en cosas registrables|artículo 392]] que todos los derechos reales y personales transmitidos a terceros sobre un inmueble o mueble registrable, por una persona que ha resultado adquirente en virtud de un acto nulo, quedan sin ningún valor, y pueden ser reclamados directamente del tercero que posee la cosa.
 

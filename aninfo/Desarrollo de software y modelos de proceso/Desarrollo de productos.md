@@ -4,7 +4,7 @@ tags:
   - aninfo/Desarrollo-de-software-y-modelos-de-proceso
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Las preguntas que nos deberíamos hacer son
 * Cuál es la idea/necesidad/oportunidad?
@@ -14,7 +14,7 @@ Las preguntas que nos deberíamos hacer son
 * Qué hacemos si algo sale mal?
 * Cuándo lo entregamos?
 
-#### Gestionar
+## Gestionar
 ---
 La gestión o el gerenciamiento involucra las siguientes actividades
 * Planear

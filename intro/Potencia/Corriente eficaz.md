@@ -4,7 +4,7 @@ tags:
   - intro/Potencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Definimos la [[Corriente eléctrica|corriente]] eficaz, es su [[Valor cuadrático medio]], de una corriente variable en el tiempo $i(t)$ con período $T$ como $$ I_{ef} = \sqrt{\frac{1}{T} \cdot \int_{0}^{T} i^2(t) ~ dt} $$
 

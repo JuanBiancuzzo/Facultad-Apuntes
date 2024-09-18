@@ -4,7 +4,7 @@ tags:
   - analisis-3/Transformada-de-Laplace
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Para cada [[Función objeto]] $f : \mathbb{R} \to \mathbb{C}$ y cada complejo $s = \sigma + i \omega$ estudiemos la convergncia de la [[Transformada de Laplace]] $$ F(s) = \int_0^\infty f(t) e^{-st}dt $$
 Dada una función, objeto, para cada número real positivo $b$, sea $F_b : \mathbb{C} \to \mathbb{C}$ tal que $$ F_b(s) = \int_0^b f(t) e^{-st}dt $$

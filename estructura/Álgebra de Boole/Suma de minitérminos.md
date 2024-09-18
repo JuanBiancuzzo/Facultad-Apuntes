@@ -7,7 +7,7 @@ tags:
 aliases:
   - Suma de productos
 ---
-### Definición
+# Definición
 ---
 Dada una [[Función lógica|función lógica]], lo que expresa este método es que se puede expresar como producto de sumas, con el objetivo de replicar esta función si necesidad de conocer cual es pero conociendo su output.
 

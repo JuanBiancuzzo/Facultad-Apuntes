@@ -5,18 +5,18 @@ tags:
   - proyecto
   - primer-proyecto-de-robótica-auto-remoto
 ---
-### Descripción
+# Descripción
 ---
 La intención con este proyecto es explorar un proyecto de robótica simple de principio a fin, para poder entender los aspectos de un proyecto de electrónica 
 
 
-### Presentar
+# Presentar
 ---
 
 
 
 
-### Notas
+# Notas
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarNotas", { proyecto: dv.current() });

@@ -10,7 +10,7 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
 ```
-### Definición
+# Definición
 ---
 Debes utilizar el estilo de cita de páginas web si no hay otra categoría de referencia que se ajuste más específicamente al tipo de trabajo que quieras citar
 
@@ -22,7 +22,7 @@ Debes utilizar el estilo de cita de páginas web si no hay otra categoría de re
 	* Apellido, A. (03 de agosto de 2020). _Título del archivo_ \[Archivo Excel\]. Nombre del sitio web. https://url.com
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

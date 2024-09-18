@@ -4,7 +4,7 @@ tags:
   - dispo/Juntura-PN
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Una juntura PN se refiere a la unión entre una [[Impureza aceptora#Cantidad de dopante|semiconductor tipo p]] y un [[Impureza donora#Cantidad de dopante|semiconductor tipo n]]
 
@@ -67,7 +67,7 @@ N_d(x) = \begin{cases}
 \end{cases}
 $$ donde cambia el tipo de [[Dopaje|dopante]] ($x = 0$) se denomina [[Juntura metalúrgica]]
 
-##### Concentración de [[Portador de carga|portadores]]
+### Concentración de [[Portador de carga|portadores]]
 ---
 ![[Concentración de portadores en escala lineal de una juntura PN en equilibrio térmico.webp]]
 $$ n_0(x) = \begin{cases} 
@@ -83,7 +83,7 @@ $$ p_0(x) = \begin{cases}
 	\sim 0, && ~~~x_{n_0} &<&  x  &
 \end{cases} $$
 
-##### [[Densidad volumétrica de carga eléctrica|Densidad de carga]]
+### [[Densidad volumétrica de carga eléctrica|Densidad de carga]]
 ---
 $$ \rho(x) = q ~ (N_d + p_0 - N_a - n_0) $$
 
@@ -96,7 +96,7 @@ $$ \rho(x) = \begin{cases}
 	~\sim 0,  && ~~~x_{n_0} &<&  x  &
 \end{cases} $$
 
-##### [[Campo eléctrico]]
+### [[Campo eléctrico]]
 ---
 $$ E(x_2) - E(x_1) = \frac{1}{\varepsilon_{sc}} \int_{x_1}^{x_2} \rho(x) ~ dx $$
 
@@ -113,7 +113,7 @@ $$ E(x) = \begin{cases}
 
 Notemos que el campo eléctrico en la juntura metalúrgica es $$ |E_0| = \sqrt\frac{2q ~ \phi_B N_a N_d}{\varepsilon_{sc} (N_a + N_d)} $$ donde $\phi_B$ es el [[Potencial de built-in]] y podemos encontrar esta relación con los [[Aproximación de vaciamiento#Límites de la región de carga espacial|límites de la región de carga espacial]] $x_{n_0}$ y $x_{p_0}$
 
-##### [[Potencial eléctrico|Función de Potencial]] en [[Equilibrio térmico en un semiconductor|equilibrio térmico]]
+### [[Potencial eléctrico|Función de Potencial]] en [[Equilibrio térmico en un semiconductor|equilibrio térmico]]
 ---
 Recordando la [[Relación de Boltzmann|relación de Boltzmann]], tenemos que $$ \phi(x) = \frac{kT}{q} \ln\left( \frac{n_0}{n_i} \right) = - \frac{kT}{q} \ln\left( \frac{p_0}{n_i} \right) $$ donde $n_i$ es la [[Semiconductor intrínseco|concentración de un semiconductor intrínseco]].
 
@@ -130,7 +130,7 @@ $$ \phi(x) = \begin{cases}
 	\phi_n, && ~~~x_{n_0} &<&  x  &
 \end{cases} $$
 
-##### Límites de la región de carga espacial
+### Límites de la región de carga espacial
 ---
 Aún no conocemos $x_{n_0}$ y $x_{p_0}$, y para encontrarlos necesitamos las condiciones de
 1. [[Neutralidad de carga|Neutralidad de cargas]] de forma global $$ qN_a ~x_{p_0} = qN_d ~x_{n_0} $$

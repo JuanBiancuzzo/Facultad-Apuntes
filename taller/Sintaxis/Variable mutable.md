@@ -4,7 +4,7 @@ tags:
   - taller/Sintaxis
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se puede crear una [[Variable|variable]] mutable, modificando la sintaxis de una [[Variable inmutable|variable inmutable]], de la siguiente forma:
 ``` rust

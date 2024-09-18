@@ -4,7 +4,7 @@ tags:
   - dispo/Transistor-MOSFET
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la [[Capacitancia|capacitancia]] de una [[Estructura Metal-Óxido-Semiconductor|estructura MOS]] parásita debido a que las difusiones de Source y Drain se extienden por debajo del óxido de Gate
 

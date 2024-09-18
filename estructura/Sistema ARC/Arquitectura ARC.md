@@ -4,11 +4,11 @@ tags:
  - estructura/Sistema-ARC
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un acrónimo de "A [[Reduce Instruction Set Computer|Risc]] Computer"
 
-#### Manejo de memoria
+## Manejo de memoria
 ---
 La arquitectura ARC maneja datos de 32 bits, direccionables por byte. Contiene un [[Espacio de direcciones|espacio de direcciones]] de $2^{32}$, con un orden de guardado [[Big endian|Big-Endian]]
 

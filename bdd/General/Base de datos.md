@@ -6,11 +6,11 @@ tags:
 aliases:
   - BDD
 ---
-### Definición
+# Definición
 ---
 Una base de datos es una colección ordenada de [[Dato|datos]] administrada por un [[Sistema|sistema]] de gestión
 
-#### Tipos de base de datos
+## Tipos de base de datos
 ---
 Tenemos lo siguientes tipos de base de datos
 * [[Base de datos relacionales|Base de datos relacionales]] ![[Base de datos relacionales#Características]]
@@ -20,7 +20,7 @@ Tenemos lo siguientes tipos de base de datos
 * [[Base de datos en memoria|Base de datos en memoria]] ![[Base de datos en memoria#Características]]
 * [[Base de datos distribuidos|Base de datos distribuidos]] ![[Base de datos distribuidos#Características]]
 
-#### Transformación del [[Modelado de dominio|modelo de dominio]] a la base de datos
+## Transformación del [[Modelado de dominio|modelo de dominio]] a la base de datos
 ---
 
 ```tikz
@@ -80,7 +80,7 @@ Tenemos lo siguientes tipos de base de datos
 \end{document}
 ```
 
-##### Atributos multivaluados
+### Atributos multivaluados
 ---
 
 ```tikz
@@ -169,7 +169,7 @@ Tenemos lo siguientes tipos de base de datos
 \end{document}
 ```
 
-##### Relaciones 1 a 1
+### Relaciones 1 a 1
 ---
 
 ```tikz
@@ -230,7 +230,7 @@ Tenemos lo siguientes tipos de base de datos
 \end{document}
 ```
 
-##### Relaciones 1 a 0..*
+### Relaciones 1 a 0..*
 ---
 
 ```tikz
@@ -313,7 +313,7 @@ Tenemos lo siguientes tipos de base de datos
 \end{document}
 ```
 
-##### Relación 0..* a 0..*
+### Relación 0..* a 0..*
 ---
 
 ```tikz
@@ -398,7 +398,7 @@ Tenemos lo siguientes tipos de base de datos
 \end{document}
 ```
 
-##### Recursivas 0..1 a 0..1
+### Recursivas 0..1 a 0..1
 ---
 
 ```tikz
@@ -449,7 +449,7 @@ Tenemos lo siguientes tipos de base de datos
 \end{document}
 ```
 
-##### Recursivas 0..1 a 0..*
+### Recursivas 0..1 a 0..*
 ---
 
 ```tikz
@@ -500,7 +500,7 @@ Tenemos lo siguientes tipos de base de datos
 \end{document}
 ```
 
-##### Recursividad muchos a muchos
+### Recursividad muchos a muchos
 ---
 
 ```tikz
@@ -554,7 +554,7 @@ Tenemos lo siguientes tipos de base de datos
 \end{document}
 ```
 
-##### Clases asociativas
+### Clases asociativas
 ---
 
 ```tikz
@@ -620,7 +620,7 @@ Tenemos lo siguientes tipos de base de datos
 \end{document}
 ```
 
-##### Herencia
+### Herencia
 ---
 
 ```tikz

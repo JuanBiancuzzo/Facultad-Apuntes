@@ -39,7 +39,7 @@ previo: "[[Capítulo 1, Principios comunes|Capítulo 1, Principios comunes]]"
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Son derechos reales en este Código:
 
@@ -58,7 +58,7 @@ tags:
  m. la [[Capítulo 3, Anticresis|anticresis]];
  n. la [[Capítulo 4, Prenda|prenda]]."
 
-### Interpretación
+# Interpretación
 ---
 
 

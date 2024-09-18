@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El [[Algoritmo|algoritmo]] de Prim busca generar un [[Árbol generador|árbol generador]] mínimo, esto es, a partir de un [[Grafo pesado|grafo pesado]], genera un árbol generador que minimice la suma del peso de sus aristas
 

@@ -8,7 +8,7 @@ aliases:
   - Ecuación de Helmholtz en un conductor
   - Impedancia del medio#^impedancia-del-medio
 ---
-### Definición
+# Definición
 ---
 Partiendo de las [[Ecuaciones de Maxwell|ecuaciones de Maxwell]] ![[Ecuaciones de Maxwell#^ecuaciones]]
 Para una zona en un [[Conductor|conductor]], la [[Permeabilidad magnética|permeabilidad magnética]] puede ser distinta a la del [[Permeabilidad magnética#^permeabilidad-magnetica-en-el-vacio|vacío]] $\mu_0$, los campos con variación armónica, donde la [[Ley de Ampère#^corriente-conduccion|corriente de conducción]] es mucho mayor que la [[Ley de Ampère#^corriente-desplazamiento|corriente de desplazamiento]], se puede despreciar la corriente de desplazamiento frente a la corriente de conducción $$ \begin{align} 

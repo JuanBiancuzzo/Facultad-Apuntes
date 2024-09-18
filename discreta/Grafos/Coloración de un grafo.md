@@ -8,7 +8,7 @@ aliases:
   - Índice cromático
   - Teorema de Vizing
 ---
-### Definición
+# Definición
 ---
 Una $k$-coloración es una asignación al [[Conjunto|conjunto]] de vértices tal que dos [[Nodo|vértices]] adyacentes no son del mismo color. Notemos que por la propiedad definición, los [[Grafo|grafos]] no deben tener [[Lazo|lazos]]
 
@@ -19,7 +19,7 @@ Una [[Cota inferior|cota inferior]] del número cromático de $G$ es el número 
 Una [[Cota superior|cota superior]] del número cromático de $G$ es $\Delta(G) + 1$. Recordemos que se denota $\Delta(G)$ al [[Grafo#^8663e2|máximo grado]]
 
 Se llama el índice cromático $\chi'(G)$ de un grafo al [[Cardinalidad|cardinal]] de una coloración mínima de aristas. Se consideran dos aristas adyacentes si inciden sobre el mismo vértice. Para las aristas, tendremos cotas mucho más poderosa, con el teorema de Vizing $$ \Delta(G) \le \chi'(G) \le \Delta(G) + 1 $$
-#### Demostración
+## Demostración
 ---
 Buscamos probar que la cota superior del número cromático de $G$ es $\Delta(G) + 1$, para un grafo de cualquier [[Orden de un grafo|orden]]. Esto es $$ p(n): ~~~ \forall G ~ \text{simple de orden} ~ n, ~ \chi(G) \le \Delta(G) + 1 $$
 Para $n = 1$, sea $G$ el grafo de orden $1$, entonces existirá la coloración trivial de un color, siendo $\chi(G) = 1 \leq \Delta(G) + 1 = 1$

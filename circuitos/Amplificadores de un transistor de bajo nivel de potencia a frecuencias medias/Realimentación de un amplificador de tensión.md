@@ -4,7 +4,7 @@ tags:
   - circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Este [[Amplificador de tensión|amplificador de tensión]], al realimentarlo, podemos pensarlo como muestreo de [[Tensión|tensión]] y suma de tensión. Esto lo podemos ver con el siguiente modelo
 
@@ -105,7 +105,7 @@ Podemos ver la realimentación como $$ \begin{matrix}
 	v_i ~ (1 + k ~ A_{vo}) = v_s \\
 	\boxed{ A_v = \frac{A_v}{1 + k ~ A_{vo}} = \frac{A_v}{1 + T}} 
 \end{matrix} $$ donde $T$ es la [[Ganancia de lazo|ganancia de lazo]]
-#### Modelo ideal amplificador
+## Modelo ideal amplificador
 ---
 $R_i \to \infty$
 * Para que toda la [[Corriente eléctrica|corriente]] $i_i$ pase por la resistencia interna del amplificador
@@ -113,7 +113,7 @@ $R_i \to \infty$
  $R_o \to 0$ 
  * Para que no existan caídas de tensión tal que toda la corriente pase por la resistencia de carga $R_L$
 
-#### Modelo ideal realimentación
+## Modelo ideal realimentación
 ---
 $R_{ri} \to \infty$
 * Para que se pueda medir exactamente toda la tensión $v_o$

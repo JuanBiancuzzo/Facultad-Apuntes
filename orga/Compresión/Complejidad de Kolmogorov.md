@@ -4,11 +4,11 @@ tags:
   - orga/Compresión
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $x$ una cadena, $K(x)$ es igual a la cantidad de [[Bit de información|bits]] minimos que debe tener un programa que genera $x$.
 
-#### Propiedades
+## Propiedades
 ---
 * $0 \le K(x) \le |x|$
 * $K(x) \le K(x) + K(y)$

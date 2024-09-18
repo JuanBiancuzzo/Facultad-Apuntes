@@ -4,7 +4,7 @@ tags:
   - orga/Visualizaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un [[Plot de relación]], para dos variables con [[Distribución continua]]. Muy parecido al [[Scatter plot]] pero muestra la [[Recta de regresión]] para estos puntos, con una cierta incertidumbre.
 

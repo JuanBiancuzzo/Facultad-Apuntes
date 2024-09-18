@@ -4,6 +4,6 @@ tags:
  - estructura/Sistema-ARC
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Guarda el byte menos significativo en la dirección más baja

@@ -11,12 +11,12 @@ aliases:
 referencias:
   - "203"
 ---
-### Definición
+# Definición
 ---
 La capa de abstracción de un [[Sistema operativo|sistema operativo]] otorga una [[Aplicación Programming Interface|API]] para un sistema operativo abstracto que permite desarrollar código para distintas plataformas
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

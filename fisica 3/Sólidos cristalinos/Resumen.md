@@ -4,12 +4,12 @@ tags:
  - fisica-3/Sólidos-cristalinos
  - resumen
 ---
-### Índice 
+# Índice 
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 ```
 
-### Resumen
+# Resumen
 ---
 Pendiente...

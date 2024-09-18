@@ -29,7 +29,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La extinción del contrato de franquicia se rige por las siguientes reglas:
 
@@ -40,5 +40,5 @@ tags:
  
 La cláusula que impide la competencia del franquiciado con la comercialización de productos o servicios propios o de terceros después de extinguido el contrato por cualquier causa, es válida hasta el plazo máximo de un año y dentro de un territorio razonable habida cuenta de las circunstancias."
 
-### Interpretación
+# Interpretación
 ---

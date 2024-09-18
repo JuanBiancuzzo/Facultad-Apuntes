@@ -4,7 +4,7 @@ tags:
   - sisop/La-abstracción-de-proceso
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[System call|system call]] `getppid()` permite obtener el `PID` ([[Proceso|process]] identification) del proceso padre.
 

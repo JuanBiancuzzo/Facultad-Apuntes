@@ -40,7 +40,7 @@ previo: "[[legal/Articulos/Regimen de contrataciones de la administración nacio
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Podrán efectuarse licitaciones y concursos públicos y privados de las siguientes clases:
  a. De etapa único o múltiple
@@ -50,7 +50,7 @@ tags:
      1. La licitación o el concurso serán nacionales cuando la convocatoria esté dirigida a interesados y oferentes cuyo domicilio o sede principal de sus negocios se encuentre en el país, o tengan sucursal en el país, debidamente registrada en los organismos habilitados a tal efecto.
      2. La licitación o el concurso serán internacionales cuando, por las características del objeto o la complejidad de la prestación, la convocatoria se extienda a interesados y oferentes del exterior; revistiendo tal carácter aquéllos cuya sede principal principal de sus negocios se encuentre en el extranjero, y no tengan sucursal debidamente registrada en el país."
 
-### Interpretación
+# Interpretación
 ---
 * Según las fases o etapas de selección ([[Art. 26 del APA, Clases de licitaciones y concursos públicos#Inciso N°1, De etapa única o multiple|Única o multiple]])
 	* De etapa única:

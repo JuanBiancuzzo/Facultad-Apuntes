@@ -11,19 +11,19 @@ aliases:
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });
 await dv.view("_scripts/dataview/mostrarSubTemas", { indice: dv.current() });
 ```
-### ¿Qué se va a investigar?
+# ¿Qué se va a investigar?
 ---
 Vamos a investigar principalmente la [[Aplicación Programming Interface|API]] de Arduino, para poder usarla como referencia en proyectos
 
 
-#### Archivos
+## Archivos
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarArchivos", { indice: dv.current() });
 ```
 
 
-### Bibliografía
+# Bibliografía
 ---
 ```dataviewjs
 await dv.view('_scripts/dataview/biblioIndice', { indice: dv.current() });

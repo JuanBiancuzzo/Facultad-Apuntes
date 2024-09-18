@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es aquella enfermedad de:
 * Aparición previsible

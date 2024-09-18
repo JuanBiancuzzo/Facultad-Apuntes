@@ -17,7 +17,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Hay indivisibilidad:
 
@@ -25,5 +25,5 @@ tags:
  b. si la indivisibilidad es convenida; en caso de duda sobre si se convino que la obligación sea indivisible o solidaria, se considera solidaria;
  c. si lo dispone la ley."
 
-### Interpretación
+# Interpretación
 ---

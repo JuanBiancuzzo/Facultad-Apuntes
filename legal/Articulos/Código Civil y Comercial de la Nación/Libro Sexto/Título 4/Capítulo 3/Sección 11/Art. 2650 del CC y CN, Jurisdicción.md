@@ -23,7 +23,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Sexto/T
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "No existiendo acuerdo válido de elección de foro, son competentes para conocer en las acciones resultantes de un contrato, a opción de actor:
 
@@ -31,5 +31,5 @@ tags:
  b. los jueces del lugar de cumplimiento de cualquiera de las obligaciones contractuales;
  c. los jueces del lugar donde se ubica una agencia, sucursal o representación del demandado, siempre que ésta haya participado en la negociación o celebración del contrato."
 
-### Interpretación
+# Interpretación
 ---

@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo simple|grafo simple]], dado un $p$-[[Conjunto|conjunto]] $H$ fijo, se define el grafo simple $G = K(p,~q)$ siendo $V(G) = \mathcal{P}_q(H)$ (los $q$-[[Subconjunto|subconjunto]] de $H$) con $uv \in E(G)$ si y solo si $uv = \emptyset$. Es decir, dos vértices son adyacentes si y solo si los correspondientes conjuntos son disjuntos. Genéricamente, definimos $K(p,~ q,~ s)$ donde $uv \in E(G)$ si y solo si $|uv| \le s$, y entonces particularmente $K(p,~q) = K(p, q, 0)$
 

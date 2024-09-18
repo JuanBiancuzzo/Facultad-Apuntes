@@ -7,11 +7,11 @@ tags:
   - señales/Muestreo-e-Interpolación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El concepto del interpolador es utilizando una [[Señal#^02aea6|señal discreta]] a una [[Señal#^016a35|señal continua]]
 
-#### Interpolador de banda limitada
+## Interpolador de banda limitada
 ---
 Este se define con la [[Transformada de Fourier|transformada de Fourier]] de $$ H_r(j\omega) = \begin{cases} 
 	T & |\omega| \le \omega_c \\

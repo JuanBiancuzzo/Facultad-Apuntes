@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - embebidos/Estrategias-de-control-de-periféricos
 ---
-### Definición
+# Definición
 ---
 Una versión más real de un [[Conversor Analógico-Digital|conversor A/D]] tienen la siguiente estructura ideal ![[Conversor Analógico-Digital#^8b8439]]
 Este [[Modelo|modelo]] matemático de un conversor ideal que es útil para el análisis de las principales características del [[Muestreo|muestreo]] en el dominio de la frecuencia
@@ -75,7 +75,7 @@ Este [[Modelo|modelo]] matemático de un conversor ideal que es útil para el an
 
 Notar que $$ x_0(t) = \sum_{n = -\infty}^{\infty} x_c(nT) ~ h_0(t - nT) = h_0(t) ~ \left( \sum_{n = -\infty}^{\infty} x_c(nT) ~ \delta(t - nT) \right) $$ donde $h_0(t)$ es la [[Respuesta en frecuencia|respuesta al impulso]] del retenedor de orden cero
 
-#### Representación en bloques
+## Representación en bloques
 ---
 Nos interesará analizar básicamente la precisión del módulo de cuantificación. La acción del dicho módulo se puede resumir en $$ \hat{x}_C(n) = Q(n(n)) $$ donde $Q : \mathbb{R} \to S$ es un [[Operador|operador]] [[Sistema lineal|no lineal]] y [[Memoria de un sistema|sin memoria]], donde $S$ es un conjunto de $M$ elementos. Los $M$ valores a la salida de dicho [[Sistema|sistema]] de dicho sistema están predefinidos. La operación de este sistema puede también descomponerse como 
 
@@ -200,7 +200,7 @@ Generalmente el número de niveles de cuantificación es potencia de dos. Es dec
 * [[Representación de enteros exceso n|Offset binario]]
 
 
-#### Calculo de error
+## Calculo de error
 ---
 Notemos que el $\Delta$ que estuvimos usando se calcula como $$ \Delta = \frac{2 X_M}{2^{B + 1}} = \frac{X_M}{2^B} $$
 Que introduce un [[Error de truncamiento|error de truncamiento]] $e(n)$ al cuantizador dado por $$ - \frac{\Delta}{2} < e(n) \le \frac{\Delta}{2} $$

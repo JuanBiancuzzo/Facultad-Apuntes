@@ -7,9 +7,9 @@ previo: "[[Capítulo 1, Declaraciones derechos y garantías|Capítulo 1, Declara
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La Nación Argentina adopta para su gobierno la forma representativa republicana federal, según la establece la presente [[Constitución de la Nación|Constitución]]."
 
-### Interpretación
+# Interpretación
 ---

@@ -6,7 +6,7 @@ tags:
   - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta técnica permite simplificar el calculo de [[Circuito eléctrico|circuitos]]
 
@@ -17,7 +17,7 @@ Donde queremos reflejar la [[Impedancia|impedancia]] $Z_f$ por la que pasa $i_f$
 Manteniendo la misma [[Corriente eléctrica|corriente]] tenemos que $$ i_f = \frac{v_i - v_o}{Z_f} = \frac{v_i - A_v ~ v_i}{Z_f} = v_i \frac{1 - A_v}{Z_f} \implies \frac{v_i}{i_f} = \frac{Z_f}{1 - A_v} = Z_{f}^* $$
 ![[Circuito reflejado por relación de tensiones.png]]
 
-#### Notas
+## Notas
 ---
 Podemos notar que $|A_v| \gg 1$ y $A_v < 0$, entonces tenemos que para un [[Resistor|resistor]] $$ Z_f^* \approx \frac{R_f}{|A_v|} $$ es decir que disminuye $|A_v|$ veces.
 
@@ -28,7 +28,7 @@ Para [[Inductor|inductores]] y [[Capacitor|capacitores]] $$ \begin{align}
 
 También en el caso de que $A_v > 0$, entonces $$ Z_f^* \approx -\frac{Z_f}{A_v - 1} $$ por lo que tenemos una impedancia negativa, que tiene sentido al ser a partir de un dispositivo activo
 
-#### Ejemplo
+## Ejemplo
 ---
 Tomemos como ejemplo el siguiente circuito
 

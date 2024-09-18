@@ -19,7 +19,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La responsabilidad por defectos ocultos caduca:
 
@@ -30,5 +30,5 @@ Estos plazos pueden ser aumentados convencionalmente.
 
 La prescripción de la acción está sujeta a lo dispuesto en el [[Libro 6, Disposiciones comunes a los Derechos personales y reales|Libro Sexto]]."
 
-### Interpretación
+# Interpretación
 ---

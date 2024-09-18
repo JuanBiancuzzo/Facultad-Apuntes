@@ -17,7 +17,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Si como consecuencia de la oposición u omisión sistemáticas en el desempeño de las funciones del administrador, o de los administradores si los hubiera, la persona jurídica no puede adoptar decisiones válidas, se debe proceder de la siguiente forma:
 
@@ -25,5 +25,5 @@ tags:
  b. los actos así ejecutados deben ser puestos en conocimiento de la asamblea que se convoque al efecto dentro de los diez días de comenzada su ejecución;
  c. la asamblea puede conferir facultades extraordinarias al presidente o a la minoría, para realizar actos urgentes o necesarios; también puede remover al administrador."
 
-### Interpretación
+# Interpretación
 ---

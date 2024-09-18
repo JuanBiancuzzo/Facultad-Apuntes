@@ -4,7 +4,7 @@ tags:
   - circuitos/Circuitos-con-diodos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Debemos considerar, en la validez de los [[Modelo|modelos]], que todos los dispositivos tienen una [[Potencia|potencia]] máxima que pueden manejar. Si la superan el componente se degrada y deja de funcionar
 

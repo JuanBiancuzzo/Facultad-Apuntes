@@ -4,12 +4,12 @@ tags:
  - adc/Circuitos-en-regimen-de-corriente-continua
  - resumen
 ---
-### Índice 
+# Índice 
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 ```
 
-### Resumen
+# Resumen
 ---
 Pendiente...

@@ -4,6 +4,6 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Si dos [[Grafo simple|grafos simples]] son [[Isomorfismo#Grafos|isomorfos]], cada grafo es representante de la clase de todos los grafos que le son isomorfos, y entonces puede prescindirse de las etiquetas

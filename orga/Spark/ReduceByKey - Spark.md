@@ -4,7 +4,7 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Transformación - Spark|transformación]] que combina los registros de un [[Resilent distributed dataset - Spark|RDD]] que tengan la misma clave en base a una función de reduce. La función de reduce debe ser [[Conmutatividad|conmutativa]] y [[Asociatividad|asociativa]].
 

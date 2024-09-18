@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-ambiente-laboral
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La absorción más importante de nanomateriales para la mayoría de las aplicaciones se produce a través de la inhalación. La deposición de nanomateriales (especialmente partículas) en los pulmones depende del tamaño. 
 

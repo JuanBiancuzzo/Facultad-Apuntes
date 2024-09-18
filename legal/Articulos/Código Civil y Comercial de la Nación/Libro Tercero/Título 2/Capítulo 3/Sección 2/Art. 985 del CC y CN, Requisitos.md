@@ -12,7 +12,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Las cláusulas generales predispuestas deben ser comprensibles y autosuficientes.  La redacción debe ser clara, completa y fácilmente legible.
 
@@ -20,7 +20,7 @@ Se tienen por no convenidas aquellas que efectúan un reenvío a textos o docume
 
 La presente disposición es aplicable a la contratación telefónica, electrónica o similares."
 
-### Interpretación
+# Interpretación
 ---
 La ley exige que las cláusulas generales predispuestas sean comprensibles y autosuficientes. También exige que la redacción sea clara, completa y fácilmente legible. Por ello, se tienen por no convenidas aquellas cláusulas que efectúan un reenvío a textos o a documentos que no se facilitan a la contraparte del predisponente, previa o simultáneamente a la conclusión del contrato. 
 

@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Topología/2
 ---
-### Definición
+# Definición
 ---
 Cuando teníamos una [[Función|funcion]] de una variable [[Grafica de una función|la grafica de una función]], se veía como una cuerva tal que $p = (x_0, f(x_0))$ por lo tanto si queriamos la normal, lo veiamos como un vector perpendicular a la recta tangente en ese puento
 

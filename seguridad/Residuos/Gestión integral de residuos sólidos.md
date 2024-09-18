@@ -4,7 +4,7 @@ tags:
   - seguridad/Residuos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Conjunto de operaciones que tienen por objeto dar a los [[Residuo sólido|residuos]] producidos en una zona, el destino y tratamiento adecuado, de una manera ambientalmente sustentable, técnica y económicamente factible y socialmente aceptable.
 

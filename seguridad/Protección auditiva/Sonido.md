@@ -4,7 +4,7 @@ tags:
   - seguridad/Protección-auditiva
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una vibración mecánica transmitida por un medio elástico, capaz de ser percibida por el [[Función del sistema auditivo|órgano auditivo]]. 
 
@@ -14,11 +14,11 @@ Para ser percibidos por el [[Función del sistema auditivo|órgano auditivo]] se
 
 Hay dos tipos de sonidos:
 
-##### Sonido puro
+### Sonido puro
 Señal acústica de forma [[Función seno|senoidal]] de una sola frecuencia.
 
 
-##### Sonido compuesto
+### Sonido compuesto
 Es la suma de varios sonidos puros.
 
 

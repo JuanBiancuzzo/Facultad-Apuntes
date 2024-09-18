@@ -4,11 +4,11 @@ tags:
   - bdd/SQL
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta [[Sentencia de SQL|sentencia]] se usa de forma similar a la [[Sentencia WHERE|sentencia WHERE]], pero si funciona con [[SQL Keywords#Funciones de agregación|funciones de agregación]]
 
-#### Sintaxis
+## Sintaxis
 ---
 ```SQL
 SELECT nombre_columna(s)
@@ -18,7 +18,7 @@ GROUP BY nombre_columna(s)
 HAVING condicion;
 ```
 
-#### Ejemplo
+## Ejemplo
 ---
 ```SQL
 SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrders

@@ -5,7 +5,7 @@ tags:
   - analisis-2/Funciones-de-varias-variables
   - analisis-2/Propiedades-de-funciones
 ---
-### Definición
+# Definición
 ---
 Dado un campo escalar $f : D \subset \mathbb{R}^n \to \mathbb{R}$ con $n > 1$ con $f \in C^k(E(\vec{A}))$, para todo $\vec{A} + \vec{H} \in E(\vec{A})$ puede expresarse 
 
@@ -23,13 +23,13 @@ Donde $d^if(\vec{A}, \vec{X} - \vec{A})$, con $\vec{A} = (a_1, \cdots, a_n)$, $\
 
 $$ d^if(\vec{A}, \vec{X} - \vec{A}) = \bigg[ \frac{\partial}{\partial x_1} (x_1 - a_1) + \cdots + \frac{\partial}{\partial x_n} (x_n - a_n) \bigg]_{f(\vec{A})}^{(i)} \text{ con } i = 1, \cdots, k $$
 
-### Caso especifico
+# Caso especifico
 ---
-##### Polinomio de Taylor de 2º orden
+### Polinomio de Taylor de 2º orden
 ---
 ![[Formula de Taylor de segundo orden#Caso especifico]]
 
-#### Propiedad
+## Propiedad
 ---
 El polinomio $p_j(\vec{X})$ que permite expresar $f(\vec{X}) \approx p_j(\vec{X})$ con $\vec{X} \in E(\vec{A})$ 
 

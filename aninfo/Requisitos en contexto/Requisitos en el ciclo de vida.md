@@ -4,11 +4,11 @@ tags:
   - aninfo/Requisitos-en-contexto
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los [[Requisito|requisitos]] influencian muchas cosas y se puede modificar, por lo que 
 
-#### Estimación
+## Estimación
 ---
 Si sabemos el tamaño, podemos determinar el esfuerzo y entonces la duración. También con el esfuerzo podemos estimar los recursos y por ende su costo
 

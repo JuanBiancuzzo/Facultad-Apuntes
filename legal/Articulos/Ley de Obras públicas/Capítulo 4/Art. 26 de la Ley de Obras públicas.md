@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Ley de Obras públicas/Capítulo 4/Capítulo 4, De la
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El contratista es responsable de la correcta interpretación de los planos para la realización de la obra y responderá de los defectos que puedan producirse durante la ejecución y conservación de la misma hasta la recepción final. Cualquier deficiencia o error que constatara en el proyecto o en los planos, deberá comunicarlo al funcionario competente antes de iniciar el trabajo."
 
-### Interpretación
+# Interpretación
 ---

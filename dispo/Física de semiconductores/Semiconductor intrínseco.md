@@ -4,7 +4,7 @@ tags:
   - dispo/Física-de-semiconductores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En un semiconductor puro, perfectamente cristalino, en [[Equilibrio térmico en un semiconductor|equilibrio térmico]], a una cierta temperatura, la tasa de [[Generación]] es equivalente a la tasa de [[Recombinación]] por lo que $$ n_0 = p_0 $$
 Además por la [[Ley de acción de masas]], por lo que $n_0 = p_0 = n_i$. Donde $n_i$ es la concentración intrínseca de [[Carga eléctrica|portadores]] con unidades de $[cm^{-3}]$. 

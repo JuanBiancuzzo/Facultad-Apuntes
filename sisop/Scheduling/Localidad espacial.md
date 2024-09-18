@@ -4,7 +4,7 @@ tags:
   - sisop/Scheduling
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La idea detrás de la localidad espacia se basa en que un [[Programa|programa]] que accede a una [[Dirección de memoria|dirección]] $X$ es muy [[Probabilidad|probable]] que necesite volver a acceder cerca de $X$
 

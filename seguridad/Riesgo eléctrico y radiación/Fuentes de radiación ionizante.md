@@ -4,16 +4,16 @@ tags:
   - seguridad/Riesgo-eléctrico-y-radiación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Podemos dividir las fuentes de [[Radiación ionizante]] en dos:
 * Fuentes naturales
 * Fuentes artificiales
 
-##### Fuentes naturales
+### Fuentes naturales
 La [[Dosis equivalente de radiación ionizante|dosis equivalente]] de [[Radiación]] natural que recibe una persona, anualmente, es de $3~Sv$, y pueden ser gas Radon o la radiación del origen cósmico.
 
-##### Fuentes artificiales
+### Fuentes artificiales
 Estas fuentes se pueden producir por:
 * Accidentes nucleares o  radiológicos
 * Producción y ensayo de armas nucleares

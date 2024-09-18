@@ -37,7 +37,7 @@ tags:
   - legal/articulo
 esBis: true
 ---
-### Artículo
+# Artículo
 ---
 "El contrato de trabajo por tiempo indeterminado se entenderá celebrado a prueba durante los primeros seis (6) meses de vigencia. Las convenciones colectivas de trabajo podrán ampliar dicho período de prueba:
 
@@ -58,7 +58,7 @@ El período de prueba se regirá por las siguientes reglas:
 
 El empleador deberá registrar al trabajador desde la fecha de inicio de la relación; caso contrario, se considerará que ha renunciado al período de prueba."
 
-### Interpretación
+# Interpretación
 ---
 
 

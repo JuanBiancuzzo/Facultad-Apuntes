@@ -9,19 +9,19 @@ tags:
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });
 await dv.view("_scripts/dataview/mostrarSubTemas", { indice: dv.current() });
 ```
-### ¿Qué se va a investigar?
+# ¿Qué se va a investigar?
 ---
 Las placas de desarrollo Nucleo-64, la cual engloba varias placas
 
 
-#### Archivos
+## Archivos
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarArchivos", { indice: dv.current() });
 ```
 
 
-### Bibliografía
+# Bibliografía
 ---
 ```dataviewjs
 await dv.view('_scripts/dataview/biblioIndice', { indice: dv.current() });

@@ -10,11 +10,11 @@ previo: "[[legal/Articulos/Constitución de la Nación/Primera parte/Capítulo 1
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La propiedad es inviolable, y ningún habitante de la Nación puede ser privado de ella, sino en virtud de sentencia fundada en [[Ley|ley]]. La expropiación por causa de utilidad pública, debe ser calificada por ley y previamente indemnizada. Sólo el [[Congreso|Congreso]] impone las contribuciones que se expresan en el [[Art. 4 de la Constitución Nacional|Artículo 4º]]. Ningún servicio personal es exigible, sino en virtud de ley o de sentencia fundada en ley. Todo autor o inventor es propietario exclusivo de su obra, invento o descubrimiento, por el término que le acuerde la ley. La confiscación de bienes queda borrada para siempre del [[Código Penal|Código Penal argentino]]. Ningún cuerpo armado puede hacer requisiciones, ni exigir auxilios de ninguna especie."
 
-### Interpretación
+# Interpretación
 ---
 Dado que es indemnizable y no recurrible en cuanto a sus efectos, puede decirse que la expropiación dispuesta por ley tiene las características de una venta forzosa de un bien.
 

@@ -4,7 +4,7 @@ tags:
   - aninfo/Analizar-y-especificar-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un [[Modelo]] que describe, a lo largo del tiempo, las acciones que hacen los usuarios. Su descomposición es actividades y tareas, donde para cada actividad hay al menos una tarea.
 

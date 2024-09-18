@@ -23,7 +23,7 @@ previo: "[[Capítulo 3, Efectos de las relaciones de poder|Capítulo 3, Efectos 
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "En este [[Código Civil y Comercial de la Nación|Código]] se entiende por:
 
@@ -34,5 +34,5 @@ tags:
  e. mejora útil: la beneficiosa para cualquier sujeto de la relación posesoria;
  f. mejora suntuaria: la de mero lujo o recreo o provecho exclusivo para quien la hizo."
 
-### Interpretación
+# Interpretación
 ---

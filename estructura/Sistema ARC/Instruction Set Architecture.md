@@ -13,11 +13,11 @@ aliases:
   - Arquitectura de set de instrucciones de ARC#Set de instrucciones de ARC
   - ISA de ARC#Set de instrucciones de ARC
 ---
-### Definición
+# Definición
 ---
 Un [[Codificación de código máquina|código binario]] determinado sólo se puede ejecutar en una [[Arquitectura del microprocesador|arquitectura de procesador]] específica. En general, cada nuevo familia de procesadores agrega algunas instrucciones o cambia la codificación, o incluso el conjunto de instrucciones completo
 
-#### Set de instrucciones de ARC
+## Set de instrucciones de ARC
 ---
 Las instrucciones son las siguientes
 
@@ -43,7 +43,7 @@ Las instrucciones son las siguientes
 * La bifurcación salta a una [[Dirección de memoria|dirección de memoria]] si se cumple una condición
 * El salto por igual verifica el flag cero
 
-#### Sintaxis
+## Sintaxis
 ---
 Se toma la siguiente sintaxis 
 
@@ -92,15 +92,15 @@ Se toma la siguiente sintaxis
 * Números por defecto es en [[Base númerica|base]] $10$
 * Si empieza con "$0$x" o finaliza con "h", se trata de hexadecimal
 
-#### Subrutinas
+## Subrutinas
 ---
 La instrucción `call` llama a la subrutina deseada, guarda la dirección de retorno en %r$15$. La instrucción `jmpl` índica la siguiente línea a ejecutar. Se utiliza para volver de una subrutina
 
-#### Macros
+## Macros
 ---
 Una macro es una porción de código que se ejecuta antes del ensamblado. En el proceso de expansión de macros, sus nombres se intercambian por el código correspondiente, reemplazando con los parámetros necesarios
 
-#### Diferencias entre subrutinas y macros
+## Diferencias entre subrutinas y macros
 ---
 Las macro se accede en tiempo de ensamblado, por lo que es más rápido. La subrutina es accedida por la instrucción `call` y termina con un `jmpl`, en tiempo de ejecución
 

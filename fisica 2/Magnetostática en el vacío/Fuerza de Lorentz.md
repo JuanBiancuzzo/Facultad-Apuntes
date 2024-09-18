@@ -4,6 +4,6 @@ tags:
  - fisica-2/Magnetostática-en-el-vacío
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La fuerza de Lorentz es la suma entre la [[Ley de Coulomb|fuerza eléctrica]], genera por el [[Campo eléctrico|campo eléctrico]], y la [[Fuerza magnética|fuerza magnética]], generada por el [[Campo de inducción magnética|campo magnético]] $$ \vec{F}_{L} = q ~ \vec{E} + q ~ (\vec{v} \times \vec{B}) $$

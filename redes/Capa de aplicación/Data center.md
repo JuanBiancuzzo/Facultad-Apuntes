@@ -9,7 +9,7 @@ aliases:
   - Blades
   - TOR switch
 ---
-### Definición
+# Definición
 ---
 Los data centers tiene miles de [[Servidor|servidores]] que en general las utilizan las [[Redes de distribución de contenido|CDN]] como un centro de computo. Este [[Servicio|servicio]] que proveen se paga las conexiones y el [[Bandwidth|bandwidth]] de mandar información al data center.
 
@@ -19,7 +19,7 @@ Establece un grupo de conveniencias
 * Estrategia de polling
 	* Consultar por nuevo contenido al datacenter
 
-#### Implementación
+## Implementación
 ---
 * Enter deep
 	* Dentro de los [[Internet Service Provider|ISPs]]
@@ -29,7 +29,7 @@ Establece un grupo de conveniencias
 	* Cerca de [[Internet exchange Point|Internet exchange Point]]
 	* [[Cluster|Cluster]] grandes en lugares estratégicos
 
-#### Networking
+## Networking
 ---
 Recientemente, muchas grandes compañías han construido data centers masivos que utilizan para almacenar mucha información y soportar de forma concurrente muchas aplicaciones nube. Cada data center tiene su propia data center network
 
@@ -37,7 +37,7 @@ Los hosts dentro de un data center, llamados blades, son hosts que incluyen [[Pr
 
 En los data centers hay dos tipos de tráfico. El primero es entre clientes externos y hosts internos, para manejar este tráfico se incluyen border routers que conectan los data centers con el [[Internet|internet]]. Los racks conectan a los hosts con los border routers. El segundo tipo de tráfico es entre los hosts internos y se resuelve a partir de la red de switches que conectan los racks
 
-#### Arquitectura
+## Arquitectura
 ---
 Para data centers grandes, se emplea una estructura jerárquica para la red. Por encima de todo, están los border routers, que se conectan con los access routers. Cada access [[Router|router]] se conecta con un top tier switch, los cuales a su vez se conectan con múltiples second-tier-switch y un load balancer. Cada second tier switch a su vez se conecta con múltiples racks a través de los TOR switches. Típicamente, todos los links utilizan [[Ethernet]] para la [[Capa de Enlace|capa de enlace]] y la [[Capa física|capa física]]
 

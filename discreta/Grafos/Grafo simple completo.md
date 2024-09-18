@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo simple|grafo simple]], se define el grafo simple completo de orden $n$ donde $$ \Psi_G = \mathcal{P}\big( V(G) \big) $$
 Denotado como $K_n$, y se puede visualizar de la siguiente forma 

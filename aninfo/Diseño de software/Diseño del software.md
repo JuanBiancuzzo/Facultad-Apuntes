@@ -4,7 +4,7 @@ tags:
   - aninfo/Diseño-de-software
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El proceso mediante el cual se definen la arquitectura, los componentes, las [[Interfaz de usuario|interfaces]] y otras características de un [[Sistema]] o componente.
 * Es una actividad creativa
@@ -12,7 +12,7 @@ El proceso mediante el cual se definen la arquitectura, los componentes, las [[I
 * Emergente
 * No es sinónimo de [[Modelar|modelar]] (pero se construyen [[Modelo|modelos]])
 
-#### De los requisitos al diseño y la construcción
+## De los requisitos al diseño y la construcción
 ---
 Definición de la arquitectura, los componentes y las [[Interfaz de usuario|interfaces]] de un producto de software. Se analizan los [[Requisito|requisitos]] con el objetivo de producir una descripción de la estructura interna del software
 
@@ -34,7 +34,7 @@ Definición de la arquitectura, los componentes y las [[Interfaz de usuario|inte
 * Colaboración
 	* Componentes que interactúan para implementar el comportamiento identificado durante el [[Análisis de requisitos|análisis]] y [[Especificación de requisitos|especificación]]
 
-#### Principios clásicos de diseño
+## Principios clásicos de diseño
 ---
 * Abstracción
 * Cohesión y acople

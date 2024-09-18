@@ -6,7 +6,7 @@ tags:
 aliases:
   - Agregación de entradas
 ---
-### Definición
+# Definición
 ---
 La habilidad de utilizar una única [[Classless Interdomain Routing|mascara]] para anunciar múltiples [[Subnetting|red]] se conoce como address aggregation
 

@@ -6,7 +6,7 @@ tags:
 aliases:
   - Classful addressing
 ---
-### Definición
+# Definición
 ---
 Originalmente, se planteó dividir las [[Red|redes]] en clases. Esto se llamó classful subnetting, como contraparte de [[Classless Interdomain Routing|classless interdomain]]. Existían tres grupos principales
 * Class A: Desde `0.0.0.0/8` a `127.255.255.255/8`

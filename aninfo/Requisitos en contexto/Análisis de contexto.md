@@ -4,7 +4,7 @@ tags:
   - aninfo/Requisitos-en-contexto
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dependiendo de la situación en la que se entre la empresa desarrollador, los [[Requisito|requisitos]], el scope y metas se verán reducidas o magnificadas.
 

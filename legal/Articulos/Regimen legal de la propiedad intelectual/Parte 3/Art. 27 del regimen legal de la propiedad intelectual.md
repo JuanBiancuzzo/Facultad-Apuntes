@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Regimen legal de la propiedad intelectual/Parte 3/Par
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los discursos políticos o literarios y en general las conferencias sobre temas intelectuales, no podrán ser publicados si el autor no lo hubiere expresamente autorizado. Los discursos parlamentarios no podrán ser publicados con fines de lucro, sin la autorización del autor."
 
-### Interpretación
+# Interpretación
 ---

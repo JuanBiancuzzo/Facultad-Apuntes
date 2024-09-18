@@ -4,7 +4,7 @@ tags:
   - orga/Pandas
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 ``` python
 Series.map(arg, na_action = None)

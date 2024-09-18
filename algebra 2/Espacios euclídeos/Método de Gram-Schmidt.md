@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-euclídeos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Este método, o mejor llamado [[algo 1/Introducción a la programación/Algoritmo|algoritmo]], nos permite hallar una base ortogonal de cualquier otra base, usando el [[Producto interno|producto interno]] determinado
 

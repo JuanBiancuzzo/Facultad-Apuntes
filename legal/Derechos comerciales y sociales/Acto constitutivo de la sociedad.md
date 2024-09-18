@@ -4,7 +4,7 @@ tags:
   - legal/Derechos-comerciales-y-sociales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Nuestra legislación societaria, se enroló sin reservas en la teoría contractualista para explicar el acto constitutivo de la sociedad, entendiendo que las diferencias que pueden existir entre la sociedad con los [[Contrato|contratos]] con prestaciones contrapuestas de las partes, no justifican de manera alguna el abandono de las nociones clásicas del contrato.
 

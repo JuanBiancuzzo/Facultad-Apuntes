@@ -10,11 +10,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La [[Persona jurídica|persona jurídica]] debe tener un patrimonio.
 
 La persona jurídica en formación puede inscribir preventivamente a su nombre los bienes registrables."
 
-### Interpretación
+# Interpretación
 ---

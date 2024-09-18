@@ -4,7 +4,7 @@ tags:
   - proba/Proceso-de-Poisson
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un proceso puntual aleatorio es un conjunto enumerable de puntos aleatorios ubicados sobre la recta real.
 

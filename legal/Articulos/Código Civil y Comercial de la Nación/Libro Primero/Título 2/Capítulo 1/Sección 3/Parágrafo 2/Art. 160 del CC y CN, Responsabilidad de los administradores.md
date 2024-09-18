@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los administradores responden en forma ilimitada y solidaria frente a la persona jurídica, sus miembros y terceros, por los daños causados por su culpa en el ejercicio o con ocasión de sus funciones, por acción u omisión."
 
-### Interpretación
+# Interpretación
 ---

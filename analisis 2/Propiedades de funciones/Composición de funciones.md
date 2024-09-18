@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Propiedades-de-funciones
 ---
-### Definición
+# Definición
 ---
 La idea de componer funciones, significa "sustituir una función en otra", donde teniendo dos funciones de una variable, $y = f(x)$ y $x = g(u)$ podemos reemplazar una en otra, haciendo $y = f(g(u))$. Obteniendo así la composición de $f$ con $g$, denotado como $f \circ g$
 

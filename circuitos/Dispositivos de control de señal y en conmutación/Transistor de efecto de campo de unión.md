@@ -6,7 +6,7 @@ tags:
   - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Este [[Transistor|transistor]] que tiene la simbología 
 
@@ -15,7 +15,7 @@ Este [[Transistor|transistor]] que tiene la simbología
 Cuya ecuación característica esta dada por $$ I_D = I_{DSS} ~ \left( 1 - \frac{V_{GS}}{V_P} \right)^2 ~ (1 + \lambda V_{DS}) $$
 En la región de operación llamada zona de características saturadas, que es equivalente al modo de operación [[Saturación del transistor de efecto de campo metal-óxido-semiconductor|saturación del MOSFET]]
 
-#### Curvas características
+## Curvas características
 ---
 Cuya [[Curva de salida|curva de salida]] es 
 

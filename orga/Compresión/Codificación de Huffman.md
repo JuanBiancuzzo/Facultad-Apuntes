@@ -4,7 +4,7 @@ tags:
   - orga/Compresión
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Este es un método de codificacion donde optimiza la cantidad de [[Bit de información|bits]] enteros para conseguir la [[Entropía de shannon]].
 

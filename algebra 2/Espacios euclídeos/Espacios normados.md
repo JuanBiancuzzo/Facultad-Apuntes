@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-euclídeos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Partiendo de la definición de [[Norma|norma]]. El par $(\mathbb{V}, \lVert \cdot \rVert)$ se llama espacio normado. Si $(\mathbb{V}, \langle \cdot, \cdot \rangle)$ es un $\mathbb{K}$-espacio euclídeo, la [[Función|función]] 
 

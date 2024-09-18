@@ -4,7 +4,7 @@ tags:
   - dispo/Física-de-semiconductores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los [[Electrón|electrones]] de un [[Semiconductor|semiconductor]] en [[Equilibrio térmico en un semiconductor|equilibrio térmico]] cumplen $$ J_n(x) = J_n^\text{dif}(x) + J_n^\text{arr}(x) = 0 $$ por lo que 
 $$ q ~ n_0(x) \mu_n E + q ~ D_n \frac{n_0(x)}{dx} = 0 $$ donde $\mu_n$ es la [[Movilidad|movilidad]], $D_n$ es el [[Coeficiente de difusión|coeficiente de difusión]], $E$ es el [[Campo eléctrico|campo eléctrico]] y $n_0(x)$ es la [[Modelo de enlace de Silicio#Concentración de Portador de carga portadores|concentración]] de electrones. 

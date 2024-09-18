@@ -4,7 +4,7 @@ tags:
   - seguridad/Residuos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una tecnología utilizada para el tratamiento de [[Residuo peligroso y especial|residuos especiales (o peligrosos)]] y no especiales (o no peligrosos). La capacidad de depuración del suelo es aprovechada en tecnologías para el tratamiento biológico de suelos contaminados con hidrocarburos o para tratar [[Residuo|residuos]] orgánicos de diversas industrias.
 

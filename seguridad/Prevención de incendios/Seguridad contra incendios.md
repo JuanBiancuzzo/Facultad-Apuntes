@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-incendios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado un establecimiento (industrial/comercial) y un sector definido, se debe determinar:
 * [[Riesgo]]
@@ -14,7 +14,7 @@ Dado un establecimiento (industrial/comercial) y un sector definido, se debe det
 * Determinación de tipo y capacidad de [[Agente extintor|extintores]]. Su selección y ubicación.
 * [[Medios de escape|Plan de evacuación]].
 
-#### Que necesito conocer?
+## Que necesito conocer?
 * Plano del sector
 * Personal
 * Listado de materiales almacenados, en proceso, terminados, insumos, materias primas.

@@ -4,7 +4,7 @@ tags:
   - redes/Capa-de-Transporte
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Transporta los mensajes de la [[Capa de aplicación|capa de aplicación]] entre los [[Host|host]] de la aplicación. En [[Internet|internet]], existen dos [[Protocolo|protocolos]] de transporte
 * [[Transmission Control Protocol|Transmission Control Protocol (TCP)]]

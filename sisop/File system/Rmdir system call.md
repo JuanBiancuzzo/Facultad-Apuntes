@@ -4,7 +4,7 @@ tags:
   - sisop/File-system
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[System call]] `rmdir()`
 ```c

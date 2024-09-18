@@ -10,11 +10,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Menor de edad es la persona que no ha cumplido dieciocho años.
 
 Este Código denomina adolescente a la persona menor de edad que cumplió trece años."
 
-### Interpretación
+# Interpretación
 ---

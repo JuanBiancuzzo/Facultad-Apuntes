@@ -6,7 +6,7 @@ tags:
   - sisop/Scheduling
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Para poder solucionar este problema que aparecen con la [[Política de planificación First In, First Out|política FIFO]] y con la [[Política de planificación Shortest Job First|política SJF]], se necesita relajar la [[Suposiciones en la planificación|suposiciones]] que dice que los [[Proceso|procesos]] tienen que terminar hasta el final. La idea es que el [[Scheduler|planificador o scheduler]] pueda adelantarse y determinar qué proceso debe ser ejecutado. 
 

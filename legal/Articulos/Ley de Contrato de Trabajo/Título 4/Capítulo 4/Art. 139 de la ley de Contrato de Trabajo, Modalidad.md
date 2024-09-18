@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 4/Capítulo 4/Cap�
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El recibo será confeccionado por el empleador debiendo hacer entrega de una copia fiel del original al trabajador la que podrá ser instrumentada de forma electrónica."
 
-### Interpretación
+# Interpretación
 ---

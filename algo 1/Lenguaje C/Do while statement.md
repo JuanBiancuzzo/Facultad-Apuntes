@@ -8,7 +8,7 @@ aliases:
   - Sentencia repetir hasta
   - Sentencia hacer hasta
 ---
-### Definición
+# Definición
 ---
 Esta [[Estructura de control iterativa|estructura de control]] repite una acción o [[Bloque de acción|bloque de acciones]] hasta que el resultado de la evaluación de la expresión de control de la iteración arroje el valor true
 

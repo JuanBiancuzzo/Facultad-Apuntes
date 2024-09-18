@@ -13,11 +13,11 @@ previo: "[[legal/Articulos/Ley de Defensa del consumidor/Título 1/Capítulo 3/C
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La oferta dirigida a consumidores potenciales indeterminados, obliga a quien la emite durante el tiempo en que se realice, debiendo contener la fecha precisa de comienzo y de finalización, así como también sus modalidades, condiciones o limitaciones.
 
 La revocación de la oferta hecha pública es eficaz una vez que haya sido difundida por medios similares a los empleados para hacerla conocer."
 
-### Interpretación
+# Interpretación
 ---

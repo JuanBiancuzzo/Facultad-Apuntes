@@ -9,7 +9,7 @@ tags:
 ```dataviewjs
     await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
 ```
-### Interpretación
+# Interpretación
 ---
 Los contratos por adhesión a cláusulas predispuestas, también llamados contratos prerredactados, son aquellos contratos en los que uno de los contratantes presta su conformidad o, con fuerza expresiva, adhiere a cláusulas generales predispuestas unilateralmente por la otra parte o por un tercero, sin que el adherente haya participado en su redacción ([[Art. 984 del CC y CN, Definición|art. 984]]).
 
@@ -25,7 +25,7 @@ En algunos casos, dentro de este contrato prerredactado, existe un cuerpo de dis
 * [[Art. 987 del CC y CN, Interpretación|Interpretación]]
 * [[Art. 989 del CC y CN, Control judicial de las cláusulas abusivas|Control judicial]]
 
-### Artículos
+# Artículos
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/legal/mostrarArticulos", { paginaActual: dv.current() });

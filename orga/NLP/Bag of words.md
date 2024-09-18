@@ -4,7 +4,7 @@ tags:
   - orga/NLP/1
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es similar a [[Term Frequency|TF]] donde dado un conjunto de [[Token|tokens]] se toman los primeros `k` [[Token|tokens]] más comunes. Después se genera una [[Matriz booleana|matriz booleana]], de `n` por `k`, donde `n` son la cantidad de frase/páginas. El booleano representa si aparece o no dicho token en esa frase o página.
 
@@ -12,7 +12,7 @@ Dado un query del usuario, vamos a hacer un vector booleano para esa query con l
 
 Esto nos da el orden de nuestra información, donde el que tenga mayor similitud va primero y se ordena de forma descendente.
 
-#### Hiper-parámetros
+## Hiper-parámetros
 ---
 * [[Tokenización]]
 * [[Stop-word]]

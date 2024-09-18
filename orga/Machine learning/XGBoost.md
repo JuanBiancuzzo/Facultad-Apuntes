@@ -4,6 +4,6 @@ tags:
   - orga/Machine-learning
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un algoritmo de [[Problema de clasificación|clasificación]], donde se usa [[Ensamble#Boosting|boosting]] sobre [[Árbol de decisión]]. 

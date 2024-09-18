@@ -10,7 +10,7 @@ tags:
   - embebidos/Diseño-desarrollo-y-depuración
   - embebidos/Microcontroladores-de-32-bits
 ---
-### Definición
+# Definición
 ---
 Controla el funcionamiento de la [[Computadora|computadora]] y lleva a cabo sus funciones de procesamiento de datos
 

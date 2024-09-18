@@ -6,7 +6,7 @@ tags:
 aliases:
   - Fchmod system call
 ---
-### Definición
+# Definición
 ---
 La [[System call|system call]] `chmod()` cambia los bits de modos de acceso
 

@@ -4,7 +4,7 @@ tags:
   - dispo/Transistor-MOSFET
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Estando en el [[Saturación del transistor de efecto de campo metal-óxido-semiconductor|regimen de saturación]] del [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]]. El [[Modelo]] planteado hasta el momento $I_D$ no debería incrementarse. Experimentalmente se observa que la [[Corriente eléctrica|corriente]] aumenta ligeramente
 

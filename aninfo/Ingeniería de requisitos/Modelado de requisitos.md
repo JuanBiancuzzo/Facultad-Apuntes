@@ -4,6 +4,6 @@ tags:
   - aninfo/Ingeniería-de-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Producir [[Modelo|modelados]] abstractos del [[Sistema]]/software/solución a desarrollar, esto no incluye aspectos de diseño

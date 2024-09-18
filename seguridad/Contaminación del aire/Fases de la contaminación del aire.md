@@ -4,15 +4,15 @@ tags:
   - seguridad/Contaminación-del-aire
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Tenemos 3 fases:
 
-##### [[Clasificación de fuentes|Fuente]] y [[Clasificación de emisión|Emisores]]
+### [[Clasificación de fuentes|Fuente]] y [[Clasificación de emisión|Emisores]]
 ---
 Es aquel lugar, instalación o aparato desde donde los [[Contaminación atmosférica|contaminantes]] se emiten a la [[ Atmósfera|atmósfera]]
 
-##### Medio
+### Medio
 ---
 El medio es la atmósfera y en ella los contaminantes emitidos en las fuente sufren transporte, dispersión y transformación.
 
@@ -24,7 +24,7 @@ El medio es la atmósfera y en ella los contaminantes emitidos en las fuente suf
 	* Cambio químico o físico que sufren las sustancias
 
 
-##### Receptor
+### Receptor
 ---
 Todo ente que recibe un [[Contaminación atmosférica|contaminante]] emitido a la [[Atmósfera]]
 * Persona
@@ -33,7 +33,7 @@ Todo ente que recibe un [[Contaminación atmosférica|contaminante]] emitido a l
 * Objeto
 
 
-### Variables climatológicas
+# Variables climatológicas
 ---
 * Viento modifica el transporte y la dispersión
 * Insolación modifica las [[Clasificación de la contaminación del aire#Origen|reacciones fotoquímicas]]

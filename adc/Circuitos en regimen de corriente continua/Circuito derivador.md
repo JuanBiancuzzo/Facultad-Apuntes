@@ -4,7 +4,7 @@ tags:
   - adc/Circuitos-en-regimen-de-corriente-continua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un [[Circuito eléctrico|circuito]], que utilizando las condiciones de [[Amplificador operacional ideal|amplificador ideal]] podemos encontrar que 
 

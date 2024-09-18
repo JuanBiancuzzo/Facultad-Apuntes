@@ -4,7 +4,7 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Transformación - Spark|transformación]] que nos permite filtrar registros de un [[Resilent distributed dataset - Spark|RDD]] en base a una función
 

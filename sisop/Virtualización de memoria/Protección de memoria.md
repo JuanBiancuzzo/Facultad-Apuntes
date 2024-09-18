@@ -8,7 +8,7 @@ aliases:
   - MPU
   - Memory Protection Unit
 ---
-### Definición
+# Definición
 ---
 Para que un [[Proceso|proceso]] se ejecute tiene que estar residente en [[Memoria|memoria]], pero a su vez el [[Sistema operativo|sistema operativo]] tiene que estar residente en memoria
 

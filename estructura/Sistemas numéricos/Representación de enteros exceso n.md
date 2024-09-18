@@ -4,7 +4,7 @@ tags:
   - estructura/Sistemas-numéricos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta representación agarra los números enteros que puede representar, y los translada para que el $0$ y el $1$ esten en la mitad.
 
@@ -14,7 +14,7 @@ Como nota, el $0$ siempre se representa con un $0$ seguido de unos, y el $1$ con
 
 Su [[Rango de representación]] es $$ (-2^{n-1} + 1)_{10} \le x \le (2^{n-1})_{10}$$
 
-### Ejemplo
+# Ejemplo
 ---
 
 | Decimal | Magnitud y signo |

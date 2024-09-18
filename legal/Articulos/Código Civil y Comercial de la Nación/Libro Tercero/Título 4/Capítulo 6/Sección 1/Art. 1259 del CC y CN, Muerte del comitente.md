@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La muerte del comitente no extingue el contrato, excepto que haga imposible o inútil la ejecución."
 
-### Interpretación
+# Interpretación
 ---

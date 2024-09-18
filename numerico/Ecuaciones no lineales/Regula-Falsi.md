@@ -4,7 +4,7 @@ tags:
   - numerico/Ecuaciones-no-lineales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se tiene $f(\alpha) = 0$ donde se busca $\alpha$ en un intervalo $[a, b]$ donde se presupone que existe una unica raíz en dicho intervalo, y por lo tanto $f(a) \cdot f(b) < 0$.
 
@@ -14,6 +14,6 @@ Para cada iteración se estima el punto medio como $$ m_k = \frac{f(b_k) \cdot a
 \end{cases}$$
 Se requiere que $f'(x)$ sea continua y no se anule en $(a_0, b_0)$. Por lo que existen dos números $c$ y $C$ tal que $$ 0 < c < \left| f'(x) \right| < C < \infty, ~~ x \in (a_0, b_b) $$
 
-#### Cota de error
+## Cota de error
 ---
 El [[Error absoluto|error absoluto]] de este algoritmo es: $$ \left| \alpha - m_k \right| \le \frac{C - c}{c} \left| m_k - m_{k - 1} \right| $$

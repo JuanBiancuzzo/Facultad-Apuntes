@@ -6,7 +6,7 @@ tags:
 aliases:
   - Unidad de datos de la arquitectura ARC#En la arquitectura ARC
 ---
-### Definición
+# Definición
 ---
 Esta unidad es para guardar y ejecutar las operaciones, se utilizan [[Registro|registros]] como fuentes y destinos de datos. Estos podrían ser simples y únicos, como fue el caso de los primeros [[Procesador|procesadores]], en los que se denominaban acumuladores
 
@@ -14,7 +14,7 @@ En los procesadores modernos puede haber $16$, $32$ o incluso más. De hecho dep
 
 Para escribir o leer el contenido de estos registros, el acceso se realiza a través de uno o más [[Bus|buses]] de datos internos
 
-#### En la arquitectura ARC
+## En la arquitectura ARC
 ---
 Para realizar esto utiliza tres buses. Se puede realizar con menos buses, pero son soluciones más lentas, ya que requiere más ciclos de reloj para guardar los datos a usar en registros correspondientes, para luego ser usados
 

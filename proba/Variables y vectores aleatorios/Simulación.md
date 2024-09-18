@@ -16,7 +16,7 @@ $$ x = F_X^{-1}(g(u)) $$
 
 Y conseguimos:
 
-### Teorema
+# Teorema
 ---
 Si $F$ es una función que cumple
 * Ser no decreciente

@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-ambiente-laboral
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La presencia de un [[Agente químico]] en el lugar de trabajo puede ocasionar daños en tres situaciones básicas:
 * Existe exposición al agente

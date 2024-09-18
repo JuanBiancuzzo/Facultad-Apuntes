@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Las precisiones formuladas en la publicidad o en anuncios, prospectos, circulares u otros medios de difusión se tienen por incluidas en el contrato con el consumidor y obligan al oferente."
 
-### Interpretación
+# Interpretación
 ---

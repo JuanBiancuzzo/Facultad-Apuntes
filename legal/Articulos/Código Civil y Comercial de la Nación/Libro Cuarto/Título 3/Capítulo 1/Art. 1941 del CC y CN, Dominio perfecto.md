@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Cuarto/
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El dominio perfecto es el derecho real que otorga todas las facultades de usar, gozar y disponer material y jurídicamente de una cosa, dentro de los límites previstos por la ley. El dominio se presume perfecto hasta que se pruebe lo contrario."
 
-### Interpretación
+# Interpretación
 ---
 
 

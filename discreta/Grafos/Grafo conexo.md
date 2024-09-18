@@ -7,7 +7,7 @@ aliases:
   - Grafo disconexo
   - Grafo fuertemente conexo
 ---
-### Definición
+# Definición
 ---
 Un [[Grafo|grafo]] es conexo si para cualquier par de vértices $u$, $v$ existe un [[Camino|camino]] $u-v$. En caso contrario es disconexo
 

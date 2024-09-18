@@ -8,7 +8,7 @@ tags:
   - algebra-2/Espacios-Vectoriales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Con $A\in\mathbb{K}^{n \times m}$
 
@@ -16,7 +16,7 @@ Con $A\in\mathbb{K}^{n \times m}$
  * El subespacio columna de $A$: $col(A) := gen\{A_1, A_2, \cdots, A_m\} \subseteq \mathbb{K}^n$
  * El subespacio fila de $A$: $fil(A) := col(A^T) \subseteq \mathbb{K}^m$
 
-#### Igualdades
+## Igualdades
 ---
 Sea $A \in \mathbb{R}^{m \times n}$
 

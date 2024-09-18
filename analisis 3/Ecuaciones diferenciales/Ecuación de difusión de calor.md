@@ -4,7 +4,7 @@ tags:
   - analisis-3/Ecuaciones-diferenciales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El problema de difusión del calor en un [[Conjunto compacto]] $K \subset \mathbb R^n$ es $$ \begin{cases} 
 	\Delta u(x, t) - k \displaystyle \frac{\partial u(x, t)}{\partial t} = 0 && x \in K', t > 0 \\

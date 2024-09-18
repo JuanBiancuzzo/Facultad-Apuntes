@@ -4,7 +4,7 @@ tags:
   - proba/Inferencia-estadística
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Diremos que una familia paramétrica es regular si:
 1) El [[Soporte]] de $f_\theta(x)$ no depende de $\theta$.

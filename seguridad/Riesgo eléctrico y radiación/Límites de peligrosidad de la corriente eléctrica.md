@@ -4,7 +4,7 @@ tags:
   - seguridad/Riesgo-eléctrico-y-radiación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se define en cuatro zonas de peligrosidad establecida por la IEC (international electrotechnical commission) que resumen los efectos de la [[Corriente eléctrica|corriente alterna]] que pasa a través del cuerpo humano en [[Función|función]] del tiempo
 
@@ -79,14 +79,14 @@ Se define en cuatro zonas de peligrosidad establecida por la IEC (international 
 \end{document}
 ```
 
-###### Zona 1
+#### Zona 1
 Ningún efecto, hasta el umbral de percepción.
 
-###### Zona 2
+#### Zona 2
 Ningún efecto fisiológico peligroso.
 
-###### Zona 3
+#### Zona 3
 Efectos patológicos reversibles, que aumentan la [[Corriente eléctrica|intensidad de la corriente]] y con el tiempo (contracciones musculares, dificultades respiratorias, aumento de la presión sanguínea, perturbación cardiaca, etc.)
 
-###### Zona 4
+#### Zona 4
 Probable [[Fibrilación ventricular|fibrilación ventricular]], [[Paro respiratorio|paro respiratorio]], [[Quemadura|quemadura]], paro cardíaco.

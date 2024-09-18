@@ -4,7 +4,7 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se debe especificar también una función **reduce** que es una [[Acción - Spark|acción]] que combina todos los valores asociados a la misma clave.
 

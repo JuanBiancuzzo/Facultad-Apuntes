@@ -4,11 +4,11 @@ tags:
   - sisop/Concurrencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una API de [[Thread|threads]], dada por la biblioteca pthread. Esta API es muy completa y la iremos viendo a medida que se la necesite.
 
-#### Creación de [[Thread|thread]]
+## Creación de [[Thread|thread]]
 ---
 ```c
 #include <pthread.h>
@@ -24,7 +24,7 @@ Esta función tiene cuatro argumentos:
 
 Devuelve $0$ si se ha creado el thread con éxito, si hubo error devuelve otro valor.
 
-##### Ejemplo
+### Ejemplo
 ---
 ```c
 #include <pthread.h>
@@ -50,7 +50,7 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-#### Terminación de un [[Thread|thread]]
+## Terminación de un [[Thread|thread]]
 ---
 Muchas veces es necesario esperar a que un determinado thread finalice su ejecución, para ello se utiliza la función `pthread_join()` que toma dos argumentos
 
@@ -63,7 +63,7 @@ int pthread_join(pthread_t thread, void** value_ptr);
 1. `thread`: es el thread por el que hay que esperar y es de tipo `pthread_t`
 2. `value_ptr`: es el puntero al valor esperado de retorno
 
-##### Ejemplo
+### Ejemplo
 ---
 ```c
 #include <stdio.h>
@@ -113,10 +113,10 @@ Algunas cosas:
 * `pthread_cancel(thread)`
 * `pthread_detach(threadid)`
 
-#### [[Lock|Locks]]
+## [[Lock|Locks]]
 ---
 
-##### Lock y unlock
+### Lock y unlock
 ---
 ```c
 int pthread_mutex_lock(pthread_mutex_t* mutex);
@@ -125,7 +125,7 @@ int pthread_mutex_unlock(pthread_mutex_t* mutex);
 
 Las rutinas son bastante intuitivas, donde uno se imagina que puede haber una sección crítica, y por ende debe ser protegida, se utilizan los locks para ello.
 
-##### Manejo de lock
+### Manejo de lock
 ---
 ```c
 int pthread_mutex_trylock(pthread_mutex_t* mutex);
@@ -139,7 +139,7 @@ int pthread_mutex_timedlock(pthread_mutex_t* mutex, struct timespec* abb_timeout
 
 Si en un timeslice no consigue el mutex, devuelve error, o $0$ si lo bloquea.
 
-##### Wait
+### Wait
 ---
 ```c
 int pthread_cond_wait(pthread_con_t* cond, pthread_mutex_t* mutex);
@@ -150,7 +150,7 @@ int pthread_cond_wait(pthread_con_t* cond, pthread_mutex_t* mutex);
  2. Suspende la ejecución del [[Thread]] que lo llama poniéndolo en la [[Estados de un thread#Waiting|lista de espera]]
  3. Se vuelve a hacer lock del mutex antes de volver del wait
 
-##### Signal
+### Signal
 ---
 ```c
 int pthread_cond_signal(pthread_cond_t* cond);
@@ -158,7 +158,7 @@ int pthread_cond_signal(pthread_cond_t* cond);
 
 Toma a un thread de la [[Estados de un thread#Waiting|lista de espera]] y lo marca como potencialmente seleccionable por el [[Thread scheduler|planificador]] para correr, lo pone en la [[Estados de un thread#Ready|ready list]].
 
-##### Broadcast
+### Broadcast
 ---
 ```c
 int pthread_cond_broadcast(pthread_cond_t* cond);

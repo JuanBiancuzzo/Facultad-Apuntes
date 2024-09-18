@@ -4,11 +4,11 @@ tags:
   - bdd/SQL
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta [[Sentencia de SQL|sentencia]] se usa para eliminar un [[Registro SQL|registro]] de una [[Tabla SQL|tabla]]
 
-#### Sintaxis
+## Sintaxis
 ---
 ```SQL
 DELETE FROM nombre_tabla WHERE condicion;

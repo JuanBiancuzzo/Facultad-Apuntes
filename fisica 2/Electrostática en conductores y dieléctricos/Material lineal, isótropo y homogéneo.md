@@ -10,11 +10,11 @@ aliases:
   - Susceptibilidad dieléctrica#^susceptibilidad-dielectrica
   - Susceptibilidad magnética#^susceptibilidad-magnetica
 ---
-### Definición
+# Definición
 ---
 Si los materiales son lineales, isótropos, y homogéneos (LIH), entonces podemos encontrar una relación lineal entre los campos 
 
-#### Para campo eléctrico
+## Para campo eléctrico
 ---
 Podemos obtener la siguiente relación $$ \vec{D} = \epsilon \vec{E}, ~~~~~~ \epsilon = \epsilon_0 ~ \epsilon_r $$ siendo $\epsilon$ la [[Permitividad eléctrica|permitividad eléctrica]] del material, $\epsilon_0$ la [[Permitividad eléctrica#^permitividad-vacio|permitividad del vacío]] y $\epsilon_r$ la [[Permitividad eléctrica#Permitividad dieléctrica relativa|permitividad dieléctrica relativa]]
 
@@ -22,7 +22,7 @@ Usando las [[Relación constitutiva#Para campo eléctrico|relaciones constitutiv
     \vec{P} = \epsilon_0 ~ (\epsilon_r - 1) ~ \vec{E}, ~~~~~~ \epsilon_r - 1 = X_E 
 \end{matrix} $$ siendo $X_E$ la susceptibilidad dieléctrica ($X_E \ge 0$) ^susceptibilidad-dielectrica
 
-#### Para campo magnético
+## Para campo magnético
 ---
 Podemos obtener la siguiente relación $$ \vec{B} = \mu \vec{H}, ~~~~~~ \mu = \mu_0 ~ \mu_r $$ siendo $\mu$ la [[Permeabilidad magnética|permeabilidad magnética]] del material, $\mu_0$ la [[Permeabilidad magnética|permeabilidad del vacío]] y $\mu_r$ la [[Permeabilidad magnética#^permeabilidad-magnetica-relativa|permeabilidad relativa]]
 

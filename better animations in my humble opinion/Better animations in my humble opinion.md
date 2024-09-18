@@ -5,18 +5,18 @@ tags:
  - proyecto
  - better-animations-in-my-humble-opinion
 ---
-### Descripción
+# Descripción
 ---
 La intención es crear una mejor forma de crear animaciones, la cual integre animaciones a base de keyframe y animaciones a base de [[Animación procedural con cinemáticas inversas|inverse kinematics]], de forma que ambas trabajen en conjunto
 
 
-### Presentar
+# Presentar
 ---
 
 
 
 
-### Notas
+# Notas
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarNotas", { proyecto: dv.current() });

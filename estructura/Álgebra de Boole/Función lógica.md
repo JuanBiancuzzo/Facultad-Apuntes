@@ -4,6 +4,6 @@ tags:
   - nota/facultad
   - estructura/Álgebra-de-Boole
 ---
-### Definición
+# Definición
 ---
 Es una [[Función|función]] cuyo [[Conjunto|conjunto]] de llegada (el [[analisis 2/Nomenclatura/Dominio de una función.md|dominio]]) y el conjunto de salida (el [[analisis 2/Nomenclatura/Codominio.md|codominio]]), son elementos definidos por el [[Álgebra de Boole|álgebra de Boole]]

@@ -4,7 +4,7 @@ tags:
   - analisis-3/Series-de-Laurent
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $D \subseteq \mathbb{C}$ un abierto que contiene el exterior de un [[Disco cerrado]] con centro en $0$ salvo, eventualmente, una cantidad finita de [[Singularidad|singularidades]] $z_1, z_2, z_3, \cdots, z_m$, es decir: existe $r > 0$ tal que $$ \Set{z_1, z_2, z_3, \cdots, z_m} \subset \Set{z \in \mathbb{C} : |z| > r} \subseteq D \cup \Set{z_1, z_2, z_3, \cdots, z_m} $$
 

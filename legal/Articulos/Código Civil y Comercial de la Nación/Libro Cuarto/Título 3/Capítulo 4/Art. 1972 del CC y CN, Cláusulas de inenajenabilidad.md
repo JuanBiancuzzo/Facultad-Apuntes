@@ -14,7 +14,7 @@ previo: "[[Capítulo 4, Límites al dominio|Capítulo 4, Límites al dominio]]"
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "En los actos a título oneroso es nula la cláusula de no transmitir a persona alguna el dominio de una cosa determinada o de no constituir sobre ella otros derechos reales. Estas cláusulas son válidas si se refieren a persona o personas determinadas.
 
@@ -24,7 +24,7 @@ Si la convención no fija plazo, o establece un plazo incierto o superior a diez
 
 En los actos por causa de muerte son nulas las cláusulas que afectan las porciones legítimas, o implican una sustitución fideicomisaria."
 
-### Interpretación
+# Interpretación
 ---
 
 

@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Topología/2
 ---
-### Definición
+# Definición
 ---
 Sea la [[Curva|curva]] $C \subset \mathbb{R}^n$ de ecuación $\mathbb{X}=\vec{g}(t)$ con $t \in I$. En todo [[Punto simple de la curva|punto simple de la curva]] y [[Punto regular de la curva|punto regular de la curva]], la curva admite [[Recta tangente a una curva|recta tangente]] de ecuación
 

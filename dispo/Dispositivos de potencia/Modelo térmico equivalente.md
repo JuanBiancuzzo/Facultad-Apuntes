@@ -4,7 +4,7 @@ tags:
   - dispo/Dispositivos-de-potencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Usando la situación
 

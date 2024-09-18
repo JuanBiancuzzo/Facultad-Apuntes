@@ -12,7 +12,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Cuarto/
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Servidumbre personal es la constituida en favor de persona determinada sin inherencia al inmueble dominante. Si se constituye a favor de una persona humana se presume vitalicia, si del título no resulta una duración menor.
 
@@ -20,5 +20,5 @@ Servidumbre real es la inherente al inmueble dominante. Se presume perpetua exce
 
 En caso de duda, la servidumbre se presume personal."
 
-### Interpretación
+# Interpretación
 ---

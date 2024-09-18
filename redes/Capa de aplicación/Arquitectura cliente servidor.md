@@ -4,7 +4,7 @@ tags:
   - redes/Capa-de-aplicación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En esta [[Arquitectura de aplicaciones|arquitectura]] hay un [[Host|host]] que siempre esta, llamado [[Servidor|servidor]], que sirve request de otros host que llamaremos clientes.
 
@@ -14,7 +14,7 @@ Una característica importante de esta arquitectura el servidor tiene una [[Inte
 
 En esta arquitectura, es difícil que un solo servidor pueda soportar todos los request de los clientes, por ese motivo aparecieron los [[Data center|data centers]], que pueden tener un número grande de host que usualmente los usan para obtener muchas [[Máquina virtual|máquinas virtuales]]
 
-#### Escalabilidad
+## Escalabilidad
 ---
 Denotemos $u_s$ la tasa de subida del servidor, $u_i$ la taza de subida del cliente $i$, y $d_i$ la taza de descarga del cliente $i$. Considerando un archivo de tamaño $F$ y un número $N$ de clientes. El tiempo de distribución es el tiempo que toma distribuir el archivo a todos los clientes
 

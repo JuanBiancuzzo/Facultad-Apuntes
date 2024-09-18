@@ -23,7 +23,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El comitente está obligado a:
 
@@ -31,5 +31,5 @@ tags:
  b. proporcionar al contratista o al prestador la colaboración necesaria, conforme a las características de la obra o del servicio;
  c. recibir la obra si fue ejecutada conforme a lo dispuesto en el [[Art. 1256 del CC y CN, Obligaciones del contratista y del prestador|artículo 1256]]."
 
-### Interpretación
+# Interpretación
 ---

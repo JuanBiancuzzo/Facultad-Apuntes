@@ -16,7 +16,7 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 4/Capítulo 4/Cap�
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El pago de los salarios deberá efectuarse íntegramente en los días y horas señalados.
 El empleador podrá efectuar adelantos de remuneraciones al trabajador hasta un cincuenta (50) por ciento de las mismas, correspondientes a no más de un período de pago.
@@ -27,7 +27,7 @@ En caso de especial gravedad y urgencia el empleador podrá efectuar adelantos q
 
 Los recibos por anticipo o entregas a cuenta de salarios, hechos al trabajador, deberán ajustarse en su forma y contenido a lo que se prevé en los [[Art. 138 de la ley de Contrato de Trabajo, Recibos y otros comprobantes de pago|artículos 138]], [[Art. 139 de la ley de Contrato de Trabajo, Modalidad|139]] y [[Art. 140 de la ley de Contrato de Trabajo, Contenido necesario|140]], incisos a), b), g), h) e i) de la presente ley."
 
-### Interpretación
+# Interpretación
 ---
 
 

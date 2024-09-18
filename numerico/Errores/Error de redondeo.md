@@ -4,7 +4,7 @@ tags:
   - numerico/Errores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Error que aparece en las operaciones (suma, resta, etc) utilizando una cantidad finita de dígitos.
 

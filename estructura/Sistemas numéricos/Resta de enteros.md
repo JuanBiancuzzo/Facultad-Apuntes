@@ -4,7 +4,7 @@ tags:
   - estructura/Sistemas-numéricos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Usando una [[Representación de enteros complemento a la base|representación de enteros]] con [[Complemento a la base]], podemos transformar la resta como:
 $$\begin{matrix} 
@@ -17,7 +17,7 @@ Donde $d$ es la cantidad de digitos del número más grande, y $r$ es la base.
 
 Esto nos permite transformar una resta a una [[Suma de enteros|suma]], donde para el último paso debemos sacar el 1, más grande.
 
-### Ejemplo
+# Ejemplo
 ---
 $$ \begin{matrix} 
 	~~~7 ~ 9 ~ 6_{10} \\

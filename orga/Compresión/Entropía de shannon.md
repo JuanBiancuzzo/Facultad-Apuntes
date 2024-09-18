@@ -4,7 +4,7 @@ tags:
   - orga/Compresión
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se calcula como el promedio de [[Bit de información|bits]] que mande en cada mensaje. Por lo tanto se puede calcular esto de la siguiente forma
 $$ H = -\sum_i \mathbb{P}(x_i) \cdot log_2(\mathbb{P}(x_i)) $$

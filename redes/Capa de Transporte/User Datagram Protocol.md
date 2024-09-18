@@ -6,14 +6,14 @@ tags:
   - redes/Capa-de-Transporte
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un [[Protocolo|protocolo]] de [[Capa de transporte|capa de transporte]] que en general se usa para aplicaciones de tiempo real
 * Aplicaciones sensibles a la latencia
 * Permite perdida de paquetes
 * Los que se mande audio (específicamente voz) que no agrega overhead no deseada
 
-#### Estructura
+## Estructura
 ---
 Los datos de la aplicación ocupan el dato field del segmento. El UDP header tiene únicamente cuatro campos
 
@@ -33,7 +33,7 @@ Los datos de la aplicación ocupan el dato field del segmento. El UDP header tie
 
 Los primeros dos son las direcciones y puerto de origen, y destino. Luego, sigue el length field el cual tiene el largo explícito del segmento. Este es importante, ya que puede variar entre un segmento y otro. El último campo, [[Checksumming method|checksum]], es utilizado para verificar si hubo algún error durante el envío del segmento
 
-#### Beneficios
+## Beneficios
 ---
 Hay múltiples razones por las cuales una [[Aplicación|aplicación]] puede preferir este protocolo por sobre el método [[Protocolo de entrega confiable|confiable]] [[Transmission Control Protocol|TCP]]
 * Control fino de la información que se envía y cuando se envía
@@ -49,7 +49,7 @@ Existen múltiples razones por las cuales una aplicación preferiría utilizar U
 
 Cuando la tasa de pérdida de paquetes es baja, y con algunas organizaciones bloqueando el tráfico UDP por razones de seguridad, el protocolo TCP es cada vez más atractivo para el transporte de streaming media
 
-#### Socket programming 
+## Socket programming 
 ---
 Para poder utilizar UDP, debemos añadir la [[Internet Protocol Address|dirección]] y el puerto de destino al paquete antes de enviarlo a través del [[Socket|socket]]. Este viaje a través de la red y llegará a destino sin ningún tipo de seguridad. Cuando este llega a destino, este inspeccionará sus contenidos y tomará la acción correcta
 

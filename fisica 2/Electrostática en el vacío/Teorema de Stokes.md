@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - analisis-2/Funciones-de-varias-variables
 ---
-### Definición
+# Definición
 ---
 Sí se cumple que la [[Función|función]] $f$ es 
 * $f \in C^1(D)$, $D \subset \mathbb{R}^3 \to \mathbb{R}^3$

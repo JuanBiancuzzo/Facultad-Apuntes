@@ -5,7 +5,7 @@ tags:
   - nota/facultad
 referencias: []
 ---
-### Definición
+# Definición
 ---
 Estos [[Protocolo|protocolos]] incluyen un mecanismo que determina los turnos de las múltiples estaciones 
 * [[Polling protocol|Polling protocol]]

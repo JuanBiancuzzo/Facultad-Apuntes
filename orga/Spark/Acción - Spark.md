@@ -4,7 +4,7 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 A un [[Resilent distributed dataset - Spark|RDD]] se le puede aplicar una acción, que devuelven un valor al driver luego de procesar los datos, y provocan que varias [[Transformación - Spark|transformaciones]] encadenadas sean ejecutadas. Algunas son:
 * [[Reduce - Spark|Reduce]]

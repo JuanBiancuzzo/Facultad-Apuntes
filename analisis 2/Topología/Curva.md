@@ -4,13 +4,13 @@ tags:
   - nota/facultad
   - analisis-2/Topología/2
 ---
-### Definición
+# Definición
 ---
 Dada $\vec{g} : I \subset \mathbb{R} \to \mathbb{R}^m$ si $\begin{cases} I \text{ es un intervalo} \\ \vec{g} \text{ es continua en } I \end{cases}$, el [[algebra 2/Espacios Vectoriales/Conjunto.md|conjunto]] [[Codominio|imagen]] de $\vec{g}$ se denomina curva
 
 Tambien se puede llegar a una curva, donde tenemos una [[Poligonal de vertices|poligonal de vertices]] donde la cantidad de vertices tiende a infinito
 
-#### Conceptos adicionales
+## Conceptos adicionales
 ---
 Dada una curva $C \subset \mathbb{R}^n$ de ecuación $\vec{X} = \vec{g}(t)$ con $t \in I$
 * [[Punto regular de la curva|Punto regular de la curva]] 

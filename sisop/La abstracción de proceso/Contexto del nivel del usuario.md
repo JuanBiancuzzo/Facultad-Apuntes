@@ -4,7 +4,7 @@ tags:
   - sisop/La-abstracción-de-proceso
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Consiste en las secciones que forman parte de [[Virtualización de memoria|virtual address space]] del proceso
 1. text

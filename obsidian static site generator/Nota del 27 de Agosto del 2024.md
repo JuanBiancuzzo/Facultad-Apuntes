@@ -4,7 +4,7 @@ tags:
  - obsidian-static-site-generator
  - nota/proyecto 
 ---
-### Progreso
+# Progreso
 ---
 Voy a anotar todos los requerimientos que necesita este proyecto para que de esa forma pueda entender bien lo que tengo que hacer
 
@@ -23,7 +23,7 @@ Voy a anotar todos los requerimientos que necesita este proyecto para que de esa
 - [ ] Usar el [[Plugins de Obsidian#^mejor-alias|plugin que cree]]
 - [ ] Agregar botones de copiar al clipboard en las secciones de código
 
-#### Pasos
+## Pasos
 ---
 - [ ] Generar el AST
 - [ ] Obtener la metadata
@@ -34,7 +34,7 @@ Voy a anotar todos los requerimientos que necesita este proyecto para que de esa
     - [ ] Outgoing
 - [ ] Generar código para hugo
 
-#### Metadata
+## Metadata
 ---
 Links
 ```JSON

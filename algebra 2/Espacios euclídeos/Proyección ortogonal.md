@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-euclídeos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $S$ un [[Subespacio|subespacio]] de $\mathbb{V}$ y $v \in \mathbb{V}$, decimos que $\hat{v}$ es la [[Proyección|proyección]] ortogonal del vector $v$ sobre $S$ si verifica
 
@@ -16,7 +16,7 @@ $$ \hat{v} = \frac{\langle v, v_1 \rangle}{\langle v_1, v_1 \rangle} \cdot v_1 +
 
 Esta proyección también escrita como $P_S(v) := \hat{v}$, determinando una [[Transformación lineal|transformación lineal]]
 
-#### Propiedades
+## Propiedades
 ---
  * $P_S^2 = P_S$, esta propiedad la tiene por ser un [[Proyector|proyector]]
  * $Im(P_S) = S$ y $Nu(P_S) = S^\perp$ Entonces, claramente $\mathbb{V} = Im(T) \oplus Nu(T)$ y además $Im(P_S) \perp Nu(P_S)$

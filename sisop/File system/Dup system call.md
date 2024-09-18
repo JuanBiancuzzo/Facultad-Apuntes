@@ -6,7 +6,7 @@ tags:
 aliases:
   - Dup2 system call
 ---
-### Definición
+# Definición
 ---
 La [[System call|system call]] `dup()` crea una copia del [[File descriptor|file descriptor]] del [[Archivo|archivo]] cuyo nombre es `oldfld`
 

@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Topología/1
 ---
-### Definición
+# Definición
 ---
 Dados un complejo $z_0 \in \mathbb{C}$ y un numero real positivo $r$, se definen los siguientes [[Subconjunto|subconjuntos]] del plano complejo
 $$ D_0(z_0, r) = \{ z \in \mathbb{C} : 0 < |z - z_0| < r \}$$ 

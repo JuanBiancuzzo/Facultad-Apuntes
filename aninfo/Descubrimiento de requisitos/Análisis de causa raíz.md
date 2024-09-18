@@ -4,7 +4,7 @@ tags:
   - aninfo/Descubrimiento-de-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Tiene como propósito identificar la fuente de un problema, creando un árbol de causas de un dado evento, estas causas también se las puede considerar efecto de otras, por lo que podemos crear un árbol de causas de las mismas. Es un proceso recursivo que nosotros decidimos cuando terminar
 

@@ -4,7 +4,7 @@ tags:
   - sisop/Scheduling
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Teniendo varias particiones de [[Memoria|memoria]], cada una de un tamaño fijo, se establecían cuando el [[Sistema operativo|sistema operativo]] se instalaba o podría ser redefinidas por el operador.
 

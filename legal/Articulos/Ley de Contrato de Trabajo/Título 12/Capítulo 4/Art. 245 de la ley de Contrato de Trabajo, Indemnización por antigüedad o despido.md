@@ -22,7 +22,7 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 12/Capítulo 4/Cap
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "En los casos de despido dispuesto por el empleador sin justa causa, habiendo o no mediado preaviso y luego de transcurrido el periodo de prueba, se deberá abonar al trabajador una indemnización equivalente a UN (1) mes de sueldo por cada año de servicio o fracción mayor de TRES (3) meses, tomando como base de cálculo la mejor remuneración mensual, normal y habitual devengada durante el último año o durante el tiempo de prestación de servicios si este fuera menor. La base de cálculo de esta indemnización no incluirá el Sueldo Anual Complementario, ni conceptos de pago semestral o anual.
 
@@ -39,7 +39,7 @@ Mediante convenio colectivo de trabajo, las partes podrán sustituir el presente
 
 Por su parte, los empleadores podrán optar por contratar un sistema privado de capitalización a su costo, a fin de solventar la indemnización prevista en el presente artículo y/o la suma que libremente se pacte entre las partes para el supuesto de desvinculación por mutuo acuerdo conforme [[Art. 241 de la ley de Contrato de Trabajo, Formas y modalidades|artículo 241 de la presente ley]]."
 
-### Interpretación
+# Interpretación
 ---
 
 

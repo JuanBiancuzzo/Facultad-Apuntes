@@ -4,7 +4,7 @@ tags:
   - legal/Derechos-humanos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Trata del derecho de cada [[Persona humana|persona]] que su libertad y su [[Dignidad humana|dignidad]] sea respetada en condiciones de igualdad y sin discriminación.
 

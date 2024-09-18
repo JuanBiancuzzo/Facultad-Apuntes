@@ -4,7 +4,7 @@ tags:
   - proba/Test-de-hipótesis
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $\underline{X} = \left( X_1, \cdots, X_n \right)$ una [[Muestra aleatoria]] con distribución perteneciente a una [[Familia exponencial]], luego
 1) si $c(\theta)$ es creciente, el [[Test de hipótesis|test]] para $H_0 : \theta \le \theta_1$ vs $H_1 : \theta > \theta_1$ será $$ \delta(\underline{X}) = \begin{cases} 

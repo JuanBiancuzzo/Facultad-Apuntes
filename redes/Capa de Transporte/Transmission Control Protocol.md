@@ -7,7 +7,7 @@ tags:
   - nota/facultad
   - redes/Capa-Física-Inalámbrica
 ---
-### Definición
+# Definición
 ---
 Es un [[Protocolo|protocolo]] de [[Capa de transporte|capa de transporte]] que implementa un [[Protocolo de entrega confiable|protocolo de entrega confiable]]
 
@@ -18,7 +18,7 @@ Para proveer una [[Protocolo de entrega confiable|entrega confiable]], utiliza
 
 Además suma un [[Control de congestión de Transmission Control Protocol|control de congestión]]
 
-#### Estructura del protocolo
+## Estructura del protocolo
 ---
 El protocolo TCP tiene la siguiente estructura
 
@@ -62,7 +62,7 @@ Como el [[User Datagram Protocol|protocolo UDP]], el header de TCP contiene los 
 	* URG bit
 		* Indica que hay información en el [[Paquete|segmento]] que es marcada como segmento. La dirección del último [[Bit de información|bit de información]] urgente es indicado en el urgent data pointer field
 
-#### Parámetros del protocolo
+## Parámetros del protocolo
 ---
 El protocolo TCP tiene los siguientes parámetros
 * `size`: Que indica el tamaño del archivo que se debe enviar
@@ -75,7 +75,7 @@ El protocolo TCP tiene los siguientes parámetros
 * `rwnd`: Es el valor de la ventana de recepción del host del otro lado de la conexión. Representa la cantidad de paquetes que puede a lo sumo tener en vuelo
 * `version`: Puede ser [[Tahoe|Tahoe]] o [[Reno|Reno]]
 
-#### Entrega confiable
+## Entrega confiable
 ---
 TCP entonces crea un servicio confiable de transferencia de datos encima del [[Servicio de best-effort delivery|servicio best-effort]] del [[Internet Protocol Address|IP]]
 
@@ -88,7 +88,7 @@ Usa alguno de los siguientes métodos para asegurar este servicio
 * El uso de [[Protocolo Go-Back-N|Go-Back N]]
 * El uso de [[Protocolo Selective Repeat|Selective Repeat]]
 
-#### Three-Way Handshake
+## Three-Way Handshake
 ---
 Debido a que se envían tres segmentos de información al establecer la conexión, se refiere usualmente como three-way handshake. Los primeros dos segmentos no contienen información de la aplicación, mientras que el último puede hacerlo
 
@@ -98,7 +98,7 @@ El recibe el segundo mensaje, el flag de SYN y de ACK están prendido, por eso s
 
 El último mensaje de los tres, el flag de ACK está prendido, y este se llama mensaje ACK ACK
 
-#### Secuencia de cierre
+## Secuencia de cierre
 ---
 Cualquiera de los dos [[Proceso|procesos]] puede elegir terminar la conexión, al ocurrir esto, se liberan los recursos utilizados en la misma
 1. El emisor envía un close command, con el FIN bit prendido
@@ -106,7 +106,7 @@ Cualquiera de los dos [[Proceso|procesos]] puede elegir terminar la conexión, a
 3. El receptor envía su propio segmento de cierre, con el Fin bit prendido
 4. Finalmente, el cliente envía el ACK para el segmento de cierre y ambos hosts liberan los recursos utilizados
 
-#### Diagrama de estado del emisor
+## Diagrama de estado del emisor
 ---
 ```tikz
 \usetikzlibrary{shapes, shapes.geometric, arrows.meta, automata, positioning}
@@ -158,7 +158,7 @@ El último estado del cliente se utiliza para reenviar un ACK en caso de que est
 
 Cuando un cliente envía un SYN SEGMENT a una dirección y puerto en el que no hay ningún [[Socket|listening socket]], este le reenviará un segmento especial de reset con el RST bit prendido
 
-#### Diagrama de estado del receptor
+## Diagrama de estado del receptor
 ---
 ```tikz
 \usetikzlibrary{shapes, shapes.geometric, arrows.meta, automata, positioning}
@@ -205,7 +205,7 @@ Cuando un cliente envía un SYN SEGMENT a una dirección y puerto en el que no h
 ```
 
 
-#### Control de flujo
+## Control de flujo
 ---
 Cuando una conexión TCP recibe información correcta y en secuencia, la coloca en el receive buffer. Si la aplicación es relativamente lenta en leer esta información, el receptor puede fácilmente causar un [[Overflow|overflow]] en el buffer de lectura. El servicio de [[Control de flujo|control de flujo]] elimina la posibilidad de que esto ocurra, provee un servicio de speed-matching para emparejar la velocidad de lectura con la velocidad de bajada. Este servicio el distinto al de [[Control de congestión|control de congestión]], ambos producen el mismo efecto, pero por razones distintas
 
@@ -227,7 +227,7 @@ A partir de estos dos valores, podremos calcular la cantidad de datos sin verifi
 
 Para permitir que un host que únicamente recibe información le comunique al otro host su window, entonces este valor también se agregara a los mensajes de ACK
 
-#### Socket programming
+## Socket programming
 ---
 El protocolo TCP, por otro lado, es orientado a conexiones. Antes de que dos [[Host|hosts]] pueden comunicarse entre sí, está la fase de handshake
 
@@ -237,7 +237,7 @@ Una vez creado el [[Socket|socket]], el cliente inicia un handshake de tres paso
 
 Desde el punto de vista de la aplicación, los sockets están directamente conectados a través de una tubería
 
-#### Impacto con redes inalámbricas
+## Impacto con redes inalámbricas
 ---
 Si bien los protocolos de [[Capa de transporte|capa de transporte]] como TCP pueden operar en redes inalámbricas, experimentan diferencias en el rendimiento de las redes inalámbricas de las redes cableadas
 

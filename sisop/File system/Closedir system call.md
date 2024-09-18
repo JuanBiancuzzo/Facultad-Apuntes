@@ -4,7 +4,7 @@ tags:
   - sisop/File-system
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[System call]] `closedir()` cierra el stream de tipo `DIR *` cuyo nombre es `dirstream`
 

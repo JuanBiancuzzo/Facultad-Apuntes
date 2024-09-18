@@ -4,7 +4,7 @@ tags:
   - taller/Sintaxis
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La función principal (pero no necesariamente la más útilizada) es para enumerar ítems
 

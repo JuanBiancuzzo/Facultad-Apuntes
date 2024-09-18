@@ -5,7 +5,7 @@ tags:
   - analisis-2/Propiedades-de-funciones
   - analisis-2/Funciones-de-varias-variables
 ---
-### Definición
+# Definición
 ---
 Cuando teníamos una [[Función|función]] de una variable real, teníamos su representación geométrica como 
 

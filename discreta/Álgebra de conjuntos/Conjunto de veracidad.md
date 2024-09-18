@@ -4,7 +4,7 @@ tags:
  - discreta/Álgebra-de-conjuntos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $I$ un [[Conjunto|conjunto]] de referencia y $P$ un [[Subconjunto|subconjunto]] de $I$, entonces definimos $$ p(x) = \begin{cases} 
 1 \leftarrow x \in P \\

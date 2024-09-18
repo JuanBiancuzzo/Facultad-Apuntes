@@ -4,7 +4,7 @@ tags:
  - redes/Capa-de-Enlace
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Este [[Protocolo|protocolo]] requiere que uno de los nodos del canal sea el master node. Este será el encargado de seleccionar cada uno de los nodos utilizando [[Política de planificación Round Robin|round-robin]]. El master node le indicará a cada uno de los nodos del canal, la máxima cantidad de frames que puede enviar y en qué momento, de forma cíclica y continua
 

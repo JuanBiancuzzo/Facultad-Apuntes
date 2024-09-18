@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Las [[Persona jurídica|personas jurídicas]] son [[Art. 146 del CC y CN, Persona jurídicas públicas|públicas]] o [[Art. 148 del CC y CN, Personas jurídicas privadas|privadas]]."
 
-### Interpretación
+# Interpretación
 ---

@@ -7,7 +7,7 @@ tags:
 aliases:
   - Cuadripolo en cascada
 ---
-### Definición
+# Definición
 ---
 El [[Amplificador operacional|amplificador]] en cascada 
 
@@ -15,7 +15,7 @@ El [[Amplificador operacional|amplificador]] en cascada
 
 Una conexión en cascada es un arreglo de dos o más [[Circuito eléctrico|circuitos]] de amplificadores operacionales dispuestos uno tras otro, de manera que la salida de uno es la entrada del siguiente
 
-#### Punto de vista del cuadripolo
+## Punto de vista del cuadripolo
 ---
 Si se tiene dos [[Cuadripolo|cuadripolos]] conectados en cascada
 

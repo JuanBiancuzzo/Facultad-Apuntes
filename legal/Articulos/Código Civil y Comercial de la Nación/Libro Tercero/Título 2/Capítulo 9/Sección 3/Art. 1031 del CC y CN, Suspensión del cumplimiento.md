@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "En los contratos bilaterales, cuando las partes deben cumplir simultáneamente, una de ellas puede suspender el cumplimiento de la prestación, hasta que la otra cumpla u ofrezca cumplir. La suspensión puede ser deducida judicialmente como acción o como excepción. Si la prestación es a favor de varios interesados, puede suspenderse la parte debida a cada uno hasta la ejecución completa de la contraprestación."
 
-### Interpretación
+# Interpretación
 ---

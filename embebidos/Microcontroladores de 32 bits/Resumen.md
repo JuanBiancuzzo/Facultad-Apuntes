@@ -4,12 +4,12 @@ tags:
  - embebidos/Microcontroladores-de-32-bits
  - resumen
 ---
-### Índice
+# Índice
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 ```
 
-### Resumen
+# Resumen
 ---
 Pendiente...

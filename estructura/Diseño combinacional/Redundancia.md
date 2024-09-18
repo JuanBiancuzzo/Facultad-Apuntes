@@ -4,7 +4,7 @@ tags:
   - estructura/Diseño-combinacional
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado una [[Función]] de [[Álgebra de Boole|boole]], se establece la redundancia como un valor no especificado por la función. 
 

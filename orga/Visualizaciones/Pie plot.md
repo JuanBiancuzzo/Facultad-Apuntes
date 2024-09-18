@@ -4,7 +4,7 @@ tags:
   - orga/Visualizaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un [[Plot]] para una [[Distribución discreta]] donde se muestran las proporciones para cada valor.
 

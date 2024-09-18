@@ -6,6 +6,6 @@ tags:
 aliases:
   - NAT traversal
 ---
-### Definición
+# Definición
 ---
 Es un protocolo que permite a los [[Host|host]] descubrir y configurar un [[Network Address Translation|NAT]] cercano. Al igual que un [[Universal Plug and Play|UPnP]]

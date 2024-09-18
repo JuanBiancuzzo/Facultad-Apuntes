@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Nomenclatura
 ---
-### Definición
+# Definición
 ---
 Se define un vector a la $m$ potencia, tal que 
 

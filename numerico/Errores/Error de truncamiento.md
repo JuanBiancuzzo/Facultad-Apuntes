@@ -4,7 +4,7 @@ tags:
   - numerico/Errores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es el error cometido en el pasaje de un problema matemático a uno numérico, por ejemplo:
 $$ \sum_{i = 0}^{\infty} a_i = \sum_{i = 0}^N a_i + \text{Error de truncamiento} $$

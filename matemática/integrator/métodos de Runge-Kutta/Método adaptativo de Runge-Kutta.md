@@ -10,7 +10,7 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
 ```
-### Definición
+# Definición
 ---
 Los métodos adaptativos son diseñados para producir una estimación el [[Error de truncamiento|error de truncamiento local]] de un paso simple [[Método de Runge-Kutta|Runge-Kutta]]. Para conseguir esto, se necesita dos métodos, uno de orden $p$ y otro de $p - 1$.
 
@@ -26,12 +26,12 @@ c_s    & a_{s1} & a_{s2} & \cdots & a_{ss} \\\hline
        & b_1    & b_2    & \cdots & b_s    \\
        & b_1^*  & b_2^*  & \cdots & b_s^*  \\
 \end{array} $$
-#### Ejemplo
+## Ejemplo
 ---
 ![[Método Runge-Kutta-Fehlberg#Definición]]
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

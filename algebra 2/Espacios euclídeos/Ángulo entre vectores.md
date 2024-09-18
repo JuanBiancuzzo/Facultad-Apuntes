@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-euclídeos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Podemos definir el ángulo $\theta$ entre dos vectores no nulos $x$ e $y$ mediante el [[Producto interno|producto interno]] y la [[Norma|norma]]
 

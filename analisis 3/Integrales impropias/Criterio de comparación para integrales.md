@@ -4,7 +4,7 @@ tags:
   - analisis-3/Integrales-impropias
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Si $\forall x \ge a : 0 \le f(x) \le g(x)$, entonces:
 

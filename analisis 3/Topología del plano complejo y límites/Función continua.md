@@ -4,7 +4,7 @@ tags:
   - analisis-3/Topología-del-plano-complejo-y-límites
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Una función $f:D \to \mathbb{C}$ definida en un conjunto $D \subseteq \mathbb{C}$ _es continua en un punto_ $z_0 \in D$ sii para cada número real $\epsilon > 0$ existe un numero $\delta > 0$ para el cual se verifica la siguiente implicación (para todo complejo $z$):
 
@@ -16,7 +16,7 @@ z \in D
 Si $f$ es continua en todos los puntos de su dominio, diremos simpleente que $f$ es continua, sobreentendiendo que lo es en cada punto.
 
 
-#### Observaciones
+## Observaciones
 ---
 Obsérvese la "sutil" diferencia con la definición de [[Límite]]: tenemos $|z - z_0| < \delta$ en lugar de $0 < |z - z_0| < \delta$. La razón fundamental es que $|f(z) - f(z_0)| < \epsilon$ se verifica trivialmente para $z = z_0$, que es un punto del dominio de $f$, y lo mismo ocurre con el antecedente.
 

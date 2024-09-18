@@ -4,6 +4,6 @@ tags:
   - aninfo/Ingeniería-de-software
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una abstracción de una entidad del mundo real importante para la discusión de los [[Requisito|requisitos]], con límites claramente establecidos

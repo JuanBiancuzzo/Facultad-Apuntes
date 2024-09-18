@@ -4,7 +4,7 @@ tags:
   - seguridad/Riesgo-eléctrico-y-radiación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 | Intensidad de la [[Corriente eléctrica]] | Efectos                                                                                                                                        |
 | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -4,7 +4,7 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Transformación - Spark|transformación]] que nos permite modificar un registros de un [[Resilent distributed dataset - Spark|RDD]], en ese sentido es como el [[Map - Spark|map]], pero cada registro puede generar 0, 1 o más registros, según la función dada
 

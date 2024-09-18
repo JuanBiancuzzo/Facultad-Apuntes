@@ -4,13 +4,13 @@ tags:
   - estructura/Diseño-combinacional
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Tiene las mismas propiedades que el [[Mapa de Karnaugh]] pero se puede implementar en software. Por lo tanto podemos reducir [[Función|funciones]] donde la cantidad de variables de entrada son mayores a 5.
 
 Este [[algo 1/Introducción a la programación/Algoritmo|algoritmo]] se aprovecha de que para saber si dos [[Implicante|implicantes]] son vecinos, entonces su representación en binario tiene un único valor distintio. Por lo tanto vamos construyendo de los implicantes más chicos a los más grandes, y aquellos implicantes que no se hayan usado para hacer implicantes más grandes, serán los [[Implicante primo|implicantes primos]].
 
-### Ejemplo
+# Ejemplo
 ---
 Tenemos la función que depende de $a$, $b$, $c$ y $d$, y si los pensamos como números en [[Base númerica|base]] 2 las posibilidades, entonces esta función es $1$ cuando ese número es: $0$, $1$, $2$, $5$, $6$, $7$, $8$, $9$, $10$, $14$, donde el $7$ y el $9$ son redundantes. Entonces agrupamos esos números en binario por aquellos que tengan la misma cantidad de $1$.
 

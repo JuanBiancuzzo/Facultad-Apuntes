@@ -4,6 +4,6 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El carácter supletorio permite la posibilidad de disponer de forma diversa las consecuencias acordadas. A diferencia de un [[Carácter imperativo|carácter imperativo]]

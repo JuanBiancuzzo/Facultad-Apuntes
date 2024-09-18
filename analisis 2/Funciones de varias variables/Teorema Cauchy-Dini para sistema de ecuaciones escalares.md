@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Funciones-de-varias-variables
 ---
-### Definición
+# Definición
 ---
 Teorema de existencia y unicidad de las funciones definidas implícitamente por un sistema de ecuaciones escalares
 

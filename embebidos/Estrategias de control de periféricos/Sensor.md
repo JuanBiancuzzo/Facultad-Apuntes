@@ -13,7 +13,7 @@ aliases:
   - Optoaislador#Optoacoplador
   - Optoisolator#Optoacoplador
 ---
-### Definición
+# Definición
 ---
 Un [[Microcontrolador|microcontrolador]] no debería hacer decisiones sin censar el mundo exterior, entonces podemos partir de la forma más simple de censar si un switch esta abierto o cerrado
 
@@ -94,7 +94,7 @@ Se puede censar de las dos formas con un [[General Purpose Input Output#Input|pi
 1. Como el pin $P0$ que usa la [[Resistor|resistencia]] $R1$ como [[General Purpose Input Output#^pull-up|pull up]]. Cuando el $SW1$ esta abierta $P0$ va a leer un $1$, y cuando este cerrado $P0$ va a leer un $0$
 2. Como el pin $P1$ que usa la resistencia $R2$ como [[General Purpose Input Output#^pull-down|pull down]]. Cuando el $SW2$ esta abierto $P1$ va a leer un $0$, y cuando este cerrado $P0$ va a leer un $1$
 
-#### Saltos por una switch
+## Saltos por una switch
 ---
 Cuando un switch se cierra, no es un cambio perfecto, y este podemos decir que salta entre los cambios, por la vibración de los contactos que permite establecer la conexión
 
@@ -144,7 +144,7 @@ Hay que tener en cuenta que si el período en el que se espera es suficientement
 
 Algunos switches en su data sheet pueden tener el tiempo que tarda en estabilizarse o se puede hacer una [[Curva característica de un componente|curva característica]] del switch y por lo tanto saber cuanto se tiene que esperar
 
-#### Protección
+## Protección
 ---
 [[Circuito integrado|Circuitos integrados]], como se menciona en el uso de un [[General Purpose Input Output#Input|pin de entrada]], si se recibe más [[Tensión|tensión]] de la alimentación o menor al $0~V$, puede dañar el integrado. También esta tensión puede venir por algún medio externo como la descarga estática de una persona. En conclusión, es buena idea poner una cierta protección
 
@@ -214,7 +214,7 @@ Agregando el [[Capacitor|capacitor]] $C1$ mejora la protección, ya que resiste 
 
 Mientras más grande sea el pico de tensión esperado, más grande tiene que ser $C1$ y $R2$, para obtener una mayor [[Constante de tiempo|constante de tiempo]] y por lo tanto hay que tenerlo en cuenta para la etapa de diseño
 
-##### Protección con un diodo Zener
+### Protección con un diodo Zener
 ---
 Usar un [[Diodo Zener|diodo Zener]] permite que si la tensión es muy alta, el Zener va a empezar a conducir y por lo tanto la tensión en el pin "nunca" va a exceder la tensión de Zener $V_z$. Cabe aclarar que los diodos siempre tienen un tiempo de reacción, por lo que si la frecuencia, del pico de tensión, es muy alta, muy posiblemente el Zener no responda a tiempo, y por lo tanto llegando la tensión al pin como si el Zener no estuviera
 
@@ -278,7 +278,7 @@ Usar un [[Diodo Zener|diodo Zener]] permite que si la tensión es muy alta, el Z
 \end{document}
 ```
 
-##### Optoacoplador
+### Optoacoplador
 ---
 Un optoacoplador, también llamado optoaislador o aislador acoplado ópticamente, es un dispositivo de emisión y recepción que funciona como un interruptor activado mediante la luz emitida por un [[Diodo|diodo]] led que satura un componente optoelectrónico, normalmente en forma de [[Fototransistor|fototransistor]] o fototriac. De este modo se combinan en un solo dispositivo [[Semiconductor|semiconductor]], un fotoemisor y un fotorreceptor cuya conexión entre ambos es óptica. Estos elementos se encuentran dentro de un encapsulado que por lo general es del tipo [[Dual in-line package (DIP) (DIL)|DIP]]. Se suelen utilizar para aislar eléctricamente a dispositivos muy sensibles<sup><a href="#ref-254" style="color: inherit; text-decoration: none;">[254]</a></sup> 
 
@@ -368,7 +368,7 @@ En general se usa un [[Darlington|darlington]] como dispositivo semiconductor, y
 
 Cabe aclarar que este sistema puede ser algo lento, especialmente la transición de $1$ a $0$, siendo de $10$ a $20$ veces más lento que la transición de $0$ a $1$
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

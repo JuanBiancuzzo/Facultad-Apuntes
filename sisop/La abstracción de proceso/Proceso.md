@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - aninfo/Diseño-de-software
 ---
-### Algunas definiciones
+# Algunas definiciones
 ---
 "Es un conjunto de actividades que transforma una entrada en una salida y que consume recursos. También se lo puede definir como un programa en ejecución con derechos restringidos."
 
@@ -13,7 +13,7 @@ tags:
 
 "Es simplemente un [[Programa|programa]] que se está ejecutando en un instante dado"
 
-#### Un proceso incluye
+## Un proceso incluye
 ---
 * Los [[Archivo|archivos]] abiertos
 * Las señales pendientes
@@ -22,7 +22,7 @@ tags:
 * Un espacio de [[Dirección de memoria|direcciones de memoria]]
 * Uno o más [[Thread|hijos de ejecución]]
 
-#### API's
+## API's
 ---
 Las acciones básicas que todo [[Sistema operativo|SO]] debe proveer sobre la [[Virtualización del procesador|abstracción de la CPU]]
 * Creación (Create):
@@ -36,6 +36,6 @@ Las acciones básicas que todo [[Sistema operativo|SO]] debe proveer sobre la [[
 * Estado (Status):
 	* Tiene que existir una forma de saber sobre la situación del proceso y su [[Estados de un proceso|estado]]. Cuánto hace que se está ejecutando, en que estado se encuentra, etc.
 
-#### Contexto de un proceso
+## Contexto de un proceso
 ---
 ![[Contexto del proceso#Definición]]

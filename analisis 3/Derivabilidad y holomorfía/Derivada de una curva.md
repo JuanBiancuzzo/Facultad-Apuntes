@@ -4,7 +4,7 @@ tags:
   - analisis-3/Derivabilidad-y-holomorfía
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sean 
 1) $f : D \to \mathbb{C}$ una función [[Holomorfa]] en un abierto $D \subseteq \mathbb{C}$

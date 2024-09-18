@@ -4,6 +4,6 @@ tags:
   - dispo/Física-de-semiconductores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los átomos forman un tetraedro, ligados por compartir un [[Electrón|electrón]] de valencia ([[Enlace covalente]])

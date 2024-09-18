@@ -4,13 +4,13 @@ tags:
   - redes/Capa-de-Red
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Almacena los [[Paquete|paquetes]] recibidos por el [[Switching fabric|switching fabric]], y los envía al enlace de salida asociado, realizando las funciones de [[Capa de Red|capa de red]] y capa física necesarias. Para los casos de enlaces bidireccionales, usualmente se asocia un [[Router input port|input port]] al mismo enlace ^57d3e6
 
 El procesamiento de output ports toma paquetes almacenados en el buffer correspondiente y los transmite a través del link
 
-#### Delay
+## Delay
 ---
 Si el output port no es suficiente rápido como para enviar todos los paquetes que llegaron a su buffer, entonces se produjera encolamiento en los output ports. Eventualmente, esta cola puede crecer lo suficiente como para ocupar todo espacio disponible, produciendo pérdida de paquetes
 

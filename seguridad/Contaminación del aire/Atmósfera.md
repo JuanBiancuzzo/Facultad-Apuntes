@@ -4,11 +4,11 @@ tags:
   - seguridad/Contaminación-del-aire
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Envoltura gaseosa que rodea a la tierra, con una composición de $78.09\%$ de Nitrógeno, $20.94\%$ de Oxígeno, $0.9\%$ de Argon y el resto de $0.07\%$ es dióxido de carbono y otros gases.
 
-#### Secciones
+## Secciones
 ---
 * Tropósfera
 	* Se acumula el $90\%$ de la masa de gases

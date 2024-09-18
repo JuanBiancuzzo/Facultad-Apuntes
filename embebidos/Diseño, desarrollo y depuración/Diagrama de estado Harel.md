@@ -4,7 +4,7 @@ tags:
  - embebidos/Diseño-desarrollo-y-depuración
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Aunque las [[Máquina Mealy|máquinas Mealy]] ya pueden reducir el número de estados requeridos, en el caso de sistemas complejos, estos [[Autómata|autómatas]] se vuelven fácilmente inmanejables
 

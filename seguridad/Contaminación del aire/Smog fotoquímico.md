@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-aire
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los que se consideran smog se generan a partir de transformar 
 * Smog tipo Los Angeles: Dióxido de nitrógeno, en óxido de nitrógeno y ozono

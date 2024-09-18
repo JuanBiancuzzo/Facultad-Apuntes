@@ -7,7 +7,7 @@ aliases:
   - Arista-conectividad
   - vértice-conectividad
 ---
-### Definición
+# Definición
 ---
 Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo|grafo]], definimos el [[Conjunto|conjunto]] de aristas $S$ como un corte de $G$ si al eliminar las aristas de $S$ en $G$, este se forma un [[Grafo conexo|grafo disconexo]]
 * Un corte es [[Mínimo|mínimo]] si no existe otro corte de [[Cardinalidad|cardinal]] menor, el cual se denomina arista-conectividad $\lambda(G)$

@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Regimen legal de la propiedad intelectual/Parte 3/Par
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Cuando las personas cuyo consentimiento sea necesario para la publicación del retrato fotográfico o de las cartas, sean varias, y haya desacuerdo entre ellas, resolverá la autoridad judicial."
 
-### Interpretación
+# Interpretación
 ---

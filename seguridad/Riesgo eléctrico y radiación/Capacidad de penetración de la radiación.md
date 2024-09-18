@@ -4,7 +4,7 @@ tags:
   - seguridad/Riesgo-eléctrico-y-radiación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un aspcto importante de la interacción [[Radiación]]-material, consiste en la capacidad de penetración de la radiación.
 

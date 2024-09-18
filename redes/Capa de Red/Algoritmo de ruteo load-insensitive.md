@@ -4,6 +4,6 @@ tags:
  - redes/Capa-de-Red
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En un [[Routing algorithms|algoritmo]] load-insensitive, por oposición a un [[Algoritmo de ruteo load-sensitive|algoritmo load-sensitive]], no se verá afectado por los niveles de congestión de la [[Red|red]]

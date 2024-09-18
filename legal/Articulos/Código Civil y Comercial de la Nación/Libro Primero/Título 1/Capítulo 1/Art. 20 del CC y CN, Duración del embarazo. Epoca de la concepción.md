@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Epoca de la concepción es el lapso entre el máximo y el mínimo fijados para la duración del embarazo. Se presume, excepto prueba en contrario, que el máximo de tiempo del embarazo es de trescientos días y el mínimo de ciento ochenta, excluyendo el día del nacimiento."
 
-### Interpretación
+# Interpretación
 ---

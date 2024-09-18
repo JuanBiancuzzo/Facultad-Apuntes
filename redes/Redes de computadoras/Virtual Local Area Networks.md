@@ -6,7 +6,7 @@ tags:
 aliases:
   - VLAN
 ---
-### Definición
+# Definición
 ---
 Usualmente, las redes switched [[Local Area Network|LAN]] son configuradas jerárquicamente, donde cada grupo contiene su propia switched LAN que es a su vez conectada con otros grupos a través de una jerarquía de switches. Podemos identificar tres inconvenientes principales de esta configuración
 

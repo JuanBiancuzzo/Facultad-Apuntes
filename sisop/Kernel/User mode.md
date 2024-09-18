@@ -4,6 +4,6 @@ tags:
   - sisop/Kernel
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 También conocido como "modo 3", ejecuta instrucciones en nombre del usuario

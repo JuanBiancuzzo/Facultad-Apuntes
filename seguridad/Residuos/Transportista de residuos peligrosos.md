@@ -4,13 +4,13 @@ tags:
   - seguridad/Residuos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es el encargado de transladar los [[Residuo peligroso y especial|residuos peligrosos]] que produzca el [[Generador de residuos peligrosos|generador]] y llevarlo a un [[Tratador de residuos peligrosos|tratador]] para un tratamiento y/o disposición final
 
 Este transportista debe inscribirse en un organismo de control como transportista, y de esa forma son habilitados.
 
-##### Qué tiene que llevar?
+### Qué tiene que llevar?
 * Documentación que respalde el translado del [[Residuo]]
 	* [[Manifiesto de residuo peligroso|Manifiesto]]
 	* Hojas de seguridad de los residuos

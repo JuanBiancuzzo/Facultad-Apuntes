@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El silencio opuesto a actos o a una interrogación no es considerado como una manifestación de voluntad conforme al acto o la interrogación, excepto en los casos en que haya un deber de expedirse que puede resultar de la ley, de la voluntad de las partes, de los usos y prácticas, o de una relación entre el silencio actual y las declaraciones precedentes."
 
-### Interpretación
+# Interpretación
 ---

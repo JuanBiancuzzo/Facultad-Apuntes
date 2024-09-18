@@ -4,13 +4,13 @@ tags:
   - aninfo/Analizar-y-especificar-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Al igual que el [[Formato de caso de uso secuencia de acciones|formato de secuencia de acciones]], pero donde las acciones del [[Actor]] están en una columna y la respuesta del [[Sistema]] en otra
 
-### Ejemplo
+# Ejemplo
 ---
-###### Consultar productos disponibles
+#### Consultar productos disponibles
 El cliente consulta los productos disponibles, filtrándolos por categoría, descripción o código de producto.
 
 | [[Actor]]                                                                                                               | [[Sistema]] |

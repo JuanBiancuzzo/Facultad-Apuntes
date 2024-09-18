@@ -4,11 +4,11 @@ tags:
   - bdd/SQL
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta [[Sentencia de SQL|sentencia]] se usa para eliminar toda una [[Tabla SQL|tabla]]
 
-#### Sintaxis
+## Sintaxis
 ---
 ```SQL
 DROP TABLE nombre_tabla;

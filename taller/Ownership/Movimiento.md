@@ -4,7 +4,7 @@ tags:
   - taller/Ownership
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se puede mover valores de un [[Ownership|dueño]] a otro. También se puede "tomar prestado una referencia" a un valor. Las referencias son punteros que no adueñan los valores a los que apuntan, y tienen [[Lifetime]] limitados.
 

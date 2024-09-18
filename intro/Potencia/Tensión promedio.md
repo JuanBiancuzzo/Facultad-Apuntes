@@ -4,7 +4,7 @@ tags:
   - intro/Potencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se define a la tension promedio ($V_\text{DC}$) como el cociente entre el area bajo la curva de la función $v(t)$ y el periodo.
 Es decir,

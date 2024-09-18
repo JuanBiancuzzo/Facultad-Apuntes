@@ -4,6 +4,6 @@ tags:
   - seguridad/Prevención-de-incendios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Materias integradas por hasta un 30% de su peso por materias [[Riesgo muy combustibles|muy combustibles]].

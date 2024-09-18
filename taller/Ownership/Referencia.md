@@ -4,7 +4,7 @@ tags:
   - taller/Ownership
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La mayoria de los tipos de los tipos de punteros vistos en ejemplos han sido punteros que son [[Ownership|dueños]] de los valores referencia, por ejemplo `String`, `Vec` y `Box` son [[Ownership|dueños]] de los datos a los que apuntan.
 

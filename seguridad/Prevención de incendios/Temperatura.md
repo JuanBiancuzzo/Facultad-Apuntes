@@ -5,6 +5,6 @@ tags:
   - nota/facultad
   - fisica-2/Termodinámica
 ---
-### Definición
+# Definición
 ---
 Es la medida de la concentración de [[Calor|calor]]

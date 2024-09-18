@@ -4,7 +4,7 @@ tags:
   - orga/Visualizaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En este [[Plot]] se muestran 5 valores:
 - El central de la caja verde es la [[Mediana]]. También visto como el punto que separa a la mitad a la población

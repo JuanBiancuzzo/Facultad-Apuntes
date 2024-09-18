@@ -16,7 +16,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "En los contratos de agencia por tiempo indeterminado, cualquiera de las partes puede ponerle fin con un preaviso.
 
@@ -28,7 +28,7 @@ Las disposiciones del presente artículo se aplican a los contratos de duración
 
 Las partes pueden prever los plazos de preaviso superiores a los establecidos en este artículo."
 
-### Interpretación
+# Interpretación
 ---
 
 

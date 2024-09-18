@@ -4,7 +4,7 @@ tags:
   - señales/Señales-y-sistemas
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En forma coloquial un [[Sistema|sistema]] es invertible cuando observando la salida del mismo podemos recuperar la entrada. En términos matemáticos concretos, un sistema es invertible cuando el [[Operador|operador]] $\mathcal{T}$ que lo define es [[Función biyectiva|biyectivo]] o lo que es lo mismo existe $\mathcal{T}^{-1}$
 

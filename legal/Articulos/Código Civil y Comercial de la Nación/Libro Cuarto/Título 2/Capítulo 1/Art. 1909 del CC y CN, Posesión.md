@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Cuarto/
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Hay posesión cuando una persona, por sí o por medio de otra, ejerce un poder de hecho sobre una [[Cosa|cosa]], comportándose como [[Sujeto de derecho#Sujeto activo|titular]] de un [[Libro 4, Derechos Reales|derecho real]], lo sea o no."
 
-### Interpretación
+# Interpretación
 ---
 
 

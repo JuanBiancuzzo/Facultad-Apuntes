@@ -4,21 +4,21 @@ tags:
   - aninfo/Ingeniería-de-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta conlleva varias actividades
 
-##### Descubrimiento
+### Descubrimiento
 ![[Técnicas de descubrimiento de requisitos#Definición]]
 
-##### Análisis
+### Análisis
 ![[Análisis de requisitos#Definición]]
 
-##### Especificación
+### Especificación
 ![[Especificación de requisitos#Definición]]
 
-##### Verificación
+### Verificación
 ![[Verificación#Definición]]
 
-##### Validación
+### Validación
 ![[Validación#Definición]]

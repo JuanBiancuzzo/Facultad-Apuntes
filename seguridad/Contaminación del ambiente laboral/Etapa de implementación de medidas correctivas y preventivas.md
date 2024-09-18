@@ -4,11 +4,11 @@ tags:
   - seguridad/Contaminación-del-ambiente-laboral
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se puede corregir de las siguientes formas:
 
-#### Eliminación del riesgo: Sustitución
+## Eliminación del riesgo: Sustitución
 Sustitución total del [[Agente químico]] por otro menos peligroso.
 
 Por ejemplo:
@@ -16,16 +16,16 @@ Por ejemplo:
 * Procesos de soldadura de plomo a soldadura de estaño
 
 
-#### Modificación de preocesos/tecnología
+## Modificación de preocesos/tecnología
 * Producir procesos donde la extración sea local e incorporada
 * Automatización del proceso, con cabinas para trabajadores
 * Crear procesos cerrados
 
 
-#### Ventilación localizada
+## Ventilación localizada
 Esto vuelve al punto anterior donde se tiene que utilizar ventización para reducir el [[Riesgo]].
 
-### Complementariamente
+# Complementariamente
 Se puede usar elemento de protección persona (EPP). Condiciones:
 * Deben ser apropiados según sustancia
 * Debe estar certificado 

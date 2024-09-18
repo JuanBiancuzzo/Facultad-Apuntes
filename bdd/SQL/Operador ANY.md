@@ -4,11 +4,11 @@ tags:
   - bdd/SQL
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El operador `ANY` se usa con la [[Sentencia WHERE|sentencia WHERE]] para comparar un valor con varios valores que se obtiene en una subquery, si alguna de esas comparaciones devuelve true, toda la operación devuelve true
 
-#### Sintaxis
+## Sintaxis
 ---
 ```SQL
 SELECT nombre_columna(s)
@@ -21,7 +21,7 @@ WHERE nombre_columna operador ANY (
 ```
 
 Donde el operador tiene que ser uno de los siguientes ![[Sentencia WHERE#Operadores]]
-#### Ejemplo
+## Ejemplo
 ---
 ```SQL
 SELECT ProductName  

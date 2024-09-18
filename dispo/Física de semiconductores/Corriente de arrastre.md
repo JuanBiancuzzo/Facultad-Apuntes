@@ -4,7 +4,7 @@ tags:
   - dispo/Física-de-semiconductores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Partículas cargadas que tienen velocidad neta debido a la presencia de un [[Campo eléctrico]], es decir, una [[Corriente eléctrica|corriente eléctrica]]. La [[Corriente eléctrica#^densidad-de-corriente|densidad corriente]] arrastre es proporcional a
 * La [[Modelo de Drude]] de [[Carga eléctrica|portadores]] ($v_a$)

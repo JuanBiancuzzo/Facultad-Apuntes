@@ -4,7 +4,7 @@ tags:
   - redes/Capa-de-Transporte
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 A diferencia de [[Slow Start|slow start]], el valor de `cwnd` (Congestion window), por cada [[Round trip time|RTT]], [[Transmission Control Protocol|TCP]] adopta un enfoque más conservativo, y aumenta uno por cada ráfaga que se envía
 

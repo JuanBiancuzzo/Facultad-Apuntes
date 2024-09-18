@@ -4,7 +4,7 @@ tags:
   - intro/Circuitos-con-resistencias
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un divisor de tensión es un [[Circuito eléctrico|circuito]] que divide la [[Tensión|tensión]] de entrada en el circuito en otras dos diferentes y más pequeñas de salida, con [[Resistor|resistores]]
 

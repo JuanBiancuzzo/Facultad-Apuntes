@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-incendios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Este [[Modelo]] también conocido como el tetraedro del fuego
 
@@ -45,20 +45,20 @@ Este [[Modelo]] también conocido como el tetraedro del fuego
 \end{document}
 ```
 
-#### Tiene 4 componentes:
+## Tiene 4 componentes:
 ---
-##### Combustible
+### Combustible
 ![[Combustible#Definición]]
 
-##### Comburente
+### Comburente
 ![[Comburente#Definición]]
 
-##### Temperatura
+### Temperatura
 ![[Temperatura#Definición]]
 
-##### Reacción en cadena
+### Reacción en cadena
 ![[Reacción en cadena#Definición]]
 
-#### Aclaración
+## Aclaración
 ---
 Existe un triangulo del fuego, donde no se incluye la reacción en cadena, pero no es un buen modelo.

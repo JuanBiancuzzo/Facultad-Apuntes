@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado un [[Grafo|grafo]] $G = \big( V(G),~E(G),~\Psi_G \big)$, se define la [[analisis 2/Nomenclatura/Función.md|función]] de incidencia $$ \Psi_G: ~ E(G) \to \mathcal{P}\big( V(G) \big) $$
 Para definir $\Psi_G$ utilizamos alguna de las siguientes notaciones $$ \begin{align} 

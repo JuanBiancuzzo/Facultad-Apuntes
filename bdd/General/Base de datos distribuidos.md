@@ -4,11 +4,11 @@ tags:
   - bdd/General
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 
 
-#### Características
+## Características
 ---
 Tenemos las siguientes características de esta [[Base de datos|base de datos]], donde ACID es un acrónimo en inglés de Atomicity, Consistency, Isolation and Durability
 

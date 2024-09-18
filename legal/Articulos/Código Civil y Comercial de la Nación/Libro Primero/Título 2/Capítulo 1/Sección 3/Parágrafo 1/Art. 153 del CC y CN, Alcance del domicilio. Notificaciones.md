@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Se tienen por válidas y vinculantes para la [[Persona jurídica|persona jurídica]] todas las notificaciones efectuadas en la sede inscripta."
 
-### Interpretación
+# Interpretación
 ---

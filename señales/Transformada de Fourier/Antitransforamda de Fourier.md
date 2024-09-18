@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - analisis-3/Transformada-de-Fourier
 ---
-### Definición
+# Definición
 ---
 La anti-transformada de Fourier $\hat{x}(t) = \mathcal{F}^{-1} \Set{X(j\omega)}$ se define como $$ \hat{x}(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} X(j\omega) \exp\left( j \omega t \right) ~ d\omega, ~ t \in \mathbb{R} $$
 Siempre y cuando sea [[Seccionalmente continua|seccionalmente continua]] y [[Absolutamente integrable|absolutamente integrable]] en $\mathbb{R}$

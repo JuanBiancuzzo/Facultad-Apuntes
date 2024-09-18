@@ -7,7 +7,7 @@ tags:
 aliases:
   - Operador de Laplace
 ---
-### Definición
+# Definición
 ---
 Para cada entero positivo $n$ y cada [[Conjunto compacto|conjunto compacto]] $K \subset \mathbb{R}^n$, sea $C^2(K, \mathbb R)$ el espacio de las funciones $u : K \to \mathbb R$ de clase $C^2$ en $K'$ y [[Función continua|continuas]] en $K$. Se trata de un [[Espacio vectorial|espacio vectorial]] real de [[Dimensión|dimensión]] infinita. Ahora, consideremos el espacio $C^0(K', \mathbb R)$ de las funciones continuas $K' \to \mathbb R$, otro espacio vectorial real de dimensión infinita.
 
@@ -15,7 +15,7 @@ La [[Transformación lineal|transformación lineal]] $\Delta : C^2(K, \mathbb R)
 Esta [[Transformación|transformación]] lineal se denomina operador de Laplace
 
 También se puede ver como es el operador que resulta de tomar la [[Divergencia|divergencia]] del [[Gradiente|gradiente]]. Opera sobre un campo escalar $$ \Delta f = \nabla^2 f = div ~ \Big[ grad ~ f \Big] = \nabla ~ \Big[ \nabla ~ f \Big] $$
-#### Sistemas de coordenadas
+## Sistemas de coordenadas
 ---
 A partir de un [[Sistema cartesiano|sistema de coordenadas cartesiano]] se llega de la siguiente forma
 

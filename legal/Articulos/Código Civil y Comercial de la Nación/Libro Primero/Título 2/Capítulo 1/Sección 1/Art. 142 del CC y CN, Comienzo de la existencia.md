@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La existencia de la [[Art. 148 del CC y CN, Personas jurídicas privadas|persona jurídica privada]] comienza desde su constitución. No necesita autorización legal para funcionar, excepto disposición legal en contrario. En los casos en que se requiere autorización estatal, la persona jurídica no puede funcionar antes de obtenerla."
 
-### Interpretación
+# Interpretación
 ---

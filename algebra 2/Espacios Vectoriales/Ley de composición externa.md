@@ -6,11 +6,11 @@ tags:
 aliases:
   - Producto por escalar
 ---
-### Definición
+# Definición
 ---
 Tambien conocida como producto por escalar
 
-#### Características de la composición externa
+## Características de la composición externa
 ---
 1. El producto por escalar $\cdot$ es una ley de composición externa, es decir $\alpha\cdot v \in\mathbb{V}$ para todo $\alpha\in\mathbb{V}$ y para todo $v\in\mathbb{V}$
 2. El producto por escalar $\cdot$ es [[Distributividad|distributivo]] respecto al escalar ![[Distributividad#^787267]]

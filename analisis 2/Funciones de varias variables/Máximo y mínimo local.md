@@ -5,7 +5,7 @@ tags:
   - analisis-2/Funciones-de-varias-variables
   - analisis-2/Propiedades-de-funciones
 ---
-### Definición
+# Definición
 ---
 Dada $f : D \subset \mathbb{R}^n \to \mathbb{R}$ y el punto $A$ es un [[Punto interno|punto interior]] a su [[Dominio de una función|dominio]], se dice que 
 

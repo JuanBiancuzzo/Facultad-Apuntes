@@ -4,6 +4,6 @@ tags:
   - analisis-3/Transformaciones-conformes
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son aquellas [[Transformación|transformaciones]] que conservan tanto ángulos como orientaciones.

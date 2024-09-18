@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-incendios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Propiedad que se corresponde con el tiempo expresado en minutos durante un ensayo de incendio, después del cual el elemento de contrucción ensayado pierde su capacidad resistente o funcional. Medido por la [[Carga de fuego]].
 

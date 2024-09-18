@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 2/Capítulo 4/Cap�
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La nulidad del contrato por ilicitud o prohibición de su objeto tendrá las consecuencias asignadas en los [[Art. 41 de la ley de Contrato de Trabajo, Nulidad del contrato de objeto ilícito|artículos 41]] y [[Art. 42 de la ley de Contrato de Trabajo, Nulidad del contrato de objeto prohibido. Inoponibilidad al trabajador|42]] de esta ley y deberá ser declarada por los jueces, aun sin mediar petición de parte. La autoridad administrativa, en los límites de su competencia, mandará cesar los actos que lleven aparejados tales vicios."
 
-### Interpretación
+# Interpretación
 ---

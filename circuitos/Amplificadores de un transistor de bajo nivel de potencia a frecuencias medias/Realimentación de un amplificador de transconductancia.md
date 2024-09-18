@@ -4,7 +4,7 @@ tags:
   - circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Este [[Amplificador de transconductancia|amplificador de transconductancia]], al realimentarlo, podemos pensarlo como muestreo de [[Corriente eléctrica|corriente]] y suma de [[Tensión|tensión]]. Esto lo podemos ver con el siguiente modelo
 
@@ -109,7 +109,7 @@ Podemos ver la realimentación como $$ \begin{matrix}
 	\implies v_i = v_s - v_f = v_s - k ~ i_0 = v_s - k ~ G_{mo} ~ v_i \\
 	\boxed{ v_i ~ (1 + k ~ G_{mo}) = v_s } 
 \end{matrix} $$
-#### Modelo ideal amplificador
+## Modelo ideal amplificador
 ---
 $R_i \to \infty$
 * Para que toda la corriente $i_i$ pase por la resistencia interna del amplificador
@@ -117,7 +117,7 @@ $R_i \to \infty$
  $R_o \to \infty$ 
  * Para que la corriente generada por la fuente no afecte la corriente $i_o$
 
-#### Modelo ideal realimentación
+## Modelo ideal realimentación
 ---
 $R_{ri} \to 0$
 * Para generar baja impedancia al paso de la corriente $i_o$

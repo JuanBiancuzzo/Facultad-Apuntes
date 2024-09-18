@@ -4,7 +4,7 @@ tags:
   - aninfo/Descubrimiento-de-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Hay múltiples factores que pueden impedir o complicar el descubrimiento de [[Requisito|requisitos]] como
 * Nuestro conocimiento del dominio
@@ -16,54 +16,54 @@ Hay múltiples factores que pueden impedir o complicar el descubrimiento de [[Re
 
 Por lo que hay que concentrarse en estudiar el dominio del problema, y utilizar correctamente las siguientes técnicas para conseguir la mayor cantidad de información relevante para entender el que se tiene que crear mediante los requisitos
 
-### Métodos
+# Métodos
 ---
 
-#### Entrevistas
+## Entrevistas
 ---
 ![[Entrevista#Definición]]
 
-#### Observación
+## Observación
 ---
 ![[Observación#Definición]]
 
-#### Talleres
+## Talleres
 ---
 ![[Taller#Definición]]
 
-#### Encuestas
+## Encuestas
 ---
 ![[Encuesta#Definición]]
 
-#### Grupos de discusión
+## Grupos de discusión
 ---
 ![[Focus group#Definición]]
 
-#### Análisis de documentos
+## Análisis de documentos
 ---
 ![[Análisis de documentos#Definición]]
 
-#### Análisis de reglas de negocio
+## Análisis de reglas de negocio
 ---
 ![[Análisis de reglas de negocio#Definición]]
 
-#### Análisis de causa raíz
+## Análisis de causa raíz
 ---
 ![[Análisis de causa raíz#Definición]]
 
-#### Brainstorming
+## Brainstorming
 ---
 ![[Brainstorming#Definición]]
 
-#### Prototipado
+## Prototipado
 ---
 ![[Prototipado#Definición]]
 
-#### Open space
+## Open space
 ---
 ![[Open space#Definición]]
 
-#### Otras ténicas
+## Otras ténicas
 ---
 * [[Modelado de metas y objetivos]]
 * [[Mapa del ecosistema]]
@@ -73,7 +73,7 @@ Por lo que hay que concentrarse en estudiar el dominio del problema, y utilizar 
 * [[Diagramas de impacto]]
 * [[Historia de usuario|Diagrama de historia de usuario]]
 
-#### Recomendaciones
+## Recomendaciones
 ---
 * Tener tacto con aspectos políticos y organizacionales
 * Identificar e involucrar a los [[Interesados en el producto|interesados]]

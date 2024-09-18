@@ -4,7 +4,7 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es el conjunto o sistema de reglas que señala a la población de un [[Estado|estado]] formas de comportamiento. Empleamos el término como sinónimo de [[Ordenamiento jurídico|ordenamiento jurídico]] o conjunto de normas jurídicas.
 

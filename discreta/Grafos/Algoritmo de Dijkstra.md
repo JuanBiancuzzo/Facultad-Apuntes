@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - redes/Capa-de-Red
 ---
-### Definición
+# Definición
 ---
 El [[Algoritmo|algoritmo]] de **Dijkstra** busca, para un vértice $v$, el [[Camino|camino]] de [[Longitud de un camino|longitud]] mínima hacia el resto de vértices del [[Grafo|grafo]]. Para hacerlo, requiere los siguientes elementos
 * Un vector de vértices visitados del grafo $V$
@@ -18,7 +18,7 @@ El algoritmo es el siguiente
 3. Repito hasta haber visitado todos los vértices
 4. Puedo calcular la distancia del nodo inicial a todos los nodos a partir de reconstruir los caminos de forma inversa. Tomo un nodo, voy a su nodo marcado como anterior, repito hasta alcanzar el nodo inicial. Luego, puedo reconstruir el camino del nodo inicial al nodo deseado
 
-#### Implementación
+## Implementación
 ---
 ```
 function Dijkstra(Graph, source):

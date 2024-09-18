@@ -9,7 +9,7 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
 ```
-### Interpretación
+# Interpretación
 ---
 El dominio es el [[Libro 4, Derechos Reales|derecho real]] en virtud del cual una cosa se encuentra sometida a la voluntad y a la acción de una [[Persona humana|persona]]
 
@@ -17,7 +17,7 @@ El dominio puede ser perfecto o imperfecto
 * [[Art. 1941 del CC y CN, Dominio perfecto#Artículo|Dominio perfecto]]
 * [[Art. 1946 del CC y CN, Dominio imperfecto#Artículo|Dominio imperfecto]]
 
-#### Caracteres del dominio
+## Caracteres del dominio
 ---
 Estas caracteres del dominio están dado en le [[legal/Articulos/Código Civil y Comercial de la Nación/Libro Cuarto/Título 3/Capítulo 1/Capítulo 1, Disposiciones generales|Capítulo 1 de este título]] 
 * [[Art. 1942 del CC y CN, Perpetuidad#Artículo|Perpetuidad]]
@@ -25,7 +25,7 @@ Estas caracteres del dominio están dado en le [[legal/Articulos/Código Civil y
 * [[Art. 1944 del CC y CN, Facultad de exclusión#Artículo|Facultad de exclusión]]
 * [[Art. 1945 del CC y CN, Extensión#Artículo|Extensión]]
 
-#### Modos especiales de adquisición del dominio
+## Modos especiales de adquisición del dominio
 ---
 1. Apropiación
 2. Adquisición de un tesoro
@@ -37,16 +37,16 @@ Estas caracteres del dominio están dado en le [[legal/Articulos/Código Civil y
 	* Construcción, siembra y plantación
 	* Invasión de inmueble colindante
 
-#### Límites al dominio
+## Límites al dominio
 ---
 ![[Capítulo 4, Límites al dominio#Artículos]]
 
-##### Expropiación
+### Expropiación
 ---
 Esta previsto en la [[Constitución de la Nación|Constitución Nacional]] en el [[Art. 17 de la Constitución Nacional|art. 17]] ![[Art. 17 de la Constitución Nacional#Artículo]]
 ![[Art. 17 de la Constitución Nacional#Interpretación]]
 
-### Artículos
+# Artículos
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/legal/mostrarArticulos", { paginaActual: dv.current() });

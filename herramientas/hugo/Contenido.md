@@ -10,7 +10,7 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
 ```
-### Definición
+# Definición
 ---
 El contenido en [[Herramientas/Hugo/Índice|Índice]] se puede separar en 2 tipos de contenidos
 * [[Single Page|Single Page]]
@@ -19,7 +19,7 @@ El contenido en [[Herramientas/Hugo/Índice|Índice]] se puede separar en 2 tipo
 También hay que notar que todo el contenido tiene [[Frontmatter|frontmatter o metadata]]
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

@@ -29,7 +29,7 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 4/Capítulo 4/Cap�
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La prohibición que resulta del [[Art. 131 de la ley de Contrato de Trabajo, Retenciones. Deducciones y compensaciones|artículo 131]] de esta ley no se hará efectiva cuando la deducción, retención o compensación responda a alguno de los siguientes conceptos:
 
@@ -43,7 +43,7 @@ tags:
  h. Reintegro del precio de compra de mercaderías adquiridas en el establecimiento de propiedad del empleador, cuando fueran exclusivamente de las que se fabrican o producen en él o de las propias del género que constituye el giro de su comercio y que se expenden en el mismo.
  i. Reintegro del precio de compra de vivienda del que sea acreedor el empleador, según planes aprobados por la autoridad competente."
 
-### Interpretación
+# Interpretación
 ---
 
 

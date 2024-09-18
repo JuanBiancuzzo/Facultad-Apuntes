@@ -4,6 +4,6 @@ tags:
   - orga/NLP/1
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es el proceso de convertir un texto en sus [[Token|tokens]] representativos

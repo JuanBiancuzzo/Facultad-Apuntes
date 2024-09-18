@@ -6,7 +6,7 @@ tags:
 aliases:
   - Grafo bipartito
 ---
-### Definición
+# Definición
 ---
 Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo|grafo]], se define $G$ como $k$-partito si $V(G)$ es una [[Partición|partición]], es decir $$ V(G) = \bigcup_{i = 1}^{k} V_i ~~~~ \bigcap_{i = 1}^{k} V_i = \emptyset $$ tal que si $uv \in E(G)$, entonces $u$, $v$ no pertenecen ambos al mismo $V_i$
 

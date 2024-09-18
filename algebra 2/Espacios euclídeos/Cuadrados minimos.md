@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-euclídeos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Teniendo la [[Transformación lineal]] $T \in \mathcal{L}(\mathbb{V}, \mathbb{W})$, existe la ecuacion $T(v_0) = w_0$ cuando $w_0 \in Im(T)$ ([[Imagen de una transformación lineal]])
 

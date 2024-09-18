@@ -4,7 +4,7 @@ tags:
   - legal/Derechos-humanos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta declaración fue elaborada en el contexto de un órgano que si tiene previsto en la carta que estaba en el [[Art. 68 de la carta de las Naciones Unidas|artículo 68]] que obligaba al consejo económico y social a crear una comisión de [[Derecho humano|derechos humanos]]
 

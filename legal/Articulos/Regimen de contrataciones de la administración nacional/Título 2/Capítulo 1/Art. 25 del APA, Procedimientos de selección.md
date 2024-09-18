@@ -56,7 +56,7 @@ previo: "[[legal/Articulos/Regimen de contrataciones de la administración nacio
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los procedimientos de selección serán:
 
@@ -84,5 +84,5 @@ En las contrataciones directas en las que corresponda efectuar invitaciones, de 
 
 En los supuestos de contratación previstos en los apartados 2 y 8 del presente inciso, las Universidades Nacionales tendrán el carácter de consultoras preferenciales."
 
-### Interpretación
+# Interpretación
 ---

@@ -6,12 +6,12 @@ tags:
   - señales/Transformadas-de-Laplace-y-Z
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea una [[Señal|señal]] $x(n)$. Definiremos la ROC de la [[Transformada Z|transformada Z]] $x(n) \xleftrightarrow{~~\mathcal{Z}} X(z)$ como $$ ROC\Set{X(z)} = \Set{ z = r ~ e^{j\Omega} \in \mathbb{C} : \sum_{k = -\infty}^{\infty} |x(k)| ~ r^{-k} < \infty } $$
 Notar que la ROC de la transformada Z de una señal $x(n)$ esta definida donde $x(n) ~ r^{-n}$ es [[analisis 3/Series/Criterios de convergencia|absolutamente sumable]], lo que implica que la [[Transformada de Fourier|transformada de Fourier]] de $x(n) ~ r^{-n}$ está bien definida
 
-#### Propiedades
+## Propiedades
 ---
 Dado que la ROC es muy importante en la especificación de la transformada Z de una señal temporal, exploraremos algunas conexiones entre las características de la señal y la correspondiente ROC
 
@@ -29,6 +29,6 @@ Dado que la ROC es muy importante en la especificación de la transformada Z de 
    
 7. Si $x(n)$ es tal que su transformada Z es racional, su ROC está limitada por sus polos. Además ningún polo está contenido en la ROC
 
-#### Propiedades de la transformada Z
+## Propiedades de la transformada Z
 ---
 ![[Transformada Z#Propiedades]]

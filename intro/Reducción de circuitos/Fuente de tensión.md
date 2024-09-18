@@ -7,11 +7,11 @@ tags:
 aliases:
   - Generador de tensión
 ---
-### Definición
+# Definición
 ---
 Es aquella que genera una [[Tensión|tensión]] entre sus terminales constante e independiente de la carga.
 
-##### Simbología
+### Simbología
 ---
 
 ```tikz

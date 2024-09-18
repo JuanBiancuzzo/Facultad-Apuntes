@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-Vectoriales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un conjunto de vectores es una *base* de $S$ si
 1. $S=gen\{v_1, v_2, \cdots, v_r\}$

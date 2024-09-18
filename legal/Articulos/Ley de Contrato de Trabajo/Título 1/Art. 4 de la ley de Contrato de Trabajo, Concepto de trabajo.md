@@ -13,11 +13,11 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 1/Título 1, Dispo
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Constituye trabajo, a los fines de esta ley, toda actividad lícita que se preste en favor de quien tiene la facultad de dirigirla, mediante una remuneración.
 
 El [[Art. 21 de la ley de Contrato de Trabajo, Contrato de trabajo|contrato de trabajo]] tiene como principal objeto la actividad productiva y creadora del hombre en sí. Sólo después ha de entenderse que media entre las partes una relación de intercambio y un fin económico en cuanto se disciplina por esta [[Ley de Contrato de Trabajo|ley]]."
 
-### Interpretación
+# Interpretación
 ---

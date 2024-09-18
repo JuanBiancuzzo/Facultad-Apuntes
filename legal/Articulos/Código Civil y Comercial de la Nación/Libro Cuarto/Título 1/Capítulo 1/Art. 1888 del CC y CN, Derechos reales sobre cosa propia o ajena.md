@@ -10,13 +10,13 @@ previo: "[[Capítulo 1, Principios comunes|Capítulo 1, Principios comunes]]"
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Carga o gravamen real. Son derechos reales sobre cosa total o parcialmente propia: el dominio, el condominio, la propiedad horizontal, los conjuntos inmobiliarios, el tiempo compartido, el cementerio privado y la superficie si existe propiedad superficiaria. Los restantes derechos reales recaen sobre cosa ajena.
 
 Con relación al dueño de la cosa, los derechos reales sobre cosa ajena constituyen cargas o gravámenes reales. Las cosas se presumen sin gravamen, excepto prueba en contrario. Toda duda sobre la existencia de un gravamen real, su extensión o el modo de ejercicio, se interpreta a favor del titular del bien gravado."
 
-### Interpretación
+# Interpretación
 ---
 Son derechos reales sobre cosa total o parcialmente propia: 
 * El [[Título 3, Dominio|dominio]]

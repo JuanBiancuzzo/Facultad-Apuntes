@@ -6,7 +6,7 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la [[Norma jurídica|norma]] general establecida mediante la palabra escrita por el [[Poder Legislativo|órgano legislativo]] cumpliendo con las formas o procedimientos de creación estipulados constitucionalmente.
 
@@ -19,7 +19,7 @@ La ley, en cuanto resultado de la actividad del órgano legislativo puede ser en
 * En sentido estricto
 	* Es considerada como el instrumento que, siguiendo los procedimientos establecidos en la Constitución Nacional para su creación, tiene un contenido jurídico general
 
-#### Características
+## Características
 ---
 * La ley es norma general
 	* Aquella regulación genérica de la conducta que alcanza a un número indeterminado de destinatarios
@@ -30,24 +30,24 @@ La ley, en cuanto resultado de la actividad del órgano legislativo puede ser en
 * Es norma emanada de una autoridad con competencia específica
 	* Para crear [[Norma jurídica|normas jurídicas]] siguiendo procedimientos preestablecidos. Esto es producto de la principal autoridad normativa: el [[Poder Legislativo|Poder Legislativo Nacional]]
 
-#### Procedimiento de creación legal
+## Procedimiento de creación legal
 ---
 ![[Procedimiento de creación legal#Definición]]
 
-#### Comienzo de la obligatoriedad
+## Comienzo de la obligatoriedad
 ---
 Una ley es obligatoria cuando rige efectivamente los comportamientos en un momento determinado. Habitualmente con la obligatoriedad se alude a la [[Art. 5 del CC y CN, Vigencia|vigencia]]. La ley puede tener una vigencia determinada o indeterminada. Tiene vigencia determinada cuando establece el momento en que comenzará su obligatoriedad e indeterminada cuando no lo hace, dejando que el comienzo de su vigencia sea determinado conforme a otras normas generales ya existentes, como la del [[Art. 5 del CC y CN, Vigencia|art. 5 del CC y CN]] 
 ![[Art. 5 del CC y CN, Vigencia#Artículo]]
 
 En síntesis, la publicidad es el último requisito que debe cumplirse para que el proyecto se convierta en ley efectivamente obligatoria. La misma ley puede determinar el día en que comenzará a tener vigencia, si no lo hace ésta se dará a los ocho días de su publicación oficial.
 
-#### Formas de invalidación
+## Formas de invalidación
 ---
 Una ley, así como puede ser de [[Art. 5 del CC y CN, Vigencia|vigencia]] temporal determinada o indeterminada con relación al comienzo de su obligatoriedad, también puede serlo con respecto al fin de su obligatoriedad. Lo usual es que las leyes se dicten para regir hacia un futuro más o menos largo, que tengan una vocación de permanencia, contribuyendo así a la seguridad jurídica al determinar la estabilidad del derecho. Pero, desde luego, la evolución social, la aparición de nuevas situaciones y necesidades, provoca en muchos casos la conveniencia de que las leyes deban ser dejadas sin efecto. 
 
 Ello puede ocurrir de dos modos: la derogación y la enervación, que veremos a continuación. 
 
-##### Derogación
+### Derogación
 ---
 Derogar una ley significa, en términos generales, dejarla sin efecto, total o parcialmente, por parte de la misma autoridad normativa que la creó, es decir, el órgano legislativo.
 
@@ -66,6 +66,6 @@ También se da la enervación por la declaración de inconstitucionalidad de la 
 
 Citamos, por último, el caso de enervación de la ley por parte de los particulares quienes, en sus convenciones contractuales, pueden dejar de lado (inobservar) las leyes supletorias en virtud del ya referido principio de libertad de contratación. Como lo señalamos en oportunidad de clasificar las normas jurídicas en supletorias o dispositivas y de orden público, las primeras son las que suplen la voluntad de las partes o, dicho de otro modo, sólo operan cuando las partes no han establecido algo distinto en sus cláusulas contractuales.
 
-#### Clasificación de las leyes
+## Clasificación de las leyes
 ---
 ![[Clasificación de las leyes#Definición]]

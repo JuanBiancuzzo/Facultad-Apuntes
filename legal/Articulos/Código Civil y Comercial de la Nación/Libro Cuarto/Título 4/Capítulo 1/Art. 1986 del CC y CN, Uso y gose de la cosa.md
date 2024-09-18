@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Cuarto/
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Cada condómino, conjunta o individualmente, puede usar y gozar de la cosa común sin alterar su destino. No puede deteriorarla en su propio interés u obstaculizar el ejercicio de iguales facultades por los restantes condóminos."
 
-### Interpretación
+# Interpretación
 ---

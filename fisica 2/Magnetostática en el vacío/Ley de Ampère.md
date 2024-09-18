@@ -12,7 +12,7 @@ aliases:
   - Densidad de corriente de desplazamiento#^corriente-desplazamiento
   - Corriente de desplazamiento#^corriente-desplazamiento
 ---
-### Definición
+# Definición
 ---
 Si planteamos un [[Campo de inducción magnética|campo magnético]] generado por un hilo infinito, entonces llegamos a que la circulación por una [[Curva|curva]] cerrada está únicamente relacionado con nuestro movimiento en el sentido de las [[Líneas de campo#Caso campo magnético|líneas de campo]] en $\hat{\varphi}$ 
 
@@ -22,7 +22,7 @@ Podemos extender esta ley para casos con más de una corriente, realizando la su
 La ley de Ampere no está definida para tramos de corrientes. Para este tipo de corrientes, es necesario resolverlo mediante la [[Ley de Biot y Savalt|ley de Biot y Savalt]]
 
 Esta ley también puede ser expresada en su forma diferencial $$ \nabla \times \vec{B} = \mu_0 ~ \vec{J} $$
-#### Forma generalizada
+## Forma generalizada
 ---
 Tomando el [[Material magnético#^campo-magnetico|campo magnético real]] se puede generalizar de la siguiente forma
 $$ \begin{align} 
@@ -30,7 +30,7 @@ $$ \begin{align}
     \nabla \times \vec{H} = \vec{J}_{real} \tag{diferencial}
 \end{align} $$
 
-#### Ley de Ampère-Maxwell
+## Ley de Ampère-Maxwell
 ---
 Maxwell introdujo un término adicional, que corresponde a las corrientes de desplazamiento. Esto se debe a que cuando trabajamos con corrientes que dependen del tiempo, la ley de ampere es inválida. El flujo de la corriente sobre una superficie cerrada no es nulo (como indica la ley original) $$ \begin{align} 
     \oint_C \vec{H} ~ d\vec{l} &= \iint_S \vec{J} ~ d\vec{A} + \frac{d}{dt} \iint_S \vec{D} ~ d\vec{A} \tag{integral} \\ 

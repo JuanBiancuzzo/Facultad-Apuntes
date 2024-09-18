@@ -8,9 +8,9 @@ previo: "[[Capítulo 1 - Disposiciones generales|Capítulo 1 - Disposiciones gen
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Lo entregado en cumplimiento de deberes [[Moral|morales]] o de conciencia es irrepetible."
 
-### Interpretación
+# Interpretación
 ---

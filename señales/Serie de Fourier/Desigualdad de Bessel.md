@@ -4,14 +4,14 @@ tags:
   - señales/Serie-de-Fourier
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sabemos que la [[Serie de Fourier|suma de Fourier]] esta definida como $$ \hat{x}_N(t) = \sum_{k = -N}^{N} a_k ~ \exp\left( jk\omega_0 t \right) $$
 Donde definimos $$ a_k = \langle x(t), \exp\left( jk\omega_0 t \right) \rangle $$
 Podemos hacer tender $N \to \infty$ para obtener  $$ \lVert x(t) \rVert^2 = \frac{1}{T} \int_0^T |x(t)|^2 ~ dt \ge \sum_{k = -\infty}^{\infty} |a_k|^2 $$ 
 Esto es lo que se denomina la desigualdad de Bessel 
 
-#### Desarrollo
+## Desarrollo
 ---
 Considerando una [[Señal|señal]] de [[Medida de una señal#Energía|energía]] finita $L_2([0, T))$, con [[Producto interno|producto interno]] $$ \langle f(t), g(t) \rangle = \frac{1}{T} \int_0^T f(t) ~ g^*(t) ~ dt $$ y [[Base ortonormal|base ortonormal]] dada por $$ \Set{ 
 	\cdots,

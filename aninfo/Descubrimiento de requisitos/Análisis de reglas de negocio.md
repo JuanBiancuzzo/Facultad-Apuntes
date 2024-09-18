@@ -4,7 +4,7 @@ tags:
   - aninfo/Descubrimiento-de-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Las políticas y reglas de negocio dirigen y restringen la estructura y la operación de la organización.
 

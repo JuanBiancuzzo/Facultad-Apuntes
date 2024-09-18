@@ -4,6 +4,6 @@ tags:
   - aninfo/Verificación-y-validación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una prueba que apunta a determinar si el producto que construimos es el correcto. Es una [[Validación]].

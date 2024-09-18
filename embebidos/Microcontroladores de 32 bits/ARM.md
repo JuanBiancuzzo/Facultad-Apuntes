@@ -4,7 +4,7 @@ tags:
   - embebidos/Microcontroladores-de-32-bits
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Arm ha desarrollado sus [[Procesador|microprocesadores]] como [[Arquitectura de una computadora|arquitectura]] IP ([[Propiedad Intelectual|propiedad intelectual]]) y los vende a cientos de fabricantes, quienes los utilizan para desarrollar sus propios [[Microcontrolador|microcontroladores]] con interfaces y memorias programables específicas. Pueden aprovechar la disponibilidad de una amplia gama de recursos compartidos, como herramientas de desarrollo, [[Lenguaje de programación|lenguajes]] y sus [[Compilador|compiladores]], [[Sistema operativo|sistemas operativos]], depuradores, etc.
 

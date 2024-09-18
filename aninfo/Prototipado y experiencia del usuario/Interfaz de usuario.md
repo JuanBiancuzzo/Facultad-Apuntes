@@ -6,11 +6,11 @@ tags:
   - aninfo/Prototipado-y-experiencia-del-usuario
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una conversación entre un usuario y el producto con el propósito de realizar tareas que le permitan cumplir sus objetivos. También lo podemos pensar como el medio con el que el usuario puede comunicarse con una máquina, un equipo o una computadora, y comprende todos los puntos de contacto entre el usuario y el equipo
 
-#### Tips al crear UI
+## Tips al crear UI
 ---
 * Utilizar Guidelines
 	* Estándar de cada uno

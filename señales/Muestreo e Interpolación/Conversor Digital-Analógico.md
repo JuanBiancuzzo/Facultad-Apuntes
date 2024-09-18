@@ -8,7 +8,7 @@ aliases:
   - Digital to analog converter
   - D/A converter
 ---
-### Definición
+# Definición
 ---
 Podemos [[Modelo|modelar]] un conversor D/A de la siguiente forma
 

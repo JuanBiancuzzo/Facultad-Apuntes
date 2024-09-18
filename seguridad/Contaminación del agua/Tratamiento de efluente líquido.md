@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-agua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Las [[Tratamiento de efluente#Operaciones y/o procesos|operaciones y/o procesos]] dependerán de las características del líquido efluente y los límites admisibles en los parámetros de vuelco.
 

@@ -4,7 +4,7 @@ tags:
   - redes/Capa-de-Red
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Podemos identificar cuatro componentes principales
 * [[Router input port|Input ports]] ![[Router input port#^676d04]]
@@ -15,10 +15,10 @@ Podemos identificar cuatro componentes principales
 
 Debido a la velocidad necesaria, los input ports, output ports, y el switching fabric suelen ser implementados por [[Hardware|hardware]], mientras que las funciones del [[Plano de control|plano de control]] suelen estar implementadas por [[Software|software]]
 
-#### Packet Scheduling
+## Packet Scheduling
 ---
 ![[Packet Scheduling#Definición]]
 
-#### Comparación con un link-layer switch
+## Comparación con un link-layer switch
 ---
 ![[Link-layer switches#Comparación con un router]]

@@ -4,7 +4,7 @@ tags:
  - redes/Capa-Física-Inalámbrica
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Consideremos un escenario simple para el caso de un usuario móvil residiendo en una [[Red|red]] extranjera
 

@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo simple|grafo simple]] [[Grafo conexo|conexo]], se define el grafo estrella de orden $n$ teniendo $n$ vértices con un único vértice de [[Grado de un vértice|grado]] $n - 1$ que se conecta con los $n - 1$ vértices restantes de grado $1$
 

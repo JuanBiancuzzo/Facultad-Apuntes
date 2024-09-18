@@ -8,7 +8,7 @@ tags:
   - nota/facultad
   - circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
 ---
-### Definición
+# Definición
 ---
 Este es un [[Amplificador de tensión|amplificador de tensión]], basado en un [[Transistor bipolar de juntura|TBJ]] 
 
@@ -94,7 +94,7 @@ Donde tomamos $R_B = R_{B1} // R_{B2}$, y $R_{CA} = R_C // R_L$ $$\begin{array}{
 
 ^daaa29
 
-#### Calculo de parámetros
+## Calculo de parámetros
 ---
 Suponiendo que $R_L \to \infty$ y no afecta al funcionamiento del [[Circuito eléctrico|circuito]].
 
@@ -172,23 +172,23 @@ Usando el [[Modelo de pequeña señal del transistor bipolar de juntura#Modelo p
 
 Esto se puede pensar como los [[Parámetros híbridos de un cuadripolo|parámetros de un cuadripolo]]
 
-##### Ganancia de tensión $A_{vo}$
+### Ganancia de tensión $A_{vo}$
 ---
 La [[Ganancia|ganancia]] de [[Tensión|tensión]] $A_{vo}$ se define sin carga conectada a la salida $$ A_{vo} = \frac{v_{out}}{v_{in}} \biggm|_{i_{out} = 0} $$
 Considerando $v_{in} = v_{be}$ por lo que la ganancia de tensión sin carga es $$ A_{vo} = -g_m (r_0 // R_C) $$ donde $g_m$ es la [[Modelo de pequeña señal del transistor bipolar de juntura#Transconductancia|transconductancia]], y $r_0$ es [[Modelo de pequeña señal del transistor bipolar de juntura#Conductancia de salida o de colector|resistencia de salida o de colector]]
 
 Conociendo $R_{out}$ se puede calcula la ganancia como $$ A_{vo} = -g_m ~ R_{out} $$
-##### Resistencia de entrada $R_{in}$
+### Resistencia de entrada $R_{in}$
 ---
 La [[Resistencia|resistencia]] de entrada $R_{in}$ se define $$ R_{in} = \frac{v_{in}}{i_{in}} $$
 La tensión $v_{in}$ es aplicada directamente en $v_{be}$, entonces se enciende el generador controlado, pero la corriente $g_m ~ v_{be}$ no influye en la [[Corriente eléctrica|corriente]] $i_{in}$, por lo que $$ R_{in} = (r_\pi // R_B) $$ donde $r_\pi$ es la [[Modelo de pequeña señal del transistor bipolar de juntura#Conductancia de entrada o de base|resistencia de entrada o de base]]
 
-##### Resistencia de salida $R_{out}$
+### Resistencia de salida $R_{out}$
 ---
 La [[Resistencia|resistencia]] de salida $R_{out}$ se define $$ R_{out} = \frac{v_{out}}{i_{out}} \biggm|_{v_{in} = 0} $$
 El generador controlado no se enciende, recordando que $v_{in} = v_{be}$, por lo que $$ R_{out} = (r_0 // R_C) $$ donde $r_0$ es la [[Modelo de pequeña señal del transistor bipolar de juntura#Conductancia de salida o de colector|resistencia de salida o de colector]]
 
-##### Ganancia de tensión $A_{vs}$
+### Ganancia de tensión $A_{vs}$
 ---
 Se puede definir la [[Ganancia|ganancia]] de [[Tensión|tensión]] del [[Amplificador de tensión|amplificador]] en funcionamiento. Esto implica tener tanto la fuente de señal ($v_s$ y $R_s$) como la carga conectadas ($R_L$) a la entrada y la salida $$ A_{vs} = \frac{v_{out}}{v_s} \biggm|_{i_{out} \ne 0} $$
 Analizando el modelo macroscópico del amplificador 
@@ -233,29 +233,29 @@ Analizando el modelo macroscópico del amplificador
 Tenemos que $$ v_{in} = v_s \frac{R_{in}}{R_{in} + R_s} \implies \frac{v_{in}}{v_s} = \frac{R_{in}}{R_{in} + R_s} $$
 Por lo tanto podemos calcular $$ v_{out} = A_{vo} v_{in} \frac{R_L}{R_{out} + R_L} \implies \frac{v_{out}}{v_{in}} = A_{vo} \frac{R_L}{R_{out} + R_L} $$
 Consiguiendo $$ A_{vs} = \frac{v_{out}}{v_s} = \frac{v_{out}}{v_{in}} \frac{v_{in}}{v_s} = A_{vo} \underbrace{\frac{R_{in}}{R_{in} + R_s}}_{\substack{\text{Atenuación a} \\ \text{la entrada}}} \underbrace{\frac{R_L}{R_{out} + R_L}}_{\substack{\text{Atenuación por} \\ \text{efecto de la} \\\\\\ \text{carga}}} $$
-#### Relación de compromiso de $A_{vo}$, $R_C$, $V_{CC}$ e $I_{CQ}$
+## Relación de compromiso de $A_{vo}$, $R_C$, $V_{CC}$ e $I_{CQ}$
 ---
 Examinemos la dependencia con la polarización $$ |A_{vo}| = g_m ~ (r_0 // R_C) \approx g_m R_C $$ ya que $r_0 \gg R_C$, y si reescribimos $|A_{vo}|$ de la siguiente forma $$ |A_{vo}| \approx g_m R_C = \frac{I_C}{V_{th}} \frac{V_{CC} - V_{out}}{I_C} = \frac{V_{CC} - V_{out}}{V_{th}} $$
 Para un $V_{out}$ fijo, la ganancia depende sólo de $V_{CC}$, mientras que se elija un $I_C$ y un $R_C$ para obtener el $V_{out}$ deseado.
 
-#### Máxima señal sin distorsión
+## Máxima señal sin distorsión
 ---
 La distorsión ocurre cuando el [[Transistor|transistor]] no está trabajando en el régimen que corresponde. La relación de la señal de salida con la señal de entrada no será [[Función lineal|lineal]]. Existirá una deformación de la señal de salida y entonces $$ v_{out} \ne A_{vo} v_{in} $$
 ![[Máxima señal sin distorsión.webp]]
 
-##### Distorsión por alinealidad
+### Distorsión por alinealidad
 ---
 ![[Distorsión por alinealidad en un Amplificador emisor común#Definición]]
 
-##### Distorsión por corte en un Amplificador emisor común
+### Distorsión por corte en un Amplificador emisor común
 ---
 ![[Distorsión por corte en un Amplificador emisor común#Definición]]
 
-##### Distorsión por saturación
+### Distorsión por saturación
 ---
 ![[Distorsión por saturación#Definición]]
 
-#### Eficiencia de conversión de potencia
+## Eficiencia de conversión de potencia
 ---
 $$ \eta = \frac{P_{OUT}}{P_{DC}} \cdot 100 $$
 Donde $P_{out}$ es la [[Potencia|potencia eficaz]] de la señal de salida $$ P_{OUT} = \frac{1}{2} \frac{\hat{v}^2_{out}}{R_L} $$

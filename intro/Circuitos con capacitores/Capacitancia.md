@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - fisica-2/Electrostática-en-conductores-y-dieléctricos
 ---
-### Definición
+# Definición
 ---
 La capacitancia ($C$) es la propiedad del [[Capacitor]] que representa la energía que este almacena.
 No depende ni de la carga ni de la tensión aplicada. Depende exclusivamente de la geometría y el material [[Dieléctrico|aislante]]
@@ -25,7 +25,7 @@ d &= \text{Distancia entre placas} \\
 \end{cases}
 $$
 
-#### Unidad
+## Unidad
 ---
 Se utiliza para deducir la unidad de la capacitancia:
 $$ [C] = \frac{Q}{\Delta V} = \text{Faraday} ~ (F) $$

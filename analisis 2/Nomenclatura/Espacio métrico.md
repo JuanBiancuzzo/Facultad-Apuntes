@@ -4,7 +4,7 @@ tags:
   - analisis-2/Nomenclatura
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se denomina espacio métrico a todo [[Espacio|espacio]] $A$ en el cual se ha definido una [[Función|función]] $d$ que establece la [[Distancia|distancia]] entre sus puntos, dicha función debe ser del tipo $d: A \times A \to \mathbb{R}$ y para todo $a, b, c \in A$ debe cumplir las siguientes propiedades
 

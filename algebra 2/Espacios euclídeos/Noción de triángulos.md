@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-euclídeos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $u, v, w \in \mathbb{V}$ (3 punto no alineados) en el $\mathbb{R}$-espacio euclídeo $(\mathbb{V}, \langle \cdot, \cdot \rangle)$, el siguiente es el triangulo de vertices $u, v, w$
 

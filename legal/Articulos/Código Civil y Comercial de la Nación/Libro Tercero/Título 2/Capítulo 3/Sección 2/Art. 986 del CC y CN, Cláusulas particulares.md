@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Las cláusulas particulares son aquellas que, negociadas individualmente, amplían, limitan, suprimen o interpretan una cláusula general. En caso de in-compatibilidad entre cláusulas generales y particulares, prevalecen estas últimas."
 
-### Interpretación
+# Interpretación
 ---
 En el marco de los contratos por adhesión, se llaman cláusulas particulares a aquellas que, negociadas individualmente, amplían, limitan, suprimen o interpretan una cláusula general. Añade la norma que, en caso de incompatibilidad entre cláusulas generales y particulares, prevalecen estas últimas. 
 

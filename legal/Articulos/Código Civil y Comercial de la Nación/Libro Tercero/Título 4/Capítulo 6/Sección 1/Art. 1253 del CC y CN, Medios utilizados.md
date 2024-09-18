@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "A falta de ajuste sobre el modo de hacer la obra, el contratista o prestador de los servicios elige libremente los medios de ejecución del contrato."
 
-### Interpretación
+# Interpretación
 ---

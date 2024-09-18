@@ -6,6 +6,6 @@ tags:
 aliases:
   - ROM
 ---
-### Definición
+# Definición
 ---
 El contenido de esta [[Memoria no volátil|memoria no volátil]] se define durante la fabricación del dispositivo. En caso de error, el chip queda efectivamente inutilizable

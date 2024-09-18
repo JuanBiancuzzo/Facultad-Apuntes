@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los contratos son unilaterales cuando una de las partes se obliga hacia la otra sin que ésta quede obligada. Son bilaterales cuando las partes se obligan recíprocamente la una hacia la otra. Las normas de los contratos bilaterales se aplican supletoriamente a los [[Contrato plurilateral|contratos plurilaterales]]."
 
-### Interpretación
+# Interpretación
 ---

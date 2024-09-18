@@ -6,7 +6,7 @@ tags:
   - redes/Capa-de-Red
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Si un [[Paquete|paquete]] completo tiene un tamaño mayor al [[Maximum transmission unit|MTU]], se deberá fragmentar. Los paquetes no son reensamblados en el camino, sino en el [[Host|host]] de destino. Si se pierde un fragmento, [[Internet Protocol Versión 4|IP]] descartará el paquete completo
 
@@ -21,7 +21,7 @@ Los headers de IP tienen tres campos utilizados para la fragmentación
 * Fragment offset
 	* Número de $13$ bits que determina la posición del primer bit del fragmento con relación al paquete completo. Debido a que tenemos $3$ bits menos, la posición real se obtiene tras multiplicar el offset por $2^3 = 8$. Debido a esto, el tamaño de payload de los fragmentos debe ser múltiplo de $8$
 
-#### Método de fragmentación
+## Método de fragmentación
 ---
 1. Si el tamaño del [[Paquete|datagrama]] $D$ (incluyendo el header) es mayor al MTU, debemos fragmentar
 2. Calculamos el tamaño del payload $P$ (sin header) como $$ P = D - \underbrace{\text{Header IP}}_{20} $$
@@ -31,7 +31,7 @@ Los headers de IP tienen tres campos utilizados para la fragmentación
 6. Construiremos un fragmento con payload size $FP$, datagram size $FP ~ + ~\text{Header IP}$, y fragment offset de $0$
 7. Repetiremos el procedimiento para el resto de fragmentos que se necesitan enviar. El tamaño de todos los fragmentos enviados será el mismo ($P$) excepto el último, que tendrá un tamaño menor (o igual). Los fragment offset incrementará linealmente a razón de $\frac{P}{8}$ por cada fragmento enviado. El último fragmento tendrá a bit de "More Fragments" en $0$. Lógicamente, todos los paquetes tendrán el bit de "Do Not Fragment" en $0$
 
-#### Ejemplo
+## Ejemplo
 ---
 
 

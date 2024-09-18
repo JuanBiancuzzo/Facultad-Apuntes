@@ -9,14 +9,14 @@ referencias:
 aliases:
   - Triángulo de potencia#Triángulo de potencia
 ---
-### Definición
+# Definición
 ---
 La [[Potencia|potencia]] compleja de un [[Circuito eléctrico|circuito eléctrico]] de [[Corriente alterna|corriente alterna]], identificada con la letra $S$, es la suma de la potencia que disipa dicho circuito conocida como [[Potencia|potencia activa]], que se designa con la letra $P$  y la potencia utilizada para la formación de los campos [[Campo eléctrico|eléctrico]] y [[Campo de inducción magnética|magnético]] de sus componentes, que fluctuará entre estos componentes y la fuente de [[Energía|energía]], conocida como [[Potencia reactiva|potencia reactiva]], que se designa con la letra $Q$
 
 Esto significa que la potencia aparente representa la potencia total desarrollada en un circuito con [[Impedancia|impedancia]] $\mathbb{Z}$. La relación entre todas las potencias es $$ S^2 = P^2 + Q^2 $$
 La fórmula de la potencia aparente es $$ S = I^* ~ V = \underbrace{P}_{I_{ef}^2 ~ R} + \underbrace{Q}_{I_{ef}^2 ~ X}$$ siendo $I$ la [[Corriente eléctrica|corriente]] expresada como [[Fasor|fasor]], $V$ la [[Tensión|tensión]] expresada como fasor, $I_{ef}$ es la [[Corriente eficaz|corriente eficaz]]. Esta potencia tiene unidades de $[\text{VA}]$
 
-#### Triángulo de potencia
+## Triángulo de potencia
 ---
 Podemos relacionar entonces las potencias en un triángulo 
 
@@ -73,7 +73,7 @@ Podemos relacionar entonces las potencias en un triángulo
 
 Siendo $\cos(\phi_z)$ al [[Factor de potencia|factor de potencia]] que tendrá el circuito
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

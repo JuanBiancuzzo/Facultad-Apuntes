@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Funciones-de-varias-variables
 ---
-### Definición
+# Definición
 ---
 Seguimos expandiendo de la idea [[Función implícita generalizada|función implícita generalizada]]
 
@@ -48,7 +48,7 @@ $$ \frac{\partial(F_1, F_2, \cdots, F_n)}{\partial(y_1, \cdots, y_{i-1}, x_j, y_
 
 Acá se aplica el [[Teorema Cauchy-Dini para sistema de ecuaciones escalares|Teorema de Cauchy-Dini para sistema de ecuaciones]]
 
-#### Explicación de la resolución
+## Explicación de la resolución
 ---
 Esto ultimo, se calcula usando el determinante del [[Jacobiana|Jacobiano]], y para verlo, vamos a usar un ejemplo
 

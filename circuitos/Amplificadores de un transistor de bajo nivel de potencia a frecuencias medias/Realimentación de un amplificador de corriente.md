@@ -4,7 +4,7 @@ tags:
   - circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Este [[Amplificador de corriente|amplificador de corriente]], al realimentarlo, podemos pensarlo como muestreo de [[Corriente eléctrica|corriente]] y suma de corriente. Esto lo podemos ver con el siguiente modelo
 
@@ -118,7 +118,7 @@ Podemos ver la realimentación como $$ \begin{matrix}
 	\boxed{ i_i ~ (1 + k ~ A_{io}) = i_s } 
 \end{matrix} $$
 
-#### Modelo ideal amplificador
+## Modelo ideal amplificador
 ---
 $R_i \to 0$
 * Para que no exista una [[Impedancia|impedancia]] ante el paso de $i_i$
@@ -126,7 +126,7 @@ $R_i \to 0$
  $R_o \to \infty$ 
  * Para generar una impedancia mayor y que $i_o$ sea afectada
 
-#### Modelo ideal realimentación
+## Modelo ideal realimentación
 ---
 $R_{ri} \to 0$
 * Para no generar una impedancia que modifique $i_o$ pasando por la resistencia de carga $R_L$

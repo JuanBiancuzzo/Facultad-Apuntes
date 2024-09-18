@@ -4,7 +4,7 @@ tags:
   - seguridad/Residuos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se puede clasificar de menos peligroso a más peligroso:
 * [[Residuo sólido urbano]] (RSU)

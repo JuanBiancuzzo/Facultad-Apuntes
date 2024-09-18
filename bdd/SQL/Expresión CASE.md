@@ -4,11 +4,11 @@ tags:
   - bdd/SQL
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta expresión recorre las condiciones y devuelve el valor de la primera condición que se verifique. Se puede pensar como una [[If else statement|sentencia if else]]
 
-#### Sintaxis
+## Sintaxis
 ---
 ```SQL
 SELECT nombre_columna,  

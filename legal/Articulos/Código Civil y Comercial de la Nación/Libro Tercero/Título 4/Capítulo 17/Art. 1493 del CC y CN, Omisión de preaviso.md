@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "En los casos del [[Art. 1492 del CC y CN, Preaviso|artículo 1492]], la omisión del preaviso, otorga a la otra parte derecho a la indemnización por las ganancias dejadas de percibir en el período."
 
-### Interpretación
+# Interpretación
 ---

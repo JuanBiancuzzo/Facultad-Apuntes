@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-euclídeos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $A \in \mathbb{K}^{m \times n}$ de rango $n$ ([[Rango de una matriz|rango de una matriz]]). Una descomposición QR de $A$ es una factorización 
 
@@ -45,7 +45,7 @@ con
 
 $$\alpha_{ij} = \frac{\langle a_j, w_i \rangle}{\lVert w_i \rVert^2} = \frac{w_i^T a_j}{\lVert w_i \rVert^2} \text{ para } 1 \le i < j $$
 
-#### Propiedades
+## Propiedades
 ---
  * $col(A) = col(Q)$
  * $R$ es una matriz inversible, por lo tanto $A R^{-1} = Q$

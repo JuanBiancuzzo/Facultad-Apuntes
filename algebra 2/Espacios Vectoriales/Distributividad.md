@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - discreta/Álgebra-proposicional
 ---
-### Definición
+# Definición
 ---
 Sea $A$ un [[Conjunto|conjunto]] dado en el que se han definido dos operaciones binarias $(\circ, \star)$. Entonces:
 
@@ -13,7 +13,7 @@ Sea $A$ un [[Conjunto|conjunto]] dado en el que se han definido dos operaciones 
 * La operación $\circ$ es distributiva por la derecha con respecto de la operación $\star$ si se cumple que dados tres elementos $a, b, c \in A$, entonces $$ (b \star c) \circ a = (b \circ a) \star (c \circ a) $$
 * La operación $\circ$ es distributiva respecto de la operación $\star$ si es distributiva por la derecha y distributiva por la izquierda.
 
-#### Casos específicos
+## Casos específicos
 ---
 Para el [[Álgebra de proposiciones|álgebra de proposiciones]] se entiende como 
 

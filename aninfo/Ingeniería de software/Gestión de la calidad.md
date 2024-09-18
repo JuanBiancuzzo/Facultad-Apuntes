@@ -4,6 +4,6 @@ tags:
   - aninfo/Ingeniería-de-software
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Gestionar actividades y recursos de una organización para lograr objetivos y evitar incumplimientos

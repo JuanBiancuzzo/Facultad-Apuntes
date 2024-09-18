@@ -9,7 +9,7 @@ aliases:
   - Potencia de un capacitor#Potencia instantánea
   - Energía de un capacitor#Energía almacenada
 ---
-### Definición
+# Definición
 ---
 Los capacitores están formados por dos [[Conductor|conductores]], de [[Carga eléctrica|cargas]] opuestas e igual módulo. Entre estos capacitores podemos medir un [[Campo eléctrico|campo eléctrico]], que nace en las cargas positivas, y muere en las cargas negativas. Este capacitor tiene la capacidad de almacenar [[Energía|energía]] (representada por la [[Capacitancia|capacitancia]])
 
@@ -54,7 +54,7 @@ Para cargar ambos conductores con cargas opuestas, utilizamos una pila. La pila 
 
 La carga final del capacitor resulta proporcional a la diferencia de potencial de la [[Pila|pila]], siendo $C$ la capacitancia del capacitor ![[Capacitancia#^47ee97]]
 
-##### Simbología
+### Simbología
 ---
 ```tikz
 \usepackage{circuitikz} 
@@ -89,7 +89,7 @@ La carga final del capacitor resulta proporcional a la diferencia de potencial d
 ```
 
 
-#### Relación con la tensión y la corriente
+## Relación con la tensión y la corriente
 ---
 Nos interesa conocer la relación entre la [[Tensión|tensión]] y la [[Corriente eléctrica|corriente]] del elemento, ya sea la forma [[Ecuación diferencial ordinaria|diferencial]], como la forma integral 
 
@@ -103,11 +103,11 @@ $$ \begin{CD}
 
 Notemos que la tensión sobre un capacitor debe ser continua
 
-#### Potencia instantánea
+## Potencia instantánea
 ---
 El calculo de la [[Potencia|potencia]] esta dada por $$ p = v~i = Cv\frac{dv}{dt} $$
 
-#### Energía almacenada
+## Energía almacenada
 ---
 El calculo de la [[Energía|energía]] almacenada esta dada por $$ U = \int_{-\infty}^t p(\tau) d\tau = \frac{1}{2} C v^2 $$
 El capacitor (ideal) no disipa energía, solo la almacena y la vuelve a entregar en otro momento

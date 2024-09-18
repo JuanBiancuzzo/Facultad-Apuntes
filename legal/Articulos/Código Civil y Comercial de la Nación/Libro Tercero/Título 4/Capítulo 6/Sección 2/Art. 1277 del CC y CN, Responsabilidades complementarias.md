@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El constructor, los subcontratistas y los profesionales que intervienen en una construcción están obligados a observar las normas administrativas y son responsables, incluso frente a terceros, de cualquier daño producido por el incumplimiento de tales disposiciones."
 
-### Interpretación
+# Interpretación
 ---

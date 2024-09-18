@@ -4,11 +4,11 @@ tags:
   - bdd/SQL
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta [[Sentencia de SQL|sentencia]] se usa para ordenar los [[Registro SQL|registros]] de forma ascendente o descendente. Como se pueden guardar números y strings, los string los ordena de forma alfabética
 
-#### Sintaxis
+## Sintaxis
 ---
 ```SQL 
 SELECT columna1, columna2, ...

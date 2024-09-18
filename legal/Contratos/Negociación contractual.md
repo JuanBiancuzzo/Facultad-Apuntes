@@ -4,7 +4,7 @@ tags:
   - legal/Contratos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En la vida diaria, los contratos se celebran sin una negociación previa. En efecto, la compra de mercadería en un supermercado o en un kiosco o en una librería o de un pasaje en cualquier medio de transporte o de una entrada para un espectáculo público, entre otros muchísimos ejemplos que podrían citarse, no requieren de una negociación previa. Basta conocer el precio y pagarlo. 
 

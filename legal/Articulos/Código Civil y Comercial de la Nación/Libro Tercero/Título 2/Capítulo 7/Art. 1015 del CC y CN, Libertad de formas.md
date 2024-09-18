@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Sólo son formales los contratos a los cuales la ley les impone una forma determinada."
 
-### Interpretación
+# Interpretación
 ---

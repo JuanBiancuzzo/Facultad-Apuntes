@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Toda persona puede renunciar a los derechos conferidos por la ley cuando la renuncia no está prohibida y sólo afecta intereses privados. No se admite la renuncia anticipada de las defensas que puedan hacerse valer en juicio."
 
-### Interpretación
+# Interpretación
 ---

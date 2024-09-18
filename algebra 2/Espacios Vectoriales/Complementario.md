@@ -7,11 +7,11 @@ tags:
 aliases:
   - Elemento inverso
 ---
-### Definición
+# Definición
 ---
 El complemento de un [[Conjunto|conjunto]] es otro conjunto que contiene todos los elementos que no están en el conjunto original
 
-#### Casos específicos
+## Casos específicos
 ---
 Para el [[Álgebra de proposiciones|álgebra de proposiciones]] se entiende como 
 

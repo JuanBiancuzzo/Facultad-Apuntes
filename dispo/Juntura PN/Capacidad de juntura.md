@@ -4,7 +4,7 @@ tags:
   - dispo/Juntura-PN
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Aplicando una variación de [[Tensión]] que se suma a la polarización de una [[Juntura PN con polarización]], vemos que cambia la [[Densidad volumétrica de carga eléctrica|densidad de carga]].
 

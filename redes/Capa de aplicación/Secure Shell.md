@@ -6,5 +6,5 @@ tags:
   - redes/Capa-de-aplicación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---

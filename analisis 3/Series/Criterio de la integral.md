@@ -4,7 +4,7 @@ tags:
   - analisis-3/Series
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dadas las hipotesis
 1) $f : [1, \infty] \to \mathbb{R}$ es [[Integrable]] en cada intervalo cerrado y acotado contenido en su dominio (esto ocurre, en particular, si $f$ es una [[Función continua]] o seccionalmente continua)

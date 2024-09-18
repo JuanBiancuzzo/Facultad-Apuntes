@@ -4,7 +4,7 @@ tags:
  - discreta/Álgebra-proposicional
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El juego $(+,~\cdot,~')$ es un juego completo en el [[Proposición|espacio de proposiciones]]. Podemos construir cualquier [[Función proposicional|función proposicional]] a partir de estos elementos
 

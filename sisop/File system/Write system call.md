@@ -4,7 +4,7 @@ tags:
   - sisop/File-system
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[System call|system call]] `write()` escribe hasta una determinada cantidad de bytes desde un buffer que comienza en `buf` al [[Archivo|archivo]] referenciado por el [[File descriptor|file descriptor]]
 

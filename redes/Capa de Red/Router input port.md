@@ -4,11 +4,11 @@ tags:
   - redes/Capa-de-Red
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Ejecuta varias funciones claves. Realiza la función de [[Capa física|capa física]] de terminación del enlace de entrada. También realiza funciones de [[Capa de Enlace|capa de enlace]] necesarias para operar con la capa de enlace del otro lado del enlace. Consulta la [[Forwarding table|forwarding table]], para determinar el link de salida del [[Paquete|paquete]] ^676d04
 
-#### Procesamiento
+## Procesamiento
 ---
 La tabla de envío es copiada del [[Procesador|procesador]] a los input ports a través de un bus destino, como un [[Peripheral Component Interconnect (PCI) bus|PCI bus]]. De esta forma, las decisiones se toman localmente en cada input port
 
@@ -26,6 +26,6 @@ Aunque el proceso de lookup es el más importante, existen otras acciones que de
 
 Estas deben ser verificados, los contadores utilizados para el manejo de red deben ser actualizados
 
-#### Delay
+## Delay
 ---
 Si el [[Switching fabric|switching fabric]] no es suficientemente rápido como para transferir todos los paquetes recibidos, puede ocurrir encolamiento en los input ports. Para el [[Crossbar switch|crossbar switch]], esto puede ocurrir cuando hay más de un paquete destino a un output switch, o cuando hay más de un paquete en un mismo input port. Este fenómeno se conoce como head-of-the-line blocking (HOL)

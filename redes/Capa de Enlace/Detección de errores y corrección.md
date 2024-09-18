@@ -8,7 +8,7 @@ aliases:
   - Error detection and correction
   - EDC
 ---
-### Definición
+# Definición
 ---
 Es un mecanismo para que el receptor de [[Paquete|paquetes]] pueda determinar si este fue recibido correctamente
 

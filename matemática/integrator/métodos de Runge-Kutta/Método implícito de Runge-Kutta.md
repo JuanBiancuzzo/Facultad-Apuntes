@@ -10,7 +10,7 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
 ```
-### Definición
+# Definición
 ---
 De la familia de [[Método de Runge-Kutta|métodos de Runge-Kutta]], se puede generalizar $$ y_{n + 1} = y_n + h ~ \sum_{i = 1}^{s} b_i, k_i $$ donde $$ k_i = f\left( x_n + c_i ~ h, y_n + h ~ \sum_{j = 1}^{s} a_{ij} k_j \right), ~ i = 1, \cdots, s $$
 
@@ -31,7 +31,7 @@ c_s    & a_{s1} & a_{s2} & \cdots & a_{ss} \\\hline
 
 Donde aparece los coeficientes $b_i^*$ por los [[Método adaptativo de Runge-Kutta|métodos adaptativos.]] 
 
-#### Ejemplo
+## Ejemplo
 ---
 El [[Método trapezoidal|método trapezoidal]] ![[Método trapezoidal#Definición]]
 tiene un tablero
@@ -56,7 +56,7 @@ $$ \begin{array}{c|c c }
 
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

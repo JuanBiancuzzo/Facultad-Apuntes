@@ -10,7 +10,7 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
 ```
-### Definición
+# Definición
 ---
 * `docker images` : Lista todas las [[Docker image|imágenes]]
 * `docker ps`: Lista todos los [[Docker container|contenedores]]
@@ -26,7 +26,7 @@ tags:
 
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

@@ -9,6 +9,6 @@ aliases:
   - RAM Magnetorresistiva
   - RAM magnética
 ---
-### Definición
+# Definición
 ---
 Como ocurre con [[Ferroelectric Random Access Memory|FRAM]], una tecnología prometedora que, hasta la fecha, ha perdido terreno frente al floreciente mercado de la [[Memoria flash|memoria flash]] y no se utiliza ni está disponible ampliamente

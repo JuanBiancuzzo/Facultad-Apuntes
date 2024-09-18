@@ -5,11 +5,11 @@ tags:
   - nota/facultad
   - fisica-2/Electrostática-en-conductores-y-dieléctricos
 ---
-### Definición
+# Definición
 ---
 [[Camino]] recorrido a través de las distintas ramas o componentes del [[Circuito eléctrico|circuito]] hasta completar un [[Lazo|lazo]] cerrado. No puede contener otros lazos
 
-##### Esquematización
+### Esquematización
 ---
 ```tikz
 \usepackage[

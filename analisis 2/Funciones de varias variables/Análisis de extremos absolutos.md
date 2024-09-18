@@ -5,7 +5,7 @@ tags:
   - analisis-2/Funciones-de-varias-variables
   - analisis-2/Propiedades-de-funciones
 ---
-### Definición
+# Definición
 ---
 Cuando una [[analisis 2/Nomenclatura/Función.md|función]] es continua en un [[Conjunto compacto|conjunto compacto]] $S$, produce [[Máximo|máximos]] y [[Mínimo|mínimos]] absolutos en dicho [[algebra 2/Espacios Vectoriales/Conjunto.md|conjunto]]
 

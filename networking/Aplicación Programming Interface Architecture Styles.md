@@ -12,36 +12,36 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
 ```
-### Definición
+# Definición
 ---
 Las [[Aplicación Programming Interface|API's]] son claves para el desarrollo de [[Software|software]]
 
-#### SOAP
+## SOAP
 ---
 
 
-#### RESTful
+## RESTful
 ---
 
 
-#### GraphQL
+## GraphQL
 ---
 
 
-#### gRPC
+## gRPC
 ---
 
 
-#### WebSocket
+## WebSocket
 ---
 
 
-#### Webhook
+## Webhook
 ---
 
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

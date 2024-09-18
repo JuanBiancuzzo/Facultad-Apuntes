@@ -4,7 +4,7 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Además de tener un [[Sistema jurídico|sistema jurídico]], que por serlo, ya tiene [[Supremacía normativa|supremacía normativa]], se tiene que tener las siguientes dos dimensiones
 * Dimensión liberal

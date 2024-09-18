@@ -7,7 +7,7 @@ tags:
   - redes/Capa-de-Transporte
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En este enfoque, de [[Control de congestión|control de congestión]], los [[Router|router]] proveen feedback explícito a los [[Host|hosts]] respecto al estado de congestión de la [[Red|red]]. Existen dos formas para un router de comunicarse con los hosts
 * Consiste en enviar notificaciones en la forma de un choke packet

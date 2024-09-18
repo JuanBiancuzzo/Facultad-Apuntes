@@ -6,7 +6,7 @@ tags:
 aliases:
   - MPLS
 ---
-### Definición
+# Definición
 ---
 El objetivo no era abandonar la infraestructura centrada en direcciones de destino en [[Internet Protocol Address|IP]], sino selectivamente etiquetar datagramas y permitir a los routers reenviarlos utilizando etiquetas de tamaño fijo siempre que sea posible
 

@@ -6,7 +6,7 @@ tags:
 aliases:
   - Ley de Newton
 ---
-### Definición
+# Definición
 ---
 La ley de Newton estable que 
 

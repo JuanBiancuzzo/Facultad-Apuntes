@@ -6,11 +6,11 @@ tags:
 referencias:
   - "187"
 ---
-### Definición
+# Definición
 ---
 En matemática, una involución es una [[Función|función]] que es su propia inversa $$ f: A \to A $$
 Esta función cumple la propiedad involutiva si <sup><a href="#ref-187" style="color: inherit; text-decoration: none;">[187]</a></sup>  $$ \forall x \in A: ~~ f(f(x)) = x $$
-#### Casos específicos
+## Casos específicos
 ---
 Para el [[Álgebra de proposiciones|álgebra de proposiciones]] se entiende como 
 
@@ -24,7 +24,7 @@ Para el [[Álgebra de Boole|álgebra de Boole]] $(B,~+,~\cdot,~',~0_B,~1_B)$ se 
 
 $$ \forall x \in B: ~~~~~ (x')' = x $$ ^cbabbb
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

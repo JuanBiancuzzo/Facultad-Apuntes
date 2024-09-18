@@ -6,7 +6,7 @@ tags:
   - aninfo/Desarrollo-de-software-y-modelos-de-proceso
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un conjunto estable de equipos [[Agile|ágiles]] que desarrolla y entrega soluciones en forma incremental utilizando una serie de iteraciones de duración fija dentro de un PI (program increment).
 

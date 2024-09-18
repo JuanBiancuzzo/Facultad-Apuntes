@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-aire
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Si una masa gaseosa se eleva adiabáticamente en la atmósfera desde la superficie terrestre sufre un enfriamiento de $1\degree C$ cada $100~m$ de elevación
 

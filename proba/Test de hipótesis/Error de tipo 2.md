@@ -4,7 +4,7 @@ tags:
   - proba/Test-de-hipótesis
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se comete cuando no se rechaza una [[Hipótesis nula]] que era falsa.
 

@@ -4,11 +4,11 @@ tags:
   - redes/Capa-Física-Inalámbrica
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un [[Capa física inalámbrica|host]] se conecta con otro host a través de un enlace de comunicación inalámbrico. Las distintas tecnologías difieren en diversos parámetros, como el área de cobertura o la tasa de transmisión ^4cfb60
 
-#### Características
+## Características
 ---
 Podemos encontrar numerosas diferencias importantes entre un [[Acceso a una red por cable|enlace]] y uno inalámbrico
 

@@ -4,7 +4,7 @@ tags:
   - analisis-3/Integrales-impropias
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 $f : I \to \mathbb{R}$ es seccionalmente continua sii en cada ntervalo cerrado y acotado $[a, ~b] \subseteq I$ existe una cantidad finita de puntos $x_1, x_2, \cdots, x_m$ donde $f$ es [[Función continua|discontinua]] y en estos puntos de discontinuidad es de [[Salto finito]]
 

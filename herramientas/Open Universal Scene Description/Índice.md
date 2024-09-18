@@ -9,19 +9,19 @@ tags:
 await dv.view("_scripts/dataview/mostrarSuperTema", { indice: dv.current() });
 await dv.view("_scripts/dataview/mostrarSubTemas", { indice: dv.current() });
 ```
-### ¿Qué se va a investigar?
+# ¿Qué se va a investigar?
 ---
 Vamos a investigar la forma de representar de forma estandarizada una escena en distintos softwares, basándonos en la documentación en [openUSD](https://openusd.org/release/index.html)
 
 
-#### Archivos
+## Archivos
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarArchivos", { indice: dv.current() });
 ```
 
 
-### Bibliografía
+# Bibliografía
 ---
 ```dataviewjs
 await dv.view('_scripts/dataview/biblioIndice', { indice: dv.current() });

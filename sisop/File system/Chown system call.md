@@ -6,7 +6,7 @@ tags:
 aliases:
   - Fchwn system call
 ---
-### Definición
+# Definición
 ---
 La [[System call|system call]] `chown()` cambia el id del propietario del [[Archivo|archivo]] y el grupo de un archivo
 

@@ -4,7 +4,7 @@ tags:
   - estructura/Flip-Flops
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El [[Circuito secuencial]] con ecuación característica $$ Q^{n + 1} = J \cdot \overline{Q^n} + \overline{K} \cdot Q^n $$
 y tiene el circuito
@@ -54,7 +54,7 @@ y tiene el circuito
 \end{document}
 ```
 
-#### Tabla de estados
+## Tabla de estados
 ---
 
 | $Q_t$ | $J_t$ | $K_t$ |     | $Q_{t+1}$ |

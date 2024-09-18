@@ -4,11 +4,11 @@ tags:
   - seguridad/Contaminación-del-ambiente-laboral
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Hay dos tipos bandas de control, bandas de severidad, bandas de exposición
 
-#### Bandas de control
+## Bandas de control
 ---
 * Es un método administrativo cualitativo que estratifica el [[Riesgo|riesgo]] potencial en niveles (bandas) y asigna controles a cada una de ellas
 * Se aplica a [[Nanomateriales|nanomateriales]] [[Insoluble|insoluble]]
@@ -77,7 +77,7 @@ Hay dos tipos bandas de control, bandas de severidad, bandas de exposición
 * RL3: Contenido
 * RL4: Requiere estudio especializado
 
-#### Bandas de severidad
+## Bandas de severidad
 ---
 * La puntuación por severidad se obtiene como un 70% del nanomaterial y un 30% del material parental
 * Puntuación
@@ -91,7 +91,7 @@ Hay dos tipos bandas de control, bandas de severidad, bandas de exposición
 	* Toxicidad dérmica (6 puntos)
 	* asmagenicidad (6 puntos)
 
-#### Bandas de exposición
+## Bandas de exposición
 ---
 * Puntuación
 	* Estimación de la cantidad de material utilizado (25 puntos)

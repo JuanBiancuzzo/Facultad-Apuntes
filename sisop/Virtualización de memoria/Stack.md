@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - embebidos/Memorias
 ---
-### Definición
+# Definición
 ---
 La [[Memoria|memoria]] de stack, su reserva y la liberación es manejada implícitamente por el [[Compilador|compilador]] en nombre del programador por esta razón a veces también se denomina memoria automática.
 

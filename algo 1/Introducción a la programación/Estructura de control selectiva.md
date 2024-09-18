@@ -4,7 +4,7 @@ tags:
   - algo-1/Introducción-a-la-programación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Estas [[Estructura de control|estructuras de control]] permiten alterar el flujo normal del [[Programa|programa]] según se cumpla o no una determinada condición. El resultado de la evaluación de esta expresión puede ser true o false
 

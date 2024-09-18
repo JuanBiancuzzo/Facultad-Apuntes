@@ -7,11 +7,11 @@ tags:
 aliases:
   - Arquitectura de un sistema embebido#Arquitectura
 ---
-### Definición
+# Definición
 ---
 [[Sistema]] electrónico de cómputo, compuesto por [[Hardware|hardware]] y [[Software|software]], que incluye procesamiento de datos para realizar un [[Función|función]] específica
 
-#### Arquitectura
+## Arquitectura
 ---
 Un sistema embebido es una [[Computadora|computadora]] especializada diseñada para una aplicación específica. Estos sistemas suelen diseñarse teniendo en mente un gran mercado para reducir el costo de producción, y están diseñados desde el nivel de hardware hasta el nivel de software. Se producen con o sin [[Sistema operativo|sistema operativo]] o [[Kernel|kernel]] de tiempo real y tienen la arquitectura
 

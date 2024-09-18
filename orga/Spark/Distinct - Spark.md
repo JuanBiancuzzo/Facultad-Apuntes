@@ -4,7 +4,7 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Transformación - Spark|transformación]] que nos permite eliminar registros duplicados de un [[Resilent distributed dataset - Spark|RDD]] donde todo el registro tiene que coincidir
 

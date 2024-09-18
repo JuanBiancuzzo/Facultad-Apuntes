@@ -6,7 +6,7 @@ tags:
 ---
 Dados las [[Serie|series]] $\alpha : \mathbb{N} \to \mathbb{R} : \bigg(\sum_{k = 0}^n \alpha_k \bigg)_{n = 1}^\infty$ y la serie $\beta : \mathbb{N} \to \mathbb{R} : \bigg(\sum_{k = 0}^n \beta_k \bigg)_{n = 1}^\infty$
 
-### Definición
+# Definición
 ---
 Dadas las hipotesis
 1) $\exists M \in \mathbb{R} : \forall n \in \mathbb{N} : \bigg| \sum_{k = 0}^n \alpha_k \bigg| \leq M$ 

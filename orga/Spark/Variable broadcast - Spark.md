@@ -4,7 +4,7 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Una variable broadcast nos permite mantener una variable solo lectura cacheada en cada una de las máquinas del [[Cluster]] en vez de enviar esa información con cada una de las tareas que se envian al cluster.
 

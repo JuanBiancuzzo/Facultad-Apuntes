@@ -4,7 +4,7 @@ tags:
   - aninfo/Diseño-de-software
   - nota/facultad
 ---
-### Creational Design Patterns
+# Creational Design Patterns
 ---
 * Abstract factory
 * Builder
@@ -12,7 +12,7 @@ tags:
 * Prototype
 * Singleton
 
-### Structural Design Patterns
+# Structural Design Patterns
 ---
 * Adapter
 * Bridge
@@ -21,7 +21,7 @@ tags:
 * Flyweight
 * Proxy
 
-### Behaviour Design Patterns
+# Behaviour Design Patterns
 ---
 * Chain of responsibility
 * Command

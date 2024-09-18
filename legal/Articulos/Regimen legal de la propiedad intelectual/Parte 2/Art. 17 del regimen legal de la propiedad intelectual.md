@@ -7,9 +7,9 @@ previo: "[[legal/Articulos/Regimen legal de la propiedad intelectual/Parte 2/Par
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "No se considera colaboración la mera pluralidad de autores, sino en el caso en que la propiedad no pueda dividirse sin alterar la naturaleza de la obra. En las composiciones musicales con palabras, la música y la letra se consideran como dos obras distintas."
 
-### Interpretación
+# Interpretación
 ---

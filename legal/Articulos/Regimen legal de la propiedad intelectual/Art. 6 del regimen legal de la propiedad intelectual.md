@@ -15,7 +15,7 @@ previo: "[[legal/Articulos/Regimen legal de la propiedad intelectual/Regimen leg
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los herederos o derechohabientes no podrán oponerse a que terceros reediten las obras del causante cuando dejen transcurrir más de diez años sin disponer su publicación.
 
@@ -23,5 +23,5 @@ Tampoco podrán oponerse los herederos o derechohabientes a que terceros traduzc
 
 En estos casos, si entre el tercero editor y los herederos o derechohabientes no hubiera acuerdo sobre las condiciones de impresión o la retribución pecuniaria, ambas serán fijadas por árbitros."
 
-### Interpretación
+# Interpretación
 ---

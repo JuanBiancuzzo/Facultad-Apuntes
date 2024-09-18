@@ -4,11 +4,11 @@ tags:
   - orga/Machine-learning
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un método de [[Codificación de variables categóricas|codificación]] de variables categóricas en variables numéricas, eso lo hace creando una columna nueva por cada categoría de esa variable a transformar. 
 
-##### Ejemplo
+### Ejemplo
 ---
 Tenemos la siguiente tabla:
 

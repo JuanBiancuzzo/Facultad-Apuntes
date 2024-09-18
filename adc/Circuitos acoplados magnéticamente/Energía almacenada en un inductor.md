@@ -6,7 +6,7 @@ tags:
 aliases:
   - Energía almacenada en una bobina
 ---
-### Definición
+# Definición
 ---
 Un [[Inductor|inductor]] [[Acoplación magnética|asilado magnéticamente]] esta dado por $$ w = \frac{1}{2} L i^2 $$ donde $L$ es la [[Autoinductancia|autoinductancia]] del inductor.
 

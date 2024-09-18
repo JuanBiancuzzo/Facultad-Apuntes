@@ -11,7 +11,7 @@ aliases:
   - Program Status Register#^PSR
   - PSR#^PSR
 ---
-### Definición
+# Definición
 ---
 Para implementar las operaciones, utiliza dos componentes
 * Look-Up Table
@@ -21,7 +21,7 @@ Para implementar las operaciones, utiliza dos componentes
 
 En la tabla no están todas las operaciones, la operación `subcc` por ejemplo se puede realizar con un complemento y un suma. De esto se encarga la unidad de control
 
-#### Flags
+## Flags
 ---
 La ALU calcula los flags de cada operación y los carga en el registro PSR en cada de ser necesario 
 ^PSR

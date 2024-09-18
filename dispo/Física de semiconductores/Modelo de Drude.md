@@ -8,7 +8,7 @@ aliases:
   - Velocidad de deriva
   - Velocidad de arrastre
 ---
-### Definición
+# Definición
 ---
 Si se aplica un [[Campo eléctrico|campo eléctrico]] $E$ sobre el [[Semiconductor|semiconductor]], se genera una [[Ley de Coulomb|fuerza neta]] sobre los [[Carga eléctrica#Cargas libres|portadores]] $$ F = \pm qE $$ arrastrando a los portadores, aumentando su velocidad
 

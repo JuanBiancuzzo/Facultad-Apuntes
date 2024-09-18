@@ -4,10 +4,10 @@ tags:
   - proba/Esperanza-condicional
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Definimos a la [[Variable aleatoria]] esperanza condicinal de $Y$ dado $X$, denotada por $E[Y|X]$, como la [[Función de regresión]] evaluado en $X$ de forma que $$ \varphi(X) = E[Y|X] $$
-#### Propiedades
+## Propiedades
 ---
 * La [[Esperanza]] de la "esperanza condicional de $Y$ dado $X$" es la [[Esperanza]] de $Y$ $$ E[E[Y|X]] = E[Y] $$
 * Sean $X$ e $Y$ variables aleatorias, $s$ y $r$ funciones medibles tales que las variables aleatorias $r(X) \cdot s(Y)$, $r(X)$ y $s(Y)$ tienen esperanza fininta. Entonces $$ E[r(X) \cdot s(Y)|X] = r(X) \cdot E[s(Y)|X] $$
@@ -15,7 +15,7 @@ Definimos a la [[Variable aleatoria]] esperanza condicinal de $Y$ dado $X$, deno
 * $X$ e $Y$ son [[Variables independientes]] si $E[Y|X] = E[Y]$
 * $E[r(X)|X] = r(X)$
 
-### Observación
+# Observación
 ---
 * La esperanza condicional siempre existe, y además es única con probabilidad $1$.
 * Es la función que mejor predice a $Y$.

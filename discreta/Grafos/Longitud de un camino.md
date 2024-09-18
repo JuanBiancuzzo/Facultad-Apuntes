@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La longitud de un [[Camino|camino]] es la cantidad de aristas que tiene la sucesión. El camino trivial tiene longitud $0$
 

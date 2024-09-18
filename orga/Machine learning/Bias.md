@@ -4,7 +4,7 @@ tags:
   - orga/Machine-learning
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Cuando aproxima la estimación al [[Validación del modelo|set de entrenamiento]]. Asociado al [[Error de entrenamiento]]. Esto esta muy relacionado a la [[Esperanza]] de la distribución de resultados del modelo.
 

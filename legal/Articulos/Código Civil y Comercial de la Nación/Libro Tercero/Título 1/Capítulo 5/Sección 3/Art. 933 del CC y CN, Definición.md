@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La novación es la extinción de una [[Art. 724 del CC y CN, Definición|obligación]] por la creación de otra nueva, destinada a reemplazarla."
 
-### Interpretación
+# Interpretación
 ---

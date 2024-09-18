@@ -4,7 +4,7 @@ tags:
   - legal/Derechos-humanos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 A pesar que no podamos decir si el [[Internet|internet]] constituye un [[Derecho humano|derecho humano]], podemos decir que la reducción de la brecha digital son un [[Derecho|derecho]] y consecuentemente una [[Art. 724 del CC y CN, Definición|obligación]] de los [[Estado|estados]]
 

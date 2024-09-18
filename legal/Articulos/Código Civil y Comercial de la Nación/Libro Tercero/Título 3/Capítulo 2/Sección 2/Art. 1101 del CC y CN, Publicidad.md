@@ -23,7 +23,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Está prohibida total publicidad que:
 
@@ -31,5 +31,5 @@ tags:
  b. efectúe comparaciones de bienes o servicios cuando sean de naturaleza tal que conduzcan a error al consumidor;
  c. sea abusiva, discriminatoria o induzca al consumidor a comportarse de forma perjudicial o peligrosa para su salud o seguridad."
 
-### Interpretación
+# Interpretación
 ---

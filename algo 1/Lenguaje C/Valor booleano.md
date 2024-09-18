@@ -5,11 +5,11 @@ tags:
   - nota/facultad
   - taller/Sintaxis
 ---
-### Definición
+# Definición
 ---
 Los valores booleanos siguen el [[Álgebra de Boole|algebra de boole]], para el caso donde existen dos valores, `true` o `false`
 
-#### Representación en C
+## Representación en C
 ---
 El valor booleano en si no tiene representación, simplemente se evalúa el valor siendo igual o distinto de $0$, donde si es cero se lo coincidiera como falso, y  distinto como verdadero
 
@@ -20,7 +20,7 @@ En el caso de usar las keyword especificas para `true` y `false`, se puede hacer
 bool opcion = true;
 ```
 
-#### Representación en Rust
+## Representación en Rust
 ---
 Los booleanos tienen únicamente dos valores `true` y `false`. Se representan con un único byte, y se usan de la siguiente forma:
 ``` rust

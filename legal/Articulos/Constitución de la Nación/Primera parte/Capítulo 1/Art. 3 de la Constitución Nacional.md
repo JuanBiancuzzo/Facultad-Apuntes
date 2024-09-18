@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Constitución de la Nación/Primera parte/Capítulo 1
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Las autoridades que ejercen el Gobierno federal, residen en la ciudad que se declare Capital de la República por una ley especial del Congreso, previa cesión hecha por una o más legislaturas provinciales, del territorio que haya de federalizarse."
 
-### Interpretación
+# Interpretación
 ---

@@ -6,7 +6,7 @@ tags:
 aliases:
   - Ganancia de corriente en MAD
 ---
-### Definición
+# Definición
 ---
 $$ \beta_F \triangleq \frac{I_C}{I_B} = \frac{D_n^B}{D_p^E} \cdot \frac{W_E}{W_B} \cdot \frac{N_{dE}}{N_{aB}} $$
 

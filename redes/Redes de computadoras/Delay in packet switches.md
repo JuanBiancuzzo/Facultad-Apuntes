@@ -8,7 +8,7 @@ tags:
   - redes/Redes-de-computadoras
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 A medida que un [[Paquete|paquete]] viaja de un nodo al siguiente, este sufre de diversos tipos de delays en cada nodo a lo largo del camino. Los más importantes son
 * Tiempo de procesamiento
@@ -19,11 +19,11 @@ A medida que un [[Paquete|paquete]] viaja de un nodo al siguiente, este sufre de
 El [[Round trip time|tiempo de ida y vuelta]] de un paquete, se puede calcular como $$ t_{total} = \sum_i t^i_{procesamiento} + t^i_{encolado} + t^i_{transmisión} + t^i_{propagación} $$
 Donde $i$ representa el i-esimo [[Router|router]] del camino hecho por el paquete. Esto también se denomina latencia
 
-#### Tiempo de procesamiento
+## Tiempo de procesamiento
 ---
 Es el tiempo requerido para examinar el header del [[Paquete|datagrama]] y determinar a donde enviarlo, aunque también puede incluir otros factores, como los chequeos de errores a nivel de bit
 
-#### Tiempo de encolado
+## Tiempo de encolado
 ---
 En la cola de paquetes experimenta el tiempo de encolado, mientras espera a ser transmitido al link. Este tiempo dependerá de la cantidad de paquetes que se encuentren delante de él por lo que este tiempo aumenta con la congestión de la [[Red|red]]
 
@@ -58,20 +58,20 @@ Definimos intensidad del tráfico a la relación entre el arribo y la transmisi�
 
 El encolamiento de paquetes puede ocurrir tanto en los [[Router input port|puertos de entrada]] como en los de [[Router output port|salida]], aunque el lugar y la extensión de la espera dependerá del tráfico
 
-##### Input delay
+### Input delay
 ---
 ![[Router input port#Delay]]
 
-##### Output delay
+### Output delay
 ---
 ![[Router output port#Delay]]
 
 
-#### Tiempo de transmisión
+## Tiempo de transmisión
 ---
 Es la cantidad de tiempo requerida para insertar los bits del paquete al [[Acceso a una red por cable|medio]]. Sea $L$ el largo de bits de un paquete, y $R$ la tasa de transmisión del link en bits/secs. Entonces se puede calcular el tiempo de transmisión será de $$ t_{trasmisión} = \frac{L}{R} $$
 
-#### Tiempo de propagación
+## Tiempo de propagación
 ---
 Una vez en el medio, el tiempo de propagación es el tiempo requerido para que un paquete llegue del inicio del link al final de este. Sea $d$ la distancia a recorrer y $v$ la velocidad de propagación, el tiempo de propagación será de $$ t_{propagación} = \frac{d}{v} $$
 

@@ -6,7 +6,7 @@ tags:
 aliases:
   - SDN Controller
 ---
-### Definición
+# Definición
 ---
 La funcionalidad de un controlador puede ser separada en tres capas
 

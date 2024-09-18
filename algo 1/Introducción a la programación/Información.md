@@ -4,19 +4,19 @@ tags:
   - algo-1/Introducción-a-la-programación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 
 
-#### Cuantificación
+## Cuantificación
 ---
 En términos de información las computadoras únicamente manejan pulsos eléctricos, por ende podría pensarse que la ausencia de electricidad se representa con un $0$. Por otro lado la presencia de electricidad se representa con un $1$.
 
-##### Bit
+### Bit
 ---
 A este par $0$/$1$ se lo denomina bit ó digito binario o BInary digiT. El bit representa la unidad de información más pequeña que una [[Computadora|computadora]] maneja. Un bit solo puede representar dos valores o estados
 
-##### Byte
+### Byte
 ---
 Brooks propuso en su artículo que una computadora accediera a la información en "pedazos" de $8$ bits. Estos pedazos fueron denominados bytes, con lo cual formalmente un Byte equivale a 8 bits
 

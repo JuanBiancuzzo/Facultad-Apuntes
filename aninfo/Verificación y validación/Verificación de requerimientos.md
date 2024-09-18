@@ -4,6 +4,6 @@ tags:
   - aninfo/Verificación-y-validación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 [[Verificación|Confirmación]] de que los [[Requisito|requerimientos]] han sido correctamente formulados

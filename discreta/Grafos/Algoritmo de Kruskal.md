@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El [[Algoritmo|algoritmo]] de Kruskal es, al igual que el [[Algoritmo de Prim|algoritmo de Prim]], busca generar un [[Árbol generador|árbol generador]] mínimo
 

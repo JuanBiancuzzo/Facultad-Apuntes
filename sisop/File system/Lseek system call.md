@@ -4,7 +4,7 @@ tags:
   - sisop/File-system
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[System call]] `lseek()` reposiciona el desplazamiento (`offset`) de un [[Archivo]] abierto con el [[File descriptor|file descriptor]] `fd` de acuerdo con el parámetro `whence`:
 * `SEEK_SET`: el desplazamiento

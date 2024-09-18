@@ -4,7 +4,7 @@ tags:
   - seguridad/Protección-auditiva
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La utilización de equipo de protección personal como copa (cascos con auricales de cancelación de ruido), o tapones intraurales o de inserción.
 

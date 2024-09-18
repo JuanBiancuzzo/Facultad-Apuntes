@@ -4,7 +4,7 @@ tags:
   - seguridad/Riesgo-eléctrico-y-radiación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El empleo de funetes no selladas posibilita la dispersión del material [[Radiación ionizante|radiactivo]] en los elementos y superficies de trabajo, pisos y paredes, lo que puede dar lugar a la contaminación de los mismos y del aire.
 

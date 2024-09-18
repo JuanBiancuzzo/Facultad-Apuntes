@@ -9,7 +9,7 @@ aliases:
   - Sistemas blandos#^SRT
   - SRT#^SRT
 ---
-### Definición
+# Definición
 ---
 Nos preocupa tanto el [[Diseño de sistemas embebidos#^determinismo|determinismo]] como el tiempo de respuesta del [[Sistema|sistema]]
 

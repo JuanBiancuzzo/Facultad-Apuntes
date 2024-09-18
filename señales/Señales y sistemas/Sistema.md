@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - embebidos/Diseño-desarrollo-y-depuración
 ---
-### Definición
+# Definición
 ---
 Conjunto de reglas o principios sobre una materia racionalmente enlazados entre sí ^c520d7
 
@@ -13,30 +13,30 @@ También se lo puede entender como un objeto que acepta [[Señal|señales]], las
 
 La forma de [[Modelar|modelizar]] un sistema de forma universal, de forma matemática e independiente de su naturaleza física, es con un [[Operador|operador]] que pueda operar entre dos [[Espacio vectorial|espacios]] de [[Señal|señales]]
 
-#### Clasificación
+## Clasificación
 ---
 Se puede clasificar un sistema con
 
-##### Memoria
+### Memoria
 ---
 ![[Memoria de un sistema#Definición]]
 
-##### Invertible
+### Invertible
 ---
 ![[Sistema invertible#Definición]]
 
-##### Causalidad
+### Causalidad
 ---
 ![[Sistema causal#Definición]]
 
-##### Estabilidad
+### Estabilidad
 ---
 ![[Sistema estable#Definición]]
 
-##### Invariancia en el tiempo
+### Invariancia en el tiempo
 ---
 ![[Sistema invariante en el tiempo#Definición]]
 
-##### Linealidad
+### Linealidad
 ---
 ![[Sistema lineal#Definición]]

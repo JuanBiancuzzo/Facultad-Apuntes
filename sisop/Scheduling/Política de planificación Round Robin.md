@@ -6,7 +6,7 @@ tags:
   - sisop/Scheduling
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La idea del algoritmo es bastante simple, se ejecuta un [[Proceso]] por un período determinado de tiempo y transcurrido el período se pasa a otro proceso, y así sucesivamente cambiando de proceso en la cola de ejecución.
 

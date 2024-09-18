@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El contrato de servicios continuados puede pactarse por tiempo determinado. Si nada se ha estipulado, se entiende que lo ha sido por tiempo indeterminado. Cualquiera de las partes puede poner fin al contrato de duración indeterminada; para ello debe dar preaviso con razonable anticipación."
 
-### Interpretación
+# Interpretación
 ---

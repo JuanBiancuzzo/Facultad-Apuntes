@@ -4,7 +4,7 @@ tags:
   - aninfo/Requisitos-en-contexto
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Métrica|métrica]] abstracta que muestra la complejidad relativa de cada ítem del producto backlog. Puede ser una escala numérica, del 1 al 10, o tipo talles como XS, S, M, L, etc.
 

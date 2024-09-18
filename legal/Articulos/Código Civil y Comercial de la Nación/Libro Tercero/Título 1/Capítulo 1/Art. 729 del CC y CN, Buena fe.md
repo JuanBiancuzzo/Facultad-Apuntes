@@ -8,9 +8,9 @@ previo: "[[Capítulo 1 - Disposiciones generales]]"
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Deudor y acreedor deben obrar con cuidado, previsión y según las exigencias de la [[Art. 9 del CC y CN, Principio de buena fe|buena fe]]."
 
-### Interpretación
+# Interpretación
 ---

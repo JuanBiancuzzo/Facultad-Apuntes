@@ -4,7 +4,7 @@ tags:
   - seguridad/Residuos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un tipo de [[Residuo sólido]], que se caracteriza por:
 * [[Composición de residuo sólido urbano|Composición]]

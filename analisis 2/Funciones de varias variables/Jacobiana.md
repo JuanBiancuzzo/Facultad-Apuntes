@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Funciones-de-varias-variables
 ---
-### Definición
+# Definición
 ---
 Con $f : U \subseteq \mathbb{R}^n \to \mathbb{R}^m$ siendo esta [[Diferenciable|diferenciable]] en el punto $x_0$, la [[Transformación lineal|transformación lineal]], y específicamente la [[algebra 2/Espacios Vectoriales/Matriz.md|matriz]] asociada con esta, que denotaremos $Df(a) \in \mathbb{R}^{n \times m}$ y se denomina como matriz Jacobiana
 

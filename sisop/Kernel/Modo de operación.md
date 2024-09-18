@@ -4,7 +4,7 @@ tags:
   - sisop/Kernel
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un mecanismo que proveen todos los [[Procesador|procesadores]] y algunos microprocesadores modernos. Es una forma para separar las acciones que puede hacerse a nivel del metal. 
 
@@ -13,10 +13,10 @@ Dado que este mecanismo es proveído por el hardware cada instrucción a ser eje
 Por lo que se protege la [[Protección de memoria|memoria]], los [[General Purpose Input Output|purtos de I/O]] y las posibilidad de ejecutar ciertas instrucciones.
 
 Los modos más utilizados por los [[Sistema operativo|sistemas operativos]] son
-##### Modo kernel
+### Modo kernel
 ![[Kernel mode#Definición]]
 
-##### Modo usuario
+### Modo usuario
 ![[User mode#Definición]]
 
 

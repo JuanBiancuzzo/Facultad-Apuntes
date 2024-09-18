@@ -8,7 +8,7 @@ aliases:
   - Transformar coordenadas cilíndricas a cartesianas#^cilindricas-cartesianas
   - Transformar coordenadas cilíndricas a esféricas#^cilindricas-esfericas
 ---
-### Definición
+# Definición
 ---
 Este sistema de coordenadas, donde el [[Espacio Rn|espacio Rn]] con $n=3$, una extension del sistema de [[Sistema circular|coordenada circular]] a $\mathbb{R}^3$, de la siguiente forma $$ P = (r_p,~\varphi_p,~z_p) $$
 ```tikz
@@ -51,7 +51,7 @@ Este sistema de coordenadas, donde el [[Espacio Rn|espacio Rn]] con $n=3$, una e
 \end{document}
 ```
 
-#### Transformar coordenadas
+## Transformar coordenadas
 ---
 Para pasarlo a [[Sistema cartesiano|coordenadas cartesianas]] 
 $$ \begin{align} 
@@ -73,7 +73,7 @@ $$ \begin{align}
 
 De esféricas ![[Sistema esférico#^esfericas-cilindricas]]
 
-#### Diferencial de longitud
+## Diferencial de longitud
 ---
 $$ \begin{array}{|c|c|c|} \hline
    \text{Coordenada que} & & \\
@@ -83,7 +83,7 @@ $$ \begin{array}{|c|c|c|} \hline
    \varphi & r ~ d\varphi & r ~ \hat{\varphi} ~ d\varphi \\
    z & dz & \hat{z} ~ dz \\
 \hline \end{array} $$
-#### Diferencial de área
+## Diferencial de área
 ---
 $$ \begin{array}{|c|c|c|} \hline
    \text{Coordenada que se} & & \\
@@ -93,22 +93,22 @@ $$ \begin{array}{|c|c|c|} \hline
    \varphi & dr ~ dz & \hat{\varphi} ~ dr ~ dz \\
    z & r ~ d\varphi ~ dr & r ~ \hat{z} ~ d\varphi ~ dr \\
 \hline \end{array} $$
-#### Diferencial de volumen
+## Diferencial de volumen
 ---
 $$ dV = r ~ dp ~ d\varphi ~ dz $$
 
-#### Fórmula del gradiente
+## Fórmula del gradiente
 ---
 ![[Gradiente#^gradiente-cilindrico]]
 
-#### Fórmula de la divergencia
+## Fórmula de la divergencia
 ---
 ![[Divergencia#^divergencia-cilindrico]]
 
-#### Fórmula del rotor
+## Fórmula del rotor
 ---
 ![[Rotor#^rotor-cilindrico]]
 
-#### Fórmula del laplaciano
+## Fórmula del laplaciano
 ---
 ![[Laplaciano#^laplaciano-cilindrico]]

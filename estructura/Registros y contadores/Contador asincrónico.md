@@ -4,7 +4,7 @@ tags:
   - estructura/Registros-y-contadores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los [[Contador|contador]] [[Circuito asincrónico|asincrónico]] tiene todas las propiedades de un contador, encadenando $n$ [[Flip-Flop T sincrónico|flip-flop T sincrónicos]] nos permite contar hasta $2^n$ este siendo su [[Módulo de un contador|módulo]]. Como ejemplo veamos un contador de $3$ bits
 

@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-Vectoriales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En los espacios vectoriales vamos a poder definir dos operaciones [[Ley de composición interna|ley de composición interna]] ($+$) y [[Ley de composición externa|ley de composición externa]] ($\cdot$). 
 
@@ -15,7 +15,7 @@ Lo podremos escribir como $(\mathbb{V}, +, \mathbb{K}, \cdot)$ es un $\mathbb{K}
 
 ![[Ley de composición externa#Características de la composición externa]]
 
-#### Ejemplos
+## Ejemplos
 ---
 * Sea $L_2(\mathbb{R})$ el espacio de las [[Señal|señales]] $f : \mathbb{R} \to \mathbb{C}$ tales que $$ \int_{- \infty}^{\infty} | f(t) |^2 dt < \infty $$ es decir las señales con [[Medida de una señal#Energía|energía]] finita en toda la recta
   

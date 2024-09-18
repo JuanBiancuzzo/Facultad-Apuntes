@@ -4,10 +4,10 @@ tags:
   - aninfo/Descubrimiento-de-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Tiene como propósito examinar la documentación existente e identificar información relevante
 
-##### Desventajas
+### Desventajas
 * Es muy tediosa y consume mucho tiempo
 * Puede ser que la documentación examinada esta desactualizada

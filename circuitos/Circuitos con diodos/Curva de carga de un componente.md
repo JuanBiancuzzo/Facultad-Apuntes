@@ -4,7 +4,7 @@ tags:
   - circuitos/Circuitos-con-diodos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado un componente X, este es parte de un [[Circuito eléctrico|circuito]] en el que intervienen otros componentes, podemos plantear las [[Método de nodos|ecuaciones de nodos]] o [[Método de mallas|mallas]]. Las mismas aplican a todo el circuito, sea lineal o no
 

@@ -10,11 +10,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La persona jurídica tiene una personalidad distinta de la de sus miembros.
 
 Los miembros no responden por las obligaciones de la persona jurídica, excepto en los supuestos que expresamente se prevén en este Título y lo que disponga la ley especial."
 
-### Interpretación
+# Interpretación
 ---

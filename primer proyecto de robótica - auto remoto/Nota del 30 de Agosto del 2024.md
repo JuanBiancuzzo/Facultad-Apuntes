@@ -4,7 +4,7 @@ tags:
   - primer-proyecto-de-robótica-auto-remoto
   - nota/proyecto
 ---
-### Progreso
+# Progreso
 ---
 Este día nos propusimos probar los $3$ componentes principales del proyecto, un servo, un stepper motor, y un control infrarrojo
 

@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 8/Título 8, De la
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Queda prohibido a los empleadores ocupar personas menores de dieciséis (16) años en cualquier tipo de actividad, persiga o no fines de lucro."
 
-### Interpretación
+# Interpretación
 ---

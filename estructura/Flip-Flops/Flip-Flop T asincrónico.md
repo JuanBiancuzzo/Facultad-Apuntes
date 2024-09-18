@@ -4,10 +4,10 @@ tags:
   - estructura/Flip-Flops
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El [[Circuito secuencial]] con ecuación característica $$ Q^{n + 1} = T \oplus Q^n $$
-#### Tabla de estados
+## Tabla de estados
 ---
 
 | $Q_t$ | $T_t$ |     | $Q_{t+1}$ |

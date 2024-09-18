@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La manifestación tácita de la voluntad resulta de los actos por los cuales se la puede conocer con certidumbre. Carece de eficacia cuando la ley o la convención exigen una manifestación expresa."
 
-### Interpretación
+# Interpretación
 ---

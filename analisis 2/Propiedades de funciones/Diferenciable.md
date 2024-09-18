@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Propiedades-de-funciones
 ---
-### Definición
+# Definición
 ---
 Dado una [[Función|función]] $f : I \subseteq \mathbb{R}$ es diferenciable en $x_0 \in I$ si existe una constante $A$ tal que 
 
@@ -20,19 +20,19 @@ $$ A = \frac{f(x_0 + h) - f(x)}{h} - \frac{r(h)}{h} $$
 
 de donde (al tomar limite cuando $h \to 0$) se puede ver facilmente la equivalencia entre las definiciones 
 
-#### Teoremas
+## Teoremas
 ---
-##### Informativas
+### Informativas
  * Si $f$ es diferenciable en el punto $a$, entonces $f$ es continua en $a$
  * Si $f$ es diferenciable en el punto $a$, entonces $f$ es [[analisis 3/Derivabilidad y holomorfía/Derivable.md|derivable]] en $a$
  * Si $f$ es diferenciable en $x_0$, entonces existen todas las derivadas direccionales (calcular con la definición de [[Derivada direccional|derivada direccional]]) y vale que $\nabla f(x_0) \cdot \hat{v}$
-##### Calificativas
+### Calificativas
  * Una función vectorial es diferenciable en un punto si, y solo si, sus componentes son diferenciables en dicho punto
  * Sea $f : U \subseteq \mathbb{R}^n \to \mathbb{R}$ con $n > 1$, si $f \in C^1(E(\vec{a}))$ entonces $f$ es diferenciable en $\vec{a}$
  * $D\vec{f}$ (la [[Jacobiana|Jacobiana]] de $f$) continua en un conjunto $H$ es equivalente a $\vec{f} \in C^1(H)$ => $\vec{f}$ diferenciable en $H$
  * Es diferenciable si existen todas las derivada direccional y son lineales
 
-#### Notas
+## Notas
 ---
  * Las funciones diferenciables son continuas y derivables
 	 * Solo las funciones de una sola variable, si son derivables tambien son diferenciables

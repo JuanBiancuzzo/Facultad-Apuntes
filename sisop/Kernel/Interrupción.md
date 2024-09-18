@@ -8,7 +8,7 @@ tags:
 aliases:
   - Excepción
 ---
-### Definición
+# Definición
 ---
 Una interrupción es una [[Señal|señal]] asincrónica enviada hacia el [[Procesador|procesador]] de que algún evento externo ha sucedido y pueda requerir de la atención del mismo
 

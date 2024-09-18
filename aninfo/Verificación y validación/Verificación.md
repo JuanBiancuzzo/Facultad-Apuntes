@@ -4,7 +4,7 @@ tags:
   - aninfo/Verificación-y-validación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En el entorno del software la verificación se ve con el [[Testing de software|testing]] donde se quiere ver si cumple los [[Requisito|requisitos]] establecidos.
 

@@ -22,7 +22,7 @@ referencias:
   - "243"
   - "241"
 ---
-### Definición
+# Definición
 ---
 GPIO (General Purpose Input/Output, Entrada/Salida de Propósito General) es un pin genérico en un chip, cuyo comportamiento (incluyendo si es un pin de entrada o salida) se puede controlar (programar) por el usuario en tiempo de ejecución
 
@@ -32,7 +32,7 @@ Los [[Microcontrolador|microcontroladores]] generalmente combinan sus puertos en
 
 La gran mayoría de los puertos de entrada/salida en los microcontroladores se puede settear como entrada o salida, esto se tiene que configurar lo antes posible para que se ejecute cuando arranque o se este reseteando el microcontrolador
 
-##### Hardware en la placa STM32
+### Hardware en la placa STM32
 ---
 Veamos el diagrama de bloques, que también contiene esquemas que modelan un pin de puerto GPIO típico
 
@@ -58,7 +58,7 @@ Asimismo, la sección de salida tiene múltiples formas de crear una salida de s
 * Alternate function
     * Generada desde un periférico MCU interno
 
-#### Output
+## Output
 ---
 Los pins individuales de salida tiene dos posibles [[Tensión|tensiones]] de salida dependiendo de como este setteado el pin
 * Si se lo setea a $1$, el pin va a tener un nivel de tensión alto, este valor generalmente es el mismo valor que alimenta el microcontrolador
@@ -138,7 +138,7 @@ Esta es un diagrama simplificado de un pin de salida
 
 El transistor rojo va a estar [[Triodo del transistor de efecto de campo metal-óxido-semiconductor|conduciendo]] si el pin fue seteado a $1$, pero si esta setteado a $0$, el transistor azul va a estar conduciendo. Solo uno de los dos transistores puede estar conduciendo al mismo tiempo porque sino tendríamos un corto
 
-##### Manejar cargas
+### Manejar cargas
 ---
 Para hacer algo útil debemos conectar el pin a una carga. Hay dos formas de conectar una carga a un pin de salida
 
@@ -307,7 +307,7 @@ La segunda, es cuando la corriente la otorga una fuente externa, y se lo refiere
 >[!caution]
 > Es importante que la fuente externa sea la misma que alimente el microcontrolador, o se puede destruir el [[Circuito integrado|circuito integrado]]
 
-##### Corriente de salida
+### Corriente de salida
 ---
 Los microcontroladores en general son capaces de manejar bajos niveles de corrientes. El límite de corriente depende del mismo microcontrolador y el pin en especifico. En general hay una corriente [[Máximo|máxima]] total por un grupo de $8$ pines, como también un máximo para todo el microcontrolador
 
@@ -315,7 +315,7 @@ Estos límites están en los data sheets del microcontrolador, debajo del títul
 
 También es útil revisar la sección sobre el pin que se va a usar, donde cualquier excepción se va a nombrar ahí
 
-##### Manejar cargas usando transistores
+### Manejar cargas usando transistores
 ---
 Los [[Transistor|transistores]] son [[Amplificador de corriente|amplificadores de corrientes]], con una corriente pequeña por la base de un [[Transistor bipolar de juntura|TBJ]], permite amplificar la corriente del colector por un factor llamado [[Ganancia de corriente en modo activo directo|hFE]] en las data sheets
 
@@ -381,7 +381,7 @@ Esto no solo se puede hacer con un [[Transistor bipolar de juntura#NPN|NPN]], qu
 
 De igual forma se puede usar un [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]], el cual un [[Transistor de efecto de campo metal-óxido-semiconductor#Canal-N|canal N]] se comporta como un NPN, y un [[Transistor de efecto de campo metal-óxido-semiconductor#Canal-P|canal P]] se comporta como un PNP
 
-##### Arduino
+### Arduino
 ---
 Para settear un pin en [[placa de Desarrollo/arduino/Índice|Arduino]] como output de la siguiente forma 
 
@@ -396,7 +396,7 @@ digitalWrite(num_pin, HIGH);
 digitalWrite(num_pin, LOW); 
 ```
 
-#### Input 
+## Input 
 ---
 Como los pines están setteados cada $8$, en general se puede interpretar como un valores entre $0$ y $255$
 
@@ -475,7 +475,7 @@ La separación depende del microcontrolador como también del pin que se este us
 > [!caution]
 > En el caso de que el pin reciba más de $V_{dd}$ puede dañar el circuito integrado. En caso de que reciba menos de $0$ V, puede causar daños internos del circuito y destruir el circuito integrado
 
-##### Resistencias de pull up y pull down
+### Resistencias de pull up y pull down
 ---
 A veces se quiere tener como default que se lea un $0$ o un $1$. Esto nos permite en cierta forma reducir la posibilidad de ruido y/o en la situación de que se desconecte el circuito que imponga el componente. Para eso se usan
 * [[Resistor|Resistencia]] de pull up, va a permitir settear el input cercano a $V_{dd}$ y por lo tanto que se lea como $1$ ^pull-up
@@ -545,7 +545,7 @@ No hay una forma de determinar el valor de esa resistencia. En el caso de un val
 
 En casos de estar en un circuito muy ruidoso, es preferible aumentar esa resistencia pero al aumentarla genera un mayor aumento de energía y que ese componente sea capaz de manejar esa corriente
 
-##### Arduino
+### Arduino
 ---
 Para settear un pin en [[placa de Desarrollo/arduino/Índice|Arduino]] como input de la siguiente forma 
 
@@ -560,14 +560,14 @@ digitalWrite(num_pin, HIGH); // Settear la resistencia de pull up
 digitalWrite(num_pin, LOW); // Settear la resistencia de pull down
 ```
 
-#### Cambiar entre input y output
+## Cambiar entre input y output
 ---
 Hay aplicaciones en las que cambiar entre input y output es útil o necesario, como lo puede ser la comunicación entre dos microcontroladores
 
 Hay que tener en cuenta que algunos microcontroladores pueden tardar un par de ciclos de reloj para cambiar de dirección y la información que se lee de estos sea confiable
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

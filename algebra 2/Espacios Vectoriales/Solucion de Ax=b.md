@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-Vectoriales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Con $A \in \mathbb{K}^{n \times m}$ y $b \in \mathbb{K}^m$
 Existe solucion si $b \in col(A)$ (ver [[Subespacios fundamentales de una matriz]]), y en el caso de que exista entonces la solucion se puede expresar como: 

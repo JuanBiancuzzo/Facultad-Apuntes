@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Cuarto/
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El dominio es perpetuo. No tiene límite en el tiempo y subsiste con independencia de su ejercicio. No se extingue aunque el dueño no ejerza sus facultades, o las ejerza otro, excepto que éste adquiera el dominio por prescripción adquisitiva."
 
-### Interpretación
+# Interpretación
 ---
 
 

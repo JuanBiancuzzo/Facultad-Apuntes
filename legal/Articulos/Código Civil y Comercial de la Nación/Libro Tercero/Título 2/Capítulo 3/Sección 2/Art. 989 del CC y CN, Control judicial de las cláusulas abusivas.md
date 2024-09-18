@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La aprobación administrativa de las cláusulas generales no obsta a su control judicial."
 
-### Interpretación
+# Interpretación
 ---
 Es importante destacar que la aprobación administrativa de las cláusulas generales no obsta a su control judicial. Así, por ejemplo, la aprobación de ciertas cláusulas en un contrato prerredactado de seguros por la Superintendencia Nacional de Seguros no obsta a la posibilidad de su control judicial. 
 

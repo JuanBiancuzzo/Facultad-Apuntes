@@ -8,7 +8,7 @@ tags:
 aliases:
   - Ley de Ohm microscópica#^ley-de-ohm-microscopica
 ---
-### Definición 
+# Definición 
 ---
 La [[Tensión|tensión]] $(\Delta V)$ en un [[Resistor|resistor]] es proporcional a la [[Corriente eléctrica|corriente]] ($I$) que lo circula.
 $$ \Delta V = I \cdot R $$
@@ -20,7 +20,7 @@ por lo que podemos calcular la resistencia de forma genérica sabiendo que $$ \b
 	I = J \cdot S
 \end{cases} $$
 Donde $l$ es la longitud de la resistencia, y $S$ la [[Superficie|superficie]] transversal de la misma, dejándonos entonces con $$ R = \rho \cdot \frac{l}{S} $$
-##### Unidades
+### Unidades
 ---
 $$ 
 \begin{cases}

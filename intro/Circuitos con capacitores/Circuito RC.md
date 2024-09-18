@@ -4,11 +4,11 @@ tags:
   - intro/Circuitos-con-capacitores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un [[Circuito eléctrico|circuito]] RC de [[Circuito de primer orden|primer orden]] es un circuito eléctrico compuesto de un [[Resistor]] y un [[Capacitor]].
 
-##### Esquematización
+### Esquematización
 ---
 
 ```tikz
@@ -59,7 +59,7 @@ Un [[Circuito eléctrico|circuito]] RC de [[Circuito de primer orden|primer ord
 \end{document}
 ```
 
-#### Análisis
+## Análisis
 ---
 Al cerrar la llave (en el instante $t=0$), por [[Ley de mallas de Kirchhoff|ley de mallas de Kirchhoff]], se puede deducir que $$ v_0(t)= v_R (t) + v_C (t) $$
 Ahora, por [[Ley de Ohm|ley de Ohm]]

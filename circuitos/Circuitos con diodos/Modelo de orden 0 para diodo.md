@@ -4,7 +4,7 @@ tags:
   - circuitos/Circuitos-con-diodos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta aproximación es muy burda, pero nos permitirá obtener una idea aproximada de lo que sucede con muy pocas cuentas
 

@@ -4,13 +4,13 @@ tags:
   - algebra-2/Espacios-euclídeos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $A \subseteq \mathbb{V}$ un [[Conjunto|conjunto]] no vacío de $\mathbb{V}$, el subespacio ortogonal a $A$ denotado por $A^\perp$, se define por
 
 $$ A^\perp := \{x \in \mathbb{V} : \langle x, a \rangle = 0, \forall a \in A \} $$
 
-#### Propiedades
+## Propiedades
 ---
  * $A^\perp$ es un subespacio de $\mathbb{V}$
  * $A \cap A^\perp = \{0_\mathbb{V}\}$

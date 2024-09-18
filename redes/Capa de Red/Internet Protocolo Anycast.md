@@ -6,7 +6,7 @@ tags:
 aliases:
   - IP Anycast
 ---
-### Definición
+# Definición
 ---
 El servicio de anycast de [[Internet Protocol Address|IP]], utilizado comúnmente en [[Domain Name System|DNS]], donde es útil para replicar el mismo contenido en múltiples servidores esparcidos geográficamente y que los usuarios accedan al [[Servidor|servidor]] más cercano
 

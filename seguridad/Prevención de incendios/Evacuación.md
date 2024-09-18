@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-incendios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Para una evacuación se tiene que determinar 
 * Un responsable de evacuacion o líder de evacuación.

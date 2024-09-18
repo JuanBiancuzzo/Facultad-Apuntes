@@ -4,13 +4,13 @@ tags:
  - redes/Redes-de-computadoras
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los switches son transparentes. Los adaptadores de [[Red|red]] direccionan frames directamente a otros hosts de la [[Subnetting|subred]], sin conocer los switches intermedios. La tasa de llegada puede ser mayor a la tasa de salida, por lo que los switches utilizan buffers para no descartar información
 
 Se lo usa para [[Forwarding#Para un link-layer switch|forwarding]] de [[Frame|frames]], y self learning
 
-#### Self-Learning
+## Self-Learning
 ---
 Para configurar la tabla del switch, se utiliza un mecanismo de autoaprendizaje
 
@@ -20,7 +20,7 @@ Para configurar la tabla del switch, se utiliza un mecanismo de autoaprendizaje
 
 Debido a estas reglas, los switches son dispositivos plug-and-play, ya que no requieren intervención del administrador de red o del usuario
 
-#### Propiedades
+## Propiedades
 ---
 Podremos identificar múltiples ventajas de los switches por sobre las topologías hub-based
 
@@ -31,7 +31,7 @@ Podremos identificar múltiples ventajas de los switches por sobre las topologí
 * Manejo
     * Además de proveer seguridad avanzada, los switches también facilitan el manejo de la red. Por ejemplo, si un adaptador falla y empieza a mandar paquetes continuamente, el switch puede detectar esto y desconectar internamente el adaptador fallado. Por otro lado, si un cable se desconecta, solo se perjudica aquel [[Host|host]] conectado con ese enlace
 
-#### Comparación con un router
+## Comparación con un router
 ---
 Tanto los switches como los [[Router|routers]] realizan store-and-forward packet switching, pero tienen diferencias fundamentales. Los routers operan con direcciones de [[Capa de Red|capa de red]], mientras que los switches operan con direcciones de [[Capa de Enlace|capa de enlace]]
 

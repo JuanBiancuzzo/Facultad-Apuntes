@@ -5,11 +5,11 @@ tags:
   - discreta/Álgebra-de-Boole
   - estructura/Álgebra-de-Boole
 ---
-### Definición
+# Definición
 ---
 Diremos que este [[Conjunto|conjunto]] y las operaciones así definidas: $(B,~+,~\cdot,~',~0_B,~1_B)$ son un [[Álgebra de Boole|álgebra de Boole]], si cumple los siguiente axiomas:
 
-#### Axiomas y propiedades
+## Axiomas y propiedades
 ---
 Dado los [[Postulados de Huntington|axiomas]] del [[Álgebra de Boole]], se pueden deducir y demostrar los siguientes teoremas fundamentales:
 

@@ -6,7 +6,7 @@ estado: Falta pasar las presentaciones del último tema
 tags:
   - materia
 ---
-### Apuntes 
+# Apuntes 
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });

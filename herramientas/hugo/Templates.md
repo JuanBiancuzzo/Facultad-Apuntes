@@ -12,7 +12,7 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
 ```
-### Definición
+# Definición
 ---
 Los templates o plantillas, son archivos [[Lenguaje de marcado de hipertexto|HTML]] que pueden ser aplicados a una [[Single Page|página de contenido]] o un [[List Page|listado de contenido]], para convertirlo en HTML y como usar tanto su [[Frontmatter|metadata]] como su contenido para ser mostrado.
 
@@ -25,7 +25,7 @@ Si se quiere hacer un layout especifico para un directorio, se puede crear una c
 
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

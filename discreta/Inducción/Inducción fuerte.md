@@ -4,7 +4,7 @@ tags:
  - discreta/Inducción
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El principio de inducción fuerte se utiliza en situaciones donde la [[Principio de inducción|situación débil]] no es suficiente para una demostración Ambos son verdaderos, dado el [[Principio de inducción#Principio del Buen Orden|principio del buen orden]]
 

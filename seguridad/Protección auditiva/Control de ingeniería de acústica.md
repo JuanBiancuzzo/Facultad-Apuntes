@@ -4,7 +4,7 @@ tags:
   - seguridad/Protección-auditiva
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El primer paso es el ordenamiento de las fuentes. Ordenar las fuentes exige valorar su contribución relativa al [[Ruido]] global producido por las máquinas o procesos. Este proceso se puede aplicar en 5 pasos:
 

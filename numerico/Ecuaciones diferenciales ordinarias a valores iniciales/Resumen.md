@@ -4,12 +4,12 @@ tags:
  - numerico/Ecuaciones-diferenciales-ordinarias-a-valores-iniciales
  - resumen
 ---
-### Índice 
+# Índice 
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 ```
 
-### Resumen
+# Resumen
 ---
 Pendiente...

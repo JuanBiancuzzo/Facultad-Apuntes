@@ -4,7 +4,7 @@ tags:
   - seguridad/Riesgo-eléctrico-y-radiación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los distintos tejidos y órganos del organismo humano manifiestan diferente radiosensibilidad. Cuando varios órganos son irradiados, cada uno controbuye en distinto grado a la [[Probabilidad|probabilidad]] de que en el organismo se induzcan efectos como cáncer. 
 

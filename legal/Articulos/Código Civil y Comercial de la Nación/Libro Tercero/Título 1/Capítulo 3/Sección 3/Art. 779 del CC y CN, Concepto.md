@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La obligación alternativa tiene por objeto una prestación entre varias que son independientes y distintas entre sí. El deudor está obligado a cumplir una sola de ellas."
 
-### Interpretación
+# Interpretación
 ---

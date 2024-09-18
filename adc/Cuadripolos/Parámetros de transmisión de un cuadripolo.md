@@ -4,7 +4,7 @@ tags:
   - adc/Cuadripolos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La relación que tiene esta dada por $$ {\begin{cases} 
 	V_1 = A ~ V_2 - B ~ I_2 \\ 
@@ -30,7 +30,7 @@ Donde
 * $C =$ [[Admitancia|Admitancia]] de transferencia en un circuito abierto
 * $D =$ Relación negativa de [[Corriente eléctrica|corrientes]] en cortocircuito
 
-### Inversos
+# Inversos
 ---
  La relación que tiene esta dada por $$ {\begin{cases} 
 	V_2 = a ~ V_1 - b ~ I_1 \\ 

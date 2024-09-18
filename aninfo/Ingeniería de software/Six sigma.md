@@ -4,6 +4,6 @@ tags:
   - aninfo/Ingeniería-de-software
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Tiene la filosofía de reducir la variación con un énfasis en la resolución de problemas

@@ -4,7 +4,7 @@ tags:
   - analisis-3/Topología-del-plano-complejo-y-límites
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dados un complejo $z_0 \in \mathbb{C}$ y un numero real positivo $r$, se definen los siguientes [[Subconjunto|subconjuntos]] del plano complejo
 

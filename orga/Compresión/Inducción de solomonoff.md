@@ -4,7 +4,7 @@ tags:
   - orga/Compresión
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se puede explicar con los siguientes 4 pasos:
 1) Recolectamos los datos y los ponemos en el formato, entrada -> salida
@@ -12,7 +12,7 @@ Se puede explicar con los siguientes 4 pasos:
 3) Actualizamos la [[Probabilidad]] de que cada programa sea el que explica el fenómeno utilizando la [[Formula de Bayes]]
 4) Repetimos
 
-##### Ejemplo
+### Ejemplo
 Supongamos que tenemos dos hipotesis que nos dan correctamente la salida. Con esto estaríamos usando el [[Principio de epicúreo]].
 
 Utilizando la [[Formula de Bayes]] para cada hipotesis, nos queda lo siguiente $$ \mathbb{P}(H_k|E) = \frac{\mathbb{P}(E|H_k) \cdot \mathbb{P}(H_k)}{\mathbb{P}(E)} $$

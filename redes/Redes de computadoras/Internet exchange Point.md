@@ -6,6 +6,6 @@ tags:
   - redes/Redes-de-computadoras
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es el punto de encuentro entre distintos [[Internet Service Provider|ISPs]]

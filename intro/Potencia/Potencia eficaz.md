@@ -4,7 +4,7 @@ tags:
   - intro/Potencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Definimos la [[Potencia|potencia]] eficaz, es su [[Valor cuadrático medio|valor cuadrático medio]], de una potencia variable en el tiempo $p(t)$ con período $T$ como $$ P_{ef}= \sqrt{\frac{1}{T} \cdot \int_{0}^{T} p^2(t) \cdot dt} $$
 

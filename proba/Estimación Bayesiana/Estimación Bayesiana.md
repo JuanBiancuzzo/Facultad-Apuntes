@@ -4,7 +4,7 @@ tags:
   - proba/Estimación-Bayesiana
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Tenemos $\underline X = \left(X_1, \cdots, X_n\right)$ una [[Muestra aleatoria]], donde tenemos una [[Información|información]] previa sobre $\theta$, haciendo esta una [[Variable aleatoria]] (que nombraremos $\Theta$), con una cierta [[Función de distribución|distribución]] "a priori" $f_\Theta(\theta)$.
 

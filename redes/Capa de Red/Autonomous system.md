@@ -6,7 +6,7 @@ tags:
 aliases:
   - AS
 ---
-### Definición
+# Definición
 ---
 Consiste en un grupo de [[Router|routers]] bajo el mismo control administrativo. Usualmente, los [[Internet Service Provider|ISP]] constituyen un único AS, aunque algunos ISP pueden dividir su [[Red|red]] en múltiples de ellos. Los sistemas autónomos son identificados por su [[Globally unique Autonomous System Number|globally unique autonomous system number (ASN)]]
 

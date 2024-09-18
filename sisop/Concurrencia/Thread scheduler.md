@@ -4,7 +4,7 @@ tags:
   - sisop/Concurrencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El [[Thread]] [[Scheduler]] se encarga de hacer los cambios de thread de forma transparente, para que el programador no tenga que preocuparse de cuando éste debe ser suspendido o no.
 

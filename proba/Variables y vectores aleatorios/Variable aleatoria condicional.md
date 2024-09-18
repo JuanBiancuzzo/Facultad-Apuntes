@@ -4,5 +4,5 @@ tags:
   - proba/Variables-y-vectores-aleatorios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---

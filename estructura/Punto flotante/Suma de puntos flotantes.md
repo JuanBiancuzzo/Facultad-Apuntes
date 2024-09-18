@@ -4,7 +4,7 @@ tags:
   - estructura/Punto-flotante
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se logra con los siguientes pasos:
 1) Calcular la diferencia entre los exponentes $d = |\text{Exp}_1 - \text{Exp}_2|$ y determinar cual es el mayor y cual el menor.

@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los actos pueden exteriorizarse oralmente, por escrito, por signos inequívocos o por la ejecución de un hecho material."
 
-### Interpretación
+# Interpretación
 ---

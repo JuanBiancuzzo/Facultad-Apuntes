@@ -12,7 +12,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los administradores de la persona jurídica deben obrar con lealtad y diligencia.
 
@@ -20,5 +20,5 @@ No pueden perseguir ni favorecer intereses contrarios a los de la persona juríd
 
 Les corresponde implementar sistemas y medios preventivos que reduzcan el riesgo de conflictos de intereses en sus relaciones con la persona jurídica."
 
-### Interpretación
+# Interpretación
 ---

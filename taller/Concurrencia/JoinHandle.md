@@ -4,7 +4,7 @@ tags:
   - taller/Concurrencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El [[Thread - Rust|thread]] padre puede esperar a que un thread hijo creado finalice utilizando la función `join()`.
 

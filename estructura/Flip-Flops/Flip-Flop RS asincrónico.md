@@ -4,7 +4,7 @@ tags:
   - estructura/Flip-Flops
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El [[Circuito secuencial|circuito]] con ecuación característica $$ Q^{n + 1} = S + \overline{R} \cdot Q^n $$
 y tiene el circuito
@@ -37,7 +37,7 @@ y tiene el circuito
 \end{document} 
 ```
 
-#### Tabla de estados
+## Tabla de estados
 ---
 
 | $Q_t$ | $S_t$ | $R_t$ |     | $Q_{t+1}$ |

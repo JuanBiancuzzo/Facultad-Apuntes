@@ -8,9 +8,9 @@ previo: "[[Capítulo 1, Comienzo de la existencia|Capítulo 1, Comienzo de la ex
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La existencia de la persona humana comienza con la concepción."
 
-### Interpretación
+# Interpretación
 ---

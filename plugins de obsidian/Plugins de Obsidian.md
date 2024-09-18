@@ -5,7 +5,7 @@ tags:
  - proyecto
  - plugins-de-obsidian
 ---
-### Descripción
+# Descripción
 ---
 Este va a ser mi lugar para ir creando plugins de obsidian.
 
@@ -13,13 +13,13 @@ El primer plugin que voy a hacer es sobre un mejor uso del alias, pudiendo dirig
 
 El segundo plugin es poder usar python notebooks dentro de obsidian, para poder investigar
 
-### Presentar
+# Presentar
 ---
 
 
 
 
-### Notas
+# Notas
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarNotas", { proyecto: dv.current() });

@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Análogo al [[Cubrimiento de vértices|cubrimiento de vértices]], sea $G$ un [[Grafo|grafo]], $S \subset V(G)$ es un cubrimiento de aristas si y solo cualquier [[Nodo|vértice]] del grafo es alcanzado por una de las aristas del cubrimiento
 

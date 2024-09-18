@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-aire
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Determinación de la calidad de los gases que circulan por un conducto o chimenea permite:
 * Estimar pérdidas de productos arrastrados por los gases de escape
@@ -12,7 +12,7 @@ Determinación de la calidad de los gases que circulan por un conducto o chimene
 * Evaluar si se cumplen o no de las reglamentaciones vigentes
 * Hacer estudios de investigación y desarrollo con modelos como el [[Modelo gaussiano de dispersión]].
 
-#### Extracción de muestras
+## Extracción de muestras
 ---
 Como en general todo sistema para muestreo consiste en:
 * Un elemento que separa la parte a muestrear del resto y la conduce hacia el sistema de muestreo (un tubo o sonda)

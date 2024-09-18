@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - electro/Campos-eléctricos-y-magnéticos
 ---
-### Definición
+# Definición
 ---
 Por la experiencia, se encontró que los [[Campo de inducción magnética|campos magnéticos]] son generados por [[Carga eléctrica|cargas]] en movimiento ([[Corriente eléctrica|corrientes]]). Además, se encontraron las siguientes relaciones $$ \begin{matrix} 
 \displaystyle \vec{B} \perp I ~ d\vec{l} \\

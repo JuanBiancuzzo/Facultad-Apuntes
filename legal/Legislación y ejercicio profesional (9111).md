@@ -6,12 +6,12 @@ estado: Falta terminar los últimos capítulos
 tags:
   - materia
 ---
-### Apuntes 
+# Apuntes 
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
 ```
-### Documentos
+# Documentos
 ---
 Se tiene varios documentos utilizados a lo largo de la ecursada, estos siendo
 ```dataviewjs

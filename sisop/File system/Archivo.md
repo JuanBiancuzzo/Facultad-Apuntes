@@ -4,7 +4,7 @@ tags:
   - sisop/File-system
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una colección de datos con un nombre específico. Los archivos proveen una abstracción de más alto nivel que la que subyace en el dispositivo de almacenamiento. Un archivo proporciona un nombre único y con significado para referirse a una cantidad arbitraria de datos.
 

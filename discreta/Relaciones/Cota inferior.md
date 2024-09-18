@@ -4,6 +4,6 @@ tags:
   - nota/facultad
   - discreta/Relaciones
 ---
-### Definición
+# Definición
 ---
 Sea $(A,~\le)$ un [[Relación de orden|poset]] y sea $S \subseteq A$, $S \ne \emptyset$, donde $A$ es el [[Conjunto|conjunto]] de elementos relacionados. $m \in A$ es una cota inferior de $S$ si y solo si $$ \forall x \in S, ~~~~ m \le x $$

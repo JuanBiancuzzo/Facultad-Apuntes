@@ -4,7 +4,7 @@ tags:
   - aninfo/Ingeniería-de-software
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Acciones planeadas y sistemáticas para proveer una adecuada confianza de que un producto o servicio satisfará determinados requerimientos de calidad.
 

@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Propiedades-de-funciones
 ---
-### Definición
+# Definición
 ---
 En este caso, vamos a aplicar el [[Análisis de extremos locales para campos escalares|análisis de extremos locales]], cuando sus variables deben cumplir ciertas condiciones, denominadas **condiciones de vinculo** entre las mismas
 
@@ -18,7 +18,7 @@ $$ h(x) = f(\vec{g}(x)) $$
 
 La cual aplicaremos el análisis de [[analisis 2/Funciones de varias variables/Extremo.md|extremos]] locales
 
-#### Ejemplo
+## Ejemplo
 ---
 Halle el paralelepípedo rectangular de volumen máximo, tal que el area de [[analisis 2/Topología/Superficie.md|superficie]] frontera resulte igual a $54 cm^2$
 

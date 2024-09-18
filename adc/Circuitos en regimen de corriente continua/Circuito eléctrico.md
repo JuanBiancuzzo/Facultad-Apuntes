@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
 ---
-### Definición
+# Definición
 ---
 Red conductora que contiene al menos una trayectoria cerrada por la que puede fluir la [[Carga eléctrica|carga eléctrica]]. Las cargas eléctricas se mueven por acción del [[Campo eléctrico|campo eléctrico]] dentro del [[Conductor|conductor]]
 

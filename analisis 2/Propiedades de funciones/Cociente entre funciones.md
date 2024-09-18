@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Propiedades-de-funciones
 ---
-### Definición
+# Definición
 ---
 Con $f: U \subseteq \mathbb{R}^n \to \mathbb{R}$ y $g: V \subseteq \mathbb{R}^n \to \mathbb{R}$, el cociente de $f$ y $g$ es la [[Función|función]] $f + g: W \subseteq \mathbb{R}^n \to \mathbb{R}$, tal que
 

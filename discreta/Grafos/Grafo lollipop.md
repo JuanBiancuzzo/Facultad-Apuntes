@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo simple|grafo simple]], el grafo es que se llama Lollipop $L_{p,~q}$ esta compuesto por el [[Grafo simple completo|grafo completo]] $K_p$ y el [[Camino#Camino simple (Path)|camino simple]] $P_q$ mediante un puente
 

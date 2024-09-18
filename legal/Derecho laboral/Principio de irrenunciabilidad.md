@@ -4,7 +4,7 @@ tags:
   - legal/Derecho-laboral
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La irrenunciabilidad protege al trabajador durante todos los momentos de la [[Relación laboral|relación laboral]], desde su nacimiento hasta su finalización y una vez concluida ésta protege también el ejercicio de los derechos emergentes de la relación habida. La violación de la irrenunciabilidad trae aparejada la nulidad de la cláusula respectiva, pero el [[Contrato|contrato]] subsiste.
 

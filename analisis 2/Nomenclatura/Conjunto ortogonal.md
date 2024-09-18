@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Nomenclatura
 ---
-### Definición
+# Definición
 ---
 Partiendo de la definición de [[Ortogonalidad|ortogonalidad]] y es teniendo un [[Conjunto|conjunto]] de vectores $v_1, v_2, \cdots, v_k$ en $\mathbb{R}^n$, es un conjunto ortogonal si
 

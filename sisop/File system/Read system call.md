@@ -4,7 +4,7 @@ tags:
   - sisop/File-system
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[System call|system call]] `read()` se utiliza para hacer intentos de lecturas hasta un número dado de bytes de un [[Archivo|archivo]]. La lectura comienza en la posición señalada por el [[File descriptor|file descriptor]], y tras ella se incrementa ésta en el número de bytes leídos
 

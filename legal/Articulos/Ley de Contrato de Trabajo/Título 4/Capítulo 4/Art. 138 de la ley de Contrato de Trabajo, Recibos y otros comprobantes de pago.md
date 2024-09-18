@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 4/Capítulo 4/Cap�
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Todo pago en concepto de salario u otra forma de remuneración deberá instrumentarse mediante recibo firmado por el trabajador, o en las condiciones del [[Art. 59 de la ley de Contrato de Trabajo, Firma. Impresión digital|artículo 59 de esta ley]], si fuese el caso, los que deberán ajustarse en su forma y contenido en las disposiciones siguientes:"
 
-### Interpretación
+# Interpretación
 ---

@@ -4,18 +4,18 @@ tags:
   - seguridad/Contaminación-del-ambiente-laboral
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Hay tres métodos, la sustitución, ver los métodos de trabajo, medidas técnicos, medidas de gestión y control banding:
 
-#### Sustitución
+## Sustitución
 * La sustitución básica de nanomateriales generalmente no es posible, ya que estos se utilizan precisamente por sus propiedades especciales.
 
-#### Método de trabajo
+## Método de trabajo
 * Es importante la sustitución de nanomateriales que se encuentran presentes en fases peligrosas (especialmente polvo y aerosoles) por el mismo material pero en medios líquidos o sólidos (dispersiones, pastas, compuestos).
 * Las aplicaciones de rociado deben reemplazarse por métodos de bajo aerosol (por ejemplo, métodos de cepillado, inmersión)
 
-#### Medidas técnicos
+## Medidas técnicos
 * Ventiación: El trabajo con nanomateriales solo debe realizarse en ambientes ventilados con presión negativa. El aire de escape no debe recircularse.
 * Las áreas de trabajo deben estar seperadas. En los laboratorios, el trabajo debe realizarse al menos con vitrinas de gases y, en el caso de nanomateriales peligrosos, en las denominadas cajas de guantes.
 * Los materiales del más alto nivel de seguridad solo deben realizarse en habitaciones con controles de acceso y ventilación con filtros F7 para el aire de escape.
@@ -24,7 +24,7 @@ Hay tres métodos, la sustitución, ver los métodos de trabajo, medidas técnic
 * Los polvos deben recogerse lo más completamente posible en el punto de descarga o generación y eliminarse de manera segura.
 * Debe evitarse un depósito de polvo. Si esto no es posible, los depósitos de polvo deben eliminarse con procesos húmedos, mojados, con aspiradores o extractores de polvo adecuados.
 
-#### Medidas de gestión
+## Medidas de gestión
 * Las salas en las que se utilicen nanomateriales deben estar bajo la supervisión de un experto en prevención.
 * Deben estar disponibles instrucciones y protocolos para la manipulación de nanomateriales.
 * La duración de la exposición debe acortarse tanto como sea posible. Los empleados deben usar el equipo de proteccion provisto. Se dispondrá de instalaciones de almacenamiento separadas para ropa de trabajo y de calle.

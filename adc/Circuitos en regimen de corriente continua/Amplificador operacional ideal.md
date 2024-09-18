@@ -4,7 +4,7 @@ tags:
   - adc/Circuitos-en-regimen-de-corriente-continua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un [[Amplificador operacional simplificado]] donde 
 * $R_i \to \infty ~ \Omega$, con $R_i$ siendo la [[Resistor|resistencia]] de entrada

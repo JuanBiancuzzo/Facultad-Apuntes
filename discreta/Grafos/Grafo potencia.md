@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $G$ un [[Grafo simple|grafo finito simple]], entonces denotamos el grafo potencia como $G^q$, donde $$ \begin{array}{c}
     V(G^q) = V(G) \\

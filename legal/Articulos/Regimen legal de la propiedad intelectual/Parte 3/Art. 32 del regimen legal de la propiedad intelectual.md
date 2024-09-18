@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Regimen legal de la propiedad intelectual/Parte 3/Par
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El derecho de publicar las cartas pertenece al autor. Después de la muerte del autor es necesario el consentimiento de las personas mencionadas en el artículo que antecede y en el orden ahí indicado."
 
-### Interpretación
+# Interpretación
 ---

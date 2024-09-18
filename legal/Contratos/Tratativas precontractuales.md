@@ -4,7 +4,7 @@ tags:
   - legal/Contratos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Veamos las tratativas preliminares
 * La negociación contractual
@@ -14,19 +14,19 @@ Veamos las tratativas preliminares
 * Libertad de negociación y deber de buena fe
 * La reparación del daño causado durante las tratativas preliminares
 
-#### La negociación contractual
+## La negociación contractual
 ---
 ![[Negociación contractual#Definición]]
 
-#### Cartas de intención
+## Cartas de intención
 ---
 ![[Art. 993 del CC y CN, Cartas de intención#Interpretación]]
 
-#### Acuerdos de confidencialidad
+## Acuerdos de confidencialidad
 ---
 ![[Art. 992 del CC y CN, Deber de confidencialidad#Interpretación]]
 
-#### La minuta
+## La minuta
 ---
 Otro acuerdo que las partes suelen celebrar durante las tratativas preliminares es la llamada minuta. La minuta es el convenio mediante el cual las partes revelan que han acordado determinadas cuestiones, pero han diferido para más adelante el tratamiento de otras, en el marco de un proceso negocial aún no culminado. 
 
@@ -35,7 +35,7 @@ Como puede verse, la minuta es un proyecto que puntualiza el resultado de las tr
 Este acuerdo, que claramente no es un [[Contrato|contrato]], tampoco configura un [[Art. 982 del CC y CN, Acuerdo parcial|acuerdo parcial]], pues así lo dispone de manera expresa el [[Art. 982 del CC y CN, Acuerdo parcial|artículo 982]].
 
 
-#### Libertad de negociación y deber de buena fe
+## Libertad de negociación y deber de buena fe
 ---
 Hemos señalado más arriba que es necesario conciliar dos cuestiones fundamentales cuando se trata de las tratativas preliminares. Por un lado, debe resguardarse la libertad de contratar que permite, finalmente, contratar o no contratar; por otro lado, resulta inadmisible amparar un obrar contrario a la buena fe en el curso de la negociación llevada a cabo por las partes.
 
@@ -68,7 +68,7 @@ Al deber de confidencialidad ya nos referimos anteriormente.
 Finalmente, por el deber de custodia, quien recibe una cosa para observarla o realizar sobre ella ensayos o pruebas debe guardarla y custodiarla, de manera de reintegrarla íntegra y en perfecto estado. Claramente estamos en la etapa precontractual, pues el ensayo o prueba se realiza antes de celebrar el contrato y justamente para determinar la conveniencia o no de su celebración.
 
 
-#### La reparación del daño causado durante las tratativas preliminares
+## La reparación del daño causado durante las tratativas preliminares
 ---
 Es ineludible referirse a las tesis de IHERING y de FAGGELLA cuando se trata de la reparación por los daños causados durante las tratativas preliminares.
 

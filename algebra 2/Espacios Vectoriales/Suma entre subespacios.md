@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-Vectoriales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Con dos subespacios $S$ y $T$ la suma esta definida como 
 $$S+T:=\{v \in \mathbb{V} : \exists ~~ s \in S, t \in T : v = s + t \}$$

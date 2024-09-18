@@ -4,7 +4,7 @@ tags:
   - taller/Sintaxis
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Provee un pattern matching (similiar al switch de C), se ejecuta la primera rama que cumple la condición.
 

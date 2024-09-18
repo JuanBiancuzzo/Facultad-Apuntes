@@ -4,7 +4,7 @@ tags:
   - señales/Filtros-digitales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Las aplicaciones de [[Filtro|filtros]] en tiempo discreto son muchas, entre ellas
 * Sistemas de comunicaciones
@@ -19,7 +19,7 @@ Las aplicaciones de [[Filtro|filtros]] en tiempo discreto son muchas, entre ella
 * Técnicas de estimación de procesos estocásticos
 * Técnicas de beamforming y antenas inteligentes
 
-#### Etapas
+## Etapas
 ---
 Las etapas de diseño de un filtro en tiempo discreto son
 

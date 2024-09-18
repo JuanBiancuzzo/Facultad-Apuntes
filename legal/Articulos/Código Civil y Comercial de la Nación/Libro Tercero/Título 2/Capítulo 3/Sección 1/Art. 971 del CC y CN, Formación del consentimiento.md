@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los contratos se concluyen con la recepción de la aceptación de una oferta o por una conducta de las partes que sea suficiente para demostrar la existencia de un acuerdo."
 
-### Interpretación
+# Interpretación
 ---

@@ -9,11 +9,11 @@ aliases:
 referencias:
   - "238"
 ---
-### Definición
+# Definición
 ---
 En desarrollo de producto, el producto viable mínimo (MVP) es un producto con suficientes características para satisfacer a los clientes iniciales, y proporcionar retroalimentación para el desarrollo futuro<sup><a href="#ref-238" style="color: inherit; text-decoration: none;">[238]</a></sup> 
 
-#### En sistemas embebidos
+## En sistemas embebidos
 ---
 Cuando un ingeniero tiene que diseñar una nueva solución [[System on a Chip|SoC]] y ha considerado las cuestiones relevantes destacadas en la sección anterior según lo que se requiere que haga el producto, debe pensar en los elementos clave que se utilizarán y/o desarrollarán
 
@@ -44,7 +44,7 @@ Para comenzar el diseño o la integración de un nuevo sistema, un ingeniero deb
     * Propietarios
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

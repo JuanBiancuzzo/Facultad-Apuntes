@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
 ---
-### Definición
+# Definición
 ---
 Son aquellos [[Resistor|resistores]] que comparten la misma [[Tensión]] entre los mismos [[Nodo]] ([[Elementos en paralelo]])
 

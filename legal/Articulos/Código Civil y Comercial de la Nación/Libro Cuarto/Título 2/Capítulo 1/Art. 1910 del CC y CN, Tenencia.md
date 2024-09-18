@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Cuarto/
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Hay tenencia cuando una [[Persona humana|persona]], por sí o por medio de otra, ejerce un poder de hecho sobre una cosa, y se comporta como representante del poseedor."
 
-### Interpretación
+# Interpretación
 ---
 
 

@@ -4,7 +4,7 @@ tags:
   - señales/Muestreo-e-Interpolación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La posibilidad de poder [[Muestreo|muestrear]] una [[Señal#^02aea6|señal de tiempo continuo]] y poder volver a recuperar la señal original a partir de sus muestras permite que muchas operaciones de procesamiento de una señal se puedan realizar en tiempo discreto
 
@@ -114,7 +114,7 @@ Aunque nosotros vamos a modelarlo con [[Sistema lineal e invariante en el tiempo
 \end{document}
 ```
 
-#### Analizando el sistema en cascada
+## Analizando el sistema en cascada
 ---
 Sabemos que la [[Transformada de Fourier en tiempo discreto|transformada de Fourier]] de $x(n)$ vale $$ X\left( e^{j\Omega} \right) = \frac{1}{T} X_c\left( j \frac{\Omega}{T} \right), ~~~ \Omega \in [-\pi, ~\pi) $$ recordando la relación entre $\omega$ y $\Omega$ vista [[Muestreo periódico#Transformada de Fourier|acá]], para el caso en el que no hay [[Aliasing|aliasing]] (que podemos asegurar aplicando un [[Filtro antialiasing|filtro antialiasing]]). De esta forma la señal $y(n)$ a la salida del sistema de procesamiento discreto se puede escribir como $$ Y\left( e^{j\Omega} \right) = H_d\left( e^{j\Omega} \right) ~ X\left( e^{j\Omega} \right) = \frac{1}{T} H_d\left( e^{j\Omega} \right) ~ X_c\left( j\frac{\Omega}{T} \right), ~~~ \Omega \in [-\pi, ~\pi) $$
 La señal de tiempo continuo $y_c(t)$ se puede escribir como $$ Y_c(j\omega) = \frac{1}{T} H_d\left(e^{j\omega T}\right) ~ H_r(j\omega) ~ X_c(j\omega), ~~~ \omega \in \mathbb{R} $$

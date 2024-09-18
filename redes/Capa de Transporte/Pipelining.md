@@ -5,11 +5,11 @@ tags:
   - nota/facultad
   - embebidos/Microcontroladores-de-32-bits
 ---
-### Definición
+# Definición
 ---
 Es una idea general, en la cual podemos intercalar [[Proceso|procesos]], agregándolos a una pipe
 
-#### En la capa de transporte
+## En la capa de transporte
 ---
 Se ve que para el [[Protocolo stop-and-wait|protocolo stop-and-wait]], tiene el problema de la velocidad y donde hay tiempo donde ambos, tanto el receptor como el emisor, están esperando sin hacer nada, entre otras [[Protocolo stop-and-wait#Desventajas|desventajas]]
 
@@ -21,7 +21,7 @@ La solución a estos problemas, es permitir que el remitente envíe múltiples p
 	* [[Protocolo Go-Back-N|Go-Back-N]]
 	* [[Protocolo Selective Repeat|Selective Repeat]]
 
-#### En el procesador
+## En el procesador
 ---
 Es una técnica para optimizar el [[Arquitectura del microprocesador|ciclo fetch-decode-execute]], tan pronto como se ha cargado una instrucción en el registro de instrucciones interno, se puede recuperar una nueva instrucción mientras se decodifica la primera
 

@@ -10,7 +10,7 @@ aliases:
   - Forward error correction
   - FEC
 ---
-### Definición
+# Definición
 ---
 El remitente incluye un bit adicional que indica que la cantidad de unos del [[Paquete|paquete]] completo es un par (o impar) (esto incluye el propio bit de paridad). Si ocurre una cantidad impar de errores, entonces este error es suficiente. Si este número es par, entonces no se detecta el error
 

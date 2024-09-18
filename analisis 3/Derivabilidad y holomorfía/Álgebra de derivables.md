@@ -4,7 +4,7 @@ tags:
   - analisis-3/Derivabilidad-y-holomorfía
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $f : D \to \mathbb{C}$ una función definida en un [[Conjunto abierto]] $D \subseteq \mathbb{C}$, [[Derivable]] en $z_0 \in D$
 
@@ -24,6 +24,6 @@ Sea $f : D \to \mathbb{C}$ una función definida en un [[Conjunto abierto]] $D \
 	Entonces, $g \circ f$ es [[Derivable]] y su derivada es $(g \circ f)'(z_0) = g'(f(z_0)) \cdot f'(z_0)$.
 7) Sea $g : D \to \mathbb{C}$ otra función definida en un [[Conjunto abierto]] $D \subseteq \mathbb{C}$, [[Derivable]] en $z_0 \in D$ y supongamos que $g$ no se anula en ninún punto de $D$. Entonces $\frac{f}{g} : D \to \mathbb{C}$ es [[Derivable]] en $z_0 \in D$ y ademas $$ \bigg(\frac{f}{g} \bigg)'(z_0)= \frac{f'(z_0) \cdot g(z_0) - f(z_0) \cdot g'(z_0)}{g(z_0)^2} $$
 
-### Observación
+# Observación
 ---
 Todas las propiedades y reglas de derivación son válidas para funciones derivables en un abierto, por lo que podría intercambiarse "derivable en $z_0$" por "derivable en $D$", y extendiendo las reglas de derivación.

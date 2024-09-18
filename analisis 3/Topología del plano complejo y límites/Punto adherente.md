@@ -4,7 +4,7 @@ tags:
   - analisis-3/Topología-del-plano-complejo-y-límites
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado un [[algebra 2/Espacios Vectoriales/Conjunto.md|conjunto]] no vació $U \subseteq \mathbb{C}$ y un punto $z_0 \in \mathbb{C}$:
 

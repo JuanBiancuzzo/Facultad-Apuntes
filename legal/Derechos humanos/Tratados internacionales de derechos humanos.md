@@ -4,7 +4,7 @@ tags:
   - legal/Derechos-humanos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[Carta de las Naciones Unidas|carta de naciones unidas]], con [[Norma constitucional internacional|normas de cooperación]] que vincula a 193 [[Estado|estados]] en el mundo, la [[Declaración universal de derechos humanos|declaración universal de derechos humanos]], y por lo tanto el tercer punto de esto fue la búsqueda de [[Tratado|tratados]], que son mucho más rápidamente verificables que la costumbres, ya que la verificación es ver cuando un estado se dijo que se [[Art. 724 del CC y CN, Definición|obligaba]] por el tratado.
 
@@ -13,7 +13,7 @@ De estas obligaciones que emergen de los tratados son
 * Proteger los derechos humanos y garantizarlos
 * La obligación de adoptar medidas
 
-#### Tratados
+## Tratados
 ---
 Estos son 9 tratados fundamentales en materia de derechos humanos que se adoptaron bajo los auspicios de [[Organización de las Naciones Unidas (ONU)|naciones unidas]]
 1. En 1965 la convención internacional para la eliminación de la discriminación racial

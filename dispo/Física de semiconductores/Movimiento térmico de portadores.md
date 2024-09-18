@@ -4,7 +4,7 @@ tags:
   - dispo/Física-de-semiconductores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En [[Equilibrio térmico en un semiconductor|equilibrio térmico]] los [[Carga eléctrica|portadores]] no están fijos en el espacio, sufren de colisiones con los átomos de $Si$ de la [[Red cristalina|red]] que están vibrando ([[Movimiento Browniano]]), interactuando con los átomos [[Dopaje|dopantes]] cargados y entre sí
 

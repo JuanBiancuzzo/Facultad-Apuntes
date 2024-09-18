@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Si la obra se contrata por el sistema de ejecución a coste y costas, la retribución se determina sobre el valor de los materiales, de la mano de obra y de otros gastos directos o indirectos."
 
-### Interpretación
+# Interpretación
 ---

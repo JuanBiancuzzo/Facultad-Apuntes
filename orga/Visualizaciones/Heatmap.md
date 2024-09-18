@@ -4,7 +4,7 @@ tags:
   - orga/Visualizaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un [[Plot de relación]], para dos variables con [[Distribución discreta]]. Nos permite ver muchos valores al mismo tiempo.
 

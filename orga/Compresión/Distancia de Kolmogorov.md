@@ -4,7 +4,7 @@ tags:
   - orga/Compresión
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se define la distancia entre dos cadena como $$ KD(x, y) = K(xy) - \min\Set{K(x), K(y)} $$
 Donde $K(x)$ es la [[Complejidad de Kolmogorov]].

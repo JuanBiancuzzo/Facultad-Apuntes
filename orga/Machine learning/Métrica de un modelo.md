@@ -4,7 +4,7 @@ tags:
   - orga/Machine-learning
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Hay diferentes métricas que pueden usarse para la [[Validación del modelo|validación de un modelo]], estas intentan cuantificar lo "correcto" que es dicho modelo, tenemos algunos como:
 * Accuracy $=\displaystyle\frac{\#\text{correctos}}{\#\text{totales}}$

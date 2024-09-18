@@ -4,14 +4,14 @@ tags:
   - seguridad/Contaminación-del-agua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se puede dividir en:
 * Compactos
 * Floculentos
 
-#### Compactos
+## Compactos
 Durante la sedimentación mantienen su masa, su volumen y su forma constantes.
 
-#### Floculentos
+## Floculentos
 Su volumen aparente es mayor que el real (son compactables). Durante la sedimentación se van aglomerando, su volumen y su forma van cambiado.

@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-Vectoriales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La suma directa es un caso especifico de la [[Suma entre subespacios|suma entre subespacios]] donde la [[Intersección entre subespacio]] es el vector nulo
 

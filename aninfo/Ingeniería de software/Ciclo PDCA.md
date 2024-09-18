@@ -4,18 +4,18 @@ tags:
   - aninfo/Ingeniería-de-software
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se establece el ciclo que todos los integrantes de la generación de un producto debería hacer 
 
-##### Plan
+### Plan
 Objetivos y plan para alcanzarlos
 
-##### Do
+### Do
 Ejecución del plan. Se desarrollan y prueban pequeños cambios. Se reúnen datos
 
-##### Check
+### Check
 Se evalúan los resultados obtenidos. Se mejoró? Se puede mejorar más?
 
-##### Act/Adjust
+### Act/Adjust
 Se mejora en proceso en función de los resultados de las dos fases anteriores

@@ -4,7 +4,7 @@ tags:
   - señales/Señales-y-sistemas
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Cada valor de la [[Señal|señal]] para cada $t$ o $n$, según sea continua o discreta, no está perfectamente determinado y obedece a una ley de [[Probabilidad|probabilidad]]. Se puede decir, que una señal estocástica es un conjunto de señales, todas perfectamente realizables, por un esquema subyacente de probabilidades.
 

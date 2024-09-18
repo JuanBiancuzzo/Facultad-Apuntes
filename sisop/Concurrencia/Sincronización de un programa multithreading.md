@@ -4,7 +4,7 @@ tags:
   - sisop/Concurrencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La programación [[Thread|multihilo]] extiende el [[Modelo secuencial]] de programación de un único [[Thread|hilo]] de ejecución. En este [[Modelo]] se puede encontrar dos escenarios posibles
 1. Un [[Programa]] está compuesto por un conjunto de [[Thread|threads]] independientes que operan sobre un conjunto de datos que están completamente separados entre sí y son independientes
@@ -26,11 +26,11 @@ El approach a seguir en estos casos es
 1. Estructurar el programa para que resulte fácil el razonamiento [[Concurrencia|concurrente]] 
 2. Utilizar un conjunto de primitivas estándares para sincronizar el acceso a los recursos compartidos
 
-#### Tipos de datos
+## Tipos de datos
 ---
 Estos tipos de datos son de extremada necesidad cuando se trabaja en un entorno [[Concurrencia|concurrente]]
 
-##### Contador
+### Contador
 ---
 ```c
 typedef struct __counter_t { 

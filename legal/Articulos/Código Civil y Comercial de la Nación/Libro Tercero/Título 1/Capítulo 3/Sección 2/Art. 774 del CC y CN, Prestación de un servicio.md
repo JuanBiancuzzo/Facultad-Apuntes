@@ -19,7 +19,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La prestación de un servicio puede consistir:
 
@@ -29,7 +29,7 @@ tags:
 
 Si el resultado de la actividad del deudor consiste en una cosa, para su entrega se aplican las reglas de las obligaciones de dar cosas ciertas para constituir derechos reales."
 
-### Interpretación
+# Interpretación
 ---
 
 

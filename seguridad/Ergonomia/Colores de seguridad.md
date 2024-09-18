@@ -4,7 +4,7 @@ tags:
   - seguridad/Ergonomia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un detalle [[Ergonomía|ergonomico]] como la [[Ergonomía visual|iluminación]]
 

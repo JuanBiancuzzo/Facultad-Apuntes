@@ -4,11 +4,11 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Regula la relaciones de las [[Persona jurídica|personas]] con el [[Estado|estado]], entre los estados y supraestatal.
 
-#### Ejemplos
+## Ejemplos
 ---
 * [[Derecho|Derecho]] Constitucional
 	* se encarga de la organización y funcionamiento del Estado y de los derechos fundamentales de los ciudadanos

@@ -7,7 +7,7 @@ aliases:
   - Inversor CMOS
   - Inversor MOS Complementaria
 ---
-### Definición
+# Definición
 ---
 El [[Circuito eléctrico|circuito]] es
 ```tikz
@@ -45,12 +45,12 @@ El [[Circuito eléctrico|circuito]] es
 
 Este dispositivo puede implementarse solo en tecnología [[Estructura Metal-Óxido-Semiconductor|MOS]] complementaria (CMOS) ya que requiere un [[Transistor|transistor]] de cada tipo
 
-#### Principio de funcionamiento
+## Principio de funcionamiento
 ---
 * Con $V_{IN} = 0 \implies V_{OUT} = V_{DD}$ $$ \begin{align} V_{GSn} = 0 < V_{Tn} ~~~~ &\implies \text{NMOS OFF} \\ V_{SGp} = V_{DD} > -V_{Tp} ~~~~ &\implies \text{PMOS ON} \end{align} $$
 * Con $V_{IN} = V_{DD} \implies V_{OUT} = 0$ $$ \begin{align} V_{GSn} = V_{DD} > V_{Tn} ~~~~ &\implies \text{NMOS ON} \\ V_{SGp} = 0 < -V_{Tp} ~~~~ &\implies \text{PMOS OFF} \end{align} $$
 
-#### Consumo de potencia
+## Consumo de potencia
 ---
 No consume [[Potencia|potencia]] cuando la salida está fija en un estado lógico
 * $0$: $V_{DSn} = 0~V$, $I_{Dp} = 0~A$
@@ -112,7 +112,7 @@ La [[Transferencia del sistema|función de transferencia]]:
 * Lógica "rail-to-rail": $V_{out}$ llega a $0$ y a $V_{DD}$
 * Elevada $|A_v|$ en cercanías de $V_M$
 
-##### Cálculo de $V_M$ 
+### Cálculo de $V_M$ 
 ---
 Para calcular $V_M$ consideramos que $I_{Dn} = -I_{Dp}$ y que ambos [[Transistor de efecto de campo metal-óxido-semiconductor|transistores]] están [[Saturación del transistor de efecto de campo metal-óxido-semiconductor|saturados]] $$ \overbrace{
 	k_n ( \underbrace{V_M}_{V{GSn}} - V_{Tn} )^2
@@ -136,7 +136,7 @@ Usualmente, $V_{Tn}$ y $V_{Tp}$ están fijados por la tecnología de fabricació
 	  \displaystyle \frac{W_n}{L_n} \mu_n 
   } \implies \frac{W_p}{L_p} \simeq 2 ~ \frac{W_n}{L_n} $$
   Depende de parámetros constructivos $W$ y $L$
-#### Carga de un inversor CMOS
+## Carga de un inversor CMOS
 ---
 En un [[Circuito digital|circuito digital]] CMOS la salida de cualquier [[Compuerta|compuerta]] está cargada por
 * Compuertas lógicas subsiguientes
@@ -149,7 +149,7 @@ $$ C_L = C_G + C_{wire} + C_{DBn} + C_{DBp} $$
 
 En CMOS las cargas siempre son [[Capacitancia|capacitivas]]
 
-#### Consumo dinámico de potencia del inversor CMOS
+## Consumo dinámico de potencia del inversor CMOS
 ---
 Cuando $V_{IN} = HI \to LO$, entonces $V_{OUT} = LO \to HI$
 * La batería aporta [[Energía|energía]] ($I_{bateria} \ne 0 ~ A$)
@@ -183,7 +183,7 @@ Para poder aumentar la frecuencia de trabajo, manteniendo el consumo ([[Temperat
 * Bajar $C_L$, equivalente a achicar los transistores
 * Bajar $V_{DD}$, tiene doble peso, por tener una dependencia cuadrática
 
-#### Tiempo de propagación
+## Tiempo de propagación
 ---
 Tiempo de propagación: retraso entre las señales de entrada y salida de una [[Compuerta|compuerta]]; figura de merito clave de la velocidad
 

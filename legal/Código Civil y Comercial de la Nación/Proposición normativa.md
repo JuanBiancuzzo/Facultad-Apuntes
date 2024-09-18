@@ -4,7 +4,7 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un enunciado descriptivo que refiere a una o varias [[Norma jurídica|normas jurídicas]]. El conjunto de estos enunciados constituye la ciencia jurídica, la que describe al [[Derecho|derecho]] (que está integrado por el conjunto de las normas jurídicas), precisamente, a través de proposiciones normativas.
 

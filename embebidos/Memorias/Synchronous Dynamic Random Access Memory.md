@@ -8,6 +8,6 @@ aliases:
   - Memoria de acceso aleatorio dinámica síncrona
   - DRAM síncrona
 ---
-### Definición
+# Definición
 ---
 Utiliza el mismo principio que [[Dynamic Random Access Memory|DRAM]] pero con acceso síncrono controlado por un reloj

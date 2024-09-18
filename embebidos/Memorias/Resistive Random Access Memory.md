@@ -8,6 +8,6 @@ aliases:
   - Memoria de acesso aleatorio resistiva
   - RRAM
 ---
-### Definición
+# Definición
 ---
 Similar a [[Phase-change Random Access Memory|PRAM]] en el uso de cambios de [[Conductividad eléctrica|resistencia eléctrica]], aquí en un [[Dieléctrico|dieléctrico]]

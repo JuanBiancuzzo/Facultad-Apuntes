@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Nomenclatura
 ---
-### Definición
+# Definición
 ---
 Un [[Conjunto|conjunto]], o como es [[Linealmente independiente|linealmente independiente]] podemos llamarlo [[algebra 2/Espacios Vectoriales/Base.md|base]], ortonormal es cuando es [[Conjunto ortogonal|conjunto ortogonal]] y todos sus vectores sean [[Versor|vectores]], y por lo que van a cumplir
 

@@ -10,7 +10,7 @@ aliases:
   - Ley de Gauss
   - Ley de Gauss para el Campo eléctrico#Para el campo eléctrico
 ---
-### Definición
+# Definición
 ---
 Sí se cumple que la [[Función|función]] $f$ es 
 * $f \in C^1(D)$, $D \subset \mathbb{R}^3 \to \mathbb{R}^3$
@@ -22,14 +22,14 @@ Este teorema permite calcular el flujo de superficies cerradas, con más facilid
 
 Si la superficie no es cerrada, se puede usar el teorema cerrando la superficie, pero restándole el flujo de la superficie agregada
 
-#### Para el campo eléctrico
+## Para el campo eléctrico
 ---
 La ley de Gauss tiene dos formas, la forma integral y la forma diferencial. Ambas relacionan el [[Campo eléctrico|campo eléctrico]] con la [[Carga eléctrica|carga]] encerrada, o con la densidad de carga $$ \begin{align} 
     {\subset\!\supset} \llap{\iint}_{\partial V} \vec{D} ~ d\vec{\sigma} &= Q_{\text{enc}}^{\text{libres}} \tag{integral} \\\\
     \nabla \vec{D} &= \rho_{\text{libres}} \tag{diferencial}
 \end{align} $$ donde $\vec{D}$ es el [[Campo de desplazamiento|campo desplazamiento]]
 
-#### Para el campo magnético
+## Para el campo magnético
 ---
 La ley de Gauss, relacionan el [[Campo de inducción magnética|campo de inducción magnética]]. Sin embargo, a diferencia de la ley de Gauss para el campo eléctrico, no podemos monopolizar los polos. Todo imán tiene ambos polos, incluso si los dividimos. Debido a esto, el flujo a través de una [[Superficie|superficie]] cerrada es nulo $$ \begin{align} 
     {\subset\!\supset} \llap{\iint}_{\partial V} \vec{B} ~ d\vec{\sigma} &= 0 \tag{integral} \\\\

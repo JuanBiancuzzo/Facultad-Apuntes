@@ -12,19 +12,19 @@ aliases:
 referencias:
   - "222"
 ---
-### Definición
+# Definición
 ---
 Es la potencia capaz de transformar la [[Energía|energía]] en [[Trabajo|trabajo]]. Este potencial es, la que realmente es consumida por los [[Circuito eléctrico|circuitos]]. Se designa con la letra $P$ $$ P = \frac{dW}{dt} $$
-##### Unidad
+### Unidad
 ---
 $$ [P] = \frac{J}{s} = \text{Watt} \space (W) $$
 
-#### Balance de potencia
+## Balance de potencia
 ---
 En un [[Circuito eléctrico|circuito]] cerrado, la potencia total del circuito deberá ser nula $$ P_\text{entrada} = P_{absorbida} + P_{disipada} $$
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

@@ -4,7 +4,7 @@ tags:
   - analisis-3/Funciones-elementales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son la [[Inversa local|inversa local]] de la [[Función potencia|función potencia]], por el [[Inversa local#Teorema de Inversibidad local|teorema de inversibilidad]], sabemos que las inversas locales de $p_n$, que significa $\sqrt[n]{~~}$, existen en torno de cada $z_0 \ne 0$ y que son [[Holomorfa|holomorfas]] 
 
@@ -18,10 +18,10 @@ $$\begin{align}
 \end{align}$$
 Donde $k \in \{0, 1, 2, \cdots, n - 1 \}$ y define las $n$ [[Partición|partición]] es de $\mathbb{C} - \{0\}$. Notar que es una notación propia
 
-### Observación
+# Observación
 ---
 Con la $\sqrt[n]{~~}$ divide el espació en $n$ regiones rotadas con respecto al origen
 
-### Acotación
+# Acotación
 ---
 A pesar de lo parece indicar la notación, esta cuenta solamente es válida en el dominio de definición de cada inversa local $\sqrt[n]{~~}$. **No existe** una función raíz $n$-ésima en $\mathbb{C} - \{ 0 \}$  

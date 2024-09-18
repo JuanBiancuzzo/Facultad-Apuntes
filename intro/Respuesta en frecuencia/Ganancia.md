@@ -4,11 +4,11 @@ tags:
   - intro/Respuesta-en-frecuencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La ganancia es una magnitud que expresa la relación entre la amplitud de una [[Señal|señal]] de salida respecto a la señal de entrada.
 
-##### Expresión
+### Expresión
 $$ G = \frac{V_0}{V_i}$$
 Siendo:
 $$ 
@@ -18,7 +18,7 @@ V_i: & \text{Amplitud entrada} \\
 \end{cases} 
 $$
 
-##### Unidad
+### Unidad
 ---
 $$\begin{align}
 [G] = Belios \space (B)

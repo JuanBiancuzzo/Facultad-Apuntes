@@ -4,7 +4,7 @@ tags:
   - dispo/Juntura-PN
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Partiendo del análisis con la [[Aproximación de vaciamiento|aproximación de vaciamiento]] donde asumimos que no hay una tensión aplicada y que se encuentra el [[Semiconductor|semiconductor]] en [[Equilibrio térmico en un semiconductor|equilibrio térmico]].
 
@@ -28,7 +28,7 @@ Como la [[Densidad volumétrica de carga eléctrica|densidad de carga]] ($\rho(x
 
 Veamos la aproximación de vaciamiento con esta tensión aplicada
 
-#### Polarización aplicada
+## Polarización aplicada
 ---
 Teniendo en cuenta la [[Tensión de contacto]], y viendo el análisis en la [[Juntura PN con polarización]], vemos que cambian los límites de la zona de vaciamiento (SCR) ($x_{n_0}$ y $x_{p_o}$), y notamos que 
 * en [[Convención de signos para la tensión de polarización#Polarización directa|directa]]: $\Delta V_{SCR} \downarrow \Rightarrow |E| \downarrow \Rightarrow x_d \downarrow$ 

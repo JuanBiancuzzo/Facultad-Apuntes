@@ -6,7 +6,7 @@ tags:
 aliases:
   - CISC
 ---
-### Definición
+# Definición
 ---
 Tiene más instrucciones, pero las instrucciones son de tamaño variable y es más lento. Como tiene instrucciones con acceso a [[Memoria|memoria]], utiliza menos registros
 

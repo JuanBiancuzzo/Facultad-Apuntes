@@ -11,7 +11,7 @@ aliases:
   - TEM#Onda TEM
   - Velocidad de la luz en el vacio#^velocidad-luz-vacio
 ---
-### Definición
+# Definición
 ---
 Para resolver el caso del [[Campo eléctrico|campo eléctrico]] y [[Campo de inducción magnética|campo magnético]] en un medio sin pérdidas comúnmente denominado [[Dieléctrico|dieléctrico]] perfecto en ausencia de fuentes
 
@@ -52,7 +52,7 @@ Donde podemos definir la [[Impedancia|impedancia]] intrínseca del vacío como $
 ^impedancia-intrinseca-vacio
 Entonces podemos expresar el campo magnético como $$ H_y(z) = \frac{E_0^+}{Z_{00}} ~ e^{-j\beta z} - \frac{E_0^-}{Z_{00}} ~ e^{j\beta z} = \frac{E_0^+}{Z_{00}} ~ \cos(\omega t - \beta z) - \frac{E_0^-}{Z_{00}} ~ \cos(\omega t + \beta z) $$
 
-#### Onda TEM
+## Onda TEM
 ---
 Una onda transversal electromagnética (TEM) que se proponga en $+z$ polarizada en $x$ $$ \begin{align}
     E_x(z) &= E_0^+ \cos(\omega t - \beta z) + E_0^- \cos(\omega t + \beta z) \\

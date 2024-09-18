@@ -4,6 +4,6 @@ tags:
   - orga/Visualizaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son [[Plot|plots]] donde tienen en el eje x la variable [[Distribución continua|continua]] que es el tiempo.

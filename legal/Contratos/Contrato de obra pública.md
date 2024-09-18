@@ -4,7 +4,7 @@ tags:
   - legal/Contratos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El [[Contrato de obra|contrato de obra]] pública es
 * [[Clasificación de contratos#Contratos unilaterales y bilaterales|Bilateral]]
@@ -21,7 +21,7 @@ El [[Contrato de obra|contrato de obra]] pública es
 	* El comitente es la Administración Pública
 
 
-#### Vínculo jurídico entre las partes
+## Vínculo jurídico entre las partes
 ---
 La [[Relación jurídica|relación jurídica]] es asimétrica. El comitente es el [[Estado|estado]] y la obra es un bien público. El estado tiene un nivel jurídico superior. Hay subordinación jurídica del locador respecto del locatario.
 
@@ -29,7 +29,7 @@ Existen cláusulas exorbitantes a favor de la administración. Estas cláusulas 
 
 Es típico de los contratos administrativos el que contengan cláusulas exorbitantes, es decir, en las cuales la administración pública tiene una serie de derechos que en cierta forma rompen con el principio tradicional de Derecho Civil de igualdad de las partes en un contrato; esas cláusulas son por ejemplo, en el contrato de obra, las de las especificaciones y planos que se imponen al contratista, la suspensión de las obras y modificación de las mismas sin indemnización, la cláusula de recisión unilateral, así como las que establecen la intervención de órganos de la administración pública.
 
-#### Documentación licitaria
+## Documentación licitaria
 ---
 * Presupuesto y proyecto oficial
 * Pliego de condiciones generales
@@ -40,11 +40,11 @@ Es típico de los contratos administrativos el que contengan cláusulas exorbita
 * Planilla de cómputos
 * Planilla de oferta o Propuesta económica
 
-#### Responsabilidad precontractual
+## Responsabilidad precontractual
 ---
 La administración no reconoce responsabilidad precontractual derivada de estudios, planos y demás gastos anteriores incurridos por el contratista. No obstante, la administración no queda liberada de su responsabilidad por "daños y perjuicios" cuando ésta procede a una adjudicación arbitraria.
 
-#### Adjudicación
+## Adjudicación
 ---
 * Criterios
 	* Aceptación formal de la oferta más conveniente
@@ -52,7 +52,7 @@ La administración no reconoce responsabilidad precontractual derivada de estudi
 	* Lleva firma del funcionario público competente. La comunicación al adjudicatario es a través de un documento formal
 * Constitución del fondo de garantía de ejecución del contrato
 
-#### Causales de rescisión
+## Causales de rescisión
 ---
 * Imputables al contratista ([[Art. 50 de la Ley de Obras públicas|art. 50]])
 	* Cuando abandone las obras o interrumpa los trabajos por plazo mayor de 8 días en tres ocasiones

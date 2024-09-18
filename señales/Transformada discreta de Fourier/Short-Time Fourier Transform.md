@@ -6,5 +6,5 @@ tags:
   - señales/Transformada-discreta-de-Fourier
   - nota/facultad
 ---
-### Definición
+# Definición
 ---

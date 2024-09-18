@@ -4,7 +4,7 @@ tags:
   - sisop/File-system
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[System call|system call]] `close()` cierra un [[File descriptor|file descriptor]]. Si este ya está cerrado devuelve un error
 

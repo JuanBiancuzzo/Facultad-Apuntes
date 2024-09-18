@@ -4,7 +4,7 @@ tags:
   - sisop/Virtualización-de-memoria
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 A diferencia del uso de un único par de [[Traslación de direcciones con registros de base y segmento|registros de base y segmento]], esté método tiene un arreglo de pares de registros de base y segmento por cada [[Proceso|proceso]].
 
@@ -20,13 +20,13 @@ En una dirección virtual utilizando esta técnica, los bit de más alto orden s
 
 ![[Traslación de direcciones con tabla de segmentos.webp]]
 
-#### Detalles
+## Detalles
 ---
 1. El [[Stack|stack]] crece hacia atrás o backward, por ende [[Hardware|hardware]] necesita saber sobre eso en un bit de información
 2. A veces es necesario poder compartir ciertos segmentos entre varios procesos, para ello el hardware necesita proporcionar un mecanismo, otro bit que permita saber si se puede ejecutar, escribir o leer por varios procesos a la vez. Para ello se usan un par de bits llamados bits de protección
 3. Todo lo hace el hardware en este caso la [[Memory Management Unit|MMU]]
 4. Segmentación de grano fino vs segmentación de grano grueso. La primera consiste en tener muchos segmentos pequeños y la segunda consiste en tener pocos segmentos grandes.
 
-#### Problemas
+## Problemas
 ---
 El problema principal es la fragmentación, precisamente la fragmentación extrema. Donde la cantidad de segmentos aumenta, y se dispersa la memoria de cada proceso.

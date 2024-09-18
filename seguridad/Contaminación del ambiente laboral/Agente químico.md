@@ -4,6 +4,6 @@ tags:
   - seguridad/Contaminación-del-ambiente-laboral
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Capacidad de sustancia o sus productos metabólicos, en determinadas dosis, de ocasionar un daño a la salud.

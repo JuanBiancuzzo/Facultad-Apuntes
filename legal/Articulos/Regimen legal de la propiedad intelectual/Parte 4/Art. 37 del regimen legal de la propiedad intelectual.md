@@ -12,11 +12,11 @@ previo: "[[legal/Articulos/Regimen legal de la propiedad intelectual/Parte 4/Par
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Habrá contrato de edición cuando el titular del derecho de propiedad sobre una obra intelectual, se obliga a entregarla a un editor y éste a reproducirla, difundirla y venderla.
 
 Este contrato se aplica cualquiera sea la forma o sistema de reproducción o publicación."
 
-### Interpretación
+# Interpretación
 ---

@@ -6,7 +6,7 @@ tags:
   - señales/Transformada-de-Fourier
   - analisis-3/Transformada-de-Fourier
 ---
-### Definición
+# Definición
 ---
 En [[física/física cuántica/Índice|mecánica cuántica]], principio de [[Incertidumbre|incertidumbre]] establece la imposibilidad de que determinados pares de [[Magnitud física observable|magnitud física observables]] y complementarias sean conocidas por precisión arbitraria
 

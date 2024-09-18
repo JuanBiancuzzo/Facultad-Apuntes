@@ -4,7 +4,7 @@ tags:
   - seguridad/Riesgo-eléctrico-y-radiación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La dosis absorbida o simplemente dosis, representa la energía absorbida en un medio por unidad de masa. Se expresa en Gray ($Gy$), que equivale a $1~Joule \cdot kg^{-1}$ .
 

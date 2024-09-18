@@ -4,7 +4,7 @@ tags:
   - redes/Capa-de-aplicación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta capa representa la aplicación como tal, en la que puede ejecutarse en diferentes [[Host|host]], comunicados través de la [[Red|red]]. Esta en general no es dedicada para [[Router|routers]] o [[Link-layer switches|link-layer switches]], que generalmente corren en capas inferiores como la [[Capa de Red|capa de red]]
 

@@ -4,13 +4,13 @@ tags:
   - estructura/Registros-y-contadores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Para estos casos el [[Contador]] puede ser [[Contador sincrónico|sincrónico]] o [[Contador asincrónico|asincrónico]], se puede usar un [[Flip-Flop T sincrónico|flip-flop T sincrónicos]] como también un [[Flip-Flop JK sincrónico|flip-flop jk sincrónico]], pero donde las entradas de estos dependan de las salidas de los anteriores. 
 
 Esto lo podemos hacerlo visualizando el [[Diagrama de estado]] donde cada esta representado con un valor de $n$ bits. Estableciendo una tabla que represente los cambios de estado, y después viendo como deben ser las entradas de los flip-flop correspondientes según el estado actual.
 
-#### Ejemplo
+## Ejemplo
 Para entender la situación, en este caso contaremos hasta 6, entonces tendremos 7 estados que nos interesan, y un estado que no nos interesa. Usaremos [[Flip-Flop JK sincrónico|flip-flop jk sincrónico]] que es el caso más difícil de analizar. 
 
 Los estados del $0$ al $7$ los representaremos con sus valores en binario, por lo que en total necesitaremos $3$ flip-flops que es lo mínimo para representar los 8 estados.

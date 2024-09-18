@@ -7,9 +7,9 @@ previo: "[[legal/Articulos/Regimen legal de la propiedad intelectual/Parte 2/Par
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Salvo convenios especiales los colaboradores de una obra disfrutan derechos iguales; los colaboradores anónimos de una compilación colectiva, no conservan derecho de propiedad sobre su contribución de encargo y tendrán por representante legal al editor."
 
-### Interpretación
+# Interpretación
 ---

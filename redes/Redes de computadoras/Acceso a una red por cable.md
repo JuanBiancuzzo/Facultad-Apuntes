@@ -10,7 +10,7 @@ tags:
   - nota/facultad
   - redes/Capa-de-Enlace
 ---
-### Definición
+# Definición
 ---
 El acceso por cable a la [[Red|red]] utiliza la infraestructura de la televisión por cable existente
 
@@ -20,17 +20,17 @@ El acceso por cable a red requiere el uso de [[Router|módems]] especiales, que 
 
 Una característica importante del acceso a [[Internet|internet]] por cable es que se trata de un medio de difusión compartido. Se necesita un protocolo distribuido de acceso múltiple para coordinar las transmisiones y evitar las colisiones
 
-#### Cable de cobra de par trenzado
+## Cable de cobra de par trenzado
 ---
 Este cable consta de dos hilos de cobre aislados, de un milímetro de espesor cada uno de ellos, que siguen un patrón regular en espiral. Los hilos se trenzan para reducir las interferencias eléctricas procedentes de pares similares próximos. Normalmente, se meten una serie de pares dentro de un mismo cable, envolviendo todos los pares en una pantalla protectora
 
 Cada par de hilos constituye un único enlace de comunicaciones. Las velocidades de transmisión de datos que se pueden alcanzar dependen del espesor del cable y de la distancia existente entre el transmisor y el receptor
 
-#### Cable coaxial
+## Cable coaxial
 ---
 Al igual que el par trenzado, el cable coaxial consta de dos [[Conductor|conductores]] de cobre, pero dispuestos de forma concéntrica, en lugar de en paralelo. Puede proporcionar altas velocidades de transmisión de datos
 
-#### Fibra óptica
+## Fibra óptica
 ---
 La fibra óptica es un medio flexible y de muy pequeño espesor que conduce pulsos de luz, representando cada pulso un bit. Un único cable de fibra óptica puede soportar velocidades de bit tremendamente altas, de hasta decenas o incluso centenares de gigabits por segundo
 

@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Las partes son libres para promover tratativas dirigidas a la formación del contrato, y para abandonarlas en cualquier momento."
 
-### Interpretación
+# Interpretación
 ---

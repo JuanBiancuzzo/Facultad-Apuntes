@@ -4,20 +4,20 @@ tags:
   - aninfo/Ingeniería-de-software
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[Calidad]] del software depende de la tecnología que utilicemos, los recursos humanos, y la eficacia y eficiencia de los [[Proceso|procesos]].
 
 Podemos dividirlo en dos factores de calidad
 
-#### Durante el uso
+## Durante el uso
 ---
 * Efectividad
 * Productividad
 * Seguridad
 * Satisfacción
 
-#### Interna y externa
+## Interna y externa
 ---
 * Funcionalidad
 	* Idoneidad

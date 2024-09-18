@@ -4,7 +4,7 @@ tags:
   - sisop/Concurrencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Una forma menos compleja de alcanzar una solución para el problema de la heladera es mediante la utilización de locks. Un lock es una variable que permite la [[Sincronización de un programa multithreading|sincronización]] mediante la exclusión mutua, cuando un [[Thread]] tiene el candado o lock, ningún otro puede ternerlo.
 

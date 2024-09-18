@@ -4,6 +4,6 @@ tags:
   - bdd/General
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Una clave foránea es aquella columna que existiendo como dependiente en una tabla, es a su vez [[Clave primaria|clave primaria]] en otra [[Tabla SQL|tabla]]

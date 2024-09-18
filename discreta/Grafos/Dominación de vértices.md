@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $G$ un [[Grafo|grafo]], $S \in V(G)$ es un conjunto de vértices dominantes si y solo si $$ \bigcup_{v \in S} \Gamma(v) = V(G) $$
 Este es fuertemente dominante si se cumple la propiedad con el [[Entorno#Entorno cerrado de un vértice|entorno cerrado]] $\Gamma(v)$ 

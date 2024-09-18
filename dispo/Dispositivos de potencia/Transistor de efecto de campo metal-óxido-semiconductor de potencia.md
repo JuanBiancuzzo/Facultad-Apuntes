@@ -6,7 +6,7 @@ tags:
   - dispo/Dispositivos-de-potencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Las características de un [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] de [[Transistor de potencia|potencia]]
  * Contactos de gran superficie y en caras opuestas para reducir las resistencias parásitas

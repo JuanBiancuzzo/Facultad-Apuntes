@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la probabilidad de que suceda algo, relacionada con una consecuencia determinada.
 

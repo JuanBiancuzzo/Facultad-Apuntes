@@ -4,7 +4,7 @@ tags:
   - sisop/Kernel
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En el caso de Linux y contrariamente a lo que la mayoría de los usuarios creen, Linux no es un sistema operativo sino que Linus desarrolló solo un [[Kernel|kernel]]. El resto de los componentes de Linux son desarrollos de terceros como por ejemplo GNU.
 

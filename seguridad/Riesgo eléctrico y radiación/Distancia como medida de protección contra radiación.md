@@ -4,7 +4,7 @@ tags:
   - seguridad/Riesgo-eléctrico-y-radiación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Aumentando la distancia entre el operador y la fuente de [[Radiación ionizante|radiaciones ionizantes]], la exposición disminuye en la mismo proporción en que aumenta el cuadrado de la distancia. En muchos casos bastará con alejarse suficientemente de la fuente de [[Radiación]] para que las condiciones de trabajo sean aceptables.
 

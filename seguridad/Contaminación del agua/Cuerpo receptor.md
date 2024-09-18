@@ -4,6 +4,6 @@ tags:
   - seguridad/Contaminación-del-agua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Lugar físico donde descarga el efluente: mar cuerpo de [[Agua]] superficial, conducto pluvial, conducto cloacal, el suelo.

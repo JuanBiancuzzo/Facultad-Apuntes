@@ -15,11 +15,11 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
 ```
-### Definición
+# Definición
 ---
 Este estándar que sirve de referencia del [[Software|software]] que interactúa con la elaboración de [[Página web|páginas web]] en sus diferentes versiones. Define una estructura básica y un código para la presentación de contenido de una página web, que incluye texto, imágenes, videos, juegos, entre otros elementos
 
-#### Listado de etiquetas
+## Listado de etiquetas
 ---
 Estas se pueden dividir en las siguientes categorías
 * Tags iniciales
@@ -93,7 +93,7 @@ Estas se pueden dividir en las siguientes categorías
     * `<option></option>`:  Etiqueta ligada a `<select>`, donde permite añadir diferentes opciones al `<select>`
     * `<textarea></textarea>`: Añade un campo al usuario para que pueda introducir texto en unas líneas máximas de texto que el desarrollador puede definir
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
@@ -102,7 +102,7 @@ Estas se pueden dividir en las siguientes categorías
 
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

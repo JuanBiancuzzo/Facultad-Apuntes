@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Cuarto/
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La hipoteca es el derecho real de garantía que recae sobre uno o más inmuebles individualizados que continúan en poder del constituyente y que otorga al acreedor, ante el incumplimiento del deudor, las facultades de persecución y preferencia para cobrar sobre su producido el crédito garantizado."
 
-### Interpretación
+# Interpretación
 ---

@@ -4,7 +4,7 @@ tags:
   - orga/Visualizaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En este [[Plot]] se combinan el [[Densidy plot]], espejado, y adentro del mismo se muestra un [[Box plot]]. En este caso se estan comparando en el eje x una [[Distribución discreta]] que con estos graficos pueden ser muy útiles para comparar.
 

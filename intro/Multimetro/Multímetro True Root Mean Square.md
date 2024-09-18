@@ -7,11 +7,11 @@ aliases:
   - Multímetro True RMS
   - Multímetro Verdadero Valor Eficaz
 ---
-### Definición
+# Definición
 ---
 Es un tipo de [[Multímetro|multímetro]] que utiliza la medida True RMS (**Verdadero Valor Eficaz**) que consta de fórmulas matemáticas más complejas que permiten obtener un valor más aproximado a la realidad que otros multímetros.
 
-#### Modos
+## Modos
 ---
 - Modo DC: 
 Utiliza la función definida en el apartado de [[Tensión promedio|tensión promedio]]

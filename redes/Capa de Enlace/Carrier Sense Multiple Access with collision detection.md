@@ -9,7 +9,7 @@ aliases:
   - CSMA with collision detection
   - CSMA/CD
 ---
-### Definición
+# Definición
 ---
 La segunda regla permite detectar las colisiones y reducir significativamente el tiempo perdido. Para determinar el tiempo de espera antes de volver a probar de transmitir, se utiliza el [[Algoritmo|algoritmo]] de binary exponential backoff
 
@@ -17,7 +17,7 @@ Cuando se retransmite un [[Paquete|paquete]] que ya experimento $n$ colisiones, 
 
 Debido al tiempo de espera creciente por colisiones, este [[Protocolo|protocolo]] no sirve para aplicaciones de tiempo real
 
-#### Eficiencia
+## Eficiencia
 ---
 Cuando únicamente hay un nodo enviando [[Información|información]], la tasa de envío será la máxima. Por el otro lado, si transmiten muchos nodos a la vez, la eficiencia será mucho menor
 

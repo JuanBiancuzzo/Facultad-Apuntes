@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se implementa en aquellas tareas de mayor [[Riesgo]]. Se describe la secuencia del trabajos, los riesgos y las [[Medida de prevención|medidas preventivas]]
 

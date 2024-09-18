@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Es aquella que tiene por objeto una abstención del deudor o tolerar una actividad ajena. Su incumplimiento imputable permite reclamar la destrucción física de lo hecho, y los daños y perjuicios."
 
-### Interpretación
+# Interpretación
 ---

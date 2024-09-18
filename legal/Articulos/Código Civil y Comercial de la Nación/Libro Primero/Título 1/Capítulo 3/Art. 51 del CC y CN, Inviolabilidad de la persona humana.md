@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La [[Persona humana|persona humana]] es inviolable y en cualquier circunstancia tiene [[Derecho|derecho]] al reconocimiento y respeto de su dignidad."
 
-### Interpretación
+# Interpretación
 ---

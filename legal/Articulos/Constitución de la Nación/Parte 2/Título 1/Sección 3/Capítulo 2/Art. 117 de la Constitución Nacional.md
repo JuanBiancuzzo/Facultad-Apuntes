@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Constitución de la Nación/Parte 2/Título 1/Secció
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "En estos casos la [[Corte Suprema|Corte Suprema]] ejercerá su jurisdicción por apelación según las reglas y excepciones que prescriba el Congreso; pero en todos los asuntos concernientes a embajadores, ministros y cónsules extranjeros, y en los que alguna provincia fuese parte, la ejercerá originaria y exclusivamente."
 
-### Interpretación
+# Interpretación
 ---

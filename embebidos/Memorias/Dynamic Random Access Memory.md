@@ -8,7 +8,7 @@ aliases:
   - Memoria de acceso aleatorio dinámica
   - RAM dinámica
 ---
-### Definición
+# Definición
 ---
 La idea principal detrás de la DRAM es hacer uso de un elemento de [[Memoria volátil|memoria]] basado en un solo [[Transistor|transistor]] para memorizar y acceder a un poco de [[Información|información]]. La ganancia de rendimiento es enorme (aproximadamente $4$ veces en comparación con [[Static Random Access Memory|SRAM]]), pero es necesario actualizar la memoria completa cada pocos milisegundos. El accesso se realiza en dos pasos
 1. Selección de una fila de bits

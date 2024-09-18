@@ -4,7 +4,7 @@ tags:
   - legal/Contratos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Finalmente, existe el llamado contrato plurilateral, cuyos rasgos distintivos son los siguientes: 
 1. Las [[Art. 724 del CC y CN, Definición|obligaciones]] no son correlativas para las partes, sino que cada una adquiere [[Derecho|derechos]] y obligaciones respecto de todas las demás

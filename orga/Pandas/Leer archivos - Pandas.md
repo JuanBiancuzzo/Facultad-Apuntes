@@ -4,7 +4,7 @@ tags:
   - orga/Pandas
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Usando [[Pandas]], podemos leer un [[Archivo csv|archivos.csv|]] como:
 

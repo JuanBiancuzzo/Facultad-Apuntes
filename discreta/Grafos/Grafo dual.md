@@ -6,7 +6,7 @@ tags:
 aliases:
   - Grafo bidual
 ---
-### Definición
+# Definición
 ---
 Dado una [[Grafo planar|inmersión]] de un [[Grafo|grafo]] $G$, se define su dual $G^*$ al grafo que tiene tantos vértices como caras del original, existiendo una arista entre dos vértices del dual por cada arista de frontera entre las correspondientes caras del original. El dual del dual se llama bidual, y se denota $G^{**}$
 

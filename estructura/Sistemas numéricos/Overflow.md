@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - embebidos/Microcontroladores-de-32-bits
 ---
-### Definición
+# Definición
 ---
 Cuando una operación con signo involucra dos números con signo, si se [[Suma de enteros|suman]] dos números positivos y el resultado es negativo, es un error y se activa el [[Unidad Aritmético Lógica#Flags|flag]] de overflow `V`. De manera similar, cuando se suman dos números negativos y el resultado es positivo
 

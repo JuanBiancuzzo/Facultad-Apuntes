@@ -4,6 +4,6 @@ tags:
   - aninfo/Verificación-y-validación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 [[Verificación]] y [[Validación]] pueden tener lugar en cualquier momento del ciclo de vida.

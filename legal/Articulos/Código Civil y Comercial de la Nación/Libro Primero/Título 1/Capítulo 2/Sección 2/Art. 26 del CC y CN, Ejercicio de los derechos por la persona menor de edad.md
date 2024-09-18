@@ -18,7 +18,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La persona menor de edad ejerce sus derechos a través de sus representantes legales.
 No obstante, la que cuenta con edad y grado de madurez suficiente puede ejercer por sí los actos que le son permitidos por el ordenamiento jurídico. En situaciones de conflicto de intereses con sus representantes legales, puede intervenir con asistencia letrada.
@@ -31,5 +31,5 @@ Si se trata de tratamientos invasivos que comprometen su estado de salud o está
 
 A partir de los dieciséis años el adolescente es considerado como un adulto para las decisiones atinentes al cuidado de su propio cuerpo."
 
-### Interpretación
+# Interpretación
 ---

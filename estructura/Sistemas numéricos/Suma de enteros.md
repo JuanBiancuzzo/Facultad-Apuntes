@@ -4,7 +4,7 @@ tags:
   - estructura/Sistemas-numéricos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La suma entre dos números de cualquier base, uno separa por [[Símbolo|símbolos]] 
 $$ \begin{matrix} 

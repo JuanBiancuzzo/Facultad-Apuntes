@@ -4,7 +4,7 @@ tags:
   - orga/Visualizaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Este [[Plot]] muestra las proporciones como un [[Pie plot]] pero para varias variables al mismo tiempo.
 

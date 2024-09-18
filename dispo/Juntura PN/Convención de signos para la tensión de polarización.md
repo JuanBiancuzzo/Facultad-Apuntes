@@ -7,7 +7,7 @@ aliases:
   - Juntura en directa#Polarización directa
   - Juntura en inversa#Polarización inversa
 ---
-### Definición
+# Definición
 ---
 Usaremos la convención para la polarización de la [[Juntura PN|juntura PN]] 
 
@@ -35,10 +35,10 @@ Usaremos la convención para la polarización de la [[Juntura PN|juntura PN]]
 \end{document}
 ```
 
-##### Polarización directa
+### Polarización directa
 ---
 Diremos que estamos en directa cuando la [[Tensión|tensión]] $V > 0$
 
-##### Polarización inversa
+### Polarización inversa
 ---
 Diremos que estamos en inversa cuando la [[Tensión|tensión]] $V < 0$

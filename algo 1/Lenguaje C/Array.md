@@ -4,5 +4,5 @@ tags:
   - algo-1/Lenguaje-C
   - nota/facultad
 ---
-### Definición
+# Definición
 ---

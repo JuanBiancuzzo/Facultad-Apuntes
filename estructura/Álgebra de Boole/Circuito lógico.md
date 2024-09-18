@@ -4,6 +4,6 @@ tags:
   - nota/facultad
   - estructura/Álgebra-de-Boole
 ---
-### Definición
+# Definición
 ---
 Un circuito es una interconexión de [[Compuerta|compuertas]]. Estas pueden ser [[Circuito combinacional|combinacionales]] o [[Circuito secuencial|secuenciales]]

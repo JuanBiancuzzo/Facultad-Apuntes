@@ -4,7 +4,7 @@ tags:
   - legal/Contratos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Según el [[Art. 1251 del CC y CN, Definición|artículo 1251]], el contrato de servicios tiene lugar cuando una de las partes se obligare a prestar un servicio y la otra a pagarle por ese servicio un precio en dinero
 
@@ -15,7 +15,7 @@ Elementos
 * [[Extinción del contrato de servicios|Extinción del contrato]]
 * [[Contratos de servicios profesionales|Contratos de servicios profesionales]]
 
-#### Distinción con el [[Art. 21 de la ley de Contrato de Trabajo, Contrato de trabajo|contrato de trabajo]]
+## Distinción con el [[Art. 21 de la ley de Contrato de Trabajo, Contrato de trabajo|contrato de trabajo]]
 ---
 Dadas las similitudes que presentan ambas figuras, resulta necesario diferenciar el contrato de servicios del contrato de trabajo, en tanto sus características similares han posibilitado que varios empleadores intenten encubrir una relación de empleo detrás de una prestación de servicios con el fin de evadir sus obligaciones laborales y tributarias.
 
@@ -25,26 +25,26 @@ Desde esta perspectiva, podemos enunciar que las principales diferencias radican
 3. La tutela del trabajador y la normativa de orden público que regula los vínculos laborales
 4. La tutela del usuario del servicio que efectúa la Ley de Defensa del Consumidor, inaplicable a las relaciones de trabajo.
 
-##### La independencia en la prestación del servicio
+### La independencia en la prestación del servicio
 ---
 La primera gran nota distintiva del contrato de servicios es la autonomía de la que goza el prestador frente a la dependencia que tiene el empleado respecto de su empleador. Sostiene en este sentido la doctrina del derecho del trabajo que las notas de dependencia o subordinación en la relación de trabajo pueden ser tres
 
-###### Técnica
+#### Técnica
 ---
 El empleador tiene la facultad de organizar el empleo y de indicarle al trabajador qué tareas debe realizar ([[Art. 64 de la ley de Contrato de Trabajo, Facultad de organización|arts. 64]] a [[Art. 66 de la ley de Contrato de Trabajo, Facultad de modificar las formas y modalidades del trabajo|66]], [[Ley de Contrato de Trabajo|ley 20.744 de Contrato de Trabajo]]). También el empleador tendrá facultades disciplinarias sobre el empleado (apercibimiento, suspensión y despido) ([[Art. 67 de la ley de Contrato de Trabajo, Facultades disciplinarias. Limitación|arts. 67 y ss., ley 20.744]]).
 
-###### [[Economía|Económica]]
+#### [[Economía|Económica]]
 ---
 El empleado depende de su salario, el cual goza de especial tutela en el ordenamiento laboral. Sobre este tema hablaremos en el punto siguiente.
 
-###### Material
+#### Material
 ---
 El empleador le provee al empleado los materiales con los que debe realizar la tarea. 
 
 La existencia de una o más de estas notas características deberá hacernos suponer que estamos frente a una relación de empleo y no frente a un contrato de servicios; por cuanto es clara la norma que establece la presunción de que toda prestación de servicios, independientemente de la forma contractual que se le dé, hace presumir la existencia un contrato de trabajo salvo prueba en contrario ([[Art. 23 de la ley de Contrato de Trabajo, Presunción de la existencia del contrato de trabajo|art. 23, ley 20.744]]).
 
 
-##### La libertad para pactar las remuneraciones
+### La libertad para pactar las remuneraciones
 ---
 Si bien la [[Clasificación de contratos#Contratos onerosos y gratuitos|onerosidad]] es una nota propia de ambos contratos, y tanto el honorario en los contratos de servicios, como el salario en los contratos de empleo gozan de la protección que les otorga su condición de alimentarios; lo cierto es que en el contrato de servicios existe mayor libertad para negociar el monto de la contraprestación. 
 
@@ -58,7 +58,7 @@ Así pues el empleador podrá negociar con el trabajador el pago de sumas y conc
 
 Además, y como veremos más adelante, estas sumas (al igual que el resto de los derechos de los trabajadores) son indisponibles por parte del trabajador, por lo que no podrán ni renunciar a sumas reconocidas, ni tampoco ceder el salario a terceros.
 
-##### La tutela del trabajado y la normativa de [[Art. 12 del CC y CN, Orden público. Fraude a la ley|orden público]] que regula los vínculos laborales
+### La tutela del trabajado y la normativa de [[Art. 12 del CC y CN, Orden público. Fraude a la ley|orden público]] que regula los vínculos laborales
 ---
 Tal como hemos visto en el punto anterior, la normativa reguladora de las relaciones laborales tiene la finalidad de proteger al más débil en la relación jurídica, ello es, al trabajador. Las normas laborales son, pues, de orden público y, por lo tanto, indisponibles para las partes. 
 
@@ -73,15 +73,15 @@ Esta función tuitiva se sustenta en una serie de principios propios del derecho
 
 3. Presunción de la relación laboral. Como ya hemos dicho antes, toda prestación de servicio hace surgir la presunción iuris tantum de la existencia de una relación laboral ([[Art. 23 de la ley de Contrato de Trabajo, Presunción de la existencia del contrato de trabajo|art. 23, ley 20.744]]).
 
-##### La tutela del usuario del servicio que efectúa la [[Ley de Defensa del consumidor|Ley de Defensa del Consumidor]], inaplicable a las relaciones
+### La tutela del usuario del servicio que efectúa la [[Ley de Defensa del consumidor|Ley de Defensa del Consumidor]], inaplicable a las relaciones
 ---
 Así como en las relaciones de empleo el [[Legislador|legislador]] ha querido proteger al trabajador en su condición de débil de la relación jurídica, en aquellos contratos de servicios donde se manifieste una relación de consumo, la norma protegerá al usuario
 
-#### Paralelo entre otros contratos afines
+## Paralelo entre otros contratos afines
 ---
 El contrato de servicios asume modalidades muy variables, que a veces le quitan tipicidad y hacen más difícil la tarea de deslindar su concepto en relación a otros contratos afines
 
-##### Con el contrato de obra
+### Con el contrato de obra
 ---
 Ambos contratos implican la realización de un esfuerzo en procura del cumplimiento de una obligación, es el sentido de ese esfuerzo el que nos marcará la distinción entre uno y otro contrato.
 
@@ -99,10 +99,10 @@ Podemos concluir pues, que la línea divisoria entre ambos contratos radica en l
 
 Una cuestión más. Los puentes que conectan a los contratos de obra y de servicios se ponen de manifiesto en el [[Art. 1278 del CC y CN, Normas aplicables|artículo 1278]], el cual establece que a los servicios le resultan aplicables las normas de la [[Sección 1, Disposiciones comunes a las obras y a los servicios|sección 1ª del capítulo 6, titulada "Disposiciones comunes a las obras y a los servicios"]]. La norma añade que también son aplicables las normas de las obligaciones de hacer.
 
-#### Caracteres
+## Caracteres
 ---
 El contrato de servicios es consensual, no formal, conmutativo, y se lo presume oneroso. Como hemos dicho más arriba , por excepción, el contrato puede ser gratuito si así lo pactaron las partes o si por las circunstancias del caso pueda presumirse la intención de beneficiar ([[Art. 1251 del CC y CN, Definición|art. 1251, párr. 2º]])
 
-#### Empleados y funcionarios públicos
+## Empleados y funcionarios públicos
 ---
 La relación que une al empleado con el Estado escapa al esquema del contrato de trabajo y de la regulación de las prestaciones de servicios, en tanto, se trata de una relación de derecho público, regido por las normas específicas del derecho administrativo que regulan el empleo público.

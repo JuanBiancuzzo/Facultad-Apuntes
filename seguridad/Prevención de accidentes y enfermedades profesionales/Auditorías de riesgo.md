@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se realiza una evaluación de detalle del cumplimiento con requerimientos legislativos según los decretos
 * Decreto 351/79 (Industria y servicios)

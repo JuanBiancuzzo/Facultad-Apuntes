@@ -13,11 +13,11 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 12/Capítulo 5/Cap
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "En los casos en que el despido fuese dispuesto por causa de fuerza mayor o por falta o disminución de trabajo no imputable al empleador fehacientemente justificada, el trabajador tendrá derecho a percibir una indemnización equivalente a la mitad de la prevista en el [[Art. 245 de la ley de Contrato de Trabajo, Indemnización por antigüedad o despido|artículo 245 de esta ley]].
 
 En tales casos el despido deberá comenzar por el personal menos antiguo dentro de cada especialidad.  Respecto del personal ingresado en un mismo semestre, deberá comenzarse por el que tuviere menos cargas de familia, aunque con ello se alterara el orden de antigüedad."
 
-### Interpretación
+# Interpretación
 ---

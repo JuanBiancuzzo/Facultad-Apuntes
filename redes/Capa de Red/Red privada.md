@@ -6,7 +6,7 @@ tags:
 aliases:
   - Reino de direcciones privada
 ---
-### Definición
+# Definición
 ---
 Las dirección de [[Subnetting|subnet]] `10.0.0.0/24` (donde el `24` corresponde a la [[Classless Interdomain Routing|mascar]]). Esta es una de las tres porciones de [[Internet Protocol Versión 4|direcciones IP]] reservadas para redes privadas o reinos de direcciones privadas. Un reino de direcciones privadas refiere a una red cuyas direcciones solo tienen significado a los dispositivos dentro de esa misma red
 

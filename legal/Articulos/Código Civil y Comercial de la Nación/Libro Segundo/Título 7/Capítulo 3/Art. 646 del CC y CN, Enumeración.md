@@ -23,7 +23,7 @@ previo: "[[Capítulo 3, Deberes y derechos de los progenitores|Capítulo 3, Debe
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Son deberes de los progenitores:
 
@@ -34,5 +34,5 @@ tags:
  e. respetar y facilitar el derecho del hijo a mantener relaciones personales con abuelos, otros parientes o personas con las cuales tenga un vínculo afectivo;
  f. representarlo y administrar el patrimonio del hijo."
 
-### Interpretación
+# Interpretación
 ---

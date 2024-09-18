@@ -4,11 +4,11 @@ tags:
   - bdd/SQL
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta [[Sentencia de SQL|sentencia]] se usa para seleccionar información de una [[Base de datos|base de datos]]
 
-#### Sintaxis
+## Sintaxis
 ---
 ```SQL
 SELECT columna1, columna2, ...

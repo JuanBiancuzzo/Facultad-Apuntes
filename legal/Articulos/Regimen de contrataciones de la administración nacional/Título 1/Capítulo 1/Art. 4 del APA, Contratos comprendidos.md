@@ -20,7 +20,7 @@ previo: "[[legal/Articulos/Regimen de contrataciones de la administración nacio
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Este régimen se aplicará a los siguientes contratos:
 
@@ -28,7 +28,7 @@ tags:
  
  b. [[Contrato de obra pública|Obras públicas]], concesiones de obras públicas, concesiones de servicios públicos y licencias."
 
-### Interpretación
+# Interpretación
 ---
 * Compraventa
 * Suministros

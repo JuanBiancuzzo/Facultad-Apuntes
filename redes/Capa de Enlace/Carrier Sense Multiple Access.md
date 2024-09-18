@@ -6,7 +6,7 @@ tags:
 aliases:
   - CSMA
 ---
-### Definición
+# Definición
 ---
 El comportamiento de los nodos en [[ALOHA]] es independientemente del resto de nodos del canal, el [[Protocolo|protocolo]] CSMA tiene dos reglas importantes para mejorar la comunicación
 * Listen before Speaking

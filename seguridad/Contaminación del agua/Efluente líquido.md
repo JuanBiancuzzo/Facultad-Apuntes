@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-agua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Diagnóstico:
 * Análisis de la actividad industrial/de servicios

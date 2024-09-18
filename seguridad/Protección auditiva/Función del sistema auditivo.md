@@ -4,12 +4,12 @@ tags:
   - seguridad/Protección-auditiva
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Captar la señal acústica, transformarla y transmitirla al cerebro a través del oído externo, medio e interno.
 
 
-### Efectos del [[Ruido]]
+# Efectos del [[Ruido]]
 ---
 Estos efectos el aparato auditivo:
 * Trauma acústico

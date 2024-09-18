@@ -4,7 +4,7 @@ tags:
   - aninfo/Descubrimiento-de-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El [[Modelo|modelo]] de cebolla es un diagrama basado en gráficos y un modelo conceptual para describir las relaciones entre los niveles de una jerarquía, evocando una metáfora de las "capas" superpuestas expuestas cuando una cebolla (u otro conjunto concéntrico de objetos esféricos) se divide por un plano que intercepta el centro o la capa más interna. 
 

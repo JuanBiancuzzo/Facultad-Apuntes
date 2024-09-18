@@ -4,7 +4,7 @@ tags:
   - dispo/Juntura-MOS
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se puede definir el coeficiente como $$ \gamma = \frac{1}{C'_{ox}} \sqrt{2 \varepsilon_s q N_a} $$ donde:
 * $C'_{ox}$ es la [[Capacidad de óxido|capacidad por unidad de área de óxido]] 

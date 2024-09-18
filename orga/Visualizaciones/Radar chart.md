@@ -4,7 +4,7 @@ tags:
   - orga/Visualizaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El mejor uso de este [[Plot|plot]] es cuando se lo piensa como un [[Plot de relación|plot de relación]], donde se tiene varias variables que influyen entre si
 

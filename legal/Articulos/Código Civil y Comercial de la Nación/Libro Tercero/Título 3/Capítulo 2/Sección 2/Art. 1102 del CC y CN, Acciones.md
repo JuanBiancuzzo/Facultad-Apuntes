@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los consumidores afectados o quienes resulten legalmente legitimados pueden solicitar al juez: la cesación de la publicidad ilícita, la publicación, a cargo del demandado, de anuncios rectificatorios y, en su caso, de la sentencia condenatoria."
 
-### Interpretación
+# Interpretación
 ---

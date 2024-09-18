@@ -8,11 +8,11 @@ tags:
   - redes/Capa-de-Red
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una tecnología [[Internet Protocol Address|IP]], cuya versión es la 4
 
-#### Formatos
+## Formatos
 ---
 El formato que tiene IPv4
 
@@ -56,10 +56,10 @@ Los campos clave de un [[Paquete|datagrama]] son
 * Data
 	* Este campo contiene el segmento de cada de transporte que debe ser entregado a destino
 
-#### Addressing 
+## Addressing 
 ---
 Un host típicamente tiene un único enlace para conectarse a la red. Cuando el protocolo de red del host quiere enviar un [[Paquete|datagrama]], lo hace a través de este link. La frontera entre el host y el enlace es conocida como [[Router interface|interfaz]]
 
-#### Broadcast
+## Broadcast
 ---
 La IP de broadcast `255.255.255.255` es utilizada cuando un host quiere enviar un mensaje a todos los hosts de la misma [[Subnetting|subnet]]

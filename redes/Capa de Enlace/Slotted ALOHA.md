@@ -4,7 +4,7 @@ tags:
  - redes/Capa-de-Enlace
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Las operaciones de cada nodo en el canal son simples
 * Si un nodo tiene un [[Paquete|paquete]] para enviar, esperará hasta el inicio del próximo slot para transmitir el paquete completo en este slot

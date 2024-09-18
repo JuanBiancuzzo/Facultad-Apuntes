@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Cuando el objeto se refiere a bienes, éstos deben estar determinados en su especie o género según sea el caso, aunque no lo estén en su cantidad, si ésta puede ser determinada. Es determinable cuando se establecen los criterios suficientes para su individualización."
 
-### Interpretación
+# Interpretación
 ---
 Se considera también que el objeto es determinado cuando solo se precisa su especie o género, según sea el caso aunque no lo esté en su cantidad si esta puede ser determinada.
 

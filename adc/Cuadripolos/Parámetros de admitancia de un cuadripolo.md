@@ -4,7 +4,7 @@ tags:
   - adc/Cuadripolos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La relación que tiene esta dada por $$ {\begin{cases} 
 	I_1 = y_{11} ~ V_1 + y_{12} ~ V_2 \\ 

@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El contrato por adhesión es aquel mediante el cual uno de los contratantes adhiere a cláusulas generales predispuestas unilateralmente, por la otra parte o por un tercero, sin que el adherente haya participado en su redacción"
 
-### Interpretación
+# Interpretación
 ---
 
 

@@ -4,11 +4,11 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un árbol generador de un [[Grafo|grafo]] $G$ es un subgrafo que contiene todos los vértices del grafo original y es un [[Árbol|árbol]]
 
-#### Demostración
+## Demostración
 ---
 Todo [[Grafo conexo|grafo conexo]] admite un árbol generador, esto es un subgrafo que contiene todos los vértices y es un [[Árbol|árbol]]
 

@@ -10,7 +10,7 @@ aliases:
   - Campo conservativo
   - Campo irrotacional
 ---
-### Definición
+# Definición
 ---
 En el cálculo vectorial, el rotacional o rotor es un operador vectorial sobre [[Campo vectorial|campos vectoriales]] definidos en un [[Conjunto abierto|abierto]] de [[Espacio Rn|espacio]] $\mathbb{R}^3$ que muestra la tendencia de un campo vectorial a inducir [[Rotación|rotación]] alrededor de un punto
 
@@ -54,7 +54,7 @@ $$ \begin{matrix}
 \end{matrix} $$ 
 ^rotor-esferico
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

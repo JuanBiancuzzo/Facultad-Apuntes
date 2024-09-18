@@ -8,12 +8,12 @@ aliases:
 referencias:
   - "208"
 ---
-### Definición
+# Definición
 ---
 Es la sección que tradicionalmente usada para redes celulares con la responsabilidad de transferir el trafico y señales entres un celular y un [[Mobile Switching Center|MSC]]
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

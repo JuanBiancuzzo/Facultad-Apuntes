@@ -4,7 +4,7 @@ tags:
  - embebidos/Diseño-desarrollo-y-depuración
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Las máquinas Mealy fueron inventados por George H. Mealy. En comparación con las [[Máquina de Moore|máquina de Moore]], las máquinas Mealy producen resultados sólo en transiciones y no en estados
 

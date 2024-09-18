@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $G = \big( V(G),~E(G),~\Psi_G \big)$  un [[Grafo|grafo]], se define el grafo nulo de orden $n$ donde $$ E(G) = \emptyset $$
 Denotado como $N_n$, y se puede visualizar de la siguiente forma 

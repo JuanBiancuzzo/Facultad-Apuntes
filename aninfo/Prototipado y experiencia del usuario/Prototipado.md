@@ -6,7 +6,7 @@ tags:
 aliases:
   - Prototipo
 ---
-### Definición
+# Definición
 ---
 Permiten [[Modelo|modelar]] las interfaces del software a desarrollar. Se utiliza para [[Análisis de requisitos|analizar requisitos]]. Se puede emplear como medio para descubrir, [[Verificación|verificar]] y [[Validación|validar]] [[Requisito|requisitos]] durante las [[Entrevista|entrevistas]], [[Taller|talleres]], [[Técnicas de descubrimiento de requisitos|etc]]. Se integran con [[Unified modelling language#Diagrama de casos de uso|casos de uso]], [[Historia de usuario|user stories]], etc. 
 
@@ -16,7 +16,7 @@ No esta relacionado al [[Diseño de sistemas]], sino al [[Técnicas de descubrim
 
 También los construiremos para aclarar, completar [[Validación de requerimientos|validar los requisitos]]. Explorar alternativas de diseño y/o desarrollar una parte del producto en condiciones de evolucionar.
 
-#### Tipos
+## Tipos
 ---
 Podemos separarlos en dos grupos según su uso a futuro:
 * Descartables: 
@@ -35,14 +35,14 @@ Si lo clasificamos según su alcance tenemos
 	* Implementa todo pero en un slice pequeño
 	* Es un slice vertical del producto
 
-#### Riesgos
+## Riesgos
 ---
 * Presión para liberar el prototipo
 * Foco en detalles del diseño visual
 * Expectativas de desempeño
 * Demasiado esfuerzo
 
-#### Recomendaciones
+## Recomendaciones
 ---
 * Incluir en el plan
 * Clarificar el propósito

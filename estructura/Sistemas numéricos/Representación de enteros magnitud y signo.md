@@ -4,14 +4,14 @@ tags:
   - estructura/Sistemas-numéricos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta representación reserva el último bit representa el signo, donde el negativo es un $1$ y el positivo un $0$. 
 
 Su [[Rango de representación]] es $$ (-2^{n-1} + 1)_{10} \le x \le (2^{n-1} - 1)_{10}$$
 
 
-### Ejemplo
+# Ejemplo
 ---
 | Decimal | Magnitud y signo |
 | ------- | ---------------- |

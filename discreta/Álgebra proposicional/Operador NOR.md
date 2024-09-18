@@ -6,7 +6,7 @@ tags:
 aliases:
   - Peirce
 ---
-### Definición
+# Definición
 ---
 La [[Función binaria|función]] binaria Peirce denominada usualmente NOR utilizando los elementos del [[Álgebra de Boole|álgebra de Boole]] $$ p \downarrow q \overset{\text{def}}{=} (p + q)' $$
 

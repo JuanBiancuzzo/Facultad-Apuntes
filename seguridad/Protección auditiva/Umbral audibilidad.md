@@ -4,6 +4,6 @@ tags:
   - seguridad/Protección-auditiva
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la [[Presión sonora|presión]] mínima que produce la sensación de audición.

@@ -4,7 +4,7 @@ tags:
   - señales/Señales-y-sistemas
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un objeto que lleva [[Información|información]] total o parcial sobre el comportamiento de un [[Sistema|sistema]] físico.
 
@@ -31,10 +31,10 @@ $$ \text{Señales} ~~~ \begin{cases}
 	\text{Estocásticas}
 \end{cases}$$
 
-#### Discretización
+## Discretización
 ---
 ![[Discretización#Definición]]
 
-#### Medidas de señales
+## Medidas de señales
 ---
 ![[Medida de una señal#Definición]]

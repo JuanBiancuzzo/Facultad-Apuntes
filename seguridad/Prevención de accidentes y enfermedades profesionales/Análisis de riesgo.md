@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Con lo que obtenemos del siguiente proceso:
 ![[Análisis de riesgo.canvas]]

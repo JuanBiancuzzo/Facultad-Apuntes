@@ -15,12 +15,12 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La aceptación perfecciona el contrato:
 
  a. entre presentes, cuando es manifestada;
  b. entre ausentes, si es recibida por el proponente durante el plazo de vigencia de la oferta."
 
-### Interpretación
+# Interpretación
 ---

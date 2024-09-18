@@ -9,13 +9,13 @@ tags:
   - nota/facultad
   - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
 ---
-### Definición
+# Definición
 ---
 El [[Transistor]] bipolar de juntura es la superposición de tres regiones con [[Dopaje|dopajes]] contrarios, formando dos [[Juntura PN|junturas PN]]. Estas tienen que estar suficientemente juntas como para que los [[Carga eléctrica|portadores]] minoritarios interactúen (pueden difundirse rápido sin [[Recombinación|recombinarse]] en la base). También tiene que estar suficientemente separados como para que las regiones de deserción (SCR) no se solapen (punch-through)
 
 Al intercambiar el tipo de dopaje, pueden obtenerse dos combinaciones distintas
 
-##### NPN
+### NPN
 ---
 ```tikz
 \usepackage{amssymb}
@@ -78,7 +78,7 @@ Al intercambiar el tipo de dopaje, pueden obtenerse dos combinaciones distintas
 ```
 
 Donde tenemos, por construcción $$ N_{dE} > N_{aB} > N_{dC} $$
-##### PNP
+### PNP
 ---
 ```tikz
 \usepackage{amssymb}
@@ -145,11 +145,11 @@ Donde tenemos, por construcción $$ N_{aE} > N_{dB} > N_{aC} $$
 Con una estructura
 ![[Transistor NPN.webp]]
 
-#### Curvas características
+## Curvas características
 ---
 ![[Curvas características del TBJ.png]]
 
-### Modos de operación
+# Modos de operación
 ---
 Independientemente de si el TBJ es NPN o PNP, tiene 4 modos de operación. Tomaremos como referencia el NPN, pero se aplica de la misma forma para el PNP
 

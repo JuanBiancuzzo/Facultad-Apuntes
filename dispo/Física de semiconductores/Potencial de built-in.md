@@ -4,7 +4,7 @@ tags:
   - dispo/Física-de-semiconductores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Usando la [[Relación de Boltzmann]], podemos ver que $$ \phi(x) = \frac{kT}{q} \ln\left( \frac{n_0}{n_i} \right) = - \frac{kT}{q} \ln\left( \frac{p_0}{n_i} \right) $$ cuando definimos $\phi(x_{ref}) = 0$ y que $n(x_{ref}) = p(x_{ref}) = n_i$. Donde $n_i$ es la [[Semiconductor intrínseco|concentración de un semiconductor intrínseco]].
 

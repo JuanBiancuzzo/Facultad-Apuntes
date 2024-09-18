@@ -4,7 +4,7 @@ tags:
   - algo-1/Introducción-a-la-programación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Estas son los componentes básicos que permiten al programador controlar el flujo del programa, el flujo de programa es la forma en que se van ejecutando las instrucciones.
 

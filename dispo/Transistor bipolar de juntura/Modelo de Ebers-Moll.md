@@ -4,7 +4,7 @@ tags:
   - dispo/Transistor-bipolar-de-juntura
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Este [[Modelo]] representa el [[Transistor bipolar de juntura|TBJ]] con dos [[Diodo|diodos]] y una [[Fuente de corriente]]
 

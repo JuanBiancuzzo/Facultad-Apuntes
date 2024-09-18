@@ -4,7 +4,7 @@ tags:
   - primer-proyecto-de-robótica-auto-remoto
   - nota/proyecto
 ---
-### Progreso
+# Progreso
 ---
 Hoy vimos el funcionamiento del motor y del sensor infrarrojo
 

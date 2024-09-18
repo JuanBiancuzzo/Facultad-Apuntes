@@ -4,7 +4,7 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La elaboración de enunciados normativos legales es una parte de la denominada Técnica Jurídica. Esta última, como toda técnica, consiste en la utilización de medios y procedimientos para el logro de objetivos propuestos, clasificándose sobre la base de éstos en técnica de elaboración normativa, legislativa, de formación de los [[Acto jurídico|actos jurídicos]] y de aplicación
 

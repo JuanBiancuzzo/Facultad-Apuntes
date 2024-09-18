@@ -4,14 +4,14 @@ tags:
   - aninfo/Ingeniería-de-software
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es el costo por la falta de [[Calidad|calidad]] en un producto, podemos dividirlos en 
 
-##### Externos
+### Externos
 ---
 Es el costo de atender a todos los reclamos de los clientes por dicha falla
 
-##### Internos
+### Internos
 ---
 Es el costo de la reparación del producto/servicio en cuestión

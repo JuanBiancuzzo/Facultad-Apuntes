@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El obligado a realizar un hecho debe cumplirlo en tiempo y modo acordes con la intención de las partes o con la índole de la obligación. Si lo hace de otra manera, la prestación se tiene por incumplida, y el acreedor puede exigir la destrucción de lo mal hecho, siempre que tal exigencia no sea abusiva."
 
-### Interpretación
+# Interpretación
 ---

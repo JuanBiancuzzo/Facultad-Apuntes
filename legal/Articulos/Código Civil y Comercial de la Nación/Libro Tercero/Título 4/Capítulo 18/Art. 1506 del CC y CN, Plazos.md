@@ -16,7 +16,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El plazo del contrato de concesión no puede ser inferior a cuatro años. Pactado un plazo menor o si el tiempo es indeterminado, se entiende convenido por cuatro años.
 
@@ -24,5 +24,5 @@ Excepcionalmente, si el concedente provee al concesionario el uso de las instala
 
 La continuación de la relación después de vencido el plazo determinado por el contrato o por la ley, sin especificarse antes el nuevo plazo, lo transforma en contrato por tiempo indeterminado."
 
-### Interpretación
+# Interpretación
 ---

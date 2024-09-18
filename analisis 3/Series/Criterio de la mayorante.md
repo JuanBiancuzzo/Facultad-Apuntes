@@ -6,7 +6,7 @@ tags:
 ---
 Dada una [[Serie]] $\alpha : \mathbb{N} \to \mathbb{R} : \bigg(\sum_{k = 0}^n \alpha_k \bigg)_{n = 1}^\infty$ 
 
-### Definición
+# Definición
 ---
 Dadas las hipotesis
 1) $\forall n \in \mathbb{N} : 0 < a_n \leq b_n$

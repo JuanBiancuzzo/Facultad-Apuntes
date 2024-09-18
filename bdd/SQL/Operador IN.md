@@ -4,11 +4,11 @@ tags:
   - bdd/SQL
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El operador `IN` se usa con la [[Sentencia WHERE|sentencia WHERE]] para permitir especificar multiples valores, donde simplifica el uso del [[Operador OR|operador OR]]
 
-#### Sintaxis
+## Sintaxis
 ---
 ```SQL
 SELECT nombre(s)_columna(s)
@@ -23,7 +23,7 @@ FROM nombre_tabla
 WHERE nombre_columna == valor1 OR nombre_columan == valor2 OR ...;
 ```
 
-#### Combinación con SELECT
+## Combinación con SELECT
 ---
 Se puede usar en conjunción con la [[Sentencia SELECT|sentencia SELECT]], donde podemos buscar si un elemento esta en otra selección
 

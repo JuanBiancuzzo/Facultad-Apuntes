@@ -8,7 +8,7 @@ aliases:
   - Cyclic Redundancy Check codes
   - Polynomial codes
 ---
-### Definición
+# Definición
 ---
 Esta técnica consisten en la utilización de cyclic redundancy check codes, conocidos como polynomial codes
 

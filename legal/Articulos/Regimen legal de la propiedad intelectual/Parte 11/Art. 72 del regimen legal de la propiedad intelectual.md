@@ -25,7 +25,7 @@ previo: "[[legal/Articulos/Regimen legal de la propiedad intelectual/Parte 11/Pa
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Sin perjuicio de la disposición general del artículo precedente, se consideran casos especiales de defraudación y sufrirán la pena que él establece, además del secuestro de la edición ilícita:
 
@@ -34,5 +34,5 @@ tags:
  c. El que edite, venda o reproduzca una obra suprimiendo o cambiando el nombre del autor, el título de la misma o alterando dolosamente su texto;
  d. El que edite o reproduzca mayor número de los ejemplares debidamente autorizados."
 
-### Interpretación
+# Interpretación
 ---

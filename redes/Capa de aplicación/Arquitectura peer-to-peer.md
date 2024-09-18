@@ -6,7 +6,7 @@ tags:
   - redes/Capa-de-aplicación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En esta [[Arquitectura de aplicaciones|arquitectura]] hay una mínima o nula dependencia en [[Servidor|servidores dedicados]] en [[Data center|data centers]]. Esta arquitectura usa directamente las comunicaciones entre los pares de [[Host|host]] que llamamos peers
 
@@ -16,7 +16,7 @@ Esta arquitectura tiene el beneficio de ser auto escalable, e incluso mientras m
 
 Por otro lado, también hay problemas de seguridad ya que no hay un lugar centralizado para asegurar ninguna política más allá de la comunicación y la funcionalidad de actores buenos en la [[Red|red]]
 
-#### Escalabilidad
+## Escalabilidad
 ---
 Denotemos $u_s$ la tasa de subida del servidor, $u_i$ la taza de subida del cliente $i$, y $d_i$ la taza de descarga del cliente $i$. Considerando un archivo de tamaño $F$ y un número $N$ de clientes. El tiempo de distribución es el tiempo que toma distribuir el archivo a todos los clientes
 

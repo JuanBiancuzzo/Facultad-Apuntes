@@ -4,7 +4,7 @@ tags:
   - seguridad/Residuos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Toda persona física o jurídica que como resultado de sus actos o procesos, operación o actividad, produzcan [[Residuo peligroso y especial|residuos calificados como peligrosos]]
 

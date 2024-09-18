@@ -4,11 +4,11 @@ tags:
   - redes/Capa-de-Red
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Cuando un [[Paquete|paquete]] llega a un [[Router|router]], este debe mover el paquete al output link adecuado. Este puede ser bloqueado de salir del router, debido a que fue originado por un host malicioso o la [[Internet Protocol Address|dirección]] de destino está prohibida   ^baf6a6
 
-#### Para un link-layer switch
+## Para un link-layer switch
 ---
 Vemos tres posibles escenarios en la llegada de un [[Frame|frame]]
 

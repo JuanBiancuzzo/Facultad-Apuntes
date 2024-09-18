@@ -4,25 +4,25 @@ tags:
   - legal/Contratos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[Sección 5, Obligaciones con cláusula penal y sanciones conminatorias|cláusula penal]] es un instituto polivalente, proporciona un incentivo para la conducta debida del deudor, esto es el cumplimiento específico de su [[Art. 724 del CC y CN, Definición|obligación]] ([[Cláusula penal#Función compulsiva|función compulsiva o estimulativa]]), y fija de antemano el monto indemnizatorio para el caso de incumplimiento ([[Cláusula penal#Función indemnizatoria|función indemnizatoria]]), sea éste definitivo (cláusula penal compensatoria) o temporario (cláusula penal moratoria)
 
 Es aquella en que una persona, para asegurar el cumplimiento de una obligación, se sujeta a una pena o multa en caso de retardar o de no ejecutar la obligación, y esta pena o multa entra en lugar de la indemnización de perjuicios e intereses, cuando el deudor se hubiese constituido en [[Sección 2, Mora|mora]].
 
-#### Funciones
+## Funciones
 ---
 La cláusula penal cumple, sustancialmente, dos funciones 
 
-##### Función compulsiva
+### Función compulsiva
 ---
 La función compulsiva o estimulativa de la cláusula penal está prevista para incentivar el cumplimiento. El primer deber del deudor frente a la obligación es cumplirla, y se desvanecería la finalidad ética de la cláusula penal si se la concibiera exclusivamente en su otra [[Cláusula penal#Función indemnizatoria|función indemnizatoria]]
 
-##### Función indemnizatoria
+### Función indemnizatoria
 ---
 La cláusula penal tiene, además, una función [[Indemnización|indemnizatoria]], que se superpone a la anterior o la desplaza, y rige aunque no haya perjuicio para el acreedor. Para pedir la pena, el acreedor no está obligado a probar que ha sufrido perjuicios, ni el deudor podrá eximirse de satisfacerla, probando que el acreedor no ha sufrido perjuicio alguno
 
-#### Clasificación
+## Clasificación
 ---
 Existencia de dos especies de cláusula penal
 * Compensatoria
@@ -30,7 +30,7 @@ Existencia de dos especies de cláusula penal
 * Moratoria
 	* Que juega en el caso de inejecución temporaria
 
-#### Caracteres
+## Caracteres
 ---
 La cláusula penal presenta los siguientes caracteres
 * Es accesoria
@@ -57,11 +57,11 @@ La cláusula penal presenta los siguientes caracteres
 		* La desproporción del monto de la pena no basta por sí para justificar su reducción judicial. Debe asimismo, configurar un abuso aprovechamiento de la situación del deudor
 		* Si el deudor cumple sólo una parte de la obligación, o la cumple de un modo irregular, o fuera del lugar o del tiempo a que se obligó, y el acreedor la acepta, la pena debe disminuirse proporcionalmente, y el juez puede arbitrarla si las partes no se conviniesen
 
-#### Objeto
+## Objeto
 ---
 La cláusula penal sólo puede tener por objeto el pago de un suma de dinero, o cualquier otra prestación que pueda ser objeto de las obligaciones
 
-#### Funcionamiento
+## Funcionamiento
 ---
 La indemnización convenida como cláusula penal es debida desde la mora del deudor, sea que aquélla actúe como compensatoria o como moratoria
 

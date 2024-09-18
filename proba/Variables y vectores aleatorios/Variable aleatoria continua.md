@@ -4,7 +4,7 @@ tags:
   - proba/Variables-y-vectores-aleatorios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Una [[Variable aleatoria]] es continua si se cumplen las siguientes condiciones
 
@@ -13,12 +13,12 @@ Una [[Variable aleatoria]] es continua si se cumplen las siguientes condiciones
 2) Ningún valor posible de la variable aleatoria tiene probabilidad positiva, es decir $\mathbb{P}(X = c) = 0, \forall c \in \mathbb{R}$
 
 
-### Definición con [[Átomo de una distribución|átomos]]
+# Definición con [[Átomo de una distribución|átomos]]
 ---
 La [[Variable aleatoria]] $X$ será continua si $F_X(x)$ es continua (el conjunto de [[Átomo de una distribución|átomos]] es vacío)
 
 
-##### Otras formas de definirla
+### Otras formas de definirla
 ---
 * Sea $X$ una variable aleatoria continua, entonces existe una [[Función de densidad]].
 * La [[Función de distribución]] es continua.

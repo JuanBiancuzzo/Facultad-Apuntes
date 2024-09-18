@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Nomenclatura
 ---
-### Definición
+# Definición
 ---
 La [[Distancia|distancia]] entre dos vectores $x$ y $y$ se puede usar la definición de [[Norma|norma]] para definirla, tal que
 
@@ -29,13 +29,13 @@ $$dist(x, y) := \lVert y - x \rVert$$
 ```
 
 
-#### Propiedades
+## Propiedades
 ---
 1. $d(x, y) \ge 0$, si $d(x, y) = 0 \iff x = y$
 2. $d(x, y) = d(y, x)$
 3. $d(x, y) \le d(x, z) + d(z, y)$, con $z$ un vector cualquiera de $\mathbb{R}^n$
 
-#### Otra forma de verlo
+## Otra forma de verlo
 ---
 Teniendo una [[Base ortonormal|base ortonormal]] tal que $B = \{u_1, u_2, \cdots, u_n \}$, podemos escribir la distancia entre dos vectores como
 

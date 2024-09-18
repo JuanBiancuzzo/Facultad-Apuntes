@@ -4,7 +4,7 @@ tags:
   - taller/Organizacion
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Para dividir funcionalidad (como namespaces en `c++`) en este caso veamos cuando es en el mismo archivo podemos usar `mod` de la siguiente forma
 ``` rust

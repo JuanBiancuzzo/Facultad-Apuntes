@@ -4,7 +4,7 @@ tags:
   - señales/Sistemas-LTI
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Para [[Señal|señal]] en tiempo discreto y continuo las relaciones entrada-salida de los mismos están dadas por $$ y[n] = \sum_{k = -\infty}^{\infty} x[k] ~ h[n - k] = \sum_{k = -\infty}^{\infty} x[n - k] ~ h[k] $$ $$ y(t) = \int_{-\infty}^{\infty} x(\tau) ~ h(t - \tau) ~ d\tau = \int_{-\infty}^{\infty} x(t - \tau) ~ h(\tau) ~ d\tau $$
 Es decir, con la [[Convolución|convolución]] entre $x[n]$ o $x(t)$ con la [[Representación de una señal mediante impulsos|representación mediante impulsos]] $h[n]$ o $h(t)$

@@ -4,29 +4,29 @@ tags:
   - aninfo/Verificación-y-validación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se tiene dos grandes actividades que se pueden hacer 
 
-#### Dinámico
+## Dinámico
 ---
 Que sería pruebas de software
 ![[Testing de software#Definición]]
 
-#### Estático
+## Estático
 ---
 No se ejecuta el software, y se hace una evaluación, como
 
-##### Revisiones por pares
+### Revisiones por pares
 ---
 ![[Revisión de pares#Definición]]
 
-##### Revisiones generales
+### Revisiones generales
 ---
 
-##### Revisiones técnicas
+### Revisiones técnicas
 ---
 
-##### Auditorias
+### Auditorias
 ---
 

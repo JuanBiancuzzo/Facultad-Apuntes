@@ -4,7 +4,7 @@ tags:
  - redes/Capa-de-Enlace
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Consiste en la existencia de un [[Frame|frame]] de propósito especial que es intercambiado entre los nodos en un orden fijo y cíclico (cada nodo se lo envía al siguiente)
 

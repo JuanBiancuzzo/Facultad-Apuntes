@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los contratos a título oneroso son conmutativos cuando las ventajas para todos los contratantes son ciertas. Son aleatorios, cuando las ventajas o las pérdidas, para uno de ellos o para todos, dependen de un acontecimiento incierto."
 
-### Interpretación
+# Interpretación
 ---

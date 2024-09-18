@@ -4,7 +4,7 @@ tags:
   - orga/Pandas
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado la siguiente [[Data frame - Pandas|tabla]]
 

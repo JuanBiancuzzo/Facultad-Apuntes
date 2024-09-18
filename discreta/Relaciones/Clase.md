@@ -4,7 +4,7 @@ tags:
  - discreta/Relaciones
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $R$ una [[discreta/Relaciones/Relación.md|relación]] en el [[algebra 2/Espacios Vectoriales/Conjunto.md|conjunto]] $A$, sea $a \in A$, la clase de $a$ se denomina $$ [a] = \Set{x \in A: ~ aRx} $$
 * Las clases no son vacías

@@ -4,7 +4,7 @@ tags:
   - estructura/Sistemas-numéricos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Su forma de representación aplica para los números negativos el [[Complemento a la base|complemento]] y se le resta uno.
 
@@ -12,7 +12,7 @@ En el caso del binario, se puede invertir los bits para llegar al número.
 
 Su [[Rango de representación]] es $$ (-2^{n-1} + 1)_{10} \le x \le (-2^{n-1} - 1)_{10}$$
 
-### Ejemplo
+# Ejemplo
 ---
 | Decimal | Complemento a la base menos 1 |
 | ------- | ----------------------------- |

@@ -4,7 +4,7 @@ tags:
   - proba/Representación-de-variables-aleatorias
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $h : \mathbb{R} \to \mathbb{R}^+$, una [[Función de variable aleatoria]], tal que $h$ es $par$, y restringida a $\mathbb{R}^+$ es creciente, y sea $X$ una [[Variable aleatoria]] tal que la [[Esperanza]] ($E[h(X)]$) existe, entonces 
 $$ \begin{align} 

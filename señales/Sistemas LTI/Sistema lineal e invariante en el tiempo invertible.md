@@ -6,7 +6,7 @@ tags:
   - señales/Sistemas-LTI
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Consideremos un [[Sistema lineal e invariante en el tiempo|sistema LTI]] en tiempo continuo con [[Representación de una señal mediante impulsos|respuesta al impulso]] $h(t)$. El [[Sistema invertible|sistema inverso]] $g(t)$ (si existe) debe cumplir con
 
@@ -30,6 +30,6 @@ Consideremos un [[Sistema lineal e invariante en el tiempo|sistema LTI]] en tiem
 Usando la propiedad de asociatividad de la [[Convolución|convolución]] tenemos que $$ x(t) = g(t) ~*~ \left[ h(t) ~*~ x(t) \right] = g(t) ~*~ \left[ g(t) ~*~ h(t) \right] $$
 Por lo que podemos decir $$ \delta(t) = g(t) ~*~ h(t) $$ donde $\delta(t)$ es la [[Delta de Dirac|delta de Dirac]]
 
-#### Nota
+## Nota
 ---
 El inverso de un sistema LTI también es un sistema LTI.

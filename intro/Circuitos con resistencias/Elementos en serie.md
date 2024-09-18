@@ -4,6 +4,6 @@ tags:
   - intro/Circuitos-con-resistencias
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dos o más elementos están en serie si comparten exclusivamente un solo [[Nodo]] y conducen en consecuencia la misma [[Corriente eléctrica|corriente]]

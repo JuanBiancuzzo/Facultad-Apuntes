@@ -5,14 +5,14 @@ tags:
   - nota/facultad
   - embebidos/Diseño-desarrollo-y-depuración
 ---
-### Definición
+# Definición
 ---
 Sea $x_c(t)$ una [[Señal de banda limitada|señal de banda limitada]] a partir de un $W$, queda determinada en forma única por las [[Muestreo|muestras]] $x(n) = x(nT), ~ n \in \mathbb{Z}$ si el periodo de muestreo $T$ satisface $$ \omega_s = \frac{2\pi}{T} > 2W, ~~~ T < \frac{\pi}{W} $$ donde $\omega_s = 2W$ se denomina frecuencia de Nyquist
 
-#### Tiempo discreto
+## Tiempo discreto
 ---
 Sea $x(n)$ una señal de banda limitada, queda determinada en forma única por las muestras $x(n ~ N)$, $n \in \mathbb{Z}$ si la tasa de muestreo $N$ satisface $$ \Omega_s = \frac{2\pi}{N} > 2W, ~~~ N < \frac{\pi}{W} $$
-#### Aclaraciones
+## Aclaraciones
 ---
 * Notar que la frecuencia de muestreo $\omega_s\big|\Omega_s$ tiene que ser estrictamente mayor a $2W$. Muchas veces el resultado del teorema es cierto con $\omega_s\big|\Omega_s = 2W$ pero otras veces no
   

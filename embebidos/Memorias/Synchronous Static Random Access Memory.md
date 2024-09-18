@@ -8,6 +8,6 @@ aliases:
   - Memoria de acceso aleatorio estático síncrona
   - SRAM síncrona
 ---
-### Definición
+# Definición
 ---
 Al igual que la [[Static Random Access Memory|SRAM]] pero donde el acceso se sincroniza mediante un reloj

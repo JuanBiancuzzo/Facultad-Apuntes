@@ -4,7 +4,7 @@ tags:
   - seguridad/Riesgo-eléctrico-y-radiación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[Dosis Absorbida de radiación ionizante|dosis de radiación]] de todas las fuentes importantes no deben exceder el límite de dosis.
 

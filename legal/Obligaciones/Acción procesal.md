@@ -4,7 +4,7 @@ tags:
   - legal/Obligaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El [[Sujeto de derecho#Sujeto activo|titular]] del [[Derecho subjetivo|derecho subjetivo]], sea éste [[Derecho subjetivo público|público]] o [[Derecho subjetivo privado|privado]], tiene la posibilidad de defenderlo, es decir, de recurrir ante los [[Poder Judicial|órganos jurisdiccionales]] para lograr el cumplimiento del [[Deber jurídico|deber jurídico]] que es correlativo o, en su caso, reclamar la aplicación de la [[Sanción jurídica|sanción]] prevista en la ley contra el responsable de esa perturbación
 

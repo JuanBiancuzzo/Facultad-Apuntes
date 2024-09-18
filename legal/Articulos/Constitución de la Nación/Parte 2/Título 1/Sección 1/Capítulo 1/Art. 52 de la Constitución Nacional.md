@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Constitución de la Nación/Parte 2/Título 1/Secció
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "A la [[Cámara de diputados|Cámara de Diputados]] corresponde exclusivamente la iniciativa de las [[Ley|leyes]] sobre contribuciones y reclutamiento de tropas."
 
-### Interpretación
+# Interpretación
 ---

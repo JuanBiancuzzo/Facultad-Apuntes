@@ -4,7 +4,7 @@ tags:
   - orga/NLP/1
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una forma en la que se puede contabilizar una palabra, utilizando su frecuencia en documentos. 
 

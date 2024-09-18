@@ -6,6 +6,6 @@ tags:
 aliases:
   - Tuple
 ---
-### Definición
+# Definición
 ---
 Es lo forma general de agrupar varios tipos de datos en uno. Son de longitud fija y no se pueden achicar ni agrandar.

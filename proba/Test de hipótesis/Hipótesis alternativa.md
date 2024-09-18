@@ -4,6 +4,6 @@ tags:
   - proba/Test-de-hipótesis
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la [[Hipótesis]] que se deriva de la teoría o esta queriendo probar.

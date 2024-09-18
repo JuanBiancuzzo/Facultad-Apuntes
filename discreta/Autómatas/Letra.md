@@ -4,6 +4,6 @@ tags:
  - discreta/Autómatas
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se denomina letra a los elementos de un [[Alfabeto|alfabeto]]

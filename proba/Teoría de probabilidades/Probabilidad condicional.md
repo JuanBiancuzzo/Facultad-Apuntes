@@ -4,12 +4,12 @@ tags:
   - proba/Teoría-de-probabilidades
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se trata de analizar cómo afecta la [[Información|información]] de que "un [[Evento|evento]] $B$ ha ocurrido" a la [[Probabilidad|probabilidad]] asignada de $A$.
 
 Sea $(\Omega, \mathscr{A}, \mathbb{P})$ un [[Espacio de probabilidad|e. p.]], $A$ y $B \in \mathscr{A}$ con $\mathbb{P}(B) > 0$, la probabilidad condicional de $A$ dado que $B$ ha ocurrido está definida por $$ \mathbb{P}(A|B) = \frac{\mathbb{P}(A \cap B)}{\mathbb{P}(B)} $$
-#### Propiedades
+## Propiedades
 ---
 La $\mathbb{P}(A|B)$ para un $B$ fijo satisface todos los axiomas de probabilidad
 1. $0 \ge \mathbb{P}(A|B) \ge 1$, $\forall A \in \mathscr{A}$

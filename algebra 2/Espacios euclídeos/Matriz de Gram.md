@@ -6,7 +6,7 @@ tags:
   - algebra-2/Espacios-euclídeos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $(\mathbb{V}, \langle \cdot, \cdot \rangle)$ un $\mathbb{K}$-espacio euclídeo. Y sea $\chi = \{x_1, x_2, \cdots, x_r \}$ un conjunto de vectores de $\mathbb{V}$ se llama la matriz de Gram, y se denota por $G_\chi$ a
 
@@ -19,10 +19,10 @@ $$ G_\chi := \begin{bmatrix}
 
 Donde explícitamente estamos usando el [[Producto interno|producto interno]]
 
-#### Gramiano
+## Gramiano
 ---
 Llamaremos Gramiano de $\chi$ al determinante de la matriz de gram
 
-##### Propiedades
+### Propiedades
 ---
  * Un conjunto de vectores es LD si y solo si, el Gramiano es nulo

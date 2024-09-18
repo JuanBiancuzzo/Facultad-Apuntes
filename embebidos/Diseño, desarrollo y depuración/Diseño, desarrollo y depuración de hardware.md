@@ -4,7 +4,7 @@ tags:
  - embebidos/Diseño-desarrollo-y-depuración
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 [[Circuito eléctrico|Circuito Eléctrico]] se tiene
 * Diagrama de bloques de funciones principales, muestra

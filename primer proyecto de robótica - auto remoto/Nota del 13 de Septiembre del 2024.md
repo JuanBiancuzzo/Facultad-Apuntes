@@ -4,7 +4,7 @@ tags:
  - primer-proyecto-de-robótica-auto-remoto
  - nota/proyecto 
 ---
-### Progreso
+# Progreso
 ---
 Cambiamos el diseño del auto, decidimos no usar un motor, sino que dos stepper motor, para controlar la velocidad y la dirección, no por una cuestión de simplicidad sino de conveniencia para el modelo del auto
 

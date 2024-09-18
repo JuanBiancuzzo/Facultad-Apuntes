@@ -4,10 +4,10 @@ tags:
   - discreta/Álgebra-de-conjuntos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado dos [[Conjunto|conjuntos]] $A$ y $B$, se define la función en [[Álgebra de conjuntos|álgebra de conjuntos]] como $$ A  $$
-#### Representación gráfica
+## Representación gráfica
 ---
 Donde visualmente se puede entender como 
 

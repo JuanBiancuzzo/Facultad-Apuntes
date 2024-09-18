@@ -11,7 +11,7 @@ aliases:
   - Interrupción no enmascarable#^NMI
   - NMI#^NMI
 ---
-### Definición
+# Definición
 ---
 Un controlador de interrupciones es una unidad que recibe [[Interrupción|interrupciones]] externas y genera una [[Solicitud de interrupción|IRQ]] al [[Procesador|procesador]] 
 
@@ -21,7 +21,7 @@ Esta conexión simplificada entre un controlador de interrupciones y el procesad
 
 El controlador de interrupciones está asociado con un mecanismo que permite descubrir la solicitud de mayor prioridad, en forma de ID o identificador de solicitud de interrupción. Esta información a menudo se denomina vector. A veces, el [[Contador|contador]] de interrupciones se trata como un elemento interno del propio procesador; en otras [[Arquitectura del microprocesador|arquitecturas]] puede ser una interfaz programable bajo el control del procesador
 
-#### Para ARM Cortex-M
+## Para ARM Cortex-M
 ---
 En un [[ARM's Cortex-M|ARM Cortex-M]] se lo conoce como controlador de interrupción vectorial anidado (NVIC) cuyo propósito es gestionar excepciones 
 

@@ -4,7 +4,7 @@ tags:
   - taller/Sintaxis
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son un conjunto de elementos puestos juntos, que son tratados como una unidad. Se le pueden definir operaciones ([[Metodos]]).
 

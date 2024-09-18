@@ -4,5 +4,5 @@ tags:
  - dispo/Juntura-MOS
  - nota/facultad
 ---
-### Definición
+# Definición
 ---

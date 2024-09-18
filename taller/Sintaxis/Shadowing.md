@@ -4,7 +4,7 @@ tags:
   - taller/Sintaxis
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es reutilizar el nombre de una [[Variable inmutable]] (o [[Variable mutable]]) , haciendo invalido el contendio del anterior. Un ejemplo de esto sería
 ``` rust

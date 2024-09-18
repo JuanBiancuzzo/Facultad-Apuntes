@@ -4,7 +4,7 @@ tags:
   - algebra-2/Transformaciones-lineales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Vamos a usar 
 ![[Propiedades trigonométricas#Definición]]

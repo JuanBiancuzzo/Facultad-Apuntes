@@ -4,7 +4,7 @@ tags:
   - señales/Señales-y-sistemas
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un [[Sistema|sistema]] cuya entradas son [[Señal|señales]] en el [[Espacio vectorial|espacio vectorial]] $\mathcal{H}_1$ y sus salidas son señales en el espacio vectorial $\mathcal{H}_2$ se puede representar en forma matemática por un [[Operador|operador]] $\mathcal{T} : \mathcal{H}_1 \to \mathcal{H}_2$. En forma compacta la acción del sistema representado por $\mathcal{T}$ se puede escribir como $$ y(t) = \mathcal{T} \left[ x(t) \right] $$ donde $x(t) \in \mathcal{H}_1$ es la señal de entrada y $y(t) \in \mathcal{H}_2$ es la señal de salida
 
@@ -24,7 +24,7 @@ Un [[Sistema|sistema]] cuya entradas son [[Señal|señales]] en el [[Espacio vec
 
 Esto también aplica para funciones en tiempo discreto
 
-#### Análisis
+## Análisis
 ---
 Estudiar la respuesta de un [[Sistema|sistema]] específico a diversas entradas, como la calibración de un equipo 
 
@@ -42,7 +42,7 @@ Estudiar la respuesta de un [[Sistema|sistema]] específico a diversas entradas,
 \end{document}
 ```
 
-#### Diseño o identificación 
+## Diseño o identificación 
 ---
 Diseñar sistemas para procesar señales de determinada forma, como la conversión de energía
 
@@ -60,7 +60,7 @@ Diseñar sistemas para procesar señales de determinada forma, como la conversi�
 \end{document}
 ```
 
-#### Invertir
+## Invertir
 ---
 Obtener entrada para un sistema dado a partir de su salida, como un sistema de comunicaciones
 
@@ -78,7 +78,7 @@ Obtener entrada para un sistema dado a partir de su salida, como un sistema de c
 \end{document}
 ```
 
-#### Filtrado
+## Filtrado
 ---
 Obtener el sistema y la señal de salida que permite modificar una señal de entrada de determinada forma, como un ecualizador de audio
 
@@ -96,7 +96,7 @@ Obtener el sistema y la señal de salida que permite modificar una señal de ent
 \end{document}
 ```
 
-#### Modelado
+## Modelado
 ---
 [[Modelar|Diseñar]] un sistema y la señal de salida que permite modificar una señal de entrada de determinada forma, como un radar
 
@@ -114,7 +114,7 @@ Obtener el sistema y la señal de salida que permite modificar una señal de ent
 \end{document}
 ```
 
-#### Control
+## Control
 ---
 Diseñar un sistema que controle a otro a partir de su salida, como el piloto automático
 

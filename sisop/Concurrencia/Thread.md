@@ -7,7 +7,7 @@ aliases:
   - Multithreading
   - Multihilos
 ---
-### Definición
+# Definición
 ---
 Los threads comparten los recursos del [[Proceso|proceso]], entre ellos, el espacio de memoria. Cada thread mantiene su propia información de estado como
 * Thread id
@@ -29,7 +29,7 @@ En la actualidad hay dos formas de que los threads se relacionen entre sí:
 2. Multi-threading Preemptivo
 	* Es el más usado en la actualidad. Consiste en que un thread en estado de [[Estados de un thread#Running|running]] puede ser movido en cualquier momento.
 
-#### Thread vs. [[Proceso|proceso]]
+## Thread vs. [[Proceso|proceso]]
 ---
 Tenemos varios casos de comparación
 1. Un thread por proceso
@@ -43,28 +43,28 @@ Tenemos varios casos de comparación
 	* Para aprovechar recursos, también el kernel puede ejecutar varios threads en [[Kernel mode]]
 
 
-#### [[Estados de un thread]]
+## [[Estados de un thread]]
 ---
 ![[Estados de un thread#Definición]]
 
-#### Ciclo de vida de un thread
+## Ciclo de vida de un thread
 ---
 Cada thread tiene dos estados
 * El estado per thread
 * El estado compartido entre varios thread
 
-##### [[Threads Control Block|El estado per-thread]]
+### [[Threads Control Block|El estado per-thread]]
 ---
 ![[Threads Control Block#Definición]]
 
-##### [[Thread Shared State|Shared state o Estado compartido]]
+### [[Thread Shared State|Shared state o Estado compartido]]
 ---
 ![[Thread Shared State#Definición]]
 
-#### [[Lock|Locks]]
+## [[Lock|Locks]]
 ---
 ![[Lock#Definición]]
 
-### API's
+# API's
 ---
 ![[POSIX Threads#Definición]]

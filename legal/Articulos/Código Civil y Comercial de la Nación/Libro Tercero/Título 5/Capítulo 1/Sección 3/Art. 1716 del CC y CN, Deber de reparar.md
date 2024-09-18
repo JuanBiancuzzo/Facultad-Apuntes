@@ -10,10 +10,10 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La violación del deber de no dañar a otro, o el incumplimiento de una obligación, da lugar a la reparación del daño causado, conforme con las disposiciones de este [[Código Civil y Comercial de la Nación|Código]]."
 
-### Interpretación
+# Interpretación
 ---
 La atribución del daño esta dado por el [[Art. 1721 del CC y CN, Factores de atribución|art. 1721 del CC y CN]] ![[Art. 1721 del CC y CN, Factores de atribución#Artículo]]

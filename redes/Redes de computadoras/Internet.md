@@ -4,7 +4,7 @@ tags:
   - redes/Redes-de-computadoras
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 [[Red|Red]] de computadoras que interconecta cientos de millones de [[Host|dispositivos informáticos]] a lo largo de todo el mundo
 

@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La voluntad de novar es requisito esencial de la novación. En caso de duda, se presume que la nueva obligación contraída para cumplir la anterior no causa su extinción."
 
-### Interpretación
+# Interpretación
 ---

@@ -4,7 +4,7 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Acción - Spark|acción]] que nos permite obtener una muestra de $n$ registros de un [[Resilent distributed dataset - Spark|RDD]] con o sin reemplazo.
 

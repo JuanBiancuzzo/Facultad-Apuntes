@@ -33,7 +33,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El consentimiento informado para actos médicos e investigaciones en salud es la declaración de voluntad expresada por el paciente, emitida luego de recibir información clara, precisa y adecuada, respecto a:
  a. su estado de salud;
@@ -58,7 +58,7 @@ Nadie puede ser sometido a exámenes o tratamientos clínicos o quirúrgicos sin
 
 Si la persona se encuentra absolutamente imposibilitada para expresar su voluntad al tiempo de la atención médica y no la ha expresado anticipadamente, el consentimiento puede ser otorgado por el representante legal, el apoyo, el cónyuge, el conviviente, el pariente o el allegado que acompañe al paciente, siempre que medie situación de emergencia con riesgo cierto e inminente de un mal grave para su vida o su salud. En ausencia de todos ellos, el médico puede prescindir del consentimiento si su actuación es urgente y tiene por objeto evitar un mal grave al paciente."
 
-### Interpretación
+# Interpretación
 ---
 
 

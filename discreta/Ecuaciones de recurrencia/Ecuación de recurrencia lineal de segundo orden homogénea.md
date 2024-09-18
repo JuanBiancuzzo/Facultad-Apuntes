@@ -4,7 +4,7 @@ tags:
  - discreta/Ecuaciones-de-recurrencia
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $a, b$ constantes, entonces la [[Ecuación de recurrencia lineal|ecuación de recurrencia]] de la forma $$ x_{n+2} + ax_{n+1} +bx_n = 0 $$
 Podemos obtener la solución general como suma de solución de la homogénea más una solución particular

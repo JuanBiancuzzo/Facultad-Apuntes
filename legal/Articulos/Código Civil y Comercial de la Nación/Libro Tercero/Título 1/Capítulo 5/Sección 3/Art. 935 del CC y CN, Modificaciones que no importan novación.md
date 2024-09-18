@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La entrega de documentos suscriptos por el deudor en pago de la deuda y, en general, cualquier modificación accesoria de la [[Art. 724 del CC y CN, Definición|obligación]] primitiva, no comporta novación."
 
-### Interpretación
+# Interpretación
 ---

@@ -7,7 +7,7 @@ tags:
   - señales/Transformada-discreta-de-Fourier
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La FFT es un [[algo 1/Introducción a la programación/Algoritmo|algoritmo]] para computar la [[Transformada Discreta de Fourier|DFT]] con una [[Complejidad computacional|complejidad computacional]] de $O(n ~ \log n)$ 
 

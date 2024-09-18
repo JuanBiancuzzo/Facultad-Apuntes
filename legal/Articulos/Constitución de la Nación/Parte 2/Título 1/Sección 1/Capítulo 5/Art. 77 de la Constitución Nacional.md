@@ -12,11 +12,11 @@ previo: "[[legal/Articulos/Constitución de la Nación/Parte 2/Título 1/Secció
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Las [[Ley|leyes]] pueden tener principio en cualquiera de las Cámaras del Congreso, por proyectos presentados por sus miembros o por el [[Poder Ejecutivo|Poder Ejecutivo]], salvo las excepciones que establece esta [[Constitución de la Nación|Constitución]].
 
 Los proyectos de ley que modifiquen el régimen electoral y de partidos políticos deberán ser aprobados por mayoría absoluta del total de los miembros de las Cámaras."
 
-### Interpretación
+# Interpretación
 ---

@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El objeto de la [[Persona jurídica|persona jurídica]] debe ser preciso y determinado."
 
-### Interpretación
+# Interpretación
 ---

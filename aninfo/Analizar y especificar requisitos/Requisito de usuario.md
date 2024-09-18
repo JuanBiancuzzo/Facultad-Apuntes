@@ -4,7 +4,7 @@ tags:
   - aninfo/Analizar-y-especificar-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 [[Requisito|Requisitos]] del [[Sistema]]/software, desde el punto de vista del usuario. Respondiendo a qué es lo que el usuario debe poder hacer con el [[Sistema]]/software.
 

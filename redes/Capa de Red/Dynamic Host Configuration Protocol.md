@@ -7,7 +7,7 @@ tags:
   - redes/Capa-de-Red
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Una vez la organización obtiene un bloque de [[Internet Protocol Address|direcciones]], puede asignarlas individualmente a las interfaces de la organización. Un administrador de red puede configurar manualmente la direcciones de los [[Router|routers]], pero también puede configurar manualmente las direcciones de los [[Host|hosts]] a partir del Dynamic Host Configuration Protocol
 

@@ -4,7 +4,7 @@ tags:
   - proba/Representación-de-variables-aleatorias
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $X$ una [[Variable aleatoria]] con [[Varianza]] finita
 $$ \begin{align} 
@@ -12,6 +12,6 @@ $$ \begin{align}
 \end{align} $$
 
 
-### Observación
+# Observación
 ---
 Es un caso especifico de la [[Desigualdad de Markov]] donde $Y = X - E[X]$ y $h(t) = t^2$.

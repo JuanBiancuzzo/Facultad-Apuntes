@@ -4,7 +4,7 @@ tags:
   - adc/Circuitos-en-regimen-de-corriente-continua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En el análisis por [[Nodo|nodos]] interesa hallar las [[Tensión|tensiones]] de nodo. Dado un [[Circuito eléctrico|circuito]] con $n$ nodos sin [[Fuente de tensión|funtes de tensión]], el análisis por nodo del circuito implica los tres pasos siguientes
 

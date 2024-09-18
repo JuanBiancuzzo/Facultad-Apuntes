@@ -4,7 +4,7 @@ tags:
   - redes/Capa-de-Red
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Responsable de trasladar los [[Paquete|paquetes]] de la capa de red, conocidos como [[Paquete|datagramas]], de un [[Host|host]] a otro
 
@@ -14,7 +14,7 @@ La capa de red incluye el conocido [[Internet Protocol Address|protocolo IP]], q
 
 El [[Internet Protocol Address|protocolo IP]] provee comunicación lógica entre hosts, ofrece un [[Servicio de best-effort delivery|servicio de best-effort delivery]]. Debido a esto se dice que el protocolo IP es un unreliable service
 
-#### Funcionalidades
+## Funcionalidades
 ---
 Podemos identificar dos funciones de capa de red importantes
 * [[Forwarding|Forwarding]] ![[Forwarding#^baf6a6]]
@@ -26,7 +26,7 @@ Existen dos tipos principales de packet switches
 * Los [[Link-layer switches|link-layer switches]] basarán las decisiones de envío a partir de los valores del link-layer-frame
 * Los [[Packet switches|packet switches]] basarán las decisiones en los campos de cabecera del datagrama
 
-#### Servicios
+## Servicios
 ---
 El modelo de servicio de red define las características del envío end-to-end entres dos hosts, estos pueden incluir
 * Guaranteed delivery

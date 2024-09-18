@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "No pueden ser [[Capítulo 5, Objeto|objeto]] de los [[Contrato|contratos]] los hechos que son imposibles o están prohibidos por las leyes, son contrarios a la moral, al orden público, a la dignidad de la persona humana, o lesivos de los derechos ajenos; ni los bienes que por un motivo especial se prohíbe que lo sean. Cuando tengan por objeto derechos sobre el cuerpo humano se aplican los [[Art. 17 del CC y CN, Derechos sobre el cuerpo humano|artículos 17]] y [[Art. 56 del CC y CN, Actos de disposición sobre el propio cuerpo|56]]."
 
-### Interpretación
+# Interpretación
 ---
 Si el contrato tiene por objeto derechos sobre el cuerpo humano, se deben aplicar los artículos 17, y 56. Estas normas disponen
 1. Que las partes del cuerpo humano carecen de valor comercial

@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Regimen de contrataciones de la administración nacio
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El presente régimen será de aplicación a los procedimientos de contratación en los que sean parte las jurisdicciones y entidades comprendidas en el [[Art. 8 de la administración financiera y sistemas de control#^a|inciso a) del artículo 8° de la Ley N° 24.156]]."
 
-### Interpretación
+# Interpretación
 ---

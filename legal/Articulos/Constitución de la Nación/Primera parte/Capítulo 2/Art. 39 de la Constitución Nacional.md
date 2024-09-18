@@ -15,7 +15,7 @@ previo: "[[legal/Articulos/Constitución de la Nación/Primera parte/Capítulo 2
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los ciudadanos tienen el derecho de iniciativa para presentar proyectos de ley en la Cámara de Diputados. El Congreso deberá darles expreso tratamiento dentro del término de doce meses.
 
@@ -23,5 +23,5 @@ El Congreso, con el voto de la mayoría absoluta de la totalidad de los miembros
 
 No serán objeto de iniciativa popular los proyectos referidos a reforma constitucional, tratados internacionales, tributos, presupuesto y materia penal."
 
-### Interpretación
+# Interpretación
 ---

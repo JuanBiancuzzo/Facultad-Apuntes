@@ -4,7 +4,7 @@ tags:
   - aninfo/Descubrimiento-de-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una técnica de creatividad que tiene como propósito generar y recoger múltiples ideas para resolver un problema
 

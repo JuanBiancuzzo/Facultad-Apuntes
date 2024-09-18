@@ -4,13 +4,13 @@ tags:
   - discreta/Relaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Definimos $R$ como una relación en $A$ si $R \subseteq A \times A$, utilizando el [[Producto cartesiano|producto cartesiano]]. Por ejemplo, sea $A = \set{1,~2,~3}$. Podremos definir una relación $R_1 = \Set{ (1,~1),~ (1,~2),~ (3,~3) }$
 
 Existen dos formas para denotar que un par de elementos pertenece a una relación $$ \begin{array}{c} (1,~2) \in R_1 \\ 1 R_1 2 \end{array} $$
 
-#### Representación matricial
+## Representación matricial
 ---
 Para representar una relación, también podremos utilizar una [[Matriz de adyacencia|matriz de adyacencia]], con la cantidad de elementos de $A$ como tamaño $$ A_{R_1} = \begin{pmatrix} 
 	1 & 1 & 0 \\
@@ -18,13 +18,13 @@ Para representar una relación, también podremos utilizar una [[Matriz de adyac
 	0 & 0 & 1 \\
 \end{pmatrix} $$
 
-##### Operaciones
+### Operaciones
 ---
 Sean $A,~B \in \mathbb{R}^{n \times m}$ entonces
 * Orden $A \le B \iff A(i,~j) \le B(i,~j), ~~~ \forall i,j$
 * Producto Hadamard $(A \odot B)(i,~j) = A(i,~j) ~ B(i,~j), ~~~ \forall i,j$
 
-#### Representación con grafos
+## Representación con grafos
 ---
 Otra forma de representar la relación es graficando el [[Conjunto|conjunto]] y señalando con flechas las relaciones entre los objetos
 
@@ -50,7 +50,7 @@ La flecha parte del primer elemento del par, y llega al segundo elemento del par
 ```
 
 
-#### Propiedades
+## Propiedades
 ---
 En una relación, se pueden presentar las siguientes propiedades independientes, siendo $R$ una relación en el conjunto $A$
 

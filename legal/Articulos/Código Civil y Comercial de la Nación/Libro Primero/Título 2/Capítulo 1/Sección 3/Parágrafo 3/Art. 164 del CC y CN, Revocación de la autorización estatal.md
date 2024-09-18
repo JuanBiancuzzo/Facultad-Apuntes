@@ -10,11 +10,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La revocación de la autorización estatal debe fundarse en la comisión de actos graves que importen la violación de la ley, el estatuto y el reglamento.
 
 La revocación debe disponerse por resolución fundada y conforme a un procedimiento reglado que garantice el derecho de defensa de la persona jurídica. La resolución es apelable, pudiendo el juez disponer la suspensión provisional de sus efectos."
 
-### Interpretación
+# Interpretación
 ---

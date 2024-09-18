@@ -4,7 +4,7 @@ tags:
   - taller/Sintaxis
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 `impl` se usa para definir métodos a [[Enum|enums]] y [[Estrucutura|structs]]
 

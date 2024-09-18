@@ -6,6 +6,6 @@ tags:
   - redes/Redes-de-computadoras
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Conjunto de reglas que el [[Programa|programa]] que transmite los datos debe cumplir, para que [[Internet|internet]] pueda entregar esos datos al programa destino

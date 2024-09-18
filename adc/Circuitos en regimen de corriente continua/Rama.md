@@ -4,6 +4,6 @@ tags:
   - adc/Circuitos-en-regimen-de-corriente-continua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Una rama representa un solo elemento, como una [[Fuente de tensión]] o un [[Resistor]]

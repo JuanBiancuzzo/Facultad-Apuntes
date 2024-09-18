@@ -4,6 +4,6 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El carácter imperativo impone las consecuencia acordadas, las cuales no pueden disponerse de ellas. A diferencia de un [[Carácter supletorio|carácter supletorio]]

@@ -4,7 +4,7 @@ tags:
   - orga/Machine-learning
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la búsqueda de [[Hiper-parámetros de un modelo]], donde algunos métodos son:
 * Grid-search

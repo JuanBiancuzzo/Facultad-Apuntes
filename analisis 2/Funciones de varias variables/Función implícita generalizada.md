@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Funciones-de-varias-variables
 ---
-### Definición
+# Definición
 ---
 Partiendo de la definición de [[Función implícita|función implicita]], plantearemos los siguientes
 

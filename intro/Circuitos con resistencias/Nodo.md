@@ -8,19 +8,19 @@ aliases:
 referencias:
   - "242"
 ---
-### Definición
+# Definición
 ---
 Un nodo o vértice es un espacio en el que se juntan, una cantidad (puede ser nula) de conexiones de otros nodos
 
-#### En teoría de grafos
+## En teoría de grafos
 ---
 En teoría de grafos, un vértice o nodo es la unidad fundamental de la que están formados los grafos<sup><a href="#ref-242" style="color: inherit; text-decoration: none;">[242]</a></sup> 
 
-#### En electrónica
+## En electrónica
 ---
 Un nodo es un punto común en el que se conectan dos o más componentes o [[Rama|ramas]]
 
-##### Esquematización
+### Esquematización
 ---
 ```tikz
 \usepackage[
@@ -57,7 +57,7 @@ Un nodo es un punto común en el que se conectan dos o más componentes o [[Rama
 ```
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

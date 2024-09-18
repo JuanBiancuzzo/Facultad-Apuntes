@@ -4,7 +4,7 @@ tags:
  - plugins-de-obsidian
  - nota/proyecto 
 ---
-### Progreso
+# Progreso
 ---
 El plugin de mejor alias tiene que poder conseguir la información en el frontmatter con el nombre aliases, en el cual se va a tomar la notación
 * alias@header

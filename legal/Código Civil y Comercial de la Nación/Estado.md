@@ -4,7 +4,7 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El Estado es una forma de [[Organización|organización]] política que dispone de un [[Ordenamiento jurídico|orden jurídico]] en el que se establecen sus órganos y las competencias de estados para la producción y aplicación de normas, detentando el monopolio de la fuerza pública para respaldarlas en caso de que sean incumplidas.
 

@@ -4,7 +4,7 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Transformación - Spark|transformación]] que nos permite decrecer la cantidad de [[Partición - Spark|particiones]] del [[Resilent distributed dataset - Spark|RDD]]. No hace un [[Etapa de shuffle & sort|shuffle]] por defecto, solo pasa datos de una partición a otra. Por lo tanto no necesariamente queda balanceadas como en [[Repartition - Spark|repatition]]
 

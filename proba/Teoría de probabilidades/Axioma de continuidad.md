@@ -4,11 +4,11 @@ tags:
   - proba/Teoría-de-probabilidades
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Para cada [[Sucesión|sucesión]] decreciente de [[Evento|eventos]] $$ A_1 \ge A_2 \ge A_3 \ge \cdots $$
 tal que $$ \bigcap^{\infty}_{i=1} A_i = \emptyset $$ vale que $$ \lim_{n \to \infty} \mathbb{P}(A_n) = 0 $$
-#### Propiedades
+## Propiedades
 ---
 1. Si $\overline{A}$ es el [[Evento|evento]] complementario de $A$, entonces $$ \mathbb{P}(\overline{A}) = 1 - \mathbb{P}(A) $$
 2. Sean $A$ y $B$ eventos pertenecientes a $\Omega$, entonces $$ \mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cap B) $$

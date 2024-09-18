@@ -6,13 +6,13 @@ tags:
   - sisop/File-system
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es virtual file system es el [[Sistema|subsistema]] del [[Kernel]] que implementa la interfaces que tiene que ver con los archivos y el [[File system|sistema de archivos]] provistos a los programas corriendo en [[User mode|modo usuario]]. Todos los sistemas de archivos deben basarse en VFS para coexistir e interoperar. Esto habilita a los [[Programa|programas]] a utilizar las [[System call|system calls]] de [[Unix]] para leer y escribir en diferentes sistemas de archivos y diferentes medios.
 
 Los VFS es el pegamento que habilita a las system calls como por ejemplo `open()`, `read()` y `write()` a funcionar sin que estas necesiten tener en cuenta el [[Hardware]] subyacente.
 
-#### Objetos
+## Objetos
 ---
 Los VFS presentan una serie de estructuras que [[Modelar|modelan]] un [[File system]], estas estructuras se denominan objetos. Estos objetos son:
 * Super bloque:
@@ -28,7 +28,7 @@ Los VFS presentan una serie de estructuras que [[Modelar|modelan]] un [[File sys
 
 A tener en cuenta que un directorio es tratado como un archivo normal, no hay un objeto especifico para directorios. En [[Unix]] los directorios son archivos normales que listan los archivos contenidos en ellos.
 
-#### Operaciones
+## Operaciones
 ---
 Existe un conjunto de operaciones
 * Las `super_operations`:

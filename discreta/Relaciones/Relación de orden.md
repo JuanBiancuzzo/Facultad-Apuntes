@@ -6,7 +6,7 @@ tags:
 aliases:
   - Poset
 ---
-### Definición
+# Definición
 ---
 Cuando una [[Relación|relación]] es reflexiva, antisimétrica y [[Transitividad en relaciones de orden|transitiva]], se llama relación de orden
 

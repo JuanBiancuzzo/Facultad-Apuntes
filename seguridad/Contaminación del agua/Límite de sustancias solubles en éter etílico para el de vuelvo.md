@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-agua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El impacto que producen en los cursos de agua son:
 * Restringen el ingreso de luz a los cursos de agua

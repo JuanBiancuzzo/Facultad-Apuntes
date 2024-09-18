@@ -6,7 +6,7 @@ tags:
   - redes/Redes-de-computadoras
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 [[Host|Host]], [[Router|routers]] y otros dispositivos ejecutan [[Protocolo|protocolos]] que controlan el envío y recepción de [[Información|información]] dentro de [[Internet|internet]]
 

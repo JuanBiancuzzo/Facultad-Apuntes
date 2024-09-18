@@ -4,7 +4,7 @@ tags:
   - sisop/Scheduling
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La diferencia entre [[Hardware|hardware]] monoprocesador y multi-procesador, se centra básicamente alrededor de un tipo de hardware llamado [[Cache|cache]], y de que forma exactamente los datos en la cache son compartidos a través de los [[Procesador|multiprocesadores]]
 

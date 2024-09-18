@@ -4,7 +4,7 @@ tags:
   - seguridad/Protección-auditiva
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es el nivel [[Presión sonora|sonoro]] medido en [[Decibel A|decibeles "A"]] de un [[Ruido]] supuesto constante y continuo durante toda la jornada laboral, cuya energía sonora sea igual a la del ruido variable medio estadísticamente a lo largo de la misma.
 
@@ -14,7 +14,7 @@ Donde $NPS_i$ es el nivel de [[Presión sonora]] del intervalo $i$ con duración
 El limite admisible por la resolución 295/03 es de $85dBA$ para una exposición de $8hs$. En el caso de una exposición variable se aplica la condición que $$ \sum_i \frac{C_i}{T_i} \le 1 $$
 Donde $C_i$ es el tiempo al que está expuesto a un determinado nivel de ruido, y $T_i$ es el tiempo máximo permitido a ese nivel.
 
-##### Tiempos máximos de exposición
+### Tiempos máximos de exposición
 ---
 
 | Duración por dia | NPS dBA |

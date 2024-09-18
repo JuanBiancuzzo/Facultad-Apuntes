@@ -28,7 +28,7 @@ previo: "[[legal/Articulos/Ley de Obras públicas/Capítulo 8/Capítulo 8, De la
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Resuelta la rescisión del contrato, salvo el caso previsto en el [[Art. 51 de la Ley de Obras públicas#^c|inciso c)]] del artículo anterior, ella tendrá las siguientes consecuencias:
 
@@ -42,5 +42,5 @@ tags:
  
  e. Sin perjuicio de las sanciones dispuestas en esta ley, el contratista que se encuentre comprendido en el caso del [[legal/Articulos/Ley de Obras públicas/Capítulo 8/Art. 51 de la Ley de Obras públicas#^a|inciso a)]] del artículo anterior perderá además la fianza rendida."
 
-### Interpretación
+# Interpretación
 ---

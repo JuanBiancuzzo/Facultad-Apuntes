@@ -4,6 +4,6 @@ tags:
   - estructura/Diseño-combinacional
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son aquellos [[Implicante]] que no estan contenidos en otros [[Implicante]].

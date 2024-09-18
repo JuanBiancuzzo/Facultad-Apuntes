@@ -4,7 +4,7 @@ tags:
   - orga/Visualizaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Serie de tiempo]] donde al estilo del [[Densidy plot]] intenta suavizar los datos, pero sin la restricción que genera el density plot.
 

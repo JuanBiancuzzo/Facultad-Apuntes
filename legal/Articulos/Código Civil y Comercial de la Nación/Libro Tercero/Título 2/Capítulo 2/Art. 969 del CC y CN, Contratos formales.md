@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los contratos para los cuales la ley exige una forma para su validez, son nulos si la solemnidad no ha sido satisfecha. Cuando la forma requerida para los contratos, lo es sólo para que éstos produzcan sus efectos propios, sin sanción de nulidad, no quedan concluidos como tales mientras no se ha otorgado el instrumento previsto, pero valen como contratos en los que las partes se obligaron a cumplir con la expresada formalidad. Cuando la ley o las partes no imponen una forma determinada, ésta debe constituir sólo un medio de prueba de la celebración del contrato."
 
-### Interpretación
+# Interpretación
 ---
 Dentro de la categoría de contratos formales, hay que hacer una distinción de la mayor importancia: 
 * Los contratos cuya forma es requerida a los fines probatorios

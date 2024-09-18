@@ -4,7 +4,7 @@ tags:
   - dispo/Física-de-semiconductores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la formación de un enlace al unirse un [[Electrón]] $e^-$ y un [[Hueco]] $h^+$. Este libera energía de forma térmica u óptica.
 

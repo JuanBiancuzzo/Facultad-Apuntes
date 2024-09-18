@@ -4,7 +4,7 @@ tags:
   - analisis-3/Serie-de-Fourier
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $E_P^m$ un [[Subespacio|subespacio]] de $E_P$ ([[Conjunto de funciones periódicas|conjunto de funciones periódicas]]), con $m \in \mathbb{N}$ donde: $$ E_P^m = gen\Set{e_{-m}, ~e_{-m + 1}, ~\cdots,~ e_{-2}, ~e_{-1}, ~e_{0}, ~e_{1}, ~e_{2}, ~\cdots, ~e_{m - 1}, ~e_{m}} $$
 Observe que $dim~E_P^m = 2m + 1$ y que se tiene la cadena infinita $E_p^1 \subset E_p^2 \subset E_p^3 \subset \cdots$ de inclusiones estrictas.
@@ -13,7 +13,7 @@ Para cada $f \in E_p$, sea $f_m = \Pi_m(f)$ la proyección ortogonal de $f$ sobr
 
 Con los coeficientes $c_n(f)$ se denominan coeficientes de Fourier de $f$.
 
-#### Proposición
+## Proposición
 ---
 Sean $f \in E_P$, $m$ un entero positivo, $f_m$ su [[Proyección ortogonal|proyección ortogonal]] sobre $E_P^m$ y $k$ un entero tal que $-m \le k \le m$. Entonces:
 

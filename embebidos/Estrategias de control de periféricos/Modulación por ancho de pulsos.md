@@ -9,7 +9,7 @@ aliases:
 referencias:
   - "241"
 ---
-### Definición
+# Definición
 ---
 Es una técnica es para cuando un [[General Purpose Input Output#Output|pin de salida]] o simplemente una [[Fuente de tensión|fuente]], quiere dar valores entre su [[Tensión|tensión]] de alimentación $V_{dd}$ y tierra $0~V$, pero este se ve limitado a estos dos extremos. Se logra dar el valor deseado $V_f$ en promedio, donde se mantiene en $V_{dd}$ por un porcentaje de un ciclo, y en $0~V$ por el resto del ciclo, calculándolo de la siguiente forma $$ \frac{T_{prendido}}{T_{ciclo}} ~ V_{dd} = V_f $$
 Viendo un ejemplo, se puede entender con mayor facilidad
@@ -66,7 +66,7 @@ Viendo un ejemplo, se puede entender con mayor facilidad
 \end{document}
 ```
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

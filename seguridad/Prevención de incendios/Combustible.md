@@ -4,6 +4,6 @@ tags:
   - seguridad/Prevención-de-incendios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Material que cede [[Electrón|electrones]] a un agente oxidante. Estado: sólido, líquido o gaseoso.

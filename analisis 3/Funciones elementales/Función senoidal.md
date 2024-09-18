@@ -7,7 +7,7 @@ aliases:
   - Frecuencia angular#^parametros
   - Fase inicial#^parametros
 ---
-### Definición
+# Definición
 ---
 Teniendo la [[Función seno|función de Seno]] $$ v(t) = V_m ~ sen(\omega t + \phi) $$ donde $V_m$ es la amplitud, $\omega$ es la frecuencia angular en radiantes y $\phi$ es la fase ^parametros
 

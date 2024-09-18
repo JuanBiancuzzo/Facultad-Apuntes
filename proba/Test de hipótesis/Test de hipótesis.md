@@ -8,7 +8,7 @@ Es una regla de decisión entre la [[Hipótesis nula]] y la [[Hipótesis alterna
 
 Si $\delta(\underline{X}) = 1$ se rechaza $H_0$, y en caso contrario no se rechaza.
 
-### Definición
+# Definición
 ---
 Sea $\underline{X} = \left( X_1, \cdots, X_n  \right)$ una [[Muestra aleatoria]] de una [[Población]] con distribución $F_\theta(x)$, $\theta \in \Theta$. Sean $\Theta_1$ y $\Theta_2$ una [[Partición]] de $\Theta$. Un test para este problema es una regla de decisión basada en $\underline{X}$ para decidir entre la [[Hipótesis nula]] y la [[Hipótesis alternativa]] $$ H_0 : \theta \in \Theta_1 ~~~ \text{y} ~~~ H_1 : \theta \in \Theta_2 $$
 Entonces 

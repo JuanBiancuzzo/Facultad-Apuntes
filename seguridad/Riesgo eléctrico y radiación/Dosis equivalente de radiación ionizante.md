@@ -4,7 +4,7 @@ tags:
   - seguridad/Riesgo-eléctrico-y-radiación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se obtiene a partir de la [[Dosis Absorbida de radiación ionizante|dosis]] media en un órgano, y un factor de ponderación $w_r$ que depende del tipo de radiación. Esta magnitud se expresa en Sievert ($Sv$) que es proporcional a $Joule \cdot kg^{-1}$.
 

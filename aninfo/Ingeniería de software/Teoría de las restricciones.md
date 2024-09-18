@@ -6,6 +6,6 @@ tags:
   - aninfo/Ingeniería-de-software
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Tiene la filosofía de administrar las restricciones con un énfasis en la restricciones del sistema

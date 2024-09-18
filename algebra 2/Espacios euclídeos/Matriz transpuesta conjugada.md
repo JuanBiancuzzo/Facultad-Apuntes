@@ -4,13 +4,13 @@ tags:
   - algebra-2/Espacios-euclídeos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $A \in \mathbb{C}^{m \times n}$ se define 
 
 $$ A^* = \overline{A^T} $$
 
-#### Propiedades
+## Propiedades
 ---
  * $(A + B)^* = A^* + B^*$, $A, B \in \mathbb{C}^{m \times n}$
  * $(\alpha A)^* = \overline\alpha A^*$, $A \in \mathbb{C}^{m \times n}$, $\alpha \in \mathbb{C}$

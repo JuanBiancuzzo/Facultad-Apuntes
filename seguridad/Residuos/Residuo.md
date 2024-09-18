@@ -4,11 +4,11 @@ tags:
   - seguridad/Residuos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los residuos comprenden los restos de una operación y/o proceso que provienen de la actividad humana y que son desechados como inútiles o superfluos. Es decir que no revisten valor económico para quien los genera.
 
-##### Clasifición según su estado
+### Clasifición según su estado
  * [[Residuo sólido|Sólidos]]
  * Semisólidos
  * Líquidos (contenidos en un recipiente)

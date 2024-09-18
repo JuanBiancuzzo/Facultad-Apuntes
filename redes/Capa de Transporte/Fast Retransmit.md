@@ -4,7 +4,7 @@ tags:
   - redes/Capa-de-Transporte
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Retransmitir puede detectar perdidas de [[Paquete|paquetes]] incluso antes de que ocurra el timer interrupt, a partir de la llagada de [[Protocolo de entrega confiable|ACK]] duplicados
 

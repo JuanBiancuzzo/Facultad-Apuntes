@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-euclídeos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La ecuación normal de una [[Matriz|matriz]], viene derivada de resolver el problema de aproximar la solución de un sistema $Ax = b$ donde $b \notin col(A)$, y es:
 

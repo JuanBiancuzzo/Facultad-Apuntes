@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Constitución de la Nación/Parte 2/Título 2/Capítu
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Se dan sus propias instituciones locales y se rigen por ellas. Eligen sus gobernadores, sus legisladores y demás funcionarios de provincia, sin intervención del [[Gobierno federal|Gobierno federal]]."
 
-### Interpretación
+# Interpretación
 ---

@@ -4,7 +4,7 @@ tags:
   - taller/Organizacion
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son [[Módulo de rust|modulos]] creados por otros, se pueden ver todos en https://crates.io/ ,por lo tanto para importarlo tenemos que agregarlo como dependencia en el archivo Cargo.toml
 

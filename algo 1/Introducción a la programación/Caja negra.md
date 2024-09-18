@@ -6,7 +6,7 @@ tags:
 aliases:
   - Black box
 ---
-### Definición
+# Definición
 ---
 Aquel elemento que es estudiado desde el punto de vista de las entradas que recibe y las salidas o respuestas que produce, sin tener en cuenta su funcionamiento interno.
 

@@ -4,7 +4,7 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es el sistema de procesamiento distribuido que utiliza [[Map-Reduce]] para su manejo de análisis de información.
 

@@ -7,10 +7,10 @@ tags:
 aliases:
   - Memory-Mapped Peripherals
 ---
-### Definición
+# Definición
 ---
 
-#### Placa de desarrollo Nucleo-64
+## Placa de desarrollo Nucleo-64
 ---
 Los periféricos STM MCU se controlan y los datos se transfieren utilizando direcciones dentro de un rango de $32$ bits
 
@@ -20,7 +20,7 @@ Esto se conoce como [[Virtualización de memoria|mapeo de memoria]], porque desd
 
 Acá se muestra los bloques principales que constituyen todo el rango de direcciones de $32$ bits. También se muestran los dos bloques ampliados, que detallan las ubicaciones de la memoria del core, así como las ubicaciones de los periféricos/[[Bus|bus]]
 
-##### Placa de desarrollo STM32-F302R8
+### Placa de desarrollo STM32-F302R8
 ---
 Veamos las direcciones de memoria asignadas a los periféricos
 

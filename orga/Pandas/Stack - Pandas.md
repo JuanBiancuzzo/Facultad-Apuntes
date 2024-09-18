@@ -4,7 +4,7 @@ tags:
   - orga/Pandas
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 ``` Python
 DataFrame.stack(level = -1, dropna = True)

@@ -10,7 +10,7 @@ tags:
   - redes/Capa-de-Transporte
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La abstracción del servicio provista por las capas superiores es la de un canal viable de comunicación por la cual se puede transferir datos. Con este canal, ningún bit puede ser corrompido o perdido. Es la responsabilidad de un protocolo de transferencia confiable de implementar este servicio
 

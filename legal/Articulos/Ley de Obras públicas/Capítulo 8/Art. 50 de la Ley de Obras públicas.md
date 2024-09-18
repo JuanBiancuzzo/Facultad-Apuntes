@@ -34,7 +34,7 @@ previo: "[[legal/Articulos/Ley de Obras públicas/Capítulo 8/Capítulo 8, De la
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La administración nacional tendrá derecho a la rescisión del contrato, en los casos siguientes.
 
@@ -52,5 +52,5 @@ En el caso del [[Art. 50 de la Ley de Obras públicas#^b|inciso b)]], deberá ex
 
 En el caso del [[Art. 50 de la Ley de Obras públicas#^c|inciso c)]], se podrá prorrogar el plazo si el contratista demostrase que la demora en la iniciación de las obras se ha producido por causas inevitables y ofrezca cumplir su compromiso. En caso de que no proceda el otorgamiento de esa prórroga, o que concedida ésta el contratista tampoco diera comienzo a los trabajos en el nuevo plazo fijado, el contrato quedará rescindido con pérdida de la fianza."
 
-### Interpretación
+# Interpretación
 ---

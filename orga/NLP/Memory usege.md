@@ -4,7 +4,7 @@ tags:
   - orga/NLP/1
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 ``` python
 DataFrame.memory_usage(index = True, deep = False)

@@ -8,7 +8,7 @@ tags:
   - nota/facultad
   - redes/Capa-Física-Inalámbrica
 ---
-### Definición
+# Definición
 ---
 En entornos tanto corporativos como domésticos, se utiliza una [[Local Area Network|red de área local (LAN)]] para conectar un sistema de [[Host|hosts]] al [[Router|router]]. Los usuarios inalámbricos transmiten/reciben [[Paquete|paquetes]] hacia/desde un punto de acceso que está conectado a la [[Red|red]], que a su vez se conecta a la [[Acceso a una red por cable|red cableada]]
 
@@ -16,13 +16,13 @@ Existen muchos estándares para esta clase, todos ellos comparten algunas caract
 
 Existen dos rangos frecuencias principales, 2.4 GHz y 5.8 GHz. Las redes 5.8 tienen menor rango para un nivel de [[Potencia|potencia]] dado, y sufren más de propagación multipath. Los estándares más recientes utilizan múltiples antenas (tanto receptoras como emisoras), y utilizan antenas inteligentes para direccionar las mismas en dirección del receptor. Esto redujo la interferencia e incremento la [[Distancia|distancia]] alcanzada para una tasa dada
 
-#### Arquitectura
+## Arquitectura
 ---
 El bloque fundamental de construcción de la arquitectura de 802.11 es el [[Basic Service Set (BSS)|basic service set (BSS)]]. Este contiene una o más estaciones inalámbricas, y una estación base central, conocida como [[Access Point (AP)|access point (AP)]]. En una red típica de hogar, hay un AP y un router, típicamente integrados en la misma unidad
 
 Las [[Local Area Network|redes LAN inalámbricas]] que despliegan un access point son frecuentemente referidas como infrastructure wireless LAN. Las estaciones, a su vez, pueden concentrarse con otras estaciones formando una [[Red descentralizada|red descentralizada (ad hoc)]]
 
-##### Channels and associations
+### Channels and associations
 ---
 Cuando un administrador de red instala un access point, deben configurarse dos parámetros. El Service Set Identifier (SSID), y el número de canales. Las redes de 2.4 GHz operan entre 2.4 GHz y 2.4835 GHz, definiendo 11 canales parcialmente superpuestos. Dos canales no se superponen si distan a 4 o más canales.
 

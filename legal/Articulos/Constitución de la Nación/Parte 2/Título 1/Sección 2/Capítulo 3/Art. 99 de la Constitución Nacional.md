@@ -73,7 +73,7 @@ previo: "[[legal/Articulos/Constitución de la Nación/Parte 2/Título 1/Secció
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El Presidente de la Nación tiene las siguientes atribuciones:
 
@@ -127,5 +127,5 @@ tags:
      
  20. Decreta la intervención federal a una provincia o a la ciudad de Buenos Aires en caso de receso del Congreso, y debe convocarlo simultáneamente para su tratamiento."
 
-### Interpretación
+# Interpretación
 ---

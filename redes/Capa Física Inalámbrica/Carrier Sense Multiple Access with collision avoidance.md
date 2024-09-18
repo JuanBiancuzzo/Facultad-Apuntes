@@ -13,7 +13,7 @@ aliases:
   - Clear to Send#^CTS
   - CTS#^CTS
 ---
-### Definición
+# Definición
 ---
 Este difiere del [[Protocolo|protocolo]] de [[Ethernet]] [[Carrier Sense Multiple Access with collision detection|CSMA/CD]] en algunos aspectos. En primer lugar, en lugar de collision detection, [[Wireless Fidelity|802.11]] utiliza collision avoidance. En segundo lugar, 802.11 utiliza una técnica de [[Capa de Enlace|capa de enlace]] de [[Protocolo de entrega confiable|acknowledges/retransmisiones (ARQ)]]
 
@@ -27,7 +27,7 @@ Si un dispositivo quiere enviar un [[Frame|frame]], entonces escuchara el canal.
 
 Cuando una estación recibe un [[Paquete|paquete]] completo, espera un pequeño periodo de tiempo llamado Short Inter-Frame Spacing (SIFS) y luego reenvía un [[Protocolo de entrega confiable|ACK]]. Si el remitente no recibe el ACK en un periodo determinado, entonces entra en la siguiente etapa de exponential backoff y elige un valor aleatorio mayor para el intervalo
 
-#### Tratando con terminales ocultos
+## Tratando con terminales ocultos
 ---
 El protocolo incluye formas de manejar con [[Terminal oculto|terminales ocultos]]. Para evitar este problema, el protocolo define la utilización de un pequeño frame de control 
 * Request to Send (RTS) ^RTS
@@ -37,19 +37,19 @@ Cuando un dispositivo quiere enviar información, primero envía un frame RTS al
 
 Esto soluciona el problema de la terminal oculta, y limita las colisiones a los frames RTS y CTS, que son cortos. Por otro lado, introduce retrasos y consume recursos del canal. Debido a esto, solo es utilizado para el envío de paquetes largos. En muchas situaciones, incluso no es utilizado
 
-##### Point-to-point link
+### Point-to-point link
 ---
 Si dos nodos tienen antenas direccionales, pueden apuntar las antenas entre sí y utilizar para una comunicación barata, incluso a grandes distancias
 
-#### Frame
+## Frame
 ---
 Aunque comparte muchas similitudes con el [[Ethernet#Estructura|Ethernet frame]], tiene campos específicos para el uso de enlaces inalámbricos
 
-##### Payload y campo CRC
+### Payload y campo CRC
 ---
 El payload de frame contiene el [[Paquete|datagrama]] de [[Internet Protocol Address|IP]] o un paquete [[Address Resolution Protocol|ARP]]. Típicamente, tiene una longitud menor a 1500 bytes. Al igual que el Ethernet frame, contiene un 32-bit [[Cyclic Redundancy Check|cyclic redundancy check (CRC)]]
 
-##### Campos de dirección
+### Campos de dirección
 ---
 A diferencia de [[Ethernet|Ethernet]], se tienen cuatro [[Media Access Control Address|direcciones MAC]]. La primera dirección es la de la estación inalámbrica que recibe el frame. La segunda reacción es la de la estación que envía el frame
 
@@ -57,7 +57,7 @@ La tercera dirección indica la dirección MAC del [[Router|router]] al cual se 
 
 La cuarta dirección se utiliza cuando el [[Access Point (AP)|AP]] le envía frames a otros en un modo centralizado, pero no nos centraremos en esta infraestructura
 
-##### Número de secuencia, duración, campos de control
+### Número de secuencia, duración, campos de control
 ---
 Debido a la existencia de acknowledgments, los frames deben contener un número de secuencia para detectar aquellos paquetes repetidos
 
@@ -68,13 +68,13 @@ Finalmente, tiene un número de campos de control, los más importantes son
 * `to` y `from` se utilizan para definir el significado de los distintos campos de address.
 * `WEP` se utiliza para indicar si se utilizó encriptación o no
 
-##### Rate Adaptation
+### Rate Adaptation
 ---
 Como vimos anteriormente, las diferentes técnicas de modulación pueden ser apropiadas para diferentes escenarios de [[Signal to noise|SNR]]. Si se pierde un paquete, entonces se reduce la tasa de transmisión, pero si se envían correctamente diez paquetes seguidos, entonces esta se aumenta
 
 Esta técnica utiliza la misma tecnología de probing que utiliza el [[Control de congestión de Transmission Control Protocol|control de congestión de TCP]]
 
-##### Manejo de energía
+### Manejo de energía
 ---
 La [[Energía|energía]] es un recurso preciado en los dispositivos móviles, por lo que 802.11 provee formas para permitir que los nodos minimicen el tiempo utilizado en lectura y transmisión
 

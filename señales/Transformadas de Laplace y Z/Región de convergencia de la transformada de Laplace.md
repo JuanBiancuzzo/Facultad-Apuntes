@@ -6,12 +6,12 @@ tags:
   - señales/Transformadas-de-Laplace-y-Z
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se define la región de convergencia de la [[Transformada de Laplace|transformada de Laplace]] $x(t) \xleftrightarrow{~~\mathcal{L}} X(s)$ como $$ ROC\Set{X(s)} = \Set{ s = \sigma + j \omega \in \mathbb{C}: \int_{-\infty}^{\infty} \lvert x(t) ~ \exp(-\sigma t) \rvert ~ dt < \infty } $$
 Notemos que la región de convergencia de una señal $x(t)$ esta definido por todos aquellos puntos $s \in \mathbb{C}$ donde $x(t) ~ \exp(-\sigma)$ es [[Absolutamente integrable|absolutamente integrable]], lo que implica que la [[Transformada de Fourier|transformada de Fourier]] de $x(t) ~ \exp(-\sigma)$ está bien definida
 
-#### Propiedades
+## Propiedades
 ---
 Dado que la ROC es muy importante para la especificación de la transformada de Laplace de una [[Señal|señal]] temporal, exploraremos algunas conexiones entre las características de la señal y la correspondiente ROC
 
@@ -29,11 +29,11 @@ Dado que la ROC es muy importante para la especificación de la transformada de 
 	* Si $x(t)$ es derecha la ROC será el semiplano derecho limitado por el polo que se encuentra más hacia la derecha
 	* Si $x(t)$ es izquierda la ROC será el semiplano izquierdo limitado por el polo que se encuentra más hacia la izquierda
 
-##### Linealidad
+### Linealidad
 ---
 Sean $x(t) \xleftrightarrow{~~\mathcal{L}} X(s)$ e $y(t) \xleftrightarrow{~~\mathcal{L}} Y(s)$. Entonces tenemos que $$ ROC\Set{ \alpha X(s) + \beta Y(s) } \supseteq ROC\Set{X(s)} \cap ROC\Set{Y(s)} $$
 
-##### Desplazamiento temporal y desplazamiento en la frecuencia
+### Desplazamiento temporal y desplazamiento en la frecuencia
 ---
 Sea $x(t) \xleftrightarrow{~~\mathcal{L}} X(s)$. Entonces tenemos que $$ \begin{array}{c} 
 	x(t - t_0) \xleftrightarrow{~~\mathcal{L}} e^{-s t_0} ~ X(s) \\
@@ -44,28 +44,28 @@ $$ \begin{array}{c}
 	ROC\Set{ X(s - s_0) } = ROC\Set{X(s)} + Re\Set{s_0}
 \end{array} $$
 
-##### Escalamiento temporal
+### Escalamiento temporal
 ---
 Sea $x(t) \xleftrightarrow{~~\mathcal{L}} X(s)$. Entonces tenemos que $$ \begin{array}{c} 
 	\displaystyle x(\alpha ~ t) \xleftrightarrow{~~\mathcal{L}} \frac{1}{|\alpha|} ~ X\left( \frac{s}{\alpha} \right) \\
 	\displaystyle ROC\Set{ \frac{1}{|\alpha|} ~ X\left( \frac{s}{\alpha} \right) } = \frac{ROC\Set{X(s)}}{\alpha}
 \end{array} $$
 
-##### Convolución
+### Convolución
 ---
 Sean $x(t) \xleftrightarrow{~~\mathcal{L}} X(s)$ e $y(t) \xleftrightarrow{~~\mathcal{L}} Y(s)$. Entonces tenemos que $$ \begin{array}{c} 
 	x(t) \ast y(t) \xleftrightarrow{~~\mathcal{L}} X(s) ~ Y(s) \\
 	\displaystyle ROC\Set{ \alpha X(s) + \beta Y(s) } \supseteq ROC\Set{X(s)} \cap ROC\Set{Y(s)}
 \end{array} $$
 
-##### Diferenciación
+### Diferenciación
 ---
 Sea $x(t) \xleftrightarrow{~~\mathcal{L}} X(s)$. Entonces tenemos que $$ \begin{array}{c} 
 	\displaystyle \frac{x(t)}{dt} \xleftrightarrow{~~\mathcal{L}} s ~ X(s) \\
 	ROC\Set{s ~ X(s)} \supseteq ROC\Set{X(s)}
 \end{array} $$
 
-##### Integración
+### Integración
 ---
 Sea $x(t) \xleftrightarrow{~~\mathcal{L}} X(s)$. Entonces tenemos que $$ \begin{array}{c} 
 	\displaystyle \int_{-\infty}^{t} x(\tau) ~ d\tau \xleftrightarrow{~~\mathcal{L}} \frac{X(s)}{s} \\

@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-incendios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Situación que pone en [[Riesgo]] la integridad física de las personas y el patrimonio de la empresa.
 

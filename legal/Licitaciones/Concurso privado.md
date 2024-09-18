@@ -4,13 +4,13 @@ tags:
   - legal/Licitaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta caracterizado ([[Art. 25 del APA, Procedimientos de selección|art. 25]]) por 
 * Llamado a participar dirigido exclusivamente a proveedores que se hallaren incorporados al [[Sistema de Información de Proveedores|SIPRO]]
 * Criterio de selección del cocontratante recae primordialmente en factores _no_ económicos
 * Se puede realizar cuando el monto estimado del contrato fuere de hasta 15 millones
 
-#### Clases
+## Clases
 ---
 ![[Art. 26 del APA, Clases de licitaciones y concursos públicos#Artículo]]

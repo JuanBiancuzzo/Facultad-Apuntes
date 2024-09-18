@@ -4,7 +4,7 @@ tags:
   - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Relaciona la [[Tensión|tensión]] de entrada de un componente, con la [[Corriente eléctrica|corriente]] de salida del mismo 
 

@@ -7,9 +7,9 @@ previo: "[[Título 2, De las penas|Título 2, De las penas]]"
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Las penas que este [[Código Penal|Código]] establece son las siguientes: reclusión, prisión, multa e inhabilitación."
 
-### Interpretación
+# Interpretación
 ---

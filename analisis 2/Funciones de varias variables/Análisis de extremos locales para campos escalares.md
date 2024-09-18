@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Funciones-de-varias-variables
 ---
-### Definición
+# Definición
 ---
 Veremos como analizar los [[Máximo y mínimo local|máximos y mínimos locales]] para funciones de una variable
 

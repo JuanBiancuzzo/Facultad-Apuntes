@@ -4,7 +4,7 @@ tags:
   - sisop/File-system
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[System call|system call]] `creat()` equivale a llamar a `open()` con los flags `O_CREAT | O_WRONGLY | O_TRUNC`
 

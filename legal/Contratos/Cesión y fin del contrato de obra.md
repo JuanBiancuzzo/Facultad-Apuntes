@@ -4,7 +4,7 @@ tags:
   - legal/Contratos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El contrato de obra se extingue: 
 1) por el cumplimiento de la obra y el pago del precio
@@ -17,11 +17,11 @@ Si la obra se ha contratado por pieza o medida, sin designación del número de 
 
 A estos medios propios de extinción de este contrato, hay que añadir otros que son generales, a saber: rescisión por mutuo consentimiento y confusión de la persona del comitente y contratista
 
-#### Cumplimiento del contrato
+## Cumplimiento del contrato
 ---
 En esta sección se puede separar en 
 
-##### Recepción de la obra
+### Recepción de la obra
 ---
 La forma normal de la conclusión del contrato de obra es su cumplimiento por ambas partes; es decir, la entrega de la obra concluida y el pago del precio. 
 
@@ -29,7 +29,7 @@ El acto esencial de esta etapa final del contrato es la recepción de la obra po
 
 La verificación es un derecho y no una obligación del comitente; el contratista cumple poniendo la cosa a su disposición durante un tiempo razonable, vencido el cual puede exigir al comitente que reciba la cosa.
 
-##### Efectos de la recepción
+### Efectos de la recepción
 ---
 La recepción de la obra por el comitente, sin formular reserva alguna, produce los siguientes efectos
 1) Plazo
@@ -52,9 +52,9 @@ Algunos contratos contienen una cláusula en virtud de la cual al término de la
 
 Durante ese período, el comitente tiene derecho a retener del precio adeudado un depósito de garantía, que sirve para responder a las reparaciones que eventualmente sea necesario realizar por vicios ocultos de la cosa,
 
-#### Muerte, desaparición y falencia
+## Muerte, desaparición y falencia
 ---
-##### Muerte del contratista
+### Muerte del contratista
 ---
 La muerte del contratista resuelve el contrato, no así —al menos, como regla— la del comitente ([[Art. 1259 del CC y CN, Muerte del comitente|arts. 1259]] y [[Art. 1260 del CC y CN, Muerte del contratista o prestador|1260]]). La solución es lógica, porque la persona del contratista es generalmente decisiva en el contrato de obra, en tanto que la del comitente es casi siempre indiferente. 
 
@@ -62,7 +62,7 @@ El fallecimiento del contratista pone fin al contrato sin necesidad de que la re
 
 Hemos dicho que la muerte del comitente no extingue, como regla, el contrato. Por excepción, sí lo hace, cuando su muerte hace imposible o inútil la ejecución de la obra ([[Art. 1260 del CC y CN, Muerte del contratista o prestador|art. 1260]]).
 
-##### Desaparición del empresario
+### Desaparición del empresario
 ---
 Disponía el artículo 1643 del Código Civil de Vélez que el contrato puede ser resuelto por el comitente si desaparece el empresario. Por desaparición debe entenderse un abandono total de la obra, con la consiguiente cesación de los trabajos. Sin embargo, también se consideraba que había abandono de la obra por el contratista, cuando éste ejecutaba los trabajos con una lentitud tal que fuera imposible completarlos en el plazo estipulado. En ambos supuestos, el comitente estaba facultado para resolver el contrato.
 
@@ -70,7 +70,7 @@ Esta causal de extinción del contrato no es mencionada en el Código Civil y Co
 
 Sin perjuicio de lo expuesto, debe recordarse que la ley de obras públicas hace referencia concreta al abandono de la obra, pues dispone que habrá abandono que autoriza al Estado a resolver el contrato cuando los trabajos se realicen con lentitud, de modo que la parte ejecutada no corresponda al tiempo previsto en los planes de trabajo y a juicio de la administración no puedan terminarse en los plazos estipulados; y cuando el contratista interrumpa los trabajos por plazo mayor de ocho días en tres ocasiones o por plazo mayor de un mes, aunque sea una sola vez (art. 50, incs. b] y e], ley 13.064).
 
-##### Quiebra
+### Quiebra
 ---
 El comitente tiene derecho a pedir la resolución del contrato cuando el contratista ha caído en quiebra (art. 143, inc. 2º, ley 24.522). Es una facultad de la que hará uso según le convenga. Así, por ejemplo, es casi seguro que la ejercitará si la obra consiste en la construcción de un edificio, pues la quiebra del contratista lo coloca prácticamente en la imposibilidad de continuar los trabajos por falta de crédito, sin contar con que al comitente no le conviene la ejecución de la obra por una persona insolvente, contra la cual no podrá luego hacer efectiva la responsabilidad por los vicios o defectos. Si, en cambio, se trata de un retrato encargado a un pintor, es obvio que la falencia no le impedirá cumplir su promesa y el comitente no tendrá interés en la resolución.
 
@@ -78,7 +78,7 @@ Para que el comitente tenga derecho a optar por la resolución, no es suficiente
 
 Según el artículo 144, ley 24.522, el comitente debe hacer saber su decisión de continuar o resolver el contrato dentro de los veinte días de la publicación de edictos, luego debe oírse al síndico quien opinará sobre la continuación o resolución del contrato. Finalmente, el juez dictará la resolución correspondiente, que solo es apelable por el comitente cuando se hubiese opuesto a la continuación.
 
-#### Imposibilidad del contratista de hacer o terminar la obra
+## Imposibilidad del contratista de hacer o terminar la obra
 ---
 Disponía el artículo 1642 del Código Civil de Vélez que el contrato puede ser resuelto por el comitente o por el contratista cuando sobreviene a éste imposibilidad de hacer o de concluir la obra. La imposibilidad puede ser objetiva o subjetiva. La primera es aquella que deriva de acontecimientos externos a las partes, tales como la expropiación del inmueble en que se ha de realizar la obra, la destrucción de la cosa por un accidente, un rayo, etc. La imposibilidad subjetiva es la que se refiere a la persona misma del contratista; por ejemplo, que enloquezca o enferme gravemente o sea condenado a prisión o movilizado por guerra interna o externa. La resolución del contrato en estos casos es una simple aplicación de los principios que rigen el incumplimiento derivado de caso fortuito o de fuerza mayor.
 
@@ -86,13 +86,13 @@ No debe asimilarse la imposibilidad de cumplir con la dificultad de hacerlo. No 
 
 En el Código Civil y Comercial, la solución es similar, pero resulta de la aplicación de las normas referidas a la extinción por imposibilidad de cumplimiento de las obligaciones.
 
-##### Efectos de la imposibilidad 
+### Efectos de la imposibilidad 
 ---
 La imposibilidad de continuar la obra produce siempre la resolución del contrato, cualquiera que sea la causa de la que aquella derive. Pero con relación a los restantes efectos, es necesario distinguir tres situaciones:
 1) Imposibilidad sobrevenida sin culpa de las partes
 2) Imposibilidad derivada de culpa del contratista
 3) Imposibilidad derivada de culpa del comitente
 
-#### Inejecución de las obligaciones por una de las partes
+## Inejecución de las obligaciones por una de las partes
 ---
 ![[Pacto comisorio#Definición]]

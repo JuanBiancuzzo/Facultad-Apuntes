@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-Vectoriales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Con dos [[Subespacio|subespacios]] $S$ y $T$ la intersección esta dada por 
 $$S \cap T := \{v \in \mathbb{V} : v \in S \land v \in T \}$$

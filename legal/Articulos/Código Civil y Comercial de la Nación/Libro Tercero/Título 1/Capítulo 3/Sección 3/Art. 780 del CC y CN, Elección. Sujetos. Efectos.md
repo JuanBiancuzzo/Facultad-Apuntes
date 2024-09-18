@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Excepto estipulación en contrario, la facultad de elegir corresponde al deudor. La opción que corresponde a varias personas requiere unanimidad. Si la parte a quien corresponde la elección no se pronuncia oportunamente, la facultad de opción pasa a la otra. Si esa facultad se ha deferido a un tercero y éste no opta en el plazo fijado, corresponde al deudor designar el objeto del pago."
 
-### Interpretación
+# Interpretación
 ---

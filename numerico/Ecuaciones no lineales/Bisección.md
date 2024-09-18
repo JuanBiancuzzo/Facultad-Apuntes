@@ -4,7 +4,7 @@ tags:
   - numerico/Ecuaciones-no-lineales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se tiene $f(\alpha) = 0$ donde se busca $\alpha$ en un intervalo $[a, b]$ donde se presupone que existe una única raíz en dicho intervalo, y por lo tanto $f(a) \cdot f(b) < 0$.
 
@@ -15,11 +15,11 @@ Para cada iteración se estima el punto medio como $$ m_k = \frac{a_k + b_k}{2} 
 En este método nos podemos asegurar llegar a la raíz en infinitos pasos.
 
 
-#### Cota de error
+## Cota de error
 ---
 El [[Error absoluto|error absoluto]] de este algoritmo es $\Delta x_n = \frac{\Delta x_0}{2^{n}}$ donde $\Delta x_0 = \frac{b_0 - a_0}{2}$. 
 
 
-#### Solución
+## Solución
 ---
 Se dice que el resultado es $$ \alpha = m_k ~ \pm ~ \Delta x_n $$

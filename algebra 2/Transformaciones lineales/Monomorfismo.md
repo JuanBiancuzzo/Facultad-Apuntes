@@ -4,7 +4,7 @@ tags:
   - algebra-2/Transformaciones-lineales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sean $\mathbb{V}$, $\mathbb{W}$ dos $\mathbb{K}$-espacios vectoriales y $T \in \mathbb{L}(\mathbb{V}, \mathbb{W})$ 
 

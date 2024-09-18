@@ -6,7 +6,7 @@ tags:
 aliases:
   - 802.15.4
 ---
-### Definición
+# Definición
 ---
 Una segunda [[Red|red]] personal, estandarizado por el [[Institute of Electrical and Electronics Engineers (IEEE)|IEEE]], es el estándar 802.15.4, conocido como Zigbee. Mientras que [[Bluetooth]] provee un reemplazo del cable a una tasa de megabits, el enfoque de esta red es el de una red incluso de menor costo y poder. No todos los dispositivos necesitan altas tasas de transferencia, por lo que este estándar es utilizado en dispositivos pequeños y sin necesidad de altas tasas de transferencia
 

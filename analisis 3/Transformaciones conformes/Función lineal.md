@@ -7,7 +7,7 @@ aliases:
   - Función C-lineal
   - Función R-lineal
 ---
-### Definición
+# Definición
 ---
 Una [[analisis 2/Nomenclatura/Función.md|función]] $f : \mathbb{C} \to \mathbb{C}$ es $\mathbb{C}$-lineal, con $(\mathbb{C}, +, \mathbb{C}, \cdot)$, sii
 $$\begin{align}
@@ -18,11 +18,11 @@ Donde la única [[Transformación conforme|transformación conforme]] que es $\m
 
 Viéndolo de esta forma, entonces $$f(z) = (h_{|w_0|} \circ R_{Arg(w_0)})(z)$$
 
-##### Observación
+### Observación
 ---
 Toda función $f : \mathbb{C} \to \mathbb{C}$ es $\mathbb{C}$-lineal, entonces es una función R-lineal
 
-#### Función R-lineal
+## Función R-lineal
 ---
 Una función $f : \mathbb{C} \to \mathbb{C}$ es $\mathbb{C}$-lineal, con $(\mathbb{C}, +, \mathbb{C}, \cdot)$, sii
 $$\begin{align}

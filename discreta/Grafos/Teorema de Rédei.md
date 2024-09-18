@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El teorema de Rédei, dice. Sea  un [[Torneo|torneo]], entonces  es [[Grafo Hamiltoniano|semihamiltoniano]]. Existe un [[Camino|camino]] hamiltoniano (no necesariamente un [[Camino#Ciclo (Cicle)|ciclo]])
 

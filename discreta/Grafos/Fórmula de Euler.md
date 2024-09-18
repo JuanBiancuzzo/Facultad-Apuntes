@@ -6,7 +6,7 @@ tags:
 aliases:
   - Grado de una cara
 ---
-### Definición
+# Definición
 ---
 Definimos una cara de una [[Grafo planar|inmersión planar de un grafo]] como una [[Conjunto acotado|región acotada]] del mismo. Una inmersión es dividida en $f$ caras, todas excluyentes y completas. Toda inmersión tiene la cara externa, que rodea el [[Grafo|grafo]]
 

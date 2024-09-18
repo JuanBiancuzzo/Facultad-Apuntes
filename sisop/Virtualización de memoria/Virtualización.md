@@ -4,7 +4,7 @@ tags:
   - sisop/Virtualización-de-memoria
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Crear una abstracción que haga que un dispositivo de [[Hardware]] sea mucho más fácil de utilizar.
 

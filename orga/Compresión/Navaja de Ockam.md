@@ -4,6 +4,6 @@ tags:
   - orga/Compresión
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado un grupo de teorias consistente a las observaciones, la más probable es aquella que sea la más simple.

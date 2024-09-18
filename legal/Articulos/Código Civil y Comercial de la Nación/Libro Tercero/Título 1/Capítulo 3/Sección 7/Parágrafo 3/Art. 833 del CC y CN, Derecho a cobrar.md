@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El acreedor tiene derecho a requerir el pago a uno, a varios o a todos los codeudores, simultánea o sucesivamente."
 
-### Interpretación
+# Interpretación
 ---

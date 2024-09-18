@@ -4,7 +4,7 @@ tags:
   - legal/Obligaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son las prestaciones que constituyen las prerrogativas de los sujetos o, dicho de otro modo, el conjunto de derechos subjetivos y [[Deber jurídico|deberes jurídicos]] recíprocos de los [[Sujeto de derecho|sujetos de derecho]]
 

@@ -4,11 +4,11 @@ tags:
   - adc/Circuitos-acoplados-magnéticamente
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Para poder simplificar un [[Circuito eléctrico|circuito]] con dos o más [[Inductor|inductores]] [[Acoplación magnética|acoplados magnéticamente]], donde tomaremos que cada inductor ya no esta acoplado, y usaremos una [[Fuente de tensión|fuente controlada]] dando la [[Tensión|tensión]] por el efecto de la [[Inductancia mutua|inductancia mutua]].
 
-#### Ejemplo
+## Ejemplo
 ---
 Usando [[Fasor|fasores]], se tiene la siguiente transformación 
 

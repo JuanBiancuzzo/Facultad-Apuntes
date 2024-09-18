@@ -4,7 +4,7 @@ tags:
   - redes/Redes-de-computadoras
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El throughput en cualquier instante del tiempo es la tasa a la cual el receptor está recibiendo el [[Paquete|paquete]]
 

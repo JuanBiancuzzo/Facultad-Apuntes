@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Constitución de la Nación/Parte 2/Título 1/Secció
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Pueden los ministros concurrir a las sesiones del Congreso y tomar parte en sus debates, pero no votar."
 
-### Interpretación
+# Interpretación
 ---

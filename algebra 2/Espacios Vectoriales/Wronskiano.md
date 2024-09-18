@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-Vectoriales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El wronskiano se puede usar para determinar si un conjunto de funciones son [[Linealmente independiente]], para eso se usa lo siguiente
 

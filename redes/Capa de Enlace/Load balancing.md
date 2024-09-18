@@ -6,7 +6,7 @@ tags:
 aliases:
   - Leyer-4 switch
 ---
-### Definición
+# Definición
 ---
 Cada aplicación tiene asociada una [[Internet Protocol Address|IP]] pública que es recibida por el [[Data center|data center]]. Para soportar peticiones de clientes externos, las peticiones son primero dirigidas a un load balancer que tiene el trabajo de tomar las peticiones y repartirlas entre los hosts de forma distribuida. En grandes data centers, puede haber múltiples load balancers, cada uno encargado de una aplicación distinta. Cuando el [[Host|host]] termina de resolver la petición, este envía la respuesta al load balancer el cual le devolverá la respuesta al cliente
 

@@ -6,7 +6,7 @@ tags:
   - sisop/File-system
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Este [[File system]] es una versión simplificada de un típico sistema de archivos [[Unix|unix-like]]. Existen diferentes sistemas de archivos y cada uno tiene ventajas y desventajas.
 
@@ -14,11 +14,11 @@ Para pensar en un file system hay que comprender dos conceptos fundamentales:
 1. El primero es la estructura de datos de un sistema de archivos. En otras palabras como se guarda la información en el disco para organizar los datos y metadatos de los [[Archivo|archivos]]. El sistema de archivos VSFS emplea un simple estructura, que parece un arreglo de bloques.
 2. El segundo aspecto es el método de acceso, como se machean las llamadas hechas por los [[Proceso|procesos]], como [[Open system call|open()]], [[Read system call|read()]], [[Write system call|write()]], etc. en la estructura del sistema de archivos
 
-#### Organización general
+## Organización general
 ---
 Lo primero que se debe hacer es dividir al disco en bloques, los [[File system|sistemas de archivos]] simples, como este suelen tener bloques de un solo tamaño. Los bloques tienen un tamaño de $4~K$Bytes.
 
-##### Datos
+### Datos
 ---
 La versión del sistema de archivos debe ser la de una partición de $N$ bloques (de $0$ a $N-1$) de un tamaño de $N * 4 ~ KB$ bloques. Si suponemos en un disco muy pequeño, de unos $64$ bloques, este podría verse así
 
@@ -117,7 +117,7 @@ Otra vez en nuestro pequeño disco es ocupado por ejemplo por $56$ bloques de da
 \end{document}
 ```
 
-##### Inodos
+### Inodos
 ---
 Como se ha visto anteriormente el sistema de archivos debe mantener información sobre cada uno de estos archivos. Esta información es la [[Archivo|metadata]] y es de vital importancia ya que mantiene información como que bloque da datos pertenece a un determinado archivo, el tamaño del archivo, etc. Para guardar esta información en los [[Sistema operativo|sistemas operativos]] [[Unix|unix-like]], se almacena en una estructura llamada [[Inodo]].
 
@@ -190,7 +190,7 @@ Los inodos también deben ser guardarse en el disco, para ello se los guarda en 
 
 Cabe destacar que los inodos no son estructuras muy grandes, normalmente ocupan unos $128$ o $256$ bytes. Suponiendo que los inodos ocupan $256$ bytes, un bloque de $4 ~ KB$ puede guardar $16$ inodos por ende nuestro sistema de archivos tendrá como máximo $80$ inodos. Esto representa también la cantidad máxima de archivos que podrá contener nuestro sistema de archivos.
 
-##### Alocación
+### Alocación
 ---
 El sistema de archivos tiene los datos (D) y los inodos (I) pero todavía nos falta. Una de las cosas que faltan es saber cuales inodos y cuales bloques están siendo utilizados o está libres. Esta estructura de alocación es fundamental en cualquier sistema de archivos. Existen muchos métodos para llevar este [[Registro|registro]] pero en este caso se utilizará una estructura muy popular llamada bitmap. Una para los datos `data bitmap` otra para los inodos `inode bitmap`.
 
@@ -269,7 +269,7 @@ Un bitmap es una estructura bastante sencilla en la que se mapea $0$ si un objet
 
 Obviamente cada bitmap ocupa menos de $4 ~KB$, pero se utiliza un bloque por cada uno indefectiblemente. 
 
-##### Super bloque
+### Super bloque
 ---
 Se podrá observar que queda un único bloque libre en todo el disco. Este bloque es llamada Super bloque (S). El superbloque contiene la información de todo el [[File system|file system]], incluyendo:
 * Cantidad [[Inodo|inodos]]

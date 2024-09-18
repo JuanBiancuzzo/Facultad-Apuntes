@@ -7,7 +7,7 @@ tags:
 aliases:
   - Código objeto
 ---
-### Definición
+# Definición
 ---
 Hay distintos tipos de archivos objeto
 

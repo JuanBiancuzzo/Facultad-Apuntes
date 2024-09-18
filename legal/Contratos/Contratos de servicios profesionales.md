@@ -4,7 +4,7 @@ tags:
   - legal/Contratos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La naturaleza jurídica de los servicios prestados por abogados, médicos, ingenieros, arquitectos, etc., ha dado lugar a una larga controversia jurídica. En el derecho romano la distinción con los trabajos manuales era tajante; solo los primeros se consideraban propios del hombre libre y para éste era un deshonor hacerse pagar un trabajo intelectual que tenía carácter esencialmente gratuito; solo se pagaba el trabajo manual. En nuestros días, las ideas han sufrido un cambio sustancial. El trabajo manual no es ya un deshonor sino que, por el contrario, hace honor al que lo cumple. Y si en el fondo de la conciencia de mucha gente subsiste aún la idea de que el trabajo intelectual es más apropiado para las personas pertenecientes a las clases elevadas y el manual para las inferiores, esta idea no tiene ninguna concreción legal. Todo trabajo, sea intelectual o material, merece igual respeto. Esto no significa que estén sometidos al mismo régimen jurídico. Hay entre ellos profundas diferencias de naturaleza, que forzosamente deben traducirse en su regulación legal.
 

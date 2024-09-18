@@ -4,7 +4,7 @@ tags:
  - discreta/Relaciones
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $A = \Set{1,~2,~3}$, en $P(a)$ (todos los subconjuntos de $A$) se define la [[Relación de orden|relación de orden]] $\subseteq$
 

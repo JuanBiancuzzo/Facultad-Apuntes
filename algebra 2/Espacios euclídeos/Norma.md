@@ -7,7 +7,7 @@ tags:
 aliases:
   - Módulo
 ---
-### Definición
+# Definición
 ---
 Una norma en un $\mathbb{K}$-espacio vectorial $\mathbb{V}$ es una [[analisis 2/Nomenclatura/Función.md|función]] $\lVert \cdot \rVert : \mathbb{V} \to \mathbb{R}^+$ tal que 
 

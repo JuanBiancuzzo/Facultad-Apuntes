@@ -20,7 +20,7 @@ previo: "[[legal/Articulos/Ley de Obras públicas/Capítulo 8/Capítulo 8, De la
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El contratista tendrá derecho a rescindir el contrato, en los siguientes casos:
 
@@ -34,7 +34,7 @@ tags:
  
  e. Cuando la administración no efectúe la entrega de los terrenos ni realice el replanteo de la obra dentro del plazo fijado en los pliegos especiales más una tolerancia de treinta días."
 
-### Interpretación
+# Interpretación
 ---
 
 

@@ -4,14 +4,14 @@ tags:
   - seguridad/Contaminación-del-ambiente-laboral
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Capacidad que tiene un [[Agente|agente]] (químico, físico, biológico) de ocasionar un daño a la salud.
 
 El [[Relación dosis-efecto|efecto]] tóxico de una sustancia depende de la concentración y la exposición.
 
 
-#### Clasificación
+## Clasificación
 * Irritantes
 * Asfixiantes
 * Anestésicos y narcóticos

@@ -4,11 +4,11 @@ tags:
   - bdd/SQL
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El operador `EXIST` se usa con la [[Sentencia WHERE|sentencia WHERE]] para poder testear si un [[Registro SQL|registro]] existe en una subquery
 
-#### Sintaxis
+## Sintaxis
 ---
 ```SQL 
 SELECT nombre_columna(s)
@@ -20,7 +20,7 @@ WHERE EXISTS (
 );
 ```
 
-#### Ejemplo
+## Ejemplo
 ---
 ```SQL 
 SELECT SupplierName

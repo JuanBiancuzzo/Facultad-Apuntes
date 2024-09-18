@@ -4,6 +4,6 @@ tags:
   - seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Estas medidas tiene que ser aquellas que logren reducir el [[Riesgo]] de accidentes.

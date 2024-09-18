@@ -16,7 +16,7 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 12/Capítulo 1/Cap
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los plazos del [[Art. 231 de la ley de Contrato de Trabajo, Plazos|artículo 231]] correrán a partir del día siguiente al de la notificación del preaviso.
 
@@ -24,5 +24,5 @@ Cuando la extinción del contrato de trabajo dispuesta por el empleador se produ
 
 La integración del mes de despido no procederá cuando la extinción se produzca durante el período de prueba establecido en el [[Art. 92 bis de la ley de Contrato de Trabajo, Período de prueba|artículo 92 bis]]."
 
-### Interpretación
+# Interpretación
 ---

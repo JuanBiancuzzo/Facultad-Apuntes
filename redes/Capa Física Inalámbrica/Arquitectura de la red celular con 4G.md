@@ -15,7 +15,7 @@ aliases:
   - P-GW^#P-GW
   - S-GW#^S-GW
 ---
-### Definición
+# Definición
 ---
 Existen dos importantes observaciones de la arquitectura 4G
 
@@ -34,7 +34,7 @@ Los principales componentes de la arquitectura 4G son
 * El mobility management entity (MME) realiza manejo de conexiones y movilidad para los usuarios de la celda que controla ^MME
 * El home subscriber server (HSS) contiene información de usuarios como el acceso a roaming, información de autenticación, perfiles de QoS ^HSS
 
-#### LTE Radio Access Network
+## LTE Radio Access Network
 ---
 LTE utiliza [[Orthogonal Frequency Division Multiplexing|OFDM]], para cado nodo activo se reserva uno o más timeslots de $0.5$ ms en uno o más canales de frecuencias. Estas reservas pueden realizarse hasta una vez por milisegundo, y pueden utilizarse distintos esquemas de modulación dependiendo de la circunstancia
 

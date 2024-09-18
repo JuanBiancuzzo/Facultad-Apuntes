@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Cuarto/
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El dominio es imperfecto si está sometido a condición o plazo resolutorios, o si la cosa está gravada con cargas reales."
 
-### Interpretación
+# Interpretación
 ---
 
 

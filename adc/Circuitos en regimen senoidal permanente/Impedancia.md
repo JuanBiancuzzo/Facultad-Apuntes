@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - fisica-2/Circuitos-en-régimen-alterno-permanente
 ---
-### Definición
+# Definición
 ---
 [[Ley de Ohm]] en forma [[Fasor|fasorial]] 
 

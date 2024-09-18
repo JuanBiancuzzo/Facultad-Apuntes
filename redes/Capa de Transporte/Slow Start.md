@@ -4,7 +4,7 @@ tags:
   - redes/Capa-de-Transporte
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Cuando se inicia una conexión [[Transmission Control Protocol|TCP]], se inicializa el valor de `cwnd` (Congestion window) con el valor de `lwnd` (Loss window) que suele ser `1 MSS`. En el estado de slow start el `cwnd` es aumentado en uno por cada [[Protocolo de entrega confiable|ACK]] recibido, esencialmente duplicando la tasa de envió cada [[Round trip time|RTT]]
 

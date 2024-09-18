@@ -14,7 +14,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La celebración del matrimonio antes de los dieciocho años emancipa a la persona menor de edad. 
 
@@ -24,5 +24,5 @@ La emancipación es irrevocable. La nulidad del matrimonio no deja sin efecto la
 
 Si algo es debido a la persona menor de edad con cláusula de no poder percibirlo hasta la mayoría de edad, la emancipación no altera la obligación ni el tiempo de su exigibilidad."
 
-### Interpretación
+# Interpretación
 ---

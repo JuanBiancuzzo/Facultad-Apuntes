@@ -4,7 +4,7 @@ tags:
   - señales/Transformada-discreta-de-Fourier
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Cuando una [[Función|función]] $g$ es [[Función periódica|periódica]] de período $T$, entonces para aquellas funciones $f$ para las que existe $f \circledcirc g$, su convolución es también periódica e igual a $$ ( f \circledcirc g )(t) \equiv \int_{t_0}^{t_0 + T} \left[ \sum_{k = -\infty}^{\infty} f(\tau + kT) \right] g(t - \tau) ~ d\tau $$ donde $t_0$ se escoge arbitrariamente
 

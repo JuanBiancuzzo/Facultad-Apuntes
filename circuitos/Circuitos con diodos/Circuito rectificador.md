@@ -4,11 +4,11 @@ tags:
   - circuitos/Circuitos-con-diodos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un uso común de los [[Diodo|diodos]] es convertir [[Corriente eléctrica|corriente]] alterna en continua. Debido a que los [[Circuito eléctrico|circuitos electrónicos]] funcionan con continua y la [[Energía|energía]] se distribuye en alterna, esta etapa conversora, o fuente, es requerida en casi todos los equipos
 
-#### Metodología
+## Metodología
 ---
 Para analizar este tipo de circuitos es normalmente suficiente utilizar una [[Modelo de orden 0 para diodo|aproximación lineal de orden 0]]. La mayor parte de las veces la forma más sencilla de analizarlo es suponer cuáles conducen y cuales no. Luego reemplazamos los que conducen por una fuente del valor adecuado ($0.7~V$ en [[Convención de signos para la tensión de polarización#Polarización directa|directa]] o $V_r$ en [[Convención de signos para la tensión de polarización#Polarización inversa|inversa]]) y eliminamos los que asumimos que no (se comportan como circuito abierto)
 
@@ -19,7 +19,7 @@ Siguiendo con lo asumido resolvemos el circuito y determinamos todas las [[Tensi
 De no ser así el supuesto es incorrecto y debe modificarse y repetir todo
 
 
-#### Fuentes de alterna
+## Fuentes de alterna
 ---
 La mayor parte de las veces existe al menos una [[Fuente de tensión|fuente]] de alterna. La misma obviamente varía en el tiempo, así que el procedimiento anterior debe repetirse por tramos. Según el valor que tome la fuente habrá un conjunto de [[Diodo|diodos]] que conducen y otros que no. Entonces
 1. Asumimos que la(s) fuente(s) de alterna vale(n) $0~V$

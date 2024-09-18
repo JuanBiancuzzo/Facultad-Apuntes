@@ -44,7 +44,7 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 4/Capítulo 4/Cap�
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El recibo de pago deberá necesariamente contener, como mínimo, las siguientes enunciaciones:
 
@@ -59,5 +59,5 @@ tags:
  i. Fecha de ingreso o antigüedad reconocida y tarea cumplida o categoría en que efectivamente se desempeñó durante el período de pago.
  j. Total de contribuciones abonadas por el empleador por disposición legal."
 
-### Interpretación
+# Interpretación
 ---

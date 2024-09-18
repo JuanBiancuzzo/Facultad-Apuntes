@@ -7,7 +7,7 @@ aliases:
   - Matching
   - Conjunto independiente de aristas
 ---
-### Definición
+# Definición
 ---
 Al igual que con los vértices, un apareamiento es un (o matching) es un conjunto independiente de aristas (dos aristas son independientes si no tienen un vértice en común)
 

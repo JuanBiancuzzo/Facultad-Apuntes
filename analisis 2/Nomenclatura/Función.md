@@ -6,7 +6,7 @@ tags:
   - taller/Sintaxis
   - analisis-2/Nomenclatura
 ---
-### Definición
+# Definición
 ---
 Escribimos estas funciones como $f: D \to H$ donde los conjuntos $D$ (el [[Dominio de una función|dominio]]) y $H$ (el [[Codominio|codominio]]) son no vacíos
 
@@ -41,7 +41,7 @@ Escribimos estas funciones como $f: D \to H$ donde los conjuntos $D$ (el [[Domin
 \end{document}
 ```
 
-#### Expresión en C
+## Expresión en C
 ---
 Se puede representar un [[algo 1/Introducción a la programación/Algoritmo|algoritmo]]
 ```c
@@ -52,7 +52,7 @@ tipoDeDato nombreAlgoritmo(tipoDeDato variable1, ...) {
 }
 ```
 
-#### Expresión en Rust
+## Expresión en Rust
 ---
 Las funciones, al igual que en c tienen que especificar el [[Tipo de dato|valor de retorno]] y tienen la siguiente sintaxis
 
@@ -72,11 +72,11 @@ fn imprimir_numero(numero: i32) {
 }
 ```
 
-#### Expresión matemática
+## Expresión matemática
 ---
 Esta función, la podemos pensar, como que establece una relación entre [[Espacio vectorial|vector]] de $A$ con los vectores de $B$. Tal que, $a \in A$ tiene un (y solo uno) $b \in B$, y esto se escribe como $f(a) = b$
 
-#### Operaciones
+## Operaciones
 ---
 * [[Suma entre funciones|Suma entre funciones]] ![[Suma entre funciones#^7715e3]]
 * [[Producto entre funciones|Producto entre funciones]] ![[Producto entre funciones#^ff1a85]]

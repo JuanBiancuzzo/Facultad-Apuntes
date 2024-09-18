@@ -4,7 +4,7 @@ tags:
   - sisop/Virtualización-de-memoria
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Si se desea implementar un mecanismo eficiente de paginación, posiblemente elegir un arreglo no sea la solución más correcta. Un [[Árbol|árbol]] o un [[Hash table|hash table]] son más apropiados ya que son usados en [[Sistema operativo|sistemas]] más modernos
 
@@ -17,7 +17,7 @@ Muchos sistemas utilizan técnicas de [[Traslación de direcciones|address trans
 
 Si bien todos los sistemas multinivel de address translation usan [[Traslación de direcciones con memoria paginada|paginación]] en el nivel más bajo del árbol. La principal diferencia entre ellos es como se llega a la page table a nivel de las hojas del árbol, ya sea usando segmentación más paginación, múltiples niveles de paginación, segmentación más múltiples niveles de paginación.
 
-#### Segmentación paginada
+## Segmentación paginada
 ---
 Este [[Sistema|sistema]] utiliza dos niveles de un [[Árbol|árbol]]. Con segmentación paginada, la [[Memoria|memoria]] esta segmentada, pero en vez de que cada entrada en la página de segmentos apunte directamente a una región continua de la memoria física, cada entrada de la tabla de segmentos apunta a una tabla de páginas, que a su vez apunta a la memoria correspondiente a ese segmento. 
 
@@ -32,15 +32,15 @@ La virtual address tiene 3 componentes
 	* La physical address esta compuesta por el physical page frame que pertenece a la page table con el offset 
 
 ![[Segmentación paginada.webp]]
-#### [[Traslación de direcciones|Address translation]] con 3 niveles de page tables
+## [[Traslación de direcciones|Address translation]] con 3 niveles de page tables
 ---
 ![[Tres niveles de paginación.webp]]
 
-#### [[Traslación de direcciones|Address translation]] con [[Hash table|Tabla de Hash]] por [[Software|software]]
+## [[Traslación de direcciones|Address translation]] con [[Hash table|Tabla de Hash]] por [[Software|software]]
 ---
 ![[Tabla de hash.webp]]
 
-#### Multinivel segmentación paginada
+## Multinivel segmentación paginada
 ---
 Este es el sistema utilizado por las [[Arquitectura de aplicaciones|arquitecturas x86]] para 64 y 32 bit.
 

@@ -6,6 +6,6 @@ tags:
 aliases:
   - EPROM
 ---
-### Definición
+# Definición
 ---
 El contenido de esta [[Memoria no volátil|memoria no volátil]] se podría programar a través de un [[Hardware|hardware]] programador específico, pero se instaló una ventana de cuarzo en la parte superior del dispositivo y también era posible borrar la memoria mediante luz ultravioleta, aunque era necesario retirar el dispositivo de su placa para borrarlo y reprogramarlo

@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo simple|grafo simple]] dado un $p$-[[Conjunto|conjunto]] $H$ fijo, se define el grafo simple $G = J(p,~q)$ con $q \ge 1$, donde $V(G) = \mathcal{P}_q(H)$ y $uv \in E(G)$ si y solo si $|uv| = q - 1$. Es decir, dos vértices son adyacentes si y solo si la [[Operador AND|intersección de los conjuntos]] asociados es de [[Cardinalidad|cardinalidad]] $q - 1$. Algunas relaciones particulares son $J(p,~q) \simeq J(p, p - 1) \simeq K_p$.  El grafo de Johnson generalizado se define como $J(p,~q,~r)$ donde dos vértices son adyacentes si $|uv| = r$
 

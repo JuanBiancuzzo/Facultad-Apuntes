@@ -4,6 +4,6 @@ tags:
   - seguridad/Contaminación-del-agua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es muy tóxico para las bacterias y cancerígeno para el hombre.

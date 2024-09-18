@@ -4,7 +4,7 @@ tags:
  - analisis-2/Nomenclatura
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dada una[[Función|función]] $d: A \times A \to \mathbb{R}$, que representa una distancia entre puntos de un [[Espacio|espacio]], para todo $a, b, c \in A$ se cumple que 
 

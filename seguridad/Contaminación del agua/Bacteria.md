@@ -4,11 +4,11 @@ tags:
   - seguridad/Contaminación-del-agua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un [[Organismo unicelular]] y se reproducen por división.
 
-##### Diferentes bacterias
+### Diferentes bacterias
 * Bacterias aeróbicas
 * Bacterias facultativas
 * Bacterias anaeróbicas

@@ -9,7 +9,7 @@ aliases:
   - Integer
   - Int
 ---
-### Definición
+# Definición
 ---
 Hay diferentes representaciones de los enteros, ya que tenemos que representar el signo como parte del número, haciendo esto una convención.
 
@@ -19,7 +19,7 @@ Tenemos 4 métodos:
 * [[Representación de enteros complemento a la base|Complemento a la base]]
 * [[Representación de enteros exceso n|Exceso n]]
 
-### Diferencias
+# Diferencias
 ---
 Podemos verla en la siguiente tabla
 
@@ -43,7 +43,7 @@ Podemos verla en la siguiente tabla
 |    7    |       0111       |            0111            |        0111        |   1110   |
 |    8    |        -         |             -              |         -          |   1111   |
 
-#### Representación en C
+## Representación en C
 ---
 Son números que no tienen una parte fraccionaria, en este caso veremos los tipos de datos que surgen del especificador de tipo aritmético básico `int` y también de la combinación de especificadores opcionales (`signed`, `unsigned`, `short`, `long`)
 
@@ -74,7 +74,7 @@ En una arquitectura de $64$ bits, se tiene
 | `unsigned long`      | $8 ~$Byte |          `unsigned long int`<br>`unsigned long long`<br>`uint_64_t`          |             $0$              | $18.446.744.073.709.551.615$ |
 
 
-#### Representación en Rust
+## Representación en Rust
 ---
 Son números que no tienen una parte fraccionaria. Lo separamos en dos grupos, cuando necesitamos y cuando no necesitamos que el número sea negativo. Lo indicamos con una `i` para cuando lo necesita y `u` cuando no.
 

@@ -25,7 +25,7 @@ previo: "[[legal/Articulos/Propiedad Intelectual/Propiedad Intelectual.md|Propie
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Son titulares del derecho de propiedad intelectual:
 
@@ -37,6 +37,6 @@ tags:
  
  d. Las personas físicas o jurídicas cuyos dependientes contratados para elaborar un programa de computación hubiesen producido un programa de computación en el desempeño de sus funciones laborales, salvo estipulación en contrario." ^d
 
-### Interpretación
+# Interpretación
 ---
 Agrega el [[Art. 2 de la Propiedad Intelectual#^d|inciso d)]] al [[Art. 4 del regimen legal de la propiedad intelectual|artículo 4° de la ley 11.723]] 

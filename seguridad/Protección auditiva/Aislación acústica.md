@@ -4,7 +4,7 @@ tags:
   - seguridad/Protección-auditiva
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la propiedad que expresa el grado de reducción del [[Sonido]] entre dos recintos separados por un elemento de cerramiento, o entre un recinto cerrado y el exterior. Estos materiales o sistemas constructivos limitan el paso del sonido.
 

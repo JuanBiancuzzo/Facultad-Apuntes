@@ -4,7 +4,7 @@ tags:
   - orga/Visualizaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El bar [[Plot]] es parecido al [[Histograma]] pero donde la [[Distribución discreta|distribución es discreta]] para le eje x.
 

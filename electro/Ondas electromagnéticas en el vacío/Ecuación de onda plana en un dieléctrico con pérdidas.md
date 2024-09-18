@@ -8,7 +8,7 @@ aliases:
   - Ecuación de Helmholtz en un dieléctrico con pérdidas
   - Impedancia intrínseca del medio con pérdida#^impedancia-intriseca-del-medio-con-perdidas
 ---
-### Definición
+# Definición
 ---
 Partiendo de las [[Ecuaciones de Maxwell|ecuaciones de Maxwell]] ![[Ecuaciones de Maxwell#^ecuaciones]]
 Para una zona libre de fuentes, en un [[Dieléctrico|dieléctrico]] con pérdidas ($\sigma \ne 0)$, considerando al medio no magnético ($\mu = \mu_0$), con $\vec{J} = \sigma \vec{E}$ (la [[Ley de Ampère#^corriente-conduccion|corriente de conducción]]) con variación armónica en los campos $$ \begin{align} 

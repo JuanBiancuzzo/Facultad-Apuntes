@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-ambiente-laboral
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El objetivo del empleo de un dispositivo de toma de [[Muestreo de contaminantes|muestras]] de aire en un ambiente de trabajo es obtener una evaluación cualitativa y cuantitativa de un riesgo potencial o real.
 * Independientemente del contaminante en cuestión, un tren de muestro para la captación de partículas o gases y vapores contaminantes, es básicamente el indicado en el esquema

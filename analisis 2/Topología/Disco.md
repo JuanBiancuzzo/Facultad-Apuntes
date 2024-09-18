@@ -5,24 +5,24 @@ tags:
   - analisis-3/Topología-del-plano-complejo-y-límites
   - analisis-2/Topología/1
 ---
-### Definición
+# Definición
 ---
 [[Conjuntos|Conjunto]] de puntos alrededor de un valor $z_0$ a una distancia $r$ del mismo. En ese caso estamos en el conjunto de los complejos, pero no necesariamente nos tendríamos que limitar a este para esta definición. Estos conjuntos los podemos definir como
 
-##### Disco abierto
+### Disco abierto
 ---
 ![[Disco abierto#Definición]]
 
-##### Disco cerrado
+### Disco cerrado
 ---
 ![[Disco cerrado#Definición]]
 
 
-##### Disco abierto reducido
+### Disco abierto reducido
 ---
 ![[Disco abierto reducida#Definición]]
 
-#### Datos adicionales
+## Datos adicionales
 ---
 $$D(z_0, \infty) = \mathbb{C}$$
 $$D(z_0, 0) = \emptyset$$

@@ -11,11 +11,11 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
 ```
-### Definición
+# Definición
 ---
 El archivo debe llamarse "Dockerfile", cada dockerfile empieza con una [[Docker image|imágen]] padre o base, desde el cual empieza.
 
-#### Directivas
+## Directivas
 ---
 * `FROM image:tag` permite empezar el dockerfile de una imagen predeterminada
 * `RUN comando` permite ejecutar comandos de la shell adentro del contenedor
@@ -23,14 +23,14 @@ El archivo debe llamarse "Dockerfile", cada dockerfile empieza con una [[Docker 
 * `WORKDIR dir` cambia el directorio como `cd`
 * `CMD ["command", "param 1", ...]` para ejecutar el último comando se usa `CMD` con los parámetros en un array
 
-#### Build
+## Build
 ---
 * `docker build dir`: permite crear la imagen a partir del dockerfile, donde dir es el directorio donde se encuentra el dockerfile
 	* `-t` o `--tag`: permite setear un nombre con el formato `name:tag`
 
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

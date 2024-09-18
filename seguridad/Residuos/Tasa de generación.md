@@ -4,7 +4,7 @@ tags:
   - seguridad/Residuos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Cantidad de [[Residuo|residuos]] (en peso) generada por habitante y por día. Depende de:
 * época del año

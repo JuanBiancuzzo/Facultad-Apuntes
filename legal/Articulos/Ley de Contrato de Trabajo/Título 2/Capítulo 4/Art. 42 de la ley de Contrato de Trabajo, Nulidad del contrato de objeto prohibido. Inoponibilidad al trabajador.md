@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 2/Capítulo 4/Cap�
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El contrato de objeto prohibido no afectará el derecho del trabajador a percibir las remuneraciones o indemnizaciones que se deriven de su extinción por tal causa, conforme a las normas de esta ley y a las previstas en los estatutos profesionales y las convenciones colectivas de trabajo."
 
-### Interpretación
+# Interpretación
 ---
 
 

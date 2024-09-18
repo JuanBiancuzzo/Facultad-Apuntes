@@ -4,7 +4,7 @@ tags:
   - aninfo/Ingeniería-de-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En las [[Entrevista|entrevistas]] o cualquier tipo de reunión, una técnica de [[Documentación del descubrimiento de los requisitos|documentación]] son las minutas de reunión, donde se documenta con el propósito de registrar los principales temas conversados en la reunión.
 

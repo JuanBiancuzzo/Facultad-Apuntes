@@ -4,11 +4,11 @@ tags:
   - aninfo/Prototipado-y-experiencia-del-usuario
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La usabilidad es la medida de la calidad de la experiencia que tiene un usuario cuando interactúa con un producto o [[Sistema]]. También se lo puede pensar como la eficacia, eficiencia y satisfacción con la que un producto permite alcanzar objetivos específicos a usuarios específicos en un contexto de uso específico
 
-#### Características
+## Características
 ---
 * Facilidad de aprendizaje
 * Facilidad y eficiencia de uso

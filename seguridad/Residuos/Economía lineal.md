@@ -4,6 +4,6 @@ tags:
   - seguridad/Residuos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En constraste a la [[Economía circular]], esta basada en la extracción, transformación-utilización, eliminación, conduce a que los recursos se utilicen con un fin específico, para luego ser eliminados como [[Residuo]]

@@ -9,7 +9,7 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
 ```
-### Definición
+# Definición
 ---
 Es un tablero que sirve para representar los coeficientes del [[Método de Runge-Kutta|Método de Runge-Kutta]], es decir, para la formula $$ \begin{cases} 
 	\displaystyle k_i = f\left( x_n + c_i ~ h, y_n + h ~ \sum_{j = 1}^{s} a_{ij} k_j \right) \\
@@ -34,14 +34,14 @@ Si $a_{ij} = 0$ para $j \ge i$, $i = 1, 2, \cdots, s$, es decir, si la [[Matriz|
 
 
 
-#### Notas referencias
+## Notas referencias
 ---
 
-##### Nota num° 1
+### Nota num° 1
 ---
 https://repositorio.ual.es/bitstream/handle/10835/3513/2414_TFG_ALBACANOVAS.pdf?sequence=1&isAllowed=y
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

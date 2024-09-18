@@ -6,7 +6,7 @@ tags:
 aliases:
   - Proceso de diseño de UI
 ---
-### Definición
+# Definición
 ---
 Tenemos 4 etapas dinámicas en las cuales tenemos en cuenta los [[Principios de diseño de interfaces de usuario|principios de diseño]]
 1. Plan
@@ -18,18 +18,18 @@ Tenemos 4 etapas dinámicas en las cuales tenemos en cuenta los [[Principios de 
 	* Mockups
 4. Especificaciones de los Mockups
 
-#### Plan
+## Plan
 ---
 Conceptualización y definición, y el alcance del proyecto. Generamos la idea general, con nombres y sus interacciones.
 
-#### Diseño
+## Diseño
 ---
 Generamos el workflow, como se va a ver, como se va a hacer las cosas en la aplicación. Hay que determinar como el usuario va a hacer todas las cosas. Estas nos permiten hacer [[Prueba de usuario|pruebas de usuario]]
 
-#### Desarrollo
+## Desarrollo
 ---
 Diseño visual, y más [[Prueba de usuario|pruebas de usuario]] con ya un producto visualmente funcionando
 
-#### Especificación
+## Especificación
 ---
 Ahora definimos todas la lógica que debería tener los diseños para poder ser recreado en código, especificando cada una de las acciones tanto de la aplicación como las del usuario

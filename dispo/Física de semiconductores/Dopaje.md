@@ -4,6 +4,6 @@ tags:
   - dispo/Física-de-semiconductores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la introducción de átomos externos para manipular las propiedades eléctricas del [[Semiconductor]]

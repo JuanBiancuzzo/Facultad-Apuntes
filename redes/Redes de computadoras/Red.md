@@ -6,7 +6,7 @@ tags:
   - redes/Redes-de-computadoras
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los dispositivos conectados a [[Internet|internet]] a menudo se designan como [[Host|hosts]], porque se sitúan en la frontera de Internet, en los extremos de la comunicación.
 
@@ -16,11 +16,11 @@ Se lo puede entender de dos formas
 * Infraestructura
 	* La red provee de servicios a las [[Aplicación|aplicaciones]], esta es poder mandar y recibir mensajes de un host a otro
 
-#### Fronter de la red
+## Fronter de la red
 ---
 Los dispositivos conectados a internet a menudo se designan como sistemas terminales, porque se sitúan en la frontera de internet, en los extremos de la comunicación
 
-##### Redes de accesos
+### Redes de accesos
 ---
 Enlaces físicos que conectan un sistema terminal con el primer [[Router|router]] de una ruta entre el host y cualquier otro host distante
 
@@ -32,7 +32,7 @@ Enlaces físicos que conectan un sistema terminal con el primer [[Router|router]
 * [[Wireless Fidelity|WiFi]]
 * [[Acceso inalámbrico de área extensa]]
 
-###### Medios físicos
+#### Medios físicos
 ---
 Cada par transmisor-receptor, el bit se envía mediante [[Campo electromagnético|ondas electromagnéticas]] o pulsos ópticos a lo largo de un medio físico como mencionaremos a continuación. Pueden tener muchas formas y no tiene por qué ser del mismo tipo para cada par transmisor-receptor existente a lo largo de la ruta
 
@@ -42,7 +42,7 @@ Cada par transmisor-receptor, el bit se envía mediante [[Campo electromagnétic
 * [[Canal de radio#Via terrestre|Canales de radio terrestres]]
 * [[Canal de radio#Via satélite|Canales de radio via satélite]]
 
-#### Núcleo de la red
+## Núcleo de la red
 ---
 Los [[Host|host]] intercambian mensajes unos con otros. Para enviar un mensaje desde un host de origen hasta un host de destino, el origen divide los mensajes largos en fragmentos de datos más pequeños que se conocen como [[Paquete|paquetes]]
 

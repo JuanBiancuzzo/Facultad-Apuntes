@@ -4,7 +4,7 @@ tags:
  - discreta/Relaciones
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Definimos $R^{-1}$ como el [[Conjunto|conjunto]] de las [[Relación|relaciones]] de $R$ invertidas. Entonces $$ \begin{array}{c}
 	R^{-1} = \Set{(x,~y) \in A^2 : yRx} \\

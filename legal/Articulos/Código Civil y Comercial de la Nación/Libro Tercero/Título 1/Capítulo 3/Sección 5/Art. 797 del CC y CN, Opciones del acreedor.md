@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El acreedor no puede pedir el cumplimiento de la obligación y la pena, sino una de las dos cosas, a su arbitrio, a menos que se haya estipulado la pena por el simple retardo, o que se haya estipulado que por el pago de la pena no se entienda extinguida la obligación principal."
 
-### Interpretación
+# Interpretación
 ---

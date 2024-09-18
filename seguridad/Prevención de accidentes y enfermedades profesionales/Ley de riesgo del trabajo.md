@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La ley 24557/95 es la ley de riesgos de trabajo. Tiene como objetivo:
 1) Reducir la [[Siniestralidad]] laboral a través de la prevención de los [[Riesgo|riesgos]] derivados del trabajo.

@@ -17,7 +17,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "En los contratos previstos en esta sección, se deben tener por no escritas:
 
@@ -25,7 +25,7 @@ tags:
  b. las que importan renuncia o restricción a los derechos del adherente, o amplían derechos del predisponente que resultan de normas supletorias;
  c. las que por su contenido, redacción o presentación, no son razonablemente previsibles."
 
-### Interpretación
+# Interpretación
 ---
 De manera expresa, el [[Código Civil y Comercial de la Nación|Código Civil y Comercial de la Nación]]  que ciertas cláusulas, consideradas abusivas para el adherente, se deben tener por no escritas. Expresamente se enuncia como abusivas a las cláusulas que desnaturalizan las obligaciones del predisponente; a las que importan renuncia o restricción a los derechos del adherente, o amplían derechos del predisponente que resultan de normas supletorias, y a las que por su contenido, redacción o presentación no son razonablemente previsibles
 

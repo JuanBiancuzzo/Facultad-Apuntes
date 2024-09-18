@@ -11,11 +11,11 @@ tags:
 aliases:
   - Obligación
 ---
-### Artículo
+# Artículo
 ---
 "La [[Art. 724 del CC y CN, Definición|obligación]] es una [[Relación jurídica|relación jurídica]] en virtud de la cual el acreedor tiene el [[Derecho|derecho]] a exigir del deudor una prestación destinada a satisfacer un interés lícito y, ante el incumplimiento, a obtener forzadamente la satisfacción de dicho interés."
 
-### Interpretación
+# Interpretación
 ---
 Esta última expresión pone de relieve la protección jurídica del acuerdo y la posible aplicación derivada del incumplimiento normativo que es la [[Sanción jurídica|sanción jurídica]], impuesta por el [[Poder Judicial|órgano jurisdiccional]] competente instado por la [[Acción procesal|acción procesal]] en defensa de los derechos lesionados
 

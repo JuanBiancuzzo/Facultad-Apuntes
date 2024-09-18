@@ -5,11 +5,11 @@ tags:
   - nota/facultad
   - fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
 ---
-### Definición:
+# Definición:
 ---
 La resistencia eléctrica de un componente es una magnitud que representa la oposición a la circulación de [[Corriente eléctrica|corriente]] de dicho componente.
 
-##### Unidad
+### Unidad
 ---
 $$
 \begin{align}

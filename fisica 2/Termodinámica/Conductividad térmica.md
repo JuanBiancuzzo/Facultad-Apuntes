@@ -6,13 +6,13 @@ tags:
 referencias:
   - "223"
 ---
-### Definición
+# Definición
 ---
 La conductividad térmica es una propiedad física de los materiales que mide la capacidad de [[Conducción de calor|conducción de calor]]. En otras palabras, la conductividad térmica es también la capacidad de una sustancia para transferir la [[Energía cinética|energía cinética]] de sus moléculas a otras adyacentes o a sustancias con las que está en contacto<sup><a href="#ref-223" style="color: inherit; text-decoration: none;">[223]</a></sup> 
 
 Tiene unidades de $\displaystyle [\lambda] = \frac{W}{m ~ K}$
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

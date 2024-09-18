@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La novación por cambio de deudor requiere el consentimiento del acreedor."
 
-### Interpretación
+# Interpretación
 ---

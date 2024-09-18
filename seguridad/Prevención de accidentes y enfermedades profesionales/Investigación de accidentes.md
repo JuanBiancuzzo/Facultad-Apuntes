@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 También conocido como [[Análisis de causa raíz|árbol de causas]], este es un método secuencial de análisis de los datos que usa [[Compuerta|compuertas lógicas]] para describir eventos. 
 

@@ -6,12 +6,12 @@ tags:
 referencias:
   - "211"
 ---
-### Definición
+# Definición
 ---
 El movimiento browniano es el movimiento aleatorio que se observa en las partículas que se hallan en un medio fluido, como resultado de choques contra las moléculas de dicho fluido<sup><a href="#ref-211" style="color: inherit; text-decoration: none;">[211]</a></sup> 
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

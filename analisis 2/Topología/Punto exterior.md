@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Topología/1
 ---
-### Definición
+# Definición
 ---
 Se determina si un punto de un [[Conjunto|conjunto]], como un punto exterior si para ese $x_0 \notin U$ existe algún [[Entorno|entorno]] no incluido en $U$
 

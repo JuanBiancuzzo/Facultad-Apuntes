@@ -4,7 +4,7 @@ tags:
   - legal/Obligaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son aquellos [[Derecho|derechos]] extrapatrimoniales que una [[Persona jurídica|persona]] tiene frente a otra con la que posee un vínculo familiar. 
 

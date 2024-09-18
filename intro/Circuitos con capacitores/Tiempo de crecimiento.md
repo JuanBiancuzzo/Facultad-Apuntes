@@ -4,11 +4,11 @@ tags:
   - intro/Circuitos-con-capacitores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se define el tiempo de crecimiento (rise time) como el intervalo de tiempo que tarda la [[Tensión|tensión]] en pasar del $10\%$ al $90\%$ del máximo valor $$ t = - \tau ~ \ln\left(1 - \frac{v_C}{V_0} \right) $$ donde queremos que $\frac{v_C}{V_0}$ sea el porcentaje que buscamos
 
-#### Expresión
+## Expresión
 ---
 $$\begin{align}
 t_r = t_1 - t_2 = ln(9) \cdot R \cdot C \approx 2.2 \cdot R \cdot C = 2.2 \cdot \tau
@@ -20,7 +20,7 @@ $$ \begin{cases}
 \end{cases} $$
 Notar que depende de la [[Constante de tiempo|constante de tiempo]]
 
-#### Esquematizándolo
+## Esquematizándolo
 ---
 
 ```tikz

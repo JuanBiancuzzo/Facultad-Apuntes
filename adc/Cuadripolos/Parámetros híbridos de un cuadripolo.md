@@ -4,7 +4,7 @@ tags:
   - adc/Cuadripolos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La relación que tiene esta dada por $$ {\begin{cases} 
 	V_1 = h_{11} ~ I_1 + h_{12} ~ V_2 \\ 
@@ -30,13 +30,13 @@ Donde
 * $h_{21} =$ Ganancia directa de [[Corriente eléctrica|corriente]] en cortocircuito
 * $h_{22} =$ [[Admitancia|Admitancia]] de salida en circuito abierto
 
-#### Ejemplo
+## Ejemplo
 ---
 Un caso de [[Cuadripolo|cuadripolo]] es un [[Amplificador Emisor Común con un transistor bipolar de juntura|amplificador mono-etapa emisor común]] 
 
 ![[Amplificador emisor común como un cuadripolo.webp]]
 
-### Inversos
+# Inversos
 ---
 La relación que tiene esta dada por $$ {\begin{cases} 
 	I_1 = g_{11} ~ V_1 + g_{12} ~ I_2 \\ 

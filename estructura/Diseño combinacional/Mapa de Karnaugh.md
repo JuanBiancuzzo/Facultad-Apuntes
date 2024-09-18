@@ -4,7 +4,7 @@ tags:
   - estructura/Diseño-combinacional
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Este método permite encontrar las expresiones mínimas en forma de [[Suma de minitérminos]] o [[Producto de maxitérminos]]. Se basa en encontrar todos los [[Implicante primo|implicantes primos]], y seleccionar un conjunto mínimo de [[Implicante|implicantes]] que cubra la función.
 
@@ -12,7 +12,7 @@ Al tener todos los [[Implicante primo|implicantes primos]] se tiene que ver cual
 
 Este método también nos puede ayudar con las [[Redundancia|redundancias]] ya que representaríamos con $x$ las redundancias y les asignaríamos un valor que nos sirva para reducir la cantidad de implicantes, y en el caso que no reduzca la cantidad, entonces que aumente el tamaño de un implicante.
 
-### Ejemplo
+# Ejemplo
 ---
 Digamos que tenemos 4 variables, $a$, $b$, $c$ y $d$, y haremos la siguiente tabla
 

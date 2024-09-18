@@ -4,7 +4,7 @@ tags:
   - analisis-3/Funciones-elementales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se define como
 $$\begin{align} 
@@ -12,7 +12,7 @@ $$\begin{align}
     \sinh(z) &= \frac{1}{2} \cdot (e^{z} - e^{-z})
 \end{align}$$
 
-### Observaciones
+# Observaciones
 ---
 Donde vemos con la definición del [[Función coseno hiperbólico|coseno hiperbólico]], que cumplen
 $$\begin{align} \sinh'(z) = \cosh(z) && \cosh'(z) = \sinh(z) \end{align}$$

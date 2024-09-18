@@ -6,7 +6,7 @@ tags:
 aliases:
   - Bobinas en paralelo
 ---
-### Definición
+# Definición
 ---
 Son aquellos [[Inductor|inductores]] que comparten la misma [[Tensión]] entre los mismos [[Nodo]] ([[Elementos en paralelo]])
 

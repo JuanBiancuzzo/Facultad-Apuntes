@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Topología/1
 ---
-### Definición
+# Definición
 ---
 Un punto $x_0$ es frontera si para cualquier $r > 0$ hay una [[Disco abierto|disco abierto]] centrada en $x_0$ y con radio $r$ que pertenece al [[Conjunto|conjunto]] y a su complemento
 

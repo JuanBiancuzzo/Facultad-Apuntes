@@ -14,7 +14,7 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 4/Capítulo 4/Cap�
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Salvo lo dispuesto en el [[Art. 130 de la ley de Contrato de Trabajo, Adelantos|artículo 130 de esta ley]], en el caso de adelanto de remuneraciones, la deducción, retención o compensación no podrá insumir en conjunto más del veinte (20) por ciento del monto total de la remuneración en dinero que tenga que percibir el trabajador en el momento en que se practique.
 
@@ -24,7 +24,7 @@ Las deducciones, retenciones o compensaciones, en todos los restantes casos, req
 
 La autoridad de aplicación podrá establecer, por resolución fundada, un límite porcentual distinto para las deducciones, retenciones o compensaciones cuando la situación particular lo requiera."
 
-### Interpretación
+# Interpretación
 ---
 
 

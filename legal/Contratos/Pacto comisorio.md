@@ -4,7 +4,7 @@ tags:
   - legal/Contratos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La inejecución de sus [[Art. 724 del CC y CN, Definición|obliaciones]] por una de las partes permite a la otra pedir la resolución del [[Contrato|contrato]]; en el [[Contrato de obra|contrato de obra]], la cláusula resolutoria (pacto comisorio) es implícita o tácita. 
 
@@ -14,6 +14,6 @@ En cuanto al incumplimiento del contratista, el comitente tiene derecho a pedir 
 	
 Naturalmente, no cualquier incumplimiento autoriza la resolución; así, por ejemplo, una pequeña demora en la provisión de los materiales por el comitente o en la ejecución de las obras por el contratista. Debe tratarse de un incumplimiento grave, sin lo cual la pretensión de la parte que pide la resolución sería abusiva
 
-#### Pacto comisorio expreso
+## Pacto comisorio expreso
 ---
 En el [[Art. 1086 del CC y CN, Cláusula resolutoria expresa|art. 1086 del CC y CN]] se enuncia ![[Art. 1086 del CC y CN, Cláusula resolutoria expresa#Artículo]]

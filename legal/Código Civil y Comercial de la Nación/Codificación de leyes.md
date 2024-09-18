@@ -4,7 +4,7 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Consiste en la formación de cuerpos sistemáticos y orgánicos de [[Norma jurídica|normas jurídicas]] que regulan una materia determinada del [[Derecho|derecho]]. Tiene una ventaja decisiva para la tarea de interpretación y aplicación de las normas jurídicas
 

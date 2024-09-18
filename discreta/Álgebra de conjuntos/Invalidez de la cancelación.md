@@ -4,7 +4,7 @@ tags:
  - discreta/Álgebra-de-conjuntos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Para los [[Número real|número reales]]
 * $p + q = q  \implies p = 0$

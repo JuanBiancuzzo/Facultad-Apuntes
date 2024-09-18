@@ -4,7 +4,7 @@ tags:
   - seguridad/Riesgo-eléctrico-y-radiación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Pacientes expuestos a [[Radiación ionizante|radiaciones ionizantes]]: No aplicable. Las [[Dosis Absorbida de radiación ionizante|dosis]] no pueden limitarse porque los beneficios pueden ser muy diversos. Un procedimiento apropiado puede contribuir a preservar la vida del paciente.
 

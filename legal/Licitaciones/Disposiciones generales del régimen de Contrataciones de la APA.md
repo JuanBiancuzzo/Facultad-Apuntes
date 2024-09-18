@@ -4,26 +4,26 @@ tags:
   - legal/Licitaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Partiendo de la [[Administración Pública Nacional (APA)|APA]] 
 
-#### Objeto
+## Objeto
 ---
 ![[Art. 1 del APA, Objeto#Interpretación]]
 
-#### Ámbito de aplicación
+## Ámbito de aplicación
 ---
 ![[Art. 2 del APA, Ámbito de aplicación#Artículo]]
 
-#### Sector público nacional
+## Sector público nacional
 ---
 ![[Art. 8 de la administración financiera y sistemas de control#Artículo]]
 
-#### Principios generales
+## Principios generales
 ---
 ![[Art. 3 del APA, Principios generales#Interpretación]]
 
-#### Contratos comprendidos
+## Contratos comprendidos
 ---
 ![[Art. 4 del APA, Contratos comprendidos#Interpretación]]

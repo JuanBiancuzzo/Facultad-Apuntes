@@ -4,7 +4,7 @@ tags:
   - orga/Machine-learning
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Cuantos grados de libertad tiene el resultado de la estimación. Asociado al [[Error de test]]. Esto esta muy relacionado a la [[Varianza]] de la distribución de resultados del modelo.
 

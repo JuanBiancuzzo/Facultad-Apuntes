@@ -4,11 +4,11 @@ tags:
   - analisis-3/Ecuaciones-diferenciales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La ecuación de Laplace es la que satisfacen las funciones del núcleo de este [[Laplaciano|Laplaciano]], es decir $$ \Delta u = 0 $$ cuyas soluciones son funciones armónicas
 
-### Propiedades
+# Propiedades
 ---
 * Para una [[Función|función]] $f : D \to \mathbb C$ [[Holomorfa|holomorfa]] en un abierto $D \subseteq \mathbb C$, sus componentes real e imaginaria son funciones armónicas en $D$.
 

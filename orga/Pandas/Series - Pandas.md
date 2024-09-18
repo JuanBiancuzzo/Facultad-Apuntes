@@ -4,7 +4,7 @@ tags:
   - orga/Pandas
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 ``` python
 class pandas.Series(data = None, index = None, dtype = None, name = None, copy = False, fastpath = False)

@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La oferta dirigida a personas indeterminadas es considerada como invitación para que hagan ofertas, excepto que de sus términos o de las circunstancias de su emisión resulte la intención de contratar del oferente. En este caso, se la entiende emitida por el tiempo y en las condiciones admitidas por los usos."
 
-### Interpretación
+# Interpretación
 ---

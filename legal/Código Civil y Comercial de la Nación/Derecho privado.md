@@ -4,11 +4,11 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Regula las relaciones entre los [[Sujeto de derecho|sujetos]]. Civil, comercial y de trabajo.
 
-#### Ejemplos
+## Ejemplos
 ---
 * [[Derecho|Derecho]] de Contratos
 	* regula los acuerdos y relaciones entre [[Persona jurídica|personas jurídicas]]

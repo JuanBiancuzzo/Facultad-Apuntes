@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Todo contrato válidamente celebrado es obligatorio para las partes. Su contenido sólo puede ser modificado o extinguido por acuerdo de partes o en los supuestos en que la ley lo prevé."
 
-### Interpretación
+# Interpretación
 ---

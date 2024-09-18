@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los instrumentos mediante los cuales una parte, o todas ellas, expresan un consentimiento para negociar sobre ciertas bases, limitado a cuestiones relativas a un futuro contrato, son de interpretación restrictiva. Sólo tienen la fuerza obligatoria de la oferta si cumplen sus requisitos."
 
-### Interpretación
+# Interpretación
 ---
 Durante la etapa precontractual, en el curso de las tratativas preliminares, las partes suelen celebrar ciertos acuerdos que, sin llegar a constituir un contrato, generan ciertas consecuencias. 
 

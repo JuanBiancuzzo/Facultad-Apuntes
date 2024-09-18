@@ -4,7 +4,7 @@ tags:
   - seguridad/Riesgo-eléctrico-y-radiación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se entiende por [[Riesgo]] eléctrico a la posibilidad que la [[Corriente eléctrica]] eléctrica circule por el cuerpo humano o a la producción de un cortocircuito o arco eléctrico, produciendo daños en personas u objetos.
 
@@ -14,7 +14,7 @@ Este puede ocurrir cuando:
 * El cuerpo humano no se encuentra [[Dieléctrico]] y frome parte del circuito.
 
 
-#### Clasificación según la [[Tensión eficaz|tensión]]
+## Clasificación según la [[Tensión eficaz|tensión]]
 ---
 * Muy baja tensión (MBT):
 	* Corresponde a las tensiones hasta $50V$

@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La nulidad puede argüirse por vía de acción u oponerse como excepción. En todos los casos debe sustanciarse."
 
-### Interpretación
+# Interpretación
 ---
 
 

@@ -12,7 +12,7 @@ aliases:
   - Corriente eléctrica superficial#Corriente superficial
   - Corriente eléctrica volumétrica#Corriente volumétrica
 ---
-### Definición
+# Definición
 ---
 La intensidad de corriente ($I$) es una magnitud física que indica la cantidad de [[Carga eléctrica|cargas]] que atraviesan la sección de un determinado [[Conductor|conductor]] por unidad de tiempo $$ \begin{align} 
     I &= \frac{dq}{dt} \\
@@ -21,11 +21,11 @@ La intensidad de corriente ($I$) es una magnitud física que indica la cantidad 
 
 La corriente tiene un escalar, su valor, y un sentido. Indica el sentido del movimiento de las cargas positivas
 
-##### Unidad
+### Unidad
 ---
 $$ [I] = \frac{C}{s} = Ampere \space (A) $$
 
-#### Densidad de corriente
+## Densidad de corriente
 ---
 La corriente no tiene por qué ser uniforme en todo el conductor, por lo que definimos la $\vec{J}$ como la densidad volumétrica de corriente 
 
@@ -36,11 +36,11 @@ En general, la corriente puede fluir independientemente por [[Corriente de arras
 
 Esto dándonos la corriente total $$ J_\text{total} = J_n + J_p $$
 
-#### Densidad de corriente superficial
+## Densidad de corriente superficial
 ---
 
 
-#### Densidad de corriente volumétrica
+## Densidad de corriente volumétrica
 ---
 Esta densidad es volumétrica, ya que el conductor es un volumen, pero es por unidad de área (área de un corte transversal del conductor) $$ \begin{matrix} 
     \vec{J}(\vec{r}) = q ~ n ~ \vec{v}_a ~~~~~ [J] = \frac{A}{m^2} \\

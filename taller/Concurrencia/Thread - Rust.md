@@ -4,7 +4,7 @@ tags:
   - taller/Concurrencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Para crear un [[Thread|thread]] es utilizando el [[Crate]] de la `std`, creando un [[JoinHandle]] de la siguiente forma 
 ``` rust

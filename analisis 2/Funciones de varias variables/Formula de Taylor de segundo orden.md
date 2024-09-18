@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Funciones-de-varias-variables
 ---
-### Definición
+# Definición
 ---
 Sea $f : U \subseteq \mathbb{R}^n \to \mathbb{R}$ una función definida en el [[analisis 2/Topología/Conjunto abierto.md|conjunto abierto]] $U$ de $\mathbb{R}$, tal que las [[Derivada parcial de orden superior|derivada parcial de segundo orden]] son continuas en alguna [[Disco abierto|disco abierto]] $B$ con centro en $\vec{x} \in U$
 
@@ -14,7 +14,7 @@ $$ f(\vec{x} + x) = f(\vec{x}) + \nabla f(\vec{x}) \cdot x + \frac{1}{2} \cdot x
 
 Donde $H(\vec{x})$ seria la [[Matriz Hessiana|matriz Hessiana]] en el punto $\vec{x}$, y $x^t$ siendo el transpuesto
 
-#### Caso especifico
+## Caso especifico
 ---
 Con $f(x, y)$ en un [[Entorno|entorno]] del punto $\vec{A} = (x_0, y_0)$, resulta
 

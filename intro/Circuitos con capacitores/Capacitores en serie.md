@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - fisica-2/Electrostática-en-conductores-y-dieléctricos
 ---
-### Definición
+# Definición
 ---
 Son aquellos [[Capacitor|capacitores]] atravesados por la misma [[Corriente eléctrica|corriente]] ([[Elementos en serie|elementos en serie]]) y comparten la misma [[Malla|malla]]
 

@@ -4,7 +4,7 @@ tags:
   - dispo/Física-de-semiconductores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Diremos que existe "[[Equilibrio térmico]]" cuando se cumplen las siguientes condiciones:
 * Hay [[Estado estacionario]], donde se mantiene su temperatura constante, la [[Generación]] y la [[Recombinación]] están compensadas y las poblaciones de $n_0$ y $p_0$ (sus [[Modelo de enlace de Silicio#Concentración de Portador de carga portadores|concentraciones]]) no cambia

@@ -20,7 +20,7 @@ tags:
   - nota/facultad
   - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
 ---
-### Definición
+# Definición
 ---
 El [[Transistor bipolar de juntura|TBJ]] es un dispositivo [[Función lineal|alineal]] por lo que no cumple el [[Principio de superposición|principio de superposición]]. Entonces teniendo el [[Circuito eléctrico|circuito]]
 
@@ -76,11 +76,11 @@ i_B(V_{BE} + v_{be}, V_{CE} + v_{ce}) \simeq ~ I_B(V_{BE}, V_{CE})
 + \frac{\partial i_B}{\partial v_{BC}} \biggm|_{Q} v_{bc} $$
 donde $Q \equiv$  punto de polarización  $(V_{BE}, V_{CE})$.
 
-#### Rango de validez del modelo
+## Rango de validez del modelo
 ---
 El error que cometemos entre el valor estimado de señal $i_c(t)$ y el valor real $i_C(t) - I_C$ debe ser pequeño. Al igual que el [[Modelo de pequeña señal para diodo]], a temperatura ambiente se obtiene $$ v_{be} \approx 5.2~mV $$ donde en la práctica se tolera $$ |v_{be}| < 10~mV $$
 
-#### Modelo para bajas frecuencias
+## Modelo para bajas frecuencias
 ---
 Generalizamos la idea de linealización para todas las corrientes y todas las señales aplicadas sobre cualquiera de las fuentes de polarización
 
@@ -145,28 +145,28 @@ Produciendo el circuito equivalente
 \end{document}
 ```
 
-##### Transconductancia
+### Transconductancia
 ---
 Calculándolo en [[Modo activo directo del transistor bipolar de juntura|MAD]] y un TBJ de tipo [[Transistor bipolar de juntura#NPN|NPN]], tenemos que $$ i_C = I_S \exp \left( \frac{v_{BE}}{V_{th}} \right) $$ entonces $$ g_m = \frac{\partial i_C (v_{BE})}{\partial v_{BE}} \biggm|_{Q} = \frac{I_S}{V_{th}} \exp \left( \frac{V_{BE}}{V_{th}} \right) $$ por lo que podemos reescribir como $$ \begin{align} 
     g_m &= \frac{I_C(V_{BE})}{V_{th}} \tag{NPN} \\
     g_m &= -\frac{I_C(V_{BE})}{V_{th}} \tag{PNP} \\
 \end{align} $$
 
-##### Conductancia de salida o de colector
+### Conductancia de salida o de colector
 ---
 Calculándolo en MAD y un TBJ de tipo NPN, tenemos que $$ i_C = I_S \exp \left( \frac{v_{BE}}{V_{th}} \right) \left( 1 + \frac{v_{CE}}{V_A} \right) $$ entonces $$ g_0 = \frac{\partial i_C}{\partial v_{CE}} \biggm|_{Q} = \frac{I_S}{V_A} \exp \left( \frac{V_{BE}}{V_{th}} \right) $$ por lo que podemos reescribir como $$ \begin{align} 
     g_0 &= \frac{\beta_F ~ I_B}{V_A} \simeq \frac{I_C(Q)}{V_A} \tag{NPN} \\
     g_0 &= - \frac{\beta_F ~ I_B}{V_A} \simeq - \frac{I_C(Q)}{V_A} \tag{PNP}
 \end{align} $$
 
-##### Conductancia de entrada o de base
+### Conductancia de entrada o de base
 ---
 Calculándolo en MAD y un TBJ de tipo NPN, tenemos que $$ i_B = \frac{i_C}{\beta_F} \simeq \frac{I_S}{\beta_F} \exp \left( \frac{v_{BE}}{V_{th}} \right) $$ donde $\beta_F$ es la [[Ganancia de corriente en modo activo directo|ganancia en MAD]], y entonces $$ g_\pi = \frac{i_B(v_{BE})}{\partial v_{BE}} \biggm|_{Q} = \frac{1}{\beta_F} \frac{i_C(v_{BE})}{\partial v_{BE}} \biggm|_{Q} = \frac{1}{\beta_F} \frac{I_S}{V_{th}} \exp \left( \frac{V_{BE}}{V_{th}} \right) $$ por lo que podemos reescribir como $$ \begin{align} 
     g_\pi &= \frac{I_B(V_{BE})}{V_{th}} = \frac{g_m}{\beta_F} \tag{NPN} \\
     g_\pi &= \frac{I_B(V_{BE})}{V_{th}} = -\frac{g_m}{\beta_F} \tag{PNP} \\
 \end{align} $$
 
-##### Conductancia de realimentación
+### Conductancia de realimentación
 ---
 Los cambios en $v_{BE}$ también producen cambios en $i_B$ $$ I_B = I_{B1} + I_{B2} $$ donde
 * $I_{B1}$ [[Corriente eléctrica|corriente]] debido a la inyección de [[Hueco|huecos]] de la base hacia el emisor
@@ -182,7 +182,7 @@ Si consideramos que toda la corriente $i_B$ está determinada por $i_{B2}$ podem
 
 Como $i_{B2} < i_B$ la relación entre $g_\mu$ y $g_o$ resulta en una [[Cota superior]], es decir $$ g_\mu < \frac{1}{\beta_0} g_o $$ y esto hace que $g_\mu$ tenga un valor muy bajo y generalmente puede despreciarse
 
-#### Modelo para altas frecuencias
+## Modelo para altas frecuencias
 ---
 Generalizamos la idea de linealización para todas las corrientes y todas las señales aplicadas sobre cualquiera de las fuentes de polarización. Se aplica las [[Capacidad de juntura|capacitancias de juntura]] y la [[Capacidad de difusión|capacitancia de difusión]]
 

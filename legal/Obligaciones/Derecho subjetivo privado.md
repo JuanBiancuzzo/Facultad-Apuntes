@@ -4,7 +4,7 @@ tags:
   - legal/Obligaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son aquellos que tienen las [[Persona física|personas físicas]] o [[Persona jurídica|jurídicas]] y el Estado (actuando como persona de carácter privado) que se dan en las [[Relación jurídica|relaciones jurídicas]] en que participan
 

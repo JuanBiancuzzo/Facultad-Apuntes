@@ -4,7 +4,7 @@ tags:
   - seguridad/Residuos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Incluye la recogida desde el lugar donde se generó y el transporte hasta la estación de transferencia, la instalación de procesamiento o la disposición final
 

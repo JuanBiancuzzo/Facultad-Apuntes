@@ -4,12 +4,12 @@ tags:
   - analisis-3/Funciones-elementales
   - nota/facultad
 ---
-### Definción
+# Definción
 ---
 Se define como logaritmo principal a la función $Log : \mathbb{C} - \mathbb{R}_{\leq 0} \to U_0$ tal que $Log(z) = ln(|z|) + i \cdot Arg(z)$ para cada $z \in \mathbb{C} - \mathbb{R}_{\leq 0}$, siendo $\mathbb{R}_{\leq 0} = \{ x \in \mathbb{R} : x \leq 0 \}$ y $U_0 = \{ w \in \mathbb{C} : - \pi < Im(w) < \pi \}$ (es decir: $Arg$ es [[Argumento principal]]).
 
 
-### Observación
+# Observación
 ---
 * Este es un caso especifico de la [[Función logaritmica]] que tiene el corte  $\mathbb{R}_{\leq 0} = \{ x \in \mathbb{R} : x \leq 0 \}$.
 * Es el caso especifico donde $Log(\lambda) = ln(\lambda)$ para $\lambda \in \mathbb{R}$, $\lambda > 0$. 

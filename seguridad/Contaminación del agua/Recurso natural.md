@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-agua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un [[Recurso]] que provee la naturaleza, esta se puede clasificar como:
 * Renovable

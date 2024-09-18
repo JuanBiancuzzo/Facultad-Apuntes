@@ -4,7 +4,7 @@ tags:
   - algo-1/Introducción-a-la-programación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Estas [[Estructura de control|estructuras de control]] permiten alterar el flujo normal del [[Programa|programa]] repitiendo un [[Bloque de acción|bloque de acción]]
 

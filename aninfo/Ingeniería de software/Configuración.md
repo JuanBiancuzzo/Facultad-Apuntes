@@ -4,6 +4,6 @@ tags:
   - aninfo/Ingeniería-de-software
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un [[Conjunto|conjunto]] de elementos que forman parte del producto/[[Sistema|sistema]], combinados de acuerdo a procedimientos específicos

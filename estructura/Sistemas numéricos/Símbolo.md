@@ -4,6 +4,6 @@ tags:
   - estructura/Sistemas-numéricos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son la representación gráfica de los números, en un sistema decimal, este tiene $10$ símbolos, pero en el sistema roman hay $7$

@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo simple|grafo simple]], el grafo es que se llama Remo $KP(p,~q,~l)$ resultante de unir el [[Camino#Ciclo (Cicle)|ciclo]] $C_p$, con un clico $C_q$ mediante un [[Camino#Camino simple (Path)|camino simple]] $P_l$ 
 

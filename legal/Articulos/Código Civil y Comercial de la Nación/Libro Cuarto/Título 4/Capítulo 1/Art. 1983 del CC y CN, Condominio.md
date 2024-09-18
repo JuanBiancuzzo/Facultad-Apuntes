@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Cuarto/
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Condominio es el derecho real de propiedad sobre una cosa que pertenece en común a varias personas y que corresponde a cada una por una parte indivisa. Las partes de los condóminos se presumen iguales, excepto que la ley o el título dispongan otra proporción."
 
-### Interpretación
+# Interpretación
 ---

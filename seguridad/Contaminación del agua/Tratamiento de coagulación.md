@@ -4,6 +4,6 @@ tags:
   - seguridad/Contaminación-del-agua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un tratamiento químico, con el objetivo de neutralizar las cargas eléctricas de las partículas con el agregado de un coagulante, como sales de aluminio o de hierro

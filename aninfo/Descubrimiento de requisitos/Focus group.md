@@ -4,7 +4,7 @@ tags:
   - aninfo/Descubrimiento-de-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Discusión moderada por un coordinador en la que típicamente participan entre 5 y 10 personas. Permite obtener ideas, percepciones y actitudes acerca de un producto, servicio, concepto u oportunidad. El moderador debe estar capacitado
 

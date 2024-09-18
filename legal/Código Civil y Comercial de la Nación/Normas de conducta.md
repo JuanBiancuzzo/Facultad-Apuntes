@@ -4,7 +4,7 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El objetivo de la [[Regulación jurídica|regulación jurídica]] es la [[Acción humana|conducta humana]]. Pero ésta no está reglada exclusivamente por el [[Derecho|derecho]], sino que existen otros [[Supremacía normativa|sistemas normativos]]  que concurren a regularla, dirigirla, encauzarla, entre los cuales se establecen relaciones y conexiones.
 

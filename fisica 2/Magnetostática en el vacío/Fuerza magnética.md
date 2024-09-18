@@ -4,7 +4,7 @@ tags:
  - fisica-2/Magnetostática-en-el-vacío
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La fuerza magnética resulta proporcional a la [[Velocidad|velocidad]] de la partícula, la [[Carga eléctrica|carga]], y el [[Campo de inducción magnética|campo magnético]]. Además, es perpendicular tanto al vector velocidad como al vector campo magnético $$ \vec{F}_M = q ~ ( \vec{v} \times \vec{B} ) $$
 Ya que la fuerza es siempre perpendicular a la trayectoria, entonces el [[Trabajo|trabajo]] de la [[Fuerza|fuerza]] magnética es nulo. Esta no es conservativa, y por lo tanto el módulo de la velocidad permanece constante $$ W_{F_M} = \Delta U $$ siendo $U$ la [[Energía cinética|energía cinética]]

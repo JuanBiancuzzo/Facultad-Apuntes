@@ -7,6 +7,6 @@ aliases:
   - Linking loader dinámico
   - DLL
 ---
-### Definición
+# Definición
 ---
 Carga rutinas únicamente cuando el [[Programa|programa]] las necesita

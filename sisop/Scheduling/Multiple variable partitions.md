@@ -4,7 +4,7 @@ tags:
   - sisop/Scheduling
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se trataba a toda la [[Memoria|memoria]] no utilizada por el [[Sistema operativo|sistema operativo]] como un único gran espacio desde el cual se podrían asignar "regiones" contiguas tanto como lo requiriera un número ilimitado de aplicaciones y [[Programa|programas]] simultáneamente
 1. Cada tarea podía tener cualquier tamaño, el limitante era la memoria de la máquina

@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - taller/Sintaxis
 ---
-### Definición
+# Definición
 ---
 Al solucionar un problema mediante un [[algo 1/Introducción a la programación/Algoritmo|algoritmo]] no es posible utilizar cualquier tipo de [[Información|información]]. Se utilizar cualquier tipo de información. Se utilizan ciertos tipos de datos. Un tipo se puede definir como un [[Conjunto|conjunto]] de valores que una [[Variable|variable]] de ese tipo de dato puede tomar, ya sea [[Variable inmutable|inmutable]], [[Variable mutable|mutable]] o [[Variable constante|constante]]. 
 

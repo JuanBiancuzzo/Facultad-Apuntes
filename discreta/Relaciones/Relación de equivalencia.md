@@ -4,7 +4,7 @@ tags:
  - discreta/Relaciones
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Una relación de equivalencia es una [[Relación|relación]] que cumple simultáneamente las propiedades
 * Reflexiva

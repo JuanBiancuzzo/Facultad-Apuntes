@@ -5,11 +5,11 @@ tags:
   - nota/facultad
   - taller/Sintaxis
 ---
-### Definición
+# Definición
 ---
 Estos se dividen a su vez en tipos de datos Ordinales y tipos de datos No Ordinales
 
-#### Tipo de dato Ordinal
+## Tipo de dato Ordinal
 ---
 Son aquellos cuyos valores poseen sucesor y predecesor
 
@@ -28,7 +28,7 @@ Son aquellos cuyos valores poseen sucesor y predecesor
 
 Notemos que el dato Booleano sigue la [[Álgebra de Boole|álgebra de Boole]].
 
-#### Tipo de dato No Ordinal
+## Tipo de dato No Ordinal
 ---
 Son aquellos que no pueden determinarse su sucesor y un predecesor
 
@@ -38,7 +38,7 @@ Son aquellos que no pueden determinarse su sucesor y un predecesor
 | Simple       | $1.5 \times 10^{-45} \cdots 3.4 \times 10^{38}$ |
 | Doble        | $5 \times 10^{-324} \cdots 1.7 \times 10^{308}$ |
 
-#### Representación algorítmica
+## Representación algorítmica
 ---
 * [[Representación de enteros|Enteros]]
 * [[Punto flotante|Punto flotante]]

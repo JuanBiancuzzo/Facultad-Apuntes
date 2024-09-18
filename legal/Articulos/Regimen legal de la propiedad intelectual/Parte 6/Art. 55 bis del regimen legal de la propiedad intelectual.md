@@ -10,10 +10,10 @@ previo: "[[legal/Articulos/Regimen legal de la propiedad intelectual/Parte 6/Par
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 ![[Art. 4 de la Propiedad Intelectual#^58fa19]]
 
-### Interpretación
+# Interpretación
 ---
 Esta siendo modificado por el artículo [[Art. 4 de la Propiedad Intelectual|Artículo 4 de la Ley 25.036]]

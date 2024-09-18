@@ -4,7 +4,7 @@ tags:
   - sisop/Virtualización-de-memoria
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Una alternativa a la memoria segmentada planteada por métodos como [[Traslación de direcciones con registros de base y segmento|Registros de base y segmento]] y [[Traslación de direcciones con tabla de segmentos|Tabla de segmentos]], es la memoria paginada. Con la paginación, la [[Memoria|memoria]] es reservada en pedazos de tamaño fijo llamados page frames. 
 
@@ -14,7 +14,7 @@ Teniendo en cuenta que los page frames tienen un tamaño fijo, y son potencia de
 
 ![[Memoria paginada.webp]]
 
-#### Translación con Page Table
+## Translación con Page Table
 ---
 La [[Dirección de memoria virtual|virtual address]] tiene dos componentes
 * El número de página virtual

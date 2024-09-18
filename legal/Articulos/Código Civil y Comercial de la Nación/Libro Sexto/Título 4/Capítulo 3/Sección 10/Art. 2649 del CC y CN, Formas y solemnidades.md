@@ -16,7 +16,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Sexto/T
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Las formas y solemnidades de los actos jurídicos, su validez o [[Nulidad|nulidad]] y la necesidad de publicidad, se juzgan por las [[Ley|leyes]] y usos del lugar en que los actos se hubieren celebrado, realizado u otorgado.  
 
@@ -24,5 +24,5 @@ Cuando la ley aplicable al fondo de la [[Relación jurídica|relación jurídica
 
 Si los contratantes se encuentran en distintos [[Estado|Estados]] al tiempo de la celebración, la validez formal del acto se rige por el [[Derecho|derecho]] del país de donde parte la oferta aceptada o, en su defecto, por el derecho aplicable al fondo de la relación jurídica."
 
-### Interpretación
+# Interpretación
 ---

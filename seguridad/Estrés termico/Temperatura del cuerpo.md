@@ -4,7 +4,7 @@ tags:
   - seguridad/Estrés-termico
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se senomina teperatura del cuerpo a un valor promedio de [[Temperatura]] de la masa subyacente por debajo de la piel, excluidas las extremidades, que representa entre 70 y 80% de la masa total.
 

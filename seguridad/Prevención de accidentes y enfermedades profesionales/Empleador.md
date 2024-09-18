@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una persona física (unipersonal), una persona Jurídica. Tiene como obligaciones:
 * Cumplir con las normas de higiene y seguridad en el trabajo

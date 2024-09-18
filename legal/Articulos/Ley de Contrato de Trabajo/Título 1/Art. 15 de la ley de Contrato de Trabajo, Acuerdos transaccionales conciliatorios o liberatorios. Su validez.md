@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 1/Título 1, Dispo
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los acuerdos transaccionales, conciliatorios o liberatorios sólo serán válidos cuando se realicen con intervención de la autoridad judicial o administrativa, y mediare resolución fundada de cualquiera de ésta que acredite que mediante tales actos se ha alcanzado una justa composición de los derechos e intereses de las partes."
 
-### Interpretación
+# Interpretación
 ---

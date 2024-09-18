@@ -21,7 +21,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "A los fines de la resolución, el incumplimiento debe ser esencial en atención a la finalidad del contrato. Se considera que es esencial cuando:
 
@@ -31,7 +31,7 @@ tags:
  d. el incumplimiento es intencional;
  e. el incumplimiento ha sido anunciado por una manifestación seria y definitiva del deudor al acreedor."
 
-### Interpretación
+# Interpretación
 ---
 
 

@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La prestación puede ser ejecutada por persona distinta del deudor, a no ser que de la convención, de la naturaleza de la obligación o de las circunstancias resulte que éste fue elegido por sus cualidades para realizarla personalmente. Esta elección se presume en los contratos que suponen una confianza especial."
 
-### Interpretación
+# Interpretación
 ---

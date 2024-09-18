@@ -4,6 +4,6 @@ tags:
   - legal/Obligaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un hecho dañoso que debe repararse en lo civil puede configurar al mismo tiempo un delito en el ámbito penal

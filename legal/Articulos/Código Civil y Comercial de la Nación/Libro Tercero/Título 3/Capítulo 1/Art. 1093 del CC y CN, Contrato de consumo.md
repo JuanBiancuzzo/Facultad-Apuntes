@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "[[Contrato de consumo|Contrato de consumo]] es el celebrado entre un consumidor o usuario final con una [[Persona humana|persona humana]] o [[Persona jurídica|jurídica]] que actúe profesional u ocasionalmente o con una empresa productora de bienes o prestadora de servicios, pública o privada, que tenga por objeto la adquisición, uso o goce de los bienes o servicios por parte de los [[Art. 1092 del CC y CN, Relación de consumo. Consumidor|consumidores]] o usuarios, para su uso privado, familiar o social."
 
-### Interpretación
+# Interpretación
 ---

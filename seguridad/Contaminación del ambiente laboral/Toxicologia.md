@@ -4,6 +4,6 @@ tags:
   - seguridad/Contaminación-del-ambiente-laboral
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la ciencia que estudia los efectos adversos producidos por diversos agentes [[Toxicidad|toxicos]] sobre los organismos vivos.

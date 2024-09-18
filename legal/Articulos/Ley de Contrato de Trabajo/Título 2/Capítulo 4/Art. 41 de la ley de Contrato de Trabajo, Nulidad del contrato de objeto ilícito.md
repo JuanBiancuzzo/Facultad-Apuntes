@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 2/Capítulo 4/Cap�
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El contrato de objeto ilícito no produce consecuencias entre las partes que se deriven de esta ley."
 
-### Interpretación
+# Interpretación
 ---
 
 

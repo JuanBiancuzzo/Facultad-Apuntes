@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los empleos "verdes" comprenden una amplia gama de empleos en diversos sectores y emplean a trabajadores de muy diversa índole.
 

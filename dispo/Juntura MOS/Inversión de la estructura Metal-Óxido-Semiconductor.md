@@ -6,7 +6,7 @@ tags:
 aliases:
   - Inversión de la estructura MOS
 ---
-### Definición
+# Definición
 ---
 Dada una [[Estructura Metal-Óxido-Semiconductor|Estructura MOS]] [[Estructura Metal-Óxido-Semiconductor con polarización|polarizada]], para $V_{GB} > V_T$, donde $V_T$ es la [[Tensión umbral|tensión umbral]]. La concentración de [[Electrón|electrones]] en la interfaz $Si$/$SiO_2$ supera a la concentración de [[Impureza aceptora|átomos aceptores]] por lo que se produce la inversión del material
 
@@ -14,7 +14,7 @@ Dada una [[Estructura Metal-Óxido-Semiconductor|Estructura MOS]] [[Estructura M
 
 La concentración de [[Electrón|electrones]] en la interfaz $Si$/$SiO_2$ está modulada por $V_{GB} \implies V_{GB} \uparrow \implies n(0) \uparrow \implies |Q'_n| \uparrow$ . El [[Campo eléctrico]] controla la densidad de la [[Carga eléctrica|carga]] móvil. Esta es la esencia del [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]].
 
-#### Relación carga vs. Tensión de control
+## Relación carga vs. Tensión de control
 ---
 Para calcular $Q'_n$ vs. $V_{GB}$ utilizaremos la [[Aproximación de carga superficial]]: la capa de electrones de la superficie del [[Semiconductor]] es mucho más delgada que cualquier otra dimensión del problema ($t_{ox}$, $x_d$)
 
@@ -29,18 +29,18 @@ Varias consecuencias
 * Todo la diferencia de [[Tensión|potencial]] adicional una vez superado $V_T$ es utilizado para aumentar la inversión de carga $Q'_n$. 
 
 
-##### Concentraciones de los portadores
+### Concentraciones de los portadores
 ---
 ![[Concentración de portadores en la estructura MOS en regimen de inversión.webp]]
 
-##### Densidad de carga espacial
+### Densidad de carga espacial
 ---
 ![[Densidad de carga en una estructura MOS en regimen de inversión.webp]]
 
-##### Campo eléctrico
+### Campo eléctrico
 ---
 ![[Campo eléctrico en una estructura MOS en regimen de inversión.webp]]
 
-##### Función potencial
+### Función potencial
 ---
 ![[Potencial eléctrico en una estructura MOS en regimen de inversión.webp]]

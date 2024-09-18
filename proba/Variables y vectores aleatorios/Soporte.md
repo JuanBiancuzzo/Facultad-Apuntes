@@ -4,7 +4,7 @@ tags:
   - proba/Variables-y-vectores-aleatorios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es equivalencia con el [[Rango de una variable aleatoria|rango]] pero generalizado para cualquier tipo de [[Variable aleatoria]]. Se define el soporte de una [[Variable aleatoria]] como:
 

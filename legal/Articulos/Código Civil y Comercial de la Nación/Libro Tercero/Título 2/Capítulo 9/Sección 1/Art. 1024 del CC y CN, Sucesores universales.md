@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los efectos del contrato se extienden, activa y pasivamente, a los sucesores universales, a no ser que las obligaciones que de él nacen sean inherentes a la persona, o que la transmisión sea incompatible con la naturaleza de la obligación, o esté prohibida por una cláusula del contrato o la ley."
 
-### Interpretación
+# Interpretación
 ---

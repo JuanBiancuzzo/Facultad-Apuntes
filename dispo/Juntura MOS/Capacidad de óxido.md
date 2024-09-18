@@ -4,7 +4,7 @@ tags:
   - dispo/Juntura-MOS
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Tomaremos a la [[Capacitor|capacidad]] del óxido en una [[Estructura Metal-Óxido-Semiconductor|estructura MOS]] $$ C_{ox} = A ~ \frac{\varepsilon_{ox}}{t_{ox}} $$ donde $t_{ox}$ es el ancho del óxido y $\varepsilon_{ox}$ es la [[Permitividad eléctrica]] del óxido.
 

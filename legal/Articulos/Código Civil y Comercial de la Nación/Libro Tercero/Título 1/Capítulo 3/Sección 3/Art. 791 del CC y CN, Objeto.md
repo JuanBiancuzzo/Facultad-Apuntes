@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La cláusula penal puede tener por objeto el pago de una suma de dinero, o cualquiera otra prestación que pueda ser objeto de las obligaciones, bien sea en beneficio del acreedor o de un tercero."
 
-### Interpretación
+# Interpretación
 ---

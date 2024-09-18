@@ -4,7 +4,7 @@ tags:
   - seguridad/Estrés-termico
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la adaptación fisiológica adquirida durante el trabajo en ambientes calurosos. Estos disminuyen las [[Respuesta fisiológica al calor|la respuesta fisiológica]] como:
 * Disminuye la frecuencia cardíaca

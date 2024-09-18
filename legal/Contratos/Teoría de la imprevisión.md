@@ -4,16 +4,16 @@ tags:
   - legal/Contratos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Cuando se celebra un [[Contrato|contrato]], y por causas totalmente imprevisibles, se altera significativamente las circunstancias, haciendo que el cumplimiento, del deudor, de sus [[Art. 724 del CC y CN, Definición|obligaciones]] sea sumamente gravoso y quizás origine la ruina del deudor. Entonces la justicia de reajustar las cláusulas del contrato y, en ciertos casos, de considerarlo insubsistente. 
 
-#### Diferencias con el caso fortuito
+## Diferencias con el caso fortuito
 ---
 Como se enuncia en el [[Art. 792 del CC y CN, Incumplimiento|art. 792]], ![[Art. 792 del CC y CN, Incumplimiento#Artículo]]
 Donde nos tenemos que quedar con la implicación de la imposibilidad de cumplir sus obligaciones, mientras que la teoría de la imprevisión supone una dificultad grave para cumplir pero no es imposible.
 
-#### Condiciones de aplicación
+## Condiciones de aplicación
 ---
 Para que sea posible aplicar la teoría de la imprevisión es necesario:
 * Que se trate de [[Clasificación de contratos#Contratos conmutativos y aleatorios|contratos conmutativo]], y por lo tanto quedan comprendidos los [[Clasificación de contratos#Contratos unilaterales y bilaterales|contratos bilaterales]] y los [[Clasificación de contratos#Contratos onerosos y gratuitos|onerosos]].
@@ -24,7 +24,7 @@ Para que sea posible aplicar la teoría de la imprevisión es necesario:
 * Debe tratarse de acontecimientos de carácter general o social
 * La teoría de la imprevisión ha sido regulada en el [[Art. 1078 del CC y CN, Disposiciones generales para la extinción por declaración de una de las partes#Inciso N°3|artículo 1078, inciso 3]] ![[Art. 1078 del CC y CN, Disposiciones generales para la extinción por declaración de una de las partes#Inciso N°3]] con otras palabras, si el [[Sección 2, Mora|moroso]] pretende alegar la teoría de la imprevisión para dar por concluido el contrato, la otra parte podrá frenarlo lícitamente
 
-#### Efectos
+## Efectos
 ---
 La parte perjudicada con la alteración de las prestaciones puede plantear extrajudicialmente, o pedir ante un [[Juez|juez]] (por acción o por excepción) la resolución total o parcial del contrato ([[Art. 1091 del CC y CN, Imprevisión|art. 1091]])
 

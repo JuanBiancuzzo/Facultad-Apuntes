@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "A los fines de este [[Capítulo 3, Formación del consentimiento|capítulo]] se considera que la manifestación de voluntad de una parte es recibida por la otra cuando ésta la conoce o debió conocerla, trátese de comunicación verbal, de recepción en su domicilio de un instrumento pertinente, o de otro modo útil."
 
-### Interpretación
+# Interpretación
 ---

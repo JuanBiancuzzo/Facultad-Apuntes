@@ -4,7 +4,7 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La dignidad de la [[Persona humana|persona]] supone su libertad para optar por un proyecto de vida intransferible y único en un amplio marco que el [[Derecho|derecho]] dene garantizar. Pero como la persona se realiza en la sociedad, inmersa en estructuras normativas, su accionar puede verse limitado por éstas, configurándose la libertad jurídica que, en cuanto tal, está delimitada por tales normas.
 

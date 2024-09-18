@@ -4,7 +4,7 @@ tags:
   - sisop/La-abstracción-de-proceso
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Conste en
 1. La entrada en la process table entry

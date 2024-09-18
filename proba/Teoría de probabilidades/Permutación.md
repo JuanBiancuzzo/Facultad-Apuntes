@@ -4,6 +4,6 @@ tags:
   - proba/Teoría-de-probabilidades
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La cantidad de formas distintas en que se pueden ordenar $n$ elementos es $n!$

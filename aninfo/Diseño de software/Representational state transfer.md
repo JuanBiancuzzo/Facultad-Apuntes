@@ -7,7 +7,7 @@ tags:
   - aninfo/Diseño-de-software
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un estilo de [[Arquitectura de aplicaciones|arquitectura de software]] para sistemas hipermedia distribuidos como la [[World Wide Web|Web]]. Esta [[Aplicación Programming Interface|API]] tiene los métodos
 
@@ -20,7 +20,7 @@ Es un estilo de [[Arquitectura de aplicaciones|arquitectura de software]] para s
 
 Existen dos tipos de mensajes [[Hypertext Transfer Protocol|HTTP]]. Los request messages y los response messages
 
-#### Request message
+## Request message
 ---
 Un request message consiste en múltiples líneas separadas por un CRLF, organizadas en tres secciones. La primera línea se llama **request line** e indica el tipo de request (método), la URL con la cual debe interactuar y la versión de HTTP que se utiliza. Los métodos más comunes son: GET, utilizado para pedir un objeto, y POST, HEAD, PUT, DELETE
 
@@ -34,7 +34,7 @@ Luego, siguen una serie de header lines, cada una con el nombre del campo y su
 
 Finalmente, está entity body. Este contiene el contenido del mensaje
 
-#### Response message
+## Response message
 ---
 Un response message tiene una estructura similar a la del pedido. La primera línea se conoce como status line y contiene información acerca del resultado del pedido. Este tiene tres campos: la versión del protocolo, un código de estado, y el mensaje de estado correspondiente
 

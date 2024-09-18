@@ -8,7 +8,7 @@ tags:
   - redes/Capa-de-Transporte
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Este [[Protocolo|protocolo]] consiste en permitir que el remitente tenga un número máximo de $n$ [[Paquete|paquetes]] sin confirmación en el pipeline. Este número suele ser denominado window size, y el protocolo como sliding-window protocol. Este número es limitado debido a que el campo del header tiene un tamaño fijo
 

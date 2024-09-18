@@ -5,13 +5,13 @@ tags:
   - nota/facultad
   - circuitos/Circuitos-con-diodos
 ---
-### Definición
+# Definición
 ---
 El diodo es un componente electrónico de dos terminales que permite la circulación de la [[Corriente eléctrica|corriente]] a través de él en un solo sentido.
 
 Se establece un [[Convención de signos para la tensión de polarización|convención se sentido de orientación]] donde el [[Impureza aceptora#Cantidad de dopante|lado p]] esta en el ánodo y el [[Impureza donora#Cantidad de dopante|lado n]] esta en el cátodo.
 
-#### Corriente
+## Corriente
 ---
 Comparemos la corriente que fluye por un diodo real en comparación al [[Corriente del Diodo|diodo ideal]], dándonos la [[Curva característica de un componente|curva característica]]
 
@@ -21,9 +21,9 @@ Al medir la características de la [[Corriente eléctrica|corriente]]-[[Tensión
 
 En la figura se puede ver como afectan a la características del diodo las diferentes no idealidades
 
-#### Polarización directa
+## Polarización directa
 ---
-##### Corriente de recombinación
+### Corriente de recombinación
 ---
 En la directa débil (es decir entre $0~V$ y $\approx 5~V_{th}$ que es [[Relación de Einstein|potencial térmico]]), la corriente (ideal) es muy baja, por lo que cualquier aporte de [[Carga eléctrica|carga]] que atraviesa la juntura de manera ideal
 
@@ -33,7 +33,7 @@ Si un par de portadores se recombina, no están disponible para formar parte de 
 
 La corriente de recombinación suele ser mucho mayor a la corriente ideal para [[Tensión|tensiones]] bajas ($I_r \gg I_{D(\text{ideal})}$) $$ I_D = I_{D(\text{ideal})} + I_r \approx I_r \approx qA \frac{x_d(V_D)~n_i}{2\tau_r} \exp \left( \frac{V_D}{2V_{th}} \right) $$ donde $x_d$ es proporcional a $\sqrt{V_D}$, $\tau_r$ es el tiempo medio de recombinación, y por ser proporcional con $n_i$ depende fuertemente de la [[Temperatura|temperatura]]
 
-##### La juntura no es abrupta, cuasi-equilibrio y alto nivel de inyección
+### La juntura no es abrupta, cuasi-equilibrio y alto nivel de inyección
 ---
 Al plantear la [[Aproximación de vaciamiento|aproximación de vaciamiento]], planteamos que la juntura es abrupta. Sin embargo esto no puede lograrse en la fabricación real del dispositivo y existe una zona de transición entre la región [[Impureza aceptora#Cantidad de dopante|dopante tipo P]] y la [[Impureza donora#Cantidad de dopante|tipo N]]
 
@@ -46,7 +46,7 @@ Al seguir aumentando la [[Corriente eléctrica|corriente]] del [[Diodo|diodo]], 
 
 Normalmente se modela $n$ (el [[Coeficiente de emisión o Factor de idealidad|coeficiente de emisión]]) con un único valor constante, sin embargo, se observa que una mejor forma de modelar los efectos mencionados es utilizar distintos valores de $n$ según el rango de corrientes
 
-##### Cuasi neutralidad
+### Cuasi neutralidad
 ---
 El [[Semiconductor|semiconductor]] presenta una [[Conductividad eléctrica|resistividad]] ($\rho$) que depende del nivel de [[Dopaje|dopaje]], donde suponiendo la [[Aproximación de cuasi-neutralidad|aproximación de cuasi neutralidad]] podemos decir
 
@@ -60,9 +60,9 @@ Ambos fenómenos suelen modelarse considerando una [[Resistor|resistencia]] ($R_
 	I_D &\approx I_0 \exp \left( \frac{V'_D}{n ~ V_{th}} \right) \\
 	V'_D &= V_D - V_{R_x}
 \end{align} $$
-#### Polarización inversa
+## Polarización inversa
 ---
-##### Corriente de generación
+### Corriente de generación
 ---
 En [[Convención de signos para la tensión de polarización#Polarización inversa|inversa]], la corriente (ideal) es menor a la [[Corriente del Diodo|corriente de saturación inversa]] ($|I_D < I_0|$)
 
@@ -77,7 +77,7 @@ $\implies$ forman parte de un nuevo componente de corriente: Corriente de genera
 
 En inversa, la corriente de generación suele ser mucho mayor a la corriente ideal ($I_g \ll |I_{D(\text{ideal})}|$) $$ I_D = I_{D(\text{ideal})} - I_g \approx -I_g \approx - \frac{qA~n_i~x_i(V_D)}{\tau_g} $$ donde $x_i$ es proporcional a $\sqrt{V_D}$, $\tau_g$ es el tiempo medio de generación, y por ser proporcional con $n_i$ depende fuertemente de la [[Temperatura]].
 
-##### Efecto de ruptura de la juntura
+### Efecto de ruptura de la juntura
 ---
 Al polarizar el diodo en [[Convención de signos para la tensión de polarización#Polarización inversa|inversa]] 
 * Aumenta la [[Tensión|diferencia de potencial]] en la [[Juntura PN|juntura]] respecto del [[Equilibrio térmico en un semiconductor|equilibrio]], por lo que aumenta el [[Campo eléctrico|campo eléctrico]] interno $$ |E(x = 0, V_D)| = \sqrt{\frac{2q~(\phi_B-V_D)}{\varepsilon_{sc}}\frac{N_a ~ N_d}{N_a + N_d}} $$

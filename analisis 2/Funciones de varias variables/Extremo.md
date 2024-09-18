@@ -5,11 +5,11 @@ tags:
   - analisis-2/Funciones-de-varias-variables
   - analisis-2/Propiedades-de-funciones
 ---
-### Definición
+# Definición
 ---
 Sea $f : U \subseteq \mathbb{R}^n \to \mathbb{R}$ una [[Función|función]] definida en el conjunto abierto $U$ de $\mathbb{R}^n$. Se dice que $f$ tiene un máximo o un mínimo (extremo) local o relativo en el punto $x_0 \in U$ si $f(x_0) \ge f(x)$ o $f(x_0) \le f(x)$ respectivamente, para toda $x$ en una [[Disco abierto|disco abierto]] B de centro en $x_0$
 
-#### Ejemplo
+## Ejemplo
 ---
 Con $f : \mathbb{R}^2 \to \mathbb{R}$ dada por $f(x, y) = x^2 + y^2$, tiene un mínimo local en $x_0 = (0, 0)$ pues en una bola B de centro en $x_0$ se tiene 
 

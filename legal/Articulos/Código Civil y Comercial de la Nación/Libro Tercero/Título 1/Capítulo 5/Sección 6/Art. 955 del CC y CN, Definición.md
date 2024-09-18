@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La imposibilidad sobrevenida, objetiva, absoluta y definitiva de la prestación, producida por caso fortuito o fuerza mayor, extingue la obligación, sin responsabilidad. Si la imposibilidad sobreviene debido a causas imputables al deudor, la obligación modifica su objeto y se convierte en la de pagar una indemnización de los daños causados."
 
-### Interpretación
+# Interpretación
 ---

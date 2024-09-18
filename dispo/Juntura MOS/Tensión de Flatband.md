@@ -4,7 +4,7 @@ tags:
   - dispo/Juntura-MOS
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Para cierta tensión $V_{GB}$, en una [[Estructura Metal-Óxido-Semiconductor con polarización|estructura MOS polarizada]], la región de vaciamiento desaparece, produciendo
 

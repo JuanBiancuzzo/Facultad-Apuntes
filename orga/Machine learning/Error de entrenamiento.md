@@ -4,6 +4,6 @@ tags:
   - orga/Machine-learning
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 [[Entrenar un modelo|Entrenamos el modelo]] con un set y luego hacemos predicciones para ese mismo set, evaluando la [[Métrica de un modelo|métrica]] que elegimos

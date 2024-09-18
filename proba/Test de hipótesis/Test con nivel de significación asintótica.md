@@ -4,7 +4,7 @@ tags:
   - proba/Test-de-hipótesis
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $\underline{X} = \left( X_1, \cdots, X_n \right)$ una [[Muestra aleatoria]] de una [[Población]] con distribución $F_\theta(x)$, $\theta \in \Theta$.
 

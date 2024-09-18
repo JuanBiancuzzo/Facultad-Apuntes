@@ -4,7 +4,7 @@ tags:
   - señales/Transformada-discreta-de-Fourier
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un [[Muestreo|muestreo]] equispaciado en frecuencia de la [[Transformada de Fourier|transformada de Fourier]] de una secuencia de [[Señal#^02aea6|tiempo discreto]]
 
@@ -107,26 +107,26 @@ $$ W = \begin{bmatrix}
 
 ^eb7ec0
 
-#### Propiedades
+## Propiedades
 ---
 Tenemos las siguientes propiedades, donde tomamos que  $$ \tilde{x}[n] \xleftrightarrow{~\mathcal{FS}} a[k] $$
-##### Linealidad
+### Linealidad
 ---
 Si $\tilde{x}[n] \xleftrightarrow{~\mathcal{FS}} a_k$ y $\tilde{y}[n] \xleftrightarrow{~\mathcal{FS}} n_k$ con $\tilde{x}[n]$ e $\tilde{y}[n]$ secuencias [[Función periódica|periódicas]] de periodo $N$ tenemos $$ \alpha \tilde{x}[n] + \beta \tilde{y}[n] \xleftrightarrow{~\mathcal{FS}} \alpha a[k] + \beta b[k] $$
 
-##### Desplazamiento temporal
+### Desplazamiento temporal
 ---
 Si $\tilde{x}[n] \xleftrightarrow{~\mathcal{FS}} a[k]$ entonces la versión desplazada $\tilde{x}[n - m]$ de la secuencia temporal cumple con $$ \tilde{x}[n - m] \xleftrightarrow{~\mathcal{FS}} W_N^{km} ~ a[k] = e^\left( -j \frac{2\pi}{N} km \right) ~ a[k] $$
 
-##### Dualidad
+### Dualidad
 ---
 Si $\tilde{x}[n] \xleftrightarrow{~\mathcal{FS}} a[k]$ entonces $$ a[n] \xleftrightarrow{~\mathcal{FS}} N \tilde{x}[-k] $$
 
-##### Simetría conjugada
+### Simetría conjugada
 ---
 Si $\tilde{x}[n] \xleftrightarrow{~\mathcal{FS}} a[k]$ entonces $$ \tilde{x}^*[n] \xleftrightarrow{~\mathcal{FS}} a^*[-k] $$
 
-##### Convolución
+### Convolución
 ---
 Si $\tilde{x}[n] \xleftrightarrow{~\mathcal{FS}} a[k]$ y $\tilde{y}[n] \xleftrightarrow{~\mathcal{FS}} b[k]$ con $\tilde{x}[n]$ e $\tilde{y}[n]$ secuencias periódicas de periodo $N$. Tenemos que $$ \tilde{x}[n] \circledast \tilde{y}[n] = \sum_{m = 0}^{N - 1} \tilde{x}[m] ~ \tilde{y}[n - m] \xleftrightarrow{~\mathcal{FS}} a[k] ~ b[k] $$
 

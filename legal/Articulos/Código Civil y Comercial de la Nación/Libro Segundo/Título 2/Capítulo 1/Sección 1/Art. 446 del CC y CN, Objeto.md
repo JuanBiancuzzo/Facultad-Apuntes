@@ -19,7 +19,7 @@ previo: "[[Sección 1, Convenciones matrimoniales|Sección 1, Convenciones matri
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Antes de la celebración del matrimonio los futuros cónyuges pueden hacer convenciones que tengan únicamente los objetos siguientes:
 
@@ -28,5 +28,5 @@ tags:
  c. las donaciones que se hagan entre ellos;
  d. la opción que hagan por alguno de los regímenes patrimoniales previstos en este [[Ley|Código]]."
 
-### Interpretación
+# Interpretación
 ---

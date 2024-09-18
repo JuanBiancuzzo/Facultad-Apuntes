@@ -4,7 +4,7 @@ tags:
   - aninfo/Verificación-y-validación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Establece si el producto o servicio cumple con lo que el cliente quiere, y no necesariamente esta alineado con los [[Requisito|requisitos]] establecidos para dicho producto o servicio
 

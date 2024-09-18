@@ -10,7 +10,7 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
 ```
-### Definición
+# Definición
 ---
 Con las diferentes formas de información de hoy día, es posible que necesitemos referenciar o citar textos desde diferentes fuentes así como vídeos en YouTube.
 
@@ -18,7 +18,7 @@ La referencias de Youtube siguen el estándar de **quién** (autor, usuario de
 
 Nombre del autor. \[Nombre de usuario en Youtube\] (fecha). _Título del video_ \[Archivo de video\]. Youtube. http://youtube.com/url-del-video
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

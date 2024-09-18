@@ -10,11 +10,11 @@ aliases:
   - Conjunción
   - Intersección de conjuntos
 ---
-### Definición
+# Definición
 ---
 Este [[Operación lógica|operador lógico]] tiene varias representaciones 
 
-#### Álgebra de proposiciones
+## Álgebra de proposiciones
 ---
 Considerando las [[Función proposicional|funciones proposicionales]] correspondientes $pq$ dada por la [[Tabla de verdad|tabla de verdad]] $$ \begin{array}{|c:c|c|}
 \hline
@@ -26,7 +26,7 @@ p & q & pq\\
 1 & 1 & 1 \\
 \hline
 \end{array} $$ ^39ff30
-#### Álgebra de conjunto
+## Álgebra de conjunto
 ---
 $A \cap B$ se lee "A intersección B" y es el conjunto que contiene los elementos comunes a ambos 
 
@@ -62,7 +62,7 @@ Definimos la conjunción $P \cap Q$ como el [[Conjunto|conjunto]] de elementos q
 
 ^c09f24
 
-#### En SQL
+## En SQL
 ---
 En [[Structured Query Language|SQL]] se usa en la cláusula [[Sentencia WHERE|WHERE]], y se usa para filtrar [[Registro SQL|registros]] con más de una condición, donde todas tiene que cumplir
 
@@ -72,6 +72,6 @@ FROM nombre_tabla
 WHERE condicion1 AND condicion2 AND condicion3 ...;
 ```
 
-##### Combinarlo con el operador OR
+### Combinarlo con el operador OR
 ---
 Se puede combinar el operador AND con el [[Operador OR#En SQL|operador OR]], donde  

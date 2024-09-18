@@ -7,11 +7,11 @@ tags:
   - redes/Capa-de-Transporte
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 
 
-#### Estimación
+## Estimación
 ---
 El $\text{SampleRTT}$ se calcula para un [[Paquete|segmento]] como el tiempo entre su envío y su confirmación. La mayoría de las implementaciones calculan uno a la vez
 

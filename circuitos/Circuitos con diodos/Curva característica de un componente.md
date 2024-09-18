@@ -6,7 +6,7 @@ tags:
 aliases:
   - Recta característica de un componente
 ---
-### Definición
+# Definición
 ---
 Se puede definir el comportamiento de los componentes que no tienen la capacidad de almacenar [[Energía|energía]] mediante una curva [[Tensión|tensión]]-[[Corriente eléctrica|corriente]] 
 

@@ -4,11 +4,11 @@ tags:
   - aninfo/Analizar-y-especificar-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Para determinar la calidad de las [[Historia de usuario|historias de usuario]] están los siguientes atributos de calidad, en 3 categorías
 
-##### Sintáctico
+### Sintáctico
 - Atomic:
 	- Una historia de usuario expresa un [[Requisito|requisito]] para exactamente una característica.
 	- Debe expresar una única funcionalidad
@@ -18,7 +18,7 @@ Para determinar la calidad de las [[Historia de usuario|historias de usuario]] e
 - Bien formada:
 	- Una historia de usuario incluye al menos un rol y un medio.
 	- Debe incluir al menos un rol y una acción
-##### Semántico
+### Semántico
 - Libre de conflictos:
 	- Una historia de usuario no debe ser inconsistente con ninguna otra historia de usuario.
 	- Debe ser consistente con otra historias de usuario
@@ -31,7 +31,7 @@ Para determinar la calidad de las [[Historia de usuario|historias de usuario]] e
 - Sin ambigüedades:
 	- Una historia de usuario evita términos o abstracciones que puedan dar lugar a múltiples interpretaciones.
 	- Debe evitar el uso de términos que pueden llevar a múltiples interpretaciones
-##### Pragmático
+### Pragmático
 - Completar:
 	- La implementación de un conjunto de historias de usuarios crea una aplicación con funciones completas, no faltan pasos
 	- No faltan pasos

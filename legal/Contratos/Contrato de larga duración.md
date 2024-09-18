@@ -4,7 +4,7 @@ tags:
   - legal/Contratos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La irrupción de los contratos de larga duración ha permitido advertir que, en muchos casos, el contrato no es un acto aislado sino que configura un verdadero proceso. En este punto, es necesario insistir en la importancia de estar dispuestos a una continua renegociación, en donde se contemplen no solo las posibles y muchas veces abruptas variaciones de precios (sea por devaluaciones monetarias, sea por cambios de cotización de productos o materias primas), sino también las innovaciones tecnológicas y los nuevos requerimientos de la comunidad (piénsese en el equilibrio que debe existir en la prestación de servicios, que debe ofrecer precios adecuados pero a la vez brindar prestaciones de avanzada).
 

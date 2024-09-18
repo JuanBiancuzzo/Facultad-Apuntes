@@ -4,7 +4,7 @@ tags:
   - analisis-3/Transformada-de-Fourier
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se define una [[Función|función]] $f(t)$ como una función impar si $f(t) = -f(-t)$ 
 

@@ -4,7 +4,7 @@ tags:
   - dispo/Transistor-MOSFET
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En un [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]], se calcula la $C_{gs,~i}$ $$ Q_G = - (Q_N + Q_B) $$
 Dónde $$ Q_N(V_{GS}) = W \int_0^L Q'_n(y) ~ dy = W \int_0^{V_{GS} - V_T} Q'_n(V_c) ~ \frac{dy}{dV_c} ~ dV_c $$

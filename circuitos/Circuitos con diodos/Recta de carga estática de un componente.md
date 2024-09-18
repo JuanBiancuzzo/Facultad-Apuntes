@@ -4,7 +4,7 @@ tags:
   - circuitos/Circuitos-con-diodos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Definimos como resistencia estática de un componente al valor de [[Resistencia|resistencia]] por el cual tendríamos que reemplazarlo de forma que no varía ninguna [[Tensión|tensión]] ni [[Corriente eléctrica|corriente]] en el [[Circuito eléctrico|circuito]]
 

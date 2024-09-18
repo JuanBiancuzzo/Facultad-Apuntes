@@ -7,16 +7,16 @@ tags:
 La clasificación de singularidades son las siguientes: 
 
 
-#### Evitable
+## Evitable
 ---
 ![[Singularidad evitable#Definición]]
 
 
-#### Polo de orden k
+## Polo de orden k
 ---
 ![[Singularidad polo de orden k#Definición]]
 
 
-#### Esencial
+## Esencial
 ---
 ![[Singularidad esencial#Definición]]

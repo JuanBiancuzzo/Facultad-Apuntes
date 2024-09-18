@@ -10,11 +10,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La oferta caduca cuando el proponente o el destinatario de ella fallecen o se incapacitan, antes de la recepción de su aceptación.
 
 El que aceptó la oferta ignorando la muerte o incapacidad del oferente, y que a consecuencia de su aceptación ha hecho gastos o sufrido pérdidas, tiene derecho a reclamar su reparación."
 
-### Interpretación
+# Interpretación
 ---

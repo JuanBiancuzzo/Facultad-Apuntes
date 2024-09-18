@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-incendios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 * La relación combustible-comburente debe esta dentro de los límites de inflamabilidad.
 * Porcentaje de vapor o gas en aire, en condiciones normales de presión y temperatura.

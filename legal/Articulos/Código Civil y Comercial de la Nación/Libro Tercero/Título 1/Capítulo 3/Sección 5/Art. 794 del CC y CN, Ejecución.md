@@ -10,11 +10,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Para pedir la pena, el acreedor no está obligado a probar que ha sufrido perjuicios, ni el deudor puede eximirse de satisfacerla, acreditando que el acreedor no sufrió perjuicio alguno.
 
 Los jueces pueden reducir las penas cuando su monto desproporcionado con la gravedad de la falta que sancionan, habida cuenta del valor de las prestaciones y demás circunstancias del caso, configuran un abusivo aprovechamiento de la situación del deudor."
 
-### Interpretación
+# Interpretación
 ---

@@ -8,7 +8,7 @@ tags:
   - nota/facultad
   - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
 ---
-### Definición
+# Definición
 ---
 Este transistor tiene como componente principal a la [[Estructura Metal-Óxido-Semiconductor|estructura MOS]]
 
@@ -50,9 +50,9 @@ Elementos claves
 * Existen dos regiones [[Dopaje|dopadas]] a los lados del gate, llamadas drain y source, donde la capa de inversión permite la circulación de [[Carga eléctrica|carga]] entre ambas regiones
 * Es un dispositivo de cuatro terminales: la tensión del body es importante
 
-#### Simbología
+## Simbología
 ---
-##### Canal-N
+### Canal-N
 ---
 Dispositivo de canal-n (n-MOSFET) sobre un substrato [[Impureza aceptora#Cantidad de dopante|tipo p]] (capa de inversión de [[Electrón|electrones]])
 
@@ -160,7 +160,7 @@ Dispositivo de canal-n (n-MOSFET) sobre un substrato [[Impureza aceptora#Cantida
 \end{document}
 ```
 
-##### Canal-P
+### Canal-P
 ---
 Dispositivo de canal-p (p-MOSFET) sobre un substrato [[Impureza donora#Cantidad de dopante|tipo n]] (capa de inversión de [[Hueco|huecos]])
 
@@ -270,18 +270,18 @@ Dispositivo de canal-p (p-MOSFET) sobre un substrato [[Impureza donora#Cantidad 
 ```
 
 
-#### Regímenes de operación
+## Regímenes de operación
 ---
 El [[Transistor]] tiene 3 regímenes de operación
 * Corte ![[Corte del transistor de efecto de campo metal-óxido-semiconductor#^ef3a86]]
 * Triodo/Linea ![[Triodo del transistor de efecto de campo metal-óxido-semiconductor#^628376]]
 * Saturación ![[Saturación del transistor de efecto de campo metal-óxido-semiconductor#^c13b85]]
 
-#### Curvas características
+## Curvas características
 ---
 ![[Curvas características del MOSFET.png]]
 
-#### Características del MOSFET con $V_{BS} \ne 0~V$
+## Características del MOSFET con $V_{BS} \ne 0~V$
 ---
 Hay un cuarto terminal en los MOSFET, el body o bulk. Este terminal es especialmente importante en los [[Circuito eléctrico|circuitos]] integrados.
 
@@ -293,7 +293,7 @@ Suponiendo a la juntura MOS en inversión analizaremos el caso $V_{BS} = 0$ y lu
 
 Al modificar $V_{BS}$ cambian las condiciones de contorno del lado del [[Semiconductor]]
 
-##### Densidad de [[Carga eléctrica|carga]]
+### Densidad de [[Carga eléctrica|carga]]
 ---
 ```tikz
 \usetikzlibrary{math}
@@ -350,11 +350,11 @@ Al modificar $V_{BS}$ cambian las condiciones de contorno del lado del [[Semicon
 ```
 
 Donde la $Q_G$ se mantiene, pero la carga $Q_B$ y $Q_n$ se compensan entre sí para la [[Ecuación de continuidad#En electromagnetismo|conservación de carga]]
-##### Campo eléctrico
+### Campo eléctrico
 ---
 ![[Campo eléctrico en la capa de inversión de un MOSFET al aumentar la tensión Vbs.webp]]
 
-##### Función potencial
+### Función potencial
 ---
 ![[Función potencial en la capa de inversión de un MOSFET al aumentar la tensión Vbs.webp]]
 

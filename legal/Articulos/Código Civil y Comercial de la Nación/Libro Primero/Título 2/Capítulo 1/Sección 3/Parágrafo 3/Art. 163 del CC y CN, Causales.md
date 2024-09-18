@@ -31,7 +31,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La persona jurídica se disuelve por:
 
@@ -46,5 +46,5 @@ tags:
  i. el agotamiento de los bienes destinados a sostenerla;
  j. cualquier otra causa prevista en el estatuto o en otras disposiciones de este [[Libro Primero, Título 1, Persona humana|Título]] o de ley especial."
 
-### Interpretación
+# Interpretación
 ---

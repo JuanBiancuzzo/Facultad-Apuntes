@@ -12,7 +12,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Están prohibidos los actos de disposición del propio cuerpo que ocasionen una disminución permanente de su integridad o resulten contrarios a la ley, la moral o las buenas costumbres, excepto que sean requeridos para el mejoramiento de la salud de la persona, y excepcionalmente de otra persona, de conformidad a lo dispuesto en el ordenamiento jurídico.
 
@@ -20,5 +20,5 @@ La ablación de órganos para ser implantados en otras personas se rige por la l
 
 El consentimiento para los actos no comprendidos en la prohibición establecida en el primer párrafo no puede ser suplido, y es libremente revocable."
 
-### Interpretación
+# Interpretación
 ---

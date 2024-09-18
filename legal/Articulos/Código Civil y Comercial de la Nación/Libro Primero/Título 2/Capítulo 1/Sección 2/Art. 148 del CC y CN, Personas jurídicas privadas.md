@@ -29,7 +29,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Son [[Persona jurídica|personas jurídicas]] privadas:
 
@@ -43,7 +43,7 @@ tags:
  h. el consorcio de propiedad horizontal;
  i. toda otra contemplada en disposiciones de este [[Ley|Código]] o en otras [[Ley|leyes]] y cuyo carácter de tal se establece o resulta de su finalidad y [[Norma jurídica|normas]] de funcionamiento"
 
-### Interpretación
+# Interpretación
 ---
 La enumeración evidencia que se trata de formas asociativas y/o societarias de variadas manifestaciones, siempre en el marco conceptual de entes a los cuales el [[Ordenamiento jurídico|ordenamiento jurídico]] les confiere aptitud para adquirir derechos y contraer obligaciones para el cumplimiento de su objeto y los fines de su creación, siendo de gran relevancia el aludido carácter normativo requerido para su organización y contenido
 

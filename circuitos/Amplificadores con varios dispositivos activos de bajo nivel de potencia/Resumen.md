@@ -4,12 +4,12 @@ tags:
  - circuitos/Amplificadores-con-varios-dispositivos-activos-de-bajo-nivel-de-potencia
  - resumen
 ---
-### Índice 
+# Índice 
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 ```
 
-### Resumen
+# Resumen
 ---
 Pendiente...

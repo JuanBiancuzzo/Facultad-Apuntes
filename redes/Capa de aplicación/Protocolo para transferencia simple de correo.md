@@ -6,7 +6,7 @@ tags:
   - redes/Capa-de-aplicación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El protocolo SMPT es un sistema mucho más antiguo que [[Hypertext Transfer Protocol|HTTP]] debido a esto, el [[Protocolo|protocolo]] tiene algunas restricciones, como que todos los mensajes deben ser codificados en $7$-bit ascii
 

@@ -4,7 +4,7 @@ tags:
   - orga/Compresión
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se puede entender como la diferencia entre la [[Entropía de shannon]] y la [[Entropía cruzada]]. Pero también se puede calcular como
 $$ D_{KL}(P||Q) = \sum_i P_i \cdot \ln \left(\frac{P_i}{Q_i} \right) $$

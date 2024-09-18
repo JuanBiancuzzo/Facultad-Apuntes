@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-incendios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Si se genera abundante vapor (lo que depende de la velocidad de aplicación, tamaño de las gotas y temperatura del fuego) el aire puede ser desplazado. 
 

@@ -21,7 +21,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El contratista o prestador de servicios está obligado a:
 
@@ -31,7 +31,7 @@ tags:
  d. usar diligentemente los materiales provistos por el comitente e informarle inmediatamente en caso de que esos materiales sean impropios o tengan vicios que el contratista o prestador debiese conocer;
  e. ejecutar la obra o el servicio en el tiempo convenido o, en su defecto, en el que razonablemente corresponda según su índole."
 
-### Interpretación
+# Interpretación
 ---
 
 

@@ -6,7 +6,7 @@ tags:
   - dispo/Transistor-MOSFET
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Teniendo un [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] con $V_{GS} > V_T$, $V_{DS} < V_{GS} - V_T = V_{DS(sat)}$ con $V_{DS} > 0$
 
@@ -69,7 +69,7 @@ Los [[Electrón|electrones]] fluyen del source al drain, por lo que hay [[Corrie
 * $V_{DS} \uparrow \implies |E_y| \uparrow \implies I_D \uparrow$ 
 
 
-#### Corriente
+## Corriente
 ---
 Donde la [[Corriente eléctrica|corriente]] esta dada por 
 $$ \begin{align} 
@@ -79,7 +79,7 @@ $$ \begin{align}
 
 ^628376
 
-### Calculo de la corriente
+# Calculo de la corriente
 ---
 Geometría del problema
 
@@ -97,14 +97,14 @@ Una simple [[Ecuación diferencial ordinaria|ecuación diferencial de primer ord
 Entonces $$ I_D = \frac{W}{L} \mu_n C'_{ox} \left( V_{GS} - \frac{V_{DS}}{2} - V_T \right) V_{DS} $$
 La ecuación es válida si $V_{DS} \le V_{GS} - V_T$, dándonos una parábola de límite cuando $V_{DS} = V_{GS} - V_T$ donde la corriente es $$ I_D = \frac{W}{L} \mu_n C'_{ox} \frac{V_{DS}^2}{2} $$
 
-##### Principales dependencias 
+### Principales dependencias 
 ---
 * $V_{DS} \uparrow \implies I_D \uparrow$ - elevado [[Campo eléctrico]] transversal
 * $V_{GS} \uparrow \implies I_D \uparrow$ - elevada concentración de [[Electrón|electrones]]
 * $L \uparrow \implies I_D \downarrow$ - menor campo eléctrico transversal
 * $W \uparrow \implies I_D \uparrow$ - canal de conducción más ancho
 
-##### Polarización del canal
+### Polarización del canal
 ---
 Para entender por qué $I_D$ se curva debemos entender la despolarización del canal.
 
@@ -117,6 +117,6 @@ El impacto que tiene $V_{DS}$ sobre la corriente esta dado por
 
 Cuando $V_{DS} \uparrow$, la despolarización del canal se hace más prominente, por lo tanto $I_D$ crece más lentamente con $V_{DS}$.
 
-##### Efecto de modulación del largo del canal
+### Efecto de modulación del largo del canal
 ---
 Considerando el [[Efecto de modulación del largo del canal|efecto de modulación del largo del canal]], donde se utiliza una $L_{(efectiva)}$, produce una corriente $$ I_D = \frac{W}{L} \mu_n C'_{ox} \left( V_{GS} - \frac{V_{DS}}{2} - V_T \right) V_{DS} ~ \left( 1 + \lambda ~ V_{DS} \right) $$

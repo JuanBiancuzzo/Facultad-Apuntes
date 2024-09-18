@@ -4,7 +4,7 @@ tags:
   - señales/Transformada-de-Fourier
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[Antitransforamda de Fourier|antitransformada de Fourier]] para [[Señal#^02aea6|señales de tiempo discreto]]. $\hat{x}(n) = \mathcal{F}^{-1}\Set{X\left(e^{j\Omega}\right)}$ se define como $$ \hat{x}(n) = \frac{1}{2\pi} \int_{-\pi}^{\pi} X\left(e^{j\Omega}\right) \exp\left( j\Omega n \right) ~ d\Omega, n \in \mathbb{Z} $$ siempre que la integral esté bien definida.
 

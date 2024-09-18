@@ -5,7 +5,7 @@ tags:
   - orga/Machine-learning
   - nota/facultad
 ---
-### Lista de algoritmos de machine learning
+# Lista de algoritmos de machine learning
 ---
 * [[K-Nearest Neighbors|KNN]]
 * [[Regresión lineal]]

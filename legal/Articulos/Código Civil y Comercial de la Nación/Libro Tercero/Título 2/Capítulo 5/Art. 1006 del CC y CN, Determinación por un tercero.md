@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Las partes pueden pactar que la determinación del objeto sea efectuada por un tercero. En caso de que el tercero no realice la elección, sea imposible o no haya observado los criterios expresamente establecidos por las partes o por los usos y costumbres, puede recurrirse a la determinación judicial, petición que debe tramitar por el procedimiento más breve que prevea la legislación procesal."
 
-### Interpretación
+# Interpretación
 ---
 Así ocurre cuando la determinación del objeto se ha dejado librada al arbitrio de un tercero, en ese caso el contrato conserva su validez aun cuando el tercero
 1. No haya hecho la elección 

@@ -17,7 +17,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Son [[Persona jurídica|personas jurídicas]] públicas:
 
@@ -27,7 +27,7 @@ tags:
  
  c. la Iglesia Católica."
 
-### Interpretación
+# Interpretación
 ---
 Se advierte de la enumeración mencionada la fuerte pertenencia de dichas entidades al [[Derecho público|Derecho Público]], especialmente al Derecho Constitucional y al Derecho Administrativo, así como en el caso del [[Art. 146 del CC y CN, Personas[[Art. 146 del CC y CN, Persona jurídicas públicas#Inciso N°2|inciso 2]]ico|Derecho Internacional Público]]. Razones de organización del poder político, en especial, que la [[Constitución de la Nación|Constitución de la Nación, Ley 24.430]] estatuye la forma de gobierno republicano y federal, como históricas, la globalización, las relaciones internacionales entre los [[Estado|Estados]], etc., entre otras, motivan la consideración legal
 

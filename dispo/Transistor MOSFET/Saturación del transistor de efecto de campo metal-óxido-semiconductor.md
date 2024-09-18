@@ -6,7 +6,7 @@ tags:
   - dispo/Transistor-MOSFET
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Teniendo un [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] con $V_{GS} > V_T$, $V_{GD} < V_T$ con $V_{DS} > 0$
 
@@ -124,7 +124,7 @@ Para cuando la [[Corriente eléctrica|corriente]] $I_D$ es independiente de $V_{
 
 ^1e0c9b
 
-#### Corriente
+## Corriente
 ---
 Donde la [[Corriente eléctrica|corriente]] esta dada por 
 
@@ -136,7 +136,7 @@ $$ \begin{align}
 ^c13b85
 
 
-#### Calculo de la corriente
+## Calculo de la corriente
 ---
 Geometría del problema
 
@@ -255,14 +255,14 @@ La condición de saturación es $$ V_{GD} = V_T = V_{GS} - V_{DS} \implies V_{DS
 La corriente de Drain en esta situación puede calcularse como $$ I_{D ~ (sat)} = I_D(V_{DS} = V_{DS ~ (sat)} = V_{GS} - V_T) $$
 Donde la corriente esta dada por la [[Triodo del transistor de efecto de campo metal-óxido-semiconductor#Corriente eléctrica|corriente en triodo]] dándonos $$ I_{D ~ (sat)} = \frac{1}{2} \frac{W}{L} \mu_n C'_{ox} V_{DS ~ (sat)}^2 $$
 
-##### Curva de salida ($I_D$ vs. $V_{DS}$)
+### Curva de salida ($I_D$ vs. $V_{DS}$)
 ---
 Tenemos la [[Curva de salida|curva de salida]] sin [[Efecto de modulación del largo del canal|efecto de modulación del largo del cana]]
 
 ![[Saturación del transistor de efecto de campo metal-óxido-semiconductor#^1e0c9b]]
 
 
-##### Curva de transferencia en saturación ($I_D$ vs. $V_{GS}$)
+### Curva de transferencia en saturación ($I_D$ vs. $V_{GS}$)
 ---
 Tenemos la [[Curva de transferencia|curva de transferencia]] 
 
@@ -326,7 +326,7 @@ Tenemos la [[Curva de transferencia|curva de transferencia]]
 ```
 
 
-##### Pinch-off ($V_{DS} = V_{GS} - V_T$)
+### Pinch-off ($V_{DS} = V_{GS} - V_T$)
 ---
 La [[Carga eléctrica|carga]] del canal en el  extremo del Drain $$ Q'_n(L) = -C'_{ox} (V_{GS} - V_{DS} - V_T) = 0 $$
 ![[Pinch-off en el MOSFET.webp]]
@@ -337,7 +337,7 @@ Por lo que no hay una capa de [[Inversión de la estructura Metal-Óxido-Semicon
 * Los electrones se mueven rápido debido a que el [[Campo eléctrico|campo eléctrico]] es muy elevado
 * No hay ningún impedimento para el movimiento de los [[Carga eléctrica|portadores]].
 
-##### [[Tensión|Tensiones]] $V_{DS} > V_{GS} - V_T$
+### [[Tensión|Tensiones]] $V_{DS} > V_{GS} - V_T$
 ---
 * En el canal ya no cambia su distribución de [[Carga eléctrica|carga]] $Q'_n(y)$ ya que este queda determinado por $V_{DS ~ (sat)}$
 * El [[Campo eléctrico]] en el canal tampoco cambia porque la distribución de [[Carga eléctrica|carga]] se mantiene. Entonces $E_y(y)$ queda determinado por $V_{DS ~ (sat)}$

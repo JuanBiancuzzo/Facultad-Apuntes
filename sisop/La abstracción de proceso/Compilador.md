@@ -13,7 +13,7 @@ aliases:
   - Cross-Compilador#^cross-compilador
   - Interprete#^interprete
 ---
-### Definición
+# Definición
 ---
 Hay distintos tipos de compiladores
 * Compiladores de una sola pasada o múltiples pasadas  ^compilador-pasadas
@@ -23,7 +23,7 @@ Hay distintos tipos de compiladores
 * Cross-Compilador ^cross-compilador
     * Compila para un sistema distinto al que se utiliza para compilar
 
-#### Proceso de compilación
+## Proceso de compilación
 ---
 1. Análisis léxico
     * Identifica palabras clave o identificadores y crea una tabla de símbolos
@@ -38,7 +38,7 @@ Hay distintos tipos de compiladores
 
 Todos los pasos del proceso alteran y actualizan la tabla de símbolos
 
-##### Mapeo de acciones
+### Mapeo de acciones
 ---
 Hay tres tipos de instrucciones
 - Operaciones Aritmética-Lógicas

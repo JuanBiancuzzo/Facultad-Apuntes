@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Algunas de las herramientas utilizadas en la prevención de [[Accidente de trabajo|accidentes laborales]] son:
 1) [[Indice de siniestralidad]]

@@ -6,7 +6,7 @@ tags:
 aliases:
   - Join graphs
 ---
-### Definición
+# Definición
 ---
 Definimos la operación de ensamble entre $G$ y $H$ como $G \ast H$, donde $$ \begin{align} 
     V(G \ast H) &= V(G) + V(H) \\

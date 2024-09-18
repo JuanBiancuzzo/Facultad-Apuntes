@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Topología/2
 ---
-### Definición
+# Definición
 ---
 Dada la ecuación escalar $F(x, y) = 0$ y el punto $A = (x_0, y_0)$, si se cumple el [[Teorema Cauchy-Dini para ecuaciones escalares|Teorema de Cauchy-Dini]], con la condición adicional de que $\nabla F(A) \ne \vec{0}$
 

@@ -4,6 +4,6 @@ tags:
   - intro/Circuitos-con-resistencias
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dos o más elementos están en paralelo si están conectados a los dos mismos [[Nodo|nodos]] y tienen en consecuencia la misma [[Tensión]] entre sus terminales

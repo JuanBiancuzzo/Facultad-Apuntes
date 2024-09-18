@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - fisica-2/Circuitos-en-régimen-alterno-permanente
 ---
-### Definición
+# Definición
 ---
 El factor de [[Potencia|potencia]] por sí sólo no nos brinda toda la información necesaria 
 

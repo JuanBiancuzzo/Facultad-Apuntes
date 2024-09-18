@@ -4,7 +4,7 @@ tags:
   - estructura/Punto-flotante
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado un número representado como un [[Punto flotante|punto flotante]], se reserva algunos valores para determinar valores especiales
 

@@ -4,7 +4,7 @@ tags:
   - seguridad/Estrés-termico
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se puede determinar el tipo de trabajo de forma general usando la [[Estimación de calor metabólico]] como:
 

@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - estructura/Álgebra-de-Boole
 ---
-### Definición
+# Definición
 ---
 Es un símbolo que representa una [[Operación lógica|operación lógica]] ![[Operación lógica#Definición]]
 

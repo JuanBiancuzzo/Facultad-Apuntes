@@ -4,7 +4,7 @@ tags:
   - proba/Inferencia-estadística
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La distriución de $X$ pertenece a una familia de [[Función de distribución|distribuciones]] $\mathbb{F}$ que depende de un parámetro desconocido.
 

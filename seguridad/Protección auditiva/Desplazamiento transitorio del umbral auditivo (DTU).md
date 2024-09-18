@@ -4,7 +4,7 @@ tags:
   - seguridad/Protección-auditiva
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una elevación del nivel del [[Umbral audibilidad|umbral auditivo]] debida a la exposición al ruido en la que se aparecia un retorno progresivo al nivel anterior a la exposición.
 

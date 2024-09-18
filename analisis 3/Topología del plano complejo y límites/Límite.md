@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - analisis-2/Propiedades-de-funciones
 ---
-### Definición
+# Definición
 ---
 Sea $f:\mathbb{D} \to \mathbb{C}$ una [[analisis 2/Nomenclatura/Función.md|función]] definida en un [[Conjunto|conjunto]] $\mathbb{D} \subseteq \mathbb{C}$, sea $z_0 \in \mathbb{C}$ un [[Punto de acumulación|punto de acumulación]] de $\mathbb{D}$ y sea $l \in \mathbb{C}$. Entonces, se dice que "$f$ tiende a $l$ cuando $z$ tiende a $z_0$", o bien que "$l$ es límite de $f$ cuando $z$ tiende a $z_0$", sii:
 
@@ -17,14 +17,14 @@ z \in \mathbb{D}
 Por teorema de unicidad, podemos denotar el límite como:
 $$\lim_{z\to z_0}f(z)=l$$
 
-#### Observación
+## Observación
 ---
 * $z_0$ puede pertenecer o no al [[Dominio de una función|dominio]] de $f$. Pero aún en el caso en que $z_0 \in \mathbb{D}$, el valor de $f$ en este punto no interviene en absoluto en la definición.
 * "$z$ tiende a $z_0$ en $\mathbb{D}$", es decir, si se utiliza la expresión cinemática "$z$ se acerca a $z_0$", debe sobreentenderse "$z$ se acerca a $z_0$ sin salirse de $\mathbb{D}$"
 * La primera de las desigualdades $0 < |z - z_0| < \delta$ significa que "$z$ no puede ser $z_0$".
 
 
-### Cuestiones prácticas
+# Cuestiones prácticas
 ---
 Sea $f:\mathbb{D} \to \mathbb{C}$ una función definida en un conjunto $\mathbb{D} \subseteq \mathbb{C}$, sea $z_0 \in \mathbb{C}$ un [[Punto de acumulación|punto de acumulación]] de $\mathbb{D}$ y sea $l$ un número complejo. Entonces:
 
@@ -45,7 +45,7 @@ Sea $f:\mathbb{D} \to \mathbb{C}$ una función definida en un conjunto $\mathbb{
 	Entonces, $\lim_{z \to z_0} f(z) = 0$
 
 
-### Casos especificos
+# Casos especificos
 ---
 * Para todo par de números reales $a > 1$ y $b > 1$: $$ \lim_{n \to \infty} \frac{n ^b}{a^n} = \lim_{n \to \infty} \frac{a^n}{n!} = \lim_{n \to \infty} \frac{n!}{n^n} = 0$$
   Podemos decir que $a^n$ "le gana" a $n^b$, que $n!$ "le gana" a $a^n$ y que $n^n$ "le gana" a $n!$.

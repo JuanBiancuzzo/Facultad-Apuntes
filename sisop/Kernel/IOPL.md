@@ -4,7 +4,7 @@ tags:
   - sisop/Kernel
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El indicador IOPL se encuentra en todas las [[Procesador|Procesador]] x86. Ocupa los bits 12 y 13 en el [[Registro]] FLAGS. En modo protegido y modo largo, muestra el nivel de [[Instrucción privilegiada|privilegio]] del [[Programa]] o [[Tarea]] actual.
 

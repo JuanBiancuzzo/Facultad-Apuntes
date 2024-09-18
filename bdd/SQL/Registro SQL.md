@@ -4,11 +4,11 @@ tags:
   - bdd/SQL
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Corresponde a cada fila que compone la [[Tabla SQL|tabla]]. Ahí se componen los datos y los registros. Eventualmente pueden ser nulos en su almacenamiento
 
-#### Ejemplo
+## Ejemplo
 ---
 Teniendo la tabla
 

@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-Vectoriales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Recordando que, dados dos conjuntos $A$ y $B$, entonces:
  * $A \subseteq B$, si para cada $x \in A$ vale que $x \in B$  

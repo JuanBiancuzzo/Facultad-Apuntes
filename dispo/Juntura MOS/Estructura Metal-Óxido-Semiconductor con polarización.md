@@ -6,7 +6,7 @@ tags:
 aliases:
   - Estructura MOS con polarización
 ---
-### Definición
+# Definición
 ---
 Teniendo una [[Estructura Metal-Óxido-Semiconductor|estructura MOS]] al aplicarle una [[Tensión]], la electrostática del MOS se ve afectada, entonces la diferencia de potencial a lo largo de la estructura ahora es distinta de $0$.
 
@@ -16,18 +16,18 @@ La diferencia de potencial se manifiesta a lo largo del óxido y de la región S
 * La [[Campo eléctrico]] es cualitativamente idéntica que sin polarización (pero la cantidad de [[Carga eléctrica|carga]] distribuida es diferente)
 * $n_0 ~ p_0 = n_i^2$
 
-#### Regiones de operación
+## Regiones de operación
 ---
 Tomando que el [[Semiconductor]] es de [[Impureza aceptora#Cantidad de dopante|tipo p]] y un metal de polysilicio de [[Impureza donora#Cantidad de dopante|tipo n]], se definen 3 regiones de operación
 
-##### Acumulación
+### Acumulación
 ---
 ![[Acumulación de la estructura Metal-Óxido-Semiconductor#Definición]]
 
-##### Vaciamiento
+### Vaciamiento
 ---
 ![[Vaciamiento de la estructura Metal-Óxido-Semiconductor#Definición]]
 
-##### Inversión
+### Inversión
 ---
 ![[Inversión de la estructura Metal-Óxido-Semiconductor#Definición]]

@@ -16,7 +16,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El precio se determina por el contrato, la ley, los usos o, en su defecto, por decisión judicial.
 
@@ -24,5 +24,5 @@ Las leyes arancelarias no pueden cercenar la facultad de las partes de determina
 
 Si la obra o el servicio se ha contratado por un precio global o por una unidad de medida, ninguna de las partes puede pretender la modificación del precio total o de la unidad de medida, respectivamente, con fundamento en que la obra, el servicio o la unidad exige menos o más trabajo o que su costo es menor o mayor al previsto, excepto lo dispuesto en el [[Art. 1091 del CC y CN, Imprevisión|artículo 1091]]."
 
-### Interpretación
+# Interpretación
 ---

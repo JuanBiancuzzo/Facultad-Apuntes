@@ -4,6 +4,6 @@ tags:
   - legal/Contratos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 A diferencia de un [[Proyecto privado|proyecto privado]], un proyecto público tiene que tener como objetivo un beneficio social, satisfacer una necesidad de la comunidad.

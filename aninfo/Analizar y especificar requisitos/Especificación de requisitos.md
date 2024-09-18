@@ -4,11 +4,11 @@ tags:
   - aninfo/Analizar-y-especificar-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 [[Documentación del descubrimiento de los requisitos|Documentar]] los [[Requisito|requisitos]] para facilitar su revisión, evaluación y aprobación. Dependiendo del requisito ya sea de [[Requisito de negocio|negocio]], del [[Requisito de usuario|usuario]] o del [[Requisito de software|software]], se crea un tipo de documento distinto
 
-### Documentos
+# Documentos
 ---
 Para los [[Requisito de negocio|requisitos de negocio]] tenemos
 ![[Especificación de requisitos de negocio (BRD)#Definición]]
@@ -22,7 +22,7 @@ Para los [[Requisito de software|requisitos de software]] tenemos
 Para los [[Requisito del sistema|requisitos de sistema]] tenemos
 ![[Especificación de requisitos de sistema#Definición]]
 
-#### Atributos de una especificación bien escrita
+## Atributos de una especificación bien escrita
 ---
 * Correcta
 	* Reflejar las verdaderas necesidad de los usuarios

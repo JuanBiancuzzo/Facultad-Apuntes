@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-ambiente-laboral
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 * Se debe determinar la exposición de los empleados a las nanopartículas.
 * Además de los métodos clásicos, también se debe determinar la concentración del número de partículas y, si es posible, su distribución de tamaño.

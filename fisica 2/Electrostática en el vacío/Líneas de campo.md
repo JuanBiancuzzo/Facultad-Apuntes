@@ -4,13 +4,13 @@ tags:
  - fisica-2/Electrostática-en-el-vacío
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son curvas imaginarias, de modo que su tangente en todo punto del espacio sea la dirección del [[Campo vectorial|campo vectorial]]. Al representar la dirección del campo, se pierde la información del módulo
 
 Para remplazar esta información faltante usamos la densidad de líneas dibujadas, la cual es proporcional a la intensidad del campo. Cuantas más líneas haya alrededor de un punto , mayor es la intensidad del campo en ese punto
 
-#### Caso campo eléctrico
+## Caso campo eléctrico
 ---
 Las líneas de [[Campo eléctrico|campo]] son salientes de las [[Carga eléctrica|cargas]] positivas (fuentes), y entrantes en las cargas negativas (sumidero)
 
@@ -270,6 +270,6 @@ Las líneas de [[Campo eléctrico|campo]] son salientes de las [[Carga eléctric
 \end{document}
 ```
 
-#### Caso campo magnético
+## Caso campo magnético
 ---
 Las líneas de [[Campo de inducción magnética|campo]] son salientes del polo positivo (fuentes), y entrantes en el polo negativo (sumidero)

@@ -6,11 +6,11 @@ tags:
 referencias:
   - "191"
 ---
-### Definición
+# Definición
 ---
 En matemáticas, álgebra de conjuntos es el estudio de las operaciones básicas que pueden realizarse con conjuntos, como la [[Operador OR|unión]], [[Operador AND|intersección]] y [[Operador NOT|complementación]] <sup><a href="#ref-191" style="color: inherit; text-decoration: none;">[191]</a></sup> 
 
-#### Equivalencias útiles
+## Equivalencias útiles
 ---
 Muchas veces se utilizan identidades para reescribir una expresión de forma que resulta más conveniente para trabajar
 
@@ -27,7 +27,7 @@ Es más simple trabajar con expresiones que están iguales al vacío (o la ident
 2. $X'Y + XY' = \emptyset$
 3. $(X' + Y)(X + Y') = I$
 
-#### Identidades
+## Identidades
 ---
 * [[Conmutatividad|Conmutatividad]] ![[Conmutatividad#^90c16b]]
 * [[Distributividad|Distributividad]] ![[Distributividad#^2904a4]]
@@ -40,7 +40,7 @@ Es más simple trabajar con expresiones que están iguales al vacío (o la ident
 * [[Idempotente|Idempotencia]] ![[Idempotente#^13da65]]
 * [[Absorción|Absorción]] ![[Absorción#^bf732a]]
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

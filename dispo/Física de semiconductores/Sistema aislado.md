@@ -4,6 +4,6 @@ tags:
   - dispo/Física-de-semiconductores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un [[Sistema|sistema]] en equilibrio no intercambia [[Energía|energía]] con el medio que lo rodea

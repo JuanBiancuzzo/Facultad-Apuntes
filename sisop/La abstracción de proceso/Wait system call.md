@@ -4,7 +4,7 @@ tags:
   - sisop/La-abstracción-de-proceso
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[System call|system call]] `wait()` permite sincronizar [[Proceso|procesos]], esperando a que finalice el proceso hijo.
 

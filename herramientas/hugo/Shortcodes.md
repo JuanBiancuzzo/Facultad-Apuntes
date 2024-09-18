@@ -10,7 +10,7 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
 ```
-### Definición
+# Definición
 ---
 Los shortcodes en [[Herramientas/Hugo/Índice|Índice]] son como función la cual le podes pasar parámetros, pero estas funciones devuelven código HTML para insertar en el contenido. Su sintaxis para llamarlas es
 ```
@@ -20,7 +20,7 @@ Los shortcodes en [[Herramientas/Hugo/Índice|Índice]] son como función la cua
 Hugo ya tiene muchos shortcode que se pueden encontrar en la [documentación](https://gohugo.io/templates/shortcode/) y la forma de crearlo es la siguiente
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

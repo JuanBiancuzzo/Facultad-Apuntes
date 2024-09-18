@@ -4,7 +4,7 @@ tags:
   - algebra-2/Transformaciones-lineales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La preimagen es bastante parecida a la [[Imagen de una transformación lineal]], pero en la preimagen es el conjunto de vectores para los cuales existe una transformación lineal de ellos, lo que en funciones llamaríamos dominio de la función.
 
@@ -14,5 +14,5 @@ $$T^{-1}(Y) := \{v \in \mathbb{V} : T(v) \in Y \}$$
 Algo que puede ser interesante de ver es como el [[Núcleo de una transformación lineal]] se puede expresar como la preimagen del $0_{\mathbb{W}}$
 $$Nu(T)=T^{-1}(\{0_\mathbb{W} \})$$
 
-#### Procedimiento
+## Procedimiento
 Para poder encontrarlo, lo que tenemos que encontrar el vector genérico de la transformación lineal, y eso lo igualamos al vector, o al espacio generado por el subespacio 

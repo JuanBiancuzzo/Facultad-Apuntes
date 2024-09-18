@@ -4,7 +4,7 @@ tags:
   - algebra-2/Transformaciones-lineales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Teniendo dos subespacios $S_1$ y $S_2$ en [[Suma directa entre subespacios]], tal que generen el espacio vectorial $\mathbb{V}$. Recordando, $v = v_1 + v_2$ si $v_1 \in S_1$ y $v_2 \in S_2$
 
@@ -19,7 +19,7 @@ Con $\{v_1, v_2, \cdots, v_n \}$ es base de $S_1$, y $\{w_1, w_2, \cdots, w_m \}
 $$\Pi_{S_1, S_2}(v_1) = v_1, \Pi_{S_1, S_2}(v_2) = v_2, \cdots, \Pi_{S_1, S_2}(v_n) = v_n$$
 $$\Pi_{S_1, S_2}(w_1) = 0_\mathbb{V}, \Pi_{S_1, S_2}(w_2) = 0_\mathbb{V}, \cdots, \Pi_{S_1, S_2}(w_m) = 0_\mathbb{V}$$
 
-### Propiedades 
+# Propiedades 
  * $Im(\Pi_{S_1, S_2}) \oplus Nu(\Pi_{S_1, S_2}) = \mathbb{V}$
  * $\Pi_{S_1, S_2}$ es *idempotente*, es decir, $\Pi^2_{S_1, S_2} = \Pi_{S_1, S_2} \circ \Pi_{S_1, S_2} = \Pi_{S_1, S_2}(\Pi_{S_1, S_2}) = \Pi_{S_1, S_2}$
  * $\Pi_{S_1, S_2} + \Pi_{S_2, S_1} = \mathbb{I}_\mathbb{V}$ 

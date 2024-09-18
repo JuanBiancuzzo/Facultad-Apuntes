@@ -6,7 +6,7 @@ tags:
 aliases:
   - Lógica proposicional
 ---
-### Definición
+# Definición
 ---
 Para una [[Proposición|proposición]] $p$, entonces tendremos $4$ [[Función proposicional|funciones]] $f(p)$. Podemos visualizar esta cuatro funciones de una tabla de verdad 
 
@@ -35,7 +35,7 @@ p' & q' & p \uparrow q & p \downarrow q & p \leftrightarrow q & (p \rightarrow q
 0 & 0 & 0 & 0 & 1 & 0 & 0 & 1 \\\hline
 \end{array} $$
 
-#### Operaciones
+## Operaciones
 ---
 El álgebra proposicional tiene las siguientes operaciones
 * [[Operador condicional|Operador condicional]] $(\to)$
@@ -44,7 +44,7 @@ El álgebra proposicional tiene las siguientes operaciones
 * [[Operador NOR|Operador NOR]] $(\downarrow)$
 * [[Operador XOR|Operador XOR]] $(\oplus)$
 
-#### Identidades
+## Identidades
 ---
 * [[Conmutatividad|Conmutatividad]] ![[Conmutatividad#^370681]]
 * [[Distributividad|Distributividad]] ![[Distributividad#^5d5bd9]]

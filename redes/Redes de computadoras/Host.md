@@ -4,7 +4,7 @@ tags:
   - redes/Redes-de-computadoras
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se define como cualquier dispositivo conectado al [[Internet|internet]], también conocido como end system.
 

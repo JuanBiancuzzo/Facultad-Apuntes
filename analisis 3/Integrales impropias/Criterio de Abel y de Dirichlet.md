@@ -4,7 +4,7 @@ tags:
   - analisis-3/Integrales-impropias
   - nota/facultad
 ---
-### Definición Abel
+# Definición Abel
 ---
 Sean $u : [a, \infty) \to \mathbb{R}$ y $\alpha : [a, \infty) \to \mathbb{R}$ [[Función continua|funciones continuas]] tales que 
 1) $\alpha$ es monotona y acotada
@@ -13,7 +13,7 @@ Sean $u : [a, \infty) \to \mathbb{R}$ y $\alpha : [a, \infty) \to \mathbb{R}$ [[
 Entonces la integral $\int_a^\infty \alpha(x) \cdot u(x) \cdot dx$ converge.
 
 
-### Definición Dirichlet
+# Definición Dirichlet
 ---
 Sean $u : [a, \infty) \to \mathbb{R}$ y $\alpha : [a, \infty) \to \mathbb{R}$ [[Función continua|funciones continuas]] tales que 
 1) $\alpha$ es monotona decreciente

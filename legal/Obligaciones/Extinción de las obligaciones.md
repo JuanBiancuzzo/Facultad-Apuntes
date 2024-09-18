@@ -4,11 +4,11 @@ tags:
   - legal/Obligaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se dividen en formas en las que satisfacen al acreedor y las que no lo satisfacen
 
-#### Medios que satisfacen al acreedor
+## Medios que satisfacen al acreedor
 ---
 * Pago
 * Novación ![[Sección 3, Novación#Artículos]]
@@ -19,7 +19,7 @@ Se dividen en formas en las que satisfacen al acreedor y las que no lo satisface
 	* Ejemplo: Arreglos extrajudiciales
 * Confusión![[Sección 2, Confusión#Artículos]]
 
-#### Medios que no satisfacen al acreedor
+## Medios que no satisfacen al acreedor
 ---
 * Imposibilidad de pago ![[Sección 6, Imposibilidad de cumplimiento#Artículos]]
 * Remisión de la deuda, renuncia de los derechos del acreedor ![[Sección 5, Renuncia y remisión#Artículos]]

@@ -4,7 +4,7 @@ tags:
   - seguridad/Residuos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado [[Residuo peligroso y especial|residuos peligrosos]] se tiene las siguientes categorías de control, ejemplo:
 * Desechos de la producción y preparación de productos farmaceuticos

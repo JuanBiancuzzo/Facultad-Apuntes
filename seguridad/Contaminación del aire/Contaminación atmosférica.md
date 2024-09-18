@@ -4,20 +4,20 @@ tags:
   - seguridad/Contaminación-del-aire
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la presencia en el aire de cualquier agente:
 
-##### Física
+### Física
 [[Ruido]], [[Radiación ionizante|radiaciones ionizantes]] y [[Radiación no ionizante|no ionizantes]]
 
-##### Químico
+### Químico
 Gases, vapores y partículas
 
-##### Biológico
+### Biológico
 [[Bacteria|Bacterias]] y virus
 
-### Origen
+# Origen
 ---
 Puede ser de origen natural:
 * Erupciones volcánicas

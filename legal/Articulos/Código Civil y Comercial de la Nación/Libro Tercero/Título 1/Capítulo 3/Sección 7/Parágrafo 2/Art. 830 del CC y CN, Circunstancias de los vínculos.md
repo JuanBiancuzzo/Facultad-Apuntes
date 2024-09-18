@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La incapacidad y la capacidad restringida de alguno de los acreedores o deudores solidarios no perjudica ni beneficia la situación de los demás; tampoco la existencia de modalidades a su respecto."
 
-### Interpretación
+# Interpretación
 ---

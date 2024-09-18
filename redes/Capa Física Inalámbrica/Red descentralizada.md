@@ -6,5 +6,5 @@ tags:
 aliases:
   - Ad hoc
 ---
-### Definición
+# Definición
 ---

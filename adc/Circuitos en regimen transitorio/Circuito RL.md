@@ -4,11 +4,11 @@ tags:
   - adc/Circuitos-en-regimen-transitorio
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un [[Circuito eléctrico|circuito]] RL de [[Circuito de primer orden|primer orden]] es un circuito eléctrico compuesto de un [[Inductor|inductor]] y un [[Capacitor|capacitor]]
 
-##### Esquematización
+### Esquematización
 ---
 
 ```tikz
@@ -47,7 +47,7 @@ Un [[Circuito eléctrico|circuito]] RL de [[Circuito de primer orden|primer ord
 ```
 
 
-#### Análisis
+## Análisis
 ---
 Al cerrar la llave (en el instante $t=0$), por [[Ley de nodos de Kirchhoff]] de [[Malla]], se puede deducir que $$ \begin{align} 
 	         v_R(t) &+ v_L(t) = 0 \\

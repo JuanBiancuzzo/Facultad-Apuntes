@@ -4,7 +4,7 @@ tags:
   - fisica-2/Electrostática-en-conductores-y-dieléctricos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Está formado por dos [[Carga eléctrica|cargas]] $q$, del mismo [[Norma|módulo]] y signo opuesto, separadas una [[Distancia|distancia]] $\delta$. Nos interesa el [[Campo eléctrico|campo]] del dipolo para valores mucho mayores que $\delta$
 

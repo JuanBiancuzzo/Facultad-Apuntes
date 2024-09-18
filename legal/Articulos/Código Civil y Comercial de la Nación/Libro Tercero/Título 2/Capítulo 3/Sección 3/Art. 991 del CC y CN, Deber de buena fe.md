@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Durante las tratativas preliminares, y aunque no se haya formulado una oferta, las partes deben obrar de buena fe para no frustrarlas injustificadamente. El incumplimiento de este deber genera la responsabilidad de resarcir el daño que sufra el afectado por haber confiado, sin su culpa, en la celebración del contrato."
 
-### Interpretación
+# Interpretación
 ---

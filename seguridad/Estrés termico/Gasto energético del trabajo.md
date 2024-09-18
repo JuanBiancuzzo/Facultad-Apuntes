@@ -4,36 +4,36 @@ tags:
   - seguridad/Estrés-termico
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En las siguientes 5 categorías, se define el gasto energético
 
-##### Reposada
+### Reposada
 * Sentado sosegadamente
 * Sentado con movimiento moderado de los brazos
 
-##### Ligera
+### Ligera
 * Sentado con movimientos moderados de brazos y piernas
 * De pie, con un trabajo ligero o moderado en una máquina o mesa utilizando principalmente los brazos
 * Utilizando una sierra de mesa
 * De pie, con un trabajo ligero o moderado en una máquina o banco y algún movimiento a su alrededor
 
-##### Moderada
+### Moderada
 * Limpiar estando de pie
 * Levantar o empujar moderadamente estando en movimiento
 * Andar en llano a $6~km/h$ llevando $3~kg$ de peso
 
-##### Pesada
+### Pesada
 * Carpintero aserrando
 * Mover con una pala tierra seca
 * Trabajo fuerte de montaje discontinuo
 * Levantamiento fuerte intermitente empujando o tirando
 
-##### Muy pesado
+### Muy pesado
 * Mover con una pala tierra pesada
 
 
-#### Dependiendo del trabajo su temperatura admitida
+## Dependiendo del trabajo su temperatura admitida
 ---
 Para cuando el trabajador esta aclimatado, la [[Temperatura]] en $(\degree C)$ umbral de [[Temperatura del globo bulbo húmedo|TGBH]] es 
 | Exigencia del trabajo     | Ligero | Moderado | Pesado | Muy pesado |

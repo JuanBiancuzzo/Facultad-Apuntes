@@ -4,7 +4,7 @@ tags:
  - redes/Capa-de-Red
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Este [[Protocolo|protocolo]] define $7$ tipos de mensajes
 

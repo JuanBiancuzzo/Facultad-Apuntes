@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Topología/2
 ---
-### Definición
+# Definición
 ---
 Como con funciones de una variable, donde la derivada nos daba la pendiente de la recta tangente, por lo tanto podríamos construirla
 
@@ -20,7 +20,7 @@ $$ (\vec{X} - \vec{a}) \cdot \vec{n}_0 = 0 $$
 
 Donde $\vec{n}_0 = \vec{F}'_u(u_0, v_0) \times \vec{F}'_v(u_0, v_0)$
 
-#### Nota
+## Nota
 ---
 Si $f$ es [[Diferenciable|diferenciable]], entonces [[Gradiente|Gradiente]] es perpendicular al [[Conjunto de nivel|conjunto de nivel]] de $f(x_0, y_0)$
 

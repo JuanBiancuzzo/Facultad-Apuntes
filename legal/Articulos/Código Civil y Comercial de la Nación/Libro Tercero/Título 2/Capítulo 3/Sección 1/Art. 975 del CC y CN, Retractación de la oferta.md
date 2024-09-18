@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La oferta dirigida a una persona determinada puede ser retractada si la comunicación de su retiro es recibida por el destinatario antes o al mismo tiempo que la oferta."
 
-### Interpretación
+# Interpretación
 ---

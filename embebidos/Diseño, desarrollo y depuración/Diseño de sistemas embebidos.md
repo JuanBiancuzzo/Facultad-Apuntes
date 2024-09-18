@@ -4,7 +4,7 @@ tags:
  - embebidos/Diseño-desarrollo-y-depuración
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El diseño de [[Sistema#^c520d7|sistema]] [[Embebido|embebido]] se orienta a
 * Reducir

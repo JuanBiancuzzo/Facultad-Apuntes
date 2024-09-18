@@ -4,7 +4,7 @@ tags:
   - dispo/Amplificador-emisor-y-source-común
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Generalmente, en cualquier [[Circuito eléctrico|circuito]] se necesitan múltiples [[Fuente de corriente|fuentes]] que absorban y entreguen [[Corriente eléctrica|corriente]]. Éstas se puede construir a partir de una única [[Fuente de corriente|fuente de corriente]]
 
@@ -13,7 +13,7 @@ Generalmente, en cualquier [[Circuito eléctrico|circuito]] se necesitan múltip
 $$ I_{out ~ 1} = I_{REF} ~ \frac{\left( \frac{W}{L} \right)_1}{\left( \frac{W}{L} \right)_R} $$ $$ I_{out ~ 2} = I_{REF} ~ \frac{\left( \frac{W}{L} \right)_2}{\left( \frac{W}{L} \right)_R} $$
 $$ I_{out ~ 4} = I_{out ~ 1} ~ \frac{\left( \frac{W}{L} \right)_4}{\left( \frac{W}{L} \right)_3} = I_{REF} ~ \frac{\left( \frac{W}{L} \right)_4 ~ \left( \frac{W}{L} \right)_1}{\left( \frac{W}{L} \right)_3 ~ \left( \frac{W}{L} \right)_R} $$
 
-#### Efecto de modulación del largo del canal
+## Efecto de modulación del largo del canal
 ---
 Veamos un ejemplo con una [[Copia de corriente espejo simple#Fuente espejo con P-MOSFET|copia de corriente espejo implementado con MOSFET de canal P]]
 
@@ -21,7 +21,7 @@ Veamos un ejemplo con una [[Copia de corriente espejo simple#Fuente espejo con P
 
 La corriente normalizada ya no es igual para $M_1$ y $M_2$ por el [[Efecto de modulación del largo del canal|efecto de modulación del largo del canal]]. Entonces, la copia de corriente no es exacta.
 
-#### Cómo se implementa $I_{REF}$
+## Cómo se implementa $I_{REF}$
 ---
 La forma más sensilla es reemplazar la fuente ideal por una [[Resistencia|resistencia]] ($R_{REF}$)
 

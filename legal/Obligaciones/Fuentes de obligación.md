@@ -4,11 +4,11 @@ tags:
   - legal/Obligaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se puede dividir en tradicionales y modernas
 
-#### Tradicionales
+## Tradicionales
 ---
 * [[Ley|Ley]]
 * [[Contrato como fuente de obligación|Contrato]]
@@ -16,7 +16,7 @@ Se puede dividir en tradicionales y modernas
 * [[Acto voluntario#Acto ilícito|Delito]]
 * [[Cuasidelito|Cuasidelito]]
 
-#### Modernas
+## Modernas
 ---
 * [[Enriquecimiento sin causa|Enriquecimiento sin causa]]
 * [[Art. 10 del CC y CN, Abuso del derecho|Abuso del derecho]]

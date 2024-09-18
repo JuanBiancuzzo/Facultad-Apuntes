@@ -4,6 +4,6 @@ tags:
   - seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un suceso no deseado que tiene la potencialidad de conducir a un [[Accidente de trabajo|accidente]], pero no causa [[Lesión|lesiones]].

@@ -13,7 +13,7 @@ previo: "[[legal/Articulos/Regimen legal de la propiedad intelectual/Parte 8/Par
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "En el Registro Nacional de Propiedad Intelectual deberá depositar el editor de las obras comprendidas en el [[Art. 1 del regimen legal de la propiedad intelectual|artículo 1°]], tres ejemplares completos de toda obra publicada, dentro de los tres meses siguientes a su aparición. Si la edición fuera de lujo o no excediera de cien ejemplares, bastará con depositar un ejemplar.
 
@@ -23,7 +23,7 @@ Para las pinturas, arquitecturas, esculturas, etcétera, consistirá el depósit
 
 Para las películas cinematográficas, el depósito consistirá en una relación del argumento, diálogos, fotografías y escenarios de sus principales escenas."
 
-### Interpretación
+# Interpretación
 ---
 
 

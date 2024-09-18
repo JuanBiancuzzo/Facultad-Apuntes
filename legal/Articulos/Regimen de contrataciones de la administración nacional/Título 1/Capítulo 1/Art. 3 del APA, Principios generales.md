@@ -35,7 +35,7 @@ previo: "[[legal/Articulos/Regimen de contrataciones de la administración nacio
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los principios generales a los que deberá ajustarse la gestión de las contrataciones, teniendo en cuenta las particularidades de cada una de ellas, serán:
 
@@ -48,7 +48,7 @@ tags:
  
 Desde el inicio de las actuaciones hasta la finalización de la ejecución del contrato, toda cuestión vinculada con la contratación deberá interpretarse sobre la base de una rigurosa observancia de los principios que anteceden."
 
-### Interpretación
+# Interpretación
 ---
 * Razonabilidad del proyecto y eficiencia de la contratación para cumplir con el interés público comprometido y el resultado esperado
 * Promoción de la concurrencia de interesados y de la competencia entre oferentes

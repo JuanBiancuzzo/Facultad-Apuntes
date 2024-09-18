@@ -4,7 +4,7 @@ tags:
   - dispo/Juntura-MOS
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Existe un $V_{GB}$, en una [[Estructura Metal-Óxido-Semiconductor con polarización|estructura MOS polarizada]], tal que la densidad de minoritarios crece lo suficiente como para ser comparable con la densidad de [[Impureza aceptora|impurezas]].
 
@@ -14,7 +14,7 @@ Se define la situación umbral cuando $n(0) = N_a$. Por lo que superando el umbr
 
 ![[Concentración de portadores en una estructura metal óxido semiconductor (MOS) en situación umbral.webp]]
 
-#### Cálculo de la [[Tensión|tensión]] umbral
+## Cálculo de la [[Tensión|tensión]] umbral
 ---
 Calculemos la tensión umbral ($V_T$), es decir, la tensión de compuerta que produce $n(0) = N_a$
 
@@ -32,7 +32,7 @@ Ahora encontrando la caída de potencial en el óxido queda $$ V_{ox}(V_T) = \fr
 
 Finalmente, sumamos las caídas de potencial en toda la estructura $$ V_T + \phi_B = V_B(V_T) + V_{ox}(V_T) = -2\phi_p + \gamma \sqrt{-2 \phi_p} $$
 Siendo $\phi_B = -V_{FV}$ ([[Tensión de Flatband|tensión de Flatband]]), se despeja $V_T$: $$ V_T = V_{FB} - 2\phi_p + \gamma \sqrt{-2 \phi_p} $$
-#### Para un MOSFET
+## Para un MOSFET
 ---
 Supongamos $V_{GS} = V_T$. En esta situación el valor de $V_T$ podría despejarse de la igualdad $$ V_T - V_{FB} = - 2\phi_p + \gamma \sqrt{-2 \phi_p} $$ 
 Si aplicamos la tensión $V_{BS}$, la misma afecta la caída del [[Tensión|potencial]] en el [[Semiconductor]], dando que $V_B = -2 \phi_p$ pasa a ser $V_B = -2 \phi_p - V_{BS}$

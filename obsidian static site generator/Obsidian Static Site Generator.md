@@ -5,16 +5,16 @@ tags:
   - obsidian-static-site-generator
 estado: Recién empezando
 ---
-### Descripción
+# Descripción
 ---
 En este proyecto vamos a crear una herramienta que permita transformar archivos [[Markdown|markdown]] creados en Obsidian, y genere los archivos [[Lenguaje de marcado de hipertexto|HTML]], CSS y los archivos de [[Javascript|Javascript]], necesarios usando [[herramientas/hugo/Índice|Hugo]].
 
-### Presentar
+# Presentar
 ---
 
 
 
-### Notas
+# Notas
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarNotas", { proyecto: dv.current() });

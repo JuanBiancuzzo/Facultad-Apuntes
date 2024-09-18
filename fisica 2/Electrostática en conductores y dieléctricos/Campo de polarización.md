@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - electro/Campos-eléctricos-y-magnéticos
 ---
-### Definición
+# Definición
 ---
 Se define como el [[Campo eléctrico|campo eléctrico]] generado en un [[Dieléctrico|dieléctrico]]
 

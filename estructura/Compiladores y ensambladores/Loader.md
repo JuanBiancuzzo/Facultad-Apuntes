@@ -7,7 +7,7 @@ tags:
 aliases:
   - Relocating loader#Realocating Loader
 ---
-### Definición
+# Definición
 ---
 En ambientes multitarea la [[Random Access Memory|RAM]] es compartida entre varios procesos
 
@@ -15,6 +15,6 @@ El loader debe relocalizar todos los símbolos relocalizables
 
 Algunos loaders tienen la capacidad de combinar módulos en tiempos de carga (loader con capacidad de [[Linker|linkeo]])
 
-#### Realocating Loader
+## Realocating Loader
 ---
 Linkea en tiempo de carga y carga el programa en memoria para su ejecución

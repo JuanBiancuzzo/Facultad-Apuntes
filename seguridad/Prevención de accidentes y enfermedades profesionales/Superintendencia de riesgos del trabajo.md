@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Depende del [[Ministerio de Trabajo]] y [[Seguridad Social]]:
 * Regula el sistema de [[Riesgo del trabajo]]

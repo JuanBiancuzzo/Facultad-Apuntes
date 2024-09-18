@@ -4,6 +4,6 @@ tags:
   - estructura/Sistemas-numéricos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la cantidad de [[Símbolo|símbolos]] que utiliza la [[Sistemas de numeración|representación numérica]]

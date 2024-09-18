@@ -4,7 +4,7 @@ tags:
   - numerico/Errores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es el error que aparece por las mediciones, por ejemplo 
 $$ \pi = 3.14 + \text{Error inherente} $$

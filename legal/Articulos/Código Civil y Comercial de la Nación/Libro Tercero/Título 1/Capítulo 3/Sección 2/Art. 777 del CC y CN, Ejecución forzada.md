@@ -17,7 +17,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El incumplimiento imputable de la prestación le da derecho al acreedor a:
 
@@ -25,5 +25,5 @@ tags:
  b. hacerlo cumplir por terceros a costa del deudor;
  c. reclamar los daños y perjuicios."
 
-### Interpretación
+# Interpretación
 ---

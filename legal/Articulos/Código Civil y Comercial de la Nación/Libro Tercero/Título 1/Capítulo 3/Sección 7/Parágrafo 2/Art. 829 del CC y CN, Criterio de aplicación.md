@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Con sujeción a lo dispuesto en este [[Parágrafo 2, Obligaciones solidarias. Disposiciones generales|parágrafo]] y en los dos siguientes, se considera que cada uno de los codeudores solidarios, en la solidaridad pasiva, y cada uno de los coacreedores, en la solidaridad activa, representa a los demás en los actos que realiza como tal."
 
-### Interpretación
+# Interpretación
 ---

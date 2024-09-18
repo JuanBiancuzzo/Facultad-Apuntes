@@ -4,21 +4,21 @@ tags:
   - seguridad/Prevención-de-incendios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La espuma es, un [[Agente extintor]], la dispersión de un gas en un líquido, formando burbujas compactas de menor densidad que los líquidos inflamables donde se las vierte, en forma de manto. 
 
 Actúan por:
 
-##### Sofocación
+### Sofocación
 ![[Extinción por sofocación#Definición]]
 
 
-##### Enfriamiento
+### Enfriamiento
 ![[Extinción por enfriamiento#Definición]]
 
 
-### Limitaciones
+# Limitaciones
 Las espumas en general tienen las siguientes limitaciones:
 * Se debe tener en cuenta que no son muy efectivas en incendios de aceites calientes y no son aptas para gases licuados o sustancias que se encuentran a temperaturas equivalentes al punto de [[Ebullición|ebullición]] del agua.
 

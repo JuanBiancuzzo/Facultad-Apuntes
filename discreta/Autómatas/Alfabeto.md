@@ -4,6 +4,6 @@ tags:
  - discreta/Autómatas
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un [[Conjunto|conjunto]] finito no vacío de elementos se denomina alfabeto, es designado con $\Sigma$

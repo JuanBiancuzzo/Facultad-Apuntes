@@ -4,7 +4,7 @@ tags:
   - analisis-3/Propiedades-de-las-funciones-holomorfas
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $f : D \to \mathbb{C}$ una función [[Holomorfa|holomorfa]] en un [[Conjunto abierto|abierto]] $D \subseteq \mathbb{C}$. Un cero de $f$ es un punto $z_0 \in D$ tal que $f(z_0) = 0$. Ahora, por ser $f$ holomorfa en $D$, es [[Función analítica|analítica]] en este abierto, por lo que admite un desarrollo en [[Serie de Taylor|serie de Taylor]], para todo $z_0 \in D(z_0, r)$ con $r > 0$
 

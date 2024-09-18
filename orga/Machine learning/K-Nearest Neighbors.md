@@ -4,7 +4,7 @@ tags:
   - orga/Machine-learning
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Teniendo $m$ puntos en $n$ dimensiones, podemos usar KNN para [[Problema de clasificación|clasificar]] o para [[Problema de regresión|regresión]]. Este modelo tiene un [[Hiper-parámetros de un modelo|hiper-parámetro]] $k$ el cual indica cuantos vecinos alrededor, del nuevo valor a clasificar, vamos a utilizar.
 

@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - algo-1/Lenguaje-C
 ---
-### Definición
+# Definición
 ---
 Esta [[Estructura de control iterativa|estructura de control]] se utiliza cuando se conoce la cantidad de iteraciones previamente y esta cantidad es un número finito de repeticiones
 

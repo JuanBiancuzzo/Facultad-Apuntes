@@ -13,11 +13,11 @@ aliases:
   - HAL para un entrada-salida de propósito general
   - HAL para un GPIO
 ---
-### Definición
+# Definición
 ---
 Es una [[Hardware Abstraction Layer|HAL]] específica para la conexión de periféricos a partir de un [[General Purpose Input Output|GPIO]]
 
-##### Para la placa STM32
+### Para la placa STM32
 ---
 El formato del [[Registro|registro]] de modo de puerto GPIO para los puertos `A`, ..., `E` y `H`
 

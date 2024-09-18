@@ -4,7 +4,7 @@ tags:
   - orga/Machine-learning
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un conjunto de [[Neurona|neuronas]] que pueden estar en capas, para generar uno o varios valores. 
 

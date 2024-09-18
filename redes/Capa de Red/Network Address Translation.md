@@ -6,7 +6,7 @@ tags:
   - redes/Capa-de-Red
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Para enviar [[Paquete|paquetes]] a través de la red local, se utiliza las direcciones correspondientes a una [[Red privada|red privada]]
 

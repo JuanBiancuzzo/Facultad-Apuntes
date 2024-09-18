@@ -4,7 +4,7 @@ tags:
   - dispo/Juntura-PN
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En las [[Juntura PN|junturas PN]] la [[Recombinación]] y la [[Generación]] ocurren principalmente en las superficies
 * En las superficies se interrumpe la [[Red cristalina|estructura cristalina]] perfectamente periódica

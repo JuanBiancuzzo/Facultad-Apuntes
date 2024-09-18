@@ -4,7 +4,7 @@ tags:
   - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se pueden identificar por tener tres bornes donde uno va a común (a tierra) y otras dos no
 
@@ -48,7 +48,7 @@ Estas están caracterizadas por dos curvas
 * [[Curva de transferencia|Curva de transferencia]]
 * [[Curva de salida|Curva de salida]]
 
-#### Transistores como dispositivos de control de potencia
+## Transistores como dispositivos de control de potencia
 ---
 Tenemos 3 tipos de [[Transistor|transistores]] que nos vamos a analizar
 * [[Transistor bipolar de juntura|TBJ]]

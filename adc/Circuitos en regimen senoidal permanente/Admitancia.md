@@ -4,7 +4,7 @@ tags:
   - adc/Circuitos-en-regimen-senoidal-permanente
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 [[Ley de Ohm]] en forma [[Fasor|fasorial]] 
 

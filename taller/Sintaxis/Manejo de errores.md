@@ -4,7 +4,7 @@ tags:
   - taller/Sintaxis
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Siempre que una [[Función|función]] devuelva un [[Resultado]], significa que puede ocurrir un error y por lo tanto hay que manejarlo. En el caso de ser una [[Opción]] también hay que manejarlo.
 

@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El requerimiento dispuesto en el [[Art. 1088 del CC y CN, Presupuestos de la resolución por cláusula resolutoria implícita|artículo 1088]] no es necesario en los casos en que la ley faculta a la parte para declarar unilateralmente la extinción del contrato, sin perjuicio de disposiciones especiales."
 
-### Interpretación
+# Interpretación
 ---

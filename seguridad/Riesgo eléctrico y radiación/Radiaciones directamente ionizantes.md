@@ -4,6 +4,6 @@ tags:
   - seguridad/Riesgo-eléctrico-y-radiación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Constituidas por partículas cargadas [[Electricidad|eléctricamente]] ([[Radiación ionizante#Alfa|alfa]] y [[Radiación ionizante#Beta|beta]]), pueden ionizar directamente los [[Átomo|átomos]] del material con el que interactúan.

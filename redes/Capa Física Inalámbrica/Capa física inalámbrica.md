@@ -6,7 +6,7 @@ tags:
 aliases:
   - Wireless host
 ---
-### Definición
+# Definición
 ---
 En una red inalámbrica, podremos identificar los siguientes elementos
 
@@ -21,7 +21,7 @@ En una red inalámbrica, podremos identificar los siguientes elementos
 * Network Infrastructure
     * Esta es la red mayor a la cual un host inalámbrico puede desear conectarse
 
-#### Clasificación
+## Clasificación
 ---
 Una vez descritas las piezas de una red inalámbrica, podremos clasificarlas según dos criterios
 

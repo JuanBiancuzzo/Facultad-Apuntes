@@ -4,15 +4,15 @@ tags:
   - legal/Contratos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Veremos seguidamente las causales de extinción del contrato de servicios.
 
-#### Muerte de una de las partes. Desistimiento unilateral
+## Muerte de una de las partes. Desistimiento unilateral
 ---
 Las vicisitudes relacionadas con la extinción del contrato por muerte de las partes o por el desistimiento unilateral del contrato, en relación al contrato de obra, siendo aplicable dichas normas también al de servicios por ser disposiciones comunes a ambos contratos.
 
-#### [[Contrato de larga duración|Contratos de larga duración]]
+## [[Contrato de larga duración|Contratos de larga duración]]
 ---
 Particular análisis merecen los contratos de servicios que se han pactado para perdurar en el tiempo en forma continuada, por cuanto el legislador ha regulado la extinción de los mismos en forma diferenciada ([[Art. 1279 del CC y CN, Servicios continuados|art. 1279]]). 
 

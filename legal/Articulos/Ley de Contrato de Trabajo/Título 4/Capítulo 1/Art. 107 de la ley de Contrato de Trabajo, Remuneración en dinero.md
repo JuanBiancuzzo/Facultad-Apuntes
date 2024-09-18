@@ -13,11 +13,11 @@ previo: "[[legal/Articulos/Ley de Contrato de Trabajo/Título 4/Capítulo 1/Cap�
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Las remuneraciones que se fijen por las convenciones colectivas deberán expresarse, en su totalidad, en dinero.
 
 El empleador no podrá imputar los pagos en especies a más del veinte (20) por ciento del total de la remuneración."
 
-### Interpretación
+# Interpretación
 ---

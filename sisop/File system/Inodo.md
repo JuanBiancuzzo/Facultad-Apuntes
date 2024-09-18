@@ -4,7 +4,7 @@ tags:
   - sisop/File-system
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta es una de las estructuras almacenadas en el disco más importantes. Casi todos los [[File system|sistemas de archivos]] [[Unix|unix-like]] son así. Su nombre, probablemente provenga de los viejos sistemas [[Unix]] en los que estos se almacenaban en un arreglo, y este arreglo estaba indexado de forma de como acceder a un inodo en particular.
 

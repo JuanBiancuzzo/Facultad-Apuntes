@@ -4,6 +4,6 @@ tags:
   - aninfo/Ingeniería-de-software
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un tipo de [[Ingeniería]] que aplica un enfoque sistemático, disciplinado y cuantificable al desarrollo, operación y mantenimiento de software

@@ -9,11 +9,11 @@ referencias:
 aliases:
   - Conservación de la carga#En electromagnetismo
 ---
-### Definición
+# Definición
 ---
 Las leyes de conservación son las leyes físicas que postulan que durante la evolución temporal de un [[Sistema aislado|sistema aislado]], ciertas magnitudes tienen un valor constante. Puesto que el universo entero constituye un sistema aislado, se le pueden aplicar diversas leyes de conservación<sup><a href="#ref-213" style="color: inherit; text-decoration: none;">[213]</a></sup> 
 
-#### En electromagnetismo
+## En electromagnetismo
 ---
 Se deduce a partir de dos de las [[Ecuaciones de Maxwell|ecuaciones de Maxwell]] $$ \begin{align} 
     {\subset\!\supset} \llap{\iint}_{A} \vec{J} ~ d\vec{A} &= -\frac{\partial}{\partial t} ~ \iiint_{V(A)} \rho ~ dV \tag{integral} \\
@@ -25,7 +25,7 @@ Para corrientes estacionarias, se cumple que toda corriente que entra a un volum
     {\subset\!\supset} \llap{\iint}_{A} \vec{J} ~ d\vec{A} &= 0 \\
     \nabla ~ \vec{J} &= 0
 \end{align} $$
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

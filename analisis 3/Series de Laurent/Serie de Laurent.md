@@ -4,7 +4,7 @@ tags:
   - analisis-3/Series-de-Laurent
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Serie|serie]] donde $$ \sum_{n = - \infty}^{\infty} c_n \cdot (z - z_0)^n $$
 Donde sus partes son

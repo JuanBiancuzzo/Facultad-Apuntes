@@ -6,7 +6,7 @@ tags:
 aliases:
   - Acumulación de la estructura MOS
 ---
-### Definición
+# Definición
 ---
 Dada una [[Estructura Metal-Óxido-Semiconductor|estructura MOS]] [[Estructura Metal-Óxido-Semiconductor con polarización|polarizada]], sabemos que en [[Tensión de Flatband|Flatband]] al distribución de portadores mayoritarios en el [[Semiconductor|SC]] es uniforme e igual al [[Dopaje|dopaje]]
 
@@ -23,18 +23,18 @@ La estructura se comporta como un [[Capacitor de placas planas paralelas|capacit
 * Caída de [[Tensión|tensión]] en el bulk $$ V_B = 0 $$
 * Caída de tensión en el óxido $$ V_{ox} = V_{GB} - V_{FB} $$
 
-#### Concentraciones de los portadores
+## Concentraciones de los portadores
 ---
 ![[Concentración de portadores en la estructura MOS en regimen de acumulación.webp]]
 
-#### Densidad de carga espacial
+## Densidad de carga espacial
 ---
 ![[Densidad de carga en una estructura MOS en regimen de acumulación.webp]] ^820fd4
 
-#### [[Campo eléctrico]]
+## [[Campo eléctrico]]
 ---
 ![[Campo eléctrico en una estructura MOS en regimen de acumulación.webp]]
 
-#### Función potencial
+## Función potencial
 ---
 ![[Potencial eléctrico en una estructura MOS en regimen de acumulación.webp]]

@@ -4,7 +4,7 @@ tags:
   - estructura/Registros-y-contadores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 A diferencia de los [[Registro|registros]] normales, es decir en paralelo, estos registros de desplazamiento nos permiten leer la información en serie, es decir que primero leemos un bit, después otro, y así sucesivamente hasta el último bit guardado.
 

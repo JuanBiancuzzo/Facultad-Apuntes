@@ -4,7 +4,7 @@ tags:
  - discreta/Grafos
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo|grafo]], definido como $p$ [[Camino#Ciclo (Cicle)|ciclos]] $C_4$ todos compartiendo una arista en común. Puede ser definida a partir de [[Grafo#Operaciones|operaciones]] como $$ B(p) = S_{p + 1} \times P_2 $$
 ```tikz

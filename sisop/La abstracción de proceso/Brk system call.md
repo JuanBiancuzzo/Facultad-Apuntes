@@ -4,7 +4,7 @@ tags:
   - sisop/La-abstracción-de-proceso
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[System call||system call]] `brk()` es necesario para entender el layout o estructura real de [[Memoria|memoria]] de un [[Proceso|proceso]] en [[Linux]]
 
@@ -18,7 +18,7 @@ void *sbrk(intptr_t increment);
 
 El parámetro de `sbrk()` es la [[Dirección de memoria|dirección]] exacta donde el nuevo `break` debe estar. Por otro lado en `sbrk()` se pasa el incremento al cual se le sumará al viejo break para setear el nuevo break. Si se ejecuta `sbrk(0)` se obtiene la dirección del `break` actual
 
-##### Nota
+### Nota
 ---
 Redimensionar el [[Heap|heap]] (reservado o liberando memoria) es tan simple como pedirle al [[Kernel|kernel]] que ajuste su idea de donde el break del proceso está
 

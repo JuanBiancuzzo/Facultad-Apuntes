@@ -4,11 +4,11 @@ tags:
   - seguridad/Riesgo-eléctrico-y-radiación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dispositivo que produce [[Energía]] radiante [[Campo electromagnético]] dentro del espectro óptico comprendido entre la zona final del ultravioleta y el infrarrojo.
 
-#### Clasificación según nivel de seguridad
+## Clasificación según nivel de seguridad
 ---
 1) Lásers totalmente confinados, sin [[Riesgo]] para la vista
 2) Láseres visibles que emiten una potencia muy baja, la cual no sería peligrosa ni siquiera aunque el haz penetrara en el ojo humano.

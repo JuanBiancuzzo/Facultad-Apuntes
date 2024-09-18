@@ -4,7 +4,7 @@ tags:
   - aninfo/Analizar-y-especificar-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 [[Requisito|Requisitos]] funcionales (comportamiento del sistema bajo determinadas circunstancias) y no funcionales. Respondiendo a qué es lo que deben implementar los desarrolladores para que el usuario puedan hacer sus tareas.
 

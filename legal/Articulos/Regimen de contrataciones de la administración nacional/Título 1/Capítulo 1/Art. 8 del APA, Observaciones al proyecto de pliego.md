@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Regimen de contrataciones de la administración nacio
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Cuando la complejidad o el monto de la contratación lo justifique, a juicio de la autoridad competente, el llamado deberá prever un plazo previo a la publicación de la convocatoria, para que los interesados formulen observaciones al proyecto de pliego de bases y condiciones particulares, conforme lo determine la reglamentación."
 
-### Interpretación
+# Interpretación
 ---

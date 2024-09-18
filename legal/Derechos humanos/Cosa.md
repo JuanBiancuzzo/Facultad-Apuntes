@@ -4,6 +4,6 @@ tags:
   - legal/Derechos-humanos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El [[Libro 4, Derechos Reales|derecho real]] se ejerce sobre la totalidad o una parte material de la cosa que constituye su objeto, por el todo o por una parte indivisa.

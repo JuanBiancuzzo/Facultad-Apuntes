@@ -4,7 +4,7 @@ tags:
   - estructura/Flip-Flops
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es aquel [[Circuito secuencial|circuito secuencial]] que su comportamiento cambia únicamente cuando se lo indica con una señal que llamaremos reloj o clock.
 

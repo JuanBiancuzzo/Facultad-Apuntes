@@ -4,7 +4,7 @@ tags:
   - aninfo/Diseño-de-software
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Single-Responsibility
 Open-closed

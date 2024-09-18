@@ -7,5 +7,5 @@ aliases:
   - Coordenadas polares
   - Coordenadas circulares
 ---
-### Definición
+# Definición
 ---

@@ -4,11 +4,11 @@ tags:
   - seguridad/Residuos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Hay dos tipos de [[Residuo sólido]]:
 
-##### Orgánicos
+### Orgánicos
 * Residuos de comida
 * Papel
 * Plásticos
@@ -17,7 +17,7 @@ Hay dos tipos de [[Residuo sólido]]:
 * Cuero
 * Madera
 
-##### Inorgánicos
+### Inorgánicos
 * Vidrio
 * Latas de hojalata
 * Aluminio

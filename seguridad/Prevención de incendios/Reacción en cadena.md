@@ -4,6 +4,6 @@ tags:
   - seguridad/Prevención-de-incendios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son reacciones químicas que se producen, complejas y dependen de los materiales.

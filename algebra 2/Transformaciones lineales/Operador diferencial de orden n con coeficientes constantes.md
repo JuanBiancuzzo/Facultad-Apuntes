@@ -4,7 +4,7 @@ tags:
   - algebra-2/Transformaciones-lineales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dados $a_0, a_1, \cdots, a_{n-1} \in \mathbb{K}$ y partiendo del [[Operador derivación|operación derivador]] se define como $L: C^\infty(\mathbb{R}, \mathbb{K}) \to C^\infty(\mathbb{R}, \mathbb{K})$ , como:
 
@@ -12,7 +12,7 @@ $$ L = D^n + a_{n-1} D^{n-1} + \cdots + a_1 D + a_0 I$$
 
 Donde usamos [[Operador derivador de orden n|operador derivador de orden n]]
 
-#### Proposición
+## Proposición
 ---
 Partiendo de un polinomio, tal que
 

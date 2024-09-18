@@ -8,9 +8,9 @@ previo: "[[Capítulo 1, Derecho|Capítulo 1, Derecho]]"
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El [[Juez|juez]] debe resolver los asuntos que sean sometidos a su jurisdicción mediante una decisión razonablemente fundada."
 
-### Interpretación
+# Interpretación
 ---

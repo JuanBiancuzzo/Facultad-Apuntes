@@ -7,7 +7,7 @@ aliases:
   - Match-plus-action
   - OperFlow Protocol
 ---
-### Definición
+# Definición
 ---
 OpenFlow fue el pionero en la noción de una abstracción match-plus-action. 
 
@@ -116,7 +116,7 @@ Cada entrada en la tabla conocida como flow table incluye, un conjunto de valore
 
 Un conjunto de contadores que serán actualizados cuando el paquete coincide con la entrada. Un conjunto de acciones que deben tomarse cuando un paquete coincide con la entrada de la tabla
 
-##### Match
+### Match
 ---
 La primera observación importante que las abstracciones de OpenFlow permite que el match se realice a partir de campos seleccionados a través de múltiples [[Protocolo|protocolos]], permitiendo así al [[Packet switches|packet switch]] funcionar tanto como un dispositivo de [[Capa de Red|capa de red]] como un dispositivo de [[Capa de Enlace|capa de enlace]]
 
@@ -124,7 +124,7 @@ Las entradas de la tabla también permiten comodines, permitiendo, por ejemplo, 
 
 Por último vamos que no todos los headers de IP pueden ser utilizados para el match. Algunos headers fueron ignorados para priorizar funcionalidad por sobre complejidad
 
-##### Action
+### Action
 ---
 Cada entrada de la tabla puede tener cero o múltiples acciones. Si hay múltiples acciones, estás se realizan en el orden especificado. Algunas de las acciones más comunes son
 
@@ -135,7 +135,7 @@ Cada entrada de la tabla puede tener cero o múltiples acciones. Si hay múltipl
 * Modify-field
 	* Algunos valores de los headers del paquete pueden ser reescritos antes de ser enviados al/los puertos especificados
 
-#### Protocolo
+## Protocolo
 ---
 Este protocolo opera entre un controlador [[Software-defined networking|SDN]] y un [[Software-defined networking Controller|SDN-controlled]] switch, a través de [[Transmission Control Protocol|TCP]] en el [[Socket|puerto]] por defecto 6653
 

@@ -4,7 +4,7 @@ tags:
   - taller/Sintaxis
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Permite a las [[Función|funciones]] utilizar cualquier [[Tipo de dato|tipo de dato]], y se puede usar en conjunto de los [[Traits]] para exigir que puedan hacer ciertas cosas, por ejemplo
 

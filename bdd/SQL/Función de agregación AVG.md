@@ -4,11 +4,11 @@ tags:
   - bdd/SQL
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esta [[SQL Keywords#Funciones de agregación|función de agregación]] devuelve el promedio de filas que se seleccionen
 
-#### Sintaxis
+## Sintaxis
 ---
 ```SQL 
 SELECT AVG(nombre_columna)
@@ -18,7 +18,7 @@ WHERE condicion;
 
 Los valor que sea [[NULL|NULL]] se ignoran
 
-#### WHERE
+## WHERE
 ---
 Se puede usar esto como parte de la condición de la [[Sentencia WHERE|sentencia WHERE]]
 
@@ -28,7 +28,7 @@ FROM Productos
 WHERE precio > (SELECT AVG(precio) FROM Productos);
 ```
 
-#### Alias
+## Alias
 ---
 Si se le quiere dar un nombre más descriptivo al resultado se puede usar un [[Alias#En SQL|alias]] 
 
@@ -37,7 +37,7 @@ SELECT AVG (nombre_columna) AS [Numero de registros]
 FROM Productos;
 ```
 
-#### Group by
+## Group by
 ---
 Cuando se una `AVG` con la [[Sentencia GROUP BY|sentencia GROUP BY]] el resultado es el promedio de filas de cada categoría
 

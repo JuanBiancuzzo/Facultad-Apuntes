@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Si durante las negociaciones, una de las partes facilita a la otra una información con carácter confidencial, el que la recibió tiene el deber de no revelarla y de no usarla inapropiadamente en su propio interés. La parte que incumple este deber queda obligada a reparar el daño sufrido por la otra y, si ha obtenido una ventaja indebida de la información confidencial, queda obligada a indemnizar a la otra parte en la medida de su propio enriquecimiento."
 
-### Interpretación
+# Interpretación
 ---
 Uno de los acuerdos que suelen celebrarse durante las tratativas preliminares es el llamado convenio de confidencialidad, mediante el cual las partes se obligan a no revelar la información confidencial o reservada que se reciba durante la negociación y a no usarla inapropiadamente en su propio interés. 
 

@@ -6,7 +6,7 @@ tags:
 aliases:
   - MIR en la arquitectura ARC
 ---
-### Definición
+# Definición
 ---
 ```tikz
 \usepackage{amssymb}
@@ -75,7 +75,7 @@ Para las [[Lenguaje assembler|instrucciones de Assembly]] que no contienen OP$3$
 
 Para no repetir el microcódigo en cada instrucción, se puede utilizar la nanoprogramación. Consiste en remplazar la tabla de $2048$ words x $41$ bits por una tabla de $2048$ words x $7$ bits, donde se redirige a una nueva tabla de $100$ words x $41$ bits, la cual contiene el microcódigo para cada operación
 
-##### Tablas de operaciones
+### Tablas de operaciones
 ---
 Los códigos de condición son los siguientes
 

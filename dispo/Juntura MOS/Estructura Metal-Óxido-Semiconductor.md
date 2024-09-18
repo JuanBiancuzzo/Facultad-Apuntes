@@ -6,7 +6,7 @@ tags:
 aliases:
   - MOS
 ---
-### Definición
+# Definición
 ---
 La estructura se componen de
 * Metal
@@ -22,13 +22,13 @@ La estructura se componen de
 * La estructura MOS es un sandwich de 3 materiales con [[Tensión|potenciales diferentes]], por lo que [[Campo eléctrico|campos eléctricos]] diferentes, por lo que hay un reacomodamiento de cargas  y por último produciendo una región de carga espacial
 * La mayoría de los metales al ser colocados sobre p-Si, alcanzan el [[Equilibrio térmico|equilibrio térmico]] a partir de las [[Flujo de difusión|difusión]] de [[Electrón|electrones]] desde el metal hacia el [[Semiconductor]] y [[Hueco|huecos]] desde el semiconductor hacia el metal
 
-#### Concentraciones de los [[Carga eléctrica|portadores]]
+## Concentraciones de los [[Carga eléctrica|portadores]]
 ---
 ![[Concentración de portadores en la estructura MOS.webp]]
 
 Pocos [[Hueco|huecos]] cerca de la interfaz $Si$/$SiO_2$ entonces quedan expuestos [[Átomo|átomos]] [[Impureza aceptora|aceptores]] ionizados y se genera una zona de [[Carga eléctrica|carga]] espacial en volumen (SCR) o zona desierta de [[Carga eléctrica|portadores]].
 
-#### Densidad de [[Carga eléctrica|carga]] espacial
+## Densidad de [[Carga eléctrica|carga]] espacial
 ---
 Se puede dividir en cuatro zonas la estructura, la zona del metal sus cargas están acumuladas en la superficie, generando una [[Delta de Dirac]] de [[Carga eléctrica|carga]] en la interfaz entre el metal y el oxido.
 
@@ -42,7 +42,7 @@ Por el metal, se genera una carga en la interfaz metal y el oxido, dándonos con
 
 ![[Densidad de carga en una estructura MOS.webp]]
 
-#### [[Campo eléctrico]]
+## [[Campo eléctrico]]
 ---
 Integrando $$ E(x_2) - E(x_1) = \frac{1}{\varepsilon} \int_{x_1}^{x_2} \rho(x) ~ dx $$
 En la interfaz óxido-semiconductor, por el cambio de permitividad, produce un cambio en el campo eléctrico $$ \begin{align} 
@@ -60,7 +60,7 @@ Produciendo el campo $$ E_0(x) = \begin{cases}
 
 Donde $$E_{ox} = \frac{qN_a x_{do}}{\varepsilon_{ox}}$$ y $$E_s = \frac{qN_a x_{do}}{\varepsilon_s}$$
 
-#### Función Potencial
+## Función Potencial
 ---
 Recordando la [[Relación de Boltzmann|relación de Boltzmann]], tenemos que $$ \phi(x) = \frac{kT}{q} \ln\left( \frac{n_0}{n_i} \right) = - \frac{kT}{q} \ln\left( \frac{p_0}{n_i} \right) $$ donde $n_i$ es la [[Semiconductor intrínseco|concentración de un semiconductor intrínseco]].
 
@@ -83,12 +83,12 @@ $$ \phi(x) = \begin{cases}
 \end{cases} $$
 Donde $$ V_{B,0} = \frac{q N_a x_{d0}^2}{2 \varepsilon_s} $$ y $$ V_{ox, 0} = \frac{q N_a x_{d0} ~ t_{ox}}{\varepsilon_{ox}} $$
 
-#### Límites de la región de carga espacial
+## Límites de la región de carga espacial
 ---
 Encontrando $x_{d0}$, recordando que la diferencia de potencial a lo largo de la estructura debe ser $\phi_B$ $$ \phi_B = V_{B, 0} + V_{ox, 0} = \frac{q N_a x_{d0}^2}{2 \varepsilon_s} + \frac{q N_a x_{d0} ~ t_{ox}}{\varepsilon_{ox}}$$
 Resolviendo la ecuación cuadrática $$ x_{d0} = \frac{\varepsilon_s}{\varepsilon_{ox}} t_{ox} \left[ \sqrt{1 + \frac{2 \varepsilon_{ox}^2 ~ \phi_B}{\varepsilon_s q N_a ~ t_{ox}^2}} + 1 \right] $$
 Utilizando la [[Capacitores en serie|capacidad por unidad de área de óxido]] y el [[Body factor coefficient|body factor coefficient]], nos queda $$ x_{d0} = \frac{\varepsilon_s}{C'_{ox}} \left[ \sqrt{1 + \frac{4 ~ \phi_B}{\gamma^2}} - 1 \right] $$
-#### Distintas combinaciones poly-sustrato
+## Distintas combinaciones poly-sustrato
 ---
 Dependiendo de que tipo sea el poly-silicio y el sustrato cambiando las propiedades eléctricas de la estructura MOS
 

@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-agua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Tiene el objetivo de eliminar la materia orgánica disuelta. Actualmente otros usos son:
 * Eliminación del amoniaco 

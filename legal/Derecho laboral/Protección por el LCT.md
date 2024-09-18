@@ -4,11 +4,11 @@ tags:
   - legal/Derecho-laboral
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 ![[Art. 12 de la ley de Contrato de Trabajo, Protección de los trabajadores. Irrenunciabilidad#Artículo]]
 
-#### No protegido por el LCT
+## No protegido por el LCT
 ---
 Las formas de trabajo que quedan excluidas de la protección de la LCT son
 * Autónomo

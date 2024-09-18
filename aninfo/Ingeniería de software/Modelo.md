@@ -4,7 +4,7 @@ tags:
   - aninfo/Ingeniería-de-software
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una simplificación de la realidad. Construimos modelos para entender mejor el [[Sistema]] que estamos desarrollando.
 
@@ -14,7 +14,7 @@ Los modelos
 * Proveen guía para la construcción de un sistema
 * Documentan las decisiones tomadas
 
-#### Influencia de los lenguajes de programación
+## Influencia de los lenguajes de programación
 ---
 Hay dos grupos de notaciones, unas más orientadas a la descripción de la implementación, y otras más orientadas a la descripción conceptual del [[Sistema]].
 

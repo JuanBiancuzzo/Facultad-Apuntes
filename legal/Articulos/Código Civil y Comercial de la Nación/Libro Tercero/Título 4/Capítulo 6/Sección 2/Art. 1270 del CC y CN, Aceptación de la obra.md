@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La obra se considera aceptada cuando concurren las circunstancias del [[Art. 747 del CC y CN, Entrega|artículo 747]]."
 
-### Interpretación
+# Interpretación
 ---

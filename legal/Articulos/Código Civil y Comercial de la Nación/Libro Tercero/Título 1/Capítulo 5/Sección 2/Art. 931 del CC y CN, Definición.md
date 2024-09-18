@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La obligación se extingue por confusión cuando las calidades de acreedor y de deudor se reúnen en una misma persona y en un mismo patrimonio."
 
-### Interpretación
+# Interpretación
 ---

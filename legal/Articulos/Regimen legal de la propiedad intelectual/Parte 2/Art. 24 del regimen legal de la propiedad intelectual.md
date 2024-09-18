@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Regimen legal de la propiedad intelectual/Parte 2/Par
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El traductor de una obra que no pertenece al dominio privado sólo tiene propiedad sobre su versión y no podrá oponerse a que otros la traduzcan de nuevo."
 
-### Interpretación
+# Interpretación
 ---

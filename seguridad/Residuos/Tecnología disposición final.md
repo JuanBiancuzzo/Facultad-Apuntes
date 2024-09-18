@@ -4,6 +4,6 @@ tags:
   - seguridad/Residuos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 * [[Relleno de seguridad]]

@@ -6,11 +6,11 @@ tags:
   - sisop/Scheduling
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Para resolver el problema que se presenta en la [[Política de planificación First In, First Out|política FIFO]], se modifica la política para que se ejecute el [[Proceso|proceso]] de duración mínima, una vez finalizado esto se ejecuta el proceso de duración mínima, y así sucesivamente.
 
-#### Usando [[Métrica Turn Around de planificación|Turn around]]
+## Usando [[Métrica Turn Around de planificación|Turn around]]
 ---
 Suponiendo que A dura $100$, y B, C duran $10$, esta política ordena los procesos en B, C y finalmente A
 $$ T_\text{around} = \frac{10 + 20 + 120}{3} = 50 < 110 = T_\text{around}^\text{FIFO} $$

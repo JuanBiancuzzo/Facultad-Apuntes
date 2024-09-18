@@ -4,11 +4,11 @@ tags:
   - seguridad/Contaminación-del-agua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se considera que un [[Agua]] está contaminada cuando se ve alterada en su composición o estado, directa o indirectamente como consecuencia de la actividad humana, de tal modo que quede menos apta para uno o todos los usos a que va a ser destinada o que sería apta en su [[Calidad necesaria del agua|calidad]] natural.
 
-#### Contaminantes
+## Contaminantes
 ---
 * Agentes físicos:
 	* [[Calor]] (temperatura)

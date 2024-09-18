@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-aire
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El ozono forma una capa en la [[Estratosfera|estratosfera]] que es más delgada a la altura de los trópicos y aumenta en densidad hacia los polos.
 

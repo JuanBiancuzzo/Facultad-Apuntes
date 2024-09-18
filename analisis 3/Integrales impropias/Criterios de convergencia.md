@@ -6,27 +6,27 @@ tags:
 ---
 Para las integrales de la forma $\int_a^\infty f(x) \cdot dx$, donde todas las funciones involucradas se suponen [[Seccionalmente continua]].
 
-##### Bolzano-Cauchy
+### Bolzano-Cauchy
 ---
 ![[Criterio de bolzano-Cauchy para integrales#Definción]]
 
 
-##### Convergencia absoluta
+### Convergencia absoluta
 ---
 ![[Convergencia absoluta para integrales#Definición]]
 
 
-##### Criterio de acotación
+### Criterio de acotación
 ---
 ![[Criterio de acotación para integrales#Definición]]
 
 
-##### Criterios de comparación
+### Criterios de comparación
 ---
 ![[Criterio de comparación para integrales#Definición]]
 
 
-##### Criterio de Abel y de Dirichlet
+### Criterio de Abel y de Dirichlet
 ---
 ![[Criterio de Abel y de Dirichlet#Definición Abel]]
 ![[Criterio de Abel y de Dirichlet#Definición Dirichlet]]

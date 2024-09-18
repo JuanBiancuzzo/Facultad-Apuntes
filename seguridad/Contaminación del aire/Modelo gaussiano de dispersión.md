@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-aire
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Este [[Modelo]] asume que:
 * El caudal másico $[g \cdot s^{-1}]$ es continuo y constante durante el período de tiempo seleccionado
@@ -16,7 +16,7 @@ Este [[Modelo]] asume que:
 El modelo produce $$ C(x, y, z, H) = \frac{Q}{2 u \pi \sigma_y \sigma_z} \exp{\left( -\frac{1}{2}\left( \frac{y}{\sigma_y} \right)^2 \right)} \left[ \exp{\left( -\frac{1}{2}\left( \frac{z - H}{\sigma_z} \right)^2 \right)} + \exp{\left( -\frac{1}{2}\left( \frac{z  + H}{\sigma_z} \right)^2 \right)}  \right] $$
 
 Donde la concentración a nivel del suelo esta dada por $$ C(x, 0, 0, H) = \frac{10^6 \cdot Q}{u \pi \sigma_y \sigma_z} \cdot \exp{\left( -\frac{1}{2} \left( \frac{H}{\sigma_z}  \right)^2 \right)} $$
-##### Datos necesarios
+### Datos necesarios
 ---
 * Caudal másico de emisión
 * $h~[m]$ la altura real de la chimenea

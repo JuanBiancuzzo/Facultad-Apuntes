@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - embebidos/Diseño-desarrollo-y-depuración
 ---
-### Definición
+# Definición
 ---
 El compilador se encarga del proceso de compilación que se divide en diferentes faces
 * Preprocesador: El preprocesador modifica el código de fuente original de un [[Programa|programa]], de acuerdo a las [[Directivas de ensamblador|directivas]]. El resultado de este [[Proceso|proceso]] es otro programa

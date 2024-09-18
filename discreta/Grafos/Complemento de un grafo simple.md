@@ -6,7 +6,7 @@ tags:
 aliases:
   - Grafo complementario
 ---
-### Definición
+# Definición
 ---
 Sea $G = \big( V(G),~E(G),~\Psi_G \big)$  un [[Grafo simple|grafo simple]], entonces definimos su complemento como $G'$, donde 
 * $V(G') = V(G)$

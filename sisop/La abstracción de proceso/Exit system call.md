@@ -4,7 +4,7 @@ tags:
   - sisop/La-abstracción-de-proceso
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[System call|system call]] `exit()` permite terminar el [[Proceso|proceso]]. 
 * Ignora todas las [[Signal system call|signal]]

@@ -4,7 +4,7 @@ tags:
   - orga/Compresión
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado un mensaje, cuanta información útil estoy dando. La cantidad de bit's necesarios para ser eficiente, cumple esta formula
 $$ bits = - \log_2(P) $$

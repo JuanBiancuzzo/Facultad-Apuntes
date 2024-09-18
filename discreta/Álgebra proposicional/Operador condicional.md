@@ -4,6 +4,6 @@ tags:
   - nota/facultad
   - discreta/Álgebra-proposicional
 ---
-### Definición
+# Definición
 ---
 Se define las implicancias utilizando los elementos del [[Álgebra de Boole|álgebra de Boole]] $$ p \to q \overset{\text{def}}{=} p' + q $$

@@ -4,7 +4,7 @@ tags:
   - orga/Compresión
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado una tabla dada por los [[Bit de información]], tenemos 
 |     | Proba | Bits    | Redondeo |

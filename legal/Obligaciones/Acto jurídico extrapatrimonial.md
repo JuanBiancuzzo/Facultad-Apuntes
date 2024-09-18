@@ -4,6 +4,6 @@ tags:
   - legal/Obligaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los actos jurídicos extrapatrimoniales no tienen contenido económico, por ejemplo, el matrimonio, la adopción, etc.

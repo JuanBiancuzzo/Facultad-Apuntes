@@ -4,7 +4,7 @@ tags:
  - discreta/Relaciones
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sean $S$, $T$ dos [[Relación|relaciones]] del [[Conjunto|conjunto]] $A$. Entonces definiremos la relación $R = S \circ T$ para la cual $$ xRy \iff \exists z: ~~ xSz,~ zTy $$
 

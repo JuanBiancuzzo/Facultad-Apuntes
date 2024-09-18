@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - embebidos/Diseño-desarrollo-y-depuración
 ---
-### Definición
+# Definición
 ---
 Traduce el código Assembly, creado por el [[Compilador|compilador]], en [[Código de máquina|código de máquina]]
 
@@ -17,7 +17,7 @@ Muchas de las funciones del ensamblador se realizan a partir de las directivas d
 
 Algunas de estas directivas generan información en [[Memoria|memoria]]
 
-#### Proceso en dos pasadas
+## Proceso en dos pasadas
 ---
 Consiste de tres pasos
 1. Pre proceso
@@ -35,7 +35,7 @@ El archivo objetó incluye un encabezamiento que contiene
 
 A la hora de incluir módulos externos, estos pueden se relocalizados para poder ser cargados en memoria correctamente. Es el ensamblador el encargado de marcar que direcciones son relocalizables y cuáles son absolutas. Esta información es necesaria para el [[Linker|linker]]
 
-#### Tabla de símbolos
+## Tabla de símbolos
 ---
 Para generarla, el ensamblador recorre el archivo línea por línea, Incluye su nombre en la tabla. Al encontrarlos, les asigna un valor correspondiente.
 

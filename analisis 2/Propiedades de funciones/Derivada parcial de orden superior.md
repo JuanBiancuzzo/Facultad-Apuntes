@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Propiedades-de-funciones
 ---
-### Definición
+# Definición
 ---
 Considerando la [[Función|función]] $f : U \subseteq \mathbb{R}^2 \to \mathbb{R}$ definida en el [[Conjunto abierto|conjunto abierto]] $U$ de $\mathbb{R}^2$. Si esta función es [[Diferenciable|diferenciable]], sabemos que existen las derivadas parciales $\frac{\partial f}{\partial x}$ y $\frac{\partial f}{\partial y}$ en cualquier punto $(x, y) \in U$
 

@@ -4,7 +4,7 @@ tags:
   - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado el [[Circuito eléctrico|circuito]] con un [[Dispositivo de control de potencia|dispositivo de control de potencia]]
 

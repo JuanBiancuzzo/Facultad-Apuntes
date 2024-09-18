@@ -4,7 +4,7 @@ tags:
   - dispo/Juntura-PN
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado una [[Juntura PN]], tenemos que la distribución de la [[Tensión|función potencial]] hasta aquí 
 

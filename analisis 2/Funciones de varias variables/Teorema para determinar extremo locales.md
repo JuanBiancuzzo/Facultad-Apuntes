@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Funciones-de-varias-variables
 ---
-### Definición
+# Definición
 ---
 Sea $f : D \subset \mathbb{R}^n \to \mathbb{R}$ con $n > 1$, tal que $f \in C^2(E(\vec{A}))$ y $\nabla f(\vec{A}) = 0$. Sea $H(\vec{A})$ el [[Matriz Hessiana#Determinante Hessiano|determinante Hessiano]] de $f$ en $\vec{A}$
 

@@ -4,7 +4,7 @@ tags:
   - analisis-3/Series-de-Laurent
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $z_0$ una singularidad aislada de la función $f : D \to \mathbb{C}$, [[Holomorfa]] en el abierto $D \subset \mathbb{C}$. Entonces: 
 

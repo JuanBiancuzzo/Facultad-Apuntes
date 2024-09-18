@@ -4,7 +4,7 @@ tags:
   - redes/Capa-de-Red
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Conecta los puertos de entrada con los puertos de salida ^57bb3f
 

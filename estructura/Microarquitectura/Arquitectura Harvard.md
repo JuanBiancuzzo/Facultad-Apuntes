@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - embebidos/Microcontroladores-de-32-bits
 ---
-### Definición
+# Definición
 ---
 Este modelo corresponde a la arquitectura, como alternativa a la [[Arquitectura Von Neumann|arquitectura Von Neumann]], de las primeras [[Computadora|computadoras]], sin embargo, tiene un problema. Estas computadoras no son fácilmente programables, por lo que no pueden resolver todos los problemas. Hoy en día son de uso común
 

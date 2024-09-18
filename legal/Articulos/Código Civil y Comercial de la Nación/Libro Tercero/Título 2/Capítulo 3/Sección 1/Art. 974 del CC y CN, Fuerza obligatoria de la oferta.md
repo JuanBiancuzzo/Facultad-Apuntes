@@ -14,7 +14,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La oferta obliga al proponente, a no ser que lo contrario resulte de sus términos, de la naturaleza del negocio o de las circunstancias del caso.
 
@@ -24,7 +24,7 @@ Cuando se hace a una persona que no está presente, sin fijación de plazo para 
 
 Los plazos de vigencia de la oferta comienzan a correr desde la fecha de su recepción, excepto que contenga una previsión diferente."
 
-### Interpretación
+# Interpretación
 ---
 
 

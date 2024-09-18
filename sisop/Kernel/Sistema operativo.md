@@ -5,21 +5,21 @@ tags:
   - nota/facultad
   - embebidos/Diseño-desarrollo-y-depuración
 ---
-### Definición
+# Definición
 ---
 El [[Software|software]] que maneja y dispone de los recursos de una [[Computadora|computadora]], con esta definición el [[Kernel|kernel]] puede ser equivalente al sistema operativo.
 
-### Iniciar
+# Iniciar
 ---
 El sistema operativo es la capa de [[Software|software]] de más bajo nivel en la [[Computadora|computadora]]. Este contiene por un lado una capa para la gestión de dispositivos específicos y por otro una serie de servicios para la gestión de dispositivos agnósticos del [[Hardware|hardware]] que son utilizados por las aplicaciones.
 
 Estas dos capas suelen ser conocidas como el [[Kernel|kernel]] del sistema operativo. Cuando el código fuente de esta capa es ejecutado la computadora pasa a un estado llamado Modo Supervisor.
 
-#### Etapas de inicio 
+## Etapas de inicio 
 ---
 El [[Proceso|proceso]] de inicio de una computadora se divide esencialmente en 3 partes
 
-##### Booteo
+### Booteo
 ---
 Este proceso es denominado bootstrap, y generalmente depende del [[Hardware|hardware]] de la [[Computadora|computadora]]. En él se realizan los chequeos de hardware y se carga el Bootloader, que es el programa encargado de cargar el [[Kernel|kernel]] del sistema operativo. Este proceso consiste en 3 partes
 1. Carga el [[BIOS|BIOS]]
@@ -27,7 +27,7 @@ Este proceso es denominado bootstrap, y generalmente depende del [[Hardware|hard
 3. La BIOS genera una interrupción 19
 4. Ejecutar el servicio de interrupciones
 
-##### Carga del kernel
+### Carga del kernel
 ---
 El Bootloader por el momento de forma más o menos transparente es un [[Programa|programa]] que se encarga de 
 1. Pasar a Modo supervisor
@@ -36,7 +36,7 @@ El Bootloader por el momento de forma más o menos transparente es un [[Programa
 4. Setear el [[Registro|registro]] de PI (próxima instrucción)
 5. Ejecutar la primer instrucción del [[Kernel|kernel]]
 
-##### Inicio de las aplicaciones de usuario
+### Inicio de las aplicaciones de usuario
 ---
 Una vez que el [[Kernel|kernel]] terminó de ejecutarse, las últimas operaciones que realiza son
 1. Carga en [[Memoria|memoria]] la aplicación a ejecutarse

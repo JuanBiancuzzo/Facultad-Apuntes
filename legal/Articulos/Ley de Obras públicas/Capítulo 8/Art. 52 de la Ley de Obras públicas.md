@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Ley de Obras públicas/Capítulo 8/Capítulo 8, De la
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "En caso de que rescindido el contrato por culpa del contratista la administración resolviera variar el proyecto que sirvió de base a la contratación, la rescisión sólo determinará la perdida de la fianza, debiendo liquidarse los trabajos efectuados hasta la fecha de la cesación de los mismos."
 
-### Interpretación
+# Interpretación
 ---

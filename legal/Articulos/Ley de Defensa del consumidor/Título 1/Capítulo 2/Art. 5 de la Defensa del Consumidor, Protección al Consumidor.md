@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Ley de Defensa del consumidor/Título 1/Capítulo 2/C
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Las cosas y servicios deben ser suministrados o prestados en forma tal que, utilizados en condiciones previsibles o normales de uso, no presenten peligro alguno para la salud o integridad física de los consumidores o usuarios."
 
-### Interpretación
+# Interpretación
 ---

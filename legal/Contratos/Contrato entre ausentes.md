@@ -4,7 +4,7 @@ tags:
   - legal/Contratos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 ¿Cuándo debe reputarse concluido el acuerdo de voluntades en los contratos entre ausentes? Sistema del Código Civil y Comercial 
 

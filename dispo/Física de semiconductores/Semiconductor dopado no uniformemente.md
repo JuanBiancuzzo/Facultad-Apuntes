@@ -4,7 +4,7 @@ tags:
   - dispo/Física-de-semiconductores
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Si tenemos un [[Semiconductor]] [[Dopaje|dopado]] de forma no uniforme
 
@@ -30,20 +30,20 @@ $$ \frac{k ~ T}{q} \cdot  \ln\left(n_0(x) \right) = \frac{d\phi(x)}{dx} $$ final
 $$ \frac{k ~ T}{q} \cdot \frac{d}{dx} \bigg( \ln\left(n_0(x) \right) \bigg) = \frac{d^2\phi(x)}{dx^2} = - \frac{\rho(x)}{\varepsilon_{SC}} = \frac{q}{\varepsilon_{SC}} \left( n_0(x) - N_d(x) \right) $$
 $$ \boxed{\frac{k ~ T}{q} \cdot \frac{d^2}{dx^2} \bigg( \ln\left(n_0(x) \right) \bigg) = \frac{q}{\varepsilon_{SC}} \left( n_0(x) - N_d(x) \right)}$$
 
-#### Densidad de carga
+## Densidad de carga
 ---
 Por lo que en general $n_0(x) \ne N_d(x)$, por lo que la [[Densidad volumétrica de carga eléctrica]] no es nula punto a punto.
 
 ![[Densidad volumétrica de cargas en un semiconductor dopado no uniformemente.webp]]
 
-#### Campo eléctrico
+## Campo eléctrico
 ---
 Generando un [[Campo eléctrico]], usando la [[Ecuación de Gauss]] $$ \frac{dE}{dx} = \frac{\rho(x)}{\varepsilon_{SC}} $$
 donde $\rho(x)$ es la [[Densidad volumétrica de carga eléctrica|densidad de carga]], y tenemos la condición que el campo eléctrico tiene que ser 0 afuera del semiconductor por [[Conservación de carga]] y la neutralidad del material, por lo que termina siendo
 
 ![[Campo eléctrico en un semiconductor dopado no uniformemente.webp]]
 
-#### Potencial 
+## Potencial 
 ---
 Recordando que $$ \frac{d\phi(x)}{dx} = -E(x) $$ donde $E(x)$ es le [[Campo eléctrico]] y $\phi(x)$ es la función de potencial, en este caso no tenemos ninguna condición por lo que no nos queda que establecer una condición arbitraria dejándonos con 
 

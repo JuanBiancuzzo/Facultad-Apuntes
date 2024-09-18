@@ -4,7 +4,7 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Transformación - Spark|transformación]] que nos sacar los registros del primer [[Resilent distributed dataset - Spark|RDD]] que aparezcan en el segundo [[Resilent distributed dataset - Spark|RDD]].
 

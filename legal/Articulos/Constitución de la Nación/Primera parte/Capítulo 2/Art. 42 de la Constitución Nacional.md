@@ -15,7 +15,7 @@ previo: "[[legal/Articulos/Constitución de la Nación/Primera parte/Capítulo 2
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Los consumidores y usuarios de bienes y servicios tienen derecho, en la relación de consumo, a la protección de su salud, seguridad e intereses económicos; a una información adecuada y veraz; a la libertad de elección, y a condiciones de trato equitativo y digno.
 
@@ -23,5 +23,5 @@ Las autoridades proveerán a la protección de esos derechos, a la educación pa
 
 La legislación establecerá procedimientos eficaces para la prevención y solución de conflictos, y los marcos regulatorios de los servicios públicos de competencia nacional, previendo la necesaria participación de las asociaciones de consumidores y usuarios y de las provincias interesadas, en los organismos de control."
 
-### Interpretación
+# Interpretación
 ---

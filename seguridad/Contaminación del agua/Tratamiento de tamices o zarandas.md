@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-agua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un tratamiento físico con el objetivo de retener sólidos groseros pero de tamaño inferior al de los retenidos en las [[Tratamiento con rejas|rejas]]
 

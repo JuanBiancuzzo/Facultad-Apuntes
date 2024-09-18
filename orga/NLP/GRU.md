@@ -4,6 +4,6 @@ tags:
   - orga/NLP/2
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son una modificación de las [[Red neuronal recurrente|redes neuronales recurrentes]], parecidas a las [[Long short-term memory]], que modifican la función para tener una [[Derivada parcial|derivada]] numéricamente estable para el [[Descenso del gradiente|descenso del gradiente]] que es el método de aprendizaje para estos [[Algoritmos de machine learning|algoritmos]]

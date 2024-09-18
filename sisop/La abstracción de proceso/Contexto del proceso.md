@@ -4,7 +4,7 @@ tags:
   - sisop/La-abstracción-de-proceso
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Cada proceso tiene un contexto bien definido que comprende la información necesaria para describir completamente al mismo. El contexto de un proceso consiste de
 1. User Address Space:
@@ -24,7 +24,7 @@ Cada proceso tiene un contexto bien definido que comprende la información neces
 
 En forma resumida, el contexto de un proceso consiste en la unión de [[Contexto del nivel del usuario|user-level context]] [[Contexto de los registros|register context]] y [[Contexto del nivel del sistema|system level context]].
 
-#### Código
+## Código
 ---
 ```c
 // the registers xv6 will save and restore 

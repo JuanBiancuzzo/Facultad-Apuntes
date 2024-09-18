@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Propiedades-de-funciones
 ---
-### Definición
+# Definición
 ---
 Dada $f : D \subset \mathbb{R}^n \to \mathbb{R}$, el [[Conjunto|conjunto]] $S \subset D$ y el punto $A \in S$ se dice que 
 

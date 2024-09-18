@@ -5,10 +5,10 @@ tags:
   - nota/facultad
   - fisica-1/Trabajo-y-energía
 ---
-### Definición
+# Definición
 ---
 Se define como la [[Energía|energía]] necesaria para desplazar a un objeto. Se mide en Julios $J = [N ~ m]$ $$ W = \int_{x_1}^{x_2} \vec{F}_x ~ d\vec{l} $$
-#### En un campo eléctrico
+## En un campo eléctrico
 ---
 Si usando una [[Ley de Coulomb|fuerza externa]] $F_e$ desplazo la partícula de $x_1$ a $x_2$ como un movimiento cuasi estacionario, entonces la [[Velocidad|velocidad]] es constante a lo largo del trayecto y la sumatoria de fuerzas es, por lo tanto, nula 
 

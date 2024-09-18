@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-incendios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un [[Agente extintor]], donde los más utilizados son el Dióxido de carbono $CO_2$, y el Nitrógeno $N_2$. 
 
@@ -14,14 +14,14 @@ Desde un punto de vista general, sus propiedades más importantes, son sus carac
 
 Sus mecanismos de extinción:
 
-##### Sofocación
+### Sofocación
 ![[Extinción por sofocación#Definición]]
 
 
-##### Enfriamiento
+### Enfriamiento
 ![[Extinción por enfriamiento#Definición]]
 
-### Limitaciones
+# Limitaciones
 ---
 Las limitaciones y precauciones al usar $CO_2$ son las siguientes
 * Este gas es un tóxico muy débil, pero un asfixiante simple, por lo cual debe ser utilizado con suma precaución. (Desplaza al oxígeno)

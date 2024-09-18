@@ -4,7 +4,7 @@ tags:
   - orga/Pandas
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 ``` python
 DataFrame.astype(dtype, copy=True, errors='raise')

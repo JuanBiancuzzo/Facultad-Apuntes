@@ -4,11 +4,11 @@ tags:
   - intro/Multimetro
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es similar al [[Multímetro True Root Mean Square|multímetro True RMS]], cambia en que puede calcular directamente el valor de la [[Tensión eficaz|tensión eficaz]] total ($V_{eficaz}$).
 
-#### Modos
+## Modos
 ---
 - Modo VC y AC son iguales al multímetro True RMS.
 - Modo AC + DC:

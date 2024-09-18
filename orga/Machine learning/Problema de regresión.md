@@ -4,6 +4,6 @@ tags:
   - orga/Machine-learning
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son aquellos problemas que se logran resolver estableciendo una relación entre valores dados para llegar a un valor numérico.

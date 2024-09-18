@@ -5,7 +5,7 @@ tags:
   - analisis-3/Topología-del-plano-complejo-y-límites
   - analisis-2/Topología/1
 ---
-### Definición
+# Definición
 ---
 Dados un complejo $z_0 \in \mathbb{C}$ y un numero real positivo $r$, se definen los siguientes [[Subconjunto|subconjuntos]] del plano complejo
 $$ D(z_0, r) = \{ z \in \mathbb{C} : |z - z_0| < r \}$$ 

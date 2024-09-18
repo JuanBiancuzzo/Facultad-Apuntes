@@ -4,16 +4,16 @@ tags:
  - discreta/Inducción
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El principio de inducción parte de dos principios, los principios no se pueden probar, por eso se llaman principios. Si tomamos uno como un axioma, entonces el otro se transforma en un teorema
 
-#### Principio del Buen Orden
+## Principio del Buen Orden
 ---
 Todo [[Subconjunto|subconjunto]] no vacío de $\mathbb{N}$ tiene un primer elemento
 
 
-#### Principio de inducción
+## Principio de inducción
 ---
 Sea $p(n)$ una [[Proposición|proposición]] tal que para cada $n \in \mathbb{N}$ verifica
 * $\exists n_0 \in \mathbb{N}: ~ p(n_0)$ es verdadera

@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Son indivisibles las obligaciones no susceptibles de cumplimiento parcial."
 
-### Interpretación
+# Interpretación
 ---

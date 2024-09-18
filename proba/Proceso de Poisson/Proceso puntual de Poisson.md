@@ -6,11 +6,11 @@ tags:
   - proba/Proceso-de-Poisson
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado un [[Proceso puntual|proceso puntual]], donde los arribos sean independientes y entre dos arribos consecutivos su distancia tenga [[Distribución exponencial|distribución exponencial]]. Con la siguiente notación: $$ \Pi \sim PPP(\lambda) $$ donde $\lambda$ es la intensidad o tasa de ocurrencia
 
-### Variables útiles
+# Variables útiles
 ---
 Por lo que vamos a definir las siguientes [[Variable aleatoria|variables aleatorias]]. 
 
@@ -21,7 +21,7 @@ Definimos a las variables $G_n$ como el tiempo hasta el $n$-esimo arribo. Donde 
 Definimos las variables $T_{i,j}$ como el tiempo entre dos arribos consecutivos, el $i$-esimo y el $j$-esimo. Entonces son $T_{i, j} = G_j - G_i \sim \varepsilon(\lambda)$ pero por convención llamaremos $T_i$ donde cumple $T_i = G_i - G_{i - 1}$ y definimos $G_0$ como $0$.
 
 
-### Propiedades
+# Propiedades
 ---
 * $$ \mathbb{P}(G_n > t) = \mathbb{P}(N(t) < n) $$
 * $$ G_k|G_n = t_0 \sim U(0, t_0), \forall k \in \Set{1, 2, 3, \cdots, n - 1} $$

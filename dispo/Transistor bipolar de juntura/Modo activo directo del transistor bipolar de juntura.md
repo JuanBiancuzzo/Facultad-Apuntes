@@ -7,7 +7,7 @@ tags:
   - dispo/Transistor-bipolar-de-juntura
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[Corriente eléctrica|corriente]] de colector se controla a través de $V_{BE}$ y tiene poca dependencia con la tensión del colector. 
 
@@ -17,13 +17,13 @@ Con $V_{BE} > 0$ y $V_{BC} < 0$ $$ \begin{align}
 	I_E &= -\frac{I_S}{\beta_F} ~ \exp \left( \frac{V_{BE}}{V_{th}} \right)  \left( \beta_F + 1 \right) - \frac{I_S}{\beta_F}
 \end{align} $$ ^bfa932
 
-#### Modelo de Ebers-Moll
+## Modelo de Ebers-Moll
 ---
 ![[Modelo de Ebers-Moll para modo activo directo.webp]]
 
 Típicamente $V_{BE~(on)} \simeq 0.7~V$. $I_B$ depende del circuito externo.
 
-### Análisis
+# Análisis
 ---
 ![[Distribución de portadores en transistor NPN en escala semilog.webp]]
 

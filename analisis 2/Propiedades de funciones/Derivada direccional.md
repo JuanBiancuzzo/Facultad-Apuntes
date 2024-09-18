@@ -8,7 +8,7 @@ aliases:
   - Derivada direccional mínima
   - Derivada direccional nula
 ---
-### Definición
+# Definición
 ---
 Sea $f: U \subseteq \mathbb{R}^n \to \mathbb{R}$ una [[Función|función]] definida en el [[analisis 2/Topología/Conjunto abierto.md|conjunto abierto]] $U$ de $\mathbb{R}^n$ y sea $x_0 \in U$ un punto dado de $U$. Sea $v \in \mathbb{R}^n$ un [[Versor|versor]], se define la derivada en dirección $v$ tal que 
 
@@ -18,13 +18,13 @@ Donde lo podríamos visualizar
 
 ![[Derivada direccional.webp]]
 
-### Diferenciabilidad
+# Diferenciabilidad
 ---
 Siendo la función $f$ es [[Diferenciable|diferenciable]], podemos plantear la derivada direccional de $v$ como
 
 $$ f'_\hat{v} (x_0) = \sum \frac{\partial f}{\partial x_i}(x_0) \cdot v_i $$
 
-### Gradiente
+# Gradiente
 ---
 También podemos plantear la derivada direccional de $v$ con ayuda del [[Gradiente|gradiente]], de la siguiente forma
 
@@ -32,7 +32,7 @@ $$ f'_\hat{v} (x_0) = \nabla f(x_0) \cdot \hat{v} $$
 
 Que podemos ver como es el equivalente a lo que vimos anteriormente
 
-#### Notas: Para cuando es diferenciable
+## Notas: Para cuando es diferenciable
 ---
  * $\lVert f'_\hat{v}(x_0) \rVert \le \lVert \nabla f(x_0) \rVert \cdot \lVert \hat{v} \rVert \to \lVert f'_\hat{v}(x_0) \rVert \le \lVert \nabla f(x_0) \rVert \implies -\lVert \nabla f(x_0) \rVert \le f'_\hat{v}(x_0) \le \lVert \nabla f(x_0) \rVert$
  * Con $\nabla f(x_0) \ne \vec{0}$
@@ -41,7 +41,7 @@ Que podemos ver como es el equivalente a lo que vimos anteriormente
 	 * $f'_{\hat{v}_{nula}}(x_0) = 0$, entonces podemos encontrar la dirección nula siendo esta perpendicular a las direcciones maxima y minima
  * Con $\nabla f(x_0) = \vec{0}$ entonces para cualquier dirección es $0$
 
-### Jacobiana
+# Jacobiana
 ---
 También podemos plantear la derivada direccional de $v$ con ayuda de la [[Jacobiana]], de la siguiente forma
 

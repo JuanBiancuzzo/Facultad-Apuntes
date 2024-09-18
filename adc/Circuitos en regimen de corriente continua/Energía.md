@@ -5,6 +5,6 @@ tags:
   - nota/facultad
   - fisica-1/Trabajo-y-energía
 ---
-### Definición
+# Definición
 ---
 La energía de un [[Sistema|sistema]] mide su capacidad de hacer [[Trabajo|trabajo]]. No se destruye nunca, solo se transforma de un tipo a otro. Es un escalar, se mide en Julios $J = [N ~ m]$

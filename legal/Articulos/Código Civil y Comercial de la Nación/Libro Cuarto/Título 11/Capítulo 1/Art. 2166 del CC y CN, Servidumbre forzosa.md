@@ -14,7 +14,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Cuarto/
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Nadie puede imponer la constitución de una servidumbre, excepto que la ley prevea expresamente la necesidad jurídica de hacerlo, caso en el cual se denomina forzosa.
 
@@ -24,5 +24,5 @@ Si el titular del fundo sirviente no conviene la indemnización con el del fundo
 
 La acción para reclamar una servidumbre forzosa es imprescriptible."
 
-### Interpretación
+# Interpretación
 ---

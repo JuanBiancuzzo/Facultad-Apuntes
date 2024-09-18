@@ -4,7 +4,7 @@ tags:
   - bdd/General
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Las tablas se refiere al tipo de modelado de datos donde se guardan los datos recogidos por un [[Programa|programa]]. Su estructura general se asemeja a la vista general de un programa de tablas
 

@@ -4,7 +4,7 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La persona humana integra la sociedad y participa de su estructura jurídica. Es un sujeto de derecho como tradicionalmente se la denomina. El [[Código Civil y Comercial de la Nación|Código civil y comercial]] la considera en el Libro Primero, Parte General, Título I, a partir del [[Art. 19 del CC y CN, Comienzo de la existencia|Art.19 del CC y CN]] que establece 
 ![[Art. 19 del CC y CN, Comienzo de la existencia#Artículo]]

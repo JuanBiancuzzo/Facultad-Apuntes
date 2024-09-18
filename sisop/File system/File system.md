@@ -9,11 +9,11 @@ aliases:
   - Sistema de archivos
   - File path#Path
 ---
-### Definición
+# Definición
 ---
 Permite al usuario organizar sus datos para que se persistan a través de un largo período de tiempo.
 
-#### Capa de abstracción
+## Capa de abstracción
 ---
 Es un tipo genérico de interfaz para cualquier tipo de filesystem que es posible sólo porque el [[Kernel|kernel]] implementa una capa de abstracción que rodea esta interface para con el [[File system|sistema de archivos]] de bajo nivel.
 
@@ -77,42 +77,42 @@ El resultado es una capa de abstracción general que le permite al kernel maneja
 \end{document}
 ```
 
-#### Definiciones
+## Definiciones
 ---
 Veamos algunas definiciones
 
-#### Path
+## Path
 ---
 Es el string que identifica unívocamente a un [[Directorio|directorio]] o [[Archivo|archivo]] dentro de un dispositivo
 
-#### Root directory
+## Root directory
 ---
 Es el directorio de que cuelgan todos los demás
 
-#### Absolute path
+## Absolute path
 ---
 Es la [[File system#Path|ruta]] desde el [[File system#Root Directorio directory|directorio raíz]]
 
-#### Relative path
+## Relative path
 ---
 Es la [[File system#Path|ruta]] relativa que se interpreta a partir del [[Directorio|directorio]] actual.
 
-#### Current directory
+## Current directory
 ---
 Es el directorio actual en el cual se está ejecutando el [[Proceso|proceso]]
 
-#### Hard link
+## Hard link
 ---
 Es el mapeo entre el nombre y el [[Archivo|archivo]] subyacente, esto implica que la estructura de un file system que permite múltiples hard links ya no es de [[Árbol|árbol]] invertido. Aquellos [[Sistema operativo|sistemas operativos]] que lo permiten se cuidan de no crear ciclos asegurándose que la estructura sea un grafo dirigido acíclico.
 
-#### Soft link
+## Soft link
 ---
 Se da cuando un archivo puede ser llamado por distintos nombres.
 
-#### Volumen
+## Volumen
 ---
 Es una abstracción que corresponde a un disco lógico. En el caso más simple un disco corresponde a un disco físico. Es una colección de recursos físicos de almacenamiento.
 
-#### Mount point
+## Mount point
 ---
 Es un punto en el cual el [[File system#Root Directorio directory|root]] de un volumen se engancha dentro de la estructura existente de otro file system.

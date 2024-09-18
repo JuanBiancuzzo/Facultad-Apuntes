@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - fisica-2/Electrostática-en-conductores-y-dieléctricos
 ---
-### Definición
+# Definición
 ---
 Son aquellos [[Capacitor|capacitores]] que comparten la misma [[Tensión|tensión]] entre los mismos [[Nodo|nodos]] ([[Elementos en paralelo]])
 

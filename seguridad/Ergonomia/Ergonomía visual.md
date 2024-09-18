@@ -4,21 +4,21 @@ tags:
   - seguridad/Ergonomia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[Ergonomía|ergonomía]] visual favorece la comunicación visual en el sistema persona-ambiente.
 
-##### Flujo luminoso
+### Flujo luminoso
 Es la cantidad de energía radiada dentro del espectro visible por unidad de tiempo
 
-##### [[Intensidad]] luminosa
+### [[Intensidad]] luminosa
 Es el flujo luminoso emitido en una dirección, representado por el ángulo sólido. Es un concepto vinculado con la fuente luminosa
 
-##### Iluminancia
+### Iluminancia
 Es el flujo que llega a una superficie (o el número de lúmenes que llega a una superficie). Es un concepto vinculado al lugar donde se recibe la radiación.
 
 
-### Iluminación
+# Iluminación
 ---
 La intensidad mínima de iluminación, medida sobre el plano de trabajo, ya sea éste horizontal, vertical u oblicuo, esta dado por las siguientes tablas
 
@@ -44,6 +44,6 @@ La intensidad mínima de iluminación, medida sobre el plano de trabajo, ya sea 
 | Iluminación general                               | 400          |
 | Iluminación sobre el plano de lectura de aparatos | 600          |
 
-#### Medición
+## Medición
 ---
 El método de medición que frecuentemente se utiliza, es una técnica de estudio fundamentada en una cuadrícula de puntos de medición que cubre toda la zona analizada. La base de esta técnica es la división del interior en varias áreas iguales, cada una de ellas idealmente cuadrada. Se mide la iluminancia existente en el centro de cada área a la altura de $0.8~m$ sobre el nivel del suelo y se calcula un valor medio de iluminacia.

@@ -15,7 +15,7 @@ aliases:
 referencias:
   - "220"
 ---
-### Definición
+# Definición
 ---
 La unidad de control, es uno de los tres bloques funcionales principales en los que se divide una [[Procesador|CPU]]. Su función es buscar las instrucciones en la [[Memoria|memoria]] principal, decodificarlas y ejecutarlas, empleando para ello la unidad de proceso<sup><a href="#ref-220" style="color: inherit; text-decoration: none;">[220]</a></sup> 
 
@@ -29,7 +29,7 @@ Cuando el programa tiene una bifurcación(`branch` o `jump`), la nueva direcció
 
 El PC recibe un nuevo valor, que es la dirección desde la cual leerá la siguiente instrucción
 
-#### En la arquitectura ARC
+## En la arquitectura ARC
 ---
 Hay dos formas de implementarla, con lógica micro-programada o con lógica cableada. El diseño cableado puede ser más difícil de diseñar y de modificar. El microprograma se puede grabar, mientras que el diseño cableado debe cambiar completamente. Sin embargo, es un método más rápido. Nos vamos a centrar en diseño micro-programado
 
@@ -57,7 +57,7 @@ Como la lectura de [[Memoria|memoria]] puede ser más lenta, se utiliza el ACK (
 
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

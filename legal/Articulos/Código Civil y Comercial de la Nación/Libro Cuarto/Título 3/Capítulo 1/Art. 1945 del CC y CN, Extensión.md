@@ -14,7 +14,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Cuarto/
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El dominio de una cosa comprende los objetos que forman un todo con ella o son sus accesorios.
 
@@ -24,7 +24,7 @@ Todas las construcciones, siembras o plantaciones existentes en un inmueble pert
 
 Se presume que las construcciones, siembras o plantaciones las hizo el dueño del inmueble, si no se prueba lo contrario."
 
-### Interpretación
+# Interpretación
 ---
 
 

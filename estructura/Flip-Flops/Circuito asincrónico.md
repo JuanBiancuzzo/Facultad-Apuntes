@@ -4,6 +4,6 @@ tags:
   - estructura/Flip-Flops
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es aquel [[Circuito secuencial]], q a diferencia del [[Circuito sincrónico|sincrónico]] puede variar en el momento que las entradas varian.

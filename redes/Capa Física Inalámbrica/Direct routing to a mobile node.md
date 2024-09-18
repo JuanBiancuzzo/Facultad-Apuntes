@@ -4,7 +4,7 @@ tags:
  - redes/Capa-Física-Inalámbrica
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El enfoque mostrado previamente sufre una ineficiencia conocida como [[Triangle routing problem (Triangulamiento)|triangle routing problem]]. Los [[Paquete|paquetes]] se envían primero a la [[Red|red]] local, luego a la red extranjera, y finalmente al nodo móvil
 

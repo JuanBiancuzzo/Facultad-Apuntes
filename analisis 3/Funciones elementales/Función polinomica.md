@@ -4,7 +4,7 @@ tags:
   - analisis-3/Funciones-elementales
   - nota/facultad
 ---
-### Definción
+# Definción
 ---
 Son combinaciones lineal de la [[Función potencia]], de la forma
 $$ p_n(z) = \sum_{i = 0}^{n} c_i \cdot (z - z_i)^n $$

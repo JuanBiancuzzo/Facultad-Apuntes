@@ -6,7 +6,7 @@ tags:
   - aninfo/Prototipado-y-experiencia-del-usuario
   - nota/facultad
 ---
-### Principios
+# Principios
 ---
 Es el conjunto de factores y elementos relativos a la interacción del usuario, con un entorno o dispositivo concretos, cuyo resultado es la generación de una percepción positiva o negativa de dicho servicio, producto o dispositivo.
 

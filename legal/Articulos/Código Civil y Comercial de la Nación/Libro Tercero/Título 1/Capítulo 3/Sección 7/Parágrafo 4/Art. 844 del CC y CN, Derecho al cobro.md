@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El acreedor, o cada acreedor, o todos ellos conjuntamente, pueden reclamar al deudor la totalidad de la obligación."
 
-### Interpretación
+# Interpretación
 ---

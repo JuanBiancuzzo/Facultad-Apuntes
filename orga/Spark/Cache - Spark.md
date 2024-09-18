@@ -4,7 +4,7 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 [[Cache|Cachea]] un [[Resilent distributed dataset - Spark|RDD]] intermedio que va a ser utilizado varias veces de modo de evitar tener que ejecutar todas las [[Transformación - Spark|transformaciones]] cada vez
 

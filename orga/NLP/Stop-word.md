@@ -4,7 +4,7 @@ tags:
   - orga/NLP/1
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Son "palabras vacías" son palabras demasiado comunes o sin significado como artículos, pronombres, preposiciones, etc. 
 

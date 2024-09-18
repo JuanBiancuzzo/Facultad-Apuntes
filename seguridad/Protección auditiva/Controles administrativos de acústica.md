@@ -4,6 +4,6 @@ tags:
   - seguridad/Protección-auditiva
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La reducción del [[Ruido]] mediante la organización del trabajo, limitando la duración de exposición al mismo.

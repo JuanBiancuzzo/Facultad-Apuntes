@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Constitución de la Nación/Parte 2/Título 1/Secció
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Aprobado un proyecto de ley por la Cámara de su origen, pasa para su discusión a la otra Cámara. Aprobado por ambas, pasa al Poder Ejecutivo de la Nación para su examen; y si también obtiene su aprobación, lo promulga como ley."
 
-### Interpretación
+# Interpretación
 ---

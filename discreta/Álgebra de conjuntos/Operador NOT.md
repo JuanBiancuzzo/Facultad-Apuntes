@@ -10,11 +10,11 @@ aliases:
   - Inversor
   - Negación
 ---
-### Definición
+# Definición
 ---
 Este [[Operación lógica|operador lógico]] tiene varias representaciones 
 
-#### Álgebra de proposiciones
+## Álgebra de proposiciones
 ---
 Considerando las [[Función proposicional|funciones proposicionales]] correspondientes $p'$ dada por la [[Tabla de verdad|tabla de verdad]] $$ \begin{array}{|c|c|}
 \hline
@@ -24,11 +24,11 @@ p & p'\\
 1 & 0 \\
 \hline
 \end{array} $$
-#### Álgebra de conjunto
+## Álgebra de conjunto
 ---
 Definimos la negación $P'$ como el [[Conjunto|conjunto]] de elementos que no pertenecen a $P$
 
-#### En SQL
+## En SQL
 ---
 En [[Structured Query Language|SQL]] se usa en la cláusula [[Sentencia WHERE|WHERE]], y se usa en combinación de otros [[SQL Keywords#Operadores|operadores]] para dar el resultado opuesto 
 
@@ -38,7 +38,7 @@ FROM nombre_tabla
 WHERE NOT condicion;
 ```
 
-#### Electronica
+## Electronica
 ---
 En la electrónica digital la [[algo 1/Introducción a la programación/Información.md|información]] se representa mediante dos rangos distintos de [[Tensión|tensión]]
 
@@ -157,14 +157,14 @@ Definimos punto de conmutación o umbral lógico $$ V_M \equiv \text{tensión de
 * Para $0 \le V_{IN} < V_M ~~ \implies V_{OUT} = V^+$
 * Para $V_M < V_{IN} \le V^+ ~~ \implies V_{OUT} = 0$
 
-##### Propiedad fundamental: Regeneración de la señal
+### Propiedad fundamental: Regeneración de la señal
 ---
 Un inversor tiene dos estados lógicos de salida bien definidos ($0$ o $V^+$) incluso con ruido en $V_{IN}$
 * Regeneración de nivel
 * Supresión de ruido
 * Perfeccionamiento del borde de un pulso
 
-##### Implementación
+### Implementación
 ---
 Partiendo de la una representación [[Inversor real|real]] del inversor, con la siguiente curva 
 

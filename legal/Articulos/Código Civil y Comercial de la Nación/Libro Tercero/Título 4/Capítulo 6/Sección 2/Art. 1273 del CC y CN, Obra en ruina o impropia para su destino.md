@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El constructor de una obra realizada en inmueble destinada por su naturaleza a tener larga duración responde al comitente y al adquirente de la obra por los daños que comprometen su solidez y por los que la hacen impropia para su destino. El constructor sólo se libera si prueba la incidencia de una causa ajena. No es causa ajena el vicio del suelo, aunque el terreno pertenezca al comitente o a un tercero, ni el vicio de los materiales, aunque no sean provistos por el contratista."
 
-### Interpretación
+# Interpretación
 ---
 
 

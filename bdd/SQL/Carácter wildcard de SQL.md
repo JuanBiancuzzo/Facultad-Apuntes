@@ -4,7 +4,7 @@ tags:
   - bdd/SQL
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Esas se usan para sustituir un o más caracteres en un string, se usan en el [[Operador LIKE|operador LIKE]] para determinar un patrón
 
@@ -19,7 +19,7 @@ Esas se usan para sustituir un o más caracteres en un string, se usan en el [[O
 \* No se puede usar en [[PostgreSQL|PostgreSQL]] y en [[MySQL|MySQL]]
 \*\* Solo se puede usar en [[Base de datos de Oracle|base de datos de Oracle]]
 
-#### Ejemplos
+## Ejemplos
 ---
 Devuelve todos los clientes que terminen en es
 ```SQL

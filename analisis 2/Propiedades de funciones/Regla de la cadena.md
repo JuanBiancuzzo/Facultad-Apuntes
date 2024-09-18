@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Propiedades-de-funciones
 ---
-### Definición
+# Definición
 ---
 Sea $g : V \subseteq \mathbb{R}^m \to \mathbb{R}^n$ una [[Función|función]] definida en el [[analisis 2/Topología/Conjunto abierto.md|conjunto abierto]] $V$ de $\mathbb{R}^m$, [[Diferenciable|diferenciable]] en $x_0 \in V$.
 
@@ -26,6 +26,6 @@ Con $h$ siendo un escalar, y $h = f \circ \vec{g}$
 
 $$ h'(t_0) = \nabla f(\vec{g}(t_0)) \cdot \vec{g}(t_0) $$
 
-#### Nota
+## Nota
 ---
 Cuando $g$ es diferenciable en $a$ y $f$ es diferenciable en $g(a)$ entonces $h = f \circ g$ es diferenciable en $a$

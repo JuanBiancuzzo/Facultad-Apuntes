@@ -7,7 +7,7 @@ tags:
 aliases:
   - Coeficiente de autoinducción
 ---
-### Definición
+# Definición
 ---
 Según la [[Ley de Faraday|ley de Faraday]], si tenemos un [[Circuito eléctrico|circuito]] con una [[Inductor|bobina]] por el cual fluye una [[Corriente eléctrica|corriente]] $i(t)$
 

@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Constitución de la Nación/Parte 2/Título 2/Capítu
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Las provincias conservan todo el poder no delegado por esta [[Constitución de la Nación|Constitución]] al [[Gobierno federal|Gobierno federal]], y el que expresamente se hayan reservado por pactos especiales al tiempo de su incorporación."
 
-### Interpretación
+# Interpretación
 ---

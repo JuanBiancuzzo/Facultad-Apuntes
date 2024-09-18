@@ -4,7 +4,7 @@ tags:
  - redes/Capa-de-Enlace
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En este tipo de protocolos, los nodos transmiten datos a tasa completa a través del canal. Si ocurre una colisión, entonces reenviarán el [[Paquete|paquete]], pero no inmediatamente. Si el tiempo de espera es el mismo, entonces ocurrirá una colisión nuevamente. Es por esto que los nodos esperarán tiempos aleatorios antes de reenviar el paquete.
 

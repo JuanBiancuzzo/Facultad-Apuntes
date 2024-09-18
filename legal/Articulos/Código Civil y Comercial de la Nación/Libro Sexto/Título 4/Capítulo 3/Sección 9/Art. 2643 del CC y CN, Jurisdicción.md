@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Sexto/T
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Son competentes para entender en la sucesión por causa de muerte, los jueces del último domicilio del causante o los del lugar de situación de los bienes inmuebles en el país respecto de éstos."
 
-### Interpretación
+# Interpretación
 ---

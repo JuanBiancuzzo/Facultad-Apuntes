@@ -6,7 +6,7 @@ tags:
   - dispo/Transistor-bipolar-de-juntura
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El [[Transistor bipolar de juntura|TBJ]] está en conducción pero la [[Corriente eléctrica|corriente]] depende de $V_{BE}$ y de $V_{BC}$. La base está inundada de [[Carga eléctrica|portadores]] minoritarios. 
 
@@ -18,13 +18,13 @@ Con $V_{BE} > 0$ y $V_{BC} > 0$ $$  \begin{align}
 	I_E &= -\frac{I_S}{\beta_F} \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - 1 \right) - I_S \left( \exp \left( \frac{V_{BE}}{V_{th}} \right) - \exp \left( \frac{V_{BC}}{V_{th}} \right) \right)
 \end{align}  $$ ^7f7ec7
 
-#### [[Modelo de Ebers-Moll]]
+## [[Modelo de Ebers-Moll]]
 ---
 ![[Modelo de Ebers-Moll para saturación.webp]]
 
 El dispositivo se comporta como dos [[Diodo|diodos]] en [[Convención de signos para la tensión de polarización#Polarización directa|directa]] con la base como ánodo común. Luego puede obtenerse $V_{CE ~ (sat)} = V_{BE ~ (on)} - V_{BC ~ (on)} \simeq 0.2~V$. $I_B$ e $I_C$ dependen del circuito externo.
 
-### Análisis
+# Análisis
 ---
 ![[Perfil de portadores minoritarios en saturación.webp]]
 

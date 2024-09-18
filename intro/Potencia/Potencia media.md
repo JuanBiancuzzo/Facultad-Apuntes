@@ -4,7 +4,7 @@ tags:
   - intro/Potencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Al igual que en la [[Tensión promedio|tension promedio]], la potencia promedio ($P_m$) es el cociente entre el periodo y el area bajo la curva de la función $p(t)$. Es decir, 
 $$

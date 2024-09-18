@@ -4,7 +4,7 @@ tags:
   - sisop/Scheduling
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La forma más fácil para tener un [[Scheduler|planificador]] para un sistema [[Arquitectura multiprocesador|multiprocesador]] es la de reutilizar el marco de trabajo básico para un [[Políticas de planificación#Mono-Procesador|planificador de monoprocesador]].
 

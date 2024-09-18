@@ -4,7 +4,7 @@ tags:
   - algebra-2/Espacios-euclídeos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado $S_1$ y $S_2$ dos subespacios de $\mathbb{V}$, por lo tanto estos cumplen que 
 

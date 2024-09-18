@@ -4,7 +4,7 @@ tags:
   - adc/Circuitos-en-regimen-de-corriente-continua
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Podemos simplificar un [[Amplificador operacional]], con el siguiente [[Modelo]]
 

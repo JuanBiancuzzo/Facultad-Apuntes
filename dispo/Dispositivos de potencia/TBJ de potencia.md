@@ -4,7 +4,7 @@ tags:
   - dispo/Dispositivos-de-potencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Las características de un [[Transistor bipolar de juntura|TBJ]] de [[Transistor de potencia|potencia]]
 * Contactos de gran superficie y en caras opuestas para reducir las resistencias parásitas

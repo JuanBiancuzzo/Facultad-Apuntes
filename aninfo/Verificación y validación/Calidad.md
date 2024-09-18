@@ -4,26 +4,26 @@ tags:
   - aninfo/Verificación-y-validación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es la totalidad de prestaciones y características de un producto o servicio que generan su capacidad de satisfacer [[Requisito|necesidades]] explícitas o implícitas.
 
-#### Elementos
+## Elementos
 ---
 Elementos para mantener una buena calidad
 
-##### Gestión
+### Gestión
 ---
 ![[Gestión de la calidad#Definición]]
 
-##### Control
+### Control
 ---
 ![[aninfo/Ingeniería de software/Control de calidad#Definición]]
 
-##### Aseguramiento
+### Aseguramiento
 ---
 ![[Aseguramiento de la calidad#Definición]]
 
-##### Mejora
+### Mejora
 ---
 ![[Mejora de la calidad#Definición]]

@@ -4,6 +4,6 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Este se encarga de gestionar cómo y dónde guardar la información en una computadora, y cómo poder consultarla.

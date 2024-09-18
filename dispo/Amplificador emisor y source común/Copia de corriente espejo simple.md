@@ -4,7 +4,7 @@ tags:
   - dispo/Amplificador-emisor-y-source-común
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 ![[Copia de corriente espejo simple.webp]]
 
@@ -18,13 +18,13 @@ Es importante contar con transistores "bien apareados":
 * Mismo $t_{ox}$
 * etc.
 
-#### Fuente espejo con P-MOSFET
+## Fuente espejo con P-MOSFET
 ---
 ![[Copia de corriente espejo simple P-MOSFET.webp]]
 
 Despreciando el [[Efecto de modulación del largo del canal|efecto de modulación del largo del canal]] $$ I_{REF} = -i_{D1} = \frac{1}{2} \mu_p C'_{ox} \left( \frac{W}{L} \right)_1 (V_{REF} - V_{DD} - V_T)^2 $$ $$ i_{out} = -i_{D2} = \frac{1}{2} \mu_p C'_{ox} \left( \frac{W}{L} \right)_2 (V_{REF} - V_{DD} - V_T)^2 $$
 $$ \implies i_{out} = I_{REF} ~ \frac{\left( \frac{W}{L} \right)_2}{\left( \frac{W}{L} \right)_1} $$
-#### Múltiples fuentes de corriente
+## Múltiples fuentes de corriente
 ---
 Dado que $I_G = 0$, de una sola referencia de [[Tensión|tensión]] es posible obtener múltiples fuentes espejo
 
@@ -35,7 +35,7 @@ $$ I_{out ~ (n)} = I_{REF} ~ \frac{\left( \frac{W}{L} \right)_n}{\left( \frac{W}
 La misma idea se aplica a [[Fuente de corriente|fuentes de corriente]] [[Transistor de efecto de campo metal-óxido-semiconductor#Canal-N|NMOS]]
 ![[Copia de corriente espejo simple múltiples NMOS.webp]]
 
-#### Con un TBJ
+## Con un TBJ
 ---
 Veamos un ejemplo con [[Transistor bipolar de juntura|TBJ]] de tipo [[Transistor bipolar de juntura#PNP|PNP]]
 

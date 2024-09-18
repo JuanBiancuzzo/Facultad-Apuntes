@@ -4,7 +4,7 @@ tags:
   - seguridad/Contaminación-del-ambiente-laboral
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 En la legistlación argentina se adoptan los límites de la ACGIH (American conference of Governmental industrial hygienists). Se establecen los efectos adversos en base a:
 * Estudios [[Toxicologia|toxicológicos]] con animales de laboratorio

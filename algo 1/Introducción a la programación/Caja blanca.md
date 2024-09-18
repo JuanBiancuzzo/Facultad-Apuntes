@@ -6,7 +6,7 @@ tags:
 aliases:
   - White box
 ---
-### Definición
+# Definición
 ---
 Aquel elemento que es estudiado desde el punto de vista de las interacciones entre los componentes internos que lo integran
 

@@ -4,6 +4,6 @@ tags:
   - aninfo/Peopleware
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Le damos el doble de peso a las pérdidas que a las ganancias, a un [[Riesgo|riesgo]] dado

@@ -17,7 +17,7 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La regla de la mora automática no rige respecto de las obligaciones:
 
@@ -25,5 +25,5 @@ tags:
  b. sujetas a plazo indeterminado propiamente dicho; si no hay plazo, el juez a pedido de parte, lo debe fijar mediante el procedimiento más breve que prevea la ley local, a menos que el acreedor opte por acumular las acciones de fijación de plazo y de cumplimiento, en cuyo caso el deudor queda constituido en mora en la fecha indicada por la sentencia para el cumplimiento de la obligación.
 En caso de duda respecto a si el plazo es tácito o indeterminado propiamente dicho, se considera que es tácito."
 
-### Interpretación
+# Interpretación
 ---

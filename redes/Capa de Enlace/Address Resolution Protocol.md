@@ -6,7 +6,7 @@ tags:
 aliases:
   - ARP
 ---
-### Definición
+# Definición
 ---
 Debido a que existen tanto [[Internet Protocol Address|direcciones IP]] como [[Media Access Control Address|direcciones MAC]], existe una necesidad de traducir entre ellas. Para esto se utiliza el Address Resolution Protocol
 
@@ -22,6 +22,6 @@ Las tablas son configuradas automáticamente (plug and play) y no deben mantenid
 
 Este es un protocolo que se encuentra entre la [[Capa de Red|capa de red]] y la [[Capa de Enlace|capa de enlace]], ya que contiene información relacionada con ambas capas
 
-#### Mandando un datagrama fuera de la subnet
+## Mandando un datagrama fuera de la subnet
 ---
 Cuando enviamos un [[Paquete|datagrama]] a través de múltiples routers hacia un destino externo, debemos incluir la dirección MAC del [[Router|router]] inmediato ([[Border Gateway Protocol#^755087|next-hop]]). Si incluimos la dirección MAC del host de destino, ningún adaptador de la red tomará el paquete y este será descartado. Para conocer la dirección IP del próximo router inmediato, se utiliza el protocolo ARP

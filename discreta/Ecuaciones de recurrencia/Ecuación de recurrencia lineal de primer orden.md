@@ -4,7 +4,7 @@ tags:
   - discreta/Ecuaciones-de-recurrencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea la[[Ecuación de recurrencia lineal|ecuación de recurrencia]] $x_{n+1} = ax_n + b$, con $x_0$, $a$, $b$ constantes, entonces podemos llegar a una solución de forma artesanal de la forma $$ x_{n+1} =a_0 ~ a^n + b ~ \frac{a^n - 1}{a - 1}, ~~~ a \ne 1 $$
 Podemos llegar a una expresión equivalente, definiendo $x^*$ como el punto de equilibrio $$ x_{n + 1} = \begin{cases} 
@@ -19,7 +19,7 @@ Podemos llegar a una expresión equivalente, definiendo $x^*$ como el punto de e
 
 Si $b$ ya no es constante, tendremos $x_{n+1} = ax_{n} + b_n$, en donde encontramos la solución general $$ x_0 ~ a^n + \sum_{k=0}^{n-1}a^k ~ b_{n-1-k} $$
 
-#### Solución
+## Solución
 ---
 Sea $a$ constante, entonces la ecuación de recurrencia de la forma $$ x_{n + 1}= ax_n + b_n $$
 Podemos obtener la solución general como suma de solución de la homogénea más una solución particular

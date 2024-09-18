@@ -4,7 +4,7 @@ tags:
   - seguridad/Residuos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un proceso de degradación bacteriana de materia orgánica biodegradable en presencia de aire
 

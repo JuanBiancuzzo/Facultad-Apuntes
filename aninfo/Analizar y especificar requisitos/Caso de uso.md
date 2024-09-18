@@ -4,7 +4,7 @@ tags:
   - aninfo/Analizar-y-especificar-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Una secuencia de acciones realizadas por un [[Sistema]] que generan un resultado observable de valor para un [[Actor]] en particular. También lo podemos pensar como, Una historia acerca de cómo un actor utiliza un [[Sistema]] para alcanzar sus objetivos. 
 
@@ -14,27 +14,27 @@ Estos son tecnológicamente neutros, es decir, no son sobre una implementación.
 
 La representación de [[Modelo]] visual, puede estar dada por un [[Unified modelling language#Diagrama de casos de uso|diagrama de casos de uso en UML]] 
 
-#### Formatos
+## Formatos
 ---
 Hay diferentes formatos que pueden encontrarse los casos de uso, como
 
-##### Formato breve
+### Formato breve
 ---
 ![[Formato de caso de uso breve#Definición]]
 
-##### Formato secuencia de acciones
+### Formato secuencia de acciones
 ---
 ![[Formato de caso de uso secuencia de acciones#Definición]]
 
-##### Formato de dos columnas o diálogo
+### Formato de dos columnas o diálogo
 ---
 ![[Formato de caso de uso de dos columnas#Definición]]
 
-##### Formato más completo
+### Formato más completo
 ---
 ![[Formato de caso de uso completo#Definición]]
 
-#### Cómo encontrarlos
+## Cómo encontrarlos
 ---
 1. Establecer los límites del [[Sistema]]
 2. Identificar [[Actor|actores]] primarios y sus objetivos

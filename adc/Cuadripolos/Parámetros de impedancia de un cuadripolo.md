@@ -4,7 +4,7 @@ tags:
   - adc/Cuadripolos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La relación que tiene esta dada por $$ {\begin{cases} 
 	V_1 = z_{11} ~ I_1 + z_{12} ~ I_2 \\ 

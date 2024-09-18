@@ -4,7 +4,7 @@ tags:
   - seguridad/Estrés-termico
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Poseer mecanismos compensatorios adecuados para mantener una constancia relativa de la [[Temperatura]] interna por medio de centros termoreguladores ubicados en el hipotálamo, aún cuando varía las condiciones exteriores que podrían potencialmente modificarla.
 

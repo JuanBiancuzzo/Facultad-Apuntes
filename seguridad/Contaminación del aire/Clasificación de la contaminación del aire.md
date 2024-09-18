@@ -4,11 +4,11 @@ tags:
   - seguridad/Contaminación-del-aire
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Tenemos 4 clasificadores
 
-#### Origen
+## Origen
 ---
 * Primario:
 	* Se originan directamente en la fuente. Ejercen su acción tal y como sale de la fuente
@@ -21,14 +21,14 @@ Ambas se puede verse como
 * Contaminantes fotoquímicos
 	* Contaminantes que se producen por la reacción de dos o más compuestos en presencia de la luz solar
 
-#### Composición
+## Composición
 ---
 * Orgánicos
 	* Por ejemplo, solventes orgánicos, hidrocarburos, fibras de algodón
 * Inorgánicos
 	* Por ejemplo, óxidos de nitrógeno, partículas minerales
 
-#### Estado físico
+## Estado físico
 ---
 * Partículas sólidas
 	* Son aquellas que dan lugar a polvos y humos
@@ -43,7 +43,7 @@ Importancia del diámetro:
  * Partículas de diámetro mayor a $20~\mu m$ se eliminan del aire por gravedad
  * $PM_x$ es la medida donde la partícula tiene un diámetro menor o igual a $x$, donde $x$ se mide en $\mu m$
 
-#### Estado biótico
+## Estado biótico
 ---
 * Vivos
 * No vivos

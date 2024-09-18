@@ -4,7 +4,7 @@ tags:
   - dispo/Amplificador-emisor-y-source-común
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Para $v_s$ demasiado negativo el [[Transistor de efecto de campo metal-óxido-semiconductor|transistor]] se va a [[Transistor de efecto de campo metal-óxido-semiconductor#Corte del transistor de efecto de campo metal-óxido-semiconductor (MOSFET) Corte|corte]], por lo que toda la [[Corriente eléctrica|corriente]] de la señal anula la corriente de polarización $$ \begin{matrix} 
 	i_d = I_{DQ} \implies i_D = 0 \\ 

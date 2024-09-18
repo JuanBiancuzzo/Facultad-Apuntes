@@ -4,7 +4,7 @@ tags:
   - orga/Visualizaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Los plots tienen objetivos y datos bien definidos, y pueden o no contar una historia.
 * Sus metáforas visuales son muy simples

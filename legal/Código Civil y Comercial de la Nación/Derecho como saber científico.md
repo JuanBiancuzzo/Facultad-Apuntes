@@ -4,7 +4,7 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Se emplea también la palabra derecho para aludir a la ciencia del derecho que también podemos denominar ciencia jurídica, que es "la disciplina que tiene como objeto el estudio o investigación sobre el derecho vigente en un momento y lugar determinados". 
 

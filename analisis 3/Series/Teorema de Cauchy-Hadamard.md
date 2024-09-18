@@ -4,7 +4,7 @@ tags:
   - analisis-3/Series
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $\mathbb{D}$ el [[Dominio de convergencia]] de la [[Serie de potencias]] $\displaystyle\sum_{n = 0}^{\infty} c_n \cdot (z - z_0)^n$ y sea $f : \mathbb{D} \to \mathbb{C}$ la funciónn definida por esta [[Serie]]. Entonces
 
@@ -14,12 +14,12 @@ Sea $\mathbb{D}$ el [[Dominio de convergencia]] de la [[Serie de potencias]] $\d
 	2) $\mathbb{D} = \mathbb{C} = D(z_0,  r \to \infty)$
 
 
-#### Observación
+## Observación
 1) La $r$ se le llama radio de convergencia de la serie.
 2) En los [[Punto frontera]] $fr(D(z_0, r))$ la serie puede o no converger.
 
 
-### Propiedades
+# Propiedades
 ---
 Sea $f : \mathbb{D} \to \mathbb{C} : f(z) = \displaystyle\sum_{n = 0}^\infty c_n \cdot (z - z_0)^n$ con un radio $r$ de convergencia $r > 0$
 1) $\forall z \in D(z_0, r)$ la convergencia es absoluta

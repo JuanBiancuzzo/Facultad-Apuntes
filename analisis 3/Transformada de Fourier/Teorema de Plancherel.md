@@ -4,12 +4,12 @@ tags:
   - analisis-3/Transformada-de-Fourier
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sobre el espacio $L_2(\mathbb{R})$ el operador $x(t) \to \mathcal{F}[x(t)]$ es [[Función biyectiva|biyectivo]]. Es decir, si $\mathcal{F}[x_1(t)] = \mathcal{F}[x_2(t)]$ (en el sentido [[Valor cuadrático medio|cuadrático]]) entonces $x_1(t) = x_2(t)$ (en el sentido cuadrático). 
 
 Además para cada $x(t) \in L_2(\mathbb{R})$ existe su [[Transformada de Fourier|transformada de Fourier]] $X(j \omega) \equiv \mathcal{F}[x(t)]$ la cual la es de [[Medida de una señal#Energía|energia finita]]. Así mismo para cada [[Señal|señal]] $X(j\omega) \in L_2(\mathbb{R})$ existe $x(t) \equiv \mathcal{F}^{-1}[X(j\omega)]$ también de energía finita. Además se cumple la [[Igualdad de Parseval|relación de Parseval]] $$ \int_{-\infty}^{\infty} |x(t)|^2 ~ dt = \frac{1}{2\pi} \int_{-\infty}^{\infty} |X(j\omega)|^2 ~ d\omega $$
-#### Consideraciones
+## Consideraciones
 ---
 * Se puede interpretar como el calculo del [[Error cuadrático medio|error cuadrático medio]], donde $$ x_m(t) = \frac{1}{2\pi} \int_{-m}^{m} X(j\omega) \exp(j\omega t)  d \omega, ~~~ X(j\omega) = \int_{-\infty}^{\infty} x(t) \exp(-j\omega t)  dt $$donde $x_m(t)$ es la [[Antitransforamda de Fourier|antitransforamda de Fourier]] truncada.
 

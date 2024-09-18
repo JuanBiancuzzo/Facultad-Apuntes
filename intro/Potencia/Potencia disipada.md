@@ -4,7 +4,7 @@ tags:
   - intro/Potencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[Potencia|potencia]] disipada por un [[Resistor]] es la energía por unidad de tiempo que es suministrada al resistor y que éste disipa en forma de calor al ambiente.
 $$ P(t) = V(t) ~ I(t) $$

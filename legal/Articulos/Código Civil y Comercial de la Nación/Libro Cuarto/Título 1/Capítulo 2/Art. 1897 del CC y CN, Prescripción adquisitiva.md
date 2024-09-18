@@ -8,11 +8,11 @@ previo: "[[Capítulo 2, Adquisición, transmisión, extinción y oponibilidad|Ca
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La prescripción para adquirir es el modo por el cual el poseedor de una cosa adquiere un derecho real sobre ella, mediante la posesión durante el tiempo fijado por la ley."
 
-### Interpretación
+# Interpretación
 ---
 La prescripción para adquirir es el modo por el cual el poseedor de una [[Cosa|cosa]] adquiere un [[Libro 4, Derechos Reales|derecho real]] sobre ella, mediante la posesión durante el tiempo fijado por la ley.
 

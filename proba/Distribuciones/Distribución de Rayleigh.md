@@ -3,13 +3,13 @@ dia: 2023-01-23
 tags:
   - distribucion/continua
 ---
-### Definición
+# Definición
 ---
 Se dice que una [[Variable aleatoria]] $X$ tiene distribución de Rayleigh de parametro $\sigma$ si su [[Función de densidad]] es $$ f_X(x) = \frac{x}{\sigma^2}\cdot e^{-\displaystyle\frac{x^2}{2 \cdot \sigma^2}} $$
 
-##### Notación
+### Notación
 $$ X \sim Ray(\sigma) $$
-#### Notas
+## Notas
 ---
 * El [[Soporte]] de $X$ es $Sop(X) = \Set{x \in \mathbb{R} : x \geq 0}$ 
 * $\sigma > 0$

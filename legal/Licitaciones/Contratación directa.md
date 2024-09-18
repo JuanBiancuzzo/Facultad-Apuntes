@@ -4,7 +4,7 @@ tags:
   - legal/Licitaciones
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 ![[Art. 25 del APA, Procedimientos de selección#Inciso N°4, Contratación directa]]
 

@@ -4,7 +4,7 @@ tags:
   - aninfo/Diseño-de-datos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 [[Archivo|Archivos]] y [[Base de datos|base de datos]] implementan la información persistente que el [[Sistema|sistema]] debe recordar.
 

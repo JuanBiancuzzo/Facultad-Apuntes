@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Las normas sobre vicios o defectos se aplican a las diferencias en la calidad de la obra."
 
-### Interpretación
+# Interpretación
 ---

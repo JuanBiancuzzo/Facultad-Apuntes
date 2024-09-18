@@ -4,7 +4,7 @@ tags:
   - legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El concepto de derecho no tiene una única definición, o mejor dicho, su definición es ambigua por lo que no permite una definición concreta, pero si nos la preguntamos podemos conseguir las siguientes respuestas
 
@@ -19,10 +19,10 @@ Los conceptos de [[Estado]] y Derecho son "conceptos conjugados", en el sentido 
 
 Como mencionamos antes, el derecho no tiene una única definición pero hay varias [[Aceptaciones del derecho|aceptaciones de la definción]]
 
-#### Relación con la [[Moral|moral]]
+## Relación con la [[Moral|moral]]
 ---
 ![[Moral#Relación con el Derecho derecho]]
 
-#### Derechos resultantes del [[Contrato|contrato]]
+## Derechos resultantes del [[Contrato|contrato]]
 ---
 ![[Contrato#Derechos resultantes del contrato]]

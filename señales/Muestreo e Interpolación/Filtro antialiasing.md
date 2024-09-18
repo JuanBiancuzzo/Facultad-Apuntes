@@ -4,7 +4,7 @@ tags:
   - señales/Muestreo-e-Interpolación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Un [[Filtro|filtro]] antialiasing intenta reducir el [[Aliasing|aliasing]] de una [[Señal|señal]], donde podemos convertir una señal arbitraria a una [[Señal de banda limitada|señal de banda limitada]] usando un [[Filtro pasa-bajo|filtro pasa-bajo]] 
 

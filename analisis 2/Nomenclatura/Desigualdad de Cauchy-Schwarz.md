@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Nomenclatura
 ---
-### Definición
+# Definición
 ---
 $$(x \cdot y)^2 \le (x)^2(y)^2$$
 

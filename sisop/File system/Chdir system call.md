@@ -6,7 +6,7 @@ tags:
 aliases:
   - Fchdir system call
 ---
-### Definición
+# Definición
 ---
 La [[System call|system call]] `chdir()`
 

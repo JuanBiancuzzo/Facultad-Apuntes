@@ -6,7 +6,7 @@ tags:
 aliases:
   - Bosque
 ---
-### Definición
+# Definición
 ---
 Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo|grafo]] es un bosque si y solo si es [[Camino#Ciclo (Cicle)|acíclico]]. Las componentes conexas de los bosques son árboles. Por definición, un árbol es un boques de una sola componente conexa
 
@@ -18,11 +18,11 @@ Cualquiera de las siguientes definiciones de árbol son equivalentes. El grafo $
 - Es acíclico, pero $T+e$ no
 - Cualquier par de vértices tiene exactamente un [[discreta/Grafos/Camino.md|camino]] que los une
 
-#### Propiedad
+## Propiedad
 ---
 Si a un árbol se le quita una hoja ([[Nodo|vértice]] de [[Grado de un vértice|grado]] $1$), el grafo resultante es un árbol. Esto se debe a que no se generan ciclos ni se pierde la conexidad
 
-#### Demostraciones
+## Demostraciones
 ---
 Para demostrar que en un árbol, el [[Tamaño de un grafo|tamaño]] es igual a el [[Orden de un grafo|orden]] menos uno ($m = n - 1$), utilizaremos [[Principio de inducción|inducción]]. Sea $G$ un árbol de tamaño $n$
 * $n = 1$, al ser [[Grafo simple|simple]], $m = 0$

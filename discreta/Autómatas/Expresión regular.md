@@ -4,11 +4,11 @@ tags:
  - discreta/Autómatas
  - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Las expresiones regulares se expresan a partir de [[Palabra|palabras]], [[Letra|letras]] y los operadores $+$, $\cdot$ y $*$
 
-#### Ejemplo
+## Ejemplo
 ---
 $$ \begin{align} 
 	ab*b &= \Set{ab,~abb,~abbb,~\cdots} \\

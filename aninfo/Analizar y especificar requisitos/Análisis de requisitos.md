@@ -4,7 +4,7 @@ tags:
   - aninfo/Analizar-y-especificar-requisitos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Detectar y resolver conflictos entre los [[Requisito|requisitos]], derivar requisitos, identificar interacciones con el medio ambiente. Se enfoca en identificar y resolver conflictos entre los requisitos.
 

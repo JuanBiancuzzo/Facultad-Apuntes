@@ -4,7 +4,7 @@ tags:
   - sisop/File-system
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[System call]] `opendir()` abre y devuelve un stream que corresponde al [[Directorio]] que se está leyendo en `dirname`. El stream es de tipo `Dir *`.
 

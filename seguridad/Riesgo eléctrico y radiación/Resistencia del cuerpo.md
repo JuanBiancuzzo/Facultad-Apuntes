@@ -4,12 +4,12 @@ tags:
   - seguridad/Riesgo-eléctrico-y-radiación
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 $$ R_c = R_p + R_i $$
 Donde $R_c$ es la [[Resistencia]] del cuerpo, $R_p$ es la [[Resistencia]] de la piel, y $R_i$ es la [[Resistencia]] interna del cuerpo.
 
-#### Resistencia de la piel
+## Resistencia de la piel
 ---
 La resistencia de la piel depende de varios factores:
 * Estado de la piel:
@@ -21,7 +21,7 @@ La resistencia de la piel depende de varios factores:
 * Duración del contacto:
 	* A mayor duración, menor [[Resistencia]]
 
-#### Resistencia del cuerpo humano
+## Resistencia del cuerpo humano
 ---
 Varía con [[Tensión eficaz|tensión]] aplicada, edad, tipo de piel, estado de la piel
 

@@ -4,11 +4,11 @@ tags:
   - legal/Contratos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La [[Ley de Defensa del consumidor|ley 24.240]] ha establecido una serie de obligaciones esenciales en cabeza de los proveedores, que son la otra cara de una misma moneda: a cada obligación impuesta a los proveedores se le corresponde un derecho básico de los consumidores. Así, el derecho a la información se tutela mediante la regulación del cumplimiento del deber de proveerla y el control de la publicidad; el derecho a la seguridad se manifiesta en la responsabilidad objetiva impuesta al proveedor por los daños sufridos por el consumidor o usuario y que fueren causados por defectos en el producto o servicio, y el derecho a la garantía sobre los productos, se manifiestan en la regulación que de ella hace la ley 24.240.
 
-#### Deber de información
+## Deber de información
 ---
 El derecho del consumidor al acceso a la información se constituye en uno de los ejes principales de la tutela legal. Tal es su importancia, que el constituyente lo ha incluido junto con la seguridad, como una de las garantías constitucionales ([[Art. 42 de la Constitución Nacional|art. 42, CN]]). Su importancia radica en la necesidad de tutelar la última esfera que queda de autonomía de la voluntad en el [[Art. 1092 del CC y CN, Relación de consumo. Consumidor|consumidor]].
 
@@ -21,7 +21,7 @@ Es desde esta óptica que el legislador ha consagrado el deber de información e
 
 Establecidos los requisitos que debe reunir el deber de información, cabe indagar sobre la carga de la prueba respecto del cumplimiento. En este sentido, la jurisprudencia es unánime en que es el proveedor el que debe demostrar que ha cumplido, en tanto una postura contraria impondría al consumidor el deber de probar un hecho negativo; circunstancia prohibida por el derecho.
 
-#### La publicidad
+## La publicidad
 ---
 La sociedad de consumo para poder funcionar requiere de mecanismos que permitan dar a conocer un producto o servicio, instalarlo en la sociedad y generar la creencia de la necesidad del mismo para que sea demandado en el mercado. Esta función se cumple a través de la publicidad y el marketing. La [[Ley de Defensa del consumidor|ley 24.240]] fue pionera en regular la publicidad en algunos aspectos, completándose la regulación con la sanción del [[Código Civil y Comercial de la Nación|Código Civil y Comercial]] ([[Art. 1101 del CC y CN, Publicidad|arts. 1101]] a [[Art. 1103 del CC y CN, Efectos de la publicidad|1103]]).
 
@@ -29,10 +29,10 @@ La sociedad de consumo para poder funcionar requiere de mecanismos que permitan 
 2) Publicidad ilícita
 3) Acciones frente a la publicidad ilícita
 
-#### Deber de seguridad
+## Deber de seguridad
 ---
 En forma conjunta con el deber de información, el [[Art. 42 de la Constitución Nacional|artículo 42 de la Constitución Nacional]] establece el derecho de los consumidores a que se proteja su salud y sus intereses económicos en el ámbito de las relaciones de consumo. Este derecho es regulado por los [[Art. 5 de la Defensa del Consumidor, Protección al Consumidor|artículos 5º]], [[Art. 6 de la Defensa del Consumidor, Cosas y Servicios Riesgosos|6º]] y [[Art. 40 de la Defensa del Consumidor, Daño directo|40 de la ley 24.240]].
 
-#### Deber de garantía
+## Deber de garantía
 ---
 El régimen legal de la tutela del consumidor establece en el [[Art. 11 de la Defensa del Consumidor, Garantías|artículo 11 de la ley 24.240]] las garantías mínimas y obligatorias que debe otorgar el proveedor respecto de los bienes muebles no consumibles, mientras que el [[Art. 30 de la Defensa del Consumidor, Interrupción de la Prestación del Servicio|artículo 30]] de la misma ley establece la garantía exigible en las prestaciones de servicios.

@@ -4,7 +4,7 @@ tags:
   - discreta/Ecuaciones-de-recurrencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Sea $x_{n+k} = f(x_n,~x_{n+1},~x_{n+2},~\cdots,~x_{n+k+1})$ con conocidos $x_0,~x_1,~\cdots,~x_{k-1}$. Es un problema de valor inicial de orden $k$
 

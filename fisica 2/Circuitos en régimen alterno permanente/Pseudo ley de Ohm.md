@@ -4,7 +4,7 @@ tags:
   - fisica-2/Circuitos-en-régimen-alterno-permanente
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Si desarrollamos los [[Fasor#Representación física|fasor]], llegamos a la pseudo-ley de Ohm $$ \begin{align} 
     V_0 ~ e^{j\phi_v} &= I_0 ~ e^{j\phi_v} ~ \mathbb{Z} \\

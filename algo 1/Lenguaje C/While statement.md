@@ -8,7 +8,7 @@ aliases:
   - Sentencia while
   - Sentencia mientras
 ---
-### Definición
+# Definición
 ---
 Esta [[Estructura de control iterativa|estructura de control]] repite una acción o [[Bloque de acción|bloque de acciones]] mientras el resultado de la evaluación de la expresión de control de la iteración arroje el valor true, esta evaluación se realiza antes de la ejecución del bloque. Funciona de la siguiente manera
 
@@ -33,7 +33,7 @@ while (expresion) {
 
 ^b1e802
 
-#### Rust
+## Rust
 ---
 El while puede repetir su bloque de código mientras se cumpla su condición
 

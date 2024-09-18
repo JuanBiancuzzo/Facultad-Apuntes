@@ -4,7 +4,7 @@ tags:
   - seguridad/Prevención-de-incendios
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es un [[Agente extintor]] que no perjudica el medio ambiente, no conduce la [[Electricidad]] y se inocuo para los equipos y para las personas.
 

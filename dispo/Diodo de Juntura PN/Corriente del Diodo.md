@@ -4,7 +4,7 @@ tags:
   - dispo/Diodo-de-Juntura-PN
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Al aplicar una [[Tensión]] sobre la [[Juntura PN]] circula una [[Corriente eléctrica|corriente]]
 
@@ -19,17 +19,17 @@ La expresión de la corriente en función de la tensión aplicada $$ i_D = f(v_D
 
 Donde esta nos da $$ i_D(v_D) = I_0 \left( \exp\left( \frac{q~v_D}{kT} \right) - 1 \right) $$
 
-### Calculo de la corriente
+# Calculo de la corriente
 ---
 Como no depende de la posición podemos calcularla al corriente en QNR, donde la [[Corriente eléctrica|corriente]]
-##### En la zona p-QNR
+### En la zona p-QNR
 * [[Modelo de enlace de Silicio#Concentración de Portador de carga portadores|Concentración de electrones]] ($n(x)$) son los minoritarios
 * El [[Campo eléctrico]] es aproximadamente $0$
 
 Esto implica que la [[Corriente de arrastre|densidad de corriente de arrastre]] de [[Electrón|electrones]] es baja $$ J_{arr}^{e^-} \propto E \simeq 0 $$
 y si conozco $n(x)$ puedo calcular la [[Corriente de difusión|densidad de corriente de difusión]] de electrones, por lo tanto sabemos la [[Corriente eléctrica#Densidad de corriente|densidad de corriente]] de electrones $J^{e^-}$
 
-##### En la zona n-QNR
+### En la zona n-QNR
 ---
 * [[Modelo de enlace de Silicio#Concentración de Portador de carga portadores|Concentración de huecos]] ($p(x)$) son los minoritarios
 * El [[Campo eléctrico]] es aproximadamente $0$
@@ -37,7 +37,7 @@ y si conozco $n(x)$ puedo calcular la [[Corriente de difusión|densidad de corri
 Esto implica que la [[Corriente de arrastre|densidad de corriente de arrastre]] de [[Hueco|huecos]] es baja $$ J_{arr}^{h^+} \propto E \simeq 0 $$
 y si conozco $p(x)$ puedo calcular la [[Corriente de difusión|densidad de corriente de difusión]] de huecos, por lo tanto sabemos la densidad de corriente de huecos $J^{h^+}$
 
-##### En la zona SCR
+### En la zona SCR
 ---
 Sabemos que las [[Modelo de enlace de Silicio#Concentración de Portador de carga portadores|Concentraciones]] de [[Hueco|huecos]] y [[Electrón|electrones]] es "baja" por la [[Aproximación de vaciamiento]], por lo que no hay [[Recombinación]], y podemos decir que $$ \begin{align}
 	i_p(-x_p) = i_p(x_n) \\
@@ -47,7 +47,7 @@ La [[Corriente eléctrica|corriente]] de mayoritarios del [[Impureza aceptora#Ca
 
 Para que esto se mantenga, se tiene que cumplir la [[Hipótesis de bajo nivel de inyección|hipótesis de bajo nivel de inyección]].
 
-#### Concentraciones de los portadores minoritarios
+## Concentraciones de los portadores minoritarios
 ---
 Sabiendo que por la [[Relación de Boltzmann|relación de Boltzmann]] estando en [[Equilibrio térmico en un semiconductor|equilibrio térmico]], tenemos que la concentración es $$ \begin{align} 
 	\frac{n_0(x_1)}{n_0(x_2)} &= \exp\left( \frac{q ~ (\phi(x_1) - \phi(x_2))}{kT} \right) \\ \\
@@ -74,7 +74,7 @@ Recordando que la tensión de juntura es $\displaystyle\phi_B = \frac{kT}{q} \ln
 	n(-x_p) &\simeq \frac{n_i^2}{N_a} \exp\left( \frac{q ~ v_D}{kT} \right) \\ \\
 	p(x_n) &\simeq \frac{n_i^2}{N_d} \exp\left( \frac{q ~ v_D}{kT} \right) 
 \end{align} $$
-#### Densidad de corriente de difusión en las regiones QNR
+## Densidad de corriente de difusión en las regiones QNR
 ---
 La ecuación de [[Corriente de difusión|difusión]] para [[Electrón|electrones]] en la región p-QNR $$ J_n = q D_N^{(p)} \frac{dn(x)}{dx} $$
 Por la [[Aproximación de diodo corto|aproximación de diodo corto]], podemos decir que la [[Modelo de enlace de Silicio#Concentración de Portador de carga portadores|concentración]] de [[Electrón|electrones]], $n(x)$, suponemos lineal. También por [[Condición de borde en una juntura PN|condiciones de borde]] sabemos que $$ n(x = -W_p) = n_0 = \frac{n_i^2}{N_a} ~~~~~ n(-x_p) = \frac{n_i^2}{N_a} \exp\left( \frac{q~v_D}{kT} \right) $$ donde $W_p$ es el ancho del [[Semiconductor|semiconductor]] del, en este caso, lado p
@@ -89,7 +89,7 @@ Dándonos una densidad de corriente de electrones $$ \begin{align}
 \end{align} $$
 De forma similar para los [[Hueco|huecos]] $$ J_p = q \frac{n_i^2}{N_d} \frac{D_p^{(n)}}{W_n -x_n} ~ \left( \exp\left( \frac{q~v_D}{kT} \right) - 1 \right) $$
 
-#### Corriente total
+## Corriente total
 ---
 Sabemos que la [[Corriente eléctrica#Densidad de corriente|densidad de corriente]] total sabemos que es $J = J_n + J_p$ por lo tanto $$ J(v_D) = q ~ n_i^2  \left( \frac{1}{N_a} \frac{D_n^{(p)}}{W_p -x_p} + \frac{1}{N_d} \frac{D_p^{(n)}}{W_n -x_n} \right) \left( \exp\left( \frac{q~v_D}{kT} \right) - 1 \right) $$
 Por lo que la corriente total es $$ i(v_D) = q ~ A ~ n_i^2  \left( \frac{1}{N_a} \frac{D_n^{(p)}}{W_p -x_p} + \frac{1}{N_d} \frac{D_p^{(n)}}{W_n -x_n} \right) \left( \exp\left( \frac{q~v_D}{kT} \right) - 1 \right) $$

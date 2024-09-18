@@ -9,9 +9,9 @@ previo: "[[legal/Articulos/Regimen legal de la propiedad intelectual/Regimen leg
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La propiedad intelectual se regirá por las disposiciones del derecho común, bajo las condiciones y limitaciones establecidas en la presente Ley."
 
-### Interpretación
+# Interpretación
 ---

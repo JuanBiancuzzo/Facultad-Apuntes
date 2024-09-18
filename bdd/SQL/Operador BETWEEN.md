@@ -4,11 +4,11 @@ tags:
   - bdd/SQL
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 El operador `IN` se usa con la [[Sentencia WHERE|sentencia WHERE]] para permitir especificar un rango de valores que debe cumplir la columna 
 
-#### Sintaxis
+## Sintaxis
 ---
 ```SQL
 SELECT nombre_columna(s)

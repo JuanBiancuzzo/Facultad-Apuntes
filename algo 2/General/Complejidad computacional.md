@@ -4,7 +4,7 @@ tags:
   - algo-2/General
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La complejidad computacional de un [[algo 1/Introducción a la programación/Algoritmo|algoritmo]] se mide por 
 * Cantidad de cálculos necesarios para implementarlo. En general se considera número de multiplicaciones y sumas necesarias

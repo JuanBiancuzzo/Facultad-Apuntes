@@ -6,7 +6,7 @@ tags:
 aliases:
   - DFA
 ---
-### Definición
+# Definición
 ---
 Se designa $M = \left( \Sigma, Q, q_0, \Upsilon, F \right)$ el autómata finito determinístico donde
 * $\Sigma$ es un [[Alfabeto|alfabeto]]
@@ -42,7 +42,7 @@ Podremos representar la función de transición a partir de una tabla, o a parti
 \end{document}
 ```
 
-#### Lenguaje reconocido
+## Lenguaje reconocido
 ---
 Definimos $L(M)$ como el [[Lenguaje|lenguaje]] reconocido por el automata $$ L(M) \stackrel{\text{def}}{=} \bigg\{ x \in \Sigma^*: ~~ \Upsilon(q_0,~x) \in F \bigg\} $$
 Siempre existe un DFA para un [[Lenguaje regular|lenguaje regular]], y los DFA solo dan lenguajes regulares

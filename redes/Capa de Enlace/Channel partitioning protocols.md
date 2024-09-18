@@ -6,7 +6,7 @@ tags:
 referencias:
   - "201"
 ---
-### Definición
+# Definición
 ---
 En esta, el [[Bandwidth|bandwidth]] del [[Acceso a una red por cable|enlace]] es compartido en el tiempo, en la [[Función periódica#Frecuencia|frecuencia]] y en código, a múltiples estaciones simultáneamente
 
@@ -15,7 +15,7 @@ Tenemos los [[Protocolo|protocolos]]
 * [[Frequency Division Multiplexing|Frequency division multiplexing (FDM)]]
 * [[Code Division Multiple Access|Code division multiple access (CDMA)]]
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

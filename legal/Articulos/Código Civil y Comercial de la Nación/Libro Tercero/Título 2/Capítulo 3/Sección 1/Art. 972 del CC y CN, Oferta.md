@@ -8,11 +8,11 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "La oferta es la manifestación dirigida a persona determinada o determinable, con la intención de obligarse y con las precisiones necesarias para establecer los efectos que debe producir de ser aceptada."
 
-### Interpretación
+# Interpretación
 ---
 Oferta es una proposición unilateral que una de las partes dirige a otra para celebrar un contrato. O, como lo define el [[Código Civil y Comercial de la Nación|Código Civil y Comercial]] estación dirigida a persona determinada o determinable, con la intención de obligarse y con las precisiones necesarias para establecer los efectos que debe producir de ser aceptada. 
 
@@ -33,7 +33,7 @@ En consecuencia, la oferta debe ser distinguida:
 
 4. Finalmente, debe distinguirse de las tratativas previas al contrato y aun de los contratos preliminares. En estos no hay todavía una voluntad definitiva de vincularse jurídicamente; se está solo en tanteos y negociaciones más o menos adelantadas, pero que no han llegado a la concreción de una propuesta firme y definitiva.
 
-#### Requisitos de la oferta
+## Requisitos de la oferta
 ---
 Para que haya oferta válida es necesario:
 1. Que se dirija a persona o personas determinadas o determinables. Por ello es que la oferta al público, como ya hemos dicho, no es en principio obligatoria, sino que debe más bien considerarse como una invitación a oír ofertas, a menos que se trate: 
@@ -48,7 +48,7 @@ Para que haya oferta válida es necesario:
 
 3. Que exista intención de obligarse. Todo [[Acto jurídico|acto jurídico]] (y la oferta lo es) requiere que sea ejecutado con intención para ser válido ([[Art. 260 del CC y CN, Acto voluntario|art. 260]]). Por ello, si no hay verdadera intención de obligarse, no hay oferta. Es el caso de la oferta hecha con espíritu de broma o sin entender obligarse, como, por ejemplo, las palabras pronunciadas en una representación teatral. 
 
-#### Duración de la oferta
+## Duración de la oferta
 ---
 ¿En qué medida queda obligado el oferente por su sola oferta?
 

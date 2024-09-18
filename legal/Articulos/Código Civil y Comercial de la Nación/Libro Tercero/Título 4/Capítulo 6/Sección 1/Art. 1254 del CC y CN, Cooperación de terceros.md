@@ -10,9 +10,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Tercero
 tags: 
  - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "El contratista o prestador de servicios puede valerse de terceros para ejecutar el servicio, excepto que de lo estipulado o de la índole de la obligación resulte que fue elegido por sus cualidades para realizarlo personalmente en todo o en parte. En cualquier caso, conserva la dirección y la responsabilidad de la ejecución."
 
-### Interpretación
+# Interpretación
 ---

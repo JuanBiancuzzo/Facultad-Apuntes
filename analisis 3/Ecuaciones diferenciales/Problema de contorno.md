@@ -4,7 +4,7 @@ tags:
   - analisis-3/Ecuaciones-diferenciales
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Tenemos un sistema de ecuaciones donde una es una [[Ecuación diferencial ordinaria]] y otra dan condiciones en $x = 0$ y $x = L$, donde $L$ es el otro extremo . Por ejemplo $$ \begin{cases} 
 	y''(x) + y(x) = 0 && 0 \le x \le \frac \pi 2 \\

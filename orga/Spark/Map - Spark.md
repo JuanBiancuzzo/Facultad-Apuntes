@@ -4,7 +4,7 @@ tags:
   - orga/Spark
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Para esto el usuario especifica una función **map** que procesa un par clave-valor para generar un conjunto intermedio de pares clave-valor.
 

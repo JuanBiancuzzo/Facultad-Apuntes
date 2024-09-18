@@ -4,11 +4,11 @@ tags:
   - intro/Respuesta-en-frecuencia
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 La frecuencia de corte de un [[Filtro pasa-bajo|filtro]] ($f_\text{corte}$) delimita y separa los rangos de lo que se considera las frecuencias que "pasan" y las que se "eliminan"
 
-##### Expresiones
+### Expresiones
 ---
 Se calcula como $$ f_\text{corte} = \frac{1}{2 \pi ~ R ~ C} = \frac{1}{2 \pi ~ \tau} $$
 Notar que depende de la [[Constante de tiempo|constante de tiempo]]

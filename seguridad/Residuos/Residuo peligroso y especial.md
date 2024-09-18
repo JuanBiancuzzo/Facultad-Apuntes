@@ -4,7 +4,7 @@ tags:
   - seguridad/Residuos
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Todo [[Residuo]] que pueda causar daño directa e indirectamente a seres vivos o contaminar el suelo, el agua, la atmósfera o el ambiente en general.
 

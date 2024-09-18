@@ -7,7 +7,7 @@ tags:
 aliases:
   - Producto escalar
 ---
-### Definición
+# Definición
 ---
 Sea $\mathbb{V}$ un $\mathbb{K}$-[[Espacio vectorial|espacio vectorial]]. Un producto interno en $\mathbb{V}$ es una [[Función|función]] $\langle \cdot , \cdot \rangle : \mathbb{V} \times \mathbb{V} \to \mathbb{K}$, tal que
 

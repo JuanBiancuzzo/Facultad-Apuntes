@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - analisis-2/Propiedades-de-funciones
 ---
-### Definición
+# Definición
 ---
 Veamos el caso donde $f : U \subseteq \mathbb{R}^2 \to \mathbb{R}$ y queremos calcular su derivada parcial con respecto a $x$ entonces seria
 
@@ -22,7 +22,7 @@ Tambien lo podemos como un caso especifico de una [[Derivada direccional|derivad
 
 Ahora podremos ver las [[Derivada parcial de orden superior|derivadas parciales de ordenes superiores]]
 
-#### Resolución
+## Resolución
 ---
 Hay algunos casos, donde la resolución se ve complejidad ya que no se pueden aplicar las reglas básicas de la derivación. 
 

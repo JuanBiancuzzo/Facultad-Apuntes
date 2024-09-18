@@ -4,7 +4,7 @@ tags:
   - señales/Señales-y-sistemas
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Señal|señal]] donde su salida es compleja, tiene las propiedad
 * $z(t) = \mathcal{Re}\set{z(t)} + j ~ \mathcal{Im}\set{z(t)}$

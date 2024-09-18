@@ -6,7 +6,7 @@ tags:
   - seguridad/Protección-auditiva
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dado que el oído humano, es sensible a un gran intervalo de intensidades, es que resulta conveniente el uso de una escala logarítmica para la cuantificación tanto de: [[Intensidad]], [[Potencia]] y [[Presión sonora]].
 

@@ -4,7 +4,7 @@ tags:
   - analisis-3/Transformaciones-conformes
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Dada la [[Función exponencial]] esta se puede ver como una transformación del espacio $\mathbb{C}$.
 

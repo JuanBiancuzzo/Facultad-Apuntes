@@ -11,7 +11,7 @@ aliases:
   - Execv system call
   - Execcvp system call
 ---
-### Definición
+# Definición
 ---
 La [[System call|system call]] `exec()`  tiene 6 variantes
 * `exec()`
@@ -31,7 +31,7 @@ int execve(const char* fihlhebhbname, const char* argv[], const char* envp[]);
 
 La system `call_exec()` invoca a otro [[Programa|programa]], sobreponiendo el espacio de [[Memoria|memoria]] del [[Proceso|proceso]] con el programa ejecutable.
 
-#### Hace
+## Hace
 ---
 * Obtiene el [[Inodo]] del [[Programa|programa]]
 * Verifica si el archivo es ejecutable y el usuario tiene los permisos para ejecutarlo

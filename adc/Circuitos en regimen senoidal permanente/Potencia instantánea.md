@@ -7,10 +7,10 @@ tags:
 referencias:
   - "222"
 ---
-### Definición
+# Definición
 ---
 Es la [[Potencia|potencia]] en cualquier instante $$ p(t) = v(t) ~ i(t) $$
-#### Para corriente alterna
+## Para corriente alterna
 ---
 Cuando se trata de [[Corriente alterna|corriente alterna]] sinusoidal, con $$ v(t) = U_0 ~ \sin(\omega t) ~~~~~ i(t) = I_0 ~ \sin(\omega t - \phi) $$
 Esto resulta en la potencia instantánea $$ p(t) = U_0 ~ I_0 ~ \sin(\omega t) ~ \sin(\omega t - \phi) $$ que usando trigonometría podemos expresar como $$ \begin{align} 
@@ -20,7 +20,7 @@ Esto resulta en la potencia instantánea $$ p(t) = U_0 ~ I_0 ~ \sin(\omega t) ~ 
 Se obtiene así para la potencia un valor constante $\frac{1}{2} U_0 ~ I_0 ~ cos(\phi)$ y otro variable con el tiempo $\frac{1}{2} U_0 ~ I_0 ~ cos(2\omega t - \phi)$. Al primer valor se le denomina [[Potencia|potencia activa]], y la segunda [[Potencia reactiva|potencia reactiva]]
 
 
-### Referencias
+# Referencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });

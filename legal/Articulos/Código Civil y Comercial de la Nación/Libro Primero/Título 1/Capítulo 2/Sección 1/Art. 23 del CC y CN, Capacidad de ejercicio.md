@@ -8,9 +8,9 @@ previo: "[[legal/Articulos/Código Civil y Comercial de la Nación/Libro Primero
 tags:
   - legal/articulo
 ---
-### Artículo
+# Artículo
 ---
 "Toda [[Persona humana|persona humana]] puede ejercer por sí misma sus derechos, excepto las limitaciones expresamente previstas en este Código y en una sentencia judicial."
 
-### Interpretación
+# Interpretación
 ---
