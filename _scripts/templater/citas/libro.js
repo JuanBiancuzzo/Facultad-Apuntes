@@ -7,6 +7,8 @@ const VOLUMEN = "volumen";
 const URL = "url";
 const CAPITULOS = "capitulos";
 
+const KEYS = [ TITULO_OBRA, NOMBRE_AUTORES, ANIO, EDITORIAL, EDICION, VOLUMEN, URL, CAPITULOS ];
+
 function valorDefault() {
     return {
         [TITULO_OBRA]: null,
@@ -30,7 +32,12 @@ async function citarLibro(tp, datosIniciales = undefined) {
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
 
-    if (!datosIniciales)  datosIniciales = valorDefault();        
+    let valoresNeutro = valorDefault();
+    if (!datosIniciales) datosIniciales = {};
+    for (let key of Object.keys(valoresNeutro)) {
+        if ((!(key in datosIniciales)) || !datosIniciales[key]) 
+            datosIniciales[key] = valoresNeutro[key];
+    }
 
     return {
         [TITULO_OBRA]: {
@@ -197,7 +204,12 @@ async function citarCapitulo(tp, datosIniciales = undefined) {
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
 
-    if (!datosIniciales)  datosIniciales = valorDefaultCapitulo();
+    let valoresNeutro = valorDefaultCapitulo();
+    if (!datosIniciales) datosIniciales = {};
+    for (let key of Object.keys(valoresNeutro)) {
+        if ((!(key in datosIniciales)) || !datosIniciales[key]) 
+            datosIniciales[key] = valoresNeutro[key];
+    }
 
     return {
         [NUM_REFERENCIA]: {
@@ -336,7 +348,8 @@ function describirLibro(archivo) {
 
 module.exports = () => {
     return { 
+        keys: KEYS,
         citar: citarLibro, 
-        describir: describirLibro
+        describir: describirLibro,
     };
 }

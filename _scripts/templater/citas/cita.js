@@ -7,7 +7,8 @@ const CITAS = [
         texto: "Citar Libro",
         f: (tp) => ({
             describir: tp.user.libro().describir,
-            citar: tp.user.libro().citar
+            citar: tp.user.libro().citar,
+            keys: tp.user.libro().keys
         })
     },
     {
@@ -15,7 +16,8 @@ const CITAS = [
         texto: "Citar Youtube",
         f: (tp) => ({
             describir: tp.user.youtube().describir,
-            citar: tp.user.youtube().citar
+            citar: tp.user.youtube().citar,
+            keys: tp.user.youtube().keys
         })
     },
     {
@@ -23,7 +25,8 @@ const CITAS = [
         texto: "Citar Página web",
         f: (tp) => ({
             describir: tp.user.web().describir,
-            citar: tp.user.web().citar
+            citar: tp.user.web().citar,
+            keys: tp.user.web().keys
         })
     },
     {
@@ -31,7 +34,8 @@ const CITAS = [
         texto: "Citar Wikipedia",
         f: (tp) => ({
             describir: tp.user.wiki().describir,
-            citar: tp.user.wiki().citar
+            citar: tp.user.wiki().citar,
+            keys: tp.user.wiki().keys
         })
     },
 ]
@@ -173,6 +177,10 @@ async function rellenarDatos(tp, generarInicio, seguidorRef, datosIniciales = un
     let datos = await generarInicio(tp, datosIniciales);
     
     let [ opciones, valores ] = actualizarDatos(tp, datos);
+    if (condicionMinima(datos)) {
+        opciones.push(SALIR);
+        valores.push(" ↶ Dejar de editar");
+    }
     let respuesta = await preguntar.suggester(
         tp, valores, opciones, 
         "Completar para poder citar", 
@@ -263,9 +271,22 @@ async function citarCita(tp, tipoCita, numReferenciaSiguiente) {
     return await rellenarDatos(tp, cita.f(tp).citar, seguidorRef);
 }
 
+async function editarCita(tp, tipoCita, numReferenciaSiguiente, datosActuales) {
+    const error = tp.user.error();
+
+    let cita = CITAS.find(cita => cita.tipo === tipoCita);
+    if (!cita) 
+        throw error.Prompt(`El tipo de cita "${tipoCita}" no existe todavia`);
+
+    let seguidorRef = new SeguidorReferencias(numReferenciaSiguiente);
+    return await rellenarDatos(tp, cita.f(tp).citar, seguidorRef, datosActuales);
+}
+
 module.exports = () => ({
     generar: generarCita,
     metadata: describirCita,
     describir: descripcionTexto,
     citar: citarCita,
+    editar: editarCita,
+    keys: (tp, tipoCita) => CITAS.find(cita => cita.tipo === tipoCita).f(tp).keys,
 })

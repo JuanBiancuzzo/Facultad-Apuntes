@@ -3,6 +3,8 @@ const NOMBRE_CANAL = "nombreCanal";
 const FECHA = "fecha";
 const URL = "url";
 
+const KEYS = [ NOMBRE_VIDEO, NOMBRE_CANAL, FECHA, URL ];
+
 function valorDefault() {
     return {
         [NOMBRE_VIDEO]: null,
@@ -19,7 +21,12 @@ async function citarYoutube(tp, datosIniciales = undefined) {
     const cte = tp.user.constantes();
     const error = tp.user.error();
 
-    if (!datosIniciales) datosIniciales = valorDefault();
+    let valoresNeutro = valorDefault();
+    if (!datosIniciales) datosIniciales = {};
+    for (let key of Object.keys(valoresNeutro)) {
+        if ((!(key in datosIniciales)) || !datosIniciales[key]) 
+            datosIniciales[key] = valoresNeutro[key];
+    }
 
     return {
         [NOMBRE_VIDEO]: {
@@ -69,7 +76,7 @@ async function citarYoutube(tp, datosIniciales = undefined) {
         },
         [URL]: {
             tipo: SIMPLE,
-            valor: null,
+            valor: datosIniciales[URL],
             minimo: (valor) => valor != null,
             representarElemento: (url) => {
                 let representacion = "url";
@@ -93,6 +100,7 @@ function describirYoutube(archivo) {
 
 module.exports = () => {
     return { 
+        keys: KEYS,
         citar: citarYoutube, 
         describir: describirYoutube
     };

@@ -29,7 +29,8 @@
     "_template/legal/Editar texto Artículo.md",
     "_template/investigacion/Modificar referencia.md",
     "_template/investigacion/Agregar cita.md",
-    "_template/Regenerar readme - Template.md"
+    "_template/Regenerar readme - Template.md",
+    "_template/investigacion/Editar referencia - Template.md"
   ],
   "startup_templates": [],
   "enable_ribbon_icon": false

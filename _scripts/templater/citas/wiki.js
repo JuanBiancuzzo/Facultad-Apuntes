@@ -2,6 +2,8 @@ const NOMBRE_ARTICULO = "nombreArticulo";
 const FECHA = "fecha";
 const URL = "url";
 
+const KEYS = [ NOMBRE_ARTICULO, FECHA, URL ];
+
 function valorDefault() {
     return {
         [NOMBRE_ARTICULO]: null,
@@ -17,7 +19,12 @@ async function citarWiki(tp, datosIniciales = undefined) {
     const cte = tp.user.constantes();
     const error = tp.user.error();
 
-    if (!datosIniciales) datosIniciales = valorDefault();
+    let valoresNeutro = valorDefault();
+    if (!datosIniciales) datosIniciales = {};
+    for (let key of Object.keys(valoresNeutro)) {
+        if ((!(key in datosIniciales)) || !datosIniciales[key]) 
+            datosIniciales[key] = valoresNeutro[key];
+    }
 
     return {
         [NOMBRE_ARTICULO]: {
@@ -77,6 +84,7 @@ function describirWiki(archivo) {
 
 module.exports = () => {
     return { 
+        keys: KEYS,
         citar: citarWiki, 
         describir: describirWiki
     };

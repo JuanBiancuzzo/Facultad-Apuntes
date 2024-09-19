@@ -4,6 +4,8 @@ const TITULO_ARTICULO = "tituloArticulo";
 const NOMBRE_PAGINA = "nombrePagina";
 const URL = "url";
 
+const KEYS = [ NOMBRE_AUTORES, FECHA_PUBLICACION, TITULO_ARTICULO, NOMBRE_PAGINA, URL ];
+
 function valorDefault() {
     return {
         [NOMBRE_AUTORES]: [],
@@ -25,7 +27,12 @@ async function citarWeb(tp, datosIniciales = undefined) {
     const cte = tp.user.constantes();
     const error = tp.user.error();
 
-    if (!datosIniciales) datosIniciales = valorDefault();
+    let valoresNeutro = valorDefault();
+    if (!datosIniciales) datosIniciales = {};
+    for (let key of Object.keys(valoresNeutro)) {
+        if ((!(key in datosIniciales)) || !datosIniciales[key]) 
+            datosIniciales[key] = valoresNeutro[key];
+    }
 
     return {
         [NOMBRE_AUTORES]: {
@@ -136,6 +143,7 @@ function describirWeb(archivo) {
 
 module.exports = () => {
     return { 
+        keys: KEYS,
         citar: citarWeb, 
         describir: describirWeb
     };
