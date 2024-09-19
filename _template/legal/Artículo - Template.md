@@ -166,7 +166,7 @@
     }
 
 _%>
-### Artículo
+# Artículo
 ---
 <%*
     // Mostrar texto
@@ -174,5 +174,5 @@ _%>
 _%>
 
 
-### Interpretación
+# Interpretación
 ---

@@ -72,7 +72,7 @@
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
 ```
-### Definición
+# Definición
 ---
 <% tp.file.cursor() %>
 <%*

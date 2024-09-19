@@ -43,7 +43,7 @@ let datos = dv.pages(`"${materia.file.folder}" and #resumen`)
 
 for (let { resumen, archivos } of datos) {
     let nombreTema = resumen.file.folder.split("/").pop();
-    dv.el("div", `<h3> ${nombreTema} </h3> <hr>`);
+    dv.el("div", `<h2> ${nombreTema} </h2> <hr>`);
     dv.paragraph(`> [!summary]- Resumen\n> ![[${resumen.file.path}#Resumen]]`);
 
     let mostrar = archivos.map(({ path, nombre, aliases }) => {

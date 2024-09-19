@@ -47,18 +47,18 @@
         }
     }
 _%>
-### Descripción
+# Descripción
 ---
 Ingresar descripción corta del proyecto
 
 
-### Presentar
+# Presentar
 ---
 
 
 
 
-### Notas
+# Notas
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/mostrarNotas", { proyecto: dv.current() });

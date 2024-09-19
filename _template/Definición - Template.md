@@ -76,6 +76,6 @@
 	tR += `tags: \n - ${tag}\n - nota/facultad\n`;
 	tR += "---\n";
 _%>
-### Definición
+# Definición
 ---
 <% tp.file.cursor() %>

@@ -65,7 +65,7 @@
         }
     }
 _%>
-### Apuntes
+# Apuntes
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });

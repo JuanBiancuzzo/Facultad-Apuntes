@@ -134,7 +134,7 @@
 	await dv.view("_scripts/dataview/mostarEtapa", { etapa: actual.etapa });
 	await dv.view("_scripts/dataview/libro/mostrarCapitulos", { titulo: actual.tituloObra, autores: actual.nombreAutores, capitulos: actual.capitulos });
 ```
-### Resumen
+# Resumen
 ---
 <% tp.file.cursor() %>
 

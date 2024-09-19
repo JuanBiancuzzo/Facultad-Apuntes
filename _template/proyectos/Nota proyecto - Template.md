@@ -46,6 +46,6 @@
         throw tp.user.error().Quit("Esa nota ya existe");
 	}
 _%>
-### Progreso
+# Progreso
 ---
 <% tp.file.cursor() %>

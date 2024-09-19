@@ -1,8 +1,8 @@
 ---
-capitulo: 5
-tags: 
- - electro/Ondas-confinadas
- - resumen
+capitulo: 4
+tags:
+  - electro/Ondas-confinadas
+  - resumen
 ---
 # Índice
 ---
