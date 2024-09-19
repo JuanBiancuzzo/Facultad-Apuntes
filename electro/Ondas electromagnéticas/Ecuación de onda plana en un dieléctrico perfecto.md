@@ -6,10 +6,8 @@ tags:
 aliases:
   - Ecuación de ondas reducidas de Helmholtz en un dieléctrico perfecto
   - Ecuación de Helmholtz en un dieléctrico perfecto
-  - Impedancia intrínseca del vacío#^impedancia-intrinseca-vacio
   - Ecuación de onda transversal electromagnética#Onda TEM
   - TEM#Onda TEM
-  - Velocidad de la luz en el vacio#^velocidad-luz-vacio
 ---
 # Definición
 ---
@@ -125,5 +123,5 @@ Considerando que la onda se propaga en $z > 0$ $$ \begin{align}
     E_x^+(z) &= E_0^+ \cos(\omega t - \beta z) \\
     H_y^+(z) &= \frac{E_0^+}{Z_{00}} \cos(\omega t - \beta z)
 \end{align} $$
-Para tiempos sucesivos, la onda viaja en las $z > 0$ si se considera la fase constante $$ \omega t - \beta z = cte $$ aplicando $\frac{d}{dt}$ se obtiene $$ \omega \frac{dt}{dt} - \beta \frac{dz}{dt} = 0 $$ despejando la velocidad $v = \frac{dz}{dt}$ podemos obtener $$ v = \frac{dz}{dt} = \frac{\omega}{\beta} = \frac{\omega}{\omega \sqrt{\mu_0 \epsilon_0}} = \frac{1}{\sqrt{\mu_0 \epsilon_0}} = 3 \cdot 10^8 ~ \frac{m}{s} $$ la velocidad de fase en el vacío será la velocidad de la luz en el vacío ^velocidad-luz-vacio
+Para tiempos sucesivos, la onda viaja en las $z > 0$ si se considera la fase constante $$ \omega t - \beta z = cte $$ aplicando $\frac{d}{dt}$ se obtiene $$ \omega \frac{dt}{dt} - \beta \frac{dz}{dt} = 0 $$ despejando la velocidad $v = \frac{dz}{dt}$ podemos obtener $$ v = \frac{dz}{dt} = \frac{\omega}{\beta} = \frac{\omega}{\omega \sqrt{\mu_0 \epsilon_0}} = \frac{1}{\sqrt{\mu_0 \epsilon_0}} = 3 \cdot 10^8 ~ \frac{m}{s} $$ la velocidad de fase en el vacío será la velocidad de la luz en el vacío
 

@@ -4,5 +4,8 @@
   "theme": "obsidian",
   "baseFontSizeAction": false,
   "cssTheme": "",
-  "translucency": false
+  "translucency": false,
+  "enabledCssSnippets": [
+    "header_size"
+  ]
 }

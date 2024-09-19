@@ -3,6 +3,9 @@ dia: 2022-12-08
 tags:
   - analisis-3/Ecuaciones-diferenciales
   - nota/facultad
+aliases:
+  - Función armónica
+  - Ecuación armónica
 ---
 # Definición
 ---

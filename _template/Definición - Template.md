@@ -39,7 +39,7 @@
 	let tag = resumen.tags.find(tag => tag != "resumen");
 	
 	let paginaHecha = tp.file.find_tfile(titulo);
-	if (paginaHecha && paginaHecha.path != `${carpeta}/${titulo}.md`) {
+	if (paginaHecha && paginaHecha.stat.ctime != tArchivo.stat.ctime) {
 		let path = `${paginaHecha.parent.path}/${titulo}.md`;
 		let leafAUsar;
 
@@ -55,9 +55,10 @@
         if (!leafAUsar) leafAUsar = await app.workspace.getLeaf("tab");
 		await leafAUsar.openFile(paginaHecha);
 
+
 		await app.fileManager.processFrontMatter(paginaHecha, (frontmatter) => {
 			let index = frontmatter["tags"]?.indexOf(tag);
-			if (!index || index < 0) {
+			if (index < 0) {
 				if (frontmatter["tags"]) {
 					frontmatter["tags"].push(tag);
 				} else {
@@ -66,7 +67,7 @@
 			} 
 		});
 
-		 throw error.Quit("Este archivo ya existe");
+		throw error.Quit("Este archivo ya existe");
 	}
 
 	await tp.file.move(`${resumen.file.folder}/${titulo}`, tArchivo);

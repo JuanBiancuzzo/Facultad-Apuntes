@@ -9,6 +9,9 @@ tags:
 aliases:
   - Ley de Gauss
   - Ley de Gauss para el Campo eléctrico#Para el campo eléctrico
+  - Ley de Gauss para el Campo magnético#Para el campo magnético
+  - Ecuación de la divergencia
+  - Teorema de la divergencia
 ---
 # Definición
 ---
