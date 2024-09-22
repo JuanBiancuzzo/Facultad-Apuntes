@@ -11,7 +11,7 @@ tags:
   - nota/facultad
   - redes/Capa-de-Enlace
 ---
-### Definición
+# Definición
 ---
 Un [[Protocolo|protocolo]] FDM divide el canal en $n$ rangos de [[Función periódica#Frecuencia|frecuencia]], creando efectivamente  canales distintos, uno para cada nodo
 

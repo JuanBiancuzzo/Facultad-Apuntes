@@ -7,7 +7,7 @@ tags:
 aliases:
   - CDMA
 ---
-### Definición
+# Definición
 ---
 El [[Protocolo|protocolo]] code division multiple access (CDMA) pertenece a la familia de protocolos de [[Partición|partición]] de canales, prevalece en las redes inalámbricas [[Local Area Network|LAN]] y las tecnologías de celular
 

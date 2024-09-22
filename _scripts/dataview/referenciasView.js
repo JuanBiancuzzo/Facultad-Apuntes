@@ -18,7 +18,8 @@ let referencias = dv.pages('#referencia')
 		}
 		return resultado;
 	})
-	.filter(ref => referenciasArchivo.indexOf(ref.num) >= 0);
+	.filter(ref => referenciasArchivo.indexOf(ref.num) >= 0)
+	.sort(ref => ref.num);
 
 for (let { archivo, num } of referencias) {
     dv.el("p", citaView.mostrarCita(archivo, num));

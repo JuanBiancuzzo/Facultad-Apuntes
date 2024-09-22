@@ -6,7 +6,7 @@ tags:
   - redes/Capa-de-Enlace
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Encamina un [[Paquete|datagrama]] a través de una serie de [[Router|routers]] entre el origen y el destino. En cada nodo, la capa de red pasa el datagrama a la capa de enlace, que entrega el datagrama al siguiente nodo existe a lo largo de la ruta. En ese siguiente nodo, la capa de enlace pasa el datagrama a la capa de red
 

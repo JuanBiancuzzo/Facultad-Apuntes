@@ -4,7 +4,7 @@ tags:
   - señales/Señales-y-sistemas
   - nota/facultad
 ---
-### Definición
+# Definición
 ---
 Es una [[Función de distribución|distribución]] que tiene las propiedades $$ \begin{matrix} 
 	\delta(t) = 0 ~~ \forall t \ne 0 \\
@@ -83,7 +83,7 @@ En el caso discreto, la delta se define como $$ \delta[n] = \begin{cases}
 	0 ~~ \text{si} ~~ t \ne 0 \\
 \end{cases} $$
 
-#### Propiedades
+## Propiedades
 ---
 * Para funciones continuas en un $t_0 \in \mathbb{R}$ arbitrario, la delta de Dirac nos permite evaluar el valor de dicha función en $t_0$ de la siguiente forma $$ \int_{-\infty}^{\infty} \delta(t - t_0) ~ x(t) ~ dt = x(t_0) $$
 * En el caso discreto, usando la [[Función de Heaviside|función escalón]]

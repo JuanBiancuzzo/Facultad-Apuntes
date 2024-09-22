@@ -5,12 +5,12 @@ tags:
   - nota/facultad
   - estructura/Álgebra-de-boole
 ---
-### Definición
+# Definición
 ---
 Dado un [[Conjunto|conjunto]] $B$ en el que se han definido dos operaciones binarias interna $+$ y $\cdot$, y la operación unitaria interna $'$. La estructura $(B,~+,~\cdot,~',~0_B,~1_B)$ es un álgebra de Boole si y solo si cumple con los [[Postulados de Huntington|Postulados de Huntington]]
 
 Decimos que un álgebra de Boole tiene definido un orden natural cuando $$ x \le y \iff xy = x $$
-#### Representaciones
+## Representaciones
 ---
 * [[Tabla de verdad|Tabla de verdad]]
 * Expresión algebraica por [[Suma de minitérminos|suma de minitérminos]]
@@ -18,5 +18,5 @@ Decimos que un álgebra de Boole tiene definido un orden natural cuando $$ x \le
 * Diagrama de [[Compuerta|compuertas]]
 
 
-#### Isomorfismo
+## Isomorfismo
 ---

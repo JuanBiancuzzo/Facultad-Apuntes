@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - algo-1/Introducción-a-la-programación
 ---
-### Definición
+# Definición
 ---
 Los [[Operaciones|operadores]] [[Álgebra de Boole|booleanos]] devuelven tras realizar la operación un resultado booleano, en este caso sería verdadero o falso
 
