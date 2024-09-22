@@ -6,13 +6,6 @@
     const dv = app.plugins.plugins.dataview.api;
     const tArchivo = tp.file.find_tfile(tp.file.path(true));
     const dvArchivo = dv.page(tp.file.path(true));
-    // Tenemos que determinar si es un libro o un archivo con o sin referencias
-    /**
-     * Si tiene referencias => archivo
-     * Sino
-        * Si tiene tipoDato => Libro
-        * Sino => archivo
-     */
 
     let tReferencia = tArchivo;
     let referencia = dvArchivo;

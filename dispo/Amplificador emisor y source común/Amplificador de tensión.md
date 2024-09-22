@@ -3,6 +3,7 @@ dia: 2023-11-26
 tags:
   - dispo/Amplificador-emisor-y-source-común
   - nota/facultad
+  - circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
 ---
 # Definición
 ---
