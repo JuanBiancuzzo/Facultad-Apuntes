@@ -5,6 +5,7 @@ plan: 1986
 estado: Voy por el 2do pdf
 tags:
   - materia
+etapa: empezado
 ---
 # Apuntes 
 ---

@@ -5,6 +5,7 @@ plan: 2009
 estado: Falta terminar los últimos capítulos
 tags:
   - materia
+etapa: empezado
 ---
 # Apuntes 
 ---

@@ -5,6 +5,7 @@ plan: 2009
 codigo: "9508"
 tags:
   - materia
+etapa: empezado
 ---
 # Apuntes 
 ---

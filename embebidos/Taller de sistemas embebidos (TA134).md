@@ -5,6 +5,7 @@ plan: 2023
 estado: Voy a cursarla este cuatri
 tags:
   - materia
+etapa: ampliar
 ---
 # Apuntes
 ---

@@ -5,6 +5,7 @@ plan: "2009"
 codigo: "9704"
 tags:
   - materia
+etapa: terminado
 ---
 # Apuntes 
 ---

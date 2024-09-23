@@ -5,6 +5,7 @@ plan: 1986
 estado: Falta hacer el resumen
 tags:
   - materia
+etapa: sin-empezar
 ---
 # Apuntes 
 ---

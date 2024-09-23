@@ -5,6 +5,7 @@ plan: 2023
 estado: Falta últimos temas
 tags:
   - materia
+etapa: ampliar
 ---
 # Apuntes 
 ---

@@ -5,6 +5,7 @@ plan: 1986
 estado: Terminado
 tags:
   - materia
+etapa: terminado
 ---
 # Apuntes 
 ---

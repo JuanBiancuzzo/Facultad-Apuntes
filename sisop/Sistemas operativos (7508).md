@@ -5,6 +5,7 @@ plan: "1986"
 codigo: "7508"
 tags:
   - materia
+etapa: terminado
 ---
 # Apuntes 
 ---

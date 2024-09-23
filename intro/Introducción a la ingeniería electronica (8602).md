@@ -5,6 +5,7 @@ plan: "2009"
 codigo: "8602"
 tags:
   - materia
+etapa: terminado
 ---
 # Apuntes 
 ---

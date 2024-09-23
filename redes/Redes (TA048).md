@@ -5,6 +5,7 @@ plan: 2023
 estado: Terminado
 tags:
   - materia
+etapa: terminado
 ---
 # Apuntes 
 ---

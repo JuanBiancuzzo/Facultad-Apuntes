@@ -5,6 +5,7 @@ plan: 2023
 estado: Falta pasar las presentaciones del último tema
 tags:
   - materia
+etapa: empezado
 ---
 # Apuntes 
 ---

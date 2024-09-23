@@ -1,7 +1,5 @@
 const { indice } = input;
 
-
-
 let tagRepresentante = indice.file.folder.trim()
     .split(" ")
     .filter(token => token.trim() != "-" && token.trim() != "")

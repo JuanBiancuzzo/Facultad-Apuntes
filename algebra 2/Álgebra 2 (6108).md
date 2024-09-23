@@ -5,6 +5,7 @@ plan: "1986"
 codigo: "6108"
 tags:
   - materia
+etapa: empezado
 ---
 # Apuntes 
 ---

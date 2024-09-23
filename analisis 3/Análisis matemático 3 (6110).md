@@ -5,6 +5,7 @@ plan: "1986"
 codigo: "6110"
 tags:
   - materia
+etapa: terminado
 ---
 # Apuntes 
 ---
