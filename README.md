@@ -62,6 +62,7 @@ Un listado de los temas investigados y su estado actual
 | [Lenguajes de programación](lenguajes%20de%20programación/Índice.md) | Sin empezar   |
 | [Machine Learning](machine%20Learning/Índice.md)                     | Falta resumir |
 | [Matemática](matemática/Índice.md)                                   | Falta resumir |
+| [Mecánica](mecánica/Índice.md)                                       | Sin empezar   |
 | [Música](música/Índice.md)                                           | Falta resumir |
 | [Networking](networking/Índice.md)                                   | Falta resumir |
 | [Placa de Desarrollo](placa%20de%20Desarrollo/Índice.md)             | Sin empezar   |
