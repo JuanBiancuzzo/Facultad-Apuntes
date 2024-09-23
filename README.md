@@ -84,9 +84,9 @@ Un listado de los proyectos y su estado actual
 ---
 Tenemos los subproyectos específicos que son
 
-| Proyecto                             |                                                                                    |
-| ------------------------------------ | ---------------------------------------------------------------------------------- |
-| [Biblioteca](Biblioteca%20propia.md) | Tiene la intención de colectar libros que me interese analizar y poder referenciar |
+| Proyecto                             |                                                                                                                                                  |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Biblioteca](Biblioteca%20propia.md) | Tiene la intención de colectar libros, papers, etc. que me interese analizar relacionado a todo el contexto de esta página y poder referenciarla |
 
 ## Contribuidores
 ---
