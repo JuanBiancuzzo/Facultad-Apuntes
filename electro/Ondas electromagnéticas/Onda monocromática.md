@@ -22,8 +22,7 @@ Se define el número de onda $k = \frac{\omega}{c} = \frac{2\pi}{\lambda}$ en fu
 Debido a que cualquier función de cuadrado integrable es representable mediante una [[Integral de Fourier|integral de Fourier]] $$ g(z,~t) = \int_0^\infty G_\omega(z) ~ e^{i(\omega t \mp kz)} d\omega $$ y esta representación es una superposición de funciones armónicas, es posible analizar las propiedades físicas generales de las ondas electromagnéticas usando ondas de una única frecuencia u ondas monocromáticas
 
 Es común utilizar la representación [[Fasor|fasorial]] de las ondas armónicas $$ g(z \mp ct) = |g_0| \mathcal{Re}\Set{ e^{i(\omega t \mp kz + \varphi_0)} } $$
-La [[Ecuación de onda|ecuación de ondas de D' Alembert]] se convierte en la ecuación de Helmholtz en el caso de ondas armónicas $$ \nabla^2 \vec{E} - \frac{1}{c^2} \frac{\partial^2 \vec{E}}{\partial t^2} = 0 \implies \nabla^2 \vec{E} + \frac{\omega^2}{c^2} \vec{E} = 0 \implies \nabla^2 \vec{E} + k^2 \vec{E} = 0 $$ con $k = \frac{\omega}{c}$ y lo mismo ocurre con la ecuación de onda para el [[Material magnético#^campo-magnetico|campo magnético]]
- ^ecuacion-Helmholtz
+La [[Ecuación de onda|ecuación de ondas de D' Alembert]] se convierte en la [[Ecuación de Helmholtz|ecuación de Helmholtz]] en el caso de ondas armónicas $$ \nabla^2 \vec{E} - \frac{1}{c^2} \frac{\partial^2 \vec{E}}{\partial t^2} = 0 \implies \nabla^2 \vec{E} + \frac{\omega^2}{c^2} \vec{E} = 0 \implies \nabla^2 \vec{E} + k^2 \vec{E} = 0 $$ con $k = \frac{\omega}{c}$ y lo mismo ocurre con la ecuación de onda para el [[Material magnético#^campo-magnetico|campo magnético]]
 
 ## Vector de onda
 ---

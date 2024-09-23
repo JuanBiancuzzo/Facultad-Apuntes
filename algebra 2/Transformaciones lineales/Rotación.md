@@ -139,4 +139,4 @@ $$ R{1 \choose 0} = {-sin(50.42\degree) \choose cos(50.42\degree)} $$
 
 Por lo tanto podemos escribir la matriz de rotación, para cualquier ángulo
 
-$$ R{x_1 \choose x_2} := \begin{pmatrix} cos(\theta) & -sin(\theta) \\ sin(\theta) & cos(\theta) \end{pmatrix} {x_1 \choose x_2}$$
+$$ R{x_1 \choose x_2} := \begin{pmatrix} \cos(\theta) & -\sin(\theta) \\ \sin(\theta) & \cos(\theta) \end{pmatrix} {x_1 \choose x_2}$$

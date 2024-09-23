@@ -15,6 +15,13 @@ La ecuación de onda es una importante [[Ecuación diferencial en derivadas parc
 
 Se conoce como ecuaciones escalar de D' Alembert y ecuaciones vectoriales de D' Alembert, a estas donde se agrega la información sobre la [[Función|función]] que esta siendo aplicada esta ecuación
 
+## En forma fasorial
+---
+La función la podemos expresar $$ u(\vec{r},~t) = \tilde{u}(\vec{r}) ~ e^{i \omega t} $$
+Esto permite reescribir la ecuación de la siguiente forma
+
+$$ \nabla^2 \tilde{u} + k^2 \tilde{u} = \Delta \tilde{u} + k^2 \tilde{u} = 0, ~~~~~~ \text{con} ~ k = \frac{\omega}{c} $$ ^ecuacion-fasorial
+
 # Referencias
 ---
 ```dataviewjs

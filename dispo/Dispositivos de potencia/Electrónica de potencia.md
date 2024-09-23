@@ -21,4 +21,4 @@ Es la aplicación de dispositivos electrónicos a:
 Estos circuitos operan en conmutación constantemente:
 * Se introduce ruido en las señales $\implies$ Usar filtros
 * Se introduce ruido en la fuente de alimentación $\implies$ usar filtros
-* Se produce [[Interferencia electromagnética (EMI)|interferencia electromagnética (EMI)]] en equipos cercanos $\implies$ usar blindaje
+* Se produce [[Interferencia|interferencia electromagnética (EMI)]] en equipos cercanos $\implies$ usar blindaje

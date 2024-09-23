@@ -108,3 +108,16 @@ Entonces $$ \begin{align}
 Estas ecuaciones se pueden reescribir en forma vectorial $$ \vec{H}(\vec{r},~t) = \pm \frac{\hat{z} \times \vec{E}(\vec{r},~t)}{Z_{00}} $$
 
 Donde $Z_{00} = \sqrt{\frac{\mu_0}{\epsilon_0}}$ se denomina impedancia intrínseca del vacío ^impedancia-intrinseca-vacio
+
+## En forma fasorial
+---
+Partiendo de la representación de los campos de la siguiente forma $$ \begin{matrix} 
+    \vec{E}(\vec{r},~t) = \tilde{E}(\vec{r}) ~ e^{i \omega t} &
+    \vec{D}(\vec{r},~t) = \tilde{D}(\vec{r}) ~ e^{i \omega t} & 
+    \vec{H}(\vec{r},~t) = \tilde{H}(\vec{r}) ~ e^{i \omega t} & 
+    \vec{B}(\vec{r},~t) = \tilde{B}(\vec{r}) ~ e^{i \omega t} 
+\end{matrix} $$
+Se puede expresar las ondas planas linealmente polarizadas como $$ \tilde{E}(\vec{r}) = \tilde{E}(z) ~ \hat{x} \implies \nabla^2 \tilde{E} = \frac{d^2}{dz^2} \tilde{E} ~ \hat{x} $$
+y la [[Ecuación de Helmholtz|ecuación de Helmholtz]] queda $$ \frac{d^2}{dz^2} \tilde{E} + k^2 \tilde{E} = 0 $$ cuya solución es $$ \tilde{E}(z) = \tilde{E}_0 ~ e^{\pm ikz} $$ de modo que queda una solución [[Fasor|fasorial]] $$ \vec{E}(\vec{r},~t) = \tilde{E}_{0_1} ~ e^{i(\omega t - kz)} + \tilde{E}_{0_2} ~ e^{i(\omega t + kz)} $$ que consiste en la [[Principio de superposición#Superposición de ondas|superposición]] de una [[Onda plana#^onda-progresiva|onda progresiva]] y una [[Onda plana#^onda-regresiva|regresiva]]
+
+Se obtiene una solución idéntica para el campo magnético $$ \vec{H}(\vec{r},~t) = \frac{\tilde{E}_{0_1}}{Z_{00}} ~ e^{i(\omega t - kz)} - \frac{\tilde{E}_{0_2}}{Z_{00}} ~ e^{i(\omega t + kz)} $$ donde se debe notar el signo negativo de la componente regresiva. Este signo lleva a que el [[Teorema de Poynting|vector de Poyting]] de la onda regresiva apunte en el sentido negativo de $z$

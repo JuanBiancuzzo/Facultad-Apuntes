@@ -57,6 +57,21 @@ Técnicamente, el principio de superposición afirma que cuando las ecuaciones d
 ## Superposición de fuerzas
 ---
 
+## Superposición de ondas
+---
+Cuando hay más de una fuente de [[Onda electromagnética|ondas electromagnéticas]] presentes simultáneamente se dan dos situaciones
+
+### Las fases de las fuentes están correlacionadas en el tiempo
+---
+En este caso se dice que las fuentes son coherentes. Los campos individualmente de cada onda se superponen linealmente para dar un campo resultante. Esta superposición introduce diferencias de fase debido a la relación de fase original de las fuentes y la posición del punto de observación, que llevan a una redistribución de la [[Energía|energía]] en el espacio que llamamos [[Interferencia|interferencia]] 
+
+Un ejemplo de fuentes coherentes es un conjunto de antenas alimentadas desde una misma fuente
+
+### Las fases de las fuentes no están correlacionadas en el tiempo
+---
+En este caso se dice que las fuentes son incoherentes. Se superponen las [[Intensidad|intensidad]] ([[Teorema de Poynting|vectores de Poynting]]) individuales de las ondas para dar una intensidad resultante. Como las intensidades no contienen relaciones de fase, no se produce interferencia
+
+Un ejemplo típico de fuentes incoherentes son las fuentes extensas de luz como un tubo fluorescente
 
 ## Para circuitos
 ---

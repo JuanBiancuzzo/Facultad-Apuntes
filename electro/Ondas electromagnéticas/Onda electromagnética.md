@@ -29,3 +29,18 @@ Si tomamos ahora el rotor de la ecuación de Ampère-Maxwell y procedemos en for
 Por lo tanto hemos podido desacoplar las ecuaciones en cada uno de los campos incógnita, pero hemos tenido que pasar de ecuaciones de primer orden a ecuaciones de segundo orden
 
 Las ecuaciones halladas se conocen como [[Ecuación de onda|ecuaciones vectoriales de D'Alembert]]. Esta es una ecuación que describe una propagación ondulatoria, de donde se deduce que las soluciones a las ecuaciones de Maxwell en un recinto vacío sin fuentes de campo son ondas electromagnéticas
+
+## En forma fasorial
+---
+Vamos a analizar la forma que adoptan las ecuaciones de la onda electromagnética en el caso de [[Onda monocromática|campos monocromáticos]] $$ \begin{matrix} 
+    \vec{E}(\vec{r},~t) = \tilde{E}(\vec{r}) ~ e^{i \omega t} &
+    \vec{D}(\vec{r},~t) = \tilde{D}(\vec{r}) ~ e^{i \omega t} & 
+    \vec{H}(\vec{r},~t) = \tilde{H}(\vec{r}) ~ e^{i \omega t} & 
+    \vec{B}(\vec{r},~t) = \tilde{B}(\vec{r}) ~ e^{i \omega t} 
+\end{matrix} $$
+En un recinto vacío y libre de [[Carga eléctrica|fuentes]] las ecuaciones de Maxwell son $$ \begin{align} 
+    \nabla ~ \tilde{E}(\vec{r}) &= 0 &&& \nabla \times \tilde{E}(\vec{r}) + i \omega \mu_0 ~ \tilde{H}(\vec{r}) &= 0 \\
+    \nabla ~ \tilde{H}(\vec{r}) &= 0 &&& \nabla \times \tilde{H}(\vec{r}) - i \omega \epsilon_0 ~ \tilde{E}(\vec{r}) &= 0
+\end{align} $$
+La ecuación de ondas de D'Alembert de forma fasorial pasan a ser ![[Ecuación de onda#^ecuacion-fasorial]]
+Por lo que para el [[Campo eléctrico|campo eléctrico]] pasan a ser $$ \nabla^2 \tilde{E} + k^2 \tilde{E} = 0 $$ que es una [[Ecuación de Helmholtz|ecuación de Helmholtz]]. Se obtiene una ecuación idéntica para $\tilde{H}$
