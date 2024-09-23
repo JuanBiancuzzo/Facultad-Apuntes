@@ -21,6 +21,10 @@ function whiteListArchivoProyecto(archivoPath) {
     return proyecto.some(proyecto => archivoPath.startsWith(proyecto));
 }
 
+function whiteListArchivoBiblioteca(archivoPath) {
+    return archivoPath.startsWith("biblioteca");
+}
+
 function whiteListArchivoLibro(archivoPath) {
     const dv = app.plugins.plugins.dataview.api;
     const itemBiblioteca = dv.pages("#biblioteca/libro").map(item => item.file.folder);
@@ -42,6 +46,7 @@ module.exports = () => {
         archivoInvestigacion: whiteListArchivoInvestigacion,
         archivoProyecto: whiteListArchivoProyecto,
         archivoLibro: whiteListArchivoLibro,
+        archivoBiblioteca: whiteListArchivoBiblioteca,
         archivoComida: whiteListArchivoComida,
         validarNombre: validarNombre
     };

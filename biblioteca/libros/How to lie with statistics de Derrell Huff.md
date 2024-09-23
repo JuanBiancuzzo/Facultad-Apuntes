@@ -5,15 +5,15 @@ tipoCita: Libro
 numReferencia: 246
 tituloObra: How to lie with statistics
 nombreAutores:
-  - apellido: Geis
-    nombre: Irving
+  - apellido: Huff
+    nombre: Darrell
 anio: "1954"
 editorial: W. W. Norton & Company
 edicion: 
 volumen: 
 url: 
 capitulos: 
-cover: How to lie with statistics de Irving Geis.jpg
+cover: How to lie with statistics de Derrell Huff.jpg
 aliases: 
 tags:
   - referencia/libro

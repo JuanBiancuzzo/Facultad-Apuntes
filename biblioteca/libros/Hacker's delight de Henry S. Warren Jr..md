@@ -1,24 +1,24 @@
 ---
-dia: 2024-09-12
+dia: 2024-09-23
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 245
-tituloObra: Fooled by Randomness
+numReferencia: 272
+tituloObra: Hacker's delight
 nombreAutores:
-  - apellido: Taleb
-    nombre: Nissim Nicholas
-anio: "2001"
-editorial: Random House
-edicion: 
+  - apellido: Warren Jr.
+    nombre: Henry S.
+anio: "2012"
+editorial: Pearson Education
+edicion: "2"
 volumen: 
 url: 
 capitulos: 
+cover: Hacker's delight de Henry S. Warren Jr.jpg
 aliases: 
 tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-cover: Fooled by Randomness de Nissim Nicholas Taleb.jpg
 ---
 ```dataviewjs
 	let actual = dv.current();
@@ -27,5 +27,6 @@ cover: Fooled by Randomness de Nissim Nicholas Taleb.jpg
 ```
 # Resumen
 ---
+
 
  

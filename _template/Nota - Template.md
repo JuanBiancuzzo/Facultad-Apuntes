@@ -27,10 +27,12 @@
             
         } else if (pertenece.archivoProyecto(path)) {
             tR += await tp.file.include("[[Nota proyecto - Template]]");
-            
         } else if (pertenece.archivoLibro(path)) {
             tR += await tp.file.include("[[Libro - Template]]");
 
+        } else if (pertenece.archivoBiblioteca(path)) {
+            tR += await tp.file.include("[[Biblioteca selector - Template]]");
+            
         } else if (pertenece.archivoComida(path)) {
             // Nota receta
 

@@ -14,6 +14,8 @@ await dv.view("_scripts/dataview/mostrarSubTemas", { indice: dv.current() });
 # ¿Qué se va a investigar?
 ---
 Vamos a analizar varios tipos de inteligencias artificiales y sus forma de llegar resultados
+* https://github.com/adam-maj/deep-learning
+* [Neural Networks: Zero to Hero](https://youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&si=c0PJKP2CIhh7dYEA)
 
 
 ## Archivos

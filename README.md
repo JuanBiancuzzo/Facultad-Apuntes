@@ -46,7 +46,6 @@ Un listado de los temas investigados y su estado actual
 | Tema de investigación                                                | Estado        |
 | -------------------------------------------------------------------- | ------------- |
 | [Animation](animation/Índice.md)                                     | Falta resumir |
-| [Asynchronous](asynchronous/Índice.md)                               | Falta resumir |
 | [Cocinar](cocinar/Índice.md)                                         | Falta resumir |
 | [Compilador](compilador/Índice.md)                                   | Sin empezar   |
 | [Data structures](data%20structures/Índice.md)                       | Falta resumir |

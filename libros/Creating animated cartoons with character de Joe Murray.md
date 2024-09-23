@@ -1,24 +1,24 @@
 ---
-dia: 2024-09-12
+dia: 2024-09-23
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 245
-tituloObra: Fooled by Randomness
+numReferencia: 273
+tituloObra: Creating animated cartoons with character
 nombreAutores:
-  - apellido: Taleb
-    nombre: Nissim Nicholas
-anio: "2001"
-editorial: Random House
-edicion: 
+  - apellido: Murray
+    nombre: Joe
+anio: "2010"
+editorial: Watson-Guptill Publications
+edicion: "1"
 volumen: 
 url: 
 capitulos: 
+cover: Creating animated cartoons with character de Joe Murray.jpg
 aliases: 
 tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-cover: Fooled by Randomness de Nissim Nicholas Taleb.jpg
 ---
 ```dataviewjs
 	let actual = dv.current();
@@ -27,5 +27,6 @@ cover: Fooled by Randomness de Nissim Nicholas Taleb.jpg
 ```
 # Resumen
 ---
+
 
  
