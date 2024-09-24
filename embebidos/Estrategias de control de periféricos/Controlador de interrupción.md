@@ -25,7 +25,83 @@ El controlador de interrupciones está asociado con un mecanismo que permite des
 ---
 En un [[ARM's Cortex-M|ARM Cortex-M]] se lo conoce como controlador de interrupción vectorial anidado (NVIC) cuyo propósito es gestionar excepciones 
 
-![[NVIC.png]]
+```tikz
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\usepackage{ifthen}
+\usepackage{amssymb}
+
+\begin{document} 
+\begin{tikzpicture}[scale=1.3, transform shape, thick]
+    \tikzmath { \ancho = 2.5; \alto = 1.5; \sep = 0.2; }
+    
+    \draw ({-\ancho/2}, -\alto) rectangle ++(\ancho, {2 * \alto})
+        node[midway, above=2pt] {NVIC};
+    \draw[dashed] ({-\ancho/2 + \sep}, {-\alto + \sep}) 
+        rectangle ({\ancho/2 - \sep}, {-2 * \sep})
+            node[midway, align=center, scale=0.8] {Configuration\\registers};
+    
+    \coordinate (nvic-abajo) at (0, -\alto);
+    \coordinate (nvic-arriba) at (0, \alto);
+    
+    \tikzmath { \max = 5; \dist = 1.5; }
+    \foreach \i in {1, ..., \max} {
+        \coordinate (esquina) at (
+            {-\dist -\ancho/2 - (\i - 1) * \sep / 2}, 
+            {(\i - 1) * \sep / 2 - \alto}
+        );
+        
+        \filldraw[draw=black, fill=white] (esquina) rectangle ++(-\ancho, \alto)
+            node[midway, scale=0.9] {Peripherals};
+        
+        \draw[->, ultra thick] ($ (esquina) + (0, {\i * \alto / (\max + 1)}) $) 
+                node (inicio) {}
+            -- ++({\dist + (\i - 1) * \sep / 2}, 0)
+                node (final) {};
+    }
+    \path (inicio.center) -- (final.center) node[midway, above=2pt] {IRQs};
+    
+    \draw ({-\dist - \ancho/2 - (\max - 1) * \sep / 2}, \alto)
+        rectangle ++(-\ancho, {-\alto / 2}) node[midway, scale=0.9] {Peripheral};
+    \draw[->, ultra thick] (
+        {-\dist - \ancho / 2 - (\max - 1) * \sep / 2}, 
+        {3 * \alto / 4}
+    ) -- ({-\ancho / 2}, {3 * \alto / 4})
+        node[midway, above=2pt] {NMI};
+        
+    \draw ({\ancho/2 + \dist}, -\alto) node (esquina) {}
+        rectangle ++({1.5 * \ancho}, {8 * \alto / 3 + \dist / 3})
+            node[midway, align=center, scale=0.8] 
+                {Cortex-M\\Processor\\Core};
+    
+    \draw[->, ultra thick] ($ (esquina) + (0, {\alto / 2}) $) 
+            node[right=2pt, scale=0.9] {Exception}
+        -- ++(-\dist, 0);
+    \draw[->, ultra thick] ($ (esquina) + (0, {3 * \alto / 4}) $) 
+            node[right=2pt, scale=0.9] {System}
+        -- ++(-\dist, 0);
+    
+    \draw[<->, ultra thick] ($ (esquina) + (0, {3 * \alto / 2}) $) 
+        -- ++(-\dist, 0);
+        
+    \coordinate (cortex-m-abajo) at ($ (esquina) + (0.75 * \ancho, 0) $);
+    
+    \draw ({-\ancho/2}, {-\alto - \dist / 2}) rectangle 
+        ($ (cortex-m-abajo) + ({0.75 * \ancho}, {-\dist / 2 - 2 * \alto / 3}) $)
+            node[midway, scale=0.9] {Internal bus interconnect};
+    \draw[<-, ultra thick] (nvic-abajo) -- ++(0, {-\dist / 2}); 
+    \draw[->, ultra thick] (cortex-m-abajo) 
+            node[above=2pt, scale=0.9] {Bus interface}
+        -- ++(0, {-\dist / 2}); 
+        
+    \draw ({-\ancho/2}, {\alto + \dist / 3}) rectangle ++(\ancho, {2 * \alto / 3})
+        node[midway, scale=0.75, align=center] {SysTick\\(System Tick\\Timer)};
+    \draw[<-, ultra thick] (nvic-arriba) -- ++(0, {\dist / 3}); 
+    
+\end{tikzpicture}
+\end{document}
+```
 
 Una sola línea etiquetada como NMI significa interrupción no enmascarable y se utiliza para permitir que un periférico indique al NVCI que inicie incondicionalmente el proceso de interrupción ^NMI
 

@@ -4,6 +4,8 @@ tags:
   - sisop/Kernel
   - nota/facultad
   - embebidos/Estrategias-de-control-de-periféricos
+aliases:
+  - Timer
 ---
 # Definición
 ---
