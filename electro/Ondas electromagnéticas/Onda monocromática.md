@@ -9,6 +9,7 @@ aliases:
   - Longitud de onda#^numero-onda
   - Vector de onda#Vector de onda
   - Vector de propagación#Vector de onda
+  - Campo armónico
 ---
 # Definición
 ---

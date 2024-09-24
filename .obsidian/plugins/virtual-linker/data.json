@@ -18,7 +18,9 @@
   "tagToExcludeFile": "linker-exclude",
   "tagToIncludeFile": "linker-include",
   "excludeLinksToOwnNote": true,
+  "fixIMEProblem": false,
   "excludeLinksInCurrentLine": false,
   "onlyLinkOnce": true,
-  "excludeLinksToRealLinkedFiles": true
+  "excludeLinksToRealLinkedFiles": true,
+  "includeAliases": true
 }
