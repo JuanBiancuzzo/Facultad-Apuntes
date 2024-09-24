@@ -27,24 +27,13 @@ let archivos = dv.pages(`#${tagRepresentante} and -#resumen`)
 
         return resultado;
     })
-    .sort(({ path, nombre, aliases }) => nombre );
+    .sort(({ nombre, ..._ }) => nombre )
+    .map(({ path, nombre, aliases }) => ({
+        path: path,
+        nombre: nombre,
+        largo: (aliases.length >= 3),
+        descripcionSimple: false,
+        descripcion: aliases.filter(alias => !alias.includes("#"))
+    }));
 
-let mostrar = archivos.map(({ path, nombre, aliases }) => {
-    let mostrarAliases = "";
-    if (aliases.length > 0) {
-        mostrarAliases += '<div class="aliases">' + aliases
-            .filter(alias => !alias.includes("#"))
-            .map(alias => `<p class="alias"> ${alias} </p>`)
-            .join("") + "</div>";
-    }
-    let clase = (aliases.length < 3) ? "nota" : "nota-larga";
-
-    return `<div class="${clase}"> ${crearReferencia(path, nombre)} ${mostrarAliases} </div>`;
-}).join("");
-
-dv.el("div", `<div class="grilla"> ${mostrar} </div>`);
-
-function crearReferencia(path, texto) {
-    return `<a data-tooltip-position="top" aria-label="${path}" data-href="${path}" \
-        class="internal-link ref" target="_blank" rel="noopener"> ${texto} </a>`;
-}
+await dv.view("_scripts/dataview/mostrarElementos", { simple: true, elementos: archivos });

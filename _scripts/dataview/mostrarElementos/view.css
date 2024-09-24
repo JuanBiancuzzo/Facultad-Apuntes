@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
+    padding-top: 1em;
 }
 
 .nota, .nota-larga {
@@ -21,18 +22,24 @@
     order: 2;
 }
 
-.nota-larga .aliases {
+.lista {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1.5em;
+}
+
+.nota-larga .lista {
     column-count: 2;
     column-gap: 1em;
 }
 
-.titulo {
+.encabezado {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.nombre {
+.titulo {
     display: flex;
     flex-direction: column;
     padding-top: 1em;
@@ -51,12 +58,13 @@
     width: 1.5em;
 }
 
-.referencias {
+.subnombre {
     text-indent: 1em;
     font-size: 0.9rem;
+    margin: 0;
 }
 
-.alias {
+.item {
     margin: 0;
     color: #9a9a9a;
     font-size: 0.9rem;
