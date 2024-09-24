@@ -371,5 +371,5 @@ Cabe aclarar que este sistema puede ser algo lento, especialmente la transición
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

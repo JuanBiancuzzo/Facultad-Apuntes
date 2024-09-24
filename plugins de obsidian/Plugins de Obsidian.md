@@ -22,5 +22,5 @@ El segundo plugin es poder usar python notebooks dentro de obsidian, para poder 
 # Notas
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/mostrarNotas", { proyecto: dv.current() });
+await dv.view("_scripts/dataview/proyectos/mostrarNotas", { proyecto: dv.current() });
 ```

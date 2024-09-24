@@ -10,7 +10,7 @@ tags:
   - reglas-APA
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
 ```
 # Definición
 ---
@@ -22,5 +22,5 @@ Depende del contenido del PDF que quieres citar. Por ejemplo, el PDF podría ser
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

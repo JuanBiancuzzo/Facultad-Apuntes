@@ -17,5 +17,5 @@ Un circuito integrado (CI), también conocido como chip o microchip, es una estr
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

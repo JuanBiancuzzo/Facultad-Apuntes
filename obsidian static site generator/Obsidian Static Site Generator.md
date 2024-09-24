@@ -17,5 +17,5 @@ En este proyecto vamos a crear una herramienta que permita transformar archivos 
 # Notas
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/mostrarNotas", { proyecto: dv.current() });
+await dv.view("_scripts/dataview/proyectos/mostrarNotas", { proyecto: dv.current() });
 ```

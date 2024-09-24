@@ -20,5 +20,5 @@ La conductividad es inversa de la resistividad (símbolo $\rho$) por lo tanto $$
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

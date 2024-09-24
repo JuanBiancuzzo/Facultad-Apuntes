@@ -33,5 +33,5 @@ $$ \forall x \in B: ~~~~~ x + 1_B = 1_B, ~~~ x ~ 0_B = 0_B $$ ^90ffb1
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

@@ -23,5 +23,5 @@ Se obtiene así para la potencia un valor constante $\frac{1}{2} U_0 ~ I_0 ~ cos
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

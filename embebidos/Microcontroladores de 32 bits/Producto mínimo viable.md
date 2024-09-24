@@ -47,5 +47,5 @@ Para comenzar el diseño o la integración de un nuevo sistema, un ingeniero deb
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

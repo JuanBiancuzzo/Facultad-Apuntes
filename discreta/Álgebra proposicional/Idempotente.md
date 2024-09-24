@@ -29,5 +29,5 @@ $$ \forall x \in B: ~~~~~ x + x = x, ~~~ xx = x $$ ^1d327b
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

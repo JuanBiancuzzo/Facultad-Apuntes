@@ -19,5 +19,5 @@ El lenguaje ensamblador o assembler (en inglés: assembler language y la abrevia
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

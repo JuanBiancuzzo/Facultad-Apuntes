@@ -40,5 +40,5 @@ Si consideramos un [[Circuito eléctrico|circuito]] con 2 [[Inductor|bobinas]] e
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

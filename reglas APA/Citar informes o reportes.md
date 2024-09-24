@@ -11,7 +11,7 @@ tags:
   - reglas-APA
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
 ```
 # Definición
 ---
@@ -41,5 +41,5 @@ La agencia específica responsable del informe aparece como el autor. Los nombre
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

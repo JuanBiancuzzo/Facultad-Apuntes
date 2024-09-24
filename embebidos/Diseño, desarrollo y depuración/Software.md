@@ -17,5 +17,5 @@ El software, en su gran mayoría, está escrito en [[Lenguaje de programación#L
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

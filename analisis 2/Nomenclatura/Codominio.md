@@ -16,5 +16,5 @@ La imagen de una [[Función|función]] $f: D \to H$, es el [[Conjunto|conjunto]]
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

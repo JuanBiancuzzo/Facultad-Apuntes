@@ -25,5 +25,5 @@ $$ \nabla^2 \tilde{u} + k^2 \tilde{u} = \Delta \tilde{u} + k^2 \tilde{u} = 0, ~~
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

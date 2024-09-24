@@ -60,5 +60,5 @@ Como la lectura de [[Memoria|memoria]] puede ser más lenta, se utiliza el ACK (
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

@@ -17,5 +17,5 @@ El servicio general de paquetes vía radio, en inglés: General Packet Radio Ser
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

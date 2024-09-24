@@ -28,5 +28,5 @@ Para corrientes estacionarias, se cumple que toda corriente que entra a un volum
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

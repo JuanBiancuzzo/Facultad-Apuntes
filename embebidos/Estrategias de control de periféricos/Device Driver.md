@@ -19,5 +19,5 @@ Es una pieza esencial del [[Software|software]], y en particular, del núcleo de
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

@@ -13,7 +13,7 @@ tags:
   - reglas-APA
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/mostarEtapa", { etapa: dv.current().etapa });
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
 ```
 # Definición
 ---
@@ -24,5 +24,5 @@ tags:
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

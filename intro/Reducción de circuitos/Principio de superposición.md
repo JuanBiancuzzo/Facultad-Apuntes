@@ -95,5 +95,5 @@ Se establece que la [[Tensión|tensión]] entre los extremos (o la [[Corriente e
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

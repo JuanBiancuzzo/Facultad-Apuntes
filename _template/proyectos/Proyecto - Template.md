@@ -61,5 +61,5 @@ Ingresar descripción corta del proyecto
 # Notas
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/mostrarNotas", { proyecto: dv.current() });
+await dv.view("_scripts/dataview/proyectos/mostrarNotas", { proyecto: dv.current() });
 ```

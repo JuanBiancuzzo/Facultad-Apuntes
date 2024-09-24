@@ -19,5 +19,5 @@ Tiene unidades de $\displaystyle [h] = \frac{W}{m^2 ~ K}$
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

@@ -14,5 +14,5 @@ El hardware, equipo o soporte físico​ en informática se refiere a las partes
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

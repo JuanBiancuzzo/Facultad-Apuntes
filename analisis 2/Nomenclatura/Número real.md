@@ -16,5 +16,5 @@ Se representa el [[Conjunto|conjunto]] de los números reales con el símbolo $\
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

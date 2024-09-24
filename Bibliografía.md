@@ -6,7 +6,7 @@ Lista de todas las carpetas siendo investigadas, con todos los links que usan. C
 let indices = dv.pages('#índice').sort(archivo => archivo.file.folder.split("/").pop());
 const referencias = dv.pages('#referencia');
 
-let citaView = require(app.vault.adapter.basePath + "/_scripts/dataview/citaView.js");
+let citaView = require(app.vault.adapter.basePath + "/_scripts/dataview/investigacion/citaView.js");
 
 for (let indice of indices) {
 	let paginas = dv.pages(`"${indice.file.folder}" and -#índice`)

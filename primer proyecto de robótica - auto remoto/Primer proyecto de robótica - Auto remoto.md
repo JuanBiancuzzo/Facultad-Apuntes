@@ -19,5 +19,5 @@ La intención con este proyecto es explorar un proyecto de robótica simple de p
 # Notas
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/mostrarNotas", { proyecto: dv.current() });
+await dv.view("_scripts/dataview/proyectos/mostrarNotas", { proyecto: dv.current() });
 ```

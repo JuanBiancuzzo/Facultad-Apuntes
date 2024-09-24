@@ -1,4 +1,4 @@
-const citaView = require(app.vault.adapter.basePath + "/_scripts/dataview/citaView.js");
+const citaView = require(app.vault.adapter.basePath + "/_scripts/dataview/investigacion/citaView.js");
 
 const { archivo } = input;
 

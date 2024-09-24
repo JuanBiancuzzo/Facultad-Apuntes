@@ -16,5 +16,5 @@ Esta potencia no se consume ni se genera en el sentido estricto, y en [[Circuito
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

@@ -19,5 +19,5 @@ Crear una forma de mostrar mis proyectos y quien soy para presentarme
 # Notas
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/mostrarNotas", { proyecto: dv.current() });
+await dv.view("_scripts/dataview/proyectos/mostrarNotas", { proyecto: dv.current() });
 ```

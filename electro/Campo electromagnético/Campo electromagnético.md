@@ -81,6 +81,6 @@ El campo puede verse como la combinación de un campo eléctrico y un [[Material
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```
 
