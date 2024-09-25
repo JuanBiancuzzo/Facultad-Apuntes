@@ -6,7 +6,7 @@
   "cssTheme": "",
   "translucency": false,
   "enabledCssSnippets": [
-    "header_size",
-    "mostrar-bloques"
+    "mostrar-bloques",
+    "header_size"
   ]
 }

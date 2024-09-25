@@ -1,9 +1,9 @@
 ---
 dia: 2024-09-22
-estado: 'Sin empezar'
-tags: 
- - índice
- - mecánica
+estado: Sin empezar
+tags:
+  - índice
+  - mecánica
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
