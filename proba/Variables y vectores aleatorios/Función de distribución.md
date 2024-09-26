@@ -6,11 +6,12 @@ tags:
 ---
 # Definición
 ---
-Sea $(\Omega, \mathbb{A}, \mathbb{P})$ un [[Espacio de probabilidad]] y $X$ una [[Variable aleatoria]], definimos su función de distribución $F_X : \mathbb{R} \to [0, 1]$ dada por 
+Sea $(\Omega, \mathbb{A}, \mathbb{P})$ un [[Espacio de probabilidad|espacio de probabilidad]] y $X$ una [[Variable aleatoria|variable aleatoria]], definimos su función de distribución $F_X : \mathbb{R} \to [0, 1]$ dada por 
 $$ F_X(x) = P(X \leq x), \forall x \in \mathbb{R} $$
 
 
-# Propiedades
+### Propiedades
+---
 1) $F_X(x) \in [0, 1], \forall x \in \mathbb{R}$
 2) $F_X(x)$ es monotona no decreciente
 3) $F_X(x)$ es continua por derecha
@@ -19,7 +20,7 @@ $$ F_X(x) = P(X \leq x), \forall x \in \mathbb{R} $$
 
 ## Calculo de probabilidad en un intervalo
 ---
-Dado una [[Variable aleatoria]] $X$, se puede calcular la probabilidad de que $X$ este en el intervalo $I$
+Dado una variable aleatoria $X$, se puede calcular la [[Probabilidad|probabilidad]] de que $X$ este en el intervalo $I$
 
 $$ \begin{matrix}
 	\mathbb{P}(X \in I) = \mathbb{P}(a < X \leq b) = F_X(b) - F_X(a) & I = (a, b] \\ \\
@@ -29,7 +30,8 @@ $$ \begin{matrix}
 \end{matrix}$$
  
 
-## Para [[Variable aleatoria continua]]
+## Para variable aleatoria continua
 ---
 Se puede calcular la probabilidad de un punto, como 
 $$ F_X(x) = \mathbb{P}(X \leq x) = \int_{-\infty}^x f_X(t) dt $$
+

@@ -6,8 +6,8 @@ tags:
 ---
 # Definición
 ---
-En este [[Plot]] se muestran 5 valores:
-- El central de la caja verde es la [[Mediana]]. También visto como el punto que separa a la mitad a la población
+En este [[Plot|plot]] se muestran 5 valores
+- El central de la caja verde es la [[Mediana|mediana]]. También visto como el punto que separa a la mitad a la [[Población|población]]
 - Los extremos de la caja son los [[Cuantil|cuantiles]] 1 y 3, que representan el punto donde separan 25% de la población para inferior o superior, respectivamente
 - Los bigotes representan, son el valor más alejado en cada dirección, hasta 1.5 veces el rango intercuartílico (que es la diferencia entre el cuantil 1 y 3)
 

@@ -17,29 +17,20 @@ await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
 Se tiene $3$ tipos de distribuciones
 
 ```dataviewjs
-const datos = [
-	{ nombre: "Discretas", tag: "distribucion/discreta" },
-	{ nombre: "Continuas", tag: "distribucion/continua" },
-	{ nombre: "Multivariables", tag: "distribucion/multivariada" },
-];
+let datos = dv.array([
+    	{ nombre: "Discretas", tag: "distribucion/discreta" },
+    	{ nombre: "Continuas", tag: "distribucion/continua" },
+    	{ nombre: "Multivariables", tag: "distribucion/multivariada" },
+    ]).map(({ nombre, tag }) => ({
+        titulo: `<h3> ${nombre} </h3> <hr>`,
+        items: dv.pages(`#${tag}`).map(archivo => ({
+            path: archivo.file.path,
+            nombre: archivo.file.name,
+            largo: false,
+            descripcionSimple: true,
+            descripcion: ""
+        }))
+    }));
 
-for (let { nombre, tag } of datos) {
-	dv.header(4, nombre);
-	dv.el("hr", "");
-	let mostrar = dv.pages(`#${tag}`)
-	    .map(archivo => {
-	        let nombre = archivo.file.name;
-	        let path = archivo.file.path;
-	        
-	        return `<li> ${crearReferencia(path, nombre)} </li>`;
-	    });
-
-    dv.el("ul", mostrar);
-    dv.el("br", "");
-}
-
-function crearReferencia(path, texto, style="") {
-    return `<a data-tooltip-position="top" aria-label="${path}" data-href="${path}" style="${style}" \
-        class="internal-link" target="_blank" rel="noopener"> ${texto} </a>`;
-}
+await dv.view("_scripts/dataview/mostrarElementos", { simple: false, elementos: datos });
 ```

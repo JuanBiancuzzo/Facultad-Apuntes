@@ -43,30 +43,30 @@ Un listado de materias y su estado actual
 ---
 Un listado de los temas investigados y su estado actual
 
-| Tema de investigación                                                | Estado        |
-| -------------------------------------------------------------------- | ------------- |
-| [Animation](animation/Índice.md)                                     | Falta resumir |
-| [Cocinar](cocinar/Índice.md)                                         | Falta resumir |
-| [Compilador](compilador/Índice.md)                                   | Sin empezar   |
-| [Data structures](data%20structures/Índice.md)                       | Falta resumir |
-| [Dibujo](dibujo/Índice.md)                                           | Falta resumir |
-| [Física](física/Índice.md)                                           | Sin empezar   |
-| [Game creation](game%20creation/Índice.md)                           | Falta resumir |
-| [Game engine](game%20engine/Índice.md)                               | Falta resumir |
-| [Generación de energía](generación%20de%20energía/Índice.md)         | Sin empezar   |
-| [Generación procedural](generación%20procedural/Índice.md)           | Falta resumir |
-| [Herramientas](herramientas/Índice.md)                               | Falta resumir |
-| [Lagrangian mechanics](lagrangian%20mechanics/Índice.md)             | Falta resumir |
-| [Lenguaje de marcado](lenguaje%20de%20marcado/Índice.md)             | Falta resumir |
-| [Lenguajes de programación](lenguajes%20de%20programación/Índice.md) | Sin empezar   |
-| [Machine Learning](machine%20Learning/Índice.md)                     | Falta resumir |
-| [Matemática](matemática/Índice.md)                                   | Falta resumir |
-| [Mecánica](mecánica/Índice.md)                                       | Sin empezar   |
-| [Música](música/Índice.md)                                           | Falta resumir |
-| [Networking](networking/Índice.md)                                   | Falta resumir |
-| [Placa de Desarrollo](placa%20de%20Desarrollo/Índice.md)             | Sin empezar   |
-| [Reglas APA](reglas%20APA/Índice.md)                                 | Falta resumir |
-| [Storytelling](storytelling/Índice.md)                               | Falta resumir |
+| Tema de investigación                                                | Estado                |
+| -------------------------------------------------------------------- | --------------------- |
+| [Animation](animation/Índice.md)                                     | Falta resumir         |
+| [Cocinar](cocinar/Índice.md)                                         | Falta agregar recetas |
+| [Compilador](compilador/Índice.md)                                   | Sin empezar           |
+| [Data structures](data%20structures/Índice.md)                       | Falta resumir         |
+| [Dibujo](dibujo/Índice.md)                                           | Falta resumir         |
+| [Física](física/Índice.md)                                           | Sin empezar           |
+| [Game creation](game%20creation/Índice.md)                           | Falta resumir         |
+| [Game engine](game%20engine/Índice.md)                               | Falta resumir         |
+| [Generación de energía](generación%20de%20energía/Índice.md)         | Sin empezar           |
+| [Generación procedural](generación%20procedural/Índice.md)           | Falta resumir         |
+| [Herramientas](herramientas/Índice.md)                               | Falta resumir         |
+| [Lagrangian mechanics](lagrangian%20mechanics/Índice.md)             | Falta resumir         |
+| [Lenguaje de marcado](lenguaje%20de%20marcado/Índice.md)             | Falta resumir         |
+| [Lenguajes de programación](lenguajes%20de%20programación/Índice.md) | Sin empezar           |
+| [Machine Learning](machine%20Learning/Índice.md)                     | Falta resumir         |
+| [Matemática](matemática/Índice.md)                                   | Falta resumir         |
+| [Mecánica](mecánica/Índice.md)                                       | Sin empezar           |
+| [Música](música/Índice.md)                                           | Falta resumir         |
+| [Networking](networking/Índice.md)                                   | Falta resumir         |
+| [Placa de Desarrollo](placa%20de%20Desarrollo/Índice.md)             | Sin empezar           |
+| [Reglas APA](reglas%20APA/Índice.md)                                 | Falta resumir         |
+| [Storytelling](storytelling/Índice.md)                               | Falta resumir         |
 
 ## Proyectos
 ---

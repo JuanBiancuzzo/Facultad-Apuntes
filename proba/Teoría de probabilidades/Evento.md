@@ -6,7 +6,7 @@ tags:
 ---
 # Definición
 ---
-Subconjunto de un [[Espacio muestral|espacio muestral]] $\Omega$
+[[Subconjunto]] de un [[Espacio muestral|espacio muestral]] $\Omega$
 
 ### Ejemplo
 ---

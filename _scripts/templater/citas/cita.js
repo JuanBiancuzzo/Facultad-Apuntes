@@ -188,6 +188,7 @@ async function rellenarDatos(tp, generarInicio, seguidorRef, datosIniciales = un
     );
 
     while (true) {
+        console.log(datos);
         for (let [key, {tipo, ...extra}] of Object.entries(datos)) {
 
             if (tipo == SIMPLE && respuesta == key) {                

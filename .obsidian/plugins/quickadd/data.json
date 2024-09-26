@@ -189,7 +189,7 @@
       "folder": {
         "enabled": true,
         "folders": [
-          "libros"
+          "biblioteca/libros"
         ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,

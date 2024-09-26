@@ -6,19 +6,19 @@ tags:
 ---
 # Definición
 ---
-Una [[Variable aleatoria]] es continua si se cumplen las siguientes condiciones
+Una [[Variable aleatoria|variable aleatoria]] es continua si se cumplen las siguientes condiciones
 
-1) Su conjunto de valores posibles se compone de todos los números que hay en un solo intervalo, o en una unión excluyente de intervalors
+1. Su [[Conjunto|conjunto]] de valores posibles se compone de todos los números que hay en un solo intervalo, o en una unión excluyente de intervalos
 
-2) Ningún valor posible de la variable aleatoria tiene probabilidad positiva, es decir $\mathbb{P}(X = c) = 0, \forall c \in \mathbb{R}$
+2. Ningún valor posible de la variable aleatoria tiene [[Probabilidad|probabilidad]] positiva, es decir $\mathbb{P}(X = c) = 0, \forall c \in \mathbb{R}$
 
 
-# Definición con [[Átomo de una distribución|átomos]]
+## Punto de vista de los átomos
 ---
-La [[Variable aleatoria]] $X$ será continua si $F_X(x)$ es continua (el conjunto de [[Átomo de una distribución|átomos]] es vacío)
+La variable aleatoria $X$ será continua si $F_X(x)$ es continua (el conjunto de [[Átomo de una distribución|átomos]] es vacío)
 
 
-### Otras formas de definirla
+## Otras formas de definirla
 ---
-* Sea $X$ una variable aleatoria continua, entonces existe una [[Función de densidad]].
-* La [[Función de distribución]] es continua.
+* Sea $X$ una variable aleatoria continua, entonces existe una [[Función de densidad|función de densidad]]
+* La [[Función de distribución|función de distribución]] es continua.

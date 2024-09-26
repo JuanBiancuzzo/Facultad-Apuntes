@@ -4,6 +4,9 @@ tags:
   - sisop/Virtualización-de-memoria
   - nota/facultad
   - embebidos/Memorias
+  - data-structures
+aliases:
+  - Pila
 ---
 # Definición
 ---

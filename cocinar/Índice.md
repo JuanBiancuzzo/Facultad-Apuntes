@@ -3,7 +3,7 @@ dia: 2024-07-29
 tags:
   - índice
   - cocinar
-estado: Falta resumir
+estado: Falta agregar recetas
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

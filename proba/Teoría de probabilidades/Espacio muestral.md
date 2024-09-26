@@ -6,7 +6,7 @@ tags:
 ---
 # Definición
 ---
-El espacio muestral $\Omega$ es el conjunto de todos los posibles resultados del [[Experimento aleatorio|experimento aleatorio]]. Sus elementos, $\omega$, se llaman [[Evento|eventos]] elementales
+El espacio muestral $\Omega$ es el [[Conjunto|conjunto]] de todos los posibles resultados del [[Experimento aleatorio|experimento aleatorio]]. Sus elementos, $\omega$, se llaman [[Evento|eventos]] elementales
 
 ### Ejemplo
 ---

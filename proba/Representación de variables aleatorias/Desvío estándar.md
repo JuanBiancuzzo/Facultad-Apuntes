@@ -6,4 +6,4 @@ tags:
 ---
 # Definición
 ---
-Se define como al raiz cuadrada de la [[Varianza]] de una [[Variable aleatoria]]: $$ \sigma_X = \sqrt{Var(X)} $$
+Se define como al raíz cuadrada de la [[Varianza|varianza]] de una [[Variable aleatoria|variable aleatoria]] $$ \sigma_X = \sqrt{Var(X)} $$

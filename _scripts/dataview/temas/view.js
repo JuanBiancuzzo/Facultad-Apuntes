@@ -24,7 +24,7 @@ function conseguirEtapa(indice) {
     
     let etapaFinal = "sin-empezar";
     if (etapasConsideradas.length > 0) {
-        if (etapasConsideradas.some(etapa => etapa == "empezado")) {
+        if (etapasConsideradas.some(etapa => etapa != "sin-empezar")) {
             etapaFinal = "empezado";
         } else if (etapasConsideradas.every(etapa => etapa == "ampliar")) {
             etapaFinal = "ampliar";

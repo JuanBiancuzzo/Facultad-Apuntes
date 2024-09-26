@@ -6,4 +6,4 @@ tags:
 ---
 # Definición
 ---
-La [[Variable aleatoria]] $X$ será mixta si no es una [[Variable aleatoria discreta]] ni una [[Variable aleatoria continua]].
+La [[Variable aleatoria|variable aleatoria]] $X$ será mixta si no es una [[Variable aleatoria discreta|variable aleatoria discreta]] ni una [[Variable aleatoria continua|variable aleatoria continua]]

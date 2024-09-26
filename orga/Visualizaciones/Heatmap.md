@@ -6,8 +6,8 @@ tags:
 ---
 # Definición
 ---
-Es un [[Plot de relación]], para dos variables con [[Distribución discreta]]. Nos permite ver muchos valores al mismo tiempo.
+Es un [[Plot de relación|plot de relación]], para dos variables con [[Distribución discreta|distribución discreta]]. Nos permite ver muchos valores al mismo tiempo.
 
 ![[Heatmap.webp|600]]
 
-Donde el valor mostrado suele ser algun agregado, por ejemplo la [[Mediana]] o algun otro valor en general.
+Donde el valor mostrado suele ser algún agregado, por ejemplo la [[Mediana|mediana]] o algún otro valor en general.

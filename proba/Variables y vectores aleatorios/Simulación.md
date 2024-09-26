@@ -4,23 +4,25 @@ tags:
   - proba/Variables-y-vectores-aleatorios
   - nota/facultad
 ---
-Dada una [[Variable aleatoria]] $X$, con una cierta [[Función de distribución]] $F_X$, la simulación es usando una [[Variable aleatoria]] $U$, crear una [[Función de variable aleatoria]] $g(U)$ tal que $X$ y $g(U)$ sean [[Eventos equivalentes]].
+# Definición
+---
+Dada una [[Variable aleatoria|variable aleatoria]] $X$, con una cierta [[Función de distribución|función de distribución]] $F_X$, la simulación es usando una variable aleatoria $U$, crear una [[Función de variable aleatoria|función de variable aleatoria]] $g(U)$ tal que $X$ y $g(U)$ sean [[Eventos equivalentes|eventos equivalentes]]
 
-En terminos generales, pedimos 
+En términos generales, pedimos 
 $$ F_X(x) = F_{U}(g(u)) $$
 
-Usando la [[Inversa generalizada]] podemos despejsar $x$, dejando
+Usando la [[Inversa generalizada]] podemos despejar $x$, dejando
 $$ x = F_X^{-1} \circ F_U(g(u)) $$
-Y si planteamos que $U \sim U(0, 1)$ una [[Distribución uniforme]], tenemos 
+Y si planteamos que $U \sim U(0, 1)$ una [[Distribución uniforme|distribución uniforme]], tenemos 
 $$ x = F_X^{-1}(g(u)) $$
 
 Y conseguimos:
 
-# Teorema
+## Teorema
 ---
-Si $F$ es una función que cumple
+Si $F$ es una [[Función|función]] que cumple
 * Ser no decreciente
 * $\lim_{x \to -\infty} F(x) = 0$ y $\lim_{x \to \infty} F(x) = 1$ 
 * Continua por derecha
 
-Entonces si defino $X = F^{-1}(U)$ con $U \sim U(0, 1)$ se tiene que $X$ es una [[Variable aleatoria]] cuya [[Función de distribución]] es la función $F$ dada.
+Entonces si defino $X = F^{-1}(U)$ con $U \sim U(0, 1)$ se tiene que $X$ es una variable aleatoria cuya función de distribución es la función $F$ dada
