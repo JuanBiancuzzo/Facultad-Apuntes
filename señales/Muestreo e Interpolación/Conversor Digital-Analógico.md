@@ -7,6 +7,7 @@ aliases:
   - Conversor D/A
   - Digital to analog converter
   - D/A converter
+  - DAC
 ---
 # Definición
 ---
