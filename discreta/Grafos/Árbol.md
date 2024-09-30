@@ -3,6 +3,7 @@ dia: 2024-08-14
 tags:
   - discreta/Grafos
   - nota/facultad
+  - data-structures
 aliases:
   - Bosque
 ---

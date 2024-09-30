@@ -1,6 +1,6 @@
 ---
 dia: 2024-07-08
-etapa: sin-empezar
+etapa: empezado
 referencias:
   - "95"
   - "233"

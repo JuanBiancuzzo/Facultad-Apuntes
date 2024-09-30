@@ -3,6 +3,7 @@ dia: 2024-08-16
 tags:
   - discreta/Grafos
   - nota/facultad
+  - algoritmos
 aliases:
   - Flujo de un grafo
 ---

@@ -3,6 +3,7 @@ dia: 2023-11-20
 tags:
   - sisop/Virtualización-de-memoria
   - nota/facultad
+  - data-structures
 ---
 # Definición
 ---

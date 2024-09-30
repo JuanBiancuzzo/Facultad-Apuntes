@@ -45,6 +45,7 @@ Un listado de los temas investigados y su estado actual
 
 | Tema de investigación                                                | Estado                |
 | -------------------------------------------------------------------- | --------------------- |
+| [Algoritmos](algoritmos/Índice.md)                                   | Sin empezar           |
 | [Animation](animation/Índice.md)                                     | Falta resumir         |
 | [Cocinar](cocinar/Índice.md)                                         | Falta agregar recetas |
 | [Compilador](compilador/Índice.md)                                   | Sin empezar           |

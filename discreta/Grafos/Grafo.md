@@ -1,8 +1,9 @@
 ---
 dia: 2024-08-09
-tags: 
- - discreta/Grafos
- - nota/facultad
+tags:
+  - discreta/Grafos
+  - nota/facultad
+  - data-structures
 ---
 # Definición
 ---

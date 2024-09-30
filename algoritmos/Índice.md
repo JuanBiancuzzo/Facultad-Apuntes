@@ -1,11 +1,9 @@
 ---
-dia: 2024-07-09
+dia: 2024-09-30
+estado: Sin empezar
 tags:
   - índice
-  - storytelling/worldbuilding
-estado: Falta resumir
-aliases:
-  - Worldbuilding
+  - algoritmos
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
@@ -13,7 +11,7 @@ await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.cu
 ```
 # ¿Qué se va a investigar?
 ---
-La intención es poder reconocer los aspectos importantes de la creación de mundos, con la capacidad de poder recrearlos de forma procedural
+Vamos a investigar [[Algoritmo|algoritmos]] que son interesantes, y más que nada que sea un lugar para agrupar algoritmos 
 
 
 ## Archivos

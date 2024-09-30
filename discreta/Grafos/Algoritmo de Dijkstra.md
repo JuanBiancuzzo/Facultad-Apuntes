@@ -4,6 +4,7 @@ tags:
   - discreta/Grafos
   - nota/facultad
   - redes/Capa-de-Red
+  - algoritmos
 ---
 # Definición
 ---
