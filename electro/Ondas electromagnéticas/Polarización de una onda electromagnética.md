@@ -7,6 +7,9 @@ aliases:
   - Polarización lineal#^polarizacion-lineal
   - Polarización elíptica#^polarizacion-eliptica
   - Polarización circular#^polarizacion-circular
+  - Onda electromagnética polarización linealmente#^polarizacion-lineal
+  - Onda electromagnética polarización elípticamente#^polarizacion-eliptica
+  - Onda electromagnética polarización circularmente#^polarizacion-circular
 ---
 # Definición
 ---
@@ -58,7 +61,7 @@ Operando tenemos $$ \left( \frac{E_x}{E_{x_0}} \right)^2 + \left( \frac{E_y}{E_{
 
 Esta ecuación representa una elipse en el plano $xy$ 
 
-Entonces, en general la punta del campo eléctrico de una [[Onda plana|onda plana]] describe una hélice de sección elíptica. El sentido de giro puede ser horario o antihorario. La convención más usada es la que se menciona más abajo en relación a las ondas circularmente polarizadas
+Entonces, en general la punta del campo eléctrico de una [[Onda plana electromagnética|onda plana]] describe una hélice de sección elíptica. El sentido de giro puede ser horario o antihorario. La convención más usada es la que se menciona más abajo en relación a las ondas circularmente polarizadas
 
 * Si $\phi = \pm n \pi$ entonces $\displaystyle \frac{E_x}{E_{x_0}} = \frac{E_y}{E_{y_0}}$ que es la ecuación de una recta en el plano del campo. Este caso se denomina polarización lineal ^polarizacion-lineal
 * Si $\phi = \pm (2n + 1) \frac{\pi}{2}$ entonces $\displaystyle \left(\frac{E_x}{E_{x_0}}\right)^2 + \left(\frac{E_y}{E_{y_0}}\right)^2 = 1$ y se trata de una polarización elíptica donde los ejes de la elipse coinciden con $x$ e $y$ ^polarizacion-eliptica

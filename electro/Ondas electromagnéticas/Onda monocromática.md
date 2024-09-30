@@ -5,8 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - Onda armónica
-  - Número de onda#^numero-onda
-  - Longitud de onda#^numero-onda
+  - Número de una onda electromagnética#^numero-onda
+  - Longitud de una onda electromagnética#^numero-onda
   - Vector de onda#Vector de onda
   - Vector de propagación#Vector de onda
   - Campo armónico
@@ -29,9 +29,9 @@ La [[Ecuación de onda|ecuación de ondas de D' Alembert]] se convierte en la [[
 ---
 La expresión fasorial de la onda monocromática $$ g(z,~t) = \tilde{g}_0 ~ e^{i(\omega t - kz)} $$ donde $\tilde{g}_0 = g_0 ~ e^{i\varphi_0}$
 
-Esta representa una onda plana monocromática [[Onda plana#^onda-progresiva|progresiva]] que se propaga según $+z$. Sin embargo, en muchas ocasiones es necesario describir la propagación de una onda plana en una dirección cualquiera $\hat{n}$. Para ello se usa el vector de onda o vector de propagación $\vec{k}$ $$ g(\vec{r},~t) = \mathcal{Re} \Set{ \tilde{g}_0 ~ e^{i(\omega t - \vec{k} \vec{r})} } ~~~~~ \text{con} ~ \vec{k} = k ~ \hat{n} $$ que es un vector cuya dirección y sentido es el de la propagación y cuyo módulo es $\frac{\omega}{c}$
+Esta representa una onda plana monocromática [[Onda plana electromagnética#^onda-progresiva|progresiva]] que se propaga según $+z$. Sin embargo, en muchas ocasiones es necesario describir la propagación de una onda plana en una dirección cualquiera $\hat{n}$. Para ello se usa el vector de onda o vector de propagación $\vec{k}$ $$ g(\vec{r},~t) = \mathcal{Re} \Set{ \tilde{g}_0 ~ e^{i(\omega t - \vec{k} \vec{r})} } ~~~~~ \text{con} ~ \vec{k} = k ~ \hat{n} $$ que es un vector cuya dirección y sentido es el de la propagación y cuyo módulo es $\frac{\omega}{c}$
 
-Una onda monocromática plana que se propaga según el vector de onda $\vec{k}$ tiene campos sobre planos transversales a $\vec{k}$. Si suponemos una onda [[Onda plana#^polarizacion-lineal|linealmente polarizada]] $$ \begin{align} 
+Una onda monocromática plana que se propaga según el vector de onda $\vec{k}$ tiene campos sobre planos transversales a $\vec{k}$. Si suponemos una onda [[Onda plana electromagnética#^polarizacion-lineal|linealmente polarizada]] $$ \begin{align} 
     \vec{E}(\vec{r},~t) &= \mathcal{Re}\Set{ \tilde{E}_0 ~ e^{i(\omega t - \vec{k} \vec{r})} ~ \hat{e}_0 } \\
     \vec{H}(\vec{r},~t) &= \frac{1}{Z_{00}} \hat{n} \times \vec{E}(\vec{r},~t) \\
      &= \frac{1}{\omega \mu} \vec{k} \times \vec{E}(\vec{r},~t) \\

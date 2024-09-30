@@ -4,11 +4,10 @@ tags:
   - electro/Ondas-electromagnéticas-en-el-vacío
   - nota/facultad
 aliases:
-  - Onda plana elemental
+  - Onda plana electromagnética elemental
   - Polarización lineal#^polarizacion-lineal
-  - Onda plana progresiva#^onda-progresiva
-  - Onda plana regresiva#^onda-regresiva
-  - Impedancia intrínseca del vacío#^impedancia-intrinseca-vacio
+  - Onda progresiva#^onda-progresiva
+  - Onda regresiva#^onda-regresiva
 ---
 # Definición
 ---
@@ -30,7 +29,7 @@ El doble signo de la función determina el sentido de la propagación
 Las [[Ecuaciones de Maxwell|ecuaciones de Maxwell]] imponen ciertas restricciones sobre los campos. En particular las [[Teorema de Gauss|leyes de Gauss]] llevan a que los campos sean transversales a la dirección de propagación $$ \nabla ~ \vec{E}(\vec{r},~t) = \nabla ~ \vec{E}(z,~t) = 0 \implies \frac{\partial}{\partial x}E_x + \frac{\partial}{\partial y}E_y + \frac{\partial}{\partial z}E_z = 0\implies \frac{\partial}{\partial z}E_z = 0 $$ ya que el campo no depende de $x$ ni de $y$. Como $E_z$ depende de $z$ y de $t$, esta ecuación lleva a que $E_z$ depende solamente de $t$ y que además $E_z$ satisface la [[Ecuación de onda|ecuación de onda]] $$ \frac{\partial^2}{\partial z^2} E_z - \frac{1}{c^2} \frac{\partial^2}{\partial t^2} E_z = 0 \implies \frac{\partial^2}{\partial t^2} E_z = 0 \implies E_z(t) = At + B  $$
 Resulta entonces que $E_z$ varía linealmente con el tiempo. Independientemente del signo de $A$, se observa que la amplitud del campo crece indefinidamente con el tiempo, lo que es físicamente imposible porque llevaría a una [[Energía|energía]] infinita. Entonces $A$ debe ser $0$
 
-Queda un campo uniforme, que nuevamente lleva a una energía infinita cuando se integra la [[Densidad de energía de una onda plana|densidad de energía]], que es proporcional al cuadrado del campo, sobre todo el espacio, de modo que esta constante debe ser $0$
+Queda un campo uniforme, que nuevamente lleva a una energía infinita cuando se integra la [[Densidad de energía de una onda electromagnética|densidad de energía]], que es proporcional al cuadrado del campo, sobre todo el espacio, de modo que esta constante debe ser $0$
 
 Se tiene entonces que la componente del [[Campo eléctrico|campo eléctrico]] sobre la dirección de propagación se anula. Se obtiene el mismo resultado partiendo de la [[Teorema de Gauss#Para el campo magnético|ecuación de la divergencia del campo magnético]] $$ \begin{align} 
     \nabla ~ \vec{E}(\vec{r},~t) &= 0 &\implies&& E_z &= 0 \\
@@ -89,6 +88,68 @@ Se tiene entonces que la componente del [[Campo eléctrico|campo eléctrico]] so
 
 De estas expresiones se ve que los campos de una onda plana no tienen componente sobre la dirección de propagación. Se dice que son campos transversales
 
+```tikz
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usetikzlibrary{3d}
+
+\usepackage{ifthen}
+\usepackage{amssymb}
+
+\begin{document} 
+    \definecolor{rojo}{RGB}{247, 156, 133}
+    \definecolor{azul}{RGB}{195, 195, 213}
+\begin{tikzpicture}[scale=1.1, transform shape, thick, z={(10:10mm)}, x={(-45:5mm)}]
+    \tikzmath { \definicion = 0.1; \longitud = 11; }
+    
+    \begin{scope}[canvas is zx plane at y=0] % magnetico
+        \draw[gray, opacity=0.8] (0, -2) grid (\longitud, 2);
+        
+        \draw[ultra thick] (0, 0) \foreach \x [parse=true] in 
+            {0, \definicion, ..., \longitud + \definicion} 
+        { -- (\x, {cos(\x * 90)}) };
+        
+        \fill[red, opacity=0.5] (0, 0) \foreach \x [parse=true] in 
+            {0, \definicion, ..., \longitud + \definicion} 
+        { -- (\x, {cos(\x * 90)}) } -- (\longitud, 0) -- cycle;
+        
+        \foreach \x in {0, 0.5, ..., \longitud} {
+            \draw[opacity=0.8] (\x, 0) -- ++(0, {cos(\x * 90)});
+        }
+    \end{scope}
+    
+    \begin{scope}[canvas is zy plane at x=0] % electrico    
+        \draw[ultra thick] (0, 0) \foreach \x [parse=true] in 
+            {0, \definicion, ..., \longitud + \definicion} 
+        { -- (\x, {cos(\x * 90)}) };
+        
+        \fill[blue, opacity=0.5] (0, 0) \foreach \x [parse=true] in 
+            {0, \definicion, ..., \longitud + \definicion} 
+        { -- (\x, {cos(\x * 90)}) } -- (\longitud, 0) -- cycle;
+        
+        \foreach \x in {0, 0.5, ..., \longitud} {
+            \draw[opacity=0.8] (\x, 0) -- ++(0, {cos(\x * 90)});
+        }
+    \end{scope}
+    
+    \tikzmath { \alto = 2; }
+    \draw[->, ultra thick] (0, -\alto, 0) -- (0, \alto, 0) 
+        node[above=2pt] {$x$};
+    \draw[->, ultra thick] (0, 0, 0) -- (0, 1, 0) 
+        node[left=2pt] {$E_x$};
+        
+    \tikzmath { \alto = 3; }
+    \draw[->, ultra thick] (-\alto, 0, 0) -- (\alto, 0, 0) 
+        node[right=2pt] {$y$};
+    \draw[->, ultra thick] (0, 0, 0) -- (1, 0, 0) 
+        node[below=2pt] {$H_y$};
+        
+    \draw[->, ultra thick] (0, 0, 0) -- (0, 0, {\longitud + 0.25}) 
+        node[right=2pt] {$z$};
+\end{tikzpicture}
+\end{document}
+```
+
 En todo punto del espacio y en todo momento los campos se hallan sobre planos perpendiculares a la dirección de propagación
 
 Por otra parte, las ecuaciones de Maxwell imponen relaciones entre los campos. Por ejemplo, si aplicamos la [[Ley de Faraday#Ley de Maxwell-Faraday|ley de Maxwell-Faraday]] $$ \nabla \times \vec{E}(\vec{r},~t) + \mu_0 \frac{\partial}{\partial t} \vec{H}(\vec{r},~t) = 0 $$
@@ -107,7 +168,7 @@ Entonces $$ \begin{align}
 \end{align} $$
 Estas ecuaciones se pueden reescribir en forma vectorial $$ \vec{H}(\vec{r},~t) = \pm \frac{\hat{z} \times \vec{E}(\vec{r},~t)}{Z_{00}} $$
 
-Donde $Z_{00} = \sqrt{\frac{\mu_0}{\epsilon_0}}$ se denomina impedancia intrínseca del vacío ^impedancia-intrinseca-vacio
+Donde $Z_{00} = \sqrt{\frac{\mu_0}{\epsilon_0}}$ se denomina impedancia intrínseca del vacío
 
 ## En forma fasorial
 ---
@@ -118,6 +179,6 @@ Partiendo de la representación de los campos de la siguiente forma $$ \begin{ma
     \vec{B}(\vec{r},~t) = \tilde{B}(\vec{r}) ~ e^{i \omega t} 
 \end{matrix} $$
 Se puede expresar las ondas planas linealmente polarizadas como $$ \tilde{E}(\vec{r}) = \tilde{E}(z) ~ \hat{x} \implies \nabla^2 \tilde{E} = \frac{d^2}{dz^2} \tilde{E} ~ \hat{x} $$
-y la [[Ecuación de Helmholtz|ecuación de Helmholtz]] queda $$ \frac{d^2}{dz^2} \tilde{E} + k^2 \tilde{E} = 0 $$ cuya solución es $$ \tilde{E}(z) = \tilde{E}_0 ~ e^{\pm ikz} $$ de modo que queda una solución [[Fasor|fasorial]] $$ \vec{E}(\vec{r},~t) = \tilde{E}_{0_1} ~ e^{i(\omega t - kz)} + \tilde{E}_{0_2} ~ e^{i(\omega t + kz)} $$ que consiste en la [[Principio de superposición#Superposición de ondas|superposición]] de una [[Onda plana#^onda-progresiva|onda progresiva]] y una [[Onda plana#^onda-regresiva|regresiva]]
+y la [[Ecuación de Helmholtz|ecuación de Helmholtz]] queda $$ \frac{d^2}{dz^2} \tilde{E} + k^2 \tilde{E} = 0 $$ cuya solución es $$ \tilde{E}(z) = \tilde{E}_0 ~ e^{\pm ikz} $$ de modo que queda una solución [[Fasor|fasorial]] $$ \vec{E}(\vec{r},~t) = \tilde{E}_{0_1} ~ e^{i(\omega t - kz)} + \tilde{E}_{0_2} ~ e^{i(\omega t + kz)} $$ que consiste en la [[Principio de superposición#Superposición de ondas|superposición]] de una [[Onda plana electromagnética#^onda-progresiva|onda progresiva]] y una [[Onda plana electromagnética#^onda-regresiva|regresiva]]
 
 Se obtiene una solución idéntica para el campo magnético $$ \vec{H}(\vec{r},~t) = \frac{\tilde{E}_{0_1}}{Z_{00}} ~ e^{i(\omega t - kz)} - \frac{\tilde{E}_{0_2}}{Z_{00}} ~ e^{i(\omega t + kz)} $$ donde se debe notar el signo negativo de la componente regresiva. Este signo lleva a que el [[Teorema de Poynting|vector de Poyting]] de la onda regresiva apunte en el sentido negativo de $z$

@@ -4,6 +4,8 @@ tags:
   - fisica-2/Electrostática-en-el-vacío
   - nota/facultad
   - analisis-2/Funciones-de-varias-variables
+aliases:
+  - Ley del rotor
 ---
 # Definición
 ---

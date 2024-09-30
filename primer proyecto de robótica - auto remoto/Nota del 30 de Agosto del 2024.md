@@ -54,6 +54,7 @@ Este último podemos suponer, aunque sería interesante verificar, que sea mejor
 En cuanto la constante `DELAY_MS`, esta es inversamente proporcional a la velocidad, con el límite a partir de este código, de un [[Mínimo|mínimo]] de $3$ milisegundos
 
 Para el servo, vamos a necesitar usar la librería `Servo.h`, y de esa forma controlarlo, para la prueba terminamos usando el siguiente código
+
 ```c++
 #include <Servo.h>
 
