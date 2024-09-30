@@ -5,7 +5,6 @@ tags:
   - nota/facultad
 aliases:
   - Onda electromagnética en un dieléctrico sin pérdidas
-  - Velocidad de propagación de las ondas en el material#^velocidad-propagacion-material
 ---
 # Definición
 ---
@@ -14,7 +13,7 @@ Para resolver el caso del [[Campo eléctrico|campo eléctrico]] y [[Campo de ind
 Consideremos un recinto del espacio donde existe un medio material de propiedades definidas por sus parámetros $\epsilon$ ([[Permitividad eléctrica|permitividad eléctrica]]), $\sigma$ ([[Conductividad eléctrica|conductividad eléctrico]]) y $\mu$ ([[Permeabilidad magnética|permeabilidad magnética]]), en un medio sin pérdidas se toma $$ \epsilon \in \mathbb{R}, ~~~~ \mu = \mu_0, ~~~~ \sigma = 0 $$
 Entonces $$ \gamma = \beta - i\alpha = \sqrt{ \omega^2 \mu \epsilon - i \omega \mu \sigma } = \omega \sqrt{ \mu_0 \epsilon } = \omega \sqrt{ \mu_0 \epsilon_0 \epsilon_r } = \frac{\omega \sqrt{\epsilon_r}}{c} = k \sqrt{\epsilon_r} $$ donde $k$ es el número de onda en el vacío. Como $\gamma$ es real, no hay [[Onda electromagnética en medios materiales#^factor|atenuación]] y la [[Profundidad de penetración|profundidad de penetración]] es infinita
 
-La velocidad de propagación de las ondas en el material es $$ v = \frac{\omega}{\beta} = \frac{c}{\sqrt{\epsilon_r}} < c $$ ^velocidad-propagacion-material
+La [[Onda electromagnética en medios materiales#^velocidad-fase|velocidad de propagación]] de las ondas en el material es $$ v = \frac{\omega}{\beta} = \frac{c}{\sqrt{\epsilon_r}} < c $$
 
 Tenemos las magnitudes 
 * [[Índice de refracción|Índice de refracción]] $$ n = \sqrt{\mu_r \epsilon_r} \approx \sqrt{\epsilon_r} $$

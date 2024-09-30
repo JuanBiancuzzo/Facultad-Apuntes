@@ -12,6 +12,36 @@ aliases:
 Para resolver el caso del [[Campo eléctrico|campo eléctrico]] y [[Campo de inducción magnética|campo magnético]] en un medio [[Conductor|conductor]] en ausencia de fuentes
 
 Consideremos un recinto del espacio donde existe un medio material de propiedades definidas por sus parámetros $\epsilon$ ([[Permitividad eléctrica|permitividad eléctrica]]), $\sigma$ ([[Conductividad eléctrica|conductividad eléctrico]]) y $\mu$ ([[Permeabilidad magnética|permeabilidad magnética]]), en un medio conductor se toma $$ \epsilon = \epsilon_0, ~~~~ \mu = \mu_0, ~~~~ \sigma \in \mathbb{R} $$
+Entonces $$ \gamma = \beta - i\alpha = \sqrt{ \omega^2 \mu \epsilon - i \omega \mu \sigma } = \sqrt{ \omega^2 \mu_0 \epsilon_0 - i \omega \mu_0 \sigma } $$ 
+Para un [[Profundidad de penetración#Buen conductor|buen conductor]] el número de onda es $$ \begin{align} 
+    \gamma &= \sqrt{ \omega^2 \mu_0 \epsilon_0 - i \omega \mu_0 \sigma } \\
+    &= \frac{\omega}{c} \sqrt{1 - i \frac{\sigma}{\omega \epsilon_0}} \\
+    &\approx \frac{\omega}{c} \sqrt{-i \frac{\sigma}{\omega \epsilon_0}} \\
+    &= \frac{\omega}{c} \sqrt{\frac{\sigma}{\omega \epsilon_0} ~ e^{\frac{-i\pi}{2}} } \\
+    &= \sqrt{\omega \mu_0 \sigma } ~ e^{\frac{-i\pi}{4}}
+\end{align} $$ recordando que $\gamma = \beta - i \alpha$ podemos encontrar ambos de la siguiente forma $$ \begin{align} 
+    \gamma = \beta - i\alpha &\approx \sqrt{\omega \mu_0 \sigma } ~ e^{\frac{-i\pi}{4}} \\
+     &= \sqrt{\frac{\omega \mu_0 \sigma}{2}} (1 - i) \\
+     &= \frac{1 - i}{\delta}, && \delta = \sqrt{\frac{2}{\omega \mu_0 \sigma}} 
+\end{align} $$
+Se ve que $\displaystyle \alpha = \beta = \frac{1}{\delta}$
+
+La [[Onda electromagnética en medios materiales#^velocidad-fase|velocidad de propagación]] y la [[Onda monocromática#^numero-onda|longitud de onda]] dentro del conductor son $$ \begin{matrix} 
+    \displaystyle v_f = \frac{\omega}{\beta} = \omega \delta = \sqrt\frac{2\omega}{\mu_0 \sigma} &&& \lambda = \frac{2\pi}{\beta} = 2\pi\delta = 2\pi\sqrt\frac{2}{\omega \mu_0 \sigma}
+\end{matrix} $$
+La [[Impedancia intrínseca|impedancia intrínseca]] es $$ \begin{align} 
+    \eta &= \frac{\omega \mu_0}{\gamma} \\
+     &= \frac{\omega \mu_0 \delta}{1 - i} \\
+     &= \frac{1 + i}{2} \omega \mu_0 ~ \sqrt\frac{2}{\omega \mu_0 \sigma} \\
+     &= (1 + i) ~ \sqrt\frac{\omega \mu_0}{2\sigma} \\
+     &= \frac{1 + i}{\sigma \delta}
+\end{align} $$
+Las partes real e imaginaria de la impedancia intrínseca son iguales, de modo que el ángulo de fase es $\frac{\pi}{4}$. Un gran valor del ángulo de fase indica altas pérdidas. Se ve además que $|\eta| \ll \eta_0$ 
+
+El [[Teorema de Poynting#Valor medio|vector medio de Poynting]] es $$ \begin{align}
+    \langle \vec{N} \rangle &= \pm ~ \hat{z} \\
+\end{align} $$
+
 
 Partiendo de las [[Ecuaciones de Maxwell|ecuaciones de Maxwell]] ![[Ecuaciones de Maxwell#^ecuaciones]]
 Para una zona en un [[Conductor|conductor]], la [[Permeabilidad magnética|permeabilidad magnética]] puede ser distinta a la del [[Permeabilidad magnética#^permeabilidad-magnetica-en-el-vacio|vacío]] $\mu_0$, los campos con variación armónica, donde la [[Ley de Ampère#^corriente-conduccion|corriente de conducción]] es mucho mayor que la [[Ley de Ampère#^corriente-desplazamiento|corriente de desplazamiento]], se puede despreciar la corriente de desplazamiento frente a la corriente de conducción $$ \begin{align} 

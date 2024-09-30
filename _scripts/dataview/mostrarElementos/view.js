@@ -34,9 +34,9 @@ function representarElemento(elemento) {
         <div class="encabezado">
             <div class="titulo"> 
                 ${crearReferencia(elemento.path, elemento.nombre)}
-                ${ "subnombre" in elemento ? `<span class="subnombre"> ${elemento.subnombre} </span>` : "" }
+                ${ elemento["subnombre"] ? `<span class="subnombre"> ${elemento.subnombre} </span>` : "" }
             </div>
-            ${ "etapa" in elemento ? `<div class="etapa"> ${obtenerEtapa(elemento.etapa)} </div>` : "" }
+            ${ elemento["etapa"] ? `<div class="etapa"> ${obtenerEtapa(elemento.etapa)} </div>` : "" }
         </div>
         ${
             elemento.descripcionSimple 
