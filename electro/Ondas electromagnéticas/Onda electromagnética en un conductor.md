@@ -11,7 +11,7 @@ aliases:
 ---
 Para resolver el caso del [[Campo eléctrico|campo eléctrico]] y [[Campo de inducción magnética|campo magnético]] en un medio [[Conductor|conductor]] en ausencia de fuentes
 
-Consideremos un recinto del espacio donde existe un medio material de propiedades definidas por sus parámetros $\epsilon$ ([[Permitividad eléctrica|permitividad eléctrica]]), $\sigma$ ([[Conductividad eléctrica|conductividad eléctrico]]) y $\mu$ ([[Permeabilidad magnética|permeabilidad magnética]]), en un medio conductor se toma $$ \epsilon \in \mathbb{R}, ~~~~ \mu = \mu_0, ~~~~ \sigma = 0 $$
+Consideremos un recinto del espacio donde existe un medio material de propiedades definidas por sus parámetros $\epsilon$ ([[Permitividad eléctrica|permitividad eléctrica]]), $\sigma$ ([[Conductividad eléctrica|conductividad eléctrico]]) y $\mu$ ([[Permeabilidad magnética|permeabilidad magnética]]), en un medio conductor se toma $$ \epsilon = \epsilon_0, ~~~~ \mu = \mu_0, ~~~~ \sigma \in \mathbb{R} $$
 
 Partiendo de las [[Ecuaciones de Maxwell|ecuaciones de Maxwell]] ![[Ecuaciones de Maxwell#^ecuaciones]]
 Para una zona en un [[Conductor|conductor]], la [[Permeabilidad magnética|permeabilidad magnética]] puede ser distinta a la del [[Permeabilidad magnética#^permeabilidad-magnetica-en-el-vacio|vacío]] $\mu_0$, los campos con variación armónica, donde la [[Ley de Ampère#^corriente-conduccion|corriente de conducción]] es mucho mayor que la [[Ley de Ampère#^corriente-desplazamiento|corriente de desplazamiento]], se puede despreciar la corriente de desplazamiento frente a la corriente de conducción $$ \begin{align} 

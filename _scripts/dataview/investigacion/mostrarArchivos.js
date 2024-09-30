@@ -12,7 +12,7 @@ let archivos = dv.pages(`#${tagRepresentante} and -#índice`)
         let referenciasActuales = [];
         if (archivo.referencias) {
             referenciasActuales = dv.array(archivo.referencias).distinct()
-                .sort(ref => ref, direction="desc")
+                .sort(ref => parseInt(ref, 10))
         }
 
         resultado.push({

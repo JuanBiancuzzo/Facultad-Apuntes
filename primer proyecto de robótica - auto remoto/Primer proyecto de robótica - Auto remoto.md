@@ -7,7 +7,9 @@ tags:
 ---
 # Descripción
 ---
-La intención con este proyecto es explorar un proyecto de robótica simple de principio a fin, para poder entender los aspectos de un proyecto de electrónica 
+La intención con este proyecto es explorar un proyecto de robótica simple de principio a fin, para poder entender los aspectos de un proyecto de electrónica
+
+El desarrollo del código va a estar subido en [este repositorio](https://github.com/JuanBiancuzzo/Auto-control-infrarrojo)
 
 
 # Presentar
