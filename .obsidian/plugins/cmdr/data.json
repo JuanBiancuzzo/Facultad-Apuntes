@@ -40,6 +40,12 @@
       "icon": "book-open",
       "name": "Agregar Libro",
       "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:b0bb0116-3d55-41a2-9fd3-afc8cf2db966",
+      "icon": "archive",
+      "name": "Nuevo paper",
+      "mode": "any"
     }
   ],
   "rightRibbon": [],

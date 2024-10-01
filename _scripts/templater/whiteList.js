@@ -31,6 +31,12 @@ function whiteListArchivoLibro(archivoPath) {
     return itemBiblioteca.some(item => archivoPath.startsWith(item));
 }
 
+function whiteListArchivoPaper(archivoPath) {
+    const dv = app.plugins.plugins.dataview.api;
+    const itemBiblioteca = dv.pages("#biblioteca/paper").map(item => item.file.folder);
+    return itemBiblioteca.some(item => archivoPath.startsWith(item));
+}
+
 function whiteListArchivoComida(archivoPath) {
     return false;
 }
@@ -46,6 +52,7 @@ module.exports = () => {
         archivoInvestigacion: whiteListArchivoInvestigacion,
         archivoProyecto: whiteListArchivoProyecto,
         archivoLibro: whiteListArchivoLibro,
+        archivoPaper: whiteListArchivoPaper,
         archivoBiblioteca: whiteListArchivoBiblioteca,
         archivoComida: whiteListArchivoComida,
         validarNombre: validarNombre

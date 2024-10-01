@@ -17,6 +17,10 @@ function describirFecha(fecha, infoMeses) {
 }
 
 function describirCapitulo(infoLibro, infoCapitulo) {
+    let autores = [];
+    for (let autore of infoLibro.nombreAutores) {
+        autores.push(`${autore.nombre} ${autore.apellido}`);
+    }
     let capitulo = `${infoLibro.tituloObra} de ${autores.join(", ")}, `;
     capitulo += `capítulo ${infoCapitulo.numeroCapitulo}`;
     return capitulo;

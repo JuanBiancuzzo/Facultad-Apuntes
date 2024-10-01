@@ -1,0 +1,55 @@
+<%* 
+	const tArchivo = tp.file.find_tfile(tp.file.path(true));	
+	const describir = tp.user.describir();
+
+	const tipoCita = "Paper";
+	let numReferencia = tp.user.generarNumReferencia();
+	
+	const dia = tp.file.creation_date("YYYY-MM-DD");
+	
+	tR += "---\n"; 
+	tR += `dia: ${dia}\n`;
+	tR += "etapa: sin-empezar\n";
+	tR += `tipoCita: ${tipoCita}\n`;
+	tR += `numReferencia: ${parseInt(numReferencia, 10)}\n`;
+
+	let infoPaper = {};
+	try {
+        infoPaper = await tp.user.cita().citar(tp, tipoCita, numReferencia + 1);
+
+		let autores = [];
+		for (let autore of infoPaper.autores) {
+			autores.push(`${autore.nombre} ${autore.apellido}`);
+		}
+		
+		let nombreArchivo = `${infoPaper.titulo} de ${autores.join(", ")}`;
+        await tp.file.rename(nombreArchivo);
+
+		tR += tp.obsidian.stringifyYaml(infoPaper);
+
+	} catch ({ name: nombre, message: mensaje }) {
+		const eliminar = tp.user.eliminar();
+		const errorNombre = tp.user.error().nombre;
+
+		console.log(nombre);
+		console.log(mensaje);
+
+        switch (nombre) {
+            case errorNombre.quit:
+                return await eliminar.directo(tArchivo, mensaje);
+                
+            case errorNombre.prompt:
+                return await eliminar.preguntar(tp, tArchivo, mensaje);
+        }
+	}
+
+	tR += `tags: \n - referencia/${tipoCita.toLowerCase()}\n - biblioteca/paper\n - nota/investigacion\n`;
+	tR += "---";
+
+%>
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
+# Resumen
+---
+<% tp.file.cursor() %>

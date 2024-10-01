@@ -22,6 +22,7 @@ function mostrarCita(archivo, num) {
         case "Youtube": texto = mostrarCitaYoutube(archivo); break;
         case "Web": texto = mostrarCitaWeb(archivo); break;
         case "Wikipedia": texto = mostrarCitaWiki(archivo); break;
+        case "Paper": texto = mostrarCitaPaper(archivo); break;
     }
 
     const ref = `<p id="ref-${num}" style="margin-right: 0.5em">[${num}]</p>`;
@@ -44,6 +45,10 @@ function mostrarNombreAutores(autores) {
     }
 
     return resultado.join(". ");
+}
+
+function mostrarCitaPaper(archivo) {
+    return "";
 }
 
 function mostrarCitaLibro(archivo, num) {
