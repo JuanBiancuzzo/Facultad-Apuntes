@@ -1,8 +1,8 @@
 ---
-capitulo: 7
-tags: 
- - embebidos/Sistemas-operativos-de-tiempo-real
- - resumen
+capitulo: 6
+tags:
+  - embebidos/Sistemas-operativos-de-tiempo-real
+  - resumen
 ---
 # Índice
 ---

@@ -4,10 +4,12 @@ tags:
   - señales/Muestreo-e-Interpolación
   - nota/facultad
   - embebidos/Estrategias-de-control-de-periféricos
+  - embebidos/Conversión-analógica-a-digital-y-digital-a-analógica
 aliases:
   - Conversor A/D
   - A/D converter
   - Analog to digital converter
+  - ADC
 ---
 # Definición
 ---

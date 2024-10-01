@@ -3,6 +3,7 @@ dia: 2024-04-23
 tags:
   - señales/Muestreo-e-Interpolación
   - nota/facultad
+  - embebidos/Conversión-analógica-a-digital-y-digital-a-analógica
 aliases:
   - Conversor D/A
   - Digital to analog converter

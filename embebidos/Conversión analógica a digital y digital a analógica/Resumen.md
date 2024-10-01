@@ -1,8 +1,8 @@
 ---
-capitulo: 6
-tags: 
- - embebidos/Conversión-analógica-a-digital-y-digital-a-analógica
- - resumen
+capitulo: 5
+tags:
+  - embebidos/Conversión-analógica-a-digital-y-digital-a-analógica
+  - resumen
 ---
 # Índice
 ---
