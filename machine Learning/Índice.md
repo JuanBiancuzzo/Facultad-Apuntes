@@ -30,3 +30,4 @@ await dv.view("_scripts/dataview/investigacion/mostrarArchivos", { indice: dv.cu
 ```dataviewjs
 await dv.view('_scripts/dataview/investigacion/biblioIndice', { indice: dv.current() });
 ```
+

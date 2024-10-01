@@ -6,6 +6,7 @@ aliases:
 tags:
   - señales/Transformada-discreta-de-Fourier
   - nota/facultad
+  - algoritmos
 ---
 # Definición
 ---
