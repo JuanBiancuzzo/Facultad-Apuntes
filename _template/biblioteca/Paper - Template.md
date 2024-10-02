@@ -1,6 +1,8 @@
 <%* 
 	const tArchivo = tp.file.find_tfile(tp.file.path(true));	
 	const describir = tp.user.describir();
+	const AGREGADO = " y otros";
+	const MAX_NOMBRE = 252;
 
 	const tipoCita = "Paper";
 	let numReferencia = tp.user.generarNumReferencia();
@@ -18,11 +20,23 @@
         infoPaper = await tp.user.cita().citar(tp, tipoCita, numReferencia + 1);
 
 		let autores = [];
-		for (let autore of infoPaper.autores) {
-			autores.push(`${autore.nombre} ${autore.apellido}`);
+		let exceso = false;
+		for (let autore of infoPaper.autores.slice(0, -1)) {
+			let nuevoAutore = `${infoPaper.tituloInforme} de ${autore.nombre} ${autore.apellido}`;
+			if (`${infoPaper.tituloInforme} de ${[...autores, nuevoAutore].join(", ")}`.length + AGREGADO.length <= MAX_NOMBRE)
+				autores.push(nuevoAutore);
+			else 
+				exceso = true;
+
 		}
+		let autore = infoPaper.autores[infoPaper.autores.length - 1];
+		let nuevoAutore = `${autore.nombre} ${autore.apellido}`;
+		if (`${infoPaper.tituloInforme} de ${[...autores, nuevoAutore].join(", ")}`.length <= MAX_NOMBRE)
+			autores.push(nuevoAutore);
+		else 
+			exceso = true;
 		
-		let nombreArchivo = `${infoPaper.titulo} de ${autores.join(", ")}`;
+		let nombreArchivo = `${infoPaper.tituloInforme} de ${autores.join(", ")}${exceso ? AGREGADO : ""}`;
         await tp.file.rename(nombreArchivo);
 
 		tR += tp.obsidian.stringifyYaml(infoPaper);

@@ -6,6 +6,7 @@ const MULTIPLE = "Multiple";
 const SIMPLE = "Simple"; 
 const RECURSIVO = "Recursivo"; 
 const AUTOMATICO = "Automatico";
+const OPCIONES = "Opciones";
 
 module.exports = () => ({
     pathArticulos: "legal/Articulos",
@@ -17,5 +18,6 @@ module.exports = () => ({
         simple: SIMPLE,
         recursivo: RECURSIVO,
         automatico: AUTOMATICO,
+        opciones: OPCIONES
     }
 });

@@ -7,23 +7,12 @@ let tag = indice.file.folder.trim()
     .filter(token => token.trim() != "-" && token.trim() != "")
     .join("-");
 
-let paginas = dv.pages(`#${tag} and -#índice`)
-    .sort(archivo => {
-        let referencias = archivo.referencias;
-        if (!referencias || referencias.length == 0)
-            return 0;
+let paginas = dv.pages(`#${tag} and -#índice and -#referencia`)
+    .flatMap(pagina => pagina.referencias);
+let paginasReferencias = dv.pages(`#${tag} and -#índice and #referencia`)
+    .map(pagina => pagina.numReferencia);
 
-        referencias = referencias.map(ref => parseInt(ref, 10));
-        let refMinimo = referencias[0];
-        for (let i = 1; i < referencias.length; i++) {
-            if (referencias[i] < refMinimo)
-                refMinimo = referencias[i];
-        }
-        return refMinimo;
-    });
-
-let referenciasTema = paginas
-    .flatMap(pagina => pagina.referencias)
+let referenciasTema = paginas.concat(paginasReferencias)
     .map(ref => parseInt(ref, 10))
     .sort(ref => ref)
     .values;

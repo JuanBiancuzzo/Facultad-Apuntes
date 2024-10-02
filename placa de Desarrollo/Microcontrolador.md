@@ -1,6 +1,6 @@
 ---
 dia: 2024-09-16
-etapa: sin-empezar
+etapa: terminado
 referencias:
   - "251"
 tags:
