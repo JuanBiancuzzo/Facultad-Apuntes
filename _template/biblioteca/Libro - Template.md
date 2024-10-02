@@ -24,6 +24,7 @@
 	tR += `numReferencia: ${parseInt(numReferencia, 10)}\n`;
 
 	let infoLibro = {};
+	let nombreArchivo;
 	try {
         infoLibro = await tp.user.cita().citar(tp, tipoCita, numReferencia + 1);
 
@@ -32,7 +33,7 @@
 			autores.push(`${autore.nombre} ${autore.apellido}`);
 		}
 		
-		let nombreArchivo = `${infoLibro.tituloObra} de ${autores.join(", ")}`;
+		nombreArchivo = `${infoLibro.tituloObra} de ${autores.join(", ")}`;
         await tp.file.rename(nombreArchivo);
 
 		tR += tp.obsidian.stringifyYaml(infoLibro);
@@ -61,8 +62,11 @@
 	}
 
 	let aliases = (infoLibro.capitulos ? infoLibro.capitulos : [])
-		.map(infoCapitulo => describir.capitulo(infoLibro, infoCapitulo));
-	tR += `aliases: ${tp.obsidian.stringifyYaml(aliases)}`;
+		.map(infoCapitulo => {
+			let descripcion = describir.capitulo(infoCapitulo);
+			return `${nombreArchivo}, ${descripcion}#${descripcion}`;
+		});
+	tR += tp.obsidian.stringifyYaml({ aliases: aliases });
 
 	tR += `tags: \n - referencia/${tipoCita.toLowerCase()}\n - biblioteca/libro\n - nota/investigacion\n`;
 	tR += "---";
@@ -140,7 +144,7 @@
 
 <%*
 	tR += (infoLibro.capitulos ? infoLibro.capitulos : [])
-		.map(infoCapitulo => describir.capitulo(infoLibro, infoCapitulo))
+		.map(infoCapitulo => describir.capitulo(infoCapitulo))
 		.map(string => `#### ${string}\n---\n\n\n`)
 		.join("\n");
 %> 

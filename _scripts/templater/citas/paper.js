@@ -1,5 +1,5 @@
 const AUTORES = "autores";
-const TITULO_INFORME = "titulo";
+const TITULO_INFORME = "tituloInforme";
 const ANIO = "anio";
 const NUMERO_INFORME = "numeroInforme";
 const EDITORES = "editores";
@@ -159,9 +159,14 @@ async function citarPaper(tp, datosIniciales = undefined) {
 }
 
 function describirPaper(archivo) {
+    let autores = [];
+    for (let { nombre, apellido } of archivo.autores) {
+        autores.push(`${nombre} ${apellido}`);
+    }
+
     return [{
         numReferencia: archivo.numReferencia,
-        texto: `Paper`
+        texto: `${archivo.tituloInforme} de ${autores.join(", ")}`
     }];
 }
 

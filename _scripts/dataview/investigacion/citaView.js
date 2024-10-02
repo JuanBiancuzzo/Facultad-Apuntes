@@ -48,7 +48,18 @@ function mostrarNombreAutores(autores) {
 }
 
 function mostrarCitaPaper(archivo) {
-    return "";
+    let autores = archivo.autores
+        .map(({ nombre, apellido }) => `${apellido}, ${nombre.charAt(0)}`);
+    let editores = (archivo.editores ? archivo.editores : [])
+        .filter(({ nombre, apellido }) => archivo.autores.findIndex(({ nombreAutore, apellidoAutore }) => nombre == nombreAutore && apellido == apellidoAutore) < 0)
+        .map(({ nombre, apellido }) => `${apellido}, ${nombre.charAt(0)}`);
+
+    const numInforme = archivo.numeroInforme 
+        ? ` (Informe n°${archivo.numeroInforme})` 
+        : "";
+    const url = archivo.url ? ` ${url}.` : "";
+    
+    return `${autores.join(", ")} (${archivo.anio}) <i>${archivo.tituloInforme}</i>${numInforme}. ${editores.join(", ")}${url}`;
 }
 
 function mostrarCitaLibro(archivo, num) {

@@ -20,15 +20,15 @@ autores:
     nombre: Lukasz
   - apellido: Polosukhin
     nombre: Illia
-titulo: Attention Is All You Need
+tituloInforme: Attention Is All You Need
 numeroInforme: 
 anio: "2023"
-editores: []
+editores: 
 url: 
-tags: 
- - referencia/paper
- - biblioteca/paper
- - nota/investigacion
+tags:
+  - referencia/paper
+  - biblioteca/paper
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

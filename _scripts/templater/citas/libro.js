@@ -166,7 +166,20 @@ async function citarLibro(tp, datosIniciales = undefined) {
             minimo: (_) => true,
             representarElemento: (capituloInfo) => {
                 if (capituloInfo == null) return "capítulo";
-                return `capítulo ${capituloInfo.numeroCapitulo}`;
+                let descripcion = `Capítulo ${capituloInfo.numeroCapitulo}`;
+                if (capituloInfo.nombreCapitulo) 
+                    descripcion += `: ${capituloInfo.nombreCapitulo}`;
+                if (capituloInfo.paginas) 
+                    descripcion += `, p${capituloInfo.paginas.inicio}-${capituloInfo.paginas.final}`;
+                if (capituloInfo.editores) {
+                    let editores = [];
+                    for (let editore of capituloInfo.editores) {
+                        editores.push(`${editore.nombre} ${editore.apellido}`);
+                    }
+                    
+                    descripcion += ` de ${editores.join(", ")}`;
+                }
+                return descripcion;
             },
             generarInicio: citarCapitulo,
             eliminarUltimo: (listaValores, seguidorRef) => {

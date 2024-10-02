@@ -16,14 +16,20 @@ function describirFecha(fecha, infoMeses) {
     return `${dia} de ${mes} del ${anio}`;
 }
 
-function describirCapitulo(infoLibro, infoCapitulo) {
-    let autores = [];
-    for (let autore of infoLibro.nombreAutores) {
-        autores.push(`${autore.nombre} ${autore.apellido}`);
+function describirCapitulo(infoCapitulo) {
+    let descripcion = `Capítulo ${infoCapitulo.numeroCapitulo}`;
+    if (infoCapitulo.nombreCapitulo) 
+        descripcion += `: ${infoCapitulo.nombreCapitulo}`;
+    if (infoCapitulo.editores) {
+        let editores = [];
+		for (let editore of infoCapitulo.editores) {
+			editores.push(`${editore.nombre} ${editore.apellido}`);
+		}
+		
+		descripcion += ` de ${editores.join(", ")}`;
     }
-    let capitulo = `${infoLibro.tituloObra} de ${autores.join(", ")}, `;
-    capitulo += `capítulo ${infoCapitulo.numeroCapitulo}`;
-    return capitulo;
+
+    return descripcion;
 }
 
 module.exports = () => {
