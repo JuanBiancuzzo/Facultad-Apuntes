@@ -33,6 +33,7 @@ El ADC de STM real utiliza $12$ bits, para la demostración vamos a usar el núm
 
 \begin{document} 
 \begin{tikzpicture}[scale=1.1, transform shape, thick]
+    \begin{scope}
     \tikzmath { \bits = 12; \largo = 14; \alto = 8; \sep = 0.75; }
     
     \draw[->] (0, 0) -- ({\largo + 0.5}, 0) node[right=2pt, scale=1.1] {$t$};
@@ -49,7 +50,7 @@ El ADC de STM real utiliza $12$ bits, para la demostración vamos a usar el núm
     }
     
     \tikzmath { \numero = 0.72; \pRe = \largo / \bits; }
-    \draw (-0.2, {\numero * \alto}) -- ++({\largo + 0.7}, 0)
+    \draw[thin] (-0.2, {\numero * \alto}) -- ++({\largo + 0.7}, 0)
         node[right=2pt] {$V_{IN}$};
     
     \path (0, {\alto / 2}) node (temp) {};
@@ -72,7 +73,7 @@ El ADC de STM real utiliza $12$ bits, para la demostración vamos a usar el núm
         \tikzmath {
             coordinate \actual;
             \actual = (rel-\pos.center);
-            \altura = (\actualy * 0.03515 / \alto);
+            \altura = (\actualy * 0.0351 / \alto);
             \denominador = int(2^(\pos + 1));
         }
         \pgfkeys{
@@ -83,7 +84,10 @@ El ADC de STM real utiliza $12$ bits, para la demostración vamos a usar el núm
         \path ($ (rel-\pos.center) + (0.1, 0) $)
             node[above left=2pt, scale=1.1] {$\pgfmathprintnumber{\altura}$};
     }
+    \end{scope}
     
 \end{tikzpicture}
 \end{document}
 ```
+
+Vemos como empezando con `0b1000 0000 0000`, y probamos si es mayor o menor a la tensión que estamos midiendo, si es mayor, en ese bit, se le asigna un $1$, sino un $0$, y se pasa al siguiente bit. En el ejemplo, como era mayor, el número en la siguiente prueba es `0b1100 0000 0000` y como es mayor, entonces pasa a ser $0$ y se prueba `0b1010 0000 0000`, y así siguiendo hasta llegar a `0b1011 1000 0101`

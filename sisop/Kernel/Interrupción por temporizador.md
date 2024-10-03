@@ -58,7 +58,7 @@ Los temporizadores en STM se configuran de la misma manera que los pines [[Gener
 Estos tienen una [[Struct|estructura]] de nombre `TIM_HandleTypeDef` que se define como
 
 ```c
-typedef struct TIM_HandleTypeDef {
+typedef struct {
     uint32_t Prescaler;
     uint32_t CounterMode;
     uint32_t Period;

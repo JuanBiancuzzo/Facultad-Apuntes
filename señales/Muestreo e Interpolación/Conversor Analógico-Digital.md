@@ -5,11 +5,19 @@ tags:
   - nota/facultad
   - embebidos/Estrategias-de-control-de-periféricos
   - embebidos/Conversión-analógica-a-digital-y-digital-a-analógica
+  - placa-de-Desarrollo/placa-de-desarrollo-Nucleo-64/placa-STM32-F302R8
 aliases:
   - Conversor A/D
   - A/D converter
   - Analog to digital converter
   - ADC
+  - Módulo HAL del conversor Analógico-Digital#Modulo HAL
+  - Módulo Hardware Abstraction Layer del conversor Analógico-Digital#Modulo HAL
+  - Módulo Hardware Abstraction Layer del conversor A/D#Modulo HAL
+  - Módulo HAL del conversor A/D#Modulo HAL
+  - Módulo Hardware Abstraction Layer del ADC#Modulo HAL
+  - Módulo HAL del ADC#Modulo HAL
+referencias: []
 ---
 # Definición
 ---
@@ -209,3 +217,55 @@ Vemos que aunque $X_c(j\omega) = 0$ para $|\omega| > W$ si $2W \ge \omega_s$ las
 En el caso que $x_c(t)$ no fuera de [[Señal de banda limitada|banda limitada]], las replicas se solaparían para cualquier elección de $\omega_s$
 
 Esto da pie al [[Teorema Whittaker-Kotelnikov-Nyquist-Shannon|teorema Whittaker-Kotelnikov-Nyquist-Shannon]] ![[Teorema Whittaker-Kotelnikov-Nyquist-Shannon#Definición]]
+## Modulo HAL
+---
+La [[Hardware Abstraction Layer|HAL]] usa una [[Struct|Estructura]] para declarar periféricos ADC, como se hace con los pines [[General Purpose Input Output|GPIO]] y los [[Interrupción por temporizador|temporizadores]]
+
+```c
+typedef struct {
+    ADC_TypeDef       *Instance;
+    ADC_InitTypeDef    Init;
+    __IO uint32_t      NbrOfCurrentConversionRank;
+    DMA_HandleTypeDef  *DMA_Handle;
+    HAL_LockTypeDef    Lock;
+    __IO uint32_t      State;
+    __IO uint32_t      ErrorCode;
+} ADC_HandleTypeDef;
+```
+
+* `ADC_TypeDef *Instance` 
+    * El [[Puntero|puntero]] al ADC, para poder diferenciar cual ADC se esta configurando
+* `ADC_InitTypeDef Init 
+    * Esta estructura se usa para configurar el modo de operación del ADC
+* `__IO uint32_t NbrOfCurrentConversionRank 
+    * Referencia el `Rank` o el número de canal en un grupo de ADC
+* `DMA_HandleTypeDef *DMA_Handle 
+    * El puntero a un [[Direct Memory Access controller|DMA]] handler que usa el ADC para la conversión
+* `HAL_LockTypeDef Lock 
+    * Permite en un ambiente [[Concurrencia|concurrente]], bloquear el acceso al recurso a otros [[Thread|threads]] mientras se esta usando
+* `__IO uint32_t State 
+    * El estado que usa el ADC para comunicarse con el [[Proceso|proceso]]
+* `__IO uint32_t ErrorCode 
+    * En el caso de error, se guardará en esta variable
+
+Donde se define la estructura `ADC_InitTypeDef`
+
+```c
+typedef struct {
+    uint32_t ClockPrescaler;
+    uint32_t Resolution;
+    uint32_t DataAlign;
+    uint32_t ScanConvMode;
+    uint32_t EOCSelection;
+    uint32_t ContinuousConvMode;
+    uint32_t NbrOfConversion;
+    uint32_t DiscontinuousConvMode;
+    uint32_t NbrOfDisConversion;
+    uint32_t ExternalTrigConv;
+    uint32_t ExternalTrigConvEdge;
+    uint32_t DMAContinuousRequests;
+} ADC_InitTypeDef;
+```
+
+
+
