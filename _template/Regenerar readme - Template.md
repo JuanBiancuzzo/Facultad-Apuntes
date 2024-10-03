@@ -69,9 +69,10 @@ _%>
 ---
 Tenemos los subproyectos específicos que son
 
-| Proyecto                             |                                                                                                                                                  |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Biblioteca](Biblioteca%20propia.md) | Tiene la intención de colectar libros, papers, etc. que me interese analizar relacionado a todo el contexto de esta página y poder referenciarla |
+| Proyecto                                        |                                                                                                                                                  |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Biblioteca](biblioteca/Biblioteca%20propia.md) | Tiene la intención de colectar libros, papers, etc. que me interese analizar relacionado a todo el contexto de esta página y poder referenciarla |
+| [Recetas](recetas/Recetas.md)                   | Todavía no tiene nada pero la idea es agregar recetas y explorar los aspectos de nutrición que pueden aparecer                                   |
 
 ## Contribuidores
 ---

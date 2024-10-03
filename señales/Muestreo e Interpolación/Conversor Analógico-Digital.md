@@ -329,4 +329,3 @@ typedef struct {
         * Este parámetro debe modificarse cuando no hay ninguna conversión en curso en los grupos regular e inyectado
             * ADC deshabilitado o ADC habilitado sin modo continuo o disparador externo que pueda iniciar una conversión
     * Esta parámetro se puede establecer en `ENABLE` o `DISABLE`
-
