@@ -13,22 +13,28 @@ await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 
 #### Buscar
 ---
+Programación:
 * System design interview
 * Database internals
 * Understanding distributed systems
 * Design gurus: Grokking the system design interview
 * Site reliability engineering
 * Software architecture: the hard parts
+* Writing an interpreter in go de Thorsten Ball
+* Writing a compiler in go de Thorsten Ball
 
+Hacking:
 * Learn powershell in a month of lunches
 * Blue team handbook: SOC, SIEM, and Threat Hunting Use Cases
 * The practice of network security monitoring de richard bejtlich
 
+Marketing:
 * 80/20 sales and marketing de Perry Marshall
 * The millionaire fastlane de MJ de Marco
 * The psychology of money de Morgan Housel
 * The richest man in Babylon de George S. Clason
 
+Psico (?):
 * The lessons of history
 * Clear thinking
 * Dopamine Nation de Anna Lembke
@@ -36,7 +42,9 @@ await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 * Rewire Break the cycle after your thoughts and create lasting change de Nicole Vigno
 * Atomic habits
 * and how does that make you feel de Joshua Fletcher
+* Deep work de Cal Newport
 
+Matemática:
 * In pursuit of the unknown de Ian Stewart
 * A new Algebra by Barnard and child
 * In pursuit of Zeta-3 de PAul J. Nahin
@@ -48,6 +56,7 @@ await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 * Fourier series, transforms, and boundary value problems de J. Ray Hanna y John H Rowland
 * Linear algebra de Georgi Shilov
 
+Física:
 * Modern Physics: Kenneth S. Krane
 * Quantum Physics: Stephen Gasiorowicz
 * Mathematical Methods in the Physical Sciences: Mary L. Boas
@@ -62,4 +71,11 @@ await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 * Quantum Mechanics — A Modern Development (by Ballentine)
 * Engineering Mechanics 3
   
+  Electronica:
 * The FPGA programming handbook de Frank Bruno y Guy Eschemann
+
+Diseño:
+* Shape Up de Ryan Singer
+* Making design desitions de Tommy G
+* How to make sense of any mess de Abby Covert
+* Build de Tony Fadell

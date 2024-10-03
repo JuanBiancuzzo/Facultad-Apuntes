@@ -144,5 +144,15 @@
     }
   ],
   "editor:open-search": [],
-  "global-search:open": []
+  "global-search:open": [],
+  "app:open-help": [],
+  "editor:save-file": [],
+  "app:toggle-left-sidebar": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "S"
+    }
+  ]
 }

@@ -57,7 +57,7 @@ function mostrarCitaPaper(archivo) {
     const numInforme = archivo.numeroInforme 
         ? ` (Informe n°${archivo.numeroInforme})` 
         : "";
-    const url = archivo.url ? ` ${url}.` : "";
+    const url = archivo.url ? ` ${archivo.url}.` : "";
     
     return `${autores.join(", ")} (${archivo.anio}) <i>${archivo.tituloInforme}</i>${numInforme}. ${editores.join(", ")}${url}`;
 }
@@ -67,11 +67,11 @@ function mostrarCitaLibro(archivo, num) {
     const editorial = ` ${archivo.editorial}.`;
     const nombreAutores = mostrarNombreAutores(archivo.nombreAutores);
     const anio = ` (${archivo.anio}).`;
-    const url = archivo.url ? ` ${url}.` : "";
+    const url = archivo.url ? ` ${archivo.url}.` : "";
 
     let datosSeparados = [];
     if (archivo.edicion) datosSeparados.push(`${archivo.edicion} ed.`);
-    if (archivo.volumen) datosSeparados.push(`Vol. ${archivo.volumen}.`);
+    if (archivo.volumen) datosSeparados.push(`Vol. ${archivo.volumen}`);
     let datosJuntos = datosSeparados.length > 0 
         ? ` (${datosSeparados.join(", ")}).`
         : "";

@@ -17,7 +17,7 @@ aliases:
   - Módulo HAL del conversor A/D#Modulo HAL
   - Módulo Hardware Abstraction Layer del ADC#Modulo HAL
   - Módulo HAL del ADC#Modulo HAL
-referencias: []
+referencias:
 ---
 # Definición
 ---
@@ -217,7 +217,7 @@ Vemos que aunque $X_c(j\omega) = 0$ para $|\omega| > W$ si $2W \ge \omega_s$ las
 En el caso que $x_c(t)$ no fuera de [[Señal de banda limitada|banda limitada]], las replicas se solaparían para cualquier elección de $\omega_s$
 
 Esto da pie al [[Teorema Whittaker-Kotelnikov-Nyquist-Shannon|teorema Whittaker-Kotelnikov-Nyquist-Shannon]] ![[Teorema Whittaker-Kotelnikov-Nyquist-Shannon#Definición]]
-## Modulo HAL
+## Modulo HAL para la placa STM32
 ---
 La [[Hardware Abstraction Layer|HAL]] usa una [[Struct|Estructura]] para declarar periféricos ADC, como se hace con los pines [[General Purpose Input Output|GPIO]] y los [[Interrupción por temporizador|temporizadores]]
 
@@ -267,5 +267,66 @@ typedef struct {
 } ADC_InitTypeDef;
 ```
 
-
+* `uint32_t ClockPrescaler;`
+    * Esto define la velocidad de reloj del ADC (`ADCCLK`) utilizada en el ADC
+        * Esta [[Función periódica#Frecuencia|frecuencia]] de reloj establece indirectamente la frecuencia de [[Muestreo|muestreo]] máximo posible con el ADC
+        * El preescalador ADC tiene tasas de divisor preestablecidas que comienzan en uno y progresan en múltiplos de $2$
+        * La velocidad del reloj del ADC afecta a todos los ADC de [[Microcontrolador|MCU]]. Este parámetro puede ser cualquier valor de lo siguiente que define `ADC_ClockPrescaler`
+            * `ADC_CLOCK_SYNC_PCLK_DIV1`
+            * `ADC_CLOCK_SYNC_PCLK_DIV2`
+            * `ADC_CLOCK_SYNC_PCLK_DIV4`
+            * `ADC_CLOCK_SYNC_PCLK_DIV6`
+            * `ADC_CLOCK_SYNC_PCLK_DIV8`
+* `uint32_t Resolution;`
+    * Este parámetro puede ser cualquier valor de lo siguiente que `ADC_Resolution` define
+        * `ADC_RESOLUTION_12B`
+        * `ADC_RESOLUTION_6B`
+    * Existe una relación definida entre la resolución y las conversiones máximas posibles que se puede lograr por segundo. Esta regla es que cuanto mayor sea la resolución, menor será la tasa de conversión máxima
+* `uint32_t DataAlign;`
+    * Este valor establece cómo se alinean los bits en el [[Registro|registro]] `N-Bit`, este puede ser cualquier valor que el `ADC_DATAALIGN` defina
+        * `ADC_DATAALIGN_LEFT`, alinea el bit más significativo a la izquierda
+        * `ADC_DATAALIGN_RIGHT`, alinea el bit más significativo a la derecha
+* `uint32_t ScanConvMode;`
+    * Este valor especifica el modo ADC. Es único o continuo. Este parámetro puede ser cualquiera de los siguientes valores definidos por `ADC_SCAN`
+        * `ADC_SCAN_DISABLE`
+        * `ADC_SCAN_ENABLE`
+* `uint32_t EOCSelection;`
+    * Este valor establece el tipo de flag que indica el final de una conversión (`EOC`)
+        * El valor del tipo de flag también depende del modo `ADC`, que puede ser único o continuo
+        * Este parámetro se puede establecer en cualquiera de las siguientes definiciones `ADC_EOC`
+            * `ADC_EOC_SINGLE_CONV`
+            * `ADC_EOC_SEQ_CONV`
+* `uint32_t ContinuousConvMode;`
+    * Especifica si la conversión se realiza en modo único (una conversión) o en modo continuo para un grupo normal, después de que se produjo el trigger seleccionado (por [[Software|software]] o externo)
+    * Este parámetro se puede establecer en `ENABLE` o `DISABLE`
+* `uint32_t NbrOfConversion;`
+    * Este valor especifica el número de rangos o canales que se convertirán dentro del secuenciador de grupo normal
+    * Para utilizar un secuenciador de grupo normal y convertir varios rangos, se debe habilitar el parámetro `ScanConvMode`
+    * Este parámetro debe ser un número entre `Min_data` (que es $1$) y `Max_Data` (que es $16$)
+* `uint32_t DiscontinuousConvMode;`
+    * Este valor especifica si la secuencia de conversión del grupo regular se realiza en secuencia completa/secuencia discontinua (secuencia principal subdivida en partes sucesivas)
+        * El modo discontinuo se utiliza sólo si el secuenciador está habilitado (parámetro `ScanConvMode`). Si el secuenciador está deshabilitado, este parámetro se descarta
+        * El modo discontinuo sólo se puede habilitar si el modo continuo está deshabilitado. Si el modo continuo está habilitado, esta configuración de parámetro se decarta
+        * Este parámetro se puede establecer en `ENABLE` o `DISABLE`
+* `uint32_t NbrOfDisConversion;`
+    * Este valor especifica el número de conversiones discontinuas en las que se subdividirá la secuencia principal del grupo regular (parámetro `NbrOfConversion`)
+    * Si el parámetro `DiscontinuousConvMode` esta deshabilitado, esta parámetro se descarta
+    * Este parámetro debe ser un número entre `Min_data` (que es $1$) y `Max_Data` (que es $8$)
+* `uint32_t ExternalTrigConv;`
+    * Este valor selecciona el evento externo utilizado para desencadenar el inicio de la conversión del grupo normal
+        * Si se establece en `ADC_SOFTWARE_START`, los activadores externo están deshabilitados
+        * Si se configura en una fuente de activación externa, la activación se produce en el flanco ascendente del evento de forma predeterminada
+* `uint32_t ExternalTrigConvEdge;`
+    * Esta parámetro puede ser un valor en el formato `ADC_External_trigger_Source_Regular` y es uno de los siguientes
+        * `ADC_EXTERNALTRIGCONVEDGE_NONE`
+        * `ADC_EXTERNALTRIGCONVEDGE_RISING`
+        * `ADC_EXTERNALTRIGCONVEDGE_FALLING`
+        * `ADC_EXTERNALTRIGCONVEDGE_RESINGFALLING`
+* `uint32_t DMAContinuousRequests;`
+    * Este valor especifica si las solicitudes de DMA se realizan en modo de una sola vez (la transferencia de DMA se detiene cuando se alcanza el número de conversiones) o en modo continuo (transferencia de DMA ilimitada, independiente del número de conversiones)
+    * Nota
+        * En modo continuo, DMA debe configurarse en modo circular. De lo contrario, se activará una saturación cuando se alcance el puntero máximo del [[Buffer|buffer]] DMA 
+        * Este parámetro debe modificarse cuando no hay ninguna conversión en curso en los grupos regular e inyectado
+            * ADC deshabilitado o ADC habilitado sin modo continuo o disparador externo que pueda iniciar una conversión
+    * Esta parámetro se puede establecer en `ENABLE` o `DISABLE`
 
