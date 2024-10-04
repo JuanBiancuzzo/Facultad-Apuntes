@@ -22,6 +22,8 @@ Programación:
 * Software architecture: the hard parts
 * Writing an interpreter in go de Thorsten Ball
 * Writing a compiler in go de Thorsten Ball
+* Unix and Linux system administration handbook (5 edición) de Evi Nemeth, Garth Snyder, Trent Hein, Ben Whaley, Dan Mackin
+* An Introduction to Statistical Learning: with Applications in R (Springer Texts in Statistics) de Gareth James (Author), Daniela Witten (Author)
 
 Hacking:
 * Learn powershell in a month of lunches

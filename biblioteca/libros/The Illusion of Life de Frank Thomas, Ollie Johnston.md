@@ -25,6 +25,13 @@ capitulos:
 cover: The Illusion of Life de Frank Thomas, Ollie Johnston.jpg
 aliases:
   - "The Illusion of Life de Frank Thomas, Ollie Johnston, Capítulo 3: The Principles of Animation#Capítulo 3: The Principles of Animation"
+  - Secondary Action#Secondary Action
+  - Timing#Timing
+  - Squash and Stretch#Squash and Stretch
+  - Pose to Pose#Straight ahead & Pose to Pose
+  - Straight ahead#Straight ahead & Pose to Pose
+  - Overlapping Action#Follow Through & Overlapping Action
+  - Follow Through#Follow Through & Overlapping Action
 tags:
   - referencia/libro
   - biblioteca/libro

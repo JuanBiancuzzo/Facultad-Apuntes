@@ -7,7 +7,7 @@ tags:
 # Progreso
 ---
 Tengo que entender
-* [[Animación procedural con keyframes|Animación procedural con keyframes]]
+* [[Animación con keyframes|Animación con keyframes]]
     * Espero entender como usar al máximo cada keyframe, integrando partes necesarias para crear una estructura con keyframes que lo permita
 * [[Animación procedural con cinemáticas inversas|Animación procedural con cinemáticas inversas]]
     * Espero entender el uso en general de animaciones procedurales, y como puede generar animaciones únicamente permitidas con estas herramientas

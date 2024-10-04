@@ -1,11 +1,12 @@
 ---
-dia: 2024-07-08
+dia: 2024-10-04
 etapa: sin-empezar
 referencias:
-  - "25"
+  - "309"
+  - "310"
 tags:
-  - nota/investigacion
   - animation
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

@@ -23,6 +23,8 @@ En matemáticas la [[Función|función]] [[Distancia|distancia]] con signo mide 
     -d(x,~S) & \text{si} ~ x \in B \\ 
 \end{cases} $$ donde $d(x,~S) = \inf_{y \in S} ~ d(x,~y)$ es la distancia ordinaria de un punto a un conjunto $A$ y $B$ son conjuntos disjuntos que se definen según las características de $S$
 
+Ver [Inigo Quilez 2D distance functions](https://iquilezles.org/articles/distfunctions2d/)
+
 # Referencias
 ---
 ```dataviewjs

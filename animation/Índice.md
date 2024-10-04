@@ -13,6 +13,9 @@ await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.cu
 ---
 Vamos a ver como producir las mejores animaciones, con el menor esfuerzo posible y la mayor expresividad posible. Esto nos va a llevar a aprender sobre muchas cosas como inverse kinematic, rigging y otras cosas
 
+También vamos a ver animación tradicional para entender ese paradigma también, y nos podemos basar en canales como 
+* [Alex Grigg // Animation for Anyone](https://www.instagram.com/reel/C9iAn55gOy5/?igsh=MXR6eGpsZmMxZ2pvbw==)
+
 ## Archivos
 ---
 ```dataviewjs
