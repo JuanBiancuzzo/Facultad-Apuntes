@@ -166,9 +166,9 @@ Entonces $$ \begin{align}
     \frac{\partial E_y}{\partial z} &= \mu_0 \frac{\partial H_x}{\partial t} &\implies&& \frac{dE_y}{du} &= \mp c\mu_0 \frac{dH_x}{du} &\implies&& H_x = \mp \frac{1}{Z_{00}} E_y \\
     \frac{\partial E_x}{\partial z} &= -\mu_0 \frac{\partial H_y}{\partial t} &\implies&& \frac{dE_x}{du} &= \pm c\mu_0 \frac{dH_y}{du} &\implies&& H_y = \pm \frac{1}{Z_{00}} E_x \\
 \end{align} $$
-Estas ecuaciones se pueden reescribir en forma vectorial $$ \vec{H}(\vec{r},~t) = \pm \frac{\hat{z} \times \vec{E}(\vec{r},~t)}{Z_{00}} $$
+Estas ecuaciones se pueden reescribir en forma vectorial $$ \vec{H}(\vec{r},~t) = \pm \frac{\hat{z} \times \vec{E}(\vec{r},~t)}{\eta_0} $$
 
-Donde $Z_{00} = \sqrt{\frac{\mu_0}{\epsilon_0}}$ se denomina impedancia intrínseca del vacío
+Donde $\eta_0 = \sqrt{\frac{\mu_0}{\epsilon_0}}$ se denomina [[Impedancia intrínseca|impedancia intrínseca del vacío]]
 
 ## En forma fasorial
 ---

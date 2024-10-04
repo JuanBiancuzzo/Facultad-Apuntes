@@ -36,39 +36,31 @@ La [[Impedancia intrínseca|impedancia intrínseca]] es $$ \begin{align}
      &= (1 + i) ~ \sqrt\frac{\omega \mu_0}{2\sigma} \\
      &= \frac{1 + i}{\sigma \delta}
 \end{align} $$
-Las partes real e imaginaria de la impedancia intrínseca son iguales, de modo que el ángulo de fase es $\frac{\pi}{4}$. Un gran valor del ángulo de fase indica altas pérdidas. Se ve además que $|\eta| \ll \eta_0$ 
+Las partes real e imaginaria de la impedancia intrínseca son iguales, de modo que el ángulo de fase es $\frac{\pi}{4} = \varphi$. Un gran valor del ángulo de fase indica altas pérdidas. Se ve además que $|\eta| \ll \eta_0$ 
 
 El [[Teorema de Poynting#Valor medio|vector medio de Poynting]] es $$ \begin{align}
-    \langle \vec{N} \rangle &= \pm ~ \hat{z} \\
+    \langle \vec{N} \rangle &= \pm \frac{\mathcal{Re}\Set{\eta} |\tilde{E}_{0\pm}|^2 e^{\mp 2 \alpha z}}{2|\eta|^2} ~ \hat{z} \\
+     &= \pm \frac{\cos(\varphi) |\tilde{E}_{0\pm}|^2 e^{\mp 2 \alpha z}}{2|\eta|} ~ \hat{z} \\
+     &= \pm \frac{\sqrt{2}}{2} ~ \frac{\sigma ~ \delta}{2\sqrt{2}} ~ |\tilde{E}_{0\pm}|^2 e^{\mp 2 \alpha z} ~ \hat{z} \\
+     &= \pm \frac{\sigma ~ \delta}{4} ~ |\tilde{E}_{0\pm}|^2 e^{\mp 2 \alpha z} ~ \hat{z} \\
 \end{align} $$
+La [[Teorema de Poynting#En medios materiales|potencia perdida]] por unidad de volumen es $$ \begin{align} 
+    \frac{d\langle P \rangle}{dV} &= 2\alpha \langle N \rangle \\
+     &= \frac{2}{\delta} \langle N \rangle \\ 
+     &= \frac{\sigma}{2} ~ \left| \tilde{E}_{0\pm} \right|^2 e^\frac{\mp 2 z}{\delta} \\
+     &= \frac{1}{2} ~ \left| \tilde{J}_{0\pm} \right| ~ e^\frac{\mp z}{\delta} ~~ \left| \tilde{E}_{0\pm} \right| ~ e^\frac{\mp z}{\delta} \\
+     &= \frac{1}{2} \left| \vec{J} \cdot \vec{E} \right|
+\end{align} $$ que coincide con la expresión de las [[Efecto Joule|pérdidas medias por efecto Joule]]
 
-
-Partiendo de las [[Ecuaciones de Maxwell|ecuaciones de Maxwell]] ![[Ecuaciones de Maxwell#^ecuaciones]]
-Para una zona en un [[Conductor|conductor]], la [[Permeabilidad magnética|permeabilidad magnética]] puede ser distinta a la del [[Permeabilidad magnética#^permeabilidad-magnetica-en-el-vacio|vacío]] $\mu_0$, los campos con variación armónica, donde la [[Ley de Ampère#^corriente-conduccion|corriente de conducción]] es mucho mayor que la [[Ley de Ampère#^corriente-desplazamiento|corriente de desplazamiento]], se puede despreciar la corriente de desplazamiento frente a la corriente de conducción $$ \begin{align} 
-    \nabla \times \vec{E} &= -j \omega \mu \vec{H} \\
-    \nabla \times \vec{H} &\cong \vec{J} \\
-    \nabla ~ \vec{D} &= 0 \\
-    \nabla ~ \vec{B} &= 0
+La [[Densidad de energía de una onda electromagnética#Valor medio|densidad media de energía almacenada]] en el campo $$ \begin{align} 
+    \langle u \rangle &= \frac{1}{4} \left( \mathcal{Re}\set{\epsilon} + \frac{\mu}{|\eta|^2} \right) ~ \left| \tilde{E}_{0\pm} \right|^2 ~ e^{\mp 2\alpha z} \\
+     &= \frac{1}{4} \left( \epsilon_0 + \frac{\mu_0 \sigma^2 \delta^2}{2} \right) ~ \left| \tilde{E}_{0\pm} \right|^2 ~ e^{\mp 2\alpha z} \\
+     &= \frac{\epsilon_0}{4} \left( 1 + \frac{\sigma}{\omega \epsilon_0} \right) ~ \left| \tilde{E}_{0\pm} \right|^2 ~ e^{\mp 2\alpha z} \\
 \end{align} $$
-Aplicando el [[Rotor|rotor]] a la primer ecuación $$ \nabla \times \nabla \times \vec{E} = -j \omega \mu \nabla \times \vec{H} $$ recordando que $$ \begin{matrix} 
-    \nabla \times \nabla \times \vec{E} = \nabla ~ (\nabla \vec{E}) - \nabla^2 \vec{E} = -\nabla^2 \vec{E} \\
-    \nabla \times \vec{H} \cong \vec{J}
-\end{matrix} $$ se puede reescribir como $$ -\nabla^2 \vec{E} = -j \omega \mu \vec{J} = -j\omega \mu \sigma \vec{E} $$ que se puede reescribir como $$ \nabla^2 \vec{E} - j\omega \mu \sigma \vec{E} = 0 $$ haciendo $$ \gamma^2 = j\omega \mu \sigma $$
-
-Se llama a la ecuación de onda reducida o ecuación de Helmholtz $$ \begin{align} 
-    \nabla^2 \vec{E} - \gamma^2 \vec{E} &= 0 \\ 
-    \nabla^2 \vec{H} - \gamma^2 \vec{H} &= 0 
+Como $\sigma \gg \omega \epsilon_0$, el segundo término, vinculado con la [[Energía magnética|energía magnética]], es mucho mayor que el primero, vinculado con la [[Energía eléctrica|energía eléctrica]] $$ \langle u \rangle \approx \frac{\sigma}{4\omega} ~ \left| \tilde{E}_{0\pm} \right|^2 ~ e^{\mp 2\alpha z} $$
+La [[Densidad de energía de una onda electromagnética#^velocidad-energia|velocidad de la energía]] es $$ \begin{align} 
+    v_E &= \pm \frac{2 |\eta| ~ \cos(\varphi)}{\mathcal{Re}\Set{\epsilon_0} |\eta|^2 + \mu_0} ~ \hat{z} \\
+     &= \frac{2 \sigma \delta}{2\epsilon_0 + \sigma^2 \delta^2 \mu_0} ~ \hat{z} \\
+     &= \pm \frac{\sigma \delta}{\epsilon_0 + \frac{\sigma}{\omega}} ~ \hat{z} \\
+     &\approx \pm \omega \delta ~ \hat{z}
 \end{align} $$
-Despejando la constante de propagación se obtiene $$ \gamma = \sqrt{j\omega\mu\sigma} = \sqrt{\omega \mu \sigma} \sqrt{j} = \sqrt{\frac{\omega \mu \sigma}{2}} ~ (1 + j) $$ donde a diferencia de la [[Onda electromagnética en un dieléctrico perfecto|constante de propagación en el vacío]], esta tiene parte real como imaginaria
-
-Considerando que el campo eléctrico tiene solo la componente $E_x$, se obtiene una [[Ecuación diferencial ordinaria|ecuación diferencial ordinaria]] cuya solución es $$ E_x(z) = E^+(z) + E^-(z) $$ donde el primer término representa una onda que se propaga en $z > 0$ y el segundo término representa una onda que se propaga en $z < 0$, la cual $$ \begin{align} 
-    E_x(z) &= E_0^+ ~ e^{-j\gamma z} + E_x^- ~ e^{j\gamma z} \\
-     &= E_0^+ ~ e^{-\alpha z} ~ e^{-j\beta z} + E_0^- ~ e^{\alpha z} ~ e^{j\beta z}
-\end{align} $$
-Introduciendo la variación temporal armónica $$ E_x(z) = E_0^+ ~ e^{-\alpha z} ~ e^{j(\omega t - \beta z)} + E_0^- ~ e^{\alpha z} ~ e^{j(\omega t + \beta z)} $$
-Al calcular el campo magnético usando la expresión de la [[Ley de Faraday#Ley de Maxwell-Faraday|ley de Maxwell-Faraday]] en su representación [[Fasor|fasorial]] $$ \nabla \times \vec{E} = -j\omega \mu \vec{H} $$ despejando $$ \vec{H} = \frac{j}{\omega \mu_0} \left( \nabla \times \vec{E} \right) = \frac{j}{\omega \mu_0} \begin{vmatrix} 
-    \hat{x} & \hat{y} & \hat{z} \\
-    \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
-    E_x & 0 & 0
-\end{vmatrix} = \frac{j}{\omega \mu_0} \frac{d}{dz} E_x ~ \hat{y} $$ donde resulta $$ \vec{H} = j ~ \frac{\gamma}{\omega \mu} \bigg( E_0^- ~ e^{\alpha z} ~ e^{j\beta z} - ~ E_0^+ ~ e^{-\alpha z} ~ e^{-j\beta z} \bigg) ~ \hat{y} $$
-Considerando solo la onda que se propaga en la dirección de $z > 0$ la impedancia del medio es $$ Z_m = \frac{E^+}{H^+} = \frac{j\omega\mu}{\gamma} = \frac{j\omega\mu}{\sqrt{j\omega\mu\sigma}} = \frac{\omega\mu}{\sqrt{2\sigma}} (1 + j) $$ 

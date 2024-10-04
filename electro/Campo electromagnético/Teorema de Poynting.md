@@ -6,6 +6,7 @@ tags:
 aliases:
   - Vector de Poyting
   - Intensidad de la radiación de una onda electromagnética#^intensidad-radiacion
+  - Potencia perdida de una onda electromagnética#En medios materiales
 ---
 # Definición
 ---
@@ -110,7 +111,7 @@ Como el vector de Poynting medio decae con la propagación por la potencia perdi
 \end{document}
 ```
 
-Para ello planteamos el balance de la potencia electromagnética que entra a un paralelepípedo de sección $S$ transversal a la propagación y espesor $dz$, parte de ella se pierde (por cualquier mecanismo) dentro del paralelepípedo y parte sale por la otra cara $$ \langle N(z) \rangle ~ S = \langle P(z) \rangle + \langle N(z + dz) \rangle ~ S $$ donde $\langle P \rangle$ es la potencia perdida en el material por cualquier mecanismo y $$ \frac{d}{dz} \langle \vec{N} \rangle \Bigg|_{z} = -\frac{\langle P(z) \rangle}{S} \implies  \frac{d}{dz} \langle \vec{N} \rangle \Bigg|_{z} = -\frac{d}{d\nu} \langle P(z) \rangle $$
-Pero como, en general $$ \langle \vec{N}(z) \rangle = \pm \langle \vec{N}_{0\pm} \rangle ~ e^{\mp 2 \alpha z} \implies \frac{d}{dz} \langle \vec{N} \rangle \Bigg|_{z} = -2\alpha \langle \vec{N}(z) \rangle =  -\frac{d}{d\nu} \langle P(z) \rangle $$
-Finalmente $$ \frac{d}{dz} \langle \vec{N} \rangle \Bigg|_{z} = -\frac{d}{d\nu} \langle P(z) \rangle \implies \frac{d}{d\nu} \langle P(z) \rangle = 2\alpha \langle \vec{N} \rangle $$
+Para ello planteamos el balance de la potencia electromagnética que entra a un paralelepípedo de sección $S$ transversal a la propagación y espesor $dz$, parte de ella se pierde (por cualquier mecanismo) dentro del paralelepípedo y parte sale por la otra cara $$ \langle N(z) \rangle ~ S = \langle P(z) \rangle + \langle N(z + dz) \rangle ~ S $$ donde $\langle P \rangle$ es la potencia perdida en el material por cualquier mecanismo y $$ \frac{d}{dz} \langle \vec{N} \rangle \Bigg|_{z} = -\frac{\langle P(z) \rangle}{S} \implies  \frac{d}{dz} \langle \vec{N} \rangle \Bigg|_{z} = -\frac{d}{dV} \langle P(z) \rangle $$
+Pero como, en general $$ \langle \vec{N}(z) \rangle = \pm \langle \vec{N}_{0\pm} \rangle ~ e^{\mp 2 \alpha z} \implies \frac{d}{dz} \langle \vec{N} \rangle \Bigg|_{z} = -2\alpha \langle \vec{N}(z) \rangle =  -\frac{d}{dV} \langle P(z) \rangle $$
+Finalmente $$ \frac{d}{dz} \langle \vec{N} \rangle \Bigg|_{z} = -\frac{d}{dV} \langle P(z) \rangle \implies \frac{d}{dV} \langle P(z) \rangle = 2\alpha \langle \vec{N} \rangle $$
 Se ve que esta expresión es válida independientemente del sentido de la propagación
