@@ -6,4 +6,4 @@ tags:
 ---
 # Definición
 ---
-Son aquellos problemas que se logran resolver estableciendo una relación entre valores dados para llegar a un valor numérico.
+Son aquellos problemas que se logran resolver estableciendo una relación entre valores dados para llegar a un valor numérico

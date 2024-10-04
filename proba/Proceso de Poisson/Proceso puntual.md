@@ -6,6 +6,6 @@ tags:
 ---
 # Definición
 ---
-Un proceso puntual aleatorio es un conjunto enumerable de puntos aleatorios ubicados sobre la recta real.
+Un proceso puntual aleatorio es un [[Conjunto|conjunto]] enumerable de puntos aleatorios ubicados sobre la [[Número real|recta real]]
 
-En la mayoría de las aplicaciones un punto de un proceso puntual es el instante en que ocurre un evento, por lo que los llamaremos eventos o arribos.
+En la mayoría de las aplicaciones un punto de un proceso puntual es el instante en que ocurre un [[Evento|evento]], por lo que los llamaremos eventos o arribos.

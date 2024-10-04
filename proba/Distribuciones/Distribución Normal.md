@@ -2,6 +2,8 @@
 dia: 2023-01-23
 tags:
   - distribucion/continua
+aliases:
+  - Campana de Gauss
 ---
 # Definición
 ---

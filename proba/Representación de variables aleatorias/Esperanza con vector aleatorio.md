@@ -20,7 +20,7 @@ Sean $X$, $Y$ [[Variable aleatoria continua|variable aleatoria continua]], con [
 ## Propiedades
 ---
 * $E\bigg[\displaystyle\sum_{i = 1}^n a_i \cdot X_i \bigg] = \displaystyle\sum_{i = 1}^n a_i \cdot E[X_i]$ 
-* Si $X_1, \cdots, X_n$ son [[Variables independientes|variables independientes]], entonces $E\bigg[\displaystyle\prod_{i = 1}^n X_i \bigg] = \displaystyle\prod_{i = 1}^n E[X_i]$ 
+* Si $X_1, \cdots, X_n$ son [[Variables aleatorias independientes|variables independientes]], entonces $E\bigg[\displaystyle\prod_{i = 1}^n X_i \bigg] = \displaystyle\prod_{i = 1}^n E[X_i]$ 
 
 ### Propiedades de Orden 
 ---

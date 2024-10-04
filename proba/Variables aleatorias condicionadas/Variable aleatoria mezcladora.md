@@ -6,7 +6,7 @@ tags:
 ---
 # Definición
 ---
-Dado [[Variable aleatoria discreta]] $M$ y una [[Partición]] $A_1, \cdots, A_n$ del [[Espacio muestral]], de forma que se define como $$ M = \begin{cases} 
+Dado [[Variable aleatoria discreta|variable aleatoria discreta]] $M$ y una [[Partición|partición]] $A_1, \cdots, A_n$ del [[Espacio muestral|espacio muestral]], de forma que se define como $$ M = \begin{cases} 
 	a_1 & \text{si } A_1 \\
 	a_2 & \text{si } A_2 \\
 	\vdots \\

@@ -15,4 +15,4 @@ Tambien se puede calcular más simple $$ Var(X) = E[X^2] - E[X]^2 $$
 ## Propiedades
 ---
 * $Var(a \cdot X) = a^2 \cdot Var(X)$
-* $Var(X + Y) = Var(X) + Var(Y) + 2 \cdot Cov(X, Y)$ donde $Cov(X, Y)$ es la [[Covarianza|covarianza]], recordemos que si $X$ e $Y$ son [[Variables independientes|independientes]] entonces $Cov(X, Y) = 0$
+* $Var(X + Y) = Var(X) + Var(Y) + 2 \cdot Cov(X, Y)$ donde $Cov(X, Y)$ es la [[Covarianza|covarianza]], recordemos que si $X$ e $Y$ son [[Variables aleatorias independientes|independientes]] entonces $Cov(X, Y) = 0$
