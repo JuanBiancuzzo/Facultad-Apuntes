@@ -16,6 +16,7 @@
     "parte": "number",
     "cover": "text",
     "filtroBiblioteca": "text",
-    "referencias": "multitext"
+    "referencias": "multitext",
+    "links": "multitext"
   }
 }
