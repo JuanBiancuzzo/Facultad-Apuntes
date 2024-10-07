@@ -11,7 +11,7 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (73)
+#### Buscar (75)
 ---
 Programación:
 1. System design interview
@@ -65,6 +65,7 @@ Psico (?):
 9. ¿El amor es o se hace? de Luciana Peker
 10. El fin de la masculinidad, Cómo amar en el siglo XXI de Luciano Lutereau
 11. Hombres que ya no hacen sufrir por amor, transformando las masculinidades de Coral Herrera
+12. The master and his emissary de Iain McGilchrist
 
 Matemática:
 1. In pursuit of the unknown de Ian Stewart
@@ -95,8 +96,9 @@ Física:
   
 Electronica:
 1. The FPGA programming handbook de Frank Bruno y Guy Eschemann
+2. Troubleshooting analog circuits de Robert A. Pease
 
-Diseño:
+Diseño/Mecánica:
 1. Shape Up de Ryan Singer
 2. Making design desitions de Tommy G
 3. How to make sense of any mess de Abby Covert

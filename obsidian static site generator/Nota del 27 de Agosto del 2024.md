@@ -9,8 +9,8 @@ tags:
 Voy a anotar todos los requerimientos que necesita este proyecto para que de esa forma pueda entender bien lo que tengo que hacer
 
 - [ ] Tikz
-    - [ ] Usar la libreria pdflatex de python para generar un pdf
-    - [ ] Usar la libreria spire.pdf de python para crear un svg a partir de un pdf
+    - [ ] Usar la [libreria pdflatex](https://pypi.org/project/pdflatex/) de python para generar un pdf 
+    - [ ] Usar la [libreria spire.pdf](https://medium.com/@alice.yang_10652/convert-svg-to-pdf-or-pdf-to-svg-with-python-d8e7c03fb82a) de python para crear un svg a partir de un pdf
 - [ ] Dataview
     - [ ] Se puede ejecutar código de javascript en python
 - [ ] Crear un parser de markdown y similar a html

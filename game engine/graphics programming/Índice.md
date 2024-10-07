@@ -19,6 +19,7 @@ La idea es ver todo el proceso del renderizado, desde las meshes hasta los fragm
 * [GPU Gems 2](https://developer.nvidia.com/gpugems/gpugems2/copyright)
 * [GPU Gems 3](https://developer.nvidia.com/gpugems/gpugems3/contributors)
 * [GPU Programming](https://youtube.com/playlist?list=PL5XwKDZZlwaY7t0M5OLprpkJUIrF8Lc9j&si=Gjsp5I3oNDmVCJBi)
+* [Cem Yuksel Canal de Youtube](https://www.youtube.com/@cem_yuksel)
 
 
 ## Archivos

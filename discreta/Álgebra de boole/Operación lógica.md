@@ -4,6 +4,7 @@ tags:
   - discreta/Álgebra-de-Boole
   - nota/facultad
   - algo-1/Introducción-a-la-programación
+  - lenguajes-de-programación
 ---
 # Definición
 ---

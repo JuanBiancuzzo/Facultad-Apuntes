@@ -1,11 +1,12 @@
 ---
-dia: 2024-07-31
+dia: 2024-10-07
 estado: Sin empezar
 tags:
   - índice
-  - parser
+  - lenguajes-de-programación/lenguaje-go
 aliases:
-  - Parser
+  - Lenguaje go
+  - Golang
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
@@ -13,10 +14,7 @@ await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.cu
 ```
 # ¿Qué se va a investigar?
 ---
-Vamos a investigar como crear un parser y como crear uno, ya sea manual o automáticamente, siguiendo las series
-* [Building a Parser from scratch](https://youtube.com/playlist?list=PLGNbPb3dQJ_5FTPfFIg28UxuMpu7k0eT4&si=N-33h-Cr6uyvjryb)
-* [Parsing Algorithms](https://youtube.com/playlist?list=PLGNbPb3dQJ_6aPNnlBvXGyNMlDtNTqN5I&si=zQhvQe_9hpehq7jv)
-* [Introduction to Writing Modern Parsers](https://youtube.com/playlist?list=PL_2VhOvlMk4XDeq2eOOSDQMrbZj9zIU_b&si=madJAWQeyaMj2OGo)
+La intención es explorar todo el lenguaje go y como este resuelve los problemas
 
 
 ## Archivos

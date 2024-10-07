@@ -3,6 +3,8 @@ dia: 2024-03-13
 tags:
   - señales/Señales-y-sistemas
   - nota/facultad
+aliases:
+  - Impulso
 ---
 # Definición
 ---
