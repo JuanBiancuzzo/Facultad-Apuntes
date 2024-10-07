@@ -3,6 +3,7 @@ dia: 2024-04-03
 tags:
   - algo-1/Lenguaje-C
   - nota/facultad
+  - lenguajes-de-programación/lenguaje-c
 ---
 # Definición
 ---

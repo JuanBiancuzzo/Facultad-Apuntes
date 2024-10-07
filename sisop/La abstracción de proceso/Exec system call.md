@@ -3,6 +3,7 @@ dia: 2023-11-16
 tags:
   - sisop/La-abstracción-de-proceso
   - nota/facultad
+  - lenguajes-de-programación/lenguaje-c
 aliases:
   - Exec system call
   - Execl system call

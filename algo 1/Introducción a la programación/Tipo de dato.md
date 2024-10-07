@@ -4,6 +4,8 @@ tags:
   - algo-1/Introducción-a-la-programación
   - nota/facultad
   - taller/Sintaxis
+  - lenguajes-de-programación/lenguaje-Rust
+  - lenguajes-de-programación/lenguaje-c
 ---
 # Definición
 ---

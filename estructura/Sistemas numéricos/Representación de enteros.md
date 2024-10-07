@@ -5,6 +5,8 @@ tags:
   - nota/facultad
   - taller/Sintaxis
   - algo-1/Lenguaje-C
+  - lenguajes-de-programación/lenguaje-Rust
+  - lenguajes-de-programación/lenguaje-c
 aliases:
   - Integer
   - Int

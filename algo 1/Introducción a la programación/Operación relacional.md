@@ -3,6 +3,7 @@ dia: 2024-07-27
 tags:
   - algo-1/Introducción-a-la-programación
   - nota/facultad
+  - lenguajes-de-programación
 ---
 # Definición
 ---

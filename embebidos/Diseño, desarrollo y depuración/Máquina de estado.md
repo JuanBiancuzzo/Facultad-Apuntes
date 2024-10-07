@@ -35,7 +35,7 @@ Dependiendo del tipo de máquina de estados, los estados y/o transiciones produc
 
 ## Implementación
 ---
-Tenemos múltiples opciones para codificar en [[algo 1/Lenguaje C/Resumen|C]] diagramas de estados finito, a saber
+Tenemos múltiples opciones para codificar en [[lenguajes de programación/lenguaje c/Índice|C]] diagramas de estados finito, a saber
 * Mediante combinaciones de [[Switch statement#En C|switch]], múltiples [[If statement#En C|if]] o punteros a función
 * Tablas de estados de una o dos dimensiones
 * [[Patrones de diseño (Gang of four)|Patrones de diseños]] de estado [[Programación oientada a objetos (OOP) (POO)|orientados a objetos]]

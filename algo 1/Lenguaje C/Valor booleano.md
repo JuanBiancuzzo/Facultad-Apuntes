@@ -4,6 +4,8 @@ tags:
   - algo-1/Lenguaje-C
   - nota/facultad
   - taller/Sintaxis
+  - lenguajes-de-programación/lenguaje-Rust
+  - lenguajes-de-programación/lenguaje-c
 ---
 # Definición
 ---

@@ -6,6 +6,7 @@ aliases:
 tags:
   - aninfo/Diseño-de-software
   - nota/facultad
+  - networking
 ---
 # Definición
 ---

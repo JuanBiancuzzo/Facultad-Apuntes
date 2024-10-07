@@ -4,6 +4,8 @@ tags:
   - taller/Sintaxis
   - nota/facultad
   - algo-1/Introducción-a-la-programación
+  - lenguajes-de-programación/lenguaje-Rust
+  - lenguajes-de-programación/lenguaje-c
 aliases:
   - Tipo de dato estructurado
 ---

@@ -14,6 +14,13 @@ await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.cu
 Vamos a aprender varios lenguajes de programación, y acá es donde lo vamos a encontrar
 
 
+## Archivos
+---
+```dataviewjs
+await dv.view("_scripts/dataview/investigacion/mostrarArchivos", { indice: dv.current() });
+```
+
+
 # Bibliografía
 ---
 ```dataviewjs

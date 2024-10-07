@@ -4,6 +4,8 @@ tags:
   - nota/facultad
   - algo-1/Lenguaje-C
   - taller/Sintaxis
+  - lenguajes-de-programación/lenguaje-Rust
+  - lenguajes-de-programación/lenguaje-c
 aliases:
   - Sentencia while
   - Sentencia mientras

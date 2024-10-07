@@ -15,30 +15,12 @@ tags:
 # Definición
 ---
 Las [[Aplicación Programming Interface|API's]] son claves para el desarrollo de [[Software|software]]
-
-## SOAP
----
-
-
-## RESTful
----
-
-
-## GraphQL
----
-
-
-## gRPC
----
-
-
-## WebSocket
----
-
-
-## Webhook
----
-
+* SOAP
+* [[Representational state transfer|RESTful]]
+* GraphQL
+* [[Remote Procedure Call#gRPC|gRPC]]
+* WebSocket
+* Webhook
 
 
 # Referencias

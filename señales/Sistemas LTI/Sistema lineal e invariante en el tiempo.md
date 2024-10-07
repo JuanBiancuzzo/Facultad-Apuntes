@@ -16,6 +16,6 @@ La linealidad nos permite usar el [[Principio de superposición|principio de sup
 
 ## Conclusión
 ---
-* Para determinar la salida de un sistema LTI a una entrada determinada es necesario realizar una [[Convolución|suma o integral de convolución]] entre la respuesta al impulso del sistema y la mencionada entrada
+* Para determinar la salida de un sistema LTI a una entrada determinada es necesario realizar una [[Convolución|suma o integral de convolución]] entre la [[Respuesta en frecuencia|respuesta al impulso]] del sistema y la mencionada entrada
 * Los sistemas LTI, tanto de tiempo continuo como de tiempo discreto, están caracterizados completamente por su [[Representación de una señal mediante impulsos|respuesta al impulso]] $h(t)$ o $h[n]$. Esto es privativo de dichos sistemas. Otros sistemas no lineales y/o variantes en el tiempo no puede ser caracterizados por una respuesta al impulso
 * Muchas propiedades de interés de los sistemas LTI pueden determinarse mediante un análisis de la respuesta al impulso

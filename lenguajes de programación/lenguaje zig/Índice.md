@@ -3,9 +3,10 @@ dia: 2024-08-15
 estado: Sin empezar
 tags:
   - índice
-  - lenguajes-de-programación/zig
+  - lenguajes-de-programación/lenguaje-zig
 aliases:
   - Lenguaje Zig
+  - Zig
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
@@ -13,7 +14,7 @@ await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.cu
 ```
 # ¿Qué se va a investigar?
 ---
-Zig es un [[Lenguaje de programación|lenguaje de programación]] cercano a [[algo 1/Lenguaje C/Resumen|C]], pero con las herramientas de lenguajes modernos
+Zig es un [[Lenguaje de programación|lenguaje de programación]] cercano a [[lenguajes de programación/lenguaje c/Índice|C]], pero con las herramientas de lenguajes modernos
 
 
 ## Archivos

@@ -32,6 +32,8 @@ aliases:
   - Straight ahead#Straight ahead & Pose to Pose
   - Overlapping Action#Follow Through & Overlapping Action
   - Follow Through#Follow Through & Overlapping Action
+  - Anticipation#Anticipation
+  - Anticipación#Anticipation
 tags:
   - referencia/libro
   - biblioteca/libro

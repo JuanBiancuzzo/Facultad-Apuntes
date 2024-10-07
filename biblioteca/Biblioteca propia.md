@@ -11,7 +11,7 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (59)
+#### Buscar (73)
 ---
 Programación:
 1. System design interview
@@ -24,6 +24,17 @@ Programación:
 8. Writing a compiler in go de Thorsten Ball
 9. Unix and Linux system administration handbook (5 edición) de Evi Nemeth, Garth Snyder, Trent Hein, Ben Whaley, Dan Mackin
 10. An Introduction to Statistical Learning: with Applications in R (Springer Texts in Statistics) de Gareth James (Author), Daniela Witten (Author)
+11. Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People 1st Edition de Aditya Bhargava
+12. Introduction to Algorithms, 3rd Edition de Thomas H Cormen
+13. Refactoring: Improving the Design of Existing Code (2nd Edition) de Martin Fowler
+14. Understanding Distributed Systems: What every developer should know about large distributed applications de Roberto Vitillo
+15. The Signal and the Noise: Why So Many Predictions Fail--but Some Don't de Nate Silver
+16. The Art of Statistics: How to Learn from Data de David Spiegelhalter
+17. The Hundred-Page Machine Learning Book de Andriy Burkov
+18. Deep learning book https://www.deeplearningbook.org/
+19. Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications 1st Edition de Chip Huyen
+20. Software Architecture: The Hard Parts: Modern Trade-Off Analyses for Distributed Architectures 1st Edition de Neal Ford, Mark Richards, ...
+21. Software Engineering at Google: Lessons Learned from Programming Over Time 1st Edition de Titus Winters, Tome Manshreck y otro
 
 Hacking:
 1. Learn powershell in a month of lunches
@@ -51,6 +62,9 @@ Psico (?):
 6. Atomic habits
 7. and how does that make you feel de Joshua Fletcher
 8. Deep work de Cal Newport
+9. ¿El amor es o se hace? de Luciana Peker
+10. El fin de la masculinidad, Cómo amar en el siglo XXI de Luciano Lutereau
+11. Hombres que ya no hacen sufrir por amor, transformando las masculinidades de Coral Herrera
 
 Matemática:
 1. In pursuit of the unknown de Ian Stewart

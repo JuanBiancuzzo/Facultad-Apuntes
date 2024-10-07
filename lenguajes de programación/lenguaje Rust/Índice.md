@@ -1,9 +1,12 @@
 ---
-dia: 2024-07-15
+dia: 2024-10-06
+estado: Sin empezar
 tags:
   - índice
-  - herramientas/rust
-estado: Falta resumir
+  - lenguajes-de-programación/lenguaje-Rust
+aliases:
+  - Lenguaje Rust
+  - Rust
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
@@ -11,7 +14,7 @@ await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.cu
 ```
 # ¿Qué se va a investigar?
 ---
-
+La intención es explorar todo el lenguaje rust y como este resuelve los problemas
 
 
 ## Archivos

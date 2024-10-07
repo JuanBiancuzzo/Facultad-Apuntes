@@ -3,6 +3,7 @@ dia: 2024-07-28
 tags:
   - taller/Sintaxis
   - nota/facultad
+  - lenguajes-de-programación/lenguaje-Rust
 aliases:
   - Tuple
 ---

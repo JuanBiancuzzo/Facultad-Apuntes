@@ -3,6 +3,7 @@ dia: 2023-03-20
 tags:
   - taller/Organizacion
   - nota/facultad
+  - lenguajes-de-programación/lenguaje-Rust
 ---
 # Definición
 ---

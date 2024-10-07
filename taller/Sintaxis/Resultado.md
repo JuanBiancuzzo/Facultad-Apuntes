@@ -3,6 +3,9 @@ dia: 2023-03-16
 tags:
   - taller/Sintaxis
   - nota/facultad
+  - lenguajes-de-programación/lenguaje-Rust
+aliases:
+  - Result
 ---
 # Definición
 ---

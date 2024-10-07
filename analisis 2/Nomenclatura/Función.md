@@ -5,6 +5,8 @@ tags:
   - algo-1/Lenguaje-C
   - taller/Sintaxis
   - analisis-2/Nomenclatura
+  - lenguajes-de-programación/lenguaje-c
+  - lenguajes-de-programación/lenguaje-Rust
 ---
 # Definición
 ---

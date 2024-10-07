@@ -3,8 +3,6 @@ capitulo: 1
 tags:
   - taller/Sintaxis
   - resumen
-aliases:
-  - Lenguaje Rust
 ---
 # Índice 
 ---

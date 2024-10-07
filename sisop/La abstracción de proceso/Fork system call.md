@@ -3,6 +3,7 @@ dia: 2023-11-18
 tags:
   - sisop/La-abstracción-de-proceso
   - nota/facultad
+  - lenguajes-de-programación/lenguaje-c
 ---
 # Definición
 ---

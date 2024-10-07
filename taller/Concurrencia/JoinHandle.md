@@ -3,16 +3,17 @@ dia: 2023-03-29
 tags:
   - taller/Concurrencia
   - nota/facultad
+  - lenguajes-de-programación/lenguaje-Rust
 ---
 # Definición
 ---
-El [[Thread - Rust|thread]] padre puede esperar a que un thread hijo creado finalice utilizando la función `join()`.
+El [[Thread|thread]] padre puede esperar a que un thread hijo creado finalice utilizando la función `join()`.
 
 ``` rust
 pub fn join(self) -> Result<T>
 ```
 
-Se invoca sobre el handle del [[Thread - Rust|thread]] obtenido con spawn. Por ejemplo: 
+Se invoca sobre el handle del [[Thread|thread]] obtenido con spawn. Por ejemplo: 
 ``` rust
 let _ = hijo.join(self);
 ```

@@ -252,7 +252,7 @@ E_0 + E_{0r} = E_{0t}, &&&
 Podemos calcular el coeficiente de reflexión y el coeficiente de transmisión a partir de estas ecuaciones $$ \begin{align} 
     \rho_{TE} &= \frac{Z_{TE_2} - Z_{TE_1}}{Z_{TE_2} - Z_{TE_1}}, &&&
     \tau_{TE} &= 1 + \rho_{TE} = \frac{2Z_{TE_2}}{Z_{TE_2} + Z_{TE_1}} \\\\ 
-    \displaystyle &= \frac{\eta_2 \cos(\theta_i) - \eta_1 \cos(\theta_t)}{\eta_2 \cos(\theta_i) + \eta_1 \cos(\theta_t)} &&&
+    \displaystyle &= \frac{\eta_2 \cos(\theta_i) - \eta_1 \cos(\theta_t)}{\eta_2 \cos(\theta_i) + \eta_1 \cos(\theta_t)}, &&&
     \displaystyle &= \frac{2\eta_2 \cos(\theta_i)}{\eta_2 \cos(\theta_i) + \eta_1 \cos(\theta_t)} \\\\
     \displaystyle &= \frac{ \cos(\theta_i) - \frac{\mu_1}{\mu_2} \sqrt{ \frac{\eta_1^2 \mu_2^2}{\eta_2^2 \mu_1^2} - \sin^2(\theta_i) } }{ \cos(\theta_i) + \frac{\mu_1}{\mu_2} \sqrt{ \frac{\eta_1^2 \mu_2^2}{\eta_2^2 \mu_1^2} - \sin^2(\theta_i) } }, &&&
     \displaystyle &= \frac{2\cos(\theta_i)}{ \cos(\theta_i) + \frac{\mu_1}{\mu_2} \sqrt{ \frac{\eta_1^2 \mu_2^2}{\eta_2^2 \mu_1^2} - \sin^2(\theta_i) } }

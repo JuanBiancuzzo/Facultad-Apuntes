@@ -49,16 +49,16 @@ Veamos las siguientes propiedades de la transformada de Laplace
 ---
 Vamos a enumerar algunas transformaciones conocidas
 
-| Función objeto                             | Transformada de Laplace                              | RC                         | Observaciones                                                                 |
-| ------------------------------------------ | ---------------------------------------------------- | -------------------------- | ----------------------------------------------------------------------------- |
-| $f(t)$                                     | $F(s)$                                               |                            |                                                                               |
-| $H(t)$                                     | $\displaystyle\frac{1}{s}$                           | $Re(s) > 0$                |                                                                               |
-| $H(t - t_0)$                               | $\displaystyle\frac{1}{s} e^{-t_0 s}$                | $Re(s) > 0$                | $t_0 > 0$                                                                     |
-| $t ~ H(t)$                                 | $\displaystyle\frac{1}{s^2}$                         | $Re(s) > 0$                |                                                                               |
-| $t^n ~ H(t)$                               | $\displaystyle\frac{n!}{s^{n + 1}}$                  | $Re(s) > 0$                | $n$: entero positivo o nulo, para exponentes no enteros ver [[analisis 3/Transformada de Laplace/Función gamma]] |
-| $e^{-kt}~H(t)$                             | $\displaystyle\frac{1}{s + k}$                       | $Re(s) > -k$               | $k$: constante real                                                           |
-| $(t - t_0)^n e^{-k(t - t_0)} ~ H(t - t_0)$ | $\displaystyle\frac{n! e^{-t_0 s}}{(s + k)^{n + 1}}$ | $Re(s) > -k$               | $t_0 > 0$, $k$: constante real                                                |
-| $sen(\alpha t) ~ H(t)$                     | $\displaystyle\frac{\alpha}{s^2 + \alpha^2}$         | $Re(s) > 0$                | $\alpha$ constante                                                            |
-| $cos(\alpha t) ~ H(t)$                     | $\displaystyle\frac{s}{s^2 + \alpha^2}$              | $Re(s) > 0$                | $\alpha$ constante                                                            |
-| $senh(\alpha t) ~ H(t)$                    | $\displaystyle\frac{\alpha}{s^2 - \alpha^2}$         | $Re(s) > \vert\alpha\vert$ | $\alpha$ constante                                                            |
-| $cosh(\alpha t) ~ H(t)$                    | $\displaystyle\frac{s}{s^2 - \alpha^2}$              | $Re(s) > \vert\alpha\vert$ | $\alpha$ constante                                                            |
+| Función objeto                             | Transformada de Laplace                              | RC                         | Observaciones                                                             |
+| ------------------------------------------ | ---------------------------------------------------- | -------------------------- | ------------------------------------------------------------------------- |
+| $f(t)$                                     | $F(s)$                                               |                            |                                                                           |
+| $H(t)$                                     | $\displaystyle\frac{1}{s}$                           | $Re(s) > 0$                |                                                                           |
+| $H(t - t_0)$                               | $\displaystyle\frac{1}{s} e^{-t_0 s}$                | $Re(s) > 0$                | $t_0 > 0$                                                                 |
+| $t ~ H(t)$                                 | $\displaystyle\frac{1}{s^2}$                         | $Re(s) > 0$                |                                                                           |
+| $t^n ~ H(t)$                               | $\displaystyle\frac{n!}{s^{n + 1}}$                  | $Re(s) > 0$                | $n$: entero positivo o nulo, para exponentes no enteros ver función gamma |
+| $e^{-kt}~H(t)$                             | $\displaystyle\frac{1}{s + k}$                       | $Re(s) > -k$               | $k$: constante real                                                       |
+| $(t - t_0)^n e^{-k(t - t_0)} ~ H(t - t_0)$ | $\displaystyle\frac{n! e^{-t_0 s}}{(s + k)^{n + 1}}$ | $Re(s) > -k$               | $t_0 > 0$, $k$: constante real                                            |
+| $sen(\alpha t) ~ H(t)$                     | $\displaystyle\frac{\alpha}{s^2 + \alpha^2}$         | $Re(s) > 0$                | $\alpha$ constante                                                        |
+| $cos(\alpha t) ~ H(t)$                     | $\displaystyle\frac{s}{s^2 + \alpha^2}$              | $Re(s) > 0$                | $\alpha$ constante                                                        |
+| $senh(\alpha t) ~ H(t)$                    | $\displaystyle\frac{\alpha}{s^2 - \alpha^2}$         | $Re(s) > \vert\alpha\vert$ | $\alpha$ constante                                                        |
+| $cosh(\alpha t) ~ H(t)$                    | $\displaystyle\frac{s}{s^2 - \alpha^2}$              | $Re(s) > \vert\alpha\vert$ | $\alpha$ constante                                                        |

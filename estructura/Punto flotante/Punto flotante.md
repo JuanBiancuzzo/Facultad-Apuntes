@@ -5,9 +5,12 @@ tags:
   - nota/facultad
   - taller/Sintaxis
   - algo-1/Lenguaje-C
+  - lenguajes-de-programación/lenguaje-c
+  - lenguajes-de-programación/lenguaje-Rust
 aliases:
   - Floating point
   - Float
+  - IEEE 754
 ---
 # Definición
 ---

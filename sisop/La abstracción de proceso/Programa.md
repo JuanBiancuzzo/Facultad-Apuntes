@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - algo-1/Introducción-a-la-programación
   - embebidos/Diseño-desarrollo-y-depuración
+  - lenguajes-de-programación
 ---
 # Definición
 ---
@@ -26,7 +27,7 @@ Es un [[Archivo|archivo]] que posee toda la información de como construir un [[
 * Otra información
 	* El programa contiene además otra información necesaria para terminar de construir el [[Proceso]] en [[Memoria]]
 
-## Transformación a un [[Proceso]]
+## Transformación a un proceso
 ---
 1. El [[Sistema operativo|SO]] debe carga el programa, su código y cualquier dato estático en la [[Memoria]]. Los programas residen en disco en algún formato ejecutable, en [[Linux]] este formato es elf
 	* En los SO antiguos esto se realizaba de forma abrupta (eagerly) instrucciones y datos

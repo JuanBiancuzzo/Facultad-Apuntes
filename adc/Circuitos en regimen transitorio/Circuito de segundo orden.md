@@ -3,6 +3,10 @@ dia: 2023-09-23
 tags:
   - adc/Circuitos-en-regimen-transitorio
   - nota/facultad
+aliases:
+  - Sobreamortiguado#Sobreamortiguado
+  - Críticamente amortiguado#Críticamente amortiguado
+  - Subamortiguado#Subamortiguado
 ---
 # Definición
 ---
@@ -47,6 +51,6 @@ Si $f(t) = K_0$ entonces propongo $$ y_p(t) = K $$
 #### Trigonométrica
 ---
 Si $f(t) = A_1 \sin \left( \omega \cdot t - \theta_1 \right) + A_2 \cos \left( \omega \cdot t - \theta_2 \right)$ entonces propongo $$ y_p(t) = A_3 \sin \left( \omega \cdot t - \theta_3 \right) + A_4 \cos \left( \omega \cdot t - \theta_4 \right) $$
-#### [[Función exponencial|Exponencial]]
+#### Exponencial
 ---
 Si $f(t) = A \exp \left( B \cdot t \right)$ entonces propongo $$ y_p(t) = C \exp \left( B \cdot t \right) $$
