@@ -12,4 +12,4 @@ Tengo que entender
 * [[Animación procedural con cinemáticas inversas|Animación procedural con cinemáticas inversas]]
     * Espero entender el uso en general de animaciones procedurales, y como puede generar animaciones únicamente permitidas con estas herramientas
 * [[Animación de poses procedurales|Animación de poses procedurales]]
-    * Espero entender como retargetear [[Skeleton for animation (Esquelo para animar)|esquelos]] y poder permitir integrar aspectos procedurales en su animación por keyframes
+    * Espero entender como retargetear [[Skeleton for animation (Esquelo para animar)|esqueletos]] y poder permitir integrar aspectos procedurales en su animación por keyframes

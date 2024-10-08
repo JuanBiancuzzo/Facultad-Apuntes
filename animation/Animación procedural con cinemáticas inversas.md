@@ -35,15 +35,10 @@ Por último se puede interpolar linealmente o como veremos a continuación, gene
 El proceso de mover un objeto, es crear puntos finales en donde debería estar, por lo que podemos modelar limitaciones en el objeto/personaje que nos permitan limitar los posibles posiciones finales
 
 En general se usan dos tipos de limitaciones o constrains
-* Position constrains
-    * Dado dos puntos, se los limita a las posiciones donde ambos están a una cierta distancia
-    * En general, a uno de los puntos se lo deja fijo en una posición y al otro se lo mueve para satisfacer la limitación
-        * Ahí aparece la consideración de que punto tomar, ya que técnicamente hay multiples puntos determinados por una distancia
-* Angle constrains
-    * Dado dos puntos, se limita los ángulos en los que se puede estar
-        * Como en la limitación de la posición, en muy pocas ocasiones se tiene un único punto para satisfacer la limitación, por lo que aparece un calculo especifico a la situación para determinar que punto tomar 
+* [[Position constrains|Position constrains]]
+* [[Orientation constrains|Angle constrains]]
 
-De nuevo, como mencionábamos antes, lo difícil es encontrar que puntos tomar, ya que el movimiento suele dejar ambigua que posición debería tomarse para mantener las limitaciones. En general se usa la posición que minimice la posición final e inicial, porque visualmente es la que produce un movimiento más natural
+Lo difícil es encontrar que puntos tomar, ya que el movimiento suele dejar ambigua que posición debería tomarse para mantener las limitaciones. En general se usa la posición que minimice la posición final e inicial, porque visualmente es la que produce un movimiento más natural
 
 Algo a considerar cuando se tiene un objeto o personaje sin un esqueleto, es que se puede construir el personaje/objeto de tal forma que se pueda usar los algoritmos de IK, por lo que también es una herramienta para determinar el movimiento de dicho objeto/personaje
 
