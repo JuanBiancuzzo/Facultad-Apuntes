@@ -257,3 +257,13 @@ Podemos calcular el coeficiente de reflexión y el coeficiente de transmisión a
     \displaystyle &= \frac{ \cos(\theta_i) - \frac{\mu_1}{\mu_2} \sqrt{ \frac{\eta_1^2 \mu_2^2}{\eta_2^2 \mu_1^2} - \sin^2(\theta_i) } }{ \cos(\theta_i) + \frac{\mu_1}{\mu_2} \sqrt{ \frac{\eta_1^2 \mu_2^2}{\eta_2^2 \mu_1^2} - \sin^2(\theta_i) } }, &&&
     \displaystyle &= \frac{2\cos(\theta_i)}{ \cos(\theta_i) + \frac{\mu_1}{\mu_2} \sqrt{ \frac{\eta_1^2 \mu_2^2}{\eta_2^2 \mu_1^2} - \sin^2(\theta_i) } }
 \end{align} $$
+El campo eléctrico en el medio de incidencia es $$ \begin{align} 
+    \vec{E}_1 &= E_0 ~ e^{i(\omega t - \vec{k}_i \cdot \vec{r})} ~ \hat{y} + \rho_{TE} E_0 ~ e^{i(\omega t - \vec{k}_r \cdot \vec{r})} ~ \hat{y} \\
+     &= E_0 ~ e^{i\omega t} ~ \left( e^{-ik_{i_x}x} e^{-ik_{i_z}z} + \rho_{TE} ~ e^{-ik_{r_x}x} e^{-ik_{r_z}z} \right) ~ \hat{y}
+\end{align} $$Pero $$ \begin{matrix}
+    k_{r_x} = k_{i_x} = k_i ~ \sin(\theta_i) &&&
+    k_{r_z} = -k_{i_z} = -k_i ~ \cos(\theta_i)
+\end{matrix} $$
+Luego $$ \vec{E}_1 = E_0 ~ e^{i(\omega t - k_i \sin(\theta_i) ~ x)} \left( e^{-ik_{i_x}x} e^{-ik_{i_z}z} + \rho_{TE} ~ e^{-ik_{r_x}x} e^{-ik_{r_z}z} \right) $$
+Entonces puede verse que el campo eléctrico en el medio de incidencia se comporta como una onda viajera que se propaga en la dirección $x$ paralela a la interfase y como una onda semi-estacionaria en la dirección $z$ normal a la interfase (que se convierte en una onda estacionaria pura para $|\rho_{TE}| = 1$)
+
