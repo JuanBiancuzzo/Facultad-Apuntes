@@ -7,6 +7,7 @@ tags:
   - analisis-2/Nomenclatura
   - lenguajes-de-programación/lenguaje-c
   - lenguajes-de-programación/lenguaje-Rust
+  - estructura/Álgebra-de-Boole
 ---
 # Definición
 ---
@@ -43,9 +44,14 @@ Escribimos estas funciones como $f: D \to H$ donde los conjuntos $D$ (el [[Domin
 \end{document}
 ```
 
+## Álgebra de Bool
+---
+Es una función cuyo [[Conjunto|conjunto]] de llegada (el dominio) y el conjunto de salida (el codominio), son elementos definidos por el [[Álgebra de Boole|álgebra de Boole]]
+
 ## Expresión en C
 ---
 Se puede representar un [[algo 1/Introducción a la programación/Algoritmo|algoritmo]]
+
 ```c
 tipoDeDato nombreAlgoritmo(tipoDeDato variable1, ...) {
 	accion1;
@@ -53,6 +59,13 @@ tipoDeDato nombreAlgoritmo(tipoDeDato variable1, ...) {
 	// ...
 }
 ```
+
+Se denomina prototipo de una función o firma, al tipo de dato de retorno, más el nombre de la función más la lista de tipos de los parámetros de la misma. Esto permite poder declarar una función antes de usarla, pero sin tener que implementarla todavía
+
+```c
+tipoDeDato nombreAlgoritmo(tipoDeDato, ...);
+```
+
 
 ## Expresión en Rust
 ---
@@ -83,4 +96,6 @@ Esta función, la podemos pensar, como que establece una relación entre [[Espac
 * [[Suma entre funciones|Suma entre funciones]] ![[Suma entre funciones#^7715e3]]
 * [[Producto entre funciones|Producto entre funciones]] ![[Producto entre funciones#^ff1a85]]
 * [[Cociente entre funciones|Cociente entre funciones]] ![[Cociente entre funciones#^b3bde8]]
+
+
 

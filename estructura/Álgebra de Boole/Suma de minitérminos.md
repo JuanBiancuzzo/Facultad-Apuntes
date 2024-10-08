@@ -9,7 +9,7 @@ aliases:
 ---
 # Definición
 ---
-Dada una [[Función lógica|función lógica]], lo que expresa este método es que se puede expresar como producto de sumas, con el objetivo de replicar esta función si necesidad de conocer cual es pero conociendo su output.
+Dada una [[Función|función lógica]], lo que expresa este método es que se puede expresar como producto de sumas, con el objetivo de replicar esta función si necesidad de conocer cual es pero conociendo su output.
 
 Veamos un ejemplo, sea la siguiente función: 
 

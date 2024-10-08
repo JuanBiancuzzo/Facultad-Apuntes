@@ -6,4 +6,4 @@ tags:
 ---
 # Definición
 ---
-Un circuito es una interconexión de [[Compuerta|compuertas]]. Estas pueden ser [[Circuito combinacional|combinacionales]] o [[Circuito secuencial|secuenciales]]
+Un circuito es una interconexión de [[Compuerta lógica|compuertas]]. Estas pueden ser [[Circuito combinacional|combinacionales]] o [[Circuito secuencial|secuenciales]]

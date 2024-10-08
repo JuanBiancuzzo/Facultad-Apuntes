@@ -138,7 +138,7 @@ Usualmente, $V_{Tn}$ y $V_{Tp}$ están fijados por la tecnología de fabricació
   Depende de parámetros constructivos $W$ y $L$
 ## Carga de un inversor CMOS
 ---
-En un [[Circuito digital|circuito digital]] CMOS la salida de cualquier [[Compuerta|compuerta]] está cargada por
+En un [[Circuito digital|circuito digital]] CMOS la salida de cualquier [[Compuerta lógica|compuerta]] está cargada por
 * Compuertas lógicas subsiguientes
 	* Debe considerarse la capacidad de entrada de cada transistor conectado
 * Capacidad del cable de interconexión
@@ -185,7 +185,7 @@ Para poder aumentar la frecuencia de trabajo, manteniendo el consumo ([[Temperat
 
 ## Tiempo de propagación
 ---
-Tiempo de propagación: retraso entre las señales de entrada y salida de una [[Compuerta|compuerta]]; figura de merito clave de la velocidad
+Tiempo de propagación: retraso entre las señales de entrada y salida de una [[Compuerta lógica|compuerta]]; figura de merito clave de la velocidad
 
 Para una tecnología del nodo $180~nm$ (largo mínimo del canal) la demora de propagación (delay) típica de un inversor es $t_p \sim 30 ~ ps$
 

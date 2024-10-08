@@ -6,6 +6,7 @@ tags:
   - bdd/SQL
   - dispo/Circuitos-digitales-y-procesos-de-fabricación-CMOS
   - discreta/Álgebra-proposicional
+  - lenguajes-de-programación/lenguaje-c
 aliases:
   - Inversor
   - Negación
@@ -36,6 +37,28 @@ En [[Structured Query Language|SQL]] se usa en la cláusula [[Sentencia WHERE|WH
 SELECT columna1, columna2, ...
 FROM nombre_tabla
 WHERE NOT condicion;
+```
+
+## En C
+---
+Para aplicarlo se usa de la siguiente forma
+
+```c
+#include <stdbool.h>
+
+bool toggle = true;
+
+toggle = !toggle; // false
+```
+
+Recordemos que [[lenguajes de programación/lenguaje c/Índice|C]] no hace distinción entre números y booleanos, por lo que se puede verificar si un [[Puntero|puntero]] es [[NULL|NULL]] de la siguiente forma
+
+```c
+int *puntero_invalido = NULL;
+
+if (!puntero_invalido) {
+    // Es invalido
+}
 ```
 
 ## Electronica

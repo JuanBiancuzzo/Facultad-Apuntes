@@ -8,7 +8,7 @@ aliases:
 ---
 # Definición
 ---
-Tienen la capacidad de guardar información, y su estructura se conforma por $n$ [[Flip-Flop D sincrónico|flip-flop operando sincrónicamente]] y [[Compuerta|compuertas lógicas]].
+Tienen la capacidad de guardar información, y su estructura se conforma por $n$ [[Flip-Flop D sincrónico|flip-flop operando sincrónicamente]] y [[Compuerta lógica|compuertas lógicas]].
 
 Veamos un ejemplo con [[Flip-Flop D sincrónico|flip-flop d sincrónicos]]
 

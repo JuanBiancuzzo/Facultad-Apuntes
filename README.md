@@ -11,7 +11,7 @@ Un listado de materias y su estado actual
 | Materia                                                                                                        | Código | Estado                                              |
 | -------------------------------------------------------------------------------------------------------------- | ------ | --------------------------------------------------- |
 | [Álgebra 2](algebra%202/Álgebra%202%20(6108).md)                                                               | 6108   | Falta terminar de pasar el resumen                  |
-| [Algoritmos y programación 1](algo%201/Algoritmos%20y%20programación%201%20(7540).md)                          | 7540   | Voy por el 2do pdf                                  |
+| [Algoritmos y programación 1](algo%201/Algoritmos%20y%20programación%201%20(7540).md)                          | 7540   | Voy por el 3do pdf                                  |
 | [Algoritmos y programación 2](algo%202/Algoritmos%20y%20programación%202%20(7541).md)                          | 7541   | Falta hacer el resumen                              |
 | [Algoritmos y programación 3](algo%203/Algoritmos%20y%20programación%203%20(7507).md)                          | 7507   | Falta hacer el resumen                              |
 | [Análisis de circuitos](adc/Análisis%20de%20circuitos%20(6606).md)                                             | 6606   | Terminado                                           |

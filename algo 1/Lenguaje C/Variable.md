@@ -3,7 +3,10 @@ dia: 2024-04-03
 tags:
   - algo-1/Lenguaje-C
   - nota/facultad
+  - lenguajes-de-programación/lenguaje-Rust
+  - lenguajes-de-programación/lenguaje-zig
   - lenguajes-de-programación/lenguaje-c
+  - taller/Sintaxis
 ---
 # Definición
 ---
@@ -23,3 +26,33 @@ Uno de los componentes de una [[Computadora|computadora]] es su [[Memoria|memori
 3. Puede leerse para determinar en qué estado se encuentra
 
 Dadas estas características, cada celda de memoria se debe poder acceder para determinar o establecer su estado, para ello cada una de estas celdas posee una [[Dirección de memoria|dirección]], que la identifica de las otras, esta dirección es un número
+
+## En C
+---
+Para definir una variable en [[lenguajes de programación/lenguaje c/Índice|C]] se debe establecer el tipo de dato al cual pertenece. Seguidamente se debe dotar de un nombre a la variable, a ese nombre se lo denomina identificador. Un identificador se lo escribe teniendo en cuanta que es una secuencia de letras
+
+```c
+int numero;
+long int contador;
+char letra;
+float raiz;
+```
+
+## En Rust
+---
+Las variables en [[lenguajes de programación/lenguaje Rust/Índice|rust]] son inmutables por default, y su declaración es
+
+``` rust
+let variable: i32 = 43;
+```
+
+Donde se puede crear una variable mutable🔗, modificando la sintaxis🔗 de una variable inmutable🔗, de la siguiente forma
+
+``` rust
+let mut variable_mutable: i32 = 3;
+```
+
+La idea de tener que aclarar que una variable es mutable hace que seamos consientes de cuando una variable tiene que variar de valor
+
+## En Zig
+---

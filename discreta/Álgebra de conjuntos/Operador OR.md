@@ -6,6 +6,7 @@ tags:
   - discreta/Álgebra-de-conjuntos
   - discreta/Álgebra-proposicional
   - analisis-2/Nomenclatura
+  - lenguajes-de-programación/lenguaje-c
 aliases:
   - Disyunción
   - Unión de conjuntos
@@ -122,4 +123,26 @@ WHERE Pais = 'España' AND (NombrePais LIKE 'G%' OR NombrePais LIKE 'R%')
 			node[midway] {AND};
 	\end{tikzpicture}
 \end{document}
+```
+
+## En C
+---
+La operación `and` hace la distinción entre una álgebra booleana donde se ve de la siguiente forma 
+
+```c
+#include <stdbool.h>
+
+bool es_verdarero = true;
+bool es_falso = false;
+
+bool resultado = es_verdadero || es_falso; // true
+```
+
+La siguiente distinción es que permite manipular los [[Información#Bit|bits]] de un [[Representación de enteros#Representación en C|número]], donde se ve de esta forma 
+
+```c
+size_t flag1 = 0b01000000;
+size_t flag2 = 0b00000010;
+
+size_t resultado = flag1 | flag2; // 0b01000010
 ```

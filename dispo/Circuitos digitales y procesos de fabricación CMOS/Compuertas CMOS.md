@@ -6,7 +6,7 @@ tags:
 ---
 # Definición
 ---
-Para generar cualquier [[Compuerta|compuerta]] o cualquier [[Función lógica|función lógica]] a partir de una estructura CMOS, es decir tecnología [[Estructura Metal-Óxido-Semiconductor|MOS]] complementaria con la siguiente estructura
+Para generar cualquier [[Compuerta lógica|compuerta]] o cualquier [[Función|función lógica]] a partir de una estructura CMOS, es decir tecnología [[Estructura Metal-Óxido-Semiconductor|MOS]] complementaria con la siguiente estructura
 
 ```tikz
 \usepackage{circuitikz} 

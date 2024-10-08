@@ -7,7 +7,7 @@ tags:
 ---
 # Definición
 ---
-Se puede usar el sistema de [[Tipo de dato|tips]] para validar que [[Variable inmutable|algo]] sea mutable o compartido, pero no ambas a la vez
+Se puede usar el sistema de [[Tipo de dato|tips]] para validar que una [[Variable#En Rust|variable mutable]] sea mutable o compartido, pero no ambas a la vez
 
 | Tipo     | [[Ownership]]         | Alias | Mutable |
 | -------- | --------------------- | ----- | ------- |

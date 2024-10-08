@@ -6,6 +6,7 @@ tags:
   - discreta/Álgebra-de-conjuntos
   - discreta/Álgebra-proposicional
   - analisis-2/Nomenclatura
+  - lenguajes-de-programación/lenguaje-c
 aliases:
   - Conjunción
   - Intersección de conjuntos
@@ -72,6 +73,24 @@ FROM nombre_tabla
 WHERE condicion1 AND condicion2 AND condicion3 ...;
 ```
 
-### Combinarlo con el operador OR
+## En C
 ---
-Se puede combinar el operador AND con el [[Operador OR#En SQL|operador OR]], donde  
+La operación `and` hace la distinción entre una álgebra booleana donde se ve de la siguiente forma 
+
+```c
+#include <stdbool.h>
+
+bool es_verdarero = true;
+bool es_falso = false;
+
+bool resultado = es_verdadero && es_falso; // false
+```
+
+La siguiente distinción es que permite manipular los [[Información#Bit|bits]] de un [[Representación de enteros#Representación en C|número]], donde se ve de esta forma 
+
+```c
+size_t numero = 22;
+size_t mascara = 0b11110000;
+
+size_t resultado = numero & mascara; // 16
+```

@@ -4,10 +4,12 @@ tags:
   - algo-1/Introducción-a-la-programación
   - nota/facultad
   - lenguajes-de-programación
+aliases:
+  - Operador relacional
 ---
 # Definición
 ---
-Las [[algo 1/Introducción a la programación/Operaciones.md|operaciones]] relacionales son símbolos que se usan para comparar dos valores. Si el resultado de la operación es correcto la expresión considerada es verdadera, en caso contrario es falsa
+Las operadores relacionales son símbolos que se usan para comparar dos valores. Si el resultado de la operación es correcto la expresión considerada es verdadera, en caso contrario es falsa
 
 | Operación | Descripción       | Ejemplo     |
 | --------- | ----------------- | ----------- |

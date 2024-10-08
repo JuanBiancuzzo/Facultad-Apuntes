@@ -3,6 +3,7 @@ dia: 2024-03-21
 tags:
   - bdd/SQL
   - nota/facultad
+  - lenguajes-de-programación/lenguaje-c
 ---
 # Definición
 ---
@@ -19,3 +20,7 @@ SELECT columna
 FROM nombre_tabla
 WHERE columna IS NULL;
 ```
+
+## En C
+---
+En [[lenguajes de programación/lenguaje c/Índice|C]] `NULL` representa el estado invalido de un [[Puntero|puntero]] y como es un número, este es guardado con el valor `0`
