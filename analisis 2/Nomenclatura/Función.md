@@ -8,6 +8,9 @@ tags:
   - lenguajes-de-programación/lenguaje-c
   - lenguajes-de-programación/lenguaje-Rust
   - estructura/Álgebra-de-Boole
+aliases:
+  - Prototipo de una función#Expresión en C
+  - Firma de una función#Expresión en C
 ---
 # Definición
 ---

@@ -10,6 +10,7 @@ tags:
 aliases:
   - Integer
   - Int
+  - Entero
 ---
 # Definición
 ---

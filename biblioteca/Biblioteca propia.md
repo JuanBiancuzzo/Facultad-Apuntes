@@ -11,7 +11,7 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (77)
+#### Buscar (75)
 ---
 Programación:
 1. Database Internals: A Deep Dive into How Distributed Data Systems Work de Alex Petrov
