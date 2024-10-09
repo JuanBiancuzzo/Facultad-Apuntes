@@ -214,9 +214,8 @@ Vemos que si $X_c(j\omega) = 0$ para $|\omega| > W$ y si $2W < \omega_s$ las rep
 
 Vemos que aunque $X_c(j\omega) = 0$ para $|\omega| > W$ si $2W \ge \omega_s$ las replicas se solapan, es decir que existe [[Aliasing|aliasing]]
 
-En el caso que $x_c(t)$ no fuera de [[Señal de banda limitada|banda limitada]], las replicas se solaparían para cualquier elección de $\omega_s$
+En el caso que $x_c(t)$ no fuera de [[Señal de banda limitada|banda limitada]], las replicas se solaparían para cualquier elección de $\omega_s$. Esto da pie al [[Teorema Whittaker-Kotelnikov-Nyquist-Shannon|teorema Whittaker-Kotelnikov-Nyquist-Shannon]] 
 
-Esto da pie al [[Teorema Whittaker-Kotelnikov-Nyquist-Shannon|teorema Whittaker-Kotelnikov-Nyquist-Shannon]] ![[Teorema Whittaker-Kotelnikov-Nyquist-Shannon#Definición]]
 ## Modulo HAL para la placa STM32
 ---
 La [[Hardware Abstraction Layer|HAL]] usa una [[Struct|Estructura]] para declarar periféricos ADC, como se hace con los pines [[General Purpose Input Output|GPIO]] y los [[Interrupción por temporizador|temporizadores]]
@@ -329,3 +328,7 @@ typedef struct {
         * Este parámetro debe modificarse cuando no hay ninguna conversión en curso en los grupos regular e inyectado
             * ADC deshabilitado o ADC habilitado sin modo continuo o disparador externo que pueda iniciar una conversión
     * Esta parámetro se puede establecer en `ENABLE` o `DISABLE`
+
+### Modos de conversión
+---
+Existen algunas formas comunes de utilizar uno o más canales de entrada con un ADC

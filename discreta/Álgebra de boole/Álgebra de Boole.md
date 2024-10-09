@@ -15,7 +15,7 @@ Decimos que un álgebra de Boole tiene definido un orden natural cuando $$ x \le
 * [[Tabla de verdad|Tabla de verdad]]
 * Expresión algebraica por [[Suma de minitérminos|suma de minitérminos]]
 * Expresión algebraica por [[Producto de maxitérminos|producto de maxitérminos]]
-* Diagrama de [[Compuerta|compuertas]]
+* Diagrama de [[Compuerta lógica|compuertas]]
 
 
 ## Isomorfismo
