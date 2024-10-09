@@ -11,30 +11,30 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (75)
+#### Buscar (77)
 ---
 Programación:
-1. System design interview
-2. Database internals
-3. Understanding distributed systems
-4. Design gurus: Grokking the system design interview
-5. Site reliability engineering
-6. Software architecture: the hard parts
-7. Writing an interpreter in go de Thorsten Ball
-8. Writing a compiler in go de Thorsten Ball
-9. Unix and Linux system administration handbook (5 edición) de Evi Nemeth, Garth Snyder, Trent Hein, Ben Whaley, Dan Mackin
-10. An Introduction to Statistical Learning: with Applications in R (Springer Texts in Statistics) de Gareth James (Author), Daniela Witten (Author)
-11. Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People 1st Edition de Aditya Bhargava
-12. Introduction to Algorithms, 3rd Edition de Thomas H Cormen
-13. Refactoring: Improving the Design of Existing Code (2nd Edition) de Martin Fowler
-14. Understanding Distributed Systems: What every developer should know about large distributed applications de Roberto Vitillo
-15. The Signal and the Noise: Why So Many Predictions Fail--but Some Don't de Nate Silver
-16. The Art of Statistics: How to Learn from Data de David Spiegelhalter
-17. The Hundred-Page Machine Learning Book de Andriy Burkov
-18. Deep learning book https://www.deeplearningbook.org/
-19. Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications 1st Edition de Chip Huyen
-20. Software Architecture: The Hard Parts: Modern Trade-Off Analyses for Distributed Architectures 1st Edition de Neal Ford, Mark Richards, ...
-21. Software Engineering at Google: Lessons Learned from Programming Over Time 1st Edition de Titus Winters, Tome Manshreck y otro
+1. Database Internals: A Deep Dive into How Distributed Data Systems Work de Alex Petrov
+2. Understanding distributed systems
+3. Design gurus: Grokking the system design interview
+4. Site reliability engineering
+5. Software architecture: the hard parts
+6. Writing an interpreter in go de Thorsten Ball
+7. Writing a compiler in go de Thorsten Ball
+8. Unix and Linux system administration handbook (5 edición) de Evi Nemeth, Garth Snyder, Trent Hein, Ben Whaley, Dan Mackin
+9. An Introduction to Statistical Learning: with Applications in R (Springer Texts in Statistics) de Gareth James (Author), Daniela Witten (Author)
+10. Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People 1st Edition de Aditya Bhargava
+11. Introduction to Algorithms, 3rd Edition de Thomas H Cormen
+12. Refactoring: Improving the Design of Existing Code (2nd Edition) de Martin Fowler
+13. Understanding Distributed Systems: What every developer should know about large distributed applications de Roberto Vitillo
+14. The Signal and the Noise: Why So Many Predictions Fail--but Some Don't de Nate Silver
+15. The Art of Statistics: How to Learn from Data de David Spiegelhalter
+16. The Hundred-Page Machine Learning Book de Andriy Burkov
+17. Deep learning book https://www.deeplearningbook.org/
+18. Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications 1st Edition de Chip Huyen
+19. Software Architecture: The Hard Parts: Modern Trade-Off Analyses for Distributed Architectures 1st Edition de Neal Ford, Mark Richards, ...
+20. Software Engineering at Google: Lessons Learned from Programming Over Time 1st Edition de Titus Winters, Tome Manshreck y otro
+21. Crafting Interpreters de Robert Nystrom
 
 Hacking:
 1. Learn powershell in a month of lunches
