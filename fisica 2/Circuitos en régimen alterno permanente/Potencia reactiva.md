@@ -8,7 +8,11 @@ aliases:
   - Potencia fluctuante
 referencias:
   - "222"
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
 # Definición
 ---
 Esta potencia no se consume ni se genera en el sentido estricto, y en [[Circuito lineal|circuitos lineales]] solo aparece cuando existen [[Inductor|bobinas]] o [[Capacitor|capacitores]]. Por ende, es esta, es toda aquella potencia desarrollada en circuitos inductivos. Tiene unidades de $[\text{VAR}]$

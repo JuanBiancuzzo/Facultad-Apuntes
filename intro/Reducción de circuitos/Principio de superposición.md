@@ -8,7 +8,11 @@ aliases:
   - Teorema de superposición
 referencias:
   - "200"
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
 # Definición
 ---
 El principio de superposición es una herramienta matemática que permite descomponer un [[Función lineal|problema lineal]] o de otro tipo en dos o más subproblemas más sencillos, de tal manera que el problema original se obtiene como "superposición" de estos subproblemas más sencillos

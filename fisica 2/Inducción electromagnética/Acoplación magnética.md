@@ -9,7 +9,11 @@ aliases:
   - Bornes homologos#Bornes homólogos
 referencias:
   - "217"
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
 # Definición
 ---
 Se denomina acoplamiento magnético al fenómeno física por el cual el paso de una [[Corriente eléctrica|corriente eléctrica]] variable en el tiempo por una [[Inductor|bobina]] produce una [[Tensión|diferencia de potencial]] entre los extremos de las demás bobinas del [[Circuito eléctrico|circuito]]. Cuando este fenómeno se produce de forma indeseada se denomina diafonía

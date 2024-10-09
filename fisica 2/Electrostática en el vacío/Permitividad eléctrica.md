@@ -11,7 +11,11 @@ aliases:
   - Permitividad dieléctrica relativa#Permitividad dieléctrica relativa
 referencias:
   - "210"
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
 # Definición
 ---
 La permitividad eléctrica (llamada también constante dieléctrica para [[Dieléctrico|dieléctricos homogéneos]]) es un parámetro físico de los materiales que describe cuánto son afectados por un [[Campo eléctrico|campo eléctrico]]

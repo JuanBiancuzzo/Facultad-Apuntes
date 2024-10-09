@@ -10,7 +10,11 @@ referencias:
 aliases:
   - Relación constitutiva eléctrica#Para campo eléctrico
   - Relación constitutiva magnética#Para campo magnético
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
 # Definición
 ---
 Una ecuación constitutiva es una relación entre las variables termodinámicas o mecánicas de un sistema físico: presión, volumen, tensión, deformación, [[Temperatura|temperatura]], densidad, entropía, etcétera. Cada material o sustancia tiene una ecuación constitutiva específica, dicha relación solo depende de la organización molecular interna<sup><a href="#ref-215" style="color: inherit; text-decoration: none;">[215]</a></sup> 

@@ -10,7 +10,11 @@ aliases:
   - Ajuste lineal
 referencias:
   - "308"
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
 # Definición
 ---
 En [[Estadística|estadística]], la regresión lineal o ajuste lineal es un modelo matemático usado para aproximar la relación de dependencia entre una variable $y$, $m$ variables independientes $x_i$ con $m \in \mathbb{Z}^+$ u un término independientes $\epsilon$. Intenta resolver un [[Problema de regresión|problema de regresión]], dado $$ y = \beta_0 + \beta_1 x_1 + \cdots + \beta_m x_m + \epsilon $$ donde $\beta_i$ con $i \in [0, ~\cdots,~m]$, son parámetros del modelo

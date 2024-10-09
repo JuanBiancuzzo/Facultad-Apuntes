@@ -8,7 +8,11 @@ aliases:
   - Puerta lógica
 referencias:
   - "323"
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
 # Definición
 ---
 Una puerta lógica o compuerta lógica, es un dispositivo electrónico con una [[Función#Álgebra de Bool|función de tipo booleano]] u otros tipos

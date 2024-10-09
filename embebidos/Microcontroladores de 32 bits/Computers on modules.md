@@ -7,7 +7,11 @@ aliases:
   - CoM
 referencias:
   - "236"
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
 # Definición
 ---
 Es un tipo de [[Single board computer (SBC)|SBC]], y un subtipo de un [[Sistema embebido|sistema embebido]]. Una extensión del concepto de [[System on a Chip|SoC]] y esos caen entre una [[Computadora|computadora]] y un [[Microcontrolador|microcontrolador]]

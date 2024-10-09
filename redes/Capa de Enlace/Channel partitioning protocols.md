@@ -5,7 +5,11 @@ tags:
   - nota/facultad
 referencias:
   - "201"
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
 # Definición
 ---
 En esta, el [[Bandwidth|bandwidth]] del [[Acceso a una red por cable|enlace]] es compartido en el tiempo, en la [[Función periódica#Frecuencia|frecuencia]] y en código, a múltiples estaciones simultáneamente

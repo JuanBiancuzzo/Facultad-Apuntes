@@ -8,7 +8,11 @@ referencias:
   - "213"
 aliases:
   - Conservación de la carga#En electromagnetismo
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
 # Definición
 ---
 Las leyes de conservación son las leyes físicas que postulan que durante la evolución temporal de un [[Sistema aislado|sistema aislado]], ciertas magnitudes tienen un valor constante. Puesto que el universo entero constituye un sistema aislado, se le pueden aplicar diversas leyes de conservación<sup><a href="#ref-213" style="color: inherit; text-decoration: none;">[213]</a></sup> 

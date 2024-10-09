@@ -12,7 +12,11 @@ aliases:
   - Optoacoplador#Optoacoplador
   - Optoaislador#Optoacoplador
   - Optoisolator#Optoacoplador
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
 # Definición
 ---
 Un [[Microcontrolador|microcontrolador]] no debería hacer decisiones sin censar el mundo exterior, entonces podemos partir de la forma más simple de censar si un switch esta abierto o cerrado

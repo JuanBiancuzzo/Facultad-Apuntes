@@ -8,7 +8,11 @@ referencias:
 aliases:
   - Función potencial escalar#Potencial escalar
   - Función potencial vectorial#Potencial vectorial
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
 # Definición
 ---
 En física se define el potencial como una magnitud que puede ser escalar o vectorial, que sirve para describir la evolución o variación probable de otra magnitud. Generalmente los potenciales aparecen para describir a un campo físico y también aparece para medir otro potencial en termodinámica<sup><a href="#ref-232" style="color: inherit; text-decoration: none;">[232]</a></sup> 

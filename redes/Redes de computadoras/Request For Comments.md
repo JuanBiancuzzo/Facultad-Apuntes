@@ -8,7 +8,11 @@ tags:
   - nota/facultad
 referencias:
   - "255"
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
 # Definición
 ---
 Los Request for Comments, más conocidos por sus siglas RFC, son una serie de publicaciones del grupo de trabajo de [[Ingeniería|ingeniería]] de [[Internet|internet]] que describen diversos aspectos del funcionamiento de Internet y otras redes de computadoras, como protocolos, procedimientos, etc. y comentarios e ideas sobre estos. Cada RFC constituye un monográfico o memorando que ingenieros o expertos en la materia han hecho llegar al [[Internet Engineering Task Force|IETF]], el consorcio de colaboración técnica más importante en Internet, para que este sea valorado por el resto de la comunidad. De hecho, la traducción literal de RFC al español es "Petición de comentarios"<sup><a href="#ref-255" style="color: inherit; text-decoration: none;">[255]</a></sup> 

@@ -8,7 +8,11 @@ aliases:
   - MVP
 referencias:
   - "238"
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
 # Definición
 ---
 En desarrollo de producto, el producto viable mínimo (MVP) es un producto con suficientes características para satisfacer a los clientes iniciales, y proporcionar retroalimentación para el desarrollo futuro<sup><a href="#ref-238" style="color: inherit; text-decoration: none;">[238]</a></sup> 

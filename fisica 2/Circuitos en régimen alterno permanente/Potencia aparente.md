@@ -8,7 +8,11 @@ referencias:
   - "222"
 aliases:
   - Triángulo de potencia#Triángulo de potencia
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
 # Definición
 ---
 La [[Potencia|potencia]] compleja de un [[Circuito eléctrico|circuito eléctrico]] de [[Corriente alterna|corriente alterna]], identificada con la letra $S$, es la suma de la potencia que disipa dicho circuito conocida como [[Potencia|potencia activa]], que se designa con la letra $P$  y la potencia utilizada para la formación de los campos [[Campo eléctrico|eléctrico]] y [[Campo de inducción magnética|magnético]] de sus componentes, que fluctuará entre estos componentes y la fuente de [[Energía|energía]], conocida como [[Potencia reactiva|potencia reactiva]], que se designa con la letra $Q$

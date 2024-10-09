@@ -11,7 +11,11 @@ aliases:
   - Potencia activa
 referencias:
   - "222"
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
 # Definición
 ---
 Es la potencia capaz de transformar la [[Energía|energía]] en [[Trabajo|trabajo]]. Este potencial es, la que realmente es consumida por los [[Circuito eléctrico|circuitos]]. Se designa con la letra $P$ $$ P = \frac{dW}{dt} $$

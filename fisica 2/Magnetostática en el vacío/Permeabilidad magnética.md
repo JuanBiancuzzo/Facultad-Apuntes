@@ -9,7 +9,11 @@ referencias:
 aliases:
   - Permeabilidad magnética en el vacío#^permeabilidad-magnetica-en-el-vacio
   - Permeabilidad magnética relativa#^permeabilidad-magnetica-relativa
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
 # Definición
 ---
 En física se le denomina permeabilidad magnética a la capacidad que tienen los [[Conductor|conductores]] de afectar y ser afectados por los [[Campo de inducción magnética|campos magnéticos]], así como la capacidad de convertirse en fuentes de estos, es decir, [[Capacitancia|capacidad]] para crearlos sin la necesidad de [[Corriente eléctrica|corrientes]] externas<sup><a href="#ref-227" style="color: inherit; text-decoration: none;">[227]</a></sup> 

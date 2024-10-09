@@ -14,7 +14,11 @@ aliases:
   - PC#^PC
 referencias:
   - "220"
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
 # Definición
 ---
 La unidad de control, es uno de los tres bloques funcionales principales en los que se divide una [[Procesador|CPU]]. Su función es buscar las instrucciones en la [[Memoria|memoria]] principal, decodificarlas y ejecutarlas, empleando para ello la unidad de proceso<sup><a href="#ref-220" style="color: inherit; text-decoration: none;">[220]</a></sup> 

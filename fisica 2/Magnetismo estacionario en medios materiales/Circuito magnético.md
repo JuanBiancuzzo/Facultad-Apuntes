@@ -5,7 +5,11 @@ tags:
   - fisica-2/Magnetismo-estacionario-en-medios-materiales
 referencias:
   - "216"
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
 # Definición
 ---
 Se denomina circuito magnético a un dispositivo en el cual las [[Líneas de campo#Caso campo magnético|líneas de fuerza]] del [[Campo de inducción magnética|campo magnético]] se hallan canalizadas trazando un [[Camino#Circuito (Circuit)|camino cerrado]]
