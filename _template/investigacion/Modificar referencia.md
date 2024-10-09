@@ -4,6 +4,9 @@ const AGREGAR = 2;
 const SACAR = 3;
 
 const REFERENCIA_TEMPLATE = tp.file.find_tfile("_template/investigacion/Referencia - Template.md")
+const ETAPA_TEMPLATE = tp.file.find_tfile("_template/investigacion/Etapa - Template.md")
+
+const TEXTO_ETAPA = await app.vault.read(ETAPA_TEMPLATE);
 const TEXTO_REFERENCIA = await app.vault.read(REFERENCIA_TEMPLATE);
 
 const dv = app.plugins.plugins["dataview"].api;
@@ -59,22 +62,38 @@ try {
         referenciasFinal = await sacarReferencia(tArchivo, numReferencia);
     }
 
-    let contenido = await app.vault.read(tArchivo);
-    
-    let hayReferencias = referenciasFinal.length > 0;
-    let hayTopicoReferencias = incluye(contenido, TEXTO_REFERENCIA);
+    await app.fileManager.processFrontMatter(tArchivo, (frontmatter) => {
+        if (!frontmatter["etapa"]) {
+            frontmatter["etapa"] = "sin-empezar";
+        }
+    });
 
-    let nuevoContenido = contenido;
+    let nuevoContenido = await app.vault.read(tArchivo);
+    let hayReferencias = referenciasFinal.length > 0;
+    let indiceReferencias = incluye(nuevoContenido, TEXTO_REFERENCIA);
+    let hayTopicoReferencias = indiceReferencias > 0;
 
     if (hayReferencias && !hayTopicoReferencias) {
         // Agregar el topico
-        nuevoContenido = `${contenido}\n\n\n${TEXTO_REFERENCIA}`;
+        nuevoContenido = `${nuevoContenido}\n\n\n${TEXTO_REFERENCIA}`;
 
     } else if (!hayReferencias && hayTopicoReferencias) {
         // Sacar el topico
-        nuevoContenido = contenido.replace(TEXTO_REFERENCIA, "");
+        nuevoContenido = nuevoContenido.slice(0, indiceReferencias - `\n\n${TEXTO_REFERENCIA}`.length);
 
     } 
+
+    if (hayReferencias) {
+        let hayEtapa = incluye(nuevoContenido, TEXTO_ETAPA) > 0;
+        if (!hayEtapa) {
+            if (nuevoContenido.slice(0, 3) == "---") {
+                let index = nuevoContenido.slice(3).indexOf("---") + 7; // 3 del ---, 4 del ---\n
+                nuevoContenido = `${nuevoContenido.slice(0, index)}${TEXTO_ETAPA}\n${ nuevoContenido.slice(index)}`;
+            } else {
+                nuevoContenido = `${TEXTO_ETAPA}\n${nuevoContenido}`;
+            }
+        }
+    }
 
     await app.vault.modify(tArchivo, nuevoContenido);
 
@@ -102,7 +121,7 @@ function incluye(referencia, posibleIncluido) {
         } else if (empezo && lineaIgual) {
             contador++;
             if (contador >= posibleIncluido.length) {
-                return true;
+                return contador;
             }
         } else if (empezo && !lineaIgual) {
             empezo = false;
@@ -110,41 +129,38 @@ function incluye(referencia, posibleIncluido) {
         }
     }
     
-    return false;
+    return -1;
 }
 
 async function agregarReferencia(tArchivo, numReferencia) {
-    let referenciasFinal;
+    let referencias;
 
     await app.fileManager.processFrontMatter(tArchivo, (frontmatter) => {
-        if (!frontmatter["referencias"]) {
-            frontmatter["referencias"] = [ `${numReferencia}` ];
-        } else {
-            frontmatter["referencias"].push(`${numReferencia}`);
-        }
-
-        referenciasFinal = frontmatter["referencias"];
+        referencias = frontmatter["referencias"] ? frontmatter["referencias"] : [];
+        referencias.push(`${numReferencia}`);
+        frontmatter["referencias"] = referencias;
     });
 
-    return referenciasFinal;
+    return referencias;
 }
 
 async function sacarReferencia(tArchivo, numReferencia) {
-    let referenciasFinal;
+    let referencias;
 
     await app.fileManager.processFrontMatter(tArchivo, (frontmatter) => {
-        if (!frontmatter["referencias"]) {
+        referencias = frontmatter["referencias"] ? frontmatter["referencias"] : [];
+        let index = referencias.indexOf(`${numReferencia}`);
+        if (index < 0) {
             const mensaje = "No hay referencias en este archivo";
             console.log(mensaje);
             new Notice(mensaje);
         } else {
-            let index = frontmatter["referencias"].indexOf(`${numReferencia}`);
-            frontmatter["referencias"].splice(index, 1);
+            referencias.splice(index, 1);
+            console.log(referencias);
+            frontmatter["referencias"] = referencias;
         }
-
-        referenciasFinal = frontmatter["referencias"];
     });
 
-    return referenciasFinal;
+    return referencias;
 }
 _%>
