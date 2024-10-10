@@ -27,8 +27,7 @@ let materias = dv.pages("#materia")
 		return anio + 0.5 * cuatri;
 	}, 'desc')
     .map(({ key, rows }) => ({
-        titulo: `<h2> ${nombreCuatrimestre(key)} </h2> <hr>`,
-        items: rows.map(({ path, nombre, etapa, codigo, plan, descripcion, cuatri }) => ({
+        elementos: rows.map(({ path, nombre, etapa, codigo, plan, descripcion, cuatri }) => ({
             path: path,
             nombre: nombre,
             subnombre: `Plan ${plan} - ${codigo}`,
@@ -36,7 +35,10 @@ let materias = dv.pages("#materia")
             etapa: etapa,
             descripcionSimple: true,
             descripcion: descripcion,
-        }))
+        })),
+        mostrarTitulo: () => {
+            dv.el("div", `<h2> ${nombreCuatrimestre(key)} </h2> <hr>`);
+        }
     }));
 
-await dv.view("_scripts/dataview/mostrarElementos", { simple: false, elementos: materias });
+await dv.view("_scripts/dataview/mostrarElementos", { lista: materias, defaultVacio: "No hay materias" });

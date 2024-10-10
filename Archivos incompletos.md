@@ -58,5 +58,5 @@ let archivos = dv.pages(`#nota/investigacion`)
         descripcion: aliases.filter(alias => !alias.includes("#"))
     }));
 
-await dv.view("_scripts/dataview/mostrarElementos", { simple: true, elementos: archivos });
+await dv.view("_scripts/dataview/mostrarElementos", { lista: [{ elementos: archivos }], defaultVacio: "No hay archivos incompletas" });
 ```

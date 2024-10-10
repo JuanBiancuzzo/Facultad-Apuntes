@@ -41,15 +41,17 @@ let datos = dv.pages(`"${materia.file.folder}" and #resumen`)
         };
     })
     .map(({ resumen, archivos }) => ({
-        titulo: `<h2> ${resumen.file.folder.split("/").pop()} </h2> <hr>`,
-        extra: `> [!summary]- Resumen\n> ![[${resumen.file.path}#Resumen]]`,
-        items: archivos.map(({ path, nombre, aliases }) => ({
+        elementos: archivos.map(({ path, nombre, aliases }) => ({
             path: path,
             nombre: nombre,
             largo: (aliases.length >= 3),
             descripcionSimple: false,
             descripcion: aliases.filter(alias => !alias.includes("#"))
-        }))
+        })),
+        mostrarTitulo: () => {
+            dv.el("div", `<h2> ${resumen.file.folder.split("/").pop()} </h2> <hr>`);
+            dv.paragraph(`> [!summary]- Resumen\n> ![[${resumen.file.path}#Resumen]]`);
+        }
     }));
 
-    await dv.view("_scripts/dataview/mostrarElementos", { simple: false, elementos: datos });
+    await dv.view("_scripts/dataview/mostrarElementos", { lista: datos, defaultVacio: "Todavía no hay archivos" });

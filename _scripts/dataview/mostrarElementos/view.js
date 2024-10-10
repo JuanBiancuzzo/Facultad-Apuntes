@@ -1,30 +1,26 @@
-const { simple, elementos } = input;
+const { lista, defaultVacio = "" } = input;
+/**
+ * lista = [
+ *  {
+ *      elementos: [{
+ *          path,
+ *          nombre,
+ *          largo: true|false, default false
+ *          subnombre, (opcional)
+ *          etapa, (opcional)
+ *          descripcionSimple: true|false, default false
+ *          descripcion, (opcionl)
+ *      }, ...],
+ *      mostrarTitulo: function // muestra el título si es necesario
+ *  }
+ *  ...
+ * ] 
+ */
 
-if (simple) {
-    /* [{
-        path,
-        nombre,
-        largo: true|false, default false
-        subnombre, (opcional)
-        etapa, (opcional)
-        descripcionSimple: true|false, default false
-        descripcion, (opcionl)
-    }, ...] */
+for (let { elementos, mostrarTitulo } of lista) {
+    if (mostrarTitulo)
+        mostrarTitulo();
     dv.el("div", `<div class="grilla"> ${elementos.map(item => representarElemento(item)).join("")} </div><br>`);
-} else {
-    /* {
-        titulo,
-        items: [],
-        extra
-    } */
-    for (let { titulo, items, ...extras } of elementos) {
-        dv.el("div", titulo);
-        if ("extra" in extras) 
-            dv.paragraph(extras.extra);
-        let mostrar = items.map(item => representarElemento(item))
-            .join("");
-        dv.el("div", `<div class="grilla"> ${mostrar} </div><br>`);
-    }
 }
 
 function representarElemento(elemento) {

@@ -27,5 +27,5 @@ let datos = dv.pages(`#legal/documento`)
         descripcion: ""
     }));
 
-await dv.view("_scripts/dataview/mostrarElementos", { simple: true, elementos: datos });
+await dv.view("_scripts/dataview/mostrarElementos", { lista: [{ elementos: datos }] });
 ```

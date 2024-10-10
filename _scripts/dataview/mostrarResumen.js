@@ -36,4 +36,4 @@ let archivos = dv.pages(`#${tagRepresentante} and -#resumen`)
         descripcion: aliases.filter(alias => !alias.includes("#"))
     }));
 
-await dv.view("_scripts/dataview/mostrarElementos", { simple: true, elementos: archivos });
+await dv.view("_scripts/dataview/mostrarElementos", { lista: [{ elementos: archivos }] });
