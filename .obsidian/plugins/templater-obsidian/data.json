@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "_template ",
+  "templates_folder": "_template",
   "templates_pairs": [
     [
       "",
@@ -27,10 +27,10 @@
     "_template/tikz/TikzCircuit - Template.md",
     "_template/tikz/TikzNetting - Template.md",
     "_template/legal/Editar texto Artículo.md",
-    "_template/investigacion/Modificar referencia.md",
-    "_template/investigacion/Agregar cita.md",
+    "_template/investigacion/Agregar referencia.md",
     "_template/Regenerar readme - Template.md",
-    "_template/investigacion/Editar referencia - Template.md"
+    "_template/investigacion/Editar referencia - Template.md",
+    "_template/investigacion/Citar en linea.md"
   ],
   "startup_templates": [],
   "enable_ribbon_icon": false

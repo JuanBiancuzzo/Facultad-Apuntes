@@ -8,7 +8,7 @@
     {
       "id": "quickadd:choice:e024d912-7e83-44a5-a17c-6175a73cc40f",
       "icon": "book",
-      "name": "Nuevo Tema",
+      "name": "Nuevo Tema de Investigación",
       "mode": "any"
     },
     {
@@ -30,12 +30,6 @@
       "mode": "any"
     },
     {
-      "id": "templater-obsidian:_template/investigacion/Modificar referencia.md",
-      "icon": "bookmark",
-      "name": "Agregar cita",
-      "mode": "any"
-    },
-    {
       "id": "quickadd:choice:c0cdf993-4976-486c-be58-2935f90f64aa",
       "icon": "book-open",
       "name": "Agregar Libro",
@@ -45,6 +39,12 @@
       "id": "quickadd:choice:b0bb0116-3d55-41a2-9fd3-afc8cf2db966",
       "icon": "archive",
       "name": "Nuevo paper",
+      "mode": "any"
+    },
+    {
+      "id": "templater-obsidian:_template/investigacion/Agregar referencia.md",
+      "icon": "bookmark",
+      "name": "Agregar referencia",
       "mode": "any"
     }
   ],
