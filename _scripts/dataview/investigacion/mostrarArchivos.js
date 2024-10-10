@@ -72,11 +72,11 @@ let archivos = dv.pages(`#${tagRepresentante} and -#índice`)
             console.log(subTema);
             let tema = subTema.file.folder.split("/").pop();
             tema = `${tema.charAt(0).toUpperCase()}${tema.slice(1)}`;
-            dv.el("div", `<h2> ${tema} </h2> <hr>`);
+            dv.el("div", `<h3> ${tema} </h3> <hr>`);
             dv.paragraph(`> [!summary]- Resumen\n> ![[${subTema.file.path}#Resumen]]`);
         },
         mostrarFinal: () => {
-            
+
         }
     }));
 
