@@ -25,6 +25,7 @@
 
 	let infoLibro = {};
 	let nombreArchivo;
+	let cover;
 	try {
         infoLibro = await tp.user.cita().citar(tp, tipoCita, numReferencia + 1);
 
@@ -42,8 +43,7 @@
 		let generador = generadorKeyValueCover(datos);
 
 		let nombreImagen = `${nombreArchivo}.${EXT}`;
-		let cover = await guardarImagen(generador, nombreImagen, SIZE.MEDIUM);	
-		tR += `cover: ${cover}\n`;
+		cover = await guardarImagen(generador, nombreImagen, SIZE.MEDIUM);	
 
 	} catch ({ name: nombre, message: mensaje }) {
 		const eliminar = tp.user.eliminar();
@@ -61,6 +61,8 @@
         }
 	}
 
+	if (!cover) cover = "";
+	tR += `cover: ${cover}\n`;
 	let aliases = (infoLibro.capitulos ? infoLibro.capitulos : [])
 		.map(infoCapitulo => {
 			let descripcion = describir.capitulo(infoCapitulo);

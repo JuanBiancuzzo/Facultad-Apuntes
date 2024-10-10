@@ -332,3 +332,19 @@ typedef struct {
 ### Modos de conversión
 ---
 Existen algunas formas comunes de utilizar uno o más canales de entrada con un ADC
+
+#### Single channel/Single Conversion
+---
+
+
+#### Multi-channel/Single Conversion
+---
+
+
+#### Single channel/Continuous Conversion
+---
+
+
+#### Multi-channel/Continuous Conversion
+---
+

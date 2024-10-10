@@ -11,30 +11,20 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (75)
+#### Buscar (79)
 ---
 Programación:
-1. Database Internals: A Deep Dive into How Distributed Data Systems Work de Alex Petrov
-2. Understanding distributed systems
-3. Design gurus: Grokking the system design interview
-4. Site reliability engineering
-5. Software architecture: the hard parts
-6. Writing an interpreter in go de Thorsten Ball
-7. Writing a compiler in go de Thorsten Ball
-8. Unix and Linux system administration handbook (5 edición) de Evi Nemeth, Garth Snyder, Trent Hein, Ben Whaley, Dan Mackin
-9. An Introduction to Statistical Learning: with Applications in R (Springer Texts in Statistics) de Gareth James (Author), Daniela Witten (Author)
-10. Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People 1st Edition de Aditya Bhargava
-11. Introduction to Algorithms, 3rd Edition de Thomas H Cormen
-12. Refactoring: Improving the Design of Existing Code (2nd Edition) de Martin Fowler
-13. Understanding Distributed Systems: What every developer should know about large distributed applications de Roberto Vitillo
-14. The Signal and the Noise: Why So Many Predictions Fail--but Some Don't de Nate Silver
-15. The Art of Statistics: How to Learn from Data de David Spiegelhalter
-16. The Hundred-Page Machine Learning Book de Andriy Burkov
-17. Deep learning book https://www.deeplearningbook.org/
-18. Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications 1st Edition de Chip Huyen
-19. Software Architecture: The Hard Parts: Modern Trade-Off Analyses for Distributed Architectures 1st Edition de Neal Ford, Mark Richards, ...
-20. Software Engineering at Google: Lessons Learned from Programming Over Time 1st Edition de Titus Winters, Tome Manshreck y otro
-21. Crafting Interpreters de Robert Nystrom
+1. Understanding Distributed Systems: What every developer should know about large distributed applications de Roberto Vitillo
+2. The Signal and the Noise: Why So Many Predictions Fail--but Some Don't de Nate Silver
+3. The Art of Statistics: How to Learn from Data de David Spiegelhalter
+4. The Hundred-Page Machine Learning Book de Andriy Burkov
+5. Deep learning book https://www.deeplearningbook.org/
+6. Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications 1st Edition de Chip Huyen
+7. Software Architecture: The Hard Parts: Modern Trade-Off Analyses for Distributed Architectures 1st Edition de Neal Ford, Mark Richards, ...
+8. Software Engineering at Google: Lessons Learned from Programming Over Time 1st Edition de Titus Winters, Tome Manshreck y otro
+9. Crafting Interpreters de Robert Nystrom
+10. The pragmatic programmer de Andy Hunt y Dave Thomas
+11. Site reliability engineering
 
 Hacking:
 1. Learn powershell in a month of lunches
@@ -66,6 +56,7 @@ Psico (?):
 10. El fin de la masculinidad, Cómo amar en el siglo XXI de Luciano Lutereau
 11. Hombres que ya no hacen sufrir por amor, transformando las masculinidades de Coral Herrera
 12. The master and his emissary de Iain McGilchrist
+13. Blink: The Power of Thinking Without Thinking de Malcolm Gladwell
 
 Matemática:
 1. In pursuit of the unknown de Ian Stewart
@@ -98,8 +89,25 @@ Electronica:
 1. The FPGA programming handbook de Frank Bruno y Guy Eschemann
 2. Troubleshooting analog circuits de Robert A. Pease
 
-Diseño/Mecánica:
+Mecánica:
 1. Shape Up de Ryan Singer
 2. Making design desitions de Tommy G
 3. How to make sense of any mess de Abby Covert
 4. Build de Tony Fadell
+5. Mechanical Design for the Stage de Alan Hendrickson
+
+Diseño:
+1. The Branding Method - Carolina Kairos  
+2. Drawing Attention - Victionary  
+3. La paleta perfecta para diseño gráfico e ilustración - Sara Caldas  
+4. El camino del artista - Julia Cameron  
+5. Start With Why - Simon Sinek  
+6. Zag - Marty Neumeier
+
+Storytelling:
+1. Save the cat de Blake Snyder
+2. Filterworld de Kyle Chayka
+3. The Hero´s Journey de Joseph Campbell
+4. The writer´s journey de Christopher Vogler
+5. Story de Robert McKee
+6. Patterns de Rod Serling
