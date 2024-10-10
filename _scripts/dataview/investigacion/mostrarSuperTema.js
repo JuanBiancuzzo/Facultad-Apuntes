@@ -11,6 +11,6 @@ if (posiblesSupertema.length == 1) {
     let superTema = posiblesSupertema[0];
     let nombre = superTema.file.folder.split("/").pop();
     nombre = `${nombre.charAt(0).toUpperCase()}${nombre.slice(1)}`;
-    const texto = `Se tiene como super Tema a ${nombre} [[${superTema.file.path}|?]]`;
+    const texto = `Se tiene como super Tema a [[${nombre}|${superTema.file.path}]]`;
     dv.paragraph(` > [!tldr]- Supertema\n > ${texto}`);
 }
