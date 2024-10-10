@@ -9,11 +9,14 @@ aliases:
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 Vamos a investigar como funciona HUGO un [[Static Site Generator|Static Site Generator]], y entender como es que funciona.
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

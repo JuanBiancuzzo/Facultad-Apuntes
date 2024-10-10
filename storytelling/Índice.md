@@ -7,7 +7,6 @@ estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
@@ -15,6 +14,10 @@ Aprender sobre conceptos para poder escribir y contar historias de forma más in
 
 Basándonos también en el video:
 * [50 Lessons from ARCANE WRITERS](https://www.youtube.com/watch?v=dcjB2DU5MdU)
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

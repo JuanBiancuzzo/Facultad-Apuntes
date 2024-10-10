@@ -7,12 +7,15 @@ tags:
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 Vamos a explorar como funciona un compilador, y nos vamos a basar en la serie 
 * [Compiler Design](https://youtube.com/playlist?list=PLBlnK6fEyqRjT3oJxFXRgjPNzeS-LFY-q&si=cC-_dVkp4bY_VGsi)
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

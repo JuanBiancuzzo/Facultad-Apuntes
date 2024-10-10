@@ -7,13 +7,16 @@ estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 Para aprender como animar personajes usando la herramienta de Blender, nos basáremos en los trabajos de:
 * [SouthernShotty](https://www.youtube.com/@SouthernShotty)
 * [grabbitt](https://www.youtube.com/@grabbitt)
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

@@ -7,7 +7,6 @@ estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
@@ -15,6 +14,10 @@ Intención de ver como poder parsear el código de rust para usarlo en las macro
 
 Basándonos en el libro
 * [The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/book/index.html)
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

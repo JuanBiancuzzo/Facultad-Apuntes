@@ -10,11 +10,14 @@ aliases:
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 La intención es explorar todo el lenguaje go y como este resuelve los problemas
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

@@ -7,11 +7,14 @@ estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 La idea es aprender la idea general de usar blender.
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

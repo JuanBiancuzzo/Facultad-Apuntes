@@ -7,12 +7,15 @@ tags:
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 Vamos a investigar sobre la rama de la matemática que es la teoría de la [[Información|información]], basándonos en la serie
 * [Information Theory](https://youtube.com/playlist?list=PL5XwKDZZlwaZi041-mB8zd6APQjb5AkBv&si=aP4MAZlj5UY2rZ04)
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

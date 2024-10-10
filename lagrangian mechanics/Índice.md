@@ -7,7 +7,6 @@ estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
@@ -15,6 +14,10 @@ Se va intentar investigar como es este nuevo paradigma para encontrar las ecuaci
 
 Basándonos en la serie
 * [Clases IB en línea: Mecánica clásica](https://youtube.com/playlist?list=PLv0-vSkgrxj_Uv65oZV9ilrWZ2xUNbaw8&si=E4qJ3Kusx4E8GTyL)
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

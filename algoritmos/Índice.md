@@ -7,11 +7,14 @@ tags:
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 Vamos a investigar [[Algoritmo|algoritmos]] que son interesantes, y más que nada que sea un lugar para agrupar algoritmos 
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

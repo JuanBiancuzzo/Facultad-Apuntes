@@ -7,11 +7,14 @@ estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 Comprender como descomponer una función, posiblemente diferencial, de forma continua, es decir que para recrearla, se tenga que calcular a partir de una integral de su descomposición.
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

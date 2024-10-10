@@ -7,11 +7,14 @@ estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 Vamos a investigar la matemática de la lógica, basándonos en el video [A crash course in formal logic](https://youtu.be/dM7wmyPtsa8?si=99cyvFtR4_rUZ50y)
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

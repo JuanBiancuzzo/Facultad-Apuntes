@@ -7,12 +7,15 @@ estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 La generación de contenido usando limitaciones, permite obtener un resultado que sí o sí cumpla las limitaciones puestas, basándonos en el video
 * [Procedural Generation using Constraint Satisfaction](https://youtu.be/gKNJKce1p8M?si=Ka5a-6Uku_bMwG-3)
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

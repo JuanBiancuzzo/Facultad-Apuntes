@@ -9,11 +9,14 @@ aliases:
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 En el mismo sentido que [[matemática/integrator/métodos de Runge-Kutta/Índice|Runge-Kutta methods]] vamos a ver como resolver [[Lagrangian mechanics/Índice|Lagrangian mechanics]] de forma numérica, con sistemas de corrección.
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

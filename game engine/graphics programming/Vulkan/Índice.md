@@ -7,7 +7,6 @@ estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
@@ -15,6 +14,10 @@ Simplemente entender su funcionamiento, y poder tener un lugar donde encontrar c
 
 Basándonos en el contenido de:
 * [Brendan Galea](https://www.youtube.com/@BrendanGalea)
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

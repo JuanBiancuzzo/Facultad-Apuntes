@@ -7,7 +7,6 @@ estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
@@ -17,6 +16,10 @@ Para aprender como animar personajes usando la herramienta de Blender, nos basá
 Y siguiendo las series de videos:
 * [Blender Procedural Nodes](https://youtu.be/O3gLBhC353Y?si=RJoWg3tKUzVtm3qx)
 * [Shading series of Ducky3D](https://youtube.com/playlist?list=PLNShHVjao84dtGx6VxFhkeSDPX1gt4NuS&si=FIgNOiZ4jnpOfPF2)
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

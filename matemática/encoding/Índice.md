@@ -7,11 +7,14 @@ tags:
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 Vamos a investigar formas para encodear mensajes sin perder [[Información|información]] o perdiendo lo mínimo posible
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

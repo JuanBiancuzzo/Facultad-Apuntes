@@ -7,11 +7,14 @@ estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 Vamos a investigar una de las forma de generar resultado a partir de datos, más conocida
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

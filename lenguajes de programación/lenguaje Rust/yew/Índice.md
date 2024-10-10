@@ -7,12 +7,15 @@ estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 Una librería de Rust similar a [React](https://es.react.dev/). Basado en la serie:
 * [Learn Yew.rs - Building Web Applications with Rust](https://youtube.com/playlist?list=PLrmY5pVcnuE_R5qJ0o30eGw77bWmnrUtL&si=JYbN_Dv0Y_39UqRf)
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

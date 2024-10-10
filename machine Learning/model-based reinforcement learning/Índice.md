@@ -7,12 +7,15 @@ estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 Inteligencias artificiales que crean/usan un modelo de la "realidad" para informar sus acciones, nos basáremos en el video
 * [2 Years of My Research Explained in 14 Minutes](https://youtu.be/s8RqGlU5HEs?si=fwbRRutRbXE5iYKK)
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

@@ -9,11 +9,14 @@ aliases:
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 Se va a investigar las reglas APA que se va a usar para citar cualquier contenido nuevo hecho en esta página
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

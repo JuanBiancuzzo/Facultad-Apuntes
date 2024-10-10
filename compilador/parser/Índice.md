@@ -9,7 +9,6 @@ aliases:
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
@@ -17,6 +16,10 @@ Vamos a investigar como crear un parser y como crear uno, ya sea manual o autom�
 * [Building a Parser from scratch](https://youtube.com/playlist?list=PLGNbPb3dQJ_5FTPfFIg28UxuMpu7k0eT4&si=N-33h-Cr6uyvjryb)
 * [Parsing Algorithms](https://youtube.com/playlist?list=PLGNbPb3dQJ_6aPNnlBvXGyNMlDtNTqN5I&si=zQhvQe_9hpehq7jv)
 * [Introduction to Writing Modern Parsers](https://youtube.com/playlist?list=PL_2VhOvlMk4XDeq2eOOSDQMrbZj9zIU_b&si=madJAWQeyaMj2OGo)
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

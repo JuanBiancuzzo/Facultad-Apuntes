@@ -7,11 +7,14 @@ estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 Vamos a explorar diferentes técnicas que se aprovechan de la estructura de los [[Game engine/Índice|game engines]] para tener resultado muy buenos con altos rendimientos
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

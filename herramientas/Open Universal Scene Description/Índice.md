@@ -7,11 +7,14 @@ tags:
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 Vamos a investigar la forma de representar de forma estandarizada una escena en distintos softwares, basándonos en la documentación en [openUSD](https://openusd.org/release/index.html)
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

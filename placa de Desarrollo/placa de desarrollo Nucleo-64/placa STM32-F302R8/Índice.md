@@ -7,11 +7,14 @@ tags:
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 Esta placa de desarrollo, es la que estoy usando en [[Taller de sistemas embebidos (TA134)|taller de sistemas embebidos]]
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

@@ -7,11 +7,14 @@ tags:
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 Quiero ver todos los elementos de la física que me interesan pero no llegue a ver por mi cuenta
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

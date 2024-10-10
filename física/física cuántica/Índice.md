@@ -10,13 +10,16 @@ aliases:
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
 Vamos a explorar la rama de la física que es la cuántica, basándonos inicialmente en la serie de videos del MIT 
 * [MIT 8.04 Quantum Physics I, Spring 2013](https://youtube.com/playlist?list=PLUl4u3cNGP61-9PEhRognw5vryrSEVLPr&si=8olaid_LWRjMqInc)
 * [MIT 8.04 Quantum Physics I, Spring 2016](https://youtube.com/playlist?list=PLUl4u3cNGP60cspQn3N9dYRPiyVWDd80G&si=2azJ8XCabMF7-He-)
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos

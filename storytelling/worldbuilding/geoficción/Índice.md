@@ -7,7 +7,6 @@ estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
-await dv.view("_scripts/dataview/investigacion/mostrarSubTemas", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
@@ -15,6 +14,10 @@ La intención es tener un lugar para investigar como crear desde sistemas solare
 
 Basándonos en la serie
 * [Worldbuilder's Log](https://youtube.com/playlist?list=PLduA6tsl3gyiX9fFJHi9qqq4RWx-dIcxO&si=JjqmY66BTYLc9klj)
+
+## Resumen
+---
+Pendiente...
 
 
 ## Archivos
