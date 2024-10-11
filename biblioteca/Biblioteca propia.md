@@ -11,7 +11,7 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (79)
+#### Buscar (88)
 ---
 Programación:
 1. Understanding Distributed Systems: What every developer should know about large distributed applications de Roberto Vitillo
@@ -25,6 +25,13 @@ Programación:
 9. Crafting Interpreters de Robert Nystrom
 10. The pragmatic programmer de Andy Hunt y Dave Thomas
 11. Site reliability engineering
+12. Web development for beginners de White Belt Mastery
+13. Javascript for kids de Nick Morgan
+14. Skills of a successful software engineer de Fernando Doglio
+15. Pro MERN Stack de Vasan Subramanian
+16. The C programming language handbook de Flavio Copes
+17. Algorithms, notes for professionals ver en Goalkicker.com
+18. Introducing python moderm computing in simple packages de Bill Lubanovic
 
 Hacking:
 1. Learn powershell in a month of lunches
@@ -88,6 +95,8 @@ Física:
 Electronica:
 1. The FPGA programming handbook de Frank Bruno y Guy Eschemann
 2. Troubleshooting analog circuits de Robert A. Pease
+3. The Art of Electronics (3era edición) de Paul Horowitz y Winfields Hill
+4. How to Diagnose and Fix Everything Electronic, Second Edition 2nd Edition de Michael Jay Geier
 
 Mecánica:
 1. Shape Up de Ryan Singer
@@ -111,3 +120,4 @@ Storytelling:
 4. The writer´s journey de Christopher Vogler
 5. Story de Robert McKee
 6. Patterns de Rod Serling
+
