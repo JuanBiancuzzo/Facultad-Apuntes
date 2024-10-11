@@ -3,7 +3,7 @@ dia: 2024-07-08
 tags:
   - índice
   - animation
-estado: Falta resumir
+estado: Estamos avanzando con algunos conceptos, pero todavía falta la mayor parte del conocimiento trandicional o básico
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

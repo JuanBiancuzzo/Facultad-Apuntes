@@ -10,6 +10,8 @@ await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.c
 ```
 # ¿Qué se va a investigar?
 ---
+Vamos a explorar la herramienta de Git, basándonos en el video
+* [How to be a git expert](https://www.youtube.com/watch?v=hZS96dwKvt0&list=TLPQMTExMDIwMjSZSAC66p_HEg&index=2)
 
 
 ## Resumen

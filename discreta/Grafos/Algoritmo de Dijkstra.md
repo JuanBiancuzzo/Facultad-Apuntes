@@ -8,7 +8,7 @@ tags:
 ---
 # Definición
 ---
-El [[Algoritmo|algoritmo]] de **Dijkstra** busca, para un vértice $v$, el [[Camino|camino]] de [[Longitud de un camino|longitud]] mínima hacia el resto de vértices del [[Grafo|grafo]]. Para hacerlo, requiere los siguientes elementos
+El [[algoritmos/Índice|algoritmo]] de **Dijkstra** busca, para un vértice $v$, el [[Camino|camino]] de [[Longitud de un camino|longitud]] mínima hacia el resto de vértices del [[Grafo|grafo]]. Para hacerlo, requiere los siguientes elementos
 * Un vector de vértices visitados del grafo $V$
 * Un vector de vértices no visitados del grafo $NV$
 * Una tabla de distancias en la que, para cada nodo, se guarda su distancia al origen y el vértice por el cual se llega a él. Inicialmente, la distancia a cada nodo será infinito, excepto el vértice del origen. La columna de vértice anterior estará inicialmente vacía

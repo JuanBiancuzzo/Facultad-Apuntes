@@ -1,13 +1,11 @@
 ---
-dia: 2024-07-18
+dia: 2024-10-11
 etapa: sin-empezar
-referencias:
-  - "165"
-tags:
-  - nota/investigacion
-  - game-engine/graphics-programming
-aliases:
-  - DoG
+referencias: 
+ - "320"
+tags: 
+ - algoritmos
+ - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

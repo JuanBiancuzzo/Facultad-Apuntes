@@ -8,9 +8,14 @@ const ETAPAS = {
     ["terminado"]: 4
 };
 
-let archivos = dv.pages(`#nota/investigacion`)
+let archivos = dv.pages(`#nota`)
     .flatMap(archivo => {
         let resultado = [];
+        if (archivo.tipoCita == "Libro" || archivo.tipoCita == "Paper")
+            return resultado;
+        if (!archivo.etapa || archivo.etapa == "terminado")
+            return resultado;
+        
         let aliasesActual = archivo.aliases ? archivo.aliases : [];
         let referenciasActuales = [];
         if (archivo.referencias) {
@@ -44,7 +49,6 @@ let archivos = dv.pages(`#nota/investigacion`)
 
         return resultado;
     })
-    .sort(({ referencias, ..._ }) => referencias ? dv.array(referencias).min() : 0)
     .sort(({ etapa, ..._ }) => etapa in ETAPAS ? ETAPAS[etapa] : -1)
     .map(({ path, nombre, etapa, aliases, referencias }) => ({
         path: path,

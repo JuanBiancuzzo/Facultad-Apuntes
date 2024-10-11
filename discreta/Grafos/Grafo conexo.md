@@ -33,7 +33,7 @@ Un grafo se llama orientable, si puede introducirse una orientación que lo conv
 
 Recordemos que un puente es un vértice que une dos componentes conexas, de modo que si eliminamos el vértice, el grafo se vuelve disconexo
 
-La demostración de la tercera afirmación, se realiza a través de un [[Algoritmo|algoritmo]]
+La demostración de la tercera afirmación, se realiza a través de un [[algoritmos/Índice|algoritmo]]
 
 1. Elegimos una arista inicial
 2. Orientamos un ciclo al que pertenezca la arista, como no hay puentes, existe al menos uno

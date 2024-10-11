@@ -11,7 +11,7 @@ aliases:
 ---
 # Definición
 ---
-La segunda regla permite detectar las colisiones y reducir significativamente el tiempo perdido. Para determinar el tiempo de espera antes de volver a probar de transmitir, se utiliza el [[Algoritmo|algoritmo]] de binary exponential backoff
+La segunda regla permite detectar las colisiones y reducir significativamente el tiempo perdido. Para determinar el tiempo de espera antes de volver a probar de transmitir, se utiliza el [[algoritmos/Índice|algoritmo]] de binary exponential backoff
 
 Cuando se retransmite un [[Paquete|paquete]] que ya experimento $n$ colisiones, el nodo toma un valor de $k$ aleatorio entre $0$ y $2n - 1$. Cuantas más colisiones ocurran, más tiempo de espera habrá. Para [[Ethernet]], el tiempo de espera será de $512 ~ K$ bit times. (es decir, el tiempo necesario para enviar $512 ~ K$ bits)
 

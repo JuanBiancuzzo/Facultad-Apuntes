@@ -11,7 +11,7 @@ aliases:
 ---
 Un [[Routing algorithms|algoritmo de ruteo]] centralizado computará los caminos de menos costo utilizando el conocimiento global de la [[Red|red]]. Se deberán conocer todos los [[Router|routers]], [[Red#Redes de accesos|enlaces]], y sus costos, para esto todos los nodos realizan un [[Internet Protocol Versión 4#Broadcast|broadcast]] de su información
 
-El [[algo 1/Introducción a la programación/Algoritmo|algoritmo]] utilizado es el [[Algoritmo de Dijkstra|algoritmo de Dijkstra]]. Una vez finalizado el algoritmo, la tabla de envío de cada nodo puede construirse a partir de almacenar, para cada destino posible, el próximo nodo en el camino de menor longitud. La complejidad de este algoritmo es del [[Complejidad computacional|orden]] de $O\left( n^2 \right)$ 
+El [[algoritmos/Índice|algoritmo]] utilizado es el [[Algoritmo de Dijkstra|algoritmo de Dijkstra]]. Una vez finalizado el algoritmo, la tabla de envío de cada nodo puede construirse a partir de almacenar, para cada destino posible, el próximo nodo en el camino de menor longitud. La complejidad de este algoritmo es del [[Complejidad computacional|orden]] de $O\left( n^2 \right)$ 
 
 Los algoritmos de ruteo pueden fallar, causando oscilaciones, cuando el costo de los enlaces depende de la cantidad de tráfico. Una solución es decir que el algoritmo no dependerá del tráfico, pero esta solución no es aceptable
 

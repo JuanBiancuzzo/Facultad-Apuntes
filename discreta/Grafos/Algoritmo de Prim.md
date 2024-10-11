@@ -7,7 +7,7 @@ tags:
 ---
 # Definición
 ---
-El [[Algoritmo|algoritmo]] de Prim busca generar un [[Árbol generador|árbol generador]] mínimo, esto es, a partir de un [[Grafo pesado|grafo pesado]], genera un árbol generador que minimice la suma del peso de sus aristas
+El [[algoritmos/Índice|algoritmo]] de Prim busca generar un [[Árbol generador|árbol generador]] mínimo, esto es, a partir de un [[Grafo pesado|grafo pesado]], genera un árbol generador que minimice la suma del peso de sus aristas
 
 1. Parto de un vértice cualquiera del [[Grafo|grafo]]
 2. Mientras queden vértices sin conectar, agrego la arista mínima, conectada con el grafo actual, que incida sobre un vértice aún no seleccionado

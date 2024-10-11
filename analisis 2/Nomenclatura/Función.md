@@ -53,7 +53,7 @@ Es una función cuyo [[Conjunto|conjunto]] de llegada (el dominio) y el conjunto
 
 ## Expresión en C
 ---
-Se puede representar un [[algo 1/Introducción a la programación/Algoritmo|algoritmo]]
+Se puede representar un [[algoritmos/Índice|algoritmo]]
 
 ```c
 tipoDeDato nombreAlgoritmo(tipoDeDato variable1, ...) {

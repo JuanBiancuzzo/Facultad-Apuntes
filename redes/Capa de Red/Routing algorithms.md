@@ -8,7 +8,7 @@ aliases:
 ---
 # Definición
 ---
-El objetivo de un [[algo 1/Introducción a la programación/Algoritmo|algoritmo]] de ruteo es el de determinar el camino que minimice el costo entre remitentes y receptores. Se puede utilizar un [[Grafo|grafo]] para formular el problema, donde los nodos serán los [[Router|routers]] y las aristas serán los enlaces entre los routers. Cada enlace tendrá un costo asociado a múltiples factores, como el largo del enlace, la velocidad del mismo, el costo monetario de utilizarlo, etc. Diremos que dos nodos son vecinos si existe una arista directa que los une. Notemos que si todas las aristas tienen el mismo costo, entonces el camino más corto se transforma en el camino más eficiente
+El objetivo de un [[algoritmos/Índice|algoritmo]] de ruteo es el de determinar el camino que minimice el costo entre remitentes y receptores. Se puede utilizar un [[Grafo|grafo]] para formular el problema, donde los nodos serán los [[Router|routers]] y las aristas serán los enlaces entre los routers. Cada enlace tendrá un costo asociado a múltiples factores, como el largo del enlace, la velocidad del mismo, el costo monetario de utilizarlo, etc. Diremos que dos nodos son vecinos si existe una arista directa que los une. Notemos que si todas las aristas tienen el mismo costo, entonces el camino más corto se transforma en el camino más eficiente
 
 ## Clasificación
 ---

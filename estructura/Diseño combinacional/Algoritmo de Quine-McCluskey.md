@@ -8,7 +8,7 @@ tags:
 ---
 Tiene las mismas propiedades que el [[Mapa de Karnaugh]] pero se puede implementar en software. Por lo tanto podemos reducir [[Función|funciones]] donde la cantidad de variables de entrada son mayores a 5.
 
-Este [[algo 1/Introducción a la programación/Algoritmo|algoritmo]] se aprovecha de que para saber si dos [[Implicante|implicantes]] son vecinos, entonces su representación en binario tiene un único valor distintio. Por lo tanto vamos construyendo de los implicantes más chicos a los más grandes, y aquellos implicantes que no se hayan usado para hacer implicantes más grandes, serán los [[Implicante primo|implicantes primos]].
+Este [[algoritmos/Índice|algoritmo]] se aprovecha de que para saber si dos [[Implicante|implicantes]] son vecinos, entonces su representación en binario tiene un único valor distintio. Por lo tanto vamos construyendo de los implicantes más chicos a los más grandes, y aquellos implicantes que no se hayan usado para hacer implicantes más grandes, serán los [[Implicante primo|implicantes primos]].
 
 # Ejemplo
 ---

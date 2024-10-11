@@ -16,7 +16,7 @@ El nombre de la variable es la forma habitual de hacer referencia al valor almac
 
 ## Punto de vista de la Algoritmia
 ---
-Una variable es una entidad que puede almacenar un valor de un determinado [[Tipo de dato|tipo de dato]], y dicho valor puede ser accedido y/o modificado a lo largo del [[algo 1/Introducción a la programación/Algoritmo|algoritmo]]. Esta entidad se caracteriza por tener un identificador único.
+Una variable es una entidad que puede almacenar un valor de un determinado [[Tipo de dato|tipo de dato]], y dicho valor puede ser accedido y/o modificado a lo largo del [[algoritmos/Índice|algoritmo]]. Esta entidad se caracteriza por tener un identificador único.
 
 ## Punto de vista de la programación
 ---

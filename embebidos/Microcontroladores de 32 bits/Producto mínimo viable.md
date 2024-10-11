@@ -27,7 +27,7 @@ Si es demasiado trabajo diseñar una [[Placa de circuito impreso (PCB) (Printed 
 
 Para comenzar el diseño o la integración de un nuevo sistema, un ingeniero debe hacer preguntas sobre
 * Potencia informática necesaria
-    * Dependerá en gran medida de los [[Algoritmo|algoritmos]] utilizados en la [[Aplicación|aplicación]] y de cualquier unidad/dispositivo adicional requerido
+    * Dependerá en gran medida de los [[algoritmos/Índice|algoritmos]] utilizados en la [[Aplicación|aplicación]] y de cualquier unidad/dispositivo adicional requerido
 * Energía eléctrica necesaria
     * Dependerá de la aplicación, dónde se ubicará el sistema y qué fuentes de energía estarán disponibles
     * Uso de energía de la batería o de la red eléctrica/alimentación externa
