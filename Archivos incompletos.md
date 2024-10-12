@@ -2,8 +2,8 @@ Veamos una lista de los archivos de investigación que no están terminados
 
 ```dataviewjs
 const ETAPAS = {
-    ["sin-empezar"]: 1, 
-    ["empezado"]: 2, 
+    ["sin-empezar"]: 2, 
+    ["empezado"]: 1, 
     ["ampliar"]: 3, 
     ["terminado"]: 4
 };

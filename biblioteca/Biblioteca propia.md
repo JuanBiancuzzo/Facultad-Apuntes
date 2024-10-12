@@ -11,7 +11,7 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (88)
+#### Buscar (90)
 ---
 Programación:
 1. Understanding Distributed Systems: What every developer should know about large distributed applications de Roberto Vitillo
@@ -43,6 +43,8 @@ Hacking:
 7. Hacking api
 8. black hat graphQL
 9. The hacker playbook
+10. Extreme privacy, What it takes to disappear de Michael Bazzell
+11. Open Source Intelligence techniques de Michael Bazzell
 
 Marketing:
 1. 80/20 sales and marketing de Perry Marshall
