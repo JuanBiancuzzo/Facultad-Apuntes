@@ -3,7 +3,7 @@ dia: 2024-08-22
 tags:
   - redes/Capa-de-Enlace
   - nota/facultad
-  - protocolos
+  - protocolos/protocolo-de-internet
 referencias:
   - "201"
 etapa: sin-empezar
@@ -15,7 +15,7 @@ etapa: sin-empezar
 ---
 En esta, el [[Bandwidth|bandwidth]] del [[Acceso a una red por cable|enlace]] es compartido en el tiempo, en la [[Función periódica#Frecuencia|frecuencia]] y en código, a múltiples estaciones simultáneamente
 
-Tenemos los [[Protocolo|protocolos]]
+Tenemos los [[Protocolo de internet|protocolos]]
 * [[Time Division Multiplexing|Time division multiplexing (TDM)]]
 * [[Frequency Division Multiplexing|Frequency division multiplexing (FDM)]]
 * [[Code Division Multiple Access|Code division multiple access (CDMA)]]

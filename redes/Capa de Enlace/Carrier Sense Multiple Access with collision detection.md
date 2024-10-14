@@ -3,7 +3,7 @@ dia: 2024-08-22
 tags:
   - redes/Capa-de-Enlace
   - nota/facultad
-  - protocolos
+  - protocolos/protocolo-de-internet
 aliases:
   - Carrier Sense Multiple Access con detección de colisiones
   - CSMA con detección de colisiones

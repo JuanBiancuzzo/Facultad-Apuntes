@@ -3,7 +3,7 @@ dia: 2024-08-23
 tags:
   - redes/Capa-de-Enlace
   - nota/facultad
-  - protocolos
+  - protocolos/protocolo-de-internet
 ---
 # Definición
 ---

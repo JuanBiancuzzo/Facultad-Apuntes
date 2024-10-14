@@ -6,7 +6,7 @@ tags:
   - redes/Capa-de-Transporte
   - nota/facultad
   - redes/Capa-Física-Inalámbrica
-  - protocolos
+  - protocolos/protocolo-de-internet
 ---
 # Definición
 ---

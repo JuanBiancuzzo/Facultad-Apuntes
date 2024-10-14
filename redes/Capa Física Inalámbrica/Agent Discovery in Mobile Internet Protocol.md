@@ -3,7 +3,7 @@ dia: 2024-08-30
 tags:
   - redes/Capa-Física-Inalámbrica
   - nota/facultad
-  - protocolos
+  - protocolos/protocolo-de-internet
 aliases:
   - Agente Discovery in Mobile IP
   - Care-of address#^COA

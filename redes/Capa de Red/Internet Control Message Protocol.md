@@ -3,7 +3,7 @@ dia: 2024-08-18
 tags:
   - redes/Capa-de-Red
   - nota/facultad
-  - protocolos
+  - protocolos/protocolo-de-internet
 aliases:
   - ICMP
 ---

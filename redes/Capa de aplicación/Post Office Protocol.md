@@ -7,7 +7,7 @@ aliases:
 tags:
   - redes/Capa-de-aplicación
   - nota/facultad
-  - protocolos
+  - protocolos/protocolo-de-internet
 ---
 # Definición
 ---
