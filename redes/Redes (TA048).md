@@ -4,8 +4,10 @@ codigo: TA048
 plan: 2023
 estado: Terminado
 tags:
-  - materia
+  - materia/ingenieria-informatica-electronica
 etapa: terminado
+correlativas:
+  - "7508"
 ---
 # Apuntes 
 ---

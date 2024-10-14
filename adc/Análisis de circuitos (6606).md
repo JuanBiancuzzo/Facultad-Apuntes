@@ -4,8 +4,12 @@ estado: Terminado
 plan: "1986"
 codigo: "6606"
 tags:
-  - "#materia"
+  - materia/ingenieria-informatica-electronica
 etapa: terminado
+correlativas:
+  - "8602"
+  - "6203"
+  - "6110"
 ---
 # Apuntes 
 ---

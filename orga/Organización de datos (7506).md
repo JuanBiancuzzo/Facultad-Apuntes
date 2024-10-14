@@ -4,8 +4,11 @@ estado: Falta pasar los videos de los últimos temas
 plan: "1986"
 codigo: "7506"
 tags:
-  - materia
+  - materia/ingenieria-informatica-electronica
 etapa: empezado
+correlativas:
+  - "6108"
+  - "7541"
 ---
 # Apuntes 
 ---

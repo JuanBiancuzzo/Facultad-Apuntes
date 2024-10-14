@@ -39,6 +39,16 @@ Un listado de materias y su estado actual
 | [Taller de programación 1](taller/Taller%20de%20programación%201%20(9508).md)                                  | 9508   | Falta pasar las presentaciones de los últimos temas |
 | [Taller de sistemas embebidos](embebidos/Taller%20de%20sistemas%20embebidos%20(TA134).md)                      | TA134  | Voy a cursarla este cuatri                          |
 
+### Otras carreras
+---
+Un listado de otras carreras en las que voy a ir resumiendo para completar y ver distintos puntos de vista
+
+| Carrera                              | Estado                            |
+| ------------------------------------ | --------------------------------- |
+| Licenciatura en Ciencias Matemáticas | Todavía no empecé a tomar apuntes |
+| Licenciatura en Ciencias Físicas     | Todavía no empecé a tomar apuntes |
+| Licenciatura en Ciencias de Datos    | Todavía no empecé a tomar apuntes |
+
 ## Investigación
 ---
 Un listado de los temas investigados y su estado actual
@@ -48,7 +58,7 @@ Un listado de los temas investigados y su estado actual
 | [Algoritmos](algoritmos/Algoritmo.md)                                | Empezando a describir algunos algoritmos                                                                          |
 | [Animation](animation/Índice.md)                                     | Estamos avanzando con algunos conceptos, pero todavía falta la mayor parte del conocimiento trandicional o básico |
 | [Compilador](compilador/Índice.md)                                   | Sin empezar                                                                                                       |
-| [Data structures](data%20structures/Índice.md)                       | Falta resumir                                                                                                     |
+| [Data structures](data%20structures/Estructura%20de%20datos.md)      | Falta resumir                                                                                                     |
 | [Dibujo](dibujo/Índice.md)                                           | Falta resumir                                                                                                     |
 | [Física](física/Índice.md)                                           | Sin empezar                                                                                                       |
 | [Game creation](game%20creation/Índice.md)                           | Falta resumir                                                                                                     |

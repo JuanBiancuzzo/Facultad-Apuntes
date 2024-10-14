@@ -4,8 +4,10 @@ estado: Terminado
 plan: "1986"
 codigo: "7508"
 tags:
-  - materia
+  - materia/ingenieria-informatica-electronica
 etapa: terminado
+correlativas:
+  - "6670"
 ---
 # Apuntes 
 ---

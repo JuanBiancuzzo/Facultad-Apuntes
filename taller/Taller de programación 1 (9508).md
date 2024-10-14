@@ -4,8 +4,10 @@ estado: Falta pasar las presentaciones de los últimos temas
 plan: 2009
 codigo: "9508"
 tags:
-  - materia
+  - materia/ingenieria-informatica-electronica
 etapa: empezado
+correlativas:
+  - "7541"
 ---
 # Apuntes 
 ---

@@ -4,8 +4,10 @@ estado: Terminado
 plan: "1986"
 codigo: "7509"
 tags:
-  - materia
+  - materia/ingenieria-informatica-electronica
 etapa: terminado
+correlativas:
+  - "7507"
 ---
 # Apuntes 
 ---

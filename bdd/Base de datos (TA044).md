@@ -4,8 +4,11 @@ codigo: TA044
 plan: 2023
 estado: Falta ampliar
 tags:
-  - materia
+  - materia/ingenieria-informatica-electronica
 etapa: empezado
+correlativas:
+  - "7506"
+  - "7507"
 ---
 # Apuntes 
 ---

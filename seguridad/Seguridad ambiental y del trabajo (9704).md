@@ -4,8 +4,9 @@ estado: Terminado
 plan: "2009"
 codigo: "9704"
 tags:
-  - materia
+  - materia/ingenieria-informatica-electronica
 etapa: terminado
+correlativas:
 ---
 # Apuntes 
 ---

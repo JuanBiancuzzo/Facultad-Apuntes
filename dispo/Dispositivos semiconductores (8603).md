@@ -4,8 +4,11 @@ estado: Terminado
 plan: "2009"
 codigo: "8603"
 tags:
-  - materia
+  - materia/ingenieria-informatica-electronica
 etapa: terminado
+correlativas:
+  - "8602"
+  - "6203"
 ---
 # Apuntes 
 ---

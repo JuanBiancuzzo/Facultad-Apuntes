@@ -4,8 +4,11 @@ codigo: TB068
 plan: 2023
 estado: Falta últimos temas
 tags:
-  - materia
+  - materia/ingenieria-informatica-electronica
 etapa: ampliar
+correlativas:
+  - "6606"
+  - "8603"
 ---
 # Apuntes 
 ---

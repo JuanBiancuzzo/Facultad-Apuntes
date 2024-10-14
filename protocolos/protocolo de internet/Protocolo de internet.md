@@ -1,6 +1,6 @@
 ---
 dia: 2024-10-14
-estado: Sin empezar
+estado: Tenemos en sí la idea de varios protocolos, pero me gustaría investigarlos más y tal vez implementar alguno de ellos para darme una idea de como funcionan
 tags:
   - índice
   - protocolos/protocolo-de-internet

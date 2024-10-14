@@ -8,7 +8,7 @@ function nombreMateria(materia) {
 	return materia.file.name.replace(`(${materia.codigo})`, "").trim();
 }
 
-let materias = dv.pages("#materia")
+let materias = dv.pages("#materia/ingenieria-informatica-electronica")
     .map(materia => ({ 
         path: materia.file.path, 
         nombre: nombreMateria(materia), 

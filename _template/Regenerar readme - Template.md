@@ -24,6 +24,16 @@ Un listado de materias y su estado actual
     tR += `${tabla}\n`;
 _%>
 
+### Otras carreras
+---
+Un listado de otras carreras en las que voy a ir resumiendo para completar y ver distintos puntos de vista
+
+| Carrera                              | Estado                            |
+| ------------------------------------ | --------------------------------- |
+| Licenciatura en Ciencias Matemáticas | Todavía no empecé a tomar apuntes |
+| Licenciatura en Ciencias Físicas     | Todavía no empecé a tomar apuntes |
+| Licenciatura en Ciencias de Datos    | Todavía no empecé a tomar apuntes |
+
 ## Investigación
 ---
 Un listado de los temas investigados y su estado actual

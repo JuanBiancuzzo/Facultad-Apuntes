@@ -48,7 +48,7 @@
 		tR += `codigo: ${codigo}\n`;
 		tR += `plan: ${plan}\n`;
 		tR += `estado: no-empezado\n`;
-		tR += "tags: materia\n";
+		tR += "tags: materia/ingenieria-informatica-electronica\n";
 		tR += "---\n";
 
 		await app.vault.createFolder(reducido);

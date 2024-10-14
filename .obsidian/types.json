@@ -17,6 +17,7 @@
     "cover": "text",
     "filtroBiblioteca": "text",
     "referencias": "multitext",
-    "links": "multitext"
+    "links": "multitext",
+    "correlativas": "multitext"
   }
 }

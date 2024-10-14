@@ -4,7 +4,7 @@ estado: Falta terminar de pasar el resumen
 plan: 1986
 codigo: "6103"
 tags:
-  - materia
+  - materia/ingenieria-informatica-electronica
 etapa: empezado
 ---
 # Apuntes

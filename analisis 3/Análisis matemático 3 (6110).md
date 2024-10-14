@@ -4,8 +4,11 @@ estado: Terminado
 plan: "1986"
 codigo: "6110"
 tags:
-  - materia
+  - materia/ingenieria-informatica-electronica
 etapa: terminado
+correlativas:
+  - "6103"
+  - "6108"
 ---
 # Apuntes 
 ---

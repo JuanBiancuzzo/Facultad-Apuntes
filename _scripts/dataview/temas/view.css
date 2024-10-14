@@ -36,6 +36,12 @@
     column-gap: 1em;
 }
 
+.descripcion {
+    font-size: 0.9rem;
+    padding-right: 1.5em;
+    padding-left: 0.75em;
+}
+
 .encabezado {
     display: flex;
     flex-direction: row;

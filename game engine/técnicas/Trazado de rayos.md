@@ -1,7 +1,9 @@
 ---
 dia: 2024-10-05
 etapa: sin-empezar
-referencias: 
+referencias:
+  - "351"
+  - "352"
 tags:
   - game-engine/técnicas
   - nota/investigacion
@@ -15,3 +17,11 @@ aliases:
 # Definición
 ---
 
+
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```

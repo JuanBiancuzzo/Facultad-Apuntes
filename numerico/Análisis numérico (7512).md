@@ -4,8 +4,11 @@ estado: Falta pasar el resumen
 plan: "1986"
 codigo: "7512"
 tags:
-  - materia
+  - materia/ingenieria-informatica-electronica
 etapa: empezado
+correlativas:
+  - "6108"
+  - "7541"
 ---
 # Apuntes 
 ---

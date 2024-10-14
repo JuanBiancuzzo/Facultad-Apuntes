@@ -4,8 +4,11 @@ estado: Terminado
 plan: "1986"
 codigo: "6670"
 tags:
-  - materia
+  - materia/ingenieria-informatica-electronica
 etapa: terminado
+correlativas:
+  - "6203"
+  - "7541"
 ---
 # Apuntes 
 ---
