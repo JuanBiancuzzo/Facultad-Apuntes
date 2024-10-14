@@ -10,8 +10,9 @@ Un listado de materias y su estado actual
 
 <%*
     const dv = app.plugins.plugins.dataview.api;
+    const tagCarreraPrincipal = "ingenieria-informatica-electronica"
     
-    const materias = dv.pages("#materia")
+    const materias = dv.pages(`#materia/${tagCarreraPrincipal}`)
         .sort(materia => materia.file.name);
 
     let tabla = dv.markdownTable(["Materia", "Código", "Estado"], materias.map(materia => {
@@ -28,11 +29,19 @@ _%>
 ---
 Un listado de otras carreras en las que voy a ir resumiendo para completar y ver distintos puntos de vista
 
-| Carrera                              | Estado                            |
-| ------------------------------------ | --------------------------------- |
-| Licenciatura en Ciencias Matemáticas | Todavía no empecé a tomar apuntes |
-| Licenciatura en Ciencias Físicas     | Todavía no empecé a tomar apuntes |
-| Licenciatura en Ciencias de Datos    | Todavía no empecé a tomar apuntes |
+<%*
+    const carreras = dv.pages(`#carrera and -#carrera/${tagCarreraPrincipal}`)
+        .sort(carrera => carrera.file.name);
+
+    tabla = dv.markdownTable(["Carrera", "Estado"], carreras.map(carrera => {
+        let nombre = carrera.file.name;
+        let path = `${carrera.file.path}`.replaceAll(" ", "%20");
+        
+        return [ `[${nombre}](${path})`, carrera.estado ];
+    }));
+
+    tR += `${tabla}\n`;
+_%>
 
 ## Investigación
 ---

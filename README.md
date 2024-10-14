@@ -43,11 +43,11 @@ Un listado de materias y su estado actual
 ---
 Un listado de otras carreras en las que voy a ir resumiendo para completar y ver distintos puntos de vista
 
-| Carrera                              | Estado                            |
-| ------------------------------------ | --------------------------------- |
-| Licenciatura en Ciencias Matemáticas | Todavía no empecé a tomar apuntes |
-| Licenciatura en Ciencias Físicas     | Todavía no empecé a tomar apuntes |
-| Licenciatura en Ciencias de Datos    | Todavía no empecé a tomar apuntes |
+| Carrera                                                                                                                          | Estado                            |
+| -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| [Licenciatura en Ciencias de Datos](licenciatura%20en%20ciencias%20de%20datos/Licenciatura%20en%20Ciencias%20de%20Datos.md)      | Todavía no empecé a tomar apuntes |
+| [Licenciatura en Ciencias Físicas](licenciatura%20en%20ciencias%20físicas/Licenciatura%20en%20Ciencias%20Físicas.md)             | Todavía no empecé a tomar apuntes |
+| [Licenciatura en Ciencias Matemáticas](licenciatura%20en%20ciencias%20matemáticas/Licenciatura%20en%20Ciencias%20Matemáticas.md) | Todavía no empecé a tomar apuntes |
 
 ## Investigación
 ---
@@ -75,7 +75,7 @@ Un listado de los temas investigados y su estado actual
 | [Música](música/Índice.md)                                           | Falta resumir                                                                                                     |
 | [Networking](networking/Índice.md)                                   | Falta resumir                                                                                                     |
 | [Placa de Desarrollo](placa%20de%20Desarrollo/Índice.md)             | Sin empezar                                                                                                       |
-| [Protocolos](protocolos/Protocolo.md)                                | Sin empezar                                                                                                       |
+| [Protocolos](protocolos/Protocolo.md)                                | Tenemos principalmente los protocolos de red pero no mucho más allá de eso                                        |
 | [Reglas APA](reglas%20APA/Índice.md)                                 | Falta resumir                                                                                                     |
 | [Storytelling](storytelling/Índice.md)                               | Falta resumir                                                                                                     |
 

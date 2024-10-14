@@ -1,6 +1,6 @@
 ---
 dia: 2024-10-13
-estado: Sin empezar
+estado: Tenemos principalmente los protocolos de red pero no mucho más allá de eso
 tags:
   - índice
   - protocolos

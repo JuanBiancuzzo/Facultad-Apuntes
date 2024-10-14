@@ -1,14 +1,6 @@
-function nombreCuatrimestre(cuatrimestre) {
-	let [anio, cuatri] = cuatrimestre.split("C");
-	cuatri += (parseInt(cuatri) == 1) ? "er" : "do";
-	return cuatri + " cuatrimestre del 20" + anio;
-}
+let { tag } = input;
 
-function nombreMateria(materia) {
-	return materia.file.name.replace(`(${materia.codigo})`, "").trim();
-}
-
-let materias = dv.pages("#materia/ingenieria-informatica-electronica")
+let materias = dv.pages(`#materia/${tag}`)
     .map(materia => ({ 
         path: materia.file.path, 
         nombre: nombreMateria(materia), 
@@ -42,3 +34,13 @@ let materias = dv.pages("#materia/ingenieria-informatica-electronica")
     }));
 
 await dv.view("_scripts/dataview/mostrarElementos", { lista: materias, defaultVacio: "No hay materias" });
+
+function nombreCuatrimestre(cuatrimestre) {
+	let [anio, cuatri] = cuatrimestre.split("C");
+	cuatri += (parseInt(cuatri) == 1) ? "er" : "do";
+	return cuatri + " cuatrimestre del 20" + anio;
+}
+
+function nombreMateria(materia) {
+	return materia.file.name.replace(`(${materia.codigo})`, "").trim();
+}
