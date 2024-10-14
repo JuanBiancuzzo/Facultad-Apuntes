@@ -4,6 +4,7 @@ tags:
   - bdd/SQL
   - nota/facultad
   - lenguajes-de-programación/lenguaje-c
+  - lenguajes-de-programación/lenguaje-SQL
 ---
 # Definición
 ---

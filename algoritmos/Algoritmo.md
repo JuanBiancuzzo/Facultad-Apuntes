@@ -1,20 +1,23 @@
 ---
-dia: 2024-07-08
+dia: 2024-09-30
+estado: Empezando a describir algunos algoritmos
 tags:
   - índice
-  - matemática/fractales
-estado: Falta resumir
+  - algoritmos
+  - algo-1/Introducción-a-la-programación
+  - nota/investigacion
+  - nota/facultad
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
-La intención es investigar sobre fractales y como se pueden hacer pseudo-fractales, que yo defino como estructuras repetitivas dependientes de condiciones pueden producir variaciones repetitivas o no. 
+Vamos a investigar [[algoritmos/Índice|algoritmos]] que son interesantes, y más que nada que sea un lugar para agrupar algoritmos 
 
 ## Resumen
 ---
-Pendiente...
+Un algoritmo es un método para resolver un problema mediante una serie de pasos precisos, definidos y finitos.
 
 
 ## Archivos
@@ -29,3 +32,4 @@ await dv.view("_scripts/dataview/investigacion/mostrarArchivos", { indice: dv.cu
 ```dataviewjs
 await dv.view('_scripts/dataview/investigacion/biblioIndice', { indice: dv.current() });
 ```
+

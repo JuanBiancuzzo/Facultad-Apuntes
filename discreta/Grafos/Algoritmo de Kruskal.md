@@ -7,7 +7,7 @@ tags:
 ---
 # Definición
 ---
-El [[algoritmos/Índice|algoritmo]] de Kruskal es, al igual que el [[Algoritmo de Prim|algoritmo de Prim]], busca generar un [[Árbol generador|árbol generador]] mínimo
+El [[Algoritmo|algoritmo]] de Kruskal es, al igual que el [[Algoritmo de Prim|algoritmo de Prim]], busca generar un [[Árbol generador|árbol generador]] mínimo
 
 1. Parto de una arista de peso mínimo
 2. Mientras pueda, agrego la arista mínima que no genere ciclos

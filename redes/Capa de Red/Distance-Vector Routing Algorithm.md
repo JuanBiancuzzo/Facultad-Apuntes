@@ -9,7 +9,7 @@ aliases:
 ---
 # Definición
 ---
-Este [[algoritmos/Índice|algoritmo]] es iterativo (el proceso continúa hasta que no haya más información para intercambiar entre los vecinos), asincrónico (el algoritmo no requiere que los nodos operen de forma bloqueante los unos con los otros), y [[Algoritmo de ruteo descentralizado|distribuido]] (todos los nodos reciben cierta información, realizan una calculación, y reenvían la información al resto de la red)
+Este [[Algoritmo|algoritmo]] es iterativo (el proceso continúa hasta que no haya más información para intercambiar entre los vecinos), asincrónico (el algoritmo no requiere que los nodos operen de forma bloqueante los unos con los otros), y [[Algoritmo de ruteo descentralizado|distribuido]] (todos los nodos reciben cierta información, realizan una calculación, y reenvían la información al resto de la red)
 
 Curiosamente, el algoritmo es auto-terminante. No hay una señal para la finalización, simplemente lo hace. Este algoritmo es utilizado por muchos [[Protocolo|protocolo]] de ruteo en la práctica
 

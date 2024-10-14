@@ -9,7 +9,7 @@ tags:
 ---
 # Definición
 ---
-Al igual que una variable inmutable, las constantes no pueden modificarse, pero hay diferencias entre sí. Una constante es un valor que no cambia durante todo el [[algoritmos/Índice|algoritmo]], este valor posee un identificador único
+Al igual que una variable inmutable, las constantes no pueden modificarse, pero hay diferencias entre sí. Una constante es un valor que no cambia durante todo el [[Algoritmo|algoritmo]], este valor posee un identificador único
 
 ## Representación en C
 ---

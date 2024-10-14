@@ -19,6 +19,6 @@ Se puede definir cada puerto con un número de $16$ bits, donde los primeros $10
 * 25 [[Protocolo para transferencia simple de correo|SMTP]]
 * 80 [[Hypertext Transfer Protocol|HTTP]]
 * 113 ident
-* 143 imap segura
+* 143 [[Protocolo de acceso a mensajes de Internet|imap]] segura
 * 443 [[Hypertext Transfer Protocol|HTTPS]]
 * 587 submission

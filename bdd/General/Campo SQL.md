@@ -3,6 +3,7 @@ dia: 2024-05-10
 tags:
   - bdd/General
   - nota/facultad
+  - lenguajes-de-programación/lenguaje-SQL
 ---
 # Definición
 ---

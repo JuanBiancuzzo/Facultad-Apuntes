@@ -1,26 +1,27 @@
 ---
-dia: 2024-09-30
-estado: Empezando a describir algunos algoritmos
+dia: 2024-10-13
+estado: Sin empezar
 tags:
   - índice
-  - algoritmos
-  - algo-1/Introducción-a-la-programación
-  - nota/investigacion
+  - lenguajes-de-programación/lenguaje-SQL
   - nota/facultad
+  - bdd/General
 aliases:
-  - Algoritmo
+  - Lenguaje SQL
+  - SQL
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
-Vamos a investigar [[algoritmos/Índice|algoritmos]] que son interesantes, y más que nada que sea un lugar para agrupar algoritmos 
+Vamos a investigar como funciona el lenguaje SQL para guardar y procesar [[Base de datos|bases de datos]]
 
 ## Resumen
 ---
-Un algoritmo es un método para resolver un problema mediante una serie de pasos precisos, definidos y finitos.
+Es un lenguaje de consultad estructurado, que permite acceder y manipular bases de datos. Se convirtió en un estándar del ANSI en 1986 y de ISO en 1987
 
+Puede hacer ![[SQL Keywords#Definición]]
 
 ## Archivos
 ---

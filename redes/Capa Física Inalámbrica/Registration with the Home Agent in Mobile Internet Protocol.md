@@ -3,6 +3,7 @@ dia: 2024-08-30
 tags:
   - redes/Capa-Física-Inalámbrica
   - nota/facultad
+  - protocolos
 ---
 # Definición
 ---

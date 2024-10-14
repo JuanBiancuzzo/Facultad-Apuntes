@@ -30,7 +30,7 @@ Examinemos algunos enfoques específicos de [[Transmission Control Protocol|TCP]
 ---
 Un mecanismo de control de congestión se dice que es justo si la tasa de transmisión promedio común para todas las conexiones. Todas obtienen una porción equitativa del [[Ancho de banda|ancho de banda]] del enlace
 
-Si bien el [[algoritmos/Índice|algoritmo]] de control de congestión en la teoría es justo. En la práctica, los [[Host|hosts]] con menos [[Round trip time|RTT]] tienden a obtener mejor [[Throughput de una red|throughput]] que aquellos con mayor RTT
+Si bien el [[Algoritmo|algoritmo]] de control de congestión en la teoría es justo. En la práctica, los [[Host|hosts]] con menos [[Round trip time|RTT]] tienden a obtener mejor [[Throughput de una red|throughput]] que aquellos con mayor RTT
 
 ### Fairness con UDP
 ---

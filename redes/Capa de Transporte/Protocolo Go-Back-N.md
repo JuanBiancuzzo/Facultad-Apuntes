@@ -7,6 +7,7 @@ aliases:
 tags:
   - redes/Capa-de-Transporte
   - nota/facultad
+  - protocolos
 ---
 # Definición
 ---

@@ -31,7 +31,7 @@ Como ejemplo, si se tiene un robot con $6$ grados de libertad, donde si se mueve
 
 ## Algoritmos
 ---
-Para el momento donde resolver el problema de forma analítica no es posible, se pueden resolver de forma iterativa. Cabe mencionar que en general, las soluciones dadas por estos [[algoritmos/Índice|algoritmos]] no necesariamente van a dar soluciones localmente suaves entre dos posibles posiciones finales, es decir, la [[Función continua|función dada por el algoritmo no es continua]]  
+Para el momento donde resolver el problema de forma analítica no es posible, se pueden resolver de forma iterativa. Cabe mencionar que en general, las soluciones dadas por estos [[Algoritmo|algoritmos]] no necesariamente van a dar soluciones localmente suaves entre dos posibles posiciones finales, es decir, la [[Función continua|función dada por el algoritmo no es continua]]  
 
 Veamos algunos algoritmos para resolver el problema de IK
 * [[FABRIK, A fast, iterative solver for the Inverse Kinematics problem de FABRIK, A fast, iterative solver for the Inverse Kinematics problem de Andreas Aristidou, Joan Lasenby|FABRIK]]

@@ -12,7 +12,10 @@ let paginas = dv.pages(`#${tag} and -#índice and -#referencia`)
 let paginasReferencias = dv.pages(`#${tag} and -#índice and #referencia`)
     .map(pagina => pagina.numReferencia);
 
-let referenciasTema = paginas.concat(paginasReferencias)
+let referenciasIndice = indice.referencias ? indice.referencias : [];
+let indiceArray = dv.array(indice.tags.some(tag => tag.startsWith("nota")) ? referenciasIndice : []);
+
+let referenciasTema = paginas.concat(paginasReferencias).concat(indiceArray)
     .map(ref => parseInt(ref, 10))
     .sort(ref => ref)
     .values;

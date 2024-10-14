@@ -9,7 +9,7 @@ aliases:
 ---
 # Definición
 ---
-El [[algoritmos/Índice|algoritmo]] Depth First Search busca encontrar una [[Grafo conexo#^338349|orientación fuertemente conexo para un grafo]]
+El [[Algoritmo|algoritmo]] Depth First Search busca encontrar una [[Grafo conexo#^338349|orientación fuertemente conexo para un grafo]]
 
 1. Se elige un [[Nodo|vértice]] $v$ cualquiera, y se lo etiqueta como el primero
 2. Se toma un vértice cualquiera, adyacente al anterior

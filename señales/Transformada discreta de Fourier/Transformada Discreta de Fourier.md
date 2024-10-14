@@ -12,7 +12,7 @@ tags:
 ---
 # Definición
 ---
- Es un [[Muestreo|muestreo]] equispaciado en frecuencia de la [[Transformada de Fourier|transformada de Fourier]] de una secuencia de [[Señal#^02aea6|tiempo discreto]]. El gran punto a favor de la DFT es que existen [[algoritmos/Índice|algoritmos]] computacionalmente muy eficientes para el cálculo de la misma como la [[Fast Fourier Transform|FFT]] 
+ Es un [[Muestreo|muestreo]] equispaciado en frecuencia de la [[Transformada de Fourier|transformada de Fourier]] de una secuencia de [[Señal#^02aea6|tiempo discreto]]. El gran punto a favor de la DFT es que existen [[Algoritmo|algoritmos]] computacionalmente muy eficientes para el cálculo de la misma como la [[Fast Fourier Transform|FFT]] 
 
   Consideremos una secuencia $x[n]$ de longitud $M$. Es decir $x[n] = 0$ para $n < 0$ y $n \ge M$. Sea $N \ge M$. Siempre podremos definir la secuencia periódica $\tilde{x}[n]$ con periodo $N$ $$ \tilde{x}[n] = \sum_{l = -\infty}^{\infty} x[n - lN] = x[n~\text{mod}~N] $$
   Dado que $M \le N$ siempre podremos recuperar $x[n]$ a partir de un periodo de $\tilde{x}[n]$. Es decir $$ x[n] = \begin{cases} 

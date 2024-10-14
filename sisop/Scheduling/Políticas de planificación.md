@@ -42,11 +42,11 @@ Estas son aquellas que posea más de un [[Procesador|procesador]] y/o con más d
 
 ### Cola única
 ---
-![[Política de planificación Single Queue Multiprocessor Scheduling (SQMS)#Definición]]
+![[Política de planificación Single Queue Multiprocessor Scheduling#Definición]]
 
 ### Colas multiples
 ---
-![[Política de planificación Multi-Queue Multiprocessor Scheduling (MQMS)#Definición]]
+![[Política de planificación Multi-Queue Multiprocessor Scheduling#Definición]]
 
 ### Completely Fair Scheduler (CSF)
 ---

@@ -45,7 +45,7 @@ Un listado de los temas investigados y su estado actual
 
 | Tema de investigación                                                | Estado                                                                                                            |
 | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| [Algoritmos](algoritmos/Índice.md)                                   | Empezando a describir algunos algoritmos                                                                          |
+| [Algoritmos](algoritmos/Algoritmo.md)                                | Empezando a describir algunos algoritmos                                                                          |
 | [Animation](animation/Índice.md)                                     | Estamos avanzando con algunos conceptos, pero todavía falta la mayor parte del conocimiento trandicional o básico |
 | [Compilador](compilador/Índice.md)                                   | Sin empezar                                                                                                       |
 | [Data structures](data%20structures/Índice.md)                       | Falta resumir                                                                                                     |
@@ -65,6 +65,7 @@ Un listado de los temas investigados y su estado actual
 | [Música](música/Índice.md)                                           | Falta resumir                                                                                                     |
 | [Networking](networking/Índice.md)                                   | Falta resumir                                                                                                     |
 | [Placa de Desarrollo](placa%20de%20Desarrollo/Índice.md)             | Sin empezar                                                                                                       |
+| [Protocolos](protocolos/Protocolo.md)                                | Sin empezar                                                                                                       |
 | [Reglas APA](reglas%20APA/Índice.md)                                 | Falta resumir                                                                                                     |
 | [Storytelling](storytelling/Índice.md)                               | Falta resumir                                                                                                     |
 

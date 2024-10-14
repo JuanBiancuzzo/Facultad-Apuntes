@@ -3,6 +3,7 @@ dia: 2024-08-26
 tags:
   - redes/Capa-de-Enlace
   - nota/facultad
+  - protocolos
 aliases:
   - ARP
 ---

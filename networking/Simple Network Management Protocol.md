@@ -6,6 +6,7 @@ referencias:
 tags:
   - networking
   - nota/investigacion
+  - protocolos
 aliases:
   - Protocolo simple de administración de red
   - SNMP

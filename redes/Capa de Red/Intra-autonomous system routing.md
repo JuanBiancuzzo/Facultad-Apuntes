@@ -12,6 +12,6 @@ En la práctica, la idea de que todos los routers ejecutan el mismo [[Routing al
 * Escala
     * A medida que aumenta el número de routers, el costo de comunicación y cómputo se vuelve inmanejable
 * Autoridad administrativa
-    * El [[Internet|internet]] es una [[Red|red]] interconectada de [[Internet Service Provider|ISP]], cada uno consistiendo en su propia red de routers. Usualmente, los ISP querrán administrar su red de la forma que quieran, por lo que sería imposible que todos ejecuten el mismo [[algoritmos/Índice|algoritmo]]
+    * El [[Internet|internet]] es una [[Red|red]] interconectada de [[Internet Service Provider|ISP]], cada uno consistiendo en su propia red de routers. Usualmente, los ISP querrán administrar su red de la forma que quieran, por lo que sería imposible que todos ejecuten el mismo [[Algoritmo|algoritmo]]
 
 Ambos problemas se solucionan al organizar los [[Router|routers]] en [[Autonomous system|autonomous system]]

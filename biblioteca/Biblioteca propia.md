@@ -11,7 +11,7 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (90)
+#### Buscar (98)
 ---
 Programación:
 1. Understanding Distributed Systems: What every developer should know about large distributed applications de Roberto Vitillo
@@ -46,11 +46,20 @@ Hacking:
 10. Extreme privacy, What it takes to disappear de Michael Bazzell
 11. Open Source Intelligence techniques de Michael Bazzell
 
-Marketing:
+Game development:
+1. Game programming patterns de Robert Nystrom
+2. The pragmatic programmer de Andrew Hunt y David Thomas
+3. Programming game AI by example Mat Buckland
+4. Directing video games 101 de Brian Allgeier
+
+Marketing/Buisness:
 1. 80/20 sales and marketing de Perry Marshall
 2. The millionaire fastlane de MJ de Marco
 3. The psychology of money de Morgan Housel
 4. The richest man in Babylon de George S. Clason
+5. Million dollar weekend de noah kagan
+6. Oversubscribed de Dan Priestsley
+7. Day Trading Attention de Gary Vee.
 
 Psico (?):
 1. The lessons of history
@@ -99,6 +108,7 @@ Electronica:
 2. Troubleshooting analog circuits de Robert A. Pease
 3. The Art of Electronics (3era edición) de Paul Horowitz y Winfields Hill
 4. How to Diagnose and Fix Everything Electronic, Second Edition 2nd Edition de Michael Jay Geier
+5. Getting Started in Electronics de Forrest M. Mims III
 
 Mecánica:
 1. Shape Up de Ryan Singer

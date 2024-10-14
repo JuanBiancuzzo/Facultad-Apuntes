@@ -15,7 +15,7 @@ tags:
 
 ## Algoritmo
 ---
-El [[algoritmos/Índice|algoritmo]] de Wavefunction Collapse le enseña a la [[Computadora|computadora]] como generar nuevos output proceduralmente dado unas instrucciones de como debería verse en forma de un ejemplo. En lo general se usa para crear imágenes, pero puede usarse para generar lo que se necesite
+El [[Algoritmo|algoritmo]] de Wavefunction Collapse le enseña a la [[Computadora|computadora]] como generar nuevos output proceduralmente dado unas instrucciones de como debería verse en forma de un ejemplo. En lo general se usa para crear imágenes, pero puede usarse para generar lo que se necesite
 
 ![[Wavefunction collapse example.png]]
 

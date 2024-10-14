@@ -5,9 +5,8 @@ let tagRepresentante = tagIndice(indice);
 let nivelActual = indice.file.folder.split("/").length;
 let subTemas = dv.pages(`#${tagRepresentante} and #índice`)
     .filter(ind => ind.file.folder.split("/").length == nivelActual + 1);
-console.log(subTemas);
 
-let archivos = dv.pages(`#${tagRepresentante} and -#índice`)
+let archivos = dv.pages(`#${tagRepresentante} and #nota`)
     .flatMap(archivo => {
         let resultado = [];
         let aliasesActual = archivo.aliases ? archivo.aliases : [];
@@ -17,13 +16,17 @@ let archivos = dv.pages(`#${tagRepresentante} and -#índice`)
                 .sort(ref => parseInt(ref, 10))
         }
 
+        let esIndice = archivo.tags.some(tag => tag.startsWith("índice"));
         let tags = archivo.tags.filter(tag => tag.startsWith(tagRepresentante));
+
         for (let tag of tags) {
+            let etapa = esIndice ? conseguirEtapa(archivo) : archivo.etapa;
+
             resultado.push({
-                path: archivo.file.path,
+                path: esIndice ? `${archivo.file.path}#Resumen` : archivo.file.path,
                 nombre: archivo.file.name,
                 tag: tag,
-                etapa: archivo.etapa,
+                etapa: etapa,
                 aliases: aliasesActual
                     .filter(alias => !alias.includes("#")),
                 referencias: referenciasActuales
@@ -38,7 +41,7 @@ let archivos = dv.pages(`#${tagRepresentante} and -#índice`)
                         path: `${archivo.file.path}#${key}`,
                         nombre: (elementos.shift()).split("#")[0],
                         tag: tag,
-                        etapa: archivo.etapa,
+                        etapa: etapa,
                         aliases: elementos
                             .map(alias => alias.split("#")[0]),
                         referencias: referenciasActuales
@@ -51,6 +54,7 @@ let archivos = dv.pages(`#${tagRepresentante} and -#índice`)
     .sort(({ referencias, ..._ }) => referencias ? dv.array(referencias).min() : 0)
     .groupBy(({ tag, ..._ }) => subTemas.findIndex(subTema => tag.startsWith(tagIndice(subTema))))
     .values
+    .sort(({ key, rows }) => key)
     .map(({ key, rows }) => ({
         elementos: rows.map(({ path, nombre, etapa, aliases, referencias, ..._ }) => ({
             path: path,
@@ -88,4 +92,26 @@ function tagIndice(indice) {
         .split(" ")
         .filter(token => token.trim() != "-" && token.trim() != "")
         .join("-");   
+}
+
+function conseguirEtapa(indice) {
+    let etapasConsideradas = [];
+
+    let tagRepresentanteActual = tagIndice(indice);    
+    dv.pages(`#${tagRepresentanteActual} and -#índice`)
+        .filter(archivo => archivo.etapa)
+        .forEach(archivo => etapasConsideradas.push(archivo.etapa));
+    
+    let etapaFinal = "sin-empezar";
+    if (etapasConsideradas.length > 0) {
+        if (etapasConsideradas.some(etapa => etapa != "sin-empezar")) {
+            etapaFinal = "empezado";
+        } else if (etapasConsideradas.every(etapa => etapa == "ampliar")) {
+            etapaFinal = "ampliar";
+        } else if (etapasConsideradas.every(etapa => etapa == "terminado")) {
+            etapaFinal = "terminado";
+        }
+    }
+
+    return etapaFinal;
 }

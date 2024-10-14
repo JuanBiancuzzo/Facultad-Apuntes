@@ -2,11 +2,12 @@ const citaView = require(app.vault.adapter.basePath + "/_scripts/dataview/invest
 
 const { archivo } = input;
 
-let referenciasArchivo = archivo.referencias;
-if (!referenciasArchivo)
-	referenciasArchivo = [];
+let referenciasArchivo = archivo.referencias ? archivo.referencias : [];
+if (archivo.numReferencia) 
+	referenciasArchivo.push(archivo.numReferencia);
 
-referenciasArchivo = referenciasArchivo.map(ref => parseInt(ref, 10));
+referenciasArchivo = dv.array(referenciasArchivo.map(ref => parseInt(ref, 10)))
+	.distinct(ref => ref);
 
 let referencias = dv.pages('#referencia')
 	.flatMap(ref => {

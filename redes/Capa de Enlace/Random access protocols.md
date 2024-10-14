@@ -1,8 +1,9 @@
 ---
 dia: 2024-08-22
-tags: 
- - redes/Capa-de-Enlace
- - nota/facultad
+tags:
+  - redes/Capa-de-Enlace
+  - nota/facultad
+  - protocolos
 ---
 # Definición
 ---

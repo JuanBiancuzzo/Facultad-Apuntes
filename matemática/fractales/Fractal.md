@@ -1,23 +1,34 @@
 ---
 dia: 2024-07-08
-etapa: ampliar
+tags:
+  - índice
+  - matemática/fractales
+  - nota/investigacion
+estado: Falta resumir
 referencias:
   - "38"
-tags:
-  - nota/investigacion
-  - matemática/fractales
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
 ```
-# Definición
+# ¿Qué se va a investigar?
+---
+La intención es investigar sobre fractales y como se pueden hacer pseudo-fractales, que yo defino como estructuras repetitivas dependientes de condiciones pueden producir variaciones repetitivas o no. 
+
+## Resumen
 ---
 Un fractal es un objeto geométrico cuya estructura básica, fragmentada o aparentemente irregular, se repite a diferentes escalas
 
 
-
-# Referencias
+## Archivos
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/investigacion/mostrarArchivos", { indice: dv.current() });
+```
+
+
+# Bibliografía
+---
+```dataviewjs
+await dv.view('_scripts/dataview/investigacion/biblioIndice', { indice: dv.current() });
 ```

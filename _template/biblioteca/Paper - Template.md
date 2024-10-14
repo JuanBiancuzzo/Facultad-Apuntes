@@ -24,7 +24,7 @@
 		for (let autore of infoPaper.autores.slice(0, -1)) {
 			let nuevoAutore = `${infoPaper.tituloInforme} de ${autore.nombre} ${autore.apellido}`;
 			if (`${infoPaper.tituloInforme} de ${[...autores, nuevoAutore].join(", ")}`.length + AGREGADO.length <= MAX_NOMBRE)
-				autores.push(nuevoAutore);
+				autores.push(`${autore.nombre} ${autore.apellido}`);
 			else 
 				exceso = true;
 

@@ -5,6 +5,7 @@ aliases:
 tags:
   - redes/Capa-de-Red
   - nota/facultad
+  - protocolos
 ---
 # Definición
 ---
