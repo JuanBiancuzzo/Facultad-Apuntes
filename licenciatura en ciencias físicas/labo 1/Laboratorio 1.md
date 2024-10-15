@@ -1,9 +1,11 @@
 ---
 cuatri: 24C2
 plan: 1992
+etapa: sin-empezar
 estado: Sin empezar
-tags: materia/licenciatura-en-ciencias-físicas
-correlativas: []
+tags:
+  - materia/licenciatura-en-ciencias-físicas
+correlativas:
 ---
 # Apuntes
 ---

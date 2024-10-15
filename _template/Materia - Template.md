@@ -157,6 +157,7 @@
 		tR += `cuatri: ${datos[PREGUNTAR_ANIO]}${datos[PREGUNTAR_CUATRI]}\n`;
 		if (datos[PREGUNTAR_CODIGO]) tR += `codigo: ${datos[PREGUNTAR_CODIGO]}\n`;
 		tR += `plan: ${datos[PREGUNTAR_PLANES]}\n`;
+		tR += "etapa: sin-empezar\n";
 		tR += `estado: Sin empezar\n`;
 		tR += `tags: materia/${datos[PREGUNTAR_CARRERA].file.name.toLowerCase().replaceAll(" ", "-")}\n`;
 		tR += tp.obsidian.stringifyYaml({ correlativas: datos[PREGUNTAR_CORRELATIVAS].map(correlativa => {
@@ -290,7 +291,6 @@
         	valores.push(" ↶ Dejar de editar");
 			opciones.push(SALIR);
 		}
-
 
 		return { opciones: opciones, valores: valores };
 	}
