@@ -16,21 +16,12 @@
 	let carrera = dv.pages("#carrera").find(carrera => carrera.file.folder == carpeta[0]);
 	if (!carrera) carrera = dv.page(CARRERA_PRINCIPAL);
 
-	console.log(carrera);
-
 	carpeta = `${carrera.file.folder}/${carpeta.filter(dir => dir != carrera.file.folder)[0]}`;
-
-	console.log(carpeta);
-
 	let tagCarrera = carrera.tags[0].replace("carrera/", "");
-
-	console.log(tagCarrera);
 
 	try {
 		let materias = dv.pages(`"${carpeta}" and #materia/${tagCarrera}`);
 		let materia;
-
-		console.log(materias);
 
 		switch (materias.length) {
 			case 0: throw error.Quit("No se puede elegir una materia");
