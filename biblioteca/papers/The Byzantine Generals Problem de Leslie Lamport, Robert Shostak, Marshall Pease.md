@@ -1,6 +1,6 @@
 ---
 dia: 2024-10-14
-etapa: empezado
+etapa: ampliar
 tipoCita: Paper
 numReferencia: 348
 autores:
@@ -25,6 +25,7 @@ aliases:
 referencias:
   - "347"
   - "286"
+  - "349"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
@@ -154,12 +155,11 @@ Ahora consideremos el escenario donde el comandante es el que no es confiable
 
 En este caso, el comandante manda el mensaje de atacar al teniente $1$ y de retirarse al teniente $2$, haciendo que el teniente $2$ reporte que se deberían retirar al teniente $1$
 
-Como los nodos confiables no saben cuales son los nodos no confiables, ambos escenarios son exactamente iguales para el teniente $1$, por lo tanto siguiendo el objetivo $2$ debe hacer lo que dice el comandante, y por lo tanto si no es confiable el comandante, no se cumple el objetivo $1$
+Como los nodos confiables no saben cuales son los nodos no confiables, ambos escenarios son exactamente iguales para el teniente $1$, por lo tanto siguiendo el objetivo $2$ debe hacer lo que dice el comandante, y por lo tanto si no es confiable el comandante, no se cumple el objetivo $1$. Para una justificación formal ver [[Reaching Agreement in the Presence of Faults de Marshall Pease, Robert Shostak, Leslie Lamport|Reaching Agreement in the Presence of Faults de Marshall Pease, Robert Shostak, Leslie Lamport]] <a href="#ref-349" style="color: inherit; text-decoration: none;">[349]</a>
 
-Para una justificación formal ver [[Reaching Agreement in the Presence of Faults de Marshall Pease, Robert Shostak, Leslie Lamport|Reaching Agreement in the Presence of Faults de Marshall Pease, Robert Shostak, Leslie Lamport]]
+Usando ese resultado, podemos mostrar porque no hay solución para menos de $3m + 1$ nodos que puedan manejar $m$ nodos no fiables. La prueba es por contradicción, asumimos que existe una solución con un grupo de $3m$ o menor, y la usamos para construir para llegar al problema de $3$ nodos y uno de ellos que no sea fiable, y vemos que si funciona, por lo tanto contradiciendo el resultado que se encontró
 
-
-
+%% Ver las soluciones que proponen %%
 
 # Referencias
 ---

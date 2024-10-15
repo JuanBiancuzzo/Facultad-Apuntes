@@ -7,6 +7,10 @@
 	const tArchivo = tp.file.find_tfile(tp.file.path(true));
 
 	try {
+		async function preguntarRecursivamente(datosInciial, obtenerOpcionesValores, procesarRespuesta, procesarDatos, CTE_SALIR, placeholder, mensajeError = undefined) {
+			
+		}
+
 		let carrera = await preguntar.suggester(
 			tp, carrera => carrera.file.name, 
 			dv.pages("#carrera"), "De que carrera es la materia?",

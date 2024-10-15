@@ -11,7 +11,7 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (98)
+#### Buscar (99)
 ---
 Programación:
 1. Understanding Distributed Systems: What every developer should know about large distributed applications de Roberto Vitillo
@@ -109,6 +109,7 @@ Electronica:
 3. The Art of Electronics (3era edición) de Paul Horowitz y Winfields Hill
 4. How to Diagnose and Fix Everything Electronic, Second Edition 2nd Edition de Michael Jay Geier
 5. Getting Started in Electronics de Forrest M. Mims III
+6. Electromagnetic compatibility engineering de Henry W. Ott
 
 Mecánica:
 1. Shape Up de Ryan Singer

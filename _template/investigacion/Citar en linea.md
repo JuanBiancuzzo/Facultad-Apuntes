@@ -5,6 +5,7 @@
     let archivo = dv.page(path);
     if (archivo.referencias && archivo.referencias.length > 0) {
         let referenciasActuales = archivo.referencias.map(ref => parseInt(ref, 10));
+        if (archivo.numReferencia) referenciasActuales.push(archivo.numReferencia);
 
         try {
 

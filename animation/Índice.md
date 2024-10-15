@@ -14,6 +14,8 @@ Vamos a ver como producir las mejores animaciones, con el menor esfuerzo posible
 
 También vamos a ver animación tradicional para entender ese paradigma también, y nos podemos basar en canales como 
 * [Alex Grigg // Animation for Anyone](https://www.instagram.com/reel/C9iAn55gOy5/?igsh=MXR6eGpsZmMxZ2pvbw==)
+* [Game animation Fundamentals](https://youtu.be/w9IM-RPXmvs?si=ifhYqIrMwIMXDNUa)
+
 ## Resumen
 ---
 Pendiente...
