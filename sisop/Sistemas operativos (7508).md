@@ -4,10 +4,10 @@ estado: Terminado
 plan: "1986"
 codigo: "7508"
 tags:
-  - materia/ingenieria-informatica-electronica
+  - materia/ingeniería-informática-y-electrónica
 etapa: terminado
 correlativas:
-  - "6670"
+  - "[[Estructura del computador (6670)|Estructura del computador]]"
 ---
 # Apuntes 
 ---

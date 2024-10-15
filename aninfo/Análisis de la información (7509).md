@@ -4,10 +4,10 @@ estado: Terminado
 plan: "1986"
 codigo: "7509"
 tags:
-  - materia/ingenieria-informatica-electronica
+  - materia/ingeniería-informática-y-electrónica
 etapa: terminado
 correlativas:
-  - "7507"
+  - "[[Algoritmos y programación 3 (7507)|Algoritmos y programación 3]]"
 ---
 # Apuntes 
 ---

@@ -7,15 +7,24 @@
 	const tArchivo = tp.file.find_tfile(tp.file.path(true));
 
 	try {
+		let carrera = await preguntar.suggester(
+			tp, carrera => carrera.file.name, 
+			dv.pages("#carrera"), "De que carrera es la materia?",
+			error.Prompt("No se ingresó la carrera que se usa")
+		);
+
 		let nombreMateria = await preguntar.prompt(
 			tp, "Materia:", 
 			error.Prompt("No se ingresó nombre de la materia")
 		);
 		
-		let codigo = await preguntar.prompt(
-			tp, `El código de ${nombreMateria} es:`, 
-			error.Prompt("No se ingresó el código de la materia")
-		);
+		let codigo;
+		if (carrera.tieneCodigo) {
+			codigo = await preguntar.prompt(
+				tp, `El código de ${nombreMateria} es:`, 
+				error.Prompt("No se ingresó el código de la materia")
+			);
+		}
 
 		let reducido = await preguntar.prompt(
 			tp, `Nombre de la materia ${nombreMateria} reducido:`, 
@@ -37,25 +46,37 @@
 			tp, ["Primer cuatrimestre", "Segundo cuatrimestre"], ["C1", "C2"]
 		);
 
-		let plan = await preguntar.suggester(
-			tp, plan => `Plan ${plan}`, 
-			[2023, 2009, 1986], "Cuál es el plan de la materia",
-			error.Prompt("No se ingresó el plan de la materia")
-		);
+		let planes = carrera.planes;
+		let plan = planes[0];
+		if (planes.length > 1) {
+			plan = await preguntar.suggester(
+				tp, plan => `Plan ${plan}`, 
+				planes, "Cuál es el plan de la materia",
+				error.Prompt("No se ingresó el plan de la materia")
+			);
+		}
 
 		tR += "---\n";
 		tR += `cuatri: ${anio}${cuatrimestre}\n`;
-		tR += `codigo: ${codigo}\n`;
+		if (codigo) tR += `codigo: ${codigo}\n`;
 		tR += `plan: ${plan}\n`;
-		tR += `estado: no-empezado\n`;
-		tR += "tags: materia/ingenieria-informatica-electronica\n";
+		tR += `estado: Sin empezar\n`;
+		tR += `tags: materia/${carrera.file.name.toLowerCase().replaceAll(" ", "-")}\n`;
+		tR += "correlativas: \n"
 		tR += "---\n";
 
-		await app.vault.createFolder(reducido);
-		await app.vault.rename(tArchivo, `${reducido}/${nombreMateria} (${codigo}).md`);
+		let carpeta = `${carrera.file.folder}/${reducido}`;
+		let nombre = carrera.tieneCodigo ? `${nombreMateria} (${codigo})` : nombreMateria;
+
+		await app.vault.createFolder(carpeta);
+		await app.vault.rename(tArchivo, `${carpeta}/${nombre}.md`);
 
 	} catch ({ name: nombre, message: mensaje }) {
         const eliminar = tp.user.eliminar();
+		const errorNombre = tp.user.error().nombre;
+
+		console.log(`${nombre}\n${mensaje}`);
+
         switch (nombre) {
             case errorNombre.quit:
                 return await eliminar.directo(tArchivo, mensaje);

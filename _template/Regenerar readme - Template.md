@@ -10,7 +10,7 @@ Un listado de materias y su estado actual
 
 <%*
     const dv = app.plugins.plugins.dataview.api;
-    const tagCarreraPrincipal = "ingenieria-informatica-electronica"
+    const tagCarreraPrincipal = "ingeniería-informática-y-electrónica"
     
     const materias = dv.pages(`#materia/${tagCarreraPrincipal}`)
         .sort(materia => materia.file.name);

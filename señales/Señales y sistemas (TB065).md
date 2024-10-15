@@ -4,11 +4,11 @@ codigo: TB065
 plan: 2023
 estado: Falta pasar las presentaciones del último tema
 tags:
-  - materia/ingenieria-informatica-electronica
+  - materia/ingeniería-informática-y-electrónica
 etapa: empezado
 correlativas:
-  - "6108"
-  - "6103"
+  - "[[Álgebra 2 (6108)|Álgebra 2]]"
+  - "[[Análisis matemático 2 (6103)|Análisis matemático 2]]"
 ---
 # Apuntes 
 ---

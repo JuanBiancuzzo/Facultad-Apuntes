@@ -4,12 +4,12 @@ estado: Terminado
 plan: "1986"
 codigo: "6606"
 tags:
-  - materia/ingenieria-informatica-electronica
+  - materia/ingeniería-informática-y-electrónica
 etapa: terminado
 correlativas:
-  - "8602"
-  - "6203"
-  - "6110"
+  - "[[Análisis matemático 3 (6110)|Análisis matemático 3]]"
+  - "[[Introducción a la ingeniería electronica (8602)|Introducción a la ingeniería electronica]]"
+  - "[[Física 2 (6203)|Física 2]]"
 ---
 # Apuntes 
 ---

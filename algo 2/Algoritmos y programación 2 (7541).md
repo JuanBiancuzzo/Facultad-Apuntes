@@ -4,10 +4,10 @@ codigo: 7541
 plan: 1986
 estado: Falta hacer el resumen
 tags:
-  - materia/ingenieria-informatica-electronica
+  - materia/ingeniería-informática-y-electrónica
 etapa: sin-empezar
 correlativas:
-  - "7540"
+  - "[[Algoritmos y programación 1 (7540)|Algoritmos y programación 1]]"
 ---
 # Apuntes 
 ---

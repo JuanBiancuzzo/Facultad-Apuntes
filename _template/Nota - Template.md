@@ -1,6 +1,5 @@
 <%*
     const pertenece = tp.user.whiteList();
-    const errorNombre = tp.user.error().nombre;
 
     const dv = app.plugins.plugins.dataview.api;
     
@@ -41,6 +40,7 @@
     
     } catch ({ name: nombre, message: mensaje }) {
         const eliminar = tp.user.eliminar();
+        const errorNombre = tp.user.error().nombre;
 
         switch (nombre) {
             case errorNombre.quit:

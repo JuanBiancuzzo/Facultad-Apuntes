@@ -2,6 +2,9 @@
 tags:
   - carrera/licenciatura-en-ciencias-matemáticas
 estado: Todavía no empecé a tomar apuntes
+planes:
+  - "2022"
+tieneCodigo: false
 ---
 Lista de todas las materias dividido por los cuatrimestres que estoy resumiendo
 

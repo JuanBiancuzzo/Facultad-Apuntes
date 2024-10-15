@@ -4,7 +4,7 @@ codigo: 6107
 plan: 1986
 estado: Terminado
 tags:
-  - materia/ingenieria-informatica-electronica
+  - materia/ingeniería-informática-y-electrónica
 etapa: terminado
 ---
 # Apuntes 

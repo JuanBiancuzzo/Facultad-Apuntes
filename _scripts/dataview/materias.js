@@ -22,7 +22,7 @@ let materias = dv.pages(`#materia/${tag}`)
         elementos: rows.map(({ path, nombre, etapa, codigo, plan, descripcion, cuatri }) => ({
             path: path,
             nombre: nombre,
-            subnombre: `Plan ${plan} - ${codigo}`,
+            subnombre: `Plan ${plan}` + (codigo ? `- ${codigo}` : ""),
             largo: false,
             etapa: etapa,
             descripcionSimple: true,

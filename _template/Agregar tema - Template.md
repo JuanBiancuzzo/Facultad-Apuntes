@@ -1,6 +1,7 @@
 <%*
 	const preguntar = tp.user.preguntar();
 	const error = tp.user.error();
+	const CARRERA_PRINCIPAL = tp.user.constantes().carreraPrincipal;
 
 	const dv = this.app.plugins.plugins.dataview.api;
 
@@ -8,11 +9,28 @@
 
 	let tArchivo = tp.file.find_tfile(tp.file.path(true));
 	// Nos quedamos con la carpeta que sería la materia
-	let carpeta = tp.file.folder(true).split("/")[0];
+	let carpeta = tp.file.folder(true);
+	if (carpeta[0] == "/") carpeta = carpeta.slice(1);
+	carpeta = carpeta.split("/");
+	
+	let carrera = dv.pages("#carrera").find(carrera => carrera.file.folder == carpeta[0]);
+	if (!carrera) carrera = dv.page(CARRERA_PRINCIPAL);
+
+	console.log(carrera);
+
+	carpeta = `${carrera.file.folder}/${carpeta.filter(dir => dir != carrera.file.folder)[0]}`;
+
+	console.log(carpeta);
+
+	let tagCarrera = carrera.tags[0].replace("carrera/", "");
+
+	console.log(tagCarrera);
 
 	try {
-		let materias = dv.pages(`"${carpeta}" and #materia`);
+		let materias = dv.pages(`"${carpeta}" and #materia/${tagCarrera}`);
 		let materia;
+
+		console.log(materias);
 
 		switch (materias.length) {
 			case 0: throw error.Quit("No se puede elegir una materia");

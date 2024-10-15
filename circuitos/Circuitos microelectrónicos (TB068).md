@@ -4,11 +4,11 @@ codigo: TB068
 plan: 2023
 estado: Falta últimos temas
 tags:
-  - materia/ingenieria-informatica-electronica
+  - materia/ingeniería-informática-y-electrónica
 etapa: ampliar
 correlativas:
-  - "6606"
-  - "8603"
+  - "[[Análisis de circuitos (6606)|Análisis de circuitos]]"
+  - "[[Dispositivos semiconductores (8603)|Dispositivos semiconductores]]"
 ---
 # Apuntes 
 ---

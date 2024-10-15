@@ -4,7 +4,7 @@ codigo: 7540
 plan: 1986
 estado: Voy por el 3do pdf
 tags:
-  - materia/ingenieria-informatica-electronica
+  - materia/ingeniería-informática-y-electrónica
 etapa: empezado
 ---
 # Apuntes 

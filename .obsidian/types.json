@@ -18,6 +18,8 @@
     "filtroBiblioteca": "text",
     "referencias": "multitext",
     "links": "multitext",
-    "correlativas": "multitext"
+    "correlativas": "multitext",
+    "planes": "multitext",
+    "tieneCodigo": "checkbox"
   }
 }

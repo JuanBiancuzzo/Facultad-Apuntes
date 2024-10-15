@@ -4,11 +4,11 @@ estado: Falta pasar el resumen
 plan: "1986"
 codigo: "7512"
 tags:
-  - materia/ingenieria-informatica-electronica
+  - materia/ingeniería-informática-y-electrónica
 etapa: empezado
 correlativas:
-  - "6108"
-  - "7541"
+  - "[[Álgebra 2 (6108)|Álgebra 2]]"
+  - "[[Algoritmos y programación 2 (7541)|Algoritmos y programación 2]]"
 ---
 # Apuntes 
 ---

@@ -4,10 +4,10 @@ estado: Terminado
 plan: "1986"
 codigo: "6109"
 tags:
-  - materia/ingenieria-informatica-electronica
+  - materia/ingeniería-informática-y-electrónica
 etapa: terminado
 correlativas:
-  - "6108"
+  - "[[Álgebra 2 (6108)|Álgebra 2]]"
 ---
 # Apuntes 
 ---

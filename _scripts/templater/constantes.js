@@ -8,11 +8,14 @@ const RECURSIVO = "Recursivo";
 const AUTOMATICO = "Automatico";
 const OPCIONES = "Opciones";
 
+const CARRERA_PRINCIPAL = "Ingeniería informática y electrónica";
+
 module.exports = () => ({
     pathArticulos: "legal/Articulos",
     caracteres: CARACTERES,
     caracteresInvalidos: CARACTERES_INVALIDOS,
     meses: MESES,
+    carreraPrincipal: CARRERA_PRINCIPAL,
     tipoDatoCita: {
         multiple: MULTIPLE,
         simple: SIMPLE,

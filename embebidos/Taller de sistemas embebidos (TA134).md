@@ -4,12 +4,12 @@ codigo: TA134
 plan: 2023
 estado: Voy a cursarla este cuatri
 tags:
-  - materia/ingenieria-informatica-electronica
+  - materia/ingeniería-informática-y-electrónica
 etapa: ampliar
 correlativas:
-  - "7540"
-  - "6670"
-  - "8603"
+  - "[[Algoritmos y programación 1 (7540)|Algoritmos y programación 1]]"
+  - "[[Estructura del computador (6670)|Estructura del computador]]"
+  - "[[Dispositivos semiconductores (8603)|Dispositivos semiconductores]]"
 ---
 # Apuntes
 ---

@@ -4,10 +4,10 @@ estado: Terminado
 plan: "2009"
 codigo: "8602"
 tags:
-  - materia/ingenieria-informatica-electronica
+  - materia/ingeniería-informática-y-electrónica
 etapa: terminado
 correlativas:
-  - "8201"
+  - "[[Física 1 (8201)|Física 1]]"
 ---
 # Apuntes 
 ---
