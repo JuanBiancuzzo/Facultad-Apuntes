@@ -5,6 +5,7 @@ tags:
   - nota/facultad
 aliases:
   - Ad hoc
+etapa: sin-empezar
 ---
 # Definición
 ---

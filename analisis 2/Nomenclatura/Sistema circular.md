@@ -6,6 +6,7 @@ tags:
 aliases:
   - Coordenadas polares
   - Coordenadas circulares
+etapa: sin-empezar
 ---
 # Definición
 ---

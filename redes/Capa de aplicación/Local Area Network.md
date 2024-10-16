@@ -5,6 +5,7 @@ aliases:
 tags:
   - redes/Capa-de-aplicación
   - nota/facultad
+etapa: sin-empezar
 ---
 # Definición
 ---

@@ -6,6 +6,7 @@ tags:
   - lenguajes-de-programación/lenguaje-c
 aliases:
   - Estructura
+etapa: sin-empezar
 ---
 # Definición
 ---

@@ -5,6 +5,7 @@ aliases:
 tags:
   - señales/Transformada-discreta-de-Fourier
   - nota/facultad
+etapa: sin-empezar
 ---
 # Definición
 ---

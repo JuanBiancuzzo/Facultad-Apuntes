@@ -7,6 +7,7 @@ aliases:
 tags:
   - señales/Filtros-digitales
   - nota/facultad
+etapa: sin-empezar
 ---
 # Definición
 ---

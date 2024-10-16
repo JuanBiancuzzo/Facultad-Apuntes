@@ -6,6 +6,7 @@ tags:
   - redes/Capa-de-Red
   - nota/facultad
   - protocolos/protocolo-de-internet
+etapa: sin-empezar
 ---
 # Definición
 ---

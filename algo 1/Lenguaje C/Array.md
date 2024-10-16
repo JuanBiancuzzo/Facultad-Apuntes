@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - data-structures
   - lenguajes-de-programación/lenguaje-c
+etapa: sin-empezar
 ---
 # Definición
 ---
