@@ -81,7 +81,7 @@
 
 			} else if (respuesta == PREGUNTAR_CODIGO) { // No poner si la carrera dice que no tienen código
 				datos[PREGUNTAR_CODIGO] = await preguntar.prompt(
-					tp, `El código de ${nombreMateria} es:`, 
+					tp, `El código de ${datos[PREGUNTAR_NOMBRE_MATERIA]} es:`, 
 					error.Prompt("No se ingresó el código de la materia")
 				);
 
@@ -287,7 +287,10 @@
 			opciones.push(ELIMINAR_CORRELATIVA);
 		}
 
-		if (dv.array(FIELD_OBLIGATORIOS).every(key => datos[key])) {
+		let obligatorios = dv.array(FIELD_OBLIGATORIOS);
+		if (datos[PREGUNTAR_CARRERA].tieneCodigo) obligatorios = obligatorios.concat(dv.array([PREGUNTAR_CODIGO]));
+
+		if (obligatorios.every(key => datos[key])) {
         	valores.push(" ↶ Dejar de editar");
 			opciones.push(SALIR);
 		}

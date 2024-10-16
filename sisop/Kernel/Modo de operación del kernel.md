@@ -12,11 +12,6 @@ Dado que este mecanismo es proveído por el hardware cada instrucción a ser eje
 
 Por lo que se protege la [[Protección de memoria|memoria]], los [[General Purpose Input Output|purtos de I/O]] y las posibilidad de ejecutar ciertas instrucciones.
 
-Los modos más utilizados por los [[Sistema operativo|sistemas operativos]] son
-### Modo kernel
-![[Kernel mode#Definición]]
-
-### Modo usuario
-![[User mode#Definición]]
-
-
+Los modos más utilizados por los kernels son
+* [[Kernel mode|Modo kernel]]
+* [[User mode|Modo usuario]]

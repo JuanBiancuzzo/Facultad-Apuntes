@@ -18,7 +18,7 @@ La ejecución es rápida y simple
 ## Limitar la ejecución directa
 ---
 Para poder limitar la ejecución directa, para poder corregir las desventajas de la ejecución directa, se necesitan ciertos mecanismos de software
-* [[Modo de operación]]
+* [[Modo de operación del kernel]]
 * [[Instrucción privilegiada]]
 * [[Protección de memoria]]
 * [[Interrupción por temporizador]]

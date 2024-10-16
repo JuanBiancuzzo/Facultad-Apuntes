@@ -36,7 +36,7 @@ function representarElemento(elemento) {
         </div>
         ${
             elemento.descripcionSimple 
-                ? `<span class="descripcion"> ${ elemento.descripcion } </span>` 
+                ? `<span class="descripcion ${!elemento["subnombre"] ? "separacion" : ""}"> ${ elemento.descripcion } </span>` 
                 : `<div class="lista"> ${ elemento.descripcion.map(item => `<span class="item"> ${item} </span>`).join("") } </div>`
         }
     </div>`;

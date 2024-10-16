@@ -10,4 +10,4 @@ El indicador IOPL se encuentra en todas las [[Procesador|Procesador]] x86. Ocupa
 
 El nivel de privilegio actual de la tarea o programa debe ser menor o igual que el IOPL para que la tarea o el programa acceda a los puertos.
 
-El IOPL se puede cambiar usando POPF e IRET solo cuando el nivel de privilegio actual es [[Modo de operación#Modo kernel|Ring 0]]
+El IOPL se puede cambiar usando POPF e IRET solo cuando el nivel de privilegio actual es [[Modo de operación del kernel#Modo kernel|Ring 0]]

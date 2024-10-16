@@ -14,18 +14,18 @@
     let path = `${tPadre.path}/${tArchivo.basename}`;
 	
 	try {
-        if (pertenece.archivoFacultad(path)) {
+        if (pertenece.archivoInvestigacion(path)) {
+            tR += await tp.file.include("[[Nota investigacion - Template]]");
+
+        } else if (pertenece.archivoProyecto(path)) {
+            tR += await tp.file.include("[[Nota proyecto - Template]]");
+            
+        } else if (pertenece.archivoFacultad(path)) {
             let template = pertenece.articuloLegal(tp, path)
                 ? "legal/Artículo - Template"
                 : "Definición - Template";
             
-            tR += await tp.file.include(`[[${template}]]`);            
-
-        } else if (pertenece.archivoInvestigacion(path)) {
-            tR += await tp.file.include("[[Nota investigacion - Template]]");
-            
-        } else if (pertenece.archivoProyecto(path)) {
-            tR += await tp.file.include("[[Nota proyecto - Template]]");
+            tR += await tp.file.include(`[[${template}]]`);        
             
         } else if (pertenece.archivoLibro(path)) {
             tR += await tp.file.include("[[Libro - Template]]");

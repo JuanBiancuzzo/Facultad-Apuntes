@@ -1,12 +1,14 @@
 let { tag } = input;
 
+let carrera = dv.pages(`#carrera/${tag}`)[0];
+
 let materias = dv.pages(`#materia/${tag}`)
     .map(materia => ({ 
         path: materia.file.path, 
         nombre: nombreMateria(materia), 
         etapa: materia.etapa, 
         codigo: materia.codigo, 
-        plan: materia.plan, 
+        plan: carrera.planes.length > 1 ? materia.plan : null,
         descripcion: materia.estado, 
         cuatri: materia.cuatri 
     }))
@@ -22,7 +24,7 @@ let materias = dv.pages(`#materia/${tag}`)
         elementos: rows.map(({ path, nombre, etapa, codigo, plan, descripcion, cuatri }) => ({
             path: path,
             nombre: nombre,
-            subnombre: `Plan ${plan}` + (codigo ? `- ${codigo}` : ""),
+            subnombre: mostrarSubnombre(plan, codigo),
             largo: false,
             etapa: etapa,
             descripcionSimple: true,
@@ -43,4 +45,9 @@ function nombreCuatrimestre(cuatrimestre) {
 
 function nombreMateria(materia) {
 	return materia.file.name.replace(`(${materia.codigo})`, "").trim();
+}
+
+function mostrarSubnombre(plan, codigo) {
+    if (plan) return `Plan ${plan}` + (codigo ? `- ${codigo}` : "");
+    return codigo ? `Código ${codigo}` : null;
 }

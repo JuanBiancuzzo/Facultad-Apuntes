@@ -1,6 +1,9 @@
 let { proyecto } = input;
 
-let tagRepresentante = proyecto.tags.find(tag => tag != "proyecto");
+let tagRepresentante = proyecto.file.folder.trim()
+    .split(" ")
+    .filter(token => token.trim() != "-" && token.trim() != "")
+    .join("-");
 
 let mostrar = dv.pages(`#${tagRepresentante} and -#proyecto and #nota/proyecto`)
     .sort(archivo => archivo.dia, direction="desc")

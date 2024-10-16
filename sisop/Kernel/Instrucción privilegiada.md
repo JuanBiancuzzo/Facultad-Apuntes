@@ -6,9 +6,9 @@ tags:
 ---
 # Definición
 ---
-Al tener [[Modo de operación|modos de operación]], y darle la capacidad de ejecutar instrucciones a un [[Subconjunto|subconjunto]] de los modos, hace que algunas instrucciones tengan privilegio.
+Al tener [[Modo de operación del kernel|modos de operación]], y darle la capacidad de ejecutar instrucciones a un [[Subconjunto|subconjunto]] de los modos, hace que algunas instrucciones tengan privilegio.
 
-Este conjunto de instrucciones sólo puede ser ejecutado en [[Modo de operación#Modo kernel|modo kernel]]
+Este conjunto de instrucciones sólo puede ser ejecutado en [[Modo de operación del kernel#Modo kernel|modo kernel]]
 
  * `LGDT`: Carga la [[Espacio de direcciones|dirección]] del GDT en GDTR
  * `LLDT`: Carga la dirección del LDT en LDTR

@@ -68,6 +68,10 @@
     padding-right: 1.5em;
 }
 
+.separacion {
+    padding-left: 0.5em;
+}
+
 .item {
     margin: 0;
     color: #9a9a9a;
