@@ -1,19 +1,16 @@
 ---
-dia: 2024-07-08
-tags:
-  - índice
-  - game-engine/graphics-programming/Vulkan
-estado: Falta resumir
+dia: 2024-10-15
+estado: 'Sin empezar'
+tags: 
+ - índice
+ - game-engine/physics-engine
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
-Simplemente entender su funcionamiento, y poder tener un lugar donde encontrar como se hacen las cosas más simples
-
-Basándonos en el contenido de:
-* [Brendan Galea](https://www.youtube.com/@BrendanGalea)
+Vamos a investigar los motores de físicas para poder iterar e incluso proponer un nuevo motor de físicas
 
 ## Resumen
 ---

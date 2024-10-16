@@ -1,17 +1,13 @@
 ---
-dia: 2024-07-08
+dia: 2024-07-18
 etapa: sin-empezar
 referencias:
-  - "40"
-  - "41"
-  - "142"
-  - "179"
-aliases:
-  - Nanite
-  - Virtual geometry
+  - "165"
 tags:
   - nota/investigacion
-  - game-engine
+  - game-engine/técnicas
+aliases:
+  - DoG
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

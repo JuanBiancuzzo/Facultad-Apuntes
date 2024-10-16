@@ -1,11 +1,11 @@
 ---
-dia: 2024-07-09
+dia: 2024-07-18
 etapa: sin-empezar
 referencias:
-  - "128"
+  - "167"
 tags:
   - nota/investigacion
-  - game-engine
+  - game-engine/rendering-engine
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

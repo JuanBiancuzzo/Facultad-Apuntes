@@ -2,17 +2,19 @@
 dia: 2024-07-09
 etapa: sin-empezar
 referencias:
-  - "132"
+  - "139"
+aliases:
+  - Impostors
 tags:
   - nota/investigacion
-  - game-engine
+  - game-engine/técnicas
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
 ```
 # Definición
 ---
-Este usa un [[Árbol binario|árbol binario]]
+* [Chapter 21. True Impostors de GPU Gems 3](https://developer.nvidia.com/gpugems/gpugems3/part-iv-image-effects/chapter-21-true-impostors)
 
 
 

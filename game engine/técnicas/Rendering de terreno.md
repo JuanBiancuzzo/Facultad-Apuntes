@@ -1,18 +1,18 @@
 ---
-dia: 2024-07-08
+dia: 2024-07-09
 etapa: sin-empezar
 referencias:
-  - "39"
+  - "132"
 tags:
   - nota/investigacion
-  - game-engine
+  - game-engine/técnicas
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
 ```
 # Definición
 ---
-
+Este usa un [[Árbol binario|árbol binario]]
 
 
 
