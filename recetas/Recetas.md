@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-29
 tags:
-  - cocinar
+  - proyecto/recetas
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

@@ -1,9 +1,9 @@
 ---
 dia: 2024-08-27
-estado: 'Sin empezar'
-tags: 
- - proyecto
- - plugins-de-obsidian
+estado: Sin empezar
+tags:
+  - proyecto/práctico
+  - plugins-de-obsidian
 ---
 # Descripción
 ---

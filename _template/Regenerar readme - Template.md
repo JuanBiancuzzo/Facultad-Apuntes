@@ -71,7 +71,7 @@ _%>
 Un listado de los proyectos y su estado actual
 
 <%* 
-    const proyectos = dv.pages("#proyecto")
+    const proyectos = dv.pages("#proyecto/práctico")
         .sort(proyecto => proyecto.dia, direction="desc");
 
     tabla = dv.markdownTable(["Proyecto", "Estado"], proyectos.map(proyecto => {

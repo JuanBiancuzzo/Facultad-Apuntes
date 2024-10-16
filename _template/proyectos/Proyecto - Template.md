@@ -33,7 +33,7 @@
 		tR += "---\n"; 
 		tR += `dia: ${dia}\n`;
 		tR += "estado: 'Sin empezar'\n";
-		tR += `tags: \n - proyecto\n - ${path.trim().replaceAll(" ", "-")}\n`;
+		tR += `tags: \n - proyecto/práctico\n - ${path.trim().replaceAll(" ", "-")}\n`;
 		tR += "---\n";
 
 	} catch ({ name: nombre, message: mensaje }) {

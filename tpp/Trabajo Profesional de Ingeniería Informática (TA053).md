@@ -7,7 +7,7 @@ etapa: sin-empezar
 estado: Sin empezar
 tags:
   - materia/ingeniería-informática-y-electrónica
-  - proyecto
+  - proyecto/práctico
   - tpp
 correlativas:
 ---

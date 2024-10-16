@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-12
 tags:
-  - biblioteca
+  - proyecto/biblioteca
 ---
 # ¿Qué se va a investigar?
 ---

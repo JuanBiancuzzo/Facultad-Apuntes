@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-31
 tags:
-  - proyecto
+  - proyecto/práctico
   - obsidian-static-site-generator
 estado: Recién empezando
 ---

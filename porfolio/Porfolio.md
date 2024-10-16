@@ -1,9 +1,9 @@
 ---
 dia: 2024-08-27
-estado: 'Sin empezar'
-tags: 
- - proyecto
- - porfolio
+estado: Sin empezar
+tags:
+  - proyecto/práctico
+  - porfolio
 ---
 # Descripción
 ---

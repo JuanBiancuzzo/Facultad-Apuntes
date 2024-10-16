@@ -1,9 +1,9 @@
 ---
 dia: 2024-08-07
-estado: 'Sin empezar'
-tags: 
- - proyecto
- - better-animations-in-my-humble-opinion
+estado: Sin empezar
+tags:
+  - proyecto/práctico
+  - better-animations-in-my-humble-opinion
 ---
 # Descripción
 ---
