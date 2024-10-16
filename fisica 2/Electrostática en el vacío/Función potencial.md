@@ -8,7 +8,7 @@ referencias:
 aliases:
   - Función potencial escalar#Potencial escalar
   - Función potencial vectorial#Potencial vectorial
-etapa: sin-empezar
+etapa: ampliar
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

@@ -11,7 +11,7 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (99)
+#### Buscar (101)
 ---
 Programación:
 1. Understanding Distributed Systems: What every developer should know about large distributed applications de Roberto Vitillo
@@ -117,6 +117,7 @@ Mecánica:
 3. How to make sense of any mess de Abby Covert
 4. Build de Tony Fadell
 5. Mechanical Design for the Stage de Alan Hendrickson
+6. The Science of Structures and Materials: No 23 (Scientific American Library series) de J. E. Gordon
 
 Diseño:
 1. The Branding Method - Carolina Kairos  
@@ -133,4 +134,5 @@ Storytelling:
 4. The writer´s journey de Christopher Vogler
 5. Story de Robert McKee
 6. Patterns de Rod Serling
+7. A swim in a pond in the rain de george saunders
 

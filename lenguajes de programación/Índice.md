@@ -12,11 +12,6 @@ await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.c
 ---
 Vamos a aprender varios lenguajes de programación, y acá es donde lo vamos a encontrar
 
-## Resumen
----
-Pendiente...
-
-
 ## Archivos
 ---
 ```dataviewjs

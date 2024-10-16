@@ -7,7 +7,7 @@ aliases:
   - SoM
 referencias:
   - "237"
-etapa: sin-empezar
+etapa: ampliar
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

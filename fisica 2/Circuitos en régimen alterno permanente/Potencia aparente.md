@@ -8,7 +8,7 @@ referencias:
   - "222"
 aliases:
   - Triángulo de potencia#Triángulo de potencia
-etapa: sin-empezar
+etapa: ampliar
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

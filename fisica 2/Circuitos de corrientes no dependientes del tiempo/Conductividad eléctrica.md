@@ -7,7 +7,7 @@ aliases:
   - Resistividad eléctrica
 referencias:
   - "212"
-etapa: sin-empezar
+etapa: terminado
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
@@ -19,8 +19,6 @@ La conductividad eléctrica (símbolo $\sigma$) es la medida de la capacidad de 
 Se puede relacionar el [[Campo eléctrico|campo eléctrico]] con la [[Corriente eléctrica#Densidad de corriente|densidad de corriente]] $$ \vec{J} = \underbrace{q ~ n ~ \mu}_{\sigma} ~ \vec{E} $$ siendo $q$ una [[Carga eléctrica|carga]], $n$ la cantidad de partículas y $\mu$ la [[Movilidad|movilidad]]
 
 La conductividad es inversa de la resistividad (símbolo $\rho$) por lo tanto $$ \sigma = \frac{1}{\rho} $$
-
-
 # Referencias
 ---
 ```dataviewjs

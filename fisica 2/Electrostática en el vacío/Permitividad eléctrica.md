@@ -11,7 +11,7 @@ aliases:
   - Permitividad dieléctrica relativa#Permitividad dieléctrica relativa
 referencias:
   - "210"
-etapa: sin-empezar
+etapa: ampliar
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
