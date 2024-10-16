@@ -85,6 +85,10 @@ Un listado de los temas investigados y su estado actual
 ---
 Un listado de los proyectos y su estado actual
 
+### Proyectos prácticos
+---
+Estos proyectos tienen una aplicación como resultado final
+
 | Proyecto                                                                                                                                                    | Estado           |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
 | [Trabajo Profesional de Ingeniería Informática (TA053)](tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática%20(TA053).md)                             | Sin empezar      |
@@ -94,9 +98,16 @@ Un listado de los proyectos y su estado actual
 | [Better animations in my humble opinion](better%20animations%20in%20my%20humble%20opinion/Better%20animations%20in%20my%20humble%20opinion.md)              | Sin empezar      |
 | [Obsidian Static Site Generator](obsidian%20static%20site%20generator/Obsidian%20Static%20Site%20Generator.md)                                              | Recién empezando |
 
-## Subproyectos
+### Proyectos de investigación
 ---
-Tenemos los subproyectos específicos que son
+Estos proyectos tienen como objetivo investigar y crear pruebas para llegar a un resultado
+
+| Proyecto | Estado |
+| -------- | ------ |
+
+### Proyectos de recolección
+---
+Estos proyectos se basan en recolectar información distinto de un tema de investigación ya que este busca recolectar información con respecto a un tema, mientras que este es para tener información para temas en general
 
 | Proyecto                                        |                                                                                                                                                  |
 | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |

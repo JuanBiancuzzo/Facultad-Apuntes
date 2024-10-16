@@ -70,8 +70,12 @@ _%>
 ---
 Un listado de los proyectos y su estado actual
 
+### Proyectos prácticos
+---
+Estos proyectos tienen una aplicación como resultado final
+
 <%* 
-    const proyectos = dv.pages("#proyecto/práctico")
+    let proyectos = dv.pages("#proyecto/práctico")
         .sort(proyecto => proyecto.dia, direction="desc");
 
     tabla = dv.markdownTable(["Proyecto", "Estado"], proyectos.map(proyecto => {
@@ -84,9 +88,27 @@ Un listado de los proyectos y su estado actual
     tR += `${tabla}\n`;
 _%>
 
-## Subproyectos
+### Proyectos de investigación
 ---
-Tenemos los subproyectos específicos que son
+Estos proyectos tienen como objetivo investigar y crear pruebas para llegar a un resultado
+
+<%* 
+    proyectos = dv.pages("#proyecto/investigación")
+        .sort(proyecto => proyecto.dia, direction="desc");
+
+    tabla = dv.markdownTable(["Proyecto", "Estado"], proyectos.map(proyecto => {
+        let nombre = proyecto.file.name.trim();
+        let path = `${proyecto.file.path}`.replaceAll(" ", "%20");
+        
+        return [ `[${nombre}](${path})`, proyecto.estado ];
+    }));
+
+    tR += `${tabla}\n`;
+_%>
+
+### Proyectos de recolección
+---
+Estos proyectos se basan en recolectar información distinto de un tema de investigación ya que este busca recolectar información con respecto a un tema, mientras que este es para tener información para temas en general
 
 | Proyecto                                        |                                                                                                                                                  |
 | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
