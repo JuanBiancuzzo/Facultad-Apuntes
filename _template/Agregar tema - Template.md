@@ -40,7 +40,9 @@
 		let resumenes = dv.pages(`"${materia.file.folder}" and #resumen`)
 			.sort(resumen => resumen.capitulo);
 		let nombreResumenes = resumenes.map(resumen => {
-			let repre = `En ${resumen.file.folder.split("/")[1]}`;
+			let carpetaResumen = resumen.file.folder.split("/")
+				.filter((dir => dir != carrera.file.folder))[1];
+			let repre = `En ${carpetaResumen}`;
 			if (resumen.parte) 
 				repre += `, Parte ${resumen.parte}`;
 			return repre;
@@ -64,7 +66,11 @@
 				error.Prompt("No se ingresó el nombre del tema")
 			);
 
-			eleccion = resumenes.find(resumen => resumen.file.folder.split("/")[1] == nombre);
+			eleccion = resumenes.find(resumen => {
+				let carpetaResumen = resumen.file.folder.split("/")
+					.filter((dir => dir != carrera.file.folder))[1];
+				return carpetaResumen == nombre;
+			});
 			nuevaCarpeta = `${materia.file.folder}/${nombre}`;
 		} 
 

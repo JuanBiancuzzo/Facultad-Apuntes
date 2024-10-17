@@ -2,12 +2,8 @@ Lista de archivos que existen referencias pero no existe el archivo
 
 ```dataviewjs
 	let archivos = dv.pages('#materia')
-		.map(archivoMateria => {
-			return archivoMateria.file.path.split("/")[0];
-		})
-		.flatMap(carpeta => {
-			return dv.pages(`"${carpeta}"`);
-		})
+		.map(archivoMateria => archivoMateria.file.path.split("/")[0])
+		.flatMap(carpeta => dv.pages(`"${carpeta}"`))
 		.filter(archivo => archivo.file.ext === "md")
 		.flatMap(archivo => {
 			let carpeta = archivo.file.path.split("/")[0];
