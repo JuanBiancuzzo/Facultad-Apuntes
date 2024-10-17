@@ -1,5 +1,7 @@
 <%*
     const pertenece = tp.user.whiteList();
+    const preguntar = tp.user.preguntar();
+    const error = tp.user.error();
 
     const dv = app.plugins.plugins.dataview.api;
     
@@ -14,29 +16,63 @@
     let path = `${tPadre.path}/${tArchivo.basename}`;
 	
 	try {
-        if (pertenece.archivoInvestigacion(path)) {
-            tR += await tp.file.include("[[Nota investigacion - Template]]");
+        let posiblesInfoNota = [];
 
-        } else if (pertenece.archivoProyecto(path)) {
-            tR += await tp.file.include("[[Nota proyecto - Template]]");
-            
-        } else if (pertenece.archivoFacultad(path)) {
-            let template = pertenece.articuloLegal(tp, path)
-                ? "legal/Artículo - Template"
-                : "Definición - Template";
-            
-            tR += await tp.file.include(`[[${template}]]`);        
-            
-        } else if (pertenece.archivoLibro(path)) {
-            tR += await tp.file.include("[[Libro - Template]]");
+        if (pertenece.archivoFacultad(path)) {
+            if (pertenece.articuloLegal(tp, path)) 
+                posiblesInfoNota.push({
+                    descripcion: "Ingresar artículo legal",
+                    template: "legal/Artículo - Template"
+                });
+            else 
+                posiblesInfoNota.push({
+                    descripcion: "Ingresar definición",
+                    template: "Definición - Template"
+                });
+        }
 
-        } else if (pertenece.archivoBiblioteca(path)) {
-            tR += await tp.file.include("[[Biblioteca selector - Template]]");
-            
-        } else if (pertenece.archivoComida(path)) {
+        if (pertenece.archivoInvestigacion(path))
+            posiblesInfoNota.push({
+                descripcion: "Ingresar nota de investigación",
+                template: "Nota investigacion - Template"
+            });
+        
+        if (pertenece.archivoProyecto(path))
+            posiblesInfoNota.push({
+                descripcion: "Ingresar nota de proyecto",
+                template: "Nota proyecto - Template"
+            });
+        
+        if (pertenece.archivoLibro(path) || (pertenece.archivoBiblioteca(path) && !pertenece.archivoPaper(path))) 
+            posiblesInfoNota.push({
+                descripcion: "Citar un libro",
+                template: "Libro - Template"
+            });
+        
+        if (pertenece.archivoPaper(path) || (pertenece.archivoBiblioteca(path) && !pertenece.archivoLibro(path)))
+            posiblesInfoNota.push({
+                descripcion: "Citar un paper",
+                template: "Paper - Template"
+            });
+        
+        if (pertenece.archivoComida(path)) {
             // Nota receta
 
         }
+
+        if (posiblesInfoNota.length > 0) {
+            let infoNota = posiblesInfoNota[0];
+            if (posiblesInfoNota.length > 1) {
+                infoNota = await preguntar.suggester(
+                    tp, infoNota => infoNota.descripcion, posiblesInfoNota,
+                    "Elegir que tipo de archivo se va a usar",
+                    error.Prompt("No se eligió un tipo de archivo")
+                );
+            }
+
+            tR += await tp.file.include(`[[${infoNota.template}]]`);  
+        }
+        
     
     } catch ({ name: nombre, message: mensaje }) {
         const eliminar = tp.user.eliminar();
