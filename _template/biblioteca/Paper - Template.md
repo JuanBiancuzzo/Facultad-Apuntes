@@ -1,6 +1,7 @@
 <%* 
 	const tArchivo = tp.file.find_tfile(tp.file.path(true));	
 	const describir = tp.user.describir();
+	const CARACTERES_INVALIDOS = tp.user.constantes().caracteresInvalidos;
 	const AGREGADO = " y otros";
 	const MAX_NOMBRE = 252;
 
@@ -37,6 +38,11 @@
 			exceso = true;
 		
 		let nombreArchivo = `${infoPaper.tituloInforme} de ${autores.join(", ")}${exceso ? AGREGADO : ""}`;
+
+		nombreArchivo.replaceAll(":", ",");
+		nombreArchivo.replaceAll('"', "'");
+		CARACTERES_INVALIDOS.forEach(caracterInvalido => nombreArchivo.replaceAll(caracterInvalido, ""));
+
         await tp.file.rename(nombreArchivo);
 
 		tR += tp.obsidian.stringifyYaml(infoPaper);

@@ -102,8 +102,16 @@ Estos proyectos tienen una aplicación como resultado final
 ---
 Estos proyectos tienen como objetivo investigar y crear pruebas para llegar a un resultado
 
-| Proyecto | Estado |
-| -------- | ------ |
+| Proyecto                                                                                    | Estado      |
+| ------------------------------------------------------------------------------------------- | ----------- |
+| [Lagrangian Physics Engine](lagrangian%20physics%20engine/Lagrangian%20Physics%20Engine.md) | Sin empezar |
+
+### Game Design Documents
+---
+Estos proyectos tienen como objetivo crear un GDD y mostrar el desarrollo del juego
+
+| Juego | Estado |
+| ----- | ------ |
 
 ### Proyectos de recolección
 ---

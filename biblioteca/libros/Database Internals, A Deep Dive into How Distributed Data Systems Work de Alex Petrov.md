@@ -3,7 +3,7 @@ dia: 2024-10-10
 etapa: sin-empezar
 tipoCita: Libro
 numReferencia: 330
-tituloObra: Database Internals, A Deep Dive into How Distributed Data Systems Work
+tituloObra: "Database Internals: A Deep Dive into How Distributed Data Systems Work"
 nombreAutores:
   - apellido: Petrov
     nombre: Alex

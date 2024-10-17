@@ -37,7 +37,7 @@
                 template: "Nota investigacion - Template"
             });
         
-        if (pertenece.archivoProyecto(path))
+        if (pertenece.archivoProyectoPractico(path) || pertenece.archivoProyectoInvestigacion(path) || pertenece.archivoProyectoJuego(path))
             posiblesInfoNota.push({
                 descripcion: "Ingresar nota de proyecto",
                 template: "Nota proyecto - Template"

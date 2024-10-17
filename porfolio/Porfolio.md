@@ -5,7 +5,7 @@ tags:
   - proyecto/práctico
   - porfolio
 ---
-# Descripción
+# Propuesta
 ---
 Crear una forma de mostrar mis proyectos y quien soy para presentarme
 

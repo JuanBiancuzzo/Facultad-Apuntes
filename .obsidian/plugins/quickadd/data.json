@@ -120,13 +120,73 @@
     },
     {
       "id": "e08ebefc-0939-4918-88d3-e2f5937667ac",
-      "name": "Nuevo proyecto",
+      "name": "Nuevo proyecto práctico",
       "type": "Template",
       "command": true,
-      "templatePath": "_template/proyectos/Proyecto - Template.md",
+      "templatePath": "_template/proyectos/Proyecto practico - Template.md",
       "fileNameFormat": {
         "enabled": true,
         "format": "temp proyecto"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "temp"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": true
+    },
+    {
+      "id": "a7f2e43d-4c81-4013-8f57-137ff41ea1d3",
+      "name": "Nuevo proyecto investigación",
+      "type": "Template",
+      "command": true,
+      "templatePath": "_template/proyectos/Proyecto investigacion - Template.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "temp - proyecto investigación"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "temp"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": true
+    },
+    {
+      "id": "ec1789ad-c82c-4efd-a6f9-3061ac6fa76e",
+      "name": "Nuevo GDD",
+      "type": "Template",
+      "command": true,
+      "templatePath": "_template/proyectos/GDD - Template.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "temp - GDD"
       },
       "folder": {
         "enabled": true,

@@ -5,7 +5,7 @@ tags:
   - proyecto/práctico
   - plugins-de-obsidian
 ---
-# Descripción
+# Propuesta
 ---
 Este va a ser mi lugar para ir creando plugins de obsidian.
 

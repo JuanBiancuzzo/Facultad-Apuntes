@@ -3,7 +3,7 @@ dia: 2024-10-09
 etapa: sin-empezar
 tipoCita: Libro
 numReferencia: 326
-tituloObra: System Design Interview, An Insider's Guide
+tituloObra: "System Design Interview: An Insider's Guide"
 nombreAutores:
   - apellido: Xu
     nombre: Alex

@@ -5,7 +5,7 @@ tags:
   - proyecto/práctico
   - primer-proyecto-de-robótica-auto-remoto
 ---
-# Descripción
+# Propuesta
 ---
 La intención con este proyecto es explorar un proyecto de robótica simple de principio a fin, para poder entender los aspectos de un proyecto de electrónica
 

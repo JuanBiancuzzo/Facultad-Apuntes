@@ -5,11 +5,11 @@ tags:
   - proyecto/práctico
   - better-animations-in-my-humble-opinion
 ---
-# Descripción
+# Propuesta
 ---
 La intención es crear una mejor forma de crear animaciones, la cual integre animaciones a base de keyframe y animaciones a base de [[Animación procedural con cinemáticas inversas|inverse kinematics]], de forma que ambas trabajen en conjunto
 
-
+%% CAMBIAR A UN PROYECTO DE INVESTIGACION %%
 # Presentar
 ---
 

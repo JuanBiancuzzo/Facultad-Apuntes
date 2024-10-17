@@ -106,6 +106,24 @@ Estos proyectos tienen como objetivo investigar y crear pruebas para llegar a un
     tR += `${tabla}\n`;
 _%>
 
+### Game Design Documents
+---
+Estos proyectos tienen como objetivo crear un GDD y mostrar el desarrollo del juego
+
+<%* 
+    proyectos = dv.pages("#proyecto/juegos")
+        .sort(proyecto => proyecto.dia, direction="desc");
+
+    tabla = dv.markdownTable(["Juego", "Estado"], proyectos.map(proyecto => {
+        let nombre = proyecto.file.name.trim();
+        let path = `${proyecto.file.path}`.replaceAll(" ", "%20");
+        
+        return [ `[${nombre}](${path})`, proyecto.estado ];
+    }));
+
+    tR += `${tabla}\n`;
+_%>
+
 ### Proyectos de recolección
 ---
 Estos proyectos se basan en recolectar información distinto de un tema de investigación ya que este busca recolectar información con respecto a un tema, mientras que este es para tener información para temas en general

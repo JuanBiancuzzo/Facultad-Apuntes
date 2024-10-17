@@ -25,8 +25,8 @@
     },
     {
       "id": "quickadd:choice:e08ebefc-0939-4918-88d3-e2f5937667ac",
-      "icon": "box",
-      "name": "Nuevo Proyecto",
+      "icon": "box-select",
+      "name": "Nuevo Proyecto Práctico",
       "mode": "any"
     },
     {
@@ -45,6 +45,18 @@
       "id": "templater-obsidian:_template/investigacion/Agregar referencia.md",
       "icon": "bookmark",
       "name": "Agregar referencia",
+      "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:a7f2e43d-4c81-4013-8f57-137ff41ea1d3",
+      "icon": "beaker",
+      "name": "Nuevo proyecto investigación",
+      "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:ec1789ad-c82c-4efd-a6f9-3061ac6fa76e",
+      "icon": "box",
+      "name": "Nuevo GDD",
       "mode": "any"
     }
   ],

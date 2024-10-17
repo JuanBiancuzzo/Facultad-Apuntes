@@ -47,9 +47,10 @@
         }
     }
 _%>
-# Descripción
+# Propuesta
 ---
-Ingresar descripción corta del proyecto
+%% Ingresar descripción corta del proyecto %%
+<% tp.file.cursor() %>
 
 
 # Presentar

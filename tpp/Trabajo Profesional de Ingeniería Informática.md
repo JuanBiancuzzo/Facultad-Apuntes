@@ -18,12 +18,11 @@ correlativas:
 ---
 
 
-## Archivos
+# Archivos
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarArchivos", { indice: dv.current() });
 ```
-
 
 # Notas
 ---

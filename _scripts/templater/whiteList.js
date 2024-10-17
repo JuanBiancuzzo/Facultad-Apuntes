@@ -6,7 +6,7 @@ function whiteListArchivoFacultad(archivoPath) {
 
 function whiteListArchivoInvestigacion(archivoPath) {
     const dv = app.plugins.plugins.dataview.api;
-    const indice = dv.pages("#índice").map(indice => indice.file.folder);
+    const indice = dv.pages("#índice or #proyecto/investigación").map(indice => indice.file.folder);
     return indice.some(indice => archivoPath.startsWith(indice));
 }
 
@@ -15,9 +15,21 @@ function whiteListArticuloLegal(tp, archivoPath) {
     return archivoPath.startsWith(cte.pathArticulos)
 }
 
-function whiteListArchivoProyecto(archivoPath) {
+function whiteListArchivoProyectoPractico(archivoPath) {
     const dv = app.plugins.plugins.dataview.api;
     const proyecto = dv.pages("#proyecto/práctico").map(proyecto => proyecto.file.folder);
+    return proyecto.some(proyecto => archivoPath.startsWith(proyecto));
+}
+
+function whiteListArchivoProyectoInvestigacion(archivoPath) {
+    const dv = app.plugins.plugins.dataview.api;
+    const proyecto = dv.pages("#proyecto/investigación").map(proyecto => proyecto.file.folder);
+    return proyecto.some(proyecto => archivoPath.startsWith(proyecto));
+}
+
+function whiteListArchivoProyectoJuego(archivoPath) {
+    const dv = app.plugins.plugins.dataview.api;
+    const proyecto = dv.pages("#proyecto/juegos").map(proyecto => proyecto.file.folder);
     return proyecto.some(proyecto => archivoPath.startsWith(proyecto));
 }
 
@@ -50,7 +62,9 @@ module.exports = () => {
         archivoFacultad: whiteListArchivoFacultad,
         articuloLegal: whiteListArticuloLegal,
         archivoInvestigacion: whiteListArchivoInvestigacion,
-        archivoProyecto: whiteListArchivoProyecto,
+        archivoProyectoPractico: whiteListArchivoProyectoPractico,
+        archivoProyectoInvestigacion: whiteListArchivoProyectoInvestigacion,
+        archivoProyectoJuego: whiteListArchivoProyectoJuego,
         archivoLibro: whiteListArchivoLibro,
         archivoPaper: whiteListArchivoPaper,
         archivoBiblioteca: whiteListArchivoBiblioteca,

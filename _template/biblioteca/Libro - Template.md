@@ -1,6 +1,7 @@
 <%* 
 	const tArchivo = tp.file.find_tfile(tp.file.path(true));	
 	const describir = tp.user.describir();
+	const CARACTERES_INVALIDOS = tp.user.constantes().caracteresInvalidos;
 	const fs = require('fs');
 
 	const SIZE = Object.freeze({
@@ -35,6 +36,11 @@
 		}
 		
 		nombreArchivo = `${infoLibro.tituloObra} de ${autores.join(", ")}`;
+		
+		nombreArchivo.replaceAll(":", ",");
+		nombreArchivo.replaceAll('"', "'");
+		CARACTERES_INVALIDOS.forEach(caracterInvalido => nombreArchivo.replaceAll(caracterInvalido, ""));
+
         await tp.file.rename(nombreArchivo);
 
 		tR += tp.obsidian.stringifyYaml(infoLibro);
