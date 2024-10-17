@@ -1,17 +1,17 @@
 ---
-dia: 2024-09-03
-estado: Sin empezar
-tags:
-  - índice
-  - física
+dia: 2024-10-17
+estado: 'Sin empezar'
+tags: 
+ - índice
+ - matemática/espacios-métricos
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
-Quiero ver todos los elementos de la física que me interesan pero no llegue a ver por mi cuenta
-* [Einstein, Oppenheimer, Feynman: Physics in the 20th Century](https://youtube.com/playlist?list=PLUl4u3cNGP63bAfjGas3TuA4ZCPUtN6Xf&si=avy7mqCnzNybQTNE) - [Curso](https://ocw.mit.edu/courses/sts-042-einstein-oppenheimer-feynman-physics-in-the-20th-century-fall-2020/)
+Vamos a investigar el uso y las aplicaciones de los espacios métricos
+* [Introduction to Metric Spaces](https://youtube.com/playlist?list=PLUl4u3cNGP613ULTyHAqz04niYf722x7S&si=RAgEJWeSmiyAiBd-) - [Curso](https://ocw.mit.edu/courses/18-s190-introduction-to-metric-spaces-january-iap-2023/)
 
 ## Resumen
 ---

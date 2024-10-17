@@ -6,7 +6,7 @@ let nivelActual = indice.file.folder.split("/").length;
 let subTemas = dv.pages(`#${tagRepresentante} and #índice`)
     .filter(ind => ind.file.folder.split("/").length == nivelActual + 1);
 
-let archivos = dv.pages(`#${tagRepresentante} and #nota`)
+let archivos = dv.pages(`#${tagRepresentante} and (#nota/investigacion or #nota/facultad)`)
     .flatMap(archivo => {
         let resultado = [];
         let aliasesActual = archivo.aliases ? archivo.aliases : [];

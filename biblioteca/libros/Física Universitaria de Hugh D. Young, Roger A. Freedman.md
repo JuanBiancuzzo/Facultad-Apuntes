@@ -1,26 +1,26 @@
 ---
-dia: 2024-10-16
+dia: 2024-10-17
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 360
-tituloObra: Linux From Scratch
+numReferencia: 361
+tituloObra: Física Universitaria
 nombreAutores:
-  - apellido: Beekmans
-    nombre: Gerard
-anio: "2024"
-editorial: Gerard Beekmans
+  - apellido: Young
+    nombre: Hugh D.
+  - apellido: Freedman
+    nombre: Roger A.
+anio: "2009"
+editorial: Addison Wesley
 edicion: "12"
-volumen: 
-url: https://www.linuxfromscratch.org/lfs/downloads/12.1/LFS-BOOK-12.1.pdf
+volumen: "1"
+url: 
 capitulos: 
-cover: Linux From Scratch de Gerard Beekmans.jpg
+cover: Física Universitaria de Hugh D. Young, Roger A. Freedman.png
 aliases: 
 tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - sistemas-operativos
-  - tpp
 ---
 ```dataviewjs
 	let actual = dv.current();

@@ -11,7 +11,7 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (101)
+#### Buscar (103)
 ---
 Programación:
 1. Understanding Distributed Systems: What every developer should know about large distributed applications de Roberto Vitillo
@@ -87,6 +87,8 @@ Matemática:
 8. Complex analysis: a self-study guide by terrence murphy
 9. Fourier series, transforms, and boundary value problems de J. Ray Hanna y John H Rowland
 10. Linear algebra de Georgi Shilov
+11. Probabilidad y estadística para ingeniería y ciencias de Walpole, Myers y Myers
+12. Calculo de una variable, de James Stewart
 
 Física:
 1. Modern Physics: Kenneth S. Krane
