@@ -39,11 +39,14 @@
 		if (infoLibro.subtituloObra) {
 			subTitulo = `, ${infoLibro.subtituloObra.charAt(0).toLowerCase()}${infoLibro.subtituloObra.slice(1)}`;
 		}
-		nombreArchivo = `${infoLibro.tituloObra}${subTitulo} de ${autores.join(", ")}`;
-		
-		nombreArchivo = nombreArchivo.replaceAll(":", ",");
-		nombreArchivo = nombreArchivo.replaceAll('"', "'");
-		CARACTERES_INVALIDOS.forEach(caracterInvalido => nombreArchivo = nombreArchivo.replaceAll(caracterInvalido, ""));
+		let volumen = (infoLibro.volumen) ? ` (vol. ${infoLibro.volumen})` : "";
+		nombreArchivo = `${infoLibro.tituloObra}${subTitulo}${volumen} de ${autores.join(", ")}`;
+
+		let intercambios = [[":", ","], ['"', "'"], ["<", "("], [">", ")"], ["?", ""]]
+		for (let [caracterInvalido, caracterValido] of intercambios) {
+			nombreArchivo = nombreArchivo.replaceAll(caracterInvalido, caracterValido);
+		}
+		CARACTERES_INVALIDOS.forEach(caracterInvalido => nombreArchivo = nombreArchivo.replaceAll(caracterInvalido, ","));
 
         
         await tp.file.move(`biblioteca/libros/${nombreArchivo}`);

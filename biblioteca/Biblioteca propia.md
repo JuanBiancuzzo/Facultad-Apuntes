@@ -11,37 +11,16 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (98)
+#### Buscar (75)
 ---
 Programación:
-1. Site reliability engineering
-2. Web development for beginners de White Belt Mastery
-3. Javascript for kids de Nick Morgan
-4. Skills of a successful software engineer de Fernando Doglio
-5. Pro MERN Stack de Vasan Subramanian
-6. The C programming language handbook de Flavio Copes
-7. Algorithms, notes for professionals ver en Goalkicker.com
-8. Introducing python moderm computing in simple packages de Bill Lubanovic
-9. Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition de Aurélien Géron
+1. 
 
 Hacking:
-1. Learn powershell in a month of lunches
-2. Blue team handbook: SOC, SIEM, and Threat Hunting Use Cases
-3. The practice of network security monitoring de richard bejtlich
-4. Web application handbook
-5. real world bug hunting
-6. The bug hunting bootcamp
-7. Hacking api
-8. black hat graphQL
-9. The hacker playbook
-10. Extreme privacy, What it takes to disappear de Michael Bazzell
-11. Open Source Intelligence techniques de Michael Bazzell
+1. 
 
 Game development:
-1. Game programming patterns de Robert Nystrom
-2. The pragmatic programmer de Andrew Hunt y David Thomas
-3. Programming game AI by example Mat Buckland
-4. Directing video games 101 de Brian Allgeier
+1. Directing video games 101 de Brian Allgeier
 
 Marketing/Buisness:
 1. 80/20 sales and marketing de Perry Marshall
