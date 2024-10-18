@@ -3,7 +3,7 @@ dia: 2024-10-03
 etapa: sin-empezar
 tipoCita: Libro
 numReferencia: 306
-tituloObra: The Feynman Lectures on Physics, Quantum Mechanics
+tituloObra: The Feynman Lectures on Physics
 nombreAutores:
   - apellido: Feynman
     nombre: Richard P.
@@ -11,6 +11,7 @@ nombreAutores:
     nombre: Robert B.
   - apellido: Sands
     nombre: Matthew
+subtituloObra: Quantum Mechanics
 anio: "1964"
 editorial: Addison Wesley
 edicion: 

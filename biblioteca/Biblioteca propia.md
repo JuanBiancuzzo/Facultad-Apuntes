@@ -11,26 +11,18 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (103)
+#### Buscar (98)
 ---
 Programación:
-2. The Signal and the Noise: Why So Many Predictions Fail--but Some Don't de Nate Silver
-3. The Art of Statistics: How to Learn from Data de David Spiegelhalter
-4. The Hundred-Page Machine Learning Book de Andriy Burkov
-5. Deep learning book https://www.deeplearningbook.org/
-6. Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications 1st Edition de Chip Huyen
-7. Software Architecture: The Hard Parts: Modern Trade-Off Analyses for Distributed Architectures 1st Edition de Neal Ford, Mark Richards, ...
-8. Software Engineering at Google: Lessons Learned from Programming Over Time 1st Edition de Titus Winters, Tome Manshreck y otro
-9. Crafting Interpreters de Robert Nystrom
-10. The pragmatic programmer de Andy Hunt y Dave Thomas
-11. Site reliability engineering
-12. Web development for beginners de White Belt Mastery
-13. Javascript for kids de Nick Morgan
-14. Skills of a successful software engineer de Fernando Doglio
-15. Pro MERN Stack de Vasan Subramanian
-16. The C programming language handbook de Flavio Copes
-17. Algorithms, notes for professionals ver en Goalkicker.com
-18. Introducing python moderm computing in simple packages de Bill Lubanovic
+1. Site reliability engineering
+2. Web development for beginners de White Belt Mastery
+3. Javascript for kids de Nick Morgan
+4. Skills of a successful software engineer de Fernando Doglio
+5. Pro MERN Stack de Vasan Subramanian
+6. The C programming language handbook de Flavio Copes
+7. Algorithms, notes for professionals ver en Goalkicker.com
+8. Introducing python moderm computing in simple packages de Bill Lubanovic
+9. Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition de Aurélien Géron
 
 Hacking:
 1. Learn powershell in a month of lunches
@@ -88,6 +80,10 @@ Matemática:
 10. Linear algebra de Georgi Shilov
 11. Probabilidad y estadística para ingeniería y ciencias de Walpole, Myers y Myers
 12. Calculo de una variable, de James Stewart
+13. Practical statistics for data scientist de Peter Bruce, Andrew Bruce y Peter Gedeck
+14. Numerical python: Scientific computing and data science applications with numpy, scipy and matplotlib de robert Johansson
+15. Essential math for data science de thomas nield
+16. Practical linear algebra for data science de mike x cohen
 
 Física:
 1. Modern Physics: Kenneth S. Krane

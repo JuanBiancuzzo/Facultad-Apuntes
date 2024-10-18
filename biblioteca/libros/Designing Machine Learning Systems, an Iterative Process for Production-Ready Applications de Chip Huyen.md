@@ -1,20 +1,20 @@
 ---
-dia: 2024-10-10
+dia: 2024-10-18
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 337
-tituloObra: Grokking Algorithms
-subtituloObra: An Illustrated Guide for Programmers and Other Curious People
+numReferencia: 368
+tituloObra: Designing Machine Learning Systems
+subtituloObra: An Iterative Process for Production-Ready Applications
 nombreAutores:
-  - apellido: Bhargava
-    nombre: Aditya
-anio: "2016"
-editorial: Manning Publications Co
-edicion: 
+  - apellido: Huyen
+    nombre: Chip
+anio: "2022"
+editorial: O' Reilly Media, Inc.
+edicion: "1"
 volumen: 
 url: 
 capitulos: 
-cover: Grokking Algorithms, An Illustrated Guide for Programmers and Other Curious People de Aditya Bhargava.jpg
+cover: Designing Machine Learning Systems, an Iterative Process for Production-Ready Applications de Chip Huyen.jpg
 aliases: 
 tags:
   - referencia/libro

@@ -1,20 +1,24 @@
 ---
-dia: 2024-10-10
+dia: 2024-10-18
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 337
-tituloObra: Grokking Algorithms
-subtituloObra: An Illustrated Guide for Programmers and Other Curious People
+numReferencia: 367
+tituloObra: Deep Learning
+subtituloObra: 
 nombreAutores:
-  - apellido: Bhargava
-    nombre: Aditya
+  - apellido: Goodfellow
+    nombre: Ian
+  - apellido: Bengio
+    nombre: Yoshua
+  - apellido: Courville
+    nombre: Aaron
 anio: "2016"
-editorial: Manning Publications Co
+editorial: MIT Press
 edicion: 
 volumen: 
-url: 
+url: https://www.deeplearningbook.org/
 capitulos: 
-cover: Grokking Algorithms, An Illustrated Guide for Programmers and Other Curious People de Aditya Bhargava.jpg
+cover: Deep Learning de Ian Goodfellow, Yoshua Bengio, Aaron Courville.jpg
 aliases: 
 tags:
   - referencia/libro

@@ -1,20 +1,20 @@
 ---
-dia: 2024-10-10
+dia: 2024-10-18
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 337
-tituloObra: Grokking Algorithms
-subtituloObra: An Illustrated Guide for Programmers and Other Curious People
+numReferencia: 370
+tituloObra: Crafting Interpreters
+subtituloObra: 
 nombreAutores:
-  - apellido: Bhargava
-    nombre: Aditya
-anio: "2016"
-editorial: Manning Publications Co
+  - apellido: Nystrom
+    nombre: Robert
+anio: "2015"
+editorial: Robert Nystrom
 edicion: 
 volumen: 
-url: 
+url: https://www.craftinginterpreters.com/
 capitulos: 
-cover: Grokking Algorithms, An Illustrated Guide for Programmers and Other Curious People de Aditya Bhargava.jpg
+cover: Crafting Interpreters de Robert Nystrom.jpg
 aliases: 
 tags:
   - referencia/libro

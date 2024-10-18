@@ -43,7 +43,7 @@
 		nombreArchivo = nombreArchivo.replaceAll('"', "'");
 		CARACTERES_INVALIDOS.forEach(caracterInvalido => nombreArchivo = nombreArchivo.replaceAll(caracterInvalido, ""));
 
-        await tp.file.rename(nombreArchivo);
+        await tp.file.move(`biblioteca/papers/${nombreArchivo}`);
 
 		tR += tp.obsidian.stringifyYaml(infoPaper);
 

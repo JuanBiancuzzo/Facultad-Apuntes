@@ -63,7 +63,7 @@ function mostrarCitaPaper(archivo) {
 }
 
 function mostrarCitaLibro(archivo, num) {
-    const tituloObra = ` <i>${archivo.tituloObra}</i>.`;
+    const tituloObra = ` <i>${archivo.tituloObra}${archivo.subtituloObra ? ": " + archivo.subtituloObra: ""}</i>.`;
     const editorial = ` ${archivo.editorial}.`;
     const nombreAutores = mostrarNombreAutores(archivo.nombreAutores);
     const anio = ` (${archivo.anio}).`;

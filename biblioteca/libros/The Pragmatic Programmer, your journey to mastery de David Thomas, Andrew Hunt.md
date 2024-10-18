@@ -1,20 +1,22 @@
 ---
-dia: 2024-10-10
+dia: 2024-10-18
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 337
-tituloObra: Grokking Algorithms
-subtituloObra: An Illustrated Guide for Programmers and Other Curious People
+numReferencia: 371
+tituloObra: The Pragmatic Programmer
+subtituloObra: Your journey to mastery
 nombreAutores:
-  - apellido: Bhargava
-    nombre: Aditya
-anio: "2016"
-editorial: Manning Publications Co
-edicion: 
+  - apellido: Thomas
+    nombre: David
+  - apellido: Hunt
+    nombre: Andrew
+anio: "2019"
+editorial: Addison Wesley
+edicion: "2"
 volumen: 
 url: 
 capitulos: 
-cover: Grokking Algorithms, An Illustrated Guide for Programmers and Other Curious People de Aditya Bhargava.jpg
+cover: The Pragmatic Programmer, your journey to mastery de David Thomas, Andrew Hunt.jpg
 aliases: 
 tags:
   - referencia/libro

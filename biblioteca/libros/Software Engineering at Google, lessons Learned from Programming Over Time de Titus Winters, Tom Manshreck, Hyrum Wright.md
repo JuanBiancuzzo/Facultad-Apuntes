@@ -1,20 +1,24 @@
 ---
-dia: 2024-10-10
+dia: 2024-10-18
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 337
-tituloObra: Grokking Algorithms
-subtituloObra: An Illustrated Guide for Programmers and Other Curious People
+numReferencia: 369
+tituloObra: Software Engineering at Google
+subtituloObra: Lessons Learned from Programming Over Time
 nombreAutores:
-  - apellido: Bhargava
-    nombre: Aditya
-anio: "2016"
-editorial: Manning Publications Co
+  - apellido: Winters
+    nombre: Titus
+  - apellido: Manshreck
+    nombre: Tom
+  - apellido: Wright
+    nombre: Hyrum
+anio: "2020"
+editorial: O'Reilly Media, Inc.
 edicion: 
 volumen: 
 url: 
 capitulos: 
-cover: Grokking Algorithms, An Illustrated Guide for Programmers and Other Curious People de Aditya Bhargava.jpg
+cover: Software Engineering at Google, lessons Learned from Programming Over Time de Titus Winters, Tom Manshreck, Hyrum Wright.jpg
 aliases: 
 tags:
   - referencia/libro

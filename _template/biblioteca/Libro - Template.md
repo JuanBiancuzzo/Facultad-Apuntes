@@ -35,13 +35,18 @@
 			autores.push(`${autore.nombre} ${autore.apellido}`);
 		}
 		
-		nombreArchivo = `${infoLibro.tituloObra} de ${autores.join(", ")}`;
+		let subTitulo = "";
+		if (infoLibro.subtituloObra) {
+			subTitulo = `, ${infoLibro.subtituloObra.charAt(0).toLowerCase()}${infoLibro.subtituloObra.slice(1)}`;
+		}
+		nombreArchivo = `${infoLibro.tituloObra}${subTitulo} de ${autores.join(", ")}`;
 		
 		nombreArchivo = nombreArchivo.replaceAll(":", ",");
 		nombreArchivo = nombreArchivo.replaceAll('"', "'");
 		CARACTERES_INVALIDOS.forEach(caracterInvalido => nombreArchivo = nombreArchivo.replaceAll(caracterInvalido, ""));
 
-        await tp.file.rename(nombreArchivo);
+        
+        await tp.file.move(`biblioteca/libros/${nombreArchivo}`);
 
 		tR += tp.obsidian.stringifyYaml(infoLibro);
 

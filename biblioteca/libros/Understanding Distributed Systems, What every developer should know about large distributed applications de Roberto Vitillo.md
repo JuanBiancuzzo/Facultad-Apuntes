@@ -3,7 +3,8 @@ dia: 2024-10-10
 etapa: sin-empezar
 tipoCita: Libro
 numReferencia: 331
-tituloObra: "Understanding Distributed Systems: What every developer should know about large distributed applications"
+tituloObra: Understanding Distributed Systems
+subtituloObra: What every developer should know about large distributed applications
 nombreAutores:
   - apellido: Vitillo
     nombre: Roberto

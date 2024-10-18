@@ -2,8 +2,9 @@
 dia: 2024-10-03
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 305
-tituloObra: The Feynman Lectures on Physics, Mainly Electromagnetism and Matter
+numReferencia: 304
+tituloObra: The Feynman Lectures on Physics
+subtituloObra: Mainly Mechanics, Radiation and Heat
 nombreAutores:
   - apellido: Feynman
     nombre: Richard P.
@@ -14,10 +15,10 @@ nombreAutores:
 anio: "1964"
 editorial: Addison Wesley
 edicion: 
-volumen: "2"
-url: https://www.feynmanlectures.caltech.edu/II_toc.html
+volumen: "1"
+url: https://www.feynmanlectures.caltech.edu/I_toc.html
 capitulos: 
-cover: The Feynman Lectures on Physics, Mainly Electromagnetism and Matter de Richard P. Feynman, Robert B. Leighton, Matthew Sands.jpg
+cover: The Feynman Lectures on Physics, Mainly Mechanics, Radiation and Heat de Richard P. Feynman, Robert B. Leighton, Matthew Sands.jpg
 aliases: 
 tags:
   - referencia/libro

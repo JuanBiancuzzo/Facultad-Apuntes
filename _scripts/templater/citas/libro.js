@@ -1,4 +1,5 @@
 const TITULO_OBRA = "tituloObra";
+const SUBTITULO_OBRA = "subtituloObra";
 const NOMBRE_AUTORES = "nombreAutores";
 const ANIO = "anio";
 const EDITORIAL = "editorial";
@@ -7,11 +8,12 @@ const VOLUMEN = "volumen";
 const URL = "url";
 const CAPITULOS = "capitulos";
 
-const KEYS = [ TITULO_OBRA, NOMBRE_AUTORES, ANIO, EDITORIAL, EDICION, VOLUMEN, URL, CAPITULOS ];
+const KEYS = [ TITULO_OBRA, SUBTITULO_OBRA, NOMBRE_AUTORES, ANIO, EDITORIAL, EDICION, VOLUMEN, URL, CAPITULOS ];
 
 function valorDefault() {
     return {
         [TITULO_OBRA]: null,
+        [SUBTITULO_OBRA]: null,
         [NOMBRE_AUTORES]: [],
         [ANIO]: null,
         [EDITORIAL]: null,
@@ -52,6 +54,20 @@ async function citarLibro(tp, datosIniciales = undefined) {
             preguntar: async (tp, titulo) => await preguntar.simple(
                 tp, titulo ? `Modificar el título de la obra: "${titulo}"` : "Nombre de la obra:",
                 error.Quit("No se ingresó nombre de la obra")
+            )
+        },
+        [SUBTITULO_OBRA]: {
+            tipo: SIMPLE,
+            valor: datosIniciales[SUBTITULO_OBRA],
+            minimo: (_) => true,
+            representarElemento: (titulo) => {
+                let representacion = "subtítulo de la obra";
+                if (titulo) representacion += `: ${titulo}`;
+                return representacion;
+            },
+            preguntar: async (tp, titulo) => await preguntar.simple(
+                tp, titulo ? `Modificar el subtítulo de la obra: "${titulo}"` : "Sub nombre de la obra:",
+                error.Quit("No se ingresó el subnombre de la obra")
             )
         },
         [NOMBRE_AUTORES]: {

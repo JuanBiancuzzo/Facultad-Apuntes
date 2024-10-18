@@ -1,20 +1,20 @@
 ---
-dia: 2024-10-10
+dia: 2024-10-18
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 337
-tituloObra: Grokking Algorithms
-subtituloObra: An Illustrated Guide for Programmers and Other Curious People
+numReferencia: 365
+tituloObra: The Art of Statistics
+subtituloObra: Learning from Data
 nombreAutores:
-  - apellido: Bhargava
-    nombre: Aditya
-anio: "2016"
-editorial: Manning Publications Co
+  - apellido: Spiegelhalter
+    nombre: David
+anio: "2019"
+editorial: Penguin Books
 edicion: 
 volumen: 
 url: 
 capitulos: 
-cover: Grokking Algorithms, An Illustrated Guide for Programmers and Other Curious People de Aditya Bhargava.jpg
+cover: The Art of Statistics, learning from Data de David Spiegelhalter.jpg
 aliases: 
 tags:
   - referencia/libro

@@ -1,20 +1,20 @@
 ---
-dia: 2024-10-10
+dia: 2024-10-18
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 337
-tituloObra: Grokking Algorithms
-subtituloObra: An Illustrated Guide for Programmers and Other Curious People
+numReferencia: 364
+tituloObra: The signal and the noise
+subtituloObra: Why so many predictions fail - bus some don't
 nombreAutores:
-  - apellido: Bhargava
-    nombre: Aditya
-anio: "2016"
-editorial: Manning Publications Co
+  - apellido: Silver
+    nombre: Nate
+anio: "2012"
+editorial: The Penguin Press
 edicion: 
 volumen: 
 url: 
 capitulos: 
-cover: Grokking Algorithms, An Illustrated Guide for Programmers and Other Curious People de Aditya Bhargava.jpg
+cover: The signal and the noise, why so many predictions fail - bus some don't de Nate Silver.jpg
 aliases: 
 tags:
   - referencia/libro

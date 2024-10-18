@@ -3,7 +3,8 @@ dia: 2024-10-10
 etapa: sin-empezar
 tipoCita: Libro
 numReferencia: 336
-tituloObra: An Introduction to Statistical Learning, with Applications in Python
+tituloObra: An Introduction to Statistical Learning
+subtituloObra: With Applications in Python
 nombreAutores:
   - apellido: James
     nombre: Gareth

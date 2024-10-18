@@ -1,20 +1,20 @@
 ---
-dia: 2024-10-10
+dia: 2024-10-18
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 337
-tituloObra: Grokking Algorithms
-subtituloObra: An Illustrated Guide for Programmers and Other Curious People
+numReferencia: 366
+tituloObra: The Hundred-Page machine learning book
+subtituloObra: 
 nombreAutores:
-  - apellido: Bhargava
-    nombre: Aditya
-anio: "2016"
-editorial: Manning Publications Co
+  - apellido: Burkov
+    nombre: Andriy
+anio: "2019"
+editorial: Eleven Languages
 edicion: 
 volumen: 
 url: 
 capitulos: 
-cover: Grokking Algorithms, An Illustrated Guide for Programmers and Other Curious People de Aditya Bhargava.jpg
+cover: The Hundred-Page machine learning book de Andriy Burkov.jpg
 aliases: 
 tags:
   - referencia/libro
