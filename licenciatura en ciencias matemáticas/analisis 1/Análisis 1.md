@@ -5,6 +5,8 @@ etapa: sin-empezar
 estado: Sin empezar
 tags:
   - materia/licenciatura-en-ciencias-matemáticas
+  - materia/licenciatura-en-ciencias-físicas
+  - materia/licenciatura-en-ciencias-de-datos
 correlativas:
 ---
 # Apuntes
