@@ -1,41 +1,26 @@
-/* Dropdown Button */
-.dropbtn {
-    display: flex;
-    flex-direction: column;
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    padding-right: 2em;
+.mural {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  width: 99%;
+  max-width: 1200px;
 }
-  
-  
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+
+.carta {
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1em;
+  border: 2px solid #dadada; 
+  align-content: space-around;
 }
-  
-  /* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+
+.carta img {
+  object-fit: cover;
+  border-radius: 10px;
 }
-  
-  /* Change color of dropdown links on hover */
-#content a:hover {
-    background-color: #ddd;
+
+.carta span {
+  font-size: 0.9rem;
 }
-  
-  /* Show the dropdown menu on hover */
-.dropbtn:hover #content { display: block; }
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropbtn:hover .dropbtn {background-color: #3e8e41;}

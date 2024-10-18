@@ -19,3 +19,4 @@ Tengo que investigar los siguientes links
 * [ ] [How to create an OS from scratch](https://github.com/cfenollosa/os-tutorial)
 * [ ] [Malloc tutorial](https://danluu.com/malloc-tutorial/)
 * [ ] [Operating systems development for Dummies](https://medium.com/@lduck11007/operating-systems-development-for-dummies-3d4d786e8ac)
+* [ ] [Wiki of operating systems](https://wiki.osdev.org/Expanded_Main_Page)

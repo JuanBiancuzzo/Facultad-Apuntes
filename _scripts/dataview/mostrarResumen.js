@@ -31,7 +31,7 @@ let archivos = dv.pages(`#${tagRepresentante} and -#resumen`)
     .map(({ path, nombre, aliases }) => ({
         path: path,
         nombre: nombre,
-        largo: (aliases.length >= 3),
+        largo: (aliases.length >= 2),
         descripcionSimple: false,
         descripcion: aliases.filter(alias => !alias.includes("#"))
     }));

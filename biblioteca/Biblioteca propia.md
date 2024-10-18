@@ -14,7 +14,6 @@ await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 #### Buscar (103)
 ---
 Programación:
-1. Understanding Distributed Systems: What every developer should know about large distributed applications de Roberto Vitillo
 2. The Signal and the Noise: Why So Many Predictions Fail--but Some Don't de Nate Silver
 3. The Art of Statistics: How to Learn from Data de David Spiegelhalter
 4. The Hundred-Page Machine Learning Book de Andriy Burkov

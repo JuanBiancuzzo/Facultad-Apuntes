@@ -39,9 +39,9 @@
 		
 		let nombreArchivo = `${infoPaper.tituloInforme} de ${autores.join(", ")}${exceso ? AGREGADO : ""}`;
 
-		nombreArchivo.replaceAll(":", ",");
-		nombreArchivo.replaceAll('"', "'");
-		CARACTERES_INVALIDOS.forEach(caracterInvalido => nombreArchivo.replaceAll(caracterInvalido, ""));
+		nombreArchivo = nombreArchivo.replaceAll(":", ",");
+		nombreArchivo = nombreArchivo.replaceAll('"', "'");
+		CARACTERES_INVALIDOS.forEach(caracterInvalido => nombreArchivo = nombreArchivo.replaceAll(caracterInvalido, ""));
 
         await tp.file.rename(nombreArchivo);
 

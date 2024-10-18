@@ -62,7 +62,7 @@ let archivos = dv.pages(`#${tagRepresentante} and (#nota/investigacion or #nota/
             subnombre: referencias
                 .map(referencia => `[${referencia}]`)
                 .join(" "),
-            largo: (aliases.length >= 3),
+            largo: (aliases.length >= 2),
             etapa: etapa,
             descripcionSimple: false,
             descripcion: aliases.filter(alias => !alias.includes("#"))

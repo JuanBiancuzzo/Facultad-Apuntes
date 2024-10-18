@@ -44,7 +44,7 @@ let datos = dv.pages(`"${materia.file.folder}" and #resumen`)
         elementos: archivos.map(({ path, nombre, aliases }) => ({
             path: path,
             nombre: nombre,
-            largo: (aliases.length >= 3),
+            largo: (aliases.length >= 2),
             descripcionSimple: false,
             descripcion: aliases.filter(alias => !alias.includes("#"))
         })),
