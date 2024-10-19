@@ -7,13 +7,12 @@
     const SALIR = "salir";
 
     const tArchivo = tp.file.find_tfile(tp.file.path(true));
-    let archivos = dv.pages()
-        .filter(archivo => archivo.orden);
-    let cantidad = archivos.length;
     
-    let archivosPosibles = conseguirArchivos(archivos, cantidad);
+    let archivosPosibles = conseguirArchivos();
     let archivoUno = archivosPosibles[0];
     let archivoDos = archivosPosibles[1];
+
+    let tarea;
 
     let pendientes = [];
     while (true) {
@@ -23,7 +22,9 @@
             "Que archivo es mejor?"
         );
 
-        archivosPosibles = conseguirArchivos(archivos, cantidad);
+        if (tarea) await tarea;
+
+        archivosPosibles = conseguirArchivos();
         archivoUno = archivosPosibles[0];
         archivoDos = archivosPosibles[1];
 
@@ -31,25 +32,34 @@
         if (!respuesta || respuesta == SALIR) break;
 
         let { mejor, peor } = respuesta;
-        if ( mejor.orden < peor.orden ) {
+        if ( parseInt(mejor.orden, 10) > parseInt(peor.orden, 10) ) {
             let nuevoOrdenPeor = mejor.orden;
             let nuevoOrdenMejor = peor.orden;
 
             let tMejor = tp.file.find_tfile(mejor.file.path);
             let tPeor = tp.file.find_tfile(peor.file.path);
 
-            await app.fileManager.processFrontMatter(tMejor, (frontmatter) => {
+            let tareas = [];
+            tareas.push(app.fileManager.processFrontMatter(tMejor, (frontmatter) => {
                 frontmatter["orden"] = nuevoOrdenMejor;
-            });
-            await app.fileManager.processFrontMatter(tPeor, (frontmatter) => {
+            }));
+
+            tareas.push(app.fileManager.processFrontMatter(tPeor, (frontmatter) => {
                 frontmatter["orden"] = nuevoOrdenPeor;
-            });
+            }));
+
+            tarea = Promise.all(tareas).then((_) => console.log(`Cambiaron\n${nuevoOrdenPeor} pasa a ser ${nuevoOrdenMejor}`));
+        } else { 
+            console.log(`No es necesario de cambiar\n${mejor.orden} < ${peor.orden}`);
         }
     }
     
     return await eliminar.directo(tArchivo);
 
-    function conseguirArchivos(archivos, cantidad) {
+    function conseguirArchivos() {
+        let archivos = dv.pages().filter(archivo => archivo.orden);
+        let cantidad = archivos.length;
+
         let archivoUno = archivos[Math.floor(Math.random() * cantidad)]
         let archivoDos;
         do {

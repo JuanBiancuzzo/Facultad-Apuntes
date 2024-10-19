@@ -12,7 +12,7 @@ aliases:
 referencias:
   - "260"
 etapa: ampliar
-orden: 281
+orden: 210
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

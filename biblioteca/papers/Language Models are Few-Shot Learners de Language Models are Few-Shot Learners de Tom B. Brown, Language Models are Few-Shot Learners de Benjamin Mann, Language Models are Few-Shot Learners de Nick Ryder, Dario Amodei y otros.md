@@ -76,7 +76,7 @@ tags:
   - biblioteca/paper
   - nota/investigacion
   - machine-Learning/transformers
-orden: 116
+orden: 241
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

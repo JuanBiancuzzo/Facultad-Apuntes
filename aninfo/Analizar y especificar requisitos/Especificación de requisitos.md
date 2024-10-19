@@ -11,7 +11,7 @@ tags:
 # Documentos
 ---
 Para los [[Requisito de negocio|requisitos de negocio]] tenemos
-![[Especificación de requisitos de negocio (BRD)#Definición]]
+![[Especificación de requisitos de negocio#Definición]]
 
 Para los [[Requisito de usuario|requisitos de usuario]] tenemos
 ![[Especificación de requisitos del usuario (URD)#Definición]]

@@ -55,7 +55,7 @@ archivos = archivos.filter(archivo => archivo.orden)
 
         return resultado;
     })
-    .sort(({ etapa, ..._ }) => etapa in ETAPAS ? ETAPAS[etapa] : -1)
+    // .sort(({ etapa, ..._ }) => etapa in ETAPAS ? ETAPAS[etapa] : -1)
     .map(({ path, nombre, etapa, aliases, referencias }) => ({
         path: path,
         nombre: nombre,

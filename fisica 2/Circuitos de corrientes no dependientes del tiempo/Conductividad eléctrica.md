@@ -8,7 +8,7 @@ aliases:
 referencias:
   - "212"
 etapa: terminado
-orden: 23
+orden: 334
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

@@ -23,7 +23,7 @@ aliases:
   - Forward And Backward Reaching Inverse Kinematics
 referencias:
   - "322"
-orden: 112
+orden: 245
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

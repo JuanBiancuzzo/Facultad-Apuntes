@@ -9,7 +9,7 @@ referencias:
 aliases:
   - Fuerza eléctrica
 etapa: ampliar
-orden: 164
+orden: 314
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

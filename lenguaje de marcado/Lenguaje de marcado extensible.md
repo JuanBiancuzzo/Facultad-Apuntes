@@ -9,7 +9,7 @@ aliases:
 tags:
   - nota/investigacion
   - lenguaje-de-marcado
-orden: 229
+orden: 290
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

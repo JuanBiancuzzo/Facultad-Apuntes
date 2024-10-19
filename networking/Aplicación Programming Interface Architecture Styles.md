@@ -8,7 +8,7 @@ aliases:
 tags:
   - nota/investigacion
   - networking
-orden: 266
+orden: 179
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

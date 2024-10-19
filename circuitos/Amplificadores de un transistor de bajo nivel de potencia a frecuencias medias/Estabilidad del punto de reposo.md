@@ -4,7 +4,7 @@ tags:
   - circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
   - nota/facultad
 etapa: sin-empezar
-orden: 136
+orden: 221
 ---
 # Definición
 ---

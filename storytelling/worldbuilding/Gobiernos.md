@@ -8,7 +8,7 @@ aliases:
 tags:
   - nota/investigacion
   - storytelling/worldbuilding
-orden: 341
+orden: 16
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

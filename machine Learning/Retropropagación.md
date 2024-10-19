@@ -9,7 +9,7 @@ aliases:
 tags:
   - nota/investigacion
   - machine-Learning
-orden: 239
+orden: 118
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
