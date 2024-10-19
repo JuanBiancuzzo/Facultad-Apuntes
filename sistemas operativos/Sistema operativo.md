@@ -7,7 +7,7 @@ tags:
   - embebidos/Diseño-desarrollo-y-depuración
   - sisop/Kernel
   - nota/investigacion
-orden: 46
+orden: 38
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

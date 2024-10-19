@@ -15,13 +15,9 @@ if (archivos.length <= 0) {
 
 archivos = archivos.filter(archivo => archivo.orden)
     .sort(archivo => archivo.orden)
-    .flatMap(archivo => {
+    .flatMap(archivo => {      
         let resultado = [];
-        if (archivo.tipoCita == "Libro" || archivo.tipoCita == "Paper")
-            return resultado;
-        if (!archivo.etapa || archivo.etapa == "terminado")
-            return resultado;
-        
+          
         let aliasesActual = archivo.aliases ? archivo.aliases : [];
         let referenciasActuales = [];
         if (archivo.referencias) {

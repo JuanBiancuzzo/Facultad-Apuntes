@@ -6,7 +6,7 @@ tags:
   - data-structures
   - lenguajes-de-programación/lenguaje-c
 etapa: sin-empezar
-orden: 356
+orden: 40
 ---
 # Definición
 ---

@@ -19,7 +19,7 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-orden: 195
+orden: 95
 ---
 ```dataviewjs
 	let actual = dv.current();
