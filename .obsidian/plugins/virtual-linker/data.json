@@ -1,6 +1,9 @@
 {
+  "advancedSettings": true,
   "linkerActivated": true,
-  "matchOnlyWholeWords": true,
+  "matchAnyPartsOfWords": false,
+  "matchEndOfWords": false,
+  "matchBeginningOfWords": false,
   "suppressSuffixForSubWords": false,
   "includeAllFiles": true,
   "linkerDirectories": [
@@ -9,12 +12,21 @@
   "excludedDirectories": [
     "_template"
   ],
-  "glossarySuffix": "🔗",
+  "excludedDirectoriesForLinking": [],
+  "virtualLinkSuffix": "🔗",
+  "virtualLinkAliasSuffix": "🔗",
+  "useMarkdownLinks": false,
+  "linkFormat": "shortest",
+  "defaultLinkFormat": "shortest",
+  "useDefaultLinkStyleForConversion": true,
   "applyDefaultLinkStyling": true,
   "includeHeaders": false,
   "matchCaseSensitive": false,
+  "capitalLetterProportionForAutomaticMatchCase": 0.75,
   "tagToIgnoreCase": "linker-ignore-case",
   "tagToMatchCase": "linker-match-case",
+  "propertyNameToMatchCase": "linker-match-case",
+  "propertyNameToIgnoreCase": "linker-ignore-case",
   "tagToExcludeFile": "linker-exclude",
   "tagToIncludeFile": "linker-include",
   "excludeLinksToOwnNote": true,
@@ -22,5 +34,8 @@
   "excludeLinksInCurrentLine": false,
   "onlyLinkOnce": true,
   "excludeLinksToRealLinkedFiles": true,
-  "includeAliases": true
+  "includeAliases": true,
+  "alwaysShowMultipleReferences": false,
+  "matchOnlyWholeWords": true,
+  "glossarySuffix": "🔗"
 }

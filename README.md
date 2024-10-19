@@ -101,9 +101,10 @@ Estos proyectos tienen una aplicación como resultado final
 ---
 Estos proyectos tienen como objetivo investigar y crear pruebas para llegar a un resultado
 
-| Proyecto                                                                                    | Estado      |
-| ------------------------------------------------------------------------------------------- | ----------- |
-| [Lagrangian Physics Engine](lagrangian%20physics%20engine/Lagrangian%20Physics%20Engine.md) | Sin empezar |
+| Proyecto                                                                                                                                              | Estado      |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| [Ray Marching con a diagramas de Voronói](ray%20marching%20con%20a%20diagramas%20de%20voronói/Ray%20Marching%20con%20a%20diagramas%20de%20Voronói.md) | Sin empezar |
+| [Lagrangian Physics Engine](lagrangian%20physics%20engine/Lagrangian%20Physics%20Engine.md)                                                           | Sin empezar |
 
 ### Game Design Documents
 ---
