@@ -10,21 +10,24 @@
     let archivos = dv.pages()
         .filter(archivo => archivo.orden);
     let cantidad = archivos.length;
+    
+    let archivosPosibles = conseguirArchivos(archivos, cantidad);
+    let archivoUno = archivosPosibles[0];
+    let archivoDos = archivosPosibles[1];
 
     let pendientes = [];
     while (true) {
-        let archivoUno = archivos[Math.floor(Math.random() * cantidad)]
-        let archivoDos;
-        do {
-            archivoDos = archivos[Math.floor(Math.random() * cantidad)]
-        } while(archivoUno.file.path == archivoDos.file.path);
-
-        let respuesta = await preguntar.suggester(
+        let respuesta = preguntar.suggester(
             tp, [ archivoUno.file.name, archivoDos.file.name, "Salir" ], 
             [{ mejor: archivoUno, peor: archivoDos }, { mejor: archivoDos, peor: archivoUno }, SALIR],
             "Que archivo es mejor?"
         );
 
+        archivosPosibles = conseguirArchivos(archivos, cantidad);
+        archivoUno = archivosPosibles[0];
+        archivoDos = archivosPosibles[1];
+
+        respuesta = await respuesta;
         if (!respuesta || respuesta == SALIR) break;
 
         let { mejor, peor } = respuesta;
@@ -45,4 +48,14 @@
     }
     
     return await eliminar.directo(tArchivo);
+
+    function conseguirArchivos(archivos, cantidad) {
+        let archivoUno = archivos[Math.floor(Math.random() * cantidad)]
+        let archivoDos;
+        do {
+            archivoDos = archivos[Math.floor(Math.random() * cantidad)]
+        } while(archivoUno.file.path == archivoDos.file.path);
+
+        return [ archivoUno, archivoDos ];
+    }
 %>
