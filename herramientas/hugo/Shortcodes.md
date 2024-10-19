@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - herramientas/hugo
-orden: 220
+orden: 33
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
