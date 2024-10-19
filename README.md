@@ -67,7 +67,6 @@ Un listado de los temas investigados y su estado actual
 | [Generación de energía](generación%20de%20energía/Índice.md)         | Sin empezar                                                                                                       |
 | [Generación procedural](generación%20procedural/Índice.md)           | Falta resumir                                                                                                     |
 | [Herramientas](herramientas/Índice.md)                               | Falta resumir                                                                                                     |
-| [Lagrangian mechanics](física/lagrangian%20mechanics/Índice.md)             | Falta resumir                                                                                                     |
 | [Lenguaje de marcado](lenguaje%20de%20marcado/Índice.md)             | Falta resumir                                                                                                     |
 | [Lenguajes de programación](lenguajes%20de%20programación/Índice.md) | Sin empezar                                                                                                       |
 | [Machine Learning](machine%20Learning/Índice.md)                     | Falta resumir                                                                                                     |

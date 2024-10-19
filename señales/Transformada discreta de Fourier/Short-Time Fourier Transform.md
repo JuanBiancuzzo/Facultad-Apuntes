@@ -6,7 +6,7 @@ tags:
   - señales/Transformada-discreta-de-Fourier
   - nota/facultad
 etapa: sin-empezar
-orden: 310
+orden: 357
 ---
 # Definición
 ---

@@ -8,7 +8,13 @@ const ETAPAS = {
     ["terminado"]: 4
 };
 
-let archivos = dv.pages(`#nota`)
+let archivos = dv.pages(`#nota`);
+if (archivos.length <= 0) {
+    dv.paragraph("Recargar...");
+}
+
+archivos = archivos.filter(archivo => archivo.orden)
+    .sort(archivo => archivo.orden)
     .flatMap(archivo => {
         let resultado = [];
         if (archivo.tipoCita == "Libro" || archivo.tipoCita == "Paper")

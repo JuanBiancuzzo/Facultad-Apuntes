@@ -9,7 +9,7 @@ aliases:
 tags:
   - nota/investigacion
   - game-creation
-orden: 174
+orden: 55
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

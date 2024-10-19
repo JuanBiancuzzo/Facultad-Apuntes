@@ -295,6 +295,36 @@
       "openFileInMode": "default",
       "fileExistsMode": "Increment the file name",
       "setFileExistsBehavior": true
+    },
+    {
+      "id": "45d126a2-d125-448d-9630-8ee8ad826691",
+      "name": "Ordenar notas",
+      "type": "Template",
+      "command": true,
+      "templatePath": "_template/Ordenar notas.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "ordenar Temp"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "temp"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default",
+      "fileExistsMode": "Overwrite the file",
+      "setFileExistsBehavior": true
     }
   ],
   "macros": [],
@@ -302,7 +332,7 @@
   "devMode": false,
   "templateFolderPath": "_template",
   "announceUpdates": true,
-  "version": "1.11.0",
+  "version": "1.11.1",
   "disableOnlineFeatures": true,
   "enableRibbonIcon": false,
   "ai": {

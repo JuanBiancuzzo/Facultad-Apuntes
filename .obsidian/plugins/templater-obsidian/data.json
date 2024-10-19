@@ -32,6 +32,8 @@
     "_template/investigacion/Editar referencia - Template.md",
     "_template/investigacion/Citar en linea.md"
   ],
-  "startup_templates": [],
+  "startup_templates": [
+    "_template/startup/start.md"
+  ],
   "enable_ribbon_icon": false
 }
