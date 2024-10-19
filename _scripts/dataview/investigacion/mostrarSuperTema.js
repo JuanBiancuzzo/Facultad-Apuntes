@@ -1,5 +1,10 @@
 let { indice } = input;
 
+if (!indice) {
+    dv.paragraph("No esta cargando - Recargar");
+    return;
+}
+
 let carpetaSuperTema = indice.file.folder.split("/");
 carpetaSuperTema.pop();
 carpetaSuperTema = carpetaSuperTema.join("/");

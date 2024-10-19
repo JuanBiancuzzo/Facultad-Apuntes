@@ -1,5 +1,10 @@
 const { indice } = input;
 
+if (!indice) {
+    dv.paragraph("No esta cargando - Recargar");
+    return;
+}
+
 let tagRepresentante = tagIndice(indice);
 
 let nivelActual = indice.file.folder.split("/").length;
@@ -70,10 +75,7 @@ let archivos = dv.pages(`#${tagRepresentante} and (#nota/investigacion or #nota/
         mostrarTitulo: () => {
             if (key < 0) return;
 
-            console.log(key);
-
             let subTema = subTemas[key];
-            console.log(subTema);
             let tema = subTema.file.folder.split("/").pop();
             tema = `${tema.charAt(0).toUpperCase()}${tema.slice(1)}`;
             dv.el("div", `<h3> ${tema} </h3> <hr>`);

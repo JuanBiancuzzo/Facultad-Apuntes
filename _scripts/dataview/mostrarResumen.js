@@ -1,5 +1,10 @@
 let { resumen } = input;
 
+if (!resumen) {
+    dv.paragraph("No esta cargando - Recargar");
+    return;
+}
+
 let tagRepresentante = resumen.tags.find(tag => !tag.startsWith("resumen"));
 let archivos = dv.pages(`#${tagRepresentante} and -#resumen`)
     .flatMap(archivo => {

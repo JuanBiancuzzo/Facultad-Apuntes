@@ -2,6 +2,11 @@ const citaView = require(app.vault.adapter.basePath + "/_scripts/dataview/invest
 
 const { indice } = input;
 
+if (!indice) {
+    dv.paragraph("No esta cargando - Recargar");
+    return;
+}
+
 let tag = indice.file.folder.trim()
     .split(" ")
     .filter(token => token.trim() != "-" && token.trim() != "")

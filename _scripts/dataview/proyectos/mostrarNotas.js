@@ -1,5 +1,10 @@
 let { proyecto } = input;
 
+if (!proyecto) {
+    dv.paragraph("No esta cargando - Recargar");
+    return;
+}
+
 let tagRepresentante = proyecto.file.folder.trim()
     .split(" ")
     .filter(token => token.trim() != "-" && token.trim() != "")

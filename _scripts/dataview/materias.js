@@ -1,5 +1,10 @@
 let { tag } = input;
 
+if (!tag) {
+    dv.paragraph("No esta cargando - Recargar");
+    return;
+}
+
 let carrera = dv.pages(`#carrera/${tag}`)[0];
 
 let materias = dv.pages(`#materia/${tag}`)

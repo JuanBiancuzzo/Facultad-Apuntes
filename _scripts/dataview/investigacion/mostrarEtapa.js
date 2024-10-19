@@ -1,5 +1,10 @@
 const { etapa } = input;
 
+if (!etapa) {
+	dv.el("p", ` > [!bug]+\n > No esta cargando - Recargar`);
+    return;
+}
+
 let estadoCallout = "missing";
 let texto = "Hubo un error, el estado todavia no se agregó";
 switch (etapa) {

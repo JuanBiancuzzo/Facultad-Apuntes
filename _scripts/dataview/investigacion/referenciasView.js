@@ -1,6 +1,12 @@
-const citaView = require(app.vault.adapter.basePath + "/_scripts/dataview/investigacion/citaView.js");
 
 const { archivo } = input;
+
+if (!archivo) {
+    dv.paragraph("No esta cargando - Recargar");
+    return;
+}
+
+const citaView = require(app.vault.adapter.basePath + "/_scripts/dataview/investigacion/citaView.js");
 
 let referenciasArchivo = archivo.referencias ? archivo.referencias : [];
 if (archivo.numReferencia) 

@@ -1,5 +1,10 @@
 let { materia } = input;
 
+if (!materia) {
+    dv.paragraph("No esta cargando - Recargar");
+    return;
+}
+
 let resumenes = dv.pages(`"${materia.file.folder}" and #resumen`)
     .sort(resumen => resumen.capitulo);
 

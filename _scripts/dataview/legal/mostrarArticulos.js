@@ -1,5 +1,10 @@
 const { paginaActual } = input;
 
+if (!paginaActual) {
+    dv.paragraph("No esta cargando - Recargar");
+    return;
+}
+
 // Devuelve html de como se ve el artículo
 const ENUMERACION = "enumeracion";
 const TEXTO = "texto";

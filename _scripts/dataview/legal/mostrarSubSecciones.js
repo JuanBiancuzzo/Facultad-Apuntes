@@ -1,5 +1,10 @@
 const { paginaActual } = input;
 
+if (!paginaActual) {
+    dv.paragraph("No esta cargando - Recargar");
+    return;
+}
+
 const carpeta = paginaActual.file.folder;
 const nivel = carpeta.split("/").length;
 
