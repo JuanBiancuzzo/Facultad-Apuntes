@@ -14,6 +14,7 @@ aliases:
   - Lenguaje ensamblador
   - Lenguaje assembler
   - Assembly
+orden: 233
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

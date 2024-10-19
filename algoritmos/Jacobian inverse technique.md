@@ -1,11 +1,12 @@
 ---
 dia: 2024-10-11
 etapa: sin-empezar
-referencias: 
- - "320"
-tags: 
- - algoritmos
- - nota/investigacion
+referencias:
+  - "320"
+tags:
+  - algoritmos
+  - nota/investigacion
+orden: 5
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

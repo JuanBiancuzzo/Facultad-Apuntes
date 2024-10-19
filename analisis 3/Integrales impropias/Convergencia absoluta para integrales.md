@@ -4,6 +4,7 @@ tags:
   - analisis-3/Integrales-impropias
   - nota/facultad
 etapa: sin-empezar
+orden: 10
 ---
 # Definición
 ---

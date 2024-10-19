@@ -28,6 +28,7 @@ tags:
 aliases:
   - Q/U protocol
   - Query/Update protocol
+orden: 113
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

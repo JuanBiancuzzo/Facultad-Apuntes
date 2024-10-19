@@ -1,11 +1,12 @@
 ---
 dia: 2024-08-18
 etapa: sin-empezar
-referencias: 
- - "196"
- - "196"
-tags: 
- - nota/investigacion
+referencias:
+  - "196"
+  - "196"
+tags:
+  - nota/investigacion
+orden: 245
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

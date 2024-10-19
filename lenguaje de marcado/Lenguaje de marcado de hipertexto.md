@@ -11,6 +11,7 @@ tags:
   - nota/investigacion
   - lenguaje-de-marcado
   - redes/Capa-de-aplicación
+orden: 230
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

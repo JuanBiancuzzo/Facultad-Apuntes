@@ -9,6 +9,7 @@ aliases:
   - GPRS
   - Servicio general de paquetes vía radio
 etapa: sin-empezar
+orden: 275
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

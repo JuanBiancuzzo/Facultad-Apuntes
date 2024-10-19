@@ -20,6 +20,7 @@ tags:
   - biblioteca/libro
   - nota/investigacion
   - herramientas/LTSpice
+orden: 60
 ---
 ```dataviewjs
 	let actual = dv.current();
