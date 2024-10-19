@@ -9,7 +9,6 @@
     let tPadre = tArchivo.parent;
 
 	if (!tPadre || tPadre.isRoot()) {
-		console.log("Esta en el root");
 		return;
 	}
 
