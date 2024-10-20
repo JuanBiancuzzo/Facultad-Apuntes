@@ -20,3 +20,4 @@ Tengo que investigar los siguientes links
 * [ ] [Malloc tutorial](https://danluu.com/malloc-tutorial/)
 * [ ] [Operating systems development for Dummies](https://medium.com/@lduck11007/operating-systems-development-for-dummies-3d4d786e8ac)
 * [ ] [Wiki of operating systems](https://wiki.osdev.org/Expanded_Main_Page)
+* [ ] [ARM CCA](https://developer.arm.com/documentation/den0125/0300/Arm-CCA-Hardware-Architecture#:~:text=Realm%20World%20Requirements&text=The%20Realm%20world%20must%20be,non%2DRoot%20worlds%20and%20devices.)

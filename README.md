@@ -54,31 +54,32 @@ Un listado de otras carreras en las que voy a ir resumiendo para completar y ver
 ---
 Un listado de los temas investigados y su estado actual
 
-| Tema de investigación                                                | Estado                                                                                                            |
-| -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| [Algoritmos](algoritmos/Algoritmo.md)                                | Empezando a describir algunos algoritmos                                                                          |
-| [Animation](animation/Índice.md)                                     | Estamos avanzando con algunos conceptos, pero todavía falta la mayor parte del conocimiento trandicional o básico |
-| [Compilador](compilador/Índice.md)                                   | Sin empezar                                                                                                       |
-| [Data structures](data%20structures/Estructura%20de%20datos.md)      | Falta resumir                                                                                                     |
-| [Dibujo](dibujo/Índice.md)                                           | Falta resumir                                                                                                     |
-| [Física](física/Índice.md)                                           | Sin empezar                                                                                                       |
-| [Game creation](game%20creation/Índice.md)                           | Falta resumir                                                                                                     |
-| [Game engine](game%20engine/Índice.md)                               | Falta resumir                                                                                                     |
-| [Generación de energía](generación%20de%20energía/Índice.md)         | Sin empezar                                                                                                       |
-| [Generación procedural](generación%20procedural/Índice.md)           | Falta resumir                                                                                                     |
-| [Herramientas](herramientas/Índice.md)                               | Falta resumir                                                                                                     |
-| [Lenguaje de marcado](lenguaje%20de%20marcado/Índice.md)             | Falta resumir                                                                                                     |
-| [Lenguajes de programación](lenguajes%20de%20programación/Índice.md) | Sin empezar                                                                                                       |
-| [Machine Learning](machine%20Learning/Índice.md)                     | Falta resumir                                                                                                     |
-| [Matemática](matemática/Índice.md)                                   | Falta resumir                                                                                                     |
-| [Mecánica](mecánica/Índice.md)                                       | Sin empezar                                                                                                       |
-| [Música](música/Índice.md)                                           | Falta resumir                                                                                                     |
-| [Networking](networking/Índice.md)                                   | Falta resumir                                                                                                     |
-| [Placa de Desarrollo](placa%20de%20Desarrollo/Índice.md)             | Sin empezar                                                                                                       |
-| [Protocolos](protocolos/Protocolo.md)                                | Tenemos principalmente los protocolos de red pero no mucho más allá de eso                                        |
-| [Reglas APA](reglas%20APA/Índice.md)                                 | Falta resumir                                                                                                     |
-| [Sistemas operativos](sistemas%20operativos/Sistema%20operativo.md)  | Sin empezar                                                                                                       |
-| [Storytelling](storytelling/Índice.md)                               | Falta resumir                                                                                                     |
+| Tema de investigación                                                                                    | Estado                                                                                                            |
+| -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| [Algoritmos](algoritmos/Algoritmo.md)                                                                    | Empezando a describir algunos algoritmos                                                                          |
+| [Animation](animation/Índice.md)                                                                         | Estamos avanzando con algunos conceptos, pero todavía falta la mayor parte del conocimiento trandicional o básico |
+| [Arquitectura de procesadores](arquitectura%20de%20procesadores/Arquitectura%20del%20microprocesador.md) | Sin empezar                                                                                                       |
+| [Compilador](compilador/Índice.md)                                                                       | Sin empezar                                                                                                       |
+| [Data structures](data%20structures/Estructura%20de%20datos.md)                                          | Falta resumir                                                                                                     |
+| [Dibujo](dibujo/Índice.md)                                                                               | Falta resumir                                                                                                     |
+| [Física](física/Índice.md)                                                                               | Sin empezar                                                                                                       |
+| [Game creation](game%20creation/Índice.md)                                                               | Falta resumir                                                                                                     |
+| [Game engine](game%20engine/Índice.md)                                                                   | Falta resumir                                                                                                     |
+| [Generación de energía](generación%20de%20energía/Índice.md)                                             | Sin empezar                                                                                                       |
+| [Generación procedural](generación%20procedural/Índice.md)                                               | Falta resumir                                                                                                     |
+| [Herramientas](herramientas/Índice.md)                                                                   | Falta resumir                                                                                                     |
+| [Lenguaje de marcado](lenguaje%20de%20marcado/Índice.md)                                                 | Falta resumir                                                                                                     |
+| [Lenguajes de programación](lenguajes%20de%20programación/Índice.md)                                     | Sin empezar                                                                                                       |
+| [Machine Learning](machine%20Learning/Índice.md)                                                         | Falta resumir                                                                                                     |
+| [Matemática](matemática/Índice.md)                                                                       | Falta resumir                                                                                                     |
+| [Mecánica](mecánica/Índice.md)                                                                           | Sin empezar                                                                                                       |
+| [Música](música/Índice.md)                                                                               | Falta resumir                                                                                                     |
+| [Networking](networking/Índice.md)                                                                       | Falta resumir                                                                                                     |
+| [Placa de Desarrollo](placa%20de%20Desarrollo/Índice.md)                                                 | Sin empezar                                                                                                       |
+| [Protocolos](protocolos/Protocolo.md)                                                                    | Tenemos principalmente los protocolos de red pero no mucho más allá de eso                                        |
+| [Reglas APA](reglas%20APA/Índice.md)                                                                     | Falta resumir                                                                                                     |
+| [Sistemas operativos](sistemas%20operativos/Sistema%20operativo.md)                                      | Sin empezar                                                                                                       |
+| [Storytelling](storytelling/Índice.md)                                                                   | Falta resumir                                                                                                     |
 
 ## Proyectos
 ---

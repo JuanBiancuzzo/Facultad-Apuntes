@@ -1,14 +1,24 @@
 ---
-dia: 2024-08-29
+dia: 2024-10-20
+estado: Sin empezar
 tags:
+  - índice
+  - arquitectura-de-procesadores
+  - nota/investigacion
   - estructura/Microarquitectura
-  - nota/facultad
   - embebidos/Microcontroladores-de-32-bits
 aliases:
   - Arquitectura de procesador
   - Ciclo fetch-decode-execute
 ---
-# Definición
+```dataviewjs
+await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
+```
+# ¿Qué se va a investigar?
+---
+Vamos a agrupar la investigación de [[Arquitectura del microprocesador|arquitectura de procesadores]] para poder ir entendiendo mejor su funcionamiento
+
+## Resumen
 ---
 Para ejecutar un [[Programa|programa]], el [[Procesador|microprocesador]] realiza el llamado ciclo fetch, o ciclo de búsqueda-ejecución
 1. Buscar en memoria la próxima instrucción a ser ejecutada ^fetch
@@ -54,3 +64,16 @@ En un procesador muy simple, cada paso de una instrucción se completa antes de 
 ```
 
 Sin embargo, esto no es muy eficiente en términos de uso de recursos internos. Una mejor forma de hacerlo, sería usando la técnica llamada [[Pipelining|pipelining]]
+
+## Archivos
+---
+```dataviewjs
+await dv.view("_scripts/dataview/investigacion/mostrarArchivos", { indice: dv.current() });
+```
+
+
+# Bibliografía
+---
+```dataviewjs
+await dv.view('_scripts/dataview/investigacion/biblioIndice', { indice: dv.current() });
+```

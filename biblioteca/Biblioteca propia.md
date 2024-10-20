@@ -11,10 +11,22 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (75)
+#### Buscar (88)
 ---
 Programación:
-1. 
+1. Clean Code: All the tricks and patterns of writing good and clean code
+2. The clean coder: A code of conduct for professional programmers
+3. Introduction to algorithms: In-depth knowledge of data structure and algorithms
+4. Data structures and algorighms made ease
+5. Algorithms de Kevin Wayne y Robert Sedgewick
+6. The Art of Computer programming (De volumen 1 al 4)
+7. The C++ programming language de Bjarne Stroustrup
+8. C++ Primer de B. Lippman
+9. Effective Modern C++ de Scott Meyers
+10. Python machine learning de Sabastian Raschka
+11. Introduction to machine learning with python de Andreas C. Müller y Sarah Guido
+12. Python for data analysis de Wes McKinney
+13. Data Science from Scratch de Joel Grus
 
 Hacking:
 1. 
