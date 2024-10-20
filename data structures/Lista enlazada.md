@@ -7,7 +7,7 @@ tags:
   - nota/investigacion
 aliases:
   - Linked list
-orden: 217
+orden: 120
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

@@ -9,7 +9,7 @@ referencias:
 aliases:
   - Triángulo de potencia#Triángulo de potencia
 etapa: ampliar
-orden: 197
+orden: 280
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

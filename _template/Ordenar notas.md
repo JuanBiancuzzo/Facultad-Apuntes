@@ -7,14 +7,15 @@
     const SALIR = "salir";
 
     const tArchivo = tp.file.find_tfile(tp.file.path(true));
+    let archivosCache = {};
+    dv.pages().filter(archivo => archivo.orden).forEach(archivo => archivosCache[archivo.file.path] = 1);
     
-    let archivosPosibles = conseguirArchivos();
-    let archivoUno = archivosPosibles[0];
-    let archivoDos = archivosPosibles[1];
+    let [ archivoUno, archivoDos ] = conseguirArchivos(archivosCache);
+    archivosCache[archivoUno.file.path]++;
+    archivosCache[archivoDos.file.path]++;
 
     let tarea;
 
-    let pendientes = [];
     while (true) {
         let respuesta = preguntar.suggester(
             tp, [ archivoUno.file.name, archivoDos.file.name, "Salir" ], 
@@ -24,9 +25,12 @@
 
         if (tarea) await tarea;
 
-        archivosPosibles = conseguirArchivos();
+        let archivosPosibles = conseguirArchivos(archivosCache);
         archivoUno = archivosPosibles[0];
         archivoDos = archivosPosibles[1];
+
+        archivosCache[archivoUno.file.path]++;
+        archivosCache[archivoDos.file.path]++;
 
         respuesta = await respuesta;
         if (!respuesta || respuesta == SALIR) break;
@@ -56,16 +60,16 @@
     
     return await eliminar.directo(tArchivo);
 
-    function conseguirArchivos() {
-        let archivos = dv.pages().filter(archivo => archivo.orden);
-        let cantidad = archivos.length;
+    function conseguirArchivos(archivosCache) {
+        let archivos = dv.pages().filter(archivo => archivo.orden).sort(archivo => archivo.orden);
+        let indicePrincipal = 0;
 
-        let archivoUno = archivos[Math.floor(Math.random() * cantidad)]
-        let archivoDos;
         do {
-            archivoDos = archivos[Math.floor(Math.random() * cantidad)]
-        } while(archivoUno.file.path == archivoDos.file.path);
+            indicePrincipal = Math.floor(Math.random() * archivos.length);
+        } while (1 / archivosCache[archivos[indicePrincipal].file.path] < Math.random());
 
-        return [ archivoUno, archivoDos ];
+        let indiceSecundario = (indicePrincipal == 0) ? 1 : indicePrincipal + 1;
+
+        return [ archivos[indicePrincipal], archivos[indiceSecundario] ];
     }
 %>

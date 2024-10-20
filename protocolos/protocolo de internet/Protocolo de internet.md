@@ -10,7 +10,7 @@ aliases:
   - Internet Protocol
   - IP
   - Protocolo de red
-orden: 85
+orden: 86
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
