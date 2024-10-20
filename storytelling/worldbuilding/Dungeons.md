@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - storytelling/worldbuilding
-orden: 20
+orden: 175
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

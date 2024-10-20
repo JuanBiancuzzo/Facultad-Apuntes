@@ -9,7 +9,7 @@ aliases:
   - Función potencial escalar#Potencial escalar
   - Función potencial vectorial#Potencial vectorial
 etapa: ampliar
-orden: 194
+orden: 262
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

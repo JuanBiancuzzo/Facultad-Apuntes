@@ -26,7 +26,7 @@ tags:
   - machine-Learning/sequence-modeling
 aliases:
   - Phrase2Vec
-orden: 248
+orden: 74
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

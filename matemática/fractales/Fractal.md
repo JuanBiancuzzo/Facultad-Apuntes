@@ -7,7 +7,7 @@ tags:
 estado: Falta resumir
 referencias:
   - "38"
-orden: 112
+orden: 36
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

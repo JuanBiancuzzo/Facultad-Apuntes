@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - storytelling/worldbuilding/conlang
-orden: 15
+orden: 239
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

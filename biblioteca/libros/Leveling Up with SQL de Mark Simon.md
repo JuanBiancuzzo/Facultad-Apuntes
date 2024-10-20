@@ -20,7 +20,7 @@ tags:
   - biblioteca/libro
   - nota/investigacion
   - lenguajes-de-programación/lenguaje-SQL
-orden: 175
+orden: 94
 ---
 ```dataviewjs
 	let actual = dv.current();

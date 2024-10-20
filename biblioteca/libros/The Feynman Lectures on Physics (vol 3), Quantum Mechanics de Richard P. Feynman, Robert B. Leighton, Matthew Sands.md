@@ -25,7 +25,7 @@ tags:
   - biblioteca/libro
   - nota/investigacion
   - física/física-cuántica
-orden: 356
+orden: 66
 ---
 ```dataviewjs
 	let actual = dv.current();

@@ -10,7 +10,7 @@ tags:
 aliases:
   - RPC
   - gRPC#gRPC
-orden: 264
+orden: 243
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
