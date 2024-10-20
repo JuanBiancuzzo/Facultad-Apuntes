@@ -7,7 +7,7 @@ tags:
   - nota/investigacion
 aliases:
   - PCA
-orden: 150
+orden: 119
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

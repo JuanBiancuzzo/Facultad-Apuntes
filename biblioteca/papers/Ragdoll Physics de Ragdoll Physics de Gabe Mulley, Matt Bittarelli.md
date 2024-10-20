@@ -11,17 +11,16 @@ autores:
 tituloInforme: Ragdoll Physics
 numeroInforme: 
 anio: "2007"
-editores: []
+editores: 
 url: 
 tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-orden: 195
+orden: 168
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
 ```
 # Resumen
 ---
-<% tp.file.cursor() %>

@@ -28,7 +28,7 @@ tags:
   - biblioteca/paper
   - nota/investigacion
   - machine-Learning/sequence-modeling
-orden: 163
+orden: 122
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
