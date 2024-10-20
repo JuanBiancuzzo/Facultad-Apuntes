@@ -70,4 +70,4 @@ Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo|grafo]], los vértices se et
 \end{document}
 ```
 
-La distancia hamming entre dos cadenas indica la cantidad de [[Bit de información|bits]] distintos
+La distancia hamming entre dos cadenas indica la cantidad de [[Información#Bit|bits]] distintos

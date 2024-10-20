@@ -1,15 +1,12 @@
 ---
-dia: 2024-07-08
+dia: 2024-10-20
 etapa: sin-empezar
-referencias:
-  - "50"
-  - "51"
-  - "52"
-  - "53"
-tags:
-  - nota/investigacion
-  - storytelling/worldbuilding/geoficción
-orden: 283
+orden: 363
+referencias: 
+ - "196"
+tags: 
+ - matemática/encoding/lossless-compression-encoding
+ - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

@@ -23,7 +23,10 @@
             "Que archivo es mejor?"
         );
 
-        if (tarea) await tarea;
+        if (tarea) {
+            await tarea;
+            tarea = undefined;
+        }
 
         let archivosPosibles = conseguirArchivos(archivosCache);
         archivoUno = archivosPosibles[0];
@@ -53,8 +56,13 @@
             }));
 
             tarea = Promise.all(tareas).then((_) => console.log(`Cambiaron\n${nuevoOrdenPeor} pasa a ser ${nuevoOrdenMejor}`));
-        } else { 
+        } else if ( parseInt(mejor.orden, 10) < parseInt(peor.orden, 10) ) { 
             console.log(`No es necesario de cambiar\n${mejor.orden} < ${peor.orden}`);
+
+        } else {
+            new Notice("Son iguales, hay que revisar");
+            console.log(archivoUno);
+            console.log(archivoDos);
         }
     }
     

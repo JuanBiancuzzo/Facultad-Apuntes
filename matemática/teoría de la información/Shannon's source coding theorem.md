@@ -1,15 +1,12 @@
 ---
-dia: 2024-07-08
+dia: 2024-10-20
 etapa: sin-empezar
-referencias:
-  - "50"
-  - "51"
-  - "52"
-  - "53"
-tags:
-  - nota/investigacion
-  - storytelling/worldbuilding/geoficción
-orden: 283
+orden: 362
+referencias: 
+ - "399"
+tags: 
+ - matemática/teoría-de-la-información
+ - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

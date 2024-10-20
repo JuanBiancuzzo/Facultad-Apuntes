@@ -2,9 +2,9 @@ Veamos una lista de los archivos de investigación que no están terminados
 
 ```dataviewjs
 const ETAPAS = {
-    ["sin-empezar"]: 2, 
+    ["sin-empezar"]: 1, 
     ["empezado"]: 1, 
-    ["ampliar"]: 3, 
+    ["ampliar"]: 4, 
     ["terminado"]: 4
 };
 
@@ -28,7 +28,9 @@ archivos = archivos.filter(archivo => archivo.orden)
         resultado.push({
             path: archivo.file.path,
             nombre: archivo.file.name,
-            etapa: archivo.etapa,
+            etapa: archivo.etapa 
+                ? archivo.etapa 
+                : conseguirEtapa(archivo),
             aliases: aliasesActual
                 .filter(alias => !alias.includes("#")),
             referencias: referenciasActuales
@@ -42,7 +44,9 @@ archivos = archivos.filter(archivo => archivo.orden)
                 resultado.push({
                     path: `${archivo.file.path}#${key}`,
                     nombre: (elementos.shift()).split("#")[0],
-                    etapa: archivo.etapa,
+                    etapa: archivo.etapa 
+                        ? archivo.etapa 
+                        : conseguirEtapa(archivo),
                     aliases: elementos
                         .map(alias => alias.split("#")[0]),
                     referencias: referenciasActuales
@@ -51,7 +55,7 @@ archivos = archivos.filter(archivo => archivo.orden)
 
         return resultado;
     })
-    // .sort(({ etapa, ..._ }) => etapa in ETAPAS ? ETAPAS[etapa] : -1)
+    .sort(({ etapa, ..._ }) => etapa in ETAPAS ? ETAPAS[etapa] : -1)
     .map(({ path, nombre, etapa, aliases, referencias }) => ({
         path: path,
         nombre: nombre,
@@ -65,4 +69,34 @@ archivos = archivos.filter(archivo => archivo.orden)
     }));
 
 await dv.view("_scripts/dataview/mostrarElementos", { lista: [{ elementos: archivos }], defaultVacio: "No hay archivos incompletas" });
+
+function tagIndice(indice) {
+    return indice.file.folder.trim()
+        .split(" ")
+        .filter(token => token.trim() != "-" && token.trim() != "")
+        .join("-");   
+}
+
+function conseguirEtapa(indice) {
+    let etapasConsideradas = [];
+
+    let tagRepresentanteActual = tagIndice(indice);    
+    dv.pages(`#${tagRepresentanteActual} and -#índice`)
+        .filter(archivo => archivo.etapa)
+        .forEach(archivo => etapasConsideradas.push(archivo.etapa));
+    
+    let etapaFinal = "sin-empezar";
+    if (etapasConsideradas.length > 0) {
+        if (etapasConsideradas.some(etapa => etapa != "sin-empezar")) {
+            etapaFinal = "empezado";
+        } else if (etapasConsideradas.every(etapa => etapa == "ampliar")) {
+            etapaFinal = "ampliar";
+        } else if (etapasConsideradas.every(etapa => etapa == "terminado")) {
+            etapaFinal = "terminado";
+        }
+    }
+
+    return etapaFinal;
+}
+
 ```

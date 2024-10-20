@@ -1,9 +1,12 @@
 ---
 dia: 2024-10-04
-estado: 'Sin empezar'
-tags: 
- - índice
- - matemática/teoría-de-la-información
+estado: Sin empezar
+tags:
+  - índice
+  - matemática/teoría-de-la-información
+  - nota/investigacion
+aliases:
+  - Information theory
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

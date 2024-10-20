@@ -61,7 +61,7 @@ Como el [[User Datagram Protocol|protocolo UDP]], el header de TCP contiene los 
 	* PSH bit
 		* Indica que el receptor de enviar los datos de la capa de arriba de forma inmediata
 	* URG bit
-		* Indica que hay información en el [[Paquete|segmento]] que es marcada como segmento. La dirección del último [[Bit de información|bit de información]] urgente es indicado en el urgent data pointer field
+		* Indica que hay información en el [[Paquete|segmento]] que es marcada como segmento. La dirección del último [[Información#Bit|bit de información]] urgente es indicado en el urgent data pointer field
 
 ## Parámetros del protocolo
 ---
