@@ -8,7 +8,7 @@ tags:
   - game-engine/técnicas
 aliases:
   - DoG
-orden: 71
+orden: 70
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

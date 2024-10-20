@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - game-creation
-orden: 320
+orden: 321
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

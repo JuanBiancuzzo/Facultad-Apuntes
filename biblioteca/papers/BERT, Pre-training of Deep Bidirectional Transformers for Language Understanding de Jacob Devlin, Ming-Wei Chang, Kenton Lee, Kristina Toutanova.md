@@ -23,7 +23,7 @@ tags:
   - nota/investigacion
 aliases:
   - BERT
-orden: 94
+orden: 92
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

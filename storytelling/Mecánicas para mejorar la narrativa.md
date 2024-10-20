@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - storytelling
-orden: 240
+orden: 239
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

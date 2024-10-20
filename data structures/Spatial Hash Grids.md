@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - data-structures
-orden: 187
+orden: 186
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

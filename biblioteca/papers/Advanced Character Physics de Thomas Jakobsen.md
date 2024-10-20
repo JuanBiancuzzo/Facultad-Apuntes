@@ -15,7 +15,7 @@ tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-orden: 252
+orden: 251
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });

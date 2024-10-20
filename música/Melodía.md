@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - música
-orden: 285
+orden: 284
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
