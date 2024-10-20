@@ -1,6 +1,7 @@
 <%* 
 	const preguntar = tp.user.preguntar();
 	const error = tp.user.error();
+	const mantenerOrden = tp.user.mantenerOrden();
 	const tArchivo = tp.file.find_tfile(tp.file.path(true));
 
 	const DEJAR_CITAR = "cita rapida";
@@ -104,6 +105,7 @@
 	tR += "---\n"; 
 	tR += `dia: ${dia}\n`;
 	tR += "etapa: sin-empezar\n";
+	tR += `orden: ${mantenerOrden.siguienteValorOrden()}\n`;
 
 	tR += "referencias: \n";
 	for (let numRef of numReferencias) {
