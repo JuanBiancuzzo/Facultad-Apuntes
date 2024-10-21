@@ -2,14 +2,14 @@
 dia: 2024-10-20
 etapa: sin-empezar
 orden: 360
-referencias: 
- - "397"
-tags: 
- - arquitectura-de-procesadores
- - nota/investigacion
+referencias:
+  - "397"
+tags:
+  - arquitectura-de-procesadores
+  - nota/investigacion
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---

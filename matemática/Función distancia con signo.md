@@ -11,10 +11,10 @@ aliases:
   - Signed Distance Function
   - Signed Distance Field
   - SDF
-orden: 65
+orden: 66
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---

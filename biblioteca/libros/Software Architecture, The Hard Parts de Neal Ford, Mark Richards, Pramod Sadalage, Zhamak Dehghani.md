@@ -29,8 +29,8 @@ orden: 180
 ---
 ```dataviewjs
 	let actual = dv.current();
-	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: actual.etapa });
-	await dv.view("_scripts/dataview/libro/mostrarCapitulos", { titulo: actual.tituloObra, autores: actual.nombreAutores, capitulos: actual.capitulos });
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: actual?.etapa });
+	await dv.view("_scripts/dataview/libro/mostrarCapitulos", { titulo: actual?.tituloObra, autores: actual?.nombreAutores, capitulos: actual?.capitulos });
 ```
 # Resumen
 ---

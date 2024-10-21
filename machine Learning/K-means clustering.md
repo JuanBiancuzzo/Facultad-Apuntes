@@ -5,10 +5,10 @@ referencias:
 tags:
   - machine-Learning
   - nota/investigacion
-orden: 146
+orden: 147
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---

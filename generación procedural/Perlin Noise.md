@@ -11,10 +11,10 @@ tags:
 aliases:
   - Fractal Perlin Noise
   - Noise Gradient trick#Gradient trick
-orden: 147
+orden: 146
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
