@@ -5,7 +5,7 @@ referencias:
   - "206"
 tags:
   - nota/investigacion
-orden: 198
+orden: 197
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
