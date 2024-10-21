@@ -33,11 +33,6 @@ $$ \begin{array}{c | c}
 
 Si $a_{ij} = 0$ para $j \ge i$, $i = 1, 2, \cdots, s$, es decir, si la [[Matriz|matriz]] $A$ es triangular inferior estricta, entonces cada uno de los $k_i$ viene dado explícitamente en términos de los anteriormente calculados $k_j$, $j = 1, 2, \cdots, i - 1$. En este caso, el [[Método de Runge-Kutta explicito|método es explícito]]. Al escribir su tablero se suele omitir los ceros sobre la diagonal principal y por encima de ella.
 
-
-
-## Notas referencias
----
-
 ### Nota num° 1
 ---
 https://repositorio.ual.es/bitstream/handle/10835/3513/2414_TFG_ALBACANOVAS.pdf?sequence=1&isAllowed=y

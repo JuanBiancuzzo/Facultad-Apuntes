@@ -1,12 +1,12 @@
 ---
 dia: 2024-10-20
 etapa: sin-empezar
-orden: 363
-referencias: 
- - "196"
-tags: 
- - matemática/encoding/lossless-compression-encoding
- - nota/investigacion
+orden: 362
+referencias:
+  - "196"
+tags:
+  - matemática/encoding/lossless-compression-encoding
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

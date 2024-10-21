@@ -9,7 +9,7 @@ tags:
 aliases:
   - Lenguaje SQL
   - SQL
-orden: 224
+orden: 223
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

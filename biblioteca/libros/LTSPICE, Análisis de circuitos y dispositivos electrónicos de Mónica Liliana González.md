@@ -20,7 +20,7 @@ tags:
   - biblioteca/libro
   - nota/investigacion
   - herramientas/LTSpice
-orden: 253
+orden: 252
 ---
 ```dataviewjs
 	let actual = dv.current();

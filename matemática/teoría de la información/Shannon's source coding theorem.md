@@ -1,12 +1,12 @@
 ---
 dia: 2024-10-20
 etapa: sin-empezar
-orden: 362
-referencias: 
- - "399"
-tags: 
- - matemática/teoría-de-la-información
- - nota/investigacion
+orden: 363
+referencias:
+  - "399"
+tags:
+  - matemática/teoría-de-la-información
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
