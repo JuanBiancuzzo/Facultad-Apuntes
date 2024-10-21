@@ -13,6 +13,8 @@ El primer plugin que voy a hacer es sobre un mejor uso del alias, pudiendo dirig
 
 El segundo plugin es poder usar python notebooks dentro de obsidian, para poder investigar
 
+El tercer plugin es permitir usar una métrica de orden, mostrar al usuario dos archivos consecutivos para determinar cual es mejor según la métrica, de esta forma ir ordenándolos
+
 # Presentar
 ---
 

@@ -76,7 +76,7 @@
             indicePrincipal = Math.floor(Math.random() * archivos.length);
         } while (1 / archivosCache[archivos[indicePrincipal].file.path] < Math.random());
 
-        let indiceSecundario = (indicePrincipal == 0) ? 1 : indicePrincipal + 1;
+        let indiceSecundario = (indicePrincipal == 0) ? 1 : indicePrincipal - 1;
 
         return [ archivos[indicePrincipal], archivos[indiceSecundario] ];
     }

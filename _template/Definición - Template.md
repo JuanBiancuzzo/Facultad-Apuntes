@@ -74,9 +74,14 @@
 	
 	tR += "---\n";
 	tR += `dia: ${dia}\n`;
+	tR += "etapa: sin-empezar\n";
+	tR += `orden: ${mantenerOrden.siguienteValorOrden()}\n`;
 	tR += `tags: \n - ${tag}\n - nota/facultad\n`;
 	tR += "---\n";
 _%>
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current().etapa });
+```
 # Definición
 ---
 <% tp.file.cursor() %>
