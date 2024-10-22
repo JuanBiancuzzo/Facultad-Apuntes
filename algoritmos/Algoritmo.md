@@ -7,7 +7,7 @@ tags:
   - algo-1/Introducción-a-la-programación
   - nota/investigacion
   - nota/facultad
-orden: 351
+orden: 350
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

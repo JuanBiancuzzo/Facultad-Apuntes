@@ -16,16 +16,6 @@ orden: 219
 # Definición
 ---
 
-
-
-
-# Referencias
----
-```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
-```
-
-
 # Referencias
 ---
 ```dataviewjs
