@@ -10,6 +10,7 @@ tags:
   - redes/Redes-de-computadoras
   - nota/facultad
   - redes/Capa-de-Enlace
+  - protocolos/protocolo-de-internet
 ---
 # Definición
 ---

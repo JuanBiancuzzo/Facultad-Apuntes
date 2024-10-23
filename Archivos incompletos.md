@@ -62,7 +62,7 @@ archivos = archivos.filter(archivo => archivo.orden)
         subnombre: referencias
             .map(referencia => `[${referencia}]`)
             .join(" "),
-        largo: false,
+        largo: aliases.length >= 2,
         etapa: etapa,
         descripcionSimple: false,
         descripcion: aliases.filter(alias => !alias.includes("#"))

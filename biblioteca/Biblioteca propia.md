@@ -11,7 +11,7 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (88)
+#### Buscar (91)
 ---
 Programación:
 1. Clean Code: All the tricks and patterns of writing good and clean code
@@ -57,6 +57,8 @@ Psico (?):
 11. Hombres que ya no hacen sufrir por amor, transformando las masculinidades de Coral Herrera
 12. The master and his emissary de Iain McGilchrist
 13. Blink: The Power of Thinking Without Thinking de Malcolm Gladwell
+14. How to Take Smart Notes
+15. How to Read a Book
 
 Matemática:
 1. In pursuit of the unknown de Ian Stewart
@@ -106,6 +108,7 @@ Mecánica:
 4. Build de Tony Fadell
 5. Mechanical Design for the Stage de Alan Hendrickson
 6. The Science of Structures and Materials: No 23 (Scientific American Library series) de J. E. Gordon
+7. Microelectronic circuit design de Richard C Jaeger
 
 Diseño:
 1. The Branding Method - Carolina Kairos  

@@ -7,7 +7,7 @@ tags:
   - algo-1/Introducción-a-la-programación
   - nota/investigacion
   - nota/facultad
-orden: 350
+orden: 351
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
@@ -18,7 +18,7 @@ Vamos a investigar [[algoritmos/Índice|algoritmos]] que son interesantes, y má
 
 ## Resumen
 ---
-Un algoritmo es un método para resolver un problema mediante una serie de pasos precisos, definidos y finitos.
+Un algoritmo es un método para resolver un problema mediante una serie de pasos precisos, definidos y finitos
 
 
 ## Archivos

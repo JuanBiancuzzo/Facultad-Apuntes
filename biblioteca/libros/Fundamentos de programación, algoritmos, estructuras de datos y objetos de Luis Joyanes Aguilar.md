@@ -1,25 +1,25 @@
 ---
-dia: 2024-09-12
+dia: 2024-10-22
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 249
-tituloObra: How we learn
+numReferencia: 400
+tituloObra: Fundamentos de programación
+subtituloObra: Algoritmos, estructuras de datos y objetos
 nombreAutores:
-  - apellido: Dehaene
-    nombre: Stanislas
-anio: "2020"
-editorial: Viking
-edicion: 
+  - apellido: Aguilar
+    nombre: Luis Joyanes
+anio: "2008"
+editorial: McGraw-Hill Interamericana de España S.L
+edicion: "5"
 volumen: 
 url: 
 capitulos: 
-cover: How we learn de Stanislas Dehaene.jpg
+cover: Fundamentos de programación, algoritmos, estructuras de datos y objetos de Luis Joyanes Aguilar.jpg
 aliases: 
 tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-orden: 123
 ---
 ```dataviewjs
 	let actual = dv.current();

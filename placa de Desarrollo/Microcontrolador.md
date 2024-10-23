@@ -10,7 +10,7 @@ tags:
 aliases:
   - MCU
   - Microcontroller Unit
-orden: 112
+orden: 113
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

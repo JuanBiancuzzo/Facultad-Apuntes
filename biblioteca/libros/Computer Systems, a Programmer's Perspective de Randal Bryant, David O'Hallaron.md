@@ -1,25 +1,27 @@
 ---
-dia: 2024-09-12
+dia: 2024-10-22
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 249
-tituloObra: How we learn
+numReferencia: 402
+tituloObra: Computer Systems
+subtituloObra: A Programmer's Perspective
 nombreAutores:
-  - apellido: Dehaene
-    nombre: Stanislas
-anio: "2020"
-editorial: Viking
-edicion: 
+  - apellido: Bryant
+    nombre: Randal
+  - apellido: O'Hallaron
+    nombre: David
+anio: "2015"
+editorial: Pearson
+edicion: "3"
 volumen: 
 url: 
 capitulos: 
-cover: How we learn de Stanislas Dehaene.jpg
+cover: Computer Systems, a Programmer's Perspective de Randal Bryant, David O'Hallaron.jpg
 aliases: 
 tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-orden: 123
 ---
 ```dataviewjs
 	let actual = dv.current();

@@ -7,7 +7,7 @@ referencias:
 tags:
   - nota/investigacion
   - herramientas/docker
-orden: 209
+orden: 210
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

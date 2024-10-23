@@ -1,25 +1,25 @@
 ---
-dia: 2024-09-12
+dia: 2024-10-22
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 249
-tituloObra: How we learn
+numReferencia: 404
+tituloObra: Data and Computer Communications
+subtituloObra: 
 nombreAutores:
-  - apellido: Dehaene
-    nombre: Stanislas
-anio: "2020"
-editorial: Viking
-edicion: 
+  - apellido: Stallings
+    nombre: William
+anio: "2013"
+editorial: Pearson
+edicion: "8"
 volumen: 
 url: 
 capitulos: 
-cover: How we learn de Stanislas Dehaene.jpg
+cover: Data and Computer Communications de William Stallings.jpg
 aliases: 
 tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-orden: 123
 ---
 ```dataviewjs
 	let actual = dv.current();

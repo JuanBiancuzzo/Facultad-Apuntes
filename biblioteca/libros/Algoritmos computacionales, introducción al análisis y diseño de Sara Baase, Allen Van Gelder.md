@@ -1,25 +1,27 @@
 ---
-dia: 2024-09-12
+dia: 2024-10-22
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 249
-tituloObra: How we learn
+numReferencia: 401
+tituloObra: Algoritmos computacionales
+subtituloObra: Introducción al análisis y diseño
 nombreAutores:
-  - apellido: Dehaene
-    nombre: Stanislas
-anio: "2020"
-editorial: Viking
-edicion: 
+  - apellido: Baase
+    nombre: Sara
+  - apellido: Van Gelder
+    nombre: Allen
+anio: "2000"
+editorial: Addison Wesley
+edicion: "3"
 volumen: 
 url: 
 capitulos: 
-cover: How we learn de Stanislas Dehaene.jpg
+cover: Algoritmos computacionales, introducción al análisis y diseño de Sara Baase, Allen Van Gelder.jpg
 aliases: 
 tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-orden: 123
 ---
 ```dataviewjs
 	let actual = dv.current();

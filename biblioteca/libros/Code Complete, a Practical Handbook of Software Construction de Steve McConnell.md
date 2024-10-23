@@ -1,25 +1,25 @@
 ---
-dia: 2024-09-12
+dia: 2024-10-22
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 249
-tituloObra: How we learn
+numReferencia: 403
+tituloObra: Code Complete
+subtituloObra: A Practical Handbook of Software Construction
 nombreAutores:
-  - apellido: Dehaene
-    nombre: Stanislas
-anio: "2020"
-editorial: Viking
-edicion: 
+  - apellido: McConnell
+    nombre: Steve
+anio: "2004"
+editorial: Microsoft Press
+edicion: "2"
 volumen: 
 url: 
 capitulos: 
-cover: How we learn de Stanislas Dehaene.jpg
+cover: Code Complete, a Practical Handbook of Software Construction de Steve McConnell.jpg
 aliases: 
 tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-orden: 123
 ---
 ```dataviewjs
 	let actual = dv.current();

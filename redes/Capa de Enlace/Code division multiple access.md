@@ -4,6 +4,7 @@ tags:
   - redes/Capa-de-Enlace
   - nota/facultad
   - redes/Capa-Física-Inalámbrica
+  - protocolos/protocolo-de-internet
 aliases:
   - CDMA
 ---
