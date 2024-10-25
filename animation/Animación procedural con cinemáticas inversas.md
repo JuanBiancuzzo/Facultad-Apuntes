@@ -11,7 +11,7 @@ aliases:
 tags:
   - nota/investigacion
   - animation
-orden: 208
+orden: 158
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

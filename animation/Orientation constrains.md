@@ -8,7 +8,7 @@ tags:
   - nota/investigacion
 aliases:
   - Angle constrains
-orden: 171
+orden: 195
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

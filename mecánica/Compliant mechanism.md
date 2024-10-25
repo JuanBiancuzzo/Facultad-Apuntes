@@ -8,7 +8,7 @@ referencias:
 tags:
   - mecánica
   - nota/investigacion
-orden: 268
+orden: 98
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

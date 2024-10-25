@@ -7,7 +7,7 @@ tags:
 referencias:
   - "219"
 etapa: ampliar
-orden: 100
+orden: 266
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

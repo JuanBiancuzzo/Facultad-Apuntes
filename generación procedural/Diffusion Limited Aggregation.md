@@ -8,7 +8,7 @@ tags:
   - nota/investigacion
 aliases:
   - DLA
-orden: 201
+orden: 165
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

@@ -4,7 +4,7 @@ tags:
   - electro/Ondas-electromagnéticas-en-el-vacío
   - nota/facultad
 etapa: sin-empezar
-orden: 187
+orden: 179
 ---
 # Definición
 ---

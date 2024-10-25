@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - matemática/koopman-operator-theory
-orden: 35
+orden: 331
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

@@ -24,7 +24,7 @@ tags:
   - machine-Learning/sequence-modeling
 aliases:
   - Word2Vec
-orden: 126
+orden: 240
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

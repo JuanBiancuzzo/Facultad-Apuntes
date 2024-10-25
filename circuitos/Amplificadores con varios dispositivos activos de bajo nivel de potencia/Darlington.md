@@ -4,7 +4,7 @@ tags:
   - circuitos/Amplificadores-con-varios-dispositivos-activos-de-bajo-nivel-de-potencia
   - nota/facultad
 etapa: sin-empezar
-orden: 228
+orden: 138
 ---
 # Definición
 ---

@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - herramientas/git
-orden: 125
+orden: 241
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

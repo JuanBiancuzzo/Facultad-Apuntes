@@ -6,7 +6,7 @@ tags:
   - sistemas-operativos/kernel
   - nota/investigacion
   - sisop/Kernel
-orden: 43
+orden: 323
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

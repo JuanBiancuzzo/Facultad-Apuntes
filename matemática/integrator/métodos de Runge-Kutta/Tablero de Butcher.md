@@ -5,7 +5,7 @@ referencias:
 tags:
   - nota/investigacion
   - matemática/integrator/métodos-de-Runge-Kutta
-orden: 231
+orden: 135
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

@@ -8,7 +8,7 @@ aliases:
 tags:
   - nota/investigacion
   - data-structures
-orden: 218
+orden: 148
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

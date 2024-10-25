@@ -11,7 +11,7 @@ aliases:
   - Relación constitutiva eléctrica#Para campo eléctrico
   - Relación constitutiva magnética#Para campo magnético
 etapa: ampliar
-orden: 193
+orden: 173
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

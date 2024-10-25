@@ -10,7 +10,7 @@ aliases:
 referencias:
   - "207"
 etapa: sin-empezar
-orden: 63
+orden: 303
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

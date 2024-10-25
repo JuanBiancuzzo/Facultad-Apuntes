@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - generación-procedural/grammars
-orden: 143
+orden: 223
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
