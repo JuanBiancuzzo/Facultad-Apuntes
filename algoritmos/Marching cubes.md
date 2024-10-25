@@ -6,7 +6,7 @@ referencias:
 tags:
   - algoritmos
   - nota/investigacion
-orden: 355
+orden: 356
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
