@@ -7,7 +7,7 @@ tags:
 aliases:
   - Estructura
 etapa: sin-empezar
-orden: 93
+orden: 92
 ---
 # Definición
 ---

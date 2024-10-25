@@ -9,7 +9,7 @@ referencias:
 aliases:
   - Librería
 etapa: sin-empezar
-orden: 353
+orden: 352
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
