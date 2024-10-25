@@ -19,7 +19,7 @@ tags:
   - biblioteca/libro
   - nota/investigacion
 cover: Fooled by Randomness de Nissim Nicholas Taleb.jpg
-orden: 52
+orden: 53
 ---
 ```dataviewjs
 	let actual = dv.current();

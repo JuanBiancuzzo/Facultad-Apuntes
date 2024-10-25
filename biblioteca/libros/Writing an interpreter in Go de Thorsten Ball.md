@@ -19,6 +19,7 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
+  - lenguajes-de-programación/lenguaje-go
 orden: 318
 ---
 ```dataviewjs
