@@ -8,7 +8,7 @@ aliases:
 tags:
   - nota/investigacion
   - game-engine/técnicas
-orden: 208
+orden: 209
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

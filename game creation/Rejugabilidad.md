@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - game-creation
-orden: 94
+orden: 93
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

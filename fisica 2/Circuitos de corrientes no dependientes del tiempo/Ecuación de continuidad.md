@@ -9,7 +9,7 @@ referencias:
 aliases:
   - Conservación de la carga#En electromagnetismo
 etapa: ampliar
-orden: 259
+orden: 258
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
