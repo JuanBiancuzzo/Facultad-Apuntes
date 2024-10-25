@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - matemática/integrator
-orden: 100
+orden: 99
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
