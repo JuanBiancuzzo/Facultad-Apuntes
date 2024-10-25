@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - reglas-APA
-orden: 107
+orden: 106
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

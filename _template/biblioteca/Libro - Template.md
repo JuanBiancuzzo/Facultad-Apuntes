@@ -1,6 +1,7 @@
 <%* 
 	const tArchivo = tp.file.find_tfile(tp.file.path(true));	
 	const describir = tp.user.describir();
+	const mantenerOrden = tp.user.mantenerOrden();
 	const CARACTERES_INVALIDOS = tp.user.constantes().caracteresInvalidos;
 	const fs = require('fs');
 
@@ -83,6 +84,7 @@
 			return `${nombreArchivo}, ${descripcion}#${descripcion}`;
 		});
 	tR += tp.obsidian.stringifyYaml({ aliases: aliases });
+	tR += `orden: ${mantenerOrden.siguienteValorOrden()}\n`;
 
 	tR += `tags: \n - referencia/${tipoCita.toLowerCase()}\n - biblioteca/libro\n - nota/investigacion\n`;
 	tR += "---";

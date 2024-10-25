@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - game-engine/técnicas
-orden: 212
+orden: 213
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

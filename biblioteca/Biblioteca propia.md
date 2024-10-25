@@ -11,7 +11,7 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (91)
+#### Buscar (96)
 ---
 Programación:
 1. Clean Code: All the tricks and patterns of writing good and clean code
@@ -58,7 +58,11 @@ Psico (?):
 12. The master and his emissary de Iain McGilchrist
 13. Blink: The Power of Thinking Without Thinking de Malcolm Gladwell
 14. How to Take Smart Notes
-15. How to Read a Book
+15. How to Read a Book de Mortimer J. Adler y Charles van Doren
+16. The construction of Social Reality
+17. The Math of Life and Death de Kit Yates
+18. AI 20241 de Chen Qiufan
+19. Abre tu mente a los números de Barbara Oakley
 
 Matemática:
 1. In pursuit of the unknown de Ian Stewart
@@ -127,3 +131,6 @@ Storytelling:
 6. Patterns de Rod Serling
 7. A swim in a pond in the rain de george saunders
 
+Quimica:
+1. La química en 100 preguntas de Gabriel Estañ Cerezo
+2. Breve historia de la quimica de Isaac Asimov

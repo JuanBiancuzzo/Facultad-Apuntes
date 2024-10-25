@@ -1,6 +1,7 @@
 <%* 
 	const tArchivo = tp.file.find_tfile(tp.file.path(true));	
 	const describir = tp.user.describir();
+	const mantenerOrden = tp.user.mantenerOrden();
 	const CARACTERES_INVALIDOS = tp.user.constantes().caracteresInvalidos;
 	const AGREGADO = " y otros";
 	const MAX_NOMBRE = 252;
@@ -63,6 +64,7 @@
         }
 	}
 
+	tR += `orden: ${mantenerOrden.siguienteValorOrden()}\n`;
 	tR += `tags: \n - referencia/${tipoCita.toLowerCase()}\n - biblioteca/paper\n - nota/investigacion\n`;
 	tR += "---";
 

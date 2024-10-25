@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - machine-Learning/red-Neuronal
-orden: 251
+orden: 252
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

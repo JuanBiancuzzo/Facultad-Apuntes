@@ -1,6 +1,7 @@
 <%* 
 	const error = tp.user.error();
 	const preguntar = tp.user.preguntar();
+	const mantenerOrden = tp.user.mantenerOrden();
 
 	const dv = this.app.plugins.plugins.dataview.api;
 
