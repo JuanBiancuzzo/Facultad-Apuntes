@@ -9,7 +9,7 @@ tags:
   - algoritmos
   - matemática/encoding/lossless-compression-encoding
   - orga/Compresión
-orden: 357
+orden: 356
 aliases:
   - Huffman Codes
   - Huffman Coding

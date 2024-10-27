@@ -1,0 +1,85 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "ctime": 1729884404472,
+      "path": "README.md",
+      "title": "Main"
+    },
+    {
+      "type": "file",
+      "ctime": 1729884574011,
+      "path": "Archivos incompletos.md",
+      "title": "Buscar archivos"
+    },
+    {
+      "type": "file",
+      "ctime": 1729884548415,
+      "path": "biblioteca/Biblioteca propia.md",
+      "title": "Biblioteca"
+    },
+    {
+      "type": "group",
+      "ctime": 1729884437543,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1729884420172,
+          "path": "Ingeniería informática y electrónica.md",
+          "title": "Ingeniería"
+        },
+        {
+          "type": "file",
+          "ctime": 1729884457786,
+          "path": "licenciatura en ciencias matemáticas/Licenciatura en Ciencias Matemáticas.md",
+          "title": "Matemática"
+        },
+        {
+          "type": "file",
+          "ctime": 1729884481687,
+          "path": "licenciatura en ciencias físicas/Licenciatura en Ciencias Físicas.md",
+          "title": "Física"
+        },
+        {
+          "type": "file",
+          "ctime": 1729884494086,
+          "path": "licenciatura en ciencias de datos/Licenciatura en Ciencias de Datos.md",
+          "title": "Ciencia de Datos"
+        }
+      ],
+      "title": "Carreras"
+    },
+    {
+      "type": "group",
+      "ctime": 1729884528157,
+      "items": [
+        {
+          "type": "group",
+          "ctime": 1729884670966,
+          "items": [
+            {
+              "type": "file",
+              "ctime": 1729884616573,
+              "path": "Temas.md",
+              "title": "Go"
+            },
+            {
+              "type": "file",
+              "ctime": 1729884767997,
+              "path": "lenguajes de programación/lenguaje zig/Índice.md",
+              "title": "Zig"
+            }
+          ],
+          "title": "Lenguaje de programación"
+        }
+      ],
+      "title": "Investigación"
+    },
+    {
+      "type": "group",
+      "ctime": 1729884533557,
+      "items": [],
+      "title": "Proyectos"
+    }
+  ]
+}

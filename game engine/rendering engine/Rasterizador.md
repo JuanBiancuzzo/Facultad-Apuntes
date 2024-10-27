@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - game-engine/rendering-engine
-orden: 84
+orden: 86
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

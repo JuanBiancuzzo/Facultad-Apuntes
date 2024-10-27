@@ -1,7 +1,7 @@
 ---
 dia: 2024-10-20
 etapa: sin-empezar
-orden: 9
+orden: 7
 referencias: 
 tags:
   - arquitectura-de-procesadores/arquitectura-ARM
