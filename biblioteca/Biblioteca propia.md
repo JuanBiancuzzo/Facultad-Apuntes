@@ -11,7 +11,7 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (95)
+#### Buscar (96)
 ---
 Programación:
 1. [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/-/es/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
@@ -133,6 +133,7 @@ Storytelling:
 5. Story de Robert McKee
 6. Patterns de Rod Serling
 7. A swim in a pond in the rain de george saunders
+8. [# Cartas a un joven novelista](https://www.amazon.com/-/es/Mario-Vargas-Llosa/dp/8420407410)
 
 Quimica:
 1. La química en 100 preguntas de Gabriel Estañ Cerezo

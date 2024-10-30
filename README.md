@@ -78,6 +78,7 @@ Para eso usaré obsidian, y pdfs, donde en obsidian todo sería archivos markdow
 | [Música](música/Índice.md)                                                                               | Falta resumir                                                                                                     |
 | [Networking](networking/Índice.md)                                                                       | Falta resumir                                                                                                     |
 | [Placa de Desarrollo](placa%20de%20Desarrollo/Índice.md)                                                 | Sin empezar                                                                                                       |
+| [Programación lineal](programación%20lineal/Programación%20lineal.md)                                    | Sin empezar                                                                                                       |
 | [Protocolos](protocolos/Protocolo.md)                                                                    | Tenemos principalmente los protocolos de red pero no mucho más allá de eso                                        |
 | [Reglas APA](reglas%20APA/Índice.md)                                                                     | Falta resumir                                                                                                     |
 | [Sistemas operativos](sistemas%20operativos/Sistema%20operativo.md)                                      | Sin empezar                                                                                                       |
@@ -96,8 +97,8 @@ Estos proyectos tienen una aplicación como resultado final
 | [Simpler GUI](simpler%20gui/Simpler%20GUI.md)                                                                                                               | Sin empezar      |
 | [Trabajo Profesional de Ingeniería Informática](tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)                                               | Sin empezar      |
 | [Primer proyecto de robótica - Auto remoto](primer%20proyecto%20de%20robótica%20-%20auto%20remoto/Primer%20proyecto%20de%20robótica%20-%20Auto%20remoto.md) | En proceso       |
-| [Porfolio](porfolio/Porfolio.md)                                                                                                                            | Sin empezar      |
 | [Plugins de Obsidian](plugins%20de%20obsidian/Plugins%20de%20Obsidian.md)                                                                                   | Sin empezar      |
+| [Porfolio](porfolio/Porfolio.md)                                                                                                                            | Sin empezar      |
 | [Better animations in my humble opinion](better%20animations%20in%20my%20humble%20opinion/Better%20animations%20in%20my%20humble%20opinion.md)              | Sin empezar      |
 | [Obsidian Static Site Generator](obsidian%20static%20site%20generator/Obsidian%20Static%20Site%20Generator.md)                                              | Recién empezando |
 
