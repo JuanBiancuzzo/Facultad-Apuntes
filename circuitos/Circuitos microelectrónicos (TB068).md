@@ -10,8 +10,14 @@ correlativas:
   - "[[Análisis de circuitos (6606)|Análisis de circuitos]]"
   - "[[Dispositivos semiconductores (8603)|Dispositivos semiconductores]]"
 ---
-# Apuntes 
+# Apuntes
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
+	await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
+```
+
+# Bibliografía
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/bibliografiaMateria", { materia: dv.current() });
 ```

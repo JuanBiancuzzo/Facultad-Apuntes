@@ -305,6 +305,7 @@ _%>
 ```
 
 # Bibliografía
+---
 ```dataviewjs
 	await dv.view("_scripts/dataview/bibliografiaMateria", { materia: dv.current() });
 ```

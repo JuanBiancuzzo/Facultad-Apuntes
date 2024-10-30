@@ -14,7 +14,7 @@ if (archivos.length <= 0) {
 }
 
 archivos = archivos.filter(archivo => archivo.orden)
-    .sort(archivo => -archivo.orden)
+    .sort(archivo => -parseInt(archivo.orden, 10))
     .flatMap(archivo => {      
         let resultado = [];
           

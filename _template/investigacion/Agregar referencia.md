@@ -9,13 +9,14 @@ const ETAPA_TEMPLATE = tp.file.find_tfile("_template/investigacion/Etapa - Templ
 const TEXTO_ETAPA = await app.vault.read(ETAPA_TEMPLATE);
 const TEXTO_REFERENCIA = await app.vault.read(REFERENCIA_TEMPLATE);
 
-const dv = app.plugins.plugins["dataview"].api;
+const dv = app.plugins.plugins.dataview.api;
 
 let opciones = ["⊕ Crear referencia", "↶ Agregar referencia", "⊖ Sacar referencia"];
 let valores = [CREAR, AGREGAR, SACAR];
 
 try {
     let modificacion = await tp.system.suggester(opciones, valores, true, "¿Qué desea hacer?");;
+    let archivo = dv.page(tp.file.path(true));
     let tArchivo = tp.file.find_tfile(tp.file.path(true));
     let referenciasFinal = [];
 
@@ -62,40 +63,43 @@ try {
         referenciasFinal = await sacarReferencia(tArchivo, numReferencia);
     }
 
-    await app.fileManager.processFrontMatter(tArchivo, (frontmatter) => {
-        if (!frontmatter["etapa"]) {
-            frontmatter["etapa"] = "sin-empezar";
+    if (!archivo.tags.some(tag => tag == "índice" || tag == "resumen" || tag.includes("materia"))) {
+
+        await app.fileManager.processFrontMatter(tArchivo, (frontmatter) => {
+            if (!frontmatter["etapa"]) {
+                frontmatter["etapa"] = "sin-empezar";
+            }
+        });
+
+        let nuevoContenido = await app.vault.read(tArchivo);
+        let hayReferencias = referenciasFinal.length > 0;
+        let indiceReferencias = incluye(nuevoContenido, TEXTO_REFERENCIA);
+        let hayTopicoReferencias = indiceReferencias > 0;
+
+        if (hayReferencias && !hayTopicoReferencias) {
+            // Agregar el topico
+            nuevoContenido = `${nuevoContenido}\n\n\n${TEXTO_REFERENCIA}`;
+
+        } else if (!hayReferencias && hayTopicoReferencias) {
+            // Sacar el topico
+            nuevoContenido = nuevoContenido.slice(0, indiceReferencias - `\n\n${TEXTO_REFERENCIA}`.length);
+
         }
-    });
 
-    let nuevoContenido = await app.vault.read(tArchivo);
-    let hayReferencias = referenciasFinal.length > 0;
-    let indiceReferencias = incluye(nuevoContenido, TEXTO_REFERENCIA);
-    let hayTopicoReferencias = indiceReferencias > 0;
-
-    if (hayReferencias && !hayTopicoReferencias) {
-        // Agregar el topico
-        nuevoContenido = `${nuevoContenido}\n\n\n${TEXTO_REFERENCIA}`;
-
-    } else if (!hayReferencias && hayTopicoReferencias) {
-        // Sacar el topico
-        nuevoContenido = nuevoContenido.slice(0, indiceReferencias - `\n\n${TEXTO_REFERENCIA}`.length);
-
-    } 
-
-    if (hayReferencias) {
-        let hayEtapa = incluye(nuevoContenido, TEXTO_ETAPA) > 0;
-        if (!hayEtapa) {
-            if (nuevoContenido.slice(0, 3) == "---") {
-                let index = nuevoContenido.slice(3).indexOf("---") + 7; // 3 del ---, 4 del ---\n
-                nuevoContenido = `${nuevoContenido.slice(0, index)}${TEXTO_ETAPA}\n${ nuevoContenido.slice(index)}`;
-            } else {
-                nuevoContenido = `${TEXTO_ETAPA}\n${nuevoContenido}`;
+        if (hayReferencias) {
+            let hayEtapa = incluye(nuevoContenido, TEXTO_ETAPA) > 0;
+            if (!hayEtapa) {
+                if (nuevoContenido.slice(0, 3) == "---") {
+                    let index = nuevoContenido.slice(3).indexOf("---") + 7; // 3 del ---, 4 del ---\n
+                    nuevoContenido = `${nuevoContenido.slice(0, index)}${TEXTO_ETAPA}\n${nuevoContenido.slice(index)}`;
+                } else {
+                    nuevoContenido = `${TEXTO_ETAPA}\n${nuevoContenido}`;
+                }
             }
         }
-    }
 
-    await app.vault.modify(tArchivo, nuevoContenido);
+        await app.vault.modify(tArchivo, nuevoContenido);
+    }
 
 } catch (e) {
     const mensaje = "Hubo un error al modificar la referencia";

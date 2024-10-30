@@ -1,8 +1,6 @@
 <%* 
 	const error = tp.user.error();
 	const preguntar = tp.user.preguntar();
-	const mantenerOrden = tp.user.mantenerOrden();
-
 	const dv = this.app.plugins.plugins.dataview.api;
 
 	let tArchivo = tp.file.find_tfile(tp.file.path(true));
@@ -76,7 +74,6 @@
 	tR += "---\n";
 	tR += `dia: ${dia}\n`;
 	tR += "etapa: sin-empezar\n";
-	tR += `orden: ${mantenerOrden.siguienteValorOrden()}\n`;
 	tR += `tags: \n - ${tag}\n - nota/facultad\n`;
 	tR += "---\n";
 _%>

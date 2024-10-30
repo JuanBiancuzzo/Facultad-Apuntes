@@ -12,7 +12,7 @@ aliases:
 referencias:
   - "408"
   - "409"
-etapa: sin-empezar
+orden: 376
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

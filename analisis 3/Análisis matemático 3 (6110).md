@@ -10,8 +10,14 @@ correlativas:
   - "[[Álgebra 2 (6108)|Álgebra 2]]"
   - "[[Análisis matemático 2 (6103)|Análisis matemático 2]]"
 ---
-# Apuntes 
+# Apuntes
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
+	await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
+```
+
+# Bibliografía
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/bibliografiaMateria", { materia: dv.current() });
 ```

@@ -7,10 +7,16 @@ tags:
   - materia/ingeniería-informática-y-electrónica
 etapa: empezado
 ---
-# Apuntes 
+# Apuntes
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
+	await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
+```
+
+# Bibliografía
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/bibliografiaMateria", { materia: dv.current() });
 ```
 # Documentos
 ---

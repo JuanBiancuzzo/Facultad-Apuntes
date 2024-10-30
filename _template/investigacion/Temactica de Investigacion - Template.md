@@ -1,5 +1,6 @@
 <%* 
 	const preguntar = tp.user.preguntar();
+	const mantenerOrden = tp.user.mantenerOrden();
 	const error = tp.user.error();
 	const validar = tp.user.whiteList();
 
@@ -12,10 +13,10 @@
 		let indices = dv.pages("#índice")
 			.filter(indice => indice.file.name !== undefined);
 
-		let nuevoTema = await preguntar.prompt(
+		let nombreTema = await preguntar.prompt(
 			tp, "Temática: (Apretar ESC para salir)", error.Prompt("No se ingresó un tema")
 		);
-		nuevoTema = `${nuevoTema.charAt(0).toLowerCase()}${nuevoTema.slice(1)}`.trim();
+		let nuevoTema = `${nombreTema.charAt(0).toLowerCase()}${nombreTema.slice(1)}`.trim();
 
 		if (!validar.validarNombre(tp, nuevoTema)) 
 			throw new Error("Nombre invalido");
@@ -32,7 +33,7 @@
 
 		try {
 			await app.vault.createFolder(path);
-			await tp.file.move(`${path}/Índice`);
+			await tp.file.move(`${path}/${nombreTema}`);
 		} catch (_) {
 			throw error.Quit("No se pudo crear y mover el tema");
 		}
@@ -42,7 +43,8 @@
 		tR += "---\n"; 
 		tR += `dia: ${dia}\n`;
 		tR += "estado: 'Sin empezar'\n";
-		tR += `tags: \n - índice\n - ${path.replaceAll(" ", "-")}\n`;
+		tR += `orden: ${mantenerOrden.siguienteValorOrden()}\n`;
+		tR += `tags: \n - índice\n - ${path.replaceAll(" ", "-")}\n - nota/investigacion\n`;
 		tR += "---\n";
 
 	} catch ({ name: nombre, message: mensaje }) {

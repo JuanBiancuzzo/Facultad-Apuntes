@@ -1,20 +1,28 @@
 const citaView = require(app.vault.adapter.basePath + "/_scripts/dataview/investigacion/citaView.js");
 
-const { indice } = input;
+const { materia } = input;
+const carreras = dv.pages("#carrera");
+const carreraPrincipal = dv.page("Ingeniería informática y electrónica");
 
-if (!indice) {
+if (!materia) {
     dv.paragraph("No esta cargando - Recargar");
     return;
 }
 
-let tag = indice.file.folder.trim()
-    .split(" ")
-    .filter(token => token.trim() != "-" && token.trim() != "")
-    .join("-");
+let carrera = carreras.find(carrera => {
+    return carrera.file.folder == materia.file.folder.split("/")[0];
+});
+if (!carrera) carrera = carreraPrincipal;
 
-let paginas = dv.pages(`#${tag} and -#índice and -#referencia`)
+console.log(carrera);
+
+let tag = `materia/${carrera.file.name.toLowerCase().replaceAll(" ", "-")}`;
+
+console.log(tag);
+
+let paginas = dv.pages(`#${tag} and -#referencia`)
     .flatMap(pagina => pagina.referencias);
-let paginasReferencias = dv.pages(`#${tag} and -#índice and #referencia`)
+let paginasReferencias = dv.pages(`#${tag} and #referencia`)
     .flatMap(referencia => {
         let resultado = [referencia.numReferencia];
         if (referencia.tipoCita == "Libro" && referencia.capitulos) {
@@ -26,8 +34,8 @@ let paginasReferencias = dv.pages(`#${tag} and -#índice and #referencia`)
         return resultado;
     });
 
-let referenciasIndice = indice.referencias ? indice.referencias : [];
-let indiceArray = dv.array(indice.tags.some(tag => tag.startsWith("nota")) ? referenciasIndice : []);
+let referenciasIndice = materia.referencias ? materia.referencias : [];
+let indiceArray = dv.array(materia.tags.some(tag => tag.startsWith("nota")) ? referenciasIndice : []);
 
 let referenciasTema = paginas.concat(paginasReferencias).concat(indiceArray)
     .map(ref => parseInt(ref, 10))
