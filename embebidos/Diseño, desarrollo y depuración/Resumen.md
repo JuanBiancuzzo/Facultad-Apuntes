@@ -43,3 +43,10 @@ Se realizan diagramas de bloques de [[Función|funciones]] principales que muest
 ### Acerca de las computadoras
 ---
 ![[Computadora#^743ae8]]
+
+
+# Bibliografía
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/bibliografiaMateria", { materia: dv.current() });
+```

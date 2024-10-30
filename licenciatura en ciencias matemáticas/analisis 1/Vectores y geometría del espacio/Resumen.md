@@ -15,3 +15,10 @@ await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 * https://youtu.be/xirwkdLqqU8?si=5-rraRAOKTrIRkpH
 * https://youtu.be/ph1Sskl0DAU?si=LJteaX1uvd7fTnMJ
 * https://youtu.be/Dwqt9e-vn0o?si=bDjLPHoHM0PVXHX3
+
+
+# Bibliografía
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/bibliografiaMateria", { materia: dv.current() });
+```

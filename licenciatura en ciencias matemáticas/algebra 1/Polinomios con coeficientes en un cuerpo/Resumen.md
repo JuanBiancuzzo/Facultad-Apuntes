@@ -17,3 +17,10 @@ await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 * https://www.youtube.com/live/aMuOdPbBgRQ?si=6bzMdRSY0Z1Qs0JX
 * https://www.youtube.com/live/I0OZTutjitY?si=e4OViHXMb5h4vY_P
 * https://www.youtube.com/live/nnzvtj9EZRU?si=k_pWz3Vr_0su4NiB
+
+
+# Bibliografía
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/bibliografiaMateria", { materia: dv.current() });
+```

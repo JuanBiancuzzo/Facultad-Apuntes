@@ -213,4 +213,11 @@ await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 
 # Resumen
 ---
-Pendiente...<% tp.file.cursor() %>
+%% Pendiente... %%
+<% tp.file.cursor() %>
+
+# Bibliografía
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/bibliografiaMateria", { materia: dv.current() });
+```
