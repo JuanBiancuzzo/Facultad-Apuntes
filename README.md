@@ -52,7 +52,9 @@ Un listado de otras carreras en las que voy a ir resumiendo para completar y ver
 
 ## Investigación
 ---
-Un listado de los temas investigados y su estado actual
+La intención en este repositorio es tener un lugar donde poder investigar sobre temas, vinculándolo con otros, y viendo que relaciones aparecen.
+
+Para eso usaré obsidian, y pdfs, donde en obsidian todo sería archivos markdown para poder leerlo en cualquier editor. Cualquier cosa que vean que es incorrecta, ya seas la persona con tanto tiempo para estar leyendo esto, crea un issue para que pueda verlo.
 
 | Tema de investigación                                                                                    | Estado                                                                                                            |
 | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -94,8 +96,8 @@ Estos proyectos tienen una aplicación como resultado final
 | [Simpler GUI](simpler%20gui/Simpler%20GUI.md)                                                                                                               | Sin empezar      |
 | [Trabajo Profesional de Ingeniería Informática](tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)                                               | Sin empezar      |
 | [Primer proyecto de robótica - Auto remoto](primer%20proyecto%20de%20robótica%20-%20auto%20remoto/Primer%20proyecto%20de%20robótica%20-%20Auto%20remoto.md) | En proceso       |
-| [Plugins de Obsidian](plugins%20de%20obsidian/Plugins%20de%20Obsidian.md)                                                                                   | Sin empezar      |
 | [Porfolio](porfolio/Porfolio.md)                                                                                                                            | Sin empezar      |
+| [Plugins de Obsidian](plugins%20de%20obsidian/Plugins%20de%20Obsidian.md)                                                                                   | Sin empezar      |
 | [Better animations in my humble opinion](better%20animations%20in%20my%20humble%20opinion/Better%20animations%20in%20my%20humble%20opinion.md)              | Sin empezar      |
 | [Obsidian Static Site Generator](obsidian%20static%20site%20generator/Obsidian%20Static%20Site%20Generator.md)                                              | Recién empezando |
 
