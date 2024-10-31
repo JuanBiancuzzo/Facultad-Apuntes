@@ -163,6 +163,6 @@
 <%*
 	tR += (infoLibro.capitulos ? infoLibro.capitulos : [])
 		.map(infoCapitulo => describir.capitulo(infoCapitulo))
-		.map(string => `#### ${string}\n---\n\n\n`)
+		.map(cap => `## ${cap}\n---\n\n\n`)
 		.join("\n");
 %> 

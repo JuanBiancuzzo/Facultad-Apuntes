@@ -192,8 +192,9 @@ async function citarLibro(tp, datosIniciales = undefined) {
                     for (let editore of capituloInfo.editores) {
                         editores.push(`${editore.nombre} ${editore.apellido}`);
                     }
-                    
-                    descripcion += ` de ${editores.join(", ")}`;
+                    if (editores && editores.length > 0) {
+                        descripcion += ` de ${editores.join(", ")}`;
+                    }
                 }
                 return descripcion;
             },
@@ -341,8 +342,8 @@ async function citarCapitulo(tp, datosIniciales = undefined) {
                     error.Quit("No se ingresó el final del capítulo")
                 );
 
-                if (final < inicio)
-                    throw error.Quit("Se ingresó una página final del capítulo menor al inicio");
+                if (parseInt(final, 10) < parseInt(inicio, 10))
+                    throw error.Quit(`Se ingresó una página final del capítulo menor al inicio\ninicio: ${inicio}, final: ${final}`);
                 
                 return { inicio: inicio, final: final };
             }

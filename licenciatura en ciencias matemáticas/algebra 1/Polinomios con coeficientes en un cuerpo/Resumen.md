@@ -3,6 +3,8 @@ capitulo: 5
 tags:
   - licenciatura-en-ciencias-matemáticas/algebra-1/Polinomios-con-coeficientes-en-un-cuerpo
   - resumen
+referencias:
+  - "417"
 ---
 # Índice
 ---
@@ -12,6 +14,8 @@ await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 
 # Resumen
 ---
+![[Álgebra I de Teresa Krick#Capítulo 7: Polinomios|Álgebra I de Teresa Krick, Capítulo 7: Polinomios]]
+
 * https://www.youtube.com/live/Fzg-AFMrpdc?si=3OT0QKo9QACLsxWz
 * https://www.youtube.com/live/JmGHsarbFbM?si=XuWddY8BwdNErhoQ
 * https://www.youtube.com/live/aMuOdPbBgRQ?si=6bzMdRSY0Z1Qs0JX

@@ -6,10 +6,18 @@ estado: Sin empezar
 tags:
   - materia/licenciatura-en-ciencias-matemáticas
   - materia/licenciatura-en-ciencias-de-datos
-correlativas:
+correlativas: 
+referencias:
+  - "410"
 ---
 # Apuntes
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
+```
+
+# Bibliografía
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/bibliografiaMateria", { materia: dv.current() });
 ```

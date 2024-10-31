@@ -7,8 +7,7 @@ if (!materia) {
     return;
 }
 
-let tag = materia.file.folder.replaceAll(" ", "-");
-console.log(tag);
+let tag = materia.file.folder.replaceAll(" ", "-").replaceAll(",", "");
 let paginas = dv.pages(`#${tag} and -#referencia`)
     .flatMap(pagina => pagina.referencias)
     .array();

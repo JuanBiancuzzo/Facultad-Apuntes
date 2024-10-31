@@ -1,8 +1,11 @@
 ---
 capitulo: 3
-tags: 
- - licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
- - resumen
+tags:
+  - licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
+  - resumen
+referencias:
+  - "415"
+  - "413"
 ---
 # Índice
 ---
@@ -12,6 +15,10 @@ await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 
 # Resumen
 ---
+![[Álgebra I de Teresa Krick#Capítulo 4: Enteros - Primera parte|Álgebra I de Teresa Krick, Capítulo 4: Enteros - Primera parte]]
+
+![[Álgebra I de Teresa Krick#Capítulo 5: Enteros - Segunda Parte|Álgebra I de Teresa Krick, Capítulo 5: Enteros - Segunda Parte]]
+
 * https://www.youtube.com/live/o36Q7oGSjkI?si=S5tchI2zlWiNjgmt
 * https://www.youtube.com/live/l0w0JLnCTtk?si=oeOkgAU1kdWHBCzI
 * https://www.youtube.com/live/ceZfYtq5vuU?si=idiE23ZvPItrrCS_

@@ -20,7 +20,7 @@ function describirCapitulo(infoCapitulo) {
     let descripcion = `Capítulo ${infoCapitulo.numeroCapitulo}`;
     if (infoCapitulo.nombreCapitulo) 
         descripcion += `: ${infoCapitulo.nombreCapitulo}`;
-    if (infoCapitulo.editores) {
+    if (infoCapitulo.editores && infoCapitulo.editores.length > 0) {
         let editores = [];
 		for (let editore of infoCapitulo.editores) {
 			editores.push(`${editore.nombre} ${editore.apellido}`);
