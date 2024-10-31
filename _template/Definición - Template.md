@@ -3,6 +3,9 @@
 	const preguntar = tp.user.preguntar();
 	const dv = this.app.plugins.plugins.dataview.api;
 
+	const REFERENCIA_TEMPLATE = tp.file.find_tfile("_template/investigacion/Referencia - Template.md")
+	const ETAPA_TEMPLATE = tp.file.find_tfile("_template/investigacion/Etapa - Template.md")
+
 	let tArchivo = tp.file.find_tfile(tp.file.path(true));
 	let carpeta = tp.file.folder(true);
 
@@ -70,16 +73,24 @@
 	}
 
 	await tp.file.move(`${resumen.file.folder}/${titulo}`, tArchivo);
+
+	let referenciasResumen = resumen.referencias ? resumen.referencias : [];
 	
 	tR += "---\n";
 	tR += `dia: ${dia}\n`;
 	tR += "etapa: sin-empezar\n";
+	tR += tp.obsidian.stringifyYaml({ referencias: referenciasResumen });
 	tR += `tags: \n - ${tag}\n - nota/facultad\n`;
 	tR += "---\n";
+	tR += await app.vault.read(ETAPA_TEMPLATE);
+	tR += "\n";
 _%>
-```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
-```
 # Definición
 ---
 <% tp.file.cursor() %>
+
+<%*
+    if (referenciasResumen.length) {
+		tR += await app.vault.read(REFERENCIA_TEMPLATE);
+    }
+_%>

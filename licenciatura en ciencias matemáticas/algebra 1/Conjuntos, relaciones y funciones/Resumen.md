@@ -5,7 +5,6 @@ tags:
   - resumen
 referencias:
   - "411"
-  - "411"
 ---
 # Índice
 ---
