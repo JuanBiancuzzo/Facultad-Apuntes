@@ -11,7 +11,7 @@ tags:
 aliases:
   - Inversor
   - Negación
-  - Complemento
+  - Complemento de un conjunto
 referencias:
   - "411"
 etapa: sin-empezar

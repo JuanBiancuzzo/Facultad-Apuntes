@@ -88,6 +88,10 @@ tags:
 
 ## Capítulo 1: Conjuntos, Relaciones y Funciones
 ---
+Vamos a ver la definición de [[Conjunto|conjunto]], y [[Subconjunto|subconjunto]], con las operaciones de
+* [[Operador NOT|Complemento]]
+* [[Operador OR|Unión]]
+* [[Operador AND|Intersección]]
 
 
 ## Capítulo 2: Números Naturales e Inducción
