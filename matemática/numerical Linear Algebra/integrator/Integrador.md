@@ -4,7 +4,7 @@ tags:
   - índice
   - matemática/numerical-Linear-Algebra/integrator
   - nota/investigacion
-estado: Falta agregar temas
+estado: Tenemos por ahora un único integrador definido
 aliases:
   - Integrador
 ---

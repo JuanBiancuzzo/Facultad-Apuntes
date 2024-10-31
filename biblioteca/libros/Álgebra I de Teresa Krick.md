@@ -93,7 +93,6 @@ Vamos a ver la definición de [[Conjunto|conjunto]], y [[Subconjunto|subconjunto
 * [[Operador OR|Unión]]
 * [[Operador AND|Intersección]]
 
-
 ## Capítulo 2: Números Naturales e Inducción
 ---
 
