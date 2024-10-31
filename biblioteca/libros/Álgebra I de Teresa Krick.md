@@ -72,7 +72,7 @@ aliases:
   - "Álgebra I de Teresa Krick, Capítulo 5: Enteros - Segunda Parte#Capítulo 5: Enteros - Segunda Parte"
   - "Álgebra I de Teresa Krick, Capítulo 6: Números Complejos#Capítulo 6: Números Complejos"
   - "Álgebra I de Teresa Krick, Capítulo 7: Polinomios#Capítulo 7: Polinomios"
-orden: 378
+orden: 377
 tags:
   - referencia/libro
   - biblioteca/libro
@@ -88,10 +88,22 @@ tags:
 
 ## Capítulo 1: Conjuntos, Relaciones y Funciones
 ---
+### Conjuntos
+---
 Vamos a ver la definición de [[Conjunto|conjunto]], y [[Subconjunto|subconjunto]], con las operaciones de
-* [[Operador NOT|Complemento]]
-* [[Operador OR|Unión]]
-* [[Operador AND|Intersección]]
+* [[Operador bicondicional|Igualdad]]
+* [[Operador condicional#Álgebra de conjuntos|Inclusión]]
+* [[Operador OR#Álgebra de conjunto|Unión]]
+* [[Operador AND#Álgebra de conjunto|Intersección]]
+* [[Operador NOT#Álgebra de conjunto|Complemento]]
+* [[Ley de De Morgan#Álgebra de conjunto|Ley de Morgan]]
+* [[Distributividad#Álgebra de conjuntos|Ley distributiva]]
+* [[Diferencia entre conjuntos|Diferencia]]
+* [[Operador XOR#Álgebra de conjuntos|Diferencia simétrica]]
+
+### Relaciones
+---
+
 
 ## Capítulo 2: Números Naturales e Inducción
 ---

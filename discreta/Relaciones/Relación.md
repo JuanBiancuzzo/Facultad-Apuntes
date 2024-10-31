@@ -3,14 +3,19 @@ dia: 2024-08-07
 tags:
   - discreta/Relaciones
   - nota/facultad
+  - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
+aliases:
+  - Relación en un conjunto#Relación en un conjunto
 ---
 # Definición
 ---
-Definimos $R$ como una relación en $A$ si $R \subseteq A \times A$, utilizando el [[Producto cartesiano|producto cartesiano]]. Por ejemplo, sea $A = \set{1,~2,~3}$. Podremos definir una relación $R_1 = \Set{ (1,~1),~ (1,~2),~ (3,~3) }$
+Sean $A$ y $B$ [[Conjunto|conjuntos]]. Una relación $\mathcal{R}$ de $A$ en $B$ es un [[Subconjunto|subconjunto]] cualquiera $\mathcal{R}$ del [[Producto cartesiano|producto cartesiano]] $A \times B$. Es decir $\mathcal{R}$ es una relación de $A$ en $B$ si $\mathcal{R} \in \mathcal{P}(A \times B)$, siendo $\mathcal{P}$ es el [[Conjunto de partes|conjunto de partes]]
+
+Dados $x \in A$, $y \in B$ y una relación $\mathcal{R}$ de $A$ en $B$, se dice que $x$ está relacionado con $y$  (por la relación $\mathcal{R}$) si $(x,~y) \in \mathcal{R}$. Es ese caso se escribe $x \mathcal{R} y$. Si $x$ no está relacionado con $y$, es decir $(x,~y) \notin \mathcal{R}$, se escribe $x \not \mathcal{R} y$ 
 
 Existen dos formas para denotar que un par de elementos pertenece a una relación $$ \begin{array}{c} (1,~2) \in R_1 \\ 1 R_1 2 \end{array} $$
 
-## Representación matricial
+### Representación matricial
 ---
 Para representar una relación, también podremos utilizar una [[Matriz de adyacencia|matriz de adyacencia]], con la cantidad de elementos de $A$ como tamaño $$ A_{R_1} = \begin{pmatrix} 
 	1 & 1 & 0 \\
@@ -18,13 +23,13 @@ Para representar una relación, también podremos utilizar una [[Matriz de adyac
 	0 & 0 & 1 \\
 \end{pmatrix} $$
 
-### Operaciones
+#### Operaciones
 ---
 Sean $A,~B \in \mathbb{R}^{n \times m}$ entonces
 * Orden $A \le B \iff A(i,~j) \le B(i,~j), ~~~ \forall i,j$
 * Producto Hadamard $(A \odot B)(i,~j) = A(i,~j) ~ B(i,~j), ~~~ \forall i,j$
 
-## Representación con grafos
+### Representación con grafos
 ---
 Otra forma de representar la relación es graficando el [[Conjunto|conjunto]] y señalando con flechas las relaciones entre los objetos
 
@@ -49,6 +54,10 @@ La flecha parte del primer elemento del par, y llega al segundo elemento del par
 \end{document}
 ```
 
+
+## Relación en un conjunto
+---
+Sea $A$ un [[Conjunto|conjunto]]. Se dice que $\mathcal{R}$ es una relación en $A$ cuando $\mathcal{R} \subseteq A \times A$
 
 ## Propiedades
 ---

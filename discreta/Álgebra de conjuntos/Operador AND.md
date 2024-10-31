@@ -11,7 +11,13 @@ tags:
 aliases:
   - Conjunción
   - Intersección de conjuntos
+referencias:
+  - "411"
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Este [[Operación lógica|operador lógico]] tiene varias representaciones 
@@ -30,9 +36,9 @@ p & q & pq\\
 \end{array} $$ ^39ff30
 ## Álgebra de conjunto
 ---
-$A \cap B$ se lee "A intersección B" y es el conjunto que contiene los elementos comunes a ambos 
+Sean $A$, $B$ [[Subconjunto|subconjuntos]] de un [[Conjunto|conjunto]] referencial $U$. La intersección de $A$ y $B$ es el conjunto $A \cap B$ de los elementos de $U$ que pertenecen tanto a $A$ como a $B$. Es decir $$ A \cap B = \set{ x \in U : x \in A ~~\land~~ x \in B } $$
 
-Definimos la conjunción $P \cap Q$ como el [[Conjunto|conjunto]] de elementos que se encuentran en $P$ y en $Q$
+Definimos la conjunción $A \cap B$ como el [[Conjunto|conjunto]] de elementos que se encuentran en $A$ y en $B$
 
 ```tikz
 \begin{document} 
@@ -94,4 +100,11 @@ size_t numero = 22;
 size_t mascara = 0b11110000;
 
 size_t resultado = numero & mascara; // 16
+```
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

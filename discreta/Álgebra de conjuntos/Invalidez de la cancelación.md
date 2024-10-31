@@ -1,8 +1,9 @@
 ---
 dia: 2024-08-05
-tags: 
- - discreta/Álgebra-de-conjuntos
- - nota/facultad
+tags:
+  - discreta/Álgebra-de-conjuntos
+  - nota/facultad
+  - discreta/Álgebra-proposicional
 ---
 # Definición
 ---

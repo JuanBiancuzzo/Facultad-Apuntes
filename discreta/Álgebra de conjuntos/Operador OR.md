@@ -11,7 +11,13 @@ tags:
 aliases:
   - Disyunción
   - Unión de conjuntos
+referencias:
+  - "411"
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Este [[Operación lógica|operador lógico]] tiene varias representaciones 
@@ -30,9 +36,10 @@ p & q & p + q\\
 \end{array} $$
 ## Álgebra de conjunto
 ---
-$A \cup B$ se lee "A unión B" y es el conjunto que contiene los elementos de ambos $$ \forall a, b : a \in A \cup B, ~\text{y} ~ b \in A \cup B, ~\text{donde} a \in A, b \in B $$
+Sean $A$, $B$ [[Subconjunto|subconjuntos]] de un [[Conjunto|conjunto]] referencial $U$. La unción de $A$ y $B$ es el conjunto $A \cup B$ de los elementos de $U$ que pertenecen a $A$ o a $B$. Es decir $$ A \cup B = \set{x \in U : x \in A ~~\lor~~ x \in B } $$
+Notemos que este "o" involucrado en la definición de la unión es no excluyente, es decir si un elemento está en $A$ y en $B$, está en la unión por estar en al menos alguno de los dos
 
-Definimos la disyunción $P \cup Q$ como el [[Conjunto|conjunto]] de elementos que se encuentran o en $P$, o en $Q$
+Definimos la disyunción $A \cup B$ como el [[Conjunto|conjunto]] de elementos que se encuentran o en $A$, o en $B$
 
 ```tikz
 \begin{document} 
@@ -146,4 +153,11 @@ size_t flag1 = 0b01000000;
 size_t flag2 = 0b00000010;
 
 size_t resultado = flag1 | flag2; // 0b01000010
+```
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

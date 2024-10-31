@@ -4,6 +4,7 @@ tags:
   - analisis-2/Nomenclatura
   - nota/facultad
   - discreta/Grafos
+  - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
 aliases:
   - Producto cartesiano entre grafos#Entre grafos
 ---
