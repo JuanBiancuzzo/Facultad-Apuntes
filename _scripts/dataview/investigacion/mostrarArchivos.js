@@ -72,14 +72,30 @@ let archivos = dv.pages(`#${tagRepresentante} and (#nota/investigacion or #nota/
             descripcionSimple: false,
             descripcion: aliases.filter(alias => !alias.includes("#"))
         })),
-        mostrarTitulo: () => {
+        mostrarTitulo: async () => {
             if (key < 0) return;
 
             let subTema = subTemas[key];
             let tema = subTema.file.folder.split("/").pop();
             tema = `${tema.charAt(0).toUpperCase()}${tema.slice(1)}`;
-            dv.el("div", `<h3> ${tema} </h3> <hr>`);
-            dv.paragraph(`> [!summary]- Resumen\n> ![[${subTema.file.path}#Resumen]]`);
+            dv.el("div", `<h3 class="mostrarTitulo"> ${crearReferencia(subTema.file.path, "?")} ${tema} </h3> <hr>`);
+
+            let tSubTema = app.vault.getAbstractFileByPath(subTema.file.path);
+            let subTemaContenido = await app.vault.read(tSubTema);
+
+            const indicadorResumen = "## Resumen\n---\n";
+            const indicadorFinal = "## Archivos";
+
+            let indiceResumen = subTemaContenido.indexOf(indicadorResumen) + indicadorResumen.length;
+            let indiceFinal = subTemaContenido.indexOf(indicadorFinal);
+            if (indiceFinal < 0) subTemaContenido.length;
+
+            let contenidoMostrar = subTemaContenido.slice(indiceResumen, indiceFinal)
+                .split("\n")
+                .map(linea => `> ${linea}`)
+                .join("\n");
+
+            dv.paragraph(`> [!summary]- Resumen\n> # \n> ---\n${contenidoMostrar}`);
         },
         mostrarFinal: () => {
 
@@ -116,4 +132,9 @@ function conseguirEtapa(indice) {
     }
 
     return etapaFinal;
+}
+
+function crearReferencia(path, texto) {
+    return `<a data-tooltip-position="top" aria-label="${path}" data-href="${path}" \
+        class="internal-link hide" target="_blank" rel="noopener"> ${texto} </a>`;
 }

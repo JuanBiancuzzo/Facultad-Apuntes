@@ -71,7 +71,7 @@ let datos = dv.pages(`"${materia.file.folder}" and #resumen`)
                 .map(linea => `> ${linea}`)
                 .join("\n");
 
-            dv.paragraph(`> [!summary]- Resumen\n${contenidoMostrar}`);
+            dv.paragraph(`> [!summary]- Resumen\n> # \n> ---\n${contenidoMostrar}`);
         }
     }));
 

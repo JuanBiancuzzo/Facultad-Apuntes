@@ -1,9 +1,10 @@
 ---
 dia: 2024-08-18
-estado: 'Sin empezar'
-tags: 
- - índice
- - matemática/encoding
+estado: Sin empezar
+tags:
+  - índice
+  - matemática/encoding
+  - nota/investigacion
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
