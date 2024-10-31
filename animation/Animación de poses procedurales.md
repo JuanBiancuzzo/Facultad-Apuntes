@@ -8,7 +8,7 @@ tags:
   - animation
 aliases:
   - Procedural pose animation
-orden: 228
+orden: 229
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

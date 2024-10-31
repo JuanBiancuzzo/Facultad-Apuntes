@@ -29,13 +29,15 @@ El orden de los elementos no importa en un conjunto, y en un conjunto no se tien
 
 ## Operaciones
 ---
-* Se dice que "pertenecen" al conjunto, se denota mediante el símbolo $\in$
-    * Si un objeto no pertenece al conjunto, se denota mediante el símbolo $\notin$ 
-* $A \subset B$ se lee "A incluido en B", significa que todos los elementos de $A$ pertenecen a $B$ $$ \forall a \in A : a \in B $$
-* [[Igualdad de conjuntos|Igualdad]]
+* [[Operador bicondicional|Igualdad]]
+* [[Operador condicional#Álgebra de conjuntos|Inclusión]]
 * [[Operador OR#Álgebra de conjunto|Unión]]
-* [[Operador AND#Álgebra de conjunto|Intersección]] 
-* [[Operador NOT#Álgebra de conjunto|Complemento]] 
+* [[Operador AND#Álgebra de conjunto|Intersección]]
+* [[Operador NOT#Álgebra de conjunto|Complemento]]
+* [[Ley de De Morgan#Álgebra de conjunto|Ley de Morgan]]
+* [[Distributividad#Álgebra de conjuntos|Ley distributiva]]
+* [[Diferencia entre conjuntos|Diferencia]]
+* [[Operador XOR#Álgebra de conjuntos|Diferencia simétrica]]
 
 
 # Referencias

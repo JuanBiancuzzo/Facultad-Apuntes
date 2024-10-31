@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - generación-procedural
-orden: 75
+orden: 77
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

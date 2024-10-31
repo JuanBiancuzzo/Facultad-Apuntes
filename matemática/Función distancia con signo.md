@@ -11,7 +11,7 @@ aliases:
   - Signed Distance Function
   - Signed Distance Field
   - SDF
-orden: 300
+orden: 301
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

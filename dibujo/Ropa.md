@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - dibujo
-orden: 27
+orden: 25
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

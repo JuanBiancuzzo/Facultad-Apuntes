@@ -8,7 +8,7 @@ aliases:
 tags:
   - nota/investigacion
   - herramientas/hugo
-orden: 23
+orden: 24
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

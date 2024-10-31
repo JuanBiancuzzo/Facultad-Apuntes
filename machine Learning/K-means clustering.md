@@ -5,7 +5,7 @@ referencias:
 tags:
   - machine-Learning
   - nota/investigacion
-orden: 219
+orden: 221
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

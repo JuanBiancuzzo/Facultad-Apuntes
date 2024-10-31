@@ -28,7 +28,7 @@ tags:
 aliases:
   - Zyzzyva
   - Speculative Byzantine Fault Tolerance
-orden: 353
+orden: 351
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

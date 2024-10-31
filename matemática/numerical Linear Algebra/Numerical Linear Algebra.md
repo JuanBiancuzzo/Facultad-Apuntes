@@ -1,7 +1,7 @@
 ---
 dia: 2024-10-31
 estado: Sin empezar
-orden: 377
+orden: 378
 tags:
   - índice
   - matemática/numerical-Linear-Algebra

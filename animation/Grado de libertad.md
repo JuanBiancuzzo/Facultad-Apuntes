@@ -9,7 +9,7 @@ tags:
 aliases:
   - Degrees of freedom
   - DOF
-orden: 25
+orden: 26
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

@@ -22,7 +22,7 @@ tags:
   - biblioteca/libro
   - nota/investigacion
   - sistemas-operativos
-orden: 360
+orden: 358
 ---
 ```dataviewjs
 	let actual = dv.current();
