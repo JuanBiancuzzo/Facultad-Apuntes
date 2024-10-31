@@ -53,10 +53,31 @@ let datos = dv.pages(`"${materia.file.folder}" and #resumen`)
             descripcionSimple: false,
             descripcion: aliases.filter(alias => !alias.includes("#"))
         })),
-        mostrarTitulo: () => {
-            dv.el("div", `<h2> ${resumen.file.folder.split("/").pop()} </h2> <hr>`);
-            dv.paragraph(`> [!summary]- Resumen\n> ![[${resumen.file.path}#Resumen]]`);
+        mostrarTitulo: async () => {
+            dv.el("div", `<h2 class="mostrarTitulo"> ${crearReferencia(resumen.file.path, "?")} ${resumen.file.folder.split("/").pop()} </h2> <hr>`);
+
+            let tResumen = app.vault.getAbstractFileByPath(resumen.file.path);
+            let resumenContenido = await app.vault.read(tResumen);
+
+            const indicadorResumen = "# Resumen\n---\n";
+            const indicadorFinal = "# Bibliografía";
+
+            let indiceResumen = resumenContenido.indexOf(indicadorResumen) + indicadorResumen.length;
+            let indiceFinal = resumenContenido.indexOf(indicadorFinal);
+            if (indiceFinal < 0) resumenContenido.length;
+
+            let contenidoMostrar = resumenContenido.slice(indiceResumen, indiceFinal)
+                .split("\n")
+                .map(linea => `> ${linea}`)
+                .join("\n");
+
+            dv.paragraph(`> [!summary]- Resumen\n${contenidoMostrar}`);
         }
     }));
 
-    await dv.view("_scripts/dataview/mostrarElementos", { lista: datos, defaultVacio: "Todavía no hay archivos" });
+await dv.view("_scripts/dataview/mostrarElementos", { lista: datos, defaultVacio: "Todavía no hay archivos" });
+
+function crearReferencia(path, texto) {
+    return `<a data-tooltip-position="top" aria-label="${path}" data-href="${path}" \
+        class="internal-link hide" target="_blank" rel="noopener"> ${texto} </a>`;
+}

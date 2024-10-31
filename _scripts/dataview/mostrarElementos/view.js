@@ -19,7 +19,7 @@ const { lista, defaultVacio = "" } = input;
 
 for (let { elementos, mostrarTitulo } of lista) {
     if (mostrarTitulo)
-        mostrarTitulo();
+        await mostrarTitulo();
     dv.el("div", `<div class="grilla"> ${elementos.map(item => representarElemento(item)).join("")} </div><br>`);
 }
 

@@ -80,7 +80,23 @@
     flex: 1 1 calc(50% - 1em);
 }
 
-.p {
+p {
     margin: 0;
     padding: 0;
+}
+
+.hide {
+    display: none;
+    padding: 0em;
+}
+
+.mostrarTitulo {
+    display: flex;
+    flex-direction: row;
+}
+
+.mostrarTitulo:hover > .hide {
+    display: block;
+    padding-left: 0.5em; 
+    padding-right: 0.5em; 
 }
