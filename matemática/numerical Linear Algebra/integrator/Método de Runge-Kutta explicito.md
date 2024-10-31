@@ -5,7 +5,7 @@ referencias:
   - "64"
 tags:
   - nota/investigacion
-  - matemática/integrator/métodos-de-Runge-Kutta
+  - matemática/numerical-Linear-Algebra/integrator/métodos-de-Runge-Kutta
 orden: 237
 ---
 ```dataviewjs

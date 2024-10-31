@@ -78,7 +78,7 @@ Donde $r$ representa la respuesta inicial del sistema
 * Si $r > 1$, el sistema se sobrepasa y vuelve al valor
 * Si $r < 0$, el sistema anticipa el movimiento, que permite seguir el [[The Illusion of Life de Frank Thomas, Ollie Johnston#Anticipation|principio de anticipación]]
 
-Para resolverla esta ecuación diferencial, podemos usar [[matemática/integrator/Índice|integradores]] que son métodos iterativos para la aproximación de soluciones de [[Ecuación diferencial ordinaria\|ecuaciones diferenciales ordinarias]], concretamente, del [[Problema de valor inicial|problema de valor inicial]] 
+Para resolverla esta ecuación diferencial, podemos usar [[Integrador|integradores]] que son métodos iterativos para la aproximación de soluciones de [[Ecuación diferencial ordinaria\|ecuaciones diferenciales ordinarias]], concretamente, del [[Problema de valor inicial|problema de valor inicial]] 
 
 
 

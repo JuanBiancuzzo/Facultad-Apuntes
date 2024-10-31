@@ -2,7 +2,8 @@
 dia: 2024-07-08
 tags:
   - índice
-  - matemática/integrator
+  - matemática/numerical-Linear-Algebra/integrator
+  - nota/investigacion
 estado: Falta agregar temas
 aliases:
   - Integrador
@@ -12,7 +13,7 @@ await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.c
 ```
 # ¿Qué se va a investigar?
 ---
-En el mismo sentido que [[matemática/integrator/métodos de Runge-Kutta/Índice|Runge-Kutta methods]] vamos a ver como resolver [[física/lagrangian mechanics/Índice|Lagrangian mechanics]] de forma numérica, con sistemas de corrección.
+En el mismo sentido que Runge-Kutta methods vamos a ver como resolver [[física/lagrangian mechanics/Índice|Lagrangian mechanics]] de forma numérica, con sistemas de corrección
 
 ## Resumen
 ---

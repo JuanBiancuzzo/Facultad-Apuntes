@@ -11,7 +11,7 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (96)
+#### Buscar (97)
 ---
 Programación:
 1. [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/-/es/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
@@ -116,6 +116,7 @@ Mecánica:
 5. Mechanical Design for the Stage de Alan Hendrickson
 6. The Science of Structures and Materials: No 23 (Scientific American Library series) de J. E. Gordon
 7. Microelectronic circuit design de Richard C Jaeger
+8. [Practical Electronics for Inventors](https://www.amazon.com/Practical-Electronics-Inventors-Third-Scherz/dp/0071771336)
 
 Diseño:
 1. The Branding Method - Carolina Kairos  

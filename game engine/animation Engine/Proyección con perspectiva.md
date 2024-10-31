@@ -1,12 +1,12 @@
 ---
-dia: 2024-07-08
+dia: 2024-10-31
 etapa: sin-empezar
-referencias:
-  - "93"
-tags:
-  - nota/investigacion
-  - matemática/integrator
-orden: 100
+orden: 380
+referencias: 
+ - "419"
+tags: 
+ - game-engine/animation-Engine
+ - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
