@@ -7,10 +7,18 @@ tags:
   - dispo/Circuitos-digitales-y-procesos-de-fabricación-CMOS
   - discreta/Álgebra-proposicional
   - lenguajes-de-programación/lenguaje-c
+  - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
 aliases:
   - Inversor
   - Negación
+  - Complemento
+referencias:
+  - "411"
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Este [[Operación lógica|operador lógico]] tiene varias representaciones 
@@ -27,7 +35,29 @@ p & p'\\
 \end{array} $$
 ## Álgebra de conjunto
 ---
-Definimos la negación $P'$ como el [[Conjunto|conjunto]] de elementos que no pertenecen a $P$
+Sea $A$ [[Subconjunto|subconjunto]] de un [[Conjunto|conjunto]] referencial $U$. El complemento de $A$ (en $U$) es el conjunto de los elementos de $U$ que no pertenecen a $A$, que suele notar con $A'$ o $A^c$ <sup><a href="#ref-411" style="color: inherit; text-decoration: none;">[411]</a></sup>  $$ A^c = \set{ x \in U : x \notin A } $$
+```tikz
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usepackage{ifthen}
+
+\begin{document} 
+	\begin{tikzpicture}[scale=1, transform shape, thick]
+
+        \filldraw[draw=black, fill=green!35!darkgray] (-4.5, -3) 
+            rectangle (4.5, 3);
+        \path (4.5, 3) rectangle ++(-1, -1)
+            node[midway, font=\bfseries, scale=1.75] {$U$};
+        \path (3.5, -2) rectangle ++(-1, 1)
+            node[midway, font=\bfseries, scale=1.75] {$A'$};
+
+        \filldraw[ultra thick, draw=black, fill=white] (-0.5, 0) circle (2)
+			node[font=\bfseries, black, scale=1.75] {$A$};
+
+	\end{tikzpicture}
+\end{document}
+```
 
 ## En SQL
 ---
@@ -194,3 +224,10 @@ Partiendo de la una representación [[Inversor real|real]] del inversor, con la 
 ![[Inversor real#^51a100]]
 
 Donde se puede implementar con [[Inversor Metal-Óxido-Semiconductor Complementaria|tecnología CMOS]]
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```

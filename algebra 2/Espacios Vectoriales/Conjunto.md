@@ -35,6 +35,7 @@ El orden de los elementos no importa en un conjunto, y en un conjunto no se tien
 * [[Igualdad de conjuntos|Igualdad]]
 * [[Operador OR#Álgebra de conjunto|Unión]]
 * [[Operador AND#Álgebra de conjunto|Intersección]] 
+* [[Operador NOT#Álgebra de conjunto|Complemento]] 
 
 
 # Referencias

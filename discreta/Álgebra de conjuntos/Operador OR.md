@@ -7,6 +7,7 @@ tags:
   - discreta/Álgebra-proposicional
   - analisis-2/Nomenclatura
   - lenguajes-de-programación/lenguaje-c
+  - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
 aliases:
   - Disyunción
   - Unión de conjuntos
