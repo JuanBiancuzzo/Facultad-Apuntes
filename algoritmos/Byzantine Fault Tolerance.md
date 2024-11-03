@@ -8,7 +8,7 @@ tags:
   - nota/investigacion
 aliases:
   - Tolerancia a faltas bizantinas
-orden: 337
+orden: 342
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

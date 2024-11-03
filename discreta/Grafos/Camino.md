@@ -6,14 +6,14 @@ tags:
 aliases:
   - Camino abierto
   - Camino cerrado
-  - Trail
-  - Path
-  - Circuit
-  - Cicle
-  - Recorrido
-  - Camino simple
-  - Circuito
-  - Ciclo
+  - Trail#Recorrido (Trail)
+  - Path#Camino simple (Path)
+  - Circuit#Circuito (Circuit)
+  - Cicle#Ciclo (Cicle)
+  - Recorrido#Recorrido (Trail)
+  - Camino simple#Camino simple (Path)
+  - Circuito#Circuito (Circuit)
+  - Ciclo#Ciclo (Cicle)
 ---
 # Definición
 ---

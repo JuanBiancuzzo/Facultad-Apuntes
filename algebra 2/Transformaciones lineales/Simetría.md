@@ -6,7 +6,7 @@ tags:
 ---
 # Definición
 ---
-Teniendo dos [[Subespacio|subespacios]] $S_1$ y $S_2$ en [[Suma directa entre subespacios|suma directa]], tal que generen el espacio vectorial $\mathbb{V}$
+Teniendo dos [[Subespacio|subespacios]] $S_1$ y $S_2$ en [[Suma directa entre subespacios|suma directa]], tal que generen el [[Espacio vectorial|espacio vectorial]] $\mathbb{V}$
 
 La simetría de $\mathbb{V}$ de $S_1$ de la dirección $S_2$, denotada por $\Sigma_{S_1, S_2}$, es la [[Transformación lineal|transformación lineal]] de $\mathbb{V}$ en $\mathbb{V}$ definida por 
 $$\Pi_{S_1, S_2} := \mathbb{I}_\mathbb{V} - 2 \cdot \Pi_{S_1, S_2}$$

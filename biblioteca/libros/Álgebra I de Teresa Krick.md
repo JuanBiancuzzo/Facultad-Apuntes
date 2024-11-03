@@ -72,7 +72,7 @@ aliases:
   - "Álgebra I de Teresa Krick, Capítulo 5: Enteros - Segunda Parte#Capítulo 5: Enteros - Segunda Parte"
   - "Álgebra I de Teresa Krick, Capítulo 6: Números Complejos#Capítulo 6: Números Complejos"
   - "Álgebra I de Teresa Krick, Capítulo 7: Polinomios#Capítulo 7: Polinomios"
-orden: 377
+orden: 378
 tags:
   - referencia/libro
   - biblioteca/libro
@@ -103,7 +103,11 @@ Vamos a ver la definición de [[Conjunto|conjunto]], y [[Subconjunto|subconjunto
 
 ### Relaciones
 ---
+Podemos empezar a ver el concepto de [[Relación|relación]] con los casos particulares
+* [[Relación de equivalencia|Relación de equivalencia]]
+* [[Relación de orden|Relación de orden]]
 
+Esto nos hace ver las propiedades ![[Relación#Propiedades]]
 
 ## Capítulo 2: Números Naturales e Inducción
 ---

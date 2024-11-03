@@ -20,7 +20,7 @@ tags:
   - biblioteca/libro
   - nota/investigacion
   - lenguajes-de-programación/lenguaje-go
-orden: 355
+orden: 353
 ---
 ```dataviewjs
 	let actual = dv.current();

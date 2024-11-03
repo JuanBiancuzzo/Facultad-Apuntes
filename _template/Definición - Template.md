@@ -24,7 +24,7 @@
 		default:
 			resumen = await preguntar.suggester(
 				tp, resumen => {
-					let repre = `${resumen.file.folder.split("/")[1]}`;
+					let repre = `${resumen.file.folder.split("/").pop()}`;
 					if (resumen.multiple) 
 						repre += `, Parte ${resumen.parte}`;
 					return repre;

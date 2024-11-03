@@ -22,7 +22,7 @@ tags:
   - biblioteca/libro
   - nota/investigacion
   - física
-orden: 277
+orden: 274
 ---
 ```dataviewjs
 	let actual = dv.current();

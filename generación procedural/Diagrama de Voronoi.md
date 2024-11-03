@@ -8,7 +8,7 @@ tags:
 aliases:
   - Polígonos de Thiessen
   - Voronoi diagram
-orden: 354
+orden: 352
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

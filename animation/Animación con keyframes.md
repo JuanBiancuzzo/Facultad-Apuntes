@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - animation
-orden: 263
+orden: 260
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

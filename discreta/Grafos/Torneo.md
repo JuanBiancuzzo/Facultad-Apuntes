@@ -10,6 +10,6 @@ Un torneo es un [[Grafo simple completo|grafo completo]] [[Grafo orientado|orien
 
 ## Transitividad
 ---
-Se dice que un torneo es transitivo, si $\forall u,v,w \in V(G): (uv, vw \in E(G)) \to uw \in E(G)$. Esta definición es similar a la [[Transitividad en relaciones de orden|transitividad en relaciones de orden]]. Un torneo es transitivo si y solo si no tiene ciclos
+Se dice que un torneo es transitivo, si $\forall u,v,w \in V(G): (uv, vw \in E(G)) \to uw \in E(G)$. Esta definición es similar a la [[Relación transitiva|transitividad en relaciones de orden]]. Un torneo es transitivo si y solo si no tiene ciclos
 
 Para demostrarlo, podemos inicialmente demostrar que todo torneo con al menos un [[Camino#Ciclo (Cicle)|ciclo]], tendrá un ciclo de longitud tres. Luego, el ciclo de [[Longitud de un camino|longitud]] tres contradice la transitividad

@@ -63,10 +63,10 @@ Sea $A$ un [[Conjunto|conjunto]]. Se dice que $\mathcal{R}$ es una relación en 
 ---
 En una relación, se pueden presentar las siguientes propiedades independientes, siendo $R$ una relación en el conjunto $A$
 
-* Reflexiva $\forall x \in A: ~ xRx$
+* [[Relación reflexiva|Reflexiva]]
 * Irreflexiva $\forall x \in A: ~ xR'x$
-* Simétrica $\forall x,~y \in A: ~ xRy \iff yRx$
-* Antisimétrica $\forall x,~y \in A: ~ (xRy,~yRx) \implies x = y$
+* [[Relación simétrica|Simétrica]]
+* [[Relación antisimétrica|Antisimétrica]]
 * Asimétrica $\forall x,~y \in A: ~ xRy \implies yR'x$
-* [[Transitividad en relaciones de orden|Transitiva]] $\forall x,~y \in A: ~ (xRy,~yRz) \implies xRz$
+* [[Relación transitiva|Transitiva]]
 * Anti transitiva $\forall x,~y \in A: ~ (xRy,~yRz) \implies xR'z$

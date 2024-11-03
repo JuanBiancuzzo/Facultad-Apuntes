@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - discreta/Relaciones
   - discreta/Grafos
+  - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
 ---
 # Definición
 ---
