@@ -19,6 +19,13 @@
       "template": "_template/Nota - Template.md"
     }
   ],
+  "enable_file_templates": false,
+  "file_templates": [
+    {
+      "regex": ".*",
+      "template": ""
+    }
+  ],
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
@@ -30,7 +37,8 @@
     "_template/investigacion/Agregar referencia.md",
     "_template/Regenerar readme - Template.md",
     "_template/investigacion/Editar referencia - Template.md",
-    "_template/investigacion/Citar en linea.md"
+    "_template/investigacion/Citar en linea.md",
+    "_template/Agregar demostracion.md"
   ],
   "startup_templates": [
     "_template/startup/start.md"

@@ -3,11 +3,20 @@ dia: 2022-09-12
 tags:
   - analisis-3/Funciones-elementales
   - nota/facultad
+  - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
+referencias:
+  - "411"
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
-Una [[Función|función]] es biyectiva si es al mismo tiempo una [[Función inyectiva|función inyectiva]] y una [[Función sobreyectiva|función sobreyectiva]], es decir, si todos los elementos del [[Conjunto|conjunto]] de salida tienen una [[Imagen|imagen]] distinta en el conjunto de llegada, y a cada elemento del conjunto de llegada le corresponde un elemento del conjunto de salida.
-$$ f: \begin{matrix} 
-X \to Y \\
-x \to y = f(x)
-\end{matrix} $$
+Sea $f : A \to B$ es una [[Función|función]]. Se dice que $f$ es biyectiva si es a la vez [[Función inyectiva|inyectiva]] y [[Función sobreyectiva|sobreyectiva]], es decir para todo elemento $y \in B$ ([[Codominio|codominio]]) existe exactamente un elemento $x \in A$ ([[Dominio de una función|dominio]]) para el cual $f(x) = y$
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```

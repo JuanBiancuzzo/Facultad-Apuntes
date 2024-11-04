@@ -10,7 +10,7 @@ aliases:
 referencias:
   - "353"
 etapa: sin-empezar
-orden: 74
+orden: 73
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

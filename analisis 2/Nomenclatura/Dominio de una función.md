@@ -3,6 +3,7 @@ dia: 2024-08-05
 tags:
   - analisis-2/Nomenclatura
   - nota/facultad
+  - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
 referencias:
   - "183"
 ---

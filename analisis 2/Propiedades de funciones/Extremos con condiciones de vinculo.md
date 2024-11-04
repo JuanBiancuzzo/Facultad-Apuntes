@@ -8,7 +8,7 @@ tags:
 ---
 En este caso, vamos a aplicar el [[Análisis de extremos locales para campos escalares|análisis de extremos locales]], cuando sus variables deben cumplir ciertas condiciones, denominadas **condiciones de vinculo** entre las mismas
 
-La forma mas directa de resolver estas situaciones, consiste en imponer la condición o condiciones de vinculo mediante la [[Composición de funciones|composición de funciones]]
+La forma mas directa de resolver estas situaciones, consiste en imponer la condición o condiciones de vinculo mediante la [[Composición de relaciones#Funciones|composición de funciones]]
 
 Vamos a tener una expresión a maximar, que llamaremos $f(x, y)$  y una condición de vinculo que llamaremos $\vec{g}$ y sera una [[Función implícita|función implícita]], esta va a tener un [[analisis 2/Nomenclatura/Dominio de una función.md|dominio]] reducido
 

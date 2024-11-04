@@ -13,7 +13,7 @@ aliases:
   - Optoaislador#Optoacoplador
   - Optoisolator#Optoacoplador
 etapa: ampliar
-orden: 159
+orden: 162
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

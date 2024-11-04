@@ -26,6 +26,6 @@ Ahora podremos ver las [[Derivada parcial de orden superior|derivadas parciales 
 ---
 Hay algunos casos, donde la resolución se ve complejidad ya que no se pueden aplicar las reglas básicas de la derivación. 
 
-Por ejemplo, dado la [[Composición de funciones|composición de funciones]], que nos lleva a aplicar la [[Regla de la cadena|regla de la cadena]], de la siguiente forma
+Por ejemplo, dado la [[Composición de relaciones#Funciones|composición de funciones]], que nos lleva a aplicar la [[Regla de la cadena|regla de la cadena]], de la siguiente forma
 
 ![[Regla de la cadena#Definición]]

@@ -72,7 +72,7 @@ aliases:
   - "Álgebra I de Teresa Krick, Capítulo 5: Enteros - Segunda Parte#Capítulo 5: Enteros - Segunda Parte"
   - "Álgebra I de Teresa Krick, Capítulo 6: Números Complejos#Capítulo 6: Números Complejos"
   - "Álgebra I de Teresa Krick, Capítulo 7: Polinomios#Capítulo 7: Polinomios"
-orden: 378
+orden: 377
 tags:
   - referencia/libro
   - biblioteca/libro
@@ -110,7 +110,12 @@ Podemos empezar a ver el concepto de [[Relación|relación]] con los casos parti
 Esto nos hace ver las propiedades ![[Relación#Propiedades]]
 ### Funciones
 ---
+Podemos ver como definir una [[Función|función]] usando relaciones. También vemos una de las posibles clasificaciones
+* [[Función inyectiva|Función inyectiva]]
+* [[Función sobreyectiva|Función sobreyectiva]]
+* [[Función biyectiva|Función biyectiva]]
 
+Además vemos la definición de [[Función inversa|función inversa]]
 
 ## Capítulo 2: Números Naturales e Inducción
 ---

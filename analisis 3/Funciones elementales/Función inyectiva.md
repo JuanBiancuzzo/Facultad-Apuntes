@@ -3,6 +3,20 @@ dia: 2022-09-12
 tags:
   - analisis-3/Funciones-elementales
   - nota/facultad
+  - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
+referencias:
+  - "411"
+etapa: ampliar
 ---
-Una función es inyectiva, uno a uno, si a elementos distintos del conjunto $X$ (dominio) les corresponden elementos distintos en el conjunto $Y$ (codominio) de $f$
-$$ \forall x_0, x_1 \in X, x_0 \ne x_1 \implies f(x_0) \ne f(x_1) $$
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
+# Definición
+---
+Sea $f : A \to B$ es una [[Función|función]]. Se dice que $f$ es inyectiva si para todo elemento $y \in B$ ([[Codominio|imagen]]) existe a lo sumo un elemento $x \in A$ ([[Dominio de una función|dominoo]]) para el cual $f(x) = y$. Dicho de otra manera, $f$ es inyectiva si para todo $x, ~x' \in A$ tales que $f(x) = f(x')$ se tiene que $x = x'$
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```

@@ -5,6 +5,9 @@ tags:
   - nota/facultad
   - discreta/Álgebra-proposicional
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
+  - discreta/Álgebra-de-Boole
+  - estructura/Álgebra-de-Boole
+  - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
 ---
 # Definición
 ---
@@ -31,6 +34,12 @@ $$ P \cap (Q \cup R) = (P \cap Q) \cup (P \cap R), ~~~~ P \cup (Q \cap R) = (P \
 Para el [[Álgebra de Boole|álgebra de Boole]] $(B,~+,~\cdot,~',~0_B,~1_B)$ se tiene 
 
 $$ \forall x, y, z \in B: ~~~~~ x (y + z) = xy + xz, ~~~ x + yz = (x + y)(x + z) $$ ^174ba9
+
+## Números naturales
+---
+Sea $m,~ n,~ k \in \mathbb{N}$ se tiene
+
+$$ m \cdot (n + k) = m \cdot n + m \cdot k $$ ^173bc3
 
 ## Espacios vectoriales
 ---

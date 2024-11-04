@@ -10,7 +10,7 @@ Sea $g : V \subseteq \mathbb{R}^m \to \mathbb{R}^n$ una [[Función|función]] de
 
 Sea $f : U \subseteq \mathbb{R}^n \to \mathbb{R}$ una función definida en el conjunto abierto $U$ de $\mathbb{R}^n$, tal que $g(V) \subseteq U$, diferenciable en el punto $g(x_0) \in U$.
 
-Entonces la [[Composición de funciones|composición de funciones]] $f \circ g: V \subseteq \mathbb{R}^m \to \mathbb{R}$ es diferenciable en $x_0$ y sus [[Derivada parcial|derivadas parciales]] son
+Entonces la [[Composición de relaciones#Funciones|composición de funciones]] $f \circ g: V \subseteq \mathbb{R}^m \to \mathbb{R}$ es diferenciable en $x_0$ y sus [[Derivada parcial|derivadas parciales]] son
 
 $$ \frac{\partial}{\partial x_j}(f \circ g)(x_0) = \prod_{i = 1}^n \frac{\partial f}{\partial y_i}(g(x_0))\frac{\partial g_i}{\partial x_j}(x_0),~~~ j = 1, 2, \cdots, m $$
 

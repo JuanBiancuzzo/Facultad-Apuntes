@@ -11,7 +11,13 @@ tags:
 aliases:
   - Prototipo de una función#Expresión en C
   - Firma de una función#Expresión en C
+referencias:
+  - "411"
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Sean $A$ y $B$ [[Conjunto|conjuntos]], y sea $\mathcal{R}$ una [[Relación|relación]] de $A$ en $B$. Se dice que $\mathcal{R}$ es una función cuando todo elemento $x \in A$ está relacionado con algún $y \in B$, y este elemento $y$ es único. Es decir $$ \forall x \in A, ~~ \exists! ~ y \in B : x \mathcal{R} y $$
@@ -19,6 +25,7 @@ Donde el símbolo "$\exists!$" significa "existe un único", es decir $$ \begin{
     & \forall X \in A, ~~ \exists ~ y \in b ~~ \text{tal que} ~~ x \mathcal{R} y \\
     & \text{y si} ~~ y,~z \in B ~ \text{son tales que} ~ x \mathcal{R} y ~ \text{y} ~ x \mathcal{R} z, ~ \text{entonces} ~ y = z
 \end{align} $$
+Como a cada $x \in A$ le corresponde un $y \in B$ y este $y$ es único, se le puede dar un nombre que hace notar que $y$ depende de $x$. Se dice que $y$ es la [[Codominio|imagen]] de $x$ por $f$, y se suele denotar "$y = f(x)$", que es la forma usual en la que conocemos las funciones
 
 Escribimos estas funciones como $f: D \to H$ donde los conjuntos $D$ (el [[Dominio de una función|dominio]]) y $H$ (el [[Codominio|codominio]]) son no vacíos
 
@@ -108,3 +115,11 @@ Esta función, la podemos pensar, como que establece una relación entre [[Espac
 
 
 
+
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```
