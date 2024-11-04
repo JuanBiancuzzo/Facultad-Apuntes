@@ -14,6 +14,12 @@ aliases:
 ---
 # Definición
 ---
+Sean $A$ y $B$ [[Conjunto|conjuntos]], y sea $\mathcal{R}$ una [[Relación|relación]] de $A$ en $B$. Se dice que $\mathcal{R}$ es una función cuando todo elemento $x \in A$ está relacionado con algún $y \in B$, y este elemento $y$ es único. Es decir $$ \forall x \in A, ~~ \exists! ~ y \in B : x \mathcal{R} y $$
+Donde el símbolo "$\exists!$" significa "existe un único", es decir $$ \begin{align} 
+    & \forall X \in A, ~~ \exists ~ y \in b ~~ \text{tal que} ~~ x \mathcal{R} y \\
+    & \text{y si} ~~ y,~z \in B ~ \text{son tales que} ~ x \mathcal{R} y ~ \text{y} ~ x \mathcal{R} z, ~ \text{entonces} ~ y = z
+\end{align} $$
+
 Escribimos estas funciones como $f: D \to H$ donde los conjuntos $D$ (el [[Dominio de una función|dominio]]) y $H$ (el [[Codominio|codominio]]) son no vacíos
 
 ```tikz

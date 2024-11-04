@@ -108,6 +108,9 @@ Podemos empezar a ver el concepto de [[Relación|relación]] con los casos parti
 * [[Relación de orden|Relación de orden]]
 
 Esto nos hace ver las propiedades ![[Relación#Propiedades]]
+### Funciones
+---
+
 
 ## Capítulo 2: Números Naturales e Inducción
 ---
