@@ -1,8 +1,16 @@
 ---
 capitulo: 4
-tags: 
- - circuitos/Amplificadores-con-varios-dispositivos-activos-de-bajo-nivel-de-potencia
- - resumen
+tags:
+  - circuitos/Amplificadores-con-varios-dispositivos-activos-de-bajo-nivel-de-potencia
+  - resumen
+referencias:
+  - "431"
+  - "432"
+  - "434"
+  - "438"
+  - "447"
+  - "452"
+  - "454"
 ---
 # Índice 
 ---

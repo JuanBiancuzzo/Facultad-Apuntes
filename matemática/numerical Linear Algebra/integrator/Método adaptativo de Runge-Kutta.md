@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - matemática/numerical-Linear-Algebra/integrator/métodos-de-Runge-Kutta
-orden: 230
+orden: 227
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

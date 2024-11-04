@@ -1,8 +1,18 @@
 ---
 capitulo: 2
-tags: 
- - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
- - resumen
+tags:
+  - circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
+  - resumen
+referencias:
+  - "426"
+  - "427"
+  - "428"
+  - "429"
+  - "444"
+  - "449"
+  - "458"
+  - "460"
+  - "461"
 ---
 # Índice 
 ---

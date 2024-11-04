@@ -21,7 +21,7 @@ tags:
   - nota/investigacion
   - sistemas-operativos
   - tpp
-orden: 374
+orden: 370
 ---
 ```dataviewjs
 	let actual = dv.current();

@@ -1,8 +1,16 @@
 ---
 capitulo: 1
-tags: 
- - circuitos/Circuitos-con-diodos
- - resumen
+tags:
+  - circuitos/Circuitos-con-diodos
+  - resumen
+referencias:
+  - "425"
+  - "441"
+  - "440"
+  - "457"
+  - "459"
+  - "462"
+  - "463"
 ---
 # Índice 
 ---

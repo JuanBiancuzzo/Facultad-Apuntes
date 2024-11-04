@@ -9,6 +9,11 @@ etapa: ampliar
 correlativas:
   - "[[Análisis de circuitos (6606)|Análisis de circuitos]]"
   - "[[Dispositivos semiconductores (8603)|Dispositivos semiconductores]]"
+referencias:
+  - "424"
+  - "439"
+  - "451"
+  - "456"
 ---
 # Apuntes
 ---

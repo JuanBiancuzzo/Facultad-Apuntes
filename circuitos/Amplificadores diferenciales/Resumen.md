@@ -1,8 +1,12 @@
 ---
 capitulo: 5
-tags: 
- - circuitos/Amplificadores-diferenciales
- - resumen
+tags:
+  - circuitos/Amplificadores-diferenciales
+  - resumen
+referencias:
+  - "435"
+  - "446"
+  - "455"
 ---
 # Índice 
 ---
