@@ -11,7 +11,7 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (97)
+#### Buscar (101)
 ---
 Programación:
 1. [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/-/es/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
@@ -31,6 +31,9 @@ Programación:
 10. [Introduction to machine learning with python de Andreas C. Müller y Sarah Guido](https://www.amazon.com/Introduction-Machine-Learning-Python-Scientists/dp/1449369413?crid=BNRON0SAFNYM&dib=eyJ2IjoiMSJ9.8xvwCgxw2TWdZ-oqg67stg.AtPW5ixvEWsAA7bQUohaD9X6kuFI7NVHFvibPdP5fU4&dib_tag=se&keywords=Introduction+to+machine+learning+with+python+de+Andreas+C.+M%C3%BCller+y+Sarah+Guido&qid=1729866113&s=books&sprefix=introduction+to+machine+learning+with+python+de+andreas+c.+m%C3%BCller+y+sarah+guido,stripbooks-intl-ship,203&sr=1-1)
 11. [Python for data analysis de Wes McKinney](https://www.amazon.com/Python-Data-Analysis-Wrangling-Jupyter/dp/109810403X?crid=20Y1Y55J84HTH&dib=eyJ2IjoiMSJ9.mPK50KsuhdOu3siz0pjKPIO2_kY0Alblxl7dy0RuxE7IApqwCzrnr71tOIQwiHY4q-jcUiqFW9sXsH36WForFZNDjVfeQR_aO1xzfjMNloVDH-hih_bK_SWmtoOxAZh0i_0JuFbDFvbPg3IKF61TtYMdzZ2Jh1VrEbJ1ybUHAXXwAne1guuitl96G1qQEZqC7qGLADWn9jOoDMAR3OnSOF_eMpvNfXldKQ1geF2WaqU.5rrPpD4qyuVAmIL71EyquRbaeATbA268k8VEJKGpJ_4&dib_tag=se&keywords=Python+for+data+analysis+de+Wes+McKinney&qid=1729866144&s=books&sprefix=introduction+to+machine+learning+with+python+de+andreas+c.+m%C3%BCller+y+sarah+guido,stripbooks-intl-ship,326&sr=1-1)
 12. [Data Science from Scratch de Joel Grus](https://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/1492041130?crid=3OIAUEEZ248JV&dib=eyJ2IjoiMSJ9.8bSg9CnzT6ILYn7fN65f9KV2nW-cKKc8x0_9YIRDZ4RfGvmUjgBr8ITHFe99Cg1SY8hieuHF7QLP1X5h2uj1aw.fkyQ1YsMSDSPF43DpfxXcInCEfEaJsd4VpvCw-p11bg&dib_tag=se&keywords=Data+Science+from+Scratch+de+Joel+Grus&qid=1729866163&s=books&sprefix=data+science+from+scratch+de+joel+grus,stripbooks-intl-ship,825&sr=1-1)
+13. [The Linux Programming Interface: A Linux and UNIX System Programming Handbook](https://www.amazon.com/Linux-Programming-Interface-System-Handbook/dp/1593272200)
+14. [TCP/IP Illustrated, Vol. 1](https://www.amazon.com/TCP-Illustrated-Vol-Addison-Wesley-Professional/dp/0201633469)
+15. [Cybersecurity Ops with bash](https://www.amazon.com/Cybersecurity-Ops-bash-Analyze-Command/dp/1492041319)
 
 Hacking:
 1. 
@@ -84,6 +87,10 @@ Matemática:
 14. [Numerical python: Scientific computing and data science applications with numpy, scipy and matplotlib de robert Johansson](https://www.amazon.com/Numerical-Python-Scientific-Applications-Matplotlib/dp/B0D2CHYKQR?crid=208A4R0J8S3ZS&dib=eyJ2IjoiMSJ9.evoYkBoxZbcRuI5GVbOzUeZcZpJjH7B_3tRswEjrm5TGjHj071QN20LucGBJIEps.gbQLruBgSYe-jbwKsOjeBAxairHFP2Tpy1EIXPSRL1Q&dib_tag=se&keywords=Numerical+python:+Scientific+computing+and+data+science+applications+with+numpy,+scipy+and+matplotlib+de+robert+Johansson&qid=1729868827&s=books&sprefix=practical+statistics+for+data+scientist+de+peter+bruce,+andrew+bruce+y+peter+gedeck,stripbooks-intl-ship,468&sr=1-1)
 15. [Essential math for data science de thomas nield](https://www.amazon.com/Essential-Math-Data-Science-Fundamental/dp/1098102932?crid=2YG3N0W7E85TE&dib=eyJ2IjoiMSJ9.oCWfT1c5X672L2qDn0rVJw.-njxneTaSMZKAfZjiDu1koU8RfiXgmErBGTZmxfxUf8&dib_tag=se&keywords=Essential+math+for+data+science+de+thomas+nield&qid=1729868846&s=books&sprefix=essential+math+for+data+science+de+thomas+nield,stripbooks-intl-ship,196&sr=1-1)
 16. [Practical linear algebra for data science de mike x cohen](https://www.amazon.com/Practical-Linear-Algebra-Data-Science/dp/1098120612?crid=PBZPRS7WHUQB&dib=eyJ2IjoiMSJ9.dskc3tqK-ltTDK86IbJ6Gas_OjmMF_s_gPTat66GBqxjGB_RuirvIJReyCOQet64OZlS3RNtqP7lmt4F37XuBw.ekOW_JzCb3-RKa4a6Gi3dDJiDW7fsE7r8A4sNQZp7I8&dib_tag=se&keywords=Practical+linear+algebra+for+data+science+de+mike+x+cohen&qid=1729868879&s=books&sprefix=practical+linear+algebra+for+data+science+de+mike+x+cohen,stripbooks-intl-ship,203&sr=1-1)
+17. [Calculus](https://www.amazon.es/Calculus-Gilbert-Strang/dp/0961408820)
+18. [How to Think Like a Mathematician](https://www.amazon.com/How-Think-Like-Mathematician-Undergraduate/dp/052171978X)
+19. [A Modern Introduction to Probability and Statistics](https://www.amazon.com/Modern-Introduction-Probability-Statistics-Understanding/dp/1852338962)
+20. [Introduction to Geometry](https://www.amazon.com/Introduction-Geometry-2nd-Problem-Solving/dp/1934124087)
 
 Física:
 1. [Modern Physics: Kenneth S. Krane](https://www.amazon.com/Modern-Physics-Kenneth-S-Krane/dp/1119590582?crid=30GKX2N6CVWK6&dib=eyJ2IjoiMSJ9.zDzuea-K-W26tLjsH6UCOrqItDb5rUEjcJnmsGCR3EZbrtEZrOaYF26hUaUNyRS0Ib9-u_Z1l5x3ZRkyaQ6tbexprPtD5lLZCadsJNYxY-xB8_QteAlP9DaQRHFTxFDw.MmtP8Hvm8VuSviEXqmsVck3geaHTv7cYOvOO7MaqpFI&dib_tag=se&keywords=Modern+Physics:+Kenneth+S.+Krane&qid=1729883754&s=books&sprefix=modern+physics+kenneth+s.+krane,stripbooks-intl-ship,215&sr=1-1)
@@ -117,6 +124,7 @@ Mecánica:
 6. The Science of Structures and Materials: No 23 (Scientific American Library series) de J. E. Gordon
 7. Microelectronic circuit design de Richard C Jaeger
 8. [Practical Electronics for Inventors](https://www.amazon.com/Practical-Electronics-Inventors-Third-Scherz/dp/0071771336)
+9. [Prototyping and Modelmaking for Product Design](https://www.amazon.com/Prototyping-Modelmaking-Product-Design-Second/dp/1786275112)
 
 Diseño:
 1. The Branding Method - Carolina Kairos  

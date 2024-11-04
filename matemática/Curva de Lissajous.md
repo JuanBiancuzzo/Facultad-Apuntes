@@ -1,12 +1,13 @@
 ---
-dia: 2024-07-18
+dia: 2024-11-04
 etapa: sin-empezar
+orden: 383
 referencias:
-  - "167"
+  - "422"
 tags:
+  - matemática
   - nota/investigacion
-  - game-engine/rendering-engine
-orden: 185
+  - música
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
