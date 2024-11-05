@@ -9,7 +9,7 @@ referencias:
 tags:
   - nota/investigacion
   - storytelling/worldbuilding/geoficción
-orden: 84
+orden: 87
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

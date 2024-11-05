@@ -6,7 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - generación-de-energía
-orden: 214
+orden: 215
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

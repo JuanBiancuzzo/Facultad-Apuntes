@@ -5,7 +5,7 @@ tags:
   - índice
   - protocolos
   - nota/investigacion
-orden: 281
+orden: 282
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

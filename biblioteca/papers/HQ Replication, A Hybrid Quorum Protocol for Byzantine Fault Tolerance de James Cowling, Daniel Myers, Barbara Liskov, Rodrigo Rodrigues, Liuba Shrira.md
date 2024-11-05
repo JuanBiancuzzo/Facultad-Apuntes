@@ -28,7 +28,7 @@ tags:
 aliases:
   - HQ Replication
   - Hybrid Quorum Protocol for Byzantine Fault Tolerance
-orden: 288
+orden: 291
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

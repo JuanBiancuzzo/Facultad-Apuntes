@@ -2,11 +2,10 @@
 dia: 2024-11-04
 etapa: sin-empezar
 referencias:
-  - "413"
   - "412"
-tags: 
- - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
- - nota/facultad
+tags:
+  - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
+  - nota/facultad
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

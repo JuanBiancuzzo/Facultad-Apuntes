@@ -10,7 +10,7 @@ tags:
 aliases:
   - Ray tracing
   - Path tracing
-orden: 313
+orden: 308
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

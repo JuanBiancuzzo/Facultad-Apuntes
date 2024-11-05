@@ -36,7 +36,7 @@ tags:
   - machine-Learning/transformers
 aliases:
   - RoBERTa
-orden: 231
+orden: 228
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

@@ -8,7 +8,7 @@ tags:
   - señales/Filtros-digitales
   - nota/facultad
 etapa: sin-empezar
-orden: 312
+orden: 315
 ---
 # Definición
 ---
