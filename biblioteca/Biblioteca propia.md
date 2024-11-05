@@ -11,7 +11,7 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (101)
+#### Buscar (107)
 ---
 Programación:
 1. [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/-/es/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
@@ -125,6 +125,8 @@ Mecánica:
 7. Microelectronic circuit design de Richard C Jaeger
 8. [Practical Electronics for Inventors](https://www.amazon.com/Practical-Electronics-Inventors-Third-Scherz/dp/0071771336)
 9. [Prototyping and Modelmaking for Product Design](https://www.amazon.com/Prototyping-Modelmaking-Product-Design-Second/dp/1786275112)
+10. [Compliant Mechanisms](https://www.amazon.com/Compliant-Mechanisms-Larry-L-Howell/dp/047138478X)
+11. [Handbook of Compliant Mechanisms](https://www.amazon.com/Handbook-Compliant-Mechanisms-Larry-Howell/dp/1119953456)
 
 Diseño:
 1. The Branding Method - Carolina Kairos  
