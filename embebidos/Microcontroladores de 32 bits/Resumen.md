@@ -1,8 +1,10 @@
 ---
 capitulo: 2
-tags: 
- - embebidos/Microcontroladores-de-32-bits
- - resumen
+tags:
+  - embebidos/Microcontroladores-de-32-bits
+  - resumen
+referencias:
+  - "465"
 ---
 # Índice
 ---

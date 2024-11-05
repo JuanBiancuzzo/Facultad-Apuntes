@@ -10,6 +10,9 @@ correlativas:
   - "[[Algoritmos y programación 1 (7540)|Algoritmos y programación 1]]"
   - "[[Estructura del computador (6670)|Estructura del computador]]"
   - "[[Dispositivos semiconductores (8603)|Dispositivos semiconductores]]"
+referencias:
+  - "464"
+  - "466"
 ---
 # Apuntes
 ---

@@ -1,8 +1,13 @@
 ---
 capitulo: 4
-tags: 
- - embebidos/Estrategias-de-control-de-periféricos
- - resumen
+tags:
+  - embebidos/Estrategias-de-control-de-periféricos
+  - resumen
+referencias:
+  - "467"
+  - "471"
+  - "469"
+  - "470"
 ---
 # Índice
 ---
