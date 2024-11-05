@@ -53,9 +53,9 @@ class SeguidorReferencias {
     devolverReferencia(numReferencia) {
         let index = this.devultos.findIndex((element) => element > numReferencia);
         if (index >= 0) {
-            this.devultos.splice(index, 0, numero);
+            this.devultos.splice(index, 1);
         } else {
-            this.devultos.push(numero);
+            this.devultos.push(numReferencia);
         }
     }
 }

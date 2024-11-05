@@ -3,6 +3,10 @@ capitulo: 5
 tags:
   - embebidos/Conversión-analógica-a-digital-y-digital-a-analógica
   - resumen
+referencias:
+  - "475"
+  - "473"
+  - "474"
 ---
 # Índice
 ---

@@ -17,7 +17,6 @@
             .flatMap(referencia => tp.user.cita().metadata(tp, referencia))
             .sort(ref => ref.numReferencia);
 
-
         if (dvArchivo.referencias && dvArchivo.referencias.length > 0) {
             // Archivo con referencias
             archivosReferencia = dvArchivo.referencias

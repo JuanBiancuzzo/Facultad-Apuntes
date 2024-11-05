@@ -5,6 +5,7 @@
 
 	const REFERENCIA_TEMPLATE = tp.file.find_tfile("_template/investigacion/Referencia - Template.md")
 	const ETAPA_TEMPLATE = tp.file.find_tfile("_template/investigacion/Etapa - Template.md")
+	const SALIR = "Salir";
 
 	let tArchivo = tp.file.find_tfile(tp.file.path(true));
 	let carpeta = tp.file.folder(true);
@@ -75,11 +76,34 @@
 	await tp.file.move(`${resumen.file.folder}/${titulo}`, tArchivo);
 
 	let referenciasResumen = resumen.referencias ? resumen.referencias : [];
+	let archivosReferencia = dv.pages('#referencia')
+		.flatMap(referencia => tp.user.cita().metadata(tp, referencia))
+		.sort(ref => ref.numReferencia);
+	let referenciasMostrar = referenciasResumen.map(ref => tp.user.cita().describir(archivosReferencia[ref - 1]));
+
+	let referenciasDefinicion = [];
+	let respuesta;
+
+	while (referenciasResumen.length > 0) {
+		respuesta = await preguntar.suggester(
+			tp, [...referenciasMostrar, "Salir"], [...referenciasResumen, SALIR],
+			"Que referecia vas a incluir?",
+			error.Prompt("No se eligió una referencia")
+		);
+
+		if (respuesta == SALIR) break;
+
+		referenciasDefinicion.push(respuesta);
+
+		let indice = referenciasResumen.indexOf(respuesta);
+		referenciasResumen.splice(indice, 1);
+		referenciasMostrar.splice(indice, 1);
+	}
 	
 	tR += "---\n";
 	tR += `dia: ${dia}\n`;
 	tR += "etapa: sin-empezar\n";
-	tR += tp.obsidian.stringifyYaml({ referencias: referenciasResumen });
+	tR += tp.obsidian.stringifyYaml({ referencias: referenciasDefinicion });
 	tR += `tags: \n - ${tag}\n - nota/facultad\n`;
 	tR += "---\n";
 	tR += await app.vault.read(ETAPA_TEMPLATE);

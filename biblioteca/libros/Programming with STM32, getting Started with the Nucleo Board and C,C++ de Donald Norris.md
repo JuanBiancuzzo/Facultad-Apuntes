@@ -66,7 +66,7 @@ tags:
 ---
 
 
- ## Capítulo 6: Interrupts
+## Capítulo 6: Interrupts
 ---
 
 

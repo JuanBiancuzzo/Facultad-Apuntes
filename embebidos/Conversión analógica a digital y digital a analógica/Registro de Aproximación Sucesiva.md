@@ -10,7 +10,7 @@ aliases:
 ---
 La arquitectura de un [[Conversor Analógico-Digital|ADC]] SAR es bastante simple, como se puede ver en el siguiente diagrama
 
-![[Pasted image 20241001164155.png]]
+![[DAC.png]]
 
 Primero se introduce una [[Tensión|tensión]] analógica en un [[Circuito eléctrico|circuito]] de seguimiento/retención
 
