@@ -7,27 +7,32 @@ tags:
 referencias:
   - "412"
 etapa: empezado
+aliases:
+  - Hipótesis inductiva#^hipotesis-inductiva
+  - HI#^hipotesis-inductiva
+  - Principio de inducción "corrido"#Inducción "corrida"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
-El principio de inducción parte de dos principios, los principios no se pueden probar, por eso se llaman principios. Si tomamos uno como un axioma, entonces el otro se transforma en un teorema
+Sea $p(n)$, $n \in \mathbb{N}$, una afirmación sobre los [[Número Natural|números naturales]]. Si $p$ satisface
+* (Caso base) $p(1)$ es Verdadera
+* (Paso inductivo) $\forall h \in \mathbb{N}$, $p(h)$ Verdadera $\implies p(h + 1)$ es Verdadera
+entonces $p(n)$ es Verdadero, $\forall n \in \mathbb{N}$
 
-## Principio del Buen Orden
+También lo podemos pensar a partir de [[Conjunto inductivo|conjuntos inductivos]], si proponemos que $$ H := \set{ n \in \mathbb{N}: ~ p(n) ~ \text{es Verdadera} } $$
+Si $H$ es un conjunto inductivo, entonces $p(n)$ es Verdadero, $\forall n \in \mathbb{N}$
+
+Aquí la hipótesis "$p(h)$ Verdadero" para un $h$ dado se denomina la hipótesis inductiva ^hipotesis-inductiva
+
+## Inducción "corrida"
 ---
-Todo [[Subconjunto|subconjunto]] no vacío de $\mathbb{N}$ tiene un primer elemento
-
-
-## Principio de inducción
----
-Sea $p(n)$ una [[Proposición|proposición]] tal que para cada $n \in \mathbb{N}$ verifica
-* $\exists n_0 \in \mathbb{N}: ~ p(n_0)$ es verdadera
-* $n \ge n_0: ~ p(n) \to p(n + 1)$ es verdadera
-
-Entonces $p(n)$ es verdadera $\forall n \ge n_0$
-
+Sea $n_0 \in \mathbb{Z}$ y sea $p(n)$, $n \ge n_0$, una afirmación sobre $\mathbb{Z}_{\ge n_0}$. Si $p$ satisface
+* (Caso base) $p(n_0)$ es Verdadera
+* (Paso inductivo) $\forall h \in n_0$, $p(h)$ Verdadera $\implies p(h + 1)$ es Verdadera
+entonces $p(n)$ es Verdadero, $\forall n \ge n_0$
 
 # Referencias
 ---

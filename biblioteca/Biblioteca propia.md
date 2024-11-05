@@ -144,7 +144,7 @@ Storytelling:
 5. Story de Robert McKee
 6. Patterns de Rod Serling
 7. A swim in a pond in the rain de george saunders
-8. [# Cartas a un joven novelista](https://www.amazon.com/-/es/Mario-Vargas-Llosa/dp/8420407410)
+8. [Cartas a un joven novelista](https://www.amazon.com/-/es/Mario-Vargas-Llosa/dp/8420407410)
 
 Quimica:
 1. La química en 100 preguntas de Gabriel Estañ Cerezo
