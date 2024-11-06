@@ -1,13 +1,15 @@
 ---
-dia: 2024-07-12
+dia: 2024-11-06
 etapa: sin-empezar
+orden: 397
 referencias:
-  - "147"
+  - "482"
 tags:
-  - nota/investigacion
-  - machine-Learning/red-Neuronal
   - algoritmos
-orden: 252
+  - nota/investigacion
+aliases:
+  - ACO
+  - Algoritmo de la colonia de hormigas
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

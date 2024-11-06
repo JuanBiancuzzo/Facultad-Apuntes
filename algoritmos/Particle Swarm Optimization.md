@@ -1,13 +1,14 @@
 ---
-dia: 2024-07-12
+dia: 2024-11-06
 etapa: sin-empezar
+orden: 398
 referencias:
-  - "147"
+  - "483"
 tags:
-  - nota/investigacion
-  - machine-Learning/red-Neuronal
   - algoritmos
-orden: 252
+  - nota/investigacion
+aliases:
+  - Optimización por enjambre de partículas
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

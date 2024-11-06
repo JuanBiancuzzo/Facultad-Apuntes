@@ -1,13 +1,16 @@
 ---
-dia: 2024-07-12
+dia: 2024-11-06
 etapa: sin-empezar
+orden: 396
 referencias:
-  - "147"
+  - "481"
 tags:
-  - nota/investigacion
-  - machine-Learning/red-Neuronal
   - algoritmos
-orden: 252
+  - nota/investigacion
+aliases:
+  - Método de Newton
+  - Newton method
+  - Método de Newton-Fourier
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

@@ -1,13 +1,12 @@
 ---
-dia: 2024-07-12
+dia: 2024-11-06
 etapa: sin-empezar
-referencias:
-  - "147"
-tags:
-  - nota/investigacion
-  - machine-Learning/red-Neuronal
-  - algoritmos
-orden: 252
+orden: 393
+referencias: 
+ - "478"
+tags: 
+ - física
+ - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
