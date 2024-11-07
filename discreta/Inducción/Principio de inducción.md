@@ -11,13 +11,15 @@ aliases:
   - Hipótesis inductiva#^hipotesis-inductiva
   - HI#^hipotesis-inductiva
   - Principio de inducción "corrido"#Inducción "corrida"
+  - Inducción débil
+  - PI
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
-Sea $p(n)$, $n \in \mathbb{N}$, una afirmación sobre los [[Número Natural|números naturales]]. Si $p$ satisface
+Sea $p(n)$, $n \in \mathbb{N}$, una afirmación sobre los [[Números Naturales|números naturales]]. Si $p$ satisface
 * (Caso base) $p(1)$ es Verdadera
 * (Paso inductivo) $\forall h \in \mathbb{N}$, $p(h)$ Verdadera $\implies p(h + 1)$ es Verdadera
 entonces $p(n)$ es Verdadero, $\forall n \in \mathbb{N}$

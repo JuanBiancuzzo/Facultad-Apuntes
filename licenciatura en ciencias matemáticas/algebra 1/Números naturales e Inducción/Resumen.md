@@ -4,8 +4,8 @@ tags:
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
   - resumen
 referencias:
-  - "413"
   - "412"
+  - "413"
 ---
 # Índice
 ---

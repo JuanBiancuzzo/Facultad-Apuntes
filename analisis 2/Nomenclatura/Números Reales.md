@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 referencias:
   - "182"
+aliases:
+  - Número real
 ---
 # Definición
 ---

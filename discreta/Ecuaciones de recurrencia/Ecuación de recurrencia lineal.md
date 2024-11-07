@@ -7,6 +7,8 @@ tags:
 referencias:
   - "412"
 etapa: ampliar
+aliases:
+  - Sucesión por recurrencia lineal
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

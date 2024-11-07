@@ -119,7 +119,12 @@ Además vemos la definición de [[Función inversa|función inversa]]
 
 ## Capítulo 2: Números Naturales e Inducción
 ---
+Vamos a ver la definición de los [[Números Naturales|números naturales]], como las propiedades
+* [[Conmutatividad|Conmutatividad]]
+* [[Asociatividad|Asociatividad]]
+* [[Distributividad|Distributividad del producto sobre la suma]]
 
+También vemos el [[Principio de inducción|Principio de inducción P.I.]] y su versión [[Principio de inducción#Inducción "corrida"|corrida]], el [[Principio de inducción completa|Principio de inducción completa P.I.C.]] y el [[Principio de Buen Ordenación|Principio de Buen Ordenación P.B.O.]]
 
 ## Capítulo 3: Combinatoria
 ---

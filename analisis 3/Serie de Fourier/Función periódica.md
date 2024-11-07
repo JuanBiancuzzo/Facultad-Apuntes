@@ -9,7 +9,7 @@ aliases:
 ---
 # Definición
 ---
-Dado un [[Número Real|número real]] positivo, una [[Función|función]] $f : \mathbb{R} \to \mathbb{C}$ es $P$-periódica sii $$\forall x \in \mathbb{R} : f(x + P) = f(x)$$ siendo $P$ el periodo 
+Dado un [[Números Reales|número real]] positivo, una [[Función|función]] $f : \mathbb{R} \to \mathbb{C}$ es $P$-periódica sii $$\forall x \in \mathbb{R} : f(x + P) = f(x)$$ siendo $P$ el periodo 
 ^periodo
 
 Esta función es [[Seccionalmente continua|seccionalmente continua]] sii en el intervalo $[0, P]$ (y por lo tanto en cualquier intervalo $[a, a + P]$, $a \in \mathbb{R}$), tiene una cantidad finita de [[Función continua|discontinuidad]] de [[Salto finito|salto finito]]

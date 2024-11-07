@@ -102,7 +102,7 @@
 	
 	tR += "---\n";
 	tR += `dia: ${dia}\n`;
-	tR += "etapa: sin-empezar\n";
+	tR += "etapa: empezado\n";
 	tR += tp.obsidian.stringifyYaml({ referencias: referenciasDefinicion });
 	tR += `tags: \n - ${tag}\n - nota/facultad\n`;
 	tR += "---\n";
@@ -114,7 +114,7 @@ _%>
 <% tp.file.cursor() %>
 
 <%*
-    if (referenciasResumen.length) {
+    if (referenciasResumen.length > 0) {
 		tR += await app.vault.read(REFERENCIA_TEMPLATE);
     }
 _%>

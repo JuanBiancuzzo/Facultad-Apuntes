@@ -12,7 +12,7 @@ tags:
 ```
 # Definición
 ---
-Supongamos que queremos sumar los $100$ primeros [[Número Natural|números naturales]], o sea $$ 1 + 2 + 3 + \cdots + 98 + 99 + 100 $$
+Supongamos que queremos sumar los $100$ primeros [[Números Naturales|números naturales]], o sea $$ 1 + 2 + 3 + \cdots + 98 + 99 + 100 $$
 Gauss propone la forma de visualizarlo de la siguiente forma $$ \begin{matrix} 
     S & = & 1 & + & 2 & + & 3 & + & \cdots & + & 98 & + & 99 & + & 100 \\
     S & = & 100 & + & 99 & + & 98 & + & \cdots & + & 3 & + & 2 & + & 1 \\\hline
