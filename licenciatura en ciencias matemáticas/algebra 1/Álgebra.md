@@ -1,11 +1,13 @@
 ---
 cuatri: 24C2
 plan: 2022
-etapa: sin-empezar
+etapa: ampliar
 estado: Sin empezar
 tags:
-  - materia/licenciatura-en-ciencias-matemáticas
-correlativas:
+  - materia/licenciatura-en-ciencias-de-datos
+correlativas: 
+referencias:
+  - "410"
 ---
 # Apuntes
 ---

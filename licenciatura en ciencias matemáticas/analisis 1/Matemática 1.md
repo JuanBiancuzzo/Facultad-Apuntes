@@ -4,7 +4,7 @@ plan: 2022
 etapa: sin-empezar
 estado: Sin empezar
 tags:
-  - materia/licenciatura-en-ciencias-matemáticas
+  - materia/licenciatura-en-ciencias-físicas
 correlativas:
 ---
 # Apuntes
