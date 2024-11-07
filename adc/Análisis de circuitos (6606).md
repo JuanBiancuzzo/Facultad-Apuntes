@@ -20,5 +20,5 @@ correlativas:
 # Bibliografía
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/bibliografiaMateria", { materia: dv.current() });
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```
