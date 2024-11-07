@@ -4,7 +4,7 @@ estado: Falta pasar los videos de los últimos temas
 plan: "1986"
 codigo: "7506"
 tags:
-  - materia/ingeniería-informática-y-electrónica
+  - materia/ingeniería-en-informática
 etapa: empezado
 correlativas:
   - "[[Álgebra 2 (6108)|Álgebra 2]]"

@@ -4,7 +4,7 @@ estado: Terminado
 plan: "1986"
 codigo: "6606"
 tags:
-  - materia/ingeniería-informática-y-electrónica
+  - materia/ingeniería-electrónica
 etapa: terminado
 correlativas:
   - "[[Análisis matemático 3 (6110)|Análisis matemático 3]]"

@@ -4,7 +4,7 @@ estado: Terminado
 plan: "2009"
 codigo: "8603"
 tags:
-  - materia/ingeniería-informática-y-electrónica
+  - materia/ingeniería-electrónica
 etapa: terminado
 correlativas:
   - "[[Física 2 (6203)|Física 2]]"

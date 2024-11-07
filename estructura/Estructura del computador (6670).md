@@ -4,7 +4,7 @@ estado: Terminado
 plan: "1986"
 codigo: "6670"
 tags:
-  - materia/ingeniería-informática-y-electrónica
+  - materia/ingeniería-en-informática
 etapa: terminado
 correlativas:
   - "[[Física 2 (6203)|Física 2]]"

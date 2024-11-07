@@ -6,9 +6,9 @@ plan: 2023
 etapa: sin-empezar
 estado: Sin empezar
 tags:
-  - materia/ingeniería-informática-y-electrónica
   - proyecto/práctico
   - tpp
+  - materia/ingeniería-en-informática
 correlativas:
 ---
 # Propuesta

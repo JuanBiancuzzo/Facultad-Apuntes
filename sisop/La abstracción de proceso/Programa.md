@@ -3,7 +3,7 @@ dia: 2023-11-12
 tags:
   - sisop/La-abstracción-de-proceso
   - nota/facultad
-  - algo-1/Introducción-a-la-programación
+  - ingeniería-electrónica/algo-1/Introducción-a-la-programación
   - embebidos/Diseño-desarrollo-y-depuración
   - lenguajes-de-programación
 aliases:

@@ -4,7 +4,7 @@ codigo: "9111"
 plan: 2009
 estado: Falta terminar los últimos capítulos
 tags:
-  - materia/ingeniería-informática-y-electrónica
+  - materia/ingeniería-electrónica
 etapa: empezado
 ---
 # Apuntes

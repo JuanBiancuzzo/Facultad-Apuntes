@@ -3,7 +3,7 @@ dia: 2024-03-21
 tags:
   - discreta/Álgebra-de-Boole
   - nota/facultad
-  - algo-1/Introducción-a-la-programación
+  - ingeniería-electrónica/algo-1/Introducción-a-la-programación
   - lenguajes-de-programación
 aliases:
   - Operador lógico

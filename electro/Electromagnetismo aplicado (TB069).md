@@ -4,7 +4,7 @@ codigo: TB069
 plan: 2023
 estado: Voy a cursarla este cuatri
 tags:
-  - materia/ingeniería-informática-y-electrónica
+  - materia/ingeniería-electrónica
 etapa: ampliar
 correlativas:
   - "[[Análisis de circuitos (6606)|Análisis de circuitos]]"

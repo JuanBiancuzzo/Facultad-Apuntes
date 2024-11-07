@@ -4,7 +4,7 @@ codigo: TA134
 plan: 2023
 estado: Voy a cursarla este cuatri
 tags:
-  - materia/ingeniería-informática-y-electrónica
+  - materia/ingeniería-electrónica
 etapa: ampliar
 correlativas:
   - "[[Algoritmos y programación 1 (7540)|Algoritmos y programación 1]]"
