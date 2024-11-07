@@ -46,5 +46,5 @@ Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo simple|grafo simple]] dado u
 \end{document}
 ```
 
-Al igual que con el [[Grafo de Kneser|grafo de Kneser]], calcularemos el [[Orden de un grafo|orden del grafo]] a partir del [[Combinación|número combinatorio]] $$ n\big( J(p,~ q) \big) = \dbinom{p}{q} $$
+Al igual que con el [[Grafo de Kneser|grafo de Kneser]], calcularemos el [[Orden de un grafo|orden del grafo]] a partir del [[Número combinatorio|número combinatorio]] $$ n\big( J(p,~ q) \big) = \dbinom{p}{q} $$
 Para calcular el [[Grado de un vértice|grado]] de cada nodo, sabemos que por cada elemento del conjunto asociado, podremos conectarnos con los nodos cuyo conjunto asociado difieran en únicamente ese elemento. Como difieren en únicamente ese elemento, este no debe pertenecer al propio nodo, luego $d(v) = q(p-q)$. El [[Tamaño de un grafo|tamaño]] del grafo entonces será $$ m\big( J(p,~ q) \big) = \frac{1}{2} \dbinom{p}{q} q (p - q) $$

@@ -114,7 +114,7 @@ _%>
 <% tp.file.cursor() %>
 
 <%*
-    if (referenciasResumen.length > 0) {
+    if (referenciasDefinicion.length > 0) {
 		tR += await app.vault.read(REFERENCIA_TEMPLATE);
     }
 _%>

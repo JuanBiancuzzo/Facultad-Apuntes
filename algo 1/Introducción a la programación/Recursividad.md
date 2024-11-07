@@ -4,17 +4,13 @@ tags:
   - algo-1/Introducción-a-la-programación
   - nota/facultad
 aliases:
-  - Factorial#^factorial
   - Recursividad indirecta#Recursividad indirecta
 ---
 # Definición
 ---
 La recursividad es una característica de ciertos problemas los cuales son solucionables mediante la solución de una instancia del mismo problema. En informática la recursividad está fuertemente asociada a las [[Función|funciones]] y a los [[Tipo de dato|tipos de datos]]
 
-Para entender como funcionan veamos ejemplos de matemática, como el caso del factorial $$ n! = \begin{cases} 
-    1 & \text{si} ~ n = 0 \\
-    (n - 1)! ~ n & \text{si} ~ n > 0
-\end{cases} $$ en este caso puede verse como la definición de factorial se invoca a si misma ^factorial
+Para entender como funcionan veamos ejemplos de matemática, como el caso del [[Factorial|factorial]] ![[Factorial#^5daa79]] en este caso puede verse como la definición de factorial se invoca a si misma 
 
 ## En informatica
 ---

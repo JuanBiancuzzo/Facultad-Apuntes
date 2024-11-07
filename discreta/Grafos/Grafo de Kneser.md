@@ -61,6 +61,6 @@ Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo simple|grafo simple]], dado 
 
 Denotamos $ij$ al vector asociado al conjunto $i$, $j$.
 
-Genéricamente, podemos hallar el [[Orden de un grafo|orden del grafo]] de Kneser a partir de la cantidad de formas posibles de tomar $q$ elementos de un conjunto de $p$ elementos, es decir, el [[Combinación|número combinatorio]] $$ n\big( K(p,~ q) \big) = \dbinom{p}{q} $$
+Genéricamente, podemos hallar el [[Orden de un grafo|orden del grafo]] de Kneser a partir de la cantidad de formas posibles de tomar $q$ elementos de un conjunto de $p$ elementos, es decir, el [[Número combinatorio|número combinatorio]] $$ n\big( K(p,~ q) \big) = \dbinom{p}{q} $$
 Para el [[Tamaño de un grafo|tamaño]], cada vértice será adyacente a aquellos nodos con los cuales no comparta elementos, luego esto es el número combinatorio $\dbinom{p-q}{q}$, como cada arista se contara dos veces, dividimos el número en dos. Tendremos entonces $$ m\big( K(p,~ q) \big) = \frac{1}{2} \dbinom{p}{q} \dbinom{p - q}{q} $$
 Si $q > p$, entonces el grafo será vacío, que es un grafo en sí mismo. La [[analisis 2/Nomenclatura/Función.md|función]] del grafo vacío se denomina función nula. Por otro laso, si $p - q < q$, entonces el grafo no tendrá aristas
