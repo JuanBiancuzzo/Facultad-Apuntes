@@ -1,8 +1,10 @@
 ---
 capitulo: 5
-tags: 
- - licenciatura-en-ciencias-matemáticas/analisis-1/Extremos
- - resumen
+tags:
+  - licenciatura-en-ciencias-matemáticas/analisis-1/Extremos
+  - resumen
+  - licenciatura-en-ciencias-de-datos/analisis-1/Extremos
+  - licenciatura-en-ciencias-físicas/analisis-1/Extremos
 ---
 # Índice
 ---

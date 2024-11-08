@@ -1,8 +1,10 @@
 ---
 capitulo: 4
-tags: 
- - licenciatura-en-ciencias-matemáticas/analisis-1/Polinomio-de-Taylor
- - resumen
+tags:
+  - licenciatura-en-ciencias-matemáticas/analisis-1/Polinomio-de-Taylor
+  - resumen
+  - licenciatura-en-ciencias-de-datos/analisis-1/Polinomio-de-Taylor
+  - licenciatura-en-ciencias-físicas/analisis-1/Polinomio-de-Taylor
 ---
 # Índice
 ---

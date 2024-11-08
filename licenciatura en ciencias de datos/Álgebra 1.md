@@ -1,13 +1,9 @@
 ---
-cuatri: 24C2
-plan: 2022
-etapa: ampliar
-estado: Sin empezar
+plan: 2020
 tags:
   - materia/licenciatura-en-ciencias-de-datos
-correlativas: 
-referencias:
-  - "410"
+correlativas: []
+equivalencia: "[[licenciatura en ciencias matemáticas/algebra 1/Álgebra 1.md|Álgebra 1]]"
 ---
 # Apuntes
 ---

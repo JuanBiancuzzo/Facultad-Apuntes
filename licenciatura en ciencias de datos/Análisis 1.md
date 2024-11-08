@@ -1,11 +1,9 @@
 ---
-cuatri: 24C2
-plan: 2022
-etapa: sin-empezar
-estado: Sin empezar
+plan: 2020
 tags:
-  - materia/licenciatura-en-ciencias-físicas
-correlativas:
+  - materia/licenciatura-en-ciencias-de-datos
+correlativas: []
+equivalencia: "[[licenciatura en ciencias matemáticas/analisis 1/Análisis 1.md|Análisis 1]]"
 ---
 # Apuntes
 ---
