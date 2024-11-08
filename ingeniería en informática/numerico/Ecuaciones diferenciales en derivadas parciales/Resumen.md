@@ -1,8 +1,9 @@
 ---
 capitulo: 8
-tags: 
- - ingeniería-en-informática/numerico/Ecuaciones-diferenciales-en-derivadas-parciales
- - resumen
+tags:
+  - ingeniería-en-informática/numerico/Ecuaciones-diferenciales-en-derivadas-parciales
+  - resumen
+  - ingeniería-electrónica/numerico/Ecuaciones-diferenciales-en-derivadas-parciales
 ---
 # Índice 
 ---

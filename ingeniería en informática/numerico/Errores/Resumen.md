@@ -1,8 +1,9 @@
 ---
 capitulo: 1
-tags: 
- - ingeniería-en-informática/numerico/Errores
- - resumen
+tags:
+  - ingeniería-en-informática/numerico/Errores
+  - resumen
+  - ingeniería-electrónica/numerico/Errores
 ---
 # Índice 
 ---

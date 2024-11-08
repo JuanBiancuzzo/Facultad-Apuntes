@@ -1,8 +1,9 @@
 ---
 capitulo: 2
-tags: 
- - ingeniería-en-informática/numerico/Ecuaciones-no-lineales
- - resumen
+tags:
+  - ingeniería-en-informática/numerico/Ecuaciones-no-lineales
+  - resumen
+  - ingeniería-electrónica/numerico/Ecuaciones-no-lineales
 ---
 # Índice 
 ---

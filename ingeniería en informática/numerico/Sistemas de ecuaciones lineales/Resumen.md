@@ -1,8 +1,9 @@
 ---
 capitulo: 4
-tags: 
- - ingeniería-en-informática/numerico/Sistemas-de-ecuaciones-lineales
- - resumen
+tags:
+  - ingeniería-en-informática/numerico/Sistemas-de-ecuaciones-lineales
+  - resumen
+  - ingeniería-electrónica/numerico/Sistemas-de-ecuaciones-lineales
 ---
 # Índice 
 ---
