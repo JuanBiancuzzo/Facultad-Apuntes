@@ -90,7 +90,7 @@
 					tp, `El código de ${datos[PREGUNTAR_NOMBRE_MATERIA]} es:`, 
 					error.Prompt("No se ingresó el código de la materia")
 				);
-				datos[PREGUNTAR_CODIGO] = parseInt(datos[PREGUNTAR_CODIGO].replaceAll(".", ""), 10);
+				datos[PREGUNTAR_CODIGO] = datos[PREGUNTAR_CODIGO].replaceAll(".", "");
 
 			} else if (respuesta == PREGUNTAR_ANIO) { // Agregar info si se ingresó el cuatri
 				datos[PREGUNTAR_ANIO] = await preguntar.suggester(
@@ -118,7 +118,10 @@
 				let tagCarrera = datos[PREGUNTAR_CARRERA].tags[0].replace("carrera/", "");
 				let materias = dv.pages(`#materia/${tagCarrera}`)
 					.filter(materia => datos[PREGUNTAR_CORRELATIVAS].findIndex(correlativa => materia.file.path == correlativa.file.path) < 0)
-					.sort(materia => 10 * parseInt(materia.cuatri.slice(0, 2), 10) + parseInt(materia.cuatri[3], 10) );
+					.sort(materia => {
+						if (materia.equivalencia) materia = dv.page(materia.equivalencia.path);
+						return 10 * parseInt(materia.cuatri.slice(0, 2), 10) + parseInt(materia.cuatri[3], 10);
+					});
 
 				let correlativa = await preguntar.suggester(
 					tp, materia => materia.codigo 
@@ -203,27 +206,50 @@
 		tR += "---\n";
 
 		let carpeta = datos[PREGUNTAR_CARRERA].file.folder;
-		if (!datos[PREGUNTAR_EQUIVALENCIA]) carpeta += `/${datos[PREGUNTAR_NOMBRE_REDUCIDO]}`;
-		
+		if (!datos[PREGUNTAR_EQUIVALENCIA]) {
+			carpeta += `/${datos[PREGUNTAR_NOMBRE_REDUCIDO]}`;
+			await app.vault.createFolder(carpeta);
+		}		
+
 		let nombre = datos[PREGUNTAR_CARRERA].tieneCodigo 
 			? `${datos[PREGUNTAR_NOMBRE_MATERIA]} (${datos[PREGUNTAR_CODIGO]})` 
 			: datos[PREGUNTAR_NOMBRE_MATERIA];
 
-		await app.vault.createFolder(carpeta);
 		await app.vault.rename(tArchivo, `${carpeta}/${nombre}.md`);
 
 		if (datos[PREGUNTAR_EQUIVALENCIA]) {
 			let equivalencia = datos[PREGUNTAR_EQUIVALENCIA];
-			let tagEquivalencia = equivalencia.replaceAll(" ", "-");
+			let tagEquivalencia = equivalencia.file.folder.replaceAll(" ", "-");
 
 			let tareas = dv.pages(`#${tagEquivalencia} and #resumen`)
 				.map(resumen => {
 					let tResumen = tp.file.find_tfile(resumen.file.path);
     				let nuevaTag = `${carpeta}/${resumen.file.folder.split("/").slice(1).join("/")}`
 						.replaceAll(" ", "-");
+					if (resumen.parte) nuevaTag += `/${resumen.parte}`
 
 					return app.fileManager.processFrontMatter(tResumen, (frontmatter) => {
 						frontmatter["tags"].push(nuevaTag);
+					});
+				});
+			await Promise.all(tareas);
+
+			tareas = dv.pages(`#${tagEquivalencia} and #resumen`)
+				.flatMap(resumen => {
+					let tagRepresentante = resumen.file.folder.replaceAll(" ", "-");
+    				let nuevoTag = `${carpeta}/${resumen.file.folder.split("/").slice(1).join("/")}`
+						.replaceAll(" ", "-");
+					if (resumen.parte) {
+						tagRepresentante += `/${resumen.parte}`
+						nuevoTag += `/${resumen.parte}`
+					}
+
+					return dv.pages(`#${tagRepresentante} and -#resumen`)
+						.map(archivo => ({ archivo: archivo, nuevoTag: nuevoTag }));
+				}).map(({archivo, nuevoTag}) => {
+					let tArchivo = tp.file.find_tfile(archivo.file.path);
+					return app.fileManager.processFrontMatter(tArchivo, (frontmatter) => {
+						frontmatter["tags"].push(nuevoTag);
 					});
 				});
 			await Promise.all(tareas);
@@ -368,10 +394,12 @@
 
 	async function preguntarMateriaEquivalente(dv, carreraActual) {
 		const carreras = dv.pages("#carrera")
-			.filter(carrera => carrera.file.name != carreraActual.file.name)
+			.filter(carrera => carrera.file.path != carreraActual.file.path)
 			.sort(carrera => carrera.file.name);
 
 		let equivalencia = null;
+		let respuesta;
+
 		do {
 			let carrera = await preguntar.suggester(
 				tp, [...carreras.file.name, "Salir"],
@@ -383,10 +411,9 @@
 
 			let tag = carrera.tags.find(tag => tag.startsWith("carrera"))
                 .replace("carrera", "materia");
-			const materias = dv.pages(`#${tag}`)
-				.filter(materia => !materia.equivalencia);
+			const materias = dv.pages(`#${tag}`);
 
-			let respuesta = await preguntar.suggester(
+			respuesta = await preguntar.suggester(
 				tp, [...materias.file.name, "Volver"],
 				[...materias, SALIR], "Que materia sería la equivalente?",
 				error.Prompt("No se eligió la materia")
