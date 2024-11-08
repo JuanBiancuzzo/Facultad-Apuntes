@@ -25,7 +25,12 @@ Un listado de materias y su estado dividido por carrera
                 
                 let path = `${materia.file.path}`.replaceAll(" ", "%20");
                 
-                let resultado = [`[${nombre}](${path})`, materia.estado];
+                let estado = materia.estado;
+                if (materia.equivalencia) {
+                    let equivalencia = dv.page(materia.equivalencia.path);
+                    estado = equivalencia.estado;
+                }                
+                let resultado = [`[${nombre}](${path})`, estado];
                 if (carrera.tieneCodigo) resultado.splice(1, 0, materia.codigo);
                 
                 return resultado;
