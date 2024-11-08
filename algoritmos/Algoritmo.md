@@ -7,6 +7,7 @@ tags:
   - ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - nota/investigacion
   - nota/facultad
+  - ingeniería-electrónica/algo-1/Introducción-a-la-programación
 orden: 17
 ---
 ```dataviewjs

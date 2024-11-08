@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - lenguajes-de-programación
+  - ingeniería-electrónica/algo-1/Introducción-a-la-programación
 aliases:
   - Lenguaje de programación de bajo nivel#Lenguaje de bajo nivel
   - Lenguaje de programación de alto nivel#Lenguaje de alto nivel

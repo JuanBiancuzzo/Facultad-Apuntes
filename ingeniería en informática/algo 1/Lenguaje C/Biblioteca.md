@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/algo-1/Lenguaje-C
   - nota/facultad
   - lenguajes-de-programación
+  - ingeniería-electrónica/algo-1/Lenguaje-C
 referencias:
   - "329"
 aliases:

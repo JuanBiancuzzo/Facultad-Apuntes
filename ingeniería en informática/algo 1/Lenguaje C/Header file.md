@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/algo-1/Lenguaje-C
   - nota/facultad
   - lenguajes-de-programación/lenguaje-c
+  - ingeniería-electrónica/algo-1/Lenguaje-C
 aliases:
   - Archivo de cabecera
 ---

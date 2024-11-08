@@ -7,6 +7,7 @@ tags:
   - ingeniería-en-informática/algo-1/Lenguaje-C
   - lenguajes-de-programación/lenguaje-c
   - lenguajes-de-programación/lenguaje-Rust
+  - ingeniería-electrónica/algo-1/Lenguaje-C
 aliases:
   - Floating point
   - Float

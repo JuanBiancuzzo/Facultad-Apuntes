@@ -9,6 +9,7 @@ tags:
   - ingeniería-en-informática/sisop/Kernel
   - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
+  - ingeniería-electrónica/algo-1/Introducción-a-la-programación
 ---
 # Definición
 ---

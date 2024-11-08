@@ -7,6 +7,7 @@ tags:
   - lenguajes-de-programación/lenguaje-zig
   - lenguajes-de-programación/lenguaje-c
   - ingeniería-en-informática/taller/Sintaxis
+  - ingeniería-electrónica/algo-1/Lenguaje-C
 ---
 # Definición
 ---

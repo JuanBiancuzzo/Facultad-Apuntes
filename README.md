@@ -8,17 +8,20 @@ Cualquier corrección/ampliación de los contenidos en este proyecto, por favor 
 ---
 Un listado de materias y su estado dividido por carrera
 
-### Ingeniería electrónica
+### Ingeniería Electrónica
 ---
 Un listado de materias, sus códigos y su estado actual
 
 | Materia                                                                                                                                        | Código | Estado                                         |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ---------------------------------------------- |
+| [Algoritmos y Programación 1 (9511)](ingeniería%20electrónica/Algoritmos%20y%20Programación%201%20(9511).md)                                   | 9511   | \-                                             |
 | [Análisis de circuitos (6606)](ingeniería%20electrónica/adc/Análisis%20de%20circuitos%20(6606).md)                                             | 6606   | Terminado                                      |
+| [Análisis Matemático 2 A (8101)](ingeniería%20electrónica/Análisis%20Matemático%202%20A%20(8101).md)                                           | 8101   | \-                                             |
 | [Análisis matemático 3 (6110)](ingeniería%20electrónica/analisis%203/Análisis%20matemático%203%20(6110).md)                                    | 6110   | Terminado                                      |
 | [Circuitos microelectrónicos (TB068)](ingeniería%20electrónica/circuitos/Circuitos%20microelectrónicos%20(TB068).md)                           | TB068  | Falta últimos temas                            |
 | [Dispositivos semiconductores (8603)](ingeniería%20electrónica/dispo/Dispositivos%20semiconductores%20(8603).md)                               | 8603   | Terminado                                      |
 | [Electromagnetismo aplicado (TB069)](ingeniería%20electrónica/electro/Electromagnetismo%20aplicado%20(TB069).md)                               | TB069  | Voy a cursarla este cuatri                     |
+| [Física 1 A (8201)](ingeniería%20electrónica/Física%201%20A%20(8201).md)                                                                       | 8201   | \-                                             |
 | [Física 3 (8203)](ingeniería%20electrónica/fisica%203/Física%203%20(8203).md)                                                                  | 8203   | Falta pasar el resumen                         |
 | [Introducción a la ingeniería electronica (8602)](ingeniería%20electrónica/intro/Introducción%20a%20la%20ingeniería%20electronica%20(8602).md) | 8602   | Terminado                                      |
 | [Legislación y ejercicio profesional (9111)](ingeniería%20electrónica/legal/Legislación%20y%20ejercicio%20profesional%20(9111).md)             | 9111   | Falta terminar los últimos capítulos           |
@@ -27,7 +30,7 @@ Un listado de materias, sus códigos y su estado actual
 | [Taller de sistemas embebidos (TA134)](ingeniería%20electrónica/embebidos/Taller%20de%20sistemas%20embebidos%20(TA134).md)                     | TA134  | Voy a cursarla este cuatri                     |
 
 
-### Ingeniería en informática
+### Ingeniería en Informática
 ---
 Un listado de materias, sus códigos y su estado actual
 
@@ -42,7 +45,7 @@ Un listado de materias, sus códigos y su estado actual
 | [Análisis numérico (7512)](ingeniería%20en%20informática/numerico/Análisis%20numérico%20(7512).md)                                          | 7512   | Falta pasar el resumen                              |
 | [Base de datos (TA044)](ingeniería%20en%20informática/bdd/Base%20de%20datos%20(TA044).md)                                                   | TA044  | Falta ampliar                                       |
 | [Estructura del computador (6670)](ingeniería%20en%20informática/estructura/Estructura%20del%20computador%20(6670).md)                      | 6670   | Terminado                                           |
-| [Física 1 (6201)](Física%201%20(6201).md)                                                          | 8201   | Falta pasar el resumen                              |
+| [Física 1 (6201)](ingeniería%20en%20informática/fisica%201/Física%201%20(6201).md)                                                          | 6201   | Falta pasar el resumen                              |
 | [Física 2 (6203)](ingeniería%20en%20informática/fisica%202/Física%202%20(6203).md)                                                          | 6203   | Terminado                                           |
 | [Matemática discreta (6107)](ingeniería%20en%20informática/discreta/Matemática%20discreta%20(6107).md)                                      | 6107   | Terminado                                           |
 | [Organización de datos (7506)](ingeniería%20en%20informática/orga/Organización%20de%20datos%20(7506).md)                                    | 7506   | Falta pasar los videos de los últimos temas         |

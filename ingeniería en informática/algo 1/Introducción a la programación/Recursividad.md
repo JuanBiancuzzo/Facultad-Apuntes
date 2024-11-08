@@ -3,6 +3,7 @@ dia: 2024-10-09
 tags:
   - ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - nota/facultad
+  - ingeniería-electrónica/algo-1/Introducción-a-la-programación
 aliases:
   - Recursividad indirecta#Recursividad indirecta
 ---

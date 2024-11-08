@@ -6,6 +6,7 @@ tags:
   - ingeniería-en-informática/taller/Sintaxis
   - lenguajes-de-programación/lenguaje-Rust
   - lenguajes-de-programación/lenguaje-c
+  - ingeniería-electrónica/algo-1/Introducción-a-la-programación
 ---
 # Definición
 ---

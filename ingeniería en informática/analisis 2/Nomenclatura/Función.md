@@ -9,6 +9,7 @@ tags:
   - lenguajes-de-programación/lenguaje-Rust
   - ingeniería-en-informática/estructura/Álgebra-de-Boole
   - ingeniería-electrónica/analisis-2/Nomenclatura
+  - ingeniería-electrónica/algo-1/Lenguaje-C
 aliases:
   - Prototipo de una función#Expresión en C
   - Firma de una función#Expresión en C

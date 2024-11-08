@@ -6,6 +6,7 @@ tags:
   - lenguajes-de-programación/lenguaje-c
   - lenguajes-de-programación/lenguaje-Rust
   - lenguajes-de-programación/lenguaje-zig
+  - ingeniería-electrónica/algo-1/Lenguaje-C
 ---
 # Definición
 ---
