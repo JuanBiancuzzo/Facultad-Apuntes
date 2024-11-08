@@ -4,6 +4,7 @@ tags:
   - ingeniería-electrónica/adc/Circuitos-en-regimen-senoidal-permanente
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
+  - ingeniería-electrónica/fisica-2/Circuitos-en-régimen-alterno-permanente
 ---
 # Definición
 ---

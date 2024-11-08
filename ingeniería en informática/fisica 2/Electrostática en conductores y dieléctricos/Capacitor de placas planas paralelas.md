@@ -3,6 +3,7 @@ dia: 2024-09-01
 tags:
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
 ---
 # Definición
 ---

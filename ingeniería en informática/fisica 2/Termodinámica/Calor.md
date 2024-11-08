@@ -3,6 +3,7 @@ dia: 2023-01-23
 tags:
   - ingeniería-en-informática/fisica-2/Termodinámica
   - nota/facultad
+  - ingeniería-electrónica/fisica-2/Termodinámica
 referencias:
   - "198"
 etapa: sin-empezar

@@ -3,6 +3,7 @@ dia: 2024-09-01
 tags:
   - ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
   - nota/facultad
+  - ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
 aliases:
   - Aislante
 ---

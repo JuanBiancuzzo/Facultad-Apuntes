@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
   - nota/facultad
   - ingeniería-electrónica/adc/Circuitos-en-regimen-senoidal-permanente
+  - ingeniería-electrónica/fisica-2/Circuitos-en-régimen-alterno-permanente
 aliases:
   - Potencia fluctuante
 referencias:

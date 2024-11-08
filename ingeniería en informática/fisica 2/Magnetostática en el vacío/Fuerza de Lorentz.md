@@ -1,8 +1,9 @@
 ---
 dia: 2024-09-02
-tags: 
- - ingeniería-en-informática/fisica-2/Magnetostática-en-el-vacío
- - nota/facultad
+tags:
+  - ingeniería-en-informática/fisica-2/Magnetostática-en-el-vacío
+  - nota/facultad
+  - ingeniería-electrónica/fisica-2/Magnetostática-en-el-vacío
 ---
 # Definición
 ---

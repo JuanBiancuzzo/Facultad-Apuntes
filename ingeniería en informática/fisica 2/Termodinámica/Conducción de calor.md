@@ -3,6 +3,7 @@ dia: 2024-02-29
 tags:
   - ingeniería-en-informática/fisica-2/Termodinámica
   - nota/facultad
+  - ingeniería-electrónica/fisica-2/Termodinámica
 aliases:
   - Ley de Fourier
 ---

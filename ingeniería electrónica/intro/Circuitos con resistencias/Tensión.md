@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
   - ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
+  - ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
 aliases:
   - Diferencia de potencial
   - Potencial electrodinámico escalar

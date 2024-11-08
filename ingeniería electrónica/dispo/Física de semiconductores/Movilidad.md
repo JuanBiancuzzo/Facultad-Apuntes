@@ -4,6 +4,7 @@ tags:
   - ingeniería-electrónica/dispo/Física-de-semiconductores
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
 ---
 # Definición
 ---

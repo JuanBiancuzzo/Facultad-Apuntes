@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
   - nota/facultad
   - ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
+  - ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
 referencias:
   - "199"
 aliases:

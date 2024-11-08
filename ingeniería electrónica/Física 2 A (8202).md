@@ -1,0 +1,21 @@
+---
+plan: 2009
+tags:
+  - materia/ingeniería-electrónica
+correlativas:
+  - "[[ingeniería electrónica/Física 1 A (8201).md|Física 1 A]]"
+  - "[[ingeniería electrónica/Análisis Matemático 2 A (8101).md|Análisis Matemático 2 A]]"
+codigo: 8202
+equivalencia: "[[ingeniería en informática/fisica 2/Física 2 (6203).md|Física 2 (6203)]]"
+---
+# Apuntes
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
+```
+
+# Bibliografía
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```

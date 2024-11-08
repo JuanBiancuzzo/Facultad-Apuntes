@@ -4,6 +4,7 @@ tags:
   - ingeniería-electrónica/intro/Reducción-de-circuitos
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
+  - ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
 aliases:
   - Teorema de superposición
 referencias:

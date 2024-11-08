@@ -3,6 +3,7 @@ dia: 2024-09-03
 tags:
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Magnetismo-estacionario-en-medios-materiales
+  - ingeniería-electrónica/fisica-2/Magnetismo-estacionario-en-medios-materiales
 referencias:
   - "216"
 etapa: sin-empezar

@@ -5,6 +5,8 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
   - ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
+  - ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
+  - ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
 aliases:
   - Densidad lineal de carga#^densidad-lineal
   - Densidad superficial de carga#^densidad-superficial

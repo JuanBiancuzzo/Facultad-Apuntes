@@ -3,6 +3,7 @@ dia: 2023-08-24
 tags:
   - ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
   - nota/facultad
+  - ingeniería-electrónica/fisica-2/Circuitos-en-régimen-alterno-permanente
 aliases:
   - Circuito resistivo puro#Circuito resistivo puro
   - Circuito capacitivo puro#Circuito capacitivo puro

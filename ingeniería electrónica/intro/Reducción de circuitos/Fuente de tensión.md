@@ -4,6 +4,7 @@ tags:
   - ingeniería-electrónica/intro/Reducción-de-circuitos
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
 aliases:
   - Generador de tensión
 ---

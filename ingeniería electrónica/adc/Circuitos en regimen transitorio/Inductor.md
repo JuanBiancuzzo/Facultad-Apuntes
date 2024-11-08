@@ -4,6 +4,7 @@ tags:
   - ingeniería-electrónica/adc/Circuitos-en-regimen-transitorio
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Inducción-electromagnética
+  - ingeniería-electrónica/fisica-2/Inducción-electromagnética
 aliases:
   - Bobina
   - Energía de un inductor#Energía almacenada

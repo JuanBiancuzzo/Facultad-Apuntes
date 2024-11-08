@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
   - ingeniería-electrónica/electro/Campo-electromagnético
+  - ingeniería-electrónica/fisica-2/Circuitos-en-régimen-alterno-permanente
 referencias:
   - "221"
 ---

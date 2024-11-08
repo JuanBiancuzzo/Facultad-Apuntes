@@ -3,6 +3,7 @@ dia: 2024-09-03
 tags:
   - ingeniería-en-informática/fisica-2/Magnetostática-en-el-vacío
   - nota/facultad
+  - ingeniería-electrónica/fisica-2/Magnetostática-en-el-vacío
 aliases:
   - Ley de Ampere
   - Ley de Ampère-Maxwell#Ley de Ampère-Maxwell

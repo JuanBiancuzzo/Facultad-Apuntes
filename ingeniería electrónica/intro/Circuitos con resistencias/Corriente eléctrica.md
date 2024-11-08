@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
   - ingeniería-electrónica/dispo/Física-de-semiconductores
+  - ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
 aliases:
   - Densidad de corriente#Densidad de corriente
   - Densidad de corriente superficial#Corriente superficial

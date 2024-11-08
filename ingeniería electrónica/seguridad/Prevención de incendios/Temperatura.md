@@ -4,6 +4,7 @@ tags:
   - ingeniería-electrónica/seguridad/Prevención-de-incendios
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Termodinámica
+  - ingeniería-electrónica/fisica-2/Termodinámica
 ---
 # Definición
 ---

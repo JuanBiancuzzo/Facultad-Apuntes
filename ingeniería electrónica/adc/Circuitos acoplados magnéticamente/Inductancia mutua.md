@@ -4,6 +4,7 @@ tags:
   - ingeniería-electrónica/adc/Circuitos-acoplados-magnéticamente
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Inducción-electromagnética
+  - ingeniería-electrónica/fisica-2/Inducción-electromagnética
 aliases:
   - Coeficiente de inducción mutuo
 ---

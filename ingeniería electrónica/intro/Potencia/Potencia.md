@@ -6,6 +6,8 @@ tags:
   - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
   - ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
   - ingeniería-electrónica/adc/Circuitos-en-regimen-senoidal-permanente
+  - ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - ingeniería-electrónica/fisica-2/Circuitos-en-régimen-alterno-permanente
 aliases:
   - Balance de potencia#Balance de potencia
   - Potencia activa

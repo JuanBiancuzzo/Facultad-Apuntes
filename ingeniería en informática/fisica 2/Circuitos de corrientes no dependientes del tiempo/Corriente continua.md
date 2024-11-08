@@ -3,6 +3,7 @@ dia: 2023-08-24
 tags:
   - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
   - nota/facultad
+  - ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
 aliases:
   - CC
 ---
