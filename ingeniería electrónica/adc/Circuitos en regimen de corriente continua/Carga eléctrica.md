@@ -8,6 +8,7 @@ tags:
   - ingeniería-electrónica/dispo/Física-de-semiconductores
   - ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
   - ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - ingeniería-en-informática/adc/Circuitos-en-regimen-de-corriente-continua
 aliases:
   - Carga de polarización#Cargas de polarización
   - Portador de carga#Cargas libres

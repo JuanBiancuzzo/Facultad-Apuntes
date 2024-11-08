@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Inducción-electromagnética
   - ingeniería-electrónica/fisica-2/Inducción-electromagnética
+  - ingeniería-en-informática/adc/Circuitos-acoplados-magnéticamente
 ---
 # Definición
 ---

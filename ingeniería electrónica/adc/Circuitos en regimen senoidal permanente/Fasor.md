@@ -6,6 +6,7 @@ tags:
   - ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
   - ingeniería-electrónica/electro/Campo-electromagnético
   - ingeniería-electrónica/fisica-2/Circuitos-en-régimen-alterno-permanente
+  - ingeniería-en-informática/adc/Circuitos-en-regimen-senoidal-permanente
 referencias:
   - "221"
 ---

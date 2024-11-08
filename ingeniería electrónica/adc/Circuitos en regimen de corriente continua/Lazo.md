@@ -4,6 +4,7 @@ tags:
   - ingeniería-electrónica/adc/Circuitos-en-regimen-de-corriente-continua
   - nota/facultad
   - ingeniería-en-informática/discreta/Grafos
+  - ingeniería-en-informática/adc/Circuitos-en-regimen-de-corriente-continua
 ---
 # Definición
 ---

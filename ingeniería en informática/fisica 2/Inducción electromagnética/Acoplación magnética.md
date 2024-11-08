@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-electrónica/adc/Circuitos-acoplados-magnéticamente
   - ingeniería-electrónica/fisica-2/Inducción-electromagnética
+  - ingeniería-en-informática/adc/Circuitos-acoplados-magnéticamente
 aliases:
   - Diafonía
   - Bornes homologos#Bornes homólogos

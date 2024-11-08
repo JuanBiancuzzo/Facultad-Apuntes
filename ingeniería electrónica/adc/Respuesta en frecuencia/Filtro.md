@@ -3,6 +3,7 @@ dia: 2023-01-23
 tags:
   - ingeniería-electrónica/adc/Respuesta-en-frecuencia
   - nota/facultad
+  - ingeniería-en-informática/adc/Respuesta-en-frecuencia
 ---
 # Definición
 ---

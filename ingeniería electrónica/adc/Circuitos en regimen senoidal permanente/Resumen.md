@@ -1,8 +1,9 @@
 ---
 capitulo: 3
-tags: 
- - ingeniería-electrónica/adc/Circuitos-en-regimen-senoidal-permanente
- - resumen
+tags:
+  - ingeniería-electrónica/adc/Circuitos-en-regimen-senoidal-permanente
+  - resumen
+  - ingeniería-en-informática/adc/Circuitos-en-regimen-senoidal-permanente
 ---
 # Índice 
 ---

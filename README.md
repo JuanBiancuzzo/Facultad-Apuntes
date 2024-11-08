@@ -15,7 +15,7 @@ Un listado de materias, sus códigos y su estado actual
 | Materia                                                                                                                                        | Código | Estado                                         |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ---------------------------------------------- |
 | [Algoritmos y Programación 1 (9511)](ingeniería%20electrónica/Algoritmos%20y%20Programación%201%20(9511).md)                                   | 9511   | \-                                             |
-| [Análisis de circuitos (6606)](ingeniería%20electrónica/adc/Análisis%20de%20circuitos%20(6606).md)                                             | 6606   | Terminado                                      |
+| [Análisis de circuitos (8604)](Análisis%20de%20circuitos%20(8604).md)                                             | 6606   | Terminado                                      |
 | [Análisis Matemático 2 A (8101)](ingeniería%20electrónica/Análisis%20Matemático%202%20A%20(8101).md)                                           | 8101   | \-                                             |
 | [Análisis matemático 3 (6110)](ingeniería%20electrónica/analisis%203/Análisis%20matemático%203%20(6110).md)                                    | 6110   | Terminado                                      |
 | [Circuitos microelectrónicos (TB068)](ingeniería%20electrónica/circuitos/Circuitos%20microelectrónicos%20(TB068).md)                           | TB068  | Falta últimos temas                            |

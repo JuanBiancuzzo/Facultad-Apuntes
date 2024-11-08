@@ -1,8 +1,9 @@
 ---
 capitulo: 4
-tags: 
- - ingeniería-electrónica/adc/Circuitos-acoplados-magnéticamente
- - resumen
+tags:
+  - ingeniería-electrónica/adc/Circuitos-acoplados-magnéticamente
+  - resumen
+  - ingeniería-en-informática/adc/Circuitos-acoplados-magnéticamente
 ---
 # Índice 
 ---

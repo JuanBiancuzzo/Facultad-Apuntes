@@ -7,7 +7,7 @@ tags:
   - materia/ingeniería-electrónica
 etapa: ampliar
 correlativas:
-  - "[[Análisis de circuitos (6606)|Análisis de circuitos]]"
+  - "[[Análisis de Circuitos (6606)|Análisis de circuitos]]"
 ---
 # Apuntes
 ---

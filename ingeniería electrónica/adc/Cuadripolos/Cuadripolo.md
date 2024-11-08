@@ -3,6 +3,7 @@ dia: 2023-09-03
 tags:
   - ingeniería-electrónica/adc/Cuadripolos
   - nota/facultad
+  - ingeniería-en-informática/adc/Cuadripolos
 ---
 # Definición
 ---

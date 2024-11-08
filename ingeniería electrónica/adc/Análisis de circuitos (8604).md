@@ -2,7 +2,7 @@
 cuatri: 23C2
 estado: Terminado
 plan: "1986"
-codigo: "6606"
+codigo: "8604"
 tags:
   - materia/ingeniería-electrónica
 etapa: terminado

@@ -3,6 +3,7 @@ dia: 2023-09-19
 tags:
   - ingeniería-electrónica/adc/Circuitos-en-regimen-transitorio
   - nota/facultad
+  - ingeniería-en-informática/adc/Circuitos-en-regimen-transitorio
 aliases:
   - Bobinas en serie
 ---

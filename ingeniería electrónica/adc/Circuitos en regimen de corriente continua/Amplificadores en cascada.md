@@ -4,6 +4,8 @@ tags:
   - ingeniería-electrónica/adc/Circuitos-en-regimen-de-corriente-continua
   - nota/facultad
   - ingeniería-electrónica/adc/Cuadripolos
+  - ingeniería-en-informática/adc/Circuitos-en-regimen-de-corriente-continua
+  - ingeniería-en-informática/adc/Cuadripolos
 aliases:
   - Cuadripolo en cascada
 ---
