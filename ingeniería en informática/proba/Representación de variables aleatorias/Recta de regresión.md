@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/orga/Machine-learning
   - machine-Learning
+  - ingeniería-electrónica/proba/Representación-de-variables-aleatorias
 aliases:
   - Regresión lineal
   - Ajuste lineal

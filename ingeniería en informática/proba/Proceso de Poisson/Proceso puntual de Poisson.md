@@ -5,6 +5,7 @@ aliases:
 tags:
   - ingeniería-en-informática/proba/Proceso-de-Poisson
   - nota/facultad
+  - ingeniería-electrónica/proba/Proceso-de-Poisson
 ---
 # Definición
 ---

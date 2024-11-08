@@ -1,8 +1,9 @@
 ---
 capitulo: 9
-tags: 
- - ingeniería-en-informática/proba/Teorema-central-del-límite
- - resumen
+tags:
+  - ingeniería-en-informática/proba/Teorema-central-del-límite
+  - resumen
+  - ingeniería-electrónica/proba/Teorema-central-del-límite
 ---
 # Índice 
 ---

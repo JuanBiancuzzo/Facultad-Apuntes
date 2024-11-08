@@ -1,8 +1,9 @@
 ---
 capitulo: 10
-tags: 
- - ingeniería-en-informática/proba/Inferencia-estadística
- - resumen
+tags:
+  - ingeniería-en-informática/proba/Inferencia-estadística
+  - resumen
+  - ingeniería-electrónica/proba/Inferencia-estadística
 ---
 # Índice 
 ---

@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/proba/Teoría-de-probabilidades
   - nota/facultad
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
+  - ingeniería-electrónica/proba/Teoría-de-probabilidades
 ---
 # Definición
 ---

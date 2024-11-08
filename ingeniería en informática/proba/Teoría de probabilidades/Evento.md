@@ -3,6 +3,7 @@ dia: 2023-04-03
 tags:
   - ingeniería-en-informática/proba/Teoría-de-probabilidades
   - nota/facultad
+  - ingeniería-electrónica/proba/Teoría-de-probabilidades
 ---
 # Definición
 ---

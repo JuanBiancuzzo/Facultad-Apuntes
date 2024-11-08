@@ -1,20 +1,18 @@
 ---
-cuatri: 22C2
-estado: Terminado
-plan: "1986"
-codigo: "6109"
+plan: 2009
 tags:
-  - materia/ingeniería-en-informática
-etapa: terminado
+  - materia/ingeniería-electrónica
 correlativas:
-  - "[[Álgebra 2 (6108)|Álgebra 2]]"
+  - "[[ingeniería electrónica/Análisis Matemático 2 A (8101).md|Análisis Matemático 2 A]]"
+  - "[[ingeniería electrónica/Álgebra 2 A (8102).md|Álgebra 2 A]]"
+codigo: 8104
+equivalencia: "[[ingeniería en informática/proba/Probabilidad y estadística (6109).md|Probabilidad y estadística (6109)]]"
 ---
 # Apuntes
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
 ```
-
 # Distribuciones
 ---
 Se tiene $3$ tipos de distribuciones

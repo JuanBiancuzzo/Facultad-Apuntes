@@ -3,6 +3,7 @@ dia: 2023-01-23
 tags:
   - ingeniería-en-informática/proba/Teorema-central-del-límite
   - nota/facultad
+  - ingeniería-electrónica/proba/Teorema-central-del-límite
 ---
 # Definición
 ---

@@ -1,8 +1,9 @@
 ---
 capitulo: 13
-tags: 
- - ingeniería-en-informática/proba/Estimación-Bayesiana
- - resumen
+tags:
+  - ingeniería-en-informática/proba/Estimación-Bayesiana
+  - resumen
+  - ingeniería-electrónica/proba/Estimación-Bayesiana
 ---
 # Índice 
 ---

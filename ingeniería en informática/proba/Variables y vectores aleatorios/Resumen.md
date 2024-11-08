@@ -1,8 +1,9 @@
 ---
 capitulo: 2
-tags: 
- - ingeniería-en-informática/proba/Variables-y-vectores-aleatorios
- - resumen
+tags:
+  - ingeniería-en-informática/proba/Variables-y-vectores-aleatorios
+  - resumen
+  - ingeniería-electrónica/proba/Variables-y-vectores-aleatorios
 ---
 # Índice 
 ---

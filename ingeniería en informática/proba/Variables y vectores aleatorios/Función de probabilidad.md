@@ -3,6 +3,7 @@ dia: 2023-01-23
 tags:
   - ingeniería-en-informática/proba/Variables-y-vectores-aleatorios
   - nota/facultad
+  - ingeniería-electrónica/proba/Variables-y-vectores-aleatorios
 ---
 # Definición 
 ---

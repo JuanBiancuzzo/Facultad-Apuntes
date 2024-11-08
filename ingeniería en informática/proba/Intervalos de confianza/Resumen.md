@@ -1,8 +1,9 @@
 ---
 capitulo: 12
-tags: 
- - ingeniería-en-informática/proba/Intervalos-de-confianza
- - resumen
+tags:
+  - ingeniería-en-informática/proba/Intervalos-de-confianza
+  - resumen
+  - ingeniería-electrónica/proba/Intervalos-de-confianza
 ---
 # Índice 
 ---

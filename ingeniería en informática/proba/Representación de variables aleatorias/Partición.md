@@ -6,6 +6,7 @@ tags:
   - ingeniería-en-informática/discreta/Relaciones
   - ingeniería-en-informática/discreta/Grafos
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
+  - ingeniería-electrónica/proba/Representación-de-variables-aleatorias
 ---
 # Definición
 ---

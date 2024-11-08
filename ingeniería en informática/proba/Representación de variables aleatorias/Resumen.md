@@ -1,8 +1,9 @@
 ---
 capitulo: 3
-tags: 
- - ingeniería-en-informática/proba/Representación-de-variables-aleatorias
- - resumen
+tags:
+  - ingeniería-en-informática/proba/Representación-de-variables-aleatorias
+  - resumen
+  - ingeniería-electrónica/proba/Representación-de-variables-aleatorias
 ---
 # Índice 
 ---

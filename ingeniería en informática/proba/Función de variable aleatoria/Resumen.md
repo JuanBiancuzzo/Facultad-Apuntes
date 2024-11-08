@@ -1,8 +1,9 @@
 ---
 capitulo: 4
-tags: 
- - ingeniería-en-informática/proba/Función-de-variable-aleatoria
- - resumen
+tags:
+  - ingeniería-en-informática/proba/Función-de-variable-aleatoria
+  - resumen
+  - ingeniería-electrónica/proba/Función-de-variable-aleatoria
 ---
 # Índice 
 ---

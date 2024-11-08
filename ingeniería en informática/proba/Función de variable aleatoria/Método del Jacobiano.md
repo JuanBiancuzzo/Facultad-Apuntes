@@ -3,6 +3,7 @@ dia: 2023-01-23
 tags:
   - ingeniería-en-informática/proba/Función-de-variable-aleatoria
   - nota/facultad
+  - ingeniería-electrónica/proba/Función-de-variable-aleatoria
 aliases:
   - Método del Jacobiano generalizado#Método del Jacobiano
 ---
