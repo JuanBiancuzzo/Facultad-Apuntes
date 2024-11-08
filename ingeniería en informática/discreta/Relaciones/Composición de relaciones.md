@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/analisis-2/Propiedades-de-funciones
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
+  - ingeniería-electrónica/analisis-2/Propiedades-de-funciones
 aliases:
   - Composición de funciones#Funciones
 referencias:

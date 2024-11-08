@@ -3,6 +3,7 @@ dia: 2024-09-04
 tags:
   - ingeniería-en-informática/analisis-2/Funciones-de-varias-variables
   - nota/facultad
+  - ingeniería-electrónica/analisis-2/Funciones-de-varias-variables
 referencias:
   - "226"
 aliases:

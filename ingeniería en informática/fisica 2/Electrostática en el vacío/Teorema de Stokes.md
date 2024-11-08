@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
   - nota/facultad
   - ingeniería-en-informática/analisis-2/Funciones-de-varias-variables
+  - ingeniería-electrónica/analisis-2/Funciones-de-varias-variables
 aliases:
   - Ley del rotor
 ---

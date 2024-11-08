@@ -4,6 +4,8 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/analisis-2/Propiedades-de-funciones
   - ingeniería-en-informática/analisis-2/Funciones-de-varias-variables
+  - ingeniería-electrónica/analisis-2/Funciones-de-varias-variables
+  - ingeniería-electrónica/analisis-2/Propiedades-de-funciones
 ---
 # Definición
 ---

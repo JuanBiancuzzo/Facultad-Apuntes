@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/analisis-2/Funciones-de-varias-variables
   - nota/facultad
   - ingeniería-electrónica/analisis-3/Ecuaciones-diferenciales
+  - ingeniería-electrónica/analisis-2/Funciones-de-varias-variables
 aliases:
   - Operador de Laplace
 ---

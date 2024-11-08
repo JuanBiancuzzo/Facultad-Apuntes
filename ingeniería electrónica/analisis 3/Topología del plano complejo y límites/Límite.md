@@ -4,6 +4,7 @@ tags:
   - ingeniería-electrónica/analisis-3/Topología-del-plano-complejo-y-límites
   - nota/facultad
   - ingeniería-en-informática/analisis-2/Propiedades-de-funciones
+  - ingeniería-electrónica/analisis-2/Propiedades-de-funciones
 ---
 # Definición
 ---

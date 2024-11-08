@@ -4,6 +4,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/analisis-2/Topología/1
   - ingeniería-en-informática/discreta/Grafos
+  - ingeniería-electrónica/analisis-2/Topología/1
 aliases:
   - Entorno abierto de un vértice
   - Entorno cerrado de un vértice

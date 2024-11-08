@@ -3,6 +3,7 @@ dia: 2023-01-22
 tags:
   - nota/facultad
   - ingeniería-en-informática/analisis-2/Propiedades-de-funciones
+  - ingeniería-electrónica/analisis-2/Propiedades-de-funciones
 aliases:
   - Derivada direccional máxima
   - Derivada direccional mínima

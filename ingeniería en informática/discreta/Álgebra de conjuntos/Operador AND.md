@@ -8,6 +8,7 @@ tags:
   - ingeniería-en-informática/analisis-2/Nomenclatura
   - lenguajes-de-programación/lenguaje-c
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
+  - ingeniería-electrónica/analisis-2/Nomenclatura
 aliases:
   - Conjunción
   - Intersección de conjuntos

@@ -1,8 +1,9 @@
 ---
 dia: 2024-09-03
-tags: 
- - ingeniería-en-informática/analisis-2/Propiedades-de-funciones
- - nota/facultad
+tags:
+  - ingeniería-en-informática/analisis-2/Propiedades-de-funciones
+  - nota/facultad
+  - ingeniería-electrónica/analisis-2/Propiedades-de-funciones
 ---
 # Definición
 ---

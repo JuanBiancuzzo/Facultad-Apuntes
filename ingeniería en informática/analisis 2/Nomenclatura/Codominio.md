@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/analisis-2/Nomenclatura
   - nota/facultad
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
+  - ingeniería-electrónica/analisis-2/Nomenclatura
 aliases:
   - Imagen de una función
 referencias:

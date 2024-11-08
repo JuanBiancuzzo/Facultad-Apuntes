@@ -1,8 +1,9 @@
 ---
 dia: 2024-08-05
-tags: 
- - ingeniería-en-informática/analisis-2/Nomenclatura
- - nota/facultad
+tags:
+  - ingeniería-en-informática/analisis-2/Nomenclatura
+  - nota/facultad
+  - ingeniería-electrónica/analisis-2/Nomenclatura
 ---
 # Definición
 ---

@@ -4,6 +4,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/analisis-2/Topología/1
   - ingeniería-en-informática/discreta/Relaciones
+  - ingeniería-electrónica/analisis-2/Topología/1
 aliases:
   - Conjunto superiormente acotado
   - Conjunto inferiormente acotado

@@ -3,6 +3,7 @@ capitulo: 1
 tags:
   - ingeniería-en-informática/analisis-2/Nomenclatura
   - resumen
+  - ingeniería-electrónica/analisis-2/Nomenclatura
 ---
 # Índice
 ---

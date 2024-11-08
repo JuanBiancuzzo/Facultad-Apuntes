@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/discreta/Grafos
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
+  - ingeniería-electrónica/analisis-2/Nomenclatura
 aliases:
   - Producto cartesiano entre grafos#Entre grafos
 ---

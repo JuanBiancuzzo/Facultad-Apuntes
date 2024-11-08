@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/algebra-2/Espacios-euclídeos
   - nota/facultad
   - ingeniería-en-informática/analisis-2/Nomenclatura
+  - ingeniería-electrónica/analisis-2/Nomenclatura
 aliases:
   - Módulo
 ---

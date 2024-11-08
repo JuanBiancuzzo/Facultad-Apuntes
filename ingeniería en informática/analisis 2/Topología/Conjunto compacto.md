@@ -4,6 +4,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/analisis-2/Topología/1
   - ingeniería-electrónica/analisis-3/Ecuaciones-diferenciales
+  - ingeniería-electrónica/analisis-2/Topología/1
 aliases:
   - Recinto compacto
 ---
