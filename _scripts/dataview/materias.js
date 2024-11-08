@@ -8,15 +8,20 @@ if (!tag) {
 let carrera = dv.pages(`#carrera/${tag}`)[0];
 
 let materias = dv.pages(`#materia/${tag}`)
-    .map(materia => ({ 
-        path: materia.file.path, 
-        nombre: nombreMateria(materia), 
-        etapa: materia.etapa, 
-        codigo: materia.codigo, 
-        plan: carrera.planes.length > 1 ? materia.plan : null,
-        descripcion: materia.estado, 
-        cuatri: materia.cuatri 
-    }))
+    .map(materia => {
+        let equivalencia;
+        if (materia.equivalencia) equivalencia = dv.page(materia.equivalencia.path);
+
+        return { 
+            path: materia.file.path,
+            nombre: nombreMateria(materia),
+            etapa: equivalencia ? equivalencia.etapa : materia.etapa,
+            codigo: materia.codigo,
+            plan: carrera.planes.length > 1 ? materia.plan : null,
+            descripcion: equivalencia ? equivalencia.estado : materia.estado,
+            cuatri: equivalencia ? equivalencia.cuatri : materia.cuatri
+        };
+    })
     .sort(({ nombre, ..._ }) => nombre)
     .groupBy(({ cuatri, ..._ }) => cuatri)
     .sort(cuatrimestre => {

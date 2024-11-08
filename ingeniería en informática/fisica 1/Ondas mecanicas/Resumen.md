@@ -1,8 +1,9 @@
 ---
 capitulo: 6
-tags: 
- - ingeniería-en-informática/fisica-1/Ondas-mecanicas
- - resumen
+tags:
+  - ingeniería-en-informática/fisica-1/Ondas-mecanicas
+  - resumen
+  - ingeniería-electrónica/fisica-1/Ondas-mecanicas
 ---
 # Índice 
 ---

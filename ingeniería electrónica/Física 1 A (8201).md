@@ -1,11 +1,10 @@
 ---
-cuatri: 21C1
-estado: Falta pasar el resumen
-plan: "1986"
-codigo: "8201"
+plan: 2009
 tags:
-  - materia/ingeniería-en-informática
-etapa: empezado
+  - materia/ingeniería-electrónica
+correlativas: 
+codigo: 8201
+equivalencia: "[[ingeniería en informática/fisica 1/Física 1 (6201).md|Física 1 (6201)]]"
 ---
 # Apuntes
 ---

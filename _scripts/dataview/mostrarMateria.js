@@ -5,10 +5,13 @@ if (!materia) {
     return;
 }
 
-let resumenes = dv.pages(`"${materia.file.folder}" and #resumen`)
-    .sort(resumen => resumen.capitulo);
+let carpeta = materia.file.folder;
+if (materia.equivalencia) {
+    let equivalencia = dv.page(materia.equivalencia.path);
+    carpeta += `/${equivalencia.file.folder.split("/").slice(1).join("/")}`;
+}
 
-let datos = dv.pages(`"${materia.file.folder}" and #resumen`)
+let datos = dv.pages(`#${carpeta.replaceAll(" ", "-")} and #resumen`)
     .sort(resumen => resumen.capitulo)
     .map(resumen => {
         let tagRepresentante = resumen.tags.find(tag => !tag.startsWith("resumen"));

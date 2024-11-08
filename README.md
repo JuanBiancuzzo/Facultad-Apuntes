@@ -42,7 +42,7 @@ Un listado de materias, sus códigos y su estado actual
 | [Análisis numérico (7512)](ingeniería%20en%20informática/numerico/Análisis%20numérico%20(7512).md)                                          | 7512   | Falta pasar el resumen                              |
 | [Base de datos (TA044)](ingeniería%20en%20informática/bdd/Base%20de%20datos%20(TA044).md)                                                   | TA044  | Falta ampliar                                       |
 | [Estructura del computador (6670)](ingeniería%20en%20informática/estructura/Estructura%20del%20computador%20(6670).md)                      | 6670   | Terminado                                           |
-| [Física 1 (8201)](ingeniería%20en%20informática/fisica%201/Física%201%20(8201).md)                                                          | 8201   | Falta pasar el resumen                              |
+| [Física 1 (6201)](Física%201%20(6201).md)                                                          | 8201   | Falta pasar el resumen                              |
 | [Física 2 (6203)](ingeniería%20en%20informática/fisica%202/Física%202%20(6203).md)                                                          | 6203   | Terminado                                           |
 | [Matemática discreta (6107)](ingeniería%20en%20informática/discreta/Matemática%20discreta%20(6107).md)                                      | 6107   | Terminado                                           |
 | [Organización de datos (7506)](ingeniería%20en%20informática/orga/Organización%20de%20datos%20(7506).md)                                    | 7506   | Falta pasar los videos de los últimos temas         |

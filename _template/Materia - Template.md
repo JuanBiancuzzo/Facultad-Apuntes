@@ -12,9 +12,12 @@
 	const PREGUNTAR_CORRELATIVAS = "correlativas";
 	const ELIMINAR_CORRELATIVA = "eliminar correlativa";
 	const MODIFICAR_CORRELATIVAS = "modificar correlativas";
+	const PREGUNTAR_EQUIVALENCIA = "equivalencia";
+	const SALAR_EQUIVALENCIA = "sacar equivalencia";
 	const SALIR = "salir";
 
-	const FIELD_OBLIGATORIOS = [PREGUNTAR_CARRERA, PREGUNTAR_NOMBRE_MATERIA, PREGUNTAR_NOMBRE_REDUCIDO, PREGUNTAR_ANIO, PREGUNTAR_CUATRI, PREGUNTAR_PLANES];
+	const FIELD_OBLIGATORIOS = [PREGUNTAR_CARRERA, PREGUNTAR_NOMBRE_MATERIA, PREGUNTAR_PLANES];
+	const FIELD_OBLIGATORIOS_SIN_EQUIVALENCIA = [PREGUNTAR_NOMBRE_REDUCIDO, PREGUNTAR_ANIO, PREGUNTAR_CUATRI];
 
 	const dv = this.app.plugins.plugins.dataview.api;
 
@@ -36,6 +39,7 @@
 			[PREGUNTAR_CUATRI]: null,
 			[PREGUNTAR_PLANES]: null,
 			[PREGUNTAR_CORRELATIVAS]: [],
+			[PREGUNTAR_EQUIVALENCIA]: null,
 		};
 
 		let { opciones, valores } = representarDatos(datos);
@@ -52,13 +56,15 @@
 			if (respuesta == PREGUNTAR_CARRERA) { // Hacer que sea la única opción al principio
 				datos[PREGUNTAR_CARRERA] = await preguntar.suggester(
 					tp, carrera => carrera.file.name, 
-					dv.pages("#carrera"), "De que carrera es la materia?",
+					dv.pages("#carrera").sort(carrera => carrera.file.name), 
+					"De que carrera es la materia?",
 					error.Prompt("No se ingresó la carrera que se usa")
 				);
 
 				// Reiniciamos planes y correlativas ya que son puramente exclusivas de la carrera
 				datos[PREGUNTAR_PLANES] = null;
 				datos[PREGUNTAR_CORRELATIVAS] = [];
+				datos[PREGUNTAR_EQUIVALENCIA] = null;
 
 				// Si la carrera elegida no tiene codigos, entonces reiniciamos el código
 				if (!datos[PREGUNTAR_CARRERA].tieneCodigo) {
@@ -84,6 +90,7 @@
 					tp, `El código de ${datos[PREGUNTAR_NOMBRE_MATERIA]} es:`, 
 					error.Prompt("No se ingresó el código de la materia")
 				);
+				datos[PREGUNTAR_CODIGO] = parseInt(datos[PREGUNTAR_CODIGO].replaceAll(".", ""), 10);
 
 			} else if (respuesta == PREGUNTAR_ANIO) { // Agregar info si se ingresó el cuatri
 				datos[PREGUNTAR_ANIO] = await preguntar.suggester(
@@ -104,6 +111,8 @@
 					planes, "Cuál es el plan de la materia",
 					error.Prompt("No se ingresó el plan de la materia")
 				);
+
+				datos[PREGUNTAR_PLANES] = parseInt(datos[PREGUNTAR_PLANES], 10);
 
 			} else if (respuesta == PREGUNTAR_CORRELATIVAS) { // Si no hay materias todavia no agregarlas
 				let tagCarrera = datos[PREGUNTAR_CARRERA].tags[0].replace("carrera/", "");
@@ -131,13 +140,26 @@
 			} else if (respuesta == ELIMINAR_CORRELATIVA) { // Solo mostrar si hay un elemento en las correlativas
 				datos[PREGUNTAR_CORRELATIVAS].pop();
 
+			} else if (respuesta == PREGUNTAR_EQUIVALENCIA) { 
+				let opcion = await preguntarMateriaEquivalente(dv, datos[PREGUNTAR_CARRERA]);
+				if (opcion) {
+					datos[PREGUNTAR_EQUIVALENCIA] = opcion;
+
+					datos[PREGUNTAR_NOMBRE_REDUCIDO] = null;
+					datos[PREGUNTAR_ANIO] = null;
+					datos[PREGUNTAR_CUATRI] = null;
+				}
+
+			} else if (respuesta == SALAR_EQUIVALENCIA) { 
+				datos[PREGUNTAR_EQUIVALENCIA] = null;
+
 			} else {
 				console.log("no se llegó a ninguna pregunta");
 			}
 			
 
 			if (datos[PREGUNTAR_CARRERA] && datos[PREGUNTAR_CARRERA].planes.length <= 1) {
-				datos[PREGUNTAR_PLANES] = datos[PREGUNTAR_CARRERA].planes[0];
+				datos[PREGUNTAR_PLANES] = parseInt(datos[PREGUNTAR_CARRERA].planes[0], 10);
 			}
 
 
@@ -152,29 +174,60 @@
 			}
 		}
 
+		let metadata = {
+			plan: datos[PREGUNTAR_PLANES],
+			tags: [`materia/${datos[PREGUNTAR_CARRERA].file.name.toLowerCase().replaceAll(" ", "-")}`],
+			correlativas: datos[PREGUNTAR_CORRELATIVAS].map(correlativa => {
+				let nombre = correlativa.codigo
+					? correlativa.file.name.replace(`(${correlativa.codigo})`, "").trim()
+					: correlativa.file.name;
+				return `[[${correlativa.file.path}|${nombre}]]`;
+			}),
+		};
+
+		if (datos[PREGUNTAR_CODIGO]) metadata["codigo"] = datos[PREGUNTAR_CODIGO];
+
+		if (datos[PREGUNTAR_EQUIVALENCIA]) {
+			let equivalencia = datos[PREGUNTAR_EQUIVALENCIA];
+			metadata["equivalencia"] = `[[${equivalencia.file.path}|${equivalencia.file.name}]]`;
+
+		} else {
+			metadata["cuatri"] = `${datos[PREGUNTAR_ANIO]}${datos[PREGUNTAR_CUATRI]}`;
+			metadata["etapa"] = "sin-empezar";
+			metadata["estado"] = "Sin empezar";
+		}
+
 
 		tR += "---\n";
-		tR += `cuatri: ${datos[PREGUNTAR_ANIO]}${datos[PREGUNTAR_CUATRI]}\n`;
-		if (datos[PREGUNTAR_CODIGO]) tR += `codigo: ${datos[PREGUNTAR_CODIGO]}\n`;
-		tR += `plan: ${datos[PREGUNTAR_PLANES]}\n`;
-		tR += "etapa: sin-empezar\n";
-		tR += `estado: Sin empezar\n`;
-		tR += `tags: materia/${datos[PREGUNTAR_CARRERA].file.name.toLowerCase().replaceAll(" ", "-")}\n`;
-		tR += tp.obsidian.stringifyYaml({ correlativas: datos[PREGUNTAR_CORRELATIVAS].map(correlativa => {
-			let nombre = correlativa.codigo 
-				? correlativa.file.name.replace(`(${correlativa.codigo})`, "").trim()
-				: correlativa.file.name;
-			return `[[${correlativa.file.path}|${nombre}]]`;
-		}) });
+		tR += tp.obsidian.stringifyYaml(metadata);
 		tR += "---\n";
 
-		let carpeta = `${datos[PREGUNTAR_CARRERA].file.folder}/${datos[PREGUNTAR_NOMBRE_REDUCIDO]}`;
+		let carpeta = datos[PREGUNTAR_CARRERA].file.folder;
+		if (!datos[PREGUNTAR_EQUIVALENCIA]) carpeta += `/${datos[PREGUNTAR_NOMBRE_REDUCIDO]}`;
+		
 		let nombre = datos[PREGUNTAR_CARRERA].tieneCodigo 
 			? `${datos[PREGUNTAR_NOMBRE_MATERIA]} (${datos[PREGUNTAR_CODIGO]})` 
 			: datos[PREGUNTAR_NOMBRE_MATERIA];
 
 		await app.vault.createFolder(carpeta);
 		await app.vault.rename(tArchivo, `${carpeta}/${nombre}.md`);
+
+		if (datos[PREGUNTAR_EQUIVALENCIA]) {
+			let equivalencia = datos[PREGUNTAR_EQUIVALENCIA];
+			let tagEquivalencia = equivalencia.replaceAll(" ", "-");
+
+			let tareas = dv.pages(`#${tagEquivalencia} and #resumen`)
+				.map(resumen => {
+					let tResumen = tp.file.find_tfile(resumen.file.path);
+    				let nuevaTag = `${carpeta}/${resumen.file.folder.split("/").slice(1).join("/")}`
+						.replaceAll(" ", "-");
+
+					return app.fileManager.processFrontMatter(tResumen, (frontmatter) => {
+						frontmatter["tags"].push(nuevaTag);
+					});
+				});
+			await Promise.all(tareas);
+		}
 
 	} catch ({ name: nombre, message: mensaje }) {
         const eliminar = tp.user.eliminar();
@@ -209,11 +262,13 @@
 		if (datos[PREGUNTAR_NOMBRE_MATERIA]) {
 			valores.push(`Modificar el nombre (${datos[PREGUNTAR_NOMBRE_MATERIA]}) de la materia`);
 
-			valores.push(datos[PREGUNTAR_NOMBRE_REDUCIDO] 
-				? `Modificar el nombre reducido (${datos[PREGUNTAR_NOMBRE_REDUCIDO]}) de ${datos[PREGUNTAR_NOMBRE_MATERIA]}`
-				: `Ingresar un nombre reducido para ${datos[PREGUNTAR_NOMBRE_MATERIA]}`
-			);
-			opciones.push(PREGUNTAR_NOMBRE_REDUCIDO);
+			if (!datos[PREGUNTAR_EQUIVALENCIA]) {
+				valores.push(datos[PREGUNTAR_NOMBRE_REDUCIDO]
+					? `Modificar el nombre reducido (${datos[PREGUNTAR_NOMBRE_REDUCIDO]}) de ${datos[PREGUNTAR_NOMBRE_MATERIA]}`
+					: `Ingresar un nombre reducido para ${datos[PREGUNTAR_NOMBRE_MATERIA]}`
+				);
+				opciones.push(PREGUNTAR_NOMBRE_REDUCIDO);
+			}
 		} else {
 			valores.push("Ingresar el nombre de la materia");
 		}
@@ -226,30 +281,42 @@
 			opciones.push(PREGUNTAR_CODIGO);
 		}
 
-		opciones.push(PREGUNTAR_ANIO);
-		if (datos[PREGUNTAR_ANIO] && datos[PREGUNTAR_CUATRI]) {
-			let infoCuatri = datos[PREGUNTAR_CUATRI] == "C1" ? "primer" : "segundo";
-			valores.push(`Modificar el año (20${datos[PREGUNTAR_ANIO]} ${infoCuatri} cuatrimestres) en la que se cursó/se esta cursando la materia`)
+		opciones.push(PREGUNTAR_EQUIVALENCIA);
+		valores.push(datos[PREGUNTAR_EQUIVALENCIA]
+			? `Modificar la equivalencia: ${datos[PREGUNTAR_EQUIVALENCIA].file.name}`
+			: "Ingresar la materia la cual esta es la equivalencia"
+		);
 
-		} else if (datos[PREGUNTAR_ANIO] && !datos[PREGUNTAR_CUATRI]) {
-			valores.push(`Modificar el año (20${datos[PREGUNTAR_ANIO]}) en la que se cursó/se esta cursando la materia`);
+		if (datos[PREGUNTAR_EQUIVALENCIA]) {
+			opciones.push(SALAR_EQUIVALENCIA);
+			valores.push("Sacar equivalencia");
 
 		} else {
-			valores.push("Ingresar el año que se cursó/se esta cursando la materia");
-		}
+			opciones.push(PREGUNTAR_ANIO);
+			if (datos[PREGUNTAR_ANIO] && datos[PREGUNTAR_CUATRI]) {
+				let infoCuatri = datos[PREGUNTAR_CUATRI] == "C1" ? "primer" : "segundo";
+				valores.push(`Modificar el año (20${datos[PREGUNTAR_ANIO]} ${infoCuatri} cuatrimestres) en la que se cursó/se esta cursando la materia`)
 
-		opciones.push(PREGUNTAR_CUATRI);
-		if (datos[PREGUNTAR_CUATRI]) {
-			let infoCuatri = datos[PREGUNTAR_CUATRI] == "C1" ? "primer" : "segundo";
-			valores.push(datos[PREGUNTAR_ANIO]
-				? `Modificar el cuatrimestre (${datos[PREGUNTAR_ANIO]}${datos[PREGUNTAR_CUATRI]}) en la que se cursó/se esta cursando la materia`
-				: `Modificar el cuatrimestre (${infoCuatri} cuatrimestre) en la que se cursó/se esta cursando la materia`
-			);
-		} else {
-			valores.push(datos[PREGUNTAR_ANIO]
-				? `Ingresar el cuatrimestre del 20${datos[PREGUNTAR_ANIO]} en la que se cursó/se esta cursando la materia`
-				: "Ingresar el cuatrimestre en la que se cursó/se esta cursando la materia"
-			);
+			} else if (datos[PREGUNTAR_ANIO] && !datos[PREGUNTAR_CUATRI]) {
+				valores.push(`Modificar el año (20${datos[PREGUNTAR_ANIO]}) en la que se cursó/se esta cursando la materia`);
+
+			} else {
+				valores.push("Ingresar el año que se cursó/se esta cursando la materia");
+			}
+
+			opciones.push(PREGUNTAR_CUATRI);
+			if (datos[PREGUNTAR_CUATRI]) {
+				let infoCuatri = datos[PREGUNTAR_CUATRI] == "C1" ? "primer" : "segundo";
+				valores.push(datos[PREGUNTAR_ANIO]
+					? `Modificar el cuatrimestre (${datos[PREGUNTAR_ANIO]}${datos[PREGUNTAR_CUATRI]}) en la que se cursó/se esta cursando la materia`
+					: `Modificar el cuatrimestre (${infoCuatri} cuatrimestre) en la que se cursó/se esta cursando la materia`
+				);
+			} else {
+				valores.push(datos[PREGUNTAR_ANIO]
+					? `Ingresar el cuatrimestre del 20${datos[PREGUNTAR_ANIO]} en la que se cursó/se esta cursando la materia`
+					: "Ingresar el cuatrimestre en la que se cursó/se esta cursando la materia"
+				);
+			}
 		}
 
 		let planes = datos[PREGUNTAR_CARRERA].planes;
@@ -287,15 +354,53 @@
 			opciones.push(ELIMINAR_CORRELATIVA);
 		}
 
-		let obligatorios = dv.array(FIELD_OBLIGATORIOS);
-		if (datos[PREGUNTAR_CARRERA].tieneCodigo) obligatorios = obligatorios.concat(dv.array([PREGUNTAR_CODIGO]));
+		let field_obligatorios = dv.array(FIELD_OBLIGATORIOS);
+		let field_obligatorios_sin_equiv = dv.array(FIELD_OBLIGATORIOS_SIN_EQUIVALENCIA);
+		if (datos[PREGUNTAR_CARRERA].tieneCodigo) field_obligatorios = field_obligatorios.concat(dv.array([PREGUNTAR_CODIGO]));
 
-		if (obligatorios.every(key => datos[key])) {
+		if (field_obligatorios.every(key => datos[key]) && (datos[PREGUNTAR_EQUIVALENCIA]) || field_obligatorios_sin_equiv.every(key => datos[key])) {
         	valores.push(" ↶ Dejar de editar");
 			opciones.push(SALIR);
 		}
 
 		return { opciones: opciones, valores: valores };
+	}
+
+	async function preguntarMateriaEquivalente(dv, carreraActual) {
+		const carreras = dv.pages("#carrera")
+			.filter(carrera => carrera.file.name != carreraActual.file.name)
+			.sort(carrera => carrera.file.name);
+
+		let equivalencia = null;
+		do {
+			let carrera = await preguntar.suggester(
+				tp, [...carreras.file.name, "Salir"],
+				[...carreras, SALIR], "De que carrera es la materia?",
+				error.Prompt("No se eligió la carrera para la materia equivalente")
+			);
+
+			if (carrera == SALIR) break;
+
+			let tag = carrera.tags.find(tag => tag.startsWith("carrera"))
+                .replace("carrera", "materia");
+			const materias = dv.pages(`#${tag}`)
+				.filter(materia => !materia.equivalencia);
+
+			let respuesta = await preguntar.suggester(
+				tp, [...materias.file.name, "Volver"],
+				[...materias, SALIR], "Que materia sería la equivalente?",
+				error.Prompt("No se eligió la materia")
+			);
+
+			if (respuesta != SALIR) {
+				equivalencia = respuesta.equivalencia
+					? dv.page(respuesta.equivalencia.path)
+					: respuesta;
+			}
+
+		} while (respuesta == SALIR);
+
+		return equivalencia;	
 	}
 _%>
 # Apuntes

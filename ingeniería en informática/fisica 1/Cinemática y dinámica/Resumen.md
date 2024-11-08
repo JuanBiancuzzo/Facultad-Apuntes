@@ -1,8 +1,9 @@
 ---
 capitulo: 1
-tags: 
- - ingeniería-en-informática/fisica-1/Cinemática-y-dinámica
- - resumen
+tags:
+  - ingeniería-en-informática/fisica-1/Cinemática-y-dinámica
+  - resumen
+  - ingeniería-electrónica/fisica-1/Cinemática-y-dinámica
 ---
 # Índice 
 ---
