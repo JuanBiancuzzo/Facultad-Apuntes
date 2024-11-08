@@ -219,13 +219,13 @@
 
 		if (datos[PREGUNTAR_EQUIVALENCIA]) {
 			let equivalencia = datos[PREGUNTAR_EQUIVALENCIA];
-			let tagEquivalencia = equivalencia.file.folder.replaceAll(" ", "-");
+			let tagEquivalencia = equivalencia.file.folder.replaceAll(" ", "-").replaceAll(",", "");
 
 			let tareas = dv.pages(`#${tagEquivalencia} and #resumen`)
 				.map(resumen => {
 					let tResumen = tp.file.find_tfile(resumen.file.path);
     				let nuevaTag = `${carpeta}/${resumen.file.folder.split("/").slice(1).join("/")}`
-						.replaceAll(" ", "-");
+						.replaceAll(" ", "-").replaceAll(",", "");
 					if (resumen.parte) nuevaTag += `/${resumen.parte}`
 
 					return app.fileManager.processFrontMatter(tResumen, (frontmatter) => {
@@ -236,9 +236,9 @@
 
 			tareas = dv.pages(`#${tagEquivalencia} and #resumen`)
 				.flatMap(resumen => {
-					let tagRepresentante = resumen.file.folder.replaceAll(" ", "-");
+					let tagRepresentante = resumen.file.folder.replaceAll(" ", "-").replaceAll(",", "");
     				let nuevoTag = `${carpeta}/${resumen.file.folder.split("/").slice(1).join("/")}`
-						.replaceAll(" ", "-");
+						.replaceAll(" ", "-").replaceAll(",", "");
 					if (resumen.parte) {
 						tagRepresentante += `/${resumen.parte}`
 						nuevoTag += `/${resumen.parte}`
