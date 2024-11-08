@@ -1,8 +1,9 @@
 ---
 capitulo: 5
-tags: 
- - ingeniería-electrónica/fisica-3/Átomo-de-Bohr
- - resumen
+tags:
+  - ingeniería-electrónica/fisica-3/Átomo-de-Bohr
+  - resumen
+  - ingeniería-en-informática/fisica-3/Átomo-de-Bohr
 ---
 # Índice 
 ---

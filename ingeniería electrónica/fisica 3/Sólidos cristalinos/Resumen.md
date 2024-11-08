@@ -1,8 +1,9 @@
 ---
 capitulo: 9
-tags: 
- - ingeniería-electrónica/fisica-3/Sólidos-cristalinos
- - resumen
+tags:
+  - ingeniería-electrónica/fisica-3/Sólidos-cristalinos
+  - resumen
+  - ingeniería-en-informática/fisica-3/Sólidos-cristalinos
 ---
 # Índice 
 ---

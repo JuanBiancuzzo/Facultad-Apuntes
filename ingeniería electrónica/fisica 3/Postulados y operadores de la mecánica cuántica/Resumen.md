@@ -1,8 +1,9 @@
 ---
 capitulo: 7
-tags: 
- - ingeniería-electrónica/fisica-3/Postulados-y-operadores-de-la-mecánica-cuántica
- - resumen
+tags:
+  - ingeniería-electrónica/fisica-3/Postulados-y-operadores-de-la-mecánica-cuántica
+  - resumen
+  - ingeniería-en-informática/fisica-3/Postulados-y-operadores-de-la-mecánica-cuántica
 ---
 # Índice 
 ---

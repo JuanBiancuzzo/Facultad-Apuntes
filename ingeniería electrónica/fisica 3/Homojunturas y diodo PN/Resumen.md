@@ -1,8 +1,9 @@
 ---
 capitulo: 12
-tags: 
- - ingeniería-electrónica/fisica-3/Homojunturas-y-diodo-PN
- - resumen
+tags:
+  - ingeniería-electrónica/fisica-3/Homojunturas-y-diodo-PN
+  - resumen
+  - ingeniería-en-informática/fisica-3/Homojunturas-y-diodo-PN
 ---
 # Índice 
 ---

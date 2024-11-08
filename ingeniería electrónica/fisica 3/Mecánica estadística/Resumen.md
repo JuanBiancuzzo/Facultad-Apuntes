@@ -1,8 +1,9 @@
 ---
 capitulo: 10
-tags: 
- - ingeniería-electrónica/fisica-3/Mecánica-estadística
- - resumen
+tags:
+  - ingeniería-electrónica/fisica-3/Mecánica-estadística
+  - resumen
+  - ingeniería-en-informática/fisica-3/Mecánica-estadística
 ---
 # Índice 
 ---

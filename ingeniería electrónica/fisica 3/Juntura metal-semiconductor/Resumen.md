@@ -1,8 +1,9 @@
 ---
 capitulo: 14
-tags: 
- - ingeniería-electrónica/fisica-3/Juntura-metal-semiconductor
- - resumen
+tags:
+  - ingeniería-electrónica/fisica-3/Juntura-metal-semiconductor
+  - resumen
+  - ingeniería-en-informática/fisica-3/Juntura-metal-semiconductor
 ---
 # Índice 
 ---

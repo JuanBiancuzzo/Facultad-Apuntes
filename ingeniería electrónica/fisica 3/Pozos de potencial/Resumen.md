@@ -1,8 +1,9 @@
 ---
 capitulo: 8
-tags: 
- - ingeniería-electrónica/fisica-3/Pozos-de-potencial
- - resumen
+tags:
+  - ingeniería-electrónica/fisica-3/Pozos-de-potencial
+  - resumen
+  - ingeniería-en-informática/fisica-3/Pozos-de-potencial
 ---
 # Índice 
 ---
