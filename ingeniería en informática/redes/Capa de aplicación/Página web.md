@@ -3,6 +3,7 @@ dia: 2024-05-29
 tags:
   - ingeniería-en-informática/redes/Capa-de-aplicación
   - nota/facultad
+  - ingeniería-electrónica/redes/Capa-de-aplicación
 ---
 # Definición
 ---

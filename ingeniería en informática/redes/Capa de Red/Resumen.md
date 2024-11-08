@@ -1,8 +1,9 @@
 ---
 capitulo: 4
-tags: 
- - ingeniería-en-informática/redes/Capa-de-Red
- - resumen
+tags:
+  - ingeniería-en-informática/redes/Capa-de-Red
+  - resumen
+  - ingeniería-electrónica/redes/Capa-de-Red
 ---
 # Índice 
 ---

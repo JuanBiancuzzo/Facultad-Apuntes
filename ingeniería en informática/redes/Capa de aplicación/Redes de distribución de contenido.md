@@ -6,6 +6,7 @@ aliases:
 tags:
   - ingeniería-en-informática/redes/Capa-de-aplicación
   - nota/facultad
+  - ingeniería-electrónica/redes/Capa-de-aplicación
 ---
 # Definición
 ---

@@ -1,8 +1,9 @@
 ---
 capitulo: 1
-tags: 
- - ingeniería-en-informática/redes/Redes-de-computadoras
- - resumen
+tags:
+  - ingeniería-en-informática/redes/Redes-de-computadoras
+  - resumen
+  - ingeniería-electrónica/redes/Redes-de-computadoras
 ---
 # Índice 
 ---

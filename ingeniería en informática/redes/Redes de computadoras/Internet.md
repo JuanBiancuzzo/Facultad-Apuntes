@@ -3,6 +3,7 @@ dia: 2024-03-11
 tags:
   - ingeniería-en-informática/redes/Redes-de-computadoras
   - nota/facultad
+  - ingeniería-electrónica/redes/Redes-de-computadoras
 ---
 # Definición
 ---

@@ -3,6 +3,7 @@ dia: 2024-08-31
 tags:
   - ingeniería-en-informática/redes/Capa-Física-Inalámbrica
   - nota/facultad
+  - ingeniería-electrónica/redes/Capa-Física-Inalámbrica
 aliases:
   - VLR
 ---

@@ -3,6 +3,7 @@ dia: 2024-08-27
 tags:
   - nota/facultad
   - ingeniería-en-informática/redes/Capa-Física-Inalámbrica
+  - ingeniería-electrónica/redes/Capa-Física-Inalámbrica
 aliases:
   - Wireless Personal Area Networks
   - WPAN

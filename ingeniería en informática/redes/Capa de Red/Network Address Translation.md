@@ -5,6 +5,7 @@ aliases:
 tags:
   - ingeniería-en-informática/redes/Capa-de-Red
   - nota/facultad
+  - ingeniería-electrónica/redes/Capa-de-Red
 ---
 # Definición
 ---

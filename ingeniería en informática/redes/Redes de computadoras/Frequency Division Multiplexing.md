@@ -11,6 +11,8 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/redes/Capa-de-Enlace
   - protocolos/protocolo-de-internet
+  - ingeniería-electrónica/redes/Capa-de-Enlace
+  - ingeniería-electrónica/redes/Redes-de-computadoras
 ---
 # Definición
 ---

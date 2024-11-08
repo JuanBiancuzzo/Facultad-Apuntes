@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/redes/Capa-de-Red
   - algoritmos
+  - ingeniería-electrónica/redes/Capa-de-Red
 ---
 # Definición
 ---

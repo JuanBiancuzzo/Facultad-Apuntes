@@ -6,6 +6,7 @@ tags:
   - protocolos/protocolo-de-internet
   - nota/investigacion
   - networking
+  - ingeniería-electrónica/redes/Capa-de-Red
 aliases:
   - SNMP
   - Protocolo simple de administración de red

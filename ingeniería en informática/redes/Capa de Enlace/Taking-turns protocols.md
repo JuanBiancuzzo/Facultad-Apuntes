@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/redes/Capa-de-Enlace
   - nota/facultad
   - protocolos/protocolo-de-internet
+  - ingeniería-electrónica/redes/Capa-de-Enlace
 etapa: sin-empezar
 orden: 80
 ---

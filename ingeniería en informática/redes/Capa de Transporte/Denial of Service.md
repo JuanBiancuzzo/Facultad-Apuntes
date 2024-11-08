@@ -8,6 +8,7 @@ tags:
   - ingeniería-en-informática/redes/Capa-de-Transporte
   - nota/facultad
   - linker-exclude
+  - ingeniería-electrónica/redes/Capa-de-Transporte
 ---
 # Definición
 ---

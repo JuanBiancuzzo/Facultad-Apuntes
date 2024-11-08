@@ -1,8 +1,9 @@
 ---
 capitulo: 2
-tags: 
- - ingeniería-en-informática/redes/Capa-de-aplicación
- - resumen
+tags:
+  - ingeniería-en-informática/redes/Capa-de-aplicación
+  - resumen
+  - ingeniería-electrónica/redes/Capa-de-aplicación
 ---
 # Índice 
 ---

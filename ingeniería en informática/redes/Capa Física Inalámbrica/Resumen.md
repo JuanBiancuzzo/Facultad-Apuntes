@@ -3,6 +3,7 @@ capitulo: 6
 tags:
   - ingeniería-en-informática/redes/Capa-Física-Inalámbrica
   - resumen
+  - ingeniería-electrónica/redes/Capa-Física-Inalámbrica
 ---
 # Índice 
 ---

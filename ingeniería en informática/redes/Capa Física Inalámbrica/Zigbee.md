@@ -3,6 +3,7 @@ dia: 2024-08-27
 tags:
   - ingeniería-en-informática/redes/Capa-Física-Inalámbrica
   - nota/facultad
+  - ingeniería-electrónica/redes/Capa-Física-Inalámbrica
 aliases:
   - 802.15.4
 ---

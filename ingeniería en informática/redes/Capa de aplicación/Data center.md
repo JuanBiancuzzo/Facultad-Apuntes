@@ -4,6 +4,8 @@ tags:
   - ingeniería-en-informática/redes/Capa-de-aplicación
   - nota/facultad
   - ingeniería-en-informática/redes/Redes-de-computadoras
+  - ingeniería-electrónica/redes/Capa-de-aplicación
+  - ingeniería-electrónica/redes/Redes-de-computadoras
 aliases:
   - Top of Rack switch
   - Blades

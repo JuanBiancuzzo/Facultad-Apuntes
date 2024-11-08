@@ -6,6 +6,7 @@ tags:
   - ingeniería-en-informática/redes/Capa-de-Transporte
   - nota/facultad
   - protocolos/protocolo-de-internet
+  - ingeniería-electrónica/redes/Capa-de-Transporte
 ---
 # Definición
 ---

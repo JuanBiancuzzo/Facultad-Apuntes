@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/redes/Capa-Física-Inalámbrica
   - nota/facultad
   - protocolos/protocolo-de-internet
+  - ingeniería-electrónica/redes/Capa-Física-Inalámbrica
 ---
 # Definición
 ---

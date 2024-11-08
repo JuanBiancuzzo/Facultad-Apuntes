@@ -3,6 +3,7 @@ dia: 2024-08-26
 tags:
   - nota/facultad
   - ingeniería-en-informática/redes/Capa-de-Enlace
+  - ingeniería-electrónica/redes/Capa-de-Enlace
 aliases:
   - MDC
 ---

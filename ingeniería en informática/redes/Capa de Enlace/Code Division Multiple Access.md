@@ -5,6 +5,8 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/redes/Capa-Física-Inalámbrica
   - protocolos/protocolo-de-internet
+  - ingeniería-electrónica/redes/Capa-de-Enlace
+  - ingeniería-electrónica/redes/Capa-Física-Inalámbrica
 aliases:
   - CDMA
 ---

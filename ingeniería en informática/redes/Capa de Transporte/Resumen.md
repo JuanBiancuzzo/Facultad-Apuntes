@@ -1,8 +1,9 @@
 ---
 capitulo: 3
-tags: 
- - ingeniería-en-informática/redes/Capa-de-Transporte
- - resumen
+tags:
+  - ingeniería-en-informática/redes/Capa-de-Transporte
+  - resumen
+  - ingeniería-electrónica/redes/Capa-de-Transporte
 ---
 # Índice 
 ---
