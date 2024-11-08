@@ -1,8 +1,9 @@
 ---
 capitulo: 1
-tags: 
- - ingeniería-en-informática/algebra-2/Espacios-Vectoriales
- - resumen
+tags:
+  - ingeniería-en-informática/algebra-2/Espacios-Vectoriales
+  - resumen
+  - ingeniería-electrónica/algebra-2/Espacios-Vectoriales
 ---
 # Índice 
 ---

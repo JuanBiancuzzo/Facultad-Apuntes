@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/analisis-2/Nomenclatura
   - ingeniería-electrónica/analisis-2/Nomenclatura
+  - ingeniería-electrónica/algebra-2/Espacios-euclídeos
 aliases:
   - Producto escalar
 ---

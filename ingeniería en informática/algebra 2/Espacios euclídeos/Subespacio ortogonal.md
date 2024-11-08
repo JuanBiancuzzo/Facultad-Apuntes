@@ -3,6 +3,7 @@ dia: 2023-01-22
 tags:
   - ingeniería-en-informática/algebra-2/Espacios-euclídeos
   - nota/facultad
+  - ingeniería-electrónica/algebra-2/Espacios-euclídeos
 ---
 # Definición
 ---

@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/algebra-2/Espacios-Vectoriales
   - nota/facultad
   - ingeniería-en-informática/discreta/Álgebra-proposicional
+  - ingeniería-electrónica/algebra-2/Espacios-Vectoriales
 aliases:
   - Elemento inverso
 ---

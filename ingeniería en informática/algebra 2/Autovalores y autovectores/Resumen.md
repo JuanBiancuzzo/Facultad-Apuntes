@@ -1,8 +1,9 @@
 ---
 capitulo: 4
-tags: 
- - ingeniería-en-informática/algebra-2/Autovalores-y-autovectores
- - resumen
+tags:
+  - ingeniería-en-informática/algebra-2/Autovalores-y-autovectores
+  - resumen
+  - ingeniería-electrónica/algebra-2/Autovalores-y-autovectores
 ---
 # Índice 
 ---

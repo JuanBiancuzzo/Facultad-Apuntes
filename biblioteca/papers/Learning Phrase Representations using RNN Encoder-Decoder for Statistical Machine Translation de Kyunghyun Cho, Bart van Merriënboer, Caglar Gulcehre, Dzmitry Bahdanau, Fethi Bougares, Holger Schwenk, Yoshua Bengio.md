@@ -29,6 +29,7 @@ tags:
   - nota/investigacion
   - machine-Learning/sequence-modeling
   - ingeniería-en-informática/algebra-2/Autovalores-y-autovectores
+  - ingeniería-electrónica/algebra-2/Autovalores-y-autovectores
 orden: 311
 ---
 ```dataviewjs

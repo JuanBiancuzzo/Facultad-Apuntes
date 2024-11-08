@@ -1,8 +1,9 @@
 ---
 capitulo: 6
-tags: 
- - ingeniería-en-informática/algebra-2/Matrices-unitarias-y-ortogonales
- - resumen
+tags:
+  - ingeniería-en-informática/algebra-2/Matrices-unitarias-y-ortogonales
+  - resumen
+  - ingeniería-electrónica/algebra-2/Matrices-unitarias-y-ortogonales
 ---
 # Índice 
 ---

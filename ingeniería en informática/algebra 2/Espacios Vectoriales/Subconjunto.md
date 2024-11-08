@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/algebra-2/Espacios-Vectoriales
   - nota/facultad
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
+  - ingeniería-electrónica/algebra-2/Espacios-Vectoriales
 referencias:
   - "411"
 etapa: ampliar

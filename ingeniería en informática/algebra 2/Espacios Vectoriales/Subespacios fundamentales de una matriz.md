@@ -7,6 +7,7 @@ aliases:
 tags:
   - ingeniería-en-informática/algebra-2/Espacios-Vectoriales
   - nota/facultad
+  - ingeniería-electrónica/algebra-2/Espacios-Vectoriales
 ---
 # Definición
 ---

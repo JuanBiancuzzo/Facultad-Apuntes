@@ -7,6 +7,7 @@ tags:
   - ingeniería-en-informática/analisis-2/Nomenclatura
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
   - ingeniería-electrónica/analisis-2/Nomenclatura
+  - ingeniería-electrónica/algebra-2/Espacios-Vectoriales
 referencias:
   - "411"
 etapa: ampliar
