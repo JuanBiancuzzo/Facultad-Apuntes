@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
   - ingeniería-en-informática/analisis-3/Series
+  - licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
 referencias:
   - "412"
 etapa: ampliar

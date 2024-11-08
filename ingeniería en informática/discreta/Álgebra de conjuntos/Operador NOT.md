@@ -8,6 +8,7 @@ tags:
   - ingeniería-en-informática/discreta/Álgebra-proposicional
   - lenguajes-de-programación/lenguaje-c
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
+  - licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
 aliases:
   - Inversor
   - Negación

@@ -9,6 +9,7 @@ tags:
   - lenguajes-de-programación/lenguaje-c
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
   - ingeniería-electrónica/analisis-2/Nomenclatura
+  - licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
 aliases:
   - Conjunción
   - Intersección de conjuntos

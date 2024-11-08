@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
   - ingeniería-electrónica/proba/Teoría-de-probabilidades
+  - licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
 ---
 # Definición
 ---

@@ -6,6 +6,7 @@ referencias:
 tags:
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
   - nota/facultad
+  - licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
 aliases:
   - PBO
 ---

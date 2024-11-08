@@ -10,6 +10,8 @@ tags:
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
   - ingeniería-electrónica/algebra-2/Espacios-Vectoriales
   - ingeniería-electrónica/estructura/Álgebra-de-Boole
+  - licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
+  - licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
 ---
 # Definición
 ---

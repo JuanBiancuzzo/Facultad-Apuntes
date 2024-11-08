@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
   - ingeniería-en-informática/analisis-3/Funciones-elementales
+  - licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
 referencias:
   - "411"
 etapa: ampliar
