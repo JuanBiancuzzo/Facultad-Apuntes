@@ -4,6 +4,7 @@ tags:
   - ingeniería-electrónica/adc/Circuitos-en-regimen-de-corriente-continua
   - nota/facultad
   - ingeniería-en-informática/fisica-1/Trabajo-y-energía
+  - ingeniería-electrónica/fisica-1/Trabajo-y-energía
 ---
 # Definición
 ---

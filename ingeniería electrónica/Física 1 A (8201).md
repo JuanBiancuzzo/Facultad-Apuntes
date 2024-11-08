@@ -2,7 +2,7 @@
 plan: 2009
 tags:
   - materia/ingeniería-electrónica
-correlativas: 
+correlativas: []
 codigo: 8201
 equivalencia: "[[ingeniería en informática/fisica 1/Física 1 (6201).md|Física 1 (6201)]]"
 ---
