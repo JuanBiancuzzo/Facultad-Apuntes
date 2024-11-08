@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/estructura/Compiladores-y-ensambladores
   - nota/facultad
   - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
+  - ingeniería-electrónica/estructura/Compiladores-y-ensambladores
 aliases:
   - Relocating loader#Realocating Loader
 ---

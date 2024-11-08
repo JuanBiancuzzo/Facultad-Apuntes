@@ -9,6 +9,7 @@ tags:
   - lenguajes-de-programación/lenguaje-c
   - ingeniería-electrónica/algo-1/Lenguaje-C
   - ingeniería-electrónica/taller/Sintaxis
+  - ingeniería-electrónica/estructura/Sistemas-numéricos
 aliases:
   - Integer
   - Int

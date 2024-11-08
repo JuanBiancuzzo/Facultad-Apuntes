@@ -7,6 +7,7 @@ tags:
   - ingeniería-en-informática/estructura/Sistema-ARC
   - nota/investigacion
   - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
+  - ingeniería-electrónica/estructura/Sistema-ARC
 referencias:
   - "202"
 etapa: sin-empezar

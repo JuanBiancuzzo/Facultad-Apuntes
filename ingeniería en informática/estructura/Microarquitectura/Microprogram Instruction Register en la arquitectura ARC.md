@@ -3,6 +3,7 @@ dia: 2024-08-29
 tags:
   - ingeniería-en-informática/estructura/Microarquitectura
   - nota/facultad
+  - ingeniería-electrónica/estructura/Microarquitectura
 aliases:
   - MIR en la arquitectura ARC
 ---

@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/estructura/Sistemas-numéricos
   - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
+  - ingeniería-electrónica/estructura/Sistemas-numéricos
 aliases:
   - Paridad
   - Forward error correction

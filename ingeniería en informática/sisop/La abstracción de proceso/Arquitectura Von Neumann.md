@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
   - ingeniería-en-informática/estructura/Microarquitectura
+  - ingeniería-electrónica/estructura/Microarquitectura
 ---
 # Definición
 ---

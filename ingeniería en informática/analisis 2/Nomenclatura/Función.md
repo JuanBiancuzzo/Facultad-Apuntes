@@ -11,6 +11,7 @@ tags:
   - ingeniería-electrónica/analisis-2/Nomenclatura
   - ingeniería-electrónica/algo-1/Lenguaje-C
   - ingeniería-electrónica/taller/Sintaxis
+  - ingeniería-electrónica/estructura/Álgebra-de-Boole
 aliases:
   - Prototipo de una función#Expresión en C
   - Firma de una función#Expresión en C

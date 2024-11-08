@@ -3,6 +3,7 @@ capitulo: 3
 tags:
   - resumen
   - ingeniería-en-informática/estructura/Álgebra-de-Boole
+  - ingeniería-electrónica/estructura/Álgebra-de-Boole
 ---
 # Índice 
 ---

@@ -6,6 +6,7 @@ tags:
   - ingeniería-en-informática/discreta/Álgebra-de-Boole
   - ingeniería-en-informática/estructura/Álgebra-de-Boole
   - ingeniería-en-informática/fisica-3/Átomo-de-Bohr
+  - ingeniería-electrónica/estructura/Álgebra-de-Boole
 ---
 # Definición
 ---

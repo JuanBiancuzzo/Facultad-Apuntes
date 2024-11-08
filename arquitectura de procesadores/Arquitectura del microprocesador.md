@@ -7,6 +7,7 @@ tags:
   - nota/investigacion
   - ingeniería-en-informática/estructura/Microarquitectura
   - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
+  - ingeniería-electrónica/estructura/Microarquitectura
 aliases:
   - Arquitectura de procesador
   - Ciclo fetch-decode-execute

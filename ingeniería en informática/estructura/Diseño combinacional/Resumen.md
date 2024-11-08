@@ -1,8 +1,9 @@
 ---
 capitulo: 4
-tags: 
- - ingeniería-en-informática/estructura/Diseño-combinacional
- - resumen
+tags:
+  - ingeniería-en-informática/estructura/Diseño-combinacional
+  - resumen
+  - ingeniería-electrónica/estructura/Diseño-combinacional
 ---
 # Índice 
 ---

@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/estructura/Sistemas-numéricos
   - nota/facultad
   - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
+  - ingeniería-electrónica/estructura/Sistemas-numéricos
 ---
 # Definición
 ---

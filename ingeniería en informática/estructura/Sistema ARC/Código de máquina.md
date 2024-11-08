@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/estructura/Sistema-ARC
   - nota/facultad
   - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
+  - ingeniería-electrónica/estructura/Sistema-ARC
 referencias:
   - "219"
 etapa: ampliar

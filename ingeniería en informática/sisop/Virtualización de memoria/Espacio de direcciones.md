@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/estructura/Sistema-ARC
   - ingeniería-electrónica/embebidos/Memorias
+  - ingeniería-electrónica/estructura/Sistema-ARC
 aliases:
   - Address space
 ---

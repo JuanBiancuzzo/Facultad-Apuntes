@@ -9,6 +9,7 @@ tags:
   - ingeniería-en-informática/estructura/Álgebra-de-Boole
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
   - ingeniería-electrónica/algebra-2/Espacios-Vectoriales
+  - ingeniería-electrónica/estructura/Álgebra-de-Boole
 ---
 # Definición
 ---

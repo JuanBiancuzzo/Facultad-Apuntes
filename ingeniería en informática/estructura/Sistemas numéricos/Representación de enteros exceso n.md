@@ -3,6 +3,7 @@ dia: 2023-04-08
 tags:
   - ingeniería-en-informática/estructura/Sistemas-numéricos
   - nota/facultad
+  - ingeniería-electrónica/estructura/Sistemas-numéricos
 ---
 # Definición
 ---

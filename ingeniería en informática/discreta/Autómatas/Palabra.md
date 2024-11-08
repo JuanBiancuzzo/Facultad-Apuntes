@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/discreta/Autómatas
   - nota/facultad
   - ingeniería-en-informática/estructura/Sistema-ARC
+  - ingeniería-electrónica/estructura/Sistema-ARC
 aliases:
   - Palabra nula#Palabra nula
 ---

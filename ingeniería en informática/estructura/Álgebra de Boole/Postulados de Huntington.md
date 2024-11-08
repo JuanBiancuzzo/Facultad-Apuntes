@@ -4,6 +4,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/discreta/Álgebra-de-Boole
   - ingeniería-en-informática/estructura/Álgebra-de-Boole
+  - ingeniería-electrónica/estructura/Álgebra-de-Boole
 ---
 # Definición
 ---

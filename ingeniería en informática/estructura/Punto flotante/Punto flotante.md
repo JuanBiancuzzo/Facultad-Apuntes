@@ -9,6 +9,7 @@ tags:
   - lenguajes-de-programación/lenguaje-Rust
   - ingeniería-electrónica/algo-1/Lenguaje-C
   - ingeniería-electrónica/taller/Sintaxis
+  - ingeniería-electrónica/estructura/Punto-flotante
 aliases:
   - Floating point
   - Float

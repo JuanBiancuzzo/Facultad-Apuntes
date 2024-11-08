@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/estructura/Microarquitectura
   - nota/facultad
   - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
+  - ingeniería-electrónica/estructura/Microarquitectura
 aliases:
   - Unidad de control de la arquitectura ARC#En la arquitectura ARC
   - UC

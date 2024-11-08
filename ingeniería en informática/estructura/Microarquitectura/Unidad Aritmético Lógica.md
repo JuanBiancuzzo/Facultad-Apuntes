@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/estructura/Microarquitectura
   - nota/facultad
   - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
+  - ingeniería-electrónica/estructura/Microarquitectura
 aliases:
   - ALU
   - Flags de la Unidad Aritmético Lógica#Flags

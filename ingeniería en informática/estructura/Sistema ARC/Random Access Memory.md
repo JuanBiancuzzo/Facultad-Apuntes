@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/estructura/Sistema-ARC
   - nota/facultad
   - ingeniería-electrónica/embebidos/Memorias
+  - ingeniería-electrónica/estructura/Sistema-ARC
 aliases:
   - RAM
   - Memoria de acceso aleatorio

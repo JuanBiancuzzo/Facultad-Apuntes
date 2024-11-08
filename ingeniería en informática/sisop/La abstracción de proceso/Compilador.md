@@ -7,6 +7,7 @@ tags:
   - ingeniería-en-informática/estructura/Compiladores-y-ensambladores
   - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - ingeniería-electrónica/algo-1/Introducción-a-la-programación
+  - ingeniería-electrónica/estructura/Compiladores-y-ensambladores
 aliases:
   - Compilador de una sola pasada#^compilador-pasadas
   - Compilador de múltiples pasadas#^compilador-pasadas

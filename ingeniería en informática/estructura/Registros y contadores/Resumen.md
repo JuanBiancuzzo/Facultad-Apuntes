@@ -1,8 +1,9 @@
 ---
 capitulo: 7
-tags: 
- - ingeniería-en-informática/estructura/Registros-y-contadores
- - resumen
+tags:
+  - ingeniería-en-informática/estructura/Registros-y-contadores
+  - resumen
+  - ingeniería-electrónica/estructura/Registros-y-contadores
 ---
 # Índice 
 ---
