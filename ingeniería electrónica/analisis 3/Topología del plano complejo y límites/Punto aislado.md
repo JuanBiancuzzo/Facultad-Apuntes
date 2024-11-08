@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/analisis-2/Topología/1
   - ingeniería-electrónica/analisis-2/Topología/1
+  - ingeniería-en-informática/analisis-3/Topología-del-plano-complejo-y-límites
 ---
 # Definición
 ---

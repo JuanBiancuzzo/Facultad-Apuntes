@@ -5,6 +5,7 @@ tags:
   - ingeniería-en-informática/analisis-2/Topología/1
   - ingeniería-electrónica/analisis-3/Ecuaciones-diferenciales
   - ingeniería-electrónica/analisis-2/Topología/1
+  - ingeniería-en-informática/analisis-3/Ecuaciones-diferenciales
 aliases:
   - Recinto compacto
 ---

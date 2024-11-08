@@ -4,6 +4,7 @@ tags:
   - ingeniería-electrónica/analisis-3/Funciones-elementales
   - nota/facultad
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
+  - ingeniería-en-informática/analisis-3/Funciones-elementales
 referencias:
   - "411"
 etapa: ampliar

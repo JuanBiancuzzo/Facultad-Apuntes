@@ -3,6 +3,7 @@ dia: 2023-11-16
 tags:
   - ingeniería-electrónica/analisis-3/Funciones-elementales
   - nota/facultad
+  - ingeniería-en-informática/analisis-3/Funciones-elementales
 aliases:
   - Frecuencia angular#^parametros
   - Fase inicial#^parametros

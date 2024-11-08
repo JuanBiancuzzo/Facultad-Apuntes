@@ -1,8 +1,9 @@
 ---
 dia: 2024-09-12
-tags: 
- - ingeniería-electrónica/analisis-3/Ecuaciones-diferenciales
- - nota/facultad
+tags:
+  - ingeniería-electrónica/analisis-3/Ecuaciones-diferenciales
+  - nota/facultad
+  - ingeniería-en-informática/analisis-3/Ecuaciones-diferenciales
 ---
 # Definición
 ---

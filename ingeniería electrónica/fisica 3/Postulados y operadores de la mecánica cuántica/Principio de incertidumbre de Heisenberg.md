@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-electrónica/señales/Transformada-de-Fourier
   - ingeniería-electrónica/analisis-3/Transformada-de-Fourier
+  - ingeniería-en-informática/analisis-3/Transformada-de-Fourier
 ---
 # Definición
 ---

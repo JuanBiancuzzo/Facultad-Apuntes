@@ -4,6 +4,7 @@ tags:
   - ingeniería-electrónica/analisis-3/Ecuaciones-diferenciales
   - nota/facultad
   - matemática/koopman-operator-theory
+  - ingeniería-en-informática/analisis-3/Ecuaciones-diferenciales
 aliases:
   - Ecuación diferencial parcial
   - PDE

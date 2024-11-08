@@ -3,6 +3,7 @@ dia: 2022-09-21
 tags:
   - ingeniería-electrónica/analisis-3/Series
   - nota/facultad
+  - ingeniería-en-informática/analisis-3/Series
 ---
 # Definición
 ---

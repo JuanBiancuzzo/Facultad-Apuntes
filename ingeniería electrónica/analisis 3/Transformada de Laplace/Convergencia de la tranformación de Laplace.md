@@ -3,6 +3,7 @@ dia: 2022-12-05
 tags:
   - ingeniería-electrónica/analisis-3/Transformada-de-Laplace
   - nota/facultad
+  - ingeniería-en-informática/analisis-3/Transformada-de-Laplace
 ---
 # Definición
 ---

@@ -4,6 +4,7 @@ tags:
   - ingeniería-electrónica/analisis-3/Serie-de-Fourier
   - ingeniería-electrónica/señales/Serie-de-Fourier
   - nota/facultad
+  - ingeniería-en-informática/analisis-3/Serie-de-Fourier
 ---
 # Definición
 ---

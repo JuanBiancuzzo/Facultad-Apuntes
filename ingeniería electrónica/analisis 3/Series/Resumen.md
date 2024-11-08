@@ -1,8 +1,9 @@
 ---
 capitulo: 3
-tags: 
- - ingeniería-electrónica/analisis-3/Series
- - resumen
+tags:
+  - ingeniería-electrónica/analisis-3/Series
+  - resumen
+  - ingeniería-en-informática/analisis-3/Series
 ---
 # Índice 
 ---

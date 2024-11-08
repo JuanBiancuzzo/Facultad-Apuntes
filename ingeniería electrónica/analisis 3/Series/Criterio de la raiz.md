@@ -3,6 +3,7 @@ dia: 2022-09-19
 tags:
   - ingeniería-electrónica/analisis-3/Series
   - nota/facultad
+  - ingeniería-en-informática/analisis-3/Series
 ---
 Dada una [[Serie]] $\alpha : \mathbb{N} \to \mathbb{R} : \bigg(\sum_{k = 0}^n \alpha_k \bigg)_{n = 1}^\infty$ 
 

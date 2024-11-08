@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/analisis-2/Propiedades-de-funciones
   - ingeniería-electrónica/analisis-2/Propiedades-de-funciones
+  - ingeniería-en-informática/analisis-3/Topología-del-plano-complejo-y-límites
 ---
 # Definición
 ---

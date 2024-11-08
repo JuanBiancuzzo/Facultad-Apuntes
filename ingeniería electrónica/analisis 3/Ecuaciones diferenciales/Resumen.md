@@ -1,8 +1,9 @@
 ---
 capitulo: 11
-tags: 
- - ingeniería-electrónica/analisis-3/Ecuaciones-diferenciales
- - resumen
+tags:
+  - ingeniería-electrónica/analisis-3/Ecuaciones-diferenciales
+  - resumen
+  - ingeniería-en-informática/analisis-3/Ecuaciones-diferenciales
 ---
 # Índice 
 ---
