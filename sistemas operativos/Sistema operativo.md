@@ -4,7 +4,7 @@ estado: Sin empezar
 tags:
   - índice
   - sistemas-operativos
-  - embebidos/Diseño-desarrollo-y-depuración
+  - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - ingeniería-en-informática/sisop/Kernel
   - nota/investigacion
 orden: 281

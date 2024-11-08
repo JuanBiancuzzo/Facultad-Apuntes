@@ -6,7 +6,7 @@ tags:
   - lenguajes-de-programación/lenguaje-assembler
   - ingeniería-en-informática/estructura/Sistema-ARC
   - nota/investigacion
-  - embebidos/Diseño-desarrollo-y-depuración
+  - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
 referencias:
   - "202"
 etapa: sin-empezar

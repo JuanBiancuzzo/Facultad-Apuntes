@@ -3,7 +3,7 @@ dia: 2024-06-02
 tags:
   - ingeniería-en-informática/redes/Capa-de-Transporte
   - nota/facultad
-  - embebidos/Microcontroladores-de-32-bits
+  - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
 ---
 # Definición
 ---

@@ -2,7 +2,7 @@
 dia: 2022-09-02
 tags:
   - nota/facultad
-  - analisis-3/Topología-del-plano-complejo-y-límites
+  - ingeniería-electrónica/analisis-3/Topología-del-plano-complejo-y-límites
   - ingeniería-en-informática/analisis-2/Topología/1
 ---
 # Definición

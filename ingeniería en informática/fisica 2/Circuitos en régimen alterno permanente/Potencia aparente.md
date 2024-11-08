@@ -3,7 +3,7 @@ dia: 2024-09-03
 tags:
   - ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
   - nota/facultad
-  - adc/Circuitos-en-regimen-senoidal-permanente
+  - ingeniería-electrónica/adc/Circuitos-en-regimen-senoidal-permanente
 referencias:
   - "222"
 aliases:

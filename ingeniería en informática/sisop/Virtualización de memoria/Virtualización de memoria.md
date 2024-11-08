@@ -3,7 +3,7 @@ dia: 2023-11-12
 tags:
   - ingeniería-en-informática/sisop/Virtualización-de-memoria
   - nota/facultad
-  - embebidos/Memorias
+  - ingeniería-electrónica/embebidos/Memorias
 aliases:
   - Virtual memory
   - Mapeo de memoria

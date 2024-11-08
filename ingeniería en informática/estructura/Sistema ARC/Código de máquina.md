@@ -3,7 +3,7 @@ dia: 2024-08-29
 tags:
   - ingeniería-en-informática/estructura/Sistema-ARC
   - nota/facultad
-  - embebidos/Microcontroladores-de-32-bits
+  - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
 referencias:
   - "219"
 etapa: ampliar

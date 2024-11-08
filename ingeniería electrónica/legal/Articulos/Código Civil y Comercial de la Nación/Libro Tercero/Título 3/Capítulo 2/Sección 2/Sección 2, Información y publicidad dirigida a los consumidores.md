@@ -1,0 +1,20 @@
+---
+tipo: Sección
+nombre: Información y publicidad dirigida a los consumidores
+num: 2
+previo: "[[Capítulo 2, Formación del consentimiento|Capítulo 2, Formación del consentimiento]]"
+tags:
+  - ingeniería-electrónica/legal/Sección
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
+```
+# Interpretación
+---
+
+
+# Artículos
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/legal/mostrarArticulos", { paginaActual: dv.current() });
+```

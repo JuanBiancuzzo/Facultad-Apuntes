@@ -3,7 +3,7 @@ dia: 2023-01-22
 tags:
   - nota/facultad
   - ingeniería-en-informática/analisis-2/Topología/1
-  - analisis-3/Ecuaciones-diferenciales
+  - ingeniería-electrónica/analisis-3/Ecuaciones-diferenciales
 aliases:
   - Recinto compacto
 ---

@@ -1,0 +1,10 @@
+---
+dia: 2023-01-22
+tags:
+  - ingeniería-electrónica/analisis-3/Integrales-impropias
+  - nota/facultad
+etapa: sin-empezar
+orden: 9
+---
+# Definición
+---

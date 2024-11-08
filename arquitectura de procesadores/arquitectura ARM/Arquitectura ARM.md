@@ -5,7 +5,7 @@ tags:
   - índice
   - arquitectura-de-procesadores/arquitectura-ARM
   - nota/investigacion
-  - embebidos/Microcontroladores-de-32-bits
+  - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

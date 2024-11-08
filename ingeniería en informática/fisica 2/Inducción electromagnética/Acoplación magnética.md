@@ -3,7 +3,7 @@ dia: 2024-09-03
 tags:
   - ingeniería-en-informática/fisica-2/Inducción-electromagnética
   - nota/facultad
-  - adc/Circuitos-acoplados-magnéticamente
+  - ingeniería-electrónica/adc/Circuitos-acoplados-magnéticamente
 aliases:
   - Diafonía
   - Bornes homologos#Bornes homólogos

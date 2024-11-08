@@ -4,7 +4,7 @@ tags:
   - ingeniería-en-informática/sisop/La-abstracción-de-proceso
   - nota/facultad
   - ingeniería-en-informática/algo-1/Introducción-a-la-programación
-  - embebidos/Diseño-desarrollo-y-depuración
+  - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - lenguajes-de-programación
 aliases:
   - Estándar error#std-error

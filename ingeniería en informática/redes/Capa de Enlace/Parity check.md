@@ -4,7 +4,7 @@ tags:
   - ingeniería-en-informática/redes/Capa-de-Enlace
   - nota/facultad
   - ingeniería-en-informática/estructura/Sistemas-numéricos
-  - embebidos/Microcontroladores-de-32-bits
+  - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
 aliases:
   - Paridad
   - Forward error correction

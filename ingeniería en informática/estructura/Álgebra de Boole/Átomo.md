@@ -2,7 +2,7 @@
 dia: 2024-08-07
 tags:
   - nota/facultad
-  - fisica-3/Átomo-de-Bohr
+  - ingeniería-electrónica/fisica-3/Átomo-de-Bohr
   - ingeniería-en-informática/discreta/Álgebra-de-Boole
   - ingeniería-en-informática/estructura/Álgebra-de-Boole
 ---

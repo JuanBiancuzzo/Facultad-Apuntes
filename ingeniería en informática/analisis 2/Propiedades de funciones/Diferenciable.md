@@ -24,7 +24,7 @@ de donde (al tomar limite cuando $h \to 0$) se puede ver facilmente la equivalen
 ---
 ### Informativas
  * Si $f$ es diferenciable en el punto $a$, entonces $f$ es continua en $a$
- * Si $f$ es diferenciable en el punto $a$, entonces $f$ es [[analisis 3/Derivabilidad y holomorfía/Derivable.md|derivable]] en $a$
+ * Si $f$ es diferenciable en el punto $a$, entonces $f$ es [[Derivable|derivable]] en $a$
  * Si $f$ es diferenciable en $x_0$, entonces existen todas las derivadas direccionales (calcular con la definición de [[Derivada direccional|derivada direccional]]) y vale que $\nabla f(x_0) \cdot \hat{v}$
 ### Calificativas
  * Una función vectorial es diferenciable en un punto si, y solo si, sus componentes son diferenciables en dicho punto

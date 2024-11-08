@@ -3,7 +3,7 @@ dia: 2024-04-03
 tags:
   - ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - nota/facultad
-  - embebidos/Diseño-desarrollo-y-depuración
+  - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
 ---
 # Definición
 ---

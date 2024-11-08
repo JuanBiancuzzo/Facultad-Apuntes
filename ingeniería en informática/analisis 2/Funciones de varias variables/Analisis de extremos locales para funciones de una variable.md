@@ -53,8 +53,8 @@ Comencemos observando el grafico, donde en rojo se representa $y =f(x)$ en un ci
 
 Vemos que:
 
- * $f(x_1)$ es máximo local con $f'(x_1) = 0$, [[analisis 3/Transformaciones conformes/Recta.md|recta]] tangente horizontal en $A_1$
- * $f(x_2)$ es mínimo local, pero $f$ no es [[analisis 3/Derivabilidad y holomorfía/Derivable.md|derivable]] en $x_2$
+ * $f(x_1)$ es máximo local con $f'(x_1) = 0$, [[Recta|recta]] tangente horizontal en $A_1$
+ * $f(x_2)$ es mínimo local, pero $f$ no es [[Derivable|derivable]] en $x_2$
  * $f(x_3)$ no es [[Extremo|extremo]] local, pero $f'(x_3) = 0$. Recta tangente horizontal en $A_3$
 
 Es decir $f'(x_0) = 0$ no asegura que $f(x_0)$ sea extremo local. Tambien que un extremo local puede ser un punto que no sea derivable, como el caso de $x_2$

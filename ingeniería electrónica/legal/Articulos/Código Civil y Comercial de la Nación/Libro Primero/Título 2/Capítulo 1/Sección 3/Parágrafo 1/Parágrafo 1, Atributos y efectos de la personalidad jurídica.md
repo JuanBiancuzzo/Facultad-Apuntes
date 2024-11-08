@@ -1,0 +1,19 @@
+---
+tipo: Parágrafo
+nombre: Atributos y efectos de la personalidad jurídica
+num: 1
+previo: "[[Sección 3, Persona jurídica privada|Sección 3, Persona jurídica privada]]"
+tags:
+  - ingeniería-electrónica/legal/Parágrafo
+---
+```dataviewjs
+    await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
+```
+# Interpretación
+---
+
+# Artículos
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/legal/mostrarArticulos", { paginaActual: dv.current() });
+```

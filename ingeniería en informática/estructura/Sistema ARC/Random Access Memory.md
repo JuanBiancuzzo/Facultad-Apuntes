@@ -3,7 +3,7 @@ dia: 2024-08-27
 tags:
   - ingeniería-en-informática/estructura/Sistema-ARC
   - nota/facultad
-  - embebidos/Memorias
+  - ingeniería-electrónica/embebidos/Memorias
 aliases:
   - RAM
   - Memoria de acceso aleatorio

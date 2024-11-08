@@ -3,7 +3,7 @@ dia: 2023-11-15
 tags:
   - ingeniería-en-informática/sisop/La-abstracción-de-proceso
   - nota/facultad
-  - embebidos/Microcontroladores-de-32-bits
+  - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
   - ingeniería-en-informática/estructura/Microarquitectura
 ---
 # Definición

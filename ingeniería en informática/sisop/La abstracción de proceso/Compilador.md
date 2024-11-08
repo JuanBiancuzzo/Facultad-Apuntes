@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - ingeniería-en-informática/estructura/Compiladores-y-ensambladores
-  - embebidos/Diseño-desarrollo-y-depuración
+  - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
 aliases:
   - Compilador de una sola pasada#^compilador-pasadas
   - Compilador de múltiples pasadas#^compilador-pasadas

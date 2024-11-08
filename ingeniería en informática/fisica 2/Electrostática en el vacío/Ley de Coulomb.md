@@ -3,7 +3,7 @@ dia: 2023-08-24
 tags:
   - ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
   - nota/facultad
-  - electro/Campos-eléctricos-y-magnéticos
+  - ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
 referencias:
   - "199"
 aliases:

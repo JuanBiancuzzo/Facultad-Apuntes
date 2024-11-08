@@ -4,7 +4,7 @@ tags:
   - ingeniería-en-informática/sisop/Virtualización-de-memoria
   - nota/facultad
   - ingeniería-en-informática/estructura/Sistema-ARC
-  - embebidos/Memorias
+  - ingeniería-electrónica/embebidos/Memorias
 aliases:
   - Address space
 ---

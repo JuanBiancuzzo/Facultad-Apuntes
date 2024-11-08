@@ -3,7 +3,7 @@ dia: 2024-09-03
 tags:
   - ingeniería-en-informática/fisica-2/Magnetostática-en-el-vacío
   - nota/facultad
-  - electro/Campos-eléctricos-y-magnéticos
+  - ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
 ---
 # Definición
 ---

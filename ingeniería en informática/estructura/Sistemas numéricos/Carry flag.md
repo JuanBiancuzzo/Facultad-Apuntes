@@ -3,7 +3,7 @@ dia: 2023-04-05
 tags:
   - ingeniería-en-informática/estructura/Sistemas-numéricos
   - nota/facultad
-  - embebidos/Microcontroladores-de-32-bits
+  - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
 ---
 # Definición
 ---

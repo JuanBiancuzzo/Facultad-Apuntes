@@ -8,7 +8,7 @@ tags:
 ---
 Sea $f: U \subseteq \mathbb{R}^n \to \mathbb{R}$ una [[Función|función]] definida en el abierto $U$ de $\mathbb{R}^n$ y sea $x_0 \in U$
 
-Se dice que $f$ es una [[analisis 3/Topología del plano complejo y límites/Función continua.md|función continua]] en $x_0$ si el [[Limites de funciones de varias variables|límite]] es igual al valor de la función en ese punto
+Se dice que $f$ es una [[Función continua|función continua]] en $x_0$ si el [[Limites de funciones de varias variables|límite]] es igual al valor de la función en ese punto
 
 $$ \exists \lim_{x \to x_0} f(x)$$
 $$ \lim_{x \to x_0} f(x) = f(x_0) $$

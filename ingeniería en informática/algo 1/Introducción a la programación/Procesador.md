@@ -7,8 +7,8 @@ tags:
   - ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - nota/facultad
   - ingeniería-en-informática/sisop/Kernel
-  - embebidos/Diseño-desarrollo-y-depuración
-  - embebidos/Microcontroladores-de-32-bits
+  - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
+  - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
 ---
 # Definición
 ---

@@ -4,7 +4,7 @@ tags:
   - ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Magnetismo-estacionario-en-medios-materiales
-  - electro/Ondas-electromagnéticas-en-el-vacío
+  - ingeniería-electrónica/electro/Ondas-electromagnéticas-en-el-vacío
 aliases:
   - Material LIH
   - Susceptibilidad dieléctrica#^susceptibilidad-dielectrica

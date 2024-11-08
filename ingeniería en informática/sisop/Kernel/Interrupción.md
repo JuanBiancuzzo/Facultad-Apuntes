@@ -2,8 +2,8 @@
 dia: 2023-11-15
 tags:
   - nota/facultad
-  - embebidos/Microcontroladores-de-32-bits
-  - embebidos/Estrategias-de-control-de-periféricos
+  - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
+  - ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
   - ingeniería-en-informática/sisop/Kernel
 aliases:
   - Excepción

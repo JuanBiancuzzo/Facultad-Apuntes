@@ -1,0 +1,19 @@
+---
+tipo: Sección
+nombre: Clasificación
+num: 2
+previo: "[[Capítulo 1, Parte general|Capítulo 1, Parte general]]"
+tags:
+  - ingeniería-electrónica/legal/Sección
+---
+```dataviewjs
+    await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
+```
+# Interpretación
+---
+
+# Artículos
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/legal/mostrarArticulos", { paginaActual: dv.current() });
+```

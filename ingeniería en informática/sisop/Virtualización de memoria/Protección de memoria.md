@@ -3,7 +3,7 @@ dia: 2023-11-14
 tags:
   - ingeniería-en-informática/sisop/Virtualización-de-memoria
   - nota/facultad
-  - embebidos/Memorias
+  - ingeniería-electrónica/embebidos/Memorias
 aliases:
   - MPU
   - Memory Protection Unit
