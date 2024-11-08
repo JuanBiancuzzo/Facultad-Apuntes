@@ -1,7 +1,7 @@
 ---
 tags:
   - carrera/licenciatura-en-ciencias-matemáticas
-estado: Todavía no empecé a tomar apuntes
+estado: Empecé con álgebra
 planes:
   - "2022"
 tieneCodigo: false

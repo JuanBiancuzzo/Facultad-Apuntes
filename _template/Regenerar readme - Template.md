@@ -6,41 +6,36 @@ Cualquier corrección/ampliación de los contenidos en este proyecto, por favor 
 
 ## Materias
 ---
-Un listado de materias y su estado actual
+Un listado de materias y su estado dividido por carrera
 
 <%*
     const dv = app.plugins.plugins.dataview.api;
-    const tagCarreraPrincipal = "ingeniería-informática-y-electrónica"
-    
-    const materias = dv.pages(`#materia/${tagCarreraPrincipal}`)
-        .sort(materia => materia.file.name);
-
-    let tabla = dv.markdownTable(["Materia", "Código", "Estado"], materias.map(materia => {
-        let nombre = materia.file.name.replace(`(${materia.codigo})`, "").trim();
-        let path = `${materia.file.path}`.replaceAll(" ", "%20");
-        
-        return [ `[${nombre}](${path})`, materia.codigo, materia.estado ];
-    }));
-
-    tR += `${tabla}\n`;
-_%>
-
-### Otras carreras
----
-Un listado de otras carreras en las que voy a ir resumiendo para completar y ver distintos puntos de vista
-
-<%*
-    const carreras = dv.pages(`#carrera and -#carrera/${tagCarreraPrincipal}`)
-        .sort(carrera => carrera.file.name);
-
-    tabla = dv.markdownTable(["Carrera", "Estado"], carreras.map(carrera => {
-        let nombre = carrera.file.name;
-        let path = `${carrera.file.path}`.replaceAll(" ", "%20");
-        
-        return [ `[${nombre}](${path})`, carrera.estado ];
-    }));
-
-    tR += `${tabla}\n`;
+    tR += dv.pages("#carrera")
+        .sort(carrera => carrera.file.name)
+        .map(carrera => {
+            let tag = carrera.tags.find(tag => tag.startsWith("carrera"))
+                .replace("carrera", "materia");
+            const materias = dv.pages(`#${tag}`).sort(materia => materia.file.name);
+            let titulos = ["Materia", "Estado"];
+            if (carrera.tieneCodigo) titulos.splice(1, 0, "Código");
+            
+            let tabla = dv.markdownTable(titulos, materias.map(materia => {
+                let nombre = materia.file.name.trim();
+                if (carrera.tieneCodigo) nombre.replace(`(${materia.codigo})`, "");
+                
+                let path = `${materia.file.path}`.replaceAll(" ", "%20");
+                
+                let resultado = [`[${nombre}](${path})`, materia.estado];
+                if (carrera.tieneCodigo) resultado.splice(1, 0, materia.codigo);
+                
+                return resultado;
+            }));
+            
+            let texto = carrera.tieneCodigo
+                ? "Un listado de materias, sus códigos y su estado actual"
+                : "Un listado de materias y su estado actual";
+            return `### ${carrera.file.name}\n---\n${texto}\n\n${tabla}`;
+        }).join("\n\n");
 _%>
 
 ## Investigación

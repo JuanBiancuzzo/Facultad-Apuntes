@@ -1,7 +1,7 @@
 ---
 tags:
   - carrera/licenciatura-en-ciencias-de-datos
-estado: Todavía no empecé a tomar apuntes
+estado: Empecé con álgebra
 planes:
   - "2020"
 tieneCodigo: false
