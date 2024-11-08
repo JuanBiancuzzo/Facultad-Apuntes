@@ -6,7 +6,7 @@ referencias:
 tags:
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
   - nota/facultad
-  - discreta/Relaciones
+  - ingeniería-en-informática/discreta/Relaciones
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

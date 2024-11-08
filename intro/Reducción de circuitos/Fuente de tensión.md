@@ -3,7 +3,7 @@ dia: 2023-01-23
 tags:
   - intro/Reducción-de-circuitos
   - nota/facultad
-  - fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
 aliases:
   - Generador de tensión
 ---

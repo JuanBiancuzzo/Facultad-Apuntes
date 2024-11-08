@@ -3,7 +3,7 @@ dia: 2023-11-16
 tags:
   - adc/Circuitos-en-regimen-senoidal-permanente
   - nota/facultad
-  - fisica-2/Circuitos-en-régimen-alterno-permanente
+  - ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
 ---
 # Definición
 ---

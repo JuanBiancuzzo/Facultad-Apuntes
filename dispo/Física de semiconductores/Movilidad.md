@@ -3,7 +3,7 @@ dia: 2023-08-25
 tags:
   - dispo/Física-de-semiconductores
   - nota/facultad
-  - fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
 ---
 # Definición
 ---

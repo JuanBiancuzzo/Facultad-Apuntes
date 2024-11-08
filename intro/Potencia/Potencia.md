@@ -3,8 +3,8 @@ dia: 2023-01-23
 tags:
   - intro/Potencia
   - nota/facultad
-  - fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
-  - fisica-2/Circuitos-en-régimen-alterno-permanente
+  - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
   - adc/Circuitos-en-regimen-senoidal-permanente
 aliases:
   - Balance de potencia#Balance de potencia

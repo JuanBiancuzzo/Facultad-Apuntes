@@ -3,7 +3,7 @@ dia: 2023-01-23
 tags:
   - intro/Circuitos-con-resistencias
   - nota/facultad
-  - fisica-2/Electrostática-en-el-vacío
+  - ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
   - electro/Campos-eléctricos-y-magnéticos
 aliases:
   - Diferencia de potencial

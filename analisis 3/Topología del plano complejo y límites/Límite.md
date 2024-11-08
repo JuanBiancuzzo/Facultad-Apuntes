@@ -3,11 +3,11 @@ dia: 2022-09-06
 tags:
   - analisis-3/Topología-del-plano-complejo-y-límites
   - nota/facultad
-  - analisis-2/Propiedades-de-funciones
+  - ingeniería-en-informática/analisis-2/Propiedades-de-funciones
 ---
 # Definición
 ---
-Sea $f:\mathbb{D} \to \mathbb{C}$ una [[analisis 2/Nomenclatura/Función.md|función]] definida en un [[Conjunto|conjunto]] $\mathbb{D} \subseteq \mathbb{C}$, sea $z_0 \in \mathbb{C}$ un [[Punto de acumulación|punto de acumulación]] de $\mathbb{D}$ y sea $l \in \mathbb{C}$. Entonces, se dice que "$f$ tiende a $l$ cuando $z$ tiende a $z_0$", o bien que "$l$ es límite de $f$ cuando $z$ tiende a $z_0$", sii:
+Sea $f:\mathbb{D} \to \mathbb{C}$ una [[Función|función]] definida en un [[Conjunto|conjunto]] $\mathbb{D} \subseteq \mathbb{C}$, sea $z_0 \in \mathbb{C}$ un [[Punto de acumulación|punto de acumulación]] de $\mathbb{D}$ y sea $l \in \mathbb{C}$. Entonces, se dice que "$f$ tiende a $l$ cuando $z$ tiende a $z_0$", o bien que "$l$ es límite de $f$ cuando $z$ tiende a $z_0$", sii:
 
 $$\forall \epsilon \in \mathbb{R}, \epsilon > 0: \exists \delta \in \mathbb{R}, \delta > 0: ~~ 
 \begin{drcases} 

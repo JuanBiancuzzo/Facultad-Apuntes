@@ -3,7 +3,7 @@ dia: 2023-09-03
 tags:
   - adc/Circuitos-en-regimen-de-corriente-continua
   - nota/facultad
-  - fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
 ---
 # Definición
 ---

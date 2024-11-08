@@ -3,7 +3,7 @@ dia: 2023-01-23
 tags:
   - intro/Circuitos-con-resistencias
   - nota/facultad
-  - fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
   - dispo/Física-de-semiconductores
 aliases:
   - Densidad de corriente#Densidad de corriente

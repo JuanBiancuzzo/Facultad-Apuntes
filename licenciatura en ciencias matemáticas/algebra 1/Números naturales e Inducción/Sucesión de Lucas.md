@@ -6,7 +6,7 @@ referencias:
 tags:
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
   - nota/facultad
-  - discreta/Ecuaciones-de-recurrencia
+  - ingeniería-en-informática/discreta/Ecuaciones-de-recurrencia
 aliases:
   - Ecuación de recurrencia lineal de segundo orden homogénea
   - Sucesión de recurrencia de segundo orden homogénea

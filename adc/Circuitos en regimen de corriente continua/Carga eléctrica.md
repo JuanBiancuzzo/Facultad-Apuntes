@@ -3,8 +3,8 @@ dia: 2023-09-03
 tags:
   - adc/Circuitos-en-regimen-de-corriente-continua
   - nota/facultad
-  - fisica-2/Electrostática-en-el-vacío
-  - fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
+  - ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
   - dispo/Física-de-semiconductores
 aliases:
   - Carga de polarización#Cargas de polarización

@@ -3,7 +3,7 @@ dia: 2023-08-24
 tags:
   - intro/Circuitos-con-resistencias
   - nota/facultad
-  - fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
 ---
 # Definición
 ---

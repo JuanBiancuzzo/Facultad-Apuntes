@@ -3,7 +3,7 @@ dia: 2023-03-28
 tags:
   - seguridad/Prevención-de-incendios
   - nota/facultad
-  - fisica-2/Termodinámica
+  - ingeniería-en-informática/fisica-2/Termodinámica
 ---
 # Definición
 ---

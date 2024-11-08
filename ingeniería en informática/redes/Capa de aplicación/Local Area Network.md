@@ -1,0 +1,12 @@
+---
+dia: 2024-05-17
+aliases:
+  - LAN
+tags:
+  - ingeniería-en-informática/redes/Capa-de-aplicación
+  - nota/facultad
+etapa: sin-empezar
+orden: 345
+---
+# Definición
+---

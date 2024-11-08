@@ -8,7 +8,7 @@ tags:
   - nota/investigacion
   - algoritmos
   - matemática/encoding/lossless-compression-encoding
-  - orga/Compresión
+  - ingeniería-en-informática/orga/Compresión
 orden: 355
 aliases:
   - Huffman Codes

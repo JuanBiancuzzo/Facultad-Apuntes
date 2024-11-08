@@ -15,7 +15,7 @@ orden: 26
 ```
 # Definición
 ---
-Es [[algo 1/Introducción a la programación/Información.md|información]] sobre nuestro contenido, que se suele escribir en uno de estos 3 "lenguajes":
+Es [[Información|información]] sobre nuestro contenido, que se suele escribir en uno de estos 3 "lenguajes":
 * YAML
 * TOML
 * JSON

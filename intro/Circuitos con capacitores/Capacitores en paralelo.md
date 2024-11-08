@@ -3,7 +3,7 @@ dia: 2023-08-24
 tags:
   - intro/Circuitos-con-capacitores
   - nota/facultad
-  - fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
 ---
 # Definición
 ---

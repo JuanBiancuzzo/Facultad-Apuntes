@@ -3,7 +3,7 @@ dia: 2023-11-16
 tags:
   - adc/Circuitos-acoplados-magnéticamente
   - nota/facultad
-  - fisica-2/Inducción-electromagnética
+  - ingeniería-en-informática/fisica-2/Inducción-electromagnética
 ---
 # Definición
 ---

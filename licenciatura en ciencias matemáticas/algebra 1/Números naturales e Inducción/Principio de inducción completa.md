@@ -6,7 +6,7 @@ referencias:
 tags:
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
   - nota/facultad
-  - discreta/Inducción
+  - ingeniería-en-informática/discreta/Inducción
 aliases:
   - Inducción fuerte
   - PIC

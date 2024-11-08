@@ -1,0 +1,17 @@
+---
+dia: 2023-11-16
+tags:
+  - ingeniería-en-informática/sisop/La-abstracción-de-proceso
+  - nota/facultad
+  - lenguajes-de-programación/lenguaje-c
+---
+# Definición
+---
+La [[System call|system call]] `wait()` permite sincronizar [[Proceso|procesos]], esperando a que finalice el proceso hijo.
+
+```c
+#include <sys/types.h>
+#include <sys/wait.h>
+
+pid_t wait(int *_wstatus_);
+```

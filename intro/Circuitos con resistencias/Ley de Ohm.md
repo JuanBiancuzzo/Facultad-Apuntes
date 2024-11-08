@@ -4,7 +4,7 @@ tags:
   - intro/Circuitos-con-resistencias
   - nota/facultad
   - adc/Circuitos-en-regimen-de-corriente-continua
-  - fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
 aliases:
   - Ley de Ohm microscópica#^ley-de-ohm-microscopica
 ---

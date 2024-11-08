@@ -1,0 +1,20 @@
+---
+dia: 2023-04-02
+tags:
+  - ingeniería-en-informática/taller/Sintaxis
+  - nota/facultad
+  - ingeniería-en-informática/algo-1/Introducción-a-la-programación
+  - lenguajes-de-programación/lenguaje-Rust
+  - lenguajes-de-programación/lenguaje-c
+aliases:
+  - Tipo de dato estructurado
+---
+# Definición
+---
+Este [[Tipo de dato|tipo de dato]] representa un conjunto de variables o un nuevo significado a un tipo de dato
+
+## Representación algorítmica
+---
+* [[Array|Array]]
+* [[Tupla|Tuple]]
+* [[Struct|Struct]]

@@ -10,7 +10,7 @@ aliases:
 tags:
   - nota/investigacion
   - lenguaje-de-marcado
-  - redes/Capa-de-aplicación
+  - ingeniería-en-informática/redes/Capa-de-aplicación
 orden: 60
 ---
 ```dataviewjs

@@ -5,7 +5,7 @@ tags:
   - índice
   - arquitectura-de-procesadores
   - nota/investigacion
-  - estructura/Microarquitectura
+  - ingeniería-en-informática/estructura/Microarquitectura
   - embebidos/Microcontroladores-de-32-bits
 aliases:
   - Arquitectura de procesador

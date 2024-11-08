@@ -20,7 +20,7 @@ tags:
   - biblioteca/libro
   - nota/investigacion
   - sistemas-operativos
-  - tpp
+  - ingeniería-en-informática/tpp
 orden: 374
 ---
 ```dataviewjs

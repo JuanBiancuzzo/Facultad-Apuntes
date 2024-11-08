@@ -1,0 +1,15 @@
+---
+dia: 2023-11-08
+tags:
+  - ingeniería-en-informática/sisop/File-system
+  - nota/facultad
+---
+# Definición
+---
+La [[System call]] `mkdir()`
+```c
+#include <sys/stat.h>
+#include <sys/types.h>
+
+int mkdir(const char *pathname, mode_t mode);
+```

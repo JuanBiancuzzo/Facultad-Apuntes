@@ -3,7 +3,7 @@ dia: 2023-01-23
 tags:
   - intro/Circuitos-con-resistencias
   - nota/facultad
-  - fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
 ---
 # Definición
 ---

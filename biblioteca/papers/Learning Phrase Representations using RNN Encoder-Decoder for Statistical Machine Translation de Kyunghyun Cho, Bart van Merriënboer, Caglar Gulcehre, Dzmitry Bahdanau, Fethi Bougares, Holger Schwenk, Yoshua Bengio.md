@@ -28,7 +28,7 @@ tags:
   - biblioteca/paper
   - nota/investigacion
   - machine-Learning/sequence-modeling
-  - algebra-2/Autovalores-y-autovectores
+  - ingeniería-en-informática/algebra-2/Autovalores-y-autovectores
 orden: 311
 ---
 ```dataviewjs

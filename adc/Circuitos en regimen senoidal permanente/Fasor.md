@@ -3,7 +3,7 @@ dia: 2023-09-03
 tags:
   - adc/Circuitos-en-regimen-senoidal-permanente
   - nota/facultad
-  - fisica-2/Circuitos-en-régimen-alterno-permanente
+  - ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
   - electro/Campo-electromagnético
 referencias:
   - "221"

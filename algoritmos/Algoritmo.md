@@ -4,7 +4,7 @@ estado: Empezando a describir algunos algoritmos
 tags:
   - índice
   - algoritmos
-  - ingeniería-electrónica/algo-1/Introducción-a-la-programación
+  - ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - nota/investigacion
   - nota/facultad
 orden: 17

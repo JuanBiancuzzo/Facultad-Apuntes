@@ -10,35 +10,35 @@ Un listado de materias y su estado actual
 
 | Materia                                                                                                        | Código | Estado                                              |
 | -------------------------------------------------------------------------------------------------------------- | ------ | --------------------------------------------------- |
-| [Álgebra 2](algebra%202/Álgebra%202%20(6108).md)                                                               | 6108   | Falta terminar de pasar el resumen                  |
-| [Algoritmos y programación 1](algo%201/Algoritmos%20y%20programación%201%20(7540).md)                          | 7540   | Voy por el 3do pdf                                  |
-| [Algoritmos y programación 2](algo%202/Algoritmos%20y%20programación%202%20(7541).md)                          | 7541   | Falta hacer el resumen                              |
-| [Algoritmos y programación 3](algo%203/Algoritmos%20y%20programación%203%20(7507).md)                          | 7507   | Falta hacer el resumen                              |
+| [Álgebra 2](Álgebra%202%20(6108).md)                                                               | 6108   | Falta terminar de pasar el resumen                  |
+| [Algoritmos y programación 1](Algoritmos%20y%20programación%201%20(7540).md)                          | 7540   | Voy por el 3do pdf                                  |
+| [Algoritmos y programación 2](Algoritmos%20y%20programación%202%20(7541).md)                          | 7541   | Falta hacer el resumen                              |
+| [Algoritmos y programación 3](Algoritmos%20y%20programación%203%20(7507).md)                          | 7507   | Falta hacer el resumen                              |
 | [Análisis de circuitos](adc/Análisis%20de%20circuitos%20(6606).md)                                             | 6606   | Terminado                                           |
-| [Análisis de la información](aninfo/Análisis%20de%20la%20información%20(7509).md)                              | 7509   | Terminado                                           |
-| [Análisis matemático 2](analisis%202/Análisis%20matemático%202%20(6103).md)                                    | 6103   | Falta terminar de pasar el resumen                  |
+| [Análisis de la información](Análisis%20de%20la%20información%20(7509).md)                              | 7509   | Terminado                                           |
+| [Análisis matemático 2](Análisis%20matemático%202%20(6103).md)                                    | 6103   | Falta terminar de pasar el resumen                  |
 | [Análisis matemático 3](analisis%203/Análisis%20matemático%203%20(6110).md)                                    | 6110   | Terminado                                           |
-| [Análisis numérico](numerico/Análisis%20numérico%20(7512).md)                                                  | 7512   | Falta pasar el resumen                              |
-| [Base de datos](bdd/Base%20de%20datos%20(TA044).md)                                                            | TA044  | Falta ampliar                                       |
+| [Análisis numérico](Análisis%20numérico%20(7512).md)                                                  | 7512   | Falta pasar el resumen                              |
+| [Base de datos](Base%20de%20datos%20(TA044).md)                                                            | TA044  | Falta ampliar                                       |
 | [Circuitos microelectrónicos](circuitos/Circuitos%20microelectrónicos%20(TB068).md)                            | TB068  | Falta últimos temas                                 |
 | [Dispositivos semiconductores](dispo/Dispositivos%20semiconductores%20(8603).md)                               | 8603   | Terminado                                           |
 | [Electromagnetismo aplicado](electro/Electromagnetismo%20aplicado%20(TB069).md)                                | TB069  | Voy a cursarla este cuatri                          |
-| [Estructura del computador](estructura/Estructura%20del%20computador%20(6670).md)                              | 6670   | Terminado                                           |
-| [Física 1](fisica%201/Física%201%20(8201).md)                                                                  | 8201   | Falta pasar el resumen                              |
-| [Física 2](fisica%202/Física%202%20(6203).md)                                                                  | 6203   | Terminado                                           |
+| [Estructura del computador](Estructura%20del%20computador%20(6670).md)                              | 6670   | Terminado                                           |
+| [Física 1](Física%201%20(8201).md)                                                                  | 8201   | Falta pasar el resumen                              |
+| [Física 2](Física%202%20(6203).md)                                                                  | 6203   | Terminado                                           |
 | [Física 3](fisica%203/Física%203%20(8203).md)                                                                  | 8203   | Falta pasar el resumen                              |
 | [Introducción a la ingeniería electronica](intro/Introducción%20a%20la%20ingeniería%20electronica%20(8602).md) | 8602   | Terminado                                           |
 | [Legislación y ejercicio profesional](legal/Legislación%20y%20ejercicio%20profesional%20(9111).md)             | 9111   | Falta terminar los últimos capítulos                |
-| [Matemática discreta](discreta/Matemática%20discreta%20(6107).md)                                              | 6107   | Terminado                                           |
-| [Organización de datos](orga/Organización%20de%20datos%20(7506).md)                                            | 7506   | Falta pasar los videos de los últimos temas         |
-| [Probabilidad y estadística](proba/Probabilidad%20y%20estadística%20(6109).md)                                 | 6109   | Terminado                                           |
-| [Redes](redes/Redes%20(TA048).md)                                                                              | TA048  | Terminado                                           |
+| [Matemática discreta](Matemática%20discreta%20(6107).md)                                              | 6107   | Terminado                                           |
+| [Organización de datos](Organización%20de%20datos%20(7506).md)                                            | 7506   | Falta pasar los videos de los últimos temas         |
+| [Probabilidad y estadística](Probabilidad%20y%20estadística%20(6109).md)                                 | 6109   | Terminado                                           |
+| [Redes](Redes%20(TA048).md)                                                                              | TA048  | Terminado                                           |
 | [Seguridad ambiental y del trabajo](seguridad/Seguridad%20ambiental%20y%20del%20trabajo%20(9704).md)           | 9704   | Terminado                                           |
 | [Señales y sistemas](señales/Señales%20y%20sistemas%20(TB065).md)                                              | TB065  | Falta pasar las presentaciones del último tema      |
-| [Sistemas operativos](sisop/Sistemas%20operativos%20(7508).md)                                                 | 7508   | Terminado                                           |
-| [Taller de programación 1](taller/Taller%20de%20programación%201%20(9508).md)                                  | 9508   | Falta pasar las presentaciones de los últimos temas |
+| [Sistemas operativos](Sistemas%20operativos%20(7508).md)                                                 | 7508   | Terminado                                           |
+| [Taller de programación 1](Taller%20de%20programación%201%20(9508).md)                                  | 9508   | Falta pasar las presentaciones de los últimos temas |
 | [Taller de sistemas embebidos](embebidos/Taller%20de%20sistemas%20embebidos%20(TA134).md)                      | TA134  | Voy a cursarla este cuatri                          |
-| [Trabajo Profesional de Ingeniería Informática](tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)  | TA053  | Sin empezar                                         |
+| [Trabajo Profesional de Ingeniería Informática](Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)  | TA053  | Sin empezar                                         |
 
 ### Otras carreras
 ---
@@ -96,7 +96,7 @@ Estos proyectos tienen una aplicación como resultado final
 | Proyecto                                                                                                                                                    | Estado           |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
 | [Simpler GUI](simpler%20gui/Simpler%20GUI.md)                                                                                                               | Sin empezar      |
-| [Trabajo Profesional de Ingeniería Informática](tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)                                               | Sin empezar      |
+| [Trabajo Profesional de Ingeniería Informática](Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)                                               | Sin empezar      |
 | [Primer proyecto de robótica - Auto remoto](primer%20proyecto%20de%20robótica%20-%20auto%20remoto/Primer%20proyecto%20de%20robótica%20-%20Auto%20remoto.md) | En proceso       |
 | [Plugins de Obsidian](plugins%20de%20obsidian/Plugins%20de%20Obsidian.md)                                                                                   | Sin empezar      |
 | [Porfolio](porfolio/Porfolio.md)                                                                                                                            | Sin empezar      |

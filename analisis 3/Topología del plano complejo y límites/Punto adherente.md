@@ -6,7 +6,7 @@ tags:
 ---
 # Definición
 ---
-Dado un [[algebra 2/Espacios Vectoriales/Conjunto.md|conjunto]] no vació $U \subseteq \mathbb{C}$ y un punto $z_0 \in \mathbb{C}$:
+Dado un [[Conjunto|conjunto]] no vació $U \subseteq \mathbb{C}$ y un punto $z_0 \in \mathbb{C}$:
 
 $z_0$ es punto adherente de $U$ sii para todo $r>0$ se verifica que la [[Operador AND|intersección]] entre $U$ y un [[Disco abierto|disco abierto]] de dicho radio no sea vacía, es decir:
 

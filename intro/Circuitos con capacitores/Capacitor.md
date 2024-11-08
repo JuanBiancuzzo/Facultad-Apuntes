@@ -3,8 +3,8 @@ dia: 2023-01-23
 tags:
   - intro/Circuitos-con-capacitores
   - nota/facultad
-  - fisica-2/Electrostática-en-conductores-y-dieléctricos
-  - fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
 aliases:
   - Potencia de un capacitor#Potencia instantánea
   - Energía de un capacitor#Energía almacenada

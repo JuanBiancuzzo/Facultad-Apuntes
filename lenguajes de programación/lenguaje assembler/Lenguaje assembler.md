@@ -4,7 +4,7 @@ estado: Sin empezar
 tags:
   - índice
   - lenguajes-de-programación/lenguaje-assembler
-  - estructura/Sistema-ARC
+  - ingeniería-en-informática/estructura/Sistema-ARC
   - nota/investigacion
   - embebidos/Diseño-desarrollo-y-depuración
 referencias:
