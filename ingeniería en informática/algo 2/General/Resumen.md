@@ -1,8 +1,9 @@
 ---
 capitulo: 1
-tags: 
- - ingeniería-en-informática/algo-2/General
- - resumen
+tags:
+  - ingeniería-en-informática/algo-2/General
+  - resumen
+  - ingeniería-electrónica/algo-2/General
 ---
 # Índice 
 ---
