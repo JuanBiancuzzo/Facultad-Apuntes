@@ -1,8 +1,9 @@
 ---
 capitulo: 4
-tags: 
- - ingeniería-en-informática/taller/Concurrencia
- - resumen
+tags:
+  - ingeniería-en-informática/taller/Concurrencia
+  - resumen
+  - ingeniería-electrónica/taller/Concurrencia
 ---
 # Índice 
 ---

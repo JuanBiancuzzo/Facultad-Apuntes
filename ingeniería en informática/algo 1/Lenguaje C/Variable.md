@@ -8,6 +8,7 @@ tags:
   - lenguajes-de-programación/lenguaje-c
   - ingeniería-en-informática/taller/Sintaxis
   - ingeniería-electrónica/algo-1/Lenguaje-C
+  - ingeniería-electrónica/taller/Sintaxis
 ---
 # Definición
 ---

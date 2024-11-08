@@ -6,6 +6,7 @@ tags:
   - ingeniería-en-informática/taller/Concurrencia
   - lenguajes-de-programación/lenguaje-c
   - lenguajes-de-programación/lenguaje-Rust
+  - ingeniería-electrónica/taller/Concurrencia
 aliases:
   - Multithreading
   - Multihilos

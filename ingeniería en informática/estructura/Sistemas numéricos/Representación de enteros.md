@@ -8,6 +8,7 @@ tags:
   - lenguajes-de-programación/lenguaje-Rust
   - lenguajes-de-programación/lenguaje-c
   - ingeniería-electrónica/algo-1/Lenguaje-C
+  - ingeniería-electrónica/taller/Sintaxis
 aliases:
   - Integer
   - Int

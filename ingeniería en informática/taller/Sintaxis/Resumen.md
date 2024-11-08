@@ -3,6 +3,7 @@ capitulo: 1
 tags:
   - ingeniería-en-informática/taller/Sintaxis
   - resumen
+  - ingeniería-electrónica/taller/Sintaxis
 ---
 # Índice 
 ---

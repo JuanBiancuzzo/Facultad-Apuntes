@@ -1,8 +1,9 @@
 ---
 capitulo: 3
-tags: 
- - ingeniería-en-informática/taller/Ownership
- - resumen
+tags:
+  - ingeniería-en-informática/taller/Ownership
+  - resumen
+  - ingeniería-electrónica/taller/Ownership
 ---
 # Índice 
 ---

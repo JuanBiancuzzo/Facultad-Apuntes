@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/taller/Sintaxis
   - nota/facultad
   - lenguajes-de-programación/lenguaje-Rust
+  - ingeniería-electrónica/taller/Sintaxis
 aliases:
   - Option
 ---
