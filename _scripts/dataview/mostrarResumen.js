@@ -5,7 +5,7 @@ if (!resumen) {
     return;
 }
 
-let tagRepresentante = resumen.tags.find(tag => !tag.startsWith("resumen"));
+let tagRepresentante = resumen.file.folder.replaceAll(" ", "-").replaceAll(",", "");
 let archivos = dv.pages(`#${tagRepresentante} and -#resumen`)
     .flatMap(archivo => {
         let resultado = [];

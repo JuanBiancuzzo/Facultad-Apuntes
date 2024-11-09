@@ -1,7 +1,6 @@
 <%*
 	const preguntar = tp.user.preguntar();
 	const error = tp.user.error();
-	const CARRERA_PRINCIPAL = tp.user.constantes().carreraPrincipal;
 
 	const dv = this.app.plugins.plugins.dataview.api;
 
@@ -12,17 +11,20 @@
 	let carpeta = tp.file.folder(true);
 	if (carpeta[0] == "/") carpeta = carpeta.slice(1);
 	carpeta = carpeta.split("/");
-	
-	let carrera = dv.pages("#carrera").find(carrera => carrera.file.folder == carpeta[0]);
-	if (!carrera) carrera = dv.page(CARRERA_PRINCIPAL);
-
-	carpeta = `${carrera.file.folder}/${carpeta.filter(dir => dir != carrera.file.folder)[0]}`;
-	let tagCarrera = carrera.tags[0].replace("carrera/", "");
 
 	try {
-		let materias = dv.pages(`"${carpeta}" and #materia/${tagCarrera}`);
-		let materia;
+		let carrera = dv.pages("#carrera").find(carrera => carrera.file.folder == carpeta[0]);
+		if (!carrera) throw error.Prompt("No se encontró carrera")
 
+		let indice = 1;
+		let materias = dv.pages(`"${carpeta.slice(0, indice).join("/")}" and #materia`);
+		while (materias.length > 0 && indice < carpeta.length) {
+			indice++;
+			materias = dv.pages(`"${carpeta.slice(0, indice).join("/")}" and #materia`);
+		}
+		if (materias.length == 0) materias = dv.pages(`"${carpeta.slice(0, indice - 1).join("/")}" and #materia`);
+
+		let materia;
 		switch (materias.length) {
 			case 0: throw error.Quit("No se puede elegir una materia");
 			case 1: materia = materias[0]; break;
@@ -36,12 +38,18 @@
 				
 				break;
 		}
+		if (materia.equivalencia) materia = dv.page(materia.equivalencia.path);
+
+		carrera = dv.pages("#carrera").find(carrera => carrera.file.folder == materia.file.folder.split("/")[0]);
+		let tagCarrera = crearTag(carrera.file.folder);
+
+		let equivalencias = dv.pages("#materia")
+			.filter(equivalencia => equivalencia.equivalencia && equivalencia.equivalencia.path.startsWith(materia.file.folder));
 
 		let resumenes = dv.pages(`"${materia.file.folder}" and #resumen`)
 			.sort(resumen => resumen.capitulo);
 		let nombreResumenes = resumenes.map(resumen => {
-			let carpetaResumen = resumen.file.folder.split("/")
-				.filter((dir => dir != carrera.file.folder))[1];
+			let carpetaResumen = resumen.file.folder.split("/").pop();
 			let repre = `En ${carpetaResumen}`;
 			if (resumen.parte) 
 				repre += `, Parte ${resumen.parte}`;
@@ -121,11 +129,23 @@
 			for (let { resumen, nuevoCapitulo, nuevaParte } of actualizar) {
 				let tResumen = tp.file.find_tfile(resumen.file.path);
 
-				let tagPrevio = resumen.tags.find(tag => tag != "resumen");
+				let tagPrevio = resumen.tags.find(tag => tag != "resumen" && tag.startsWith(tagCarrera));
+				let previosTags = [tagPrevio];
+				equivalencias.forEach(equivalencia => {
+					let tagCarreraEquivalencia = crearTag(equivalencia.file.folder);
+					let tagEquivalencia = tagPrevio.replace(tagCarrera, tagCarreraEquivalencia);
+					previosTags.push(tagEquivalencia);
+				});
 
 				let nuevoTag = crearTag(resumen.file.folder);
+				let nuevosTags = [nuevoTag];
+				equivalencias.forEach(equivalencia => {
+					let tagCarreraEquivalencia = crearTag(equivalencia.file.folder);
+					let tagEquivalencia = nuevoTag.replace(tagCarrera, tagCarreraEquivalencia);
+					nuevosTags.push(tagEquivalencia);
+				});
 				if (resumen.parte !== nuevaParte) {
-					nuevoTag += `/${nuevaParte}`;
+					nuevosTags = nuevosTags.map(tag => `${tag}/${nuevaParte}`);
 				}
 
 				let actualizarCapitulo = resumen.capitulo !== nuevoCapitulo;
@@ -142,7 +162,7 @@
 
 					if (actualizarParte) {
 						frontmatter["parte"] = nuevaParte;
-						frontmatter["tags"] = [ nuevoTag, "resumen" ];
+						frontmatter["tags"] = [ ...nuevosTags, "resumen" ];
 					}						
 				});
 				tareas.push(tarea);
@@ -150,8 +170,8 @@
 				for (let tArchivoMod of tArchivos) {
 					tarea = app.fileManager.processFrontMatter(tArchivoMod, (frontmatter) => {
 						if (actualizarParte) {
-							frontmatter["tags"].remove(tagPrevio);
-							frontmatter["tags"].push(nuevoTag);
+							previosTags.forEach(tag => frontmatter["tags"].remove(tag));
+							nuevosTags.forEach(tag => frontmatter["tags"].push(tag));
 						}
 					});
 					tareas.push(tarea);
@@ -165,15 +185,21 @@
 			}
 		}
 
+		// Cambiar esto para tener en cuenta las equivalencias
 		let tag = crearTag(nuevaCarpeta);
-		if (multiples) tag += `/${parte}`;
+		let tags = [tag];
+		equivalencias.forEach(equivalencia => {
+			let tagCarreraEquivalencia = crearTag(equivalencia.file.folder);
+			let tagEquivalencia = tag.replace(tagCarrera, tagCarreraEquivalencia);
+			tags.push(tagEquivalencia);
+		});
 
 		tR += "---\n";
-		tR += `capitulo: ${capitulo}\n`;
-		tR += `tags: \n - ${tag}\n - resumen\n`;
-		if (multiples) {
-			tR += `parte: ${parte}\n`;
-		}
+		tR += tp.obsidian.stringifyYaml({
+			capitulo: capitulo,
+			tags: [...tags.map(tag => multiples ? `${tag}/${parte}` : tag), "resumen"]
+		});
+		if (multiples) tR += `parte: ${parte}\n`;
 		tR += "---\n";
 
 		if (!multiples) {
