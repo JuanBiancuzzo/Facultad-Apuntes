@@ -39,7 +39,7 @@
 	}
 	
 	let dia = tp.file.creation_date("YYYY-MM-DD");
-	let tag = resumen.tags.find(tag => tag != "resumen");
+	let tagsResumen = resumen.tags.filter(tag => tag != "resumen");
 	
 	let paginaHecha = tp.file.find_tfile(titulo);
 	if (paginaHecha && paginaHecha.stat.ctime != tArchivo.stat.ctime) {
@@ -60,14 +60,8 @@
 
 
 		await app.fileManager.processFrontMatter(paginaHecha, (frontmatter) => {
-			let index = frontmatter["tags"]?.indexOf(tag);
-			if (index < 0) {
-				if (frontmatter["tags"]) {
-					frontmatter["tags"].push(tag);
-				} else {
-					frontmatter["tags"] = [ tag ];
-				}
-			} 
+			let tags = frontmatter["tags"] ? frontmatter["tags"] : [];
+			frontmatter["tags"] = tags.concat(tagsResumen.filter(tag => tags.indexOf(tag) < 0));
 		});
 
 		throw error.Quit("Este archivo ya existe");
@@ -101,10 +95,12 @@
 	}
 	
 	tR += "---\n";
-	tR += `dia: ${dia}\n`;
-	tR += "etapa: empezado\n";
-	tR += tp.obsidian.stringifyYaml({ referencias: referenciasDefinicion });
-	tR += `tags: \n - ${tag}\n - nota/facultad\n`;
+	tR += tp.obsidian.stringifyYaml({ 
+		dia: dia,
+		etapa: "empezado",
+		referencias: referenciasDefinicion,
+		tags: [...tagsResumen, "nota/facultad"],
+	});
 	tR += "---\n";
 	tR += await app.vault.read(ETAPA_TEMPLATE);
 	tR += "\n";
