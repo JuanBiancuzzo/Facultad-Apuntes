@@ -38,7 +38,8 @@
     "_template/Regenerar readme - Template.md",
     "_template/investigacion/Editar referencia - Template.md",
     "_template/investigacion/Citar en linea.md",
-    "_template/Agregar demostracion.md"
+    "_template/Agregar demostracion.md",
+    "_template/Editar tags.md"
   ],
   "startup_templates": [
     "_template/startup/start.md"

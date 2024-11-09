@@ -62,7 +62,14 @@
   ],
   "rightRibbon": [],
   "titleBar": [],
-  "statusBar": [],
+  "statusBar": [
+    {
+      "id": "templater-obsidian:_template/Editar tags.md",
+      "icon": "lucide-album",
+      "name": "Editar tags",
+      "mode": "any"
+    }
+  ],
   "pageHeader": [],
   "macros": [
     {
