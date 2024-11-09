@@ -45,23 +45,23 @@ Un listado de materias, sus códigos y su estado actual
 
 | Materia                                                                                                                                     | Código | Estado                                              |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | ------ | --------------------------------------------------- |
-| [Álgebra 2 (6108)](ingeniería%20en%20informática/algebra%202/Álgebra%202%20(6108).md)                                                       | 6108   | Falta terminar de pasar el resumen                  |
+| [Álgebra 2 A (6108)](ingeniería%20en%20informática/algebra%202/Álgebra%202%20A%20(6108).md)                                                 | 6108   | Falta terminar de pasar el resumen                  |
 | [Algoritmos y programación 1 (7540)](ingeniería%20en%20informática/algo%201/Algoritmos%20y%20programación%201%20(7540).md)                  | 7540   | Voy por el 3do pdf                                  |
 | [Algoritmos y programación 2 (7541)](ingeniería%20en%20informática/algo%202/Algoritmos%20y%20programación%202%20(7541).md)                  | 7541   | Falta hacer el resumen                              |
 | [Algoritmos y programación 3 (7507)](ingeniería%20en%20informática/algo%203/Algoritmos%20y%20programación%203%20(7507).md)                  | 7507   | Falta hacer el resumen                              |
 | [Análisis de Circuitos (6606)](ingeniería%20en%20informática/Análisis%20de%20Circuitos%20(6606).md)                                         | 6606   | Terminado                                           |
 | [Análisis de la información (7509)](ingeniería%20en%20informática/aninfo/Análisis%20de%20la%20información%20(7509).md)                      | 7509   | Terminado                                           |
-| [Análisis matemático 2 (6103)](ingeniería%20en%20informática/analisis%202/Análisis%20matemático%202%20(6103).md)                            | 6103   | Falta terminar de pasar el resumen                  |
+| [Análisis matemático 2 A (6103)](ingeniería%20en%20informática/analisis%202/Análisis%20matemático%202%20A%20(6103).md)                      | 6103   | Falta terminar de pasar el resumen                  |
 | [Análisis Matemático 3 A (6110)](ingeniería%20en%20informática/Análisis%20Matemático%203%20A%20(6110).md)                                   | 6110   | Terminado                                           |
 | [Análisis numérico (7512)](ingeniería%20en%20informática/numerico/Análisis%20numérico%20(7512).md)                                          | 7512   | Falta pasar el resumen                              |
 | [Base de datos (TA044)](ingeniería%20en%20informática/bdd/Base%20de%20datos%20(TA044).md)                                                   | TA044  | Falta ampliar                                       |
 | [Estructura del computador (6670)](ingeniería%20en%20informática/estructura/Estructura%20del%20computador%20(6670).md)                      | 6670   | Terminado                                           |
-| [Física 1 (6201)](ingeniería%20en%20informática/fisica%201/Física%201%20(6201).md)                                                          | 6201   | Falta pasar el resumen                              |
-| [Física 2 (6203)](ingeniería%20en%20informática/fisica%202/Física%202%20(6203).md)                                                          | 6203   | Terminado                                           |
+| [Física 1 A (6201)](ingeniería%20en%20informática/fisica%201/Física%201%20A%20(6201).md)                                                    | 6201   | Falta pasar el resumen                              |
+| [Física 2 A (6203)](ingeniería%20en%20informática/fisica%202/Física%202%20A%20(6203).md)                                                    | 6203   | Terminado                                           |
 | [Física 3 D (6215)](ingeniería%20en%20informática/Física%203%20D%20(6215).md)                                                               | 6215   | Falta pasar el resumen                              |
 | [Matemática discreta (6107)](ingeniería%20en%20informática/discreta/Matemática%20discreta%20(6107).md)                                      | 6107   | Terminado                                           |
 | [Organización de datos (7506)](ingeniería%20en%20informática/orga/Organización%20de%20datos%20(7506).md)                                    | 7506   | Falta pasar los videos de los últimos temas         |
-| [Probabilidad y estadística (6109)](ingeniería%20en%20informática/proba/Probabilidad%20y%20estadística%20(6109).md)                         | 6109   | Terminado                                           |
+| [Probabilidad y estadística B (6109)](ingeniería%20en%20informática/proba/Probabilidad%20y%20estadística%20B%20(6109).md)                   | 6109   | Terminado                                           |
 | [Redes (TA048)](ingeniería%20en%20informática/redes/Redes%20(TA048).md)                                                                     | TA048  | Terminado                                           |
 | [Sistemas operativos (7508)](ingeniería%20en%20informática/sisop/Sistemas%20operativos%20(7508).md)                                         | 7508   | Terminado                                           |
 | [Taller de programación 1 (9508)](ingeniería%20en%20informática/taller/Taller%20de%20programación%201%20(9508).md)                          | 9508   | Falta pasar las presentaciones de los últimos temas |

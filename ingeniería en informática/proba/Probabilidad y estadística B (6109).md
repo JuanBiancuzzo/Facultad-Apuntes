@@ -7,7 +7,7 @@ tags:
   - materia/ingeniería-en-informática
 etapa: terminado
 correlativas:
-  - "[[Álgebra 2 (6108)|Álgebra 2]]"
+  - "[[Álgebra 2 A (6108)|Álgebra 2]]"
 ---
 # Apuntes
 ---

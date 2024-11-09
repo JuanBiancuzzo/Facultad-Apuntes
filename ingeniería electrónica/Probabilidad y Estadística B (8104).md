@@ -6,7 +6,7 @@ correlativas:
   - "[[ingeniería electrónica/Análisis Matemático 2 A (8101).md|Análisis Matemático 2 A]]"
   - "[[ingeniería electrónica/Álgebra 2 A (8102).md|Álgebra 2 A]]"
 codigo: 8104
-equivalencia: "[[ingeniería en informática/proba/Probabilidad y estadística (6109).md|Probabilidad y estadística (6109)]]"
+equivalencia: "[[Probabilidad y estadística B (6109)|Probabilidad y estadística B (6109)]]"
 ---
 # Apuntes
 ---

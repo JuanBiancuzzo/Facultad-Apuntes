@@ -7,7 +7,7 @@ tags:
   - materia/ingeniería-electrónica
 etapa: terminado
 correlativas:
-  - "[[Física 1 (6201)|Física 1]]"
+  - "[[Física 1 A (6201)|Física 1]]"
 ---
 # Apuntes
 ---

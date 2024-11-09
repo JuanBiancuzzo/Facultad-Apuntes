@@ -4,7 +4,7 @@ tags:
   - materia/ingeniería-electrónica
 correlativas: []
 codigo: 8201
-equivalencia: "[[ingeniería en informática/fisica 1/Física 1 (6201).md|Física 1 (6201)]]"
+equivalencia: "[[Física 1 A (6201)|Física 1 A (6201)]]"
 ---
 # Apuntes
 ---

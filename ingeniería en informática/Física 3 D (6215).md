@@ -3,8 +3,8 @@ plan: 1986
 tags:
   - materia/ingeniería-en-informática
 correlativas:
-  - "[[ingeniería en informática/fisica 2/Física 2 (6203).md|Física 2]]"
-  - "[[ingeniería en informática/algebra 2/Álgebra 2 (6108).md|Álgebra 2]]"
+  - "[[Física 2 A (6203)|Física 2]]"
+  - "[[Álgebra 2 A (6108)|Álgebra 2]]"
 codigo: 6215
 equivalencia: "[[ingeniería electrónica/fisica 3/Física 3 (8203).md|Física 3 (8203)]]"
 ---

@@ -7,7 +7,7 @@ tags:
   - materia/ingeniería-en-informática
 etapa: empezado
 correlativas:
-  - "[[Álgebra 2 (6108)|Álgebra 2]]"
+  - "[[Álgebra 2 A (6108)|Álgebra 2]]"
   - "[[Algoritmos y programación 2 (7541)|Algoritmos y programación 2]]"
 ---
 # Apuntes

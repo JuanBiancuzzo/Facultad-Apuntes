@@ -4,7 +4,7 @@ tags:
   - materia/ingeniería-electrónica
 correlativas: []
 codigo: 8102
-equivalencia: "[[ingeniería en informática/algebra 2/Álgebra 2 (6108).md|Álgebra 2 (6108)]]"
+equivalencia: "[[Álgebra 2 A (6108)|Álgebra 2 A (6108)]]"
 ---
 # Apuntes
 ---

@@ -7,7 +7,7 @@ tags:
   - materia/ingeniería-en-informática
 etapa: terminado
 correlativas:
-  - "[[Física 2 (6203)|Física 2]]"
+  - "[[Física 2 A (6203)|Física 2]]"
   - "[[Algoritmos y programación 2 (7541)|Algoritmos y programación 2]]"
 ---
 # Apuntes

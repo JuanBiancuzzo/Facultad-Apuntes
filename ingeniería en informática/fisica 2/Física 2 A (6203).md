@@ -7,8 +7,8 @@ tags:
   - materia/ingeniería-en-informática
 etapa: terminado
 correlativas:
-  - "[[Física 1 (6201)|Física 1]]"
-  - "[[Análisis matemático 2 (6103)|Análisis matemático 2]]"
+  - "[[Física 1 A (6201)|Física 1]]"
+  - "[[Análisis matemático 2 A (6103)|Análisis matemático 2]]"
 ---
 # Apuntes
 ---
