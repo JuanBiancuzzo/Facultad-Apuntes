@@ -15,7 +15,23 @@
 		titulo = await preguntar.prompt(tp, "Nombre:", error.Prompt("No se ingresó un nombre para la nota"));
 	}
 
-	let resumenes = dv.pages(`"${carpeta}" and #resumen`)
+	let materias = dv.pages(`"${carpeta}" and #materia`)
+		.sort(materia => materia.file.name);
+	let materia;
+	switch (materias.length) {
+		case 0: throw error.Quit("No es una nota posible");
+		case 1: materia = materias[0]; break;
+		default:
+			materia = await preguntar.suggester(
+				tp, materia => materia.file.name, materias,
+				"Que materia se incluye esta nota?",
+				error.Prompt("No se eligió una materia para la nota")
+			);
+			break;
+	}
+	if (materia.equivalencia) materia = dv.page(materia.equivalencia.path);
+
+	let resumenes = dv.pages(`"${materia.file.folder}" and #resumen`)
 		.sort(resumen => resumen.capitulo);
 		
 	let resumen;
