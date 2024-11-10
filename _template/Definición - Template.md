@@ -15,8 +15,15 @@
 		titulo = await preguntar.prompt(tp, "Nombre:", error.Prompt("No se ingresó un nombre para la nota"));
 	}
 
-	let materias = dv.pages(`"${carpeta}" and #materia`)
-		.sort(materia => materia.file.name);
+	let directorios = carpeta.split("/");
+	let materias = [];
+	let opcionMaterias;
+	for (let i = 1; i <= directorios.length; i++) {
+		let opcionMaterias = dv.pages(`"${directorios.slice(0, i).join("/")}" and #materia`);
+		if (opcionMaterias.length > 0) materias = opcionMaterias;
+	}
+
+	materias = materias.sort(materia => materia.file.name);
 	let materia;
 	switch (materias.length) {
 		case 0: throw error.Quit("No es una nota posible");
@@ -31,7 +38,9 @@
 	}
 	if (materia.equivalencia) materia = dv.page(materia.equivalencia.path);
 
-	let resumenes = dv.pages(`"${materia.file.folder}" and #resumen`)
+	let carpetaResumen = materia.file.folder;
+	if (carpeta.startsWith(carpetaResumen)) carpetaResumen = carpeta;
+	let resumenes = dv.pages(`"${carpetaResumen}" and #resumen`)
 		.sort(resumen => resumen.capitulo);
 		
 	let resumen;
