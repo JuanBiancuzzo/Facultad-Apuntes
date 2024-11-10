@@ -76,6 +76,21 @@ La comunicación por SPI, el manda la señal del clock y selecciona (con el Chip
 
 ## Polaridad y fase del reloj
 ---
+El main  puede seleccionar la polaridad y la fase del reloj
+* El [[Información#Bit|bit]] `CPOL` asigna la polaridad durante el estado idle
+* El bit `CPHA` asigna la fase del reloj, este determina si es cuando sube o baja el borde del rejos para muestrear y/o mover la [[Información|información]]
+El main tiene que seleccionar la polaridad y la fase al pedido del subnodo
+
+El estado idle esta definido como el período cuando el Chip select esta alto y transaccionando a bajo al principio de la transmisión, también cuando transiciona de bajo a alto, al final de la transmisión
+
+Según estos bits podemos definir $4$ modos
+
+| SPI Mode | CPOL | CPHA | Fase del reloj usado para muestrear y/o mover la información  |
+| :------: | :--: | :--: | ------------------------------------------------------------- |
+|    0     |  0   |  0   | Muestrear en la subida y moviendo la información en la bajada |
+|    1     |  0   |  1   | Muestrear en la bajada y moviendo la información en la subida |
+|    2     |  1   |  0   | Muestrear en la bajada y moviendo la información en la subida |
+|    3     |  1   |  1   | Muestrear en la subida y moviendo la información en la bajada |
 
 
 # Referencias

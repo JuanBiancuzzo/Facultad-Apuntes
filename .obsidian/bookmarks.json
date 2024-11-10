@@ -45,6 +45,18 @@
           "ctime": 1729884494086,
           "path": "licenciatura en ciencias de datos/Licenciatura en Ciencias de Datos.md",
           "title": "Ciencia de Datos"
+        },
+        {
+          "type": "file",
+          "ctime": 1731180269809,
+          "path": "ingeniería electrónica/Ingeniería Electrónica.md",
+          "title": "Electrónica"
+        },
+        {
+          "type": "file",
+          "ctime": 1731180289534,
+          "path": "ingeniería en informática/Ingeniería en Informática.md",
+          "title": "Informática"
         }
       ],
       "title": "Carreras"

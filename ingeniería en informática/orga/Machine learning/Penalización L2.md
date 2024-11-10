@@ -1,7 +1,8 @@
 ---
 dia: 2024-11-07
 etapa: empezado
-referencias: 
+referencias:
+  - "492"
 tags:
   - ingeniería-en-informática/orga/Machine-learning
   - nota/facultad
@@ -15,3 +16,10 @@ aliases:
 ---
 Es una técnica de [[Regularización|regularización]] definida por $$ loss_{L2}(y, \hat{y}) = loss(y, \hat{y}) + \alpha \cdot \sum_k w_k^2 $$ donde $w_k$ son los pesos del modelo
 
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```
