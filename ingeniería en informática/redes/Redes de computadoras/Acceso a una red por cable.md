@@ -2,7 +2,6 @@
 dia: 2024-04-22
 aliases:
   - Cable de cobra de par trenzado
-  - Cable coaxial
   - Fibra óptica
   - Enlace
 tags:
@@ -22,7 +21,7 @@ El acceso por cable a red requiere el uso de [[Router|módems]] especiales, que 
 
 Una característica importante del acceso a [[Internet|internet]] por cable es que se trata de un medio de difusión compartido. Se necesita un protocolo distribuido de acceso múltiple para coordinar las transmisiones y evitar las colisiones
 
-## Cable de cobra de par trenzado
+## Cable de cobre de par trenzado
 ---
 Este cable consta de dos hilos de cobre aislados, de un milímetro de espesor cada uno de ellos, que siguen un patrón regular en espiral. Los hilos se trenzan para reducir las interferencias eléctricas procedentes de pares similares próximos. Normalmente, se meten una serie de pares dentro de un mismo cable, envolviendo todos los pares en una pantalla protectora
 
@@ -30,7 +29,7 @@ Cada par de hilos constituye un único enlace de comunicaciones. Las velocidades
 
 ## Cable coaxial
 ---
-Al igual que el par trenzado, el cable coaxial consta de dos [[Conductor|conductores]] de cobre, pero dispuestos de forma concéntrica, en lugar de en paralelo. Puede proporcionar altas velocidades de transmisión de datos
+![[Cable coaxial#Definición]]
 
 ## Fibra óptica
 ---
