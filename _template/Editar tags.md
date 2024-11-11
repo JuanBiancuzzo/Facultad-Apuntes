@@ -3,6 +3,7 @@
 	const error = tp.user.error();
 
 	const PREGUNTAR_CARRERA = "carrera";
+	const PREGUNTAR_TEMA = "tema";
 	const PREGUNTAR_MATERIA = "materia";
 	const PREGUNTAR_RESUMEN = "resumen";
     const SALIR = "salir";
@@ -18,18 +19,19 @@
         }
         let datos = {
             [PREGUNTAR_CARRERA]: null,
+            [PREGUNTAR_TEMA]: [],
             [PREGUNTAR_MATERIA]: null,
             [PREGUNTAR_RESUMEN]: null,
         };
 
         let { opciones, valores } = representarDatos(datos);
-        let respuesta = opciones[0];
+        let [respuesta, ...argumento] = opciones[0].split("-");
         if (opciones.length > 1) {
-			respuesta = await preguntar.suggester(
+			[respuesta, ...argumento] = (await preguntar.suggester(
 				tp, valores, opciones, 
 				"Completar para poder agregar tags", 
 				error.Nada("No se completó los datos necesarios")
-			);
+			)).split("-");
         }
 
         while (respuesta != SALIR) {
@@ -47,8 +49,34 @@
                         datos[PREGUNTAR_CARRERA] = opcion;
                         datos[PREGUNTAR_MATERIA] = null;
                         datos[PREGUNTAR_RESUMEN] = null;
+                        datos[PREGUNTAR_TEMA] = [];
                     }
                     
+                    break;
+                case PREGUNTAR_TEMA:
+                    let [ indice ] = argumento;
+                    if (!indice) indice = datos[PREGUNTAR_TEMA].length;
+
+                    let query = "#índice";
+                    if (indice > 0) query += ` and "${datos[PREGUNTAR_TEMA][indice - 1].file.folder}"`;
+
+                    opcion = await preguntar.suggester(
+                        tp, nombreTema, dv.pages(query)
+                            .filter(tema => tema.file.folder.split("/").length == indice + 1)
+                            .sort(nombreTema), 
+                        "De que tema investigación se quiere agregar el tag",
+                        error.Nada("No se ingresó el tema de investigacion")
+                    );
+
+                    datos[PREGUNTAR_TEMA] = datos[PREGUNTAR_TEMA].slice(0, indice);
+                    datos[PREGUNTAR_TEMA].push(opcion);
+
+                    if (datos[PREGUNTAR_TEMA].length <= 1) {
+                        datos[PREGUNTAR_CARRERA] = null;
+                        datos[PREGUNTAR_MATERIA] = null;
+                        datos[PREGUNTAR_RESUMEN] = null;
+                    } 
+
                     break;
                 case PREGUNTAR_MATERIA:
                     opcion = await preguntar.suggester(
@@ -86,26 +114,32 @@
             }
 
 			let { opciones, valores } = representarDatos(datos);
-			respuesta = opciones[0];
+			[respuesta, ...argumento] = opciones[0].split("-");
             if (opciones.length > 1) {
-                respuesta = await preguntar.suggester(
+			    [respuesta, ...argumento] = (await preguntar.suggester(
                     tp, valores, opciones,
                     "Completar para poder agregar tags",
                     error.Nada("No se completó los datos necesarios")
-                );
+                )).split("-");
             }
         }
+
+        let tagsAgregar = [];
         let resumen = datos[PREGUNTAR_RESUMEN];
+        if (resumen) {
+            tagsAgregar = resumen.tags.filter(tag => tag != "resumen");
+
+        } else {
+            let tema = datos[PREGUNTAR_TEMA].pop();
+            tagsAgregar.push(tema.file.folder.replaceAll(",", "").replaceAll(" ", "-"));
+        }
 
         await app.fileManager.processFrontMatter(tArchivo, (frontmatter) => {
             let tagsActuales = frontmatter["tags"] ? frontmatter["tags"] : [];
-            resumen.tags.filter(tag => tag != "resumen")
-                .forEach(tag => tagsActuales.push(tag));
-
+            tagsAgregar.forEach(tag => tagsActuales.push(tag));
             frontmatter["tags"] = tagsActuales.unique();
         });
 
-        console.log(datos);
 
     } catch ({ name: nombre, message: mensaje }) {
 		const errorNombre = tp.user.error().nombre;
@@ -121,31 +155,67 @@
         let valores = [];
         let opciones = [];
 
-        opciones.push(PREGUNTAR_CARRERA);
-        if (!datos[PREGUNTAR_CARRERA]) {
+        let carreraInicializado = datos[PREGUNTAR_CARRERA];
+        if (!carreraInicializado) {
+            opciones.push(PREGUNTAR_CARRERA);
             valores.push("Ingresar la carrera para agregar el tag");
+        } 
+
+        let temaInicializado = datos[PREGUNTAR_TEMA].length > 0;
+        if (!temaInicializado) {
+            opciones.push(PREGUNTAR_TEMA);
+            valores.push("Ingresar el tema de investigación para agregar el tag");
+        } 
+
+        if (!temaInicializado && !carreraInicializado) {
             return { opciones: opciones, valores: valores };
         }
-        valores.push(`Elegir otra carrera, previamente tenias ${datos[PREGUNTAR_CARRERA].file.name}`);
         
-        opciones.push(PREGUNTAR_MATERIA);
-        if (!datos[PREGUNTAR_MATERIA]) {
-            valores.push("Ingresar la materia para agregar el tag");
-            return { opciones: opciones, valores: valores };
-        }
-        valores.push(`Elegir otra materia, previamente tenias ${datos[PREGUNTAR_MATERIA].file.name}`);
+        if (carreraInicializado) {
+            opciones.push(PREGUNTAR_CARRERA);
+            valores.push(`Elegir otra carrera, previamente tenias ${datos[PREGUNTAR_CARRERA].file.name}`);
 
-        opciones.push(PREGUNTAR_RESUMEN);
-        if (!datos[PREGUNTAR_RESUMEN]) {
-            valores.push("Ingresar el tema para agregar el tag");
-            return { opciones: opciones, valores: valores };
-        }
-        let nombre = datos[PREGUNTAR_RESUMEN].file.folder.split("/").pop();
-        if (datos[PREGUNTAR_RESUMEN].parte) nombre += ` parte ${datos[PREGUNTAR_RESUMEN].parte}`;
-        valores.push(`Elegir otro tema, previamente tenias ${nombre}`);
 
+            opciones.push(PREGUNTAR_MATERIA);
+            if (!datos[PREGUNTAR_MATERIA]) {
+                valores.push("Ingresar la materia para agregar el tag");
+                return { opciones: opciones, valores: valores };
+            }
+            valores.push(`Elegir otra materia, previamente tenias ${datos[PREGUNTAR_MATERIA].file.name}`);
+
+            opciones.push(PREGUNTAR_RESUMEN);
+            if (!datos[PREGUNTAR_RESUMEN]) {
+                valores.push("Ingresar el tema para agregar el tag");
+                return { opciones: opciones, valores: valores };
+            }
+            let nombre = datos[PREGUNTAR_RESUMEN].file.folder.split("/").pop();
+            if (datos[PREGUNTAR_RESUMEN].parte) nombre += ` parte ${datos[PREGUNTAR_RESUMEN].parte}`;
+            valores.push(`Elegir otro tema, previamente tenias ${nombre}`);
+
+        } else {
+
+            for (let i = 0; i < datos[PREGUNTAR_TEMA].length; i++) {
+                opciones.push(`${PREGUNTAR_TEMA}-${i}`);
+                valores.push(`Elegir otro tema, previamente tenias ${nombreTema(datos[PREGUNTAR_TEMA][i])}`);
+            }
+
+            let ultimo = datos[PREGUNTAR_TEMA][datos[PREGUNTAR_TEMA].length - 1];
+            let subtemasUltimo = dv.pages(`#índice and "${ultimo.file.folder}"`);
+
+            if (subtemasUltimo.length > 1) {
+                opciones.push(PREGUNTAR_TEMA);
+                valores.push(`Agregar subtema de ${nombreTema(ultimo)}`);
+            }
+        }
+        
         opciones.push(SALIR);
         valores.push("Confirmar edición");
+
         return { opciones: opciones, valores: valores };
+    }
+
+    function nombreTema(tema) {
+        let nombre = tema.file.folder.split("/").pop();
+        return `${nombre.charAt(0).toUpperCase()}${nombre.slice(1)}`
     }
 %>

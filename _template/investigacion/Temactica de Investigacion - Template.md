@@ -46,7 +46,7 @@
 		tR += `dia: ${dia}\n`;
 		tR += "estado: 'Sin empezar'\n";
 		tR += `orden: ${mantenerOrden.siguienteValorOrden()}\n`;
-		tR += `tags: \n - índice\n - ${path.replaceAll(" ", "-")}\n - nota/investigacion\n`;
+		tR += `tags: \n - índice\n - ${path.replaceAll(",", "").replaceAll(" ", "-")}\n - nota/investigacion\n`;
 		tR += "---\n";
 
 	} catch ({ name: nombre, message: mensaje }) {
