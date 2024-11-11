@@ -26,3 +26,6 @@ $$ n! = \begin{cases}
 
 ^5daa79
 
+## Observación
+---
+Se puede probar por [[Principio de inducción|inducción]] que se tiene $$ \left( \frac{n}{3} \right)^n \le n! \le \left( \frac{n}{2} \right)^n, ~~~~ \forall n \ge 6 $$ una forma bastante precisa de ubicar el factorial entre dos potencias

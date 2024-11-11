@@ -14,11 +14,10 @@
 			.filter(indice => indice.file.name !== undefined);
 
 		let nombreTema = await preguntar.prompt(
-			tp, "Temática: (Apretar ESC para salir)", error.Prompt("No se ingresó un tema")
+			tp, "Temática:", error.Prompt("No se ingresó un tema")
 		);
-		let nuevoTema = `${nombreTema.charAt(0).toLowerCase()}${nombreTema.slice(1)}`.trim();
 
-		if (!validar.validarNombre(tp, nuevoTema)) 
+		if (!validar.validarNombre(tp, nombreTema)) 
 			throw new Error("Nombre invalido");
 		
 		let descripcion = tp.user.describirTemas(indices);
@@ -29,6 +28,9 @@
 			error.Prompt("No se eligió como definir el tema")
 		);
 
+		let nuevoTema = eleccion.file.folder.split("/").length > 1
+			? `${nombreTema.charAt(0).toLowerCase()}${nombreTema.slice(1)}`.trim()
+			: nombreTema;
 		let path = (eleccion === CREAR_TEMA) ? nuevoTema : `${eleccion.file.folder}/${nuevoTema}`;
 
 		try {

@@ -128,7 +128,23 @@ También vemos el [[Principio de inducción|Principio de inducción P.I.]] y su 
 
 ## Capítulo 3: Combinatoria
 ---
+Vemos el concepto de [[Cardinalidad|cardinalidad]] 
+* [[Cardinalidad|Conjunto]]
+    * [[Cardinalidad#Cardinal de un subconjunto|Subconjunto]]
+    * [[Cardinalidad#Cardinal de la unión de conjuntos|Unión de conjuntos]]
+    * [[Cardinalidad#Cardinal del complemento de un conjunto|Complemento de un conjunto]]
+* [[Cardinalidad#Cardinal de un producto cartesiano|Producto cartesiano]]
+* [[Cardinalidad#Cardinal del conjunto de partes|Conjunto de partes]]
+* [[Cardinalidad#Cardinal de relaciones|Relaciones]]
+* [[Cardinalidad#Cardinal de funciones|Funciones]]
+    * [[Cardinalidad#Cantidad de funciones inyectivas|Funciones inyectivas]]
+    * [[Cardinalidad#Cantidad de funciones biyectivas|Funciones biyectivas]]
 
+En estas últimas dos exploramos los números
+* [[Factorial|Factorial]]
+* [[Número combinatorio|Combinatorio]]
+
+Por último vemos el [[Binomio de Newton|binomio de Newton]] 
 
 ## Capítulo 4: Enteros - Primera parte
 ---
