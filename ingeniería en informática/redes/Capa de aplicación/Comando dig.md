@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/redes/Capa-de-aplicación
   - nota/facultad
   - ingeniería-electrónica/redes/Capa-de-aplicación
+  - herramientas/Comandos-de-linux
 ---
 # Definición
 ---
