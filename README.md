@@ -130,6 +130,7 @@ Para eso usaré obsidian, y pdfs, donde en obsidian todo sería archivos markdow
 | [Reglas APA](reglas%20APA/Índice.md)                                                                     | Falta resumir                                                                                                     |
 | [Sistemas operativos](sistemas%20operativos/Sistema%20operativo.md)                                      | Sin empezar                                                                                                       |
 | [Storytelling](storytelling/Índice.md)                                                                   | Falta resumir                                                                                                     |
+| [Testing](testing/Testing.md)                                                                            | Sin empezar                                                                                                       |
 
 ## Proyectos
 ---

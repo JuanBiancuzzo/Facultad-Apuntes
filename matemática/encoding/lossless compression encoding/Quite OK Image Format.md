@@ -1,0 +1,26 @@
+---
+dia: 2024-11-11
+etapa: sin-empezar
+orden: 417
+referencias:
+  - "502"
+tags:
+  - matemática/encoding/lossless-compression-encoding
+  - nota/investigacion
+aliases:
+  - QOI
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
+# Definición
+---
+Ver las [referencias](https://qoiformat.org/qoi-specification.pdf)
+
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```

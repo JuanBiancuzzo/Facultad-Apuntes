@@ -8,6 +8,7 @@ tags:
   - nota/facultad
 aliases:
   - Penalización Lasso
+  - Lasso Regression
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
