@@ -24,7 +24,11 @@ tags:
   - biblioteca/paper
   - nota/investigacion
   - machine-Learning/transformers
+  - algoritmos
 orden: 360
+aliases:
+  - Proximal Policy Optimization Algorithms
+  - PPO
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
