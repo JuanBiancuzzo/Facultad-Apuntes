@@ -1,6 +1,6 @@
 ---
 dia: 2024-11-06
-etapa: sin-empezar
+etapa: ampliar
 referencias:
   - "412"
 tags:

@@ -8,6 +8,7 @@ tags:
   - ingeniería-electrónica/algebra-2/Espacios-euclídeos
 aliases:
   - Módulo
+  - Valor absoluto
 ---
 # Definición
 ---

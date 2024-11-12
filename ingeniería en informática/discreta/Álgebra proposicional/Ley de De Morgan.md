@@ -8,7 +8,11 @@ tags:
   - licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
 referencias:
   - "188"
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 En [[Álgebra de proposiciones|lógica proposicional]] y [[Álgebra de Boole|álgebra de Boole]], las leyes de De Morgan son un par de reglas de [[Transformación|transformación]]. Las normas permiten la expresión de las [[Operador AND|conjunciones]] y [[Operador OR|disyunciones]] puramente de términos de vía [[Operador NOT|negación]]<sup><a href="#ref-188" style="color: inherit; text-decoration: none;">[188]</a></sup> 
@@ -51,8 +55,9 @@ Para el [[Álgebra de Boole|álgebra de Boole]] $(B,~+,~\cdot,~',~0_B,~1_B)$ se 
 
 $$ \forall x, y \in B: ~~~~~ (x + y)' = x' y', ~~~ (xy)' = x' + y' $$ ^094b93
 
+
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
 ```

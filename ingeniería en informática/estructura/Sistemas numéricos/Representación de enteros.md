@@ -17,7 +17,7 @@ aliases:
 ---
 # Definición
 ---
-Hay diferentes representaciones de los enteros, ya que tenemos que representar el signo como parte del número, haciendo esto una convención.
+Hay diferentes representaciones de los [[Números enteros|enteros]], ya que tenemos que representar el signo como parte del número, haciendo esto una convención.
 
 Tenemos 4 métodos:
 * [[Representación de enteros magnitud y signo|Magnitud y signo]]
