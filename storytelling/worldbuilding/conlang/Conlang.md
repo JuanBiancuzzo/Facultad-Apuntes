@@ -2,8 +2,12 @@
 dia: 2024-07-08
 tags:
   - índice
-  - storytelling/worldbuilding/conlang
+  - storytelling/worldbuilding/Conlang
+  - nota/investigacion
 estado: Falta resumir
+orden: 422
+referencias:
+  - "509"
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

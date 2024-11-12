@@ -16,7 +16,7 @@ En entornos tanto corporativos como domésticos, se utiliza una [[Local Area Net
 
 Existen muchos estándares para esta clase, todos ellos comparten algunas características comunes. Todos utilizan el mismo [[Protocolo|protocolo]] de acceso al medio [[Carrier Sense Multiple Access with collision avoidance|CSMA/CA]]. Todos reducen su tasa de transmisión para llegar a mayores distancias, y todos son backwards compatible. La mayor diferencia radica en la [[Capa física|capa física]]
 
-Existen dos rangos frecuencias principales, 2.4 GHz y 5.8 GHz. Las redes 5.8 tienen menor rango para un nivel de [[Potencia|potencia]] dado, y sufren más de propagación multipath. Los estándares más recientes utilizan múltiples antenas (tanto receptoras como emisoras), y utilizan antenas inteligentes para direccionar las mismas en dirección del receptor. Esto redujo la interferencia e incremento la [[Distancia|distancia]] alcanzada para una tasa dada
+Existen dos rangos frecuencias principales, 2.4 GHz y 5.8 GHz. Las redes 5.8 tienen menor rango para un nivel de [[Potencia|potencia]] dado, y sufren más de propagación multipath. Los estándares más recientes utilizan múltiples antenas (tanto receptoras como emisoras), y utilizan antenas inteligentes para direccionar las mismas en dirección del receptor. Esto redujo la interferencia e incremento la [[Distancia euclidiana|distancia]] alcanzada para una tasa dada
 
 ## Arquitectura
 ---

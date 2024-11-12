@@ -18,7 +18,7 @@ orden: 302
 ```
 # Definición
 ---
-En matemáticas la [[Función|función]] [[Distancia|distancia]] con signo mide cuán cerca se encuentra un punto $x$ de un [[Conjunto|conjunto]] $S$ otorgándole un signo según el punto se encuentre de "un lado o de otro" del conjunto $S$ $$ f(x) = \begin{cases} 
+En matemáticas la [[Función|función]] [[Distancia euclidiana|distancia]] con signo mide cuán cerca se encuentra un punto $x$ de un [[Conjunto|conjunto]] $S$ otorgándole un signo según el punto se encuentre de "un lado o de otro" del conjunto $S$ $$ f(x) = \begin{cases} 
     d(x,~S) & \text{si} ~ x \in A \\ 
     0 & \text{si} ~ x \in S \\ 
     -d(x,~S) & \text{si} ~ x \in B \\ 

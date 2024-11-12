@@ -1,12 +1,15 @@
 ---
-dia: 2024-07-08
+dia: 2024-11-12
 etapa: sin-empezar
+orden: 426
 referencias:
-  - "30"
+  - "511"
 tags:
+  - machine-Learning
   - nota/investigacion
-  - storytelling/worldbuilding/Conlang
-orden: 48
+aliases:
+  - Distancia de edición
+  - Distancia entre palabras
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

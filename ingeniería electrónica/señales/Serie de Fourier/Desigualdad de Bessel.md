@@ -23,7 +23,7 @@ Considerando una [[Señal|señal]] de [[Medida de una señal#Energía|energía]]
 	\cdots 
 }, ~ \omega_0 = \frac{2\pi}{T} $$
 Vamos a tomar la siguiente aproximación de $x(t) \in L_2([0, L))$ $$ \hat{x}_N(t) = \sum_{k = -N}^{N} a_k ~ \exp\left( jk\omega_0 t \right) $$
-Ahora considerando la [[Distancia entre vectores|distancia]] entre $x(t)$ y $\hat{x}(t)$ $$ \lVert x(t) - \hat{x}_N(t) \rVert^2 = \frac{1}{T} \int_0^T | x(t) - \hat{x}_N(t) |^2 ~ dt = \frac{1}{T} \int_0^T \left| x(t) - \sum_{k = -N}^{N} b_k ~ \exp\left( jk\omega_0 t \right)  \right|^2 ~ dt $$
+Ahora considerando la [[Distancia euclidiana|distancia]] entre $x(t)$ y $\hat{x}(t)$ $$ \lVert x(t) - \hat{x}_N(t) \rVert^2 = \frac{1}{T} \int_0^T | x(t) - \hat{x}_N(t) |^2 ~ dt = \frac{1}{T} \int_0^T \left| x(t) - \sum_{k = -N}^{N} b_k ~ \exp\left( jk\omega_0 t \right)  \right|^2 ~ dt $$
 Que podemos reescribirlo como $$ \begin{align} 
 	\lVert x(t) - \hat{x}_N(t) \rVert^2 &= \langle x(t) - \hat{x}_N(t), x(t) - \hat{x}_N(t) \rangle \\
 	&= \lVert x(t) \rVert^2 - \langle x(t), \hat{x}_N(t) \rangle - \langle \hat{x}_N(t), x(t) \rangle + \lVert \hat{x}_N(t) \rVert^2

@@ -11,7 +11,7 @@ Representa palabra o [[Token|token]] con un vector denso, y esto se logra con [[
 * [[Glove]]
 * [[Star space]]
 
-Palabras o tokens parecidos, están en una [[Distancia entre vectores|distancia]] entre ellos, usando la [[Similitud coseno|similitud coseno]], chicas
+Palabras o tokens parecidos, están en una [[Distancia euclidiana|distancia]] entre ellos, usando la [[Similitud coseno|similitud coseno]], chicas
 
 ## Vectorización
 ---

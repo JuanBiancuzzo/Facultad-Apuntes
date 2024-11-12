@@ -7,7 +7,7 @@ tags:
 ---
 # Propuesta
 ---
-Vamos a intentar implementar el [[Ray marching|algoritmo de Ray marching]] usando la ayuda de un [[Diagrama de Voronoi|diagrama de voronoi]] para saber las [[Distancia|distancia]], usando esta como una estructura de [[Cache|cache]] para optimizar la búsqueda
+Vamos a intentar implementar el [[Ray marching|algoritmo de Ray marching]] usando la ayuda de un [[Diagrama de Voronoi|diagrama de voronoi]] para saber las [[Distancia euclidiana|distancia]], usando esta como una estructura de [[Cache|cache]] para optimizar la búsqueda
 
 Vamos a establecer una una escena con objetos que describiremos como [[Conjunto|conjunto]] de triángulos e intentaremos recrear una imagen a partir de los mismo 
 

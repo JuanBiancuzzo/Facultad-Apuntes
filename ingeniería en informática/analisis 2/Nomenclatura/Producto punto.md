@@ -22,5 +22,5 @@ Estando en $\mathbb{R}^n$, se define $$ x ~ y = x_1 ~ y_1 + x_2 ~ y_2 + \cdots +
 ---
 * [[Potencias de un vector|Potencias de un vector]]
 * [[Norma|Norma]]
-* [[Distancia entre vectores|Distancia entre vectores]]
+* [[Distancia euclidiana|Distancia euclidiana]]
 * [[Ángulo entre vectores|Ángulo entre vectores]]

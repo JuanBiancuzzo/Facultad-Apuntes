@@ -7,7 +7,7 @@ tags:
 ---
 # Definición
 ---
-Está formado por dos [[Carga eléctrica|cargas]] $q$, del mismo [[Norma|módulo]] y signo opuesto, separadas una [[Distancia|distancia]] $\delta$. Nos interesa el [[Campo eléctrico|campo]] del dipolo para valores mucho mayores que $\delta$
+Está formado por dos [[Carga eléctrica|cargas]] $q$, del mismo [[Norma|módulo]] y signo opuesto, separadas una [[Distancia euclidiana|distancia]] $\delta$. Nos interesa el [[Campo eléctrico|campo]] del dipolo para valores mucho mayores que $\delta$
 
 Definimos el momento dipolar del vector $p$ como cuyo vector tenga como módulo el producto $q \cdot \delta$ y tiene la dirección de la [[Recta|recta]] que une ambas cargas, apuntando hacia la carga positiva
 

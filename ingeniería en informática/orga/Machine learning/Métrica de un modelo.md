@@ -22,4 +22,4 @@ Hay diferentes métricas que pueden usarse para la [[Validación del modelo|vali
 * MAE $=\displaystyle\frac{1}{n}\sum |y - \hat{y}|$
 	* Mean absolute error
 	* AUC-ROC
-	* Es un punto medio entre precisión y recall, donde encuentra este valor sin tener un hiperparametro
+	* Es un punto medio entre precisión y recall, donde encuentra este valor sin tener un hyperparameters

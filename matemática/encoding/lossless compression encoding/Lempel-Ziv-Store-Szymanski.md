@@ -1,12 +1,14 @@
 ---
-dia: 2024-07-08
+dia: 2024-11-12
 etapa: sin-empezar
+orden: 420
 referencias:
-  - "30"
+  - "507"
 tags:
+  - matemática/encoding/lossless-compression-encoding
   - nota/investigacion
-  - storytelling/worldbuilding/Conlang
-orden: 48
+aliases:
+  - LZSS
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

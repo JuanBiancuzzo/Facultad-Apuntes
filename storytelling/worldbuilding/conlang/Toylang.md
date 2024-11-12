@@ -5,7 +5,7 @@ referencias:
   - "36"
 tags:
   - nota/investigacion
-  - storytelling/worldbuilding/conlang
+  - storytelling/worldbuilding/Conlang
 orden: 257
 ---
 ```dataviewjs

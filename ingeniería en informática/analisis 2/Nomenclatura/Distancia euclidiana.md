@@ -4,12 +4,14 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/analisis-2/Nomenclatura
   - ingeniería-electrónica/analisis-2/Nomenclatura
+aliases:
+  - Distancia entre vectores
 ---
 # Definición
 ---
-La [[Distancia|distancia]] entre dos vectores $x$ y $y$ se puede usar la definición de [[Norma|norma]] para definirla, tal que
+La [[Distancia euclidiana|distancia]] entre dos vectores $x$ y $y$ se puede usar la definición de [[Norma|norma]] para definirla, tal que
 
-$$dist(x, y) := \lVert y - x \rVert$$
+$$ d: A \times A \to \mathbb{R}, ~~~~ d(X, Y) \doteq \lVert X - Y \rVert $$
 
 ```tikz
 \begin{document}
