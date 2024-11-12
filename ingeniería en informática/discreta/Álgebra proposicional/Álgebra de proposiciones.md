@@ -39,7 +39,7 @@ p' & q' & p \uparrow q & p \downarrow q & p \leftrightarrow q & (p \rightarrow q
 ---
 El álgebra proposicional tiene las siguientes operaciones
 * [[Operador condicional|Operador condicional]] $(\to)$
-* [[Operador bicondicional|Operador bicondicional]] $(\leftrightarrow)$
+* [[Demostración de equivalencia|Operador bicondicional]] $(\leftrightarrow)$
 * [[Operador NAND|Operador NAND]] $(\uparrow)$
 * [[Operador NOR|Operador NOR]] $(\downarrow)$
 * [[Operador XOR|Operador XOR]] $(\oplus)$

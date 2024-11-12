@@ -12,7 +12,16 @@ tags:
   - ingeniería-electrónica/estructura/Álgebra-de-Boole
   - licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
   - licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
+  - licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
+  - licenciatura-en-ciencias-de-datos/algebra-1/Números-enteros
+referencias:
+  - "412"
+  - "414"
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Sea $A$ un [[Conjunto|conjunto]] dado en el que se han definido dos operaciones binarias $(\circ, \star)$. Entonces:
@@ -45,6 +54,12 @@ Sea $m,~ n,~ k \in \mathbb{N}$ se tiene
 
 $$ m \cdot (n + k) = m \cdot n + m \cdot k $$ ^173bc3
 
+## Números enteros
+---
+Para todo $a,~ b,~ c \in \mathbb{Z}$ 
+
+$$ a \cdot (b + c) = a \cdot b + a \cdot c $$ ^b3ee21
+
 ## Espacios vectoriales
 ---
 Para un [[Espacio vectorial|espacio vectorial]] $V$, un [[Cuerpo|cuerpo]] $\mathbb{K}$ y la operación [[Ley de composición externa|producto por escalar]] $\cdot$ respecto a los escalar, se tiene
@@ -54,3 +69,10 @@ $$ (\alpha + \beta) \cdot u = \alpha \cdot u + \beta \cdot u, ~~~ \forall u \in\
 Para un [[Espacio vectorial|espacio vectorial]] $V$, un [[Cuerpo|cuerpo]] $\mathbb{K}$ y la operación producto por escalar $\cdot$ respecto de la suma de vectores, se tiene
 
 $$ \alpha \cdot (u + v) = \alpha \cdot u + \alpha \cdot v, ~~~ \forall u, v   \in\mathbb{V}, ~~ \alpha \in\mathbb{K} $$ ^cb49a0
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```

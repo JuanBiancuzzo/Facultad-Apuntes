@@ -16,4 +16,4 @@ $\alpha$ es una sucesión de Cauchy sii $$ \forall \epsilon > 0 : ~~~ \exists n_
 ## Consecuencia
 ---
 * Toda sucesión de Cauchy es una [[Sucesión convergente|sucesión convergente]]
-* Toda sucesión de Cauchy es acotada (No vale la [[Demostración de equivalencia|recíproca]])
+* Toda sucesión de Cauchy es acotada (No vale la [[Demostración de equivalencia#Usando proposiciones|recíproca]])

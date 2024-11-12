@@ -9,11 +9,20 @@ tags:
   - ingeniería-en-informática/discreta/Álgebra-de-conjuntos
   - ingeniería-electrónica/algebra-2/Espacios-Vectoriales
   - licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
+  - licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
+  - licenciatura-en-ciencias-de-datos/algebra-1/Números-enteros
+referencias:
+  - "412"
+  - "414"
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Sea $A$ un [[Conjunto|conjunto]] dado en el que se han definido la operación binaria $\circ$. Dado dos elementos $a, b \in A$ estos se dicen que conmutan cuando $$ a \circ b = b \circ a $$
-Por lo tanto, una operación es conmutativa cuando dos elementos cualquiera conmutan.
+Por lo tanto, una operación es conmutativa cuando dos elementos cualquiera conmutan. ^c6b142
 
 ## Álgebra proposicional
 ---
@@ -39,8 +48,24 @@ Sea $m,~ n \in \mathbb{N}$ se tiene
 
 $$ m + n = n + m ~~ \text{y} ~~ m \cdot n = n \cdot m $$ ^4544c3
 
+## Números enteros
+---
+Para todo $a,~ b \in \mathbb{Z}$
+
+$$ a + b = b + a $$ ^c795df
+
+$$ a \cdot b = b \cdot a $$
+
 ## Espacios vectoriales
 ---
 Para un [[Espacio vectorial|espacio vectorial]] $V$, y la [[Ley de composición interna|operación suma]] $+$, se tiene
 
 $$ u + v = v + u, ~~~ \forall u, v \in\mathbb{V} $$ ^67ee7b
+
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```

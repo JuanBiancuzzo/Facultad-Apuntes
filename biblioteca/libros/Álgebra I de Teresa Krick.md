@@ -91,7 +91,7 @@ tags:
 ### Conjuntos
 ---
 Vamos a ver la definición de [[Conjunto|conjunto]], y [[Subconjunto|subconjunto]], con las operaciones de
-* [[Operador bicondicional|Igualdad]]
+* [[Demostración de equivalencia|Igualdad]]
 * [[Operador condicional#Álgebra de conjuntos|Inclusión]]
 * [[Operador OR#Álgebra de conjunto|Unión]]
 * [[Operador AND#Álgebra de conjunto|Intersección]]

@@ -32,7 +32,7 @@ El orden de los elementos no importa en un conjunto, y en un conjunto no se tien
 
 ## Operaciones
 ---
-* [[Operador bicondicional|Igualdad]]
+* [[Demostración de equivalencia|Igualdad]]
 * [[Operador condicional#Álgebra de conjuntos|Inclusión]]
 * [[Operador OR#Álgebra de conjunto|Unión]]
 * [[Operador AND#Álgebra de conjunto|Intersección]]

@@ -31,7 +31,7 @@ Sean $A$ un con conjunto y $\mathcal{R}$ una relación de equivalencia en $A$. S
 
 ## Relaciones de equivalencia y particiones
 ---
-Sea $A$ un conjunto. Hay una manera natural de asociarle a una relación de equivalencia en $A$ una partición de $A$. [[Demostración de equivalencia|Recíprocamente]], a toda partición se le puede asociar una relación de equivalencia, y estas asociaciones son inversas una de la otra
+Sea $A$ un conjunto. Hay una manera natural de asociarle a una relación de equivalencia en $A$ una partición de $A$. [[Demostración de equivalencia#Usando proposiciones|Recíprocamente]], a toda partición se le puede asociar una relación de equivalencia, y estas asociaciones son inversas una de la otra
 
 > [!quote]+ Demostración
 > Si $\mathcal{R}$ es una relación de equivalencia, como vimos anteriormente podemos considerar las clases de equivalencia de los elementos de $A$. Cada clase de equivalencia es un [[Subconjunto|subconjunto]], y dos de estos subconjuntos distintos son disjuntos. Como el conjunto es la unción de las clases, obtenemos una partición
