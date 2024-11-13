@@ -73,8 +73,157 @@ La [[Energía electromagnética|energía electromagnética]] puede ingresar a un
 
 ## Modelo circuital de la línea bifilar ideal
 ---
+En una línea de transmisión hay dimensiones, las transversales, que cumplen la condición cuasi-estática ($D \ll \lambda$), pero la otra dimensión (longitudinal) habitualmente no la cumple. Sin embargo, podemos ver la línea como una sucesión o cascada de cuadripolos de longitud infinitesimal y para cada uno de ellos usar un modelo circuital, cuyos parámetros descriptivos son las [[Tensión|tensiones]] y [[Corriente eléctrica|corrientes]] a la entrada y salida, ya que las dimensiones del cuadripolo satisfacen la condición cuasi-estática
 
+```tikz
+\usepackage[
+	americancurrents,
+	americanresistors, 
+	americaninductors, 
+	americanports, 
+	americangfsurgearrester
+]{circuitikz} 
 
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usepackage{ifthen}
+
+\ctikzset{
+	resistors/scale=0.7,
+	capacitors/scale=0.7,
+	inductors/scale=0.7,
+	cute inductors,
+}
+
+\begin{document} 
+\begin{circuitikz}[
+    voltage shift=0.5, scale=1.3, transform shape, thick,
+    loops/.style={circuitikz/inductors/coils=#1}
+]
+    \tikzmath{ \dimension = 2; \porcen = 0.2; \nporcen = 1 - \porcen; }
+    
+    \draw ({-\dimension / 2}, {-\dimension / 2}) 
+        rectangle ++(\dimension, \dimension);
+    \path ({-\dimension / 2}, {-\dimension / 2}) -- ++(0, \dimension)
+        node[pos=\porcen] (izqAbajo) {}
+        node[pos=\nporcen] (izqArriba) {};
+    \path ({ \dimension / 2}, {-\dimension / 2}) -- ++(0, \dimension)
+        node[pos=\porcen] (derAbajo) {}
+        node[pos=\nporcen] (derArriba) {};
+    
+    \tikzmath { \sep = 1; }
+    \draw (izqAbajo.center) to[short, -o] ++(-\sep, 0) node (izqAbajoFin) {};
+    \draw (izqArriba.center) to[short, -o] ++(-\sep, 0) node (izqArribaFin) {};
+    \draw (derAbajo.center) to[short, -o] ++(\sep, 0) node (derAbajoFin) {};
+    \draw (derArriba.center) to[short, -o] ++(\sep, 0) node (derArribaFin) {};
+    
+    \draw[shorten <=0.2cm, <-] (izqArribaFin.center)
+        -- ++({-0.8 * \sep}, 0) node[pos=0, scale=0.9, above left=2pt]
+            {$i(z,~ t)$};
+    \draw[shorten <=0.2cm, ->] (derArribaFin.center)
+        -- ++({0.8 * \sep}, 0) node[pos=0, scale=0.9, above right=2pt]
+            {$i(z + dz,~ t)$};
+    
+    \draw[shorten >= 0.3cm, shorten <= 0.3cm, ->] (izqAbajoFin.center) 
+        .. controls
+            ($ (izqAbajoFin.center) + ({-\sep / 2}, 0) $) and
+            ($ (izqArribaFin.center) + ({-\sep / 2}, 0) $) ..
+        (izqArribaFin.center) node[midway, left=2pt, scale=0.9] {$v(z,~ t)$};
+    \draw[shorten >= 0.3cm, shorten <= 0.3cm, ->] (derAbajoFin.center) 
+        .. controls
+            ($ (derAbajoFin.center) + ({\sep / 2}, 0) $) and
+            ($ (derArribaFin.center) + ({\sep / 2}, 0) $) ..
+        (derArribaFin.center) node[midway, right=2pt, scale=0.9] {$v(z + dz,~ t)$};
+    
+    \draw[->] ($ (izqAbajoFin) + ({-2 * \sep}, -\sep) $)
+        -- ($ (derAbajoFin) + ({2 * \sep}, -\sep) $)
+            node[pos=0.9, above right=2pt, scale=0.9] {$z$};
+    
+\end{circuitikz}
+\end{document}
+```
+
+Elegimos la dirección del eje cartesiano $z$ a lo largo de la línea. Cada tramo de longitud $dz$ a lo largo de la dirección $z$ puede asociarse a un cuadripolo, como se esquematizó
+
+Asumimos que la línea no presenta pérdidas de [[Energía|energía]]. En tal caso los [[Conductor|conductores]] de la línea serán perfectos ($\sigma \to \infty$) y el [[Dieléctrico|dieléctrico]] entre ellos tampoco tendrá pérdidas
+
+Las [[Carga eléctrica|cargas]] y corrientes en los conductores crearán [[Campo eléctrico|campos eléctricos]] y [[Material magnético#^campo-magnetico|campo magnético]] cuya energía almacenada puede modelizarse por componentes reactivos puros: [[Capacitor|capacitores]] e [[Inductor|inductores]]. La capacidad está asociada al campo eléctrico creado por las cargas en los conductores de la línea y la inductancia al campo magnético generado por las corrientes que circulan por ella
+
+```tikz
+\usepackage[
+	americancurrents,
+	americanresistors, 
+	americaninductors, 
+	americanports, 
+	americangfsurgearrester
+]{circuitikz} 
+
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usepackage{ifthen}
+
+\ctikzset{
+	resistors/scale=0.7,
+	capacitors/scale=0.7,
+	inductors/scale=0.7,
+	cute inductors,
+}
+
+\begin{document} 
+\begin{circuitikz}[
+    voltage shift=0.5, scale=1.3, transform shape, thick,
+    loops/.style={circuitikz/inductors/coils=#1}
+]
+    \tikzmath{ \dimension = 3; \porcen = 0.2; \nporcen = 1 - \porcen; }
+    
+    \draw ({-\dimension / 2}, {-\dimension / 2}) 
+        rectangle ++(\dimension, \dimension);
+    \path ({-\dimension / 2}, {-\dimension / 2}) -- ++(0, \dimension)
+        node[pos=\porcen] (izqAbajo) {}
+        node[pos=\nporcen] (izqArriba) {};
+    \path ({ \dimension / 2}, {-\dimension / 2}) -- ++(0, \dimension)
+        node[pos=\porcen] (derAbajo) {}
+        node[pos=\nporcen] (derArriba) {};
+        
+    \draw (izqArriba.center) 
+        to[L, loops=5, l^=$L~dz$] ++({0.7 * \dimension}, 0) 
+            node[above=2pt, scale=0.9] {$A$}
+        to[short] ++({0.3 * \dimension}, 0);
+    \draw (izqAbajo.center) -- (derAbajo.center);
+    \draw ($ (izqAbajo.center) + ({0.7 * \dimension, 0}) $)
+        to[C, l^=$C~dz$, *-*] ++(0, {(\nporcen - \porcen) * \dimension});
+    
+    \tikzmath { \sep = 1; }
+    \draw (izqAbajo.center) to[short, -o] ++(-\sep, 0) node (izqAbajoFin) {};
+    \draw (izqArriba.center) to[short, -o] ++(-\sep, 0) node (izqArribaFin) {};
+    \draw (derAbajo.center) to[short, -o] ++(\sep, 0) node (derAbajoFin) {};
+    \draw (derArriba.center) to[short, -o] ++(\sep, 0) node (derArribaFin) {};
+    
+    \draw[shorten <=0.2cm, <-] (izqArribaFin.center)
+        -- ++({-0.8 * \sep}, 0) node[pos=0, scale=0.9, above left=2pt]
+            {$i(z,~ t)$};
+    \draw[shorten <=0.2cm, ->] (derArribaFin.center)
+        -- ++({0.8 * \sep}, 0) node[pos=0, scale=0.9, above right=2pt]
+            {$i(z + dz,~ t)$};
+    
+    \draw[shorten >= 0.3cm, shorten <= 0.3cm, ->] (izqAbajoFin.center) 
+        .. controls
+            ($ (izqAbajoFin.center) + ({-\sep / 2}, 0) $) and
+            ($ (izqArribaFin.center) + ({-\sep / 2}, 0) $) ..
+        (izqArribaFin.center) node[midway, left=2pt, scale=0.9] {$v(z,~ t)$};
+    \draw[shorten >= 0.3cm, shorten <= 0.3cm, ->] (derAbajoFin.center) 
+        .. controls
+            ($ (derAbajoFin.center) + ({\sep / 2}, 0) $) and
+            ($ (derArribaFin.center) + ({\sep / 2}, 0) $) ..
+        (derArribaFin.center) node[midway, right=2pt, scale=0.9] {$v(z + dz,~ t)$};
+        
+\end{circuitikz}
+\end{document}
+```
+
+Nos queda así el cuadripolo, donde $L~dz$ es la inductancia del tramo y $C ~ dz$ su capacidad
 
 # Referencias
 ---
