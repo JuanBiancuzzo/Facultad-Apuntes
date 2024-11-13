@@ -32,6 +32,41 @@ Entonces $\mathcal{R}$ es una [[Relación de equivalencia|relación de equivalen
 >  * Transitividad
 >      * Hay que probar que para todo $a,~ b,~ c \in \mathbb{Z}$ tales que $a \equiv b ~ (\text{mod} ~ d)$ y $b \equiv c ~ (\text{mod} ~ d)$ entonces $a \equiv c ~ (\text{mod} ~ d)$. Pero $a \equiv b ~ (\text{mod} ~ d)$ significa que $d \mid a - b$, y $b \equiv c ~ (\text{mod} ~ d)$ significa que $d \mid b - c$. Por lo tanto $d \mid (a - b) + (b - c) = a - c$, es decir $a \equiv c ~ (\text{mod} ~ d)$
 
+## Propiedades
+---
+Sea $d \in \mathbb{Z}$, $d \ne 0$. Entonces 
+
+1. $\forall a_1,~ a_2,~ b_1,~ b_2 \in \mathbb{Z}$ $$ a_1 \equiv b_1 ~ (\text{mod} ~ d) ~~ \text{y} ~~ a_2 \equiv b_2 ~ (\text{mod} ~ d) ~~ \text{y} \implies a_1 + a_2 \equiv b_1 + b_2 ~ (\text{mod} ~ d) $$
+> [!quote]+ Demostración
+> 
+
+2. Para todo $n \in \mathbb{N}$, $a_1,~ \cdots,~ a_n,~ b_1,~ \cdots,~ b_n \in \mathbb{Z}$ $$ \begin{cases}
+       a_1 \equiv b_1 ~ (\text{mod} ~ d) \\
+       ~~~~~~\vdots \\
+       a_n \equiv b_n ~ (\text{mod} ~ d) \\
+   \end{cases} \implies a_1 + \cdots + a_n \equiv b_1 + \cdots + b_n ~ (\text{mod} ~ d) $$
+> [!quote]+ Demostración
+> 
+
+3. $\forall a,~ b,~ c \in \mathbb{Z}$, $$ a \equiv b ~ (\text{mod} ~d) \implies c ~ a \equiv c ~ b ~ (\text{mod} ~d) $$
+> [!quote]+ Demostración
+> 
+
+4. $\forall a_1,~ a_2,~ b_1,~ b_2 \in \mathbb{Z}$, $$ a_1 \equiv b_1 ~ (\text{mod} ~ d) ~~ \text{y} ~~ a_2 \equiv b_2 ~ (\text{mod} ~ d) ~~ \text{y} \implies a_1 ~ a_2 \equiv b_1 ~ b_2 ~ (\text{mod} ~ d) $$
+> [!quote]+ Demostración
+> 
+
+5. Para todo $n \in \mathbb{N}$, $a_1,~ \cdots,~ a_n,~ b_1,~ \cdots,~ b_n \in \mathbb{Z}$ $$ \begin{cases}
+       a_1 \equiv b_1 ~ (\text{mod} ~ d) \\
+       ~~~~~~\vdots \\
+       a_n \equiv b_n ~ (\text{mod} ~ d) \\
+   \end{cases} \implies a_1 ~ \cdots ~ a_n \equiv b_1 ~ \cdots ~ b_n ~ (\text{mod} ~ d) $$
+> [!quote]+ Demostración
+> 
+
+6. $\forall a,~ b \in \mathbb{Z}$, $n \in \mathbb{N}$, $$ a \equiv b ~ (\text{mod} ~ d) \implies a^n \equiv b^n ~ (\text{mod} ~ d) $$
+> [!quote]+ Demostración
+> 
 
 # Referencias
 ---

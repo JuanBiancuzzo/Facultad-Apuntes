@@ -3,7 +3,14 @@ dia: 2023-05-26
 tags:
   - ingeniería-en-informática/orga/Machine-learning
   - nota/facultad
+referencias:
+  - "514"
+  - "515"
+etapa: empezado
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Hay diferentes métricas que pueden usarse para la [[Validación del modelo|validación de un modelo]], estas intentan cuantificar lo "correcto" que es dicho modelo, tenemos algunos como:
@@ -23,3 +30,12 @@ Hay diferentes métricas que pueden usarse para la [[Validación del modelo|vali
 	* Mean absolute error
 	* AUC-ROC
 	* Es un punto medio entre precisión y recall, donde encuentra este valor sin tener un hyperparameters
+* F1 Score
+* Specificity
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```

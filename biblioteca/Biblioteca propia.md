@@ -11,7 +11,7 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (107)
+#### Buscar (113)
 ---
 Programación:
 1. [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/-/es/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
@@ -69,6 +69,12 @@ Psico (?):
 16. [The construction of Social Reality](https://www.amazon.com/Construction-Social-Reality-John-Searle/dp/0684831791?crid=1OT7QVLJ9H575&dib=eyJ2IjoiMSJ9.7CADxWMbikr4fs8QfBEvcZlPsrFOFxkBEaReye2Yf3fjSpEl7dHbRqYLSOvZr61vzYNYMJoF3wxOPycRuWQA1xINvKDxTpMXkL97ojx3boGmP_qNatsvyUygsHlsW8ecK6ww5nFHvZAttfMUpjlWJJFThvD6k4aSBsEPlsNx00LgGJRiImLVVgzNKduHQ0ejogZs1gNNVL_I2htLA2f22E6qyLEoavQSZHHtIbmaMLY.g0aRGNe4nJMN4bot10-aDdM0bXZ5yhytbMjWywMuxvs&dib_tag=se&keywords=The+construction+of+Social+Reality&qid=1729867889&s=books&sprefix=the+construction+of+social+reality,stripbooks-intl-ship,476&sr=1-1)
 17. [The Math of Life and Death de Kit Yates](https://www.amazon.com/Math-Life-Death-Mathematical-Principles/dp/1982111879?crid=2FSRLBNIF306U&dib=eyJ2IjoiMSJ9.JisQ_I18P9kiU0SkOUI90lu_qZZ2Ae4qpVgpieBSJ2uaYE1u_zQTbySPb9LOBBPKnqBrxXIOvPZTeb6Glqr0FOAP6F8yfJGh-XGjBQPyg7g.BoFKGGApuG1_3FtMuzkQi7js2pc8XikUvyTc5OgONRc&dib_tag=se&keywords=The+Math+of+Life+and+Death+de+Kit+Yates&qid=1729867907&s=books&sprefix=the+math+of+life+and+death+de+kit+yates,stripbooks-intl-ship,210&sr=1-1)
 18. [Abre tu mente a los números de Barbara Oakley](https://www.amazon.com/Abre-mente-n%C3%BAmeros-FICCION-Spanish-ebook/dp/B01HTFCNVM?crid=2DXCHAYVRP2KH&dib=eyJ2IjoiMSJ9.tW7po8xW-TvC_hszmq-zV5hGNrqWaSsXSHT5EUbdOXzGjHj071QN20LucGBJIEps.yjrTYyCgUGd-CTCLdplwx6tgArHkHRsBDj7c2irmq00&dib_tag=se&keywords=Abre+tu+mente+a+los+n%C3%BAmeros+de+Barbara+Oakley&qid=1729867947&s=books&sprefix=abre+tu+mente+a+los+n%C3%BAmeros+de+barbara+oakley,stripbooks-intl-ship,195&sr=1-1)
+19. [Zoey Is Too Drunk for This Dystopia](https://www.amazon.com/Zoey-Drunk-This-Dystopia-Ashe-ebook/dp/B0BQGHL4FT)
+20. [John Dies at the End](https://www.amazon.com/-/es/David-Wong/dp/0312659148)
+21. [This Book Is Full of Spiders: Seriously, Dude, Don't Touch It](https://www.amazon.com/This-Book-Full-Spiders-Seriously/dp/1250036658)
+22. [What the Hell Did I Just Read: A Novel of Cosmic Horro](https://www.amazon.com/What-Hell-Did-Just-Read/dp/1250040205)
+23. [If This Book Exists, You're in the Wrong Universe: A John, Dave, and Amy Nove](https://www.amazon.com/This-Exists-Youre-Wrong-Universe/dp/1250195829)
+24. [The War of Art](https://www.amazon.com/dp/B07PTBYH2G/?_encoding=UTF8&pd_rd_w=vbIfF&content-id=amzn1.sym.f76d456a-cb0d-44de-b7b0-670c26ce80ba&pf_rd_p=f76d456a-cb0d-44de-b7b0-670c26ce80ba&pf_rd_r=139-6534169-2926236&pd_rd_wg=eOCj4&pd_rd_r=7a283fcd-c53d-4660-ad87-05a7baddcf59&ref_=aufs_ap_sc_dsk)
 
 Matemática:
 1. [In pursuit of the unknown de Ian Stewart](https://www.amazon.com/Pursuit-Equations-That-Changed-World/dp/0465085989?crid=2377Y82ZXWKUL&dib=eyJ2IjoiMSJ9.hfuwVt2_o82rbVCztjptioq2cEQ-8iL3UcMkMup6twk.eJlo7lqy1G7TS3lIqW8avFXt5yljkOhMNYIfv5lXX5U&dib_tag=se&keywords=In+pursuit+of+the+unknown+de+Ian+Stewart&qid=1729868452&s=books&sprefix=abre+tu+mente+a+los+n%C3%BAmeros+de+barbara+oakley,stripbooks-intl-ship,583&sr=1-1)
