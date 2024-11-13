@@ -4,9 +4,18 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/analisis-2/Nomenclatura
   - ingeniería-electrónica/analisis-2/Nomenclatura
+  - licenciatura-en-ciencias-matemáticas/analisis-1/Vectores-y-geometría-del-espacio
+  - licenciatura-en-ciencias-de-datos/analisis-1/Vectores-y-geometría-del-espacio
+  - licenciatura-en-ciencias-físicas/analisis-1/Vectores-y-geometría-del-espacio
 aliases:
   - Distancia entre vectores
+referencias:
+  - "517"
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 La [[Distancia euclidiana|distancia]] entre dos vectores $x$ y $y$ se puede usar la definición de [[Norma|norma]] para definirla, tal que
@@ -40,7 +49,7 @@ $$ d: A \times A \to \mathbb{R}, ~~~~ d(X, Y) \doteq \lVert X - Y \rVert $$
 
 ## Otra forma de verlo
 ---
-Teniendo una [[Base ortonormal|base ortonormal]] tal que $B = \{u_1, u_2, \cdots, u_n \}$, podemos escribir la distancia entre dos vectores como
+Teniendo una [[Base ortonormal|base ortonormal]] tal que $B = \{u_1, u_2, \cdots, u_n \}$, podemos escribir la distancia entre dos vectores usando el [[Teorema de Pitagoras|teorema de Pitagoras]] como
 
 $$ d(v_1, v_2) = \sqrt{\sum^n_{j = 1}(\langle v_2, u_j \rangle - \langle v_1, u_j \rangle)^2} $$
 
@@ -51,3 +60,10 @@ $$ \lVert v_2 - v_1 \rVert^2 = \langle v_2 - v_1, v_2 - v_1 \rangle $$
 como vimos en [[Norma inducida|norma inducida]], por lo tanto 
 
 $$ \langle v_2 - v_1, v_2 - v_1 \rangle = \sum^n_{j = 1}(\langle v_2, u_j \rangle - \langle v_1, u_j \rangle)^2 $$
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```

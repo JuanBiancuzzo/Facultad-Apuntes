@@ -5,6 +5,9 @@ tags:
   - resumen
   - licenciatura-en-ciencias-de-datos/analisis-1/Vectores-y-geometría-del-espacio
   - licenciatura-en-ciencias-físicas/analisis-1/Vectores-y-geometría-del-espacio
+referencias:
+  - "517"
+  - "521"
 ---
 # Índice
 ---

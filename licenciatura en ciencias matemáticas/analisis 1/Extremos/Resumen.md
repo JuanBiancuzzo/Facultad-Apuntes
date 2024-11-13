@@ -5,6 +5,8 @@ tags:
   - resumen
   - licenciatura-en-ciencias-de-datos/analisis-1/Extremos
   - licenciatura-en-ciencias-físicas/analisis-1/Extremos
+referencias:
+  - "523"
 ---
 # Índice
 ---

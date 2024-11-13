@@ -5,6 +5,9 @@ tags:
   - resumen
   - licenciatura-en-ciencias-de-datos/analisis-1/Funciones-vectoriales-y-de-varias-variables
   - licenciatura-en-ciencias-físicas/analisis-1/Funciones-vectoriales-y-de-varias-variables
+referencias:
+  - "522"
+  - "523"
 ---
 # Índice
 ---

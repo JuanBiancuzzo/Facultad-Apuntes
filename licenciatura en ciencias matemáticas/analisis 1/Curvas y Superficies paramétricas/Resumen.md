@@ -5,6 +5,8 @@ tags:
   - resumen
   - licenciatura-en-ciencias-de-datos/analisis-1/Curvas-y-Superficies-paramétricas
   - licenciatura-en-ciencias-físicas/analisis-1/Curvas-y-Superficies-paramétricas
+referencias:
+  - "519"
 ---
 # Índice
 ---

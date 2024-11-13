@@ -5,7 +5,9 @@ etapa: sin-empezar
 estado: Sin empezar
 tags:
   - materia/licenciatura-en-ciencias-matemáticas
-correlativas:
+correlativas: 
+referencias:
+  - "518"
 ---
 # Apuntes
 ---
