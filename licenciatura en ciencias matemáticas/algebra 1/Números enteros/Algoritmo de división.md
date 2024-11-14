@@ -14,7 +14,8 @@ tags:
 ```
 # Definición
 ---
-
+Dados $a,~ d \in \mathbb{Z}$ con $d \ne 0$, existen $k,~ r \in \mathbb{Z}$ que satisfacen $$ a = k \cdot d + r, ~~~ \text{con} ~ 0 \le r z < |d| $$
+Además, $k$ y $r$ son únicos en tales condiciones
 
 
 

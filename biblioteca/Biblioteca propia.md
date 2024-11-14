@@ -11,7 +11,7 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (113)
+#### Buscar (114)
 ---
 Programación:
 1. [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/-/es/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
@@ -34,6 +34,7 @@ Programación:
 13. [The Linux Programming Interface: A Linux and UNIX System Programming Handbook](https://www.amazon.com/Linux-Programming-Interface-System-Handbook/dp/1593272200)
 14. [TCP/IP Illustrated, Vol. 1](https://www.amazon.com/TCP-Illustrated-Vol-Addison-Wesley-Professional/dp/0201633469)
 15. [Cybersecurity Ops with bash](https://www.amazon.com/Cybersecurity-Ops-bash-Analyze-Command/dp/1492041319)
+16. [Tour of C++](https://www.amazon.com/Tour-2nd-Depth-Bjarne-Stroustrup/dp/0134997832)
 
 Hacking:
 1. 
