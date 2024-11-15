@@ -30,7 +30,7 @@ Despejando podemos llegar a la [[Ecuación de Helmholtz|ecuación de Helmholtz]]
 
 La solución de la ecuación es $$ \tilde{E}(\vec{r}) = \tilde{E}_0 e^{\mp i \gamma z} $$
 Donde si planteamos que $\gamma = \beta - i\alpha$ la solución la podemos reescribir $$ \vec{E}(\vec{r},~t) = \tilde{E}_1 ~ e^{-\alpha z} ~ e^{i(\omega t - \beta z)} + \tilde{E}_2 ~ e^{-\alpha z} ~ e^{i(\omega t + \beta z)} $$
-El primer sumando es una [[Onda plana electromagnética#^onda-progresiva|onda progresiva]] y el segundo una [[Onda plana electromagnética#^onda-regresiva|onda regresiva]], cuyas amplitudes decaen exponencialmente a medida que se propaga
+El primer sumando es una [[Ecuación de onda#^onda-progresiva|onda progresiva]] y el segundo una [[Ecuación de onda#^onda-regresiva|onda regresiva]], cuyas amplitudes decaen exponencialmente a medida que se propaga
 
 La parte real $\beta$ del [[Onda monocromática#^numero-onda|número de onda]] es llamado factor de propagación y la parte imaginaria $\alpha$ el factor de atenuación. En general ambos parámetros dependen de la frecuencia ^factor
 

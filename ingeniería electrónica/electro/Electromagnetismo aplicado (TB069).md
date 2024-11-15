@@ -8,6 +8,9 @@ tags:
 etapa: ampliar
 correlativas:
   - "[[Análisis de circuitos (8604)|Análisis de Circuitos]]"
+referencias:
+  - "538"
+  - "539"
 ---
 # Apuntes
 ---

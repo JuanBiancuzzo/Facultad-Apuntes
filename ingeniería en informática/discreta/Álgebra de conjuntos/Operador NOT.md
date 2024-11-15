@@ -26,7 +26,7 @@ Este [[Operación lógica|operador lógico]] tiene varias representaciones
 
 ## Álgebra de proposiciones
 ---
-Considerando las [[Función proposicional|funciones proposicionales]] correspondientes $p'$ dada por la [[Tabla de verdad|tabla de verdad]] $$ \begin{array}{|c|c|}
+Considerando las [[Función#Álgebra proposicional|funciones proposicionales]] correspondientes $p'$ dada por la [[Tabla de verdad|tabla de verdad]] $$ \begin{array}{|c|c|}
 \hline
 p & p'\\
 \hline

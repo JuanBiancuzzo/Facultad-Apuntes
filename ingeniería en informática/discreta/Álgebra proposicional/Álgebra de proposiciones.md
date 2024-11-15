@@ -8,7 +8,7 @@ aliases:
 ---
 # Definición
 ---
-Para una [[Proposición|proposición]] $p$, entonces tendremos $4$ [[Función proposicional|funciones]] $f(p)$. Podemos visualizar esta cuatro funciones de una tabla de verdad 
+Para una [[Proposición|proposición]] $p$, entonces tendremos $4$ [[Función#Álgebra proposicional|funciones]] $f(p)$. Podemos visualizar esta cuatro funciones de una tabla de verdad 
 
 $$ \begin{array}{|c||c:c:c:c|}
 \hline

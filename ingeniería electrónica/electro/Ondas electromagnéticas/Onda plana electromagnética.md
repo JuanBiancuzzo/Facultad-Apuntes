@@ -5,8 +5,6 @@ tags:
   - nota/facultad
 aliases:
   - Onda plana electromagnética elemental
-  - Onda progresiva#^onda-progresiva
-  - Onda regresiva#^onda-regresiva
 ---
 # Definición
 ---
@@ -17,10 +15,6 @@ Además, para evitar [[Derivable|derivar]] [[Versor|versores]], usaremos ondas l
 Entonces, partiendo de una [[Onda electromagnética|onda electromagnética]] $$ \nabla^2 \vec{E} - \frac{1}{c^2} \frac{\partial^2}{\partial t^2}\vec{E} = 0 \implies \frac{\partial^2}{\partial z^2} E - \frac{1}{c^2} \frac{\partial^2}{\partial t^2}E = 0 $$
 
 Que es una [[Ecuación de onda|ecuación escalar de D' Alembert]]. Se puede ver como toda [[Función|función]] de la forma $$ f(z \mp ct ) $$ es solución de la ecuación de D'Alembert. Estas formas matemáticas representan ondas que se propagan con [[Velocidad|velocidad]] $\pm c$ a lo largo de la dirección $z$
-
-El doble signo de la función determina el sentido de la propagación
-* $f(z - ct)$ propagación según $+z$ ^onda-progresiva
-* $f(z + ct)$ propagación según $-z$ ^onda-regresiva
 
 ## Transversabilidad
 ---

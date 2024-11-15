@@ -14,7 +14,7 @@ El vector de Poynting de una [[Onda plana electromagnética|onda plana en el vac
     \vec{N}(\vec{r},~t) &= \vec{E}(\vec{r},~t) \times \vec{H}(\vec{r},~t) \\
      &= \vec{E}(\vec{r},~t) \times \left( \pm \frac{\hat{z} \times \vec{E}(\vec{r},~t)}{\eta_0} \right) \\
      &= \pm \frac{1}{\eta_0} E^2(\vec{r},~t) ~ \hat{z}
-\end{align} \implies \vec{N}(\vec{r},~t) = \pm \frac{1}{\eta_0} E^2(\vec{r},~t) ~ \hat{z} $$ donde $\eta_0$ es la [[Impedancia intrínseca|impedancia intrínseca del vacío]] y donde el signo $(+)$ corresponde a una [[Onda plana electromagnética#^onda-progresiva|onda progresiva]] y el signo $(-)$ para la [[Onda plana electromagnética#^onda-regresiva|onda regresiva]]
+\end{align} \implies \vec{N}(\vec{r},~t) = \pm \frac{1}{\eta_0} E^2(\vec{r},~t) ~ \hat{z} $$ donde $\eta_0$ es la [[Impedancia intrínseca|impedancia intrínseca del vacío]] y donde el signo $(+)$ corresponde a una [[Ecuación de onda#^onda-progresiva|onda progresiva]] y el signo $(-)$ para la [[Ecuación de onda#^onda-regresiva|onda regresiva]]
 
 Este resultado es válido para cualquiera sea la forma de onda de la onda plana
 

@@ -12,6 +12,7 @@ tags:
   - ingeniería-electrónica/algo-1/Lenguaje-C
   - ingeniería-electrónica/taller/Sintaxis
   - ingeniería-electrónica/estructura/Álgebra-de-Boole
+  - ingeniería-en-informática/discreta/Álgebra-proposicional
 aliases:
   - Prototipo de una función#Expresión en C
   - Firma de una función#Expresión en C
@@ -64,9 +65,13 @@ Escribimos estas funciones como $f: D \to H$ donde los conjuntos $D$ (el [[Domin
 \end{document}
 ```
 
-## Álgebra de Bool
+## Álgebra de Boole
 ---
 Es una función cuyo [[Conjunto|conjunto]] de llegada (el dominio) y el conjunto de salida (el codominio), son elementos definidos por el [[Álgebra de Boole|álgebra de Boole]]
+
+## Álgebra proposicional
+---
+La función proposicional del argumento $x$ escribe como $p(x)$ se convierte en una [[Proposición|proposición]] $p(a)$ cuando al argumento $x$ se le asigna un valor fijo $a$, tomando de un [[Conjunto|conjunto]] de referencia $I$
 
 ## Expresión en C
 ---

@@ -9,6 +9,8 @@ tags:
 aliases:
   - Modelo de constantes distribuidas
   - Modelo circuital de la línea bifilar ideal#Modelo circuital de la línea bifilar ideal
+  - Ecuaciones del telegrafista#^ecuaciones-telegrafista
+  - Impedancia característica de la línea ideal#^impedancia-caracteristica-linea
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
@@ -223,7 +225,32 @@ Las [[Carga eléctrica|cargas]] y corrientes en los conductores crearán [[Campo
 \end{document}
 ```
 
-Nos queda así el cuadripolo, donde $L~dz$ es la inductancia del tramo y $C ~ dz$ su capacidad
+Nos queda así el cuadripolo, donde $L~dz$ es la inductancia del tramo y $C ~ dz$ su capacidad 
+
+Podemos aplicar ahora las [[Ley de nodos de Kirchhoff|ley de Kirchhoff]] a este modelo cuasi-estático. Aplicando al [[Nodo|nodo]] $A$ lleva a $$ i(z + dz) - i(z) + C ~ dz ~ \frac{\partial v}{\partial t} \bigg|_z = 0 $$ donde el último término representa la corriente que sale de $A$ por el capacitor. Pero, a primer orden $$ i(z + dz) - i(z) \approx \frac{\partial i}{\partial z} \bigg|_z ~ dz \implies \frac{\partial i}{\partial z} \bigg|_z \approx -C ~\frac{\partial v}{\partial t} \bigg|_z $$
+Análogamente, si calculamos la [[Malla|malla]] formada por el cuadripolo en sentido antihorario, tenemos $$ v(z + dz) + L ~ dz ~ \frac{\partial i}{\partial t} - v(z) \approx 0 $$ de donde se obtiene, nuevamente a primer orden $$ \frac{\partial v}{\partial z} \bigg|_z \approx -L ~ \frac{\partial i}{\partial t} \bigg|_z $$
+Estas dos ecuaciones diferenciales ligadas para la tensión y la corriente a la entrada del cuadripolo son las llamadas ecuaciones del telegrafista para la línea ideal ^ecuaciones-telegrafista
+
+Con el fin de analizar el significado de estas ecuaciones nos conviene desacoplar las [[Ecuación diferencial en derivadas parciales|ecuaciones diferenciales]], para lo cual derivamos la primera respecto del tiempo y la segunda respecto de $z$ $$ \begin{matrix} 
+    \displaystyle \frac{\partial^2 i}{\partial z ~ \partial t} = -C ~ \frac{\partial^2 v}{\partial t^2} &&&
+    \displaystyle \frac{\partial^2 v}{\partial z^2} = -L~ \frac{\partial^2 v}{\partial t ~ \partial z}
+\end{matrix} $$ donde se ha sobreentendido que las cantidades se calculan en $z$. Pero las derivadas cruzadas son iguales, de manera que nos queda $$ \frac{\partial^2 v}{\partial z^2} - LC ~ \frac{\partial^2 v}{\partial t^2} = 0 $$
+Esta ecuación diferencial para la tensión $v(z,~ t)$ se denomina [[Ecuación de onda|ecuación de ondas o ecuación de D' Alembert]]. Es una ecuación diferencial lineal homogénea a derivadas parciales, cuya solución es cualquier [[Función|función]] del tipo $$ v(z,~ t) = f(z \mp ct), ~~~~ \text{con} ~ c = \frac{1}{\sqrt{LC}} $$
+Esta función representa una onda que se propaga a lo largo del eje $z$ con velocidad $c$
+ 
+Si se toma el signo $(-)$ de la doble determinación, la onda se propaga en el sentido de $+z$ ([[Ecuación de onda#^onda-progresiva|onda progresiva]]), mientras que si se toma el signo $(+)$ la propagación es según $-z$ ([[Ecuación de onda#^onda-regresiva|onda regresiva]])
+
+Se obtiene una ecuación idéntica para la corriente $i(z,~ t)$ a lo largo de la línea
+
+Además de las ondas de tensión y corriente están vinculadas entre sí. Consideremos una onda progresiva con $v(z,~ t) = f(z - ct)$ y $i(z,~ t) = g(z - ct)$. Entonces $$ \frac{\partial v}{\partial z} = -L ~ \frac{\partial i}{\partial t} \implies \begin{cases} 
+    \displaystyle \frac{\partial v}{\partial z} = \frac{\partial f}{\partial u} ~ \frac{\partial u}{\partial z} = \frac{\partial f}{\partial u} \\\\
+    \displaystyle \frac{\partial i}{\partial t} = \frac{\partial g}{\partial u} ~ \frac{\partial u}{\partial t} = -c \frac{\partial g}{\partial u} \\
+\end{cases} $$
+Luego $\frac{\partial f}{\partial u} = L ~ c ~ \frac{\partial g}{\partial u}$ e integrando $f(z - ct) = \sqrt{\frac{L}{C}} ~ g(z - ct)$ de donde $$ v(z,~ t) = Z_0 ~ i(z,~ t) ~~~~ \text{con} ~ Z_0 = \sqrt{\frac{L}{C}} $$La cantidad $Z_0$ tiene dimensiones de [[Impedancia|impedancia]] y se llama impedancia característica de la línea ^impedancia-caracteristica-linea
+
+Junto con la velocidad de propagación de las ondas $c = \frac{1}{\sqrt{L ~ C}}$ son los parámetros fundamentales que describen el comportamiento de la línea como dispositivo transmisor de [[Energía|energía]]
+
+
 
 # Referencias
 ---
