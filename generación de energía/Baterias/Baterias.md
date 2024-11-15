@@ -1,16 +1,23 @@
 ---
-dia: 2024-09-03
-estado: Sin empezar
-tags:
-  - índice
-  - generación-de-energía
+dia: 2024-11-15
+estado: 'Sin empezar'
+orden: 439
+tags: 
+ - índice
+ - generación-de-energía/Baterias
+ - nota/investigacion
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
-Quiero investigar la generación de [[Energía|energía]], la cual puede ser interesante entender
+Vamos a investigar diferentes baterías, donde veremos sus pros y contras dependiendo de la situación 
+
+## Resumen
+---
+Pendiente...
+
 
 ## Archivos
 ---
