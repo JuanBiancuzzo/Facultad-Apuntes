@@ -30,18 +30,6 @@
       "mode": "any"
     },
     {
-      "id": "quickadd:choice:c0cdf993-4976-486c-be58-2935f90f64aa",
-      "icon": "book-open",
-      "name": "Agregar Libro",
-      "mode": "any"
-    },
-    {
-      "id": "quickadd:choice:b0bb0116-3d55-41a2-9fd3-afc8cf2db966",
-      "icon": "archive",
-      "name": "Nuevo paper",
-      "mode": "any"
-    },
-    {
       "id": "templater-obsidian:_template/investigacion/Agregar referencia.md",
       "icon": "bookmark",
       "name": "Agregar referencia",
@@ -57,6 +45,12 @@
       "id": "quickadd:choice:ec1789ad-c82c-4efd-a6f9-3061ac6fa76e",
       "icon": "box",
       "name": "Nuevo GDD",
+      "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:1d03d4fa-4aa0-4a7c-a83d-c40f0cb44f1a",
+      "icon": "lucide-archive-restore",
+      "name": "Ingresar a la biblioteca",
       "mode": "any"
     }
   ],

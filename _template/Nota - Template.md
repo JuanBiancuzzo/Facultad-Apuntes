@@ -42,18 +42,21 @@
                 template: "Nota proyecto - Template"
             });
         
-        if (pertenece.archivoLibro(path) || (pertenece.archivoBiblioteca(path) && !pertenece.archivoPaper(path))) 
-            posiblesInfoNota.push({
-                descripcion: "Citar un libro",
-                template: "Libro - Template"
-            });
+        let esLibro = pertenece.archivoLibro(path);
+        let esPaper = pertenece.archivoPaper(path);
+        let esRFC = false;
+        let esPatente = false;
+
+        let enBiblioteca = pertenece.archivoBiblioteca(path) && [ esLibro, esPaper, esRFC, esPatente ].every(b => !b);
         
-        if (pertenece.archivoPaper(path) || (pertenece.archivoBiblioteca(path) && !pertenece.archivoLibro(path)))
-            posiblesInfoNota.push({
-                descripcion: "Citar un paper",
-                template: "Paper - Template"
-            });
+        if (esLibro || enBiblioteca) posiblesInfoNota.push({ descripcion: "Citar un libro", template: "Libro - Template" });
         
+        if (esPaper || enBiblioteca) posiblesInfoNota.push({ descripcion: "Citar un paper", template: "Paper - Template" });
+
+        if (esRFC || enBiblioteca) posiblesInfoNota.push({ descripcion: "Citar un RFC", template: "" });
+        
+        if (esPatente || enBiblioteca) posiblesInfoNota.push({ descripcion: "Citar una patente", template: "" });
+
         if (pertenece.archivoComida(path)) {
             // Nota receta
 

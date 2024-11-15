@@ -25,56 +25,37 @@
 	tR += `tipoCita: ${tipoCita}\n`;
 	tR += `numReferencia: ${parseInt(numReferencia, 10)}\n`;
 
-	let infoLibro = {};
-	let nombreArchivo;
-	let cover;
-	try {
-        infoLibro = await tp.user.cita().citar(tp, tipoCita, numReferencia + 1);
+    let infoLibro = await tp.user.cita().citar(tp, tipoCita, numReferencia + 1);
 
-		let autores = [];
-		for (let autore of infoLibro.nombreAutores) {
-			autores.push(`${autore.nombre} ${autore.apellido}`);
-		}
-		
-		let subTitulo = "";
-		if (infoLibro.subtituloObra) {
-			subTitulo = `, ${infoLibro.subtituloObra.charAt(0).toLowerCase()}${infoLibro.subtituloObra.slice(1)}`;
-		}
-		let volumen = (infoLibro.volumen) ? ` (vol. ${infoLibro.volumen})` : "";
-		nombreArchivo = `${infoLibro.tituloObra}${subTitulo}${volumen} de ${autores.join(", ")}`;
-
-		let intercambios = [[":", ","], ['"', "'"], ["<", "("], [">", ")"], ["?", ""]]
-		for (let [caracterInvalido, caracterValido] of intercambios) {
-			nombreArchivo = nombreArchivo.replaceAll(caracterInvalido, caracterValido);
-		}
-		CARACTERES_INVALIDOS.forEach(caracterInvalido => nombreArchivo = nombreArchivo.replaceAll(caracterInvalido, ","));
-
-        
-        await tp.file.move(`biblioteca/libros/${nombreArchivo}`);
-
-		tR += tp.obsidian.stringifyYaml(infoLibro);
-
-		let datos = await dataLibroAPI(infoLibro.tituloObra, infoLibro.nombreAutores[0]);
-		let generador = generadorKeyValueCover(datos);
-
-		let nombreImagen = `${nombreArchivo}.${EXT}`;
-		cover = await guardarImagen(generador, nombreImagen, SIZE.MEDIUM);	
-
-	} catch ({ name: nombre, message: mensaje }) {
-		const eliminar = tp.user.eliminar();
-		const errorNombre = tp.user.error().nombre;
-
-		console.log(nombre);
-		console.log(mensaje);
-
-        switch (nombre) {
-            case errorNombre.quit:
-                return await eliminar.directo(tArchivo, mensaje);
-                
-            case errorNombre.prompt:
-                return await eliminar.preguntar(tp, tArchivo, mensaje);
-        }
+	let autores = [];
+	for (let autore of infoLibro.nombreAutores) {
+		autores.push(`${autore.nombre} ${autore.apellido}`);
 	}
+		
+	let subTitulo = "";
+	if (infoLibro.subtituloObra) {
+		subTitulo = `, ${infoLibro.subtituloObra.charAt(0).toLowerCase()}${infoLibro.subtituloObra.slice(1)}`;
+	}
+	let volumen = (infoLibro.volumen) ? ` (vol. ${infoLibro.volumen})` : "";
+	let nombreArchivo = `${infoLibro.tituloObra}${subTitulo}${volumen} de ${autores.join(", ")}`;
+
+	let intercambios = [[":", ","], ['"', "'"], ["<", "("], [">", ")"], ["?", ""]]
+	for (let [caracterInvalido, caracterValido] of intercambios) {
+		nombreArchivo = nombreArchivo.replaceAll(caracterInvalido, caracterValido);
+	}
+	CARACTERES_INVALIDOS.forEach(caracterInvalido => nombreArchivo = nombreArchivo.replaceAll(caracterInvalido, ","));
+
+      
+      await tp.file.move(`biblioteca/libros/${nombreArchivo}`);
+
+	tR += tp.obsidian.stringifyYaml(infoLibro);
+
+	let datos = await dataLibroAPI(infoLibro.tituloObra, infoLibro.nombreAutores[0]);
+	let generador = generadorKeyValueCover(datos);
+
+	let nombreImagen = `${nombreArchivo}.${EXT}`;
+	let cover = await guardarImagen(generador, nombreImagen, SIZE.MEDIUM);	
+
 
 	if (!cover) cover = "";
 	tR += `cover: ${cover}\n`;
