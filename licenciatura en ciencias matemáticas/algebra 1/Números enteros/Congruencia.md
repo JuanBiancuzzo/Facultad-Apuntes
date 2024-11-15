@@ -1,6 +1,6 @@
 ---
 dia: 2024-11-12
-etapa: empezado
+etapa: ampliar
 referencias:
   - "414"
 tags:
@@ -38,7 +38,7 @@ Sea $d \in \mathbb{Z}$, $d \ne 0$. Entonces
 
 1. $\forall a_1,~ a_2,~ b_1,~ b_2 \in \mathbb{Z}$ $$ a_1 \equiv b_1 ~ (\text{mod} ~ d) ~~ \text{y} ~~ a_2 \equiv b_2 ~ (\text{mod} ~ d) ~~ \text{y} \implies a_1 + a_2 \equiv b_1 + b_2 ~ (\text{mod} ~ d) $$
 > [!quote]+ Demostración
-> 
+> $a_1 \equiv b_1 ~ (\text{mod} ~ d)$ y $a_2 \equiv b_2 ~ (\text{mod} ~ d)$ implica por definición $d \mid a_1 - b_1$ y $d \mid a_2 - b_2$. Por lo tanto $d \mid (a_1 - b_1) + (a_2 - b_2) = d \mid (a_1 + a_2) - (b_1 + b_2)$, es decir $a_1 + a_2 \equiv b_1 + b_2 ~ (\text{mod} ~ d)$
 
 2. Para todo $n \in \mathbb{N}$, $a_1,~ \cdots,~ a_n,~ b_1,~ \cdots,~ b_n \in \mathbb{Z}$ $$ \begin{cases}
        a_1 \equiv b_1 ~ (\text{mod} ~ d) \\
@@ -46,15 +46,40 @@ Sea $d \in \mathbb{Z}$, $d \ne 0$. Entonces
        a_n \equiv b_n ~ (\text{mod} ~ d) \\
    \end{cases} \implies a_1 + \cdots + a_n \equiv b_1 + \cdots + b_n ~ (\text{mod} ~ d) $$
 > [!quote]+ Demostración
+> Podemos probarlo usando [[Principio de inducción completa|inducción completa]], donde definimos $$ p(n): ~~~ \begin{cases}
+>      a_1 \equiv b_1 ~ (\text{mod} ~ d) \\
+>      ~~~~~~\vdots \\
+>      a_n \equiv b_n ~ (\text{mod} ~ d) \\
+>  \end{cases} \implies a_1 + \cdots + a_n \equiv b_1 + \cdots + b_n ~ (\text{mod} ~ d) $$
+>  
+>  * El caso base: Es el punto anterior, por lo que $p(n = 1)$ es Verdadera
+>  * Paso inductivo: Dado $h \in \mathbb{N}$ 
+>      * HI: $$ \begin{cases} a_1 \equiv b_1 ~ (\text{mod} ~ d) \\ ~~~~~~\vdots \\ a_k \equiv b_k ~ (\text{mod} ~ d) \\ \end{cases} \implies a_1 + \cdots + a_k \equiv b_1 + \cdots + b_k ~ (\text{mod} ~ d), ~~~~ 1 \le k \le h $$
+>      * Qpq: $$ \begin{cases} a_1 \equiv b_1 ~ (\text{mod} ~ d) \\ ~~~~~~\vdots \\ a_{h + 1} \equiv b_{h + 1} ~ (\text{mod} ~ d) \\ \end{cases} \implies a_1 + \cdots + a_{h + 1} \equiv b_1 + \cdots + b_{h + 1} ~ (\text{mod} ~ d) $$
 > 
+> Pero para $h \ge 1$ se tiene $$ \begin{cases}
+>     ~~~~ a_1 \equiv b_1 ~ (\text{mod} ~ d) \\
+>     ~~~~~~~~~~\vdots \\
+>     ~~~~ a_h \equiv b_h ~ (\text{mod} ~ d) \\
+>     a_{h+1} \equiv b_{h + 1} ~ (\text{mod} ~ d) \\
+> \end{cases} \underset{HI}{=} \begin{cases}
+>     a_1 + \cdots + a_h \equiv b_1 + \cdots + b_h ~ (\text{mod} ~ d) \\
+>     ~~~~~~~~~~~~~~~ a_{h+1} \equiv b_{h + 1} ~ (\text{mod} ~ d) \\
+> \end{cases} $$
+> 
+> $a_1 + \cdots + a_h \equiv b_1 + \cdots + b_h ~ (\text{mod} ~ d)$ y $a_{h + 1} \equiv b_{h + 1} ~ (\text{mod} ~ d)$ implica por definición $d \mid (a_1 + \cdots + a_h) - (b_1 + \cdots + b_h)$ y $d \mid a_{h + 1} - b_{h + 1}$. Por lo tanto $d \mid ((a_1 + \cdots + a_h) - (b_1 + \cdots + b_h)) + (a_{h + 1} - b_{h + 1}) = d \mid (a_1 + \cdots + a_{h + 1}) - (b_1 + \cdots + b_{h + 1})$, es decir $a_1 + \cdots + a_{h + 1} \equiv b_1 + \cdots + b_{h + 1} ~ (\text{mod} ~ d)$. Que es lo que queríamos probar
+> 
+> Por lo que podemos concluir que $p(n)$ es Verdadera para todo $n \in \mathbb{N}$
 
 3. $\forall a,~ b,~ c \in \mathbb{Z}$, $$ a \equiv b ~ (\text{mod} ~d) \implies c ~ a \equiv c ~ b ~ (\text{mod} ~d) $$
 > [!quote]+ Demostración
-> 
+> $a \equiv b ~ (\text{mod} ~ d)$ implica por definición $d \mid a - b$, y por propiedad de la [[Divisibilidad|divisibilidad]] podemos decir $d \mid c ~ (a - b)$, por lo tanto $d \mid c ~ a - c ~ b$, es decir $c ~ a \equiv c ~b ~ (\text{mod} ~ d)$
 
 4. $\forall a_1,~ a_2,~ b_1,~ b_2 \in \mathbb{Z}$, $$ a_1 \equiv b_1 ~ (\text{mod} ~ d) ~~ \text{y} ~~ a_2 \equiv b_2 ~ (\text{mod} ~ d) ~~ \text{y} \implies a_1 ~ a_2 \equiv b_1 ~ b_2 ~ (\text{mod} ~ d) $$
 > [!quote]+ Demostración
-> 
+> Como $a_1 \equiv b_1 ~ (\text{mod} ~ d)$, entonces $a_1 ~ a_2 \equiv b_1 ~ a_2 ~ (\text{mod} ~ d)$ (multiplicado por $a_2$)
+> Por otro lado, como $a_2 \equiv b_2 ~ (\text{mod} ~ d)$, se tiene $b_1 ~ a_2 \equiv b_1 ~ b_2 ~ (\text{mod} ~ d)$ (multiplicado por $b_2$)
+> Finalmente por transitividad, se concluye que $a_1 ~ a_2 \equiv b_1 ~ b_2 ~ (\text{mod} ~ d)$
 
 5. Para todo $n \in \mathbb{N}$, $a_1,~ \cdots,~ a_n,~ b_1,~ \cdots,~ b_n \in \mathbb{Z}$ $$ \begin{cases}
        a_1 \equiv b_1 ~ (\text{mod} ~ d) \\
@@ -62,11 +87,36 @@ Sea $d \in \mathbb{Z}$, $d \ne 0$. Entonces
        a_n \equiv b_n ~ (\text{mod} ~ d) \\
    \end{cases} \implies a_1 ~ \cdots ~ a_n \equiv b_1 ~ \cdots ~ b_n ~ (\text{mod} ~ d) $$
 > [!quote]+ Demostración
+> Podemos probarlo usando [[Principio de inducción completa|inducción completa]], donde definimos $$ p(n): ~~~ \begin{cases}
+>      a_1 \equiv b_1 ~ (\text{mod} ~ d) \\
+>      ~~~~~~\vdots \\
+>      a_n \equiv b_n ~ (\text{mod} ~ d) \\
+>  \end{cases} \implies a_1 \cdots a_n \equiv b_1 \cdots b_n ~ (\text{mod} ~ d) $$
+>  
+>  * El caso base: Es el punto anterior, por lo que $p(n = 1)$ es Verdadera
+>  * Paso inductivo: Dado $h \in \mathbb{N}$ 
+>      * HI: $$ \begin{cases} a_1 \equiv b_1 ~ (\text{mod} ~ d) \\ ~~~~~~\vdots \\ a_k \equiv b_k ~ (\text{mod} ~ d) \\ \end{cases} \implies a_1 \cdots a_k \equiv b_1 \cdots b_k ~ (\text{mod} ~ d), ~~~~ 1 \le k \le h $$
+>      * Qpq: $$ \begin{cases} a_1 \equiv b_1 ~ (\text{mod} ~ d) \\ ~~~~~~\vdots \\ a_{h + 1} \equiv b_{h + 1} ~ (\text{mod} ~ d) \\ \end{cases} \implies a_1 \cdots a_{h + 1} \equiv b_1 \cdots b_{h + 1} ~ (\text{mod} ~ d) $$
 > 
+> Pero para $h \ge 1$ se tiene $$ \begin{cases}
+>     ~~~~ a_1 \equiv b_1 ~ (\text{mod} ~ d) \\
+>     ~~~~~~~~~~\vdots \\
+>     ~~~~ a_h \equiv b_h ~ (\text{mod} ~ d) \\
+>     a_{h+1} \equiv b_{h + 1} ~ (\text{mod} ~ d) \\
+> \end{cases} \underset{HI}{=} \begin{cases}
+>     a_1 \cdots a_h \equiv b_1 \cdots b_h ~ (\text{mod} ~ d) \\
+>     ~~~~~~ a_{h+1} \equiv b_{h + 1} ~ (\text{mod} ~ d) \\
+> \end{cases} $$
+> 
+> Como $a_1 \cdots a_h \equiv b_1 \cdots b_h ~ (\text{mod} ~ d)$, entonces $a_1 \cdots a_{h + 1} \equiv a_{h + 1} \cdot b_1 \cdots b_h ~ (\text{mod} ~ d)$ (multiplicado por $a_{h + 1}$)
+> Por otro lado, como $a_{h + 1} \equiv b_{h + 1} ~ (\text{mod} ~ d)$, se tiene $b_1 \cdots b_h \cdot a_{h + 1} \equiv b_1 \cdots b_{h + 1} ~ (\text{mod} ~ d)$ (multiplicado por $b_1 \cdots b_h$)
+> Finalmente por transitividad, se concluye que $a_1 \cdots a_{h + 1} \equiv b_1 \cdots b_{h + 1} ~ (\text{mod} ~ d)$. Que es lo que queríamos probar
+> 
+> Por lo que podemos concluir que $p(n)$ es Verdadera para todo $n \in \mathbb{N}$
 
 6. $\forall a,~ b \in \mathbb{Z}$, $n \in \mathbb{N}$, $$ a \equiv b ~ (\text{mod} ~ d) \implies a^n \equiv b^n ~ (\text{mod} ~ d) $$
 > [!quote]+ Demostración
-> 
+> Tomando el punto anterior, notemos que es el caso especifico donde $a_1 = a_2 = \cdots = a_n = a$ y $b_1 = b_2 = \cdots = b_n = b$
 
 # Referencias
 ---

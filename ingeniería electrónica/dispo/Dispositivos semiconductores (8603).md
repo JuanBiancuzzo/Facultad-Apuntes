@@ -7,7 +7,7 @@ tags:
   - materia/ingeniería-electrónica
 etapa: terminado
 correlativas:
-  - "[[Física 2 A (6203)|Física 2]]"
+  - "[[Física 2 A (8202)|Física 2 A]]"
   - "[[Introducción a la ingeniería electronica (8602)|Introducción a la ingeniería electronica]]"
 ---
 # Apuntes

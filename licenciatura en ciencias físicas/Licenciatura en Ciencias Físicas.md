@@ -6,7 +6,11 @@ planes:
   - "1992"
 tieneCodigo: false
 ---
-Lista de todas las materias dividido por los cuatrimestres que estoy resumiendo
+# Mapa
+---
+```dataviewjs
+    await dv.view("_scripts/dataview/mapaCarrera", { tag: "licenciatura-en-ciencias-físicas" });
+```
 
 ```dataviewjs
     await dv.view("_scripts/dataview/materias", { tag: "licenciatura-en-ciencias-físicas" });

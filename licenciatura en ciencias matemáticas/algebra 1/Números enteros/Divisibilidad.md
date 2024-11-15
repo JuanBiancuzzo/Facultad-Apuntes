@@ -13,7 +13,7 @@ tags:
 ```
 # Definición
 ---
-Sean $a,~ d \in \mathbb{Z}$ con $d \ne 0$. Se dice que $d$ divide a $a$, y se nota $d ~|~ a$, si existe un elemento $k \in \mathbb{Z}$ tal que $a = k \cdot d$ (o sea si el cociente $\frac{a}{d}$ es un [[Números enteros|número entero]]). También se dice en ese caso que $a$ es divisible por $d$, o que $a$ es múltiplo de $d$. O sea $$ d ~|~ a \iff \exists k \in \mathbb{Z}: ~ a = k \cdot d $$
+Sean $a,~ d \in \mathbb{Z}$ con $d \ne 0$. Se dice que $d$ divide a $a$, y se nota $d ~|~ a$, si existe un elemento $k \in \mathbb{Z}$ tal que $a = k \cdot d$ (o sea si el [[Algoritmo de división|cociente]] $\frac{a}{d}$ es un [[Números enteros|número entero]]). También se dice en ese caso que $a$ es divisible por $d$, o que $a$ es múltiplo de $d$. O sea $$ d ~|~ a \iff \exists k \in \mathbb{Z}: ~ a = k \cdot d $$
 En caso contrario, se dice que $d$ no divide a $a$, y se nota $d \nmid a$. Eso es cuando el cociente $\frac{a}{d} \in \mathbb{Z}$, o sea no existe ningún entero $k \in \mathbb{Z}$ tal que $a = k \cdot d$
 
 El [[Conjunto|conjunto]] de los divisores positivos y negativos de un entero $a$ se notará por $\text{Div}(a)$ y el de los divisores positivos por $\text{Div}_+(a)$ 

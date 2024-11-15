@@ -7,8 +7,8 @@ tags:
   - materia/ingeniería-electrónica
 etapa: empezado
 correlativas:
-  - "[[Álgebra 2 A (6108)|Álgebra 2]]"
-  - "[[Análisis matemático 2 A (6103)|Análisis matemático 2]]"
+  - "[[Álgebra 2 A (8102)|Álgebra 2 A]]"
+  - "[[Análisis Matemático 2 A (8101)|Análisis Matemático 2 A]]"
 ---
 # Apuntes
 ---

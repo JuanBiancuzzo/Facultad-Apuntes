@@ -7,7 +7,7 @@ tags:
   - materia/ingeniería-electrónica
 etapa: ampliar
 correlativas:
-  - "[[Análisis de Circuitos (6606)|Análisis de circuitos]]"
+  - "[[Análisis de circuitos (8604)|Análisis de Circuitos]]"
   - "[[Dispositivos semiconductores (8603)|Dispositivos semiconductores]]"
 referencias:
   - "424"

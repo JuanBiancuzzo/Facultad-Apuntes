@@ -9,7 +9,7 @@ etapa: terminado
 correlativas:
   - "[[Análisis matemático 3 (6110)|Análisis matemático 3]]"
   - "[[Introducción a la ingeniería electronica (8602)|Introducción a la ingeniería electronica]]"
-  - "[[Física 2 A (6203)|Física 2]]"
+  - "[[Física 2 A (8202)|Física 2 A]]"
 ---
 # Apuntes
 ---

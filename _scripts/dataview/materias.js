@@ -58,6 +58,6 @@ function nombreMateria(materia) {
 }
 
 function mostrarSubnombre(plan, codigo) {
-    if (plan) return `Plan ${plan}` + (codigo ? `- ${codigo}` : "");
+    if (plan) return `Plan ${plan}` + (codigo ? ` - ${codigo}` : "");
     return codigo ? `Código ${codigo}` : null;
 }

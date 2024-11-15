@@ -1,7 +1,7 @@
 ---
 cuatri: 24C2
 plan: 2022
-etapa: sin-empezar
+etapa: empezado
 estado: Sin empezar
 tags:
   - materia/licenciatura-en-ciencias-matemáticas
