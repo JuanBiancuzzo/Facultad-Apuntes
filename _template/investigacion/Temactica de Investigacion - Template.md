@@ -28,9 +28,10 @@
 			error.Prompt("No se eligió como definir el tema")
 		);
 
-		let nuevoTema = eleccion.file.folder.split("/").length > 1
+		let nuevoTema = eleccion == CREAR_TEMA 
 			? `${nombreTema.charAt(0).toLowerCase()}${nombreTema.slice(1)}`.trim()
 			: nombreTema;
+
 		let path = (eleccion === CREAR_TEMA) ? nuevoTema : `${eleccion.file.folder}/${nuevoTema}`;
 
 		try {
@@ -59,6 +60,10 @@
                 
             case errorNombre.prompt:
                 return await eliminar.preguntar(tp, tArchivo, mensaje);
+
+			default:
+				console.log(nombre);
+				console.log(mensaje);
         }
 	}
 _%>
