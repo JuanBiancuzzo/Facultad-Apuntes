@@ -19,7 +19,7 @@ Utilizando la [[Formula de Bayes]] para cada hipotesis, nos queda lo siguiente $
 Como esta hipotesis replica perfectamente los datos de salida: $$\mathbb{P}(E|H_k) = 1$$ 
 
 Después para ver la probabilidad de que la hipotesis $H_k$ de la respuesta correcta, utilizaremos la idea de la [[Navaja de Ockam]], donde darémos menor probabilidad aquellos programas que tengan una [[Complejidad de Kolmogorov|complejidad]] mayor. Dandonos lo siguiente $$ \mathbb{P}(H_k) = 2^{-K(H_k)} $$
-Por último para calcular la $\mathbb{P}(E)$ vamos a asumir que el evento es [[Computable]] por lo tanto debe existir una hipotesis que lo resuelva, por lo tanto será la suma de probabilidades de las hipotesis. $$ \mathbb{P}(E) = \sum_i \mathbb{P}(H_i) $$
+Por último para calcular la $\mathbb{P}(E)$ vamos a asumir que el evento es [[Computable|computable]] por lo tanto debe existir una hipotesis que lo resuelva, por lo tanto será la suma de probabilidades de las hipotesis. $$ \mathbb{P}(E) = \sum_i \mathbb{P}(H_i) $$
 
 Esto nos permite entrenar con nuestros datos. Cuando queramos predecir, utilizaremos las probabilidades calculadas para conseguir nuestra respuesta. 
 
