@@ -12,6 +12,9 @@ await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.c
 ---
 Quiero investigar la generación de [[Energía|energía]], la cual puede ser interesante entender
 
+Proyectos
+* Crear una bicicleta que pueda generar energía en su uso normal y cuando se [[Regenerative braking|frena]]
+
 ## Archivos
 ---
 ```dataviewjs

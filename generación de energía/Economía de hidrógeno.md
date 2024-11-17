@@ -1,22 +1,22 @@
 ---
-dia: 2024-11-05
+dia: 2024-11-17
 etapa: sin-empezar
+orden: 462
 referencias:
-  - "474"
-  - "477"
+  - "549"
 tags:
-  - ingeniería-electrónica/embebidos/Conversión-analógica-a-digital-y-digital-a-analógica
-  - nota/facultad
-  - protocolos
+  - generación-de-energía
+  - nota/investigacion
 aliases:
-  - I2C
-  - I<sup>2</sup>C
+  - Hydrogen economy
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
+
+
 
 
 # Referencias
