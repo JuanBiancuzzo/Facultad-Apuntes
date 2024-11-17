@@ -4,6 +4,7 @@
 
 	const PREGUNTAR_CARRERA = "carrera";
 	const PREGUNTAR_TEMA = "tema";
+	const ELIMINAR_TEMA = "eliminar tema";
 	const PREGUNTAR_MATERIA = "materia";
 	const PREGUNTAR_RESUMEN = "resumen";
     const SALIR = "salir";
@@ -76,6 +77,10 @@
                         datos[PREGUNTAR_MATERIA] = null;
                         datos[PREGUNTAR_RESUMEN] = null;
                     } 
+
+                    break;
+                case ELIMINAR_TEMA:
+                    datos[PREGUNTAR_TEMA].pop();
 
                     break;
                 case PREGUNTAR_MATERIA:
@@ -194,13 +199,29 @@
 
         } else {
 
-            for (let i = 0; i < datos[PREGUNTAR_TEMA].length; i++) {
+            for (let i = 0; i < datos[PREGUNTAR_TEMA].length - 1; i++) {
                 opciones.push(`${PREGUNTAR_TEMA}-${i}`);
                 valores.push(`Elegir otro tema, previamente tenias ${nombreTema(datos[PREGUNTAR_TEMA][i])}`);
             }
 
             let ultimo = datos[PREGUNTAR_TEMA][datos[PREGUNTAR_TEMA].length - 1];
-            let subtemasUltimo = dv.pages(`#índice and "${ultimo.file.folder}"`);
+
+            let carpetaUltimo = ultimo.file.folder;
+            let superCarpetaUltimo = carpetaUltimo.split("/");
+            superCarpetaUltimo.pop();
+            superCarpetaUltimo = superCarpetaUltimo.join("/");
+
+            let equitemasUltimo = dv.pages(`#índice and "${superCarpetaUltimo}"`);
+            if (equitemasUltimo.length <= 2) {
+                opciones.push(ELIMINAR_TEMA);
+                valores.push(`Eliminar ${nombreTema(ultimo)}`);
+            } else {
+                let i = datos[PREGUNTAR_TEMA].length - 1;
+                opciones.push(`${PREGUNTAR_TEMA}-${i}`);
+                valores.push(`Elegir otro tema, previamente tenias ${nombreTema(datos[PREGUNTAR_TEMA][i])}`);
+            }
+
+            let subtemasUltimo = dv.pages(`#índice and "${carpetaUltimo}"`);
 
             if (subtemasUltimo.length > 1) {
                 opciones.push(PREGUNTAR_TEMA);
