@@ -1,26 +1,27 @@
 ---
-dia: 2024-09-22
+dia: 2024-11-17
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 271
-tituloObra: Cybersecurity For Dummies
+numReferencia: 556
+tituloObra: The Art of Computer Programming
+subtituloObra: Seminumerical Algorithms
 nombreAutores:
-  - apellido: Steinberg
-    nombre: Joseph
-anio: "2022"
-editorial: Wiley
-edicion: "2"
-volumen: 
+  - apellido: Knuth
+    nombre: Donald
+anio: "1997"
+editorial: Addison-Wesley Professional
+edicion: "3"
+volumen: "2"
 url: 
 capitulos: 
-cover: Cybersecurity For Dummies de Joseph Steinberg.jpg
+cover: The Art of Computer Programming, seminumerical Algorithms (vol. 2) de Donald Knuth.jpg
 aliases: 
+orden: 469
 tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - cybersecurity
-orden: 330
+  - algoritmos
 ---
 ```dataviewjs
 	let actual = dv.current();

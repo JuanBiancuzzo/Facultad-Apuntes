@@ -1,26 +1,27 @@
 ---
-dia: 2024-09-22
+dia: 2024-11-17
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 271
-tituloObra: Cybersecurity For Dummies
+numReferencia: 557
+tituloObra: The Art of Computer Programing
+subtituloObra: Sorting and Searching
 nombreAutores:
-  - apellido: Steinberg
-    nombre: Joseph
-anio: "2022"
-editorial: Wiley
+  - apellido: Knuth
+    nombre: Donald
+anio: "1998"
+editorial: Addison-Wesley Professional
 edicion: "2"
-volumen: 
+volumen: "3"
 url: 
 capitulos: 
-cover: Cybersecurity For Dummies de Joseph Steinberg.jpg
+cover: The Art of Computer Programing, sorting and Searching (vol. 3) de Donald Knuth.jpg
 aliases: 
+orden: 470
 tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - cybersecurity
-orden: 330
+  - algoritmos
 ---
 ```dataviewjs
 	let actual = dv.current();

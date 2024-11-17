@@ -1,26 +1,26 @@
 ---
-dia: 2024-09-22
+dia: 2024-11-17
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 271
-tituloObra: Cybersecurity For Dummies
+numReferencia: 551
+tituloObra: Clean Code
+subtituloObra: A Handbook of Agile Software Craftsmanship
 nombreAutores:
-  - apellido: Steinberg
-    nombre: Joseph
-anio: "2022"
-editorial: Wiley
-edicion: "2"
+  - apellido: Martin
+    nombre: Robert C.
+anio: "2008"
+editorial: Pearson
+edicion: "1"
 volumen: 
 url: 
 capitulos: 
-cover: Cybersecurity For Dummies de Joseph Steinberg.jpg
+cover: Clean Code, a Handbook of Agile Software Craftsmanship de Robert C. Martin.jpg
 aliases: 
+orden: 464
 tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - cybersecurity
-orden: 330
 ---
 ```dataviewjs
 	let actual = dv.current();

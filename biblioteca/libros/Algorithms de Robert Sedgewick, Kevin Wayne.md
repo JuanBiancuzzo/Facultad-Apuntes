@@ -1,26 +1,29 @@
 ---
-dia: 2024-09-22
+dia: 2024-11-17
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 271
-tituloObra: Cybersecurity For Dummies
+numReferencia: 554
+tituloObra: Algorithms
+subtituloObra: 
 nombreAutores:
-  - apellido: Steinberg
-    nombre: Joseph
-anio: "2022"
-editorial: Wiley
-edicion: "2"
+  - apellido: Sedgewick
+    nombre: Robert
+  - apellido: Wayne
+    nombre: Kevin
+anio: "2011"
+editorial: Addison-Wesley Professional
+edicion: "4"
 volumen: 
 url: 
 capitulos: 
-cover: Cybersecurity For Dummies de Joseph Steinberg.jpg
+cover: Algorithms de Robert Sedgewick, Kevin Wayne.jpg
 aliases: 
+orden: 467
 tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - cybersecurity
-orden: 330
+  - algoritmos
 ---
 ```dataviewjs
 	let actual = dv.current();
@@ -31,4 +34,3 @@ orden: 330
 ---
 
 
- 

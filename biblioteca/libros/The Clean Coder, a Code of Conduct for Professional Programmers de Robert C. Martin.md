@@ -1,26 +1,26 @@
 ---
-dia: 2024-09-22
+dia: 2024-11-17
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 271
-tituloObra: Cybersecurity For Dummies
+numReferencia: 552
+tituloObra: The Clean Coder
+subtituloObra: A Code of Conduct for Professional Programmers
 nombreAutores:
-  - apellido: Steinberg
-    nombre: Joseph
-anio: "2022"
-editorial: Wiley
-edicion: "2"
+  - apellido: Martin
+    nombre: Robert C.
+anio: "2011"
+editorial: Pearson
+edicion: "1"
 volumen: 
 url: 
 capitulos: 
-cover: Cybersecurity For Dummies de Joseph Steinberg.jpg
+cover: The Clean Coder, a Code of Conduct for Professional Programmers de Robert C. Martin.jpg
 aliases: 
+orden: 465
 tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - cybersecurity
-orden: 330
 ---
 ```dataviewjs
 	let actual = dv.current();

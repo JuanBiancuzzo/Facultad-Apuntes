@@ -1,26 +1,28 @@
 ---
-dia: 2024-09-22
+dia: 2024-11-17
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 271
-tituloObra: Cybersecurity For Dummies
+numReferencia: 553
+tituloObra: Data Structures and Algorithms Made Easy
+subtituloObra: Data Structures and Algorithmic Puzzles
 nombreAutores:
-  - apellido: Steinberg
-    nombre: Joseph
-anio: "2022"
-editorial: Wiley
-edicion: "2"
+  - apellido: Karumanchi
+    nombre: Narasimha
+anio: "2026"
+editorial: CareerMonk Publications
+edicion: "5"
 volumen: 
 url: 
 capitulos: 
-cover: Cybersecurity For Dummies de Joseph Steinberg.jpg
+cover: Data Structures and Algorithms Made Easy, data Structures and Algorithmic Puzzles de Narasimha Karumanchi.jpg
 aliases: 
+orden: 466
 tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - cybersecurity
-orden: 330
+  - algoritmos
+  - data-structures
 ---
 ```dataviewjs
 	let actual = dv.current();

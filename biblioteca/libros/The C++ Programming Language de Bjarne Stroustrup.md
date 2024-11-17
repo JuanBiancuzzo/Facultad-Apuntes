@@ -1,26 +1,27 @@
 ---
-dia: 2024-09-22
+dia: 2024-11-17
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 271
-tituloObra: Cybersecurity For Dummies
+numReferencia: 560
+tituloObra: The C++ Programming Language
+subtituloObra: 
 nombreAutores:
-  - apellido: Steinberg
-    nombre: Joseph
-anio: "2022"
-editorial: Wiley
-edicion: "2"
+  - apellido: Stroustrup
+    nombre: Bjarne
+anio: "2013"
+editorial: Addison-Wesley Professional
+edicion: "4"
 volumen: 
 url: 
 capitulos: 
-cover: Cybersecurity For Dummies de Joseph Steinberg.jpg
+cover: The c++ Programming Language de Bjarne Stroustrup.jpg
 aliases: 
+orden: 474
 tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - cybersecurity
-orden: 330
+  - lenguajes-de-programación/Lenguaje-cpp
 ---
 ```dataviewjs
 	let actual = dv.current();

@@ -28,6 +28,7 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
+  - matemática/Estadística
 orden: 212
 ---
 ```dataviewjs

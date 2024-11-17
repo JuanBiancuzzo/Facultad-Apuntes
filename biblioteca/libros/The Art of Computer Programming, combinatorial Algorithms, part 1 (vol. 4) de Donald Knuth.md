@@ -1,26 +1,27 @@
 ---
-dia: 2024-09-22
+dia: 2024-11-17
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 271
-tituloObra: Cybersecurity For Dummies
+numReferencia: 558
+tituloObra: The Art of Computer Programming
+subtituloObra: Combinatorial Algorithms, Parte 1
 nombreAutores:
-  - apellido: Steinberg
-    nombre: Joseph
-anio: "2022"
-editorial: Wiley
-edicion: "2"
-volumen: 
+  - apellido: Knuth
+    nombre: Donald
+anio: "2011"
+editorial: Addison-Wesley Professional
+edicion: "1"
+volumen: "4"
 url: 
 capitulos: 
-cover: Cybersecurity For Dummies de Joseph Steinberg.jpg
+cover: The Art of Computer Programming, combinatorial Algorithms, Parte 1 (vol. 4) de Donald Knuth.jpg
 aliases: 
+orden: 471
 tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - cybersecurity
-orden: 330
+  - algoritmos
 ---
 ```dataviewjs
 	let actual = dv.current();
