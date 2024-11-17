@@ -40,7 +40,7 @@ La system `call_exec()` invoca a otro [[Programa|programa]], sobreponiendo el es
 * Copia los parámetros del exec del viejo [[Espacio de direcciones|address space]] al system space 
 * Para (cada región asociada al [[Proceso|proceso]]) las des-asocia
 * Para (cada región especificada en el módulo ejecutable) aloca espacio para las nuevas regiones, asociada a la región, carga la región en la memoria
-* Copia los parámetros del exec en la nueva región o sección [[Stack|stack]]
+* Copia los parámetros del exec en la nueva región o sección [[ingeniería en informática/sisop/Virtualización de memoria/Stack|stack]]
 * Hace cierta magia
 * Inicializa a [[User mode|modo usuario]]
 * Libera el [[Inodo]]

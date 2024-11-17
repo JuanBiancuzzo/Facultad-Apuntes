@@ -14,7 +14,7 @@ El esquema básico de la [[Políticas de planificación|planificación]] consist
 
 ### Ventajas
 ---
-MQMS tiene la ventaja sobre SQMS debido a que es enteramente escalable. A medida que las [[Procesador|Procesador]] van creciendo también lo hacen las colas, lo que conlleva a que los [[Lock|locks]] y las [[Cache|cache]] no sean ya un problema.
+MQMS tiene la ventaja sobre SQMS debido a que es enteramente escalable. A medida que las [[Procesador|Procesador]] van creciendo también lo hacen las colas, lo que conlleva a que los [[Lock|locks]] y las [[ingeniería en informática/sisop/Scheduling/Cache|cache]] no sean ya un problema.
 
 MQMS intrínsecamente prevé [[Afinidad de cache|afinidad de cache]], es decir, las tareas intentan mantenerse en la CPU en la que fueron planificadas.
 

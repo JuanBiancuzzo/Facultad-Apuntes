@@ -15,7 +15,7 @@ etapa: ampliar
 ```
 # Definición
 ---
-En [[Álgebra de proposiciones|lógica proposicional]] y [[Álgebra de Boole|álgebra de Boole]], las leyes de De Morgan son un par de reglas de [[Transformación|transformación]]. Las normas permiten la expresión de las [[Operador AND|conjunciones]] y [[Operador OR|disyunciones]] puramente de términos de vía [[Operador NOT|negación]]<sup><a href="#ref-188" style="color: inherit; text-decoration: none;">[188]</a></sup> 
+En [[Álgebra de proposiciones|lógica proposicional]] y [[Álgebra de Boole|álgebra de Boole]], las leyes de De Morgan son un par de reglas de [[ingeniería electrónica/señales/Señales y sistemas/Transformación|transformación]]. Las normas permiten la expresión de las [[Operador AND|conjunciones]] y [[Operador OR|disyunciones]] puramente de términos de vía [[Operador NOT|negación]]<sup><a href="#ref-188" style="color: inherit; text-decoration: none;">[188]</a></sup> 
 
 ## Álgebra proposicional
 ---

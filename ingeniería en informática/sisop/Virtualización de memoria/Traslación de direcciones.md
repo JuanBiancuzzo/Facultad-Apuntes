@@ -52,7 +52,7 @@ Utilizando la traducción de direcciones, podemos iniciar la ejecución de un pr
 ---
 Asignación eficiente de memoria dinámica: A medida que un proceso expande su montón de memoria o un hilo expande su pila, podemos utilizar la traducción de direcciones para llamar al kernel y asignar memoria solo cuando sea necesario para esos propósitos. 
 
-### [[Cache|Cache]] management
+### [[ingeniería en informática/sisop/Scheduling/Cache|Cache]] management
 ---
 Gestión de caché: El sistema operativo puede organizar cómo se posicionan los programas en la memoria física para mejorar la eficiencia de la caché, a través de un sistema llamado coloración de páginas. 
 

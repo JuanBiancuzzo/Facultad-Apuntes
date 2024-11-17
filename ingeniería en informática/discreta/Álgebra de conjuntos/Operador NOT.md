@@ -82,7 +82,7 @@ bool toggle = true;
 toggle = !toggle; // false
 ```
 
-Recordemos que [[lenguajes de programación/lenguaje c/Índice|C]] no hace distinción entre números y booleanos, por lo que se puede verificar si un [[Puntero|puntero]] es [[NULL|NULL]] de la siguiente forma
+Recordemos que [[Lenguaje C|C]] no hace distinción entre números y booleanos, por lo que se puede verificar si un [[Puntero|puntero]] es [[NULL|NULL]] de la siguiente forma
 
 ```c
 int *puntero_invalido = NULL;

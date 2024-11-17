@@ -38,7 +38,7 @@ Es un [[Archivo|archivo]] que posee toda la información de como construir un [[
 	* En los SO antiguos esto se realizaba de forma abrupta (eagerly) instrucciones y datos
 	* En los SO modernos se realiza de forma perezosa (lazily), cargando lo que se necesite según se necesite.
 
-2. Se crea la [[Stack|pila]] de ejecución en base a reservar cierta cantidad de memoria, la misma se inicializa por ejemplo si usamos `C` con `argv` y `argc` del `main()`
+2. Se crea la [[ingeniería en informática/sisop/Virtualización de memoria/Stack|pila]] de ejecución en base a reservar cierta cantidad de memoria, la misma se inicializa por ejemplo si usamos `C` con `argv` y `argc` del `main()`
 
 3. Se crea el [[Heap|heap]] en base a reservar otra cierta cantidad de memoria, el heap sirve para reserva de memoria dinámica, en `C` se crea y se destruyen estructuras de memoria dinámica con `malloc()` y `free()`
 

@@ -59,7 +59,7 @@ También se puede definir según la [[Diferencia entre conjuntos|diferencia]] de
 
 ## En C
 ---
-Para obtener el resultado del `XOR` entre dos números, el [[lenguajes de programación/lenguaje c/Índice|lenguaje C]] lo expresa de la siguiente manera 
+Para obtener el resultado del `XOR` entre dos números, el [[Lenguaje C|lenguaje C]] lo expresa de la siguiente manera 
 
 ```c
 size_t numero1 = 0b11110000;

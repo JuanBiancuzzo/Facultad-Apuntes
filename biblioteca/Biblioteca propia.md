@@ -11,19 +11,14 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (108)
+#### Buscar (103)
 ---
 Programación:
-1. [C++ Primer de B. Lippman](https://www.amazon.com/Primer-5th-Stanley-B-Lippman/dp/0321714113?crid=2OMTFIS4J7N5&dib=eyJ2IjoiMSJ9.g3UWPxDFoiB35zNN0DtM64duK9OV3U6hjsbkHE1h_Ok.NPYMEBOmguTVZIDl9V8auvyEz7yFMYmbqwxIsbGdLkM&dib_tag=se&keywords=c+++primer+de+b.+lippmann&qid=1729865882&s=books&sprefix=the+c+++programming+language+de+bjarne+stroustrup,stripbooks-intl-ship,211&sr=1-1)
-2. [Effective Modern C++ de Scott Meyers](https://www.amazon.com/Effective-Modern-Specific-Ways-Improve/dp/1491903996?crid=3VQ8UQRUP96H9&dib=eyJ2IjoiMSJ9.TVXKBOCBkOUKvkImz1L6lluy_aV2QlKqf29UEBgFxKxcohE94P5iTEgg6kPATdQbJNqCauk5zMQB-Yw55pRZeTm9JSfu6l8nX3Ws9itlpXw.gn03Odosl2YwT4BJK-RfMcNFjTP4PqmIL-wp-V027Hw&dib_tag=se&keywords=Effective+Modern+C+++de+Scott+Meyers&qid=1729866047&s=books&sprefix=introduction+to+algorithms+in-depth,stripbooks-intl-ship,190&sr=1-1)
-3. [Python machine learning de Sabastian Raschka](https://www.amazon.com/Python-Machine-Learning-scikit-learn-TensorFlow/dp/1789955750?crid=2CP13ITDSGF1K&dib=eyJ2IjoiMSJ9.wATt1aK4OV6oyve7-mY_Bd-yvP2ULvd8jqqIjQktJdXu-nh6Iwzs8Q0dgY1TAOjbm-5mp3awLgEIMuTVjVZlqBgLv91HBuoYz5XvL3cR-XXC4k5N_3OQAaOzcev-rSnAr47SnfJ2NFb0p9XNUuVncuhj0SU-NazkbQoRO1eHN9XLo6IEON25AsmZUlR_nOeEUsiJxuot2iuScsw-j77b2I5IncLdSwHdMN-4zmqDQsA.XYX9mqu78klLw_AXjNnuBwDqk0wQO1yFBhjF11_Zm0Q&dib_tag=se&keywords=python+machine+learning+de+sebastian+raschka&qid=1729866078&s=books&sprefix=python+machine+learning+de+sabastian+raschka,stripbooks-intl-ship,372&sr=1-1)
-4. [Introduction to machine learning with python de Andreas C. Müller y Sarah Guido](https://www.amazon.com/Introduction-Machine-Learning-Python-Scientists/dp/1449369413?crid=BNRON0SAFNYM&dib=eyJ2IjoiMSJ9.8xvwCgxw2TWdZ-oqg67stg.AtPW5ixvEWsAA7bQUohaD9X6kuFI7NVHFvibPdP5fU4&dib_tag=se&keywords=Introduction+to+machine+learning+with+python+de+Andreas+C.+M%C3%BCller+y+Sarah+Guido&qid=1729866113&s=books&sprefix=introduction+to+machine+learning+with+python+de+andreas+c.+m%C3%BCller+y+sarah+guido,stripbooks-intl-ship,203&sr=1-1)
-5. [Python for data analysis de Wes McKinney](https://www.amazon.com/Python-Data-Analysis-Wrangling-Jupyter/dp/109810403X?crid=20Y1Y55J84HTH&dib=eyJ2IjoiMSJ9.mPK50KsuhdOu3siz0pjKPIO2_kY0Alblxl7dy0RuxE7IApqwCzrnr71tOIQwiHY4q-jcUiqFW9sXsH36WForFZNDjVfeQR_aO1xzfjMNloVDH-hih_bK_SWmtoOxAZh0i_0JuFbDFvbPg3IKF61TtYMdzZ2Jh1VrEbJ1ybUHAXXwAne1guuitl96G1qQEZqC7qGLADWn9jOoDMAR3OnSOF_eMpvNfXldKQ1geF2WaqU.5rrPpD4qyuVAmIL71EyquRbaeATbA268k8VEJKGpJ_4&dib_tag=se&keywords=Python+for+data+analysis+de+Wes+McKinney&qid=1729866144&s=books&sprefix=introduction+to+machine+learning+with+python+de+andreas+c.+m%C3%BCller+y+sarah+guido,stripbooks-intl-ship,326&sr=1-1)
-6. [Data Science from Scratch de Joel Grus](https://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/1492041130?crid=3OIAUEEZ248JV&dib=eyJ2IjoiMSJ9.8bSg9CnzT6ILYn7fN65f9KV2nW-cKKc8x0_9YIRDZ4RfGvmUjgBr8ITHFe99Cg1SY8hieuHF7QLP1X5h2uj1aw.fkyQ1YsMSDSPF43DpfxXcInCEfEaJsd4VpvCw-p11bg&dib_tag=se&keywords=Data+Science+from+Scratch+de+Joel+Grus&qid=1729866163&s=books&sprefix=data+science+from+scratch+de+joel+grus,stripbooks-intl-ship,825&sr=1-1)
-7. [The Linux Programming Interface: A Linux and UNIX System Programming Handbook](https://www.amazon.com/Linux-Programming-Interface-System-Handbook/dp/1593272200)
-8. [TCP/IP Illustrated, Vol. 1](https://www.amazon.com/TCP-Illustrated-Vol-Addison-Wesley-Professional/dp/0201633469)
-9. [Cybersecurity Ops with bash](https://www.amazon.com/Cybersecurity-Ops-bash-Analyze-Command/dp/1492041319)
-10. [Tour of C++](https://www.amazon.com/Tour-2nd-Depth-Bjarne-Stroustrup/dp/0134997832)
+1. [Data Science from Scratch de Joel Grus](https://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/1492041130?crid=3OIAUEEZ248JV&dib=eyJ2IjoiMSJ9.8bSg9CnzT6ILYn7fN65f9KV2nW-cKKc8x0_9YIRDZ4RfGvmUjgBr8ITHFe99Cg1SY8hieuHF7QLP1X5h2uj1aw.fkyQ1YsMSDSPF43DpfxXcInCEfEaJsd4VpvCw-p11bg&dib_tag=se&keywords=Data+Science+from+Scratch+de+Joel+Grus&qid=1729866163&s=books&sprefix=data+science+from+scratch+de+joel+grus,stripbooks-intl-ship,825&sr=1-1)
+2. [The Linux Programming Interface: A Linux and UNIX System Programming Handbook](https://www.amazon.com/Linux-Programming-Interface-System-Handbook/dp/1593272200)
+3. [TCP/IP Illustrated, Vol. 1](https://www.amazon.com/TCP-Illustrated-Vol-Addison-Wesley-Professional/dp/0201633469)
+4. [Cybersecurity Ops with bash](https://www.amazon.com/Cybersecurity-Ops-bash-Analyze-Command/dp/1492041319)
+5. [Tour of C++](https://www.amazon.com/Tour-2nd-Depth-Bjarne-Stroustrup/dp/0134997832)
 
 Hacking:
 1. 

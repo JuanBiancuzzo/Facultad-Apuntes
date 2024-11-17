@@ -19,7 +19,7 @@ El address space de un [[Proceso|proceso]] contiene todo el estado de la memoria
 
 Por ejemplo
 * El código del programa tiene que estar alojado en la memoria en algún lugar
-* El programa mientras se está ejecutado usa el [[Stack|stack]] para mantener registro de donde se encuentra en la cadena de llamadas a funciones o procedimientos para reservar espacios para las variables locales, para pasar parámetros y a su vez devolver valores de y hacia una rutina.
+* El programa mientras se está ejecutado usa el [[ingeniería en informática/sisop/Virtualización de memoria/Stack|stack]] para mantener registro de donde se encuentra en la cadena de llamadas a funciones o procedimientos para reservar espacios para las variables locales, para pasar parámetros y a su vez devolver valores de y hacia una rutina.
 * Finalmente se utiliza el [[Heap|heap]] para reservar memoria de forma dinámica
 * Existen otras cosas de la memoria, como variables estáticas, constantes, etc.
 
@@ -80,7 +80,7 @@ Se presenta un pequeño espacio de direcciones de $16 ~ KB$
 
 El código fuente del [[Programa|programa]] vive en lo alto del espacio de direcciones empezando de $0$ en este ejemplo y esta empaquetado en la primer $1 ~ kb$ del espacio de direcciones. El código fuente es estático por ende se puede poner al principio del espacio de direcciones y no necesitará más espacio mientras que el programa se ejecute
 
-Por otro lado hay dos regiones del espacio de direcciones que pueden crecer o achicarse mientras el programa se esta ejecutando. Como ya se sabe son el [[Heap|heap]] y el [[Stack|stack]], debido a que ambas en algún momento van a querer crecer siempre se ponen en los extremos del espacio de direcciones enfrentadas entre sí
+Por otro lado hay dos regiones del espacio de direcciones que pueden crecer o achicarse mientras el programa se esta ejecutando. Como ya se sabe son el [[Heap|heap]] y el [[ingeniería en informática/sisop/Virtualización de memoria/Stack|stack]], debido a que ambas en algún momento van a querer crecer siempre se ponen en los extremos del espacio de direcciones enfrentadas entre sí
 
 De esta forma se permite tal crecimiento solamente que el mismo se dirige a direcciones opuestas
 * El heap empieza justo después del código fuente y crece hacia abajo

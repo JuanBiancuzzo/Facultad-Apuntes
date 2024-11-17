@@ -12,7 +12,7 @@ aliases:
 ---
 Se trata, a nivel de [[Hardware|hardware]], de un sistema compuesto por $3$ elementos básicos
 * [[Procesador|Procesador(es) o microprocesador(es)]] para gestión de datos y ejecución de [[Programa|programas]]
-* [[Memoria|Memorias]] para almacenamiento de código, almacenamiento de datos y almacenamiento operacional, como el [[Stack|stack]] o el [[Heap|heap]]
+* [[Memoria|Memorias]] para almacenamiento de código, almacenamiento de datos y almacenamiento operacional, como el [[ingeniería en informática/sisop/Virtualización de memoria/Stack|stack]] o el [[Heap|heap]]
 * Dispositivos de [[General Purpose Input Output|E/S - I/O]], para la comunicación entra las partes internas y el mundo exterior a través de interfaces programables
 
 Las conexiones entre estos elementos se realizan a través de $3$ [[Bus|buses]] principales

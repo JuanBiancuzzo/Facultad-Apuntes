@@ -12,7 +12,7 @@ await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.c
 ```
 # ¿Qué se va a investigar?
 ---
-Vamos a explorar el lenguaje de c++ que es un superset de [[lenguajes de programación/lenguaje c/Índice|C]]
+Vamos a explorar el lenguaje de c++ que es un superset de [[Lenguaje C|C]]
 
 ## Resumen
 ---

@@ -11,7 +11,7 @@ tags:
 # Definición
 ---
 Los servidores [[Domain Name System|DNS]] almacenan resource records (RR). Estos tienen la siguiente estructura $$ (\text{Name}, \text{Value}, \text{Type}, \text{TTL}) $$
-Donde TTL representa el tiempo de vida del recurso, cuando debería ser removido del [[Cache|cache]]. El significado de name y value dependerá del type
+Donde TTL representa el tiempo de vida del recurso, cuando debería ser removido del [[ingeniería en informática/sisop/Scheduling/Cache|cache]]. El significado de name y value dependerá del type
 * Type A
 	* Entonces, name es el hostname, y value es la [[Internet Protocol Address|dirección IP]]
 * Type NS

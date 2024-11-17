@@ -17,7 +17,7 @@ aliases:
 Los threads comparten los recursos del [[Proceso|proceso]], entre ellos, el [[Espacio de direcciones|espacio de memoria]]. Cada thread mantiene su propia información de estado como
 * Thread id
 * Un conjunto de los valores de los [[Registro|registros]] 
-* [[Stack|stack]] propio
+* [[ingeniería en informática/sisop/Virtualización de memoria/Stack|stack]] propio
 * Un propio `errno`
 * Prioridad de [[Thread scheduler|scheduling]]
 * Status

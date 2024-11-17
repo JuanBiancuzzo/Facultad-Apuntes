@@ -9,7 +9,7 @@ tags:
 ---
 # Definición
 ---
-Es un mecanismo de [[Cache|cache]] de las [[Traslación de direcciones|traslaciones]] más utilizadas entre los pares virtuales a físicos. 
+Es un mecanismo de [[ingeniería en informática/sisop/Scheduling/Cache|cache]] de las [[Traslación de direcciones|traslaciones]] más utilizadas entre los pares virtuales a físicos. 
 
 Por cada referencia a la [[Dirección de memoria virtual|memoria virtual]], el [[Hardware|hardware]] primero chequea la TLB para ver si esa traslación esta guardada ahí, si es así la traslación se hace rápidamente sin tener que consultar a la page table.
 
@@ -27,7 +27,7 @@ Para que sea útil, la búsqueda de la TLB necesita ser mucho más rápido que r
 
 ## Consistencia de la TLB
 ---
-Cada vez que se introduce un [[Cache|cache]] en el [[Sistema|sistema]], se necesita considerar la forma de asegurar la consistencia del cache con los datos originales cuando las entradas en el mismo son modificadas. 
+Cada vez que se introduce un [[ingeniería en informática/sisop/Scheduling/Cache|cache]] en el [[Sistema|sistema]], se necesita considerar la forma de asegurar la consistencia del cache con los datos originales cuando las entradas en el mismo son modificadas. 
 
 Para una ejecución correcta y [[Protección de memoria|segura]] de un [[Programa|programa]], el [[Sistema operativo|sistema operativo]] tiene que asegurarse que cada programa ve su propia [[Memoria|memoria]] y la de nadie más. Existen tres puntos a considerar
 
@@ -44,7 +44,7 @@ Cuando el [[Sistema operativo|sistema operativo]] modifica una entrada en una pa
 
 ### TLB Shutdown
 ---
-En un [[Arquitectura multiprocesador|sistema multiprocesador]] cada uno puede tener [[Cache|cacheada]] una copia de una translación en su TLB. Por ende, para [[Protección de memoria|seguridad]] y correctitud, cada vez que una entrada en la page table es modificada, la correspondiente entrada en todas las TLB de los [[Procesador|procesadores]] tiene que ser descartada antes que los cambios tomen efecto. 
+En un [[Arquitectura multiprocesador|sistema multiprocesador]] cada uno puede tener [[ingeniería en informática/sisop/Scheduling/Cache|cacheada]] una copia de una translación en su TLB. Por ende, para [[Protección de memoria|seguridad]] y correctitud, cada vez que una entrada en la page table es modificada, la correspondiente entrada en todas las TLB de los [[Procesador|procesadores]] tiene que ser descartada antes que los cambios tomen efecto. 
 
 Típicamente sólo el procesador actual puede invalidar su propia TLB, por ello, para eliminar una entrada en todos los procesadores del [[Sistema|sistema]], se requiere que el [[Sistema operativo|sistema operativo]] mande una interrupción a cada procesador y pida que esa entrada de la TLB sea eliminada. Esta es una operación muy costosa y por ende tiene su propio nombre y se denomina TLB shutdown
 

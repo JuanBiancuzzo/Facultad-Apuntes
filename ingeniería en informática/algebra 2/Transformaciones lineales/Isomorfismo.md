@@ -32,7 +32,7 @@ Si se cumplen estas tres leyes, entonces podemos demostrar que se preservan tamb
 * [[Átomo|Átomos]]
 	* Si $a$ es átomo de $B_1$, entonces $f(a)$ es átomo de $B_2$
 
-Como cualquier elemento del álgebra de Boole se puede escribir como combinación de los átomos, entonces para definir un isomorfismo basta con definir la [[Transformación|transformación]] de sus átomos. De esta forma definimos la cantidad de isomorfismos posible entre dos álgebras como $n!$, siendo $n$ la cantidad de átomos
+Como cualquier elemento del álgebra de Boole se puede escribir como combinación de los átomos, entonces para definir un isomorfismo basta con definir la [[ingeniería electrónica/señales/Señales y sistemas/Transformación|transformación]] de sus átomos. De esta forma definimos la cantidad de isomorfismos posible entre dos álgebras como $n!$, siendo $n$ la cantidad de átomos
 
 ## Transformaciones lineales
 ---

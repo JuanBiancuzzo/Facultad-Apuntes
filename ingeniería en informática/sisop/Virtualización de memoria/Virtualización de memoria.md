@@ -22,7 +22,7 @@ La virtualización de memoria le hace creer al [[Proceso|proceso]] que este tien
     * Variables Globales
 * [[Heap|Heap]]
     * Memoria dinámica alocable
-* [[Stack|Stack]]
+* [[ingeniería en informática/sisop/Virtualización de memoria/Stack|Stack]]
     * Variables locales y trace de llamadas
 
 Todas estas secciones pertenecientes a un proceso se denominan [[Espacio de direcciones|espacio de direcciones]] del proceso

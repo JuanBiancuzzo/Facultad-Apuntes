@@ -17,9 +17,9 @@ Este conjunto de instrucciones sólo puede ser ejecutado en [[Modo de operación
  * `LMSW`: Carga un nuevo [[Estado de máquina|estado de máquina]] en WORD
  * `CLTS`: Limpia el [[Cambio de tarea|cambio de tarea]] en el [[Registro|registro]] de control CR0
  * `MOV`: Copiar y guardar [[Registro debug|registro debug]] en el registro de debug
- * `INVD`: Invalida el [[Cache]] sin writeback
+ * `INVD`: Invalida el [[ingeniería en informática/sisop/Scheduling/Cache]] sin writeback
  * `INVLPG`: Invalida la entrada de TLB
- * `WBINVD`: Invalida el [[Cache|cache]] con writeback
+ * `WBINVD`: Invalida el [[ingeniería en informática/sisop/Scheduling/Cache|cache]] con writeback
  * `HLT`: Para el [[Proceso|proceso]]
  * `RDMSR`: Leer el [[Registro de modelo especifico|registro de modelo especifico]]
  * `WRMSR`: Escribir el registro de modelo especifico

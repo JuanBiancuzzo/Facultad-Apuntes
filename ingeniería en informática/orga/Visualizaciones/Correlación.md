@@ -6,6 +6,6 @@ tags:
 ---
 # Definición
 ---
-El índice de [[Desvío estándar|correlación]] se puede calcular para todos los valores numéricos de un [[Data frame - Pandas|data frame]] usando `dataFrame.cor`, dando otro data frame que es simétrico
+El índice de [[Desvío estándar|correlación]] se puede calcular para todos los valores numéricos de un [[Data frame|data frame]] usando `dataFrame.cor`, dando otro data frame que es simétrico
 
 Recordar que haya correlación no implica causalidad

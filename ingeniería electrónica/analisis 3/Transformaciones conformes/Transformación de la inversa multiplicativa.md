@@ -7,5 +7,5 @@ tags:
 ---
 # Definición
 ---
-Dada la [[Función inversión|función inversión]], esta se puede ver como una [[Transformación|transformación]] del espacio $\mathbb{C}$.
+Dada la [[Función inversión|función inversión]], esta se puede ver como una [[ingeniería electrónica/señales/Señales y sistemas/Transformación|transformación]] del espacio $\mathbb{C}$.
 

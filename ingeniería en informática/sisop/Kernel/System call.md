@@ -11,11 +11,11 @@ Las system calls son funciones que permiten a los [[Proceso|procesos]] de usuari
 
 Desde el punto de vista del [[Programa]], llamar a una system call es más o menos como invocar a una función de `C`. Por supuesto, de fondo ocurre
 1. El programa realiza un llamado a una system call mediante la invocación de una función wrapper en la biblioteca
-2. Dicha función wrapper tiene que proporcionar todos los argumentos al system call `trap_handling`. Estos argumentos son pasados al wrapper por el [[Stack]], pero el [[Kernel]] los espera en determinados [[Registro|registros]]. La función wrapper copia estos valores a los registros
+2. Dicha función wrapper tiene que proporcionar todos los argumentos al system call `trap_handling`. Estos argumentos son pasados al wrapper por el [[ingeniería en informática/sisop/Virtualización de memoria/Stack]], pero el [[Kernel]] los espera en determinados [[Registro|registros]]. La función wrapper copia estos valores a los registros
 3. Dado que todas las system calls son accedidas de la misma forma, el kernel tiene que saber identificarlas de alguna forma. Para poder hacer esto, la función wrapper copia el número de la system call a un determinado registro de la [[Procesador|Procesador]] la `%eax`
 4. La función wrapper ejecuta una instrucción de código máquina llamada `trap_machine_instruction`, esta causa que el [[Procesador|procesador]] pase de [[User mode]] a [[Kernel mode|kernel mode]] y ejecute el código apuntado por la [[Dirección de memoria|dirección]] `0x80` del vector de [[Trap|traps]] del sistema
 5. En respuesta al [[Trap|trap]] de la posición 128 (`0x80`), el kernel invoca su propia función llamada `system_call()` para manejar esa trap. Este manejador
-	1. Graba el valor de los registros en el [[Stack|stack]] del kernel
+	1. Graba el valor de los registros en el [[ingeniería en informática/sisop/Virtualización de memoria/Stack|stack]] del kernel
 	2. Verifica la validez del número de system call
 	3. Invoca el servicio correspondiente a la system call llamada a través del vector de system calls, el servicio realiza su tarea y finalmente le devuelve un resultado de estado a la rutina `system_call()`
 	4. Se restauran los registros almacenados en el stack del kernel y se agrega el valor de retorno en el stack

@@ -47,6 +47,6 @@ Hay tres tipos de instrucciones
 - Control de flujo del programa
 - Movimiento de datos
 
-Cuando es excedida la cantidad de registros, se utiliza el [[Stack|stack]]. El compilador debe decidir que registros deben ser guardados en el stack. Esto afecta la eficiencia del código que genera
+Cuando es excedida la cantidad de registros, se utiliza el [[ingeniería en informática/sisop/Virtualización de memoria/Stack|stack]]. El compilador debe decidir que registros deben ser guardados en el stack. Esto afecta la eficiencia del código que genera
 
 Las variables globales permanecen a lo largo del tiempo de ejecución del programa y se guardan en [[Memoria|memoria]]. Las variables locales se guardan en el stack

@@ -8,9 +8,9 @@ tags:
 ---
 Cada proceso tiene un contexto bien definido que comprende la información necesaria para describir completamente al mismo. El contexto de un proceso consiste de
 1. User Address Space:
-	* Normalmente está dividido en varias áreas, text, data, [[Stack]], [[Heap]]
+	* Normalmente está dividido en varias áreas, text, data, [[ingeniería en informática/sisop/Virtualización de memoria/Stack]], [[Heap]]
 2. Control Information:
-	* El [[Kernel]] utiliza dos estructuras principales para mantener información de control de un proceso, la [[User Area]] y la [[Estructura Proc]]. Cada proceso además tiene su propio [[Stack|kernel stack]] y mapas de traducción de [[Dirección de memoria|direcciones]]
+	* El [[Kernel]] utiliza dos estructuras principales para mantener información de control de un proceso, la [[User Area]] y la [[Estructura Proc]]. Cada proceso además tiene su propio [[ingeniería en informática/sisop/Virtualización de memoria/Stack|kernel stack]] y mapas de traducción de [[Dirección de memoria|direcciones]]
 3. Credentials:
 	* Las credenciales del proceso incluyen los groups IDs y user id, asociados con el
 4. Variables de entorno:
@@ -18,7 +18,7 @@ Cada proceso tiene un contexto bien definido que comprende la información neces
 5. Hardware context:
 	* Esto contiene el contenido de los registros de propósito general, y de un conjunto especial de registros del [[Sistema]]
 		* El program counter (PC)
-		* El [[Stack]] pointer (SP)
+		* El [[ingeniería en informática/sisop/Virtualización de memoria/Stack]] pointer (SP)
 		* Memory management registers
 		* Los registros de la unidad de punto flotante
 

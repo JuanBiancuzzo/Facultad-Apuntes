@@ -7,7 +7,7 @@ tags:
 ---
 # Definición
 ---
-Sean $\mathbb{V}$ y $\mathbb{W}$ dos $\mathbb{K}$-[[Espacio vectorial]], la [[Función|función]] $T:\mathbb{V}\to\mathbb{W}$ se llama [[Transformación|transformación]] lineal
+Sean $\mathbb{V}$ y $\mathbb{W}$ dos $\mathbb{K}$-[[Espacio vectorial]], la [[Función|función]] $T:\mathbb{V}\to\mathbb{W}$ se llama [[ingeniería electrónica/señales/Señales y sistemas/Transformación|transformación]] lineal
 
 ## Condición necesaria para ser transformación lineal
 ---

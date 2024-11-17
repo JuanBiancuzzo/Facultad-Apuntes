@@ -15,7 +15,7 @@ Para entender como funcionan veamos ejemplos de matemática, como el caso del [[
 
 ## En informatica
 ---
-Para programar una función recursiva, podemos verlo en [[lenguajes de programación/lenguaje c/Índice|C]] donde vamos a separarlo en $3$ secciones
+Para programar una función recursiva, podemos verlo en [[Lenguaje C|C]] donde vamos a separarlo en $3$ secciones
 * Condición de corte
 * Procesamiento
 * Llamado recursivo

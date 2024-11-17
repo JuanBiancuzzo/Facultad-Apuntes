@@ -7,4 +7,4 @@ tags:
 ---
 # Definición
 ---
-Son aquellas [[Transformación|transformaciones]] que conservan tanto ángulos como orientaciones.
+Son aquellas [[ingeniería electrónica/señales/Señales y sistemas/Transformación|transformaciones]] que conservan tanto ángulos como orientaciones.

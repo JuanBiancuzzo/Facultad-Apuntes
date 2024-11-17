@@ -6,7 +6,7 @@ tags:
 ---
 # Definición
 ---
-El concepto de afinidad de cache se tiene que tener en cuenta al armar un [[Scheduler|planificador]] con [[Arquitectura multiprocesador|multiprocesadores]] con [[Cache|cache]].
+El concepto de afinidad de cache se tiene que tener en cuenta al armar un [[Scheduler|planificador]] con [[Arquitectura multiprocesador|multiprocesadores]] con [[ingeniería en informática/sisop/Scheduling/Cache|cache]].
 
 Cuando un [[Proceso|proceso]] corre sobre una [[Procesador|procesador]] en particular va construyendo un cachito del estado de si mismo en las cache de esa [[Procesador|CPU]]. 
 

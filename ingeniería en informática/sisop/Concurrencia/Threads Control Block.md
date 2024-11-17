@@ -12,5 +12,5 @@ Cada [[Thread]] debe tener una estructura que represente su estado. Esta estruct
 * El estado del Cómputo que debe ser realizado por el thread.
 
 Para poder crear múltiples threads, pararlos y rearrancarlos. El [[Sistema operativo|sistema operativo]] debe poder almacenar en el TCB el estado actual del bloque de ejecución:
-* El puntero al [[Stack]] del thread
+* El puntero al [[ingeniería en informática/sisop/Virtualización de memoria/Stack]] del thread
 * Una copia de sus registros en el procesador

@@ -31,7 +31,7 @@ Dadas estas características, cada celda de memoria se debe poder acceder para d
 
 ## En C
 ---
-Para definir una variable en [[lenguajes de programación/lenguaje c/Índice|C]] se debe establecer el tipo de dato al cual pertenece. Seguidamente se debe dotar de un nombre a la variable, a ese nombre se lo denomina identificador. Un identificador se lo escribe teniendo en cuanta que es una secuencia de letras
+Para definir una variable en [[Lenguaje C|C]] se debe establecer el tipo de dato al cual pertenece. Seguidamente se debe dotar de un nombre a la variable, a ese nombre se lo denomina identificador. Un identificador se lo escribe teniendo en cuanta que es una secuencia de letras
 
 ```c
 int numero;

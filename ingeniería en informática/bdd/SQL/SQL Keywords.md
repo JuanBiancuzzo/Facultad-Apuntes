@@ -20,7 +20,7 @@ Las keywords de [[Structured Query Language|SQL]] se puede separar en
 * [[Sentencia ORDER BY|ORDER BY]] se usa para ordenar los resultados de forma ascendente o descendente
 * [[Sentencia DISTINC|DISTINC]] extrae información diferente de una base de datos (sin repetir) 
 * [[Sentencia TOP o LIMIT|TOP o LIMIT]] extrae $n$ [[Registro SQL|registros]] de una base de datos
-* [[Sentencia JOIN|JOIN]] se usa para combinar filas de dos o más tablas basado en la relación entre las columnas de ambas
+* [[Merge|JOIN]] se usa para combinar filas de dos o más tablas basado en la relación entre las columnas de ambas
 * [[Sentencia UNION|UNION]] es usado para combinar resultados de dos SELECT
 * [[Sentencia GROUP BY|GROUP BY]] agrupa filas que tengan el mismo valor en un subgrupo de columnas
 * [[Sentencia HAVING|HAVING]] similar a WHERE pero funcionado con [[SQL Keywords#Funciones de agregación|funciones de agregación]]

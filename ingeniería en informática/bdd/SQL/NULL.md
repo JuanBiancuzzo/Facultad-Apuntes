@@ -24,4 +24,4 @@ WHERE columna IS NULL;
 
 ## En C
 ---
-En [[lenguajes de programación/lenguaje c/Índice|C]] `NULL` representa el estado invalido de un [[Puntero|puntero]] y como es un número, este es guardado con el valor `0`
+En [[Lenguaje C|C]] `NULL` representa el estado invalido de un [[Puntero|puntero]] y como es un número, este es guardado con el valor `0`

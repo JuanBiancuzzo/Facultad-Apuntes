@@ -131,7 +131,7 @@ De hecho estas tres formas representan
 ---
 Así como hay varias formas de pasar de modo usuario a modo kernel, también hay varias formas de pasar de modo kernel a modo usuario
 * Un [[Proceso#API's|nuevo proceso]]
-	* Cuando se inicia un nuevo [[Proceso]] el [[Kernel]] copia el [[Programa]] en la [[Memoria|memoria]], setea el contador del programa apuntando a la primera instrucción del proceso setea el [[Stack|stack]] pointer a la base del stack de usuario y switchea a modo usuario
+	* Cuando se inicia un nuevo [[Proceso]] el [[Kernel]] copia el [[Programa]] en la [[Memoria|memoria]], setea el contador del programa apuntando a la primera instrucción del proceso setea el [[ingeniería en informática/sisop/Virtualización de memoria/Stack|stack]] pointer a la base del stack de usuario y switchea a modo usuario
 * Continuar después de una [[Interrupción|interrupción]], una [[Excepción del procesador|excepción del procesador]] o de una [[System call|system call]]
 	* Una vez que el kernel termino de manejar el pedido, este continua con la ejecución de procesos interrumpidos mediante la restauración de todos los [[Registro|registros]] y cambiando el modo a nivel usuario
 * Cambio entre diferentes procesos

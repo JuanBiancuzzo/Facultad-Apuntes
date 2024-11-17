@@ -128,7 +128,7 @@ Estas $5$ condiciones pueden ocurrir en cualquier orden. Sin embargo, todas debe
 En el caso que se reconozca una interrupción, ocurrirán estos $5$ eventos
 * Se completará la instrucción que se está ejecutando actualmente
 * Se suspenderá el hilo actualmente en ejecución
-* El contenido de $12$ registros se almacenará en la [[Stack|pila]]. Se almacenará $18$ palabras adicionales si la [[Unidad de punto flotante (FPU) (Floating Point Unit)|unidad de punto flotante]] estaba activa cuando se reconoció la interrupción
+* El contenido de $12$ registros se almacenará en la [[ingeniería en informática/sisop/Virtualización de memoria/Stack|pila]]. Se almacenará $18$ palabras adicionales si la [[Unidad de punto flotante (FPU) (Floating Point Unit)|unidad de punto flotante]] estaba activa cuando se reconoció la interrupción
 * El [[Registro|registro]] `LR` se establece en un valor específico
 * El registro de la [[Unidad de control#^PC|PC]] se carga con la [[Dirección de memoria|dirección]] de la [[Rutina de servicio de interrupción|rutina de servicio de interrupción]] 
 

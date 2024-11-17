@@ -6,4 +6,4 @@ tags:
 ---
 # Definición
 ---
-Este se encarga de gestionar cómo y dónde guardar la información en una computadora, y cómo poder consultarla.
+Este se encarga de gestionar cómo y dónde guardar la información en una computadora, y cómo poder consultarla

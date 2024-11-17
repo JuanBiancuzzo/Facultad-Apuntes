@@ -9,7 +9,7 @@ aliases:
 ---
 # Definición
 ---
-Todas las instrucciones ocupan el mismo espacio y es más rápido. Tiene más registros disponibles, ya que todo debe estar en ellos para operar. Para utilizar el [[Stack|stack]], se debe hacer de forma manual. Su set de instrucciones es más reducido, no contiene instrucciones redundantes
+Todas las instrucciones ocupan el mismo espacio y es más rápido. Tiene más registros disponibles, ya que todo debe estar en ellos para operar. Para utilizar el [[ingeniería en informática/sisop/Virtualización de memoria/Stack|stack]], se debe hacer de forma manual. Su set de instrucciones es más reducido, no contiene instrucciones redundantes
 
 Las operaciones aritméticas son únicamente entre registros. Para acceder a [[Memoria|memoria]], solo se puede guardar y recuperar. Los dispositivos de entrada y salida están mapeados en memoria
 

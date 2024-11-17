@@ -10,7 +10,7 @@ aliases:
 ---
 # Definición
 ---
-Se denomina archivo de cabecera o header file, en el ámbito de los [[lenguajes de programación/lenguaje c/Índice|lenguaje de programación C]] y C++, al archivo, normalmente en forma de código fuente, que el compilador incluye de forma automática al procesar algún otro archivo fuente. Es típico y muy común que los programadores especifiquen la inclusión de los header files por medio de pragmas al comienzo de otro archivo fuente
+Se denomina archivo de cabecera o header file, en el ámbito de los [[Lenguaje C|lenguaje de programación C]] y C++, al archivo, normalmente en forma de código fuente, que el compilador incluye de forma automática al procesar algún otro archivo fuente. Es típico y muy común que los programadores especifiquen la inclusión de los header files por medio de pragmas al comienzo de otro archivo fuente
 
 Un header file contiene, normalmente, una declaración directa de subrutinas, variables, u otros identificadores. Aquellos programadores que desean declarar identificadores estándares en más de un archivo fuente pueden colocar esos identificadores en un único header file, que se incluirá cuando el código que contiene sea requerido pro otros archivos
 

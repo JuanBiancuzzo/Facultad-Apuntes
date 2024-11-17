@@ -22,7 +22,7 @@ En una dirección virtual utilizando esta técnica, los bit de más alto orden s
 
 ## Detalles
 ---
-1. El [[Stack|stack]] crece hacia atrás o backward, por ende [[Hardware|hardware]] necesita saber sobre eso en un bit de información
+1. El [[ingeniería en informática/sisop/Virtualización de memoria/Stack|stack]] crece hacia atrás o backward, por ende [[Hardware|hardware]] necesita saber sobre eso en un bit de información
 2. A veces es necesario poder compartir ciertos segmentos entre varios procesos, para ello el hardware necesita proporcionar un mecanismo, otro bit que permita saber si se puede ejecutar, escribir o leer por varios procesos a la vez. Para ello se usan un par de bits llamados bits de protección
 3. Todo lo hace el hardware en este caso la [[Memory Management Unit|MMU]]
 4. Segmentación de grano fino vs segmentación de grano grueso. La primera consiste en tener muchos segmentos pequeños y la segunda consiste en tener pocos segmentos grandes.
