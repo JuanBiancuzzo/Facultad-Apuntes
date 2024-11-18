@@ -133,8 +133,8 @@ async function citarLibro(tp, datosIniciales = undefined) {
                     .map(ref => ref.editorial)
                     .distinct();
 
-                let respuesta = await preguntar.suggestor(
-                    tp, ["Agregar editorial", ...editoriales], [AGREGAR_EDITOR, ...editoriales],
+                let respuesta = await preguntar.suggester(
+                    tp, [" ⊕ Agregar editorial", ...editoriales], [AGREGAR_EDITOR, ...editoriales],
                     editorial ? `Modificar la editorial: "${editorial}"` : "Editorial del libro:",
                     error.Quit("No se ingresó la editorial del libro")
                 );
