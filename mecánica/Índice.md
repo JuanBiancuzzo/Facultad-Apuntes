@@ -12,11 +12,6 @@ await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.c
 ---
 Vamos a investigar todo lo relacionado a la mecánica, en el sentido de construcción de mecanismos 
 
-## Resumen
----
-Pendiente...
-
-
 ## Archivos
 ---
 ```dataviewjs

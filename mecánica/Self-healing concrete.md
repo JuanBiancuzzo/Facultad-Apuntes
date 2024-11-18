@@ -1,15 +1,13 @@
 ---
-dia: 2024-11-17
+dia: 2024-11-18
 etapa: sin-empezar
-orden: 484
-referencias:
-  - "566"
-  - "571"
-tags:
-  - mecánica
-  - nota/investigacion
-aliases:
-  - mmWaves
+orden: 493
+referencias: 
+ - "573"
+ - "574"
+tags: 
+ - mecánica
+ - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

@@ -22,7 +22,7 @@ tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - generación-de-energía/Baterias
+  - generación-de-energía/Baterías
 aliases:
   - "Estructural de fibra de carbono\rBatería"
 ---

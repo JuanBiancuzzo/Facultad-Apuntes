@@ -4,7 +4,7 @@ estado: 'Sin empezar'
 orden: 439
 tags: 
  - índice
- - generación-de-energía/Baterias
+ - generación-de-energía/Baterías
  - nota/investigacion
 ---
 ```dataviewjs

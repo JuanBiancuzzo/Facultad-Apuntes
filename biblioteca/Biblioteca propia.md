@@ -11,14 +11,10 @@ Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer
 await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
 ```
 
-#### Buscar (103)
+#### Buscar (98)
 ---
 Programación:
-1. [Data Science from Scratch de Joel Grus](https://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/1492041130?crid=3OIAUEEZ248JV&dib=eyJ2IjoiMSJ9.8bSg9CnzT6ILYn7fN65f9KV2nW-cKKc8x0_9YIRDZ4RfGvmUjgBr8ITHFe99Cg1SY8hieuHF7QLP1X5h2uj1aw.fkyQ1YsMSDSPF43DpfxXcInCEfEaJsd4VpvCw-p11bg&dib_tag=se&keywords=Data+Science+from+Scratch+de+Joel+Grus&qid=1729866163&s=books&sprefix=data+science+from+scratch+de+joel+grus,stripbooks-intl-ship,825&sr=1-1)
-2. [The Linux Programming Interface: A Linux and UNIX System Programming Handbook](https://www.amazon.com/Linux-Programming-Interface-System-Handbook/dp/1593272200)
-3. [TCP/IP Illustrated, Vol. 1](https://www.amazon.com/TCP-Illustrated-Vol-Addison-Wesley-Professional/dp/0201633469)
-4. [Cybersecurity Ops with bash](https://www.amazon.com/Cybersecurity-Ops-bash-Analyze-Command/dp/1492041319)
-5. [Tour of C++](https://www.amazon.com/Tour-2nd-Depth-Bjarne-Stroustrup/dp/0134997832)
+1. 
 
 Hacking:
 1. 

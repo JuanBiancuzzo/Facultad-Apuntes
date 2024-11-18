@@ -1,15 +1,12 @@
 ---
-dia: 2024-11-16
+dia: 2024-11-18
 etapa: sin-empezar
-orden: 453
-referencias:
-  - "541"
-tags:
-  - generación-de-energía/Baterias
-  - nota/investigacion
-aliases:
-  - Batería de sodio-ion
-  - Sodium-ion battery
+orden: 488
+referencias: 
+ - "567"
+tags: 
+ - algoritmos
+ - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

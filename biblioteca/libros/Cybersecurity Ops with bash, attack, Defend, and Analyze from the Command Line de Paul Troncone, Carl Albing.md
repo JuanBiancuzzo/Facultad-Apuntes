@@ -1,0 +1,37 @@
+---
+dia: 2024-11-18
+etapa: sin-empezar
+tipoCita: Libro
+numReferencia: 580
+tituloObra: Cybersecurity Ops with bash
+subtituloObra: Attack, Defend, and Analyze from the Command Line
+nombreAutores:
+  - apellido: Troncone
+    nombre: Paul
+  - apellido: Albing
+    nombre: Carl
+anio: "2019"
+editorial: O'Reilly Media
+edicion: "1"
+volumen: 
+url: 
+capitulos: []
+cover: 
+aliases: []
+orden: 499
+tags:
+  - referencia/libro
+  - biblioteca/libro
+  - nota/investigacion
+  - cybersecurity
+---
+```dataviewjs
+	let actual = dv.current();
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: actual?.etapa });
+	await dv.view("_scripts/dataview/libro/mostrarCapitulos", { titulo: actual?.tituloObra, autores: actual?.nombreAutores, capitulos: actual?.capitulos });
+```
+# Resumen
+---
+
+
+ 

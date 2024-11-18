@@ -135,6 +135,7 @@ Estos proyectos se basan en recolectar información distinto de un tema de inves
 | [Biblioteca](biblioteca/Biblioteca%20propia.md) | Tiene la intención de colectar libros, papers, etc. que me interese analizar relacionado a todo el contexto de esta página y poder referenciarla                                                 |
 | [Componentes](componentes/Componentes.md)       | Vamos a caracterizar los componentes que vaya usando para poder así tener una lista de los componentes que suelo usar y por lo tanto tener un lugar en donde encontrar el como se tiene que usar |
 | [Recetas](recetas/Recetas.md)                   | Todavía no tiene nada pero la idea es agregar recetas y explorar los aspectos de nutrición que pueden aparecer                                                                                   |
+| [Impresion 3D](impresion%203d/Filamentos.md)    | Vamos a recolectar los posibles filamentos que se podrían usar para imprimir, con sus propiedades y con sus características para poder comprobar que filamento es el mejor para cada situación   |
 
 ## Contribuidores
 ---

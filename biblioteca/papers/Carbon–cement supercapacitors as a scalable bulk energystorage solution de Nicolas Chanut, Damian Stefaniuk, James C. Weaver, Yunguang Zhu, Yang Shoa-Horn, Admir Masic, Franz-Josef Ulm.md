@@ -28,7 +28,7 @@ tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - generación-de-energía/Baterias
+  - generación-de-energía/Baterías
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

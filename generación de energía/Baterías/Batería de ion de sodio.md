@@ -1,15 +1,15 @@
 ---
-dia: 2024-11-17
+dia: 2024-11-16
 etapa: sin-empezar
-orden: 484
+orden: 453
 referencias:
-  - "566"
-  - "571"
+  - "541"
 tags:
-  - mecánica
+  - generación-de-energía/Baterías
   - nota/investigacion
 aliases:
-  - mmWaves
+  - Batería de sodio-ion
+  - Sodium-ion battery
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
