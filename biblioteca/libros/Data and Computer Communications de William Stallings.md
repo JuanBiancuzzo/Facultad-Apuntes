@@ -9,7 +9,7 @@ nombreAutores:
   - apellido: Stallings
     nombre: William
 anio: "2013"
-editorial: Pearson
+editorial: Pearson Education, Inc.
 edicion: "8"
 volumen: 
 url: 

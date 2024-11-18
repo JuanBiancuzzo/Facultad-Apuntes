@@ -15,7 +15,7 @@ nombreAutores:
   - apellido: Meyer
     nombre: Robert G.
 anio: "2009"
-editorial: Wiley
+editorial: Wiley Publishing
 edicion: "5"
 volumen: 
 url: 

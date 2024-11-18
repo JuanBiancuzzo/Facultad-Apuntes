@@ -9,7 +9,7 @@ nombreAutores:
   - apellido: Cheng
     nombre: David K.
 anio: "2019"
-editorial: Pearson
+editorial: Pearson Education, Inc.
 edicion: 
 volumen: 
 url: 

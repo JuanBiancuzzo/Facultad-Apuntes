@@ -9,7 +9,7 @@ nombreAutores:
   - apellido: Norris
     nombre: Donald
 anio: "2018"
-editorial: McGraw Hill
+editorial: McGraw-Hill Interamericana de España S.L
 edicion: 
 volumen: 
 url: 

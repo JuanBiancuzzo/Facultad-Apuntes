@@ -8,7 +8,7 @@ nombreAutores:
   - apellido: Dehaene
     nombre: Stanislas
 anio: "2020"
-editorial: Viking
+editorial: Viking Press
 edicion: 
 volumen: 
 url: 

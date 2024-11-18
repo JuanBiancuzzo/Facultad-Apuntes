@@ -8,6 +8,8 @@ const VOLUMEN = "volumen";
 const URL = "url";
 const CAPITULOS = "capitulos";
 
+const AGREGAR_EDITOR = "agregar editor";
+
 const KEYS = [ TITULO_OBRA, SUBTITULO_OBRA, NOMBRE_AUTORES, ANIO, EDITORIAL, EDICION, VOLUMEN, URL, CAPITULOS ];
 
 function valorDefault() {
@@ -125,10 +127,27 @@ async function citarLibro(tp, datosIniciales = undefined) {
                 if (editorial) representacion += `: ${editorial}`;
                 return representacion;
             },
-            preguntar: async (tp, editorial) => await preguntar.simple(
-                tp, editorial ? `Modificar la editorial: "${editorial}"` : "Editorial del libro:",
-                error.Quit("No se ingresó la editorial del libro")
-            )
+            preguntar: async (tp, editorial) => {
+                const dv = app.plugins.plugins.dataview.api;
+                const editoriales = dv.pages("#biblioteca/libro")
+                    .map(ref => ref.editorial)
+                    .distinct();
+
+                let respuesta = await preguntar.suggestor(
+                    tp, ["Agregar editorial", ...editoriales], [AGREGAR_EDITOR, ...editoriales],
+                    editorial ? `Modificar la editorial: "${editorial}"` : "Editorial del libro:",
+                    error.Quit("No se ingresó la editorial del libro")
+                );
+
+                if (respuesta == AGREGAR_EDITOR) {
+                    respuesta = await preguntar.simple(
+                        tp, editorial ? `Modificar la editorial: "${editorial}"` : "Editorial del libro:",
+                        error.Quit("No se ingresó la editorial del libro")
+                    );
+                }
+
+                return respuesta;
+            }
         },
         [EDICION]: {
             tipo: SIMPLE,

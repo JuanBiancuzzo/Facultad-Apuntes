@@ -11,7 +11,7 @@ nombreAutores:
   - apellido: O'Hallaron
     nombre: David
 anio: "2015"
-editorial: Pearson
+editorial: Pearson Education, Inc.
 edicion: "3"
 volumen: 
 url: 

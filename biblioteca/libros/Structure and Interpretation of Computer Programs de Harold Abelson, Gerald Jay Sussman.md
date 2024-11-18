@@ -10,7 +10,7 @@ nombreAutores:
   - apellido: Sussman
     nombre: Gerald Jay
 anio: "1996"
-editorial: " e Massachuses Institute of Technology"
+editorial: Massachusetts Institute of Technology Press
 edicion: "2"
 volumen: 
 url: https://web.mit.edu/6.001/6.037/sicp.pdf

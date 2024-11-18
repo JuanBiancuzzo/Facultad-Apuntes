@@ -11,7 +11,7 @@ nombreAutores:
   - apellido: Van Gelder
     nombre: Allen
 anio: "2000"
-editorial: Addison Wesley
+editorial: Addison-Wesley Professional
 edicion: "3"
 volumen: 
 url: 

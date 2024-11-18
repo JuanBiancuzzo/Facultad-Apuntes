@@ -11,7 +11,7 @@ nombreAutores:
   - apellido: Albing
     nombre: Carl
 anio: "2019"
-editorial: O'Reilly Media
+editorial: O'Reilly Media, Inc.
 edicion: "1"
 volumen: 
 url: 

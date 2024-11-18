@@ -9,7 +9,7 @@ nombreAutores:
   - apellido: Géron
     nombre: Aurélien
 anio: "2019"
-editorial: O'Reilly Media
+editorial: O'Reilly Media, Inc.
 edicion: "2"
 volumen: 
 url: 

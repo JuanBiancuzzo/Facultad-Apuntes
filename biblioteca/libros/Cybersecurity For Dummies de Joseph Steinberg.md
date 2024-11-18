@@ -8,7 +8,7 @@ nombreAutores:
   - apellido: Steinberg
     nombre: Joseph
 anio: "2022"
-editorial: Wiley
+editorial: Wiley Publishing
 edicion: "2"
 volumen: 
 url: 

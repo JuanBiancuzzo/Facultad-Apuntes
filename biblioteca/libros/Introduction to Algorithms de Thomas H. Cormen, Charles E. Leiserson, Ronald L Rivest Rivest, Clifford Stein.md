@@ -14,7 +14,7 @@ nombreAutores:
   - apellido: Stein
     nombre: Clifford
 anio: "2009"
-editorial: Massachusetts Institute of Technology
+editorial: Massachusetts Institute of Technology Press
 edicion: "3"
 volumen: 
 url: 

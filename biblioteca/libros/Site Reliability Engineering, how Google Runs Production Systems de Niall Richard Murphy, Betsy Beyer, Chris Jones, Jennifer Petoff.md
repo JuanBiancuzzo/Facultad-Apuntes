@@ -15,7 +15,7 @@ nombreAutores:
   - apellido: Petoff
     nombre: Jennifer
 anio: "2016"
-editorial: O' Reilly Media
+editorial: O'Reilly Media, Inc.
 edicion: "1"
 volumen: 
 url: 

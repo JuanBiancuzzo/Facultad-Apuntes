@@ -9,7 +9,7 @@ nombreAutores:
   - apellido: Lubanovic
     nombre: Bill
 anio: "2014"
-editorial: O'Reilly Media
+editorial: O'Reilly Media, Inc.
 edicion: 
 volumen: 
 url: 

@@ -17,7 +17,7 @@ nombreAutores:
   - apellido: Taylor
     nombre: Jonathan
 anio: "2023"
-editorial: y Springer Nature Switzerland AG
+editorial: Springer
 edicion: 
 volumen: 
 url: 

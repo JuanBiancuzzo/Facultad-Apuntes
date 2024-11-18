@@ -9,7 +9,7 @@ nombreAutores:
   - apellido: Razavi
     nombre: Behzad
 anio: "2013"
-editorial: Wiley
+editorial: Wiley Publishing
 edicion: "2"
 volumen: 
 url: 

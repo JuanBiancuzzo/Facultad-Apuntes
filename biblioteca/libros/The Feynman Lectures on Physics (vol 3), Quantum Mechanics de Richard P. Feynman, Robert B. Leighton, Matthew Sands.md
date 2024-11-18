@@ -13,7 +13,7 @@ nombreAutores:
     nombre: Matthew
 subtituloObra: Quantum Mechanics
 anio: "1964"
-editorial: Addison Wesley
+editorial: Addison-Wesley Professional
 edicion: 
 volumen: "3"
 url: https://www.feynmanlectures.caltech.edu/III_toc.html

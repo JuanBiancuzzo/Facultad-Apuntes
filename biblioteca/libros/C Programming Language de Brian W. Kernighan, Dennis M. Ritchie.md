@@ -11,7 +11,7 @@ nombreAutores:
   - apellido: Ritchie
     nombre: Dennis M.
 anio: "1988"
-editorial: Pearson
+editorial: Pearson Education, Inc.
 edicion: "2"
 volumen: 
 url: 

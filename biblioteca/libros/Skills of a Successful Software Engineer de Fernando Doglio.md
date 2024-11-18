@@ -9,7 +9,7 @@ nombreAutores:
   - apellido: Doglio
     nombre: Fernando
 anio: "2022"
-editorial: Manning
+editorial: Manning Publications Co
 edicion: 
 volumen: 
 url: 

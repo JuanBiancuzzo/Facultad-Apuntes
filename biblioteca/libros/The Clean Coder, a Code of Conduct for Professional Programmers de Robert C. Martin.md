@@ -9,7 +9,7 @@ nombreAutores:
   - apellido: Martin
     nombre: Robert C.
 anio: "2011"
-editorial: Pearson
+editorial: Pearson Education, Inc.
 edicion: "1"
 volumen: 
 url: 

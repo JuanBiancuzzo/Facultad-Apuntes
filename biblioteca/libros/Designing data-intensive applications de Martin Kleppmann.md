@@ -8,7 +8,7 @@ nombreAutores:
   - apellido: Kleppmann
     nombre: Martin
 anio: "2017"
-editorial: O'Reilly
+editorial: O'Reilly Media, Inc.
 edicion: 
 volumen: 
 url: 

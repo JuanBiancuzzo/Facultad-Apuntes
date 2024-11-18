@@ -10,7 +10,7 @@ nombreAutores:
   - apellido: Freedman
     nombre: Roger A.
 anio: "2009"
-editorial: Addison Wesley
+editorial: Addison-Wesley Professional
 edicion: "12"
 volumen: "1"
 url: 

@@ -13,7 +13,7 @@ nombreAutores:
   - apellido: Courville
     nombre: Aaron
 anio: "2016"
-editorial: MIT Press
+editorial: Massachusetts Institute of Technology Press
 edicion: 
 volumen: 
 url: https://www.deeplearningbook.org/

@@ -9,7 +9,7 @@ nombreAutores:
   - apellido: Huyen
     nombre: Chip
 anio: "2022"
-editorial: O' Reilly Media, Inc.
+editorial: O'Reilly Media, Inc.
 edicion: "1"
 volumen: 
 url: 

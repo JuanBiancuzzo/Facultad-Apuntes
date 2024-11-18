@@ -13,7 +13,7 @@ nombreAutores:
   - apellido: Sands
     nombre: Matthew
 anio: "1964"
-editorial: Addison Wesley
+editorial: Addison-Wesley Professional
 edicion: 
 volumen: "1"
 url: https://www.feynmanlectures.caltech.edu/I_toc.html

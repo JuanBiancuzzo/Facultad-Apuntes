@@ -9,7 +9,7 @@ nombreAutores:
   - apellido: Petrov
     nombre: Alex
 anio: "2019"
-editorial: O'Reilly
+editorial: O'Reilly Media, Inc.
 edicion: "1"
 volumen: 
 url: 

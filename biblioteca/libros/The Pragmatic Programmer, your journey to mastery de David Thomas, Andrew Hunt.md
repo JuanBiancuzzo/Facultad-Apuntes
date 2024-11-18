@@ -11,7 +11,7 @@ nombreAutores:
   - apellido: Hunt
     nombre: Andrew
 anio: "2019"
-editorial: Addison Wesley
+editorial: Addison-Wesley Professional
 edicion: "2"
 volumen: 
 url: 

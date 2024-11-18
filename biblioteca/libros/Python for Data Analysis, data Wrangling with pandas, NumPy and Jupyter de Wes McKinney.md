@@ -9,7 +9,7 @@ nombreAutores:
   - apellido: McKinney
     nombre: Wes
 anio: "2022"
-editorial: O'Reilly Media
+editorial: O'Reilly Media, Inc.
 edicion: "3"
 volumen: 
 url: 

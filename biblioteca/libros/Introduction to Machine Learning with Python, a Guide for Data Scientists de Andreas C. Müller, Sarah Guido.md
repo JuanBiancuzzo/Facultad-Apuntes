@@ -11,7 +11,7 @@ nombreAutores:
   - apellido: Guido
     nombre: Sarah
 anio: "2016"
-editorial: O' Reilly Media
+editorial: O'Reilly Media, Inc.
 edicion: "1"
 volumen: 
 url: 

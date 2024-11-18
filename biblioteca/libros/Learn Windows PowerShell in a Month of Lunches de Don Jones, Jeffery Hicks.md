@@ -11,7 +11,7 @@ nombreAutores:
   - apellido: Hicks
     nombre: Jeffery
 anio: "2012"
-editorial: Manning Publications
+editorial: Manning Publications Co
 edicion: "2"
 volumen: 
 url: 
