@@ -145,6 +145,7 @@ Estos proyectos tienen una aplicación como resultado final
 
 | Proyecto                                                                                                                                                    | Estado           |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| [8-bit computer](8-bit%20computer/8-bit%20computer.md)                                                                                                      | Sin empezar      |
 | [Simpler GUI](simpler%20gui/Simpler%20GUI.md)                                                                                                               | Sin empezar      |
 | [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)                 | Sin empezar      |
 | [Primer proyecto de robótica - Auto remoto](primer%20proyecto%20de%20robótica%20-%20auto%20remoto/Primer%20proyecto%20de%20robótica%20-%20Auto%20remoto.md) | En proceso       |
