@@ -139,9 +139,6 @@ todasLasMaterias.forEach(materia => {
         .map(correlativa => todasLasMaterias.findIndex(m => m.path == correlativa.path));
 });
 
-console.table(todasLasMaterias);
-
-
 let mouse;
 let diferenciaAcumuladaX = 0;
 let diferenciaAcumuladaY = 0;
