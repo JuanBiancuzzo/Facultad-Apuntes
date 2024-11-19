@@ -15,9 +15,9 @@ editorial: O'Reilly Media, Inc.
 edicion: "1"
 volumen: 
 url: 
-capitulos: []
-cover: 
-aliases: []
+capitulos: 
+cover: Cybersecurity Ops with bash, attack, Defend, and Analyze from the Command Line de Paul Troncone, Carl Albing.jpg
+aliases: 
 orden: 499
 tags:
   - referencia/libro
@@ -32,7 +32,7 @@ tags:
 ---
 ```dataviewjs
 	let actual = dv.current();
-	await dv.view("_scripts/dataview/libro/mostrarCapitulos", { titulo: actual?.tituloObra, autores: actual?.nombreAutores, capitulos: actual?.capitulos });
+	await dv.view("_scripts/dataview/libro/mostrarCapitulos", { libro: actual, capitulos: actual?.capitulos });
 ```
 
 

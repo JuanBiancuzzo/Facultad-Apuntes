@@ -104,9 +104,8 @@ tags:
 ---
 ```dataviewjs
 	let actual = dv.current();
-	await dv.view("_scripts/dataview/libro/mostrarCapitulos", { titulo: actual?.tituloObra, autores: actual?.nombreAutores, capitulos: actual?.capitulos });
+	await dv.view("_scripts/dataview/libro/mostrarCapitulos", { libro: actual, capitulos: actual?.capitulos });
 ```
-
 
 ## Capítulo 1: Computer Networks and the Internet
 ---
