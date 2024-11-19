@@ -4,6 +4,8 @@ tags:
   - ingeniería-en-informática/redes/Capa-de-aplicación
   - resumen
   - ingeniería-electrónica/redes/Capa-de-aplicación
+referencias:
+  - "590"
 ---
 # Índice 
 ---
@@ -13,7 +15,7 @@ await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 
 # Resumen
 ---
-Pendiente...
+![[Computer Networking, a Top-Down Approach de James Kurose, Keith Ross#Capítulo 2: Application Layer]]
 
 
 # Bibliografía

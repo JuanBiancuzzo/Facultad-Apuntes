@@ -4,6 +4,9 @@ tags:
   - ingeniería-en-informática/redes/Capa-de-Red
   - resumen
   - ingeniería-electrónica/redes/Capa-de-Red
+referencias:
+  - "592"
+  - "593"
 ---
 # Índice 
 ---
@@ -13,7 +16,9 @@ await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 
 # Resumen
 ---
-Pendiente...
+![[Computer Networking, a Top-Down Approach de James Kurose, Keith Ross#Capítulo 4 The Network Layer Data Plane]]
+
+![[Computer Networking, a Top-Down Approach de James Kurose, Keith Ross#Capítulo 5 The Network Layer Control Plane]]
 
 
 # Bibliografía

@@ -4,6 +4,8 @@ tags:
   - ingeniería-en-informática/redes/Capa-de-Transporte
   - resumen
   - ingeniería-electrónica/redes/Capa-de-Transporte
+referencias:
+  - "591"
 ---
 # Índice 
 ---
@@ -13,7 +15,7 @@ await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 
 # Resumen
 ---
-Pendiente...
+![[Computer Networking, a Top-Down Approach de James Kurose, Keith Ross#Capítulo 3 Transport Layer]]
 
 
 # Bibliografía

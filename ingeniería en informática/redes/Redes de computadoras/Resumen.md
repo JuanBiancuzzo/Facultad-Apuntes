@@ -4,6 +4,8 @@ tags:
   - ingeniería-en-informática/redes/Redes-de-computadoras
   - resumen
   - ingeniería-electrónica/redes/Redes-de-computadoras
+referencias:
+  - "589"
 ---
 # Índice 
 ---
@@ -13,7 +15,7 @@ await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 
 # Resumen
 ---
-Pendiente...
+![[Computer Networking, a Top-Down Approach de James Kurose, Keith Ross#Capítulo 1 Computer Networks and the Internet]]
 
 
 # Bibliografía

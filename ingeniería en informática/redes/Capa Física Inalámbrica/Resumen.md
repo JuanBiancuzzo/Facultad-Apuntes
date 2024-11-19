@@ -4,6 +4,8 @@ tags:
   - ingeniería-en-informática/redes/Capa-Física-Inalámbrica
   - resumen
   - ingeniería-electrónica/redes/Capa-Física-Inalámbrica
+referencias:
+  - "595"
 ---
 # Índice 
 ---
@@ -13,7 +15,7 @@ await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 
 # Resumen
 ---
-Pendiente...
+![[Computer Networking, a Top-Down Approach de James Kurose, Keith Ross#Capítulo 7 Wireless and Mobile Networks]]
 
 
 # Bibliografía

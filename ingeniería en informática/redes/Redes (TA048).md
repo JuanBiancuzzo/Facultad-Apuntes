@@ -8,6 +8,8 @@ tags:
 etapa: terminado
 correlativas:
   - "[[Sistemas operativos (7508)|Sistemas operativos]]"
+referencias:
+  - "588"
 ---
 # Apuntes
 ---
