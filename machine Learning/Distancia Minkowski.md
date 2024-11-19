@@ -1,13 +1,14 @@
 ---
-dia: 2024-11-12
+dia: 2024-11-19
 etapa: sin-empezar
-orden: 424
-referencias: []
+orden: 506
+referencias:
+  - "585"
 tags:
   - machine-Learning
   - nota/investigacion
 aliases:
-  - Manhattan distance
+  - Minkowski distance
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
@@ -15,3 +16,11 @@ aliases:
 # Definición
 ---
 
+
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```

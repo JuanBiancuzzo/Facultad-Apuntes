@@ -19,6 +19,7 @@ tags:
   - biblioteca/paper
   - nota/investigacion
   - mecánica
+  - robótica/Soft-Robots
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
