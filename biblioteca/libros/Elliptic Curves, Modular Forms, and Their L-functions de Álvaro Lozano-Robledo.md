@@ -21,6 +21,8 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
+  - machine-Learning
+  - cybersecurity
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
