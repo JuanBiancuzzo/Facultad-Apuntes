@@ -2,7 +2,7 @@
 cuatri: 24C2
 plan: 2022
 etapa: empezado
-estado: Sin empezar
+estado: Empezando con vectores y geometría del espacio
 tags:
   - materia/licenciatura-en-ciencias-matemáticas
 correlativas: 

@@ -72,30 +72,30 @@ Un listado de materias, sus códigos y su estado actual
 ---
 Un listado de materias y su estado actual
 
-| Materia                                                                 | Estado      |
-| ----------------------------------------------------------------------- | ----------- |
-| [Álgebra 1](licenciatura%20en%20ciencias%20de%20datos/Álgebra%201.md)   | Sin empezar |
-| [Análisis 1](licenciatura%20en%20ciencias%20de%20datos/Análisis%201.md) | Sin empezar |
+| Materia                                                                 | Estado                                                    |
+| ----------------------------------------------------------------------- | --------------------------------------------------------- |
+| [Álgebra 1](licenciatura%20en%20ciencias%20de%20datos/Álgebra%201.md)   | Me falta los capítulos de enteros, complejos y polinomios |
+| [Análisis 1](licenciatura%20en%20ciencias%20de%20datos/Análisis%201.md) | Empezando con vectores y geometría del espacio            |
 
 
 ### Licenciatura en Ciencias Físicas
 ---
 Un listado de materias y su estado actual
 
-| Materia                                                                     | Estado      |
-| --------------------------------------------------------------------------- | ----------- |
-| [Física 1](licenciatura%20en%20ciencias%20físicas/fisica%201/Física%201.md) | Sin empezar |
-| [Matemática 1](licenciatura%20en%20ciencias%20físicas/Matemática%201.md)    | Sin empezar |
+| Materia                                                                     | Estado                                         |
+| --------------------------------------------------------------------------- | ---------------------------------------------- |
+| [Física 1](licenciatura%20en%20ciencias%20físicas/fisica%201/Física%201.md) | Sin empezar                                    |
+| [Matemática 1](licenciatura%20en%20ciencias%20físicas/Matemática%201.md)    | Empezando con vectores y geometría del espacio |
 
 
 ### Licenciatura en Ciencias Matemáticas
 ---
 Un listado de materias y su estado actual
 
-| Materia                                                                               | Estado      |
-| ------------------------------------------------------------------------------------- | ----------- |
-| [Álgebra 1](licenciatura%20en%20ciencias%20matemáticas/algebra%201/Álgebra%201.md)    | Sin empezar |
-| [Análisis 1](licenciatura%20en%20ciencias%20matemáticas/analisis%201/Análisis%201.md) | Sin empezar |
+| Materia                                                                               | Estado                                                    |
+| ------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| [Álgebra 1](licenciatura%20en%20ciencias%20matemáticas/algebra%201/Álgebra%201.md)    | Me falta los capítulos de enteros, complejos y polinomios |
+| [Análisis 1](licenciatura%20en%20ciencias%20matemáticas/analisis%201/Análisis%201.md) | Empezando con vectores y geometría del espacio            |
 ## Investigación
 ---
 La intención en este repositorio es tener un lugar donde poder investigar sobre temas, vinculándolo con otros, y viendo que relaciones aparecen.
@@ -148,7 +148,7 @@ Estos proyectos tienen una aplicación como resultado final
 | [8-bit computer](8-bit%20computer/8-bit%20computer.md)                                                                                                      | Sin empezar      |
 | [Simpler GUI](simpler%20gui/Simpler%20GUI.md)                                                                                                               | Sin empezar      |
 | [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)                 | Sin empezar      |
-| [Primer proyecto de robótica - Auto remoto](primer%20proyecto%20de%20robótica%20-%20auto%20remoto/Primer%20proyecto%20de%20robótica%20-%20Auto%20remoto.md) | En proceso       |
+| [Primer proyecto de robótica - Auto remoto](primer%20proyecto%20de%20robótica%20-%20auto%20remoto/Primer%20proyecto%20de%20robótica%20-%20Auto%20remoto.md) | Terminado        |
 | [Plugins de Obsidian](plugins%20de%20obsidian/Plugins%20de%20Obsidian.md)                                                                                   | Sin empezar      |
 | [Porfolio](porfolio/Porfolio.md)                                                                                                                            | Sin empezar      |
 | [Better animations in my humble opinion](better%20animations%20in%20my%20humble%20opinion/Better%20animations%20in%20my%20humble%20opinion.md)              | Sin empezar      |

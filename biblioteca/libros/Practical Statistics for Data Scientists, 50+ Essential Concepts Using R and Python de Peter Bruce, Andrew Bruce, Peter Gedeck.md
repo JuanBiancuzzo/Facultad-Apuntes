@@ -1,27 +1,30 @@
 ---
-dia: 2024-10-18
+dia: 2024-11-19
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 389
-tituloObra: The Hacker Playbook
-subtituloObra: Practical Guide To Penetration Testing
+numReferencia: 603
+tituloObra: Practical Statistics for Data Scientists
+subtituloObra: 50+ Essential Concepts Using R and Python
 nombreAutores:
-  - apellido: Kim
+  - apellido: Bruce
     nombre: Peter
-anio: "2015"
-editorial: CreateSpace Independent Publishing Platform
-edicion: 
-volumen: "2"
+  - apellido: Bruce
+    nombre: Andrew
+  - apellido: Gedeck
+    nombre: Peter
+anio: "2020"
+editorial: O'Reilly Media, Inc.
+edicion: "2"
+volumen: 
 url: 
 capitulos: 
-cover: The Hacker Playbook, practical Guide To Penetration Testing (vol. 2) de Peter Kim.jpg
+cover: Practical Statistics for Data Scientists, 50+ Essential Concepts Using R and Python de Peter Bruce, Andrew Bruce, Peter Gedeck.jpg
 aliases: 
+orden: 515
 tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - cybersecurity
-orden: 334
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

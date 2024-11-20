@@ -4,6 +4,7 @@ estado: Sin empezar
 tags:
   - proyecto/práctico
   - porfolio
+github: https://github.com/JuanBiancuzzo/JuanBiancuzzo
 ---
 # Propuesta
 ---
@@ -12,9 +13,7 @@ Crear una forma de mostrar mis proyectos y quien soy para presentarme
 
 # Presentar
 ---
-
-
-
+<iframe src="https://juanbiancuzzo.github.io/JuanBiancuzzo/"></iframe>
 
 # Notas
 ---

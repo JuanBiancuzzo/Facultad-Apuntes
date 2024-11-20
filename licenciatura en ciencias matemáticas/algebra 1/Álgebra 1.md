@@ -2,7 +2,7 @@
 cuatri: 24C2
 plan: 2022
 etapa: empezado
-estado: Sin empezar
+estado: Me falta los capítulos de enteros, complejos y polinomios
 tags:
   - materia/licenciatura-en-ciencias-matemáticas
 correlativas: 

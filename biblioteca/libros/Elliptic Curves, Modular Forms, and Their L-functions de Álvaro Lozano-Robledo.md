@@ -1,26 +1,26 @@
 ---
-dia: 2024-10-10
+dia: 2024-11-19
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 331
-tituloObra: Understanding Distributed Systems
-subtituloObra: What every developer should know about large distributed applications
+numReferencia: 600
+tituloObra: Elliptic Curves, Modular Forms, and Their L-functions
+subtituloObra: 
 nombreAutores:
-  - apellido: Vitillo
-    nombre: Roberto
-anio: "2021"
-editorial: Roberto Vitillo
+  - apellido: Lozano-Robledo
+    nombre: Álvaro
+anio: "2011"
+editorial: American Mathematical Society
 edicion: 
 volumen: 
 url: 
 capitulos: 
-cover: Understanding Distributed Systems, What every developer should know about large distributed applications.jpg
+cover: Elliptic Curves, Modular Forms, and Their L-functions de Álvaro Lozano-Robledo.jpg
 aliases: 
+orden: 512
 tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-orden: 112
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

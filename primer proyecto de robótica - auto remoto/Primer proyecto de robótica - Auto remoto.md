@@ -1,22 +1,18 @@
 ---
 dia: 2024-09-05
-estado: En proceso
+estado: Terminado
 tags:
   - proyecto/práctico
   - primer-proyecto-de-robótica-auto-remoto
+github: https://github.com/JuanBiancuzzo/Auto-control-infrarrojo
 ---
 # Propuesta
 ---
 La intención con este proyecto es explorar un proyecto de robótica simple de principio a fin, para poder entender los aspectos de un proyecto de electrónica
 
-El desarrollo del código va a estar subido en [este repositorio](https://github.com/JuanBiancuzzo/Auto-control-infrarrojo)
-
-
 # Presentar
 ---
-
-
-
+![]([https://juanbiancuzzo.github.io/Auto-control-infrarrojo/](https://juanbiancuzzo.github.io/Auto-control-infrarrojo/)
 
 # Notas
 ---

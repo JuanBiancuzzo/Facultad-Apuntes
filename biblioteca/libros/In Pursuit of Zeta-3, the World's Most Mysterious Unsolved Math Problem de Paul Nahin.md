@@ -1,26 +1,26 @@
 ---
-dia: 2024-10-10
+dia: 2024-11-19
 etapa: sin-empezar
 tipoCita: Libro
-numReferencia: 331
-tituloObra: Understanding Distributed Systems
-subtituloObra: What every developer should know about large distributed applications
+numReferencia: 598
+tituloObra: In Pursuit of Zeta-3
+subtituloObra: The World's Most Mysterious Unsolved Math Problem
 nombreAutores:
-  - apellido: Vitillo
-    nombre: Roberto
+  - apellido: Nahin
+    nombre: Paul
 anio: "2021"
-editorial: Roberto Vitillo
+editorial: Princeton University Press
 edicion: 
 volumen: 
 url: 
 capitulos: 
-cover: Understanding Distributed Systems, What every developer should know about large distributed applications.jpg
+cover: In Pursuit of Zeta-3, the World's Most Mysterious Unsolved Math Problem de Paul Nahin.jpg
 aliases: 
+orden: 510
 tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-orden: 112
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

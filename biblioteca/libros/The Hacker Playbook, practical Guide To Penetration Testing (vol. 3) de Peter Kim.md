@@ -9,7 +9,7 @@ nombreAutores:
   - apellido: Kim
     nombre: Peter
 anio: "2018"
-editorial: " CreateSpace Independent Publishing Platform"
+editorial: CreateSpace Independent Publishing Platform
 edicion: 
 volumen: "3"
 url: 
