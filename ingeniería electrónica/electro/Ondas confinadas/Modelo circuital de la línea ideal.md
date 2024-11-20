@@ -190,4 +190,10 @@ Luego $\frac{\partial f}{\partial u} = L ~ c ~ \frac{\partial g}{\partial u}$ e 
 
 Junto con la velocidad de propagación de las ondas $c = \frac{1}{\sqrt{L ~ C}}$ son los parámetros fundamentales que describen el comportamiento de la línea como dispositivo transmisor de [[Energía|energía]]
 
+## Diferencias entre constantes distribuidas y concentradas
+---
 Debemos señalar las diferencias de este modelo circuital de constantes distribuidas con el [[Modelo de constantes concentradas|modelo de constantes concentradas]]. En un circuito de constantes concentradas, la corriente que entra en el "nodo" es la misma que la que sale (ley de Kirchhoff de nodos), y las variaciones de tensión a lo largo del circuito se concentran en cada elemento concentrado, que desde el punto de vista geométrico no tiene extensión. No hay variación de tensión a lo largo de los "cables de conexión" entre elementos concentrados, que se consideran volúmenes equipotenciales
+
+En una [[Guía de ondas|línea de transmisión]] la situación es totalmente diferente. La corriente que cruza secciones transversales a la línea y la tensión entre los conductores medios sobre una sección transversal dependen de la posición. Así, no se cumplen las leyes de Kirchhoff. Hay acumulación de carga a lo largo de la línea. La tensión varía punto a punto a lo largo de la línea y no hay sitios (salvo se conecte un elemento concentrado desde fuera de la línea) donde haya una "caída" abrupta de tensión
+
+Por este motivo, la línea no puede reemplazarse por una impedancia concentrada, salvo en el caso particular en que su dimensión longitudinal sea despreciable frente a la mínima longitud de onda de la señal (condición cuasi-estacionaria)
