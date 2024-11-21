@@ -26,7 +26,7 @@ Veamos una lista de operaciones que se pueden hacer para crear una animación de
 * Inclinar el modelo en la dirección de su aceleración
 * Para correr, se puede crear un disco, el cual represente el paso que puede dar, por lo que si ese disco se agranda, el paso que puede dar es mayor ![[Representación del stride.png|300x300]] 
     * Generando dos keyframes, una para tocar el piso y otra intermedia, se puede [[Interpolación|interpolación]] y sincronizar con el disco, asegurándonos que siempre toque correctamente el piso la animación
-        * Se puede [[Interpolación lineal|interpolar linealmente]] pero tiene la desventaja de no tener una [[Continuidad de las derivables|derivada continua]], por lo que sería mejor crear una [[Interpolación bicúbica (Bicubic interpolation)|interpolación bicúbica]] que si tiene derivadas continuas, por lo que físicamente representa que tiene una velocidad continua y no tiene saltos discontinuos
+        * Se puede [[Interpolación lineal|interpolar linealmente]] pero tiene la desventaja de no tener una [[Continuidad de las derivables|derivada continua]], por lo que sería mejor crear una [[Interpolación bicúbica|interpolación bicúbica]] que si tiene derivadas continuas, por lo que físicamente representa que tiene una velocidad continua y no tiene saltos discontinuos
     * Podemos relacionar el paso que representa el disco con la velocidad, y de esa forma crear una animación para correr
 * Se puede crear un salto entre pasos, y también se puede crear una relación la velocidad y la altura máxima de cada salto
 * Usar la idea de [[The Illusion of Life de Frank Thomas, Ollie Johnston#Slow In & Slow Out|slow in & slow out]] para crear movimientos realistas

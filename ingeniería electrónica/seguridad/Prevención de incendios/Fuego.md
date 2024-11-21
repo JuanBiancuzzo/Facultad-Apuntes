@@ -3,11 +3,17 @@ dia: 2023-03-28
 tags:
   - ingeniería-electrónica/seguridad/Prevención-de-incendios
   - nota/facultad
+aliases:
+  - Fuego Tipo A#Tipo A
+  - Fuego Tipo B#Tipo B
+  - Fuego Tipo C#Tipo C
+  - Fuego Tipo D#Tipo D
+  - Fuego Tipo K#Tipo Tipo K (Estados unidos)/ F (Europa)
+  - Fuego Tipo F#Tipo Tipo K (Estados unidos)/ F (Europa)
 ---
 # Definición
 ---
-Es una reacción y apunta a sus características físicas y químicas.
-
+Es una reacción y apunta a sus características físicas y químicas
 
 
 # Clases

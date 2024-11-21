@@ -1,12 +1,16 @@
 ---
 dia: 2023-10-16
-aliases:
-  - API REST
-  - REST
 tags:
   - ingeniería-en-informática/aninfo/Diseño-de-software
   - nota/facultad
   - networking
+aliases:
+  - API REST
+  - REST
+  - Error 200#^error-200
+  - Error 300#^error-300
+  - Error 400#^error-400
+  - Error 500#^error-500
 ---
 # Definición
 ---
@@ -33,23 +37,23 @@ Luego, siguen una serie de header lines, cada una con el nombre del campo y su
 * Accept-language:
 	* Utilizado para indicar el lenguaje de preferencia de la página web. Para indicar la finalización de la sección de cabecera se utiliza un CRLF extra
 
-Finalmente, está entity body. Este contiene el contenido del mensaje
+Finalmente, está entity body. Este contiene el contenido del [[Paquete|mensaje]]
 
 ## Response message
 ---
-Un response message tiene una estructura similar a la del pedido. La primera línea se conoce como status line y contiene información acerca del resultado del pedido. Este tiene tres campos: la versión del protocolo, un código de estado, y el mensaje de estado correspondiente
+Un response message tiene una estructura similar a la del pedido. La primera línea se conoce como status line y contiene información acerca del resultado del pedido. Este tiene tres campos: la versión del [[Protocolo|protocolo]], un código de estado, y el mensaje de estado correspondiente
 
 Los códigos de error más comunes son
-* 200 OK
+* 200 OK ^error-200
 	* Indicando que el pedido fue exitoso. 
-* 301 Moved Permanently
+* 301 Moved Permanently ^error-300
 	* Indicando que el objeto no está disponible en esa dirección e indicando la nueva URL en los headers
-* 400 Bad Request
+* 400 Bad Request ^error-400
 	* Es un código de error genérico para cualquier pedido que no fue entendido
 	* 404 Not Found
-		* Indicando que el documento no existe en el servidor
-* 505 HTTP Version Not Supported, indicando que la versión del protocolo utilizada no es soportada por el servidor
+		* Indicando que el documento no existe en el [[Servidor|servidor]]
+* 505 HTTP Version Not Supported, indicando que la versión del protocolo utilizada no es soportada por el servidor ^error-500
 
 A continuación, al igual que en el request, siguen las header lines y el entity body. Para el caso de una respuesta a un pedido de GET, esta sección contiene el objeto en sí
 
-Para generar las líneas de cabecera adecuadas, el navegador genera estas líneas en función de la versión del protocolo utilizada, la configuración del usuario, y el caché del host. El servidor web se comporta de la misma forma, generando automáticamente header lines según la información disponible
+Para generar las líneas de cabecera adecuadas, el navegador genera estas líneas en función de la versión del protocolo utilizada, la configuración del usuario, y el caché del [[Host|host]]. El servidor web se comporta de la misma forma, generando automáticamente header lines según la información disponible
