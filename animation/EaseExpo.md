@@ -1,7 +1,7 @@
 ---
 dia: 2024-11-21
 etapa: sin-empezar
-orden: 526
+orden: 532
 referencias: 
  - "611"
 tags: 
@@ -13,7 +13,7 @@ tags:
 ```
 # Definición
 ---
-Crea una animación que acelera y/o desacelera usando la formula $f(t) = t^4$
+Crea una animación que acelera y/o desacelera usando la formula [[Función polinomica|exponencial]]
 
 ```tikz
 \usepackage{amssymb}
@@ -28,18 +28,18 @@ Crea una animación que acelera y/o desacelera usando la formula $f(t) = t^4$
         \definicion = 0.05;
     
         function easeIn(\t) {
-            return \t^4;
+            return 2^(10 * \t - 10);
         };
         
         function easeOut(\t) {
-            return 1 - (1 - \t)^4;
+            return 1 - 2^(-10 * \t);
         };
         
         function easeInOut(\t) {
             if \t < 0.5 then {
-                return 8 * \t^4;
+                return 2^(20 * \t - 10) / 2;
             } else {
-                return 1 - (2 - 2 * \t)^4 / 2;
+                return (2 - 2^(-20 * \t + 10)) / 2;
             };
         };
         
@@ -72,13 +72,13 @@ Crea una animación que acelera y/o desacelera usando la formula $f(t) = t^4$
     \path ({posicion(0)}, 1.1) -- ++(1, 0) node[midway, above=2pt, scale=0.4]
         {Ease In};
     \path ({posicion(0)}, -0.1) -- ++(1, 0) node[midway, below=2pt, scale=0.4] 
-        {$t^4$};
+        {$2^{10 t - 10}$};
 
     % Ease Out
     \path ({posicion(1)}, 1.1) -- ++(1, 0) node[midway, above=2pt, scale=0.4]
         {Ease Out};
     \path ({posicion(1)}, -0.1) -- ++(1, 0) node[midway, below=2pt, scale=0.4] 
-        {$1 - (1 - t)^4$};
+        {$1 - 2^{-10 t}$};
     
     % Ease InOut
     \path ({posicion(2)}, 1.1) -- ++(1, 0) node[midway, above=2pt, scale=0.4]
@@ -89,8 +89,8 @@ Crea una animación que acelera y/o desacelera usando la formula $f(t) = t^4$
     ]
         \matrix[matrix of math nodes, left delimiter=\lbrace, below = 0 of temp] 
         (mat) {
-            8 t^3 & si ~ t < 0.5 \\
-            1 - \frac{(2 - 2t)^4}{2} & si ~ t > 0.5 \\
+            16 t^5 & si ~ t < 0.5 \\
+            1 - \frac{(2 - 2t)^5}{2} & si ~ t > 0.5 \\
         };
     \end{scope}
 
@@ -99,6 +99,7 @@ Crea una animación que acelera y/o desacelera usando la formula $f(t) = t^4$
 ```
 
 ^representacion
+
 
 
 # Referencias

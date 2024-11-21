@@ -24,15 +24,16 @@ aliases:
 ---
 Ver [easings.net](https://easings.net)
 
-* [[EaseSine|EaseSine]]
-* [[EaseQuad|EaseQuad]]
-* [[EaseCubic|EaseCubic]]
-* [[EaseQuart|EaseQuart]]
-* [[EaseQuint|EaseQuint]]
-* [[EaseCirc|EaseCirc]]
-* [[EaseBack|EaseBack]]
-* [[EaseElastic|EaseElastic]]
-* [[EaseBounce|EaseBounce]]
+* [[EaseSine|EaseSine]] ![[EaseSine#^representacion]]
+* [[EaseQuad|EaseQuad]] ![[EaseQuad#^representacion]]
+* [[EaseCubic|EaseCubic]] ![[EaseCubic#^representacion]]
+* [[EaseQuart|EaseQuart]] ![[EaseQuart#^representacion]]
+* [[EaseQuint|EaseQuint]] ![[EaseQuint#^representacion]]
+* [[EaseExpo|EaseExpo]] ![[EaseExpo#^representacion]]
+* [[EaseCirc|EaseCirc]] ![[EaseCirc#^representacion]]
+* [[EaseBack|EaseBack]] ![[EaseBack#^representacion]]
+* [[EaseElastic|EaseElastic]] ![[EaseElastic#^representacion]]
+* [[EaseBounce|EaseBounce]] ![[EaseBounce#^representacion]]
 
 # Referencias
 ---
