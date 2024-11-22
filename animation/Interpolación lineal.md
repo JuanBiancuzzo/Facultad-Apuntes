@@ -1,6 +1,6 @@
 ---
 dia: 2024-11-21
-etapa: sin-empezar
+etapa: empezado
 orden: 520
 referencias:
   - "608"

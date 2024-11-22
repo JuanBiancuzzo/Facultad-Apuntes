@@ -20,7 +20,7 @@ orden: 329
 ```
 # Definición
 ---
-En [[animation/Índice|animación]] y en [[Robot|robótica]], IK es un proceso matemático para calcular los parámetros de una unión entre huesos de un [[Skeleton for animation (Esquelo para animar)|esqueleto]] para que la cadena de huesos termine en el lugar deseado. Esto puede ser manipular un robot o el esqueleto de un personaje
+En [[Animación|animación]] y en [[Robot|robótica]], IK es un proceso matemático para calcular los parámetros de una unión entre huesos de un [[Skeleton for animation (Esquelo para animar)|esqueleto]] para que la cadena de huesos termine en el lugar deseado. Esto puede ser manipular un robot o el esqueleto de un personaje
 
 Dado una posición, y orientación inicial, IK determina la posición y la orientación final para un punto especifico
 

@@ -1,24 +1,26 @@
 ---
 dia: 2024-11-21
-etapa: sin-empezar
+etapa: empezado
 orden: 531
-referencias: 
- - "611"
-tags: 
- - animation
- - nota/investigacion
+referencias:
+  - "611"
+tags:
+  - animation
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
+Crea una animación con el efecto de que esta rebotando
 
 ```tikz
 \usepackage{amssymb}
 \usetikzlibrary{math}
 \usetikzlibrary{calc}
 \usepackage{ifthen}
+\usetikzlibrary{matrix, positioning}
 
 \begin{document} 
 \begin{tikzpicture}[scale=4, transform shape, thick] 
@@ -71,14 +73,30 @@ tags:
     % Ease Out
     \path ({posicion(1)}, 1.1) -- ++(1, 0) node[midway, above=2pt, scale=0.4]
         {Ease Out};
-    \path ({posicion(1)}, -0.1) -- ++(1, 0) node[midway, below=2pt, scale=0.4] 
-        {$\sin\left( \frac{\pi t}{2} \right)$};
+    \path ({posicion(1)}, -0.1) -- ++(1, 0) node[midway] (temp) {}; 
+    \begin{scope}[
+        every left delimiter/.style={xshift=0.3ex, scale=0.25},
+    ]
+        \matrix[matrix of math nodes, left delimiter=\lbrace, below = 0 of temp] 
+        (mat) {
+            2 t^2 & si ~ t < 0.5 \\
+            1 - \frac{(2 - 2t)^2}{2} & si ~ t > 0.5 \\
+        };
+    \end{scope}
     
     % Ease InOut
     \path ({posicion(2)}, 1.1) -- ++(1, 0) node[midway, above=2pt, scale=0.4]
         {Ease InOut};
-    \path ({posicion(2)}, -0.1) -- ++(1, 0) node[midway, below=2pt, scale=0.4] 
-        {$\frac{1 - \cos( \pi t )}{2}$};
+    \path ({posicion(2)}, -0.1) -- ++(1, 0) node[midway] (temp) {}; 
+    \begin{scope}[
+        every left delimiter/.style={xshift=0.3ex, scale=0.25},
+    ]
+        \matrix[matrix of math nodes, left delimiter=\lbrace, below = 0 of temp] 
+        (mat) {
+            2 t^2 & si ~ t < 0.5 \\
+            1 - \frac{(2 - 2t)^2}{2} & si ~ t > 0.5 \\
+        };
+    \end{scope}
 
 \end{tikzpicture}
 \end{document}

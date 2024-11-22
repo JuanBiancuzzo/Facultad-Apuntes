@@ -1,12 +1,12 @@
 ---
 dia: 2024-11-21
-etapa: sin-empezar
+etapa: ampliar
 orden: 532
-referencias: 
- - "611"
-tags: 
- - animation
- - nota/investigacion
+referencias:
+  - "611"
+tags:
+  - animation
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
@@ -89,8 +89,8 @@ Crea una animación que acelera y/o desacelera usando la formula [[Función poli
     ]
         \matrix[matrix of math nodes, left delimiter=\lbrace, below = 0 of temp] 
         (mat) {
-            16 t^5 & si ~ t < 0.5 \\
-            1 - \frac{(2 - 2t)^5}{2} & si ~ t > 0.5 \\
+            \frac{1}{2} ~ 2^{20 t - 10} & si ~ t < 0.5 \\
+            1 - \frac{1}{2} ~ 2^{-20 t + 10} & si ~ t > 0.5 \\
         };
     \end{scope}
 
@@ -99,7 +99,6 @@ Crea una animación que acelera y/o desacelera usando la formula [[Función poli
 ```
 
 ^representacion
-
 
 
 # Referencias

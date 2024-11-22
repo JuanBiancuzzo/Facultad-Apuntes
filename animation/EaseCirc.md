@@ -1,40 +1,46 @@
 ---
 dia: 2024-11-21
-etapa: sin-empezar
+etapa: ampliar
 orden: 528
-referencias: 
- - "611"
-tags: 
- - animation
- - nota/investigacion
+referencias:
+  - "611"
+tags:
+  - animation
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
+Crea una animación que acelera y/o desacelera usando una [[Disco abierto|función circular]]
 
 ```tikz
 \usepackage{amssymb}
 \usetikzlibrary{math}
 \usetikzlibrary{calc}
 \usepackage{ifthen}
+\usetikzlibrary{matrix, positioning}
 
 \begin{document} 
 \begin{tikzpicture}[scale=4, transform shape, thick] 
     \tikzmath {
-        \definicion = 0.05;
+        \definicion = 0.001;
     
         function easeIn(\t) {
-            return 1 - cos(deg(\t * pi / 2));
+            return 1 - sqrt(abs(1 - \t^2));
         };
         
         function easeOut(\t) {
-            return sin(deg(\t * pi / 2));
+            return sqrt(abs(1 - (\t - 1)^2));
         };
         
         function easeInOut(\t) {
-            return -( cos(deg(\t * pi)) - 1 ) / 2;
+            if \t < 0.5 then {
+                return (1 - sqrt(1 - 4 * \t^2)) / 2;
+            } else {
+                return (sqrt(1 - (-2 * \t + 2)^2) + 1) / 2;
+            };
         };
         
         function posicion(\i) {
@@ -58,7 +64,7 @@ tags:
             \draw[->] (0, 0) -- (0, 1.1) node[below right=2pt, scale=0.4] {$x$};
             
             \draw[cyan] (0, {ease(0)}) \foreach \x [parse = true] in
-                {0, \definicion, ..., 1 + \definicion} { -- (\x, {ease(\x)}) };
+                {0, \definicion, ..., 1} { -- (\x, {ease(\x)}) };
         \end{scope}
     }
     
@@ -66,26 +72,33 @@ tags:
     \path ({posicion(0)}, 1.1) -- ++(1, 0) node[midway, above=2pt, scale=0.4]
         {Ease In};
     \path ({posicion(0)}, -0.1) -- ++(1, 0) node[midway, below=2pt, scale=0.4] 
-        {$1 - \cos\left( \frac{\pi t}{2} \right)$};
+        {$1 - \sqrt{ 1 - t^2 }$};
 
     % Ease Out
     \path ({posicion(1)}, 1.1) -- ++(1, 0) node[midway, above=2pt, scale=0.4]
         {Ease Out};
     \path ({posicion(1)}, -0.1) -- ++(1, 0) node[midway, below=2pt, scale=0.4] 
-        {$\sin\left( \frac{\pi t}{2} \right)$};
+        {$\sqrt{ 1 - (t - 2)^2 }$};
     
     % Ease InOut
     \path ({posicion(2)}, 1.1) -- ++(1, 0) node[midway, above=2pt, scale=0.4]
         {Ease InOut};
-    \path ({posicion(2)}, -0.1) -- ++(1, 0) node[midway, below=2pt, scale=0.4] 
-        {$\frac{1 - \cos( \pi t )}{2}$};
+    \path ({posicion(2)}, -0.1) -- ++(1, 0) node[midway] (temp) {}; 
+    \begin{scope}[
+        every left delimiter/.style={xshift=0.3ex, scale=0.25},
+    ]
+        \matrix[matrix of math nodes, left delimiter=\lbrace, below = 0 of temp] 
+        (mat) {
+            \frac{1}{2} \left( 1 - \sqrt{1 - 4 t^2} \right) & si ~ t < 0.5 \\
+            \frac{1}{2} \left(\sqrt{1 - (-2t + 2)^2} + 1 \right) & si ~ t > 0.5 \\
+        };
+    \end{scope}
 
 \end{tikzpicture}
 \end{document}
 ```
 
 ^representacion
-
 
 # Referencias
 ---

@@ -1,40 +1,48 @@
 ---
 dia: 2024-11-21
-etapa: sin-empezar
+etapa: ampliar
 orden: 530
-referencias: 
- - "611"
-tags: 
- - animation
- - nota/investigacion
+referencias:
+  - "611"
+tags:
+  - animation
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
+Crea un animación que recrea la oscilación de un resorte al intentar modificar su posición
 
 ```tikz
 \usepackage{amssymb}
 \usetikzlibrary{math}
 \usetikzlibrary{calc}
 \usepackage{ifthen}
+\usetikzlibrary{matrix, positioning}
 
 \begin{document} 
 \begin{tikzpicture}[scale=4, transform shape, thick] 
     \tikzmath {
-        \definicion = 0.05;
+        \definicion = 0.005;
+        \c1 = (2 * pi) / 3;
+        \c2 = (2 * pi) / 4.5;
     
         function easeIn(\t) {
-            return 1 - cos(deg(\t * pi / 2));
+            return -(2^(10 * \t - 10)) * sin(deg((10 * \t - 10.75) * \c1));
         };
         
         function easeOut(\t) {
-            return sin(deg(\t * pi / 2));
+            return (2^(-10 * \t)) * sin(deg((10 * \t - 0.75) * \c1)) + 1;
         };
         
         function easeInOut(\t) {
-            return -( cos(deg(\t * pi)) - 1 ) / 2;
+            if \t < 0.5 then {
+                return -(2^(20 * \t - 10) * sin(deg( (20 * \t - 11.125) * \c2 ))) / 2;
+            } else {
+                return (2^(-20 * \t + 10) * sin(deg( (20 * \t - 11.125) * \c2 ))) / 2 + 1;
+            };
         };
         
         function posicion(\i) {
@@ -65,20 +73,28 @@ tags:
     % Ease In
     \path ({posicion(0)}, 1.1) -- ++(1, 0) node[midway, above=2pt, scale=0.4]
         {Ease In};
-    \path ({posicion(0)}, -0.1) -- ++(1, 0) node[midway, below=2pt, scale=0.4] 
-        {$1 - \cos\left( \frac{\pi t}{2} \right)$};
+    \path ({posicion(0)}, -0.3) -- ++(1, 0) node[midway, below=2pt, scale=0.3] 
+        {$-2^{10t - 10} ~ \sin(C_1 (10t - 10.75))$};
 
     % Ease Out
     \path ({posicion(1)}, 1.1) -- ++(1, 0) node[midway, above=2pt, scale=0.4]
         {Ease Out};
-    \path ({posicion(1)}, -0.1) -- ++(1, 0) node[midway, below=2pt, scale=0.4] 
-        {$\sin\left( \frac{\pi t}{2} \right)$};
+    \path ({posicion(1)}, -0.3) -- ++(1, 0) node[midway, below=2pt, scale=0.3] 
+        {$2^{-10t} ~ \sin(C_1 (10t - 0.75)) + 1$};
     
     % Ease InOut
     \path ({posicion(2)}, 1.1) -- ++(1, 0) node[midway, above=2pt, scale=0.4]
         {Ease InOut};
-    \path ({posicion(2)}, -0.1) -- ++(1, 0) node[midway, below=2pt, scale=0.4] 
-        {$\frac{1 - \cos( \pi t )}{2}$};
+    \path ({posicion(2)}, -0.3) -- ++(1, 0) node[pos=0.65] (temp) {}; 
+    \begin{scope}[
+        every left delimiter/.style={xshift=0.3ex, scale=0.25},
+    ]
+        \matrix[matrix of math nodes, left delimiter=\lbrace, below = 0 of temp] 
+        (mat) {
+            -\frac{1}{2} 2^{20t - 10} \sin(C_1 (20t - 11.125)) & si ~ t < 0.5 \\
+            2^{-20t + 9} \sin(C_1 (20t - 11.125)) + 1 & si ~ t > 0.5 \\
+        };
+    \end{scope}
 
 \end{tikzpicture}
 \end{document}
@@ -86,6 +102,10 @@ tags:
 
 ^representacion
 
+Donde se toma los valores $$ \begin{cases} 
+    \displaystyle C_1 = \frac{2}{3} \pi \\
+    \displaystyle C_2 = \frac{2}{4.5} \pi
+\end{cases} $$
 
 # Referencias
 ---

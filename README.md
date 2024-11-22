@@ -65,7 +65,7 @@ Un listado de materias, sus códigos y su estado actual
 | [Redes (TA048)](ingeniería%20en%20informática/redes/Redes%20(TA048).md)                                                                     | TA048  | Terminado                                           |
 | [Sistemas operativos (7508)](ingeniería%20en%20informática/sisop/Sistemas%20operativos%20(7508).md)                                         | 7508   | Terminado                                           |
 | [Taller de programación 1 (9508)](ingeniería%20en%20informática/taller/Taller%20de%20programación%201%20(9508).md)                          | 9508   | Falta pasar las presentaciones de los últimos temas |
-| [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md) | TA053  | Sin empezar                                         |
+| [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md) | TA053  | Estamos buscando información sobre el tema          |
 
 
 ### Licenciatura en Ciencias de Datos
@@ -105,7 +105,7 @@ Para eso usaré obsidian, y pdfs, donde en obsidian todo sería archivos markdow
 | Tema de investigación                                                                                    | Estado                                                                                                            |
 | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | [Algoritmos](algoritmos/Algoritmo.md)                                                                    | Empezando a describir algunos algoritmos                                                                          |
-| [Animation](animation/Índice.md)                                                                         | Estamos avanzando con algunos conceptos, pero todavía falta la mayor parte del conocimiento trandicional o básico |
+| [Animation](animation/Animación.md)                                                                      | Estamos avanzando con algunos conceptos, pero todavía falta la mayor parte del conocimiento trandicional o básico |
 | [Arquitectura de procesadores](arquitectura%20de%20procesadores/Arquitectura%20del%20microprocesador.md) | Sin empezar                                                                                                       |
 | [Compilador](compilador/Índice.md)                                                                       | Sin empezar                                                                                                       |
 | [Computable](computable/Computable.md)                                                                   | Sin empezar                                                                                                       |
@@ -143,16 +143,16 @@ Un listado de los proyectos y su estado actual
 ---
 Estos proyectos tienen una aplicación como resultado final
 
-| Proyecto                                                                                                                                                    | Estado           |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| [8-bit computer](8-bit%20computer/8-bit%20computer.md)                                                                                                      | Sin empezar      |
-| [Simpler GUI](simpler%20gui/Simpler%20GUI.md)                                                                                                               | Sin empezar      |
-| [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)                 | Sin empezar      |
-| [Primer proyecto de robótica - Auto remoto](primer%20proyecto%20de%20robótica%20-%20auto%20remoto/Primer%20proyecto%20de%20robótica%20-%20Auto%20remoto.md) | Terminado        |
-| [Plugins de Obsidian](plugins%20de%20obsidian/Plugins%20de%20Obsidian.md)                                                                                   | Sin empezar      |
-| [Porfolio](porfolio/Porfolio.md)                                                                                                                            | Sin empezar      |
-| [Better animations in my humble opinion](better%20animations%20in%20my%20humble%20opinion/Better%20animations%20in%20my%20humble%20opinion.md)              | Sin empezar      |
-| [Obsidian Static Site Generator](obsidian%20static%20site%20generator/Obsidian%20Static%20Site%20Generator.md)                                              | Recién empezando |
+| Proyecto                                                                                                                                                    | Estado                                     |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| [8-bit computer](8-bit%20computer/8-bit%20computer.md)                                                                                                      | Sin empezar                                |
+| [Simpler GUI](simpler%20gui/Simpler%20GUI.md)                                                                                                               | Sin empezar                                |
+| [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)                 | Estamos buscando información sobre el tema |
+| [Primer proyecto de robótica - Auto remoto](primer%20proyecto%20de%20robótica%20-%20auto%20remoto/Primer%20proyecto%20de%20robótica%20-%20Auto%20remoto.md) | Terminado                                  |
+| [Plugins de Obsidian](plugins%20de%20obsidian/Plugins%20de%20Obsidian.md)                                                                                   | Sin empezar                                |
+| [Porfolio](porfolio/Porfolio.md)                                                                                                                            | Sin empezar                                |
+| [Better animations in my humble opinion](better%20animations%20in%20my%20humble%20opinion/Better%20animations%20in%20my%20humble%20opinion.md)              | Sin empezar                                |
+| [Obsidian Static Site Generator](obsidian%20static%20site%20generator/Obsidian%20Static%20Site%20Generator.md)                                              | Recién empezando                           |
 
 ### Proyectos de investigación
 ---

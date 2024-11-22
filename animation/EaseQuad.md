@@ -1,12 +1,12 @@
 ---
 dia: 2024-11-21
-etapa: sin-empezar
+etapa: ampliar
 orden: 524
-referencias: 
- - "611"
-tags: 
- - animation
- - nota/investigacion
+referencias:
+  - "611"
+tags:
+  - animation
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
