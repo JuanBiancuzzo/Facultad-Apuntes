@@ -3,8 +3,8 @@ dia: 2024-10-15
 cuatri: 25C1
 codigo: TA053
 plan: 2023
-etapa: sin-empezar
-estado: Sin empezar
+etapa: empezado
+estado: Estamos buscando información sobre el tema
 tags:
   - proyecto/práctico
   - ingeniería-en-informática/tpp

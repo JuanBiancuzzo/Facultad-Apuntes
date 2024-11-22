@@ -226,9 +226,9 @@ Donde se definen dos capacidades
 				node (vb) {}
 			to[short, -*] ++(-2.5, 0);
 		
-		\draw (cpi) to[R, l_=$C_\pi$, *-] ++(0, 3)
-			to[short, -o] ++(-2, 0)
-				node[above left=2pt] {$B$};
+		\draw (cpi) to[C, l_=$C_\pi$, *-] ++(0, 3);
+		\draw ($ (cpi) + (0, 3) $) to[short, -o] ++(-2, 0) 
+    		node[above left=2pt] {$B$};
 				
 		\draw (ro) to[R, l_=$r_o$, *-] ++(0, 3)
 				node (vc) {}

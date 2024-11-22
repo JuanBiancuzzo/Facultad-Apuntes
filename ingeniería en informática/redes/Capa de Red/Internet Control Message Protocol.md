@@ -14,7 +14,7 @@ El protocolo internet control message protocol es utilizado por [[Host|hosts]] y
 
 Suele ser considerado como una parte de IP, pero arquitectónicamente yace por encima de IP, ya que sus mensajes están contenidos en el payload de los [[Paquete|datagramas]]. Los mensajes contienen un campo de `type`, un campo de `code`, y los headers y los primeros $8$ bytes del datagram que ocasionó el error
 
-Un mensaje de ping envía un mensaje ICMP de type 8, code 0. La respuesta es un type 0, code 0. Usualmente, las implementaciones de [[Modelo TCP IP|TCP/IP]] soportan el ping directamente en el [[Sistema operativo|sistema operativo]]
+Un mensaje de ping envía un mensaje ICMP de type 8, code 0. La respuesta es un type 0, code 0. Usualmente, las implementaciones de [[Modelo Transmission Control Protocol, Internet Protocol|TCP/IP]] soportan el ping directamente en el [[Sistema operativo|sistema operativo]]
 
 Otro mensaje interesante es el source quench message. Es utilizado por un router congestionado para forzar a un host a que reduzca su taza de envío, aunque en la práctica no es utilizado debido al propio mecanismo de [[Control de congestión de Transmission Control Protocol|control de congestión de TCP]]
 

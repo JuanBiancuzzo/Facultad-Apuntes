@@ -1,6 +1,7 @@
 ---
 dia: 2024-03-19
 aliases:
+  - Modelo TCP/IP
   - IP stack
 tags:
   - ingeniería-en-informática/redes/Redes-de-computadoras

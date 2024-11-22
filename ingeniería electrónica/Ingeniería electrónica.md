@@ -7,7 +7,11 @@ planes:
   - "2023"
 tieneCodigo: true
 ---
-Lista de todas las materias dividido por los cuatrimestres que estoy resumiendo
+# Mapa
+---
+```dataviewjs
+    await dv.view("_scripts/dataview/mapaCarrera", { tag: "ingeniería-electrónica" });
+```
 
 ```dataviewjs
     await dv.view("_scripts/dataview/materias", { tag: "ingeniería-electrónica" });
