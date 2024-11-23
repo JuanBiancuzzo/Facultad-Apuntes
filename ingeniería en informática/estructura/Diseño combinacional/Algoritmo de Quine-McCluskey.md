@@ -14,7 +14,7 @@ Este [[Algoritmo|algoritmo]] se aprovecha de que para saber si dos [[Implicante|
 
 # Ejemplo
 ---
-Tenemos la función que depende de $a$, $b$, $c$ y $d$, y si los pensamos como números en [[Base númerica|base]] 2 las posibilidades, entonces esta función es $1$ cuando ese número es: $0$, $1$, $2$, $5$, $6$, $7$, $8$, $9$, $10$, $14$, donde el $7$ y el $9$ son redundantes. Entonces agrupamos esos números en binario por aquellos que tengan la misma cantidad de $1$.
+Tenemos la función que depende de $a$, $b$, $c$ y $d$, y si los pensamos como números en [[Base númerica|base]] 2 las posibilidades, entonces esta función es $1$ cuando ese número es: $0$, $1$, $2$, $5$, $6$, $7$, $8$, $9$, $10$, $14$, donde el $7$ y el $9$ son redundantes. Entonces agrupamos esos números en binario por aquellos que tengan la misma cantidad de $1$
 
 | grupo | número | representación |
 | ----- | ------ | -------------- |
@@ -49,7 +49,7 @@ Entre grupos seguidos, vamos a ver cuales son adyacentes (matemáticamente si ti
 |       | 6, 14   | -110           | 8          |
 |       | 10, 14  | 1-10           | 4          |
 
-Logrando reducir el número de grupos por 1. Notemos que usamos todos los [[Implicante|implicantes]], eso de debe tener en cuenta para los últimos pasoso.
+Logrando reducir el número de grupos por 1. Notemos que usamos todos los [[Implicante|implicantes]], eso de debe tener en cuenta para los últimos pasos
 
 Ahora aplicaremos la misma regla, pero únicamente a los que tenga el mismo resultado de la resta, por ejemplo el $(0, 1)$ y el $(8, 9)$. En el caso de repetirse los números este no lo usaremos, entonces nos queda:
 
@@ -60,7 +60,7 @@ Ahora aplicaremos la misma regla, pero únicamente a los que tenga el mismo resu
 |       | 0, 9, 1, 9   | -00-           | 9          | No     |
 |       | 0, 8, 2, 10  | -0-0           | 10         | No     |
 | 1     | 2, 6, 10, 14 | --10           | 12         | Si     |
-|       | 2, 10, 6, 1  | --10           | 12         | No       |
+|       | 2, 10, 6, 14 | --10           | 12         | No     |
 
 Notemos que ya no podemos reducir más pero sino se podría hacer un grupo más. 
 
@@ -73,7 +73,7 @@ Por lo tanto ahora tenemos todos los [[Implicante primo|implicantes primos]], en
 | 6, 7         | 011-           |
 | 0, 1, 8, 9   | -00-           |
 | 0, 2, 8, 10  | -0-0           |
-| 2, 6, 10, 14 | --10               |
+| 2, 6, 10, 14 | --10           |
 
 Ahora tenemos que obtener únicamente los [[Implicante esencial|implicantes escenciales]], para eso haremos una tabla de la siguiente forma
 
