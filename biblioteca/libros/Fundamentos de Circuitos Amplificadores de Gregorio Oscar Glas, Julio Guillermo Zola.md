@@ -161,7 +161,7 @@ tags:
 
 ## Capítulo 11: El amplificador de continua. Amplificadores diferenciales y fuentes de corriente
 ---
-
+Vamos a ver el concepto de [[Amplificador de continua|amplificador de continua]]
 
 ## Capítulo 12: Amplificadores diferenciales con cargas activas
 ---

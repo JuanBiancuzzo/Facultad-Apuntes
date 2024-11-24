@@ -3,6 +3,12 @@ dia: 2023-11-10
 aliases:
   - MOSFET
   - Transistor MOSFET
+  - Transistor de efecto de campo metal-óxido-semiconductor canal N#Canal-N
+  - MOSFET canal N#Canal-N
+  - Transistor MOSFET canal N#Canal-N
+  - Transistor de efecto de campo metal-óxido-semiconductor canal P#Canal-P
+  - MOSFET canal P#Canal-P
+  - Transistor MOSFET P#Canal-P
 tags:
   - ingeniería-electrónica/dispo/Transistor-MOSFET
   - nota/facultad

@@ -46,6 +46,7 @@ Podemos simplificar un [[Amplificador operacional]], con el siguiente [[Modelo]]
 \end{document} 
 ```
 
+^3bba58
 
 donde $A_{vo} ~ v_d$ es una [[Fuente de tensión|fuente controlada de tensión]], $R_i$ es la [[Resistor|resistencia]] de entrada, $R_o$ es la [[Resistor|resistencia]] de salida y $A_{vo}$ es la [[Ganancia]] de [[Lazo]] abierto, con $v_0 = A_{vo} \cdot v_d$
 

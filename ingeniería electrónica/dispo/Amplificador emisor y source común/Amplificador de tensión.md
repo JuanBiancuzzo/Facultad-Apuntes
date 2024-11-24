@@ -9,8 +9,7 @@ tags:
 ---
 El objetivo de los [[Amplificador operacional|amplificadores]] de [[Tensión|tensión]] es aumentar el valor de tensión de la señal.
 
-Basándonos en el [[Modelo|modelo]] macroscópico de un amplificador de tensión
-![[Amplificador operacional simplificado#Definición]]
+Basándonos en el [[Modelo|modelo]] macroscópico de un amplificador de tensión ![[Amplificador operacional simplificado#^3bba58]]
 
 Cuyos parámetros característicos son $R_{in}$, $R_{out}$ y $A_{vo}$.
 ## Características
