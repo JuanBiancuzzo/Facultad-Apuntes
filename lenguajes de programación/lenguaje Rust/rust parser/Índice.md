@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - herramientas/rust/rust-parser
+  - lenguajes-de-programación/lenguaje-Rust/rust-parser
 estado: Falta resumir
 ---
 ```dataviewjs

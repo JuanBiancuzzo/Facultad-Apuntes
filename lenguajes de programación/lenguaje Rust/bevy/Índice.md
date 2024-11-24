@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - herramientas/rust/bevy
+  - lenguajes-de-programación/lenguaje-Rust/bevy
 estado: Falta resumir
 ---
 ```dataviewjs
