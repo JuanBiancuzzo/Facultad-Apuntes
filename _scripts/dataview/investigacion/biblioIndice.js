@@ -7,10 +7,7 @@ if (!indice) {
     return;
 }
 
-let tag = indice.file.folder.trim()
-    .split(" ")
-    .filter(token => token.trim() != "-" && token.trim() != "")
-    .join("-");
+let tag = indice.file.folder.trim().replaceAll(",", "").replaceAll(" ", "-");
 
 let paginas = dv.pages(`#${tag} and -#índice and -#referencia`)
     .flatMap(pagina => pagina.referencias);

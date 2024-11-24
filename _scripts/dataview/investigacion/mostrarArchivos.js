@@ -1,13 +1,13 @@
 const { indice } = input;
 
-if (!indice) {
+if (!curso) {
     dv.paragraph("No esta cargando - Recargar");
     return;
 }
 
-let tagRepresentante = tagIndice(indice);
+let tagRepresentante = obtenerTag(curso);
 
-let nivelActual = indice.file.folder.split("/").length;
+let nivelActual = curso.file.folder.split("/").length;
 let subTemas = dv.pages(`#${tagRepresentante} and #índice`)
     .filter(ind => ind.file.folder.split("/").length == nivelActual + 1);
 
@@ -57,7 +57,7 @@ let archivos = dv.pages(`#${tagRepresentante} and (#nota/investigacion or #nota/
         return resultado;
     })
     .sort(({ referencias, ..._ }) => referencias ? dv.array(referencias).min() : 0)
-    .groupBy(({ tag, ..._ }) => subTemas.findIndex(subTema => tag.startsWith(tagIndice(subTema))))
+    .groupBy(({ tag, ..._ }) => subTemas.findIndex(subTema => tag.startsWith(obtenerTag(subTema))))
     .values
     .sort(({ key, rows }) => key)
     .map(({ key, rows }) => ({
@@ -105,7 +105,7 @@ let archivos = dv.pages(`#${tagRepresentante} and (#nota/investigacion or #nota/
 
 await dv.view("_scripts/dataview/mostrarElementos", { lista: archivos });
 
-function tagIndice(indice) {
+function obtenerTag(indice) {
     return indice.file.folder.trim()
         .split(" ")
         .filter(token => token.trim() != "-" && token.trim() != "")
@@ -115,7 +115,7 @@ function tagIndice(indice) {
 function conseguirEtapa(indice) {
     let etapasConsideradas = [];
 
-    let tagRepresentanteActual = tagIndice(indice);    
+    let tagRepresentanteActual = obtenerTag(indice);    
     dv.pages(`#${tagRepresentanteActual} and -#índice`)
         .filter(archivo => archivo.etapa)
         .forEach(archivo => etapasConsideradas.push(archivo.etapa));

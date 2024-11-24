@@ -1,4 +1,4 @@
-let { resumen } = input;
+let { curso } = input;
 
 if (!curso) {
     dv.paragraph("No esta cargando - Recargar");
@@ -6,7 +6,7 @@ if (!curso) {
 }
 
 let tagRepresentante = curso.file.folder.replaceAll(" ", "-").replaceAll(",", "");
-let archivos = dv.pages(`#${tagRepresentante} and -#resumen`)
+let archivos = dv.pages(`#${tagRepresentante} and -#proyecto/curso`)
     .flatMap(archivo => {
         let resultado = [];
         let aliasesActual = archivo.aliases ? archivo.aliases : [];

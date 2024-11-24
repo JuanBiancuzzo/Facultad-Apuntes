@@ -46,8 +46,8 @@ Un listado de materias y su estado dividido por carrera
                 ? "Un listado de materias, sus códigos y su estado actual"
                 : "Un listado de materias y su estado actual";
             return `### ${carrera.file.name}\n---\n${texto}\n\n${tabla}`;
-        }).join("\n\n");
-_%>
+        }).join("\n");
+%>
 
 ## Investigación
 ---
@@ -63,16 +63,14 @@ Para eso usaré obsidian, y pdfs, donde en obsidian todo sería archivos markdow
             return `${nombre.charAt(0).toUpperCase()}${nombre.slice(1)}`.trim();
         });
 
-    tabla = dv.markdownTable(["Tema de investigación", "Estado"], indices.map(indice => {
+    tR += dv.markdownTable(["Tema de investigación", "Estado"], indices.map(indice => {
         let nombre = indice.file.folder.split("/").pop();
         nombre = `${nombre.charAt(0).toUpperCase()}${nombre.slice(1)}`.trim();
         let path = `${indice.file.path}`.replaceAll(" ", "%20");
         
         return [ `[${nombre}](${path})`, indice.estado ];
     }));
-
-    tR += `${tabla}\n`;
-_%>
+%>
 
 ## Proyectos
 ---
@@ -122,15 +120,24 @@ Estos proyectos tienen como objetivo crear un GDD y mostrar el desarrollo del ju
     proyectos = dv.pages("#proyecto/juegos")
         .sort(proyecto => proyecto.dia, direction="desc");
 
-    tabla = dv.markdownTable(["Juego", "Estado"], proyectos.map(proyecto => {
+    tR += dv.markdownTable(["Juego", "Estado"], proyectos.map(proyecto => {
         let nombre = proyecto.file.name.trim();
         let path = `${proyecto.file.path}`.replaceAll(" ", "%20");
         
         return [ `[${nombre}](${path})`, proyecto.estado ];
     }));
+%>
 
-    tR += `${tabla}\n`;
-_%>
+### Cursos
+---
+Estos son los cursos que vaya haciendo
+
+<%*
+    proyectos = dv.pages("#proyecto/curso")
+        .sort(curso => curso.dia, direction="desc");
+    
+    tR += dv.markdownTable(["Curso", "Estado"], []);
+%>
 
 ### Proyectos de recolección
 ---

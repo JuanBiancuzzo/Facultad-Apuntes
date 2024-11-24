@@ -14,13 +14,14 @@
 	}
 	
 	let carpeta = tp.file.folder(true);
-	let posiblesIndices = dv.pages(`"${carpeta}" and #Índice`)
+	let posiblesCursos = dv.pages(`"${carpeta}" and #proyecto/curso`)
 		.filter(pagina => pagina.file.folder == carpeta);
 
-	if (posiblesIndices.length == 0) {
+	if (posiblesCursos.length == 0) {
+		new Notice("No hay cursos");
 		return;
 	}
-	let indice = posiblesIndices[0];
+	let indice = posiblesCursos[0];
 
 	let referencias = dv.pages('#referencia')
 		.flatMap(referencia => tp.user.cita().metadata(tp, referencia))

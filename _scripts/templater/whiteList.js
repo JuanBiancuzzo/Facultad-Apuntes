@@ -15,6 +15,12 @@ function whiteListArticuloLegal(tp, archivoPath) {
     return archivoPath.startsWith(cte.pathArticulos)
 }
 
+function whiteListArchivoCurso(archivoPath) {
+    const dv = app.plugins.plugins.dataview.api;
+    const cursos = dv.pages("#proyecto/curso").map(curso => curso.file.folder);
+    return cursos.some(proyecto => archivoPath.startsWith(proyecto));
+}
+
 function whiteListArchivoProyectoPractico(archivoPath) {
     const dv = app.plugins.plugins.dataview.api;
     const proyecto = dv.pages("#proyecto/práctico").map(proyecto => proyecto.file.folder);
@@ -62,6 +68,7 @@ module.exports = () => {
         archivoFacultad: whiteListArchivoFacultad,
         articuloLegal: whiteListArticuloLegal,
         archivoInvestigacion: whiteListArchivoInvestigacion,
+        archivoCurso: whiteListArchivoCurso,
         archivoProyectoPractico: whiteListArchivoProyectoPractico,
         archivoProyectoInvestigacion: whiteListArchivoProyectoInvestigacion,
         archivoProyectoJuego: whiteListArchivoProyectoJuego,

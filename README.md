@@ -43,7 +43,6 @@ Un listado de materias, sus códigos y su estado actual
 | [Taller de sistemas embebidos (TA134)](ingeniería%20electrónica/embebidos/Taller%20de%20sistemas%20embebidos%20(TA134).md)                     | TA134  | Voy a cursarla este cuatri                          |
 | [Técnica Digital (8601)](ingeniería%20electrónica/Técnica%20Digital%20(8601).md)                                                               | 8601   | Terminado                                           |
 
-
 ### Ingeniería en Informática
 ---
 Un listado de materias, sus códigos y su estado actual
@@ -72,7 +71,6 @@ Un listado de materias, sus códigos y su estado actual
 | [Taller de programación 1 (9508)](ingeniería%20en%20informática/taller/Taller%20de%20programación%201%20(9508).md)                          | 9508   | Falta pasar las presentaciones de los últimos temas |
 | [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md) | TA053  | Estamos buscando información sobre el tema          |
 
-
 ### Licenciatura en Ciencias de Datos
 ---
 Un listado de materias y su estado actual
@@ -81,7 +79,6 @@ Un listado de materias y su estado actual
 | ----------------------------------------------------------------------- | --------------------------------------------------------- |
 | [Álgebra 1](licenciatura%20en%20ciencias%20de%20datos/Álgebra%201.md)   | Me falta los capítulos de enteros, complejos y polinomios |
 | [Análisis 1](licenciatura%20en%20ciencias%20de%20datos/Análisis%201.md) | Empezando con vectores y geometría del espacio            |
-
 
 ### Licenciatura en Ciencias Físicas
 ---
@@ -92,7 +89,6 @@ Un listado de materias y su estado actual
 | [Física 1](licenciatura%20en%20ciencias%20físicas/fisica%201/Física%201.md) | Sin empezar                                    |
 | [Matemática 1](licenciatura%20en%20ciencias%20físicas/Matemática%201.md)    | Empezando con vectores y geometría del espacio |
 
-
 ### Licenciatura en Ciencias Matemáticas
 ---
 Un listado de materias y su estado actual
@@ -101,6 +97,8 @@ Un listado de materias y su estado actual
 | ------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | [Álgebra 1](licenciatura%20en%20ciencias%20matemáticas/algebra%201/Álgebra%201.md)    | Me falta los capítulos de enteros, complejos y polinomios |
 | [Análisis 1](licenciatura%20en%20ciencias%20matemáticas/analisis%201/Análisis%201.md) | Empezando con vectores y geometría del espacio            |
+
+
 ## Investigación
 ---
 La intención en este repositorio es tener un lugar donde poder investigar sobre temas, vinculándolo con otros, y viendo que relaciones aparecen.
@@ -140,6 +138,7 @@ Para eso usaré obsidian, y pdfs, donde en obsidian todo sería archivos markdow
 | [Storytelling](investigación/storytelling/Índice.md)                                                                   | Falta resumir                                                                                                     |
 | [Testing](investigación/testing/Testing.md)                                                                            | Sin empezar                                                                                                       |
 
+
 ## Proyectos
 ---
 Un listado de los proyectos y su estado actual
@@ -174,6 +173,15 @@ Estos proyectos tienen como objetivo crear un GDD y mostrar el desarrollo del ju
 
 | Juego | Estado |
 | ----- | ------ |
+
+
+### Cursos
+---
+Estos son los cursos que vaya haciendo
+
+| Curso | Estado |
+| ----- | ------ |
+
 
 ### Proyectos de recolección
 ---

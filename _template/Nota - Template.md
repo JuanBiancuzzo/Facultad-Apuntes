@@ -41,6 +41,12 @@
                 descripcion: "Ingresar nota de proyecto",
                 template: "Nota proyecto - Template"
             });
+
+        if (pertenece.archivoCurso(path))
+            posiblesInfoNota.push({
+                descripcion: "Ingresar nota de curso",
+                template: "Nota curso - Template"
+            });
         
         let esLibro = pertenece.archivoLibro(path);
         let esPaper = pertenece.archivoPaper(path);
@@ -73,6 +79,8 @@
             }
 
             tR += await tp.file.include(`[[${infoNota.template}]]`);  
+        } else {
+            console.log("No habia ninguna cosa que matchee")
         }
         
     

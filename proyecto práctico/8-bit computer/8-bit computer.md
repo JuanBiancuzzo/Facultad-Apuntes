@@ -12,7 +12,7 @@ Vamos a crear una mini-[[Computadora|computadora]] de $8$ bits con su propia set
 
 # Presentar
 ---
-![]([https://juanbiancuzzo.github.io/8-bit-computer/](https://juanbiancuzzo.github.io/8-bit-computer/)
+![](https://juanbiancuzzo.github.io/8-bit-computer/)
 
 
 # Notas
