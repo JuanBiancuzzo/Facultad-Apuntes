@@ -6,7 +6,7 @@ tags:
 ---
 # Definición
 ---
-Un cambio climático se define​​ como la variación en el estado del sistema climático terrestre, formado por la [[storytelling/Atmósfera|atmósfera]], la hidrosfera, la criosfera, la litosfera y la biosfera, que perdura durante periodos de tiempo suficientemente largos (décadas o más tiempo)​ hasta alcanzar un nuevo equilibrio.
+Un cambio climático se define​​ como la variación en el estado del sistema climático terrestre, formado por la [[investigación/storytelling/Atmósfera|atmósfera]], la hidrosfera, la criosfera, la litosfera y la biosfera, que perdura durante periodos de tiempo suficientemente largos (décadas o más tiempo)​ hasta alcanzar un nuevo equilibrio.
 
 ## Cuestión de derecho
 ---

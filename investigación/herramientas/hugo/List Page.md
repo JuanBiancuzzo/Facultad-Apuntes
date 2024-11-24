@@ -6,18 +6,15 @@ referencias:
 tags:
   - nota/investigacion
   - investigación/herramientas/hugo
-orden: 62
+orden: 39
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
-El contenido en [[Herramientas/Hugo/Índice|Índice]] se puede separar en 2 tipos de contenidos
-* [[Single Page|Single Page]]
-* [[List Page|List Page]]
+Es la página que muestra el contenido de una carpeta en especifico, esta para el primer nivel de carpetas debajo de contenido [[investigación/herramientas/hugo/Índice|Índice]] las genera automáticamente, para cualquier subcarpeta se tiene que agregar un archivo `index.md` o `_index.md` en la cual también se puede poner contenido.
 
-También hay que notar que todo el contenido tiene [[Frontmatter|frontmatter o metadata]]
 
 
 # Referencias

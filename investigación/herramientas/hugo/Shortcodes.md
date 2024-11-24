@@ -13,7 +13,7 @@ orden: 42
 ```
 # Definición
 ---
-Los shortcodes en [[Herramientas/Hugo/Índice|Índice]] son como función la cual le podes pasar parámetros, pero estas funciones devuelven código HTML para insertar en el contenido. Su sintaxis para llamarlas es
+Los shortcodes en [[investigación/herramientas/hugo/Índice|Índice]] son como función la cual le podes pasar parámetros, pero estas funciones devuelven código HTML para insertar en el contenido. Su sintaxis para llamarlas es
 ```
 {{< nombre-shortcode param1 ... >}}
 ```

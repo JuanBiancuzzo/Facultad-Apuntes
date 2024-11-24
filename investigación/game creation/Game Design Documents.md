@@ -26,7 +26,7 @@ Esta también muestra los elementos claves de la narrativa, permitiendo que la n
 * [[Theme|Theme]]
 * La historia
 * [[Personajes|Personajes]]
-* [[storytelling/worldbuilding/Índice|Worldbuilding]]
+* [[investigación/storytelling/worldbuilding/Índice|Worldbuilding]]
 * Interacción entre personajes y el mundo
 
 Esto se puede pensar como el [[Outline of a book (Outline de un libro) (Esquema de un libro)|outline de un libro]], donde te permite pensar en el conjunto de elementos que conforman este juego, y poder identificar 
@@ -65,7 +65,7 @@ Veamos varias posibilidades de headers que tenga el GDD, para poder describir
     * Progresión
     * Combate
     * [[Quest|Quests]]
-    * [[game creation/npc AI/Índice|NPC AI]]
+    * [[investigación/game creation/npc AI/Índice|NPC AI]]
     * Sistemas específicos del juego
 * Historia
     * [[Narrativa en videojuegos|Narrativa]]

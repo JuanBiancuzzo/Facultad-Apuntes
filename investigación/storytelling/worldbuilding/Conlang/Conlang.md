@@ -2,8 +2,8 @@
 dia: 2024-07-08
 tags:
   - índice
-  - storytelling/worldbuilding/Conlang
   - nota/investigacion
+  - investigación/storytelling/worldbuilding/Conlang
 estado: Falta resumir
 orden: 422
 referencias:

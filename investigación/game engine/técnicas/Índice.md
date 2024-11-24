@@ -10,7 +10,7 @@ await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.c
 ```
 # ¿Qué se va a investigar?
 ---
-Vamos a explorar diferentes técnicas que se aprovechan de la estructura de los [[Game engine/Índice|game engines]] para tener resultado muy buenos con altos rendimientos
+Vamos a explorar diferentes técnicas que se aprovechan de la estructura de los [[investigación/game engine/Índice|game engines]] para tener resultado muy buenos con altos rendimientos
 
 ## Resumen
 ---

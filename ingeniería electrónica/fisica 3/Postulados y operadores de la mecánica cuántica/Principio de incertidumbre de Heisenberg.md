@@ -10,7 +10,7 @@ tags:
 ---
 # Definición
 ---
-En [[física/física cuántica/Índice|mecánica cuántica]], principio de [[Incertidumbre|incertidumbre]] establece la imposibilidad de que determinados pares de [[Magnitud física observable|magnitud física observables]] y complementarias sean conocidas por precisión arbitraria
+En [[investigación/física/física cuántica/Índice|mecánica cuántica]], principio de [[Incertidumbre|incertidumbre]] establece la imposibilidad de que determinados pares de [[Magnitud física observable|magnitud física observables]] y complementarias sean conocidas por precisión arbitraria
 
 $$ \begin{align} 
 	\Delta_t \Delta_E &\ge \frac{\hbar}{2} \\

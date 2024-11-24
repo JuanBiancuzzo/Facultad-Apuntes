@@ -21,7 +21,7 @@ Estos viven dentro de la carpeta de `layouts`, si se quiere tener un default tem
 
 Si se quiere hacer un layout especifico para un directorio, se puede crear una carpeta con el nombre del directorio al cual se le va a aplicar, y poner los mencionados archivos HTML debajo de esa carpeta.
 
-[[Herramientas/Hugo/Índice|Índice]] tiene herramientas para poder obtener la información del archivo, como
+[[investigación/herramientas/hugo/Índice|Índice]] tiene herramientas para poder obtener la información del archivo, como
 * [[Partial|Partial]]
 
 

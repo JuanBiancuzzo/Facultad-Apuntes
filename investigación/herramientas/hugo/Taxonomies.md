@@ -13,7 +13,7 @@ orden: 20
 ```
 # Definición
 ---
-Taxonomies en [[Herramientas/Hugo/Índice|Índice]] son separaciones o categorías que puede tener un [[Single Page|archivo]], las que Hugo tiene por default son las `tags` y `categories`, pero se puede poner custom taxonomies, poniendo su nombre y valor en la [[Frontmatter|metadata]] y describiéndolo en el archivo de configuración toml
+Taxonomies en [[investigación/herramientas/hugo/Índice|Índice]] son separaciones o categorías que puede tener un [[Single Page|archivo]], las que Hugo tiene por default son las `tags` y `categories`, pero se puede poner custom taxonomies, poniendo su nombre y valor en la [[Frontmatter|metadata]] y describiéndolo en el archivo de configuración toml
 
 ```toml
 [taxonomies]

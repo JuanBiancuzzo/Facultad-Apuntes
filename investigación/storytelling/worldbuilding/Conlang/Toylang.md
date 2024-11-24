@@ -2,11 +2,11 @@
 dia: 2024-07-08
 etapa: sin-empezar
 referencias:
-  - "32"
+  - "36"
 tags:
   - nota/investigacion
-  - storytelling/worldbuilding/Conlang
-orden: 121
+  - investigación/storytelling/worldbuilding/Conlang
+orden: 257
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

@@ -57,7 +57,7 @@ Para eso usaré obsidian, y pdfs, donde en obsidian todo sería archivos markdow
 
 <%*
     const indices = dv.pages("#índice")
-        .filter(indice => indice.file.folder.split("/").length == 1)
+        .filter(indice => indice.file.folder.split("/").length == 2)
         .sort(indice => {
             let nombre = indice.file.folder.split("/").pop();
             return `${nombre.charAt(0).toUpperCase()}${nombre.slice(1)}`.trim();

@@ -383,7 +383,7 @@ De igual forma se puede usar un [[Transistor de efecto de campo metal-óxido-sem
 
 ### Arduino
 ---
-Para settear un pin en [[placa de Desarrollo/arduino/Índice|Arduino]] como output de la siguiente forma 
+Para settear un pin en [[investigación/placa de Desarrollo/arduino/Índice|Arduino]] como output de la siguiente forma 
 
 ```c++
 pinMode(num_pin, OUTPUT);
@@ -547,7 +547,7 @@ En casos de estar en un circuito muy ruidoso, es preferible aumentar esa resiste
 
 ### Arduino
 ---
-Para settear un pin en [[placa de Desarrollo/arduino/Índice|Arduino]] como input de la siguiente forma 
+Para settear un pin en [[investigación/placa de Desarrollo/arduino/Índice|Arduino]] como input de la siguiente forma 
 
 ```c++
 pinMode(num_pin, INPUT);
