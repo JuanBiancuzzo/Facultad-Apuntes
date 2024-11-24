@@ -4,7 +4,8 @@ estado: Sin empezar
 tags:
   - proyecto/curso
   - cursos/ciencia-de-datos-para-salud-mental-y-psicología
-links:
+links: 
+referencias: []
 ---
 # Descripción
 ---

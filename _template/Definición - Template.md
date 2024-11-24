@@ -94,7 +94,7 @@
 
 	await tp.file.move(`${resumen.file.folder}/${titulo}`, tArchivo);
 
-	let referenciasResumen = resumen.referencias ? resumen.referencias.sort(ref => ref) : [];
+	let referenciasResumen = resumen.referencias ? resumen.referencias.sort(ref => ref).slice() : [];
 	let archivosReferencia = dv.pages('#referencia')
 		.flatMap(referencia => tp.user.cita().metadata(tp, referencia))
 		.sort(ref => ref.numReferencia);

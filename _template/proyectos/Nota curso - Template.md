@@ -6,6 +6,7 @@
 
 	const DEJAR_CITAR = "cita rapida";
 	const NUEVA_CITA = "nueva cita";
+	const SALIR = "salir";
 	const dv = app.plugins.plugins.dataview.api;
 
 	let titulo = tp.file.title;
@@ -21,46 +22,8 @@
 		new Notice("No hay cursos");
 		return;
 	}
-	let indice = posiblesCursos[0];
-
-	let referencias = dv.pages('#referencia')
-		.flatMap(referencia => tp.user.cita().metadata(tp, referencia))
-		.sort(ref => -ref.numReferencia);
-
-	let opciones = ["No citar ahora", "Nueva cita", ...referencias.map(ref => tp.user.cita().describir(ref))];
-	let valores = [DEJAR_CITAR, NUEVA_CITA, ...referencias.map(ref => ref.numReferencia)];
-	
-	let citar = await preguntar.suggester(tp, opciones, valores,
-		"Agregar una cita", error.Prompt("No se eligió una acción a hacer"), 13
-	);
-
-	let numReferencias = [];
-	while (true) {
-		if (citar === DEJAR_CITAR) {
-			break;
-
-		} else if (citar === NUEVA_CITA) {
-			let numReferencia = tp.user.generarNumReferencia(dv);
-			
-			try { 
-				await tp.user.cita().generar(tp, numReferencia);
-			} catch (_) { 
-				continue; 
-			}
-
-			numReferencias.push(numReferencia);
-		} else {
-			numReferencias.push(citar);
-		}
-
-		opciones[0] = "Dejar de citar";
-
-		citar = await preguntar.suggester(tp, opciones, valores,
-			"Agregar una cita", error.Prompt("No se eligió una acción a hacer"), 13
-		);	
-	}
-
-	let tag = indice.file.folder.trim().replaceAll(",", "").replaceAll(" ", "-");
+	let curso = posiblesCursos[0];
+	let tag = curso.file.folder.trim().replaceAll(",", "").replaceAll(" ", "-");
 
 	let paginaHecha = tp.file.find_tfile(titulo);
 	if (paginaHecha && paginaHecha.stat.ctime != tArchivo.stat.ctime) {
@@ -96,20 +59,42 @@
 		throw error.Quit("Este archivo ya existe");
 	}
 
-	await tp.file.move(`${indice.file.folder}/${titulo}`, tArchivo);
+	await tp.file.move(`${curso.file.folder}/${titulo}`, tArchivo);
+
+	let referenciasResumen = curso.referencias ? curso.referencias.sort(ref => ref).slice() : [];
+	let archivosReferencia = dv.pages('#referencia')
+		.flatMap(referencia => tp.user.cita().metadata(tp, referencia))
+		.sort(ref => ref.numReferencia);
+	let referenciasMostrar = referenciasResumen.map(ref => tp.user.cita().describir(archivosReferencia[ref - 1]));
+
+	let respuesta;
+	let numReferencias = [];
+	while (referenciasResumen.length > 0) {
+		respuesta = await preguntar.suggester(
+			tp, [...referenciasMostrar, "Salir"], [...referenciasResumen, SALIR],
+			"Que referecia vas a incluir?",
+			error.Prompt("No se eligió una referencia")
+		);
+
+		if (respuesta == SALIR) break;
+
+		numReferencias.push(respuesta);
+
+		let indice = referenciasResumen.indexOf(respuesta);
+		referenciasResumen.splice(indice, 1);
+		referenciasMostrar.splice(indice, 1);
+	}
 
 	const dia = tp.file.creation_date("YYYY-MM-DD");
 	
 	tR += "---\n"; 
-	tR += `dia: ${dia}\n`;
-	tR += "etapa: sin-empezar\n";
-	tR += `orden: ${mantenerOrden.siguienteValorOrden()}\n`;
-
-	tR += "referencias: \n";
-	for (let numRef of numReferencias) {
-		tR += ` - "${numRef}"\n`;
-	}
-	tR += `tags: \n - ${tag}\n - nota/investigacion\n`;
+	tR += tp.obsidian.stringifyYaml({
+		dia: dia,
+		etapa: "sin-empezar",
+		orden: mantenerOrden.siguienteValorOrden(),
+		referencias: numReferencias,
+		tags: [tag, "nota/investigacion"]
+	});
 	tR += "---";
 %>
 ```dataviewjs
