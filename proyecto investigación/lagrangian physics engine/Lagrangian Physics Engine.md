@@ -3,7 +3,7 @@ dia: 2024-10-17
 estado: 'Sin empezar'
 tags: 
  - proyecto/investigación
- - lagrangian-physics-engine
+ - proyecto-ingestigación/lagrangian-physics-engine
 ---
 # Propuesta
 ---

@@ -3,7 +3,7 @@ dia: 2024-10-19
 estado: 'Sin empezar'
 tags: 
  - proyecto/investigación
- - ray-marching-con-a-diagramas-de-voronói
+ - proyecto-ingestigación/ray-marching-con-a-diagramas-de-voronói
 ---
 # Propuesta
 ---
