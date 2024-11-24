@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - herramientas/blender/geometry-nodes
+  - investigación/herramientas/blender/geometry-nodes
 estado: Falta resumir
 ---
 ```dataviewjs

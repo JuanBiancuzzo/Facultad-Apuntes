@@ -4,8 +4,8 @@ estado: Sin empezar
 orden: 375
 tags:
   - índice
-  - matemática/numerical-Linear-Algebra
   - nota/investigacion
+  - investigación/matemática/numerical-Linear-Algebra
 aliases:
   - NLA
   - Applied Linear Algebra

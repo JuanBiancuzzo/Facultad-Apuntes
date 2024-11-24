@@ -2,11 +2,11 @@
 dia: 2024-11-16
 etapa: sin-empezar
 orden: 454
-referencias: 
- - "542"
-tags: 
- - generación-de-energía
- - nota/investigacion
+referencias:
+  - "542"
+tags:
+  - nota/investigacion
+  - investigación/generación-de-energía
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

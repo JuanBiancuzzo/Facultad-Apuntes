@@ -6,7 +6,7 @@ referencias:
   - "144"
 tags:
   - nota/investigacion
-  - game-creation
+  - investigación/game-creation
 orden: 73
 ---
 ```dataviewjs

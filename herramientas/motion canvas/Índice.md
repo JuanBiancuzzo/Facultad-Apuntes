@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - herramientas/motion-canvas
+  - investigación/herramientas/motion-canvas
 estado: Falta resumir
 ---
 ```dataviewjs

@@ -2,7 +2,7 @@
 dia: 2024-07-15
 tags:
   - índice
-  - herramientas/git
+  - investigación/herramientas/git
 estado: Falta resumir
 ---
 ```dataviewjs

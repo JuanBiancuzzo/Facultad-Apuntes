@@ -3,7 +3,7 @@ dia: 2024-09-16
 estado: Sin empezar
 tags:
   - índice
-  - placa-de-Desarrollo/arduino
+  - investigación/placa-de-Desarrollo/arduino
 aliases:
   - Arduino
 ---

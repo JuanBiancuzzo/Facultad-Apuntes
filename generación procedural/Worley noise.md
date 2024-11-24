@@ -5,7 +5,7 @@ referencias:
   - "62"
 tags:
   - nota/investigacion
-  - generación-procedural
+  - investigación/generación-procedural
 orden: 289
 ---
 ```dataviewjs

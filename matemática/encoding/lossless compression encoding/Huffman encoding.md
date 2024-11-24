@@ -6,9 +6,9 @@ referencias:
   - "196"
 tags:
   - nota/investigacion
-  - algoritmos
-  - matemática/encoding/lossless-compression-encoding
   - ingeniería-en-informática/orga/Compresión
+  - investigación/matemática/encoding/lossless-compression-encoding
+  - investigación/algoritmos
 orden: 355
 aliases:
   - Huffman Codes

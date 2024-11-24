@@ -3,10 +3,10 @@ dia: 2024-08-18
 tags:
   - ingeniería-en-informática/redes/Capa-de-Red
   - nota/facultad
-  - protocolos/protocolo-de-internet
   - nota/investigacion
-  - networking
   - ingeniería-electrónica/redes/Capa-de-Red
+  - investigación/networking
+  - investigación/protocolos/protocolo-de-internet
 aliases:
   - SNMP
   - Protocolo simple de administración de red

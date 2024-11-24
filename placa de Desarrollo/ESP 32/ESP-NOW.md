@@ -5,8 +5,8 @@ orden: 382
 referencias:
   - "421"
 tags:
-  - placa-de-Desarrollo/ESP-32
   - nota/investigacion
+  - investigación/placa-de-Desarrollo/ESP-32
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

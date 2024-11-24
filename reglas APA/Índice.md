@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - reglas-APA
+  - investigación/reglas-APA
 estado: Falta resumir
 aliases:
   - Reglas APA

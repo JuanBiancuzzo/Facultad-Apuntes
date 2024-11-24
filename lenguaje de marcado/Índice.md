@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - lenguaje-de-marcado
+  - investigación/lenguaje-de-marcado
 estado: Falta resumir
 ---
 ```dataviewjs

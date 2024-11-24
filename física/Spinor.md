@@ -2,11 +2,11 @@
 dia: 2024-11-06
 etapa: sin-empezar
 orden: 393
-referencias: 
- - "478"
-tags: 
- - física
- - nota/investigacion
+referencias:
+  - "478"
+tags:
+  - nota/investigacion
+  - investigación/física
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

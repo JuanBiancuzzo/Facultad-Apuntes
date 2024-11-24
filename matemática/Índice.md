@@ -2,7 +2,7 @@
 dia: 2024-07-18
 tags:
   - índice
-  - matemática
+  - investigación/matemática
 estado: Falta resumir
 ---
 ```dataviewjs

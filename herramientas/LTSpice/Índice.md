@@ -3,7 +3,7 @@ dia: 2024-10-08
 estado: Sin empezar
 tags:
   - índice
-  - herramientas/LTSpice
+  - investigación/herramientas/LTSpice
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

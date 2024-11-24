@@ -3,9 +3,9 @@ dia: 2024-10-20
 estado: Sin empezar
 tags:
   - índice
-  - arquitectura-de-procesadores/arquitectura-ARM
   - nota/investigacion
   - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
+  - investigación/arquitectura-de-procesadores/arquitectura-ARM
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

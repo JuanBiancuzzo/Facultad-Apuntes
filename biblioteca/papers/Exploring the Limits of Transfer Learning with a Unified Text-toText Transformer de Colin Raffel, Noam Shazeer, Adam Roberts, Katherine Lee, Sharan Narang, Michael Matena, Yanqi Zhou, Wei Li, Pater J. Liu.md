@@ -31,7 +31,7 @@ tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - machine-Learning/transformers
+  - investigación/machine-Learning/transformers
 orden: 118
 ---
 ```dataviewjs

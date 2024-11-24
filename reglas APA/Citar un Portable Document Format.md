@@ -7,7 +7,7 @@ aliases:
   - Citar un PDF
 tags:
   - nota/investigacion
-  - reglas-APA
+  - investigación/reglas-APA
 orden: 101
 ---
 ```dataviewjs

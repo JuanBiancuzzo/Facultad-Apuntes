@@ -19,8 +19,8 @@ tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - algoritmos
-  - protocolos
+  - investigación/protocolos
+  - investigación/algoritmos
 aliases:
   - RBFT
   - Redundant Byzantine Fault Tolerance

@@ -3,7 +3,7 @@ dia: 2024-09-18
 estado: Sin empezar
 tags:
   - índice
-  - matemática/knot-theory
+  - investigación/matemática/knot-theory
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

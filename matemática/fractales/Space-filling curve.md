@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "346"
 tags:
-  - matemática/fractales
   - nota/investigacion
+  - investigación/matemática/fractales
 orden: 304
 ---
 ```dataviewjs

@@ -1,9 +1,9 @@
 ---
 dia: 2024-08-15
-estado: 'Sin empezar'
-tags: 
- - índice
- - lenguajes-de-programación
+estado: Sin empezar
+tags:
+  - índice
+  - investigación/lenguajes-de-programación
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

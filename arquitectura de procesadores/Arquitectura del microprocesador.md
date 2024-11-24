@@ -3,11 +3,11 @@ dia: 2024-10-20
 estado: Sin empezar
 tags:
   - índice
-  - arquitectura-de-procesadores
   - nota/investigacion
   - ingeniería-en-informática/estructura/Microarquitectura
   - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
   - ingeniería-electrónica/estructura/Microarquitectura
+  - investigación/arquitectura-de-procesadores
 aliases:
   - Arquitectura de procesador
   - Ciclo fetch-decode-execute

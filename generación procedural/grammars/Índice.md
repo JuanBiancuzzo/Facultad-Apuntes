@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - generación-procedural/grammars
+  - investigación/generación-procedural/grammars
 estado: Falta resumir
 ---
 ```dataviewjs

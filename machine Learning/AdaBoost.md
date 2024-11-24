@@ -3,8 +3,8 @@ dia: 2024-09-30
 etapa: sin-empezar
 referencias: 
 tags:
-  - machine-Learning
   - nota/investigacion
+  - investigación/machine-Learning
 orden: 178
 ---
 ```dataviewjs

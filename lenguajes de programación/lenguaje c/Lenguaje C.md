@@ -3,8 +3,8 @@ dia: 2024-10-06
 estado: Sin empezar
 tags:
   - índice
-  - lenguajes-de-programación/lenguaje-c
   - nota/investigacion
+  - investigación/lenguajes-de-programación/lenguaje-c
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

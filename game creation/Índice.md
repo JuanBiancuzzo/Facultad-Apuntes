@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - game-creation
+  - investigación/game-creation
 estado: Falta resumir
 ---
 ```dataviewjs

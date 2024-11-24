@@ -1,11 +1,11 @@
 ---
 dia: 2024-11-17
-estado: 'Sin empezar'
+estado: Sin empezar
 orden: 463
-tags: 
- - índice
- - matemática/Estadística
- - nota/investigacion
+tags:
+  - índice
+  - nota/investigacion
+  - investigación/matemática/Estadística
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

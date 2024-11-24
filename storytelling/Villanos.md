@@ -5,7 +5,7 @@ referencias:
   - "92"
 tags:
   - nota/investigacion
-  - storytelling
+  - investigación/storytelling
 orden: 343
 ---
 ```dataviewjs

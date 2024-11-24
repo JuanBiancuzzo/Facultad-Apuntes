@@ -21,7 +21,7 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - sistemas-operativos
+  - investigación/sistemas-operativos
 orden: 363
 ---
 ```dataviewjs

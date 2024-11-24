@@ -5,8 +5,8 @@ orden: 376
 referencias:
   - "407"
 tags:
-  - matemática/encoding/lossless-compression-encoding
   - nota/investigacion
+  - investigación/matemática/encoding/lossless-compression-encoding
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - game-engine
+  - investigación/game-engine
 estado: Falta resumir
 ---
 ```dataviewjs

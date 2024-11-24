@@ -22,7 +22,7 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - lenguajes-de-programación/lenguaje-c
+  - investigación/lenguajes-de-programación/lenguaje-c
 orden: 238
 ---
 ```dataviewjs

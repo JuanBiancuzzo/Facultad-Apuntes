@@ -3,11 +3,11 @@ dia: 2024-08-29
 estado: Sin empezar
 tags:
   - índice
-  - lenguajes-de-programación/lenguaje-assembler
   - ingeniería-en-informática/estructura/Sistema-ARC
   - nota/investigacion
   - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - ingeniería-electrónica/estructura/Sistema-ARC
+  - investigación/lenguajes-de-programación/lenguaje-assembler
 referencias:
   - "202"
 etapa: sin-empezar

@@ -2,8 +2,8 @@
 dia: 2024-07-12
 tags:
   - índice
-  - machine-Learning
   - nota/investigacion
+  - investigación/machine-Learning
 aliases:
   - AI
 estado: Falta resumir

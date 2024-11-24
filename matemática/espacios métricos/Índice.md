@@ -1,9 +1,9 @@
 ---
 dia: 2024-10-17
-estado: 'Sin empezar'
-tags: 
- - índice
- - matemática/espacios-métricos
+estado: Sin empezar
+tags:
+  - índice
+  - investigación/matemática/espacios-métricos
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

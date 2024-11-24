@@ -4,8 +4,8 @@ estado: Sin empezar
 orden: 379
 tags:
   - índice
-  - matemática/numerical-Linear-Algebra/randomized-Numerical-Linear-Algebra
   - nota/investigacion
+  - investigación/matemática/numerical-Linear-Algebra/randomized-Numerical-Linear-Algebra
 aliases:
   - Rand-NLA
 referencias:

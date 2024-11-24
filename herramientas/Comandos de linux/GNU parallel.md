@@ -2,11 +2,11 @@
 dia: 2024-11-11
 etapa: sin-empezar
 orden: 419
-referencias: 
- - "505"
-tags: 
- - herramientas/Comandos-de-linux
- - nota/investigacion
+referencias:
+  - "505"
+tags:
+  - nota/investigacion
+  - investigación/herramientas/Comandos-de-linux
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

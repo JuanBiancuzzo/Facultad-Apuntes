@@ -5,9 +5,9 @@ referencias:
   - "317"
   - "318"
 tags:
-  - generación-procedural
   - nota/investigacion
-  - matemática/fractales
+  - investigación/generación-procedural
+  - investigación/matemática/fractales
 aliases:
   - Fractal Perlin Noise
   - Noise Gradient trick#Gradient trick

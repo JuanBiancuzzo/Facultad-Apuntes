@@ -5,8 +5,8 @@ orden: 407
 referencias:
   - "494"
 tags:
-  - machine-Learning
   - nota/investigacion
+  - investigación/machine-Learning
 aliases:
   - ICA
 ---

@@ -19,7 +19,7 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - lenguajes-de-programación/lenguaje-SQL
+  - investigación/lenguajes-de-programación/lenguaje-SQL
 orden: 47
 ---
 ```dataviewjs

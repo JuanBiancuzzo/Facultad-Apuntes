@@ -6,8 +6,8 @@ referencias:
   - "262"
   - "263"
 tags:
-  - mecánica
   - nota/investigacion
+  - investigación/mecánica
 orden: 98
 ---
 ```dataviewjs

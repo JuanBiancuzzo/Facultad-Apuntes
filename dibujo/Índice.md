@@ -2,7 +2,7 @@
 dia: 2024-07-17
 tags:
   - índice
-  - dibujo
+  - investigación/dibujo
 estado: Falta resumir
 ---
 ```dataviewjs

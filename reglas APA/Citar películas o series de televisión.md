@@ -8,7 +8,7 @@ aliases:
   - Citar series de televisión
 tags:
   - nota/investigacion
-  - reglas-APA
+  - investigación/reglas-APA
 orden: 66
 ---
 ```dataviewjs

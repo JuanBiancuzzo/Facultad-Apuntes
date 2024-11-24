@@ -5,8 +5,8 @@ orden: 453
 referencias:
   - "541"
 tags:
-  - generación-de-energía/Baterías
   - nota/investigacion
+  - investigación/generación-de-energía/Baterías
 aliases:
   - Batería de sodio-ion
   - Sodium-ion battery

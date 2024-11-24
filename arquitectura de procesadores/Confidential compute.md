@@ -5,8 +5,8 @@ orden: 10
 referencias:
   - "397"
 tags:
-  - arquitectura-de-procesadores
   - nota/investigacion
+  - investigación/arquitectura-de-procesadores
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

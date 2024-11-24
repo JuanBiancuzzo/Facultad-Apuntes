@@ -2,8 +2,8 @@
 dia: 2024-09-22
 etapa: sin-empezar
 tags:
-  - mecánica
   - nota/investigacion
+  - investigación/mecánica
 referencias:
   - "264"
 orden: 240

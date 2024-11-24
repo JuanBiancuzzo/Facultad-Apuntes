@@ -5,7 +5,7 @@ referencias:
   - "132"
 tags:
   - nota/investigacion
-  - game-engine/técnicas
+  - investigación/game-engine/técnicas
 orden: 210
 ---
 ```dataviewjs

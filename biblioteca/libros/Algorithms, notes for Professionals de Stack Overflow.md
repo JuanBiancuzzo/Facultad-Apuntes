@@ -20,7 +20,7 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - algoritmos
+  - investigación/algoritmos
 orden: 328
 ---
 ```dataviewjs

@@ -7,7 +7,7 @@ aliases:
   - GDD
 tags:
   - nota/investigacion
-  - game-creation
+  - investigación/game-creation
 orden: 193
 ---
 ```dataviewjs

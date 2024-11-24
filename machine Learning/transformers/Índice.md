@@ -3,7 +3,7 @@ dia: 2024-10-02
 estado: Sin empezar
 tags:
   - índice
-  - machine-Learning/transformers
+  - investigación/machine-Learning/transformers
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

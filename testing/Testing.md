@@ -1,11 +1,11 @@
 ---
 dia: 2024-11-11
-estado: 'Sin empezar'
+estado: Sin empezar
 orden: 413
-tags: 
- - índice
- - testing
- - nota/investigacion
+tags:
+  - índice
+  - nota/investigacion
+  - investigación/testing
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

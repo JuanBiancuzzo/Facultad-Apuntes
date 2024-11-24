@@ -5,8 +5,8 @@ orden: 519
 referencias:
   - "607"
 tags:
-  - compilador
   - nota/investigacion
+  - investigación/compilador
 aliases:
   - MLIR
 ---

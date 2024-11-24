@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - herramientas/docker
+  - investigación/herramientas/docker
 estado: Falta resumir
 ---
 ```dataviewjs

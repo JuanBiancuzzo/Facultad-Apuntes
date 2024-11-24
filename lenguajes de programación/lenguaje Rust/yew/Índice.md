@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - lenguajes-de-programación/lenguaje-Rust/yew
+  - investigación/lenguajes-de-programación/lenguaje-Rust/yew
 estado: Falta resumir
 ---
 ```dataviewjs

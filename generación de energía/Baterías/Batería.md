@@ -1,11 +1,11 @@
 ---
 dia: 2024-11-15
-estado: 'Sin empezar'
+estado: Sin empezar
 orden: 439
-tags: 
- - índice
- - generación-de-energía/Baterías
- - nota/investigacion
+tags:
+  - índice
+  - nota/investigacion
+  - investigación/generación-de-energía/Baterías
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

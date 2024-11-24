@@ -33,7 +33,7 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - mecánica
+  - investigación/mecánica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

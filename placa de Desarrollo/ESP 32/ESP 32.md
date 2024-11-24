@@ -4,8 +4,8 @@ estado: Sin empezar
 orden: 381
 tags:
   - índice
-  - placa-de-Desarrollo/ESP-32
   - nota/investigacion
+  - investigación/placa-de-Desarrollo/ESP-32
 referencias:
   - "420"
 ---

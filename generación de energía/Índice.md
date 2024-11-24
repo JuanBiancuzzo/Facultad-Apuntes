@@ -3,7 +3,7 @@ dia: 2024-09-03
 estado: Sin empezar
 tags:
   - índice
-  - generación-de-energía
+  - investigación/generación-de-energía
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

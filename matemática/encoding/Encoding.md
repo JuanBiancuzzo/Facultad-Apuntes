@@ -3,8 +3,8 @@ dia: 2024-08-18
 estado: Sin empezar
 tags:
   - índice
-  - matemática/encoding
   - nota/investigacion
+  - investigación/matemática/encoding
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

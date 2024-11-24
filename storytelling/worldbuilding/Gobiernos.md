@@ -7,7 +7,7 @@ referencias:
 aliases: 
 tags:
   - nota/investigacion
-  - storytelling/worldbuilding
+  - investigación/storytelling/worldbuilding
 orden: 148
 ---
 ```dataviewjs

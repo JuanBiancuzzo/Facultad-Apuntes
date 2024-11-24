@@ -5,8 +5,8 @@ orden: 457
 referencias:
   - "544"
 tags:
-  - computable
   - nota/investigacion
+  - investigación/computable
 aliases:
   - Computadora analógica
   - Computador analógico

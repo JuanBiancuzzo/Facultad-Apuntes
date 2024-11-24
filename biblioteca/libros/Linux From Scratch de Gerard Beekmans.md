@@ -19,8 +19,8 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - sistemas-operativos
   - ingeniería-en-informática/tpp
+  - investigación/sistemas-operativos
 orden: 374
 ---
 ```dataviewjs

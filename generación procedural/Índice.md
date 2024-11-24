@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - generación-procedural
+  - investigación/generación-procedural
 aliases:
   - Procedural generation
 estado: Falta resumir

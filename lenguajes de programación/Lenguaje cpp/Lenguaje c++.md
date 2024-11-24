@@ -4,8 +4,8 @@ estado: Sin empezar
 orden: 473
 tags:
   - índice
-  - lenguajes-de-programación/Lenguaje-cpp
   - nota/investigacion
+  - investigación/lenguajes-de-programación/Lenguaje-cpp
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

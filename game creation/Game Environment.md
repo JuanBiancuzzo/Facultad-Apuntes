@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "267"
 tags:
-  - game-creation
   - nota/investigacion
+  - investigación/game-creation
 orden: 270
 ---
 ```dataviewjs

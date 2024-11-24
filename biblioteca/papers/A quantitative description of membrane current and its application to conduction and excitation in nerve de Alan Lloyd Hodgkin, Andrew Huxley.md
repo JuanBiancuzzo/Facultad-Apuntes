@@ -18,7 +18,7 @@ tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - neurociencias
+  - investigación/neurociencias
 aliases:
   - Modelo de Hodgkin y Huxley
 referencias:

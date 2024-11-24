@@ -33,7 +33,7 @@ tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - machine-Learning/transformers
+  - investigación/machine-Learning/transformers
 aliases:
   - RoBERTa
 orden: 228

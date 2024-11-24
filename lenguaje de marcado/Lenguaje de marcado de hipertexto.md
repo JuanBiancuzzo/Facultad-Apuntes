@@ -9,9 +9,9 @@ aliases:
   - HTML
 tags:
   - nota/investigacion
-  - lenguaje-de-marcado
   - ingeniería-en-informática/redes/Capa-de-aplicación
   - ingeniería-electrónica/redes/Capa-de-aplicación
+  - investigación/lenguaje-de-marcado
 orden: 60
 ---
 ```dataviewjs

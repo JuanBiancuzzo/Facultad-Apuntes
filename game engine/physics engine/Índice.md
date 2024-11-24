@@ -1,9 +1,9 @@
 ---
 dia: 2024-10-15
-estado: 'Sin empezar'
-tags: 
- - índice
- - game-engine/physics-engine
+estado: Sin empezar
+tags:
+  - índice
+  - investigación/game-engine/physics-engine
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

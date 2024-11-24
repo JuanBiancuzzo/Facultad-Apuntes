@@ -7,7 +7,7 @@ aliases:
   - Compressed prefix tree
 tags:
   - nota/investigacion
-  - data-structures
+  - investigación/data-structures
 orden: 147
 ---
 ```dataviewjs

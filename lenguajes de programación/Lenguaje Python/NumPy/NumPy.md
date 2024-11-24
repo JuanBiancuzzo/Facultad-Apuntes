@@ -1,11 +1,11 @@
 ---
 dia: 2024-11-17
-estado: 'Sin empezar'
+estado: Sin empezar
 orden: 482
-tags: 
- - índice
- - lenguajes-de-programación/Lenguaje-Python/NumPy
- - nota/investigacion
+tags:
+  - índice
+  - nota/investigacion
+  - investigación/lenguajes-de-programación/Lenguaje-Python/NumPy
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

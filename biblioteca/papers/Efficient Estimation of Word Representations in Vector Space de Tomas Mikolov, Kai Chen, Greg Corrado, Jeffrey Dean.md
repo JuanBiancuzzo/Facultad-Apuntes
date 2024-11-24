@@ -21,7 +21,7 @@ tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - machine-Learning/sequence-modeling
+  - investigación/machine-Learning/sequence-modeling
 aliases:
   - Word2Vec
 orden: 242

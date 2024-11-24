@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - herramientas/blender/motion-graphics
+  - investigación/herramientas/blender/motion-graphics
 estado: Falta resumir
 ---
 ```dataviewjs

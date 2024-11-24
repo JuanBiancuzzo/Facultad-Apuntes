@@ -5,8 +5,8 @@ orden: 402
 referencias:
   - "487"
 tags:
-  - machine-Learning
   - nota/investigacion
+  - investigación/machine-Learning
 aliases:
   - ADL
   - Linear discriminant analysis

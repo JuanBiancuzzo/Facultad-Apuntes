@@ -8,7 +8,7 @@ aliases:
   - Extensible Markup Language
 tags:
   - nota/investigacion
-  - lenguaje-de-marcado
+  - investigación/lenguaje-de-marcado
 orden: 74
 ---
 ```dataviewjs

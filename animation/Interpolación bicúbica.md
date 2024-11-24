@@ -5,8 +5,8 @@ orden: 521
 referencias:
   - "609"
 tags:
-  - animation
   - nota/investigacion
+  - investigación/animation
 aliases:
   - Bicubic interpolation
 ---

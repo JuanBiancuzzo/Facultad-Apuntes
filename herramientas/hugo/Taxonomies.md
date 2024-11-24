@@ -5,7 +5,7 @@ referencias:
   - "177"
 tags:
   - nota/investigacion
-  - herramientas/hugo
+  - investigación/herramientas/hugo
 orden: 20
 ---
 ```dataviewjs

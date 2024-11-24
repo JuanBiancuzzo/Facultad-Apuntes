@@ -5,8 +5,8 @@ orden: 399
 referencias:
   - "484"
 tags:
-  - cybersecurity
   - nota/investigacion
+  - investigación/cybersecurity
 aliases:
   - Google dorking
 ---

@@ -6,7 +6,7 @@ referencias:
   - "57"
 tags:
   - nota/investigacion
-  - música
+  - investigación/música
 orden: 31
 ---
 ```dataviewjs

@@ -5,8 +5,8 @@ referencias:
   - "309"
   - "310"
 tags:
-  - animation
   - nota/investigacion
+  - investigación/animation
 orden: 323
 ---
 ```dataviewjs

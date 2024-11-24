@@ -23,8 +23,8 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - machine-Learning
-  - lenguajes-de-programación/Lenguaje-Python
+  - investigación/machine-Learning
+  - investigación/lenguajes-de-programación/Lenguaje-Python
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

@@ -3,7 +3,7 @@ dia: 2024-10-02
 estado: Sin empezar
 tags:
   - índice
-  - machine-Learning/sequence-modeling
+  - investigación/machine-Learning/sequence-modeling
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

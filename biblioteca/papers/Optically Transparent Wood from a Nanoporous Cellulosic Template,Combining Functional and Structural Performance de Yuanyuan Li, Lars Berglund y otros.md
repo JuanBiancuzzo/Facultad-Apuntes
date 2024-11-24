@@ -24,7 +24,7 @@ tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - mecánica
+  - investigación/mecánica
 referencias:
   - "569"
 ---

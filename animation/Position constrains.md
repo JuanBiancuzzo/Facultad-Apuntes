@@ -4,8 +4,8 @@ etapa: ampliar
 referencias:
   - "154"
 tags:
-  - animation
   - nota/investigacion
+  - investigación/animation
 orden: 8
 ---
 ```dataviewjs

@@ -5,8 +5,8 @@ orden: 426
 referencias:
   - "511"
 tags:
-  - machine-Learning
   - nota/investigacion
+  - investigación/machine-Learning
 aliases:
   - Distancia de edición
   - Distancia entre palabras

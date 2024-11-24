@@ -5,8 +5,8 @@ orden: 5
 referencias:
   - "535"
 tags:
-  - mecánica/Engranaje
   - nota/investigacion
+  - investigación/mecánica/Engranaje
 aliases:
   - Espiga de engranajes
 ---

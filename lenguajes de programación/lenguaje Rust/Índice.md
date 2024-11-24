@@ -3,7 +3,7 @@ dia: 2024-10-06
 estado: Sin empezar
 tags:
   - índice
-  - lenguajes-de-programación/lenguaje-Rust
+  - investigación/lenguajes-de-programación/lenguaje-Rust
 aliases:
   - Lenguaje Rust
   - Rust

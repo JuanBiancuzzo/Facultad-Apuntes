@@ -5,8 +5,8 @@ orden: 462
 referencias:
   - "549"
 tags:
-  - generación-de-energía
   - nota/investigacion
+  - investigación/generación-de-energía
 aliases:
   - Hydrogen economy
 ---

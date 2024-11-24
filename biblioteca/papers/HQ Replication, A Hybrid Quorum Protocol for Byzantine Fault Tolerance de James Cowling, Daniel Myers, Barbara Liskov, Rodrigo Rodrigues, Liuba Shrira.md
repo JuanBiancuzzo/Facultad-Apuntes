@@ -23,8 +23,8 @@ tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - algoritmos
-  - protocolos
+  - investigación/protocolos
+  - investigación/algoritmos
 aliases:
   - HQ Replication
   - Hybrid Quorum Protocol for Byzantine Fault Tolerance

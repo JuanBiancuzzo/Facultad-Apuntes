@@ -3,9 +3,9 @@ dia: 2024-10-15
 estado: Sin empezar
 tags:
   - índice
-  - sistemas-operativos/kernel
   - nota/investigacion
   - ingeniería-en-informática/sisop/Kernel
+  - investigación/sistemas-operativos/kernel
 orden: 324
 ---
 ```dataviewjs

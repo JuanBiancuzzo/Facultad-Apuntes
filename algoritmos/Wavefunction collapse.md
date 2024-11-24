@@ -4,8 +4,8 @@ etapa: ampliar
 referencias:
   - "284"
 tags:
-  - algoritmos
   - nota/investigacion
+  - investigación/algoritmos
 orden: 287
 ---
 ```dataviewjs

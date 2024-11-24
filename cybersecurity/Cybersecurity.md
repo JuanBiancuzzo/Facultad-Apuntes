@@ -4,8 +4,8 @@ estado: Sin empezar
 orden: 391
 tags:
   - índice
-  - cybersecurity
   - nota/investigacion
+  - investigación/cybersecurity
 aliases:
   - Ciberseguridad
 referencias:

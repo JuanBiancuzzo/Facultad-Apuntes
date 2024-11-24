@@ -5,7 +5,7 @@ referencias:
   - "155"
 tags:
   - nota/investigacion
-  - herramientas/git
+  - investigación/herramientas/git
 orden: 244
 ---
 ```dataviewjs

@@ -5,8 +5,8 @@ orden: 397
 referencias:
   - "482"
 tags:
-  - algoritmos
   - nota/investigacion
+  - investigación/algoritmos
 aliases:
   - ACO
   - Algoritmo de la colonia de hormigas

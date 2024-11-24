@@ -21,7 +21,7 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - lenguajes-de-programación/lenguaje-Rust
+  - investigación/lenguajes-de-programación/lenguaje-Rust
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

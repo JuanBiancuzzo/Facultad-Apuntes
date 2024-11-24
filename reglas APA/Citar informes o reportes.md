@@ -8,7 +8,7 @@ aliases:
   - Citar informes
 tags:
   - nota/investigacion
-  - reglas-APA
+  - investigación/reglas-APA
 orden: 34
 ---
 ```dataviewjs

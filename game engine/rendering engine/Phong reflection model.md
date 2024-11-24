@@ -5,8 +5,8 @@ orden: 416
 referencias:
   - "501"
 tags:
-  - game-engine/rendering-engine
   - nota/investigacion
+  - investigación/game-engine/rendering-engine
 aliases:
   - Phong illumination
   - Phong lighting

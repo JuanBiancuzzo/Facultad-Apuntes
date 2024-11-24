@@ -1,9 +1,9 @@
 ---
 dia: 2024-10-02
-estado: 'Sin empezar'
-tags: 
- - índice
- - machine-Learning/modelos-generativos
+estado: Sin empezar
+tags:
+  - índice
+  - investigación/machine-Learning/modelos-generativos
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

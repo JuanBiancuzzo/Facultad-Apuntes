@@ -2,7 +2,7 @@
 dia: 2024-07-09
 tags:
   - índice
-  - game-engine/técnicas
+  - investigación/game-engine/técnicas
 estado: Falta resumir
 ---
 ```dataviewjs

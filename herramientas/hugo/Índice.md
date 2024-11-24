@@ -2,7 +2,7 @@
 dia: 2024-07-19
 tags:
   - índice
-  - herramientas/hugo
+  - investigación/herramientas/hugo
 estado: Falta resumir
 aliases:
   - Hugo

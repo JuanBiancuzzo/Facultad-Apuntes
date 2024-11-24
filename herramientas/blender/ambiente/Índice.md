@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - herramientas/blender/ambiente
+  - investigación/herramientas/blender/ambiente
 estado: Falta resumir
 ---
 ```dataviewjs

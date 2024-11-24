@@ -3,7 +3,7 @@ dia: 2024-10-15
 estado: Sin empezar
 tags:
   - índice
-  - game-engine/rendering-engine
+  - investigación/game-engine/rendering-engine
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

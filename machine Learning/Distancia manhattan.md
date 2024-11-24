@@ -4,8 +4,8 @@ etapa: sin-empezar
 orden: 424
 referencias: []
 tags:
-  - machine-Learning
   - nota/investigacion
+  - investigación/machine-Learning
 aliases:
   - Manhattan distance
 ---

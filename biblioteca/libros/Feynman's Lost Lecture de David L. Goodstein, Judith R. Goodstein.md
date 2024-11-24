@@ -21,7 +21,7 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - física
+  - investigación/física
 orden: 276
 ---
 ```dataviewjs

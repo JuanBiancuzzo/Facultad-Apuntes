@@ -1,11 +1,11 @@
 ---
 dia: 2024-11-17
-estado: 'Sin empezar'
+estado: Sin empezar
 orden: 483
-tags: 
- - índice
- - lenguajes-de-programación/Lenguaje-Python/Spark
- - nota/investigacion
+tags:
+  - índice
+  - nota/investigacion
+  - investigación/lenguajes-de-programación/Lenguaje-Python/Spark
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

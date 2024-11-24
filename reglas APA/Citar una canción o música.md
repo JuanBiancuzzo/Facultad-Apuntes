@@ -8,7 +8,7 @@ aliases:
   - Citar música
 tags:
   - nota/investigacion
-  - reglas-APA
+  - investigación/reglas-APA
 orden: 312
 ---
 ```dataviewjs

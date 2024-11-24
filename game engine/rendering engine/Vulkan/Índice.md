@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - game-engine/rendering-engine/Vulkan
+  - investigación/game-engine/rendering-engine/Vulkan
 estado: Falta resumir
 ---
 ```dataviewjs

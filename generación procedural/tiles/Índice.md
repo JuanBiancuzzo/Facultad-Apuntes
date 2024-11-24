@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - generación-procedural/tiles
+  - investigación/generación-procedural/tiles
 estado: Falta resumir
 ---
 ```dataviewjs

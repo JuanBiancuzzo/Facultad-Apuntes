@@ -26,7 +26,7 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - cybersecurity
+  - investigación/cybersecurity
 orden: 95
 ---
 ```dataviewjs

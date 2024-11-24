@@ -29,7 +29,7 @@ tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - machine-Learning/transformers
+  - investigación/machine-Learning/transformers
 aliases:
   - LoRA
 orden: 100

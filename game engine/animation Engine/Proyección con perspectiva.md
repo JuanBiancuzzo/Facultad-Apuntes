@@ -5,8 +5,8 @@ orden: 380
 referencias:
   - "419"
 tags:
-  - game-engine/animation-Engine
   - nota/investigacion
+  - investigación/game-engine/animation-Engine
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

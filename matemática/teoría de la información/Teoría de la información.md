@@ -3,8 +3,8 @@ dia: 2024-10-04
 estado: Sin empezar
 tags:
   - índice
-  - matemática/teoría-de-la-información
   - nota/investigacion
+  - investigación/matemática/teoría-de-la-información
 aliases:
   - Information theory
 ---

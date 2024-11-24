@@ -5,8 +5,8 @@ orden: 529
 referencias:
   - "611"
 tags:
-  - animation
   - nota/investigacion
+  - investigación/animation
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

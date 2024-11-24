@@ -38,7 +38,7 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - animation
+  - investigación/animation
 referencias:
   - "22"
 orden: 194

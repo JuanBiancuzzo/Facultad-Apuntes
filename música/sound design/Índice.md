@@ -2,7 +2,7 @@
 dia: 2024-07-17
 tags:
   - índice
-  - música/sound-design
+  - investigación/música/sound-design
 estado: Falta resumir
 ---
 ```dataviewjs

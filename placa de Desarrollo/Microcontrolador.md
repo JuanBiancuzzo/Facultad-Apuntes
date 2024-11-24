@@ -4,9 +4,9 @@ etapa: terminado
 referencias:
   - "251"
 tags:
-  - placa-de-Desarrollo
   - nota/investigacion
-  - placa-de-Desarrollo/placa-de-desarrollo-Nucleo-64
+  - investigación/placa-de-Desarrollo/placa-de-desarrollo-Nucleo-64
+  - investigación/placa-de-Desarrollo
 aliases:
   - MCU
   - Microcontroller Unit

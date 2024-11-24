@@ -5,7 +5,7 @@ referencias:
   - "165"
 tags:
   - nota/investigacion
-  - game-engine/técnicas
+  - investigación/game-engine/técnicas
 aliases:
   - DoG
 orden: 296

@@ -5,8 +5,8 @@ orden: 506
 referencias:
   - "585"
 tags:
-  - machine-Learning
   - nota/investigacion
+  - investigación/machine-Learning
 aliases:
   - Minkowski distance
 ---

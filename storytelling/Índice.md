@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - storytelling
+  - investigación/storytelling
 estado: Falta resumir
 ---
 ```dataviewjs

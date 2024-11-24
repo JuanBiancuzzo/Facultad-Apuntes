@@ -5,8 +5,8 @@ orden: 394
 referencias:
   - "479"
 tags:
-  - algoritmos
   - nota/investigacion
+  - investigación/algoritmos
 aliases:
   - Búsqueda de la sección dorada
 ---

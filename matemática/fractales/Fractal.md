@@ -2,8 +2,8 @@
 dia: 2024-07-08
 tags:
   - índice
-  - matemática/fractales
   - nota/investigacion
+  - investigación/matemática/fractales
 estado: Falta resumir
 referencias:
   - "38"

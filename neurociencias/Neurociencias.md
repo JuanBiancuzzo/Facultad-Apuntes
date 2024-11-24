@@ -4,7 +4,7 @@ estado: Sin empezar
 orden: 458
 tags:
   - índice
-  - neurociencias
+  - investigación/neurociencias
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

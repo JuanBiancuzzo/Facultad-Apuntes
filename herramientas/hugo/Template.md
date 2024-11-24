@@ -7,7 +7,7 @@ aliases:
   - Plantilla
 tags:
   - nota/investigacion
-  - herramientas/hugo
+  - investigación/herramientas/hugo
 orden: 113
 ---
 ```dataviewjs

@@ -5,7 +5,7 @@ referencias:
   - "8"
 tags:
   - nota/investigacion
-  - reglas-APA
+  - investigación/reglas-APA
 orden: 140
 ---
 ```dataviewjs

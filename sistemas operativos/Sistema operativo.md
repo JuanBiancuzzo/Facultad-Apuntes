@@ -3,10 +3,10 @@ dia: 2024-10-15
 estado: Sin empezar
 tags:
   - índice
-  - sistemas-operativos
   - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - ingeniería-en-informática/sisop/Kernel
   - nota/investigacion
+  - investigación/sistemas-operativos
 orden: 281
 ---
 ```dataviewjs

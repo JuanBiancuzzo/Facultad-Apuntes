@@ -16,7 +16,7 @@ tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - mecánica
+  - investigación/mecánica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

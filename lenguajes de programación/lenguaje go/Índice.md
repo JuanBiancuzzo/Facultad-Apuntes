@@ -3,7 +3,7 @@ dia: 2024-10-07
 estado: Sin empezar
 tags:
   - índice
-  - lenguajes-de-programación/lenguaje-go
+  - investigación/lenguajes-de-programación/lenguaje-go
 aliases:
   - Lenguaje go
   - Golang

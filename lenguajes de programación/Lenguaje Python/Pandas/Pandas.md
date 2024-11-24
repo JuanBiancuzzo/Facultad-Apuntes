@@ -1,11 +1,11 @@
 ---
 dia: 2024-11-17
-estado: 'Sin empezar'
+estado: Sin empezar
 orden: 481
-tags: 
- - índice
- - lenguajes-de-programación/Lenguaje-Python/Pandas
- - nota/investigacion
+tags:
+  - índice
+  - nota/investigacion
+  - investigación/lenguajes-de-programación/Lenguaje-Python/Pandas
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

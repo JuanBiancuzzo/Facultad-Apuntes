@@ -1,9 +1,9 @@
 ---
 dia: 2024-10-15
-estado: 'Sin empezar'
-tags: 
- - índice
- - game-engine/animation-Engine
+estado: Sin empezar
+tags:
+  - índice
+  - investigación/game-engine/animation-Engine
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

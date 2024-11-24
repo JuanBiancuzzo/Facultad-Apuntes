@@ -22,7 +22,7 @@ tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - matemática
+  - investigación/matemática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

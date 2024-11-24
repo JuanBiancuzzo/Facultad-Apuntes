@@ -5,7 +5,7 @@ referencias:
   - "101"
 tags:
   - nota/investigacion
-  - storytelling/worldbuilding
+  - investigación/storytelling/worldbuilding
 orden: 236
 ---
 ```dataviewjs

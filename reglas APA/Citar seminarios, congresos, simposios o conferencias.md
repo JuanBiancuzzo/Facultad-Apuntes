@@ -10,7 +10,7 @@ aliases:
   - Citar conferencias
 tags:
   - nota/investigacion
-  - reglas-APA
+  - investigación/reglas-APA
 orden: 77
 ---
 ```dataviewjs

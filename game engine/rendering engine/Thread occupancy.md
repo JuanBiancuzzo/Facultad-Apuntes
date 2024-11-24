@@ -6,7 +6,7 @@ referencias:
   - "161"
 tags:
   - nota/investigacion
-  - game-engine/rendering-engine
+  - investigación/game-engine/rendering-engine
 orden: 233
 ---
 ```dataviewjs

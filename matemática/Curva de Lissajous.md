@@ -5,9 +5,9 @@ orden: 383
 referencias:
   - "422"
 tags:
-  - matemática
   - nota/investigacion
-  - música
+  - investigación/matemática
+  - investigación/música
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

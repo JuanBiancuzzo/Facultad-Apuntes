@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - generación-procedural/parametrización
+  - investigación/generación-procedural/parametrización
 estado: Falta resumir
 ---
 ```dataviewjs

@@ -2,7 +2,7 @@
 dia: 2024-07-13
 tags:
   - índice
-  - machine-Learning/physics-Informed-Machine-Learning
+  - investigación/machine-Learning/physics-Informed-Machine-Learning
 estado: Falta resumir
 ---
 ```dataviewjs

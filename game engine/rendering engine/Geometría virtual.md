@@ -11,7 +11,7 @@ aliases:
   - Virtual geometry
 tags:
   - nota/investigacion
-  - game-engine/rendering-engine
+  - investigación/game-engine/rendering-engine
 orden: 351
 ---
 ```dataviewjs

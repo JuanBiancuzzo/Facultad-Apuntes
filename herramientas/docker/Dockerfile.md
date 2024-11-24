@@ -6,7 +6,7 @@ referencias:
   - "158"
 tags:
   - nota/investigacion
-  - herramientas/docker
+  - investigación/herramientas/docker
 orden: 155
 ---
 ```dataviewjs

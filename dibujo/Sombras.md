@@ -5,7 +5,7 @@ referencias:
   - "162"
 tags:
   - nota/investigacion
-  - dibujo
+  - investigación/dibujo
 orden: 107
 ---
 ```dataviewjs

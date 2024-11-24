@@ -3,7 +3,7 @@ dia: 2024-09-03
 estado: Sin empezar
 tags:
   - índice
-  - física
+  - investigación/física
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

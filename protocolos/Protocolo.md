@@ -3,8 +3,8 @@ dia: 2024-10-13
 estado: Tenemos principalmente los protocolos de red pero no mucho más allá de eso
 tags:
   - índice
-  - protocolos
   - nota/investigacion
+  - investigación/protocolos
 orden: 282
 ---
 ```dataviewjs

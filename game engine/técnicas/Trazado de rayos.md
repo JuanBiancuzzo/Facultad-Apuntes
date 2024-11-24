@@ -5,8 +5,8 @@ referencias:
   - "351"
   - "352"
 tags:
-  - game-engine/técnicas
   - nota/investigacion
+  - investigación/game-engine/técnicas
 aliases:
   - Ray tracing
   - Path tracing

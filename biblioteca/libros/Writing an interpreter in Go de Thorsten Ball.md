@@ -19,7 +19,7 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - lenguajes-de-programación/lenguaje-go
+  - investigación/lenguajes-de-programación/lenguaje-go
 orden: 317
 ---
 ```dataviewjs

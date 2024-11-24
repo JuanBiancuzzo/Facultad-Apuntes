@@ -4,8 +4,8 @@ estado: Sin empezar
 orden: 441
 tags:
   - índice
-  - mecánica/Engranaje
   - nota/investigacion
+  - investigación/mecánica/Engranaje
 aliases:
   - Gear
   - Corona

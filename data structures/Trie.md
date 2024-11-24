@@ -7,7 +7,7 @@ aliases:
   - Prefix tree
 tags:
   - nota/investigacion
-  - data-structures
+  - investigación/data-structures
 orden: 145
 ---
 ```dataviewjs

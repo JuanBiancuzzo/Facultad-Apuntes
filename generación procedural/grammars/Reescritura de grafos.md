@@ -5,7 +5,7 @@ referencias:
   - "61"
 tags:
   - nota/investigacion
-  - generación-procedural/grammars
+  - investigación/generación-procedural/grammars
 orden: 223
 ---
 ```dataviewjs

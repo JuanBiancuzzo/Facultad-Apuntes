@@ -1,9 +1,9 @@
 ---
 dia: 2024-09-15
-estado: 'Sin empezar'
-tags: 
- - índice
- - placa-de-Desarrollo
+estado: Sin empezar
+tags:
+  - índice
+  - investigación/placa-de-Desarrollo
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

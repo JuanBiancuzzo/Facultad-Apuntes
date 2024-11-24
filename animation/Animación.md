@@ -2,8 +2,8 @@
 dia: 2024-07-08
 tags:
   - índice
-  - animation
   - nota/investigacion
+  - investigación/animation
 estado: Estamos avanzando con algunos conceptos, pero todavía falta la mayor parte del conocimiento trandicional o básico
 ---
 ```dataviewjs

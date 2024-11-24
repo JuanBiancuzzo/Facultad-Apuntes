@@ -4,8 +4,8 @@ etapa: ampliar
 referencias:
   - "286"
 tags:
-  - algoritmos
   - nota/investigacion
+  - investigación/algoritmos
 aliases:
   - Tolerancia a faltas bizantinas
 orden: 340

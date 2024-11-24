@@ -5,7 +5,7 @@ referencias:
   - "26"
 tags:
   - nota/investigacion
-  - animation
+  - investigación/animation
 aliases:
   - Procedural pose animation
 orden: 226

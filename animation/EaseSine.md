@@ -5,8 +5,8 @@ orden: 523
 referencias:
   - "611"
 tags:
-  - animation
   - nota/investigacion
+  - investigación/animation
 aliases:
   - EaseInSine
   - EaseOutSine

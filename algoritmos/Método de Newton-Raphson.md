@@ -5,8 +5,8 @@ orden: 396
 referencias:
   - "481"
 tags:
-  - algoritmos
   - nota/investigacion
+  - investigación/algoritmos
 aliases:
   - Método de Newton
   - Newton method

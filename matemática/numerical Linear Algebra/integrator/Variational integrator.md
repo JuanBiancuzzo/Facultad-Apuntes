@@ -5,7 +5,7 @@ referencias:
   - "93"
 tags:
   - nota/investigacion
-  - matemática/numerical-Linear-Algebra/integrator
+  - investigación/matemática/numerical-Linear-Algebra/integrator
 orden: 99
 ---
 ```dataviewjs

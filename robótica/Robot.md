@@ -1,11 +1,11 @@
 ---
 dia: 2024-11-19
-estado: 'Sin empezar'
+estado: Sin empezar
 orden: 503
-tags: 
- - índice
- - robótica
- - nota/investigacion
+tags:
+  - índice
+  - nota/investigacion
+  - investigación/robótica
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

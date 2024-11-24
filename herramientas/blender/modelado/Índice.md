@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - herramientas/blender/modelado
+  - investigación/herramientas/blender/modelado
 estado: Falta resumir
 ---
 ```dataviewjs

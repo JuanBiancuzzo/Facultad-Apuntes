@@ -23,7 +23,7 @@ tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - machine-Learning/sequence-modeling
+  - investigación/machine-Learning/sequence-modeling
 aliases:
   - Phrase2Vec
 orden: 292

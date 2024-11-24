@@ -3,7 +3,7 @@ dia: 2024-07-31
 estado: Sin empezar
 tags:
   - índice
-  - compilador
+  - investigación/compilador
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

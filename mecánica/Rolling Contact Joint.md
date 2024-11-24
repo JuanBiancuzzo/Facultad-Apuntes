@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "265"
 tags:
-  - mecánica
   - nota/investigacion
+  - investigación/mecánica
 orden: 269
 ---
 ```dataviewjs

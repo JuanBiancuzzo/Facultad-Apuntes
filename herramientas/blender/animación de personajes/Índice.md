@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - herramientas/blender/animación-de-personajes
+  - investigación/herramientas/blender/animación-de-personajes
 estado: Falta resumir
 ---
 ```dataviewjs

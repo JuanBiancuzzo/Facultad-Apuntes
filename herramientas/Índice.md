@@ -2,7 +2,7 @@
 dia: 2024-07-15
 tags:
   - índice
-  - herramientas
+  - investigación/herramientas
 estado: Falta resumir
 ---
 ```dataviewjs

@@ -5,8 +5,8 @@ orden: 4
 referencias:
   - "399"
 tags:
-  - matemática/teoría-de-la-información
   - nota/investigacion
+  - investigación/matemática/teoría-de-la-información
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

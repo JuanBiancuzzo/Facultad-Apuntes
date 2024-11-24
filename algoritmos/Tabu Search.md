@@ -5,8 +5,8 @@ orden: 395
 referencias:
   - "480"
 tags:
-  - algoritmos
   - nota/investigacion
+  - investigación/algoritmos
 aliases:
   - Búsqueda tabú
 ---

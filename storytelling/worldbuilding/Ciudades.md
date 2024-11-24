@@ -12,7 +12,7 @@ aliases:
   - Pueblo
 tags:
   - nota/investigacion
-  - storytelling/worldbuilding
+  - investigación/storytelling/worldbuilding
 orden: 69
 ---
 ```dataviewjs

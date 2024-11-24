@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - matemática/continuous-decomposition-of-a-function
+  - investigación/matemática/continuous-decomposition-of-a-function
 estado: Falta resumir
 ---
 ```dataviewjs

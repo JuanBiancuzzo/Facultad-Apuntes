@@ -5,8 +5,8 @@ orden: 420
 referencias:
   - "507"
 tags:
-  - matemática/encoding/lossless-compression-encoding
   - nota/investigacion
+  - investigación/matemática/encoding/lossless-compression-encoding
 aliases:
   - LZSS
 ---

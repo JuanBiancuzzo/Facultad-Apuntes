@@ -4,8 +4,8 @@ estado: Sin empezar
 orden: 412
 tags:
   - índice
-  - herramientas/KiCad
   - nota/investigacion
+  - investigación/herramientas/KiCad
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

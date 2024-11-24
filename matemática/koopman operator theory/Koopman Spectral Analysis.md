@@ -5,7 +5,7 @@ referencias:
   - "169"
 tags:
   - nota/investigacion
-  - matemática/koopman-operator-theory
+  - investigación/matemática/koopman-operator-theory
 orden: 333
 ---
 ```dataviewjs

@@ -21,8 +21,8 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - lenguajes-de-programación/Lenguaje-Python/Pandas
-  - lenguajes-de-programación/Lenguaje-Python/NumPy
+  - investigación/lenguajes-de-programación/Lenguaje-Python/NumPy
+  - investigación/lenguajes-de-programación/Lenguaje-Python/Pandas
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

@@ -2,7 +2,7 @@
 dia: 2024-07-18
 tags:
   - índice
-  - matemática/koopman-operator-theory
+  - investigación/matemática/koopman-operator-theory
 estado: Falta resumir
 ---
 ```dataviewjs

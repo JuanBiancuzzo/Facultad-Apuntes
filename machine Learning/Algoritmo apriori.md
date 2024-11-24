@@ -5,9 +5,9 @@ orden: 409
 referencias:
   - "496"
 tags:
-  - machine-Learning
   - nota/investigacion
-  - algoritmos
+  - investigación/machine-Learning
+  - investigación/algoritmos
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

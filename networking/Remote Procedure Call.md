@@ -5,9 +5,9 @@ referencias:
   - "319"
   - "1"
 tags:
-  - networking
   - nota/investigacion
   - ingeniería-en-informática/tpp
+  - investigación/networking
 aliases:
   - RPC
   - gRPC#gRPC

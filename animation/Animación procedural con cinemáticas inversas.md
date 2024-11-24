@@ -10,7 +10,7 @@ aliases:
   - Animación procedural con IK
 tags:
   - nota/investigacion
-  - animation
+  - investigación/animation
 orden: 161
 ---
 ```dataviewjs

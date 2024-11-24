@@ -3,7 +3,7 @@ dia: 2024-09-15
 estado: Sin empezar
 tags:
   - índice
-  - placa-de-Desarrollo/placa-de-desarrollo-Nucleo-64
+  - investigación/placa-de-Desarrollo/placa-de-desarrollo-Nucleo-64
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

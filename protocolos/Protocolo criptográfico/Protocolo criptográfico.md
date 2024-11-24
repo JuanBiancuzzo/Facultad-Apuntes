@@ -3,8 +3,8 @@ dia: 2024-10-14
 estado: Sin empezar
 tags:
   - índice
-  - protocolos/Protocolo-criptográfico
   - nota/investigacion
+  - investigación/protocolos/Protocolo-criptográfico
 referencias:
   - "350"
 etapa: sin-empezar

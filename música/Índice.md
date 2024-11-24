@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - música
+  - investigación/música
 estado: Falta resumir
 ---
 ```dataviewjs

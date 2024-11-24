@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - física/lagrangian-mechanics
+  - investigación/física/lagrangian-mechanics
 estado: Falta resumir
 ---
 ```dataviewjs

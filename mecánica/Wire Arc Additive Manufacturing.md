@@ -4,8 +4,8 @@ etapa: sin-empezar
 orden: 461
 referencias: 
 tags:
-  - mecánica
   - nota/investigacion
+  - investigación/mecánica
 aliases:
   - WAAM
 ---

@@ -2,7 +2,7 @@
 dia: 2024-07-09
 tags:
   - índice
-  - storytelling/worldbuilding
+  - investigación/storytelling/worldbuilding
 estado: Falta resumir
 aliases:
   - Worldbuilding

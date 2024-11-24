@@ -5,8 +5,8 @@ orden: 398
 referencias:
   - "483"
 tags:
-  - algoritmos
   - nota/investigacion
+  - investigación/algoritmos
 aliases:
   - Optimización por enjambre de partículas
 ---

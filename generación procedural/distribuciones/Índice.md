@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - generación-procedural/distribuciones
+  - investigación/generación-procedural/distribuciones
 estado: Falta resumir
 ---
 ```dataviewjs

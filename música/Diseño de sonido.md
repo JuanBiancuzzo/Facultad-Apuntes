@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "266"
 tags:
-  - música
   - nota/investigacion
+  - investigación/música
 orden: 115
 ---
 ```dataviewjs

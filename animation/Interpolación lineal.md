@@ -6,8 +6,8 @@ referencias:
   - "608"
   - "611"
 tags:
-  - animation
   - nota/investigacion
+  - investigación/animation
 aliases:
   - Linear Interpolation
   - Funciones de suavizado#Funciones de suavizado

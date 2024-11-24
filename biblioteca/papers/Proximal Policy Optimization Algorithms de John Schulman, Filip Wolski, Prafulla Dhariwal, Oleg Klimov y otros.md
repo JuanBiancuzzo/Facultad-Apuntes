@@ -23,8 +23,8 @@ tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - machine-Learning/transformers
-  - algoritmos
+  - investigación/machine-Learning/transformers
+  - investigación/algoritmos
 orden: 360
 aliases:
   - Proximal Policy Optimization Algorithms

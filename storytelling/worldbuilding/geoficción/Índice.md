@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - storytelling/worldbuilding/geoficción
+  - investigación/storytelling/worldbuilding/geoficción
 estado: Falta resumir
 ---
 ```dataviewjs

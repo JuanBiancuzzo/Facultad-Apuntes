@@ -4,8 +4,8 @@ estado: Sin empezar
 orden: 504
 tags:
   - índice
-  - robótica/Soft-Robots
   - nota/investigacion
+  - investigación/robótica/Soft-Robots
 referencias:
   - "584"
 ---

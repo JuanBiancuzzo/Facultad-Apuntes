@@ -8,7 +8,7 @@ aliases:
   - Ciudades en RPG
 tags:
   - nota/investigacion
-  - game-creation
+  - investigación/game-creation
 orden: 61
 ---
 ```dataviewjs

@@ -3,8 +3,8 @@ dia: 2024-09-30
 etapa: sin-empezar
 referencias: 
 tags:
-  - data-structures
   - nota/investigacion
+  - investigación/data-structures
 aliases:
   - Linked list
 orden: 248

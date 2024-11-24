@@ -3,8 +3,8 @@ dia: 2024-10-30
 estado: Sin empezar
 tags:
   - índice
-  - programación-lineal
   - nota/investigacion
+  - investigación/programación-lineal
 aliases:
   - Linear programming
   - LP

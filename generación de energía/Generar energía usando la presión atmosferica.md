@@ -5,7 +5,7 @@ referencias:
   - "218"
 tags:
   - nota/investigacion
-  - generación-de-energía
+  - investigación/generación-de-energía
 orden: 215
 ---
 ```dataviewjs

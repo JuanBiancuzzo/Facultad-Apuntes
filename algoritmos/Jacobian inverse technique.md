@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "320"
 tags:
-  - algoritmos
   - nota/investigacion
+  - investigación/algoritmos
 orden: 275
 ---
 ```dataviewjs

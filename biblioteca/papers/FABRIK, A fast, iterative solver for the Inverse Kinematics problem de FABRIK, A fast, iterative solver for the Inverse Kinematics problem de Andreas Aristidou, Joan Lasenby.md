@@ -17,7 +17,7 @@ tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - algoritmos
+  - investigación/algoritmos
 aliases:
   - FABRIK
   - Forward And Backward Reaching Inverse Kinematics

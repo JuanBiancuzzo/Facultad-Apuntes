@@ -4,8 +4,8 @@ estado: Sin empezar
 orden: 455
 tags:
   - índice
-  - computable
   - nota/investigacion
+  - investigación/computable
 referencias:
   - "543"
 ---

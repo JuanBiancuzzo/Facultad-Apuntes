@@ -3,8 +3,8 @@ dia: 2024-10-17
 estado: Sin empezar
 tags:
   - índice
-  - sistemas-operativos/memory-management
   - nota/investigacion
+  - investigación/sistemas-operativos/memory-management
 referencias:
   - "362"
 etapa: sin-empezar

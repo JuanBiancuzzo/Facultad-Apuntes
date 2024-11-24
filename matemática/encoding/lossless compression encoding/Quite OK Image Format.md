@@ -5,8 +5,8 @@ orden: 417
 referencias:
   - "502"
 tags:
-  - matemática/encoding/lossless-compression-encoding
   - nota/investigacion
+  - investigación/matemática/encoding/lossless-compression-encoding
 aliases:
   - QOI
 ---

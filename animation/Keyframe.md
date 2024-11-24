@@ -5,8 +5,8 @@ referencias:
   - "23"
   - "342"
 tags:
-  - animation
   - nota/investigacion
+  - investigación/animation
 aliases:
   - Curvas de interpolación entre keyframes
   - Fotograma clave

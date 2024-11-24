@@ -5,9 +5,9 @@ orden: 406
 referencias:
   - "493"
 tags:
-  - machine-Learning
   - nota/investigacion
-  - algoritmos
+  - investigación/machine-Learning
+  - investigación/algoritmos
 aliases:
   - DBSCAN
 ---

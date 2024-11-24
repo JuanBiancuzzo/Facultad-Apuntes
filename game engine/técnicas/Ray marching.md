@@ -3,8 +3,8 @@ dia: 2024-10-05
 etapa: sin-empezar
 referencias: 
 tags:
-  - game-engine/técnicas
   - nota/investigacion
+  - investigación/game-engine/técnicas
 orden: 358
 ---
 ```dataviewjs

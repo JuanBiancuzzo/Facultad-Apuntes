@@ -7,7 +7,7 @@ aliases:
   - API Architecture Styles
 tags:
   - nota/investigacion
-  - networking
+  - investigación/networking
 orden: 341
 ---
 ```dataviewjs

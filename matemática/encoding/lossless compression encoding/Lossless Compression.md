@@ -3,8 +3,8 @@ dia: 2024-10-20
 estado: Sin empezar
 tags:
   - índice
-  - matemática/encoding/lossless-compression-encoding
   - nota/investigacion
+  - investigación/matemática/encoding/lossless-compression-encoding
 aliases:
   - Algoritmo de compresión sin pérdida
 referencias:

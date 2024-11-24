@@ -5,7 +5,7 @@ referencias:
   - "131"
 tags:
   - nota/investigacion
-  - data-structures
+  - investigación/data-structures
 orden: 151
 ---
 ```dataviewjs

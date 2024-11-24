@@ -3,9 +3,9 @@ dia: 2024-10-13
 estado: Sin empezar
 tags:
   - índice
-  - lenguajes-de-programación/lenguaje-SQL
   - nota/facultad
   - ingeniería-en-informática/bdd/General
+  - investigación/lenguajes-de-programación/lenguaje-SQL
 aliases:
   - Lenguaje SQL
   - SQL

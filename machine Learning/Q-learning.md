@@ -2,11 +2,11 @@
 dia: 2024-11-11
 etapa: sin-empezar
 orden: 411
-referencias: 
- - "498"
-tags: 
- - machine-Learning
- - nota/investigacion
+referencias:
+  - "498"
+tags:
+  - nota/investigacion
+  - investigación/machine-Learning
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

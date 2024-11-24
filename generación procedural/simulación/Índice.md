@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - generación-procedural/simulación
+  - investigación/generación-procedural/simulación
 estado: Falta resumir
 ---
 ```dataviewjs

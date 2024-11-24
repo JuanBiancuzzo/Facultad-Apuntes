@@ -5,8 +5,8 @@ orden: 456
 referencias:
   - "545"
 tags:
-  - computable
   - nota/investigacion
+  - investigación/computable
 aliases:
   - Informática cuántica
 ---

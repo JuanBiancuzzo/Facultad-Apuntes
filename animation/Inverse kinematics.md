@@ -5,8 +5,8 @@ referencias:
   - "24"
   - "320"
 tags:
-  - animation
   - nota/investigacion
+  - investigación/animation
 aliases:
   - Cinemáticas inversas
   - IK

@@ -4,7 +4,7 @@ estado: Sin empezar
 orden: 418
 tags:
   - índice
-  - herramientas/Comandos-de-linux
+  - investigación/herramientas/Comandos-de-linux
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

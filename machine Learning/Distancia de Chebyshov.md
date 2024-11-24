@@ -5,8 +5,8 @@ orden: 507
 referencias:
   - "586"
 tags:
-  - machine-Learning
   - nota/investigacion
+  - investigación/machine-Learning
 aliases:
   - Métrica máxima
 ---

@@ -5,8 +5,8 @@ orden: 408
 referencias:
   - "495"
 tags:
-  - machine-Learning
   - nota/investigacion
+  - investigación/machine-Learning
 aliases:
   - FP discovery
   - FP mining

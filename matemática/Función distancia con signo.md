@@ -5,8 +5,8 @@ referencias:
   - "274"
   - "275"
 tags:
-  - matemática
   - nota/investigacion
+  - investigación/matemática
 aliases:
   - Signed Distance Function
   - Signed Distance Field

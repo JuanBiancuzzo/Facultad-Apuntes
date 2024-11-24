@@ -8,7 +8,7 @@ aliases:
   - Citar obras religiosas
 tags:
   - nota/investigacion
-  - reglas-APA
+  - investigación/reglas-APA
 orden: 78
 ---
 ```dataviewjs

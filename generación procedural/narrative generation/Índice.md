@@ -2,7 +2,7 @@
 dia: 2024-07-18
 tags:
   - índice
-  - generación-procedural/narrative-generation
+  - investigación/generación-procedural/narrative-generation
 estado: Falta resumir
 ---
 ```dataviewjs

@@ -8,7 +8,7 @@ aliases:
   - Backpropagation
 tags:
   - nota/investigacion
-  - machine-Learning
+  - investigación/machine-Learning
 orden: 247
 ---
 ```dataviewjs

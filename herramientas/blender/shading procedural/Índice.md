@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - herramientas/blender/shading-procedural
+  - investigación/herramientas/blender/shading-procedural
 estado: Falta resumir
 ---
 ```dataviewjs

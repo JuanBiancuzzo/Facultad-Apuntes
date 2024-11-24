@@ -8,7 +8,7 @@ referencias:
   - "53"
 tags:
   - nota/investigacion
-  - storytelling/worldbuilding/geoficción
+  - investigación/storytelling/worldbuilding/geoficción
 orden: 87
 ---
 ```dataviewjs

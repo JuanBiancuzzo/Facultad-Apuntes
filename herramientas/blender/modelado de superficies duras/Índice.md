@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - herramientas/blender/modelado-de-superficies-duras
+  - investigación/herramientas/blender/modelado-de-superficies-duras
 estado: Falta resumir
 ---
 ```dataviewjs

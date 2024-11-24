@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - networking
+  - investigación/networking
 estado: Falta resumir
 ---
 ```dataviewjs

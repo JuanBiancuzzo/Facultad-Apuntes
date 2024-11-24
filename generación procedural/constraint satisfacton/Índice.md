@@ -2,7 +2,7 @@
 dia: 2024-07-13
 tags:
   - índice
-  - generación-procedural/constraint-satisfacton
+  - investigación/generación-procedural/constraint-satisfacton
 estado: Falta resumir
 ---
 ```dataviewjs

@@ -9,7 +9,7 @@ referencias:
   - "301"
 tags:
   - nota/investigacion
-  - game-creation
+  - investigación/game-creation
 orden: 133
 ---
 ```dataviewjs

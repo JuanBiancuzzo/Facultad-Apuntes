@@ -4,8 +4,8 @@ etapa: terminado
 referencias:
   - "343"
 tags:
-  - animation
   - nota/investigacion
+  - investigación/animation
 aliases:
   - Degrees of freedom
   - DOF

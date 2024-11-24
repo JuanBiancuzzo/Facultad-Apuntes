@@ -7,7 +7,7 @@ aliases:
   - Citar un APP
 tags:
   - nota/investigacion
-  - reglas-APA
+  - investigación/reglas-APA
 orden: 18
 ---
 ```dataviewjs

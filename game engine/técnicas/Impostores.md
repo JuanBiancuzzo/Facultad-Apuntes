@@ -7,7 +7,7 @@ aliases:
   - Impostors
 tags:
   - nota/investigacion
-  - game-engine/técnicas
+  - investigación/game-engine/técnicas
 orden: 211
 ---
 ```dataviewjs

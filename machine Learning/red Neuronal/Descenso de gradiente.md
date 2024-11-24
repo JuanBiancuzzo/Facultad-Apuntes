@@ -5,8 +5,8 @@ referencias:
   - "147"
 tags:
   - nota/investigacion
-  - machine-Learning/red-Neuronal
-  - algoritmos
+  - investigación/machine-Learning/red-Neuronal
+  - investigación/algoritmos
 orden: 252
 ---
 ```dataviewjs

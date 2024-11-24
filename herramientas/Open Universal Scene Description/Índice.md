@@ -3,7 +3,7 @@ dia: 2024-08-26
 estado: Sin empezar
 tags:
   - índice
-  - herramientas/Open-Universal-Scene-Description
+  - investigación/herramientas/Open-Universal-Scene-Description
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

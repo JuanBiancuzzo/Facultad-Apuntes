@@ -8,7 +8,7 @@ aliases:
   - Citar disertaciones
 tags:
   - nota/investigacion
-  - reglas-APA
+  - investigación/reglas-APA
 orden: 22
 ---
 ```dataviewjs

@@ -1,9 +1,9 @@
 ---
 dia: 2024-08-11
-estado: 'Sin empezar'
-tags: 
- - índice
- - matemática/group-theory
+estado: Sin empezar
+tags:
+  - índice
+  - investigación/matemática/group-theory
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

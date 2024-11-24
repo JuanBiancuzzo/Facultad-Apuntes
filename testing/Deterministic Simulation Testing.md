@@ -5,8 +5,8 @@ orden: 414
 referencias:
   - "499"
 tags:
-  - testing
   - nota/investigacion
+  - investigación/testing
 aliases:
   - DST
 ---
