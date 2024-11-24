@@ -32,7 +32,7 @@
 			? `${nombreTema.charAt(0).toLowerCase()}${nombreTema.slice(1)}`.trim()
 			: nombreTema;
 
-		let path = (eleccion === CREAR_TEMA) ? nuevoTema : `${eleccion.file.folder}/${nuevoTema}`;
+		let path = (eleccion === CREAR_TEMA) ? `investigación/${nuevoTema}` : `${eleccion.file.folder}/${nuevoTema}`;
 
 		try {
 			await app.vault.createFolder(path);
