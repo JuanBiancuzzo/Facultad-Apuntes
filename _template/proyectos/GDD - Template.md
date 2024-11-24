@@ -19,7 +19,7 @@
 		if (!validar.validarNombre(tp, nuevoProyecto) || proyectos.find(proyecto => proyecto.file.name == nuevoProyecto)) 
 			throw error.Prompt("Nombre invalido");
 
-		let path = nuevoProyecto.toLowerCase();
+		let path = `game design documents/${nuevoProyecto.toLowerCase()}`;
 
 		try {
 			await app.vault.createFolder(path);
