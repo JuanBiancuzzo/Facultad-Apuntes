@@ -4,6 +4,9 @@ tags:
   - ingeniería-en-informática/orga/NLP/2
   - nota/facultad
   - machine-Learning
+  - investigación/machine-Learning/Natural-Language-Processing
+aliases:
+  - GRU
 ---
 # Definición
 ---

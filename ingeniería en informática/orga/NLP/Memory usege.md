@@ -3,6 +3,7 @@ dia: 2023-03-27
 tags:
   - ingeniería-en-informática/orga/NLP/1
   - nota/facultad
+  - investigación/machine-Learning/Natural-Language-Processing
 ---
 # Definición
 ---

@@ -4,7 +4,7 @@ tags:
   - ingeniería-en-informática/sisop/File-system
   - nota/facultad
   - lenguajes-de-programación/lenguaje-c
-algo: Fstat system call
+aliases: Fstat system call
 ---
 # Definición
 ---

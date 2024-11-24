@@ -1,6 +1,6 @@
 ---
 dia: 2024-11-23
-etapa: sin empezaar
+etapa: sin-empezar
 referencias:
   - "628"
 tags:

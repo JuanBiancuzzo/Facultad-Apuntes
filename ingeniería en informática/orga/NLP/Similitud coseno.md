@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/orga/NLP/1
   - nota/facultad
   - machine-Learning
+  - investigación/machine-Learning/Natural-Language-Processing
 aliases:
   - Distancia coseno
 ---
