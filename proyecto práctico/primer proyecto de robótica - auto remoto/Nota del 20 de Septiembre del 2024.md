@@ -1,7 +1,7 @@
 ---
 dia: 2024-09-20
 tags:
-  - primer-proyecto-de-robótica-auto-remoto
+  - proyecto-práctico/primer-proyecto-de-robótica-auto-remoto
   - nota/proyecto
 ---
 # Progreso

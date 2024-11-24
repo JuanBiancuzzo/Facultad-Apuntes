@@ -3,7 +3,7 @@ dia: 2024-08-27
 estado: Sin empezar
 tags:
   - proyecto/práctico
-  - plugins-de-obsidian
+  - proyecto-práctico/plugins-de-obsidian
 ---
 # Propuesta
 ---

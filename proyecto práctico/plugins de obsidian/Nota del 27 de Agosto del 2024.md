@@ -1,7 +1,7 @@
 ---
 dia: 2024-08-27
 tags: 
- - plugins-de-obsidian
+ - proyecto-práctico/plugins-de-obsidian
  - nota/proyecto 
 ---
 # Progreso

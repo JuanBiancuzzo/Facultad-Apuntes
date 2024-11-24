@@ -3,7 +3,7 @@ dia: 2024-10-20
 estado: 'Sin empezar'
 tags: 
  - proyecto/práctico
- - simpler-gui
+ - proyecto-práctico/simpler-gui
 ---
 # Propuesta
 ---

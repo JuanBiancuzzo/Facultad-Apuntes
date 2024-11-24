@@ -3,7 +3,7 @@ dia: 2024-08-27
 estado: Sin empezar
 tags:
   - proyecto/práctico
-  - porfolio
+  - proyecto-práctico/porfolio
 github: https://github.com/JuanBiancuzzo/JuanBiancuzzo
 ---
 # Propuesta

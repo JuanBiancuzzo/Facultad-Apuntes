@@ -3,7 +3,7 @@ dia: 2024-09-05
 estado: Terminado
 tags:
   - proyecto/práctico
-  - primer-proyecto-de-robótica-auto-remoto
+  - proyecto-práctico/primer-proyecto-de-robótica-auto-remoto
 github: https://github.com/JuanBiancuzzo/Auto-control-infrarrojo
 ---
 # Propuesta

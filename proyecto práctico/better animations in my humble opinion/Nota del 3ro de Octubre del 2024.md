@@ -1,7 +1,7 @@
 ---
 dia: 2024-10-03
 tags: 
- - better-animations-in-my-humble-opinion
+ - proyecto-práctico/better-animations-in-my-humble-opinion
  - nota/proyecto 
 ---
 # Progreso

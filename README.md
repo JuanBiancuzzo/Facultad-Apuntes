@@ -7,6 +7,11 @@ Cualquier corrección/ampliación de los contenidos en este proyecto, por favor 
 ## Materias
 ---
 Un listado de materias y su estado dividido por carrera
+- [Ingeniería Electrónica](ingeniería%20electrónica/Ingeniería%20Electrónica.md)
+- [Ingeniería en Informática](ingeniería%20en%20informática/Ingeniería%20en%20Informática.md)
+- [Licenciatura en Ciencias de Datos](licenciatura%20en%20ciencias%20de%20datos/Licenciatura%20en%20Ciencias%20de%20Datos.md)
+- [Licenciatura en Ciencias Físicas](licenciatura%20en%20ciencias%20físicas/Licenciatura%20en%20Ciencias%20Físicas.md)
+- [Licenciatura en Ciencias Matemáticas](licenciatura%20en%20ciencias%20matemáticas/Licenciatura%20en%20Ciencias%20Matemáticas.md)
 
 ### Ingeniería Electrónica
 ---
@@ -143,16 +148,16 @@ Un listado de los proyectos y su estado actual
 ---
 Estos proyectos tienen una aplicación como resultado final
 
-| Proyecto                                                                                                                                                    | Estado                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| [8-bit computer](8-bit%20computer/8-bit%20computer.md)                                                                                                      | Sin empezar                                |
-| [Simpler GUI](simpler%20gui/Simpler%20GUI.md)                                                                                                               | Sin empezar                                |
-| [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)                 | Estamos buscando información sobre el tema |
-| [Primer proyecto de robótica - Auto remoto](primer%20proyecto%20de%20robótica%20-%20auto%20remoto/Primer%20proyecto%20de%20robótica%20-%20Auto%20remoto.md) | Terminado                                  |
-| [Plugins de Obsidian](plugins%20de%20obsidian/Plugins%20de%20Obsidian.md)                                                                                   | Sin empezar                                |
-| [Porfolio](porfolio/Porfolio.md)                                                                                                                            | Sin empezar                                |
-| [Better animations in my humble opinion](better%20animations%20in%20my%20humble%20opinion/Better%20animations%20in%20my%20humble%20opinion.md)              | Sin empezar                                |
-| [Obsidian Static Site Generator](obsidian%20static%20site%20generator/Obsidian%20Static%20Site%20Generator.md)                                              | Recién empezando                           |
+| Proyecto                                                                                                                                                                        | Estado                                     |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| [8-bit computer](proyecto%20práctico/8-bit%20computer/8-bit%20computer.md)                                                                                                      | Sin empezar                                |
+| [Simpler GUI](proyecto%20práctico/simpler%20gui/Simpler%20GUI.md)                                                                                                               | Sin empezar                                |
+| [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)                                     | Estamos buscando información sobre el tema |
+| [Primer proyecto de robótica - Auto remoto](proyecto%20práctico/primer%20proyecto%20de%20robótica%20-%20auto%20remoto/Primer%20proyecto%20de%20robótica%20-%20Auto%20remoto.md) | Terminado                                  |
+| [Plugins de Obsidian](proyecto%20práctico/plugins%20de%20obsidian/Plugins%20de%20Obsidian.md)                                                                                   | Sin empezar                                |
+| [Porfolio](proyecto%20práctico/porfolio/Porfolio.md)                                                                                                                            | Sin empezar                                |
+| [Better animations in my humble opinion](proyecto%20práctico/better%20animations%20in%20my%20humble%20opinion/Better%20animations%20in%20my%20humble%20opinion.md)              | Sin empezar                                |
+| [Obsidian Static Site Generator](proyecto%20práctico/obsidian%20static%20site%20generator/Obsidian%20Static%20Site%20Generator.md)                                              | Recién empezando                           |
 
 ### Proyectos de investigación
 ---

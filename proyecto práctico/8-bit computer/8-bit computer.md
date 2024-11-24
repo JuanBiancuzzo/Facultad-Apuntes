@@ -3,7 +3,7 @@ dia: 2024-11-19
 estado: Sin empezar
 tags:
   - proyecto/práctico
-  - 8-bit-computer
+  - proyecto-práctico/8-bit-computer
 github: https://github.com/JuanBiancuzzo/8-bit-computer
 ---
 # Propuesta

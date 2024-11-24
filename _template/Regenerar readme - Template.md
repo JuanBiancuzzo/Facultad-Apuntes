@@ -7,9 +7,15 @@ Cualquier corrección/ampliación de los contenidos en este proyecto, por favor 
 ## Materias
 ---
 Un listado de materias y su estado dividido por carrera
-
 <%*
     const dv = app.plugins.plugins.dataview.api;
+    tR += dv.markdownList(dv.pages("#carrera")
+        .map(carrera => {
+            let path = carrera.file.path.replaceAll(" ", "%20");
+            return `[${carrera.file.name}](${path})`;
+        }));
+%>
+<%*
     tR += dv.pages("#carrera")
         .sort(carrera => carrera.file.name)
         .map(carrera => {
@@ -23,7 +29,7 @@ Un listado de materias y su estado dividido por carrera
                 let nombre = materia.file.name.trim();
                 if (carrera.tieneCodigo) nombre.replace(`(${materia.codigo})`, "");
                 
-                let path = `${materia.file.path}`.replaceAll(" ", "%20");
+                let path = materia.file.path.replaceAll(" ", "%20");
                 
                 let estado = materia.estado;
                 if (materia.equivalencia) {

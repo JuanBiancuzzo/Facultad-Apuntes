@@ -1,7 +1,7 @@
 ---
 dia: 2024-09-05
 tags: 
- - obsidian-static-site-generator
+ - proyecto-práctico/obsidian-static-site-generator
  - nota/proyecto 
 ---
 # Progreso

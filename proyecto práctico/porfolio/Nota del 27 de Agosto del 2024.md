@@ -1,7 +1,7 @@
 ---
 dia: 2024-08-27
 tags: 
- - porfolio
+ - proyecto-práctico/porfolio
  - nota/proyecto 
 ---
 # Progreso
