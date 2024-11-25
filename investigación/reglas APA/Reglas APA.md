@@ -4,8 +4,6 @@ tags:
   - índice
   - investigación/reglas-APA
 estado: Falta resumir
-aliases:
-  - Reglas APA
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
@@ -13,11 +11,6 @@ await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.c
 # ¿Qué se va a investigar?
 ---
 Se va a investigar las reglas APA que se va a usar para citar cualquier contenido nuevo hecho en esta página
-
-## Resumen
----
-Pendiente...
-
 
 ## Archivos
 ---

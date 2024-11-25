@@ -69,6 +69,9 @@
 
 	let respuesta;
 	let numReferencias = [];
+	if (curso.esOnline) {
+		numReferencias.push(1); // Modificar para citar un curso online
+	}
 	while (referenciasResumen.length > 0) {
 		respuesta = await preguntar.suggester(
 			tp, [...referenciasMostrar, "Salir"], [...referenciasResumen, SALIR],

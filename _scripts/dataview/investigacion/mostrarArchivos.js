@@ -1,13 +1,13 @@
 const { indice } = input;
 
-if (!curso) {
+if (!indice) {
     dv.paragraph("No esta cargando - Recargar");
     return;
 }
 
-let tagRepresentante = obtenerTag(curso);
+let tagRepresentante = obtenerTag(indice);
 
-let nivelActual = curso.file.folder.split("/").length;
+let nivelActual = indice.file.folder.split("/").length;
 let subTemas = dv.pages(`#${tagRepresentante} and #índice`)
     .filter(ind => ind.file.folder.split("/").length == nivelActual + 1);
 

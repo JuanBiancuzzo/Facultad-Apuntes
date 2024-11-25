@@ -20,6 +20,7 @@
     "links": "multitext",
     "correlativas": "multitext",
     "planes": "multitext",
-    "tieneCodigo": "checkbox"
+    "tieneCodigo": "checkbox",
+    "esOnline": "checkbox"
   }
 }
