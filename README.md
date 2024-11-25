@@ -179,8 +179,9 @@ Estos proyectos tienen como objetivo crear un GDD y mostrar el desarrollo del ju
 ---
 Estos son los cursos que vaya haciendo
 
-| Curso | Estado |
-| ----- | ------ |
+| Curso                                                                                                                                                                                    | Estado      |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| [Ciencia de datos para salud mental y psicología](cursos/ciencia%20de%20datos%20para%20salud%20mental%20y%20psicología/Ciencia%20de%20datos%20para%20salud%20mental%20y%20psicología.md) | Sin empezar |
 
 
 ### Proyectos de recolección

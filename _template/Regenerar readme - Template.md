@@ -136,7 +136,12 @@ Estos son los cursos que vaya haciendo
     proyectos = dv.pages("#proyecto/curso")
         .sort(curso => curso.dia, direction="desc");
     
-    tR += dv.markdownTable(["Curso", "Estado"], []);
+    tR += dv.markdownTable(["Curso", "Estado"], proyectos.map(curso => {
+        let nombre = curso.file.name.trim();
+        let path = `${curso.file.path}`.replaceAll(" ", "%20");
+        
+        return [ `[${nombre}](${path})`, curso.estado ];
+    }));
 %>
 
 ### Proyectos de recolección
