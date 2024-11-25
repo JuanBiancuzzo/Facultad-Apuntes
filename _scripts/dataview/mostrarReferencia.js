@@ -13,6 +13,10 @@ const MESES = [
     "Diciembre"
 ];
 
+const { referencias } = input;
+
+dv.el("div", referencias.map(({ archivo, num }) => mostrarCita(archivo, num)).join(""));
+
 function mostrarCita(archivo, num) {
     let tipoCita = archivo.tipoCita;
 
@@ -25,12 +29,11 @@ function mostrarCita(archivo, num) {
         case "Paper": texto = mostrarCitaPaper(archivo); break;
     }
 
-    const ref = `<p id="ref-${num}" style="margin-right: 0.5em">[${num}]</p>`;
-    const divStyle = "display:flex; flex-direction: row;";
-    return `<div style="${divStyle}"> ${ref} <p> ${texto} </p> </div>`;
+    return `<div style="display: flex; flex-direction: row;">
+        <p id="ref-${num}" style="margin-right: 0.5em"> [${num}] </p>
+        <p> ${texto} </p>
+    </div>`;
 }
-
-exports.mostrarCita = mostrarCita;
 
 function mostrarNombreAutores(autores) {
     let resultado = [];

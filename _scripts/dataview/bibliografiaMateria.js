@@ -1,5 +1,3 @@
-const citaView = require(app.vault.adapter.basePath + "/_scripts/dataview/investigacion/citaView.js");
-
 const { materia } = input;
 
 if (!materia) {
@@ -45,12 +43,8 @@ if (referenciasTema.length > 0) {
         .filter(ref => referenciasTema.indexOf(ref.num) >= 0)
         .sort(ref => ref.num);
 
-    let resultado = "";
-    for (let { archivo, num } of referencias) {
-        resultado += citaView.mostrarCita(archivo, num);
-    }
+    await dv.view("_scripts/dataview/mostrarReferencia", { referencias: referencias });
 
-    dv.el("div", resultado);
 } else {
     dv.el("p", "No hay referencias para este tema");
 }
