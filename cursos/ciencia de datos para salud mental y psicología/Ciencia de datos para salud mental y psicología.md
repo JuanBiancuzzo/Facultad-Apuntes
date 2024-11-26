@@ -25,7 +25,7 @@ Mientras que los ejemplos serán predominantemente de psicología y salud mental
 ## Archivos
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/proyectos/mostrarArchivosCurso", { curso: dv.current() });
+	await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
 ```
 
 
