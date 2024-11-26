@@ -3,6 +3,9 @@ dia: 2023-08-09
 tags:
   - ingeniería-en-informática/orga/Machine-learning
   - nota/facultad
+aliases:
+  - Validación cruzada
+  - k-fold cross validation
 ---
 # Definición
 ---

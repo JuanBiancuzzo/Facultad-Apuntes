@@ -5,8 +5,8 @@ tags:
   - nota/facultad
   - ingeniería-electrónica/circuitos/Fuentes-de-corriente-y-circuitos-con-cargas-activas
 aliases:
-  - Espejo de corriente
-  - Fuente espejo
+  - Espejo de corriente simple
+  - Fuente espejo simple
 ---
 # Definición
 ---

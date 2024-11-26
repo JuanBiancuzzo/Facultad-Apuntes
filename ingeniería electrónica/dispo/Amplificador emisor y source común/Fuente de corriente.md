@@ -3,6 +3,7 @@ dia: 2023-01-23
 tags:
   - ingeniería-electrónica/dispo/Amplificador-emisor-y-source-común
   - nota/facultad
+  - ingeniería-electrónica/circuitos/Fuentes-de-corriente-y-circuitos-con-cargas-activas
 ---
 # Definición
 ---
@@ -52,4 +53,9 @@ Características
 
 ## Copia de corriente
 ---
-Se puede generar una fuente usando el [[Circuito eléctrico|circuito]] que se llama [[Copia de corriente espejo simple|copia de corriente espejo]] ![[Copia de corriente espejo simple#Definición]]
+Se puede generar una fuente usando el [[Circuito eléctrico|circuito]] que se llama copia de corriente espejo
+* [[Copia de corriente espejo simple|Fuente espejo simple]]
+    * [[Copia de corriente espejo simple#Con ganancia de corriente|Fuente espejo con ganancia de corriente]]
+* [[Fuente Widlar|Fuente Widlar]]
+* [[Fuente Wilson|Fuente Wilson]]
+* [[Fuente Cascode|Fuente Cascode]]

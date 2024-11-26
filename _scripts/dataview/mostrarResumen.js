@@ -1,18 +1,29 @@
 let { resumen } = input;
 
-if (!curso) {
+const PAPER = "Paper";
+const LIBRO = "Libro";
+
+if (!resumen) {
     dv.paragraph("No esta cargando - Recargar");
     return;
 }
 
-let tagRepresentante = curso.file.folder.replaceAll(" ", "-").replaceAll(",", "");
+let tagRepresentante = resumen.file.folder.replaceAll(" ", "-").replaceAll(",", "");
 let archivos = dv.pages(`#${tagRepresentante} and -#resumen`)
     .flatMap(archivo => {
         let resultado = [];
         let aliasesActual = archivo.aliases ? archivo.aliases : [];
+
+        let nombre = archivo.file.name;
+        if (archivo.tipoCita == PAPER) {
+            nombre = archivo.tituloInforme;
+        } else if (archivo.tipoCita == LIBRO) {
+            nombre = `${archivo.tituloObra}: ${archivo.subtituloObra}`;
+        }
+
         resultado.push({
             path: archivo.file.path,
-            nombre: archivo.file.name,
+            nombre: nombre,
             aliases: aliasesActual.filter(alias => !alias.includes("#")),
             etapa: archivo.etapa,
         });

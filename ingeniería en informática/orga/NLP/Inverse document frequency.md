@@ -4,6 +4,9 @@ tags:
   - ingeniería-en-informática/orga/NLP/1
   - nota/facultad
   - investigación/machine-Learning/Natural-Language-Processing
+  - cursos/ciencia-de-datos-para-salud-mental-y-psicología
+aliases:
+  - IDF
 ---
 # Definición
 ---

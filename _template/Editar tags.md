@@ -63,7 +63,7 @@
 
                     opcion = await preguntar.suggester(
                         tp, nombreTema, dv.pages(query)
-                            .filter(tema => tema.file.folder.split("/").length == indice + 1)
+                            .filter(tema => tema.file.folder.split("/").length == indice + 2)
                             .sort(nombreTema), 
                         "De que tema investigación se quiere agregar el tag",
                         error.Nada("No se ingresó el tema de investigacion")
@@ -223,7 +223,7 @@
 
             let subtemasUltimo = dv.pages(`#índice and "${carpetaUltimo}"`);
 
-            if (subtemasUltimo.length > 1) {
+            if (subtemasUltimo.length > 2) {
                 opciones.push(PREGUNTAR_TEMA);
                 valores.push(`Agregar subtema de ${nombreTema(ultimo)}`);
             }

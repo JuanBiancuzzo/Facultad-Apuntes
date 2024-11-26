@@ -1,5 +1,8 @@
 let { materia } = input;
 
+const PAPER = "Paper";
+const LIBRO = "Libro";
+
 if (!materia) {
     dv.paragraph("No esta cargando - Recargar");
     return;
@@ -19,9 +22,17 @@ let datos = dv.pages(`#${carpeta.replaceAll(" ", "-")} and #resumen`)
             .flatMap(archivo => {
                 let resultado = [];
                 let aliasesActual = archivo.aliases ? archivo.aliases : [];
+
+                let nombre = archivo.file.name;
+                if (archivo.tipoCita == PAPER) {
+                    nombre = archivo.tituloInforme;
+                } else if (archivo.tipoCita == LIBRO) {
+                    nombre = `${archivo.tituloObra}: ${archivo.subtituloObra}`;
+                }
+
                 resultado.push({
                     path: archivo.file.path,
-                    nombre: archivo.file.name,
+                    nombre: nombre,
                     aliases: aliasesActual.filter(alias => !alias.includes("#")),
                     etapa: archivo.etapa,
                 });

@@ -1,5 +1,8 @@
 const { indice } = input;
 
+const PAPER = "Paper";
+const LIBRO = "Libro";
+
 if (!indice) {
     dv.paragraph("No esta cargando - Recargar");
     return;
@@ -27,9 +30,16 @@ let archivos = dv.pages(`#${tagRepresentante} and (#nota/investigacion or #nota/
         for (let tag of tags) {
             let etapa = esIndice ? conseguirEtapa(archivo) : archivo.etapa;
 
+            let nombre = archivo.file.name;
+            if (archivo.tipoCita == PAPER) {
+                nombre = archivo.tituloInforme;
+            } else if (archivo.tipoCita == LIBRO) {
+                nombre = `${archivo.tituloObra}: ${archivo.subtituloObra}`;
+            }
+
             resultado.push({
                 path: esIndice ? `${archivo.file.path}#Resumen` : archivo.file.path,
-                nombre: archivo.file.name,
+                nombre: nombre,
                 tag: tag,
                 etapa: etapa,
                 aliases: aliasesActual

@@ -1,0 +1,36 @@
+---
+dia: 2024-11-24
+etapa: sin-empezar
+tipoCita: Libro
+numReferencia: 632
+tituloObra: Statistical Thinking for the 21st Century
+subtituloObra: 
+nombreAutores:
+  - apellido: Poldrack
+    nombre: Russell A.
+anio: "2018"
+editorial: Stanford University
+edicion: 
+volumen: 
+url: 
+capitulos: 
+cover: Statistical Thinking for the 21st Century de Russell A. Poldrack.png
+aliases: 
+orden: 552
+tags:
+  - referencia/libro
+  - biblioteca/libro
+  - nota/investigacion
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
+# Resumen
+---
+```dataviewjs
+	let actual = dv.current();
+	await dv.view("_scripts/dataview/libro/mostrarCapitulos", { libro: actual, capitulos: actual?.capitulos });
+```
+
+
+ 

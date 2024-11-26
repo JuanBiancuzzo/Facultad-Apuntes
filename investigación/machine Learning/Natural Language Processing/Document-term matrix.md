@@ -1,0 +1,25 @@
+---
+dia: 2024-11-25
+etapa: ampliar
+orden: 560
+referencias:
+  - "633"
+tags:
+  - investigación/machine-Learning/Natural-Language-Processing
+  - nota/investigacion
+  - cursos/ciencia-de-datos-para-salud-mental-y-psicología
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
+# Definición
+---
+Es una [[Matriz|matriz]] que describe la frecuencia de un termino que aparece en un documento en una colección
+
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```

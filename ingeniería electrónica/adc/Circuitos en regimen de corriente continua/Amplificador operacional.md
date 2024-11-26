@@ -4,8 +4,10 @@ tags:
   - ingeniería-electrónica/adc/Circuitos-en-regimen-de-corriente-continua
   - nota/facultad
   - ingeniería-en-informática/adc/Circuitos-en-regimen-de-corriente-continua
+  - ingeniería-electrónica/circuitos/Amplificadores-diferenciales
 aliases:
   - Amplificador
+  - OPAMP
 ---
 # Definición
 ---

@@ -1,26 +1,25 @@
 ---
-dia: 2024-11-24
+dia: 2024-11-25
 estado: Sin empezar
-orden: 549
+orden: 559
 tags:
   - índice
-  - investigación/machine-Learning/Natural-Language-Processing
+  - investigación/machine-Learning/Deep-Learning
   - nota/investigacion
-  - cursos/ciencia-de-datos-para-salud-mental-y-psicología
-  - ingeniería-en-informática/orga/NLP/1
-aliases:
-  - NLP
+  - ingeniería-en-informática/orga/Machine-learning
+  - investigación/machine-Learning
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
-Vamos a investigar como se puede procesar el lenguaje natural
+Vamos a ver la rama de [[Machine learning|machine learning]] que ve redes neuronales profundas
 
 ## Resumen
 ---
-Es el procesamiento de texto intentando extraer algún contenido contextual, como sentimientos, reconocimiento de características del texto. También se puede crear texto original
+Es una [[Red neuronal|red neuronal]] que tiene varias capas de [[Neurona|neuronas]]
+
 
 ## Archivos
 ---
