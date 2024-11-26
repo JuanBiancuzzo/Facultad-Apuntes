@@ -1,8 +1,8 @@
 ---
-capitulo: 4
+capitulo: 7
 tags:
   - resumen/curso
-  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Generative-AI-and-large-language-models
+  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Mechine-Learning-Causal
 ---
 # Índice
 ---

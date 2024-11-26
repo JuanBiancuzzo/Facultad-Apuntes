@@ -6,7 +6,7 @@ tags:
   - índice
   - investigación/machine-Learning/Natural-Language-Processing
   - nota/investigacion
-  - cursos/ciencia-de-datos-para-salud-mental-y-psicología
+  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/psicometría
   - ingeniería-en-informática/orga/NLP/1
 aliases:
   - NLP

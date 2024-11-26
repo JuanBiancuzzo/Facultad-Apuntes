@@ -4,7 +4,7 @@ tags:
   - índice
   - nota/investigacion
   - investigación/machine-Learning
-  - cursos/ciencia-de-datos-para-salud-mental-y-psicología
+  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/psicometría
 aliases:
   - AI
 estado: Falta resumir
