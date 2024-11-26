@@ -12,7 +12,11 @@ await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 
 # Resumen
 ---
-%% Prendiente... %%
+* Qué son los [[Constructo psicológico|constructos psicológicos]] que estudiamos
+- Cómo validar la [[Medición|medición]] de constructos psicológicos 
+- Debates sobre nosología y clasificación de trastornos psicológicos 
+- Network analysis transversal y temporal
+- Nuevas direcciones en [[Psicometría|psicometría]]
 
 # Bibliografía
 ---

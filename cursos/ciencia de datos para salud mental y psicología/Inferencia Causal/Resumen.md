@@ -1,18 +1,19 @@
 ---
-capitulo: 6
+capitulo: 7
 tags:
-  - resumen/curso
   - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Inferencia-Causal
+  - resumen/curso
 ---
 # Índice
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+    await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 ```
 
 # Resumen
 ---
-%% Prendiente... %%
+- Descubrimiento de gráficos causales automáticamente desde datos observacionales (qué relaciones causales son más probables en datos observacionales)
+- Cómo saber si un tipo de exposición (una pelea) causó un resultado (un intento de suicidio) en un caso único
 
 # Bibliografía
 ---

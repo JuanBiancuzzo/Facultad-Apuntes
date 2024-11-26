@@ -4,6 +4,9 @@
 	const mantenerOrden = tp.user.mantenerOrden();
 	const tArchivo = tp.file.find_tfile(tp.file.path(true));
 
+	const REFERENCIA_TEMPLATE = tp.file.find_tfile("_template/investigacion/Referencia - Template.md")
+	const ETAPA_TEMPLATE = tp.file.find_tfile("_template/investigacion/Etapa - Template.md")
+
 	const DEJAR_CITAR = "cita rapida";
 	const NUEVA_CITA = "nueva cita";
 	const SALIR = "salir";
@@ -15,15 +18,55 @@
 	}
 	
 	let carpeta = tp.file.folder(true);
-	let posiblesCursos = dv.pages(`"${carpeta}" and #proyecto/curso`)
-		.filter(pagina => pagina.file.folder == carpeta);
 
-	if (posiblesCursos.length == 0) {
-		new Notice("No hay cursos");
-		return;
+	let directorios = carpeta.split("/");
+	let posiblesCursos = [];
+	let opcionCursos;
+	for (let i = 1; i <= directorios.length; i++) {
+		let opcionCursos = dv.pages(`"${directorios.slice(0, i).join("/")}" and #proyecto/curso`);
+		if (opcionCursos.length > 0) posiblesCursos = opcionCursos;
 	}
-	let curso = posiblesCursos[0];
-	let tag = curso.file.folder.trim().replaceAll(",", "").replaceAll(" ", "-");
+		
+	let cursos = posiblesCursos.sort(materia => materia.file.name);
+	let curso;
+	switch (cursos.length) {
+		case 0: throw error.Quit("No es una nota posible");
+		case 1: curso = cursos[0]; break;
+		default:
+			curso = await preguntar.suggester(
+				tp, curso => curso.file.name, cursos,
+				"Que materia se incluye esta nota?",
+				error.Prompt("No se eligió una materia para la nota")
+			);
+			break;
+	}
+
+	let carpetaResumen = curso.file.folder;
+	if (carpeta.startsWith(carpetaResumen)) carpetaResumen = carpeta;
+	let resumenes = dv.pages(`"${carpetaResumen}" and #resumen/curso`)
+		.sort(resumen => resumen.capitulo);
+		
+	let resumen;
+	switch (resumenes.length) {
+		case 0: throw error.Quit("No es una nota posible");
+		case 1: resumen = resumenes[0]; break;
+		default:
+			resumen = await preguntar.suggester(
+				tp, resumen => {
+					let repre = `${resumen.file.folder.split("/").pop()}`;
+					if (resumen.multiple) 
+						repre += `, Parte ${resumen.parte}`;
+					return repre;
+				}, 
+				resumenes, 
+				"Que tema se incluye esta nota?",
+				error.Prompt("No se eligió un tema para la nota")
+			);
+			
+			break;
+	}
+	
+	let tag = resumen.file.folder.trim().replaceAll(",", "").replaceAll(" ", "-");
 
 	let paginaHecha = tp.file.find_tfile(titulo);
 	if (paginaHecha && paginaHecha.stat.ctime != tArchivo.stat.ctime) {
@@ -98,17 +141,16 @@
 		referencias: numReferencias,
 		tags: [tag, "nota/investigacion"]
 	});
-	tR += "---";
-%>
-```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
-```
+	tR += "---\n";
+	tR += await app.vault.read(ETAPA_TEMPLATE);
+	tR += "\n";
+_%>
 # Definición
 ---
 <% tp.file.cursor() %>
+
 <%*
 if (numReferencias.length > 0) {
-	tR += "\n\n\n";
-	tR += await tp.file.include("[[Referencia - Template]]");
+	tR += await app.vault.read(REFERENCIA_TEMPLATE);
 }
 %>

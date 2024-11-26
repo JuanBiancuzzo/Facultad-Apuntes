@@ -1,5 +1,5 @@
 ---
-capitulo: 7
+capitulo: 9
 tags:
   - resumen/curso
   - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Mechine-Learning-Causal

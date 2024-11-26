@@ -12,7 +12,8 @@ await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 
 # Resumen
 ---
-%% Prendiente... %%
+- Breve introducción a la estadística inferencial y al machine learning
+- Asociación vs. explicación vs. predicción ¿Cuándo buscar cada una y por qué? ¿Qué hacer con muestras pequeñas?
 
 # Bibliografía
 ---

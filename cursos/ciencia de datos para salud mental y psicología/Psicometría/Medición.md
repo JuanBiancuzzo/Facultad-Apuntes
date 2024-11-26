@@ -4,7 +4,7 @@ etapa: empezado
 orden: 557
 referencias: 
 tags:
-  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/psicometría
+  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Machine-Learning
   - nota/investigacion
 ---
 ```dataviewjs
