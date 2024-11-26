@@ -5,9 +5,12 @@
   "matchEndOfWords": false,
   "matchBeginningOfWords": false,
   "suppressSuffixForSubWords": false,
-  "includeAllFiles": true,
+  "includeAllFiles": false,
   "linkerDirectories": [
-    "Glossary"
+    "biblioteca",
+    "impresion 3d",
+    "recetas",
+    "componentes"
   ],
   "excludedDirectories": [
     "_template"
@@ -28,7 +31,7 @@
   "propertyNameToMatchCase": "linker-match-case",
   "propertyNameToIgnoreCase": "linker-ignore-case",
   "tagToExcludeFile": "linker-exclude",
-  "tagToIncludeFile": "linker-include",
+  "tagToIncludeFile": "nota",
   "excludeLinksToOwnNote": true,
   "fixIMEProblem": false,
   "excludeLinksInCurrentLine": false,

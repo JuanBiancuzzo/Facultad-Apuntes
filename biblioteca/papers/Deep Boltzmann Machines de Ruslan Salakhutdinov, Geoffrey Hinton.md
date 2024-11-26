@@ -1,0 +1,30 @@
+---
+dia: 2024-11-26
+etapa: sin-empezar
+tipoCita: Paper
+numReferencia: 634
+autores:
+  - apellido: Salakhutdinov
+    nombre: Ruslan
+  - apellido: Hinton
+    nombre: Geoffrey
+tituloInforme: Deep Boltzmann Machines
+numeroInforme: 
+anio: "2009"
+editores: 
+url: https://proceedings.mlr.press/v5/salakhutdinov09a.html
+orden: 561
+tags:
+  - referencia/paper
+  - biblioteca/paper
+  - nota/investigacion
+  - investigación/machine-Learning/Deep-Learning
+aliases:
+  - Deep Boltzmann Machines
+  - DBM
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
+# Resumen
+---

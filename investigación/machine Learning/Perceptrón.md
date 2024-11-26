@@ -6,7 +6,9 @@ referencias:
   - "488"
 tags:
   - nota/investigacion
-  - investigación/machine-Learning
+  - investigación/machine-Learning/red-Neuronal
+aliases:
+  - Perceptron
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

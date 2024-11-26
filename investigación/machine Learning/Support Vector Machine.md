@@ -1,7 +1,8 @@
 ---
 dia: 2024-09-30
 etapa: sin-empezar
-referencias: 
+referencias:
+  - "640"
 tags:
   - nota/investigacion
   - investigación/machine-Learning
@@ -15,3 +16,11 @@ orden: 131
 # Definición
 ---
 
+
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```

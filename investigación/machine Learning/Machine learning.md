@@ -27,26 +27,17 @@ Bootstrapping
 
 Machine learning
 * Deep learning
-    * Deep Boltzmann Machine (DBM)
-    * Deep Belief Networks (DBN)
-    * Convolutional Neural Network (CNN)
-    * Stacked Auto-Encoders
 * Ensemble
-    * Random Forest
-    * Gradient Boosting Machines (GBM)
     * Boosting
     * Bootstrapped Aggregation (Bagging)
     * AdaBoost
     * Stacked Generalization (Blending)
     * Gradient Boosted Regression Trees (BGRT)
 * Neural networks
-    * Perceptron
-    * Back-Propagation
     * Hopfield Network
 * Regularization
-    * Ridge Regression
-    * Least Absolute Shrinkage and Selection Operator (LASSO)
     * Elastic Net
+    * Penalización Ridge
     * Least Angle Regression (LARS)
 * Rule System
     * Cubist

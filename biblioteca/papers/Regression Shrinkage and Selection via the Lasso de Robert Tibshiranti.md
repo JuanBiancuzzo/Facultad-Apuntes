@@ -1,0 +1,43 @@
+---
+dia: 2024-11-26
+etapa: empezado
+tipoCita: Paper
+numReferencia: 641
+autores:
+  - apellido: Tibshiranti
+    nombre: Robert
+tituloInforme: Regression Shrinkage and Selection via the Lasso
+numeroInforme: 
+anio: "1995"
+editores: 
+url: https://www.jstor.org/stable/2346178
+orden: 567
+tags:
+  - referencia/paper
+  - biblioteca/paper
+  - nota/investigacion
+  - investigación/machine-Learning/Regularization
+  - ingeniería-en-informática/orga/Machine-learning
+aliases:
+  - Least Absolute Shrinkage and Selection Operator
+  - LASSO
+  - L1 Regularization
+  - Lasso Regression
+  - Penalización Lasso
+  - Penalización L1
+referencias:
+  - "492"
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
+# Resumen
+---
+Es una técnica de [[Regularization|regularización]] definida por $$ loss_{L1}(y, \hat{y}) = loss(y, \hat{y}) + \alpha \cdot \sum_k |w_k| $$ donde $w_k$ son los pesos del modelo
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```

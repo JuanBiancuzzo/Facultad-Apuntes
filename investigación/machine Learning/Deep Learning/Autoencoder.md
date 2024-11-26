@@ -1,19 +1,18 @@
 ---
-dia: 2024-11-10
-etapa: empezado
+dia: 2024-11-26
+etapa: sin-empezar
+orden: 564
 referencias:
-  - "492"
+  - "638"
 tags:
-  - ingeniería-en-informática/orga/Machine-learning
-  - nota/facultad
-  - investigación/machine-Learning/Regularization
+  - investigación/machine-Learning/Deep-Learning
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
-
 
 
 

@@ -6,9 +6,10 @@ referencias:
   - "150"
 aliases:
   - Backpropagation
+  - Back-Propagation
 tags:
   - nota/investigacion
-  - investigación/machine-Learning
+  - investigación/machine-Learning/red-Neuronal
 orden: 247
 ---
 ```dataviewjs
