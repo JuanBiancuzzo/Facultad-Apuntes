@@ -2,7 +2,7 @@
 capitulo: 2
 tags: 
  - ingeniería-en-informática/sisop/La-abstracción-de-proceso
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

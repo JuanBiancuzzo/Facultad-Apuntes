@@ -2,7 +2,7 @@
 capitulo: 2
 tags: 
  - ingeniería-electrónica/legal/Obligaciones
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

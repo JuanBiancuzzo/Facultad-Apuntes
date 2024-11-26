@@ -2,7 +2,7 @@
 capitulo: 7
 tags:
   - ingeniería-en-informática/proba/Proceso-de-Bernoulli
-  - resumen
+  - resumen/materia
   - ingeniería-electrónica/proba/Proceso-de-Bernoulli
 ---
 # Índice 

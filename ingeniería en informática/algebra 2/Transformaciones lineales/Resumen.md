@@ -2,7 +2,7 @@
 capitulo: 2
 tags:
   - ingeniería-en-informática/algebra-2/Transformaciones-lineales
-  - resumen
+  - resumen/materia
   - ingeniería-electrónica/algebra-2/Transformaciones-lineales
 ---
 # Índice 

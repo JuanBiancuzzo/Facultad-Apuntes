@@ -2,7 +2,7 @@
 capitulo: 2
 tags: 
  - ingeniería-electrónica/electro/Campo-electromagnético
- - resumen
+ - resumen/materia
 ---
 # Índice
 ---

@@ -2,7 +2,7 @@
 capitulo: 1
 tags: 
  - licenciatura-en-ciencias-físicas/fisica-1/Cinemática-del-punto
- - resumen
+ - resumen/materia
 ---
 # Índice
 ---

@@ -2,7 +2,7 @@
 capitulo: 4
 tags:
   - ingeniería-en-informática/estructura/Diseño-combinacional
-  - resumen
+  - resumen/materia
   - ingeniería-electrónica/estructura/Diseño-combinacional
 ---
 # Índice 

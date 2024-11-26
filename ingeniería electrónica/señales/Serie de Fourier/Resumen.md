@@ -2,7 +2,7 @@
 capitulo: 3
 tags: 
  - ingeniería-electrónica/señales/Serie-de-Fourier
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

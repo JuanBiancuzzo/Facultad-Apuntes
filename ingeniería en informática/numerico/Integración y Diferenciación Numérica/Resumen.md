@@ -2,7 +2,7 @@
 capitulo: 5
 tags:
   - ingeniería-en-informática/numerico/Integración-y-Diferenciación-Numérica
-  - resumen
+  - resumen/materia
   - ingeniería-electrónica/numerico/Integración-y-Diferenciación-Numérica
 ---
 # Índice 

@@ -2,7 +2,7 @@
 capitulo: 8
 tags: 
  - ingeniería-electrónica/señales/Filtros-digitales
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

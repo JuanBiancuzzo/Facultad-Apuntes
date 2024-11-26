@@ -21,7 +21,6 @@ Mientras que los ejemplos serán predominantemente de psicología y salud mental
 ---
 
 
-
 ## Archivos
 ---
 ```dataviewjs

@@ -2,7 +2,7 @@
 capitulo: 4
 tags: 
  - ingeniería-electrónica/intro/Respuesta-en-frecuencia
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

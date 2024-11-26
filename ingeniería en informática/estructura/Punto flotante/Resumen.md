@@ -2,7 +2,7 @@
 capitulo: 2
 tags:
   - ingeniería-en-informática/estructura/Punto-flotante
-  - resumen
+  - resumen/materia
   - ingeniería-electrónica/estructura/Punto-flotante
 ---
 # Índice 

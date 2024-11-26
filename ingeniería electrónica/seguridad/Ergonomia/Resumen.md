@@ -2,7 +2,7 @@
 capitulo: 15
 tags: 
  - ingeniería-electrónica/seguridad/Ergonomia
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

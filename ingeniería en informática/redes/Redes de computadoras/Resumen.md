@@ -2,7 +2,7 @@
 capitulo: 1
 tags:
   - ingeniería-en-informática/redes/Redes-de-computadoras
-  - resumen
+  - resumen/materia
   - ingeniería-electrónica/redes/Redes-de-computadoras
 referencias:
   - "589"

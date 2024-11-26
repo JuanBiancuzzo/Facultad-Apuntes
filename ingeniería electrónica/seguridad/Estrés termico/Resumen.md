@@ -2,7 +2,7 @@
 capitulo: 5
 tags: 
  - ingeniería-electrónica/seguridad/Estrés-termico
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

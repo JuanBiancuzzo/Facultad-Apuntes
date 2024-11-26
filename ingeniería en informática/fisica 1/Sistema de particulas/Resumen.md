@@ -2,7 +2,7 @@
 capitulo: 3
 tags:
   - ingeniería-en-informática/fisica-1/Sistema-de-particulas
-  - resumen
+  - resumen/materia
   - ingeniería-electrónica/fisica-1/Sistema-de-particulas
 ---
 # Índice 

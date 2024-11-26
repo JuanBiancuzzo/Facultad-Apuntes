@@ -2,7 +2,7 @@
 capitulo: 5
 tags:
   - licenciatura-en-ciencias-matemáticas/algebra-1/Polinomios-con-coeficientes-en-un-cuerpo
-  - resumen
+  - resumen/materia
   - licenciatura-en-ciencias-de-datos/algebra-1/Polinomios-con-coeficientes-en-un-cuerpo
 referencias:
   - "417"

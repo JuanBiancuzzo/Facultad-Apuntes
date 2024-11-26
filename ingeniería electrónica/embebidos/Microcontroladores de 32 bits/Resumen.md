@@ -2,7 +2,7 @@
 capitulo: 2
 tags:
   - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
-  - resumen
+  - resumen/materia
 referencias:
   - "465"
 ---

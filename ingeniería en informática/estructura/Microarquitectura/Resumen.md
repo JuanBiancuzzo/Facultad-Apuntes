@@ -2,7 +2,7 @@
 capitulo: 10
 tags:
   - ingeniería-en-informática/estructura/Microarquitectura
-  - resumen
+  - resumen/materia
   - ingeniería-electrónica/estructura/Microarquitectura
 ---
 # Índice

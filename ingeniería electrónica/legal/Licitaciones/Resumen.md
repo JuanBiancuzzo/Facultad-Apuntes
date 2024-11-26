@@ -2,7 +2,7 @@
 capitulo: 4
 tags: 
  - ingeniería-electrónica/legal/Licitaciones
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

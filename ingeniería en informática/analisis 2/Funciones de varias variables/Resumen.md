@@ -2,7 +2,7 @@
 capitulo: 4
 tags:
   - ingeniería-en-informática/analisis-2/Funciones-de-varias-variables
-  - resumen
+  - resumen/materia
   - ingeniería-electrónica/analisis-2/Funciones-de-varias-variables
 ---
 # Índice

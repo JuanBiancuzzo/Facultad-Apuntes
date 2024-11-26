@@ -2,7 +2,7 @@
 capitulo: 9
 tags:
   - ingeniería-en-informática/estructura/Compiladores-y-ensambladores
-  - resumen
+  - resumen/materia
   - ingeniería-electrónica/estructura/Compiladores-y-ensambladores
 ---
 # Índice

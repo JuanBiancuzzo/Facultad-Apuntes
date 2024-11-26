@@ -2,7 +2,7 @@
 capitulo: 5
 tags: 
  - ingeniería-en-informática/discreta/Autómatas
- - resumen
+ - resumen/materia
 ---
 # Índice
 ---

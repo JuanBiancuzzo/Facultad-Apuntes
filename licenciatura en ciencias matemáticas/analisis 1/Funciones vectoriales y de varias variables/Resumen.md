@@ -2,7 +2,7 @@
 capitulo: 3
 tags:
   - licenciatura-en-ciencias-matemáticas/analisis-1/Funciones-vectoriales-y-de-varias-variables
-  - resumen
+  - resumen/materia
   - licenciatura-en-ciencias-de-datos/analisis-1/Funciones-vectoriales-y-de-varias-variables
   - licenciatura-en-ciencias-físicas/analisis-1/Funciones-vectoriales-y-de-varias-variables
 referencias:

@@ -2,7 +2,7 @@
 capitulo: 5
 tags:
   - ingeniería-en-informática/proba/Variables-aleatorias-condicionadas
-  - resumen
+  - resumen/materia
   - ingeniería-electrónica/proba/Variables-aleatorias-condicionadas
 ---
 # Índice 

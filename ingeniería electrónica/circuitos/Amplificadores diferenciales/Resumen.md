@@ -2,7 +2,7 @@
 capitulo: 5
 tags:
   - ingeniería-electrónica/circuitos/Amplificadores-diferenciales
-  - resumen
+  - resumen/materia
 referencias:
   - "435"
   - "446"

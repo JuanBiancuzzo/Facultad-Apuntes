@@ -2,7 +2,7 @@
 capitulo: 5
 tags: 
  - ingeniería-electrónica/señales/Muestreo-e-Interpolación
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

@@ -2,7 +2,7 @@
 capitulo: 4
 tags:
   - ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
-  - resumen
+  - resumen/materia
 referencias:
   - "467"
   - "471"

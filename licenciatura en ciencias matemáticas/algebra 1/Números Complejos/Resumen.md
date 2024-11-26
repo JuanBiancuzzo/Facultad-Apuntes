@@ -2,7 +2,7 @@
 capitulo: 4
 tags:
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-Complejos
-  - resumen
+  - resumen/materia
   - licenciatura-en-ciencias-de-datos/algebra-1/Números-Complejos
 referencias:
   - "416"

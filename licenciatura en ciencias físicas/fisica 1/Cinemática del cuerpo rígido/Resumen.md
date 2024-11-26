@@ -2,7 +2,7 @@
 capitulo: 10
 tags: 
  - licenciatura-en-ciencias-físicas/fisica-1/Cinemática-del-cuerpo-rígido
- - resumen
+ - resumen/materia
 ---
 # Índice
 ---

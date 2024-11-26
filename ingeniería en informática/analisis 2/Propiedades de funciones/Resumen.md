@@ -2,7 +2,7 @@
 capitulo: 3
 tags:
   - ingeniería-en-informática/analisis-2/Propiedades-de-funciones
-  - resumen
+  - resumen/materia
   - ingeniería-electrónica/analisis-2/Propiedades-de-funciones
 ---
 # Índice

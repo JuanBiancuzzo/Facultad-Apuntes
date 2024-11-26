@@ -2,7 +2,7 @@
 capitulo: 4
 tags: 
  - ingeniería-en-informática/sisop/Scheduling
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

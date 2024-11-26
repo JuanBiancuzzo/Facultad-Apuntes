@@ -2,7 +2,7 @@
 capitulo: 2
 tags:
   - ingeniería-en-informática/algo-1/Lenguaje-C
-  - resumen
+  - resumen/materia
   - ingeniería-electrónica/algo-1/Lenguaje-C
 ---
 # Índice 

@@ -2,7 +2,7 @@
 capitulo: 12
 tags: 
  - ingeniería-en-informática/aninfo/Peopleware
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

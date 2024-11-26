@@ -2,7 +2,7 @@
 capitulo: 1
 tags:
   - ingeniería-en-informática/proba/Teoría-de-probabilidades
-  - resumen
+  - resumen/materia
   - ingeniería-electrónica/proba/Teoría-de-probabilidades
 ---
 # Índice 

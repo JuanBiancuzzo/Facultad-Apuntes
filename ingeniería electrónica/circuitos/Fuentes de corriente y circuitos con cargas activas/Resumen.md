@@ -2,7 +2,7 @@
 capitulo: 6
 tags:
   - ingeniería-electrónica/circuitos/Fuentes-de-corriente-y-circuitos-con-cargas-activas
-  - resumen
+  - resumen/materia
 referencias:
   - "435"
   - "436"

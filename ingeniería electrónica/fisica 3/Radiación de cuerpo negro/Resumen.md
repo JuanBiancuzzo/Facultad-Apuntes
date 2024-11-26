@@ -2,7 +2,7 @@
 capitulo: 2
 tags:
   - ingeniería-electrónica/fisica-3/Radiación-de-cuerpo-negro
-  - resumen
+  - resumen/materia
   - ingeniería-en-informática/fisica-3/Radiación-de-cuerpo-negro
 ---
 # Índice 

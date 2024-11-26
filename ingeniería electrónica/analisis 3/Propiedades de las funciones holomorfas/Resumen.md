@@ -2,7 +2,7 @@
 capitulo: 6
 tags:
   - ingeniería-electrónica/analisis-3/Propiedades-de-las-funciones-holomorfas
-  - resumen
+  - resumen/materia
   - ingeniería-en-informática/analisis-3/Propiedades-de-las-funciones-holomorfas
 ---
 # Índice 

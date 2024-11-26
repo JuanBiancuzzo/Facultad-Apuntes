@@ -2,7 +2,7 @@
 capitulo: 3
 tags: 
  - ingeniería-en-informática/sisop/Virtualización-de-memoria
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

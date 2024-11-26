@@ -2,7 +2,7 @@
 capitulo: 8
 tags: 
  - ingeniería-electrónica/dispo/Dispositivos-de-potencia
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

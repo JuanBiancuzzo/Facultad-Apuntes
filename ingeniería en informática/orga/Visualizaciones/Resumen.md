@@ -2,7 +2,7 @@
 capitulo: 2
 tags: 
  - ingeniería-en-informática/orga/Visualizaciones
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

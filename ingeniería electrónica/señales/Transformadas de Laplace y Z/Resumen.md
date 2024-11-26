@@ -2,7 +2,7 @@
 capitulo: 7
 tags: 
  - ingeniería-electrónica/señales/Transformadas-de-Laplace-y-Z
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

@@ -2,7 +2,7 @@
 capitulo: 5
 tags:
   - ingeniería-electrónica/adc/Respuesta-en-frecuencia
-  - resumen
+  - resumen/materia
   - ingeniería-en-informática/adc/Respuesta-en-frecuencia
 ---
 # Índice 

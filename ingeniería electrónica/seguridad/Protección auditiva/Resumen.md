@@ -2,7 +2,7 @@
 capitulo: 4
 tags: 
  - ingeniería-electrónica/seguridad/Protección-auditiva
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

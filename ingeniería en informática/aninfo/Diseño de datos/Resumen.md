@@ -2,7 +2,7 @@
 capitulo: 10
 tags: 
  - ingeniería-en-informática/aninfo/Diseño-de-datos
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

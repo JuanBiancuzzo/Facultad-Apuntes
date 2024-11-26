@@ -2,7 +2,7 @@
 capitulo: 1
 tags:
   - ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
-  - resumen
+  - resumen/materia
 ---
 # Índice
 ---

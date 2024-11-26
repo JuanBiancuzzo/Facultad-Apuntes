@@ -2,7 +2,7 @@
 capitulo: 6
 tags: 
  - ingeniería-electrónica/intro/Multimetro
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

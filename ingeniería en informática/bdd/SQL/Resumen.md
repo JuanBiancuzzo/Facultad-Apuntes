@@ -2,7 +2,7 @@
 capitulo: 2
 tags: 
  - ingeniería-en-informática/bdd/SQL
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

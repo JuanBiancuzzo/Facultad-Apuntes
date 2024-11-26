@@ -2,7 +2,7 @@
 capitulo: 8
 tags:
   - ingeniería-en-informática/fisica-1/Optica-geométrica
-  - resumen
+  - resumen/materia
   - ingeniería-electrónica/fisica-1/Optica-geométrica
 ---
 # Índice 

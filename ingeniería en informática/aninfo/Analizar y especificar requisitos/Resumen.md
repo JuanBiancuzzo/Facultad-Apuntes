@@ -2,7 +2,7 @@
 capitulo: 4
 tags: 
  - ingeniería-en-informática/aninfo/Analizar-y-especificar-requisitos
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

@@ -2,7 +2,7 @@
 capitulo: 6
 tags: 
  - ingeniería-electrónica/dispo/Transistor-MOSFET
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

@@ -2,7 +2,7 @@
 capitulo: 6
 tags: 
  - ingeniería-electrónica/seguridad/Riesgo-eléctrico-y-radiación
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

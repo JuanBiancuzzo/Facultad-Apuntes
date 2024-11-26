@@ -2,7 +2,7 @@
 capitulo: 5
 tags: 
  - ingeniería-en-informática/aninfo/Verificación-y-validación
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

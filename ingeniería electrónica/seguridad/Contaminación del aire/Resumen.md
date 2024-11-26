@@ -2,7 +2,7 @@
 capitulo: 13
 tags: 
  - ingeniería-electrónica/seguridad/Contaminación-del-aire
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

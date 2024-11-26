@@ -2,7 +2,7 @@
 capitulo: 3
 tags: 
  - ingeniería-electrónica/dispo/Diodo-de-Juntura-PN
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

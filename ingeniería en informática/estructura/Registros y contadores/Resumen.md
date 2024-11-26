@@ -2,7 +2,7 @@
 capitulo: 7
 tags:
   - ingeniería-en-informática/estructura/Registros-y-contadores
-  - resumen
+  - resumen/materia
   - ingeniería-electrónica/estructura/Registros-y-contadores
 ---
 # Índice 

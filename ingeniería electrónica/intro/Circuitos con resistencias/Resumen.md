@@ -2,7 +2,7 @@
 capitulo: 1
 tags: 
  - ingeniería-electrónica/intro/Circuitos-con-resistencias
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

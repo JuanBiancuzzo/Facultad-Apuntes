@@ -2,7 +2,7 @@
 capitulo: 3
 tags: 
  - ingeniería-electrónica/legal/Contratos
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

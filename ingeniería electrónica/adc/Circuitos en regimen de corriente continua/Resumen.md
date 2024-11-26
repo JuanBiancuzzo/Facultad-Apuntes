@@ -2,7 +2,7 @@
 capitulo: 1
 tags:
   - ingeniería-electrónica/adc/Circuitos-en-regimen-de-corriente-continua
-  - resumen
+  - resumen/materia
   - ingeniería-en-informática/adc/Circuitos-en-regimen-de-corriente-continua
 ---
 # Índice 

@@ -2,7 +2,7 @@
 capitulo: 8
 tags: 
  - ingeniería-electrónica/legal/Derechos-comerciales-y-sociales
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

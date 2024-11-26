@@ -2,7 +2,7 @@
 capitulo: 4
 tags:
   - ingeniería-electrónica/analisis-3/Funciones-elementales
-  - resumen
+  - resumen/materia
   - ingeniería-en-informática/analisis-3/Funciones-elementales
 ---
 # Índice 

@@ -2,7 +2,7 @@
 capitulo: 5
 tags: 
  - ingeniería-electrónica/legal/Derecho-laboral
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

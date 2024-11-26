@@ -2,7 +2,7 @@
 capitulo: 3
 tags: 
  - ingeniería-electrónica/embebidos/Memorias
- - resumen
+ - resumen/materia
 ---
 # Índice
 ---

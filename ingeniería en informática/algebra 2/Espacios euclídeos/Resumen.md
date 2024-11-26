@@ -2,7 +2,7 @@
 capitulo: 3
 tags:
   - ingeniería-en-informática/algebra-2/Espacios-euclídeos
-  - resumen
+  - resumen/materia
   - ingeniería-electrónica/algebra-2/Espacios-euclídeos
 ---
 # Índice 

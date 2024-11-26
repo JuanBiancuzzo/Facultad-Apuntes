@@ -2,7 +2,7 @@
 capitulo: 4
 tags: 
  - ingeniería-electrónica/señales/Transformada-de-Fourier
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

@@ -2,7 +2,7 @@
 capitulo: 2
 tags: 
  - ingeniería-electrónica/seguridad/Contaminación-del-ambiente-laboral
- - resumen
+ - resumen/materia
 ---
 # Índice 
 ---

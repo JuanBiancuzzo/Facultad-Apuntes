@@ -2,7 +2,7 @@
 capitulo: 16
 tags:
   - ingeniería-electrónica/analisis-3/Transformada-de-Laplace
-  - resumen
+  - resumen/materia
   - ingeniería-en-informática/analisis-3/Transformada-de-Laplace
 ---
 # Índice 

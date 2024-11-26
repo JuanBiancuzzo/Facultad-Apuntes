@@ -2,7 +2,7 @@
 capitulo: 2
 tags:
   - licenciatura-en-ciencias-matemáticas/analisis-1/Curvas-y-Superficies-paramétricas
-  - resumen
+  - resumen/materia
   - licenciatura-en-ciencias-de-datos/analisis-1/Curvas-y-Superficies-paramétricas
   - licenciatura-en-ciencias-físicas/analisis-1/Curvas-y-Superficies-paramétricas
 referencias:
