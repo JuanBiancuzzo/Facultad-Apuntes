@@ -4,7 +4,7 @@ tags:
   - índice
   - nota/investigacion
   - investigación/machine-Learning
-  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/psicometría
+  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Machine-learning-deep-learning-e-interpretabilidad-algorítmica
 aliases:
   - AI
 estado: Falta resumir
