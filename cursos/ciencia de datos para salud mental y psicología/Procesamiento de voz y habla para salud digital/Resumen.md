@@ -1,13 +1,13 @@
 ---
-capitulo: 10
+capitulo: 6
 tags:
+  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Procesamiento-de-voz-y-habla-para-salud-digital
   - resumen/curso
-  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Procesamiento-digital-de-señales-acústicas
 ---
 # Índice
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+    await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
 ```
 
 # Resumen

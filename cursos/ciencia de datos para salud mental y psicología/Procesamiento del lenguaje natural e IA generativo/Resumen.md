@@ -1,7 +1,7 @@
 ---
-capitulo: 4
+capitulo: 3
 tags:
-  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Generative-AI-and-large-language-models
+  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Procesamiento-del-lenguaje-natural-e-IA-generativo
   - resumen/curso
 ---
 # Índice
@@ -18,8 +18,7 @@ tags:
 - Psicometría textual (text psychometrics): problemas especiales con la medición de constructos psicológicos en texto 
 - Consideraciones con la predicción de fenómenos de baja frecuencia (e.g., riesgo suicida), de base de datos no balanceadas.
 - Predicción longitudinal en machine learning
-- Una métrica más importante que la sensibilidad (recall) y la especificidad (specificity): análisis de costo-beneficio de usar modelo para intervenciones de salud.
-
+- Una métrica más importante que la sensibilidad (recall) y la especificidad (specificity): análisis de costo-beneficio de usar modelo para intervenciones de salud
 
 # Bibliografía
 ---

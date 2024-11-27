@@ -1,7 +1,7 @@
 ---
-capitulo: 7
+capitulo: 4
 tags:
-  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Inferencia-Causal
+  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Inferencia-causal-y-machine-learning-causal
   - resumen/curso
 ---
 # Índice
@@ -14,6 +14,7 @@ tags:
 ---
 - Descubrimiento de gráficos causales automáticamente desde datos observacionales (qué relaciones causales son más probables en datos observacionales)
 - Cómo saber si un tipo de exposición (una pelea) causó un resultado (un intento de suicidio) en un caso único
+
 
 # Bibliografía
 ---

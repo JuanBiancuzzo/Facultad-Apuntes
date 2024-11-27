@@ -7,7 +7,7 @@ referencias:
 tags:
   - investigación/machine-Learning/Natural-Language-Processing
   - nota/investigacion
-  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/NLP
+  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Machine-learning-deep-learning-e-interpretabilidad-algorítmica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
