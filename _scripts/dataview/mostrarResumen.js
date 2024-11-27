@@ -9,6 +9,9 @@ if (!resumen) {
 }
 
 let tagRepresentante = resumen.file.folder.replaceAll(" ", "-").replaceAll(",", "");
+if (resumen.parte) {
+    tagRepresentante += `/${resumen.parte}`;
+}
 let archivos = dv.pages(`#${tagRepresentante} and -#resumen`)
     .flatMap(archivo => {
         let resultado = [];

@@ -17,10 +17,6 @@ Se introducirán métodos de procesamiento de [[Natural Language Processing|leng
 
 Mientras que los ejemplos serán predominantemente de psicología y salud mental, en general será fácil aplicar los métodos a otras disciplinas como neurología, epidemiología, ciencias sociales, lingüística, fonoaudiología, econometría, educación y humanidades digitales
 
-## Resumen
----
-
-
 ## Archivos
 ---
 ```dataviewjs
