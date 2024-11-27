@@ -179,7 +179,7 @@ tags:
 
 ## Capítulo 13: Amplificadores Operacionales. Conceptos básicos
 ---
-
+* Características principales para señal de un amplificador operacional ideal de tensión
 
 ## Capítulo 14: Análisis de la ganancia de lazo en los amplificadores realimentados
 ---
