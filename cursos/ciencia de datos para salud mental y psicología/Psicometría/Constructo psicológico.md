@@ -2,7 +2,8 @@
 dia: 2024-11-25
 etapa: empezado
 orden: 555
-referencias: 
+referencias:
+  - "645"
 tags:
   - cursos/ciencia-de-datos-para-salud-mental-y-psicología/psicometría
   - nota/investigacion
@@ -26,3 +27,10 @@ Se puede entender psicológico construido, definidos por humanos, mutables y no 
 * Red bayesiana
     * Grafo acíclico dirigido
     * Red bayesiana dinámica
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```

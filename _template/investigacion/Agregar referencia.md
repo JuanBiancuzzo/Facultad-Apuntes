@@ -63,7 +63,7 @@ try {
         referenciasFinal = await sacarReferencia(tArchivo, numReferencia);
     }
 
-    if (!archivo.tags.some(tag => tag == "índice" || tag == "resumen" || tag.includes("materia") || tag == "proyecto/curso")) {
+    if (!archivo.tags.some(tag => tag == "índice" || tag.startsWith("resumen") || tag.includes("materia") || tag.startsWith("proyecto/curso"))) {
 
         await app.fileManager.processFrontMatter(tArchivo, (frontmatter) => {
             if (!frontmatter["etapa"]) {
