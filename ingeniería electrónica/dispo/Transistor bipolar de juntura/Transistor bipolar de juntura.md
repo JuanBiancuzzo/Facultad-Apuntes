@@ -93,7 +93,7 @@ Donde tenemos, por construcción $$ N_{dE} > N_{aB} > N_{dC} $$
 			
 			\draw (0, 0.9) -- ++(0, -1.8);
 
-			\draw[->] (0, 0.3) -- ++(0.6, 0.5)
+			\draw[<-, shorten <= 0.1cm] (0, 0.3) -- ++(0.6, 0.5)
 				node (temp) {};
 			\draw (temp.center) -- ++(0, {2 - 0.5})
 					node[above=2pt] {E};

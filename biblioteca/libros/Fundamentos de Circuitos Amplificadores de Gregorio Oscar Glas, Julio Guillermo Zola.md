@@ -172,7 +172,10 @@ tags:
 
 ## Capítulo 12: Amplificadores diferenciales con cargas activas
 ---
-
+* Análisis de las condiciones de reposo del amplificador diferencial con [[Carga Activa Espejo (CAE)|Carga Activa Espejo]]
+* Análisis cualitativo de pequeña señal
+* Análisis para señal de entrada de modo diferencial pura
+* Análisis para señal de entrada de modo común pura
 
 ## Capítulo 13: Amplificadores Operacionales. Conceptos básicos
 ---
