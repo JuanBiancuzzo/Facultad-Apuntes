@@ -3,6 +3,8 @@ dia: 2024-05-08
 tags:
   - ingeniería-electrónica/circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
   - nota/facultad
+aliases:
+  - Realimentación por relación de corrientes
 ---
 # Definición
 ---

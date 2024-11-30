@@ -183,5 +183,6 @@ tags:
 
 ## Capítulo 14: Análisis de la ganancia de lazo en los amplificadores realimentados
 ---
-
+* Calculo de la transferencia del realimentador
+* Calculo de $|T|$ abriendo el lazo de realimentación
 

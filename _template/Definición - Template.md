@@ -64,7 +64,7 @@
 	}
 	
 	let dia = tp.file.creation_date("YYYY-MM-DD");
-	let tagsResumen = resumen.tags.filter(tag => tag != "resumen");
+	let tagsResumen = resumen.tags.filter(tag => !tag.startsWith("resumen"));
 	
 	let paginaHecha = tp.file.find_tfile(titulo);
 	if (paginaHecha && paginaHecha.stat.ctime != tArchivo.stat.ctime) {

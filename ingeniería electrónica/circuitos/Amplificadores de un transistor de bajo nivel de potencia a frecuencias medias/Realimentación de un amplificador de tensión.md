@@ -3,7 +3,15 @@ dia: 2024-05-08
 tags:
   - ingeniería-electrónica/circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
   - nota/facultad
+referencias:
+  - "431"
+etapa: empezado
+aliases:
+  - Realimentación por relación de tensiones
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Este [[Amplificador de tensión|amplificador de tensión]], al realimentarlo, podemos pensarlo como muestreo de [[Tensión|tensión]] y suma de tensión. Esto lo podemos ver con el siguiente modelo
@@ -115,8 +123,13 @@ $R_i \to \infty$
 
 ## Modelo ideal realimentación
 ---
-$R_{ri} \to \infty$
-* Para que se pueda medir exactamente toda la tensión $v_o$
+El bloque realimentador $k$ posee una [[Impedancia|impedancia]] de entrada tal que "no carga" al amplificador básico, al ser conectado a la salida de éste para formar el lazo de realimentación, es decir, no toma potencia de $A_{vo}$
 
- $R_{ro} \to 0$ 
- * Para que no existan caídas de tensión sobre la resistencia de salida del amplificador
+Esto significa que el bloque realimentador presentará una impedancia de entrada infinita, por lo que el amplificador $A_{vo}$ "verá" la misma carga $R_L$ con o sin el bloque $k$ conectado $$ R_{ri} \to \infty $$
+
+Análogamente la salida de la red $k$ conectada a la entrada del amplificador en serie con el generador de excitación $v_s$, tendrá una impedancia de salida nula, de modo de no agregar una caída de tensión adicional a la entrada que afectaría el valor de la tensión realimentada $v_f$, en el caso de existir corriente por la malla de entrada $$ R_{ro} \to 0 $$
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```
