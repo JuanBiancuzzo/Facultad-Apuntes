@@ -332,7 +332,7 @@
   "devMode": false,
   "templateFolderPath": "_template",
   "announceUpdates": true,
-  "version": "1.11.4",
+  "version": "1.11.5",
   "disableOnlineFeatures": true,
   "enableRibbonIcon": false,
   "ai": {

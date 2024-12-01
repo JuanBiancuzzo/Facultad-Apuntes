@@ -1,10 +1,15 @@
 ---
-dia: 2024-11-23
+dia: 2024-11-30
 etapa: empezado
-referencias: []
+referencias:
+  - "435"
 tags:
   - ingeniería-electrónica/circuitos/Amplificadores-diferenciales
   - nota/facultad
+aliases:
+  - RRMC
+  - Common Mode Rejection Ratio
+  - CMRR
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
@@ -13,3 +18,8 @@ tags:
 ---
 
 
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```
