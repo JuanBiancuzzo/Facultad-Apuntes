@@ -199,5 +199,6 @@ Estos proyectos se basan en recolectar información distinto de un tema de inves
 ## Contribuidores
 ---
 * Juan Ignacio Biancuzzo
+* Sofia Javes
 * Felipe Perassi
 * Rocio Nicole Heredia Piñon

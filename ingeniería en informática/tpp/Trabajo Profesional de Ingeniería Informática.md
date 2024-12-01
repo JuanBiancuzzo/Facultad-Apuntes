@@ -13,6 +13,7 @@ correlativas:
 ---
 # Propuesta
 ---
+Este trabajo profesional lo voy a hacer con Sofia Javes
 
 # Presentar
 ---
