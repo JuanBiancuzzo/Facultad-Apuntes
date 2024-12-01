@@ -4,3 +4,4 @@ Vamos a registrar y guardar la info de data sheets y curvas de comportamiento de
 * Step motor 28BYJ-48
 * Servo
 * VS1838B
+* 555 timer IC
