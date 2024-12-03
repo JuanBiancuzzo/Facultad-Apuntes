@@ -9,6 +9,7 @@ aliases:
   - Data structures
 referencias:
   - "353"
+  - "553"
 etapa: sin-empezar
 orden: 72
 ---

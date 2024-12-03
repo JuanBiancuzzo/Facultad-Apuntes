@@ -21,8 +21,6 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - investigación/algoritmos
-  - investigación/data-structures
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

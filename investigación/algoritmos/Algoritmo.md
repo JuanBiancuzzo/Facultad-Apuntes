@@ -9,6 +9,8 @@ tags:
   - ingeniería-electrónica/algo-1/Introducción-a-la-programación
   - investigación/algoritmos
 orden: 17
+referencias:
+  - "553"
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

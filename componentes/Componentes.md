@@ -5,3 +5,4 @@ Vamos a registrar y guardar la info de data sheets y curvas de comportamiento de
 * Servo
 * VS1838B
 * 555 timer IC
+* W65C02S - 8-bit microprocessor
