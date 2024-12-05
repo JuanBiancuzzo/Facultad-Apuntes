@@ -46,7 +46,7 @@ Veamos un ejemplo con [[Transistor bipolar de juntura|TBJ]] de tipo [[Transistor
 
 ![[Copia de corriente espejo simple con un TBJ.webp]]
 
-En este caso, la relación de corriente ($I_{out} / I_{REF}$) se da por la relación de áreas entre los TBJ ($A_2 / A_1$) $$ \begin{matrix}
+En este caso, la relación de corriente ($I_{out} / I_{REF}$) se da por la relación de áreas entre los TBJ $(A_2 / A_1)$ $$ \begin{matrix}
 	V_{BE1} = V_{BE2} \implies J_{C1} = J_{C2} \\
 	I_{REF} = - (I_{C1} + I_{B1} + I_{B2})
 \end{matrix} $$
@@ -55,3 +55,79 @@ En [[Modo activo directo del transistor bipolar de juntura|MAD]] $I_C = \beta I_
 	\displaystyle I_C = A ~ J_C \implies I_{C1} = A_1 ~ \frac{I_{C2}}{A_2} \\ 
 	\displaystyle \implies I_{OUT} = - I_{C2} = \frac{I_{REF}}{\frac{A_1}{A_2} + \frac{1}{\beta} ~ \frac{A_1}{A_2} + \frac{1}{\beta}} \approx \frac{A_2}{A_1} ~ I_{REF}
 \end{matrix} $$
+
+
+```tikz
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usepackage{ifthen}
+
+\tikzset{
+	pics/Server/.style={
+	    code={
+		    \tikzmath{
+			    \bajada=0.4;
+			    \largo=0.75;
+		    }
+		    
+			\draw[rounded corners=2pt] (-\largo, {-\bajada / 2}) 
+				rectangle ++({2 * \largo}, \bajada);
+				
+			\draw[rounded corners=2pt] (-\largo, {\bajada / 2}) 
+				rectangle ++({2 * \largo}, \bajada);
+			\draw[rounded corners=2pt] (-\largo, {-\bajada / 2}) 
+				rectangle ++({2 * \largo}, -\bajada);
+			
+		}
+	},
+    pics/Router/.style args={#1}{
+	    code={
+		    \tikzmath{
+			    \indentacion=0.3;
+			    \bajada=0.4;
+			    \cantidad=#1;
+			    \largo=0.75;
+			    \alto=\bajada * \cantidad;
+		    }
+
+			\coordinate (top) at (0, {\alto / 2});
+		    
+		    \draw (top) ellipse ({\largo} and {\indentacion});
+		    \draw (top) -- ++({ 0.7 * \largo}, { 0.35 * \indentacion});
+		    \draw (top) -- ++({ 0.7 * \largo}, {-0.35 * \indentacion});
+		    \draw (top) -- ++({-0.7 * \largo}, { 0.35 * \indentacion});
+		    \draw (top) -- ++({-0.7 * \largo}, {-0.35 * \indentacion});
+
+			\foreach \y in {1, ..., \cantidad} {
+				\draw ($ (top) + (\largo, {-\bajada * \y}) $)
+					arc (0:-180:{\largo} and {\indentacion});
+			}
+
+			\draw (-\largo, {-\alto / 2}) -- ++(0, \alto);
+			\draw ( \largo, {-\alto / 2}) -- ++(0, \alto);
+			
+			\node[align=center] (-above) 
+				at (0, {\alto / 2 + \indentacion}) {};
+			
+			\node[align=center] (-below) 
+				at (0, {-\alto / 2 - \indentacion}) {};
+				
+			\node[align=center] (-left) 
+				at (-\largo, 0) {};
+				
+			\node[align=center] (-right) 
+				at ( \largo, 0) {};
+	    }
+	},
+	pics/Router/.default={1}
+}
+
+\begin{document}
+	\begin{tikzpicture}[scale=1, transform shape, thick]
+		\draw pic (r1) at (0, 0) {Router={5}};
+		\draw pic (s1) at (3, 0) {Server};
+			
+	\end{tikzpicture}
+\end{document}
+```

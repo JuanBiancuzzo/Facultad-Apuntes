@@ -289,15 +289,15 @@ El [[Transistor]] tiene 3 regímenes de operación
 
 ## Características del MOSFET con $V_{BS} \ne 0~V$
 ---
-Hay un cuarto terminal en los MOSFET, el body o bulk. Este terminal es especialmente importante en los [[Circuito eléctrico|circuitos]] integrados.
+Hay un cuarto terminal en los MOSFET, el body o bulk. Este terminal es especialmente importante en los [[Circuito eléctrico|circuitos]] integrados
 
-El contacto de Body permite la aplicación de una polarización al body respecto de la capa de [[Inversión de la estructura Metal-Óxido-Semiconductor|inversión]].
+El contacto de Body permite la aplicación de una polarización al body respecto de la capa de [[Inversión de la estructura Metal-Óxido-Semiconductor|inversión]]
 
-Para un n-MOSFET, $V_{BS}$ puede ser únicamente negativa para asegurar que la [[Juntura PN]] entre Source y Bulk esté en [[Diodo de Juntura PN#Para $V_D < 0$ (en Convención de signos para la tensión de polarización Polarización inversa inversa )|inversa]].
+Para un n-MOSFET, $V_{BS}$ puede ser únicamente negativa para asegurar que la [[Juntura PN]] entre Source y Bulk esté en [[Diodo de Juntura PN#Para $V_D < 0$ (en Convención de signos para la tensión de polarización Polarización inversa inversa )|inversa]]
 
-Suponiendo a la juntura MOS en inversión analizaremos el caso $V_{BS} = 0$ y luego observaremos que ocurre cuando se aplica una $V_{BS} < 0$. Asumiremos que no circula [[Corriente eléctrica|corriente]] de Drain.
+Suponiendo a la juntura MOS en inversión analizaremos el caso $V_{BS} = 0$ y luego observaremos que ocurre cuando se aplica una $V_{BS} < 0$. Asumiremos que no circula [[Corriente eléctrica|corriente]] de Drain
 
-Al modificar $V_{BS}$ cambian las condiciones de contorno del lado del [[Semiconductor]]
+Al modificar $V_{BS}$ cambian las condiciones de contorno del lado del [[Semiconductor|semiconductor]]
 
 ### Densidad de [[Carga eléctrica|carga]]
 ---

@@ -1,8 +1,9 @@
 ---
 dia: 2024-07-15
-etapa: ampliar
+etapa: empezado
 referencias:
   - "156"
+  - "691"
 aliases:
   - GDD
 tags:
