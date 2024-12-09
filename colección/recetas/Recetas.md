@@ -1,7 +1,8 @@
 ---
 dia: 2024-07-29
 tags:
-  - proyecto/recetas
+  - colección/recetas
+estado: Todavía no tiene nada pero la idea es agregar recetas y explorar los aspectos de nutrición que pueden aparecer
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

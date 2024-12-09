@@ -1,7 +1,8 @@
 ---
 dia: 2024-07-12
 tags:
-  - proyecto/biblioteca
+  - colección/biblioteca
+estado: Tiene la intención de colectar libros, papers, etc. que me interese analizar relacionado a todo el contexto de esta página y poder referenciarla
 ---
 # ¿Qué se va a investigar?
 ---
