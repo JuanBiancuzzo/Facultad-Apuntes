@@ -6,7 +6,7 @@ tags:
 ---
 # Definición
 ---
-El bar [[Plot]] es parecido al [[Histograma]] pero donde la [[Distribución discreta|distribución es discreta]] para le eje x.
+El bar [[Plot|plot]] es parecido al [[Histograma|histograma]] pero donde la [[Distribución discreta|distribución es discreta]] para le eje x.
 
 ```tikz
 \usepackage{pgfplots}
@@ -48,4 +48,4 @@ El bar [[Plot]] es parecido al [[Histograma]] pero donde la [[Distribución disc
 \end{document}
 ```
 
-Este plot puede modificarse donde se puede mostrar porcentajes, o podemos comparar los dos parámetros con la misma [[Distribución discreta|distribución]].
+Este plot puede modificarse donde se puede mostrar porcentajes, o podemos comparar los dos parámetros con la misma [[Distribución discreta|distribución]]
