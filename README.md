@@ -176,7 +176,7 @@ Estos son los cursos que vaya haciendo
 | [Ciencia de datos para salud mental y psicología](cursos/ciencia%20de%20datos%20para%20salud%20mental%20y%20psicología/Ciencia%20de%20datos%20para%20salud%20mental%20y%20psicología.md) | Sin empezar |
 
 
-### Proyectos de recolección
+### Colecciones
 ---
 Estos proyectos se basan en recolectar información distinto de un tema de investigación ya que este busca recolectar información con respecto a un tema, mientras que este es para tener información para temas en general
 

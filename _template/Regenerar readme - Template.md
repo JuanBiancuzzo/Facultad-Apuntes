@@ -144,7 +144,7 @@ Estos son los cursos que vaya haciendo
     }));
 %>
 
-### Proyectos de recolección
+### Colecciones
 ---
 Estos proyectos se basan en recolectar información distinto de un tema de investigación ya que este busca recolectar información con respecto a un tema, mientras que este es para tener información para temas en general
 
