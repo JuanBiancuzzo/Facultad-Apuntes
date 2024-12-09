@@ -42,7 +42,7 @@ float raiz;
 
 ## En Rust
 ---
-Las variables en [[investigación/lenguajes de programación/lenguaje Rust/Índice|rust]] son inmutables por default, y su declaración es
+Las variables en [[Lenguaje Rust|rust]] son inmutables por default, y su declaración es
 
 ``` rust
 let variable: i32 = 43;

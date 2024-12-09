@@ -9,14 +9,13 @@ autores:
 tituloInforme: Variable-stiffness–morphing wheel inspired by the surface tension of a liquid droplet
 numeroInforme: 
 anio: "2024"
-editores: []
+editores: 
 url: 
 orden: 436
 tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - investigación/mecánica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

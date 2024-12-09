@@ -16,7 +16,9 @@ Vamos a estudiar la rama de la matemática que es la estadística para poder usa
 
 ## Resumen
 ---
-Pendiente...
+Leer 
+* [[Practical Statistics for Data Scientists, 50+ Essential Concepts Using R and Python de Peter Bruce, Andrew Bruce, Peter Gedeck|Practical Statistics for Data Scientists, 50+ Essential Concepts Using R and Python]]
+* [[An Introduction to Statistical Learning, with Applications in Python de Gareth James, Daniela Witten, Trevor Hastie, Robert Ribshirani, Jonathan Taylor|An Introduction to Statistical Learning, with Applications in Python]]
 
 
 ## Archivos

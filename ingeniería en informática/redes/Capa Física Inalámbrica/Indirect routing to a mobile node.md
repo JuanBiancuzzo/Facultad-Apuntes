@@ -3,7 +3,7 @@ dia: 2024-08-31
 tags:
   - ingeniería-en-informática/redes/Capa-Física-Inalámbrica
   - nota/facultad
-  - protocolos/protocolo-de-internet
+  - investigación/protocolos/protocolo-de-internet
   - ingeniería-electrónica/redes/Capa-Física-Inalámbrica
 aliases:
   - Mobile-node-to-foreign-agent protocol#^mobile-node-to-foreign-agent-protocol

@@ -11,12 +11,17 @@ await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.c
 # ¿Qué se va a investigar?
 ---
 Quiero ver todos los elementos de la física que me interesan pero no llegue a ver por mi cuenta
-* [Einstein, Oppenheimer, Feynman: Physics in the 20th Century](https://youtube.com/playlist?list=PLUl4u3cNGP63bAfjGas3TuA4ZCPUtN6Xf&si=avy7mqCnzNybQTNE) - [Curso](https://ocw.mit.edu/courses/sts-042-einstein-oppenheimer-feynman-physics-in-the-20th-century-fall-2020/)
 
 ## Resumen
 ---
-Pendiente...
+Ver cursos
+* [Einstein, Oppenheimer, Feynman: Physics in the 20th Century](https://ocw.mit.edu/courses/sts-042-einstein-oppenheimer-feynman-physics-in-the-20th-century-fall-2020/)
 
+Leer
+* [[The Feynman Lectures on Physics (vol 1), Mainly Mechanics, Radiation and Heat de Richard P. Feynman, Robert B. Leighton, Matthew Sands|The Feynman Lectures on Physics (vol 1), Mainly Mechanics, Radiation and Heat]]
+* [[The Feynman Lectures on Physics (vol 2), Mainly Electromagnetism and Matter de Richard P. Feynman, Robert B. Leighton, Matthew Sands|The Feynman Lectures on Physics (vol 2), Mainly Electromagnetism and Matter]]
+* [[Feynman's Lost Lecture de David L. Goodstein, Judith R. Goodstein|Feynman's Lost Lecture]]
+* [[Física Universitaria de Hugh D. Young, Roger A. Freedman|Física Universitaria]]
 
 ## Archivos
 ---

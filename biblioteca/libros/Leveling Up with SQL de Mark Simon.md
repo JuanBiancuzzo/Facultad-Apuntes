@@ -19,7 +19,6 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - investigación/lenguajes-de-programación/lenguaje-SQL
 orden: 307
 ---
 ```dataviewjs

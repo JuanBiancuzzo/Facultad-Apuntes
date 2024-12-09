@@ -12,11 +12,12 @@ await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.c
 ```
 # ¿Qué se va a investigar?
 ---
-Vamos a investigar esta herramienta para hacer [[Placa de circuito impreso (PCB) (Printed Circuit Board)|PCB's]] usando la [documentación](https://docs.kicad.org)
+Vamos a investigar esta herramienta para hacer [[Placa de circuito impreso (PCB) (Printed Circuit Board)|PCB's]] usando la documentación
 
 ## Resumen
 ---
-Pendiente...
+Leer
+* [Documentación](https://docs.kicad.org)
 
 
 ## Archivos

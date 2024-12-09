@@ -24,7 +24,6 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - investigación/machine-Learning
 orden: 326
 ---
 ```dataviewjs

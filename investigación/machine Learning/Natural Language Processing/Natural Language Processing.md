@@ -22,6 +22,9 @@ Vamos a investigar como se puede procesar el lenguaje natural
 ---
 Es el procesamiento de texto intentando extraer algún contenido contextual, como sentimientos, reconocimiento de características del texto. También se puede crear texto original
 
+Leer
+* [[Natural Language Processing in Action, understanding, analyzing, and generating text with Python de Hobson Lane, Hannes Hapke, Cole Howard|Natural Language Processing in Action, understanding, analyzing, and generating text with Python]]
+
 ## Archivos
 ---
 ```dataviewjs

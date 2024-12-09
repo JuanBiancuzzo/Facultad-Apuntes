@@ -1,20 +1,26 @@
 ---
-dia: 2024-10-08
+dia: 2024-10-07
 estado: Sin empezar
 tags:
   - índice
-  - investigación/herramientas/LTSpice
+  - investigación/lenguajes-de-programación/lenguaje-go
+  - nota/investigacion
+aliases:
+  - Golang
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
-Vamos a explorar como funciona la herramienta
+La intención es explorar todo el lenguaje go y como este resuelve los problemas
 
 ## Resumen
 ---
-Pendiente...
+Leer
+* [[The Go Programming Language de Alan Donovan, Brain Kernighan|The Go Programming Language]]
+* [[Writing an interpreter in Go de Thorsten Ball|Writing an interpreter in Go]]
+* [[Writing a compiler in Go de Thorsten Ball|Writing a compiler in Go]]
 
 
 ## Archivos

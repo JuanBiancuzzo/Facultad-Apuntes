@@ -11,15 +11,13 @@ autores:
 tituloInforme: Hygromorphic living materials for shape changing
 numeroInforme: 
 anio: "2019"
-editores: []
+editores: 
 url: 
 orden: 460
 tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - investigación/mecánica
-  - investigación/robótica/Soft-Robots
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

@@ -6,7 +6,7 @@ tags:
   - ingeniería-en-informática/redes/Capa-de-Transporte
   - nota/facultad
   - ingeniería-en-informática/redes/Capa-Física-Inalámbrica
-  - protocolos/protocolo-de-internet
+  - investigación/protocolos/protocolo-de-internet
   - ingeniería-electrónica/redes/Capa-de-Transporte
   - ingeniería-electrónica/redes/Capa-Física-Inalámbrica
 ---

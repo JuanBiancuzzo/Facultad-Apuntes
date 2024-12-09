@@ -55,6 +55,11 @@ Una vez que el [[Kernel|kernel]] terminó de ejecutarse, las últimas operacione
 3. Pasar a [[User mode|modo usuario]] y dejar el control a la aplicación
 
 
+Leer
+* [[The Linux Programming Interface, a Linux and UNIX System Programming Handbook de Michael Kerrisk|The Linux Programming Interface, a Linux and UNIX System Programming Handbook]]
+* [[Operating Systems, Three Easy Pieces de Ramzi H. Arpaci-Desseau, Andrea C. Arpaci-Desseau|Operating Systems, Three Easy Pieces]]
+* [[Linux From Scratch de Gerard Beekmans|Linux From Scratch]]
+
 ## Archivos
 ---
 ```dataviewjs

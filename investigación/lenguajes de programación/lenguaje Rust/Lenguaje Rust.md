@@ -4,8 +4,8 @@ estado: Sin empezar
 tags:
   - índice
   - investigación/lenguajes-de-programación/lenguaje-Rust
+  - nota/investigacion
 aliases:
-  - Lenguaje Rust
   - Rust
 ---
 ```dataviewjs
@@ -17,7 +17,8 @@ La intención es explorar todo el lenguaje rust y como este resuelve los problem
 
 ## Resumen
 ---
-Pendiente...
+Leer
+* [[Zero to Production in Rust, an introduction to backend development de Luca Palmieri|Zero to Production in Rust, an introduction to backend development]]
 
 
 ## Archivos

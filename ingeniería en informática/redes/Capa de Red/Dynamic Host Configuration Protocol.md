@@ -6,7 +6,7 @@ aliases:
 tags:
   - ingeniería-en-informática/redes/Capa-de-Red
   - nota/facultad
-  - protocolos/protocolo-de-internet
+  - investigación/protocolos/protocolo-de-internet
   - ingeniería-electrónica/redes/Capa-de-Red
 ---
 # Definición

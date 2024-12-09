@@ -20,6 +20,9 @@ Vamos a investigar esta rama de la robótica ya que son un conjunto de patrones 
 ---
 Los soft robots es un subcampo de la [[Robot|robótica]] que se enfoca en el diseño, control y fabricación de robots hecho de [[Compliant mechanism|materiales flexibles]] en vez de vínculos rígidos
 
+Leer
+* [[Hygromorphic living materials for shape changing de Lining Yao, Hiroshi Ishii|Hygromorphic living materials for shape changing]]
+
 ## Archivos
 ---
 ```dataviewjs

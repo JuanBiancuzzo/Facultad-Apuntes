@@ -14,7 +14,8 @@ Saber y traer todos los comandos de docker y relacionados como docker compose
 
 ## Resumen
 ---
-Pendiente...
+Leer
+* Using Docker: Developing and Deploying Software with Containers
 
 
 ## Archivos

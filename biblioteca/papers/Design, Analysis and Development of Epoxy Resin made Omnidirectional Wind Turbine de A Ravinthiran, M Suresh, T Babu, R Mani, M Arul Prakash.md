@@ -24,7 +24,6 @@ tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - investigación/mecánica
 aliases:
   - Turbina eólica omnidireccional
 ---

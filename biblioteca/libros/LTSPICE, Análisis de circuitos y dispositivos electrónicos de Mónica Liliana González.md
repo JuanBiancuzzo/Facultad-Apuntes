@@ -19,7 +19,6 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - investigación/herramientas/LTSpice
 orden: 111
 ---
 ```dataviewjs

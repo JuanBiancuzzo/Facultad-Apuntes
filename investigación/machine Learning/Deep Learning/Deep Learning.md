@@ -20,6 +20,8 @@ Vamos a ver la rama de [[Machine learning|machine learning]] que ve redes neuron
 ---
 Es una [[Red neuronal|red neuronal]] que tiene varias capas de [[Neurona|neuronas]]
 
+Leer
+* [[Dive into Deep Learning de Aston Zhang, Zachary C. Lipton, Mu Li, Alexander J. Smola|Dive into Deep Learning]]
 
 ## Archivos
 ---

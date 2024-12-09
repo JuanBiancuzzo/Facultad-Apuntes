@@ -24,6 +24,17 @@ Hoy en día, uno de los actores principales en la propiedad intelectual de [[Pro
 * [[ARM's Cortex-M|Cortex M]]
 
 
+Leer
+* [[Fundamentals of System-on-Chip Design on Arm Cortex-M Microcontrollers de René Beuchat, Andrea Guerrieri, Sahand Kashani, Florian Depraz|Fundamentals of System-on-Chip Design on Arm Cortex-M Microcontrollers]]
+* Modern System-on-Chip Design on Arm
+* Beginner’s Guide to Designing Embedded Systems Applications on Arm Cortex-M Microcontrollers
+* Embedded Systems Fundamentals – Nucleo-F09IRC edition
+* Embedded Systems Fundamentals – FRDM-KL25Z edition
+* Operating Systems Foundations with Linux on the Raspberry Pi
+* Digital Signal Processing using Arm Cortex-M based Microcontrollers
+* System-on-Chip Design with Arm Cortex-M Processors
+* Arm Helium Technology M-Profile Vector Extension (MVE)
+
 ## Archivos
 ---
 ```dataviewjs

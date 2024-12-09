@@ -14,7 +14,8 @@ La idea es investigar como funciona networking de bajo nivel, es decir, creando 
 
 ## Resumen
 ---
-Pendiente...
+Leer
+* [[Computer Networking, a Top-Down Approach de James Kurose, Keith Ross|Computer Networking, a Top-Down Approach]]
 
 
 ## Archivos

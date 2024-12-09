@@ -4,7 +4,7 @@ tags:
   - ingeniería-en-informática/redes/Capa-de-Enlace
   - nota/facultad
   - ingeniería-en-informática/redes/Capa-Física-Inalámbrica
-  - protocolos/protocolo-de-internet
+  - investigación/protocolos/protocolo-de-internet
   - ingeniería-electrónica/redes/Capa-de-Enlace
   - ingeniería-electrónica/redes/Capa-Física-Inalámbrica
 aliases:

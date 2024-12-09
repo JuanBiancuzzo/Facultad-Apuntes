@@ -34,7 +34,10 @@ let archivos = dv.pages(`#${tagRepresentante} and (#nota/investigacion or #nota/
             if (archivo.tipoCita == PAPER) {
                 nombre = archivo.tituloInforme;
             } else if (archivo.tipoCita == LIBRO) {
-                nombre = `${archivo.tituloObra}: ${archivo.subtituloObra}`;
+                nombre = archivo.tituloObra;
+                if (archivo.subtituloObra) {
+                    nombre += `: ${archivo.subtituloObra}`;
+                }
             }
 
             resultado.push({

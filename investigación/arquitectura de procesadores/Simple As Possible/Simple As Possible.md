@@ -23,7 +23,8 @@ Vamos a investigar la arquitectura SAP para poder tener una idea general de como
 
 ## Resumen
 ---
-
+Leer 
+* [[Digital Computer Electronics de Albert P. Malvino, Jerald A. Brown|Digital Computer Electronics]]
 
 
 ## Archivos

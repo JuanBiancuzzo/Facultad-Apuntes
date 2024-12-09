@@ -106,7 +106,10 @@ Machine learning
 ## Resumen
 ---
 %% hacer grafico de todas las partes %%
-
+Leer
+* [[Elliptic Curves, Modular Forms, and Their L-functions de Álvaro Lozano-Robledo|Elliptic Curves, Modular Forms, and Their L-functions]]
+* [[Introduction to Machine Learning with Python, a Guide for Data Scientists de Andreas C. Müller, Sarah Guido|Introduction to Machine Learning with Python, a Guide for Data Scientists]]
+* [[Machine Learning with PyTorch and Scikit-Learn, develop machine learning and deep learning models with Python de Sebastian Raschka, Yuxi (Hayden) Liu, Vahid Mirjalili|Machine Learning with PyTorch and Scikit-Learn, develop machine learning and deep learning models with Python]]
 
 ## Archivos
 ---

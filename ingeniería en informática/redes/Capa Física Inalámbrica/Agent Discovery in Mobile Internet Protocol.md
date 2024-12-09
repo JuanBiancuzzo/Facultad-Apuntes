@@ -3,7 +3,7 @@ dia: 2024-08-30
 tags:
   - ingeniería-en-informática/redes/Capa-Física-Inalámbrica
   - nota/facultad
-  - protocolos/protocolo-de-internet
+  - investigación/protocolos/protocolo-de-internet
   - ingeniería-electrónica/redes/Capa-Física-Inalámbrica
 aliases:
   - Agente Discovery in Mobile IP

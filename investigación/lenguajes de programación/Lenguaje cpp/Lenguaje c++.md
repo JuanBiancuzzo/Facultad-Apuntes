@@ -16,7 +16,11 @@ Vamos a explorar el lenguaje de c++ que es un superset de [[Lenguaje C|C]]
 
 ## Resumen
 ---
-Pendiente...
+Leer
+* [[A Tour of C++ de Bjarne Stroustrup|A Tour of C++]]
+* [[C++ Primer de Stanley Lippman, Josée Lajoie, Barbara Moo|C++ Primer]]
+* [[Effective Modern C++, 42 Specific Ways to Improve Your Use of C++11 and C++14 de Scott Meyers|Effective Modern C++, 42 Specific Ways to Improve Your Use of C++11 and C++14]]
+* [[The C++ Programming Language de Bjarne Stroustrup|The C++ Programming Language]]
 
 
 ## Archivos

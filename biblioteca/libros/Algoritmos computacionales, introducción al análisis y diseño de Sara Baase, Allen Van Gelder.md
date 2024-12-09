@@ -22,7 +22,6 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - investigación/algoritmos
 orden: 366
 ---
 ```dataviewjs

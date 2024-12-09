@@ -24,7 +24,6 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-  - investigación/física/física-cuántica
 orden: 299
 ---
 ```dataviewjs

@@ -15,8 +15,8 @@ La intención es explorar todo el lenguaje c y como este resuelve los problemas
 
 ## Resumen
 ---
-Pendiente...
-
+Leer
+* [[C Programming Language de Brian W. Kernighan, Dennis M. Ritchie|C Programming Language]]
 
 ## Archivos
 ---

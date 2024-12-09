@@ -17,14 +17,13 @@ autores:
 tituloInforme: Optically Transparent Wood from a Nanoporous Cellulosic Template:Combining Functional and Structural Performance
 numeroInforme: 
 anio: "2016"
-editores: []
+editores: 
 url: 
 orden: 490
 tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - investigación/mecánica
 referencias:
   - "569"
 ---

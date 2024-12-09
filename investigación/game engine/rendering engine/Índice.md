@@ -15,7 +15,8 @@ Vamos a investigar cuales son las partes importantes de un rendering engine para
 
 ## Resumen
 ---
-Pendiente...
+Leer
+* [[Real time rendering de Tomas Akenine-Möller, Eric Haines, Naty Hoffman, Angelo Pesce, Michal Iwanicki, Sébastien Hillaire|Real time rendering]]
 
 
 ## Archivos
