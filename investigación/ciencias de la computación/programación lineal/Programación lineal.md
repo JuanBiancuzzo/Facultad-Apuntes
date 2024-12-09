@@ -4,7 +4,7 @@ estado: Sin empezar
 tags:
   - índice
   - nota/investigacion
-  - investigación/programación-lineal
+  - investigación/ciencias-de-la-computación/programación-lineal
 aliases:
   - Linear programming
   - LP

@@ -3,7 +3,7 @@ dia: 2024-07-09
 tags:
   - índice
   - nota/investigacion
-  - investigación/data-structures
+  - investigación/ciencias-de-la-computación/data-structures
 estado: Falta resumir
 aliases:
   - Data structures

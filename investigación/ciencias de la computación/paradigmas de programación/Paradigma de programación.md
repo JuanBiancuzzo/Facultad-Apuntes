@@ -4,7 +4,7 @@ estado: Sin empezar
 orden: 577
 tags:
   - índice
-  - investigación/paradigmas-de-programación
+  - investigación/ciencias-de-la-computación/paradigmas-de-programación
   - nota/investigacion
 referencias:
   - "650"

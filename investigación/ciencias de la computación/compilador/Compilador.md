@@ -1,8 +1,11 @@
 ---
-dia: 2023-11-12
+dia: 2024-07-31
+estado: Sin empezar
 tags:
+  - índice
+  - investigación/ciencias-de-la-computación/compilador
+  - nota/investigacion
   - ingeniería-en-informática/sisop/La-abstracción-de-proceso
-  - nota/facultad
   - ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - ingeniería-en-informática/estructura/Compiladores-y-ensambladores
   - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
@@ -15,7 +18,15 @@ aliases:
   - Cross-Compilador#^cross-compilador
   - Interprete#^interprete
 ---
-# Definición
+```dataviewjs
+await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
+```
+# ¿Qué se va a investigar?
+---
+Vamos a explorar como funciona un compilador, y nos vamos a basar en la serie 
+* [Compiler Design](https://youtube.com/playlist?list=PLBlnK6fEyqRjT3oJxFXRgjPNzeS-LFY-q&si=cC-_dVkp4bY_VGsi)
+
+## Resumen
 ---
 Hay distintos tipos de compiladores
 * Compiladores de una sola pasada o múltiples pasadas  ^compilador-pasadas
@@ -50,3 +61,16 @@ Hay tres tipos de instrucciones
 Cuando es excedida la cantidad de registros, se utiliza el [[ingeniería en informática/sisop/Virtualización de memoria/Stack|stack]]. El compilador debe decidir que registros deben ser guardados en el stack. Esto afecta la eficiencia del código que genera
 
 Las variables globales permanecen a lo largo del tiempo de ejecución del programa y se guardan en [[Memoria|memoria]]. Las variables locales se guardan en el stack
+
+## Archivos
+---
+```dataviewjs
+await dv.view("_scripts/dataview/investigacion/mostrarArchivos", { indice: dv.current() });
+```
+
+
+# Bibliografía
+---
+```dataviewjs
+await dv.view('_scripts/dataview/investigacion/biblioIndice', { indice: dv.current() });
+```

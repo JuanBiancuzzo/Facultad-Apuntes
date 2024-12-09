@@ -1,25 +1,23 @@
 ---
-dia: 2024-11-16
+dia: 2024-12-09
 estado: Sin empezar
-orden: 455
+orden: 597
 tags:
   - índice
+  - investigación/ciencias-de-la-computación
   - nota/investigacion
-  - investigación/computable
-referencias:
-  - "543"
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
-Vamos a investigar las formas en las que se puede computar
+
 
 ## Resumen
 ---
-Pendiente...
-
+%% Pendiente... %%
+Crear un mapa de los temas en forma espiral
 
 ## Archivos
 ---

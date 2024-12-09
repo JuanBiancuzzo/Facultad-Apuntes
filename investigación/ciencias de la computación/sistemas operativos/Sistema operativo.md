@@ -6,7 +6,7 @@ tags:
   - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - ingeniería-en-informática/sisop/Kernel
   - nota/investigacion
-  - investigación/sistemas-operativos
+  - investigación/ciencias-de-la-computación/sistemas-operativos
 orden: 281
 ---
 ```dataviewjs
