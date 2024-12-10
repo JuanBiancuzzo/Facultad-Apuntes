@@ -57,16 +57,33 @@ Para eso usaré obsidian, y pdfs, donde en obsidian todo sería archivos markdow
 
 <%*
     const indices = dv.pages("#índice")
-        .filter(indice => indice.file.folder.split("/").length == 2)
-        .sort(indice => {
-            let nombre = indice.file.folder.split("/").pop();
-            return `${nombre.charAt(0).toUpperCase()}${nombre.slice(1)}`.trim();
+        .filter(indice => {
+            let carpeta = indice.file.folder;
+            if (indice.equivalente) {
+                carpeta += `/${indice.file.name}`;
+            }
+            return carpeta.split("/").length == 2;
+        }).sort(indice => {
+            let nombre = indice.file.name;
+            if (nombre == "Índice") {
+                let carpeta = indice.file.folder.split("/").pop();
+                nombre = `${carpeta.charAt(0).toUpperCase()}${carpeta.slice(1)}`.trim();
+            }
+            return nombre;
         });
 
     tR += dv.markdownTable(["Tema de investigación", "Estado"], indices.map(indice => {
-        let nombre = indice.file.folder.split("/").pop();
-        nombre = `${nombre.charAt(0).toUpperCase()}${nombre.slice(1)}`.trim();
+        let nombre = indice.file.name;
+        if (nombre == "Índice") {
+            let carpeta = indice.file.folder.split("/").pop();
+            nombre = `${carpeta.charAt(0).toUpperCase()}${carpeta.slice(1)}`.trim();
+        }
         let path = `${indice.file.path}`.replaceAll(" ", "%20");
+        let estado = indice.estado;
+        if (indice.equivalente) {
+            let equivalente = dv.page(indice.equivalente.path);
+            estado = equivalente.estado;
+        }
         
         return [ `[${nombre}](${path})`, indice.estado ];
     }));
