@@ -18,6 +18,7 @@ tags:
   - nota/investigacion
   - investigación/machine-Learning/Regularization
   - ingeniería-en-informática/orga/Machine-learning
+  - investigación/ciencias-de-la-computación/Machine-learning/Regularization
 aliases:
   - Least Absolute Shrinkage and Selection Operator
   - LASSO

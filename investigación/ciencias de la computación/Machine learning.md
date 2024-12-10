@@ -1,21 +1,17 @@
 ---
-dia: 2024-07-13
+dia: 2024-12-10
 tags:
   - índice
-  - investigación/machine-Learning/physics-Informed-Machine-Learning
-estado: Falta resumir
+  - nota/investigacion
+  - investigación/ciencias-de-la-computación/Machine-learning
+equivalente: "[[investigación/machine Learning/Machine learning.md|Machine learning]]"
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
 ```
-# ¿Qué se va a investigar?
----
-
-
 ## Resumen
 ---
-Pendiente...
-
+![[investigación/machine Learning/Machine learning.md#Resumen]]
 
 ## Archivos
 ---

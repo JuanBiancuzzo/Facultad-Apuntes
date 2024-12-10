@@ -3,6 +3,7 @@ dia: 2024-07-12
 tags:
   - índice
   - investigación/machine-Learning/red-Neuronal
+  - investigación/ciencias-de-la-computación/Machine-learning/red-Neuronal
 estado: Falta resumir
 ---
 ```dataviewjs

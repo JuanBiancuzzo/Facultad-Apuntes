@@ -84,7 +84,6 @@
 
 					if (largoSupertemas > 0) {
 						let ultimoTema = datos[PREGUNTAR_SUPERTEMA][largoSupertemas - 1];
-						let profundidad = ultimoTema.file.folder.split("/").length
 						query += ` and #${tp.user.tagPorNombre(ultimoTema.file.folder)}`;
 					}
 
@@ -259,6 +258,7 @@
 				tagsAAgregar = tagsAAgregar.concat(dv.pages("#índice")
 					.filter(indice => subTags.some(tag => tag == tp.user.tagPorNombre(indice.file.folder)))
 					.map(indice => indicesEquivalentes.find(equivalente => indice.file.path == equivalente.equivalente.path))
+					.filter(equivalente => equivalente)
 					.map(equivalente => tp.user.tagPorNombre(`${equivalente.file.folder}/${equivalente.file.name}/${nombreTema}`))
 					.values
 				);
@@ -275,12 +275,11 @@
 					frontmatter["tags"] = tags;
 				}));
 			await Promise.all(archivosAModificar);
-
 		}
 
 		let metadata = {
 			dia: tp.file.creation_date("YYYY-MM-DD"),
-			tag: ["índice", ...nuevoTag, "nota/investigacion"]
+			tag: ["índice", "nota/investigacion"].concat(tagsAAgregar)
 		};
 
 		if (temaEquivalente) {

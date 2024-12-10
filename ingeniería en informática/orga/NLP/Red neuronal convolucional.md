@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - machine-Learning
   - investigación/machine-Learning/Deep-Learning
+  - investigación/ciencias-de-la-computación/Machine-learning/Deep-Learning
 aliases:
   - Convolutional Neural Network
   - CNN

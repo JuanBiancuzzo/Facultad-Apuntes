@@ -7,6 +7,7 @@ referencias:
 tags:
   - nota/investigacion
   - investigación/machine-Learning
+  - investigación/ciencias-de-la-computación/Machine-learning
 aliases:
   - ICA
 ---

@@ -7,6 +7,7 @@ referencias:
 tags:
   - investigación/machine-Learning/Deep-Learning
   - nota/investigacion
+  - investigación/ciencias-de-la-computación/Machine-learning/Deep-Learning
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

@@ -5,9 +5,10 @@ tags:
   - nota/facultad
   - machine-Learning
   - investigación/machine-Learning/Natural-Language-Processing
+  - investigación/ciencias-de-la-computación/Machine-learning/Natural-Language-Processing
 aliases:
   - GRU
 ---
 # Definición
 ---
-Son una modificación de las [[Red neuronal recurrente|redes neuronales recurrentes]], parecidas a las [[Long short-term memory]], que modifican la función para tener una [[Derivada parcial|derivada]] numéricamente estable para el [[Descenso del gradiente|descenso del gradiente]] que es el método de aprendizaje para estos [[Machine learning|algoritmos]]
+Son una modificación de las [[Red neuronal recurrente|redes neuronales recurrentes]], parecidas a las [[Long short-term memory]], que modifican la función para tener una [[Derivada parcial|derivada]] numéricamente estable para el [[Descenso del gradiente|descenso del gradiente]] que es el método de aprendizaje para estos [[investigación/machine Learning/Machine learning|algoritmos]]

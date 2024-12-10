@@ -3,8 +3,9 @@ dia: 2024-10-02
 estado: Sin empezar
 tags:
   - índice
-  - investigación/machine-Learning/sequence-modeling
-  - investigación/ciencias-de-la-computación/Machine-learning/sequence-modeling
+  - investigación/machine-Learning/modelos-generativos
+  - investigación/ciencias-de-la-computación/Machine-learning/modelos-generativos
+  - nota/investigacion
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

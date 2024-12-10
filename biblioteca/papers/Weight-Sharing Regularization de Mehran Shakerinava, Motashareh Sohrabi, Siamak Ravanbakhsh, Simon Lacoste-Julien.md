@@ -23,6 +23,7 @@ tags:
   - biblioteca/paper
   - nota/investigacion
   - investigación/machine-Learning/Regularization
+  - investigación/ciencias-de-la-computación/Machine-learning/Regularization
 aliases:
   - Weight-Sharing Regularization
 ---

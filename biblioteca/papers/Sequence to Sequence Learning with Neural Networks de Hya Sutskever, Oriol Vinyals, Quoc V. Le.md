@@ -20,6 +20,7 @@ tags:
   - biblioteca/paper
   - nota/investigacion
   - investigación/machine-Learning/sequence-modeling
+  - investigación/ciencias-de-la-computación/Machine-learning/sequence-modeling
 aliases:
   - Seq2Seq
 orden: 335

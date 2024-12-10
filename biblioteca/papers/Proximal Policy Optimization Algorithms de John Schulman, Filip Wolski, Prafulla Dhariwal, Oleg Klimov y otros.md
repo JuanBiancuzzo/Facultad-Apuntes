@@ -25,6 +25,7 @@ tags:
   - nota/investigacion
   - investigación/machine-Learning/transformers
   - investigación/algoritmos
+  - investigación/ciencias-de-la-computación/Machine-learning/transformers
 orden: 360
 aliases:
   - Proximal Policy Optimization Algorithms

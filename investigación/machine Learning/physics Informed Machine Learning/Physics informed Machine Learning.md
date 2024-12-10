@@ -1,9 +1,11 @@
 ---
-dia: 2024-10-02
-estado: Sin empezar
+dia: 2024-07-13
 tags:
   - índice
-  - investigación/machine-Learning/modelos-generativos
+  - investigación/machine-Learning/physics-Informed-Machine-Learning
+  - investigación/ciencias-de-la-computación/Machine-learning/physics-Informed-Machine-Learning
+  - nota/investigacion
+estado: Falta resumir
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

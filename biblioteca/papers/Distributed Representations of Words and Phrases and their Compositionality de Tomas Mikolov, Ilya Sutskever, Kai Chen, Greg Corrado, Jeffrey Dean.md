@@ -24,6 +24,7 @@ tags:
   - biblioteca/paper
   - nota/investigacion
   - investigación/machine-Learning/sequence-modeling
+  - investigación/ciencias-de-la-computación/Machine-learning/sequence-modeling
 aliases:
   - Phrase2Vec
 orden: 292

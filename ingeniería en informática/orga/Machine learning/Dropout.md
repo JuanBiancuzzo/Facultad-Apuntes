@@ -8,6 +8,7 @@ tags:
   - ingeniería-en-informática/orga/Machine-learning
   - nota/facultad
   - investigación/machine-Learning/Regularization
+  - investigación/ciencias-de-la-computación/Machine-learning/Regularization
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

@@ -12,7 +12,7 @@ await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.c
 ```
 # ¿Qué se va a investigar?
 ---
-Vamos a investigar la librería de [[Lenguaje Python|Python]] orientada a [[Machine learning|machine learning]]
+Vamos a investigar la librería de [[Lenguaje Python|Python]] orientada a [[investigación/machine Learning/Machine learning|machine learning]]
 
 ## Resumen
 ---

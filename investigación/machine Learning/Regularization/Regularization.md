@@ -7,6 +7,7 @@ tags:
   - investigación/machine-Learning/Regularization
   - nota/investigacion
   - ingeniería-en-informática/orga/Machine-learning
+  - investigación/ciencias-de-la-computación/Machine-learning/Regularization
 aliases:
   - Regularización
 ---

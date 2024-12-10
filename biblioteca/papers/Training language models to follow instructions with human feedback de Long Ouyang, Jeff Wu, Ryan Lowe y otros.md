@@ -54,6 +54,7 @@ tags:
   - biblioteca/paper
   - nota/investigacion
   - investigación/machine-Learning/transformers
+  - investigación/ciencias-de-la-computación/Machine-learning/transformers
 orden: 205
 ---
 ```dataviewjs

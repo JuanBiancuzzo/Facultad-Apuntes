@@ -7,6 +7,7 @@ referencias:
 tags:
   - nota/investigacion
   - investigación/machine-Learning/red-Neuronal
+  - investigación/ciencias-de-la-computación/Machine-learning/red-Neuronal
 aliases:
   - Perceptron
 ---

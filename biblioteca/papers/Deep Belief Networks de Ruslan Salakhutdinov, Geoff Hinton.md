@@ -19,6 +19,7 @@ tags:
   - biblioteca/paper
   - nota/investigacion
   - investigación/machine-Learning/Deep-Learning
+  - investigación/ciencias-de-la-computación/Machine-learning/Deep-Learning
 aliases:
   - Deep Belief Networks
 ---

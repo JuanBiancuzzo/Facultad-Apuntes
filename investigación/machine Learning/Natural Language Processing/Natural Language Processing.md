@@ -8,6 +8,7 @@ tags:
   - nota/investigacion
   - ingeniería-en-informática/orga/NLP/1
   - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Machine-learning-deep-learning-e-interpretabilidad-algorítmica
+  - investigación/ciencias-de-la-computación/Machine-learning/Natural-Language-Processing
 aliases:
   - NLP
 ---

@@ -8,13 +8,15 @@ tags:
   - nota/investigacion
   - ingeniería-en-informática/orga/Machine-learning
   - investigación/machine-Learning
+  - investigación/ciencias-de-la-computación/Machine-learning/Deep-Learning
+  - investigación/ciencias-de-la-computación/Machine-learning
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
-Vamos a ver la rama de [[Machine learning|machine learning]] que ve redes neuronales profundas
+Vamos a ver la rama de [[investigación/machine Learning/Machine learning|machine learning]] que ve redes neuronales profundas
 
 ## Resumen
 ---
