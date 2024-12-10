@@ -22,7 +22,7 @@ Para un cuerpo unido mecánicamente a otros cuerpos (mediante pares cinemáticos
 
 Más concretamente. los grados de libertad son el número [[Mínimo|mínimo]] de velocidades generalizadas independientes necesarias para definir el estado cinemático de un mecanismo o [[Sistema|sistema]] mecánico. El número de grados de libertad coincide con el número de ecuaciones necesarias para describir el movimiento
 
-En mecánica clásica y [[investigación/física/lagrangian mechanics/Índice|lagrangiana]], la dimensión d del espacio de configuración es igual a dos veces el número de grados de libertad $GL$, $d = 2 ~ GL$
+En mecánica clásica y [[Mecánica Lagrangiana|lagrangiana]], la dimensión d del espacio de configuración es igual a dos veces el número de grados de libertad $GL$, $d = 2 ~ GL$
 
 # Referencias
 ---

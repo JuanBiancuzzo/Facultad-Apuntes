@@ -8,46 +8,151 @@
 	const tArchivo = tp.file.find_tfile(tp.file.path(true)); 
 	const CREAR_TEMA = 1;
 
+	const PREGUNTAR_NOMBRE_TEMATICA = "nombre_tematica";
+	const PREGUNTAR_SUPERTEMA = "supertema"
+	const MODIFICAR_SUPERTEMA = "modificar supertema";
+	const ELIMINAR_SUPERTEMA = "eliminar supertema";
+	const PREGUNTAR_EQUIVALENTE = "equivalente";
+	const MODIFICAR_EQUIVALENTE = "modificar equivalente";
+	const ELIMINAR_EQUIVALENTE = "eliminar equivalente";
+	const SACAR_EQUIVALENTE = "sacar equivalente";
+	const SALIR = "salir";
+
 	try {
 
-		let indices = dv.pages("#índice")
-			.filter(indice => indice.file.name !== undefined);
+		let datos = {
+			[PREGUNTAR_NOMBRE_TEMATICA]: null,
+			[PREGUNTAR_SUPERTEMA]: [],
+			[PREGUNTAR_EQUIVALENTE]: [],
+		};
 
-		let nombreTema = await preguntar.prompt(
-			tp, "Temática:", error.Prompt("No se ingresó un tema")
-		);
+		let { opciones, valores } = representarDatos(datos);
+		let respuesta = opciones[0];
+		if (opciones.length > 1) {
+			respuesta = await preguntar.suggester(
+				tp, valores, opciones,
+				"Completar para poder crear el tema",
+				error.Prompt("No se completó los datos necesarios")
+			);
+		}
 
-		if (!validar.validarNombre(tp, nombreTema)) 
-			throw new Error("Nombre invalido");
-		
-		let descripcion = tp.user.describirTemas(indices);
-		let eleccion = await preguntar.suggester(
-			tp, ["⊕ Crear un nuevo tema", ...descripcion.map(desc => desc.descripcion)], 
-			[CREAR_TEMA, ...descripcion.map(desc => desc.archivo)], 
-			"Crear un nuevo tema o elegir de que tema va a ser subtema",
-			error.Prompt("No se eligió como definir el tema")
-		);
+		while (respuesta != SALIR) {
+			let separados = respuesta.split("-");
+			respuesta = separados[0];
 
-		let nuevoTema = eleccion == CREAR_TEMA 
-			? `${nombreTema.charAt(0).toLowerCase()}${nombreTema.slice(1)}`.trim()
-			: nombreTema;
+			let indice = null;
+			if (separados.length > 1) indice = parseInt(separados[1], 10);
 
-		let path = (eleccion === CREAR_TEMA) ? `investigación/${nuevoTema}` : `${eleccion.file.folder}/${nuevoTema}`;
+			switch (respuesta) {
+				case PREGUNTAR_NOMBRE_TEMATICA: 
+					let posibleNombre = await preguntar.prompt(
+						tp, "Nombre del tema", error.Prompt("No se ingresó un tema")
+					);
+
+					if (!validar.validarNombre(tp, posibleNombre)) {
+						new Notice("El nombre no es valido");
+						break;
+					}
+
+					let posibleNombreLowerCase = posibleNombre.toLowerCase();
+					let eliminarDesde = datos[PREGUNTAR_SUPERTEMA].findIndex(superTema => {
+						let nombreArchivo = superTema.file.name.toLowerCase() == posibleNombreLowerCase;
+						let nombrePath = superTema.file.folder.split("/").pop().toLowerCase() == posibleNombreLowerCase;
+
+						return nombreArchivo || nombrePath;
+					});
+
+					if (eliminarDesde >= 0) {
+						datos[PREGUNTAR_SUPERTEMA] = datos[PREGUNTAR_SUPERTEMA].slice(eliminarDesde);
+						new Notice("Se sacaron super temas ya que se repetian los nombres");
+					}
+					
+					datos[PREGUNTAR_NOMBRE_TEMATICA] = posibleNombre;
+					break;
+
+				case PREGUNTAR_SUPERTEMA: // No deberia ser el caso que se pregunte si no hay temas posibles
+					let query = "#índice";
+					let largoSupertemas = datos[PREGUNTAR_SUPERTEMA].length;
+					let profundidad = 2 + largoSupertemas;
+					if (largoSupertemas > 0) {
+						let ultimoTema = datos[PREGUNTAR_SUPERTEMA][largoSupertemas - 1];
+						query += ` and #${tp.user.tagPorNombre(ultimoTema.file.folder)}`;
+					}
+					
+					let indices = dv.pages(query)
+						.filter(tema => tema.file.folder.split("/").length == profundidad)
+						.sort(tema => tema.file.name);
+
+					if (indices.length == 0) {
+						new Notice("Hubo un error hay más indices de este tema");
+						break;
+					}
+
+					let superTema = await preguntar.suggester(
+						tp, superTema => {
+							if (superTema.file.name == "Índice") {
+								let carpeta = superTema.file.folder.split("/").pop();
+								return `${carpeta.charAt(0).toUpperCase()}${carpeta.slice(1)}`;
+							}
+							return superTema.file.name;
+						}, indices, "Que supertema es este tema?",
+						error.Prompt("No se eligió el super tema")
+					);
+
+					datos[PREGUNTAR_SUPERTEMA].push(superTema);
+					break;
+
+				case MODIFICAR_SUPERTEMA: 
+					if (indice == null) {
+						new Notice("Hubo un error al modificar tema, no se mando indice");
+						break;
+					}
+					datos[PREGUNTAR_SUPERTEMA] = datos[PREGUNTAR_SUPERTEMA].slice(0, indice);
+
+					respuesta = PREGUNTAR_SUPERTEMA;
+					continue;
+
+				case ELIMINAR_SUPERTEMA: 
+					datos[PREGUNTAR_SUPERTEMA].pop();
+					break;
+
+				case PREGUNTAR_EQUIVALENTE: break;
+				case SACAR_EQUIVALENTE: break;
+			}
+
+
+			let { opciones, valores } = representarDatos(datos);
+			respuesta = opciones[0];
+			if (opciones.length > 1) {
+				respuesta = await preguntar.suggester(
+					tp, valores, opciones,
+					"Completar para poder crear el tema",
+					error.Prompt("No se completó los datos necesarios")
+				);
+			}
+		}
+
+		let nombreTema = datos[PREGUNTAR_NOMBRE_TEMATICA];
+		let largoSupertemas = datos[PREGUNTAR_SUPERTEMA].length;
+		let carpeta = `investigación/${nombreTema}`;
+		if (largoSupertemas > 0) {
+			carpeta = `${datos[PREGUNTAR_SUPERTEMA][largoSupertemas - 1].file.folder}/${nombreTema}`;
+		}
 
 		try {
-			await app.vault.createFolder(path);
-			await tp.file.move(`${path}/${nombreTema}`);
+			await app.vault.createFolder(carpeta);
+			await tp.file.move(`${carpeta}/${nombreTema}`);
 		} catch (_) {
 			throw error.Quit("No se pudo crear y mover el tema");
 		}
-
-		let dia = tp.file.creation_date("YYYY-MM-DD");
 		
 		tR += "---\n"; 
-		tR += `dia: ${dia}\n`;
-		tR += "estado: 'Sin empezar'\n";
-		tR += `orden: ${mantenerOrden.siguienteValorOrden()}\n`;
-		tR += `tags: \n - índice\n - ${path.replaceAll(",", "").replaceAll(" ", "-")}\n - nota/investigacion\n`;
+		tR += tp.obsidian.stringifyYaml({
+			dia: tp.file.creation_date("YYYY-MM-DD"),
+			estado: "Sin empezar",
+			orden: mantenerOrden.siguienteValorOrden(),
+			tag: [ "índice", tp.user.tagPorNombre(carpeta), "nota/investigacion" ]
+		});
 		tR += "---\n";
 
 	} catch ({ name: nombre, message: mensaje }) {
@@ -65,6 +170,80 @@
 				console.log(nombre);
 				console.log(mensaje);
         }
+	}
+
+	function representarDatos(datos) {
+		let valores = [];
+		let opciones = [];
+
+		let haySupertemas = datos[PREGUNTAR_SUPERTEMA].length > 0;
+		let hayEquivalencia = datos[PREGUNTAR_EQUIVALENTE].length > 0;
+
+		if (!haySupertemas && !hayEquivalencia) {
+			opciones.push(PREGUNTAR_SUPERTEMA);
+			valores.push("Elegir super tema (opcional)");
+
+			opciones.push(PREGUNTAR_EQUIVALENTE);
+			valores.push("Elegir tema equivalente (opcional)");
+
+		} else if (haySupertemas) {
+			let largoSupertemas = datos[PREGUNTAR_SUPERTEMA].length;
+
+			for (let [indice, superTema] of datos[PREGUNTAR_SUPERTEMA].entries()) {
+				opciones.push(`${MODIFICAR_SUPERTEMA}-${indice}`);
+				let nombreSupertema = superTema.file.name;
+				if (superTema.file.name == "Índice") {
+					let carpeta = superTema.file.folder.split("/").pop();
+					nombreSupertema = `${carpeta.charAt(0).toUpperCase()}${carpeta.slice(1)}`;
+				}
+				valores.push(`Modificar ${nombreSupertema}`);
+			}
+
+			let query = "#índice";
+			let profundidad = 2 + largoSupertemas;
+			if (largoSupertemas > 0) {
+				let ultimoTema = datos[PREGUNTAR_SUPERTEMA][largoSupertemas - 1];
+				console.log(ultimoTema);
+				query += ` and #${tp.user.tagPorNombre(ultimoTema.file.folder)}`;
+			}
+
+			let indices = dv.pages(query)
+				.filter(tema => tema.file.folder.split("/").length == profundidad);
+
+			if (indices.length > 0) {
+				opciones.push(PREGUNTAR_SUPERTEMA);
+				valores.push("Eligir super tema");
+			}
+
+			if (largoSupertemas > 0) {
+				opciones.push(ELIMINAR_SUPERTEMA);
+				let ultimoTema = datos[PREGUNTAR_SUPERTEMA][largoSupertemas - 1];
+				let nombreSupertema = ultimoTema.file.name;
+				if (ultimoTema.file.name == "Índice") {
+					let carpeta = ultimoTema.file.folder.split("/").pop();
+					nombreSupertema = `${carpeta.charAt(0).toUpperCase()}${carpeta.slice(1)}`;
+				}
+				valores.push(`Eliminar ${nombreSupertema}`);
+			}
+
+		} else if (hayEquivalencia) {
+
+		}
+
+		if (!hayEquivalencia) {
+			opciones.push(PREGUNTAR_NOMBRE_TEMATICA);
+			valores.push(datos[PREGUNTAR_NOMBRE_TEMATICA]
+				? `Modificar el nombre: ${datos[PREGUNTAR_NOMBRE_TEMATICA]}`
+				: "Determinar el nombre del tema"
+			);
+		}
+
+		if (hayEquivalencia || datos[PREGUNTAR_NOMBRE_TEMATICA] != null) {
+			opciones.push(SALIR);
+			valores.push("Confirmar datos del tema");
+		}
+
+		return { opciones: opciones, valores: valores };
 	}
 _%>
 ```dataviewjs
