@@ -3,7 +3,7 @@ dia: 2024-07-31
 estado: Sin empezar
 tags:
   - índice
-  - investigación/compilador/parser
+  - investigación/ciencias-de-la-computación/compilador/parser
 aliases:
   - Parser
 ---

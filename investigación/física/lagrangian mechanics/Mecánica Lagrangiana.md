@@ -3,7 +3,10 @@ dia: 2024-07-08
 tags:
   - índice
   - investigación/física/lagrangian-mechanics
+  - nota/investigacion
 estado: Falta resumir
+aliases:
+  - Lagrangian Mechanics
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

@@ -4,7 +4,7 @@ estado: Sin empezar
 tags:
   - índice
   - nota/investigacion
-  - investigación/lenguajes-de-programación/lenguaje-c
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

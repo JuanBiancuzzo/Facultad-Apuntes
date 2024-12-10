@@ -3,7 +3,7 @@ dia: 2024-08-15
 estado: Sin empezar
 tags:
   - índice
-  - investigación/lenguajes-de-programación/lenguaje-zig
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-zig
 aliases:
   - Lenguaje Zig
   - Zig

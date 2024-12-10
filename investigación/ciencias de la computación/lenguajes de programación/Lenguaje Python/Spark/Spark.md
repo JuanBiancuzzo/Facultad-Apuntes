@@ -5,7 +5,7 @@ orden: 483
 tags:
   - índice
   - nota/investigacion
-  - investigación/lenguajes-de-programación/Lenguaje-Python/Spark
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/Lenguaje-Python/Spark
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

@@ -5,7 +5,7 @@ tags:
   - índice
   - nota/facultad
   - ingeniería-en-informática/bdd/General
-  - investigación/lenguajes-de-programación/lenguaje-SQL
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-SQL
 aliases:
   - Lenguaje SQL
   - SQL

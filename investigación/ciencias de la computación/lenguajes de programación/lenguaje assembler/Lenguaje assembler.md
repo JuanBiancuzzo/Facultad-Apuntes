@@ -7,7 +7,7 @@ tags:
   - nota/investigacion
   - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - ingeniería-electrónica/estructura/Sistema-ARC
-  - investigación/lenguajes-de-programación/lenguaje-assembler
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-assembler
 referencias:
   - "202"
 etapa: sin-empezar

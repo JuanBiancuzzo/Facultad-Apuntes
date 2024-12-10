@@ -5,7 +5,7 @@ tags:
   - índice
   - nota/investigacion
   - ingeniería-en-informática/sisop/Kernel
-  - investigación/sistemas-operativos/kernel
+  - investigación/ciencias-de-la-computación/sistemas-operativos/kernel
 orden: 324
 ---
 ```dataviewjs

@@ -1,11 +1,11 @@
 ---
 dia: 2024-12-09
-estado: 'Sin empezar'
+estado: Sin empezar
 orden: 596
-tags: 
- - índice
- - investigación/lenguajes-de-programación/Lenguaje-Python/TensorFlow
- - nota/investigacion
+tags:
+  - índice
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/Lenguaje-Python/TensorFlow
+  - nota/investigacion
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

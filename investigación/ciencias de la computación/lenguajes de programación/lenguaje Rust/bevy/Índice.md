@@ -2,7 +2,7 @@
 dia: 2024-07-08
 tags:
   - índice
-  - investigación/lenguajes-de-programación/lenguaje-Rust/bevy
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust/bevy
 estado: Falta resumir
 ---
 ```dataviewjs

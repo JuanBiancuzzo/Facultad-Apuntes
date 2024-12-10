@@ -4,7 +4,7 @@ estado: Sin empezar
 tags:
   - índice
   - nota/investigacion
-  - investigación/sistemas-operativos/memory-management
+  - investigación/ciencias-de-la-computación/sistemas-operativos/memory-management
 referencias:
   - "362"
 etapa: sin-empezar

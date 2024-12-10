@@ -3,6 +3,7 @@ dia: 2024-07-24
 tags:
   - índice
   - investigación/dibujo/colores
+  - nota/investigacion
 estado: Falta resumir
 ---
 ```dataviewjs
