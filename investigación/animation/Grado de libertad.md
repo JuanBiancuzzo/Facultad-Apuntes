@@ -6,6 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - investigación/animation
+  - investigación/game-engine/Animation-Engine
 aliases:
   - Degrees of freedom
   - DOF

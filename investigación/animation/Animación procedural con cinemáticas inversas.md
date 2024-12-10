@@ -11,6 +11,7 @@ aliases:
 tags:
   - nota/investigacion
   - investigación/animation
+  - investigación/game-engine/Animation-Engine
 orden: 161
 ---
 ```dataviewjs

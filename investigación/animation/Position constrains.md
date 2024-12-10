@@ -6,6 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - investigación/animation
+  - investigación/game-engine/Animation-Engine
 orden: 8
 ---
 ```dataviewjs

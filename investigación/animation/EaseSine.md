@@ -7,6 +7,7 @@ referencias:
 tags:
   - nota/investigacion
   - investigación/animation
+  - investigación/game-engine/Animation-Engine
 aliases:
   - EaseInSine
   - EaseOutSine

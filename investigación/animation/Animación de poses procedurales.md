@@ -6,6 +6,7 @@ referencias:
 tags:
   - nota/investigacion
   - investigación/animation
+  - investigación/game-engine/Animation-Engine
 aliases:
   - Procedural pose animation
 orden: 226
