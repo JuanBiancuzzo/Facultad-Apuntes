@@ -251,10 +251,11 @@
 		let nuevaTag = tp.user.tagPorNombre(`${carpeta}/${nombreTema}`);
 		if (temaEquivalente) {
 			let tagTemaEquivalente = tp.user.tagPorNombre(temaEquivalente.file.folder);
-			let archivosAModificar = dv.pages(`-#índice and #nota and #${tagTemaEquivalente}`)
+			let archivosAModificar = dv.pages(`#nota and #${tagTemaEquivalente}`)
 				.map(archivo => app.fileManager.processFrontMatter(tp.file.find_tfile(archivo.file.path), (frontmatter) => {
 					let tags = frontmatter["tags"] ? frontmatter["tags"] : [];
-					tags.push(nuevaTag);
+					tags.filter(tag => tag.startsWith(tagTemaEquivalente))
+						.forEach(tag => tags.push(tag.replace(tagTemaEquivalente, nuevaTag)));
 					frontmatter["tags"] = tags;
 				}));
 			await Promise.all(archivosAModificar);

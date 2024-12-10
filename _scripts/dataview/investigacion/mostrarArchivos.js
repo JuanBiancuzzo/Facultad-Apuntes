@@ -8,15 +8,21 @@ if (!indice) {
     return;
 }
 
-let carpeta = indice.file.folder;
-if (indice.equivalente) carpeta += `/${indice.file.name}`;
-let tagRepresentante = obtenerTag(carpeta);
+let equivalente;
+if (indice.equivalente) equivalente = dv.page(indice.equivalente.path);
 
-let nivelSiguiente = indice.file.folder.split("/").length;
-if (!indice.equivalente) nivelSiguiente++;
+let carpeta = indice.file.folder;
+if (equivalente) carpeta += `/${indice.file.name}`;
+
+let tagRepresentante = obtenerTag(carpeta);
+let tagEquivalente;
+if (equivalente) tagEquivalente = obtenerTag(equivalente.file.folder);
+
+let nivelActual = indice.file.folder.split("/").length;
+if (equivalente) equivalente.file.folder.split("/").length;
 
 let subTemas = dv.pages(`#${tagRepresentante} and #índice`)
-    .filter(ind => ind.file.folder.split("/").length == nivelSiguiente);
+    .filter(ind => ind.file.folder.split("/").length == nivelActual + 1);
 
 let archivos = dv.pages(`#${tagRepresentante} and #nota`)
     .flatMap(archivo => {
@@ -76,8 +82,13 @@ let archivos = dv.pages(`#${tagRepresentante} and #nota`)
     })
     .sort(({ referencias, ..._ }) => referencias ? dv.array(referencias).min() : 0)
     .groupBy(({ tag, ..._ }) => subTemas.findIndex(subTema => {
-        if (subTema.equivalente) subTema = dv.page(subTema.equivalente.path);
-        return tag.startsWith(obtenerTag(subTema.file.folder));
+        let carpeta = subTema.file.folder;
+        if (subTema.equivalente) carpeta += `/${subTema.file.name}`;
+
+        let tagSubTema = obtenerTag(carpeta);
+        if (equivalente) tagSubTema = tagSubTema.replace(tagEquivalente, tagRepresentante)
+
+        return tag.startsWith(tagSubTema);
     }))
     .values
     .sort(({ key, rows }) => key)
