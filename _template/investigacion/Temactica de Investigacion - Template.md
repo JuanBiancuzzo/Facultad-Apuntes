@@ -244,8 +244,8 @@
 		}
 
 		let nuevoTag = tp.user.tagPorNombre(`${carpeta}/${nombreTema}`);
+		let tagsAAgregar = [ nuevoTag ];
 		if (temaEquivalente) {
-			let tagsAAgregar = [ nuevoTag ];
 
 			if (ultimoSupertema) {
 				let tagsDivididos = tp.user.tagPorNombre(ultimoSupertema.file.folder).replace("investigación/", "").split("/");
@@ -264,8 +264,6 @@
 				);
 			}
 
-			console.log(tagsAAgregar);
-
 			let tagTemaEquivalente = tp.user.tagPorNombre(temaEquivalente.file.folder);
 			let archivosAModificar = dv.pages(`(#nota or #índice) and #${tagTemaEquivalente}`)
 				.map(archivo => app.fileManager.processFrontMatter(tp.file.find_tfile(archivo.file.path), (frontmatter) => {
@@ -282,7 +280,7 @@
 
 		let metadata = {
 			dia: tp.file.creation_date("YYYY-MM-DD"),
-			tag: ["índice", nuevoTag, "nota/investigacion"]
+			tag: ["índice", ...nuevoTag, "nota/investigacion"]
 		};
 
 		if (temaEquivalente) {

@@ -9,7 +9,7 @@ let carpeta = indice.file.folder;
 if (indice.equivalente) carpeta += `/${indice.file.name}`;
 let tag = carpeta.trim().replaceAll(",", "").replaceAll(" ", "-");
 
-let paginas = dv.pages(`#${tag} and -#índice and -#referencia`)
+let paginas = dv.pages(`#${tag} and (#índice or #nota) and -#referencia`)
     .flatMap(pagina => pagina.referencias);
 let paginasReferencias = dv.pages(`#${tag} and -#índice and #referencia`)
     .flatMap(referencia => {

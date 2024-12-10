@@ -18,11 +18,18 @@ let tagRepresentante = obtenerTag(carpeta);
 let tagEquivalente;
 if (equivalente) tagEquivalente = obtenerTag(equivalente.file.folder);
 
-let nivelActual = indice.file.folder.split("/").length;
-if (equivalente) equivalente.file.folder.split("/").length;
+let nivelActual = tagRepresentante.split("/").length;
 
 let subTemas = dv.pages(`#${tagRepresentante} and #índice`)
-    .filter(ind => ind.file.folder.split("/").length == nivelActual + 1);
+    .filter(ind => {
+        let tagsInd = ind.tags?.filter(tag => tag.startsWith(tagRepresentante));
+        if (!tagsInd) return false; 
+
+        let tagIndLargo = tagsInd.map(tag => [tag, tag.split("/").length])
+            .sort(([_, largo]) => largo)[0][1];
+
+        return tagIndLargo == nivelActual + 1;
+    });
 
 let archivos = dv.pages(`#${tagRepresentante} and #nota`)
     .flatMap(archivo => {
@@ -82,11 +89,11 @@ let archivos = dv.pages(`#${tagRepresentante} and #nota`)
     })
     .sort(({ referencias, ..._ }) => referencias ? dv.array(referencias).min() : 0)
     .groupBy(({ tag, ..._ }) => subTemas.findIndex(subTema => {
-        let carpeta = subTema.file.folder;
-        if (subTema.equivalente) carpeta += `/${subTema.file.name}`;
+        let tagsInd = subTema.tags?.filter(tag => tag.startsWith(tagRepresentante));
+        if (!tagsInd) return false; 
 
-        let tagSubTema = obtenerTag(carpeta);
-        if (equivalente) tagSubTema = tagSubTema.replace(tagEquivalente, tagRepresentante)
+        let tagSubTema = tagsInd.map(tag => [tag, tag.split("/").length])
+            .sort(([_, largo]) => largo)[0][0];
 
         return tag.startsWith(tagSubTema);
     }))
@@ -108,8 +115,11 @@ let archivos = dv.pages(`#${tagRepresentante} and #nota`)
             if (key < 0) return;
 
             let subTema = subTemas[key];
-            let tema = subTema.file.folder.split("/").pop();
-            tema = `${tema.charAt(0).toUpperCase()}${tema.slice(1)}`;
+            let tema = subTema.file.name;
+            if (tema == "Índice") {
+                let carpetaSubTema = subTema.file.folder.split("/").pop();
+                tema = `${carpetaSubTema.charAt(0).toUpperCase()}${carpetaSubTema.slice(1)}`;
+            }
             dv.el("div", `<h3 class="mostrarTitulo"> ${crearReferencia(subTema.file.path, "?")} ${tema} </h3> <hr>`);
 
             let tSubTema = app.vault.getAbstractFileByPath(subTema.file.path);

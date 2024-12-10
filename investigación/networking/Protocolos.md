@@ -1,9 +1,10 @@
 ---
 dia: 2024-12-10
-tag:
+tags:
   - índice
   - investigación/networking/Protocolos
   - nota/investigacion
+  - investigación/ciencias-de-la-computación/Networking/Protocolos
 equivalente: "[[investigación/protocolos/protocolo de internet/Protocolo de internet.md|Protocolo de internet]]"
 ---
 ```dataviewjs
