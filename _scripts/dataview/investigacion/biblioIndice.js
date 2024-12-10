@@ -5,7 +5,9 @@ if (!indice) {
     return;
 }
 
-let tag = indice.file.folder.trim().replaceAll(",", "").replaceAll(" ", "-");
+let carpeta = indice.file.folder;
+if (indice.equivalente) carpeta += `/${indice.file.name}`;
+let tag = carpeta.trim().replaceAll(",", "").replaceAll(" ", "-");
 
 let paginas = dv.pages(`#${tag} and -#índice and -#referencia`)
     .flatMap(pagina => pagina.referencias);

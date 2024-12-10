@@ -8,13 +8,17 @@ if (!indice) {
     return;
 }
 
-let tagRepresentante = obtenerTag(indice);
+let carpeta = indice.file.folder;
+if (indice.equivalente) carpeta += `/${indice.file.name}`;
+let tagRepresentante = obtenerTag(carpeta);
 
-let nivelActual = indice.file.folder.split("/").length;
+let nivelSiguiente = indice.file.folder.split("/").length;
+if (!indice.equivalente) nivelSiguiente++;
+
 let subTemas = dv.pages(`#${tagRepresentante} and #índice`)
-    .filter(ind => ind.file.folder.split("/").length == nivelActual + 1);
+    .filter(ind => ind.file.folder.split("/").length == nivelSiguiente);
 
-let archivos = dv.pages(`#${tagRepresentante} and (#nota/investigacion or #nota/facultad)`)
+let archivos = dv.pages(`#${tagRepresentante} and #nota`)
     .flatMap(archivo => {
         let resultado = [];
         let aliasesActual = archivo.aliases ? archivo.aliases : [];
@@ -71,7 +75,10 @@ let archivos = dv.pages(`#${tagRepresentante} and (#nota/investigacion or #nota/
         return resultado;
     })
     .sort(({ referencias, ..._ }) => referencias ? dv.array(referencias).min() : 0)
-    .groupBy(({ tag, ..._ }) => subTemas.findIndex(subTema => tag.startsWith(obtenerTag(subTema))))
+    .groupBy(({ tag, ..._ }) => subTemas.findIndex(subTema => {
+        if (subTema.equivalente) subTema = dv.page(subTema.equivalente.path);
+        return tag.startsWith(obtenerTag(subTema.file.folder));
+    }))
     .values
     .sort(({ key, rows }) => key)
     .map(({ key, rows }) => ({
@@ -119,17 +126,17 @@ let archivos = dv.pages(`#${tagRepresentante} and (#nota/investigacion or #nota/
 
 await dv.view("_scripts/dataview/mostrarElementos", { lista: archivos });
 
-function obtenerTag(indice) {
-    return indice.file.folder.trim()
-        .split(" ")
-        .filter(token => token.trim() != "-" && token.trim() != "")
-        .join("-");   
+function obtenerTag(carpeta) {
+    return carpeta.trim()
+        .replaceAll("-", "")
+        .replaceAll(",", "")
+        .replaceAll(" ", "-");
 }
 
 function conseguirEtapa(indice) {
     let etapasConsideradas = [];
 
-    let tagRepresentanteActual = obtenerTag(indice);    
+    let tagRepresentanteActual = obtenerTag(indice.file.folder);    
     dv.pages(`#${tagRepresentanteActual} and -#índice`)
         .filter(archivo => archivo.etapa)
         .forEach(archivo => etapasConsideradas.push(archivo.etapa));

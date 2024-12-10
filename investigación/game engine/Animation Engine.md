@@ -13,7 +13,6 @@ await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.c
 ---
 ![[investigación/animation/Animación.md#Resumen]]
 
-
 ## Archivos
 ---
 ```dataviewjs

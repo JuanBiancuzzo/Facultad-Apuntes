@@ -448,7 +448,6 @@ await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.c
 	}
 %>
 
-
 ## Archivos
 ---
 ```dataviewjs
