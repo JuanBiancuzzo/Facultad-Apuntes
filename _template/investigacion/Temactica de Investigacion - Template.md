@@ -8,7 +8,8 @@
 	const tArchivo = tp.file.find_tfile(tp.file.path(true)); 
 	const CREAR_TEMA = 1;
 
-	const PREGUNTAR_NOMBRE_TEMATICA = "nombre_tematica";
+	const PREGUNTAR_NOMBRE_TEMATICA = "nombre tematica";
+	const SACAR_NOMBRE_TEMATICA = "sacar nombre";
 	const PREGUNTAR_SUPERTEMA = "supertema"
 	const MODIFICAR_SUPERTEMA = "modificar supertema";
 	const ELIMINAR_SUPERTEMA = "eliminar supertema";
@@ -17,6 +18,8 @@
 	const ELIMINAR_EQUIVALENTE = "eliminar equivalente";
 	const SACAR_EQUIVALENTE = "sacar equivalente";
 	const SALIR = "salir";
+
+	let temaEquivalente = null;
 
 	try {
 
@@ -69,6 +72,10 @@
 					
 					datos[PREGUNTAR_NOMBRE_TEMATICA] = posibleNombre;
 					break;
+				
+				case SACAR_NOMBRE_TEMATICA:
+					datos[PREGUNTAR_NOMBRE_TEMATICA] = null;
+					break;
 
 				case PREGUNTAR_SUPERTEMA: // No deberia ser el caso que se pregunte si no hay temas posibles
 					let largoSupertemas = datos[PREGUNTAR_SUPERTEMA].length;
@@ -81,7 +88,7 @@
 						query += ` and #${tp.user.tagPorNombre(ultimoTema.file.folder)}`;
 						filtrarTemas = (tema) => {
 							if (tema.equivalente) {
-
+								return tema.file.folder.split("/").length == profundidad;
 							} else {
 								return tema.file.folder.split("/").length == profundidad + 1;
 							}
@@ -108,6 +115,10 @@
 						error.Prompt("No se eligió el super tema")
 					);
 
+					if (superTema.equivalente) {
+						superTema = dv.page(superTema.equivalente.path);
+					}
+
 					datos[PREGUNTAR_SUPERTEMA].push(superTema);
 					break;
 
@@ -125,8 +136,67 @@
 					datos[PREGUNTAR_SUPERTEMA].pop();
 					break;
 
-				case PREGUNTAR_EQUIVALENTE: break;
-				case SACAR_EQUIVALENTE: break;
+				case PREGUNTAR_EQUIVALENTE: 
+					let largoTemaEquivalente = datos[PREGUNTAR_EQUIVALENTE].length;
+					let queryTemaEquivalente = "#índice";
+					let filtrarTemasEquivalente = (tema) => tema.file.folder.split("/").length == 2;
+
+					if (largoTemaEquivalente > 0) {
+						let ultimoTema = datos[PREGUNTAR_EQUIVALENTE][largoTemaEquivalente - 1];
+						let profundidad = ultimoTema.file.folder.split("/").length
+						queryTemaEquivalente += ` and #${tp.user.tagPorNombre(ultimoTema.file.folder)}`;
+						filtrarTemasEquivalente = (tema) => {
+							if (tema.equivalente) {
+								return tema.file.folder.split("/").length == profundidad;
+							} else {
+								return tema.file.folder.split("/").length == profundidad + 1;
+							}
+						};
+					}
+
+					let indicesEquivalentes = dv.pages(queryTemaEquivalente)
+						.filter(filtrarTemasEquivalente)
+						.sort(tema => tema.file.name);
+
+					if (indicesEquivalentes.length == 0) {
+						new Notice("Hubo un error hay más indices de este tema");
+						break;
+					}
+
+					let temaEquivalente = await preguntar.suggester(
+						tp, temaEquivalente => {
+							if (temaEquivalente.file.name == "Índice") {
+								let carpeta = temaEquivalente.file.folder.split("/").pop();
+								return `${carpeta.charAt(0).toUpperCase()}${carpeta.slice(1)}`;
+							}
+							return temaEquivalente.file.name;
+						}, indicesEquivalentes, "Que tema va a ser equivalente?",
+						error.Prompt("No se eligió el tema equivalente")
+					);
+					if (temaEquivalente.equivalente) {
+						temaEquivalente = dv.page(temaEquivalente.equivalente.path);
+					}
+
+					datos[PREGUNTAR_EQUIVALENTE].push(temaEquivalente);
+					break;
+
+				case MODIFICAR_EQUIVALENTE:
+					if (indice == null) {
+						new Notice("Hubo un error al modificar tema, no se mando indice");
+						break;
+					}
+					datos[PREGUNTAR_EQUIVALENTE] = datos[PREGUNTAR_EQUIVALENTE].slice(0, indice);
+
+					respuesta = PREGUNTAR_EQUIVALENTE;
+					continue;
+
+				case ELIMINAR_EQUIVALENTE:
+					datos[PREGUNTAR_EQUIVALENTE].pop();
+					break;
+
+				case SACAR_EQUIVALENTE: 
+					datos[PREGUNTAR_EQUIVALENTE] = [];
+					break;
 			}
 
 
@@ -141,27 +211,75 @@
 			}
 		}
 
+
 		let nombreTema = datos[PREGUNTAR_NOMBRE_TEMATICA];
-		let largoSupertemas = datos[PREGUNTAR_SUPERTEMA].length;
-		let carpeta = `investigación/${nombreTema}`;
-		if (largoSupertemas > 0) {
-			carpeta = `${datos[PREGUNTAR_SUPERTEMA][largoSupertemas - 1].file.folder}/${nombreTema}`;
+		let largoSupertema = datos[PREGUNTAR_SUPERTEMA].length;
+		let ultimoSupertema = null;
+		if (largoSupertema > 0) ultimoSupertema = datos[PREGUNTAR_SUPERTEMA][largoSupertema - 1];
+		
+		temaEquivalente = null;
+		if (datos[PREGUNTAR_EQUIVALENTE].length > 0) {
+			let largoTemaEquivalente = datos[PREGUNTAR_EQUIVALENTE].length;
+			temaEquivalente = datos[PREGUNTAR_EQUIVALENTE][largoTemaEquivalente - 1];
+
+			let nombreTemaEquivalente = temaEquivalente.file.name;
+			if (nombreTemaEquivalente == "Índice") {
+				let carpeta = temaEquivalente.file.folder.split("/").pop();
+				nombreTemaEquivalente = `${carpeta.charAt(0).toUpperCase()}${carpeta.slice(1)}`;
+			}
+
+			if (!nombreTema) nombreTema = nombreTemaEquivalente;
+		}
+
+		let carpeta = "investigación";
+		if (largoSupertema > 0) {
+			carpeta = ultimoSupertema.file.folder;
 		}
 
 		try {
-			await app.vault.createFolder(carpeta);
-			await tp.file.move(`${carpeta}/${nombreTema}`);
+			if (!temaEquivalente) {
+				await app.vault.createFolder(`${carpeta}/${nombreTema}`);
+				await tp.file.move(`${carpeta}/${nombreTema}/${nombreTema}`);
+
+			} else {
+				await tp.file.move(`${carpeta}/${nombreTema}`);
+			}
 		} catch (_) {
 			throw error.Quit("No se pudo crear y mover el tema");
 		}
+
+		let nuevaTag = tp.user.tagPorNombre(`${carpeta}/${nombreTema}`);
+		if (temaEquivalente) {
+			let tagTemaEquivalente = tp.user.tagPorNombre(temaEquivalente.file.folder);
+			let archivosAModificar = dv.pages(`-#índice and #nota and #${tagTemaEquivalente}`)
+				.map(archivo => app.fileManager.processFrontMatter(tp.file.find_tfile(archivo.file.path), (frontmatter) => {
+					let tags = frontmatter["tags"] ? frontmatter["tags"] : [];
+					tags.push(nuevaTag);
+					frontmatter["tags"] = tags;
+				}));
+			await Promise.all(archivosAModificar);
+		}
+
+		let metadata = {
+			dia: tp.file.creation_date("YYYY-MM-DD"),
+			tag: ["índice", nuevaTag, "nota/investigacion"]
+		};
+
+		if (temaEquivalente) {
+			let nombreTemaEquivalente = temaEquivalente.file.name;
+			if (nombreTemaEquivalente == "Índice") {
+				let carpeta = temaEquivalente.file.folder.split("/").pop();
+				nombreTemaEquivalente = `${carpeta.charAt(0).toUpperCase()}${carpeta.slice(1)}`;
+			}
+			metadata["equivalente"] = `[[${temaEquivalente.file.path}|${nombreTemaEquivalente}]]`;
+
+		} else {
+			metadata["estado"] = "Sin empezar";
+			metadata["orden"] = mantenerOrden.siguienteValorOrden();
+		}
 		
 		tR += "---\n"; 
-		tR += tp.obsidian.stringifyYaml({
-			dia: tp.file.creation_date("YYYY-MM-DD"),
-			estado: "Sin empezar",
-			orden: mantenerOrden.siguienteValorOrden(),
-			tag: [ "índice", tp.user.tagPorNombre(carpeta), "nota/investigacion" ]
-		});
+		tR += tp.obsidian.stringifyYaml(metadata);
 		tR += "---\n";
 
 	} catch ({ name: nombre, message: mensaje }) {
@@ -188,14 +306,11 @@
 		let haySupertemas = datos[PREGUNTAR_SUPERTEMA].length > 0;
 		let hayEquivalencia = datos[PREGUNTAR_EQUIVALENTE].length > 0;
 
-		if (!haySupertemas && !hayEquivalencia) {
+		if (!haySupertemas) {
 			opciones.push(PREGUNTAR_SUPERTEMA);
 			valores.push("Elegir super tema (opcional)");
 
-			opciones.push(PREGUNTAR_EQUIVALENTE);
-			valores.push("Elegir tema equivalente (opcional)");
-
-		} else if (haySupertemas) {
+		} else {
 			let largoSupertemas = datos[PREGUNTAR_SUPERTEMA].length;
 
 			for (let [indice, superTema] of datos[PREGUNTAR_SUPERTEMA].entries()) {
@@ -205,7 +320,7 @@
 					let carpeta = superTema.file.folder.split("/").pop();
 					nombreSupertema = `${carpeta.charAt(0).toUpperCase()}${carpeta.slice(1)}`;
 				}
-				valores.push(`Modificar ${nombreSupertema}`);
+				valores.push(`Modificar super tema: ${nombreSupertema}`);
 			}
 
 			let query = "#índice";
@@ -216,7 +331,7 @@
 				query += ` and #${tp.user.tagPorNombre(ultimoTema.file.folder)}`;
 				filtrarTemas = (tema) => {
 					if (tema.equivalente) {
-
+						return tema.file.folder.split("/").length == profundidad;
 					} else {
 						return tema.file.folder.split("/").length == profundidad + 1;
 					}
@@ -224,7 +339,6 @@
 			}
 
 			let indices = dv.pages(query).filter(filtrarTemas);
-
 			if (indices.length > 0) {
 				opciones.push(PREGUNTAR_SUPERTEMA);
 				valores.push("Eligir super tema");
@@ -241,16 +355,72 @@
 				valores.push(`Eliminar ${nombreSupertema}`);
 			}
 
-		} else if (hayEquivalencia) {
+		} 
+		
+		if (!hayEquivalencia) {
+			opciones.push(PREGUNTAR_EQUIVALENTE);
+			valores.push("Elegir tema equivalente (opcional)");
+		} else {
+			let largoTemaEquivalente = datos[PREGUNTAR_EQUIVALENTE].length;
 
+			for (let [indice, temaEquivalente] of datos[PREGUNTAR_EQUIVALENTE].entries()) {
+				opciones.push(`${MODIFICAR_EQUIVALENTE}-${indice}`);
+				let nombreTemaEquivalente = temaEquivalente.file.name;
+				if (temaEquivalente.file.name == "Índice") {
+					let carpeta = temaEquivalente.file.folder.split("/").pop();
+					nombreTemaEquivalente = `${carpeta.charAt(0).toUpperCase()}${carpeta.slice(1)}`;
+				}
+				valores.push(`Modificar tema equivalente: ${nombreTemaEquivalente}`);
+			}
+
+			let query = "#índice";
+			let filtrarTemas = (tema) => tema.file.folder.split("/").length == 2;
+			if (largoTemaEquivalente > 0) {
+				let ultimoTema = datos[PREGUNTAR_EQUIVALENTE][largoTemaEquivalente - 1];
+				let profundidad = ultimoTema.file.folder.split("/").length
+				query += ` and #${tp.user.tagPorNombre(ultimoTema.file.folder)}`;
+				filtrarTemas = (tema) => {
+					if (tema.equivalente) {
+						return tema.file.folder.split("/").length == profundidad;
+					} else {
+						return tema.file.folder.split("/").length == profundidad + 1;
+					}
+				};
+			}
+
+			let indices = dv.pages(query).filter(filtrarTemas);
+			if (indices.length > 0) {
+				opciones.push(PREGUNTAR_EQUIVALENTE);
+				valores.push("Eligir tema equivalente");
+			}
+
+			if (largoTemaEquivalente > 0) {
+				opciones.push(ELIMINAR_EQUIVALENTE);
+				let ultimoTema = datos[PREGUNTAR_EQUIVALENTE][largoTemaEquivalente - 1];
+				let nombreTemaEquivalente = ultimoTema.file.name;
+				if (ultimoTema.file.name == "Índice") {
+					let carpeta = ultimoTema.file.folder.split("/").pop();
+					nombreTemaEquivalente = `${carpeta.charAt(0).toUpperCase()}${carpeta.slice(1)}`;
+				}
+				valores.push(`Eliminar ${nombreTemaEquivalente}`);
+			}
 		}
 
-		if (!hayEquivalencia) {
-			opciones.push(PREGUNTAR_NOMBRE_TEMATICA);
-			valores.push(datos[PREGUNTAR_NOMBRE_TEMATICA]
-				? `Modificar el nombre: ${datos[PREGUNTAR_NOMBRE_TEMATICA]}`
-				: "Determinar el nombre del tema"
-			);
+		opciones.push(PREGUNTAR_NOMBRE_TEMATICA);
+		valores.push(datos[PREGUNTAR_NOMBRE_TEMATICA]
+			? `Modificar el nombre: ${datos[PREGUNTAR_NOMBRE_TEMATICA]}`
+			: "Determinar el nombre del tema"
+		);
+
+		if (hayEquivalencia && datos[PREGUNTAR_NOMBRE_TEMATICA] != null) {
+			opciones.push(SACAR_NOMBRE_TEMATICA);
+			let ultimoTema = datos[PREGUNTAR_EQUIVALENTE][datos[PREGUNTAR_EQUIVALENTE].length - 1];
+			let nombreTemaEquivalente = ultimoTema.file.name;
+			if (ultimoTema.file.name == "Índice") {
+				let carpeta = ultimoTema.file.folder.split("/").pop();
+				nombreTemaEquivalente = `${carpeta.charAt(0).toUpperCase()}${carpeta.slice(1)}`;
+			}
+			valores.push(`Sacar el nombre y usar el de ${nombreTemaEquivalente}`);
 		}
 
 		if (hayEquivalencia || datos[PREGUNTAR_NOMBRE_TEMATICA] != null) {
@@ -264,13 +434,19 @@ _%>
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
 ```
-# ¿Qué se va a investigar?
----
-<% tp.file.cursor() %>
+<%*
+	if (!temaEquivalente) {
+		tR += "# ¿Qué se va a investigar?\n---\n\n\n";
+	}
 
-## Resumen
----
-Pendiente...
+	tR += "## Resumen\n---\n";
+
+	if (temaEquivalente) {
+		tR += `![[${temaEquivalente.file.path}#Resumen]]`;
+	} else {
+		tR += "%% Pendiente... %%";	
+	}
+%>
 
 
 ## Archivos
