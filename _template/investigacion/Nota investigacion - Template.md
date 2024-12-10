@@ -59,7 +59,7 @@
 		);	
 	}
 
-	let tag = indice.file.folder.trim().replaceAll(",", "").replaceAll(" ", "-");
+	let tag = tp.user.tagPorNombre(indice.file.folder);
 
 	let paginaHecha = tp.file.find_tfile(titulo);
 	if (paginaHecha && paginaHecha.stat.ctime != tArchivo.stat.ctime) {
@@ -97,18 +97,19 @@
 
 	await tp.file.move(`${indice.file.folder}/${titulo}`, tArchivo);
 
-	const dia = tp.file.creation_date("YYYY-MM-DD");
+	let tagEquivalentes = dv.pages("#índice")
+		.filter(ind => ind.equivalente && ind.equivalente.path == indice.file.path)
+		.map(equivalente => tp.user.tagPorNombre(`${equivalente.file.folder}/${equivalente.file.name}`))
+		.values;
 	
 	tR += "---\n"; 
-	tR += `dia: ${dia}\n`;
-	tR += "etapa: sin-empezar\n";
-	tR += `orden: ${mantenerOrden.siguienteValorOrden()}\n`;
-
-	tR += "referencias: \n";
-	for (let numRef of numReferencias) {
-		tR += ` - "${numRef}"\n`;
-	}
-	tR += `tags: \n - ${tag}\n - nota/investigacion\n`;
+	tR += tp.obsidian.stringifyYaml({
+		dia: tp.file.creation_date("YYYY-MM-DD"),
+		etapa: "sin-empezar",
+		orden: mantenerOrden.siguienteValorOrden(),
+		referencias: numReferencias,
+		tags: [ "nota/investigacion", tag ].concat(tagEquivalentes)
+	});
 	tR += "---";
 %>
 ```dataviewjs
