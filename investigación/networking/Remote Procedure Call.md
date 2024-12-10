@@ -8,6 +8,7 @@ tags:
   - nota/investigacion
   - ingeniería-en-informática/tpp
   - investigación/networking
+  - investigación/ciencias-de-la-computación/Networking
 aliases:
   - RPC
   - gRPC#gRPC

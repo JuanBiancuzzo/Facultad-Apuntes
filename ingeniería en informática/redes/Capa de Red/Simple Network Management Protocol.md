@@ -7,6 +7,7 @@ tags:
   - ingeniería-electrónica/redes/Capa-de-Red
   - investigación/networking
   - investigación/protocolos/protocolo-de-internet
+  - investigación/ciencias-de-la-computación/Networking
 aliases:
   - SNMP
   - Protocolo simple de administración de red

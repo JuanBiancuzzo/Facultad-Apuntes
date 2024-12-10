@@ -6,6 +6,7 @@ tags:
   - índice
   - nota/investigacion
   - investigación/networking/cybersecurity
+  - investigación/ciencias-de-la-computación/Networking/cybersecurity
 aliases:
   - Ciberseguridad
 referencias:

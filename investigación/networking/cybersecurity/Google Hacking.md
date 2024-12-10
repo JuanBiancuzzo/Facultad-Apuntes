@@ -6,7 +6,8 @@ referencias:
   - "484"
 tags:
   - nota/investigacion
-  - investigación/cybersecurity
+  - investigación/ciencias-de-la-computación/Networking/cybersecurity
+  - investigación/networking/cybersecurity
 aliases:
   - Google dorking
 ---

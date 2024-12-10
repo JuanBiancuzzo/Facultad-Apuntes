@@ -8,6 +8,7 @@ aliases:
 tags:
   - nota/investigacion
   - investigación/networking
+  - investigación/ciencias-de-la-computación/Networking
 orden: 341
 ---
 ```dataviewjs

@@ -6,6 +6,7 @@ tags:
   - nota/investigacion
   - ingeniería-electrónica/redes/Redes-de-computadoras
   - ingeniería-en-informática/redes/Redes-de-computadoras
+  - investigación/ciencias-de-la-computación/Networking
 estado: Falta resumir
 aliases:
   - Network

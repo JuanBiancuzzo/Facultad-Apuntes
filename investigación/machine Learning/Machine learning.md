@@ -101,7 +101,7 @@ Machine learning
     * BIRCH
     * Gaussian Mixture
 * NLP
-    * 
+    * a
 
 ## Resumen
 ---
