@@ -14,6 +14,8 @@ await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.c
 Vamos a ver como producir las mejores animaciones, con el menor esfuerzo posible y la mayor expresividad posible. Esto nos va a llevar a aprender sobre muchas cosas como inverse kinematic, rigging y otras cosas
 
 También vamos a ver animación tradicional para entender ese paradigma
+
+Vamos a investigar como se crean animaciones, y como mejorarlas, como propone el proyecto [[Better animations in my humble opinion|better animations in my humble opinion]]
 ## Resumen
 ---
 Nos podemos basar en canales como 

@@ -6,7 +6,7 @@ referencias:
   - "419"
 tags:
   - nota/investigacion
-  - investigación/game-engine/animation-Engine
+  - investigación/animation
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
