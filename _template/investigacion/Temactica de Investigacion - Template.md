@@ -203,7 +203,6 @@
 			let profundidad = 2 + largoSupertemas;
 			if (largoSupertemas > 0) {
 				let ultimoTema = datos[PREGUNTAR_SUPERTEMA][largoSupertemas - 1];
-				console.log(ultimoTema);
 				query += ` and #${tp.user.tagPorNombre(ultimoTema.file.folder)}`;
 			}
 

@@ -24,8 +24,9 @@ let archivos = dv.pages(`#${tagRepresentante} and (#nota/investigacion or #nota/
                 .sort(ref => parseInt(ref, 10))
         }
 
-        let esIndice = archivo.tags.some(tag => tag.startsWith("índice"));
-        let tags = archivo.tags.filter(tag => tag.startsWith(tagRepresentante));
+        let esIndice = archivo.tags?.some(tag => tag.startsWith("índice"));
+        let tags = archivo.tags?.filter(tag => tag.startsWith(tagRepresentante));
+        if (!tags) tags = [];
 
         for (let tag of tags) {
             let etapa = esIndice ? conseguirEtapa(archivo) : archivo.etapa;
