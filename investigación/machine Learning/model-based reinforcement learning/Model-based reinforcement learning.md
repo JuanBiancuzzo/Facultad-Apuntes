@@ -5,6 +5,7 @@ tags:
   - investigación/machine-Learning/model-based-reinforcement-learning
   - investigación/ciencias-de-la-computación/Machine-learning/model-based-reinforcement-learning
   - nota/investigacion
+  - investigación/matemática/Estadística/Machine-learning/model-based-reinforcement-learning
 estado: Falta resumir
 ---
 ```dataviewjs

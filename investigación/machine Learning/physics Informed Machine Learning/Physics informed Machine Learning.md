@@ -5,6 +5,7 @@ tags:
   - investigación/machine-Learning/physics-Informed-Machine-Learning
   - investigación/ciencias-de-la-computación/Machine-learning/physics-Informed-Machine-Learning
   - nota/investigacion
+  - investigación/matemática/Estadística/Machine-learning/physics-Informed-Machine-Learning
 estado: Falta resumir
 ---
 ```dataviewjs

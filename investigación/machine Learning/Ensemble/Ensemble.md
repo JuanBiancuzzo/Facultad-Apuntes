@@ -7,6 +7,7 @@ tags:
   - investigación/machine-Learning/Ensemble
   - nota/investigacion
   - investigación/ciencias-de-la-computación/Machine-learning/Ensemble
+  - investigación/matemática/Estadística/Machine-learning/Ensemble
 referencias:
   - "636"
 aliases:

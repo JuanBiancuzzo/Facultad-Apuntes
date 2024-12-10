@@ -25,6 +25,7 @@ tags:
   - nota/investigacion
   - investigación/machine-Learning/sequence-modeling
   - investigación/ciencias-de-la-computación/Machine-learning/sequence-modeling
+  - investigación/matemática/Estadística/Machine-learning/sequence-modeling
 aliases:
   - Phrase2Vec
 orden: 292

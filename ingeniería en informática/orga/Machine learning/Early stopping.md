@@ -8,6 +8,7 @@ tags:
   - nota/facultad
   - investigación/machine-Learning/Regularization
   - investigación/ciencias-de-la-computación/Machine-learning/Regularization
+  - investigación/matemática/Estadística/Machine-learning/Regularization
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

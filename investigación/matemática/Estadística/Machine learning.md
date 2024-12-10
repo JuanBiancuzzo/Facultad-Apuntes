@@ -1,23 +1,17 @@
 ---
-dia: 2024-10-02
-estado: Sin empezar
-tags:
+dia: 2024-12-10
+tag:
   - índice
-  - investigación/machine-Learning/sequence-modeling
-  - investigación/ciencias-de-la-computación/Machine-learning/sequence-modeling
-  - investigación/matemática/Estadística/Machine-learning/sequence-modeling
+  - nota/investigacion
+  - investigación/matemática/Estadística/Machine-learning
+equivalente: "[[investigación/machine Learning/Machine learning.md|Machine learning]]"
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
 ```
-# ¿Qué se va a investigar?
----
-
-
 ## Resumen
 ---
-Pendiente...
-
+![[investigación/machine Learning/Machine learning.md#Resumen]]
 
 ## Archivos
 ---

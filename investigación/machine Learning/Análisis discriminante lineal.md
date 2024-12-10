@@ -8,6 +8,7 @@ tags:
   - nota/investigacion
   - investigación/machine-Learning
   - investigación/ciencias-de-la-computación/Machine-learning
+  - investigación/matemática/Estadística/Machine-learning
 aliases:
   - ADL
   - Linear discriminant analysis

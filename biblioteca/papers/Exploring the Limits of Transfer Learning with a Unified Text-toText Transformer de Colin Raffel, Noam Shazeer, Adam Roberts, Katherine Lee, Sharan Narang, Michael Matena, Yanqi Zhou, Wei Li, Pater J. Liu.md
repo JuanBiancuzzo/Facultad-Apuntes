@@ -33,6 +33,7 @@ tags:
   - nota/investigacion
   - investigación/machine-Learning/transformers
   - investigación/ciencias-de-la-computación/Machine-learning/transformers
+  - investigación/matemática/Estadística/Machine-learning/transformers
 orden: 118
 ---
 ```dataviewjs

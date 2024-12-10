@@ -31,6 +31,7 @@ tags:
   - ingeniería-electrónica/algebra-2/Autovalores-y-autovectores
   - investigación/machine-Learning/sequence-modeling
   - investigación/ciencias-de-la-computación/Machine-learning/sequence-modeling
+  - investigación/matemática/Estadística/Machine-learning/sequence-modeling
 orden: 311
 ---
 ```dataviewjs

@@ -6,6 +6,7 @@ tags:
   - investigación/machine-Learning
   - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Machine-learning-deep-learning-e-interpretabilidad-algorítmica
   - investigación/ciencias-de-la-computación/Machine-learning
+  - investigación/matemática/Estadística/Machine-learning
 aliases:
   - AI
 estado: Falta resumir

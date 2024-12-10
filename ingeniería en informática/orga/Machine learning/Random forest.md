@@ -6,6 +6,7 @@ tags:
   - machine-Learning
   - investigación/machine-Learning/Ensemble
   - investigación/ciencias-de-la-computación/Machine-learning/Ensemble
+  - investigación/matemática/Estadística/Machine-learning/Ensemble
 referencias:
   - "640"
 etapa: sin-empezar

@@ -24,6 +24,7 @@ tags:
   - nota/investigacion
   - investigación/machine-Learning/Regularization
   - investigación/ciencias-de-la-computación/Machine-learning/Regularization
+  - investigación/matemática/Estadística/Machine-learning/Regularization
 aliases:
   - Weight-Sharing Regularization
 ---

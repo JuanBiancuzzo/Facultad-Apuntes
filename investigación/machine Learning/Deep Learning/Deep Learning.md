@@ -10,6 +10,8 @@ tags:
   - investigación/machine-Learning
   - investigación/ciencias-de-la-computación/Machine-learning/Deep-Learning
   - investigación/ciencias-de-la-computación/Machine-learning
+  - investigación/matemática/Estadística/Machine-learning/Deep-Learning
+  - investigación/matemática/Estadística/Machine-learning
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

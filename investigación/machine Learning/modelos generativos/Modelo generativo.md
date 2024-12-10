@@ -6,6 +6,7 @@ tags:
   - investigación/machine-Learning/modelos-generativos
   - investigación/ciencias-de-la-computación/Machine-learning/modelos-generativos
   - nota/investigacion
+  - investigación/matemática/Estadística/Machine-learning/modelos-generativos
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

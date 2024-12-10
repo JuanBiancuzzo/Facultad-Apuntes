@@ -20,6 +20,7 @@ tags:
   - nota/investigacion
   - investigación/machine-Learning/Deep-Learning
   - investigación/ciencias-de-la-computación/Machine-learning/Deep-Learning
+  - investigación/matemática/Estadística/Machine-learning/Deep-Learning
 aliases:
   - Deep Belief Networks
 ---

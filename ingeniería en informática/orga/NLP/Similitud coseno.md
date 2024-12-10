@@ -6,6 +6,7 @@ tags:
   - machine-Learning
   - investigación/machine-Learning/Natural-Language-Processing
   - investigación/ciencias-de-la-computación/Machine-learning/Natural-Language-Processing
+  - investigación/matemática/Estadística/Machine-learning/Natural-Language-Processing
 aliases:
   - Distancia coseno
 ---

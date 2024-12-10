@@ -7,6 +7,7 @@ tags:
   - nota/investigacion
   - investigación/machine-Learning/Ensemble
   - investigación/ciencias-de-la-computación/Machine-learning/Ensemble
+  - investigación/matemática/Estadística/Machine-learning/Ensemble
 orden: 266
 aliases:
   - Extreme gradient boosting

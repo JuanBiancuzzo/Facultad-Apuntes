@@ -4,6 +4,7 @@ tags:
   - índice
   - investigación/machine-Learning/red-Neuronal
   - investigación/ciencias-de-la-computación/Machine-learning/red-Neuronal
+  - investigación/matemática/Estadística/Machine-learning/red-Neuronal
 estado: Falta resumir
 ---
 ```dataviewjs
