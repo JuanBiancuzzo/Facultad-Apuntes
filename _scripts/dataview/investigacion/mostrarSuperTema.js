@@ -6,11 +6,13 @@ if (!indice) {
 }
 
 let carpetaSuperTema = indice.file.folder.split("/");
-carpetaSuperTema.pop();
+if (!indice.equivalente) {
+    carpetaSuperTema.pop();
+}
 carpetaSuperTema = carpetaSuperTema.join("/");
 
 let posiblesSupertema = dv.pages(`"${carpetaSuperTema}" and #índice`)
-    .filter(ind => ind.file.folder == carpetaSuperTema);
+    .filter(ind => !ind.equivalente && ind.file.folder == carpetaSuperTema);
 
 if (posiblesSupertema.length == 1) {
     let superTema = posiblesSupertema[0];
