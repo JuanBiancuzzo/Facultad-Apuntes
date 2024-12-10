@@ -7,6 +7,8 @@ tags:
   - ingeniería-en-informática/redes/Redes-de-computadoras
   - ingeniería-electrónica/redes/Redes-de-computadoras
   - investigación/protocolos/protocolo-de-internet
+  - investigación/networking/Protocolos
+  - investigación/ciencias-de-la-computación/Networking/Protocolos
 aliases:
   - Internet Protocol
   - IP

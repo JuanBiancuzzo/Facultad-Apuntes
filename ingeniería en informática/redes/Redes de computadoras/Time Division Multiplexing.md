@@ -11,6 +11,8 @@ tags:
   - investigación/protocolos/protocolo-de-internet
   - ingeniería-electrónica/redes/Capa-de-Enlace
   - ingeniería-electrónica/redes/Redes-de-computadoras
+  - investigación/networking/Protocolos
+  - investigación/ciencias-de-la-computación/Networking/Protocolos
 ---
 # Definición
 ---

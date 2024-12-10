@@ -8,6 +8,8 @@ tags:
   - investigación/networking
   - investigación/protocolos/protocolo-de-internet
   - investigación/ciencias-de-la-computación/Networking
+  - investigación/networking/Protocolos
+  - investigación/ciencias-de-la-computación/Networking/Protocolos
 aliases:
   - SNMP
   - Protocolo simple de administración de red

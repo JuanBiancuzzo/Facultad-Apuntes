@@ -5,6 +5,8 @@ tags:
   - nota/facultad
   - investigación/protocolos/protocolo-de-internet
   - ingeniería-electrónica/redes/Capa-Física-Inalámbrica
+  - investigación/networking/Protocolos
+  - investigación/ciencias-de-la-computación/Networking/Protocolos
 aliases:
   - Agente Discovery in Mobile IP
   - Care-of address#^COA
