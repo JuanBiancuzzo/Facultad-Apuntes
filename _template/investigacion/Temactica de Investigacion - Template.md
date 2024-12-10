@@ -71,16 +71,25 @@
 					break;
 
 				case PREGUNTAR_SUPERTEMA: // No deberia ser el caso que se pregunte si no hay temas posibles
-					let query = "#índice";
 					let largoSupertemas = datos[PREGUNTAR_SUPERTEMA].length;
-					let profundidad = 2 + largoSupertemas;
+					let query = "#índice";
+					let filtrarTemas = (tema) => tema.file.folder.split("/").length == 2;
+
 					if (largoSupertemas > 0) {
 						let ultimoTema = datos[PREGUNTAR_SUPERTEMA][largoSupertemas - 1];
+						let profundidad = ultimoTema.file.folder.split("/").length
 						query += ` and #${tp.user.tagPorNombre(ultimoTema.file.folder)}`;
+						filtrarTemas = (tema) => {
+							if (tema.equivalente) {
+
+							} else {
+								return tema.file.folder.split("/").length == profundidad + 1;
+							}
+						};
 					}
-					
+
 					let indices = dv.pages(query)
-						.filter(tema => tema.file.folder.split("/").length == profundidad)
+						.filter(filtrarTemas)
 						.sort(tema => tema.file.name);
 
 					if (indices.length == 0) {
@@ -200,14 +209,21 @@
 			}
 
 			let query = "#índice";
-			let profundidad = 2 + largoSupertemas;
+			let filtrarTemas = (tema) => tema.file.folder.split("/").length == 2;
 			if (largoSupertemas > 0) {
 				let ultimoTema = datos[PREGUNTAR_SUPERTEMA][largoSupertemas - 1];
+				let profundidad = ultimoTema.file.folder.split("/").length
 				query += ` and #${tp.user.tagPorNombre(ultimoTema.file.folder)}`;
+				filtrarTemas = (tema) => {
+					if (tema.equivalente) {
+
+					} else {
+						return tema.file.folder.split("/").length == profundidad + 1;
+					}
+				};
 			}
 
-			let indices = dv.pages(query)
-				.filter(tema => tema.file.folder.split("/").length == profundidad);
+			let indices = dv.pages(query).filter(filtrarTemas);
 
 			if (indices.length > 0) {
 				opciones.push(PREGUNTAR_SUPERTEMA);
