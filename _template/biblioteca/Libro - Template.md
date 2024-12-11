@@ -15,7 +15,8 @@
 
 
 	const tipoCita = "Libro";
-	let numReferencia = tp.user.generarNumReferencia();
+    let seguidorRef = tp.user.seguidorReferencias().new();
+	let numReferencia = seguidorRef.conseguirReferencia();
 	
 	const dia = tp.file.creation_date("YYYY-MM-DD");
 	
@@ -25,7 +26,7 @@
 	tR += `tipoCita: ${tipoCita}\n`;
 	tR += `numReferencia: ${parseInt(numReferencia, 10)}\n`;
 
-    let infoLibro = await tp.user.cita().citar(tp, tipoCita, numReferencia + 1);
+    let infoLibro = await tp.user.cita().citar(tp, tipoCita, seguidorRef);
 
 	let autores = [];
 	for (let autore of infoLibro.nombreAutores) {

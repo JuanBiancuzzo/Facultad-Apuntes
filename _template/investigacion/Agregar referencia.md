@@ -21,8 +21,9 @@ try {
     let referenciasFinal = [];
 
     if (modificacion == CREAR) {
+        let seguidorRef = tp.user.seguidorReferencias().new(dv);
+		let numReferencia = seguidorRef.conseguirReferencia();
 
-        let numReferencia = tp.user.generarNumReferencia(dv);
         await tp.user.cita().generar(tp, numReferencia);
         referenciasFinal = await agregarReferencia(tArchivo, numReferencia);
         

@@ -7,7 +7,8 @@
 	const MAX_NOMBRE = 252;
 
 	const tipoCita = "Paper";
-	let numReferencia = tp.user.generarNumReferencia();
+    let seguidorRef = tp.user.seguidorReferencias().new();
+	let numReferencia = seguidorRef.conseguirReferencia();
 	
 	const dia = tp.file.creation_date("YYYY-MM-DD");
 	
@@ -17,7 +18,7 @@
 	tR += `tipoCita: ${tipoCita}\n`;
 	tR += `numReferencia: ${parseInt(numReferencia, 10)}\n`;
 
-    let infoPaper = await tp.user.cita().citar(tp, tipoCita, numReferencia + 1);
+    let infoPaper = await tp.user.cita().citar(tp, tipoCita, seguidorRef);
 
 	let autores = [];
 	let exceso = false;

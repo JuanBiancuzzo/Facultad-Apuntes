@@ -35,31 +35,6 @@ const CITAS = [
     },
 ]
 
-class SeguidorReferencias {
-    constructor(numReferenciaInicial) {
-        this.numReferenciaActual = numReferenciaInicial;
-        this.devultos = [];
-    }
-
-    conseguirReferencia() {
-        if (this.devultos.length > 0)
-            return this.devultos.shift();
-        
-        let devolver = this.numReferenciaActual;
-        this.numReferenciaActual++;
-        return devolver;
-    }
-
-    devolverReferencia(numReferencia) {
-        let index = this.devultos.findIndex((element) => element > numReferencia);
-        if (index >= 0) {
-            this.devultos.splice(index, 1);
-        } else {
-            this.devultos.push(numReferencia);
-        }
-    }
-}
-
 async function generarCita(tp, numReferencia) {
     let tipoCita = await tp.system.suggester(
         CITAS.map(cita => cita.texto),
@@ -258,25 +233,23 @@ async function rellenarDatos(tp, generarInicio, seguidorRef, datosIniciales = un
     return respuestaFinal;
 }
 
-async function citarCita(tp, tipoCita, numReferenciaSiguiente) {    
+async function citarCita(tp, tipoCita, seguidorRef) {    
     const error = tp.user.error();
 
     let cita = CITAS.find(cita => cita.tipo === tipoCita);
     if (!cita) 
         throw error.Prompt(`El tipo de cita "${tipoCita}" no existe todavia`);
 
-    let seguidorRef = new SeguidorReferencias(numReferenciaSiguiente);
     return await rellenarDatos(tp, cita.citar, seguidorRef);
 }
 
-async function editarCita(tp, tipoCita, numReferenciaSiguiente, datosActuales) {
+async function editarCita(tp, tipoCita, seguidorRef, datosActuales) {
     const error = tp.user.error();
 
     let cita = CITAS.find(cita => cita.tipo === tipoCita);
     if (!cita) 
         throw error.Prompt(`El tipo de cita "${tipoCita}" no existe todavia`);
 
-    let seguidorRef = new SeguidorReferencias(numReferenciaSiguiente);
     return await rellenarDatos(tp, cita.citar, seguidorRef, datosActuales);
 }
 

@@ -6,6 +6,7 @@ tags:
 aliases:
   - Chip
   - CI
+  - Integrated Circuit
 referencias:
   - "253"
 etapa: ampliar

@@ -43,8 +43,8 @@
     }
     let datosViejos = JSON.parse(JSON.stringify(datosActuales));
 
-    let numReferencia = tp.user.generarNumReferencia(dv);
-    let datosNuevos = await tp.user.cita().editar(tp, referencia.tipoCita, numReferencia, datosActuales);
+    let seguidorRef = tp.user.seguidorReferencias().new(dv);
+    let datosNuevos = await tp.user.cita().editar(tp, referencia.tipoCita, seguidorRef, datosActuales);
 
     if (dvArchivo.tipoCita == LIBRO) {
         let nuevoAliases = dvArchivo.aliases ? dvArchivo.aliases : [];

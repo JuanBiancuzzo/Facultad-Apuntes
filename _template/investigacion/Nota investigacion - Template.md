@@ -39,7 +39,8 @@
 			break;
 
 		} else if (citar === NUEVA_CITA) {
-			let numReferencia = tp.user.generarNumReferencia(dv);
+    		let seguidorRef = tp.user.seguidorReferencias().new(dv);
+			let numReferencia = seguidorRef.conseguirReferencia();
 			
 			try { 
 				await tp.user.cita().generar(tp, numReferencia);

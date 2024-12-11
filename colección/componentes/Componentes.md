@@ -5,15 +5,18 @@ estado: Vamos a caracterizar los componentes que vaya usando para poder así ten
 ---
 Vamos a registrar y guardar la info de data sheets y curvas de comportamiento de componentes, para ya saber que tenemos que hacer para usarlos
 
-* [Makerverse Motor Driver](https://core-electronics.com.au/guides/makerverse-motor-driver-2-channel-application-guide/)
-* Step motor 28BYJ-48
-* Servo
-* VS1838B
-* 555 timer IC
-* W65C02S - 8-bit microprocessor
-
-Vamos a separarlos en 4 grupos
+Vamos a separarlos en $5$ grupos
 * Sensores
+    * VS1838B - Led infrarrojo
+    * LM35 - Sensor de temperatura
 * Actuadores
+    * [Makerverse Motor Driver](https://core-electronics.com.au/guides/makerverse-motor-driver-2-channel-application-guide/)
+    * Step motor 28BYJ-48
+    * Servo
 * Microprocesadores
+    * W65C02S - 8-bit microprocessor
+* Circuitos integrados
+    * 555 timer IC
 * Placas de desarrollo
+    * Arduino
+    * STM
