@@ -5,7 +5,6 @@ tags:
   - nota/facultad
   - ingeniería-electrónica/estructura/Sistemas-numéricos
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
-  - resumen/materia
   - licenciatura-en-ciencias-de-datos/algebra-1/Números-enteros
 aliases:
   - Desarrollo de un número entero en base d
