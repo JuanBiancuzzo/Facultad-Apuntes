@@ -147,7 +147,7 @@
 		}
 	}
 
-	async function actualizarDatos(datos, respuesta) {
+	async function actualizarDatos(tp, datos, respuesta) {
 		let salir = false;
 		let separados = respuesta.split("-");
 		respuesta = separados[0];
@@ -306,7 +306,7 @@
 		return salir;
 	}
 
-	function representarDatos(datos) {
+	function representarDatos(tp, datos) {
 		let valores = [];
 		let opciones = [];
 

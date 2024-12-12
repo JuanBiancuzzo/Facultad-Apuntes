@@ -11,14 +11,14 @@ async function crearPreguntas(
 
     let datos = obtenerDefault();
     if (datosPrevios) {
-        for (let [key, _] of Object.entries(datos)) {
+        for (let [key, _] of Object.entries(tp, datos)) {
             if (key in datosPrevios) {
                 datos[key] = datosPrevios[key];
             }
         }
     }
 
-    let { opciones, valores } = generarPreguntas(datos);
+    let { opciones, valores } = generarPreguntas(tp, datos);
 
     let respuesta = opciones[0];
     if (opciones.length > 1) {
@@ -27,9 +27,9 @@ async function crearPreguntas(
         );
     }
 
-    let continuar = await actualizarDatos(datos, respuesta);
+    let continuar = await actualizarDatos(tp, datos, respuesta);
     while (!continuar) {
-        let { opciones, valores } = generarPreguntas(datos);
+        let { opciones, valores } = generarPreguntas(tp, datos);
 
         respuesta = opciones[0];
         if (opciones.length > 1) {
@@ -38,7 +38,7 @@ async function crearPreguntas(
             );
         }
 
-        continuar = await actualizarDatos(datos, respuesta);
+        continuar = await actualizarDatos(tp, datos, respuesta);
     }
 
     return datos;
