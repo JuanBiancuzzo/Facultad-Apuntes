@@ -23,188 +23,11 @@
 
 	try {
 
-		let datos = {
-			[PREGUNTAR_NOMBRE_TEMATICA]: null,
-			[PREGUNTAR_SUPERTEMA]: [],
-			[PREGUNTAR_EQUIVALENTE]: [],
-		};
-
-		let { opciones, valores } = representarDatos(datos);
-		let respuesta = opciones[0];
-		if (opciones.length > 1) {
-			respuesta = await preguntar.suggester(
-				tp, valores, opciones,
-				"Completar para poder crear el tema",
-				error.Prompt("No se completó los datos necesarios")
-			);
-		}
-
-		while (respuesta != SALIR) {
-			let separados = respuesta.split("-");
-			respuesta = separados[0];
-
-			let indice = null;
-			if (separados.length > 1) indice = parseInt(separados[1], 10);
-
-			switch (respuesta) {
-				case PREGUNTAR_NOMBRE_TEMATICA: 
-					let posibleNombre = await preguntar.prompt(
-						tp, "Nombre del tema", error.Prompt("No se ingresó un tema")
-					);
-
-					if (!validar.validarNombre(tp, posibleNombre)) {
-						new Notice("El nombre no es valido");
-						break;
-					}
-
-					let posibleNombreLowerCase = posibleNombre.toLowerCase();
-					let eliminarDesde = datos[PREGUNTAR_SUPERTEMA].findIndex(superTema => {
-						let nombreArchivo = superTema.file.name.toLowerCase() == posibleNombreLowerCase;
-						let nombrePath = superTema.file.folder.split("/").pop().toLowerCase() == posibleNombreLowerCase;
-
-						return nombreArchivo || nombrePath;
-					});
-
-					if (eliminarDesde >= 0) {
-						datos[PREGUNTAR_SUPERTEMA] = datos[PREGUNTAR_SUPERTEMA].slice(eliminarDesde);
-						new Notice("Se sacaron super temas ya que se repetian los nombres");
-					}
-					
-					datos[PREGUNTAR_NOMBRE_TEMATICA] = posibleNombre;
-					break;
-				
-				case SACAR_NOMBRE_TEMATICA:
-					datos[PREGUNTAR_NOMBRE_TEMATICA] = null;
-					break;
-
-				case PREGUNTAR_SUPERTEMA: // No deberia ser el caso que se pregunte si no hay temas posibles
-					let largoSupertemas = datos[PREGUNTAR_SUPERTEMA].length;
-					let query = "#índice";
-					let profundidad = 2 + largoSupertemas;
-
-					if (largoSupertemas > 0) {
-						let ultimoTema = datos[PREGUNTAR_SUPERTEMA][largoSupertemas - 1];
-						query += ` and #${tp.user.tagPorNombre(ultimoTema.file.folder)}`;
-					}
-
-					let indices = dv.pages(query)
-						.filter(tema => {
-							let profundidadTema = tema.file.folder.split("/").length;
-							return (tema.equivalente) 
-								? profundidadTema + 1 == profundidad 
-								: profundidadTema == profundidad;
-						})
-						.sort(tema => tema.file.name);
-
-					if (indices.length == 0) {
-						new Notice("Hubo un error hay más indices de este tema");
-						break;
-					}
-
-					let superTema = await preguntar.suggester(
-						tp, superTema => {
-							if (superTema.file.name == "Índice") {
-								let carpeta = superTema.file.folder.split("/").pop();
-								return `${carpeta.charAt(0).toUpperCase()}${carpeta.slice(1)}`;
-							}
-							return superTema.file.name;
-						}, indices, "Que supertema es este tema?",
-						error.Prompt("No se eligió el super tema")
-					);
-
-					if (superTema.equivalente) {
-						superTema = dv.page(superTema.equivalente.path);
-					}
-
-					datos[PREGUNTAR_SUPERTEMA].push(superTema);
-					break;
-
-				case MODIFICAR_SUPERTEMA: 
-					if (indice == null) {
-						new Notice("Hubo un error al modificar tema, no se mando indice");
-						break;
-					}
-					datos[PREGUNTAR_SUPERTEMA] = datos[PREGUNTAR_SUPERTEMA].slice(0, indice);
-
-					respuesta = PREGUNTAR_SUPERTEMA;
-					continue;
-
-				case ELIMINAR_SUPERTEMA: 
-					datos[PREGUNTAR_SUPERTEMA].pop();
-					break;
-
-				case PREGUNTAR_EQUIVALENTE: 
-					let largoTemaEquivalente = datos[PREGUNTAR_EQUIVALENTE].length;
-					let profundidadEquivalente = largoTemaEquivalente + 2;
-					let queryTemaEquivalente = "#índice";
-
-					if (largoTemaEquivalente > 0) {
-						let ultimoTema = datos[PREGUNTAR_EQUIVALENTE][largoTemaEquivalente - 1];
-						queryTemaEquivalente += ` and #${tp.user.tagPorNombre(ultimoTema.file.folder)}`;
-					}
-
-					let indicesEquivalentes = dv.pages(queryTemaEquivalente)
-						.filter(tema => {
-							let profundidadTema = tema.file.folder.split("/").length;
-							return (tema.equivalente) 
-								? profundidadTema + 1 == profundidadEquivalente 
-								: profundidadTema == profundidadEquivalente;
-						})
-						.sort(tema => tema.file.name);
-
-					if (indicesEquivalentes.length == 0) {
-						new Notice("Hubo un error hay más indices de este tema");
-						break;
-					}
-
-					let temaEquivalente = await preguntar.suggester(
-						tp, temaEquivalente => {
-							if (temaEquivalente.file.name == "Índice") {
-								let carpeta = temaEquivalente.file.folder.split("/").pop();
-								return `${carpeta.charAt(0).toUpperCase()}${carpeta.slice(1)}`;
-							}
-							return temaEquivalente.file.name;
-						}, indicesEquivalentes, "Que tema va a ser equivalente?",
-						error.Prompt("No se eligió el tema equivalente")
-					);
-					if (temaEquivalente.equivalente) {
-						temaEquivalente = dv.page(temaEquivalente.equivalente.path);
-					}
-
-					datos[PREGUNTAR_EQUIVALENTE].push(temaEquivalente);
-					break;
-
-				case MODIFICAR_EQUIVALENTE:
-					if (indice == null) {
-						new Notice("Hubo un error al modificar tema, no se mando indice");
-						break;
-					}
-					datos[PREGUNTAR_EQUIVALENTE] = datos[PREGUNTAR_EQUIVALENTE].slice(0, indice);
-
-					respuesta = PREGUNTAR_EQUIVALENTE;
-					continue;
-
-				case ELIMINAR_EQUIVALENTE:
-					datos[PREGUNTAR_EQUIVALENTE].pop();
-					break;
-
-				case SACAR_EQUIVALENTE: 
-					datos[PREGUNTAR_EQUIVALENTE] = [];
-					break;
-			}
-
-
-			let { opciones, valores } = representarDatos(datos);
-			respuesta = opciones[0];
-			if (opciones.length > 1) {
-				respuesta = await preguntar.suggester(
-					tp, valores, opciones,
-					"Completar para poder crear el tema",
-					error.Prompt("No se completó los datos necesarios")
-				);
-			}
-		}
-
+		let datos = await tp.user.crearPreguntas(
+			tp, defaultDatos, 
+			actualizarDatos, representarDatos, 
+			"Completar para poder crear el tema"
+		);
 
 		let nombreTema = datos[PREGUNTAR_NOMBRE_TEMATICA];
 		let largoSupertema = datos[PREGUNTAR_SUPERTEMA].length;
@@ -314,6 +137,173 @@
 				console.log(nombre);
 				console.log(mensaje);
         }
+	}
+
+	function defaultDatos() {
+		return {
+			[PREGUNTAR_NOMBRE_TEMATICA]: null,
+			[PREGUNTAR_SUPERTEMA]: [],
+			[PREGUNTAR_EQUIVALENTE]: [],
+		}
+	}
+
+	async function actualizarDatos(datos, respuesta) {
+		let salir = false;
+		let separados = respuesta.split("-");
+		respuesta = separados[0];
+
+		let indice = null;
+		if (separados.length > 1) indice = parseInt(separados[1], 10);
+
+		switch (respuesta) {
+			case PREGUNTAR_NOMBRE_TEMATICA:
+				let posibleNombre = await preguntar.prompt(
+					tp, "Nombre del tema", error.Prompt("No se ingresó un tema")
+				);
+
+				if (!validar.validarNombre(tp, posibleNombre)) {
+					new Notice("El nombre no es valido");
+					break;
+				}
+
+				let posibleNombreLowerCase = posibleNombre.toLowerCase();
+				let eliminarDesde = datos[PREGUNTAR_SUPERTEMA].findIndex(superTema => {
+					let nombreArchivo = superTema.file.name.toLowerCase() == posibleNombreLowerCase;
+					let nombrePath = superTema.file.folder.split("/").pop().toLowerCase() == posibleNombreLowerCase;
+
+					return nombreArchivo || nombrePath;
+				});
+
+				if (eliminarDesde >= 0) {
+					datos[PREGUNTAR_SUPERTEMA] = datos[PREGUNTAR_SUPERTEMA].slice(eliminarDesde);
+					new Notice("Se sacaron super temas ya que se repetian los nombres");
+				}
+
+				datos[PREGUNTAR_NOMBRE_TEMATICA] = posibleNombre;
+				break;
+
+			case SACAR_NOMBRE_TEMATICA:
+				datos[PREGUNTAR_NOMBRE_TEMATICA] = null;
+				break;
+
+			case MODIFICAR_SUPERTEMA:
+				if (indice == null) {
+					new Notice("Hubo un error al modificar tema, no se mando indice");
+					salir = true;
+					break;
+				}
+				datos[PREGUNTAR_SUPERTEMA] = datos[PREGUNTAR_SUPERTEMA].slice(0, indice);
+
+			case PREGUNTAR_SUPERTEMA: // No deberia ser el caso que se pregunte si no hay temas posibles
+				let largoSupertemas = datos[PREGUNTAR_SUPERTEMA].length;
+				let query = "#índice";
+				let profundidad = 2 + largoSupertemas;
+
+				if (largoSupertemas > 0) {
+					let ultimoTema = datos[PREGUNTAR_SUPERTEMA][largoSupertemas - 1];
+					query += ` and #${tp.user.tagPorNombre(ultimoTema.file.folder)}`;
+				}
+
+				let indices = dv.pages(query)
+					.filter(tema => {
+						let profundidadTema = tema.file.folder.split("/").length;
+						return (tema.equivalente)
+							? profundidadTema + 1 == profundidad
+							: profundidadTema == profundidad;
+					})
+					.sort(tema => tema.file.name);
+
+				if (indices.length == 0) {
+					new Notice("Hubo un error hay más indices de este tema");
+					break;
+				}
+
+				let superTema = await preguntar.suggester(
+					tp, superTema => {
+						if (superTema.file.name == "Índice") {
+							let carpeta = superTema.file.folder.split("/").pop();
+							return `${carpeta.charAt(0).toUpperCase()}${carpeta.slice(1)}`;
+						}
+						return superTema.file.name;
+					}, indices, "Que supertema es este tema?",
+					error.Prompt("No se eligió el super tema")
+				);
+
+				if (superTema.equivalente) {
+					superTema = dv.page(superTema.equivalente.path);
+				}
+
+				datos[PREGUNTAR_SUPERTEMA].push(superTema);
+				break;
+
+			case ELIMINAR_SUPERTEMA:
+				datos[PREGUNTAR_SUPERTEMA].pop();
+				break;
+
+
+			case MODIFICAR_EQUIVALENTE:
+				if (indice == null) {
+					new Notice("Hubo un error al modificar tema, no se mando indice");
+					salir = true;
+					break;
+				}
+				datos[PREGUNTAR_EQUIVALENTE] = datos[PREGUNTAR_EQUIVALENTE].slice(0, indice);
+
+			case PREGUNTAR_EQUIVALENTE:
+				let largoTemaEquivalente = datos[PREGUNTAR_EQUIVALENTE].length;
+				let profundidadEquivalente = largoTemaEquivalente + 2;
+				let queryTemaEquivalente = "#índice";
+
+				if (largoTemaEquivalente > 0) {
+					let ultimoTema = datos[PREGUNTAR_EQUIVALENTE][largoTemaEquivalente - 1];
+					queryTemaEquivalente += ` and #${tp.user.tagPorNombre(ultimoTema.file.folder)}`;
+				}
+
+				let indicesEquivalentes = dv.pages(queryTemaEquivalente)
+					.filter(tema => {
+						let profundidadTema = tema.file.folder.split("/").length;
+						return (tema.equivalente)
+							? profundidadTema + 1 == profundidadEquivalente
+							: profundidadTema == profundidadEquivalente;
+					})
+					.sort(tema => tema.file.name);
+
+				if (indicesEquivalentes.length == 0) {
+					new Notice("Hubo un error hay más indices de este tema");
+					break;
+				}
+
+				let temaEquivalente = await preguntar.suggester(
+					tp, temaEquivalente => {
+						if (temaEquivalente.file.name == "Índice") {
+							let carpeta = temaEquivalente.file.folder.split("/").pop();
+							return `${carpeta.charAt(0).toUpperCase()}${carpeta.slice(1)}`;
+						}
+						return temaEquivalente.file.name;
+					}, indicesEquivalentes, "Que tema va a ser equivalente?",
+					error.Prompt("No se eligió el tema equivalente")
+				);
+				if (temaEquivalente.equivalente) {
+					temaEquivalente = dv.page(temaEquivalente.equivalente.path);
+				}
+
+				datos[PREGUNTAR_EQUIVALENTE].push(temaEquivalente);
+				break;
+
+			case ELIMINAR_EQUIVALENTE:
+				datos[PREGUNTAR_EQUIVALENTE].pop();
+				break;
+
+			case SACAR_EQUIVALENTE:
+				datos[PREGUNTAR_EQUIVALENTE] = [];
+				break;
+
+			case SALIR:
+				salir = true;
+				break;
+		}
+
+		return salir;
 	}
 
 	function representarDatos(datos) {
