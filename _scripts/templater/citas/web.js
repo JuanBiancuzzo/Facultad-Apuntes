@@ -1,10 +1,13 @@
 const NOMBRE_AUTORES = "nombreAutores";
+const MODIFICAR_AUTOR = "modificar autore";
+const ELIMINAR_AUTOR = "eliminar autore";
 const FECHA_PUBLICACION = "fechaPublicacion";
 const TITULO_ARTICULO = "tituloArticulo";
 const NOMBRE_PAGINA = "nombrePagina";
 const URL = "url";
+const SALIR = "salir";
 
-const KEYS = [ NOMBRE_AUTORES, FECHA_PUBLICACION, TITULO_ARTICULO, NOMBRE_PAGINA, URL ];
+const DATOS_SIMPLES = [ FECHA_PUBLICACION, TITULO_ARTICULO, NOMBRE_PAGINA, URL ];
 
 function valorDefault() {
     return {
@@ -16,117 +19,153 @@ function valorDefault() {
     };
 }
 
-async function citarWeb(tp, datosIniciales = undefined) {
-    const { 
-        simple: SIMPLE, 
-        multiple: MULTIPLE, 
-        ..._extra 
-    } = tp.user.constantes().tipoDatoCita;
+async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
     const preguntar = tp.user.preguntar();
     const describir = tp.user.describir();
-    const cte = tp.user.constantes();
     const error = tp.user.error();
+    const cte = tp.user.constantes();
 
-    let valoresNeutro = valorDefault();
-    if (!datosIniciales) datosIniciales = {};
-    for (let key of Object.keys(valoresNeutro)) {
-        if ((!(key in datosIniciales)) || !datosIniciales[key]) 
-            datosIniciales[key] = valoresNeutro[key];
-    }
+    let salir = false;
+    let separacion = respuesta.split("-");
+    respuesta = separacion[0];
+    let indice;
 
-    return {
-        [NOMBRE_AUTORES]: {
-            tipo: MULTIPLE,
-            valor: datosIniciales[NOMBRE_AUTORES],
-            minimo: (valor) => valor.length > 0,
-            representarElemento: (autore) => {
-                if (autore == null) return "autore";
-                return `${autore.apellido}, ${autore.nombre}`;
-            },
-            preguntar: async (tp, autore, _seguidorRef) => {
-                let textoNombre = "Nombre del autore";
-                let textoApellido = "Apellido del autore";
-                if (autore) {
-                    textoNombre += `, donde antes era ${autore.nombre}`;
-                    textoApellido += `, donde antes era ${autore.apellido}`;
-                }
+    switch (respuesta) {
+        case MODIFICAR_AUTOR: 
+            indice = separacion[1];
+            let { nombre: viejoNombre, apellido: viejoApellido } = datos[NOMBRE_AUTORES][indice];
 
-                return {
-                    apellido: await preguntar.simple(
-                        tp, `${textoApellido}:`, 
-                        error.Quit("No se ingresa el apellido del autore de forma correcta")
-                    ),
-                    nombre: await preguntar.simple(
-                        tp, `${textoNombre}:`, 
-                        error.Quit("No se ingresa el nombre del autore de forma correcta")
-                    ),
-                };
-            },
-            eliminarUltimo: (listaValores, _seguidorRef) => {
-                listaValores.pop();
-                return listaValores;
-            }
-        },
-        [FECHA_PUBLICACION]: {
-            tipo: SIMPLE,
-            valor: datosIniciales[FECHA_PUBLICACION],
-            minimo: (valor) => valor != null,
-            representarElemento: (fecha) => {
-                let representacion = "fecha de publicación";
-                if (fecha) representacion += `: ${describir.fecha(fecha, cte.meses)}`;
-                return representacion;
-            },
-            preguntar: async (tp, fecha) => await preguntar.fecha(
-                tp, fecha 
-                    ? `Modificar la fecha "${describir.fecha(fecha, cte.meses)}", que es la publicación de la página` 
-                    : "Fecha de publicación de la página:", 
+            let nuevoApellido = await preguntar.simple(
+                tp, `Nuevo apellido, donde antes era ${viejoApellido}:`,
+                error.Quit("No se ingresa el apellido del autore de forma correcta")
+            );
+
+            let nuevoNombre = await preguntar.simple(
+                tp, `Nuevo nombre, donde antes era ${viejoNombre}:`,
+                error.Quit("No se ingresa el nombre del autore de forma correcta")
+            );
+
+            datos[NOMBRE_AUTORES][indice] = { nombre: nuevoNombre, apellido: nuevoApellido };
+            break;
+
+        case NOMBRE_AUTORES: 
+            datos[NOMBRE_AUTORES].push({
+                apellido: await preguntar.simple(
+                    tp, "Apellido del autore",
+                    error.Quit("No se ingresa el apellido del autore de forma correcta")
+                ),
+                nombre: await preguntar.simple(
+                    tp, "Nombre del autore",
+                    error.Quit("No se ingresa el nombre del autore de forma correcta")
+                ),
+            });
+            break;
+
+        case ELIMINAR_AUTOR: 
+            datos[NOMBRE_AUTORES].pop();
+            break;
+
+        case FECHA_PUBLICACION: 
+            datos[FECHA_PUBLICACION] = await preguntar.fecha(
+                tp, datos[FECHA_PUBLICACION] 
+                    ? `Nueva fecha de publicación, donde antes era ${describir.fecha(datos[FECHA_PUBLICACION], cte.meses)}` 
+                    : "Fecha de publicación de la página", 
                 error.Quit("No se ingresó un formato de fecha válido"), 
                 error.Quit("No se ingresó la fecha de publicación de la página")
-            )
-        },
-        [TITULO_ARTICULO]: {
-            tipo: SIMPLE,
-            valor: datosIniciales[TITULO_ARTICULO],
-            minimo: (valor) => valor != null,
-            representarElemento: (titulo) => {
-                let representacion = "título del articulo";
-                if (titulo) representacion += `: ${titulo}`;
-                return representacion;
-            },
-            preguntar: async (tp, titulo) => await preguntar.simple(
-                tp, titulo ? `Modificar el título del artículo: "${titulo}"` : "Nombre del artículo:",
+            );
+            break;
+
+        case TITULO_ARTICULO: 
+            datos[TITULO_ARTICULO] = await preguntar.simple(
+                tp, datos[TITULO_ARTICULO] 
+                    ? `Nuevo título del artículo, donde antes era ${datos[TITULO_ARTICULO]}` 
+                    : "Título del artículo",
                 error.Quit("No se ingresó nombre del artículo")
             )
-        },
-        [NOMBRE_PAGINA]: {
-            tipo: SIMPLE,
-            valor: datosIniciales[NOMBRE_PAGINA],
-            minimo: (valor) => valor != null,
-            representarElemento: (nombrePagina) => {
-                let representacion = "nombre de la página";
-                if (nombrePagina) representacion += `: ${nombrePagina}`;
-                return representacion;
-            },
-            preguntar: async (tp, nombrePagina) => await preguntar.simple(
-                tp, nombrePagina ? `Modificar el nombre de la página: "${nombrePagina}"` : "Nombre de la página:",
+            break;
+
+        case NOMBRE_PAGINA: 
+            datos[NOMBRE_PAGINA] = await preguntar.simple(
+                tp, datos[NOMBRE_PAGINA] 
+                    ? `Nuevo nombre de la página, donde antes era ${datos[NOMBRE_PAGINA]}` 
+                    : "Nombre de la página",
                 error.Quit("No se ingresó nombre de la página")
             )
-        },
-        [URL]: {
-            tipo: SIMPLE,
-            valor: datosIniciales[URL],
-            minimo: (valor) => valor != null,
-            representarElemento: (url) => {
-                let representacion = "url";
-                if (url) representacion += `: ${url}`;
-                return representacion;
-            },
-            preguntar: async (tp, url) => await preguntar.simple(
-                tp, url ? `Modificar el url: "${url}"` : "Ingresar el url del artículo:",
+            break;
+
+        case URL: 
+            datos[URL] = await preguntar.simple(
+                tp, datos[URL] 
+                    ? `Nuevo URL de la página, donde antes era ${datos[URL]}` 
+                    : "URL de la página",
                 error.Quit("No se ingresó el url de la página")
             )
-        }
-    };
+            break;
+
+        case SALIR:
+            salir = true;
+            break;
+    }
+
+    return salir;
+}
+
+function generarPreguntas(tp, datos) {
+    const cte = tp.user.constantes();
+    const describir = tp.user.describir();
+
+    let opciones = [];
+    let valores = [];
+
+    for (let [indice, autor] of datos[NOMBRE_AUTORES].entries()) {
+        let { nombre, apellido } = autor;
+        opciones.push(`${MODIFICAR_AUTOR}-${indice}`);
+        valores.push(`️ ️✏️ Modificar el autor ${nombre} ${apellido}`);
+    }
+
+    let cantidadAutores = datos[NOMBRE_AUTORES].length;
+    if (cantidadAutores == 0) {
+        opciones.push(NOMBRE_AUTORES);
+        valores.push(" ⊕ Nombre del autor");
+    } else {
+        let { nombre, apellido } = datos[NOMBRE_AUTORES][cantidadAutores - 1];
+        opciones.push(ELIMINAR_AUTOR);
+        valores.push(` ⊖ Eliminar ${nombre} ${apellido}`);
+
+        opciones.push(NOMBRE_AUTORES);
+        valores.push(" (opcion) ⊕ Nombre del autor");
+    }
+
+    opciones.push(FECHA_PUBLICACION);
+    valores.push(datos[FECHA_PUBLICACION]
+        ? `️ ️✏️ Modificar la fecha de publicación, donde era ${describir.fecha(datos[FECHA_PUBLICACION], cte.meses)}`
+        : " ⊕ Fecha de publicación"
+    );
+
+    opciones.push(TITULO_ARTICULO);
+    valores.push(datos[TITULO_ARTICULO]
+        ? `️ ️✏️ Modificar el título del artículo, donde era ${datos[TITULO_ARTICULO]}`
+        : " ⊕ Título del artículo"
+    );
+
+    opciones.push(NOMBRE_PAGINA);
+    valores.push(datos[NOMBRE_PAGINA]
+        ? `️ ️✏️ Modificar el nombre de la página, donde era ${datos[NOMBRE_PAGINA]}`
+        : " ⊕ Nombre de la página"
+    );
+
+    opciones.push(URL);
+    valores.push(datos[URL]
+        ? `️ ️✏️ Modificar el URL, donde era ${datos[URL]}`
+        : " ⊕ URL de la página"
+    );
+
+    if (datos[NOMBRE_AUTORES].length > 0 && DATOS_SIMPLES.every(key => datos[key])) {
+        opciones.push(SALIR);
+        valores.push(" ↶ Confirmar datos");
+    }
+
+    return { opciones: opciones, valores: valores };
 }
 
 function describirWeb(archivo) {
@@ -141,10 +180,9 @@ function describirWeb(archivo) {
     }];
 }
 
-module.exports = () => {
-    return { 
-        keys: KEYS,
-        citar: citarWeb, 
-        describir: describirWeb
-    };
-}
+module.exports = () => ({
+    obtenerDefault: valorDefault,
+    actualizarDatos: actualizarDatos,
+    generarPreguntas: generarPreguntas,
+    describir: describirWeb,
+});

@@ -1,8 +1,5 @@
 <%* 
-	const preguntar = tp.user.preguntar();
 	const mantenerOrden = tp.user.mantenerOrden();
-	const error = tp.user.error();
-	const validar = tp.user.whiteList();
 
 	const dv = app.plugins.plugins.dataview.api;
 	const tArchivo = tp.file.find_tfile(tp.file.path(true)); 
@@ -148,6 +145,10 @@
 	}
 
 	async function actualizarDatos(tp, datos, respuesta) {
+		const error = tp.user.error();
+		const preguntar = tp.user.preguntar();
+		const validar = tp.user.whiteList();
+
 		let salir = false;
 		let separados = respuesta.split("-");
 		respuesta = separados[0];

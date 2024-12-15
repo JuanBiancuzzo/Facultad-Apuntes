@@ -35,12 +35,7 @@
         tReferencia = tp.file.find_tfile(referencia.file.path);
     }
 
-    let keys = tp.user.cita().keys(tp, referencia.tipoCita);
-
-    let datosActuales = {};
-    for (let key of keys) {
-        datosActuales[key] = referencia.file.frontmatter[key];
-    }
+    let datosActuales = referencia.file.frontmatter[key];
     let datosViejos = JSON.parse(JSON.stringify(datosActuales));
 
     let seguidorRef = tp.user.seguidorReferencias().new(dv);

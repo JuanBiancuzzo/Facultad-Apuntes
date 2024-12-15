@@ -5,32 +5,42 @@ const SALIR = "Salir";
 const CITAS = [
     {
         tipo: TIPO_LIBRO,  texto: "Citar Libro",
-        keys: (tp) => tp.user.libro().keys,
-        citar: async (tp, datosIniciales) => await tp.user.libro().citar(tp, datosIniciales), 
+        citar: (tp) => {
+            let cita = tp.user.libro();
+            return [ cita.obtenerDefault, cita.actualizarDatos, cita.generarPreguntas ];
+        },
         describir: (tp, archivo) => tp.user.libro().describir(archivo),
     },
     {
         tipo: "Youtube",   texto: "Citar Youtube",
-        keys: (tp) => tp.user.youtube().keys,
-        citar: async (tp, datosIniciales) => await tp.user.youtube().citar(tp, datosIniciales), 
+        citar: (tp) => {
+            let cita = tp.user.youtube();
+            return [ cita.obtenerDefault, cita.actualizarDatos, cita.generarPreguntas ];
+        },
         describir: (tp, archivo) => tp.user.youtube().describir(archivo),
     },
     {
         tipo: "Web",       texto: "Citar Página web",
-        keys: (tp) => tp.user.web().keys,
-        citar: async (tp, datosIniciales) => await tp.user.web().citar(tp, datosIniciales), 
+        citar: (tp) => {
+            let cita = tp.user.web();
+            return [ cita.obtenerDefault, cita.actualizarDatos, cita.generarPreguntas ];
+        },
         describir: (tp, archivo) => tp.user.web().describir(archivo),
     },
     {
         tipo: "Wikipedia", texto: "Citar Wikipedia",
-        keys: (tp) => tp.user.wiki().keys,
-        citar: async (tp, datosIniciales) => await tp.user.wiki().citar(tp, datosIniciales), 
+        citar: (tp) => {
+            let cita = tp.user.wiki();
+            return [ cita.obtenerDefault, cita.actualizarDatos, cita.generarPreguntas ];
+        },
         describir: (tp, archivo) => tp.user.wiki().describir(archivo),
     },
     {
         tipo: TIPO_PAPER,  texto: "Citar Paper",
-        keys: (tp) => tp.user.paper().keys,
-        citar: async (tp, datosIniciales) => await tp.user.paper().citar(tp, datosIniciales), 
+        citar: (tp) => {
+            let cita = tp.user.paper();
+            return [ cita.obtenerDefault, cita.actualizarDatos, cita.generarPreguntas ];
+        },
         describir: (tp, archivo) => tp.user.paper().describir(archivo),
     },
 ]
@@ -237,20 +247,33 @@ async function citarCita(tp, tipoCita, seguidorRef) {
     const error = tp.user.error();
 
     let cita = CITAS.find(cita => cita.tipo === tipoCita);
-    if (!cita) 
-        throw error.Prompt(`El tipo de cita "${tipoCita}" no existe todavia`);
+    if (!cita) throw error.Prompt(`El tipo de cita "${tipoCita}" no existe todavia`);
 
-    return await rellenarDatos(tp, cita.citar, seguidorRef);
+    let [ obtenerDefault, actualizarDatos, generarPreguntas ] = cita.citar(tp);
+
+    return await tp.user.crearPreguntas(
+        tp, obtenerDefault,
+        (tp, datos, respuesta) => actualizarDatos(tp, datos, respuesta, seguidorRef),
+        generarPreguntas,
+        "Completar para poder citar",
+    );
 }
 
 async function editarCita(tp, tipoCita, seguidorRef, datosActuales) {
     const error = tp.user.error();
 
     let cita = CITAS.find(cita => cita.tipo === tipoCita);
-    if (!cita) 
-        throw error.Prompt(`El tipo de cita "${tipoCita}" no existe todavia`);
+    if (!cita) throw error.Prompt(`El tipo de cita "${tipoCita}" no existe todavia`);
 
-    return await rellenarDatos(tp, cita.citar, seguidorRef, datosActuales);
+    let [ obtenerDefault, actualizarDatos, generarPreguntas ] = cita.citar(tp);
+
+    return await tp.user.crearPreguntas(
+        tp, obtenerDefault,
+        (tp, datos, respuesta) => actualizarDatos(tp, datos, respuesta, seguidorRef),
+        generarPreguntas,
+        "Completar para poder citar",
+        datosActuales,
+    );
 }
 
 module.exports = () => ({
@@ -259,5 +282,4 @@ module.exports = () => ({
     describir: descripcionTexto,
     citar: citarCita,
     editar: editarCita,
-    keys: (tp, tipoCita) => CITAS.find(cita => cita.tipo === tipoCita)?.keys(tp),
 })
