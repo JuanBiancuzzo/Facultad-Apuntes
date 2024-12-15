@@ -1,78 +1,83 @@
 const NOMBRE_ARTICULO = "nombreArticulo";
 const FECHA = "fecha";
 const URL = "url";
+const SALIR = "salir";
 
-const KEYS = [ NOMBRE_ARTICULO, FECHA, URL ];
-
-function valorDefault() {
-    return {
-        [NOMBRE_ARTICULO]: null,
-        [FECHA]: null,
-        [URL]: null,
-    }
-}
-
-async function citarWiki(tp, datosIniciales = undefined) {
-    const { simple: SIMPLE, ..._extra } = tp.user.constantes().tipoDatoCita;
+async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
     const preguntar = tp.user.preguntar();
     const describir = tp.user.describir();
-    const cte = tp.user.constantes();
     const error = tp.user.error();
+    const cte = tp.user.constantes();
 
-    let valoresNeutro = valorDefault();
-    if (!datosIniciales) datosIniciales = {};
-    for (let key of Object.keys(valoresNeutro)) {
-        if ((!(key in datosIniciales)) || !datosIniciales[key]) 
-            datosIniciales[key] = valoresNeutro[key];
-    }
+    let salir = false;
 
-    return {
-        [NOMBRE_ARTICULO]: {
-            tipo: SIMPLE,
-            valor: datosIniciales[NOMBRE_ARTICULO],
-            minimo: (valor) => valor != null,
-            representarElemento: (nombreVideo) => {
-                let representacion = "nombre del artículo";
-                if (nombreVideo) representacion += `: ${nombreVideo}`;
-                return representacion;
-            },
-            preguntar: async (tp, nombreVideo) => await preguntar.simple(
-                tp, nombreVideo ? `Modificar el nombre del artículo: "${nombreVideo}"` : "Nombre del artículo:",
-                error.Quit("No se ingresa nombre del artículo")
-            )
-        },
-        [FECHA]: {
-            tipo: SIMPLE,
-            valor: datosIniciales[FECHA],
-            minimo: (valor) => valor != null,
-            representarElemento: (fecha) => {
-                let representacion = "fecha de artículo";
-                if (fecha) representacion += `: ${describir.fecha(fecha, cte.meses)}`;
-                return representacion;
-            },
-            preguntar: async (tp, fecha) => await preguntar.fecha(
-                tp, fecha 
-                    ? `Modificar la fecha "${describir.fecha(fecha, cte.meses)}", que es la publicación del artículo` 
-                    : "Fecha del artículo:",
+    switch (respuesta) {
+        case NOMBRE_ARTICULO:
+            datos[NOMBRE_ARTICULO] = await preguntar.simple(
+                tp, datos[NOMBRE_ARTICULO] 
+                    ? `Nuevo nombre del artículo, donde antes era ${datos[NOMBRE_ARTICULO]}` 
+                    : "Nombre del artículo",
+                error.Quit("No se ingresó nombre del artículo")
+            );
+            break;
+
+        case FECHA:
+            datos[FECHA] = await preguntar.fecha(
+                tp, datos[FECHA] 
+                    ? `Nueva fecha del artículo, donde antes era ${describir.fecha(datos[FECHA], cte.meses)}` 
+                    : "Fecha del artículo", 
                 error.Quit("No se ingresó un formato de fecha válido"), 
-                error.Quit("No se ingresó la fecha del video")
-            )
-        },
-        [URL]: {
-            tipo: SIMPLE,
-            valor: datosIniciales[URL],
-            minimo: (valor) => valor != null,
-            representarElemento: (url) => {
-                let representacion = "url";
-                if (url) representacion += `: ${url}`;
-                return representacion;
-            },
-            preguntar: async (tp, url) => await preguntar.simple(
-                tp, url ? `Modificar el url: "${url}"` : "Ingresar el enlace permanente del artículo:",
+                error.Quit("No se ingresó la fecha del artículo")
+            );
+            break;
+        case URL:
+            datos[URL] = await preguntar.simple(
+                tp, datos[URL] 
+                    ? `Nuevo URL del artículo, donde antes era ${datos[URL]}` 
+                    : "URL del artículo",
                 error.Quit("No se ingresó el url del artículo")
             )
-        }
-    };
+            break;
+
+        case SALIR:
+            salir = true;
+            break;
+    }
+
+    return salir;
+}
+
+function generarPreguntas(tp, datos) {
+    const cte = tp.user.constantes();
+    const describir = tp.user.describir();
+
+    let opciones = [];
+    let valores = [];
+
+    opciones.push(NOMBRE_ARTICULO);
+    valores.push(datos[NOMBRE_ARTICULO]
+        ? `️ ️✏️ Modificar el nombre del artículo, donde era ${datos[NOMBRE_ARTICULO]}`
+        : " ⊕ Nombre del artículo"
+    );
+
+    opciones.push(FECHA);
+    valores.push(datos[FECHA]
+        ? `️ ️✏️ Modificar la fecha del artículo, donde era ${describir.fecha(datos[FECHA], cte.meses)}`
+        : " ⊕ Fecha del artículo"
+    );
+
+    opciones.push(URL);
+    valores.push(datos[URL]
+        ? `️ ️✏️ Modificar el URL, donde era ${datos[URL]}`
+        : " ⊕ URL del artículo"
+    );
+
+    if ([NOMBRE_ARTICULO, FECHA, URL].every(key => datos[key])) {
+        opciones.push(SALIR);
+        valores.push(" ↶ Confirmar datos");
+    }
+
+    return { opciones: opciones, valores: valores };
 }
 
 function describirWiki(archivo) {
@@ -82,10 +87,13 @@ function describirWiki(archivo) {
     }];
 }
 
-module.exports = () => {
-    return { 
-        keys: KEYS,
-        citar: citarWiki, 
-        describir: describirWiki
-    };
-}
+module.exports = () => ({
+    obtenerDefault: () => ({
+        [NOMBRE_ARTICULO]: null,
+        [FECHA]: null,
+        [URL]: null,
+    }),
+    actualizarDatos: actualizarDatos,
+    generarPreguntas: generarPreguntas,
+    describir: describirWiki,
+});

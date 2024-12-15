@@ -81,7 +81,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
                     ? `Nuevo título del artículo, donde antes era ${datos[TITULO_ARTICULO]}` 
                     : "Título del artículo",
                 error.Quit("No se ingresó nombre del artículo")
-            )
+            );
             break;
 
         case NOMBRE_PAGINA: 
@@ -90,7 +90,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
                     ? `Nuevo nombre de la página, donde antes era ${datos[NOMBRE_PAGINA]}` 
                     : "Nombre de la página",
                 error.Quit("No se ingresó nombre de la página")
-            )
+            );
             break;
 
         case URL: 
@@ -99,7 +99,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
                     ? `Nuevo URL de la página, donde antes era ${datos[URL]}` 
                     : "URL de la página",
                 error.Quit("No se ingresó el url de la página")
-            )
+            );
             break;
 
         case SALIR:
