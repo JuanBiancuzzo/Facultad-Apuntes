@@ -4,7 +4,7 @@ const SALIR = "Salir";
 
 const CITAS = [
     {
-        tipo: TIPO_LIBRO,  texto: "Citar Libro",
+        tipo: TIPO_LIBRO, texto: "Citar Libro",
         citar: (tp) => {
             let cita = tp.user.libro();
             return [ cita.obtenerDefault, cita.actualizarDatos, cita.generarPreguntas ];
@@ -12,7 +12,7 @@ const CITAS = [
         describir: (tp, archivo) => tp.user.libro().describir(archivo),
     },
     {
-        tipo: "Youtube",   texto: "Citar Youtube",
+        tipo: "Youtube", texto: "Citar Youtube",
         citar: (tp) => {
             let cita = tp.user.youtube();
             return [ cita.obtenerDefault, cita.actualizarDatos, cita.generarPreguntas ];
@@ -20,7 +20,7 @@ const CITAS = [
         describir: (tp, archivo) => tp.user.youtube().describir(archivo),
     },
     {
-        tipo: "Web",       texto: "Citar Página web",
+        tipo: "Web", texto: "Citar Página web",
         citar: (tp) => {
             let cita = tp.user.web();
             return [ cita.obtenerDefault, cita.actualizarDatos, cita.generarPreguntas ];
@@ -36,7 +36,7 @@ const CITAS = [
         describir: (tp, archivo) => tp.user.wiki().describir(archivo),
     },
     {
-        tipo: TIPO_PAPER,  texto: "Citar Paper",
+        tipo: TIPO_PAPER, texto: "Citar Paper",
         citar: (tp) => {
             let cita = tp.user.paper();
             return [ cita.obtenerDefault, cita.actualizarDatos, cita.generarPreguntas ];

@@ -9,16 +9,6 @@ const SALIR = "salir";
 
 const DATOS_SIMPLES = [ FECHA_PUBLICACION, TITULO_ARTICULO, NOMBRE_PAGINA, URL ];
 
-function valorDefault() {
-    return {
-        [NOMBRE_AUTORES]: [],
-        [FECHA_PUBLICACION]: null,
-        [TITULO_ARTICULO]: null,
-        [NOMBRE_PAGINA]: null,
-        [URL]: null
-    };
-}
-
 async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
     const preguntar = tp.user.preguntar();
     const describir = tp.user.describir();
@@ -120,20 +110,20 @@ function generarPreguntas(tp, datos) {
     for (let [indice, autor] of datos[NOMBRE_AUTORES].entries()) {
         let { nombre, apellido } = autor;
         opciones.push(`${MODIFICAR_AUTOR}-${indice}`);
-        valores.push(`️ ️✏️ Modificar el autor ${nombre} ${apellido}`);
+        valores.push(`️ ️✏️ Modificar el autore ${nombre} ${apellido}`);
     }
 
     let cantidadAutores = datos[NOMBRE_AUTORES].length;
     if (cantidadAutores == 0) {
         opciones.push(NOMBRE_AUTORES);
-        valores.push(" ⊕ Nombre del autor");
+        valores.push(" ⊕ Nombre del autore");
     } else {
         let { nombre, apellido } = datos[NOMBRE_AUTORES][cantidadAutores - 1];
         opciones.push(ELIMINAR_AUTOR);
         valores.push(` ⊖ Eliminar ${nombre} ${apellido}`);
 
         opciones.push(NOMBRE_AUTORES);
-        valores.push(" (opcion) ⊕ Nombre del autor");
+        valores.push(" ⊕ (opcion) Nombre del autore");
     }
 
     opciones.push(FECHA_PUBLICACION);
@@ -181,7 +171,13 @@ function describirWeb(archivo) {
 }
 
 module.exports = () => ({
-    obtenerDefault: valorDefault,
+    obtenerDefault: () => ({
+        [NOMBRE_AUTORES]: [],
+        [FECHA_PUBLICACION]: null,
+        [TITULO_ARTICULO]: null,
+        [NOMBRE_PAGINA]: null,
+        [URL]: null
+    }),
     actualizarDatos: actualizarDatos,
     generarPreguntas: generarPreguntas,
     describir: describirWeb,
