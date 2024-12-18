@@ -16,6 +16,7 @@ Vamos a investigar cuales son las partes importantes de un rendering engine para
 ## Resumen
 ---
 Leer
+* [[The Book Of Shaders de Patricio Gonzalez Vivo, Jen Lowe|The Book Of Shaders]]
 * [[Real time rendering de Tomas Akenine-Möller, Eric Haines, Naty Hoffman, Angelo Pesce, Michal Iwanicki, Sébastien Hillaire|Real time rendering]]
 
 
