@@ -1,373 +1,434 @@
 const TITULO_OBRA = "tituloObra";
 const SUBTITULO_OBRA = "subtituloObra";
 const NOMBRE_AUTORES = "nombreAutores";
+const MODIFICAR_AUTORE = "modificar autores";
+const ELIMINAR_AUTORE = "eliminar autores";
 const ANIO = "anio";
 const EDITORIAL = "editorial";
 const EDICION = "edicion";
 const VOLUMEN = "volumen";
 const URL = "url";
 const CAPITULOS = "capitulos";
-
-const AGREGAR_EDITOR = "agregar editor";
-
-const KEYS = [ TITULO_OBRA, SUBTITULO_OBRA, NOMBRE_AUTORES, ANIO, EDITORIAL, EDICION, VOLUMEN, URL, CAPITULOS ];
-
-function valorDefault() {
-    return {
-        [TITULO_OBRA]: null,
-        [SUBTITULO_OBRA]: null,
-        [NOMBRE_AUTORES]: [],
-        [ANIO]: null,
-        [EDITORIAL]: null,
-        [EDICION]: null,
-        [VOLUMEN]: null,
-        [URL]: null,
-        [CAPITULOS]: []
-    };
-}
-
-async function citarLibro(tp, datosIniciales = undefined) {
-    const { 
-        simple: SIMPLE, 
-        multiple: MULTIPLE, 
-        resursivo: RECURSIVO,
-        ..._extra 
-    } = tp.user.constantes().tipoDatoCita;
-    const preguntar = tp.user.preguntar();
-    const error = tp.user.error();
-
-    let valoresNeutro = valorDefault();
-    if (!datosIniciales) datosIniciales = {};
-    for (let key of Object.keys(valoresNeutro)) {
-        if ((!(key in datosIniciales)) || !datosIniciales[key]) 
-            datosIniciales[key] = valoresNeutro[key];
-    }
-
-    return {
-        [TITULO_OBRA]: {
-            tipo: SIMPLE,
-            valor: datosIniciales[TITULO_OBRA],
-            minimo: (valor) => valor != null,
-            representarElemento: (titulo) => {
-                let representacion = "título de la obra";
-                if (titulo) representacion += `: ${titulo}`;
-                return representacion;
-            },
-            preguntar: async (tp, titulo) => await preguntar.simple(
-                tp, titulo ? `Modificar el título de la obra: "${titulo}"` : "Nombre de la obra:",
-                error.Quit("No se ingresó nombre de la obra")
-            )
-        },
-        [SUBTITULO_OBRA]: {
-            tipo: SIMPLE,
-            valor: datosIniciales[SUBTITULO_OBRA],
-            minimo: (_) => true,
-            representarElemento: (titulo) => {
-                let representacion = "subtítulo de la obra";
-                if (titulo) representacion += `: ${titulo}`;
-                return representacion;
-            },
-            preguntar: async (tp, titulo) => await preguntar.simple(
-                tp, titulo ? `Modificar el subtítulo de la obra: "${titulo}"` : "Sub nombre de la obra:",
-                error.Quit("No se ingresó el subnombre de la obra")
-            )
-        },
-        [NOMBRE_AUTORES]: {
-            tipo: MULTIPLE,
-            valor: datosIniciales[NOMBRE_AUTORES],
-            minimo: (valor) => valor.length > 0,
-            representarElemento: (autore) => {
-                if (autore == null) return "autore";
-                return `${autore.apellido}, ${autore.nombre}`;
-            },
-            preguntar: async (tp, autore, _seguidorRef) => {
-                let textoNombre = "Nombre del autore";
-                let textoApellido = "Apellido del autore";
-                if (autore) {
-                    textoNombre += `, donde antes era ${autore.nombre}`;
-                    textoApellido += `, donde antes era ${autore.apellido}`;
-                }
-                
-                return {
-                    apellido: await preguntar.simple(
-                        tp, `${textoApellido}:`, 
-                        error.Quit("No se ingresa el apellido del autore de forma correcta")
-                    ),
-                    nombre: await preguntar.simple(
-                        tp, `${textoNombre}:`, 
-                        error.Quit("No se ingresa el nombre del autore de forma correcta")
-                    ),
-                };
-            },
-            eliminarUltimo: (listaValores, _seguidorRef) => {
-                listaValores.pop();
-                return listaValores;
-            }
-        },
-        [ANIO]: {
-            tipo: SIMPLE,
-            valor: datosIniciales[ANIO],
-            minimo: (valor) => valor != null,
-            representarElemento: (anio) => {
-                let representacion = "año de publicación";
-                if (anio) representacion += `: ${anio}`;
-                return representacion;
-            },
-            preguntar: async (tp, anio) => await preguntar.numero(
-                tp, anio ? `Modificar año de publicación: ${anio}` : "Año de publicación",
-                error.Quit("No se ingresó año de publicación")
-            )
-        },
-        [EDITORIAL]: {
-            tipo: SIMPLE,
-            valor: datosIniciales[EDITORIAL],
-            minimo: (valor) => valor != null,
-            representarElemento: (editorial) => {
-                let representacion = "editorial del libro";
-                if (editorial) representacion += `: ${editorial}`;
-                return representacion;
-            },
-            preguntar: async (tp, editorial) => {
-                const dv = app.plugins.plugins.dataview.api;
-                const editoriales = dv.pages("#biblioteca/libro")
-                    .map(ref => ref.editorial)
-                    .distinct();
-
-                let respuesta = await preguntar.suggester(
-                    tp, [" ⊕ Agregar editorial", ...editoriales], [AGREGAR_EDITOR, ...editoriales],
-                    editorial ? `Modificar la editorial: "${editorial}"` : "Editorial del libro:",
-                    error.Quit("No se ingresó la editorial del libro")
-                );
-
-                if (respuesta == AGREGAR_EDITOR) {
-                    respuesta = await preguntar.simple(
-                        tp, editorial ? `Modificar la editorial: "${editorial}"` : "Editorial del libro:",
-                        error.Quit("No se ingresó la editorial del libro")
-                    );
-                }
-
-                return respuesta;
-            }
-        },
-        [EDICION]: {
-            tipo: SIMPLE,
-            valor: datosIniciales[EDICION],
-            minimo: (_) => true,
-            representarElemento: (edicion) => {
-                let representacion = "N° de la edición";
-                if (edicion) representacion += `: N° ${edicion}`;
-                return representacion;
-            },
-            preguntar: async (tp, edicion) => await preguntar.numero(
-                tp, edicion 
-                    ? `Modificar el N° de la edición: "${edicion}"` 
-                    : "Ingresar el N° de la edición del libro:",
-                error.Quit("No se ingresó el número de la edicion del libro")
-            )
-        },
-        [VOLUMEN]: {
-            tipo: SIMPLE,
-            valor: datosIniciales[VOLUMEN],
-            minimo: (_) => true,
-            representarElemento: (volumen) => {
-                let representacion = "N° del volumen";
-                if (volumen) representacion += `: N° ${volumen}`;
-                return representacion;
-            },
-            preguntar: async (tp, volumen) => await preguntar.numero(
-                tp, volumen 
-                    ? `Modificar el N° del voluemn: "${volumen}"` 
-                    : "Ingresar el N° del volumen del libro:",
-                error.Quit("No se ingresó el número del volumen del libro")
-            )
-        },
-        [URL]: {
-            tipo: SIMPLE,
-            valor: datosIniciales[URL],
-            minimo: (_) => true,
-            representarElemento: (url) => {
-                let representacion = "url";
-                if (url) representacion += `: ${url}`;
-                return representacion;
-            },
-            preguntar: async (tp, url) => await preguntar.simple(
-                tp, url ? `Modificar el url: "${url}"` : "Ingresar el url del libro:",
-                error.Quit("No se ingresó el url del libro")
-            )
-        },
-        [CAPITULOS]: {
-            tipo: RECURSIVO,
-            valor: datosIniciales[CAPITULOS],
-            minimo: (_) => true,
-            representarElemento: (capituloInfo) => {
-                if (capituloInfo == null) return "capítulo";
-                let descripcion = `Capítulo ${capituloInfo.numeroCapitulo}`;
-                if (capituloInfo.nombreCapitulo) 
-                    descripcion += `: ${capituloInfo.nombreCapitulo}`;
-                if (capituloInfo.paginas) 
-                    descripcion += `, p${capituloInfo.paginas.inicio}-${capituloInfo.paginas.final}`;
-                if (capituloInfo.editores) {
-                    let editores = [];
-                    for (let editore of capituloInfo.editores) {
-                        editores.push(`${editore.nombre} ${editore.apellido}`);
-                    }
-                    if (editores && editores.length > 0) {
-                        descripcion += ` de ${editores.join(", ")}`;
-                    }
-                }
-                return descripcion;
-            },
-            generarInicio: citarCapitulo,
-            eliminarUltimo: (listaValores, seguidorRef) => {
-                let ultimo = listaValores.pop();
-                seguidorRef.devolverReferencia(ultimo.numReferencia);
-                return listaValores;
-            }
-        }
-    };
-}
+const MODIFICAR_CAPITULO = "modificar capitulos";
+const ELIMINAR_CAPITULO = "eliminar capitulos";
 
 const NUM_REFERENCIA = "numReferencia";
 const NUMERO_CAPITULO = "numeroCapitulo";
 const NOMBRE_CAPITULO = "nombreCapitulo";
 const EDITORES = "editores";
+const MODIFICAR_EDITORES = "modificar editores";
+const ELIMINAR_EDITORE = "eliminar editores";
 const PAGINAS = "paginas";
 
-function valorDefaultCapitulo() {
-    return {
-        [NUM_REFERENCIA]: null,
-        [NUMERO_CAPITULO]: null,
-        [NOMBRE_CAPITULO]: null,
-        [EDITORES]: [],
-        [PAGINAS]: null,
-    }
-}
+const SALIR = "salir";
 
-async function citarCapitulo(tp, datosIniciales = undefined) {
-    const { 
-        simple: SIMPLE, 
-        multiple: MULTIPLE, 
-        automatico: AUTOMATICO, 
-        ..._extra 
-    } = tp.user.constantes().tipoDatoCita;
+const AGREGAR_EDITOR = "agregar editor";
+
+async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
 
-    let valoresNeutro = valorDefaultCapitulo();
-    if (!datosIniciales) datosIniciales = {};
-    for (let key of Object.keys(valoresNeutro)) {
-        if ((!(key in datosIniciales)) || !datosIniciales[key]) 
-            datosIniciales[key] = valoresNeutro[key];
+    let salir = false;
+    let separacion = respuesta.split("-");
+    respuesta = separacion[0];
+    let indice;
+
+    switch (respuesta) {
+        case MODIFICAR_AUTORE:
+            indice = separacion[1];
+            let { nombre: viejoNombre, apellido: viejoApellido } = datos[NOMBRE_AUTORES][indice];
+
+            let nuevoApellido = await preguntar.simple(
+                tp, `Nuevo apellido del autore, donde antes era ${viejoApellido}:`,
+                error.Quit("No se ingresa el apellido del autore de forma correcta")
+            );
+
+            let nuevoNombre = await preguntar.simple(
+                tp, `Nuevo nombre del autore, donde antes era ${viejoNombre}:`,
+                error.Quit("No se ingresa el nombre del autore de forma correcta")
+            );
+
+            datos[NOMBRE_AUTORES][indice] = { nombre: nuevoNombre, apellido: nuevoApellido };
+            break;
+
+        case NOMBRE_AUTORES:
+            datos[NOMBRE_AUTORES].push({
+                apellido: await preguntar.simple(
+                    tp, "Apellido del autore",
+                    error.Quit("No se ingresa el apellido del autore de forma correcta")
+                ),
+                nombre: await preguntar.simple(
+                    tp, "Nombre del autore",
+                    error.Quit("No se ingresa el nombre del autore de forma correcta")
+                ),
+            });
+            break;
+
+        case ELIMINAR_AUTORE:
+            datos[NOMBRE_AUTORES].pop();
+            break;
+
+        case TITULO_OBRA:
+            datos[TITULO_OBRA] = await preguntar.simple(
+                tp, datos[TITULO_OBRA] 
+                    ? `Nuevo título del libro, donde antes era ${datos[TITULO_OBRA]}` 
+                    : "Título del libro",
+                error.Quit("No se ingresó nombre del libro")
+            );
+            break;
+
+        case SUBTITULO_OBRA:
+            datos[SUBTITULO_OBRA] = await preguntar.simple(
+                tp, datos[SUBTITULO_OBRA]
+                    ? `Nuevo subtítulo del libro, donde antes era ${datos[SUBTITULO_OBRA]}`
+                    : "Subtítulo del libro",
+                error.Quit("No se ingresó el subtitulo del libro")
+            );
+            break;
+
+        case ANIO:
+            datos[ANIO] = await preguntar.numero(
+                tp, datos[ANIO]
+                    ? `Nuevo año de publicación, donde antes era ${datos[ANIO]}`
+                    : "Año de publicación del libro",
+                error.Quit("No se ingresó el año del publicación del libro")
+            );
+            break;
+
+        case EDITORIAL:
+            const dv = app.plugins.plugins.dataview.api;
+            const editoriales = dv.pages("#biblioteca/libro")
+                .map(ref => ref.editorial)
+                .distinct();
+
+            let respuesta = await preguntar.suggester(
+                tp, [" ⊕ Agregar editorial", ...editoriales], [AGREGAR_EDITOR, ...editoriales],
+                datos[EDITORIAL] 
+                    ? `Nuevo editorial, donde antes era ${datos[EDITORIAL]}` 
+                    : "Editorial del libro",
+                error.Quit("No se ingresó la editorial del libro")
+            );
+
+            if (respuesta == AGREGAR_EDITOR) {
+                respuesta = await preguntar.simple(
+                    tp, datos[EDITORIAL]
+                        ? `Nuevo editorial, donde antes era ${datos[EDITORIAL]}`
+                        : "Editorial del libro",
+                    error.Quit("No se ingresó la editorial del libro")
+                );
+            }
+
+            datos[EDITORIAL] = respuesta;
+            break;
+
+        case EDICION:
+            datos[EDICION] = await preguntar.numero(
+                tp, datos[EDICION]
+                    ? `Nueva edición, donde antes era ${datos[EDICION]}`
+                    : "Edición del libro",
+                error.Quit("No se ingresó la edición del libro")
+            );
+            break;
+
+        case VOLUMEN:
+            datos[VOLUMEN] = await preguntar.numero(
+                tp, datos[VOLUMEN]
+                    ? `Nuevo volumen, donde antes era ${datos[VOLUMEN]}`
+                    : "Volumen del libro",
+                error.Quit("No se ingresó el volumen del libro")
+            );
+            break;
+
+        case URL:
+            datos[URL] = await preguntar.simple(
+                tp, datos[URL]
+                    ? `Nuevo URL del libro, donde antes era ${datos[URL]}`
+                    : "URL del libro",
+                error.Quit("No se ingresó el url del libro")
+            );
+            break;
+
+        case MODIFICAR_CAPITULO:
+            indice = separacion[1];
+        
+        case CAPITULOS:
+            let capituloPrevio, numReferencia;
+            if (indice) {
+                capituloPrevio = datos[CAPITULOS][indice];
+                numReferencia = capituloPrevio[NUM_REFERENCIA];
+            } else {
+                numReferencia = seguidorRef.conseguirReferencia();
+            }
+
+            let capitulo = await tp.user.crearPreguntas(
+                tp, () => ({
+                    [NUM_REFERENCIA]: numReferencia,
+                    [NUMERO_CAPITULO]: null,
+                    [NOMBRE_CAPITULO]: null,
+                    [EDITORES]: [],
+                    [PAGINAS]: null,
+                }), actualizarDatosCapitulos, generarPreguntasCapitulo, 
+                "Completar para poder ingresar un capítulo", capituloPrevio
+            );
+            
+            if (indice) {
+                datos[CAPITULOS][indice] = capitulo; 
+            } else {
+                datos[CAPITULOS].push(capitulo);
+            }
+            break;
+
+        case ELIMINAR_CAPITULO:
+            let ultimoCapitulo = datos[CAPITULOS].pop();
+            seguidorRef.devolverReferencia(ultimoCapitulo[NUM_REFERENCIA]);
+            break;
+
+        case SALIR:
+            salir = true;
+            break;
     }
 
-    return {
-        [NUM_REFERENCIA]: {
-            tipo: AUTOMATICO,
-            valor: datosIniciales[NUM_REFERENCIA],
-            minimo: (_) => true,
-            asignar: async (tp, numReferencia, seguidorRef) => {
-                return (numReferencia) 
-                    ? numReferencia 
-                    : seguidorRef.conseguirReferencia();
-            }
-        },
-        [NUMERO_CAPITULO]: {
-            tipo: SIMPLE,
-            valor: datosIniciales[NUMERO_CAPITULO],
-            minimo: (valor) => valor != null,
-            representarElemento: (numCapitulo) => {
-                let representacion = "número del capítulo";
-                if (numCapitulo) representacion += `: ${numCapitulo}`;
-                return representacion;
-            },
-            preguntar: async (tp, numCapitulo) => await preguntar.simple(
-                tp, numCapitulo 
-                    ? `Modificar el número de capítulo: "${numCapitulo}"` 
-                    : "Número del capítulo:",
+    return salir;
+}
+
+function generarPreguntas(tp, datos) {
+    let opciones = [];
+    let valores = [];
+
+    opciones.push(TITULO_OBRA);
+    if (datos[TITULO_OBRA]) {
+        valores.push(` ️✏️ Modificar el nombre del libro, donde era ${datos[TITULO_OBRA]}`);
+
+        opciones.push(SUBTITULO_OBRA);
+        valores.push(datos[SUBTITULO_OBRA]
+            ? ` └->  ️✏️ Modificar el nombre del libro, donde era ${datos[SUBTITULO_OBRA]}`
+            : " └-> ⊕ (opcional) Subtítulo del libro"
+        );
+
+    } else {
+        valores.push(" ⊕ Nombre del libro")
+    }
+
+    for (let [indice, autor] of datos[NOMBRE_AUTORES].entries()) {
+        let { nombre, apellido } = autor;
+        opciones.push(`${MODIFICAR_AUTORE}-${indice}`);
+        valores.push(`️ ️✏️ Modificar el autore ${nombre} ${apellido}`);
+    }
+
+    let cantidadAutores = datos[NOMBRE_AUTORES].length;
+    if (cantidadAutores == 0) {
+        opciones.push(NOMBRE_AUTORES);
+        valores.push(" ⊕ Nombre del autore");
+    } else {
+        let { nombre, apellido } = datos[NOMBRE_AUTORES][cantidadAutores - 1];
+        opciones.push(ELIMINAR_AUTORE);
+        valores.push(` ⊖ Eliminar ${nombre} ${apellido}`);
+
+        opciones.push(NOMBRE_AUTORES);
+        valores.push(" ⊕ (opcional) Nombre del autore");
+    }
+
+    opciones.push(ANIO);
+    valores.push(datos[ANIO]
+        ? ` ️✏️ Modificar el año de publicación, donde era ${datos[ANIO]}`
+        : " ⊕ Año de publicación del libro"
+    );
+
+    opciones.push(EDITORIAL);
+    valores.push(datos[EDITORIAL]
+        ? ` ️✏️ Modificar la editorial, donde era ${datos[EDITORIAL]}`
+        : " ⊕ Editorial del libro"
+    );
+
+    opciones.push(EDICION);
+    valores.push(datos[EDICION]
+        ? ` ️✏️ Modificar la edición del libro, donde era ${datos[EDICION]}`
+        : " ⊕ (opcional) Edición del libro"
+    );
+
+    opciones.push(VOLUMEN);
+    valores.push(datos[VOLUMEN]
+        ? ` ️✏️ Modificar el volumen del libro, donde era ${datos[VOLUMEN]}`
+        : " ⊕ (opcional) Subtítulo del libro"
+    );
+
+    opciones.push(URL);
+    valores.push(datos[URL]
+        ? ` ️✏️ Modificar el URL, donde era ${datos[URL]}`
+        : " ⊕ (opcional) URL del libro"
+    );
+
+    for (let [indice, capitulo] of datos[CAPITULOS].entries()) {
+        let { numeroCapitulo, nombreCapitulo, paginas } = capitulo;
+        let textoCapitulo = numeroCapitulo;
+        if (nombreCapitulo) textoCapitulo += `: ${nombreCapitulo}`;
+        if (paginas) textoCapitulo += ` p. ${paginas.inicio}-${paginas.final}`;
+
+        opciones.push(`${MODIFICAR_CAPITULO}-${indice}`);
+        valores.push(`️ ️✏️ Modificar el capitulo ${textoCapitulo}`);
+    }
+
+    let cantidadCapitulos = datos[CAPITULOS].length;
+    if (cantidadCapitulos > 0) {
+        let { numeroCapitulo, nombreCapitulo, paginas } = datos[CAPITULOS][cantidadCapitulos - 1];
+        let textoCapitulo = numeroCapitulo;
+        if (nombreCapitulo) textoCapitulo += `: ${nombreCapitulo}`;
+        if (paginas) textoCapitulo += ` p. ${paginas.inicio}-${paginas.final}`;
+
+        opciones.push(ELIMINAR_CAPITULO);
+        valores.push(` ⊖ Eliminar capitulo ${textoCapitulo}`);
+    }
+
+    opciones.push(CAPITULOS);
+    valores.push(" ⊕ (opcional) Capítulo del libro");
+
+    if (datos[NOMBRE_AUTORES].length > 0 && [TITULO_OBRA, ANIO, EDITORIAL].every(key => datos[key])) {
+        opciones.push(SALIR);
+        valores.push(" ↶ Confirmar datos");
+    }
+
+    return { opciones: opciones, valores: valores };
+}
+
+async function actualizarDatosCapitulos(tp, datos, respuesta) {
+    const preguntar = tp.user.preguntar();
+    const error = tp.user.error();
+
+    let salir = false;
+    let separacion = respuesta.split("-");
+    respuesta = separacion[0];
+    let indice;
+
+    switch (respuesta) {
+        case NUMERO_CAPITULO:
+            datos[NUMERO_CAPITULO] = await preguntar.numero(
+                tp, datos[NUMERO_CAPITULO] 
+                    ? `Nuevo número del capítulo, donde antes era ${datos[NUMERO_CAPITULO]}`
+                    : "Número del capítulo",
                 error.Quit("No se ingresó el número del capítulo")
-            )
-        },
-        [NOMBRE_CAPITULO]: {
-            tipo: SIMPLE,
-            valor: datosIniciales[NOMBRE_CAPITULO],
-            minimo: (_) => true,
-            representarElemento: (nombreCapitulo) => {
-                let representacion = "nombre del capítulo";
-                if (nombreCapitulo) representacion += `: ${nombreCapitulo}`;
-                return representacion;
-            },
-            preguntar: async (tp, nombreCapitulo) => await preguntar.simple(
-                tp, nombreCapitulo 
-                    ? `Modificar el nombre de capítulo: "${nombreCapitulo}"` 
-                    : "Nombre del capítulo:",
+            );
+            break;
+
+        case NOMBRE_CAPITULO:
+            datos[NOMBRE_CAPITULO] = await preguntar.simple(
+                tp, datos[NOMBRE_CAPITULO]
+                    ? `Nuevo nombre del capítulo, donde antes era ${datos[NOMBRE_CAPITULO]}`
+                    : "Nombre del capítulo",
                 error.Quit("No se ingresó el nombre del capítulo")
             )
-        },
-        [EDITORES]: {
-            tipo: MULTIPLE,
-            valor: datosIniciales[EDITORES],
-            minimo: (_) => true,
-            representarElemento: (editore) => {
-                if (editore == null) return "editore";
-                return `${editore.apellido}, ${editore.nombre}`;
-            },
-            preguntar: async (tp, editore, _seguidorRef) => {
-                let textoNombre = "Nombre del editore";
-                let textoApellido = "Apellido del editore";
-                if (editore) {
-                    textoNombre += `, donde antes era ${editore.nombre}`;
-                    textoApellido += `, donde antes era ${editore.apellido}`;
-                }
+            break;
 
-                return {
-                    apellido: await preguntar.simple(
-                        tp, `${textoApellido}:`, 
-                        error.Quit("No se ingresa el apellido del editore de forma correcta")
-                    ),
-                    nombre: await preguntar.simple(
-                        tp, `${textoNombre}:`, 
-                        error.Quit("No se ingresa el nombre del editore de forma correcta")
-                    ),
-                };
-            },
-            eliminarUltimo: (listaValores, _seguidorRef) => {
-                listaValores.pop();
-                return listaValores;
-            }
-        },
-        [PAGINAS]: {
-            tipo: SIMPLE,
-            valor: datosIniciales[PAGINAS],
-            minimo: (_) => true,
-            representarElemento: (paginas) => {
-                let representacion = "páginas del capitulo";
-                if (paginas) representacion += `: ${paginas.inicio}-${paginas.final}`;
-                return representacion;
-            },
-            preguntar: async (tp, paginas) => {
-                let inicio = await preguntar.numero(
-                    tp, paginas 
-                        ? `Modificar la página de inicio del capítulo: "${paginas.inicio}"` 
-                        : "Página de inicio del capítulo:",
-                    error.Quit("No se ingresó el inicio del capítulo")
-                );
-                if (inicio < 0)
-                    throw error.Quit("Se ingresó una página negativa como inicio del capítulo");
-                
-                let final = await preguntar.numero(
-                    tp, paginas 
-                        ? `Modificar la página final del capítulo: "${paginas.final}"` 
-                        : "Página final del capítulo:",
-                    error.Quit("No se ingresó el final del capítulo")
-                );
+        case MODIFICAR_EDITORES:
+            indice = separacion[1];
+            let { nombre: viejoNombre, apellido: viejoApellido } = datos[EDITORES][indice];
 
-                if (parseInt(final, 10) < parseInt(inicio, 10))
-                    throw error.Quit(`Se ingresó una página final del capítulo menor al inicio\ninicio: ${inicio}, final: ${final}`);
-                
-                return { inicio: inicio, final: final };
+            let nuevoApellido = await preguntar.simple(
+                tp, `Nuevo apellido del autore, donde antes era ${viejoApellido}:`,
+                error.Quit("No se ingresa el apellido del autore de forma correcta")
+            );
+
+            let nuevoNombre = await preguntar.simple(
+                tp, `Nuevo nombre del autore, donde antes era ${viejoNombre}:`,
+                error.Quit("No se ingresa el nombre del autore de forma correcta")
+            );
+
+            datos[EDITORES][indice] = { nombre: nuevoNombre, apellido: nuevoApellido };
+            break;
+
+        case EDITORES:
+            datos[EDITORES].push({
+                apellido: await preguntar.simple(
+                    tp, "Apellido del autore",
+                    error.Quit("No se ingresa el apellido del autore de forma correcta")
+                ),
+                nombre: await preguntar.simple(
+                    tp, "Nombre del autore",
+                    error.Quit("No se ingresa el nombre del autore de forma correcta")
+                ),
+            });
+            break;
+
+        case ELIMINAR_EDITORE:
+            datos[EDITORES].pop();
+            break;
+
+        case PAGINAS:
+            let inicioPaginas = await preguntar.numero(
+                tp, datos[PAGINAS]
+                    ? `Nueva página de inicio del capitulo, donde antes era ${datos[PAGINAS].inicio}`
+                    : "Página de inicio del capitulo",
+                error.Quit("No se ingresó el inicio del capitulo")
+            );
+
+            if (parseInt(inicioPaginas, 10) < 0) {
+                throw error.Quit("El inicio es un valor negativo");
             }
-        },
+
+            let finalPaginas = await preguntar.numero(
+                tp, datos[PAGINAS]
+                    ? `Nueva página final del capitulo, donde antes era ${datos[PAGINAS].final}`
+                    : "Página final del capitulo",
+                error.Quit("No se ingresó el final del capitulo")
+            );
+
+            if (parseInt(finalPaginas, 10) < parseInt(inicioPaginas, 10)) {
+                throw error.Quit("Termina antes de lo que empieza, la página final es más chica que el inicio");
+            }
+
+            datos[PAGINAS] = { inicio: inicioPaginas, final: finalPaginas };
+            break;
+
+        case SALIR:
+            salir = true;
+            break;
     }
+
+    return salir;
+}
+
+function generarPreguntasCapitulo(tp, datos) {
+    let opciones = [];
+    let valores = [];
+
+    opciones.push(NUMERO_CAPITULO);
+    valores.push(datos[NUMERO_CAPITULO]
+        ? ` ️✏️ Modificar el número del capítulo, donde era ${datos[NUMERO_CAPITULO]}`
+        : " ⊕ Número del capítulo"
+    );
+
+    opciones.push(NOMBRE_CAPITULO);
+    valores.push(datos[NOMBRE_CAPITULO]
+        ? ` ️✏️ Modificar el nombre del capítulo, donde era ${datos[NOMBRE_CAPITULO]}`
+        : " ⊕ (opcional) Nombre del capítulo"
+    );
+
+    for (let [indice, editore] of datos[EDITORES].entries()) {
+        let { nombre, apellido } = editore;
+        opciones.push(`${MODIFICAR_EDITORES}-${indice}`);
+        valores.push(`️ ️✏️ Modificar el editore ${nombre} ${apellido}`);
+    }
+
+    let cantidadEditores = datos[EDITORES].length;
+    if (cantidadEditores > 0) {
+        let { nombre, apellido } = datos[EDITORES][cantidadEditores - 1];
+        opciones.push(ELIMINAR_EDITORE);
+        valores.push(` ⊖ Eliminar ${nombre} ${apellido}`);
+    }
+    opciones.push(EDITORES);
+    valores.push(" ⊕ (opcional) Nombre del editore");
+
+    opciones.push(PAGINAS);
+    valores.push(datos[PAGINAS]
+        ? ` ️✏️ Modificar las páginas del capítulo, donde era ${datos[PAGINAS].inicio} - ${datos[PAGINAS].final}`
+        : " ⊕ (opcional) Número de páginas del capítulo"
+    );
+
+    if (datos[NUMERO_CAPITULO]) {
+        opciones.push(SALIR);
+        valores.push(" ↶ Confirmar datos");
+    }
+
+    return { opciones: opciones, valores: valores };
 }
 
 function describirLibro(archivo) {
@@ -395,10 +456,19 @@ function describirLibro(archivo) {
     return resultado;
 }
 
-module.exports = () => {
-    return { 
-        keys: KEYS,
-        citar: citarLibro, 
-        describir: describirLibro,
-    };
-}
+module.exports = () => ({
+    obtenerDefault: () => ({
+        [TITULO_OBRA]: null,
+        [SUBTITULO_OBRA]: null,
+        [NOMBRE_AUTORES]: [],
+        [ANIO]: null,
+        [EDITORIAL]: null,
+        [EDICION]: null,
+        [VOLUMEN]: null,
+        [URL]: null,
+        [CAPITULOS]: []
+    }),
+    actualizarDatos: actualizarDatos,
+    generarPreguntas: generarPreguntas,
+    describir: describirLibro,
+});

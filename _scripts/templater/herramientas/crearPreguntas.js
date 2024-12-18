@@ -7,7 +7,7 @@ async function crearPreguntas(
     datosPrevios = undefined
 ) {
     const preguntar = tp.user.preguntar();
-    const error = tp.user.error().Prompt("No se completó los datos necesarios");
+    const error = tp.user.error();
 
     let datos = obtenerDefault();
     if (datosPrevios) {
@@ -18,28 +18,26 @@ async function crearPreguntas(
         }
     }
 
-    let { opciones, valores } = generarPreguntas(tp, datos);
-
-    let respuesta = opciones[0];
-    if (opciones.length > 1) {
-        respuesta = await preguntar.suggester(
-            tp, valores, opciones, mensaje, error
-        );
-    }
-
-    let continuar = await actualizarDatos(tp, datos, respuesta);
-    while (!continuar) {
+    let continuar;
+    do {
         let { opciones, valores } = generarPreguntas(tp, datos);
 
         respuesta = opciones[0];
         if (opciones.length > 1) {
             respuesta = await preguntar.suggester(
-                tp, valores, opciones, mensaje, error
+                tp, valores, opciones, mensaje,
+                error.Prompt("No se completó los datos necesarios")
             );
         }
 
-        continuar = await actualizarDatos(tp, datos, respuesta);
-    }
+        try {
+            continuar = await actualizarDatos(tp, datos, respuesta);
+        } catch ({ name: _, message: mensaje }) {
+            new Notice(mensaje);
+            continue;
+        }
+
+    } while (!continuar);
 
     return datos;
 }
