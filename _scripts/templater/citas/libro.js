@@ -249,7 +249,7 @@ function generarPreguntas(tp, datos) {
     opciones.push(VOLUMEN);
     valores.push(datos[VOLUMEN]
         ? ` ️✏️ Modificar el volumen del libro, donde era ${datos[VOLUMEN]}`
-        : " ⊕ (opcional) Subtítulo del libro"
+        : " ⊕ (opcional) Volumen del libro"
     );
 
     opciones.push(URL);
