@@ -1,10 +1,12 @@
 ---
 etapa: sin-empezar
 estado: Sin empezar
+nombreAutores:
+  - apellido: Low
+    nombre: Daniel M.
 tags:
   - proyecto/curso
   - cursos/ciencia-de-datos-para-salud-mental-y-psicología
-links: 
 referencias:
   - "631"
   - "632"
