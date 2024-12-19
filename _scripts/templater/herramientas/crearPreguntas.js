@@ -11,7 +11,7 @@ async function crearPreguntas(
 
     let datos = obtenerDefault();
     if (datosPrevios) {
-        for (let [key, _] of Object.entries(tp, datos)) {
+        for (let [key, _] of Object.entries(datos)) {
             if (key in datosPrevios) {
                 datos[key] = datosPrevios[key];
             }

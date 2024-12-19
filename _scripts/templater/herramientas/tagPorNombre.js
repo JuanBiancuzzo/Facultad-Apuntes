@@ -1,4 +1,4 @@
-const CARACTERES_ELIMINAR = [",", "-"];
+const CARACTERES_ELIMINAR = [",", "-", "'"];
 
 function tagPorNombre(folder) {
     for (let caracterEliminar of CARACTERES_ELIMINAR) {

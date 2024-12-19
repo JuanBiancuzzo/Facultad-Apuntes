@@ -158,6 +158,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
                 numReferencia = capituloPrevio[NUM_REFERENCIA];
             } else {
                 numReferencia = seguidorRef.conseguirReferencia();
+                capituloPrevio = { [NUM_REFERENCIA]: numReferencia };
             }
 
             let capitulo = await tp.user.crearPreguntas(

@@ -123,7 +123,7 @@ function generarPreguntas(tp, datos) {
         valores.push(` ⊖ Eliminar ${nombre} ${apellido}`);
 
         opciones.push(NOMBRE_AUTORES);
-        valores.push(" ⊕ (opcion) Nombre del autore");
+        valores.push(" ⊕ (opcional) Nombre del autore");
     }
 
     opciones.push(FECHA_PUBLICACION);

@@ -16,7 +16,11 @@
 
 	const tipoCita = "Libro";
     let seguidorRef = tp.user.seguidorReferencias().new();
-	let numReferencia = seguidorRef.conseguirReferencia();
+
+	let separacion = tp.file.title.split(" - ");
+	let numReferencia = (separacion.length == 2 && separacion[1].includes(tipoCita)) 
+		? parseInt(separacion[0].trim(), 10)
+		: seguidorRef.conseguirReferencia();
 	
 	const dia = tp.file.creation_date("YYYY-MM-DD");
 	

@@ -1,5 +1,4 @@
 <%*
-    
     const preguntar = tp.user.preguntar();
 	const describir = tp.user.describir();
     const error = tp.user.error();
