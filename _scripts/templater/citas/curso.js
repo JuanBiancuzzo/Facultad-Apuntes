@@ -425,12 +425,39 @@ function generarPreguntasTema(tp, datos, nombreProfesores, otrosTemas) {
     let opciones = [];
     let valores = [];
 
-    // Modificar el caso donde tiene valor para indicar el anterior y el siguiente tema
     opciones.push(NUMERO_TEMA);
-    valores.push(datos[NUMERO_TEMA]
-        ? `️ ️✏️ Modificar el número del tema, donde era ${datos[NUMERO_TEMA]}`
-        : " ⊕ Número del tema"
-    );
+    if (datos[NUMERO_TEMA]) {
+        if (otrosTemas.length == 0) {
+            valores.push(`️ ️✏️ Modificar el número del tema, donde era ${datos[NUMERO_TEMA]}`);
+        } else {
+            let anterior, siguiente;
+            for (let i = 0; i < otrosTemas.length; i++) {
+                if (otrosTemas[i][NUMERO_TEMA] < datos[NUMERO_TEMA]) {
+                    anterior = otrosTemas[i];
+
+                } else if (otrosTemas[i][NUMERO_TEMA] == datos[NUMERO_TEMA]) {
+                    siguiente = otrosTemas[i];
+
+                } else if (!siguiente && otrosTemas[i][NUMERO_TEMA] > datos[NUMERO_TEMA]) {
+                    siguiente = otrosTemas[i];
+
+                }
+            }
+
+            let texto = (anterior) 
+                ? `antes de ${anterior[NOMBRE_TEMA]} => `
+                : "donde era ";
+            texto += `${datos[NUMERO_TEMA]}`;
+            if (siguiente) {
+                texto += ` => ${siguiente[NOMBRE_TEMA]}`;
+            }
+
+            valores.push(`️ ️✏️ Modificar el número del tema, ${texto}`);
+        }
+
+    } else {
+        valores.push(" ⊕ Número del tema");
+    }
 
     // Mostrar si es parte °N
     opciones.push(NOMBRE_TEMA);

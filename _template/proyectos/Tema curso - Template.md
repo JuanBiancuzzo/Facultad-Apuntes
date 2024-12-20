@@ -79,6 +79,10 @@
 				"Completar para crear tema del curso"
 			);
 
+			let seguidorRef = tp.user.seguidorReferencias().new();
+			let numReferencia = seguidorRef.conseguirReferencia();
+			infoTemaCurso[NUM_REFERENCIA] = numReferencia;
+
 			carpetaFinal = `${curso.file.folder}/${infoTemaCurso[NOMBRE_TEMA]}`;
 
 			let modificarArchivos = {};

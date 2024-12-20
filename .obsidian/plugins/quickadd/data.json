@@ -308,11 +308,9 @@
       },
       "folder": {
         "enabled": true,
-        "folders": [
-          "temp"
-        ],
+        "folders": [],
         "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
+        "createInSameFolderAsActiveFile": true,
         "chooseFromSubfolders": false
       },
       "appendLink": false,
