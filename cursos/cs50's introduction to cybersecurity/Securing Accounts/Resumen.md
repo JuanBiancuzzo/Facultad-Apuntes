@@ -8,7 +8,7 @@ profesores:
 tags:
   - resumen/curso
   - cursos/cs50s-introduction-to-cybersecurity/Securing-Accounts
-  - referencias/cursotema
+  - referencia/cursotema
 tipoCita: CursoTema
 ---
 # Índice

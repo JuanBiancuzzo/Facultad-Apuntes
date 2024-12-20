@@ -40,7 +40,7 @@
 
 		if (esOnline) {
 			let seguidorRef = tp.user.seguidorReferencias().new();
-			tags.push(`referencias/${tipoCita.toLowerCase()}`);
+			tags.push(`referencia/${tipoCita.toLowerCase()}`);
 
 			if (!numReferencia) {
 				numReferencia = seguidorRef.conseguirReferencia();
