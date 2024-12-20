@@ -14,7 +14,13 @@ if (materia.equivalencia) {
     carpeta += `/${equivalencia.file.folder.split("/").slice(1).join("/")}`;
 }
 
-let datos = dv.pages(`#${carpeta.replaceAll(" ", "-")} and #resumen`)
+let tagRepresentante = carpeta
+    .replaceAll(",", "")
+    .replaceAll("'", "")
+    .replaceAll("-", "")
+    .replaceAll(" ", "-");
+
+let datos = dv.pages(`#${tagRepresentante} and #resumen`)
     .sort(resumen => resumen.capitulo)
     .map(resumen => {
         let tagRepresentante = resumen.tags.find(tag => !tag.startsWith("resumen"));

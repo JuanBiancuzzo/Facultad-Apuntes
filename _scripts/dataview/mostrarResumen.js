@@ -8,7 +8,12 @@ if (!resumen) {
     return;
 }
 
-let tagRepresentante = resumen.file.folder.replaceAll(" ", "-").replaceAll(",", "");
+let tagRepresentante = resumen.file.folder
+    .replaceAll(",", "")
+    .replaceAll("'", "")
+    .replaceAll("-", "")
+    .replaceAll(" ", "-");
+
 if (resumen.parte) {
     tagRepresentante += `/${resumen.parte}`;
 }
