@@ -1,0 +1,28 @@
+---
+nombreTema: Virtualizing the Processor
+capitulo: 17
+numReferencia: 726
+parte: 0
+profesores:
+  - 0
+tags:
+  - resumen/curso
+  - referencia/cursotema
+  - cursos/computation-structures/Virtualizing-the-Processor
+---
+# Índice
+---
+```dataviewjs
+    await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+```
+
+# Resumen
+---
+%% Pendiente... %%
+
+
+# Bibliografía
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/bibliografiaMateria", { materia: dv.current() });
+```
