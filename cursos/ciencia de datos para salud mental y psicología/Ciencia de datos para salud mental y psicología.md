@@ -1,6 +1,6 @@
 ---
-etapa: sin-empezar
-estado: Sin empezar
+etapa: empezado
+estado: Falta ver los temas más en detalles
 nombreAutores:
   - apellido: Low
     nombre: Daniel M.
