@@ -97,8 +97,6 @@ Un listado de materias y su estado actual
 | ------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | [Álgebra 1](licenciatura%20en%20ciencias%20matemáticas/algebra%201/Álgebra%201.md)    | Me falta los capítulos de enteros, complejos y polinomios |
 | [Análisis 1](licenciatura%20en%20ciencias%20matemáticas/analisis%201/Análisis%201.md) | Empezando con vectores y geometría del espacio            |
-
-
 ## Investigación
 ---
 La intención en este repositorio es tener un lugar donde poder investigar sobre temas, vinculándolo con otros, y viendo que relaciones aparecen.
@@ -129,8 +127,6 @@ Para eso usaré obsidian, y pdfs, donde en obsidian todo sería archivos markdow
 | [Robot](investigación/robótica/Robot.md)                                                                                   | Sin empezar                                                                                                       |
 | [Storytelling](investigación/storytelling/Índice.md)                                                                       | Falta resumir                                                                                                     |
 | [Testing](investigación/testing/Testing.md)                                                                                | Sin empezar                                                                                                       |
-
-
 ## Proyectos
 ---
 Un listado de los proyectos y su estado actual
@@ -165,17 +161,17 @@ Estos proyectos tienen como objetivo crear un GDD y mostrar el desarrollo del ju
 
 | Juego | Estado |
 | ----- | ------ |
-
-
 ### Cursos
 ---
 Estos son los cursos que vaya haciendo
 
 | Curso                                                                                                                                                                                    | Estado      |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| [Introduction to Algorithms](cursos/introduction%20to%20algorithms/Introduction%20to%20Algorithms.md)                                                                                    | Sin empezar |
+| [Software Construction](cursos/software%20construction/Software%20Construction.md)                                                                                                       | Sin empezar |
+| [Computation Structures](cursos/computation%20structures/Computation%20Structures.md)                                                                                                    | Sin empezar |
+| [CS50's Introduction to Cybersecurity](cursos/cs50's%20introduction%20to%20cybersecurity/CS50's%20Introduction%20to%20Cybersecurity.md)                                                  | Sin empezar |
 | [Ciencia de datos para salud mental y psicología](cursos/ciencia%20de%20datos%20para%20salud%20mental%20y%20psicología/Ciencia%20de%20datos%20para%20salud%20mental%20y%20psicología.md) | Sin empezar |
-
-
 ### Colecciones
 ---
 Estos proyectos se basan en recolectar información distinto de un tema de investigación ya que este busca recolectar información con respecto a un tema, mientras que este es para tener información para temas en general

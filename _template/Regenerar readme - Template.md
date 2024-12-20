@@ -47,7 +47,7 @@ Un listado de materias y su estado dividido por carrera
                 : "Un listado de materias y su estado actual";
             return `### ${carrera.file.name}\n---\n${texto}\n\n${tabla}`;
         }).join("\n");
-%>
+_%>
 
 ## Investigación
 ---
@@ -87,7 +87,7 @@ Para eso usaré obsidian, y pdfs, donde en obsidian todo sería archivos markdow
         
         return [ `[${nombre}](${path})`, indice.estado ];
     }));
-%>
+_%>
 
 ## Proyectos
 ---
@@ -143,7 +143,7 @@ Estos proyectos tienen como objetivo crear un GDD y mostrar el desarrollo del ju
         
         return [ `[${nombre}](${path})`, proyecto.estado ];
     }));
-%>
+_%>
 
 ### Cursos
 ---
@@ -159,7 +159,7 @@ Estos son los cursos que vaya haciendo
         
         return [ `[${nombre}](${path})`, curso.estado ];
     }));
-%>
+_%>
 
 ### Colecciones
 ---
