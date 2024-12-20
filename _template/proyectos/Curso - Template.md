@@ -107,12 +107,6 @@ _%>
 ---
 %% Descripción del curso %%
 
-
-## Resumen
----
-%% Pendiente... %%
-
-
 ## Archivos
 ---
 ```dataviewjs

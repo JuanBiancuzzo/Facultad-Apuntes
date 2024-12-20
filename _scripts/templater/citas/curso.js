@@ -116,12 +116,11 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             indice = separacion[1];
 
         case TEMAS:
-            let temaPrevio, numReferencia;
+            let temaPrevio;
             if (indice) {
                 temaPrevio = datos[TEMAS][indice];
-                numReferencia = temaPrevio[NUM_REFERENCIA];
             } else {
-                numReferencia = seguidorRef.conseguirReferencia();
+                let numReferencia = seguidorRef.conseguirReferencia();
                 temaPrevio = { [NUM_REFERENCIA]: numReferencia };
             }
 

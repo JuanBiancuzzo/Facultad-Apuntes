@@ -21,7 +21,7 @@
 		let infoTemaCurso = {};
 		let tags = ["resumen/curso"];
 
-		let separacion = tp.file.title.split(" - ");
+		let separacion = tp.file.title.split("-");
 		if (separacion.length >= 6) {
 			// Viene de crear un curso
 			let [numReferencia, numeroTema, nombreCurso, nombreTema, parte, ...numProfesores] = separacion;
@@ -33,7 +33,7 @@
 			};
 
 			infoTemaCurso[PARTE_TEMA] = parseInt(parte.trim(), 10);
-			carpetaFinal = `cursos/${nombreCurso}/${nombreTema}`;
+			carpetaFinal = `cursos/${nombreCurso.trim().toLocaleLowerCase()}/${nombreTema.trim()}`;
 
 			infoTemaCurso["tipoCita"] = tipoCita;
 			tags.push(`referencia/${tipoCita.toLocaleLowerCase()}`);
@@ -214,8 +214,7 @@
 		if (infoTemaCurso[PARTE_TEMA] > 0) {
 			titulo += ` Parte ${infoTemaCurso[PARTE_TEMA]}`;
 		}
-		console.log(titulo);
-		await app.vault.rename(tArchivo, `${carpetaFinal}/${titulo}.md`);
+		await app.fileManager.renameFile(tArchivo, `${carpetaFinal}/${titulo}.md`);
 		
 	} catch ({ name: nombre, message: mensaje }) {
         const eliminar = tp.user.eliminar();

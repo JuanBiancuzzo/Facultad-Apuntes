@@ -25,7 +25,7 @@ class SeguidorReferencias {
         }
 
         this.numReferencias.push(previoNumReferencia + 1);
-        this.numReferencias = this.numReferencias.sort(ref => ref);
+        this.numReferencias = this.numReferencias.sort((a, b) => a - b);
 
         return previoNumReferencia + 1;
     }
