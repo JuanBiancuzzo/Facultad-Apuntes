@@ -24,7 +24,7 @@ tags:
   - biblioteca/paper
   - nota/investigacion
   - investigación/protocolos
-  - investigación/algoritmos
+  - investigación/ciencias-de-la-computación/algoritmos
 aliases:
   - Zyzzyva
   - Speculative Byzantine Fault Tolerance

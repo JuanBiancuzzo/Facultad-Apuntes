@@ -6,7 +6,7 @@ referencias:
   - "479"
 tags:
   - nota/investigacion
-  - investigación/algoritmos
+  - investigación/ciencias-de-la-computación/algoritmos
 aliases:
   - Búsqueda de la sección dorada
 ---

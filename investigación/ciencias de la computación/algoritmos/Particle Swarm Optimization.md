@@ -6,7 +6,7 @@ referencias:
   - "483"
 tags:
   - nota/investigacion
-  - investigación/algoritmos
+  - investigación/ciencias-de-la-computación/algoritmos
 aliases:
   - Optimización por enjambre de partículas
 ---

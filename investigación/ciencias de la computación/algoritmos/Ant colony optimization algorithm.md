@@ -6,7 +6,7 @@ referencias:
   - "482"
 tags:
   - nota/investigacion
-  - investigación/algoritmos
+  - investigación/ciencias-de-la-computación/algoritmos
 aliases:
   - ACO
   - Algoritmo de la colonia de hormigas

@@ -6,7 +6,7 @@ referencias:
   - "480"
 tags:
   - nota/investigacion
-  - investigación/algoritmos
+  - investigación/ciencias-de-la-computación/algoritmos
 aliases:
   - Búsqueda tabú
 ---

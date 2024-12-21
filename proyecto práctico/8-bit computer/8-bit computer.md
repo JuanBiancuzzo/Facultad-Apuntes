@@ -1,6 +1,6 @@
 ---
 dia: 2024-11-19
-estado: Sin empezar
+estado: Empezando por la ALU
 tags:
   - proyecto/práctico
   - proyecto-práctico/8-bit-computer

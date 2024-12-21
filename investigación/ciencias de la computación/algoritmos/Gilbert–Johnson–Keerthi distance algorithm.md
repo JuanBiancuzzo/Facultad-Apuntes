@@ -1,12 +1,14 @@
 ---
-dia: 2024-11-18
+dia: 2024-12-21
 etapa: sin-empezar
-orden: 489
-referencias:
-  - "567"
+orden: 600
+referencias: 
 tags:
   - nota/investigacion
   - investigación/ciencias-de-la-computación/algoritmos
+aliases:
+  - GJK distance algorithm
+  - GJK algorithm
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
@@ -14,11 +16,3 @@ tags:
 # Definición
 ---
 
-
-
-
-# Referencias
----
-```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
-```

@@ -24,7 +24,7 @@ El [[Conjunto|conjunto]] de los divisores positivos y negativos de un entero $a$
 * Se concluye que $d \mid a \iff |d| \mid |a|$ (donde $|x|$ denota el [[Norma|módulo]] o valor absoluto de $x$) 
     * $d \mid a \iff -d \mid a \iff d \mid -a \iff -d \mid -a$
     * El [[Cardinalidad|cardinal]] de $\text{Div}(a)$ es el doble de $\text{Div}_+(a)$
-* Si $a \ne 0$, $d \mid a \iff |d| \le |a|$. En particular, tod número entero $a$ no nulo tiene sólo un número finito de divisores, todos pertenecientes al conjunto $$ \set{ -|a|,~ \cdots,~ -1,~ 1,~ \cdots,~ |a| } $$ O sea $\text{Div}_+(a) \subset \set{1,~ \cdots,~ |a|}$
+* Si $a \ne 0$, $d \mid a \iff |d| \le |a|$. En particular, todo número entero $a$ no nulo tiene sólo un número finito de divisores, todos pertenecientes al conjunto $$ \set{ -|a|,~ \cdots,~ -1,~ 1,~ \cdots,~ |a| } $$ O sea $\text{Div}_+(a) \subset \set{1,~ \cdots,~ |a|}$
 * Ahor podemos probar fácilmente que los únicos números enteros que son inversibles son $1$ y $-1$. Es claro que tanto $1$ como $-1$ son inversibles. Por otro lado, si $a \in \mathbb{Z}$ inversible, entonces existe $b \in \mathbb{Z}$ tal que $a ~ b = 1$. Esto implica que $a \ne 0$ (pues $0 \cdot b = 0,~ \forall b \in \mathbb{Z}$), y por lo tanto $a | 1$. Pero por lo anterior, esto implica que $|a| \le 1$, es decir $a = \pm 1$
 * $d \mid a ~\text{y}~ a \mid d \iff a = \pm d$ 
 * Para todo $a \in \mathbb{Z}$, se tiene $1 \mid a$ y $-1 \mid a$, y también $a \mid a$ y $-a \mid a$

@@ -5,7 +5,7 @@ referencias:
   - "320"
 tags:
   - nota/investigacion
-  - investigación/algoritmos
+  - investigación/ciencias-de-la-computación/algoritmos
 orden: 275
 ---
 ```dataviewjs

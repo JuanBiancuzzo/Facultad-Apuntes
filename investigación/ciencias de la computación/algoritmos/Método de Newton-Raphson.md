@@ -6,7 +6,7 @@ referencias:
   - "481"
 tags:
   - nota/investigacion
-  - investigación/algoritmos
+  - investigación/ciencias-de-la-computación/algoritmos
 aliases:
   - Método de Newton
   - Newton method

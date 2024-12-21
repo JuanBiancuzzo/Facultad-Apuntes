@@ -24,7 +24,7 @@ tags:
   - biblioteca/paper
   - nota/investigacion
   - investigación/machine-Learning/transformers
-  - investigación/algoritmos
+  - investigación/ciencias-de-la-computación/algoritmos
   - investigación/ciencias-de-la-computación/Machine-learning/transformers
   - investigación/matemática/Estadística/Machine-learning/transformers
 orden: 360

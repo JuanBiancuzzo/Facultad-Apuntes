@@ -6,9 +6,9 @@ referencias:
 tags:
   - nota/investigacion
   - investigación/machine-Learning/red-Neuronal
-  - investigación/algoritmos
   - investigación/ciencias-de-la-computación/Machine-learning/red-Neuronal
   - investigación/matemática/Estadística/Machine-learning/red-Neuronal
+  - investigación/ciencias-de-la-computación/algoritmos
 orden: 252
 ---
 ```dataviewjs

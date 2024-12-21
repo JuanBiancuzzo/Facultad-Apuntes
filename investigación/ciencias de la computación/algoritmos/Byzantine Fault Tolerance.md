@@ -5,7 +5,7 @@ referencias:
   - "286"
 tags:
   - nota/investigacion
-  - investigación/algoritmos
+  - investigación/ciencias-de-la-computación/algoritmos
 aliases:
   - Tolerancia a faltas bizantinas
 orden: 340
