@@ -24,6 +24,13 @@ Notaremos en lo que sigue con $\text{DivCom}(\set{ a,~b })$ el [[Conjunto|conjun
 \end{align} $$
 Luego, el [[Máximo|máximo]] común divisor es el elemento más grande de cualquiera de esos dos conjuntos
 
+### Punto de vista de los coprimos
+---
+Sean $a,~ b \in \mathbb{Z}$, no ambos nulos. Sea $d \in \mathbb{Z}$ un número que satisface que $$ \begin{matrix} 
+    d \mid a, & d \mid b & \text{y} & \displaystyle \frac{a}{d} \perp \frac{d}{d}
+\end{matrix} $$
+Entonces $d = (a ~:~ b)$
+
 ## Múltiplo común de dos números
 ---
 Sean $a,~b \in \mathbb{Z}$, no ambos nulos, y sea $k \in \mathbb{Z}$ con $k \ne 0$. Entonces $$ (k ~ a ~:~ k ~ b) = |k| \cdot (a ~:~ b) $$
