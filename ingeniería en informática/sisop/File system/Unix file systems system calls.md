@@ -6,7 +6,7 @@ tags:
 ---
 # Definición
 ---
-Las [[System call|system calls]] de archivos pueden dividirse en dos clases:
+Las [[investigación/ciencias de la computación/lenguajes de programación/lenguaje c/System call/System call|system calls]] de archivos pueden dividirse en dos clases:
 * Las que operan sobre los [[Archivo|archivos]]
 * Las que operan sobre los [[Archivo|metadatos de los archivos]]
 

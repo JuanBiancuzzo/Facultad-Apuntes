@@ -98,10 +98,11 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             break;
 
         case VOLUMEN_REVISTA:
-            datos[VOLUMEN_REVISTA] = await preguntar.numero(
+            datos[VOLUMEN_REVISTA] = await preguntar.simple(
                 tp, datos[VOLUMEN_REVISTA]
                     ? `Nuevo volumen de la revista, donde antes era ${datos[VOLUMEN_REVISTA]}`
-                    : "Volumen de la revista"
+                    : "Volumen de la revista",
+                error.Quit("No se ingresó el volumen de la revista")
             );
             break;
 
@@ -134,8 +135,8 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
         case NUMERO_INFORME:
             datos[NUMERO_INFORME] = await preguntar.numero(
                 tp, datos[NUMERO_INFORME] 
-                    ? `Nuevo número del informe, donde antes era ${datos[NUMERO_INFORME]}` 
-                    : "Número del informe",
+                    ? `Nuevo número (el issue) del informe, donde antes era ${datos[NUMERO_INFORME]}` 
+                    : "Número del informe (el issue)",
                 error.Quit("No se ingresó número del informe")
             );
             break;

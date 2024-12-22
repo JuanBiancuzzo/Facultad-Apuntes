@@ -3,11 +3,12 @@ dia: 2023-11-08
 tags:
   - ingeniería-en-informática/sisop/File-system
   - nota/facultad
-  - lenguajes-de-programación/lenguaje-c
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c/System-call/File-system-system-calls
+  - investigación/ciencias-de-la-computación/sistemas-operativos/File-system/System-call
 ---
 # Definición
 ---
-La [[System call|system call]] `write()` escribe hasta una determinada cantidad de bytes desde un buffer que comienza en `buf` al [[Archivo|archivo]] referenciado por el [[File descriptor|file descriptor]]
+La [[investigación/ciencias de la computación/lenguajes de programación/lenguaje c/System call/System call|system call]] `write()` escribe hasta una determinada cantidad de bytes desde un buffer que comienza en `buf` al [[Archivo|archivo]] referenciado por el [[File descriptor|file descriptor]]
 
 ```c
 #inlude <unistd.h>

@@ -3,11 +3,11 @@ dia: 2023-11-18
 tags:
   - ingeniería-en-informática/sisop/La-abstracción-de-proceso
   - nota/facultad
-  - lenguajes-de-programación/lenguaje-c
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c/System-call/Procesos-system-calls
 ---
 # Definición
 ---
-La [[System call|system call]] `fork()` es la única forma que un usuario cree un [[Proceso|proceso]] en el [[Sistema operativo|sistema operativo]] [[Unix|UNIX]]. El proceso que invoca a `fork()` es llamado proceso padre, el nuevo proceso creado es llamado hijo.
+La [[investigación/ciencias de la computación/lenguajes de programación/lenguaje c/System call/System call|system call]] `fork()` es la única forma que un usuario cree un [[Proceso|proceso]] en el [[Sistema operativo|sistema operativo]] [[Unix|UNIX]]. El proceso que invoca a `fork()` es llamado proceso padre, el nuevo proceso creado es llamado hijo.
 
 ```c
 #include <sys/types.h>

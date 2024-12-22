@@ -3,11 +3,11 @@ dia: 2023-11-16
 tags:
   - ingeniería-en-informática/sisop/La-abstracción-de-proceso
   - nota/facultad
-  - lenguajes-de-programación/lenguaje-c
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c/System-call/Procesos-system-calls
 ---
 # Definición
 ---
-La [[System call||system call]] `brk()` es necesario para entender el layout o estructura real de [[Memoria|memoria]] de un [[Proceso|proceso]] en [[Linux]]
+La [[investigación/ciencias de la computación/lenguajes de programación/lenguaje c/System call/System call||system call]] `brk()` es necesario para entender el layout o estructura real de [[Memoria|memoria]] de un [[Proceso|proceso]] en [[Linux]]
 
 ```c
 #inlude <unistd.h>

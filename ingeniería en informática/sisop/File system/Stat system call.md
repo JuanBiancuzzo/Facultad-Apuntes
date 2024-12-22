@@ -3,12 +3,14 @@ dia: 2023-11-08
 tags:
   - ingeniería-en-informática/sisop/File-system
   - nota/facultad
-  - lenguajes-de-programación/lenguaje-c
-aliases: Fstat system call
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c/System-call/File-system-system-calls
+  - investigación/ciencias-de-la-computación/sistemas-operativos/File-system/System-call
+aliases:
+  - Fstat system call
 ---
 # Definición
 ---
-La [[System call|system call]] `stat()` devuelve información sobre un [[Archivo|archivo]], en el buffer apuntado por `statbuf`. No se requiere ningún permiso sobre el archivo en cuestión, pero si en los [[Directorio|directorios]] que conforma el [[File system#Path|path]] hasta llegar el archivo
+La [[investigación/ciencias de la computación/lenguajes de programación/lenguaje c/System call/System call|system call]] `stat()` devuelve información sobre un [[Archivo|archivo]], en el buffer apuntado por `statbuf`. No se requiere ningún permiso sobre el archivo en cuestión, pero si en los [[Directorio|directorios]] que conforma el [[File system#Path|path]] hasta llegar el archivo
 
 ```c
 #include <sys/types.h>

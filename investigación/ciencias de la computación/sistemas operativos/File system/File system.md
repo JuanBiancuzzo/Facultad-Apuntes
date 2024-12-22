@@ -1,19 +1,29 @@
 ---
-dia: 2023-08-23
+dia: 2024-12-22
 tags:
+  - índice
+  - nota/investigacion
+  - investigación/ciencias-de-la-computación/sistemas-operativos/File-system
   - ingeniería-en-informática/sisop/File-system
-  - nota/facultad
+estado: Sin empezar
+orden: 607
 aliases:
-  - Hard link#Hard link
   - Soft link#Soft link
   - Sistema de archivos
   - File path#Path
 ---
-# Definición
+```dataviewjs
+await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
+```
+# ¿Qué se va a investigar?
+---
+Vamos a investigar como un [[Sistema operativo|sistema operativo]] permite organizar los archivos de una forma práctica para los usuarios
+
+## Resumen
 ---
 Permite al usuario organizar sus datos para que se persistan a través de un largo período de tiempo.
 
-## Capa de abstracción
+### Capa de abstracción
 ---
 Es un tipo genérico de interfaz para cualquier tipo de filesystem que es posible sólo porque el [[Kernel|kernel]] implementa una capa de abstracción que rodea esta interface para con el [[File system|sistema de archivos]] de bajo nivel.
 
@@ -77,15 +87,16 @@ El resultado es una capa de abstracción general que le permite al kernel maneja
 \end{document}
 ```
 
-## Definiciones
+### Definiciones
 ---
 Veamos algunas definiciones
+* [[Hard link|Hard link]]
 
-## Path
+### Path
 ---
 Es el string que identifica unívocamente a un [[Directorio|directorio]] o [[Archivo|archivo]] dentro de un dispositivo
 
-## Root directory
+### Root directory
 ---
 Es el directorio de que cuelgan todos los demás
 
@@ -93,26 +104,35 @@ Es el directorio de que cuelgan todos los demás
 ---
 Es la [[File system#Path|ruta]] desde el [[File system#Root Directorio directory|directorio raíz]]
 
-## Relative path
+### Relative path
 ---
 Es la [[File system#Path|ruta]] relativa que se interpreta a partir del [[Directorio|directorio]] actual.
 
-## Current directory
+### Current directory
 ---
 Es el directorio actual en el cual se está ejecutando el [[Proceso|proceso]]
 
-## Hard link
+### Soft link
 ---
-Es el mapeo entre el nombre y el [[Archivo|archivo]] subyacente, esto implica que la estructura de un file system que permite múltiples hard links ya no es de [[Árbol|árbol]] invertido. Aquellos [[Sistema operativo|sistemas operativos]] que lo permiten se cuidan de no crear ciclos asegurándose que la estructura sea un grafo dirigido acíclico.
+Se da cuando un archivo puede ser llamado por distintos nombres
 
-## Soft link
+### Volumen
 ---
-Se da cuando un archivo puede ser llamado por distintos nombres.
+Es una abstracción que corresponde a un disco lógico. En el caso más simple un disco corresponde a un disco físico. Es una colección de recursos físicos de almacenamiento
 
-## Volumen
+### Mount point
 ---
-Es una abstracción que corresponde a un disco lógico. En el caso más simple un disco corresponde a un disco físico. Es una colección de recursos físicos de almacenamiento.
+Es un punto en el cual el [[File system#Root Directorio directory|root]] de un volumen se engancha dentro de la estructura existente de otro file system
 
-## Mount point
+## Archivos
 ---
-Es un punto en el cual el [[File system#Root Directorio directory|root]] de un volumen se engancha dentro de la estructura existente de otro file system.
+```dataviewjs
+await dv.view("_scripts/dataview/investigacion/mostrarArchivos", { indice: dv.current() });
+```
+
+
+# Bibliografía
+---
+```dataviewjs
+await dv.view('_scripts/dataview/investigacion/biblioIndice', { indice: dv.current() });
+```

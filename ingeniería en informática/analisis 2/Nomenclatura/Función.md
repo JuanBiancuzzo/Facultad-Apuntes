@@ -5,8 +5,8 @@ tags:
   - ingeniería-en-informática/algo-1/Lenguaje-C
   - ingeniería-en-informática/taller/Sintaxis
   - ingeniería-en-informática/analisis-2/Nomenclatura
-  - lenguajes-de-programación/lenguaje-c
-  - lenguajes-de-programación/lenguaje-Rust
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
   - ingeniería-en-informática/estructura/Álgebra-de-Boole
   - ingeniería-electrónica/analisis-2/Nomenclatura
   - ingeniería-electrónica/algo-1/Lenguaje-C

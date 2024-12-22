@@ -3,8 +3,8 @@ dia: 2024-03-21
 tags:
   - ingeniería-en-informática/bdd/SQL
   - nota/facultad
-  - lenguajes-de-programación/lenguaje-c
-  - lenguajes-de-programación/lenguaje-SQL
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-SQL
 ---
 # Definición
 ---

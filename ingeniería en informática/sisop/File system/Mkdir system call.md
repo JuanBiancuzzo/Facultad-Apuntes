@@ -6,7 +6,7 @@ tags:
 ---
 # Definición
 ---
-La [[System call]] `mkdir()`
+La [[investigación/ciencias de la computación/lenguajes de programación/lenguaje c/System call/System call]] `mkdir()`
 ```c
 #include <sys/stat.h>
 #include <sys/types.h>

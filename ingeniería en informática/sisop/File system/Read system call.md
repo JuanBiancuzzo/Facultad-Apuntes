@@ -3,11 +3,12 @@ dia: 2023-11-08
 tags:
   - ingeniería-en-informática/sisop/File-system
   - nota/facultad
-  - lenguajes-de-programación/lenguaje-c
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c/System-call/File-system-system-calls
+  - investigación/ciencias-de-la-computación/sistemas-operativos/File-system/System-call
 ---
 # Definición
 ---
-La [[System call|system call]] `read()` se utiliza para hacer intentos de lecturas hasta un número dado de bytes de un [[Archivo|archivo]]. La lectura comienza en la posición señalada por el [[File descriptor|file descriptor]], y tras ella se incrementa ésta en el número de bytes leídos
+La [[investigación/ciencias de la computación/lenguajes de programación/lenguaje c/System call/System call|system call]] `read()` se utiliza para hacer intentos de lecturas hasta un número dado de bytes de un [[Archivo|archivo]]. La lectura comienza en la posición señalada por el [[File descriptor|file descriptor]], y tras ella se incrementa ésta en el número de bytes leídos
 
 ```c
 #include <unistd.h>

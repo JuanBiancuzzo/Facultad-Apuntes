@@ -120,7 +120,7 @@ Este tipo de transición no son eventos raros y por ende deben tener un mecanism
 Existen tres formas por las cuales se debería pasar de modo usuario a modo kernel
 * [[Interrupción|Interrupciones]]
 * [[Excepción del procesador|Excepciones del procesador]]
-* Ejecución de [[System call|system calls]]
+* Ejecución de [[investigación/ciencias de la computación/lenguajes de programación/lenguaje c/System call/System call|system calls]]
 
 De hecho estas tres formas representan
 * Evento externo (interrupciones)
@@ -132,7 +132,7 @@ De hecho estas tres formas representan
 Así como hay varias formas de pasar de modo usuario a modo kernel, también hay varias formas de pasar de modo kernel a modo usuario
 * Un [[Proceso#API's|nuevo proceso]]
 	* Cuando se inicia un nuevo [[Proceso]] el [[Kernel]] copia el [[Programa]] en la [[Memoria|memoria]], setea el contador del programa apuntando a la primera instrucción del proceso setea el [[ingeniería en informática/sisop/Virtualización de memoria/Stack|stack]] pointer a la base del stack de usuario y switchea a modo usuario
-* Continuar después de una [[Interrupción|interrupción]], una [[Excepción del procesador|excepción del procesador]] o de una [[System call|system call]]
+* Continuar después de una [[Interrupción|interrupción]], una [[Excepción del procesador|excepción del procesador]] o de una [[investigación/ciencias de la computación/lenguajes de programación/lenguaje c/System call/System call|system call]]
 	* Una vez que el kernel termino de manejar el pedido, este continua con la ejecución de procesos interrumpidos mediante la restauración de todos los [[Registro|registros]] y cambiando el modo a nivel usuario
 * Cambio entre diferentes procesos
 	* En algunos casos puede pasar que el kernel decida ejecutar otro proceso que no sea el que se estaba ejecutando, en este caso el kernel carga el [[Estados de un proceso|estado del proceso]] nuevo a través de la PCB y cambia a modo usuario

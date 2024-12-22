@@ -15,7 +15,7 @@ El contenido de un user area
 	* Guarda el [[Hardware]] context cuando el proceso no se esta ejecutando
 * Un puntero a la [[Estructura Proc]] del proceso
 * El UID y GID real
-* Argumentos para, y valores de retorno o errores hacia, la [[System call]] actual
+* Argumentos para, y valores de retorno o errores hacia, la [[investigación/ciencias de la computación/lenguajes de programación/lenguaje c/System call/System call]] actual
 * Manejadores de señales
 * Información sobre las [[Contexto del nivel del usuario|area de memoria]]
 * La tabla de descriptores de archivos abiertos (Open [[File descriptor|file descriptor]] table)

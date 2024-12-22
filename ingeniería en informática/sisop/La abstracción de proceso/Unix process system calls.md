@@ -6,7 +6,7 @@ tags:
 ---
 # Definición
 ---
-Las [[System call|system calls]] de [[Proceso|procesos]] pueden separar en
+Las [[investigación/ciencias de la computación/lenguajes de programación/lenguaje c/System call/System call|system calls]] de [[Proceso|procesos]] pueden separar en
 * Al manejo de los proceso
 * La intercomunicación entre los procesos
 ## `exec()`

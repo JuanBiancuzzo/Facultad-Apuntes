@@ -4,8 +4,8 @@ tags:
   - ingeniería-en-informática/sisop/Concurrencia
   - nota/facultad
   - ingeniería-en-informática/taller/Concurrencia
-  - lenguajes-de-programación/lenguaje-c
-  - lenguajes-de-programación/lenguaje-Rust
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
   - ingeniería-electrónica/taller/Concurrencia
 aliases:
   - Multithreading

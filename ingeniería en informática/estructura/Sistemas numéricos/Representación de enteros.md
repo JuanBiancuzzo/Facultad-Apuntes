@@ -6,8 +6,8 @@ tags:
   - ingeniería-en-informática/taller/Sintaxis
   - ingeniería-en-informática/algo-1/Lenguaje-C
   - lenguajes-de-programación/lenguaje-Rust
-  - lenguajes-de-programación/lenguaje-c
-  - ingeniería-electrónica/algo-1/Lenguaje-C
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
+  - investigación/ciencias-de-la-computación/ingeniería-electrónica/algo-1/Lenguaje-C
   - ingeniería-electrónica/taller/Sintaxis
   - ingeniería-electrónica/estructura/Sistemas-numéricos
 aliases:

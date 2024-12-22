@@ -6,7 +6,7 @@ tags:
 ---
 # Definición
 ---
-La [[System call]] `closedir()` cierra el stream de tipo `DIR *` cuyo nombre es `dirstream`
+La [[investigación/ciencias de la computación/lenguajes de programación/lenguaje c/System call/System call]] `closedir()` cierra el stream de tipo `DIR *` cuyo nombre es `dirstream`
 
 ```c
 #include <sys/types.h>

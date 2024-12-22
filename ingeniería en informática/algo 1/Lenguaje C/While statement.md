@@ -4,8 +4,8 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/algo-1/Lenguaje-C
   - ingeniería-en-informática/taller/Sintaxis
-  - lenguajes-de-programación/lenguaje-Rust
-  - lenguajes-de-programación/lenguaje-c
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - ingeniería-electrónica/algo-1/Lenguaje-C
   - ingeniería-electrónica/taller/Sintaxis
 aliases:

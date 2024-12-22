@@ -3,7 +3,7 @@ dia: 2023-11-16
 tags:
   - ingeniería-en-informática/sisop/La-abstracción-de-proceso
   - nota/facultad
-  - lenguajes-de-programación/lenguaje-c
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c/System-call/Procesos-system-calls
 aliases:
   - Exec system call
   - Execl system call
@@ -14,7 +14,7 @@ aliases:
 ---
 # Definición
 ---
-La [[System call|system call]] `exec()`  tiene 6 variantes
+La [[investigación/ciencias de la computación/lenguajes de programación/lenguaje c/System call/System call|system call]] `exec()`  tiene 6 variantes
 * `exec()`
 * `execl()`
 * `execle()`

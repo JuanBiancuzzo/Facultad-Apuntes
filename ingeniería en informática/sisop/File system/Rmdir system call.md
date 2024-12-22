@@ -6,7 +6,7 @@ tags:
 ---
 # Definición
 ---
-La [[System call]] `rmdir()`
+La [[investigación/ciencias de la computación/lenguajes de programación/lenguaje c/System call/System call]] `rmdir()`
 ```c
 #include <unistd.h>
 
