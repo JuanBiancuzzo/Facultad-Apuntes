@@ -1,7 +1,7 @@
 ---
 dia: 2024-12-19
 etapa: sin-empezar
-estado: Sin empezar
+estado: Empezando el curso
 nombreAutores:
   - apellido: Demaine
     nombre: Erik

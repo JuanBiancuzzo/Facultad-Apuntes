@@ -102,9 +102,10 @@
 		throw error.Quit("Este archivo ya existe");
 	}
 
-	await tp.file.move(`${curso.file.folder}/${titulo}`, tArchivo);
+	await tp.file.move(`${resumen.file.folder}/${titulo}`, tArchivo);
 
-	let referenciasResumen = curso.referencias ? curso.referencias.sort(ref => ref).slice() : [];
+	let referenciasResumen = resumen.referencias ? resumen.referencias.sort(ref => ref).slice() : [];
+
 	let archivosReferencia = dv.pages('#referencia')
 		.flatMap(referencia => tp.user.cita().metadata(tp, referencia))
 		.sort(ref => ref.numReferencia);
@@ -112,9 +113,9 @@
 
 	let respuesta;
 	let numReferencias = [];
-	if (curso.esOnline) {
-		numReferencias.push(1); // Modificar para citar un curso online
-	}
+	if (resumen.numReferencia)
+		numReferencias.push(resumen.numReferencia);
+
 	while (referenciasResumen.length > 0) {
 		respuesta = await preguntar.suggester(
 			tp, [...referenciasMostrar, "Salir"], [...referenciasResumen, SALIR],
@@ -136,9 +137,9 @@
 	tR += "---\n"; 
 	tR += tp.obsidian.stringifyYaml({
 		dia: dia,
-		etapa: "sin-empezar",
+		etapa: "empezado",
 		orden: mantenerOrden.siguienteValorOrden(),
-		referencias: numReferencias,
+		referencias: numReferencias.map(num => parseInt(num, 10)),
 		tags: [tag, "nota/investigacion"]
 	});
 	tR += "---\n";

@@ -16,9 +16,7 @@ function whiteListArticuloLegal(tp, archivoPath) {
 }
 
 function whiteListArchivoCurso(archivoPath) {
-    const dv = app.plugins.plugins.dataview.api;
-    const cursos = dv.pages("#proyecto/curso").map(curso => curso.file.folder);
-    return cursos.some(proyecto => archivoPath.startsWith(proyecto));
+    return archivoPath.startsWith("cursos");
 }
 
 function whiteListArchivoProyectoPractico(archivoPath) {

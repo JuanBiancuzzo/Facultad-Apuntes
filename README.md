@@ -167,10 +167,10 @@ Estos son los cursos que vaya haciendo
 
 | Curso                                                                                                                                                                                    | Estado                              |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| [Introduction to Algorithms](cursos/introduction%20to%20algorithms/Introduction%20to%20Algorithms.md)                                                                                    | Sin empezar                         |
 | [Software Construction](cursos/software%20construction/Software%20Construction.md)                                                                                                       | Sin empezar                         |
 | [Computation Structures](cursos/computation%20structures/Computation%20Structures.md)                                                                                                    | Sin empezar                         |
 | [Performance Engineering of Software Systems](cursos/performance%20engineering%20of%20software%20systems/Performance%20Engineering%20of%20Software%20Systems.md)                         | Sin empezar                         |
+| [Introduction to Algorithms](cursos/introduction%20to%20algorithms/Introduction%20to%20Algorithms.md)                                                                                    | Empezando el curso                  |
 | [CS50's Introduction to Cybersecurity](cursos/cs50's%20introduction%20to%20cybersecurity/CS50's%20Introduction%20to%20Cybersecurity.md)                                                  | Sin empezar                         |
 | [Ciencia de datos para salud mental y psicología](cursos/ciencia%20de%20datos%20para%20salud%20mental%20y%20psicología/Ciencia%20de%20datos%20para%20salud%20mental%20y%20psicología.md) | Falta ver los temas más en detalles |
 ### Colecciones
