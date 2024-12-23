@@ -1,24 +1,17 @@
 ---
-dia: 2024-07-08
-tags:
+dia: 2024-12-23
+tag:
   - índice
   - nota/investigacion
-  - investigación/matemática/numerical-Linear-Algebra/integrator
-estado: Tenemos por ahora un único integrador definido
-aliases:
-  - Integrador
+  - investigación/matemática/Análisis-numérico
+equivalente: "[[investigación/ciencias de la computación/Análisis numérico/Análisis numérico.md|Análisis numérico]]"
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
 ```
-# ¿Qué se va a investigar?
----
-En el mismo sentido que Runge-Kutta methods vamos a ver como resolver [[investigación/física/lagrangian mechanics/Índice|Lagrangian mechanics]] de forma numérica, con sistemas de corrección
-
 ## Resumen
 ---
-Pendiente...
-
+![[investigación/ciencias de la computación/Análisis numérico/Análisis numérico.md#Resumen]]
 
 ## Archivos
 ---

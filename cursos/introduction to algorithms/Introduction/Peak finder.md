@@ -59,7 +59,48 @@ Una forma de resolver es haciendo una búsqueda lineal de izquierda a derecha. E
 
 Incluso si se elige un punto de entrada al array, siempre vamos a poder encontrar un caso donde el único pico este en la última posición que busquemos. Por lo tanto su [[Worse-case complexity|worse-case complexity]] es de $\Theta(n)$ 
 
-Una mejor forma de resolver lo es usado la estrategia de [[Divide and Conquer|Divide and Conquer]], haciendo una [[Búsqueda binaria|búsqueda binaria]], reduciendo así el worse-case complexity a $\Theta(\log_2(n))$ 
+Una mejor forma de resolver lo es usado la estrategia de [[Divide and Conquer|Divide and Conquer]], haciendo una [[Búsqueda binaria|búsqueda binaria]], veámoslo en [[Pseudocódigo|pseudocódigo]]
+
+```
+function 1DPeakFinder :: array: Integer[] n: Integer -> Integer
+    
+    if array[n / 2] < a[n / 2 - 1] then
+        return 1DPeakFinder array[0 : n / 2 - 1] (n / 2)
+    
+    else if array[n / 2] < a[n / 2 + 1] then
+        return 1DPeakFinder array[n / 2 + 1 : n - 1] (n / 2)
+    
+    else 
+        return n / 2    
+    end
+end
+```
+
+Esto reduce el worse-case complexity a $\Theta(\log_2(n))$ 
+
+## Ejemplo en dos dimensiones
+---
+Dado una matriz de $n$ por $m$, donde de nuevo tenemos una búsqueda lineal, donde se inicia en un punto $(i,~ j)$, se tiene que la worse-case complexity es de $\Theta(nm)$
+
+Usando la estrategia de Divide and Conquer, se plantea 
+
+```
+function 2DPeakFinder :: matrix: Integer[][] n: Integer m: Integer -> Integer Integer
+    let indiceMaximo := Max matrix[m / 2][:]
+    
+    if matrix[m / 2 - 1][indiceMaximo] > matrix[m / 2][indiceMaximo] then
+        return 2DPeakFinder matrix[0 : m / 2 - 1][:] n (m / 2)
+    
+    else if matrix[m / 2 + 1][indiceMaximo] > matrix[m / 2][indiceMaximo] then
+        return 2DPeakFinder matrix[m / 2 - 1 : m - 1][:] n (m / 2)
+    
+    else 
+        return (m / 2) indiceMaximo
+    end
+end
+```
+
+El cual termina dando un worse-case complexity de $\Theta(n ~ \log_2(m))$
 
 # Referencias
 ---

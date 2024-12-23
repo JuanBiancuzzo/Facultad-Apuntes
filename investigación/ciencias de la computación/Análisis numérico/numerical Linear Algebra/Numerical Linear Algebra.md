@@ -5,7 +5,8 @@ orden: 375
 tags:
   - índice
   - nota/investigacion
-  - investigación/matemática/numerical-Linear-Algebra
+  - investigación/ciencias-de-la-computación/Análisis-numérico/numerical-Linear-Algebra
+  - investigación/matemática/Análisis-numérico/numerical-Linear-Algebra
 aliases:
   - NLA
   - Applied Linear Algebra

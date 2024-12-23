@@ -20,7 +20,7 @@ Un listado de materias, sus códigos y su estado actual
 | Materia                                                                                                                                        | Código | Estado                                              |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------ | --------------------------------------------------- |
 | [Álgebra 2 A (8102)](ingeniería%20electrónica/Álgebra%202%20A%20(8102).md)                                                                     | 8102   | Falta terminar de pasar el resumen                  |
-| [Algoritmos y Programación 1 (9511)](ingeniería%20electrónica/Algoritmos%20y%20Programación%201%20(9511).md)                                   | 9511   | Voy por el 3do pdf                                  |
+| [Algoritmos y Programación 1 (9511)](ingeniería%20electrónica/Algoritmos%20y%20Programación%201%20(9511).md)                                   | 9511   | Voy por el 4do pdf                                  |
 | [Algoritmos y Programación 2 (9512)](ingeniería%20electrónica/Algoritmos%20y%20Programación%202%20(9512).md)                                   | 9512   | Falta hacer el resumen                              |
 | [Algoritmos y Programación 3 (9502)](ingeniería%20electrónica/Algoritmos%20y%20Programación%203%20(9502).md)                                   | 9502   | Falta hacer el resumen                              |
 | [Análisis de circuitos (8604)](ingeniería%20electrónica/adc/Análisis%20de%20circuitos%20(8604).md)                                             | 8604   | Terminado                                           |
@@ -50,7 +50,7 @@ Un listado de materias, sus códigos y su estado actual
 | Materia                                                                                                                                     | Código | Estado                                              |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | ------ | --------------------------------------------------- |
 | [Álgebra 2 A (6108)](ingeniería%20en%20informática/algebra%202/Álgebra%202%20A%20(6108).md)                                                 | 6108   | Falta terminar de pasar el resumen                  |
-| [Algoritmos y programación 1 (7540)](ingeniería%20en%20informática/algo%201/Algoritmos%20y%20programación%201%20(7540).md)                  | 7540   | Voy por el 3do pdf                                  |
+| [Algoritmos y programación 1 (7540)](ingeniería%20en%20informática/algo%201/Algoritmos%20y%20programación%201%20(7540).md)                  | 7540   | Voy por el 4do pdf                                  |
 | [Algoritmos y programación 2 (7541)](ingeniería%20en%20informática/algo%202/Algoritmos%20y%20programación%202%20(7541).md)                  | 7541   | Falta hacer el resumen                              |
 | [Algoritmos y programación 3 (7507)](ingeniería%20en%20informática/algo%203/Algoritmos%20y%20programación%203%20(7507).md)                  | 7507   | Falta hacer el resumen                              |
 | [Análisis de Circuitos (6606)](ingeniería%20en%20informática/Análisis%20de%20Circuitos%20(6606).md)                                         | 6606   | Terminado                                           |
