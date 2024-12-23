@@ -6,10 +6,16 @@ tags:
   - ingeniería-electrónica/estructura/Registros-y-contadores
 aliases:
   - Acumulador
+referencias:
+  - "665"
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
-Tienen la capacidad de guardar información, y su estructura se conforma por $n$ [[Flip-Flop D sincrónico|flip-flop operando sincrónicamente]] y [[Compuerta lógica|compuertas lógicas]].
+Tienen la capacidad de guardar información, y su estructura se conforma por $n$ [[Flip-Flop D sincrónico|flip-flop operando sincrónicamente]] y [[Compuerta lógica|compuertas lógicas]]
 
 Veamos un ejemplo con [[Flip-Flop D sincrónico|flip-flop d sincrónicos]]
 
@@ -70,8 +76,89 @@ Veamos un ejemplo con [[Flip-Flop D sincrónico|flip-flop d sincrónicos]]
 \end{document}
 ```
 
-Este [[Circuito secuencial]] nos permite guardar 4 bits de información cada vez que se active el reloj.
+Este [[Circuito secuencial|circuito secuencial]] nos permite guardar 4 bits de información cada vez que se active el reloj
 
-A diferencia de los [[Registro de desplazamiento|registros de desplazamiento]], es decir en serie, estos registros nos permiten leer la información en paralelo, es decir que leemos todos los bits al mismo tiempo.
+A diferencia de los [[Registro de desplazamiento|registros de desplazamiento]], es decir en serie, estos registros nos permiten leer la información en paralelo, es decir que leemos todos los bits al mismo tiempo
 
-Este tipo de registro permite reducir el costo en tiempo para la comunicación, en intercambio por los cables adicionales que se necesitan.
+Este tipo de registro permite reducir el costo en tiempo para la comunicación, en intercambio por los cables adicionales que se necesitan
+
+## Registro usando transistores
+---
+Se puede crear un registro simple usando un [[Transistor bipolar de juntura|TBJ]] de la siguiente forma 
+
+```tikz
+\usepackage[
+	straightvoltages,
+	americancurrents,
+	americanresistors, 
+	americaninductors, 
+	americanports, 
+	americangfsurgearrester
+]{circuitikz} 
+
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usepackage{ifthen}
+
+\ctikzset{
+	resistors/scale=0.7,
+	capacitors/scale=0.7,
+	inductors/scale=0.7,
+	cute inductors,
+}
+
+\begin{document} 
+	\begin{circuitikz}[
+		voltage shift=0.5, scale=1.3, transform shape, thick,
+		loops/.style={circuitikz/inductors/coils=#1}
+	]
+	
+    	\coordinate (cT1) at (0, 0) {};
+    	\coordinate (cT2) at (4, 0) {};
+    	
+    	\tikzmath { \radio = 0.75; \sep = 0.15; }
+    	\begin{scope}
+        	\draw (cT1) circle (\radio);
+        	\clip (cT1) circle (\radio);
+        	\foreach \x [parse=true] in 
+            	{-3 * \radio, -3 * \radio + \sep, ..., \radio} 
+            {
+            	\draw[thin] ($ (cT1) + (\x, -\radio) $) 
+                	-- ++({2 * \radio}, {2 * \radio});
+        	}
+    	\end{scope}
+    	
+    	\filldraw[fill=gray] (cT2) circle (0.75);
+	
+    	\draw (cT1) node[npn, yscale=1.5] (T1) {};
+    	\path ($ (cT1) + (0.3, 0) $) node {T1};
+    	\draw (cT2) node[npn, yscale=1.5] (T2) {};
+    	\path ($ (cT2) + (0.3, 0) $) node {T2};
+    	
+    	\draw (T1.C) to[short, -o] ++(0.5, 0) node[right=2pt] {$5$ V};
+    	\draw (T1.C) to[R, l^=$1$ K] ++(0, 2) node (temp) {}
+        	to[short] (temp.center -| T2.C)
+        	to[short, -o] ++(2, 0) node[right=2pt] (fuente) {$5$ V};
+        \draw (T1.E) node[tlground] {};
+        \draw (T1.B) to ++(-0.5, 0) to[R, l_=$10$ K] ++(0, -2.5)
+            node[tlground] {};
+        
+        \draw (T2.C) to[short, -o] ++(0.5, 0) node[right=2pt] {$\approx 0$ V};
+        \draw (T2.C) to[R, l^=$1$ K, -*] (T2.C |- fuente.center);
+        \draw (T2.E) node[tlground] {};
+        \draw (T2.B) to ++(-0.5, 0) to[R, l_=$10$ K] ++(0, -2.5)
+            node[tlground] {};
+        
+	
+	\end{circuitikz}
+\end{document}
+```
+
+Ya que en el colector de T1 esta a $5~V$ este termina estando [[Corte del transistor bipolar de juntura|cortado]], mientras que T2 esta en [[Saturación del transistor bipolar de juntura|saturación]]
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```

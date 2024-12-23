@@ -29,6 +29,8 @@ En términos de información las computadoras únicamente manejan pulsos eléctr
 ---
 A este par $0$/$1$ se lo denomina bit ó digito binario o BInary digiT. El bit representa la unidad de información más pequeña que una [[Computadora|computadora]] maneja. Un bit solo puede representar dos valores o estados
 
+Estos valores se pueden guardar usando [[Transistor|transistores]], mientras más bits, más transistores se necesitan para mantenerlos
+
 ### Byte
 ---
 Brooks propuso en su artículo que una computadora accediera a la información en "pedazos" de $8$ bits. Estos pedazos fueron denominados bytes, con lo cual formalmente un Byte equivale a 8 bits

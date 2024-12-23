@@ -175,7 +175,7 @@ tags:
 
 ## Capítulo 1: Number systems and codes
 ---
-
+Empezamos viendo [[Sistema posicional|sistemas posicionales]] para representar los números en binario
 
 
 ## Capítulo 2: Gates
