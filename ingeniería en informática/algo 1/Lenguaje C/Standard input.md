@@ -8,6 +8,7 @@ tags:
 aliases:
   - Estándar input
   - Std input
+  - Scanf#^scanf
 ---
 # Definición
 ---
@@ -20,6 +21,8 @@ Esta [[Función|función]] se utiliza para realizar operaciones de entrada. La m
 ```c
 int scanf(const char *format, ...);
 ```
+
+^scanf
 
 La cadena control o formato provee una descripción del formato de entrada de los datos. A este formato serán convertidos los datos ingresados en el dispositivo de entrada. Estos caracteres de especificación de formato se obtienen con marcadores determinados por caracteres de escape `%`
 
@@ -38,3 +41,11 @@ Estos especificadores de formato se asignan según la localización relativa y e
 | `%E`        | La notación científica                      |
 | `%c`        | Caracter                                    |
 | `%s`        | Cadena de caracteres (String)               |
+
+Otra forma de leer el stdin, es usando la siguiente función
+
+```c
+int getchar(void);
+```
+
+^getchar

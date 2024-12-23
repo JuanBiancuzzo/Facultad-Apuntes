@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/algo-1/Lenguaje-C
   - resumen/materia
   - ingeniería-electrónica/algo-1/Lenguaje-C
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
 ---
 # Índice 
 ---

@@ -11,7 +11,7 @@ tags:
 ---
 # Definición
 ---
-Las variables carácter contienen un único carácter y se almacenan en un Byte de [[Memoria|memoria]]. Como se vio el byte es una unidad de medida correspondiente a $8$ bits, la cual para cada posible valor, se estableció un posible carácter dado por una [[Tabla ASCCI|tabla ASCCI]]
+Las variables carácter contienen un único carácter y se almacenan en un Byte de [[Memoria|memoria]]. Como se vio el byte es una unidad de medida correspondiente a $8$ bits, la cual para cada posible valor, se estableció un posible carácter dado por una [[Tabla ASCII|tabla ASCCI]]
 
 ## Representación en C
 ---

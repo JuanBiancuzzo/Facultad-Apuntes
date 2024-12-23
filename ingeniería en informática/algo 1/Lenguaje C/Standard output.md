@@ -8,7 +8,8 @@ tags:
 aliases:
   - Estándar output
   - Std output
-  - Printf
+  - Printf#^printf
+  - Putchar#^putchar
 ---
 # Definición
 ---
@@ -21,6 +22,8 @@ Esta [[Función|función]] se utiliza para realizar operaciones de salida. La mi
 ```c
 int printf(const char *format, ...);
 ```
+
+^printf
 
 La cadena de formato provee una descripción de la salida. Dicha cadena posee dos tipos de caracteres, los caracteres comunes, que serán impresos tal cual en el dispositivo de salida, y los caracteres de especificación de formato con marcadores determinados por caracteres de escape `%`
 
@@ -39,3 +42,11 @@ Estos especificadores de formato se asignan según la localización relativa y e
 | `%E`        | La notación científica                      |
 | `%c`        | Caracter                                    |
 | `%s`        | Cadena de caracteres (String)               |
+
+Otra forma de escribir a stdout, es usando la siguiente función
+
+```c
+int putchar(int c);
+```
+
+^putchar
