@@ -439,11 +439,19 @@ subtituloObra:
 
 ## Capítulo 1: A Dialogue on the Book
 ---
-
+Menciona que las $3$ partes importantes de un sistema operativo son
+ * [[Virtualización|Virtualización]]
+ * [[Concurrencia|Concurrencia]]
+ * [[Persistencia de datos|Persistencia]]
 
 ## Capítulo 2: Introduction to Operating Systems
 ---
+Partiendo de la [[Arquitectura Von Neumann|arquitectura Von Neumann]], se plantea la idea de un sistema para que sea fácil de usar, este sistema es un [[Sistema operativo|sistema operativo]]
 
+La primera forma en la que un OS logra esto es mediante la virtualización. Para poder usar el sistema operativo, este provee algunas [[Aplicación Programming Interface|APIs]], y en general las [[Función|funciones]] que da se las llaman [[investigación/ciencias de la computación/lenguajes de programación/lenguaje c/System call/System call|system calls]] y están disponibles para para las aplicaciones. Estas a veces se las conoce como una [[Biblioteca|biblioteca]] estándar 
+
+Vemos
+* [[Virtualización del procesador|Virtualización de la CPU]]
 
 ## Capítulo 3: A Dialogue on Virtualization
 ---
