@@ -66,7 +66,9 @@ Un listado de materias, sus códigos y su estado actual
 | [Matemática discreta (6107)](ingeniería%20en%20informática/discreta/Matemática%20discreta%20(6107).md)                                      | 6107   | Terminado                                           |
 | [Organización de datos (7506)](ingeniería%20en%20informática/orga/Organización%20de%20datos%20(7506).md)                                    | 7506   | Falta pasar los videos de los últimos temas         |
 | [Probabilidad y estadística B (6109)](ingeniería%20en%20informática/proba/Probabilidad%20y%20estadística%20B%20(6109).md)                   | 6109   | Terminado                                           |
+| [Programación Concurrente (TB026)](ingeniería%20en%20informática/concurrentes/Programación%20Concurrente%20(TB026).md)                      | TB026  | Sin empezar                                         |
 | [Redes (TA048)](ingeniería%20en%20informática/redes/Redes%20(TA048).md)                                                                     | TA048  | Terminado                                           |
+| [Sistemas Distribuidos 1 (TA050)](ingeniería%20en%20informática/distribuidos/Sistemas%20Distribuidos%201%20(TA050).md)                      | TA050  | Sin empezar                                         |
 | [Sistemas operativos (7508)](ingeniería%20en%20informática/sisop/Sistemas%20operativos%20(7508).md)                                         | 7508   | Terminado                                           |
 | [Taller de programación 1 (9508)](ingeniería%20en%20informática/taller/Taller%20de%20programación%201%20(9508).md)                          | 9508   | Falta pasar las presentaciones de los últimos temas |
 | [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md) | TA053  | Estamos buscando información sobre el tema          |
