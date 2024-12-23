@@ -49,7 +49,7 @@ Sean $a,~ b,~ c,~ d \in \mathbb{Z}$ con $c \ne 0$ y $d \ne 0$. Entonces
 > [!quote]+ Demostración
 > $c \perp d$ por definición $1 = s ~ c + t ~ d$ y esto implica $a = s ~ (c ~ a) + t ~ (d ~ a)$, pero $d \mid a \implies c ~ d \mid c ~ a$ y $c \mid a \implies c ~ d \mid d ~ a$, luego $c ~ d \mid s ~ (c ~ a) + t ~ (d ~ a) = a$ 
 
-2. Sea $d \perp a$. Entonces $d \mid a ~ b \iff a \mid b$
+2. Sea $d \perp a$. Entonces $d \mid a ~ b \iff a \mid b$ ^de8c6d
 
 > [!quote]+ Demostración
 > $d \perp a$ por definición $1 = s ~ d + t ~ a$, luego $b = (s ~ b) ~ d + t ~ (a ~ b)$, pero $d \mid a ~ b$, y $d \mid d$. Por lo tanto, $d \mid  (s ~ b) ~ d + t ~ (a ~ b) = b$ 

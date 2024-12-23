@@ -42,7 +42,7 @@ Recordemos otras propiedades que ya conocemos de $\mathbb{Z}$ o también de subc
 
 ## Todo número entero es divisible por algún primo
 ---
-Sea $a \in \mathbb{Z}$, $a \ne 0,~ \pm 1$. Entonces existe un [[Número primo|número primo]] (positivo) $p$ tal que $p \mid a$
+Sea $a \in \mathbb{Z}$, $a \ne 0,~ \pm 1$. Entonces existe un [[Número primo|número primo]] (positivo) $p$ tal que $p \mid a$ ^e1bdbb
 
 > [!quote]+ Demostración
 > Claramente alcanza probar para $a$ positivo, es decir para $a \ge 2$ (pues $a \ne 0,~ \pm 1$) pues sabemos que $p \mid a \iff p \mid |a|$ $$ p(a): ~~ \exists p ~ \text{primo positivo} ~ : ~ p \mid a $$
