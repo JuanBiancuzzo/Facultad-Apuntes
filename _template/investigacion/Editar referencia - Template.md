@@ -34,11 +34,10 @@
         tReferencia = tp.file.find_tfile(referencia.file.path);
     }
 
-    let datosActuales = referencia.file.frontmatter[key];
-    let datosViejos = JSON.parse(JSON.stringify(datosActuales));
-
+    let datosViejos = JSON.parse(JSON.stringify(referencia.file.frontmatter));
     let seguidorRef = tp.user.seguidorReferencias().new(dv);
-    let datosNuevos = await tp.user.cita().editar(tp, referencia.tipoCita, seguidorRef, datosActuales);
+    let datosNuevos = await tp.user.cita().editar(tp, referencia.tipoCita, seguidorRef, datosViejos);
+    console.log(referencia.tipoCita, datosViejos);
 
     if (dvArchivo.tipoCita == LIBRO) {
         let nuevoAliases = dvArchivo.aliases ? dvArchivo.aliases : [];
