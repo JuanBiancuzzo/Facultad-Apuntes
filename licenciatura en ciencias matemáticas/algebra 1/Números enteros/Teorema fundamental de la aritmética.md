@@ -19,6 +19,7 @@ tags:
 > * $\forall a \in \mathbb{Z}$, $a \ne 0,~ \pm 1$, existe $r \in \mathbb{N}$ y existen primos positivos $p_1,~ \cdots,~ p_r$ distintos y $m_1,~ \cdots,~ m_r \in \mathbb{N}$ tales que $$ a = \pm p_1^{m_1} \cdot p_2^{m_2} \cdots p_r^{m_r} $$
 > 
 > * Esta escritura es única salvo permutación de los primos
+^teorema-1-1-1
 
 > [!demostracion]+ Demostración
 > ## Existencia
@@ -43,6 +44,8 @@ tags:
 > 
 > Si no pasa eso y sobra algo de algún lado al menos, obtenemos una expresión del mismo tipo, pero donde $p_i \ne q_j$ (pues son todos los que sobraron). Podemos suponer sin pérdida de generalidad que del lado izquierdo sobró un $p_i$. Entonces tenemos que $p_i$ divide a lo que sobró del lado derecho o al $1$ si no sobró nada. O sea $p_i \mid 1$ (lo que es absurdo) o $p_i \mid q_1^{n_1} \cdots q_s^{n_s}$. En este último caso, por la siguiente proposición ![[Número primo#^3f0b15|proposicion de la propiedad fundamental]] existe $j$ tal que $p_i \mid q_j$ pero $p_i$ y $q_j$ son primos distintos. Contradicción, que proviene de suponer que sobró un primo de algún lado
 
+## Primos de productos y potencias
+---
 > [!observacion]+ Observación 1.1.2 (Primos de productos y potencias)
 > Sean $a,~ b \in \mathbb{Z}$ no nulos de la forma $$ \begin{align} 
 >   a &= \pm p_1^{m_1} \cdots p_r^{m_r} & \text{con}& ~ m_1,~ \cdots,~ m_r \in \mathbb{N}_0 \\
@@ -55,9 +58,11 @@ tags:
 ^obs-1-1-2
 ## Divisores de un número y cantidad
 ---
-Sea $a \in \mathbb{Z}$, $a \ne 0,~ \pm 1$, y sea $a = \pm p_1^{m_1} \cdots p_r^{m_r}$ la factorización en primos de $a$. Entonces
-1. $d \mid a \iff d = \pm p_1^{n_1} \cdots p_r^{n_r}$ con $0 \le n_1 \le m_1, \cdots, 0 \le n_r \le m_r$
-2. $\# \text{Div}_{+}(a) = (m_1 + 1) \cdots (m_r + 1)$ y $\# \text{Div}(a) = 2 ~ (m_1 + 1) \cdots (m_r + 1)$
+> [!proposicion]+ Proposición 1.1.3 (Divisores de un número y cantidad)
+> Sea $a \in \mathbb{Z}$, $a \ne 0,~ \pm 1$, y sea $a = \pm p_1^{m_1} \cdots p_r^{m_r}$ la factorización en primos de $a$. Entonces
+> 1. $d \mid a \iff d = \pm p_1^{n_1} \cdots p_r^{n_r}$ con $0 \le n_1 \le m_1, \cdots, 0 \le n_r \le m_r$
+> 2. $\# \text{Div}_{+}(a) = (m_1 + 1) \cdots (m_r + 1)$ y $\# \text{Div}(a) = 2 ~ (m_1 + 1) \cdots (m_r + 1)$
+^pro-1-1-3
 
 > [!demostracion]+ Demostración
 > Es claro que alcanza con probar la [[Proposición|proposición]] para $a = p_1^{m_1} \cdots p_r^{m_r}$ positivo
