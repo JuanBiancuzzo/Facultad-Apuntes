@@ -85,12 +85,7 @@ tipoDeDato nombreAlgoritmo(tipoDeDato variable1, ...) {
 }
 ```
 
-Se denomina prototipo de una función o firma, al tipo de dato de retorno, más el nombre de la función más la lista de tipos de los parámetros de la misma. Esto permite poder declarar una función antes de usarla, pero sin tener que implementarla todavía
-
-```c
-tipoDeDato nombreAlgoritmo(tipoDeDato, ...);
-```
-
+Notemos que podemos pasar como tipo de datos a un [[Puntero|puntero]] esto tiene el beneficio de poder acceder y modificar variables por fuera del [[Bloque de acción|scope]] de la función definida
 
 ## Expresión en Rust
 ---

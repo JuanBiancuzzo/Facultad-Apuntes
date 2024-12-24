@@ -16,7 +16,7 @@ Un header file contiene, normalmente, una declaración directa de subrutinas, va
 
 ## Ejemplo
 ---
-Tenemos un archivo `main.c` donde queremos hacer operaciones aritméticas, pero como queremos que estén disponibles para otros archivos vamos a crear un header file (también referido como `.h`)  que llamaremos `aritmetica.h`, que tenga [[Función#Expresión en C|firma de funciones]] para sumar dos [[Representación de enteros|enteros]] 
+Tenemos un archivo `main.c` donde queremos hacer operaciones aritméticas, pero como queremos que estén disponibles para otros archivos vamos a crear un header file (también referido como `.h`)  que llamaremos `aritmetica.h`, que tenga [[Prototipo de función|firma de funciones]] para sumar dos [[Representación de enteros|enteros]] 
 
 ```c
 #ifndef ARITMETICA_H

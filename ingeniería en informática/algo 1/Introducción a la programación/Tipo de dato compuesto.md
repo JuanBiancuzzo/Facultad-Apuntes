@@ -17,6 +17,7 @@ Este [[Tipo de dato|tipo de dato]] representa un conjunto de variables o un nuev
 
 ## Representación algorítmica
 ---
+Estas representaciones, algunas ausentes dependiendo el lenguaje, son
 * [[Array|Array]]
 * [[Tupla|Tuple]]
 * [[Struct|Struct]]

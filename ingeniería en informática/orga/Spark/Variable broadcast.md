@@ -9,7 +9,7 @@ tags:
 ---
 Una variable broadcast nos permite mantener una variable solo lectura cacheada en cada una de las máquinas del [[Cluster]] en vez de enviar esa información con cada una de las tareas que se envian al cluster.
 
-Esto es particulamente util cuando, las tareas se ejecutan en multiples etapas y se necesita la misma información, o cuando [[ingeniería en informática/orga/Spark/Cache|cachear]] información de forma deserializada es importante.
+Esto es particulamente util cuando, las tareas se ejecutan en multiples etapas y se necesita la misma información, o cuando [[Función Cache|cachear]] información de forma deserializada es importante.
 
 ``` python
 import pyspark as ps

@@ -26,7 +26,6 @@ Las bibliotecas pueden vincularse a un programa (o a otra biblioteca) en distint
 La mayoría de los [[Sistema operativo|sistemas operativos]] modernos proporcionan bibliotecas que implementan los servicios del sistema. De esta manera, estos servicios se han convertido en una «materia prima» que cualquier aplicación moderna espera que el sistema operativo ofrezca. Como tal, la mayor parte del código utilizado por las aplicaciones modernas se ofrece en estas bibliotecas<sup><a href="#ref-329" style="color: inherit; text-decoration: none;">[329]</a></sup> 
 
 
-
 # Referencias
 ---
 ```dataviewjs
