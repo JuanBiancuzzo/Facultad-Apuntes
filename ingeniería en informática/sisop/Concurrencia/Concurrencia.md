@@ -3,16 +3,25 @@ dia: 2023-03-29
 tags:
   - ingeniería-en-informática/sisop/Concurrencia
   - nota/facultad
+  - ingeniería-en-informática/taller/Concurrencia
+  - resumen/materia
+  - ingeniería-electrónica/taller/Concurrencia
+  - ingeniería-en-informática/concurrentes/Introducción
 ---
 # Definición
 ---
-Un programa concurrente, las diferentes partes de un programa se ejecutan independientemente. No necesariamente al mismo tiempo.
+Un programa concurrente, las diferentes partes de un programa se ejecutan independientemente. No necesariamente al mismo tiempo
 
-Este programa consiste de un conjunto finito de procesos secuenciales. Y estos [[Proceso|procesos]] están compuestos por un conjunto finito de instrucciones atómicas. 
+Este programa consiste de un conjunto finito de procesos secuenciales. Y estos [[Proceso|procesos]] están compuestos por un conjunto finito de instrucciones atómicas
 
-El proceso concurrente, es intercalar estas instrucciones atómicas del conjunto de procesos secuenciales.
+El proceso concurrente, es intercalar estas instrucciones atómicas del conjunto de procesos secuenciales
 
-# Desafíos
+## Modelos
+---
+* [[Fork-join|Paralelismo fork-join]]
+* [[Programación asincrónica|Programación asincrónica]]
+
+## Desafíos
 ---
 Se necesita sincronizar y comunicar entre procesos diferentes.
 
@@ -23,7 +32,7 @@ Coordinación temporal entre distintos procesos.
 Datos que necesitan compartir los procesos para cumplir la función del programa.
 
 
-# Problemas
+## Problemas
 ---
 ### Condiciones de carrera
 ![[Race condition#Definición]]

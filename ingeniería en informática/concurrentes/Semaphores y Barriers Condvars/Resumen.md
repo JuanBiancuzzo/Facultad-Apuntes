@@ -1,5 +1,5 @@
 ---
-capitulo: 6
+capitulo: 7
 tags:
   - ingeniería-en-informática/concurrentes/Semaphores-y-Barriers-Condvars
   - resumen

@@ -1,5 +1,5 @@
 ---
-capitulo: 9
+capitulo: 10
 tags:
   - ingeniería-en-informática/concurrentes/Elección-de-líder
   - resumen

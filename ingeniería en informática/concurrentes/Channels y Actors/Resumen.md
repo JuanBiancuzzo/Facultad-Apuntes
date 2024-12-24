@@ -1,5 +1,5 @@
 ---
-capitulo: 7
+capitulo: 8
 tags:
   - ingeniería-en-informática/concurrentes/Channels-y-Actors
   - resumen

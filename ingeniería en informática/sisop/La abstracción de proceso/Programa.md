@@ -7,6 +7,7 @@ tags:
   - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - lenguajes-de-programación
   - ingeniería-electrónica/algo-1/Introducción-a-la-programación
+  - ingeniería-en-informática/concurrentes/Introducción
 aliases:
   - Estándar error#std-error
   - Standard error#std-error

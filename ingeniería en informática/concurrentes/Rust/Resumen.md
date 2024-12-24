@@ -1,5 +1,5 @@
 ---
-capitulo: 1
+capitulo: 2
 tags:
   - ingeniería-en-informática/concurrentes/Rust
   - resumen

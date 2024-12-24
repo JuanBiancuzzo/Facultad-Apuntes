@@ -1,5 +1,5 @@
 ---
-capitulo: 4
+capitulo: 5
 tags:
   - ingeniería-en-informática/concurrentes/Sincronización
   - resumen

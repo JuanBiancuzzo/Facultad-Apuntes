@@ -4,6 +4,7 @@ tags:
   - ingeniería-en-informática/sisop/La-abstracción-de-proceso
   - nota/facultad
   - ingeniería-en-informática/aninfo/Diseño-de-software
+  - ingeniería-en-informática/concurrentes/Introducción
 ---
 # Algunas definiciones
 ---

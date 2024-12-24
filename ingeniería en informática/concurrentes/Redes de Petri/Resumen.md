@@ -1,5 +1,5 @@
 ---
-capitulo: 5
+capitulo: 6
 tags:
   - ingeniería-en-informática/concurrentes/Redes-de-Petri
   - resumen
