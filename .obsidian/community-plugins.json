@@ -5,7 +5,7 @@
   "obsidian-tikzjax",
   "quickadd",
   "cmdr",
-  "virtual-linker",
   "omnisearch",
-  "tag-wrangler"
+  "tag-wrangler",
+  "callout-manager"
 ]

@@ -1,0 +1,77 @@
+{
+  "callouts": {
+    "custom": [
+      "teorema",
+      "observacion",
+      "proposicion",
+      "demostracion"
+    ],
+    "settings": {
+      "teorema": [
+        {
+          "changes": {
+            "icon": "lucide-book-type"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {
+            "color": "70, 243, 22"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "70, 243, 22"
+          }
+        }
+      ],
+      "observacion": [
+        {
+          "changes": {
+            "icon": "lucide-scan-eye"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {}
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "31, 240, 255"
+          }
+        }
+      ],
+      "proposicion": [
+        {
+          "changes": {
+            "icon": "lucide-box",
+            "color": "176, 86, 225"
+          }
+        }
+      ],
+      "demostracion": [
+        {
+          "changes": {
+            "icon": "lucide-notebook-pen",
+            "color": "94, 122, 232"
+          }
+        }
+      ]
+    }
+  },
+  "calloutDetection": {
+    "obsidian": true,
+    "theme": true,
+    "snippet": true
+  }
+}
