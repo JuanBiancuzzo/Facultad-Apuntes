@@ -1,0 +1,32 @@
+---
+dia: 2024-12-23
+tags:
+  - índice
+  - nota/investigacion
+  - investigación/electrónica
+estado: Sin empezar
+orden: 615
+---
+```dataviewjs
+await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
+```
+# ¿Qué se va a investigar?
+---
+Vamos a incorporar todas las áreas de la electrónica
+
+## Resumen
+---
+%% Hacer cuadro representativo de los temas %%
+
+## Archivos
+---
+```dataviewjs
+await dv.view("_scripts/dataview/investigacion/mostrarArchivos", { indice: dv.current() });
+```
+
+
+# Bibliografía
+---
+```dataviewjs
+await dv.view('_scripts/dataview/investigacion/biblioIndice', { indice: dv.current() });
+```

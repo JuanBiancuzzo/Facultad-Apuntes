@@ -82,6 +82,61 @@ A diferencia de los [[Registro de desplazamiento|registros de desplazamiento]], 
 
 Este tipo de registro permite reducir el costo en tiempo para la comunicación, en intercambio por los cables adicionales que se necesitan
 
+## Registro usando núcleos magnéticos
+---
+Anteriormente, se usaban núcleos magnéticos para guardar información, donde se hace pasar una corriente entrante o saliente, para producir un [[Ley de Faraday#Ley de Faraday-Lenz|flujo]] en dirección horaria, o antihoraria respectivamente
+
+```tikz
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usepackage{ifthen}
+
+\begin{document} 
+\begin{tikzpicture}[scale=1.5, transform shape, thick]
+    \tikzmath { 
+        \radioInt = 0.2; \radioExt = 0.5;
+        \separacion = 1.5;
+    }
+    
+    \foreach \dir [count=\i] in {1, -1, -1, 1} {
+        \tikzmath { 
+            \posX = \i * \separacion; 
+            \flecha = \dir > 0 ? "<-" : "->";
+            \escalaX = cos(45); \escalaY = sin(45);
+        }
+        
+        \begin{scope}[cm={1, 0, 0, 1, (\posX, 0)}]
+        
+        \draw (0, 0) circle (\radioInt);
+        \draw (0, 0) circle (\radioExt);
+        
+        \draw ({\escalaX * \radioExt}, {\escalaY * \radioExt}) 
+            -- ++({\radioExt / 2}, {\radioExt / 2});
+        \draw ({\escalaX * \radioInt}, {\escalaY * \radioInt}) 
+            -- ({-1.5 * \escalaX * \radioExt}, {-1.5 * \escalaY * \radioExt});
+        
+        \draw[\flecha] (
+            {-1.7 * \escalaX * \radioExt}, 
+            {-1.7 * \escalaY * \radioExt}
+        ) -- ++(-0.3, -0.3) node[below left=2pt, scale=0.8] {$\i$};
+        
+        \tikzmath { 
+            \radio = (\radioExt + \radioInt) / 2; 
+            \angInicial = 45; \angFinal = 120;
+        }
+        \draw[\flecha] ({cos(\angInicial) * \radio}, {sin(\angInicial) * \radio}) 
+            arc (\angInicial : \angFinal : \radio);
+        
+        \end{scope}
+    }
+
+\end{tikzpicture}
+\end{document}
+```
+
+Los núcleos mantienen el flujo magnético, incluso cuando no hay corriente que los magnetice ya que tienen una [[Curva de Histéresis|curva de histéresis]] en cuanto a su magnetización
+
 ## Registro usando transistores
 ---
 Se puede crear un registro simple usando un [[Transistor bipolar de juntura|TBJ]] de la siguiente forma 
