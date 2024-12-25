@@ -23,7 +23,7 @@ ESP32 es la denominación de una familia de chips [[System on a Chip|SoC]] de ba
 ## Archivos
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/mostrarArchivos", { indice: dv.current() });
+await dv.view("_scripts/dataview/mostrarTemaInvestigacion", { indice: dv.current() });
 ```
 
 

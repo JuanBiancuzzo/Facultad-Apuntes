@@ -22,7 +22,7 @@ Vamos a investigar el área de la robótica, sus patrones de diseños específic
 ## Archivos
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/mostrarArchivos", { indice: dv.current() });
+await dv.view("_scripts/dataview/mostrarTemaInvestigacion", { indice: dv.current() });
 ```
 
 

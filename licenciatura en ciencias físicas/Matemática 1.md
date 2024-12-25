@@ -8,7 +8,7 @@ equivalencia: "[[licenciatura en ciencias matemáticas/analisis 1/Análisis 1.md
 # Apuntes
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
+	await dv.view("_scripts/dataview/mostrarContenido", { materia: dv.current() });
 ```
 
 # Bibliografía

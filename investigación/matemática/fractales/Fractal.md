@@ -24,7 +24,7 @@ Un fractal es un objeto geométrico cuya estructura básica, fragmentada o apare
 ## Archivos
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/mostrarArchivos", { indice: dv.current() });
+await dv.view("_scripts/dataview/mostrarTemaInvestigacion", { indice: dv.current() });
 ```
 
 

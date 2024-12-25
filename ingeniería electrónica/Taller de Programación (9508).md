@@ -10,7 +10,7 @@ equivalencia: "[[ingeniería en informática/taller/Taller de programación 1 (9
 # Apuntes
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
+	await dv.view("_scripts/dataview/mostrarContenido", { materia: dv.current() });
 ```
 
 # Bibliografía

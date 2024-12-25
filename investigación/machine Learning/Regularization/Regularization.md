@@ -28,7 +28,7 @@ Por ejemplo, si tenemos que ajustar un polinomio, podemos usar una función de c
 ## Archivos
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/mostrarArchivos", { indice: dv.current() });
+await dv.view("_scripts/dataview/mostrarTemaInvestigacion", { indice: dv.current() });
 ```
 
 

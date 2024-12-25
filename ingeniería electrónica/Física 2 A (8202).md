@@ -11,7 +11,7 @@ equivalencia: "[[Física 2 A (6203)|Física 2 A (6203)]]"
 # Apuntes
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
+	await dv.view("_scripts/dataview/mostrarContenido", { materia: dv.current() });
 ```
 
 # Bibliografía

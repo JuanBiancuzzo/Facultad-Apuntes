@@ -75,7 +75,7 @@ Las [[Host|host]] que intercambian mensajes y llevan a cabo las acciones son los
 ## Archivos
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/mostrarArchivos", { indice: dv.current() });
+await dv.view("_scripts/dataview/mostrarTemaInvestigacion", { indice: dv.current() });
 ```
 
 

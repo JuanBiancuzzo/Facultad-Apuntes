@@ -9,7 +9,7 @@ equivalencia: "[[Análisis matemático 2 A (6103)|Análisis matemático 2 A (610
 # Apuntes
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
+	await dv.view("_scripts/dataview/mostrarContenido", { materia: dv.current() });
 ```
 
 # Bibliografía

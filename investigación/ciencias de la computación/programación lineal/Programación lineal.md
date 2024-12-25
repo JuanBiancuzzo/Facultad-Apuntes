@@ -36,7 +36,7 @@ donde $x$ es el vector de variables que se desea determinar, $c$ y  $b$ son vect
 ## Archivos
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/mostrarArchivos", { indice: dv.current() });
+await dv.view("_scripts/dataview/mostrarTemaInvestigacion", { indice: dv.current() });
 ```
 
 

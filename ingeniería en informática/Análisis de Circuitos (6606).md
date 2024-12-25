@@ -11,7 +11,7 @@ equivalencia: "[[Análisis de circuitos (8604)|Análisis de circuitos (8604)]]"
 # Apuntes
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
+	await dv.view("_scripts/dataview/mostrarContenido", { materia: dv.current() });
 ```
 
 # Bibliografía

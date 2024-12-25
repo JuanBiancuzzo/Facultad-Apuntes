@@ -27,7 +27,7 @@ Un engranaje es un tipo de mecanismo que tiene dos o más ruedas dentadas, que s
 ## Archivos
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/mostrarArchivos", { indice: dv.current() });
+await dv.view("_scripts/dataview/mostrarTemaInvestigacion", { indice: dv.current() });
 ```
 
 

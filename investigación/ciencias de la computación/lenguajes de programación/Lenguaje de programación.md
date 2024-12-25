@@ -38,7 +38,7 @@ La idea es que un lenguaje de alto nivel se acerca más a la idea de lenguaje qu
 ## Archivos
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/mostrarArchivos", { indice: dv.current() });
+await dv.view("_scripts/dataview/mostrarTemaInvestigacion", { indice: dv.current() });
 ```
 
 

@@ -25,7 +25,7 @@ El curso Construcción de Software introduce principios fundamentales y técnica
 ## Archivos
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
+	await dv.view("_scripts/dataview/mostrarContenido", { materia: dv.current() });
 ```
 
 # Bibliografía

@@ -11,7 +11,7 @@ equivalencia: "[[ingeniería electrónica/fisica 3/Física 3 (8203).md|Física 3
 # Apuntes
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
+	await dv.view("_scripts/dataview/mostrarContenido", { materia: dv.current() });
 ```
 
 # Bibliografía

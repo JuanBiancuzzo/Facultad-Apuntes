@@ -22,7 +22,7 @@ Un lenguaje de marcado o lenguaje de marcas es una forma de codificar un documen
 ## Archivos
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/mostrarArchivos", { indice: dv.current() });
+await dv.view("_scripts/dataview/mostrarTemaInvestigacion", { indice: dv.current() });
 ```
 
 

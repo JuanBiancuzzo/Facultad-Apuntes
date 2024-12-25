@@ -9,7 +9,7 @@ equivalencia: "[[Física 1 A (6201)|Física 1 A (6201)]]"
 # Apuntes
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
+	await dv.view("_scripts/dataview/mostrarContenido", { materia: dv.current() });
 ```
 
 # Bibliografía

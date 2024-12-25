@@ -11,7 +11,7 @@ equivalencia: "[[Probabilidad y estadística B (6109)|Probabilidad y estadístic
 # Apuntes
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
+	await dv.view("_scripts/dataview/mostrarContenido", { materia: dv.current() });
 ```
 # Distribuciones
 ---

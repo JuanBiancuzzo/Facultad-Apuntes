@@ -9,7 +9,7 @@ equivalencia: "[[ingeniería en informática/redes/Redes (TA048).md|Redes (TA048
 # Apuntes
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/mostrarMateria", { materia: dv.current() });
+	await dv.view("_scripts/dataview/mostrarContenido", { materia: dv.current() });
 ```
 
 # Bibliografía
