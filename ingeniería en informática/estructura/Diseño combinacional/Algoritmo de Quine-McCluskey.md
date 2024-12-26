@@ -4,7 +4,7 @@ tags:
   - ingeniería-en-informática/estructura/Diseño-combinacional
   - nota/facultad
   - ingeniería-electrónica/estructura/Diseño-combinacional
-  - algoritmos
+  - investigación/ciencias-de-la-computación/algoritmos
 ---
 # Definición
 ---

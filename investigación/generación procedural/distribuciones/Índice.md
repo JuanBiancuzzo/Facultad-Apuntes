@@ -10,7 +10,7 @@ await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.c
 ```
 # ¿Qué se va a investigar?
 ---
-Se va a explorar la generación procedural a base del uso de [[Facultad/proba/Distribuciones/index|distribuciones]]
+Se va a explorar la generación procedural a base del uso de [[Distribuciones|distribuciones]]
 
 ## Resumen
 ---

@@ -1,11 +1,22 @@
 ---
-dia: 2024-01-13
+dia: 2024-12-25
 tags:
-  - ingeniería-en-informática/proba/Teoría-de-probabilidades
-  - nota/facultad
+  - índice
+  - nota/investigacion
+  - investigación/matemática/Probabilidad
   - ingeniería-electrónica/proba/Teoría-de-probabilidades
+  - ingeniería-en-informática/proba/Teoría-de-probabilidades
+estado: Sin empezar
+orden: 619
 ---
-# Definición
+```dataviewjs
+await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
+```
+# ¿Qué se va a investigar?
+---
+Vamos a investigar la rama de matemática que es la probabilidad
+
+## Resumen
 ---
 La probabilidad de un [[Evento|evento]] $A$ es un número positivo (o nulo) que se le asigna a cada suceso o evento del [[Espacio muestral|espacio muestra]]
 
@@ -26,3 +37,15 @@ Sea $(A_n)_{n \ge 1}$ una [[Sucesión|sucesión]] de [[Evento|eventos]] tales qu
 ### Teorema ($\sigma$-aditividad)
 ---
 Sea $A = \displaystyle \bigcup^{\infty}_{i = 1} A_i \in \mathscr{A}$ con los [[Evento|eventos]] $A_i$ mutuamente excluyentes $2$ a $2$, entonces $$ \mathbb{P}(A) = \mathbb{P}\left( \bigcup^{\infty}_{i = 1} A_i \right) = \sum^{\infty}_{i = 1} \mathbb{P}(A_i) $$
+## Archivos
+---
+```dataviewjs
+await dv.view("_scripts/dataview/mostrarTemaInvestigacion", { indice: dv.current() });
+```
+
+
+# Bibliografía
+---
+```dataviewjs
+await dv.view('_scripts/dataview/investigacion/biblioIndice', { indice: dv.current() });
+```

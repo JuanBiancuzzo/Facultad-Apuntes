@@ -3,7 +3,9 @@ dia: 2023-08-10
 tags:
   - ingeniería-en-informática/orga/Machine-learning
   - nota/facultad
-  - machine-Learning
+  - investigación/machine-Learning
+  - investigación/ciencias-de-la-computación/Machine-learning
+  - "#investigación/matemática/Estadística/Machine-learning"
 aliases:
   - KNN
 referencias:

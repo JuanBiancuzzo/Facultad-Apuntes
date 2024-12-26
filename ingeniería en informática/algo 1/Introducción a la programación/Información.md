@@ -3,7 +3,7 @@ dia: 2024-04-03
 tags:
   - ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - nota/facultad
-  - matemática/teoría-de-la-información
+  - investigación/matemática/teoría-de-la-información
   - ingeniería-en-informática/orga/Compresión
   - ingeniería-electrónica/algo-1/Introducción-a-la-programación
 aliases:

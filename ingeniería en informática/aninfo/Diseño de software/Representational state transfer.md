@@ -3,7 +3,7 @@ dia: 2023-10-16
 tags:
   - ingeniería-en-informática/aninfo/Diseño-de-software
   - nota/facultad
-  - networking
+  - investigación/networking
 aliases:
   - API REST
   - REST

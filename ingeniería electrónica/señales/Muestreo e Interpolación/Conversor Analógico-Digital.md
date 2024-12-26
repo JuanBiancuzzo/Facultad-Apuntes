@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
   - ingeniería-electrónica/embebidos/Conversión-analógica-a-digital-y-digital-a-analógica
-  - placa-de-Desarrollo/placa-de-desarrollo-Nucleo-64/placa-STM32-F302R8
+  - investigación/placa-de-Desarrollo/placa-de-desarrollo-Nucleo-64/placa-STM32-F302R8
 aliases:
   - Conversor A/D
   - A/D converter

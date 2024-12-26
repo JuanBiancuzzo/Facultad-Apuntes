@@ -3,7 +3,7 @@ dia: 2024-08-16
 tags:
   - ingeniería-en-informática/discreta/Grafos
   - nota/facultad
-  - algoritmos
+  - investigación/ciencias-de-la-computación/algoritmos
 ---
 # Definición
 ---

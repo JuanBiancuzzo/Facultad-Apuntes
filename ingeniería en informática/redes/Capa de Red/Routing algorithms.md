@@ -4,7 +4,7 @@ tags:
   - ingeniería-en-informática/redes/Capa-de-Red
   - nota/facultad
   - ingeniería-electrónica/redes/Capa-de-Red
-  - algoritmos
+  - investigación/ciencias-de-la-computación/algoritmos
 aliases:
   - Algoritmo de ruteo
 ---

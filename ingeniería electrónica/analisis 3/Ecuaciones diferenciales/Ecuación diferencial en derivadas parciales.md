@@ -3,7 +3,7 @@ dia: 2022-12-08
 tags:
   - ingeniería-electrónica/analisis-3/Ecuaciones-diferenciales
   - nota/facultad
-  - matemática/koopman-operator-theory
+  - investigación/matemática/koopman-operator-theory
   - ingeniería-en-informática/analisis-3/Ecuaciones-diferenciales
 aliases:
   - Ecuación diferencial parcial

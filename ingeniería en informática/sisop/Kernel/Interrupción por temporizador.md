@@ -4,7 +4,7 @@ tags:
   - ingeniería-en-informática/sisop/Kernel
   - nota/facultad
   - ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
-  - placa-de-Desarrollo/placa-de-desarrollo-Nucleo-64/placa-STM32-F302R8
+  - investigación/placa-de-Desarrollo/placa-de-desarrollo-Nucleo-64/placa-STM32-F302R8
 aliases:
   - Timer
   - Preescalador#^preescalador

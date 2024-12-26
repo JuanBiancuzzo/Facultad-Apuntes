@@ -7,7 +7,7 @@ tags:
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
   - licenciatura-en-ciencias-de-datos/algebra-1/Números-enteros
   - nota/facultad
-  - algoritmos
+  - investigación/ciencias-de-la-computación/algoritmos
 aliases:
   - Cociente
   - Resto

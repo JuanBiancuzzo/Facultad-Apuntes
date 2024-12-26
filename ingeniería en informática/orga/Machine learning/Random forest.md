@@ -3,7 +3,6 @@ dia: 2023-08-12
 tags:
   - ingeniería-en-informática/orga/Machine-learning
   - nota/facultad
-  - machine-Learning
   - investigación/machine-Learning/Ensemble
   - investigación/ciencias-de-la-computación/Machine-learning/Ensemble
   - investigación/matemática/Estadística/Machine-learning/Ensemble

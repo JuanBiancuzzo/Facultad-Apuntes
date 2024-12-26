@@ -6,7 +6,7 @@ aliases:
 tags:
   - ingeniería-electrónica/señales/Transformada-discreta-de-Fourier
   - nota/facultad
-  - algoritmos
+  - investigación/ciencias-de-la-computación/algoritmos
 ---
 # Definición
 ---
