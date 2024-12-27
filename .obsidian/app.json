@@ -5,7 +5,6 @@
   "spellcheckLanguages": null,
   "userIgnoreFilters": [
     "_template/",
-    "_referencias/",
     "biblioteca/libros/covers/"
   ],
   "autoPairMarkdown": false,
