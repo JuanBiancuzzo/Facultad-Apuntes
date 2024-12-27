@@ -17,7 +17,6 @@ capitulos:
 cover: TCP,IP Illustrated (vol. 1) de William R. Stevens.jpg
 aliases:
   - TCP/IP Illustrated, the Protocols (vol. 1) de William R. Stevens
-orden: 496
 tags:
   - referencia/libro
   - biblioteca/libro

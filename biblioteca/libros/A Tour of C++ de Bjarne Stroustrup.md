@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: A Tour of C++ de Bjarne Stroustrup.jpg
 aliases: 
-orden: 500
 tags:
   - referencia/libro
   - biblioteca/libro

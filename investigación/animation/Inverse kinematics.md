@@ -14,7 +14,6 @@ aliases:
   - Algoritmos de cinemáticas inversas#Algoritmos
   - Inverse kinematics algorithm#Algoritmos
   - IK algorithm#Algoritmos
-orden: 329
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

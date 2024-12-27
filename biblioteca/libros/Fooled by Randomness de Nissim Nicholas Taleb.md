@@ -19,7 +19,6 @@ tags:
   - biblioteca/libro
   - nota/investigacion
 cover: Fooled by Randomness de Nissim Nicholas Taleb.jpg
-orden: 54
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

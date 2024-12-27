@@ -18,7 +18,6 @@ url:
 capitulos: 
 cover: The Art of Debugging with GDB, DDD, and Eclipse de Norman Matloff, Peter Jay Salzman.jpg
 aliases: 
-orden: 604
 tags:
   - referencia/libro
   - biblioteca/libro

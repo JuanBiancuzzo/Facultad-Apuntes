@@ -40,7 +40,6 @@ tags:
   - nota/investigacion
 referencias:
   - "22"
-orden: 194
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

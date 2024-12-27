@@ -13,7 +13,6 @@ aliases:
   - Internet Protocol
   - IP
   - Protocolo de red
-orden: 277
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

@@ -5,7 +5,6 @@ tags:
   - nota/investigacion
   - investigación/ciencias-de-la-computación/Programación-asincrónica
 estado: Sin empezar
-orden: 618
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

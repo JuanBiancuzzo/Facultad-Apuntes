@@ -30,7 +30,6 @@ capitulos:
 cover: Fundamentals of System-on-Chip Design on Arm Cortex-M Microcontrollers de René Beuchat, Andrea Guerrieri, Sahand Kashani, Florian Depraz.jpg
 aliases:
   - "Fundamentals of System-on-Chip Design on Arm Cortex-M Microcontrollers de René Beuchat, Andrea Guerrieri, Sahand Kashani, Florian Depraz, Capítulo 1: A Memory-centric System Model#Capítulo 1: A Memory-centric System Model"
-orden: 389
 tags:
   - referencia/libro
   - biblioteca/libro

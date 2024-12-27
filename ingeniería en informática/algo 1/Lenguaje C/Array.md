@@ -7,7 +7,6 @@ tags:
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - ingeniería-electrónica/algo-1/Lenguaje-C
 etapa: ampliar
-orden: 325
 aliases:
   - Arreglo
   - Vector unidimensional

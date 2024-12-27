@@ -18,7 +18,6 @@ url:
 capitulos: 
 cover: The Go Programming Language de Alan Donovan, Brain Kernighan.jpg
 aliases: 
-orden: 593
 tags:
   - referencia/libro
   - biblioteca/libro

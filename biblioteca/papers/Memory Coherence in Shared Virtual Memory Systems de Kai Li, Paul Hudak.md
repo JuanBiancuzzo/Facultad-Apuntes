@@ -13,7 +13,6 @@ numeroInforme:
 anio: "1989"
 editores: 
 url: 
-orden: 536
 tags:
   - referencia/paper
   - biblioteca/paper

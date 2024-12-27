@@ -18,7 +18,6 @@ url:
 capitulos: 
 cover: Practical electronics for inventors de Paul Scherz, Simon Monk.jpg
 aliases: 
-orden: 595
 tags:
   - referencia/libro
   - biblioteca/libro

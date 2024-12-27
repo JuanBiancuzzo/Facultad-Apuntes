@@ -156,7 +156,6 @@ aliases:
   - "Digital Computer Electronics de Albert P. Malvino, Jerald A. Brown, Capítulo 21: Addressing modes - II#Capítulo 21: Addressing modes - II"
   - "Digital Computer Electronics de Albert P. Malvino, Jerald A. Brown, Capítulo 22: Branching and loops#Capítulo 22: Branching and loops"
   - "Digital Computer Electronics de Albert P. Malvino, Jerald A. Brown, Capítulo 23: Subroutine and Stack instructions#Capítulo 23: Subroutine and Stack instructions"
-orden: 592
 tags:
   - referencia/libro
   - biblioteca/libro

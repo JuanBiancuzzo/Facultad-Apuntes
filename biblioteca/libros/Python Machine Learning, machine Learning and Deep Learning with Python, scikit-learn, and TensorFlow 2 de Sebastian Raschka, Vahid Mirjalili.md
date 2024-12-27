@@ -18,7 +18,6 @@ url:
 capitulos: 
 cover: Python Machine Learning, machine Learning and Deep Learning with Python, scikit-learn, and TensorFlow 2 de Sebastian Raschka, Vahid Mirjalili.jpg
 aliases: 
-orden: 477
 tags:
   - referencia/libro
   - biblioteca/libro

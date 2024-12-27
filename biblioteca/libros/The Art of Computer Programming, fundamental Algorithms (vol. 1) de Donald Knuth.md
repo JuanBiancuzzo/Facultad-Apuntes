@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: The Art of Computer Programming, fundamental Algorithms (vol. 1) de Donald Knuth.jpg
 aliases: 
-orden: 468
 tags:
   - referencia/libro
   - biblioteca/libro

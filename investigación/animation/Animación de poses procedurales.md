@@ -9,7 +9,6 @@ tags:
   - investigación/game-engine/Animation-Engine
 aliases:
   - Procedural pose animation
-orden: 226
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

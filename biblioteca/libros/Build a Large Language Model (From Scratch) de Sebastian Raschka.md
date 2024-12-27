@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: Build a Large Language Model (From Scratch) de Sebastian Raschka.jpg
 aliases: 
-orden: 583
 tags:
   - referencia/libro
   - biblioteca/libro

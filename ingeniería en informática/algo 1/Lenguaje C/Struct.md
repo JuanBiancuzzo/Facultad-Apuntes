@@ -8,7 +8,6 @@ tags:
 aliases:
   - Estructura
 etapa: sin-empezar
-orden: 272
 ---
 # Definición
 ---

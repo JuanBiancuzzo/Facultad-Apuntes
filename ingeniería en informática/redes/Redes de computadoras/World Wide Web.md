@@ -8,7 +8,6 @@ tags:
   - nota/facultad
   - ingeniería-electrónica/redes/Redes-de-computadoras
 etapa: sin-empezar
-orden: 102
 ---
 # Definición
 ---

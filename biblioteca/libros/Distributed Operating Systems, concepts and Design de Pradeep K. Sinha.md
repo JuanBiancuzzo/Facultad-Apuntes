@@ -16,7 +16,6 @@ url: https://archive.org/details/distributedopera0000sinh_g0q4
 capitulos: 
 cover: Distributed Operating Systems, concepts and Design de Pradeep K. Sinha.jpg
 aliases: 
-orden: 548
 tags:
   - referencia/libro
   - biblioteca/libro

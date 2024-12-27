@@ -12,7 +12,6 @@ aliases:
 tags:
   - nota/investigacion
   - investigación/game-engine/rendering-engine
-orden: 351
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

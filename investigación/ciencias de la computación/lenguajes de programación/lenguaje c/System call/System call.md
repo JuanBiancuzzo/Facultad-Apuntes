@@ -6,7 +6,6 @@ tags:
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c/System-call
   - ingeniería-en-informática/sisop/Kernel
 estado: Nos falta pasar algunas system calls
-orden: 605
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

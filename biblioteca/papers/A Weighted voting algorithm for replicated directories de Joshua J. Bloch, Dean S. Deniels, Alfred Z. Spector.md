@@ -15,7 +15,6 @@ numeroInforme:
 anio: "1987"
 editores: 
 url: https://doi.org/10.1145/31846.31847
-orden: 545
 tags:
   - referencia/paper
   - biblioteca/paper

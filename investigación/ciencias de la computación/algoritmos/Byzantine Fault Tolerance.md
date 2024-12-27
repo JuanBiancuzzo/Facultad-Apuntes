@@ -8,7 +8,6 @@ tags:
   - investigación/ciencias-de-la-computación/algoritmos
 aliases:
   - Tolerancia a faltas bizantinas
-orden: 340
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

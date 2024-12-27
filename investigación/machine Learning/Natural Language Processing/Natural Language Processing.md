@@ -1,7 +1,6 @@
 ---
 dia: 2024-11-24
 estado: Sin empezar
-orden: 549
 tags:
   - índice
   - investigación/machine-Learning/Natural-Language-Processing

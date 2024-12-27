@@ -13,7 +13,6 @@ numeroInforme:
 anio: "2009"
 editores: 
 url: https://proceedings.mlr.press/v5/salakhutdinov09a.html
-orden: 561
 tags:
   - referencia/paper
   - biblioteca/paper

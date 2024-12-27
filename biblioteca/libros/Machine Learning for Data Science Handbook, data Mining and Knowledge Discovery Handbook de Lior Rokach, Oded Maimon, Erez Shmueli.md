@@ -26,7 +26,6 @@ capitulos:
 cover: Machine Learning for Data Science Handbook, data Mining and Knowledge Discovery Handbook de Lior Rokach, Oded Maimon, Erez Shmueli.jpg
 aliases:
   - "Machine Learning for Data Science Handbook, data Mining and Knowledge Discovery Handbook de Lior Rokach, Oded Maimon, Erez Shmueli, Capítulo 16: Autoencoders#Capítulo 16: Autoencoders"
-orden: 565
 tags:
   - referencia/libro
   - biblioteca/libro

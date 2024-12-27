@@ -19,7 +19,6 @@ numeroInforme:
 anio: "2020"
 editores: 
 url: 
-orden: 438
 tags:
   - referencia/paper
   - biblioteca/paper

@@ -82,7 +82,6 @@ aliases:
   - "Fundamentals of Microelectronics de Behzad Razavi, Capítulo 12: Feedback and Stability#Capítulo 12: Feedback and Stability"
   - "Fundamentals of Microelectronics de Behzad Razavi, Capítulo 15: Analog Filters#Capítulo 15: Analog Filters"
   - "Fundamentals of Microelectronics de Behzad Razavi, Capítulo 16: Digital CMOS Circuits#Capítulo 16: Digital CMOS Circuits"
-orden: 386
 tags:
   - referencia/libro
   - biblioteca/libro

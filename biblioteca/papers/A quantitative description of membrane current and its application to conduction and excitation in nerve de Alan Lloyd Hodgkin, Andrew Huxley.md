@@ -13,7 +13,6 @@ numeroInforme:
 anio: "1952"
 editores: 
 url: https://pmc.ncbi.nlm.nih.gov/articles/PMC1392413/
-orden: 459
 tags:
   - referencia/paper
   - biblioteca/paper

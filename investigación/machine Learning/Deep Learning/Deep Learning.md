@@ -1,7 +1,6 @@
 ---
 dia: 2024-11-25
 estado: Sin empezar
-orden: 559
 tags:
   - índice
   - investigación/machine-Learning/Deep-Learning

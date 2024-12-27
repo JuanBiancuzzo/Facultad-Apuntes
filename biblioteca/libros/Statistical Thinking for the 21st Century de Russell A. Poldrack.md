@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: Statistical Thinking for the 21st Century de Russell A. Poldrack.png
 aliases: 
-orden: 552
 tags:
   - referencia/libro
   - biblioteca/libro

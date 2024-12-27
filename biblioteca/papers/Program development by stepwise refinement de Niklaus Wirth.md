@@ -18,7 +18,6 @@ anio: "1971"
 editores: []
 url: https://doi.org/10.1145/362575.362577
 doi: 
-orden: 603
 tags: 
  - referencia/paper
  - biblioteca/paper

@@ -1,7 +1,6 @@
 ---
 dia: 2024-10-31
 etapa: sin-empezar
-orden: 382
 referencias:
   - "421"
 tags:

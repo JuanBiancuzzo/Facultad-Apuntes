@@ -15,7 +15,6 @@ numeroInforme:
 anio: "2021"
 editores: []
 url: https://doi.org/10.31234/osf.io/h4vxa
-orden: 573
 tags: 
  - referencia/paper
  - biblioteca/paper

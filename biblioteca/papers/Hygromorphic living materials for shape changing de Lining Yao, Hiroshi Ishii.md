@@ -13,7 +13,6 @@ numeroInforme:
 anio: "2019"
 editores: 
 url: 
-orden: 460
 tags:
   - referencia/paper
   - biblioteca/paper

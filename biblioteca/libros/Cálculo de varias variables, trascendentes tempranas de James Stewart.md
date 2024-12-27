@@ -80,7 +80,6 @@ aliases:
   - "Cálculo de varias variables, trascendentes tempranas de James Stewart, Capítulo 15: Integrales múltiples#Capítulo 15: Integrales múltiples"
   - "Cálculo de varias variables, trascendentes tempranas de James Stewart, Capítulo 16: Cálculo vectorial#Capítulo 16: Cálculo vectorial"
   - "Cálculo de varias variables, trascendentes tempranas de James Stewart, Capítulo 17: Ecuaciones diferenciales de segundo orden#Capítulo 17: Ecuaciones diferenciales de segundo orden"
-orden: 430
 tags:
   - referencia/libro
   - biblioteca/libro

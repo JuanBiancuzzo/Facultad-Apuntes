@@ -22,7 +22,6 @@ anio: "1959"
 editores: []
 url: 
 doi: 10.1145/1457720.1457743
-orden: 601
 tags: 
  - referencia/paper
  - biblioteca/paper

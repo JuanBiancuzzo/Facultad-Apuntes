@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: The Art of Computer Programming, seminumerical Algorithms (vol. 2) de Donald Knuth.jpg
 aliases: 
-orden: 469
 tags:
   - referencia/libro
   - biblioteca/libro

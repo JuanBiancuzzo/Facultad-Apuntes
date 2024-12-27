@@ -5,7 +5,6 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/analisis-3/Integrales-impropias
 etapa: sin-empezar
-orden: 9
 ---
 # Definición
 ---

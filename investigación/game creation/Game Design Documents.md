@@ -9,7 +9,6 @@ aliases:
 tags:
   - nota/investigacion
   - investigación/game-creation
-orden: 193
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

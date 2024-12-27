@@ -1,7 +1,6 @@
 ---
 dia: 2024-11-11
 estado: Sin empezar
-orden: 418
 tags:
   - índice
   - investigación/herramientas/Comandos-de-linux

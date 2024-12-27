@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: Zero to Production in Rust, an instroduction to backend development de Luca Palmieri.jpg
 aliases: 
-orden: 518
 tags:
   - referencia/libro
   - biblioteca/libro

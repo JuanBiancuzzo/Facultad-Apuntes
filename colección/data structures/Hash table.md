@@ -8,7 +8,6 @@ tags:
 aliases:
   - Hash map
   - Tabla de hash
-orden: 183
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

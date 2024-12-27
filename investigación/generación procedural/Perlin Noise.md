@@ -11,7 +11,6 @@ tags:
 aliases:
   - Fractal Perlin Noise
   - Noise Gradient trick#Gradient trick
-orden: 218
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

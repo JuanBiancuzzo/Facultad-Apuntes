@@ -1,7 +1,6 @@
 ---
 dia: 2024-12-22
 etapa: ampliar
-orden: 612
 referencias:
   - 700
   - "784"

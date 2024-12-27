@@ -17,7 +17,6 @@ numeroInforme:
 anio: "2024"
 editores: 
 url: 
-orden: 440
 tags:
   - referencia/paper
   - biblioteca/paper

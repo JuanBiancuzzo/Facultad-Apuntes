@@ -13,7 +13,6 @@ numeroInforme:
 anio: "2017"
 editores: []
 url: "Choosing prediction over explanation in psychology: Lessons from Machine Learning"
-orden: 584
 tags: 
  - referencia/paper
  - biblioteca/paper

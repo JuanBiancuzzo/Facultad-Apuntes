@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: The Clean Coder, a Code of Conduct for Professional Programmers de Robert C. Martin.jpg
 aliases: 
-orden: 465
 tags:
   - referencia/libro
   - biblioteca/libro

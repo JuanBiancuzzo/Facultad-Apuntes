@@ -423,7 +423,6 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-orden: 363
 subtituloObra: 
 ---
 ```dataviewjs

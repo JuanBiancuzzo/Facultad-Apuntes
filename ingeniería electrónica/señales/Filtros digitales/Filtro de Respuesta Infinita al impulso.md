@@ -8,7 +8,6 @@ tags:
   - ingeniería-electrónica/señales/Filtros-digitales
   - nota/facultad
 etapa: sin-empezar
-orden: 188
 ---
 # Definición
 ---

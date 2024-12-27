@@ -5,7 +5,6 @@ tags:
   - nota/investigacion
   - investigación/storytelling/worldbuilding/Conlang
 estado: Falta resumir
-orden: 422
 referencias:
   - "509"
 ---

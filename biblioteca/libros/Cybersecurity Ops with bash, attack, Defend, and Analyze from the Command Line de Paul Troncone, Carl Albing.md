@@ -18,7 +18,6 @@ url:
 capitulos: 
 cover: Cybersecurity Ops with bash, attack, Defend, and Analyze from the Command Line de Paul Troncone, Carl Albing.jpg
 aliases: 
-orden: 499
 tags:
   - referencia/libro
   - biblioteca/libro

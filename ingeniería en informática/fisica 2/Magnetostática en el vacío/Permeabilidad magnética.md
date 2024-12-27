@@ -11,7 +11,6 @@ aliases:
   - Permeabilidad magnética en el vacío#^permeabilidad-magnetica-en-el-vacio
   - Permeabilidad magnética relativa#^permeabilidad-magnetica-relativa
 etapa: ampliar
-orden: 35
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

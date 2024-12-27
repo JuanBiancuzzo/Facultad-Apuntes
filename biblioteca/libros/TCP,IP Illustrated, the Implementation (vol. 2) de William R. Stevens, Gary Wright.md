@@ -19,7 +19,6 @@ capitulos:
 cover: TCP,IP Illustrated, the Implementation (vol. 2) de William R. Stevens, Gary Wright.jpg
 aliases:
   - TCP/IP Illustrated, the Implementation (vol. 2) de William R. Stevens, Gary Wright
-orden: 497
 tags:
   - referencia/libro
   - biblioteca/libro

@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: Linear Algebra de Georgi E. Shilov.jpg
 aliases: 
-orden: 513
 tags:
   - referencia/libro
   - biblioteca/libro

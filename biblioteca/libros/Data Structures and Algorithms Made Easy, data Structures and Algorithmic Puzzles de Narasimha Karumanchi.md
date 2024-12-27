@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: Data Structures and Algorithms Made Easy, data Structures and Algorithmic Puzzles de Narasimha Karumanchi.jpg
 aliases: 
-orden: 466
 tags:
   - referencia/libro
   - biblioteca/libro

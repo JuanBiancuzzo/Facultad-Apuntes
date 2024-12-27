@@ -1,7 +1,6 @@
 ---
 dia: 2024-11-19
 etapa: sin-empezar
-orden: 505
 referencias: 
 tags:
   - nota/investigacion

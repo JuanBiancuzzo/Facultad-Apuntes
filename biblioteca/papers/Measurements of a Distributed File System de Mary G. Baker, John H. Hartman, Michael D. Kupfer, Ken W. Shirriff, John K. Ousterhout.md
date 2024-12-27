@@ -19,7 +19,6 @@ numeroInforme:
 anio: "1991"
 editores: 
 url: 
-orden: 535
 tags:
   - referencia/paper
   - biblioteca/paper

@@ -1,7 +1,6 @@
 ---
 dia: 2024-11-25
 etapa: empezado
-orden: 557
 referencias:
   - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Machine-learning-deep-learning-e-interpretabilidad-algorítmica
 tags:

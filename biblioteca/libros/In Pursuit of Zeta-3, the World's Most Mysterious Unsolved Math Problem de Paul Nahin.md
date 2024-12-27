@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: In Pursuit of Zeta-3, the World's Most Mysterious Unsolved Math Problem de Paul Nahin.jpg
 aliases: 
-orden: 510
 tags:
   - referencia/libro
   - biblioteca/libro

@@ -7,7 +7,6 @@ tags:
   - nota/facultad
   - ingeniería-electrónica/redes/Capa-de-aplicación
 etapa: sin-empezar
-orden: 345
 ---
 # Definición
 ---

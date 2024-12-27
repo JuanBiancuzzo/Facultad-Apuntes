@@ -90,7 +90,6 @@ aliases:
   - "Computer Networking, a Top-Down Approach de James Kurose, Keith Ross, Capítulo 7: Wireless and Mobile Networks#Capítulo 7: Wireless and Mobile Networks"
   - "Computer Networking, a Top-Down Approach de James Kurose, Keith Ross, Capítulo 8: Security in Computer Networks#Capítulo 8: Security in Computer Networks"
   - "Computer Networking, a Top-Down Approach de James Kurose, Keith Ross, Capítulo 9: Multimedia Networking#Capítulo 9: Multimedia Networking"
-orden: 509
 tags:
   - referencia/libro
   - biblioteca/libro

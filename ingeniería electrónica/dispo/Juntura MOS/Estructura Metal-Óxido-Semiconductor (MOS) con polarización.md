@@ -4,7 +4,6 @@ tags:
   - ingeniería-electrónica/dispo/Juntura-MOS
   - nota/facultad
 etapa: sin-empezar
-orden: 109
 ---
 # Definición
 ---

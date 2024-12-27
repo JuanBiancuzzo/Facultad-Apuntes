@@ -18,7 +18,6 @@ url:
 capitulos: 
 cover: Algorithms de Robert Sedgewick, Kevin Wayne.jpg
 aliases: 
-orden: 467
 tags:
   - referencia/libro
   - biblioteca/libro

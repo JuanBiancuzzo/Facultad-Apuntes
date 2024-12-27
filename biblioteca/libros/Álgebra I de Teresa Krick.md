@@ -72,7 +72,6 @@ aliases:
   - "Álgebra I de Teresa Krick, Capítulo 5: Enteros - Segunda Parte#Capítulo 5: Enteros - Segunda Parte"
   - "Álgebra I de Teresa Krick, Capítulo 6: Números Complejos#Capítulo 6: Números Complejos"
   - "Álgebra I de Teresa Krick, Capítulo 7: Polinomios#Capítulo 7: Polinomios"
-orden: 377
 tags:
   - referencia/libro
   - biblioteca/libro

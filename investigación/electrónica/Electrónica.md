@@ -5,7 +5,6 @@ tags:
   - nota/investigacion
   - investigación/electrónica
 estado: Sin empezar
-orden: 615
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

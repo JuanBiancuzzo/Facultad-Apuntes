@@ -11,7 +11,6 @@ numeroInforme:
 anio: "2018"
 editores: []
 url: 
-orden: 579
 tags: 
  - referencia/paper
  - biblioteca/paper

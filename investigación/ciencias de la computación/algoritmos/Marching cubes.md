@@ -6,7 +6,6 @@ referencias:
 tags:
   - nota/investigacion
   - investigación/ciencias-de-la-computación/algoritmos
-orden: 359
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

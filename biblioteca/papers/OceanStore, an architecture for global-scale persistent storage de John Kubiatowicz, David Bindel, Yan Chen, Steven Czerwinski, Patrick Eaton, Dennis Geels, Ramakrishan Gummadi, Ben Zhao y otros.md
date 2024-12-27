@@ -33,7 +33,6 @@ numeroInforme:
 anio: "2000"
 editores: 
 url: https://doi.org/10.1145/356989.357007
-orden: 542
 tags:
   - referencia/paper
   - biblioteca/paper

@@ -20,7 +20,6 @@ url:
 capitulos: 
 cover: Modern Psychometrics, the Science of Psychological Assessment de John Rust, Michal Kosinski, David Stillwell.jpg
 aliases: 
-orden: 581
 tags:
   - referencia/libro
   - biblioteca/libro

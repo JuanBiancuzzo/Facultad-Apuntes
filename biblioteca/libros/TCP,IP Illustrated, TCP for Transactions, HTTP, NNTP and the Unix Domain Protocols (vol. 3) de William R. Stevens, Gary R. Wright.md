@@ -19,7 +19,6 @@ capitulos:
 cover: TCP,IP Illustrated, TCP for Transactions, HTTP, NNTP and the Unix Domain Protocols (vol. 3) de William R. Stevens, Gary R. Wright.jpg
 aliases:
   - TCP/IP Illustrated, TCP for Transactions, HTTP, NNTP and the Unix Domain Protocols (vol. 3) de William R. Stevens, Gary R. Wright
-orden: 498
 tags:
   - referencia/libro
   - biblioteca/libro

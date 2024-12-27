@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: Modern Psychometrics with R de Patrick Mair.jpg
 aliases: 
-orden: 571
 tags:
   - referencia/libro
   - biblioteca/libro

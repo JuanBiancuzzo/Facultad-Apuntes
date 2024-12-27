@@ -24,7 +24,6 @@ tags:
   - investigación/matemática/Estadística/Machine-learning/sequence-modeling
 aliases:
   - Seq2Seq
-orden: 335
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

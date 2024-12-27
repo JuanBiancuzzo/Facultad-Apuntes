@@ -11,7 +11,6 @@ numeroInforme:
 anio: "2018"
 editores: []
 url: https://api.semanticscholar.org/CorpusID:49529756
-orden: 585
 tags: 
  - referencia/paper
  - biblioteca/paper

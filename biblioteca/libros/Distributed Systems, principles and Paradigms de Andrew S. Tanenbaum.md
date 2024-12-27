@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: Distributed Systems, pRinciples and Paradigms de Andrew S. Tanenbaum.jpg
 aliases: 
-orden: 546
 tags:
   - referencia/libro
   - biblioteca/libro

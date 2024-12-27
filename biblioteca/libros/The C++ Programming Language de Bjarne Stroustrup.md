@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: The c++ Programming Language de Bjarne Stroustrup.jpg
 aliases: 
-orden: 474
 tags:
   - referencia/libro
   - biblioteca/libro

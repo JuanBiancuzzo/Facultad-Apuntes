@@ -11,7 +11,6 @@ numeroInforme:
 anio: "1979"
 editores: 
 url: 
-orden: 543
 tags:
   - referencia/paper
   - biblioteca/paper

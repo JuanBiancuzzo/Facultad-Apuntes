@@ -11,7 +11,6 @@ numeroInforme:
 anio: "1995"
 editores: 
 url: https://www.jstor.org/stable/2346178
-orden: 567
 tags:
   - referencia/paper
   - biblioteca/paper

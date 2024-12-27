@@ -17,7 +17,6 @@ numeroInforme:
 anio: "2003"
 editores: 
 url: https://doi.org/10.1145/872035.872048
-orden: 540
 tags:
   - referencia/paper
   - biblioteca/paper

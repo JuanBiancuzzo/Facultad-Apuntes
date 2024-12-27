@@ -5,7 +5,6 @@ tags:
   - nota/investigacion
   - investigación/matemática/Álgebra
 estado: Sin empezar
-orden: 598
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

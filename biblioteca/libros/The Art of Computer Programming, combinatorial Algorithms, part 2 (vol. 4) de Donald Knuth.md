@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: The Art of Computer Programming, combinatorial Algorithms, part 2 (vol. 4) de Donald Knuth.jpg
 aliases: 
-orden: 472
 tags:
   - referencia/libro
   - biblioteca/libro

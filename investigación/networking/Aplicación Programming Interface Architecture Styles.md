@@ -9,7 +9,6 @@ tags:
   - nota/investigacion
   - investigación/networking
   - investigación/ciencias-de-la-computación/Networking
-orden: 341
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

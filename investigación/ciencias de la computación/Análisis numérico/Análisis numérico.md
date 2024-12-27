@@ -6,7 +6,6 @@ tags:
   - investigación/ciencias-de-la-computación/Análisis-numérico
   - investigación/matemática/Análisis-numérico
 estado: Sin empezar
-orden: 614
 aliases:
   - Cálculo numérico
 ---

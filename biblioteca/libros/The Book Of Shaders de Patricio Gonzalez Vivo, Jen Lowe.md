@@ -18,7 +18,6 @@ url: https://thebookofshaders.com/
 capitulos: 
 cover: The Book Of Shaders de Patricio Gonzalez Vivo, Jen Lowe.png
 aliases: 
-orden: 599
 tags:
   - referencia/libro
   - biblioteca/libro

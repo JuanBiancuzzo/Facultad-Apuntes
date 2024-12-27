@@ -17,7 +17,6 @@ numeroInforme:
 anio: "2013"
 editores: []
 url: 
-orden: 517
 tags: 
  - referencia/paper
  - biblioteca/paper

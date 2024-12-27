@@ -4,7 +4,6 @@ tags:
   - ingeniería-en-informática/aninfo/Analizar-y-especificar-requisitos
   - nota/facultad
 etapa: sin-empezar
-orden: 29
 ---
 # Definición
 ---

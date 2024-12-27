@@ -18,7 +18,6 @@ url:
 capitulos: 
 cover: The Mathematical Principles of Natural Philosophy, the Principia de Isaac Newton, Andrew Motte.jpg
 aliases: 
-orden: 511
 tags:
   - referencia/libro
   - biblioteca/libro

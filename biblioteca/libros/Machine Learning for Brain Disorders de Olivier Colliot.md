@@ -26,7 +26,6 @@ capitulos:
 cover: Machine Learning for Brain Disorders de Olivier Colliot.jpg
 aliases:
   - "Machine Learning for Brain Disorders de Olivier Colliot, Capítulo 20: Evaluating machine learning models and their diagnostic value de Gaël Varoquaux, Olivier Colliot#Capítulo 20: Evaluating machine learning models and their diagnostic value de Gaël Varoquaux, Olivier Colliot"
-orden: 578
 tags:
   - referencia/libro
   - biblioteca/libro

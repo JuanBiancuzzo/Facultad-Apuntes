@@ -11,7 +11,6 @@ tags:
 aliases:
   - Curvas de interpolación entre keyframes
   - Fotograma clave
-orden: 157
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

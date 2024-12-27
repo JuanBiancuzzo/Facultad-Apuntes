@@ -8,7 +8,6 @@ tags:
 referencias:
   - "350"
 etapa: sin-empezar
-orden: 251
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

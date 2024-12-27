@@ -1,7 +1,6 @@
 ---
 dia: 2024-11-16
 etapa: empezado
-orden: 457
 referencias:
   - "544"
 tags:

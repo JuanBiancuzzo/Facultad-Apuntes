@@ -10,7 +10,6 @@ tags:
 aliases:
   - AI
 estado: Falta resumir
-orden: 423
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

@@ -21,7 +21,6 @@ numeroInforme:
 anio: "2024"
 editores: []
 url: http://dx.doi.org/10.31234/osf.io/vf2bc
-orden: 590
 tags: 
  - referencia/paper
  - biblioteca/paper

@@ -30,7 +30,6 @@ tags:
   - investigación/machine-Learning/sequence-modeling
   - investigación/ciencias-de-la-computación/Machine-learning/sequence-modeling
   - investigación/matemática/Estadística/Machine-learning/sequence-modeling
-orden: 245
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

@@ -27,7 +27,6 @@ numeroInforme:
 anio: "2024"
 editores: []
 url: https://doi.org/10.48550/arXiv.2307.06435
-orden: 582
 tags: 
  - referencia/paper
  - biblioteca/paper

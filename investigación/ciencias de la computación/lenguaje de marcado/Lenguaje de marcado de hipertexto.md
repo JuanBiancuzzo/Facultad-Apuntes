@@ -12,7 +12,6 @@ tags:
   - ingeniería-en-informática/redes/Capa-de-aplicación
   - ingeniería-electrónica/redes/Capa-de-aplicación
   - investigación/lenguaje-de-marcado
-orden: 60
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

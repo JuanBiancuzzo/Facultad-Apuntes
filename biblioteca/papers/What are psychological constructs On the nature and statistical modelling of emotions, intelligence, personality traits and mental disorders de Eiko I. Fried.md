@@ -11,7 +11,6 @@ numeroInforme:
 anio: "2017"
 editores: []
 url: http://dx.doi.org/10.1080/17437199.2017.1306718
-orden: 572
 tags: 
  - referencia/paper
  - biblioteca/paper

@@ -7,7 +7,6 @@ tags:
   - ingeniería-electrónica/proba/Teoría-de-probabilidades
   - ingeniería-en-informática/proba/Teoría-de-probabilidades
 estado: Sin empezar
-orden: 619
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

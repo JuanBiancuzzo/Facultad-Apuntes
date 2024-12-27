@@ -22,7 +22,6 @@ url:
 capitulos: 
 cover: Dive into Deep Learning de Aston Zhang, Zachary C. Lipton, Mu Li, Alexander J. Smola.jpg
 aliases: 
-orden: 587
 tags:
   - referencia/libro
   - biblioteca/libro

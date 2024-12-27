@@ -28,7 +28,6 @@ tags:
   - investigación/matemática/Estadística/Machine-learning/sequence-modeling
 aliases:
   - Phrase2Vec
-orden: 292
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

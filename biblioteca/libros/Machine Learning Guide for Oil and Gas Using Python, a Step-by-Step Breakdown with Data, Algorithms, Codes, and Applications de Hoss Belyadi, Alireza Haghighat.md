@@ -26,7 +26,6 @@ capitulos:
 cover: Machine Learning Guide for Oil and Gas Using Python, a Step-by-Step Breakdown with Data, Algorithms, Codes, and Applications de Hoss Belyadi, Alireza Haghighat.jpg
 aliases:
   - "Machine Learning Guide for Oil and Gas Using Python, a Step-by-Step Breakdown with Data, Algorithms, Codes, and Applications de Hoss Belyadi, Alireza Haghighat, Capítulo 5: Supervised learning#Capítulo 5: Supervised learning"
-orden: 566
 tags:
   - referencia/libro
   - biblioteca/libro

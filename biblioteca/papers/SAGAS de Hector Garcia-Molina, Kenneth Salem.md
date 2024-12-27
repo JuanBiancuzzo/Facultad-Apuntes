@@ -13,7 +13,6 @@ numeroInforme:
 anio: "1987"
 editores: 
 url: 
-orden: 537
 tags:
   - referencia/paper
   - biblioteca/paper

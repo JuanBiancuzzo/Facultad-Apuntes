@@ -6,7 +6,6 @@ referencias:
 tags:
   - nota/investigacion
   - investigación/matemática/fractales
-orden: 304
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

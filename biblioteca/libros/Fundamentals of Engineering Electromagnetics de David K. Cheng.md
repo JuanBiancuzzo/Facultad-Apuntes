@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: Fundamentals of Engineering Electromagnetics de David K. Cheng.jpg
 aliases: 
-orden: 451
 tags:
   - referencia/libro
   - biblioteca/libro

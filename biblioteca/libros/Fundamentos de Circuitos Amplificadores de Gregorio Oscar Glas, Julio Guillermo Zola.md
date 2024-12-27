@@ -102,7 +102,6 @@ aliases:
   - "Fundamentos de Circuitos Amplificadores de Gregorio Oscar Glas, Julio Guillermo Zola, Capítulo 12: Amplificadores diferenciales con cargas activas#Capítulo 12: Amplificadores diferenciales con cargas activas"
   - "Fundamentos de Circuitos Amplificadores de Gregorio Oscar Glas, Julio Guillermo Zola, Capítulo 13: Amplificadores Operacionales. Conceptos básicos#Capítulo 13: Amplificadores Operacionales. Conceptos básicos"
   - "Fundamentos de Circuitos Amplificadores de Gregorio Oscar Glas, Julio Guillermo Zola, Capítulo 14: Análisis de la ganancia de lazo en los amplificadores realimentados#Capítulo 14: Análisis de la ganancia de lazo en los amplificadores realimentados"
-orden: 385
 tags:
   - referencia/libro
   - biblioteca/libro

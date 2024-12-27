@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: Clean Code, a Handbook of Agile Software Craftsmanship de Robert C. Martin.jpg
 aliases: 
-orden: 464
 tags:
   - referencia/libro
   - biblioteca/libro

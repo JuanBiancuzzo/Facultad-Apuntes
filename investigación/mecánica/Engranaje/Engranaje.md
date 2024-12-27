@@ -1,7 +1,6 @@
 ---
 dia: 2024-11-15
 estado: Sin empezar
-orden: 441
 tags:
   - índice
   - nota/investigacion

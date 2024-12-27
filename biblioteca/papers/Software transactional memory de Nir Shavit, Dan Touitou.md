@@ -13,7 +13,6 @@ numeroInforme:
 anio: "1995"
 editores: 
 url: https://doi.org/10.1145/224964.224987
-orden: 541
 tags:
   - referencia/paper
   - biblioteca/paper

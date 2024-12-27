@@ -8,7 +8,6 @@ tags:
   - nota/facultad
   - ingeniería-electrónica/algo-1/Introducción-a-la-programación
   - investigación/ciencias-de-la-computación/algoritmos
-orden: 17
 referencias:
   - "553"
   - "613"

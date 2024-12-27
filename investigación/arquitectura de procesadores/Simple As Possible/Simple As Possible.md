@@ -1,7 +1,6 @@
 ---
 dia: 2024-11-30
 estado: Sin empezar
-orden: 591
 tags:
   - índice
   - investigación/arquitectura-de-procesadores/Simple-As-Possible

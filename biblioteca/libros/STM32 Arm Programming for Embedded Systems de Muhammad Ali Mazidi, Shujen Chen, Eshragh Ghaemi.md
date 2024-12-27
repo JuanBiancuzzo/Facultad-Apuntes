@@ -38,7 +38,6 @@ aliases:
   - "STM32 Arm Programming for Embedded Systems de Muhammad Ali Mazidi, Shujen Chen, Eshragh Ghaemi, Capítulo 8: SPI Protocol and DAC Interfacing#Capítulo 8: SPI Protocol and DAC Interfacing"
   - "STM32 Arm Programming for Embedded Systems de Muhammad Ali Mazidi, Shujen Chen, Eshragh Ghaemi, Capítulo 9: I2C Protocol and RTC Interfacing#Capítulo 9: I2C Protocol and RTC Interfacing"
   - "STM32 Arm Programming for Embedded Systems de Muhammad Ali Mazidi, Shujen Chen, Eshragh Ghaemi, Capítulo 13: DMA Programing#Capítulo 13: DMA Programing"
-orden: 392
 tags:
   - referencia/libro
   - biblioteca/libro

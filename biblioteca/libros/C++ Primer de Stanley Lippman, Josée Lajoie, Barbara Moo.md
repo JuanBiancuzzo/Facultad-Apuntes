@@ -20,7 +20,6 @@ url:
 capitulos: 
 cover: C++ Primer de Stanley Lippman, Josée Lajoie, Barbara Moo.jpg
 aliases: 
-orden: 475
 tags:
   - referencia/libro
   - biblioteca/libro

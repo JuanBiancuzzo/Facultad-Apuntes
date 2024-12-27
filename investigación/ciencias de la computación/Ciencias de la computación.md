@@ -1,7 +1,6 @@
 ---
 dia: 2024-12-09
 estado: Sin empezar
-orden: 597
 tags:
   - índice
   - investigación/ciencias-de-la-computación

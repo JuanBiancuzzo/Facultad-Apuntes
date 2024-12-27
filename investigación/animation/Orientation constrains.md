@@ -9,7 +9,6 @@ tags:
   - investigación/game-engine/Animation-Engine
 aliases:
   - Angle constrains
-orden: 196
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

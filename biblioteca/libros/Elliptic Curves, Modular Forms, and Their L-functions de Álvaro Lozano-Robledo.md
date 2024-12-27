@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: Elliptic Curves, Modular Forms, and Their L-functions de Álvaro Lozano-Robledo.jpg
 aliases: 
-orden: 512
 tags:
   - referencia/libro
   - biblioteca/libro

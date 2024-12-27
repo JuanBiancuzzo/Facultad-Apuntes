@@ -6,7 +6,6 @@ tags:
   - nota/investigacion
   - ingeniería-en-informática/sisop/Kernel
   - investigación/ciencias-de-la-computación/sistemas-operativos/kernel
-orden: 324
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

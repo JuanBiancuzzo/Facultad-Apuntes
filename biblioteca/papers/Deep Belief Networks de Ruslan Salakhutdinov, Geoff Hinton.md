@@ -13,7 +13,6 @@ numeroInforme:
 anio: "2009"
 editores: 
 url: http://www.scholarpedia.org/article/Deep_belief_networks
-orden: 562
 tags:
   - referencia/paper
   - biblioteca/paper

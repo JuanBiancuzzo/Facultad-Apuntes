@@ -1,7 +1,6 @@
 ---
 dia: 2024-12-22
 etapa: ampliar
-orden: 608
 referencias: 
 tags:
   - nota/investigacion

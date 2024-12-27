@@ -10,7 +10,6 @@ tags:
   - investigación/matemática/Estadística/Machine-learning
 aliases:
   - SVM
-orden: 131
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

@@ -14,7 +14,6 @@ aliases:
   - Dynamic memory allocation
   - Gestión de memoria
   - Administración de memoria
-orden: 152
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

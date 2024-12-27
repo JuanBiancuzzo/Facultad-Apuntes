@@ -9,7 +9,6 @@ aliases:
 tags:
   - nota/investigacion
   - investigación/reglas-APA
-orden: 78
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

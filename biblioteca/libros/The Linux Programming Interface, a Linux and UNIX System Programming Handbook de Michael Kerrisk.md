@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: The Linux Programming Interface, a Linux and UNIX System Programming Handbook de Michael Kerrisk.jpg
 aliases: 
-orden: 495
 tags:
   - referencia/libro
   - biblioteca/libro

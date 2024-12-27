@@ -6,7 +6,6 @@ tags:
   - ingeniería-electrónica/señales/Transformada-discreta-de-Fourier
   - nota/facultad
 etapa: sin-empezar
-orden: 331
 ---
 # Definición
 ---

@@ -16,7 +16,6 @@ url: http://dx.doi.org/10.1007/978-3-030-46380-9
 capitulos: 
 cover: New Statistics for Design Researchers, a Bayesian Workflow in Tidy R de Martin Schmettow.jpg
 aliases: 
-orden: 551
 tags:
   - referencia/libro
   - biblioteca/libro

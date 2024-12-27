@@ -15,7 +15,6 @@ numeroInforme:
 anio: "1988"
 editores: 
 url: https://doi.org/10.1145/42282.42283
-orden: 544
 tags:
   - referencia/paper
   - biblioteca/paper

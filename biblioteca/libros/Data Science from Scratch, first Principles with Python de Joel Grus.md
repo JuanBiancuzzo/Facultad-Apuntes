@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: Data Science from Scratch, first Principles with Python de Joel Grus.jpg
 aliases: 
-orden: 494
 tags:
   - referencia/libro
   - biblioteca/libro

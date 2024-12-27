@@ -8,7 +8,6 @@ aliases:
   - Coordenadas polares
   - Coordenadas circulares
 etapa: sin-empezar
-orden: 32
 ---
 # Definición
 ---

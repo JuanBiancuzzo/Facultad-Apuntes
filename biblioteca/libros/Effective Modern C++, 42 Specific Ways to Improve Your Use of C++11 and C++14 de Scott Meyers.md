@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: Effective Modern C++, 42 Specific Ways to Improve Your Use of C++11 and C++14 de Scott Meyers.jpg
 aliases: 
-orden: 476
 tags:
   - referencia/libro
   - biblioteca/libro

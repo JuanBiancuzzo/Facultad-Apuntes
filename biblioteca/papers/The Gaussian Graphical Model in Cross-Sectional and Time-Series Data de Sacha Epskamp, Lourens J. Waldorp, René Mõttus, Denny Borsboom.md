@@ -18,7 +18,6 @@ anio: "2018"
 editores:
   - Multivariate Behavioral Research
 url: https://doi.org/10.1080/00273171.2018.1454823
-orden: 576
 tags:
   - referencia/paper
   - biblioteca/paper

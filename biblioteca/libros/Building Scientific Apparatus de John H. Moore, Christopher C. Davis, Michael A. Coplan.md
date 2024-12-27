@@ -20,7 +20,6 @@ url:
 capitulos: 
 cover: Building Scientific Apparatus de John H. Moore, Christopher C. Davis, Michael A. Coplan.jpg
 aliases: 
-orden: 400
 tags:
   - referencia/libro
   - biblioteca/libro

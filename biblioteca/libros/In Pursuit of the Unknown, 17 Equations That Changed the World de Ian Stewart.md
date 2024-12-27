@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: In Pursuit of the Unknown, 17 Equations That Changed the World de Ian Stewart.jpg
 aliases: 
-orden: 501
 tags:
   - referencia/libro
   - biblioteca/libro

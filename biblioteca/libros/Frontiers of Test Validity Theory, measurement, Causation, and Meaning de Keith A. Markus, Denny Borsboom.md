@@ -18,7 +18,6 @@ url:
 capitulos: 
 cover: Frontiers of Test Validity Theory, measurement, Causation, and Meaning de Keith A. Markus, Denny Borsboom.jpg
 aliases: 
-orden: 575
 tags:
   - referencia/libro
   - biblioteca/libro

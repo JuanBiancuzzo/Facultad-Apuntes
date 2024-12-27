@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: Using the GNU Compiler Collection de Richard Stallman.jpg
 aliases: 
-orden: 602
 tags:
   - referencia/libro
   - biblioteca/libro

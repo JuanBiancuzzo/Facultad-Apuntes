@@ -6,7 +6,6 @@ tags:
   - nota/investigacion
   - investigación/ciencias-de-la-computación/Análisis-numérico/numerical-Linear-Algebra/integrator/métodos-de-Runge-Kutta
   - investigación/matemática/Análisis-numérico/numerical-Linear-Algebra/integrator
-orden: 135
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

@@ -17,7 +17,6 @@ numeroInforme:
 anio: "2005"
 editores: 
 url: https://doi.org/10.1145/1065944.1065952
-orden: 538
 tags:
   - referencia/paper
   - biblioteca/paper

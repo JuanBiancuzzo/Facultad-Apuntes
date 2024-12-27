@@ -16,7 +16,6 @@ url: https://archive.org/details/elementsofdistri0000garg
 capitulos: 
 cover: Elements of Distributed Computing de Vijay K. Garg.jpg
 aliases: 
-orden: 547
 tags:
   - referencia/libro
   - biblioteca/libro

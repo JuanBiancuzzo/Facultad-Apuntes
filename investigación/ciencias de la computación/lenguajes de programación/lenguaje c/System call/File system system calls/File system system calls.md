@@ -6,7 +6,6 @@ tags:
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c/System-call/File-system-system-calls
   - investigación/ciencias-de-la-computación/sistemas-operativos/File-system/System-call
 estado: Sin empezar
-orden: 606
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

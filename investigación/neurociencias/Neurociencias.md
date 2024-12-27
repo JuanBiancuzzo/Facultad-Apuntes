@@ -1,7 +1,6 @@
 ---
 dia: 2024-11-16
 estado: Sin empezar
-orden: 458
 tags:
   - índice
   - investigación/neurociencias

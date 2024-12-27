@@ -6,7 +6,6 @@ tags:
   - investigación/mecánica
 referencias:
   - "264"
-orden: 240
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

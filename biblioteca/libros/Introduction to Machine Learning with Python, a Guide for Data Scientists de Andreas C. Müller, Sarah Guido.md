@@ -18,7 +18,6 @@ url:
 capitulos: 
 cover: Introduction to Machine Learning with Python, a Guide for Data Scientists de Andreas C. Müller, Sarah Guido.jpg
 aliases: 
-orden: 479
 tags:
   - referencia/libro
   - biblioteca/libro

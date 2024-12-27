@@ -5,7 +5,6 @@ tags:
   - nota/investigacion
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c/System-call/Procesos-system-calls
 estado: Sin empezar
-orden: 609
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

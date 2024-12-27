@@ -10,7 +10,6 @@ tags:
 referencias:
   - "255"
 etapa: sin-empezar
-orden: 68
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

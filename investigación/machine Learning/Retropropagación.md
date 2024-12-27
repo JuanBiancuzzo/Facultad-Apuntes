@@ -12,7 +12,6 @@ tags:
   - investigación/machine-Learning/red-Neuronal
   - investigación/ciencias-de-la-computación/Machine-learning/red-Neuronal
   - investigación/matemática/Estadística/Machine-learning/red-Neuronal
-orden: 247
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

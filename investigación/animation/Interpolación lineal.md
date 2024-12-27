@@ -1,7 +1,6 @@
 ---
 dia: 2024-11-21
 etapa: empezado
-orden: 520
 referencias:
   - "608"
   - "611"

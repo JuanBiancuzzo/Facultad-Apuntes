@@ -16,7 +16,6 @@ url:
 capitulos: 
 cover: Python for Data Analysis, data Wrangling with pandas, NumPy and Jupyter de Wes McKinney.jpg
 aliases: 
-orden: 480
 tags:
   - referencia/libro
   - biblioteca/libro

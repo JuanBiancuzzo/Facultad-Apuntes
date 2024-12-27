@@ -23,7 +23,6 @@ numeroInforme:
 anio: "1986"
 editores: 
 url: https://api.semanticscholar.org/CorpusID:38305444
-orden: 533
 tags:
   - referencia/paper
   - biblioteca/paper

@@ -1,7 +1,6 @@
 ---
 dia: 2024-11-27
 estado: Sin empezar
-orden: 577
 tags:
   - índice
   - investigación/ciencias-de-la-computación/paradigmas-de-programación

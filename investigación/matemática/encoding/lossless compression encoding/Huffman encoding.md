@@ -9,7 +9,6 @@ tags:
   - ingeniería-en-informática/orga/Compresión
   - investigación/matemática/encoding/lossless-compression-encoding
   - investigación/ciencias-de-la-computación/algoritmos
-orden: 355
 aliases:
   - Huffman Codes
   - Huffman Coding

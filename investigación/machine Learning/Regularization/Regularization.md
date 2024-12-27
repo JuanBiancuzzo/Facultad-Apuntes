@@ -1,7 +1,6 @@
 ---
 dia: 2024-11-26
 estado: Sin empezar
-orden: 568
 tags:
   - índice
   - investigación/machine-Learning/Regularization

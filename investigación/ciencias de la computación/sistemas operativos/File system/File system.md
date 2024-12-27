@@ -6,7 +6,6 @@ tags:
   - investigación/ciencias-de-la-computación/sistemas-operativos/File-system
   - ingeniería-en-informática/sisop/File-system
 estado: Sin empezar
-orden: 607
 aliases:
   - Soft link#Soft link
   - Sistema de archivos

@@ -9,7 +9,6 @@ aliases:
 tags:
   - nota/investigacion
   - investigación/lenguaje-de-marcado
-orden: 74
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

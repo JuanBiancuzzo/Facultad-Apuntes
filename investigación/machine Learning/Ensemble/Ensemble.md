@@ -1,7 +1,6 @@
 ---
 dia: 2024-11-26
 estado: Sin empezar
-orden: 563
 tags:
   - índice
   - investigación/machine-Learning/Ensemble

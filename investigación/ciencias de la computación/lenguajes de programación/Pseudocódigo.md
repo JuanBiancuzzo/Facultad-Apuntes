@@ -1,7 +1,6 @@
 ---
 dia: 2024-12-23
 etapa: ampliar
-orden: 613
 referencias:
   - 785
 tags:

@@ -20,7 +20,6 @@ url:
 capitulos: 
 cover: Natural Language Processing in Action, understanding, analyzing, and generating text with Python de Hobson Lane, Hannes Hapke, Cole Howard.jpg
 aliases: 
-orden: 589
 tags:
   - referencia/libro
   - biblioteca/libro

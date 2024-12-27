@@ -54,7 +54,6 @@ aliases:
   - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 4: Current Mirrors, Active Loads, and References#Capítulo 4: Current Mirrors, Active Loads, and References"
   - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 7: Frequency Response of Integrated Circuits#Capítulo 7: Frequency Response of Integrated Circuits"
   - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 12: Fully Differential Operational Amplifiers#Capítulo 12: Fully Differential Operational Amplifiers"
-orden: 387
 tags:
   - referencia/libro
   - biblioteca/libro

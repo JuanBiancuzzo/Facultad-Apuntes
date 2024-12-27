@@ -12,7 +12,6 @@ aliases:
 referencias:
   - "408"
   - "409"
-orden: 378
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

@@ -1,7 +1,6 @@
 ---
 dia: 2024-11-19
 estado: Sin empezar
-orden: 503
 tags:
   - índice
   - nota/investigacion

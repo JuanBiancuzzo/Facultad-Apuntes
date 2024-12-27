@@ -1,7 +1,6 @@
 ---
 dia: 2024-10-23
 etapa: sin-empezar
-orden: 2
 referencias: 
 tags:
   - nota/investigacion

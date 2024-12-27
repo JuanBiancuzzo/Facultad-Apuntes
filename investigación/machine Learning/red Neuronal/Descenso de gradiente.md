@@ -9,7 +9,6 @@ tags:
   - investigación/ciencias-de-la-computación/Machine-learning/red-Neuronal
   - investigación/matemática/Estadística/Machine-learning/red-Neuronal
   - investigación/ciencias-de-la-computación/algoritmos
-orden: 252
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
