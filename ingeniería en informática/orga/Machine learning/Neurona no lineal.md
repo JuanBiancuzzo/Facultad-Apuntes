@@ -3,7 +3,7 @@ dia: 2023-08-12
 tags:
   - ingeniería-en-informática/orga/Machine-learning
   - nota/facultad
-  - investigación/machine-Learning/red-Neuronal
+  - investigación/machine-Learning/Red-Neuronal
   - investigación/ciencias-de-la-computación/Machine-learning/red-Neuronal
   - "#investigación/matemática/Estadística/Machine-learning/red-Neuronal"
 ---

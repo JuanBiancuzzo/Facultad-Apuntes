@@ -4,8 +4,8 @@ estado: Sin empezar
 tags:
   - índice
   - nota/investigacion
-  - investigación/ciencias-de-la-computación/Análisis-numérico/numerical-Linear-Algebra/randomized-Numerical-Linear-Algebra
-  - investigación/matemática/Análisis-numérico/numerical-Linear-Algebra/randomized-Numerical-Linear-Algebra
+  - investigación/ciencias-de-la-computación/Análisis-numérico/Numerical-Linear-Algebra/randomized-Numerical-Linear-Algebra
+  - investigación/matemática/Análisis-numérico/Numerical-Linear-Algebra/randomized-Numerical-Linear-Algebra
 aliases:
   - Rand-NLA
 referencias:

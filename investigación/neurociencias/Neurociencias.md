@@ -4,6 +4,7 @@ estado: Sin empezar
 tags:
   - índice
   - investigación/neurociencias
+  - nota/investigacion
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });

@@ -4,7 +4,6 @@ tags:
   - índice
   - nota/investigacion
   - investigación/machine-Learning
-  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Machine-learning-deep-learning-e-interpretabilidad-algorítmica
   - investigación/ciencias-de-la-computación/Machine-learning
   - investigación/matemática/Estadística/Machine-learning
 aliases:
@@ -106,6 +105,7 @@ Machine learning
 
 ## Resumen
 ---
+#cursos/ciencia-de-datos-para-salud-mental-y-psicología/Machine-learning-deep-learning-e-interpretabilidad-algorítmica 
 %% hacer grafico de todas las partes %%
 Leer
 * [[Elliptic Curves, Modular Forms, and Their L-functions de Álvaro Lozano-Robledo|Elliptic Curves, Modular Forms, and Their L-functions]]

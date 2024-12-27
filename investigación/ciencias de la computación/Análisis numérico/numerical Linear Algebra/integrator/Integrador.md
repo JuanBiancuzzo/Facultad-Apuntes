@@ -3,8 +3,8 @@ dia: 2024-07-08
 tags:
   - índice
   - nota/investigacion
-  - investigación/ciencias-de-la-computación/Análisis-numérico/matemática/numerical-Linear-Algebra/integrator
-  - investigación/matemática/Análisis-numérico/numerical-Linear-Algebra/integrator
+  - investigación/ciencias-de-la-computación/Análisis-numérico/matemática/Numerical-Linear-Algebra/integrator
+  - investigación/matemática/Análisis-numérico/Numerical-Linear-Algebra/integrator
 estado: Tenemos por ahora un único integrador definido
 aliases:
   - Integrador

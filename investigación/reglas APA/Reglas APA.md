@@ -3,6 +3,7 @@ dia: 2024-07-08
 tags:
   - índice
   - investigación/reglas-APA
+  - nota/investigacion
 estado: Falta resumir
 ---
 ```dataviewjs

@@ -5,8 +5,8 @@ referencias:
   - "93"
 tags:
   - nota/investigacion
-  - investigación/ciencias-de-la-computación/Análisis-numérico/numerical-Linear-Algebra/integrator
-  - investigación/matemática/Análisis-numérico/numerical-Linear-Algebra/integrator
+  - investigación/ciencias-de-la-computación/Análisis-numérico/Numerical-Linear-Algebra/integrator
+  - investigación/matemática/Análisis-numérico/Numerical-Linear-Algebra/integrator
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

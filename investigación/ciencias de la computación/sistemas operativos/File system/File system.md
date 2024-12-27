@@ -4,7 +4,6 @@ tags:
   - índice
   - nota/investigacion
   - investigación/ciencias-de-la-computación/sistemas-operativos/File-system
-  - ingeniería-en-informática/sisop/File-system
 estado: Sin empezar
 aliases:
   - Soft link#Soft link
@@ -20,6 +19,7 @@ Vamos a investigar como un [[Sistema operativo|sistema operativo]] permite organ
 
 ## Resumen
 ---
+#ingeniería-en-informática/sisop/File-system 
 Permite al usuario organizar sus datos para que se persistan a través de un largo período de tiempo.
 
 ### Capa de abstracción

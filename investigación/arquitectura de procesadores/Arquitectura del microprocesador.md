@@ -4,9 +4,6 @@ estado: Sin empezar
 tags:
   - índice
   - nota/investigacion
-  - ingeniería-en-informática/estructura/Microarquitectura
-  - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
-  - ingeniería-electrónica/estructura/Microarquitectura
   - investigación/arquitectura-de-procesadores
 aliases:
   - Arquitectura de procesador
@@ -21,6 +18,7 @@ Vamos a agrupar la investigación de [[Arquitectura del microprocesador|arquitec
 
 ## Resumen
 ---
+#ingeniería-electrónica/estructura/Microarquitectura #ingeniería-en-informática/estructura/Microarquitectura #ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits 
 Para ejecutar un [[Programa|programa]], el [[Procesador|microprocesador]] realiza el llamado ciclo fetch, o ciclo de búsqueda-ejecución
 1. Buscar en memoria la próxima instrucción a ser ejecutada ^fetch
 2. Decodificar el código de operación de esa instrucción ^decode

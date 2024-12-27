@@ -3,10 +3,7 @@ dia: 2024-09-30
 estado: Empezando a describir algunos algoritmos
 tags:
   - índice
-  - ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - nota/investigacion
-  - nota/facultad
-  - ingeniería-electrónica/algo-1/Introducción-a-la-programación
   - investigación/ciencias-de-la-computación/algoritmos
 referencias:
   - "553"
@@ -22,6 +19,7 @@ Vamos a investigar [[algoritmos/Índice|algoritmos]] que son interesantes, y má
 
 ## Resumen
 ---
+#ingeniería-en-informática/algo-1/Introducción-a-la-programación #ingeniería-electrónica/algo-1/Introducción-a-la-programación 
 Un algoritmo es un método para resolver un problema mediante una serie de pasos precisos, definidos y finitos
 
 Leer:

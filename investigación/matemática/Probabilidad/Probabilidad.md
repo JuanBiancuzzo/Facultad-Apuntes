@@ -4,8 +4,6 @@ tags:
   - índice
   - nota/investigacion
   - investigación/matemática/Probabilidad
-  - ingeniería-electrónica/proba/Teoría-de-probabilidades
-  - ingeniería-en-informática/proba/Teoría-de-probabilidades
 estado: Sin empezar
 ---
 ```dataviewjs
@@ -17,6 +15,7 @@ Vamos a investigar la rama de matemática que es la probabilidad
 
 ## Resumen
 ---
+#ingeniería-electrónica/proba/Teoría-de-probabilidades #ingeniería-en-informática/proba/Teoría-de-probabilidades 
 La probabilidad de un [[Evento|evento]] $A$ es un número positivo (o nulo) que se le asigna a cada suceso o evento del [[Espacio muestral|espacio muestra]]
 
 Una probabilidad (o medida de probabilidad) es una función $P: \mathscr{A} \to [0, 1]$ que a cada evento $A$ le hace corresponder un número real $\mathbb{P}(A)$ con las siguientes propiedades

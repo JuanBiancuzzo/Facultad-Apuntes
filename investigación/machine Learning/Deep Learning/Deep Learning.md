@@ -5,12 +5,8 @@ tags:
   - índice
   - investigación/machine-Learning/Deep-Learning
   - nota/investigacion
-  - ingeniería-en-informática/orga/Machine-learning
-  - investigación/machine-Learning
   - investigación/ciencias-de-la-computación/Machine-learning/Deep-Learning
-  - investigación/ciencias-de-la-computación/Machine-learning
   - investigación/matemática/Estadística/Machine-learning/Deep-Learning
-  - investigación/matemática/Estadística/Machine-learning
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
@@ -21,6 +17,7 @@ Vamos a ver la rama de [[investigación/machine Learning/Machine learning|machin
 
 ## Resumen
 ---
+#ingeniería-en-informática/orga/Machine-learning 
 Es una [[Red neuronal|red neuronal]] que tiene varias capas de [[Neurona|neuronas]]
 
 Leer
