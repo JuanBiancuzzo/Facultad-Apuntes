@@ -4,66 +4,10 @@
   "debug": false,
   "editorMenu": [],
   "fileMenu": [],
-  "leftRibbon": [
-    {
-      "id": "quickadd:choice:e024d912-7e83-44a5-a17c-6175a73cc40f",
-      "icon": "book",
-      "name": "Nuevo Tema de Investigación",
-      "mode": "any"
-    },
-    {
-      "id": "quickadd:choice:c6addedc-6a02-4777-95d3-b9d63ce9a4ed",
-      "icon": "bookmark-plus",
-      "name": "Agregar tema de materia",
-      "mode": "any"
-    },
-    {
-      "id": "quickadd:choice:e516c7e7-35e3-4917-b453-678f35596fdc",
-      "icon": "album",
-      "name": "Nueva Materia",
-      "mode": "any"
-    },
-    {
-      "id": "quickadd:choice:e08ebefc-0939-4918-88d3-e2f5937667ac",
-      "icon": "box-select",
-      "name": "Nuevo Proyecto Práctico",
-      "mode": "any"
-    },
-    {
-      "id": "templater-obsidian:_template/investigacion/Agregar referencia.md",
-      "icon": "bookmark",
-      "name": "Agregar referencia",
-      "mode": "any"
-    },
-    {
-      "id": "quickadd:choice:a7f2e43d-4c81-4013-8f57-137ff41ea1d3",
-      "icon": "beaker",
-      "name": "Nuevo proyecto investigación",
-      "mode": "any"
-    },
-    {
-      "id": "quickadd:choice:ec1789ad-c82c-4efd-a6f9-3061ac6fa76e",
-      "icon": "box",
-      "name": "Nuevo GDD",
-      "mode": "any"
-    },
-    {
-      "id": "quickadd:choice:1d03d4fa-4aa0-4a7c-a83d-c40f0cb44f1a",
-      "icon": "lucide-archive-restore",
-      "name": "Ingresar a la biblioteca",
-      "mode": "any"
-    }
-  ],
+  "leftRibbon": [],
   "rightRibbon": [],
   "titleBar": [],
-  "statusBar": [
-    {
-      "id": "templater-obsidian:_template/Editar tags.md",
-      "icon": "lucide-album",
-      "name": "Editar tags",
-      "mode": "any"
-    }
-  ],
+  "statusBar": [],
   "pageHeader": [],
   "macros": [
     {

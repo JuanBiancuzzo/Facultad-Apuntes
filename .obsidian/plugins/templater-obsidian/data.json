@@ -13,12 +13,7 @@
   "shell_path": "",
   "user_scripts_folder": "_scripts/templater",
   "enable_folder_templates": true,
-  "folder_templates": [
-    {
-      "folder": "/",
-      "template": "_template/Nota - Template.md"
-    }
-  ],
+  "folder_templates": [],
   "enable_file_templates": false,
   "file_templates": [
     {
@@ -28,21 +23,7 @@
   ],
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
-  "enabled_templates_hotkeys": [
-    "_template/tikz/Tikz - Template.md",
-    "_template/tikz/TikzPlot - Template.md",
-    "_template/tikz/TikzCircuit - Template.md",
-    "_template/tikz/TikzNetting - Template.md",
-    "_template/legal/Editar texto Artículo.md",
-    "_template/investigacion/Agregar referencia.md",
-    "_template/Regenerar readme - Template.md",
-    "_template/investigacion/Editar referencia - Template.md",
-    "_template/investigacion/Citar en linea.md",
-    "_template/Agregar demostracion.md",
-    "_template/Editar tags.md"
-  ],
-  "startup_templates": [
-    "_template/startup/start.md"
-  ],
+  "enabled_templates_hotkeys": [],
+  "startup_templates": [],
   "enable_ribbon_icon": false
 }
