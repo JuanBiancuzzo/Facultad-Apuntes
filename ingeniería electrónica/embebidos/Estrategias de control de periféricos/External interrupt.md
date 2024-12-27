@@ -37,4 +37,4 @@ También existen otros $5$ líneas EXTI que están conectadas de la siguiente ma
 
 La figura muestra la relación entre los pines GPIO, las entradas del controlador de interrupciones externo y las [[Solicitud de interrupción|IRQ]] de [[Controlador de interrupción#Para ARM Cortex-M|NVIC]]
 
-Debe tener en cuenta que el pin GPIO PC13 está agrupado junto con muchos otros pines en una IRQ NVIC común llamada EXTI15_10_IRQ. Esto es bastante importante en la demostración del [[Programa|programa]] de interrupción
+Debe tener en cuenta que el pin GPIO PC13 está agrupado junto con muchos otros pines en una IRQ NVIC común llamada EXTI15_10_IRQ. Esto es bastante importante en la demostración del [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] de interrupción

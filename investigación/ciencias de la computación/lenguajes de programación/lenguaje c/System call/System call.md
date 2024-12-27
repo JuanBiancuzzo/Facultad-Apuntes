@@ -18,7 +18,7 @@ Vamos a enumerar las system calls, en este caso usando el lenguaje C
 #ingeniería-en-informática/sisop/Kernel 
 Las system calls son funciones que permiten a los [[Proceso|procesos]] de usuario pedirle al [[Kernel|kernel]] que realice operaciones en su nombre. Una system call es cualquier función que el kernel expone que puede ser utilizada por un proceso a [[User mode|nivel usuario]]
 
-Desde el punto de vista del [[Programa|programa]], llamar a una system call es más o menos como invocar a una función de `C`. Por supuesto, de fondo ocurre
+Desde el punto de vista del [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]], llamar a una system call es más o menos como invocar a una función de `C`. Por supuesto, de fondo ocurre
 1. El programa realiza un llamado a una system call mediante la invocación de una función wrapper en la biblioteca
 2. Dicha función wrapper tiene que proporcionar todos los argumentos al system call `trap_handling`. Estos argumentos son pasados al wrapper por el [[ingeniería en informática/sisop/Virtualización de memoria/Stack|Stack]], pero el kernel los espera en determinados [[Registro|registros]]. La función wrapper copia estos valores a los registros
 3. Dado que todas las system calls son accedidas de la misma forma, el kernel tiene que saber identificarlas de alguna forma. Para poder hacer esto, la función wrapper copia el número de la system call a un determinado registro de la [[Procesador|procesador]] la `%eax`

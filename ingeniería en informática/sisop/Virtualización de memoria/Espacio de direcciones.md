@@ -15,7 +15,7 @@ El espacio de direcciones o address space es la abstracción fundamental sobre l
 
 Crear un mecanismo que permite que la [[Memoria|memoria]] física de una [[Computadora|computadora]] sea utilizada de forma fácil y eficiente llevo paulatinamente a concebir el concepto de espacio de direcciones, la abstracción para la [[Memoria|memoria]]
 
-El address space de un [[Proceso|proceso]] contiene todo el estado de la memoria del [[Programa|programa]] en ejecución
+El address space de un [[Proceso|proceso]] contiene todo el estado de la memoria del [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] en ejecución
 
 Por ejemplo
 * El código del programa tiene que estar alojado en la memoria en algún lugar
@@ -78,7 +78,7 @@ Se presenta un pequeño espacio de direcciones de $16 ~ KB$
 \end{document}
 ```
 
-El código fuente del [[Programa|programa]] vive en lo alto del espacio de direcciones empezando de $0$ en este ejemplo y esta empaquetado en la primer $1 ~ kb$ del espacio de direcciones. El código fuente es estático por ende se puede poner al principio del espacio de direcciones y no necesitará más espacio mientras que el programa se ejecute
+El código fuente del [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] vive en lo alto del espacio de direcciones empezando de $0$ en este ejemplo y esta empaquetado en la primer $1 ~ kb$ del espacio de direcciones. El código fuente es estático por ende se puede poner al principio del espacio de direcciones y no necesitará más espacio mientras que el programa se ejecute
 
 Por otro lado hay dos regiones del espacio de direcciones que pueden crecer o achicarse mientras el programa se esta ejecutando. Como ya se sabe son el [[Heap|heap]] y el [[ingeniería en informática/sisop/Virtualización de memoria/Stack|stack]], debido a que ambas en algún momento van a querer crecer siempre se ponen en los extremos del espacio de direcciones enfrentadas entre sí
 

@@ -38,7 +38,7 @@ Este proceso es denominado bootstrap, y generalmente depende del [[Hardware|hard
 
 ##### Carga del kernel
 ---
-El Bootloader por el momento de forma más o menos transparente es un [[Programa|programa]] que se encarga de 
+El Bootloader por el momento de forma más o menos transparente es un [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] que se encarga de 
 1. Pasar a Modo supervisor
 2. Buscar el kernel al dispositivo donde se encuentra almacenado
 3. Lo carga en [[Memoria|memoria]]
@@ -49,7 +49,7 @@ El Bootloader por el momento de forma más o menos transparente es un [[Programa
 ---
 Una vez que el [[Kernel|kernel]] terminó de ejecutarse, las últimas operaciones que realiza son
 1. Carga en [[Memoria|memoria]] la aplicación a ejecutarse
-2. Setear el PI (próxima instrucción) a la primera instrucción del [[Programa|programa]]
+2. Setear el PI (próxima instrucción) a la primera instrucción del [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]]
 3. Pasar a [[User mode|modo usuario]] y dejar el control a la aplicación
 
 

@@ -12,11 +12,8 @@ tags:
 ```
 # Definición
 ---
-El contenido en [[investig[[programas/hugo/Índice|Índice]]separar en 2 tipos de contenidos
-* [[Single Page|Single Page]]
-* [[List Page|List Page]]
+Es la página que muestra el contenido de una carpeta en especifico, esta para el primer nivel de carpetas debajo de contenido [[investig[[colección/programas/hugo/Índice|Índice]]a automáticamente, para cualquier subcarpeta se tiene que agregar un archivo `index.md` o `_index.md` en la cual también se puede poner contenido.
 
-También hay que notar que todo el contenido tiene [[Frontmatter|frontmatter o metadata]]
 
 
 # Referencias

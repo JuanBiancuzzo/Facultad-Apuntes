@@ -10,4 +10,4 @@ aliases:
 ---
 # Definición
 ---
-Carga rutinas únicamente cuando el [[Programa|programa]] las necesita
+Carga rutinas únicamente cuando el [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] las necesita

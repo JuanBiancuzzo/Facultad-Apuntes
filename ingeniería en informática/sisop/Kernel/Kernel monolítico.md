@@ -6,4 +6,4 @@ tags:
 ---
 # Definición
 ---
-El [[Kernel]] es un único [[Programa]] (en realidad [[Proceso]]) que se ejecuta continuamente en la [[Memoria|memoria]] de la [[Computadora|computadora]] intercambiándose con la ejecución de los procesos de usuario
+El [[Kernel]] es un único [[ingeniería en informática/sisop/La abstracción de proceso/Programa]] (en realidad [[Proceso]]) que se ejecuta continuamente en la [[Memoria|memoria]] de la [[Computadora|computadora]] intercambiándose con la ejecución de los procesos de usuario

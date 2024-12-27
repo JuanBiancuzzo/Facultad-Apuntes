@@ -12,7 +12,7 @@ tags:
 ```
 # Definición
 ---
-Los shortcodes en [[investig[[programas/hugo/Índice|Índice]]función la cual le podes pasar parámetros, pero estas funciones devuelven código HTML para insertar en el contenido. Su sintaxis para llamarlas es
+Los shortcodes en [[investig[[colección/programas/hugo/Índice|Índice]]función la cual le podes pasar parámetros, pero estas funciones devuelven código HTML para insertar en el contenido. Su sintaxis para llamarlas es
 ```
 {{< nombre-shortcode param1 ... >}}
 ```

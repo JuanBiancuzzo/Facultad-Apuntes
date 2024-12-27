@@ -63,7 +63,7 @@ Tan pronto como esta decodificación haya terminado, comenzará su ejecución y 
 
 Se puede cargar una nueva instrucción en cada ciclo y su resultado estará disponible dos ciclos después, pero la [[Función periódica#Frecuencia|frecuencia]] de los ciclos será efectivamente mayor, ya que se pueden completar cuatro instrucciones en el tiempo que antes se necesitaba para completar dos
 
-Sin embargo, este tipo de paralelismo deja algunos problemas por resolver. Por ejemplo, si se debe ejecutar una instrucción de bifurcación de [[Programa|programa]], la dirección de la siguiente instrucción sólo se conocerá cuando se haya completado la ejecución de la anterior; en este caso, es necesario retrasar la siguiente recuperación, interrumpiendo el pipeline o cancelando la secuencia
+Sin embargo, este tipo de paralelismo deja algunos problemas por resolver. Por ejemplo, si se debe ejecutar una instrucción de bifurcación de [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]], la dirección de la siguiente instrucción sólo se conocerá cuando se haya completado la ejecución de la anterior; en este caso, es necesario retrasar la siguiente recuperación, interrumpiendo el pipeline o cancelando la secuencia
 
 ```tikz
 \usepackage{amssymb}

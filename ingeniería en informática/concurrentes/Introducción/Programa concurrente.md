@@ -11,7 +11,7 @@ tags:
 ```
 # Definición
 ---
-Es un conjunto de [[Programa|programas]] secuenciales que pueden ejecutarse en [[Paralelo|paralelo]]
+Es un conjunto de [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programas]] secuenciales que pueden ejecutarse en [[Paralelo|paralelo]]
 
 ## Ejecución
 ---

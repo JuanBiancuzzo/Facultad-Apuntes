@@ -11,7 +11,7 @@ aliases:
 ---
 # Definición
 ---
-Esta [[Estructura de control selectiva|estructura de control selectiva]] alterar el flujo normal del [[Programa|programa]] según se cumpla o no una determinada condición
+Esta [[Estructura de control selectiva|estructura de control selectiva]] alterar el flujo normal del [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] según se cumpla o no una determinada condición
 
 ## En C
 ---

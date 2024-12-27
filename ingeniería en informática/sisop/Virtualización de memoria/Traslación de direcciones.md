@@ -44,7 +44,7 @@ A menudo, los procesos necesitan coordinarse entre sí, y una forma eficiente de
 ---
 Instancias del mismo programa pueden compartir las instrucciones del programa, reduciendo su huella de memoria y haciendo más eficiente la caché del procesador. De la misma manera, diferentes programas pueden compartir bibliotecas comunes. 
 
-### [[Programa|Program]] initialization
+### [[ingeniería en informática/sisop/La abstracción de proceso/Programa|Program]] initialization
 ---
 Utilizando la traducción de direcciones, podemos iniciar la ejecución de un programa antes de que todo su código se cargue en la memoria desde el disco. 
 
@@ -56,7 +56,7 @@ Asignación eficiente de memoria dinámica: A medida que un proceso expande su m
 ---
 Gestión de caché: El sistema operativo puede organizar cómo se posicionan los programas en la memoria física para mejorar la eficiencia de la caché, a través de un sistema llamado coloración de páginas. 
 
-### [[Programa|Program]] debugging
+### [[ingeniería en informática/sisop/La abstracción de proceso/Programa|Program]] debugging
 ---
 El sistema operativo puede utilizar la traducción de memoria para evitar que un programa con errores sobrescriba su propia región de código; al detectar errores de puntero más temprano, se facilita su depuración. Los depuradores también utilizan la traducción de direcciones para instalar puntos de interrupción de datos, deteniendo un programa cuando hace referencia a una ubicación de memoria específica. 
 

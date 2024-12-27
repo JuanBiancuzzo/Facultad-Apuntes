@@ -24,7 +24,7 @@ Vamos a investigar como usar y otorgar la interfaz para manejar la [[Memoria|mem
 
 ## Resumen
 ---
-Es el manejo de la memoria en la computadora, y el requisito esencial es de proveer maneras para alocar dinámicamente porciones de memoria para un [[Programa|programa]] cuando lo pida, y liberarla cuando no se tenga que usar
+Es el manejo de la memoria en la computadora, y el requisito esencial es de proveer maneras para alocar dinámicamente porciones de memoria para un [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] cuando lo pida, y liberarla cuando no se tenga que usar
 
 ## Archivos
 ---

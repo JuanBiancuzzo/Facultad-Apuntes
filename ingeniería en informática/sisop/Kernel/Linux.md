@@ -10,7 +10,7 @@ En el caso de Linux y contrariamente a lo que la mayoría de los usuarios creen,
 
 ![[Linux kernel.webp]]
 
-El kernel de Linux posee ciertas características a la hora de ser comparado con otros [[Programa|programas]]: 
+El kernel de Linux posee ciertas características a la hora de ser comparado con otros [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programas]]: 
 * El kernel no tiene acceso a la biblioteca C ni a los encabezados C estándar. 
 * El kernel está codificado en GNU C. 
 * El kernel carece de la protección de memoria internamente, no se protege de sí mismo.

@@ -33,13 +33,13 @@ La virtualización de [[Memoria|memoria]] tiene 3 metas
 
 ### Transparencia
 ---
-El [[Sistema operativo|sistema operativo]] debería implementar la virtualización de memoria de forma tal que sea invisible al [[Programa|programa]] que se esta ejecutando. El programa debe comportarse como si él estuviera alojado en su propia área de [[Memoria|memoria]] física privada.
+El [[Sistema operativo|sistema operativo]] debería implementar la virtualización de memoria de forma tal que sea invisible al [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] que se esta ejecutando. El programa debe comportarse como si él estuviera alojado en su propia área de [[Memoria|memoria]] física privada.
 
 Por detrás de escena, el sistema operativo y el [[Hardware|hardware]] ([[Memory Management Unit|MMU]]) hacen todo el trabajo para multiplexar memoria a lo largo de los diferentes [[Proceso|procesos]] y por ende implementar la ilusión.
 
 ### Eficiencia
 ---
-El [[Sistema operativo|sistema operativo]] debe esforzarse para hacer que la virtualización sea lo más eficiente posible en términos de tiempo, no haciendo que los [[Programa|programas]] corran más lentos, y espacio, no usando demasiada [[Memoria|memoria]] para las estructuras necesarios para soportar la virtualización.
+El [[Sistema operativo|sistema operativo]] debe esforzarse para hacer que la virtualización sea lo más eficiente posible en términos de tiempo, no haciendo que los [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programas]] corran más lentos, y espacio, no usando demasiada [[Memoria|memoria]] para las estructuras necesarios para soportar la virtualización.
 
 ### Protección
 ---

@@ -8,7 +8,7 @@ tags:
 ---
 # Definición
 ---
-Estas [[Estructura de control|estructuras de control]] permiten alterar el flujo normal del [[Programa|programa]] según se cumpla o no una determinada condición. El resultado de la evaluación de esta expresión puede ser true o false
+Estas [[Estructura de control|estructuras de control]] permiten alterar el flujo normal del [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] según se cumpla o no una determinada condición. El resultado de la evaluación de esta expresión puede ser true o false
 
 * [[If statement|Sentencia If]] ![[If statement#^48542e]]
 * [[If else statement|Setencia if else]] ![[If else statement#^e913a3]]

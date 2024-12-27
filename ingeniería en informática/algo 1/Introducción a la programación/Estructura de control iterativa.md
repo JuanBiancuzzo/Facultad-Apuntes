@@ -8,7 +8,7 @@ tags:
 ---
 # Definición
 ---
-Estas [[Estructura de control|estructuras de control]] permiten alterar el flujo normal del [[Programa|programa]] repitiendo un [[Bloque de acción|bloque de acción]]
+Estas [[Estructura de control|estructuras de control]] permiten alterar el flujo normal del [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] repitiendo un [[Bloque de acción|bloque de acción]]
 
 * [[While statement|Sentencia while]] ![[While statement#^b1e802]]
 * [[Do while statement|Sentencia do while]] ![[Do while statement#^35ff4d]]

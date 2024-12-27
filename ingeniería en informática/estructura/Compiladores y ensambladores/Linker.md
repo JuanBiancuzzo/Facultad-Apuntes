@@ -17,4 +17,4 @@ El linker combina módulos que fueron ensamblados de forma separada
 
 ## Link-Editor
 ---
-Produce una versión linkeada del [[Programa|programa]]
+Produce una versión linkeada del [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]]

@@ -9,4 +9,4 @@ tags:
 ---
 # Definición
 ---
-Conjunto de reglas que el [[Programa|programa]] que transmite los datos debe cumplir, para que [[Internet|internet]] pueda entregar esos datos al programa destino
+Conjunto de reglas que el [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] que transmite los datos debe cumplir, para que [[Internet|internet]] pueda entregar esos datos al programa destino

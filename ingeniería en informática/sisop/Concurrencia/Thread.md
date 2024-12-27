@@ -41,7 +41,7 @@ Tenemos varios casos de comparación
 1. Un thread por proceso
 	* Un proceso con una única secuencia de instrucciones ejecutándose de inicio a fin. Esto es equivalente a un bloque de instrucción delimitado por `{` y `}`. Lo que todos los programadores de [[Modelo secuencial|modelo secuencial]] conocemos
 2. Muchos thread por proceso
-	* Un [[Programa|programa]] es visto como thread ejecutándose dentro de un proceso con derechos restringidos. En dado un $t_i$ algunos threads pueden estar corriendo y otros estar suspendidos. 
+	* Un [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] es visto como thread ejecutándose dentro de un proceso con derechos restringidos. En dado un $t_i$ algunos threads pueden estar corriendo y otros estar suspendidos. 
 	  Cuando se detecta por ejemplo una operación de I/O por alguna [[Interrupción|interrupción]], el [[Kernel|Kernel]] desaloja ([[Preempt|preempt]]) a algunos de los threads que están corriendo, atiende la interrupción y al terminar de manejar la interrupción vuelve a correr el thread nuevamente.
 3. Muchos proceso con un solo thread cada uno
 	* Limitación de algunos [[Sistema operativo|sistemas operativos]] que permitían varios procesos, pero cada uno con un único thread, lo que implica que puede haber varios thread ejecutándose en [[Kernel mode|kernel mode]]

@@ -7,7 +7,7 @@ tags:
 ---
 # Definición
 ---
-Las tablas se refiere al tipo de modelado de datos donde se guardan los datos recogidos por un [[Programa|programa]]. Su estructura general se asemeja a la vista general de un programa de tablas
+Las tablas se refiere al tipo de modelado de datos donde se guardan los datos recogidos por un [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]]. Su estructura general se asemeja a la vista general de un programa de tablas
 
 Las tablas hacen referencia a objetos de una [[Base de datos relacionales|base de datos]] que contienen todos los datos de la misma
 

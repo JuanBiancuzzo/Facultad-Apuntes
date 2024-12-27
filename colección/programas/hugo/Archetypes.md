@@ -12,7 +12,7 @@ tags:
 ```
 # Definición
 ---
-Los archetypes son una plantilla que usa [[investig[[programas/hugo/Índice|Índice]]ento de crear un nuevo [[Single Page|archivo]] creado por el usuario. Si se llama `default.md`, este va a ser la plantilla que se usará para cualquier archivo si ningún otro archetype aplica. Si se quiere generar un especifico a un directorio, entonces su nombre debe ser el del directorio.
+Los archetypes son una plantilla que usa [[investig[[colección/programas/hugo/Índice|Índice]]ento de crear un nuevo [[Single Page|archivo]] creado por el usuario. Si se llama `default.md`, este va a ser la plantilla que se usará para cualquier archivo si ningún otro archetype aplica. Si se quiere generar un especifico a un directorio, entonces su nombre debe ser el del directorio.
 
 
 

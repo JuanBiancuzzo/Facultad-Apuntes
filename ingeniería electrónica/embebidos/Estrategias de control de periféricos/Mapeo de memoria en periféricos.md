@@ -14,7 +14,7 @@ aliases:
 ---
 Los periféricos STM MCU se controlan y los datos se transfieren utilizando direcciones dentro de un rango de $32$ bits
 
-Esto se conoce como [[Virtualización de memoria|mapeo de memoria]], porque desde la perspectiva del [[Programa|programa]] no hay diferencia si se comunica con una ubicación de [[Memoria|memoria]] o con un [[Registro|registro]] periférico
+Esto se conoce como [[Virtualización de memoria|mapeo de memoria]], porque desde la perspectiva del [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] no hay diferencia si se comunica con una ubicación de [[Memoria|memoria]] o con un [[Registro|registro]] periférico
 
 ![[Mapeo de memoria en periféricos.png|500]]
 

@@ -14,7 +14,7 @@ Los comentarios en el código es una forma de transmitir información que el [[C
 
 ## En C
 ---
-Los caracteres `/*` se emplean para iniciar un comentario introducido entre el código del [[Programa|programa]] y se lo termina con los caracteres `*/`
+Los caracteres `/*` se emplean para iniciar un comentario introducido entre el código del [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] y se lo termina con los caracteres `*/`
 
 ```c
 int i = 0; /* Todo esto

@@ -12,7 +12,7 @@ tags:
 
 "Un proceso es la ejecución de un programa de aplicación con derechos restringidos; el proceso es la abstracción que provee el [[Kernel|kernel]] del [[Sistema operativo|sistema operativo]] para la ejecución protegida"
 
-"Es simplemente un [[Programa|programa]] que se está ejecutando en un instante dado"
+"Es simplemente un [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] que se está ejecutando en un instante dado"
 
 ## Un proceso incluye
 ---

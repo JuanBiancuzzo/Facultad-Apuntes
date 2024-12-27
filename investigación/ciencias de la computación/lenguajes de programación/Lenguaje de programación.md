@@ -21,9 +21,9 @@ Vamos a aprender varios lenguajes de programación, y acá es donde lo vamos a e
 #ingeniería-en-informática/algo-1/Introducción-a-la-programación #ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración #ingeniería-electrónica/algo-1/Introducción-a-la-programación 
 Para poder entenderse con una máquina electrónica es necesario hablar su idioma, en este caso, habría que mandarle impulsos eléctricos. La forma más sencilla que tiene una máquina de entenderse este tipo de [[Señal|señales]] sería mediante binario. 
 
-Esta forma de comunicarse no es sencilla, por eso se decidió crear un lenguaje intermedio que pudiera ser fácilmente recordado por una persona y que sería procesado por otro [[Programa|programa]] para transformarlo en binario. 
+Esta forma de comunicarse no es sencilla, por eso se decidió crear un lenguaje intermedio que pudiera ser fácilmente recordado por una persona y que sería procesado por otro [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] para transformarlo en binario. 
 
-El primer lenguaje se llama [[Lenguaje assembler|assembly language]]. Si bien el lenguaje aportaba una mejora y facilitaba la creación de [[Programa|programas]] todavía era tediosa y muy difícil, ya que realizar operaciones insumían un gran número de instrucciones en el lenguaje assembly. Por ello se avanzó con la idea de crear otros lenguajes en los cuales realizar ciertas acciones sea mucho menos complejo
+El primer lenguaje se llama [[Lenguaje assembler|assembly language]]. Si bien el lenguaje aportaba una mejora y facilitaba la creación de [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programas]] todavía era tediosa y muy difícil, ya que realizar operaciones insumían un gran número de instrucciones en el lenguaje assembly. Por ello se avanzó con la idea de crear otros lenguajes en los cuales realizar ciertas acciones sea mucho menos complejo
 
 ### Lenguaje de bajo nivel
 ---

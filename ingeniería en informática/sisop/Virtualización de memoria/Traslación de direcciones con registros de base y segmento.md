@@ -14,7 +14,7 @@ Donde la idea es usar dos [[Registro|registros]] de [[Hardware|hardware]] dentro
 
 Este par base-limite va a permitir que el address space pueda ser ubicado en cualquier lugar deseado de la [[Memoria|memoria]] física, y se hará mientras el [[Sistema operativo|sistema operativo]] se asegura que el [[Proceso|proceso]] solo pueda acceder a su [[Espacio de direcciones|address space]]
 
-En esta configuración, cada [[Programa|programa]] es escrito y [[Compilador#Fase de compilación|compilado]] como si fuera cargado en la dirección física 0. A su vez cuando se inicia la ejecución del programa el OS decide en que lugar va a carga el mismo y para hacerlo setea el registro base en un determinado valor. 
+En esta configuración, cada [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] es escrito y [[Compilador#Fase de compilación|compilado]] como si fuera cargado en la dirección física 0. A su vez cuando se inicia la ejecución del programa el OS decide en que lugar va a carga el mismo y para hacerlo setea el registro base en un determinado valor. 
 
 ![[Traslación de direcciones con registros de base y segmento.webp]]
 

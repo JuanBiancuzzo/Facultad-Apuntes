@@ -29,7 +29,7 @@ Para que sea útil, la búsqueda de la TLB necesita ser mucho más rápido que r
 ---
 Cada vez que se introduce un [[ingeniería en informática/sisop/Scheduling/Cache|cache]] en el [[Sistema|sistema]], se necesita considerar la forma de asegurar la consistencia del cache con los datos originales cuando las entradas en el mismo son modificadas. 
 
-Para una ejecución correcta y [[Protección de memoria|segura]] de un [[Programa|programa]], el [[Sistema operativo|sistema operativo]] tiene que asegurarse que cada programa ve su propia [[Memoria|memoria]] y la de nadie más. Existen tres puntos a considerar
+Para una ejecución correcta y [[Protección de memoria|segura]] de un [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]], el [[Sistema operativo|sistema operativo]] tiene que asegurarse que cada programa ve su propia [[Memoria|memoria]] y la de nadie más. Existen tres puntos a considerar
 
 ### [[Políticas de planificación|Context switch]]
 ---

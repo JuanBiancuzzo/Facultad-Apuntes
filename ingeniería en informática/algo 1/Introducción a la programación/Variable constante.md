@@ -37,4 +37,4 @@ Donde el `u16` es el [[Tipo de dato|tipo de dato]]. Notemos que por convención 
 
 Para la constante es necesario aclarar el tipo de dato. También una propiedad que no lo tienen las [[Variable#En Rust|variables inmutables]] y las [[Variable#En Rust|variables mutables]] es que estas pueden ser declaradas en cualquier [[Bloque de acción|scope]], incluso en el global
 
-Las constantes son validas por la duración del [[Programa|programa]], o como mínimo el scope en el que fueron declarados
+Las constantes son validas por la duración del [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]], o como mínimo el scope en el que fueron declarados

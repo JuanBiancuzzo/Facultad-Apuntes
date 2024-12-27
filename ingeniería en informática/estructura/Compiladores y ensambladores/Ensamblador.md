@@ -14,7 +14,7 @@ Es mucho más simple, ya que a cada [[Lenguaje assembler|instrucción de Assembl
 
 También se ocupa de la representación simbólica para direcciones y constantes, También nos permite definir la ubicación del código. Además, provee cierto grado de aritmética en tiempo de ensamblado. Puedo utilizar variables declaradas en otros módulos y declarar macros
 
-Muchas de las funciones del ensamblador se realizan a partir de las directivas del ensamblador. Indican al ensamblador como procesar una sección del [[Programa|programa]], son específicas del programa ensamblador
+Muchas de las funciones del ensamblador se realizan a partir de las directivas del ensamblador. Indican al ensamblador como procesar una sección del [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]], son específicas del programa ensamblador
 
 Algunas de estas directivas generan información en [[Memoria|memoria]]
 

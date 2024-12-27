@@ -22,7 +22,7 @@ La [[Dirección de memoria virtual|virtual address]] tiene dos componentes
 
 El número de la página virtual es el índice en la page table para obtener el page frame en la [[Memoria|memoria]] física. La [[Dirección de memoria|dirección]] física está compuesta por The Physical Frame Page que se obtiene de la page table concatenando con el offset de la página que se obtiene de la virtual address. El [[Sistema operativo|sistema operativo]] maneja los accesos a la memoria.
 
-Una de las cosas que pueden parecer raras sobre la paginación es que si bien el [[Programa|programa]] cree que su memoria es lineal, de hecho, su memoria está desparramada por toda la memoria física como si fuera un mosaico.
+Una de las cosas que pueden parecer raras sobre la paginación es que si bien el [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] cree que su memoria es lineal, de hecho, su memoria está desparramada por toda la memoria física como si fuera un mosaico.
 
 El [[Procesador|procesador]] va a ejecutar una instrucción después de otra usando direcciones virtuales y esas direcciones virtuales son lineales. Si bien la instrucción ubicada en el final de una página podría estar ubicada en una región completamente diferente de la memoria física de la próxima instrucción que debe empezar en la siguiente página.
 

@@ -16,7 +16,7 @@ Vamos a investigar como funciona y que elementos son importantes en un kernel
 
 ## Resumen
 ---
-Viendo al sistema como un conjunto de capas, el [[Sistema operativo|sistema operativo]] se denomina comúnmente kernel del sistema, o simplemente kernel, lo que enfatiza su aislamiento de los [[Programa|programas]] de los usuarios. A pesar de esto, el kernel también es un programa.
+Viendo al sistema como un conjunto de capas, el [[Sistema operativo|sistema operativo]] se denomina comúnmente kernel del sistema, o simplemente kernel, lo que enfatiza su aislamiento de los [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programas]] de los usuarios. A pesar de esto, el kernel también es un programa.
 
 Gracias a la existencia del kernel los programas son independientes del [[Hardware]] subyacente, es fácil moverlos entre sistemas [[Unix]] que se ejecutan en hardware diferentes dado que los programas no hacen suposiciones sobre el hardware subyacente, sino que se comunican con el kernel y no con el hardware directamente
 
@@ -130,7 +130,7 @@ De hecho estas tres formas representan
 ---
 Así como hay varias formas de pasar de modo usuario a modo kernel, también hay varias formas de pasar de modo kernel a modo usuario
 * Un [[Proceso#API's|nuevo proceso]]
-	* Cuando se inicia un nuevo [[Proceso]] el [[Kernel]] copia el [[Programa]] en la [[Memoria|memoria]], setea el contador del programa apuntando a la primera instrucción del proceso setea el [[ingeniería en informática/sisop/Virtualización de memoria/Stack|stack]] pointer a la base del stack de usuario y switchea a modo usuario
+	* Cuando se inicia un nuevo [[Proceso]] el [[Kernel]] copia el [[ingeniería en informática/sisop/La abstracción de proceso/Programa]] en la [[Memoria|memoria]], setea el contador del programa apuntando a la primera instrucción del proceso setea el [[ingeniería en informática/sisop/Virtualización de memoria/Stack|stack]] pointer a la base del stack de usuario y switchea a modo usuario
 * Continuar después de una [[Interrupción|interrupción]], una [[Excepción del procesador|excepción del procesador]] o de una [[investigación/ciencias de la computación/lenguajes de programación/lenguaje c/System call/System call|system call]]
 	* Una vez que el kernel termino de manejar el pedido, este continua con la ejecución de procesos interrumpidos mediante la restauración de todos los [[Registro|registros]] y cambiando el modo a nivel usuario
 * Cambio entre diferentes procesos
