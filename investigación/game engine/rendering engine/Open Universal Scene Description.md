@@ -1,20 +1,17 @@
 ---
-dia: 2024-07-12
+dia: 2024-08-26
 etapa: sin-empezar
-referencias:
-  - "148"
+referencias: 
 tags:
   - nota/investigacion
-  - investigación/machine-Learning/Red-Neuronal
-  - investigación/ciencias-de-la-computación/Machine-learning/red-Neuronal
-  - investigación/matemática/Estadística/Machine-learning/red-Neuronal
+  - investigación/game-engine/rendering-engine
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
-
+Vamos a investigar la forma de representar de forma estandarizada una escena en distintos softwares, basándonos en la documentación en [openUSD](https://openusd.org/release/index.html)
 
 
 

@@ -5,7 +5,7 @@ referencias:
   - "147"
 tags:
   - nota/investigacion
-  - investigación/machine-Learning/red-Neuronal
+  - investigación/machine-Learning/Red-Neuronal
   - investigación/ciencias-de-la-computación/Machine-learning/red-Neuronal
   - investigación/matemática/Estadística/Machine-learning/red-Neuronal
   - investigación/ciencias-de-la-computación/algoritmos
