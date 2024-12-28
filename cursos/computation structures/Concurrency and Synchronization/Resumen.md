@@ -9,6 +9,7 @@ tags:
   - resumen/curso
   - referencia/cursotema
   - cursos/computation-structures/Concurrency-and-Synchronization
+curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
 ---
 # Índice
 ---

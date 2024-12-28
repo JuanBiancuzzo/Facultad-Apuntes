@@ -9,6 +9,7 @@ tags:
   - resumen/curso
   - referencia/cursotema
   - cursos/computation-structures/Building-the-Beta
+curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
 ---
 # Índice
 ---

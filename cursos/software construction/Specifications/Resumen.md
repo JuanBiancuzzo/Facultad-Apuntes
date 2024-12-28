@@ -10,6 +10,7 @@ tags:
   - resumen/curso
   - referencia/cursotema
   - cursos/software-construction/Specifications
+curso: "[[cursos/software construction/Software Construction|Software Construction]]"
 ---
 # Índice
 ---

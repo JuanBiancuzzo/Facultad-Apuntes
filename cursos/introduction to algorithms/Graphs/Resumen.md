@@ -11,6 +11,7 @@ tags:
   - resumen/curso
   - referencia/cursotema
   - cursos/introduction-to-algorithms/Hashing
+curso: "[[cursos/introduction to algorithms/Introduction to Algorithms|Introduction to Algorithms]]"
 ---
 # Índice
 ---

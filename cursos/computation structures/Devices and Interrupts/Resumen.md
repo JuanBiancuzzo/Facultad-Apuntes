@@ -9,6 +9,7 @@ tags:
   - resumen/curso
   - referencia/cursotema
   - cursos/computation-structures/Devices-and-Interrupts
+curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
 ---
 # Índice
 ---

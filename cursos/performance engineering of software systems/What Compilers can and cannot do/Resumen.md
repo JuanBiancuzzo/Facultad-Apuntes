@@ -10,6 +10,7 @@ tags:
   - resumen/curso
   - referencia/cursotema
   - cursos/performance-engineering-of-software-systems/What-Compilers-can-and-cannot-do
+curso: "[[cursos/performance engineering of software systems/Performance Engineering of Software Systems|Performance Engineering of Software Systems]]"
 ---
 # Índice
 ---

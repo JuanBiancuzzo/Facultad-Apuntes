@@ -5,11 +5,12 @@ numReferencia: 695
 parte: 0
 profesores:
   - 0
+curso: "[[cursos/cs50's introduction to cybersecurity/CS50's Introduction to Cybersecurity|CS50's Introduction to Cybersecurity]]"
+tipoCita: CursoTema
 tags:
   - resumen/curso
   - cursos/cs50s-introduction-to-cybersecurity/Securing-Accounts
   - referencia/cursotema
-tipoCita: CursoTema
 ---
 # Índice
 ---
