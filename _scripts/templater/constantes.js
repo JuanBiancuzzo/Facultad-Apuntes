@@ -22,4 +22,30 @@ module.exports = () => ({
             curso: "curso",
         }
     },
+    DIRECTORIOS: {
+        investigacion: "investigación",
+        curso: "cursos",
+        proyectoPractico: "proyecto práctico",
+        proyectoInvestigacion: "proyecto investigación",
+        GDD: "game design documents",
+        coleccion: {
+            self: "colección",
+            componentes: "componentes",
+            dataStructures: "data structures",
+            distribuciones: "distribuciones",
+            documentos: "documentos",
+            funciones: "funciones",
+            libros: "libros",
+            papers: "papers",
+            programas: "programas",
+            recetas: "recetas",
+        },
+        carrera: {
+            informatica: "ingeniería en informática",
+            electronica: "ingeniería electrónica",
+            datos: "licenciatura en ciencia de datos",
+            fisica: "licenciatura en ciencias físicas",
+            matematica: "licenciatura en ciencias matemáticas",
+        },
+    },
 });
