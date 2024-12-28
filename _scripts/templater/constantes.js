@@ -8,6 +8,7 @@ module.exports = () => ({
         resumen: "resumen",
         curso: "curso",
         coleccion: "colección",
+        referencias: "referencia",
         proyecto: {
             self: "proyecto",
             investigacion: "investigación",
@@ -23,6 +24,7 @@ module.exports = () => ({
         }
     },
     DIRECTORIOS: {
+        referencias: "_referencias",
         investigacion: "investigación",
         curso: "cursos",
         proyectoPractico: "proyecto práctico",
@@ -48,4 +50,18 @@ module.exports = () => ({
             matematica: "licenciatura en ciencias matemáticas",
         },
     },
+    REFERENCIAS: {
+        libro: "Libro",
+        capituloLibro: "CapituloLibro",
+        curso: "Curso",
+        temaCurso: "TemaCurso",
+        paper: "Paper",
+        youtube: "Youtube",
+        web: "Web",
+        wikipedia: "Wikipedia",
+    },
+    DATOS_REFERENCIA: {
+        numReferencia: "numReferencia",
+        tipoCita: "tipoCita",
+    }
 });

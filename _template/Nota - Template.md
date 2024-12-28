@@ -1,5 +1,5 @@
 <%*
-    const { DIRECTORIOS, TAGS } = tp.user.constantes().DIRECTORIOS;
+    const DIRECTORIOS = tp.user.constantes().DIRECTORIOS;
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
 
