@@ -11,21 +11,18 @@ async function generar(tp) {
             error.Prompt("No se ingresó lo que se quiere citar")
         );
 
-        let nombre = "Untitle", directorio, template;
+        let nombre = "Untitle", directorio;
         
         switch (tipoCita) {
             case REFERENCIAS.libro:
-                template = "Libro - Template";
                 directorio = `${DIRECTORIOS.coleccion.self}/${DIRECTORIOS.coleccion.libros}`;
                 break;
 
             case REFERENCIAS.curso:
-                template = "";
                 directorio = DIRECTORIOS.curso;
                 break;
 
             case REFERENCIAS.paper:
-                template = "Paper - Template"
                 directorio = `${DIRECTORIOS.coleccion.self}/${DIRECTORIOS.coleccion.papers}`;
                 break;
 
@@ -33,7 +30,6 @@ async function generar(tp) {
             case REFERENCIAS.web:
             case REFERENCIAS.wikipedia:
                 nombre = tipoCita;
-                template = "Referencia simple - Template";
                 directorio = DIRECTORIOS.referencias;
                 break;
 
@@ -41,16 +37,15 @@ async function generar(tp) {
                 throw error.Prompt("No se puede referenciar eso");
         }
 
-        if (!nombre || !directorio || !template) {
+        if (!nombre || !directorio) {
             let mensaje = "Hubo un error en la creación de una referencia\n";
             mensaje += `Nombre: ${nombre ? "Valido" : "Invalido"}\n`;
             mensaje += `Directorio: ${directorio ? "Valido" : "Invalido"}\n`;
-            mensaje += `Template: ${template ? "Valido" : "Invalido"}\n`;
 
             throw error.Prompt(mensaje);
         }
 
-        template = tp.file.find_tfile(template);
+        let template = tp.file.find_tfile("Nota - Template");
         directorio = app.vault.getAbstractFileByPath(directorio);
 
         return await tp.file.create_new(template, nombre, false, directorio);
@@ -90,7 +85,6 @@ function obtenerReferencias(tp) {
 
     return dv.pages(`#${TAGS.referencias}`)
         .flatMap(archivo => {
-            if (!archivo[DATOS_REFERENCIA.tipoCita]) console.log(archivo);
             let referencia = obtenerReferencia(tp, archivo[DATOS_REFERENCIA.tipoCita]);
 
             let datos = referencia.obtenerDefault();

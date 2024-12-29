@@ -16,7 +16,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
 
     switch (respuesta) {
         case NOMBRE_VIDEO:
-            datos[NOMBRE_VIDEO] = await preguntar.simple(
+            datos[NOMBRE_VIDEO] = await preguntar.prompt(
                 tp, datos[NOMBRE_VIDEO] 
                     ? `Nuevo nombre del video, donde antes era ${datos[NOMBRE_VIDEO]}` 
                     : "Nombre del video",
@@ -25,7 +25,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             break;
 
         case NOMBRE_CANAL:
-            datos[NOMBRE_CANAL] = await preguntar.simple(
+            datos[NOMBRE_CANAL] = await preguntar.prompt(
                 tp, datos[NOMBRE_CANAL] 
                     ? `Nuevo nombre del canal, donde antes era ${datos[NOMBRE_CANAL]}` 
                     : "Nombre del canal",
@@ -43,7 +43,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             );
             break;
         case URL:
-            datos[URL] = await preguntar.simple(
+            datos[URL] = await preguntar.prompt(
                 tp, datos[URL] 
                     ? `Nuevo URL del video, donde antes era ${datos[URL]}` 
                     : "URL del video",
@@ -71,9 +71,9 @@ function generarPreguntas(tp, datos) {
         : " ⊕ Nombre del video"
     );
 
-    opciones.push(NOMBRE_VIDEO);
-    valores.push(datos[NOMBRE_VIDEO]
-        ? `️ ️✏️ Modificar el nombre del canal del video, donde era ${datos[NOMBRE_VIDEO]}`
+    opciones.push(NOMBRE_CANAL);
+    valores.push(datos[NOMBRE_CANAL]
+        ? `️ ️✏️ Modificar el nombre del canal del video, donde era ${datos[NOMBRE_CANAL]}`
         : " ⊕ Nombre del canal del video"
     );
 

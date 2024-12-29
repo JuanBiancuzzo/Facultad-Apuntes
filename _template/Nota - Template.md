@@ -12,12 +12,17 @@
 		return;
 	}
 
-    let path = `${tPadre.path}/${tArchivo.basename}`.split();
+    let path = `${tPadre.path}/${tArchivo.basename}`.split("/");
     let directorioBase = path.at(0);
 
     let opciones = [], valores = [];
 
     switch (directorioBase) {
+        case DIRECTORIOS.referencias: 
+            opciones.push("Ingresar referencia");
+            valores.push("Referencia simple - Template");
+            break;
+
         case DIRECTORIOS.investigacion: 
             opciones.push("Ingresar nota de investigación");
             valores.push("Nota investigacion - Template");
@@ -105,6 +110,7 @@
     }
 
     try {
+        console.log(opciones, valores);
 
         if (opciones.length > 0) {
             let template = valores.first();
