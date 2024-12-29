@@ -255,7 +255,7 @@ function generarPreguntas(tp, datos) {
         let representacion = tp.user.capituloLibro().describir(tp, capitulo);
 
         opciones.push(`${MODIFICAR_CAPITULO}-${indice}`);
-        valores.push(`️ ️✏️ Modificar el capitulo ${representacion}`);
+        valores.push(`️ ️✏️ Modificar el ${representacion}`);
     }
 
     let cantidadCapitulos = datos[CAPITULOS].length;
@@ -265,7 +265,7 @@ function generarPreguntas(tp, datos) {
         let representacion = tp.user.capituloLibro().describir(tp, ultimoCapitulo);
 
         opciones.push(ELIMINAR_CAPITULO);
-        valores.push(` ⊖ Eliminar capitulo ${representacion}`);
+        valores.push(` ⊖ Eliminar ${representacion}`);
     }
 
     opciones.push(CAPITULOS);
@@ -280,7 +280,7 @@ function generarPreguntas(tp, datos) {
 
 }
 
-function describir(datos) {
+function describir(tp, datos) {
     let autores = [];
     for (let { nombre, apellido } of datos[NOMBRE_AUTORES]) {
         autores.push(`${nombre} ${apellido}`);

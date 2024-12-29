@@ -54,7 +54,7 @@ module.exports = () => ({
         libro: "Libro",
         capituloLibro: "CapituloLibro",
         curso: "Curso",
-        temaCurso: "TemaCurso",
+        temaCurso: "CursoTema",
         paper: "Paper",
         youtube: "Youtube",
         web: "Web",
@@ -63,5 +63,17 @@ module.exports = () => ({
     DATOS_REFERENCIA: {
         numReferencia: "numReferencia",
         tipoCita: "tipoCita",
+    },
+    DATOS_ARCHIVOS: {
+        referencias: "referencias",
+        etapa: "etapa",
+        tags: "tags",
+        dia: "dia",
+    },
+    ETAPAS: {
+        sinEmpezar: "sin-empezar",
+        empezado: "empezado",
+        ampliar: "ampliar",
+        terminado: "terminado",
     }
 });

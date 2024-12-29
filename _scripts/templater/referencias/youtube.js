@@ -97,7 +97,7 @@ function generarPreguntas(tp, datos) {
     return { opciones: opciones, valores: valores };
 }
 
-function describir(datos) {
+function describir(tp, datos) {
     return `${datos[NOMBRE_VIDEO]} de ${datos[NOMBRE_CANAL]}`;
 }
 

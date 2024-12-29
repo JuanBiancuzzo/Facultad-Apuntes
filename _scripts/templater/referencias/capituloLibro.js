@@ -149,10 +149,15 @@ function generarPreguntas(tp, datos) {
     return { opciones: opciones, valores: valores };
 }
 
-function describir(datos) {
-    let textoCapitulo = datos[NUMERO_CAPITULO];
+function describir(tp, datos) {
+    const REFERENCIAS = tp.user.constantes().REFERENCIAS;
+
+    let textoCapitulo = `Capítulo ${datos[NUMERO_CAPITULO]}`;
     if (datos[NOMBRE_CAPITULO]) textoCapitulo += `: ${datos[NOMBRE_CAPITULO]}`;
     if (datos[PAGINAS]) textoCapitulo += ` p. ${datos[PAGINAS].inicio}-${datos[PAGINAS].final}`;
+
+    let libro = datos[REFERENCIAS.libro];
+    textoCapitulo += ` de ${tp.user.libro().describir(tp, libro)}`;
 
     return textoCapitulo;
 }

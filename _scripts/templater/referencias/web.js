@@ -156,7 +156,7 @@ function generarPreguntas(tp, datos) {
     return { opciones: opciones, valores: valores };
 }
 
-function describir(datos) {
+function describir(tp, datos) {
     let autores = [];
     for (let { nombre, apellido } of datos[NOMBRE_AUTORES]) {
         autores.push(`${apellido}, ${nombre[0]}.`);

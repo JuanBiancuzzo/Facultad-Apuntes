@@ -4,7 +4,7 @@ async function generar(tp) {
     const error = tp.user.error();
 
     try {
-        let tipoCita = await preguntar.suggerster(
+        let tipoCita = await preguntar.suggester(
             tp, ["Citar libro", "Citar curso online", "Citar un paper", "Citar un video de Youtube", "Citar una pagína web", "Citar una página de wikipedia"],
             [ REFERENCIAS.libro, REFERENCIAS.curso, REFERENCIAS.paper, REFERENCIAS.youtube, REFERENCIAS.web, REFERENCIAS.wikipedia ],
             "Que se va a querer referenciar?",
@@ -33,7 +33,7 @@ async function generar(tp) {
             case REFERENCIAS.web:
             case REFERENCIAS.wikipedia:
                 nombre = tipoCita;
-                template = "Referencia - Template";
+                template = "Referencia simple - Template";
                 directorio = DIRECTORIOS.referencias;
                 break;
 
@@ -69,6 +69,7 @@ function obtenerReferencia(tp, tipoCita) {
     let referencia;
     switch (tipoCita) {
         case REFERENCIAS.libro: referencia = tp.user.libro(); break;
+        case REFERENCIAS.capituloLibro: referencia = tp.user.capituloLibro(); break;
         case REFERENCIAS.curso: referencia = tp.user.curso(); break;
         case REFERENCIAS.temaCurso: referencia = tp.user.temaCurso(); break;
         case REFERENCIAS.paper: referencia = tp.user.paper(); break;
@@ -89,6 +90,7 @@ function obtenerReferencias(tp) {
 
     return dv.pages(`#${TAGS.referencias}`)
         .flatMap(archivo => {
+            if (!archivo[DATOS_REFERENCIA.tipoCita]) console.log(archivo);
             let referencia = obtenerReferencia(tp, archivo[DATOS_REFERENCIA.tipoCita]);
 
             let datos = referencia.obtenerDefault();
@@ -100,7 +102,7 @@ function obtenerReferencias(tp) {
             datos[DATOS_REFERENCIA.tipoCita] = archivo[DATOS_REFERENCIA.tipoCita];
             datos[DATOS_REFERENCIA.numReferencia] = archivo[DATOS_REFERENCIA.numReferencia];
 
-            let resultado = [];
+            let resultado = [ datos ];
             switch (archivo.tipoCita) {
                 case REFERENCIAS.libro:
                     if (!datos.capitulos || datos.capitulos.length == 0) 
@@ -112,9 +114,6 @@ function obtenerReferencias(tp) {
                         resultado.push(capitulo);
                     }
                     break;
-
-                default:
-                    resultado.push(datos);
             }
             
             return resultado;
@@ -124,7 +123,7 @@ function obtenerReferencias(tp) {
 function describir(tp, datos) {
     let DATOS_REFERENCIA = tp.user.constantes().DATOS_REFERENCIA;
     let referencia = obtenerReferencia(tp, datos[DATOS_REFERENCIA.tipoCita]);
-    return `[${datos[DATOS_REFERENCIA.numReferencia]}] ${referencia.describir(datos)}`;
+    return `[${datos[DATOS_REFERENCIA.numReferencia]}] ${referencia.describir(tp, datos)}`;
 }
 
 async function editar(tp, tipoCita, seguidorRef, datosActuales) {

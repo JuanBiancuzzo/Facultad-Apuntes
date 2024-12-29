@@ -23,7 +23,9 @@
   ],
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
-  "enabled_templates_hotkeys": [],
+  "enabled_templates_hotkeys": [
+    "_template/referencias/Referencia - Template.md"
+  ],
   "startup_templates": [],
   "enable_ribbon_icon": false
 }

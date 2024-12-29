@@ -231,7 +231,7 @@ function generarPreguntas(tp, datos, curso) {
     return { opciones: opciones, valores: valores };
 }
 
-function describir(datos) {
+function describir(tp, datos) {
     const dv = app.plugins.plugins.dataview.api;
     const curso = dv.page(datos[CURSO].path);
 

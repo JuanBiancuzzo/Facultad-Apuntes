@@ -79,7 +79,7 @@ function generarPreguntas(tp, datos) {
     return { opciones: opciones, valores: valores };
 }
 
-function describir(datos) {
+function describir(tp, datos) {
     return `Artículo de wikipedia: ${datos[NOMBRE_ARTICULO]}`;
 }
 
