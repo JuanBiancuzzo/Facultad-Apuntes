@@ -10,6 +10,7 @@ tags:
   - referencia/cursotema
   - cursos/computation-structures/Basics-of-Information
 curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
+tipoCita: CursoTema
 ---
 # Índice
 ---

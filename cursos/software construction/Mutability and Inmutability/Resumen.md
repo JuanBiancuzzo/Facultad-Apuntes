@@ -11,6 +11,7 @@ tags:
   - referencia/cursotema
   - cursos/software-construction/Mutability-and-Inmutability
 curso: "[[cursos/software construction/Software Construction|Software Construction]]"
+tipoCita: CursoTema
 ---
 # Índice
 ---

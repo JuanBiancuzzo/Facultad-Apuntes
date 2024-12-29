@@ -11,6 +11,7 @@ tags:
   - referencia/cursotema
   - cursos/software-construction/Abstraction-Functions-and-Rep-Invariants
 curso: "[[cursos/software construction/Software Construction|Software Construction]]"
+tipoCita: CursoTema
 ---
 # Índice
 ---

@@ -11,6 +11,7 @@ tags:
   - referencia/cursotema
   - cursos/software-construction/Team-Version-Control
 curso: "[[cursos/software construction/Software Construction|Software Construction]]"
+tipoCita: CursoTema
 ---
 # Índice
 ---

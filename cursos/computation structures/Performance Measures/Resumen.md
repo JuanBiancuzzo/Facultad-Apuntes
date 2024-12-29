@@ -10,6 +10,7 @@ tags:
   - referencia/cursotema
   - cursos/computation-structures/Performance-Measures
 curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
+tipoCita: CursoTema
 ---
 # Índice
 ---

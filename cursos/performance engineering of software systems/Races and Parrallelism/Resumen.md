@@ -11,6 +11,7 @@ tags:
   - referencia/cursotema
   - cursos/performance-engineering-of-software-systems/Races-and-Parrallelism
 curso: "[[cursos/performance engineering of software systems/Performance Engineering of Software Systems|Performance Engineering of Software Systems]]"
+tipoCita: CursoTema
 ---
 # Índice
 ---

@@ -11,6 +11,7 @@ tags:
   - referencia/cursotema
   - cursos/software-construction/Recursion
 curso: "[[cursos/software construction/Software Construction|Software Construction]]"
+tipoCita: CursoTema
 ---
 # Índice
 ---
