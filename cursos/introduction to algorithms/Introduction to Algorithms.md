@@ -14,7 +14,6 @@ url: https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/
 numReferencia: 695
 tipoCita: Curso
 tags:
-  - proyecto/curso
   - referencia/curso
   - cursos/introduction-to-algorithms
 ---

@@ -14,7 +14,6 @@ url: https://ocw.mit.edu/courses/6-172-performance-engineering-of-software-syste
 numReferencia: 758
 tipoCita: Curso
 tags:
-  - proyecto/curso
   - referencia/curso
   - cursos/performance-engineering-of-software-systems
 ---

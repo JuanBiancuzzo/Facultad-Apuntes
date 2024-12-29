@@ -14,7 +14,6 @@ url: https://ocw.mit.edu/courses/6-005-software-construction-spring-2016/
 numReferencia: 708
 tipoCita: Curso
 tags:
-  - proyecto/curso
   - referencia/curso
   - cursos/software-construction
 ---
