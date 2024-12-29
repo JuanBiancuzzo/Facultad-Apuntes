@@ -108,6 +108,7 @@ function obtenerReferencias(tp) {
 
                     for (let capitulo of datos.capitulos) {
                         capitulo[DATOS_REFERENCIA.tipoCita] = REFERENCIAS.capituloLibro;
+                        capitulo[REFERENCIAS.libro] = datos;
                         resultado.push(capitulo);
                     }
                     break;

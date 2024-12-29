@@ -6,7 +6,7 @@ module.exports = () => ({
         carrera: "carrera",
         materia: "materia",
         resumen: "resumen",
-        curso: "curso",
+        curso: "cursos",
         coleccion: "colección",
         referencias: "referencia",
         proyecto: {
