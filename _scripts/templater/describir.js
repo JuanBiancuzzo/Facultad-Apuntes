@@ -8,13 +8,11 @@ function describirLegalSeccion(seccion) {
 }
 
 function describirFecha(tp, fecha) {
-    const { MESES: infoMeses } = tp.user.constantes();
+    const { MESES: nombreMes } = tp.user.constantes();
     let [ anio, mes, dia ] = fecha.split("-").map(num => parseInt(num, 10));
     
     dia = (dia <= 3) ? ["1ro", "2do", "3ro"][dia - 1] : dia;
-    mes = infoMeses[mes - 1];
-
-    return `${dia} de ${mes} del ${anio}`;
+    return `${dia} de ${nombreMes(mes)} del ${anio}`;
 }
 
 module.exports = () => {

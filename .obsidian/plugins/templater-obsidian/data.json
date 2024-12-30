@@ -13,7 +13,12 @@
   "shell_path": "",
   "user_scripts_folder": "_scripts/templater",
   "enable_folder_templates": true,
-  "folder_templates": [],
+  "folder_templates": [
+    {
+      "folder": "/",
+      "template": "_template/Nota - Template.md"
+    }
+  ],
   "enable_file_templates": false,
   "file_templates": [
     {
@@ -26,6 +31,8 @@
   "enabled_templates_hotkeys": [
     "_template/referencias/Referencia - Template.md"
   ],
-  "startup_templates": [],
+  "startup_templates": [
+    "_template/startup.md"
+  ],
   "enable_ribbon_icon": false
 }

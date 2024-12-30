@@ -48,11 +48,11 @@
             valores.push("Nota proyecto - Template");
             break;
 
-        case DIRECTORIOS.informatica: 
-        case DIRECTORIOS.electronica: 
-        case DIRECTORIOS.datos: 
-        case DIRECTORIOS.fisica: 
-        case DIRECTORIOS.matematica: 
+        case DIRECTORIOS.carrera.informatica: 
+        case DIRECTORIOS.carrera.electronica: 
+        case DIRECTORIOS.carrera.datos: 
+        case DIRECTORIOS.carrera.fisica: 
+        case DIRECTORIOS.carrera.matematica: 
             opciones.push("Ingresar nota de materia");
             valores.push("Definicion - Template");
             break;
@@ -110,8 +110,6 @@
     }
 
     try {
-        console.log(opciones, valores);
-
         if (opciones.length > 0) {
             let template = valores.first();
             if (opciones.length > 1) {

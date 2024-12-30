@@ -1,6 +1,6 @@
 module.exports = () => ({
     CARACTERES_INVALIDOS: ['*', '"', '\\', '/', '<', '>', ':', '|', '?'],
-    MESES: [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" ],
+    MESES: (mes) => [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" ][mes - 1],
     TAGS: {
         investigacion: "índice",
         carrera: "carrera",
@@ -75,5 +75,13 @@ module.exports = () => ({
         empezado: "empezado",
         ampliar: "ampliar",
         terminado: "terminado",
-    }
+    },
+    NOMBRE_SECCIONES: {
+        facultad: "Facultad",
+        curso: "Curso",
+        investigacion: "Investigación",
+        proyectoPractico: "Proyecto Práctico",
+        proyectoInvestigacion: "Proyecto Investigación",
+        GDD: "GDD",
+    },
 });
