@@ -9,18 +9,19 @@ Cualquier corrección/ampliación de los contenidos en este proyecto, por favor 
 Un listado de materias y su estado dividido por carrera
 <%*
     const dv = app.plugins.plugins.dataview.api;
-    tR += dv.markdownList(dv.pages("#carrera")
+    const { TAGS } = tp.user.constantes();
+    tR += dv.markdownList(dv.pages(`#${TAGS.carrera}`)
         .map(carrera => {
             let path = carrera.file.path.replaceAll(" ", "%20");
             return `[${carrera.file.name}](${path})`;
         }));
 %>
 <%*
-    tR += dv.pages("#carrera")
+    tR += dv.pages(`#${TAGS.carrera}`)
         .sort(carrera => carrera.file.name)
         .map(carrera => {
-            let tag = carrera.tags.find(tag => tag.startsWith("carrera"))
-                .replace("carrera", "materia");
+            let tag = carrera.tags.find(tag => tag.startsWith(TAGS.carrera))
+                .replace(TAGS.carrera, TAGS.materia);
             const materias = dv.pages(`#${tag}`).sort(materia => materia.file.name);
             let titulos = ["Materia", "Estado"];
             if (carrera.tieneCodigo) titulos.splice(1, 0, "Código");
@@ -56,7 +57,7 @@ La intención en este repositorio es tener un lugar donde poder investigar sobre
 Para eso usaré obsidian, y pdfs, donde en obsidian todo sería archivos markdown para poder leerlo en cualquier editor. Cualquier cosa que vean que es incorrecta, ya seas la persona con tanto tiempo para estar leyendo esto, crea un issue para que pueda verlo.
 
 <%*
-    const indices = dv.pages("#índice")
+    const indices = dv.pages(`#${TAGS.investigacion}`)
         .filter(indice => {
             let carpeta = indice.file.folder;
             if (indice.equivalente) {
@@ -98,7 +99,7 @@ Un listado de los proyectos y su estado actual
 Estos proyectos tienen una aplicación como resultado final
 
 <%* 
-    let proyectos = dv.pages("#proyecto/práctico")
+    let proyectos = dv.pages(`#${TAGS.proyecto.self}/${TAGS.proyecto.practico}`)
         .sort(proyecto => proyecto.dia, direction="desc");
 
     tabla = dv.markdownTable(["Proyecto", "Estado"], proyectos.map(proyecto => {
@@ -116,7 +117,7 @@ _%>
 Estos proyectos tienen como objetivo investigar y crear pruebas para llegar a un resultado
 
 <%* 
-    proyectos = dv.pages("#proyecto/investigación")
+    proyectos = dv.pages(`#${TAGS.proyecto.self}/${TAGS.proyecto.investigacion}`)
         .sort(proyecto => proyecto.dia, direction="desc");
 
     tabla = dv.markdownTable(["Proyecto", "Estado"], proyectos.map(proyecto => {
@@ -134,7 +135,7 @@ _%>
 Estos proyectos tienen como objetivo crear un GDD y mostrar el desarrollo del juego
 
 <%* 
-    proyectos = dv.pages("#proyecto/juegos")
+    proyectos = dv.pages(`#${TAGS.proyecto.self}/${TAGS.proyecto.juego}`)
         .sort(proyecto => proyecto.dia, direction="desc");
 
     tR += dv.markdownTable(["Juego", "Estado"], proyectos.map(proyecto => {
@@ -150,7 +151,7 @@ _%>
 Estos son los cursos que vaya haciendo
 
 <%*
-    proyectos = dv.pages("#proyecto/curso")
+    proyectos = dv.pages(`#${TAGS.curso} and -#${TAGS.resumen} and -#${TAGS.nota.self}`)
         .sort(curso => curso.dia, direction="desc");
     
     tR += dv.markdownTable(["Curso", "Estado"], proyectos.map(curso => {
@@ -166,7 +167,7 @@ _%>
 Estos proyectos se basan en recolectar información distinto de un tema de investigación ya que este busca recolectar información con respecto a un tema, mientras que este es para tener información para temas en general
 
 <%* 
-    const colecciones = dv.pages("#colección")
+    const colecciones = dv.pages(`#${TAGS.coleccion}`)
         .sort(coleccion => coleccion.file.name);
 
     tabla = dv.markdownTable(["Colección", "Estado"], colecciones.map(coleccion => {

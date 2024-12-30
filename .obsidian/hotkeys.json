@@ -117,15 +117,6 @@
       "key": "N"
     }
   ],
-  "cmdr:macro-0": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "C"
-    }
-  ],
   "omnisearch:show-modal-infile": [
     {
       "modifiers": [
@@ -153,6 +144,15 @@
         "Mod"
       ],
       "key": "S"
+    }
+  ],
+  "cmdr:macro-0": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
     }
   ]
 }

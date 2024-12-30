@@ -119,7 +119,6 @@ Para eso usaré obsidian, y pdfs, donde en obsidian todo sería archivos markdow
 | [Game Engine](investigación/game%20engine/Game%20Engine.md)                                                                | Falta resumir                                                                                                     |
 | [Generación de energía](investigación/generación%20de%20energía/Generación%20de%20energía.md)                              | Sin empezar                                                                                                       |
 | [Generación procedural](investigación/generación%20procedural/Generación%20procedural.md)                                  | Falta resumir                                                                                                     |
-| [Herramienta](investigación/herramientas/Herramienta.md)                                                                   | Falta resumir                                                                                                     |
 | [Machine learning](investigación/machine%20Learning/Machine%20learning.md)                                                 | Falta resumir                                                                                                     |
 | [Matemática](investigación/matemática/Matemática.md)                                                                       | Falta resumir                                                                                                     |
 | [Mecánica](investigación/mecánica/Índice.md)                                                                               | Sin empezar                                                                                                       |
@@ -172,10 +171,10 @@ Estos son los cursos que vaya haciendo
 
 | Curso                                                                                                                                                                                    | Estado                              |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| [Computation Structures](cursos/computation%20structures/Computation%20Structures.md)                                                                                                    | Sin empezar                         |
-| [Performance Engineering of Software Systems](cursos/performance%20engineering%20of%20software%20systems/Performance%20Engineering%20of%20Software%20Systems.md)                         | Sin empezar                         |
 | [Software Construction](cursos/software%20construction/Software%20Construction.md)                                                                                                       | Sin empezar                         |
+| [Performance Engineering of Software Systems](cursos/performance%20engineering%20of%20software%20systems/Performance%20Engineering%20of%20Software%20Systems.md)                         | Sin empezar                         |
 | [Introduction to Algorithms](cursos/introduction%20to%20algorithms/Introduction%20to%20Algorithms.md)                                                                                    | Empezando el curso                  |
+| [Computation Structures](cursos/computation%20structures/Computation%20Structures.md)                                                                                                    | Sin empezar                         |
 | [CS50's Introduction to Cybersecurity](cursos/cs50's%20introduction%20to%20cybersecurity/CS50's%20Introduction%20to%20Cybersecurity.md)                                                  | Sin empezar                         |
 | [Ciencia de datos para salud mental y psicología](cursos/ciencia%20de%20datos%20para%20salud%20mental%20y%20psicología/Ciencia%20de%20datos%20para%20salud%20mental%20y%20psicología.md) | Falta ver los temas más en detalles |
 ### Colecciones
