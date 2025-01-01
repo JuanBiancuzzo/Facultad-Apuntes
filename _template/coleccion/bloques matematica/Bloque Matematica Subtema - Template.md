@@ -11,8 +11,6 @@
     if (subtemas.length > 0) {
         numero = subtemas.map(subtema => subtema[DATOS_BLOQUES_MATEMATICA.subtema.numero]).max() + 1;
     }
-    console.log(subtemas);
-    console.log(numero);
 
     tR += "---\n";
     tR += tp.obsidian.stringifyYaml({
