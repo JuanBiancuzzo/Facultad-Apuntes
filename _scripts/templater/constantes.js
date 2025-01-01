@@ -1,6 +1,10 @@
 module.exports = () => ({
     CARACTERES_INVALIDOS: ['*', '"', '\\', '/', '<', '>', ':', '|', '?'],
     MESES: (mes) => [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" ][mes - 1],
+    TEMPLATE: {
+        nota: "Nota - Template",
+        seccion: "Seccion - Template",
+    },
     TAGS: {
         investigacion: "índice",
         carrera: "carrera",
@@ -9,6 +13,11 @@ module.exports = () => ({
         curso: "cursos",
         coleccion: "colección",
         referencias: "referencia",
+        bloqueMatematica: {
+            self: "bloque-matematica",
+            tema: "tema",
+            subtema: "subtema",
+        },
         proyecto: {
             self: "proyecto",
             investigacion: "investigación",
@@ -33,6 +42,7 @@ module.exports = () => ({
         coleccion: {
             self: "colección",
             componentes: "componentes",
+            bloquesMatematica: "teoremas, proposiciones y observaciones",
             dataStructures: "data structures",
             distribuciones: "distribuciones",
             documentos: "documentos",
@@ -84,4 +94,41 @@ module.exports = () => ({
         proyectoInvestigacion: "Proyecto Investigación",
         GDD: "GDD",
     },
+    BLOQUES_MATEMATICA: {
+        teorema: {
+            callout: "teorema",
+            nombre: "Teorema",
+            reducido: "teo",
+        },
+        observacion: {
+            callout: "observacion",
+            nombre: "Observación",
+            reducido: "obs",
+        },
+        proposicion: {
+            callout: "proposicion",
+            nombre: "Proposición",
+            reducido: "prop",
+        },
+        template: {
+            tema: "Bloque Matematica Tema - Template",
+            subtema: "Bloque Matematica Subtema - Template",
+        },
+    },
+    DATOS_BLOQUES_MATEMATICA: {
+        tema: {
+            tags: "tags",
+            numero: "capitulo",
+        },
+        subtema: {
+            tags: "tags",
+            numero: "capitulo",
+            nota: {
+                self: "nota",
+                numero: "numero",
+                nombre: "nombre",
+                path: "path",
+            },
+        },
+    }
 });

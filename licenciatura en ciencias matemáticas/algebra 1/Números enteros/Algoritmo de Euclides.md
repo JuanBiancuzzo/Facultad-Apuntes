@@ -16,7 +16,7 @@ aliases:
 ```
 # Definición
 ---
-Existe un [[Algoritmo|algoritmo]] para calcular el [[Máximo común divisor|máximo común divisor]] entre dos [[Números enteros|números]], que no depende de calcular sus divisores. Este algoritmo fue introducido o recopilado por Euclides
+Existe un [[Algoritmo|algoritmo]] para calcular el [[Máximo común divisor|máximo común divisor]] entre dos [[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Números enteros|números]], que no depende de calcular sus divisores. Este algoritmo fue introducido o recopilado por Euclides
 
 Sean $a,~ b \in \mathbb{Z}$ no ambos nulos, y sea $k \in \mathbb{Z}$, entonces $$ \begin{align} 
     \text{DivCom}(\set{ a,~b }) &= \text{DivCom}(\set{ b,~ a - k \cdot b }) \\

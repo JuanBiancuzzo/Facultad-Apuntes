@@ -149,7 +149,7 @@ Por último vemos el [[Binomio de Newton|binomio de Newton]]
 
 ## Capítulo 4: Enteros - Primera parte
 ---
-Empezamos viendo los [[Números enteros|números enteros]] y sus propiedades. Seguido del concepto de [[Divisibilidad|divisibilidad]] y [[Congruencia|congruencia]]
+Empezamos viendo los [[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Números enteros|números enteros]] y sus propiedades. Seguido del concepto de [[Divisibilidad|divisibilidad]] y [[Congruencia|congruencia]]
 
 ## Capítulo 5: Enteros - Segunda Parte
 ---

@@ -14,7 +14,7 @@ tags:
 ```
 # Definición
 ---
-El teorema del binomio es una fórmula que proporciona el desarrollo de la $n$-ésima [[Función potencia|potencia]] de un binomio, siendo $n \in \mathbb{Z}^+$. De acuerdo con el teorema, es posible expandir la potencia $(x + y)^n$ en una suma que implica términos de la forma $a ~ x^b ~ y^c$, donde los exponentes $b,~c \in \mathbb{N}$, es decir, son [[Números Naturales|números naturales]] con $b + c = n$, y el coeficiente $a$ de cada término es un [[Números enteros|número entero]] positivo que depende de $n$ y $b$<sup><a href="#ref-503" style="color: inherit; text-decoration: none;">[503]</a></sup> 
+El teorema del binomio es una fórmula que proporciona el desarrollo de la $n$-ésima [[Función potencia|potencia]] de un binomio, siendo $n \in \mathbb{Z}^+$. De acuerdo con el teorema, es posible expandir la potencia $(x + y)^n$ en una suma que implica términos de la forma $a ~ x^b ~ y^c$, donde los exponentes $b,~c \in \mathbb{N}$, es decir, son [[Números Naturales|números naturales]] con $b + c = n$, y el coeficiente $a$ de cada término es un [[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Números enteros|número entero]] positivo que depende de $n$ y $b$<sup><a href="#ref-503" style="color: inherit; text-decoration: none;">[503]</a></sup> 
 
 Por ejemplo, si calculamos los desarrollos para los primeros valores de $n$ $$ \begin{align} 
     (x + y)^0 &= 1 \\

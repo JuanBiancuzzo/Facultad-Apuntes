@@ -57,6 +57,7 @@
 
         path = path.split("/");
         let directorioBase = path.at(0);
+        let segundoDirectorio = path.at(1);
         let opciones = [], valores = [];
 
         switch (directorioBase) {

@@ -42,7 +42,7 @@ Al resto $r$ lo notaremos $r_d(a)$ para especificar que es el "resto de $a$ al d
 > 
 > Claramente $A$ es un subconjunto de $\mathbb{N}_0$ que no es vacío ya que $a = a - 0 ~ d$ pertenece a $A$ (estamos considerando el caso $a \ge 0$). Luego, el [[Conjunto|conjunto]] $A$ tiene un [[Mínimo|mínimo]]. Llamemos $r$ es menor o igual que todos los demás elementos de $A$
 > 
-> Como $r \in A$, existe un [[Números enteros|entero]], llamémoslo $k$, que satisface que $r = a - k ~ d$, o sea $a = k ~ d + r$
+> Como $r \in A$, existe un [[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Números enteros|entero]], llamémoslo $k$, que satisface que $r = a - k ~ d$, o sea $a = k ~ d + r$
 > 
 > Falta probar que $0 \le r < d$ (ya que $|d| = d$ en el caso que estamos considerando):
 > 
@@ -108,7 +108,7 @@ Sea $d \in \mathbb{Z}$, $d \ne 0$. Entonces
 
 ### Observación
 ---
-La [[Congruencia#La congruencia es una relación de equivalencia|relación de equivalencia]] $\equiv ~ (\text{mod} ~ d)$ parte a los [[Números enteros|números enteros]] en [[Clases de equivalencia|clases de equivalencias]] $$ [a] = \set{ b \in \mathbb{Z}: ~~ b \equiv a ~ (\text{mod} ~ d) } = \set{ b \in \mathbb{Z}: ~~ r_d(b) = r_d(a) } $$ formadas por elementos que tienen todos el mismo resto módulo $d$. En cada clase podemos elegir el representante más sencillo $r$ con $0 \ge r < |d|$, y hay $d$ clases de equivalencias distintas, $[0],~ \cdots,~ [d - 1]$. Se obtiene la [[Partición|partición]] $$ \mathbb{Z} = [0] \cup \cdots \cup [d - 1] $$
+La [[Congruencia#La congruencia es una relación de equivalencia|relación de equivalencia]] $\equiv ~ (\text{mod} ~ d)$ parte a los [[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Números enteros|números enteros]] en [[Clases de equivalencia|clases de equivalencias]] $$ [a] = \set{ b \in \mathbb{Z}: ~~ b \equiv a ~ (\text{mod} ~ d) } = \set{ b \in \mathbb{Z}: ~~ r_d(b) = r_d(a) } $$ formadas por elementos que tienen todos el mismo resto módulo $d$. En cada clase podemos elegir el representante más sencillo $r$ con $0 \ge r < |d|$, y hay $d$ clases de equivalencias distintas, $[0],~ \cdots,~ [d - 1]$. Se obtiene la [[Partición|partición]] $$ \mathbb{Z} = [0] \cup \cdots \cup [d - 1] $$
 ## Tablas de Restos
 ---
 Sean $a,~ b,~ d \in \mathbb{Z}$, $d \ne 0$. Entonces 
