@@ -1,24 +1,13 @@
-const AUTORES = "autores";
 const MODIFICAR_AUTOR = "modificar autore";
 const ELIMINAR_AUTOR = "eliminar autore";
-const TITULO_INFORME = "tituloInforme";
-const SUBTITULO_INFORME = "subtituloInforme";
-const ANIO = "anio";
-const NOMBRE_REVISTA = "nombreRevista";
-const VOLUMEN_REVISTA = "volumenRevista";
-const PAGINAS = "paginas";
-const NUMERO_INFORME = "numeroInforme";
-const EDITORES = "editores";
 const MODIFICAR_EDITORE = "modificar editore";
 const ELIMINAR_EDITORE = "eliminar editore";
-const URL = "url";
-const DOI = "doi";
-
-const SALIR = "salir";
-
-const DATOS_SIMPLES = [TITULO_INFORME, ANIO, NOMBRE_REVISTA, VOLUMEN_REVISTA, PAGINAS, NUMERO_INFORME];
 
 async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
+    const { salir: SALIR, paper: { 
+        AUTORES, TITULO_INFORME, SUBTITULO_INFORME, ANIO, NOMBRE_REVISTA, 
+        VOLUMEN_REVISTA, PAGINAS, NUMERO_INFORME, EDITORES, URL, DOI
+    } } = tp.user.constantes().DATOS.REFERENCIAS;
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
 
@@ -32,12 +21,12 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             indice = separacion[1];
             let { nombre: viejoNombre, apellido: viejoApellido } = datos[AUTORES][indice];
 
-            let nuevoApellido = await preguntar.simple(
+            let nuevoApellido = await preguntar.prompt(
                 tp, `Nuevo apellido del autore, donde antes era ${viejoApellido}:`,
                 error.Quit("No se ingresa el apellido del autore de forma correcta")
             );
 
-            let nuevoNombre = await preguntar.simple(
+            let nuevoNombre = await preguntar.prompt(
                 tp, `Nuevo nombre del autore, donde antes era ${viejoNombre}:`,
                 error.Quit("No se ingresa el nombre del autore de forma correcta")
             );
@@ -47,11 +36,11 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
 
         case AUTORES:
             datos[AUTORES].push({
-                apellido: await preguntar.simple(
+                apellido: await preguntar.prompt(
                     tp, "Apellido del autore",
                     error.Quit("No se ingresa el apellido del autore de forma correcta")
                 ),
-                nombre: await preguntar.simple(
+                nombre: await preguntar.prompt(
                     tp, "Nombre del autore",
                     error.Quit("No se ingresa el nombre del autore de forma correcta")
                 ),
@@ -63,7 +52,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             break;
 
         case TITULO_INFORME:
-            datos[TITULO_INFORME] = await preguntar.simple(
+            datos[TITULO_INFORME] = await preguntar.prompt(
                 tp, datos[TITULO_INFORME] 
                     ? `Nuevo título del paper, donde antes era ${datos[TITULO_INFORME]}` 
                     : "Título del paper",
@@ -72,7 +61,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             break;
 
         case SUBTITULO_INFORME:
-            datos[SUBTITULO_INFORME] = await preguntar.simple(
+            datos[SUBTITULO_INFORME] = await preguntar.prompt(
                 tp, datos[SUBTITULO_INFORME] 
                     ? `Nuevo subtítulo del paper, donde antes era ${datos[SUBTITULO_INFORME]}` 
                     : "Subtítulo del paper",
@@ -90,7 +79,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             break;
 
         case NOMBRE_REVISTA:
-            datos[NOMBRE_REVISTA] = await preguntar.simple(
+            datos[NOMBRE_REVISTA] = await preguntar.prompt(
                 tp, datos[NOMBRE_REVISTA] 
                     ? `Nuevo nombre de la revista, donde antes era ${datos[NOMBRE_REVISTA]}` 
                     : "Nombre de la revista en la que se publicó",
@@ -99,7 +88,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             break;
 
         case VOLUMEN_REVISTA:
-            datos[VOLUMEN_REVISTA] = await preguntar.simple(
+            datos[VOLUMEN_REVISTA] = await preguntar.prompt(
                 tp, datos[VOLUMEN_REVISTA]
                     ? `Nuevo volumen de la revista, donde antes era ${datos[VOLUMEN_REVISTA]}`
                     : "Volumen de la revista",
@@ -146,12 +135,12 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             indice = separacion[1];
             let { nombre: viejoNombreEditore, apellido: viejoApellidoEditore } = datos[EDITORES][indice];
 
-            let nuevoApellidoEditore = await preguntar.simple(
+            let nuevoApellidoEditore = await preguntar.prompt(
                 tp, `Nuevo apellido del editore, donde antes era ${viejoApellidoEditore}:`,
                 error.Quit("No se ingresa el apellido del editore de forma correcta")
             );
 
-            let nuevoNombreEditore = await preguntar.simple(
+            let nuevoNombreEditore = await preguntar.prompt(
                 tp, `Nuevo nombre del editore, donde antes era ${viejoNombreEditore}:`,
                 error.Quit("No se ingresa el nombre del editore de forma correcta")
             );
@@ -161,11 +150,11 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
         
         case EDITORES:
             datos[EDITORES].push({
-                apellido: await preguntar.simple(
+                apellido: await preguntar.prompt(
                     tp, "Apellido del editore",
                     error.Quit("No se ingresa el apellido del editore de forma correcta")
                 ),
-                nombre: await preguntar.simple(
+                nombre: await preguntar.prompt(
                     tp, "Nombre del editore",
                     error.Quit("No se ingresa el nombre del editore de forma correcta")
                 ),
@@ -177,7 +166,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             break;
 
         case URL:
-            datos[URL] = await preguntar.simple(
+            datos[URL] = await preguntar.prompt(
                 tp, datos[URL] 
                     ? `Nuevo URL del paper, donde antes era ${datos[URL]}` 
                     : "URL del paper",
@@ -187,7 +176,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             break;
 
         case DOI:
-            datos[DOI] = await preguntar.simple(
+            datos[DOI] = await preguntar.prompt(
                 tp, datos[DOI] 
                     ? `Nuevo DOI del paper, donde antes era ${datos[DOI]}` 
                     : "DOI de la página",
@@ -205,6 +194,10 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
 }
 
 function generarPreguntas(tp, datos) {
+    const { salir: SALIR, paper: { 
+        AUTORES, TITULO_INFORME, SUBTITULO_INFORME, ANIO, NOMBRE_REVISTA, 
+        VOLUMEN_REVISTA, PAGINAS, NUMERO_INFORME, EDITORES, URL, DOI
+    } } = tp.user.constantes().DATOS.REFERENCIAS;
     let opciones = [];
     let valores = [];
 
@@ -312,6 +305,7 @@ function generarPreguntas(tp, datos) {
     let tieneAutores = datos[AUTORES].length > 0;
     let tieneLink = datos[DOI] || datos[URL];
 
+    const DATOS_SIMPLES = [TITULO_INFORME, ANIO, NOMBRE_REVISTA, VOLUMEN_REVISTA, PAGINAS, NUMERO_INFORME];
     if (tieneAutores && tieneLink && DATOS_SIMPLES.every(key => datos[key])) {
         opciones.push(SALIR);
         valores.push(" ↶ Confirmar datos");
@@ -330,19 +324,26 @@ function describir(tp, datos) {
 }
 
 module.exports = () => ({
-    obtenerDefault: () => ({
-        [AUTORES]: [],
-        [TITULO_INFORME]: null,
-        [SUBTITULO_INFORME]: null,
-        [NOMBRE_REVISTA]: null,
-        [VOLUMEN_REVISTA]: null,
-        [NUMERO_INFORME]: null,
-        [PAGINAS]: null,
-        [ANIO]: null,
-        [EDITORES]: [],
-        [URL]: null,
-        [DOI]: null,
-    }),
+    obtenerDefault: (tp) => {
+        const { 
+            AUTORES, TITULO_INFORME, SUBTITULO_INFORME, ANIO, NOMBRE_REVISTA, 
+            VOLUMEN_REVISTA, PAGINAS, NUMERO_INFORME, EDITORES, URL, DOI
+        } = tp.user.constantes().DATOS.REFERENCIAS.paper;
+
+        return {
+            [AUTORES]: [],
+            [TITULO_INFORME]: null,
+            [SUBTITULO_INFORME]: null,
+            [NOMBRE_REVISTA]: null,
+            [VOLUMEN_REVISTA]: null,
+            [NUMERO_INFORME]: null,
+            [PAGINAS]: null,
+            [ANIO]: null,
+            [EDITORES]: [],
+            [URL]: null,
+            [DOI]: null,
+        }
+    },
     actualizarDatos: actualizarDatos,
     generarPreguntas: generarPreguntas,
     describir: describir,

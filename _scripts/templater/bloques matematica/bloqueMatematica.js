@@ -10,7 +10,7 @@ const AGREGAR = "agregar";
 const SALIR = "salir";
 
 async function actualizarDatos(tp, datos, respuesta) {
-    const { TAGS, BLOQUES_MATEMATICA, DATOS_BLOQUES_MATEMATICA } = tp.user.constantes(); 
+    const { TAGS, BLOQUES_MATEMATICA, DATOS: { BLOQUES_MATEMATICA: DATOS_BLOQUES_MATEMATICA } } = tp.user.constantes(); 
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
     const dv = app.plugins.plugins.dataview.api;

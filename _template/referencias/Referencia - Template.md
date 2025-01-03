@@ -11,7 +11,7 @@
     const referencias = tp.user.referencia();
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
-    const { ETAPAS, DATOS_ARCHIVOS, DATOS_REFERENCIA, TAGS } = tp.user.constantes();
+    const { ETAPAS, DATOS: { ARCHIVO: DATOS_ARCHIVOS, REFERENCIA: DATOS_REFERENCIA }, TAGS } = tp.user.constantes();
 
     let archivo = dv.page(tp.file.path(true));
     let tArchivo = tp.file.find_tfile(tp.file.path(true));

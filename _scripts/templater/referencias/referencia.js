@@ -80,14 +80,14 @@ function obtenerReferencia(tp, tipoCita) {
 }
 
 function obtenerReferencias(tp) {
-    const { TAGS, REFERENCIAS, DATOS_REFERENCIA } = tp.user.constantes();
+    const { TAGS, REFERENCIAS, DATOS: { REFERENCIAS: DATOS_REFERENCIA } } = tp.user.constantes();
     const dv = app.plugins.plugins.dataview.api;
 
     return dv.pages(`#${TAGS.referencias}`)
         .flatMap(archivo => {
             let referencia = obtenerReferencia(tp, archivo[DATOS_REFERENCIA.tipoCita]);
 
-            let datos = referencia.obtenerDefault();
+            let datos = referencia.obtenerDefault(tp);
             for (let [key, _] of Object.entries(datos)) {
                 if (key in archivo && archivo[key]) {
                     datos[key] = archivo[key];
@@ -97,7 +97,7 @@ function obtenerReferencias(tp) {
             datos[DATOS_REFERENCIA.numReferencia] = archivo[DATOS_REFERENCIA.numReferencia];
 
             let resultado = [ datos ];
-            switch (archivo.tipoCita) {
+            switch (archivo[DATOS_REFERENCIA.tipoCita]) {
                 case REFERENCIAS.libro:
                     if (!datos.capitulos || datos.capitulos.length == 0) 
                         break;
@@ -115,21 +115,55 @@ function obtenerReferencias(tp) {
 }
 
 function describir(tp, datos) {
-    let DATOS_REFERENCIA = tp.user.constantes().DATOS_REFERENCIA;
-    let referencia = obtenerReferencia(tp, datos[DATOS_REFERENCIA.tipoCita]);
-    return `[${datos[DATOS_REFERENCIA.numReferencia]}] ${referencia.describir(tp, datos)}`;
+    let { DATOS: { REFERENCIAS } } = tp.user.constantes();
+    let referencia = obtenerReferencia(tp, datos[REFERENCIAS.tipoCita]);
+    return `[${datos[REFERENCIAS.numReferencia]}] ${referencia.describir(tp, datos)}`;
 }
 
 async function editar(tp, tipoCita, seguidorRef, datosActuales) {
     let referencia = obtenerReferencia(tp, tipoCita);
 
     return await tp.user.crearPreguntas(
-        tp, referencia.obtenerDefault,
+        tp, () => referencia.obtenerDefault(tp),
         (tp, datos, respuesta) => referencia.actualizarDatos(tp, datos, respuesta, seguidorRef),
         referencia.generarPreguntas,
         "Completar para poder referenciar",
         datosActuales,
     );
+}
+
+function archivoReferencia(tp, numReferenciaBuscado) {
+    const { TAGS, REFERENCIAS, DATOS: { REFERENCIAS: DATOS_REFERENCIA } } = tp.user.constantes();
+    const dv = app.plugins.plugins.dataview.api;
+
+    return dv.pages(`#${TAGS.referencias}`)
+        .flatMap(archivo => {
+            let referencia = obtenerReferencia(tp, archivo[DATOS_REFERENCIA.tipoCita]);
+
+            let datos = referencia.obtenerDefault(tp);
+            for (let [key, _] of Object.entries(datos)) {
+                if (key in archivo && archivo[key]) {
+                    datos[key] = archivo[key];
+                }
+            }
+
+            let resultado = [ { archivo: archivo, numReferencia: archivo[DATOS_REFERENCIA.numReferencia] } ];
+            switch (archivo[DATOS_REFERENCIA.tipoCita]) {
+                case REFERENCIAS.libro:
+                    const { CAPITULOS } = DATOS_REFERENCIA.libro;
+                    if (!datos[CAPITULOS] || datos[CAPITULOS].length == 0) 
+                        break;
+
+                    for (let capitulo of datos[CAPITULOS]) {
+                        resultado.push({ archivo: archivo, numReferencia: capitulo[DATOS_REFERENCIA.numReferencia] });
+                    }
+                    break;
+            }
+            
+            return resultado;
+        })
+        .find(({ numReferencia }) => numReferenciaBuscado == numReferencia)
+        .archivo;
 }
 
 module.exports = () => ({
@@ -138,4 +172,5 @@ module.exports = () => ({
     generar: generar,
     describir: describir,
     obtenerReferencias: obtenerReferencias,
+    archivoReferencia: archivoReferencia,
 });

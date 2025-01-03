@@ -1,19 +1,11 @@
-const NOMBRE_AUTORES = "nombreAutores";
-const NOMBRE_CURSO = "nombreCurso";
-const NOMBRE_PAGINA = "nombrePagina";
-
-const NOMBRE_TEMA = "nombreTema";
-const NUMERO_TEMA = "capitulo";
-const PROFESORES = "profesores";
 const MODIFICAR_PROFESOR = "modificar profesor";
 const ELIMINAR_PROFESOR_AT = "eliminar profesor en posicion";
 const ELIMINAR_PROFESOR = "eliminar profesor";
-const PARTE_TEMA = "parte";
-const CURSO = "curso";
-
-const SALIR = "salir";
 
 async function actualizarDatos(tp, datos, respuesta, curso) {
+    const { salir: SALIR, temaCurso: { 
+        NOMBRE_TEMA, NUMERO_TEMA, PROFESORES, PARTE_TEMA, CURSO
+    } } = tp.user.constantes().DATOS.REFERENCIAS;
     const TAGS = tp.user.constantes().TAGS;
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
@@ -53,7 +45,7 @@ async function actualizarDatos(tp, datos, respuesta, curso) {
             }
 
             if (eleccion == AGREGAR_TEMA) {
-                nombreTema = await preguntar.simple(
+                nombreTema = await preguntar.prompt(
                     tp, datos[NOMBRE_TEMA]
                     ? `Nuevo nombre del tema, donde antes era ${datos[NOMBRE_TEMA]}`
                     : "Nombre del tema",
@@ -129,6 +121,9 @@ async function actualizarDatos(tp, datos, respuesta, curso) {
 }
 
 function generarPreguntas(tp, datos, curso) {
+    const { salir: SALIR, temaCurso: { 
+        NOMBRE_TEMA, NUMERO_TEMA, PROFESORES
+    } } = tp.user.constantes().DATOS.REFERENCIAS;
     const TAGS = tp.user.constantes().TAGS;
     let opciones = [];
     let valores = [];
@@ -232,6 +227,11 @@ function generarPreguntas(tp, datos, curso) {
 }
 
 function describir(tp, datos) {
+    const { 
+        curso: { NOMBRE_AUTORES, NOMBRE_CURSO, NOMBRE_PAGINA },
+        temaCurso: { NOMBRE_TEMA, NUMERO_TEMA, PROFESORES, CURSO },
+    } = tp.user.constantes().DATOS.REFERENCIAS;
+
     const dv = app.plugins.plugins.dataview.api;
     const curso = dv.page(datos[CURSO].path);
 
@@ -250,13 +250,18 @@ function describir(tp, datos) {
 }
 
 module.exports = () => ({
-    obtenerDefault: () => ({
-        [NOMBRE_TEMA]: null,
-        [NUMERO_TEMA]: null,
-        [PARTE_TEMA]: 0,
-        [PROFESORES]: [],
-        [CURSO]: null,
-    }),
+    obtenerDefault: (tp) => {
+        const { 
+            NOMBRE_TEMA, NUMERO_TEMA, PROFESORES, PARTE_TEMA, CURSO 
+        } = tp.user.constantes().DATOS.REFERENCIAS.temaCurso;
+        return {
+            [NOMBRE_TEMA]: null,
+            [NUMERO_TEMA]: null,
+            [PARTE_TEMA]: 0,
+            [PROFESORES]: [],
+            [CURSO]: null,
+        }
+    },
     actualizarDatos: actualizarDatos,
     generarPreguntas: generarPreguntas,
     describir: describir,

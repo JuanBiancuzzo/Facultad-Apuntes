@@ -1,3 +1,5 @@
+const TIPO_FUNCION = "function";
+
 async function crearPreguntas(
     tp, 
     obtenerDefault, 
@@ -9,14 +11,7 @@ async function crearPreguntas(
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
 
-    let datos = obtenerDefault();
-    if (datosPrevios) {
-        for (let [key, _] of Object.entries(datos)) {
-            if (key in datosPrevios && datosPrevios[key]) {
-                datos[key] = datosPrevios[key];
-            }
-        }
-    }
+    let datos = obtenerDatos(obtenerDefault, datosPrevios);
 
     let continuar;
     do {
@@ -39,6 +34,28 @@ async function crearPreguntas(
 
     } while (!continuar);
 
+    return datos;
+}
+
+function obtenerDatos(obtenerDefault, datosPrevios) {
+    let datos = obtenerDefault();
+    if (datosPrevios) {
+        for (let [key, value] of Object.entries(datos)) {
+            if (typeof value == TIPO_FUNCION) {
+                if (datosPrevios[key] instanceof Array) {
+                    datos[key] = [];
+                    for (let elementoPrevio of datosPrevios[key]) {
+                        datos[key].push(obtenerDatos(value, elementoPrevio));
+                    }
+
+                } else { 
+                    datos[key] = obtenerDatos(value, datosPrevios[key]);
+                }
+            } else if (key in datosPrevios && datosPrevios[key]) {
+                datos[key] = datosPrevios[key];
+            }
+        }
+    }
     return datos;
 }
 

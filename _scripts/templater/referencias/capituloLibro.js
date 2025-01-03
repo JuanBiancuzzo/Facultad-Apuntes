@@ -1,14 +1,9 @@
-const NUM_REFERENCIA = "numReferencia";
-const NUMERO_CAPITULO = "numeroCapitulo";
-const NOMBRE_CAPITULO = "nombreCapitulo";
-const EDITORES = "editores";
 const MODIFICAR_EDITORES = "modificar editores";
 const ELIMINAR_EDITORE = "eliminar editores";
-const PAGINAS = "paginas";
-
-const SALIR = "salir";
 
 async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
+    const { salir: SALIR, capituloLibro: { NUMERO_CAPITULO, NOMBRE_CAPITULO, EDITORES, PAGINAS} } = tp.user.constantes().DATOS.REFERENCIAS;
+
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
 
@@ -105,6 +100,10 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
 }
 
 function generarPreguntas(tp, datos) {
+    const { salir: SALIR, capituloLibro: { 
+        NUMERO_CAPITULO, NOMBRE_CAPITULO, EDITORES, PAGINAS,
+    } } = tp.user.constantes().DATOS.REFERENCIAS;
+
     let opciones = [];
     let valores = [];
 
@@ -150,27 +149,44 @@ function generarPreguntas(tp, datos) {
 }
 
 function describir(tp, datos) {
-    const REFERENCIAS = tp.user.constantes().REFERENCIAS;
+    const { NUMERO_CAPITULO, NOMBRE_CAPITULO, PAGINAS} = tp.user.constantes().DATOS.REFERENCIAS.capituloLibro;
+    const { libro: REF_LIBRO } = tp.user.constantes().REFERENCIAS;
 
     let textoCapitulo = `Capítulo ${datos[NUMERO_CAPITULO]}`;
     if (datos[NOMBRE_CAPITULO]) textoCapitulo += `: ${datos[NOMBRE_CAPITULO]}`;
     if (datos[PAGINAS]) textoCapitulo += ` p. ${datos[PAGINAS].inicio}-${datos[PAGINAS].final}`;
 
-    let libro = datos[REFERENCIAS.libro];
+    let libro = datos[REF_LIBRO];
     textoCapitulo += ` de ${tp.user.libro().describir(tp, libro)}`;
 
     return textoCapitulo;
 }
 
+function describirReducido(tp, datos) {
+    const { NUMERO_CAPITULO, NOMBRE_CAPITULO } = tp.user.constantes().DATOS.REFERENCIAS.capituloLibro;
+
+    let textoCapitulo = `Capítulo ${datos[NUMERO_CAPITULO]}`;
+    if (datos[NOMBRE_CAPITULO]) textoCapitulo += `: ${datos[NOMBRE_CAPITULO]}`;
+
+    return textoCapitulo;
+}
+
 module.exports = () => ({
-    obtenerDefault: () => ({
-        [NUM_REFERENCIA]: numReferencia,
-        [NUMERO_CAPITULO]: null,
-        [NOMBRE_CAPITULO]: null,
-        [EDITORES]: [],
-        [PAGINAS]: null,
-    }),
+    obtenerDefault: (tp) => {
+        const { numReferencia: NUM_REFERENCIA, capituloLibro: {
+            NUMERO_CAPITULO, NOMBRE_CAPITULO, EDITORES, PAGINAS,
+        } } = tp.user.constantes().DATOS.REFERENCIAS;
+
+        return {
+            [NUM_REFERENCIA]: null,
+            [NUMERO_CAPITULO]: null,
+            [NOMBRE_CAPITULO]: null,
+            [EDITORES]: [],
+            [PAGINAS]: null,
+        }
+    },
     actualizarDatos: actualizarDatos,
     generarPreguntas: generarPreguntas,
     describir: describir,
+    describirReducido: describirReducido,
 });

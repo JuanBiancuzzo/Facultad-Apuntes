@@ -1,10 +1,5 @@
-const NOMBRE_ARTICULO = "nombreArticulo";
-const FECHA = "fecha";
-const URL = "url";
-
-const SALIR = "salir";
-
 async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
+    const { salir: SALIR, wiki: { NOMBRE_ARTICULO, FECHA, URL } } = tp.user.constantes().DATOS.REFERENCIAS;
     const preguntar = tp.user.preguntar();
     const describir = tp.user.describir();
     const error = tp.user.error();
@@ -13,7 +8,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
 
     switch (respuesta) {
         case NOMBRE_ARTICULO:
-            datos[NOMBRE_ARTICULO] = await preguntar.simple(
+            datos[NOMBRE_ARTICULO] = await preguntar.prompt(
                 tp, datos[NOMBRE_ARTICULO] 
                     ? `Nuevo nombre del artículo, donde antes era ${datos[NOMBRE_ARTICULO]}` 
                     : "Nombre del artículo",
@@ -31,7 +26,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             );
             break;
         case URL:
-            datos[URL] = await preguntar.simple(
+            datos[URL] = await preguntar.prompt(
                 tp, datos[URL] 
                     ? `Nuevo URL del artículo, donde antes era ${datos[URL]}` 
                     : "URL del artículo",
@@ -48,6 +43,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
 }
 
 function generarPreguntas(tp, datos) {
+    const { salir: SALIR, wiki: { NOMBRE_ARTICULO, FECHA, URL } } = tp.user.constantes().DATOS.REFERENCIAS;
     const describir = tp.user.describir();
 
     let opciones = [];
@@ -80,15 +76,19 @@ function generarPreguntas(tp, datos) {
 }
 
 function describir(tp, datos) {
+    const { NOMBRE_ARTICULO } = tp.user.constantes().DATOS.REFERENCIAS.wiki;
     return `Artículo de wikipedia: ${datos[NOMBRE_ARTICULO]}`;
 }
 
 module.exports = () => ({
-    obtenerDefault: () => ({
-        [NOMBRE_ARTICULO]: null,
-        [FECHA]: null,
-        [URL]: null,
-    }),
+    obtenerDefault: (tp) => {
+        const { NOMBRE_ARTICULO, FECHA, URL } = tp.user.constantes().DATOS.REFERENCIAS.wiki;
+        return {
+            [NOMBRE_ARTICULO]: null,
+            [FECHA]: null,
+            [URL]: null,
+        }
+    },
     actualizarDatos: actualizarDatos,
     generarPreguntas: generarPreguntas,
     describir: describir,

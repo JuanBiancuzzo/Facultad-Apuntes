@@ -1,6 +1,6 @@
 <%*
 	const tArchivo = tp.file.find_tfile(tp.file.path(true));	
-    const { DATOS_REFERENCIA, DATOS_ARCHIVOS, TAGS } = tp.user.constantes();
+    const { DATOS: { ARCHIVO: DATOS_ARCHIVOS, REFERENCIA: DATOS_REFERENCIA }, TAGS } = tp.user.constantes();
     let seguidorRef = tp.user.seguidorReferencias().new(dv);
     let numReferencia = seguidorRef.conseguirReferencia();
 

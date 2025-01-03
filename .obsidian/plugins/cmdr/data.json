@@ -1,13 +1,75 @@
 {
-  "confirmDeletion": true,
+  "confirmDeletion": false,
   "showAddCommand": true,
   "debug": false,
   "editorMenu": [],
   "fileMenu": [],
-  "leftRibbon": [],
+  "leftRibbon": [
+    {
+      "id": "templater-obsidian:_template/referencias/Referencia - Template.md",
+      "icon": "lucide-file-search",
+      "name": "Referencia",
+      "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:3c681439-6c5a-4857-bdc5-e8f2ebf463a1",
+      "icon": "lucide-album",
+      "name": "Materia facultad",
+      "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:c11f2f44-a7eb-4876-96f1-d406499e17fd",
+      "icon": "lucide-app-window",
+      "name": "Nuevo curso",
+      "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:e1fa3f3e-7c22-46ac-bad5-f7d927313df8",
+      "icon": "lucide-amphora",
+      "name": "Nuevo tema de investigación",
+      "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:2c7f8909-6024-4823-95d8-0ba8b4ffeb04",
+      "icon": "lucide-arrow-down-01",
+      "name": "Nuevo proyecto práctico",
+      "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:ee122ae9-fd26-48fa-a86e-329167ec5a81",
+      "icon": "lucide-area-chart",
+      "name": "Nuevo proyecto investigación",
+      "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:3bf960b5-c1d4-4b5c-accd-7b0bb88dfc78",
+      "icon": "lucide-boxes",
+      "name": "Nuevo GDD",
+      "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:89c2dd5c-feab-40ea-9751-9fb151856539",
+      "icon": "lucide-archive-restore",
+      "name": "Agregar elemento de colección",
+      "mode": "any"
+    }
+  ],
   "rightRibbon": [],
   "titleBar": [],
-  "statusBar": [],
+  "statusBar": [
+    {
+      "id": "templater-obsidian:_template/referencias/Editar referencia - Template.md",
+      "icon": "lucide-file-pen",
+      "name": "Editar referencia",
+      "mode": "any"
+    },
+    {
+      "id": "templater-obsidian:_template/bloques matematica/Bloque Matematica - Template.md",
+      "icon": "lucide-text-select",
+      "name": "Bloque Matematica",
+      "mode": "any"
+    }
+  ],
   "pageHeader": [],
   "macros": [
     {

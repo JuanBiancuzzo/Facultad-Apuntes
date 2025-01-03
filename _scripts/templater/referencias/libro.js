@@ -1,22 +1,14 @@
-const TITULO_OBRA = "tituloObra";
-const SUBTITULO_OBRA = "subtituloObra";
-const NOMBRE_AUTORES = "nombreAutores";
 const MODIFICAR_AUTORE = "modificar autores";
 const ELIMINAR_AUTORE = "eliminar autores";
-const ANIO = "anio";
-const EDITORIAL = "editorial";
-const EDICION = "edicion";
-const VOLUMEN = "volumen";
-const URL = "url";
-const CAPITULOS = "capitulos";
 const MODIFICAR_CAPITULO = "modificar capitulos";
 const ELIMINAR_CAPITULO = "eliminar capitulos";
-
-const SALIR = "salir";
-
 const AGREGAR_EDITOR = "agregar editor";
 
 async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
+    const { salir: SALIR, libro: { 
+        TITULO_OBRA, SUBTITULO_OBRA, NOMBRE_AUTORES, ANIO,
+        EDITORIAL, EDICION, VOLUMEN, URL, CAPITULOS, 
+    } } = tp.user.constantes().DATOS.REFERENCIAS;
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
 
@@ -30,12 +22,12 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             indice = separacion[1];
             let { nombre: viejoNombre, apellido: viejoApellido } = datos[NOMBRE_AUTORES][indice];
 
-            let nuevoApellido = await preguntar.simple(
+            let nuevoApellido = await preguntar.prompt(
                 tp, `Nuevo apellido del autore, donde antes era ${viejoApellido}:`,
                 error.Quit("No se ingresa el apellido del autore de forma correcta")
             );
 
-            let nuevoNombre = await preguntar.simple(
+            let nuevoNombre = await preguntar.prompt(
                 tp, `Nuevo nombre del autore, donde antes era ${viejoNombre}:`,
                 error.Quit("No se ingresa el nombre del autore de forma correcta")
             );
@@ -45,11 +37,11 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
 
         case NOMBRE_AUTORES:
             datos[NOMBRE_AUTORES].push({
-                apellido: await preguntar.simple(
+                apellido: await preguntar.prompt(
                     tp, "Apellido del autore",
                     error.Quit("No se ingresa el apellido del autore de forma correcta")
                 ),
-                nombre: await preguntar.simple(
+                nombre: await preguntar.prompt(
                     tp, "Nombre del autore",
                     error.Quit("No se ingresa el nombre del autore de forma correcta")
                 ),
@@ -61,7 +53,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             break;
 
         case TITULO_OBRA:
-            datos[TITULO_OBRA] = await preguntar.simple(
+            datos[TITULO_OBRA] = await preguntar.prompt(
                 tp, datos[TITULO_OBRA] 
                     ? `Nuevo título del libro, donde antes era ${datos[TITULO_OBRA]}` 
                     : "Título del libro",
@@ -70,7 +62,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             break;
 
         case SUBTITULO_OBRA:
-            datos[SUBTITULO_OBRA] = await preguntar.simple(
+            datos[SUBTITULO_OBRA] = await preguntar.prompt(
                 tp, datos[SUBTITULO_OBRA]
                     ? `Nuevo subtítulo del libro, donde antes era ${datos[SUBTITULO_OBRA]}`
                     : "Subtítulo del libro",
@@ -102,7 +94,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             );
 
             if (respuesta == AGREGAR_EDITOR) {
-                respuesta = await preguntar.simple(
+                respuesta = await preguntar.prompt(
                     tp, datos[EDITORIAL]
                         ? `Nuevo editorial, donde antes era ${datos[EDITORIAL]}`
                         : "Editorial del libro",
@@ -132,7 +124,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             break;
 
         case URL:
-            datos[URL] = await preguntar.simple(
+            datos[URL] = await preguntar.prompt(
                 tp, datos[URL]
                     ? `Nuevo URL del libro, donde antes era ${datos[URL]}`
                     : "URL del libro",
@@ -182,7 +174,11 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
 }
 
 function generarPreguntas(tp, datos) {
-    const REFERENCIAS = tp.user.constantes().REFERENCIAS;
+    const { salir: SALIR, libro: { 
+        TITULO_OBRA, SUBTITULO_OBRA, NOMBRE_AUTORES, ANIO,
+        EDITORIAL, EDICION, VOLUMEN, URL, CAPITULOS 
+    } } = tp.user.constantes().DATOS.REFERENCIAS;
+    const { REFERENCIAS } = tp.user.constantes();
     let opciones = [];
     let valores = [];
 
@@ -281,26 +277,39 @@ function generarPreguntas(tp, datos) {
 }
 
 function describir(tp, datos) {
+    const { TITULO_OBRA, SUBTITULO_OBRA, NOMBRE_AUTORES, VOLUMEN } = tp.user.constantes().DATOS.REFERENCIAS.libro;
+
     let autores = [];
     for (let { nombre, apellido } of datos[NOMBRE_AUTORES]) {
         autores.push(`${nombre} ${apellido}`);
     }
 
-    return `${datos[TITULO_OBRA]} de ${autores.join(", ")}`;
+    let nombre = datos[TITULO_OBRA];
+    if (datos[SUBTITULO_OBRA]) nombre += `: ${datos[SUBTITULO_OBRA]}`;
+    if (datos[VOLUMEN]) nombre += ` vol. ${datos[VOLUMEN]}`;
+
+    return `${nombre} de ${autores.join(", ")}`;
 }
 
 module.exports = () => ({
-    obtenerDefault: () => ({
-        [TITULO_OBRA]: null,
-        [SUBTITULO_OBRA]: null,
-        [NOMBRE_AUTORES]: [],
-        [ANIO]: null,
-        [EDITORIAL]: null,
-        [EDICION]: null,
-        [VOLUMEN]: null,
-        [URL]: null,
-        [CAPITULOS]: []
-    }),
+    obtenerDefault: (tp) => {
+        const { 
+            TITULO_OBRA, SUBTITULO_OBRA, NOMBRE_AUTORES, ANIO, 
+            EDITORIAL, EDICION, VOLUMEN, URL, CAPITULOS
+        } = tp.user.constantes().DATOS.REFERENCIAS.libro;
+
+        return {
+            [TITULO_OBRA]: null,
+            [SUBTITULO_OBRA]: null,
+            [NOMBRE_AUTORES]: [],
+            [ANIO]: null,
+            [EDITORIAL]: null,
+            [EDICION]: null,
+            [VOLUMEN]: null,
+            [URL]: null,
+            [CAPITULOS]: () => tp.user.capituloLibro().obtenerDefault(tp),
+        }
+    },
     actualizarDatos: actualizarDatos,
     generarPreguntas: generarPreguntas,
     describir: describir,

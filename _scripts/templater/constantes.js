@@ -5,6 +5,11 @@ module.exports = () => ({
         nota: "Nota - Template",
         seccion: "Seccion - Template",
     },
+    SECCIONES: {
+        referencias: { nivel: 1, texto: "Referencias" },
+        resumen: { nivel: 1, texto: "Resumen" },
+        definicion: { nivel: 1, texto: "Definición" },
+    },
     TAGS: {
         investigacion: "índice",
         carrera: "carrera",
@@ -70,15 +75,98 @@ module.exports = () => ({
         web: "Web",
         wikipedia: "Wikipedia",
     },
-    DATOS_REFERENCIA: {
-        numReferencia: "numReferencia",
-        tipoCita: "tipoCita",
-    },
-    DATOS_ARCHIVOS: {
-        referencias: "referencias",
-        etapa: "etapa",
-        tags: "tags",
-        dia: "dia",
+    DATOS: {
+        REFERENCIAS: {
+            numReferencia: "numReferencia",
+            tipoCita: "tipoCita",
+            aliases: "aliases",
+            libro: {
+                TITULO_OBRA: "tituloObra",
+                SUBTITULO_OBRA: "subtituloObra",
+                NOMBRE_AUTORES: "nombreAutores",
+                ANIO: "anio",
+                EDITORIAL: "editorial",
+                EDICION: "edicion",
+                VOLUMEN: "volumen",
+                URL: "url",
+                CAPITULOS: "capitulos",
+            },
+            capituloLibro: {
+                NUMERO_CAPITULO: "numeroCapitulo",
+                NOMBRE_CAPITULO: "nombreCapitulo",
+                EDITORES: "editores",
+                PAGINAS: "paginas",
+            },
+            curso: {
+                NOMBRE_AUTORES: "nombreAutores",
+                FECHA_CURSO: "fechaCurso",
+                NOMBRE_CURSO: "nombreCurso",
+                NOMBRE_PAGINA: "nombrePagina",
+                URL: "url",
+            },
+            temaCurso: {
+                NOMBRE_TEMA: "nombreTema",
+                NUMERO_TEMA: "capitulo",
+                PROFESORES: "profesores",
+                PARTE_TEMA: "parte",
+                CURSO: "curso",
+            },
+            paper: {
+                AUTORES: "autores",
+                TITULO_INFORME: "tituloInforme",
+                SUBTITULO_INFORME: "subtituloInforme",
+                ANIO: "anio",
+                NOMBRE_REVISTA: "nombreRevista",
+                VOLUMEN_REVISTA: "volumenRevista",
+                PAGINAS: "paginas",
+                NUMERO_INFORME: "numeroInforme",
+                EDITORES: "editores",
+                URL: "url",
+                DOI: "doi",
+            },
+            web: {
+                NOMBRE_AUTORES: "nombreAutores",
+                FECHA_PUBLICACION: "fechaPublicacion",
+                TITULO_ARTICULO: "tituloArticulo",
+                NOMBRE_PAGINA: "nombrePagina",
+                URL: "url",
+            },
+            wiki: {
+                NOMBRE_ARTICULO: "nombreArticulo",
+                FECHA: "fecha",
+                URL: "url",
+            },
+            youtube: {
+                NOMBRE_VIDEO: "nombreVideo",
+                NOMBRE_CANAL: "nombreCanal",
+                FECHA: "fecha",
+                URL: "url",
+            },
+            salir: "salir",
+        },
+        ARCHIVO: {
+            referencias: "referencias",
+            etapa: "etapa",
+            tags: "tags",
+            dia: "dia",
+            aliases: "aliases",
+        },
+        BLOQUES_MATEMATICA: {
+            tema: {
+                tags: "tags",
+                numero: "capitulo",
+            },
+            subtema: {
+                tags: "tags",
+                numero: "capitulo",
+                nota: {
+                    self: "nota",
+                    numero: "numero",
+                    nombre: "nombre",
+                    path: "path",
+                },
+            },
+        },
     },
     ETAPAS: {
         sinEmpezar: "sin-empezar",
@@ -115,20 +203,4 @@ module.exports = () => ({
             subtema: "Bloque Matematica Subtema - Template",
         },
     },
-    DATOS_BLOQUES_MATEMATICA: {
-        tema: {
-            tags: "tags",
-            numero: "capitulo",
-        },
-        subtema: {
-            tags: "tags",
-            numero: "capitulo",
-            nota: {
-                self: "nota",
-                numero: "numero",
-                nombre: "nombre",
-                path: "path",
-            },
-        },
-    }
 });

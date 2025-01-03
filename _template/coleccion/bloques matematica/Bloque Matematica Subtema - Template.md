@@ -1,5 +1,5 @@
 <%*
-    const { TAGS, DATOS_BLOQUES_MATEMATICA } = tp.user.constantes();
+    const { TAGS, DATOS: { BLOQUES_MATEMATICA } } = tp.user.constantes();
     const dv = app.plugins.plugins.dataview.api;
 
     const tArchivo = tp.file.find_tfile(tp.file.path(true));
@@ -9,14 +9,14 @@
     let subtemas = dv.pages(`#${tag} and #${TAGS.bloqueMatematica.subtema}`);
     let numero = 1;
     if (subtemas.length > 0) {
-        numero = subtemas.map(subtema => subtema[DATOS_BLOQUES_MATEMATICA.subtema.numero]).max() + 1;
+        numero = subtemas.map(subtema => subtema[BLOQUES_MATEMATICA.subtema.numero]).max() + 1;
     }
 
     tR += "---\n";
     tR += tp.obsidian.stringifyYaml({
-        [DATOS_BLOQUES_MATEMATICA.subtema.numero]: numero,
-        [DATOS_BLOQUES_MATEMATICA.subtema.tags]: [ tag, TAGS.bloqueMatematica.subtema ],
-        [DATOS_BLOQUES_MATEMATICA.subtema.nota.self]: [],
+        [BLOQUES_MATEMATICA.subtema.numero]: numero,
+        [BLOQUES_MATEMATICA.subtema.tags]: [ tag, TAGS.bloqueMatematica.subtema ],
+        [BLOQUES_MATEMATICA.subtema.nota.self]: [],
     });
     tR += "---\n";
 _%>

@@ -1,13 +1,5 @@
-const NOMBRE_VIDEO = "nombreVideo";
-const NOMBRE_CANAL = "nombreCanal";
-const FECHA = "fecha";
-const URL = "url";
-
-const DATOS_SIMPLES = [ NOMBRE_VIDEO, NOMBRE_CANAL, FECHA, URL ];
-
-const SALIR = "salir";
-
 async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
+    const { salir: SALIR, youtube: { NOMBRE_VIDEO, NOMBRE_CANAL, FECHA, URL } } = tp.user.constantes().DATOS.REFERENCIAS;
     const preguntar = tp.user.preguntar();
     const describir = tp.user.describir();
     const error = tp.user.error();
@@ -60,6 +52,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
 }
 
 function generarPreguntas(tp, datos) {
+    const { salir: SALIR, youtube: { NOMBRE_VIDEO, NOMBRE_CANAL, FECHA, URL } } = tp.user.constantes().DATOS.REFERENCIAS;
     const describir = tp.user.describir();
 
     let opciones = [];
@@ -89,6 +82,7 @@ function generarPreguntas(tp, datos) {
         : " ⊕ URL del video"
     );
 
+    const DATOS_SIMPLES = [ NOMBRE_VIDEO, NOMBRE_CANAL, FECHA, URL ];
     if (DATOS_SIMPLES.every(key => datos[key])) {
         opciones.push(SALIR);
         valores.push(" ↶ Confirmar datos");
@@ -98,16 +92,20 @@ function generarPreguntas(tp, datos) {
 }
 
 function describir(tp, datos) {
+    const { NOMBRE_VIDEO, NOMBRE_CANAL } = tp.user.constantes().DATOS.REFERENCIAS.youtube;
     return `${datos[NOMBRE_VIDEO]} de ${datos[NOMBRE_CANAL]}`;
 }
 
 module.exports = () => ({
-    obtenerDefault: () => ({
-        [NOMBRE_VIDEO]: null,
-        [NOMBRE_CANAL]: null,
-        [FECHA]: null,
-        [URL]: null,
-    }),
+    obtenerDefault: (tp) => {
+        const { NOMBRE_VIDEO, NOMBRE_CANAL, FECHA, URL } = tp.user.constantes().DATOS.REFERENCIAS.youtube;
+        return {
+            [NOMBRE_VIDEO]: null,
+            [NOMBRE_CANAL]: null,
+            [FECHA]: null,
+            [URL]: null,
+        }
+    },
     actualizarDatos: actualizarDatos,
     generarPreguntas: generarPreguntas,
     describir: describir,

@@ -1,15 +1,10 @@
-const NOMBRE_AUTORES = "nombreAutores";
 const MODIFICAR_AUTOR = "modificar autore";
 const ELIMINAR_AUTOR = "eliminar autore";
-const FECHA_PUBLICACION = "fechaPublicacion";
-const TITULO_ARTICULO = "tituloArticulo";
-const NOMBRE_PAGINA = "nombrePagina";
-const URL = "url";
-const SALIR = "salir";
-
-const DATOS_SIMPLES = [ FECHA_PUBLICACION, TITULO_ARTICULO, NOMBRE_PAGINA, URL ];
 
 async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
+    const { salir: SALIR, web: { 
+        NOMBRE_AUTORES, FECHA_PUBLICACION, TITULO_ARTICULO, NOMBRE_PAGINA, URL,
+    } } = tp.user.constantes().DATOS.REFERENCIAS;
     const preguntar = tp.user.preguntar();
     const describir = tp.user.describir();
     const error = tp.user.error();
@@ -24,12 +19,12 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             indice = separacion[1];
             let { nombre: viejoNombre, apellido: viejoApellido } = datos[NOMBRE_AUTORES][indice];
 
-            let nuevoApellido = await preguntar.simple(
+            let nuevoApellido = await preguntar.prompt(
                 tp, `Nuevo apellido, donde antes era ${viejoApellido}:`,
                 error.Quit("No se ingresa el apellido del autore de forma correcta")
             );
 
-            let nuevoNombre = await preguntar.simple(
+            let nuevoNombre = await preguntar.prompt(
                 tp, `Nuevo nombre, donde antes era ${viejoNombre}:`,
                 error.Quit("No se ingresa el nombre del autore de forma correcta")
             );
@@ -39,11 +34,11 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
 
         case NOMBRE_AUTORES: 
             datos[NOMBRE_AUTORES].push({
-                apellido: await preguntar.simple(
+                apellido: await preguntar.prompt(
                     tp, "Apellido del autore",
                     error.Quit("No se ingresa el apellido del autore de forma correcta")
                 ),
-                nombre: await preguntar.simple(
+                nombre: await preguntar.prompt(
                     tp, "Nombre del autore",
                     error.Quit("No se ingresa el nombre del autore de forma correcta")
                 ),
@@ -65,7 +60,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             break;
 
         case TITULO_ARTICULO: 
-            datos[TITULO_ARTICULO] = await preguntar.simple(
+            datos[TITULO_ARTICULO] = await preguntar.prompt(
                 tp, datos[TITULO_ARTICULO] 
                     ? `Nuevo título del artículo, donde antes era ${datos[TITULO_ARTICULO]}` 
                     : "Título del artículo",
@@ -74,7 +69,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             break;
 
         case NOMBRE_PAGINA: 
-            datos[NOMBRE_PAGINA] = await preguntar.simple(
+            datos[NOMBRE_PAGINA] = await preguntar.prompt(
                 tp, datos[NOMBRE_PAGINA] 
                     ? `Nuevo nombre de la página, donde antes era ${datos[NOMBRE_PAGINA]}` 
                     : "Nombre de la página",
@@ -83,7 +78,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             break;
 
         case URL: 
-            datos[URL] = await preguntar.simple(
+            datos[URL] = await preguntar.prompt(
                 tp, datos[URL] 
                     ? `Nuevo URL de la página, donde antes era ${datos[URL]}` 
                     : "URL de la página",
@@ -100,6 +95,9 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
 }
 
 function generarPreguntas(tp, datos) {
+    const { salir: SALIR, web: { 
+        NOMBRE_AUTORES, FECHA_PUBLICACION, TITULO_ARTICULO, NOMBRE_PAGINA, URL,
+    } } = tp.user.constantes().DATOS.REFERENCIAS;
     const describir = tp.user.describir();
 
     let opciones = [];
@@ -148,6 +146,7 @@ function generarPreguntas(tp, datos) {
         : " ⊕ URL de la página"
     );
 
+    const DATOS_SIMPLES = [ FECHA_PUBLICACION, TITULO_ARTICULO, NOMBRE_PAGINA, URL ];
     if (datos[NOMBRE_AUTORES].length > 0 && DATOS_SIMPLES.every(key => datos[key])) {
         opciones.push(SALIR);
         valores.push(" ↶ Confirmar datos");
@@ -157,6 +156,7 @@ function generarPreguntas(tp, datos) {
 }
 
 function describir(tp, datos) {
+    const { NOMBRE_AUTORES, TITULO_ARTICULO, NOMBRE_PAGINA } = tp.user.constantes().DATOS.REFERENCIAS.web;
     let autores = [];
     for (let { nombre, apellido } of datos[NOMBRE_AUTORES]) {
         autores.push(`${apellido}, ${nombre[0]}.`);
@@ -166,13 +166,16 @@ function describir(tp, datos) {
 }
 
 module.exports = () => ({
-    obtenerDefault: () => ({
-        [NOMBRE_AUTORES]: [],
-        [FECHA_PUBLICACION]: null,
-        [TITULO_ARTICULO]: null,
-        [NOMBRE_PAGINA]: null,
-        [URL]: null
-    }),
+    obtenerDefault: (tp) => {
+        const { NOMBRE_AUTORES, FECHA_PUBLICACION, TITULO_ARTICULO, NOMBRE_PAGINA, URL } = tp.user.constantes().DATOS.REFERENCIAS.web;
+        return {
+            [NOMBRE_AUTORES]: [],
+            [FECHA_PUBLICACION]: null,
+            [TITULO_ARTICULO]: null,
+            [NOMBRE_PAGINA]: null,
+            [URL]: null
+        }
+    },
     actualizarDatos: actualizarDatos,
     generarPreguntas: generarPreguntas,
     describir: describir,
