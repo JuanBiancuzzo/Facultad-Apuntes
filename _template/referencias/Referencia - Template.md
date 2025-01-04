@@ -1,17 +1,24 @@
 <%*
+    const { ETAPAS, TEMPLATE, DIRECTORIOS, TAGS, DATOS: { 
+        ARCHIVO: DATOS_ARCHIVOS, REFERENCIA: DATOS_REFERENCIA 
+    } } = tp.user.constantes();
     const CREAR = "crear";
-    
-    const REFERENCIA_TEMPLATE = tp.file.find_tfile("_template/referencias/Seccion referencias - Template.md");
-    const TEXTO_REFERENCIA = await app.vault.read(REFERENCIA_TEMPLATE);
 
-    const ETAPA_TEMPLATE = tp.file.find_tfile("_template/referencias/Etapa - Template.md");
-    const TEXTO_ETAPA = await app.vault.read(ETAPA_TEMPLATE);
-
-    const dv = app.plugins.plugins.dataview.api;
     const referencias = tp.user.referencia();
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
-    const { ETAPAS, DATOS: { ARCHIVO: DATOS_ARCHIVOS, REFERENCIA: DATOS_REFERENCIA }, TAGS } = tp.user.constantes();
+    const dv = app.plugins.plugins.dataview.api;
+    
+    const REFERENCIA_TEMPLATE = tp.file.find_tfile(
+        `${DIRECTORIOS.template.self}/${DIRECTORIOS.template.referencias}/${TEMPLATE.seccionReferencia}.md`
+    );
+    const TEXTO_REFERENCIA = await app.vault.read(REFERENCIA_TEMPLATE);
+
+    const ETAPA_TEMPLATE = tp.file.find_tfile(
+        `${DIRECTORIOS.template.self}/${DIRECTORIOS.template.referencias}/${TEMPLATE.etapa}.md`
+    );
+    const TEXTO_ETAPA = await app.vault.read(ETAPA_TEMPLATE);
+
 
     let archivo = dv.page(tp.file.path(true));
     let tArchivo = tp.file.find_tfile(tp.file.path(true));

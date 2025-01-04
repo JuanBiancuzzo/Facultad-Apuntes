@@ -1,9 +1,12 @@
 module.exports = () => ({
     CARACTERES_INVALIDOS: ['*', '"', '\\', '/', '<', '>', ':', '|', '?'],
     MESES: (mes) => [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" ][mes - 1],
+    FORMATO_DIA: "YYYY-MM-DD",
     TEMPLATE: {
         nota: "Nota - Template",
         seccion: "Seccion - Template",
+        etapa: "Etapa - Template",
+        seccionReferencia: "Seccion referencias - Template",
     },
     SECCIONES: {
         referencias: { nivel: 1, texto: "Referencias" },
@@ -63,6 +66,10 @@ module.exports = () => ({
             datos: "licenciatura en ciencia de datos",
             fisica: "licenciatura en ciencias físicas",
             matematica: "licenciatura en ciencias matemáticas",
+        },
+        template: {
+            self: "_template",
+            referencias: "referencias",
         },
     },
     REFERENCIAS: {
@@ -144,12 +151,21 @@ module.exports = () => ({
             },
             salir: "salir",
         },
-        ARCHIVO: {
+        MATERIA: {
+
             referencias: "referencias",
+        },
+        RESUMEN: {
+            numero: "capitulo",
+            parte: "parte",
+            referencias: "referencias",
+        },
+        ARCHIVO: {
             etapa: "etapa",
             tags: "tags",
             dia: "dia",
             aliases: "aliases",
+            referencias: "referencias",
         },
         BLOQUES_MATEMATICA: {
             tema: {

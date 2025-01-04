@@ -2,7 +2,9 @@
     const preguntar = tp.user.preguntar(); 
     const referencia = tp.user.referencia();
     const error = tp.user.error();
-    const { TAGS, SECCIONES, REFERENCIAS, DATOS: { ARCHIVO: DATOS_ARCHIVOS, REFERENCIAS: DATOS_REFERENCIA } } = tp.user.constantes();
+    const { TAGS, SECCIONES, REFERENCIAS, DATOS: { 
+        ARCHIVO: DATOS_ARCHIVOS, REFERENCIAS: DATOS_REFERENCIA 
+    } } = tp.user.constantes();
     const TipoArchivo = {
         REFERENCIA: "ref",
         ARCHIVO_REFERENCIA: "archivos",

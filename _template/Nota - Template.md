@@ -133,9 +133,9 @@
                 return await eliminar.preguntar(tp, tArchivo, mensaje);
 
             default:
-                let error = new Error(mensaje);
-                error.name = nombre;
-                throw error;
+                let errorNuevo = new Error(mensaje);
+                errorNuevo.name = nombre;
+                throw errorNuevo;
         }
     }
 _%>

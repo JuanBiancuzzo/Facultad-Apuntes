@@ -1,7 +1,7 @@
 function obtenerTag(tp, tags) {
     let TAGS = tp.user.constantes().TAGS;
     return tags.filter(tag => {
-        switch (tag) {
+        switch (tag.split("/").at(0)) {
             case TAGS.investigacion:
             case TAGS.carrera:
             case TAGS.materia:
