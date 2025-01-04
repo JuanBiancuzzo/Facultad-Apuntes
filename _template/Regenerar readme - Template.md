@@ -10,18 +10,18 @@ Un listado de materias y su estado dividido por carrera
 <%*
     const dv = app.plugins.plugins.dataview.api;
     const { TAGS } = tp.user.constantes();
-    tR += dv.markdownList(dv.pages(`#${TAGS.carrera}`)
+    tR += dv.markdownList(dv.pages(`#${TAGS.carrera.self}`)
         .map(carrera => {
             let path = carrera.file.path.replaceAll(" ", "%20");
             return `[${carrera.file.name}](${path})`;
         }));
 %>
 <%*
-    tR += dv.pages(`#${TAGS.carrera}`)
+    tR += dv.pages(`#${TAGS.carrera.self}`)
         .sort(carrera => carrera.file.name)
         .map(carrera => {
-            let tag = carrera.tags.find(tag => tag.startsWith(TAGS.carrera))
-                .replace(TAGS.carrera, TAGS.materia);
+            let tag = carrera.tags.find(tag => tag.startsWith(TAGS.carrera.self))
+                .replace(TAGS.carrera.self, TAGS.materia);
             const materias = dv.pages(`#${tag}`).sort(materia => materia.file.name);
             let titulos = ["Materia", "Estado"];
             if (carrera.tieneCodigo) titulos.splice(1, 0, "Código");
@@ -119,7 +119,6 @@ Estos proyectos tienen como objetivo investigar y crear pruebas para llegar a un
 <%* 
     proyectos = dv.pages(`#${TAGS.proyecto.self}/${TAGS.proyecto.investigacion}`)
         .sort(proyecto => proyecto.dia, direction="desc");
-
     tabla = dv.markdownTable(["Proyecto", "Estado"], proyectos.map(proyecto => {
         let nombre = proyecto.file.name.trim();
         let path = `${proyecto.file.path}`.replaceAll(" ", "%20");
@@ -137,7 +136,7 @@ Estos proyectos tienen como objetivo crear un GDD y mostrar el desarrollo del ju
 <%* 
     proyectos = dv.pages(`#${TAGS.proyecto.self}/${TAGS.proyecto.juego}`)
         .sort(proyecto => proyecto.dia, direction="desc");
-
+    
     tR += dv.markdownTable(["Juego", "Estado"], proyectos.map(proyecto => {
         let nombre = proyecto.file.name.trim();
         let path = `${proyecto.file.path}`.replaceAll(" ", "%20");
@@ -151,9 +150,8 @@ _%>
 Estos son los cursos que vaya haciendo
 
 <%*
-    proyectos = dv.pages(`#${TAGS.curso} and -#${TAGS.resumen} and -#${TAGS.nota.self}`)
+    proyectos = dv.pages(`#${TAGS.curso.self}`)
         .sort(curso => curso.dia, direction="desc");
-    
     tR += dv.markdownTable(["Curso", "Estado"], proyectos.map(curso => {
         let nombre = curso.file.name.trim();
         let path = `${curso.file.path}`.replaceAll(" ", "%20");
