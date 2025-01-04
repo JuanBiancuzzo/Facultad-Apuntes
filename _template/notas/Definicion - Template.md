@@ -1,6 +1,6 @@
 <%*
     const { FORMATO_DIA, DIRECTORIOS, SECCIONES, TAGS, ETAPAS, TEMPLATE, DATOS: { 
-        RESUMEN: DATOS_RESUMEN, ARCHIVO: DATOS_ARCHIVO, REFERENCIAS: DATOS_REFERENCIA
+        MATERIA: DATOS_MATERIA, RESUMEN: DATOS_RESUMEN, ARCHIVO: DATOS_ARCHIVO, REFERENCIAS: DATOS_REFERENCIA
     } } = tp.user.constantes();
     const SALIR = "salir";
 
@@ -14,12 +14,13 @@
     let carpeta = tArchivo.parent.path.split("/");
     let directorioCarrera = carpeta.at(0);
 
-    let carrera = dv.pages(`"${directorioCarrera}" and #${TAGS.carrera}`).first();
+    let carrera = dv.pages(`"${directorioCarrera}" and #${TAGS.carrera.self}`).first();
 
     let directorioMateria = directorioCarrera;
     if (carpeta.at(1)) directorioMateria += `/${carpeta.at(1)}`;
 
-    let materias = dv.pages(`"${directorioMateria}" and #${TAGS.materia}`);
+    let materias = dv.pages(`"${directorioMateria}" and #${TAGS.materia}`)
+        .sort(materia => parseFloat(materia[DATOS_MATERIA.infoCuatri].replace("C", ".")));
     let materia = materias.first();
     if (materias.length > 1) {
         materia = await preguntar.suggester(
@@ -29,15 +30,16 @@
         );
     }
 
-    let directorioTema = materia.file.folder;
-    if (carpeta.at(2)) directorioTema += `/${carpeta.at(2)}`;
-    let resumenes = dv.pages(`"${directorioTema}" and #${TAGS.resumen}`);
+    let directorioResumen = materia.file.folder;
+    if (carpeta.at(2)) directorioResumen += `/${carpeta.at(2)}`;
+    let resumenes = dv.pages(`"${directorioResumen}" and #${TAGS.resumen}`)
+        .sort(resumen => resumen[DATOS_RESUMEN.numero]);
     let resumen = resumenes.first();
     if (resumenes.length > 1) {
         resumen = await preguntar.suggester(
             tp, ({ [DATOS_RESUMEN.parte]: parte, file }) => `${file.folder.split("/").pop()} ${parte ? `parte ${parte}` : ""}`, 
-            resumenes, "Que tema se quiere agregar esta nota?",
-            error.Quit("No se ingresó en que tema se va a crear la nota")
+            resumenes, "Que resumen se quiere agregar esta nota?",
+            error.Quit("No se ingresó en que resumen se va a crear la nota")
         );
     }
 
@@ -77,7 +79,9 @@
 
     await tp.file.move(`${resumen.file.folder}/${titulo}`, tArchivo);
 
-    let referenciasResumen = resumen[DATOS_RESUMEN.referencias].map(num => parseInt(num, 10));
+    let referenciasResumen = resumen[DATOS_RESUMEN.referencias]
+        ? resumen[DATOS_RESUMEN.referencias].map(num => parseInt(num, 10))
+        : [];
     referenciasResumen = referencia.obtenerReferencias(tp)
         .filter(({ [DATOS_REFERENCIA.numReferencia]: numReferencia }) => referenciasResumen.includes(numReferencia))
         .sort(({ [DATOS_REFERENCIA.numReferencia]: numReferencia }) => numReferencia)

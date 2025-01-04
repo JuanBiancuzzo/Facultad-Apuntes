@@ -229,7 +229,7 @@ function generarPreguntas(tp, datos, curso) {
 function describir(tp, datos) {
     const { 
         curso: { NOMBRE_AUTORES, NOMBRE_CURSO, NOMBRE_PAGINA },
-        temaCurso: { NOMBRE_TEMA, NUMERO_TEMA, PROFESORES, CURSO },
+        temaCurso: { NOMBRE_TEMA, NUMERO_TEMA, PROFESORES, CURSO, PARTE_TEMA },
     } = tp.user.constantes().DATOS.REFERENCIAS;
 
     const dv = app.plugins.plugins.dataview.api;
