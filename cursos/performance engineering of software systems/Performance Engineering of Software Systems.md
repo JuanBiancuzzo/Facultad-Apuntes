@@ -15,7 +15,7 @@ numReferencia: 758
 tipoCita: Curso
 tags:
   - referencia/curso
-  - cursos/performance-engineering-of-software-systems
+  - curso/performance-engineering-of-software-systems
 ---
 # Descripción
 ---

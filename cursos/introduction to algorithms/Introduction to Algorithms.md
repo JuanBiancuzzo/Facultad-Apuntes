@@ -15,7 +15,7 @@ numReferencia: 695
 tipoCita: Curso
 tags:
   - referencia/curso
-  - cursos/introduction-to-algorithms
+  - curso/introduction-to-algorithms
 ---
 # Descripción
 ---

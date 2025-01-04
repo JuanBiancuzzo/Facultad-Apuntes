@@ -15,10 +15,20 @@ module.exports = () => ({
     },
     TAGS: {
         investigacion: "índice",
-        carrera: "carrera",
+        carrera: {
+            self: "carrera",
+            informatica: "ingeniería-en-informática",
+            electronica: "ingeniería-electrónica",
+            datos: "licenciatura-en-ciencia-de-datos",
+            fisica: "licenciatura-en-ciencias-físicas",
+            matematica: "licenciatura-en-ciencias-matemáticas",
+        },
+        curso: {
+            self: "curso",
+            general: "cursos",
+        },
         materia: "materia",
         resumen: "resumen",
-        curso: "cursos",
         coleccion: "colección",
         referencias: "referencia",
         bloqueMatematica: {
@@ -152,7 +162,7 @@ module.exports = () => ({
             salir: "salir",
         },
         MATERIA: {
-
+            infoCuatri: "cuatri",
             referencias: "referencias",
         },
         RESUMEN: {

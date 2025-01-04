@@ -15,7 +15,7 @@ numReferencia: 708
 tipoCita: Curso
 tags:
   - referencia/curso
-  - cursos/software-construction
+  - curso/software-construction
 ---
 # Descripción
 ---

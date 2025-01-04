@@ -13,7 +13,7 @@ numReferencia: 709
 tipoCita: Curso
 tags:
   - referencia/curso
-  - cursos/computation-structures
+  - curso/computation-structures
 ---
 # Descripción
 ---

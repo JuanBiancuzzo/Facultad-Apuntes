@@ -11,7 +11,7 @@ nombrePagina: edX
 url: learning.edx.org/course/course-v1:HarvardX+CS50CS+Cybersecurity
 numReferencia: 694
 tags:
-  - cursos/cs50s-introduction-to-cybersecurity
+  - curso/cs50s-introduction-to-cybersecurity
   - referencia/curso
 tipoCita: Curso
 ---

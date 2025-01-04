@@ -5,7 +5,7 @@ nombreAutores:
   - apellido: Low
     nombre: Daniel M.
 tags:
-  - cursos/ciencia-de-datos-para-salud-mental-y-psicología
+  - curso/ciencia-de-datos-para-salud-mental-y-psicología
 referencias:
   - "631"
   - "632"
