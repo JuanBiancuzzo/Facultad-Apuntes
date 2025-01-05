@@ -57,7 +57,7 @@ La intención en este repositorio es tener un lugar donde poder investigar sobre
 Para eso usaré obsidian, y pdfs, donde en obsidian todo sería archivos markdown para poder leerlo en cualquier editor. Cualquier cosa que vean que es incorrecta, ya seas la persona con tanto tiempo para estar leyendo esto, crea un issue para que pueda verlo.
 
 <%*
-    const indices = dv.pages(`#${TAGS.investigacion}`)
+    const indices = dv.pages(`#${TAGS.investigacion.self}`)
         .filter(indice => {
             let carpeta = indice.file.folder;
             if (indice.equivalente) {

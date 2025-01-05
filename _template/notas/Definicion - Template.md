@@ -1,5 +1,5 @@
 <%*
-    const { FORMATO_DIA, DIRECTORIOS, SECCIONES, TAGS, ETAPAS, TEMPLATE, DATOS: { 
+    const { FORMATO_DIA, SIMBOLOS, DIRECTORIOS, SECCIONES, TAGS, ETAPAS, TEMPLATE, DATOS: { 
         MATERIA: DATOS_MATERIA, RESUMEN: DATOS_RESUMEN, ARCHIVO: DATOS_ARCHIVO, REFERENCIAS: DATOS_REFERENCIA
     } } = tp.user.constantes();
     const SALIR = "salir";
@@ -99,12 +99,12 @@
             let opciones = [], valores = [];
             for (let { numero, datos: datosReferencia, usado } of datos.uso) {
                 opciones.push(numero);
-                let estado = usado ? "⊖" : "⊕";
+                let estado = usado ? SIMBOLOS.sacar : SIMBOLOS.agregar;
                 valores.push(` ${estado} ${referencia.describir(tp, datosReferencia)}`);
             }
 
             opciones.push(SALIR);
-            valores.push(" ↶ Confirmar datos");
+            valores.push(` ${SIMBOLOS.volver} Confirmar datos`);
             return { opciones: opciones, valores: valores };
         }, "Que referencias que quiere usar?",
         { uso: referenciasResumen.values }
@@ -117,7 +117,7 @@
     tR += "---\n";
     tR += tp.obsidian.stringifyYaml({
         [DATOS_ARCHIVO.dia]: tp.file.creation_date(FORMATO_DIA),
-        [DATOS_ARCHIVO.etapa]: ETAPAS.sinEmpezar,
+        [DATOS_ARCHIVO.etapa]: ETAPAS.empezado,
         [DATOS_ARCHIVO.referencias]: referenciasUsar,
         [DATOS_ARCHIVO.tags]: [
             ...tp.user.obtenerTag(tp, resumen[DATOS_ARCHIVO.tags]), 

@@ -14,8 +14,11 @@ await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.c
 ```
 # ¿Qué se va a investigar?
 ---
-Vamos a investigar la rama de la computación que busca [[Algoritmo|algoritmos]] para resolver problemas [[investiga[[Matemática|matemáticos]]n
+Vamos a investigar la rama de la computación que busca [[Algoritmo|algoritmos]] para resolver problemas [[investiga[[Matemática|matemáticos]]
+
+## Resumen
 ---
+
 %% Pendiente... %%
 
 ## Archivos

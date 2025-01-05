@@ -115,7 +115,7 @@
     tR += "---\n";
     tR += tp.obsidian.stringifyYaml({
         [DATOS_ARCHIVO.dia]: tp.file.creation_date(FORMATO_DIA),
-        [DATOS_ARCHIVO.etapa]: ETAPAS.sinEmpezar,
+        [DATOS_ARCHIVO.etapa]: ETAPAS.empezado,
         [DATOS_ARCHIVO.referencias]: referenciasUsar,
         [DATOS_ARCHIVO.tags]: [
             ...tp.user.obtenerTag(tp, resumen[DATOS_ARCHIVO.tags]), 

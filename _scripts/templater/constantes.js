@@ -2,6 +2,12 @@ module.exports = () => ({
     CARACTERES_INVALIDOS: ['*', '"', '\\', '/', '<', '>', ':', '|', '?'],
     MESES: (mes) => [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" ][mes - 1],
     FORMATO_DIA: "YYYY-MM-DD",
+    SIMBOLOS: {
+        sacar: "⊖",
+        agregar: "⊕",
+        volver: "↶",
+        modificar: "✏️",
+    },
     TEMPLATE: {
         nota: "Nota - Template",
         seccion: "Seccion - Template",
@@ -12,9 +18,13 @@ module.exports = () => ({
         referencias: { nivel: 1, texto: "Referencias" },
         resumen: { nivel: 1, texto: "Resumen" },
         definicion: { nivel: 1, texto: "Definición" },
+        resumenInvestigacion: { nivel: 2, texto: "Resumen" },
     },
     TAGS: {
-        investigacion: "índice",
+        investigacion: {
+            self: "índice",
+            general: "investigación",
+        },
         carrera: {
             self: "carrera",
             informatica: "ingeniería-en-informática",
@@ -51,6 +61,7 @@ module.exports = () => ({
         }
     },
     DIRECTORIOS: {
+        imagenes: "img",
         referencias: "_referencias",
         investigacion: "investigación",
         curso: "cursos",
@@ -163,6 +174,13 @@ module.exports = () => ({
         },
         MATERIA: {
             infoCuatri: "cuatri",
+            referencias: "referencias",
+        },
+        INVESTIGACION: {
+            estado: "estado",
+            tags: "tags",
+            dia: "dia",
+            aliases: "aliases",
             referencias: "referencias",
         },
         RESUMEN: {
