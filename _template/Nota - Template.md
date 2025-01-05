@@ -41,6 +41,9 @@
         case DIRECTORIOS.proyectoInvestigacion: 
             opciones.push("Ingresar nota de investigación en el proyecto");
             valores.push("Nota investigacion - Template");
+
+            opciones.push("Ingresar nota de proyecto");
+            valores.push("Nota proyecto - Template");
             break;
 
         case DIRECTORIOS.GDD: 

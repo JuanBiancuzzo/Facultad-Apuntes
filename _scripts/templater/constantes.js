@@ -19,6 +19,7 @@ module.exports = () => ({
         resumen: { nivel: 1, texto: "Resumen" },
         definicion: { nivel: 1, texto: "Definición" },
         resumenInvestigacion: { nivel: 2, texto: "Resumen" },
+        progreso: { nivel: 1, texto: "Progreso" },
     },
     TAGS: {
         investigacion: {
@@ -48,9 +49,18 @@ module.exports = () => ({
         },
         proyecto: {
             self: "proyecto",
-            investigacion: "investigación",
-            practico: "práctico",
-            juego: "GDC",
+            investigacion: {
+                self: "investigación",
+                general: "proyecto-investigación",
+            }, 
+            practico: {
+                self: "práctico",
+                general: "proyecto-práctico"
+            },
+            juego: {
+                self: "GDD",
+                general: "game-design-documents",
+            },
         },
         nota: {
             self: "nota",
@@ -187,6 +197,15 @@ module.exports = () => ({
             numero: "capitulo",
             parte: "parte",
             referencias: "referencias",
+        },
+        PROGRESO: {
+            dia: "dia",
+            tags: "tags",
+        },
+        PROYECTO: {
+            dia: "dia",
+            estado: "estado",
+            tags: "tags",
         },
         ARCHIVO: {
             etapa: "etapa",

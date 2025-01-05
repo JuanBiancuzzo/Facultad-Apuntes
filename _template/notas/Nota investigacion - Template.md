@@ -15,15 +15,24 @@
     if (carpeta.last().trim() == DIRECTORIOS.imagenes) carpeta.pop();
 
     let directorioIndice = carpeta.join("/");
-    let indices = dv.pages(`"${directorioIndice}" and #${TAGS.investigacion.self}`)
+    let indices = dv.pages(`"${directorioIndice}" and (#${TAGS.investigacion.self} or #${TAGS.proyecto.self}/${TAGS.proyecto.investigacion.self})`)
         .filter(indice => indice.file.folder == directorioIndice);
 
     let indice;
     if (indices.length > 0) {
         indice = indices.first();
+        if (indices.length > 1) {
+            indice = await preguntar.suggester(
+                tp, (indice) => indice.file.name, indices,
+                "Que tema de investigación se va a ingresar la nota?",
+                error.Quit("No se ingresó el tema de investigación en el cual ingresar la nota")
+            )
+        }
 
     } else {
-        indices = dv.pages(`"${DIRECTORIOS.investigacion}" and #${TAGS.investigacion.self}`)
+        let largoEsperado = directorioIndice.split("/").length + 1;
+        indices = dv.pages(`"${directorioIndice}" and (#${TAGS.investigacion.self} or #${TAGS.proyecto.self}/${TAGS.proyecto.investigacion.self})`)
+            .filter(indice => indice.file.folder.split("/").length == largoEsperado)
             .filter(indice => {
                 let tags = indice[DATOS_INVESTIGACION.tags] ? indice[DATOS_INVESTIGACION.tags] : [];
                 return dv.array(tags)
@@ -57,7 +66,7 @@
 
             let indicesAgregar = {};
             for (let tag of resultado.tags) {
-                let largoEsperado = tag.split("/").length + 1;
+                largoEsperado = tag.split("/").length + 1;
                 dv.pages(`#${tag} and #${TAGS.investigacion.self}`)
                     .filter(indiceNuevo => {
                         let tagsNuevos = indiceNuevo[DATOS_INVESTIGACION.tags]
