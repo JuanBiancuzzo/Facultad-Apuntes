@@ -99,7 +99,7 @@ Un listado de los proyectos y su estado actual
 Estos proyectos tienen una aplicación como resultado final
 
 <%* 
-    let proyectos = dv.pages(`#${TAGS.proyecto.self}/${TAGS.proyecto.practico}`)
+    let proyectos = dv.pages(`#${TAGS.proyecto.self}/${TAGS.proyecto.practico.self}`)
         .sort(proyecto => proyecto.dia, direction="desc");
 
     tabla = dv.markdownTable(["Proyecto", "Estado"], proyectos.map(proyecto => {
@@ -117,7 +117,7 @@ _%>
 Estos proyectos tienen como objetivo investigar y crear pruebas para llegar a un resultado
 
 <%* 
-    proyectos = dv.pages(`#${TAGS.proyecto.self}/${TAGS.proyecto.investigacion}`)
+    proyectos = dv.pages(`#${TAGS.proyecto.self}/${TAGS.proyecto.investigacion.self}`)
         .sort(proyecto => proyecto.dia, direction="desc");
     tabla = dv.markdownTable(["Proyecto", "Estado"], proyectos.map(proyecto => {
         let nombre = proyecto.file.name.trim();
@@ -134,7 +134,7 @@ _%>
 Estos proyectos tienen como objetivo crear un GDD y mostrar el desarrollo del juego
 
 <%* 
-    proyectos = dv.pages(`#${TAGS.proyecto.self}/${TAGS.proyecto.juego}`)
+    proyectos = dv.pages(`#${TAGS.proyecto.self}/${TAGS.proyecto.juego.self}`)
         .sort(proyecto => proyecto.dia, direction="desc");
     
     tR += dv.markdownTable(["Juego", "Estado"], proyectos.map(proyecto => {
