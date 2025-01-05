@@ -1,5 +1,5 @@
 async function generar(tp) {
-    const { DIRECTORIOS, REFERENCIAS } = tp.user.constantes();
+    const { TEMPLATE, DIRECTORIOS, REFERENCIAS } = tp.user.constantes();
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
 
@@ -45,7 +45,7 @@ async function generar(tp) {
             throw error.Prompt(mensaje);
         }
 
-        let template = tp.file.find_tfile("Nota - Template");
+        let template = tp.file.find_tfile(TEMPLATE.nota.self);
         directorio = app.vault.getAbstractFileByPath(directorio);
 
         return await tp.file.create_new(template, nombre, false, directorio);

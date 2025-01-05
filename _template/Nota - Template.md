@@ -1,9 +1,7 @@
 <%*
-    const DIRECTORIOS = tp.user.constantes().DIRECTORIOS;
+    const { DIRECTORIOS, TAGS, TEMPLATE } = tp.user.constantes().DIRECTORIOS;
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
-
-    const dv = app.plugins.plugins.dataview.api;
     
     let tArchivo = tp.file.find_tfile(tp.file.path(true));
     let tPadre = tArchivo.parent;
@@ -12,104 +10,89 @@
 		return;
 	}
 
-    let path = `${tPadre.path}/${tArchivo.basename}`.split("/");
-    let directorioBase = path.at(0);
+    let carpeta = `${tPadre.path}/${tArchivo.basename}`;
+    let directorio = carpeta.split("/")
+    let directorioBase = directorio.at(0);
 
     let opciones = [], valores = [];
+    let ingresarOpcion = (opcion, valor) => {
+        if (!opciones.includes(opcion)) {
+            opciones.push(opcion);
+            valores.push(valor);
+        }
+    };
 
+    // Agregar opciones por directorio
     switch (directorioBase) {
-        case DIRECTORIOS.referencias: 
-            opciones.push("Ingresar referencia");
-            valores.push("Referencia simple - Template");
-            break;
-
-        case DIRECTORIOS.investigacion: 
-            opciones.push("Ingresar nota de investigación");
-            valores.push("Nota investigacion - Template");
-            break;
-        
-        case DIRECTORIOS.curso: 
-            opciones.push("Ingresar nota de curso");
-            valores.push("Nota curso - Template");
-            break;
-
-        case DIRECTORIOS.proyectoPractico: 
-            opciones.push("Ingresar nota de proyecto");
-            valores.push("Nota proyecto - Template");
-            break;
-
+        case DIRECTORIOS.referencias: ingresarOpcion("Ingresar referencia", TEMPLATE.referencia.general); break;
+        case DIRECTORIOS.investigacion: ingresarOpcion("Ingresar nota de investigación", TEMPLATE.nota.investigacion); break;
+        case DIRECTORIOS.curso: ingresarOpcion("Ingresar nota de curso", TEMPLATE.nota.curso); break;
+        case DIRECTORIOS.proyectoPractico: ingresarOpcion("Ingresar nota de proyecto", TEMPLATE.nota.proyecto); break;
         case DIRECTORIOS.proyectoInvestigacion: 
-            opciones.push("Ingresar nota de investigación en el proyecto");
-            valores.push("Nota investigacion - Template");
-
-            opciones.push("Ingresar nota de proyecto");
-            valores.push("Nota proyecto - Template");
+            ingresarOpcion("Ingresar nota de investigación en el proyecto", TEMPLATE.nota.investigacion);
+            ingresarOpcion("Ingresar nota de proyecto", TEMPLATE.nota.proyecto);
             break;
 
-        case DIRECTORIOS.GDD: 
-            opciones.push("Ingresar un GDD");
-            valores.push("Nota proyecto - Template");
-            break;
+        case DIRECTORIOS.GDD: ingresarOpcion("Ingresar un GDD", TEMPLATE.nota.proyecto); break;
 
         case DIRECTORIOS.carrera.informatica: 
         case DIRECTORIOS.carrera.electronica: 
         case DIRECTORIOS.carrera.datos: 
         case DIRECTORIOS.carrera.fisica: 
         case DIRECTORIOS.carrera.matematica: 
-            opciones.push("Ingresar nota de materia");
-            valores.push("Definicion - Template");
+            ingresarOpcion("Ingresar nota de materia", TEMPLATE.nota.materia);
             break;
 
         case DIRECTORIOS.coleccion.self: 
             const DIRECT_COLECCION = DIRECTORIOS.coleccion;
-            let segundoDirectorio = path.at(1);
+            let segundoDirectorio = directorio.at(1);
 
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.componentes) {
-                opciones.push("Ingresar un componente");
-                valores.push("Componente - Template");
-
+                ingresarOpcion("Ingresar un componente", TEMPLATE.coleccion.componente);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.dataStructures) {
-                opciones.push("Ingresar una estructura de datos");
-                valores.push("Estructura de datos - Template");
-
+                ingresarOpcion("Ingresar una estructura de datos", TEMPLATE.coleccion.estructuraDatos);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.distribuciones) {
-                opciones.push("Ingresar una función de distribución");
-                valores.push("Distribucion - Template");
-
+                ingresarOpcion("Ingresar una función de distribución", TEMPLATE.coleccion.distribucion);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.documentos) {
-                opciones.push("Ingresar un documento legal");
-                valores.push("Documento legal - Template");
-
+                ingresarOpcion("Ingresar un documento legal", TEMPLATE.coleccion.documentoLegal);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.funciones) {
-                opciones.push("Ingresar una función de programación");
-                valores.push("Funcion - Template");
-
+                ingresarOpcion("Ingresar una función de programación", TEMPLATE.coleccion.funcion);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.libros) {
-                opciones.push("Ingresar un libro");
-                valores.push("Libro - Template");
-
+                ingresarOpcion("Ingresar un libro", TEMPLATE.coleccion.libro);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.papers) {
-                opciones.push("Ingresar un paper o RFC");
-                valores.push("Paper - Template");
-
+                ingresarOpcion("Ingresar un paper o RFC", TEMPLATE.coleccion.paper);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.programas) {
-                opciones.push("Ingresar programa");
-                valores.push("Programa - Template");
-
+                ingresarOpcion("Ingresar programa", TEMPLATE.coleccion.programa);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.recetas) {
-                opciones.push("Ingresar receta");
-                valores.push("Receta - Template");
-
+                ingresarOpcion("Ingresar receta", TEMPLATE.coleccion.receta);
             }
             break;
+    }
+
+    const dv = app.plugins.plugins.dataview.api;
+    if (dv.pages(`"${carpeta}" and #${TAGS.investigacion.self}`).length > 0)  {
+        ingresarOpcion("Ingresar referencia", TEMPLATE.referencia.general);
+    }
+    if (dv.pages(`"${carpeta}" and #${TAGS.curso.self}`).length > 0)  {
+        ingresarOpcion("Ingresar nota de curso", TEMPLATE.nota.curso)
+    }
+    if (dv.pages(`"${carpeta}" and #${TAGS.proyecto.self}/${TAGS.proyecto.practico.self}`).length > 0)  {
+        ingresarOpcion("Ingresar nota de proyecto", TEMPLATE.nota.proyecto)
+    }
+    if (dv.pages(`"${carpeta}" and #${TAGS.proyecto.self}/${TAGS.proyecto.investigacion.self}`).length > 0)  {
+        ingresarOpcion("Ingresar nota de investigación en el proyecto", TEMPLATE.nota.investigacion);
+        ingresarOpcion("Ingresar nota de proyecto", TEMPLATE.nota.proyecto);
+    }
+    if (dv.pages(`"${carpeta}" and #${TAGS.proyecto.self}/${TAGS.proyecto.juego.self}`).length > 0)  {
+        ingresarOpcion("Ingresar un GDD", TEMPLATE.nota.proyecto)
     }
 
     try {
