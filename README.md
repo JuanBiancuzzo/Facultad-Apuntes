@@ -4,7 +4,7 @@ Voy a ir poniendo mis apuntes acá, y estoy usando [Obsidian](https://obsidian.m
 
 Cualquier corrección/ampliación de los contenidos en este proyecto, por favor hacer un [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) para poder visualizar los cambios pedidos. En el caso de sugerir cualquier cosa, por favor crear un [issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue) donde ahí lo podré ver. 
 
-## Materias
+## Carreras
 ---
 Un listado de materias y su estado dividido por carrera
 - [Ingeniería Electrónica](ingeniería%20electrónica/Ingeniería%20Electrónica.md)
@@ -171,8 +171,8 @@ Estos son los cursos que vaya haciendo
 
 | Curso                                                                                                                                                                                    | Estado                              |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| [Introduction to Algorithms](cursos/introduction%20to%20algorithms/Introduction%20to%20Algorithms.md)                                                                                    | Empezando el curso                  |
 | [Computation Structures](cursos/computation%20structures/Computation%20Structures.md)                                                                                                    | Sin empezar                         |
+| [Introduction to Algorithms](cursos/introduction%20to%20algorithms/Introduction%20to%20Algorithms.md)                                                                                    | Empezando el curso                  |
 | [Performance Engineering of Software Systems](cursos/performance%20engineering%20of%20software%20systems/Performance%20Engineering%20of%20Software%20Systems.md)                         | Sin empezar                         |
 | [Software Construction](cursos/software%20construction/Software%20Construction.md)                                                                                                       | Sin empezar                         |
 | [CS50's Introduction to Cybersecurity](cursos/cs50's%20introduction%20to%20cybersecurity/CS50's%20Introduction%20to%20Cybersecurity.md)                                                  | Sin empezar                         |
