@@ -4,7 +4,7 @@ estado: Falta pasar el resumen
 plan: "1986"
 codigo: "6201"
 tags:
-  - materia/ingeniería-en-informática
+  - materia/fisica-1
 etapa: empezado
 ---
 # Apuntes

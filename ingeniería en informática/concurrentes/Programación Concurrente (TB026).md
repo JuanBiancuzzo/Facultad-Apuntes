@@ -1,7 +1,7 @@
 ---
 plan: 2023
 tags:
-  - materia/ingeniería-en-informática
+  - materia/concurrentes
 correlativas:
   - "[[ingeniería en informática/taller/Taller de programación 1 (9508).md|Taller de programación 1]]"
   - "[[ingeniería en informática/sisop/Sistemas operativos (7508).md|Sistemas operativos]]"

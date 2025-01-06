@@ -8,8 +8,8 @@ estado: Estamos buscando información sobre el tema
 tags:
   - proyecto/práctico
   - ingeniería-en-informática/tpp
-  - materia/ingeniería-en-informática
-correlativas:
+  - materia/tpp
+correlativas: 
 ---
 # Propuesta
 ---

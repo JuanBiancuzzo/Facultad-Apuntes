@@ -4,7 +4,7 @@ codigo: TA048
 plan: 2023
 estado: Terminado
 tags:
-  - materia/ingeniería-en-informática
+  - materia/redes
 etapa: terminado
 correlativas:
   - "[[Sistemas operativos (7508)|Sistemas operativos]]"

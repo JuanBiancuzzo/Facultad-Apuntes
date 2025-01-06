@@ -4,7 +4,7 @@ estado: Falta pasar el resumen
 plan: "1986"
 codigo: "7512"
 tags:
-  - materia/ingeniería-en-informática
+  - materia/numerico
 etapa: empezado
 correlativas:
   - "[[Álgebra 2 A (6108)|Álgebra 2]]"

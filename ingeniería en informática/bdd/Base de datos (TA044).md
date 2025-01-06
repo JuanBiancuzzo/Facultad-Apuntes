@@ -4,7 +4,7 @@ codigo: TA044
 plan: 2023
 estado: Falta ampliar
 tags:
-  - materia/ingeniería-en-informática
+  - materia/bdd
 etapa: empezado
 correlativas:
   - "[[Organización de datos (7506)|Organización de datos]]"

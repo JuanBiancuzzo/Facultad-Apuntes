@@ -4,7 +4,7 @@ estado: Falta terminar de pasar el resumen
 plan: "1986"
 codigo: "6108"
 tags:
-  - materia/ingeniería-en-informática
+  - materia/algebra-2
 etapa: empezado
 ---
 # Apuntes

@@ -4,7 +4,7 @@ estado: Terminado
 plan: "2009"
 codigo: "8602"
 tags:
-  - materia/ingeniería-electrónica
+  - materia/intro
 etapa: terminado
 correlativas:
   - "[[Física 1 A (8201)|Física 1 A]]"

@@ -4,7 +4,7 @@ estado: Terminado
 plan: "1986"
 codigo: "8604"
 tags:
-  - materia/ingeniería-electrónica
+  - materia/adc
 etapa: terminado
 correlativas:
   - "[[Análisis matemático 3 (6110)|Análisis matemático 3]]"

@@ -4,7 +4,7 @@ estado: Terminado
 plan: "1986"
 codigo: "6203"
 tags:
-  - materia/ingeniería-en-informática
+  - materia/fisica-2
 etapa: terminado
 correlativas:
   - "[[Física 1 A (6201)|Física 1]]"

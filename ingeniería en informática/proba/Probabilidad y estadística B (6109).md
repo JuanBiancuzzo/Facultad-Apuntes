@@ -4,7 +4,7 @@ estado: Terminado
 plan: "1986"
 codigo: "6109"
 tags:
-  - materia/ingeniería-en-informática
+  - materia/proba
 etapa: terminado
 correlativas:
   - "[[Álgebra 2 A (6108)|Álgebra 2]]"

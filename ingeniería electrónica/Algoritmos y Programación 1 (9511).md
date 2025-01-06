@@ -1,7 +1,7 @@
 ---
 plan: 2009
 tags:
-  - materia/ingeniería-electrónica
+  - materia/algo-1
 correlativas: []
 codigo: 9511
 equivalencia: "[[ingeniería en informática/algo 1/Algoritmos y programación 1 (7540).md|Algoritmos y programación 1 (7540)]]"

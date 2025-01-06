@@ -4,8 +4,8 @@ plan: 1992
 etapa: sin-empezar
 estado: Sin empezar
 tags:
-  - materia/licenciatura-en-ciencias-físicas
-correlativas:
+  - materia/fisica-1
+correlativas: 
 ---
 # Apuntes
 ---

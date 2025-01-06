@@ -1,7 +1,7 @@
 ---
 plan: 1992
 tags:
-  - materia/licenciatura-en-ciencias-físicas
+  - materia/analisis-1
 correlativas: []
 equivalencia: "[[licenciatura en ciencias matemáticas/analisis 1/Análisis 1.md|Análisis 1]]"
 ---
