@@ -1,8 +1,8 @@
 ---
 capitulo: 9
-tags: 
- - licenciatura-en-ciencias-físicas/fisica-1/Interacción-gravitatoria
- - resumen/materia
+tags:
+  - licenciatura-en-ciencias-físicas/fisica-1/Interacción-gravitatoria
+  - resumen/Interacción-gravitatoria
 ---
 # Índice
 ---

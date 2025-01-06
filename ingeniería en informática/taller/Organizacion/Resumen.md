@@ -2,8 +2,8 @@
 capitulo: 2
 tags:
   - ingeniería-en-informática/taller/Organizacion
-  - resumen/materia
   - ingeniería-electrónica/taller/Organizacion
+  - resumen/Organizacion
 ---
 # Índice 
 ---

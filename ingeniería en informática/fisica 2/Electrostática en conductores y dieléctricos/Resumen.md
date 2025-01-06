@@ -2,8 +2,8 @@
 capitulo: 3
 tags:
   - ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
-  - resumen/materia
   - ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - resumen/Electrostática-en-conductores-y-dieléctricos
 ---
 # Índice 
 ---

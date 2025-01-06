@@ -1,8 +1,8 @@
 ---
 capitulo: 8
-tags: 
- - ingeniería-en-informática/discreta/Grafos
- - resumen/materia
+tags:
+  - ingeniería-en-informática/discreta/Grafos
+  - resumen/Grafos
 ---
 # Índice
 ---

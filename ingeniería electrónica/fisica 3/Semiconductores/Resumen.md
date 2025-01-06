@@ -2,8 +2,8 @@
 capitulo: 11
 tags:
   - ingeniería-electrónica/fisica-3/Semiconductores
-  - resumen/materia
   - ingeniería-en-informática/fisica-3/Semiconductores
+  - resumen/Semiconductores
 ---
 # Índice 
 ---

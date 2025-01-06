@@ -2,7 +2,7 @@
 capitulo: 10
 tags:
   - ingeniería-en-informática/orga/NLP/2
-  - resumen/materia
+  - resumen/NLP
 parte: 2
 ---
 # Índice 

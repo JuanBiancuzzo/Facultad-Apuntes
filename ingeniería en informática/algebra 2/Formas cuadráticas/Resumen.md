@@ -2,8 +2,8 @@
 capitulo: 8
 tags:
   - ingeniería-en-informática/algebra-2/Formas-cuadráticas
-  - resumen/materia
   - ingeniería-electrónica/algebra-2/Formas-cuadráticas
+  - resumen/Formas-cuadráticas
 ---
 # Índice 
 ---

@@ -2,8 +2,8 @@
 capitulo: 11
 tags:
   - ingeniería-en-informática/proba/Test-de-hipótesis
-  - resumen/materia
   - ingeniería-electrónica/proba/Test-de-hipótesis
+  - resumen/Test-de-hipótesis
 ---
 # Índice 
 ---

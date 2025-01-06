@@ -2,7 +2,7 @@
 capitulo: 6
 tags:
   - ingeniería-en-informática/sisop/File-system
-  - resumen/materia
+  - resumen/File-system
 ---
 # Índice 
 ---

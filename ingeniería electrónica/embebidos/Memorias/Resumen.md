@@ -1,8 +1,8 @@
 ---
 capitulo: 3
-tags: 
- - ingeniería-electrónica/embebidos/Memorias
- - resumen/materia
+tags:
+  - ingeniería-electrónica/embebidos/Memorias
+  - resumen/Memorias
 ---
 # Índice
 ---

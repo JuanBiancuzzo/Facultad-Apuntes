@@ -2,7 +2,7 @@
 capitulo: 1
 tags:
   - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
-  - resumen/materia
+  - resumen/Diseño-desarrollo-y-depuración
 ---
 # Índice
 ---

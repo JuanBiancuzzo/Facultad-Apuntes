@@ -1,8 +1,8 @@
 ---
 capitulo: 2
-tags: 
- - ingeniería-electrónica/intro/Reducción-de-circuitos
- - resumen/materia
+tags:
+  - ingeniería-electrónica/intro/Reducción-de-circuitos
+  - resumen/Reducción-de-circuitos
 ---
 # Índice 
 ---

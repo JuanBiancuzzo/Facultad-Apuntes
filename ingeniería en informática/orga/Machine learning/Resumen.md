@@ -1,8 +1,8 @@
 ---
 capitulo: 9
-tags: 
- - ingeniería-en-informática/orga/Machine-learning
- - resumen/materia
+tags:
+  - ingeniería-en-informática/orga/Machine-learning
+  - resumen/Machine-learning
 ---
 # Índice 
 ---

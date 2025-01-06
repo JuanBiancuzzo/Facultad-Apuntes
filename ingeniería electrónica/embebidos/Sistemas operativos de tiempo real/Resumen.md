@@ -2,7 +2,7 @@
 capitulo: 6
 tags:
   - ingeniería-electrónica/embebidos/Sistemas-operativos-de-tiempo-real
-  - resumen/materia
+  - resumen/Sistemas-operativos-de-tiempo-real
 ---
 # Índice
 ---

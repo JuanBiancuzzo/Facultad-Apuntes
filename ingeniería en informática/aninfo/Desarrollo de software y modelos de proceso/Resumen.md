@@ -1,8 +1,8 @@
 ---
 capitulo: 11
-tags: 
- - ingeniería-en-informática/aninfo/Desarrollo-de-software-y-modelos-de-proceso
- - resumen/materia
+tags:
+  - ingeniería-en-informática/aninfo/Desarrollo-de-software-y-modelos-de-proceso
+  - resumen/Desarrollo-de-software-y-modelos-de-proceso
 ---
 # Índice 
 ---

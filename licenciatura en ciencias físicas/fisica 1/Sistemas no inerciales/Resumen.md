@@ -1,8 +1,8 @@
 ---
 capitulo: 4
-tags: 
- - licenciatura-en-ciencias-físicas/fisica-1/Sistemas-no-inerciales
- - resumen/materia
+tags:
+  - licenciatura-en-ciencias-físicas/fisica-1/Sistemas-no-inerciales
+  - resumen/Sistemas-no-inerciales
 ---
 # Índice
 ---

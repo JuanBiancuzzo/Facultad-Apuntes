@@ -2,8 +2,8 @@
 capitulo: 4
 tags:
   - ingeniería-en-informática/taller/Concurrencia
-  - resumen/materia
   - ingeniería-electrónica/taller/Concurrencia
+  - resumen/Concurrencia
 ---
 # Índice 
 ---

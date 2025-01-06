@@ -2,8 +2,8 @@
 capitulo: 8
 tags:
   - ingeniería-electrónica/analisis-3/Series-de-Laurent
-  - resumen/materia
   - ingeniería-en-informática/analisis-3/Series-de-Laurent
+  - resumen/Series-de-Laurent
 ---
 # Índice 
 ---

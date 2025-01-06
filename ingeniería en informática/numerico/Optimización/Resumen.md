@@ -2,8 +2,8 @@
 capitulo: 6
 tags:
   - ingeniería-en-informática/numerico/Optimización
-  - resumen/materia
   - ingeniería-electrónica/numerico/Optimización
+  - resumen/Optimización
 ---
 # Índice 
 ---

@@ -1,8 +1,8 @@
 ---
 capitulo: 3
-tags: 
- - licenciatura-en-ciencias-físicas/fisica-1/Movimiento-oscilatorio
- - resumen/materia
+tags:
+  - licenciatura-en-ciencias-físicas/fisica-1/Movimiento-oscilatorio
+  - resumen/Movimiento-oscilatorio
 ---
 # Índice
 ---

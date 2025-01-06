@@ -2,8 +2,8 @@
 capitulo: 8
 tags:
   - ingeniería-en-informática/estructura/Sistema-ARC
-  - resumen/materia
   - ingeniería-electrónica/estructura/Sistema-ARC
+  - resumen/Sistema-ARC
 ---
 # Índice
 ---

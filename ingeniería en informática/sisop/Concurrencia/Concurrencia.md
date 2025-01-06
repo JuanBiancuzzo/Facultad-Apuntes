@@ -4,9 +4,9 @@ tags:
   - ingeniería-en-informática/sisop/Concurrencia
   - nota/facultad
   - ingeniería-en-informática/taller/Concurrencia
-  - resumen/materia
   - ingeniería-electrónica/taller/Concurrencia
   - ingeniería-en-informática/concurrentes/Introducción
+  - resumen/Concurrencia
 ---
 # Definición
 ---

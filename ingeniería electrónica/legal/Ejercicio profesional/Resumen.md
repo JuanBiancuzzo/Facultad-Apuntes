@@ -1,8 +1,8 @@
 ---
 capitulo: 9
-tags: 
- - ingeniería-electrónica/legal/Ejercicio-profesional
- - resumen/materia
+tags:
+  - ingeniería-electrónica/legal/Ejercicio-profesional
+  - resumen/Ejercicio-profesional
 ---
 # Índice 
 ---

@@ -1,8 +1,8 @@
 ---
 capitulo: 3
-tags: 
- - ingeniería-electrónica/seguridad/Prevención-de-incendios
- - resumen/materia
+tags:
+  - ingeniería-electrónica/seguridad/Prevención-de-incendios
+  - resumen/Prevención-de-incendios
 ---
 # Índice 
 ---

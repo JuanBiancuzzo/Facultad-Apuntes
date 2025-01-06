@@ -2,8 +2,8 @@
 capitulo: 2
 tags:
   - ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
-  - resumen/materia
   - ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
+  - resumen/Electrostática-en-el-vacío
 ---
 # Índice 
 ---

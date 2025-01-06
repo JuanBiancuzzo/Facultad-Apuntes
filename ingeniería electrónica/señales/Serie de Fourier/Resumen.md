@@ -1,8 +1,8 @@
 ---
 capitulo: 3
-tags: 
- - ingeniería-electrónica/señales/Serie-de-Fourier
- - resumen/materia
+tags:
+  - ingeniería-electrónica/señales/Serie-de-Fourier
+  - resumen/Serie-de-Fourier
 ---
 # Índice 
 ---

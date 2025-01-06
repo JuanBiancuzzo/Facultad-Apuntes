@@ -1,8 +1,8 @@
 ---
 capitulo: 6
-tags: 
- - ingeniería-en-informática/orga/Spark
- - resumen/materia
+tags:
+  - ingeniería-en-informática/orga/Spark
+  - resumen/Spark
 ---
 # Índice 
 ---

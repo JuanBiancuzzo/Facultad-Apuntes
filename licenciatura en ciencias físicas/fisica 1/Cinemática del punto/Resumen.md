@@ -1,8 +1,8 @@
 ---
 capitulo: 1
-tags: 
- - licenciatura-en-ciencias-físicas/fisica-1/Cinemática-del-punto
- - resumen/materia
+tags:
+  - licenciatura-en-ciencias-físicas/fisica-1/Cinemática-del-punto
+  - resumen/Cinemática-del-punto
 ---
 # Índice
 ---

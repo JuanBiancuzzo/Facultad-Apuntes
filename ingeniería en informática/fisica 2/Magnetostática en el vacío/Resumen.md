@@ -2,8 +2,8 @@
 capitulo: 5
 tags:
   - ingeniería-en-informática/fisica-2/Magnetostática-en-el-vacío
-  - resumen/materia
   - ingeniería-electrónica/fisica-2/Magnetostática-en-el-vacío
+  - resumen/Magnetostática-en-el-vacío
 ---
 # Índice 
 ---

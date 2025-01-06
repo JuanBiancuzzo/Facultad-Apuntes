@@ -1,8 +1,8 @@
 ---
 capitulo: 2
-tags: 
- - licenciatura-en-ciencias-físicas/fisica-1/Dinámica-del-punto
- - resumen/materia
+tags:
+  - licenciatura-en-ciencias-físicas/fisica-1/Dinámica-del-punto
+  - resumen/Dinámica-del-punto
 ---
 # Índice
 ---

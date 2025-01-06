@@ -1,8 +1,8 @@
 ---
 capitulo: 7
-tags: 
- - ingeniería-electrónica/legal/Derecho-real
- - resumen/materia
+tags:
+  - ingeniería-electrónica/legal/Derecho-real
+  - resumen/Derecho-real
 ---
 # Índice 
 ---

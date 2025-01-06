@@ -1,8 +1,8 @@
 ---
 capitulo: 2
-tags: 
- - ingeniería-en-informática/bdd/SQL
- - resumen/materia
+tags:
+  - ingeniería-en-informática/bdd/SQL
+  - resumen/SQL
 ---
 # Índice 
 ---

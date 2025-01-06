@@ -2,8 +2,8 @@
 capitulo: 3
 tags:
   - ingeniería-en-informática/numerico/Ajuste-de-funciones
-  - resumen/materia
   - ingeniería-electrónica/numerico/Ajuste-de-funciones
+  - resumen/Ajuste-de-funciones
 ---
 # Índice 
 ---

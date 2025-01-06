@@ -2,8 +2,8 @@
 capitulo: 3
 tags:
   - ingeniería-en-informática/redes/Capa-de-Transporte
-  - resumen/materia
   - ingeniería-electrónica/redes/Capa-de-Transporte
+  - resumen/Capa-de-Transporte
 referencias:
   - "591"
 ---

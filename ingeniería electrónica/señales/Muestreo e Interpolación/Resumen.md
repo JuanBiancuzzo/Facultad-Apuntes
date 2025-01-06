@@ -1,8 +1,8 @@
 ---
 capitulo: 5
-tags: 
- - ingeniería-electrónica/señales/Muestreo-e-Interpolación
- - resumen/materia
+tags:
+  - ingeniería-electrónica/señales/Muestreo-e-Interpolación
+  - resumen/Muestreo-e-Interpolación
 ---
 # Índice 
 ---

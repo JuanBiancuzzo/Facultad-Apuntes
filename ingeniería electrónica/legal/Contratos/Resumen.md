@@ -1,8 +1,8 @@
 ---
 capitulo: 3
-tags: 
- - ingeniería-electrónica/legal/Contratos
- - resumen/materia
+tags:
+  - ingeniería-electrónica/legal/Contratos
+  - resumen/Contratos
 ---
 # Índice 
 ---

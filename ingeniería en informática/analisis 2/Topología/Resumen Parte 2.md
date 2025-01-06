@@ -2,8 +2,8 @@
 capitulo: 5
 tags:
   - ingeniería-en-informática/analisis-2/Topología/2
-  - resumen/materia
   - ingeniería-electrónica/analisis-2/Topología/2
+  - resumen/Topología
 parte: 2
 ---
 # Índice

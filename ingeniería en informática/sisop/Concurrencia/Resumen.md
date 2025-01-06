@@ -1,8 +1,8 @@
 ---
 capitulo: 5
-tags: 
- - ingeniería-en-informática/sisop/Concurrencia
- - resumen/materia
+tags:
+  - ingeniería-en-informática/sisop/Concurrencia
+  - resumen/Concurrencia
 ---
 # Índice 
 ---

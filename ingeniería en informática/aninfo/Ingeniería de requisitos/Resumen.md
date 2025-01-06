@@ -1,8 +1,8 @@
 ---
 capitulo: 2
-tags: 
- - ingeniería-en-informática/aninfo/Ingeniería-de-requisitos
- - resumen/materia
+tags:
+  - ingeniería-en-informática/aninfo/Ingeniería-de-requisitos
+  - resumen/Ingeniería-de-requisitos
 ---
 # Índice 
 ---

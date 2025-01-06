@@ -1,8 +1,8 @@
 ---
 capitulo: 1
-tags: 
- - ingeniería-en-informática/orga/Pandas
- - resumen/materia
+tags:
+  - ingeniería-en-informática/orga/Pandas
+  - resumen/Pandas
 ---
 # Índice 
 ---

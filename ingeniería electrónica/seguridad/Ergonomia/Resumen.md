@@ -1,8 +1,8 @@
 ---
 capitulo: 15
-tags: 
- - ingeniería-electrónica/seguridad/Ergonomia
- - resumen/materia
+tags:
+  - ingeniería-electrónica/seguridad/Ergonomia
+  - resumen/Ergonomia
 ---
 # Índice 
 ---
