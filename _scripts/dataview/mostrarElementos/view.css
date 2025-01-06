@@ -1,0 +1,102 @@
+.grilla {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding-top: 1em;
+}
+
+.nota, .nota-larga {
+    border-radius: 1em;
+    border: 2px solid #dadada; 
+    padding: 0 0 1em 2em;
+    min-height: 4em;
+}
+
+.nota {
+    flex: 1 1 calc(50% - 1em);
+    order: 1;
+}
+
+.nota-larga {
+    flex: 2 1 calc(100% - 1em);
+    order: 1;
+}
+
+.lista {
+    display: flex;
+    padding-right: 1.5em;
+}
+
+.nota-larga .lista {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    padding-right: 2.7em;
+}
+
+.etapa {
+    position: relative;
+    margin: 0;
+}
+
+.etapa svg {
+    position: absolute;
+    top: 0;
+    right: 1em;
+    width: 1.5em;
+}
+
+.subnombre {
+    text-indent: 1em;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.descripcion {
+    padding-right: 1.5em;
+}
+
+.separacion {
+    padding-left: 0.5em;
+}
+
+.item {
+    margin: 0;
+    color: #9a9a9a;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    flex: 1 1 calc(50% - 1em);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.hide {
+    display: none;
+    padding: 0em;
+}
+
+.mostrarTitulo {
+    display: flex;
+    flex-direction: row;
+}
+
+.mostrarTitulo:hover > .hide {
+    display: block;
+    padding-left: 0.5em; 
+    padding-right: 0.5em; 
+}

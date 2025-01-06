@@ -1,0 +1,45 @@
+.mural {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  width: 99%;
+  max-width: 1200px;
+}
+
+.carta {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  border-radius: 1em;
+  border: 2px solid #dadada; 
+
+  padding: 1em;
+
+  align-content: space-around;
+
+  flex-direction: column;
+}
+
+.carta img {
+  object-fit: cover;
+  border-radius: 10px;
+  padding-bottom: 0.5em;
+}
+
+.carta a {
+  text-align: center;
+}
+
+.carta .subtitulo {
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+.carta .autores {
+  padding-top: 1em;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: auto;
+}
