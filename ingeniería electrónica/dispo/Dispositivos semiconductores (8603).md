@@ -5,6 +5,7 @@ plan: "2009"
 codigo: "8603"
 tags:
   - materia/dispo
+  - ingeniería-electrónica/dispo
 etapa: terminado
 correlativas:
   - "[[Física 2 A (8202)|Física 2 A]]"

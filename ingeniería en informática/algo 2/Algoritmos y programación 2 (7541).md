@@ -5,6 +5,7 @@ plan: 1986
 estado: Falta hacer el resumen
 tags:
   - materia/algo-2
+  - ingeniería-en-informática/algo-2
 etapa: sin-empezar
 correlativas:
   - "[[Algoritmos y programación 1 (7540)|Algoritmos y programación 1]]"

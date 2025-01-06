@@ -5,6 +5,7 @@ etapa: empezado
 estado: Me falta los capítulos de enteros, complejos y polinomios
 tags:
   - materia/algebra-1
+  - licenciatura-en-ciencias-matemáticas/algebra-1
 correlativas: 
 referencias:
   - "410"

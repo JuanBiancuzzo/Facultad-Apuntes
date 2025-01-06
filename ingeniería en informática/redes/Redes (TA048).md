@@ -5,6 +5,7 @@ plan: 2023
 estado: Terminado
 tags:
   - materia/redes
+  - ingeniería-en-informática/redes
 etapa: terminado
 correlativas:
   - "[[Sistemas operativos (7508)|Sistemas operativos]]"

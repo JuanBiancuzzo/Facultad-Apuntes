@@ -5,6 +5,7 @@ plan: 2023
 estado: Falta ampliar
 tags:
   - materia/bdd
+  - ingeniería-en-informática/bdd
 etapa: empezado
 correlativas:
   - "[[Organización de datos (7506)|Organización de datos]]"

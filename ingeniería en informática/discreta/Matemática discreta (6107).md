@@ -5,6 +5,7 @@ plan: 1986
 estado: Terminado
 tags:
   - materia/discreta
+  - ingeniería-en-informática/discreta
 etapa: terminado
 ---
 # Apuntes

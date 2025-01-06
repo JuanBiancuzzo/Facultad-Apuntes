@@ -2,6 +2,7 @@
 plan: 2023
 tags:
   - materia/redes
+  - ingeniería-electrónica/redes
 correlativas: []
 codigo: TB067
 equivalencia: "[[ingeniería en informática/redes/Redes (TA048).md|Redes (TA048)]]"

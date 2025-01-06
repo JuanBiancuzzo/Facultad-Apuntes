@@ -5,6 +5,7 @@ plan: 2023
 estado: Falta últimos temas
 tags:
   - materia/circuitos
+  - ingeniería-electrónica/circuitos
 etapa: ampliar
 correlativas:
   - "[[Análisis de circuitos (8604)|Análisis de Circuitos]]"

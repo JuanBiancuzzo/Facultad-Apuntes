@@ -5,6 +5,7 @@ plan: "1986"
 codigo: "6670"
 tags:
   - materia/estructura
+  - ingeniería-en-informática/estructura
 etapa: terminado
 correlativas:
   - "[[Física 2 A (6203)|Física 2]]"

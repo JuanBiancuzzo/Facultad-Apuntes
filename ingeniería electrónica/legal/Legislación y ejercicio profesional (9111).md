@@ -5,6 +5,7 @@ plan: 2009
 estado: Falta terminar los últimos capítulos
 tags:
   - materia/legal
+  - ingeniería-electrónica/legal
 etapa: empezado
 ---
 # Apuntes

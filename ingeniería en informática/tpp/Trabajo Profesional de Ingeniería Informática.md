@@ -9,6 +9,7 @@ tags:
   - proyecto/práctico
   - ingeniería-en-informática/tpp
   - materia/tpp
+  - ingeniería-en-informática/tpp
 correlativas: 
 ---
 # Propuesta

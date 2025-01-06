@@ -2,6 +2,7 @@
 plan: 2009
 tags:
   - materia/fisica-1
+  - ingeniería-electrónica/fisica-1
 correlativas: []
 codigo: 8201
 equivalencia: "[[Física 1 A (6201)|Física 1 A (6201)]]"

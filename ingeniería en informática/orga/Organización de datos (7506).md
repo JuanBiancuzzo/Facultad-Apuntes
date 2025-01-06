@@ -5,6 +5,7 @@ plan: "1986"
 codigo: "7506"
 tags:
   - materia/orga
+  - ingeniería-en-informática/orga
 etapa: empezado
 correlativas:
   - "[[Álgebra 2 A (6108)|Álgebra 2]]"

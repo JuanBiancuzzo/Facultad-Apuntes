@@ -5,6 +5,7 @@ plan: 1986
 codigo: "6103"
 tags:
   - materia/analisis-2
+  - ingeniería-en-informática/analisis-2
 etapa: empezado
 ---
 # Apuntes

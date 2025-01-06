@@ -5,6 +5,7 @@ plan: 2023
 estado: Voy a cursarla este cuatri
 tags:
   - materia/electro
+  - ingeniería-electrónica/electro
 etapa: ampliar
 correlativas:
   - "[[Análisis de circuitos (8604)|Análisis de Circuitos]]"

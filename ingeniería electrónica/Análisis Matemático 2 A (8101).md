@@ -2,6 +2,7 @@
 plan: 2009
 tags:
   - materia/analisis-2
+  - ingeniería-electrónica/analisis-2
 correlativas: []
 codigo: 8101
 equivalencia: "[[Análisis matemático 2 A (6103)|Análisis matemático 2 A (6103)]]"

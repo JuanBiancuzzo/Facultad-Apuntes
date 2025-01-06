@@ -5,6 +5,7 @@ plan: 2023
 estado: Voy a cursarla este cuatri
 tags:
   - materia/embebidos
+  - ingeniería-electrónica/embebidos
 etapa: ampliar
 correlativas:
   - "[[Algoritmos y Programación 1 (9511)|Algoritmos y programación 1]]"

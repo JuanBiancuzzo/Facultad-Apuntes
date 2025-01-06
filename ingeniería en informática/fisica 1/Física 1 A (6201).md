@@ -5,6 +5,7 @@ plan: "1986"
 codigo: "6201"
 tags:
   - materia/fisica-1
+  - ingeniería-en-informática/fisica-1
 etapa: empezado
 ---
 # Apuntes

@@ -5,6 +5,7 @@ plan: "1986"
 codigo: "6109"
 tags:
   - materia/proba
+  - ingeniería-en-informática/proba
 etapa: terminado
 correlativas:
   - "[[Álgebra 2 A (6108)|Álgebra 2]]"

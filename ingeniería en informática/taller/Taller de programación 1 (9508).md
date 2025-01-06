@@ -5,6 +5,7 @@ plan: 2009
 codigo: "9508"
 tags:
   - materia/taller
+  - ingeniería-en-informática/taller
 etapa: empezado
 correlativas:
   - "[[Algoritmos y programación 2 (7541)|Algoritmos y programación 2]]"

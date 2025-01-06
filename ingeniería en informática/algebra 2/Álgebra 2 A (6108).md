@@ -5,6 +5,7 @@ plan: "1986"
 codigo: "6108"
 tags:
   - materia/algebra-2
+  - ingeniería-en-informática/algebra-2
 etapa: empezado
 ---
 # Apuntes

@@ -5,6 +5,7 @@ etapa: sin-empezar
 estado: Sin empezar
 tags:
   - materia/fisica-1
+  - licenciatura-en-ciencias-físicas/fisica-1
 correlativas: 
 ---
 # Apuntes

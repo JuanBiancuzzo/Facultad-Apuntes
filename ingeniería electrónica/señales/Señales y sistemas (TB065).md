@@ -5,6 +5,7 @@ plan: 2023
 estado: Falta pasar las presentaciones del último tema
 tags:
   - materia/señales
+  - ingeniería-electrónica/señales
 etapa: empezado
 correlativas:
   - "[[Álgebra 2 A (8102)|Álgebra 2 A]]"
