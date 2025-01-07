@@ -20,7 +20,12 @@
     if (carpeta.at(1)) directorioMateria += `/${carpeta.at(1)}`;
 
     let materias = dv.pages(`"${directorioMateria}" and #${TAGS.materia}`)
-        .sort(materia => parseFloat(materia[DATOS_MATERIA.infoCuatri].replace("C", ".")));
+        .sort(materia => {
+            let materiaFinal = materia[DATOS_MATERIA.equivalencia]
+                ? dv.page(materia[DATOS_MATERIA.equivalencia].path)
+                : materia;
+            return parseFloat(materiaFinal[DATOS_MATERIA.infoCuatri].replace("C", "."))
+        });
     let materia = materias.first();
     if (materias.length > 1) {
         materia = await preguntar.suggester(
@@ -32,7 +37,7 @@
 
     let directorioResumen = materia.file.folder;
     if (carpeta.at(2)) directorioResumen += `/${carpeta.at(2)}`;
-    let resumenes = dv.pages(`"${directorioResumen}" and #${TAGS.resumen}`)
+    let resumenes = dv.pages(`"${directorioResumen}" and #${TAGS.resumenMateria}`)
         .sort(resumen => resumen[DATOS_RESUMEN.numero]);
     let resumen = resumenes.first();
     if (resumenes.length > 1) {

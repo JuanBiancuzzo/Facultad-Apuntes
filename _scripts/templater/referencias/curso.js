@@ -68,7 +68,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             );
 
             const dv = app.plugins.plugins.dataview.api;
-            let cursos = dv.pages(`#${TAGS.curso} and -#${TAGS.resumen}`)
+            let cursos = dv.pages(`#${TAGS.curso} and -#${TAGS.resumenCurso}`)
                 .filter(indice => indice.file.name !== undefined);
 
             if (!validar.validarNombre(tp, nombreCurso) || cursos.find(curso => curso.file.name == nombreCurso))
