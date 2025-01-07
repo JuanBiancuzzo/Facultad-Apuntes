@@ -3,7 +3,7 @@ capitulo: 4
 tags:
   - ingeniería-en-informática/algo-1/Manejo-de-archivos
   - ingeniería-electrónica/algo-1/Manejo-de-archivos
-  - resumen
+  - resumen/Manejo-de-archivos
 ---
 # Índice
 ---

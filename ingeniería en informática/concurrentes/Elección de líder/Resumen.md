@@ -2,7 +2,7 @@
 capitulo: 10
 tags:
   - ingeniería-en-informática/concurrentes/Elección-de-líder
-  - resumen
+  - resumen/Elección-de-líder
 ---
 # Índice
 ---

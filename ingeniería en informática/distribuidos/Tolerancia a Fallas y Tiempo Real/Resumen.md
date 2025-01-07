@@ -2,7 +2,7 @@
 capitulo: 4
 tags:
   - ingeniería-en-informática/distribuidos/Tolerancia-a-Fallas-y-Tiempo-Real
-  - resumen
+  - resumen/Tolerancia-a-Fallas-y-Tiempo-Real
 ---
 # Índice
 ---

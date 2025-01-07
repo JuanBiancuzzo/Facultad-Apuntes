@@ -2,7 +2,7 @@
 capitulo: 1
 tags:
   - ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
-  - resumen
+  - resumen/Herramientas-de-Diseño
 ---
 # Índice
 ---

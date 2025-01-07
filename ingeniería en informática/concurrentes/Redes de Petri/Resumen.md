@@ -2,7 +2,7 @@
 capitulo: 6
 tags:
   - ingeniería-en-informática/concurrentes/Redes-de-Petri
-  - resumen
+  - resumen/Redes-de-Petri
 ---
 # Índice
 ---

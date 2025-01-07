@@ -2,7 +2,7 @@
 capitulo: 2
 tags:
   - ingeniería-en-informática/distribuidos/Fundamentos-de-Sistemas-Distribuidos
-  - resumen
+  - resumen/Fundamentos-de-Sistemas-Distribuidos
 ---
 # Índice
 ---

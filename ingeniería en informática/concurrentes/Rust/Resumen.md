@@ -2,7 +2,7 @@
 capitulo: 2
 tags:
   - ingeniería-en-informática/concurrentes/Rust
-  - resumen
+  - resumen/Rust
 ---
 # Índice
 ---
