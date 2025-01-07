@@ -7,7 +7,7 @@ profesores:
   - 0
   - 1
 tags:
-  - resumen/curso
+  - resumen-curso/curso
   - referencia/cursotema
   - cursos/performance-engineering-of-software-systems/Speculative-ParallelismProject-Parallelization-Strategies
 curso: "[[cursos/performance engineering of software systems/Performance Engineering of Software Systems|Performance Engineering of Software Systems]]"

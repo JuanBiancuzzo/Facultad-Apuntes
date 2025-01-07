@@ -7,7 +7,7 @@ profesores:
   - 0
   - 1
 tags:
-  - resumen/curso
+  - resumen-curso/curso
   - referencia/cursotema
   - cursos/software-construction/Parser-Generators
 curso: "[[cursos/software construction/Software Construction|Software Construction]]"
