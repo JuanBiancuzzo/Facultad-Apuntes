@@ -2,7 +2,7 @@
 capitulo: 4
 tags:
   - ingeniería-en-informática/discreta/Relaciones
-  - resumen/Relaciones
+  - resumen-materia/Relaciones
 ---
 # Índice
 ---

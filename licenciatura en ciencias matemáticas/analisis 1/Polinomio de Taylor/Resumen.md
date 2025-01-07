@@ -4,7 +4,7 @@ tags:
   - licenciatura-en-ciencias-matemáticas/analisis-1/Polinomio-de-Taylor
   - licenciatura-en-ciencias-de-datos/analisis-1/Polinomio-de-Taylor
   - licenciatura-en-ciencias-físicas/analisis-1/Polinomio-de-Taylor
-  - resumen/Polinomio-de-Taylor
+  - resumen-materia/Polinomio-de-Taylor
 ---
 # Índice
 ---

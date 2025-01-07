@@ -2,7 +2,7 @@
 capitulo: 5
 tags:
   - licenciatura-en-ciencias-físicas/fisica-1/Impulso-lineal
-  - resumen/Impulso-lineal
+  - resumen-materia/Impulso-lineal
 ---
 # Índice
 ---

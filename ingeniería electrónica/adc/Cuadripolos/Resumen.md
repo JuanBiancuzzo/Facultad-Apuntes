@@ -3,7 +3,7 @@ capitulo: 6
 tags:
   - ingeniería-electrónica/adc/Cuadripolos
   - ingeniería-en-informática/adc/Cuadripolos
-  - resumen/Cuadripolos
+  - resumen-materia/Cuadripolos
 ---
 # Índice 
 ---

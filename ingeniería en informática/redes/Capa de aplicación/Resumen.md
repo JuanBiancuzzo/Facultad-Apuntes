@@ -3,7 +3,7 @@ capitulo: 2
 tags:
   - ingeniería-en-informática/redes/Capa-de-aplicación
   - ingeniería-electrónica/redes/Capa-de-aplicación
-  - resumen/Capa-de-aplicación
+  - resumen-materia/Capa-de-aplicación
 referencias:
   - "590"
 ---

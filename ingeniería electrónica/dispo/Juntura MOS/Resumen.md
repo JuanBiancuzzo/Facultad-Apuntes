@@ -2,7 +2,7 @@
 capitulo: 5
 tags:
   - ingeniería-electrónica/dispo/Juntura-MOS
-  - resumen/Juntura-MOS
+  - resumen-materia/Juntura-MOS
 ---
 # Índice 
 ---

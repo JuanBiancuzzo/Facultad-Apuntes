@@ -2,7 +2,7 @@
 capitulo: 7
 tags:
   - ingeniería-en-informática/aninfo/Requisitos-en-contexto
-  - resumen/Requisitos-en-contexto
+  - resumen-materia/Requisitos-en-contexto
 ---
 # Índice 
 ---

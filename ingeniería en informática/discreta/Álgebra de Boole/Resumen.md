@@ -2,7 +2,7 @@
 capitulo: 3
 tags:
   - ingeniería-en-informática/discreta/Álgebra-de-Boole
-  - resumen/Álgebra-de-Boole
+  - resumen-materia/Álgebra-de-Boole
 ---
 # Índice 
 ---

@@ -3,7 +3,7 @@ capitulo: 8
 tags:
   - ingeniería-en-informática/numerico/Ecuaciones-diferenciales-en-derivadas-parciales
   - ingeniería-electrónica/numerico/Ecuaciones-diferenciales-en-derivadas-parciales
-  - resumen/Ecuaciones-diferenciales-en-derivadas-parciales
+  - resumen-materia/Ecuaciones-diferenciales-en-derivadas-parciales
 ---
 # Índice 
 ---

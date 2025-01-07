@@ -2,7 +2,7 @@
 capitulo: 3
 tags:
   - ingeniería-en-informática/distribuidos/Aplicaciones-Reales
-  - resumen/Aplicaciones-Reales
+  - resumen-materia/Aplicaciones-Reales
 ---
 # Índice
 ---

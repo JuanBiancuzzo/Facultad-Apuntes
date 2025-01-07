@@ -3,7 +3,7 @@ capitulo: 1
 tags:
   - ingeniería-en-informática/fisica-2/Termodinámica
   - ingeniería-electrónica/fisica-2/Termodinámica
-  - resumen/Termodinámica
+  - resumen-materia/Termodinámica
 ---
 # Índice 
 ---

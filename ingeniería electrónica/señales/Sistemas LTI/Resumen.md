@@ -2,7 +2,7 @@
 capitulo: 2
 tags:
   - ingeniería-electrónica/señales/Sistemas-LTI
-  - resumen/Sistemas-LTI
+  - resumen-materia/Sistemas-LTI
 ---
 # Índice 
 ---

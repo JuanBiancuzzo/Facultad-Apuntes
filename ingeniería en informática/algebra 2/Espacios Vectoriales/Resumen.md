@@ -3,7 +3,7 @@ capitulo: 1
 tags:
   - ingeniería-en-informática/algebra-2/Espacios-Vectoriales
   - ingeniería-electrónica/algebra-2/Espacios-Vectoriales
-  - resumen/Espacios-Vectoriales
+  - resumen-materia/Espacios-Vectoriales
 ---
 # Índice 
 ---

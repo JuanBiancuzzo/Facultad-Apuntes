@@ -3,7 +3,7 @@ capitulo: 4
 tags:
   - ingeniería-en-informática/fisica-1/Hidrodinámica
   - ingeniería-electrónica/fisica-1/Hidrodinámica
-  - resumen/Hidrodinámica
+  - resumen-materia/Hidrodinámica
 ---
 # Índice 
 ---

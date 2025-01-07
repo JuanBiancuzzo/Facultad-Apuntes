@@ -3,7 +3,7 @@ capitulo: 3
 tags:
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
   - licenciatura-en-ciencias-de-datos/algebra-1/Números-enteros
-  - resumen/Números-enteros
+  - resumen-materia/Números-enteros
 referencias:
   - "415"
   - "414"

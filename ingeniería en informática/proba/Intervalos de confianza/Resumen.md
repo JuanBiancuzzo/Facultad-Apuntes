@@ -3,7 +3,7 @@ capitulo: 12
 tags:
   - ingeniería-en-informática/proba/Intervalos-de-confianza
   - ingeniería-electrónica/proba/Intervalos-de-confianza
-  - resumen/Intervalos-de-confianza
+  - resumen-materia/Intervalos-de-confianza
 ---
 # Índice 
 ---

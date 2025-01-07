@@ -2,7 +2,7 @@
 capitulo: 7
 tags:
   - ingeniería-electrónica/seguridad/Contaminación-del-agua
-  - resumen/Contaminación-del-agua
+  - resumen-materia/Contaminación-del-agua
 ---
 # Índice 
 ---

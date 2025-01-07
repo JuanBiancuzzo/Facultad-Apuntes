@@ -3,7 +3,7 @@ capitulo: 8
 tags:
   - ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
   - ingeniería-electrónica/fisica-2/Circuitos-en-régimen-alterno-permanente
-  - resumen/Circuitos-en-régimen-alterno-permanente
+  - resumen-materia/Circuitos-en-régimen-alterno-permanente
 ---
 # Índice 
 ---

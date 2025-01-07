@@ -3,7 +3,7 @@ capitulo: 1
 tags:
   - ingeniería-electrónica/analisis-3/Topología-del-plano-complejo-y-límites
   - ingeniería-en-informática/analisis-3/Topología-del-plano-complejo-y-límites
-  - resumen/Topología-del-plano-complejo-y-límites
+  - resumen-materia/Topología-del-plano-complejo-y-límites
 ---
 # Índice 
 ---

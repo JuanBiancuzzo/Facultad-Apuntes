@@ -3,7 +3,7 @@ capitulo: 2
 tags:
   - ingeniería-electrónica/analisis-3/Derivabilidad-y-holomorfía
   - ingeniería-en-informática/analisis-3/Derivabilidad-y-holomorfía
-  - resumen/Derivabilidad-y-holomorfía
+  - resumen-materia/Derivabilidad-y-holomorfía
 ---
 # Índice 
 ---

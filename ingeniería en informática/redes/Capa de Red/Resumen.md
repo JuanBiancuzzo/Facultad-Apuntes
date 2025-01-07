@@ -3,7 +3,7 @@ capitulo: 4
 tags:
   - ingeniería-en-informática/redes/Capa-de-Red
   - ingeniería-electrónica/redes/Capa-de-Red
-  - resumen/Capa-de-Red
+  - resumen-materia/Capa-de-Red
 referencias:
   - "592"
   - "593"

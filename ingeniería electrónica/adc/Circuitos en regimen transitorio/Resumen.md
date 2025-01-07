@@ -3,7 +3,7 @@ capitulo: 2
 tags:
   - ingeniería-electrónica/adc/Circuitos-en-regimen-transitorio
   - ingeniería-en-informática/adc/Circuitos-en-regimen-transitorio
-  - resumen/Circuitos-en-regimen-transitorio
+  - resumen-materia/Circuitos-en-regimen-transitorio
 ---
 # Índice 
 ---

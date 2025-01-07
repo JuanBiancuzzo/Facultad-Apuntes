@@ -3,7 +3,7 @@ capitulo: 1
 tags:
   - ingeniería-en-informática/estructura/Sistemas-numéricos
   - ingeniería-electrónica/estructura/Sistemas-numéricos
-  - resumen/Sistemas-numéricos
+  - resumen-materia/Sistemas-numéricos
 ---
 # Índice 
 ---

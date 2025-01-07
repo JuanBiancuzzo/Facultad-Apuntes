@@ -3,7 +3,7 @@ capitulo: 5
 tags:
   - ingeniería-en-informática/algebra-2/Sistema-de-ecuaciones-diferenciales
   - ingeniería-electrónica/algebra-2/Sistema-de-ecuaciones-diferenciales
-  - resumen/Sistema-de-ecuaciones-diferenciales
+  - resumen-materia/Sistema-de-ecuaciones-diferenciales
 ---
 # Índice 
 ---

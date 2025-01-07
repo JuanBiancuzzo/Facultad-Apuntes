@@ -2,7 +2,7 @@
 capitulo: 1
 tags:
   - ingeniería-electrónica/legal/Código-Civil-y-Comercial-de-la-Nación
-  - resumen/Código-Civil-y-Comercial-de-la-Nación
+  - resumen-materia/Código-Civil-y-Comercial-de-la-Nación
 ---
 # Índice 
 ---

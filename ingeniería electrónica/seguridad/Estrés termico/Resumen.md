@@ -2,7 +2,7 @@
 capitulo: 5
 tags:
   - ingeniería-electrónica/seguridad/Estrés-termico
-  - resumen/Estrés-termico
+  - resumen-materia/Estrés-termico
 ---
 # Índice 
 ---

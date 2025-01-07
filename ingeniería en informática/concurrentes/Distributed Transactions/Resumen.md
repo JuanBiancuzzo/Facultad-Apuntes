@@ -2,7 +2,7 @@
 capitulo: 11
 tags:
   - ingeniería-en-informática/concurrentes/Distributed-Transactions
-  - resumen/Distributed-Transactions
+  - resumen-materia/Distributed-Transactions
 ---
 # Índice
 ---

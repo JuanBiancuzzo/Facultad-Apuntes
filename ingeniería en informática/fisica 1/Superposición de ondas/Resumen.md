@@ -3,7 +3,7 @@ capitulo: 7
 tags:
   - ingeniería-en-informática/fisica-1/Superposición-de-ondas
   - ingeniería-electrónica/fisica-1/Superposición-de-ondas
-  - resumen/Superposición-de-ondas
+  - resumen-materia/Superposición-de-ondas
 ---
 # Índice 
 ---

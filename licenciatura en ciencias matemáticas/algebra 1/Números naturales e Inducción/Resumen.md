@@ -3,7 +3,7 @@ capitulo: 2
 tags:
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
   - licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
-  - resumen/Números-naturales-e-Inducción
+  - resumen-materia/Números-naturales-e-Inducción
 referencias:
   - "412"
   - "413"

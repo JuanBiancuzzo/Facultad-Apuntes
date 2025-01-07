@@ -2,7 +2,7 @@
 capitulo: 9
 tags:
   - ingeniería-en-informática/concurrentes/Sockets
-  - resumen/Sockets
+  - resumen-materia/Sockets
 ---
 # Índice
 ---

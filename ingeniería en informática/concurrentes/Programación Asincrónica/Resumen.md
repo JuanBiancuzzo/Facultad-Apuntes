@@ -2,7 +2,7 @@
 capitulo: 4
 tags:
   - ingeniería-en-informática/concurrentes/Programación-Asincrónica
-  - resumen/Programación-Asincrónica
+  - resumen-materia/Programación-Asincrónica
   - investigación/ciencias-de-la-computación/Programación-asincrónica
 ---
 # Índice

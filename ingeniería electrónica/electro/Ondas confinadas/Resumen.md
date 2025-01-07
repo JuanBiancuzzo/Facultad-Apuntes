@@ -2,7 +2,7 @@
 capitulo: 4
 tags:
   - ingeniería-electrónica/electro/Ondas-confinadas
-  - resumen/Ondas-confinadas
+  - resumen-materia/Ondas-confinadas
 ---
 # Índice
 ---

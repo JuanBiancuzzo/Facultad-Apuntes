@@ -3,7 +3,7 @@ capitulo: 9
 tags:
   - ingeniería-en-informática/proba/Teorema-central-del-límite
   - ingeniería-electrónica/proba/Teorema-central-del-límite
-  - resumen/Teorema-central-del-límite
+  - resumen-materia/Teorema-central-del-límite
 ---
 # Índice 
 ---

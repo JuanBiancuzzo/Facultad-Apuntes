@@ -3,7 +3,7 @@ capitulo: 15
 tags:
   - ingeniería-electrónica/analisis-3/Transformada-de-Fourier
   - ingeniería-en-informática/analisis-3/Transformada-de-Fourier
-  - resumen/Transformada-de-Fourier
+  - resumen-materia/Transformada-de-Fourier
 ---
 # Índice 
 ---

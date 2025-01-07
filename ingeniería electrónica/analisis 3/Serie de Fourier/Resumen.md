@@ -3,7 +3,7 @@ capitulo: 12
 tags:
   - ingeniería-electrónica/analisis-3/Serie-de-Fourier
   - ingeniería-en-informática/analisis-3/Serie-de-Fourier
-  - resumen/Serie-de-Fourier
+  - resumen-materia/Serie-de-Fourier
 ---
 # Índice 
 ---

@@ -2,7 +2,7 @@
 capitulo: 1
 tags:
   - ingeniería-en-informática/aninfo/Ingeniería-de-software
-  - resumen/Ingeniería-de-software
+  - resumen-materia/Ingeniería-de-software
 ---
 # Índice 
 ---

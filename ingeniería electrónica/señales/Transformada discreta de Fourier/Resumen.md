@@ -2,7 +2,7 @@
 capitulo: 6
 tags:
   - ingeniería-electrónica/señales/Transformada-discreta-de-Fourier
-  - resumen/Transformada-discreta-de-Fourier
+  - resumen-materia/Transformada-discreta-de-Fourier
 ---
 # Índice 
 ---

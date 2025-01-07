@@ -2,7 +2,7 @@
 capitulo: 1
 tags:
   - ingeniería-en-informática/concurrentes/Introducción
-  - resumen/Introducción
+  - resumen-materia/Introducción
 ---
 # Índice
 ---

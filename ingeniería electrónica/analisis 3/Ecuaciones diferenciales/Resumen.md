@@ -3,7 +3,7 @@ capitulo: 11
 tags:
   - ingeniería-electrónica/analisis-3/Ecuaciones-diferenciales
   - ingeniería-en-informática/analisis-3/Ecuaciones-diferenciales
-  - resumen/Ecuaciones-diferenciales
+  - resumen-materia/Ecuaciones-diferenciales
 ---
 # Índice 
 ---

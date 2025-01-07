@@ -3,7 +3,7 @@ capitulo: 10
 tags:
   - ingeniería-en-informática/proba/Inferencia-estadística
   - ingeniería-electrónica/proba/Inferencia-estadística
-  - resumen/Inferencia-estadística
+  - resumen-materia/Inferencia-estadística
 ---
 # Índice 
 ---

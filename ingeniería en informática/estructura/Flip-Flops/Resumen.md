@@ -3,7 +3,7 @@ capitulo: 6
 tags:
   - ingeniería-en-informática/estructura/Flip-Flops
   - ingeniería-electrónica/estructura/Flip-Flops
-  - resumen/FlipFlops
+  - resumen-materia/FlipFlops
 ---
 # Índice 
 ---

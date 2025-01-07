@@ -2,7 +2,7 @@
 capitulo: 5
 tags:
   - ingeniería-electrónica/intro/Potencia
-  - resumen/Potencia
+  - resumen-materia/Potencia
 ---
 # Índice 
 ---

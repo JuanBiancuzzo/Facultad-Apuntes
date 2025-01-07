@@ -2,7 +2,7 @@
 capitulo: 12
 tags:
   - licenciatura-en-ciencias-físicas/fisica-1/Relatividad-especial
-  - resumen/Relatividad-especial
+  - resumen-materia/Relatividad-especial
 ---
 # Índice
 ---

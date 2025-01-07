@@ -3,7 +3,7 @@ capitulo: 1
 tags:
   - ingeniería-electrónica/fisica-3/Electromagnetismo
   - ingeniería-en-informática/fisica-3/Electromagnetismo
-  - resumen/Electromagnetismo
+  - resumen-materia/Electromagnetismo
 ---
 # Índice 
 ---

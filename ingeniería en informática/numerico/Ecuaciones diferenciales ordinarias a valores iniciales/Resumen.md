@@ -3,7 +3,7 @@ capitulo: 7
 tags:
   - ingeniería-en-informática/numerico/Ecuaciones-diferenciales-ordinarias-a-valores-iniciales
   - ingeniería-electrónica/numerico/Ecuaciones-diferenciales-ordinarias-a-valores-iniciales
-  - resumen/Ecuaciones-diferenciales-ordinarias-a-valores-iniciales
+  - resumen-materia/Ecuaciones-diferenciales-ordinarias-a-valores-iniciales
 ---
 # Índice 
 ---

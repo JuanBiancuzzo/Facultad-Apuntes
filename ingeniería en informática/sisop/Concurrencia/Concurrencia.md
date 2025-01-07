@@ -6,7 +6,7 @@ tags:
   - ingeniería-en-informática/taller/Concurrencia
   - ingeniería-electrónica/taller/Concurrencia
   - ingeniería-en-informática/concurrentes/Introducción
-  - resumen/Concurrencia
+  - resumen-materia/Concurrencia
 ---
 # Definición
 ---

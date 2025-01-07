@@ -2,7 +2,7 @@
 capitulo: 9
 tags:
   - ingeniería-electrónica/legal/Ejercicio-profesional
-  - resumen/Ejercicio-profesional
+  - resumen-materia/Ejercicio-profesional
 ---
 # Índice 
 ---

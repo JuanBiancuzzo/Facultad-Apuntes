@@ -3,7 +3,7 @@ capitulo: 3
 tags:
   - ingeniería-en-informática/algo-1/Punteros
   - ingeniería-electrónica/algo-1/Punteros
-  - resumen/Punteros
+  - resumen-materia/Punteros
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
 ---
 # Índice

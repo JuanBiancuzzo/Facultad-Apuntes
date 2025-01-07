@@ -2,7 +2,7 @@
 capitulo: 1
 tags:
   - ingeniería-electrónica/circuitos/Circuitos-con-diodos
-  - resumen/Circuitos-con-diodos
+  - resumen-materia/Circuitos-con-diodos
 referencias:
   - "425"
   - "441"

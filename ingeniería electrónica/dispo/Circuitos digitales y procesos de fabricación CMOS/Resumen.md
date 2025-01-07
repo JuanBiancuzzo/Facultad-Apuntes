@@ -2,7 +2,7 @@
 capitulo: 9
 tags:
   - ingeniería-electrónica/dispo/Circuitos-digitales-y-procesos-de-fabricación-CMOS
-  - resumen/Circuitos-digitales-y-procesos-de-fabricación-CMOS
+  - resumen-materia/Circuitos-digitales-y-procesos-de-fabricación-CMOS
 ---
 # Índice 
 ---

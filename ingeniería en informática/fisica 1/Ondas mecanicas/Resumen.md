@@ -3,7 +3,7 @@ capitulo: 6
 tags:
   - ingeniería-en-informática/fisica-1/Ondas-mecanicas
   - ingeniería-electrónica/fisica-1/Ondas-mecanicas
-  - resumen/Ondas-mecanicas
+  - resumen-materia/Ondas-mecanicas
 ---
 # Índice 
 ---
