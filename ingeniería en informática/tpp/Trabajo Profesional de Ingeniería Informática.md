@@ -10,15 +10,16 @@ tags:
   - ingeniería-en-informática/tpp
   - materia/tpp
   - ingeniería-en-informática/tpp
-correlativas: 
+  - proyecto/investigación
+correlativas:
 ---
 # Propuesta
 ---
-Este trabajo profesional lo voy a hacer con Sofia Javes
+![[ingeniería en informática/tpp/Propuesta/Resumen#Resumen|Propuesta]]
 
 # Presentar
 ---
-
+![[ingeniería en informática/tpp/Presentación/Resumen#Resumen|Presentación]]
 
 # Archivos
 ---
