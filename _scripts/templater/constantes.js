@@ -307,9 +307,5 @@ module.exports = () => ({
             nombre: "Proposición",
             reducido: "prop",
         },
-        template: {
-            tema: "Bloque Matematica Tema - Template",
-            subtema: "Bloque Matematica Subtema - Template",
-        },
     },
 });
