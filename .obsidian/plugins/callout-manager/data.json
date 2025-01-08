@@ -4,7 +4,8 @@
       "teorema",
       "observacion",
       "proposicion",
-      "demostracion"
+      "demostracion",
+      "corolario"
     ],
     "settings": {
       "teorema": [
@@ -64,6 +65,14 @@
           "changes": {
             "icon": "lucide-notebook-pen",
             "color": "94, 122, 232"
+          }
+        }
+      ],
+      "corolario": [
+        {
+          "changes": {
+            "icon": "lucide-replace",
+            "color": "255, 31, 87"
           }
         }
       ]

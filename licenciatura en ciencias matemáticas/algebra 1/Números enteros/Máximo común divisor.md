@@ -26,41 +26,48 @@ Luego, el [[Máximo|máximo]] común divisor es el elemento más grande de cualq
 
 ### Punto de vista de los coprimos
 ---
-Sean $a,~ b \in \mathbb{Z}$, no ambos nulos. Sea $d \in \mathbb{Z}$ un número que satisface que $$ \begin{matrix} 
-    d \mid a, & d \mid b & \text{y} & \displaystyle \frac{a}{d} \perp \frac{d}{d}
-\end{matrix} $$
-Entonces $d = (a ~:~ b)$
+> [!observacion]+ Observación 1.3.9 
+> Sean $a,~ b \in \mathbb{Z}$, no ambos nulos. Sea $d \in \mathbb{Z}$ un número que satisface que $$ \begin{matrix} 
+>    d \mid a, & d \mid b & \text{y} & \displaystyle \frac{a}{d} \perp \frac{d}{d}
+> \end{matrix} $$
+> Entonces $d = (a ~:~ b)$
+^obs-1-3-9
 
 ## Múltiplo común de dos números
 ---
-Sean $a,~b \in \mathbb{Z}$, no ambos nulos, y sea $k \in \mathbb{Z}$ con $k \ne 0$. Entonces $$ (k ~ a ~:~ k ~ b) = |k| \cdot (a ~:~ b) $$
-> [!quote]- Demostración
-> Sin pérdida de generalidad, podemos suponer $k > 0$.
+> [!proposicion]+ Proposición 1.3.6 (Mcd de múltiplo común de dos números)
+> Sean $a,~b \in \mathbb{Z}$, no ambos nulos, y sea $k \in \mathbb{Z}$ con $k \ne 0$. Entonces $$ (k ~ a ~:~ k ~ b) = |k| \cdot (a ~:~ b) $$
 > 
-> Por un lado, aplicando [[Divisor común|divisor común]] ![[Divisor común#^4bc026]] se tiene $$ (a ~:~ b) \mid a ~~ \text{y} ~~ (a ~:~ b) \mid b \implies k ~ (a ~:~ b) \mid k ~ a ~~ \text{y} ~~ k ~ (a ~:~ b) \mid k ~ b \implies k ~ (a ~:~ b) \mid (k ~ a ~:~ k ~ b) $$
-> 
-> Por otro lado, por [[Combinación entera|combinación entera]], se tiene $$ (a ~:~ b) = s ~ a + t ~ b \implies k ~ (a ~:~ b) = s ~ (k ~ a) + t ~ (k ~ b) \implies (k ~ a ~:~ k ~ b) \mid k ~ (a ~:~ b) $$
-> 
-> Como ambos términos son positivos, se concluye que son iguales
+> > [!demostracion]- Demostración
+> > Sin pérdida de generalidad, podemos suponer $k > 0$.
+> > 
+> > Por un lado, aplicando [[Divisor común|divisor común]] ![[Divisor común#^prop-1-3-5]] se tiene $$ (a ~:~ b) \mid a ~~ \text{y} ~~ (a ~:~ b) \mid b \implies k ~ (a ~:~ b) \mid k ~ a ~~ \text{y} ~~ k ~ (a ~:~ b) \mid k ~ b \implies k ~ (a ~:~ b) \mid (k ~ a ~:~ k ~ b) $$
+> > 
+> > Por otro lado, por [[Combinación entera|combinación entera]], se tiene $$ (a ~:~ b) = s ~ a + t ~ b \implies k ~ (a ~:~ b) = s ~ (k ~ a) + t ~ (k ~ b) \implies (k ~ a ~:~ k ~ b) \mid k ~ (a ~:~ b) $$
+> > 
+> > Como ambos términos son positivos, se concluye que son iguales
+^prop-1-3-6
 
 ## Equivalencias
 ---
-Sean $a,~ b \in \mathbb{Z}$, no ambos nulos, y sea $d \in \mathbb{N}$. Son equivalentes
-1. $d \mid a$, $d \mid b$ y si $c \mid a$ y $c \mid b$, entonces $c \le d$
-2. $d \mid a$, $d \mid b$ y existen $s,~t \in \mathbb{Z}$ tales que $d = s ~ a + t ~ b$
-3. $d \mid a$, $d \mid b$ y si $c \mid a$ y $c \mid b$, entonces $c \mid d$
-
-Un número $d \in \mathbb{N}$ que cumple cualquiera de esas $3$ propiedades es el máximo común divisor $(a ~:~ b)$
-
-> [!quote]- Demostración
-> Vamos a probar $(1 \implies 2)$, $(2 \implies 3)$ y $(3 \implies 1)$, ya que para probar $(2 \implies 1)$ se usa $(2 \implies 3 \implies 1)$
+> [!teorema]+ Teorema 1.3.7 (Equivalencias del mcd)
+> Sean $a,~ b \in \mathbb{Z}$, no ambos nulos, y sea $d \in \mathbb{N}$. Son equivalentes
+>  1. $d \mid a$, $d \mid b$ y si $c \mid a$ y $c \mid b$, entonces $c \le d$
+>  2. $d \mid a$, $d \mid b$ y existen $s,~t \in \mathbb{Z}$ tales que $d = s ~ a + t ~ b$
+>  3. $d \mid a$, $d \mid b$ y si $c \mid a$ y $c \mid b$, entonces $c \mid d$
+>  
+>  Un número $d \in \mathbb{N}$ que cumple cualquiera de esas $3$ propiedades es el máximo común divisor $(a ~:~ b)$
 > 
->  * $(1 \implies 2)$ 
->    
->  * $(2 \implies 3)$
->    
->  * $(3 \implies 1)$
->    
+> > [!demostracion]- Demostración
+> > Vamos a probar $(1 \implies 2)$, $(2 \implies 3)$ y $(3 \implies 1)$, ya que para probar $(2 \implies 1)$ se usa $(2 \implies 3 \implies 1)$
+> > 
+> >  * $(1 \implies 2)$ 
+> >    
+> >  * $(2 \implies 3)$
+> >    
+> >  * $(3 \implies 1)$
+> >    
+^teo-1-3-7
 
 # Referencias
 ---

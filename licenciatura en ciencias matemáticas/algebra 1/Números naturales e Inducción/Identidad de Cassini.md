@@ -15,7 +15,7 @@ tags:
 ---
 Una propiedad de la [[Sucesión de Fibonacci|sucesión de Fibonacci]], que permite de hecho mostrar por qué el [[Número de Oro|número de Oro]] $\Psi$ aparece naturalmente en este contexto, es la Identidad de Casini $$ F_{n + 1} ~ F_{n - 1} - F_n^2 = (-1)^n, ~~~~ \forall n \in \mathbb{N} $$
 
-> [!quote]- Demostración
+> [!demostracion]- Demostración
 > Lo probamos por [[Principio de inducción|inducción]] $$ p(n): ~~~ F_{n + 1} ~ F_{n - 1} - F_n^2 = (-1)^n $$
 > 
 >  * Caso base $p(1)$: $F_2 ~ F_0 - F_1^2 = 1 ~ 0 - 1 = (-1)^1$

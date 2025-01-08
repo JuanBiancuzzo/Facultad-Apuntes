@@ -16,7 +16,7 @@ etapa: terminado
 # Definición
 ---
 Sea $A_n = \set{ a_1,~ \cdots,~ a_n }$ un [[Conjunto|conjunto]] con $n$ elementos. Para $0 \le k \le n$, se nota con el símbolo $\binom{n}{k}$, que se llama el número combinatorio $\binom{n}{k}$, la cantidad de [[Subconjunto|subconjuntos]] con $k$ elementos que tiene $A_n$ (o lo que es lo mismo, la cantidad de formas que tenemos de elegir $k$ elementos en un conjunto $A_n$ con $n$ elementos) es igual a $$ \binom{n}{k} = \frac{n!}{k! ~ (n - k)!} = C_{n,~ k} $$
-> [!quote]- Demostración
+> [!demostracion]- Demostración
 > Probaremos esta fórmula por [[Principio de inducción#Inducción "corrida"|inducción corrida]] a $n \ge 0$. Para $n \ge 0$, se tiene $$ p(n): ~ \binom{n}{k} = \frac{n!}{k! ~ (n - k)!}, ~~~ \text{para} ~ 0 \le k \le n $$
 > 
 >  * Caso base $p(0)$: Para $n = 0$ solo hay que verificar qué pasa para $k = 0$ $$ \frac{0!}{0! ~ 0!} = 1 = \binom{0}{0} $$

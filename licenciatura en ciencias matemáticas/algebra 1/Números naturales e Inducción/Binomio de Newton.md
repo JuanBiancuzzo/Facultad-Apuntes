@@ -31,7 +31,7 @@ $$ \begin{align}
      &= \sum_{k = 0}^{n} \binom{n}{k} ~ x^{n - k} y^k, ~~~ \forall n \in \mathbb{N}_0
 \end{align} $$ o lo que es lo mismo, ya que los números combinatorios son simétricos $$ (x + y)^n = \sum_{k = 0}^{n} \binom{n}{k} ~ x^k y^{n - k}, ~~~ \forall n \in \mathbb{N}_0 $$
 
-> [!quote]- Demostración
+> [!demostracion]- Demostración
 > Haremos una demostración combinatoria, o sea "contando". Pensemos que $$ (x + y)^n = \underbrace{ (x + y) \cdot (x + y) \cdots (x + y) \cdot (x + y) }_{n ~ \text{factores}} $$
 > 
 > Cuando aplicamos la [[Distributividad|distributividad]], en cada paréntesis podemos elegir un $x$ o un $y$ (pero no los dos a la vez). Como en total hay $n$ paréntesis terminaremos eligiendo $k$ veces $x$ y $n - k$ veces $y$, para algún valor de $k$, $0 \le k \le n$. Por ejemplo si no elegimos ninguna vez $x$ y $n$ veces $y$, obtenemos (al realizar el producto) el monomio $y^n$, y si elegimos $1$ vez $x$ y $n - 1$ veces $y$, obtenemos el monomio $xy^{n - 1}$. ¿Pero cuántas veces aparece cada uno de esos monomios?

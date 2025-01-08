@@ -97,7 +97,7 @@ El objetivo del juego es lograr mover toda la pila de discos a otra estaca, con 
 
 Notemos que podemos describir como [[Ecuación de recurrencia lineal|recurrencia lineal]] donde $$ a_1 = 1, ~~~~ a_{n + 1} = 2 ~ a_n + 1, ~~ \forall n \in \mathbb{N} $$ es una [[Sucesión|sucesión]] definida por recurrencia, ya que para calcular un término necesitamos conocer el anterior. Además de necesitar conocer el caso base $n = 1$ 
 
-> [!quote]- Demostración
+> [!demostracion]- Demostración
 > Podemos demostrar que la cantidad de movimiento es $a_n = 2^n - 1$ usando el [[Principio de inducción|principo de inducción]]
 > 
 > Proponemos que $p(n): ~~ a_n = 2^n - 1, ~~ \forall n \in \mathbb{N}$

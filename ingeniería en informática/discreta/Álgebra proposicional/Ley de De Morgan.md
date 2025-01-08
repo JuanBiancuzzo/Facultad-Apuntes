@@ -33,7 +33,7 @@ Para el [[Álgebra de conjuntos|álgebra de conjuntos]] se entiende como
 
 $$ (P \cup Q)' = P' \cap Q' , ~~~~ (P \cap Q)' = P' \cup Q' $$ ^5efbce
 
-> [!quote]- Demostración
+> [!demostracion]- Demostración
 > Haremos la demostración de $(A \cup B)' = A' \cap B'$ en forma directa, donde tenemos que probar la doble inclusión
 > 
 > $(A \cup B)' \subseteq A' \cap B'$

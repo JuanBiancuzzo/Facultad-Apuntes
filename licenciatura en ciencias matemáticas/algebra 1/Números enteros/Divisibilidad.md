@@ -20,39 +20,70 @@ El [[Conjunto|conjunto]] de los divisores positivos y negativos de un entero $a$
 
 ## Propiedades
 ---
-* Todo número entero $d \ne 0$ satisface que $d \mid 0$ pues $0 = 0 \cdot d$. Así el $0$ tiene infinitos divisores $$ \text{Div}(0) = \mathbb{Z} \setminus \set{0} $$
-* Se concluye que $d \mid a \iff |d| \mid |a|$ (donde $|x|$ denota el [[Norma|módulo]] o valor absoluto de $x$) 
-    * $d \mid a \iff -d \mid a \iff d \mid -a \iff -d \mid -a$
-    * El [[Cardinalidad|cardinal]] de $\text{Div}(a)$ es el doble de $\text{Div}_+(a)$
-* Si $a \ne 0$, $d \mid a \iff |d| \le |a|$. En particular, todo número entero $a$ no nulo tiene sólo un número finito de divisores, todos pertenecientes al conjunto $$ \set{ -|a|,~ \cdots,~ -1,~ 1,~ \cdots,~ |a| } $$ O sea $\text{Div}_+(a) \subset \set{1,~ \cdots,~ |a|}$
-* Ahor podemos probar fácilmente que los únicos números enteros que son inversibles son $1$ y $-1$. Es claro que tanto $1$ como $-1$ son inversibles. Por otro lado, si $a \in \mathbb{Z}$ inversible, entonces existe $b \in \mathbb{Z}$ tal que $a ~ b = 1$. Esto implica que $a \ne 0$ (pues $0 \cdot b = 0,~ \forall b \in \mathbb{Z}$), y por lo tanto $a | 1$. Pero por lo anterior, esto implica que $|a| \le 1$, es decir $a = \pm 1$
-* $d \mid a ~\text{y}~ a \mid d \iff a = \pm d$ 
-* Para todo $a \in \mathbb{Z}$, se tiene $1 \mid a$ y $-1 \mid a$, y también $a \mid a$ y $-a \mid a$
+> [!proposicion]+ Proposición 1.2.1 
+> Todo número entero $d \ne 0$ satisface que $d \mid 0$ pues $0 = 0 \cdot d$. Así el $0$ tiene infinitos divisores $$ \text{Div}(0) = \mathbb{Z} \setminus \set{0} $$
+^prop-1-2-1
 
-Sean $a,~ b,~ d \in \mathbb{Z}$, $d \ne 0$
-* $d \mid a ~\text{y}~ d \mid b \implies d \mid a + b$
-    * Pues si $a = k \cdot c$ y $b = j \cdot c$ con $k,~ j \in \mathbb{Z}$, entonces $a + b = (k + j) \cdot c$, donde $k + j \in \mathbb{Z}$
-    * $d \mid a + b$ no implica que $d \mid a$ y $d \mid b$
-    * Si $d \mid a + b$ y se sabe que $d \mid a$, entonces $d \mid b$
-* $d \mid a ~\text{y}~ d \mid b \implies d \mid a - b$
-* $d \mid a \implies d \mid c \cdot a, ~\forall c \in \mathbb{Z}$
-    * $d \mid a \cdot b$ no implica $d \mid a$ o $d \mid b$
-* $d \mid a \implies d^2 \mid a^2 ~\text{y}~ d^m \mid a^n, ~\forall n \in \mathbb{N}$
-    * Pues si $a = k \cdot d$, entonces $a^2 = k^2 \cdot d^2$ y $a^n = k^n \cdot d^m$
+> [!proposicion]+ Proposición 1.2.2
+> $d \mid a \iff -d \mid a$ (pues $a = k \cdot d \iff a = (-k) \cdot (-d)$).
+> 
+> De la misma manera $d \mid a \iff -d \mid a \iff d \mid -a \iff -d \mid -a$
+> 
+> Se concluye que $d \mid a \iff |d| \mid |a|$ (donde $|x|$ denota el [[Norma|módulo]] o valor absoluto de $x$) 
+>  * El [[Cardinalidad|cardinal]] de $\text{Div}(a)$ es el doble de $\text{Div}_+(a)$
+^prop-1-2-2
 
+> [!proposicion]+ Proposición 1.2.3
+> Si $a \ne 0$, $d \mid a \iff |d| \le |a|$. En particular, todo número entero $a$ no nulo tiene sólo un número finito de divisores, todos pertenecientes al conjunto $$ \set{ -|a|,~ \cdots,~ -1,~ 1,~ \cdots,~ |a| } $$ O sea $\text{Div}_+(a) \subset \set{1,~ \cdots,~ |a|}$
+^prop-1-2-3
+
+> [!proposicion]+ Proposición 1.2.4
+> Ahor podemos probar fácilmente que los únicos números enteros que son inversibles son $1$ y $-1$. Es claro que tanto $1$ como $-1$ son inversibles. Por otro lado, si $a \in \mathbb{Z}$ inversible, entonces existe $b \in \mathbb{Z}$ tal que $a ~ b = 1$. Esto implica que $a \ne 0$ (pues $0 \cdot b = 0,~ \forall b \in \mathbb{Z}$), y por lo tanto $a | 1$. Pero por lo anterior, esto implica que $|a| \le 1$, es decir $a = \pm 1$
+^prop-1-2-4
+
+> [!proposicion]+ Proposición 1.2.5
+> $d \mid a ~\text{y}~ a \mid d \iff a = \pm d$  (pues $a = k \cdot d$ y $d = j \cdot a$ implica que $a = (k \cdot j) \cdot a$, por lo tanto $k$ y $j$ son dos números enteros que satisfacen $k \cdot j = 1$, o sea, $k = \pm 1$)
+^prop-1-2-5
+
+> [!proposicion]+ Proposición 1.2.6
+> Para todo $a \in \mathbb{Z}$, se tiene $1 \mid a$ y $-1 \mid a$, y también $a \mid a$ y $-a \mid a$
+^prop-1-2-6
+
+> [!proposicion]+ Proposición 1.2.7
+> Sean $a,~ b,~ d \in \mathbb{Z}$, $d \ne 0$. $d \mid a ~\text{y}~ d \mid b \implies d \mid a + b$
+> * Pues si $a = k \cdot c$ y $b = j \cdot c$ con $k,~ j \in \mathbb{Z}$, entonces $a + b = (k + j) \cdot c$, donde $k + j \in \mathbb{Z}$
+> * $d \mid a + b$ no implica que $d \mid a$ y $d \mid b$
+> * Si $d \mid a + b$ y se sabe que $d \mid a$, entonces $d \mid b$
+^prop-1-2-7
+
+> [!proposicion]+ Proposición 1.2.8
+> Sean $a,~ b,~ d \in \mathbb{Z}$, $d \ne 0$. $d \mid a ~\text{y}~ d \mid b \implies d \mid a - b$
+^prop-1-2-8
+
+> [!proposicion]+ Proposición 1.2.9
+> Sean $a,~ b,~ d \in \mathbb{Z}$, $d \ne 0$. $d \mid a \implies d \mid c \cdot a, ~\forall c \in \mathbb{Z}$
+> * $d \mid a \cdot b$ no implica $d \mid a$ o $d \mid b$
+^prop-1-2-9
+
+> [!proposicion]+ Proposición 1.2.10
+> Sean $a,~ b,~ d \in \mathbb{Z}$, $d \ne 0$. $d \mid a \implies d^2 \mid a^2 ~\text{y}~ d^m \mid a^n, ~\forall n \in \mathbb{N}$
+> * Pues si $a = k \cdot d$, entonces $a^2 = k^2 \cdot d^2$ y $a^n = k^n \cdot d^m$
+^prop-1-2-10
 
 ## Propiedades esenciales con coprimalidad
 ---
-Sean $a,~ b,~ c,~ d \in \mathbb{Z}$ con $c \ne 0$ y $d \ne 0$. Entonces 
-1. Sea $c \perp d$. Entonces $c \mid a$, $d \mid a \iff c ~ d \mid a$
-
-> [!quote]- Demostración
+> [!proposicion]+ Proposición 1.1.4 (Propiedad esenciales de divisibilidad con coprimidad)
+> Sean $a,~ b,~ c,~ d \in \mathbb{Z}$ con $c \ne 0$ y $d \ne 0$. Entonces 
+>  1. Sea $c \perp d$. Entonces $c \mid a$, $d \mid a \iff c ~ d \mid a$
+>     
+> > [!demostracion]- Demostración
 > $c \perp d$ por definición $1 = s ~ c + t ~ d$ y esto implica $a = s ~ (c ~ a) + t ~ (d ~ a)$, pero $d \mid a \implies c ~ d \mid c ~ a$ y $c \mid a \implies c ~ d \mid d ~ a$, luego $c ~ d \mid s ~ (c ~ a) + t ~ (d ~ a) = a$ 
-
-2. Sea $d \perp a$. Entonces $d \mid a ~ b \iff a \mid b$ ^de8c6d
-
-> [!quote]- Demostración
+> 
+> 2. Sea $d \perp a$. Entonces $d \mid a ~ b \iff a \mid b$
+> 
+> > [!demostracion]- Demostración
 > $d \perp a$ por definición $1 = s ~ d + t ~ a$, luego $b = (s ~ b) ~ d + t ~ (a ~ b)$, pero $d \mid a ~ b$, y $d \mid d$. Por lo tanto, $d \mid  (s ~ b) ~ d + t ~ (a ~ b) = b$ 
+^prop-1-1-4
 
 # Referencias
 ---

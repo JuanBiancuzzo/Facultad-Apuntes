@@ -13,31 +13,45 @@ tags:
 ```
 # Definición
 ---
-Sean $a,~ b \in \mathbb{Z}$, no ambos nulos. Entonces existen $s,~ t \in \mathbb{Z}$ tales que $$ (a ~:~ b) = s \cdot a + t \cdot b $$
-
-> [!quote]- Demostración
-> Se miran de atrás para adelante las sucesivas divisiones hasta la que da al [[Máximo común divisor|máximo común divisor]] como último resto no nulo, y, poniendo en factor común los sucesivos [[Algoritmo de división|divisores]] y [[Algoritmo de división|restos]] y reagrupando, se obtiene una escritura entera de $(a ~:~ b)$ como combinación entera de $a$ y $b$. (Luego, si habíamos, para simplificar las divisiones, cambiado los signos de los $a$ y $b$ originales, se modifican los signos para escribir $(a ~:~ b)$ como combinación entera de los $a$ y $b$ originales) Si $r_l = (a ~:~ b)$, $$ \begin{array}{ccl c rcl} 
->     r_{l - 2} & = & k_l ~ r_{l - 1} + r_l & \implies & r_l & = & r_{l - 2} - k_l ~ r_{l - 1} \\ 
->     r_{l - 3} & = & k_{l - 1} ~ r_{l - 2} + r_{l - 1} & \implies & r_l & = & r_{l - 2} - k_l ~ (r_{l - 3} - k_{l - 1} ~ r_{l - 2}) \\ 
->     &&&&& = & (1 + k_l ~ k_{l - 2}) r_{l - 2} - k_l ~ r_{l - 3} \\
->     \vdots \\
->     r_1 & = & k_3 ~ r_2 + r_3 & \implies & r_l & = & * ~ r_1 + *' ~ r_2 \\
->     b & = & k_2 ~ r_1 + r_2 & \implies & r_l & = & * ~ r_1 + *' (b - k_2 ~ r_1) \\
->     &&&&& = & (* - k_2 ~ *') r_1 + *' ~ b \\
->     a & = & k_1 ~ b + r_1 & \implies & r_l & = & (* - k_2 ~ *')(a - k_1 ~ b) + *' ~ b \\
->     &&&&& = & s ~ a + t ~ b \\
-> \end{array} $$ donde las estrellitas simbolizan los números que se obtuvieron como coeficientes al llegar a ese paso. Así, $(a ~:~ b) = r_l = s ~ a + t ~ b$ donde claramente $s,~ t \in \mathbb{Z}$ ya que son obtenidos sumando y multiplicando enteros 
+> [!teorema]+ Teorema 1.3.3 (Mcd y combinación entera)
+> Sean $a,~ b \in \mathbb{Z}$, no ambos nulos. Entonces existen $s,~ t \in \mathbb{Z}$ tales que $$ (a ~:~ b) = s \cdot a + t \cdot b $$
+> 
+> > [!demostracion]- Demostración
+> > Se miran de atrás para adelante las sucesivas divisiones hasta la que da al [[Máximo común divisor|máximo común divisor]] como último resto no nulo, y, poniendo en factor común los sucesivos [[Algoritmo de división|divisores]] y [[Algoritmo de división|restos]] y reagrupando, se obtiene una escritura entera de $(a ~:~ b)$ como combinación entera de $a$ y $b$. (Luego, si habíamos, para simplificar las divisiones, cambiado los signos de los $a$ y $b$ originales, se modifican los signos para escribir $(a ~:~ b)$ como combinación entera de los $a$ y $b$ originales) Si $r_l = (a ~:~ b)$, $$ \begin{array}{ccl c rcl} 
+> >     r_{l - 2} & = & k_l ~ r_{l - 1} + r_l & \implies & r_l & = & r_{l - 2} - k_l ~ r_{l - 1} \\ 
+> >     r_{l - 3} & = & k_{l - 1} ~ r_{l - 2} + r_{l - 1} & \implies & r_l & = & r_{l - 2} - k_l ~ (r_{l - 3} - k_{l - 1} ~ r_{l - 2}) \\ 
+> >     &&&&& = & (1 + k_l ~ k_{l - 2}) r_{l - 2} - k_l ~ r_{l - 3} \\
+> >     \vdots \\
+> >     r_1 & = & k_3 ~ r_2 + r_3 & \implies & r_l & = & * ~ r_1 + *' ~ r_2 \\
+> >     b & = & k_2 ~ r_1 + r_2 & \implies & r_l & = & * ~ r_1 + *' (b - k_2 ~ r_1) \\
+> >     &&&&& = & (* - k_2 ~ *') r_1 + *' ~ b \\
+> >     a & = & k_1 ~ b + r_1 & \implies & r_l & = & (* - k_2 ~ *')(a - k_1 ~ b) + *' ~ b \\
+> >     &&&&& = & s ~ a + t ~ b \\
+> > \end{array} $$ donde las estrellitas simbolizan los números que se obtuvieron como coeficientes al llegar a ese paso. Así, $(a ~:~ b) = r_l = s ~ a + t ~ b$ donde claramente $s,~ t \in \mathbb{Z}$ ya que son obtenidos sumando y multiplicando enteros 
+^teo-1-3-3
 
 ## Combinaciones enteras de a y b
 ---
-Sean $a,~ b \in \mathbb{Z}$ no ambos nulos, y $c \in \mathbb{Z}$. $$ c = s' \cdot a + t' \cdot b ~~ \text{para} ~~ s',~ t' \in \mathbb{Z} \iff (a ~:~ b) \mid c $$
-
-> [!quote]- Demostración
-> * $(\implies)$ Dado que $(a ~:~ b) \mid a$ y $(a ~:~ b) \mid b$, se tiene $(a ~:~ b) \mid s' ~ a + t' + b$, luego $(a ~:~ b) \mid c$
-> * $(\impliedby)$ Si $(a ~:~ b) \mid c$, entonces $c = k \cdot (a ~:~ b)$. Como sabemos que existen $s,~ t \in \mathbb{Z}$ tales que $(a ~:~ b) \mid s \cdot a + t \cdot b$, se tiene $$ c = k \cdot (a ~:~ b) = k (s \cdot a + t \cdot b) = (k \cdot s) ~ a + (k \cdot t) ~ b $$
->       Luego $s' = k \cdot s$ y $t' = k \cdot t$
+> [!observacion]+ Observación 1.3.4 (Combinaciones enteras de a y b)
+> Sean $a,~ b \in \mathbb{Z}$ no ambos nulos, y $c \in \mathbb{Z}$. $$ c = s' \cdot a + t' \cdot b ~~ \text{para} ~~ s',~ t' \in \mathbb{Z} \iff (a ~:~ b) \mid c $$
+> 
+> > [!demostracion]- Demostración
+> > * $(\implies)$ Dado que $(a ~:~ b) \mid a$ y $(a ~:~ b) \mid b$, se tiene $(a ~:~ b) \mid s' ~ a + t' + b$, luego $(a ~:~ b) \mid c$
+> > * $(\impliedby)$ Si $(a ~:~ b) \mid c$, entonces $c = k \cdot (a ~:~ b)$. Como sabemos que existen $s,~ t \in \mathbb{Z}$ tales que $(a ~:~ b) \mid s \cdot a + t \cdot b$, se tiene $$ c = k \cdot (a ~:~ b) = k (s \cdot a + t \cdot b) = (k \cdot s) ~ a + (k \cdot t) ~ b $$
+> >       Luego $s' = k \cdot s$ y $t' = k \cdot t$
+^obs-1-3-4
 
 Este punto nos dice que el máximo común divisor $(a ~:~ b)$ es el [[Números Naturales|número natural]] más chico que se puede escribir como combinación entera de $a$ y $b$ y que todas las demás combinaciones enteras de $a$ y $b$ son divisibles por él
+
+## Coprimos y combinación entera
+---
+> [!observacion]+ Observación 1.3.8 (Coprimos y combinación entera)
+> Sean $a,~ b \in \mathbb{Z}$ no ambos nulos. Entonces $$ a \perp b \iff \exists s,~ t \in \mathbb{Z} : 1 = s ~ a + t ~ b $$
+> 
+> > [!demostracion]- Demostración
+> > * $(\implies)$ es el hecho que el [[Máximo común divisor|mcd]] $1$ es [[Combinación entera|combinación entera]] de los números
+> > * $(\impliedby)$ es por la [[Combinación entera#Combinaciones enteras de a y b|combinación entera de a y b]]
+^obs-1-3-8
 
 ## Observación
 ---

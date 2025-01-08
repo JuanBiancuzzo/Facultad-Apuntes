@@ -29,7 +29,7 @@ tags:
 > >     * Vemos que $2 = +2^1$ por lo que si es Verdadera
 > > * Paso inductivo:
 > >     * Si $a$ es un primo $p$, $p(a)$ es Verdadera ya que $a = p = +p^1$
-> >     * Si $a$ no es primo, como se enuncia ![[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Números enteros#^e1bdbb|entero divisible por primo]]específicamente un número primo más chico que $a$, y por lo tanto el cociente $k = \frac{a}{p}$ satisface $2 \le k \le a - 1$. Por hipótesis inductiva, $k$ admite una factorización como producto de primos, en la forma $k = \pm p_1^{m_1} \cdots p_r^{m_r}$. Por lo tanto $a$ admite la factorización $$ a = \pm p \cdot p_1^{m_1} \cdot p_2^{m_2} \cdots p_r^{m_r} $$
+> >     * Si $a$ no es primo, como se enuncia ![[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Números enteros#^prop-1-1-6|entero divisible por primo]]específicamente un número primo más chico que $a$, y por lo tanto el cociente $k = \frac{a}{p}$ satisface $2 \le k \le a - 1$. Por hipótesis inductiva, $k$ admite una factorización como producto de primos, en la forma $k = \pm p_1^{m_1} \cdots p_r^{m_r}$. Por lo tanto $a$ admite la factorización $$ a = \pm p \cdot p_1^{m_1} \cdot p_2^{m_2} \cdots p_r^{m_r} $$
 > > 
 > > ## Unicidad
 > > ---
@@ -41,7 +41,7 @@ tags:
 > > 
 > > Si al hacer eso no sobra nada, o sea obtenemos $1 = 1$, es que todos los primos y las potencias coincidían.
 > > 
-> > Si no pasa eso y sobra algo de algún lado al menos, obtenemos una expresión del mismo tipo, pero donde $p_i \ne q_j$ (pues son todos los que sobraron). Podemos suponer sin pérdida de generalidad que del lado izquierdo sobró un $p_i$. Entonces tenemos que $p_i$ divide a lo que sobró del lado derecho o al $1$ si no sobró nada. O sea $p_i \mid 1$ (lo que es absurdo) o $p_i \mid q_1^{n_1} \cdots q_s^{n_s}$. En este último caso, por la siguiente proposición ![[Número primo#^3f0b15|proposicion de la propiedad fundamental]] existe $j$ tal que $p_i \mid q_j$ pero $p_i$ y $q_j$ son primos distintos. Contradicción, que proviene de suponer que sobró un primo de algún lado
+> > Si no pasa eso y sobra algo de algún lado al menos, obtenemos una expresión del mismo tipo, pero donde $p_i \ne q_j$ (pues son todos los que sobraron). Podemos suponer sin pérdida de generalidad que del lado izquierdo sobró un $p_i$. Entonces tenemos que $p_i$ divide a lo que sobró del lado derecho o al $1$ si no sobró nada. O sea $p_i \mid 1$ (lo que es absurdo) o $p_i \mid q_1^{n_1} \cdots q_s^{n_s}$. En este último caso, por la siguiente proposición ![[Número primo#^prop-1-1-9|proposicion de la propiedad fundamental]] existe $j$ tal que $p_i \mid q_j$ pero $p_i$ y $q_j$ son primos distintos. Contradicción, que proviene de suponer que sobró un primo de algún lado
 ^teo-1-1-1
 
 ## Primos de productos y potencias
@@ -69,6 +69,8 @@ tags:
 > > 1. $(\implies)$ $d \mid a \iff \exists k \in \mathbb{Z}$, tal que $a = k \cdot d$. Luego la factorización en primos de $k \cdot d$ tiene que ser igual a la de $a$ $$ k \cdot d = p_1^{m_1} \cdots p_r^{m_r} $$
 > >  Teniendo en cuenta lo siguiente ![[Teorema fundamental de la aritmética#^obs-1-1-2]]
 ^pro-1-1-3
+
+
 
 # Referencias
 ---
