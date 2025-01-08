@@ -315,6 +315,8 @@ function generarPreguntas(tp, datos) {
 }
 
 function describir(tp, datos) {
+    const { AUTORES, TITULO_INFORME } = tp.user.constantes().DATOS.REFERENCIAS.paper;
+
     let autores = [];
     for (let { nombre, apellido } of datos[AUTORES]) {
         autores.push(`${nombre} ${apellido}`);
