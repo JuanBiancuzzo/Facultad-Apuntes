@@ -153,7 +153,7 @@ function generarPreguntas(tp, datos) {
 }
 
 async function agregarDatos(tp, datos) {
-    const { TAGS, DIRECTORIOS, BLOQUES_MATEMATICA, DATOS_BLOQUES_MATEMATICA } = tp.user.constantes();
+    const { TAGS, DIRECTORIOS, BLOQUES_MATEMATICA, DATOS: { BLOQUES_MATEMATICA: DATOS_BLOQUES_MATEMATICA } } = tp.user.constantes();
 
     let subtemas = dv.pages(`#${TAGS.bloqueMatematica.self}/${tp.user.tagPorNombre(datos[TEMA])} and #${TAGS.bloqueMatematica.subtema}`);
 
@@ -208,7 +208,7 @@ async function agregarDatos(tp, datos) {
 }
 
 function representacion(tp, datos) {
-    const { TAGS, DATOS_BLOQUES_MATEMATICA } = tp.user.constantes();
+    const { TAGS, DATOS: { BLOQUES_MATEMATICA: DATOS_BLOQUES_MATEMATICA } } = tp.user.constantes();
     const { callout, nombre, reducido } = datos[CLASIFICACION];
 
     const tema = dv.pages(`#${TAGS.bloqueMatematica.self}/${tp.user.tagPorNombre(datos[TEMA])} and #${TAGS.bloqueMatematica.tema}`)
