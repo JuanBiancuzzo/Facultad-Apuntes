@@ -34,7 +34,7 @@ Entonces $d = (a ~:~ b)$
 ## Múltiplo común de dos números
 ---
 Sean $a,~b \in \mathbb{Z}$, no ambos nulos, y sea $k \in \mathbb{Z}$ con $k \ne 0$. Entonces $$ (k ~ a ~:~ k ~ b) = |k| \cdot (a ~:~ b) $$
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > Sin pérdida de generalidad, podemos suponer $k > 0$.
 > 
 > Por un lado, aplicando [[Divisor común|divisor común]] ![[Divisor común#^4bc026]] se tiene $$ (a ~:~ b) \mid a ~~ \text{y} ~~ (a ~:~ b) \mid b \implies k ~ (a ~:~ b) \mid k ~ a ~~ \text{y} ~~ k ~ (a ~:~ b) \mid k ~ b \implies k ~ (a ~:~ b) \mid (k ~ a ~:~ k ~ b) $$
@@ -52,7 +52,7 @@ Sean $a,~ b \in \mathbb{Z}$, no ambos nulos, y sea $d \in \mathbb{N}$. Son equiv
 
 Un número $d \in \mathbb{N}$ que cumple cualquiera de esas $3$ propiedades es el máximo común divisor $(a ~:~ b)$
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > Vamos a probar $(1 \implies 2)$, $(2 \implies 3)$ y $(3 \implies 1)$, ya que para probar $(2 \implies 1)$ se usa $(2 \implies 3 \implies 1)$
 > 
 >  * $(1 \implies 2)$ 

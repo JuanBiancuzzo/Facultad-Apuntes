@@ -23,12 +23,12 @@ Las funciones biyectivas y su inversa están relacionadas por medio de la [[Comp
 
 Sea $f : A \to B$ una función. Si $f$ es biyectiva, entonces $f^{-1} \circ f = \text{id}_A$ y $f \circ f^{-1} = \text{id}_B$
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > $f^{-1} \circ f(x) = f^{-1}(f(x)) = f^{-1}(y)$ donde $y = f(x)$ y por lo tanto $f^{-1}(y) = x$ por la definición de la función inversa. Es decir $f^{-1} \circ f(x) = x$, $\forall x \in A$. Así $f^{-1} \circ f = \text{id}_A$. Del mismo modo, se prueba que $f \circ f^{-1} = \text{id}_B$
 
 Sea $f : A \to B$ una función. Si existe una función $g : B \to A$ tal que $g \circ f = \text{id}_A$ y $f \circ g = \text{id}_B$, entonces $f$ es biyectiva y $f^{-1} = g$
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > Sea $g : B \to A$ la función tal que $g \circ f = \text{id}_A$ y $f \circ f = \text{id}_B$. Probemos primero que $f$ es biyectiva
 > * $f$ es inyectiva pues $f(x) = f(x')$ implies $g(f(x)) = g(f(x'))$, es decir $g \circ f(x) = g \circ f(x')$. Pero $g \circ f = \text{id}_A$, por lo tanto $x = \text{id}_A(x) = \text{id}_A(x') = x'$. Es decir $x = x'$ como se quería probar
 > * $f$ es sobreyectiva pues si $y \in B$, podemos tomar $x = g(y)$. Luego $f(x) = f(g(y)) = f \circ g(y) = \text{id}_B(y) = y$ Por lo tanto $y$ tiene un antecedente, que es $x = g(y)$

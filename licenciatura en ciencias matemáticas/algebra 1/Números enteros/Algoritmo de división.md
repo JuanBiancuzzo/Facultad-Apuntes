@@ -27,7 +27,7 @@ Se dice que $k$ es el cociente y $r$ es el resto de la división de $a$ por $d$ 
 
 Al resto $r$ lo notaremos $r_d(a)$ para especificar que es el "resto de $a$ al dividir por $d$"
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > El teorema consta de dos afirmaciones, la parte existencial, que requiere mostrar que existen $k$ y $r$ en las condiciones del teorema, y luego la unicidad: mostrar que no puede haber dos pares distintos de cocientes y resto para $a$ y $d$ dados
 > 
 > ### Existencia
@@ -84,24 +84,24 @@ Sean $a,~ d \in \mathbb{Z}$, $d \ne 0$. Entonces $$ d_d(a) = 0 \iff d \mid a \if
 Sea $d \in \mathbb{Z}$, $d \ne 0$. Entonces
 1. $a \equiv r_d(a) ~ (\text{mod} ~ d), ~~ \forall a \in \mathbb{Z}$
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > Pues $a = k ~ d + r_d(a) \implies a - r_d(a) = k ~ d \implies a \equiv r_d(a) ~ (\text{mod} ~ d)$
 
 2. $a \equiv r ~ (\text{mod} ~ d) ~ \text{con} ~ 0 \le r < |d| \implies r = r_d(a)$
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > $a \equiv r ~ (\text{mod} ~ d) \implies d \mid a - r \implies a - r = k ~ d$ para algún $k \in \mathbb{Z}$ que implica $a = k ~ d + r$
 > 
 > Pero la condición $0 \le r < |d|$ implica entonces que $r = r_d(a)$. Se usa aquí la unicidad del resto
  
 3. $r_1 \equiv r_2 ~ (\text{mod} ~ d) ~ \text{con} ~ 0 \le r_1,~ r_2 < |d| \implies r_1 = r_2$
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > $r_1 = 0 ~ d + r_1$ con $0 \le r_1 < |d| \implies r_1 = r_d(r_1)$. Pero por otro lado, $r_1 \equiv r_2 ~ (\text{mod} ~ d)$ con $0 \le r_2 < |d| \implies r_2 = r_d(r_1)$ por el punto $2$ anterior. Se concluye que $4_1 = r_2$ por la unicidad del resto
 
 4. $a \equiv b ~ (\text{mod} ~ d) \iff r_d(a) = r_d(b)$
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > Probando para $(\implies)$ $a \equiv b ~ (\text{mod} ~ d)$, y $a \equiv r_d(a) ~ (\text{mod} ~ d)$, $b \equiv r_d(b) ~ (\text{mod} ~ d)$ por el punto $1$. Luego, por [[Relación transitiva|transitividad]] (y [[Relación simétrica|simetría]]) $r_d(a) \equiv r_d(b) ~ (\text{mod} ~ d)$. Por el punto $3$ se obtiene entonces $r_d(a) = r_d(b)$
 > 
 > Probando para $(\impliedby)$ $r_d(a) = r_d(b) \implies r_d(a) \equiv r_d(b) ~ (\text{mod} ~ d)$, y juntando por transitividad (y simetría) con $a \equiv r_d(a) ~ (\text{mod} ~ d)$, $b \equiv r_d(b) ~ (\text{mod} ~ d)$, resulta $a \equiv b ~ (\text{mod} ~ d)$
@@ -116,7 +116,7 @@ Sean $a,~ b,~ d \in \mathbb{Z}$, $d \ne 0$. Entonces
 * $r_d(a \cdot b) = r_d(r_d(a) \cdot r_d(b))$
 * $r_d(a^n) = r_d(r_d(a)^n), ~~ \forall n \in \mathbb{N}$
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > $$ \begin{cases} 
 >     a \equiv r_d(a) ~ (\text{mod} ~ d) \\\\
 >     b \equiv r_d(b) ~ (\text{mod} ~ d)

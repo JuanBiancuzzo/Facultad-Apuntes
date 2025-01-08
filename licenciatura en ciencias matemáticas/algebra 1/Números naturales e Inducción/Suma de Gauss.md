@@ -24,7 +24,7 @@ Luego $S = (100 \cdot 101) / 2$
 Este procedimiento es claramente generalizable a cualquier número natural $n$, y se obtiene $$ \forall n \in \mathbb{N}: ~~~~ 1 + 2 + \cdots + (n - 1) + n = \frac{n (n + 1)}{2} $$
 Notar que este número siempre es un número natural ya que $n (n + 1)$ siempre es un número par
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > Podemos demostrarla usando el [[Principio de inducción|principio de inducción]], y lo que vamos a demostrar es $$ \sum_{i = 1}^n i = \frac{n(n + 1)}{2}, ~~ \forall n \in \mathbb{N} $$
 > 
 > Aquí la afirmación $p(n)$ para cada número natural $n$ es $$ p(n): ~~ \sum_{i = 1}^n i = \frac{n(n + 1)}{2} $$

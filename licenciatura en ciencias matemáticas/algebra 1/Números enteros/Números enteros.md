@@ -44,7 +44,7 @@ Recordemos otras propiedades que ya conocemos de $\mathbb{Z}$ o también de subc
 ---
 Sea $a \in \mathbb{Z}$, $a \ne 0,~ \pm 1$. Entonces existe un [[Número primo|número primo]] (positivo) $p$ tal que $p \mid a$ ^e1bdbb
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > Claramente alcanza probar para $a$ positivo, es decir para $a \ge 2$ (pues $a \ne 0,~ \pm 1$) pues sabemos que $p \mid a \iff p \mid |a|$ $$ p(a): ~~ \exists p ~ \text{primo positivo} ~ : ~ p \mid a $$
 > 
 >  * Caso base p(2) es Verdadera: Sí, pues $p := 2 \mid 2$
@@ -60,7 +60,7 @@ Sea $a \in \mathbb{Z}$, $a \ne 0,~ \pm 1$. Entonces existe un [[Número primo|n�
 
 Una consecuencia de este hecho es que hay infinitos primos distintos
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > Supongamos que no es así y que hay sólo n número finito $N$ de primos positivos. O sea que el conjunto $\mathcal{P}$ de primos positivos es $\mathcal{P} = \set{ p_1,~ \cdots,~ p_N }$. Consideremos entonces el siguiente [[Números Naturales|número natural]] $M$ $$ M := p_1 \cdot p_2 \cdots p_N + 1 $$
 > 
 > Dado que $M \ge 2$ pues $2 \in \mathcal{P}$, existe un primo positivo $p_i \in \mathcal{P}$ que divide a $M$. Pero $$ \begin{matrix} 

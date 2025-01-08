@@ -23,7 +23,7 @@ Además dicho desarrollo, con las exigencias $0 \le r_i < d$ impuestas para los 
 
 Se nota $a = (r_n ~ \cdots ~ r_0)_d$
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > La idea intuitiva es ir dividiendo iteradamente el número $a$ y los sucesivos [[Algoritmo de división|cocientes]] por $d$. Para formalizar la prueba se puede hacer por [[Principio de inducción completa|inducción]] en $a \in \mathbb{N}_0$
 >  * Para $a = 0$
 >      * Se tiene $0 = (0)_d$, es decir estamos en el único caso en que todos los dígitos son cero

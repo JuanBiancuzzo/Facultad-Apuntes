@@ -37,7 +37,7 @@ $$ (p ~:~ a) = \begin{cases}
 ---
 Sea $p$ un primo y sean $a,~ b \in \mathbb{Z}$. Entonces  $$ p \mid a \cdot b \implies p \mid a ~~ \lor ~~ p \mid b $$ ^468cff
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > Usando la propiedad ![[Divisibilidad#^de8c6d|divisibilidad con coprimos]] y la observación ![[Número primo#^7da588|anterior]] podemos ver que $p \perp a$ es equivalente a $p \not \mid a$ por lo que reformulando la propiedad, esta diría $p \mid a \cdot b$ y $p \not \mid a$ entonces $p \mid b$
 > 
 > Ahora usando esta reformulación, vemos que las dos opciones ya están, si $p \mid a$ es una de las posibilidades y si $p \not \mid a$ entonces $p \mid b$
@@ -47,7 +47,7 @@ Partiendo de esta, podemos definir la siguiente proposición
 Sea $p$ un número primo y sean $a_1,~ \cdots,~ a_n \in \mathbb{Z}$, con $n \ge 2$. Entonces $$ p \mid a_1 \cdots a_n \implies p \mid a_i ~ \text{para algún} ~ i,~ 1 \le i \le n $$
 En particular, dado $a \in \mathbb{Z}$, si $p \mid a^n$ entonces $p \mid a$ ^3f0b15
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > Por [[Principio de inducción|inducción]] en $n$, empezando en $n = 2$ $$ p(n): ~ \forall a_1,~ \cdots, a_n \in \mathbb{Z},~ p \mid a_1 \cdots a_n \implies p \mid a_i ~ \text{para algún} ~ i,~ 1 \le i \le n $$
 > 
 > * Caso base $p(2)$ es Verdadera

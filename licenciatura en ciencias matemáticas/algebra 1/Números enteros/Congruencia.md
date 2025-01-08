@@ -23,7 +23,7 @@ En caso contrario se nota $a \not \equiv b~ (\text{mod}~ d)$ o $a \not \equiv b 
 Sea $d \in \mathbb{Z}$, $d \ne 0$. Sea $\mathcal{R}$ la [[Relación|relación]] en $\mathbb{Z}$ dada por $$ a \mathcal{R} b \iff a \equiv b ~ (\text{mod} ~ d), ~~~ \forall a,~ b \in \mathbb{Z} $$
 Entonces $\mathcal{R}$ es una [[Relación de equivalencia|relación de equivalencia]]
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > Para demostrarlo tenemos que probar que $\mathcal{R}$ es [[Relación reflexiva|reflexiva]], [[Relación simétrica|simétrica]] y [[Relación transitiva|transitiva]]
 >  * Reflexividad
 >      * Para todo $a \in \mathbb{Z}$, $a \equiv a ~ (\text{mod} ~ d)$ pues $d \mid a - a$
@@ -37,7 +37,7 @@ Entonces $\mathcal{R}$ es una [[Relación de equivalencia|relación de equivalen
 Sea $d \in \mathbb{Z}$, $d \ne 0$. Entonces 
 
 1. $\forall a_1,~ a_2,~ b_1,~ b_2 \in \mathbb{Z}$ $$ a_1 \equiv b_1 ~ (\text{mod} ~ d) ~~ \text{y} ~~ a_2 \equiv b_2 ~ (\text{mod} ~ d) ~~ \text{y} \implies a_1 + a_2 \equiv b_1 + b_2 ~ (\text{mod} ~ d) $$
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > $a_1 \equiv b_1 ~ (\text{mod} ~ d)$ y $a_2 \equiv b_2 ~ (\text{mod} ~ d)$ implica por definición $d \mid a_1 - b_1$ y $d \mid a_2 - b_2$. Por lo tanto $d \mid (a_1 - b_1) + (a_2 - b_2) = d \mid (a_1 + a_2) - (b_1 + b_2)$, es decir $a_1 + a_2 \equiv b_1 + b_2 ~ (\text{mod} ~ d)$
 
 2. Para todo $n \in \mathbb{N}$, $a_1,~ \cdots,~ a_n,~ b_1,~ \cdots,~ b_n \in \mathbb{Z}$ $$ \begin{cases}
@@ -45,7 +45,7 @@ Sea $d \in \mathbb{Z}$, $d \ne 0$. Entonces
        ~~~~~~\vdots \\
        a_n \equiv b_n ~ (\text{mod} ~ d) \\
    \end{cases} \implies a_1 + \cdots + a_n \equiv b_1 + \cdots + b_n ~ (\text{mod} ~ d) $$
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > Podemos probarlo usando [[Principio de inducción completa|inducción completa]], donde definimos $$ p(n): ~~~ \begin{cases}
 >      a_1 \equiv b_1 ~ (\text{mod} ~ d) \\
 >      ~~~~~~\vdots \\
@@ -72,11 +72,11 @@ Sea $d \in \mathbb{Z}$, $d \ne 0$. Entonces
 > Por lo que podemos concluir que $p(n)$ es Verdadera para todo $n \in \mathbb{N}$
 
 3. $\forall a,~ b,~ c \in \mathbb{Z}$, $$ a \equiv b ~ (\text{mod} ~d) \implies c ~ a \equiv c ~ b ~ (\text{mod} ~d) $$
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > $a \equiv b ~ (\text{mod} ~ d)$ implica por definición $d \mid a - b$, y por propiedad de la [[Divisibilidad|divisibilidad]] podemos decir $d \mid c ~ (a - b)$, por lo tanto $d \mid c ~ a - c ~ b$, es decir $c ~ a \equiv c ~b ~ (\text{mod} ~ d)$
 
 4. $\forall a_1,~ a_2,~ b_1,~ b_2 \in \mathbb{Z}$, $$ a_1 \equiv b_1 ~ (\text{mod} ~ d) ~~ \text{y} ~~ a_2 \equiv b_2 ~ (\text{mod} ~ d) ~~ \text{y} \implies a_1 ~ a_2 \equiv b_1 ~ b_2 ~ (\text{mod} ~ d) $$
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > Como $a_1 \equiv b_1 ~ (\text{mod} ~ d)$, entonces $a_1 ~ a_2 \equiv b_1 ~ a_2 ~ (\text{mod} ~ d)$ (multiplicado por $a_2$)
 > Por otro lado, como $a_2 \equiv b_2 ~ (\text{mod} ~ d)$, se tiene $b_1 ~ a_2 \equiv b_1 ~ b_2 ~ (\text{mod} ~ d)$ (multiplicado por $b_2$)
 > Finalmente por transitividad, se concluye que $a_1 ~ a_2 \equiv b_1 ~ b_2 ~ (\text{mod} ~ d)$
@@ -86,7 +86,7 @@ Sea $d \in \mathbb{Z}$, $d \ne 0$. Entonces
        ~~~~~~\vdots \\
        a_n \equiv b_n ~ (\text{mod} ~ d) \\
    \end{cases} \implies a_1 ~ \cdots ~ a_n \equiv b_1 ~ \cdots ~ b_n ~ (\text{mod} ~ d) $$
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > Podemos probarlo usando [[Principio de inducción completa|inducción completa]], donde definimos $$ p(n): ~~~ \begin{cases}
 >      a_1 \equiv b_1 ~ (\text{mod} ~ d) \\
 >      ~~~~~~\vdots \\
@@ -115,7 +115,7 @@ Sea $d \in \mathbb{Z}$, $d \ne 0$. Entonces
 > Por lo que podemos concluir que $p(n)$ es Verdadera para todo $n \in \mathbb{N}$
 
 6. $\forall a,~ b \in \mathbb{Z}$, $n \in \mathbb{N}$, $$ a \equiv b ~ (\text{mod} ~ d) \implies a^n \equiv b^n ~ (\text{mod} ~ d) $$
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > Tomando el punto anterior, notemos que es el caso especifico donde $a_1 = a_2 = \cdots = a_n = a$ y $b_1 = b_2 = \cdots = b_n = b$
 
 # Referencias

@@ -42,7 +42,7 @@ Luego la sucesión $F_n$ satisface la [[Sucesión de Lucas|recurrencia]] $F_{n +
 Se obtiene viendo que la sucesión de Fibonacci es un caso particular de una [[Sucesión de Lucas|sucesión de Lucas]] y por lo tanto usar su forma para encontrar el término general
 $$ F_n = \frac{1}{\sqrt{5}} \left( \Phi^n - \overline{\Phi}^n \right), ~~~~ \forall n \in \mathbb{N_0} $$ donde $\Phi$ es el [[Número de Oro|número de Oro]]
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > Lo probamos por el [[Principio de inducción#Inducción "corrida"|principio de inducción corrido]] a $n \ge 0$ $$ p(n): ~~~ F_n = \frac{1}{\sqrt{5}} \left( \Phi^n - \overline{\Phi}^n \right) $$
 > 
 >  * Casos bases $p(0)$ y $p(1)$: $$ \frac{1}{\sqrt{5}} (1 - 1) = 0 = F_0 ~~~~ \text{y} ~~~~ \frac{1}{\sqrt{5}} \left( \Phi^1 - \overline{\Phi}^1 \right) = \frac{1}{\sqrt{5}} ~ \sqrt{5} = 1 = F_1 $$ 

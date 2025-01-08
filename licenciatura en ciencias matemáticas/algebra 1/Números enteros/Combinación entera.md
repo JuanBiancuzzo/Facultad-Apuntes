@@ -15,7 +15,7 @@ tags:
 ---
 Sean $a,~ b \in \mathbb{Z}$, no ambos nulos. Entonces existen $s,~ t \in \mathbb{Z}$ tales que $$ (a ~:~ b) = s \cdot a + t \cdot b $$
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > Se miran de atrás para adelante las sucesivas divisiones hasta la que da al [[Máximo común divisor|máximo común divisor]] como último resto no nulo, y, poniendo en factor común los sucesivos [[Algoritmo de división|divisores]] y [[Algoritmo de división|restos]] y reagrupando, se obtiene una escritura entera de $(a ~:~ b)$ como combinación entera de $a$ y $b$. (Luego, si habíamos, para simplificar las divisiones, cambiado los signos de los $a$ y $b$ originales, se modifican los signos para escribir $(a ~:~ b)$ como combinación entera de los $a$ y $b$ originales) Si $r_l = (a ~:~ b)$, $$ \begin{array}{ccl c rcl} 
 >     r_{l - 2} & = & k_l ~ r_{l - 1} + r_l & \implies & r_l & = & r_{l - 2} - k_l ~ r_{l - 1} \\ 
 >     r_{l - 3} & = & k_{l - 1} ~ r_{l - 2} + r_{l - 1} & \implies & r_l & = & r_{l - 2} - k_l ~ (r_{l - 3} - k_{l - 1} ~ r_{l - 2}) \\ 
@@ -32,7 +32,7 @@ Sean $a,~ b \in \mathbb{Z}$, no ambos nulos. Entonces existen $s,~ t \in \mathbb
 ---
 Sean $a,~ b \in \mathbb{Z}$ no ambos nulos, y $c \in \mathbb{Z}$. $$ c = s' \cdot a + t' \cdot b ~~ \text{para} ~~ s',~ t' \in \mathbb{Z} \iff (a ~:~ b) \mid c $$
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > * $(\implies)$ Dado que $(a ~:~ b) \mid a$ y $(a ~:~ b) \mid b$, se tiene $(a ~:~ b) \mid s' ~ a + t' + b$, luego $(a ~:~ b) \mid c$
 > * $(\impliedby)$ Si $(a ~:~ b) \mid c$, entonces $c = k \cdot (a ~:~ b)$. Como sabemos que existen $s,~ t \in \mathbb{Z}$ tales que $(a ~:~ b) \mid s \cdot a + t \cdot b$, se tiene $$ c = k \cdot (a ~:~ b) = k (s \cdot a + t \cdot b) = (k \cdot s) ~ a + (k \cdot t) ~ b $$
 >       Luego $s' = k \cdot s$ y $t' = k \cdot t$

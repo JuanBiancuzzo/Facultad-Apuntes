@@ -25,7 +25,7 @@ Sean $a,~ b \in \mathbb{Z}$ no ambos nulos, y sea $k \in \mathbb{Z}$, entonces $
 En particular, para todo $k \in \mathbb{Z}$, $(a ~:~ b) = (b ~:~ a - k \cdot b)$ y dados $a,~b,~c \in \mathbb{Z}$ con $b \ne 0$ $$ a \equiv c ~ (\text{mod} ~ b) ~~ \implies ~~ (a ~:~ b) = (b ~:~ c) $$
 Aplicando esto a $a \equiv r_b(a) ~ (\text{mod} ~ b)$, se obtiene que $(a ~:~ b) = (b ~:~ r_b(a))$
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > Para probar que $(a ~:~ b) = (b ~:~ a - k \cdot b)$, alcanza con probar la primera igualdad, la de los conjuntos $\text{DivCom}$, pues entonces el máximo de los divisores comunes será el mismo
 > 
 > Sabemos que $d \mid a$, $d \mid a - k \cdot b$, y también $d \mid b$, $d \mid a - k \cdot b \implies d \mid a$. Por lo tanto $$ \begin{align} 
@@ -49,7 +49,7 @@ Sean $a, ~ b \in \mathbb{Z}$ no nulos. Existe $l \in \mathbb{N}_0$ tal que en un
 
 La sucesión de divisiones hasta llegar al último resto no nulo se suele llamar el esquema de Euclides extendido ^equema-euclides-extendido
 
-> [!quote]+ Demostración
+> [!quote]- Demostración
 > Siempre se llega en un número finito de pasos (acotado a simple vista por $|b|$) a un resto nulo ya que $$ |b| > r_1 > r_2 > r_3 > \cdots \le 0 $$ y esta sucesión estrictamente decreciente de restos $\ge 0$ no puede ser infinita. Cuando en el procedimiento se llega a un resto nulo, $r_{l + 1} = 0$, se tiene $$ (a ~:~ b) = (b ~:~ r_1) = (r_1 ~:~ r_2) = \cdots = (r_{l - 1} ~:~ r_l) = (r_l ~:~ 0) = r_l $$
 
 ### Observación
