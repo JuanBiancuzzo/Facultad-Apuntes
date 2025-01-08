@@ -3,10 +3,17 @@ dia: 2023-11-15
 tags:
   - ingeniería-en-informática/sisop/La-abstracción-de-proceso
   - nota/facultad
+referencias:
+  - "787"
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
-La virtualización de [[Procesador|procesamiento]] es la forma de virtualización más primitiva, consiste en dar la ilusión de la existencia de un único [[Procesador|procesador]] para cualquier [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] que requiera de su uso. De esta forma, se provee
+La virtualización de [[Procesador|procesamiento]] es la forma de virtualización más primitiva, consiste en dar la ilusión de la existencia de un único [[Procesador|procesador]] para cualquier [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] que requiera de su uso
+De esta forma, se provee
 
 ### Simplicidad en la programación
 ---
@@ -25,3 +32,10 @@ El [[Sistema operativo|S.O.]] crea esta ilusión mediante la [[Virtualización d
 ## Interfaz de procesos
 ---
 ![[Proceso#API's]]
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```

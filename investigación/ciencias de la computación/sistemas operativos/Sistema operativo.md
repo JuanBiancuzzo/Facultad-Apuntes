@@ -5,6 +5,8 @@ tags:
   - índice
   - nota/investigacion
   - investigación/ciencias-de-la-computación/sistemas-operativos
+referencias:
+  - "325"
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
@@ -16,7 +18,15 @@ Vamos a investigar como funcione un sistema operativo desde $0$
 ## Resumen
 ---
 #ingeniería-en-informática/sisop/Kernel #ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración 
-El [[Software|software]] que maneja y dispone de los recursos de una [[Computadora|computadora]], con esta definición el [[Kernel|kernel]] puede ser equivalente al sistema operativo.
+El [[Software|software]] que maneja y dispone de los recursos de una [[Computadora|computadora]], con esta definición el [[Kernel|kernel]] puede ser equivalente al sistema operativo
+
+Este usa las siguientes abstracciones
+* [[Virtualización del procesador|Virtualización del CPU]]
+* [[Virtualización de memoria|Virtualización de memoria]]
+* [[Concurrencia|Concurrencia]]
+* [[Persistencia de datos|Persistencia]]
+
+Las cuales tiene que tener en cuenta para mantener la seguridad y la eficiencia del mismo
 
 ### Iniciar
 ---
@@ -55,7 +65,6 @@ Una vez que el [[Kernel|kernel]] terminó de ejecutarse, las últimas operacione
 
 Leer
 * [[The Linux Programming Interface, a Linux and UNIX System Programming Handbook de Michael Kerrisk|The Linux Programming Interface, a Linux and UNIX System Programming Handbook]]
-* [[Operating Systems, Three Easy Pieces de Ramzi H. Arpaci-Desseau, Andrea C. Arpaci-Desseau|Operating Systems, Three Easy Pieces]]
 * [[Linux From Scratch de Gerard Beekmans|Linux From Scratch]]
 
 ## Archivos

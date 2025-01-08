@@ -6,8 +6,13 @@ tags:
   - ingeniería-en-informática/taller/Concurrencia
   - ingeniería-electrónica/taller/Concurrencia
   - ingeniería-en-informática/concurrentes/Introducción
-  - resumen-materia/Concurrencia
+referencias:
+  - "787"
+etapa: empezado
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Un programa concurrente, las diferentes partes de un programa se ejecutan independientemente. No necesariamente al mismo tiempo
@@ -16,6 +21,7 @@ Este programa consiste de un conjunto finito de procesos secuenciales. Y estos [
 
 El proceso concurrente, es intercalar estas instrucciones atómicas del conjunto de procesos secuenciales
 
+Este también es un desafío para un [[Sistema operativo|sistema operativo]], al tener que manejar los procesos de manera de [[Mínimo|minimizar]] el tiempo sin hacer nada
 ## Modelos
 ---
 * [[Fork-join|Paralelismo fork-join]]
@@ -45,3 +51,11 @@ El orden deseado entre accesos a memoria se ha cambiado.
 
 ### Deadlocks
 ![[Deadlock#Definición]]
+
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```

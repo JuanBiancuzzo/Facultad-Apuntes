@@ -449,8 +449,13 @@ Partiendo de la [[Arquitectura Von Neumann|arquitectura Von Neumann]], se plante
 
 La primera forma en la que un OS logra esto es mediante la virtualización. Para poder usar el sistema operativo, este provee algunas [[Aplicación Programming Interface|APIs]], y en general las [[Función|funciones]] que da se las llaman [[investigación/ciencias de la computación/lenguajes de programación/lenguaje c/System call/System call|system calls]] y están disponibles para para las aplicaciones. Estas a veces se las conoce como una [[Biblioteca|biblioteca]] estándar 
 
-Vemos
-* [[Virtualización del procesador|Virtualización de la CPU]]
+Un sistema operativa usa las siguientes abstracciones
+* [[Virtualización del procesador|Virtualización del CPU]]
+* [[Virtualización de memoria|Virtualización de memoria]]
+* [[Concurrencia|Concurrencia]]
+* [[Persistencia de datos|Persistencia]]
+
+Las cuales tiene que tener en cuenta para mantener la seguridad y la eficiencia del mismo. Se plantea que estos son las metas que se tienen que tener en cuenta al crear un OS 
 
 ## Capítulo 3: A Dialogue on Virtualization
 ---
