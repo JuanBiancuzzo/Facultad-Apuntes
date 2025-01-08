@@ -88,12 +88,12 @@ async function actualizarDatos(tp, datos, respuesta) {
             datos[SUBTEMA] = resultado;
             datos[NUMERO] = 1;
             if (subTemas.length > 0) {
-                let subtema = subTemas.find(subtema => subtema.file.name == resultado);
+                let subtema = subTemas.find(subtema => subtema.file.name == datos[SUBTEMA]);
                 if (subtema) {
                     let notas = dv.array(subtema[DATOS_BLOQUES_MATEMATICA.subtema.nota.self]);
                     datos[NUMERO] = 1;
                     if (notas.length > 0) {
-                        notas.map(({ [DATOS_BLOQUES_MATEMATICA.subtema.nota.numero]: numero }) => numero).max() + 1;
+                        datos[NUMERO] = notas.map(({ [DATOS_BLOQUES_MATEMATICA.subtema.nota.numero]: numero }) => numero).max() + 1;
                     }
                 }
             } 
