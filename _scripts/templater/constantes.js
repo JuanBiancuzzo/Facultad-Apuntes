@@ -230,6 +230,7 @@ module.exports = () => ({
             infoCuatri: "cuatri",
             referencias: "referencias",
             equivalencia: "equivalencia",
+            tags: "tags",
         },
         INVESTIGACION: {
             estado: "estado",
