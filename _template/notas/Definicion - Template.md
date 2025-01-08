@@ -12,37 +12,53 @@
     const tArchivo = tp.file.find_tfile(tp.file.path(true));
 
     let carpeta = tArchivo.parent.path.split("/");
-    let directorioCarrera = carpeta.at(0);
+    if (carpeta.last().trim() == DIRECTORIOS.imagenes) carpeta.pop();
 
-    let carrera = dv.pages(`"${directorioCarrera}" and #${TAGS.carrera.self}`).first();
-
-    let directorioMateria = directorioCarrera;
-    if (carpeta.at(1)) directorioMateria += `/${carpeta.at(1)}`;
-
-    let materias = dv.pages(`"${directorioMateria}" and #${TAGS.materia}`)
+    let resumenes = dv.pages(`"${carpeta.join("/")}" and #${TAGS.resumenMateria}`);
+    let materias = dv.pages(`"${carpeta.join("/")}" and #${TAGS.materia}`)
         .sort(materia => {
             let materiaFinal = materia[DATOS_MATERIA.equivalencia]
                 ? dv.page(materia[DATOS_MATERIA.equivalencia].path)
                 : materia;
             return parseFloat(materiaFinal[DATOS_MATERIA.infoCuatri].replace("C", "."))
         });
-    let materia = materias.first();
-    if (materias.length > 1) {
-        materia = await preguntar.suggester(
-            tp, (materia) => materia.file.name, materias,
-            "Que materia se quiere agregar esta nota?",
-            error.Quit("No se ingresó en que materia se va a crear la nota")
-        );
+
+    while ((resumenes.length > 0 && materias.length > 0) || (materias.length == 0 && resumenes.length == 0)) {
+        let materia;
+        switch (materias.length) {
+            case 0: continue;
+            case 1: materia = materias.first(); break;
+            default: 
+                materia = await preguntar.suggester(
+                    tp, (materia) => materia.file.name, materias,
+                    "Que materia se quiere agregar esta nota?",
+                    error.Quit("No se ingresó en que materia se va a crear la nota")
+                );
+        }
+
+        let tagDeMateria = materia[DATOS_MATERIA.tags]
+            .find(tag => tag.startsWith(TAGS.materia))
+            .replace(`${TAGS.materia}/`);
+
+        let tagMateriaResumen = materia[DATOS_MATERIA.tags]
+            .find(tag => !tag.startsWith(TAGS.materia) && tag.includes(tagDeMateria));
+
+        carpeta.pop();
+        resumenes = dv.pages(`#${tagMateriaResumen} and #${TAGS.resumenMateria}`);
+        materias = dv.pages(`"${carpeta.join("/")}" and #${TAGS.materia}`)
+            .sort(materia => {
+                let materiaFinal = materia[DATOS_MATERIA.equivalencia]
+                    ? dv.page(materia[DATOS_MATERIA.equivalencia].path)
+                    : materia;
+                return parseFloat(materiaFinal[DATOS_MATERIA.infoCuatri].replace("C", "."))
+            });
+
     }
 
-    let directorioResumen = materia.file.folder;
-    if (carpeta.at(2)) directorioResumen += `/${carpeta.at(2)}`;
-    let resumenes = dv.pages(`"${directorioResumen}" and #${TAGS.resumenMateria}`)
-        .sort(resumen => resumen[DATOS_RESUMEN.numero]);
     let resumen = resumenes.first();
     if (resumenes.length > 1) {
         resumen = await preguntar.suggester(
-            tp, ({ [DATOS_RESUMEN.parte]: parte, file }) => `${file.folder.split("/").pop()} ${parte ? `parte ${parte}` : ""}`, 
+            tp, ({ [DATOS_RESUMEN.parte]: parte, file }) => `${file.folder.split("/").pop()} ${parte ? `parte ${parte}` : ""}`,
             resumenes, "Que resumen se quiere agregar esta nota?",
             error.Quit("No se ingresó en que resumen se va a crear la nota")
         );
