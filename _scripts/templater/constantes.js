@@ -273,6 +273,7 @@ module.exports = () => ({
                     numero: "numero",
                     nombre: "nombre",
                     path: "path",
+                    pathRelacionado: "pathRelacionado",
                 },
             },
         },
@@ -292,6 +293,13 @@ module.exports = () => ({
         GDD: "GDD",
     },
     BLOQUES_MATEMATICA: {
+        bloques: {
+            teorema: "teorema",
+            observacion: "observacion",
+            proposicion: "proposicion",
+            corolario: "corolario",
+            demostracion: "demostracion",
+        },
         teorema: {
             callout: "teorema",
             nombre: "Teorema",
@@ -307,5 +315,14 @@ module.exports = () => ({
             nombre: "Proposición",
             reducido: "prop",
         },
+        corolario: {
+            callout: "corolario",
+            nombre: "Corolario",
+            reducido: "cor",
+        },
+        demostracion: {
+            callout: "demostracion",
+            nombre: "Demostración",
+        }
     },
 });

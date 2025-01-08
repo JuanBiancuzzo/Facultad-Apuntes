@@ -68,7 +68,7 @@ tags:
 > > Es claro que alcanza con probar la [[Proposición|proposición]] para $a = p_1^{m_1} \cdots p_r^{m_r}$ positivo
 > > 1. $(\implies)$ $d \mid a \iff \exists k \in \mathbb{Z}$, tal que $a = k \cdot d$. Luego la factorización en primos de $k \cdot d$ tiene que ser igual a la de $a$ $$ k \cdot d = p_1^{m_1} \cdots p_r^{m_r} $$
 > >  Teniendo en cuenta lo siguiente ![[Teorema fundamental de la aritmética#^obs-1-1-2]]
-^pro-1-1-3
+^prop-1-1-3
 
 # Referencias
 ---
