@@ -31,4 +31,13 @@ nota:
   - numero: 9
     nombre: 
     path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Número primo#^prop-1-1-9
+  - numero: 10
+    nombre: Divisores y potencias
+    path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Divisibilidad#^prop-1-1-10
+  - numero: 11
+    nombre: Máximo común divisor y factorización
+    path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Máximo común divisor#^prop-1-1-11
+  - numero: 12
+    nombre: Mcd de potencias
+    path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Máximo común divisor#^cor-1-1-12
 ---

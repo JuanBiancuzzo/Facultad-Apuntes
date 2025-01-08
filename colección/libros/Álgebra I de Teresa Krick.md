@@ -151,6 +151,10 @@ Por último vemos el [[Binomio de Newton|binomio de Newton]]
 ---
 Empezamos viendo los [[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Números enteros|números enteros]] y sus propiedades. Seguido del concepto de [[Divisibilidad|divisibilidad]] y [[Congruencia|congruencia]]
 
+Vemos la definición de los [[Número primo|primos]] y de los [[Número coprimo|coprimos]], y la forma en la que [[Teorema fundamental de la aritmética|factorizan a los enteros]]
+
+Por último vemos el [[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Máximo común divisor|Mcd]] y el [[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Mínimo común múltiplo|Mcm]], y las propiedades que tienen en relación a los primos
+
 ## Capítulo 5: Enteros - Segunda Parte
 ---
 

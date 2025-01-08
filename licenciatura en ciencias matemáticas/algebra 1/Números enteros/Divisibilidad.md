@@ -85,6 +85,20 @@ El [[Conjunto|conjunto]] de los divisores positivos y negativos de un entero $a$
 > $d \perp a$ por definición $1 = s ~ d + t ~ a$, luego $b = (s ~ b) ~ d + t ~ (a ~ b)$, pero $d \mid a ~ b$, y $d \mid d$. Por lo tanto, $d \mid  (s ~ b) ~ d + t ~ (a ~ b) = b$ 
 ^prop-1-1-4
 
+## Divisores  y potencias
+---
+> [!proposicion]+ Proposición 1.1.10 (Divisores y potencias)
+> Sean $a, ~d \in \mathbb{Z}$ con $d \ne 0$, y sea $n \in \mathbb{N}$. Entonces $$ d \mid a \iff d^n \mid a^n $$
+> 
+> > [!demostracion]- Demostración
+> > Solo falta probar ($\impliedby$), que si $d^n \mid a^n$ entonces $d \mid a$
+> >  * Para $a = 0$ no hay nada que probar porque $d \mid 0$, $\forall d \ne 0$
+> >  * Para $a = \pm 1$, casi tampoco, ya que si $d^n \mid (\pm 1)^n$, entonces $d^n = \pm 1$, luego $d = \pm 1$, que divide a $a = \pm 1$
+> >  * En caso $a \ne 0,~ \pm 1$ es el interesante. Si $a = \pm p_1^{m_1} \cdots p_r^{m_r}$, entonces $$ a^n = (\pm p_1^{m_1} \cdots p_r^{m_r})^n = \pm p_1^{n \cdot m_1} \cdots p_r^{n \cdot m_r} $$
+> >    Ahora bien, la condición $d^n \mid a^n$ implica que $d \mid a^n$. Por lo tanto $d = \pm p_1^{n_1} \cdots p_r^{n_r}$ no tiene más primos en su [[Teorema fundamental de la aritmética|factorización]] que los de $a$. Pero entonces $$ d^n = \pm p_1^{n \cdot n_1} \cdots p_r^{n \cdot n_r} \mid a^n $$ implica por la [[Teorema fundamental de la aritmética#^pro-1-1-3|proposición 1.1.3]] que $0 \le n \cdot n_1 \le n \cdot m_1,~ \cdots,~ 0 \le n \cdot n_r \le n \cdot m_r$, es decir, simplificando el $n$, que $$ 0 \le n_1 \le m_1,~ \cdots,~ 0 \le n_r \le m_r $$
+> >    Esto prueba, nuevamente por la proposición 1.1.3, que $d \mid a$
+^prop-1-1-10
+
 # Referencias
 ---
 ```dataviewjs
