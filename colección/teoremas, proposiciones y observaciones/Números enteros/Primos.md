@@ -12,7 +12,7 @@ nota:
     path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Teorema fundamental de la aritmética#^obs-1-1-2
   - numero: 3
     nombre: Divisores de un número y cantidad
-    path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Teorema fundamental de la aritmética#^pro-1-1-3
+    path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Teorema fundamental de la aritmética#^prop-1-1-3
   - numero: 4
     nombre: Propiedad esenciales de divisibilidad con coprimidad
     path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Divisibilidad#^prop-1-1-4
