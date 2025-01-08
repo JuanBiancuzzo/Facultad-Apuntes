@@ -24,7 +24,7 @@
 
     // Agregar opciones por directorio
     switch (directorioBase) {
-        case DIRECTORIOS.referencias: ingresarOpcion("Ingresar referencia", TEMPLATE.referencia.general); break;
+        case DIRECTORIOS.referencias: ingresarOpcion("Ingresar referencia", TEMPLATE.referencias.general); break;
         case DIRECTORIOS.investigacion: ingresarOpcion("Ingresar nota de investigación", TEMPLATE.nota.investigacion); break;
         case DIRECTORIOS.curso: ingresarOpcion("Ingresar nota de curso", TEMPLATE.nota.curso); break;
         case DIRECTORIOS.proyectoPractico: ingresarOpcion("Ingresar nota de proyecto", TEMPLATE.nota.proyecto); break;
@@ -79,7 +79,7 @@
 
     const dv = app.plugins.plugins.dataview.api;
     if (dv.pages(`"${carpeta}" and #${TAGS.investigacion.self}`).length > 0)  {
-        ingresarOpcion("Ingresar referencia", TEMPLATE.referencia.general);
+        ingresarOpcion("Ingresar nota de investigación", TEMPLATE.nota.investigacion);
     }
     if (dv.pages(`"${carpeta}" and (#${TAGS.materia} or #${TAGS.resumenMateria})`).length > 0)  {
         ingresarOpcion("Ingresar nota de materia", TEMPLATE.nota.materia);
