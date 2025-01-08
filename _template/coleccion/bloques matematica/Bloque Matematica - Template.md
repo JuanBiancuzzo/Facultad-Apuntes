@@ -10,7 +10,6 @@
             bloqueMatematica.generarPreguntas, "Generar bloque", 
             datosPrevios
         );
-        console.log(resultado);
 
         await bloqueMatematica.agregarDatos(tp, resultado);
 
