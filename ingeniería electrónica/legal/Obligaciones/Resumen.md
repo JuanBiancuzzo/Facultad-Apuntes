@@ -1,8 +1,8 @@
 ---
 capitulo: 2
-tags: 
- - ingeniería-electrónica/legal/Obligaciones
- - resumen/materia
+tags:
+  - ingeniería-electrónica/legal/Obligaciones
+  - resumen-materia/Obligaciones
 ---
 # Índice 
 ---

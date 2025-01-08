@@ -1,8 +1,8 @@
 ---
 capitulo: 7
-tags: 
- - ingeniería-electrónica/dispo/Amplificador-emisor-y-source-común
- - resumen/materia
+tags:
+  - ingeniería-electrónica/dispo/Amplificador-emisor-y-source-común
+  - resumen-materia/Amplificador-emisor-y-source-común
 ---
 # Índice 
 ---

@@ -27,7 +27,7 @@
 
     let directorioResumen = curso.file.folder;
     if (carpeta.at(2)) directorioResumen += `/${carpeta.at(2)}`;
-    let resumenes = dv.pages(`"${directorioResumen}" and #${TAGS.resumen}`)
+    let resumenes = dv.pages(`"${directorioResumen}" and #${TAGS.resumenCurso}`)
         .sort(resumen => parseInt(resumen[DATOS_RESUMEN.numero], 10));
     let resumen = resumenes.first();
     if (resumenes.length > 1) {

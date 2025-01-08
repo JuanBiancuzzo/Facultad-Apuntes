@@ -6,7 +6,7 @@ parte: 0
 profesores:
   - 0
 tags:
-  - resumen/curso
+  - resumen-curso/curso
   - referencia/cursotema
   - cursos/computation-structures/Combinational-Logic
 curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"

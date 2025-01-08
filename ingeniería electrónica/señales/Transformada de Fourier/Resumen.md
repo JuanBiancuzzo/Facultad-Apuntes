@@ -1,8 +1,8 @@
 ---
 capitulo: 4
-tags: 
- - ingeniería-electrónica/señales/Transformada-de-Fourier
- - resumen/materia
+tags:
+  - ingeniería-electrónica/señales/Transformada-de-Fourier
+  - resumen-materia/Transformada-de-Fourier
 ---
 # Índice 
 ---

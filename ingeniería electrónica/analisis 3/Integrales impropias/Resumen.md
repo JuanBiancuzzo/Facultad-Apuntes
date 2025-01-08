@@ -2,8 +2,8 @@
 capitulo: 10
 tags:
   - ingeniería-electrónica/analisis-3/Integrales-impropias
-  - resumen/materia
   - ingeniería-en-informática/analisis-3/Integrales-impropias
+  - resumen-materia/Integrales-impropias
 ---
 # Índice 
 ---

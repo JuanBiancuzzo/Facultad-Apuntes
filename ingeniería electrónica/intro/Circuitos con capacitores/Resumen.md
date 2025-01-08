@@ -1,8 +1,8 @@
 ---
 capitulo: 3
-tags: 
- - ingeniería-electrónica/intro/Circuitos-con-capacitores
- - resumen/materia
+tags:
+  - ingeniería-electrónica/intro/Circuitos-con-capacitores
+  - resumen-materia/Circuitos-con-capacitores
 ---
 # Índice 
 ---

@@ -1,7 +1,8 @@
 ---
 plan: 1986
 tags:
-  - materia/ingeniería-en-informática
+  - materia/adc
+  - ingeniería-en-informática/adc
 correlativas:
   - "[[Física 2 A (6203)|Física 2]]"
   - "[[ingeniería en informática/Análisis Matemático 3 A (6110).md|Análisis Matemático 3 A]]"

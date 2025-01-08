@@ -4,7 +4,8 @@ codigo: 7540
 plan: 1986
 estado: Voy por el 6do pdf
 tags:
-  - materia/ingeniería-en-informática
+  - materia/algo-1
+  - ingeniería-en-informática/algo-1
 etapa: empezado
 referencias:
   - "400"

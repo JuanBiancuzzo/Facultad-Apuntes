@@ -4,7 +4,8 @@ codigo: TB068
 plan: 2023
 estado: Falta últimos temas
 tags:
-  - materia/ingeniería-electrónica
+  - materia/circuitos
+  - ingeniería-electrónica/circuitos
 etapa: ampliar
 correlativas:
   - "[[Análisis de circuitos (8604)|Análisis de Circuitos]]"

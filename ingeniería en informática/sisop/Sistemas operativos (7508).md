@@ -4,7 +4,8 @@ estado: Terminado
 plan: "1986"
 codigo: "7508"
 tags:
-  - materia/ingeniería-en-informática
+  - materia/sisop
+  - ingeniería-en-informática/sisop
 etapa: terminado
 correlativas:
   - "[[Estructura del computador (6670)|Estructura del computador]]"

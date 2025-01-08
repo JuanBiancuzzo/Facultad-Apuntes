@@ -1,8 +1,8 @@
 ---
 capitulo: 2
-tags: 
- - ingeniería-electrónica/electro/Campo-electromagnético
- - resumen/materia
+tags:
+  - ingeniería-electrónica/electro/Campo-electromagnético
+  - resumen-materia/Campo-electromagnético
 ---
 # Índice
 ---

@@ -7,7 +7,7 @@ profesores:
   - 0
   - 1
 tags:
-  - resumen/curso
+  - resumen-curso/curso
   - referencia/cursotema
   - cursos/performance-engineering-of-software-systems/The-Cilk-Runtime-System
 curso: "[[cursos/performance engineering of software systems/Performance Engineering of Software Systems|Performance Engineering of Software Systems]]"

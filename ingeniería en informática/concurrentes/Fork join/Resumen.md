@@ -2,7 +2,7 @@
 capitulo: 3
 tags:
   - ingeniería-en-informática/concurrentes/Fork-join
-  - resumen
+  - resumen-materia/Fork-join
 ---
 # Índice
 ---

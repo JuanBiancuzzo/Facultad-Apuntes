@@ -2,8 +2,8 @@
 capitulo: 1
 tags:
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
-  - resumen/materia
   - licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
+  - resumen-materia/Conjuntos-relaciones-y-funciones
 referencias:
   - "411"
 ---

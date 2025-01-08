@@ -1,8 +1,8 @@
 ---
 capitulo: 6
-tags: 
- - ingeniería-electrónica/intro/Multimetro
- - resumen/materia
+tags:
+  - ingeniería-electrónica/intro/Multimetro
+  - resumen-materia/Multimetro
 ---
 # Índice 
 ---

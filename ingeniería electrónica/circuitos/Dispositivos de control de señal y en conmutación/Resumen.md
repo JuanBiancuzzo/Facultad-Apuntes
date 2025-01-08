@@ -2,7 +2,7 @@
 capitulo: 2
 tags:
   - ingeniería-electrónica/circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
-  - resumen/materia
+  - resumen-materia/Dispositivos-de-control-de-señal-y-en-conmutación
 referencias:
   - "426"
   - "427"

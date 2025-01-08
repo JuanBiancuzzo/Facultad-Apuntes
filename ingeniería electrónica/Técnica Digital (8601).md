@@ -1,7 +1,8 @@
 ---
 plan: 2009
 tags:
-  - materia/ingeniería-electrónica
+  - materia/estructura
+  - ingeniería-electrónica/estructura
 correlativas:
   - "[[ingeniería electrónica/intro/Introducción a la ingeniería electronica (8602).md|Introducción a la ingeniería electronica]]"
 codigo: "8601"

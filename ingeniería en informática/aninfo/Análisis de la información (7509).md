@@ -4,7 +4,8 @@ estado: Terminado
 plan: "1986"
 codigo: "7509"
 tags:
-  - materia/ingeniería-en-informática
+  - materia/aninfo
+  - ingeniería-en-informática/aninfo
 etapa: terminado
 correlativas:
   - "[[Algoritmos y programación 3 (7507)|Algoritmos y programación 3]]"

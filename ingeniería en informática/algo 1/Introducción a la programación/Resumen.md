@@ -2,8 +2,8 @@
 capitulo: 1
 tags:
   - ingeniería-en-informática/algo-1/Introducción-a-la-programación
-  - resumen/materia
   - ingeniería-electrónica/algo-1/Introducción-a-la-programación
+  - resumen-materia/Introducción-a-la-programación
 ---
 # Índice 
 ---

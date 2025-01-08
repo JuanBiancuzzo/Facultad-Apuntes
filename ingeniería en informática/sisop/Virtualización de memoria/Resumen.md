@@ -1,8 +1,8 @@
 ---
 capitulo: 3
-tags: 
- - ingeniería-en-informática/sisop/Virtualización-de-memoria
- - resumen/materia
+tags:
+  - ingeniería-en-informática/sisop/Virtualización-de-memoria
+  - resumen-materia/Virtualización-de-memoria
 ---
 # Índice 
 ---

@@ -74,7 +74,7 @@
             frontmatter[DATOS_ARCHIVOS.referencias] = nuevasReferencias.map(numRef => numRef.toString());
         });
 
-        const tagsAIgnorar = [ TAGS.materia, TAGS.resumen, TAGS.investigacion, TAGS.curso ];
+        const tagsAIgnorar = [ TAGS.materia, TAGS.resumenCurso, TAGS.resumenMateria, TAGS.investigacion, TAGS.curso ];
         if (!archivo[DATOS_ARCHIVOS.tags].some(tag => tagsAIgnorar.findIndex(tagIgnorar => tag.startsWith(tagIgnorar)) >= 0)) {
             await app.fileManager.processFrontMatter(tArchivo, (frontmatter) => {
                 if (!frontmatter[DATOS_ARCHIVOS.etapa]) {

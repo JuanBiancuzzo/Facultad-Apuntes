@@ -2,8 +2,8 @@
 capitulo: 8
 tags:
   - ingeniería-en-informática/proba/Proceso-de-Poisson
-  - resumen/materia
   - ingeniería-electrónica/proba/Proceso-de-Poisson
+  - resumen-materia/Proceso-de-Poisson
 ---
 # Índice 
 ---

@@ -10,8 +10,8 @@
 		return;
 	}
 
-    let carpeta = `${tPadre.path}/${tArchivo.basename}`;
-    let directorio = carpeta.split("/")
+    let carpeta = tPadre.path;
+    let directorio = carpeta.split("/");
     let directorioBase = directorio.at(0);
 
     let opciones = [], valores = [];
@@ -80,6 +80,9 @@
     const dv = app.plugins.plugins.dataview.api;
     if (dv.pages(`"${carpeta}" and #${TAGS.investigacion.self}`).length > 0)  {
         ingresarOpcion("Ingresar referencia", TEMPLATE.referencia.general);
+    }
+    if (dv.pages(`"${carpeta}" and (#${TAGS.materia} or #${TAGS.resumenMateria})`).length > 0)  {
+        ingresarOpcion("Ingresar nota de materia", TEMPLATE.nota.materia);
     }
     if (dv.pages(`"${carpeta}" and #${TAGS.curso.self}`).length > 0)  {
         ingresarOpcion("Ingresar nota de curso", TEMPLATE.nota.curso)

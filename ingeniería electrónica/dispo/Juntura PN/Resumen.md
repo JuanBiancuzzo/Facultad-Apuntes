@@ -1,8 +1,8 @@
 ---
 capitulo: 2
-tags: 
- - ingeniería-electrónica/dispo/Juntura-PN
- - resumen/materia
+tags:
+  - ingeniería-electrónica/dispo/Juntura-PN
+  - resumen-materia/Juntura-PN
 ---
 # Índice 
 ---

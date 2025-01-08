@@ -1,8 +1,8 @@
 ---
 capitulo: 5
-tags: 
- - ingeniería-en-informática/aninfo/Verificación-y-validación
- - resumen/materia
+tags:
+  - ingeniería-en-informática/aninfo/Verificación-y-validación
+  - resumen-materia/Verificación-y-validación
 ---
 # Índice 
 ---

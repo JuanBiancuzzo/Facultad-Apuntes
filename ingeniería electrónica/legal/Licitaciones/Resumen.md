@@ -1,8 +1,8 @@
 ---
 capitulo: 4
-tags: 
- - ingeniería-electrónica/legal/Licitaciones
- - resumen/materia
+tags:
+  - ingeniería-electrónica/legal/Licitaciones
+  - resumen-materia/Licitaciones
 ---
 # Índice 
 ---

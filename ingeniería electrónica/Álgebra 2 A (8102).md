@@ -1,7 +1,8 @@
 ---
 plan: 2009
 tags:
-  - materia/ingeniería-electrónica
+  - materia/algebra-2
+  - ingeniería-electrónica/algebra-2
 correlativas: []
 codigo: 8102
 equivalencia: "[[Álgebra 2 A (6108)|Álgebra 2 A (6108)]]"

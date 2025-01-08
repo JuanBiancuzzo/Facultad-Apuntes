@@ -11,7 +11,7 @@ module.exports = () => ({
     TEMPLATE: {
         nota: {
             self: "Nota - Template",
-            materia: "Definicio - Template",
+            materia: "Definicion - Template",
             curso: "Nota curso - Template",
             investigacion: "Nota investigacion - Template",
             proyecto: "Nota proyecto - Template",
@@ -76,7 +76,8 @@ module.exports = () => ({
             general: "cursos",
         },
         materia: "materia",
-        resumen: "resumen",
+        resumenMateria: "resumen-materia",
+        resumenCurso: "resumen-curso",
         coleccion: "colección",
         referencias: "referencia",
         bloqueMatematica: {
@@ -219,9 +220,17 @@ module.exports = () => ({
             },
             salir: "salir",
         },
+        CARRERA: {
+            estado: "estado",
+            tags: "tags",
+            planesDeEstudio: "planes",
+            tieneCodigoLaMateria: "tieneCodigo",
+        },
         MATERIA: {
             infoCuatri: "cuatri",
             referencias: "referencias",
+            equivalencia: "equivalencia",
+            tags: "tags",
         },
         INVESTIGACION: {
             estado: "estado",

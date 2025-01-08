@@ -1,8 +1,8 @@
 ---
 capitulo: 5
-tags: 
- - ingeniería-en-informática/discreta/Autómatas
- - resumen/materia
+tags:
+  - ingeniería-en-informática/discreta/Autómatas
+  - resumen-materia/Autómatas
 ---
 # Índice
 ---

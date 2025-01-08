@@ -1,8 +1,8 @@
 ---
 capitulo: 3
-tags: 
- - ingeniería-en-informática/aninfo/Descubrimiento-de-requisitos
- - resumen/materia
+tags:
+  - ingeniería-en-informática/aninfo/Descubrimiento-de-requisitos
+  - resumen-materia/Descubrimiento-de-requisitos
 ---
 # Índice 
 ---

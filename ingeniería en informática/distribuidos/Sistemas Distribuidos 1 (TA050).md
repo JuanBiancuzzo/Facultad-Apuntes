@@ -1,7 +1,8 @@
 ---
 plan: 2023
 tags:
-  - materia/ingeniería-en-informática
+  - materia/distribuidos
+  - ingeniería-en-informática/distribuidos
 correlativas:
   - "[[ingeniería en informática/redes/Redes (TA048).md|Redes]]"
   - "[[ingeniería en informática/concurrentes/Programación Concurrente (TB026).md|Programación Concurrente]]"

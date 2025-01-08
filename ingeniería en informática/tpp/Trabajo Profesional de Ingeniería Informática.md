@@ -8,16 +8,18 @@ estado: Estamos buscando información sobre el tema
 tags:
   - proyecto/práctico
   - ingeniería-en-informática/tpp
-  - materia/ingeniería-en-informática
+  - materia/tpp
+  - ingeniería-en-informática/tpp
+  - proyecto/investigación
 correlativas:
 ---
 # Propuesta
 ---
-Este trabajo profesional lo voy a hacer con Sofia Javes
+![[ingeniería en informática/tpp/Propuesta/Resumen#Resumen|Propuesta]]
 
 # Presentar
 ---
-
+![[ingeniería en informática/tpp/Presentación/Resumen#Resumen|Presentación]]
 
 # Archivos
 ---

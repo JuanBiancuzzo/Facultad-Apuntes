@@ -1,8 +1,8 @@
 ---
 capitulo: 2
-tags: 
- - ingeniería-en-informática/orga/Visualizaciones
- - resumen/materia
+tags:
+  - ingeniería-en-informática/orga/Visualizaciones
+  - resumen-materia/Visualizaciones
 ---
 # Índice 
 ---

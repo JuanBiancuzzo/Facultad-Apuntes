@@ -1,7 +1,8 @@
 ---
 plan: 2009
 tags:
-  - materia/ingeniería-electrónica
+  - materia/numerico
+  - ingeniería-electrónica/numerico
 correlativas:
   - "[[ingeniería electrónica/Algoritmos y Programación 1 (9511).md|Algoritmos y Programación 1]]"
   - "[[ingeniería electrónica/Análisis Matemático 2 A (8101).md|Análisis Matemático 2 A]]"

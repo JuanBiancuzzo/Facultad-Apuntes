@@ -1,8 +1,8 @@
 ---
 capitulo: 11
-tags: 
- - ingeniería-electrónica/seguridad/Residuos
- - resumen/materia
+tags:
+  - ingeniería-electrónica/seguridad/Residuos
+  - resumen-materia/Residuos
 ---
 # Índice 
 ---

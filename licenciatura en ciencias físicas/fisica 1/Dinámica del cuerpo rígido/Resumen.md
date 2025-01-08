@@ -1,8 +1,8 @@
 ---
 capitulo: 11
-tags: 
- - licenciatura-en-ciencias-físicas/fisica-1/Dinámica-del-cuerpo-rígido
- - resumen/materia
+tags:
+  - licenciatura-en-ciencias-físicas/fisica-1/Dinámica-del-cuerpo-rígido
+  - resumen-materia/Dinámica-del-cuerpo-rígido
 ---
 # Índice
 ---

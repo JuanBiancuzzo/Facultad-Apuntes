@@ -1,8 +1,8 @@
 ---
 capitulo: 8
-tags: 
- - ingeniería-en-informática/aninfo/Diseño-de-software
- - resumen/materia
+tags:
+  - ingeniería-en-informática/aninfo/Diseño-de-software
+  - resumen-materia/Diseño-de-software
 ---
 # Índice 
 ---

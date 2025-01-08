@@ -2,8 +2,8 @@
 capitulo: 5
 tags:
   - ingeniería-en-informática/fisica-1/Cuerpo-rígido
-  - resumen/materia
   - ingeniería-electrónica/fisica-1/Cuerpo-rígido
+  - resumen-materia/Cuerpo-rígido
 ---
 # Índice 
 ---

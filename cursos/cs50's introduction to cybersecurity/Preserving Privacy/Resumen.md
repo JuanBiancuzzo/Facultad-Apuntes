@@ -6,7 +6,7 @@ parte: 0
 profesores:
   - 0
 tags:
-  - resumen/curso
+  - resumen-curso/curso
   - referencia/cursotema
   - cursos/cs50s-introduction-to-cybersecurity/Preserving-Privacy
 curso: "[[cursos/cs50's introduction to cybersecurity/CS50's Introduction to Cybersecurity|CS50's Introduction to Cybersecurity]]"

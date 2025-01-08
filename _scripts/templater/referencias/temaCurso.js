@@ -15,7 +15,7 @@ async function actualizarDatos(tp, datos, respuesta, curso) {
 
     const dv = app.plugins.plugins.dataview.api;
     let tagsCurso = tp.user.obtenerTag(tp, curso.tags);
-    tagsCurso.push(TAGS.resumen);
+    tagsCurso.push(TAGS.resumenCurso);
     const otrosTemas = dv.pages(tagsCurso.map(tag => `#${tag}`).join(" and "));
 
     let salir = false;
@@ -132,7 +132,7 @@ function generarPreguntas(tp, datos, curso) {
 
     const dv = app.plugins.plugins.dataview.api;
     let tagsCurso = tp.user.obtenerTag(tp, curso.tags);
-    tagsCurso.push(TAGS.resumen);
+    tagsCurso.push(TAGS.resumenCurso);
     const otrosTemas = dv.pages(tagsCurso.map(tag => `#${tag}`).join(" and "));
 
     opciones.push(NUMERO_TEMA);

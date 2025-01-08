@@ -1,7 +1,8 @@
 ---
 plan: 2009
 tags:
-  - materia/ingeniería-electrónica
+  - materia/algo-2
+  - ingeniería-electrónica/algo-2
 correlativas:
   - "[[ingeniería electrónica/Algoritmos y Programación 1 (9511).md|Algoritmos y Programación 1]]"
 codigo: 9512

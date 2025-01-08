@@ -1,8 +1,8 @@
 ---
 capitulo: 1
-tags: 
- - ingeniería-en-informática/sisop/Kernel
- - resumen/materia
+tags:
+  - ingeniería-en-informática/sisop/Kernel
+  - resumen-materia/Kernel
 ---
 # Índice 
 ---

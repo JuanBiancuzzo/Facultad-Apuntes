@@ -6,7 +6,7 @@ referencias:
   - "1"
 tags:
   - nota/investigacion
-  - ingeniería-en-informática/tpp
+  - ingeniería-en-informática/tpp/Propuesta
   - investigación/networking
   - investigación/ciencias-de-la-computación/Networking
 aliases:

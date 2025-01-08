@@ -1,8 +1,8 @@
 ---
 capitulo: 2
-tags: 
- - ingeniería-electrónica/seguridad/Contaminación-del-ambiente-laboral
- - resumen/materia
+tags:
+  - ingeniería-electrónica/seguridad/Contaminación-del-ambiente-laboral
+  - resumen-materia/Contaminación-del-ambiente-laboral
 ---
 # Índice 
 ---

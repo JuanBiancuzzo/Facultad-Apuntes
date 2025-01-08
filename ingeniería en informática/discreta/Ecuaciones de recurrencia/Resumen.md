@@ -1,8 +1,8 @@
 ---
 capitulo: 7
-tags: 
- - ingeniería-en-informática/discreta/Ecuaciones-de-recurrencia
- - resumen/materia
+tags:
+  - ingeniería-en-informática/discreta/Ecuaciones-de-recurrencia
+  - resumen-materia/Ecuaciones-de-recurrencia
 ---
 # Índice
 ---

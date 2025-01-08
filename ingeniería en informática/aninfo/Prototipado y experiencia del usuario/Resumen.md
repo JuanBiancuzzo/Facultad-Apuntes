@@ -1,8 +1,8 @@
 ---
 capitulo: 9
-tags: 
- - ingeniería-en-informática/aninfo/Prototipado-y-experiencia-del-usuario
- - resumen/materia
+tags:
+  - ingeniería-en-informática/aninfo/Prototipado-y-experiencia-del-usuario
+  - resumen-materia/Prototipado-y-experiencia-del-usuario
 ---
 # Índice 
 ---
