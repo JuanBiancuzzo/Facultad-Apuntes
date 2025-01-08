@@ -1,6 +1,6 @@
 ---
 dia: 2024-10-09
-etapa: sin-empezar
+etapa: empezado
 tipoCita: Libro
 numReferencia: 325
 tituloObra: Operating Systems, Three Easy Pieces
@@ -423,7 +423,7 @@ tags:
   - referencia/libro
   - biblioteca/libro
   - nota/investigacion
-subtituloObra: 
+subtituloObra:
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
