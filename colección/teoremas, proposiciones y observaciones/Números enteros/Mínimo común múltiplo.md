@@ -10,6 +10,7 @@ nota:
   - numero: 2
     nombre: Mcm y múltiplos comunes
     path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Mínimo común múltiplo#^cor-1-4-2
+    pathRelacionado: "[[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Mínimo común múltiplo#^prop-1-4-1|Proposición 1.4.1 (Mínimo común múltiplo y factorización)]]"
   - numero: 3
     nombre: Producto mcd y mcm
     path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Mínimo común múltiplo#^prop-1-4-3
