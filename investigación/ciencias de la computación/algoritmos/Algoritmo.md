@@ -9,6 +9,7 @@ referencias:
   - "553"
   - "613"
   - "556"
+  - "700"
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
@@ -19,8 +20,10 @@ Vamos a investigar [[algoritmos/Índice|algoritmos]] que son interesantes, y má
 
 ## Resumen
 ---
-#ingeniería-en-informática/algo-1/Introducción-a-la-programación #ingeniería-electrónica/algo-1/Introducción-a-la-programación 
+#ingeniería-en-informática/algo-1/Introducción-a-la-programación #ingeniería-electrónica/algo-1/Introducción-a-la-programación #cursos/introduction-to-algorithms/Introduction 
 Un algoritmo es un método para resolver un problema mediante una serie de pasos precisos, definidos y finitos
+
+Se puede hacer un paralelismo entre [[Programa|programas]] y algoritmos, donde un programa es la representación de un algoritmo (dado por un [[Pseudocódigo|pseudocódigo]]) implementado en un [[Lenguaje de programación|lenguaje de programación]]
 
 Leer:
 * [[Algorithms for Scalable Synchronization on Shared-Memory Multiprocessors de John M. Mellor-Crummey, Michael L. Scott|Algorithms for Scalable Synchronization on Shared-Memory Multiprocessors]]

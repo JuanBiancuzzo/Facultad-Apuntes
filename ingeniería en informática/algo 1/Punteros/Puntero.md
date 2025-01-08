@@ -1,12 +1,14 @@
 ---
 dia: 2024-12-24
 etapa: empezado
-referencias: 
+referencias:
+  - "700"
 tags:
   - ingeniería-en-informática/algo-1/Punteros
   - ingeniería-electrónica/algo-1/Punteros
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - nota/facultad
+  - cursos/introduction-to-algorithms/Introduction
 aliases:
   - Operador de Dirección#^operador-direccion
   - Operador de Indirección#^operador-indireccion
