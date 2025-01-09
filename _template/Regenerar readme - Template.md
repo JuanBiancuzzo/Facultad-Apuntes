@@ -21,8 +21,9 @@ Un listado de materias y su estado dividido por carrera
         .sort(carrera => carrera.file.name)
         .map(carrera => {
             let tag = carrera.tags.find(tag => tag.startsWith(TAGS.carrera.self))
-                .replace(TAGS.carrera.self, TAGS.materia);
-            const materias = dv.pages(`#${tag}`).sort(materia => materia.file.name);
+                .replace(`${TAGS.carrera.self}/`, "");
+            const materias = dv.pages(`#${tag} and #${TAGS.materia}`)
+                .sort(materia => materia.file.name);
             let titulos = ["Materia", "Estado"];
             if (carrera.tieneCodigo) titulos.splice(1, 0, "Código");
             
