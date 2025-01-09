@@ -5,6 +5,8 @@ tags:
   - nota/facultad
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - ingeniería-electrónica/algo-1/Lenguaje-C
+  - ingeniería-en-informática/algo-1/Punteros
+  - ingeniería-electrónica/algo-1/Punteros
 aliases:
   - Estructura
   - Registro
@@ -98,7 +100,7 @@ Por convención, se suele agregar el `_t` al nombre para decir que es un nombre 
 
 ## Uso de punteros
 ---
-Cabe mencionar que en el lenguaje C, tiene una sintaxis especifica para el acceso de los campos de un puntero a una estructura. Veamos un ejemplo para ilustrarlo y compararlo en como se haría de la forma sin esta sintaxis especial
+Cabe mencionar que en el lenguaje C, tiene una sintaxis especifica para el acceso de los campos de un [[Puntero|puntero]] a una estructura. Veamos un ejemplo para ilustrarlo y compararlo en como se haría de la forma sin esta sintaxis especial
 
 ```c
 typedef struct punto {
