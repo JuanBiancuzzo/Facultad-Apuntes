@@ -7,7 +7,7 @@ referencias:
 tags:
   - cursos/introduction-to-algorithms/Sorting-and-Trees
   - nota/curso
-  - investigación/ciencias-de-la-computación/algoritmos
+  - investigación/ciencias-de-la-computación/algoritmos/Sorting-algorithms
 aliases:
   - Ordenamiento por mezcla
 ---

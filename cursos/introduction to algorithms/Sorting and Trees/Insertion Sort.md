@@ -7,7 +7,7 @@ referencias:
 tags:
   - cursos/introduction-to-algorithms/Sorting-and-Trees
   - nota/curso
-  - investigación/ciencias-de-la-computación/algoritmos
+  - investigación/ciencias-de-la-computación/algoritmos/Sorting-algorithms
 aliases:
   - Ordenamiento por inserción
   - Binary Insertion Sort
@@ -24,20 +24,40 @@ Inicialmente, se tiene un solo elemento que, obviamente, es un [[Conjunto|conjun
 
 ```
 function InsertionSort :: array: Integer[] n: Integer -> Integer[]
+    function SelectionSort :: array: Integer[] n: Integer -> Interger[]
     
-    for i = 2 to n then
-        let key = array[i]
-        let j = i - 1
-        
-        while j > 0 and array[j] > key then
-            array[j + 1] = array[j] 
-            j -= 1
-        end
-        
-        array[j + 1] = key
+    if n <= 1 then
+        return array
     end
     
-    return array
+    let arrayIzquierda = MergeSort array[0 : n / 2] (n / 2)
+    let arrayDerecha = MergeSort array[n / 2 : n] (n / 2)
+    
+    let posIzquierda = 0
+    let posDerecha = 0
+    let resultado: Integer[n]
+    
+    while (n / 2) > posIzquierda and (n / 2) > posDerecha then
+        if arrayIzquierda[posIzquierda] <= arrayDerecha[posDerecha] then
+            resultado[posIzquierda + posDerecha] = arrayIzquierda[posIzquierda]
+            posIzquierda += 1
+        else
+            resultado[posIzquierda + posDerecha] = arrayDerecha[posDerecha]
+            posDerecha += 1
+        end
+    end
+    
+    while (n / 2) > posIzquierda then
+        resultado[posIzquierda + posDerecha] = arrayIzquierda[posIzquierda]
+        posIzquierda += 1
+    end
+    
+    while (n / 2) > posDerecha then
+        resultado[posIzquierda + posDerecha] = arrayDerecha[posDerecha]
+        posDerecha += 1
+    end
+    
+    return resultado
 end
 ```
 

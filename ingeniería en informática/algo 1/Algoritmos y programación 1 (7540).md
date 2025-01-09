@@ -2,7 +2,7 @@
 cuatri: 20C1
 codigo: 7540
 plan: 1986
-estado: Voy por el 6do pdf
+estado: Voy por el 9do pdf
 tags:
   - materia/algo-1
   - ingeniería-en-informática/algo-1
