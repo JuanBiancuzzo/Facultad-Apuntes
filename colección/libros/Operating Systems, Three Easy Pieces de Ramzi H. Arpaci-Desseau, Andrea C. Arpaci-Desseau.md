@@ -459,11 +459,14 @@ Las cuales tiene que tener en cuenta para mantener la seguridad y la eficiencia 
 
 ## Capítulo 3: A Dialogue on Virtualization
 ---
-
+Establece la intención de la virtualización, donde permite a varios tener el mismo recurso, pensando que tiene todo el recurso para ellos mismos
 
 ## Capítulo 4: The abstraction: The Process
 ---
+La ilusión principal de la virtualización del [[Procesador|CPU]] es la [[Abstracción|abstracción]] que llamaremos [[Proceso|proceso]]
 
+Esta incluye ![[Proceso#Un proceso incluye]]
+Con una [[Aplicación Programming Interface|API]] que lo acompañe ![[Proceso#API's]]
 
 ## Capítulo 5: Interlude: Process API
 ---

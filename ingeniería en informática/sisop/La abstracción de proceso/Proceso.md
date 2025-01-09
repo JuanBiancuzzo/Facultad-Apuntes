@@ -5,7 +5,13 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/aninfo/Diseño-de-software
   - ingeniería-en-informática/concurrentes/Introducción
+referencias:
+  - "789"
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+```
 # Algunas definiciones
 ---
 "Es un conjunto de actividades que transforma una entrada en una salida y que consume recursos. También se lo puede definir como un programa en ejecución con derechos restringidos."
@@ -20,7 +26,9 @@ tags:
 * Las señales pendientes
 * Datos internos del [[Kernel|kernel]]
 * El estado completo del [[Procesador|procesador]]
+    * Esto incluye los [[Registro|registros]] que usa el procesador
 * Un espacio de [[Dirección de memoria|direcciones de memoria]]
+    * Esto incluye la memoria que usa como donde están el código del mismo proceso
 * Uno o más [[Thread|hijos de ejecución]]
 
 ## API's
@@ -40,3 +48,10 @@ Las acciones básicas que todo [[Sistema operativo|SO]] debe proveer sobre la [[
 ## Contexto de un proceso
 ---
 ![[Contexto del proceso#Definición]]
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```

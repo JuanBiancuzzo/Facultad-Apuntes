@@ -9,6 +9,8 @@ tags:
 etapa: terminado
 correlativas:
   - "[[Estructura del computador (6670)|Estructura del computador]]"
+referencias:
+  - "325"
 ---
 # Apuntes
 ---
