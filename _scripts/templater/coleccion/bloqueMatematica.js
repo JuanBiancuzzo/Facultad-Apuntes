@@ -15,7 +15,11 @@ const AGREGAR = "agregar";
 const SALIR = "salir";
 
 async function actualizarDatos(tp, datos, respuesta) {
-    const { TAGS, BLOQUES_MATEMATICA, DATOS: { BLOQUES_MATEMATICA: DATOS_BLOQUES_MATEMATICA } } = tp.user.constantes(); 
+    const { 
+        BLOQUES_MATEMATICA, 
+        TAGS: { coleccion: { bloqueMatematica: TAGS_MATEMATICA } }, 
+        DATOS: { BLOQUES_MATEMATICA: DATOS_BLOQUES_MATEMATICA } 
+    } = tp.user.constantes(); 
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
     const dv = app.plugins.plugins.dataview.api;
@@ -43,7 +47,7 @@ async function actualizarDatos(tp, datos, respuesta) {
             break;
 
         case TEMA:
-            temas = dv.pages(`#${TAGS.bloqueMatematica.tema} and #${TAGS.bloqueMatematica.self}`);
+            temas = dv.pages(`#${TAGS_MATEMATICA.self}/${TAGS_MATEMATICA.tema}`);
             opciones = [ " ⊕ Tema" ];
             valores = [ AGREGAR ];
 
@@ -73,7 +77,8 @@ async function actualizarDatos(tp, datos, respuesta) {
             break;
 
         case SUBTEMA:
-            let subTemas = dv.pages(`#${TAGS.bloqueMatematica.self}/${tp.user.tagPorNombre(datos[TEMA])} and #${TAGS.bloqueMatematica.subtema}`);
+            let nombreTemaTag = tp.user.tagPorNombre(datos[TEMA]);
+            let subTemas = dv.pages(`#${TAGS_MATEMATICA.self}/${nombreTemaTag} and #${TAGS_MATEMATICA.self}/${TAGS_MATEMATICA.subtema}`);
 
             opciones = [ " ⊕ Subtema" ]
             valores = [ AGREGAR ];
@@ -196,20 +201,23 @@ function generarPreguntas(tp, datos) {
 }
 
 async function actualizarDatosRelacionado(tp, datos, respuesta) {
-    const { TAGS, DATOS: { BLOQUES_MATEMATICA: DATOS_BLOQUES_MATEMATICA } } = tp.user.constantes(); 
+    const { 
+        TAGS: { coleccion: { bloqueMatematica: TAGS_MATEMATICA } }, 
+        DATOS: { BLOQUES_MATEMATICA: DATOS_BLOQUES_MATEMATICA } 
+    } = tp.user.constantes(); 
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
     const dv = app.plugins.plugins.dataview.api;
 
     let salir = false;
-    let temas, resultado;
+    let temas, resultado, nombreTemaTag, nombreSubtemaTag;
 
     switch (respuesta) {
         case TEMA_RELACIONADO:
-            temas = dv.pages(`#${TAGS.bloqueMatematica.tema} and #${TAGS.bloqueMatematica.self}`)
+            temas = dv.pages(`#${TAGS_MATEMATICA.self}/${TAGS_MATEMATICA.tema}`)
                 .filter(tema => !datos[TEMA_RELACIONADO] || tema.file.name != datos[TEMA_RELACIONADO].file.name)
                 .filter(tema => {
-                    let subtemas = dv.pages(`#${TAGS.bloqueMatematica.self}/${tp.user.tagPorNombre(tema.file.name)} and #${TAGS.bloqueMatematica.subtema}`);
+                    let subtemas = dv.pages(`#${TAGS_MATEMATICA.self}/${tp.user.tagPorNombre(tema.file.name)} and #${TAGS_MATEMATICA.self}/${TAGS_MATEMATICA.subtema}`);
                     return subtemas.length > 0;
                 });
             resultado = temas.first();
@@ -224,7 +232,8 @@ async function actualizarDatosRelacionado(tp, datos, respuesta) {
             break;
 
         case SUBTEMA_RELACIONADO:
-            let subtemas = dv.pages(`#${TAGS.bloqueMatematica.self}/${tp.user.tagPorNombre(datos[TEMA].file.name)} and #${TAGS.bloqueMatematica.subtema}`)
+            nombreTemaTag = tp.user.tagPorNombre(datos[TEMA_RELACIONADO].file.name);
+            let subtemas = dv.pages(`#${TAGS_MATEMATICA.self}/${nombreTemaTag} and #${TAGS_MATEMATICA.self}/${TAGS_MATEMATICA.subtema}`)
                 .filter(subtema => !datos[SUBTEMA_RELACIONADO] || subtema.file.name != datos[SUBTEMA_RELACIONADO].file.name)
                 .filter(subtema => subtema[DATOS_BLOQUES_MATEMATICA.subtema.nota.self].length > 0);
 
@@ -240,7 +249,10 @@ async function actualizarDatosRelacionado(tp, datos, respuesta) {
             break;
 
         case BLOQUE_RELACIONADO:
-            let subtema = dv.pages(`#${TAGS.bloqueMatematica.self}/${tp.user.tagPorNombre(datos[TEMA].file.name)} and #${TAGS.bloqueMatematica.subtema}`)
+            nombreTemaTag = tp.user.tagPorNombre(datos[TEMA_RELACIONADO].file.name);
+            nombreSubtemaTag = tp.user.tagPorNombre(datos[SUBTEMA_RELACIONADO].file.name);
+
+            let subtema = dv.pages(`#${TAGS_MATEMATICA.self}/${nombreTemaTag}/${nombreSubtemaTag} and #${TAGS_MATEMATICA.self}/${TAGS_MATEMATICA.subtema}`)
                 .find(subtema => subtema.file.name == datos[SUBTEMA_RELACIONADO].file.name);
             let bloques = subtema[DATOS_BLOQUES_MATEMATICA.subtema.nota.self]
                 .sort(bloque => parseInt(bloque[DATOS_BLOQUES_MATEMATICA.subtema.nota.numero], 10));
@@ -311,15 +323,18 @@ function generarPreguntasRelacionado(tp, datos) {
 }
 
 async function agregarDatos(tp, datos) {
-    const { TAGS, DIRECTORIOS, TEMPLATE, BLOQUES_MATEMATICA, DATOS: { 
-        BLOQUES_MATEMATICA: DATOS_BLOQUES_MATEMATICA 
-    } } = tp.user.constantes();
+    const { 
+        TAGS: { coleccion: { bloqueMatematica: TAGS_MATEMATICA } }, 
+        DIRECTORIOS, TEMPLATE, BLOQUES_MATEMATICA, 
+        DATOS: { BLOQUES_MATEMATICA: DATOS_BLOQUES_MATEMATICA } 
+    } = tp.user.constantes();
+    const dv = app.plugins.plugins.dataview.api;
 
     if (datos[CLASIFICACION] == BLOQUES_MATEMATICA.bloques.demostracion) {
         return;
     }
 
-    let subtemas = dv.pages(`#${TAGS.bloqueMatematica.self}/${tp.user.tagPorNombre(datos[TEMA])} and #${TAGS.bloqueMatematica.subtema}`);
+    let subtemas = dv.pages(`#${TAGS_MATEMATICA.self}/${tp.user.tagPorNombre(datos[TEMA])} and #${TAGS_MATEMATICA.self}/${TAGS_MATEMATICA.subtema}`);
 
     const subtema = subtemas.find(subtema => subtema.file.name == datos[SUBTEMA]);
     let carpetaTema = `${DIRECTORIOS.coleccion.self}/${DIRECTORIOS.coleccion.bloquesMatematica}/${datos[TEMA]}`;
@@ -360,12 +375,19 @@ async function agregarDatos(tp, datos) {
         if (!notas) notas = [];
 
         let id = `${BLOQUES_MATEMATICA[datos[CLASIFICACION]].reducido}-${numeroTema}-${numeroSubtema}-${datos[NUMERO]}`;
+        let pathRelaciondo = null;
+        let tituloRelaciondo = null;
+        if (datos[PATH_RELACIONADO]) {
+            pathRelaciondo = datos[PATH_RELACIONADO][BLOQUE_RELACIONADO][DATOS_BLOQUES_MATEMATICA.subtema.nota.path]
+            tituloRelaciondo = describirBloque(tp, datos[PATH_RELACIONADO][BLOQUE_RELACIONADO])
+                .replaceAll("\\", "\\\\"); // Reemplaza \ por \\
+        }
         notas.push({
             [DATOS_BLOQUES_MATEMATICA.subtema.nota.numero]: datos[NUMERO],
             [DATOS_BLOQUES_MATEMATICA.subtema.nota.nombre]: datos[NOMBRE],
             [DATOS_BLOQUES_MATEMATICA.subtema.nota.path]: `${datos[PATH]}#^${id}`,
             [DATOS_BLOQUES_MATEMATICA.subtema.nota.pathRelacionado]: datos[PATH_RELACIONADO]
-                ? `[[${datos[PATH_RELACIONADO][BLOQUE_RELACIONADO][DATOS_BLOQUES_MATEMATICA.subtema.nota.path]}|${describirBloque(tp, datos[PATH_RELACIONADO][BLOQUE_RELACIONADO])}]]`
+                ? `[[${pathRelaciondo}|${tituloRelaciondo}]]`
                 : null
         });
 
@@ -375,15 +397,22 @@ async function agregarDatos(tp, datos) {
 }
 
 function representacion(tp, datos) {
-    const { TAGS, BLOQUES_MATEMATICA, DATOS: { BLOQUES_MATEMATICA: DATOS_BLOQUES_MATEMATICA } } = tp.user.constantes();
+    const { 
+        BLOQUES_MATEMATICA, 
+        TAGS: { coleccion: { bloqueMatematica: TAGS_MATEMATICA } }, 
+        DATOS: { BLOQUES_MATEMATICA: DATOS_BLOQUES_MATEMATICA } 
+    } = tp.user.constantes();
+    const dv = app.plugins.plugins.dataview.api;
+
     const { callout, nombre, reducido } = BLOQUES_MATEMATICA[datos[CLASIFICACION]];
     if (datos[CLASIFICACION] == BLOQUES_MATEMATICA.bloques.demostracion) {
         return `> [!${callout}]- ${nombre}\n`;
     }
 
-    const tema = dv.pages(`#${TAGS.bloqueMatematica.self}/${tp.user.tagPorNombre(datos[TEMA])} and #${TAGS.bloqueMatematica.tema}`)
+    let nombreTemaTag = tp.user.tagPorNombre(datos[TEMA]);
+    const tema = dv.pages(`#${TAGS_MATEMATICA.self}/${nombreTemaTag} and #${TAGS_MATEMATICA.self}/${TAGS_MATEMATICA.tema}`)
         .first();
-    const subtema = dv.pages(`#${TAGS.bloqueMatematica.self}/${tp.user.tagPorNombre(datos[TEMA])} and #${TAGS.bloqueMatematica.subtema}`)
+    const subtema = dv.pages(`#${TAGS_MATEMATICA.self}/${nombreTemaTag} and #${TAGS_MATEMATICA.self}/${TAGS_MATEMATICA.subtema}`)
         .find(subtema => subtema.file.name == datos[SUBTEMA]);
 
     const numeroTema = tema[DATOS_BLOQUES_MATEMATICA.tema.numero];

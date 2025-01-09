@@ -1,8 +1,8 @@
 ---
 capitulo: 1
 tags:
-  - bloque-matematica/Números-enteros
-  - subtema
+  - bloque-matematica/Números-enteros/Primos
+  - bloque-matematica/subtema/Primos
 nota:
   - numero: 1
     nombre: Teorema fundamental de la aritmética
@@ -25,7 +25,7 @@ nota:
   - numero: 7
     nombre: Cantidad de primos
     path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Números enteros#^cor-1-1-7
-    pathRelacionado: "[[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Números enteros#^prop-1-1-6|Proposición 1.1.6 (Todo número entero $\ne 0, \pm 1$ es dividible por algún primo)]]"
+    pathRelacionado: "[[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Números enteros#^prop-1-1-6|Proposición 1.1.6 (Todo número entero $\\ne 0, \\pm 1$ es dividible por algún primo)]]"
   - numero: 8
     nombre: Propiedad fundamental de los números primos
     path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Número primo#^teo-1-1-8

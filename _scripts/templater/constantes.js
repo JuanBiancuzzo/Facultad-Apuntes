@@ -21,7 +21,11 @@ module.exports = () => ({
             estructuraDatos: "Estructura de datos - Template",
             distribucion: "Distribucion - Template",
             documentoLegal: "Documento legal - Template",
-            funcion: "Funcion - Template",
+            funciones: {
+                lenguaje: "Lenguaje de librerias - Template",
+                libreria: "Libreria de funciones - Template",
+                funcion: "Funcion - Template",
+            },
             libro: "Libro - Template",
             paper: "Paper - Template",
             programa: "Programa - Template",
@@ -78,13 +82,21 @@ module.exports = () => ({
         materia: "materia",
         resumenMateria: "resumen-materia",
         resumenCurso: "resumen-curso",
-        coleccion: "colección",
-        referencias: "referencia",
-        bloqueMatematica: {
-            self: "bloque-matematica",
-            tema: "tema",
-            subtema: "subtema",
+        coleccion: {
+            self: "colección",
+            funciones: {
+                self: "funciones",
+                lenguajes: "lenguaje",
+                libreria: "libreria",
+                funcion: "funcion",
+            },
+            bloqueMatematica: {
+                self: "bloque-matematica",
+                tema: "tema",
+                subtema: "subtema",
+            },
         },
+        referencias: "referencia",
         proyecto: {
             self: "proyecto",
             investigacion: {

@@ -8,7 +8,7 @@ function obtenerTag(tp, tags) {
             case TAGS.resumenMateria:
             case TAGS.resumenCurso:
             case TAGS.curso.self:
-            case TAGS.coleccion:
+            case TAGS.coleccion.self:
             case TAGS.referencias:
             case TAGS.proyecto.self:
             case TAGS.nota.self:

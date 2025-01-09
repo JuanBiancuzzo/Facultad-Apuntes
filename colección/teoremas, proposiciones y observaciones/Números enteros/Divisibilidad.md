@@ -1,8 +1,8 @@
 ---
 capitulo: 2
 tags:
-  - bloque-matematica/Números-enteros
-  - subtema
+  - bloque-matematica/Números-enteros/Divisibilidad
+  - bloque-matematica/subtema/Divisibilidad
 nota:
   - numero: 1
     nombre: 

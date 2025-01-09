@@ -2,5 +2,5 @@
 capitulo: 1
 tags:
   - bloque-matematica/Números-enteros
-  - tema
+  - bloque-matematica/tema/Número-enteros
 ---

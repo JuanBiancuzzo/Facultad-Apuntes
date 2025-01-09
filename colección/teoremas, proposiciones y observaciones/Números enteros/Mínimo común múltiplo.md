@@ -1,8 +1,8 @@
 ---
 capitulo: 4
 tags:
-  - bloque-matematica/Números-enteros
-  - subtema
+  - bloque-matematica/Números-enteros/Mínimo-común-múltiplo
+  - bloque-matematica/subtema/Mínimo-común-múltiplo
 nota:
   - numero: 1
     nombre: Mínimo común múltiplo y factorización

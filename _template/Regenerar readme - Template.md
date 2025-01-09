@@ -166,7 +166,7 @@ _%>
 Estos proyectos se basan en recolectar información distinto de un tema de investigación ya que este busca recolectar información con respecto a un tema, mientras que este es para tener información para temas en general
 
 <%* 
-    const colecciones = dv.pages(`#${TAGS.coleccion}`)
+    const colecciones = dv.pages(`#${TAGS.coleccion.self}`)
         .sort(coleccion => coleccion.file.name);
 
     tabla = dv.markdownTable(["Colección", "Estado"], colecciones.map(coleccion => {
