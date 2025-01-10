@@ -7,6 +7,7 @@ module.exports = () => ({
         agregar: "⊕",
         volver: "↶",
         modificar: "✏️",
+        opcional: "(opcional)",
     },
     TEMPLATE: {
         nota: {
@@ -24,6 +25,7 @@ module.exports = () => ({
             funciones: {
                 lenguaje: "Lenguaje de librerias - Template",
                 libreria: "Libreria de funciones - Template",
+                modulo: "Modulo de funciones - Template",
                 funcion: "Funcion - Template",
             },
             libro: "Libro - Template",
@@ -86,9 +88,14 @@ module.exports = () => ({
             self: "colección",
             funciones: {
                 self: "funciones",
-                lenguajes: "lenguaje",
+                lenguajes: {
+                    self: "lenguaje",
+                    python: "Librerías-de-Python",
+                    c: "Librerías-de-C",
+                },
                 libreria: "libreria",
-                funcion: "funcion",
+                modulo: "modulo",
+                funcion: "función",
             },
             bloqueMatematica: {
                 self: "bloque-matematica",
@@ -135,7 +142,11 @@ module.exports = () => ({
             dataStructures: "data structures",
             distribuciones: "distribuciones",
             documentos: "documentos",
-            funciones: "funciones",
+            funciones: {
+                self: "funciones",
+                python: "Lenguaje Python",
+                c: "Lenguaje C",
+            },
             libros: "libros",
             papers: "papers",
             programas: "programas",
@@ -286,6 +297,46 @@ module.exports = () => ({
                     nombre: "nombre",
                     path: "path",
                     pathRelacionado: "pathRelacionado",
+                },
+            },
+        },
+        FUNCIONES: {
+            lenguaje: {
+                tags: "tags",
+                nombre: "nombreLenguaje",
+                temaInvestigacion: "temaInvestigacion",
+                lenguajes: {
+                    python: "Python",
+                    c: "C",
+                },
+                keyLenguaje: (lenguaje) => lenguaje.toLowerCase(),
+            },
+            libreria: {
+                tags: "tags",
+                nombre: "nombreLibreria",
+            },
+            modulo: {
+                tags: "tags",
+                nombre: "nombreModulo",
+            },
+            funcion: {
+                tags: "tags",
+                firma: {
+                    self: "firma",
+                    nombreFuncion: "nombre",
+                    descripcion: "descripcion",
+                    parametros: {
+                        self: "parametros",
+                        nombreParametro: "nombre",
+                        tipoDeDato: "type",
+                        valorPorDefecto: "default",
+                        descripcion: "descripcion",
+                    },
+                    return: {
+                        self: "return",
+                        tipoDeDato: "type",
+                        descripcion: "descripcion",
+                    },
                 },
             },
         },
