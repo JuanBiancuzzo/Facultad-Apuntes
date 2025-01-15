@@ -90,7 +90,14 @@ async function actualizarDatos(tp, datos, respuesta) {
             break;
 
         case FUNCION:
-            datos[FUNCION] = dv.page("Función Map del módulo DataFrame de Pandas en Python").firma;
+            const preguntasLenguaje = tp.user.lenguajes();
+            datos[FUNCION] = await tp.user.crearPreguntas(
+                tp, () => preguntasLenguaje.obtenerDefault(tp),
+                (tp, datosDato, respuestaDada) => preguntasLenguaje.actualizarDatos(tp, datosDato, respuestaDada, datos[LENGUAJE]), 
+                (tp, datosDato) => preguntasLenguaje.generarPreguntas(tp, datosDato, datos[LENGUAJE]), 
+                "Definir la función que se quiere ingresar",
+                datos[FUNCION] ? datos[FUNCION] : {}
+            );
             break;
 
         case SALIR: 
@@ -132,7 +139,7 @@ function generarPreguntas(tp, datos) {
 
     opciones.push(FUNCION);
     valores.push(datos[FUNCION]
-        ? ` ${SIMBOLOS.modificar} ${usoLenguaje.describir(tp, datos[FUNCION], datos[LENGUAJE])}`
+        ? ` ${SIMBOLOS.modificar} Modificar la función, donde era ${usoLenguaje.describir(tp, datos[FUNCION], datos[LENGUAJE])}`
         : ` ${SIMBOLOS.agregar} Función`
     )
 
@@ -144,8 +151,61 @@ function generarPreguntas(tp, datos) {
     return { opciones: opciones, valores: valores };
 }
 
-function agregarDatos(tp, datos) {
-    // console.log(datos);
+async function crearArchivo(tp, nombre, carpeta, template) {
+    let tCarpeta;
+    try {
+        tCarpeta = await app.vault.createFolder(carpeta);
+    } catch {
+        tCarpeta = app.vault.getAbstractFileByPath(carpeta);
+    }
+
+    new Notice("Creando...");
+    console.log("Creando...");
+
+    console.log(template, nombre, carpeta);
+    console.log(tp.file.find_tfile(template));
+
+    return await tp.file.create_new(
+        tp.file.find_tfile(template),
+        nombre, false, tCarpeta
+    );
+}
+
+async function agregarDatos(tp, datos) {
+    const { 
+        TEMPLATE: { coleccion: { funciones: TEMPLATE_FUNCIONES } }, 
+        DIRECTORIOS: { coleccion: DIR_COLECCION },
+        TAGS: { coleccion: { funciones: TAGS_FUNCIONES } }, 
+        DATOS: { FUNCIONES: DATOS_FUNCIONES },
+    } = tp.user.constantes();
+    const tagPorNombre = tp.user.tagPorNombre;
+    const dv = app.plugins.plugins.dataview.api;
+
+    let keyLenguaje = DATOS_FUNCIONES.lenguaje.keyLenguaje(datos[LENGUAJE]);
+
+    let tagLenguaje = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[keyLenguaje]}`;
+    let tagLibreria = `${tagLenguaje}/${tagPorNombre(datos[LIBRERIA])}`;
+
+    let nombreLibreria = `${datos[LENGUAJE]} - ${datos[LIBRERIA]}`;
+    let carpetaLibreria = `${DIR_COLECCION.self}/${DIR_COLECCION.funciones.self}/${DIR_COLECCION.funciones[keyLenguaje]}/${datos[LIBRERIA]}`;
+
+    let libreria = dv.pages(`#${tagLibreria} and #${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.libreria}`).first();
+    if (!libreria) {
+        await crearArchivo(tp, nombreLibreria, carpetaLibreria, TEMPLATE_FUNCIONES.libreria);
+    } else {
+        carpetaLibreria = libreria.file.folder;
+    }
+
+    if (datos[MODULO]) {
+        let tagModulo = `${tagLibreria}/${tagPorNombre(datos[MODULO])}`;
+        let nombreModulo = `${nombreLibreria} - ${datos[MODULO]}`;
+        let carpetaModulo = `${carpetaLibreria}/${datos[MODULO]}`;
+
+        let modulos = dv.pages(`#${tagModulo} and #${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.modulo}`);
+        if (!modulos.first()) {
+            await crearArchivo(tp, nombreModulo, carpetaModulo, TEMPLATE_FUNCIONES.modulo);
+        }
+    }
 }
 
 module.exports = () => ({
