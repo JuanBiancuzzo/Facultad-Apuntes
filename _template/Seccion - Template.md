@@ -5,7 +5,8 @@
 
     try {
         let [ tipo, ...argumentos ] = tp.file.title.split("-").map(t => t.trim());
-        let { metadata, carpeta, titulo, texto } = seccion.procesar(tp, tipo, argumentos);
+        let obtenerInformacion = seccion.obtenerCreacion(tp, tipo);
+        let { metadata, carpeta, titulo, texto } = obtenerInformacion(tp, argumentos);
 
         await tp.file.move(`${carpeta}/${titulo}`, tArchivo);
         tR += seccion.textoDeArchivos(tp, metadata, texto);

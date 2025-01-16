@@ -1,12 +1,15 @@
 /**
  * @param {*} tp Objeto representante del plugin Templater
  * @param {string} tipo Un string caracteristico del proceso que se quiere hacer 
- * @param {array|undefined} argumentos Todos los argumentos que se quiera pasar al subproceso especifico
- * @returns {{ metadata: Object, carpeta: string, titulo: string, texto: string }} Se devuelve un diccionario con la metadata del archivo y el texto del archivo en sí
+ * @returns {() => { metadata: Object, carpeta: string, titulo: string, texto: string }} Se devuelve un diccionario con la metadata del archivo y el texto del archivo en sí
  */
-async function procesar(tp, tipo, argumentos) {
+async function obtenerCreacion(tp, tipo) {
     const error = tp.user.error();
     const { CREAR_SECCION: SECCIONES } = tp.user.constantes();
+    const { 
+        funciones: SECCION_FUNCIONES, 
+        bloqueMatematica: SECCION_MATEMATICA,
+    } = SECCIONES.coleccion;
 
     switch (tipo) {
         case SECCIONES.materia: 
@@ -27,55 +30,22 @@ async function procesar(tp, tipo, argumentos) {
             return;
 
         // Colecciones
-        //      Funciones
-        case SECCIONES.coleccion.funciones.libreria: 
+        //  * Funciones
+        case SECCION_FUNCIONES.libreria: 
             return;
-        case SECCIONES.coleccion.funciones.modulo: 
+        case SECCION_FUNCIONES.modulo: 
             return;
-        //      Bloque matemática
-        case SECCIONES.coleccion.bloqueMatematica.tema: 
+
+        //  * Bloque matemática
+        case SECCION_MATEMATICA.tema: 
             return;
-        case SECCIONES.coleccion.bloqueMatematica.subtema: 
+        case SECCION_MATEMATICA.subtema: 
             return;
     }
 
     throw error.Quit("No existe ese proceso");
 }
 
-/**
- * @param {*} tp Objeto representante del plugin Templater
- * @param {string} tipo Un string caracteristico del proceso que se quiere hacer 
- * @param {array|undefined} argumentos Todos los argumentos que se quiera pasar al subproceso especifico
- * @param {boolean} abierto Si es true el archivo creado se vuelve el archivo activo
- * @returns {TFile} Se devuelve el archivo creado
- */
-async function crearSeccion(tp, tipo, argumentos = [], abierto = false) {
-    const { DIRECTORIOS, TEMPLATE } = tp.user.constantes();
-
-    let nombre = tipo;
-    if (argumentos && argumentos.length > 0) {
-        nombre += ` - ${argumentos.join(" - ")}`;
-    }
-
-    return await tp.file.create_new(
-        tp.file.find_tfile(TEMPLATE.seccion),
-        nombre, abierto, 
-        app.vault.getAbstractFileByPath(DIRECTORIOS.temporal)
-    );
-}
-
-/**
- * @param {*} tp Objeto representante del plugin Templater
- * @param {Object} metadata Los datos de metadata del archivo
- * @param {string} texto Texto adicional del archivo
- * @returns {string} Es el texto completo del archivo
- */
-function textoDeArchivos(tp, metadata = {}, texto = "") {
-    return `---\n${tp.obsidian.stringifyYaml(metadata)}---\n${texto}`;
-}
-
 module.exports = () => ({
-    procesar: procesar,
-    crear: crearSeccion,
-    textoDeArchivos: textoDeArchivos,
+    obtenerCreacion: obtenerCreacion,
 });
