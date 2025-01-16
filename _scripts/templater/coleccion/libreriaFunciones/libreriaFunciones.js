@@ -159,12 +159,6 @@ async function crearArchivo(tp, nombre, carpeta, template) {
         tCarpeta = app.vault.getAbstractFileByPath(carpeta);
     }
 
-    new Notice("Creando...");
-    console.log("Creando...");
-
-    console.log(template, nombre, carpeta);
-    console.log(tp.file.find_tfile(template));
-
     return await tp.file.create_new(
         tp.file.find_tfile(template),
         nombre, false, tCarpeta

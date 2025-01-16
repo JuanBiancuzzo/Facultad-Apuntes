@@ -23,7 +23,6 @@ module.exports = () => ({
             distribucion: "Distribucion - Template",
             documentoLegal: "Documento legal - Template",
             funciones: {
-                lenguaje: "Lenguaje de librerias - Template",
                 libreria: "Libreria de funciones - Template",
                 modulo: "Modulo de funciones - Template",
                 funcion: "Funcion - Template",
