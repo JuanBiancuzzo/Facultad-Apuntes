@@ -22,32 +22,14 @@ module.exports = () => ({
             estructuraDatos: "Estructura de datos - Template",
             distribucion: "Distribucion - Template",
             documentoLegal: "Documento legal - Template",
-            funciones: {
-                libreria: "Libreria de funciones - Template",
-                modulo: "Modulo de funciones - Template",
-                funcion: "Funcion - Template",
-            },
+            funciones: "Funcion - Template",
             libro: "Libro - Template",
             paper: "Paper - Template",
             programa: "Programa - Template",
             receta: "Receta - Template",
-            bloqueMatematica: {
-                self: "Bloque Matematica - Template",
-                tema: "Bloque Matematica Tema - Template",
-                subtema: "Bloque Matematica Subtema - Template",
-            },
+            bloqueMatematica: "Bloque Matematica - Template",
         },
-        seccion: {
-            self: "Seccion - Template",
-            curso: "Curso - Template",
-            temaCurso: "Tema Curso - Template",
-            juego: "GDD - Template",
-            materia: "Materia - Template",
-            temaMateria: "Tema materia - Template",
-            proyectoInvestigacion: "Proyecto investigacion - Template",
-            proyectoPractico: "Proyecto practico - Template",
-            temaInvestigacion: "Tema Investigacion - Template",
-        },
+        seccion: "Seccion - Template",
         etapa: "Etapa - Template",
         seccionReferencia: "Seccion referencias - Template",
         referencias: {
@@ -128,6 +110,7 @@ module.exports = () => ({
     },
     DIRECTORIOS: {
         imagenes: "img",
+        temporal: "temp",
         referencias: "_referencias",
         investigacion: "investigación",
         curso: "cursos",
@@ -174,6 +157,107 @@ module.exports = () => ({
         wikipedia: "Wikipedia",
     },
     DATOS: {
+        CARRERA: {
+            estado: "estado",
+            tags: "tags",
+            planesDeEstudio: "planes",
+            tieneCodigoLaMateria: "tieneCodigo",
+        },
+        MATERIA: {
+            infoCuatri: "cuatri",
+            referencias: "referencias",
+            equivalencia: "equivalencia",
+            tags: "tags",
+        },
+        INVESTIGACION: {
+            estado: "estado",
+            tags: "tags",
+            dia: "dia",
+            aliases: "aliases",
+            referencias: "referencias",
+        },
+        CURSO: {
+        },
+        RESUMEN: {
+            numero: "capitulo",
+            parte: "parte",
+            referencias: "referencias",
+        },
+        PROYECTO: {
+            dia: "dia",
+            estado: "estado",
+            tags: "tags",
+        },
+        GDD: {
+        },
+        ARCHIVO: {
+            etapa: "etapa",
+            tags: "tags",
+            dia: "dia",
+            aliases: "aliases",
+            referencias: "referencias",
+        },
+        PROGRESO: {
+            dia: "dia",
+            tags: "tags",
+        },
+        BLOQUES_MATEMATICA: {
+            tema: {
+                tags: "tags",
+                numero: "capitulo",
+            },
+            subtema: {
+                tags: "tags",
+                numero: "capitulo",
+                nota: {
+                    self: "nota",
+                    numero: "numero",
+                    nombre: "nombre",
+                    path: "path",
+                    pathRelacionado: "pathRelacionado",
+                },
+            },
+        },
+        FUNCIONES: {
+            lenguaje: {
+                tags: "tags",
+                nombre: "nombreLenguaje",
+                temaInvestigacion: "temaInvestigacion",
+                lenguajes: {
+                    python: "Python",
+                    c: "C",
+                },
+                keyLenguaje: (lenguaje) => lenguaje.toLowerCase(),
+            },
+            libreria: {
+                tags: "tags",
+                nombre: "nombreLibreria",
+            },
+            modulo: {
+                tags: "tags",
+                nombre: "nombreModulo",
+            },
+            funcion: {
+                tags: "tags",
+                firma: {
+                    self: "firma",
+                    nombreFuncion: "nombre",
+                    descripcion: "descripcion",
+                    parametros: {
+                        self: "parametros",
+                        nombreParametro: "nombre",
+                        tipoDeDato: "type",
+                        valorPorDefecto: "default",
+                        descripcion: "descripcion",
+                    },
+                    return: {
+                        self: "return",
+                        tipoDeDato: "type",
+                        descripcion: "descripcion",
+                    },
+                },
+            },
+        },
         REFERENCIAS: {
             numReferencia: "numReferencia",
             tipoCita: "tipoCita",
@@ -242,103 +326,6 @@ module.exports = () => ({
             },
             salir: "salir",
         },
-        CARRERA: {
-            estado: "estado",
-            tags: "tags",
-            planesDeEstudio: "planes",
-            tieneCodigoLaMateria: "tieneCodigo",
-        },
-        MATERIA: {
-            infoCuatri: "cuatri",
-            referencias: "referencias",
-            equivalencia: "equivalencia",
-            tags: "tags",
-        },
-        INVESTIGACION: {
-            estado: "estado",
-            tags: "tags",
-            dia: "dia",
-            aliases: "aliases",
-            referencias: "referencias",
-        },
-        RESUMEN: {
-            numero: "capitulo",
-            parte: "parte",
-            referencias: "referencias",
-        },
-        PROGRESO: {
-            dia: "dia",
-            tags: "tags",
-        },
-        PROYECTO: {
-            dia: "dia",
-            estado: "estado",
-            tags: "tags",
-        },
-        ARCHIVO: {
-            etapa: "etapa",
-            tags: "tags",
-            dia: "dia",
-            aliases: "aliases",
-            referencias: "referencias",
-        },
-        BLOQUES_MATEMATICA: {
-            tema: {
-                tags: "tags",
-                numero: "capitulo",
-            },
-            subtema: {
-                tags: "tags",
-                numero: "capitulo",
-                nota: {
-                    self: "nota",
-                    numero: "numero",
-                    nombre: "nombre",
-                    path: "path",
-                    pathRelacionado: "pathRelacionado",
-                },
-            },
-        },
-        FUNCIONES: {
-            lenguaje: {
-                tags: "tags",
-                nombre: "nombreLenguaje",
-                temaInvestigacion: "temaInvestigacion",
-                lenguajes: {
-                    python: "Python",
-                    c: "C",
-                },
-                keyLenguaje: (lenguaje) => lenguaje.toLowerCase(),
-            },
-            libreria: {
-                tags: "tags",
-                nombre: "nombreLibreria",
-            },
-            modulo: {
-                tags: "tags",
-                nombre: "nombreModulo",
-            },
-            funcion: {
-                tags: "tags",
-                firma: {
-                    self: "firma",
-                    nombreFuncion: "nombre",
-                    descripcion: "descripcion",
-                    parametros: {
-                        self: "parametros",
-                        nombreParametro: "nombre",
-                        tipoDeDato: "type",
-                        valorPorDefecto: "default",
-                        descripcion: "descripcion",
-                    },
-                    return: {
-                        self: "return",
-                        tipoDeDato: "type",
-                        descripcion: "descripcion",
-                    },
-                },
-            },
-        },
     },
     ETAPAS: {
         sinEmpezar: "sin-empezar",
@@ -346,13 +333,25 @@ module.exports = () => ({
         ampliar: "ampliar",
         terminado: "terminado",
     },
-    NOMBRE_SECCIONES: {
-        facultad: "Facultad",
+    CREAR_SECCION: {
+        materia: "Materia",
+        resumenMateria: "Resumen materia",
         curso: "Curso",
+        resumenCurso: "Resumen curso",
         investigacion: "Investigación",
-        proyectoPractico: "Proyecto Práctico",
+        proyectoPractico: "Proyecto práctico",
         proyectoInvestigacion: "Proyecto Investigación",
-        GDD: "GDD",
+        juego: "GDD",
+        coleccion: {
+            funciones: {
+                libreria: "Libreria funciones",
+                modulo: "Módulo funciones"
+            },
+            bloqueMatematica: {
+                tema: "Tema bloque matemática",
+                subtema: "Subtema bloque matemática",
+            },
+        },
     },
     BLOQUES_MATEMATICA: {
         bloques: {
