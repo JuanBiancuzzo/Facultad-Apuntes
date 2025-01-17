@@ -2,7 +2,7 @@
 dia: 2024-12-09
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - investigación/ciencias-de-la-computación
   - nota/investigacion
 ---

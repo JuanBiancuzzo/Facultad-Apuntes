@@ -1,7 +1,7 @@
 ---
 dia: 2024-12-10
 tag:
-  - índice
+  - investigación/índice
   - investigación/ciencias-de-la-computación/Networking
   - nota/investigacion
 equivalente: "[[investigación/networking/Red.md|Red]]"

@@ -2,7 +2,7 @@
 dia: 2024-07-31
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - investigación/ciencias-de-la-computación/compilador
   - nota/investigacion
 aliases:

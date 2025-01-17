@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-23
 tags:
-  - índice
+  - investigación/índice
   - investigación/matemática/lógica
   - nota/investigacion
 estado: Falta resumir

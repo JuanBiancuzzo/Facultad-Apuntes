@@ -1,7 +1,7 @@
 ---
 dia: 2024-12-22
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c/System-call/Procesos-system-calls
 estado: Sin empezar

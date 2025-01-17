@@ -2,7 +2,7 @@
 dia: 2024-11-19
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/robótica/Soft-Robots
   - investigación/electrónica/Robot/Soft-Robots

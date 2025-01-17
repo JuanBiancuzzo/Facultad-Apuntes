@@ -1,7 +1,7 @@
 ---
 dia: 2024-12-23
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/electrónica
 estado: Sin empezar

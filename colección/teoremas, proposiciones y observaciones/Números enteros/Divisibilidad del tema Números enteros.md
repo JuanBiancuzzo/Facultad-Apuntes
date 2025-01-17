@@ -1,8 +1,8 @@
 ---
 capitulo: 2
 tags:
-  - bloque-matematica/Números-enteros
-  - subtema
+  - bloque-matematica/Números-enteros/Divisibilidad
+  - colección/bloque-matematica/subtema
 nota:
   - numero: 1
     nombre: 
@@ -88,4 +88,5 @@ nota:
   - numero: 28
     nombre: 
     path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Algoritmo de Euclides#^prop-1-2-28
+nombreSubtema: Divisibilidad
 ---

@@ -2,7 +2,7 @@
 dia: 2024-10-31
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/placa-de-Desarrollo/ESP-32
 referencias:

@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-08
 tags:
-  - índice
+  - investigación/índice
   - investigación/networking
   - nota/investigacion
   - investigación/ciencias-de-la-computación/Networking

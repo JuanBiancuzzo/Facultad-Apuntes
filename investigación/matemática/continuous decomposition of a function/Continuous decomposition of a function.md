@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-08
 tags:
-  - índice
+  - investigación/índice
   - investigación/matemática/continuous-decomposition-of-a-function
   - nota/investigacion
 estado: Falta resumir

@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-24
 tags:
-  - índice
+  - investigación/índice
   - investigación/dibujo/colores
   - nota/investigacion
 estado: Falta resumir

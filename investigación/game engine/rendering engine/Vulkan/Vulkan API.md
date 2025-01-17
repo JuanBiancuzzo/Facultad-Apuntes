@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-08
 tags:
-  - índice
+  - investigación/índice
   - investigación/game-engine/rendering-engine/Vulkan
   - nota/investigacion
 estado: Falta resumir

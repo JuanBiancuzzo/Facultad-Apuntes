@@ -2,7 +2,7 @@
 dia: 2024-10-15
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - ingeniería-en-informática/sisop/Kernel
   - investigación/ciencias-de-la-computación/sistemas-operativos/kernel

@@ -1,8 +1,8 @@
 ---
 capitulo: 3
 tags:
-  - bloque-matematica/Números-enteros
-  - subtema
+  - bloque-matematica/Números-enteros/Máximo-común-divisor
+  - colección/bloque-matematica/subtema
 nota:
   - numero: 1
     nombre: Algoritmo de Euclides
@@ -31,4 +31,5 @@ nota:
   - numero: 9
     nombre: 
     path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Máximo común divisor#^obs-1-3-9
+nombreSubtema: Máximo común divisor
 ---

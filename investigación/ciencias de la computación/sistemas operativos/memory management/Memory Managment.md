@@ -2,7 +2,7 @@
 dia: 2024-10-17
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/ciencias-de-la-computación/sistemas-operativos/memory-management
 referencias:

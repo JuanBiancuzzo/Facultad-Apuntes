@@ -1,7 +1,7 @@
 ---
 dia: 2024-12-25
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/matemática/Probabilidad/Distribuciones
   - colección/distribuciones

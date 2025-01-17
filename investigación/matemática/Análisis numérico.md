@@ -1,7 +1,7 @@
 ---
 dia: 2024-12-23
 tag:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/matemática/Análisis-numérico
 equivalente: "[[investigación/ciencias de la computación/Análisis numérico/Análisis numérico.md|Análisis numérico]]"

@@ -2,7 +2,7 @@
 dia: 2024-08-11
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - investigación/matemática/group-theory
   - nota/investigacion
 ---

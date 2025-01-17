@@ -2,7 +2,7 @@
 dia: 2024-10-04
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/matemática/teoría-de-la-información
 aliases:

@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-08
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/animation
 estado: Estamos avanzando con algunos conceptos, pero todavía falta la mayor parte del conocimiento trandicional o básico

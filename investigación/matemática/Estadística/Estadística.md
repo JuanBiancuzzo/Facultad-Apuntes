@@ -2,7 +2,7 @@
 dia: 2024-11-17
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/matemática/Estadística
 ---

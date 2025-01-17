@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-19
 tags:
-  - índice
+  - investigación/índice
   - investigación/herramientas/hugo
 estado: Falta resumir
 aliases:

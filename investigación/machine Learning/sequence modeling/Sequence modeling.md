@@ -2,7 +2,7 @@
 dia: 2024-10-02
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - investigación/machine-Learning/sequence-modeling
   - investigación/ciencias-de-la-computación/Machine-learning/sequence-modeling
   - investigación/matemática/Estadística/Machine-learning/sequence-modeling

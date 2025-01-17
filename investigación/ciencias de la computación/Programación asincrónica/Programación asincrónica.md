@@ -1,7 +1,7 @@
 ---
 dia: 2024-12-24
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/ciencias-de-la-computación/Programación-asincrónica
 estado: Sin empezar

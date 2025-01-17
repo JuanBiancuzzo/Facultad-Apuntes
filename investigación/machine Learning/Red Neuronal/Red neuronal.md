@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-12
 tags:
-  - índice
+  - investigación/índice
   - investigación/machine-Learning/Red-Neuronal
   - investigación/ciencias-de-la-computación/Machine-learning/red-Neuronal
   - investigación/matemática/Estadística/Machine-learning/red-Neuronal

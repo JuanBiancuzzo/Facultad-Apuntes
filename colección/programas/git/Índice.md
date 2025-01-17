@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-15
 tags:
-  - índice
+  - investigación/índice
   - investigación/herramientas/git
 estado: Falta resumir
 ---

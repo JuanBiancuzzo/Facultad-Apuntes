@@ -2,7 +2,7 @@
 dia: 2024-10-20
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/matemática/encoding/lossless-compression-encoding
 aliases:

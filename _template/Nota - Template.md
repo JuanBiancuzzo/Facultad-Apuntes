@@ -16,7 +16,7 @@
 
     let opciones = [], valores = [];
     let ingresarOpcion = (opcion, valor) => {
-        if (!opciones.includes(opcion)) {
+        if (!valores.includes(valor)) {
             opciones.push(opcion);
             valores.push(valor);
         }
@@ -60,7 +60,7 @@
                 ingresarOpcion("Ingresar un documento legal", TEMPLATE.coleccion.documentoLegal);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.funciones) {
-                ingresarOpcion("Ingresar una función de programación", TEMPLATE.coleccion.funcion);
+                ingresarOpcion("Ingresar una función de programación", TEMPLATE.coleccion.funciones.self);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.libros) {
                 ingresarOpcion("Ingresar un libro", TEMPLATE.coleccion.libro);
@@ -78,7 +78,7 @@
     }
 
     const dv = app.plugins.plugins.dataview.api;
-    if (dv.pages(`"${carpeta}" and #${TAGS.investigacion.self}`).length > 0)  {
+    if (dv.pages(`"${carpeta}" and #${TAGS.investigacion.self}/${TAGS.investigacion.indice}`).length > 0)  {
         ingresarOpcion("Ingresar nota de investigación", TEMPLATE.nota.investigacion);
     }
     if (dv.pages(`"${carpeta}" and (#${TAGS.materia} or #${TAGS.resumenMateria})`).length > 0)  {

@@ -1,23 +1,19 @@
 function obtenerTag(tp, tags) {
-    let TAGS = tp.user.constantes().TAGS;
-    return tags.filter(tag => {
-        switch (tag.split("/").at(0)) {
-            case TAGS.investigacion.self:
-            case TAGS.carrera.self:
-            case TAGS.materia:
-            case TAGS.resumenMateria:
-            case TAGS.resumenCurso:
-            case TAGS.curso.self:
-            case TAGS.coleccion:
-            case TAGS.referencias:
-            case TAGS.proyecto.self:
-            case TAGS.nota.self:
-                return false;
-            
-            default: 
-                return true;
-        }
-    });
+    const { TAGS } = tp.user.constantes();
+    const tagsAFiltrar = [
+        `${TAGS.investigacion.self}/${TAGS.investigacion.indice}`,
+        `${TAGS.curso.self}/${TAGS.curso.curso}`,
+        TAGS.resumenCurso,
+        TAGS.carrera.self,
+        TAGS.materia,
+        TAGS.resumenMateria,
+        TAGS.coleccion.self,
+        TAGS.referencias,
+        `${TAGS.proyecto.self}/`,
+        TAGS.nota.self,
+    ];
+
+    return tags.filter(tag => tagsAFiltrar.every(tagAFiltrar => !tag.startsWith(tagAFiltrar)));
 }
 
 module.exports = obtenerTag;

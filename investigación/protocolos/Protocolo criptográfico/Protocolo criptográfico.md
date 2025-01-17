@@ -2,7 +2,7 @@
 dia: 2024-10-14
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/protocolos/Protocolo-criptográfico
 referencias:

@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-08
 tags:
-  - índice
+  - investigación/índice
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust/rust-parser
 estado: Falta resumir
 ---

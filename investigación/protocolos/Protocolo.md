@@ -2,7 +2,7 @@
 dia: 2024-10-13
 estado: Tenemos principalmente los protocolos de red pero no mucho más allá de eso
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/protocolos
 ---

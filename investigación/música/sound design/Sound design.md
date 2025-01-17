@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-17
 tags:
-  - índice
+  - investigación/índice
   - investigación/música/sound-design
   - nota/investigacion
 estado: Falta resumir

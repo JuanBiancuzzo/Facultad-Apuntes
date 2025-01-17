@@ -2,7 +2,7 @@
 dia: 2024-10-15
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - investigación/game-engine/physics-engine
   - nota/investigacion
 ---

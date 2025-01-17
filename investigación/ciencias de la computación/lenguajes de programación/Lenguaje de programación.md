@@ -2,7 +2,7 @@
 dia: 2024-08-15
 estado: Empezado, me gustaría avanzar con C y usar eso como base de los otros lenguajes, ya que lo fue para mi entendimiento de la programación
 tags:
-  - índice
+  - investigación/índice
   - investigación/ciencias-de-la-computación/lenguajes-de-programación
   - nota/investigacion
 aliases:

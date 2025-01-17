@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-12
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/machine-Learning
   - investigación/ciencias-de-la-computación/Machine-learning

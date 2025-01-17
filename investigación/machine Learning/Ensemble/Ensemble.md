@@ -2,7 +2,7 @@
 dia: 2024-11-26
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - investigación/machine-Learning/Ensemble
   - nota/investigacion
   - investigación/ciencias-de-la-computación/Machine-learning/Ensemble
