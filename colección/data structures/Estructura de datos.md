@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-09
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/ciencias-de-la-computación/data-structures
   - colección/data-structures

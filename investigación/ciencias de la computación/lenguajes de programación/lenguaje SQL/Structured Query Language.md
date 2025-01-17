@@ -2,7 +2,7 @@
 dia: 2024-10-13
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - nota/facultad
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-SQL
 aliases:

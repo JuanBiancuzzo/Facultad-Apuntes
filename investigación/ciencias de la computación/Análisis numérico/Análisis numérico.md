@@ -1,7 +1,7 @@
 ---
 dia: 2024-12-23
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/ciencias-de-la-computación/Análisis-numérico
   - investigación/matemática/Análisis-numérico

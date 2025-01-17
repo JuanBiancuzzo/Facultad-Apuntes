@@ -2,7 +2,7 @@
 dia: 2024-11-15
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/mecánica/Engranaje
 aliases:

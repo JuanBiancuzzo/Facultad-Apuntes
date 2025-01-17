@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-13
 tags:
-  - índice
+  - investigación/índice
   - investigación/machine-Learning/physics-Informed-Machine-Learning
   - investigación/ciencias-de-la-computación/Machine-learning/physics-Informed-Machine-Learning
   - nota/investigacion

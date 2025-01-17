@@ -2,7 +2,7 @@
 dia: 2024-09-22
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - investigación/mecánica
 ---
 ```dataviewjs

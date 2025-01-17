@@ -2,7 +2,7 @@
 dia: 2024-11-30
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - investigación/arquitectura-de-procesadores/Simple-As-Possible
   - nota/investigacion
 aliases:

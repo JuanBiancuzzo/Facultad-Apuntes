@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-09
 tags:
-  - índice
+  - investigación/índice
   - investigación/storytelling/worldbuilding
   - nota/investigacion
 estado: Falta resumir

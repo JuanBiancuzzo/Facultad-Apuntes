@@ -2,7 +2,7 @@
 dia: 2024-11-27
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - investigación/ciencias-de-la-computación/paradigmas-de-programación
   - nota/investigacion
 referencias:

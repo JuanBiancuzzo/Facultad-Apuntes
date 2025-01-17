@@ -2,7 +2,7 @@
 dia: 2024-11-11
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - investigación/herramientas/Comandos-de-linux
 ---
 ```dataviewjs

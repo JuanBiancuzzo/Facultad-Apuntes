@@ -2,7 +2,7 @@
 dia: 2024-09-18
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - investigación/matemática/knot-theory
   - nota/investigacion
 ---

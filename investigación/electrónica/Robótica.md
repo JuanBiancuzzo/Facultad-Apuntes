@@ -1,7 +1,7 @@
 ---
 dia: 2024-12-23
 tag:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/electrónica/Robot
 equivalente: "[[investigación/robótica/Robótica|Robótica]]"

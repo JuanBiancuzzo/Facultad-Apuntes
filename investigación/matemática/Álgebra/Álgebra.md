@@ -1,7 +1,7 @@
 ---
 dia: 2024-12-18
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/matemática/Álgebra
 estado: Sin empezar

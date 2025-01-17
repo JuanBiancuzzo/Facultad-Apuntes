@@ -1,7 +1,7 @@
 ---
 dia: 2024-12-10
 tag:
-  - índice
+  - investigación/índice
   - investigación/game-engine/Animation-Engine
   - nota/investigacion
 equivalente: "[[investigación/animation/Animación.md|Animación]]"

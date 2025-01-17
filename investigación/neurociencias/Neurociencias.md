@@ -2,7 +2,7 @@
 dia: 2024-11-16
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - investigación/neurociencias
   - nota/investigacion
 ---

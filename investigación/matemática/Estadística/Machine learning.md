@@ -1,7 +1,7 @@
 ---
 dia: 2024-12-10
 tag:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/matemática/Estadística/Machine-learning
 equivalente: "[[investigación/machine Learning/Machine learning.md|Machine learning]]"

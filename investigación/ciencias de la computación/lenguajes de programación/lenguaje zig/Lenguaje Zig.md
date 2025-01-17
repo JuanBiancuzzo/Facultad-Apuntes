@@ -2,7 +2,7 @@
 dia: 2024-08-15
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-zig
   - nota/investigacion
 aliases:

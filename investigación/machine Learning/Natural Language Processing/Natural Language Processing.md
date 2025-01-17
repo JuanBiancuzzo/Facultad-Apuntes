@@ -2,7 +2,7 @@
 dia: 2024-11-24
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - investigación/machine-Learning/Natural-Language-Processing
   - nota/investigacion
   - investigación/ciencias-de-la-computación/Machine-learning/Natural-Language-Processing

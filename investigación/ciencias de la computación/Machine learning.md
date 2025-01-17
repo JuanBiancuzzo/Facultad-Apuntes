@@ -1,7 +1,7 @@
 ---
 dia: 2024-12-10
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/ciencias-de-la-computación/Machine-learning
 equivalente: "[[investigación/machine Learning/Machine learning.md|Machine learning]]"

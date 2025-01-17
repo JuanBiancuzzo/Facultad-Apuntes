@@ -2,7 +2,7 @@
 dia: 2024-10-02
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - investigación/machine-Learning/modelos-generativos
   - investigación/ciencias-de-la-computación/Machine-learning/modelos-generativos
   - nota/investigacion

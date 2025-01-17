@@ -2,7 +2,7 @@
 dia: 2024-10-17
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - investigación/matemática/espacios-métricos
   - nota/investigacion
 ---

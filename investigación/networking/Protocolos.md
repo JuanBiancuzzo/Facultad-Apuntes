@@ -1,7 +1,7 @@
 ---
 dia: 2024-12-10
 tags:
-  - índice
+  - investigación/índice
   - investigación/networking/Protocolos
   - nota/investigacion
   - investigación/ciencias-de-la-computación/Networking/Protocolos

@@ -2,7 +2,7 @@
 dia: 2024-09-30
 estado: Empezando a describir algunos algoritmos
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/ciencias-de-la-computación/algoritmos
 referencias:

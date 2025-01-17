@@ -2,7 +2,7 @@
 dia: 2024-10-30
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/ciencias-de-la-computación/programación-lineal
 aliases:
