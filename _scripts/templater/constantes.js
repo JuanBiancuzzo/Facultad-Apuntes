@@ -55,21 +55,24 @@ module.exports = () => ({
             self: "investigación",
             indice: "índice",
         },
-        carrera: {
-            self: "carrera",
-            informatica: "ingeniería-en-informática",
-            electronica: "ingeniería-electrónica",
-            datos: "licenciatura-en-ciencia-de-datos",
-            fisica: "licenciatura-en-ciencias-físicas",
-            matematica: "licenciatura-en-ciencias-matemáticas",
-        },
         curso: {
             self: "cursos",
             curso: "curso",
+            resumen: "resumen",
         },
-        materia: "materia",
-        resumenMateria: "resumen-materia",
-        resumenCurso: "resumen-curso",
+        facultad: {
+            self: "facultad",
+            carrera: {
+                self: "carrera",
+                informatica: "ingeniería-en-informática",
+                electronica: "ingeniería-electrónica",
+                datos: "licenciatura-en-ciencia-de-datos",
+                fisica: "licenciatura-en-ciencias-físicas",
+                matematica: "licenciatura-en-ciencias-matemáticas",
+            },
+            materia: "materia",
+            resumen: "resumen",
+        },
         coleccion: {
             self: "colección",
             funciones: {
@@ -173,6 +176,8 @@ module.exports = () => ({
             referencias: "referencias",
             equivalencia: "equivalencia",
             tags: "tags",
+            nombre: "nombreMateria",
+            nombreReudico: "nombreReducido",
         },
         INVESTIGACION: {
             estado: "estado",
@@ -187,6 +192,7 @@ module.exports = () => ({
             numero: "capitulo",
             parte: "parte",
             referencias: "referencias",
+            nombre: "nombreResumen",
         },
         PROYECTO: {
             dia: "dia",

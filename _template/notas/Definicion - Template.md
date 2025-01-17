@@ -1,8 +1,11 @@
 <%*
-    const { FORMATO_DIA, SIMBOLOS, DIRECTORIOS, SECCIONES, TAGS, ETAPAS, TEMPLATE, DATOS: { 
-        CARRERA: DATOS_CARRERA, MATERIA: DATOS_MATERIA, RESUMEN: DATOS_RESUMEN, 
-        ARCHIVO: DATOS_ARCHIVO, REFERENCIAS: DATOS_REFERENCIA
-    } } = tp.user.constantes();
+    const { FORMATO_DIA, SIMBOLOS, DIRECTORIOS, SECCIONES, ETAPAS, TEMPLATE, 
+        TAGS: { facultad: TAGS_FACULTAD, nota: TAGS_NOTA }, 
+        DATOS: { 
+            CARRERA: DATOS_CARRERA, MATERIA: DATOS_MATERIA, RESUMEN: DATOS_RESUMEN, 
+            ARCHIVO: DATOS_ARCHIVO, REFERENCIAS: DATOS_REFERENCIA
+        }, 
+    } = tp.user.constantes();
     const SALIR = "salir";
 
     const referencia = tp.user.referencia();
@@ -16,9 +19,9 @@
     if (carpeta.last().trim() == DIRECTORIOS.imagenes) carpeta.pop();
 
     let directorioActual = carpeta.join("/");
-    let resumenes = dv.pages(`"${directorioActual}" and #${TAGS.resumenMateria}`);
-    let materias = dv.pages(`"${directorioActual}" and #${TAGS.materia}`);
-    let carreras = dv.pages(`"${directorioActual}" and #${TAGS.carrera.self}`);
+    let resumenes = dv.pages(`"${directorioActual}" and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.resumen}`);
+    let materias = dv.pages(`"${directorioActual}" and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.materia}`);
+    let carreras = dv.pages(`"${directorioActual}" and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.carrera.self}`);
 
     while (
         (materias.length > 0 && resumenes.length > 0) || (materias.length == 0 && resumenes.length == 0)
@@ -34,10 +37,10 @@
             }
 
             let tagCarrera = dv.array(carrera[DATOS_CARRERA.tags] ? carrera[DATOS_CARRERA.tags] : [])
-                .find(tag => tag.startsWith(TAGS.carrera.self))
-                .replace(`${TAGS.carrera.self}/`, "");
+                .find(tag => tag.startsWith(TAGS_FACULTAD.carrera.self))
+                .replace(`${TAGS_FACULTAD.carrera.self}/`, "");
 
-            materias = dv.pages(`#${tagCarrera} and #${TAGS.materia}`);
+            materias = dv.pages(`#${tagCarrera} and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.materia}`);
         }
 
         let materia;
@@ -45,15 +48,15 @@
             case 0: 
                 carpeta.pop();
                 directorioActual = carpeta.join("/");
-                resumenes = dv.pages(`"${directorioActual}" and #${TAGS.resumenMateria}`);
-                materias = dv.pages(`"${directorioActual}" and #${TAGS.materia}`);
-                carreras = dv.pages(`"${directorioActual}" and #${TAGS.carrera.self}`);
+                resumenes = dv.pages(`"${directorioActual}" and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.resumen}`);
+                materias = dv.pages(`"${directorioActual}" and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.materia}`);
+                carreras = dv.pages(`"${directorioActual}" and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.carrera.self}`);
                 continue;
 
             case 1: materia = materias.first(); break;
             default: 
                 materia = await preguntar.suggester(
-                    tp, (materia) => materia.file.name, materias.sort(materia => {
+                    tp, (materia) => materia[DATOS_MATERIA.nombre], materias.sort(materia => {
                         let materiaFinal = materia[DATOS_MATERIA.equivalencia]
                             ? dv.page(materia[DATOS_MATERIA.equivalencia].path)
                             : materia;
@@ -63,22 +66,15 @@
                 );
         }
 
-        let tagsMateria = materia[DATOS_MATERIA.tags] ? materia[DATOS_MATERIA.tags] : [];
-        let tagDeMateria = dv.array(tagsMateria)
-            .find(tag => tag.startsWith(TAGS.materia))
-            .replace(`${TAGS.materia}/`, "");
-
-        let tagMateriaResumen = dv.array(tagsMateria)
-            .find(tag => !tag.startsWith(TAGS.materia) && tag.includes(tagDeMateria));
-
-        resumenes = dv.pages(`#${tagMateriaResumen} and #${TAGS.resumenMateria}`);
+        let tagsMateria = tp.user.obtenerTag(tp, materia[DATOS_MATERIA.tags]).map(tag => `#${tag}`);
+        resumenes = dv.pages(`(${tagsMateria.join(" or ")}) and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.resumen}`);
         break;
     }
 
     let resumen = resumenes.first();
     if (resumenes.length > 1) {
         resumen = await preguntar.suggester(
-            tp, ({ [DATOS_RESUMEN.parte]: parte, file }) => `${file.folder.split("/").pop()} ${parte ? `parte ${parte}` : ""}`,
+            tp, ({ [DATOS_RESUMEN.parte]: parte, [DATOS_RESUMEN.nombre]: nombre }) => `${nombre} ${parte ? `parte ${parte}` : ""}`,
             resumenes, "Que resumen se quiere agregar esta nota?",
             error.Quit("No se ingresó en que resumen se va a crear la nota")
         );
@@ -162,7 +158,7 @@
         [DATOS_ARCHIVO.referencias]: referenciasUsar,
         [DATOS_ARCHIVO.tags]: [
             ...tp.user.obtenerTag(tp, resumen[DATOS_ARCHIVO.tags]), 
-            `${TAGS.nota.self}/${TAGS.nota.carrera}`,
+            `${TAGS_NOTA.self}/${TAGS_NOTA.carrera}`,
         ],
     });
     tR += "---\n";
