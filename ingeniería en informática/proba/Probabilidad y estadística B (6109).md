@@ -4,7 +4,7 @@ estado: Terminado
 plan: "1986"
 codigo: "6109"
 tags:
-  - materia/proba
+  - facultad/materia/proba
   - ingeniería-en-informática/proba
 etapa: terminado
 correlativas:

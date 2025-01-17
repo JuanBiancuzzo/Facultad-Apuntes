@@ -1,7 +1,7 @@
 ---
 plan: 2023
 tags:
-  - materia/distribuidos
+  - facultad/materia/distribuidos
   - ingeniería-en-informática/distribuidos
 correlativas:
   - "[[ingeniería en informática/redes/Redes (TA048).md|Redes]]"

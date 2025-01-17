@@ -1,7 +1,7 @@
 ---
 plan: 2023
 tags:
-  - materia/redes
+  - facultad/materia/redes
   - ingeniería-electrónica/redes
 correlativas: []
 codigo: TB067

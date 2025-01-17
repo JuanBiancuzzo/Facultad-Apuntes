@@ -1,7 +1,7 @@
 ---
 plan: 2009
 tags:
-  - materia/algo-3
+  - facultad/materia/algo-3
   - ingeniería-electrónica/algo-3
 correlativas:
   - "[[ingeniería electrónica/Algoritmos y Programación 2 (9512).md|Algoritmos y Programación 2]]"

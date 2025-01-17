@@ -1,7 +1,7 @@
 ---
 plan: 2009
 tags:
-  - materia/proba
+  - facultad/materia/proba
   - ingeniería-electrónica/proba
 correlativas:
   - "[[ingeniería electrónica/Análisis Matemático 2 A (8101).md|Análisis Matemático 2 A]]"

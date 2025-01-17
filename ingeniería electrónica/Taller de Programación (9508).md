@@ -1,7 +1,7 @@
 ---
 plan: 2009
 tags:
-  - materia/taller
+  - facultad/materia/taller
   - ingeniería-electrónica/taller
 correlativas:
   - "[[ingeniería electrónica/Algoritmos y Programación 2 (9512).md|Algoritmos y Programación 2]]"

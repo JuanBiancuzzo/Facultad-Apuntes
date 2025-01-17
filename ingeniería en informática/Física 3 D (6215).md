@@ -1,7 +1,7 @@
 ---
 plan: 1986
 tags:
-  - materia/fisica-3
+  - facultad/materia/fisica-3
   - ingeniería-en-informática/fisica-3
 correlativas:
   - "[[Física 2 A (6203)|Física 2]]"

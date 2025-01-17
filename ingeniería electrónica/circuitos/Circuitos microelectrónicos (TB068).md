@@ -4,7 +4,7 @@ codigo: TB068
 plan: 2023
 estado: Falta últimos temas
 tags:
-  - materia/circuitos
+  - facultad/materia/circuitos
   - ingeniería-electrónica/circuitos
 etapa: ampliar
 correlativas:

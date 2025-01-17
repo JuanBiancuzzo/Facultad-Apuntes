@@ -1,7 +1,7 @@
 ---
 plan: 2009
 tags:
-  - materia/fisica-2
+  - facultad/materia/fisica-2
   - ingeniería-electrónica/fisica-2
 correlativas:
   - "[[ingeniería electrónica/Física 1 A (8201).md|Física 1 A]]"

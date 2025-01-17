@@ -4,7 +4,7 @@ estado: Falta pasar los videos de los últimos temas
 plan: "1986"
 codigo: "7506"
 tags:
-  - materia/orga
+  - facultad/materia/orga
   - ingeniería-en-informática/orga
 etapa: empezado
 correlativas:

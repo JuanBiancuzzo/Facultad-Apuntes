@@ -1,7 +1,7 @@
 ---
 plan: 2009
 tags:
-  - materia/analisis-2
+  - facultad/materia/analisis-2
   - ingeniería-electrónica/analisis-2
 correlativas: []
 codigo: 8101

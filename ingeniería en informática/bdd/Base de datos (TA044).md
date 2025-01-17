@@ -4,7 +4,7 @@ codigo: TA044
 plan: 2023
 estado: Falta ampliar
 tags:
-  - materia/bdd
+  - facultad/materia/bdd
   - ingeniería-en-informática/bdd
 etapa: empezado
 correlativas:

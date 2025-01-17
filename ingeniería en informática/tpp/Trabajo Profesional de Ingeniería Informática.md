@@ -8,7 +8,7 @@ estado: Estamos buscando información sobre el tema
 tags:
   - proyecto/práctico
   - ingeniería-en-informática/tpp
-  - materia/tpp
+  - facultad/materia/tpp
   - ingeniería-en-informática/tpp
   - proyecto/investigación
 correlativas:

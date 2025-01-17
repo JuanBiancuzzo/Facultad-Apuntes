@@ -4,7 +4,7 @@ estado: Terminado
 plan: "2009"
 codigo: "9704"
 tags:
-  - materia/seguridad
+  - facultad/materia/seguridad
   - ingeniería-electrónica/seguridad
 etapa: terminado
 ---

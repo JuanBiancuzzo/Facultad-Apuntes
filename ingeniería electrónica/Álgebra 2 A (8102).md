@@ -1,7 +1,7 @@
 ---
 plan: 2009
 tags:
-  - materia/algebra-2
+  - facultad/materia/algebra-2
   - ingeniería-electrónica/algebra-2
 correlativas: []
 codigo: 8102

@@ -4,7 +4,7 @@ estado: Terminado
 plan: "1986"
 codigo: "6670"
 tags:
-  - materia/estructura
+  - facultad/materia/estructura
   - ingeniería-en-informática/estructura
 etapa: terminado
 correlativas:

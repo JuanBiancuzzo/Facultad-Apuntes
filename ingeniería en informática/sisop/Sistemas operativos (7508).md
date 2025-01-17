@@ -4,7 +4,7 @@ estado: Terminado
 plan: "1986"
 codigo: "7508"
 tags:
-  - materia/sisop
+  - facultad/materia/sisop
   - ingeniería-en-informática/sisop
 etapa: terminado
 correlativas:

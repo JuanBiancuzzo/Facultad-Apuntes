@@ -4,7 +4,7 @@ codigo: 7507
 plan: 1986
 estado: Falta hacer el resumen
 tags:
-  - materia/algo-3
+  - facultad/materia/algo-3
   - ingeniería-en-informática/algo-3
 etapa: sin-empezar
 correlativas:
