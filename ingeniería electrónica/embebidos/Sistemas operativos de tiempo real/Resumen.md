@@ -2,7 +2,8 @@
 capitulo: 6
 tags:
   - ingeniería-electrónica/embebidos/Sistemas-operativos-de-tiempo-real
-  - resumen-materia/Sistemas-operativos-de-tiempo-real
+  - facultad/resumen
+nombreResumen: Sistemas operativos de tiempo real
 ---
 # Índice
 ---

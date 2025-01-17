@@ -2,7 +2,8 @@
 capitulo: 8
 tags:
   - ingeniería-electrónica/dispo/Dispositivos-de-potencia
-  - resumen-materia/Dispositivos-de-potencia
+  - facultad/resumen
+nombreResumen: Dispositivos de potencia
 ---
 # Índice 
 ---

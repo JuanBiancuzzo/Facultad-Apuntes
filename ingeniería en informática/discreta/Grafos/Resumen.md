@@ -2,7 +2,8 @@
 capitulo: 8
 tags:
   - ingeniería-en-informática/discreta/Grafos
-  - resumen-materia/Grafos
+  - facultad/resumen
+nombreResumen: Grafos
 ---
 # Índice
 ---

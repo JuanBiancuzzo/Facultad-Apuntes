@@ -4,7 +4,8 @@ tags:
   - licenciatura-en-ciencias-matemáticas/analisis-1/Campos-Vectoriales
   - licenciatura-en-ciencias-de-datos/analisis-1/Campos-Vectoriales
   - licenciatura-en-ciencias-físicas/analisis-1/Campos-Vectoriales
-  - resumen-materia/Campos-Vectoriales
+  - facultad/resumen
+nombreResumen: Campos Vectoriales
 ---
 # Índice
 ---

@@ -2,7 +2,8 @@
 capitulo: 3
 tags:
   - ingeniería-electrónica/intro/Circuitos-con-capacitores
-  - resumen-materia/Circuitos-con-capacitores
+  - facultad/resumen
+nombreResumen: Circuitos con capacitores
 ---
 # Índice 
 ---

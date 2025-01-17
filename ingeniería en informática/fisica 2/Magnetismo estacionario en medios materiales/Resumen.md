@@ -3,7 +3,8 @@ capitulo: 6
 tags:
   - ingeniería-en-informática/fisica-2/Magnetismo-estacionario-en-medios-materiales
   - ingeniería-electrónica/fisica-2/Magnetismo-estacionario-en-medios-materiales
-  - resumen-materia/Magnetismo-estacionario-en-medios-materiales
+  - facultad/resumen
+nombreResumen: Magnetismo estacionario en medios materiales
 ---
 # Índice 
 ---

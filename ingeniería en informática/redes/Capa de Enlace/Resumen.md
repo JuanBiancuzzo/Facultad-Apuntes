@@ -3,9 +3,10 @@ capitulo: 5
 tags:
   - ingeniería-en-informática/redes/Capa-de-Enlace
   - ingeniería-electrónica/redes/Capa-de-Enlace
-  - resumen-materia/Capa-de-Enlace
+  - facultad/resumen
 referencias:
   - "594"
+nombreResumen: Capa de Enlace
 ---
 # Índice 
 ---

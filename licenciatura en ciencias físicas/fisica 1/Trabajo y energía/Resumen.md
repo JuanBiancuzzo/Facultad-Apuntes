@@ -2,7 +2,8 @@
 capitulo: 7
 tags:
   - licenciatura-en-ciencias-físicas/fisica-1/Trabajo-y-energía
-  - resumen-materia/Trabajo-y-energía
+  - facultad/resumen
+nombreResumen: Trabajo y energía
 ---
 # Índice
 ---

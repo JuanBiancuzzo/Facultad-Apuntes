@@ -3,7 +3,8 @@ capitulo: 13
 tags:
   - ingeniería-electrónica/fisica-3/Heterojunturas
   - ingeniería-en-informática/fisica-3/Heterojunturas
-  - resumen-materia/Heterojunturas
+  - facultad/resumen
+nombreResumen: Heterojunturas
 ---
 # Índice 
 ---

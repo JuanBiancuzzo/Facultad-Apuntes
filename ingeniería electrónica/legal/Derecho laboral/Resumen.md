@@ -2,7 +2,8 @@
 capitulo: 5
 tags:
   - ingeniería-electrónica/legal/Derecho-laboral
-  - resumen-materia/Derecho-laboral
+  - facultad/resumen
+nombreResumen: Derecho laboral
 ---
 # Índice 
 ---

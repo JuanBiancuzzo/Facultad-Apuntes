@@ -3,9 +3,10 @@ capitulo: 1
 tags:
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
   - licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
-  - resumen-materia/Conjuntos-relaciones-y-funciones
+  - facultad/resumen
 referencias:
   - "411"
+nombreResumen: Conjuntos, relaciones y funciones
 ---
 # Índice
 ---

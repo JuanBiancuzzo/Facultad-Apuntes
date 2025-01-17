@@ -2,7 +2,8 @@
 capitulo: 3
 tags:
   - ingeniería-electrónica/electro/Ondas-electromagnéticas-en-el-vacío
-  - resumen-materia/Ondas-electromagnéticas
+  - facultad/resumen
+nombreResumen: Ondas electromagnéticas
 ---
 # Índice
 ---

@@ -2,7 +2,8 @@
 capitulo: 1
 tags:
   - ingeniería-electrónica/seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
-  - resumen-materia/Prevención-de-accidentes-y-enfermedades-profesionales
+  - facultad/resumen
+nombreResumen: Prevención de accidentes y enfermedades profesionales
 ---
 # Índice 
 ---

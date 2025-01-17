@@ -2,7 +2,8 @@
 capitulo: 7
 tags:
   - ingeniería-electrónica/legal/Derecho-real
-  - resumen-materia/Derecho-real
+  - facultad/resumen
+nombreResumen: Derecho real
 ---
 # Índice 
 ---

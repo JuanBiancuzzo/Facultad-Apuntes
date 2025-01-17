@@ -2,7 +2,8 @@
 capitulo: 6
 tags:
   - ingeniería-electrónica/legal/Derechos-humanos
-  - resumen-materia/Derechos-humanos
+  - facultad/resumen
+nombreResumen: Derechos humanos
 ---
 # Índice 
 ---

@@ -2,7 +2,8 @@
 capitulo: 6
 tags:
   - licenciatura-en-ciencias-físicas/fisica-1/Impulso-angular
-  - resumen-materia/Impulso-angular
+  - facultad/resumen
+nombreResumen: Impulso angular
 ---
 # Índice
 ---

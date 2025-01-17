@@ -1,8 +1,9 @@
 ---
 capitulo: 2
 tags:
-  - resumen-materia/Presentación
   - ingeniería-en-informática/tpp/Presentación
+  - facultad/resumen
+nombreResumen: Presentación
 ---
 # Índice 
 ---

@@ -2,7 +2,8 @@
 capitulo: 6
 tags:
   - ingeniería-electrónica/intro/Multimetro
-  - resumen-materia/Multimetro
+  - facultad/resumen
+nombreResumen: Multimetro
 ---
 # Índice 
 ---

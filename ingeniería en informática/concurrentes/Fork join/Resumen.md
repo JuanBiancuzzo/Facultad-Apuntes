@@ -2,7 +2,8 @@
 capitulo: 3
 tags:
   - ingeniería-en-informática/concurrentes/Fork-join
-  - resumen-materia/Fork-join
+  - facultad/resumen
+nombreResumen: Fork join
 ---
 # Índice
 ---

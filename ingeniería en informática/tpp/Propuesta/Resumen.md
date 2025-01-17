@@ -1,8 +1,9 @@
 ---
 capitulo: 1
 tags:
-  - resumen-materia/Propuesta
   - ingeniería-en-informática/tpp/Propuesta
+  - facultad/resumen
+nombreResumen: Propuesta
 ---
 # Índice 
 ---
