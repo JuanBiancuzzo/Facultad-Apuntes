@@ -38,9 +38,9 @@ async function obtenerCreacion(tp, tipo) {
 
         //  * Bloque matemática
         case SECCION_MATEMATICA.tema: 
-            return;
+            return tp.user.bloqueMatematica().crear.tema;
         case SECCION_MATEMATICA.subtema: 
-            return;
+            return tp.user.bloqueMatematica().crear.subtema;
     }
 
     throw error.Quit("No existe ese proceso");

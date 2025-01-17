@@ -2,7 +2,7 @@
 capitulo: 1
 tags:
   - bloque-matematica/Números-enteros/Primos
-  - bloque-matematica/subtema/Primos
+  - colección/bloque-matematica/subtema
 nota:
   - numero: 1
     nombre: Teorema fundamental de la aritmética
@@ -42,4 +42,5 @@ nota:
     nombre: Mcd de potencias
     path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Máximo común divisor#^cor-1-1-12
     pathRelacionado: "[[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Máximo común divisor#^prop-1-1-11|Proposición 1.1.11 (Máximo común divisor y factorización)]]"
+nombreSubtema: Primos
 ---

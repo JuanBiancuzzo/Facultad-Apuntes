@@ -1,6 +1,4 @@
 <%*
-    const { BLOQUES_MATEMATICA } = tp.user.constantes();
-    const error = tp.user.error();
     const bloqueMatematica = tp.user.bloqueMatematica();
 
     try {
@@ -12,7 +10,6 @@
         );
 
         await bloqueMatematica.agregarDatos(tp, resultado);
-
         tR += bloqueMatematica.representacion(tp, resultado);
 
     } catch ({ name:_, message: mensaje }) {

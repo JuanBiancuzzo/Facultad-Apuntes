@@ -31,11 +31,7 @@ module.exports = () => ({
             paper: "Paper - Template",
             programa: "Programa - Template",
             receta: "Receta - Template",
-            bloqueMatematica: {
-                self: "Bloque Matematica - Template",
-                tema: "Bloque Matematica Tema - Template",
-                subtema: "Bloque Matematica Subtema - Template",
-            },
+            bloqueMatematica: "Bloque Matematica - Template",
         },
         seccion: "Seccion - Template",
         etapa: "Etapa - Template",
@@ -214,10 +210,13 @@ module.exports = () => ({
             tema: {
                 tags: "tags",
                 numero: "capitulo",
+                nombre: "nombreTema",
+                obtenerTitulo: (tema) => `Tema de ${tema}`,
             },
             subtema: {
                 tags: "tags",
                 numero: "capitulo",
+                nombre: "nombreSubtema",
                 nota: {
                     self: "nota",
                     numero: "numero",
@@ -225,6 +224,7 @@ module.exports = () => ({
                     path: "path",
                     pathRelacionado: "pathRelacionado",
                 },
+                obtenerTitulo: (tema, subtema) => `${subtema} del tema ${tema}`,
             },
         },
         FUNCIONES: {

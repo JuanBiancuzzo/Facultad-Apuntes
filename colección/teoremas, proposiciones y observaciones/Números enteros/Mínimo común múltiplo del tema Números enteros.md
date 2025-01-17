@@ -2,7 +2,7 @@
 capitulo: 4
 tags:
   - bloque-matematica/Números-enteros/Mínimo-común-múltiplo
-  - bloque-matematica/subtema/Mínimo-común-múltiplo
+  - colección/bloque-matematica/subtema
 nota:
   - numero: 1
     nombre: Mínimo común múltiplo y factorización
@@ -14,4 +14,5 @@ nota:
   - numero: 3
     nombre: Producto mcd y mcm
     path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Mínimo común múltiplo#^prop-1-4-3
+nombreSubtema: Mínimo común múltiplo
 ---
