@@ -1,6 +1,7 @@
 ---
 tags:
   - carrera/licenciatura-en-ciencias-matemáticas
+  - facultad/carrera
 estado: Empecé con álgebra
 planes:
   - "2022"
