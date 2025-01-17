@@ -6,11 +6,12 @@ parte: 0
 profesores:
   - 0
 tags:
-  - resumen-curso/curso
   - referencia/cursotema
   - cursos/computation-structures/Caches-and-the-Memory-Hierachy
+  - cursos/resumen
 curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
 tipoCita: CursoTema
+nombreResumen: Caches and the Memory Hierachy
 ---
 # Índice
 ---

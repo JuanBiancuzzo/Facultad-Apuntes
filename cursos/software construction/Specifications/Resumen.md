@@ -7,11 +7,12 @@ profesores:
   - 0
   - 1
 tags:
-  - resumen-curso/curso
   - referencia/cursotema
   - cursos/software-construction/Specifications
+  - cursos/resumen
 curso: "[[cursos/software construction/Software Construction|Software Construction]]"
 tipoCita: CursoTema
+nombreResumen: Specifications
 ---
 # Índice
 ---

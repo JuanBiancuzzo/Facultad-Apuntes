@@ -2,12 +2,13 @@
 capitulo: 3
 tags:
   - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Procesamiento-del-lenguaje-natural-e-IA-generativo
-  - resumen-curso/curso
+  - cursos/resumen
 referencias:
   - "655"
   - "656"
   - "662"
   - "663"
+nombreResumen: Procesamiento del lenguaje natural e IA generativo
 ---
 # Índice
 ---

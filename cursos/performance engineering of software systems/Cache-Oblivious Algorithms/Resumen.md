@@ -7,11 +7,12 @@ profesores:
   - 0
   - 1
 tags:
-  - resumen-curso/curso
   - referencia/cursotema
   - cursos/performance-engineering-of-software-systems/CacheOblivious-Algorithms
+  - cursos/resumen
 curso: "[[cursos/performance engineering of software systems/Performance Engineering of Software Systems|Performance Engineering of Software Systems]]"
 tipoCita: CursoTema
+nombreResumen: Cache-Oblivious Algorithms
 ---
 # Índice
 ---

@@ -7,11 +7,12 @@ profesores:
   - 0
   - 1
 tags:
-  - resumen-curso/curso
   - referencia/cursotema
   - cursos/performance-engineering-of-software-systems/Races-and-Parrallelism
+  - cursos/resumen
 curso: "[[cursos/performance engineering of software systems/Performance Engineering of Software Systems|Performance Engineering of Software Systems]]"
 tipoCita: CursoTema
+nombreResumen: Races and Parrallelism
 ---
 # Índice
 ---

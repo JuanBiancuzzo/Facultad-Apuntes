@@ -7,11 +7,12 @@ profesores:
   - 0
   - 1
 tags:
-  - resumen-curso/curso
   - referencia/cursotema
   - cursos/software-construction/Map-Filter-Reduce
+  - cursos/resumen
 curso: "[[cursos/software construction/Software Construction|Software Construction]]"
 tipoCita: CursoTema
+nombreResumen: Map, Filter, Reduce
 ---
 # Índice
 ---

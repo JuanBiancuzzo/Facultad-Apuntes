@@ -8,10 +8,11 @@ profesores:
 parte: 0
 tipoCita: CursoTema
 tags:
-  - resumen-curso/curso
   - referencia/cursotema
   - cursos/introduction-to-algorithms/Introduction
+  - cursos/resumen
 curso: "[[cursos/introduction to algorithms/Introduction to Algorithms|Introduction to Algorithms]]"
+nombreResumen: Introduction
 ---
 # Índice
 ---

@@ -2,7 +2,7 @@
 capitulo: 2
 tags:
   - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Machine-learning-deep-learning-e-interpretabilidad-algorítmica
-  - resumen-curso/curso
+  - cursos/resumen
 referencias:
   - "652"
   - "336"
@@ -12,6 +12,7 @@ referencias:
   - "659"
   - "660"
   - "661"
+nombreResumen: Machine learning, deep learning e interpretabilidad algorítmica
 ---
 # Índice
 ---

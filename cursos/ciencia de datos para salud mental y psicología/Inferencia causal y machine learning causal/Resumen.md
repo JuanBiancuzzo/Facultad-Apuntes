@@ -2,7 +2,8 @@
 capitulo: 4
 tags:
   - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Inferencia-causal-y-machine-learning-causal
-  - resumen-curso/curso
+  - cursos/resumen
+nombreResumen: Inferencia causal y machine learning causal
 ---
 # Índice
 ---

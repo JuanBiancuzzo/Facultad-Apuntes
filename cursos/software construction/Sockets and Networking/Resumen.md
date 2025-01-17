@@ -7,11 +7,12 @@ profesores:
   - 0
   - 1
 tags:
-  - resumen-curso/curso
   - referencia/cursotema
   - cursos/software-construction/Sockets-and-Networking
+  - cursos/resumen
 curso: "[[cursos/software construction/Software Construction|Software Construction]]"
 tipoCita: CursoTema
+nombreResumen: Sockets and Networking
 ---
 # Índice
 ---
