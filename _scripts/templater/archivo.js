@@ -1,9 +1,11 @@
 /**
- * @param {() => { metadata: Object, carpeta: string, titulo: string, texto: string }} obtenerInformacion es una función que da la información necesaria para crear el archivo
+ * @param {async () => { metadata: Object, carpeta: string, titulo: string, texto: string }} obtenerInformacion es una función que da la información necesaria para crear el archivo
  * @returns {TFile} Se devuelve el archivo creado
  */
 async function crearArchivo(tp, obtenerInformacion) {
     let { metadata, carpeta, titulo, texto } = await obtenerInformacion();
+    try { await app.vault.createFolder(carpeta); } catch {}
+
     return await app.vault.create(
         `${carpeta}/${titulo}.md`, 
         textoDeArchivos(tp, metadata, texto),

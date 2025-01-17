@@ -1,7 +1,7 @@
 /**
  * @param {*} tp Objeto representante del plugin Templater
  * @param {string} tipo Un string caracteristico del proceso que se quiere hacer 
- * @returns {() => { metadata: Object, carpeta: string, titulo: string, texto: string }} Se devuelve un diccionario con la metadata del archivo y el texto del archivo en sí
+ * @returns {(tp, argumentos: array|undefined) => { metadata: Object, carpeta: string, titulo: string, texto: string }} Se devuelve un diccionario con la metadata del archivo y el texto del archivo en sí
  */
 async function obtenerCreacion(tp, tipo) {
     const error = tp.user.error();
@@ -32,9 +32,9 @@ async function obtenerCreacion(tp, tipo) {
         // Colecciones
         //  * Funciones
         case SECCION_FUNCIONES.libreria: 
-            return;
+            return tp.user.libreriaFunciones().crear.libreria;
         case SECCION_FUNCIONES.modulo: 
-            return;
+            return tp.user.libreriaFunciones().crear.modulo;
 
         //  * Bloque matemática
         case SECCION_MATEMATICA.tema: 
@@ -46,6 +46,4 @@ async function obtenerCreacion(tp, tipo) {
     throw error.Quit("No existe ese proceso");
 }
 
-module.exports = () => ({
-    obtenerCreacion: obtenerCreacion,
-});
+module.exports = obtenerCreacion;

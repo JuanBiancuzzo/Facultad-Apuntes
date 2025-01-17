@@ -1,7 +1,7 @@
 ---
 tags:
   - funciones/Librerías-de-Python
-  - funciones/lenguaje
+  - colección/funciones/lenguaje
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/Lenguaje-Python/Librerías-de-Python
   - índice
 nombreLenguaje: Python

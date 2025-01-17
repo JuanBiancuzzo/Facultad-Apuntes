@@ -60,7 +60,7 @@
                 ingresarOpcion("Ingresar un documento legal", TEMPLATE.coleccion.documentoLegal);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.funciones) {
-                ingresarOpcion("Ingresar una función de programación", TEMPLATE.coleccion.funciones.funcion);
+                ingresarOpcion("Ingresar una función de programación", TEMPLATE.coleccion.funciones.self);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.libros) {
                 ingresarOpcion("Ingresar un libro", TEMPLATE.coleccion.libro);

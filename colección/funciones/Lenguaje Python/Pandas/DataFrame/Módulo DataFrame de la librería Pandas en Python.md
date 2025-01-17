@@ -1,7 +1,7 @@
 ---
 tags:
   - funciones/Librerías-de-Python/Pandas/DataFrame
-  - funciones/modulo
+  - colección/funciones/modulo
   - índice
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/Lenguaje-Python/Librerías-de-Python/Pandas/DataFrame
 nombreModulo: DataFrame

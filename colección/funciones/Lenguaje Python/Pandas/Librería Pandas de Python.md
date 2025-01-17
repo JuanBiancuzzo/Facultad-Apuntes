@@ -1,7 +1,7 @@
 ---
 tags:
   - funciones/Librerías-de-Python/Pandas
-  - funciones/libreria
+  - colección/funciones/libreria
   - índice
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/Lenguaje-Python/Librerías-de-Python/Pandas
 nombreLibreria: Pandas

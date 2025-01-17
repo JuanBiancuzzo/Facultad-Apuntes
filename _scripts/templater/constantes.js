@@ -22,12 +22,20 @@ module.exports = () => ({
             estructuraDatos: "Estructura de datos - Template",
             distribucion: "Distribucion - Template",
             documentoLegal: "Documento legal - Template",
-            funciones: "Funcion - Template",
+            funciones: {
+                self: "Funcion - Template",
+                libreria: "Libreria de funciones - Template",
+                modulo: "Modulo de funciones - Template",
+            },
             libro: "Libro - Template",
             paper: "Paper - Template",
             programa: "Programa - Template",
             receta: "Receta - Template",
-            bloqueMatematica: "Bloque Matematica - Template",
+            bloqueMatematica: {
+                self: "Bloque Matematica - Template",
+                tema: "Bloque Matematica Tema - Template",
+                subtema: "Bloque Matematica Subtema - Template",
+            },
         },
         seccion: "Seccion - Template",
         etapa: "Etapa - Template",
@@ -44,11 +52,12 @@ module.exports = () => ({
         definicion: { nivel: 1, texto: "Definición" },
         resumenInvestigacion: { nivel: 2, texto: "Resumen" },
         progreso: { nivel: 1, texto: "Progreso" },
+        informacion: { nivel: 1, texto: "Información" },
     },
     TAGS: {
         investigacion: {
-            self: "índice",
-            general: "investigación",
+            self: "investigación",
+            indice: "índice",
         },
         carrera: {
             self: "carrera",
@@ -59,8 +68,8 @@ module.exports = () => ({
             matematica: "licenciatura-en-ciencias-matemáticas",
         },
         curso: {
-            self: "curso",
-            general: "cursos",
+            self: "cursos",
+            curso: "curso",
         },
         materia: "materia",
         resumenMateria: "resumen-materia",
@@ -228,14 +237,17 @@ module.exports = () => ({
                     c: "C",
                 },
                 keyLenguaje: (lenguaje) => lenguaje.toLowerCase(),
+                obtenerTitulo: (lenguaje) => `Librerías del lenguaje de ${lenguaje}`,
             },
             libreria: {
                 tags: "tags",
                 nombre: "nombreLibreria",
+                obtenerTitulo: (lenguaje, libreria) => `Librería ${libreria} de ${lenguaje}`,
             },
             modulo: {
                 tags: "tags",
                 nombre: "nombreModulo",
+                obtenerTitulo: (lenguaje, libreria, modulo) => `Módulo ${modulo} de la librería ${libreria} en ${lenguaje}`,
             },
             funcion: {
                 tags: "tags",

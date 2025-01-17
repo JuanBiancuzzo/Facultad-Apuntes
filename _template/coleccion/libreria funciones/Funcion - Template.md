@@ -2,18 +2,18 @@
     const { 
         DIRECTORIOS: { coleccion: { self: DIRECTORIO_COLECCION, funciones: DIRECTORIO_FUNCIONES } },
         TAGS: { 
-            coleccion: { funciones: TAGS_FUNCIONES },
+            coleccion: TAGS_COLECCION,
             nota: TAGS_NOTA,
         },
         DATOS: { 
             INVESTIGACION: DATOS_INVESTIGACION,
-            FUNCIONES: DATOS_PARAMETROS 
+            FUNCIONES: DATOS_FUNCIONES 
         },
     } = tp.user.constantes();
     const libreriaFunciones = tp.user.libreriaFunciones();
     const tagPorNombre = tp.user.tagPorNombre;
     const error = tp.user.error();
-    const DATOS_LENGUAJES = DATOS_PARAMETROS.lenguaje.lenguajes;
+    const DATOS_LENGUAJES = DATOS_FUNCIONES.lenguaje.lenguajes;
     const [ LENGUAJE, LIBRERIA, MODULO, FUNCION ] = libreriaFunciones.estructura;
 
     const dv = app.plugins.plugins.dataview.api;
@@ -26,15 +26,15 @@
 
     await libreriaFunciones.agregarDatos(tp, resultado);
 
-    let keyLenguaje = DATOS_PARAMETROS.lenguaje.keyLenguaje(resultado[LENGUAJE]);
+    let keyLenguaje = DATOS_FUNCIONES.lenguaje.keyLenguaje(resultado[LENGUAJE]);
 
-    let nombreArchivo = `Función ${resultado[FUNCION][DATOS_PARAMETROS.funcion.firma.nombreFuncion]}`
-    let tagPath = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[keyLenguaje]}`;
-    let dvLenguaje = dv.pages(`#${tagPath} and #${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes.self}`)
+    let nombreArchivo = `Función ${resultado[FUNCION][DATOS_FUNCIONES.funcion.firma.nombreFuncion]}`
+    let tagPath = `${TAGS_COLECCION.funciones.self}/${TAGS_COLECCION.funciones.lenguajes[keyLenguaje]}`;
+    let dvLenguaje = dv.pages(`#${tagPath} and #${TAGS_COLECCION.self}/${TAGS_COLECCION.funciones.self}/${TAGS_COLECCION.funciones.lenguajes.self}`)
         .first();
-    dvLenguaje = dv.page(dvLenguaje[DATOS_PARAMETROS.lenguaje.temaInvestigacion].path);
+    dvLenguaje = dv.page(dvLenguaje[DATOS_FUNCIONES.lenguaje.temaInvestigacion].path);
     let tagsInvestigacion = tp.user.obtenerTag(tp, dvLenguaje[DATOS_INVESTIGACION.tags])
-        .map(tag => `${tag}/${TAGS_FUNCIONES.lenguajes[keyLenguaje]}`);
+        .map(tag => `${tag}/${TAGS_COLECCION.funciones.lenguajes[keyLenguaje]}`);
 
     let carpeta = `${DIRECTORIO_COLECCION}/${DIRECTORIO_FUNCIONES.self}/${DIRECTORIO_FUNCIONES[keyLenguaje]}`;
 
@@ -52,19 +52,19 @@
     }
 
     nombreArchivo += ` de ${resultado[LIBRERIA]} en ${resultado[LENGUAJE]}`;
-    tagPath += `/${tagPorNombre(resultado[FUNCION][DATOS_PARAMETROS.funcion.firma.nombreFuncion])}`;
+    tagPath += `/${tagPorNombre(resultado[FUNCION][DATOS_FUNCIONES.funcion.firma.nombreFuncion])}`;
 
     await tp.file.move(`${carpeta}/${nombreArchivo}`, tArchivo);
 
     tR += "---\n";
     tR += tp.obsidian.stringifyYaml({
-        [DATOS_PARAMETROS.funcion.tags]: [
+        [DATOS_FUNCIONES.funcion.tags]: [
             tagPath,
-            `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.funcion}`,
+            `${TAGS_COLECCION.self}/${TAGS_COLECCION.funciones.self}/${TAGS_COLECCION.funciones.funcion}`,
             ... tagsInvestigacion,
             `${TAGS_NOTA.self}/${TAGS_NOTA.investigacion}`,
         ],
-        [DATOS_PARAMETROS.funcion.firma.self]: resultado[FUNCION],
+        [DATOS_FUNCIONES.funcion.firma.self]: resultado[FUNCION],
     });
     tR += "---\n";
 _%>

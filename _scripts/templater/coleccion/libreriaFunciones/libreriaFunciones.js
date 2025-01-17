@@ -9,7 +9,7 @@ const SALIR = "salir";
 async function actualizarDatos(tp, datos, respuesta) {
     const { 
         SIMBOLOS,
-        TAGS: { coleccion: { funciones: TAGS_FUNCIONES } }, 
+        TAGS: { coleccion: TAGS_COLECCION }, 
         DATOS: { FUNCIONES: DATOS_FUNCIONES } 
     } = tp.user.constantes(); 
 
@@ -39,8 +39,8 @@ async function actualizarDatos(tp, datos, respuesta) {
 
         case LIBRERIA:
             keyLenguaje = DATOS_FUNCIONES.lenguaje.keyLenguaje(datos[LENGUAJE]);
-            tagAcumulado = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[keyLenguaje]}`;
-            librerias = dv.pages(`#${tagAcumulado} and #${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.libreria}`)
+            tagAcumulado = `${TAGS_COLECCION.funciones.self}/${TAGS_COLECCION.funciones.lenguajes[keyLenguaje]}`;
+            librerias = dv.pages(`#${tagAcumulado} and #${TAGS_COLECCION.self}/${TAGS_COLECCION.funciones.self}/${TAGS_COLECCION.funciones.libreria}`)
                 .map(libreria => libreria[DATOS_FUNCIONES.libreria.nombre]);
 
             resultado = AGREGAR;
@@ -65,8 +65,8 @@ async function actualizarDatos(tp, datos, respuesta) {
 
         case MODULO:
             keyLenguaje = DATOS_FUNCIONES.lenguaje.keyLenguaje(datos[LENGUAJE]);
-            tagAcumulado = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[keyLenguaje]}/${tagPorNombre(datos[LIBRERIA])}`;
-            modulos = dv.pages(`#${tagAcumulado} and #${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.modulo}`)
+            tagAcumulado = `${TAGS_COLECCION.funciones.self}/${TAGS_COLECCION.funciones.lenguajes[keyLenguaje]}/${tagPorNombre(datos[LIBRERIA])}`;
+            modulos = dv.pages(`#${tagAcumulado} and #${TAGS_COLECCION.self}/${TAGS_COLECCION.funciones.self}/${TAGS_COLECCION.funciones.modulo}`)
                 .map(modulo => modulo[DATOS_FUNCIONES.modulo.nombre]);
 
             resultado = AGREGAR;
@@ -109,11 +109,7 @@ async function actualizarDatos(tp, datos, respuesta) {
 }
 
 function generarPreguntas(tp, datos) {
-    const { 
-        SIMBOLOS,
-        TAGS: { coleccion: { funciones: TAGS_FUNCIONES } }, 
-        DATOS: { FUNCIONES: DATOS_FUNCIONES } 
-    } = tp.user.constantes(); 
+    const { SIMBOLOS } = tp.user.constantes(); 
     const usoLenguaje = tp.user.lenguajes();
     let opciones = [], valores = [];
 
@@ -151,53 +147,112 @@ function generarPreguntas(tp, datos) {
     return { opciones: opciones, valores: valores };
 }
 
-async function crearArchivo(tp, nombre, carpeta, template) {
-    let tCarpeta;
-    try {
-        tCarpeta = await app.vault.createFolder(carpeta);
-    } catch {
-        tCarpeta = app.vault.getAbstractFileByPath(carpeta);
-    }
-
-    return await tp.file.create_new(
-        tp.file.find_tfile(template),
-        nombre, false, tCarpeta
-    );
-}
-
-async function agregarDatos(tp, datos) {
+async function crearLibreria(tp, lenguaje, libreria) {
     const { 
-        TEMPLATE: { coleccion: { funciones: TEMPLATE_FUNCIONES } }, 
+        TEMPLATE: { coleccion: TEMPLATE_COLECCION }, 
         DIRECTORIOS: { coleccion: DIR_COLECCION },
-        TAGS: { coleccion: { funciones: TAGS_FUNCIONES } }, 
-        DATOS: { FUNCIONES: DATOS_FUNCIONES },
+        TAGS: { coleccion:  TAGS_COLECCION, investigacion: TAGS_INVESTIGACION }, 
+        DATOS: { FUNCIONES: DATOS_FUNCIONES, INVESTIGACION: DATOS_INVESTIGACION },
     } = tp.user.constantes();
     const tagPorNombre = tp.user.tagPorNombre;
     const dv = app.plugins.plugins.dataview.api;
 
+    let keyLenguaje = DATOS_FUNCIONES.lenguaje.keyLenguaje(lenguaje);
+
+    let tagPath = `${TAGS_COLECCION.funciones.self}/${TAGS_COLECCION.funciones.lenguajes[keyLenguaje]}`;
+    let tagFuncion = `${TAGS_COLECCION.self}/${TAGS_COLECCION.funciones.self}`;
+    let dvLenguaje = dv.pages(`#${tagPath} and #${tagFuncion}/${TAGS_COLECCION.funciones.lenguajes.self}`)
+        .first();
+    dvLenguaje = dv.page(dvLenguaje[DATOS_FUNCIONES.lenguaje.temaInvestigacion].path);
+
+    let tags = [`${tagPath}/${tagPorNombre(libreria)}`, `${tagFuncion}/${TAGS_COLECCION.funciones.libreria}`];
+    if (dvLenguaje) {
+        let tagsInvestigacion = tp.user.obtenerTag(tp, dvLenguaje[DATOS_INVESTIGACION.tags])
+            .map(tag => `${tag}/${TAGS_COLECCION.funciones.lenguajes[keyLenguaje]}/${tagPorNombre(`${libreria}`)}`);
+        
+        tags.push(`${TAGS_INVESTIGACION.self}/${TAGS_INVESTIGACION.indice}`);
+        tags = tags.concat(tagsInvestigacion);
+    }
+
+    return {
+        metadata: {
+            [DATOS_FUNCIONES.libreria.tags]: tags,
+            [DATOS_FUNCIONES.libreria.nombre]: libreria,
+        },
+        carpeta: `${DIR_COLECCION.self}/${DIR_COLECCION.funciones.self}/${DIR_COLECCION.funciones[keyLenguaje]}/${libreria}`,
+        titulo: DATOS_FUNCIONES.libreria.obtenerTitulo(lenguaje, libreria),
+        texto: await tp.file.include(`[[${TEMPLATE_COLECCION.funciones.libreria}]]`),
+    };
+}
+
+async function crearModulo(tp, lenguaje, libreria, modulo) {
+    const { 
+        TEMPLATE: { coleccion: TEMPLATE_COLECCION }, 
+        DIRECTORIOS: { coleccion: DIR_COLECCION },
+        TAGS: { coleccion:  TAGS_COLECCION, investigacion: TAGS_INVESTIGACION }, 
+        DATOS: { FUNCIONES: DATOS_FUNCIONES, INVESTIGACION: DATOS_INVESTIGACION },
+    } = tp.user.constantes();
+    const tagPorNombre = tp.user.tagPorNombre;
+    const dv = app.plugins.plugins.dataview.api;
+
+    let keyLenguaje = DATOS_FUNCIONES.lenguaje.keyLenguaje(lenguaje);
+
+    let tagPath = `${TAGS_COLECCION.funciones.self}/${TAGS_COLECCION.funciones.lenguajes[keyLenguaje]}`;
+    let tagFuncion = `${TAGS_COLECCION.self}/${TAGS_COLECCION.funciones.self}`;
+    let dvLenguaje = dv.pages(`#${tagPath} and #${tagFuncion}/${TAGS_COLECCION.funciones.lenguajes.self}`)
+        .first();
+    dvLenguaje = dv.page(dvLenguaje[DATOS_FUNCIONES.lenguaje.temaInvestigacion].path);
+
+    let tags = [`${tagPath}/${tagPorNombre(`${libreria}/${modulo}`)}`, `${tagFuncion}/${TAGS_COLECCION.funciones.modulo}`];
+    if (dvLenguaje) {
+        let tagsInvestigacion = tp.user.obtenerTag(tp, dvLenguaje[DATOS_INVESTIGACION.tags])
+            .map(tag => `${tag}/${TAGS_COLECCION.funciones.lenguajes[keyLenguaje]}/${tagPorNombre(`${libreria}/${modulo}`)}`);
+        
+        tags.push(`${TAGS_INVESTIGACION.self}/${TAGS_INVESTIGACION.indice}`);
+        tags = tags.concat(tagsInvestigacion);
+    }
+
+    let dvLibreria = dv.pages(`#${tagPath}/${tagPorNombre(libreria)} and #${tagFuncion}/${TAGS_COLECCION.funciones.libreria}`)
+        .first();
+    let carpetaLibreria = dvLibreria
+        ? dvLibreria.file.folder
+        : `${DIR_COLECCION.self}/${DIR_COLECCION.funciones.self}/${DIR_COLECCION.funciones[keyLenguaje]}/${libreria}`;
+
+    return {
+        metadata: {
+            [DATOS_FUNCIONES.modulo.tags]: tags,
+            [DATOS_FUNCIONES.modulo.nombre]: modulo,
+        },
+        carpeta: `${carpetaLibreria}/${modulo}`,
+        titulo: DATOS_FUNCIONES.modulo.obtenerTitulo(lenguaje, libreria, modulo),
+        texto: await tp.file.include(`[[${TEMPLATE_COLECCION.funciones.modulo}]]`),
+    };
+}
+
+async function agregarDatos(tp, datos) {
+    const { 
+        TAGS: { coleccion: TAGS_COLECCION }, 
+        DATOS: { FUNCIONES: DATOS_FUNCIONES },
+    } = tp.user.constantes();
+    const tagPorNombre = tp.user.tagPorNombre;
+    const crearArchivo = tp.user.archivo();
+    const dv = app.plugins.plugins.dataview.api;
+
     let keyLenguaje = DATOS_FUNCIONES.lenguaje.keyLenguaje(datos[LENGUAJE]);
 
-    let tagLenguaje = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[keyLenguaje]}`;
+    let tagLenguaje = `${TAGS_COLECCION.funciones.self}/${TAGS_COLECCION.funciones.lenguajes[keyLenguaje]}`;
     let tagLibreria = `${tagLenguaje}/${tagPorNombre(datos[LIBRERIA])}`;
 
-    let nombreLibreria = `${datos[LENGUAJE]} - ${datos[LIBRERIA]}`;
-    let carpetaLibreria = `${DIR_COLECCION.self}/${DIR_COLECCION.funciones.self}/${DIR_COLECCION.funciones[keyLenguaje]}/${datos[LIBRERIA]}`;
-
-    let libreria = dv.pages(`#${tagLibreria} and #${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.libreria}`).first();
+    let libreria = dv.pages(`#${tagLibreria} and #${TAGS_COLECCION.self}/${TAGS_COLECCION.funciones.self}/${TAGS_COLECCION.funciones.libreria}`).first();
     if (!libreria) {
-        await crearArchivo(tp, nombreLibreria, carpetaLibreria, TEMPLATE_FUNCIONES.libreria);
-    } else {
-        carpetaLibreria = libreria.file.folder;
-    }
+        await crearArchivo.crear(tp, () => crearLibreria(tp, datos[LENGUAJE], datos[LIBRERIA]));
+    } 
 
     if (datos[MODULO]) {
         let tagModulo = `${tagLibreria}/${tagPorNombre(datos[MODULO])}`;
-        let nombreModulo = `${nombreLibreria} - ${datos[MODULO]}`;
-        let carpetaModulo = `${carpetaLibreria}/${datos[MODULO]}`;
-
-        let modulos = dv.pages(`#${tagModulo} and #${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.modulo}`);
+        let modulos = dv.pages(`#${tagModulo} and #${TAGS_COLECCION.self}/${TAGS_COLECCION.funciones.self}/${TAGS_COLECCION.funciones.modulo}`);
         if (!modulos.first()) {
-            await crearArchivo(tp, nombreModulo, carpetaModulo, TEMPLATE_FUNCIONES.modulo);
+            await crearArchivo.crear(tp, () => crearModulo(tp, datos[LENGUAJE], datos[LIBRERIA], datos[MODULO]));
         }
     }
 }
@@ -212,5 +267,9 @@ module.exports = () => ({
     actualizarDatos: actualizarDatos,
     generarPreguntas: generarPreguntas,
     agregarDatos: agregarDatos,
+    crear: {
+        libreria: crearLibreria,
+        modulo: crearModulo,
+    },
     estructura: [ LENGUAJE, LIBRERIA, MODULO, FUNCION ],
 });
