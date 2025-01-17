@@ -1,7 +1,10 @@
 <%*
-    const { SIMBOLOS, FORMATO_DIA, DIRECTORIOS, SECCIONES, TAGS, ETAPAS, TEMPLATE, DATOS: { 
-        INVESTIGACION: DATOS_INVESTIGACION, ARCHIVO: DATOS_ARCHIVO, REFERENCIAS: DATOS_REFERENCIA
-    } } = tp.user.constantes();
+    const { 
+        SIMBOLOS, FORMATO_DIA, DIRECTORIOS, SECCIONES, ETAPAS, TEMPLATE, 
+        TAGS: { investigacion: TAGS_INVESTIGACION, proyecto: TAGS_PROYECTO, nota: TAGS_NOTA },
+        DATOS: { INVESTIGACION: DATOS_INVESTIGACION, ARCHIVO: DATOS_ARCHIVO, REFERENCIAS: DATOS_REFERENCIA} 
+    } = tp.user.constantes();
+    const TAG_INDICE = `${TAGS_INVESTIGACION.self}/${TAGS_INVESTIGACION.indice}`;
     const SALIR = "salir";
 
     const referencia = tp.user.referencia();
@@ -15,7 +18,7 @@
     if (carpeta.last().trim() == DIRECTORIOS.imagenes) carpeta.pop();
 
     let directorioIndice = carpeta.join("/");
-    let indices = dv.pages(`"${directorioIndice}" and (#${TAGS.investigacion.self} or #${TAGS.proyecto.self}/${TAGS.proyecto.investigacion.self})`)
+    let indices = dv.pages(`"${directorioIndice}" and (#${TAG_INDICE} or #${TAGS_PROYECTO.self}/${TAGS_PROYECTO.investigacion.self})`)
         .filter(indice => indice.file.folder == directorioIndice);
 
     let indice;
@@ -31,19 +34,22 @@
 
     } else {
         let largoEsperado = directorioIndice.split("/").length + 1;
-        indices = dv.pages(`"${directorioIndice}" and (#${TAGS.investigacion.self} or #${TAGS.proyecto.self}/${TAGS.proyecto.investigacion.self})`)
+        indices = dv.pages(`"${directorioIndice}" and (#${TAG_INDICE} or #${TAGS_PROYECTO.self}/${TAGS_PROYECTO.investigacion.self})`)
             .filter(indice => indice.file.folder.split("/").length == largoEsperado)
             .filter(indice => {
                 let tags = indice[DATOS_INVESTIGACION.tags] ? indice[DATOS_INVESTIGACION.tags] : [];
                 return dv.array(tags)
-                    .filter(tag => tag.startsWith(TAGS.investigacion.general))
-                    .map(tag => tag.replace(`${TAGS.investigacion.general}/`, ""))
+                    .filter(tag => tag.startsWith(TAGS_INVESTIGACION.self) && !tag.includes(TAGS_INVESTIGACION.indice))
+                    .map(tag => tag.replace(`${TAGS_INVESTIGACION.self}/`, ""))
                     .some(tag => tag.split("/").length == 1);
-            }).map(indice => ({
-                tags: indice[DATOS_INVESTIGACION.tags]
-                    .filter(tag => tag.startsWith(TAGS.investigacion.general)),
-                indice: indice
-            }));
+            }).map(indice => {
+                let tags = indice[DATOS_INVESTIGACION.tags] ? indice[DATOS_INVESTIGACION.tags] : [];
+                return {
+                    tags: dv.array(tags)
+                        .filter(tag => tag.startsWith(TAGS_INVESTIGACION.self) && !tag.includes(TAGS_INVESTIGACION.indice)),
+                    indice: indice
+                };
+            });
 
         const confirmar = "confirmar";
         do {
@@ -67,7 +73,7 @@
             let indicesAgregar = {};
             for (let tag of resultado.tags) {
                 largoEsperado = tag.split("/").length + 1;
-                dv.pages(`#${tag} and #${TAGS.investigacion.self}`)
+                dv.pages(`#${tag} and #${TAG_INDICE}`)
                     .filter(indiceNuevo => {
                         let tagsNuevos = indiceNuevo[DATOS_INVESTIGACION.tags]
                             ? indiceNuevo[DATOS_INVESTIGACION.tags]
@@ -148,7 +154,7 @@
         [DATOS_ARCHIVO.referencias]: [],
         [DATOS_ARCHIVO.tags]: [ 
             ...tp.user.obtenerTag(tp, indice[DATOS_INVESTIGACION.tags]),
-            `${TAGS.nota.self}/${TAGS.nota.investigacion}`,
+            `${TAGS_NOTA.self}/${TAGS_NOTA.investigacion}`,
         ],
     });
     tR += "---\n";

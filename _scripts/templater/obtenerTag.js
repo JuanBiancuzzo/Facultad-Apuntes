@@ -9,7 +9,7 @@ function obtenerTag(tp, tags) {
         TAGS.resumenMateria,
         TAGS.coleccion.self,
         TAGS.referencias,
-        TAGS.proyecto.self,
+        `${TAGS.proyecto.self}/`,
         TAGS.nota.self,
     ];
 

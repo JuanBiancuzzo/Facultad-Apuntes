@@ -16,7 +16,7 @@
 
     let opciones = [], valores = [];
     let ingresarOpcion = (opcion, valor) => {
-        if (!opciones.includes(opcion)) {
+        if (!valores.includes(valor)) {
             opciones.push(opcion);
             valores.push(valor);
         }
@@ -78,7 +78,7 @@
     }
 
     const dv = app.plugins.plugins.dataview.api;
-    if (dv.pages(`"${carpeta}" and #${TAGS.investigacion.self}`).length > 0)  {
+    if (dv.pages(`"${carpeta}" and #${TAGS.investigacion.self}/${TAGS.investigacion.indice}`).length > 0)  {
         ingresarOpcion("Ingresar nota de investigación", TEMPLATE.nota.investigacion);
     }
     if (dv.pages(`"${carpeta}" and (#${TAGS.materia} or #${TAGS.resumenMateria})`).length > 0)  {
