@@ -2,6 +2,7 @@
 dia: 2024-07-12
 tags:
   - colección/libros
+  - colección/representante
 estado: Vamos a colectar libros que me interese analizar para poder aprender y referenciarlos
 ---
 # ¿Qué se va a investigar?

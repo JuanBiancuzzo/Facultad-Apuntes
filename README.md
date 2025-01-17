@@ -7,70 +7,70 @@ Cualquier corrección/ampliación de los contenidos en este proyecto, por favor 
 ## Carreras
 ---
 Un listado de materias y su estado dividido por carrera
-- [Ingeniería Electrónica](ingeniería%20electrónica/Ingeniería%20Electrónica.md)
-- [Ingeniería en Informática](ingeniería%20en%20informática/Ingeniería%20en%20Informática.md)
 - [Licenciatura en Ciencias de Datos](licenciatura%20en%20ciencias%20de%20datos/Licenciatura%20en%20Ciencias%20de%20Datos.md)
 - [Licenciatura en Ciencias Físicas](licenciatura%20en%20ciencias%20físicas/Licenciatura%20en%20Ciencias%20Físicas.md)
 - [Licenciatura en Ciencias Matemáticas](licenciatura%20en%20ciencias%20matemáticas/Licenciatura%20en%20Ciencias%20Matemáticas.md)
+- [Ingeniería electrónica](ingeniería%20electrónica/Ingeniería%20electrónica.md)
+- [Ingeniería en informática](ingeniería%20en%20informática/Ingeniería%20en%20informática.md)
 
-### Ingeniería Electrónica
+### Ingeniería electrónica
 ---
 Un listado de materias, sus códigos y su estado actual
 
-| Materia                                                                                                                                        | Código | Estado                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------------- | ------ | --------------------------------------------------- |
-| [Álgebra 2 A (8102)](ingeniería%20electrónica/Álgebra%202%20A%20(8102).md)                                                                     | 8102   | Falta terminar de pasar el resumen                  |
-| [Algoritmos y Programación 1 (9511)](ingeniería%20electrónica/Algoritmos%20y%20Programación%201%20(9511).md)                                   | 9511   | Voy por el 9do pdf                                  |
-| [Algoritmos y Programación 2 (9512)](ingeniería%20electrónica/Algoritmos%20y%20Programación%202%20(9512).md)                                   | 9512   | Falta hacer el resumen                              |
-| [Algoritmos y Programación 3 (9502)](ingeniería%20electrónica/Algoritmos%20y%20Programación%203%20(9502).md)                                   | 9502   | Falta hacer el resumen                              |
-| [Análisis de circuitos (8604)](ingeniería%20electrónica/adc/Análisis%20de%20circuitos%20(8604).md)                                             | 8604   | Terminado                                           |
-| [Análisis Matemático 2 A (8101)](ingeniería%20electrónica/Análisis%20Matemático%202%20A%20(8101).md)                                           | 8101   | Falta terminar de pasar el resumen                  |
-| [Análisis matemático 3 (6110)](ingeniería%20electrónica/analisis%203/Análisis%20matemático%203%20(6110).md)                                    | 6110   | Terminado                                           |
-| [Análisis Numérico (9504)](ingeniería%20electrónica/Análisis%20Numérico%20(9504).md)                                                           | 9504   | Falta pasar el resumen                              |
-| [Circuitos microelectrónicos (TB068)](ingeniería%20electrónica/circuitos/Circuitos%20microelectrónicos%20(TB068).md)                           | TB068  | Falta últimos temas                                 |
-| [Dispositivos semiconductores (8603)](ingeniería%20electrónica/dispo/Dispositivos%20semiconductores%20(8603).md)                               | 8603   | Terminado                                           |
-| [Electromagnetismo aplicado (TB069)](ingeniería%20electrónica/electro/Electromagnetismo%20aplicado%20(TB069).md)                               | TB069  | Voy a cursarla este cuatri                          |
-| [Física 1 A (8201)](ingeniería%20electrónica/Física%201%20A%20(8201).md)                                                                       | 8201   | Falta pasar el resumen                              |
-| [Física 2 A (8202)](ingeniería%20electrónica/Física%202%20A%20(8202).md)                                                                       | 8202   | Terminado                                           |
-| [Física 3 (8203)](ingeniería%20electrónica/fisica%203/Física%203%20(8203).md)                                                                  | 8203   | Falta pasar el resumen                              |
-| [Introducción a la ingeniería electronica (8602)](ingeniería%20electrónica/intro/Introducción%20a%20la%20ingeniería%20electronica%20(8602).md) | 8602   | Terminado                                           |
-| [Legislación y ejercicio profesional (9111)](ingeniería%20electrónica/legal/Legislación%20y%20ejercicio%20profesional%20(9111).md)             | 9111   | Falta terminar los últimos capítulos                |
-| [Probabilidad y Estadística B (8104)](ingeniería%20electrónica/Probabilidad%20y%20Estadística%20B%20(8104).md)                                 | 8104   | Terminado                                           |
-| [Redes de comunicaciones (TB067)](ingeniería%20electrónica/Redes%20de%20comunicaciones%20(TB067).md)                                           | TB067  | Terminado                                           |
-| [Seguridad ambiental y del trabajo (9704)](ingeniería%20electrónica/seguridad/Seguridad%20ambiental%20y%20del%20trabajo%20(9704).md)           | 9704   | Terminado                                           |
-| [Señales y sistemas (TB065)](ingeniería%20electrónica/señales/Señales%20y%20sistemas%20(TB065).md)                                             | TB065  | Falta pasar las presentaciones del último tema      |
-| [Taller de Programación (9508)](ingeniería%20electrónica/Taller%20de%20Programación%20(9508).md)                                               | 9508   | Falta pasar las presentaciones de los últimos temas |
-| [Taller de sistemas embebidos (TA134)](ingeniería%20electrónica/embebidos/Taller%20de%20sistemas%20embebidos%20(TA134).md)                     | TA134  | Voy a cursarla este cuatri                          |
-| [Técnica Digital (8601)](ingeniería%20electrónica/Técnica%20Digital%20(8601).md)                                                               | 8601   | Terminado                                           |
+| Materia                                                                                                                                 | Código | Estado                                              |
+| --------------------------------------------------------------------------------------------------------------------------------------- | ------ | --------------------------------------------------- |
+| [Álgebra 2 A](ingeniería%20electrónica/Álgebra%202%20A%20(8102).md)                                                                     | 8102   | Falta terminar de pasar el resumen                  |
+| [Algoritmos y Programación 1](ingeniería%20electrónica/Algoritmos%20y%20Programación%201%20(9511).md)                                   | 9511   | Voy por el 9do pdf                                  |
+| [Algoritmos y Programación 2](ingeniería%20electrónica/Algoritmos%20y%20Programación%202%20(9512).md)                                   | 9512   | Falta hacer el resumen                              |
+| [Algoritmos y Programación 3](ingeniería%20electrónica/Algoritmos%20y%20Programación%203%20(9502).md)                                   | 9502   | Falta hacer el resumen                              |
+| [Análisis de circuitos](ingeniería%20electrónica/adc/Análisis%20de%20circuitos%20(8604).md)                                             | 8604   | Terminado                                           |
+| [Análisis Matemático 2 A](ingeniería%20electrónica/Análisis%20Matemático%202%20A%20(8101).md)                                           | 8101   | Falta terminar de pasar el resumen                  |
+| [Análisis matemático 3](ingeniería%20electrónica/analisis%203/Análisis%20matemático%203%20(6110).md)                                    | 6110   | Terminado                                           |
+| [Análisis Numérico](ingeniería%20electrónica/Análisis%20Numérico%20(9504).md)                                                           | 9504   | Falta pasar el resumen                              |
+| [Circuitos microelectrónicos](ingeniería%20electrónica/circuitos/Circuitos%20microelectrónicos%20(TB068).md)                            | TB068  | Falta últimos temas                                 |
+| [Dispositivos semiconductores](ingeniería%20electrónica/dispo/Dispositivos%20semiconductores%20(8603).md)                               | 8603   | Terminado                                           |
+| [Electromagnetismo aplicado](ingeniería%20electrónica/electro/Electromagnetismo%20aplicado%20(TB069).md)                                | TB069  | Voy a cursarla este cuatri                          |
+| [Física 1 A](ingeniería%20electrónica/Física%201%20A%20(8201).md)                                                                       | 8201   | Falta pasar el resumen                              |
+| [Física 2 A](ingeniería%20electrónica/Física%202%20A%20(8202).md)                                                                       | 8202   | Terminado                                           |
+| [Física 3](ingeniería%20electrónica/fisica%203/Física%203%20(8203).md)                                                                  | 8203   | Falta pasar el resumen                              |
+| [Introducción a la ingeniería electronica](ingeniería%20electrónica/intro/Introducción%20a%20la%20ingeniería%20electronica%20(8602).md) | 8602   | Terminado                                           |
+| [Legislación y ejercicio profesional](ingeniería%20electrónica/legal/Legislación%20y%20ejercicio%20profesional%20(9111).md)             | 9111   | Falta terminar los últimos capítulos                |
+| [Probabilidad y Estadística B](ingeniería%20electrónica/Probabilidad%20y%20Estadística%20B%20(8104).md)                                 | 8104   | Terminado                                           |
+| [Redes de comunicaciones](ingeniería%20electrónica/Redes%20de%20comunicaciones%20(TB067).md)                                            | TB067  | Terminado                                           |
+| [Seguridad ambiental y del trabajo](ingeniería%20electrónica/seguridad/Seguridad%20ambiental%20y%20del%20trabajo%20(9704).md)           | 9704   | Terminado                                           |
+| [Señales y sistemas](ingeniería%20electrónica/señales/Señales%20y%20sistemas%20(TB065).md)                                              | TB065  | Falta pasar las presentaciones del último tema      |
+| [Taller de Programación](ingeniería%20electrónica/Taller%20de%20Programación%20(9508).md)                                               | 9508   | Falta pasar las presentaciones de los últimos temas |
+| [Taller de sistemas embebidos](ingeniería%20electrónica/embebidos/Taller%20de%20sistemas%20embebidos%20(TA134).md)                      | TA134  | Voy a cursarla este cuatri                          |
+| [Técnica Digital](ingeniería%20electrónica/Técnica%20Digital%20(8601).md)                                                               | 8601   | Terminado                                           |
 
-### Ingeniería en Informática
+### Ingeniería en informática
 ---
 Un listado de materias, sus códigos y su estado actual
 
 | Materia                                                                                                                                     | Código | Estado                                              |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | ------ | --------------------------------------------------- |
-| [Álgebra 2 A (6108)](ingeniería%20en%20informática/algebra%202/Álgebra%202%20A%20(6108).md)                                                 | 6108   | Falta terminar de pasar el resumen                  |
-| [Algoritmos y programación 1 (7540)](ingeniería%20en%20informática/algo%201/Algoritmos%20y%20programación%201%20(7540).md)                  | 7540   | Voy por el 9do pdf                                  |
-| [Algoritmos y programación 2 (7541)](ingeniería%20en%20informática/algo%202/Algoritmos%20y%20programación%202%20(7541).md)                  | 7541   | Falta hacer el resumen                              |
-| [Algoritmos y programación 3 (7507)](ingeniería%20en%20informática/algo%203/Algoritmos%20y%20programación%203%20(7507).md)                  | 7507   | Falta hacer el resumen                              |
-| [Análisis de Circuitos (6606)](ingeniería%20en%20informática/Análisis%20de%20Circuitos%20(6606).md)                                         | 6606   | Terminado                                           |
-| [Análisis de la información (7509)](ingeniería%20en%20informática/aninfo/Análisis%20de%20la%20información%20(7509).md)                      | 7509   | Terminado                                           |
-| [Análisis matemático 2 A (6103)](ingeniería%20en%20informática/analisis%202/Análisis%20matemático%202%20A%20(6103).md)                      | 6103   | Falta terminar de pasar el resumen                  |
-| [Análisis Matemático 3 A (6110)](ingeniería%20en%20informática/Análisis%20Matemático%203%20A%20(6110).md)                                   | 6110   | Terminado                                           |
-| [Análisis numérico (7512)](ingeniería%20en%20informática/numerico/Análisis%20numérico%20(7512).md)                                          | 7512   | Falta pasar el resumen                              |
-| [Base de datos (TA044)](ingeniería%20en%20informática/bdd/Base%20de%20datos%20(TA044).md)                                                   | TA044  | Falta ampliar                                       |
-| [Estructura del computador (6670)](ingeniería%20en%20informática/estructura/Estructura%20del%20computador%20(6670).md)                      | 6670   | Terminado                                           |
-| [Física 1 A (6201)](ingeniería%20en%20informática/fisica%201/Física%201%20A%20(6201).md)                                                    | 6201   | Falta pasar el resumen                              |
-| [Física 2 A (6203)](ingeniería%20en%20informática/fisica%202/Física%202%20A%20(6203).md)                                                    | 6203   | Terminado                                           |
-| [Física 3 D (6215)](ingeniería%20en%20informática/Física%203%20D%20(6215).md)                                                               | 6215   | Falta pasar el resumen                              |
-| [Matemática discreta (6107)](ingeniería%20en%20informática/discreta/Matemática%20discreta%20(6107).md)                                      | 6107   | Terminado                                           |
-| [Organización de datos (7506)](ingeniería%20en%20informática/orga/Organización%20de%20datos%20(7506).md)                                    | 7506   | Falta pasar los videos de los últimos temas         |
-| [Probabilidad y estadística B (6109)](ingeniería%20en%20informática/proba/Probabilidad%20y%20estadística%20B%20(6109).md)                   | 6109   | Terminado                                           |
-| [Programación Concurrente (TB026)](ingeniería%20en%20informática/concurrentes/Programación%20Concurrente%20(TB026).md)                      | TB026  | Sin empezar                                         |
-| [Redes (TA048)](ingeniería%20en%20informática/redes/Redes%20(TA048).md)                                                                     | TA048  | Terminado                                           |
-| [Sistemas Distribuidos 1 (TA050)](ingeniería%20en%20informática/distribuidos/Sistemas%20Distribuidos%201%20(TA050).md)                      | TA050  | Sin empezar                                         |
-| [Sistemas operativos (7508)](ingeniería%20en%20informática/sisop/Sistemas%20operativos%20(7508).md)                                         | 7508   | Terminado                                           |
-| [Taller de programación 1 (9508)](ingeniería%20en%20informática/taller/Taller%20de%20programación%201%20(9508).md)                          | 9508   | Falta pasar las presentaciones de los últimos temas |
+| [Álgebra 2 A](ingeniería%20en%20informática/algebra%202/Álgebra%202%20A%20(6108).md)                                                        | 6108   | Falta terminar de pasar el resumen                  |
+| [Algoritmos y programación 1](ingeniería%20en%20informática/algo%201/Algoritmos%20y%20programación%201%20(7540).md)                         | 7540   | Voy por el 9do pdf                                  |
+| [Algoritmos y programación 2](ingeniería%20en%20informática/algo%202/Algoritmos%20y%20programación%202%20(7541).md)                         | 7541   | Falta hacer el resumen                              |
+| [Algoritmos y programación 3](ingeniería%20en%20informática/algo%203/Algoritmos%20y%20programación%203%20(7507).md)                         | 7507   | Falta hacer el resumen                              |
+| [Análisis de Circuitos](ingeniería%20en%20informática/Análisis%20de%20Circuitos%20(6606).md)                                                | 6606   | Terminado                                           |
+| [Análisis de la información](ingeniería%20en%20informática/aninfo/Análisis%20de%20la%20información%20(7509).md)                             | 7509   | Terminado                                           |
+| [Análisis matemático 2 A](ingeniería%20en%20informática/analisis%202/Análisis%20matemático%202%20A%20(6103).md)                             | 6103   | Falta terminar de pasar el resumen                  |
+| [Análisis Matemático 3 A](ingeniería%20en%20informática/Análisis%20Matemático%203%20A%20(6110).md)                                          | 6110   | Terminado                                           |
+| [Análisis numérico](ingeniería%20en%20informática/numerico/Análisis%20numérico%20(7512).md)                                                 | 7512   | Falta pasar el resumen                              |
+| [Base de datos](ingeniería%20en%20informática/bdd/Base%20de%20datos%20(TA044).md)                                                           | TA044  | Falta ampliar                                       |
+| [Estructura del computador](ingeniería%20en%20informática/estructura/Estructura%20del%20computador%20(6670).md)                             | 6670   | Terminado                                           |
+| [Física 1 A](ingeniería%20en%20informática/fisica%201/Física%201%20A%20(6201).md)                                                           | 6201   | Falta pasar el resumen                              |
+| [Física 2 A](ingeniería%20en%20informática/fisica%202/Física%202%20A%20(6203).md)                                                           | 6203   | Terminado                                           |
+| [Física 3 D](ingeniería%20en%20informática/Física%203%20D%20(6215).md)                                                                      | 6215   | Falta pasar el resumen                              |
+| [Matemática discreta](ingeniería%20en%20informática/discreta/Matemática%20discreta%20(6107).md)                                             | 6107   | Terminado                                           |
+| [Organización de datos](ingeniería%20en%20informática/orga/Organización%20de%20datos%20(7506).md)                                           | 7506   | Falta pasar los videos de los últimos temas         |
+| [Probabilidad y estadística B](ingeniería%20en%20informática/proba/Probabilidad%20y%20estadística%20B%20(6109).md)                          | 6109   | Terminado                                           |
+| [Programación Concurrente](ingeniería%20en%20informática/concurrentes/Programación%20Concurrente%20(TB026).md)                              | TB026  | Sin empezar                                         |
+| [Redes](ingeniería%20en%20informática/redes/Redes%20(TA048).md)                                                                             | TA048  | Terminado                                           |
+| [Sistemas Distribuidos 1](ingeniería%20en%20informática/distribuidos/Sistemas%20Distribuidos%201%20(TA050).md)                              | TA050  | Sin empezar                                         |
+| [Sistemas operativos](ingeniería%20en%20informática/sisop/Sistemas%20operativos%20(7508).md)                                                | 7508   | Terminado                                           |
+| [Taller de programación 1](ingeniería%20en%20informática/taller/Taller%20de%20programación%201%20(9508).md)                                 | 9508   | Falta pasar las presentaciones de los últimos temas |
 | [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md) | TA053  | Estamos buscando información sobre el tema          |
 
 ### Licenciatura en Ciencias de Datos
@@ -172,10 +172,10 @@ Estos son los cursos que vaya haciendo
 
 | Curso                                                                                                                                                                                    | Estado                              |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| [Computation Structures](cursos/computation%20structures/Computation%20Structures.md)                                                                                                    | Sin empezar                         |
-| [Performance Engineering of Software Systems](cursos/performance%20engineering%20of%20software%20systems/Performance%20Engineering%20of%20Software%20Systems.md)                         | Sin empezar                         |
 | [Software Construction](cursos/software%20construction/Software%20Construction.md)                                                                                                       | Sin empezar                         |
+| [Performance Engineering of Software Systems](cursos/performance%20engineering%20of%20software%20systems/Performance%20Engineering%20of%20Software%20Systems.md)                         | Sin empezar                         |
 | [Introduction to Algorithms](cursos/introduction%20to%20algorithms/Introduction%20to%20Algorithms.md)                                                                                    | Empezando el curso                  |
+| [Computation Structures](cursos/computation%20structures/Computation%20Structures.md)                                                                                                    | Sin empezar                         |
 | [CS50's Introduction to Cybersecurity](cursos/cs50's%20introduction%20to%20cybersecurity/CS50's%20Introduction%20to%20Cybersecurity.md)                                                  | Sin empezar                         |
 | [Ciencia de datos para salud mental y psicología](cursos/ciencia%20de%20datos%20para%20salud%20mental%20y%20psicología/Ciencia%20de%20datos%20para%20salud%20mental%20y%20psicología.md) | Falta ver los temas más en detalles |
 ### Colecciones

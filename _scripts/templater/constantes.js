@@ -75,6 +75,7 @@ module.exports = () => ({
         },
         coleccion: {
             self: "colección",
+            representante: "representante",
             funciones: {
                 self: "funciones",
                 lenguajes: {
@@ -176,6 +177,8 @@ module.exports = () => ({
             referencias: "referencias",
             equivalencia: "equivalencia",
             tags: "tags",
+            codigoMateria: "codigo",
+            estado: "estado",
             nombre: "nombreMateria",
             nombreReudico: "nombreReducido",
         },
@@ -184,10 +187,15 @@ module.exports = () => ({
             tags: "tags",
             dia: "dia",
             aliases: "aliases",
+            equivalencia: "equivalente",
             referencias: "referencias",
         },
         CURSO: {
             nombre: "nombreCurso",
+            dia: "dia",
+            etapa: "etapa",
+            estado: "estado",
+            tags: "tags",
         },
         RESUMEN: {
             numero: "capitulo",
@@ -200,8 +208,6 @@ module.exports = () => ({
             estado: "estado",
             tags: "tags",
         },
-        GDD: {
-        },
         ARCHIVO: {
             etapa: "etapa",
             tags: "tags",
@@ -211,6 +217,11 @@ module.exports = () => ({
         },
         PROGRESO: {
             dia: "dia",
+            tags: "tags",
+        },
+        COLECCION: {
+            dia: "dia",
+            estado: "estado",
             tags: "tags",
         },
         BLOQUES_MATEMATICA: {
