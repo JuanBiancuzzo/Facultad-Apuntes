@@ -170,14 +170,14 @@ Estos proyectos tienen como objetivo crear un GDD y mostrar el desarrollo del ju
 ---
 Estos son los cursos que vaya haciendo
 
-| Curso                                                                                                                                                                                    | Estado                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| [Computation Structures](cursos/computation%20structures/Computation%20Structures.md)                                                                                                    | Sin empezar                         |
-| [Performance Engineering of Software Systems](cursos/performance%20engineering%20of%20software%20systems/Performance%20Engineering%20of%20Software%20Systems.md)                         | Sin empezar                         |
-| [Software Construction](cursos/software%20construction/Software%20Construction.md)                                                                                                       | Sin empezar                         |
-| [Introduction to Algorithms](cursos/introduction%20to%20algorithms/Introduction%20to%20Algorithms.md)                                                                                    | Empezando el curso                  |
-| [CS50's Introduction to Cybersecurity](cursos/cs50's%20introduction%20to%20cybersecurity/CS50's%20Introduction%20to%20Cybersecurity.md)                                                  | Sin empezar                         |
-| [Ciencia de datos para salud mental y psicología](cursos/ciencia%20de%20datos%20para%20salud%20mental%20y%20psicología/Ciencia%20de%20datos%20para%20salud%20mental%20y%20psicología.md) | Falta ver los temas más en detalles |
+| Curso                                                                                                                                                                                    | Estado                                                  |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| [Computation Structures](cursos/computation%20structures/Computation%20Structures.md)                                                                                                    | Sin empezar                                             |
+| [Performance Engineering of Software Systems](cursos/performance%20engineering%20of%20software%20systems/Performance%20Engineering%20of%20Software%20Systems.md)                         | Sin empezar                                             |
+| [Software Construction](cursos/software%20construction/Software%20Construction.md)                                                                                                       | Sin empezar                                             |
+| [Introduction to Algorithms](cursos/introduction%20to%20algorithms/Introduction%20to%20Algorithms.md)                                                                                    | Terminando la lecture 4, avanzando en la segunda unidad |
+| [CS50's Introduction to Cybersecurity](cursos/cs50's%20introduction%20to%20cybersecurity/CS50's%20Introduction%20to%20Cybersecurity.md)                                                  | Sin empezar                                             |
+| [Ciencia de datos para salud mental y psicología](cursos/ciencia%20de%20datos%20para%20salud%20mental%20y%20psicología/Ciencia%20de%20datos%20para%20salud%20mental%20y%20psicología.md) | Falta ver los temas más en detalles                     |
 ### Colecciones
 ---
 Estos proyectos se basan en recolectar información distinto de un tema de investigación ya que este busca recolectar información con respecto a un tema, mientras que este es para tener información para temas en general

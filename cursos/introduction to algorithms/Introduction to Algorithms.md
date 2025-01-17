@@ -1,7 +1,7 @@
 ---
 dia: 2024-12-19
 etapa: sin-empezar
-estado: Empezando el curso
+estado: Terminando la lecture 4, avanzando en la segunda unidad
 nombreAutores:
   - apellido: Demaine
     nombre: Erik
