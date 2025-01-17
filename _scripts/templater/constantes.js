@@ -187,6 +187,7 @@ module.exports = () => ({
             referencias: "referencias",
         },
         CURSO: {
+            nombre: "nombreCurso",
         },
         RESUMEN: {
             numero: "capitulo",

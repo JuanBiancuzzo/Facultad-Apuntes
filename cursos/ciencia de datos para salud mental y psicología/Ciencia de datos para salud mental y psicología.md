@@ -10,6 +10,7 @@ tags:
 referencias:
   - "631"
   - "632"
+nombreCurso: Ciencia de datos para salud mental y psicología
 ---
 # Descripción
 ---

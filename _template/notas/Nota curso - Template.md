@@ -1,7 +1,12 @@
 <%*
-    const { FORMATO_DIA, DIRECTORIOS, SECCIONES, TAGS, ETAPAS, TEMPLATE, DATOS: { 
-        RESUMEN: DATOS_RESUMEN, ARCHIVO: DATOS_ARCHIVO, REFERENCIAS: DATOS_REFERENCIA
-    } } = tp.user.constantes();
+    const { 
+        FORMATO_DIA, DIRECTORIOS, SECCIONES, ETAPAS, TEMPLATE, SIMBOLOS,
+        TAGS: { curso: TAGS_CURSO, nota: TAGS_NOTA }, 
+        DATOS: { 
+            RESUMEN: DATOS_RESUMEN, ARCHIVO: DATOS_ARCHIVO, 
+            REFERENCIAS: DATOS_REFERENCIA, CURSO: DATOS_CURSO,
+        } 
+    } = tp.user.constantes();
     const SALIR = "salir";
 
     const referencia = tp.user.referencia();
@@ -15,7 +20,7 @@
     let directorioCurso = DIRECTORIOS.curso;
     if (carpeta.at(1)) directorioCurso += `/${carpeta.at(1)}`;
 
-    let cursos = dv.pages(`"${directorioCurso}" and #${TAGS.curso.self}`);
+    let cursos = dv.pages(`"${directorioCurso}" and #${TAGS_CURSO.self}/${TAGS_CURSO.curso}`);
     let curso = cursos.first();
     if (cursos.length > 1) {
         curso = await preguntar.suggester(
@@ -27,12 +32,12 @@
 
     let directorioResumen = curso.file.folder;
     if (carpeta.at(2)) directorioResumen += `/${carpeta.at(2)}`;
-    let resumenes = dv.pages(`"${directorioResumen}" and #${TAGS.resumenCurso}`)
+    let resumenes = dv.pages(`"${directorioResumen}" and #${TAGS_CURSO.self}/${TAGS_CURSO.resumen}`)
         .sort(resumen => parseInt(resumen[DATOS_RESUMEN.numero], 10));
     let resumen = resumenes.first();
     if (resumenes.length > 1) {
         resumen = await preguntar.suggester(
-            tp, ({ [DATOS_RESUMEN.parte]: parte, file }) => `${file.folder.split("/").pop()} ${parte ? `parte ${parte}` : ""}`, 
+            tp, ({ [DATOS_RESUMEN.parte]: parte, [DATOS_RESUMEN.nombre]: nombre }) => `${nombre} ${parte ? `parte ${parte}` : ""}`, 
             resumenes, "Que tema se quiere agregar esta nota?",
             error.Quit("No se ingresó en que tema se va a crear la nota")
         );
@@ -97,12 +102,12 @@
             let opciones = [], valores = [];
             for (let { numero, datos: datosReferencia, usado } of datos.uso) {
                 opciones.push(numero);
-                let estado = usado ? "⊖" : "⊕";
+                let estado = usado ? SIMBOLOS.sacar : SIMBOLOS.agregar;
                 valores.push(` ${estado} ${referencia.describir(tp, datosReferencia)}`);
             }
 
             opciones.push(SALIR);
-            valores.push(" ↶ Confirmar datos");
+            valores.push(` ${SIMBOLOS.volver} Confirmar datos`);
             return { opciones: opciones, valores: valores };
         }, "Que referencias que quiere usar?",
         { uso: referenciasResumen.values }
@@ -119,7 +124,7 @@
         [DATOS_ARCHIVO.referencias]: referenciasUsar,
         [DATOS_ARCHIVO.tags]: [
             ...tp.user.obtenerTag(tp, resumen[DATOS_ARCHIVO.tags]), 
-            `${TAGS.nota.self}/${TAGS.nota.curso}`,
+            `${TAGS_NOTA.self}/${TAGS_NOTA.curso}`,
         ],
     });
     tR += "---\n";
