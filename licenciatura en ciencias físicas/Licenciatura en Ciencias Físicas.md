@@ -1,6 +1,7 @@
 ---
 tags:
   - carrera/licenciatura-en-ciencias-físicas
+  - facultad/carrera
 estado: Todavía no empecé a tomar apuntes
 planes:
   - "1992"

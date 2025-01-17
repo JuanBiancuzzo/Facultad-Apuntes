@@ -2,7 +2,7 @@
 capitulo: 3
 tags:
   - ingeniería-electrónica/circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
-  - resumen-materia/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
+  - facultad/resumen
 referencias:
   - "430"
   - "442"
@@ -10,6 +10,7 @@ referencias:
   - "448"
   - "450"
   - "452"
+nombreResumen: Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias
 ---
 # Índice 
 ---

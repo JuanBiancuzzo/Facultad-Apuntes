@@ -2,7 +2,8 @@
 capitulo: 3
 tags:
   - ingeniería-electrónica/dispo/Diodo-de-Juntura-PN
-  - resumen-materia/Diodo-de-Juntura-PN
+  - facultad/resumen
+nombreResumen: Diodo de Juntura PN
 ---
 # Índice 
 ---

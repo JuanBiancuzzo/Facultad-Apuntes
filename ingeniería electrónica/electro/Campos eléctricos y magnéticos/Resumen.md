@@ -2,7 +2,8 @@
 capitulo: 1
 tags:
   - ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
-  - resumen-materia/Campos-eléctricos-y-magnéticos
+  - facultad/resumen
+nombreResumen: Campos eléctricos y magnéticos
 ---
 # Índice
 ---

@@ -2,7 +2,8 @@
 capitulo: 5
 tags:
   - ingeniería-en-informática/concurrentes/Sincronización
-  - resumen-materia/Sincronización
+  - facultad/resumen
+nombreResumen: Sincronización
 ---
 # Índice
 ---

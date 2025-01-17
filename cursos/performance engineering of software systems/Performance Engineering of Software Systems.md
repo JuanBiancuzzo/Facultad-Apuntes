@@ -16,6 +16,7 @@ tipoCita: Curso
 tags:
   - referencia/curso
   - curso/performance-engineering-of-software-systems
+  - cursos/curso
 ---
 # Descripción
 ---

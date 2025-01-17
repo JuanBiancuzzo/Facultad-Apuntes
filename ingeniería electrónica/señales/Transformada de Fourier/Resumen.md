@@ -2,7 +2,8 @@
 capitulo: 4
 tags:
   - ingeniería-electrónica/señales/Transformada-de-Fourier
-  - resumen-materia/Transformada-de-Fourier
+  - facultad/resumen
+nombreResumen: Transformada de Fourier
 ---
 # Índice 
 ---

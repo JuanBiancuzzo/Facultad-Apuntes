@@ -3,7 +3,8 @@ capitulo: 2
 tags:
   - ingeniería-en-informática/numerico/Ecuaciones-no-lineales
   - ingeniería-electrónica/numerico/Ecuaciones-no-lineales
-  - resumen-materia/Ecuaciones-no-lineales
+  - facultad/resumen
+nombreResumen: Ecuaciones no lineales
 ---
 # Índice 
 ---

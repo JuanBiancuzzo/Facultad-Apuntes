@@ -2,7 +2,8 @@
 capitulo: 2
 tags:
   - ingeniería-en-informática/concurrentes/Rust
-  - resumen-materia/Rust
+  - facultad/resumen
+nombreResumen: Rust
 ---
 # Índice
 ---

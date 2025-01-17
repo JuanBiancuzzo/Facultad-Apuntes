@@ -6,11 +6,12 @@ parte: 0
 profesores:
   - 0
 tags:
-  - resumen-curso/curso
   - referencia/cursotema
   - cursos/cs50s-introduction-to-cybersecurity/Securing-Data
+  - cursos/resumen
 curso: "[[cursos/cs50's introduction to cybersecurity/CS50's Introduction to Cybersecurity|CS50's Introduction to Cybersecurity]]"
 tipoCita: CursoTema
+nombreResumen: Securing Data
 ---
 # Índice
 ---

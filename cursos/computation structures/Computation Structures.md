@@ -14,6 +14,7 @@ tipoCita: Curso
 tags:
   - referencia/curso
   - curso/computation-structures
+  - cursos/curso
 ---
 # Descripción
 ---

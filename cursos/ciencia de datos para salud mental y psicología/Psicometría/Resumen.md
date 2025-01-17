@@ -1,7 +1,7 @@
 ---
 capitulo: 1
 tags:
-  - resumen-curso/curso
+  - cursos/resumen
   - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Psicometría
 referencias:
   - "643"
@@ -13,6 +13,7 @@ referencias:
   - "649"
   - "654"
 etapa: sin-empezar
+nombreResumen: Psicometría
 ---
 # Índice
 ---

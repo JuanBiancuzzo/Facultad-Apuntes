@@ -2,7 +2,8 @@
 capitulo: 1
 tags:
   - ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
-  - resumen-materia/Herramientas-de-Diseño
+  - facultad/resumen
+nombreResumen: Herramientas de Diseño
 ---
 # Índice
 ---

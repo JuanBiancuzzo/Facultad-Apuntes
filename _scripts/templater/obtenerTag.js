@@ -1,12 +1,14 @@
 function obtenerTag(tp, tags) {
+    if (!tags) return [];
+
     const { TAGS } = tp.user.constantes();
     const tagsAFiltrar = [
         `${TAGS.investigacion.self}/${TAGS.investigacion.indice}`,
         `${TAGS.curso.self}/${TAGS.curso.curso}`,
-        TAGS.resumenCurso,
-        TAGS.carrera.self,
-        TAGS.materia,
-        TAGS.resumenMateria,
+        `${TAGS.curso.self}/${TAGS.curso.resumen}`,
+        `${TAGS.facultad.self}/${TAGS.facultad.carrera.self}`,
+        `${TAGS.facultad.self}/${TAGS.facultad.materia}`,
+        `${TAGS.facultad.self}/${TAGS.facultad.resumen}`,
         TAGS.coleccion.self,
         TAGS.referencias,
         `${TAGS.proyecto.self}/`,

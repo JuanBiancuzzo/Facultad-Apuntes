@@ -2,7 +2,8 @@
 capitulo: 9
 tags:
   - ingeniería-en-informática/orga/Machine-learning
-  - resumen-materia/Machine-learning
+  - facultad/resumen
+nombreResumen: Machine learning
 ---
 # Índice 
 ---

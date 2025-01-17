@@ -2,7 +2,8 @@
 capitulo: 1
 tags:
   - ingeniería-en-informática/discreta/Álgebra-de-conjuntos
-  - resumen-materia/Álgebra-de-conjuntos
+  - facultad/resumen
+nombreResumen: Álgebra de conjuntos
 ---
 # Índice 
 ---

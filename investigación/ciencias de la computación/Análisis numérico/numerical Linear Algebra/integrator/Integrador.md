@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-08
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/ciencias-de-la-computación/Análisis-numérico/matemática/Numerical-Linear-Algebra/integrator
   - investigación/matemática/Análisis-numérico/Numerical-Linear-Algebra/integrator

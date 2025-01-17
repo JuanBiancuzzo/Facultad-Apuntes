@@ -3,7 +3,8 @@ capitulo: 1
 tags:
   - ingeniería-en-informática/algo-2/General
   - ingeniería-electrónica/algo-2/General
-  - resumen-materia/General
+  - facultad/resumen
+nombreResumen: General
 ---
 # Índice 
 ---

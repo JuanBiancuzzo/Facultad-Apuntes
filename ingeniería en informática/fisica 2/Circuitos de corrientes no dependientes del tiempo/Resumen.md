@@ -3,7 +3,8 @@ capitulo: 4
 tags:
   - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
   - ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
-  - resumen-materia/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - facultad/resumen
+nombreResumen: Circuitos de corrientes no dependientes del tiempo
 ---
 # Índice 
 ---

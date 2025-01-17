@@ -2,7 +2,8 @@
 capitulo: 5
 tags:
   - ingeniería-electrónica/electro/Antenas
-  - resumen-materia/Antenas
+  - facultad/resumen
+nombreResumen: Antenas
 ---
 # Índice
 ---

@@ -2,7 +2,8 @@
 capitulo: 1
 tags:
   - ingeniería-electrónica/señales/Señales-y-sistemas
-  - resumen-materia/Señales-y-sistemas
+  - facultad/resumen
+nombreResumen: Señales y sistemas
 ---
 # Índice 
 ---

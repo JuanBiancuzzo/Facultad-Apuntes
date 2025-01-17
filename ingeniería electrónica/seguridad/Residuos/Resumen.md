@@ -2,7 +2,8 @@
 capitulo: 11
 tags:
   - ingeniería-electrónica/seguridad/Residuos
-  - resumen-materia/Residuos
+  - facultad/resumen
+nombreResumen: Residuos
 ---
 # Índice 
 ---

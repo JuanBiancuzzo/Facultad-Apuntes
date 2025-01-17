@@ -2,7 +2,8 @@
 capitulo: 1
 tags:
   - ingeniería-en-informática/bdd/General
-  - resumen-materia/General
+  - facultad/resumen
+nombreResumen: General
 ---
 # Índice 
 ---

@@ -2,7 +2,8 @@
 capitulo: 3
 tags:
   - ingeniería-electrónica/legal/Contratos
-  - resumen-materia/Contratos
+  - facultad/resumen
+nombreResumen: Contratos
 ---
 # Índice 
 ---

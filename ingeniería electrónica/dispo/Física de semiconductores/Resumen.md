@@ -2,7 +2,8 @@
 capitulo: 1
 tags:
   - ingeniería-electrónica/dispo/Física-de-semiconductores
-  - resumen-materia/Física-de-semiconductores
+  - facultad/resumen
+nombreResumen: Física de semiconductores
 ---
 # Índice 
 ---

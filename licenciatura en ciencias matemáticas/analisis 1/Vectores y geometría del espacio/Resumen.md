@@ -4,10 +4,11 @@ tags:
   - licenciatura-en-ciencias-matemáticas/analisis-1/Vectores-y-geometría-del-espacio
   - licenciatura-en-ciencias-de-datos/analisis-1/Vectores-y-geometría-del-espacio
   - licenciatura-en-ciencias-físicas/analisis-1/Vectores-y-geometría-del-espacio
-  - resumen-materia/Vectores-y-geometría-del-espacio
+  - facultad/resumen
 referencias:
   - "517"
   - "521"
+nombreResumen: Vectores y geometría del espacio
 ---
 # Índice
 ---

@@ -6,11 +6,12 @@ parte: 0
 profesores:
   - 0
 tags:
-  - resumen-curso/curso
   - referencia/cursotema
   - cursos/computation-structures/Parallel-Processing
+  - cursos/resumen
 curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
 tipoCita: CursoTema
+nombreResumen: Parallel Processing
 ---
 # Índice
 ---

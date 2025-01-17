@@ -4,9 +4,11 @@ estado: Terminado
 plan: "2009"
 codigo: "9704"
 tags:
-  - materia/seguridad
   - ingeniería-electrónica/seguridad
+  - facultad/materia
 etapa: terminado
+nombreMateria: Seguridad ambiental y del trabajo
+nombreReducido: seguridad
 ---
 # Apuntes
 ---

@@ -2,7 +2,8 @@
 capitulo: 6
 tags:
   - ingeniería-en-informática/orga/Spark
-  - resumen-materia/Spark
+  - facultad/resumen
+nombreResumen: Spark
 ---
 # Índice 
 ---

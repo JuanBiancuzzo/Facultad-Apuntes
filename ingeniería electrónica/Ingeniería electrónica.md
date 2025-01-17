@@ -1,6 +1,7 @@
 ---
 tags:
   - carrera/ingeniería-electrónica
+  - facultad/carrera
 estado: Haciendo la carrera
 planes:
   - "2009"

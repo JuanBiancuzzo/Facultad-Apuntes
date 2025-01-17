@@ -8,10 +8,11 @@ profesores:
 parte: 0
 tipoCita: CursoTema
 tags:
-  - resumen-curso/curso
   - referencia/cursotema
   - cursos/introduction-to-algorithms/Shortest-Paths
+  - cursos/resumen
 curso: "[[cursos/introduction to algorithms/Introduction to Algorithms|Introduction to Algorithms]]"
+nombreResumen: Shortest Paths
 ---
 # Índice
 ---

@@ -2,7 +2,8 @@
 capitulo: 13
 tags:
   - ingeniería-electrónica/seguridad/Contaminación-del-aire
-  - resumen-materia/Contaminación-del-aire
+  - facultad/resumen
+nombreResumen: Contaminación del aire
 ---
 # Índice 
 ---

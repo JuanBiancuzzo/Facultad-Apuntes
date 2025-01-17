@@ -16,6 +16,7 @@ tipoCita: Curso
 tags:
   - referencia/curso
   - curso/introduction-to-algorithms
+  - cursos/curso
 ---
 # Descripción
 ---

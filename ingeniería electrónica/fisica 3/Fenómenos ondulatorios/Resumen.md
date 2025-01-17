@@ -3,7 +3,8 @@ capitulo: 6
 tags:
   - ingeniería-electrónica/fisica-3/Fenómenos-ondulatorios
   - ingeniería-en-informática/fisica-3/Fenómenos-ondulatorios
-  - resumen-materia/Fenómenos-ondulatorios
+  - facultad/resumen
+nombreResumen: Fenómenos ondulatorios
 ---
 # Índice 
 ---

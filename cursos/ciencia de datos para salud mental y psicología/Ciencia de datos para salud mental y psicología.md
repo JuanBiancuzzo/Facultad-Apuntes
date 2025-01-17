@@ -6,9 +6,11 @@ nombreAutores:
     nombre: Daniel M.
 tags:
   - curso/ciencia-de-datos-para-salud-mental-y-psicología
+  - cursos/curso
 referencias:
   - "631"
   - "632"
+nombreCurso: Ciencia de datos para salud mental y psicología
 ---
 # Descripción
 ---

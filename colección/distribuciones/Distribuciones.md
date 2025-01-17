@@ -5,6 +5,7 @@ tags:
   - nota/investigacion
   - investigación/matemática/Probabilidad/Distribuciones
   - colección/distribuciones
+  - colección/representante
 estado: Vamos a ver las distribuciones probabilísticas discretas, continuas y multivariadas
 referencias:
   - "836"

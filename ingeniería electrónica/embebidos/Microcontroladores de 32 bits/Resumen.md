@@ -2,9 +2,10 @@
 capitulo: 2
 tags:
   - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
-  - resumen-materia/Microcontroladores-de-32-bits
+  - facultad/resumen
 referencias:
   - "465"
+nombreResumen: Microcontroladores de 32 bits
 ---
 # Índice
 ---

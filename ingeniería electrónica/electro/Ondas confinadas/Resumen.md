@@ -2,7 +2,8 @@
 capitulo: 4
 tags:
   - ingeniería-electrónica/electro/Ondas-confinadas
-  - resumen-materia/Ondas-confinadas
+  - facultad/resumen
+nombreResumen: Ondas confinadas
 ---
 # Índice
 ---

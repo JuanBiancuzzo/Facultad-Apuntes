@@ -4,9 +4,11 @@ codigo: "9111"
 plan: 2009
 estado: Falta terminar los últimos capítulos
 tags:
-  - materia/legal
   - ingeniería-electrónica/legal
+  - facultad/materia
 etapa: empezado
+nombreMateria: Legislación y ejercicio profesional
+nombreReducido: legal
 ---
 # Apuntes
 ---

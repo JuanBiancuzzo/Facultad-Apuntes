@@ -3,9 +3,10 @@ capitulo: 4
 tags:
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-Complejos
   - licenciatura-en-ciencias-de-datos/algebra-1/Números-Complejos
-  - resumen-materia/Números-Complejos
+  - facultad/resumen
 referencias:
   - "416"
+nombreResumen: Números Complejos
 ---
 # Índice
 ---

@@ -13,6 +13,7 @@ numReferencia: 694
 tags:
   - curso/cs50s-introduction-to-cybersecurity
   - referencia/curso
+  - cursos/curso
 tipoCita: Curso
 ---
 # Descripción

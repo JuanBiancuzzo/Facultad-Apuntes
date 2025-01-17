@@ -5,6 +5,7 @@ tags:
   - nota/investigacion
   - investigación/ciencias-de-la-computación/data-structures
   - colección/data-structures
+  - colección/representante
 estado: Vamos a describir y representar las estructuras de datos
 aliases:
   - Data structures

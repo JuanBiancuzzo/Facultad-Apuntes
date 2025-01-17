@@ -2,7 +2,7 @@
 dia: 2024-10-31
 estado: Sin empezar
 tags:
-  - índice
+  - investigación/índice
   - nota/investigacion
   - investigación/ciencias-de-la-computación/Análisis-numérico/Numerical-Linear-Algebra
   - investigación/matemática/Análisis-numérico/Numerical-Linear-Algebra

@@ -1,6 +1,7 @@
 ---
 tags:
   - colección/impresion-3d
+  - colección/representante
 estado: Vamos a recolectar los posibles filamentos que se podrían usar para imprimir, con sus propiedades y con sus características para poder comprobar que filamento es el mejor para cada situación
 ---
 Ver que onda

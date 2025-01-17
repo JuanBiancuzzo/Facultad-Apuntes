@@ -4,8 +4,8 @@ codigo: TA134
 plan: 2023
 estado: Voy a cursarla este cuatri
 tags:
-  - materia/embebidos
   - ingeniería-electrónica/embebidos
+  - facultad/materia
 etapa: ampliar
 correlativas:
   - "[[Algoritmos y Programación 1 (9511)|Algoritmos y programación 1]]"
@@ -15,6 +15,8 @@ referencias:
   - "464"
   - "466"
   - "472"
+nombreMateria: Taller de sistemas embebidos
+nombreReducido: embebidos
 ---
 # Apuntes
 ---

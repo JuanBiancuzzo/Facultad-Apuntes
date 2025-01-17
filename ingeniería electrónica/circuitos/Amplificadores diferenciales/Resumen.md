@@ -2,11 +2,12 @@
 capitulo: 5
 tags:
   - ingeniería-electrónica/circuitos/Amplificadores-diferenciales
-  - resumen-materia/Amplificadores-diferenciales
+  - facultad/resumen
 referencias:
   - "435"
   - "446"
   - "455"
+nombreResumen: Amplificadores diferenciales
 ---
 # Índice 
 ---

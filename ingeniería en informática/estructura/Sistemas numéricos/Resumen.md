@@ -3,7 +3,8 @@ capitulo: 1
 tags:
   - ingeniería-en-informática/estructura/Sistemas-numéricos
   - ingeniería-electrónica/estructura/Sistemas-numéricos
-  - resumen-materia/Sistemas-numéricos
+  - facultad/resumen
+nombreResumen: Sistemas numéricos
 ---
 # Índice 
 ---

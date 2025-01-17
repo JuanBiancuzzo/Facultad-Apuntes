@@ -55,23 +55,27 @@ module.exports = () => ({
             self: "investigación",
             indice: "índice",
         },
-        carrera: {
-            self: "carrera",
-            informatica: "ingeniería-en-informática",
-            electronica: "ingeniería-electrónica",
-            datos: "licenciatura-en-ciencia-de-datos",
-            fisica: "licenciatura-en-ciencias-físicas",
-            matematica: "licenciatura-en-ciencias-matemáticas",
-        },
         curso: {
             self: "cursos",
             curso: "curso",
+            resumen: "resumen",
         },
-        materia: "materia",
-        resumenMateria: "resumen-materia",
-        resumenCurso: "resumen-curso",
+        facultad: {
+            self: "facultad",
+            carrera: {
+                self: "carrera",
+                informatica: "ingeniería-en-informática",
+                electronica: "ingeniería-electrónica",
+                datos: "licenciatura-en-ciencia-de-datos",
+                fisica: "licenciatura-en-ciencias-físicas",
+                matematica: "licenciatura-en-ciencias-matemáticas",
+            },
+            materia: "materia",
+            resumen: "resumen",
+        },
         coleccion: {
             self: "colección",
+            representante: "representante",
             funciones: {
                 self: "funciones",
                 lenguajes: {
@@ -173,27 +177,36 @@ module.exports = () => ({
             referencias: "referencias",
             equivalencia: "equivalencia",
             tags: "tags",
+            codigoMateria: "codigo",
+            estado: "estado",
+            nombre: "nombreMateria",
+            nombreReudico: "nombreReducido",
         },
         INVESTIGACION: {
             estado: "estado",
             tags: "tags",
             dia: "dia",
             aliases: "aliases",
+            equivalencia: "equivalente",
             referencias: "referencias",
         },
         CURSO: {
+            nombre: "nombreCurso",
+            dia: "dia",
+            etapa: "etapa",
+            estado: "estado",
+            tags: "tags",
         },
         RESUMEN: {
             numero: "capitulo",
             parte: "parte",
             referencias: "referencias",
+            nombre: "nombreResumen",
         },
         PROYECTO: {
             dia: "dia",
             estado: "estado",
             tags: "tags",
-        },
-        GDD: {
         },
         ARCHIVO: {
             etapa: "etapa",
@@ -204,6 +217,11 @@ module.exports = () => ({
         },
         PROGRESO: {
             dia: "dia",
+            tags: "tags",
+        },
+        COLECCION: {
+            dia: "dia",
+            estado: "estado",
             tags: "tags",
         },
         BLOQUES_MATEMATICA: {

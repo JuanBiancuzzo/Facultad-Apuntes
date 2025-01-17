@@ -2,7 +2,8 @@
 capitulo: 1
 tags:
   - ingeniería-en-informática/aninfo/Ingeniería-de-software
-  - resumen-materia/Ingeniería-de-software
+  - facultad/resumen
+nombreResumen: Ingeniería de software
 ---
 # Índice 
 ---

@@ -2,7 +2,8 @@
 capitulo: 4
 tags:
   - ingeniería-electrónica/dispo/Transistor-bipolar-de-juntura
-  - resumen-materia/Transistor-bipolar-de-juntura
+  - facultad/resumen
+nombreResumen: Transistor bipolar de juntura
 ---
 # Índice 
 ---

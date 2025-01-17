@@ -1,6 +1,7 @@
 ---
 tags:
   - carrera/ingeniería-en-informática
+  - facultad/carrera
 estado: Haciendo la carrera
 planes:
   - "1986"

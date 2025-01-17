@@ -3,7 +3,8 @@ capitulo: 5
 tags:
   - ingeniería-electrónica/analisis-3/Transformaciones-conformes
   - ingeniería-en-informática/analisis-3/Transformaciones-conformes
-  - resumen-materia/Transformaciones-conformes
+  - facultad/resumen
+nombreResumen: Transformaciones conformes
 ---
 # Índice 
 ---

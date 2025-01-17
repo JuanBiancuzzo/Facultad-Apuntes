@@ -2,7 +2,8 @@
 capitulo: 8
 tags:
   - ingeniería-en-informática/concurrentes/Channels-y-Actors
-  - resumen-materia/Channels-y-Actors
+  - facultad/resumen
+nombreResumen: Channels y Actors
 ---
 # Índice
 ---

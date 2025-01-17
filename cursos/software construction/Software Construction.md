@@ -16,6 +16,7 @@ tipoCita: Curso
 tags:
   - referencia/curso
   - curso/software-construction
+  - cursos/curso
 ---
 # Descripción
 ---

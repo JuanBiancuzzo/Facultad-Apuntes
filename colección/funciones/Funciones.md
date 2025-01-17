@@ -2,6 +2,7 @@
 dia: 2024-12-25
 tags:
   - colección/funciones
+  - colección/representante
 estado: Vamos a ver las funciones de bibliotecas de diferentes lenguajes
 ---
 Vamos a organizar las funciones de [[Biblioteca|librerías]] de diferentes lenguajes

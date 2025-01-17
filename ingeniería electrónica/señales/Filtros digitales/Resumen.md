@@ -2,7 +2,8 @@
 capitulo: 8
 tags:
   - ingeniería-electrónica/señales/Filtros-digitales
-  - resumen-materia/Filtros-digitales
+  - facultad/resumen
+nombreResumen: Filtros digitales
 ---
 # Índice 
 ---

@@ -3,7 +3,8 @@ capitulo: 1
 tags:
   - ingeniería-en-informática/taller/Sintaxis
   - ingeniería-electrónica/taller/Sintaxis
-  - resumen-materia/Sintaxis
+  - facultad/resumen
+nombreResumen: Sintaxis
 ---
 # Índice 
 ---

@@ -2,7 +2,8 @@
 capitulo: 6
 tags:
   - ingeniería-en-informática/discreta/Inducción
-  - resumen-materia/Inducción
+  - facultad/resumen
+nombreResumen: Inducción
 ---
 # Índice
 ---

@@ -3,7 +3,8 @@ capitulo: 6
 tags:
   - ingeniería-en-informática/proba/Esperanza-condicional
   - ingeniería-electrónica/proba/Esperanza-condicional
-  - resumen-materia/Esperanza-condicional
+  - facultad/resumen
+nombreResumen: Esperanza condicional
 ---
 # Índice 
 ---
