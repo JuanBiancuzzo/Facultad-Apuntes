@@ -4,11 +4,13 @@ estado: Terminado
 plan: "1986"
 codigo: "6109"
 tags:
-  - facultad/materia/proba
   - ingeniería-en-informática/proba
+  - facultad/materia
 etapa: terminado
 correlativas:
   - "[[Álgebra 2 A (6108)|Álgebra 2]]"
+nombreMateria: Probabilidad y estadística B
+nombreReducido: proba
 ---
 # Apuntes
 ---

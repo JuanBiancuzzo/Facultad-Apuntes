@@ -1,8 +1,8 @@
 ---
 plan: 2023
 tags:
-  - facultad/materia/distribuidos
   - ingeniería-en-informática/distribuidos
+  - facultad/materia
 correlativas:
   - "[[ingeniería en informática/redes/Redes (TA048).md|Redes]]"
   - "[[ingeniería en informática/concurrentes/Programación Concurrente (TB026).md|Programación Concurrente]]"
@@ -10,6 +10,8 @@ codigo: TA050
 cuatri: 26C1
 etapa: sin-empezar
 estado: Sin empezar
+nombreMateria: Sistemas Distribuidos 1
+nombreReducido: distribuidos
 ---
 # Apuntes
 ---

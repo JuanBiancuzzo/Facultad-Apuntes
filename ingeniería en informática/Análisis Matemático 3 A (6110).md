@@ -1,13 +1,15 @@
 ---
 plan: 1986
 tags:
-  - facultad/materia/analisis-3
   - ingeniería-en-informática/analisis-3
+  - facultad/materia
 correlativas:
   - "[[Análisis matemático 2 A (6103)|Análisis matemático 2]]"
   - "[[Álgebra 2 A (6108)|Álgebra 2]]"
 codigo: 6110
 equivalencia: "[[ingeniería electrónica/analisis 3/Análisis matemático 3 (6110).md|Análisis matemático 3 (6110)]]"
+nombreMateria: Análisis Matemático 3 A
+nombreReducido:
 ---
 # Apuntes
 ---

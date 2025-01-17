@@ -8,10 +8,12 @@ estado: Estamos buscando información sobre el tema
 tags:
   - proyecto/práctico
   - ingeniería-en-informática/tpp
-  - facultad/materia/tpp
   - ingeniería-en-informática/tpp
   - proyecto/investigación
-correlativas:
+  - facultad/materia
+correlativas: 
+nombreMateria: Trabajo Profesional de Ingeniería Informática
+nombreReducido: tpp
 ---
 # Propuesta
 ---

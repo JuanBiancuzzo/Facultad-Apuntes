@@ -4,13 +4,15 @@ codigo: TA048
 plan: 2023
 estado: Terminado
 tags:
-  - facultad/materia/redes
   - ingeniería-en-informática/redes
+  - facultad/materia
 etapa: terminado
 correlativas:
   - "[[Sistemas operativos (7508)|Sistemas operativos]]"
 referencias:
   - "588"
+nombreMateria: Redes
+nombreReducido: redes
 ---
 # Apuntes
 ---

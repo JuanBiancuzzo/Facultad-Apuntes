@@ -4,11 +4,13 @@ codigo: 7541
 plan: 1986
 estado: Falta hacer el resumen
 tags:
-  - facultad/materia/algo-2
   - ingeniería-en-informática/algo-2
+  - facultad/materia
 etapa: sin-empezar
 correlativas:
   - "[[Algoritmos y programación 1 (7540)|Algoritmos y programación 1]]"
+nombreMateria: Algoritmos y programación 2
+nombreReducido: algo 2
 ---
 # Apuntes
 ---

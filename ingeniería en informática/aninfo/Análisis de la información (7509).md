@@ -4,11 +4,13 @@ estado: Terminado
 plan: "1986"
 codigo: "7509"
 tags:
-  - facultad/materia/aninfo
   - ingeniería-en-informática/aninfo
+  - facultad/materia
 etapa: terminado
 correlativas:
   - "[[Algoritmos y programación 3 (7507)|Algoritmos y programación 3]]"
+nombreMateria: Análisis de la información
+nombreReducido: aninfo
 ---
 # Apuntes
 ---

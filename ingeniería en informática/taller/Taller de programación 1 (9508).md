@@ -4,11 +4,13 @@ estado: Falta pasar las presentaciones de los últimos temas
 plan: 2009
 codigo: "9508"
 tags:
-  - facultad/materia/taller
   - ingeniería-en-informática/taller
+  - facultad/materia
 etapa: empezado
 correlativas:
   - "[[Algoritmos y programación 2 (7541)|Algoritmos y programación 2]]"
+nombreMateria: Taller de programación 1
+nombreReducido: taller
 ---
 # Apuntes
 ---

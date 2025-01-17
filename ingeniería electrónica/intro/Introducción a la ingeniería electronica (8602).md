@@ -4,11 +4,13 @@ estado: Terminado
 plan: "2009"
 codigo: "8602"
 tags:
-  - facultad/materia/intro
   - ingeniería-electrónica/intro
+  - facultad/materia
 etapa: terminado
 correlativas:
   - "[[Física 1 A (8201)|Física 1 A]]"
+nombreMateria: Introducción a la ingeniería electronica
+nombreReducido: intro
 ---
 # Apuntes
 ---

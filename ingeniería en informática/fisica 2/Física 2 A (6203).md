@@ -4,12 +4,14 @@ estado: Terminado
 plan: "1986"
 codigo: "6203"
 tags:
-  - facultad/materia/fisica-2
   - ingeniería-en-informática/fisica-2
+  - facultad/materia
 etapa: terminado
 correlativas:
   - "[[Física 1 A (6201)|Física 1]]"
   - "[[Análisis matemático 2 A (6103)|Análisis matemático 2]]"
+nombreMateria: Física 2 A
+nombreReducido: fisica 2
 ---
 # Apuntes
 ---

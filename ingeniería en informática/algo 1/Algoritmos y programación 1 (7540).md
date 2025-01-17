@@ -4,8 +4,8 @@ codigo: 7540
 plan: 1986
 estado: Voy por el 9do pdf
 tags:
-  - facultad/materia/algo-1
   - ingeniería-en-informática/algo-1
+  - facultad/materia
 etapa: empezado
 referencias:
   - "400"
@@ -18,6 +18,8 @@ referencias:
   - "781"
   - "782"
   - "783"
+nombreMateria: Algoritmos y programación 1
+nombreReducido: algo 1
 ---
 # Apuntes
 ---

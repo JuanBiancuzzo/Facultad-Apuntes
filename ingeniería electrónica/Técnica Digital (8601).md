@@ -1,12 +1,14 @@
 ---
 plan: 2009
 tags:
-  - facultad/materia/estructura
   - ingeniería-electrónica/estructura
+  - facultad/materia
 correlativas:
   - "[[ingeniería electrónica/intro/Introducción a la ingeniería electronica (8602).md|Introducción a la ingeniería electronica]]"
 codigo: "8601"
 equivalencia: "[[ingeniería en informática/estructura/Estructura del computador (6670).md|Estructura del computador (6670)]]"
+nombreMateria: Técnica Digital
+nombreReducido:
 ---
 # Apuntes
 ---
