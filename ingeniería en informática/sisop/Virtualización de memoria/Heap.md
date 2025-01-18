@@ -3,8 +3,8 @@ dia: 2023-11-20
 tags:
   - ingeniería-en-informática/sisop/Virtualización-de-memoria
   - nota/facultad
-  - data-structures
   - cursos/introduction-to-algorithms/Sorting-and-Trees
+  - colección/data-structures/estructura
   - investigación/ciencias-de-la-computación/data-structures
 aliases:
   - Max-Heap#^man-min-heap
@@ -12,17 +12,19 @@ aliases:
 referencias:
   - "701"
 etapa: ampliar
+nombreEstructura: Heap
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
-Este tipo de [[Memoria|memoria]] es aquel que es obtenida y liberada explícitamente por el programador
+Este tipo de [[Memoria|memoria]] es aquel que es obtenida y liberada explícitamente por el programador.
 
-## Como estructura de datos
+## Estructura de datos
 ---
-El heap es una implementación de una [[Priority Queue|cola con prioridad]], que usa un [[Array|array]] donde se lo puede visualizar como un [[Árbol binario|árbol binario]]
+> El heap es una implementación de una [[Priority Queue|cola con prioridad]], que usa un [[Array|array]] donde se lo puede visualizar como un [[Árbol binario|árbol binario]]
+^descripcion
 
 ```tikz
 \usetikzlibrary{math}
@@ -115,6 +117,7 @@ El heap es una implementación de una [[Priority Queue|cola con prioridad]], que
 \end{tikzpicture}
 \end{document}
 ```
+^representacion
 
 Esta visualización nos permite ver lo siguiente
 * La raíz del árbol es el elemento en el índice $i = 0$
