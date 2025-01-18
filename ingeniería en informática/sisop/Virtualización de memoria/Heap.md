@@ -7,8 +7,8 @@ tags:
   - colección/data-structures/estructura
   - investigación/ciencias-de-la-computación/data-structures
 aliases:
-  - Max-Heap#^man-min-heap
-  - Min-Heap#^man-min-heap
+  - Max-Heap
+  - Min-Heap
 referencias:
   - "701"
 etapa: ampliar
@@ -24,6 +24,8 @@ Este tipo de [[Memoria|memoria]] es aquel que es obtenida y liberada explícitam
 ## Estructura de datos
 ---
 > El heap es una implementación de una [[Priority Queue|cola con prioridad]], que usa un [[Array|array]] donde se lo puede visualizar como un [[Árbol binario|árbol binario]]
+> 
+> Un [[Máximo|Max]]-Heap tiene la propiedad donde cada key de cada [[Nodo|nodo]] es mayor o igual ($\ge$) a las keys de los hijos. Esta es una definición [[Recursividad|recursiva]]. Para un [[Mínimo|Min]]-Heap es igual  donde la key de cada nodo es menor o igual ($\le$) a las keys de los hijos
 ^descripcion
 
 ```tikz
@@ -124,8 +126,6 @@ Esta visualización nos permite ver lo siguiente
 * El índice del padre es $i / 2$
     * El índice del hijo izquierdo es $2i + 1$
     * El índice del hijo derecho es $2i + 2$
-
-Un [[Máximo|Max]]-Heap tiene la propiedad donde cada key de cada [[Nodo|nodo]] es mayor o igual ($\ge$) a las keys de los hijos. Esta es una definición [[Recursividad|recursiva]]. Para un [[Mínimo|Min]]-Heap es igual  donde la key de cada nodo es menor o igual ($\le$) a las keys de los hijos ^man-min-heap
 
 ### Operaciones
 ---

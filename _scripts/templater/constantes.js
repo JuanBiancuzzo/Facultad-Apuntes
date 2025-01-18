@@ -119,6 +119,7 @@ module.exports = () => ({
             investigacion: "investigacion",
             proyecto: "proyecto",
             curso: "curso",
+            coleccion: "colección",
         }
     },
     DIRECTORIOS: {
