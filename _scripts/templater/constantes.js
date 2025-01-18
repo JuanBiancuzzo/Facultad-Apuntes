@@ -92,6 +92,10 @@ module.exports = () => ({
                 tema: "tema",
                 subtema: "subtema",
             },
+            estructuraDatos: {
+                self: "data-structures",
+                estructura: "estructura",
+            },
         },
         referencias: "referencia",
         proyecto: {
@@ -287,6 +291,12 @@ module.exports = () => ({
                     },
                 },
             },
+        },
+        ESTRUCTURA_DATOS: {
+            dia: "dia",
+            nombre: "nombreEstructura",
+            etapa: "etapa",
+            tags: "tags",
         },
         REFERENCIAS: {
             numReferencia: "numReferencia",
