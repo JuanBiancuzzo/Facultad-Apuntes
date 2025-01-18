@@ -3,7 +3,7 @@ tags:
   - funciones/Librerías-de-Python/Pandas/DataFrame/map
   - colección/funciones/función
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/Lenguaje-Python/Librerías-de-Python/Pandas/DataFrame
-  - nota/investigacion
+  - nota/colección
 firma:
   nombre: map
   descripcion: This method applies a function that accepts and returns a scalar to every element of a DataFrame

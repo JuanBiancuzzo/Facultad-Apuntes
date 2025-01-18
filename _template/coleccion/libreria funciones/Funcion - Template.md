@@ -1,14 +1,8 @@
 <%*
     const { 
         DIRECTORIOS: { coleccion: { self: DIRECTORIO_COLECCION, funciones: DIRECTORIO_FUNCIONES } },
-        TAGS: { 
-            coleccion: TAGS_COLECCION,
-            nota: TAGS_NOTA,
-        },
-        DATOS: { 
-            INVESTIGACION: DATOS_INVESTIGACION,
-            FUNCIONES: DATOS_FUNCIONES 
-        },
+        TAGS: { coleccion: { self: TAG_COLECCION, funciones: TAGS_FUNCIONES }, nota: TAGS_NOTA },
+        DATOS: { INVESTIGACION: DATOS_INVESTIGACION, FUNCIONES: DATOS_FUNCIONES },
     } = tp.user.constantes();
     const libreriaFunciones = tp.user.libreriaFunciones();
     const tagPorNombre = tp.user.tagPorNombre;
@@ -29,12 +23,12 @@
     let keyLenguaje = DATOS_FUNCIONES.lenguaje.keyLenguaje(resultado[LENGUAJE]);
 
     let nombreArchivo = `Función ${resultado[FUNCION][DATOS_FUNCIONES.funcion.firma.nombreFuncion]}`
-    let tagPath = `${TAGS_COLECCION.funciones.self}/${TAGS_COLECCION.funciones.lenguajes[keyLenguaje]}`;
-    let dvLenguaje = dv.pages(`#${tagPath} and #${TAGS_COLECCION.self}/${TAGS_COLECCION.funciones.self}/${TAGS_COLECCION.funciones.lenguajes.self}`)
+    let tagPath = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[keyLenguaje]}`;
+    let dvLenguaje = dv.pages(`#${tagPath} and #${TAG_COLECCION}/${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes.self}`)
         .first();
     dvLenguaje = dv.page(dvLenguaje[DATOS_FUNCIONES.lenguaje.temaInvestigacion].path);
     let tagsInvestigacion = tp.user.obtenerTag(tp, dvLenguaje[DATOS_INVESTIGACION.tags])
-        .map(tag => `${tag}/${TAGS_COLECCION.funciones.lenguajes[keyLenguaje]}`);
+        .map(tag => `${tag}/${TAGS_FUNCIONES.lenguajes[keyLenguaje]}`);
 
     let carpeta = `${DIRECTORIO_COLECCION}/${DIRECTORIO_FUNCIONES.self}/${DIRECTORIO_FUNCIONES[keyLenguaje]}`;
 
@@ -60,9 +54,9 @@
     tR += tp.obsidian.stringifyYaml({
         [DATOS_FUNCIONES.funcion.tags]: [
             tagPath,
-            `${TAGS_COLECCION.self}/${TAGS_COLECCION.funciones.self}/${TAGS_COLECCION.funciones.funcion}`,
+            `${TAG_COLECCION}/${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.funcion}`,
             ... tagsInvestigacion,
-            `${TAGS_NOTA.self}/${TAGS_NOTA.investigacion}`,
+            `${TAGS_NOTA.self}/${TAGS_NOTA.coleccion}`,
         ],
         [DATOS_FUNCIONES.funcion.firma.self]: resultado[FUNCION],
     });
