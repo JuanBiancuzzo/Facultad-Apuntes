@@ -107,7 +107,7 @@ async function actualizarDatos(tp, datos, respuesta) {
             break;
 
         case PATH_RELACIONADO:
-            datos[PATH_RELACIONADO] = await tp.user.crearPreguntas(
+            datos[PATH_RELACIONADO] = await tp.user.crearPreguntas().preguntar(
                 tp, () => ({
                     [TEMA_RELACIONADO]: null,
                     [SUBTEMA_RELACIONADO]: null,

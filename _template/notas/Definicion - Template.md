@@ -124,7 +124,7 @@
         .sort(({ [DATOS_REFERENCIA.numReferencia]: numReferencia }) => numReferencia)
         .map(datosReferencia => ({ numero: datosReferencia[DATOS_REFERENCIA.numReferencia], datos: datosReferencia, usado: false }));
 
-    let referenciasUsar = await tp.user.crearPreguntas(
+    let referenciasUsar = await tp.user.crearPreguntas().preguntar(
         tp, () => ({ uso: [] }), (tp, datos, respuesta) => {
             if (respuesta == SALIR) return true;
 

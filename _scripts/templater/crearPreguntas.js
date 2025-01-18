@@ -1,5 +1,14 @@
 const TIPO_FUNCION = "function";
 
+/**
+ * @param {*} tp Objeto representante del plugin Templater
+ * @param {() => Objecto} obtenerDefault Es una función que devuelve los datos en su valor por defecto
+ * @param {(tp: *, datos: Objecto, respuesta: string) => bool} actualizarDatos Modifica los datos a partir de la respuesta dada, y devuelve true en el caso que se determina que no se quiere continua
+ * @param {(tp, datos: Objeto) => { opciones: array, valores: array }} generarPreguntas Dado los datos guardados genera dos arrays de respuestas (opciones) y su representación (valores)
+ * @param {string} mensaje Es el mensaje que aparecerá si hay multiples opciones a elegir
+ * @param {Objeto} datosPrevios Son los datos ya inicializados que se incorporarán al proceso
+ * @returns {Object} Devuelve los datos cuando el usuario aya decidido no continuar con sus elecciones
+ */
 async function crearPreguntas(
     tp, 
     obtenerDefault, 
@@ -59,4 +68,6 @@ function obtenerDatos(obtenerDefault, datosPrevios) {
     return datos;
 }
 
-module.exports = crearPreguntas;
+module.exports = ({
+    preguntar: crearPreguntas,
+});

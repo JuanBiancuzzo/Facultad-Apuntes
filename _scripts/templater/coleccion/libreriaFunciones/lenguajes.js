@@ -45,13 +45,9 @@ async function actualizarDatos(tp, datos, respuesta, lenguaje) {
             let parametroPrevio;
             if (indice) parametroPrevio = datos[DATOS_FUNCION.parametros.self][indice];
 
-            let parametro = await tp.user.crearPreguntas(
-                tp, () => ({
-                    [DATOS_FUNCION.parametros.nombreParametro]: null,
-                    [DATOS_FUNCION.parametros.tipoDeDato]: defaultTipoDato(tp, lenguaje),
-                    [DATOS_FUNCION.parametros.valorPorDefecto]: null,
-                    [DATOS_FUNCION.parametros.descripcion]: null,
-                }), (tp, datosDado, respuestaDada) => actualizarDatosParametros(tp, datosDado, respuestaDada, lenguaje), 
+            let parametro = await tp.user.crearPreguntas().preguntar(
+                tp, () => obtenerDefaultParametros(tp), 
+                (tp, datosDado, respuestaDada) => actualizarDatosParametros(tp, datosDado, respuestaDada, lenguaje), 
                 (tp, datosDado) => generarPreguntasParametros(tp, datosDado, lenguaje), 
                 "Ingresar los datos del parámetro", parametroPrevio
             );
@@ -68,11 +64,9 @@ async function actualizarDatos(tp, datos, respuesta, lenguaje) {
             break;
 
         case DATOS_FUNCION.return.self: 
-            datos[DATOS_FUNCION.return.self] = await tp.user.crearPreguntas(
-                tp, () => ({
-                    [DATOS_FUNCION.return.tipoDeDato]: defaultTipoDato(tp, lenguaje),
-                    [DATOS_FUNCION.return.descripcion]: null,
-                }), (tp, datosDado, respuestaDada) => actualizarDatosReturn(tp, datosDado, respuestaDada, lenguaje), 
+            datos[DATOS_FUNCION.return.self] = await tp.user.crearPreguntas().preguntar(
+                tp, () => obtenerDefaultReturn(tp), 
+                (tp, datosDado, respuestaDada) => actualizarDatosReturn(tp, datosDado, respuestaDada, lenguaje), 
                 (tp, datosDado) => generarPreguntasReturn(tp, datosDado, lenguaje), 
                 "Ingresar los datos del tipo de dato que se devuelve", 
                 datos[DATOS_FUNCION.return.self] ? datos[DATOS_FUNCION.return.self] : null
@@ -163,6 +157,19 @@ function generarPreguntas(tp, datos, lenguaje) {
     }
 
     return { opciones: opciones, valores: valores };
+}
+
+function obtenerDefaultParametros(tp) {
+    const {
+        DATOS: { FUNCIONES: { funcion: { firma: { parametros: DATOS_PARAMETROS } } } }
+    } = tp.user.constantes()
+
+    return {
+        [DATOS_PARAMETROS.nombreParametro]: null,
+        [DATOS_PARAMETROS.tipoDeDato]: defaultTipoDato(tp, lenguaje),
+        [DATOS_PARAMETROS.valorPorDefecto]: null,
+        [DATOS_PARAMETROS.descripcion]: null,
+    };
 }
 
 async function actualizarDatosParametros(tp, datos, respuesta, lenguaje) {
@@ -344,6 +351,30 @@ function describirParametro(tp, parametro, lenguaje) {
     }
 }
 
+function obtenerDefaultStruct(tp) {
+    const {
+        DATOS: { FUNCIONES: { funcion: { firma: { struct: DATOS_STRUCT } } } }
+    } = tp.user.constantes()
+
+    return {
+        [DATOS_STRUCT.nombreStruct]: null,
+        [DATOS_STRUCT.descripcion]: null,
+        [DATOS_STRUCT.campos]: () => obtenerDefaultParametros(),
+        [DATOS_STRUCT.alias]: null,
+    };
+}
+
+function obtenerDefaultReturn(tp) {
+    const {
+        DATOS: { FUNCIONES: { funcion: { firma: { return: DATOS_RETURN } } } }
+    } = tp.user.constantes()
+
+    return {
+        [DATOS_RETURN.tipoDeDato]: defaultTipoDato(tp, lenguaje),
+        [DATOS_RETURN.descripcion]: null,
+    };
+}
+
 async function actualizarDatosReturn(tp, datos, respuesta, lenguaje) {
     const { 
         funcion: { firma: { return: DATOS_RETURN } },
@@ -412,7 +443,7 @@ function generarPreguntasReturn(tp, datos, lenguaje) {
     opciones.push(DATOS_RETURN.descripcion);
     valores.push(datos[DATOS_RETURN.descripcion]
         ? ` ${SIMBOLOS.modificar} Modificar la descripción del valor de retorno, donde era ${datos[DATOS_RETURN.descripcion]}`
-        : ` ${SIMBOLOS.agregar} Descripción del valor de retorno`
+        : ` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Descripción del valor de retorno`
     )
 
     if (tipoDatoEsArray(tp, lenguaje)) {
@@ -442,7 +473,7 @@ function generarPreguntasReturn(tp, datos, lenguaje) {
         );
     }
 
-    let DATOS_SIMPLES = [DATOS_RETURN.descripcion];
+    let DATOS_SIMPLES = [];
     if (!tipoDatoEsArray(tp, lenguaje)) {
         DATOS_SIMPLES.push(DATOS_RETURN.tipoDeDato);
     }
@@ -508,15 +539,37 @@ function describir(tp, datos, lenguaje) {
 
 module.exports = () => ({
     obtenerDefault: (tp) => {
-        const { firma: DATOS_FUNCION } = tp.user.constantes().DATOS.FUNCIONES.funcion; 
+        const { 
+            DATOS: { FUNCIONES: { funcion: { firma: DATOS_FIRMA } } } 
+        } = tp.user.constantes();
+        const {  } = tp.user.crearPreguntas();
+
         return {
-            [DATOS_FUNCION.nombreFuncion]: null,
-            [DATOS_FUNCION.descripcion]: null,
-            [DATOS_FUNCION.parametros.self]: [],
-            [DATOS_FUNCION.return.self]: null,
+            [DATOS_FIRMA.nombreFuncion]: null,
+            [DATOS_FIRMA.descripcion]: null,
+            [DATOS_FIRMA.parametros.self]: () => obtenerDefaultParametros(),
+            [DATOS_FIRMA.return.self]: () => obtenerDefaultReturn(),
         };
     },
     actualizarDatos: actualizarDatos,
     generarPreguntas: generarPreguntas,
     describir: describir,
+    parametro: {
+        obtenerDefault: obtenerDefaultParametros,
+        actualizarDatos: actualizarDatosParametros,
+        generarPreguntas: generarPreguntasParametros,
+        describir: describirParametro,
+    },
+    struct: {
+        obtenerDefault: obtenerDefaultStruct,
+        actualizarDatos: actualizarDatosStruct,
+        generarPreguntas: generarPreguntasStruct,
+        describir: describirStruct,
+    },
+    return: {
+        obtenerDefault: obtenerDefaultReturn,
+        actualizarDatos: actualizarDatosReturn,
+        generarPreguntas: generarPreguntasReturn,
+        describir: describirReturn,
+    },
 });

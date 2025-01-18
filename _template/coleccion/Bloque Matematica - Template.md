@@ -3,7 +3,7 @@
 
     try {
         let datosPrevios = { path: `${tp.file.folder(true)}/${tp.file.title}` };
-        let resultado = await tp.user.crearPreguntas(
+        let resultado = await tp.user.crearPreguntas().preguntar(
             tp, bloqueMatematica.obtenerDefault, bloqueMatematica.actualizarDatos, 
             bloqueMatematica.generarPreguntas, "Generar bloque", 
             datosPrevios

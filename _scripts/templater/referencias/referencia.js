@@ -123,7 +123,7 @@ function describir(tp, datos) {
 async function editar(tp, tipoCita, seguidorRef, datosActuales) {
     let referencia = obtenerReferencia(tp, tipoCita);
 
-    return await tp.user.crearPreguntas(
+    return await tp.user.crearPreguntas().preguntar(
         tp, () => referencia.obtenerDefault(tp),
         (tp, datos, respuesta) => referencia.actualizarDatos(tp, datos, respuesta, seguidorRef),
         referencia.generarPreguntas,

@@ -90,7 +90,7 @@
 
     referenciasResumen.values.push({ numero: resumen[DATOS_REFERENCIA.numReferencia], datos: resumen, usado: true });
 
-    let referenciasUsar = await tp.user.crearPreguntas(
+    let referenciasUsar = await tp.user.crearPreguntas().preguntar(
         tp, () => ({ uso: [] }), (tp, datos, respuesta) => {
             if (respuesta == SALIR) return true;
 

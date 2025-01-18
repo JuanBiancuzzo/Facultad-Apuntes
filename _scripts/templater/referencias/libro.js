@@ -146,7 +146,7 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             }
 
             let referenciaCapitulo = tp.user.capituloLibro();
-            let capitulo = await tp.user.crearPreguntas(
+            let capitulo = await tp.user.crearPreguntas().preguntar(
                 referenciaCapitulo.obtenerDefault,
                 referenciaCapitulo.actualizarDatos,
                 referenciaCapitulo.generarPreguntas,
