@@ -32,7 +32,8 @@
         [DATOS_ESTRUCTURA.etapa]: ETAPAS.empezado,
         [DATOS_ESTRUCTURA.tags]: [
             ...tp.user.obtenerTag(tp, representante[DATOS_ESTRUCTURA.tags]), 
-            `${TAGS_NOTA.self}/${TAGS_NOTA.carrera}`,
+            `${TAGS_NOTA.self}/${TAGS_NOTA.coleccion}`,
+            `${TAG_COLECCION}/${TAGS_ESTRUCTURAS.self}/${TAGS_ESTRUCTURAS.estructura}`,
         ],
         [DATOS_ESTRUCTURA.nombre]: titulo,
     });

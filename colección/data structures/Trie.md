@@ -6,7 +6,7 @@ referencias:
 aliases:
   - Prefix tree
 tags:
-  - nota/investigacion
+  - nota/colección
   - investigación/ciencias-de-la-computación/data-structures
   - colección/data-structures/estructura
 nombreEstructura: Trie

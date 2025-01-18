@@ -3,7 +3,7 @@ dia: 2024-09-30
 etapa: sin-empezar
 referencias: 
 tags:
-  - nota/investigacion
+  - nota/colección
   - investigación/ciencias-de-la-computación/data-structures
   - colección/data-structures/estructura
 aliases:

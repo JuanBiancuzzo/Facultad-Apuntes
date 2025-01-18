@@ -5,7 +5,7 @@ referencias:
   - "689"
 tags:
   - investigación/ciencias-de-la-computación/data-structures
-  - nota/investigacion
+  - nota/colección
   - colección/data-structures/estructura
 nombreEstructura: Fibonacci Heap
 ---

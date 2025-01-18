@@ -6,7 +6,7 @@ referencias:
 aliases:
   - Compressed prefix tree
 tags:
-  - nota/investigacion
+  - nota/colección
   - investigación/ciencias-de-la-computación/data-structures
   - colección/data-structures/estructura
 nombreEstructura: Compressed trie

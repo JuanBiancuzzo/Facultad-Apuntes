@@ -4,7 +4,7 @@ etapa: sin-empezar
 referencias:
   - "133"
 tags:
-  - nota/investigacion
+  - nota/colección
   - investigación/ciencias-de-la-computación/data-structures
   - colección/data-structures/estructura
 nombreEstructura: Árbol B

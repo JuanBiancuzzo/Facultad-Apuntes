@@ -4,7 +4,7 @@ etapa: sin-empezar
 referencias:
   - "151"
 tags:
-  - nota/investigacion
+  - nota/colección
   - investigación/ciencias-de-la-computación/data-structures
   - colección/data-structures/estructura
 nombreEstructura: Spatial Hash Grids
