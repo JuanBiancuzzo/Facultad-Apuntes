@@ -18,7 +18,7 @@ cover: Elliptic Curves, Modular Forms, and Their L-functions de Álvaro Lozano-R
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

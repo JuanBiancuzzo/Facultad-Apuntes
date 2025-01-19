@@ -23,7 +23,7 @@ cover: Software Architecture, The Hard Parts de Neal Ford, Mark Richards, Pramod
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

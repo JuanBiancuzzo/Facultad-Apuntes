@@ -18,7 +18,7 @@ cover: Data Structures and Algorithms Made Easy, data Structures and Algorithmic
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

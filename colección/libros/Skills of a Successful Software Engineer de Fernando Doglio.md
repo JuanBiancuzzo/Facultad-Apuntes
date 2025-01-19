@@ -18,7 +18,7 @@ cover: Skills of a Successful Software Engineer de Fernando Doglio.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

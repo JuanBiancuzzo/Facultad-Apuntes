@@ -19,7 +19,7 @@ cover: Calculus made easy de Silvanus P. Thompson, Martin Gardner.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

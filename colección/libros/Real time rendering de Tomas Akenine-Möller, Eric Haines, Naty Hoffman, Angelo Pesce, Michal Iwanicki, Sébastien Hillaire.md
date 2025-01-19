@@ -27,7 +27,7 @@ cover: Real time rendering de Tomas Akenine-Möller, Eric Haines, Naty Hoffman, 
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

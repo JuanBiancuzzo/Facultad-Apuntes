@@ -17,7 +17,7 @@ cover: Thinking, Fast and Slow de Daniel Kahneman.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

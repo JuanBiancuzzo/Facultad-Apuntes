@@ -17,7 +17,7 @@ cover: Linux From Scratch de Gerard Beekmans.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
   - ingeniería-en-informática/tpp/Propuesta
 ---

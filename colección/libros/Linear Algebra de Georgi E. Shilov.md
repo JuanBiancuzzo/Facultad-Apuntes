@@ -18,7 +18,7 @@ cover: Linear Algebra de Georgi E. Shilov.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

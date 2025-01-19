@@ -18,7 +18,7 @@ cover: The c++ Programming Language de Bjarne Stroustrup.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

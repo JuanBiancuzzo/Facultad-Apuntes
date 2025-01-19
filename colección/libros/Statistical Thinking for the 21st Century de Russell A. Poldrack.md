@@ -18,7 +18,7 @@ cover: Statistical Thinking for the 21st Century de Russell A. Poldrack.png
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

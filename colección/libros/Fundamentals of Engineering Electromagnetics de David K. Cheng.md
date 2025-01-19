@@ -18,7 +18,7 @@ cover: Fundamentals of Engineering Electromagnetics de David K. Cheng.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

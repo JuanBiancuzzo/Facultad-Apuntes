@@ -17,7 +17,7 @@ cover: The almanack of Naval Ravikant de Eric Jorgenson.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

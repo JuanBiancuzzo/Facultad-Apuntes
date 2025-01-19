@@ -18,7 +18,7 @@ cover: Data and Computer Communications de William Stallings.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

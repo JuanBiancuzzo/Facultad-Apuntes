@@ -18,7 +18,7 @@ cover: Algorithms, notes for Professionals de Stack Overflow.png
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

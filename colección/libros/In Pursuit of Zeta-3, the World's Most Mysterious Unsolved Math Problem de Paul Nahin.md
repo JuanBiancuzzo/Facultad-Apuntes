@@ -18,7 +18,7 @@ cover: In Pursuit of Zeta-3, the World's Most Mysterious Unsolved Math Problem d
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

@@ -17,7 +17,7 @@ cover: Hacker's delight de Henry S. Warren Jr.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

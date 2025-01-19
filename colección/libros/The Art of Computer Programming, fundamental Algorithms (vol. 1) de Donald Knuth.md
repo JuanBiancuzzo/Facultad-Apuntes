@@ -18,7 +18,7 @@ cover: The Art of Computer Programming, fundamental Algorithms (vol. 1) de Donal
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

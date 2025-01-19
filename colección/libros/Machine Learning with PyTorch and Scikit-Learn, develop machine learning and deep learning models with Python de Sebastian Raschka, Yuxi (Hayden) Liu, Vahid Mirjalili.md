@@ -22,7 +22,7 @@ cover: Machine Learning with PyTorch and Scikit-Learn, develop machine learning 
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

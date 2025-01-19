@@ -18,7 +18,7 @@ cover: The Art of Statistics, learning from Data de David Spiegelhalter.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

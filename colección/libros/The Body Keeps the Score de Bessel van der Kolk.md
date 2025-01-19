@@ -17,7 +17,7 @@ cover: The Body Keeps the Score de Bessel van der Kolk.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

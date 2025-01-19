@@ -17,7 +17,7 @@ cover: The Mechanical Design Process de David G. Ullman.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

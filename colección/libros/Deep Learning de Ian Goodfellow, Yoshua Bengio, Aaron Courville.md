@@ -22,7 +22,7 @@ cover: Deep Learning de Ian Goodfellow, Yoshua Bengio, Aaron Courville.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

@@ -17,7 +17,7 @@ cover: How Emotions Are Made de Lisa Feldman Barrett.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

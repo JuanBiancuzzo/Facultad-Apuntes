@@ -18,7 +18,7 @@ cover: Blue Team Handbook, SOC, SIEM, and Threat Hunting, A Condensed Guide for 
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

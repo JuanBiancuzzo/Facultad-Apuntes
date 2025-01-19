@@ -17,7 +17,7 @@ cover: The elements of mechanical design de James G. Skakoon.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

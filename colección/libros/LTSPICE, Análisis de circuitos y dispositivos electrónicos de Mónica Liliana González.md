@@ -17,7 +17,7 @@ cover: LTSPICE, Análisis de circuitos y dispositivos electrónicos de Mónica L
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

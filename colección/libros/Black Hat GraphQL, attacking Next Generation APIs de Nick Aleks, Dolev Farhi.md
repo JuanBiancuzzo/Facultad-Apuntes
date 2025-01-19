@@ -20,7 +20,7 @@ cover: Black Hat GraphQL, attacking Next Generation APIs de Nick Aleks, Dolev Fa
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

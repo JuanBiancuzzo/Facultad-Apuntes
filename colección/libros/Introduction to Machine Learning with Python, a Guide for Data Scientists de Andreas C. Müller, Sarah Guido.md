@@ -20,7 +20,7 @@ cover: Introduction to Machine Learning with Python, a Guide for Data Scientists
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

@@ -18,7 +18,7 @@ cover: Clean Code, a Handbook of Agile Software Craftsmanship de Robert C. Marti
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

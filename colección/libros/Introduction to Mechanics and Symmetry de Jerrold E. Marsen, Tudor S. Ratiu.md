@@ -19,7 +19,7 @@ cover: Introduction to Mechanics and Symmetry de Jerrold E. Marsen, Tudor S. Rat
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

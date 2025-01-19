@@ -18,7 +18,7 @@ cover: Introducing Python, modern Computing in Simple Packages de Bill Lubanovic
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

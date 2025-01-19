@@ -19,7 +19,7 @@ cover: System Design Interview, An Insider's Guide (Vol. 2) de Alex Xu, Sahn Lam
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

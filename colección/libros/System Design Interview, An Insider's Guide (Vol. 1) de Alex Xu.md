@@ -17,7 +17,7 @@ cover: System Design Interview, An Insider's Guide (Vol. 1) de Alex Xu.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

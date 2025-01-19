@@ -21,7 +21,7 @@ aliases:
   - TCP/IP Illustrated, the Implementation (vol. 2) de William R. Stevens, Gary Wright
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

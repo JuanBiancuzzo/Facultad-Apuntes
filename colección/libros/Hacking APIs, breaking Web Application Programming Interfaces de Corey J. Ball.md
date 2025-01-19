@@ -18,7 +18,7 @@ cover: Hacking APIs, breaking Web Application Programming Interfaces de Corey J.
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

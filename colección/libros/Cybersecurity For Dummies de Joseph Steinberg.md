@@ -17,7 +17,7 @@ cover: Cybersecurity For Dummies de Joseph Steinberg.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

@@ -18,7 +18,7 @@ cover: The Hundred-Page machine learning book de Andriy Burkov.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

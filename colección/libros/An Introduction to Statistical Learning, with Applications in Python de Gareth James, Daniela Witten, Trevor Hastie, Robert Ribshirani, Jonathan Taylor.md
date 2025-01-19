@@ -26,7 +26,7 @@ cover: An Introduction to Statistical Learning, with Applications in Python de G
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

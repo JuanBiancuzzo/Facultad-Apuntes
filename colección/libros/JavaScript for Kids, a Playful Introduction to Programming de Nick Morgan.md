@@ -18,7 +18,7 @@ cover: JavaScript for Kids, a Playful Introduction to Programming de Nick Morgan
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

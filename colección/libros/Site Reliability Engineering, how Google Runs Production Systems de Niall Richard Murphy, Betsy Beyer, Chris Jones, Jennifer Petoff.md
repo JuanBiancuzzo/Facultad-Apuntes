@@ -24,7 +24,7 @@ cover: Site Reliability Engineering, how Google Runs Production Systems de Niall
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

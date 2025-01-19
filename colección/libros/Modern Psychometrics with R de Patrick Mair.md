@@ -18,7 +18,7 @@ cover: Modern Psychometrics with R de Patrick Mair.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

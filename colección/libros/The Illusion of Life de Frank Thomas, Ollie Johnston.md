@@ -36,7 +36,7 @@ aliases:
   - Anticipación#Anticipation
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 referencias:
   - "22"

@@ -20,7 +20,7 @@ cover: The Mathematical Principles of Natural Philosophy, the Principia de Isaac
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

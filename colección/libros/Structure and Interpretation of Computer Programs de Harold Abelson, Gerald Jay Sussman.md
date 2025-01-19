@@ -19,7 +19,7 @@ cover: Structure and Interpretation of Computer Programs de Harold Abelson, Gera
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

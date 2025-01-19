@@ -22,7 +22,7 @@ cover: The Feynman Lectures on Physics, Quantum Mechanics de Richard P. Feynman,
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

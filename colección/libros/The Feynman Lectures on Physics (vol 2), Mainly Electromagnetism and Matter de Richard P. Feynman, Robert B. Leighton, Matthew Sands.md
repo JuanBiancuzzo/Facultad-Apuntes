@@ -22,7 +22,7 @@ cover: The Feynman Lectures on Physics, Mainly Electromagnetism and Matter de Ri
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

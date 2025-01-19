@@ -158,7 +158,7 @@ aliases:
   - "Digital Computer Electronics de Albert P. Malvino, Jerald A. Brown, Capítulo 23: Subroutine and Stack instructions#Capítulo 23: Subroutine and Stack instructions"
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

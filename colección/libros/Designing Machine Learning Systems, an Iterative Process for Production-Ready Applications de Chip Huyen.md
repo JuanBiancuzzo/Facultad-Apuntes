@@ -18,7 +18,7 @@ cover: Designing Machine Learning Systems, an Iterative Process for Production-R
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

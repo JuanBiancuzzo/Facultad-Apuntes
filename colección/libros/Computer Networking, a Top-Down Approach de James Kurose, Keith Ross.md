@@ -92,7 +92,7 @@ aliases:
   - "Computer Networking, a Top-Down Approach de James Kurose, Keith Ross, Capítulo 9: Multimedia Networking#Capítulo 9: Multimedia Networking"
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

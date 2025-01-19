@@ -20,7 +20,7 @@ cover: Algorithms de Robert Sedgewick, Kevin Wayne.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

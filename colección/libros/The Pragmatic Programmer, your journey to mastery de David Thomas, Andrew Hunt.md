@@ -20,7 +20,7 @@ cover: The Pragmatic Programmer, your journey to mastery de David Thomas, Andrew
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

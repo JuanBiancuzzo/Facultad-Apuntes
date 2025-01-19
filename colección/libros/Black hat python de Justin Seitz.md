@@ -17,7 +17,7 @@ cover: Black hat python de Justin Seitz.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

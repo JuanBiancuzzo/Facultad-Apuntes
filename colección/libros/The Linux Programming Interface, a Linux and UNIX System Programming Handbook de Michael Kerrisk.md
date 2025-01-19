@@ -18,7 +18,7 @@ cover: The Linux Programming Interface, a Linux and UNIX System Programming Hand
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
   - ingeniería-en-informática/tpp/Propuesta
 ---

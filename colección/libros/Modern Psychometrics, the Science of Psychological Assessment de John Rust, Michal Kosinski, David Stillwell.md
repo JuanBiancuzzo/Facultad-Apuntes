@@ -22,7 +22,7 @@ cover: Modern Psychometrics, the Science of Psychological Assessment de John Rus
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

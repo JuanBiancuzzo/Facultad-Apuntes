@@ -17,7 +17,7 @@ cover: Refactoring, Improving the Design of Existing Code de Martin Fowler.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

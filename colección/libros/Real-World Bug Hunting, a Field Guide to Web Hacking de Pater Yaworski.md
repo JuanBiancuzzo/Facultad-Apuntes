@@ -18,7 +18,7 @@ cover: Real-World Bug Hunting, a Field Guide to Web Hacking de Pater Yaworski.jp
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

@@ -18,7 +18,7 @@ cover: The Hacker Playbook, practical Guide To Penetration Testing (vol. 1) de P
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

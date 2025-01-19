@@ -18,7 +18,7 @@ cover: OSINT Techniques, resources for Uncovering Online Information de Michael 
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

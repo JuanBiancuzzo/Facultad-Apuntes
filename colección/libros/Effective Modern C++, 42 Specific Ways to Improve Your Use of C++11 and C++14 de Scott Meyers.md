@@ -18,7 +18,7 @@ cover: Effective Modern C++, 42 Specific Ways to Improve Your Use of C++11 and C
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

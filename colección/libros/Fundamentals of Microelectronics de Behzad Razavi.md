@@ -84,7 +84,7 @@ aliases:
   - "Fundamentals of Microelectronics de Behzad Razavi, Capítulo 16: Digital CMOS Circuits#Capítulo 16: Digital CMOS Circuits"
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

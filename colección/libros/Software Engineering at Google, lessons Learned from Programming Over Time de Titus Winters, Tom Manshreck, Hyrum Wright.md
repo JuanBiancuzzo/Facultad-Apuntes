@@ -22,7 +22,7 @@ cover: Software Engineering at Google, lessons Learned from Programming Over Tim
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

@@ -18,7 +18,7 @@ cover: Database Internals, A Deep Dive into How Distributed Data Systems Work de
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

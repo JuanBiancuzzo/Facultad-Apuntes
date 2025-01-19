@@ -18,7 +18,7 @@ cover: A Tour of C++ de Bjarne Stroustrup.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

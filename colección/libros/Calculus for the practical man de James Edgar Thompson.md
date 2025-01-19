@@ -17,7 +17,7 @@ cover: Calculus for the practical man de James Edgar Thompson.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

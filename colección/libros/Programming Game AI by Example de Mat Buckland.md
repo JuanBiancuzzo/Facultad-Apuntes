@@ -18,7 +18,7 @@ cover: Programming Game AI by Example de Mat Buckland.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

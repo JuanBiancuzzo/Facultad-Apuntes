@@ -49,7 +49,7 @@ aliases:
   - "Programming with STM32, getting Started with the Nucleo Board and C/C++ de Donald Norris, Capítulo 11: Direct Memory Access (DMA) and the Digital-to-Analog Converter (DAC)#Capítulo 11: Direct Memory Access (DMA) and the Digital-to-Analog Converter (DAC)"
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

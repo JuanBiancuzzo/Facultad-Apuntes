@@ -76,7 +76,7 @@ aliases:
   - "Circuitos Microelectrónicos de Adel S. Sedra, Kenneth C. Smith, Capítulo 14: Circuitos Digitales Bipolares y de tecnología avanzada#Capítulo 14: Circuitos Digitales Bipolares y de tecnología avanzada"
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

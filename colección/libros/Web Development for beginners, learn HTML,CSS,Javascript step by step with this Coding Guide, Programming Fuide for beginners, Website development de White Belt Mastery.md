@@ -18,7 +18,7 @@ cover: Web Development for beginners, learn HTML,CSS,Javascript step by step wit
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

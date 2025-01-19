@@ -82,7 +82,7 @@ aliases:
   - "Cálculo de varias variables, trascendentes tempranas de James Stewart, Capítulo 17: Ecuaciones diferenciales de segundo orden#Capítulo 17: Ecuaciones diferenciales de segundo orden"
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

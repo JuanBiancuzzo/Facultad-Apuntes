@@ -18,7 +18,7 @@ cover: Cálculo de una variable, trascendentes tempranas de James Stewart.png
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

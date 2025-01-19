@@ -17,7 +17,7 @@ cover: How to lie with statistics de Derrell Huff.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

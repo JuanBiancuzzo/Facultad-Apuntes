@@ -20,7 +20,7 @@ cover: Computer Systems, a Programmer's Perspective de Randal Bryant, David O'Ha
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

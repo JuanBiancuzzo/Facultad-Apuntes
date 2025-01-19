@@ -20,7 +20,7 @@ cover: Frontiers of Test Validity Theory, measurement, Causation, and Meaning de
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

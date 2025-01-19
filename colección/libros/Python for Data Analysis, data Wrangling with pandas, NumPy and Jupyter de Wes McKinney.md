@@ -18,7 +18,7 @@ cover: Python for Data Analysis, data Wrangling with pandas, NumPy and Jupyter d
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
   - investigación/lenguajes-de-programación/Lenguaje-Python/NumPy
   - investigación/lenguajes-de-programación/Lenguaje-Python/Pandas

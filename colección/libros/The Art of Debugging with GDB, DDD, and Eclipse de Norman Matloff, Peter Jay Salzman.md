@@ -20,7 +20,7 @@ cover: The Art of Debugging with GDB, DDD, and Eclipse de Norman Matloff, Peter 
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

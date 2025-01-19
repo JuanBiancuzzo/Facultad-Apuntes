@@ -18,7 +18,7 @@ cover: Zero to Production in Rust, an instroduction to backend development de Lu
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

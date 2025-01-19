@@ -18,7 +18,7 @@ cover: Extreme Privacy, what It Takes to Disappear de Michael Bazzell.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

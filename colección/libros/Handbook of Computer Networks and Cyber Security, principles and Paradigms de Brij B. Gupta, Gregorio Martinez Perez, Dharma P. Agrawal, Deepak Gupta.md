@@ -24,7 +24,7 @@ cover: Handbook of Computer Networks and Cyber Security, principles and Paradigm
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

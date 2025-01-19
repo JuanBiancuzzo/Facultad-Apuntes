@@ -17,7 +17,7 @@ cover: Designing data-intensive applications de Martin Kleppmann.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

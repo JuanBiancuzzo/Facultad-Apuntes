@@ -20,7 +20,7 @@ cover: Python Machine Learning, machine Learning and Deep Learning with Python, 
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

@@ -20,7 +20,7 @@ cover: Ingeniería Electromagnética (vol. 1) de Walter Gustavo Fano, Valentino 
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

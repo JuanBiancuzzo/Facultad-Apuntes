@@ -18,7 +18,7 @@ cover: The Art of Computer Programming, combinatorial Algorithms, part 2 (vol. 4
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

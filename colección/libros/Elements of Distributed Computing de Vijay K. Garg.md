@@ -18,7 +18,7 @@ cover: Elements of Distributed Computing de Vijay K. Garg.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
   - ingeniería-en-informática/tpp/Propuesta
 ---

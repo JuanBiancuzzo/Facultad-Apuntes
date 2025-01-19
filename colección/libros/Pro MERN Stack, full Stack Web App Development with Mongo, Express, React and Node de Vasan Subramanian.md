@@ -18,7 +18,7 @@ cover: Pro MERN Stack, full Stack Web App Development with Mongo, Express, React
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

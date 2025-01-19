@@ -17,7 +17,7 @@ cover: Creating animated cartoons with character de Joe Murray.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

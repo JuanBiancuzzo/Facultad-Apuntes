@@ -19,7 +19,7 @@ cover: Feynman's Lost Lecture de David L. Goodstein, Judith R. Goodstein.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

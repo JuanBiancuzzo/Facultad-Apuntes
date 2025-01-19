@@ -104,7 +104,7 @@ aliases:
   - "Fundamentos de Circuitos Amplificadores de Gregorio Oscar Glas, Julio Guillermo Zola, Capítulo 14: Análisis de la ganancia de lazo en los amplificadores realimentados#Capítulo 14: Análisis de la ganancia de lazo en los amplificadores realimentados"
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

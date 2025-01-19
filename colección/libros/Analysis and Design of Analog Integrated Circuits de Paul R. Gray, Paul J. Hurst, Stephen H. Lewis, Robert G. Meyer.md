@@ -56,7 +56,7 @@ aliases:
   - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 12: Fully Differential Operational Amplifiers#Capítulo 12: Fully Differential Operational Amplifiers"
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

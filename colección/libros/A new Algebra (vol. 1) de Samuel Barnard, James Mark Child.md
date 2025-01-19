@@ -20,7 +20,7 @@ cover: A new Algebra (vol. 1) de Samuel Barnard, J M Child.jpg
 aliases: []
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

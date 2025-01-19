@@ -17,7 +17,7 @@ cover: Gentleman Programming Book de Alan Buscaglia.png
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

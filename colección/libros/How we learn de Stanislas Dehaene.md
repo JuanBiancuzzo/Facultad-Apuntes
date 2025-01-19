@@ -17,7 +17,7 @@ cover: How we learn de Stanislas Dehaene.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

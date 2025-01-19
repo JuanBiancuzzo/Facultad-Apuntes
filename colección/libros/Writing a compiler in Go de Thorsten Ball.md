@@ -17,7 +17,7 @@ cover: Writing a Compiler in Go de Thorsten Ball.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

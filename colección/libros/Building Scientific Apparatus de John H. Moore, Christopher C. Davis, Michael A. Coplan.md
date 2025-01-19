@@ -22,7 +22,7 @@ cover: Building Scientific Apparatus de John H. Moore, Christopher C. Davis, Mic
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

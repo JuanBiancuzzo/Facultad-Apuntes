@@ -74,7 +74,7 @@ aliases:
   - "Álgebra I de Teresa Krick, Capítulo 7: Polinomios#Capítulo 7: Polinomios"
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

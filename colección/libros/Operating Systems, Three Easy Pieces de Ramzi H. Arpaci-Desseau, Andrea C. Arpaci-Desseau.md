@@ -421,7 +421,7 @@ aliases:
   - "Operating Systems, Three Easy Pieces de Ramzi H. Arpaci-Desseau, Andrea C. Arpaci-Desseau, Capítulo 50: Summary Dialogue on Distribution#Capítulo 50: Summary Dialogue on Distribution"
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 subtituloObra:
 ---

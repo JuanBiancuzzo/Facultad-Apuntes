@@ -18,7 +18,7 @@ cover: The Clean Coder, a Code of Conduct for Professional Programmers de Robert
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

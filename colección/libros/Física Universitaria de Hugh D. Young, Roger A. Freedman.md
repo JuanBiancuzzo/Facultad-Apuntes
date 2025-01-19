@@ -19,7 +19,7 @@ cover: Física Universitaria de Hugh D. Young, Roger A. Freedman.png
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

@@ -20,7 +20,7 @@ cover: Practical electronics for inventors de Paul Scherz, Simon Monk.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

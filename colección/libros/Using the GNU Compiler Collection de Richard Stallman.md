@@ -18,7 +18,7 @@ cover: Using the GNU Compiler Collection de Richard Stallman.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

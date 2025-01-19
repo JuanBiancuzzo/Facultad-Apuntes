@@ -18,7 +18,7 @@ cover: Understanding Distributed Systems, What every developer should know about
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

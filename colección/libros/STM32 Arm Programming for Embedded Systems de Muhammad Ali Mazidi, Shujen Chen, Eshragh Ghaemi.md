@@ -40,7 +40,7 @@ aliases:
   - "STM32 Arm Programming for Embedded Systems de Muhammad Ali Mazidi, Shujen Chen, Eshragh Ghaemi, Capítulo 13: DMA Programing#Capítulo 13: DMA Programing"
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

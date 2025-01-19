@@ -20,7 +20,7 @@ cover: Cybersecurity Ops with bash, attack, Defend, and Analyze from the Command
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

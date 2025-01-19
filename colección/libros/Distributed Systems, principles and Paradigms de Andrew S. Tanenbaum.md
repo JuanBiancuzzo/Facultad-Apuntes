@@ -18,7 +18,7 @@ cover: Distributed Systems, pRinciples and Paradigms de Andrew S. Tanenbaum.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
   - ingeniería-en-informática/tpp/Propuesta
 ---

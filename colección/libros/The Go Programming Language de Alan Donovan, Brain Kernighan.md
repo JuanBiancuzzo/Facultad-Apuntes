@@ -20,7 +20,7 @@ cover: The Go Programming Language de Alan Donovan, Brain Kernighan.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

@@ -20,7 +20,7 @@ cover: Learn Windows PowerShell in a Month of Lunches de Don Jones, Jeffery Hick
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

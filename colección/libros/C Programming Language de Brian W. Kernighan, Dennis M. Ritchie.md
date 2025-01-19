@@ -20,7 +20,7 @@ cover: C Programming Language de Brian W. Kernighan, Dennis M. Ritchie.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

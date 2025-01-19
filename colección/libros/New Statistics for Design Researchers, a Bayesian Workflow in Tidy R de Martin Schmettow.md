@@ -18,7 +18,7 @@ cover: New Statistics for Design Researchers, a Bayesian Workflow in Tidy R de M
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

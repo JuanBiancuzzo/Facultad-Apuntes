@@ -30,7 +30,7 @@ aliases:
   - "Self-Sensing Concrete in Smart Structures de Baoguo Han, Xun Yu, Jinping Ou, Capítulo 11: Challenges of Self-Sensing Concrete#Capítulo 11: Challenges of Self-Sensing Concrete"
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

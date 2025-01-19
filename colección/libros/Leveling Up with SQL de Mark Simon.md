@@ -17,7 +17,7 @@ cover: Leveling Up with SQL de Mark Simon.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

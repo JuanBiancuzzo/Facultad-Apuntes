@@ -19,7 +19,7 @@ aliases:
   - TCP/IP Illustrated, the Protocols (vol. 1) de William R. Stevens
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

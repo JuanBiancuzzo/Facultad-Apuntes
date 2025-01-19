@@ -20,7 +20,7 @@ cover: The Book Of Shaders de Patricio Gonzalez Vivo, Jen Lowe.png
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

@@ -28,7 +28,7 @@ aliases:
   - "Machine Learning for Data Science Handbook, data Mining and Knowledge Discovery Handbook de Lior Rokach, Oded Maimon, Erez Shmueli, Capítulo 16: Autoencoders#Capítulo 16: Autoencoders"
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

@@ -18,7 +18,7 @@ cover: The signal and the noise, why so many predictions fail - bus some don't d
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

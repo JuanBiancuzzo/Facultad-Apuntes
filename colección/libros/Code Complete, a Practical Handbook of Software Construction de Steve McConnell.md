@@ -18,7 +18,7 @@ cover: Code Complete, a Practical Handbook of Software Construction de Steve McC
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

@@ -18,7 +18,7 @@ cover: Fundamentos de programación, algoritmos, estructuras de datos y objetos 
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

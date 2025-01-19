@@ -18,7 +18,7 @@ cover: In Pursuit of the Unknown, 17 Equations That Changed the World de Ian Ste
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

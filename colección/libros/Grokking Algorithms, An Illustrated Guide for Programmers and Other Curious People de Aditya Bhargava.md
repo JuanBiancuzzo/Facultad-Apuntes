@@ -18,7 +18,7 @@ cover: Grokking Algorithms, An Illustrated Guide for Programmers and Other Curio
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

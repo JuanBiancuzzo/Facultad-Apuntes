@@ -28,7 +28,7 @@ aliases:
   - "Machine Learning Guide for Oil and Gas Using Python, a Step-by-Step Breakdown with Data, Algorithms, Codes, and Applications de Hoss Belyadi, Alireza Haghighat, Capítulo 5: Supervised learning#Capítulo 5: Supervised learning"
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

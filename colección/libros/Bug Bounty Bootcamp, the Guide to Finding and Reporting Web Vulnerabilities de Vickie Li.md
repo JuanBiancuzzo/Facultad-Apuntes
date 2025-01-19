@@ -18,7 +18,7 @@ cover: Bug Bounty Bootcamp, the Guide to Finding and Reporting Web Vulnerabiliti
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

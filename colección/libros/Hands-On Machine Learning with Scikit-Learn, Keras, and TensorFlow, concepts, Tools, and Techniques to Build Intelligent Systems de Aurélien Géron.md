@@ -18,7 +18,7 @@ cover: Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, conce
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

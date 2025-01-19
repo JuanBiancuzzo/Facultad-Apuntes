@@ -18,7 +18,7 @@ cover: The Practice of Network Security Monitoring, understanding Incident Detec
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

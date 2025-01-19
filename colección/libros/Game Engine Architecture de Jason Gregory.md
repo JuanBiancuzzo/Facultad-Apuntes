@@ -17,7 +17,7 @@ cover: Game Engine Architecture de Jason Gregory.png
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

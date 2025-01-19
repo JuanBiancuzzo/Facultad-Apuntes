@@ -23,7 +23,7 @@ cover: Introduction to Algorithms de Thomas H. Cormen, Charles E. Leiserson, Ron
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

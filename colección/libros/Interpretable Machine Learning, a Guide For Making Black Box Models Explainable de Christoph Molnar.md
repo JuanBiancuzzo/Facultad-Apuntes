@@ -18,7 +18,7 @@ cover: Interpretable Machine Learning, a Guide For Making Black Box Models Expla
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

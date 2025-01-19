@@ -18,7 +18,7 @@ cover: Machine Learning, a Probabilistic Perspective de Kevin P. Murphy.jpg
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

@@ -23,7 +23,7 @@ cover: UNIX and Linux System Administration Handbook de Evi Nemeth, Garth Snyder
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
   - ingeniería-en-informática/tpp/Propuesta
 ---

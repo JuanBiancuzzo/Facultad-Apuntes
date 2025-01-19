@@ -18,7 +18,7 @@ cover: Distributed Operating Systems, concepts and Design de Pradeep K. Sinha.jp
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
   - ingeniería-en-informática/tpp/Propuesta
 ---

@@ -23,7 +23,7 @@ cover: Metasploit The penetration tester's guide de David Kennedy, Devon Kearns,
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

@@ -18,7 +18,7 @@ cover: The Art of Computer Programming, seminumerical Algorithms (vol. 2) de Don
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

@@ -18,7 +18,7 @@ cover: The Art of Computer Programing, sorting and Searching (vol. 3) de Donald 
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

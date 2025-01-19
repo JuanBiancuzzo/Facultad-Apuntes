@@ -22,7 +22,7 @@ cover: Practical Statistics for Data Scientists, 50+ Essential Concepts Using R 
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

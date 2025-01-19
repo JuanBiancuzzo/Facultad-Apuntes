@@ -19,7 +19,7 @@ cover: The web applications hacke's handbook de Dafydd Stuttard, Marcus Pinto.jp
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

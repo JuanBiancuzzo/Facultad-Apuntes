@@ -20,7 +20,7 @@ cover: Algoritmos computacionales, introducción al análisis y diseño de Sara 
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

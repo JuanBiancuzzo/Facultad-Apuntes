@@ -22,7 +22,7 @@ cover: Natural Language Processing in Action, understanding, analyzing, and gene
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs

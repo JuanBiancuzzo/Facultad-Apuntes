@@ -24,7 +24,7 @@ cover: Dive into Deep Learning de Aston Zhang, Zachary C. Lipton, Mu Li, Alexand
 aliases: 
 tags:
   - referencia/libro
-  - biblioteca/libro
+  - colección/biblioteca/libro
   - nota/investigacion
 ---
 ```dataviewjs
