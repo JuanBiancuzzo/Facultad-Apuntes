@@ -13,7 +13,7 @@
     const dv = app.plugins.plugins.dataview.api;
     const tArchivo = tp.file.find_tfile(tp.file.path(true));
 
-    let resultado = await tp.user.crearPreguntas().preguntar(
+    let resultado = await tp.user.crearPreguntas(
         tp, libreriaFunciones.obtenerDefault, libreriaFunciones.actualizarDatos,
         libreriaFunciones.generarPreguntas, "Agregar función",
     );

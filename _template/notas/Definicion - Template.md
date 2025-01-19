@@ -124,17 +124,24 @@
         .sort(({ [DATOS_REFERENCIA.numReferencia]: numReferencia }) => numReferencia)
         .map(datosReferencia => ({ numero: datosReferencia[DATOS_REFERENCIA.numReferencia], datos: datosReferencia, usado: false }));
 
-    let referenciasUsar = await tp.user.crearPreguntas().preguntar(
-        tp, () => ({ uso: [] }), (tp, datos, respuesta) => {
+    let referenciasUsar = await tp.user.crearPreguntas(
+        tp, (TIPOS_DE_DEFAULT, crearFuncion) => crearFuncion(TIPOS_DE_DEFAULT.array, () => {
+            return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
+                numero: TIPOS_DE_DEFAULT.simple,
+                datos: TIPOS_DE_DEFAULT.diccionario,
+                usado: TIPOS_DE_DEFAULT.simple,
+            }));
+        }),
+        (tp, datos, respuesta) => {
             if (respuesta == SALIR) return true;
 
-            let datosReferencia = datos.uso.find(({ numero }) => numero == respuesta);
+            let datosReferencia = datos.find(({ numero }) => numero == respuesta);
             datosReferencia.usado = !datosReferencia.usado;
 
             return false;
         }, (tp, datos) => {
             let opciones = [], valores = [];
-            for (let { numero, datos: datosReferencia, usado } of datos.uso) {
+            for (let { numero, datos: datosReferencia, usado } of datos) {
                 opciones.push(numero);
                 let estado = usado ? SIMBOLOS.sacar : SIMBOLOS.agregar;
                 valores.push(` ${estado} ${referencia.describir(tp, datosReferencia)}`);
@@ -143,11 +150,10 @@
             opciones.push(SALIR);
             valores.push(` ${SIMBOLOS.volver} Confirmar datos`);
             return { opciones: opciones, valores: valores };
-        }, "Que referencias que quiere usar?",
-        { uso: referenciasResumen.values }
+        }, "Que referencias que quiere usar?", referenciasResumen.values,
     );
 
-    referenciasUsar = referenciasUsar.uso
+    referenciasUsar = referenciasUsar
         .filter(({ usado }) => usado)
         .map(({ numero }) => numero.toString());
 

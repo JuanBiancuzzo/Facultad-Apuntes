@@ -1,14 +1,15 @@
 const MODIFICAR_AUTOR = "modificar autore";
 const ELIMINAR_AUTOR = "eliminar autore";
 
+const SALIR = "salir";
+
 async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
-    const { salir: SALIR, curso: { 
-        NOMBRE_AUTORES, FECHA_CURSO, NOMBRE_CURSO, NOMBRE_PAGINA, URL
-    } } = tp.user.constantes().DATOS.REFERENCIAS;
-    const TAGS = tp.user.constantes().TAGS;
+    const {  
+        CARACTERES_INVALIDOS, TAGS: { curso: TAGS_CURSO }, 
+        DATOS: { REFERENCIAS: { curso: DATOS_CURSO }, CURSO: DATOS_ARCHIVO_CURSO },
+    } = tp.user.constantes();
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
-    const validar = tp.user.whiteList();
 
     let salir = false;
     let separacion = respuesta.split("-");
@@ -18,78 +19,84 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
     switch (respuesta) {
         case MODIFICAR_AUTOR: 
             indice = separacion[1];
-            let { nombre: viejoNombre, apellido: viejoApellido } = datos[NOMBRE_AUTORES][indice];
+            let { 
+                [DATOS_CURSO.profesore.nombre]: viejoNombre, 
+                [DATOS_CURSO.profesore.apellido]: viejoApellido,
+            } = datos[DATOS_CURSO.profesore.self][indice];
 
             let nuevoApellido = await preguntar.prompt(
                 tp, `Nuevo apellido, donde antes era ${viejoApellido}:`,
-                error.Quit("No se ingresa el apellido del autore de forma correcta")
+                error.Quit("No se ingresa el apellido del profesore de forma correcta")
             );
 
             let nuevoNombre = await preguntar.prompt(
                 tp, `Nuevo nombre, donde antes era ${viejoNombre}:`,
-                error.Quit("No se ingresa el nombre del autore de forma correcta")
+                error.Quit("No se ingresa el nombre del profesore de forma correcta")
             );
 
-            datos[NOMBRE_AUTORES][indice] = { nombre: nuevoNombre, apellido: nuevoApellido };
+            datos[DATOS_CURSO.profesore.self][indice] = { 
+                [DATOS_CURSO.profesore.nombre]: nuevoNombre, 
+                [DATOS_CURSO.profesore.apellido]: nuevoApellido ,
+            };
             break;
 
-        case NOMBRE_AUTORES: 
-            datos[NOMBRE_AUTORES].push({
-                apellido: await preguntar.prompt(
-                    tp, "Apellido del autore",
-                    error.Quit("No se ingresa el apellido del autore de forma correcta")
+        case DATOS_CURSO.profesore.self: 
+            datos[DATOS_CURSO.profesore.self].push({
+                [DATOS_CURSO.profesore.apellido]: await preguntar.prompt(
+                    tp, "Apellido del profesore",
+                    error.Quit("No se ingresa el apellido del profesore de forma correcta")
                 ),
-                nombre: await preguntar.prompt(
-                    tp, "Nombre del autore",
-                    error.Quit("No se ingresa el nombre del autore de forma correcta")
+                [DATOS_CURSO.profesore.nombre]: await preguntar.prompt(
+                    tp, "Nombre del profesore",
+                    error.Quit("No se ingresa el nombre del profesore de forma correcta")
                 ),
             });
             break;
 
         case ELIMINAR_AUTOR: 
-            datos[NOMBRE_AUTORES].pop();
+            datos[DATOS_CURSO.profesore.self].pop();
             break;
 
-        case FECHA_CURSO:
-            datos[FECHA_CURSO] = await preguntar.numero(
-                tp, datos[FECHA_CURSO] 
-                    ? `Nuevo año de creación, donde antes era ${datos[FECHA_CURSO]}`
+        case DATOS_CURSO.fecha:
+            datos[DATOS_CURSO.fecha] = await preguntar.numero(
+                tp, datos[DATOS_CURSO.fecha] 
+                    ? `Nuevo año de creación, donde antes era ${datos[DATOS_CURSO.fecha]}`
                     : "Año de creación del curso",
                 error.Quit("No se ingresó año de creación del curso")
             );
             break;
 
-        case NOMBRE_CURSO:
+        case DATOS_CURSO.nombre:
             let nombreCurso = await preguntar.prompt(
-                tp, datos[NOMBRE_CURSO]
-                    ? `Nuevo nombre del curso, donde antes era ${datos[NOMBRE_CURSO]}`
+                tp, datos[DATOS_CURSO.nombre]
+                    ? `Nuevo nombre del curso, donde antes era ${datos[DATOS_CURSO.nombre]}`
                     : "Nombre del curso",
                 error.Quit("No se ingresó el nombre del curso")
             );
 
             const dv = app.plugins.plugins.dataview.api;
-            let cursos = dv.pages(`#${TAGS.curso} and -#${TAGS.resumenCurso}`)
-                .filter(indice => indice.file.name !== undefined);
+            let cursoExistente = dv.pages(`#${TAGS_CURSO.self}/${TAGS_CURSO.curso}`)
+                .find(curso => curso[DATOS_ARCHIVO_CURSO.nombre] == nombreCurso);
 
-            if (!validar.validarNombre(tp, nombreCurso) || cursos.find(curso => curso.file.name == nombreCurso))
+            if (cursoExistente || CARACTERES_INVALIDOS.some(caracterInvalido => nombreCurso.includes(caracterInvalido)))
                 throw error.Quit("Nombre de curso invalido");
 
-            datos[NOMBRE_CURSO] = nombreCurso;
+            datos[DATOS_CURSO.nombre] = nombreCurso;
             break;
 
-        case NOMBRE_PAGINA:
-            datos[NOMBRE_PAGINA] = await preguntar.prompt(
-                tp, datos[NOMBRE_PAGINA]
-                    ? `Nuevo nombre de la página del curso, donde antes era ${datos[NOMBRE_PAGINA]}`
+        case DATOS_CURSO.pagina:
+            datos[DATOS_CURSO.pagina] = await preguntar.prompt(
+                tp, datos[DATOS_CURSO.pagina]
+                    ? `Nuevo nombre de la página del curso, donde antes era ${datos[DATOS_CURSO.pagina]}`
                     : "Nombre de la página del curso",
                 error.Quit("No se ingresó el nombre de la página del curso")
             );
             break;
 
-        case URL: 
-            datos[URL] = await preguntar.prompt(
-                tp, datos[URL] 
-                    ? `Nuevo URL de la página, donde antes era ${datos[URL]}` 
+        case DATOS_CURSO.url: 
+            datos[DATOS_CURSO.url] = await preguntar.prompt(
+                tp, datos[DATOS_CURSO.url] 
+                    ? `Nuevo URL de la página, donde antes era ${datos[DATOS_CURSO.url]}` 
                     : "URL de la página",
                 error.Quit("No se ingresó el url de la página")
             );
@@ -104,88 +111,93 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
 }
 
 function generarPreguntas(tp, datos) {
-    const { salir: SALIR, curso: { 
-        NOMBRE_AUTORES, FECHA_CURSO, NOMBRE_CURSO, NOMBRE_PAGINA, URL
-    } } = tp.user.constantes().DATOS.REFERENCIAS;
+    const { SIMBOLOS, DATOS: { REFERENCIAS: { curso: DATOS_CURSO } } } = tp.user.constantes();
     let opciones = [];
     let valores = [];
 
-    for (let [indice, autor] of datos[NOMBRE_AUTORES].entries()) {
-        let { nombre, apellido } = autor;
+    for (let [indice, profesore] of datos[DATOS_CURSO.profesore.self].entries()) {
+        let { [DATOS_CURSO.profesore.nombre]:nombre, [DATOS_CURSO.profesore.apellido]:apellido } = profesore;
         opciones.push(`${MODIFICAR_AUTOR}-${indice}`);
-        valores.push(`️ ️✏️ Modificar el autore ${nombre} ${apellido}`);
+        valores.push(`️ ️${SIMBOLOS.modificar}️ Modificar el profesore ${nombre} ${apellido}`);
     }
 
-    let cantidadAutores = datos[NOMBRE_AUTORES].length;
+    let cantidadAutores = datos[DATOS_CURSO.profesore.self].length;
     if (cantidadAutores == 0) {
-        opciones.push(NOMBRE_AUTORES);
-        valores.push(" ⊕ Nombre del autore");
+        opciones.push(DATOS_CURSO.profesore.self);
+        valores.push(` ${SIMBOLOS.agregar} Nombre del profesore`);
+
     } else {
-        let { nombre, apellido } = datos[NOMBRE_AUTORES][cantidadAutores - 1];
+        let { 
+            [DATOS_CURSO.profesore.nombre]:nombre, 
+            [DATOS_CURSO.profesore.apellido]:apellido 
+        } = datos[DATOS_CURSO.profesore.self][cantidadAutores - 1];
+
         opciones.push(ELIMINAR_AUTOR);
-        valores.push(` ⊖ Eliminar ${nombre} ${apellido}`);
+        valores.push(` ${SIMBOLOS.sacar} Eliminar ${nombre} ${apellido}`);
 
-        opciones.push(NOMBRE_AUTORES);
-        valores.push(" ⊕ (opcional) Nombre del autore");
+        opciones.push(DATOS_CURSO.profesore.self);
+        valores.push(` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Nombre del profesore`);
     }
 
-    opciones.push(NOMBRE_CURSO);
-    valores.push(datos[NOMBRE_CURSO]
-        ? `️ ️✏️ Modificar el nombre del curso, donde era ${datos[NOMBRE_CURSO]}`
-        : " ⊕ Nombre del curso"
+    opciones.push(DATOS_CURSO.nombre);
+    valores.push(datos[DATOS_CURSO.nombre]
+        ? `️ ️${SIMBOLOS.modificar}️ Modificar el nombre del curso, donde era ${datos[DATOS_CURSO.nombre]}`
+        : ` ${SIMBOLOS.agregar} Nombre del curso`
     );
 
-    opciones.push(NOMBRE_PAGINA);
-    valores.push(datos[NOMBRE_PAGINA]
-        ? `️ ️✏️ Modificar el nombre de la página del curso, donde era ${datos[NOMBRE_PAGINA]}`
-        : " ⊕ Nombre de la página del curso"
+    opciones.push(DATOS_CURSO.pagina);
+    valores.push(datos[DATOS_CURSO.pagina]
+        ? `️ ️${SIMBOLOS.modificar}️ Modificar el nombre de la página del curso, donde era ${datos[DATOS_CURSO.pagina]}`
+        : ` ${SIMBOLOS.agregar} Nombre de la página del curso`
     );
 
-    opciones.push(FECHA_CURSO);
-    valores.push(datos[FECHA_CURSO]
-        ? `️ ️✏️ Modificar el año de creación del curso, donde era ${datos[FECHA_CURSO]}`
-        : " ⊕ Año de creación del curso"
+    opciones.push(DATOS_CURSO.fecha);
+    valores.push(datos[DATOS_CURSO.fecha]
+        ? `️ ️${SIMBOLOS.modificar}️ Modificar el año de creación del curso, donde era ${datos[DATOS_CURSO.fecha]}`
+        : ` ${SIMBOLOS.agregar} Año de creación del curso`
     );
 
-    opciones.push(URL);
-    valores.push(datos[URL]
-        ? `️ ️✏️ Modificar el URL, donde era ${datos[URL]}`
-        : " ⊕ URL de la página"
+    opciones.push(DATOS_CURSO.url);
+    valores.push(datos[DATOS_CURSO.url]
+        ? `️ ️${SIMBOLOS.modificar} Modificar el URL, donde era ${datos[DATOS_CURSO.url]}`
+        : ` ${SIMBOLOS.agregar} URL de la página`
     );
 
-    if (datos[NOMBRE_AUTORES].length > 0) {
-        opciones.push(TEMAS);
-        valores.push(" ⊕ (opcional) Tema del curso");
-    }
-
-    if (datos[NOMBRE_AUTORES].length > 0 && [FECHA_CURSO, NOMBRE_CURSO, NOMBRE_PAGINA, URL].every(key => datos[key])) {
+    let DATOS_SIMPLES = [DATOS_CURSO.fecha, DATOS_CURSO.nombre, DATOS_CURSO.pagina, DATOS_CURSO.url];
+    if (datos[DATOS_CURSO.profesore.self].length > 0 && DATOS_SIMPLES.every(key => datos[key])) {
         opciones.push(SALIR);
-        valores.push(" ↶ Confirmar datos");
+        valores.push(` ${SIMBOLOS.volver} Confirmar datos`);
     }
 
     return { opciones: opciones, valores: valores };
 }
 
 function describir(tp, datos) {
-    const { NOMBRE_AUTORES, NOMBRE_CURSO, NOMBRE_PAGINA } = tp.user.constantes().DATOS.REFERENCIAS.curso;
+    const { DATOS: { REFERENCIAS: { curso: DATOS_CURSO } } } = tp.user.constantes();
     let autores = [];
-    for (let { nombre, apellido } of datos[NOMBRE_AUTORES]) {
+    for (let { [DATOS_CURSO.profesore.nombre]: nombre, [DATOS_CURSO.profesore.apellido]: apellido } of datos[DATOS_CURSO.profesore.self]) {
         autores.push(`${apellido}, ${nombre[0]}.`);
     }
 
-    return `${datos[NOMBRE_CURSO]} de ${autores.join(", ")}, publicado en ${datos[NOMBRE_PAGINA]}`;
+    return `${datos[DATOS_CURSO.nombre]} de ${autores.join(", ")}, publicado en ${datos[DATOS_CURSO.pagina]}`;
 }
 
 module.exports = () => ({
-    obtenerDefault: (tp) => {
-        const { NOMBRE_AUTORES, FECHA_CURSO, NOMBRE_CURSO, NOMBRE_PAGINA, URL } = tp.user.constantes().DATOS.REFERENCIAS.curso;
-        return {
-            [NOMBRE_AUTORES]: [],
-            [FECHA_CURSO]: null,
-            [NOMBRE_CURSO]: null,
-            [NOMBRE_PAGINA]: null,
-            [URL]: null,
-        }
+    obtenerDefault: (tp, TIPOS_DE_DEFAULT, crearFuncion) => {
+        const { DATOS: { REFERENCIAS: { curso: DATOS_CURSO } } } = tp.user.constantes();
+
+        return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
+            [DATOS_CURSO.profesore.self]: crearFuncion(TIPOS_DE_DEFAULT.array, () => {
+                return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
+                    [DATOS_CURSO.profesore.nombre]: TIPOS_DE_DEFAULT.simple,
+                    [DATOS_CURSO.profesore.apellido]: TIPOS_DE_DEFAULT.simple,
+                }));
+            }),
+            [DATOS_CURSO.fecha]: TIPOS_DE_DEFAULT.simple,
+            [DATOS_CURSO.nombre]: TIPOS_DE_DEFAULT.simple,
+            [DATOS_CURSO.pagina]: TIPOS_DE_DEFAULT.simple,
+            [DATOS_CURSO.url]: TIPOS_DE_DEFAULT.simple,
+        }));
     },
     actualizarDatos: actualizarDatos,
     generarPreguntas: generarPreguntas,

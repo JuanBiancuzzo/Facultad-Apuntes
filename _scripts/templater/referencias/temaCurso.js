@@ -2,35 +2,33 @@ const MODIFICAR_PROFESOR = "modificar profesor";
 const ELIMINAR_PROFESOR_AT = "eliminar profesor en posicion";
 const ELIMINAR_PROFESOR = "eliminar profesor";
 
+const SALIR = "salir";
+
 async function actualizarDatos(tp, datos, respuesta, curso) {
-    const { salir: SALIR, temaCurso: { 
-        NOMBRE_TEMA, NUMERO_TEMA, PROFESORES, PARTE_TEMA, CURSO
-    } } = tp.user.constantes().DATOS.REFERENCIAS;
-    const TAGS = tp.user.constantes().TAGS;
+    const { 
+        SIMBOLOS, TAGS: { curso: TAGS_CURSO },
+        DATOS: { REFERENCIAS: { curso: DATOS_CURSO, temaCurso: DATOS_TEMA } },
+    } = tp.user.constantes();
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
     const validar = tp.user.whiteList();
 
-    const nombreProfesores = curso[NOMBRE_AUTORES];
-
-    const dv = app.plugins.plugins.dataview.api;
-    let tagsCurso = tp.user.obtenerTag(tp, curso.tags);
-    tagsCurso.push(TAGS.resumenCurso);
-    const otrosTemas = dv.pages(tagsCurso.map(tag => `#${tag}`).join(" and "));
+    const nombreProfesores = curso[DATOS_CURSO.profesore.self];
+    const otrosTemas = obtenerTemasCurso(tp, curso);
 
     let salir = false;
     let separacion = respuesta.split("-");
     respuesta = separacion[0];
     let indice;
 
-    if (nombreProfesores.length == 1 && datos[PROFESORES].length == 0) {
-        datos[PROFESORES].push(0);
+    if (nombreProfesores.length == 1 && datos[DATOS_TEMA.numProfesore].length == 0) {
+        datos[DATOS_TEMA.numProfesore].push(0);
     }
 
-    datos[CURSO] = `[[${curso.file.path}|${curso.file.name}]]`;
+    datos[DATOS_TEMA.curso] = `[[${curso.file.path}|${curso.file.name}]]`;
 
     switch (respuesta) {
-        case NOMBRE_TEMA:
+        case DATOS_TEMA.nombre:
             let eleccion = AGREGAR_TEMA;
             let nombreTema;
             if (otrosTemas.length > 0) {
@@ -46,8 +44,8 @@ async function actualizarDatos(tp, datos, respuesta, curso) {
 
             if (eleccion == AGREGAR_TEMA) {
                 nombreTema = await preguntar.prompt(
-                    tp, datos[NOMBRE_TEMA]
-                    ? `Nuevo nombre del tema, donde antes era ${datos[NOMBRE_TEMA]}`
+                    tp, datos[DATOS_TEMA.nombre]
+                    ? `Nuevo nombre del tema, donde antes era ${datos[DATOS_TEMA.nombre]}`
                     : "Nombre del tema",
                     error.Quit("No se ingresó el nombre del tema")
                 );
@@ -56,29 +54,29 @@ async function actualizarDatos(tp, datos, respuesta, curso) {
                     throw error.Quit("Nombre de tema es invalido");
             } else {
                 nombreTema = eleccion.nombre;
-                datos[PARTE_TEMA] = eleccion.parte;
+                datos[DATOS_TEMA.parte] = eleccion.parte;
             }
 
-            datos[NOMBRE_TEMA] = nombreTema;
+            datos[DATOS_TEMA.nombre] = nombreTema;
             break;
 
-        case NUMERO_TEMA:
+        case DATOS_TEMA.numero:
             let numero = await preguntar.numero(
-                tp, datos[NUMERO_TEMA]
-                    ? `Nuevo número de tema, donde antes era ${datos[NUMERO_TEMA]}`
+                tp, datos[DATOS_TEMA.numero]
+                    ? `Nuevo número de tema, donde antes era ${datos[DATOS_TEMA.numero]}`
                     : "Número de tema",
                 error.Quit("No se ingresó el número del tema")
             );
 
-            datos[NUMERO_TEMA] = parseInt(numero, 10);
+            datos[DATOS_TEMA.numero] = parseInt(numero, 10);
             break;
 
         case MODIFICAR_PROFESOR:
             indice = separacion[1];
 
-        case PROFESORES:
-            let profesoresElegidos = datos[PROFESORES];
-            if (indice) profesoresElegidos.remove(datos[PROFESORES][indice]);
+        case DATOS_TEMA.numProfesore:
+            let profesoresElegidos = datos[DATOS_TEMA.numProfesore];
+            if (indice) profesoresElegidos.remove(datos[DATOS_TEMA.numProfesore][indice]);
 
             let profesoresDisponibles = [...nombreProfesores.keys()]
                 .sort()
@@ -89,7 +87,10 @@ async function actualizarDatos(tp, datos, respuesta, curso) {
             if (profesoresDisponibles.length > 1) {
                 indiceProfesor = await preguntar.suggester(
                     tp, (indice) => {
-                        let { nombre, apellido } = nombreProfesores[indice];
+                        let { 
+                            [DATOS_CURSO.profesore.nombre]: nombre, 
+                            [DATOS_CURSO.profesore.apellido]: apellido 
+                        } = nombreProfesores[indice];
                         return `${nombre} ${apellido}`;
                     }, profesoresDisponibles, "Que profesor da este tema",
                     error.Quit("No se eligió el profesor de este curso")
@@ -97,19 +98,19 @@ async function actualizarDatos(tp, datos, respuesta, curso) {
             }
 
             if (indice) {
-                datos[PROFESORES][indice] = indiceProfesor;
+                datos[DATOS_TEMA.numProfesore][indice] = indiceProfesor;
             } else {
-                datos[PROFESORES].push(indiceProfesor);
+                datos[DATOS_TEMA.numProfesore].push(indiceProfesor);
             }
             break;
 
         case ELIMINAR_PROFESOR_AT:
             indice = separacion[1];
-            datos[PROFESORES].remove(datos[PROFESORES][indice]);
+            datos[DATOS_TEMA.numProfesore].remove(datos[DATOS_TEMA.numProfesore][indice]);
             break;
 
         case ELIMINAR_PROFESOR:
-            datos[PROFESORES].pop();
+            datos[DATOS_TEMA.numProfesore].pop();
             break;
 
         case SALIR:
@@ -121,146 +122,163 @@ async function actualizarDatos(tp, datos, respuesta, curso) {
 }
 
 function generarPreguntas(tp, datos, curso) {
-    const { salir: SALIR, temaCurso: { 
-        NOMBRE_TEMA, NUMERO_TEMA, PROFESORES
-    } } = tp.user.constantes().DATOS.REFERENCIAS;
-    const TAGS = tp.user.constantes().TAGS;
+    const { 
+        SIMBOLOS, TAGS: { curso: TAGS_CURSO }, 
+        DATOS: { REFERENCIAS: { curso: DATOS_CURSO, temaCurso: DATOS_TEMA } } 
+    } = tp.user.constantes();
     let opciones = [];
     let valores = [];
 
-    const nombreProfesores = curso[NOMBRE_AUTORES];
+    const nombreProfesores = curso[DATOS_CURSO.profesore.self];
+    const otrosTemas = obtenerTemasCurso(tp, curso);
 
-    const dv = app.plugins.plugins.dataview.api;
-    let tagsCurso = tp.user.obtenerTag(tp, curso.tags);
-    tagsCurso.push(TAGS.resumenCurso);
-    const otrosTemas = dv.pages(tagsCurso.map(tag => `#${tag}`).join(" and "));
-
-    opciones.push(NUMERO_TEMA);
-    if (datos[NUMERO_TEMA]) {
+    opciones.push(DATOS_TEMA.numero);
+    if (datos[DATOS_TEMA.numero]) {
         if (otrosTemas.length == 0) {
-            valores.push(`️ ️✏️ Modificar el número del tema, donde era ${datos[NUMERO_TEMA]}`);
+            valores.push(`️ ${SIMBOLOS.modificar}️ Modificar el número del tema, donde era ${datos[DATOS_TEMA.numero]}`);
         } else {
             let anterior, siguiente;
             for (let i = 0; i < otrosTemas.length; i++) {
-                if (otrosTemas[i][NUMERO_TEMA] < datos[NUMERO_TEMA]) {
+                if (otrosTemas[i][DATOS_TEMA.numero] < datos[DATOS_TEMA.numero]) {
                     anterior = otrosTemas[i];
 
-                } else if (otrosTemas[i][NUMERO_TEMA] == datos[NUMERO_TEMA]) {
+                } else if (otrosTemas[i][DATOS_TEMA.numero] == datos[DATOS_TEMA.numero]) {
                     siguiente = otrosTemas[i];
 
-                } else if (!siguiente && otrosTemas[i][NUMERO_TEMA] > datos[NUMERO_TEMA]) {
+                } else if (!siguiente && otrosTemas[i][DATOS_TEMA.numero] > datos[DATOS_TEMA.numero]) {
                     siguiente = otrosTemas[i];
 
                 }
             }
 
             let texto = (anterior) 
-                ? `antes de ${anterior[NOMBRE_TEMA]} => `
+                ? `antes de ${anterior[DATOS_TEMA.nombre]} => `
                 : "donde era ";
-            texto += `${datos[NUMERO_TEMA]}`;
+            texto += `${datos[DATOS_TEMA.numero]}`;
             if (siguiente) {
-                texto += ` => ${siguiente[NOMBRE_TEMA]}`;
+                texto += ` => ${siguiente[DATOS_TEMA.nombre]}`;
             }
 
-            valores.push(`️ ️✏️ Modificar el número del tema, ${texto}`);
+            valores.push(`️ ${SIMBOLOS.modificar}️ Modificar el número del tema, ${texto}`);
         }
 
     } else {
-        valores.push(" ⊕ Número del tema");
+        valores.push(` ${SIMBOLOS.agregar} Número del tema`);
     }
 
     // Mostrar si es parte °N
-    opciones.push(NOMBRE_TEMA);
-    valores.push(datos[NOMBRE_TEMA]
-        ? `️ ️✏️ Modificar el nombre del tema, donde era ${datos[NOMBRE_TEMA]}`
-        : " ⊕ Nombre del tema"
+    opciones.push(DATOS_TEMA.nombre);
+    valores.push(datos[DATOS_TEMA.nombre]
+        ? `️ ${SIMBOLOS.modificar}️ Modificar el nombre del tema, donde era ${datos[DATOS_TEMA.nombre]}`
+        : ` ${SIMBOLOS.agregar} Nombre del tema`
     );
 
     let cantidadProfesores = nombreProfesores.length;
-    let cantidadProfesoresElegidos = datos[PROFESORES].length;
+    let cantidadProfesoresElegidos = datos[DATOS_TEMA.numProfesore].length;
 
     if (cantidadProfesores == 1) {
-        let { nombre, apellido } = nombreProfesores[0];
+        let { 
+            [DATOS_CURSO.profesore.nombre]: nombre,
+            [DATOS_CURSO.profesore.apellido]: apellido 
+        } = nombreProfesores[0];
 
         opciones.push(`${ELIMINAR_PROFESOR_AT}-0`);
-        valores.push(` ⊖ Eliminar profesore ${nombre} ${apellido}`);
+        valores.push(` ${SIMBOLOS.sacar} Eliminar profesore ${nombre} ${apellido}`);
 
     } else if (cantidadProfesores == cantidadProfesoresElegidos) {
-        for (let indice of datos[PROFESORES]) {
-            let { nombre, apellido } = nombreProfesores[indice];
+        for (let indice of datos[DATOS_TEMA.numProfesore]) {
+            let { 
+                [DATOS_CURSO.profesore.nombre]: nombre, 
+                [DATOS_CURSO.profesore.apellido]: apellido 
+            } = nombreProfesores[indice];
 
             opciones.push(`${ELIMINAR_PROFESOR_AT}-${indice}`);
-            valores.push(` ⊖ Eliminar profesore ${nombre} ${apellido}`);
+            valores.push(` ${SIMBOLOS.sacar} Eliminar profesore ${nombre} ${apellido}`);
         }
 
     } else {
         
-        for (let [indice, indiceProfesor] of datos[PROFESORES].entries()) {
-            let { nombre, apellido } = nombreProfesores[indiceProfesor];
+        for (let [indice, indiceProfesor] of datos[DATOS_TEMA.numProfesore].entries()) {
+            let { 
+                [DATOS_CURSO.profesore.nombre]: nombre, 
+                [DATOS_CURSO.profesore.apellido]: apellido 
+            } = nombreProfesores[indiceProfesor];
+
             opciones.push(`${MODIFICAR_PROFESOR}-${indice}`);
-            valores.push(`️ ️✏️ Modificar el profesore ${nombre} ${apellido}`);
+            valores.push(`️ ${SIMBOLOS.modificar}️ Modificar el profesore ${nombre} ${apellido}`);
         }
 
         if (cantidadProfesoresElegidos == 0) {
             opciones.push(PROFESORES);
-            valores.push(" ⊕ Profesore del tema");
+            valores.push(` ${SIMBOLOS.agregar} Profesore del tema`);
 
         } else {
-            let ultimoIndiceProfesor = datos[PROFESORES][cantidadProfesoresElegidos - 1];
-            let { nombre, apellido } = nombreProfesores[ultimoIndiceProfesor];
+            let ultimoIndiceProfesor = datos[DATOS_TEMA.numProfesore][cantidadProfesoresElegidos - 1];
+            let { 
+                [DATOS_CURSO.profesore.nombre]: nombre, 
+                [DATOS_CURSO.profesore.apellido]: apellido 
+            } = nombreProfesores[ultimoIndiceProfesor];
 
             opciones.push(ELIMINAR_PROFESOR);
-            valores.push(` ⊖ Eliminar profesore ${nombre} ${apellido}`);
+            valores.push(` ${SIMBOLOS.sacar} Eliminar profesore ${nombre} ${apellido}`);
 
-            opciones.push(PROFESORES);
-            valores.push(" ⊕ (opcional) Profesore del tema");
+            opciones.push(DATOS_TEMA.numProfesore);
+            valores.push(` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Profesore del tema`);
         }
 
     }
 
-    if (datos[PROFESORES].length > 0 && [NUMERO_TEMA, NOMBRE_TEMA].every(key => datos[key])) {
+    if (datos[DATOS_TEMA.numProfesore].length > 0 && [DATOS_TEMA.numero, DATOS_TEMA.nombre].every(key => datos[key])) {
         opciones.push(SALIR);
-        valores.push(" ↶ Confirmar datos");
+        valores.push(` ${SIMBOLOS.volver} Confirmar datos`);
     }
 
     return { opciones: opciones, valores: valores };
 }
 
+function obtenerTemasCurso(tp, curso) {
+    const { TAGS: { curso: TAGS_CURSO }, DATOS: { REFERENCIAS: { curso: DATOS_CURSO } } } = tp.user.constantes();
+    const dv = app.plugins.plugins.dataview.api;
+
+    let tagsCurso = tp.user.obtenerTag(tp, curso[DATOS_CURSO.tags])
+        .map(tag => `#${tag}`);
+    return dv.pages(`(${tagsCurso.join(" or ")}) and #${TAGS_CURSO.self}/${TAGS_CURSO.resumen}`);
+}
+
 function describir(tp, datos) {
-    const { 
-        curso: { NOMBRE_AUTORES, NOMBRE_CURSO, NOMBRE_PAGINA },
-        temaCurso: { NOMBRE_TEMA, NUMERO_TEMA, PROFESORES, CURSO, PARTE_TEMA },
-    } = tp.user.constantes().DATOS.REFERENCIAS;
+    const { DATOS: { REFERENCIAS: { curso: DATOS_CURSO, temaCurso: DATOS_TEMA } } } = tp.user.constantes();
 
     const dv = app.plugins.plugins.dataview.api;
-    const curso = dv.page(datos[CURSO].path);
+    const curso = dv.page(datos[DATOS_TEMA.curso].path);
 
     let autores = [];
-    for (let numProfesor of datos[PROFESORES]) {
-        let { nombre, apellido } = curso[NOMBRE_AUTORES][numProfesor];
+    for (let numProfesor of datos[DATOS_TEMA.numProfesore]) {
+        let { 
+            [DATOS_CURSO.profesore.nombre]: nombre, 
+            [DATOS_CURSO.profesore.apellido]: apellido 
+        } = curso[DATOS_CURSO.profesore.self][numProfesor];
         autores.push(`${apellido}, ${nombre[0]}.`);
     }
 
-    let nombre = `N°${datos[NUMERO_TEMA]}: ${datos[NOMBRE_TEMA]}`;
-    if (datos[PARTE_TEMA]) {
-        nombre += ` parte ${datos[PARTE_TEMA]}`;
+    let nombre = `N°${datos[DATOS_TEMA.numero]}: ${datos[DATOS_TEMA.nombre]}`;
+    if (datos[DATOS_TEMA.parte]) {
+        nombre += ` parte ${datos[DATOS_TEMA.parte]}`;
     }
 
-    return `${nombre} dado por ${autores.join(", ")}. ${curso[NOMBRE_CURSO]} publicado en ${curso[NOMBRE_PAGINA]}`;
+    return `${nombre} dado por ${autores.join(", ")}. ${curso[DATOS_CURSO.nombre]} publicado en ${curso[DATOS_CURSO.pagina]}`;
 }
 
 module.exports = () => ({
-    obtenerDefault: (tp) => {
-        const { 
-            NOMBRE_TEMA, NUMERO_TEMA, PROFESORES, PARTE_TEMA, CURSO 
-        } = tp.user.constantes().DATOS.REFERENCIAS.temaCurso;
-        return {
-            [NOMBRE_TEMA]: null,
-            [NUMERO_TEMA]: null,
-            [PARTE_TEMA]: 0,
-            [PROFESORES]: [],
-            [CURSO]: null,
-        }
+    obtenerDefault: (tp, TIPOS_DE_DEFAULT, crearFuncion) => {
+        const { DATOS: { REFERENCIAS: { temaCurso: DATOS_TEMA } } } = tp.user.constantes();
+
+        return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
+            [DATOS_TEMA.nombre]: TIPOS_DE_DEFAULT.simple,
+            [DATOS_TEMA.numero]: TIPOS_DE_DEFAULT.simple,
+            [DATOS_TEMA.numProfesor]: TIPOS_DE_DEFAULT.array,
+            [DATOS_TEMA.parte]: crearFuncion(TIPOS_DE_DEFAULT.simple, () => 0),
+            [DATOS_TEMA.curso]: TIPOS_DE_DEFAULT.simple,
+        }))
     },
     actualizarDatos: actualizarDatos,
     generarPreguntas: generarPreguntas,

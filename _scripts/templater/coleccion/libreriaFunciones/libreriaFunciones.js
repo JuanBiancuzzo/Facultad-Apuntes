@@ -92,7 +92,7 @@ async function actualizarDatos(tp, datos, respuesta) {
         case FUNCION:
             const preguntasLenguaje = tp.user.lenguajes();
             datos[FUNCION] = await tp.user.crearPreguntas(
-                tp, () => preguntasLenguaje.obtenerDefault(tp),
+                tp, preguntasLenguaje.bind(tp),
                 (tp, datosDato, respuestaDada) => preguntasLenguaje.actualizarDatos(tp, datosDato, respuestaDada, datos[LENGUAJE]), 
                 (tp, datosDato) => preguntasLenguaje.generarPreguntas(tp, datosDato, datos[LENGUAJE]), 
                 "Definir la función que se quiere ingresar",
@@ -258,12 +258,12 @@ async function agregarDatos(tp, datos) {
 }
 
 module.exports = () => ({
-    obtenerDefault: () => ({
-        [LENGUAJE]: null,
-        [LIBRERIA]: null,
-        [MODULO]: null,
-        [FUNCION]: null,
-    }),
+    obtenerDefault: (TIPOS_DE_DEFAULT, crearFuncion) => crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
+        [LENGUAJE]: TIPOS_DE_DEFAULT.simple,
+        [LIBRERIA]: TIPOS_DE_DEFAULT.simple,
+        [MODULO]: TIPOS_DE_DEFAULT.simple,
+        [FUNCION]: TIPOS_DE_DEFAULT.simple,
+    })),
     actualizarDatos: actualizarDatos,
     generarPreguntas: generarPreguntas,
     agregarDatos: agregarDatos,

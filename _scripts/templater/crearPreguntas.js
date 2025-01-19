@@ -1,8 +1,34 @@
-const TIPO_FUNCION = "function";
+// const TIPO_FUNCION = "function";
+
+const TIPOS_DE_DEFAULT = {
+    simple: "simple",
+    array: "multiple",
+    diccionario: "diccionario",
+};
+
+const TIPO_FUNCION = {
+    self: "funcion",
+    tipo: "tipo",
+    generarSimple: "generar",
+};
+
+/**
+ * @param {{ simple, array, diccionario }} tipo Describe que array esta por debajo
+ * @param {() =>{[TIPOS_DE_DEFAULT.self], [TIPOS_DE_DEFAULT.tipo], [TIPOS_DE_DEFAULT.generarSimple]} } obtenerDefault Es una función que devuelve los datos en su valor por defecto
+ * @returns { {[TIPOS_DE_DEFAULT.self], [TIPOS_DE_DEFAULT.tipo], [TIPOS_DE_DEFAULT.generarSimple]} } Devuelve una estructura representente de la función
+    }
+ */
+function crearFuncion(tipo, obtenerDefault) {
+    return {
+        [TIPO_FUNCION.self]: TIPO_FUNCION.self,
+        [TIPO_FUNCION.tipo]: tipo,
+        [TIPO_FUNCION.generarSimple]: obtenerDefault,
+    };
+}
 
 /**
  * @param {*} tp Objeto representante del plugin Templater
- * @param {() => Objecto} obtenerDefault Es una función que devuelve los datos en su valor por defecto
+ * @param {({ simple, array, diccionario }, (tipo, obtenerDefault)) => Object) => Objecto} obtenerDefault Es una función que devuelve los datos en su valor por defecto
  * @param {(tp: *, datos: Objecto, respuesta: string) => bool} actualizarDatos Modifica los datos a partir de la respuesta dada, y devuelve true en el caso que se determina que no se quiere continua
  * @param {(tp, datos: Objeto) => { opciones: array, valores: array }} generarPreguntas Dado los datos guardados genera dos arrays de respuestas (opciones) y su representación (valores)
  * @param {string} mensaje Es el mensaje que aparecerá si hay multiples opciones a elegir
@@ -46,28 +72,50 @@ async function crearPreguntas(
     return datos;
 }
 
-function obtenerDatos(obtenerDefault, datosPrevios) {
-    let datos = obtenerDefault();
-    if (datosPrevios) {
-        for (let [key, value] of Object.entries(datos)) {
-            if (typeof value == TIPO_FUNCION) {
-                if (datosPrevios[key] instanceof Array) {
-                    datos[key] = [];
-                    for (let elementoPrevio of datosPrevios[key]) {
-                        datos[key].push(obtenerDatos(value, elementoPrevio));
-                    }
+function obtenerDatos(obtenerDefault, datosPrevios = undefined) {
+    let datos = obtenerDefault(TIPOS_DE_DEFAULT, crearFuncion);
 
-                } else { 
-                    datos[key] = obtenerDatos(value, datosPrevios[key]);
-                }
-            } else if (key in datosPrevios && datosPrevios[key]) {
-                datos[key] = datosPrevios[key];
+    if (TIPOS_DE_DEFAULT.simple == datos) 
+        return datosPrevios ? datosPrevios : null;
+    
+    if (TIPOS_DE_DEFAULT.array == datos) 
+        return datosPrevios ? datosPrevios : [];
+    
+    if (TIPOS_DE_DEFAULT.diccionario == datos) 
+        return datosPrevios ? datosPrevios : {};
+
+    // Si o si es una función
+    switch (datos[TIPO_FUNCION.tipo]) {
+        case TIPOS_DE_DEFAULT.simple:
+            return obtenerDatos(
+                (_tipoDefault, _crearFuncion) => datos[TIPO_FUNCION.generarSimple](),
+                datosPrevios
+            );
+
+        case TIPOS_DE_DEFAULT.array:
+            if (!datosPrevios) return [];
+
+            let resultado = [];
+            for (let elemento of datosPrevios) {
+                resultado.push(obtenerDatos(
+                    (_tipoDefault, _crearFuncion) => datos[TIPO_FUNCION.generarSimple](),
+                    elemento
+                ));
             }
-        }
+            return resultado;
+
+        case TIPOS_DE_DEFAULT.diccionario:
+            datos = datos[TIPO_FUNCION.generarSimple]();
+            for (let [key, value] of Object.entries(datos)) {
+                datos[key] = obtenerDatos(
+                    (_tipoDefault, _crearFuncion) => value,
+                    datosPrevios ? datosPrevios[key] : undefined
+                );
+            }
+            return datos;
     }
+
     return datos;
 }
 
-module.exports = ({
-    preguntar: crearPreguntas,
-});
+module.exports = crearPreguntas;

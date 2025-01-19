@@ -1,7 +1,8 @@
 async function generar(tp) {
-    const { TEMPLATE, DIRECTORIOS, REFERENCIAS } = tp.user.constantes();
+    const { REFERENCIAS } = tp.user.constantes();
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
+    const crearArchivo = tp.user.archivo();
 
     try {
         let tipoCita = await preguntar.suggester(
@@ -11,44 +12,27 @@ async function generar(tp) {
             error.Prompt("No se ingresó lo que se quiere citar")
         );
 
-        let nombre = "Untitle", directorio;
-        
         switch (tipoCita) {
-            case REFERENCIAS.libro:
-                directorio = `${DIRECTORIOS.coleccion.self}/${DIRECTORIOS.coleccion.libros}`;
-                break;
-
-            case REFERENCIAS.curso:
-                directorio = DIRECTORIOS.curso;
-                break;
-
-            case REFERENCIAS.paper:
-                directorio = `${DIRECTORIOS.coleccion.self}/${DIRECTORIOS.coleccion.papers}`;
-                break;
-
             case REFERENCIAS.youtube:
             case REFERENCIAS.web:
             case REFERENCIAS.wikipedia:
-                nombre = tipoCita;
-                directorio = DIRECTORIOS.referencias;
-                break;
+            case REFERENCIAS.libro:
+            case REFERENCIAS.curso:
+            case REFERENCIAS.paper:
+                return await crearArchivo.crear(tp, () => crearReferencia(tp, tipoCita));
 
-            default:
-                throw error.Prompt("No se puede referenciar eso");
+            case REFERENCIAS.libro:
+                throw("No existe la forma de generar un libro");
+
+            case REFERENCIAS.curso:
+                throw("No existe la forma de generar un curso");
+
+            case REFERENCIAS.paper:
+                throw("No existe la forma de generar un paper");
         }
 
-        if (!nombre || !directorio) {
-            let mensaje = "Hubo un error en la creación de una referencia\n";
-            mensaje += `Nombre: ${nombre ? "Valido" : "Invalido"}\n`;
-            mensaje += `Directorio: ${directorio ? "Valido" : "Invalido"}\n`;
-
-            throw error.Prompt(mensaje);
-        }
-
-        let template = tp.file.find_tfile(TEMPLATE.nota.self);
-        directorio = app.vault.getAbstractFileByPath(directorio);
-
-        return await tp.file.create_new(template, nombre, false, directorio);
+        let mensaje = "Hubo un error en la creación de una referencia\n";
+        throw error.Prompt(mensaje);
 
     } catch ({ name:nombre, message: mensaje }) {
         console.log(nombre, mensaje);
@@ -58,7 +42,7 @@ async function generar(tp) {
 }
 
 function obtenerReferencia(tp, tipoCita) {
-    const REFERENCIAS = tp.user.constantes().REFERENCIAS;
+    const { REFERENCIAS } = tp.user.constantes();
     const error = tp.user.error();
 
     let referencia;
@@ -80,36 +64,26 @@ function obtenerReferencia(tp, tipoCita) {
 }
 
 function obtenerReferencias(tp) {
-    const { TAGS, REFERENCIAS, DATOS: { REFERENCIAS: DATOS_REFERENCIA } } = tp.user.constantes();
+    const { 
+        TAGS, REFERENCIAS, DATOS: { REFERENCIAS: { tipoCita: TIPO_CITA, libro: DATOS_LIBRO } } 
+    } = tp.user.constantes();
     const dv = app.plugins.plugins.dataview.api;
 
     return dv.pages(`#${TAGS.referencias}`)
         .flatMap(archivo => {
-            let referencia = obtenerReferencia(tp, archivo[DATOS_REFERENCIA.tipoCita]);
-
-            let datos = referencia.obtenerDefault(tp);
-            for (let [key, _] of Object.entries(datos)) {
-                if (key in archivo && archivo[key]) {
-                    datos[key] = archivo[key];
-                }
-            }
-            datos[DATOS_REFERENCIA.tipoCita] = archivo[DATOS_REFERENCIA.tipoCita];
-            datos[DATOS_REFERENCIA.numReferencia] = archivo[DATOS_REFERENCIA.numReferencia];
-
-            let resultado = [ datos ];
-            switch (archivo[DATOS_REFERENCIA.tipoCita]) {
+            let resultado = [ archivo ];
+            switch (archivo[TIPO_CITA]) {
                 case REFERENCIAS.libro:
-                    if (!datos.capitulos || datos.capitulos.length == 0) 
+                    if (!archivo[DATOS_LIBRO.capitulo] || archivo[DATOS_LIBRO.capitulo].length == 0) 
                         break;
 
-                    for (let capitulo of datos.capitulos) {
-                        capitulo[DATOS_REFERENCIA.tipoCita] = REFERENCIAS.capituloLibro;
-                        capitulo[REFERENCIAS.libro] = datos;
+                    for (let capitulo of archivo[DATOS_LIBRO.capitulo]) {
+                        capitulo[TIPO_CITA] = REFERENCIAS.capituloLibro;
+                        capitulo[REFERENCIAS.libro] = archivo;
                         resultado.push(capitulo);
                     }
                     break;
             }
-            
             return resultado;
         });
 }
@@ -123,8 +97,8 @@ function describir(tp, datos) {
 async function editar(tp, tipoCita, seguidorRef, datosActuales) {
     let referencia = obtenerReferencia(tp, tipoCita);
 
-    return await tp.user.crearPreguntas().preguntar(
-        tp, () => referencia.obtenerDefault(tp),
+    return await tp.user.crearPreguntas(
+        tp, referencia.obtenerDefault.bind(null, tp),
         (tp, datos, respuesta) => referencia.actualizarDatos(tp, datos, respuesta, seguidorRef),
         referencia.generarPreguntas,
         "Completar para poder referenciar",
@@ -133,12 +107,15 @@ async function editar(tp, tipoCita, seguidorRef, datosActuales) {
 }
 
 function archivoReferencia(tp, numReferenciaBuscado) {
-    const { TAGS, REFERENCIAS, DATOS: { REFERENCIAS: DATOS_REFERENCIA } } = tp.user.constantes();
+    const { 
+        TAGS, REFERENCIAS, 
+        DATOS: { REFERENCIAS: { tipoCita: TIPO_CITA, numReferencia: NUM_REFERENCIA, libro: DATOS_LIBRO } } 
+    } = tp.user.constantes();
     const dv = app.plugins.plugins.dataview.api;
 
     return dv.pages(`#${TAGS.referencias}`)
         .flatMap(archivo => {
-            let referencia = obtenerReferencia(tp, archivo[DATOS_REFERENCIA.tipoCita]);
+            let referencia = obtenerReferencia(tp, archivo[TIPO_CITA]);
 
             let datos = referencia.obtenerDefault(tp);
             for (let [key, _] of Object.entries(datos)) {
@@ -147,15 +124,14 @@ function archivoReferencia(tp, numReferenciaBuscado) {
                 }
             }
 
-            let resultado = [ { archivo: archivo, numReferencia: archivo[DATOS_REFERENCIA.numReferencia] } ];
-            switch (archivo[DATOS_REFERENCIA.tipoCita]) {
+            let resultado = [ { archivo: archivo, numReferencia: archivo[NUM_REFERENCIA] } ];
+            switch (archivo[TIPO_CITA]) {
                 case REFERENCIAS.libro:
-                    const { CAPITULOS } = DATOS_REFERENCIA.libro;
-                    if (!datos[CAPITULOS] || datos[CAPITULOS].length == 0) 
+                    if (!datos[DATOS_LIBRO.capitulo] || datos[DATOS_LIBRO.capitulo].length == 0) 
                         break;
 
-                    for (let capitulo of datos[CAPITULOS]) {
-                        resultado.push({ archivo: archivo, numReferencia: capitulo[DATOS_REFERENCIA.numReferencia] });
+                    for (let capitulo of datos[DATOS_LIBRO.capitulo]) {
+                        resultado.push({ archivo: archivo, numReferencia: capitulo[NUM_REFERENCIA] });
                     }
                     break;
             }
@@ -166,6 +142,31 @@ function archivoReferencia(tp, numReferenciaBuscado) {
         .archivo;
 }
 
+async function crearReferencia(tp, tipoCita) {
+    const { 
+        FORMATO_DIA, TAGS, DIRECTORIOS,
+        DATOS: { ARCHIVO: DATOS_ARCHIVOS, REFERENCIAS: DATOS_REFERENCIAS } 
+    } = tp.user.constantes();
+
+    let seguidorRef = tp.user.seguidorReferencias().new();
+    let numReferencia = seguidorRef.conseguirReferencia();
+
+    let datos = await editar(tp, tipoCita, seguidorRef, null);
+
+    return {
+        metadata: {
+            ...datos,
+            [DATOS_ARCHIVOS.dia]: tp.file.creation_date(FORMATO_DIA),
+            [DATOS_REFERENCIAS.tipoCita]: tipoCita,
+            [DATOS_REFERENCIAS.numReferencia]: numReferencia,
+            [DATOS_ARCHIVOS.tags]: [ `${TAGS.referencias}/${tp.user.tagPorNombre(tipoCita.toLowerCase())}` ],
+        },
+        carpeta: DIRECTORIOS.referencias,
+        titulo: `${numReferencia} - ${tipoCita}`,
+        texto: "",
+    };
+}
+
 module.exports = () => ({
     citar: async (tp, tipoCita, seguidorRef) => await editar(tp, tipoCita, seguidorRef, null),
     editar: editar,
@@ -173,4 +174,7 @@ module.exports = () => ({
     describir: describir,
     obtenerReferencias: obtenerReferencias,
     archivoReferencia: archivoReferencia,
+    crear: {
+        referenciaSimple: crearReferencia,
+    },
 });

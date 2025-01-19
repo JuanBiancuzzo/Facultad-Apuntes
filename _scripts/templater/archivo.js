@@ -1,5 +1,5 @@
 /**
- * @param {async () => { metadata: Object, carpeta: string, titulo: string, texto: string }} obtenerInformacion es una función que da la información necesaria para crear el archivo
+ * @param {() => { metadata: Object, carpeta: string, titulo: string, texto: string }} obtenerInformacion es una función que da la información necesaria para crear el archivo
  * @returns {TFile} Se devuelve el archivo creado
  */
 async function crearArchivo(tp, obtenerInformacion) {

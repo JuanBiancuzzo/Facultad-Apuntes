@@ -1,5 +1,5 @@
 <%*
-    const { ETAPAS, TEMPLATE, DIRECTORIOS, TAGS, DATOS: { 
+    const { ETAPAS, TEMPLATE, DIRECTORIOS, SIMBOLOS, TAGS, DATOS: { 
         ARCHIVO: DATOS_ARCHIVOS, REFERENCIAS: DATOS_REFERENCIA 
     } } = tp.user.constantes();
     const CREAR = "crear";
@@ -29,12 +29,12 @@
             return existe ? valor : valor - maximo;
         }, "desc");
 
-    let opciones = [ " ⊕ Crear referencia" ];
+    let opciones = [ ` ${SIMBOLOS.agregar} Crear referencia` ];
     let valores = [ CREAR ];
 
     for (let referencia of referenciasTotal) {
         let existe = referenciasArchivo.includes(referencia[DATOS_REFERENCIA.numReferencia]);
-        opciones.push(` ${existe ? "⊖" : "↶" } ${referencias.describir(tp, referencia)}`);
+        opciones.push(` ${existe ? SIMBOLOS.sacar : SIMBOLOS.volver } ${referencias.describir(tp, referencia)}`);
         valores.push(referencia[DATOS_REFERENCIA.numReferencia]);
     }
 

@@ -1,9 +1,10 @@
 const MODIFICAR_EDITORES = "modificar editores";
 const ELIMINAR_EDITORE = "eliminar editores";
 
-async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
-    const { salir: SALIR, capituloLibro: { NUMERO_CAPITULO, NOMBRE_CAPITULO, EDITORES, PAGINAS} } = tp.user.constantes().DATOS.REFERENCIAS;
+const SALIR = "salir";
 
+async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
+    const { DATOS: { REFERENCIAS: { capituloLibro: DATOS_CAPITULO } } } = tp.user.constantes();
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
 
@@ -13,19 +14,19 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
     let indice;
 
     switch (respuesta) {
-        case NUMERO_CAPITULO:
-            datos[NUMERO_CAPITULO] = await preguntar.numero(
-                tp, datos[NUMERO_CAPITULO] 
-                    ? `Nuevo número del capítulo, donde antes era ${datos[NUMERO_CAPITULO]}`
+        case DATOS_CAPITULO.numero:
+            datos[DATOS_CAPITULO.numero] = await preguntar.numero(
+                tp, datos[DATOS_CAPITULO.numero] 
+                    ? `Nuevo número del capítulo, donde antes era ${datos[DATOS_CAPITULO.numero]}`
                     : "Número del capítulo",
                 error.Quit("No se ingresó el número del capítulo")
             );
             break;
 
-        case NOMBRE_CAPITULO:
-            datos[NOMBRE_CAPITULO] = await preguntar.simple(
-                tp, datos[NOMBRE_CAPITULO]
-                    ? `Nuevo nombre del capítulo, donde antes era ${datos[NOMBRE_CAPITULO]}`
+        case DATOS_CAPITULO.nombre:
+            datos[DATOS_CAPITULO.nombre] = await preguntar.prompt(
+                tp, datos[DATOS_CAPITULO.nombre]
+                    ? `Nuevo nombre del capítulo, donde antes era ${datos[DATOS_CAPITULO.nombre]}`
                     : "Nombre del capítulo",
                 error.Quit("No se ingresó el nombre del capítulo")
             )
@@ -33,28 +34,34 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
 
         case MODIFICAR_EDITORES:
             indice = separacion[1];
-            let { nombre: viejoNombre, apellido: viejoApellido } = datos[EDITORES][indice];
+            let { 
+                [DATOS_CAPITULO.editore.nombre]: viejoNombre, 
+                [DATOS_CAPITULO.editore.apellido]: viejoApellido 
+            } = datos[DATOS_CAPITULO.editore.self][indice];
 
-            let nuevoApellido = await preguntar.simple(
+            let nuevoApellido = await preguntar.prompt(
                 tp, `Nuevo apellido del autore, donde antes era ${viejoApellido}:`,
                 error.Quit("No se ingresa el apellido del autore de forma correcta")
             );
 
-            let nuevoNombre = await preguntar.simple(
+            let nuevoNombre = await preguntar.prompt(
                 tp, `Nuevo nombre del autore, donde antes era ${viejoNombre}:`,
                 error.Quit("No se ingresa el nombre del autore de forma correcta")
             );
 
-            datos[EDITORES][indice] = { nombre: nuevoNombre, apellido: nuevoApellido };
+            datos[DATOS_CAPITULO.editore.self][indice] = { 
+                [DATOS_CAPITULO.editore.nombre]: nuevoNombre, 
+                [DATOS_CAPITULO.editore.apellido]: nuevoApellido 
+            };
             break;
 
-        case EDITORES:
-            datos[EDITORES].push({
-                apellido: await preguntar.simple(
+        case DATOS_CAPITULO.editore.self:
+            datos[DATOS_CAPITULO.editore.self].push({
+                [DATOS_CAPITULO.editore.apellido]: await preguntar.prompt(
                     tp, "Apellido del autore",
                     error.Quit("No se ingresa el apellido del autore de forma correcta")
                 ),
-                nombre: await preguntar.simple(
+                [DATOS_CAPITULO.editore.nombre]: await preguntar.prompt(
                     tp, "Nombre del autore",
                     error.Quit("No se ingresa el nombre del autore de forma correcta")
                 ),
@@ -62,13 +69,15 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             break;
 
         case ELIMINAR_EDITORE:
-            datos[EDITORES].pop();
+            datos[DATOS_CAPITULO.editore.self].pop();
             break;
 
-        case PAGINAS:
+        case DATOS_CAPITULO.paginas.self:
+            let paginas = datos[DATOS_CAPITULO.paginas.self];
+
             let inicioPaginas = await preguntar.numero(
-                tp, datos[PAGINAS]
-                    ? `Nueva página de inicio del capitulo, donde antes era ${datos[PAGINAS].inicio}`
+                tp, paginas[DATOS_CAPITULO.paginas.inicio]
+                    ? `Nueva página de inicio del capitulo, donde antes era ${paginas[DATOS_CAPITULO.paginas.inicio]}`
                     : "Página de inicio del capitulo",
                 error.Quit("No se ingresó el inicio del capitulo")
             );
@@ -78,8 +87,8 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
             }
 
             let finalPaginas = await preguntar.numero(
-                tp, datos[PAGINAS]
-                    ? `Nueva página final del capitulo, donde antes era ${datos[PAGINAS].final}`
+                tp, paginas[DATOS_CAPITULO.paginas.final]
+                    ? `Nueva página final del capitulo, donde antes era ${paginas[DATOS_CAPITULO.paginas.final]}`
                     : "Página final del capitulo",
                 error.Quit("No se ingresó el final del capitulo")
             );
@@ -88,7 +97,10 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
                 throw error.Quit("Termina antes de lo que empieza, la página final es más chica que el inicio");
             }
 
-            datos[PAGINAS] = { inicio: inicioPaginas, final: finalPaginas };
+            datos[DATOS_CAPITULO.paginas.self] = { 
+                [DATOS_CAPITULO.paginas.inicio]: inicioPaginas, 
+                [DATOS_CAPITULO.paginas.final]: finalPaginas 
+            };
             break;
 
         case SALIR:
@@ -100,90 +112,109 @@ async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
 }
 
 function generarPreguntas(tp, datos) {
-    const { salir: SALIR, capituloLibro: { 
-        NUMERO_CAPITULO, NOMBRE_CAPITULO, EDITORES, PAGINAS,
-    } } = tp.user.constantes().DATOS.REFERENCIAS;
+    const { 
+        SIMBOLOS,
+        DATOS: { REFERENCIAS: { capituloLibro: DATOS_CAPITULO } },
+    } = tp.user.constantes();
 
     let opciones = [];
     let valores = [];
 
-    opciones.push(NUMERO_CAPITULO);
-    valores.push(datos[NUMERO_CAPITULO]
-        ? ` ️✏️ Modificar el número del capítulo, donde era ${datos[NUMERO_CAPITULO]}`
-        : " ⊕ Número del capítulo"
+    opciones.push(DATOS_CAPITULO.numero);
+    valores.push(datos[DATOS_CAPITULO.numero]
+        ? ` ️${SIMBOLOS.modificar} Modificar el número del capítulo, donde era ${datos[DATOS_CAPITULO.numero]}`
+        : ` ${SIMBOLOS.agregar} Número del capítulo`
     );
 
-    opciones.push(NOMBRE_CAPITULO);
-    valores.push(datos[NOMBRE_CAPITULO]
-        ? ` ️✏️ Modificar el nombre del capítulo, donde era ${datos[NOMBRE_CAPITULO]}`
-        : " ⊕ (opcional) Nombre del capítulo"
+    opciones.push(DATOS_CAPITULO.nombre);
+    valores.push(datos[DATOS_CAPITULO.nombre]
+        ? `️ ${SIMBOLOS.modificar} Modificar el nombre del capítulo, donde era ${datos[DATOS_CAPITULO.nombre]}`
+        : ` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Nombre del capítulo`
     );
 
-    for (let [indice, editore] of datos[EDITORES].entries()) {
-        let { nombre, apellido } = editore;
+    for (let [indice, editore] of datos[DATOS_CAPITULO.editore.self].entries()) {
+        let { [DATOS_CAPITULO.editore.nombre]: nombre, [DATOS_CAPITULO.editore.apellido]: apellido } = editore;
         opciones.push(`${MODIFICAR_EDITORES}-${indice}`);
-        valores.push(`️ ️✏️ Modificar el editore ${nombre} ${apellido}`);
+        valores.push(`️️ ${SIMBOLOS.modificar} Modificar el editore ${nombre} ${apellido}`);
     }
 
-    let cantidadEditores = datos[EDITORES].length;
+    let cantidadEditores = datos[DATOS_CAPITULO.editore.self].length;
     if (cantidadEditores > 0) {
-        let { nombre, apellido } = datos[EDITORES][cantidadEditores - 1];
-        opciones.push(ELIMINAR_EDITORE);
-        valores.push(` ⊖ Eliminar ${nombre} ${apellido}`);
-    }
-    opciones.push(EDITORES);
-    valores.push(" ⊕ (opcional) Nombre del editore");
+        let { 
+            [DATOS_CAPITULO.editore.nombre]: nombre, 
+            [DATOS_CAPITULO.editore.apellido]: apellido 
+        } = datos[DATOS_CAPITULO.editore.self][cantidadEditores - 1];
 
-    opciones.push(PAGINAS);
-    valores.push(datos[PAGINAS]
-        ? ` ️✏️ Modificar las páginas del capítulo, donde era ${datos[PAGINAS].inicio} - ${datos[PAGINAS].final}`
-        : " ⊕ (opcional) Número de páginas del capítulo"
+        opciones.push(ELIMINAR_EDITORE);
+        valores.push(` ${SIMBOLOS.sacar} Eliminar ${nombre} ${apellido}`);
+    }
+    opciones.push(DATOS_CAPITULO.editore.self);
+    valores.push(` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Nombre del editore`);
+
+    let paginas = datos[DATOS_CAPITULO.paginas.self];
+    opciones.push(DATOS_CAPITULO.paginas.self);
+    valores.push((paginas[DATOS_CAPITULO.paginas.inicio] && paginas[DATOS_CAPITULO.paginas.final])
+        ? ` ${SIMBOLOS.modificar} Modificar las páginas del capítulo, donde era ${paginas[DATOS_CAPITULO.paginas.inicio]} - ${paginas[DATOS_CAPITULO.paginas.final]}`
+        : ` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Número de páginas del capítulo`
     );
 
-    if (datos[NUMERO_CAPITULO]) {
+    if (datos[DATOS_CAPITULO.numero]) {
         opciones.push(SALIR);
-        valores.push(" ↶ Confirmar datos");
+        valores.push(` ${SIMBOLOS.volver} Confirmar datos`);
     }
 
     return { opciones: opciones, valores: valores };
 }
 
 function describir(tp, datos) {
-    const { NUMERO_CAPITULO, NOMBRE_CAPITULO, PAGINAS} = tp.user.constantes().DATOS.REFERENCIAS.capituloLibro;
-    const { libro: REF_LIBRO } = tp.user.constantes().REFERENCIAS;
+    const { 
+        REFERENCIAS: { libro: REF_LIBRO },
+        DATOS: { REFERENCIAS: { capituloLibro: DATOS_CAPITULO } },
+    } = tp.user.constantes();
 
-    let textoCapitulo = `Capítulo ${datos[NUMERO_CAPITULO]}`;
-    if (datos[NOMBRE_CAPITULO]) textoCapitulo += `: ${datos[NOMBRE_CAPITULO]}`;
-    if (datos[PAGINAS]) textoCapitulo += ` p. ${datos[PAGINAS].inicio}-${datos[PAGINAS].final}`;
+    let textoCapitulo = `Capítulo ${datos[DATOS_CAPITULO.numero]}`;
+    if (datos[DATOS_CAPITULO.nombre]) textoCapitulo += `: ${datos[DATOS_CAPITULO.nombre]}`;
+    if (datos[DATOS_CAPITULO.paginas.self]) {
+        let paginas = datos[DATOS_CAPITULO.paginas.self];
+        textoCapitulo += ` p. ${paginas[DATOS_CAPITULO.paginas.inicio]}-${paginas[DATOS_CAPITULO.paginas.final]}`;
+    }
 
     let libro = datos[REF_LIBRO];
-    textoCapitulo += ` de ${tp.user.libro().describir(tp, libro)}`;
+    textoCapitulo += ` del libro ${tp.user.libro().describir(tp, libro)}`;
 
     return textoCapitulo;
 }
 
 function describirReducido(tp, datos) {
-    const { NUMERO_CAPITULO, NOMBRE_CAPITULO } = tp.user.constantes().DATOS.REFERENCIAS.capituloLibro;
+    const { DATOS: { REFERENCIAS: { capituloLibro: DATOS_CAPITULO } } } = tp.user.constantes();
 
-    let textoCapitulo = `Capítulo ${datos[NUMERO_CAPITULO]}`;
-    if (datos[NOMBRE_CAPITULO]) textoCapitulo += `: ${datos[NOMBRE_CAPITULO]}`;
+    let textoCapitulo = `Capítulo ${datos[DATOS_CAPITULO.numero]}`;
+    if (datos[DATOS_CAPITULO.nombre]) textoCapitulo += `: ${datos[DATOS_CAPITULO.nombre]}`;
 
     return textoCapitulo;
 }
 
 module.exports = () => ({
-    obtenerDefault: (tp) => {
-        const { numReferencia: NUM_REFERENCIA, capituloLibro: {
-            NUMERO_CAPITULO, NOMBRE_CAPITULO, EDITORES, PAGINAS,
-        } } = tp.user.constantes().DATOS.REFERENCIAS;
+    obtenerDefault: (tp, TIPOS_DE_DEFAULT, crearFuncion) => {
+        const {
+            DATOS: { REFERENCIAS: { numReferencia: NUM_REFERENCIA, capituloLibro: DATOS_CAPITULO } },
+        } = tp.user.constantes();
 
-        return {
-            [NUM_REFERENCIA]: null,
-            [NUMERO_CAPITULO]: null,
-            [NOMBRE_CAPITULO]: null,
-            [EDITORES]: [],
-            [PAGINAS]: null,
-        }
+        return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
+            [NUM_REFERENCIA]: TIPOS_DE_DEFAULT.simple,
+            [DATOS_CAPITULO.numero]: TIPOS_DE_DEFAULT.simple,
+            [DATOS_CAPITULO.nombre]: TIPOS_DE_DEFAULT.simple,
+            [DATOS_CAPITULO.editore.self]: crearFuncion(TIPOS_DE_DEFAULT.array, () => {
+                return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
+                    [DATOS_CAPITULO.editore.nombre]: TIPOS_DE_DEFAULT.simple,
+                    [DATOS_CAPITULO.editore.apellido]: TIPOS_DE_DEFAULT.simple,
+                }));
+            }),
+            [DATOS_CAPITULO.paginas.self]: crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
+                [DATOS_CAPITULO.paginas.inicio]: TIPOS_DE_DEFAULT.simple,
+                [DATOS_CAPITULO.paginas.final]: TIPOS_DE_DEFAULT.simple,
+            })),
+        }));
     },
     actualizarDatos: actualizarDatos,
     generarPreguntas: generarPreguntas,

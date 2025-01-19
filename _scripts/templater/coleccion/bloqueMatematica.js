@@ -107,12 +107,12 @@ async function actualizarDatos(tp, datos, respuesta) {
             break;
 
         case PATH_RELACIONADO:
-            datos[PATH_RELACIONADO] = await tp.user.crearPreguntas().preguntar(
-                tp, () => ({
-                    [TEMA_RELACIONADO]: null,
-                    [SUBTEMA_RELACIONADO]: null,
-                    [BLOQUE_RELACIONADO]: null,
-                }), actualizarDatosRelacionado, generarPreguntasRelacionado, 
+            datos[PATH_RELACIONADO] = await tp.user.crearPreguntas(
+                tp, (TIPOS_DE_DEFAULT, crearFuncion) => crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
+                    [TEMA_RELACIONADO]: TIPOS_DE_DEFAULT.simple,
+                    [SUBTEMA_RELACIONADO]: TIPOS_DE_DEFAULT.simple,
+                    [BLOQUE_RELACIONADO]: TIPOS_DE_DEFAULT.simple,
+                })),  actualizarDatosRelacionado, generarPreguntasRelacionado, 
                 "Que bloque va a ser el que esta siendo aplicado el corolario?",
                 datos[PATH_RELACIONADO] ? datos[PATH_RELACIONADO] : {}
             );
@@ -474,15 +474,15 @@ function representacion(tp, datos) {
 }
 
 module.exports = () => ({
-    obtenerDefault: () => ({
-        [CLASIFICACION]: null,
-        [TEMA]: null,
-        [SUBTEMA]: null,
-        [NUMERO]: null,
-        [NOMBRE]: null,
-        [PATH]: null,
-        [PATH_RELACIONADO]: null,
-    }),
+    obtenerDefault: (TIPOS_DE_DEFAULT, crearFuncion) => crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
+        [CLASIFICACION]: TIPOS_DE_DEFAULT.simple,
+        [TEMA]: TIPOS_DE_DEFAULT.simple,
+        [SUBTEMA]: TIPOS_DE_DEFAULT.simple,
+        [NUMERO]: TIPOS_DE_DEFAULT.simple,
+        [NOMBRE]: TIPOS_DE_DEFAULT.simple,
+        [PATH]: TIPOS_DE_DEFAULT.simple,
+        [PATH_RELACIONADO]: TIPOS_DE_DEFAULT.simple,
+    })),
     actualizarDatos: actualizarDatos,
     generarPreguntas: generarPreguntas,
     representacion: representacion,
