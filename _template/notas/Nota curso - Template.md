@@ -47,7 +47,6 @@
 
         let tagsCurso = tp.user.obtenerTag(tp, curos[DATOS_MATERIA.tags]).map(tag => `#${tag}`);
         resumenes = dv.pages(`(${tagsCurso.join(" or ")}) and #${TAGS_CURSO.self}/${TAGS_CURSO.resumen}`);
-        console.log(resumenes);
         break;
     }
 
@@ -55,7 +54,7 @@
     if (resumenes.length > 1) {
         resumen = await preguntar.suggester(
             tp, ({ [DATOS_RESUMEN.parte]: parte, [DATOS_RESUMEN.nombre]: nombre }) => `${nombre} ${parte ? `parte ${parte}` : ""}`, 
-            resumenes, "Que tema se quiere agregar esta nota?",
+            resumenes.sort(resumen => resumen[DATOS_RESUMEN.numero]), "Que tema se quiere agregar esta nota?",
             error.Quit("No se ingresó en que tema se va a crear la nota")
         );
     }
