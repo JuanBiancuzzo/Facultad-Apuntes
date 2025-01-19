@@ -7,7 +7,7 @@ profesores:
   - 0
 tags:
   - referencia/cursotema
-  - cursos/computation-structures/Assembly-Language-Models-of-Computation
+  - curso/computation-structures/Assembly-Language-Models-of-Computation
   - cursos/resumen
 curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
 tipoCita: CursoTema

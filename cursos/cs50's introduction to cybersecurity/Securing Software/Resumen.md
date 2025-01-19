@@ -7,7 +7,7 @@ profesores:
   - 0
 tags:
   - referencia/cursotema
-  - cursos/cs50s-introduction-to-cybersecurity/Securing-Software
+  - curso/cs50s-introduction-to-cybersecurity/Securing-Software
   - cursos/resumen
 curso: "[[cursos/cs50's introduction to cybersecurity/CS50's Introduction to Cybersecurity|CS50's Introduction to Cybersecurity]]"
 tipoCita: CursoTema

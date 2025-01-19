@@ -7,7 +7,7 @@ profesores:
   - 0
 tags:
   - referencia/cursotema
-  - cursos/computation-structures/Squential-Logial
+  - curso/computation-structures/Squential-Logial
   - cursos/resumen
 curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
 tipoCita: CursoTema

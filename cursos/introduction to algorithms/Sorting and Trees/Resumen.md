@@ -9,7 +9,7 @@ parte: 0
 tipoCita: CursoTema
 tags:
   - referencia/cursotema
-  - cursos/introduction-to-algorithms/Sorting-and-Trees
+  - curso/introduction-to-algorithms/Sorting-and-Trees
   - cursos/resumen
 curso: "[[cursos/introduction to algorithms/Introduction to Algorithms|Introduction to Algorithms]]"
 nombreResumen: Sorting and Trees

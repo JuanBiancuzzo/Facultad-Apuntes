@@ -4,7 +4,7 @@ etapa: empezado
 tags:
   - investigación/ciencias-de-la-computación/data-structures
   - nota/colección
-  - cursos/introduction-to-algorithms/Sorting-and-Trees
+  - curso/introduction-to-algorithms/Sorting-and-Trees
   - colección/data-structures/estructura
 nombreEstructura: Árbol binario de búsqueda
 aliases:

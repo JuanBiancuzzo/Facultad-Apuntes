@@ -8,7 +8,7 @@ profesores:
   - 1
 tags:
   - referencia/cursotema
-  - cursos/software-construction/Thread-Saftey
+  - curso/software-construction/Thread-Saftey
   - cursos/resumen
 curso: "[[cursos/software construction/Software Construction|Software Construction]]"
 tipoCita: CursoTema

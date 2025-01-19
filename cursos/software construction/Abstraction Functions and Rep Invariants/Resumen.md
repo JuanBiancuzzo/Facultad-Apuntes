@@ -8,7 +8,7 @@ profesores:
   - 1
 tags:
   - referencia/cursotema
-  - cursos/software-construction/Abstraction-Functions-and-Rep-Invariants
+  - curso/software-construction/Abstraction-Functions-and-Rep-Invariants
   - cursos/resumen
 curso: "[[cursos/software construction/Software Construction|Software Construction]]"
 tipoCita: CursoTema

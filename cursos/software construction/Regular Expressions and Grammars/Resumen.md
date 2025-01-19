@@ -8,7 +8,7 @@ profesores:
   - 1
 tags:
   - referencia/cursotema
-  - cursos/software-construction/Regular-Expressions-and-Grammars
+  - curso/software-construction/Regular-Expressions-and-Grammars
   - cursos/resumen
 curso: "[[cursos/software construction/Software Construction|Software Construction]]"
 tipoCita: CursoTema

@@ -7,7 +7,7 @@ profesores:
   - 0
 tags:
   - referencia/cursotema
-  - cursos/computation-structures/Design-Tradeoffs
+  - curso/computation-structures/Design-Tradeoffs
   - cursos/resumen
 curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
 tipoCita: CursoTema

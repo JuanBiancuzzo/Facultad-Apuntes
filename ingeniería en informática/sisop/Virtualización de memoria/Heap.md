@@ -3,7 +3,7 @@ dia: 2023-11-20
 tags:
   - ingeniería-en-informática/sisop/Virtualización-de-memoria
   - nota/facultad
-  - cursos/introduction-to-algorithms/Sorting-and-Trees
+  - curso/introduction-to-algorithms/Sorting-and-Trees
   - colección/data-structures/estructura
   - investigación/ciencias-de-la-computación/data-structures
 aliases:

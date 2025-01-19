@@ -8,7 +8,7 @@ profesores:
   - 1
 tags:
   - referencia/cursotema
-  - cursos/software-construction/Map-Filter-Reduce
+  - curso/software-construction/Map-Filter-Reduce
   - cursos/resumen
 curso: "[[cursos/software construction/Software Construction|Software Construction]]"
 tipoCita: CursoTema

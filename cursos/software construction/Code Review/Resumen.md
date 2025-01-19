@@ -8,7 +8,7 @@ profesores:
   - 1
 tags:
   - referencia/cursotema
-  - cursos/software-construction/Code-Review
+  - curso/software-construction/Code-Review
   - cursos/resumen
 curso: "[[cursos/software construction/Software Construction|Software Construction]]"
 tipoCita: CursoTema

@@ -9,7 +9,7 @@ parte: 0
 tipoCita: CursoTema
 tags:
   - referencia/cursotema
-  - cursos/introduction-to-algorithms/Shortest-Paths
+  - curso/introduction-to-algorithms/Shortest-Paths
   - cursos/resumen
 curso: "[[cursos/introduction to algorithms/Introduction to Algorithms|Introduction to Algorithms]]"
 nombreResumen: Shortest Paths

@@ -19,7 +19,7 @@ Vamos a investigar como se puede procesar el lenguaje natural
 
 ## Resumen
 ---
-#ingeniería-en-informática/orga/NLP/1 #cursos/ciencia-de-datos-para-salud-mental-y-psicología/Machine-learning-deep-learning-e-interpretabilidad-algorítmica 
+#ingeniería-en-informática/orga/NLP/1 #curso/ciencia-de-datos-para-salud-mental-y-psicología/Machine-learning-deep-learning-e-interpretabilidad-algorítmica 
 Es el procesamiento de texto intentando extraer algún contenido contextual, como sentimientos, reconocimiento de características del texto. También se puede crear texto original
 
 Leer

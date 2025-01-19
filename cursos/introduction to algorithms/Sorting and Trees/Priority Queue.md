@@ -4,7 +4,7 @@ etapa: empezado
 referencias:
   - "701"
 tags:
-  - cursos/introduction-to-algorithms/Sorting-and-Trees
+  - curso/introduction-to-algorithms/Sorting-and-Trees
   - nota/curso
 aliases:
   - Cola con prioridad

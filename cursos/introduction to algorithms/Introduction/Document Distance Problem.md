@@ -4,7 +4,7 @@ etapa: empezado
 referencias:
   - "700"
 tags:
-  - cursos/introduction-to-algorithms/Introduction
+  - curso/introduction-to-algorithms/Introduction
   - nota/curso
 aliases:
   - Problema de la distancia entre documentos

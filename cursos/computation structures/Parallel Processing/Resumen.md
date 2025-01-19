@@ -7,7 +7,7 @@ profesores:
   - 0
 tags:
   - referencia/cursotema
-  - cursos/computation-structures/Parallel-Processing
+  - curso/computation-structures/Parallel-Processing
   - cursos/resumen
 curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
 tipoCita: CursoTema

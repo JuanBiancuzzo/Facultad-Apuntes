@@ -9,7 +9,7 @@ parte: 0
 tipoCita: CursoTema
 tags:
   - referencia/cursotema
-  - cursos/introduction-to-algorithms/Dynamic-Programming
+  - curso/introduction-to-algorithms/Dynamic-Programming
   - cursos/resumen
 curso: "[[cursos/introduction to algorithms/Introduction to Algorithms|Introduction to Algorithms]]"
 nombreResumen: Dynamic Programming

@@ -9,7 +9,7 @@ parte: 0
 tipoCita: CursoTema
 tags:
   - referencia/cursotema
-  - cursos/introduction-to-algorithms/Advanced-Topics
+  - curso/introduction-to-algorithms/Advanced-Topics
   - cursos/resumen
 curso: "[[cursos/introduction to algorithms/Introduction to Algorithms|Introduction to Algorithms]]"
 nombreResumen: Advanced Topics

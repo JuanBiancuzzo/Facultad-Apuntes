@@ -5,7 +5,7 @@ referencias:
   - "701"
   - "838"
 tags:
-  - cursos/introduction-to-algorithms/Sorting-and-Trees
+  - curso/introduction-to-algorithms/Sorting-and-Trees
   - nota/curso
   - investigación/ciencias-de-la-computación/algoritmos/Sorting-algorithms
 aliases:

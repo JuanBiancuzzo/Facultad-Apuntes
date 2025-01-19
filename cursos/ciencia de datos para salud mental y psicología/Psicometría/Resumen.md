@@ -2,7 +2,7 @@
 capitulo: 1
 tags:
   - cursos/resumen
-  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Psicometría
+  - curso/ciencia-de-datos-para-salud-mental-y-psicología/Psicometría
 referencias:
   - "643"
   - "644"

@@ -3,7 +3,7 @@ dia: 2024-11-25
 etapa: sin-empezar
 referencias: 
 tags:
-  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/psicometría
+  - curso/ciencia-de-datos-para-salud-mental-y-psicología/Psicometría
   - nota/investigacion
 ---
 ```dataviewjs

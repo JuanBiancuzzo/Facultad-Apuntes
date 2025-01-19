@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/estructura/Sistema-ARC
   - ingeniería-electrónica/estructura/Sistema-ARC
-  - cursos/introduction-to-algorithms/Introduction
+  - curso/introduction-to-algorithms/Introduction
 aliases:
   - Palabra nula#Palabra nula
 referencias:

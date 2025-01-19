@@ -105,7 +105,7 @@ Machine learning
 
 ## Resumen
 ---
-#cursos/ciencia-de-datos-para-salud-mental-y-psicología/Machine-learning-deep-learning-e-interpretabilidad-algorítmica 
+#curso/ciencia-de-datos-para-salud-mental-y-psicología/Machine-learning-deep-learning-e-interpretabilidad-algorítmica 
 %% hacer grafico de todas las partes %%
 Leer
 * [[Elliptic Curves, Modular Forms, and Their L-functions de Álvaro Lozano-Robledo|Elliptic Curves, Modular Forms, and Their L-functions]]

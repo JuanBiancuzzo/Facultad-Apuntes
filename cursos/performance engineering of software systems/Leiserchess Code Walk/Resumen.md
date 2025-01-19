@@ -8,7 +8,7 @@ profesores:
   - 1
 tags:
   - referencia/cursotema
-  - cursos/performance-engineering-of-software-systems/Leiserchess-Code-Walk
+  - curso/performance-engineering-of-software-systems/Leiserchess-Code-Walk
   - cursos/resumen
 curso: "[[cursos/performance engineering of software systems/Performance Engineering of Software Systems|Performance Engineering of Software Systems]]"
 tipoCita: CursoTema

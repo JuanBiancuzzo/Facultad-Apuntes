@@ -8,7 +8,7 @@ tags:
   - ingeniería-electrónica/algo-1/Punteros
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - nota/facultad
-  - cursos/introduction-to-algorithms/Introduction
+  - curso/introduction-to-algorithms/Introduction
 aliases:
   - Operador de Dirección#^operador-direccion
   - Operador de Indirección#^operador-indireccion

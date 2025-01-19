@@ -6,7 +6,7 @@ tags:
   - ingeniería-en-informática/orga/NLP/1
   - nota/facultad
   - investigación/machine-Learning/Natural-Language-Processing
-  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Machine-learning-deep-learning-e-interpretabilidad-algorítmica
+  - curso/ciencia-de-datos-para-salud-mental-y-psicología/Machine-learning-deep-learning-e-interpretabilidad-algorítmica
   - investigación/ciencias-de-la-computación/Machine-learning/Natural-Language-Processing
   - investigación/matemática/Estadística/Machine-learning/Natural-Language-Processing
 ---

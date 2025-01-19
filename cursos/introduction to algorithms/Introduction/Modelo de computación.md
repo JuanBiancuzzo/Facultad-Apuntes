@@ -4,7 +4,7 @@ etapa: empezado
 referencias:
   - "700"
 tags:
-  - cursos/introduction-to-algorithms/Introduction
+  - curso/introduction-to-algorithms/Introduction
   - nota/curso
   - investigación/ciencias-de-la-computación/algoritmos
 ---

@@ -8,7 +8,7 @@ profesores:
 curso: "[[cursos/cs50's introduction to cybersecurity/CS50's Introduction to Cybersecurity|CS50's Introduction to Cybersecurity]]"
 tipoCita: CursoTema
 tags:
-  - cursos/cs50s-introduction-to-cybersecurity/Securing-Accounts
+  - curso/cs50s-introduction-to-cybersecurity/Securing-Accounts
   - referencia/cursotema
   - cursos/resumen
 nombreResumen: Securing Accounts

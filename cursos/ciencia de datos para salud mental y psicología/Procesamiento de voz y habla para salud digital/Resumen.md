@@ -1,7 +1,7 @@
 ---
 capitulo: 6
 tags:
-  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/Procesamiento-de-voz-y-habla-para-salud-digital
+  - curso/ciencia-de-datos-para-salud-mental-y-psicología/Procesamiento-de-voz-y-habla-para-salud-digital
   - cursos/resumen
 nombreResumen: Procesamiento de voz y habla para salud digital
 ---

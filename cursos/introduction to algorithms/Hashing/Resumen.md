@@ -9,7 +9,7 @@ parte: 0
 tipoCita: CursoTema
 tags:
   - referencia/cursotema
-  - cursos/introduction-to-algorithms/Hashing
+  - curso/introduction-to-algorithms/Hashing
   - cursos/resumen
 curso: "[[cursos/introduction to algorithms/Introduction to Algorithms|Introduction to Algorithms]]"
 nombreResumen: Hashing

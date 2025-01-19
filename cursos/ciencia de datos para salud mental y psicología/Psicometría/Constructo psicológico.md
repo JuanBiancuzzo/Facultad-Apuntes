@@ -4,7 +4,7 @@ etapa: empezado
 referencias:
   - "645"
 tags:
-  - cursos/ciencia-de-datos-para-salud-mental-y-psicología/psicometría
+  - curso/ciencia-de-datos-para-salud-mental-y-psicología/Psicometría
   - nota/investigacion
 ---
 ```dataviewjs
