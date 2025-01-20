@@ -6,10 +6,8 @@ const ELIMINAR_TIPO_DATO = "eliminar tipo dato";
 
 const SALIR = "salir";
 
-async function actualizarDatos(tp, datos, respuesta, lenguaje) {
-    const { 
-        DATOS: { FUNCIONES: { funcion: { firma: DATOS_FUNCION } } } 
-    } = tp.user.constantes(); 
+async function actualizarDatos(tp, datos, respuesta, lenguaje = undefined) {
+    const { DATOS: { FUNCIONES: { funcion: { firma: DATOS_FIRMA } } } } = tp.user.constantes(); 
 
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
@@ -20,19 +18,19 @@ async function actualizarDatos(tp, datos, respuesta, lenguaje) {
     let indice;
 
     switch (respuesta) {
-        case DATOS_FUNCION.nombreFuncion: 
-            datos[DATOS_FUNCION.nombreFuncion] = await preguntar.prompt(
-                tp, datos[DATOS_FUNCION.nombreFuncion]
-                    ? `Nuevo nombre de la función, donde antes era ${datos[DATOS_FUNCION.nombreFuncion]}`
+        case DATOS_FIRMA.nombreFuncion: 
+            datos[DATOS_FIRMA.nombreFuncion] = await preguntar.prompt(
+                tp, datos[DATOS_FIRMA.nombreFuncion]
+                    ? `Nuevo nombre de la función, donde antes era ${datos[DATOS_FIRMA.nombreFuncion]}`
                     : "Nombre de la función",
                 error.Quit("No se ingresó el nombre de la función")
             );
             break;
 
-        case DATOS_FUNCION.descripcion: 
-            datos[DATOS_FUNCION.descripcion] = await preguntar.prompt(
-                tp, datos[DATOS_FUNCION.descripcion]
-                    ? `Nueva descripción de la función, donde antes era ${datos[DATOS_FUNCION.descripcion]}`
+        case DATOS_FIRMA.descripcion: 
+            datos[DATOS_FIRMA.descripcion] = await preguntar.prompt(
+                tp, datos[DATOS_FIRMA.descripcion]
+                    ? `Nueva descripción de la función, donde antes era ${datos[DATOS_FIRMA.descripcion]}`
                     : "Descripción de la función",
                 error.Quit("No se ingresó la descripción de la función")
             );
@@ -41,36 +39,37 @@ async function actualizarDatos(tp, datos, respuesta, lenguaje) {
         case MODIFICAR_PARAMETRO:
             indice = separacion[1];
 
-        case DATOS_FUNCION.parametros.self: 
+        case DATOS_FIRMA.parametros.self: 
             let parametroPrevio;
-            if (indice) parametroPrevio = datos[DATOS_FUNCION.parametros.self][indice];
+            if (indice) parametroPrevio = datos[DATOS_FIRMA.parametros.self][indice];
 
             let parametro = await tp.user.crearPreguntas(
-                tp, obtenerDefaultParametros.bind(null, tp), 
+                tp, obtenerDefaultParametros.bind(null, tp, lenguaje), 
                 (tp, datosDado, respuestaDada) => actualizarDatosParametros(tp, datosDado, respuestaDada, lenguaje), 
                 (tp, datosDado) => generarPreguntasParametros(tp, datosDado, lenguaje), 
                 "Ingresar los datos del parámetro", parametroPrevio
             );
 
             if (indice) {
-                datos[DATOS_FUNCION.parametros.self][indice] = parametro; 
+                datos[DATOS_FIRMA.parametros.self][indice] = parametro; 
             } else {
-                datos[DATOS_FUNCION.parametros.self].push(parametro);
+                datos[DATOS_FIRMA.parametros.self].push(parametro);
             }
             break;
 
         case ELIMINAR_PARAMETRO:
-            datos[DATOS_FUNCION.parametros.self].pop();
+            datos[DATOS_FIRMA.parametros.self].pop();
             break;
 
-        case DATOS_FUNCION.return.self: 
-            datos[DATOS_FUNCION.return.self] = await tp.user.crearPreguntas(
-                tp, obtenerDefaultReturn.bind(null, tp), 
+        case DATOS_FIRMA.return.self: 
+            let resultadoTemp = await tp.user.crearPreguntas(
+                tp, obtenerDefaultReturn.bind(null, tp, lenguaje), 
                 (tp, datosDado, respuestaDada) => actualizarDatosReturn(tp, datosDado, respuestaDada, lenguaje), 
                 (tp, datosDado) => generarPreguntasReturn(tp, datosDado, lenguaje), 
                 "Ingresar los datos del tipo de dato que se devuelve", 
-                datos[DATOS_FUNCION.return.self] ? datos[DATOS_FUNCION.return.self] : null
+                datos[DATOS_FIRMA.return.self] ? datos[DATOS_FIRMA.return.self] : null
             );
+            datos[DATOS_FIRMA.return.self] = resultadoTemp;
             break;
 
         case SALIR: 
@@ -81,74 +80,44 @@ async function actualizarDatos(tp, datos, respuesta, lenguaje) {
     return salir;
 }
 
-function defaultTipoDato(tp, TIPOS_DE_DEFAULT, lenguaje) {
-    const { lenguajes: DATOS_LENGUAJES } = tp.user.constantes().DATOS.FUNCIONES.lenguaje;
-
-    switch (lenguaje) {
-        case DATOS_LENGUAJES.c: 
-            return TIPOS_DE_DEFAULT.simple;
-        default: return TIPOS_DE_DEFAULT.array;
-    }
-}
-
-function tipoDatoEsArray(tp, lenguaje) {
-    return Array.isArray(defaultTipoDato(tp, lenguaje));
-}
-
-function parametroConValorPorDefecto(tp, lenguaje) {
-    const { lenguajes: DATOS_LENGUAJES } = tp.user.constantes().DATOS.FUNCIONES.lenguaje;
-
-    switch (lenguaje) {
-        case DATOS_LENGUAJES.c: 
-            return false;
-
-        case DATOS_LENGUAJES.python:
-        default:
-            return true;
-    }
-}
-
-function generarPreguntas(tp, datos, lenguaje) {
-    const { 
-        SIMBOLOS, DATOS: { FUNCIONES: { funcion: { firma: DATOS_FUNCION } } } 
-    } = tp.user.constantes(); 
+function generarPreguntas(tp, datos, lenguaje = undefined) {
+    const { SIMBOLOS, DATOS: { FUNCIONES: { funcion: { firma: DATOS_FIRMA } } } } = tp.user.constantes(); 
     let opciones = [], valores = [];
 
-    opciones.push(DATOS_FUNCION.nombreFuncion);
-    valores.push(datos[DATOS_FUNCION.nombreFuncion]
-        ? ` ${SIMBOLOS.modificar} Modificar el nombre de la función, donde era ${datos[DATOS_FUNCION.nombreFuncion]}`
+    opciones.push(DATOS_FIRMA.nombreFuncion);
+    valores.push(datos[DATOS_FIRMA.nombreFuncion]
+        ? ` ${SIMBOLOS.modificar} Modificar el nombre de la función, donde era ${datos[DATOS_FIRMA.nombreFuncion]}`
         : ` ${SIMBOLOS.agregar} Nombre de la función`
     )
 
-    opciones.push(DATOS_FUNCION.descripcion);
-    valores.push(datos[DATOS_FUNCION.descripcion]
-        ? ` ${SIMBOLOS.modificar} Modificar la descripción de la función, donde era ${datos[DATOS_FUNCION.descripcion]}`
+    opciones.push(DATOS_FIRMA.descripcion);
+    valores.push(datos[DATOS_FIRMA.descripcion]
+        ? ` ${SIMBOLOS.modificar} Modificar la descripción de la función, donde era ${datos[DATOS_FIRMA.descripcion]}`
         : ` ${SIMBOLOS.agregar} Descripción de la función`
     )
 
-    for (let [indice, parametro] of datos[DATOS_FUNCION.parametros.self].entries()) {
+    for (let [indice, parametro] of datos[DATOS_FIRMA.parametros.self].entries()) {
         opciones.push(`${MODIFICAR_PARAMETRO}-${indice}`);
         valores.push(`️ ${SIMBOLOS.modificar} Modificar el parámetro, donde es ${describirParametro(tp, parametro, lenguaje)}`);
     }
 
-    if (datos[DATOS_FUNCION.parametros.self].length > 0) {
-        let ultimoParametro = datos[DATOS_FUNCION.parametros.self].last();
+    if (datos[DATOS_FIRMA.parametros.self].length > 0) {
+        let ultimoParametro = datos[DATOS_FIRMA.parametros.self].last();
         opciones.push(ELIMINAR_PARAMETRO);
         valores.push(` ${SIMBOLOS.sacar} Eliminar el parámetro, donde es ${describirParametro(tp, ultimoParametro, lenguaje)}`);
 
-
     } 
 
-    opciones.push(DATOS_FUNCION.parametros.self);
+    opciones.push(DATOS_FIRMA.parametros.self);
     valores.push(` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Parámetro`);
 
-    opciones.push(DATOS_FUNCION.return.self);
-    valores.push(datos[DATOS_FUNCION.return.self]
-        ? ` ${SIMBOLOS.modificar} Modificar el valor de retorno de la función, donde era ${describirReturn(tp, datos[DATOS_FUNCION.return.self], lenguaje)}`
+    opciones.push(DATOS_FIRMA.return.self);
+    valores.push(esValidoReturn(tp, datos[DATOS_FIRMA.return.self], lenguaje)
+        ? ` ${SIMBOLOS.modificar} Modificar el valor de retorno de la función, donde era ${describirReturn(tp, datos[DATOS_FIRMA.return.self], lenguaje)}`
         : ` ${SIMBOLOS.agregar} Valor de retorno de la función`
     )
 
-    if ([DATOS_FUNCION.nombreFuncion, DATOS_FUNCION.descripcion, DATOS_FUNCION.return.self].every(key => datos[key])) {
+    if (esValido(tp, datos, lenguaje)) {
         opciones.push(SALIR);
         valores.push(` ${SIMBOLOS.volver} Confirmar datos`);
     }
@@ -156,10 +125,17 @@ function generarPreguntas(tp, datos, lenguaje) {
     return { opciones: opciones, valores: valores };
 }
 
-function obtenerDefaultParametros(tp, TIPOS_DE_DEFAULT, crearFuncion) {
+function esValido(tp, datos, lenguaje = undefined) {
+    const { DATOS: { FUNCIONES: { funcion: { firma: DATOS_FIRMA } } } } = tp.user.constantes(); 
+
+    return esValidoReturn(tp, datos[DATOS_FIRMA.return.self], lenguaje) 
+        && [DATOS_FIRMA.nombreFuncion, DATOS_FIRMA.descripcion].every(key => datos[key]);
+}
+
+function obtenerDefaultParametros(tp, lenguaje, TIPOS_DE_DEFAULT, crearFuncion) {
     const {
         DATOS: { FUNCIONES: { funcion: { firma: { parametros: DATOS_PARAMETROS } } } }
-    } = tp.user.constantes()
+    } = tp.user.constantes();
 
     return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
         [DATOS_PARAMETROS.nombreParametro]: TIPOS_DE_DEFAULT.simple,
@@ -169,7 +145,7 @@ function obtenerDefaultParametros(tp, TIPOS_DE_DEFAULT, crearFuncion) {
     }));
 }
 
-async function actualizarDatosParametros(tp, datos, respuesta, lenguaje) {
+async function actualizarDatosParametros(tp, datos, respuesta, lenguaje = undefined) {
     const { 
         funcion: { firma: { parametros: DATOS_PARAMETROS } },
     } = tp.user.constantes().DATOS.FUNCIONES;
@@ -213,20 +189,20 @@ async function actualizarDatosParametros(tp, datos, respuesta, lenguaje) {
         case MODIFICAR_TIPO_DATO:
             indice = separacion[1];
             datos[DATOS_PARAMETROS.tipoDeDato][indice] = await preguntar.prompt(
-                tp, `Nuevo tipo de dato del parámetro, donde antes era ${datos[NOMBRE_AUTORES][indice]}`,
+                tp, `Nuevo tipo de dato del parámetro, donde antes era ${datos[DATOS_PARAMETROS.tipoDeDato][indice]}`,
                 error.Quit("No se ingresó el tipo de dato del parámetro")
             );
             break;
 
         case DATOS_PARAMETROS.tipoDeDato:
             let tipoDato = await preguntar.prompt(
-                tp, (tipoDatoEsArray(tp, lenguaje) && datos[DATOS_PARAMETROS.tipoDeDato].length > 0) 
+                tp, (tieneMultiplesTiposDeDatos(tp, lenguaje) && datos[DATOS_PARAMETROS.tipoDeDato].length > 0) 
                     ? `Tipo de dato del parámetro, donde las otras son ${datos[DATOS_PARAMETROS.tipoDeDato].join(", ")}`
                     : "Tipo de dato del parámetro", 
                 error.Quit("No se ingresó el tipo de dato del parámetro")
             );
 
-            if (tipoDatoEsArray(tp, lenguaje)) {
+            if (tieneMultiplesTiposDeDatos(tp, lenguaje)) {
                 datos[DATOS_PARAMETROS.tipoDeDato].push(tipoDato);
             } else {
                 datos[DATOS_PARAMETROS.tipoDeDato] = tipoDato;
@@ -244,7 +220,7 @@ async function actualizarDatosParametros(tp, datos, respuesta, lenguaje) {
     return salir;
 }
 
-function generarPreguntasParametros(tp, datos, lenguaje) {
+function generarPreguntasParametros(tp, datos, lenguaje = undefined) {
     const { 
         SIMBOLOS, DATOS: { FUNCIONES: { funcion: { firma: { parametros: DATOS_PARAMETROS } } } } 
     } = tp.user.constantes(); 
@@ -262,15 +238,15 @@ function generarPreguntasParametros(tp, datos, lenguaje) {
         : ` ${SIMBOLOS.agregar} Descripción del parámetro`
     )
 
-    if (parametroConValorPorDefecto(tp, lenguaje)) {
+    if (tieneParametroConValorPorDefecto(tp, lenguaje)) {
         opciones.push(DATOS_PARAMETROS.valorPorDefecto);
         valores.push(datos[DATOS_PARAMETROS.valorPorDefecto]
             ? ` ${SIMBOLOS.modificar} Modificar el valor por defecto del parámetro, donde era ${datos[DATOS_PARAMETROS.valorPorDefecto]}`
-            : ` ${SIMBOLOS.agregar} Valor por defecto del parámetro`
+            : ` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Valor por defecto del parámetro`
         )
     }
 
-    if (tipoDatoEsArray(tp, lenguaje)) {
+    if (tieneMultiplesTiposDeDatos(tp, lenguaje)) {
         for (let [indice, tipoDeDato] of datos[DATOS_PARAMETROS.tipoDeDato].entries()) {
             opciones.push(`${MODIFICAR_TIPO_DATO}-${indice}`);
             valores.push(`️ ${SIMBOLOS.modificar} Modificar el tipo de dato, donde es ${tipoDeDato}`);
@@ -298,15 +274,7 @@ function generarPreguntasParametros(tp, datos, lenguaje) {
         );
     }
 
-    let DATOS_SIMPLES = [DATOS_PARAMETROS.nombreParametro, DATOS_PARAMETROS.descripcion];
-    if (!tipoDatoEsArray(tp, lenguaje)) {
-        DATOS_SIMPLES.push(DATOS_PARAMETROS.tipoDeDato);
-    }
-    if (parametroConValorPorDefecto(tp, lenguaje)) {
-        DATOS_SIMPLES.push(DATOS_PARAMETROS.valorPorDefecto);
-    }
-
-    if (DATOS_SIMPLES.every(key => datos[key]) && (!tipoDatoEsArray(tp, lenguaje) || datos[DATOS_PARAMETROS.tipoDeDato].length > 0)) {
+    if (esValidoParametro(tp, datos)) {
         opciones.push(SALIR);
         valores.push(` ${SIMBOLOS.volver} Confirmar datos`);
     }
@@ -314,57 +282,163 @@ function generarPreguntasParametros(tp, datos, lenguaje) {
     return { opciones: opciones, valores: valores };
 }
 
-function describirParametro(tp, parametro, lenguaje) {
-    const { 
-        lenguaje: { lenguajes: DATOS_LENGUAJES },
-        funcion: { firma: { parametros: DATOS_PARAMETROS } },
-    } = tp.user.constantes().DATOS.FUNCIONES;
+function esValidoParametro(tp, datos, lenguaje = undefined) {
+    const { DATOS: { FUNCIONES: { funcion: { firma: { parametros: DATOS_PARAMETROS } } } } } = tp.user.constantes(); 
 
-    let descripcionTipoDato;
-
-    switch (lenguaje) {
-        case DATOS_LENGUAJES.python:
-            descripcionTipoDato = parametro[DATOS_PARAMETROS.tipoDeDato];
-            if (Array.isArray(parametro[DATOS_PARAMETROS.tipoDeDato])) {
-                descripcionTipoDato = `${parametro[DATOS_PARAMETROS.tipoDeDato].join(" | ")}`;
-            }
-            let textoDefault = "";
-            if (parametro[DATOS_PARAMETROS.valorPorDefecto]) {
-                textoDefault = `= ${parametro[DATOS_PARAMETROS.valorPorDefecto]}`;
-            }
-
-            return `${parametro[DATOS_PARAMETROS.nombreParametro]}: ${descripcionTipoDato} ${textoDefault}`;
-
-        case DATOS_LENGUAJES.c:
-            return `${parametro[DATOS_PARAMETROS.tipoDeDato]} ${parametro[DATOS_PARAMETROS.nombreParametro]}`;
-
-        default:
-            descripcionTipoDato = parametro[DATOS_PARAMETROS.tipoDeDato];
-            if (Array.isArray(parametro[DATOS_PARAMETROS.tipoDeDato])) {
-                descripcionTipoDato = `(${parametro[DATOS_PARAMETROS.tipoDeDato].join(" | ")})`;
-            }
-
-            return `${parametro[DATOS_PARAMETROS.nombreParametro]}: ${descripcionTipoDato}`;
+    let DATOS_SIMPLES = [DATOS_PARAMETROS.nombreParametro, DATOS_PARAMETROS.descripcion];
+    if (!tieneMultiplesTiposDeDatos(tp, lenguaje)) {
+        DATOS_SIMPLES.push(DATOS_PARAMETROS.tipoDeDato);
     }
+
+    return DATOS_SIMPLES.every(key => datos[key]) && (!tieneMultiplesTiposDeDatos(tp, lenguaje) || datos[DATOS_PARAMETROS.tipoDeDato].length > 0);
 }
 
-function obtenerDefaultStruct(tp, TIPOS_DE_DEFAULT, crearFuncion) {
-    const {
-        DATOS: { FUNCIONES: { funcion: { firma: { struct: DATOS_STRUCT } } } }
-    } = tp.user.constantes()
+function obtenerDefaultStruct(tp, lenguaje, TIPOS_DE_DEFAULT, crearFuncion) {
+    const { DATOS: { FUNCIONES: { funcion: { firma: { struct: DATOS_STRUCT } } } } } = tp.user.constantes()
 
     return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
         [DATOS_STRUCT.nombreStruct]: TIPOS_DE_DEFAULT.simple,
         [DATOS_STRUCT.descripcion]: TIPOS_DE_DEFAULT.simple,
         [DATOS_STRUCT.campos]: crearFuncion(
             TIPOS_DE_DEFAULT.array, 
-            () => obtenerDefaultParametros(tp, TIPOS_DE_DEFAULT, crearFuncion)
+            () => obtenerDefaultParametros(tp, lenguaje, TIPOS_DE_DEFAULT, crearFuncion)
         ),
-        [DATOS_STRUCT.alias]: TIPOS_DE_DEFAULT.simple,
+        [DATOS_STRUCT.herede]: TIPOS_DE_DEFAULT.simple,
     }));
 }
 
-function obtenerDefaultReturn(tp, TIPOS_DE_DEFAULT, crearFuncion) {
+async function actualizarDatosStruct(tp, datos, respuesta, lenguaje = undefined) {
+    const { DATOS: { FUNCIONES: { funcion: { firma: { struct: DATOS_STRUCT } } } } } = tp.user.constantes(); 
+
+    const preguntar = tp.user.preguntar();
+    const error = tp.user.error();
+
+    let salir = false;
+    let separacion = respuesta.split("-");
+    respuesta = separacion[0];
+    let indice;
+
+    switch (respuesta) {
+        case DATOS_STRUCT.nombreStruct: 
+            datos[DATOS_STRUCT.nombreStruct] = await preguntar.prompt(
+                tp, datos[DATOS_STRUCT.nombreStruct]
+                    ? `Nuevo nombre del struct, donde antes era ${datos[DATOS_STRUCT.nombreStruct]}`
+                    : "Nombre del struct",
+                error.Quit("No se ingresó el nombre del struct")
+            );
+            break;
+
+        case DATOS_STRUCT.descripcion: 
+            datos[DATOS_STRUCT.descripcion] = await preguntar.prompt(
+                tp, datos[DATOS_STRUCT.descripcion]
+                    ? `Nueva descripción del struct, donde antes era ${datos[DATOS_STRUCT.descripcion]}`
+                    : "Descripción del struct",
+                error.Quit("No se ingresó la descripción del struct")
+            );
+            break;
+
+        case MODIFICAR_PARAMETRO:
+            indice = separacion[1];
+
+        case DATOS_STRUCT.campos: 
+            let campoPrevio;
+            if (indice) campoPrevio = datos[DATOS_STRUCT.campos][indice];
+
+            let campo = await tp.user.crearPreguntas(
+                tp, obtenerDefaultParametros.bind(null, tp, lenguaje), 
+                (tp, datosDados, respuestaDada) => actualizarDatosParametros(tp, datosDados, respuestaDada, lenguaje), 
+                (tp, datosDados) => generarPreguntasParametros(tp, datosDados, lenguaje), 
+                "Ingresar los datos del campo", campoPrevio
+            );
+
+            if (indice) {
+                datos[DATOS_STRUCT.campos][indice] = campo; 
+            } else {
+                datos[DATOS_STRUCT.campos].push(campo);
+            }
+            break;
+
+        case ELIMINAR_PARAMETRO:
+            datos[DATOS_STRUCT.campos].pop();
+            break;
+
+        case DATOS_STRUCT.herede:
+            datos[DATOS_STRUCT.herede] = await preguntar.prompt(
+                tp, datos[DATOS_STRUCT.herede]
+                    ? `Nueva herencia para el struct, donde antes era ${datos[DATOS_STRUCT.herede]}`
+                    : "De que hereda el struct",
+                error.Quit("No se ingresó la herencia del struct")
+            );
+            break;
+
+        case SALIR: 
+            salir = true;
+            break;
+    }
+
+    return salir;
+}
+
+function generarPreguntasStruct(tp, datos, lenguaje = undefined) {
+    const { 
+        SIMBOLOS, DATOS: { FUNCIONES: { funcion: { firma: { struct: DATOS_STRUCT } } } } 
+    } = tp.user.constantes(); 
+    let opciones = [], valores = [];
+
+    opciones.push(DATOS_STRUCT.nombreStruct);
+    valores.push(datos[DATOS_STRUCT.nombreStruct]
+        ? ` ${SIMBOLOS.modificar} Modificar el nombre del struct, donde era ${datos[DATOS_STRUCT.nombreStruct]}`
+        : ` ${SIMBOLOS.agregar} Nombre del struct`
+    )
+
+    opciones.push(DATOS_STRUCT.descripcion);
+    valores.push(datos[DATOS_STRUCT.descripcion]
+        ? ` ${SIMBOLOS.modificar} Modificar la descripción del struct, donde era ${datos[DATOS_STRUCT.descripcion]}`
+        : ` ${SIMBOLOS.agregar} Descripción del struct`
+    );
+
+    for (let [indice, parametro] of datos[DATOS_STRUCT.campos].entries()) {
+        opciones.push(`${MODIFICAR_PARAMETRO}-${indice}`);
+        valores.push(`️ ${SIMBOLOS.modificar} Modificar el campos, donde es ${describirParametro(tp, parametro, lenguaje)}`);
+    }
+
+    if (datos[DATOS_STRUCT.campos].length > 0) {
+        let ultimoParametro = datos[DATOS_STRUCT.campos].last();
+        opciones.push(ELIMINAR_PARAMETRO);
+        valores.push(` ${SIMBOLOS.sacar} Eliminar el campo, donde es ${describirParametro(tp, ultimoParametro, lenguaje)}`);
+
+        opciones.push(DATOS_STRUCT.campos);
+        valores.push(` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Campo`);
+
+    } else {
+        opciones.push(DATOS_STRUCT.campos);
+        valores.push(` ${SIMBOLOS.agregar} Campo`);
+    }
+
+    if (tieneStructConHerencia(tp, lenguaje)) {
+        opciones.push(DATOS_STRUCT.herede);
+        valores.push(datos[DATOS_STRUCT.herede]
+            ? ` ${SIMBOLOS.modificar} Modificar la estructura de la que herede, donde era ${datos[DATOS_STRUCT.herede]}`
+            : ` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Estructura de la que herede`
+        );
+    }
+
+    if (esValidoStruct(tp, datos)) {
+        opciones.push(SALIR);
+        valores.push(` ${SIMBOLOS.volver} Confirmar datos`);
+    }
+
+    return { opciones: opciones, valores: valores };
+}
+
+function esValidoStruct(tp, datos, lenguaje = undefined) {
+    const { DATOS: { FUNCIONES: { funcion: { firma: { struct: DATOS_STRUCT } } } } } = tp.user.constantes(); 
+    let DATOS_SIMPLES = [DATOS_STRUCT.nombreStruct, DATOS_STRUCT.descripcion];
+
+    return datos[DATOS_STRUCT.campos].length > 0 && DATOS_SIMPLES.every(key => datos[key]);
+}
+
+function obtenerDefaultReturn(tp, lenguaje, TIPOS_DE_DEFAULT, crearFuncion) {
     const {
         DATOS: { FUNCIONES: { funcion: { firma: { return: DATOS_RETURN } } } }
     } = tp.user.constantes()
@@ -375,7 +449,7 @@ function obtenerDefaultReturn(tp, TIPOS_DE_DEFAULT, crearFuncion) {
     }));
 }
 
-async function actualizarDatosReturn(tp, datos, respuesta, lenguaje) {
+async function actualizarDatosReturn(tp, datos, respuesta, lenguaje = undefined) {
     const { 
         funcion: { firma: { return: DATOS_RETURN } },
     } = tp.user.constantes().DATOS.FUNCIONES;
@@ -402,20 +476,20 @@ async function actualizarDatosReturn(tp, datos, respuesta, lenguaje) {
         case MODIFICAR_TIPO_DATO:
             indice = separacion[1];
             datos[DATOS_RETURN.tipoDeDato][indice] = await preguntar.prompt(
-                tp, `Nuevo tipo de dato del parámetro, donde antes era ${datos[NOMBRE_AUTORES][indice]}`,
+                tp, `Nuevo tipo de dato del parámetro, donde antes era ${datos[DATOS_RETURN.tipoDeDato][indice]}`,
                 error.Quit("No se ingresó el tipo de dato del parámetro")
             );
             break;
 
         case DATOS_RETURN.tipoDeDato:
             let tipoDato = await preguntar.prompt(
-                tp, (tipoDatoEsArray(tp, lenguaje) && datos[DATOS_RETURN.tipoDeDato].length > 0) 
+                tp, (tieneMultiplesTiposDeDatos(tp, lenguaje) && datos[DATOS_RETURN.tipoDeDato].length > 0) 
                     ? `Tipo de dato del parámetro, donde las otras son ${datos[DATOS_RETURN.tipoDeDato].join(", ")}`
                     : "Tipo de dato del parámetro", 
                 error.Quit("No se ingresó el tipo de dato del parámetro")
             );
 
-            if (tipoDatoEsArray(tp, lenguaje)) {
+            if (tieneMultiplesTiposDeDatos(tp, lenguaje)) {
                 datos[DATOS_RETURN.tipoDeDato].push(tipoDato);
             } else {
                 datos[DATOS_RETURN.tipoDeDato] = tipoDato;
@@ -434,7 +508,7 @@ async function actualizarDatosReturn(tp, datos, respuesta, lenguaje) {
     return salir;
 }
 
-function generarPreguntasReturn(tp, datos, lenguaje) {
+function generarPreguntasReturn(tp, datos, lenguaje = undefined) {
     const { 
         SIMBOLOS, DATOS: { FUNCIONES: { funcion: { firma: { return: DATOS_RETURN } } } } 
     } = tp.user.constantes(); 
@@ -446,7 +520,7 @@ function generarPreguntasReturn(tp, datos, lenguaje) {
         : ` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Descripción del valor de retorno`
     )
 
-    if (tipoDatoEsArray(tp, lenguaje)) {
+    if (tieneMultiplesTiposDeDatos(tp, lenguaje)) {
         for (let [indice, tipoDeDato] of datos[DATOS_RETURN.tipoDeDato].entries()) {
             opciones.push(`${MODIFICAR_TIPO_DATO}-${indice}`);
             valores.push(`️ ${SIMBOLOS.modificar} Modificar el tipo de dato, donde es ${tipoDeDato}`);
@@ -473,12 +547,7 @@ function generarPreguntasReturn(tp, datos, lenguaje) {
         );
     }
 
-    let DATOS_SIMPLES = [];
-    if (!tipoDatoEsArray(tp, lenguaje)) {
-        DATOS_SIMPLES.push(DATOS_RETURN.tipoDeDato);
-    }
-
-    if (DATOS_SIMPLES.every(key => datos[key]) && (!tipoDatoEsArray(tp, lenguaje) || datos[DATOS_RETURN.tipoDeDato].length > 0)) {
+    if (esValidoReturn(tp, datos)) {
         opciones.push(SALIR);
         valores.push(` ${SIMBOLOS.volver} Confirmar datos`);
     }
@@ -486,7 +555,82 @@ function generarPreguntasReturn(tp, datos, lenguaje) {
     return { opciones: opciones, valores: valores };
 }
 
-function describirReturn(tp, returnValue, lenguaje) {
+function esValidoReturn(tp, datos, lenguaje = undefined) {
+    const { DATOS: { FUNCIONES: { funcion: { firma: { return: DATOS_RETURN } } } } } = tp.user.constantes(); 
+
+    let DATOS_SIMPLES = [];
+    if (!tieneMultiplesTiposDeDatos(tp, lenguaje)) {
+        DATOS_SIMPLES.push(DATOS_RETURN.tipoDeDato);
+    }
+
+    return DATOS_SIMPLES.every(key => datos[key]) && (!tieneMultiplesTiposDeDatos(tp, lenguaje) || datos[DATOS_RETURN.tipoDeDato].length > 0);
+}
+
+function describirParametro(tp, parametro, lenguaje = undefined) {
+    const { 
+        DATOS: { FUNCIONES: {
+            lenguaje: { lenguajes: DATOS_LENGUAJES },
+            funcion: { firma: { parametros: DATOS_PARAMETROS } },
+        } }
+    } = tp.user.constantes();
+
+    let descripcionTipoDato;
+
+    switch (lenguaje) {
+        case DATOS_LENGUAJES.python:
+            descripcionTipoDato = parametro[DATOS_PARAMETROS.tipoDeDato];
+            if (tieneMultiplesTiposDeDatos(tp, lenguaje)) {
+                descripcionTipoDato = `${parametro[DATOS_PARAMETROS.tipoDeDato].join(" | ")}`;
+            }
+            let textoDefault = "";
+            if (tieneMultiplesTiposDeDatos(tp, lenguaje)) {
+                textoDefault = `= ${parametro[DATOS_PARAMETROS.valorPorDefecto]}`;
+            }
+
+            return `${parametro[DATOS_PARAMETROS.nombreParametro]}: ${descripcionTipoDato} ${textoDefault}`;
+
+        case DATOS_LENGUAJES.c:
+            return `${parametro[DATOS_PARAMETROS.tipoDeDato]} ${parametro[DATOS_PARAMETROS.nombreParametro]}`;
+
+        default:
+            descripcionTipoDato = parametro[DATOS_PARAMETROS.tipoDeDato];
+            if (tieneMultiplesTiposDeDatos(tp, lenguaje)) {
+                descripcionTipoDato = `${parametro[DATOS_PARAMETROS.tipoDeDato].join(" | ")}`;
+                if (parametro[DATOS_PARAMETROS.tipoDeDato].length > 1) {
+                    descripcionTipoDato = `(${descripcionTipoDato})`;
+                }
+            }
+
+            return `${parametro[DATOS_PARAMETROS.nombreParametro]}: ${descripcionTipoDato}`;
+    }
+}
+
+function describirStruct(tp, datos, lenguaje = undefined) {
+    const { 
+        DATOS: { FUNCIONES: {
+            lenguaje: { lenguajes: DATOS_LENGUAJES },
+            funcion: { firma: { struct: DATOS_STRUCT } }
+        } }
+    } = tp.user.constantes();
+
+    let nombre = datos[DATOS_STRUCT.nombreStruct];
+    let herencia = datos[DATOS_STRUCT.herede];
+    let parametros = datos[DATOS_STRUCT.campos]
+        .map(param => describirParametro(tp, param, lenguaje));
+
+    switch (lenguaje) {
+        case DATOS_LENGUAJES.python:
+            return `class ${nombre}${herencia ? `(${herencia})` : ""}: ${parametros.join(", ")}`;
+
+        case DATOS_LENGUAJES.c:
+            return `struct ${nombre} { ${parametros.join("; ")} }`;
+
+        default:
+            return `struct ${nombre}${herencia ? ` :: ${herencia}` : ""} then ${parametros.join(" ")} end`;
+    }
+}
+
+function describirReturn(tp, returnValue, lenguaje = undefined) {
     const { 
         lenguaje: { lenguajes: DATOS_LENGUAJES },
         funcion: { firma: { return: DATOS_RETURN } },
@@ -496,7 +640,7 @@ function describirReturn(tp, returnValue, lenguaje) {
     switch (lenguaje) {
         case DATOS_LENGUAJES.python:
             descripcionReturn = returnValue[DATOS_RETURN.tipoDeDato];
-            if (Array.isArray(returnValue[DATOS_RETURN.tipoDeDato])) {
+            if (tieneMultiplesTiposDeDatos(tp, lenguaje)) {
                 descripcionReturn = `${returnValue[DATOS_RETURN.tipoDeDato].join(" | ")}`;
             }
             break;
@@ -507,21 +651,26 @@ function describirReturn(tp, returnValue, lenguaje) {
 
         default:
             descripcionReturn = returnValue[DATOS_RETURN.tipoDeDato];
-            if (Array.isArray(returnValue[DATOS_RETURN.tipoDeDato])) {
-                descripcionReturn = `(${returnValue[DATOS_RETURN.tipoDeDato].join(" | ")})`;
+            if (tieneMultiplesTiposDeDatos(tp, lenguaje)) {
+                descripcionReturn = `${returnValue[DATOS_RETURN.tipoDeDato].join(" | ")}`;
+                if (returnValue[DATOS_RETURN.tipoDeDato].length > 1) {
+                    descripcionReturn = `(${descripcionReturn})`;
+                }
             }
     }
 
     return descripcionReturn;
 }
 
-function describir(tp, datos, lenguaje) {
+function describir(tp, datos, lenguaje = undefined) {
     const { 
-        lenguaje: { lenguajes: DATOS_LENGUAJES },
-        funcion: { firma: { nombreFuncion: DATOS_NOMBRE, parametros: DATOS_PARAMETROS, return: DATOS_RETURN } }
-    } = tp.user.constantes().DATOS.FUNCIONES;
+        DATOS: { FUNCIONES: {
+            lenguaje: { lenguajes: DATOS_LENGUAJES },
+            funcion: { firma: { parametros: DATOS_PARAMETROS, return: DATOS_RETURN, ...DATOS_FUNCION } }
+        } }
+    } = tp.user.constantes();
 
-    let nombre = datos[DATOS_NOMBRE];
+    let nombre = datos[DATOS_FUNCION.nombreFuncion];
     let parametros = datos[DATOS_PARAMETROS.self].map(param => describirParametro(tp, param, lenguaje));
     let returnValue = describirReturn(tp, datos[DATOS_RETURN.self], lenguaje)
 
@@ -537,44 +686,87 @@ function describir(tp, datos, lenguaje) {
     }
 }
 
+function defaultTipoDato(tp, TIPOS_DE_DEFAULT, lenguaje = undefined) {
+    return tieneMultiplesTiposDeDatos(tp, lenguaje)
+        ? TIPOS_DE_DEFAULT.array
+        : TIPOS_DE_DEFAULT.simple;
+}
+
+function tieneMultiplesTiposDeDatos(tp, lenguaje = undefined) {
+    const { DATOS: { FUNCIONES: { lenguaje: { lenguajes: DATOS_LENGUAJES } } } } = tp.user.constantes();
+
+    switch (lenguaje) {
+        case DATOS_LENGUAJES.c: 
+            return false;
+        
+        case DATOS_LENGUAJES.python: 
+        default: return true;
+    }
+}
+
+function tieneParametroConValorPorDefecto(tp, lenguaje = undefined) {
+    const { DATOS: { FUNCIONES: { lenguaje: { lenguajes: DATOS_LENGUAJES } } } } = tp.user.constantes();
+
+    switch (lenguaje) {
+        case DATOS_LENGUAJES.c: 
+            return false;
+
+        case DATOS_LENGUAJES.python:
+        default:
+            return true;
+    }
+}
+
+function tieneStructConHerencia(tp, lenguaje = undefined) {
+    const { DATOS: { FUNCIONES: { lenguaje: { lenguajes: DATOS_LENGUAJES } } } } = tp.user.constantes();
+
+    switch (lenguaje) {
+        case DATOS_LENGUAJES.c: 
+            return false;
+
+        case DATOS_LENGUAJES.python:
+        default:
+            return true;
+    }
+}
+
 module.exports = () => ({
-    obtenerDefault: (tp, TIPOS_DE_DEFAULT, crearFuncion) => {
-        const { 
-            DATOS: { FUNCIONES: { funcion: { firma: DATOS_FIRMA } } } 
-        } = tp.user.constantes();
+    obtenerDefault: (tp, lenguaje, TIPOS_DE_DEFAULT, crearFuncion) => {
+        const { DATOS: { FUNCIONES: { funcion: { firma: DATOS_FIRMA } } } } = tp.user.constantes();
 
         return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
             [DATOS_FIRMA.nombreFuncion]: TIPOS_DE_DEFAULT.simple,
             [DATOS_FIRMA.descripcion]: TIPOS_DE_DEFAULT.simple,
             [DATOS_FIRMA.parametros.self]: crearFuncion(
                 TIPOS_DE_DEFAULT.array, 
-                () => obtenerDefaultParametros(tp, TIPOS_DE_DEFAULT, crearFuncion),
+                () => obtenerDefaultParametros(tp, lenguaje, TIPOS_DE_DEFAULT, crearFuncion),
             ),
-            [DATOS_FIRMA.parametros.self]: crearFuncion(
-                TIPOS_DE_DEFAULT.diccionario, 
-                () => obtenerDefaultReturn(tp, TIPOS_DE_DEFAULT, crearFuncion),
-            ),
+            [DATOS_FIRMA.return.self]: obtenerDefaultReturn(tp, lenguaje, TIPOS_DE_DEFAULT, crearFuncion),
         }));
     },
     actualizarDatos: actualizarDatos,
     generarPreguntas: generarPreguntas,
     describir: describir,
+    esValido: esValido,
     parametro: {
         obtenerDefault: obtenerDefaultParametros,
         actualizarDatos: actualizarDatosParametros,
         generarPreguntas: generarPreguntasParametros,
         describir: describirParametro,
+        esValido: esValidoParametro,
     },
     struct: {
         obtenerDefault: obtenerDefaultStruct,
         actualizarDatos: actualizarDatosStruct,
         generarPreguntas: generarPreguntasStruct,
         describir: describirStruct,
+        esValido: esValidoStruct,
     },
     return: {
         obtenerDefault: obtenerDefaultReturn,
         actualizarDatos: actualizarDatosReturn,
         generarPreguntas: generarPreguntasReturn,
         describir: describirReturn,
+        esValido: esValidoReturn,
     },
 });

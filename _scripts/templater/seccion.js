@@ -5,11 +5,7 @@
  */
 async function obtenerCreacion(tp, tipo) {
     const error = tp.user.error();
-    const { CREAR_SECCION: SECCIONES } = tp.user.constantes();
-    const { 
-        funciones: SECCION_FUNCIONES, 
-        bloqueMatematica: SECCION_MATEMATICA,
-    } = SECCIONES.coleccion;
+    const { funciones: SECCION_FUNCIONES, bloqueMatematica: SECCION_MATEMATICA, ...SECCIONES } = tp.user.constantes();
 
     switch (tipo) {
         case SECCIONES.materia: 

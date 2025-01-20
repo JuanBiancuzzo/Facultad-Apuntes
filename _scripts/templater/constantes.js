@@ -21,7 +21,9 @@ module.exports = () => ({
             componente: "Componete - Template",
             estructuraDatos: {
                 self: "Estructura de datos - Template",
+                infoGeneral: "Informacion de la estructura - Template",
                 editiar: "Editar estructura de datos - Template",
+                representarMetodoDv: "Representacion metodo - Template",
             },
             distribucion: "Distribucion - Template",
             documentoLegal: "Documento legal - Template",
@@ -51,6 +53,8 @@ module.exports = () => ({
         resumenInvestigacion: { nivel: 2, texto: "Resumen" },
         progreso: { nivel: 1, texto: "Progreso" },
         informacion: { nivel: 1, texto: "Información" },
+        operaciones: { nivel: 2, texto: "Operaciones" },
+        metodo: { nivel: 3 },
     },
     TAGS: {
         investigacion: {
@@ -141,7 +145,7 @@ module.exports = () => ({
             self: "colección",
             componentes: "componentes",
             bloquesMatematica: "teoremas, proposiciones y observaciones",
-            dataStructures: "data structures",
+            estructuraDatos: "data structures",
             distribuciones: "distribuciones",
             documentos: "documentos",
             funciones: {
@@ -295,7 +299,7 @@ module.exports = () => ({
                         nombreStruct: "nombre",
                         descripcion: "descripcion",
                         campos: "campos",
-                        alias: "alias",
+                        herede: "herencia",
                     },
                     return: {
                         self: "return",
@@ -306,11 +310,9 @@ module.exports = () => ({
             },
         },
         ESTRUCTURA_DATOS: {
-            dia: "dia",
             nombre: "nombreEstructura",
-            etapa: "etapa",
-            tags: "tags",
-
+            estructuras: "estrucutrasRelacionadas",
+            metodos: "métodos",
         },
         REFERENCIAS: {
             numReferencia: "numReferencia",
@@ -418,7 +420,7 @@ module.exports = () => ({
         ampliar: "ampliar",
         terminado: "terminado",
     },
-    CREAR_SECCION: {
+    CREAR: {
         materia: "Materia",
         resumenMateria: "Resumen materia",
         curso: "Curso",
@@ -436,6 +438,9 @@ module.exports = () => ({
                 tema: "Tema bloque matemática",
                 subtema: "Subtema bloque matemática",
             },
+            estructuraDatos: {
+                self: "Estructura de datos",
+            }
         },
     },
     BLOQUES_MATEMATICA: {

@@ -51,7 +51,7 @@
                 ingresarOpcion("Ingresar un componente", TEMPLATE.coleccion.componente);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.dataStructures) {
-                ingresarOpcion("Ingresar una estructura de datos", TEMPLATE.coleccion.estructuraDatos);
+                ingresarOpcion("Ingresar una estructura de datos", TEMPLATE.coleccion.estructuraDatos.self);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.distribuciones) {
                 ingresarOpcion("Ingresar una función de distribución", TEMPLATE.coleccion.distribucion);

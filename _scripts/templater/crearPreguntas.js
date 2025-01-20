@@ -28,7 +28,7 @@ function crearFuncion(tipo, obtenerDefault) {
 
 /**
  * @param {*} tp Objeto representante del plugin Templater
- * @param {({ simple, array, diccionario }, (tipo, obtenerDefault)) => Object) => Objecto} obtenerDefault Es una función que devuelve los datos en su valor por defecto
+ * @param {({ simple, array, diccionario }, (tipo, obtenerDefault) => Object)) => Objecto} obtenerDefault Es una función que devuelve los datos en su valor por defecto
  * @param {(tp: *, datos: Objecto, respuesta: string) => bool} actualizarDatos Modifica los datos a partir de la respuesta dada, y devuelve true en el caso que se determina que no se quiere continua
  * @param {(tp, datos: Objeto) => { opciones: array, valores: array }} generarPreguntas Dado los datos guardados genera dos arrays de respuestas (opciones) y su representación (valores)
  * @param {string} mensaje Es el mensaje que aparecerá si hay multiples opciones a elegir

@@ -8,7 +8,7 @@
         let { metadata, carpeta, titulo, texto } = obtenerInformacion(tp, argumentos);
 
         await tp.file.move(`${carpeta}/${titulo}`, tArchivo);
-        tR += seccion.textoDeArchivos(tp, metadata, texto);
+        tR += tp.user.archivo().texto(tp, metadata, texto);
 
     } catch ({ name: nombre, message: mensaje }) {
         const eliminar = tp.user.eliminar();
@@ -21,9 +21,9 @@
                 return await eliminar.preguntar(tp, tArchivo, mensaje);
 
             default:
-                let error = new Error(mensaje);
-                error.name = nombre;
-                throw error;
+                let nuevoError = new Error(mensaje);
+                nuevoError.name = nombre;
+                throw nuevoError;
         }
     }
 _%>

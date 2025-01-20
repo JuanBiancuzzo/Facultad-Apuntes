@@ -8,9 +8,8 @@ const SALIR = "salir";
 
 async function actualizarDatos(tp, datos, respuesta) {
     const { 
-        SIMBOLOS,
+        SIMBOLOS, DATOS: { FUNCIONES: DATOS_FUNCIONES },
         TAGS: { coleccion: { self: TAG_COLECCION, funciones: TAGS_FUNCIONES } }, 
-        DATOS: { FUNCIONES: DATOS_FUNCIONES } 
     } = tp.user.constantes(); 
 
     const tagPorNombre = tp.user.tagPorNombre;
@@ -92,7 +91,7 @@ async function actualizarDatos(tp, datos, respuesta) {
         case FUNCION:
             const preguntasLenguaje = tp.user.lenguajes();
             datos[FUNCION] = await tp.user.crearPreguntas(
-                tp, preguntasLenguaje.bind(tp),
+                tp, preguntasLenguaje.obtenerDefault.bind(null, tp, datos[LENGUAJE]),
                 (tp, datosDato, respuestaDada) => preguntasLenguaje.actualizarDatos(tp, datosDato, respuestaDada, datos[LENGUAJE]), 
                 (tp, datosDato) => preguntasLenguaje.generarPreguntas(tp, datosDato, datos[LENGUAJE]), 
                 "Definir la función que se quiere ingresar",
@@ -110,6 +109,8 @@ async function actualizarDatos(tp, datos, respuesta) {
 
 function generarPreguntas(tp, datos) {
     const { SIMBOLOS } = tp.user.constantes(); 
+    const preguntasLenguaje = tp.user.lenguajes();
+
     const usoLenguaje = tp.user.lenguajes();
     let opciones = [], valores = [];
 
@@ -131,15 +132,15 @@ function generarPreguntas(tp, datos) {
                 : ` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Modulo`
             );
         }
+
+        opciones.push(FUNCION);
+        valores.push(preguntasLenguaje.esValido(tp, datos[FUNCION], datos[LENGUAJE])
+            ? ` ${SIMBOLOS.modificar} Modificar la función, donde era ${usoLenguaje.describir(tp, datos[FUNCION], datos[LENGUAJE])}`
+            : ` ${SIMBOLOS.agregar} Función`
+        )
     }
 
-    opciones.push(FUNCION);
-    valores.push(datos[FUNCION]
-        ? ` ${SIMBOLOS.modificar} Modificar la función, donde era ${usoLenguaje.describir(tp, datos[FUNCION], datos[LENGUAJE])}`
-        : ` ${SIMBOLOS.agregar} Función`
-    )
-
-    if ([LENGUAJE, LIBRERIA, FUNCION].every(key => datos[key])) {
+    if ([LENGUAJE, LIBRERIA].every(key => datos[key]) && preguntasLenguaje.esValido(tp, datos[FUNCION], datos[LENGUAJE])) {
         opciones.push(SALIR);
         valores.push(` ${SIMBOLOS.volver} Confirmar datos`);
     }
@@ -258,11 +259,11 @@ async function agregarDatos(tp, datos) {
 }
 
 module.exports = () => ({
-    obtenerDefault: (TIPOS_DE_DEFAULT, crearFuncion) => crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
+    obtenerDefault: (tp, TIPOS_DE_DEFAULT, crearFuncion) => crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
         [LENGUAJE]: TIPOS_DE_DEFAULT.simple,
         [LIBRERIA]: TIPOS_DE_DEFAULT.simple,
         [MODULO]: TIPOS_DE_DEFAULT.simple,
-        [FUNCION]: TIPOS_DE_DEFAULT.simple,
+        [FUNCION]: tp.user.lenguajes().obtenerDefault(tp, null, TIPOS_DE_DEFAULT, crearFuncion),
     })),
     actualizarDatos: actualizarDatos,
     generarPreguntas: generarPreguntas,
