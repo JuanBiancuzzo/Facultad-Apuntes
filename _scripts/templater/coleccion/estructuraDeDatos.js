@@ -43,7 +43,7 @@ async function crearEstructura(tp) {
     texto += "Vamos a ver las operaciones que deben existir para que se pueda usar esta estructura\n\n";
     for (let funcion of datos[DATOS_ESTRUCTURA.metodos]) {
         texto += `${"#".repeat(SECCIONES.metodo.nivel)} ${funcion[DATOS_FUNCION.nombreFuncion]}\n---\n`;
-        texto += await tp.file.include(`[[${TEMPLATE_ESTRUCTURA.representarMetodoDv}]]`);
+        // texto += await tp.file.include(`[[${TEMPLATE_ESTRUCTURA.representarMetodoDv}]]`);
         texto += "\n\n";
     }
 

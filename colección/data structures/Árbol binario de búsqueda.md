@@ -4,9 +4,138 @@ etapa: empezado
 tags:
   - investigación/ciencias-de-la-computación/data-structures
   - nota/colección
-  - curso/introduction-to-algorithms/Sorting-and-Trees
   - colección/data-structures/estructura
+  - curso/introduction-to-algorithms/Sorting-and-Trees
 nombreEstructura: Árbol binario de búsqueda
+estrucutrasRelacionadas:
+  - nombre: BinarySearchTree
+    descripcion: Representa el árbol y tiene la raíz del mismo
+    campos:
+      - nombre: rootNode
+        type:
+          - BinarySearchNode
+        default: 
+        descripcion: Es la ráiz del árbol, por lo que tiene como hijo a todos los demás nodos
+    herencia: 
+  - nombre: BinarySearchNode
+    descripcion: Representa individualmente los nodos del árbol, mantiene los hijos y la key
+    campos:
+      - nombre: element
+        type:
+          - Key
+        default: 
+        descripcion: Es la key guardada
+      - nombre: leftNode
+        type:
+          - BinarySearchNode
+        default: None
+        descripcion: Es el hijo izquierdo de este nodo
+      - nombre: rightNode
+        type:
+          - BinarySearchNode
+        default: None
+        descripcion: Es el hijo derecho de este nodo
+    herencia: 
+métodos:
+  - nombre: BuildTree
+    descripcion: Crea un árbol de un array de elementos, o un árbol vacio si el array lo está
+    parametros:
+      - nombre: array
+        type:
+          - Key[]
+        default: "[]"
+        descripcion: Son los elementos que se quieren insertar al árbol al crearlo
+    return:
+      type:
+        - BinarySearchTree
+      descripcion: 
+  - nombre: Insert
+    descripcion: Permite insertar un elemento al árbol dado
+    parametros:
+      - nombre: tree
+        type:
+          - BinarySearchTree
+        default: 
+        descripcion: Es el árbol al cual se inserta el elemento dado
+      - nombre: element
+        type:
+          - Key
+        default: 
+        descripcion: Es el elemento a insertar al árbol
+    return:
+      type:
+        - void
+      descripcion: 
+  - nombre: Delete
+    descripcion: Permite eliminar un elemento del árbol dado
+    parametros:
+      - nombre: tree
+        type:
+          - BinarySearchTree
+        default: 
+        descripcion: Es el árbol en el cual se va a eliminar el elemento
+      - nombre: element
+        type:
+          - Key
+        default: 
+        descripcion: Es el elemento a eliminar
+    return:
+      type:
+        - bool
+      descripcion: Devuelve true si se pudo eliminar
+  - nombre: Search
+    descripcion: Búsca un elemento en el árbol dado
+    parametros:
+      - nombre: tree
+        type:
+          - BinarySearchTree
+        default: 
+        descripcion: Es el árbol en el cual se va a búscar el elemento
+      - nombre: element
+        type:
+          - Key
+        default: 
+        descripcion: Es el elemento a búscar
+    return:
+      type:
+        - bool
+      descripcion: Devuelve true si el elemento existe en el árbol
+  - nombre: InorderWalk
+    descripcion: Devuelve un array con todos los elementos del árbol recorriendolos en sentido Inorder
+    parametros:
+      - nombre: tree
+        type:
+          - BinarySearchTree
+        default: 
+        descripcion: Es el árbol en el cual se va a recorrer en sentido Inorder
+    return:
+      type:
+        - Key[]
+      descripcion: 
+  - nombre: PreorderWalk
+    descripcion: Devuelve un array con todos los elementos del árbol recorriendolos en sentido Preorder
+    parametros:
+      - nombre: tree
+        type:
+          - BinarySearchTree
+        default: 
+        descripcion: Es el árbol en el cual se va a recorrer en sentido Preorder
+    return:
+      type:
+        - Key[]
+      descripcion: 
+  - nombre: PostorderWalk
+    descripcion: Devuelve un array con todos los elementos del árbol recorriendolos en sentido Postorder
+    parametros:
+      - nombre: tree
+        type:
+          - BinarySearchTree
+        default: 
+        descripcion: Es el árbol en el cual se va a recorrer en sentido Postorder
+    return:
+      type:
+        - Key[]
+      descripcion: 
 aliases:
   - ABB
   - Binary Search Tree
@@ -38,8 +167,8 @@ referencias:
 
     \tikzmath { 
         \largo = dim(\elementos);
-        \cantNiveles = ceil(log2(\largo)); \raiz = \elementos[0];
-        \radio = 0.5; \sepX = 1 * \cantNiveles; \sepY = 2;
+        \cantNiveles = ceil(log2(\largo)); \radio = 0.5; 
+        \sepX = 1 * \cantNiveles; \sepY = 2;
         
         \supIzqX = \radio * cos(135); \supIzqY = \radio * sin(135);
         \supDerX = \radio * cos(45); \supDerY = \radio * sin(45);
@@ -98,18 +227,85 @@ referencias:
     
 \end{tikzpicture}
 \end{document}
-```
+``` 
 ^representacion
 
 ## Operaciones
 ---
 Vamos a ver las operaciones que deben existir para que se pueda usar esta estructura
 
+### BuildTree
+---
+```dataviewjs
+
+```
+
+```
+function BuildTree :: array: Key[] -> BinarySearchTree 
+    let tree: BinarySearchTree = { .rootNode = None }
+    
+    for element in array then
+        Insert tree element
+    end
+    
+    return tree
+end
+```
+
 ### Insert
 ---
+```dataviewjs
 
-### Recorrer
+```
+
+```
+function Insert :: tree: BinarySearchTree element: Key -> void
+    InsertNode tree.rootNode element
+end
+
+function InsertNode :: node: BinarySearchNode element: Key -> void
+    /* 
+     * De forma arbitraria vamos a ingresar a la derecha datos del mismo valor
+     */
+     
+    if node.element < element then
+        if node.leftNode == None then
+            node.leftNode = { .element = element }
+            
+        else 
+            InsertNode node.leftNode element
+        end
+          
+    else
+        if node.rightNode == None then
+            node.rightNode = { .element = element }
+            
+        else 
+            InsertNode node.rightNode element
+        end  
+    end    
+end
+```
+
+### Delete
 ---
+
+
+### Search
+---
+
+
+### InorderWalk
+---
+
+
+### PreorderWalk
+---
+
+
+### PostorderWalk
+---
+
 
 
 # Referencias

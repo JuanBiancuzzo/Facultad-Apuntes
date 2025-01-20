@@ -132,11 +132,12 @@ function describir(tp, datos, lenguaje = undefined) {
     const { 
         DATOS: { FUNCIONES: { struct: DATOS_STRUCT, lenguaje: { lenguajes: DATOS_LENGUAJES } } },
     } = tp.user.constantes();
+    const infoParametro = tp.user.parametro();
 
     let nombre = datos[DATOS_STRUCT.nombreStruct];
     let herencia = datos[DATOS_STRUCT.herede];
     let parametros = datos[DATOS_STRUCT.campos]
-        .map(param => describirParametro(tp, param, lenguaje));
+        .map(param => infoParametro.describir(tp, param, lenguaje));
 
     switch (lenguaje) {
         case DATOS_LENGUAJES.python:
