@@ -288,25 +288,25 @@ module.exports = () => ({
                     self: "firma",
                     nombreFuncion: "nombre",
                     descripcion: "descripcion",
-                    parametros: {
-                        self: "parametros",
-                        nombreParametro: "nombre",
-                        tipoDeDato: "type",
-                        valorPorDefecto: "default",
-                        descripcion: "descripcion",
-                    },
-                    struct: {
-                        nombreStruct: "nombre",
-                        descripcion: "descripcion",
-                        campos: "campos",
-                        herede: "herencia",
-                    },
-                    return: {
-                        self: "return",
-                        tipoDeDato: "type",
-                        descripcion: "descripcion",
-                    },
+                    parametros: "parametros",
+                    return: "return",
                 },
+            },
+            parametro: {
+                nombreParametro: "nombre",
+                tipoDeDato: "type",
+                valorPorDefecto: "default",
+                descripcion: "descripcion",
+            },
+            struct: {
+                nombreStruct: "nombre",
+                descripcion: "descripcion",
+                campos: "campos",
+                herede: "herencia",
+            },
+            return: {
+                tipoDeDato: "type",
+                descripcion: "descripcion",
             },
         },
         ESTRUCTURA_DATOS: {

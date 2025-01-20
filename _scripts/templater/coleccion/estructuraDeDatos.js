@@ -20,8 +20,6 @@ async function crearEstructura(tp) {
             nota: TAGS_NOTA,
         },
     } = tp.user.constantes();
-    const preguntar = tp.user.preguntar();
-    const error = tp.user.error();
     const dv = app.plugins.plugins.dataview.api;
 
     let titulo = tp.file.title;
@@ -70,24 +68,26 @@ async function crearEstructura(tp) {
 
 function obtenerDefault(tp, TIPOS_DE_DEFAULT, crearFuncion) {
     const { DATOS: { ESTRUCTURA_DATOS: DATOS_ESTRUCTURA } } = tp.user.constantes();
-    const { struct: crearStructs, ...crearFunciones } = tp.user.lenguajes();
+    const infoFuncion = tp.user.lenguajes();
+    const infoStruct = tp.user.struct();
     
     return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
         [DATOS_ESTRUCTURA.nombre]: TIPOS_DE_DEFAULT.simple,
         [DATOS_ESTRUCTURA.estructuras]: crearFuncion(
             TIPOS_DE_DEFAULT.array,
-            () => crearStructs.obtenerDefault(tp, TIPOS_DE_DEFAULT, crearFuncion),
+            () => infoStruct.obtenerDefault(tp, TIPOS_DE_DEFAULT, crearFuncion),
         ),
         [DATOS_ESTRUCTURA.metodos]: crearFuncion(
             TIPOS_DE_DEFAULT.array,
-            () => crearFunciones.obtenerDefault(tp, TIPOS_DE_DEFAULT, crearFuncion),
+            () => infoFuncion.obtenerDefault(tp, TIPOS_DE_DEFAULT, crearFuncion),
         ),
     }));
 }
 
 async function actualizarDatos(tp, datos, respuesta) {
     const { DATOS: { ESTRUCTURA_DATOS: DATOS_ESTRUCTURA } } = tp.user.constantes(); 
-    const { struct: crearStructs, ...crearFunciones } = tp.user.lenguajes();
+    const infoFuncion = tp.user.lenguajes();
+    const infoStruct = tp.user.struct();
 
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
@@ -115,8 +115,8 @@ async function actualizarDatos(tp, datos, respuesta) {
             if (indice) estructuraPrevia = datos[DATOS_ESTRUCTURA.estructuras][indice];
 
             let estructura = await tp.user.crearPreguntas(
-                tp, crearStructs.obtenerDefault.bind(null, tp, null), 
-                crearStructs.actualizarDatos, crearStructs.generarPreguntas,
+                tp, infoStruct.obtenerDefault.bind(null, tp, null), 
+                infoStruct.actualizarDatos, infoStruct.generarPreguntas,
                 "Ingresar la estructura representantivo del la estructura de datos", 
                 estructuraPrevia
             );
@@ -140,8 +140,8 @@ async function actualizarDatos(tp, datos, respuesta) {
             if (indice) metodoPrevio = datos[DATOS_ESTRUCTURA.metodos][indice];
 
             let metodo = await tp.user.crearPreguntas(
-                tp, crearFunciones.obtenerDefault.bind(null, tp, null), 
-                crearFunciones.actualizarDatos, crearFunciones.generarPreguntas,
+                tp, infoFuncion.obtenerDefault.bind(null, tp, null), 
+                infoFuncion.actualizarDatos, infoFuncion.generarPreguntas,
                 "Ingresar el método del la estructura de datos", 
                 metodoPrevio
             );
@@ -167,7 +167,8 @@ async function actualizarDatos(tp, datos, respuesta) {
 
 function generarPreguntas(tp, datos) {
     const { SIMBOLOS, DATOS: { ESTRUCTURA_DATOS: DATOS_ESTRUCTURA } } = tp.user.constantes(); 
-    const { struct: crearStructs, ...crearFunciones } = tp.user.lenguajes();
+    const infoFuncion = tp.user.lenguajes();
+    const infoStruct = tp.user.struct();
 
     let opciones = [], valores = [];
 
@@ -179,13 +180,13 @@ function generarPreguntas(tp, datos) {
 
     for (let [indice, estructura] of datos[DATOS_ESTRUCTURA.estructuras].entries()) {
         opciones.push(`${MODIFICAR_ESTRUCTURA}-${indice}`);
-        valores.push(`️ ${SIMBOLOS.modificar} Modificar la estructura, donde es ${crearStructs.describir(tp, estructura)}`);
+        valores.push(`️ ${SIMBOLOS.modificar} Modificar la estructura, donde es ${infoStruct.describir(tp, estructura)}`);
     }
 
     if (datos[DATOS_ESTRUCTURA.estructuras].length > 0) {
         let ultimaEstructura = datos[DATOS_ESTRUCTURA.estructuras].last();
         opciones.push(ELIMINAR_ESTRUCTURA);
-        valores.push(` ${SIMBOLOS.sacar} Eliminar la estructura, donde es ${crearStructs.describir(tp, ultimaEstructura)}`);
+        valores.push(` ${SIMBOLOS.sacar} Eliminar la estructura, donde es ${infoStruct.describir(tp, ultimaEstructura)}`);
 
         opciones.push(DATOS_ESTRUCTURA.estructuras);
         valores.push(` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Estructura`);
@@ -197,13 +198,13 @@ function generarPreguntas(tp, datos) {
 
     for (let [indice, metodo] of datos[DATOS_ESTRUCTURA.metodos].entries()) {
         opciones.push(`${MODIFICAR_METODO}-${indice}`);
-        valores.push(`️ ${SIMBOLOS.modificar} Modificar el método, donde es ${crearFunciones.describir(tp, metodo)}`);
+        valores.push(`️ ${SIMBOLOS.modificar} Modificar el método, donde es ${infoFuncion.describir(tp, metodo)}`);
     }
 
     if (datos[DATOS_ESTRUCTURA.metodos].length > 0) {
         let ultimoMetodo = datos[DATOS_ESTRUCTURA.metodos].last();
         opciones.push(ELIMINAR_METODO);
-        valores.push(` ${SIMBOLOS.sacar} Eliminar el método, donde es ${crearFunciones.describir(tp, ultimoMetodo)}`);
+        valores.push(` ${SIMBOLOS.sacar} Eliminar el método, donde es ${infoFuncion.describir(tp, ultimoMetodo)}`);
 
         opciones.push(DATOS_ESTRUCTURA.metodos);
         valores.push(` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Método`);
