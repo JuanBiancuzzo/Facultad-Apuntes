@@ -14,6 +14,18 @@ const AGREGAR = "agregar";
 
 const SALIR = "salir";
 
+function obtenerDefault(TIPOS_DE_DEFAULT, crearFuncion) {
+    return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
+        [CLASIFICACION]: TIPOS_DE_DEFAULT.simple,
+        [TEMA]: TIPOS_DE_DEFAULT.simple,
+        [SUBTEMA]: TIPOS_DE_DEFAULT.simple,
+        [NUMERO]: TIPOS_DE_DEFAULT.simple,
+        [NOMBRE]: TIPOS_DE_DEFAULT.simple,
+        [PATH]: TIPOS_DE_DEFAULT.simple,
+        [PATH_RELACIONADO]: TIPOS_DE_DEFAULT.simple,
+    }));
+}
+
 async function actualizarDatos(tp, datos, respuesta) {
     const { 
         BLOQUES_MATEMATICA, SIMBOLOS,
@@ -474,20 +486,13 @@ function representacion(tp, datos) {
 }
 
 module.exports = () => ({
-    obtenerDefault: (TIPOS_DE_DEFAULT, crearFuncion) => crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
-        [CLASIFICACION]: TIPOS_DE_DEFAULT.simple,
-        [TEMA]: TIPOS_DE_DEFAULT.simple,
-        [SUBTEMA]: TIPOS_DE_DEFAULT.simple,
-        [NUMERO]: TIPOS_DE_DEFAULT.simple,
-        [NOMBRE]: TIPOS_DE_DEFAULT.simple,
-        [PATH]: TIPOS_DE_DEFAULT.simple,
-        [PATH_RELACIONADO]: TIPOS_DE_DEFAULT.simple,
-    })),
+    obtenerDefault: obtenerDefault,
     actualizarDatos: actualizarDatos,
     generarPreguntas: generarPreguntas,
-    representacion: representacion,
     agregarDatos: agregarDatos,
+    representacion: representacion,
     crear: {
+        bloque: crearBloque,
         tema: crearTema,
         subtema: crearSubtema,
     },

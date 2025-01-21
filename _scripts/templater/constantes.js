@@ -10,17 +10,10 @@ module.exports = () => ({
         opcional: "(opcional)",
     },
     TEMPLATE: {
-        nota: {
-            self: "Nota - Template",
-            materia: "Definicion - Template",
-            curso: "Nota curso - Template",
-            investigacion: "Nota investigacion - Template",
-            proyecto: "Nota proyecto - Template",
-        },
+        nota: "Nota - Template",
         coleccion: {
             componente: "Componete - Template",
             estructuraDatos: {
-                self: "Estructura de datos - Template",
                 infoGeneral: "Informacion de la estructura - Template",
                 editiar: "Editar estructura de datos - Template",
                 representarMetodoDv: "Representacion metodo - Template",
@@ -28,7 +21,6 @@ module.exports = () => ({
             distribucion: "Distribucion - Template",
             documentoLegal: "Documento legal - Template",
             funciones: {
-                self: "Funcion - Template",
                 libreria: "Libreria de funciones - Template",
                 modulo: "Modulo de funciones - Template",
             },
@@ -42,7 +34,6 @@ module.exports = () => ({
         etapa: "Etapa - Template",
         seccionReferencia: "Seccion referencias - Template",
         referencias: {
-            self: "Referencia - Template",
             editar: "Editar referencia - Template",
         }
     },

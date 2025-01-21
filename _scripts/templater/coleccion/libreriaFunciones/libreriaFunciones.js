@@ -6,6 +6,16 @@ const FUNCION = "funcion";
 const AGREGAR = "agregar";
 const SALIR = "salir";
 
+
+function obtenerDefault(tp, TIPOS_DE_DEFAULT, crearFuncion) {
+    return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
+        [LENGUAJE]: TIPOS_DE_DEFAULT.simple,
+        [LIBRERIA]: TIPOS_DE_DEFAULT.simple,
+        [MODULO]: TIPOS_DE_DEFAULT.simple,
+        [FUNCION]: tp.user.lenguajes().obtenerDefault(tp, null, TIPOS_DE_DEFAULT, crearFuncion),
+    }));
+}
+
 async function actualizarDatos(tp, datos, respuesta) {
     const { 
         SIMBOLOS, DATOS: { FUNCIONES: DATOS_FUNCIONES },
@@ -148,6 +158,67 @@ function generarPreguntas(tp, datos) {
     return { opciones: opciones, valores: valores };
 }
 
+async function crearNuevaFuncion(tp) {
+    const { 
+        DIRECTORIOS: { coleccion: { self: DIRECTORIO_COLECCION, funciones: DIRECTORIO_FUNCIONES } },
+        TAGS: { coleccion: { self: TAG_COLECCION, funciones: TAGS_FUNCIONES }, nota: TAGS_NOTA },
+        DATOS: { INVESTIGACION: DATOS_INVESTIGACION, FUNCIONES: DATOS_FUNCIONES },
+    } = tp.user.constantes();
+    const tagPorNombre = tp.user.tagPorNombre;
+
+    const dv = app.plugins.plugins.dataview.api;
+
+    let resultado = await tp.user.crearPreguntas(
+        tp, obtenerDefault.bind(null, tp), 
+        actualizarDatos, generarPreguntas, "Agregar función",
+    );
+
+    await agregarDatos(tp, resultado);
+
+    let keyLenguaje = DATOS_FUNCIONES.lenguaje.keyLenguaje(resultado[LENGUAJE]);
+
+    let nombreArchivo = `Función ${resultado[FUNCION][DATOS_FUNCIONES.funcion.firma.nombreFuncion]}`
+    let tagPath = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[keyLenguaje]}`;
+    let dvLenguaje = dv.pages(`#${tagPath} and #${TAG_COLECCION}/${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes.self}`)
+        .first();
+    dvLenguaje = dv.page(dvLenguaje[DATOS_FUNCIONES.lenguaje.temaInvestigacion].path);
+    let tagsInvestigacion = tp.user.obtenerTag(tp, dvLenguaje[DATOS_INVESTIGACION.tags])
+        .map(tag => `${tag}/${TAGS_FUNCIONES.lenguajes[keyLenguaje]}`);
+
+    let carpeta = `${DIRECTORIO_COLECCION}/${DIRECTORIO_FUNCIONES.self}/${DIRECTORIO_FUNCIONES[keyLenguaje]}`;
+
+    carpeta += `/${resultado[LIBRERIA]}`;
+    tagPath += `/${tagPorNombre(resultado[LIBRERIA])}`;
+    tagsInvestigacion = tagsInvestigacion
+        .map(tag => `${tag}/${tagPorNombre(resultado[LIBRERIA])}`);
+
+    if (resultado[MODULO]) { 
+        nombreArchivo += ` del módulo ${resultado[MODULO]}`;
+        carpeta += `/${resultado[MODULO]}`;
+        tagPath += `/${tagPorNombre(resultado[MODULO])}`;
+        tagsInvestigacion = tagsInvestigacion
+            .map(tag => `${tag}/${tagPorNombre(resultado[MODULO])}`);
+    }
+
+    nombreArchivo += ` de ${resultado[LIBRERIA]} en ${resultado[LENGUAJE]}`;
+    tagPath += `/${tagPorNombre(resultado[FUNCION][DATOS_FUNCIONES.funcion.firma.nombreFuncion])}`;
+
+    return {
+        metadata: {
+            [DATOS_FUNCIONES.funcion.tags]: [
+                tagPath,
+                `${TAG_COLECCION}/${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.funcion}`,
+                ...tagsInvestigacion,
+                `${TAGS_NOTA.self}/${TAGS_NOTA.coleccion}`,
+            ],
+            [DATOS_FUNCIONES.funcion.firma.self]: resultado[FUNCION],
+        },
+        carpeta: carpeta,
+        titulo: nombreArchivo,
+        texto: "",
+    }
+}
+
 async function crearLibreria(tp, lenguaje, libreria) {
     const { 
         TEMPLATE: { coleccion: TEMPLATE_COLECCION }, 
@@ -259,18 +330,12 @@ async function agregarDatos(tp, datos) {
 }
 
 module.exports = () => ({
-    obtenerDefault: (tp, TIPOS_DE_DEFAULT, crearFuncion) => crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
-        [LENGUAJE]: TIPOS_DE_DEFAULT.simple,
-        [LIBRERIA]: TIPOS_DE_DEFAULT.simple,
-        [MODULO]: TIPOS_DE_DEFAULT.simple,
-        [FUNCION]: tp.user.lenguajes().obtenerDefault(tp, null, TIPOS_DE_DEFAULT, crearFuncion),
-    })),
+    obtenerDefault: obtenerDefault,
     actualizarDatos: actualizarDatos,
     generarPreguntas: generarPreguntas,
-    agregarDatos: agregarDatos,
     crear: {
+        funcion: crearNuevaFuncion,
         libreria: crearLibreria,
         modulo: crearModulo,
     },
-    estructura: [ LENGUAJE, LIBRERIA, MODULO, FUNCION ],
 });

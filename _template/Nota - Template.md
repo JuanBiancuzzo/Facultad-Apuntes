@@ -1,5 +1,18 @@
 <%*
     const { DIRECTORIOS, TAGS, TEMPLATE } = tp.user.constantes();
+    const GENERADOR = {
+        nota: {
+            facultad: tp.user.nota().notaFacultad,
+            curso: tp.user.nota().crearNotaCurso,
+            investigacion: tp.user.nota().crearNotaInvestigacion,
+            proyecto: tp.user.nota().crearNotaProyecto,
+        },
+        coleccion: {
+            estructuraDatos: tp.user.estructuraDeDatos().crear.estructura,
+            libreriaFunciones: tp.user.libreriaFunciones().crear.funcion,
+        },
+        referencia: tp.user.referencia().crear.referenciaSimple,
+    };
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
     
@@ -24,23 +37,23 @@
 
     // Agregar opciones por directorio
     switch (directorioBase) {
-        case DIRECTORIOS.referencias: ingresarOpcion("Ingresar referencia", TEMPLATE.referencias.general); break;
-        case DIRECTORIOS.investigacion: ingresarOpcion("Ingresar nota de investigación", TEMPLATE.nota.investigacion); break;
-        case DIRECTORIOS.curso: ingresarOpcion("Ingresar nota de curso", TEMPLATE.nota.curso); break;
-        case DIRECTORIOS.proyectoPractico: ingresarOpcion("Ingresar nota de proyecto", TEMPLATE.nota.proyecto); break;
+        case DIRECTORIOS.referencias: ingresarOpcion("Ingresar referencia", GENERADOR.referencia); break;
+        case DIRECTORIOS.investigacion: ingresarOpcion("Ingresar nota de investigación", GENERADOR.nota.investigacion); break;
+        case DIRECTORIOS.curso: ingresarOpcion("Ingresar nota de curso", GENERADOR.nota.curso); break;
+        case DIRECTORIOS.proyectoPractico: ingresarOpcion("Ingresar nota de proyecto", GENERADOR.nota.proyecto); break;
         case DIRECTORIOS.proyectoInvestigacion: 
-            ingresarOpcion("Ingresar nota de investigación en el proyecto", TEMPLATE.nota.investigacion);
-            ingresarOpcion("Ingresar nota de proyecto", TEMPLATE.nota.proyecto);
+            ingresarOpcion("Ingresar nota de investigación en el proyecto", GENERADOR.nota.investigacion);
+            ingresarOpcion("Ingresar nota de proyecto", GENERADOR.nota.proyecto);
             break;
 
-        case DIRECTORIOS.GDD: ingresarOpcion("Ingresar un GDD", TEMPLATE.nota.proyecto); break;
+        case DIRECTORIOS.GDD: ingresarOpcion("Ingresar un GDD", GENERADOR.nota.proyecto); break;
 
         case DIRECTORIOS.carrera.informatica: 
         case DIRECTORIOS.carrera.electronica: 
         case DIRECTORIOS.carrera.datos: 
         case DIRECTORIOS.carrera.fisica: 
         case DIRECTORIOS.carrera.matematica: 
-            ingresarOpcion("Ingresar nota de materia", TEMPLATE.nota.materia);
+            ingresarOpcion("Ingresar nota de materia", GENERADOR.nota.facultad);
             break;
 
         case DIRECTORIOS.coleccion.self: 
@@ -48,67 +61,70 @@
             let segundoDirectorio = directorio.at(1);
 
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.componentes) {
-                ingresarOpcion("Ingresar un componente", TEMPLATE.coleccion.componente);
+                // ingresarOpcion("Ingresar un componente", TEMPLATE.coleccion.componente);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.dataStructures) {
-                ingresarOpcion("Ingresar una estructura de datos", TEMPLATE.coleccion.estructuraDatos.self);
+                ingresarOpcion("Ingresar una estructura de datos", GENERADOR.coleccion.estructuraDatos);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.distribuciones) {
-                ingresarOpcion("Ingresar una función de distribución", TEMPLATE.coleccion.distribucion);
+                // ingresarOpcion("Ingresar una función de distribución", TEMPLATE.coleccion.distribucion);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.documentos) {
-                ingresarOpcion("Ingresar un documento legal", TEMPLATE.coleccion.documentoLegal);
+                // ingresarOpcion("Ingresar un documento legal", TEMPLATE.coleccion.documentoLegal);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.funciones) {
-                ingresarOpcion("Ingresar una función de programación", TEMPLATE.coleccion.funciones.self);
+                ingresarOpcion("Ingresar una función de programación", GENERADOR.coleccion.libreriaFunciones);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.libros) {
-                ingresarOpcion("Ingresar un libro", TEMPLATE.coleccion.libro);
+                // ingresarOpcion("Ingresar un libro", TEMPLATE.coleccion.libro);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.papers) {
-                ingresarOpcion("Ingresar un paper o RFC", TEMPLATE.coleccion.paper);
+                // ingresarOpcion("Ingresar un paper o RFC", TEMPLATE.coleccion.paper);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.programas) {
-                ingresarOpcion("Ingresar programa", TEMPLATE.coleccion.programa);
+                // ingresarOpcion("Ingresar programa", TEMPLATE.coleccion.programa);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.recetas) {
-                ingresarOpcion("Ingresar receta", TEMPLATE.coleccion.receta);
+                // ingresarOpcion("Ingresar receta", TEMPLATE.coleccion.receta);
             }
             break;
     }
 
     const dv = app.plugins.plugins.dataview.api;
     if (dv.pages(`"${carpeta}" and #${TAGS.investigacion.self}/${TAGS.investigacion.indice}`).length > 0)  {
-        ingresarOpcion("Ingresar nota de investigación", TEMPLATE.nota.investigacion);
+        ingresarOpcion("Ingresar nota de investigación", GENERADOR.nota.investigacion);
     }
     if (dv.pages(`"${carpeta}" and (#${TAGS.materia} or #${TAGS.resumenMateria})`).length > 0)  {
-        ingresarOpcion("Ingresar nota de materia", TEMPLATE.nota.materia);
+        ingresarOpcion("Ingresar nota de materia", GENERADOR.nota.facultad);
     }
     if (dv.pages(`"${carpeta}" and #${TAGS.curso.self}`).length > 0)  {
-        ingresarOpcion("Ingresar nota de curso", TEMPLATE.nota.curso)
+        ingresarOpcion("Ingresar nota de curso", GENERADOR.nota.curso)
     }
     if (dv.pages(`"${carpeta}" and #${TAGS.proyecto.self}/${TAGS.proyecto.practico.self}`).length > 0)  {
-        ingresarOpcion("Ingresar nota de proyecto", TEMPLATE.nota.proyecto)
+        ingresarOpcion("Ingresar nota de proyecto", GENERADOR.nota.proyecto)
     }
     if (dv.pages(`"${carpeta}" and #${TAGS.proyecto.self}/${TAGS.proyecto.investigacion.self}`).length > 0)  {
-        ingresarOpcion("Ingresar nota de investigación en el proyecto", TEMPLATE.nota.investigacion);
-        ingresarOpcion("Ingresar nota de proyecto", TEMPLATE.nota.proyecto);
+        ingresarOpcion("Ingresar nota de investigación en el proyecto", GENERADOR.nota.investigacion);
+        ingresarOpcion("Ingresar nota de proyecto", GENERADOR.nota.proyecto);
     }
     if (dv.pages(`"${carpeta}" and #${TAGS.proyecto.self}/${TAGS.proyecto.juego.self}`).length > 0)  {
-        ingresarOpcion("Ingresar un GDD", TEMPLATE.nota.proyecto)
+        ingresarOpcion("Ingresar un GDD", GENERADOR.nota.proyecto)
     }
 
     try {
         if (opciones.length > 0) {
-            let template = valores.first();
+            let generador = valores.first();
             if (opciones.length > 1) {
-                template = await preguntar.suggester(
+                generador = await preguntar.suggester(
                     tp, opciones, valores, "Elegir que tipo de nota se va a usar",
                     error.Prompt("No se elgió un tipo de nota")
                 );
             }
 
-            tR += await tp.file.include(`[[${template}]]`);
+            let { metadata, carpeta, titulo, texto } = await generador(tp);
+
+            await tp.file.move(`${carpeta}/${titulo}`, tArchivo);
+            tR += tp.user.archivo().texto(tp, metadata, texto);
         }
 
     } catch ({ name: nombre, message: mensaje }) {
