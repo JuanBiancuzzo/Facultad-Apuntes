@@ -304,7 +304,7 @@ async function crearNotaCurso(tp) {
 
     let referenciasResumen = resumen[DATOS_RESUMEN.referencias]
         ? resumen[DATOS_RESUMEN.referencias].map(num => parseInt(num, 10))
-        : [];
+        : dv.array([]);
     referenciasResumen.values.push([resumen[DATOS_REFERENCIA.numReferencia], true]);
 
     let referenciasUsar = await preguntarReferenciasUsar(tp, referenciasResumen);

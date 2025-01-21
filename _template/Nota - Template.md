@@ -3,9 +3,9 @@
     const GENERADOR = {
         nota: {
             facultad: tp.user.nota().notaFacultad,
-            curso: tp.user.nota().crearNotaCurso,
-            investigacion: tp.user.nota().crearNotaInvestigacion,
-            proyecto: tp.user.nota().crearNotaProyecto,
+            curso: tp.user.nota().notaCurso,
+            investigacion: tp.user.nota().notaInvestigacion,
+            proyecto: tp.user.nota().notaProyecto,
         },
         coleccion: {
             estructuraDatos: tp.user.estructuraDeDatos().crear.estructura,

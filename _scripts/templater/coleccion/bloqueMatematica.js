@@ -332,7 +332,7 @@ async function crearTema(tp, tema) {
     } = tp.user.constantes();
     const dv = app.plugins.plugins.dataview.api;
 
-    let temas = dv.pages(`#${TAG_COLECCION.self}/${TAGS_MATEMATICA.self}/${TAGS_MATEMATICA.tema}`);
+    let temas = dv.pages(`#${TAG_COLECCION}/${TAGS_MATEMATICA.self}/${TAGS_MATEMATICA.tema}`)
     let numero = 1;
     if (temas.length > 0) {
         numero = temas.map(tema => tema[DATOS_TEMA.numero]).max() + 1;
@@ -409,13 +409,15 @@ async function agregarDatos(tp, datos) {
         .find(tema => tema[DATOS_TEMA.nombre] == datos[TEMA]);
 
     let numeroTema;
-    if (!tema) {
+    if (tema) {
+        numeroTema[DATOS_TEMA.numero];
+    } else {
         let tTema = await crearArchivo.crear(tp, () => crearTema(tp, datos[TEMA]));
         await app.fileManager.processFrontMatter(tTema, (frontmatter) => {
             numeroTema = frontmatter[DATOS_TEMA.numero];
         });
-    }
-    
+    }     
+
     let subtema = dv.pages(`#${TAGS_MATEMATICA.self}/${tp.user.tagPorNombre(datos[TEMA])} and #${TAG_COLECCION}/${TAGS_MATEMATICA.self}/${TAGS_MATEMATICA.subtema}`)
         .find(subtema => subtema[DATOS_SUBTEMA.nombre] == datos[SUBTEMA]);
 
@@ -492,7 +494,6 @@ module.exports = () => ({
     agregarDatos: agregarDatos,
     representacion: representacion,
     crear: {
-        bloque: crearBloque,
         tema: crearTema,
         subtema: crearSubtema,
     },
