@@ -33,7 +33,7 @@ function BSTSort :: array: Key[] n: Integer -> Key[]
 end
 ```
 
-Observemos que como insertar tiene [[Big O Notation|complejidad]] $O(\log_2(n))$, y como tenemos que insertar $n$ elementos, podemos concluir que su complejidad es $O(n ~ \log_2(n))$
+Observemos que como insertar tiene [[Big O Notation|complejidad]] $O(h)$ donde $h$ es la altura del árbol, y como tenemos que insertar $n$ elementos, podemos concluir que su complejidad es $O(n ~ h)$. Esto hace que si el árbol está [[Árbol balanceado|balanceado]], entonces por definición de balanceado es $O(n ~ h)$ pero en el caso contrario, el [[Worse-case complexity|worse-case complexity]] termina siendo $O\left(n^2\right)$ 
 
 ## Ejemplo
 ---

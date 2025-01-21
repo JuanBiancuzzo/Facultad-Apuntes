@@ -59,6 +59,16 @@ $$ F_n = \frac{1}{\sqrt{5}} \left( \Phi^n - \overline{\Phi}^n \right), ~~~~ \for
 > 
 > Se concluye que $p(n)$ es Verdadero, $\forall n \in \mathbb{N}_0$
 
+
+> [!observacion]+ Observación 2.1.1  
+> Notemos que para $n$ grandes, el termino $\overline{\Phi}^n$ tiende a $0$, algo también para considerar, es que como $|\overline{Phi}| < 1$ y como sabemos que $F_n \in \mathbb{N}_0$ entonces podríamos expresarlo de la siguiente forma $$
+>     F_n = \begin{cases} 
+>         \left\lfloor \frac{\Phi^n}{\sqrt{5}} \right\rfloor & \text{si} ~ n ~ \text{es par} \\\\
+>         \left\lceil \frac{\Phi^n}{\sqrt{5}} \right\rceil & \text{si} ~ n ~ \text{es impar} \\ 
+>     \end{cases}
+> $$
+^obs-2-1-1
+
 # Referencias
 ---
 ```dataviewjs
