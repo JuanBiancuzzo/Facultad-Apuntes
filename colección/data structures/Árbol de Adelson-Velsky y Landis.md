@@ -213,11 +213,349 @@ Vamos a ver las operaciones que deben existir para que se pueda usar esta estruc
 
 ### BuildTree
 ---
+```dataviewjs
 
+```
+
+```
+function BuildTree :: array: Key[] -> AVLTree 
+    let tree: AVLTree = { .rootNode = None }
+    
+    for element in array then
+        Insert tree element
+    end
+    
+    return tree
+end
+```
 
 ### Insert
 ---
+Para insertar, lo haremos de la misma manera que un árbol binario de búsqueda, y después arreglaremos los problemas que pueden ocurrir
 
+Veamos que problemas, donde notemos que existe una simetría en el árbol y por lo tanto vamos a analizar solo los casos que no sean simetrías de otras
+
+La primera situación es donde tenemos 
+
+```tikz
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\tikzset{
+    pics/Triangulo/.style args={#1}{
+	    code={
+		    \tikzmath { \base = 1.3; \altura = 1.5; }
+
+			\draw (0, 0) 
+        			node (-sup) {}
+    			 -- ++({-\base / 2}, -\altura)
+        			node[midway] (-izq) {}
+                -- ++(\base, 0)
+                    node[midway] (-abajo) {}
+                -- cycle
+                    node[midway] (-der) {};
+            \path (0, {-0.6 * \altura}) node (-centro) {#1};
+	    }
+	},
+	pics/Router/.default={A}
+}
+
+\begin{document} 
+\begin{tikzpicture}[scale=1.3, transform shape, thick]
+    \tikzmath { \radio = 0.5; \base = 1.3; \altura = 1.5; \sep = 1.2; }
+    
+    \draw (0, 0) circle (\radio) node {$x$};
+    \path (\radio, 0) node[right=2pt] {$h = k + 2$};
+        
+    \draw ({\sep + cos(-45) * \radio}, {-\sep + sin(-45) * \radio}) 
+        circle (\radio) node (centro_y) {$y$};
+    \path ($ (centro_y.center) + (\radio, 0) $) node[right=2pt] {$h = k + 1$};
+    
+    \draw pic (tA) at (-\sep, -\sep) {Triangulo={A}};
+    \draw pic (tB) at ($ (centro_y.center) + (-\sep, -\sep) $) {Triangulo={B}};
+    \draw pic (tC) at ($ (centro_y.center) + ( \sep, -\sep) $) {Triangulo={C}};
+    
+    \path (tA-izq) node[left=2pt] {$h = k - 1$};
+    \path (tB-izq) node[left=2pt] {$h = k - 1$};
+    \path (tC-der) node[right=2pt] {$h = k$};
+        
+    \tikzmath { \distSep = \radio + 0.3; }
+    \begin{scope}[->, shorten <= \distSep cm, ultra thick]
+        \draw[shorten >= \distSep cm] (0, 0) -- (centro_y.center);
+        
+        \draw (0, 0) -- (tA-sup);
+        \draw (centro_y.center) -- (tB-sup);
+        \draw (centro_y.center) -- (tC-sup);
+    \end{scope}
+    
+\end{tikzpicture}
+\end{document}
+```  
+
+Notemos que para el nodo $x$, $|h_i - h_d| = 2$ por lo que se rompe la invarianza, esto se resuelve con una [[Rotación de árboles|rotación]], en este caso un `LeftRotation(x)`. Lo cual resulta en el siguiente árbol
+
+```tikz
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\tikzset{
+    pics/Triangulo/.style args={#1}{
+	    code={
+		    \tikzmath { \base = 1.3; \altura = 1.5; }
+
+			\draw (0, 0) 
+        			node (-sup) {}
+    			 -- ++({-\base / 2}, -\altura)
+        			node[midway] (-izq) {}
+                -- ++(\base, 0)
+                    node[midway] (-abajo) {}
+                -- cycle
+                    node[midway] (-der) {};
+            \path (0, {-0.6 * \altura}) node (-centro) {#1};
+	    }
+	},
+	pics/Router/.default={A}
+}
+
+\begin{document} 
+\begin{tikzpicture}[scale=1.3, transform shape, thick]
+    \tikzmath { \radio = 0.5; \base = 1.3; \altura = 1.5; \sep = 1.2; }
+    
+    \draw (0, 0) circle (\radio) node {$y$};
+    \path (-\radio, 0) node[left=2pt] {$h = k$};
+    
+    \draw ({-\sep - cos(-45) * \radio}, {-\sep + sin(-45) * \radio}) 
+        circle (\radio) node (centro_x) {$x$};
+    \path ($ (centro_x.center) + (-\radio, 0) $) node[left=2pt] {$h = k$};
+        
+    \draw pic (tA) at ($ (centro_x.center) + (-\sep, -\sep) $) {Triangulo={A}};
+    \draw pic (tB) at ($ (centro_x.center) + ( \sep, -\sep) $) {Triangulo={B}};
+    \draw pic (tC) at ( \sep, -\sep) {Triangulo={C}};
+    
+    \path (tA-izq) node[left=2pt] {$h = k - 1$};
+    \path (tB-der) node[right=2pt] {$h = k - 1$};
+    \path (tC-der) node[right=2pt] {$h = k$};
+    
+    \tikzmath { \distSep = \radio + 0.3; }
+    \begin{scope}[->, shorten <= \distSep cm, ultra thick]
+        \draw[shorten >= \distSep cm] (0, 0) -- (centro_x.center);
+        
+        \draw (0, 0) -- (tC-sup);
+        \draw (centro_x.center) -- (tA-sup);
+        \draw (centro_x.center) -- (tB-sup);
+    \end{scope}
+    
+\end{tikzpicture}
+\end{document}
+```  
+
+Como observación, se puede dar el caso donde $B$ tenga una altura de $k$ en la cual la resolución de este es la misma
+
+Otra situación, es la siguiente
+
+```tikz
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\tikzset{
+    pics/Triangulo/.style args={#1}{
+	    code={
+		    \tikzmath { \base = 1.3; \altura = 1.5; }
+
+			\draw (0, 0) 
+        			node (-sup) {}
+    			 -- ++({-\base / 2}, -\altura)
+        			node[midway] (-izq) {}
+                -- ++(\base, 0)
+                    node[midway] (-abajo) {}
+                -- cycle
+                    node[midway] (-der) {};
+            \path (0, {-0.6 * \altura}) node (-centro) {#1};
+	    }
+	},
+	pics/Router/.default={A}
+}
+
+\begin{document} 
+\begin{tikzpicture}[scale=1.3, transform shape, thick]
+    \tikzmath { 
+        \radio = 0.5; \base = 1.3; \altura = 1.5; \sep = 1.5; 
+        \desvCirc = \radio * sqrt(2) / 2;
+    }
+    
+    \draw (0, 0) circle (\radio) node (centro_x) {$x$};
+    \path (\radio, 0) node[right=2pt] {$h = k + 2$};
+        
+    \draw ($ (centro_x.center) + ({\sep + \desvCirc}, {-\sep - \desvCirc}) $) 
+        circle (\radio) node (centro_z) {$z$};
+    \path ($ (centro_z.center) + (\radio, 0) $) node[right=2pt] {$h = k + 1$};
+    
+    \draw ($ (centro_z.center) + ({-\sep - \desvCirc}, {-\sep - \desvCirc}) $) 
+        circle (\radio) node (centro_y) {$y$};
+    \path ($ (centro_y.center) + (\radio, 0) $) node[right=2pt] {$h = k$};
+    
+    \draw pic (tA) at (-\sep, -\sep) {Triangulo={A}};
+    \draw pic (tB) at ($ (centro_y.center) + (-\sep, -\sep) $) {Triangulo={B}};
+    \draw pic (tC) at ($ (centro_y.center) + ( \sep, -\sep) $) {Triangulo={C}};
+    \draw pic (tD) at ($ (centro_z.center) + ( \sep, -\sep) $) {Triangulo={D}};
+    
+    \path (tA-izq) node[left=2pt]  {$h = k - 1$};
+    \path (tB-izq) node[left=2pt]  {$h = k - 1$};
+    \path (tC-der) node[right=2pt] {$h = k - 2$};
+    \path (tD-der) node[right=2pt] {$h = k - 1$};
+        
+    \tikzmath { \distSep = \radio + 0.3; }
+    \begin{scope}[->, shorten <= \distSep cm, ultra thick]
+        \draw[shorten >= \distSep cm] (centro_x.center) -- (centro_z.center);
+        \draw[shorten >= \distSep cm] (centro_z.center) -- (centro_y.center);
+        
+        \draw (centro_x.center) -- (tA-sup);
+        \draw (centro_y.center) -- (tB-sup);
+        \draw (centro_y.center) -- (tC-sup);
+        \draw (centro_z.center) -- (tD-sup);
+    \end{scope}
+    
+\end{tikzpicture}
+\end{document}
+```  
+
+Para resolverlo, tendremos que aplicar dos rotaciones, primero `RightRotation(z)` que resulta en 
+
+```tikz
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\tikzset{
+    pics/Triangulo/.style args={#1}{
+	    code={
+		    \tikzmath { \base = 1.3; \altura = 1.5; }
+
+			\draw (0, 0) 
+        			node (-sup) {}
+    			 -- ++({-\base / 2}, -\altura)
+        			node[midway] (-izq) {}
+                -- ++(\base, 0)
+                    node[midway] (-abajo) {}
+                -- cycle
+                    node[midway] (-der) {};
+            \path (0, {-0.6 * \altura}) node (-centro) {#1};
+	    }
+	},
+	pics/Router/.default={A}
+}
+
+\begin{document} 
+\begin{tikzpicture}[scale=1.3, transform shape, thick]
+    \tikzmath { 
+        \radio = 0.5; \base = 1.3; \altura = 1.5; \sep = 1.5; 
+        \desvCirc = \radio * sqrt(2) / 2;
+    }
+    
+    \draw (0, 0) circle (\radio) node (centro_x) {$x$};
+    \path (\radio, 0) node[right=2pt] {$h = k + 2$};
+        
+    \draw ($ (centro_x.center) + ({\sep + \desvCirc}, {-\sep - \desvCirc}) $) 
+        circle (\radio) node (centro_y) {$y$};
+    \path ($ (centro_y.center) + (\radio, 0) $) node[right=2pt] {$h = k + 1$};
+    
+    \draw ($ (centro_y.center) + ({\sep + \desvCirc}, {-\sep - \desvCirc}) $) 
+        circle (\radio) node (centro_z) {$z$};
+    \path ($ (centro_z.center) + (\radio, 0) $) node[right=2pt] {$h = k$};
+    
+    \draw pic (tA) at (-\sep, -\sep) {Triangulo={A}};
+    \draw pic (tB) at ($ (centro_y.center) + (-\sep, -\sep) $) {Triangulo={B}};
+    \draw pic (tC) at ($ (centro_z.center) + (-\sep, -\sep) $) {Triangulo={C}};
+    \draw pic (tD) at ($ (centro_z.center) + ( \sep, -\sep) $) {Triangulo={D}};
+    
+    \path (tA-izq) node[left=2pt]  {$h = k - 1$};
+    \path (tB-izq) node[left=2pt]  {$h = k - 1$};
+    \path (tC-der) node[right=2pt] {$h = k - 2$};
+    \path (tD-der) node[right=2pt] {$h = k - 1$};
+        
+    \tikzmath { \distSep = \radio + 0.3; }
+    \begin{scope}[->, shorten <= \distSep cm, ultra thick]
+        \draw[shorten >= \distSep cm] (centro_x.center) -- (centro_y.center);
+        \draw[shorten >= \distSep cm] (centro_y.center) -- (centro_z.center);
+        
+        \draw (centro_x.center) -- (tA-sup);
+        \draw (centro_y.center) -- (tB-sup);
+        \draw (centro_z.center) -- (tC-sup);
+        \draw (centro_z.center) -- (tD-sup);
+    \end{scope}
+    
+\end{tikzpicture}
+\end{document}
+```  
+
+Ahora, es similar a la situación previa, que resolvemos haciendo `LeftRotation(x)` que resulta en
+
+```tikz
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\tikzset{
+    pics/Triangulo/.style args={#1}{
+	    code={
+		    \tikzmath { \base = 1.3; \altura = 1.5; }
+
+			\draw (0, 0) 
+        			node (-sup) {}
+    			 -- ++({-\base / 2}, -\altura)
+        			node[midway] (-izq) {}
+                -- ++(\base, 0)
+                    node[midway] (-abajo) {}
+                -- cycle
+                    node[midway] (-der) {};
+            \path (0, {-0.6 * \altura}) node (-centro) {#1};
+	    }
+	},
+	pics/Router/.default={A}
+}
+
+\begin{document} 
+\begin{tikzpicture}[scale=1.3, transform shape, thick]
+    \tikzmath { 
+        \radio = 0.5; \base = 1.3; \altura = 1.5; \sep = 1.5; 
+        \desvCirc = \radio * sqrt(2) / 2;
+    }
+    
+    \draw (0, 0) circle (\radio) node (centro_y) {$y$};
+    \path (\radio, 0) node[right=2pt] {$h = k + 1$};
+        
+    \draw ($ (centro_y.center) + ({-2 * \sep - \desvCirc}, {-\sep - \desvCirc}) $) 
+        circle (\radio) node (centro_x) {$x$};
+    \path ($ (centro_x.center) + (-\radio, 0) $) node[left=2pt] {$h = k$};
+    
+    \draw ($ (centro_y.center) + ({2 * \sep + \desvCirc}, {-\sep - \desvCirc}) $) 
+        circle (\radio) node (centro_z) {$z$};
+    \path ($ (centro_z.center) + (\radio, 0) $) node[right=2pt] {$h = k$};
+    
+    \draw pic (tA) at ($ (centro_x.center) + (-\sep, -\sep) $) {Triangulo={A}};
+    \draw pic (tB) at ($ (centro_x.center) + ( \sep, -\sep) $) {Triangulo={B}};
+    \draw pic (tC) at ($ (centro_z.center) + (-\sep, -\sep) $) {Triangulo={C}};
+    \draw pic (tD) at ($ (centro_z.center) + ( \sep, -\sep) $) {Triangulo={D}};
+    
+    \path (tA-izq)   node[left=2pt]  {$h = k - 1$};
+    \path (tB-abajo) node[below=2pt] {$h = k - 1$};
+    \path (tC-abajo) node[below=2pt] {$h = k - 2$};
+    \path (tD-der)   node[right=2pt] {$h = k - 1$};
+        
+    \tikzmath { \distSep = \radio + 0.3; }
+    \begin{scope}[->, shorten <= \distSep cm, ultra thick]
+        \draw[shorten >= \distSep cm] (centro_y.center) -- (centro_x.center);
+        \draw[shorten >= \distSep cm] (centro_y.center) -- (centro_z.center);
+        
+        \draw (centro_x.center) -- (tA-sup);
+        \draw (centro_x.center) -- (tB-sup);
+        \draw (centro_z.center) -- (tC-sup);
+        \draw (centro_z.center) -- (tD-sup);
+    \end{scope}
+    
+\end{tikzpicture}
+\end{document}
+```  
+
+Como el otro caso, tenemos que hacer la observación que puede intercambiarse $C$ y $D$, o incluso con la altura de $C$ con $h = k - 1$, y es la misma resolución
 
 ### InorderWalk
 ---

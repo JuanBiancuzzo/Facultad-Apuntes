@@ -1,6 +1,6 @@
 ---
 dia: 2025-01-21
-etapa: empezado
+etapa: terminado
 referencias:
   - "701"
 tags:
@@ -413,7 +413,7 @@ Ahora, agregando $7$ volvemos a romper la invarianza
 \end{document}
 ``` 
 
-Como el punto en el que se rompe la invarianza es la raíz, tenemos que conseguir la hoja más a la izquierda del subárbol derecho, en esta caso es el $5$ y ahí resolverlo
+Podemos ver que tenemos que hacer una rotación, resultando en 
 
 ```tikz
 \usetikzlibrary{math}
@@ -421,11 +421,11 @@ Como el punto en el que se rompe la invarianza es la raíz, tenemos que consegui
 
 \begin{document} 
 \begin{tikzpicture}[scale=1.3, transform shape, thick]
-    \def\elementos  {{5,  4, 6, 8,  7,  2}}
-    \def\padres     {{0,  0, 0, 2,  3,  1}}
-    \def\direcciones{{0, -1, 1, 1, -1, -1}}
-    \def\niveles    {{0,  1, 1, 2,  3,  2}}
-    \def\alturas    {{3,  1, 2, 1,  0,  0}}
+    \def\elementos  {{6,  4,  8,  2,  5,  7}}
+    \def\padres     {{0,  0,  0,  1,  1,  2}}
+    \def\direcciones{{0, -1,  1, -1,  1, -1}}
+    \def\niveles    {{0,  1,  1,  2,  2,  2}}
+    \def\alturas    {{2,  1,  1,  0,  0,  0}}
 
     \tikzmath { 
         \largo = dim(\elementos);
@@ -482,7 +482,7 @@ Como el punto en el que se rompe la invarianza es la raíz, tenemos que consegui
 \end{document}
 ``` 
 
-Ahora arreglamos el subárbol derecho, resultando en
+Insertando $3$ no rompe la invarianza, pero y al insertar $1$ mantiene la invarianza, resultando en
 
 ```tikz
 \usetikzlibrary{math}
@@ -490,11 +490,11 @@ Ahora arreglamos el subárbol derecho, resultando en
 
 \begin{document} 
 \begin{tikzpicture}[scale=1.3, transform shape, thick]
-    \def\elementos  {{5,  4, 7,  2,  6, 8}}
-    \def\padres     {{0,  0, 0,  1,  2, 2}}
-    \def\direcciones{{0, -1, 1, -1, -1, 1}}
-    \def\niveles    {{0,  1, 1,  2,  2, 2}}
-    \def\alturas    {{2,  1, 1,  0,  0, 0}}
+    \def\elementos  {{6,  4,  8,  2,  5,  7,  3,  1}}
+    \def\padres     {{0,  0,  0,  1,  1,  2,  3,  3}}
+    \def\direcciones{{0, -1,  1, -1,  1, -1,  1, -1}}
+    \def\niveles    {{0,  1,  1,  2,  2,  2,  3,  3}}
+    \def\alturas    {{3,  2,  1,  1,  0,  0,  0,  0}}
 
     \tikzmath { 
         \largo = dim(\elementos);
@@ -551,212 +551,7 @@ Ahora arreglamos el subárbol derecho, resultando en
 \end{document}
 ``` 
 
-Insertando $3$ rompe la invarianza 
-
-```tikz
-\usetikzlibrary{math}
-\usetikzlibrary{calc}
-
-\begin{document} 
-\begin{tikzpicture}[scale=1.3, transform shape, thick]
-    \def\elementos  {{5,  4, 7,  2,  6, 8, 3}}
-    \def\padres     {{0,  0, 0,  1,  2, 2, 3}}
-    \def\direcciones{{0, -1, 1, -1, -1, 1, 1}}
-    \def\niveles    {{0,  1, 1,  2,  2, 2, 3}}
-    \def\alturas    {{3,  2, 1,  1,  0, 0, 0}}
-
-    \tikzmath { 
-        \largo = dim(\elementos);
-        \cantNiveles = ceil(log2(\largo)); \raiz = \elementos[0];
-        \radio = 0.5; \sepX = 1.3 * \cantNiveles; \sepY = 1.8;
-        
-        \supIzqX = \radio * cos(135); \supIzqY = \radio * sin(135);
-        \supDerX = \radio * cos(45); \supDerY = \radio * sin(45);
-        \infIzqX = \supIzqX; \infIzqY = -\supIzqY;
-        \infDerX = \supDerX; \infDerY = -\supDerY;
-        
-        \raiz = \elementos[0]; \alturaRaiz = \alturas[0];
-    }
-    
-    \draw[<-, ultra thick, shorten <=0.2cm, shorten >=0.2] (0, \radio) 
-        -- ++(0, 1) node[above=2pt] {Raiz};
-    
-    \draw (0, 0) circle (\radio) node (centro_0) {$\raiz$};
-    \path (0, -\radio) node[below=2pt] {$h = \alturaRaiz$};
-    \path (\infIzqX, \infIzqY) node (inf_izq_0) {};
-    \path (\infDerX, \infDerY) node (inf_der_0) {};
-    \path (\supIzqX, \supIzqY) node (sup_izq_0) {};
-    \path (\supDerX, \supDerY) node (sup_der_0) {};
-    
-    \foreach \indice [parse=true] in {1, ..., \largo - 1} {
-        \tikzmath { 
-            int \indicePadre;
-            \indicePadre = \padres[\indice];
-            \nivelActual = \niveles[\indice];
-            \direccion = \direcciones[\indice];
-            
-            \dir = (int(\direccion) > 0) ? "izq" : "der";
-            \dirPadre = (int(\direccion) > 0) ? "der" : "izq";
-            \sepActual = int(\direccion) * \sepX/int(\nivelActual);
-            \valor = \elementos[\indice];
-            \altura = \alturas[\indice];
-        }
-        \coordinate (padre) at (centro_\indicePadre);
-        \coordinate (pos) at ($ (padre) + (\sepActual, -\sepY) $);
-        
-        \draw (pos) circle (\radio) node (centro_\indice) {$\valor$};
-        \path ($ (pos) + (0, \radio) $) node[above=2pt] {$h = \altura$};
-        
-        \path ($ (pos) + (\infIzqX, \infIzqY) $) node (inf_izq_\indice) {};
-        \path ($ (pos) + (\infDerX, \infDerY) $) node (inf_der_\indice) {};
-        \path ($ (pos) + (\supIzqX, \supIzqY) $) node (sup_izq_\indice) {};
-        \path ($ (pos) + (\supDerX, \supDerY) $) node (sup_der_\indice) {};
-        
-        \draw[<-, shorten <=0.1cm, shorten >=0.1] (sup_\dir_\indice)
-            -- (inf_\dirPadre_\indicePadre);
-    }
-    
-\end{tikzpicture}
-\end{document}
-``` 
-
-Haciendo dos rotaciones, resultando en 
-
-```tikz
-\usetikzlibrary{math}
-\usetikzlibrary{calc}
-
-\begin{document} 
-\begin{tikzpicture}[scale=1.3, transform shape, thick]
-    \def\elementos  {{5,  2, 7,  3,  6, 8, 4}}
-    \def\padres     {{0,  0, 0,  1,  2, 2, 1}}
-    \def\direcciones{{0, -1, 1, -1, -1, 1, 1}}
-    \def\niveles    {{0,  1, 1,  2,  2, 2, 2}}
-    \def\alturas    {{2,  1, 1,  0,  0, 0, 0}}
-
-    \tikzmath { 
-        \largo = dim(\elementos);
-        \cantNiveles = ceil(log2(\largo)); \raiz = \elementos[0];
-        \radio = 0.5; \sepX = 1.3 * \cantNiveles; \sepY = 1.8;
-        
-        \supIzqX = \radio * cos(135); \supIzqY = \radio * sin(135);
-        \supDerX = \radio * cos(45); \supDerY = \radio * sin(45);
-        \infIzqX = \supIzqX; \infIzqY = -\supIzqY;
-        \infDerX = \supDerX; \infDerY = -\supDerY;
-        
-        \raiz = \elementos[0]; \alturaRaiz = \alturas[0];
-    }
-    
-    \draw[<-, ultra thick, shorten <=0.2cm, shorten >=0.2] (0, \radio) 
-        -- ++(0, 1) node[above=2pt] {Raiz};
-    
-    \draw (0, 0) circle (\radio) node (centro_0) {$\raiz$};
-    \path (0, -\radio) node[below=2pt] {$h = \alturaRaiz$};
-    \path (\infIzqX, \infIzqY) node (inf_izq_0) {};
-    \path (\infDerX, \infDerY) node (inf_der_0) {};
-    \path (\supIzqX, \supIzqY) node (sup_izq_0) {};
-    \path (\supDerX, \supDerY) node (sup_der_0) {};
-    
-    \foreach \indice [parse=true] in {1, ..., \largo - 1} {
-        \tikzmath { 
-            int \indicePadre;
-            \indicePadre = \padres[\indice];
-            \nivelActual = \niveles[\indice];
-            \direccion = \direcciones[\indice];
-            
-            \dir = (int(\direccion) > 0) ? "izq" : "der";
-            \dirPadre = (int(\direccion) > 0) ? "der" : "izq";
-            \sepActual = int(\direccion) * \sepX/int(\nivelActual);
-            \valor = \elementos[\indice];
-            \altura = \alturas[\indice];
-        }
-        \coordinate (padre) at (centro_\indicePadre);
-        \coordinate (pos) at ($ (padre) + (\sepActual, -\sepY) $);
-        
-        \draw (pos) circle (\radio) node (centro_\indice) {$\valor$};
-        \path ($ (pos) + (0, \radio) $) node[above=2pt] {$h = \altura$};
-        
-        \path ($ (pos) + (\infIzqX, \infIzqY) $) node (inf_izq_\indice) {};
-        \path ($ (pos) + (\infDerX, \infDerY) $) node (inf_der_\indice) {};
-        \path ($ (pos) + (\supIzqX, \supIzqY) $) node (sup_izq_\indice) {};
-        \path ($ (pos) + (\supDerX, \supDerY) $) node (sup_der_\indice) {};
-        
-        \draw[<-, shorten <=0.1cm, shorten >=0.1] (sup_\dir_\indice)
-            -- (inf_\dirPadre_\indicePadre);
-    }
-    
-\end{tikzpicture}
-\end{document}
-``` 
-
-Por último agregando el $1$ mantiene la invarianza, y por lo tanto tenemos el árbol completo, con lo que el resultado termina siendo el recorrido inorder del siguiente árbol
-
-```tikz
-\usetikzlibrary{math}
-\usetikzlibrary{calc}
-
-\begin{document} 
-\begin{tikzpicture}[scale=1.3, transform shape, thick]
-    \def\elementos  {{5,  2, 7,  3,  6, 8, 4,  1}}
-    \def\padres     {{0,  0, 0,  1,  2, 2, 1,  3}}
-    \def\direcciones{{0, -1, 1, -1, -1, 1, 1, -1}}
-    \def\niveles    {{0,  1, 1,  2,  2, 2, 2,  3}}
-    \def\alturas    {{3,  2, 1,  1,  0, 0, 0,  0}}
-
-    \tikzmath { 
-        \largo = dim(\elementos);
-        \cantNiveles = ceil(log2(\largo)); \raiz = \elementos[0];
-        \radio = 0.5; \sepX = 1.3 * \cantNiveles; \sepY = 1.8;
-        
-        \supIzqX = \radio * cos(135); \supIzqY = \radio * sin(135);
-        \supDerX = \radio * cos(45); \supDerY = \radio * sin(45);
-        \infIzqX = \supIzqX; \infIzqY = -\supIzqY;
-        \infDerX = \supDerX; \infDerY = -\supDerY;
-        
-        \raiz = \elementos[0]; \alturaRaiz = \alturas[0];
-    }
-    
-    \draw[<-, ultra thick, shorten <=0.2cm, shorten >=0.2] (0, \radio) 
-        -- ++(0, 1) node[above=2pt] {Raiz};
-    
-    \draw (0, 0) circle (\radio) node (centro_0) {$\raiz$};
-    \path (0, -\radio) node[below=2pt] {$h = \alturaRaiz$};
-    \path (\infIzqX, \infIzqY) node (inf_izq_0) {};
-    \path (\infDerX, \infDerY) node (inf_der_0) {};
-    \path (\supIzqX, \supIzqY) node (sup_izq_0) {};
-    \path (\supDerX, \supDerY) node (sup_der_0) {};
-    
-    \foreach \indice [parse=true] in {1, ..., \largo - 1} {
-        \tikzmath { 
-            int \indicePadre;
-            \indicePadre = \padres[\indice];
-            \nivelActual = \niveles[\indice];
-            \direccion = \direcciones[\indice];
-            
-            \dir = (int(\direccion) > 0) ? "izq" : "der";
-            \dirPadre = (int(\direccion) > 0) ? "der" : "izq";
-            \sepActual = int(\direccion) * \sepX/int(\nivelActual);
-            \valor = \elementos[\indice];
-            \altura = \alturas[\indice];
-        }
-        \coordinate (padre) at (centro_\indicePadre);
-        \coordinate (pos) at ($ (padre) + (\sepActual, -\sepY) $);
-        
-        \draw (pos) circle (\radio) node (centro_\indice) {$\valor$};
-        \path ($ (pos) + (0, \radio) $) node[above=2pt] {$h = \altura$};
-        
-        \path ($ (pos) + (\infIzqX, \infIzqY) $) node (inf_izq_\indice) {};
-        \path ($ (pos) + (\infDerX, \infDerY) $) node (inf_der_\indice) {};
-        \path ($ (pos) + (\supIzqX, \supIzqY) $) node (sup_izq_\indice) {};
-        \path ($ (pos) + (\supDerX, \supDerY) $) node (sup_der_\indice) {};
-        
-        \draw[<-, shorten <=0.1cm, shorten >=0.1] (sup_\dir_\indice)
-            -- (inf_\dirPadre_\indicePadre);
-    }
-    
-\end{tikzpicture}
-\end{document}
-``` 
+Por último tenemos el árbol completo, con lo que el resultado termina siendo el recorrido inorder 
 
 # Referencias
 ---

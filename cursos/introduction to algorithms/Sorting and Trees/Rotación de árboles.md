@@ -23,6 +23,23 @@ Se puede ver de forma ilustrativa cual es la trasformación de este
 \usetikzlibrary{math}
 \usetikzlibrary{calc}
 
+\tikzset{
+    pics/Triangulo/.style args={#1}{
+	    code={
+		    \tikzmath { \base = 1.3; \altura = 1.5; }
+
+			\draw (0, 0) -- ++({-\base / 2}, -\altura)
+        			node[midway] (-izq) {}
+                -- ++(\base, 0)
+                    node[midway] (-abajo) {}
+                -- cycle
+                    node[midway] (-der) {};
+            \path (0, {-0.6 * \altura}) node (-centro) {#1};
+	    }
+	},
+	pics/Router/.default={A}
+}
+
 \begin{document} 
 \begin{tikzpicture}[scale=1.3, transform shape, thick]
     
@@ -32,24 +49,10 @@ Se puede ver de forma ilustrativa cual es la trasformación de este
         \draw (0, 0) circle (\radio) node {$x$};
         \draw ({\sep + cos(-45) * \radio}, {-\sep + sin(-45) * \radio}) 
             circle (\radio) node (centro_y) {$y$};
-        
-        \draw (-\sep, -\sep) node (esquina) {}
-             -- ++({-\base / 2}, -\altura)
-            -- ++(\base, 0)
-            -- cycle;
-        \path ($ (esquina.center) + (0, {-0.6 * \altura}) $) node {A};
-        
-        \draw ($ (centro_y.center) + (-\sep, -\sep) $) node (esquina) {}
-            -- ++({-\base / 2}, -\altura)
-            -- ++(\base, 0)
-            -- cycle;
-        \path ($ (esquina.center) + (0, {-0.6 * \altura}) $) node {B};
-        
-        \draw ($ (centro_y.center) + (\sep, -\sep) $) node (esquina) {}
-            -- ++({-\base / 2}, -\altura)
-            -- ++(\base, 0)
-            -- cycle;
-        \path ($ (esquina.center) + (0, {-0.6 * \altura}) $) node {C};
+            
+        \draw pic (tA) at (-\sep, -\sep) {Triangulo={A}};
+        \draw pic (tB) at ($ (centro_y.center) + (-\sep, -\sep) $) {Triangulo={B}};
+        \draw pic (tC) at ($ (centro_y.center) + ( \sep, -\sep) $) {Triangulo={C}};
             
         \tikzmath { \distSep = \radio + 0.3; }
         \begin{scope}[->, shorten <= \distSep cm, ultra thick]
@@ -65,24 +68,10 @@ Se puede ver de forma ilustrativa cual es la trasformación de este
         \draw (0, 0) circle (\radio) node {$y$};
         \draw ({-\sep - cos(-45) * \radio}, {-\sep + sin(-45) * \radio}) 
             circle (\radio) node (centro_x) {$x$};
-        
-        \draw ($ (centro_x.center) + (-\sep, -\sep) $) node (esquina) {}
-            -- ++({-\base / 2}, -\altura)
-            -- ++(\base, 0)
-            -- cycle;
-        \path ($ (esquina.center) + (0, {-0.6 * \altura}) $) node {A};
-        
-        \draw ($ (centro_x.center) + (\sep, -\sep) $) node (esquina) {}
-            -- ++({-\base / 2}, -\altura)
-            -- ++(\base, 0)
-            -- cycle;
-        \path ($ (esquina.center) + (0, {-0.6 * \altura}) $) node {B};
-        
-        \draw (\sep, -\sep) node (esquina) {}
-             -- ++({-\base / 2}, -\altura)
-            -- ++(\base, 0)
-            -- cycle;
-        \path ($ (esquina.center) + (0, {-0.6 * \altura}) $) node {C};
+            
+        \draw pic (tA) at ($ (centro_x.center) + (-\sep, -\sep) $) {Triangulo={A}};
+        \draw pic (tB) at ($ (centro_x.center) + ( \sep, -\sep) $) {Triangulo={B}};
+        \draw pic (tC) at ( \sep, -\sep) {Triangulo={C}};
             
         \tikzmath { \distSep = \radio + 0.3; }
         \begin{scope}[->, shorten <= \distSep cm, ultra thick]
@@ -112,6 +101,7 @@ Se puede ver de forma ilustrativa cual es la trasformación de este
 \end{tikzpicture}
 \end{document}
 ```  
+^representacion
 
 # Referencias
 ---

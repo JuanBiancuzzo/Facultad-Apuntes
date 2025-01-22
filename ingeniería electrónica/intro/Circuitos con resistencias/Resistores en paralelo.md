@@ -8,7 +8,7 @@ tags:
 ---
 # Definición
 ---
-Son aquellos [[Resistor|resistores]] que comparten la misma [[Tensión]] entre los mismos [[Nodo]] ([[Elementos en paralelo]])
+Son aquellos [[Resistor|resistores]] que comparten la misma [[Tensión|tensión]] entre los mismos [[Nodo|nodo]] ([[Elementos en paralelo|elementos en paralelo]])
 
 ```tikz
 \usepackage{circuitikz} 
@@ -29,6 +29,6 @@ Son aquellos [[Resistor|resistores]] que comparten la misma [[Tensión]] entre l
 \end{document}
 ```
 
-Por lo que el equivalente es  (además de igual a los [[Inductores en paralelo]] y los [[Capacitores en serie]]) $$ \begin{CD} 
-	R_{eq} = \left( \sum_i^N R^{-1} \right)^{-1} @>{N~=~2}>> \frac{R_1 \cdot R_2}{R_1 + R_2}
+Por lo que el equivalente es  (además de igual a los [[Inductores en paralelo|inductores en paralelo]] y los [[Capacitores en serie|capacitores en serie]]) $$ \begin{CD} 
+	R_{eq} = \left( \sum_i^N R_i^{-1} \right)^{-1} @>{N~=~2}>> \frac{R_1 \cdot R_2}{R_1 + R_2}
 \end{CD} $$

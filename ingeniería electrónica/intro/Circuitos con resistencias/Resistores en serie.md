@@ -8,7 +8,7 @@ tags:
 ---
 # Definición
 ---
-Son aquellos [[Resistor|resistores]] atravesados por la misma [[Corriente eléctrica|corriente]] ([[Elementos en serie]]) y comparten la misma [[Malla]]
+Son aquellos [[Resistor|resistores]] atravesados por la misma [[Corriente eléctrica|corriente]] ([[Elementos en serie|elementos en serie]]) y comparten la misma [[Malla|malla]]
 
 ```tikz
 \usepackage{circuitikz} 
@@ -27,4 +27,4 @@ Son aquellos [[Resistor|resistores]] atravesados por la misma [[Corriente eléct
 \end{document}
 ```
 
-Por lo que el equivalente es (además de igual a los [[Inductores en serie]] y los [[Capacitores en paralelo]]) $$ R_{eq} = R_1 + R_2 $$
+Por lo que el equivalente es (además de igual a los [[Inductores en serie|inductores en serie]] y los [[Capacitores en paralelo|capacitores en serie]]) $$ R_{eq} = R_1 + R_2 $$
