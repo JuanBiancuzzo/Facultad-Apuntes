@@ -7,6 +7,10 @@ tags:
   - curso/introduction-to-algorithms/Sorting-and-Trees
   - nota/curso
   - investigación/ciencias-de-la-computación/algoritmos/Sorting-algorithms
+aliases:
+  - AVL Sort
+  - Ordenamiento con árbol Adelson-Velsky and Landis
+  - Ordenamiento con árbol AVL
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
@@ -20,13 +24,13 @@ Los pasos son
 2. [[Árbol de Adelson-Velsky y Landis#InorderWalk|Recorrer]] el árbol y conseguir el array ordenado
 
 ```
-function AVLSort :: array: Key[] n: Integer -> Key[]
+function AVLSort :: array: Key[], n: Integer -> Key[]
     let tree = BuildTree
     for i in 0..n then
-        Insert tree array[i]
+        Insert tree, array[i]
     end
 
-    return InorderWalk tree
+    return InorderWalk, tree
 end
 ```
 

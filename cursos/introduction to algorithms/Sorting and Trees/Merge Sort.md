@@ -19,14 +19,14 @@ aliases:
 El [[Algoritmo|algoritmo]] de ordenamiento por mezcla es un algoritmo de ordenamiento externo estable basado en la técnica [[Divide and Conquer|divide y vencerás]]. Es de [[Big O Notation|complejidad]] $O(n ~ log_2 n)$
 
 ```
-function MergeSort :: array: Integer[] n: Integer -> Interger[]
+function MergeSort :: array: Integer[], n: Integer -> Interger[]
     
     if n <= 1 then
         return array
     end
     
-    let arrayIzquierda = MergeSort array[0 : n / 2] (n / 2)
-    let arrayDerecha = MergeSort array[n / 2 : n] (n / 2)
+    let arrayIzquierda = MergeSort array[0 : n / 2], n/2
+    let arrayDerecha = MergeSort array[n / 2 : n], n/2
     
     let posIzquierda = 0
     let posDerecha = 0

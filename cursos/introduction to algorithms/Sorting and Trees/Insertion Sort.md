@@ -23,41 +23,16 @@ El ordenamiento por inserción es una manera muy natural de ordenar para un ser 
 Inicialmente, se tiene un solo elemento que, obviamente, es un [[Conjunto|conjunto]] ordenado. Después, cuando hay $k$ elementos ordenados de menor a mayor se toma el elemento $k + 1$ y se compara con todos los elementos ya ordenados, deteniéndose cuando se encuentra un elemento menor (todos los elementos mayores han sido desplazados una posición a la derecha) o cuando ya no se encuentran elementos (todos los elementos fueron desplazados y este es el más pequeño). En este punto se inserta el elemento $k + 1$ debiendo desplazarse los demás elementos<sup><a href="#ref-837" style="color: inherit; text-decoration: none;">[837]</a></sup>
 
 ```
-function InsertionSort :: array: Integer[] n: Integer -> Integer[]
-    function SelectionSort :: array: Integer[] n: Integer -> Interger[]
-    
-    if n <= 1 then
-        return array
+function InsertionSort :: array: Integer[], n: Integer -> Integer[]
+    for i in 1..n then
+        let j = i + 1
+        while j > 0 and array[j] > array[j - 1] then
+            Swap array[j], array[j - 1]
+            j -= 1
+        end    
     end
     
-    let arrayIzquierda = MergeSort array[0 : n / 2] (n / 2)
-    let arrayDerecha = MergeSort array[n / 2 : n] (n / 2)
-    
-    let posIzquierda = 0
-    let posDerecha = 0
-    let resultado: Integer[n]
-    
-    while (n / 2) > posIzquierda and (n / 2) > posDerecha then
-        if arrayIzquierda[posIzquierda] <= arrayDerecha[posDerecha] then
-            resultado[posIzquierda + posDerecha] = arrayIzquierda[posIzquierda]
-            posIzquierda += 1
-        else
-            resultado[posIzquierda + posDerecha] = arrayDerecha[posDerecha]
-            posDerecha += 1
-        end
-    end
-    
-    while (n / 2) > posIzquierda then
-        resultado[posIzquierda + posDerecha] = arrayIzquierda[posIzquierda]
-        posIzquierda += 1
-    end
-    
-    while (n / 2) > posDerecha then
-        resultado[posIzquierda + posDerecha] = arrayDerecha[posDerecha]
-        posDerecha += 1
-    end
-    
-    return resultado
+    return array
 end
 ```
 

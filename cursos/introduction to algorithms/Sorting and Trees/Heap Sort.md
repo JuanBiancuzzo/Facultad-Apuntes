@@ -26,9 +26,9 @@ Los pasos son
 
 
 ```
-function HeapSort :: array: Key[] n: Integer -> Key[]
+function HeapSort :: array: Key[], n: Integer -> Key[]
     
-    let heapfyArray = CrearMaxHeap array n
+    let heapfyArray = CrearMaxHeap array, n
     let arrayOrdenado: Key[] = []
     let indice = 0
     
@@ -42,7 +42,7 @@ function HeapSort :: array: Key[] n: Integer -> Key[]
         n -= 1
         
         // Reestablecemos la propiedad de Max-Heap
-        MaxHeapify array n 0    
+        MaxHeapify array, n, 0    
     end
     
     return arrayOrdenado
@@ -58,7 +58,7 @@ Actualmente ocupa $O(2n)$ en espacio de [[Memoria|memoria]] por crear el array o
 ```
 function HeapSort :: array: Key[] n: Integer -> void
     
-    let heapfyArray = CrearMinHeap array n
+    let heapfyArray = CrearMinHeap array, n
         
     while n > 0 then        
         // Intercambiamos el mínimo con el último
@@ -69,7 +69,7 @@ function HeapSort :: array: Key[] n: Integer -> void
         n -= 1
         
         // Reestablecemos la propiedad de min-Heap
-        MinHeapify array n 0    
+        MinHeapify array, n, 0    
     end
 end
 ```

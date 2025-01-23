@@ -110,7 +110,6 @@ async function actualizarDatos(tp, datos, respuesta) {
                 let subtema = subtemas.find(subtema => subtema[DATOS_SUBTEMA.nombre] == datos[SUBTEMA]);
                 if (subtema) {
                     let notas = dv.array(subtema[DATOS_SUBTEMA.nota.self]);
-                    datos[NUMERO] = 1;
                     if (notas.length > 0) {
                         datos[NUMERO] = notas.map(({ [DATOS_SUBTEMA.nota.numero]: numero }) => numero).max() + 1;
                     }
@@ -410,7 +409,7 @@ async function agregarDatos(tp, datos) {
 
     let numeroTema;
     if (tema) {
-        numeroTema[DATOS_TEMA.numero];
+        numeroTema = tema[DATOS_TEMA.numero];
     } else {
         let tTema = await crearArchivo.crear(tp, () => crearTema(tp, datos[TEMA]));
         await app.fileManager.processFrontMatter(tTema, (frontmatter) => {
@@ -460,7 +459,7 @@ function representacion(tp, datos) {
 
     const { callout, nombre, reducido } = BLOQUES_MATEMATICA[datos[CLASIFICACION]];
     if (datos[CLASIFICACION] == BLOQUES_MATEMATICA.bloques.demostracion) {
-        return `> [!${callout}]- ${nombre}\n`;
+        return `> [!${callout}]- ${nombre}`;
     }
 
     let nombreTemaTag = tp.user.tagPorNombre(datos[TEMA]);
@@ -484,7 +483,7 @@ function representacion(tp, datos) {
         extra = ` - [[${datos[PATH_RELACIONADO][BLOQUE_RELACIONADO][DATOS_SUBTEMA.nota.path]}|${describirBloque(tp, datos[PATH_RELACIONADO][BLOQUE_RELACIONADO])}]]`;
     }
 
-    return `> [!${callout}]+ ${nombre} ${numero} ${nombreBloque} ${extra}\n> \n^${reducido}-${numero.replaceAll(".", "-")}\n\n`;
+    return `\n> [!${callout}]+ ${nombre} ${numero} ${nombreBloque} ${extra}\n> \n^${reducido}-${numero.replaceAll(".", "-")}\n`;
 }
 
 module.exports = () => ({

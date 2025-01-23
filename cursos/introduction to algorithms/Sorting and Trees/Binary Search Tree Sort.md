@@ -10,6 +10,7 @@ tags:
 aliases:
   - Ordenamiento con árbol binario de búsqueda
   - BST Sort
+  - Ordenamiento con ABB
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
@@ -23,10 +24,10 @@ Los pasos son
 2. [[Árbol binario de búsqueda#InorderWalk|Recorrer]] el árbol y conseguir el array ordenado
 
 ```
-function BSTSort :: array: Key[] n: Integer -> Key[]
+function BSTSort :: array: Key[], n: Integer -> Key[]
     let tree = BuildTree
     for i in 0..n then
-        Insert tree array[i]
+        Insert tree, array[i]
     end
 
     return InorderWalk tree

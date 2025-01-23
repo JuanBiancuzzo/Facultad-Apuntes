@@ -22,7 +22,7 @@ Este [[Algoritmo de ordenamiento|método de ordenamiento]] es un [[Algoritmo|alg
 3. Se continua así hasta que todos los elementos del arreglo están ordenados
 
 ```
-function SelectionSort :: array: Integer[] n: Integer -> Interger[]
+function SelectionSort :: array: Integer[], n: Integer -> Interger[]
     
     for let i in 0 .. n - 1 then
         let posicionMenor = i
