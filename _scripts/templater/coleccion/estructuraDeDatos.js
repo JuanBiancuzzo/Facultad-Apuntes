@@ -180,13 +180,13 @@ function generarPreguntas(tp, datos) {
 
     for (let [indice, estructura] of datos[DATOS_ESTRUCTURA.estructuras].entries()) {
         opciones.push(`${MODIFICAR_ESTRUCTURA}-${indice}`);
-        valores.push(`️ ${SIMBOLOS.modificar} Modificar la estructura, donde es ${infoStruct.describir(tp, estructura)}`);
+        valores.push(`️ ${SIMBOLOS.modificar} Modificar la estructura, donde es: \n\t${infoStruct.describir(tp, estructura).replaceAll("\n", "\n\t")}`);
     }
 
     if (datos[DATOS_ESTRUCTURA.estructuras].length > 0) {
         let ultimaEstructura = datos[DATOS_ESTRUCTURA.estructuras].last();
         opciones.push(ELIMINAR_ESTRUCTURA);
-        valores.push(` ${SIMBOLOS.sacar} Eliminar la estructura, donde es ${infoStruct.describir(tp, ultimaEstructura)}`);
+        valores.push(` ${SIMBOLOS.sacar} Eliminar la estructura, donde es: \n\t${infoStruct.describir(tp, ultimaEstructura).replaceAll("\n", "\n\t")}`);
 
         opciones.push(DATOS_ESTRUCTURA.estructuras);
         valores.push(` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Estructura`);

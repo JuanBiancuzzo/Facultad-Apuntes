@@ -1,3 +1,7 @@
+const LENGUAJE_C = "c";
+const LENGUAJE_PYTHON = "python";
+const LENGUAJE_DEFAULT = "default";
+
 module.exports = () => ({
     CARACTERES_INVALIDOS: ['*', '"', '\\', '/', '<', '>', ':', '|', '?'],
     MESES: (mes) => [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" ][mes - 1],
@@ -77,8 +81,8 @@ module.exports = () => ({
                 self: "funciones",
                 lenguajes: {
                     self: "lenguaje",
-                    python: "Librerías-de-Python",
-                    c: "Librerías-de-C",
+                    [LENGUAJE_PYTHON]: "Librerías-de-Python",
+                    [LENGUAJE_C]: "Librerías-de-C",
                 },
                 libreria: "libreria",
                 modulo: "modulo",
@@ -141,8 +145,8 @@ module.exports = () => ({
             documentos: "documentos",
             funciones: {
                 self: "funciones",
-                python: "Lenguaje Python",
-                c: "Lenguaje C",
+                [LENGUAJE_PYTHON]: "Lenguaje Python",
+                [LENGUAJE_C]: "Lenguaje C",
             },
             libros: "libros",
             papers: "papers",
@@ -251,16 +255,36 @@ module.exports = () => ({
                 obtenerTitulo: (tema, subtema) => `${subtema} del tema ${tema}`,
             },
         },
+        LENGUAJE: {
+            lenguajes: {
+                python: LENGUAJE_PYTHON,
+                c: LENGUAJE_C,
+                default: LENGUAJE_DEFAULT,
+            },
+            [LENGUAJE_C]: {
+                nombre: "C",
+                multiplesTiposDatos: false,
+                parametroValorPorDefecto: false,
+                structHerencia: false,
+            },
+            [LENGUAJE_PYTHON]: {
+                nombre: "Python",
+                multiplesTiposDatos: true,
+                parametroValorPorDefecto: true,
+                structHerencia: true,
+            },
+            [LENGUAJE_DEFAULT]: {
+                nombre: "PseudoCodigo",
+                multiplesTiposDatos: true,
+                parametroValorPorDefecto: true,
+                structHerencia: true,
+            },
+        },
         FUNCIONES: {
             lenguaje: {
                 tags: "tags",
                 nombre: "nombreLenguaje",
                 temaInvestigacion: "temaInvestigacion",
-                lenguajes: {
-                    python: "Python",
-                    c: "C",
-                },
-                keyLenguaje: (lenguaje) => lenguaje.toLowerCase(),
                 obtenerTitulo: (lenguaje) => `Librerías del lenguaje de ${lenguaje}`,
             },
             libreria: {

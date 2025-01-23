@@ -77,8 +77,11 @@ async function actualizarDatos(tp, datos, respuesta, lenguaje = undefined) {
 }
 
 function generarPreguntas(tp, datos, lenguaje = undefined) {
-    const { SIMBOLOS, DATOS: { FUNCIONES: { struct: DATOS_STRUCT } } } = tp.user.constantes();
-    const { informacion: { tieneStructConHerencia } } = tp.user.lenguajes();
+    const { 
+        SIMBOLOS, DATOS: { FUNCIONES: { struct: DATOS_STRUCT }, LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } } 
+    } = tp.user.constantes();
+    if (!(lenguaje in LENGUAJES)) lenguaje = LENGUAJES.default;
+
     const infoParametro = tp.user.parametro();
     let opciones = [], valores = [];
 
@@ -112,7 +115,7 @@ function generarPreguntas(tp, datos, lenguaje = undefined) {
         valores.push(` ${SIMBOLOS.agregar} Campo`);
     }
 
-    if (tieneStructConHerencia(tp, lenguaje)) {
+    if (DATOS_LENGUAJES[lenguaje].structHerencia) {
         opciones.push(DATOS_STRUCT.herede);
         valores.push(datos[DATOS_STRUCT.herede]
             ? ` ${SIMBOLOS.modificar} Modificar la estructura de la que herede, donde era ${datos[DATOS_STRUCT.herede]}`
@@ -130,7 +133,7 @@ function generarPreguntas(tp, datos, lenguaje = undefined) {
 
 function describir(tp, datos, lenguaje = undefined) {
     const { 
-        DATOS: { FUNCIONES: { struct: DATOS_STRUCT, lenguaje: { lenguajes: DATOS_LENGUAJES } } },
+        DATOS: { FUNCIONES: { struct: DATOS_STRUCT }, LENGUAJE: { lenguajes: LENGUAJES } },
     } = tp.user.constantes();
     const infoParametro = tp.user.parametro();
 
@@ -140,14 +143,14 @@ function describir(tp, datos, lenguaje = undefined) {
         .map(param => infoParametro.describir(tp, param, lenguaje));
 
     switch (lenguaje) {
-        case DATOS_LENGUAJES.python:
-            return `class ${nombre}${herencia ? `(${herencia})` : ""}: ${parametros.join(", ")}`;
+        case LENGUAJES.python:
+            return `class ${nombre}${herencia ? `(${herencia})` : ""}:\n\t${parametros.join("\n\t")}`;
 
-        case DATOS_LENGUAJES.c:
-            return `struct ${nombre} { ${parametros.join("; ")} }`;
+        case LENGUAJES.c:
+            return `struct ${nombre} { \n\t${parametros.join(";\n\t")} \n };`;
 
         default:
-            return `struct ${nombre}${herencia ? ` :: ${herencia}` : ""} then ${parametros.join(" ")} end`;
+            return `struct ${nombre}${herencia ? ` :: ${herencia}` : ""} then\n\t${parametros.join("\n\t")}\nend`;
     }
 }
 

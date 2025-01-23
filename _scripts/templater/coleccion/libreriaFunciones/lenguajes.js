@@ -136,7 +136,10 @@ function esValido(tp, datos, lenguaje = undefined) {
 
 function describir(tp, datos, lenguaje = undefined) {
     const { 
-        DATOS: { FUNCIONES: { lenguaje: { lenguajes: DATOS_LENGUAJES }, funcion: { firma: DATOS_FIRMA } } }
+        DATOS: { 
+            FUNCIONES: { funcion: { firma: DATOS_FIRMA } }, 
+            LENGUAJE: { lenguajes: LENGUAJES },
+        }
     } = tp.user.constantes();
     const infoParametro = tp.user.parametro();
     const infoReturn = tp.user.return();
@@ -146,10 +149,10 @@ function describir(tp, datos, lenguaje = undefined) {
     let returnValue = infoReturn.describir(tp, datos[DATOS_FIRMA.return], lenguaje)
 
     switch (lenguaje) {
-        case DATOS_LENGUAJES.python:
+        case LENGUAJES.python:
             return `def ${nombre}(${parametros.join(", ")}) -> ${returnValue}`;
 
-        case DATOS_LENGUAJES.c:
+        case LENGUAJES.c:
             return `${returnValue} ${nombre}(${parametros.join(", ")})`;
 
         default:
@@ -158,47 +161,12 @@ function describir(tp, datos, lenguaje = undefined) {
 }
 
 function defaultTipoDato(tp, TIPOS_DE_DEFAULT, lenguaje = undefined) {
-    return tieneMultiplesTiposDeDatos(tp, lenguaje)
+    const { DATOS: { LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } } } = tp.user.constantes();
+    if (!(lenguaje in LENGUAJES)) lenguaje = LENGUAJES.default;
+
+    return DATOS_LENGUAJES[lenguaje].tieneMultiplesTiposDeDatos
         ? TIPOS_DE_DEFAULT.array
         : TIPOS_DE_DEFAULT.simple;
-}
-
-function tieneMultiplesTiposDeDatos(tp, lenguaje = undefined) {
-    const { DATOS: { FUNCIONES: { lenguaje: { lenguajes: DATOS_LENGUAJES } } } } = tp.user.constantes();
-
-    switch (lenguaje) {
-        case DATOS_LENGUAJES.c: 
-            return false;
-        
-        case DATOS_LENGUAJES.python: 
-        default: return true;
-    }
-}
-
-function tieneParametroConValorPorDefecto(tp, lenguaje = undefined) {
-    const { DATOS: { FUNCIONES: { lenguaje: { lenguajes: DATOS_LENGUAJES } } } } = tp.user.constantes();
-
-    switch (lenguaje) {
-        case DATOS_LENGUAJES.c: 
-            return false;
-
-        case DATOS_LENGUAJES.python:
-        default:
-            return true;
-    }
-}
-
-function tieneStructConHerencia(tp, lenguaje = undefined) {
-    const { DATOS: { FUNCIONES: { lenguaje: { lenguajes: DATOS_LENGUAJES } } } } = tp.user.constantes();
-
-    switch (lenguaje) {
-        case DATOS_LENGUAJES.c: 
-            return false;
-
-        case DATOS_LENGUAJES.python:
-        default:
-            return true;
-    }
 }
 
 module.exports = () => ({
@@ -223,8 +191,5 @@ module.exports = () => ({
     esValido: esValido,
     informacion: {
         defaultTipoDato,
-        tieneMultiplesTiposDeDatos,
-        tieneParametroConValorPorDefecto,
-        tieneStructConHerencia,
     }
 });

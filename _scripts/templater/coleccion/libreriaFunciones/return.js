@@ -4,8 +4,10 @@ const ELIMINAR_TIPO_DATO = "eliminar tipo dato";
 const SALIR = "salir";
 
 async function actualizarDatos(tp, datos, respuesta, lenguaje = undefined) {
-    const { DATOS: { FUNCIONES: { return: DATOS_RETURN } } } = tp.user.constantes();
-    const { informacion: { tieneMultiplesTiposDeDatos } } = tp.user.lenguajes();
+    const { 
+        DATOS: { FUNCIONES: { return: DATOS_RETURN }, LENGUAJE: { lenguajes: LENGUAJE, ...DATOS_LENGUAJES } } 
+    } = tp.user.constantes(); 
+    if (!(lenguaje in LENGUAJE)) lenguaje = LENGUAJE.default;
 
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
@@ -36,13 +38,13 @@ async function actualizarDatos(tp, datos, respuesta, lenguaje = undefined) {
 
         case DATOS_RETURN.tipoDeDato:
             let tipoDato = await preguntar.prompt(
-                tp, (tieneMultiplesTiposDeDatos(tp, lenguaje) && datos[DATOS_RETURN.tipoDeDato].length > 0) 
+                tp, (DATOS_LENGUAJES[lenguaje].multiplesTiposDatos && datos[DATOS_RETURN.tipoDeDato].length > 0) 
                     ? `Tipo de dato del parámetro, donde las otras son ${datos[DATOS_RETURN.tipoDeDato].join(", ")}`
                     : "Tipo de dato del parámetro", 
                 error.Quit("No se ingresó el tipo de dato del parámetro")
             );
 
-            if (tieneMultiplesTiposDeDatos(tp, lenguaje)) {
+            if (DATOS_LENGUAJES[lenguaje].multiplesTiposDatos) {
                 datos[DATOS_RETURN.tipoDeDato].push(tipoDato);
             } else {
                 datos[DATOS_RETURN.tipoDeDato] = tipoDato;
@@ -62,8 +64,14 @@ async function actualizarDatos(tp, datos, respuesta, lenguaje = undefined) {
 }
 
 function generarPreguntas(tp, datos, lenguaje = undefined) {
-    const { SIMBOLOS, DATOS: { FUNCIONES: { return: DATOS_RETURN } } } = tp.user.constantes();
-    const { informacion: { tieneMultiplesTiposDeDatos } } = tp.user.lenguajes();
+    const { 
+        SIMBOLOS, DATOS: { 
+            FUNCIONES: { return: DATOS_RETURN }, 
+            LENGUAJE: { lenguajes: LENGUAJE, ...DATOS_LENGUAJES } 
+        } 
+    } = tp.user.constantes(); 
+    if (!(lenguaje in LENGUAJE)) lenguaje = LENGUAJE.default;
+
     let opciones = [], valores = [];
 
     opciones.push(DATOS_RETURN.descripcion);
@@ -72,7 +80,7 @@ function generarPreguntas(tp, datos, lenguaje = undefined) {
         : ` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Descripción del valor de retorno`
     )
 
-    if (tieneMultiplesTiposDeDatos(tp, lenguaje)) {
+    if (DATOS_LENGUAJES[lenguaje].multiplesTiposDatos) {
         for (let [indice, tipoDeDato] of datos[DATOS_RETURN.tipoDeDato].entries()) {
             opciones.push(`${MODIFICAR_TIPO_DATO}-${indice}`);
             valores.push(`️ ${SIMBOLOS.modificar} Modificar el tipo de dato, donde es ${tipoDeDato}`);
@@ -109,26 +117,26 @@ function generarPreguntas(tp, datos, lenguaje = undefined) {
 
 function describir(tp, returnValue, lenguaje = undefined) {
     const { 
-        DATOS: { FUNCIONES: { return: DATOS_RETURN, lenguaje: { lenguajes: DATOS_LENGUAJES } } },
-    } = tp.user.constantes();
-    const { informacion: { tieneMultiplesTiposDeDatos } } = tp.user.lenguajes();
+        DATOS: { FUNCIONES: { return: DATOS_RETURN }, LENGUAJE: { lenguajes: LENGUAJE, ...DATOS_LENGUAJES } } 
+    } = tp.user.constantes(); 
+    if (!(lenguaje in LENGUAJE)) lenguaje = LENGUAJE.default;
 
     let descripcionReturn;
     switch (lenguaje) {
-        case DATOS_LENGUAJES.python:
+        case LENGUAJE.python:
             descripcionReturn = returnValue[DATOS_RETURN.tipoDeDato];
-            if (tieneMultiplesTiposDeDatos(tp, lenguaje)) {
+            if (DATOS_LENGUAJES[lenguaje].multiplesTiposDatos) {
                 descripcionReturn = `${returnValue[DATOS_RETURN.tipoDeDato].join(" | ")}`;
             }
             break;
 
-        case DATOS_LENGUAJES.c:
+        case LENGUAJE.c:
             descripcionReturn = returnValue[DATOS_RETURN.tipoDeDato];
             break;
 
         default:
             descripcionReturn = returnValue[DATOS_RETURN.tipoDeDato];
-            if (tieneMultiplesTiposDeDatos(tp, lenguaje)) {
+            if (DATOS_LENGUAJES[lenguaje].multiplesTiposDatos) {
                 descripcionReturn = `${returnValue[DATOS_RETURN.tipoDeDato].join(" | ")}`;
                 if (returnValue[DATOS_RETURN.tipoDeDato].length > 1) {
                     descripcionReturn = `(${descripcionReturn})`;
@@ -140,16 +148,18 @@ function describir(tp, returnValue, lenguaje = undefined) {
 }
 
 function esValido(tp, datos, lenguaje = undefined) {
-    const { DATOS: { FUNCIONES: { return: DATOS_RETURN } } } = tp.user.constantes(); 
-    const { informacion: { tieneMultiplesTiposDeDatos } } = tp.user.lenguajes();
+    const { 
+        DATOS: { FUNCIONES: { return: DATOS_RETURN }, LENGUAJE: { lenguajes: LENGUAJE, ...DATOS_LENGUAJES } } 
+    } = tp.user.constantes(); 
+    if (!(lenguaje in LENGUAJE)) lenguaje = LENGUAJE.default;
 
     let DATOS_SIMPLES = [];
-    if (!tieneMultiplesTiposDeDatos(tp, lenguaje)) {
+    if (!DATOS_LENGUAJES[lenguaje].tieneMultiplesTiposDeDatos) {
         DATOS_SIMPLES.push(DATOS_RETURN.tipoDeDato);
     }
 
     return DATOS_SIMPLES.every(key => datos[key]) 
-        && (!tieneMultiplesTiposDeDatos(tp, lenguaje) || datos[DATOS_RETURN.tipoDeDato].length > 0);
+        && !(DATOS_LENGUAJES[lenguaje].tieneMultiplesTiposDeDatos && datos[DATOS_RETURN.tipoDeDato].length == 0);
 }
 
 module.exports = () => ({

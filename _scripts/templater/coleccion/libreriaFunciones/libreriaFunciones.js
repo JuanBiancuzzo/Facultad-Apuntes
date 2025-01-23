@@ -18,7 +18,7 @@ function obtenerDefault(tp, TIPOS_DE_DEFAULT, crearFuncion) {
 
 async function actualizarDatos(tp, datos, respuesta) {
     const { 
-        SIMBOLOS, DATOS: { FUNCIONES: DATOS_FUNCIONES },
+        SIMBOLOS, DATOS: { FUNCIONES: DATOS_FUNCIONES, LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJE } },
         TAGS: { coleccion: { self: TAG_COLECCION, funciones: TAGS_FUNCIONES } }, 
     } = tp.user.constantes(); 
 
@@ -27,17 +27,18 @@ async function actualizarDatos(tp, datos, respuesta) {
     const error = tp.user.error();
     const dv = app.plugins.plugins.dataview.api;
 
-    let resultado, tagAcumulado, keyLenguaje, lenguajes, librerias, modulos;
+    let resultado, tagAcumulado, lenguajes, librerias, modulos;
     let salir = false;
 
     switch (respuesta) {
         case LENGUAJE:
-            lenguajes = Object.values(DATOS_FUNCIONES.lenguaje.lenguajes);
+            lenguajes = Object.values(LENGUAJES);
+            lenguajes.remove(LENGUAJES.default);
 
             resultado = lenguajes.first();
             if (lenguajes.length > 1) {
                 resultado = await preguntar.suggester(
-                    tp, (lenguaje) => `Lenguaje ${lenguaje}`, lenguajes,
+                    tp, (lenguaje) => `Lenguaje ${DATOS_LENGUAJE[lenguaje].nombre}`, lenguajes,
                     "Como se llama el lenguaje?",
                     error.Prompt("No se ingresó el lenguaje")
                 );
@@ -47,8 +48,7 @@ async function actualizarDatos(tp, datos, respuesta) {
             break;
 
         case LIBRERIA:
-            keyLenguaje = DATOS_FUNCIONES.lenguaje.keyLenguaje(datos[LENGUAJE]);
-            tagAcumulado = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[keyLenguaje]}`;
+            tagAcumulado = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[datos[LENGUAJE]]}`;
             librerias = dv.pages(`#${tagAcumulado} and #${TAG_COLECCION}/${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.libreria}`)
                 .map(libreria => libreria[DATOS_FUNCIONES.libreria.nombre]);
 
@@ -73,8 +73,7 @@ async function actualizarDatos(tp, datos, respuesta) {
             break;
 
         case MODULO:
-            keyLenguaje = DATOS_FUNCIONES.lenguaje.keyLenguaje(datos[LENGUAJE]);
-            tagAcumulado = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[keyLenguaje]}/${tagPorNombre(datos[LIBRERIA])}`;
+            tagAcumulado = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[datos[LENGUAJE].nombre]}/${tagPorNombre(datos[LIBRERIA])}`;
             modulos = dv.pages(`#${tagAcumulado} and #${TAG_COLECCION}/${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.modulo}`)
                 .map(modulo => modulo[DATOS_FUNCIONES.modulo.nombre]);
 
@@ -118,7 +117,7 @@ async function actualizarDatos(tp, datos, respuesta) {
 }
 
 function generarPreguntas(tp, datos) {
-    const { SIMBOLOS } = tp.user.constantes(); 
+    const { SIMBOLOS, DATOS: { LENGUAJE: DATOS_LENGUAJE } } = tp.user.constantes(); 
     const preguntasLenguaje = tp.user.lenguajes();
 
     const usoLenguaje = tp.user.lenguajes();
@@ -128,7 +127,7 @@ function generarPreguntas(tp, datos) {
     if (!datos[LENGUAJE]) {
         valores.push(` ${SIMBOLOS.agregar} Lenguaje`);
     } else {
-        valores.push(` ${SIMBOLOS.modificar} Modificar el lenguaje, donde era ${datos[LENGUAJE]}`);
+        valores.push(` ${SIMBOLOS.modificar} Modificar el lenguaje, donde era ${DATOS_LENGUAJE[datos[LENGUAJE]].nombre}`);
 
         opciones.push(LIBRERIA);
         if (!datos[LIBRERIA]) {
@@ -145,7 +144,7 @@ function generarPreguntas(tp, datos) {
 
         opciones.push(FUNCION);
         valores.push(preguntasLenguaje.esValido(tp, datos[FUNCION], datos[LENGUAJE])
-            ? ` ${SIMBOLOS.modificar} Modificar la función, donde era ${usoLenguaje.describir(tp, datos[FUNCION], datos[LENGUAJE])}`
+            ? ` ${SIMBOLOS.modificar} Modificar la función, donde era:\n\t${usoLenguaje.describir(tp, datos[FUNCION], datos[LENGUAJE]).replaceAll("\n", "\n\t")}`
             : ` ${SIMBOLOS.agregar} Función`
         )
     }
@@ -175,17 +174,15 @@ async function crearNuevaFuncion(tp) {
 
     await agregarDatos(tp, resultado);
 
-    let keyLenguaje = DATOS_FUNCIONES.lenguaje.keyLenguaje(resultado[LENGUAJE]);
-
     let nombreArchivo = `Función ${resultado[FUNCION][DATOS_FUNCIONES.funcion.firma.nombreFuncion]}`
-    let tagPath = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[keyLenguaje]}`;
+    let tagPath = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[resultado[LENGUAJE]]}`;
     let dvLenguaje = dv.pages(`#${tagPath} and #${TAG_COLECCION}/${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes.self}`)
         .first();
     dvLenguaje = dv.page(dvLenguaje[DATOS_FUNCIONES.lenguaje.temaInvestigacion].path);
     let tagsInvestigacion = tp.user.obtenerTag(tp, dvLenguaje[DATOS_INVESTIGACION.tags])
-        .map(tag => `${tag}/${TAGS_FUNCIONES.lenguajes[keyLenguaje]}`);
+        .map(tag => `${tag}/${TAGS_FUNCIONES.lenguajes[resultado[LENGUAJE]]}`);
 
-    let carpeta = `${DIRECTORIO_COLECCION}/${DIRECTORIO_FUNCIONES.self}/${DIRECTORIO_FUNCIONES[keyLenguaje]}`;
+    let carpeta = `${DIRECTORIO_COLECCION}/${DIRECTORIO_FUNCIONES.self}/${DIRECTORIO_FUNCIONES[resultado[LENGUAJE]]}`;
 
     carpeta += `/${resultado[LIBRERIA]}`;
     tagPath += `/${tagPorNombre(resultado[LIBRERIA])}`;
@@ -224,14 +221,12 @@ async function crearLibreria(tp, lenguaje, libreria) {
         TEMPLATE: { coleccion: TEMPLATE_COLECCION }, 
         DIRECTORIOS: { coleccion: DIR_COLECCION },
         TAGS: { coleccion: { self: TAG_COLECCION, funciones: TAGS_FUNCIONES }, investigacion: TAGS_INVESTIGACION  }, 
-        DATOS: { FUNCIONES: DATOS_FUNCIONES, INVESTIGACION: DATOS_INVESTIGACION },
+        DATOS: { FUNCIONES: DATOS_FUNCIONES, INVESTIGACION: DATOS_INVESTIGACION, LENGUAJE: DATOS_LENGUAJE },
     } = tp.user.constantes();
     const tagPorNombre = tp.user.tagPorNombre;
     const dv = app.plugins.plugins.dataview.api;
 
-    let keyLenguaje = DATOS_FUNCIONES.lenguaje.keyLenguaje(lenguaje);
-
-    let tagPath = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[keyLenguaje]}`;
+    let tagPath = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[lenguaje]}`;
     let tagFuncion = `${TAG_COLECCION}/${TAGS_FUNCIONES.self}`;
     let dvLenguaje = dv.pages(`#${tagPath} and #${tagFuncion}/${TAGS_FUNCIONES.lenguajes.self}`)
         .first();
@@ -240,7 +235,7 @@ async function crearLibreria(tp, lenguaje, libreria) {
     let tags = [`${tagPath}/${tagPorNombre(libreria)}`, `${tagFuncion}/${TAGS_FUNCIONES.libreria}`];
     if (dvLenguaje) {
         let tagsInvestigacion = tp.user.obtenerTag(tp, dvLenguaje[DATOS_INVESTIGACION.tags])
-            .map(tag => `${tag}/${TAGS_FUNCIONES.lenguajes[keyLenguaje]}/${tagPorNombre(`${libreria}`)}`);
+            .map(tag => `${tag}/${TAGS_FUNCIONES.lenguajes[lenguaje]}/${tagPorNombre(`${libreria}`)}`);
         
         tags.push(`${TAGS_INVESTIGACION.self}/${TAGS_INVESTIGACION.indice}`);
         tags = tags.concat(tagsInvestigacion);
@@ -252,7 +247,7 @@ async function crearLibreria(tp, lenguaje, libreria) {
             [DATOS_FUNCIONES.libreria.nombre]: libreria,
         },
         carpeta: `${DIR_COLECCION.self}/${DIR_COLECCION.funciones.self}/${DIR_COLECCION.funciones[keyLenguaje]}/${libreria}`,
-        titulo: DATOS_FUNCIONES.libreria.obtenerTitulo(lenguaje, libreria),
+        titulo: DATOS_FUNCIONES.libreria.obtenerTitulo(DATOS_LENGUAJE[lenguaje].nombre, libreria),
         texto: await tp.file.include(`[[${TEMPLATE_COLECCION.funciones.libreria}]]`),
     };
 }
@@ -262,14 +257,12 @@ async function crearModulo(tp, lenguaje, libreria, modulo) {
         TEMPLATE: { coleccion: TEMPLATE_COLECCION }, 
         DIRECTORIOS: { coleccion: DIR_COLECCION },
         TAGS: { coleccion: { self: TAG_COLECCION, funciones: TAGS_FUNCIONES }, investigacion: TAGS_INVESTIGACION  }, 
-        DATOS: { FUNCIONES: DATOS_FUNCIONES, INVESTIGACION: DATOS_INVESTIGACION },
+        DATOS: { FUNCIONES: DATOS_FUNCIONES, INVESTIGACION: DATOS_INVESTIGACION, LENGUAJE: DATOS_LENGUAJE },
     } = tp.user.constantes();
     const tagPorNombre = tp.user.tagPorNombre;
     const dv = app.plugins.plugins.dataview.api;
 
-    let keyLenguaje = DATOS_FUNCIONES.lenguaje.keyLenguaje(lenguaje);
-
-    let tagPath = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[keyLenguaje]}`;
+    let tagPath = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[lenguaje]}`;
     let tagFuncion = `${TAG_COLECCION}/${TAGS_FUNCIONES.self}`;
     let dvLenguaje = dv.pages(`#${tagPath} and #${tagFuncion}/${TAGS_FUNCIONES.lenguajes.self}`)
         .first();
@@ -278,7 +271,7 @@ async function crearModulo(tp, lenguaje, libreria, modulo) {
     let tags = [`${tagPath}/${tagPorNombre(`${libreria}/${modulo}`)}`, `${tagFuncion}/${TAGS_FUNCIONES.modulo}`];
     if (dvLenguaje) {
         let tagsInvestigacion = tp.user.obtenerTag(tp, dvLenguaje[DATOS_INVESTIGACION.tags])
-            .map(tag => `${tag}/${TAGS_FUNCIONES.lenguajes[keyLenguaje]}/${tagPorNombre(`${libreria}/${modulo}`)}`);
+            .map(tag => `${tag}/${TAGS_FUNCIONES.lenguajes[lenguaje]}/${tagPorNombre(`${libreria}/${modulo}`)}`);
         
         tags.push(`${TAGS_INVESTIGACION.self}/${TAGS_INVESTIGACION.indice}`);
         tags = tags.concat(tagsInvestigacion);
@@ -288,7 +281,7 @@ async function crearModulo(tp, lenguaje, libreria, modulo) {
         .first();
     let carpetaLibreria = dvLibreria
         ? dvLibreria.file.folder
-        : `${DIR_COLECCION.self}/${DIR_COLECCION.funciones.self}/${DIR_COLECCION.funciones[keyLenguaje]}/${libreria}`;
+        : `${DIR_COLECCION.self}/${DIR_COLECCION.funciones.self}/${DIR_COLECCION.funciones[lenguaje]}/${libreria}`;
 
     return {
         metadata: {
@@ -296,7 +289,7 @@ async function crearModulo(tp, lenguaje, libreria, modulo) {
             [DATOS_FUNCIONES.modulo.nombre]: modulo,
         },
         carpeta: `${carpetaLibreria}/${modulo}`,
-        titulo: DATOS_FUNCIONES.modulo.obtenerTitulo(lenguaje, libreria, modulo),
+        titulo: DATOS_FUNCIONES.modulo.obtenerTitulo(DATOS_LENGUAJE[lenguaje].nombre, libreria, modulo),
         texto: await tp.file.include(`[[${TEMPLATE_COLECCION.funciones.modulo}]]`),
     };
 }
