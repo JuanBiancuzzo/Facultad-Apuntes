@@ -1,9 +1,8 @@
-const MODIFICAR_PARAMETRO = "modificar parametro";
 const ELIMINAR_PARAMETRO = "eliminar parametro";
 
 const SALIR = "salir";
 
-async function actualizarDatos(tp, datos, respuesta, lenguaje = undefined) {
+async function actualizarDatos(tp, datos, respuestaDada, lenguaje = undefined) {
     const { DATOS: { FUNCIONES: { funcion: { firma: DATOS_FIRMA } } } } = tp.user.constantes(); 
     const infoParametro = tp.user.parametro();
     const infoReturn = tp.user.return();
@@ -12,9 +11,7 @@ async function actualizarDatos(tp, datos, respuesta, lenguaje = undefined) {
     const error = tp.user.error();
 
     let salir = false;
-    let separacion = respuesta.split("-");
-    respuesta = separacion[0];
-    let indice;
+    let [ respuesta, indice ] = respuestaDada.split("-");
 
     switch (respuesta) {
         case DATOS_FIRMA.nombreFuncion: 
@@ -34,9 +31,6 @@ async function actualizarDatos(tp, datos, respuesta, lenguaje = undefined) {
                 error.Quit("No se ingresó la descripción de la función")
             );
             break;
-
-        case MODIFICAR_PARAMETRO:
-            indice = separacion[1];
 
         case DATOS_FIRMA.parametros: 
             let parametroPrevio;
@@ -80,9 +74,16 @@ async function actualizarDatos(tp, datos, respuesta, lenguaje = undefined) {
 }
 
 function generarPreguntas(tp, datos, lenguaje = undefined) {
-    const { SIMBOLOS, DATOS: { FUNCIONES: { funcion: { firma: DATOS_FIRMA } } } } = tp.user.constantes(); 
+    const { 
+        SIMBOLOS, DATOS: { 
+            FUNCIONES: { funcion: { firma: DATOS_FIRMA } }, 
+            LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } 
+        } 
+    } = tp.user.constantes(); 
     const infoParametro = tp.user.parametro();
     const infoReturn = tp.user.return();
+    if (!(lenguaje in LENGUAJES)) lenguaje = LENGUAJES.default;
+
     let opciones = [], valores = [];
 
     opciones.push(DATOS_FIRMA.nombreFuncion);
@@ -98,7 +99,7 @@ function generarPreguntas(tp, datos, lenguaje = undefined) {
     )
 
     for (let [indice, parametro] of datos[DATOS_FIRMA.parametros].entries()) {
-        opciones.push(`${MODIFICAR_PARAMETRO}-${indice}`);
+        opciones.push(`${DATOS_FIRMA.parametros}-${indice}`);
         valores.push(`️ ${SIMBOLOS.modificar} Modificar el parámetro, donde es ${infoParametro.describir(tp, parametro, lenguaje)}`);
     }
 
@@ -112,10 +113,11 @@ function generarPreguntas(tp, datos, lenguaje = undefined) {
     opciones.push(DATOS_FIRMA.parametros);
     valores.push(` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Parámetro`);
 
+    let simboloReturnOpcional = DATOS_LENGUAJES[lenguaje].returnOpcional ? `${SIMBOLOS.opcional} ` : "";
     opciones.push(DATOS_FIRMA.return);
     valores.push(infoReturn.esValido(tp, datos[DATOS_FIRMA.return], lenguaje)
         ? ` ${SIMBOLOS.modificar} Modificar el valor de retorno de la función, donde era ${infoReturn.describir(tp, datos[DATOS_FIRMA.return], lenguaje)}`
-        : ` ${SIMBOLOS.agregar} Valor de retorno de la función`
+        : ` ${SIMBOLOS.agregar} ${simboloReturnOpcional}Valor de retorno de la función`
     )
 
     if (esValido(tp, datos, lenguaje)) {
@@ -127,14 +129,21 @@ function generarPreguntas(tp, datos, lenguaje = undefined) {
 }
 
 function esValido(tp, datos, lenguaje = undefined) {
-    const { DATOS: { FUNCIONES: { funcion: { firma: DATOS_FIRMA } } } } = tp.user.constantes(); 
-    const infoReturn = tp.user.return();
+    if (!datos) return false;
 
-    return infoReturn.esValido(tp, datos[DATOS_FIRMA.return], lenguaje) 
+    const { 
+        DATOS: { FUNCIONES: { funcion: { firma: DATOS_FIRMA } }, LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } } 
+    } = tp.user.constantes(); 
+    const infoReturn = tp.user.return();
+    if (!(lenguaje in LENGUAJES)) lenguaje = LENGUAJES.default;
+
+    return (infoReturn.esValido(tp, datos[DATOS_FIRMA.return], lenguaje) || DATOS_LENGUAJES[lenguaje].returnOpcional)
         && [DATOS_FIRMA.nombreFuncion, DATOS_FIRMA.descripcion].every(key => datos[key]);
 }
 
 function describir(tp, datos, lenguaje = undefined) {
+    if (!esValido(tp, datos, lenguaje)) return "";
+
     const { 
         DATOS: { 
             FUNCIONES: { funcion: { firma: DATOS_FIRMA } }, 
@@ -148,23 +157,46 @@ function describir(tp, datos, lenguaje = undefined) {
     let parametros = datos[DATOS_FIRMA.parametros].map(param => infoParametro.describir(tp, param, lenguaje));
     let returnValue = infoReturn.describir(tp, datos[DATOS_FIRMA.return], lenguaje)
 
+    let descripcion = "";
     switch (lenguaje) {
         case LENGUAJES.python:
-            return `def ${nombre}(${parametros.join(", ")}) -> ${returnValue}`;
+            descripcion = `def ${nombre}(${parametros.join(", ")})`;
+            if (infoReturn.esValido(tp, datos[DATOS_FIRMA.return], lenguaje)) {
+                descripcion += ` -> ${returnValue}`;
+            }
+            break;
 
         case LENGUAJES.c:
-            return `${returnValue} ${nombre}(${parametros.join(", ")})`;
+            descripcion = `${returnValue} ${nombre}(${parametros.join(", ")})`;
+            break;
+
+        case LENGUAJES.rust:
+            descripcion = `fn ${nombre}(${parametros.join(", ")})`;
+            if (infoReturn.esValido(tp, datos[DATOS_FIRMA.return], lenguaje)) {
+                descripcion += ` -> ${returnValue}`;
+            }
+            break;
 
         default:
-            return `function ${nombre} :: ${parametros.join(" ")} -> ${returnValue}`;
+            descripcion = `function ${nombre} :: `;
+            descripcion = datos[DATOS_FIRMA.parametros].length > 0
+                ? parametros.join(", ")
+                : "()";
+
+            if (infoReturn.esValido(tp, datos[DATOS_FIRMA.return], lenguaje)) {
+                descripcion += ` -> ${returnValue}`;
+            };
+            break;
     }
+
+    return descripcion;
 }
 
 function defaultTipoDato(tp, TIPOS_DE_DEFAULT, lenguaje = undefined) {
     const { DATOS: { LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } } } = tp.user.constantes();
     if (!(lenguaje in LENGUAJES)) lenguaje = LENGUAJES.default;
 
-    return DATOS_LENGUAJES[lenguaje].tieneMultiplesTiposDeDatos
+    return DATOS_LENGUAJES[lenguaje].multiplesTiposDatos
         ? TIPOS_DE_DEFAULT.array
         : TIPOS_DE_DEFAULT.simple;
 }

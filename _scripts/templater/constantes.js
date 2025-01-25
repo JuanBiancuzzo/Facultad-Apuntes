@@ -1,5 +1,6 @@
 const LENGUAJE_C = "c";
 const LENGUAJE_PYTHON = "python";
+const LENGUAJE_RUST = "rust";
 const LENGUAJE_DEFAULT = "default";
 
 module.exports = () => ({
@@ -83,6 +84,7 @@ module.exports = () => ({
                     self: "lenguaje",
                     [LENGUAJE_PYTHON]: "Librerías-de-Python",
                     [LENGUAJE_C]: "Librerías-de-C",
+                    [LENGUAJE_RUST]: "Librerías-de-Rust",
                 },
                 libreria: "libreria",
                 modulo: "modulo",
@@ -147,6 +149,7 @@ module.exports = () => ({
                 self: "funciones",
                 [LENGUAJE_PYTHON]: "Lenguaje Python",
                 [LENGUAJE_C]: "Lenguaje C",
+                [LENGUAJE_RUST]: "Lenguaje Rust",
             },
             libros: "libros",
             papers: "papers",
@@ -259,25 +262,48 @@ module.exports = () => ({
             lenguajes: {
                 python: LENGUAJE_PYTHON,
                 c: LENGUAJE_C,
+                rust: LENGUAJE_RUST,
                 default: LENGUAJE_DEFAULT,
             },
             [LENGUAJE_C]: {
                 nombre: "C",
                 multiplesTiposDatos: false,
                 parametroValorPorDefecto: false,
+                returnOpcional: false,
                 structHerencia: false,
+                genericos: false,
+                tieneTupla: false,
+                arrayConCantidad: true,
             },
             [LENGUAJE_PYTHON]: {
                 nombre: "Python",
                 multiplesTiposDatos: true,
                 parametroValorPorDefecto: true,
+                returnOpcional: true,
                 structHerencia: true,
+                genericos: false,
+                tieneTupla: true,
+                arrayConCantidad: false,
+            },
+            [LENGUAJE_RUST]: {
+                nombre: "Rust",
+                multiplesTiposDatos: false,
+                parametroValorPorDefecto: false,
+                returnOpcional: true,
+                structHerencia: false,
+                genericos: true,
+                tieneTupla: true,
+                arrayConCantidad: true,
             },
             [LENGUAJE_DEFAULT]: {
                 nombre: "PseudoCodigo",
                 multiplesTiposDatos: true,
                 parametroValorPorDefecto: true,
+                returnOpcional: true,
                 structHerencia: true,
+                genericos: true,
+                tieneTupla: true,
+                arrayConCantidad: true,
             },
         },
         FUNCIONES: {
@@ -319,9 +345,31 @@ module.exports = () => ({
                 campos: "campos",
                 herede: "herencia",
             },
+            interfaz: {
+                nombre: "nombre",
+                metodos: "metodos",
+            },
+            array: {
+                tipoDeDato: "type",
+                cantidad: "cantidad",
+            },
             return: {
                 tipoDeDato: "type",
                 descripcion: "descripcion",
+            },
+            tipoDeDato: {
+                tipo: {
+                    self: "type",
+                    primitivo: "Primitivo",
+                    compuesto: {
+                        tupla: "Tupla",
+                        array: "Array",
+                        struct: "Struct",
+                        // enum: "Enum",
+                    },
+                    generico: "Generico",
+                },
+                valor: "valor",
             },
         },
         ESTRUCTURA_DATOS: {

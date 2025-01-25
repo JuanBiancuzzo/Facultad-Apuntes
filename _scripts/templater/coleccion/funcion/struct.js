@@ -3,16 +3,14 @@ const ELIMINAR_CAMPO = "eliminar campo";
 
 const SALIR = "salir";
 
-async function actualizarDatos(tp, datos, respuesta, lenguaje = undefined) {
+async function actualizarDatos(tp, datos, respuestaDada, lenguaje = undefined) {
     const { DATOS: { FUNCIONES: { struct: DATOS_STRUCT } } } = tp.user.constantes();
 
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
 
     let salir = false;
-    let separacion = respuesta.split("-");
-    respuesta = separacion[0];
-    let indice;
+    let [ respuesta, indice ] = respuestaDada.split("-");
 
     switch (respuesta) {
         case DATOS_STRUCT.nombreStruct: 
@@ -123,7 +121,7 @@ function generarPreguntas(tp, datos, lenguaje = undefined) {
         );
     }
 
-    if (esValido(tp, datos)) {
+    if (esValido(tp, datos, lenguaje)) {
         opciones.push(SALIR);
         valores.push(` ${SIMBOLOS.volver} Confirmar datos`);
     }
@@ -132,6 +130,8 @@ function generarPreguntas(tp, datos, lenguaje = undefined) {
 }
 
 function describir(tp, datos, lenguaje = undefined) {
+    if (!esValido(tp, datos, lenguaje)) return "";
+
     const { 
         DATOS: { FUNCIONES: { struct: DATOS_STRUCT }, LENGUAJE: { lenguajes: LENGUAJES } },
     } = tp.user.constantes();
@@ -149,12 +149,40 @@ function describir(tp, datos, lenguaje = undefined) {
         case LENGUAJES.c:
             return `struct ${nombre} { \n\t${parametros.join(";\n\t")} \n };`;
 
+        case LENGUAJES.rust:
+            return `struct ${nombre} { \n\t${parametros.join(",\n\t")} \n }`;
+
         default:
             return `struct ${nombre}${herencia ? ` :: ${herencia}` : ""} then\n\t${parametros.join("\n\t")}\nend`;
     }
 }
 
+function describirReducida(tp, datos, lenguaje = undefined) {
+    if (!esValido(tp, datos, lenguaje)) return "";
+
+    const { 
+        DATOS: { FUNCIONES: { struct: DATOS_STRUCT }, LENGUAJE: { lenguajes: LENGUAJES } },
+    } = tp.user.constantes();
+
+    let nombre = datos[DATOS_STRUCT.nombreStruct];
+    let herencia = datos[DATOS_STRUCT.herede];
+
+    switch (lenguaje) {
+        case LENGUAJES.python:
+            return `class ${nombre}${herencia ? `(${herencia})` : ""}`;
+
+        case LENGUAJES.c:
+        case LENGUAJES.rust:
+            return `struct ${nombre}`;
+
+        default:
+            return `struct ${nombre}${herencia ? ` :: ${herencia}` : ""} end`;
+    }
+}
+
 function esValido(tp, datos, lenguaje = undefined) {
+    if (!datos) return false;
+
     const { DATOS: { FUNCIONES: { struct: DATOS_STRUCT } } } = tp.user.constantes();
     const DATOS_SIMPLES = [DATOS_STRUCT.nombreStruct, DATOS_STRUCT.descripcion];
 
@@ -164,13 +192,14 @@ function esValido(tp, datos, lenguaje = undefined) {
 module.exports = () => ({
     obtenerDefault: (tp, lenguaje, TIPOS_DE_DEFAULT, crearFuncion) => {
         const { DATOS: { FUNCIONES: { struct: DATOS_STRUCT } } } = tp.user.constantes();
+        const infoParametros = tp.user.parametro();
 
         return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
             [DATOS_STRUCT.nombreStruct]: TIPOS_DE_DEFAULT.simple,
             [DATOS_STRUCT.descripcion]: TIPOS_DE_DEFAULT.simple,
             [DATOS_STRUCT.campos]: crearFuncion(
                 TIPOS_DE_DEFAULT.array,
-                () => tp.user.parametro().obtenerDefault(tp, lenguaje, TIPOS_DE_DEFAULT, crearFuncion)
+                () => infoParametros.obtenerDefault(tp, lenguaje, TIPOS_DE_DEFAULT, crearFuncion)
             ),
             [DATOS_STRUCT.herede]: TIPOS_DE_DEFAULT.simple,
         }));
@@ -178,5 +207,6 @@ module.exports = () => ({
     actualizarDatos: actualizarDatos,
     generarPreguntas: generarPreguntas,
     describir: describir,
+    describirReducida: describirReducida,
     esValido: esValido,
 });

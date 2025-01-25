@@ -1,6 +1,3 @@
-const MODIFICAR_TIPO_DATO = "modificar tipo dato";
-const ELIMINAR_TIPO_DATO = "eliminar tipo dato";
-
 const SALIR = "salir";
 
 async function actualizarDatos(tp, datos, respuesta, lenguaje = undefined) {
@@ -10,14 +7,11 @@ async function actualizarDatos(tp, datos, respuesta, lenguaje = undefined) {
         }
     } = tp.user.constantes();
     if (!(lenguaje in LENGUAJES)) lenguaje = LENGUAJES.default;
-
+    const infoTipoDeDato = tp.user.tipoDeDato();
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
 
     let salir = false;
-    let separacion = respuesta.split("-");
-    respuesta = separacion[0];
-    let indice;
 
     switch (respuesta) {
         case DATOS_PARAMETROS.nombreParametro:
@@ -47,31 +41,14 @@ async function actualizarDatos(tp, datos, respuesta, lenguaje = undefined) {
             );
             break;
 
-        case MODIFICAR_TIPO_DATO:
-            indice = separacion[1];
-            datos[DATOS_PARAMETROS.tipoDeDato][indice] = await preguntar.prompt(
-                tp, `Nuevo tipo de dato del parámetro, donde antes era ${datos[DATOS_PARAMETROS.tipoDeDato][indice]}`,
-                error.Quit("No se ingresó el tipo de dato del parámetro")
-            );
-            break;
-
         case DATOS_PARAMETROS.tipoDeDato:
-            let tipoDato = await preguntar.prompt(
-                tp, (DATOS_LENGUAJES[lenguaje].multiplesTiposDatos && datos[DATOS_PARAMETROS.tipoDeDato].length > 0) 
-                    ? `Tipo de dato del parámetro, donde las otras son ${datos[DATOS_PARAMETROS.tipoDeDato].join(", ")}`
-                    : "Tipo de dato del parámetro", 
-                error.Quit("No se ingresó el tipo de dato del parámetro")
+            datos[DATOS_PARAMETROS.tipoDeDato] = await tp.user.crearPreguntas(
+                tp, infoTipoDeDato.obtenerDefault.bind(null, tp, lenguaje),
+                (tp, datosDado, respuestaDada) => infoTipoDeDato.actualizarDatos(tp, datosDado, respuestaDada, lenguaje), 
+                (tp, datosDado) => infoTipoDeDato.generarPreguntas(tp, datosDado, lenguaje), 
+                "Ingresar los datos del tipo de dato", datos[DATOS_PARAMETROS.tipoDeDato]
             );
-
-            if (DATOS_LENGUAJES[lenguaje].multiplesTiposDatos) {
-                datos[DATOS_PARAMETROS.tipoDeDato].push(tipoDato);
-            } else {
-                datos[DATOS_PARAMETROS.tipoDeDato] = tipoDato;
-            }
             break;
-
-        case ELIMINAR_TIPO_DATO:
-            datos[DATOS_PARAMETROS.tipoDeDato].pop();
 
         case SALIR:
             salir = true;
@@ -88,6 +65,8 @@ function generarPreguntas(tp, datos, lenguaje = undefined) {
         }
     } = tp.user.constantes();
     if (!(lenguaje in LENGUAJES)) lenguaje = LENGUAJES.default;
+    const infoTipoDeDato = tp.user.tipoDeDato();
+
     let opciones = [], valores = [];
 
     opciones.push(DATOS_PARAMETROS.nombreParametro);
@@ -110,35 +89,13 @@ function generarPreguntas(tp, datos, lenguaje = undefined) {
         )
     }
 
-    if (DATOS_LENGUAJES[lenguaje].multiplesTiposDatos) {
-        for (let [indice, tipoDeDato] of datos[DATOS_PARAMETROS.tipoDeDato].entries()) {
-            opciones.push(`${MODIFICAR_TIPO_DATO}-${indice}`);
-            valores.push(`️ ${SIMBOLOS.modificar} Modificar el tipo de dato, donde es ${tipoDeDato}`);
-        }
+    opciones.push(DATOS_PARAMETROS.tipoDeDato);
+    valores.push(infoTipoDeDato.esValido(tp, datos[DATOS_PARAMETROS.tipoDeDato], lenguaje)
+        ? ` ${SIMBOLOS.modificar} Modificar el tipo de dato, donde era ${infoTipoDeDato.describir(tp, datos[DATOS_PARAMETROS.tipoDeDato], lenguaje).replaceAll("\n", "\n\t")}`
+        : ` ${SIMBOLOS.agregar} Tipo de dato`
+    )
 
-        if (datos[DATOS_PARAMETROS.tipoDeDato].length > 0) {
-            let ultimoTipoDeDato = datos[DATOS_PARAMETROS.tipoDeDato].last();
-            opciones.push(ELIMINAR_TIPO_DATO);
-            valores.push(` ${SIMBOLOS.sacar} Eliminar el tipo de dato, donde es ${ultimoTipoDeDato}`);
-            
-            opciones.push(DATOS_PARAMETROS.tipoDeDato);
-            valores.push(` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Tipo de dato`);
-
-        } else {
-            opciones.push(DATOS_PARAMETROS.tipoDeDato);
-            valores.push(` ${SIMBOLOS.agregar} Tipo de dato`);
-        }
-
-
-    } else {
-        opciones.push(DATOS_PARAMETROS.tipoDeDato);
-        valores.push(datos[DATOS_PARAMETROS.tipoDeDato]
-            ? ` ${SIMBOLOS.modificar} Modificar el tipo de dato, donde era ${datos[DATOS_PARAMETROS.tipoDeDato]}`
-            : ` ${SIMBOLOS.agregar} Tipo de dato`
-        );
-    }
-
-    if (esValido(tp, datos)) {
+    if (esValido(tp, datos, lenguaje)) {
         opciones.push(SALIR);
         valores.push(` ${SIMBOLOS.volver} Confirmar datos`);
     }
@@ -147,65 +104,59 @@ function generarPreguntas(tp, datos, lenguaje = undefined) {
 }
 
 function describir(tp, parametro, lenguaje = undefined) {
-    const { 
-        DATOS: { FUNCIONES: { parametro: DATOS_PARAMETROS }, LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } },
-    } = tp.user.constantes();
-    if (!(lenguaje in LENGUAJES)) lenguaje = LENGUAJES.default;
+    if (!esValido(tp, parametro, lenguaje)) return "";
 
-    let descripcionTipoDato;
+    const { 
+        DATOS: { 
+            FUNCIONES: { parametro: DATOS_PARAMETROS }, 
+            LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } 
+        } 
+    } = tp.user.constantes();
+    const infoTipoDeDato = tp.user.tipoDeDato();
+
+    let descripcionTipoDato = infoTipoDeDato.describir(tp, parametro[DATOS_PARAMETROS.tipoDeDato], lenguaje);
+    let textoDefault = "";
 
     switch (lenguaje) {
         case LENGUAJES.python:
-            descripcionTipoDato = parametro[DATOS_PARAMETROS.tipoDeDato];
-            if (DATOS_LENGUAJES[lenguaje].multiplesTiposDatos) {
-                descripcionTipoDato = `${parametro[DATOS_PARAMETROS.tipoDeDato].join(" | ")}`;
-            }
-            let textoDefault = "";
-            if (DATOS_LENGUAJES[lenguaje].multiplesTiposDatos) {
+            if (DATOS_LENGUAJES[lenguaje].parametroValorPorDefecto && parametro[DATOS_PARAMETROS.valorPorDefecto]) {
                 textoDefault = `= ${parametro[DATOS_PARAMETROS.valorPorDefecto]}`;
             }
 
             return `${parametro[DATOS_PARAMETROS.nombreParametro]}: ${descripcionTipoDato} ${textoDefault}`;
 
+        case LENGUAJES.rust:
+            return `${parametro[DATOS_PARAMETROS.nombreParametro]}: ${parametro[DATOS_PARAMETROS.tipoDeDato]}`;
+
         case LENGUAJES.c:
             return `${parametro[DATOS_PARAMETROS.tipoDeDato]} ${parametro[DATOS_PARAMETROS.nombreParametro]}`;
 
         default:
-            descripcionTipoDato = parametro[DATOS_PARAMETROS.tipoDeDato];
-            if (DATOS_LENGUAJES[lenguaje].multiplesTiposDatos) {
-                descripcionTipoDato = `${parametro[DATOS_PARAMETROS.tipoDeDato].join(" | ")}`;
-                if (parametro[DATOS_PARAMETROS.tipoDeDato].length > 1) {
-                    descripcionTipoDato = `(${descripcionTipoDato})`;
-                }
+            if (DATOS_LENGUAJES[lenguaje].parametroValorPorDefecto && parametro[DATOS_PARAMETROS.valorPorDefecto]) {
+                textoDefault = `= ${parametro[DATOS_PARAMETROS.valorPorDefecto]}`;
             }
-
-            return `${parametro[DATOS_PARAMETROS.nombreParametro]}: ${descripcionTipoDato}`;
+            return `${parametro[DATOS_PARAMETROS.nombreParametro]}: ${descripcionTipoDato} ${textoDefault}`;
     }
 }
 
 function esValido(tp, datos, lenguaje = undefined) {
-    const { 
-        DATOS: { FUNCIONES: { parametro: DATOS_PARAMETROS }, LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } } 
-    } = tp.user.constantes();
-    if (!(lenguaje in LENGUAJES)) lenguaje = LENGUAJES.default;
+    if (!datos) return false;
 
-    let DATOS_SIMPLES = [DATOS_PARAMETROS.nombreParametro, DATOS_PARAMETROS.descripcion];
-    if (!(DATOS_LENGUAJES[lenguaje].multiplesTiposDatos)) {
-        DATOS_SIMPLES.push(DATOS_PARAMETROS.tipoDeDato);
-    }
+    const { DATOS: { FUNCIONES: { parametro: DATOS_PARAMETROS } } } = tp.user.constantes();
+    const infoTipoDeDato = tp.user.tipoDeDato();
 
-    return DATOS_SIMPLES.every(key => datos[key]) 
-        && !(DATOS_LENGUAJES[lenguaje].multiplesTiposDatos && datos[DATOS_PARAMETROS.tipoDeDato].length == 0);
+    return [DATOS_PARAMETROS.nombreParametro, DATOS_PARAMETROS.descripcion].every(key => datos[key]) 
+        && infoTipoDeDato.esValido(tp, datos[DATOS_PARAMETROS.tipoDeDato], lenguaje);
 }
 
 module.exports = () => ({
     obtenerDefault: (tp, lenguaje, TIPOS_DE_DEFAULT, crearFuncion) => {
         const { DATOS: { FUNCIONES: { parametro:  DATOS_PARAMETROS } } } = tp.user.constantes();
-        const { informacion: { defaultTipoDato } } = tp.user.lenguajes();
+        const infoTipoDeDato = tp.user.tipoDeDato();
 
         return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
             [DATOS_PARAMETROS.nombreParametro]: TIPOS_DE_DEFAULT.simple,
-            [DATOS_PARAMETROS.tipoDeDato]: defaultTipoDato(tp, TIPOS_DE_DEFAULT, lenguaje),
+            [DATOS_PARAMETROS.tipoDeDato]: infoTipoDeDato.obtenerDefault(tp, lenguaje, TIPOS_DE_DEFAULT, crearFuncion),
             [DATOS_PARAMETROS.valorPorDefecto]: TIPOS_DE_DEFAULT.simple,
             [DATOS_PARAMETROS.descripcion]: TIPOS_DE_DEFAULT.simple,
         }));

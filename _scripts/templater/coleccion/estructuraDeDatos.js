@@ -68,7 +68,7 @@ async function crearEstructura(tp) {
 
 function obtenerDefault(tp, TIPOS_DE_DEFAULT, crearFuncion) {
     const { DATOS: { ESTRUCTURA_DATOS: DATOS_ESTRUCTURA } } = tp.user.constantes();
-    const infoFuncion = tp.user.lenguajes();
+    const infoFuncion = tp.user.funcion();
     const infoStruct = tp.user.struct();
     
     return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
@@ -86,7 +86,7 @@ function obtenerDefault(tp, TIPOS_DE_DEFAULT, crearFuncion) {
 
 async function actualizarDatos(tp, datos, respuesta) {
     const { DATOS: { ESTRUCTURA_DATOS: DATOS_ESTRUCTURA } } = tp.user.constantes(); 
-    const infoFuncion = tp.user.lenguajes();
+    const infoFuncion = tp.user.funcion();
     const infoStruct = tp.user.struct();
 
     const preguntar = tp.user.preguntar();
@@ -167,7 +167,7 @@ async function actualizarDatos(tp, datos, respuesta) {
 
 function generarPreguntas(tp, datos) {
     const { SIMBOLOS, DATOS: { ESTRUCTURA_DATOS: DATOS_ESTRUCTURA } } = tp.user.constantes(); 
-    const infoFuncion = tp.user.lenguajes();
+    const infoFuncion = tp.user.funcion();
     const infoStruct = tp.user.struct();
 
     let opciones = [], valores = [];

@@ -12,7 +12,7 @@ function obtenerDefault(tp, TIPOS_DE_DEFAULT, crearFuncion) {
         [LENGUAJE]: TIPOS_DE_DEFAULT.simple,
         [LIBRERIA]: TIPOS_DE_DEFAULT.simple,
         [MODULO]: TIPOS_DE_DEFAULT.simple,
-        [FUNCION]: tp.user.lenguajes().obtenerDefault(tp, null, TIPOS_DE_DEFAULT, crearFuncion),
+        [FUNCION]: tp.user.funcion().obtenerDefault(tp, null, TIPOS_DE_DEFAULT, crearFuncion),
     }));
 }
 
@@ -98,7 +98,7 @@ async function actualizarDatos(tp, datos, respuesta) {
             break;
 
         case FUNCION:
-            const preguntasLenguaje = tp.user.lenguajes();
+            const preguntasLenguaje = tp.user.funcion();
             datos[FUNCION] = await tp.user.crearPreguntas(
                 tp, preguntasLenguaje.obtenerDefault.bind(null, tp, datos[LENGUAJE]),
                 (tp, datosDato, respuestaDada) => preguntasLenguaje.actualizarDatos(tp, datosDato, respuestaDada, datos[LENGUAJE]), 
@@ -118,9 +118,9 @@ async function actualizarDatos(tp, datos, respuesta) {
 
 function generarPreguntas(tp, datos) {
     const { SIMBOLOS, DATOS: { LENGUAJE: DATOS_LENGUAJE } } = tp.user.constantes(); 
-    const preguntasLenguaje = tp.user.lenguajes();
+    const preguntasLenguaje = tp.user.funcion();
 
-    const usoLenguaje = tp.user.lenguajes();
+    const usoLenguaje = tp.user.funcion();
     let opciones = [], valores = [];
 
     opciones.push(LENGUAJE);
