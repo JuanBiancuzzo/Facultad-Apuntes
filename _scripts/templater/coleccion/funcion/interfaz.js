@@ -5,7 +5,7 @@ const CANTIDAD_MINIMA = 1;
 
 const SALIR = "salir";
 
-async function actualizarDatos(tp, datos, respuestaDada, lenguaje = undefined) {
+async function actualizarDatos(tp, datos, respuestaDada, manejoTipoDeDatos, lenguaje = undefined) {
     const { DATOS: { FUNCIONES: { interfaz: DATOS_INTERFAZ } } } = tp.user.constantes();
     const infoFuncion = tp.user.funcion();
     const crearPreguntas = tp.user.crearPreguntas;
@@ -28,8 +28,8 @@ async function actualizarDatos(tp, datos, respuestaDada, lenguaje = undefined) {
         case DATOS_INTERFAZ.metodos:
             let nuevoMetodo = await crearPreguntas(
                 tp, infoFuncion.obtenerDefault.bind(null, tp, lenguaje),
-                (tp, datosDados, respuestaDada) => infoFuncion.actualizarDatos(tp, datosDados, respuestaDada, lenguaje), 
-                (tp, datosDados) => infoFuncion.generarPreguntas(tp, datosDados, lenguaje), 
+                (tp, datosDados, respuestaDada) => infoFuncion.actualizarDatos(tp, datosDados, respuestaDada, manejoTipoDeDatos, lenguaje), 
+                (tp, datosDados) => infoFuncion.generarPreguntas(tp, datosDados, manejoTipoDeDatos, lenguaje), 
                 "Ingresar un método para la interfaz"
             );
             datos[DATOS_INTERFAZ.metodos].push(nuevoMetodo);
@@ -38,8 +38,8 @@ async function actualizarDatos(tp, datos, respuestaDada, lenguaje = undefined) {
         case MODIFICAR_METODO:
             datos[DATOS_INTERFAZ.metodos][indice] = await crearPreguntas(
                 tp, infoFuncion.obtenerDefault.bind(null, tp, lenguaje),
-                (tp, datosDados, respuestaDada) => infoFuncion.actualizarDatos(tp, datosDados, respuestaDada, lenguaje), 
-                (tp, datosDados) => infoFuncion.generarPreguntas(tp, datosDados, lenguaje), 
+                (tp, datosDados, respuestaDada) => infoFuncion.actualizarDatos(tp, datosDados, respuestaDada, manejoTipoDeDatos, lenguaje), 
+                (tp, datosDados) => infoFuncion.generarPreguntas(tp, datosDados, manejoTipoDeDatos, lenguaje), 
                 "Modificar un método para la interfaz", datos[DATOS_INTERFAZ.metodos][indice]
             );
             break;
@@ -57,7 +57,7 @@ async function actualizarDatos(tp, datos, respuestaDada, lenguaje = undefined) {
 
 }
 
-function generarPreguntas(tp, datos, lenguaje = undefined) {
+function generarPreguntas(tp, datos, manejoTipoDeDatos, lenguaje = undefined) {
     const { SIMBOLOS, DATOS: { FUNCIONES: { interfaz: DATOS_INTERFAZ } } } = tp.user.constantes();
     const infoFuncion = tp.user.funcion();
     let opciones = [], valores = [];
@@ -69,11 +69,14 @@ function generarPreguntas(tp, datos, lenguaje = undefined) {
     )
 
     for (let [indice, metodo] of datos[DATOS_INTERFAZ.metodos].entries()) {
+        let descripcion = infoFuncion.describir(tp, metodo, manejoTipoDeDatos, lenguaje)
+            .replaceAll("\n", "\n\t");
+
         opciones.push(`${MODIFICAR_METODO}-${indice}`);
-        valores.push(`️ ${SIMBOLOS.modificar} Modificar el método, donde es ${infoFuncion.describir(tp, metodo, lenguaje).replaceAll("\n", "\n\t")}`);
+        valores.push(`️ ${SIMBOLOS.modificar} Modificar el método, donde es ${descripcion}`);
 
         opciones.push(`${ELIMINAR_METODO}-${indice}`);
-        valores.push(`️ ${SIMBOLOS.sacar} Eliminar el método, donde es ${infoFuncion.describir(tp, metodo, lenguaje).replaceAll("\n", "\n\t")}`);
+        valores.push(`️ ${SIMBOLOS.sacar} Eliminar el método, donde es ${descripcion}`);
     }
 
     if (datos[DATOS_INTERFAZ.metodos].length >= CANTIDAD_MINIMA) {
@@ -85,7 +88,7 @@ function generarPreguntas(tp, datos, lenguaje = undefined) {
         valores.push(` ${SIMBOLOS.agregar} Método`);
     }
 
-    if (esValido(tp, datos, lenguaje)) {
+    if (esValido(tp, datos, manejoTipoDeDatos, lenguaje)) {
         opciones.push(SALIR);
         valores.push(` ${SIMBOLOS.volver} Confirmar datos`);
     }
@@ -93,18 +96,18 @@ function generarPreguntas(tp, datos, lenguaje = undefined) {
     return { opciones: opciones, valores: valores };
 }
 
-function esValido(tp, datos, lenguaje = undefined) {
+function esValido(tp, datos, manejoTipoDeDatos, lenguaje = undefined) {
     if (!datos) return false;
 
     const { DATOS: { FUNCIONES: { interfaz: DATOS_INTERFAZ } } } = tp.user.constantes();
     const infoFuncion = tp.user.funcion();
 
     return datos[DATOS_INTERFAZ.nombre] && datos[DATOS_INTERFAZ.metodos].length >= CANTIDAD_MINIMA 
-        && datos[DATOS_INTERFAZ.metodos].every(metodo => infoFuncion.esValido(tp, metodo, lenguaje))
+        && datos[DATOS_INTERFAZ.metodos].every(metodo => infoFuncion.esValido(tp, metodo, manejoTipoDeDatos, lenguaje))
 }
 
-function describir(tp, datos, lenguaje = undefined) {
-    if (!esValido(tp, datos, lenguaje)) return "";
+function describir(tp, datos, manejoTipoDeDatos, lenguaje = undefined) {
+    if (!esValido(tp, datos, manejoTipoDeDatos, lenguaje)) return "";
 
     const { DATOS: { 
         FUNCIONES: { interfaz: DATOS_INTERFAZ },
@@ -115,7 +118,7 @@ function describir(tp, datos, lenguaje = undefined) {
 
     if (!(DATOS_LENGUAJES[lenguaje].genericos)) throw Error(`El lenguaje ${lenguaje} no tiene genericos`);
     let metodos = datos[DATOS_INTERFAZ.metodos]
-        .map(metodo => infoFuncion.describir(tp, metodo, lenguaje));
+        .map(metodo => infoFuncion.describir(tp, metodo, manejoTipoDeDatos, lenguaje));
 
     switch (lenguaje) {
         case LENGUAJES.rust:
@@ -126,8 +129,8 @@ function describir(tp, datos, lenguaje = undefined) {
     }
 }
 
-function descripcionReducida(tp, datos, lenguaje = undefined) {
-    if (!esValido(tp, datos, lenguaje)) return "";
+function descripcionReducida(tp, datos, manejoTipoDeDatos, lenguaje = undefined) {
+    if (!esValido(tp, datos, manejoTipoDeDatos, lenguaje)) return "";
 
     const { DATOS: { 
         FUNCIONES: { interfaz: DATOS_INTERFAZ },
@@ -159,3 +162,13 @@ module.exports = () => ({
     descripcionReducida: descripcionReducida,
     esValido: esValido,
 });
+
+module.exports = (tp, manejoTipoDeDatos, lenguaje) => TipoInterfaz(tp, manejoTipoDeDatos, lenguaje);
+
+class TipoInterfaz {
+    constructor(tp, manejoTipoDeDatos, lenguaje) {
+        this.tp = tp;
+        this.manejoTipoDeDatos = manejoTipoDeDatos;
+        this.lenguaje = lenguaje;
+    }
+}

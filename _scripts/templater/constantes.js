@@ -89,6 +89,7 @@ module.exports = () => ({
                 libreria: "libreria",
                 modulo: "modulo",
                 funcion: "función",
+                tipoDeDato: "tipo-de-dato",
             },
             bloqueMatematica: {
                 self: "bloque-matematica",
@@ -358,15 +359,14 @@ module.exports = () => ({
                 descripcion: "descripcion",
             },
             tipoDeDato: {
+                id: "id",
                 tipo: {
                     self: "type",
                     primitivo: "Primitivo",
-                    compuesto: {
-                        tupla: "Tupla",
-                        array: "Array",
-                        struct: "Struct",
-                        // enum: "Enum",
-                    },
+                    tupla: "Tupla",
+                    array: "Array",
+                    struct: "Struct",
+                    // enum: "Enum",
                     generico: "Generico",
                 },
                 valor: "valor",

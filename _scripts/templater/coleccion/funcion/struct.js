@@ -1,212 +1,225 @@
 const MODIFICAR_CAMPO = "modificar campo";
 const ELIMINAR_CAMPO = "eliminar campo";
 
+const CANTIDAD_MINIMA = 1;
+
 const SALIR = "salir";
 
-async function actualizarDatos(tp, datos, respuestaDada, lenguaje = undefined) {
-    const { DATOS: { FUNCIONES: { struct: DATOS_STRUCT } } } = tp.user.constantes();
+class TipoStruct {
+    constructor(tp, manejoTipoDeDatos, lenguaje) {
+        const { 
+            SIMBOLOS, DATOS: { 
+                FUNCIONES: { struct: DATO_STRUCT },
+                LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } 
+            } 
+        } = tp.user.constantes();
 
-    const preguntar = tp.user.preguntar();
-    const error = tp.user.error();
+        this.lenguajes = LENGUAJES; 
+        this.datosLenguaje = DATOS_LENGUAJES[(lenguaje in LENGUAJES) 
+            ? lenguaje 
+            : LENGUAJES.default
+        ];
+        this.config = DATO_STRUCT;
+        this.simbolos = SIMBOLOS;
 
-    let salir = false;
-    let [ respuesta, indice ] = respuestaDada.split("-");
+        this.manejoTipoDeDatos = manejoTipoDeDatos;
 
-    switch (respuesta) {
-        case DATOS_STRUCT.nombreStruct: 
-            datos[DATOS_STRUCT.nombreStruct] = await preguntar.prompt(
-                tp, datos[DATOS_STRUCT.nombreStruct]
-                    ? `Nuevo nombre del struct, donde antes era ${datos[DATOS_STRUCT.nombreStruct]}`
-                    : "Nombre del struct",
-                error.Quit("No se ingresó el nombre del struct")
-            );
-            break;
+        this.informacion = {
+            _claseParametro: null,
+            get parametro() {
+                if (!this._claseParametro)
+                    this._claseParametro = tp.user.parametro(tp, manejoTipoDeDatos, lenguaje);
+                return this._claseParametro;
+            },
+        };
 
-        case DATOS_STRUCT.descripcion: 
-            datos[DATOS_STRUCT.descripcion] = await preguntar.prompt(
-                tp, datos[DATOS_STRUCT.descripcion]
-                    ? `Nueva descripción del struct, donde antes era ${datos[DATOS_STRUCT.descripcion]}`
-                    : "Descripción del struct",
-                error.Quit("No se ingresó la descripción del struct")
-            );
-            break;
-
-        case MODIFICAR_CAMPO:
-            indice = separacion[1];
-
-        case DATOS_STRUCT.campos: 
-            let campoPrevio;
-            if (indice) campoPrevio = datos[DATOS_STRUCT.campos][indice];
-
-            const infoParametro = tp.user.parametro();
-            let campo = await tp.user.crearPreguntas(
-                tp, infoParametro.obtenerDefault.bind(null, tp, lenguaje), 
-                (tp, datosDados, respuestaDada) => infoParametro.actualizarDatos(tp, datosDados, respuestaDada, lenguaje), 
-                (tp, datosDados) => infoParametro.generarPreguntas(tp, datosDados, lenguaje), 
-                "Ingresar los datos del campo", campoPrevio
-            );
-
-            if (indice) {
-                datos[DATOS_STRUCT.campos][indice] = campo; 
-            } else {
-                datos[DATOS_STRUCT.campos].push(campo);
-            }
-            break;
-
-        case ELIMINAR_CAMPO:
-            datos[DATOS_STRUCT.campos].pop();
-            break;
-
-        case DATOS_STRUCT.herede:
-            datos[DATOS_STRUCT.herede] = await preguntar.prompt(
-                tp, datos[DATOS_STRUCT.herede]
-                    ? `Nueva herencia para el struct, donde antes era ${datos[DATOS_STRUCT.herede]}`
-                    : "De que hereda el struct",
-                error.Quit("No se ingresó la herencia del struct")
-            );
-            break;
-
-        case SALIR: 
-            salir = true;
-            break;
+        this.preguntar = tp.user.preguntar();
+        this.error = tp.user.error();
+        this.crearPreguntas = tp.user.crearPreguntas;
     }
 
-    return salir;
-}
-
-function generarPreguntas(tp, datos, lenguaje = undefined) {
-    const { 
-        SIMBOLOS, DATOS: { FUNCIONES: { struct: DATOS_STRUCT }, LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } } 
-    } = tp.user.constantes();
-    if (!(lenguaje in LENGUAJES)) lenguaje = LENGUAJES.default;
-
-    const infoParametro = tp.user.parametro();
-    let opciones = [], valores = [];
-
-    opciones.push(DATOS_STRUCT.nombreStruct);
-    valores.push(datos[DATOS_STRUCT.nombreStruct]
-        ? ` ${SIMBOLOS.modificar} Modificar el nombre del struct, donde era ${datos[DATOS_STRUCT.nombreStruct]}`
-        : ` ${SIMBOLOS.agregar} Nombre del struct`
-    )
-
-    opciones.push(DATOS_STRUCT.descripcion);
-    valores.push(datos[DATOS_STRUCT.descripcion]
-        ? ` ${SIMBOLOS.modificar} Modificar la descripción del struct, donde era ${datos[DATOS_STRUCT.descripcion]}`
-        : ` ${SIMBOLOS.agregar} Descripción del struct`
-    );
-
-    for (let [indice, parametro] of datos[DATOS_STRUCT.campos].entries()) {
-        opciones.push(`${MODIFICAR_CAMPO}-${indice}`);
-        valores.push(`️ ${SIMBOLOS.modificar} Modificar el campos, donde es ${infoParametro.describir(tp, parametro, lenguaje)}`);
-    }
-
-    if (datos[DATOS_STRUCT.campos].length > 0) {
-        let ultimoParametro = datos[DATOS_STRUCT.campos].last();
-        opciones.push(ELIMINAR_CAMPO);
-        valores.push(` ${SIMBOLOS.sacar} Eliminar el campo, donde es ${infoParametro.describir(tp, ultimoParametro, lenguaje)}`);
-
-        opciones.push(DATOS_STRUCT.campos);
-        valores.push(` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Campo`);
-
-    } else {
-        opciones.push(DATOS_STRUCT.campos);
-        valores.push(` ${SIMBOLOS.agregar} Campo`);
-    }
-
-    if (DATOS_LENGUAJES[lenguaje].structHerencia) {
-        opciones.push(DATOS_STRUCT.herede);
-        valores.push(datos[DATOS_STRUCT.herede]
-            ? ` ${SIMBOLOS.modificar} Modificar la estructura de la que herede, donde era ${datos[DATOS_STRUCT.herede]}`
-            : ` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Estructura de la que herede`
-        );
-    }
-
-    if (esValido(tp, datos, lenguaje)) {
-        opciones.push(SALIR);
-        valores.push(` ${SIMBOLOS.volver} Confirmar datos`);
-    }
-
-    return { opciones: opciones, valores: valores };
-}
-
-function describir(tp, datos, lenguaje = undefined) {
-    if (!esValido(tp, datos, lenguaje)) return "";
-
-    const { 
-        DATOS: { FUNCIONES: { struct: DATOS_STRUCT }, LENGUAJE: { lenguajes: LENGUAJES } },
-    } = tp.user.constantes();
-    const infoParametro = tp.user.parametro();
-
-    let nombre = datos[DATOS_STRUCT.nombreStruct];
-    let herencia = datos[DATOS_STRUCT.herede];
-    let parametros = datos[DATOS_STRUCT.campos]
-        .map(param => infoParametro.describir(tp, param, lenguaje));
-
-    switch (lenguaje) {
-        case LENGUAJES.python:
-            return `class ${nombre}${herencia ? `(${herencia})` : ""}:\n\t${parametros.join("\n\t")}`;
-
-        case LENGUAJES.c:
-            return `struct ${nombre} { \n\t${parametros.join(";\n\t")} \n };`;
-
-        case LENGUAJES.rust:
-            return `struct ${nombre} { \n\t${parametros.join(",\n\t")} \n }`;
-
-        default:
-            return `struct ${nombre}${herencia ? ` :: ${herencia}` : ""} then\n\t${parametros.join("\n\t")}\nend`;
-    }
-}
-
-function describirReducida(tp, datos, lenguaje = undefined) {
-    if (!esValido(tp, datos, lenguaje)) return "";
-
-    const { 
-        DATOS: { FUNCIONES: { struct: DATOS_STRUCT }, LENGUAJE: { lenguajes: LENGUAJES } },
-    } = tp.user.constantes();
-
-    let nombre = datos[DATOS_STRUCT.nombreStruct];
-    let herencia = datos[DATOS_STRUCT.herede];
-
-    switch (lenguaje) {
-        case LENGUAJES.python:
-            return `class ${nombre}${herencia ? `(${herencia})` : ""}`;
-
-        case LENGUAJES.c:
-        case LENGUAJES.rust:
-            return `struct ${nombre}`;
-
-        default:
-            return `struct ${nombre}${herencia ? ` :: ${herencia}` : ""} end`;
-    }
-}
-
-function esValido(tp, datos, lenguaje = undefined) {
-    if (!datos) return false;
-
-    const { DATOS: { FUNCIONES: { struct: DATOS_STRUCT } } } = tp.user.constantes();
-    const DATOS_SIMPLES = [DATOS_STRUCT.nombreStruct, DATOS_STRUCT.descripcion];
-
-    return datos[DATOS_STRUCT.campos].length > 0 && DATOS_SIMPLES.every(key => datos[key]);
-}
-
-module.exports = () => ({
-    obtenerDefault: (tp, lenguaje, TIPOS_DE_DEFAULT, crearFuncion) => {
-        const { DATOS: { FUNCIONES: { struct: DATOS_STRUCT } } } = tp.user.constantes();
-        const infoParametros = tp.user.parametro();
-
+    obtenerDefault(TIPOS_DE_DEFAULT, crearFuncion) {
         return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
-            [DATOS_STRUCT.nombreStruct]: TIPOS_DE_DEFAULT.simple,
-            [DATOS_STRUCT.descripcion]: TIPOS_DE_DEFAULT.simple,
-            [DATOS_STRUCT.campos]: crearFuncion(
+            [this.config.nombreStruct]: TIPOS_DE_DEFAULT.simple,
+            [this.config.descripcion]: TIPOS_DE_DEFAULT.simple,
+            [this.config.campos]: crearFuncion(
                 TIPOS_DE_DEFAULT.array,
-                () => infoParametros.obtenerDefault(tp, lenguaje, TIPOS_DE_DEFAULT, crearFuncion)
+                () => this.informacion.parametro.obtenerDefault(TIPOS_DE_DEFAULT, crearFuncion)
             ),
-            [DATOS_STRUCT.herede]: TIPOS_DE_DEFAULT.simple,
+            [this.config.herede]: TIPOS_DE_DEFAULT.simple,
         }));
-    },
-    actualizarDatos: actualizarDatos,
-    generarPreguntas: generarPreguntas,
-    describir: describir,
-    describirReducida: describirReducida,
-    esValido: esValido,
-});
+    }
+
+    async actualizarDatos(tp, datos, respuestaDada) {
+        let salir = false;
+        let [respuesta, indice] = respuestaDada.split("-");
+
+        switch (respuesta) {
+            case this.config.nombreStruct:
+                datos[this.config.nombreStruct] = await this.preguntar.prompt(
+                    tp, datos[this.config.nombreStruct]
+                    ? `Nuevo nombre del struct, donde antes era ${datos[this.config.nombreStruct]}`
+                    : "Nombre del struct",
+                    this.error.Quit("No se ingresó el nombre del struct")
+                );
+                break;
+
+            case this.config.descripcion:
+                datos[this.config.descripcion] = await this.preguntar.prompt(
+                    tp, datos[this.config.descripcion]
+                    ? `Nueva descripción del struct, donde antes era ${datos[this.config.descripcion]}`
+                    : "Descripción del struct",
+                    this.error.Quit("No se ingresó la descripción del struct")
+                );
+                break;
+
+            case MODIFICAR_CAMPO:
+            case this.config.campos:
+                let campoPrevio;
+                if (indice) campoPrevio = datos[this.config.campos][indice];
+
+                let campo = await this.crearPreguntas(
+                    tp, this.informacion.parametro.obtenerDefault, this.informacion.parametro.actualizarDatos, 
+                    this.informacion.parametro.generarPreguntas, "Ingresar los datos del campo", campoPrevio
+                );
+
+                if (indice) {
+                    datos[this.config.campos][indice] = campo;
+                } else {
+                    datos[this.config.campos].push(campo);
+                }
+                break;
+
+            case ELIMINAR_CAMPO:
+                let campoEliminar = datos[this.config.campos].pop();
+                this.informacion.parametro.eliminar(campoEliminar);
+                break;
+
+            case this.config.herede:
+                datos[this.config.herede] = await this.preguntar.prompt(
+                    tp, datos[this.config.herede]
+                    ? `Nueva herencia para el struct, donde antes era ${datos[this.config.herede]}`
+                    : "De que hereda el struct",
+                    this.error.Quit("No se ingresó la herencia del struct")
+                );
+                break;
+
+            case SALIR:
+                salir = true;
+                break;
+        }
+
+        return salir;
+    }
+
+    generarPreguntas(tp, datos) {
+        let opciones = [], valores = [];
+
+        opciones.push(this.config.nombreStruct);
+        valores.push(datos[this.config.nombreStruct]
+            ? ` ${this.simbolos.modificar} Modificar el nombre del struct, donde era ${datos[this.config.nombreStruct]}`
+            : ` ${this.simbolos.agregar} Nombre del struct`
+        )
+
+        opciones.push(this.config.descripcion);
+        valores.push(datos[this.config.descripcion]
+            ? ` ${this.simbolos.modificar} Modificar la descripción del struct, donde era ${datos[this.config.descripcion]}`
+            : ` ${this.simbolos.agregar} Descripción del struct`
+        );
+
+        for (let [indice, campo] of datos[this.config.campos].entries()) {
+            opciones.push(`${MODIFICAR_CAMPO}-${indice}`);
+            valores.push(`️ ${this.simbolos.modificar} Modificar el campos, donde es ${this.informacion.parametro.describir(campo)}`);
+        }
+
+        if (datos[this.config.campos].length > 0) {
+            let ultimoCampo = datos[this.config.campos].last();
+            opciones.push(ELIMINAR_CAMPO);
+            valores.push(` ${this.simbolos.sacar} Eliminar el campo, donde es ${this.informacion.parametro.describir(ultimoCampo)}`);
+
+            opciones.push(this.config.campos);
+            valores.push(` ${this.simbolos.agregar} ${this.simbolos.opcional} Campo`);
+
+        } else {
+            opciones.push(this.config.campos);
+            valores.push(` ${this.simbolos.agregar} Campo`);
+        }
+
+        if (this.datosLenguaje.structHerencia) {
+            opciones.push(this.config.herede);
+            valores.push(datos[this.config.herede]
+                ? ` ${this.simbolos.modificar} Modificar la estructura de la que herede, donde era ${datos[this.config.herede]}`
+                : ` ${this.simbolos.agregar} ${this.simbolos.opcional} Estructura de la que herede`
+            );
+        }
+
+        if (this.esValido(datos)) {
+            opciones.push(SALIR);
+            valores.push(` ${this.simbolos.volver} Confirmar datos`);
+        }
+
+        return { opciones: opciones, valores: valores };
+    }
+
+    eliminar(datos) {
+        if (datos[this.config.campos].length == 0)
+            return;
+
+        for (let campo of datos[this.config.campos]) {
+            this.informacion.parametro.eliminar(campo);
+        }
+    }
+
+    describir(datos) {
+        if (!this.esValido(datos)) return "";
+
+        let nombre = datos[this.config.nombreStruct];
+        let herencia = datos[this.config.herede];
+        let campos = datos[this.config.campos]
+            .map(campo => this.informacion.parametro.describir(campo));
+
+        switch (lenguaje) {
+            case this.lenguajes.python:
+                return `class ${nombre}${herencia ? `(${herencia})` : ""}:\n\t${campos.join("\n\t")}`;
+
+            case this.lenguajes.c:
+                return `struct ${nombre} { \n\t${campos.join(";\n\t")} \n };`;
+
+            case this.lenguajes.rust:
+                return `struct ${nombre} { \n\t${campos.join(",\n\t")} \n }`;
+
+            default:
+                return `struct ${nombre}${herencia ? ` :: ${herencia}` : ""} then\n\t${campos.join("\n\t")}\nend`;
+        }
+    }
+
+    describirReducida(datos) {
+        if (!this.esValido(datos)) return "";
+
+        let nombre = datos[this.config.nombreStruct];
+        let herencia = datos[this.config.herede];
+
+        switch (lenguaje) {
+            case this.lenguajes.python:
+                return `class ${nombre}${herencia ? `(${herencia})` : ""}`;
+
+            case this.lenguajes.c:
+            case this.lenguajes.rust:
+                return `struct ${nombre}`;
+
+            default:
+                return `struct ${nombre}${herencia ? ` :: ${herencia}` : ""} end`;
+        }
+    }
+
+    esValido(datos) {
+        if (!datos) return false;
+
+        return datos[this.config.campos].length >= CANTIDAD_MINIMA 
+            && [this.config.nombreStruct, this.config.descripcion].every(key => datos[key])
+            && datos[this.config.campos].every(campo => this.informacion.parametro.esValido(campo));
+
+    }
+}
+
+module.exports = (tp, manejoTipoDeDatos, lenguaje) => TipoStruct(tp, manejoTipoDeDatos, lenguaje);
