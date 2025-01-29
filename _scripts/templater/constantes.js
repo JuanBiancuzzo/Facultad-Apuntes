@@ -1,3 +1,8 @@
+const LENGUAJE_C = "c";
+const LENGUAJE_PYTHON = "python";
+const LENGUAJE_RUST = "rust";
+const LENGUAJE_DEFAULT = "default";
+
 module.exports = () => ({
     CARACTERES_INVALIDOS: ['*', '"', '\\', '/', '<', '>', ':', '|', '?'],
     MESES: (mes) => [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" ][mes - 1],
@@ -6,6 +11,7 @@ module.exports = () => ({
         sacar: "⊖",
         agregar: "⊕",
         volver: "↶",
+        elegir: "↶",
         modificar: "✏️",
         opcional: "(opcional)",
     },
@@ -77,12 +83,15 @@ module.exports = () => ({
                 self: "funciones",
                 lenguajes: {
                     self: "lenguaje",
-                    python: "Librerías-de-Python",
-                    c: "Librerías-de-C",
+                    [LENGUAJE_PYTHON]: "Librerías-de-Python",
+                    [LENGUAJE_C]: "Librerías-de-C",
+                    [LENGUAJE_RUST]: "Librerías-de-Rust",
+                    [LENGUAJE_DEFAULT]: "Librerías-de-Pseudocódigo",
                 },
                 libreria: "libreria",
                 modulo: "modulo",
                 funcion: "función",
+                tipoDeDato: "tipo-de-dato",
             },
             bloqueMatematica: {
                 self: "bloque-matematica",
@@ -141,8 +150,9 @@ module.exports = () => ({
             documentos: "documentos",
             funciones: {
                 self: "funciones",
-                python: "Lenguaje Python",
-                c: "Lenguaje C",
+                [LENGUAJE_PYTHON]: "Lenguaje Python",
+                [LENGUAJE_C]: "Lenguaje C",
+                [LENGUAJE_RUST]: "Lenguaje Rust",
             },
             libros: "libros",
             papers: "papers",
@@ -251,16 +261,60 @@ module.exports = () => ({
                 obtenerTitulo: (tema, subtema) => `${subtema} del tema ${tema}`,
             },
         },
+        LENGUAJE: {
+            lenguajes: {
+                python: LENGUAJE_PYTHON,
+                c: LENGUAJE_C,
+                rust: LENGUAJE_RUST,
+                default: LENGUAJE_DEFAULT,
+            },
+            [LENGUAJE_C]: {
+                nombre: "C",
+                multiplesTiposDatos: false,
+                parametroValorPorDefecto: false,
+                returnOpcional: false,
+                structHerencia: false,
+                genericos: false,
+                tieneTupla: false,
+                arrayConCantidad: true,
+            },
+            [LENGUAJE_PYTHON]: {
+                nombre: "Python",
+                multiplesTiposDatos: true,
+                parametroValorPorDefecto: true,
+                returnOpcional: true,
+                structHerencia: true,
+                genericos: false,
+                tieneTupla: true,
+                arrayConCantidad: false,
+            },
+            [LENGUAJE_RUST]: {
+                nombre: "Rust",
+                multiplesTiposDatos: false,
+                parametroValorPorDefecto: false,
+                returnOpcional: true,
+                structHerencia: false,
+                genericos: true,
+                tieneTupla: true,
+                arrayConCantidad: true,
+            },
+            [LENGUAJE_DEFAULT]: {
+                nombre: "PseudoCodigo",
+                multiplesTiposDatos: true,
+                parametroValorPorDefecto: true,
+                returnOpcional: true,
+                structHerencia: true,
+                genericos: true,
+                tieneTupla: true,
+                arrayConCantidad: true,
+            },
+        },
         FUNCIONES: {
             lenguaje: {
                 tags: "tags",
                 nombre: "nombreLenguaje",
+                tiposPrimitivos: "tiposDeDatosPrimitivos",
                 temaInvestigacion: "temaInvestigacion",
-                lenguajes: {
-                    python: "Python",
-                    c: "C",
-                },
-                keyLenguaje: (lenguaje) => lenguaje.toLowerCase(),
                 obtenerTitulo: (lenguaje) => `Librerías del lenguaje de ${lenguaje}`,
             },
             libreria: {
@@ -285,9 +339,9 @@ module.exports = () => ({
             },
             parametro: {
                 nombreParametro: "nombre",
-                tipoDeDato: "type",
-                valorPorDefecto: "default",
                 descripcion: "descripcion",
+                valorPorDefecto: "default",
+                tipoDeDato: "type",
             },
             struct: {
                 nombreStruct: "nombre",
@@ -295,15 +349,45 @@ module.exports = () => ({
                 campos: "campos",
                 herede: "herencia",
             },
+            interfaz: {
+                nombre: "nombre",
+                metodos: "metodos",
+            },
+            array: {
+                tipoDeDato: "type",
+                cantidad: "cantidad",
+            },
             return: {
                 tipoDeDato: "type",
                 descripcion: "descripcion",
+            },
+            tipoDeDato: {
+                id: "id",
+                tipo: {
+                    self: "type",
+                    primitivo: "Primitivo",
+                    tupla: "Tupla",
+                    array: "Array",
+                    struct: "Struct",
+                    // enum: "Enum",
+                    generico: "Generico",
+                },
+                valor: "valor",
+            },
+            manejador: {
+                id: "id",
+                tipo: "type",
+                valor: "valor",
+                apariciones: "apariciones",
+                previo: "previo",
             },
         },
         ESTRUCTURA_DATOS: {
             nombre: "nombreEstructura",
             estructuras: "estrucutrasRelacionadas",
             metodos: "métodos",
+            tipoEstructura: "estructuras",
+            tipoInterfaz: "interfaces",
         },
         REFERENCIAS: {
             numReferencia: "numReferencia",
