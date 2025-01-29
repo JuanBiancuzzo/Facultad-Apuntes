@@ -6,9 +6,11 @@ tags:
   - nota/colección
   - investigación/ciencias-de-la-computación/data-structures
   - colección/data-structures/estructura
+  - curso/introduction-to-algorithms/Hashing
 aliases:
   - Hash map
   - Tabla de hash
+  - Diccionario
 nombreEstructura: Hash table
 ---
 ```dataviewjs
