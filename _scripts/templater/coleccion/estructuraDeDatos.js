@@ -300,23 +300,24 @@ async function crearEstructura(tp) {
 
     await app.fileManager.processFrontMatter(tNotaPseudocodigo, (frontmatter) => {
         let primitivosNuevos = manejoTipoDeDatos.obtenerInformacion(DATOS_TIPO_DE_DATO.primitivo);
-        let primitivosPrevios = frontmatter[DATOS_LENGUAJES.tiposPrimitivos]
+        let primitivosViejos = frontmatter[DATOS_LENGUAJES.tiposPrimitivos]
             ? frontmatter[DATOS_LENGUAJES.tiposPrimitivos]
             : [];
 
-        for (let primitivoNuevo of primitivosNuevos) {
-            let primitivoViejo = primitivosPrevios.find(({ [DATOS_MANEJADOR.id]: id }) => primitivoNuevo[DATOS_MANEJADOR.id] == id);
+        for (let primitivoViejo of primitivosViejos) {
+            let primitivoNuevo = primitivosNuevos.find(({ [DATOS_MANEJADOR.id]: id }) => primitivoViejo[DATOS_MANEJADOR.id] == id);
 
-            if (primitivoViejo) {
-                primitivoViejo[DATOS_MANEJADOR.valor] = primitivoNuevo[DATOS_MANEJADOR.valor];
-                primitivoViejo[DATOS_MANEJADOR.apariciones] += primitivoNuevo[DATOS_MANEJADOR.apariciones];
+            if (primitivoNuevo) {
+                primitivoNuevo[DATOS_MANEJADOR.valor] = primitivoViejo[DATOS_MANEJADOR.valor];
+                primitivoNuevo[DATOS_MANEJADOR.apariciones] += primitivoViejo[DATOS_MANEJADOR.apariciones];
 
-            } else {
-                primitivosPrevios.push(primitivoNuevo);
+            } else if (primitivoViejo[DATOS_MANEJADOR.apariciones] > 0) {
+                primitivosNuevos.push(primitivoViejo);
+
             }
         }
 
-        frontmatter[DATOS_LENGUAJES.tiposPrimitivos] = primitivosPrevios;
+        frontmatter[DATOS_LENGUAJES.tiposPrimitivos] = primitivosNuevos;
     });
 
     return {
