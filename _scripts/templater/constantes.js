@@ -11,6 +11,7 @@ module.exports = () => ({
         sacar: "⊖",
         agregar: "⊕",
         volver: "↶",
+        elegir: "↶",
         modificar: "✏️",
         opcional: "(opcional)",
     },
@@ -85,6 +86,7 @@ module.exports = () => ({
                     [LENGUAJE_PYTHON]: "Librerías-de-Python",
                     [LENGUAJE_C]: "Librerías-de-C",
                     [LENGUAJE_RUST]: "Librerías-de-Rust",
+                    [LENGUAJE_DEFAULT]: "Librerías-de-Pseudocódigo",
                 },
                 libreria: "libreria",
                 modulo: "modulo",
@@ -311,6 +313,7 @@ module.exports = () => ({
             lenguaje: {
                 tags: "tags",
                 nombre: "nombreLenguaje",
+                tiposPrimitivos: "tiposDeDatosPrimitivos",
                 temaInvestigacion: "temaInvestigacion",
                 obtenerTitulo: (lenguaje) => `Librerías del lenguaje de ${lenguaje}`,
             },
@@ -336,9 +339,9 @@ module.exports = () => ({
             },
             parametro: {
                 nombreParametro: "nombre",
-                tipoDeDato: "type",
-                valorPorDefecto: "default",
                 descripcion: "descripcion",
+                valorPorDefecto: "default",
+                tipoDeDato: "type",
             },
             struct: {
                 nombreStruct: "nombre",
@@ -371,11 +374,20 @@ module.exports = () => ({
                 },
                 valor: "valor",
             },
+            manejador: {
+                id: "id",
+                tipo: "type",
+                valor: "valor",
+                apariciones: "apariciones",
+                previo: "previo",
+            },
         },
         ESTRUCTURA_DATOS: {
             nombre: "nombreEstructura",
             estructuras: "estrucutrasRelacionadas",
             metodos: "métodos",
+            tipoEstructura: "estructuras",
+            tipoInterfaz: "interfaces",
         },
         REFERENCIAS: {
             numReferencia: "numReferencia",

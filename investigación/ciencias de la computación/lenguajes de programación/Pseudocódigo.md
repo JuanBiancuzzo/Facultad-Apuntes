@@ -8,8 +8,14 @@ tags:
   - investigación/ciencias-de-la-computación/lenguajes-de-programación
   - investigación/ciencias-de-la-computación/Análisis-numérico
   - investigación/matemática/Análisis-numérico
+  - funciones/Librerías-de-Pseudocódigo
+  - colección/funciones/lenguaje
 aliases:
   - Lenguaje de descripción algorítmico
+tiposDeDatosPrimitivos:
+  - id: Lx1Opin3ZE5kW9eKGSnGGm8pGjkFyU9kjuB7kM1cMmLBKRh71I
+    valor: Integer
+    apariciones: 0
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });

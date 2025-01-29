@@ -1,7 +1,7 @@
 const SALIR = "salir";
 
 class Return {
-    constructor(tp, manejoTipoDeDatos, lenguaje) {
+    constructor(tp, manejoTipoDeDatos, lenguaje = null) {
         const { 
             SIMBOLOS, DATOS: { 
                 FUNCIONES: { return: DATOS_RETURN },
@@ -9,11 +9,10 @@ class Return {
             } 
         } = tp.user.constantes();
 
+        this.lenguajeActual = (lenguaje in LENGUAJES) ? lenguaje : LENGUAJES.default;
         this.lenguajes = LENGUAJES; 
-        this.datosLenguaje = DATOS_LENGUAJES[(lenguaje in LENGUAJES) 
-            ? lenguaje 
-            : LENGUAJES.default
-        ];
+        this.datosLenguaje = DATOS_LENGUAJES[this.lenguajeActual];
+
         this.config = DATOS_RETURN;
         this.simbolos = SIMBOLOS;
 
@@ -31,6 +30,13 @@ class Return {
         this.preguntar = tp.user.preguntar();
         this.error = tp.user.error();
         this.crearPreguntas = tp.user.crearPreguntas;
+
+        this.obtenerDefault = this.obtenerDefault.bind(this);
+        this.actualizarDatos = this.actualizarDatos.bind(this);
+        this.generarPreguntas = this.generarPreguntas.bind(this);
+        this.eliminar = this.eliminar.bind(this);
+        this.describir = this.describir.bind(this);
+        this.esValido = this.esValido.bind(this);
     }
 
     obtenerDefault(TIPOS_DE_DEFAULT, crearFuncion) {
@@ -92,6 +98,8 @@ class Return {
     }
 
     eliminar(datos) {
+        if (!datos) return;
+
         if (!datos[this.config.tipoDeDato])
             return;
         this.informacion.tipoDeDato.eliminar(datos[this.config.tipoDeDato]);
@@ -108,4 +116,4 @@ class Return {
     }
 }
 
-module.exports = (tp, manejoTipoDeDatos, lenguaje) => Return(tp, manejoTipoDeDatos, lenguaje);
+module.exports = (tp, manejoTipoDeDatos, lenguaje = null) => new Return(tp, manejoTipoDeDatos, lenguaje);

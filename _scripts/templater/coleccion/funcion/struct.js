@@ -6,7 +6,7 @@ const CANTIDAD_MINIMA = 1;
 const SALIR = "salir";
 
 class TipoStruct {
-    constructor(tp, manejoTipoDeDatos, lenguaje) {
+    constructor(tp, manejoTipoDeDatos, lenguaje = null) {
         const { 
             SIMBOLOS, DATOS: { 
                 FUNCIONES: { struct: DATO_STRUCT },
@@ -14,11 +14,10 @@ class TipoStruct {
             } 
         } = tp.user.constantes();
 
+        this.lenguajeActual = (lenguaje in LENGUAJES) ? lenguaje : LENGUAJES.default;
         this.lenguajes = LENGUAJES; 
-        this.datosLenguaje = DATOS_LENGUAJES[(lenguaje in LENGUAJES) 
-            ? lenguaje 
-            : LENGUAJES.default
-        ];
+        this.datosLenguaje = DATOS_LENGUAJES[this.lenguajeActual];
+
         this.config = DATO_STRUCT;
         this.simbolos = SIMBOLOS;
 
@@ -36,6 +35,14 @@ class TipoStruct {
         this.preguntar = tp.user.preguntar();
         this.error = tp.user.error();
         this.crearPreguntas = tp.user.crearPreguntas;
+
+        this.obtenerDefault = this.obtenerDefault.bind(this);
+        this.actualizarDatos = this.actualizarDatos.bind(this);
+        this.generarPreguntas = this.generarPreguntas.bind(this);
+        this.eliminar = this.eliminar.bind(this);
+        this.describir = this.describir.bind(this);
+        this.describirReducida = this.describirReducida.bind(this);
+        this.esValido = this.esValido.bind(this);
     }
 
     obtenerDefault(TIPOS_DE_DEFAULT, crearFuncion) {
@@ -162,6 +169,8 @@ class TipoStruct {
     }
 
     eliminar(datos) {
+        if (!datos) return;
+
         if (datos[this.config.campos].length == 0)
             return;
 
@@ -178,7 +187,7 @@ class TipoStruct {
         let campos = datos[this.config.campos]
             .map(campo => this.informacion.parametro.describir(campo));
 
-        switch (lenguaje) {
+        switch (this.lenguajeActual) {
             case this.lenguajes.python:
                 return `class ${nombre}${herencia ? `(${herencia})` : ""}:\n\t${campos.join("\n\t")}`;
 
@@ -199,7 +208,7 @@ class TipoStruct {
         let nombre = datos[this.config.nombreStruct];
         let herencia = datos[this.config.herede];
 
-        switch (lenguaje) {
+        switch (this.lenguajeActual) {
             case this.lenguajes.python:
                 return `class ${nombre}${herencia ? `(${herencia})` : ""}`;
 
@@ -222,4 +231,4 @@ class TipoStruct {
     }
 }
 
-module.exports = (tp, manejoTipoDeDatos, lenguaje) => TipoStruct(tp, manejoTipoDeDatos, lenguaje);
+module.exports = (tp, manejoTipoDeDatos, lenguaje = null) => new TipoStruct(tp, manejoTipoDeDatos, lenguaje);

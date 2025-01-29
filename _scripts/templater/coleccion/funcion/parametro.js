@@ -1,7 +1,7 @@
 const SALIR = "salir";
 
 class Parametro {
-    constructor(tp, manejoTipoDeDatos, lenguaje) {
+    constructor(tp, manejoTipoDeDatos, lenguaje = null) {
         const { 
             SIMBOLOS, DATOS: { 
                 FUNCIONES: { parametro: DATOS_PARAMETROS },
@@ -9,11 +9,10 @@ class Parametro {
             } 
         } = tp.user.constantes();
 
+        this.lenguajeActual = (lenguaje in LENGUAJES) ? lenguaje : LENGUAJES.default;
         this.lenguajes = LENGUAJES; 
-        this.datosLenguaje = DATOS_LENGUAJES[(lenguaje in LENGUAJES) 
-            ? lenguaje 
-            : LENGUAJES.default
-        ];
+        this.datosLenguaje = DATOS_LENGUAJES[this.lenguajeActual];
+
         this.config = DATOS_PARAMETROS;
         this.simbolos = SIMBOLOS;
 
@@ -31,6 +30,13 @@ class Parametro {
         this.preguntar = tp.user.preguntar();
         this.error = tp.user.error();
         this.crearPreguntas = tp.user.crearPreguntas;
+
+        this.obtenerDefault = this.obtenerDefault.bind(this);
+        this.actualizarDatos = this.actualizarDatos.bind(this);
+        this.generarPreguntas = this.generarPreguntas.bind(this);
+        this.eliminar = this.eliminar.bind(this);
+        this.describir = this.describir.bind(this);
+        this.esValido = this.esValido.bind(this);
     }
 
     obtenerDefault(TIPOS_DE_DEFAULT, crearFuncion) {
@@ -76,7 +82,8 @@ class Parametro {
             case this.config.tipoDeDato:
                 datos[this.config.tipoDeDato] = await this.crearPreguntas(
                     tp, this.informacion.tipoDeDato.obtenerDefault, this.informacion.tipoDeDato.actualizarDatos,
-                    this.informacion.tipoDeDato.generarPreguntas, "Ingresar los datos del tipo de dato", datos[this.config.tipoDeDato]
+                    this.informacion.tipoDeDato.generarPreguntas, "Ingresar los datos del tipo de dato", 
+                    datos[this.config.tipoDeDato]
                 );
                 break;
 
@@ -126,6 +133,8 @@ class Parametro {
     }
 
     eliminar(datos) {
+        if (!datos) return;
+
         if (!datos[this.config.tipoDeDato])
             return;
         this.informacion.tipoDeDato.eliminar(datos[this.config.tipoDeDato]);
@@ -137,7 +146,7 @@ class Parametro {
         let descripcionTipoDato = this.informacion.tipoDeDato.describir(parametro[this.config.tipoDeDato]);
         let textoDefault = "";
 
-        switch (lenguaje) {
+        switch (this.lenguajeActual) {
             case this.lenguajes.python:
                 if (this.datosLenguaje.parametroValorPorDefecto && parametro[this.configg.valorPorDefecto]) {
                     textoDefault = `= ${parametro[this.config.valorPorDefecto]}`;
@@ -167,4 +176,4 @@ class Parametro {
     }
 }
 
-module.exports = (tp, manejoTipoDeDatos, lenguaje) => Parametro(tp, manejoTipoDeDatos, lenguaje);
+module.exports = (tp, manejoTipoDeDatos, lenguaje = null) => new Parametro(tp, manejoTipoDeDatos, lenguaje);

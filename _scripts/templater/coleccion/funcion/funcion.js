@@ -3,18 +3,17 @@ const ELIMINAR_PARAMETRO = "eliminar parametro";
 const SALIR = "salir";
 
 class Funcion {
-    constructor(tp, manejoTipoDeDatos, lenguaje) {
+    constructor(tp, manejoTipoDeDatos, lenguaje = null) {
         const { 
             SIMBOLOS, DATOS: { 
                 FUNCIONES: { funcion: { firma: DATOS_FIRMA } }, LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } 
             } 
         } = tp.user.constantes();
 
+        this.lenguajeActual = (lenguaje in LENGUAJES) ? lenguaje : LENGUAJES.default;
         this.lenguajes = LENGUAJES; 
-        this.datosLenguaje = DATOS_LENGUAJES[(lenguaje in LENGUAJES) 
-            ? lenguaje 
-            : LENGUAJES.default
-        ];
+        this.datosLenguaje = DATOS_LENGUAJES[this.lenguajeActual];
+
         this.config = DATOS_FIRMA;
         this.simbolos = SIMBOLOS;
 
@@ -39,6 +38,13 @@ class Funcion {
         this.preguntar = tp.user.preguntar();
         this.error = tp.user.error();
         this.crearPreguntas = tp.user.crearPreguntas;
+
+        this.obtenerDefault = this.obtenerDefault.bind(this);
+        this.actualizarDatos = this.actualizarDatos.bind(this);
+        this.generarPreguntas = this.generarPreguntas.bind(this);
+        this.eliminar = this.eliminar.bind(this);
+        this.describir = this.describir.bind(this);
+        this.esValido = this.esValido.bind(this);
     }
 
     obtenerDefault(TIPOS_DE_DEFAULT, crearFuncion) {
@@ -81,7 +87,7 @@ class Funcion {
                 if (indice) parametroPrevio = datos[this.config.parametros][indice];
 
                 let parametro = await this.crearPreguntas(
-                    tp, this.informacion.parametro.obtenerDefault, this.informacion.actualizarDatos,
+                    tp, this.informacion.parametro.obtenerDefault, this.informacion.parametro.actualizarDatos,
                     this.informacion.parametro.generarPreguntas, "Ingresar los datos del parámetro", parametroPrevio
                 );
 
@@ -129,28 +135,36 @@ class Funcion {
         )
 
         for (let [indice, parametro] of datos[this.config.parametros].entries()) {
+            let descripcion = this.informacion.parametro.describir(parametro)
+                .replaceAll("\n", "\n\t");
+
             opciones.push(`${this.config.parametros}-${indice}`);
-            valores.push(`️ ${this.simbolos.modificar} Modificar el parámetro, donde es ${this.informacion.parametro.describir(parametro)}`);
+            valores.push(`️ ${this.simbolos.modificar} Modificar el parámetro, donde es ${descripcion}`);
         }
 
         if (datos[this.config.parametros].length > 0) {
             let ultimoParametro = datos[this.config.parametros].last();
-            opciones.push(ELIMINAR_PARAMETRO);
-            valores.push(` ${this.simbolos.sacar} Eliminar el parámetro, donde es ${this.informacion.parametro.describir(ultimoParametro)}`);
+            let descripcion = this.informacion.parametro.describir(ultimoParametro)
+                .replaceAll("\n", "\n\t");
 
+            opciones.push(ELIMINAR_PARAMETRO);
+            valores.push(` ${this.simbolos.sacar} Eliminar el parámetro, donde es ${descripcion}`);
         }
 
         opciones.push(this.config.parametros);
         valores.push(` ${this.simbolos.agregar} ${this.simbolos.opcional} Parámetro`);
 
         let simboloReturnOpcional = this.datosLenguaje.returnOpcional ? `${this.simbolos.opcional} ` : "";
-        opciones.push(this.simbolos.return);
+        let describirReturnValue = this.informacion.return.describir(datos[this.config.return])
+            .replaceAll("\n", "\n\t");
+
+        opciones.push(this.config.return);
         valores.push(this.informacion.return.esValido(datos[this.config.return])
-            ? ` ${this.simbolos.modificar} Modificar el valor de retorno de la función, donde era ${this.informacion.return.describir(datos[this.config.return])}`
+            ? ` ${this.simbolos.modificar} Modificar el valor de retorno de la función, donde era ${describirReturnValue}`
             : ` ${this.simbolos.agregar} ${simboloReturnOpcional}Valor de retorno de la función`
         )
 
-        if (this.esValido(tp)) {
+        if (this.esValido(datos)) {
             opciones.push(SALIR);
             valores.push(` ${this.simbolos.volver} Confirmar datos`);
         }
@@ -159,6 +173,8 @@ class Funcion {
     }
 
     eliminar(datos) {
+        if (!datos) return;
+
         for (let parametro of datos[this.config.parametros]) {
             this.informacion.parametro.eliminar(parametro);
         }
@@ -166,7 +182,7 @@ class Funcion {
     }
 
     describir(datos) {
-        if (!esValido(datos)) return "";
+        if (!this.esValido(datos)) return "";
 
         let nombre = datos[this.config.nombreFuncion];
         let parametros = datos[this.config.parametros]
@@ -174,7 +190,7 @@ class Funcion {
         let returnValue = this.informacion.return.describir(datos[this.config.return])
 
         let descripcion = "";
-        switch (lenguaje) {
+        switch (this.lenguajeActual) {
             case this.lenguajes.python:
                 descripcion = `def ${nombre}(${parametros.join(", ")})`;
                 if (this.informacion.return.esValido(datos[this.config.return])) {
@@ -195,7 +211,7 @@ class Funcion {
 
             default:
                 descripcion = `function ${nombre} :: `;
-                descripcion = parametros.length > 0
+                descripcion += parametros.length > 0
                     ? parametros.join(", ")
                     : "()";
 
@@ -216,4 +232,4 @@ class Funcion {
     }
 }
 
-module.exports = (tp, manejoTipoDeDatos, lenguaje) => Funcion(tp, manejoTipoDeDatos, lenguaje);
+module.exports = (tp, manejoTipoDeDatos, lenguaje = null) => new Funcion(tp, manejoTipoDeDatos, lenguaje);

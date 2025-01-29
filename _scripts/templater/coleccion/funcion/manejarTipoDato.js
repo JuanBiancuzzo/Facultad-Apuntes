@@ -1,27 +1,28 @@
 const LARGO_ID = 50;
 const CARACTERES = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
-/*
- * Crear un archivo o guardar en ese archivo los tipos de datos según el lenguaje usado 
- *  En el caso de tipos de datos primitivos, agregarlos a los archivos de la libreria del lenguaje
- *  Todos otro tipos de datos depende en donde se los este usando, para saber de donde sacarlos
- *      Caso de la forma de guardar funciones, ahí debería agregarselos a los archivos del modulo o libreria
- *      En el caso de las estructuras de datos, debería guardarlas la misma estructura 
- */
-
 class Contador {
     constructor(tp, datosPrevios = []) {
-        this.datos = tp.user.constantes().DATOS.FUNCIONES.tipoDeDato;
-        this.tipos = this.datos.tipo;
+        const { 
+            DATOS: { FUNCIONES: { tipoDeDato: { tipo: DATOS_TIPO }, manejador: DATOS_MANEJADOR } } 
+        } = tp.user.constantes();
 
+        this.config = DATOS_MANEJADOR;
         this.tiposDeDatos = {
-            [this.tipos.primitivo]: {},
-            [this.tipos.struct]: {},
-            [this.tipos.generico]: {},
+            [DATOS_TIPO.primitivo]: {},
+            [DATOS_TIPO.struct]: {},
+            [DATOS_TIPO.generico]: {},
         };
 
-        for (let { [this.datos.id]: id, [this.tipos.self]: tipo, [this.datos.valor]: valor } of datosPrevios) {
-            this.tiposDeDatos[tipo][id] = valor;
+        for (let { [this.config.id]: id, [this.config.tipo]: tipo, [this.config.valor]: valor } of datosPrevios) {
+            if (!(tipo in this.tiposDeDatos)) 
+                continue
+
+            this.tiposDeDatos[tipo][id] = {
+                [this.config.valor]: valor,
+                [this.config.apariciones]: 0,
+                [this.config.previo]: true,
+            };
         }
     }
 
@@ -32,11 +33,16 @@ class Contador {
      * @returns {string | null} El id del valor aguardado, o null en el caso que no pueda agregarlo
      */
     agregar(tipo, valor) {
-        if (!(tipo in this.tiposDeDatos[tipo])) 
+        if (!(tipo in this.tiposDeDatos)) 
             return null;
 
         let nuevoId = this.generarId();
-        this.tiposDeDatos[tipo][nuevoId] = valor;
+        this.tiposDeDatos[tipo][nuevoId] = {
+            [this.config.valor]: valor,
+            [this.config.apariciones]: 1,
+            [this.config.previo]: false,
+        };
+
         return nuevoId;
     }
 
@@ -51,7 +57,7 @@ class Contador {
         if (!(tipo in this.tiposDeDatos) || !(id in this.tiposDeDatos[tipo])) 
             return false;
 
-        this.tiposDeDatos[tipo][id] = valor;
+        this.tiposDeDatos[tipo][id][this.config.valor] = valor;
         return true;
     }
 
@@ -65,7 +71,20 @@ class Contador {
         if (!(tipo in this.tiposDeDatos) || !(id in this.tiposDeDatos[tipo])) 
             return null;
 
-        return this.tiposDeDatos[tipo][id];
+        return this.tiposDeDatos[tipo][id][this.config.valor];
+    }
+
+    /**
+     * Se usa para indicar que se utiliza un tipo de dato en algún otro lugar
+     * @param {string} tipo El tipo del valor a indicar
+     * @param {string} id El id del elemento a indicar
+     * @returns {boolean} Se devuelve true si se pudo indicar 
+     */
+    aparicion(tipo, id) {
+        if (!(tipo in this.tiposDeDatos)) return false;
+
+        this.tiposDeDatos[tipo][id][this.config.apariciones]++;
+        return true;
     }
 
     /**
@@ -90,7 +109,13 @@ class Contador {
     eliminar(tipo, id) {
         if (!(tipo in this.tiposDeDatos)) return false;
 
-        return delete this.tiposDeDatos[tipo][id];
+        this.tiposDeDatos[tipo][id][this.config.apariciones]--;
+
+        if (this.tiposDeDatos[tipo][id][this.config.apariciones] <= 0 && !this.tiposDeDatos[tipo][id][this.config.previo]) {
+            return delete this.tiposDeDatos[tipo][id];
+        }
+
+        return true;
     }
 
     /**
@@ -102,23 +127,27 @@ class Contador {
         if (!(tipo in this.tiposDeDatos)) 
             return [];
 
-        return Object.entries(this.tiposDeDatos[tipo]).map(([id, valor]) => ({
-            [this.datos.id]: id,
-            [this.datos.valor]: valor,
-        }));
+        return Object.entries(this.tiposDeDatos[tipo])
+            .map(([id, objeto]) => ({
+                [this.config.id]: id,
+                [this.config.valor]: objeto[this.config.valor],
+                [this.config.apariciones]: objeto[this.config.apariciones],
+            }));
     }
 
     /**
      * Devuelve un array con todos los tipos de datos guardados, 
      * @returns {[{ id: string, tipo: string, valor: Object }]} Se devuelve una lista de todos los elementos, con sus ids, tipos y valores
      */
-    obtenerInformacion() {
+    obtenerTotal() {
         return Object.entries(this.tiposDeDatos).flatMap(([tipo, tiposDeDato]) => {
-            return Object.entries(tiposDeDato).map(([id, valor]) => ({
-                [this.datos.id]: id,
-                [this.tipos.self]: tipo,
-                [this.datos.valor]: valor,
-            }));
+            return Object.entries(tiposDeDato)
+                .map(([id, objeto]) => ({
+                    [this.config.id]: id,
+                    [this.config.tipo]: tipo,
+                    [this.config.valor]: objeto[this.config.valor],
+                    [this.config.apariciones]: objeto[this.config.apariciones],
+                }));
         });
     }
 
@@ -136,4 +165,4 @@ class Contador {
     }
 }
 
-module.exports = (tp) => Contador(tp);
+module.exports = (tp, datosPrevios = []) => new Contador(tp, datosPrevios);

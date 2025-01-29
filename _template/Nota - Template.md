@@ -8,8 +8,8 @@
             proyecto: tp.user.nota().notaProyecto,
         },
         coleccion: {
-            estructuraDatos: tp.user.estructuraDeDatos().crear.estructura,
-            libreriaFunciones: tp.user.libreriaFunciones().crear.funcion,
+            estructuraDatos: tp.user.estructuraDeDatos().crear,
+            libreriaFunciones: tp.user.libreriaFunciones().crear,
         },
         referencia: tp.user.referencia().crear.referenciaSimple,
     };
