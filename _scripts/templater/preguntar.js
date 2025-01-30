@@ -1,3 +1,5 @@
+const SALIR = "salir";
+
 async function preguntarFecha(tp, mensaje, errorFormatoIncorrecto, errorFechaIncorrecta) {
     let fechaVideoTexto = await proxyPrompt(tp, `${mensaje} (formato: DD/MM/YYYY)`, errorFechaIncorrecta);
     let fechaVideo = moment(fechaVideoTexto, "D/MM/YYYY");
@@ -64,11 +66,44 @@ async function preguntarSeccion(tp, tipo) {
     };
 }
 
+async function crearFormulario(tp, datos, mensaje) {
+    const error = tp.user.error();
+    const preguntar = tp.user.preguntar();
+    const generarPreguntas = {
+        prompt: preguntar.prompt.bind(null, tp),
+        suggester: preguntar.suggester.bind(null, tp),
+        formulario: preguntar.formulario.bind(null, tp),
+    };
+
+    let continuar;
+    do {
+        let { opciones, valores } = datos.generarPreguntas();
+
+        let respuesta = opciones[0];
+        if (opciones.length > 1) {
+            respuesta = await proxySuggester(
+                tp, valores, opciones, mensaje,
+                error.Prompt("No se completó los datos necesarios")
+            );
+        }
+
+        try {
+            continuar = await datos.actualizarDatos(respuesta, generarPreguntas, error);
+        } catch ({ name: _, message: mensaje }) {
+            new Notice(mensaje);
+            console.log(mensaje);
+            continue;
+        }
+
+    } while (!continuar);
+}
+
 module.exports = () => ({
     fecha: preguntarFecha,
     numero: preguntarNumero,
     prompt: proxyPrompt,
     suggester: proxySuggester,
+    formulario: crearFormulario,
     legal: {
         seccion: preguntarSeccion,
     }

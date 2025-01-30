@@ -11,6 +11,7 @@ module.exports = () => ({
         sacar: "⊖",
         agregar: "⊕",
         volver: "↶",
+        confirmar: "↶",
         elegir: "↶",
         modificar: "✏️",
         opcional: "(opcional)",
@@ -329,13 +330,10 @@ module.exports = () => ({
             },
             funcion: {
                 tags: "tags",
-                firma: {
-                    self: "firma",
-                    nombreFuncion: "nombre",
-                    descripcion: "descripcion",
-                    parametros: "parametros",
-                    return: "return",
-                },
+                nombreFuncion: "nombre",
+                descripcion: "descripcion",
+                parametros: "parametros",
+                return: "return",
             },
             parametro: {
                 nombreParametro: "nombre",
@@ -363,16 +361,18 @@ module.exports = () => ({
             },
             tipoDeDato: {
                 id: "id",
+                valor: "valor",
                 tipo: {
                     self: "type",
                     primitivo: "Primitivo",
                     tupla: "Tupla",
                     array: "Array",
                     struct: "Struct",
-                    // enum: "Enum",
                     generico: "Generico",
+                    enum: "Enum",
+                    referencia: "Referencia",
+                    union: "Union",
                 },
-                valor: "valor",
             },
             manejador: {
                 id: "id",
