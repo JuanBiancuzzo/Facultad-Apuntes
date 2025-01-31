@@ -1,7 +1,9 @@
+const MODIFICCAR_TIPO_DE_DATO = "modificar tipo de dato";
+
 const SALIR = "salir";
 
 class Return {
-    constructor(tp, manejoTipoDeDatos, lenguaje = null) {
+    constructor(tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
         const { 
             SIMBOLOS, DATOS: { 
                 FUNCIONES: { return: DATOS_RETURN },
@@ -18,78 +20,67 @@ class Return {
 
         this.manejoTipoDeDatos = manejoTipoDeDatos;
 
+        this.descripcion = representacionPrevia[this.config.describir];
+        if (representacionPrevia[this.config.tipoDeDato]) {
+            this.tipoDeDato = tp.user.tipoDeDato(
+                tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia[this.config.tipoDeDato]
+            );
+        }
+
         this.informacion = {
-            _claseTipoDeDato: null,
-            get tipoDeDato() {
-                if (!this._claseTipoDeDato)
-                    this._claseTipoDeDato = tp.user.tipoDeDato(tp, manejoTipoDeDatos, lenguaje);
-                return this._claseTipoDeDato;
-            },
-        };
+            nuevoTipoDeDato() {
+                return tp.user.tipoDeDato(tp, this.manejoTipoDeDatos, this.lenguajeActual);
+            }
+        }
+    } 
 
-        this.preguntar = tp.user.preguntar();
-        this.error = tp.user.error();
-        this.crearPreguntas = tp.user.crearPreguntas;
-
-        this.obtenerDefault = this.obtenerDefault.bind(this);
-        this.actualizarDatos = this.actualizarDatos.bind(this);
-        this.generarPreguntas = this.generarPreguntas.bind(this);
-        this.eliminar = this.eliminar.bind(this);
-        this.describir = this.describir.bind(this);
-        this.esValido = this.esValido.bind(this);
-    }
-
-    obtenerDefault(TIPOS_DE_DEFAULT, crearFuncion) {
-        return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
-            [this.config.tipoDeDato]: this.informacion.tipoDeDato.obtenerDefault(TIPOS_DE_DEFAULT, crearFuncion),
-            [this.config.descripcion]: TIPOS_DE_DEFAULT.simple,
-        }));
-    }
-    
-    async actualizarDatos(tp, datos, respuesta) {
-        let salir = false;
+    async actualizarDatos(respuesta, generarPreguntas, generarError) {
+        if (respuesta == SALIR) 
+            return true;
 
         switch (respuesta) {
             case this.config.descripcion:
-                datos[this.config.descripcion] = await this.preguntar.prompt(
-                    tp, datos[this.config.descripcion]
-                    ? `Nueva descripción del valor de retorno, donde antes era ${datos[this.config.descripcion]}`
-                    : "Descripción del valor de retorno",
-                    this.error.Quit("No se ingresó la descripción del valor de retorno")
+                this.descripcion = await generarPreguntas.prompt(
+                    this.descripcion
+                        ? `Nueva descripción del valor de retorno, donde antes era ${this.descripcion}`
+                        : "Descripción del valor de retorno",
+                    generarError.Quit("No se ingresó la descripción del valor de retorno")
                 );
                 break;
 
             case this.config.tipoDeDato:
-                datos[this.config.tipoDeDato] = await this.crearPreguntas(
-                    tp, this.informacion.tipoDeDato.obtenerDefault, this.informacion.tipoDeDato.actualizarDatos, 
-                    this.informacion.tipoDeDato.generarPreguntas, "Ingresar los datos del tipo de dato", datos[this.config.tipoDeDato]
-                );
+                this.tipoDeDato = this.informacion.nuevoTipoDeDato();
+                await generarPreguntas.formulario(this.tipoDeDato, "Ingresar datos del tipo de dato");
                 break;
-
-            case SALIR:
-                salir = true;
-                break;
+            
+            case MODIFICCAR_TIPO_DE_DATO:
+                await generarPreguntas.formulario(this.tipoDeDato, "Modificar tipo de dato");
         }
 
-        return salir;
+        return false;
     }
 
-    generarPreguntas(tp, datos) {
+    generarPreguntas() {
         let opciones = [], valores = [];
 
         opciones.push(this.config.descripcion);
-        valores.push(datos[this.config.descripcion]
-            ? ` ${this.simbolos.modificar} Modificar la descripción del valor de retorno, donde era ${datos[this.config.descripcion]}`
+        valores.push(this.descripcion
+            ? ` ${this.simbolos.modificar} Modificar la descripción del valor de retorno, donde era ${this.descripcion}`
             : ` ${this.simbolos.agregar} ${this.simbolos.opcional} Descripción del valor de retorno`
         )
 
-        opciones.push(this.config.tipoDeDato);
-        valores.push(this.informacion.tipoDeDato.esValido(datos[this.config.tipoDeDato])
-            ? ` ${this.simbolos.modificar} Modificar el tipo de dato, donde era ${this.informacion.tipoDeDato.describir(datos[this.config.tipoDeDato]).replaceAll("\n", "\n\t")}`
-            : ` ${this.simbolos.agregar} Tipo de dato`
-        )
+        if (this.tipoDeDato && this.tipoDeDato.esValido()) {
+            let descripcionTipoDeDato = this.tipoDeDato.descripcionCompleta()
+                .replaceAll("\n", "\n\t");
+            opciones.push(MODIFICCAR_TIPO_DE_DATO);
+            valores.push(` ${this.simbolos.modificar} Modificar el tipo de dato, donde era ${descripcionTipoDeDato}`);
 
-        if (this.esValido(datos)) {
+        } else {
+            opciones.push(this.config.tipoDeDato);
+            valores.push(` ${this.simbolos.agregar} Tipo de dato`);
+        }
+
+        if (this.esValido()) {
             opciones.push(SALIR);
             valores.push(` ${this.simbolos.volver} Confirmar datos`);
         }
@@ -97,23 +88,33 @@ class Return {
         return { opciones: opciones, valores: valores };
     }
 
-    eliminar(datos) {
-        if (!datos) return;
-
-        if (!datos[this.config.tipoDeDato])
-            return;
-        this.informacion.tipoDeDato.eliminar(datos[this.config.tipoDeDato]);
+    eliminar() {
+        if (this.tipoDeDato) {
+            this.tipoDeDato.eliminar();
+        }
     }
 
-    describir(returnValue) {
-        if (!this.esValido(returnValue)) return "";
-        return this.informacion.tipoDeDato.describir(returnValue[this.config.tipoDeDato]);
+    esValido() {
+        if (!this.tipoDeDato) return false;
+        return this.tipoDeDato.esValido();
     }
 
-    esValido(datos) {
-        if (!datos) return false;
-        return this.informacion.tipoDeDato.esValido(datos[this.config.tipoDeDato]);
+    generarRepresentacion() {
+        return {
+            [this.config.tipoDeDato]: this.tipoDeDato?.generarRepresentacion(),
+            [this.config.descripcion]: this.descripcion,
+        }
+    }
+
+    descripcionCompleta() {
+        if (!this.esValido()) return "";
+        return this.tipoDeDato.descripcionCompleta();
+    }
+
+    descripcionArgumento() {
+        if (!this.esValido()) return "";
+        return this.tipoDeDato.descripcionArgumento();
     }
 }
 
-module.exports = (tp, manejoTipoDeDatos, lenguaje = null) => new Return(tp, manejoTipoDeDatos, lenguaje);
+module.exports = (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new Return(tp, manejoTipoDeDatos, lenguaje, representacionPrevia);

@@ -1,12 +1,17 @@
 const ELIMINAR_PARAMETRO = "eliminar parametro";
+const MODIFICAR_PARAMETRO = "modificar parametro";
+
+const MODIFICAR_RETURN = "modificar return";
+
+const CANTIDAD_MINIMA = 0;
 
 const SALIR = "salir";
 
 class Funcion {
-    constructor(tp, manejoTipoDeDatos, lenguaje = null) {
+    constructor(tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
         const { 
             SIMBOLOS, DATOS: { 
-                FUNCIONES: { funcion: { firma: DATOS_FIRMA } }, LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } 
+                FUNCIONES: { funcion: DATOS_FUNCION }, LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } 
             } 
         } = tp.user.constantes();
 
@@ -14,157 +19,138 @@ class Funcion {
         this.lenguajes = LENGUAJES; 
         this.datosLenguaje = DATOS_LENGUAJES[this.lenguajeActual];
 
-        this.config = DATOS_FIRMA;
+        this.config = DATOS_FUNCION;
         this.simbolos = SIMBOLOS;
 
         this.manejoTipoDeDatos = manejoTipoDeDatos;
 
+        this.nombre = representacionPrevia[this.config.nombreFuncion];
+        this.descripcion = representacionPrevia[this.config.descripcion];
+        this.parametros = [];
+
+        let parametrosPrevios = representacionPrevia[this.config.parametros] 
+            ? representacionPrevia[this.config.parametros] : [];
+        for (let parametroPrevio of parametrosPrevios) {
+            this.parametros.push(tp.user.parametro(tp, this.manejoTipoDeDatos, this.lenguajeActual, parametroPrevio));
+        }
+
+        if (representacionPrevia[this.config.return]) {
+            this.return = tp.user.retrun(tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia[this.config.return]);
+        }
+
         this.informacion = {
-            _claseParametro: null,
-            get parametro() {
-                if (!this._claseParametro)
-                    this._claseParametro = tp.user.parametro(tp, manejoTipoDeDatos, lenguaje);
-                return this._claseParametro;
+            nuevoParametro() {
+                return tp.user.parametro(tp, this.manejoTipoDeDatos, this.lenguajeActual);
             },
 
-            _claseReturn: null,
-            get return() {
-                if (!this._claseReturn)
-                    this._claseReturn = tp.user.return(tp, manejoTipoDeDatos, lenguaje);
-                return this._claseReturn;
+            nuevoReturn() {
+                return tp.user.return(tp, this.manejoTipoDeDatos, this.lenguajeActual);
             },
         };
+    } 
 
-        this.preguntar = tp.user.preguntar();
-        this.error = tp.user.error();
-        this.crearPreguntas = tp.user.crearPreguntas;
+    async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
+        if (respuestaDada == SALIR)
+            return true;
 
-        this.obtenerDefault = this.obtenerDefault.bind(this);
-        this.actualizarDatos = this.actualizarDatos.bind(this);
-        this.generarPreguntas = this.generarPreguntas.bind(this);
-        this.eliminar = this.eliminar.bind(this);
-        this.describir = this.describir.bind(this);
-        this.esValido = this.esValido.bind(this);
-    }
-
-    obtenerDefault(TIPOS_DE_DEFAULT, crearFuncion) {
-        return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
-            [this.config.nombreFuncion]: TIPOS_DE_DEFAULT.simple,
-            [this.config.descripcion]: TIPOS_DE_DEFAULT.simple,
-            [this.config.parametros]: crearFuncion(
-                TIPOS_DE_DEFAULT.array, 
-                () => this.informacion.parametro.obtenerDefault(TIPOS_DE_DEFAULT, crearFuncion),
-            ),
-            [this.config.return]: this.informacion.return.obtenerDefault(TIPOS_DE_DEFAULT, crearFuncion),
-        }));
-    }
-
-    async actualizarDatos(tp, datos, respuestaDada) {
-        let salir = false;
         let [respuesta, indice] = respuestaDada.split("-");
 
         switch (respuesta) {
             case this.config.nombreFuncion:
-                datos[this.config.nombreFuncion] = await this.preguntar.prompt(
-                    tp, datos[this.config.nombreFuncion]
-                    ? `Nuevo nombre de la función, donde antes era ${datos[this.config.nombreFuncion]}`
-                    : "Nombre de la función",
-                    this.error.Quit("No se ingresó el nombre de la función")
+                this.nombre = await generarPreguntas.prompt(
+                    this.nombre
+                        ? `Nuevo nombre de la función, donde antes era ${this.nombre}`
+                        : "Nombre de la función",
+                    generarError.Quit("No se ingresó el nombre de la función")
                 );
                 break;
 
             case this.config.descripcion:
-                datos[this.config.descripcion] = await this.preguntar.prompt(
-                    tp, datos[this.config.descripcion]
-                    ? `Nueva descripción de la función, donde antes era ${datos[this.config.descripcion]}`
-                    : "Descripción de la función",
-                    this.error.Quit("No se ingresó la descripción de la función")
+                this.descripcion = await generarPreguntas.prompt(
+                    this.descripcion
+                        ? `Nueva descripción de la función, donde antes era ${this.descripcion}`
+                        : "Descripción de la función",
+                    generarError.Quit("No se ingresó la descripción de la función")
                 );
                 break;
 
             case this.config.parametros:
-                let parametroPrevio;
-                if (indice) parametroPrevio = datos[this.config.parametros][indice];
-
-                let parametro = await this.crearPreguntas(
-                    tp, this.informacion.parametro.obtenerDefault, this.informacion.parametro.actualizarDatos,
-                    this.informacion.parametro.generarPreguntas, "Ingresar los datos del parámetro", parametroPrevio
-                );
-
-                if (indice) {
-                    datos[this.config.parametros][indice] = parametro;
-                } else {
-                    datos[this.config.parametros].push(parametro);
-                }
+                let nuevoParametro = this.informacion.nuevoParametro();
+                await generarPreguntas.formulario(nuevoParametro, "Ingresar los datos del parámetro");
+                this.parametros.push(nuevoParametro);
+                break;
+            
+            case MODIFICAR_PARAMETRO:
+                await generarPreguntas.formulario(this.parametros[indice], "Modificar los datos del parámetro");
                 break;
 
             case ELIMINAR_PARAMETRO:
-                let parametroEliminado = datos[this.config.parametros].pop();
-                this.informacion.parametro.eliminar(parametroEliminado);
+                let parametroEliminado = this.parametros.pop();
+                parametroEliminado.eliminar();
                 break;
 
             case this.config.return:
-                datos[this.config.return] = await this.crearPreguntas(
-                    tp, this.informacion.return.obtenerDefault, this.informacion.return.actualizarDatos,
-                    this.informacion.return.generarPreguntas, "Ingresar los datos del tipo de dato que se devuelve",
-                    datos[this.config.return] ? datos[this.config.return] : null
-                );
+                this.return = this.informacion.nuevoReturn();
+                await generarPreguntas.formulario(this.return, "Ingresar los datos del tipo de dato que se devuelve");
                 break;
 
-            case SALIR:
-                salir = true;
+            case MODIFICAR_RETURN:
+                await generarPreguntas.formulario(this.return, "Modificar los datos del tipo de dato que se devuelve");
                 break;
         }
 
-        return salir;
+        return false;
     }
 
-    generarPreguntas(tp, datos) {
+    generarPreguntas() {
         let opciones = [], valores = [];
 
         opciones.push(this.config.nombreFuncion);
-        valores.push(datos[this.config.nombreFuncion]
-            ? ` ${this.simbolos.modificar} Modificar el nombre de la función, donde era ${datos[this.config.nombreFuncion]}`
+        valores.push(this.nombre
+            ? ` ${this.simbolos.modificar} Modificar el nombre de la función, donde era ${this.nombre}`
             : ` ${this.simbolos.agregar} Nombre de la función`
         )
 
         opciones.push(this.config.descripcion);
-        valores.push(datos[this.config.descripcion]
-            ? ` ${this.simbolos.modificar} Modificar la descripción de la función, donde era ${datos[this.config.descripcion]}`
+        valores.push(this.descripcion
+            ? ` ${this.simbolos.modificar} Modificar la descripción de la función, donde era ${this.descripcion}`
             : ` ${this.simbolos.agregar} Descripción de la función`
         )
 
-        for (let [indice, parametro] of datos[this.config.parametros].entries()) {
-            let descripcion = this.informacion.parametro.describir(parametro)
-                .replaceAll("\n", "\n\t");
+        for (let [indice, parametro] of this.parametros.entries()) {
+            let descripcion = parametro.descripcionCompleta().replaceAll("\n", "\n\t");
 
-            opciones.push(`${this.config.parametros}-${indice}`);
+            opciones.push(`${MODIFICAR_PARAMETRO}-${indice}`);
             valores.push(`️ ${this.simbolos.modificar} Modificar el parámetro, donde es ${descripcion}`);
         }
 
-        if (datos[this.config.parametros].length > 0) {
-            let ultimoParametro = datos[this.config.parametros].last();
-            let descripcion = this.informacion.parametro.describir(ultimoParametro)
+        if (this.parametros.length >= CANTIDAD_MINIMA) {
+            let descripcion = this.parametros.last().descripcionCompleta()
                 .replaceAll("\n", "\n\t");
 
             opciones.push(ELIMINAR_PARAMETRO);
             valores.push(` ${this.simbolos.sacar} Eliminar el parámetro, donde es ${descripcion}`);
+
+            opciones.push(this.config.parametros);
+            valores.push(` ${this.simbolos.agregar} ${this.simbolos.opcional} Parámetro`);
+
+        } else {
+            opciones.push(this.config.parametros);
+            valores.push(` ${this.simbolos.agregar} Parámetro`);
         }
 
-        opciones.push(this.config.parametros);
-        valores.push(` ${this.simbolos.agregar} ${this.simbolos.opcional} Parámetro`);
+        if (this.return && this.return.esValido()) {
+            let descripcion = this.return.descripcionCompleta().replaceAll("\n", "\n\t");
+            opciones.push(MODIFICAR_RETURN);
+            valores.push(` ${this.simbolos.modificar} Modificar el valor de retorno de la función, donde era ${descripcion}`);
 
-        let simboloReturnOpcional = this.datosLenguaje.returnOpcional ? `${this.simbolos.opcional} ` : "";
-        let describirReturnValue = this.informacion.return.describir(datos[this.config.return])
-            .replaceAll("\n", "\n\t");
+        } else {
+            let simboloReturnOpcional = this.datosLenguaje.returnOpcional ? `${this.simbolos.opcional} ` : "";
+            opciones.push(this.config.return);
+            valores.push(` ${this.simbolos.agregar} ${simboloReturnOpcional}Valor de retorno de la función`);
+        }
 
-        opciones.push(this.config.return);
-        valores.push(this.informacion.return.esValido(datos[this.config.return])
-            ? ` ${this.simbolos.modificar} Modificar el valor de retorno de la función, donde era ${describirReturnValue}`
-            : ` ${this.simbolos.agregar} ${simboloReturnOpcional}Valor de retorno de la función`
-        )
-
-        if (this.esValido(datos)) {
+        if (this.esValido()) {
             opciones.push(SALIR);
             valores.push(` ${this.simbolos.volver} Confirmar datos`);
         }
@@ -172,51 +158,65 @@ class Funcion {
         return { opciones: opciones, valores: valores };
     }
 
-    eliminar(datos) {
-        if (!datos) return;
-
-        for (let parametro of datos[this.config.parametros]) {
-            this.informacion.parametro.eliminar(parametro);
+    eliminar() {
+        for (let parametro of this.parametros) {
+            parametro.eliminar();
         }
-        this.informacion.return.eliminar(datos[this.config.return]);
+
+        if (this.return) {
+            this.return.eliminar();
+        }
     }
 
-    describir(datos) {
-        if (!this.esValido(datos)) return "";
+    esValido() {
+        return this.nombre && this.descripcion && this.parametros.every(parametro => parametro && parametro.esValido())
+            && ((this.return && this.return.esValido()) || this.datosLenguaje.returnOpcional);
+    }
 
-        let nombre = datos[this.config.nombreFuncion];
-        let parametros = datos[this.config.parametros]
-            .map(param => this.informacion.parametro.describir(param));
-        let returnValue = this.informacion.return.describir(datos[this.config.return])
+    generarRepresentacion() {
+        return {
+            [this.config.nombreFuncion]: this.nombre,
+            [this.config.descripcion]: this.descripcion,
+            [this.config.parametros]: this.parametros
+                .map(parametro => parametro?.generarRepresentacion())
+                .filter(representacion => representacion !== undefined),
+            [this.config.return]: this.return?.generarRepresentacion(),
+        }
+    }
+
+    descripcionCompleta() {
+        if (!this.esValido()) return "";
+
+        let parametros = this.parametros.map(param => param.descripcionCompleta());
 
         let descripcion = "";
         switch (this.lenguajeActual) {
             case this.lenguajes.python:
-                descripcion = `def ${nombre}(${parametros.join(", ")})`;
-                if (this.informacion.return.esValido(datos[this.config.return])) {
-                    descripcion += ` -> ${returnValue}`;
+                descripcion = `def ${this.nombre}(${parametros.join(", ")})`;
+                if (this.return && this.return.esValido()) {
+                    descripcion += ` -> ${this.return.descripcionArgumento()}`;
                 }
+                descripcion += `:\n\tpass`;
                 break;
 
             case this.lenguajes.c:
-                descripcion = `${returnValue} ${nombre}(${parametros.join(", ")})`;
+                descripcion = `${this.return.descripcionArgumento()} ${this.nombre}(${parametros.join(", ")});`;
                 break;
 
             case this.lenguajes.rust:
-                descripcion = `fn ${nombre}(${parametros.join(", ")})`;
-                if (this.informacion.parametro.esValido(datos[this.config.return])) {
-                    descripcion += ` -> ${returnValue}`;
-                }
+                descripcion = `fn ${this.nombre}(${parametros.join(", ")})`;
+                if (this.return && this.return.esValido()) {
+                    descripcion += ` -> ${this.return.descripcionArgumento()}`;
+                };
+                descripcion += ";";
                 break;
 
             default:
-                descripcion = `function ${nombre} :: `;
-                descripcion += parametros.length > 0
-                    ? parametros.join(", ")
-                    : "()";
+                descripcion = `function ${this.nombre} :: `;
+                descripcion += parametros.length > 0 ? parametros.join(", ") : "()";
 
-                if (this.informacion.return.esValido(datos[this.config.return])) {
-                    descripcion += ` -> ${returnValue}`;
+                if (this.return && this.return.esValido()) {
+                    descripcion += ` -> ${this.return.descripcionArgumento()}`;
                 };
                 break;
         }
@@ -224,12 +224,43 @@ class Funcion {
         return descripcion;
     }
 
-    esValido(datos) {
-        if (!datos) return false;
+    descripcionArgumento() {
+        if (!this.esValido()) return "";
 
-        return (this.informacion.return.esValido(datos[this.config.return]) || this.datosLenguaje.returnOpcional)
-            && [this.config.nombreFuncion, this.config.descripcion].every(key => datos[key]);
+        let parametros = this.parametros.map(param => param.descripcionArgumento());
+
+        let descripcion = "";
+        switch (this.lenguajeActual) {
+            case this.lenguajes.python:
+                let descripcionReturn = (this.return && this.return.esValido())
+                    ? this.return.descripcionArgumento()
+                    : "None";
+                descripcion = `${this.nombre} Callable[[${parametros.join(", ")}], ${descripcionReturn}]`;
+                break;
+
+            case this.lenguajes.c:
+                descripcion = `${this.return.descripcionArgumento()} (*${this.nombre})(${parametros.join(", ")});`;
+                break;
+
+            case this.lenguajes.rust:
+                descripcion = `${this.nombre}: fn (${parametros.join(", ")})`;
+                if (this.return && this.return.esValido()) {
+                    descripcion += ` -> ${this.return.descripcionArgumento()}`;
+                };
+                break;
+
+            default:
+                descripcion = `${this.nombre} function :: `;
+                descripcion += parametros.length > 0 ? parametros.join(", ") : "()";
+
+                if (this.return && this.return.esValido()) {
+                    descripcion += ` -> ${this.return.descripcionArgumento()}`;
+                };
+                break;
+        }
+
+        return descripcion;
     }
 }
 
-module.exports = (tp, manejoTipoDeDatos, lenguaje = null) => new Funcion(tp, manejoTipoDeDatos, lenguaje);
+module.exports = (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new Funcion(tp, manejoTipoDeDatos, lenguaje, representacionPrevia);

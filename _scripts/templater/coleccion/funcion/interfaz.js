@@ -6,7 +6,7 @@ const CANTIDAD_MINIMA = 1;
 const SALIR = "salir";
 
 class TipoInterfaz {
-    constructor(tp, manejoTipoDeDatos, lenguaje = null) {
+    constructor(tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
         const { 
             SIMBOLOS, DATOS: { 
                 FUNCIONES: { interfaz: DATOS_INTERFAZ },
@@ -25,93 +25,65 @@ class TipoInterfaz {
 
         this.manejoTipoDeDatos = manejoTipoDeDatos;
 
+        this.nombre = representacionPrevia[this.config.nombre];
+        this.metodos = [];
+
+        let metodosPrevios = representacionPrevia[this.config.metodos] ? representacionPrevia[this.config.metodos] : [];
+        for (let metodo of metodosPrevios) {
+            this.metodos.push(tp.user.funcion(tp, this.manejoTipoDeDatos, this.lenguajeActual, metodo));
+        }
+
         this.informacion = {
-            _claseFuncion: null,
-            get funcion() {
-                if (this._claseFuncion === null)
-                    this._claseFuncion = tp.user.funcion(tp, manejoTipoDeDatos, lenguaje);
-                return this._claseFuncion;
-            },
-        };
+            nuevoMetodo() { return tp.user.funcion(tp, this.manejoTipoDeDatos, this.lenguajeActual); }
+        }
+    } 
 
-        this.preguntar = tp.user.preguntar();
-        this.error = tp.user.error();
-        this.crearPreguntas = tp.user.crearPreguntas;
+    async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
+        if (respuestaDada == SALIR)
+            return true;
 
-        this.obtenerDefault = this.obtenerDefault.bind(this);
-        this.actualizarDatos = this.actualizarDatos.bind(this);
-        this.generarPreguntas = this.generarPreguntas.bind(this);
-        this.eliminar = this.eliminar.bind(this);
-        this.describir = this.describir.bind(this);
-        this.descripcionReducida = this.descripcionReducida.bind(this);
-        this.esValido = this.esValido.bind(this);
-    }
-
-    obtenerDefault(TIPOS_DE_DEFAULT, crearFuncion) {
-        return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
-            [this.config.nombre]: TIPOS_DE_DEFAULT.simple,
-            [this.config.metodos]: crearFuncion(
-                TIPOS_DE_DEFAULT.array, 
-                () => this.informacion.funcion.obtenerDefault(TIPOS_DE_DEFAULT, crearFuncion)
-            ),
-        }));
-    }
-
-    async actualizarDatos(tp, datos, respuestaDada) {
-        let salir = false;
         let [respuesta, indice] = respuestaDada.split("-");
 
         switch (respuesta) {
             case this.config.nombre:
-                datos[this.config.nombre] = await this.preguntar.prompt(
-                    tp, datos[this.config.nombre]
-                    ? `Nuevo nombre de la interfaz, donde antes era ${datos[this.config.nombre]}`
-                    : "Nombre de la interfaz",
-                    this.error.Quit("No se ingresó el nombre de la interfaz")
+                this.nombre = await generarPreguntas.prompt(
+                    this.nombre
+                        ? `Nuevo nombre de la interfaz, donde antes era ${this.nombre}`
+                        : "Nombre de la interfaz",
+                    generarError.Quit("No se ingresó el nombre de la interfaz")
                 );
                 break;
 
             case this.config.metodos:
-                let nuevoMetodo = await this.crearPreguntas(
-                    tp, this.informacion.funcion.obtenerDefault, this.informacion.funcion.actualizarDatos, 
-                    this.informacion.funcion.generarPreguntas, "Ingresar un método para la interfaz"
-                );
-                datos[this.config.metodos].push(nuevoMetodo);
+                let nuevoMetodo = this.informacion.nuevoMetodo();
+                await generarPreguntas.formulario(nuevoMetodo, "Ingresar un método para la interfaz");
+                this.metodos.push(nuevoMetodo);
                 break;
 
             case MODIFICAR_METODO:
-                datos[this.config.metodos][indice] = await this.crearPreguntas(
-                    tp, this.informacion.funcion.obtenerDefault, this.informacion.funcion.actualizarDatos, 
-                    this.informacion.funcion.generarPreguntas, "Modificar un método para la interfaz", 
-                    datos[this.config.metodos][indice]
-                );
+                await generarPreguntas.formulario(this.metodos[indice], "Modificar un método para la interfaz");
                 break;
 
             case ELIMINAR_METODO:
-                this.informacion.funcion.eliminar(datos[this.config.metodos][indice]);
+                this.metodos[indice].eliminar();
                 datos.splice(indice, 1);
-                break;
-
-            case SALIR:
-                salir = true;
                 break;
         }
 
-        return salir;
-
+        return false;
     }
 
-    generarPreguntas(tp, datos) {
+    generarPreguntas() {
         let opciones = [], valores = [];
 
         opciones.push(this.config.nombre);
-        valores.push(datos[this.config.nombre]
-            ? ` ${this.simbolos.modificar} Modificar el nombre de la interfaz, donde era ${datos[this.config.nombre]}`
+        valores.push(this.nombre
+            ? ` ${this.simbolos.modificar} Modificar el nombre de la interfaz, donde era ${this.nombre}`
             : ` ${this.simbolos.agregar} Nombre de la interfaz`
         )
 
-        for (let [indice, metodo] of datos[this.config.metodos].entries()) {
-            let descripcion = this.informacion.funcion.describir(metodo)
+        for (let [indice, metodo] of this.metodos.entries()) {
+            let descripcion = metodo.descripcionCompleta()
                 .replaceAll("\n", "\n\t");
 
             opciones.push(`${MODIFICAR_METODO}-${indice}`);
@@ -121,7 +93,7 @@ class TipoInterfaz {
             valores.push(`️ ${this.simbolos.sacar} Eliminar el método, donde es ${descripcion}`);
         }
 
-        if (datos[this.config.metodos].length >= CANTIDAD_MINIMA) {
+        if (this.metodos.length >= CANTIDAD_MINIMA) {
             opciones.push(this.config.metodos);
             valores.push(` ${this.simbolos.agregar} ${this.simbolos.opcional} Método`);
 
@@ -130,7 +102,7 @@ class TipoInterfaz {
             valores.push(` ${this.simbolos.agregar} Método`);
         }
 
-        if (this.esValido(datos)) {
+        if (this.esValido()) {
             opciones.push(SALIR);
             valores.push(` ${this.simbolos.volver} Confirmar datos`);
         }
@@ -138,39 +110,44 @@ class TipoInterfaz {
         return { opciones: opciones, valores: valores };
     }
 
-    eliminar(datos) {
-        if (!datos) return;
-
-        for (let metodo of datos[this.config.metodos]) {
-            this.informacion.funcion.eliminar(metodo);
+    eliminar() {
+        for (let metodo of this.metodos) {
+            metodo.eliminar();
         }
     }
 
-    describir(datos) {
-        if (!this.esValido(datos)) return "";
+    esValido() {
+        return this.nombre && this.metodos.length >= CANTIDAD_MINIMA 
+            && this.metodos.every(metodo => metodo && metodo.esValido());
+    }
 
-        let metodos = datos[this.config.metodos].map(metodo => this.informacion.funcion.describir(metodo));
+    generarRepresentacion() {
+        return {
+            [this.config.nombre]: this.nombre,
+            [this.config.metodos]: this.metodos
+                .map(metodo => metodo?.generarRepresentacion())
+                .filter(representacion => representacion !== undefined)
+        }
+    }
+
+    descripcionCompleta() {
+        if (!this.esValido()) return "";
+
+        let descripcionMetodos = this.metodos.map(metodo => metodo.descripcionCompleta());
 
         switch (this.lenguajeActual) {
             case this.lenguajes.rust:
-                return `trait ${datos[this.config.nombre]} {\n${metodos.map(metodo => `\t${metodo};\n`)}}`;
+                return `trait ${this.nombre} {\n${descripcionMetodos.map(metodo => `\t${metodo};\n`)}}`;
 
             default:
-                return `interface ${datos[this.config.nombre]} then \n${metodos.map(metodo => `\t${metodo}\n`)}end`;
+                return `interface ${this.nombre} then \n${descripcionMetodos.map(metodo => `\t${metodo}\n`)}end`;
         }
     }
 
-    descripcionReducida(datos) {
-        if (!this.esValido(datos)) return "";
+    descripcionArgumento() {
+        if (!this.esValido()) return "";
         return datos[this.config.nombre];
-    }
-
-    esValido(datos) {
-        if (!datos) return false;
-
-        return datos[this.config.nombre] && datos[this.config.metodos].length >= CANTIDAD_MINIMA
-            && datos[this.config.metodos].every(metodo => this.informacion.funcion.esValido(metodo))
     }
 }
 
-module.exports = (tp, manejoTipoDeDatos, lenguaje = null) => new TipoInterfaz(tp, manejoTipoDeDatos, lenguaje);
+module.exports = (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new TipoInterfaz(tp, manejoTipoDeDatos, lenguaje, representacionPrevia);

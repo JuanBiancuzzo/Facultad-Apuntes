@@ -1,7 +1,9 @@
+const MODIFICCAR_TIPO_DE_DATO = "modificar tipo de dato";
+
 const SALIR = "salir";
 
 class Parametro {
-    constructor(tp, manejoTipoDeDatos, lenguaje = null) {
+    constructor(tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
         const { 
             SIMBOLOS, DATOS: { 
                 FUNCIONES: { parametro: DATOS_PARAMETROS },
@@ -18,113 +20,101 @@ class Parametro {
 
         this.manejoTipoDeDatos = manejoTipoDeDatos;
 
+        this.nombre = representacionPrevia[this.config.nombreParametro];
+        this.descripcion = representacionPrevia[this.config.descripcion];
+        this.valorPorDefecto = representacionPrevia[this.config.valorPorDefecto];
+        if (representacionPrevia[this.config.tipoDeDato]) {
+            this.tipoDeDato = tp.user.tipoDeDato(
+                tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia[this.config.tipoDeDato]
+            );
+        }
+
         this.informacion = {
-            _claseTipoDeDato: null,
-            get tipoDeDato() {
-                if (!this._claseTipoDeDato)
-                    this._claseTipoDeDato = tp.user.tipoDeDato(tp, manejoTipoDeDatos, lenguaje);
-                return this._claseTipoDeDato;
-            },
-        };
+            nuevoTipoDeDato() {
+                return tp.user.tipoDeDato(tp, this.manejoTipoDeDatos, this.lenguajeActual);
+            }
+        }
+    } 
 
-        this.preguntar = tp.user.preguntar();
-        this.error = tp.user.error();
-        this.crearPreguntas = tp.user.crearPreguntas;
-
-        this.obtenerDefault = this.obtenerDefault.bind(this);
-        this.actualizarDatos = this.actualizarDatos.bind(this);
-        this.generarPreguntas = this.generarPreguntas.bind(this);
-        this.eliminar = this.eliminar.bind(this);
-        this.describir = this.describir.bind(this);
-        this.esValido = this.esValido.bind(this);
-    }
-
-    obtenerDefault(TIPOS_DE_DEFAULT, crearFuncion) {
-        return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
-            [this.config.nombreParametro]: TIPOS_DE_DEFAULT.simple,
-            [this.config.tipoDeDato]: this.informacion.tipoDeDato.obtenerDefault(TIPOS_DE_DEFAULT, crearFuncion),
-            [this.config.valorPorDefecto]: TIPOS_DE_DEFAULT.simple,
-            [this.config.descripcion]: TIPOS_DE_DEFAULT.simple,
-        }));
-    }
-
-    async actualizarDatos(tp, datos, respuesta) {
-        let salir = false;
+    async actualizarDatos(respuesta, generarPreguntas, generarError) {
+        if (respuesta == SALIR) 
+            return true;
 
         switch (respuesta) {
             case this.config.nombreParametro:
-                datos[this.config.nombreParametro] = await this.preguntar.prompt(
-                    tp, datos[this.config.nombreParametro]
-                    ? `Nuevo nombre del parámetro, donde antes era ${datos[this.config.nombreParametro]}`
-                    : "Nombre del parámetro",
-                    this.error.Quit("No se ingresó el nombre del parámetro")
+                this.nombre = await generarPreguntas.prompt(
+                    this.nombre
+                        ? `Nuevo nombre del parámetro, donde antes era ${this.nombre}`
+                        : "Nombre del parámetro",
+                    generarError.Quit("No se ingresó el nombre del parámetro")
                 );
                 break;
 
             case this.config.descripcion:
-                datos[this.config.descripcion] = await this.preguntar.prompt(
-                    tp, datos[this.config.descripcion]
-                    ? `Nueva descripción del parámetro, donde antes era ${datos[this.config.descripcion]}`
-                    : "Descripción del parámetro",
-                    this.error.Quit("No se ingresó la descripción del parámetro")
+                this.descripcion = await generarPreguntas.prompt(
+                    this.descripcion
+                        ? `Nueva descripción del parámetro, donde antes era ${this.descripcion}`
+                        : "Descripción del parámetro",
+                    generarError.Quit("No se ingresó la descripción del parámetro")
                 );
                 break;
 
             case this.config.valorPorDefecto:
-                datos[this.config.valorPorDefecto] = await this.preguntar.prompt(
-                    tp, datos[this.config.valorPorDefecto]
-                    ? `Nuevo valor por defecto del parámetro, donde antes era ${datos[this.config.valorPorDefecto]}`
-                    : "Valor por defecto del parámetro",
-                    this.error.Quit("No se ingresó el valor por defecto del parámetro")
+                this.valorPorDefecto = await generarPreguntas.prompt(
+                    this.valorPorDefecto
+                        ? `Nuevo valor por defecto del parámetro, donde antes era ${this.valorPorDefecto}`
+                        : "Valor por defecto del parámetro",
+                    generarError.Quit("No se ingresó el valor por defecto del parámetro")
                 );
                 break;
 
             case this.config.tipoDeDato:
-                datos[this.config.tipoDeDato] = await this.crearPreguntas(
-                    tp, this.informacion.tipoDeDato.obtenerDefault, this.informacion.tipoDeDato.actualizarDatos,
-                    this.informacion.tipoDeDato.generarPreguntas, "Ingresar los datos del tipo de dato", 
-                    datos[this.config.tipoDeDato]
-                );
+                this.tipoDeDato = this.informacion.nuevoTipoDeDato();
+                await generarPreguntas.formulario(this.tipoDeDato, "Ingresar datos del tipo de dato");
                 break;
-
-            case SALIR:
-                salir = true;
-                break;
+            
+            case MODIFICCAR_TIPO_DE_DATO:
+                await generarPreguntas.formulario(this.tipoDeDato, "Modificar tipo de dato");
         }
 
-        return salir;
+        return false;
     }
 
-    generarPreguntas(tp, datos) {
+    generarPreguntas() {
         let opciones = [], valores = [];
 
         opciones.push(this.config.nombreParametro);
-        valores.push(datos[this.config.nombreParametro]
-            ? ` ${this.simbolos.modificar} Modificar el nombre del parámetro, donde era ${datos[this.config.nombreParametro]}`
+        valores.push(this.nombre
+            ? ` ${this.simbolos.modificar} Modificar el nombre del parámetro, donde era ${this.nombre}`
             : ` ${this.simbolos.agregar} Nombre del parámetro`
         )
 
         opciones.push(this.config.descripcion);
-        valores.push(datos[this.config.descripcion]
-            ? ` ${this.simbolos.modificar} Modificar la descripción del parámetro, donde era ${datos[this.config.descripcion]}`
+        valores.push(this.descripcion
+            ? ` ${this.simbolos.modificar} Modificar la descripción del parámetro, donde era ${this.descripcion}`
             : ` ${this.simbolos.agregar} Descripción del parámetro`
         )
 
         if (this.datosLenguaje.parametroValorPorDefecto) {
             opciones.push(this.config.valorPorDefecto);
-            valores.push(datos[this.config.valorPorDefecto]
-                ? ` ${this.simbolos.modificar} Modificar el valor por defecto del parámetro, donde era ${datos[this.config.valorPorDefecto]}`
+            valores.push(this.valorPorDefecto
+                ? ` ${this.simbolos.modificar} Modificar el valor por defecto del parámetro, donde era ${this.valorPorDefecto}`
                 : ` ${this.simbolos.agregar} ${this.simbolos.opcional} Valor por defecto del parámetro`
             )
         }
 
-        opciones.push(this.config.tipoDeDato);
-        valores.push(this.informacion.tipoDeDato.esValido(datos[this.config.tipoDeDato])
-            ? ` ${this.simbolos.modificar} Modificar el tipo de dato, donde era ${this.informacion.tipoDeDato.describir(datos[this.config.tipoDeDato]).replaceAll("\n", "\n\t")}`
-            : ` ${this.simbolos.agregar} Tipo de dato`
-        )
+        if (this.tipoDeDato && this.tipoDeDato.esValido()) {
+            let descripcion = this.tipoDeDato.descripcionCompleta()
+                .replaceAll("\n", "\n\t");
+            opciones.push(MODIFICCAR_TIPO_DE_DATO);
+            valores.push(` ${this.simbolos.modificar} Modificar el tipo de dato, donde era ${descripcion}`);
 
-        if (this.esValido(datos)) {
+        } else {
+            opciones.push(this.config.tipoDeDato);
+            valores.push(` ${this.simbolos.agregar} Tipo de dato`);
+        }
+
+        if (this.esValido()) {
             opciones.push(SALIR);
             valores.push(` ${this.simbolos.volver} Confirmar datos`);
         }
@@ -132,48 +122,72 @@ class Parametro {
         return { opciones: opciones, valores: valores };
     }
 
-    eliminar(datos) {
-        if (!datos) return;
-
-        if (!datos[this.config.tipoDeDato])
-            return;
-        this.informacion.tipoDeDato.eliminar(datos[this.config.tipoDeDato]);
+    eliminar() {
+        if (this.tipoDeDato) {
+            this.tipoDeDato.eliminar();
+        }
     }
 
-    describir(parametro) {
-        if (!this.esValido(parametro)) return "";
+    esValido() {
+        return this.nombre && this.descripcion && this.tipoDeDato && this.tipoDeDato.esValido();
+    }
 
-        let descripcionTipoDato = this.informacion.tipoDeDato.describir(parametro[this.config.tipoDeDato]);
+    generarRepresentacion() {
+        return {
+            [this.config.nombreParametro]: this.nombre,
+            [this.config.descripcion]: this.descripcion,
+            [this.config.valorPorDefecto]: this.valorPorDefecto,
+            [this.config.tipoDeDato]: this.tipoDeDato?.generarRepresentacion(),
+        };
+    }
+
+    descripcionCompleta() {
+        if (!this.esValido()) return "";
+
+        let descripcionTipoDato = this.tipoDeDato.descripcionCompleta();
         let textoDefault = "";
 
         switch (this.lenguajeActual) {
             case this.lenguajes.python:
-                if (this.datosLenguaje.parametroValorPorDefecto && parametro[this.configg.valorPorDefecto]) {
-                    textoDefault = `= ${parametro[this.config.valorPorDefecto]}`;
+                if (this.datosLenguaje.parametroValorPorDefecto && this.valorPorDefecto) {
+                    textoDefault = `= ${this.valorPorDefecto}`;
                 }
 
-                return `${parametro[this.config.nombreParametro]}: ${descripcionTipoDato} ${textoDefault}`;
+                return `${this.nombre}: ${descripcionTipoDato} ${textoDefault}`;
 
             case this.lenguajes.rust:
-                return `${parametro[this.config.nombreParametro]}: ${parametro[this.config.tipoDeDato]}`;
+                return `${this.nombre}: ${descripcionTipoDato}`;
 
             case this.lenguajes.c:
-                return `${parametro[this.config.tipoDeDato]} ${parametro[this.config.nombreParametro]}`;
+                return `${descripcionTipoDato} ${this.nombre}`;
 
             default:
-                if (this.datosLenguaje.parametroValorPorDefecto && parametro[this.config.valorPorDefecto]) {
-                    textoDefault = `= ${parametro[this.config.valorPorDefecto]}`;
+                if (this.datosLenguaje.parametroValorPorDefecto && this.valorPorDefecto) {
+                    textoDefault = `= ${this.valorPorDefecto}`;
                 }
-                return `${parametro[this.config.nombreParametro]}: ${descripcionTipoDato} ${textoDefault}`;
+                return `${this.nombre}: ${descripcionTipoDato} ${textoDefault}`;
         }
     }
 
-    esValido(datos) {
-        if (!datos) return false;
+    descripcionArgumento() {
+        if (!this.esValido()) return "";
 
-        return [this.config.nombreParametro, this.config.descripcion].every(key => datos[key])
-            && this.informacion.tipoDeDato.esValido(datos[this.config.tipoDeDato]);
+        let descripcionTipoDato = this.tipoDeDato.descripcionArgumento();
+
+        switch (this.lenguajeActual) {
+            case this.lenguajes.python:
+                return `${descripcionTipoDato}`;
+
+            case this.lenguajes.rust:
+                return `${descripcionTipoDato}`;
+
+            case this.lenguajes.c:
+                return `${descripcionTipoDato}`;
+
+            default:
+                return `${descripcionTipoDato}`;
+        }
     }
 }
 
-module.exports = (tp, manejoTipoDeDatos, lenguaje = null) => new Parametro(tp, manejoTipoDeDatos, lenguaje);
+module.exports = (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new Parametro(tp, manejoTipoDeDatos, lenguaje, representacionPrevia);

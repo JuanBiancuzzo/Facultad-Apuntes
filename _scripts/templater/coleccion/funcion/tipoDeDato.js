@@ -8,13 +8,12 @@ const SALIR = "salir";
 
 class TipoDeDatoSimple {
     constructor(tp, manejoTipoDeDatos, lenguaje, representacionPrevia = {}) {
-        this.cte = tp.user.constantes();
         const { 
             SIMBOLOS, DATOS: { 
                 FUNCIONES: { tipoDeDato: { tipo: DATOS_TIPO, ...DATOS_TIPO_DE_DATO }, manejador: DATOS_MANEJADOR }, 
                 LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES },
             } 
-        } = this.cte;
+        } = tp.user.constantes();
 
         this.lenguajeActual = (lenguaje in LENGUAJES) ? lenguaje : LENGUAJES.default;
         this.lenguajes = LENGUAJES; 
@@ -214,7 +213,7 @@ class TipoDeDatoSimple {
                     
                 case this.tipos.tupla:
                     descripcion = this.valor.descripcionCompleta().replaceAll("\n", "\n\t");
-                    valores.push(this.valor.esValido()
+                    valores.push((this.valor && this.valor.esValido())
                         ? ` ${this.simbolos.modificar} Modificar el dato de una tupla, donde era ${descripcion}`
                         : ` ${this.simbolos.agregar} Datos de una tupla`
                     );
@@ -222,7 +221,7 @@ class TipoDeDatoSimple {
                     
                 case this.tipos.array:
                     descripcion = this.valor.descripcionCompleta().replaceAll("\n", "\n\t");
-                    valores.push(this.valor.esValido()
+                    valores.push((this.valor && this.valor.esValido())
                         ? ` ${this.simbolos.modificar} Modificar el dato de un array, donde era ${descripcion}`
                         : ` ${this.simbolos.agregar} Datos de un array`
                     );
@@ -231,7 +230,7 @@ class TipoDeDatoSimple {
                 case this.tipos.struct:
                     let valorStruct = this.manejoTipoDeDatos.obtener(this.tipo, this.id);
                     descripcion = valorStruct.describir().replaceAll("\n", "\n\t");
-                    valores.push(valorStruct.esValido()
+                    valores.push((valorStruct && valorStruct.esValido())
                         ? ` ${this.simbolos.modificar} Modificar el dato de una estructra, donde era ${descripcion}`
                         : ` ${this.simbolos.agregar} Datos de una estructura`
                     );
@@ -240,7 +239,7 @@ class TipoDeDatoSimple {
                 case this.tipos.generico:
                     let valorGenerico = this.manejoTipoDeDatos.obtener(this.tipo, this.id);
                     descripcion = valorGenerico.describir().replaceAll("\n", "\n\t");
-                    valores.push(valorGenerico.esValido()
+                    valores.push((valorStruct && valorGenerico.esValido())
                         ? ` ${this.simbolos.modificar} Modificar el dato de un generico, donde era ${descripcion}`
                         : ` ${this.simbolos.agregar} Datos de un generico`
                     );
@@ -276,19 +275,18 @@ class TipoDeDatoSimple {
     }
 
     esValido() {
-        if (!datos) return false;
-
         switch (this.tipo) {
             case this.tipos.primitivo:
                 return this.manejoTipoDeDatos.existe(this.tipo, this.id);
 
             case this.tipos.array:
             case this.tipos.tupla:
-                return this.valor.esValido();
+                return this.valor && this.valor.esValido();
 
             case this.tipos.struct:
             case this.tipos.generico:
-                return tis.manejoTipoDeDatos.obtener(this.tipo, this.id).esValido();
+                let valor = this.manejoTipoDeDatos.obtener(this.tipo, this.id);
+                return valor && valor.esValido();
 
             default: return false;
         }
@@ -341,13 +339,7 @@ class TipoDeDatoSimple {
 
 class TipoDeDatoMultiple {
     constructor(tp, manejoTipoDeDatos, lenguaje, representacionPrevia = []) {
-        this.cte = tp.user.constantes();
-        const { 
-            SIMBOLOS, DATOS: { 
-                FUNCIONES: { tipoDeDato: { tipo: DATOS_TIPO, ...DATOS_TIPO_DE_DATO }, manejador: DATOS_MANEJADOR }, 
-                LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES },
-            } 
-        } = this.cte;
+        const { SIMBOLOS, DATOS: { LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } } } = tp.user.constantes();
 
         this.lenguajeActual = (lenguaje in LENGUAJES) ? lenguaje : LENGUAJES.default;
         this.lenguajes = LENGUAJES; 
@@ -356,10 +348,6 @@ class TipoDeDatoMultiple {
         if (!this.datosLenguaje.multiplesTiposDatos) throw Error(`El lenguaje ${this.lenguajeActual} no tiene tipos de datos multiples`);
 
         this.simbolos = SIMBOLOS;
-        this.config = { ...DATOS_TIPO_DE_DATO, tipo: DATOS_TIPO.self };
-        this.tipos = DATOS_TIPO;
-        this.manejador = DATOS_MANEJADOR;
-
         this.manejoTipoDeDatos = manejoTipoDeDatos;
 
         this.datos = [];
@@ -431,40 +419,30 @@ class TipoDeDatoMultiple {
 
     esValido() {
         return this.datos.length >= CANTIDAD_MINIMA 
-            && this.datos.every(tipoDeDatoSimple => tipoDeDatoSimple.esValido());
+            && this.datos.every(tipoDeDatoSimple => tipoDeDatoSimple && tipoDeDatoSimple.esValido());
     }
 
     generarRepresentacion() {
-        return this.datos.map(tipoDeDatoSimple => tipoDeDatoSimple.generarRepresentacion);
+        return this.datos
+            .map(tipoDeDatoSimple => tipoDeDatoSimple?.generarRepresentacion())
+            .filter(representacion => representacion !== undefined);
     }
 
     descripcionCompleta() {
-        let descripciones = this.datos.map(tipoDeDatoSimple => tipoDeDatoSimple.descripcionCompleta());
+        if (!this.esValido()) return "";
 
-        switch (this.lenguajeActual) {
-            case this.lenguajes.python:
-                return descripciones.length > 1
-                    ? `${descripciones.join(" | ")}`
-                    : descripciones.first();
-
-            case this.lenguajes.rust:
-                return descripciones.length > 1
-                    ? `(${descripciones.join(", ")})`
-                    : descripciones.first();
-
-            case this.lenguajes.c:
-                return descripciones.first();
-
-            default:
-                return descripciones.length > 1
-                    ? `(${descripciones.join(" | ")})`
-                    : descripciones.first();
-        }
+        let descripciones = this.datos.map(tipoDeDato => tipoDeDato.descripcionCompleta());
+        return this.descripcionPorLenguaje(descripciones);
     }
 
     descripcionArgumento() {
-        let descripciones = this.datos.map(tipoDeDatoSimple => tipoDeDatoSimple.descripcionArgumento());
+        if (!this.esValido()) return "";
 
+        let descripciones = this.datos.map(tipoDeDatoSimple => tipoDeDatoSimple.descripcionArgumento());
+        return this.descripcionPorLenguaje(descripciones);
+    }
+
+    descripcionPorLenguaje(descripciones) {
         switch (this.lenguajeActual) {
             case this.lenguajes.python:
                 return descripciones.length > 1

@@ -7,98 +7,69 @@ const CANTIDAD_MINIMA = 2;
 const SALIR = "salir";
 
 class TipoTupla {
-    constructor(tp, manejoTipoDeDatos, lenguaje = null) {
-        const { 
-            SIMBOLOS, DATOS: { LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } } 
-        } = tp.user.constantes();
+    constructor(tp, manejoTipoDeDatos, lenguaje, representacionPrevia = []) {
+        this.cte = tp.user.constantes();
+        const { SIMBOLOS, DATOS: { LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } } } = this.cte;
 
         this.lenguajeActual = (lenguaje in LENGUAJES) ? lenguaje : LENGUAJES.default;
         this.lenguajes = LENGUAJES; 
         this.datosLenguaje = DATOS_LENGUAJES[this.lenguajeActual];
 
-
         if (!(this.datosLenguaje.tieneTupla)) throw Error(`El lenguaje ${this.lenguajeActual} no debería tener tuplas`);
 
         this.simbolos = SIMBOLOS;
-
         this.manejoTipoDeDatos = manejoTipoDeDatos;
 
+        this.datos = [];
+        for (let representacionTipoDeDato of representacionPrevia) {
+            this.datos.push(tp.user.tipoDeDato(tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionTipoDeDato));
+        }
+
         this.informacion = {
-            _claseTipoDeDato: null,
-            get tipoDeDato() {
-                if (!this._claseTipoDeDato)
-                    this._claseTipoDeDato = tp.user.tipoDeDato(tp, manejoTipoDeDatos, lenguaje);
-                return this._claseTipoDeDato;
-            },
-        };
-
-        this.preguntar = tp.user.preguntar();
-        this.error = tp.user.error();
-        this.crearPreguntas = tp.user.crearPreguntas;
-
-        this.obtenerDefault = this.obtenerDefault.bind(this);
-        this.actualizarDatos = this.actualizarDatos.bind(this);
-        this.generarPreguntas = this.generarPreguntas.bind(this);
-        this.eliminar = this.eliminar.bind(this);
-        this.describir = this.describir.bind(this);
-        this.esValido = this.esValido.bind(this);
+            nuevoTipoDeDato() { return tp.user.tipoDeDato(tp, this.manejoTipoDeDatos, this.lenguajeActual) },
+        }
     }
 
-    obtenerDefault(TIPOS_DE_DEFAULT, crearFuncion) {
-        return crearFuncion(
-            TIPOS_DE_DEFAULT.array,
-            () => this.informacion.tipoDeDato.obtenerDefault(TIPOS_DE_DEFAULT, crearFuncion)
-        );
-    }
+    async actualizarDatos(respuestaDada, generarPreguntas, _generarError) {
+        if (respuestaDada == SALIR)
+            return true;
 
-    async actualizarDatos(tp, datos, respuestaDada) {
-        let salir = false;
-        let [respuesta, indice] = respuestaDada.split("-");
+        let [ respuesta, indice ] = respuestaDada.split("-");
 
         switch (respuesta) {
             case AGREGAR:
-                let nuevoTipoDeDato = await this.crearPreguntas(
-                    tp, this.informacion.tipoDeDato.obtenerDefault, this.informacion.tipoDeDato.actualizarDatos, 
-                    this.informacion.tipoDeDato.generarPreguntas, "Ingresar el tipo de dato de la tupla"
-                );
-                datos.push(nuevoTipoDeDato);
+                let nuevoTipoDeDato = this.informacion.nuevoTipoDeDato();
+                await generarPreguntas.formulario(nuevoTipoDeDato, "Ingresar el tipo de dato");
+                this.datos.push(nuevoTipoDeDato);
                 break;
 
             case MODIFICAR:
-                datos[indice] = await this.crearPreguntas(
-                    tp, this.informacion.tipoDeDato.obtenerDefault, this.informacion.tipoDeDato.actualizarDatos, 
-                    this.informacion.tipoDeDato.generarPreguntas, "Modificar el tipo de dato de la tupla", datos[indice]
-                );
+                await generarPreguntas.formulario(this.datos[indice], "Modificar el tipo de dato");
                 break;
 
             case ELIMINAR:
-                this.informacion.tipoDeDato.eliminar(datos[indice]);
-                datos.splice(indice, 1);
-                break;
-
-            case SALIR:
-                salir = true;
+                this.datos[indice].eliminar();
+                this.splice(indice, 1);
                 break;
         }
 
-        return salir;
+        return false;
     }
 
-    generarPreguntas(tp, datos) {
+    generarPreguntas() {
         let opciones = [], valores = [];
 
-        for (let [indice, tipoDeDato] of datos.entries()) {
-            let descripcion = this.informacion.tipoDeDato.describir(tipoDeDato)
-                .replaceAll("\n", "\n\t");
+        for (let [indice, tipoDeDato] of this.datos.entries()) {
+            let descripcion = tipoDeDato.descripcionCompleta().replaceAll("\n", "\n\t");
 
             opciones.push(`${MODIFICAR}-${indice}`);
-            valores.push(`️ ${this.simbolos.modificar} Modificar el tipo de dato, donde es ${descripcion}`);
+            valores.push(` ${this.simbolos.modificar} Modificar el tipo de dato, donde era ${descripcion}`);
 
             opciones.push(`${ELIMINAR}-${indice}`);
-            valores.push(`️ ${this.simbolos.sacar} Eliminar el tipo de dato, donde es ${descripcion}`);
+            valores.push(` ${this.simbolos.sacar} Eliminar el tipo de dato, donde era ${descripcion}`);
         }
 
-        if (datos.length >= CANTIDAD_MINIMA) {
+        if (this.datos.length >= CANTIDAD_MINIMA) {
             opciones.push(AGREGAR);
             valores.push(` ${this.simbolos.agregar} ${this.simbolos.opcional} Tipo de dato`);
 
@@ -107,7 +78,7 @@ class TipoTupla {
             valores.push(` ${this.simbolos.agregar} Tipo de dato`);
         }
 
-        if (this.esValido(datos)) {
+        if (this.esValido()) {
             opciones.push(SALIR);
             valores.push(` ${this.simbolos.volver} Confirmar datos`);
         }
@@ -115,35 +86,49 @@ class TipoTupla {
         return { opciones: opciones, valores: valores };
     }
 
-    eliminar(datos) {
-        for (let tipoDeDato of datos) {
-            this.informacion.tipoDeDato.eliminar(tipoDeDato);
+    eliminar() {
+        for (let tipoDeDato of this.datos) {
+            tipoDeDato.eliminar();
         }
     }
 
-    describir(datos) {
-        if (!this.esValido(datos)) return "";
+    esValido() {
+        return this.datos.length >= CANTIDAD_MINIMA 
+            && this.datos.every(tipoDeDato => tipoDeDato && tipoDeDato.esValido());
+    }
 
-        let tiposDeDato = datos.map(tipoDeDato => this.informacion.tipoDeDato.describir(tipoDeDato));
+    generarRepresentacion() {
+        return this.datos
+            .map(tipoDeDato => tipoDeDato?.generarRepresentacion())
+            .filter(representacion => representacion !== undefined);
+    }
 
+    descripcionCompleta() {
+        if (!this.esValido()) return "";
+
+        let descripciones = this.datos.map(tipoDeDato => tipoDeDato.descripcionCompleta());
+        return this.descripcionPorLenguaje(descripciones);
+    }
+
+    descripcionArgumento() {
+        if (!this.esValido()) return "";
+
+        let descripciones = this.datos.map(tipoDeDatoSimple => tipoDeDatoSimple.descripcionArgumento());
+        return this.descripcionPorLenguaje(descripciones);
+    }
+
+    descripcionPorLenguaje(descripciones) {
         switch (this.lenguajeActual) {
             case this.lenguajes.python:
-                return `tuple[${tiposDeDato.join(", ")}]`;
+                return `tuple[${descripciones.join(", ")}]`;
 
             case this.lenguajes.rust:
-                return `(${tiposDeDato.join(", ")})`;
+                return `(${descripciones.join(", ")})`;
 
             default:
-                return `[${tiposDeDato.join(", ")}]`;
+                return `[${descripciones.join(", ")}]`;
         }
-    }
-
-    esValido(datos) {
-        if (!datos) return false;
-
-        return datos.length >= CANTIDAD_MINIMA 
-            && datos.every(tipoDeDato => this.informacion.tipoDeDato.esValido(tipoDeDato));
     }
 }
 
-module.exports = (tp, manejoTipoDeDatos, lenguaje = null) => new TipoTupla(tp, manejoTipoDeDatos, lenguaje);
+module.exports = (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = []) => new TipoTupla(tp, manejoTipoDeDatos, lenguaje, representacionPrevia);
