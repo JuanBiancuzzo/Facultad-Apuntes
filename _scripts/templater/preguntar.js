@@ -71,6 +71,7 @@ async function crearFormulario(tp, datos, mensaje) {
     const preguntar = tp.user.preguntar();
     const generarPreguntas = {
         prompt: preguntar.prompt.bind(null, tp),
+        numero: preguntar.numero.bind(null, tp),
         suggester: preguntar.suggester.bind(null, tp),
         formulario: preguntar.formulario.bind(null, tp),
     };
