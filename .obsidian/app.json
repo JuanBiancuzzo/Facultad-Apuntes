@@ -13,7 +13,6 @@
   "propertiesInDocument": "visible",
   "readableLineLength": true,
   "attachmentFolderPath": "./img",
-  "showRibbon": true,
   "showIndentGuide": false,
   "useTab": false,
   "pdfExportSettings": {

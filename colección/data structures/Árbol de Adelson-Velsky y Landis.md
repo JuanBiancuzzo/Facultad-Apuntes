@@ -7,7 +7,7 @@ tags:
   - nota/colección
   - colección/data-structures/estructura
 nombreEstructura: Árbol de Adelson-Velsky y Landis
-estrucutrasRelacionadas:
+estructuras:
   - nombre: AVLTree
     descripcion: Es una estructura que tiene los beneficios de un [[Árbol binario de Búsqueda|BST]], pero se mantiene [[Árbol Balanceado|balanceado]]
     campos:
@@ -35,7 +35,7 @@ estrucutrasRelacionadas:
           - AVLNode
         default: 
         descripcion: Es el nodo a la izquierda de este nodo
-      - nombre: leftNode
+      - nombre: rightNode
         type:
           - AVLNode
         default: 

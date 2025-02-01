@@ -9,5 +9,6 @@
     "mostrar-bloques",
     "header_size",
     "custon_callouts"
-  ]
+  ],
+  "showRibbon": true
 }
