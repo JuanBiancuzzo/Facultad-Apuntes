@@ -33,8 +33,9 @@ class TipoInterfaz {
             this.metodos.push(tp.user.funcion(tp, this.manejoTipoDeDatos, this.lenguajeActual, metodo));
         }
 
+        let lenguajeActual = this.lenguajeActual;
         this.informacion = {
-            nuevoMetodo() { return tp.user.funcion(tp, this.manejoTipoDeDatos, this.lenguajeActual); }
+            nuevoMetodo() { return tp.user.funcion(tp, manejoTipoDeDatos, lenguajeActual); }
         }
     } 
 

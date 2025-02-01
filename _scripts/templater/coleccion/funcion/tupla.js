@@ -25,8 +25,9 @@ class TipoTupla {
             this.datos.push(tp.user.tipoDeDato(tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionTipoDeDato));
         }
 
+        let lenguajeActual = this.lenguajeActual;
         this.informacion = {
-            nuevoTipoDeDato() { return tp.user.tipoDeDato(tp, this.manejoTipoDeDatos, this.lenguajeActual) },
+            nuevoTipoDeDato() { return tp.user.tipoDeDato(tp, manejoTipoDeDatos, lenguajeActual) },
         }
     }
 

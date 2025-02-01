@@ -38,13 +38,14 @@ class Funcion {
             this.return = tp.user.retrun(tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia[this.config.return]);
         }
 
+        let lenguajeActual = this.lenguajeActual;
         this.informacion = {
             nuevoParametro() {
-                return tp.user.parametro(tp, this.manejoTipoDeDatos, this.lenguajeActual);
+                return tp.user.parametro(tp, manejoTipoDeDatos, lenguajeActual);
             },
 
             nuevoReturn() {
-                return tp.user.return(tp, this.manejoTipoDeDatos, this.lenguajeActual);
+                return tp.user.return(tp, manejoTipoDeDatos, lenguajeActual);
             },
         };
     } 
@@ -124,13 +125,15 @@ class Funcion {
             valores.push(`️ ${this.simbolos.modificar} Modificar el parámetro, donde es ${descripcion}`);
         }
 
-        if (this.parametros.length >= CANTIDAD_MINIMA) {
+        if (this.parametros.length > 0) {
             let descripcion = this.parametros.last().descripcionCompleta()
                 .replaceAll("\n", "\n\t");
 
             opciones.push(ELIMINAR_PARAMETRO);
             valores.push(` ${this.simbolos.sacar} Eliminar el parámetro, donde es ${descripcion}`);
+        }
 
+        if (this.parametros.length >= CANTIDAD_MINIMA) {
             opciones.push(this.config.parametros);
             valores.push(` ${this.simbolos.agregar} ${this.simbolos.opcional} Parámetro`);
 
@@ -139,7 +142,7 @@ class Funcion {
             valores.push(` ${this.simbolos.agregar} Parámetro`);
         }
 
-        if (this.return && this.return.esValido()) {
+        if (this.return?.esValido()) {
             let descripcion = this.return.descripcionCompleta().replaceAll("\n", "\n\t");
             opciones.push(MODIFICAR_RETURN);
             valores.push(` ${this.simbolos.modificar} Modificar el valor de retorno de la función, donde era ${descripcion}`);

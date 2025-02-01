@@ -27,9 +27,10 @@ class TipoArray {
             );
         }
 
+        let lenguajeActual = this.lenguajeActual;
         this.informacion = {
             nuevoTipoDeDato() {
-                return tp.user.tipoDeDato(tp, this.manejoTipoDeDatos, this.lenguajeActual);
+                return tp.user.tipoDeDato(tp, manejoTipoDeDatos, lenguajeActual);
             }
         }
     } 
@@ -77,8 +78,8 @@ class TipoArray {
 
         if (this.datosLenguaje.arrayConCantidad) {
             opciones.push(this.config.cantidad);
-            valores.push(datos[this.config.cantidad]
-                ? ` ${this.simbolos.modificar} Modificar la cantidad que tiene el array, donde era ${datos[this.config.cantidad]}`
+            valores.push(this.cantidad
+                ? ` ${this.simbolos.modificar} Modificar la cantidad que tiene el array, donde era ${this.cantidad}`
                 : ` ${this.simbolos.agregar} ${this.simbolos.opcional} Cantidad de elementos del array`
             );
         }
@@ -111,7 +112,7 @@ class TipoArray {
     descripcionCompleta() {
         if (!this.esValido()) return "";
 
-        let tipoDeDato = this.tipoDeDato.describirArgumento();
+        let tipoDeDato = this.tipoDeDato.descripcionArgumento();
 
         switch (this.lenguajeActual) {
             case this.lenguajes.python:
@@ -137,7 +138,7 @@ class TipoArray {
     descripcionArgumento() {
         if (!this.esValido()) return "";
 
-        let tipoDeDato = this.tipoDeDato.describirArgumento();
+        let tipoDeDato = this.tipoDeDato.descripcionArgumento();
 
         switch (this.lenguajeActual) {
             case this.lenguajes.python:

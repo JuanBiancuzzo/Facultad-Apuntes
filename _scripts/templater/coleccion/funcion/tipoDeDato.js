@@ -1,6 +1,7 @@
 const AGREGAR = "agregar";
 const MODIFICAR = "modificar";
 const ELIMINAR = "modificar";
+const CANCELAR = "cancelar";
 
 const CANTIDAD_MINIMA = 1;
 
@@ -39,11 +40,12 @@ class TipoDeDatoSimple {
                 break;
         }
 
+        let lenguajeActual = this.lenguajeActual;
         this.informacion = {
-            nuevaTupla() { return tp.user.tupla(tp, this.manejoTipoDeDatos, this.lenguajeActual) },
-            nuevoArray() { return tp.user.array(tp, this.manejoTipoDeDatos, this.lenguajeActual) },
-            nuevoStruct() { return tp.user.struct(tp, this.manejoTipoDeDatos, this.lenguajeActual) },
-            nuevoGenerico() { return tp.user.interfaz(tp, this.manejoTipoDeDatos, this.lenguajeActual) },
+            nuevaTupla() { return tp.user.tupla(tp, manejoTipoDeDatos, lenguajeActual) },
+            nuevoArray() { return tp.user.array(tp, manejoTipoDeDatos, lenguajeActual) },
+            nuevoStruct() { return tp.user.struct(tp, manejoTipoDeDatos, lenguajeActual) },
+            nuevoGenerico() { return tp.user.interfaz(tp, manejoTipoDeDatos, lenguajeActual) },
         }
     }
 
@@ -51,20 +53,27 @@ class TipoDeDatoSimple {
         if (respuesta == SALIR)
             return true;
 
+        let opcion, otrosTiposDeDatosPrimitivos, otrosTiposDeDatosStruct, otrosTiposDeDatosGenerico;
+
         switch (respuesta) {
             case this.config.tipo:
                 let listaTiposDeDatos = [this.tipos.primitivo, this.tipos.array, this.tipos.struct];
 
                 if (this.datosLenguaje.tieneTupla)
-                    listaTiposDeDatos.push(this.config.tipo.tupla);
+                    listaTiposDeDatos.push(this.tipos.tupla);
                 if (this.datosLenguaje.genericos)
-                    listaTiposDeDatos.push(this.config.tipo.generico);
+                    listaTiposDeDatos.push(this.tipos.generico);
 
                 let nuevoTipoDeDato = await generarPreguntas.suggester(
-                    (tipoDeDato) => `Tipo de dato ${tipoDeDato}`, listaTiposDeDatos,
-                    "Que tipo de dato se quiere ingresar",
+                    [ ...listaTiposDeDatos.map(tipoDeDato => `Tipo de dato ${tipoDeDato}`), ` ${this.simbolos.volver} Cancelar` ],
+                    [ ...listaTiposDeDatos, CANCELAR ], "Que tipo de dato se quiere ingresar",
                     generarError.Quit("No se ingresó que tipo de del tipo de datos")
                 );
+
+                if (nuevoTipoDeDato == CANCELAR) {
+                    new Notice("No se quiso ingresar un tipo de dato");
+                    return true;
+                }
 
                 if (this.tipo != nuevoTipoDeDato) {
                     this.eliminar();
@@ -76,34 +85,58 @@ class TipoDeDatoSimple {
                 break;
 
             case this.tipos.primitivo:
-                let nuevoIdPrimitivo = AGREGAR;
-                let otrosTiposDeDatosPrimitivos = this.manejoTipoDeDatos.obtenerInformacion(this.tipos.primitivo);
+                opcion = AGREGAR;
+                otrosTiposDeDatosPrimitivos = this.manejoTipoDeDatos.obtenerInformacion(this.tipos.primitivo);
 
                 if (otrosTiposDeDatosPrimitivos.length > 0) {
-                    let valoresPrimitivos = otrosTiposDeDatosPrimitivos.map(({[this.manejador.valor]: valor}) => valor);
-                    let idsPrimitivos = otrosTiposDeDatosPrimitivos.map(({[this.manejador.id]: id}) => id);
+                    let valoresPrimitivos = otrosTiposDeDatosPrimitivos.map(primitivo => primitivo[this.manejador.valor]);
+                    let idsPrimitivos = otrosTiposDeDatosPrimitivos.map(primitivo => primitivo[this.manejador.id]);
 
-                    nuevoIdPrimitivo = await generarPreguntas.suggester(
+                    opcion = await generarPreguntas.suggester(
                         [ ` ${this.simbolos.agregar} Agregar tipo de dato primitivo`, ...valoresPrimitivos], [AGREGAR, ...idsPrimitivos],
                         "Elegir si usar o crear un tipo de dato primitivo",
                         generarError.Quit("No se ingresó que hacer con el tipo de dato primitivo")
                     );
                 }
 
-                if (nuevoIdPrimitivo == AGREGAR) {
+                if (opcion == AGREGAR) {
                     let nuevoValorPrimitivo = await generarPreguntas.prompt(
                         "Ingresar el tipo de dato primitivo", generarPreguntas.Quit("No se ingresó que tipo de dato primitivo")
                     );
+                    this.id = this.manejoTipoDeDatos.agregar(this.tipos.primitivo, nuevoValorPrimitivo);
 
-                    nuevoIdPrimitivo = this.manejoTipoDeDatos.agregar(this.tipos.primitivo, nuevoValorPrimitivo);
-                    
-                } else if (this.id != nuevoIdPrimitivo) {
-                    this.manejoTipoDeDatos.aparicion(this.tipos.primitivo, nuevoIdPrimitivo);
+                } else {
+                    this.id = opcion;
+                    this.manejoTipoDeDatos.aparicion(this.tipos.primitivo, this.id);
+                }
+                break;
 
+            case `${MODIFICAR}${this.tipos.primitivo}`:
+                opcion = AGREGAR;
+                otrosTiposDeDatosPrimitivos = this.manejoTipoDeDatos.obtenerInformacion(this.tipos.primitivo);
+
+                if (otrosTiposDeDatosPrimitivos.length > 0) {
+                    let valoresPrimitivos = otrosTiposDeDatosPrimitivos.map(primitivo => primitivo[this.manejador.valor]);
+                    let idsPrimitivos = otrosTiposDeDatosPrimitivos.map(primitivo => primitivo[this.manejador.id]);
+
+                    opcion = await generarPreguntas.suggester(
+                        [ ` ${this.simbolos.modificar} Modificar tipo de dato primitivo`, ...valoresPrimitivos], [AGREGAR, ...idsPrimitivos],
+                        "Elegir si usar o modificar un tipo de dato primitivo",
+                        generarError.Quit("No se ingresó que hacer con el tipo de dato primitivo")
+                    );
                 }
 
-                if (!this.id) this.manejoTipoDeDatos.eliminar(this.tipos.primitivo, this.id);
-                this.id = nuevoIdPrimitivo;
+                if (opcion == AGREGAR) {
+                    let nuevoValorPrimitivo = await generarPreguntas.prompt(
+                        "Ingresar el tipo de dato primitivo", generarPreguntas.Quit("No se ingresó que tipo de dato primitivo")
+                    );
+                    this.manejoTipoDeDatos.actualizar(this.tipos.primitivo, this.id, nuevoValorPrimitivo);
+
+                } else {
+                    this.manejoTipoDeDatos.eliminar(this.tipos.primitivo, this.id);
+                    this.id = opcion;
+                    this.manejoTipoDeDatos.aparicion(this.tipos.primitivo, this.id);
+                }
                 break;
 
             case this.tipos.tupla:
@@ -117,71 +150,109 @@ class TipoDeDatoSimple {
                 break;
 
             case this.tipos.struct:
-                let nuevoIdStruct = AGREGAR;
-                let otrosTiposDeDatosStruct = this.manejoTipoDeDatos.obtenerInformacion(this.tipos.struct);
-
-                let valorStruct = this.manejoTipoDeDatos.obtener(this.tipos.struct, this.id);
-                let mensajeStruct = valorStruct
-                    ? ` ${this.simbolos.modificar} Modificar la información de la estructura`
-                    : ` ${this.simbolos.agregar} Ingresar la información de la estructura`;
+                opcion = AGREGAR;
+                otrosTiposDeDatosStruct = this.manejoTipoDeDatos.obtenerInformacion(this.tipos.struct);
 
                 if (otrosTiposDeDatosStruct.length > 0) {
                     let valoresStruct = otrosTiposDeDatosStruct
-                        .map(({ [this.manejador.valor]: valor }) => ` ${this.simbolos.elegir} ${valor.descripcionCompleta().replaceAll("\n", "\n\t")}`);
-                    let idsStruct = otrosTiposDeDatosStruct.map(({ [this.manejador.id]: id }) => id);
+                        .map(estructura => ` ${this.simbolos.elegir} ${estructura[this.manejador.valor].descripcionCompleta().replaceAll("\n", "\n\t")}`);
+                    let idsStruct = otrosTiposDeDatosStruct.map(estructura => estructura[this.manejador.id]);
                     
-                    nuevoIdStruct = await generarPreguntas.suggester(
-                        mensajeStruct, valoresStruct, idsStruct, "Elegir si usar o crear una estructura",
+                    opcion = await generarPreguntas.suggester(
+                        [ ` ${this.simbolos.agregar} Ingresar la información de la estructura`, ...valoresStruct ],
+                        [ AGREGAR, ...idsStruct ], "Elegir si usar o crear una estructura",
                         generarError.Quit("No se ingresó que hacer con la estructura")
                     );
                 }
 
-                if (nuevoIdPrimitivo == AGREGAR) {
-                    let necesitaNuevoStruct = !valorStruct;
-                    if (necesitaNuevoStruct) valorStruct = this.informacion.nuevoStruct();
+                if (opcion == AGREGAR) {
+                    let valorStruct = this.informacion.nuevoStruct();
+                    await generarPreguntas.formulario(valorStruct, "Ingresar la información de la estructura");
+                    this.id = this.manejoTipoDeDatos.agregar(this.tipos.struct, valorStruct);
 
-                    await generarPreguntas.formulario(valorStruct, mensajeStruct);
+                } else {
+                    this.id = opcion;
+                    this.manejoTipoDeDatos.aparicion(this.tipos.struct, this.id);
+                }
+                break;
 
-                    if (necesitaNuevoStruct) {
-                        this.id = this.manejoTipoDeDatos.agregar(this.tipos.struct, valorStruct);
-                    }
+            case `${MODIFICAR}${this.tipos.struct}`:
+                opcion = AGREGAR;
+                otrosTiposDeDatosStruct = this.manejoTipoDeDatos.obtenerInformacion(this.tipos.struct);
 
-                } else if (this.id != nuevoIdPrimitivo) {
+                if (otrosTiposDeDatosStruct.length > 0) {
+                    let valoresStruct = otrosTiposDeDatosStruct
+                        .map(estructura => ` ${this.simbolos.elegir} ${estructura[this.manejador.valor].descripcionCompleta().replaceAll("\n", "\n\t")}`);
+                    let idsStruct = otrosTiposDeDatosStruct.map(estructura => estructura[this.manejador.id]);
+                    
+                    opcion = await generarPreguntas.suggester(
+                        [ ` ${this.simbolos.modificar} Modificar la información de la estructura`, ...valoresStruct ],
+                        [ AGREGAR, ...idsStruct ], "Elegir si usar o modificar una estructura",
+                        generarError.Quit("No se ingresó que hacer con la estructura")
+                    );
+                }
+
+                if (opcion == AGREGAR) {
+                    let valorStruct = this.manejoTipoDeDatos.obtenerInformacion(this.tipos.struct, this.id);
+                    await generarPreguntas.formulario(valorStruct, "Modificar la información de la estructura");
+
+                } else {
+                    this.manejoTipoDeDatos.eliminar(this.tipos.struct, this.id);
+                    this.id = opcion;
                     this.manejoTipoDeDatos.aparicion(this.tipos.struct, this.id);
                 }
                 break;
 
             case this.tipos.generico:
-                let nuevoIdGenerico = AGREGAR;
-                let otrosTiposDeDatosGenerico = this.manejoTipoDeDatos.obtenerInformacion(this.tipos.generico);
-
-                let valorGenerico = this.manejoTipoDeDatos.obtener(this.tipos.struct, this.id);
-                let mensajeGenerico = valorGenerico
-                    ? ` ${this.simbolos.modificar} Modificar la información de la interfaz`
-                    : ` ${this.simbolos.agregar} Ingresar la información de la interfaz`;
+                opcion = AGREGAR;
+                otrosTiposDeDatosGenerico = this.manejoTipoDeDatos.obtenerInformacion(this.tipos.generico);
 
                 if (otrosTiposDeDatosGenerico.length > 0) {
                     let valoresGenericos = otrosTiposDeDatosGenerico
-                        .map(({ [this.manejador.valor]: valor }) => ` ${this.simbolos.elegir} ${valor.descripcionCompleta().replaceAll("\n", "\n\t")}`);
-                    let idsGenericos = otrosTiposDeDatosGenerico.map(({ [this.manejador.id]: id }) => id);
+                        .map(interfaz => ` ${this.simbolos.elegir} ${interfaz[this.manejador.valor].descripcionCompleta().replaceAll("\n", "\n\t")}`);
+                    let idsGenericos = otrosTiposDeDatosGenerico.map(estructura => estructura[this.manejador.id]);
                     
-                    nuevoIdGenerico = await generarPreguntas.suggester(
-                        mensajeGenerico, valoresGenericos, idsGenericos, "Elegir si usar o crear una interfaz",
+                    opcion = await generarPreguntas.suggester(
+                        [ ` ${this.simbolos.agregar} Ingresar la información de la interfaz`, ...valoresGenericos ],
+                        [ AGREGAR, ...idsGenericos ], "Elegir si usar o crear una interfaz",
                         generarError.Quit("No se ingresó que hacer con la interfaz")
                     );
                 }
 
-                if (nuevoIdGenerico == AGREGAR) {
-                    let necesitaNuevoGenerico = !valorGenerico;
-                    if (necesitaNuevoGenerico) valorGenerico = this.informacion.nuevoGenerico();
+                if (opcion == AGREGAR) {
+                    let valorInterfaz = this.informacion.nuevoGenerico();
+                    await generarPreguntas.formulario(valorInterfaz, "Ingresar la información de la interfaz");
+                    this.id = this.manejoTipoDeDatos.agregar(this.tipos.generico, valorInterfaz);
 
-                    await generarPreguntas.formulario(valorGenerico, mensajeGenerico);
+                } else {
+                    this.id = opcion;
+                    this.manejoTipoDeDatos.aparicion(this.tipos.generico, this.id);
+                }
+                break;
 
-                    if (necesitaNuevoGenerico) {
-                        this.id = this.manejoTipoDeDatos.agregar(this.tipos.generico, valorStruct);
-                    }
+            case `${MODIFICAR}${this.tipos.generico}`:
+                opcion = AGREGAR;
+                otrosTiposDeDatosGenerico = this.manejoTipoDeDatos.obtenerInformacion(this.tipos.generico);
 
-                } else if (this.id != necesitaNuevoGenerico) {
+                if (otrosTiposDeDatosGenerico.length > 0) {
+                    let valoresGenericos = otrosTiposDeDatosGenerico
+                        .map(interfaz => ` ${this.simbolos.elegir} ${interfaz[this.manejador.valor].descripcionCompleta().replaceAll("\n", "\n\t")}`);
+                    let idsGenericos = otrosTiposDeDatosGenerico.map(estructura => estructura[this.manejador.id]);
+                    
+                    opcion = await generarPreguntas.suggester(
+                        [ ` ${this.simbolos.modificar} Modificar la información de la interfaz`, ...valoresGenericos ],
+                        [ AGREGAR, ...idsGenericos ], "Elegir si usar o modificar una interfaz",
+                        generarError.Quit("No se ingresó que hacer con la interfaz")
+                    );
+                }
+
+                if (opcion == AGREGAR) {
+                    let valorInterfaz = this.manejoTipoDeDatos.obtener(this.tipos.generico, this.id);
+                    await generarPreguntas.formulario(valorInterfaz, "Ingresar la información de la interfaz");
+
+                } else {
+                    this.manejoTipoDeDatos.eliminar(this.tipos.generico, this.id);
+                    this.id = opcion;
                     this.manejoTipoDeDatos.aparicion(this.tipos.generico, this.id);
                 }
                 break;
@@ -192,7 +263,6 @@ class TipoDeDatoSimple {
 
     generarPreguntas() {
         let opciones = [], valores = [];
-        let descripcion;
 
         opciones.push(this.config.tipo);
         if (!this.tipo) {
@@ -201,48 +271,66 @@ class TipoDeDatoSimple {
         } else {
             valores.push(` ${this.simbolos.modificar} Modificar el tipo de dato, donde era ${this.tipo}`);
 
-            opciones.push(this.tipo);
             switch (this.tipo) {
                 case this.tipos.primitivo:
-                    descripcion = this.manejoTipoDeDatos.obtener(this.tipo, this.id);
-                    valores.push(this.manejoTipoDeDatos.existe(this.tipo, this.id)
-                        ? ` ${this.simbolos.modificar} Modificar tipo de dato primitivo, donde era ${descripcion}`
-                        : ` ${this.simbolos.agregar} Tipo de dato primitivo`
-                    );
+                    if (this.manejoTipoDeDatos.existe(this.tipo, this.id)) {
+                        let descripcion = this.manejoTipoDeDatos.obtener(this.tipo, this.id);
+
+                        opciones.push(`${MODIFICAR}${this.tipos.primitivo}`);
+                        valores.push(` ${this.simbolos.modificar} Modificar tipo de dato primitivo, donde era ${descripcion}`);
+
+                    } else {
+                        opciones.push(this.tipos.primitivo);
+                        valores.push(` ${this.simbolos.agregar} Tipo de dato primitivo`);
+                    }
                     break;
                     
                 case this.tipos.tupla:
-                    descripcion = this.valor.descripcionCompleta().replaceAll("\n", "\n\t");
-                    valores.push((this.valor && this.valor.esValido())
-                        ? ` ${this.simbolos.modificar} Modificar el dato de una tupla, donde era ${descripcion}`
-                        : ` ${this.simbolos.agregar} Datos de una tupla`
-                    );
+                    opciones.push(this.tipos.tupla);
+                    if (this.valor?.esValido()) {
+                        let descripcion = this.valor.descripcionCompleta().replaceAll("\n", "\n\t");
+                        valores.push(` ${this.simbolos.modificar} Modificar el dato de una tupla, donde era ${descripcion}`);
+
+                    } else {
+                        valores.push(` ${this.simbolos.agregar} Datos de una tupla`);
+                    }
                     break;
                     
                 case this.tipos.array:
-                    descripcion = this.valor.descripcionCompleta().replaceAll("\n", "\n\t");
-                    valores.push((this.valor && this.valor.esValido())
-                        ? ` ${this.simbolos.modificar} Modificar el dato de un array, donde era ${descripcion}`
-                        : ` ${this.simbolos.agregar} Datos de un array`
-                    );
+                    opciones.push(this.tipos.array);
+                    if (this.valor?.esValido()) {
+                        let descripcion = this.valor.descripcionCompleta().replaceAll("\n", "\n\t");
+                        valores.push(` ${this.simbolos.modificar} Modificar el dato de un array, donde era ${descripcion}`);
+
+                    } else {
+                        valores.push(` ${this.simbolos.agregar} Datos de un array`);
+                    }
                     break;
                     
                 case this.tipos.struct:
                     let valorStruct = this.manejoTipoDeDatos.obtener(this.tipo, this.id);
-                    descripcion = valorStruct.describir().replaceAll("\n", "\n\t");
-                    valores.push((valorStruct && valorStruct.esValido())
-                        ? ` ${this.simbolos.modificar} Modificar el dato de una estructra, donde era ${descripcion}`
-                        : ` ${this.simbolos.agregar} Datos de una estructura`
-                    );
+                    if (valorStruct?.esValido()) {
+                        let descripcion = valorStruct.descripcionCompleta().replaceAll("\n", "\n\t");
+                        opciones.push(`${MODIFICAR}${this.tipos.struct}`);
+                        valores.push(` ${this.simbolos.modificar} Modificar el dato de una estructra, donde era ${descripcion}`);
+
+                    } else {
+                        opciones.push(this.tipos.struct);
+                        valores.push(` ${this.simbolos.agregar} Datos de una estructura`);
+                    }
                     break;
                     
                 case this.tipos.generico:
                     let valorGenerico = this.manejoTipoDeDatos.obtener(this.tipo, this.id);
-                    descripcion = valorGenerico.describir().replaceAll("\n", "\n\t");
-                    valores.push((valorStruct && valorGenerico.esValido())
-                        ? ` ${this.simbolos.modificar} Modificar el dato de un generico, donde era ${descripcion}`
-                        : ` ${this.simbolos.agregar} Datos de un generico`
-                    );
+                    if (valorGenerico?.esValido()) {
+                        let descripcion = valorGenerico.descripcionCompleta().replaceAll("\n", "\n\t");
+                        opciones.push(`${MODIFICAR}${this.tipos.generico}`);
+                        valores.push(` ${this.simbolos.modificar} Modificar el dato de un generico, donde era ${descripcion}`);
+
+                    } else {
+                        opciones.push(this.tipos.generico);
+                        valores.push(` ${this.simbolos.agregar} Datos de un generico`);
+                    }
                     break;
             }
         }
@@ -355,8 +443,9 @@ class TipoDeDatoMultiple {
             this.datos.push(new TipoDeDatoSimple(tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionSimple));
         }
 
+        let lenguajeActual = this.lenguajeActual;
         this.informacion = {
-            nuevoTipoDeDato() { return new TipoDeDatoSimple(tp, this.manejoTipoDeDatos, this.lenguajeActual) },
+            nuevoTipoDeDato() { return new TipoDeDatoSimple(tp, manejoTipoDeDatos, lenguajeActual) },
         }
     }
 
@@ -406,6 +495,11 @@ class TipoDeDatoMultiple {
         } else {
             opciones.push(AGREGAR);
             valores.push(` ${this.simbolos.agregar} Tipo de dato`);
+        }
+
+        if (this.esValido()) {
+            opciones.push(SALIR);
+            valores.push(` ${this.simbolos.confirmar} Confirmar datos`);
         }
 
         return { opciones: opciones, valores: valores };

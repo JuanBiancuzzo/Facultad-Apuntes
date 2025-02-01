@@ -32,8 +32,9 @@ class TipoStruct {
             this.campos.push(tp.user.parametro(tp, this.manejoTipoDeDatos, this.lenguajeActual, campo));
         }
 
+        let lenguajeActual = this.lenguajeActual;
         this.informacion = {
-            nuevoCampo() { return tp.user.parametro(tp, this.manejoTipoDeDatos, this.lenguajeActual); }
+            nuevoCampo() { return tp.user.parametro(tp, manejoTipoDeDatos, lenguajeActual); }
         }
     } 
 
@@ -101,7 +102,7 @@ class TipoStruct {
 
         opciones.push(this.config.descripcion);
         valores.push(this.descripcion
-            ? ` ${this.simbolos.modificar} Modificar la descripción del struct, donde era ${datos[this.descripcion]}`
+            ? ` ${this.simbolos.modificar} Modificar la descripción del struct, donde era ${this.descripcion}`
             : ` ${this.simbolos.agregar} Descripción del struct`
         );
 

@@ -7,7 +7,7 @@ tags:
   - colección/data-structures/estructura
   - curso/introduction-to-algorithms/Sorting-and-Trees
 nombreEstructura: Árbol binario de búsqueda
-estrucutrasRelacionadas:
+estructuras:
   - nombre: BinarySearchTree
     descripcion: Representa el árbol y tiene la raíz del mismo
     campos:

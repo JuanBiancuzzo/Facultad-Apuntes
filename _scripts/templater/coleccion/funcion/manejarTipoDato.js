@@ -81,7 +81,8 @@ class Contador {
      * @returns {boolean} Se devuelve true si se pudo indicar 
      */
     aparicion(tipo, id) {
-        if (!(tipo in this.tiposDeDatos)) return false;
+        if (!(tipo in this.tiposDeDatos) || !(id in this.tiposDeDatos[tipo])) 
+            return false;
 
         this.tiposDeDatos[tipo][id][this.config.apariciones]++;
         return true;

@@ -29,9 +29,10 @@ class Parametro {
             );
         }
 
+        let lenguajeActual = this.lenguajeActual;
         this.informacion = {
             nuevoTipoDeDato() {
-                return tp.user.tipoDeDato(tp, this.manejoTipoDeDatos, this.lenguajeActual);
+                return tp.user.tipoDeDato(tp, manejoTipoDeDatos, lenguajeActual);
             }
         }
     } 

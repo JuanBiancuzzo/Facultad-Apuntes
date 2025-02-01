@@ -372,6 +372,7 @@ module.exports = () => ({
                     enum: "Enum",
                     referencia: "Referencia",
                     union: "Union",
+                    funcion: "Funcion",
                 },
             },
             manejador: {
@@ -384,9 +385,8 @@ module.exports = () => ({
         },
         ESTRUCTURA_DATOS: {
             nombre: "nombreEstructura",
-            estructuras: "estrucutrasRelacionadas",
             metodos: "métodos",
-            tipoEstructura: "estructuras",
+            estructuras: "estructuras",
             tipoInterfaz: "interfaces",
         },
         REFERENCIAS: {
