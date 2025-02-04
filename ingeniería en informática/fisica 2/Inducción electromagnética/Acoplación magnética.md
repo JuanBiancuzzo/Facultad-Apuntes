@@ -11,7 +11,7 @@ aliases:
   - Bornes homologos#Bornes homólogos
 referencias:
   - "217"
-etapa: sin-empezar
+etapa: empezado
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
@@ -30,14 +30,14 @@ Si una [[Corriente eléctrica|corriente]] entra a la terminar marcada de la bobi
 
 ### Bobinas en paralelo
 ---
-Si consideramos un [[Circuito eléctrico|circuito]] con 2 [[Inductor|bobinas]] en [[Inductores en paralelo|paralelo]] [[Acoplación magnética|acopladas magnéticamente]]
+Si consideramos un [[Circuito eléctrico|circuito]] con 2 [[Inductor|bobinas]] en [[Inductor#En paralelo|paralelo]] [[Acoplación magnética|acopladas magnéticamente]]
 
 * Bornes homologados ![[Dos bobinas en paralelo y bornes homólogos.webp]]
 * Bornes no homologados ![[Dos bobinas en paralelo y bornes no homólogos.webp]]
 
 ### Bobinas en serie
 ---
-Si consideramos un [[Circuito eléctrico|circuito]] con 2 [[Inductor|bobinas]] en [[Inductores en serie|serie]]  [[Acoplación magnética|acopladas magnéticamente]]
+Si consideramos un [[Circuito eléctrico|circuito]] con 2 [[Inductor|bobinas]] en [[Inductor#En serie|serie]]  [[Acoplación magnética|acopladas magnéticamente]]
 
 * Bornes homologados ![[Dos bobinas en serie y bornes homólogos.webp]]
 * Bornes no homologados ![[Dos bobinas en serie y bornes no homólogos.webp]]

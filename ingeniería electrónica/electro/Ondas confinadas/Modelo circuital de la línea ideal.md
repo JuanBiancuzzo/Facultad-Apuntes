@@ -130,7 +130,7 @@ Las [[Carga eléctrica|cargas]] y corrientes en los conductores crearán [[Campo
         node[pos=\nporcen] (derArriba) {};
         
     \draw (izqArriba.center) 
-        to[L, loops=5, l^=$L~dz$] ++({0.7 * \dimension}, 0) 
+        to[L, loops=4, l^=$L~dz$] ++({0.7 * \dimension}, 0) 
             node[above=2pt, scale=0.9] {$A$}
         to[short] ++({0.3 * \dimension}, 0);
     \draw (izqAbajo.center) -- (derAbajo.center);

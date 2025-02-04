@@ -12,6 +12,10 @@ aliases:
   - Energía de una bobina#Energía almacenada
   - Potencia de un inductor#Potencia instantánea
   - Potencia de una bobina#Potencia instantánea
+  - Inductores en serie#En serie
+  - Bobinas en serie#En serie
+  - Inductores en paralelo#En paralelo
+  - Bobinas en paralelo#En paralelo
 ---
 # Definición
 ---
@@ -40,3 +44,20 @@ El calculo de la [[Potencia|potencia]] esta dada por $$ p = v~i = \left(L\frac{d
 El calculo de la [[Energía almacenada en un inductor|energía almacenada]] esta dada por $$ \omega = \int_{-\infty}^t p(\tau) d\tau = \frac{1}{2} L i^2 $$
 El inductor (ideal) no disipa [[Energía|energía]], solo la almacena y la vuelve a entregar en otro momento
 
+## Equivalencias
+---
+Un inductor equivalente es un inductor que puede sustituir a otros inductores que se encuentran en un determinado [[Circuito eléctrico|circuito]]
+
+### En serie
+---
+Son aquellos inductores atravesados por la misma [[Corriente eléctrica|corriente]] ([[Elementos en serie|elementos en serie]]) y comparten la misma [[Malla|malla]]
+
+Por lo que el equivalente es $$ L_{eq} = L_1 + L_2 $$ que es igual a los [[Resistencia#En serie|resistencias en serie]] y a los [[Capacitor#En serie|capacitores en serie]]
+
+### En paralelo
+---
+Son aquellos inductores que comparten la misma [[Tensión|tensión]] entre los mismos [[Nodo#En electrónica|nodo]] ([[Elementos en paralelo|elementos en paralelo]])
+
+Por lo que el equivalente es $$ \begin{CD} 
+	L_{eq} = \left( \sum_i^N L^{-1} \right)^{-1} @>{N~=~2}>> \frac{L_1 \cdot L_2}{L_1 + L_2}
+\end{CD} $$ que es igual a los [[Resistencia#En paralelo|resistencias en paralelo]] y a los [[Capacitor#En serie|capacitores en serie]]

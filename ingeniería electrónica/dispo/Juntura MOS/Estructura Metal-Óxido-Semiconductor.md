@@ -87,7 +87,7 @@ Donde $$ V_{B,0} = \frac{q N_a x_{d0}^2}{2 \varepsilon_s} $$ y $$ V_{ox, 0} = \f
 ---
 Encontrando $x_{d0}$, recordando que la diferencia de potencial a lo largo de la estructura debe ser $\phi_B$ $$ \phi_B = V_{B, 0} + V_{ox, 0} = \frac{q N_a x_{d0}^2}{2 \varepsilon_s} + \frac{q N_a x_{d0} ~ t_{ox}}{\varepsilon_{ox}}$$
 Resolviendo la ecuación cuadrática $$ x_{d0} = \frac{\varepsilon_s}{\varepsilon_{ox}} t_{ox} \left[ \sqrt{1 + \frac{2 \varepsilon_{ox}^2 ~ \phi_B}{\varepsilon_s q N_a ~ t_{ox}^2}} + 1 \right] $$
-Utilizando la [[Capacitores en serie|capacidad por unidad de área de óxido]] y el [[Body factor coefficient|body factor coefficient]], nos queda $$ x_{d0} = \frac{\varepsilon_s}{C'_{ox}} \left[ \sqrt{1 + \frac{4 ~ \phi_B}{\gamma^2}} - 1 \right] $$
+Utilizando la [[Capacitor#En serie|capacidad por unidad de área de óxido]] y el [[Body factor coefficient|body factor coefficient]], nos queda $$ x_{d0} = \frac{\varepsilon_s}{C'_{ox}} \left[ \sqrt{1 + \frac{4 ~ \phi_B}{\gamma^2}} - 1 \right] $$
 ## Distintas combinaciones poly-sustrato
 ---
 Dependiendo de que tipo sea el poly-silicio y el sustrato cambiando las propiedades eléctricas de la estructura MOS
