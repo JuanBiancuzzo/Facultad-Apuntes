@@ -114,7 +114,7 @@ class TipoStruct {
         }
 
         if (this.campos.length > 0) {
-            let descripcion = this.campos.last().descripcionCompleta();
+            let descripcion = this.campos.last().descripcionCompleta().replaceAll("\n", "\n\t");
 
             opciones.push(ELIMINAR_CAMPO);
             valores.push(` ${this.simbolos.sacar} Eliminar el campo, donde es ${descripcion}`);
@@ -170,7 +170,7 @@ class TipoStruct {
     descripcionCompleta() {
         if (!this.esValido()) return "";
 
-        let descripcionCampos = this.campos.map(campo => campo.descripcionCompleta());
+        let descripcionCampos = this.campos.map(campo => campo.descripcionArgumento());
 
         switch (this.lenguajeActual) {
             case this.lenguajes.python:
@@ -201,6 +201,17 @@ class TipoStruct {
 
             default:
                 return `struct ${this.nombre}${this.herede ? ` :: ${this.herede}` : ""} end`;
+        }
+    }
+
+    generarSelf() {
+        let descripcion = () => {
+            return `Self ${this.nombre ? this.nombre : ""}`;
+        };
+        return {
+            descripcionCompleta: descripcion,
+            descripcionArgumento: () => descripcion,
+            esValido: () => true,
         }
     }
 }

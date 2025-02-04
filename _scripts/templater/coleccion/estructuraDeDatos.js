@@ -16,7 +16,11 @@ class EstructuraDeDatos {
         const { 
             SIMBOLOS, DATOS: { 
                 ESTRUCTURA_DATOS: DATOS_ESTRUCTURA, 
-                FUNCIONES: { manejador: DATOS_MANEJADOR, tipoDeDato: { tipo: DATOS_TIPOS } },
+                FUNCIONES: { 
+                    struct: DATOS_STRUCT,
+                    manejador: DATOS_MANEJADOR, 
+                    tipoDeDato: { tipo: DATOS_TIPOS } 
+                },
                 LENGUAJE: { lenguajes: LENGUAJES },
             }
         } = tp.user.constantes();
@@ -24,6 +28,7 @@ class EstructuraDeDatos {
         this.config = DATOS_ESTRUCTURA;
         this.tipos = DATOS_TIPOS;
         this.manejador = DATOS_MANEJADOR;
+        this.struct = DATOS_STRUCT,
         this.simbolos = SIMBOLOS;
 
         this.manejoTipoDeDatos = manejoTipoDeDatos;
@@ -83,8 +88,12 @@ class EstructuraDeDatos {
 
                 if (opcion == AGREGAR) {
                     let estructuraAgregar = this.informacion.nuevoStruct();
+                    let selfStruct = estructuraAgregar.generarSelf();
+                    let id = this.manejoTipoDeDatos.agregar(this.tipos.struct, selfStruct);
+                    this.idEstructuras.push(id);
+
                     await generarPreguntas.formulario(estructuraAgregar, "Ingresar la información de la estructura");
-                    this.idEstructuras.push(this.manejoTipoDeDatos.agregar(this.tipos.struct, estructuraAgregar));
+                    this.manejoTipoDeDatos.actualizar(this.tipos.struct, id, estructuraAgregar);
 
                 } else {
                     this.idEstructuras.push(opcion);
@@ -311,13 +320,13 @@ async function crearEstructura(tp) {
             [DATOS_ESTRUCTURA.metodos]: estructuraDeDatos.metodos
                 .map(metodo => ({ ...metodo.generarRepresentacion() })),
             [DATOS_ESTRUCTURA.estructuras]: manejoTipoDeDatos.obtenerInformacion(DATOS_TIPO_DE_DATO.struct)
-                .map(datos => ({ 
+                .map(datos => ({
                     [DATOS_MANEJADOR.valor]: datos[DATOS_MANEJADOR.valor].generarRepresentacion(),
                     [DATOS_MANEJADOR.apariciones]: datos[DATOS_MANEJADOR.apariciones],
                     [DATOS_MANEJADOR.id]: datos[DATOS_MANEJADOR.id],
                 })),
             [DATOS_ESTRUCTURA.tipoInterfaz]: manejoTipoDeDatos.obtenerInformacion(DATOS_TIPO_DE_DATO.generico)
-                .map(datos => ({ 
+                .map(datos => ({
                     [DATOS_MANEJADOR.valor]: datos[DATOS_MANEJADOR.valor].generarRepresentacion(),
                     [DATOS_MANEJADOR.apariciones]: datos[DATOS_MANEJADOR.apariciones],
                     [DATOS_MANEJADOR.id]: datos[DATOS_MANEJADOR.id],

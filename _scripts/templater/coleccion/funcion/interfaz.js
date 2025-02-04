@@ -1,7 +1,7 @@
 const MODIFICAR_METODO = "modificar";
 const ELIMINAR_METODO = "eliminar";
 
-const CANTIDAD_MINIMA = 1;
+const CANTIDAD_MINIMA = 0;
 
 const SALIR = "salir";
 
@@ -134,7 +134,7 @@ class TipoInterfaz {
     descripcionCompleta() {
         if (!this.esValido()) return "";
 
-        let descripcionMetodos = this.metodos.map(metodo => metodo.descripcionCompleta());
+        let descripcionMetodos = this.metodos.map(metodo => metodo.descripcionArgumento());
 
         switch (this.lenguajeActual) {
             case this.lenguajes.rust:
@@ -146,8 +146,18 @@ class TipoInterfaz {
     }
 
     descripcionArgumento() {
-        if (!this.esValido()) return "";
-        return datos[this.config.nombre];
+        return this.esValido() ? this.nombre : "";
+    }
+
+    generarSelf() {
+        let descripcion = () => {
+            return `Self ${this.nombre ? this.nombre : ""}`;
+        };
+        return {
+            descripcionCompleta: descripcion,
+            descripcionArgumento: () => descripcion,
+            esValido: () => true,
+        }
     }
 }
 

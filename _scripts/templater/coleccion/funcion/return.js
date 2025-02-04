@@ -21,6 +21,8 @@ class Return {
         this.manejoTipoDeDatos = manejoTipoDeDatos;
 
         this.descripcion = representacionPrevia[this.config.describir];
+        this.tipoDeDato = null;
+
         if (representacionPrevia[this.config.tipoDeDato]) {
             this.tipoDeDato = tp.user.tipoDeDato(
                 tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia[this.config.tipoDeDato]
@@ -70,7 +72,7 @@ class Return {
             : ` ${this.simbolos.agregar} ${this.simbolos.opcional} Descripción del valor de retorno`
         )
 
-        if (this.tipoDeDato && this.tipoDeDato.esValido()) {
+        if (this.tipoDeDato?.esValido()) {
             let descripcionTipoDeDato = this.tipoDeDato.descripcionCompleta()
                 .replaceAll("\n", "\n\t");
             opciones.push(MODIFICCAR_TIPO_DE_DATO);

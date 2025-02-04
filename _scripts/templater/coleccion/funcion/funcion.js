@@ -190,7 +190,7 @@ class Funcion {
     descripcionCompleta() {
         if (!this.esValido()) return "";
 
-        let parametros = this.parametros.map(param => param.descripcionCompleta());
+        let parametros = this.parametros.map(param => param.descripcionArgumento());
 
         let descripcion = "";
         switch (this.lenguajeActual) {

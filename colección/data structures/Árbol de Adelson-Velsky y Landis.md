@@ -3,114 +3,176 @@ dia: 2025-01-21
 etapa: empezado
 tags:
   - investigación/ciencias-de-la-computación/data-structures
-  - colección/data-structures
   - nota/colección
   - colección/data-structures/estructura
 nombreEstructura: Árbol de Adelson-Velsky y Landis
-estructuras:
-  - nombre: AVLTree
-    descripcion: Es una estructura que tiene los beneficios de un [[Árbol binario de Búsqueda|BST]], pero se mantiene [[Árbol Balanceado|balanceado]]
-    campos:
-      - nombre: rootNode
-        type:
-          - AVLNode
-        default: 
-        descripcion: Es la ráiz del árbol, la cual tiene como hijos a todos los elementos guardados
-    herencia: 
-  - nombre: AVLNode
-    descripcion: Es la estructra que representa cada nodo del árbol
-    campos:
-      - nombre: element
-        type:
-          - Key
-        default: 
-        descripcion: Es la key que usa el árbol
-      - nombre: height
-        type:
-          - UInteger
-        default: 
-        descripcion: Se puede definir como el [[Camino#Camino simple (Path)|path]] más largo desde ese nodo y sus hijos, solo descendiendo
-      - nombre: leftNode
-        type:
-          - AVLNode
-        default: 
-        descripcion: Es el nodo a la izquierda de este nodo
-      - nombre: rightNode
-        type:
-          - AVLNode
-        default: 
-        descripcion: Es el nodo a la derecha de este nodo
-    herencia: 
 métodos:
   - nombre: BuildTree
-    descripcion: Es la forma de crear el árbol a partir de una lista de elementos o uno vacio en el caso que la lista sea vacia
-    parametros:
-      - nombre: array
-        type:
-          - Key[]
-        default: "[]"
-        descripcion: "Es una lista de elemento no necesariamente ordenada "
+    descripcion: Crea un árbol vacio
+    parametros: []
     return:
       type:
-        - AVLTree
-      descripcion: 
+        id: GHeyzSIb1UYVXc4bAVTRT27m2TxoFPxa85VRRShUWIol0Y4l2t
+        type: Struct
   - nombre: Insert
-    descripcion: Permite insertar un elemento al árbol dado
+    descripcion: Permite insertar un elemento en el árbol dado
     parametros:
       - nombre: tree
-        type:
-          - AVLTree
-        default: 
         descripcion: Es el árbol al cual se inserta el elemento dado
-      - nombre: element
         type:
-          - Key
-        default: 
+          id: GHeyzSIb1UYVXc4bAVTRT27m2TxoFPxa85VRRShUWIol0Y4l2t
+          type: Struct
+      - nombre: element
         descripcion: Es el elemento a insertar al árbol
+        type:
+          id: vmnBSIAkrqivR6i2b1ZL8FDpemsgCQXK3X06AYlWnPfGaoRdT8
+          type: Generico
+  - nombre: Delete
+    descripcion: Permite eliminar un elemento al árbol dado
+    parametros:
+      - nombre: tree
+        descripcion: Es el árbol al cual se va a eliminar el elemento dado
+        type:
+          id: GHeyzSIb1UYVXc4bAVTRT27m2TxoFPxa85VRRShUWIol0Y4l2t
+          type: Struct
+      - nombre: element
+        descripcion: Es el elemento a eliminar
+        type:
+          id: vmnBSIAkrqivR6i2b1ZL8FDpemsgCQXK3X06AYlWnPfGaoRdT8
+          type: Generico
     return:
       type:
-        - void
-      descripcion: 
+        id: sZl2xEyXNUS14X1pWEKivsuiOdyflBBj8zuonV6I9tQZzla7f5
+        type: Primitivo
+      descripcion: Devuelve true si pudo eliminarlo
+  - nombre: Search
+    descripcion: Permite búscar un elemento al árbol dado
+    parametros:
+      - nombre: tree
+        descripcion: Es el árbol al cual se va a búscar el elemento dado
+        type:
+          id: GHeyzSIb1UYVXc4bAVTRT27m2TxoFPxa85VRRShUWIol0Y4l2t
+          type: Struct
+      - nombre: element
+        descripcion: Es el elemento a búscar
+        type:
+          id: vmnBSIAkrqivR6i2b1ZL8FDpemsgCQXK3X06AYlWnPfGaoRdT8
+          type: Generico
+    return:
+      type:
+        id: sZl2xEyXNUS14X1pWEKivsuiOdyflBBj8zuonV6I9tQZzla7f5
+        type: Primitivo
+      descripcion: Devuelve true si lo pudo encontrar
   - nombre: InorderWalk
     descripcion: Devuelve un array con todos los elementos del árbol recorriendolos en sentido Inorder
     parametros:
       - nombre: tree
-        type:
-          - AVLTree
-        default: 
         descripcion: Es el árbol en el cual se va a recorrer en sentido Inorder
+        type:
+          id: GHeyzSIb1UYVXc4bAVTRT27m2TxoFPxa85VRRShUWIol0Y4l2t
+          type: Struct
     return:
       type:
-        - Key[]
-      descripcion: 
+        id: 
+        type: Array
+        valor:
+          type:
+            id: vmnBSIAkrqivR6i2b1ZL8FDpemsgCQXK3X06AYlWnPfGaoRdT8
+            type: Generico
   - nombre: PostorderWalk
     descripcion: Devuelve un array con todos los elementos del árbol recorriendolos en sentido Postorder
     parametros:
       - nombre: tree
-        type:
-          - AVLTree
-        default: 
         descripcion: Es el árbol en el cual se va a recorrer en sentido Postorder
+        type:
+          id: GHeyzSIb1UYVXc4bAVTRT27m2TxoFPxa85VRRShUWIol0Y4l2t
+          type: Struct
     return:
       type:
-        - Key[]
-      descripcion: 
+        id: 
+        type: Array
+        valor:
+          type:
+            id: vmnBSIAkrqivR6i2b1ZL8FDpemsgCQXK3X06AYlWnPfGaoRdT8
+            type: Generico
   - nombre: PostorderWalk
     descripcion: Devuelve un array con todos los elementos del árbol recorriendolos en sentido Postorder
     parametros:
       - nombre: tree
-        type:
-          - AVLTree
-        default: 
         descripcion: Es el árbol en el cual se va a recorrer en sentido Postorder
+        type:
+          id: GHeyzSIb1UYVXc4bAVTRT27m2TxoFPxa85VRRShUWIol0Y4l2t
+          type: Struct
     return:
       type:
-        - Key[]
-      descripcion: 
+        id: 
+        type: Array
+        valor:
+          type:
+            id: vmnBSIAkrqivR6i2b1ZL8FDpemsgCQXK3X06AYlWnPfGaoRdT8
+            type: Generico
+estructuras:
+  - valor:
+      nombre: AVLTree
+      descripcion: Es una estructura que tiene los beneficios de un [[Árbol binario de Búsqueda|BST]], pero se mantiene [[Árbol Balanceado|balanceado]]
+      campos:
+        - nombre: rootNode
+          descripcion: Es la ráiz del árbol, la cual tiene como hijos a todos los elementos guardados
+          type:
+            id: SBOPv7Xvx4C0ZrsPX8jU1INIkRaCc4tZAiNe0XMowg68JlGNBC
+            type: Struct
+    apariciones: 8
+    id: GHeyzSIb1UYVXc4bAVTRT27m2TxoFPxa85VRRShUWIol0Y4l2t
+  - valor:
+      nombre: AVLNode
+      descripcion: Es la estructra que representa cada nodo del árbol
+      campos:
+        - nombre: element
+          descripcion: Es la key que usa el árbol
+          type:
+            id: vmnBSIAkrqivR6i2b1ZL8FDpemsgCQXK3X06AYlWnPfGaoRdT8
+            type: Generico
+        - nombre: height
+          descripcion: Se puede definir como el [[Camino#Camino simple (Path)|path]] más largo desde ese nodo y sus hijos, solo descendiendo
+          type:
+            id: HQtW4MbJNXWEiECxJLWgU1KSm1T7BK2CaAaiIM7xcBmADPChfA
+            type: Primitivo
+        - nombre: leftNode
+          descripcion: Es el nodo a la izquierda de este nodo
+          type:
+            id: SBOPv7Xvx4C0ZrsPX8jU1INIkRaCc4tZAiNe0XMowg68JlGNBC
+            type: Struct
+        - nombre: rightNode
+          descripcion: Es el nodo a la derecha de este nodo
+          type:
+            id: SBOPv7Xvx4C0ZrsPX8jU1INIkRaCc4tZAiNe0XMowg68JlGNBC
+            type: Struct
+    apariciones: 3
+    id: SBOPv7Xvx4C0ZrsPX8jU1INIkRaCc4tZAiNe0XMowg68JlGNBC
+interfaces:
+  - valor:
+      nombre: Elemenet
+      metodos:
+        - nombre: GetKey
+          descripcion: Devuelve la representación con un número entero
+          parametros:
+            - nombre: self
+              descripcion: El elemento en sí
+              type:
+                id: vmnBSIAkrqivR6i2b1ZL8FDpemsgCQXK3X06AYlWnPfGaoRdT8
+                type: Generico
+          return:
+            type:
+              id: Lx1Opin3ZE5kW9eKGSnGGm8pGjkFyU9kjuB7kM1cMmLBKRh71I
+              type: Primitivo
+    apariciones: 8
+    id: vmnBSIAkrqivR6i2b1ZL8FDpemsgCQXK3X06AYlWnPfGaoRdT8
 aliases:
   - Árbol AVL
   - AVL Tree
   - Adelson-Velsky and Landis Tree
+referencias:
+  - "701"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
@@ -190,7 +252,7 @@ aliases:
     
 \end{tikzpicture}
 \end{document}
-```  
+``` 
 ^representacion
 
 Manteniendo la invarianza, nos debería hacer que el árbol sea [[Árbol balanceado|balanceado]]
@@ -213,17 +275,9 @@ Vamos a ver las operaciones que deben existir para que se pueda usar esta estruc
 
 ### BuildTree
 ---
-```dataviewjs
-
-```
-
 ```
 function BuildTree :: array: Key[] -> AVLTree 
     let tree: AVLTree = { .rootNode = None }
-    
-    for element in array then
-        Insert tree element
-    end
     
     return tree
 end
@@ -557,11 +611,29 @@ Ahora, es similar a la situación previa, que resolvemos haciendo `LeftRotation(
 
 Como el otro caso, tenemos que hacer la observación que puede intercambiarse $C$ y $D$, o incluso con la altura de $C$ con $h = k - 1$, y es la misma resolución
 
+### Delete
+---
+
+
+### Search
+---
+
+
 ### InorderWalk
 ---
 
-### PreorderWalk
----
 
 ### PostorderWalk
 ---
+
+
+### PostorderWalk
+---
+
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+```

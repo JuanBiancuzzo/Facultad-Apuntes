@@ -104,7 +104,7 @@ class Parametro {
             )
         }
 
-        if (this.tipoDeDato && this.tipoDeDato.esValido()) {
+        if (this.tipoDeDato?.esValido()) {
             let descripcion = this.tipoDeDato.descripcionCompleta()
                 .replaceAll("\n", "\n\t");
             opciones.push(MODIFICCAR_TIPO_DE_DATO);
@@ -177,16 +177,16 @@ class Parametro {
 
         switch (this.lenguajeActual) {
             case this.lenguajes.python:
-                return `${descripcionTipoDato}`;
+                return `${this.nombre}: ${descripcionTipoDato}`;
 
             case this.lenguajes.rust:
-                return `${descripcionTipoDato}`;
+                return `${this.nombre}: ${descripcionTipoDato}`;
 
             case this.lenguajes.c:
-                return `${descripcionTipoDato}`;
+                return `${descripcionTipoDato} ${this.nombre}`;
 
             default:
-                return `${descripcionTipoDato}`;
+                return `${this.nombre}: ${descripcionTipoDato}`;
         }
     }
 }

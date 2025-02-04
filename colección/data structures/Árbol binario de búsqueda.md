@@ -7,135 +7,164 @@ tags:
   - colección/data-structures/estructura
   - curso/introduction-to-algorithms/Sorting-and-Trees
 nombreEstructura: Árbol binario de búsqueda
-estructuras:
-  - nombre: BinarySearchTree
-    descripcion: Representa el árbol y tiene la raíz del mismo
-    campos:
-      - nombre: rootNode
-        type:
-          - BinarySearchNode
-        default: 
-        descripcion: Es la ráiz del árbol, por lo que tiene como hijo a todos los demás nodos
-    herencia: 
-  - nombre: BinarySearchNode
-    descripcion: Representa individualmente los nodos del árbol, mantiene los hijos y la key
-    campos:
-      - nombre: element
-        type:
-          - Key
-        default: 
-        descripcion: Es la key guardada
-      - nombre: leftNode
-        type:
-          - BinarySearchNode
-        default: None
-        descripcion: Es el hijo izquierdo de este nodo
-      - nombre: rightNode
-        type:
-          - BinarySearchNode
-        default: None
-        descripcion: Es el hijo derecho de este nodo
-    herencia: 
 métodos:
   - nombre: BuildTree
-    descripcion: Crea un árbol de un array de elementos, o un árbol vacio si el array lo está
-    parametros:
-      - nombre: array
-        type:
-          - Key[]
-        default: "[]"
-        descripcion: Son los elementos que se quieren insertar al árbol al crearlo
+    descripcion: Crea un árbol vacio
+    parametros: []
     return:
       type:
-        - BinarySearchTree
-      descripcion: 
+        id: DHmriNsSEhvX8EkD4SKZGztBlfugy67PGmrjrwfIif194huv5w
+        type: Struct
   - nombre: Insert
-    descripcion: Permite insertar un elemento al árbol dado
+    descripcion: Permite insertar un elemento al árbol
     parametros:
       - nombre: tree
-        type:
-          - BinarySearchTree
-        default: 
         descripcion: Es el árbol al cual se inserta el elemento dado
-      - nombre: element
         type:
-          - Key
-        default: 
+          id: DHmriNsSEhvX8EkD4SKZGztBlfugy67PGmrjrwfIif194huv5w
+          type: Struct
+      - nombre: element
         descripcion: Es el elemento a insertar al árbol
-    return:
-      type:
-        - void
-      descripcion: 
+        type:
+          id: YjydW7ULIbVHDVSp4pQQ3vE8Vvj08GiiysaOfmCKT0UqJIS2ej
+          type: Generico
   - nombre: Delete
     descripcion: Permite eliminar un elemento del árbol dado
     parametros:
       - nombre: tree
-        type:
-          - BinarySearchTree
-        default: 
         descripcion: Es el árbol en el cual se va a eliminar el elemento
-      - nombre: element
         type:
-          - Key
-        default: 
+          id: DHmriNsSEhvX8EkD4SKZGztBlfugy67PGmrjrwfIif194huv5w
+          type: Struct
+      - nombre: element
         descripcion: Es el elemento a eliminar
+        type:
+          id: YjydW7ULIbVHDVSp4pQQ3vE8Vvj08GiiysaOfmCKT0UqJIS2ej
+          type: Generico
     return:
       type:
-        - bool
+        id: sZl2xEyXNUS14X1pWEKivsuiOdyflBBj8zuonV6I9tQZzla7f5
+        type: Primitivo
       descripcion: Devuelve true si se pudo eliminar
   - nombre: Search
-    descripcion: Búsca un elemento en el árbol dado
+    descripcion: Dúsca un elemento en el árbol dado
     parametros:
       - nombre: tree
-        type:
-          - BinarySearchTree
-        default: 
         descripcion: Es el árbol en el cual se va a búscar el elemento
-      - nombre: element
         type:
-          - Key
-        default: 
+          id: DHmriNsSEhvX8EkD4SKZGztBlfugy67PGmrjrwfIif194huv5w
+          type: Struct
+      - nombre: element
         descripcion: Es el elemento a búscar
+        type:
+          id: YjydW7ULIbVHDVSp4pQQ3vE8Vvj08GiiysaOfmCKT0UqJIS2ej
+          type: Generico
     return:
       type:
-        - bool
+        id: sZl2xEyXNUS14X1pWEKivsuiOdyflBBj8zuonV6I9tQZzla7f5
+        type: Primitivo
       descripcion: Devuelve true si el elemento existe en el árbol
   - nombre: InorderWalk
     descripcion: Devuelve un array con todos los elementos del árbol recorriendolos en sentido Inorder
     parametros:
       - nombre: tree
-        type:
-          - BinarySearchTree
-        default: 
         descripcion: Es el árbol en el cual se va a recorrer en sentido Inorder
+        type:
+          id: DHmriNsSEhvX8EkD4SKZGztBlfugy67PGmrjrwfIif194huv5w
+          type: Struct
     return:
       type:
-        - Key[]
-      descripcion: 
+        id: 
+        type: Array
+        valor:
+          type:
+            id: YjydW7ULIbVHDVSp4pQQ3vE8Vvj08GiiysaOfmCKT0UqJIS2ej
+            type: Generico
   - nombre: PreorderWalk
     descripcion: Devuelve un array con todos los elementos del árbol recorriendolos en sentido Preorder
     parametros:
       - nombre: tree
-        type:
-          - BinarySearchTree
-        default: 
         descripcion: Es el árbol en el cual se va a recorrer en sentido Preorder
+        type:
+          id: DHmriNsSEhvX8EkD4SKZGztBlfugy67PGmrjrwfIif194huv5w
+          type: Struct
     return:
       type:
-        - Key[]
-      descripcion: 
+        id: 
+        type: Array
+        valor:
+          type:
+            id: YjydW7ULIbVHDVSp4pQQ3vE8Vvj08GiiysaOfmCKT0UqJIS2ej
+            type: Generico
   - nombre: PostorderWalk
     descripcion: Devuelve un array con todos los elementos del árbol recorriendolos en sentido Postorder
     parametros:
       - nombre: tree
-        type:
-          - BinarySearchTree
-        default: 
         descripcion: Es el árbol en el cual se va a recorrer en sentido Postorder
+        type:
+          id: DHmriNsSEhvX8EkD4SKZGztBlfugy67PGmrjrwfIif194huv5w
+          type: Struct
     return:
       type:
-        - Key[]
-      descripcion: 
+        id: 
+        type: Array
+        valor:
+          type:
+            id: YjydW7ULIbVHDVSp4pQQ3vE8Vvj08GiiysaOfmCKT0UqJIS2ej
+            type: Generico
+estructuras:
+  - valor:
+      nombre: BinarySearchTree
+      descripcion: Representa el árbol y tiene la raíz del mismo
+      campos:
+        - nombre: rootNode
+          descripcion: Es la ráiz del árbol, por lo que tiene como hijo a todos los demás nodos
+          type:
+            id: IyATEANol8IFifj1Mj3chzO8zBgDT9mgBNYWL7uuR4qRrs56bz
+            type: Struct
+    apariciones: 8
+    id: DHmriNsSEhvX8EkD4SKZGztBlfugy67PGmrjrwfIif194huv5w
+  - valor:
+      nombre: BinarySearchNode
+      descripcion: Representa individualmente los nodos del árbol, mantiene los hijos y la key
+      campos:
+        - nombre: element
+          descripcion: Es la key guardada
+          type:
+            id: YjydW7ULIbVHDVSp4pQQ3vE8Vvj08GiiysaOfmCKT0UqJIS2ej
+            type: Generico
+        - nombre: leftNode
+          descripcion: Es el hijo izquierdo de este nodo
+          default: None
+          type:
+            id: IyATEANol8IFifj1Mj3chzO8zBgDT9mgBNYWL7uuR4qRrs56bz
+            type: Struct
+        - nombre: rightNode
+          descripcion: Es el hijo derecho de este nodo
+          default: None
+          type:
+            id: IyATEANol8IFifj1Mj3chzO8zBgDT9mgBNYWL7uuR4qRrs56bz
+            type: Struct
+    apariciones: 3
+    id: IyATEANol8IFifj1Mj3chzO8zBgDT9mgBNYWL7uuR4qRrs56bz
+interfaces:
+  - valor:
+      nombre: Element
+      metodos:
+        - nombre: GetKey
+          descripcion: Dado un elemento, devuelve su representación con un número entero
+          parametros:
+            - nombre: self
+              descripcion: El elemento en sí
+              type:
+                id: YjydW7ULIbVHDVSp4pQQ3vE8Vvj08GiiysaOfmCKT0UqJIS2ej
+                type: Generico
+          return:
+            type:
+              id: Lx1Opin3ZE5kW9eKGSnGGm8pGjkFyU9kjuB7kM1cMmLBKRh71I
+              type: Primitivo
+    apariciones: 8
+    id: YjydW7ULIbVHDVSp4pQQ3vE8Vvj08GiiysaOfmCKT0UqJIS2ej
 aliases:
   - ABB
   - Binary Search Tree
@@ -236,17 +265,9 @@ Vamos a ver las operaciones que deben existir para que se pueda usar esta estruc
 
 ### BuildTree
 ---
-```dataviewjs
-
 ```
-
-```
-function BuildTree :: array: Key[] -> BinarySearchTree 
+function BuildTree :: () -> BinarySearchTree 
     let tree: BinarySearchTree = { .rootNode = None }
-    
-    for element in array then
-        Insert tree element
-    end
     
     return tree
 end
@@ -254,10 +275,6 @@ end
 
 ### Insert
 ---
-```dataviewjs
-
-```
-
 ```
 function Insert :: tree: BinarySearchTree element: Key -> void
     InsertNode tree.rootNode element

@@ -11,7 +11,10 @@ class Contador {
         this.tiposDeDatos = {
             [DATOS_TIPO.primitivo]: {},
             [DATOS_TIPO.struct]: {},
+            [DATOS_TIPO.interfaz]: {},
             [DATOS_TIPO.generico]: {},
+            [DATOS_TIPO.enum]: {},
+            [DATOS_TIPO.union]: {},
         };
 
         for (let { [this.config.id]: id, [this.config.tipo]: tipo, [this.config.valor]: valor } of datosPrevios) {
