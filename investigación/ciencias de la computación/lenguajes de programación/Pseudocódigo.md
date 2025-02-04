@@ -15,7 +15,13 @@ aliases:
 tiposDeDatosPrimitivos:
   - id: Lx1Opin3ZE5kW9eKGSnGGm8pGjkFyU9kjuB7kM1cMmLBKRh71I
     valor: Integer
-    apariciones: 0
+    apariciones: 5
+  - id: sZl2xEyXNUS14X1pWEKivsuiOdyflBBj8zuonV6I9tQZzla7f5
+    valor: Boolean
+    apariciones: 7
+  - id: HQtW4MbJNXWEiECxJLWgU1KSm1T7BK2CaAaiIM7xcBmADPChfA
+    valor: UInteger
+    apariciones: 1
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
