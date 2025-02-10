@@ -157,7 +157,7 @@ Por último vemos el [[licenciatura en ciencias matemáticas/algebra 1/Números 
 
 ## Capítulo 5: Enteros - Segunda Parte
 ---
-
+Empezamos viendo las [[Ecuación lineal diofántica|ecuaciones lineales diofánticas]]
 
 ## Capítulo 6: Números Complejos
 ---
