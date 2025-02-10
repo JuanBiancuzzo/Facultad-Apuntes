@@ -7,7 +7,7 @@ tags:
   - ingeniería-electrónica/algo-1/Punteros
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - nota/facultad
-  - investigación/ciencias-de-la-computación/algoritmos
+  - investigación/ciencias-de-la-computación/algoritmos/Sorting-algorithms
 aliases:
   - Binary Search
 ---
@@ -20,9 +20,9 @@ Este [[Algoritmo|algoritmo]] de búsqueda puede ser utilizado únicamente cuando
 
 ```
 function BusquedaBinaria :: 
-    array: Integer[] 
-    n: Integer 
-    elemento: Integer 
+    array: Integer[], 
+    n: Integer, 
+    elemento: Integer, 
 -> Opcion<Interger>
     
     let inicio = 0
