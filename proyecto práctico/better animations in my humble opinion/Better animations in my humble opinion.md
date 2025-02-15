@@ -18,5 +18,5 @@ La intención es crear una mejor forma de crear animaciones, la cual integre ani
 # Notas
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/proyectos/mostrarNotas", { proyecto: dv.current() });
+await dv.view("_scripts/dataview/proyecto/nota", { proyecto: dv.current() });
 ```

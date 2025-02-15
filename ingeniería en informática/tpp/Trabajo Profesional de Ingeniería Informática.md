@@ -32,5 +32,5 @@ await dv.view("_scripts/dataview/mostrarTemaInvestigacion", { indice: dv.current
 # Notas
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/proyectos/mostrarNotas", { proyecto: dv.current() });
+await dv.view("_scripts/dataview/proyecto/nota", { proyecto: dv.current() });
 ```

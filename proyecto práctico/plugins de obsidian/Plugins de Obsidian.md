@@ -24,5 +24,5 @@ El tercer plugin es permitir usar una métrica de orden, mostrar al usuario dos 
 # Notas
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/proyectos/mostrarNotas", { proyecto: dv.current() });
+await dv.view("_scripts/dataview/proyecto/nota", { proyecto: dv.current() });
 ```

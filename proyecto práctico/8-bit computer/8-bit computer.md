@@ -18,5 +18,5 @@ Vamos a crear una mini-[[Computadora|computadora]] de $8$ bits con su propia set
 # Notas
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/proyectos/mostrarNotas", { proyecto: dv.current() });
+await dv.view("_scripts/dataview/proyecto/nota", { proyecto: dv.current() });
 ```
