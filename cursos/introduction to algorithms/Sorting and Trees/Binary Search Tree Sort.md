@@ -13,7 +13,7 @@ aliases:
   - Ordenamiento con ABB
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
