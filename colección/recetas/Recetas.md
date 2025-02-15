@@ -6,7 +6,7 @@ tags:
 estado: Todavía no tiene nada pero la idea es agregar recetas y explorar los aspectos de nutrición que pueden aparecer
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
+await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---

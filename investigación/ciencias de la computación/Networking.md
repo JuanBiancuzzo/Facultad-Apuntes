@@ -7,7 +7,7 @@ tag:
 equivalente: "[[investigación/networking/Red.md|Red]]"
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
+await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });
 ```
 ## Resumen
 ---

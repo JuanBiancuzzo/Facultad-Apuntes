@@ -7,7 +7,7 @@ tags:
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/Lenguaje-cpp
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
+await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---

@@ -7,7 +7,7 @@ tags:
 equivalente: "[[investigación/ciencias de la computación/lenguajes de programación/lenguaje c/System call/File system system calls/File system system calls.md|File system system calls]]"
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
+await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });
 ```
 ## Resumen
 ---

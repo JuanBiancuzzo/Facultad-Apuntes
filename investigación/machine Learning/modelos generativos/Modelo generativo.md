@@ -9,7 +9,7 @@ tags:
   - investigación/matemática/Estadística/Machine-learning/modelos-generativos
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/mostrarSuperTema", { indice: dv.current() });
+await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
