@@ -1,5 +1,5 @@
 ---
-dia: 2025-02-10
+dia: 2025-02-13
 etapa: ampliar
 referencias:
   - "415"
@@ -7,15 +7,13 @@ tags:
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
   - licenciatura-en-ciencias-de-datos/algebra-1/Números-enteros
   - nota/facultad
-aliases:
-  - Ecuación linea diofántica equivalente
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
-Dos [[Ecuación diofántica|ecuaciones diofánticas]] son equivalente si tienen las mismas soluciones. En el caso particular de unas [[Ecuación lineal diofántica|ecuaciones lineales diofánticas]] $a ~ X + b ~ Y = c$ y $a' ~ X + b' ~ Y = c'$ con las soluciones $(x,~ y) \in \mathbb{Z}^2$. En ese caso adoptamos la notación $$ a ~ X + b ~ Y = c \leftrightsquigarrow a' ~ X + b' ~ Y = c' $$
+Sean $aX \equiv c ~ (\text{mod} ~ m)$ y $a'X = c' ~ (\text{mod} ~ m)$ dos [[Ecuación lineal de congruencia|ecuaciones de congruencia]]. Decimos que son equivalentes si tienen exactamente las mismas soluciones $x \in \mathbb{Z}$. En ese caso adoptamos la notación $$ aX \equiv c ~ (\text{mod} ~ m) \leftrightsquigarrow a'X \equiv c' ~ (\text{mod} ~ m) $$
 
 # Referencias
 ---

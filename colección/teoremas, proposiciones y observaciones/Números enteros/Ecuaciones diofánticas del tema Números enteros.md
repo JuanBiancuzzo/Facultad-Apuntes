@@ -21,4 +21,12 @@ nota:
     nombre: Ecuación diofántica y ecuación "coprimizada"
     path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Ecuación lineal diofántica#^obs-1-5-4
     pathRelacionado: 
+  - numero: 5
+    nombre: La ecuación diofántica $a \cdot X + b \cdot Y = 0$
+    path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Ecuación lineal diofántica#^prop-1-5-5
+    pathRelacionado: 
+  - numero: 6
+    nombre: La ecuación lineal diofántica $a \cdot X + b \cdot Y = c$
+    path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Ecuación lineal diofántica#^teo-1-5-6
+    pathRelacionado: 
 ---
