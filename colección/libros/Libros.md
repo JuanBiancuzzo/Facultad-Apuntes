@@ -10,7 +10,7 @@ estado: Vamos a colectar libros que me interese analizar para poder aprender y r
 Este va a ser un lugar para resumir/sacar conclusiones de libros que quiera leer pero no tengan un tema especifico
 
 ```dataviewjs
-await dv.view("_scripts/dataview/libro/mostrarBiblioteca");
+await dv.view("_scripts/dataview/coleccion/libro/biblioteca");
 ```
 
 #### Buscar (90)
