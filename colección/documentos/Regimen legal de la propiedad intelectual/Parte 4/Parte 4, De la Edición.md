@@ -18,5 +18,5 @@ El titular conserva su derecho de propiedad intelectual, salvo que renunciare a 
 # Artículos
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/legal/mostrarArticulos", { paginaActual: dv.current() });
+	await dv.view("_scripts/dataview/coleccion/articulos/articulo", { paginaActual: dv.current() });
 ```

@@ -38,7 +38,7 @@ Como enuncia el [[Art. 777 del CC y CN, Ejecución forzada|art. 777 del CC y CN]
 # Artículos
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/legal/mostrarArticulos", { paginaActual: dv.current() });
+	await dv.view("_scripts/dataview/coleccion/articulos/articulo", { paginaActual: dv.current() });
 ```
 
 

@@ -20,7 +20,7 @@ El contrato adquiere su máxima importancia en un régimen de [[Economía|econom
 # Artículos
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/legal/mostrarArticulos", { paginaActual: dv.current() });
+	await dv.view("_scripts/dataview/coleccion/articulos/articulo", { paginaActual: dv.current() });
 ```
 
 

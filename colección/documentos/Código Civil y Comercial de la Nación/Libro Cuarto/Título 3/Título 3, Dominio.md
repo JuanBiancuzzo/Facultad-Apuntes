@@ -49,7 +49,7 @@ Esta previsto en la [[Constitución de la Nación|Constitución Nacional]] en el
 # Artículos
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/legal/mostrarArticulos", { paginaActual: dv.current() });
+	await dv.view("_scripts/dataview/coleccion/articulos/articulo", { paginaActual: dv.current() });
 ```
 
 

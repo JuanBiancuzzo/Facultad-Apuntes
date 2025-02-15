@@ -25,7 +25,7 @@ Como enuncia el [[Art. 1003 del CC y CN, Disposiciones generales|artículo 1003]
 # Artículos
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/legal/mostrarArticulos", { paginaActual: dv.current() });
+	await dv.view("_scripts/dataview/coleccion/articulos/articulo", { paginaActual: dv.current() });
 ```
 
 
