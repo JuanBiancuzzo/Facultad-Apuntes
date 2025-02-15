@@ -11,9 +11,6 @@ tags:
 ```dataviewjs
 	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
 ```
-
-^e6d814
-
 # Definición
 ---
 Dado $m \in \mathbb{N}$, la ecuación tiene la forma $$ aX \equiv c ~ (\text{mod} ~ m) $$ para $a,~ c \in \mathbb{Z}$
