@@ -27,5 +27,5 @@ tags:
 ---
 ```dataviewjs
 	let actual = dv.current();
-	await dv.view("_scripts/dataview/libro/mostrarCapitulos", { libro: actual, capitulos: actual?.capitulos });
+	await dv.view("_scripts/dataview/coleccion/libro/capitulos", { libro: actual, capitulos: actual?.capitulos });
 ```
