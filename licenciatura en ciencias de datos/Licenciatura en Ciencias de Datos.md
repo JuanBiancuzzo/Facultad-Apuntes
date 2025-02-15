@@ -10,7 +10,7 @@ tieneCodigo: false
 # Mapa
 ---
 ```dataviewjs
-    await dv.view("_scripts/dataview/mapaCarrera", { tag: "licenciatura-en-ciencias-de-datos" });
+    await dv.view("_scripts/dataview/carrera/mapa", { tag: "licenciatura-en-ciencias-de-datos" });
 ```
 
 ```dataviewjs

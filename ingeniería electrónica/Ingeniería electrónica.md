@@ -11,7 +11,7 @@ tieneCodigo: true
 # Mapa
 ---
 ```dataviewjs
-    await dv.view("_scripts/dataview/mapaCarrera", { tag: "ingeniería-electrónica" });
+    await dv.view("_scripts/dataview/carrera/mapa", { tag: "ingeniería-electrónica" });
 ```
 
 ```dataviewjs
