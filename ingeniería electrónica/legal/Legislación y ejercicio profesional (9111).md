@@ -26,15 +26,5 @@ nombreReducido: legal
 Se tiene varios documentos utilizados a lo largo de la cursada, estos siendo
 
 ```dataviewjs
-let datos = dv.pages(`#legal/documento`)
-	.sort(documento => -dv.pages(`"${documento.file.folder}"`).length)
-	.map(archivo => ({
-        path: archivo.file.path,
-        nombre: archivo.file.name,
-        largo: false,
-        descripcionSimple: true,
-        descripcion: ""
-    }));
-
-await dv.view("_scripts/dataview/mostrarElementos", { lista: [{ elementos: datos }] });
+await dv.view("_scripts/dataview/coleccion/articulos/documentos");
 ```
