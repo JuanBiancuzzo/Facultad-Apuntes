@@ -7,7 +7,7 @@ tags:
   - ingeniería-electrónica/legal/Capítulo
 ---
 ```dataviewjs
-    await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
+    await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });
 ```
 # Interpretación
 ---

@@ -8,7 +8,7 @@ aliases:
   - Ley 25.036
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/legal/mostrarSubSecciones", { paginaActual: dv.current() });
+	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });
 ```
 # Artículos
 ---
