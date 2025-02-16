@@ -9,7 +9,7 @@ tags:
   - investigación/matemática/Análisis-numérico/Numerical-Linear-Algebra/integrator
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
@@ -21,5 +21,5 @@ Entonces el método de Runge-Kutta (de orden $s$) tiene la siguiente expresión,
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```
