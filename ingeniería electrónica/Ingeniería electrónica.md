@@ -15,5 +15,5 @@ tieneCodigo: true
 ```
 
 ```dataviewjs
-    await dv.view("_scripts/dataview/materias", { tag: "ingeniería-electrónica" });
+    await dv.view("_scripts/dataview/carrera/materias", { tag: "ingeniería-electrónica" });
 ```

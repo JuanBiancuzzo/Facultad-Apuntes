@@ -14,5 +14,5 @@ tieneCodigo: false
 ```
 
 ```dataviewjs
-    await dv.view("_scripts/dataview/materias", { tag: "licenciatura-en-ciencias-matemáticas" });
+    await dv.view("_scripts/dataview/carrera/materias", { tag: "licenciatura-en-ciencias-matemáticas" });
 ```
