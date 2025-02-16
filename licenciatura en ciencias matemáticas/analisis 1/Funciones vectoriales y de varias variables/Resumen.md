@@ -13,7 +13,7 @@ nombreResumen: Funciones vectoriales y de varias variables
 # Índice
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
 ```
 
 # Resumen

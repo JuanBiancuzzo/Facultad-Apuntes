@@ -16,7 +16,7 @@ nombreResumen: Assembly Language, Models of Computation
 # Índice
 ---
 ```dataviewjs
-    await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+    await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
 ```
 
 # Resumen

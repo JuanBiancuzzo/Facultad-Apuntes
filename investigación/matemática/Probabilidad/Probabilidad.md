@@ -38,7 +38,7 @@ Sea $A = \displaystyle \bigcup^{\infty}_{i = 1} A_i \in \mathscr{A}$ con los [[E
 ## Archivos
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/mostrarTemaInvestigacion", { indice: dv.current() });
+await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
 ```
 
 

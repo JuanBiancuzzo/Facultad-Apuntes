@@ -16,7 +16,7 @@ Se va a investigar las reglas APA que se va a usar para citar cualquier contenid
 ## Archivos
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/mostrarTemaInvestigacion", { indice: dv.current() });
+await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
 ```
 
 

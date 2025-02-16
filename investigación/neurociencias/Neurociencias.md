@@ -16,7 +16,7 @@ Vamos a investigar esta rama de la ciencia, donde vamos a darle el foco a los te
 ## Archivos
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/mostrarTemaInvestigacion", { indice: dv.current() });
+await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
 ```
 
 

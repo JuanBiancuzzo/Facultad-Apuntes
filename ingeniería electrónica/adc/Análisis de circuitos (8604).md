@@ -17,7 +17,7 @@ nombreReducido: adc
 # Apuntes
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/mostrarContenido", { materia: dv.current() });
+	await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
 ```
 
 # Bibliografía

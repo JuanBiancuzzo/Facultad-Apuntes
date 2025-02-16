@@ -23,7 +23,7 @@ Una introducción a la ciberseguridad para audiencias técnicas y no técnicas p
 ## Archivos
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/mostrarContenido", { materia: dv.current() });
+	await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
 ```
 
 # Bibliografía

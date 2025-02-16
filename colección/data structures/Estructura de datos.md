@@ -25,7 +25,7 @@ Las estructuras de datos son medios para manejar grandes cantidades de informaci
 ## Archivos
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/mostrarTemaInvestigacion", { indice: dv.current() });
+await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
 ```
 
 

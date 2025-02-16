@@ -25,7 +25,7 @@ Los métodos de ordenamiento se aplican sobre un [[Array|array]] o cualquier est
 ## Archivos
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/mostrarTemaInvestigacion", { indice: dv.current() });
+await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
 ```
 
 

@@ -16,7 +16,7 @@ nombreResumen: Amplificadores con varios dispositivos activos de bajo nivel de p
 # Índice 
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
 ```
 
 # Resumen

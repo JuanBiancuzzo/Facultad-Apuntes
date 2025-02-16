@@ -9,7 +9,7 @@ nombreResumen: Circuitos en régimen alterno permanente
 # Índice 
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
 ```
 
 # Resumen

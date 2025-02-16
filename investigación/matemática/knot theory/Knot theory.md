@@ -17,7 +17,7 @@ Vamos a investigar la rama de la matemática conocida como knot theory, que es l
 #### Archivos
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/mostrarTemaInvestigacion", { indice: dv.current() });
+await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
 ```
 
 

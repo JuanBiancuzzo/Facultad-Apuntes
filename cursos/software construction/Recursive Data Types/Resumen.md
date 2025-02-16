@@ -17,7 +17,7 @@ nombreResumen: Recursive Data Types
 # Índice
 ---
 ```dataviewjs
-    await dv.view("_scripts/dataview/mostrarResumen", { resumen: dv.current() });
+    await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
 ```
 
 # Resumen
