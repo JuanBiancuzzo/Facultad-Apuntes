@@ -21,5 +21,5 @@ Google hacking, también llamado Google dorking, es una técnica en informática
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

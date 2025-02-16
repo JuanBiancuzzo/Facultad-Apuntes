@@ -65,5 +65,5 @@ Para mejorar la calidad y velocidad de este algoritmo, dependiendo de las condic
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

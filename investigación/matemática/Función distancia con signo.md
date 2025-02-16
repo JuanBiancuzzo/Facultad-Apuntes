@@ -28,5 +28,5 @@ Ver [Inigo Quilez 2D distance functions](https://iquilezles.org/articles/distfun
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

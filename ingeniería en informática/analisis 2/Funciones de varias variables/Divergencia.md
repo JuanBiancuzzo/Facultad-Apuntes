@@ -35,5 +35,5 @@ $$ \nabla \vec{F} = \displaystyle \frac{1}{r^2} \frac{\partial (r^2 F_r)}{\parti
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

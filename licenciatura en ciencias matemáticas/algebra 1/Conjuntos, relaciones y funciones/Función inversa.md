@@ -40,5 +40,5 @@ Sea $f : A \to B$ una función. Si existe una función $g : B \to A$ tal que $g 
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

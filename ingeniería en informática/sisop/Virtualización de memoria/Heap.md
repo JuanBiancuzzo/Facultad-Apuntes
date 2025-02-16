@@ -193,5 +193,5 @@ Esta tiene una complejidad esta dada por $O(\log_2(n))$, esto lo podemos razonar
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

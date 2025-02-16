@@ -29,5 +29,5 @@ En general es una [[Función|función]] $f:~ [0,~1] \to \mathbb{R}$ donde tiene 
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

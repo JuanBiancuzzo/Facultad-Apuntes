@@ -27,5 +27,5 @@ nombreResumen: Finite State Machines
 # Bibliografía
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/bibliografiaMateria", { materia: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasAcumuladas", { archivo: dv.current() });
 ```

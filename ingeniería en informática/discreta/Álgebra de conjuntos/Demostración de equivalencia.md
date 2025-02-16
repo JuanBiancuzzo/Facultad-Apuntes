@@ -56,5 +56,5 @@ A veces demostrar que una [[Operador condicional|implicancia]] es complicada, po
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

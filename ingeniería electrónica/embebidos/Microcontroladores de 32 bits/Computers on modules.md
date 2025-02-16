@@ -20,5 +20,5 @@ Es un tipo de [[Single board computer (SBC)|SBC]], y un subtipo de un [[Sistema 
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

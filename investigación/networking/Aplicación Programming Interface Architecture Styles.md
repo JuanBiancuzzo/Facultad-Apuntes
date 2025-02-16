@@ -27,5 +27,5 @@ Las [[Aplicación Programming Interface|API's]] son claves para el desarrollo de
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

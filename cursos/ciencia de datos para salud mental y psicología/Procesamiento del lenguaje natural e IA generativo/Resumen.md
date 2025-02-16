@@ -29,5 +29,5 @@ nombreResumen: Procesamiento del lenguaje natural e IA generativo
 # Bibliografía
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/bibliografiaMateria", { materia: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasAcumuladas", { archivo: dv.current() });
 ```

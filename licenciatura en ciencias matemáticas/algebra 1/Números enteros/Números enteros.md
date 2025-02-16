@@ -74,5 +74,5 @@ Recordemos otras propiedades que ya conocemos de $\mathbb{Z}$ o también de subc
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

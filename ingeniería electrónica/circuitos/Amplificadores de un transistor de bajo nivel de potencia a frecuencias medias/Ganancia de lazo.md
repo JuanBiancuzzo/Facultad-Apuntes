@@ -103,5 +103,5 @@ Tomando un [[Amplificador de tensión|amplificador de tensión]] $A_0$ y un bloq
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

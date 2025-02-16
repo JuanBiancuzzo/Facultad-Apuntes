@@ -74,5 +74,5 @@ Dado $m \in \mathbb{N}$, la ecuación tiene la forma $$ aX \equiv c ~ (\text{mod
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

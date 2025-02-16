@@ -29,5 +29,5 @@ Mientras que los ejemplos serán predominantemente de psicología y salud mental
 # Bibliografía
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/bibliografiaMateria", { materia: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasAcumuladas", { archivo: dv.current() });
 ```

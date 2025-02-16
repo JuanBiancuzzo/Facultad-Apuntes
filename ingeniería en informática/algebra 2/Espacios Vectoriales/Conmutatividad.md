@@ -67,5 +67,5 @@ $$ u + v = v + u, ~~~ \forall u, v \in\mathbb{V} $$ ^67ee7b
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

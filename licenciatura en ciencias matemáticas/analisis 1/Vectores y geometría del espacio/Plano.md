@@ -57,5 +57,5 @@ Podemos definir el plano como $\mathbb{R}^2$ que es el [[Producto cartesiano|pro
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

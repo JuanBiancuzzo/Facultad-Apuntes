@@ -27,5 +27,5 @@ nombreResumen: Assembly Language, Models of Computation
 # Bibliografía
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/bibliografiaMateria", { materia: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasAcumuladas", { archivo: dv.current() });
 ```

@@ -19,5 +19,5 @@ Este trabajo profesional lo voy a hacer con Sofia Javes
 # Bibliografía
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/bibliografiaMateria", { materia: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasAcumuladas", { archivo: dv.current() });
 ```

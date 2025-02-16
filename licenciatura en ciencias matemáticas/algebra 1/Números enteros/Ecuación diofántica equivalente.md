@@ -20,5 +20,5 @@ Dos [[Ecuación diofántica|ecuaciones diofánticas]] son equivalente si tienen 
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

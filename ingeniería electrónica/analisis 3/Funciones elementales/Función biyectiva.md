@@ -20,5 +20,5 @@ Sea $f : A \to B$ es una [[Función|función]]. Se dice que $f$ es biyectiva si 
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

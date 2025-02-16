@@ -25,5 +25,5 @@ Debes utilizar el estilo de cita de páginas web si no hay otra categoría de re
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

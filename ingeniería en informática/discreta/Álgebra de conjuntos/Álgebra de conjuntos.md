@@ -43,5 +43,5 @@ Es más simple trabajar con expresiones que están iguales al vacío (o la ident
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

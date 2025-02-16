@@ -104,5 +104,5 @@ Crea animaciones que aceleran y/o desaceleran usando la formula $f(t) = t^3$
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

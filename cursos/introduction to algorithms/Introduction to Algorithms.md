@@ -31,5 +31,5 @@ Este curso ofrece una introducción a la modelización matemática de problemas 
 # Bibliografía
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

@@ -17,5 +17,5 @@ Una tabla de verdad, es una tabla que muestra el valor de verdad de una [[Propos
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

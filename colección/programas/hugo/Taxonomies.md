@@ -28,5 +28,5 @@ Notemos que si queremos mantener las `tags` y `categories`, tenemos que agregarl
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

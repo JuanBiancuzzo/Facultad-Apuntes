@@ -501,5 +501,5 @@ Dado un set de reglas, un [[Grafo|grafo]] y $n$ estados, se puede realizar este 
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

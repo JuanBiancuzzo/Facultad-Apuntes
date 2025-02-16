@@ -63,5 +63,5 @@ Donde vemos que cuando $x = 0.5$ que es el momento donde es más difícil predec
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

@@ -19,5 +19,5 @@ Es una [[Amplificador operacional|amplificador]] que carece de [[Capacitor|capac
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

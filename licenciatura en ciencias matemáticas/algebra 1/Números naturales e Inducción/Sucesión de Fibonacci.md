@@ -72,5 +72,5 @@ $$ F_n = \frac{1}{\sqrt{5}} \left( \Phi^n - \overline{\Phi}^n \right), ~~~~ \for
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

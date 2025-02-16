@@ -24,5 +24,5 @@ Por simplicidad se expresa de la siguiente forma $$ (a - a_0)^2 + (b - b_0)^2 = 
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

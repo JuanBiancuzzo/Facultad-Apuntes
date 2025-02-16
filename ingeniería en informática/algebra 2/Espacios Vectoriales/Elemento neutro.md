@@ -67,5 +67,5 @@ $$ 1 \cdot u = u, ~~~ \forall u \in\mathbb{V}, ~~ 1 \in\mathbb{K} $$ ^025eea
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

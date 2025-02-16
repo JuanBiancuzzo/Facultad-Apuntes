@@ -47,5 +47,5 @@ Apellido Autor, N. N. (1994). _Título del trabajo._ ==(3ª ed., Vol. 4).== E
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

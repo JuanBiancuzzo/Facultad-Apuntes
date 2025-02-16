@@ -74,5 +74,5 @@ Markdown es un [[Lenguaje de marcado|lenguaje de marcado]] ligero creado por Joh
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

@@ -54,5 +54,5 @@ Para calcular $P$, permutaremos las filas de la matriz identidad $I_n$ como indi
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

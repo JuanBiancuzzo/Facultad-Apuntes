@@ -29,5 +29,5 @@ Hay dos tipos de fallas a considerar, las llamadas "fail-stop" en donde el nodo 
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

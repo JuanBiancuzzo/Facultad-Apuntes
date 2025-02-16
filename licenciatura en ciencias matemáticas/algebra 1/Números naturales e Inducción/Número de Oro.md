@@ -23,5 +23,5 @@ Notemos que vale que $\Phi^2 = \Phi + 1$ y $\overline{\Phi} = \overline{\Phi} + 
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

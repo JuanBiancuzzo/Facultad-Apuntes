@@ -122,5 +122,5 @@ Como cada término de una file, o sea $\binom{n + 1}{k}$, se obtiene como la sum
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

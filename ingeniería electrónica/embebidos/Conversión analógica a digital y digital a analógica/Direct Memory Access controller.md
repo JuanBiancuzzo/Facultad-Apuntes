@@ -28,5 +28,5 @@ Esto significa que la CPU tiene que darle el permiso a la DMAC para usar los bus
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

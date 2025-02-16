@@ -37,5 +37,5 @@ El [[Sistema operativo|S.O.]] crea esta ilusión mediante la [[Virtualización d
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

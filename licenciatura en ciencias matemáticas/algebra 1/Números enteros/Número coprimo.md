@@ -30,5 +30,5 @@ Se dice que $a,~ b \in \mathbb{Z}$ no ambos nulos son coprimos si y solo si $(a 
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

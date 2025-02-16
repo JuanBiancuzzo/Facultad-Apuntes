@@ -20,5 +20,5 @@ En el caso de una salida diferencia, se suele definir el $V_{offset}$ como la te
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

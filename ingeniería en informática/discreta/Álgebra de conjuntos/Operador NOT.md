@@ -230,5 +230,5 @@ Donde se puede implementar con [[Inversor Metal-Óxido-Semiconductor Complementa
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

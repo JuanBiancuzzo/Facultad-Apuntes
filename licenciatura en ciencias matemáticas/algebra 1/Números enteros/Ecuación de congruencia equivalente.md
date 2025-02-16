@@ -18,5 +18,5 @@ Sean $aX \equiv c ~ (\text{mod} ~ m)$ y $a'X = c' ~ (\text{mod} ~ m)$ dos [[Ecua
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

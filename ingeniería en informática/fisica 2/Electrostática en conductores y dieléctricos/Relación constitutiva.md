@@ -35,5 +35,5 @@ Si combinamos las expresiones del [[Campo de inducción magnética|campo de indu
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

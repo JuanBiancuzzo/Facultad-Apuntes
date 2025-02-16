@@ -167,5 +167,5 @@ En el caso de un [[Árbol binario|árbol binario]] la cantidad de hijos son $2$ 
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

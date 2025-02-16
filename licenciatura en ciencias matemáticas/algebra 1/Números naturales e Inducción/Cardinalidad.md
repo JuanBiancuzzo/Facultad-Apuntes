@@ -69,5 +69,5 @@ Sean $A$ y $B$ conjuntos finitos, con $n$ elementos ambos. Entonces la cantidad 
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

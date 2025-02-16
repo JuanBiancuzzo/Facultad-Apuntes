@@ -58,5 +58,5 @@ donde $0_\mathbb{V}$ es el [[Elemento neutro|elemento neutro]] de la suma
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

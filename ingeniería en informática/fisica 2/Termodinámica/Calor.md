@@ -18,5 +18,5 @@ Se denomina calor a la [[Energía|energía]] (medido en $J$) en tránsito que se
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

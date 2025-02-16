@@ -64,5 +64,5 @@ En el sistema decimal el $42$ en diferentes bases son $(101010)_2$, $(1120)_3$, 
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

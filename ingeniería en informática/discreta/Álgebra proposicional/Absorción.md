@@ -27,5 +27,5 @@ $$ \forall x, y \in B: ~~~~~ x + xy = x, ~~~ x(x + y) = x $$ ^350a2d
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

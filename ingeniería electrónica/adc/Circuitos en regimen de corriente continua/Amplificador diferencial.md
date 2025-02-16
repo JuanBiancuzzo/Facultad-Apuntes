@@ -36,5 +36,5 @@ Se lo define como el rango de valores de [[Tensión|tensión]] de entrada de mod
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

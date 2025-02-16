@@ -182,5 +182,5 @@ Entonces construimos el árbol de abajo para arriba, con los nodos menos probabl
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

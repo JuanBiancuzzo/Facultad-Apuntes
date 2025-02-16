@@ -18,5 +18,5 @@ Sea $A$ un [[Conjunto|conjunto]]. El conjunto de partes de $A$, que se nota $\ma
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

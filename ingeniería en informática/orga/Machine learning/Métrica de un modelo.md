@@ -37,5 +37,5 @@ Hay diferentes métricas que pueden usarse para la [[Validación del modelo|vali
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

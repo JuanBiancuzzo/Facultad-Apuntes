@@ -22,5 +22,5 @@ Es una [[Matriz|matriz]] que describe la frecuencia de un termino que aparece en
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

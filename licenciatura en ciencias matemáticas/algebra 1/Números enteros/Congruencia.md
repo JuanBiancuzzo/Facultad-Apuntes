@@ -144,5 +144,5 @@ En caso contrario se nota $a \not \equiv b~ (\text{mod}~ d)$ o $a \not \equiv b 
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

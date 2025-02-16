@@ -65,5 +65,5 @@ $$ \langle v_2 - v_1, v_2 - v_1 \rangle = \sum^n_{j = 1}(\langle v_2, u_j \rangl
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

@@ -26,5 +26,5 @@ Cualquier dato que se genere o modifique en un ISR debe almacenarse en ubicacion
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

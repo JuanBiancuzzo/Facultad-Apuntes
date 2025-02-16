@@ -22,5 +22,5 @@ Es una técnica de [[Regularization|regularización]] definida por $$ loss_{L2}(
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

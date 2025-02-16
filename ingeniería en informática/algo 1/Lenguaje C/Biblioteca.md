@@ -28,5 +28,5 @@ La mayoría de los [[Sistema operativo|sistemas operativos]] modernos proporcion
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

@@ -20,5 +20,5 @@ En estos circuitos, vamos a calcular los tres campos [[Material magnético#^camp
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

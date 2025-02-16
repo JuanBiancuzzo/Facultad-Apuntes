@@ -20,5 +20,5 @@ En general, los SoC no pueden alojar suficiente [[Memoria|memoria]] para un [[Si
 # Referencias
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

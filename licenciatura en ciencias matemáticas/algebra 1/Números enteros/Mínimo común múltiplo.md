@@ -50,5 +50,5 @@ Sean $a,~ b \in \mathbb{Z}$, no nulos. El mínimo común múltiplo entre $a$ y $
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

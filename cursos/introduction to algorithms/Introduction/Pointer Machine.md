@@ -21,5 +21,5 @@ Es un [[Modelo|modelo]] menos poderoso al de [[Random Access Machine|Random Acce
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

@@ -19,5 +19,5 @@ El costo en cuanto a tiempo, es la cantidad de comparaciones que se hagan
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

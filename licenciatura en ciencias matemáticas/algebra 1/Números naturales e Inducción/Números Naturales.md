@@ -47,5 +47,5 @@ Pero hay que garantizar que no es más "[[Cardinalidad|grande]]" que el conjunto
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

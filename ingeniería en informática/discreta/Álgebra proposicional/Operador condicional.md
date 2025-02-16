@@ -24,5 +24,5 @@ $A \subset B$ se lee "A incluido en B", significa que todos los elementos de $A$
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

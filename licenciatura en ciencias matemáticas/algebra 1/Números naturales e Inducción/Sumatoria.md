@@ -21,5 +21,5 @@ Sea $n \in \mathbb{N}$. LA notación $\displaystyle \sum_{i = 1}^n a_i$, que se 
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

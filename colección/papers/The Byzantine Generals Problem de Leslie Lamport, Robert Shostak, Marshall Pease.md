@@ -164,5 +164,5 @@ Usando ese resultado, podemos mostrar porque no hay solución para menos de $3m 
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

@@ -27,5 +27,5 @@ Si queremos ser formales, podemos observar que el [[Conjunto|conjunto]] $$ H = \
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

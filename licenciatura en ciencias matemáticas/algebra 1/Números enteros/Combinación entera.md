@@ -67,5 +67,5 @@ Se recupera la escritura de $(a ~:~ b) = r_l = s_l ~ a + t_l ~ b$ donde $r_l$ es
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

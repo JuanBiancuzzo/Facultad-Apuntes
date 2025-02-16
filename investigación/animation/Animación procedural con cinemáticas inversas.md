@@ -85,5 +85,5 @@ Para resolverla esta ecuación diferencial, podemos usar [[Integrador|integrador
 # Referencias
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/referenciasView", { archivo: dv.current() });
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```
