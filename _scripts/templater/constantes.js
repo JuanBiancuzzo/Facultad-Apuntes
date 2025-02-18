@@ -44,6 +44,16 @@ module.exports = () => ({
             editar: "Editar referencia - Template",
         }
     },
+    DATAVIEW: {
+        self: "_scripts/dataview",
+        etapa: "notas/etapa",
+        coleccion: {
+            bloqueMatematica: {
+                tema: "coleccion/bloqueMatematica/tema",
+                subtema: "coleccion/bloqueMatematica/subtema",
+            }
+        },
+    },
     SECCIONES: {
         referencias: { nivel: 1, texto: "Referencias" },
         resumen: { nivel: 1, texto: "Resumen" },

@@ -22,3 +22,6 @@ nota:
     path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Ecuación lineal de congruencia#^teo-1-6-4
     pathRelacionado: 
 ---
+```dataviewjs
+    dv.view("_scripts/dataview/coleccion/bloqueMatematica/subtema", { subtema: dv.current() });
+```

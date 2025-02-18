@@ -16,3 +16,6 @@ nota:
     path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Mínimo común múltiplo#^prop-1-4-3
 nombreSubtema: Mínimo común múltiplo
 ---
+```dataviewjs
+    dv.view("_scripts/dataview/coleccion/bloqueMatematica/subtema", { subtema: dv.current() });
+```

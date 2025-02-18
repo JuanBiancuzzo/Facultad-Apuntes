@@ -5,3 +5,6 @@ tags:
   - colección/bloque-matematica/tema
 nombreTema: Números enteros
 ---
+```dataviewjs
+    dv.view("_scripts/dataview/coleccion/bloqueMatematica/tema", { tema: dv.current() });
+```

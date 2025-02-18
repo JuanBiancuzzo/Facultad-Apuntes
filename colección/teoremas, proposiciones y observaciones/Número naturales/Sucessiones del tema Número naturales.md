@@ -10,3 +10,6 @@ nota:
     path: licenciatura en ciencias matemáticas/algebra 1/Números naturales e Inducción/Sucesión de Fibonacci#^obs-2-1-1
     pathRelacionado: 
 ---
+```dataviewjs
+    dv.view("_scripts/dataview/coleccion/bloqueMatematica/subtema", { subtema: dv.current() });
+```

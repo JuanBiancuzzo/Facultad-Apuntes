@@ -33,3 +33,6 @@ nota:
     path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Máximo común divisor#^obs-1-3-9
 nombreSubtema: Máximo común divisor
 ---
+```dataviewjs
+    dv.view("_scripts/dataview/coleccion/bloqueMatematica/subtema", { subtema: dv.current() });
+```

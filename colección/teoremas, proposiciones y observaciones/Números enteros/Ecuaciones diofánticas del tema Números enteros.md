@@ -30,3 +30,6 @@ nota:
     path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Ecuación lineal diofántica#^teo-1-5-6
     pathRelacionado: 
 ---
+```dataviewjs
+    dv.view("_scripts/dataview/coleccion/bloqueMatematica/subtema", { subtema: dv.current() });
+```

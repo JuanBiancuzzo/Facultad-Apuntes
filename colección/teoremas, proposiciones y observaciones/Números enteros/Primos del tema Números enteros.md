@@ -44,3 +44,6 @@ nota:
     pathRelacionado: "[[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Máximo común divisor#^prop-1-1-11|Proposición 1.1.11 (Máximo común divisor y factorización)]]"
 nombreSubtema: Primos
 ---
+```dataviewjs
+    dv.view("_scripts/dataview/coleccion/bloqueMatematica/subtema", { subtema: dv.current() });
+```

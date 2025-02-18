@@ -14,3 +14,6 @@ nota:
     path: ingeniería en informática/orga/Machine learning/Árbol de decisión#^teo-3-1-2
     pathRelacionado: 
 ---
+```dataviewjs
+    dv.view("_scripts/dataview/coleccion/bloqueMatematica/subtema", { subtema: dv.current() });
+```

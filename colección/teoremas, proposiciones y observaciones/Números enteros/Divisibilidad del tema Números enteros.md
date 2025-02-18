@@ -90,3 +90,6 @@ nota:
     path: licenciatura en ciencias matemáticas/algebra 1/Números enteros/Algoritmo de Euclides#^prop-1-2-28
 nombreSubtema: Divisibilidad
 ---
+```dataviewjs
+    dv.view("_scripts/dataview/coleccion/bloqueMatematica/subtema", { subtema: dv.current() });
+```

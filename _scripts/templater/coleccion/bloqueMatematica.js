@@ -328,6 +328,7 @@ async function crearTema(tp, tema) {
         TAGS: { coleccion: { self: TAG_COLECCION, bloqueMatematica: TAGS_MATEMATICA } }, 
         DATOS: { BLOQUES_MATEMATICA: { tema: DATOS_TEMA } },
         DIRECTORIOS: { coleccion: DIR_COLECCION },
+        DATAVIEW: { self: DV_SELF, coleccion: { bloqueMatematica: DV_BLOQUE_TEMA } }
     } = tp.user.constantes();
     const dv = app.plugins.plugins.dataview.api;
 
@@ -348,7 +349,7 @@ async function crearTema(tp, tema) {
         },
         carpeta: `${DIR_COLECCION.self}/${DIR_COLECCION.bloquesMatematica}/${tema}`,
         titulo: DATOS_TEMA.obtenerTitulo(tema),
-        texto: "",
+        texto: `\`\`\`dataviewjs\n\tawait dv.view("${DV_SELF}/${DV_BLOQUE_TEMA.tema}", { tema: dv.current() });\n\`\`\`\n`,
     };
 }
 
@@ -357,6 +358,7 @@ async function crearSubtema(tp, tema, subtema) {
         TAGS: { coleccion: { self: TAG_COLECCION, bloqueMatematica: TAGS_MATEMATICA } }, 
         DATOS: { BLOQUES_MATEMATICA: { subtema: DATOS_SUBTEMA } },
         DIRECTORIOS: { coleccion: DIR_COLECCION },
+        DATAVIEW: { self: DV_SELF, coleccion: { bloqueMatematica: DV_BLOQUE_TEMA } }
     } = tp.user.constantes();
     const dv = app.plugins.plugins.dataview.api;
 
@@ -387,7 +389,7 @@ async function crearSubtema(tp, tema, subtema) {
         },
         carpeta: carpeta,
         titulo: DATOS_SUBTEMA.obtenerTitulo(tema, subtema),
-        texto: "",
+        texto: `\`\`\`dataviewjs\n\tawait dv.view("${DV_SELF}/${DV_BLOQUE_TEMA.subtema}", { subtema: dv.current() });\n\`\`\`\n`,
     };
 }
 
