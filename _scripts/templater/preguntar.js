@@ -74,6 +74,7 @@ async function crearFormulario(tp, datos, mensaje) {
         numero: preguntar.numero.bind(null, tp),
         suggester: preguntar.suggester.bind(null, tp),
         formulario: preguntar.formulario.bind(null, tp),
+        fecha: preguntar.fecha.bind(null, tp),
     };
 
     let continuar;

@@ -51,7 +51,10 @@ module.exports = () => ({
             bloqueMatematica: {
                 tema: "coleccion/bloqueMatematica/tema",
                 subtema: "coleccion/bloqueMatematica/subtema",
-            }
+            },
+            libro: {
+                capitulo: "coleccion/libro/capitulos"
+            },
         },
     },
     SECCIONES: {

@@ -33,9 +33,10 @@
     let valores = [ CREAR ];
 
     for (let referencia of referenciasTotal) {
-        let existe = referenciasArchivo.includes(referencia[DATOS_REFERENCIA.numReferencia]);
-        opciones.push(` ${existe ? SIMBOLOS.sacar : SIMBOLOS.volver } ${referencias.describir(tp, referencia)}`);
-        valores.push(referencia[DATOS_REFERENCIA.numReferencia]);
+        let existe = referenciasArchivo.includes(referencia.obtenerNumReferencia());
+
+        opciones.push(` ${existe ? SIMBOLOS.sacar : SIMBOLOS.elegir } ${referencia.describir()}`);
+        valores.push(referencia);
     }
 
     try {
@@ -49,9 +50,8 @@
         if (respuesta == CREAR) {
             // Se quiere crear
             let seguidorRef = tp.user.seguidorReferencias().new(dv);
-            nuevasReferencias.push(seguidorRef.conseguirReferencia());
-
-            await referencias.generar(tp);
+            let { referencia: nuevaReferencia } = await referencias.generar(tp, seguidorRef);
+            nuevasReferencias.push(nuevaReferencia.obtenerNumReferencia());
 
         } else if (referenciasArchivo.includes(respuesta)) {
             // Se quiere eliminar

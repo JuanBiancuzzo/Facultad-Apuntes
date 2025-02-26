@@ -59,9 +59,12 @@
         seguidorRef, 
         referenciaEditar
     );
+    console.log("Hola -2");
 
     let archivoReferencia = referencia.archivoReferencia(tp, referenciaEditar[DATOS_REFERENCIA.numReferencia]);
+    console.log("Hola -1");
     let tArchivoReferencia = tp.file.find_tfile(archivoReferencia.file.path);
+    console.log("Hola 0");
 
     await app.fileManager.processFrontMatter(tArchivoReferencia, (frontmatter) => {
         for (let [key, value] of Object.entries(datosNuevos)) {
@@ -69,20 +72,26 @@
         }
     });
 
+    console.log("Hola 1");
+
     switch (archivoReferencia[DATOS_REFERENCIA.tipoCita]) {
         case REFERENCIAS.libro:
+            console.log("Hola 2");
             const { 
                 libro: { CAPITULOS }, capituloLibro: { NUMERO_CAPITULO },
             } = DATOS_REFERENCIA;
             const { referencias: seccionReferencias } = SECCIONES;
 
+            console.log("Hola 3");
             let capitulosViejos = referenciaEditar[CAPITULOS];
             let capitulosNuevos = datosNuevos[CAPITULOS];
             let descripcionCapituloLibro = tp.user.capituloLibro().describirReducido;
 
+            console.log("Hola 4");
             let aliases = archivoReferencia[DATOS_REFERENCIA.aliases];
 
             let nombreLibro = tp.user.libro().describir(tp, referenciaEditar);
+            console.log("Hola 5");
             for (let capitulo of capitulosViejos) {
                 let descripcion = descripcionCapituloLibro(tp, capitulo);
                 aliases.remove(`${nombreLibro}, ${descripcion}#${descripcion}`);

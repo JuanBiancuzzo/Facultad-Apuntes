@@ -1,5 +1,8 @@
 <%*
     const { DIRECTORIOS, TAGS, TEMPLATE } = tp.user.constantes();
+    const dv = app.plugins.plugins.dataview.api;
+    let seguidorRef = tp.user.seguidorReferencias().new(dv);
+
     const GENERADOR = {
         nota: {
             facultad: tp.user.nota().notaFacultad,
@@ -10,8 +13,9 @@
         coleccion: {
             estructuraDatos: tp.user.estructuraDeDatos().crear,
             libreriaFunciones: tp.user.libreriaFunciones().crear,
+            libro: tp.user.libro(tp).crear.bind(null, seguidorRef),
+            paper: tp.user.paper(tp).crear.bind(null, seguidorRef),
         },
-        referencia: tp.user.referencia().crear.referenciaSimple,
     };
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
@@ -76,7 +80,7 @@
                 ingresarOpcion("Ingresar una función de programación", GENERADOR.coleccion.libreriaFunciones);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.libros) {
-                // ingresarOpcion("Ingresar un libro", TEMPLATE.coleccion.libro);
+                ingresarOpcion("Ingresar un libro", GENERADOR.coleccion.libro);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.papers) {
                 // ingresarOpcion("Ingresar un paper o RFC", TEMPLATE.coleccion.paper);
@@ -90,7 +94,6 @@
             break;
     }
 
-    const dv = app.plugins.plugins.dataview.api;
     if (dv.pages(`"${carpeta}" and #${TAGS.investigacion.self}/${TAGS.investigacion.indice}`).length > 0)  {
         ingresarOpcion("Ingresar nota de investigación", GENERADOR.nota.investigacion);
     }

@@ -1,98 +1,123 @@
 const SALIR = "salir";
 
-async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
-    const { DATOS: { REFERENCIAS: { wiki: DATOS_WIKI } } } = tp.user.constantes();
-    const preguntar = tp.user.preguntar();
-    const describir = tp.user.describir();
-    const error = tp.user.error();
+class Wikipedia {
+    constructor(tp, seguidorRef, representacionPrevia) {
+        // console.log("Wiki");
+        const {
+            SIMBOLOS, DATOS: { REFERENCIAS: { wiki: DATOS_WIKI, ...DATOS_REFERENCIA } }
+        } = tp.user.constantes();
 
-    let salir = false;
+        this.describirFecha = tp.user.describir().fecha.bind(null, tp);
+        this.simbolos = SIMBOLOS;
+        this.config = { numReferencia: DATOS_REFERENCIA.numReferencia, ...DATOS_WIKI };
+        this.seguidorRef = seguidorRef;
 
-    switch (respuesta) {
-        case DATOS_WIKI.nombre:
-            datos[DATOS_WIKI.nombre] = await preguntar.prompt(
-                tp, datos[DATOS_WIKI.nombre] 
-                    ? `Nuevo nombre del artículo, donde antes era ${datos[DATOS_WIKI.nombre]}` 
-                    : "Nombre del artículo",
-                error.Quit("No se ingresó nombre del artículo")
-            );
-            break;
-
-        case DATOS_WIKI.fecha:
-            datos[DATOS_WIKI.fecha] = await preguntar.fecha(
-                tp, datos[DATOS_WIKI.fecha] 
-                    ? `Nueva fecha del artículo, donde antes era ${describir.fecha(tp, datos[DATOS_WIKI.fecha])}` 
-                    : "Fecha del artículo", 
-                error.Quit("No se ingresó un formato de fecha válido"), 
-                error.Quit("No se ingresó la fecha del artículo")
-            );
-            break;
-        case DATOS_WIKI.url:
-            datos[DATOS_WIKI.url] = await preguntar.prompt(
-                tp, datos[DATOS_WIKI.url] 
-                    ? `Nuevo URL del artículo, donde antes era ${datos[DATOS_WIKI.url]}` 
-                    : "URL del artículo",
-                error.Quit("No se ingresó el url del artículo")
-            )
-            break;
-
-        case SALIR:
-            salir = true;
-            break;
+        this.nombre = representacionPrevia[this.config.nombre];
+        this.fecha = representacionPrevia[this.config.fecha];
+        this.url = representacionPrevia[this.config.url];
+        this.numReferencia = representacionPrevia[this.config.numReferencia]
+            ? representacionPrevia[this.config.numReferencia]
+            : this.seguidorRef?.conseguirReferencia();
     }
 
-    return salir;
-}
+    async actualizarDatos(respuesta, generarPreguntas, generarError) {
+        if (respuesta == SALIR)
+            return true;
 
-function generarPreguntas(tp, datos) {
-    const { SIMBOLOS, DATOS: { REFERENCIAS: { wiki: DATOS_WIKI } } } = tp.user.constantes();
-    const describir = tp.user.describir();
+        switch (respuesta) {
+            case this.config.nombre:
+                this.nombre = await generarPreguntas.prompt(
+                    this.nombre
+                        ? `Nuevo nombre del artículo, donde antes era ${this.nombre}`
+                        : "Nombre del artículo",
+                    generarError.Quit("No se ingresó nombre del artículo")
+                );
+                break;
 
-    let opciones = [];
-    let valores = [];
+            case this.config.fecha:
+                this.fecha = await generarPreguntas.fecha(
+                    this.fecha
+                        ? `Nueva fecha del artículo, donde antes era ${this.describirFecha(this.fecha)}`
+                        : "Fecha del artículo",
+                    generarError.Quit("No se ingresó un formato de fecha válido"),
+                    generarError.Quit("No se ingresó la fecha del artículo")
+                );
+                break;
 
-    opciones.push(DATOS_WIKI.nombre);
-    valores.push(datos[DATOS_WIKI.nombre]
-        ? `️ ️️${SIMBOLOS.modificar} Modificar el nombre del artículo, donde era ${datos[DATOS_WIKI.nombre]}`
-        : ` ${SIMBOLOS.agregar} Nombre del artículo`
-    );
+            case this.config.url:
+                this.url = await generarPreguntas.prompt(
+                    this.url
+                        ? `Nuevo URL del artículo, donde antes era ${this.url}`
+                        : "URL del artículo",
+                    generarError.Quit("No se ingresó el url del artículo")
+                )
+                break;
+        }
 
-    opciones.push(DATOS_WIKI.fecha);
-    valores.push(datos[DATOS_WIKI.fecha]
-        ? `️ ️${SIMBOLOS.modificar} Modificar la fecha del artículo, donde era ${describir.fecha(tp, datos[DATOS_WIKI.fecha])}`
-        : ` ${SIMBOLOS.agregar} Fecha del artículo`
-    );
-
-    opciones.push(DATOS_WIKI.url);
-    valores.push(datos[DATOS_WIKI.url]
-        ? `️ ️${SIMBOLOS.modificar}️ Modificar el URL, donde era ${datos[DATOS_WIKI.url]}`
-        : ` ${SIMBOLOS.agregar} URL del artículo`
-    );
-
-    if ([DATOS_WIKI.nombre, DATOS_WIKI.fecha, DATOS_WIKI.url].every(key => datos[key])) {
-        opciones.push(SALIR);
-        valores.push(` ${SIMBOLOS.volver} Confirmar datos`);
+        return false;
     }
 
-    return { opciones: opciones, valores: valores };
+    generarPreguntas() {
+        let opciones = [];
+        let valores = [];
+
+        opciones.push(this.config.nombre);
+        valores.push(this.nombre
+            ? `️ ️️${this.simbolos.modificar} Modificar el nombre del artículo, donde era ${this.nombre}`
+            : ` ${this.simbolos.agregar} Nombre del artículo`
+        );
+
+        opciones.push(this.config.fecha);
+        valores.push(this.fecha
+            ? `️ ️${this.simbolos.modificar} Modificar la fecha del artículo, donde era ${this.describirFecha(this.fecha)}`
+            : ` ${this.simbolos.agregar} Fecha del artículo`
+        );
+
+        opciones.push(this.config.url);
+        valores.push(this.url
+            ? `️ ️${this.simbolos.modificar}️ Modificar el URL, donde era ${this.url}`
+            : ` ${this.simbolos.agregar} URL del artículo`
+        );
+
+        if (this.esValido()) {
+            opciones.push(SALIR);
+            valores.push(` ${this.simbolos.volver} Confirmar datos`);
+        }
+
+        return { opciones: opciones, valores: valores };
+    }
+
+    eliminar() {
+        this.seguidorRef?.devolverReferencia(this.numReferencia);
+    }
+
+    esValido() {
+        return this.nombre && this.fecha && this.url;
+    }
+
+    generarRepresentacion() {
+        return {
+            [this.config.nombre]: this.nombre,
+            [this.config.numReferencia]: this.numReferencia,
+            [this.config.fecha]: this.fecha,
+            [this.config.url]: this.url,
+        };
+    }
+
+    describir() {
+        return `Artículo de wikipedia: ${this.nombre}`;
+    }
+
+    obtenerNumReferencia() {
+        return this.numReferencia;
+    }
+
+    obtenerReferencias(referencias = []) {
+        referencias.push(this);
+        return referencias;
+    }
 }
 
-function describir(tp, datos) {
-    const { DATOS: { REFERENCIAS: { wiki: DATOS_WIKI } } } = tp.user.constantes();
-    return `Artículo de wikipedia: ${datos[DATOS_WIKI.nombre]}`;
-}
-
-module.exports = () => ({
-    obtenerDefault: (tp, TIPOS_DE_DEFAULT, crearFuncion) => {
-        const { DATOS: { REFERENCIAS: { wiki: DATOS_WIKI } } } = tp.user.constantes();
-
-        return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
-            [DATOS_WIKI.nombre]: TIPOS_DE_DEFAULT.simple,
-            [DATOS_WIKI.fecha]: TIPOS_DE_DEFAULT.simple,
-            [DATOS_WIKI.url]: TIPOS_DE_DEFAULT.simple,
-        }));
-    },
-    actualizarDatos: actualizarDatos,
-    generarPreguntas: generarPreguntas,
-    describir: describir,
+module.exports = (tp) => ({
+    clase: (seguidorRef, representacionPrevia = {}) => new Wikipedia(tp, seguidorRef, representacionPrevia),
 });

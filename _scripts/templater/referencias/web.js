@@ -1,200 +1,217 @@
 const MODIFICAR_AUTOR = "modificar autore";
 const ELIMINAR_AUTOR = "eliminar autore";
 
+const CANTIDAD_MINIMA_AUTORES = 1;
+
 const SALIR = "salir";
 
-async function actualizarDatos(tp, datos, respuesta, seguidorRef) {
-    const { DATOS: { REFERENCIAS: { web: DATOS_WEB } } } = tp.user.constantes();
-    const preguntar = tp.user.preguntar();
-    const describir = tp.user.describir();
-    const error = tp.user.error();
+class Web {
+    constructor(tp, seguidorRef, representacionPrevia) {
+        // console.log("Web");
+        const {
+            SIMBOLOS, DATOS: { REFERENCIAS: { web: DATOS_WEB, ...DATOS_REFERENCIA } }
+        } = tp.user.constantes();
 
-    let salir = false;
-    let separacion = respuesta.split("-");
-    respuesta = separacion[0];
-    let indice;
+        this.describirFecha = tp.user.describir().fecha.bind(null, tp);
+        this.simbolos = SIMBOLOS;
+        this.config = { numReferencia: DATOS_REFERENCIA.numReferencia, ...DATOS_WEB };
+        this.seguidorRef = seguidorRef;
 
-    switch (respuesta) {
-        case MODIFICAR_AUTOR: 
-            indice = separacion[1];
-            let { 
-                [DATOS_WEB.autore.nombre]: viejoNombre, 
-                [DATOS_WEB.autore.apellido]: viejoApellido 
-            } = datos[DATOS_WEB.autore.self][indice];
+        this.autores = [];
+        this.fecha = representacionPrevia[this.config.fecha];
+        this.titulo = representacionPrevia[this.config.titulo];
+        this.pagina = representacionPrevia[this.config.pagina];
+        this.url = representacionPrevia[this.config.url];
+        this.numReferencia = representacionPrevia[this.config.numReferencia]
+            ? representacionPrevia[this.config.numReferencia]
+            : this.seguidorRef?.conseguirReferencia();
 
-            let nuevoApellido = await preguntar.prompt(
-                tp, `Nuevo apellido, donde antes era ${viejoApellido}:`,
-                error.Quit("No se ingresa el apellido del autore de forma correcta")
-            );
-
-            let nuevoNombre = await preguntar.prompt(
-                tp, `Nuevo nombre, donde antes era ${viejoNombre}:`,
-                error.Quit("No se ingresa el nombre del autore de forma correcta")
-            );
-
-            datos[DATOS_WEB.autore.self][indice] = { 
-                [DATOS_WEB.autore.nombre]: nuevoNombre, 
-                [DATOS_WEB.autore.apellido]: nuevoApellido 
-            };
-            break;
-
-        case DATOS_WEB.autore.self: 
-            datos[DATOS_WEB.autore.self].push({
-                [DATOS_WEB.autore.apellido]: await preguntar.prompt(
-                    tp, "Apellido del autore",
-                    error.Quit("No se ingresa el apellido del autore de forma correcta")
-                ),
-                [DATOS_WEB.autore.nombre]: await preguntar.prompt(
-                    tp, "Nombre del autore",
-                    error.Quit("No se ingresa el nombre del autore de forma correcta")
-                ),
-            });
-            break;
-
-        case ELIMINAR_AUTOR: 
-            datos[DATOS_WEB.autore.self].pop();
-            break;
-
-        case DATOS_WEB.fecha: 
-            datos[DATOS_WEB.fecha] = await preguntar.fecha(
-                tp, datos[DATOS_WEB.fecha] 
-                    ? `Nueva fecha de publicación, donde antes era ${describir.fecha(tp, datos[DATOS_WEB.fecha])}` 
-                    : "Fecha de publicación de la página", 
-                error.Quit("No se ingresó un formato de fecha válido"), 
-                error.Quit("No se ingresó la fecha de publicación de la página")
-            );
-            break;
-
-        case DATOS_WEB.titulo: 
-            datos[DATOS_WEB.titulo] = await preguntar.prompt(
-                tp, datos[DATOS_WEB.titulo] 
-                    ? `Nuevo título del artículo, donde antes era ${datos[DATOS_WEB.titulo]}` 
-                    : "Título del artículo",
-                error.Quit("No se ingresó nombre del artículo")
-            );
-            break;
-
-        case DATOS_WEB.pagina: 
-            datos[DATOS_WEB.pagina] = await preguntar.prompt(
-                tp, datos[DATOS_WEB.pagina] 
-                    ? `Nuevo nombre de la página, donde antes era ${datos[DATOS_WEB.pagina]}` 
-                    : "Nombre de la página",
-                error.Quit("No se ingresó nombre de la página")
-            );
-            break;
-
-        case DATOS_WEB.url: 
-            datos[DATOS_WEB.url] = await preguntar.prompt(
-                tp, datos[DATOS_WEB.url] 
-                    ? `Nuevo URL de la página, donde antes era ${datos[DATOS_WEB.url]}` 
-                    : "URL de la página",
-                error.Quit("No se ingresó el url de la página")
-            );
-            break;
-
-        case SALIR:
-            salir = true;
-            break;
+        let autoresViejos = representacionPrevia[this.config.autore.self]
+            ? representacionPrevia[this.config.autore.self] : [];
+        for (let { [this.config.autore.nombre]: nombre, [this.config.autore.apellido]: apellido } of autoresViejos) {
+            this.autores.push({ nombre, apellido });
+        }
     }
 
-    return salir;
+    async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
+        if (respuestaDada == SALIR)
+            return true;
+
+        let [respuesta, indice] = respuestaDada.split("-");
+
+        switch (respuesta) {
+            case MODIFICAR_AUTOR:
+                let { nombre: viejoNombre, apellido: viejoApellido } = this.autores[indice];
+
+                let nuevoApellido = await generarPreguntas.prompt(
+                    `Nuevo apellido, donde antes era ${viejoApellido}:`,
+                    generarError.Quit("No se ingresa el apellido del autore de forma correcta")
+                );
+
+                let nuevoNombre = await generarPreguntas.prompt(
+                    `Nuevo nombre, donde antes era ${viejoNombre}:`,
+                    generarError.Quit("No se ingresa el nombre del autore de forma correcta")
+                );
+
+                this.autores[indice] = { nombre: nuevoNombre, apellido: nuevoApellido };
+                break;
+
+            case this.config.autore.self:
+                this.autores.push({
+                    apellido: await generarPreguntas.prompt(
+                        "Apellido del autore",
+                        generarError.Quit("No se ingresa el apellido del autore de forma correcta")
+                    ),
+                    nombre: await generarPreguntas.prompt(
+                        "Nombre del autore",
+                        generarError.Quit("No se ingresa el nombre del autore de forma correcta")
+                    ),
+                });
+                break;
+
+            case ELIMINAR_AUTOR:
+                this.autores.pop();
+                break;
+
+            case this.config.fecha:
+                this.fecha = await generarPreguntas.fecha(
+                    this.fecha
+                        ? `Nueva fecha de publicación, donde antes era ${this.describirFecha(this.fecha)}`
+                        : "Fecha de publicación de la página",
+                    generarError.Quit("No se ingresó un formato de fecha válido"),
+                    generarError.Quit("No se ingresó la fecha de publicación de la página")
+                );
+                break;
+
+            case this.config.titulo:
+                this.titulo = await generarPreguntas.prompt(
+                    this.titulo
+                        ? `Nuevo título del artículo, donde antes era ${this.titulo}`
+                        : "Título del artículo",
+                    generarError.Quit("No se ingresó nombre del artículo")
+                );
+                break;
+
+            case this.config.pagina:
+                this.pagina = await generarPreguntas.prompt(
+                    this.pagina
+                        ? `Nuevo nombre de la página, donde antes era ${this.pagina}`
+                        : "Nombre de la página",
+                    generarError.Quit("No se ingresó nombre de la página")
+                );
+                break;
+
+            case this.config.url:
+                this.url = await generarPreguntas.prompt(
+                    this.url
+                        ? `Nuevo URL de la página, donde antes era ${this.url}`
+                        : "URL de la página",
+                    generarError.Quit("No se ingresó el url de la página")
+                );
+                break;
+        }
+
+        return false;
+    }
+
+    generarPreguntas() {
+        let opciones = [];
+        let valores = [];
+
+        for (let [indice, autore] of this.autores.entries()) {
+            opciones.push(`${MODIFICAR_AUTOR}-${indice}`);
+            valores.push(`️ ️️${this.simbolos.modificar} Modificar el autore ${autore.nombre} ${autore.apellido}`);
+        }
+
+        let cantidadAutores = this.autores.length;
+        if (cantidadAutores > 0) {
+            let ultimoAutore = this.autores[cantidadAutores - 1];
+            opciones.push(ELIMINAR_AUTOR);
+            valores.push(` ${this.simbolos.sacar} Eliminar ${ultimoAutore.nombre} ${ultimoAutore.apellido}`);
+        }
+
+
+        opciones.push(this.config.autore.self);
+        valores.push(cantidadAutores < CANTIDAD_MINIMA_AUTORES
+            ? ` ${this.simbolos.agregar} Nombre del autore`
+            : ` ${this.simbolos.agregar} ${this.simbolos.opcional} Nombre del autore`
+        );
+
+        opciones.push(this.config.fecha);
+        valores.push(this.fecha
+            ? `️ ️${this.simbolos.modificar}️ Modificar la fecha de publicación, donde era ${this.describirFecha(this.fecha)}`
+            : ` ${this.simbolos.agregar} Fecha de publicación`
+        );
+
+        opciones.push(this.config.titulo);
+        valores.push(this.titulo
+            ? `️ ️${this.simbolos.modificar} Modificar el título del artículo, donde era ${this.titulo}`
+            : ` ${this.simbolos.agregar} Título del artículo`
+        );
+
+        opciones.push(this.config.pagina);
+        valores.push(this.pagina
+            ? `️ ️${this.simbolos.modificar}️ Modificar el nombre de la página, donde era ${this.pagina}`
+            : ` ${this.simbolos.agregar} Nombre de la página`
+        );
+
+        opciones.push(this.config.url);
+        valores.push(this.url
+            ? `️ ️${this.simbolos.modificar}️ Modificar el URL, donde era ${this.url}`
+            : ` ${this.simbolos.agregar} URL de la página`
+        );
+
+        if (this.esValido()) {
+            opciones.push(SALIR);
+            valores.push(` ${this.simbolos.volver} Confirmar datos`);
+        }
+
+        return { opciones: opciones, valores: valores };
+    }
+
+    eliminar() {
+        this.seguidorRef?.devolverReferencia(this.numReferencia);
+    }
+
+    esValido() {
+        return this.fecha && this.titulo && this.pagina && this.url
+            && this.autores.length >= CANTIDAD_MINIMA_AUTORES;
+    }
+
+    generarRepresentacion() {
+        return {
+            [this.config.titulo]: this.titulo,
+            [this.config.numReferencia]: this.numReferencia,
+            [this.config.fecha]: this.fecha,
+            [this.config.pagina]: this.pagina,
+            [this.config.url]: this.url,
+            [this.config.autore.self]: this.autores
+                .map(({ nombre, apellido }) => ({
+                    [this.config.autore.nombre]: nombre,
+                    [this.config.autore.apellido]: apellido,
+                })),
+        };
+    }
+
+    describir() {
+        let autores = [];
+        for (let autore of this.autores) {
+            autores.push(`${autore.apellido}, ${autore.nombre[0]}.`);
+        }
+
+        return `${this.titulo} de ${autores.join(", ")}, publicado en ${this.pagina}`;
+    }
+
+    obtenerNumReferencia() {
+        return this.numReferencia;
+    }
+
+    obtenerReferencias(referencias = []) {
+        referencias.push(this);
+        return referencias;
+    }
 }
 
-function generarPreguntas(tp, datos) {
-    const { SIMBOLOS, DATOS: { REFERENCIAS: { web: DATOS_WEB } } } = tp.user.constantes();
-    const describir = tp.user.describir();
-
-    let opciones = [];
-    let valores = [];
-
-    for (let [indice, autor] of datos[DATOS_WEB.autore.self].entries()) {
-        let { 
-            [DATOS_WEB.autore.nombre]: nombre, 
-            [DATOS_WEB.autore.apellido]: apellido 
-        } = autor;
-
-        opciones.push(`${MODIFICAR_AUTOR}-${indice}`);
-        valores.push(`️ ️️${SIMBOLOS.modificar} Modificar el autore ${nombre} ${apellido}`);
-    }
-
-    let cantidadAutores = datos[DATOS_WEB.autore.self].length;
-    if (cantidadAutores == 0) {
-        opciones.push(DATOS_WEB.autore.self);
-        valores.push(` ${SIMBOLOS.agregar} Nombre del autore`);
-    } else {
-        let { 
-            [DATOS_WEB.autore.nombre]: nombre, 
-            [DATOS_WEB.autore.apellido]: apellido 
-        } = datos[DATOS_WEB.autore.self][cantidadAutores - 1];
-        opciones.push(ELIMINAR_AUTOR);
-        valores.push(` ${SIMBOLOS.sacar} Eliminar ${nombre} ${apellido}`);
-
-        opciones.push(DATOS_WEB.autore.self);
-        valores.push(` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Nombre del autore`);
-    }
-
-    opciones.push(DATOS_WEB.fecha);
-    valores.push(datos[DATOS_WEB.fecha]
-        ? `️ ️${SIMBOLOS.modificar}️ Modificar la fecha de publicación, donde era ${describir.fecha(tp, datos[DATOS_WEB.fecha])}`
-        : ` ${SIMBOLOS.agregar} Fecha de publicación`
-    );
-
-    opciones.push(DATOS_WEB.titulo);
-    valores.push(datos[DATOS_WEB.titulo]
-        ? `️ ️${SIMBOLOS.modificar} Modificar el título del artículo, donde era ${datos[DATOS_WEB.titulo]}`
-        : ` ${SIMBOLOS.agregar} Título del artículo`
-    );
-
-    opciones.push(DATOS_WEB.pagina);
-    valores.push(datos[DATOS_WEB.pagina]
-        ? `️ ️${SIMBOLOS.modificar}️ Modificar el nombre de la página, donde era ${datos[DATOS_WEB.pagina]}`
-        : ` ${SIMBOLOS.agregar} Nombre de la página`
-    );
-
-    opciones.push(DATOS_WEB.url);
-    valores.push(datos[DATOS_WEB.url]
-        ? `️ ️${SIMBOLOS.modificar}️ Modificar el URL, donde era ${datos[DATOS_WEB.url]}`
-        : ` ${SIMBOLOS.agregar} URL de la página`
-    );
-
-    const DATOS_SIMPLES = [ DATOS_WEB.fecha, DATOS_WEB.titulo, DATOS_WEB.pagina, DATOS_WEB.url ];
-    if (datos[DATOS_WEB.autore.self].length > 0 && DATOS_SIMPLES.every(key => datos[key])) {
-        opciones.push(SALIR);
-        valores.push(` ${SIMBOLOS.volver} Confirmar datos`);
-    }
-
-    return { opciones: opciones, valores: valores };
-}
-
-function describir(tp, datos) {
-    const { DATOS: { REFERENCIAS: { web: DATOS_WEB } } } = tp.user.constantes();
-
-    let autores = [];
-    for (let { [DATOS_WEB.autore.nombre]: nombre, [DATOS_WEB.autore.apellido]: apellido } of datos[DATOS_WEB.autore.self]) {
-        autores.push(`${apellido}, ${nombre[0]}.`);
-    }
-
-    return `${datos[DATOS_WEB.titulo]} de ${autores.join(", ")}, publicado en ${datos[DATOS_WEB.pagina]}`;
-}
-
-module.exports = () => ({
-    obtenerDefault: (tp, TIPOS_DE_DEFAULT, crearFuncion) => {
-        const { DATOS: { REFERENCIAS: { web: DATOS_WEB } } } = tp.user.constantes();
-
-        return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
-            [DATOS_WEB.autore.self]: crearFuncion(TIPOS_DE_DEFAULT.array, () => {
-                return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
-                    [DATOS_WEB.autore.nombre]: TIPOS_DE_DEFAULT.simple,
-                    [DATOS_WEB.autore.apellido]: TIPOS_DE_DEFAULT.simple,
-                }));
-            }),
-            [DATOS_WEB.fecha]: TIPOS_DE_DEFAULT.simple,
-            [DATOS_WEB.titulo]: TIPOS_DE_DEFAULT.simple,
-            [DATOS_WEB.pagina]: TIPOS_DE_DEFAULT.simple,
-            [DATOS_WEB.url]: TIPOS_DE_DEFAULT.simple,
-        }));
-    },
-    actualizarDatos: actualizarDatos,
-    generarPreguntas: generarPreguntas,
-    describir: describir,
+module.exports = (tp) => ({
+    clase: (seguidorRef, representacionPrevia = {}) => new Web(tp, seguidorRef, representacionPrevia),
 });
