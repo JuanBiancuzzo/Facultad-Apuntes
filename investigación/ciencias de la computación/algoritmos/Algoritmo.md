@@ -37,6 +37,9 @@ Leer:
 * [[Algorithms, notes for Professionals de Stack Overflow|Algorithms, notes for Professionals]]
 * [[Algorithms de Robert Sedgewick, Kevin Wayne|Algorithms]]
 
+Ver:
+* [Algorithm visualizer](https://algorithm-visualizer.org)
+
 ## Archivos
 ---
 ```dataviewjs

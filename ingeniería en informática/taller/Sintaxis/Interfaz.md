@@ -5,6 +5,8 @@ tags:
   - nota/facultad
   - lenguajes-de-programación/lenguaje-Rust
   - ingeniería-electrónica/taller/Sintaxis
+aliases:
+  - Trait
 ---
 # Definición
 ---

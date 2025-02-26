@@ -8,6 +8,9 @@ tags:
 ---
 # Definición
 ---
+
+## Representación en Rust
+---
 Para dividir funcionalidad (como namespaces en `c++`) en este caso veamos cuando es en el mismo archivo podemos usar `mod` de la siguiente forma
 ``` rust
 mod soludos {

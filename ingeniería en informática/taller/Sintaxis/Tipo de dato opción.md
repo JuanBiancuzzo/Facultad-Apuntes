@@ -6,10 +6,12 @@ tags:
   - lenguajes-de-programación/lenguaje-Rust
   - ingeniería-electrónica/taller/Sintaxis
 aliases:
-  - Option
+  - Option type
 ---
 # Definición
 ---
+
+
 Un elemento que puede contener algún valor o nada. $T$ es un [[Generic|generics]] que puede tomar cualquier [[Tipo de dato|tipo de dato]].
 
 ``` rust

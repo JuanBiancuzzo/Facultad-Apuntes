@@ -8,7 +8,7 @@ tags:
 ---
 # Definición
 ---
-Siempre que una [[Función|función]] devuelva un [[Resultado|resultado]], significa que puede ocurrir un error y por lo tanto hay que manejarlo. En el caso de ser una [[Opción|opción]] también hay que manejarlo.
+Siempre que una [[Función|función]] devuelva un [[Resultado|resultado]], significa que puede ocurrir un error y por lo tanto hay que manejarlo. En el caso de ser una [[Tipo de dato opción|opción]] también hay que manejarlo.
 
 Para eso tenemos las operaciones:
 * operador $?$: Este propaga el error o la opción a la función que lo llame. Para el caso de los [[Resultado|resultados]] el error tiene que coincidir. 

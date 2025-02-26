@@ -10,6 +10,7 @@ tags:
   - investigación/ciencias-de-la-computación/ingeniería-electrónica/algo-1/Lenguaje-C
   - ingeniería-electrónica/taller/Sintaxis
   - ingeniería-electrónica/estructura/Sistemas-numéricos
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-zig
 aliases:
   - Integer
   - Int
@@ -115,3 +116,33 @@ También se puede expresar números literales en diferentes [[Base númerica|bas
 En el caso de que ocurra un [[Overflow|overflow]], se realizará un [[Panic]].
 
 Se puede usar el `_` como separador entre los números para hacer más fácil la lectura, esto no modificará el valor.
+
+## Representación en Zig
+---
+Como zig busca compatibilidad con [[Lenguaje C|C]], sus valores de enteros tiene una equivalencia con los valores de C
+
+| Tipo de dato   | Equivalente en C      | Descripción                                                                |
+| -------------- | --------------------- | -------------------------------------------------------------------------- |
+| `i8`           | `int8_t`              | Entero de $8$ [[Información#Bit\|bits]] con signo                          |
+| `u8`           | `uint8_t`             | Entero de $8$ bits sin signo                                               |
+| `i16`          | `int16_t`             | Entero de $16$ bits con signo                                              |
+| `u16`          | `uint16_t`            | Entero de $16$ bits sin signo                                              |
+| `i32`          | `int32_t`             | Entero de $32$ bits con signo                                              |
+| `u32`          | `uint32_t`            | Entero de $32$ bits sin signo                                              |
+| `i64`          | `int64_t`             | Entero de $64$ bits con signo                                              |
+| `u64`          | `uint64_t`            | Entero de $64$ bits sin signo                                              |
+| `i128`         | `__int128`            | Entero de $128$ bits con signo                                             |
+| `u128`         | `unsigned __int128`   | Entero de $128$ bits sin signo                                             |
+| `isize`        | `intptr_t`            | Entero de tamaño de un puntero, con signo                                  |
+| `usize`        | `uintptr_t`, `size_t` | Entero de tamaño de un puntero, sin signo                                  |
+| `c_char`       | `char`                | Para la compatibilidad con C con una [[Application binary interface\|ABI]] |
+| `c_short`      | `short`               | Para la compatibilidad con C con una ABI                                   |
+| `c_ushort`     | `unsigned short`      | Para la compatibilidad con C con una ABI                                   |
+| `c_int`        | `int`                 | Para la compatibilidad con C con una ABI                                   |
+| `c_uint`       | `unsigned int`        | Para la compatibilidad con C con una ABI                                   |
+| `c_long`       | `long`                | Para la compatibilidad con C con una ABI                                   |
+| `c_ulong`      | `unsigned long`       | Para la compatibilidad con C con una ABI                                   |
+| `c_longlong`   | `long long`           | Para la compatibilidad con C con una ABI                                   |
+| `c_ulonglong`  | `unsigned long long`  | Para la compatibilidad con C con una ABI                                   |
+| `c_longdouble` | `long double`         | Para la compatibilidad con C con una ABI                                   |
+

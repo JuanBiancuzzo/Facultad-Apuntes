@@ -10,6 +10,7 @@ tags:
   - ingeniería-electrónica/algo-1/Lenguaje-C
   - ingeniería-electrónica/taller/Sintaxis
   - ingeniería-electrónica/estructura/Punto-flotante
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-zig
 aliases:
   - Floating point
   - Float
@@ -20,7 +21,7 @@ aliases:
 Es un método de representación de los números decimales, en [[Sistemas de numeración|base 2]], utilizando el método de notación científica $$ x = M \cdot B^e $$
 Donde $M$ es la mantisa, este tiene un bit que representa el signo. $B$ la base, que en nuestro caso sería $2$, y por último $e$ el exponente que tiene la [[Representación de enteros|representación]] [[Representación de enteros exceso n|exceso n]]. Este es un estándar llamado **IEEE 754**. Hay que tener en cuenta algunos [[Valores especificos de IEEE 754|valores específicos]]
 
-Esta se conoce con dos posibles tamaños, simple precisión y doble precisión. La diferencia es que en simple precisión son 32 bits, mientras que doble precisión es de 64 bits
+Esta se conoce con dos posibles tamaños, simple precisión y doble precisión. La diferencia es que en simple precisión son 32 [[Información#Bit|bits]], mientras que doble precisión es de 64 bits
 
 | tipo   | Exponente | Mantisa |
 | ------ | --------- | ------- |
@@ -58,3 +59,15 @@ let x = 2.0; // f64
 
 let y: f32 = 3.0 // f32
 ```
+
+## Representación en Zig
+---
+En [[Lenguaje Zig|Zig]] existen $5$ representaciones de punto flotante, y tiene una equivalencia con los valores de [[Lenguaje C|C]] 
+
+| Tipo de dato | Equivalente en C | Descripción                                                                             |
+| ------------ | ---------------- | --------------------------------------------------------------------------------------- |
+| `f16`        | `_Float16`       | Float de $16$ bits, con $10$ bits de mantisa, IEEE-754-2008                             |
+| `f32`        | `float`          | Float de $32$ bits, con $23$ bits de mantisa, IEEE-754-2008                             |
+| `f64`        | `double`         | Float de $64$ bits, con $52$ bits de mantisa, IEEE-754-2008                             |
+| `f80`        | `long double`    | Float de $80$ bits, con $64$ bits de mantisa, IEEE-754-2008 $80$-bit extended precision |
+| `f128`       | `_Float128`      | Float de $128$ bits, con $112$ bits de mantisa, IEEE-754-2008                           |

@@ -8,6 +8,7 @@ tags:
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - ingeniería-electrónica/algo-1/Lenguaje-C
   - ingeniería-electrónica/taller/Sintaxis
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-zig
 ---
 # Definición
 ---
@@ -31,4 +32,11 @@ Los booleanos tienen únicamente dos valores `true` y `false`. Se representan co
 let verdadero = true;
 
 let falso: bool = false; // haciendo explicito el tipo de dato.
+```
+
+## Representación en Zig
+---
+Los booleanos tienen dos valores, `true` y `false`, se usan de la siguiente forma
+```zig
+var verdadero: bool = true;
 ```
