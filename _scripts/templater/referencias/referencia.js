@@ -82,9 +82,9 @@ function obtenerClase(tp, tipoCita, datos) {
     }
 }
 
-function obtenerReferencias(tp) {
+function obtenerReferencias(tp, dv = null) {
     const { TAGS, DATOS: { REFERENCIAS: DATOS_REFERENCIA } } = tp.user.constantes();
-    const dv = app.plugins.plugins.dataview.api;
+	if (!dv) dv = app.plugins.plugins.dataview.api;
 
     return dv.pages(`#${TAGS.referencias}`)
         .flatMap(archivo => obtenerClase(tp, archivo[DATOS_REFERENCIA.tipoCita], archivo).obtenerReferencias());
@@ -153,7 +153,7 @@ module.exports = () => ({
 	const MAX_NOMBRE = 252;
 
 	const tipoCita = "Paper";
-    let seguidorRef = tp.user.seguidorReferencias().new();
+    let seguidorRef = tp.user.seguidorReferencias(tp).new();
 	let numReferencia = seguidorRef.conseguirReferencia();
 	
 	const dia = tp.file.creation_date("YYYY-MM-DD");
@@ -249,7 +249,7 @@ module.exports = () => ({
 		let temasCurso = [];
 
 		if (esOnline) {
-			let seguidorRef = tp.user.seguidorReferencias().new();
+			let seguidorRef = tp.user.seguidorReferencias(tp).new();
 			tags.push(`referencia/${tipoCita.toLowerCase()}`);
 
 			if (!numReferencia) {
@@ -413,7 +413,7 @@ _%>
 				"Completar para crear tema del curso"
 			);
 
-			let seguidorRef = tp.user.seguidorReferencias().new();
+			let seguidorRef = tp.user.seguidorReferencias(tp).new();
 			let numReferencia = seguidorRef.conseguirReferencia();
 			infoTemaCurso[NUM_REFERENCIA] = numReferencia;
 

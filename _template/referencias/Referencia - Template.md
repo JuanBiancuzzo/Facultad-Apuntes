@@ -49,17 +49,17 @@
 
         if (respuesta == CREAR) {
             // Se quiere crear
-            let seguidorRef = tp.user.seguidorReferencias().new(dv);
+            let seguidorRef = tp.user.seguidorReferencias(tp).new(dv);
             let { referencia: nuevaReferencia } = await referencias.generar(tp, seguidorRef);
             nuevasReferencias.push(nuevaReferencia.obtenerNumReferencia());
 
         } else if (referenciasArchivo.includes(respuesta)) {
             // Se quiere eliminar
-            nuevasReferencias.remove(respuesta);
+            nuevasReferencias.remove(respuesta.obtenerNumReferencia());
 
         } else {
             // Se quiere agregar
-            nuevasReferencias.push(respuesta);
+            nuevasReferencias.push(respuesta.obtenerNumReferencia());
         }
 
         await app.fileManager.processFrontMatter(tArchivo, (frontmatter) => {

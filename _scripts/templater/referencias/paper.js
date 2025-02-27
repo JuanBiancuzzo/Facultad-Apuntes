@@ -11,7 +11,7 @@ const SALIR = "salir";
 class Paper {
     constructor(tp, seguidorRef, representacionPrevia) {
         // console.log("Paper");
-        const { SIMBOLOS, DATOS: { REFERENCIAS: { paper: DATOS_PAPER }, ...DATOS_REFERENCIA } } = tp.user.constantes();
+        const { SIMBOLOS, DATOS: { REFERENCIAS: { paper: DATOS_PAPER, ...DATOS_REFERENCIA } } } = tp.user.constantes();
 
         this.simbolos = SIMBOLOS;
         this.config = { numReferencia: DATOS_REFERENCIA.numReferencia, ...DATOS_PAPER };

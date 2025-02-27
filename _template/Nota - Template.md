@@ -1,7 +1,7 @@
 <%*
     const { DIRECTORIOS, TAGS, TEMPLATE } = tp.user.constantes();
     const dv = app.plugins.plugins.dataview.api;
-    let seguidorRef = tp.user.seguidorReferencias().new(dv);
+    let seguidorRef = tp.user.seguidorReferencias(tp).new(dv);
 
     const GENERADOR = {
         nota: {

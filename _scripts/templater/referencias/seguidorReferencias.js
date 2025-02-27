@@ -1,18 +1,11 @@
 class SeguidorReferencias {
-    constructor(dv) {
+    constructor(tp, dv) {
         if (!dv) dv = app.plugins.plugins.dataview.api;
+        const referencias = tp.user.referencia();
 
-        this.numReferencias = dv.pages('#referencia')
-            .flatMap(ref => {
-                let resultado = [ref.numReferencia]
-                if (ref.tipoCita != "Libro" || !ref.capitulos)
-                    return resultado;
-                for (let { numReferencia, capitulo: _ } of ref.capitulos) {
-                    resultado.push(numReferencia);
-                }
-                return resultado;
-            })
-            .sort(ref => ref)
+        this.numReferencias = referencias.obtenerReferencias(tp, dv)
+            .map(referencia => referencia.obtenerNumReferencia())
+            .sort(numReferencia => numReferencia)
             .values;
     }
 
@@ -35,6 +28,6 @@ class SeguidorReferencias {
     }
 }
 
-module.exports = () => ({
-    new: (dv = undefined) => new SeguidorReferencias(dv),
+module.exports = (tp) => ({
+    new: (dv = undefined) => new SeguidorReferencias(tp, dv),
 });

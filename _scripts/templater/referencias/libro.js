@@ -52,7 +52,7 @@ class Libro {
 
         let padre = this;
         this.informacion = {
-            capituloNuevo() { return claseCapitulo.clase(seguidorRef, padre = padre); },
+            capituloNuevo() { return claseCapitulo.clase(seguidorRef, {}, padre); },
         };
     }
 

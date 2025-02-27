@@ -52,7 +52,7 @@
         );
     }
 
-    let seguidorRef = tp.user.seguidorReferencias().new(dv);
+    let seguidorRef = tp.user.seguidorReferencias(tp).new(dv);
     let datosNuevos = await referencia.editar(
         tp,
         referenciaEditar[DATOS_REFERENCIA.tipoCita], 
