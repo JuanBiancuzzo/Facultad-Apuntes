@@ -13,11 +13,13 @@ tags:
   - ingeniería-electrónica/taller/Sintaxis
   - ingeniería-electrónica/estructura/Álgebra-de-Boole
   - ingeniería-en-informática/discreta/Álgebra-proposicional
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-zig
 aliases:
   - Prototipo de una función#Expresión en C
   - Firma de una función#Expresión en C
 referencias:
   - "411"
+  - "845"
 etapa: ampliar
 ---
 ```dataviewjs
@@ -107,6 +109,18 @@ fn imprimir_numero(numero: i32) {
 }
 ```
 
+## Expresión en Zig
+---
+Las funciones en [[Lenguaje Zig|Zig]] se declaran de la siguiente forma
+
+```Zig
+fn add(a: i32, b: i32) i32 {
+    return a + b;
+}
+```
+
+Se tiene que especificar los tipos de datos de cada argumento 
+
 ## Expresión matemática
 ---
 Esta función, la podemos pensar, como que establece una relación entre [[Espacio vectorial|vector]] de $A$ con los vectores de $B$. Tal que, $a \in A$ tiene un (y solo uno) $b \in B$, y esto se escribe como $f(a) = b$
@@ -116,10 +130,6 @@ Esta función, la podemos pensar, como que establece una relación entre [[Espac
 * [[Suma entre funciones|Suma entre funciones]] ![[Suma entre funciones#^7715e3]]
 * [[Producto entre funciones|Producto entre funciones]] ![[Producto entre funciones#^ff1a85]]
 * [[Cociente entre funciones|Cociente entre funciones]] ![[Cociente entre funciones#^b3bde8]]
-
-
-
-
 
 
 # Referencias

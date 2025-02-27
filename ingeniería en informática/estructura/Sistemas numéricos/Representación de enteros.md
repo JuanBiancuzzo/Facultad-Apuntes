@@ -15,7 +15,13 @@ aliases:
   - Integer
   - Int
   - Entero
+referencias:
+  - "845"
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Hay diferentes representaciones de los [[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Números enteros|enteros]], ya que tenemos que representar el signo como parte del número, haciendo esto una convención.
@@ -146,3 +152,9 @@ Como zig busca compatibilidad con [[Lenguaje C|C]], sus valores de enteros tiene
 | `c_ulonglong`  | `unsigned long long`  | Para la compatibilidad con C con una ABI                                   |
 | `c_longdouble` | `long double`         | Para la compatibilidad con C con una ABI                                   |
 
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

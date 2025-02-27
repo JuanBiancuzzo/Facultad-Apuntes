@@ -6,6 +6,7 @@ tags:
   - data-structures
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - ingeniería-electrónica/algo-1/Lenguaje-C
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-zig
 etapa: ampliar
 aliases:
   - Arreglo
@@ -65,3 +66,5 @@ int vector[8] = {5, 2, 4, 8, 6, 7, 3, 1};
 vector[0] = 1; // estado del vector {1, 2, 4, 8, 6, 7, 3, 1}
 ```
 
+## En Zig
+---

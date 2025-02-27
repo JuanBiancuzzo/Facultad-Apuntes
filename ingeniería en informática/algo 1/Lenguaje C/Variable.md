@@ -9,7 +9,13 @@ tags:
   - ingeniería-en-informática/taller/Sintaxis
   - ingeniería-electrónica/algo-1/Lenguaje-C
   - ingeniería-electrónica/taller/Sintaxis
+referencias:
+  - "845"
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Es un conjunto de celdas de [[Memoria|memoria]] asociado con un nombre simbólico, que contiene alguna cantidad conocida o desconocida de [[Información|información]] a la que comúnmente se refiere como valor
@@ -42,7 +48,7 @@ float raiz;
 
 ## En Rust
 ---
-Las variables en [[Lenguaje Rust|rust]] son inmutables por default, y su declaración es
+Las variables en [[Lenguaje Rust|Rust]] son inmutables por default, y su declaración es
 
 ``` rust
 let variable: i32 = 43;
@@ -58,3 +64,44 @@ La idea de tener que aclarar que una variable es mutable hace que seamos consien
 
 ## En Zig
 ---
+Las variables en [[Lenguaje Zig|Zig]] se declaran
+
+```zig
+var anio: u8 = 24;
+anio = 25;
+```
+
+En el caso donde se puede inferir el tipo de dato, no es necesario especificarlo, pero se tiene que definir para tiempo de [[Compilador|compilación]]
+
+Una variable siempre tiene que estar inicializada, pero en el caso donde no se tenga un valor inicial, se puede (aunque se recomienda que no se use) asignar `undefined`. Veámoslo en un ejemplo
+
+```zig
+var anio: u8 = undefined;
+anio = 25;
+```
+
+No se puede tener variables o [[Variable constante|constantes]], sin usar ya que el compilador tiraría un error. Se puede descartar el valor asignándosela a el carácter especial `_`, de la siguiente forma
+
+```zig
+var anio = 25;
+_ = anio;
+```
+
+También por ser variable, si o si tiene que mutar el valor, sino el compilador tiraría un error y sugiere que se use una constante
+
+```zig
+var anio = 25;
+std.debug.print("{d}\n", .{anio});
+
+// Resultado del compilador
+error: local variable is never mutated
+    var anio: u8 = 25;
+        ^~~~
+note: consider using 'const'
+```
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

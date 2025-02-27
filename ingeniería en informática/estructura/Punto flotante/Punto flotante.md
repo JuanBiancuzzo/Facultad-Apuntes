@@ -15,7 +15,13 @@ aliases:
   - Floating point
   - Float
   - IEEE 754
+referencias:
+  - "845"
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Es un método de representación de los números decimales, en [[Sistemas de numeración|base 2]], utilizando el método de notación científica $$ x = M \cdot B^e $$
@@ -71,3 +77,9 @@ En [[Lenguaje Zig|Zig]] existen $5$ representaciones de punto flotante, y tiene 
 | `f64`        | `double`         | Float de $64$ bits, con $52$ bits de mantisa, IEEE-754-2008                             |
 | `f80`        | `long double`    | Float de $80$ bits, con $64$ bits de mantisa, IEEE-754-2008 $80$-bit extended precision |
 | `f128`       | `_Float128`      | Float de $128$ bits, con $112$ bits de mantisa, IEEE-754-2008                           |
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

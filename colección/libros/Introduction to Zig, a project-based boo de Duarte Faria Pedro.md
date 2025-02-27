@@ -19,119 +19,119 @@ url: https://github.com/pedropark99/zig-book
 capitulos:
   - numeroCapitulo: "1"
     nombreCapitulo: Introducing Zig
-    numReferencia: 842
+    numReferencia: 845
     editores: []
     paginas:
       inicio: 
       final: 
   - numeroCapitulo: "2"
     nombreCapitulo: Control flow, structs, modules and types
-    numReferencia: 842
+    numReferencia: 846
     editores: []
     paginas:
       inicio: 
       final: 
   - numeroCapitulo: "3"
     nombreCapitulo: Memory and Allocators
-    numReferencia: 842
+    numReferencia: 847
     editores: []
     paginas:
       inicio: 
       final: 
   - numeroCapitulo: "4"
     nombreCapitulo: Project 1 - Building a base64 encoder/decoder
-    numReferencia: 842
+    numReferencia: 848
     editores: []
     paginas:
       inicio: 
       final: 
   - numeroCapitulo: "5"
     nombreCapitulo: Debugging Zig applications
-    numReferencia: 842
+    numReferencia: 849
     editores: []
     paginas:
       inicio: 
       final: 
   - numeroCapitulo: "6"
     nombreCapitulo: Pointers and Optionals
-    numReferencia: 842
+    numReferencia: 850
     editores: []
     paginas:
       inicio: 
       final: 
   - numeroCapitulo: "7"
     nombreCapitulo: Project 2 - Building a HTTP Server from scratch
-    numReferencia: 842
+    numReferencia: 851
     editores: []
     paginas:
       inicio: 
       final: 
   - numeroCapitulo: "8"
     nombreCapitulo: Unit tests
-    numReferencia: 842
+    numReferencia: 852
     editores: []
     paginas:
       inicio: 
       final: 
   - numeroCapitulo: "9"
     nombreCapitulo: Build System
-    numReferencia: 842
+    numReferencia: 853
     editores: []
     paginas:
       inicio: 
       final: 
   - numeroCapitulo: "10"
     nombreCapitulo: Error handling and unions
-    numReferencia: 842
+    numReferencia: 854
     editores: []
     paginas:
       inicio: 
       final: 
   - numeroCapitulo: "11"
     nombreCapitulo: Data Structures
-    numReferencia: 842
+    numReferencia: 855
     editores: []
     paginas:
       inicio: 
       final: 
   - numeroCapitulo: "12"
     nombreCapitulo: Proyect 3 - Building a stack data structure
-    numReferencia: 842
+    numReferencia: 856
     editores: []
     paginas:
       inicio: 
       final: 
   - numeroCapitulo: "13"
     nombreCapitulo: Filesystem and Input/Output (IO)
-    numReferencia: 842
+    numReferencia: 857
     editores: []
     paginas:
       inicio: 
       final: 
   - numeroCapitulo: "14"
     nombreCapitulo: Zig interopeability with C
-    numReferencia: 842
+    numReferencia: 858
     editores: []
     paginas:
       inicio: 
       final: 
   - numeroCapitulo: "15"
     nombreCapitulo: Project 4 - Developing an image filter
-    numReferencia: 842
+    numReferencia: 859
     editores: []
     paginas:
       inicio: 
       final: 
   - numeroCapitulo: "16"
     nombreCapitulo: Introducing threads and parallelism in Zig
-    numReferencia: 842
+    numReferencia: 860
     editores: []
     paginas:
       inicio: 
       final: 
   - numeroCapitulo: "17"
     nombreCapitulo: Introducing Vectors and SIMD
-    numReferencia: 842
+    numReferencia: 861
     editores: []
     paginas:
       inicio: 

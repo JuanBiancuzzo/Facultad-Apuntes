@@ -11,7 +11,7 @@ fechaCurso: "2011"
 nombreCurso: Introduction to Algorithms
 nombrePagina: OpenCourseWare
 url: https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/
-numReferencia: 695
+numReferencia: 862
 tipoCita: Curso
 tags:
   - referencia/curso

@@ -37,6 +37,7 @@ let falso: bool = false; // haciendo explicito el tipo de dato.
 ## Representación en Zig
 ---
 Los booleanos tienen dos valores, `true` y `false`, se usan de la siguiente forma
+
 ```zig
 var verdadero: bool = true;
 ```
