@@ -167,8 +167,12 @@ aliases:
 
 ## Capítulo 1: Introducing Zig
 ---
+Se ve inicialmente la creación de [[Función#Expresión en Zig|funciones]], [[Tipo de dato primitivo|tipos de datos primitivos]] como
+* [[Representación de enteros|Enteros]] con y sin signo
+* [[Punto flotante|Floats]]
+* [[Valor booleano|Booleanos]]
 
-
+También se ve el [[Tipo de dato compuesto|tipo de dato estructurado]] [[Array|array]].
 
 ## Capítulo 2: Control flow, structs, modules and types
 ---
