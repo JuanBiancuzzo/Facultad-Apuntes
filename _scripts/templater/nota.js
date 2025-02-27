@@ -12,7 +12,7 @@ function archivoDeNotaIgual(tp, tArchivo, titulo) {
     const dv = app.plugins.plugins.dataview.api;
 
     let archivoExistente = dv.page(posibleArchivo.file.path);
-    let tagsSecciones = tp.user.seccion().tagsSeccion(tp);
+    let tagsSecciones = tp.user.tagsSeccion(tp);
 
     if (archivoExistente[DATOS_ARCHIVO.tags].every(tag => !tagsSecciones.include(tag)))
         return null;

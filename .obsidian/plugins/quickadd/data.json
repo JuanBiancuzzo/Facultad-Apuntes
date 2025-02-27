@@ -33,10 +33,10 @@
       "name": "Facultad",
       "type": "Template",
       "command": true,
-      "templatePath": "_template/Seccion - Template.md",
+      "templatePath": "_template/secciones/carrera.md",
       "fileNameFormat": {
         "enabled": true,
-        "format": "Facultad"
+        "format": "Untitle"
       },
       "folder": {
         "enabled": true,
@@ -61,10 +61,10 @@
       "name": "Curso",
       "type": "Template",
       "command": true,
-      "templatePath": "_template/Seccion - Template.md",
+      "templatePath": "_template/secciones/curso.md",
       "fileNameFormat": {
         "enabled": true,
-        "format": "Curso"
+        "format": "Untitle"
       },
       "folder": {
         "enabled": true,
@@ -89,66 +89,10 @@
       "name": "Investigación",
       "type": "Template",
       "command": true,
-      "templatePath": "_template/Seccion - Template.md",
+      "templatePath": "_template/secciones/investigacion.md",
       "fileNameFormat": {
         "enabled": true,
-        "format": "Investigación"
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": true,
-        "chooseFromSubfolders": false
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": true
-    },
-    {
-      "id": "2c7f8909-6024-4823-95d8-0ba8b4ffeb04",
-      "name": "Proyecto práctico",
-      "type": "Template",
-      "command": true,
-      "templatePath": "_template/Seccion - Template.md",
-      "fileNameFormat": {
-        "enabled": true,
-        "format": "Proyecto Práctico"
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": true,
-        "chooseFromSubfolders": false
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": true
-    },
-    {
-      "id": "ee122ae9-fd26-48fa-a86e-329167ec5a81",
-      "name": "Proyecto investigación",
-      "type": "Template",
-      "command": true,
-      "templatePath": "_template/Seccion - Template.md",
-      "fileNameFormat": {
-        "enabled": true,
-        "format": "Proyecto Investigación"
+        "format": "Untitle"
       },
       "folder": {
         "enabled": true,
@@ -170,13 +114,13 @@
     },
     {
       "id": "3bf960b5-c1d4-4b5c-accd-7b0bb88dfc78",
-      "name": "GDD",
+      "name": "Proyecto",
       "type": "Template",
       "command": true,
-      "templatePath": "_template/Seccion - Template.md",
+      "templatePath": "_template/secciones/proyecto.md",
       "fileNameFormat": {
         "enabled": true,
-        "format": "GDD"
+        "format": "Untitle"
       },
       "folder": {
         "enabled": true,

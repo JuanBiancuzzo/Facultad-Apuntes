@@ -25,26 +25,14 @@
     },
     {
       "id": "quickadd:choice:e1fa3f3e-7c22-46ac-bad5-f7d927313df8",
-      "icon": "lucide-amphora",
+      "icon": "lucide-brain-circuit",
       "name": "Nuevo tema de investigación",
-      "mode": "any"
-    },
-    {
-      "id": "quickadd:choice:2c7f8909-6024-4823-95d8-0ba8b4ffeb04",
-      "icon": "lucide-arrow-down-01",
-      "name": "Nuevo proyecto práctico",
-      "mode": "any"
-    },
-    {
-      "id": "quickadd:choice:ee122ae9-fd26-48fa-a86e-329167ec5a81",
-      "icon": "lucide-area-chart",
-      "name": "Nuevo proyecto investigación",
       "mode": "any"
     },
     {
       "id": "quickadd:choice:3bf960b5-c1d4-4b5c-accd-7b0bb88dfc78",
       "icon": "lucide-boxes",
-      "name": "Nuevo GDD",
+      "name": "Nuevo Proyecto",
       "mode": "any"
     },
     {

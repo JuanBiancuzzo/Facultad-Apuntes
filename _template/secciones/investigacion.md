@@ -1,11 +1,10 @@
 <%*
     const error = tp.user.error();
+    const investigacion = tp.user.investigacion(tp);
     const tArchivo = tp.file.find_tfile(tp.file.path(true));
 
     try {
-        let [ tipo, ...argumentos ] = tp.file.title.split("-").map(t => t.trim());
-        let obtenerInformacion = tp.user.seccion(tp, tipo);
-        let { metadata, carpeta, titulo, texto } = obtenerInformacion(tp, argumentos);
+        let { metadata, carpeta, titulo, texto } = investigacion.seccion();
 
         await tp.file.move(`${carpeta}/${titulo}`, tArchivo);
         tR += tp.user.archivo().texto(tp, metadata, texto);
