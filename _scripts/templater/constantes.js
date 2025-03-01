@@ -56,8 +56,21 @@ module.exports = () => ({
                 capitulo: "coleccion/libro/capitulos"
             },
         },
+        referencia: {
+            archivo: "referencia/referenciasArchivo",
+        },
+        carrera: {
+            mapa: "carrera/mapa",
+            carrera: "carrera/carreras",
+            materias: "carrera/materias",
+            apuntes: "contenido/listaAcumulada",
+        },
     },
     SECCIONES: {
+        apuntes: { nivel: 1, texto: "Apuntes" },
+        bibliografia: { nivel: 1, texto: "Bibliografía" },
+        mapa: { nivel: 1, texto: "Mapa" },
+        materias: { nivel: 1, texto: "Materias" },
         referencias: { nivel: 1, texto: "Referencias" },
         resumen: { nivel: 1, texto: "Resumen" },
         definicion: { nivel: 1, texto: "Definición" },
@@ -66,6 +79,7 @@ module.exports = () => ({
         informacion: { nivel: 1, texto: "Información" },
         operaciones: { nivel: 2, texto: "Operaciones" },
         metodo: { nivel: 3 },
+        capitulo: { nivel: 2 },
     },
     TAGS: {
         investigacion: {
@@ -79,14 +93,7 @@ module.exports = () => ({
         },
         facultad: {
             self: "facultad",
-            carrera: {
-                self: "carrera",
-                informatica: "ingeniería-en-informática",
-                electronica: "ingeniería-electrónica",
-                datos: "licenciatura-en-ciencia-de-datos",
-                fisica: "licenciatura-en-ciencias-físicas",
-                matematica: "licenciatura-en-ciencias-matemáticas",
-            },
+            carrera: "carrera",
             materia: "materia",
             resumen: "resumen",
         },
@@ -199,18 +206,19 @@ module.exports = () => ({
         CARRERA: {
             estado: "estado",
             tags: "tags",
+            nombre: "nombreCarrera",
             planesDeEstudio: "planes",
             tieneCodigoLaMateria: "tieneCodigo",
         },
         MATERIA: {
             infoCuatri: "cuatri",
-            referencias: "referencias",
             equivalencia: "equivalencia",
-            tags: "tags",
-            codigoMateria: "codigo",
+            codigo: "codigo",
             estado: "estado",
             nombre: "nombreMateria",
-            nombreReudico: "nombreReducido",
+            nombreReducido: "nombreReducido",
+            plan: "plan",
+            correlativas: "correlativas",
         },
         INVESTIGACION: {
             estado: "estado",
@@ -284,51 +292,161 @@ module.exports = () => ({
             },
             [LENGUAJE_C]: {
                 nombre: "C",
-                multiplesTiposDatos: false,
-                parametroValorPorDefecto: false,
-                returnOpcional: false,
-                structHerencia: false,
-                genericos: false,
-                interfaces: false,
-                tieneTupla: false,
-                tieneEnum: false,
-                arrayConCantidad: true,
+                parametro: {
+                    valorPorDefecto: false,
+                },
+                return: {
+                    opcional: false,
+                },
+                tipoDeDato: {
+                    multiples: false,
+                },
+                clase: {
+                    tieneClase: false,
+                },
+                struct: {
+                    tieneStruct: false,
+                    herencia: false,
+                    variableEstaticas: false,
+                },
+                generico: {
+                    tieneGenericos: false,
+                },
+                interfaz: {
+                    tieneInterfaces: false,
+                },
+                tupla: {
+                    tieneTupla: false,
+                },
+                enum: {
+                    tieneEnum: true,
+                },
+                array: {
+                    tieneArray: true,
+                    conCantidad: true,
+                },
+                referencia: {
+                    tieneReferencia: true,
+                },
             },
             [LENGUAJE_PYTHON]: {
                 nombre: "Python",
-                multiplesTiposDatos: true,
-                parametroValorPorDefecto: true,
-                returnOpcional: true,
-                structHerencia: true,
-                genericos: false,
-                interfaces: false,
-                tieneTupla: true,
-                tieneEnum: true,
-                arrayConCantidad: false,
+                parametro: {
+                    valorPorDefecto: true,
+                },
+                return: {
+                    opcional: true,
+                },
+                tipoDeDato: {
+                    multiples: true,
+                },
+                clase: {
+                    tieneClase: true,
+                    herencia: false,
+                    variableEstaticas: true,
+                },
+                struct: {
+                    tieneStruct: false,
+                },
+                generico: {
+                    tieneGenericos: false,
+                },
+                interfaz: {
+                    tieneInterfaces: false,
+                },
+                tupla: {
+                    tieneTupla: true,
+                },
+                enum: {
+                    tieneEnum: false,
+                },
+                array: {
+                    tieneArray: true,
+                    conCantidad: false,
+                },
+                referencia: {
+                    tieneReferencia: false,
+                },
             },
             [LENGUAJE_RUST]: {
                 nombre: "Rust",
-                multiplesTiposDatos: false,
-                parametroValorPorDefecto: false,
-                returnOpcional: true,
-                structHerencia: false,
-                genericos: true,
-                interfaces: true,
-                tieneTupla: true,
-                tieneEnum: true,
-                arrayConCantidad: true,
+                parametro: {
+                    valorPorDefecto: false,
+                },
+                return: {
+                    opcional: true,
+                },
+                tipoDeDato: {
+                    multiples: false,
+                },
+                clase: {
+                    tieneClase: false,
+                },
+                struct: {
+                    tieneStruct: true,
+                    herencia: false, 
+                    variableEstaticas: false,
+                },
+                generico: {
+                    tieneGenericos: true,
+                },
+                interfaz: {
+                    tieneInterfaces: true,
+                },
+                tupla: {
+                    tieneTupla: true,
+                },
+                enum: {
+                    tieneEnum: true,
+                },
+                array: {
+                    tieneArray: true,
+                    conCantidad: true,
+                },
+                referencia: {
+                    tieneReferencia: true,
+                },
             },
             [LENGUAJE_DEFAULT]: {
                 nombre: "PseudoCodigo",
-                multiplesTiposDatos: false,
-                parametroValorPorDefecto: true,
-                returnOpcional: true,
-                structHerencia: true,
-                genericos: true,
-                interfaces: true,
-                tieneTupla: true,
-                tieneEnum: true,
-                arrayConCantidad: true,
+                parametro: {
+                    valorPorDefecto: true,
+                },
+                return: {
+                    opcional: true,
+                },
+                tipoDeDato: {
+                    multiples: false,
+                },
+                clase: {
+                    tieneClase: true,
+                    herencia: true,
+                    variableEstaticas: false,
+                },
+                struct: {
+                    tieneStruct: true,
+                    herencia: true,
+                    variableEstaticas: false,
+                },
+                generico: {
+                    tieneGenericos: true,
+                },
+                interfaz: {
+                    tieneInterfaces: true,
+                },
+                tupla: {
+                    tieneTupla: true,
+                },
+                enum: {
+                    tieneEnum: true,
+                },
+                array: {
+                    tieneArray: true,
+                    conCantidad: true,
+                },
+                referencia: {
+                    tieneReferencia: true,
+                },
             },
         },
         FUNCIONES: {
@@ -350,11 +468,11 @@ module.exports = () => ({
                 obtenerTitulo: (lenguaje, libreria, modulo) => `Módulo ${modulo} de la librería ${libreria} en ${lenguaje}`,
             },
             funcion: {
-                tags: "tags",
                 nombreFuncion: "nombre",
                 descripcion: "descripcion",
                 parametros: "parametros",
                 return: "return",
+                genericos: "genericos",
             },
             parametro: {
                 nombreParametro: "nombre",
@@ -362,15 +480,37 @@ module.exports = () => ({
                 valorPorDefecto: "default",
                 tipoDeDato: "type",
             },
-            struct: {
-                nombreStruct: "nombre",
+            clase: {
+                nombre: "nombre",
                 descripcion: "descripcion",
                 campos: "campos",
+                metodos: "metodos",
+                variablesEstaticas: "variablesEstaticas",
                 herede: "herencia",
+                genericos: "genericos",
+            },
+            struct: {
+                nombre: "nombre",
+                descripcion: "descripcion",
+                campos: "campos",
+                variablesEstaticas: "variablesEstaticas",
+                herede: "herencia",
+                genericos: "genericos",
             },
             interfaz: {
                 nombre: "nombre",
                 metodos: "metodos",
+                genericos: "genericos",
+            },
+            generico: {
+                nombre: "nombre",
+                interfaces: "interfaces",
+                uso: "uso",
+            },
+            enum: {
+                nombre: "nombre",
+                parametros: "parametro",
+                genericos: "genericos",
             },
             array: {
                 tipoDeDato: "type",
@@ -388,6 +528,7 @@ module.exports = () => ({
                     primitivo: "Primitivo",
                     tupla: "Tupla",
                     array: "Array",
+                    clase: "Class",
                     struct: "Struct",
                     interfaz: "Interfaz",
                     generico: "Generico",
@@ -396,6 +537,12 @@ module.exports = () => ({
                     union: "Union",
                     funcion: "Funcion",
                 },
+            },
+            proxy: {
+                id: "id",
+                campo: "campoModificado",
+                extra: "extra",
+                valor: "valor",
             },
             manejador: {
                 id: "id",
@@ -407,11 +554,8 @@ module.exports = () => ({
         },
         ESTRUCTURA_DATOS: {
             nombre: "nombreEstructura",
-            metodos: "métodos",
-            estructuras: "estructuras",
-            tipoInterfaz: "interfaces",
-            tipoGenerico: "genericos",
-            tipoEnum: "enums",
+            idEstructura: "idEstructura",
+            datosTiposDeDatos: "tiposDeDatos",
         },
         REFERENCIAS: {
             numReferencia: "numReferencia",
@@ -519,29 +663,6 @@ module.exports = () => ({
         ampliar: "ampliar",
         terminado: "terminado",
     },
-    CREAR: {
-        materia: "Materia",
-        resumenMateria: "Resumen materia",
-        curso: "Curso",
-        resumenCurso: "Resumen curso",
-        investigacion: "Investigación",
-        proyectoPractico: "Proyecto práctico",
-        proyectoInvestigacion: "Proyecto Investigación",
-        juego: "GDD",
-        coleccion: {
-            funciones: {
-                libreria: "Libreria funciones",
-                modulo: "Módulo funciones"
-            },
-            bloqueMatematica: {
-                tema: "Tema bloque matemática",
-                subtema: "Subtema bloque matemática",
-            },
-            estructuraDatos: {
-                self: "Estructura de datos",
-            }
-        },
-    },
     BLOQUES_MATEMATICA: {
         bloques: {
             teorema: "teorema",
@@ -575,4 +696,10 @@ module.exports = () => ({
             nombre: "Demostración",
         }
     },
+    CREAR: {
+        carrera: "Carrera",
+        curso: "Curso",
+        investigacion: "Investigacion",
+        proyecto: "Proyecto",
+    }
 });

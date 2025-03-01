@@ -10,7 +10,7 @@ module.exports = (tp) => {
         `${TAGS_INVESTIGACION.self}/${TAGS_INVESTIGACION.indice}`,
         `${TAGS_CURSO.self}/${TAGS_CURSO.curso}`,
         `${TAGS_CURSO.self}/${TAGS_CURSO.resumen}`,
-        `${TAGS_FACULTAD.self}/${TAGS_FACULTAD.carrera.self}`,
+        `${TAGS_FACULTAD.self}/${TAGS_FACULTAD.carrera}`,
         `${TAGS_FACULTAD.self}/${TAGS_FACULTAD.materia}`,
         `${TAGS_FACULTAD.self}/${TAGS_FACULTAD.resumen}`,
         `${TAGS_COLECCION.self}/${TAGS_COLECCION.representante}`,

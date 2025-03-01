@@ -3,7 +3,14 @@
   "showAddCommand": true,
   "debug": false,
   "editorMenu": [],
-  "fileMenu": [],
+  "fileMenu": [
+    {
+      "id": "quickadd:choice:3c681439-6c5a-4857-bdc5-e8f2ebf463a1",
+      "icon": "lucide-album",
+      "name": "Ingresar sección facultad",
+      "mode": "any"
+    }
+  ],
   "leftRibbon": [
     {
       "id": "templater-obsidian:_template/referencias/Referencia - Template.md",

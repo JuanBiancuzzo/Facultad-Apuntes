@@ -125,7 +125,7 @@ async function crearNotaFacultad(tp) {
     let directorioActual = carpeta.join("/");
     let resumenes = dv.pages(`"${directorioActual}" and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.resumen}`);
     let materias = dv.pages(`"${directorioActual}" and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.materia}`);
-    let carreras = dv.pages(`"${directorioActual}" and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.carrera.self}`);
+    let carreras = dv.pages(`"${directorioActual}" and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.carrera}`);
 
     while (
         (materias.length > 0 && resumenes.length > 0) || (materias.length == 0 && resumenes.length == 0)
@@ -154,7 +154,7 @@ async function crearNotaFacultad(tp) {
                 directorioActual = carpeta.join("/");
                 resumenes = dv.pages(`"${directorioActual}" and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.resumen}`);
                 materias = dv.pages(`"${directorioActual}" and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.materia}`);
-                carreras = dv.pages(`"${directorioActual}" and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.carrera.self}`);
+                carreras = dv.pages(`"${directorioActual}" and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.carrera}`);
                 continue;
 
             case 1: materia = materias.first(); break;

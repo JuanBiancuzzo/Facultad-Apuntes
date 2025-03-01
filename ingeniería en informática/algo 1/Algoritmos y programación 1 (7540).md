@@ -4,9 +4,9 @@ codigo: 7540
 plan: 1986
 estado: Terminado
 tags:
-  - ingeniería-en-informática/algo-1
+  - carrera/ingeniería-en-informática/algo-1
   - facultad/materia
-etapa: empezado
+etapa: ampliar
 referencias:
   - "400"
   - "401"

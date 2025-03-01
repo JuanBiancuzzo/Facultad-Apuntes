@@ -14,6 +14,8 @@ tieneCodigo: true
     await dv.view("_scripts/dataview/carrera/mapa", { tag: "ingeniería-en-informática" });
 ```
 
+# Materias
+---
 ```dataviewjs
     await dv.view("_scripts/dataview/carrera/materias", { tag: "ingeniería-en-informática" });
 ```
