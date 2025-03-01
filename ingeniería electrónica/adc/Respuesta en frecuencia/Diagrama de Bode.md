@@ -3,7 +3,7 @@ dia: 2023-11-17
 tags:
   - carrera/ingeniería-electrónica/adc/Respuesta-en-frecuencia
   - nota/facultad
-  - ingeniería-en-informática/adc/Respuesta-en-frecuencia
+  - carrera/ingeniería-en-informática/adc/Respuesta-en-frecuencia
 ---
 # Definición
 ---

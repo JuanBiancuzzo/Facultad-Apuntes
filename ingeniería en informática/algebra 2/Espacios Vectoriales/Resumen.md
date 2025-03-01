@@ -1,7 +1,7 @@
 ---
 capitulo: 1
 tags:
-  - ingeniería-en-informática/algebra-2/Espacios-Vectoriales
+  - carrera/ingeniería-en-informática/algebra-2/Espacios-Vectoriales
   - carrera/ingeniería-electrónica/algebra-2/Espacios-Vectoriales
   - facultad/resumen
 nombreResumen: Espacios Vectoriales

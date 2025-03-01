@@ -7,8 +7,8 @@ etapa: empezado
 estado: Estamos buscando información sobre el tema
 tags:
   - proyecto/práctico
-  - ingeniería-en-informática/tpp
-  - ingeniería-en-informática/tpp
+  - carrera/ingeniería-en-informática/tpp
+  - carrera/ingeniería-en-informática/tpp
   - proyecto/investigación
   - facultad/materia
 correlativas: 

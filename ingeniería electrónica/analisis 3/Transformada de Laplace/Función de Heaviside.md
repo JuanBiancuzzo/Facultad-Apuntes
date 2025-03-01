@@ -3,7 +3,7 @@ dia: 2023-11-17
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Transformada-de-Laplace
   - nota/facultad
-  - ingeniería-en-informática/analisis-3/Transformada-de-Laplace
+  - carrera/ingeniería-en-informática/analisis-3/Transformada-de-Laplace
 ---
 # Definición
 ---

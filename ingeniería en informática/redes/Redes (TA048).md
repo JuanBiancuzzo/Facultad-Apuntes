@@ -4,7 +4,7 @@ codigo: TA048
 plan: 2023
 estado: Terminado
 tags:
-  - ingeniería-en-informática/redes
+  - carrera/ingeniería-en-informática/redes
   - facultad/materia
 etapa: terminado
 correlativas:

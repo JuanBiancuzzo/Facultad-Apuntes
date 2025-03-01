@@ -1,7 +1,7 @@
 ---
 capitulo: 2
 tags:
-  - ingeniería-en-informática/discreta/Álgebra-proposicional
+  - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
   - facultad/resumen
 nombreResumen: Álgebra proposicional
 ---

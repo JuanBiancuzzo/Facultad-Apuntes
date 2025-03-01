@@ -1,12 +1,12 @@
 ---
 dia: 2023-11-20
 tags:
-  - ingeniería-en-informática/sisop/Virtualización-de-memoria
+  - carrera/ingeniería-en-informática/sisop/Virtualización-de-memoria
   - nota/facultad
   - carrera/ingeniería-electrónica/embebidos/Memorias
   - data-structures
   - lenguajes-de-programación/Lenguaje-Python/Pandas
-  - ingeniería-en-informática/orga/Pandas
+  - carrera/ingeniería-en-informática/orga/Pandas
 aliases:
   - Pila
 ---

@@ -1,10 +1,10 @@
 ---
 dia: 2023-11-15
 tags:
-  - ingeniería-en-informática/sisop/La-abstracción-de-proceso
+  - carrera/ingeniería-en-informática/sisop/La-abstracción-de-proceso
   - nota/facultad
   - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
-  - ingeniería-en-informática/estructura/Microarquitectura
+  - carrera/ingeniería-en-informática/estructura/Microarquitectura
   - carrera/ingeniería-electrónica/estructura/Microarquitectura
 ---
 # Definición

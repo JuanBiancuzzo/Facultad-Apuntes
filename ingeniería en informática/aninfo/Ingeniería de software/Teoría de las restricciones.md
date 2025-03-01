@@ -3,7 +3,7 @@ dia: 2023-08-27
 aliases:
   - TOC
 tags:
-  - ingeniería-en-informática/aninfo/Ingeniería-de-software
+  - carrera/ingeniería-en-informática/aninfo/Ingeniería-de-software
   - nota/facultad
 ---
 # Definición

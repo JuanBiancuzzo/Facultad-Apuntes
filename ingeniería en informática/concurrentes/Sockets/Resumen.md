@@ -1,7 +1,7 @@
 ---
 capitulo: 9
 tags:
-  - ingeniería-en-informática/concurrentes/Sockets
+  - carrera/ingeniería-en-informática/concurrentes/Sockets
   - facultad/resumen
 nombreResumen: Sockets
 ---

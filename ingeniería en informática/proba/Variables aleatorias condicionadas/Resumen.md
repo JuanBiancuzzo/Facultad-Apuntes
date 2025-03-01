@@ -1,7 +1,7 @@
 ---
 capitulo: 5
 tags:
-  - ingeniería-en-informática/proba/Variables-aleatorias-condicionadas
+  - carrera/ingeniería-en-informática/proba/Variables-aleatorias-condicionadas
   - carrera/ingeniería-electrónica/proba/Variables-aleatorias-condicionadas
   - facultad/resumen
 nombreResumen: Variables aleatorias condicionadas

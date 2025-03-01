@@ -1,7 +1,7 @@
 ---
 capitulo: 2
 tags:
-  - ingeniería-en-informática/tpp/Presentación
+  - carrera/ingeniería-en-informática/tpp/Presentación
   - facultad/resumen
 nombreResumen: Presentación
 ---

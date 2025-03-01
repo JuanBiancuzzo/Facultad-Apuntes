@@ -3,7 +3,7 @@ dia: 2024-03-11
 aliases:
   - Capa de link
 tags:
-  - ingeniería-en-informática/redes/Capa-de-Enlace
+  - carrera/ingeniería-en-informática/redes/Capa-de-Enlace
   - nota/facultad
   - carrera/ingeniería-electrónica/redes/Capa-de-Enlace
 ---

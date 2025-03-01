@@ -1,7 +1,7 @@
 ---
 dia: 2024-09-03
 tags:
-  - ingeniería-en-informática/fisica-2/Magnetostática-en-el-vacío
+  - carrera/ingeniería-en-informática/fisica-2/Magnetostática-en-el-vacío
   - nota/facultad
   - carrera/ingeniería-electrónica/fisica-2/Magnetostática-en-el-vacío
 aliases:

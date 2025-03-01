@@ -4,7 +4,7 @@ codigo: 7541
 plan: 1986
 estado: Falta hacer el resumen
 tags:
-  - ingeniería-en-informática/algo-2
+  - carrera/ingeniería-en-informática/algo-2
   - facultad/materia
 etapa: sin-empezar
 correlativas:

@@ -1,7 +1,7 @@
 ---
 dia: 2023-10-16
 tags:
-  - ingeniería-en-informática/aninfo/Diseño-de-software
+  - carrera/ingeniería-en-informática/aninfo/Diseño-de-software
   - nota/facultad
   - investigación/networking
 aliases:

@@ -4,7 +4,7 @@ estado: Sin empezar
 tags:
   - investigación/índice
   - nota/investigacion
-  - ingeniería-en-informática/sisop/Kernel
+  - carrera/ingeniería-en-informática/sisop/Kernel
   - investigación/ciencias-de-la-computación/sistemas-operativos/kernel
 ---
 ```dataviewjs

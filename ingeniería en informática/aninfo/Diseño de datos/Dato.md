@@ -1,7 +1,7 @@
 ---
 dia: 2023-08-26
 tags:
-  - ingeniería-en-informática/aninfo/Diseño-de-datos
+  - carrera/ingeniería-en-informática/aninfo/Diseño-de-datos
   - nota/facultad
 ---
 # Definición

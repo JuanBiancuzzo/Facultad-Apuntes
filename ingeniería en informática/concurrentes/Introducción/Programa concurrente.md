@@ -3,7 +3,7 @@ dia: 2024-12-24
 etapa: empezado
 referencias: []
 tags:
-  - ingeniería-en-informática/concurrentes/Introducción
+  - carrera/ingeniería-en-informática/concurrentes/Introducción
   - nota/facultad
 ---
 ```dataviewjs

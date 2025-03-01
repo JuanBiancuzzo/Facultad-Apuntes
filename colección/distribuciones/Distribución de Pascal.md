@@ -1,7 +1,7 @@
 ---
 dia: 2023-01-23
 tags:
-  - ingeniería-en-informática/proba/Proceso-de-Bernoulli
+  - carrera/ingeniería-en-informática/proba/Proceso-de-Bernoulli
   - distribucion/discreta
   - carrera/ingeniería-electrónica/proba/Proceso-de-Bernoulli
 ---

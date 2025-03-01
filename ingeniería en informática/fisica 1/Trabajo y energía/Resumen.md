@@ -1,7 +1,7 @@
 ---
 capitulo: 2
 tags:
-  - ingeniería-en-informática/fisica-1/Trabajo-y-energía
+  - carrera/ingeniería-en-informática/fisica-1/Trabajo-y-energía
   - carrera/ingeniería-electrónica/fisica-1/Trabajo-y-energía
   - facultad/resumen
 nombreResumen: Trabajo y energía

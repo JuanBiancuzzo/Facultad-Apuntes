@@ -1,7 +1,7 @@
 ---
 capitulo: 1
 tags:
-  - ingeniería-en-informática/sisop/Kernel
+  - carrera/ingeniería-en-informática/sisop/Kernel
   - facultad/resumen
 nombreResumen: Kernel
 ---

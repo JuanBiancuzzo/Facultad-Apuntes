@@ -2,7 +2,7 @@
 capitulo: 10
 tags:
   - carrera/ingeniería-electrónica/fisica-3/Mecánica-estadística
-  - ingeniería-en-informática/fisica-3/Mecánica-estadística
+  - carrera/ingeniería-en-informática/fisica-3/Mecánica-estadística
   - facultad/resumen
 nombreResumen: Mecánica estadística
 ---

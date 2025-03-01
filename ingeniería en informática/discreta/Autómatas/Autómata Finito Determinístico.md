@@ -1,7 +1,7 @@
 ---
 dia: 2024-08-08
 tags:
-  - ingeniería-en-informática/discreta/Autómatas
+  - carrera/ingeniería-en-informática/discreta/Autómatas
   - nota/facultad
 aliases:
   - DFA

@@ -1,7 +1,7 @@
 ---
 capitulo: 2
 tags:
-  - ingeniería-en-informática/sisop/La-abstracción-de-proceso
+  - carrera/ingeniería-en-informática/sisop/La-abstracción-de-proceso
   - facultad/resumen
 nombreResumen: La abstracción de proceso
 ---

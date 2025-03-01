@@ -5,7 +5,7 @@ aliases:
   - TTL
   - Broadcast
 tags:
-  - ingeniería-en-informática/redes/Capa-de-Red
+  - carrera/ingeniería-en-informática/redes/Capa-de-Red
   - nota/facultad
   - investigación/protocolos/protocolo-de-internet
   - carrera/ingeniería-electrónica/redes/Capa-de-Red

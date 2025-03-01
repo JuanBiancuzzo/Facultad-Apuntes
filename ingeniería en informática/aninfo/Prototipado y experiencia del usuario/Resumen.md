@@ -1,7 +1,7 @@
 ---
 capitulo: 9
 tags:
-  - ingeniería-en-informática/aninfo/Prototipado-y-experiencia-del-usuario
+  - carrera/ingeniería-en-informática/aninfo/Prototipado-y-experiencia-del-usuario
   - facultad/resumen
 nombreResumen: Prototipado y experiencia del usuario
 ---

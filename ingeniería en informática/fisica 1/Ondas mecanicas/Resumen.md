@@ -1,7 +1,7 @@
 ---
 capitulo: 6
 tags:
-  - ingeniería-en-informática/fisica-1/Ondas-mecanicas
+  - carrera/ingeniería-en-informática/fisica-1/Ondas-mecanicas
   - carrera/ingeniería-electrónica/fisica-1/Ondas-mecanicas
   - facultad/resumen
 nombreResumen: Ondas mecanicas

@@ -3,9 +3,9 @@ dia: 2023-09-03
 tags:
   - carrera/ingeniería-electrónica/adc/Circuitos-en-regimen-de-corriente-continua
   - nota/facultad
-  - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - carrera/ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
   - carrera/ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
-  - ingeniería-en-informática/adc/Circuitos-en-regimen-de-corriente-continua
+  - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-de-corriente-continua
 ---
 # Definición
 ---

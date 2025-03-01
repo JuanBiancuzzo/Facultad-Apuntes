@@ -8,7 +8,7 @@ aliases:
   - Diagrama de actividad UML#Diagrama de actividad
   - Diagrama de clases UML#Diagrama de clases
 tags:
-  - ingeniería-en-informática/aninfo/Ingeniería-de-software
+  - carrera/ingeniería-en-informática/aninfo/Ingeniería-de-software
   - nota/facultad
   - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
 ---

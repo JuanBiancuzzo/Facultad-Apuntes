@@ -1,7 +1,7 @@
 ---
 capitulo: 1
 tags:
-  - ingeniería-en-informática/concurrentes/Introducción
+  - carrera/ingeniería-en-informática/concurrentes/Introducción
   - facultad/resumen
 nombreResumen: Introducción
 ---

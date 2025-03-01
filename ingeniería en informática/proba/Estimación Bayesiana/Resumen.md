@@ -1,7 +1,7 @@
 ---
 capitulo: 13
 tags:
-  - ingeniería-en-informática/proba/Estimación-Bayesiana
+  - carrera/ingeniería-en-informática/proba/Estimación-Bayesiana
   - carrera/ingeniería-electrónica/proba/Estimación-Bayesiana
   - facultad/resumen
 nombreResumen: Estimación Bayesiana

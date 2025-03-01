@@ -15,7 +15,7 @@ Vamos a enumerar las system calls, en este caso usando el lenguaje C
 
 ## Resumen
 ---
-#ingeniería-en-informática/sisop/Kernel 
+#carrera/ingeniería-en-informática/sisop/Kernel 
 Las system calls son funciones que permiten a los [[Proceso|procesos]] de usuario pedirle al [[Kernel|kernel]] que realice operaciones en su nombre. Una system call es cualquier función que el kernel expone que puede ser utilizada por un proceso a [[User mode|nivel usuario]]
 
 Desde el punto de vista del [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]], llamar a una system call es más o menos como invocar a una función de `C`. Por supuesto, de fondo ocurre

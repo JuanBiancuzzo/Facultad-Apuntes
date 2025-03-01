@@ -1,7 +1,7 @@
 ---
 capitulo: 5
 tags:
-  - ingeniería-en-informática/aninfo/Verificación-y-validación
+  - carrera/ingeniería-en-informática/aninfo/Verificación-y-validación
   - facultad/resumen
 nombreResumen: Verificación y validación
 ---

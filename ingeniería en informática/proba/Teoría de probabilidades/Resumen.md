@@ -1,7 +1,7 @@
 ---
 capitulo: 1
 tags:
-  - ingeniería-en-informática/proba/Teoría-de-probabilidades
+  - carrera/ingeniería-en-informática/proba/Teoría-de-probabilidades
   - carrera/ingeniería-electrónica/proba/Teoría-de-probabilidades
   - facultad/resumen
 nombreResumen: Teoría de probabilidades

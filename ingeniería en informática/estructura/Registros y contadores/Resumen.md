@@ -1,7 +1,7 @@
 ---
 capitulo: 7
 tags:
-  - ingeniería-en-informática/estructura/Registros-y-contadores
+  - carrera/ingeniería-en-informática/estructura/Registros-y-contadores
   - carrera/ingeniería-electrónica/estructura/Registros-y-contadores
   - facultad/resumen
 nombreResumen: Registros y contadores

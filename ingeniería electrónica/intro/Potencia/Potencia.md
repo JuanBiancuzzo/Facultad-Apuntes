@@ -3,12 +3,12 @@ dia: 2023-01-23
 tags:
   - carrera/ingeniería-electrónica/intro/Potencia
   - nota/facultad
-  - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
-  - ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
+  - carrera/ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - carrera/ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
   - carrera/ingeniería-electrónica/adc/Circuitos-en-regimen-senoidal-permanente
   - carrera/ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
   - carrera/ingeniería-electrónica/fisica-2/Circuitos-en-régimen-alterno-permanente
-  - ingeniería-en-informática/adc/Circuitos-en-regimen-senoidal-permanente
+  - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-senoidal-permanente
 aliases:
   - Balance de potencia#Balance de potencia
   - Potencia activa

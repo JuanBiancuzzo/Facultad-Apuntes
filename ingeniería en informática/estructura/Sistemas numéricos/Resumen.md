@@ -1,7 +1,7 @@
 ---
 capitulo: 1
 tags:
-  - ingeniería-en-informática/estructura/Sistemas-numéricos
+  - carrera/ingeniería-en-informática/estructura/Sistemas-numéricos
   - carrera/ingeniería-electrónica/estructura/Sistemas-numéricos
   - facultad/resumen
 nombreResumen: Sistemas numéricos

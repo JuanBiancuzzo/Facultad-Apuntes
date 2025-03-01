@@ -2,7 +2,7 @@
 capitulo: 16
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Transformada-de-Laplace
-  - ingeniería-en-informática/analisis-3/Transformada-de-Laplace
+  - carrera/ingeniería-en-informática/analisis-3/Transformada-de-Laplace
   - facultad/resumen
 nombreResumen: Transformada de Laplace
 ---

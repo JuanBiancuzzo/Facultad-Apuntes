@@ -23,7 +23,7 @@ tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - ingeniería-en-informática/tpp/Propuesta
+  - carrera/ingeniería-en-informática/tpp/Propuesta
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -1,7 +1,7 @@
 ---
 capitulo: 4
 tags:
-  - ingeniería-en-informática/orga/Compresión
+  - carrera/ingeniería-en-informática/orga/Compresión
   - facultad/resumen
 nombreResumen: Compresión
 ---

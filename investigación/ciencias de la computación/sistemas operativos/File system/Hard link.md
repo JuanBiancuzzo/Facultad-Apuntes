@@ -5,7 +5,7 @@ referencias:
 tags:
   - nota/investigacion
   - investigación/ciencias-de-la-computación/sistemas-operativos/File-system
-  - ingeniería-en-informática/sisop/File-system
+  - carrera/ingeniería-en-informática/sisop/File-system
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

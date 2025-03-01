@@ -1,7 +1,7 @@
 ---
 capitulo: 3
 tags:
-  - ingeniería-en-informática/discreta/Álgebra-de-Boole
+  - carrera/ingeniería-en-informática/discreta/Álgebra-de-Boole
   - facultad/resumen
 nombreResumen: Álgebra de Boole
 ---

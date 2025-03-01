@@ -27,7 +27,7 @@ tags:
   - referencia/paper
   - biblioteca/paper
   - nota/investigacion
-  - ingeniería-en-informática/algebra-2/Autovalores-y-autovectores
+  - carrera/ingeniería-en-informática/algebra-2/Autovalores-y-autovectores
   - carrera/ingeniería-electrónica/algebra-2/Autovalores-y-autovectores
   - investigación/machine-Learning/sequence-modeling
   - investigación/ciencias-de-la-computación/Machine-learning/sequence-modeling

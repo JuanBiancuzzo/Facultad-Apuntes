@@ -3,7 +3,7 @@ dia: 2024-06-05
 aliases:
   - Control plane
 tags:
-  - ingeniería-en-informática/redes/Capa-de-Red
+  - carrera/ingeniería-en-informática/redes/Capa-de-Red
   - nota/facultad
   - carrera/ingeniería-electrónica/redes/Capa-de-Red
 ---

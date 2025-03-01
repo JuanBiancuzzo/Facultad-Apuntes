@@ -1,7 +1,7 @@
 ---
 capitulo: 7
 tags:
-  - ingeniería-en-informática/proba/Proceso-de-Bernoulli
+  - carrera/ingeniería-en-informática/proba/Proceso-de-Bernoulli
   - carrera/ingeniería-electrónica/proba/Proceso-de-Bernoulli
   - facultad/resumen
 nombreResumen: Proceso de Bernoulli

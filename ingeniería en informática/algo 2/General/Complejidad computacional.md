@@ -1,7 +1,7 @@
 ---
 dia: 2024-05-22
 tags:
-  - ingeniería-en-informática/algo-2/General
+  - carrera/ingeniería-en-informática/algo-2/General
   - nota/facultad
   - carrera/ingeniería-electrónica/algo-2/General
 ---

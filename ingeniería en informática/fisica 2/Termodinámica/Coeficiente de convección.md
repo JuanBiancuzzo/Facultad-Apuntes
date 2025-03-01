@@ -1,7 +1,7 @@
 ---
 dia: 2024-09-04
 tags:
-  - ingeniería-en-informática/fisica-2/Termodinámica
+  - carrera/ingeniería-en-informática/fisica-2/Termodinámica
   - nota/facultad
   - carrera/ingeniería-electrónica/fisica-2/Termodinámica
 aliases:

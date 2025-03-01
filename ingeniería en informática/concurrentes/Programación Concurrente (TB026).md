@@ -1,7 +1,7 @@
 ---
 plan: 2023
 tags:
-  - ingeniería-en-informática/concurrentes
+  - carrera/ingeniería-en-informática/concurrentes
   - facultad/materia
 correlativas:
   - "[[ingeniería en informática/taller/Taller de programación 1 (9508).md|Taller de programación 1]]"

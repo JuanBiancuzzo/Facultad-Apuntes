@@ -1,7 +1,7 @@
 ---
 capitulo: 4
 tags:
-  - ingeniería-en-informática/concurrentes/Programación-Asincrónica
+  - carrera/ingeniería-en-informática/concurrentes/Programación-Asincrónica
   - investigación/ciencias-de-la-computación/Programación-asincrónica
   - facultad/resumen
 nombreResumen: Programación Asincrónica

@@ -1,7 +1,7 @@
 ---
 dia: 2023-03-17
 tags:
-  - ingeniería-en-informática/taller/Organizacion
+  - carrera/ingeniería-en-informática/taller/Organizacion
   - nota/facultad
   - lenguajes-de-programación/lenguaje-Rust
   - carrera/ingeniería-electrónica/taller/Organizacion

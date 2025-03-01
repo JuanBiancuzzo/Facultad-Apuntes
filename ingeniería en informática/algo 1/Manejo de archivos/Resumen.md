@@ -1,7 +1,7 @@
 ---
 capitulo: 4
 tags:
-  - ingeniería-en-informática/algo-1/Manejo-de-archivos
+  - carrera/ingeniería-en-informática/algo-1/Manejo-de-archivos
   - carrera/ingeniería-electrónica/algo-1/Manejo-de-archivos
   - facultad/resumen
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c

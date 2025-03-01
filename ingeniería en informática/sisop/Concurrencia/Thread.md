@@ -1,13 +1,13 @@
 ---
 dia: 2023-11-09
 tags:
-  - ingeniería-en-informática/sisop/Concurrencia
+  - carrera/ingeniería-en-informática/sisop/Concurrencia
   - nota/facultad
-  - ingeniería-en-informática/taller/Concurrencia
+  - carrera/ingeniería-en-informática/taller/Concurrencia
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
   - carrera/ingeniería-electrónica/taller/Concurrencia
-  - ingeniería-en-informática/concurrentes/Introducción
+  - carrera/ingeniería-en-informática/concurrentes/Introducción
 aliases:
   - Multithreading
   - Multihilos

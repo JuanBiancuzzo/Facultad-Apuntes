@@ -4,7 +4,7 @@ aliases:
   - ECN
   - Control de congestión asistida por la red
 tags:
-  - ingeniería-en-informática/redes/Capa-de-Transporte
+  - carrera/ingeniería-en-informática/redes/Capa-de-Transporte
   - nota/facultad
   - carrera/ingeniería-electrónica/redes/Capa-de-Transporte
 ---

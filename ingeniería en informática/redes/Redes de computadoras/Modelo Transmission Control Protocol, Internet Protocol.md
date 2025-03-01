@@ -4,7 +4,7 @@ aliases:
   - Modelo TCP/IP
   - IP stack
 tags:
-  - ingeniería-en-informática/redes/Redes-de-computadoras
+  - carrera/ingeniería-en-informática/redes/Redes-de-computadoras
   - nota/facultad
   - carrera/ingeniería-electrónica/redes/Redes-de-computadoras
 ---

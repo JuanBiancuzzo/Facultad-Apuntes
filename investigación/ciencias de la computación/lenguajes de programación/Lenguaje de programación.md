@@ -18,7 +18,7 @@ Vamos a aprender varios lenguajes de programación, y acá es donde lo vamos a e
 
 ## Resumen
 ---
-#ingeniería-en-informática/algo-1/Introducción-a-la-programación #carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración #carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación 
+#carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación #carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración #carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación 
 Para poder entenderse con una máquina electrónica es necesario hablar su idioma, en este caso, habría que mandarle impulsos eléctricos. La forma más sencilla que tiene una máquina de entenderse este tipo de [[Señal|señales]] sería mediante binario. 
 
 Esta forma de comunicarse no es sencilla, por eso se decidió crear un lenguaje intermedio que pudiera ser fácilmente recordado por una persona y que sería procesado por otro [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] para transformarlo en binario. 

@@ -3,7 +3,7 @@ dia: 2023-11-16
 tags:
   - carrera/ingeniería-electrónica/adc/Circuitos-en-regimen-senoidal-permanente
   - nota/facultad
-  - ingeniería-en-informática/adc/Circuitos-en-regimen-senoidal-permanente
+  - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-senoidal-permanente
 ---
 # Definición
 ---

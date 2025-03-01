@@ -1,7 +1,7 @@
 ---
 dia: 2024-08-05
 tags:
-  - ingeniería-en-informática/discreta/Álgebra-de-conjuntos
+  - carrera/ingeniería-en-informática/discreta/Álgebra-de-conjuntos
   - nota/facultad
 referencias:
   - "191"

@@ -2,10 +2,10 @@
 dia: 2024-09-01
 tags:
   - nota/facultad
-  - ingeniería-en-informática/analisis-2/Funciones-de-varias-variables
-  - ingeniería-en-informática/fisica-2/Magnetostática-en-el-vacío
-  - ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
-  - ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
+  - carrera/ingeniería-en-informática/analisis-2/Funciones-de-varias-variables
+  - carrera/ingeniería-en-informática/fisica-2/Magnetostática-en-el-vacío
+  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
   - carrera/ingeniería-electrónica/analisis-2/Funciones-de-varias-variables
   - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
   - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos

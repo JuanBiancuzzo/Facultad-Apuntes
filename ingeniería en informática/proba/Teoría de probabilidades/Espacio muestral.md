@@ -1,7 +1,7 @@
 ---
 dia: 2024-01-13
 tags:
-  - ingeniería-en-informática/proba/Teoría-de-probabilidades
+  - carrera/ingeniería-en-informática/proba/Teoría-de-probabilidades
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Teoría-de-probabilidades
 ---

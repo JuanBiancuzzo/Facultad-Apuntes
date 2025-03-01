@@ -6,7 +6,7 @@ referencias:
 tags:
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
   - nota/facultad
-  - ingeniería-en-informática/discreta/Inducción
+  - carrera/ingeniería-en-informática/discreta/Inducción
   - licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
 aliases:
   - Inducción fuerte

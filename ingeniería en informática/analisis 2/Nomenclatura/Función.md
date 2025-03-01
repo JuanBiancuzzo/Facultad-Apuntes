@@ -2,17 +2,17 @@
 dia: 2023-01-22
 tags:
   - nota/facultad
-  - ingeniería-en-informática/algo-1/Lenguaje-C
-  - ingeniería-en-informática/taller/Sintaxis
-  - ingeniería-en-informática/analisis-2/Nomenclatura
+  - carrera/ingeniería-en-informática/algo-1/Lenguaje-C
+  - carrera/ingeniería-en-informática/taller/Sintaxis
+  - carrera/ingeniería-en-informática/analisis-2/Nomenclatura
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
-  - ingeniería-en-informática/estructura/Álgebra-de-Boole
+  - carrera/ingeniería-en-informática/estructura/Álgebra-de-Boole
   - carrera/ingeniería-electrónica/analisis-2/Nomenclatura
   - carrera/ingeniería-electrónica/algo-1/Lenguaje-C
   - carrera/ingeniería-electrónica/taller/Sintaxis
   - carrera/ingeniería-electrónica/estructura/Álgebra-de-Boole
-  - ingeniería-en-informática/discreta/Álgebra-proposicional
+  - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-zig
 aliases:
   - Prototipo de una función#Expresión en C

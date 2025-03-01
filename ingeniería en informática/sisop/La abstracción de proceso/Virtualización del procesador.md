@@ -1,7 +1,7 @@
 ---
 dia: 2023-11-15
 tags:
-  - ingeniería-en-informática/sisop/La-abstracción-de-proceso
+  - carrera/ingeniería-en-informática/sisop/La-abstracción-de-proceso
   - nota/facultad
 referencias:
   - "787"

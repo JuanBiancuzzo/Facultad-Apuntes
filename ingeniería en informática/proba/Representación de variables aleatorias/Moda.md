@@ -1,7 +1,7 @@
 ---
 dia: 2023-01-23
 tags:
-  - ingeniería-en-informática/proba/Representación-de-variables-aleatorias
+  - carrera/ingeniería-en-informática/proba/Representación-de-variables-aleatorias
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
 ---

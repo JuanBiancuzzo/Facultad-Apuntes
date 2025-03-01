@@ -3,7 +3,7 @@ dia: 2023-11-19
 aliases:
   - Política de planificación CSF
 tags:
-  - ingeniería-en-informática/sisop/Scheduling
+  - carrera/ingeniería-en-informática/sisop/Scheduling
   - nota/facultad
 ---
 # Definición

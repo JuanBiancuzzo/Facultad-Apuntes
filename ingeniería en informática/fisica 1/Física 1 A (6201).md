@@ -4,7 +4,7 @@ estado: Falta pasar el resumen
 plan: "1986"
 codigo: "6201"
 tags:
-  - ingeniería-en-informática/fisica-1
+  - carrera/ingeniería-en-informática/fisica-1
   - facultad/materia
 etapa: empezado
 nombreMateria: Física 1 A

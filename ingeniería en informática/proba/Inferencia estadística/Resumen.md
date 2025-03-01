@@ -1,7 +1,7 @@
 ---
 capitulo: 10
 tags:
-  - ingeniería-en-informática/proba/Inferencia-estadística
+  - carrera/ingeniería-en-informática/proba/Inferencia-estadística
   - carrera/ingeniería-electrónica/proba/Inferencia-estadística
   - facultad/resumen
 nombreResumen: Inferencia estadística

@@ -5,7 +5,7 @@ referencias:
   - "435"
 tags:
   - carrera/ingeniería-electrónica/adc/Circuitos-en-regimen-de-corriente-continua
-  - ingeniería-en-informática/adc/Circuitos-en-regimen-de-corriente-continua
+  - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-de-corriente-continua
   - nota/facultad
 ---
 ```dataviewjs

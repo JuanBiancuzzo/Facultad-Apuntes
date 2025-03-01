@@ -1,13 +1,13 @@
 ---
 dia: 2023-03-27
 tags:
-  - ingeniería-en-informática/orga/Pandas
+  - carrera/ingeniería-en-informática/orga/Pandas
   - nota/facultad
   - lenguajes-de-programación/Lenguaje-Python/Pandas
-  - ingeniería-en-informática/orga/Spark
+  - carrera/ingeniería-en-informática/orga/Spark
   - lenguajes-de-programación/Lenguaje-Python/Spark
   - lenguajes-de-programación/lenguaje-SQL
-  - ingeniería-en-informática/bdd/SQL
+  - carrera/ingeniería-en-informática/bdd/SQL
 aliases:
   - Sentencia JOIN
 ---

@@ -5,8 +5,8 @@ tags:
   - nota/facultad
   - carrera/ingeniería-electrónica/señales/Transformada-de-Fourier
   - carrera/ingeniería-electrónica/analisis-3/Transformada-de-Fourier
-  - ingeniería-en-informática/analisis-3/Transformada-de-Fourier
-  - ingeniería-en-informática/fisica-3/Postulados-y-operadores-de-la-mecánica-cuántica
+  - carrera/ingeniería-en-informática/analisis-3/Transformada-de-Fourier
+  - carrera/ingeniería-en-informática/fisica-3/Postulados-y-operadores-de-la-mecánica-cuántica
 ---
 # Definición
 ---

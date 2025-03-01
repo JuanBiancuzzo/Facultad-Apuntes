@@ -1,7 +1,7 @@
 ---
 capitulo: 2
 tags:
-  - ingeniería-en-informática/taller/Organizacion
+  - carrera/ingeniería-en-informática/taller/Organizacion
   - carrera/ingeniería-electrónica/taller/Organizacion
   - facultad/resumen
 nombreResumen: Organizacion

@@ -3,7 +3,7 @@ dia: 2023-10-16
 aliases:
   - UI
 tags:
-  - ingeniería-en-informática/aninfo/Prototipado-y-experiencia-del-usuario
+  - carrera/ingeniería-en-informática/aninfo/Prototipado-y-experiencia-del-usuario
   - nota/facultad
 ---
 # Definición

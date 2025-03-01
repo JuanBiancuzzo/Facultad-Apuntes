@@ -1,7 +1,7 @@
 ---
 dia: 2024-01-13
 tags:
-  - ingeniería-en-informática/algebra-2/Espacios-Vectoriales
+  - carrera/ingeniería-en-informática/algebra-2/Espacios-Vectoriales
   - nota/facultad
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
   - carrera/ingeniería-electrónica/algebra-2/Espacios-Vectoriales

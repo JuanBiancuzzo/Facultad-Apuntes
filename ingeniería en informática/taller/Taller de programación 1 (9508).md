@@ -4,7 +4,7 @@ estado: Falta pasar las presentaciones de los últimos temas
 plan: 2009
 codigo: "9508"
 tags:
-  - ingeniería-en-informática/taller
+  - carrera/ingeniería-en-informática/taller
   - facultad/materia
 etapa: empezado
 correlativas:

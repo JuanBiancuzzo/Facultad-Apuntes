@@ -3,7 +3,7 @@ dia: 2022-11-27
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Integrales-impropias
   - nota/facultad
-  - ingeniería-en-informática/analisis-3/Integrales-impropias
+  - carrera/ingeniería-en-informática/analisis-3/Integrales-impropias
 ---
 # Definición Abel
 ---

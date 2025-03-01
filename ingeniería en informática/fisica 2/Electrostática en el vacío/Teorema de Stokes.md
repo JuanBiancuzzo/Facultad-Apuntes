@@ -1,9 +1,9 @@
 ---
 dia: 2024-09-01
 tags:
-  - ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
+  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
   - nota/facultad
-  - ingeniería-en-informática/analisis-2/Funciones-de-varias-variables
+  - carrera/ingeniería-en-informática/analisis-2/Funciones-de-varias-variables
   - carrera/ingeniería-electrónica/analisis-2/Funciones-de-varias-variables
   - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
 aliases:

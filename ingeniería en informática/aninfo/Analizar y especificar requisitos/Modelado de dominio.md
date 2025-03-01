@@ -1,7 +1,7 @@
 ---
 dia: 2023-09-24
 tags:
-  - ingeniería-en-informática/aninfo/Analizar-y-especificar-requisitos
+  - carrera/ingeniería-en-informática/aninfo/Analizar-y-especificar-requisitos
   - nota/facultad
 ---
 # Definición

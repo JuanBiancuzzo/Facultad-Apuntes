@@ -1,7 +1,7 @@
 ---
 dia: 2023-04-06
 tags:
-  - ingeniería-en-informática/estructura/Sistemas-numéricos
+  - carrera/ingeniería-en-informática/estructura/Sistemas-numéricos
   - nota/facultad
   - carrera/ingeniería-electrónica/estructura/Sistemas-numéricos
 ---

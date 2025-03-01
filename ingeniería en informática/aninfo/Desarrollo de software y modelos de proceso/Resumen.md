@@ -1,7 +1,7 @@
 ---
 capitulo: 11
 tags:
-  - ingeniería-en-informática/aninfo/Desarrollo-de-software-y-modelos-de-proceso
+  - carrera/ingeniería-en-informática/aninfo/Desarrollo-de-software-y-modelos-de-proceso
   - facultad/resumen
 nombreResumen: Desarrollo de software y modelos de proceso
 ---

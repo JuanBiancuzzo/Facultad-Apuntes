@@ -2,7 +2,7 @@
 capitulo: 3
 tags:
   - carrera/ingeniería-electrónica/fisica-3/Efecto-fotoeléctrico
-  - ingeniería-en-informática/fisica-3/Efecto-fotoeléctrico
+  - carrera/ingeniería-en-informática/fisica-3/Efecto-fotoeléctrico
   - facultad/resumen
 nombreResumen: Efecto fotoeléctrico
 ---

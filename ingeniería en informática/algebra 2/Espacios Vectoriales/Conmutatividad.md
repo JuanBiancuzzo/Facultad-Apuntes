@@ -1,12 +1,12 @@
 ---
 dia: 2023-04-08
 tags:
-  - ingeniería-en-informática/algebra-2/Espacios-Vectoriales
+  - carrera/ingeniería-en-informática/algebra-2/Espacios-Vectoriales
   - nota/facultad
-  - ingeniería-en-informática/discreta/Álgebra-proposicional
+  - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
-  - ingeniería-en-informática/discreta/Álgebra-de-Boole
-  - ingeniería-en-informática/discreta/Álgebra-de-conjuntos
+  - carrera/ingeniería-en-informática/discreta/Álgebra-de-Boole
+  - carrera/ingeniería-en-informática/discreta/Álgebra-de-conjuntos
   - carrera/ingeniería-electrónica/algebra-2/Espacios-Vectoriales
   - licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros

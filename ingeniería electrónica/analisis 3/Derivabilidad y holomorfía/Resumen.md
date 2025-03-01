@@ -2,7 +2,7 @@
 capitulo: 2
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Derivabilidad-y-holomorfía
-  - ingeniería-en-informática/analisis-3/Derivabilidad-y-holomorfía
+  - carrera/ingeniería-en-informática/analisis-3/Derivabilidad-y-holomorfía
   - facultad/resumen
 nombreResumen: Derivabilidad y holomorfía
 ---

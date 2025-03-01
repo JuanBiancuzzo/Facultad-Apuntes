@@ -3,7 +3,7 @@ dia: 2022-09-12
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Funciones-elementales
   - nota/facultad
-  - ingeniería-en-informática/analisis-3/Funciones-elementales
+  - carrera/ingeniería-en-informática/analisis-3/Funciones-elementales
 ---
 Sea $z \in \mathbb{C}$, tal que $z = x + i \cdot y$, se define como 
 $$ arg : \mathbb{C} - \{0\} \to \mathbb{R} : arg(z) =

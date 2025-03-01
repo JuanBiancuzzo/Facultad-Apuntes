@@ -1,7 +1,7 @@
 ---
 capitulo: 6
 tags:
-  - ingeniería-en-informática/algebra-2/Matrices-unitarias-y-ortogonales
+  - carrera/ingeniería-en-informática/algebra-2/Matrices-unitarias-y-ortogonales
   - carrera/ingeniería-electrónica/algebra-2/Matrices-unitarias-y-ortogonales
   - facultad/resumen
 nombreResumen: Matrices unitarias y ortogonales

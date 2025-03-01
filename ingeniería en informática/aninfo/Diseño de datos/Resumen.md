@@ -1,7 +1,7 @@
 ---
 capitulo: 10
 tags:
-  - ingeniería-en-informática/aninfo/Diseño-de-datos
+  - carrera/ingeniería-en-informática/aninfo/Diseño-de-datos
   - facultad/resumen
 nombreResumen: Diseño de datos
 ---

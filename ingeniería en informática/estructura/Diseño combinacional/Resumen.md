@@ -1,7 +1,7 @@
 ---
 capitulo: 4
 tags:
-  - ingeniería-en-informática/estructura/Diseño-combinacional
+  - carrera/ingeniería-en-informática/estructura/Diseño-combinacional
   - carrera/ingeniería-electrónica/estructura/Diseño-combinacional
   - facultad/resumen
 nombreResumen: Diseño combinacional

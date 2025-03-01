@@ -3,7 +3,7 @@ dia: 2025-01-09
 etapa: ampliar
 referencias: 
 tags:
-  - ingeniería-en-informática/algo-1/Punteros
+  - carrera/ingeniería-en-informática/algo-1/Punteros
   - carrera/ingeniería-electrónica/algo-1/Punteros
   - nota/facultad
   - investigación/ciencias-de-la-computación/algoritmos/Sorting-algorithms

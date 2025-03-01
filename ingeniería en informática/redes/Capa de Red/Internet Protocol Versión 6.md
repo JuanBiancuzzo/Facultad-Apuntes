@@ -3,7 +3,7 @@ dia: 2024-06-14
 aliases:
   - IPv6
 tags:
-  - ingeniería-en-informática/redes/Capa-de-Red
+  - carrera/ingeniería-en-informática/redes/Capa-de-Red
   - nota/facultad
   - investigación/protocolos/protocolo-de-internet
   - carrera/ingeniería-electrónica/redes/Capa-de-Red

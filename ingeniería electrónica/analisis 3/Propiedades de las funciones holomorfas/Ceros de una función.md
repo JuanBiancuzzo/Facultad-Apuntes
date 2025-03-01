@@ -3,7 +3,7 @@ dia: 2022-11-25
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Propiedades-de-las-funciones-holomorfas
   - nota/facultad
-  - ingeniería-en-informática/analisis-3/Propiedades-de-las-funciones-holomorfas
+  - carrera/ingeniería-en-informática/analisis-3/Propiedades-de-las-funciones-holomorfas
 ---
 # Definición
 ---

@@ -1,7 +1,7 @@
 ---
 dia: 2024-08-08
 tags:
-  - ingeniería-en-informática/discreta/Inducción
+  - carrera/ingeniería-en-informática/discreta/Inducción
   - nota/facultad
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
   - licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción

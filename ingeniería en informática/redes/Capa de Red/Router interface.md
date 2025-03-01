@@ -3,7 +3,7 @@ dia: 2024-06-15
 aliases:
   - Interfaz de un router
 tags:
-  - ingeniería-en-informática/redes/Capa-de-Red
+  - carrera/ingeniería-en-informática/redes/Capa-de-Red
   - nota/facultad
   - carrera/ingeniería-electrónica/redes/Capa-de-Red
 ---

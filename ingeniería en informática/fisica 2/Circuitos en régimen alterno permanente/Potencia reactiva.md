@@ -1,11 +1,11 @@
 ---
 dia: 2024-09-03
 tags:
-  - ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
+  - carrera/ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
   - nota/facultad
   - carrera/ingeniería-electrónica/adc/Circuitos-en-regimen-senoidal-permanente
   - carrera/ingeniería-electrónica/fisica-2/Circuitos-en-régimen-alterno-permanente
-  - ingeniería-en-informática/adc/Circuitos-en-regimen-senoidal-permanente
+  - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-senoidal-permanente
 aliases:
   - Potencia fluctuante
 referencias:

@@ -1,7 +1,7 @@
 ---
 dia: 2023-03-16
 tags:
-  - ingeniería-en-informática/orga/Pandas
+  - carrera/ingeniería-en-informática/orga/Pandas
   - nota/facultad
   - lenguajes-de-programación/Lenguaje-Python/Pandas
 ---

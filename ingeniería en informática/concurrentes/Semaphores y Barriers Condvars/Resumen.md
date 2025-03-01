@@ -1,7 +1,7 @@
 ---
 capitulo: 7
 tags:
-  - ingeniería-en-informática/concurrentes/Semaphores-y-Barriers-Condvars
+  - carrera/ingeniería-en-informática/concurrentes/Semaphores-y-Barriers-Condvars
   - facultad/resumen
 nombreResumen: Semaphores y Barriers Condvars
 ---

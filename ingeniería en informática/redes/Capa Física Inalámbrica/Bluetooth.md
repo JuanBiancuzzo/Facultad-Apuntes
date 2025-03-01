@@ -2,7 +2,7 @@
 dia: 2024-08-27
 tags:
   - nota/facultad
-  - ingeniería-en-informática/redes/Capa-Física-Inalámbrica
+  - carrera/ingeniería-en-informática/redes/Capa-Física-Inalámbrica
   - carrera/ingeniería-electrónica/redes/Capa-Física-Inalámbrica
 aliases:
   - Wireless Personal Area Networks

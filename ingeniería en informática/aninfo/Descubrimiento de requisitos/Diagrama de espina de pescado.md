@@ -1,7 +1,7 @@
 ---
 dia: 2023-09-07
 tags:
-  - ingeniería-en-informática/aninfo/Descubrimiento-de-requisitos
+  - carrera/ingeniería-en-informática/aninfo/Descubrimiento-de-requisitos
   - nota/facultad
 ---
 # Definición

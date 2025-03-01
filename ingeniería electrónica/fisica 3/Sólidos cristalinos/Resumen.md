@@ -2,7 +2,7 @@
 capitulo: 9
 tags:
   - carrera/ingeniería-electrónica/fisica-3/Sólidos-cristalinos
-  - ingeniería-en-informática/fisica-3/Sólidos-cristalinos
+  - carrera/ingeniería-en-informática/fisica-3/Sólidos-cristalinos
   - facultad/resumen
 nombreResumen: Sólidos cristalinos
 ---

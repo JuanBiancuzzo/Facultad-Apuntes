@@ -3,7 +3,7 @@ dia: 2022-12-04
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Transformada-de-Fourier
   - nota/facultad
-  - ingeniería-en-informática/analisis-3/Transformada-de-Fourier
+  - carrera/ingeniería-en-informática/analisis-3/Transformada-de-Fourier
 ---
 El teorema de inversión es u teorema de [[Convergencia puntual]], análogo al de [[Condición de Dirichlet para la convergencia puntual|Dirichlet]] para [[Serie de Fourier]]. 
 

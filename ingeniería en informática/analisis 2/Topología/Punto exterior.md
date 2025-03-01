@@ -2,7 +2,7 @@
 dia: 2024-08-05
 tags:
   - nota/facultad
-  - ingeniería-en-informática/analisis-2/Topología/1
+  - carrera/ingeniería-en-informática/analisis-2/Topología/1
   - carrera/ingeniería-electrónica/analisis-2/Topología/1
 ---
 # Definición

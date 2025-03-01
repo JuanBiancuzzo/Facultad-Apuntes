@@ -4,7 +4,7 @@ aliases:
   - TLB
   - Buffer de traducción adelantada
 tags:
-  - ingeniería-en-informática/sisop/Virtualización-de-memoria
+  - carrera/ingeniería-en-informática/sisop/Virtualización-de-memoria
   - nota/facultad
 ---
 # Definición

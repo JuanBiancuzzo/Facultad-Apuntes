@@ -7,9 +7,9 @@ aliases:
   - FDMA
   - Frequency division multiplexing Access
 tags:
-  - ingeniería-en-informática/redes/Redes-de-computadoras
+  - carrera/ingeniería-en-informática/redes/Redes-de-computadoras
   - nota/facultad
-  - ingeniería-en-informática/redes/Capa-de-Enlace
+  - carrera/ingeniería-en-informática/redes/Capa-de-Enlace
   - investigación/protocolos/protocolo-de-internet
   - carrera/ingeniería-electrónica/redes/Capa-de-Enlace
   - carrera/ingeniería-electrónica/redes/Redes-de-computadoras

@@ -2,8 +2,8 @@
 dia: 2023-04-08
 tags:
   - nota/facultad
-  - ingeniería-en-informática/discreta/Álgebra-proposicional
-  - ingeniería-en-informática/estructura/Álgebra-de-Boole
+  - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
+  - carrera/ingeniería-en-informática/estructura/Álgebra-de-Boole
   - carrera/ingeniería-electrónica/estructura/Álgebra-de-Boole
 aliases:
   - Suma de productos

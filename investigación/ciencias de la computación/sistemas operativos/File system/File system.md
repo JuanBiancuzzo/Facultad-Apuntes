@@ -19,7 +19,7 @@ Vamos a investigar como un [[Sistema operativo|sistema operativo]] permite organ
 
 ## Resumen
 ---
-#ingeniería-en-informática/sisop/File-system 
+#carrera/ingeniería-en-informática/sisop/File-system 
 Permite al usuario organizar sus datos para que se persistan a través de un largo período de tiempo.
 
 ### Capa de abstracción

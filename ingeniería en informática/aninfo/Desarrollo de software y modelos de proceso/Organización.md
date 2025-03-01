@@ -1,7 +1,7 @@
 ---
 dia: 2023-08-26
 tags:
-  - ingeniería-en-informática/aninfo/Desarrollo-de-software-y-modelos-de-proceso
+  - carrera/ingeniería-en-informática/aninfo/Desarrollo-de-software-y-modelos-de-proceso
   - nota/facultad
 ---
 # Definición

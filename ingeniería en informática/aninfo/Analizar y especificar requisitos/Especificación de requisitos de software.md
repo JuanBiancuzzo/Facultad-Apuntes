@@ -3,7 +3,7 @@ dia: 2023-09-17
 aliases:
   - SRS
 tags:
-  - ingeniería-en-informática/aninfo/Analizar-y-especificar-requisitos
+  - carrera/ingeniería-en-informática/aninfo/Analizar-y-especificar-requisitos
   - nota/facultad
 ---
 # Definición

@@ -9,7 +9,7 @@ aliases:
   - HTML
 tags:
   - nota/investigacion
-  - ingeniería-en-informática/redes/Capa-de-aplicación
+  - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
   - carrera/ingeniería-electrónica/redes/Capa-de-aplicación
   - investigación/lenguaje-de-marcado
 ---

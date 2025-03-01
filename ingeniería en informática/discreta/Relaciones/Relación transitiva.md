@@ -1,7 +1,7 @@
 ---
 dia: 2024-08-07
 tags:
-  - ingeniería-en-informática/discreta/Relaciones
+  - carrera/ingeniería-en-informática/discreta/Relaciones
   - nota/facultad
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
   - licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones

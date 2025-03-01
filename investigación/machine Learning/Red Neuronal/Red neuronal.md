@@ -16,7 +16,7 @@ Vamos a investigar una de las forma de generar resultado a partir de datos, más
 
 ## Resumen
 ---
-#ingeniería-en-informática/orga/Machine-learning 
+#carrera/ingeniería-en-informática/orga/Machine-learning 
 Es un conjunto de [[Neurona|neuronas]] que pueden estar en capas, para generar uno o varios valores. 
 
 ```tikz

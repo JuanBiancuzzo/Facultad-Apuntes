@@ -3,7 +3,7 @@ dia: 2023-12-11
 aliases:
   - PCB
 tags:
-  - ingeniería-en-informática/sisop/La-abstracción-de-proceso
+  - carrera/ingeniería-en-informática/sisop/La-abstracción-de-proceso
   - nota/facultad
 ---
 # Definición

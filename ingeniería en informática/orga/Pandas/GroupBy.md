@@ -1,11 +1,11 @@
 ---
 dia: 2023-03-16
 tags:
-  - ingeniería-en-informática/orga/Pandas
+  - carrera/ingeniería-en-informática/orga/Pandas
   - nota/facultad
   - lenguajes-de-programación/Lenguaje-Python/Pandas
   - lenguajes-de-programación/Lenguaje-Python/Spark
-  - ingeniería-en-informática/orga/Spark
+  - carrera/ingeniería-en-informática/orga/Spark
 aliases:
   - GroupByKey
 ---

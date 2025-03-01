@@ -1,7 +1,7 @@
 ---
 capitulo: 1
 tags:
-  - ingeniería-en-informática/fisica-1/Cinemática-y-dinámica
+  - carrera/ingeniería-en-informática/fisica-1/Cinemática-y-dinámica
   - carrera/ingeniería-electrónica/fisica-1/Cinemática-y-dinámica
   - facultad/resumen
 nombreResumen: Cinemática y dinámica

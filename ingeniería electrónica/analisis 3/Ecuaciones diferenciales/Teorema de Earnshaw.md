@@ -3,7 +3,7 @@ dia: 2024-09-12
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Ecuaciones-diferenciales
   - nota/facultad
-  - ingeniería-en-informática/analisis-3/Ecuaciones-diferenciales
+  - carrera/ingeniería-en-informática/analisis-3/Ecuaciones-diferenciales
 ---
 # Definición
 ---

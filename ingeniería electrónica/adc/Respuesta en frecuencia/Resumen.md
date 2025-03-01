@@ -2,7 +2,7 @@
 capitulo: 5
 tags:
   - carrera/ingeniería-electrónica/adc/Respuesta-en-frecuencia
-  - ingeniería-en-informática/adc/Respuesta-en-frecuencia
+  - carrera/ingeniería-en-informática/adc/Respuesta-en-frecuencia
   - facultad/resumen
 nombreResumen: Respuesta en frecuencia
 ---

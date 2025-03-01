@@ -2,8 +2,8 @@
 dia: 2022-09-06
 tags:
   - nota/facultad
-  - ingeniería-en-informática/analisis-2/Topología/1
-  - ingeniería-en-informática/discreta/Relaciones
+  - carrera/ingeniería-en-informática/analisis-2/Topología/1
+  - carrera/ingeniería-en-informática/discreta/Relaciones
   - carrera/ingeniería-electrónica/analisis-2/Topología/1
 aliases:
   - Conjunto superiormente acotado

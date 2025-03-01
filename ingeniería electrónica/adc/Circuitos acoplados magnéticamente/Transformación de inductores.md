@@ -3,7 +3,7 @@ dia: 2023-11-17
 tags:
   - carrera/ingeniería-electrónica/adc/Circuitos-acoplados-magnéticamente
   - nota/facultad
-  - ingeniería-en-informática/adc/Circuitos-acoplados-magnéticamente
+  - carrera/ingeniería-en-informática/adc/Circuitos-acoplados-magnéticamente
 ---
 # Definición
 ---

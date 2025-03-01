@@ -1,7 +1,7 @@
 ---
 capitulo: 6
 tags:
-  - ingeniería-en-informática/concurrentes/Redes-de-Petri
+  - carrera/ingeniería-en-informática/concurrentes/Redes-de-Petri
   - facultad/resumen
 nombreResumen: Redes de Petri
 ---

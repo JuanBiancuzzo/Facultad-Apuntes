@@ -2,7 +2,7 @@
 dia: 2024-08-02
 tags:
   - nota/facultad
-  - ingeniería-en-informática/discreta/Álgebra-proposicional
+  - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
 aliases:
   - Sheffer
 ---

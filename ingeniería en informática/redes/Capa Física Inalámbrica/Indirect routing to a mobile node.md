@@ -1,7 +1,7 @@
 ---
 dia: 2024-08-31
 tags:
-  - ingeniería-en-informática/redes/Capa-Física-Inalámbrica
+  - carrera/ingeniería-en-informática/redes/Capa-Física-Inalámbrica
   - nota/facultad
   - investigación/protocolos/protocolo-de-internet
   - carrera/ingeniería-electrónica/redes/Capa-Física-Inalámbrica

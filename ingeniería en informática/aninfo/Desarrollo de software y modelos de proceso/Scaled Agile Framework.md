@@ -3,7 +3,7 @@ dia: 2023-11-28
 aliases:
   - SAFe
 tags:
-  - ingeniería-en-informática/aninfo/Desarrollo-de-software-y-modelos-de-proceso
+  - carrera/ingeniería-en-informática/aninfo/Desarrollo-de-software-y-modelos-de-proceso
   - nota/facultad
 ---
 # Definición

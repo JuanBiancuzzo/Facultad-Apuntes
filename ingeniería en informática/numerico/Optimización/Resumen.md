@@ -1,7 +1,7 @@
 ---
 capitulo: 6
 tags:
-  - ingeniería-en-informática/numerico/Optimización
+  - carrera/ingeniería-en-informática/numerico/Optimización
   - carrera/ingeniería-electrónica/numerico/Optimización
   - facultad/resumen
 nombreResumen: Optimización

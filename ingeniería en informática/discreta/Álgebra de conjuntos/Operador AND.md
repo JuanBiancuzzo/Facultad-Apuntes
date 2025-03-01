@@ -1,11 +1,11 @@
 ---
 dia: 2024-03-21
 tags:
-  - ingeniería-en-informática/bdd/SQL
+  - carrera/ingeniería-en-informática/bdd/SQL
   - nota/facultad
-  - ingeniería-en-informática/discreta/Álgebra-de-conjuntos
-  - ingeniería-en-informática/discreta/Álgebra-proposicional
-  - ingeniería-en-informática/analisis-2/Nomenclatura
+  - carrera/ingeniería-en-informática/discreta/Álgebra-de-conjuntos
+  - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
+  - carrera/ingeniería-en-informática/analisis-2/Nomenclatura
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
   - carrera/ingeniería-electrónica/analisis-2/Nomenclatura

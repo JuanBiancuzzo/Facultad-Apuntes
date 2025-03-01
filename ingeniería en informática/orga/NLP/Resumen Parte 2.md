@@ -1,7 +1,7 @@
 ---
 capitulo: 10
 tags:
-  - ingeniería-en-informática/orga/NLP/2
+  - carrera/ingeniería-en-informática/orga/NLP/2
   - facultad/resumen
 parte: 2
 nombreResumen: NLP

@@ -1,7 +1,7 @@
 ---
 dia: 2024-08-16
 tags:
-  - ingeniería-en-informática/discreta/Grafos
+  - carrera/ingeniería-en-informática/discreta/Grafos
   - nota/facultad
   - investigación/ciencias-de-la-computación/algoritmos
 aliases:

@@ -1,7 +1,7 @@
 ---
 dia: 2023-10-22
 tags:
-  - ingeniería-en-informática/aninfo/Requisitos-en-contexto
+  - carrera/ingeniería-en-informática/aninfo/Requisitos-en-contexto
   - nota/facultad
 ---
 # Definición

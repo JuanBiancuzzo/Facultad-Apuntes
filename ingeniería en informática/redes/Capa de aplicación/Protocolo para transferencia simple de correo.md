@@ -3,7 +3,7 @@ dia: 2024-05-29
 aliases:
   - SMTP
 tags:
-  - ingeniería-en-informática/redes/Capa-de-aplicación
+  - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
   - nota/facultad
   - investigación/protocolos/protocolo-de-internet
   - carrera/ingeniería-electrónica/redes/Capa-de-aplicación

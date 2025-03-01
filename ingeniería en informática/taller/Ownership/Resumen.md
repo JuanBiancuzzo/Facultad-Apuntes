@@ -1,7 +1,7 @@
 ---
 capitulo: 3
 tags:
-  - ingeniería-en-informática/taller/Ownership
+  - carrera/ingeniería-en-informática/taller/Ownership
   - carrera/ingeniería-electrónica/taller/Ownership
   - facultad/resumen
 nombreResumen: Ownership

@@ -16,7 +16,7 @@ tags:
   - biblioteca/paper
   - nota/investigacion
   - investigación/machine-Learning/Regularization
-  - ingeniería-en-informática/orga/Machine-learning
+  - carrera/ingeniería-en-informática/orga/Machine-learning
   - investigación/ciencias-de-la-computación/Machine-learning/Regularization
   - investigación/matemática/Estadística/Machine-learning/Regularization
 aliases:

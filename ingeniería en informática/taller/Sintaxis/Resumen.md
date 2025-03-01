@@ -1,7 +1,7 @@
 ---
 capitulo: 1
 tags:
-  - ingeniería-en-informática/taller/Sintaxis
+  - carrera/ingeniería-en-informática/taller/Sintaxis
   - carrera/ingeniería-electrónica/taller/Sintaxis
   - facultad/resumen
 nombreResumen: Sintaxis

@@ -1,7 +1,7 @@
 ---
 capitulo: 3
 tags:
-  - ingeniería-en-informática/sisop/Virtualización-de-memoria
+  - carrera/ingeniería-en-informática/sisop/Virtualización-de-memoria
   - facultad/resumen
 nombreResumen: Virtualización de memoria
 ---

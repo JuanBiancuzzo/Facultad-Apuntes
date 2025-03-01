@@ -1,7 +1,7 @@
 ---
 dia: 2023-09-04
 tags:
-  - ingeniería-en-informática/sisop/Kernel
+  - carrera/ingeniería-en-informática/sisop/Kernel
   - nota/facultad
 ---
 # Definición

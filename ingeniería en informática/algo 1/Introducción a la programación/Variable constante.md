@@ -1,9 +1,9 @@
 ---
 dia: 2024-07-27
 tags:
-  - ingeniería-en-informática/algo-1/Introducción-a-la-programación
+  - carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - nota/facultad
-  - ingeniería-en-informática/taller/Sintaxis
+  - carrera/ingeniería-en-informática/taller/Sintaxis
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación

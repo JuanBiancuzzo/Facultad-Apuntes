@@ -1,7 +1,7 @@
 ---
 dia: 2023-11-20
 tags:
-  - ingeniería-en-informática/sisop/Virtualización-de-memoria
+  - carrera/ingeniería-en-informática/sisop/Virtualización-de-memoria
   - nota/facultad
   - carrera/ingeniería-electrónica/embebidos/Memorias
 aliases:

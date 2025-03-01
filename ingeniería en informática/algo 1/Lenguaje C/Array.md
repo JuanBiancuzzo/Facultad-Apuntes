@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-28
 tags:
-  - ingeniería-en-informática/algo-1/Lenguaje-C
+  - carrera/ingeniería-en-informática/algo-1/Lenguaje-C
   - nota/facultad
   - data-structures
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c

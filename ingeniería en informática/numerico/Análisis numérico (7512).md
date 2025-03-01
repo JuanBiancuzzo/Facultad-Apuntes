@@ -4,7 +4,7 @@ estado: Falta pasar el resumen
 plan: "1986"
 codigo: "7512"
 tags:
-  - ingeniería-en-informática/numerico
+  - carrera/ingeniería-en-informática/numerico
   - facultad/materia
 etapa: empezado
 correlativas:

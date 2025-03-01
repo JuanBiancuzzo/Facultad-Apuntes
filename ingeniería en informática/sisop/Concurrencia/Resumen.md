@@ -1,7 +1,7 @@
 ---
 capitulo: 5
 tags:
-  - ingeniería-en-informática/sisop/Concurrencia
+  - carrera/ingeniería-en-informática/sisop/Concurrencia
   - facultad/resumen
 nombreResumen: Concurrencia
 ---

@@ -3,7 +3,7 @@ dia: 2023-08-25
 tags:
   - carrera/ingeniería-electrónica/dispo/Física-de-semiconductores
   - nota/facultad
-  - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - carrera/ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
   - carrera/ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
 aliases:
   - Velocidad de deriva

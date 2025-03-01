@@ -1,10 +1,10 @@
 ---
 dia: 2024-04-03
 tags:
-  - ingeniería-en-informática/algo-1/Introducción-a-la-programación
+  - carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - nota/facultad
   - investigación/matemática/teoría-de-la-información
-  - ingeniería-en-informática/orga/Compresión
+  - carrera/ingeniería-en-informática/orga/Compresión
   - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
 aliases:
   - Bit#Bit

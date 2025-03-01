@@ -1,7 +1,7 @@
 ---
 dia: 2023-04-03
 tags:
-  - ingeniería-en-informática/orga/Compresión
+  - carrera/ingeniería-en-informática/orga/Compresión
   - nota/facultad
   - investigación/matemática/teoría-de-la-información
 referencias:

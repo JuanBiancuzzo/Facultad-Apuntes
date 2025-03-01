@@ -1,7 +1,7 @@
 ---
 dia: 2024-09-02
 tags:
-  - ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
   - nota/facultad
   - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
 ---

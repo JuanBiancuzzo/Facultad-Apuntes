@@ -1,7 +1,7 @@
 ---
 capitulo: 10
 tags:
-  - ingeniería-en-informática/concurrentes/Elección-de-líder
+  - carrera/ingeniería-en-informática/concurrentes/Elección-de-líder
   - facultad/resumen
 nombreResumen: Elección de líder
 ---

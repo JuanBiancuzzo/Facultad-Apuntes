@@ -1,7 +1,7 @@
 ---
 dia: 2024-08-18
 tags:
-  - ingeniería-en-informática/redes/Capa-de-Red
+  - carrera/ingeniería-en-informática/redes/Capa-de-Red
   - nota/facultad
   - nota/investigacion
   - carrera/ingeniería-electrónica/redes/Capa-de-Red

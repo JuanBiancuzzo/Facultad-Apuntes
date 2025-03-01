@@ -3,7 +3,7 @@ dia: 2023-01-23
 aliases:
   - PPP
 tags:
-  - ingeniería-en-informática/proba/Proceso-de-Poisson
+  - carrera/ingeniería-en-informática/proba/Proceso-de-Poisson
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Proceso-de-Poisson
 ---

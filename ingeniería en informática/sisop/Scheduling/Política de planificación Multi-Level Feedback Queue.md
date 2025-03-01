@@ -3,7 +3,7 @@ dia: 2023-11-15
 aliases:
   - Política de planificación MLFQ
 tags:
-  - ingeniería-en-informática/sisop/Scheduling
+  - carrera/ingeniería-en-informática/sisop/Scheduling
   - nota/facultad
 ---
 # Definición

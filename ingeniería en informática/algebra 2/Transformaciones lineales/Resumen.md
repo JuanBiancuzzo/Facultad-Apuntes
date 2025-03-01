@@ -1,7 +1,7 @@
 ---
 capitulo: 2
 tags:
-  - ingeniería-en-informática/algebra-2/Transformaciones-lineales
+  - carrera/ingeniería-en-informática/algebra-2/Transformaciones-lineales
   - carrera/ingeniería-electrónica/algebra-2/Transformaciones-lineales
   - facultad/resumen
 nombreResumen: Transformaciones lineales

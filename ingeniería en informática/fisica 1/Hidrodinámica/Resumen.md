@@ -1,7 +1,7 @@
 ---
 capitulo: 4
 tags:
-  - ingeniería-en-informática/fisica-1/Hidrodinámica
+  - carrera/ingeniería-en-informática/fisica-1/Hidrodinámica
   - carrera/ingeniería-electrónica/fisica-1/Hidrodinámica
   - facultad/resumen
 nombreResumen: Hidrodinámica

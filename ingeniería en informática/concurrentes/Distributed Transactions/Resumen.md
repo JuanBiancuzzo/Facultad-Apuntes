@@ -1,7 +1,7 @@
 ---
 capitulo: 11
 tags:
-  - ingeniería-en-informática/concurrentes/Distributed-Transactions
+  - carrera/ingeniería-en-informática/concurrentes/Distributed-Transactions
   - facultad/resumen
 nombreResumen: Distributed Transactions
 ---

@@ -2,7 +2,7 @@
 capitulo: 4
 tags:
   - carrera/ingeniería-electrónica/adc/Circuitos-acoplados-magnéticamente
-  - ingeniería-en-informática/adc/Circuitos-acoplados-magnéticamente
+  - carrera/ingeniería-en-informática/adc/Circuitos-acoplados-magnéticamente
   - facultad/resumen
 nombreResumen: Circuitos acoplados magnéticamente
 ---

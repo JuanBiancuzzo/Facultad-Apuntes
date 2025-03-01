@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
   - carrera/ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
-  - ingeniería-en-informática/sisop/Kernel
+  - carrera/ingeniería-en-informática/sisop/Kernel
 aliases:
   - Excepción
 ---

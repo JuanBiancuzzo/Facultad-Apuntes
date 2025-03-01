@@ -1,9 +1,9 @@
 ---
 dia: 2024-08-05
 tags:
-  - ingeniería-en-informática/analisis-2/Nomenclatura
+  - carrera/ingeniería-en-informática/analisis-2/Nomenclatura
   - nota/facultad
-  - ingeniería-en-informática/discreta/Grafos
+  - carrera/ingeniería-en-informática/discreta/Grafos
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
   - carrera/ingeniería-electrónica/analisis-2/Nomenclatura
   - licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones

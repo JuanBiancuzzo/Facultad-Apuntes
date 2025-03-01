@@ -1,7 +1,7 @@
 ---
 dia: 2023-10-25
 tags:
-  - ingeniería-en-informática/aninfo/Prototipado-y-experiencia-del-usuario
+  - carrera/ingeniería-en-informática/aninfo/Prototipado-y-experiencia-del-usuario
   - nota/facultad
 aliases:
   - Proceso de diseño de UI

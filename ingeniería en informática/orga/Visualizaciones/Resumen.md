@@ -1,7 +1,7 @@
 ---
 capitulo: 2
 tags:
-  - ingeniería-en-informática/orga/Visualizaciones
+  - carrera/ingeniería-en-informática/orga/Visualizaciones
   - facultad/resumen
 nombreResumen: Visualizaciones
 ---

@@ -1,7 +1,7 @@
 ---
 dia: 2023-05-26
 tags:
-  - ingeniería-en-informática/orga/Machine-learning
+  - carrera/ingeniería-en-informática/orga/Machine-learning
   - nota/facultad
 referencias:
   - "514"

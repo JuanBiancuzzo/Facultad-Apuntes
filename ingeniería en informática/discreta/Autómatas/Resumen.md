@@ -1,7 +1,7 @@
 ---
 capitulo: 5
 tags:
-  - ingeniería-en-informática/discreta/Autómatas
+  - carrera/ingeniería-en-informática/discreta/Autómatas
   - facultad/resumen
 nombreResumen: Autómatas
 ---

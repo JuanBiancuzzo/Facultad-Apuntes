@@ -1,7 +1,7 @@
 ---
 dia: 2023-11-18
 tags:
-  - ingeniería-en-informática/sisop/La-abstracción-de-proceso
+  - carrera/ingeniería-en-informática/sisop/La-abstracción-de-proceso
   - nota/facultad
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c/System-call/Procesos-system-calls
 ---

@@ -1,7 +1,7 @@
 ---
 dia: 2024-05-10
 tags:
-  - ingeniería-en-informática/bdd/General
+  - carrera/ingeniería-en-informática/bdd/General
   - nota/facultad
 ---
 # Definición

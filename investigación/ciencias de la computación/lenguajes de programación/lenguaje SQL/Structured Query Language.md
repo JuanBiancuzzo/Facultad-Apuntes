@@ -18,7 +18,7 @@ Vamos a investigar como funciona el lenguaje SQL para guardar y procesar [[Base 
 
 ## Resumen
 ---
-#ingeniería-en-informática/bdd/General 
+#carrera/ingeniería-en-informática/bdd/General 
 Es un lenguaje de consultad estructurado, que permite acceder y manipular bases de datos. Se convirtió en un estándar del ANSI en 1986 y de ISO en 1987
 
 Puede hacer ![[SQL Keywords#Definición]]

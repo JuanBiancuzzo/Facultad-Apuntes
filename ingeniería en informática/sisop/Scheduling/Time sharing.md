@@ -1,7 +1,7 @@
 ---
 dia: 2023-08-23
 tags:
-  - ingeniería-en-informática/sisop/Scheduling
+  - carrera/ingeniería-en-informática/sisop/Scheduling
   - nota/facultad
 ---
 # Definición

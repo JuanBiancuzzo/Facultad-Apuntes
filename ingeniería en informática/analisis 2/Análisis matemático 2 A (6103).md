@@ -4,7 +4,7 @@ estado: Falta terminar de pasar el resumen
 plan: 1986
 codigo: "6103"
 tags:
-  - ingeniería-en-informática/analisis-2
+  - carrera/ingeniería-en-informática/analisis-2
   - facultad/materia
 etapa: empezado
 nombreMateria: Análisis matemático 2 A

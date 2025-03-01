@@ -1,7 +1,7 @@
 ---
 dia: 2024-08-06
 tags:
-  - ingeniería-en-informática/discreta/Álgebra-proposicional
+  - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
   - nota/facultad
 referencias:
   - "190"

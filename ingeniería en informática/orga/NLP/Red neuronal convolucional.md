@@ -1,7 +1,7 @@
 ---
 dia: 2023-08-12
 tags:
-  - ingeniería-en-informática/orga/NLP/2
+  - carrera/ingeniería-en-informática/orga/NLP/2
   - nota/facultad
   - investigación/machine-Learning/Deep-Learning
   - investigación/ciencias-de-la-computación/Machine-learning/Deep-Learning

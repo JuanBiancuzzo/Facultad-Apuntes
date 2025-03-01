@@ -3,12 +3,12 @@ dia: 2023-09-03
 tags:
   - carrera/ingeniería-electrónica/adc/Circuitos-en-regimen-de-corriente-continua
   - nota/facultad
-  - ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
-  - ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
+  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
   - carrera/ingeniería-electrónica/dispo/Física-de-semiconductores
   - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
   - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
-  - ingeniería-en-informática/adc/Circuitos-en-regimen-de-corriente-continua
+  - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-de-corriente-continua
 aliases:
   - Carga de polarización#Cargas de polarización
   - Portador de carga#Cargas libres

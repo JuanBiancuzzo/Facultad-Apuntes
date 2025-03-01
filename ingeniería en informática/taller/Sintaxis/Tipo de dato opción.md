@@ -1,7 +1,7 @@
 ---
 dia: 2023-03-16
 tags:
-  - ingeniería-en-informática/taller/Sintaxis
+  - carrera/ingeniería-en-informática/taller/Sintaxis
   - nota/facultad
   - lenguajes-de-programación/lenguaje-Rust
   - carrera/ingeniería-electrónica/taller/Sintaxis

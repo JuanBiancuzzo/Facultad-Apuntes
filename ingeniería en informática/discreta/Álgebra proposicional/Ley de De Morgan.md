@@ -1,9 +1,9 @@
 ---
 dia: 2024-08-06
 tags:
-  - ingeniería-en-informática/discreta/Álgebra-proposicional
+  - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
   - nota/facultad
-  - ingeniería-en-informática/discreta/Álgebra-de-Boole
+  - carrera/ingeniería-en-informática/discreta/Álgebra-de-Boole
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
   - licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
 referencias:

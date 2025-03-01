@@ -3,7 +3,7 @@ dia: 2024-12-23
 etapa: terminado
 referencias: 
 tags:
-  - ingeniería-en-informática/algo-1/Lenguaje-C
+  - carrera/ingeniería-en-informática/algo-1/Lenguaje-C
   - carrera/ingeniería-electrónica/algo-1/Lenguaje-C
   - nota/facultad
 ---

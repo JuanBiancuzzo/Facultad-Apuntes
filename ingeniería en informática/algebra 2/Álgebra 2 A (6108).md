@@ -4,7 +4,7 @@ estado: Falta terminar de pasar el resumen
 plan: "1986"
 codigo: "6108"
 tags:
-  - ingeniería-en-informática/algebra-2
+  - carrera/ingeniería-en-informática/algebra-2
   - facultad/materia
 etapa: empezado
 nombreMateria: Álgebra 2 A

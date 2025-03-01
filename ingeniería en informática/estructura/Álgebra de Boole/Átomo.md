@@ -3,9 +3,9 @@ dia: 2024-08-07
 tags:
   - nota/facultad
   - carrera/ingeniería-electrónica/fisica-3/Átomo-de-Bohr
-  - ingeniería-en-informática/discreta/Álgebra-de-Boole
-  - ingeniería-en-informática/estructura/Álgebra-de-Boole
-  - ingeniería-en-informática/fisica-3/Átomo-de-Bohr
+  - carrera/ingeniería-en-informática/discreta/Álgebra-de-Boole
+  - carrera/ingeniería-en-informática/estructura/Álgebra-de-Boole
+  - carrera/ingeniería-en-informática/fisica-3/Átomo-de-Bohr
   - carrera/ingeniería-electrónica/estructura/Álgebra-de-Boole
 ---
 # Definición

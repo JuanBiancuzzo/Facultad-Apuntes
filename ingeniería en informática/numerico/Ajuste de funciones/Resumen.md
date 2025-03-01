@@ -1,7 +1,7 @@
 ---
 capitulo: 3
 tags:
-  - ingeniería-en-informática/numerico/Ajuste-de-funciones
+  - carrera/ingeniería-en-informática/numerico/Ajuste-de-funciones
   - carrera/ingeniería-electrónica/numerico/Ajuste-de-funciones
   - facultad/resumen
 nombreResumen: Ajuste de funciones

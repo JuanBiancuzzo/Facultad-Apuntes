@@ -2,7 +2,7 @@
 capitulo: 3
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Series
-  - ingeniería-en-informática/analisis-3/Series
+  - carrera/ingeniería-en-informática/analisis-3/Series
   - facultad/resumen
 nombreResumen: Series
 ---

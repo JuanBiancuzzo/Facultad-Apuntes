@@ -1,7 +1,7 @@
 ---
 dia: 2023-03-22
 tags:
-  - ingeniería-en-informática/taller/Ownership
+  - carrera/ingeniería-en-informática/taller/Ownership
   - nota/facultad
   - lenguajes-de-programación/lenguaje-Rust
   - carrera/ingeniería-electrónica/taller/Ownership

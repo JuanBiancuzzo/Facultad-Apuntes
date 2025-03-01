@@ -3,7 +3,7 @@ dia: 2023-01-23
 tags:
   - carrera/ingeniería-electrónica/intro/Circuitos-con-resistencias
   - nota/facultad
-  - ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
+  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
   - carrera/ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
   - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
 aliases:

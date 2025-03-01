@@ -1,10 +1,10 @@
 ---
 dia: 2023-01-22
 tags:
-  - ingeniería-en-informática/algebra-2/Transformaciones-lineales
+  - carrera/ingeniería-en-informática/algebra-2/Transformaciones-lineales
   - nota/facultad
-  - ingeniería-en-informática/discreta/Álgebra-de-Boole
-  - ingeniería-en-informática/discreta/Grafos
+  - carrera/ingeniería-en-informática/discreta/Álgebra-de-Boole
+  - carrera/ingeniería-en-informática/discreta/Grafos
   - carrera/ingeniería-electrónica/algebra-2/Transformaciones-lineales
 referencias:
   - "192"

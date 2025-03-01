@@ -2,7 +2,7 @@
 capitulo: 8
 tags:
   - carrera/ingeniería-electrónica/fisica-3/Pozos-de-potencial
-  - ingeniería-en-informática/fisica-3/Pozos-de-potencial
+  - carrera/ingeniería-en-informática/fisica-3/Pozos-de-potencial
   - facultad/resumen
 nombreResumen: Pozos de potencial
 ---

@@ -1,7 +1,7 @@
 ---
 capitulo: 5
 tags:
-  - ingeniería-en-informática/redes/Capa-de-Enlace
+  - carrera/ingeniería-en-informática/redes/Capa-de-Enlace
   - carrera/ingeniería-electrónica/redes/Capa-de-Enlace
   - facultad/resumen
 referencias:

@@ -3,7 +3,7 @@ dia: 2023-10-22
 aliases:
   - MVC
 tags:
-  - ingeniería-en-informática/aninfo/Diseño-de-software
+  - carrera/ingeniería-en-informática/aninfo/Diseño-de-software
   - nota/facultad
 ---
 # Definición

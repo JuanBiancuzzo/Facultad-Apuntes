@@ -1,9 +1,9 @@
 ---
 dia: 2023-01-23
 tags:
-  - ingeniería-en-informática/proba/Representación-de-variables-aleatorias
+  - carrera/ingeniería-en-informática/proba/Representación-de-variables-aleatorias
   - nota/facultad
-  - ingeniería-en-informática/orga/Machine-learning
+  - carrera/ingeniería-en-informática/orga/Machine-learning
   - investigación/machine-Learning
   - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
   - investigación/ciencias-de-la-computación/Machine-learning

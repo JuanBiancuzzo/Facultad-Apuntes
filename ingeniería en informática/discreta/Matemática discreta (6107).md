@@ -4,7 +4,7 @@ codigo: 6107
 plan: 1986
 estado: Terminado
 tags:
-  - ingeniería-en-informática/discreta
+  - carrera/ingeniería-en-informática/discreta
   - facultad/materia
 etapa: terminado
 nombreMateria: Matemática discreta

@@ -1,9 +1,9 @@
 ---
 dia: 2024-03-19
 tags:
-  - ingeniería-en-informática/redes/Capa-de-aplicación
+  - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
   - nota/facultad
-  - ingeniería-en-informática/redes/Redes-de-computadoras
+  - carrera/ingeniería-en-informática/redes/Redes-de-computadoras
   - carrera/ingeniería-electrónica/redes/Capa-de-aplicación
   - carrera/ingeniería-electrónica/redes/Redes-de-computadoras
 aliases:

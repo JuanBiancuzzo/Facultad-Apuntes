@@ -2,7 +2,7 @@
 capitulo: 15
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Transformada-de-Fourier
-  - ingeniería-en-informática/analisis-3/Transformada-de-Fourier
+  - carrera/ingeniería-en-informática/analisis-3/Transformada-de-Fourier
   - facultad/resumen
 nombreResumen: Transformada de Fourier
 ---

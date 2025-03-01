@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-27
 tags:
-  - ingeniería-en-informática/algo-1/Introducción-a-la-programación
+  - carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - nota/facultad
   - lenguajes-de-programación
   - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación

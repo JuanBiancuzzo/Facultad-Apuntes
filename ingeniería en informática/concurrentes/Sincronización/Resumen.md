@@ -1,7 +1,7 @@
 ---
 capitulo: 5
 tags:
-  - ingeniería-en-informática/concurrentes/Sincronización
+  - carrera/ingeniería-en-informática/concurrentes/Sincronización
   - facultad/resumen
 nombreResumen: Sincronización
 ---

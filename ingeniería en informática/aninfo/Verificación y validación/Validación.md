@@ -1,7 +1,7 @@
 ---
 dia: 2023-08-27
 tags:
-  - ingeniería-en-informática/aninfo/Verificación-y-validación
+  - carrera/ingeniería-en-informática/aninfo/Verificación-y-validación
   - nota/facultad
 ---
 # Definición

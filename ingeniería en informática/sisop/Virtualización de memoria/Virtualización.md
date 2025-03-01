@@ -1,7 +1,7 @@
 ---
 dia: 2023-11-12
 tags:
-  - ingeniería-en-informática/sisop/Virtualización-de-memoria
+  - carrera/ingeniería-en-informática/sisop/Virtualización-de-memoria
   - nota/facultad
   - investigación/ciencias-de-la-computación/sistemas-operativos
 referencias:

@@ -4,9 +4,9 @@ aliases:
   - CPU
   - Microprocesador
 tags:
-  - ingeniería-en-informática/algo-1/Introducción-a-la-programación
+  - carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - nota/facultad
-  - ingeniería-en-informática/sisop/Kernel
+  - carrera/ingeniería-en-informática/sisop/Kernel
   - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
   - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación

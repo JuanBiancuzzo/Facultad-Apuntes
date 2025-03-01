@@ -1,7 +1,7 @@
 ---
 capitulo: 8
 tags:
-  - ingeniería-en-informática/aninfo/Diseño-de-software
+  - carrera/ingeniería-en-informática/aninfo/Diseño-de-software
   - facultad/resumen
 nombreResumen: Diseño de software
 ---

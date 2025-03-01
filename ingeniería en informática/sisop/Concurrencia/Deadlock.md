@@ -1,7 +1,7 @@
 ---
 dia: 2023-03-29
 tags:
-  - ingeniería-en-informática/sisop/Concurrencia
+  - carrera/ingeniería-en-informática/sisop/Concurrencia
   - nota/facultad
 ---
 # Definición

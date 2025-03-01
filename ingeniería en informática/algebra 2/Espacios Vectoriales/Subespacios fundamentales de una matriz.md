@@ -5,7 +5,7 @@ aliases:
   - Espacio columna
   - Espacio fila
 tags:
-  - ingeniería-en-informática/algebra-2/Espacios-Vectoriales
+  - carrera/ingeniería-en-informática/algebra-2/Espacios-Vectoriales
   - nota/facultad
   - carrera/ingeniería-electrónica/algebra-2/Espacios-Vectoriales
 ---

@@ -1,7 +1,7 @@
 ---
 capitulo: 2
 tags:
-  - ingeniería-en-informática/bdd/SQL
+  - carrera/ingeniería-en-informática/bdd/SQL
   - facultad/resumen
 nombreResumen: SQL
 ---

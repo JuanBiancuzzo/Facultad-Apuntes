@@ -3,7 +3,7 @@ dia: 2023-11-08
 aliases:
   - VFS
 tags:
-  - ingeniería-en-informática/sisop/File-system
+  - carrera/ingeniería-en-informática/sisop/File-system
   - nota/facultad
 ---
 # Definición

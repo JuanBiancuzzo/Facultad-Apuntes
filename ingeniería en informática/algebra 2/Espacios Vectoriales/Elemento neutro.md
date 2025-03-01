@@ -1,9 +1,9 @@
 ---
 dia: 2023-04-08
 tags:
-  - ingeniería-en-informática/algebra-2/Espacios-Vectoriales
+  - carrera/ingeniería-en-informática/algebra-2/Espacios-Vectoriales
   - nota/facultad
-  - ingeniería-en-informática/discreta/Álgebra-proposicional
+  - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
   - carrera/ingeniería-electrónica/algebra-2/Espacios-Vectoriales
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
   - licenciatura-en-ciencias-de-datos/algebra-1/Números-enteros

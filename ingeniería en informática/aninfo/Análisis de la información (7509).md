@@ -4,7 +4,7 @@ estado: Terminado
 plan: "1986"
 codigo: "7509"
 tags:
-  - ingeniería-en-informática/aninfo
+  - carrera/ingeniería-en-informática/aninfo
   - facultad/materia
 etapa: terminado
 correlativas:

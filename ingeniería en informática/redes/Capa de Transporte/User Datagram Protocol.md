@@ -3,7 +3,7 @@ dia: 2024-03-19
 aliases:
   - UDP
 tags:
-  - ingeniería-en-informática/redes/Capa-de-Transporte
+  - carrera/ingeniería-en-informática/redes/Capa-de-Transporte
   - nota/facultad
   - investigación/protocolos/protocolo-de-internet
   - carrera/ingeniería-electrónica/redes/Capa-de-Transporte

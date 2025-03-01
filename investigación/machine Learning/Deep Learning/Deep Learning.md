@@ -17,7 +17,7 @@ Vamos a ver la rama de [[investigación/machine Learning/Machine learning|machin
 
 ## Resumen
 ---
-#ingeniería-en-informática/orga/Machine-learning 
+#carrera/ingeniería-en-informática/orga/Machine-learning 
 Es una [[Red neuronal|red neuronal]] que tiene varias capas de [[Neurona|neuronas]]
 
 Leer

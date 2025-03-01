@@ -2,7 +2,7 @@
 capitulo: 5
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Transformaciones-conformes
-  - ingeniería-en-informática/analisis-3/Transformaciones-conformes
+  - carrera/ingeniería-en-informática/analisis-3/Transformaciones-conformes
   - facultad/resumen
 nombreResumen: Transformaciones conformes
 ---

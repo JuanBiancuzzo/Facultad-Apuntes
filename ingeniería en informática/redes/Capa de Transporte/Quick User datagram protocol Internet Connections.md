@@ -4,7 +4,7 @@ aliases:
   - Quick UDP Internet Connections
   - QUIC
 tags:
-  - ingeniería-en-informática/redes/Capa-de-Transporte
+  - carrera/ingeniería-en-informática/redes/Capa-de-Transporte
   - nota/facultad
   - investigación/protocolos/protocolo-de-internet
   - carrera/ingeniería-electrónica/redes/Capa-de-Transporte

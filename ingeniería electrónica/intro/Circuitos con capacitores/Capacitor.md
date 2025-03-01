@@ -3,8 +3,8 @@ dia: 2023-01-23
 tags:
   - carrera/ingeniería-electrónica/intro/Circuitos-con-capacitores
   - nota/facultad
-  - ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
-  - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - carrera/ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
   - carrera/ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
   - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
 aliases:

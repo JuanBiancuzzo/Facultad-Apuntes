@@ -1,7 +1,7 @@
 ---
 dia: 2023-04-29
 tags:
-  - ingeniería-en-informática/estructura/Registros-y-contadores
+  - carrera/ingeniería-en-informática/estructura/Registros-y-contadores
   - nota/facultad
   - carrera/ingeniería-electrónica/estructura/Registros-y-contadores
 ---

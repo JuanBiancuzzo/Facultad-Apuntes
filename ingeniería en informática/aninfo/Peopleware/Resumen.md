@@ -1,7 +1,7 @@
 ---
 capitulo: 12
 tags:
-  - ingeniería-en-informática/aninfo/Peopleware
+  - carrera/ingeniería-en-informática/aninfo/Peopleware
   - facultad/resumen
 nombreResumen: Peopleware
 ---

@@ -2,7 +2,7 @@
 capitulo: 2
 tags:
   - carrera/ingeniería-electrónica/adc/Circuitos-en-regimen-transitorio
-  - ingeniería-en-informática/adc/Circuitos-en-regimen-transitorio
+  - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-transitorio
   - facultad/resumen
 nombreResumen: Circuitos en regimen transitorio
 ---

@@ -1,7 +1,7 @@
 ---
 capitulo: 3
 tags:
-  - ingeniería-en-informática/aninfo/Descubrimiento-de-requisitos
+  - carrera/ingeniería-en-informática/aninfo/Descubrimiento-de-requisitos
   - facultad/resumen
 nombreResumen: Descubrimiento de requisitos
 ---

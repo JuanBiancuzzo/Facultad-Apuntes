@@ -6,7 +6,7 @@ referencias:
   - "196"
 tags:
   - nota/investigacion
-  - ingeniería-en-informática/orga/Compresión
+  - carrera/ingeniería-en-informática/orga/Compresión
   - investigación/matemática/encoding/lossless-compression-encoding
   - investigación/ciencias-de-la-computación/algoritmos
 aliases:

@@ -1,7 +1,7 @@
 ---
 capitulo: 6
 tags:
-  - ingeniería-en-informática/sisop/File-system
+  - carrera/ingeniería-en-informática/sisop/File-system
   - facultad/resumen
 nombreResumen: File system
 ---

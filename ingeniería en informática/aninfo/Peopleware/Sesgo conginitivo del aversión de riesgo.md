@@ -1,7 +1,7 @@
 ---
 dia: 2023-11-28
 tags:
-  - ingeniería-en-informática/aninfo/Peopleware
+  - carrera/ingeniería-en-informática/aninfo/Peopleware
   - nota/facultad
 ---
 # Definición

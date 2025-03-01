@@ -1,7 +1,7 @@
 ---
 plan: 1986
 tags:
-  - ingeniería-en-informática/analisis-3
+  - carrera/ingeniería-en-informática/analisis-3
   - facultad/materia
 correlativas:
   - "[[Análisis matemático 2 A (6103)|Análisis matemático 2]]"

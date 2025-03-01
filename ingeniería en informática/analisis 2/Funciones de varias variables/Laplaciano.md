@@ -1,11 +1,11 @@
 ---
 dia: 2024-09-05
 tags:
-  - ingeniería-en-informática/analisis-2/Funciones-de-varias-variables
+  - carrera/ingeniería-en-informática/analisis-2/Funciones-de-varias-variables
   - nota/facultad
   - carrera/ingeniería-electrónica/analisis-3/Ecuaciones-diferenciales
   - carrera/ingeniería-electrónica/analisis-2/Funciones-de-varias-variables
-  - ingeniería-en-informática/analisis-3/Ecuaciones-diferenciales
+  - carrera/ingeniería-en-informática/analisis-3/Ecuaciones-diferenciales
 aliases:
   - Operador de Laplace
 ---

@@ -1,7 +1,7 @@
 ---
 dia: 2024-08-26
 tags:
-  - ingeniería-en-informática/redes/Capa-de-Enlace
+  - carrera/ingeniería-en-informática/redes/Capa-de-Enlace
   - nota/facultad
   - investigación/protocolos/protocolo-de-internet
   - carrera/ingeniería-electrónica/redes/Capa-de-Enlace

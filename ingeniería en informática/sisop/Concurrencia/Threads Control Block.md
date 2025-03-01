@@ -3,7 +3,7 @@ dia: 2023-11-12
 aliases:
   - TCB
 tags:
-  - ingeniería-en-informática/sisop/Concurrencia
+  - carrera/ingeniería-en-informática/sisop/Concurrencia
   - nota/facultad
 ---
 # Definición

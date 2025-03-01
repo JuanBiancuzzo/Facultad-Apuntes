@@ -1,9 +1,9 @@
 ---
 dia: 2024-08-22
 tags:
-  - ingeniería-en-informática/redes/Capa-de-Enlace
+  - carrera/ingeniería-en-informática/redes/Capa-de-Enlace
   - nota/facultad
-  - ingeniería-en-informática/estructura/Sistemas-numéricos
+  - carrera/ingeniería-en-informática/estructura/Sistemas-numéricos
   - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
   - carrera/ingeniería-electrónica/estructura/Sistemas-numéricos
   - carrera/ingeniería-electrónica/redes/Capa-de-Enlace

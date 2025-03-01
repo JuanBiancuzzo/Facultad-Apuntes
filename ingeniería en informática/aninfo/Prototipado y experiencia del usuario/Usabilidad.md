@@ -1,7 +1,7 @@
 ---
 dia: 2023-08-26
 tags:
-  - ingeniería-en-informática/aninfo/Prototipado-y-experiencia-del-usuario
+  - carrera/ingeniería-en-informática/aninfo/Prototipado-y-experiencia-del-usuario
   - nota/facultad
 ---
 # Definición

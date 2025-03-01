@@ -22,8 +22,8 @@ Vamos a explorar como funciona un compilador, y nos vamos a basar en la serie
 
 ## Resumen
 ---
-#ingeniería-en-informática/sisop/La-abstracción-de-proceso #ingeniería-en-informática/algo-1/Introducción-a-la-programación #carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
-#ingeniería-en-informática/estructura/Compiladores-y-ensambladores #carrera/ingeniería-electrónica/estructura/Compiladores-y-ensambladores #carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración 
+#carrera/ingeniería-en-informática/sisop/La-abstracción-de-proceso #carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación #carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
+#carrera/ingeniería-en-informática/estructura/Compiladores-y-ensambladores #carrera/ingeniería-electrónica/estructura/Compiladores-y-ensambladores #carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración 
 Hay distintos tipos de compiladores
 * Compiladores de una sola pasada o múltiples pasadas  ^compilador-pasadas
     * Completa el procesa en uno o varios recorridos del programa fuente

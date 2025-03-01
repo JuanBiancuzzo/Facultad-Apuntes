@@ -1,7 +1,7 @@
 ---
 capitulo: 2
 tags:
-  - ingeniería-en-informática/distribuidos/Fundamentos-de-Sistemas-Distribuidos
+  - carrera/ingeniería-en-informática/distribuidos/Fundamentos-de-Sistemas-Distribuidos
   - facultad/resumen
 nombreResumen: Fundamentos de Sistemas Distribuidos
 ---

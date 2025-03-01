@@ -1,9 +1,9 @@
 ---
 dia: 2024-08-07
 tags:
-  - ingeniería-en-informática/discreta/Autómatas
+  - carrera/ingeniería-en-informática/discreta/Autómatas
   - nota/facultad
-  - ingeniería-en-informática/estructura/Sistema-ARC
+  - carrera/ingeniería-en-informática/estructura/Sistema-ARC
   - carrera/ingeniería-electrónica/estructura/Sistema-ARC
   - curso/introduction-to-algorithms/Introduction
 aliases:

@@ -1,7 +1,7 @@
 ---
 capitulo: 2
 tags:
-  - ingeniería-en-informática/aninfo/Ingeniería-de-requisitos
+  - carrera/ingeniería-en-informática/aninfo/Ingeniería-de-requisitos
   - facultad/resumen
 nombreResumen: Ingeniería de requisitos
 ---

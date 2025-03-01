@@ -1,7 +1,7 @@
 ---
 dia: 2023-03-20
 tags:
-  - ingeniería-en-informática/orga/Visualizaciones
+  - carrera/ingeniería-en-informática/orga/Visualizaciones
   - nota/facultad
 ---
 # Definición

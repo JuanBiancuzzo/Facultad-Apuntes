@@ -3,7 +3,7 @@ dia: 2022-09-22
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Funciones-elementales
   - nota/facultad
-  - ingeniería-en-informática/analisis-3/Funciones-elementales
+  - carrera/ingeniería-en-informática/analisis-3/Funciones-elementales
 ---
 # Definción
 ---

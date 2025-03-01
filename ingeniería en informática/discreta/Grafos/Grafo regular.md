@@ -1,7 +1,7 @@
 ---
 dia: 2024-08-09
 tags:
-  - ingeniería-en-informática/discreta/Grafos
+  - carrera/ingeniería-en-informática/discreta/Grafos
   - nota/facultad
 aliases:
   - Grafo casi regular

@@ -3,7 +3,7 @@ dia: 2022-09-23
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Series
   - nota/facultad
-  - ingeniería-en-informática/analisis-3/Series
+  - carrera/ingeniería-en-informática/analisis-3/Series
 referencias: 
 etapa: empezado
 ---

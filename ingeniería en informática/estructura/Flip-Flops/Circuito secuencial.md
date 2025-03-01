@@ -1,7 +1,7 @@
 ---
 dia: 2023-04-28
 tags:
-  - ingeniería-en-informática/estructura/Flip-Flops
+  - carrera/ingeniería-en-informática/estructura/Flip-Flops
   - nota/facultad
   - carrera/ingeniería-electrónica/estructura/Flip-Flops
 ---

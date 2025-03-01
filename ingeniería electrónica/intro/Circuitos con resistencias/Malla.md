@@ -3,7 +3,7 @@ dia: 2023-01-23
 tags:
   - carrera/ingeniería-electrónica/intro/Circuitos-con-resistencias
   - nota/facultad
-  - ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
   - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
 ---
 # Definición
