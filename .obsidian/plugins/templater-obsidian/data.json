@@ -31,7 +31,8 @@
   "enabled_templates_hotkeys": [
     "_template/referencias/Referencia - Template.md",
     "_template/referencias/Editar referencia - Template.md",
-    "_template/coleccion/Bloque Matematica - Template.md"
+    "_template/coleccion/Bloque Matematica - Template.md",
+    "_template/Cambiar etapa.md"
   ],
   "startup_templates": [
     "_template/startup.md"
