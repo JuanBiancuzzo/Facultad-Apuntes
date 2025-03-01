@@ -9,7 +9,7 @@ articulo:
     texto: Cuando las inclusiones de obras ajenas sean la parte principal de la nueva obra, podrán los tribunales fijar equitativamente en juicio sumario la cantidad proporcional que les corresponde a los titulares de los derechos de las obras incluidas.
 previo: "[[Regimen legal de la propiedad intelectual|Regimen legal de la propiedad intelectual]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

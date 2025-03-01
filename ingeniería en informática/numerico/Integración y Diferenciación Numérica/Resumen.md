@@ -2,7 +2,7 @@
 capitulo: 5
 tags:
   - ingeniería-en-informática/numerico/Integración-y-Diferenciación-Numérica
-  - ingeniería-electrónica/numerico/Integración-y-Diferenciación-Numérica
+  - carrera/ingeniería-electrónica/numerico/Integración-y-Diferenciación-Numérica
   - facultad/resumen
 nombreResumen: Integración y Diferenciación Numérica
 ---

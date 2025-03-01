@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/estructura/Álgebra-de-Boole
   - ingeniería-en-informática/discreta/Álgebra-de-Boole
-  - ingeniería-electrónica/estructura/Álgebra-de-Boole
+  - carrera/ingeniería-electrónica/estructura/Álgebra-de-Boole
 aliases:
   - Puerta lógica
 referencias:

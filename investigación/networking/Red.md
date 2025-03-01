@@ -21,7 +21,7 @@ Leer
 
 ## Resumen
 ---
-#ingeniería-electrónica/redes/Redes-de-computadoras #ingeniería-en-informática/redes/Redes-de-computadoras 
+#carrera/ingeniería-electrónica/redes/Redes-de-computadoras #ingeniería-en-informática/redes/Redes-de-computadoras 
 Los dispositivos conectados a [[Internet|internet]] a menudo se designan como [[Host|hosts]], porque se sitúan en la frontera de Internet, en los extremos de la comunicación.
 
 Se lo puede entender de dos formas

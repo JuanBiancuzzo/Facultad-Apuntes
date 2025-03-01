@@ -1,7 +1,7 @@
 ---
 dia: 2024-05-29
 tags:
-  - ingeniería-electrónica/señales/Transformadas-de-Laplace-y-Z
+  - carrera/ingeniería-electrónica/señales/Transformadas-de-Laplace-y-Z
   - nota/facultad
 ---
 # Definición

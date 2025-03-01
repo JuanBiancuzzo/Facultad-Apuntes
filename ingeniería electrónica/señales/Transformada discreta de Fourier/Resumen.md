@@ -1,7 +1,7 @@
 ---
 capitulo: 6
 tags:
-  - ingeniería-electrónica/señales/Transformada-discreta-de-Fourier
+  - carrera/ingeniería-electrónica/señales/Transformada-discreta-de-Fourier
   - facultad/resumen
 nombreResumen: Transformada discreta de Fourier
 ---

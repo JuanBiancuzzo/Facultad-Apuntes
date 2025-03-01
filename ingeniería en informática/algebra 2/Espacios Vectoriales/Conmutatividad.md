@@ -7,7 +7,7 @@ tags:
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
   - ingeniería-en-informática/discreta/Álgebra-de-Boole
   - ingeniería-en-informática/discreta/Álgebra-de-conjuntos
-  - ingeniería-electrónica/algebra-2/Espacios-Vectoriales
+  - carrera/ingeniería-electrónica/algebra-2/Espacios-Vectoriales
   - licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
   - licenciatura-en-ciencias-de-datos/algebra-1/Números-enteros

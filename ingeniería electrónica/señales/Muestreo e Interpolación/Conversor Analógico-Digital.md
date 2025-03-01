@@ -1,10 +1,10 @@
 ---
 dia: 2024-04-16
 tags:
-  - ingeniería-electrónica/señales/Muestreo-e-Interpolación
+  - carrera/ingeniería-electrónica/señales/Muestreo-e-Interpolación
   - nota/facultad
-  - ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
-  - ingeniería-electrónica/embebidos/Conversión-analógica-a-digital-y-digital-a-analógica
+  - carrera/ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
+  - carrera/ingeniería-electrónica/embebidos/Conversión-analógica-a-digital-y-digital-a-analógica
   - investigación/placa-de-Desarrollo/placa-de-desarrollo-Nucleo-64/placa-STM32-F302R8
 aliases:
   - Conversor A/D

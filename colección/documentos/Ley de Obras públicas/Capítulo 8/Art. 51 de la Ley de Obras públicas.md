@@ -18,7 +18,7 @@ articulo:
         texto: Sin perjuicio de las sanciones dispuestas en esta ley, el contratista que se encuentre comprendido en el caso del inciso a) del artículo anterior perderá además la fianza rendida.
 previo: "[[Capítulo 8, De la rescisión del contrato|Capítulo 8, De la rescisión del contrato]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

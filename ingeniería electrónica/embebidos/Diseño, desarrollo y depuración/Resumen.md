@@ -1,7 +1,7 @@
 ---
 capitulo: 1
 tags:
-  - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
+  - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - facultad/resumen
 nombreResumen: Diseño, desarrollo y depuración
 ---

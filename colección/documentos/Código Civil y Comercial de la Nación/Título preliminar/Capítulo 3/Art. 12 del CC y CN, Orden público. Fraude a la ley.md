@@ -8,7 +8,7 @@ articulo:
     texto: El acto respecto del cual se invoque el amparo de un texto legal, que persiga un resultado sustancialmente análogo al prohibido por una norma imperativa, se considera otorgado en fraude a la ley. En ese caso, el acto debe someterse a la norma imperativa que se trata de eludir.
 previo: "[[Capítulo 3, Ejercicio de los derechos|Capítulo 3, Ejercicio de los derechos]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

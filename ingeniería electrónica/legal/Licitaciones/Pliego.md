@@ -1,7 +1,7 @@
 ---
 dia: 2024-02-13
 tags:
-  - ingeniería-electrónica/legal/Licitaciones
+  - carrera/ingeniería-electrónica/legal/Licitaciones
   - nota/facultad
 ---
 # Definición

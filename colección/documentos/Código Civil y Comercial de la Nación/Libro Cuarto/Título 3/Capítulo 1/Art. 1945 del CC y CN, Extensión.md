@@ -12,7 +12,7 @@ articulo:
     texto: Se presume que las construcciones, siembras o plantaciones las hizo el dueño del inmueble, si no se prueba lo contrario.
 previo: "[[colección/documentos/Código Civil y Comercial de la Nación/Libro Cuarto/Título 3/Capítulo 1/Capítulo 1, Disposiciones generales|Capítulo 1, Disposiciones generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

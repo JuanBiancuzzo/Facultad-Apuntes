@@ -1,7 +1,7 @@
 ---
 capitulo: 6
 tags:
-  - ingeniería-electrónica/adc/Cuadripolos
+  - carrera/ingeniería-electrónica/adc/Cuadripolos
   - ingeniería-en-informática/adc/Cuadripolos
   - facultad/resumen
 nombreResumen: Cuadripolos

@@ -6,7 +6,7 @@ articulo:
     texto: Las cláusulas ambiguas predispuestas por una de las partes se interpretan en sentido contrario a la parte predisponente.
 previo: "[[Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas|Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

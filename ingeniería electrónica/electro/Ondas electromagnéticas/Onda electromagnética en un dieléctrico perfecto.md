@@ -1,7 +1,7 @@
 ---
 dia: 2024-09-12
 tags:
-  - ingeniería-electrónica/electro/Ondas-electromagnéticas-en-el-vacío
+  - carrera/ingeniería-electrónica/electro/Ondas-electromagnéticas-en-el-vacío
   - nota/facultad
 aliases:
   - Onda electromagnética en un dieléctrico sin pérdidas

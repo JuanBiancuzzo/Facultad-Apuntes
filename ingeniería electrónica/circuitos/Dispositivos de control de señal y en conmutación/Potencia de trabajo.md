@@ -1,7 +1,7 @@
 ---
 dia: 2024-04-21
 tags:
-  - ingeniería-electrónica/circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
+  - carrera/ingeniería-electrónica/circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
   - nota/facultad
 aliases:
   - Bajo nivel de potencia#Bajo nivel de potencia

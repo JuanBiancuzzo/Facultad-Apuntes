@@ -6,7 +6,7 @@ articulo:
     texto: Los derechos deben ser ejercidos de buena fe.
 previo: "[[Capítulo 3, Ejercicio de los derechos|Capítulo 3, Ejercicio de los derechos]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

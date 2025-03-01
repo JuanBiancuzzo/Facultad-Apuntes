@@ -1,7 +1,7 @@
 ---
 dia: 2024-02-28
 tags:
-  - ingeniería-electrónica/dispo/Dispositivos-de-potencia
+  - carrera/ingeniería-electrónica/dispo/Dispositivos-de-potencia
   - nota/facultad
 ---
 # Definición

@@ -1,11 +1,11 @@
 ---
 dia: 2022-09-12
 tags:
-  - ingeniería-electrónica/analisis-3/Funciones-elementales
+  - carrera/ingeniería-electrónica/analisis-3/Funciones-elementales
   - nota/facultad
   - ingeniería-en-informática/analisis-3/Funciones-elementales
-  - ingeniería-electrónica/señales/Sistemas-LTI
-  - ingeniería-electrónica/señales/Transformada-discreta-de-Fourier
+  - carrera/ingeniería-electrónica/señales/Sistemas-LTI
+  - carrera/ingeniería-electrónica/señales/Transformada-discreta-de-Fourier
 ---
 # Definición
 ---

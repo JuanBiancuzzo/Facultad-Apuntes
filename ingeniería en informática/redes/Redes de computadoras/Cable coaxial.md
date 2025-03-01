@@ -4,9 +4,9 @@ etapa: empezado
 referencias: []
 tags:
   - ingeniería-en-informática/redes/Redes-de-computadoras
-  - ingeniería-electrónica/redes/Redes-de-computadoras
+  - carrera/ingeniería-electrónica/redes/Redes-de-computadoras
   - nota/facultad
-  - ingeniería-electrónica/electro/Ondas-confinadas
+  - carrera/ingeniería-electrónica/electro/Ondas-confinadas
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

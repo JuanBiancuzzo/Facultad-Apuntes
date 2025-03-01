@@ -10,7 +10,7 @@ articulo:
     texto: Tales conductas, además de las sanciones previstas en la presente ley, podrán ser pasibles de la multa civil establecida en el artículo 52 bis de la presente norma, sin perjuicio de otros resarcimientos que correspondieren al consumidor, siendo ambas penalidades extensivas solidariamente a quien actuare en nombre del proveedor.
 previo: "[[Capítulo 3, Condiciones de la oferta y venta|Capítulo 3, Condiciones de la oferta y venta]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 esBis: true
 ---
 # Artículo

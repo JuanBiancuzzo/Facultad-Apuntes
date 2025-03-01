@@ -1,7 +1,7 @@
 ---
 dia: 2024-03-26
 tags:
-  - ingeniería-electrónica/señales/Serie-de-Fourier
+  - carrera/ingeniería-electrónica/señales/Serie-de-Fourier
   - nota/facultad
 ---
 # Definición

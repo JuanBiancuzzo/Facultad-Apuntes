@@ -8,7 +8,7 @@ articulo:
     texto: La revocación debe disponerse por resolución fundada y conforme a un procedimiento reglado que garantice el derecho de defensa de la persona jurídica. La resolución es apelable, pudiendo el juez disponer la suspensión provisional de sus efectos.
 previo: "[[Parágrafo 3, Disolución. Liquidación|Parágrafo 3, Disolución. Liquidación]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

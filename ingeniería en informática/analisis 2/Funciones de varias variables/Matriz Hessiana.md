@@ -3,7 +3,7 @@ dia: 2023-01-22
 tags:
   - nota/facultad
   - ingeniería-en-informática/analisis-2/Funciones-de-varias-variables
-  - ingeniería-electrónica/analisis-2/Funciones-de-varias-variables
+  - carrera/ingeniería-electrónica/analisis-2/Funciones-de-varias-variables
 aliases:
   - Determinante Hessiano
 ---

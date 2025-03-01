@@ -3,7 +3,7 @@ dia: 2024-03-20
 aliases:
   - Sistemas descriptos por ecuaciones en diferencias
 tags:
-  - ingeniería-electrónica/señales/Sistemas-LTI
+  - carrera/ingeniería-electrónica/señales/Sistemas-LTI
   - nota/facultad
 ---
 # Definición

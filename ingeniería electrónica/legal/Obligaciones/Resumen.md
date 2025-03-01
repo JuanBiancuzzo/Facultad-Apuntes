@@ -1,7 +1,7 @@
 ---
 capitulo: 2
 tags:
-  - ingeniería-electrónica/legal/Obligaciones
+  - carrera/ingeniería-electrónica/legal/Obligaciones
   - facultad/resumen
 nombreResumen: Obligaciones
 ---

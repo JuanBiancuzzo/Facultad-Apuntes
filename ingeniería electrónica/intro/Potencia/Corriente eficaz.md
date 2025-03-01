@@ -1,7 +1,7 @@
 ---
 dia: 2023-11-16
 tags:
-  - ingeniería-electrónica/intro/Potencia
+  - carrera/ingeniería-electrónica/intro/Potencia
   - nota/facultad
 ---
 # Definición

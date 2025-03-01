@@ -4,7 +4,7 @@ tags:
   - ingeniería-en-informática/taller/Ownership
   - nota/facultad
   - lenguajes-de-programación/lenguaje-Rust
-  - ingeniería-electrónica/taller/Ownership
+  - carrera/ingeniería-electrónica/taller/Ownership
 ---
 # Definición
 ---

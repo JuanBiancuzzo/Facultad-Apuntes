@@ -3,7 +3,7 @@ dia: 2023-11-17
 aliases:
   - Respuesta al impulso
 tags:
-  - ingeniería-electrónica/señales/Sistemas-LTI
+  - carrera/ingeniería-electrónica/señales/Sistemas-LTI
   - nota/facultad
 ---
 # Definición

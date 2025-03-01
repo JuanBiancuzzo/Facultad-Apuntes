@@ -1,7 +1,7 @@
 ---
 plan: 2009
 tags:
-  - ingeniería-electrónica/estructura
+  - carrera/ingeniería-electrónica/estructura
   - facultad/materia
 correlativas:
   - "[[ingeniería electrónica/intro/Introducción a la ingeniería electronica (8602).md|Introducción a la ingeniería electronica]]"

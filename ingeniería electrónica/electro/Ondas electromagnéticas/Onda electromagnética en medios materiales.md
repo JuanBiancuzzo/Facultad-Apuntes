@@ -1,7 +1,7 @@
 ---
 dia: 2024-09-24
 tags:
-  - ingeniería-electrónica/electro/Ondas-electromagnéticas-en-el-vacío
+  - carrera/ingeniería-electrónica/electro/Ondas-electromagnéticas-en-el-vacío
   - nota/facultad
 aliases:
   - Factor de propagación de una onda electromagnética#^factor

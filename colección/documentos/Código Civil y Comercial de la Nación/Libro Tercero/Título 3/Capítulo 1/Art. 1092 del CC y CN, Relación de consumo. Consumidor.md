@@ -8,7 +8,7 @@ articulo:
     texto: Queda equiparado al consumidor quien, sin ser parte de una relación de consumo como consecuencia o en ocasión de ella, adquiere o utiliza bienes o servicios, en forma gratuita u onerosa, como destinatario final, en beneficio propio o de su grupo familiar o social.
 previo: "[[Capítulo 1, Relación de consumo|Capítulo 1, Relación de consumo]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 aliases:
   - Consumidor
 ---

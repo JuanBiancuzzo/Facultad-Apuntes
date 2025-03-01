@@ -3,8 +3,8 @@ dia: 2024-09-03
 tags:
   - ingeniería-en-informática/fisica-2/Inducción-electromagnética
   - nota/facultad
-  - ingeniería-electrónica/adc/Circuitos-acoplados-magnéticamente
-  - ingeniería-electrónica/fisica-2/Inducción-electromagnética
+  - carrera/ingeniería-electrónica/adc/Circuitos-acoplados-magnéticamente
+  - carrera/ingeniería-electrónica/fisica-2/Inducción-electromagnética
   - ingeniería-en-informática/adc/Circuitos-acoplados-magnéticamente
 aliases:
   - Diafonía

@@ -6,7 +6,7 @@ articulo:
     texto: Las partes, en ningún caso, pueden pactar condiciones menos favorables para el trabajador que las dispuestas en las normas legales, convenciones colectivas de trabajo o laudo con fuerza de tales, o que resulten contrarias a las mismas. Tales actos llevan aparejada la sanción prevista en el artículo 44 de esta ley.
 previo: "[[colección/documentos/Ley de Contrato de Trabajo/Título 1/Título 1, Disposiciones Generales|Título 1, Disposiciones Generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

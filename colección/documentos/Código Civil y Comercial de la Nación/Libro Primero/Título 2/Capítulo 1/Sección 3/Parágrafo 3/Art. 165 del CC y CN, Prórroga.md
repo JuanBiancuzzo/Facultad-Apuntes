@@ -13,7 +13,7 @@ articulo:
         texto: presentación ante la autoridad de contralor que corresponda, antes del vencimiento del plazo.
 previo: "[[Parágrafo 3, Disolución. Liquidación|Parágrafo 3, Disolución. Liquidación]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

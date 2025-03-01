@@ -5,7 +5,7 @@ articulo:
     texto: "Las penas que este Código establece son las siguientes: reclusión, prisión, multa e inhabilitación."
 previo: "[[Título 2, De las penas|Título 2, De las penas]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

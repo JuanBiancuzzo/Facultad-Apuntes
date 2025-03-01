@@ -6,7 +6,7 @@ articulo:
     texto: El dominio es exclusivo y no puede tener más de un titular. Quien adquiere la cosa por un título, no puede en adelante adquirirla por otro, si no es por lo que falta al título.
 previo: "[[colección/documentos/Código Civil y Comercial de la Nación/Libro Cuarto/Título 3/Capítulo 1/Capítulo 1, Disposiciones generales|Capítulo 1, Disposiciones generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

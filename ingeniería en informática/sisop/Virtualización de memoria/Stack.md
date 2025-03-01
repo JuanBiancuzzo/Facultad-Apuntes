@@ -3,7 +3,7 @@ dia: 2023-11-20
 tags:
   - ingeniería-en-informática/sisop/Virtualización-de-memoria
   - nota/facultad
-  - ingeniería-electrónica/embebidos/Memorias
+  - carrera/ingeniería-electrónica/embebidos/Memorias
   - data-structures
   - lenguajes-de-programación/Lenguaje-Python/Pandas
   - ingeniería-en-informática/orga/Pandas

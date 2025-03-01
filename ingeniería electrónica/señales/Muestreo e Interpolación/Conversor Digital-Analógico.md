@@ -1,9 +1,9 @@
 ---
 dia: 2024-04-23
 tags:
-  - ingeniería-electrónica/señales/Muestreo-e-Interpolación
+  - carrera/ingeniería-electrónica/señales/Muestreo-e-Interpolación
   - nota/facultad
-  - ingeniería-electrónica/embebidos/Conversión-analógica-a-digital-y-digital-a-analógica
+  - carrera/ingeniería-electrónica/embebidos/Conversión-analógica-a-digital-y-digital-a-analógica
 aliases:
   - Conversor D/A
   - Digital to analog converter

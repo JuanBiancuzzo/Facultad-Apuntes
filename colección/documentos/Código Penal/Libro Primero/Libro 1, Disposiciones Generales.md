@@ -4,7 +4,7 @@ nombre: Disposiciones Generales
 num: 1
 previo: "[[Código Penal|Código Penal]]"
 tags:
-  - ingeniería-electrónica/legal/Libro
+  - carrera/ingeniería-electrónica/legal/Libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

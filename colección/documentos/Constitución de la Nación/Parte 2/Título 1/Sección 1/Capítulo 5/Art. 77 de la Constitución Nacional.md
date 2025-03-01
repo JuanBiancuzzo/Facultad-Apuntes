@@ -7,7 +7,7 @@ articulo:
     texto: Los proyectos de ley que modifiquen el régimen electoral y de partidos políticos deberán ser aprobados por mayoría absoluta del total de los miembros de las Cámaras.
 previo: "[[Capítulo 5, De la formación y sanción de las leyes|Capítulo 5, De la formación y sanción de las leyes]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

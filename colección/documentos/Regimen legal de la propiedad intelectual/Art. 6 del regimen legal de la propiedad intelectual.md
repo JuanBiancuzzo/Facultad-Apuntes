@@ -9,7 +9,7 @@ articulo:
     texto: En estos casos, si entre el tercero editor y los herederos o derechohabientes no hubiera acuerdo sobre las condiciones de impresión o la retribución pecuniaria, ambas serán fijadas por árbitros.
 previo: "[[Regimen legal de la propiedad intelectual|Regimen legal de la propiedad intelectual]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

@@ -6,7 +6,7 @@ articulo:
     texto: Las cláusulas particulares son aquellas que, negociadas individualmente, amplían, limitan, suprimen o interpretan una cláusula general. En caso de in-compatibilidad entre cláusulas generales y particulares, prevalecen estas últimas.
 previo: "[[Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas|Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

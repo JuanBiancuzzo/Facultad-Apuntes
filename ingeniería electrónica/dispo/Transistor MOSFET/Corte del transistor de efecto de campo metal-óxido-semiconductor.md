@@ -3,7 +3,7 @@ dia: 2023-11-10
 aliases:
   - Corte del MOSFET
 tags:
-  - ingeniería-electrónica/dispo/Transistor-MOSFET
+  - carrera/ingeniería-electrónica/dispo/Transistor-MOSFET
   - nota/facultad
 ---
 # Definición

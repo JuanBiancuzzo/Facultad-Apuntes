@@ -12,7 +12,7 @@ articulo:
     texto: Los plazos de vigencia de la oferta comienzan a correr desde la fecha de su recepción, excepto que contenga una previsión diferente.
 previo: "[[Sección 1, Consentimiento, oferta y aceptación|Sección 1, Consentimiento, oferta y aceptación]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

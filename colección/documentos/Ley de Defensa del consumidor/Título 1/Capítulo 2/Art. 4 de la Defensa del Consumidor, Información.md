@@ -8,7 +8,7 @@ articulo:
     texto: La información debe ser siempre gratuita para el consumidor y proporcionada en soporte físico, con claridad necesaria que permita su comprensión. Solo se podrá suplantar la comunicación en soporte físico si el consumidor o usuario optase de forma expresa por utilizar cualquier otro medio alternativo de comunicación que el proveedor ponga a disposición.
 previo: "[[Capítulo 2, Información al consumidor y protección de su salud|Capítulo 2, Información al consumidor y protección de su salud]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

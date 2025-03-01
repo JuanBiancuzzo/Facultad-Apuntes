@@ -3,7 +3,7 @@ dia: 2023-01-22
 tags:
   - ingeniería-en-informática/algebra-2/Espacios-Vectoriales
   - nota/facultad
-  - ingeniería-electrónica/algebra-2/Espacios-Vectoriales
+  - carrera/ingeniería-electrónica/algebra-2/Espacios-Vectoriales
 aliases:
   - Producto por escalar
 ---

@@ -6,7 +6,7 @@ articulo:
     texto: La nulidad del contrato por ilicitud o prohibición de su objeto tendrá las consecuencias asignadas en los artículos 41 y 42 de esta ley y deberá ser declarada por los jueces, aun sin mediar petición de parte. La autoridad administrativa, en los límites de su competencia, mandará cesar los actos que lleven aparejados tales vicios.
 previo: "[[Capítulo 4, Del objeto del contrato de trabajo|Capítulo 4, Del objeto del contrato de trabajo]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

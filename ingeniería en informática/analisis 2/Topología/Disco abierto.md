@@ -2,9 +2,9 @@
 dia: 2023-01-22
 tags:
   - nota/facultad
-  - ingeniería-electrónica/analisis-3/Topología-del-plano-complejo-y-límites
+  - carrera/ingeniería-electrónica/analisis-3/Topología-del-plano-complejo-y-límites
   - ingeniería-en-informática/analisis-2/Topología/1
-  - ingeniería-electrónica/analisis-2/Topología/1
+  - carrera/ingeniería-electrónica/analisis-2/Topología/1
   - ingeniería-en-informática/analisis-3/Topología-del-plano-complejo-y-límites
   - licenciatura-en-ciencias-matemáticas/analisis-1/Vectores-y-geometría-del-espacio
   - licenciatura-en-ciencias-de-datos/analisis-1/Vectores-y-geometría-del-espacio

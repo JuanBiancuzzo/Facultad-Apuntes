@@ -2,7 +2,7 @@
 capitulo: 8
 tags:
   - ingeniería-en-informática/proba/Proceso-de-Poisson
-  - ingeniería-electrónica/proba/Proceso-de-Poisson
+  - carrera/ingeniería-electrónica/proba/Proceso-de-Poisson
   - facultad/resumen
 nombreResumen: Proceso de Poisson
 ---

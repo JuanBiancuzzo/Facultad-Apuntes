@@ -25,7 +25,7 @@ articulo:
         texto: la extinción del contrato deja subsistentes las estipulaciones referidas a las restituciones, a la reparación de daños, a la solución de las controversias y a cualquiera otra que regule los derechos y obligaciones de las partes tras la extinción.
 previo: "[[Capítulo 13, Extinción modificación y adecuación del contrato|Capítulo 13, Extinción modificación y adecuación del contrato]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

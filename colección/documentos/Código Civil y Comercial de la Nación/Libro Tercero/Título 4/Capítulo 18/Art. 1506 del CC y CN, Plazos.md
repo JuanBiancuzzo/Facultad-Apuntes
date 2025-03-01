@@ -10,7 +10,7 @@ articulo:
     texto: La continuación de la relación después de vencido el plazo determinado por el contrato o por la ley, sin especificarse antes el nuevo plazo, lo transforma en contrato por tiempo indeterminado.
 previo: "[[Capítulo 18, Concesión|Capítulo 18, Concesión]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

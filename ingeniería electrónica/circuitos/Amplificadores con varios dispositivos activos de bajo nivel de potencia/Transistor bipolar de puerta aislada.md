@@ -4,10 +4,10 @@ aliases:
   - Insulated-gate bipolar transistor
   - IGBT
 tags:
-  - ingeniería-electrónica/circuitos/Amplificadores-con-varios-dispositivos-activos-de-bajo-nivel-de-potencia
+  - carrera/ingeniería-electrónica/circuitos/Amplificadores-con-varios-dispositivos-activos-de-bajo-nivel-de-potencia
   - nota/facultad
-  - ingeniería-electrónica/dispo/Transistor-MOSFET
-  - ingeniería-electrónica/dispo/Transistor-bipolar-de-juntura
+  - carrera/ingeniería-electrónica/dispo/Transistor-MOSFET
+  - carrera/ingeniería-electrónica/dispo/Transistor-bipolar-de-juntura
 ---
 # Definición
 ---

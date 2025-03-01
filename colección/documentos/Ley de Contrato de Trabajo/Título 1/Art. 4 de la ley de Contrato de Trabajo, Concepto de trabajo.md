@@ -8,7 +8,7 @@ articulo:
     texto: El contrato de trabajo tiene como principal objeto la actividad productiva y creadora del hombre en sí. Sólo después ha de entenderse que media entre las partes una relación de intercambio y un fin económico en cuanto se disciplina por esta ley.
 previo: "[[colección/documentos/Ley de Contrato de Trabajo/Título 1/Título 1, Disposiciones Generales|Título 1, Disposiciones Generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

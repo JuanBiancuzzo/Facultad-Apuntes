@@ -1,7 +1,7 @@
 ---
 dia: 2023-11-26
 tags:
-  - ingeniería-electrónica/dispo/Transistor-MOSFET
+  - carrera/ingeniería-electrónica/dispo/Transistor-MOSFET
   - nota/facultad
 ---
 # Definición

@@ -19,7 +19,7 @@ articulo:
     texto: La cláusula que impide la competencia del franquiciado con la comercialización de productos o servicios propios o de terceros después de extinguido el contrato por cualquier causa, es válida hasta el plazo máximo de un año y dentro de un territorio razonable habida cuenta de las circunstancias.
 previo: "[[Capítulo 19, Franquicia|Capítulo 19, Franquicia]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

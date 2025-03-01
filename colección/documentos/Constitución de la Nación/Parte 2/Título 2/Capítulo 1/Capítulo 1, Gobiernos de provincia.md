@@ -4,7 +4,7 @@ nombre: Gobiernos de provincia
 num: 1
 previo: "[[Título 2, Gobiernos de provincia|Título 2, Gobiernos de provincia]]"
 tags:
-  - ingeniería-electrónica/legal/Capítulo
+  - carrera/ingeniería-electrónica/legal/Capítulo
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

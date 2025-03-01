@@ -17,7 +17,7 @@ articulo:
         texto: las disposiciones correspondientes a los contratos nominados afines que son compatibles y se adecuan a su finalidad.
 previo: "[[Capítulo 2, Clasificación de los contratos|Capítulo 2, Clasificación de los contratos]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

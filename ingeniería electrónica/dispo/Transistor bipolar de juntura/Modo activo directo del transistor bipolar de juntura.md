@@ -4,7 +4,7 @@ aliases:
   - MAD del TBJ
   - Modo activo directo del TBJ
 tags:
-  - ingeniería-electrónica/dispo/Transistor-bipolar-de-juntura
+  - carrera/ingeniería-electrónica/dispo/Transistor-bipolar-de-juntura
   - nota/facultad
 ---
 # Definición

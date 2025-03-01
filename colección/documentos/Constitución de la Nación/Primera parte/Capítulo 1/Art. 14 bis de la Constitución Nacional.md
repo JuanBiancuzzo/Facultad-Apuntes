@@ -10,7 +10,7 @@ articulo:
     texto: "El Estado otorgará los beneficios de la seguridad social, que tendrá carácter de integral e irrenunciable. En especial, la ley establecerá: el seguro social obligatorio, que estará a cargo de entidades nacionales o provinciales con autonomía financiera y económica, administradas por los interesados con participación del Estado, sin que pueda existir superposición de aportes; jubilaciones y pensiones móviles; la protección integral de la familia; la defensa del bien de familia; la compensación económica familiar y el acceso a una vivienda digna."
 previo: "[[Capítulo 1, Declaraciones derechos y garantías|Capítulo 1, Declaraciones derechos y garantías]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

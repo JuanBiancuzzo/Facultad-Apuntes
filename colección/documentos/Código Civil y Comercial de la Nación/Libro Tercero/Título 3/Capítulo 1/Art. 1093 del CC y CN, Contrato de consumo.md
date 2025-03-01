@@ -6,7 +6,7 @@ articulo:
     texto: Contrato de consumo es el celebrado entre un consumidor o usuario final con una persona humana o jurídica que actúe profesional u ocasionalmente o con una empresa productora de bienes o prestadora de servicios, pública o privada, que tenga por objeto la adquisición, uso o goce de los bienes o servicios por parte de los consumidores o usuarios, para su uso privado, familiar o social.
 previo: "[[Capítulo 1, Relación de consumo|Capítulo 1, Relación de consumo]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

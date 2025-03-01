@@ -6,8 +6,8 @@ tags:
   - ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
-  - ingeniería-electrónica/algo-1/Introducción-a-la-programación
-  - ingeniería-electrónica/taller/Sintaxis
+  - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
+  - carrera/ingeniería-electrónica/taller/Sintaxis
 aliases:
   - Tipo de dato estructurado
 ---

@@ -12,7 +12,7 @@ articulo:
     texto: Si algo es debido a la persona menor de edad con cláusula de no poder percibirlo hasta la mayoría de edad, la emancipación no altera la obligación ni el tiempo de su exigibilidad.
 previo: "[[Sección 2, Persona menor de edad|Sección 2, Persona menor de edad]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

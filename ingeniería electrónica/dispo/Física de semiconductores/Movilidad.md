@@ -1,10 +1,10 @@
 ---
 dia: 2023-08-25
 tags:
-  - ingeniería-electrónica/dispo/Física-de-semiconductores
+  - carrera/ingeniería-electrónica/dispo/Física-de-semiconductores
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
-  - ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - carrera/ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
 ---
 # Definición
 ---

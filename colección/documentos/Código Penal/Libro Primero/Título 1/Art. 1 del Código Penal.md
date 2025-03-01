@@ -14,7 +14,7 @@ articulo:
         texto: Por el delito previsto en el artículo 258 bis cometido en el extranjero, por ciudadanos argentinos o personas jurídicas con domicilio en la República Argentina, ya sea aquel fijado en sus estatutos o el correspondiente a los establecimientos o sucursales que posea en el territorio argentino.
 previo: "[[Título 1, Aplicación de la ley penal|Título 1, Aplicación de la ley penal]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

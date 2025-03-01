@@ -3,7 +3,7 @@ dia: 2024-11-15
 etapa: empezado
 referencias: 
 tags:
-  - ingeniería-electrónica/electro/Ondas-confinadas
+  - carrera/ingeniería-electrónica/electro/Ondas-confinadas
   - nota/facultad
 aliases:
   - Ecuaciones del telegrafista#^ecuaciones-telegrafista

@@ -1,7 +1,7 @@
 ---
 capitulo: 7
 tags:
-  - ingeniería-electrónica/dispo/Amplificador-emisor-y-source-común
+  - carrera/ingeniería-electrónica/dispo/Amplificador-emisor-y-source-común
   - facultad/resumen
 nombreResumen: Amplificador emisor y source común
 ---

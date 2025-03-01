@@ -1,7 +1,7 @@
 ---
 capitulo: 10
 tags:
-  - ingeniería-electrónica/analisis-3/Integrales-impropias
+  - carrera/ingeniería-electrónica/analisis-3/Integrales-impropias
   - ingeniería-en-informática/analisis-3/Integrales-impropias
   - facultad/resumen
 nombreResumen: Integrales impropias

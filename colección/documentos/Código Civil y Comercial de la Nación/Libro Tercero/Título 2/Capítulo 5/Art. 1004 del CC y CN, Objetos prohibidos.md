@@ -6,7 +6,7 @@ articulo:
     texto: No pueden ser objeto de los contratos los hechos que son imposibles o están prohibidos por las leyes, son contrarios a la moral, al orden público, a la dignidad de la persona humana, o lesivos de los derechos ajenos; ni los bienes que por un motivo especial se prohíbe que lo sean. Cuando tengan por objeto derechos sobre el cuerpo humano se aplican los artículos 17 y 56.
 previo: "[[Capítulo 5, Objeto|Capítulo 5, Objeto]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

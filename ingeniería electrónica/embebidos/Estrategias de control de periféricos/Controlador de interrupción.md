@@ -1,9 +1,9 @@
 ---
 dia: 2024-09-10
 tags:
-  - ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
+  - carrera/ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
   - nota/facultad
-  - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
+  - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
 aliases:
   - Controlador de interrupción vectorial anidado#Para ARM Cortex-M
   - NVIC#Para ARM Cortex-M

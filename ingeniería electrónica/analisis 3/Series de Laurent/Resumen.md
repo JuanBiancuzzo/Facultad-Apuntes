@@ -1,7 +1,7 @@
 ---
 capitulo: 8
 tags:
-  - ingeniería-electrónica/analisis-3/Series-de-Laurent
+  - carrera/ingeniería-electrónica/analisis-3/Series-de-Laurent
   - ingeniería-en-informática/analisis-3/Series-de-Laurent
   - facultad/resumen
 nombreResumen: Series de Laurent

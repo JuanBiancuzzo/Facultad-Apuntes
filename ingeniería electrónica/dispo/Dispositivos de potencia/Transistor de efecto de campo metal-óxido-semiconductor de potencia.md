@@ -3,7 +3,7 @@ dia: 2024-02-27
 aliases:
   - MOSFET de potencia
 tags:
-  - ingeniería-electrónica/dispo/Dispositivos-de-potencia
+  - carrera/ingeniería-electrónica/dispo/Dispositivos-de-potencia
   - nota/facultad
 ---
 # Definición

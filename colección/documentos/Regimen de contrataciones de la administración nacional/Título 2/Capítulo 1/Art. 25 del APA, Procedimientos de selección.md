@@ -54,7 +54,7 @@ articulo:
     texto: En los supuestos de contratación previstos en los apartados 2 y 8 del presente inciso, las Universidades Nacionales tendrán el carácter de consultoras preferenciales.
 previo: "[[Capítulo 1, Contrataciones de bienes y servicios|Capítulo 1, Contrataciones de bienes y servicios]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

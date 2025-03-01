@@ -6,7 +6,7 @@ articulo:
     texto: Cada condómino, conjunta o individualmente, puede usar y gozar de la cosa común sin alterar su destino. No puede deteriorarla en su propio interés u obstaculizar el ejercicio de iguales facultades por los restantes condóminos.
 previo: "[[colección/documentos/Código Civil y Comercial de la Nación/Libro Cuarto/Título 4/Capítulo 1/Capítulo 1, Disposiciones generales|Capítulo 1, Disposiciones generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

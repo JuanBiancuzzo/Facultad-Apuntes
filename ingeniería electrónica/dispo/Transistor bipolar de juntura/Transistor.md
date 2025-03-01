@@ -1,7 +1,7 @@
 ---
 dia: 2023-08-23
 tags:
-  - ingeniería-electrónica/dispo/Transistor-bipolar-de-juntura
+  - carrera/ingeniería-electrónica/dispo/Transistor-bipolar-de-juntura
   - nota/facultad
 ---
 # Definición

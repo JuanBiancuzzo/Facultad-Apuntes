@@ -1,9 +1,9 @@
 ---
 dia: 2022-12-04
 tags:
-  - ingeniería-electrónica/analisis-3/Transformada-de-Laplace
+  - carrera/ingeniería-electrónica/analisis-3/Transformada-de-Laplace
   - nota/facultad
-  - ingeniería-electrónica/señales/Transformadas-de-Laplace-y-Z
+  - carrera/ingeniería-electrónica/señales/Transformadas-de-Laplace-y-Z
   - ingeniería-en-informática/analisis-3/Transformada-de-Laplace
 ---
 # Definición

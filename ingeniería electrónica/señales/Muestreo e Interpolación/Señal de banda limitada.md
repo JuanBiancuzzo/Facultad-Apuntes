@@ -1,7 +1,7 @@
 ---
 dia: 2024-04-16
 tags:
-  - ingeniería-electrónica/señales/Muestreo-e-Interpolación
+  - carrera/ingeniería-electrónica/señales/Muestreo-e-Interpolación
   - nota/facultad
 ---
 # Definición

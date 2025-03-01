@@ -4,7 +4,7 @@ tags:
   - ingeniería-en-informática/analisis-2/Nomenclatura
   - nota/facultad
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
-  - ingeniería-electrónica/analisis-2/Nomenclatura
+  - carrera/ingeniería-electrónica/analisis-2/Nomenclatura
   - licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
 referencias:
   - "183"

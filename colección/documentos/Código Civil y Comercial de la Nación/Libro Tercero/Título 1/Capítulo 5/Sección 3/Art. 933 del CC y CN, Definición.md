@@ -6,7 +6,7 @@ articulo:
     texto: La novación es la extinción de una obligación por la creación de otra nueva, destinada a reemplazarla.
 previo: "[[Sección 3, Novación|Sección 3, Novación]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

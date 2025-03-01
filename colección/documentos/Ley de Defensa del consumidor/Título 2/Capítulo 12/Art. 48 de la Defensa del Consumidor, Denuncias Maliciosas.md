@@ -6,7 +6,7 @@ articulo:
     texto: Quienes presentaren denuncias maliciosas o sin justa causa ante la autoridad de aplicación, serán sancionados según lo previsto en los incisos a) y b) del artículo anterior, sin perjuicio de las que pudieren corresponder por aplicación de las normas civiles y penales.
 previo: "[[Capítulo 12, Procedimientos y sanciones|Capítulo 12, Procedimientos y sanciones]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

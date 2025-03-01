@@ -4,7 +4,7 @@ nombre: Autoridad de aplicación procedimiento y sanciones
 num: 2
 previo: "[[Ley de Defensa del consumidor|Ley de Defensa del consumidor]]"
 tags:
-  - ingeniería-electrónica/legal/Título
+  - carrera/ingeniería-electrónica/legal/Título
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

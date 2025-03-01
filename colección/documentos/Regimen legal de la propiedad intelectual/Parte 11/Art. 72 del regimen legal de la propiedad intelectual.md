@@ -16,7 +16,7 @@ articulo:
         texto: El que edite o reproduzca mayor número de los ejemplares debidamente autorizados.
 previo: "[[Parte 11, De las penas|Parte 11, De las penas]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

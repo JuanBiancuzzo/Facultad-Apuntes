@@ -1,7 +1,7 @@
 ---
 capitulo: 4
 tags:
-  - ingeniería-electrónica/intro/Respuesta-en-frecuencia
+  - carrera/ingeniería-electrónica/intro/Respuesta-en-frecuencia
   - facultad/resumen
 nombreResumen: Respuesta en frecuencia
 ---

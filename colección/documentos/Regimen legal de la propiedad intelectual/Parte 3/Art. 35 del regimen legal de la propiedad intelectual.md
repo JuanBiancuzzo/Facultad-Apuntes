@@ -7,7 +7,7 @@ articulo:
     texto: Para la publicación de una carta, el consentimiento no es necesario después de transcurridos 20 años de la muerte del autor de la carta. Esto aún en el caso de que la carta sea objeto de protección como obra, en virtud de la presente Ley.
 previo: "[[Parte 3, Disposiciones especiales|Parte 3, Disposiciones especiales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

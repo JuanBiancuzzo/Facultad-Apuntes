@@ -4,7 +4,7 @@ aliases:
   - Interpolador de banda limitada
   - Interpolador de orden k
 tags:
-  - ingeniería-electrónica/señales/Muestreo-e-Interpolación
+  - carrera/ingeniería-electrónica/señales/Muestreo-e-Interpolación
   - nota/facultad
 ---
 # Definición

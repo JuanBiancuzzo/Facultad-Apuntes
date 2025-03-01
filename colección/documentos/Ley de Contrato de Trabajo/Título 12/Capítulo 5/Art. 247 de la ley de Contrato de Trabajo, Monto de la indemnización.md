@@ -8,7 +8,7 @@ articulo:
     texto: En tales casos el despido deberá comenzar por el personal menos antiguo dentro de cada especialidad.  Respecto del personal ingresado en un mismo semestre, deberá comenzarse por el que tuviere menos cargas de familia, aunque con ello se alterara el orden de antigüedad.
 previo: "[[Capítulo 5, De la extinción del contrato de trabajo por fuerza mayor o por falta o disminución de trabajo|Capítulo 5, De la extinción del contrato de trabajo por fuerza mayor o por falta o disminución de trabajo]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

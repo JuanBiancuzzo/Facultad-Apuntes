@@ -8,7 +8,7 @@ articulo:
     texto: Los contratos que sea de uso instrumentar no pueden ser probados exclusivamente por testigos.
 previo: "[[Capítulo 8, Prueba|Capítulo 8, Prueba]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

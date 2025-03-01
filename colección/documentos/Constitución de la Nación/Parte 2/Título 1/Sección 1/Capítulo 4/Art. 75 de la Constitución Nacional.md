@@ -109,7 +109,7 @@ articulo:
         texto: Hacer todas las leyes y reglamentos que sean convenientes para poner en ejercicio los poderes antecedentes, y todos los otros concedidos por la presente Constitución al Gobierno de la Nación Argentina.
 previo: "[[Capítulo 4, Atribuciones del Congreso|Capítulo 4, Atribuciones del Congreso]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

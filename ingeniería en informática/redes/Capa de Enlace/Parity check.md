@@ -4,9 +4,9 @@ tags:
   - ingeniería-en-informática/redes/Capa-de-Enlace
   - nota/facultad
   - ingeniería-en-informática/estructura/Sistemas-numéricos
-  - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
-  - ingeniería-electrónica/estructura/Sistemas-numéricos
-  - ingeniería-electrónica/redes/Capa-de-Enlace
+  - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
+  - carrera/ingeniería-electrónica/estructura/Sistemas-numéricos
+  - carrera/ingeniería-electrónica/redes/Capa-de-Enlace
 aliases:
   - Paridad
   - Forward error correction

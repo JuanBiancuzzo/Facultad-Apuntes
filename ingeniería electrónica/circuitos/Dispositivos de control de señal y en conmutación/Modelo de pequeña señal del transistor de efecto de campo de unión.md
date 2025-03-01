@@ -11,7 +11,7 @@ aliases:
   - Conductancia de salida para transistor de efecto de campo de unión#Conductancia de salida
   - Conductancia de salida para JFET#Conductancia de salida
 tags:
-  - ingeniería-electrónica/circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
+  - carrera/ingeniería-electrónica/circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
   - nota/facultad
 ---
 # Definición

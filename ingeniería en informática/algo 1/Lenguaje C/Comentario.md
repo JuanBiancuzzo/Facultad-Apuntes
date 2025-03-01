@@ -6,7 +6,7 @@ tags:
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-zig
-  - ingeniería-electrónica/algo-1/Lenguaje-C
+  - carrera/ingeniería-electrónica/algo-1/Lenguaje-C
 ---
 # Definición
 ---

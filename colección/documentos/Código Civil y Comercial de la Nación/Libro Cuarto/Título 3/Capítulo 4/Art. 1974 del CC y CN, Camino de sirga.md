@@ -8,7 +8,7 @@ articulo:
     texto: Todo perjudicado puede pedir que se remuevan los efectos de los actos violatorios de este artículo.
 previo: "[[Capítulo 4, Límites al dominio|Capítulo 4, Límites al dominio]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

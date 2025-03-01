@@ -6,7 +6,7 @@ articulo:
     texto: Los casos que este Código rige deben ser resueltos según las leyes que resulten aplicables, conforme con la Constitución Nacional y los tratados de derechos humanos en los que la República sea parte. A tal efecto, se tendrá en cuenta la finalidad de la norma. Los usos, prácticas y costumbres son vinculantes cuando las leyes o los interesados se refieren a ellos o en situaciones no regladas legalmente, siempre que no sean contrarios a derecho.
 previo: "[[Capítulo 1, Derecho|Capítulo 1, Derecho]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

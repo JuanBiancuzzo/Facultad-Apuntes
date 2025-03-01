@@ -6,7 +6,7 @@ articulo:
     texto: El objeto del acto jurídico no debe ser un hecho imposible o prohibido por la ley, contrario a la moral, a las buenas costumbres, al orden público o lesivo de los derechos ajenos o de la dignidad humana. Tampoco puede ser un bien que por un motivo especial se haya prohibido que lo sea.
 previo: "[[Sección 1, Objeto del acto jurídico|Sección 1, Objeto del acto jurídico]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

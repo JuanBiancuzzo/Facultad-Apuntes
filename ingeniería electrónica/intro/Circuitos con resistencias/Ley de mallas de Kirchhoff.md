@@ -1,10 +1,10 @@
 ---
 dia: 2023-08-24
 tags:
-  - ingeniería-electrónica/intro/Circuitos-con-resistencias
+  - carrera/ingeniería-electrónica/intro/Circuitos-con-resistencias
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
-  - ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - carrera/ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
 ---
 # Definición
 ---

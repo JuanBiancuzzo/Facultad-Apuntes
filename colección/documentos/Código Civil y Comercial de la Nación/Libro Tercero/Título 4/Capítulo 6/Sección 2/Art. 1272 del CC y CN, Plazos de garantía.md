@@ -15,7 +15,7 @@ articulo:
         texto: responde de los vicios o defectos no ostensibles al momento de la recepción, con la extensión y en los plazos previstos para la garantía por vicios ocultos prevista en los artículos 1054 y concordantes.
 previo: "[[Sección 2, Disposiciones especiales para las obras|Sección 2, Disposiciones especiales para las obras]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

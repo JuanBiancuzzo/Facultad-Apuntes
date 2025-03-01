@@ -5,7 +5,7 @@ referencias:
   - "474"
   - "477"
 tags:
-  - ingeniería-electrónica/embebidos/Conversión-analógica-a-digital-y-digital-a-analógica
+  - carrera/ingeniería-electrónica/embebidos/Conversión-analógica-a-digital-y-digital-a-analógica
   - nota/facultad
   - investigación/protocolos
 aliases:

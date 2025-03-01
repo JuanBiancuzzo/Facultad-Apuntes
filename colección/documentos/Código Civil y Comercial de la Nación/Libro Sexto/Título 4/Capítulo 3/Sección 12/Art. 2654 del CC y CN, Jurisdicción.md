@@ -12,7 +12,7 @@ articulo:
     texto: En esta materia no se admite el acuerdo de elección de foro.
 previo: "[[Sección 12, Contratos de consumo|Sección 12, Contratos de consumo]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

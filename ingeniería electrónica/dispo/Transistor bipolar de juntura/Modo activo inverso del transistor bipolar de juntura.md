@@ -4,7 +4,7 @@ aliases:
   - MAI del TBJ
   - Modo activo inverso del TBJ
 tags:
-  - ingeniería-electrónica/dispo/Transistor-bipolar-de-juntura
+  - carrera/ingeniería-electrónica/dispo/Transistor-bipolar-de-juntura
   - nota/facultad
 ---
 # Definición

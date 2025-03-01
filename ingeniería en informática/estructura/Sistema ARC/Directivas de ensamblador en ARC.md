@@ -3,7 +3,7 @@ dia: 2024-08-28
 tags:
   - ingeniería-en-informática/estructura/Sistema-ARC
   - nota/facultad
-  - ingeniería-electrónica/estructura/Sistema-ARC
+  - carrera/ingeniería-electrónica/estructura/Sistema-ARC
 ---
 # Definición
 ---

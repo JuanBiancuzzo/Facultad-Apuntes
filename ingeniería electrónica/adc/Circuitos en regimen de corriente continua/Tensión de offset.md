@@ -4,7 +4,7 @@ etapa: ampliar
 referencias:
   - "435"
 tags:
-  - ingeniería-electrónica/adc/Circuitos-en-regimen-de-corriente-continua
+  - carrera/ingeniería-electrónica/adc/Circuitos-en-regimen-de-corriente-continua
   - ingeniería-en-informática/adc/Circuitos-en-regimen-de-corriente-continua
   - nota/facultad
 ---

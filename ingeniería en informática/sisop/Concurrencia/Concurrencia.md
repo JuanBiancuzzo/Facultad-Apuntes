@@ -4,7 +4,7 @@ tags:
   - ingeniería-en-informática/sisop/Concurrencia
   - nota/facultad
   - ingeniería-en-informática/taller/Concurrencia
-  - ingeniería-electrónica/taller/Concurrencia
+  - carrera/ingeniería-electrónica/taller/Concurrencia
   - ingeniería-en-informática/concurrentes/Introducción
 referencias:
   - "787"

@@ -1,7 +1,7 @@
 ---
 dia: 2023-06-13
 tags:
-  - ingeniería-electrónica/seguridad/Contaminación-del-aire
+  - carrera/ingeniería-electrónica/seguridad/Contaminación-del-aire
   - nota/facultad
 ---
 # Definición

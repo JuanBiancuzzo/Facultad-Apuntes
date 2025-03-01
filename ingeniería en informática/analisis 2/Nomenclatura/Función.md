@@ -8,10 +8,10 @@ tags:
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
   - ingeniería-en-informática/estructura/Álgebra-de-Boole
-  - ingeniería-electrónica/analisis-2/Nomenclatura
-  - ingeniería-electrónica/algo-1/Lenguaje-C
-  - ingeniería-electrónica/taller/Sintaxis
-  - ingeniería-electrónica/estructura/Álgebra-de-Boole
+  - carrera/ingeniería-electrónica/analisis-2/Nomenclatura
+  - carrera/ingeniería-electrónica/algo-1/Lenguaje-C
+  - carrera/ingeniería-electrónica/taller/Sintaxis
+  - carrera/ingeniería-electrónica/estructura/Álgebra-de-Boole
   - ingeniería-en-informática/discreta/Álgebra-proposicional
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-zig
 aliases:

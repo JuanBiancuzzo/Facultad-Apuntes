@@ -6,7 +6,7 @@ articulo:
     texto: El objeto de la persona jurídica debe ser preciso y determinado.
 previo: "[[Parágrafo 1, Atributos y efectos de la personalidad jurídica|Parágrafo 1, Atributos y efectos de la personalidad jurídica]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

@@ -6,7 +6,7 @@ articulo:
     texto: La explotación de la propiedad intelectual sobre los programas de computación incluirá entre otras formas los contratos de licencia para su uso o reproducción.
 previo: "[[Parte 6, De la venta|Parte 6, De la venta]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

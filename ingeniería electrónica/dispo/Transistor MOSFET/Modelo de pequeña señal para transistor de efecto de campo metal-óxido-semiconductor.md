@@ -12,9 +12,9 @@ aliases:
   - Conductancia de salida para MOSFET#Conductancia del drain o conductancia de salida
   - Transconductancia del backgate#Transconductancia del backgate
 tags:
-  - ingeniería-electrónica/dispo/Transistor-MOSFET
+  - carrera/ingeniería-electrónica/dispo/Transistor-MOSFET
   - nota/facultad
-  - ingeniería-electrónica/circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
+  - carrera/ingeniería-electrónica/circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
 ---
 # Definición
 ---

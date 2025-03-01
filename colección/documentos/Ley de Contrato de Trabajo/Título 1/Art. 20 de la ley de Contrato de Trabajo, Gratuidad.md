@@ -8,7 +8,7 @@ articulo:
     texto: Su vivienda no podrá ser afectada al pago de costas en caso alguno.  En cuanto de los antecedentes del proceso resultase pluspetición inexcusable, las costas deberán ser soportadas solidariamente entre la parte y el profesional actuante.
 previo: "[[colección/documentos/Ley de Contrato de Trabajo/Título 1/Título 1, Disposiciones Generales|Título 1, Disposiciones Generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

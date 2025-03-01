@@ -4,7 +4,7 @@ codigo: TA134
 plan: 2023
 estado: Voy a cursarla este cuatri
 tags:
-  - ingeniería-electrónica/embebidos
+  - carrera/ingeniería-electrónica/embebidos
   - facultad/materia
 etapa: ampliar
 correlativas:

@@ -6,7 +6,7 @@ articulo:
     texto: Los contratos para los cuales la ley exige una forma para su validez, son nulos si la solemnidad no ha sido satisfecha. Cuando la forma requerida para los contratos, lo es sólo para que éstos produzcan sus efectos propios, sin sanción de nulidad, no quedan concluidos como tales mientras no se ha otorgado el instrumento previsto, pero valen como contratos en los que las partes se obligaron a cumplir con la expresada formalidad. Cuando la ley o las partes no imponen una forma determinada, ésta debe constituir sólo un medio de prueba de la celebración del contrato.
 previo: "[[Capítulo 2, Clasificación de los contratos|Capítulo 2, Clasificación de los contratos]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

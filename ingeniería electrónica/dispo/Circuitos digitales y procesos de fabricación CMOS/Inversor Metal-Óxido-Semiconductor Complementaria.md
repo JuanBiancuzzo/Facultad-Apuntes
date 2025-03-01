@@ -1,7 +1,7 @@
 ---
 dia: 2024-03-26
 tags:
-  - ingeniería-electrónica/dispo/Circuitos-digitales-y-procesos-de-fabricación-CMOS
+  - carrera/ingeniería-electrónica/dispo/Circuitos-digitales-y-procesos-de-fabricación-CMOS
   - nota/facultad
 aliases:
   - Inversor CMOS

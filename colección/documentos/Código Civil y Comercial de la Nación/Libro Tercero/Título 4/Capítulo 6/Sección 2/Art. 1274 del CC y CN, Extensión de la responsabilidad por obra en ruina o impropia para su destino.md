@@ -15,7 +15,7 @@ articulo:
         texto: según la causa del daño, al subcontratista, al proyectista, al director de la obra y a cualquier otro profesional ligado al comitente por un contrato de obra de construcción referido a la obra dañada o a cualquiera de sus partes.
 previo: "[[Sección 2, Disposiciones especiales para las obras|Sección 2, Disposiciones especiales para las obras]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

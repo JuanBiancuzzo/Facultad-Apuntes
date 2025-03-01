@@ -1,7 +1,7 @@
 ---
 dia: 2024-09-09
 tags: 
- - ingeniería-electrónica/embebidos/Memorias
+ - carrera/ingeniería-electrónica/embebidos/Memorias
  - nota/facultad
 ---
 # Definición

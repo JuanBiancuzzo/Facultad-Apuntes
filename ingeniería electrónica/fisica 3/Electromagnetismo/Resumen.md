@@ -1,7 +1,7 @@
 ---
 capitulo: 1
 tags:
-  - ingeniería-electrónica/fisica-3/Electromagnetismo
+  - carrera/ingeniería-electrónica/fisica-3/Electromagnetismo
   - ingeniería-en-informática/fisica-3/Electromagnetismo
   - facultad/resumen
 nombreResumen: Electromagnetismo

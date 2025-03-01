@@ -8,7 +8,7 @@ articulo:
     texto: El derecho real de habitación sólo puede constituirse a favor de persona humana.
 previo: "[[Título 10, Habitación|Título 10, Habitación]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

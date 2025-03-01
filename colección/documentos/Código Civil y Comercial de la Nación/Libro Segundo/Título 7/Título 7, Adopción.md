@@ -4,7 +4,7 @@ nombre: Adopción
 num: 7
 previo: "[[Libro 2, Relaciones de Familia|Libro 2, Relaciones de Familia]]"
 tags:
-  - ingeniería-electrónica/legal/Título
+  - carrera/ingeniería-electrónica/legal/Título
 ---
 ```dataviewjs
     await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

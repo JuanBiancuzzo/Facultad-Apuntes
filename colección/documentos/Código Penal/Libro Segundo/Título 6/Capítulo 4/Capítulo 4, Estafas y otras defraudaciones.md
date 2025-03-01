@@ -4,7 +4,7 @@ nombre: Estafas y otras defraudaciones
 num: 4
 previo: "[[Título 6, Delitos contra la propiedad|Título 6, Delitos contra la propiedad]]"
 tags:
-  - ingeniería-electrónica/legal/Capítulo
+  - carrera/ingeniería-electrónica/legal/Capítulo
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

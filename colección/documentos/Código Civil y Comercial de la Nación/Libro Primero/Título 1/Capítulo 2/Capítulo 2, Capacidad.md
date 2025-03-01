@@ -4,7 +4,7 @@ nombre: Capacidad
 num: 2
 previo: "[[Título 1, Persona humana|Título 1, Persona humana]]"
 tags:
-  - ingeniería-electrónica/legal/Capítulo
+  - carrera/ingeniería-electrónica/legal/Capítulo
 ---
 ```dataviewjs
     await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

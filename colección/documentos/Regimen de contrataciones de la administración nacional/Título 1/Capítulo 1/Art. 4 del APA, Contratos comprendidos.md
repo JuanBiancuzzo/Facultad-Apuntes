@@ -13,7 +13,7 @@ articulo:
         texto: Obras públicas, concesiones de obras públicas, concesiones de servicios públicos y licencias.
 previo: "[[Capítulo 1, Regimen general|Capítulo 1, Regimen general]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

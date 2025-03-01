@@ -60,7 +60,7 @@ articulo:
         texto: Decreta la intervención federal a una provincia o a la ciudad de Buenos Aires en caso de receso del Congreso, y debe convocarlo simultáneamente para su tratamiento.
 previo: "[[Capítulo 3, Atribuciones del Poder Ejecutivo|Capítulo 3, Atribuciones del Poder Ejecutivo]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

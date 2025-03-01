@@ -6,7 +6,7 @@ articulo:
     texto: Son indivisibles las obligaciones no susceptibles de cumplimiento parcial.
 previo: "[[Parágrafo 2, Obligaciones indivisibles|Parágrafo 2, Obligaciones indivisibles]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

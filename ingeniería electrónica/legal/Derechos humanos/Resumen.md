@@ -1,7 +1,7 @@
 ---
 capitulo: 6
 tags:
-  - ingeniería-electrónica/legal/Derechos-humanos
+  - carrera/ingeniería-electrónica/legal/Derechos-humanos
   - facultad/resumen
 nombreResumen: Derechos humanos
 ---

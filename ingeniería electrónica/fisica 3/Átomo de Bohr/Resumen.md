@@ -1,7 +1,7 @@
 ---
 capitulo: 5
 tags:
-  - ingeniería-electrónica/fisica-3/Átomo-de-Bohr
+  - carrera/ingeniería-electrónica/fisica-3/Átomo-de-Bohr
   - ingeniería-en-informática/fisica-3/Átomo-de-Bohr
   - facultad/resumen
 nombreResumen: Átomo de Bohr

@@ -14,7 +14,7 @@ articulo:
     texto: Los recibos por anticipo o entregas a cuenta de salarios, hechos al trabajador, deberán ajustarse en su forma y contenido a lo que se prevé en los artículos 138, 139 y 140, incisos a), b), g), h) e i) de la presente ley.
 previo: "[[Capítulo 4, De la tutela y pago de la remuneración|Capítulo 4, De la tutela y pago de la remuneración]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

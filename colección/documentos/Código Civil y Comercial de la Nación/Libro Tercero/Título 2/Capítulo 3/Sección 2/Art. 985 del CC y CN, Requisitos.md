@@ -10,7 +10,7 @@ articulo:
     texto: La presente disposición es aplicable a la contratación telefónica, electrónica o similares.
 previo: "[[Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas|Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

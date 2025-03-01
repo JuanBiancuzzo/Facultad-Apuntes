@@ -6,7 +6,7 @@ grupos:
   - Sección
 artConNombre: true
 tags:
-  - ingeniería-electrónica/legal/documento
+  - carrera/ingeniería-electrónica/legal/documento
 aliases:
   - Ley 20.094
 ---

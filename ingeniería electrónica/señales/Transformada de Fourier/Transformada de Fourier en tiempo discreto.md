@@ -1,7 +1,7 @@
 ---
 dia: 2024-04-15
 tags:
-  - ingeniería-electrónica/señales/Transformada-de-Fourier
+  - carrera/ingeniería-electrónica/señales/Transformada-de-Fourier
   - nota/facultad
 ---
 # Definición

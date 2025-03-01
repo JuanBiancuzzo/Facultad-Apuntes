@@ -6,7 +6,7 @@ articulo:
     texto: El requerimiento dispuesto en el artículo 1088 no es necesario en los casos en que la ley faculta a la parte para declarar unilateralmente la extinción del contrato, sin perjuicio de disposiciones especiales.
 previo: "[[Capítulo 13, Extinción modificación y adecuación del contrato|Capítulo 13, Extinción modificación y adecuación del contrato]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

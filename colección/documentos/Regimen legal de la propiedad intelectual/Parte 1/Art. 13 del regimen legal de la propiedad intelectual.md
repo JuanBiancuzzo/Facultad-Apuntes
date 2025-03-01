@@ -5,7 +5,7 @@ articulo:
     texto: Todas las disposiciones de esta Ley, salvo las del artículo 57, son igualmente aplicables a las obras científicas, artísticas y literarias, publicadas en países extranjeros, sea cual fuere la nacionalidad de sus autores, siempre que pertenezcan a naciones que reconozcan el derecho de propiedad intelectual.
 previo: "[[Parte 1, De la obra extranjera|Parte 1, De la obra extranjera]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

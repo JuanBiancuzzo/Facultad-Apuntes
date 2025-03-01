@@ -8,7 +8,7 @@ articulo:
     texto: El contrato es gratuito si las partes así lo pactan o cuando por las circunstancias del caso puede presumirse la intención de beneficiar.
 previo: "[[Sección 1, Disposiciones comunes a las obras y a los servicios|Sección 1, Disposiciones comunes a las obras y a los servicios]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

@@ -3,9 +3,9 @@ dia: 2023-11-28
 aliases:
   - Amplificador Source Común con un MOSFET
 tags:
-  - ingeniería-electrónica/dispo/Amplificador-emisor-y-source-común
+  - carrera/ingeniería-electrónica/dispo/Amplificador-emisor-y-source-común
   - nota/facultad
-  - ingeniería-electrónica/circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
+  - carrera/ingeniería-electrónica/circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
 ---
 # Definición
 ---

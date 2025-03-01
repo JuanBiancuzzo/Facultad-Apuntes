@@ -6,7 +6,7 @@ articulo:
     texto: El reclamo del resarcimiento de daños por agresiones sexuales infligidas a personas incapaces prescribe a los diez años. El cómputo del plazo de prescripción comienza a partir del cese de la incapacidad.  El reclamo de la indemnización de daños derivados de la responsabilidad civil prescribe a los tres años.
 previo: "[[Sección - Plazos de prescripción - 2 - Capítulo|Sección - Plazos de prescripción - 2 - Capítulo]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

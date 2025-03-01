@@ -4,9 +4,9 @@ tags:
   - ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
-  - ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
-  - ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
-  - ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - carrera/ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
+  - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
+  - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
 aliases:
   - Constante dieléctrica
   - Permitividad del vacío#^permitividad-vacio

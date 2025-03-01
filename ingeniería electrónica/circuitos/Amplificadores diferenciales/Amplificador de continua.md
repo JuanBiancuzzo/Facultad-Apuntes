@@ -4,7 +4,7 @@ etapa: empezado
 referencias:
   - "435"
 tags:
-  - ingeniería-electrónica/circuitos/Amplificadores-diferenciales
+  - carrera/ingeniería-electrónica/circuitos/Amplificadores-diferenciales
   - nota/facultad
 ---
 ```dataviewjs

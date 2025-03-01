@@ -8,7 +8,7 @@ articulo:
     texto: Lo dispuesto se aplica sin afectar los derechos de los terceros de buena fe y sin perjuicio de las responsabilidades personales de que puedan ser pasibles los participantes en los hechos por los perjuicios causados.
 previo: "[[Sección 1, Personalidad. Composición|Sección 1, Personalidad. Composición]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

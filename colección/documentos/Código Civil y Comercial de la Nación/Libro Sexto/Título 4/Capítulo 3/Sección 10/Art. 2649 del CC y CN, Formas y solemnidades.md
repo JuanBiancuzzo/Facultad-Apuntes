@@ -10,7 +10,7 @@ articulo:
     texto: Si los contratantes se encuentran en distintos Estados al tiempo de la celebración, la validez formal del acto se rige por el derecho del país de donde parte la oferta aceptada o, en su defecto, por el derecho aplicable al fondo de la relación jurídica.
 previo: "[[Sección 10, Forma de los actos jurídicos|Sección 10, Forma de los actos jurídicos]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

@@ -8,7 +8,7 @@ articulo:
     texto: No están comprendidos en esta ley los servicios de profesionales liberales que requieran para su ejercicio título universitario y matrícula otorgada por colegios profesionales reconocidos oficialmente o autoridad facultada para ello, pero sí la publicidad que se haga de su ofrecimiento. Ante la presentación de denuncias, que no se vincularen con la publicidad de los servicios, presentadas por los usuarios y consumidores, la autoridad de aplicación de esta ley informará al denunciante sobre el ente que controle la respectiva matrícula a los efectos de su tramitación.
 previo: "[[colección/documentos/Ley de Defensa del consumidor/Título 1/Capítulo 1/Capítulo 1, Disposiciones generales|Capítulo 1, Disposiciones generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

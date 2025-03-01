@@ -4,7 +4,7 @@ estado: Terminado
 plan: "1986"
 codigo: "6110"
 tags:
-  - ingeniería-electrónica/analisis-3
+  - carrera/ingeniería-electrónica/analisis-3
   - facultad/materia
 etapa: terminado
 correlativas:

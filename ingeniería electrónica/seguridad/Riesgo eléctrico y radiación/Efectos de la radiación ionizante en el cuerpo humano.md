@@ -1,7 +1,7 @@
 ---
 dia: 2023-04-21
 tags:
-  - ingeniería-electrónica/seguridad/Riesgo-eléctrico-y-radiación
+  - carrera/ingeniería-electrónica/seguridad/Riesgo-eléctrico-y-radiación
   - nota/facultad
 ---
 # Definición

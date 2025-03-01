@@ -6,7 +6,7 @@ articulo:
     texto: Si durante las negociaciones, una de las partes facilita a la otra una información con carácter confidencial, el que la recibió tiene el deber de no revelarla y de no usarla inapropiadamente en su propio interés. La parte que incumple este deber queda obligada a reparar el daño sufrido por la otra y, si ha obtenido una ventaja indebida de la información confidencial, queda obligada a indemnizar a la otra parte en la medida de su propio enriquecimiento.
 previo: "[[Sección 3, Tratativas contractuales|Sección 3, Tratativas contractuales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

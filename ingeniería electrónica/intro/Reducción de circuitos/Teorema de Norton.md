@@ -1,7 +1,7 @@
 ---
 dia: 2023-09-05
 tags:
-  - ingeniería-electrónica/intro/Reducción-de-circuitos
+  - carrera/ingeniería-electrónica/intro/Reducción-de-circuitos
   - nota/facultad
 ---
 # Definición

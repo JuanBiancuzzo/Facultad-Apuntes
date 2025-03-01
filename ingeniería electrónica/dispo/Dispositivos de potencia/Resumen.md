@@ -1,7 +1,7 @@
 ---
 capitulo: 8
 tags:
-  - ingeniería-electrónica/dispo/Dispositivos-de-potencia
+  - carrera/ingeniería-electrónica/dispo/Dispositivos-de-potencia
   - facultad/resumen
 nombreResumen: Dispositivos de potencia
 ---

@@ -8,7 +8,7 @@ articulo:
     texto: Si no nace con vida, se considera que la persona nunca existió. El nacimiento con vida se presume.
 previo: "[[Capítulo 1, Comienzo de la existencia|Capítulo 1, Comienzo de la existencia]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

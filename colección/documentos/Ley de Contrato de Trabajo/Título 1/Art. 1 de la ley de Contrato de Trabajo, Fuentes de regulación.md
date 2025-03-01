@@ -19,7 +19,7 @@ articulo:
         texto: Por los usos y costumbres.
 previo: "[[colección/documentos/Ley de Contrato de Trabajo/Título 1/Título 1, Disposiciones Generales|Título 1, Disposiciones Generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

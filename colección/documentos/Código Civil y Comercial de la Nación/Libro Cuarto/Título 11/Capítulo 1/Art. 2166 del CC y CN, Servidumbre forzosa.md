@@ -12,7 +12,7 @@ articulo:
     texto: La acción para reclamar una servidumbre forzosa es imprescriptible.
 previo: "[[colección/documentos/Código Civil y Comercial de la Nación/Libro Cuarto/Título 11/Capítulo 1/Capítulo 1, Disposiciones generales|Capítulo 1, Disposiciones generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

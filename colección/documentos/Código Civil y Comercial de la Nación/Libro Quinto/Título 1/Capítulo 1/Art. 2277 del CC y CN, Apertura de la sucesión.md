@@ -8,7 +8,7 @@ articulo:
     texto: La herencia comprende todos los derechos y obligaciones del causante que no se extinguen por su fallecimiento.
 previo: "[[Capítulo - Disposiciones generales - 1 - Título|Capítulo - Disposiciones generales - 1 - Título]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

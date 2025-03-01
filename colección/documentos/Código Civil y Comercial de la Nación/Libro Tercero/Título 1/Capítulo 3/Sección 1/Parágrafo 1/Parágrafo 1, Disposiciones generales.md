@@ -4,7 +4,7 @@ nombre: Disposiciones generales
 num: 1
 previo: "[[Sección 1, Obligaciones de dar|Sección 1, Obligaciones de dar]]"
 tags:
-  - ingeniería-electrónica/legal/Parágrafo
+  - carrera/ingeniería-electrónica/legal/Parágrafo
 ---
 ```dataviewjs
     await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

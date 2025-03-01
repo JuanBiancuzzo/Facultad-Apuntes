@@ -6,7 +6,7 @@ articulo:
     texto: En los casos del artículo 1492, la omisión del preaviso, otorga a la otra parte derecho a la indemnización por las ganancias dejadas de percibir en el período.
 previo: "[[Capítulo 17, Agencia|Capítulo 17, Agencia]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

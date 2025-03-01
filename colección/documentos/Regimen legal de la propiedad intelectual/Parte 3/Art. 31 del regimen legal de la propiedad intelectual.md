@@ -9,7 +9,7 @@ articulo:
     texto: Es libre la publicación del retrato cuando se relacione con fines científicos, didácticos y en general culturales, o con hechos o acontecimientos de interés público o que se hubieran desarrollado en público.
 previo: "[[Parte 3, Disposiciones especiales|Parte 3, Disposiciones especiales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

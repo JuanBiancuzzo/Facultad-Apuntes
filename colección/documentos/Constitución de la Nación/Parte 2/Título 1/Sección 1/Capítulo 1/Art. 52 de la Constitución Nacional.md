@@ -5,7 +5,7 @@ articulo:
     texto: A la Cámara de Diputados corresponde exclusivamente la iniciativa de las leyes sobre contribuciones y reclutamiento de tropas.
 previo: "[[Capítulo 1, De la cámara de diputados|Capítulo 1, De la cámara de diputados]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

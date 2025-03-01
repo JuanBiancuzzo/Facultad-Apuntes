@@ -3,7 +3,7 @@ dia: 2023-01-22
 tags:
   - ingeniería-en-informática/algebra-2/Autovalores-y-autovectores
   - nota/facultad
-  - ingeniería-electrónica/algebra-2/Autovalores-y-autovectores
+  - carrera/ingeniería-electrónica/algebra-2/Autovalores-y-autovectores
 ---
 # Definición
 ---

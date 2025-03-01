@@ -6,10 +6,10 @@ tags:
   - ingeniería-en-informática/fisica-2/Magnetostática-en-el-vacío
   - ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
   - ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
-  - ingeniería-electrónica/analisis-2/Funciones-de-varias-variables
-  - ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
-  - ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
-  - ingeniería-electrónica/fisica-2/Magnetostática-en-el-vacío
+  - carrera/ingeniería-electrónica/analisis-2/Funciones-de-varias-variables
+  - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
+  - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - carrera/ingeniería-electrónica/fisica-2/Magnetostática-en-el-vacío
 aliases:
   - Ley de Gauss
   - Ley de Gauss para el Campo eléctrico#Para el campo eléctrico

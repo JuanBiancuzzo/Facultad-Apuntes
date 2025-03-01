@@ -34,7 +34,7 @@ articulo:
     texto: El empleador deberá registrar al trabajador desde la fecha de inicio de la relación; caso contrario, se considerará que ha renunciado al período de prueba.
 previo: "[[Capítulo 1, Principios Generales|Capítulo 1, Principios Generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 esBis: true
 ---
 # Artículo

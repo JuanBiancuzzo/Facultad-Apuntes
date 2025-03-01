@@ -1,9 +1,9 @@
 ---
 dia: 2024-03-11
 tags:
-  - ingeniería-electrónica/señales/Transformada-de-Fourier
+  - carrera/ingeniería-electrónica/señales/Transformada-de-Fourier
   - nota/facultad
-  - ingeniería-electrónica/analisis-3/Transformada-de-Fourier
+  - carrera/ingeniería-electrónica/analisis-3/Transformada-de-Fourier
   - ingeniería-en-informática/analisis-3/Transformada-de-Fourier
 ---
 # Definición

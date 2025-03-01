@@ -3,7 +3,7 @@ dia: 2023-10-14
 aliases:
   - Corte del TBJ
 tags:
-  - ingeniería-electrónica/dispo/Transistor-bipolar-de-juntura
+  - carrera/ingeniería-electrónica/dispo/Transistor-bipolar-de-juntura
   - nota/facultad
 ---
 # Definición

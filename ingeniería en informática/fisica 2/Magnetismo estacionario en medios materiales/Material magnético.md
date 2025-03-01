@@ -3,8 +3,8 @@ dia: 2023-08-24
 tags:
   - ingeniería-en-informática/fisica-2/Magnetismo-estacionario-en-medios-materiales
   - nota/facultad
-  - ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
-  - ingeniería-electrónica/fisica-2/Magnetismo-estacionario-en-medios-materiales
+  - carrera/ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
+  - carrera/ingeniería-electrónica/fisica-2/Magnetismo-estacionario-en-medios-materiales
 aliases:
   - Campo de magnetización#^campo-magnetizacion
   - Campo magnético#^campo-magnetico

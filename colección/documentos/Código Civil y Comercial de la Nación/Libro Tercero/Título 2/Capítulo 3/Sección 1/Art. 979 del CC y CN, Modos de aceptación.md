@@ -6,7 +6,7 @@ articulo:
     texto: Toda declaración o acto del destinatario que revela conformidad con la oferta constituye aceptación. El silencio importa aceptación sólo cuando existe el deber de expedirse, el que puede resultar de la voluntad de las partes, de los usos o de las prácticas que las partes hayan establecido entre ellas, o de una relación entre el silencio actual y las declaraciones precedentes.
 previo: "[[Sección 1, Consentimiento, oferta y aceptación|Sección 1, Consentimiento, oferta y aceptación]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

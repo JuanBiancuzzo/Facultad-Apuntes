@@ -7,7 +7,7 @@ articulo:
     texto: Se entenderá por funcionario público de otro Estado, o de cualquier entidad territorial reconocida por la Nación Argentina, a toda persona que haya sido designada o electa para cumplir una función pública, en cualquiera de sus niveles o divisiones territoriales de gobierno, o en toda clase de organismo, agencia o empresa pública en donde dicho Estado ejerza una influencia directa o indirecta.
 previo: "[[Capítulo 6, Cohecho y tráfico de influencias|Capítulo 6, Cohecho y tráfico de influencias]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 esBis: true
 ---
 # Artículo

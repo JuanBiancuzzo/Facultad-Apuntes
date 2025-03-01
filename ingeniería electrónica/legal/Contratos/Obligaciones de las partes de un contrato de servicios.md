@@ -1,7 +1,7 @@
 ---
 dia: 2024-02-05
 tags:
-  - ingeniería-electrónica/legal/Contratos
+  - carrera/ingeniería-electrónica/legal/Contratos
   - nota/facultad
 ---
 # Definición

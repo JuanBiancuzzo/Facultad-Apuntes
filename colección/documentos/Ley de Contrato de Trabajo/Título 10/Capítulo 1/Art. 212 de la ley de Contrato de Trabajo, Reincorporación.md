@@ -14,7 +14,7 @@ articulo:
     texto: Este beneficio no es incompatible y se acumula con los que los estatutos especiales o convenios colectivos puedan disponer para tal supuesto.
 previo: "[[Capítulo 1, De los accidentes y enfermedades inculpables|Capítulo 1, De los accidentes y enfermedades inculpables]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

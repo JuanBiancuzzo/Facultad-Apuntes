@@ -10,7 +10,7 @@ articulo:
     texto: Las nuevas leyes supletorias no son aplicables a los contratos en curso de ejecución, con excepción de las normas más favorables al consumidor en las relaciones de consumo.
 previo: "[[Capítulo 2, Ley|Capítulo 2, Ley]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

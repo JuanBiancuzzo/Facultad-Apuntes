@@ -12,7 +12,7 @@ articulo:
     texto: En los actos por causa de muerte son nulas las cláusulas que afectan las porciones legítimas, o implican una sustitución fideicomisaria.
 previo: "[[Capítulo 4, Límites al dominio|Capítulo 4, Límites al dominio]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

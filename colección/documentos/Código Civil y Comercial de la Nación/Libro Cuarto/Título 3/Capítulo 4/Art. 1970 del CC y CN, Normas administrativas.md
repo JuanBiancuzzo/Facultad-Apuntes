@@ -8,7 +8,7 @@ articulo:
     texto: Los límites impuestos al dominio en este Capítulo en materia de relaciones de vecindad, rigen en subsidio de las normas administrativas aplicables en cada jurisdicción.
 previo: "[[Capítulo 4, Límites al dominio|Capítulo 4, Límites al dominio]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

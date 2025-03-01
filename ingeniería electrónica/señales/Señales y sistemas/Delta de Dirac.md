@@ -1,7 +1,7 @@
 ---
 dia: 2024-03-13
 tags:
-  - ingeniería-electrónica/señales/Señales-y-sistemas
+  - carrera/ingeniería-electrónica/señales/Señales-y-sistemas
   - nota/facultad
 aliases:
   - Impulso

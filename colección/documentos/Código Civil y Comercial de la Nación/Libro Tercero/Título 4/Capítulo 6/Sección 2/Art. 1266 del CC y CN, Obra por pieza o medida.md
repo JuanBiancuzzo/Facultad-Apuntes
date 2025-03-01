@@ -8,7 +8,7 @@ articulo:
     texto: Si se ha designado el número de piezas o la medida total, el contratista está obligado a entregar la obra concluida y el comitente a pagar la retribución que resulte del total de las unidades pactadas.
 previo: "[[Sección 2, Disposiciones especiales para las obras|Sección 2, Disposiciones especiales para las obras]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

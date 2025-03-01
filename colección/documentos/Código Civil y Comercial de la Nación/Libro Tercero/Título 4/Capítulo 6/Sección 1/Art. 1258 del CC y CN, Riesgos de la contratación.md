@@ -6,7 +6,7 @@ articulo:
     texto: Si los bienes necesarios para la ejecución de la obra o del servicio perecen por fuerza mayor, la pérdida la soporta la parte que debía proveerlos.
 previo: "[[Sección 1, Disposiciones comunes a las obras y a los servicios|Sección 1, Disposiciones comunes a las obras y a los servicios]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

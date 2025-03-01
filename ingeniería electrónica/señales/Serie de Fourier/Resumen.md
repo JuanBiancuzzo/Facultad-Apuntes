@@ -1,7 +1,7 @@
 ---
 capitulo: 3
 tags:
-  - ingeniería-electrónica/señales/Serie-de-Fourier
+  - carrera/ingeniería-electrónica/señales/Serie-de-Fourier
   - facultad/resumen
 nombreResumen: Serie de Fourier
 ---

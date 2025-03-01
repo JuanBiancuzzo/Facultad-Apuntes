@@ -8,7 +8,7 @@ articulo:
     texto: El que aceptó la oferta ignorando la muerte o incapacidad del oferente, y que a consecuencia de su aceptación ha hecho gastos o sufrido pérdidas, tiene derecho a reclamar su reparación.
 previo: "[[Sección 1, Consentimiento, oferta y aceptación|Sección 1, Consentimiento, oferta y aceptación]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

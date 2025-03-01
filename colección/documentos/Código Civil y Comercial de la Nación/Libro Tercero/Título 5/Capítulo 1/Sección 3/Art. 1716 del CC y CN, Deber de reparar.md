@@ -6,7 +6,7 @@ articulo:
     texto: La violación del deber de no dañar a otro, o el incumplimiento de una obligación, da lugar a la reparación del daño causado, conforme con las disposiciones de este Código.
 previo: "[[Sección 3, Función resarcitoria|Sección 3, Función resarcitoria]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

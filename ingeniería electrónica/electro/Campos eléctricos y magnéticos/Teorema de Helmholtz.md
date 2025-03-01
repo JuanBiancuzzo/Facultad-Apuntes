@@ -1,7 +1,7 @@
 ---
 dia: 2024-09-04
 tags:
-  - ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
+  - carrera/ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
   - nota/facultad
 ---
 # Definición

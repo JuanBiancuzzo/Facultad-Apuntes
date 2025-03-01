@@ -1,7 +1,7 @@
 ---
 capitulo: 12
 tags:
-  - ingeniería-electrónica/fisica-3/Homojunturas-y-diodo-PN
+  - carrera/ingeniería-electrónica/fisica-3/Homojunturas-y-diodo-PN
   - ingeniería-en-informática/fisica-3/Homojunturas-y-diodo-PN
   - facultad/resumen
 nombreResumen: Homojunturas y diodo PN

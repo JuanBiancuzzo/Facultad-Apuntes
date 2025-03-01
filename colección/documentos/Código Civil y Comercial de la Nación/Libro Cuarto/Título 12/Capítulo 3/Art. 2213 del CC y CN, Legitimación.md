@@ -6,7 +6,7 @@ articulo:
     texto: Pueden constituir anticresis los titulares de los derechos reales de dominio, condominio, propiedad horizontal, superficie y usufructo.
 previo: "[[Capítulo 3, Anticresis|Capítulo 3, Anticresis]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

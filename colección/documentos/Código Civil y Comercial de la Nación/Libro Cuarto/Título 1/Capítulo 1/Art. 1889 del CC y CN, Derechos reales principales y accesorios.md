@@ -6,7 +6,7 @@ articulo:
     texto: Los derechos reales son principales, excepto los accesorios de un crédito en función de garantía. Son accesorios la hipoteca, la anticresis y la prenda.
 previo: "[[Capítulo 1, Principios comunes|Capítulo 1, Principios comunes]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

@@ -1,7 +1,7 @@
 ---
 capitulo: 2
 tags:
-  - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
+  - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
   - facultad/resumen
 referencias:
   - "465"

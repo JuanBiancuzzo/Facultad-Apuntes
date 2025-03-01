@@ -6,7 +6,7 @@ articulo:
     texto: Cuando el trabajador hiciese denuncia del contrato de trabajo fundado en justa causa, tendrá derecho a las indemnizaciones previstas en los artículos 232, 233 y 245.
 previo: "[[Capítulo 4, De la extinción del contrato de trabajo por justa causa|Capítulo 4, De la extinción del contrato de trabajo por justa causa]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

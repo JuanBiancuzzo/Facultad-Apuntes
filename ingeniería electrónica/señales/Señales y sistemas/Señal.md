@@ -1,7 +1,7 @@
 ---
 dia: 2024-03-11
 tags:
-  - ingeniería-electrónica/señales/Señales-y-sistemas
+  - carrera/ingeniería-electrónica/señales/Señales-y-sistemas
   - nota/facultad
 ---
 # Definición

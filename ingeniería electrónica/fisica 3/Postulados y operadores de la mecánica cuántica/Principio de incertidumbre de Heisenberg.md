@@ -1,10 +1,10 @@
 ---
 dia: 2023-08-24
 tags:
-  - ingeniería-electrónica/fisica-3/Postulados-y-operadores-de-la-mecánica-cuántica
+  - carrera/ingeniería-electrónica/fisica-3/Postulados-y-operadores-de-la-mecánica-cuántica
   - nota/facultad
-  - ingeniería-electrónica/señales/Transformada-de-Fourier
-  - ingeniería-electrónica/analisis-3/Transformada-de-Fourier
+  - carrera/ingeniería-electrónica/señales/Transformada-de-Fourier
+  - carrera/ingeniería-electrónica/analisis-3/Transformada-de-Fourier
   - ingeniería-en-informática/analisis-3/Transformada-de-Fourier
   - ingeniería-en-informática/fisica-3/Postulados-y-operadores-de-la-mecánica-cuántica
 ---

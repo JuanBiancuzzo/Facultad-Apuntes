@@ -7,7 +7,7 @@ articulo:
     texto: Este contrato se aplica cualquiera sea la forma o sistema de reproducción o publicación.
 previo: "[[Parte 4, De la Edición|Parte 4, De la Edición]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

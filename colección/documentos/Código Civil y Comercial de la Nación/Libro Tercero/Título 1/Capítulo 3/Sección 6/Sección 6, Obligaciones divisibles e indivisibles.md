@@ -4,7 +4,7 @@ nombre: Obligaciones divisibles e indivisibles
 num: 6
 previo: "[[Capítulo 3, Clases de obligaciones|Capítulo 3, Clases de obligaciones]]"
 tags:
-  - ingeniería-electrónica/legal/Sección
+  - carrera/ingeniería-electrónica/legal/Sección
 ---
 # Interpretación
 ---

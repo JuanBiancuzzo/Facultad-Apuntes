@@ -1,7 +1,7 @@
 ---
 dia: 2024-02-09
 tags:
-  - ingeniería-electrónica/legal/Derecho-laboral
+  - carrera/ingeniería-electrónica/legal/Derecho-laboral
   - nota/facultad
 ---
 # Definición

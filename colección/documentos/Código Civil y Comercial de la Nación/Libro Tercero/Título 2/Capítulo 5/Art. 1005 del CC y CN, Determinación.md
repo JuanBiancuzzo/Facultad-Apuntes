@@ -6,7 +6,7 @@ articulo:
     texto: Cuando el objeto se refiere a bienes, éstos deben estar determinados en su especie o género según sea el caso, aunque no lo estén en su cantidad, si ésta puede ser determinada. Es determinable cuando se establecen los criterios suficientes para su individualización.
 previo: "[[Capítulo 5, Objeto|Capítulo 5, Objeto]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

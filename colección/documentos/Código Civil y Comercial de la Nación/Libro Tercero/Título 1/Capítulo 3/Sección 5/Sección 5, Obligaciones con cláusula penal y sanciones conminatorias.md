@@ -4,7 +4,7 @@ nombre: Obligaciones con cláusula penal y sanciones conminatorias
 num: 5
 previo: "[[Capítulo 3, Clases de obligaciones|Capítulo 3, Clases de obligaciones]]"
 tags:
-  - ingeniería-electrónica/legal/Sección
+  - carrera/ingeniería-electrónica/legal/Sección
 ---
 # Interpretación
 ---

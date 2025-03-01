@@ -6,7 +6,7 @@ articulo:
     texto: Hay tenencia cuando una persona, por sí o por medio de otra, ejerce un poder de hecho sobre una cosa, y se comporta como representante del poseedor.
 previo: "[[colección/documentos/Código Civil y Comercial de la Nación/Libro Cuarto/Título 2/Capítulo 1/Capítulo 1, Disposiciones generales|Capítulo 1, Disposiciones generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

@@ -6,7 +6,7 @@ articulo:
     texto: Los administradores responden en forma ilimitada y solidaria frente a la persona jurídica, sus miembros y terceros, por los daños causados por su culpa en el ejercicio o con ocasión de sus funciones, por acción u omisión.
 previo: "[[Parágrafo 2, Funcionamiento|Parágrafo 2, Funcionamiento]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

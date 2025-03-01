@@ -3,7 +3,7 @@ dia: 2025-02-02
 etapa: empezado
 referencias: []
 tags:
-  - ingeniería-electrónica/electro/Ondas-confinadas
+  - carrera/ingeniería-electrónica/electro/Ondas-confinadas
   - nota/facultad
 ---
 ```dataviewjs

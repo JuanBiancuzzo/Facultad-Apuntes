@@ -18,7 +18,7 @@ articulo:
     texto: Quedan exceptuadas de la obligación de difusión en todas las etapas del procedimiento, las contrataciones directas encuadradas en el apartado 6 del inciso d) del artículo 25 y de difusión de la convocatoria las de los apartados 5, para los casos de emergencia, y 8.
 previo: "[[Capítulo 1, Contrataciones de bienes y servicios|Capítulo 1, Contrataciones de bienes y servicios]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

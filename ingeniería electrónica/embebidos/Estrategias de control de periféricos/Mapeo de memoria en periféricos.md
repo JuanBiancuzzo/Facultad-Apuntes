@@ -1,7 +1,7 @@
 ---
 dia: 2024-09-15
 tags:
-  - ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
+  - carrera/ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
   - nota/facultad
   - investigación/placa-de-Desarrollo/placa-de-desarrollo-Nucleo-64/placa-STM32-F302R8
 aliases:

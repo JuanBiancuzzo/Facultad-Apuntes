@@ -10,7 +10,7 @@ articulo:
     texto: En caso de infracción responden ilimitada y solidariamente sus administradores y aquellos miembros que, conociendo o debiendo conocer la situación y contando con el poder de decisión necesario para ponerle fin, omiten adoptar las medidas necesarias al efecto.
 previo: "[[Parágrafo 3, Disolución. Liquidación|Parágrafo 3, Disolución. Liquidación]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

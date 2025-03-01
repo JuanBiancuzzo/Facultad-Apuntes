@@ -3,7 +3,7 @@ dia: 2024-09-10
 tags:
   - nota/facultad
   - ingeniería-en-informática/discreta/Autómatas
-  - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
+  - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
 referencias:
   - "239"
   - "240"

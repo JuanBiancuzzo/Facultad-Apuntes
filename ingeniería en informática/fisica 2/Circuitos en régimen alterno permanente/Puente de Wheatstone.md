@@ -5,9 +5,9 @@ referencias:
   - "628"
 tags:
   - ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
-  - ingeniería-electrónica/fisica-2/Circuitos-en-régimen-alterno-permanente
+  - carrera/ingeniería-electrónica/fisica-2/Circuitos-en-régimen-alterno-permanente
   - nota/facultad
-  - ingeniería-electrónica/intro/Circuitos-con-resistencias
+  - carrera/ingeniería-electrónica/intro/Circuitos-con-resistencias
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

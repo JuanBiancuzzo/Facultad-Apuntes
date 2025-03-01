@@ -1,7 +1,7 @@
 ---
 dia: 2024-01-08
 tags:
-  - ingeniería-electrónica/legal/Obligaciones
+  - carrera/ingeniería-electrónica/legal/Obligaciones
   - nota/facultad
 ---
 # Definición

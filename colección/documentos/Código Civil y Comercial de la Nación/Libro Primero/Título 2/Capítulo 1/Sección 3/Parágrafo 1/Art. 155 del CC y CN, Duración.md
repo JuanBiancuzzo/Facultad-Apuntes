@@ -6,7 +6,7 @@ articulo:
     texto: La duración de la persona jurídica es ilimitada en el tiempo, excepto que la ley o el estatuto dispongan lo contrario.
 previo: "[[Parágrafo 1, Atributos y efectos de la personalidad jurídica|Parágrafo 1, Atributos y efectos de la personalidad jurídica]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

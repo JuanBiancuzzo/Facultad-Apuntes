@@ -8,7 +8,7 @@ articulo:
     texto: Los acreedores anteriores al cambio de régimen que sufran perjuicios por tal motivo pueden hacerlo declarar inoponible a ellos en el término de un año a contar desde que lo conocieron.
 previo: "[[Sección 1, Convenciones matrimoniales|Sección 1, Convenciones matrimoniales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

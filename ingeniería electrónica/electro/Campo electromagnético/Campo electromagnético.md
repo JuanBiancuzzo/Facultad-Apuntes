@@ -1,7 +1,7 @@
 ---
 dia: 2024-09-05
 tags:
-  - ingeniería-electrónica/electro/Campo-electromagnético
+  - carrera/ingeniería-electrónica/electro/Campo-electromagnético
   - nota/facultad
 referencias:
   - "231"

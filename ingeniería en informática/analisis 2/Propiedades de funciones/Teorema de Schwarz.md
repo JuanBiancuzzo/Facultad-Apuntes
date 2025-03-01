@@ -3,7 +3,7 @@ dia: 2024-01-21
 tags:
   - nota/facultad
   - ingeniería-en-informática/analisis-2/Propiedades-de-funciones
-  - ingeniería-electrónica/analisis-2/Propiedades-de-funciones
+  - carrera/ingeniería-electrónica/analisis-2/Propiedades-de-funciones
 ---
 # Definición
 ---

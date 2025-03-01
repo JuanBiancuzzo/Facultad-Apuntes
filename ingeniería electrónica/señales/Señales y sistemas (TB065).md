@@ -4,7 +4,7 @@ codigo: TB065
 plan: 2023
 estado: Falta pasar las presentaciones del último tema
 tags:
-  - ingeniería-electrónica/señales
+  - carrera/ingeniería-electrónica/señales
   - facultad/materia
 etapa: empezado
 correlativas:

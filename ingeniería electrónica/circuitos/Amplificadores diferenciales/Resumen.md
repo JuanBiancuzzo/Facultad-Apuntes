@@ -1,7 +1,7 @@
 ---
 capitulo: 5
 tags:
-  - ingeniería-electrónica/circuitos/Amplificadores-diferenciales
+  - carrera/ingeniería-electrónica/circuitos/Amplificadores-diferenciales
   - facultad/resumen
 referencias:
   - "435"

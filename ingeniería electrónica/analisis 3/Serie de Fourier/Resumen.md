@@ -1,7 +1,7 @@
 ---
 capitulo: 12
 tags:
-  - ingeniería-electrónica/analisis-3/Serie-de-Fourier
+  - carrera/ingeniería-electrónica/analisis-3/Serie-de-Fourier
   - ingeniería-en-informática/analisis-3/Serie-de-Fourier
   - facultad/resumen
 nombreResumen: Serie de Fourier

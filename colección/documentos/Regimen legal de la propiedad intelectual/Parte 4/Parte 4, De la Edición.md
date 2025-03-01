@@ -4,7 +4,7 @@ nombre: De la Edición
 num: 4
 previo: "[[Regimen legal de la propiedad intelectual|Regimen legal de la propiedad intelectual]]"
 tags:
-  - ingeniería-electrónica/legal/Parte
+  - carrera/ingeniería-electrónica/legal/Parte
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

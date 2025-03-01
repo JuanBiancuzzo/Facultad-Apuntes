@@ -1,7 +1,7 @@
 ---
 plan: 2009
 tags:
-  - ingeniería-electrónica/algo-1
+  - carrera/ingeniería-electrónica/algo-1
   - facultad/materia
 correlativas: 
 codigo: 9511

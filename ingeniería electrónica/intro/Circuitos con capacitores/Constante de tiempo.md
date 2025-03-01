@@ -1,7 +1,7 @@
 ---
 dia: 2023-01-23
 tags:
-  - ingeniería-electrónica/intro/Circuitos-con-capacitores
+  - carrera/ingeniería-electrónica/intro/Circuitos-con-capacitores
   - nota/facultad
 ---
 # Definición

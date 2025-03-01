@@ -2,7 +2,7 @@
 capitulo: 10
 tags:
   - ingeniería-en-informática/estructura/Microarquitectura
-  - ingeniería-electrónica/estructura/Microarquitectura
+  - carrera/ingeniería-electrónica/estructura/Microarquitectura
   - facultad/resumen
 nombreResumen: Microarquitectura
 ---

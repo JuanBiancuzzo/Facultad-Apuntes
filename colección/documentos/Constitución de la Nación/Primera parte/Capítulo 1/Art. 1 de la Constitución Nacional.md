@@ -5,7 +5,7 @@ articulo:
     texto: La Nación Argentina adopta para su gobierno la forma representativa republicana federal, según la establece la presente Constitución.
 previo: "[[Capítulo 1, Declaraciones derechos y garantías|Capítulo 1, Declaraciones derechos y garantías]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

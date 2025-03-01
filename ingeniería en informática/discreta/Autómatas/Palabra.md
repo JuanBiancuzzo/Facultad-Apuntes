@@ -4,7 +4,7 @@ tags:
   - ingeniería-en-informática/discreta/Autómatas
   - nota/facultad
   - ingeniería-en-informática/estructura/Sistema-ARC
-  - ingeniería-electrónica/estructura/Sistema-ARC
+  - carrera/ingeniería-electrónica/estructura/Sistema-ARC
   - curso/introduction-to-algorithms/Introduction
 aliases:
   - Palabra nula#Palabra nula

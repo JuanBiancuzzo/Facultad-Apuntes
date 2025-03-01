@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - investigación/matemática/teoría-de-la-información
   - ingeniería-en-informática/orga/Compresión
-  - ingeniería-electrónica/algo-1/Introducción-a-la-programación
+  - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
 aliases:
   - Bit#Bit
   - Byte#Byte

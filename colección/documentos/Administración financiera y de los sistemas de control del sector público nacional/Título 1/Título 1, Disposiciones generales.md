@@ -4,7 +4,7 @@ nombre: Disposiciones generales
 num: 1
 previo: "[[Administración financiera y de los sistemas de control del sector público nacional|Administración financiera y de los sistemas de control del sector público nacional]]"
 tags:
-  - ingeniería-electrónica/legal/Título
+  - carrera/ingeniería-electrónica/legal/Título
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

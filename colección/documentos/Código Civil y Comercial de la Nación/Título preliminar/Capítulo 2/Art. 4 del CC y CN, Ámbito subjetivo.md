@@ -6,7 +6,7 @@ articulo:
     texto: Las leyes son obligatorias para todos los que habitan el territorio de la República, sean ciudadanos o extranjeros, residentes, domiciliados o transeúntes, sin perjuicio de lo dispuesto en leyes especiales.
 previo: "[[Capítulo 2, Ley|Capítulo 2, Ley]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

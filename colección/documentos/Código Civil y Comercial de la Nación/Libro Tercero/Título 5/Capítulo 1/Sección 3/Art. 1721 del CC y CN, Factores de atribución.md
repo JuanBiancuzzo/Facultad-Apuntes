@@ -6,7 +6,7 @@ articulo:
     texto: La atribución de un daño al responsable puede basarse en factores objetivos o subjetivos. En ausencia de normativa, el factor de atribución es la culpa.
 previo: "[[Sección 3, Función resarcitoria|Sección 3, Función resarcitoria]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

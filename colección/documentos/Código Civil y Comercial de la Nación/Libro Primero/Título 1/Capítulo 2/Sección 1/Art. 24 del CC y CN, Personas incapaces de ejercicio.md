@@ -15,7 +15,7 @@ articulo:
         texto: la persona declarada incapaz por sentencia judicial, en la extensión dispuesta en esa decisión.
 previo: "[[Sección 1, Principios generales|Sección 1, Principios generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

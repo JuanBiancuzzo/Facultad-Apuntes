@@ -3,7 +3,7 @@ dia: 2023-03-29
 tags:
   - ingeniería-en-informática/taller/Concurrencia
   - nota/facultad
-  - ingeniería-electrónica/taller/Concurrencia
+  - carrera/ingeniería-electrónica/taller/Concurrencia
 ---
 # Definición
 ---

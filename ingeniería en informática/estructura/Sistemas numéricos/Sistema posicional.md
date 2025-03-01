@@ -3,7 +3,7 @@ dia: 2023-03-14
 tags:
   - ingeniería-en-informática/estructura/Sistemas-numéricos
   - nota/facultad
-  - ingeniería-electrónica/estructura/Sistemas-numéricos
+  - carrera/ingeniería-electrónica/estructura/Sistemas-numéricos
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
   - licenciatura-en-ciencias-de-datos/algebra-1/Números-enteros
 aliases:

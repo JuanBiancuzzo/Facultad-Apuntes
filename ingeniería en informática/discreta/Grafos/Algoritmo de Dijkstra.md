@@ -4,7 +4,7 @@ tags:
   - ingeniería-en-informática/discreta/Grafos
   - nota/facultad
   - ingeniería-en-informática/redes/Capa-de-Red
-  - ingeniería-electrónica/redes/Capa-de-Red
+  - carrera/ingeniería-electrónica/redes/Capa-de-Red
   - investigación/ciencias-de-la-computación/algoritmos
 ---
 # Definición

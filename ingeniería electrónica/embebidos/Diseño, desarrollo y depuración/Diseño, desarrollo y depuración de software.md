@@ -1,7 +1,7 @@
 ---
 dia: 2024-08-27
 tags:
-  - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
+  - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - nota/facultad
 aliases:
   - Sistemas duros#^HRT

@@ -1,10 +1,10 @@
 ---
 dia: 2023-01-23
 tags:
-  - ingeniería-electrónica/intro/Circuitos-con-capacitores
+  - carrera/ingeniería-electrónica/intro/Circuitos-con-capacitores
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
-  - ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
 ---
 # Definición
 ---

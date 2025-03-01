@@ -4,8 +4,8 @@ tags:
   - ingeniería-en-informática/redes/Capa-de-Enlace
   - nota/facultad
   - ingeniería-en-informática/redes/Capa-de-Transporte
-  - ingeniería-electrónica/redes/Capa-de-Enlace
-  - ingeniería-electrónica/redes/Capa-de-Transporte
+  - carrera/ingeniería-electrónica/redes/Capa-de-Enlace
+  - carrera/ingeniería-electrónica/redes/Capa-de-Transporte
 aliases:
   - Error detection and correction
   - EDC

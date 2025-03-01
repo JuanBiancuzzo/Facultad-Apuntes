@@ -19,7 +19,7 @@ articulo:
         texto: el incumplimiento ha sido anunciado por una manifestación seria y definitiva del deudor al acreedor.
 previo: "[[Capítulo 13, Extinción modificación y adecuación del contrato|Capítulo 13, Extinción modificación y adecuación del contrato]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

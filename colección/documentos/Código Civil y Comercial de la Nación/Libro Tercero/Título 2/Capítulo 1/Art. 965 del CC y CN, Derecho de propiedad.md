@@ -6,7 +6,7 @@ articulo:
     texto: Los derechos resultantes de los contratos integran el derecho de propiedad del contratante.
 previo: "[[colección/documentos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 1/Capítulo 1, Disposiciones generales|Capítulo 1, Disposiciones generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

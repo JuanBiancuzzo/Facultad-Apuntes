@@ -15,7 +15,7 @@ articulo:
         texto: los miembros que deban participar en una asamblea, o los integrantes del consejo, pueden autoconvocarse para deliberar, sin necesidad de citación previa. Las decisiones que se tomen son válidas, si concurren todos y el temario a tratar es aprobado por unanimidad.
 previo: "[[Parágrafo 2, Funcionamiento|Parágrafo 2, Funcionamiento]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

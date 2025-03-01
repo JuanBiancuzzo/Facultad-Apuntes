@@ -1,7 +1,7 @@
 ---
 capitulo: 15
 tags:
-  - ingeniería-electrónica/seguridad/Ergonomia
+  - carrera/ingeniería-electrónica/seguridad/Ergonomia
   - facultad/resumen
 nombreResumen: Ergonomia
 ---

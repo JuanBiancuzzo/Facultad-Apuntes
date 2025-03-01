@@ -5,7 +5,7 @@ aliases:
 tags:
   - ingeniería-en-informática/redes/Capa-de-Enlace
   - nota/facultad
-  - ingeniería-electrónica/redes/Capa-de-Enlace
+  - carrera/ingeniería-electrónica/redes/Capa-de-Enlace
 ---
 # Definición
 ---

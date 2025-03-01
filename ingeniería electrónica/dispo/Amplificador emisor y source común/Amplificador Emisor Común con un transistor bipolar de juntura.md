@@ -4,9 +4,9 @@ aliases:
   - Amplificador Emisor Común
   - Amplificador Emisor Común con un TBJ
 tags:
-  - ingeniería-electrónica/dispo/Amplificador-emisor-y-source-común
+  - carrera/ingeniería-electrónica/dispo/Amplificador-emisor-y-source-común
   - nota/facultad
-  - ingeniería-electrónica/circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
+  - carrera/ingeniería-electrónica/circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
 ---
 # Definición
 ---

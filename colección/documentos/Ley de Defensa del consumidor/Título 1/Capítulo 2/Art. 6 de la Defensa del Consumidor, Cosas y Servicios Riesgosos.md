@@ -8,7 +8,7 @@ articulo:
     texto: En tales casos debe entregarse un manual en idioma nacional sobre el uso, la instalación y mantenimiento de la cosa o servicio de que se trate y brindarle adecuado asesoramiento. Igual obligación regirá en todos los casos en que se trate de artículos importados, siendo los sujetos anunciados en el artículo 4 responsables del contenido de la traducción.
 previo: "[[Capítulo 2, Información al consumidor y protección de su salud|Capítulo 2, Información al consumidor y protección de su salud]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

@@ -4,7 +4,7 @@ tags:
   - ingeniería-en-informática/redes/Capa-de-Red
   - nota/facultad
   - nota/investigacion
-  - ingeniería-electrónica/redes/Capa-de-Red
+  - carrera/ingeniería-electrónica/redes/Capa-de-Red
   - investigación/networking
   - investigación/protocolos/protocolo-de-internet
   - investigación/ciencias-de-la-computación/Networking

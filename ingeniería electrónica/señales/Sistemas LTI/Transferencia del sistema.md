@@ -1,7 +1,7 @@
 ---
 dia: 2023-11-17
 tags:
-  - ingeniería-electrónica/señales/Sistemas-LTI
+  - carrera/ingeniería-electrónica/señales/Sistemas-LTI
   - nota/facultad
 ---
 # Definición

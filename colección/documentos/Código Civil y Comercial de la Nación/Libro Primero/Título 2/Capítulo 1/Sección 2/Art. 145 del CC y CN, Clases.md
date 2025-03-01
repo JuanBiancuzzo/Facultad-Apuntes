@@ -6,7 +6,7 @@ articulo:
     texto: Las personas jurídicas son públicas o privadas
 previo: "[[Sección 2, Clasificación|Sección 2, Clasificación]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

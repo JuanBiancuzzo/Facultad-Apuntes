@@ -3,7 +3,7 @@ dia: 2023-01-23
 tags:
   - ingeniería-en-informática/proba/Intervalos-de-confianza
   - nota/facultad
-  - ingeniería-electrónica/proba/Intervalos-de-confianza
+  - carrera/ingeniería-electrónica/proba/Intervalos-de-confianza
 ---
 # Definición
 ---

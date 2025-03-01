@@ -17,7 +17,7 @@ articulo:
     texto: Si el resultado de la actividad del deudor consiste en una cosa, para su entrega se aplican las reglas de las obligaciones de dar cosas ciertas para constituir derechos reales.
 previo: "[[Sección 2, Obligaciones de hacer y de no hacer|Sección 2, Obligaciones de hacer y de no hacer]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

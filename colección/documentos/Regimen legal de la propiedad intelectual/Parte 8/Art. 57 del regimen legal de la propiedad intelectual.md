@@ -11,7 +11,7 @@ articulo:
     texto: Para las películas cinematográficas, el depósito consistirá en una relación del argumento, diálogos, fotografías y escenarios de sus principales escenas.
 previo: "[[Parte 8, Del registro de obras|Parte 8, Del registro de obras]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

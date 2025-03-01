@@ -2,7 +2,7 @@
 capitulo: 8
 tags:
   - ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
-  - ingeniería-electrónica/fisica-2/Circuitos-en-régimen-alterno-permanente
+  - carrera/ingeniería-electrónica/fisica-2/Circuitos-en-régimen-alterno-permanente
   - facultad/resumen
 nombreResumen: Circuitos en régimen alterno permanente
 ---

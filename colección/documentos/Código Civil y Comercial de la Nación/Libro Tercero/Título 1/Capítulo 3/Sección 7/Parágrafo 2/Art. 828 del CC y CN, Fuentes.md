@@ -6,7 +6,7 @@ articulo:
     texto: La solidaridad no se presume y debe surgir inequívocamente de la ley o del título constitutivo de la obligación.
 previo: "[[Parágrafo 2, Obligaciones solidarias. Disposiciones generales|Parágrafo 2, Obligaciones solidarias. Disposiciones generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

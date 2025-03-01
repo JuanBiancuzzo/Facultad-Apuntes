@@ -1,7 +1,7 @@
 ---
 capitulo: 4
 tags:
-  - ingeniería-electrónica/circuitos/Amplificadores-con-varios-dispositivos-activos-de-bajo-nivel-de-potencia
+  - carrera/ingeniería-electrónica/circuitos/Amplificadores-con-varios-dispositivos-activos-de-bajo-nivel-de-potencia
   - facultad/resumen
 referencias:
   - "431"

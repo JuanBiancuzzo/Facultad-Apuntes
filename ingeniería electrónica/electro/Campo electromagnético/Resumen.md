@@ -1,7 +1,7 @@
 ---
 capitulo: 2
 tags:
-  - ingeniería-electrónica/electro/Campo-electromagnético
+  - carrera/ingeniería-electrónica/electro/Campo-electromagnético
   - facultad/resumen
 nombreResumen: Campo electromagnético
 ---

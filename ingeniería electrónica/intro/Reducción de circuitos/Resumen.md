@@ -1,7 +1,7 @@
 ---
 capitulo: 2
 tags:
-  - ingeniería-electrónica/intro/Reducción-de-circuitos
+  - carrera/ingeniería-electrónica/intro/Reducción-de-circuitos
   - facultad/resumen
 nombreResumen: Reducción de circuitos
 ---

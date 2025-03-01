@@ -1,7 +1,7 @@
 ---
 dia: 2023-11-08
 tags:
-  - ingeniería-electrónica/dispo/Juntura-MOS
+  - carrera/ingeniería-electrónica/dispo/Juntura-MOS
   - nota/facultad
 aliases:
   - Inversión de la estructura MOS

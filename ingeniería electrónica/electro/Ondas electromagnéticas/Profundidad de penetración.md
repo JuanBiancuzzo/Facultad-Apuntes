@@ -1,7 +1,7 @@
 ---
 dia: 2024-09-14
 tags:
-  - ingeniería-electrónica/electro/Ondas-electromagnéticas-en-el-vacío
+  - carrera/ingeniería-electrónica/electro/Ondas-electromagnéticas-en-el-vacío
   - nota/facultad
 aliases:
   - Buen conductor#Buen conductor

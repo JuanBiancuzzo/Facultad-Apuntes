@@ -1,7 +1,7 @@
 ---
 dia: 2023-04-03
 tags:
-  - ingeniería-electrónica/seguridad/Protección-auditiva
+  - carrera/ingeniería-electrónica/seguridad/Protección-auditiva
   - nota/facultad
 ---
 # Definición

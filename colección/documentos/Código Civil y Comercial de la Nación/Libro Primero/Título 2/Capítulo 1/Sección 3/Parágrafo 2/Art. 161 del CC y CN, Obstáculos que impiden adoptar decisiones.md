@@ -15,7 +15,7 @@ articulo:
         texto: la asamblea puede conferir facultades extraordinarias al presidente o a la minoría, para realizar actos urgentes o necesarios; también puede remover al administrador.
 previo: "[[Parágrafo 2, Funcionamiento|Parágrafo 2, Funcionamiento]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

@@ -21,7 +21,7 @@ Vamos a investigar los protocolos que sean específicamente a través de interne
 
 ## Resumen
 ---
-#ingeniería-en-informática/redes/Redes-de-computadoras #ingeniería-electrónica/redes/Redes-de-computadoras 
+#ingeniería-en-informática/redes/Redes-de-computadoras #carrera/ingeniería-electrónica/redes/Redes-de-computadoras 
 Las [[Host|host]] que intercambian mensajes y llevan a cabo las acciones son los componentes [[Hardware|hardware]] o [[Software|software]] de cierto dispositivo. Cualquier actividad de [[Internet|internet]] que implique dos o más entidades remotas que se comunican por la [[Red|red]] están gobernadas por un [[Protocolo|protocolo]]
 
 ```tikz

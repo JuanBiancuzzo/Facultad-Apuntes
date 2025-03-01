@@ -1,7 +1,7 @@
 ---
 capitulo: 5
 tags:
-  - ingeniería-electrónica/señales/Muestreo-e-Interpolación
+  - carrera/ingeniería-electrónica/señales/Muestreo-e-Interpolación
   - facultad/resumen
 nombreResumen: Muestreo e Interpolación
 ---

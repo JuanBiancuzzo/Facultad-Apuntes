@@ -10,7 +10,7 @@ articulo:
     texto: Les corresponde implementar sistemas y medios preventivos que reduzcan el riesgo de conflictos de intereses en sus relaciones con la persona jurídica.
 previo: "[[Parágrafo 2, Funcionamiento|Parágrafo 2, Funcionamiento]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

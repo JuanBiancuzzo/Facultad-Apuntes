@@ -8,7 +8,7 @@ articulo:
     texto: La modificación del estatuto produce efectos desde su otorgamiento. Si requiere inscripción es oponible a terceros a partir de ésta, excepto que el tercero la conozca.
 previo: "[[Parágrafo 2, Funcionamiento|Parágrafo 2, Funcionamiento]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

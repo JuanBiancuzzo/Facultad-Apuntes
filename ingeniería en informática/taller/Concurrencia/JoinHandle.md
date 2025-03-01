@@ -4,7 +4,7 @@ tags:
   - ingeniería-en-informática/taller/Concurrencia
   - nota/facultad
   - lenguajes-de-programación/lenguaje-Rust
-  - ingeniería-electrónica/taller/Concurrencia
+  - carrera/ingeniería-electrónica/taller/Concurrencia
 ---
 # Definición
 ---

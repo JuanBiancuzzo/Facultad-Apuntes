@@ -1,7 +1,7 @@
 ---
 capitulo: 3
 tags:
-  - ingeniería-electrónica/seguridad/Prevención-de-incendios
+  - carrera/ingeniería-electrónica/seguridad/Prevención-de-incendios
   - facultad/resumen
 nombreResumen: Prevención de incendios
 ---

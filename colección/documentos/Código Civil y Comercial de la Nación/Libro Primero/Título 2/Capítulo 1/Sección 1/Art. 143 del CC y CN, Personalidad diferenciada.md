@@ -8,7 +8,7 @@ articulo:
     texto: Los miembros no responden por las obligaciones de la persona jurídica, excepto en los supuestos que expresamente se prevén en este Título y lo que disponga la ley especial.
 previo: "[[Sección 1, Personalidad. Composición|Sección 1, Personalidad. Composición]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

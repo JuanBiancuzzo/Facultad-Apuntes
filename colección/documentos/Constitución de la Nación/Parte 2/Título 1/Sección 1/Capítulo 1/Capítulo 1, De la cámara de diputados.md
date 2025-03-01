@@ -4,7 +4,7 @@ nombre: De la cámara de diputados
 num: 1
 previo: "[[Sección - Del poder Legislativo - 1 - Título|Sección - Del poder Legislativo - 1 - Título]]"
 tags:
-  - ingeniería-electrónica/legal/Capítulo
+  - carrera/ingeniería-electrónica/legal/Capítulo
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

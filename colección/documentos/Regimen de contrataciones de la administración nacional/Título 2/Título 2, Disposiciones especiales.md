@@ -4,7 +4,7 @@ nombre: Disposiciones especiales
 num: 2
 previo: "[[Regimen de contrataciones de la administración nacional|Regimen de contrataciones de la administración nacional]]"
 tags:
-  - ingeniería-electrónica/legal/Título
+  - carrera/ingeniería-electrónica/legal/Título
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

@@ -1,7 +1,7 @@
 ---
 capitulo: 1
 tags:
-  - ingeniería-electrónica/analisis-3/Topología-del-plano-complejo-y-límites
+  - carrera/ingeniería-electrónica/analisis-3/Topología-del-plano-complejo-y-límites
   - ingeniería-en-informática/analisis-3/Topología-del-plano-complejo-y-límites
   - facultad/resumen
 nombreResumen: Topología del plano complejo y límites

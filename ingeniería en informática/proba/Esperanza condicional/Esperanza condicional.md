@@ -4,8 +4,8 @@ tags:
   - ingeniería-en-informática/proba/Esperanza-condicional
   - nota/facultad
   - ingeniería-en-informática/proba/Representación-de-variables-aleatorias
-  - ingeniería-electrónica/proba/Esperanza-condicional
-  - ingeniería-electrónica/proba/Representación-de-variables-aleatorias
+  - carrera/ingeniería-electrónica/proba/Esperanza-condicional
+  - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
 ---
 # Definición
 ---

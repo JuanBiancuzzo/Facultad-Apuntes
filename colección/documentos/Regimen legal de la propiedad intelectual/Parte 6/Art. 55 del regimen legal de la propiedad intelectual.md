@@ -7,7 +7,7 @@ articulo:
     texto: Estos derechos quedan reservados a su autor, salvo pacto en contrario.
 previo: "[[Parte 6, De la venta|Parte 6, De la venta]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

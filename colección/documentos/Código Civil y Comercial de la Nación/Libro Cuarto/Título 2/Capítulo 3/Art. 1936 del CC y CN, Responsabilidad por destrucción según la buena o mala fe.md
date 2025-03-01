@@ -8,7 +8,7 @@ articulo:
     texto: Si la posesión es viciosa, responde de la destrucción total o parcial de la cosa, aunque se hubiera producido igualmente de estar la cosa en poder de quien tiene derecho a su restitución.
 previo: "[[Capítulo 3, Efectos de las relaciones de poder|Capítulo 3, Efectos de las relaciones de poder]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

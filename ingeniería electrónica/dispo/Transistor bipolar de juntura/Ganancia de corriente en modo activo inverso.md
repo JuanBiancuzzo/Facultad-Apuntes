@@ -1,7 +1,7 @@
 ---
 dia: 2023-10-14
 tags:
-  - ingeniería-electrónica/dispo/Transistor-bipolar-de-juntura
+  - carrera/ingeniería-electrónica/dispo/Transistor-bipolar-de-juntura
   - nota/facultad
 aliases:
   - Ganancia de corriente en MAI

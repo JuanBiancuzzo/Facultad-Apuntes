@@ -7,7 +7,7 @@ aliases:
   - Inverse Discrete Fourier Transform
   - Transformación Inversa Discreta de Fourier
 tags:
-  - ingeniería-electrónica/señales/Transformada-discreta-de-Fourier
+  - carrera/ingeniería-electrónica/señales/Transformada-discreta-de-Fourier
   - nota/facultad
 ---
 # Definición

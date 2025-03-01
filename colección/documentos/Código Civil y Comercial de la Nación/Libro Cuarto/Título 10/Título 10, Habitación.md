@@ -4,7 +4,7 @@ nombre: Habitación
 num: 10
 previo: "[[Libro 4, Derechos Reales|Libro 4, Derechos Reales]]"
 tags:
-  - ingeniería-electrónica/legal/Título
+  - carrera/ingeniería-electrónica/legal/Título
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

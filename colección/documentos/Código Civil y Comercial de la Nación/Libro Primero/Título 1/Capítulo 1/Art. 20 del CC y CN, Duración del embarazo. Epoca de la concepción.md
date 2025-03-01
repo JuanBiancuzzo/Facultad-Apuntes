@@ -6,7 +6,7 @@ articulo:
     texto: Epoca de la concepción es el lapso entre el máximo y el mínimo fijados para la duración del embarazo. Se presume, excepto prueba en contrario, que el máximo de tiempo del embarazo es de trescientos días y el mínimo de ciento ochenta, excluyendo el día del nacimiento.
 previo: "[[Capítulo 1, Comienzo de la existencia|Capítulo 1, Comienzo de la existencia]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

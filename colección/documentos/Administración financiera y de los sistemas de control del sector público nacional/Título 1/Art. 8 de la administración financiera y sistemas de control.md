@@ -18,7 +18,7 @@ articulo:
     texto: Serán aplicables las normas de esta ley, en lo relativo a la rendición de cuentas de las organizaciones privadas a las que se hayan acordado subsidios o aportes y a las instituciones o fondos cuya administración, guarda o conservación está a cargo del Estado nacional a través de sus Jurisdicciones o Entidades.
 previo: "[[colección/documentos/Administración financiera y de los sistemas de control del sector público nacional/Título 1/Título 1, Disposiciones generales|Título 1, Disposiciones generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

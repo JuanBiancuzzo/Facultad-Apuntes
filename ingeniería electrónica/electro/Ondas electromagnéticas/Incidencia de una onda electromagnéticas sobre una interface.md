@@ -1,7 +1,7 @@
 ---
 dia: 2024-10-04
 tags:
-  - ingeniería-electrónica/electro/Ondas-electromagnéticas-en-el-vacío
+  - carrera/ingeniería-electrónica/electro/Ondas-electromagnéticas-en-el-vacío
   - nota/facultad
 aliases:
   - Incidencia normal de una onda electromagnéticas sobre una interface#Incidencia normal

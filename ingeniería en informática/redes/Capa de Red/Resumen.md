@@ -2,7 +2,7 @@
 capitulo: 4
 tags:
   - ingeniería-en-informática/redes/Capa-de-Red
-  - ingeniería-electrónica/redes/Capa-de-Red
+  - carrera/ingeniería-electrónica/redes/Capa-de-Red
   - facultad/resumen
 referencias:
   - "592"

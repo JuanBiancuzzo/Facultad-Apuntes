@@ -1,7 +1,7 @@
 ---
 dia: 2024-03-11
 tags:
-  - ingeniería-electrónica/circuitos/Circuitos-con-diodos
+  - carrera/ingeniería-electrónica/circuitos/Circuitos-con-diodos
   - nota/facultad
 aliases:
   - Recta característica de un componente

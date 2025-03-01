@@ -3,8 +3,8 @@ dia: 2024-09-02
 tags:
   - ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
   - nota/facultad
-  - ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
-  - ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - carrera/ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
+  - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
 ---
 # Definición
 ---

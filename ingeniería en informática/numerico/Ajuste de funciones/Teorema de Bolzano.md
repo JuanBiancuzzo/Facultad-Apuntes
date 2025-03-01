@@ -3,7 +3,7 @@ dia: 2023-08-23
 tags:
   - ingeniería-en-informática/numerico/Ajuste-de-funciones
   - nota/facultad
-  - ingeniería-electrónica/numerico/Ajuste-de-funciones
+  - carrera/ingeniería-electrónica/numerico/Ajuste-de-funciones
 aliases:
   - Teorema del valor medio
 ---

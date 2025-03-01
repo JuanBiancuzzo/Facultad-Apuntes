@@ -6,7 +6,7 @@ articulo:
     texto: Los contratos son a título oneroso cuando las ventajas que procuran a una de las partes les son concedidas por una prestación que ella ha hecho o se obliga a hacer a la otra. Son a título gratuito cuando aseguran a uno o a otro de los contratantes alguna ventaja, independiente de toda prestación a su cargo.
 previo: "[[Capítulo 2, Clasificación de los contratos|Capítulo 2, Clasificación de los contratos]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

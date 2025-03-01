@@ -6,7 +6,7 @@ articulo:
     texto: El acto voluntario es el ejecutado con discernimiento, intención y libertad, que se manifiesta por un hecho exterior.
 previo: "[[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 4/Capítulo 1/Capítulo 1, Disposiciones generales|Capítulo 1, Disposiciones generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

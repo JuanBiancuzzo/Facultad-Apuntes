@@ -6,7 +6,7 @@ articulo:
     texto: Toda persona humana puede ejercer por sí misma sus derechos, excepto las limitaciones expresamente previstas en este Código y en una sentencia judicial.
 previo: "[[Sección 1, Principios generales|Sección 1, Principios generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

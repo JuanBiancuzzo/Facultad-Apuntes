@@ -4,7 +4,7 @@ aliases:
   - FFT
   - Transformada Rápida de Fourier
 tags:
-  - ingeniería-electrónica/señales/Transformada-discreta-de-Fourier
+  - carrera/ingeniería-electrónica/señales/Transformada-discreta-de-Fourier
   - nota/facultad
   - investigación/ciencias-de-la-computación/algoritmos
 ---

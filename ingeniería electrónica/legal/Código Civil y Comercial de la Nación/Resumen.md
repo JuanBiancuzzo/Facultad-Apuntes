@@ -1,7 +1,7 @@
 ---
 capitulo: 1
 tags:
-  - ingeniería-electrónica/legal/Código-Civil-y-Comercial-de-la-Nación
+  - carrera/ingeniería-electrónica/legal/Código-Civil-y-Comercial-de-la-Nación
   - facultad/resumen
 nombreResumen: Código Civil y Comercial de la Nación
 ---

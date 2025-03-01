@@ -2,7 +2,7 @@
 capitulo: 2
 tags:
   - ingeniería-en-informática/redes/Capa-de-aplicación
-  - ingeniería-electrónica/redes/Capa-de-aplicación
+  - carrera/ingeniería-electrónica/redes/Capa-de-aplicación
   - facultad/resumen
 referencias:
   - "590"

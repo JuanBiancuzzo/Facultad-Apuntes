@@ -6,7 +6,7 @@ articulo:
     texto: La obligación se extingue por confusión cuando las calidades de acreedor y de deudor se reúnen en una misma persona y en un mismo patrimonio.
 previo: "[[Sección 2, Confusión|Sección 2, Confusión]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

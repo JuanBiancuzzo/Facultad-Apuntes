@@ -3,7 +3,7 @@ dia: 2024-06-05
 tags:
   - ingeniería-en-informática/redes/Capa-de-Transporte
   - nota/facultad
-  - ingeniería-electrónica/redes/Capa-de-Transporte
+  - carrera/ingeniería-electrónica/redes/Capa-de-Transporte
 ---
 # Definición
 ---

@@ -4,7 +4,7 @@ nombre: Forma
 num: 7
 previo: "[[Título 2, Contratos en general|Título 2, Contratos en general]]"
 tags:
-  - ingeniería-electrónica/legal/Capítulo
+  - carrera/ingeniería-electrónica/legal/Capítulo
 ---
 ```dataviewjs
     await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

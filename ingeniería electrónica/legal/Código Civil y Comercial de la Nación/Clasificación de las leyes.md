@@ -1,7 +1,7 @@
 ---
 dia: 2024-01-17
 tags:
-  - ingeniería-electrónica/legal/Código-Civil-y-Comercial-de-la-Nación
+  - carrera/ingeniería-electrónica/legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
 ---
 # Definición

@@ -6,7 +6,7 @@ articulo:
     texto: La oferta es la manifestación dirigida a persona determinada o determinable, con la intención de obligarse y con las precisiones necesarias para establecer los efectos que debe producir de ser aceptada.
 previo: "[[Sección 1, Consentimiento, oferta y aceptación|Sección 1, Consentimiento, oferta y aceptación]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

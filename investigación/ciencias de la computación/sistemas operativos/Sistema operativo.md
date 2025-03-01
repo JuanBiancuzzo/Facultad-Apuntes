@@ -17,7 +17,7 @@ Vamos a investigar como funcione un sistema operativo desde $0$
 
 ## Resumen
 ---
-#ingeniería-en-informática/sisop/Kernel #ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración 
+#ingeniería-en-informática/sisop/Kernel #carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración 
 El [[Software|software]] que maneja y dispone de los recursos de una [[Computadora|computadora]], con esta definición el [[Kernel|kernel]] puede ser equivalente al sistema operativo
 
 Este usa las siguientes abstracciones

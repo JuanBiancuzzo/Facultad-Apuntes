@@ -20,7 +20,7 @@ articulo:
     texto: Por su parte, los empleadores podrán optar por contratar un sistema privado de capitalización a su costo, a fin de solventar la indemnización prevista en el presente artículo y/o la suma que libremente se pacte entre las partes para el supuesto de desvinculación por mutuo acuerdo conforme artículo 241 de la presente ley.
 previo: "[[Capítulo 4, De la extinción del contrato de trabajo por justa causa|Capítulo 4, De la extinción del contrato de trabajo por justa causa]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

@@ -6,7 +6,7 @@ articulo:
     texto: Son personas jurídicas todos los entes a los cuales el ordenamiento jurídico les confiere aptitud para adquirir derechos y contraer obligaciones para el cumplimiento de su objeto y los fines de su creación.
 previo: "[[Sección 1, Personalidad. Composición|Sección 1, Personalidad. Composición]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

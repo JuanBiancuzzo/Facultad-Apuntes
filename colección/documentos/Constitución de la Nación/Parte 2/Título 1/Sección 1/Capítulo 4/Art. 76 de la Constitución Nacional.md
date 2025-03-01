@@ -7,7 +7,7 @@ articulo:
     texto: La caducidad resultante del transcurso del plazo previsto en el párrafo anterior no importará revisión de las relaciones jurídicas nacidas al amparo de las normas dictadas en consecuencia de la delegación legislativa.
 previo: "[[Capítulo 4, Atribuciones del Congreso|Capítulo 4, Atribuciones del Congreso]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

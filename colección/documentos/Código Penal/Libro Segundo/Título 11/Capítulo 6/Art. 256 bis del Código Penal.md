@@ -7,7 +7,7 @@ articulo:
     texto: Si aquella conducta estuviera destinada a hacer valer indebidamente una influencia ante un magistrado del Poder Judicial o del Ministerio Público, a fin de obtener la emisión, dictado, demora u omisión de un dictamen, resolución o fallo en asuntos sometidos a su competencia, el máximo de la pena de prisión o reclusión se elevará a doce años.
 previo: "[[Capítulo 6, Cohecho y tráfico de influencias|Capítulo 6, Cohecho y tráfico de influencias]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 esBis: true
 ---
 # Artículo

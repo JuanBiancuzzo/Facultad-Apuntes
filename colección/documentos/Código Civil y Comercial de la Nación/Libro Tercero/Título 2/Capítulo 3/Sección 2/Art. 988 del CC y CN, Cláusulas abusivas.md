@@ -15,7 +15,7 @@ articulo:
         texto: las que por su contenido, redacción o presentación, no son razonablemente previsibles.
 previo: "[[Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas|Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

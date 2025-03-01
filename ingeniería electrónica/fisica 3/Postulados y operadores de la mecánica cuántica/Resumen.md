@@ -1,7 +1,7 @@
 ---
 capitulo: 7
 tags:
-  - ingeniería-electrónica/fisica-3/Postulados-y-operadores-de-la-mecánica-cuántica
+  - carrera/ingeniería-electrónica/fisica-3/Postulados-y-operadores-de-la-mecánica-cuántica
   - ingeniería-en-informática/fisica-3/Postulados-y-operadores-de-la-mecánica-cuántica
   - facultad/resumen
 nombreResumen: Postulados y operadores de la mecánica cuántica

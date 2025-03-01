@@ -15,7 +15,7 @@ articulo:
         texto: el acto lícito de la persona menor de edad que no ha cumplido trece años, sin perjuicio de lo establecido en disposiciones especiales.
 previo: "[[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 4/Capítulo 1/Capítulo 1, Disposiciones generales|Capítulo 1, Disposiciones generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

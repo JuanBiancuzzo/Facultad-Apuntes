@@ -6,7 +6,7 @@ articulo:
     texto: La entrega de documentos suscriptos por el deudor en pago de la deuda y, en general, cualquier modificación accesoria de la obligación primitiva, no comporta novación.
 previo: "[[Sección 3, Novación|Sección 3, Novación]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

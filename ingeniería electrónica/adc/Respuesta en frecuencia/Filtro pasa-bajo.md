@@ -1,7 +1,7 @@
 ---
 dia: 2024-04-09
 tags:
-  - ingeniería-electrónica/adc/Respuesta-en-frecuencia
+  - carrera/ingeniería-electrónica/adc/Respuesta-en-frecuencia
   - nota/facultad
   - ingeniería-en-informática/adc/Respuesta-en-frecuencia
 ---

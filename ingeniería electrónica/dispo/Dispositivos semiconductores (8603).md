@@ -4,7 +4,7 @@ estado: Terminado
 plan: "2009"
 codigo: "8603"
 tags:
-  - ingeniería-electrónica/dispo
+  - carrera/ingeniería-electrónica/dispo
   - facultad/materia
 etapa: terminado
 correlativas:

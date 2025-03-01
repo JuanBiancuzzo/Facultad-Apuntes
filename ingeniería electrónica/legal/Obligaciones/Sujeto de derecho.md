@@ -1,7 +1,7 @@
 ---
 dia: 2024-01-18
 tags:
-  - ingeniería-electrónica/legal/Obligaciones
+  - carrera/ingeniería-electrónica/legal/Obligaciones
   - nota/facultad
 aliases:
   - Titular

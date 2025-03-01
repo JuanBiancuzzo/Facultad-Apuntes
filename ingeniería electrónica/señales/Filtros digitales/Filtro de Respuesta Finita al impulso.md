@@ -5,7 +5,7 @@ aliases:
   - Filtro RFI
   - Filtro de Finite impulse response
 tags:
-  - ingeniería-electrónica/señales/Filtros-digitales
+  - carrera/ingeniería-electrónica/señales/Filtros-digitales
   - nota/facultad
 etapa: sin-empezar
 ---

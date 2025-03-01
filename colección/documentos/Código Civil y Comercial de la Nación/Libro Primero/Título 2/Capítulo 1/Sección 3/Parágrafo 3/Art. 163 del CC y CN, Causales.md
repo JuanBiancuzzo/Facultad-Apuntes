@@ -29,7 +29,7 @@ articulo:
         texto: cualquier otra causa prevista en el estatuto o en otras disposiciones de este Título o de ley especial.
 previo: "[[Parágrafo 3, Disolución. Liquidación|Parágrafo 3, Disolución. Liquidación]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

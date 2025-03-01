@@ -1,7 +1,7 @@
 ---
 dia: 2023-07-17
 tags:
-  - ingeniería-electrónica/seguridad/Ergonomia
+  - carrera/ingeniería-electrónica/seguridad/Ergonomia
   - nota/facultad
 ---
 # Definición

@@ -1,7 +1,7 @@
 ---
 dia: 2022-09-02
 tags:
-  - ingeniería-electrónica/analisis-3/Topología-del-plano-complejo-y-límites
+  - carrera/ingeniería-electrónica/analisis-3/Topología-del-plano-complejo-y-límites
   - nota/facultad
   - ingeniería-en-informática/analisis-3/Topología-del-plano-complejo-y-límites
 ---

@@ -4,7 +4,7 @@ nombre: Prenda
 num: 4
 previo: "[[Título 12, Derechos reales de garantía|Título 12, Derechos reales de garantía]]"
 tags:
-  - ingeniería-electrónica/legal/Capítulo
+  - carrera/ingeniería-electrónica/legal/Capítulo
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

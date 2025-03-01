@@ -1,7 +1,7 @@
 ---
 dia: 2022-12-04
 tags:
-  - ingeniería-electrónica/analisis-3/Integrales-impropias
+  - carrera/ingeniería-electrónica/analisis-3/Integrales-impropias
   - nota/facultad
   - ingeniería-en-informática/analisis-3/Integrales-impropias
 ---

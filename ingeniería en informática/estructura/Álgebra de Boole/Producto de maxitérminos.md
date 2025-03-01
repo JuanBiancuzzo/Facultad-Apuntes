@@ -4,7 +4,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/discreta/Álgebra-proposicional
   - ingeniería-en-informática/estructura/Álgebra-de-Boole
-  - ingeniería-electrónica/estructura/Álgebra-de-Boole
+  - carrera/ingeniería-electrónica/estructura/Álgebra-de-Boole
 aliases:
   - Producto de sumas
 ---

@@ -1,7 +1,7 @@
 ---
 dia: 2022-11-25
 tags:
-  - ingeniería-electrónica/analisis-3/Transformaciones-conformes
+  - carrera/ingeniería-electrónica/analisis-3/Transformaciones-conformes
   - nota/facultad
   - ingeniería-en-informática/analisis-3/Transformaciones-conformes
 ---

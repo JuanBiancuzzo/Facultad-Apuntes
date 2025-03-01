@@ -4,9 +4,9 @@ tags:
   - ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Magnetismo-estacionario-en-medios-materiales
-  - ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
-  - ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
-  - ingeniería-electrónica/fisica-2/Magnetismo-estacionario-en-medios-materiales
+  - carrera/ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
+  - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - carrera/ingeniería-electrónica/fisica-2/Magnetismo-estacionario-en-medios-materiales
 referencias:
   - "215"
 aliases:

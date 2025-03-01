@@ -1,7 +1,7 @@
 ---
 dia: 2024-09-09
 tags:
-  - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
+  - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - nota/facultad
 referencias:
   - "234"

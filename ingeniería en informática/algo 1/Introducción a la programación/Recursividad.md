@@ -3,8 +3,8 @@ dia: 2024-10-09
 tags:
   - ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - nota/facultad
-  - ingeniería-electrónica/algo-1/Introducción-a-la-programación
-  - ingeniería-electrónica/algo-1/Lenguaje-C
+  - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
+  - carrera/ingeniería-electrónica/algo-1/Lenguaje-C
   - ingeniería-en-informática/algo-1/Lenguaje-C
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
 aliases:

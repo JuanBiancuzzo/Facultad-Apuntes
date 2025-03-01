@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/orga/Machine-learning
   - investigación/machine-Learning
-  - ingeniería-electrónica/proba/Representación-de-variables-aleatorias
+  - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
   - investigación/ciencias-de-la-computación/Machine-learning
   - "#investigación/matemática/Estadística/Machine-learning"
 aliases:

@@ -2,7 +2,7 @@
 capitulo: 8
 tags:
   - ingeniería-en-informática/fisica-1/Optica-geométrica
-  - ingeniería-electrónica/fisica-1/Optica-geométrica
+  - carrera/ingeniería-electrónica/fisica-1/Optica-geométrica
   - facultad/resumen
 nombreResumen: Optica geométrica
 ---

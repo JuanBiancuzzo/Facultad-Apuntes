@@ -6,7 +6,7 @@ articulo:
     texto: La aprobación administrativa de las cláusulas generales no obsta a su control judicial.
 previo: "[[Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas|Sección 2, Contratos celebrados por adhesión a cláusulas generales predispuestas]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

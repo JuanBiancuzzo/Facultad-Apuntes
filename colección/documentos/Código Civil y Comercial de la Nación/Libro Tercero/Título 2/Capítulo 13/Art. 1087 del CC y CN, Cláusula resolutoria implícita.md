@@ -6,7 +6,7 @@ articulo:
     texto: En los contratos bilaterales la cláusula resolutoria es implícita y queda sujeta a lo dispuesto en los artículos 1088 y 1089.
 previo: "[[Capítulo 13, Extinción modificación y adecuación del contrato|Capítulo 13, Extinción modificación y adecuación del contrato]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

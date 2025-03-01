@@ -6,8 +6,8 @@ tags:
   - ingeniería-en-informática/discreta/Álgebra-de-conjuntos
   - ingeniería-en-informática/analisis-2/Nomenclatura
   - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
-  - ingeniería-electrónica/analisis-2/Nomenclatura
-  - ingeniería-electrónica/algebra-2/Espacios-Vectoriales
+  - carrera/ingeniería-electrónica/analisis-2/Nomenclatura
+  - carrera/ingeniería-electrónica/algebra-2/Espacios-Vectoriales
   - licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
 referencias:
   - "411"

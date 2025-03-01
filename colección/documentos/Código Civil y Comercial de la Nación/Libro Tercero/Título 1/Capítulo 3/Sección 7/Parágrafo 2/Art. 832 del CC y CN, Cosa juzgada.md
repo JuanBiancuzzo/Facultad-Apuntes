@@ -8,7 +8,7 @@ articulo:
     texto: El deudor no puede oponer a los demás coacreedores la sentencia obtenida contra uno de ellos; pero los coacreedores pueden oponerla al deudor, sin perjuicio de las excepciones personales que éste tenga frente a cada uno de ellos.
 previo: "[[Parágrafo 2, Obligaciones solidarias. Disposiciones generales|Parágrafo 2, Obligaciones solidarias. Disposiciones generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

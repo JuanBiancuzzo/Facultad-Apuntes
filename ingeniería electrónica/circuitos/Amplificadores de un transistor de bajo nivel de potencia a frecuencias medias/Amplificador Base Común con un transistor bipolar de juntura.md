@@ -4,7 +4,7 @@ aliases:
   - Amplificador Base Común
   - Amplificador Base Común con TBJ
 tags:
-  - ingeniería-electrónica/circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
+  - carrera/ingeniería-electrónica/circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
   - nota/facultad
 ---
 # Definición

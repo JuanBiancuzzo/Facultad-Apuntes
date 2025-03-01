@@ -1,7 +1,7 @@
 ---
 dia: 2024-03-24
 tags:
-  - ingeniería-electrónica/circuitos/Circuitos-con-diodos
+  - carrera/ingeniería-electrónica/circuitos/Circuitos-con-diodos
   - nota/facultad
 ---
 # Definición

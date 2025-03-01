@@ -1,7 +1,7 @@
 ---
 dia: 2023-09-03
 tags:
-  - ingeniería-electrónica/intro/Circuitos-con-resistencias
+  - carrera/ingeniería-electrónica/intro/Circuitos-con-resistencias
   - nota/facultad
 ---
 # Definición

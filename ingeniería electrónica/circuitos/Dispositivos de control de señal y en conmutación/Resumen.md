@@ -1,7 +1,7 @@
 ---
 capitulo: 2
 tags:
-  - ingeniería-electrónica/circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
+  - carrera/ingeniería-electrónica/circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
   - facultad/resumen
 referencias:
   - "426"

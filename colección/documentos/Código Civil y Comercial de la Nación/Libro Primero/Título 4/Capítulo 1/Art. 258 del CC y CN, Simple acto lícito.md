@@ -6,7 +6,7 @@ articulo:
     texto: El simple acto lícito es la acción voluntaria no prohibida por la ley, de la que resulta alguna adquisición, modificación o extinción de relaciones o situaciones jurídicas.
 previo: "[[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 4/Capítulo 1/Capítulo 1, Disposiciones generales|Capítulo 1, Disposiciones generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

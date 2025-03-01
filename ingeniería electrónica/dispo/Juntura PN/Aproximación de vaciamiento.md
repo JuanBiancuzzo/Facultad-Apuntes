@@ -1,7 +1,7 @@
 ---
 dia: 2023-09-06
 tags:
-  - ingeniería-electrónica/dispo/Juntura-PN
+  - carrera/ingeniería-electrónica/dispo/Juntura-PN
   - nota/facultad
 ---
 # Hipótesis

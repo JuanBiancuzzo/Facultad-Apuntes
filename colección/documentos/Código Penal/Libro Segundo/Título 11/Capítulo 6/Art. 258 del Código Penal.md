@@ -5,7 +5,7 @@ articulo:
     texto: Será reprimido con prisión de uno a seis años, el que directa o indirectamente diere u ofreciere dádivas en procura de alguna de las conductas reprimidas por los artículos 256 y 256 bis, primer párrafo. Si la dádiva se hiciere u ofreciere con el fin de obtener alguna de las conductas tipificadas en los artículos 256 bis, segundo párrafo y 257, la pena será de reclusión o prisión de dos a seis años. Si el culpable fuere funcionario público, sufrirá además inhabilitación especial de dos a seis años en el primer caso y de tres a diez años en el segundo.
 previo: "[[Capítulo 6, Cohecho y tráfico de influencias|Capítulo 6, Cohecho y tráfico de influencias]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

@@ -1,9 +1,9 @@
 ---
 dia: 2024-02-15
 tags:
-  - ingeniería-electrónica/dispo/Amplificador-emisor-y-source-común
+  - carrera/ingeniería-electrónica/dispo/Amplificador-emisor-y-source-común
   - nota/facultad
-  - ingeniería-electrónica/circuitos/Fuentes-de-corriente-y-circuitos-con-cargas-activas
+  - carrera/ingeniería-electrónica/circuitos/Fuentes-de-corriente-y-circuitos-con-cargas-activas
 aliases:
   - Espejo de corriente simple
   - Fuente espejo simple

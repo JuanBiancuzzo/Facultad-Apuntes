@@ -1,10 +1,10 @@
 ---
 dia: 2023-03-28
 tags:
-  - ingeniería-electrónica/seguridad/Prevención-de-incendios
+  - carrera/ingeniería-electrónica/seguridad/Prevención-de-incendios
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Termodinámica
-  - ingeniería-electrónica/fisica-2/Termodinámica
+  - carrera/ingeniería-electrónica/fisica-2/Termodinámica
 ---
 # Definición
 ---

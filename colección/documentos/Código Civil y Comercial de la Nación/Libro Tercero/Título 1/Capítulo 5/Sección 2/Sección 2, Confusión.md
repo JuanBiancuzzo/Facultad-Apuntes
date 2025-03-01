@@ -4,7 +4,7 @@ nombre: Confusión
 num: 2
 previo: "[[Capítulo 5, Otros modos de extinción|Capítulo 5, Otros modos de extinción]]"
 tags:
-  - ingeniería-electrónica/legal/Sección
+  - carrera/ingeniería-electrónica/legal/Sección
 ---
 ```dataviewjs
     await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

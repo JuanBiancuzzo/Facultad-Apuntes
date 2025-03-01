@@ -1,7 +1,7 @@
 ---
 dia: 2024-02-16
 tags:
-  - ingeniería-electrónica/legal/Derechos-humanos
+  - carrera/ingeniería-electrónica/legal/Derechos-humanos
   - nota/facultad
 ---
 # Definición

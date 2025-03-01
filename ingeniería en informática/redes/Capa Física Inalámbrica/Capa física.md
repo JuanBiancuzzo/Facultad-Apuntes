@@ -3,7 +3,7 @@ dia: 2024-03-11
 tags:
   - ingeniería-en-informática/redes/Capa-Física-Inalámbrica
   - nota/facultad
-  - ingeniería-electrónica/redes/Capa-Física-Inalámbrica
+  - carrera/ingeniería-electrónica/redes/Capa-Física-Inalámbrica
 ---
 # Definición
 ---

@@ -4,7 +4,7 @@ codigo: TB069
 plan: 2023
 estado: Voy a cursarla este cuatri
 tags:
-  - ingeniería-electrónica/electro
+  - carrera/ingeniería-electrónica/electro
   - facultad/materia
 etapa: ampliar
 correlativas:

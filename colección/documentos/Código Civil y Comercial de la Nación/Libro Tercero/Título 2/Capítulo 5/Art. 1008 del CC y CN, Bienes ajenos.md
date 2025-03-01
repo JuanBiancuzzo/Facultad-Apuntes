@@ -8,7 +8,7 @@ articulo:
     texto: El que ha contratado sobre bienes ajenos como propios es responsable de los daños si no hace entrega de ellos.
 previo: "[[Capítulo 5, Objeto|Capítulo 5, Objeto]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

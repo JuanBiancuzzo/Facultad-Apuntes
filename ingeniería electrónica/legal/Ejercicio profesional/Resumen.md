@@ -1,7 +1,7 @@
 ---
 capitulo: 9
 tags:
-  - ingeniería-electrónica/legal/Ejercicio-profesional
+  - carrera/ingeniería-electrónica/legal/Ejercicio-profesional
   - facultad/resumen
 nombreResumen: Ejercicio profesional
 ---

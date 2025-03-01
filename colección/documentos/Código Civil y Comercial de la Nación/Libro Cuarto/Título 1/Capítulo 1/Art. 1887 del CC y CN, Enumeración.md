@@ -37,7 +37,7 @@ articulo:
         texto: la prenda.
 previo: "[[Capítulo 1, Principios comunes|Capítulo 1, Principios comunes]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

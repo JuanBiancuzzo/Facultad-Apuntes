@@ -9,7 +9,7 @@ articulo:
     texto: La legislación establecerá procedimientos eficaces para la prevención y solución de conflictos, y los marcos regulatorios de los servicios públicos de competencia nacional, previendo la necesaria participación de las asociaciones de consumidores y usuarios y de las provincias interesadas, en los organismos de control.
 previo: "[[Capítulo 2, Nuevos derechos y garantías|Capítulo 2, Nuevos derechos y garantías]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

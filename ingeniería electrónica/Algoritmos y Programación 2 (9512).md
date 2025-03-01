@@ -1,7 +1,7 @@
 ---
 plan: 2009
 tags:
-  - ingeniería-electrónica/algo-2
+  - carrera/ingeniería-electrónica/algo-2
   - facultad/materia
 correlativas:
   - "[[ingeniería electrónica/Algoritmos y Programación 1 (9511).md|Algoritmos y Programación 1]]"

@@ -1,7 +1,7 @@
 ---
 capitulo: 7
 tags:
-  - ingeniería-electrónica/seguridad/Contaminación-del-agua
+  - carrera/ingeniería-electrónica/seguridad/Contaminación-del-agua
   - facultad/resumen
 nombreResumen: Contaminación del agua
 ---

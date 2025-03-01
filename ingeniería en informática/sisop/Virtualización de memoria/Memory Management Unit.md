@@ -5,7 +5,7 @@ aliases:
 tags:
   - ingeniería-en-informática/sisop/Virtualización-de-memoria
   - nota/facultad
-  - ingeniería-electrónica/embebidos/Memorias
+  - carrera/ingeniería-electrónica/embebidos/Memorias
 ---
 # Definición
 ---

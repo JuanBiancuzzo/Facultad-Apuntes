@@ -2,7 +2,7 @@
 capitulo: 8
 tags:
   - ingeniería-en-informática/algebra-2/Formas-cuadráticas
-  - ingeniería-electrónica/algebra-2/Formas-cuadráticas
+  - carrera/ingeniería-electrónica/algebra-2/Formas-cuadráticas
   - facultad/resumen
 nombreResumen: Formas cuadráticas
 ---

@@ -4,7 +4,7 @@ grupos:
  - Capítulo
 artConNombre: false
 tags: 
- - ingeniería-electrónica/legal/documento
+ - carrera/ingeniería-electrónica/legal/documento
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

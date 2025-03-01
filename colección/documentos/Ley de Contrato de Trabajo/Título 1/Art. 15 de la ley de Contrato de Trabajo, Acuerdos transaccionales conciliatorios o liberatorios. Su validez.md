@@ -6,7 +6,7 @@ articulo:
     texto: Los acuerdos transaccionales, conciliatorios o liberatorios sólo serán válidos cuando se realicen con intervención de la autoridad judicial o administrativa, y mediare resolución fundada de cualquiera de ésta que acredite que mediante tales actos se ha alcanzado una justa composición de los derechos e intereses de las partes.
 previo: "[[colección/documentos/Ley de Contrato de Trabajo/Título 1/Título 1, Disposiciones Generales|Título 1, Disposiciones Generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

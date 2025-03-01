@@ -4,7 +4,7 @@ etapa: sin-empezar
 referencias:
   - "629"
 tags:
-  - ingeniería-electrónica/circuitos/Fuentes-de-corriente-y-circuitos-con-cargas-activas
+  - carrera/ingeniería-electrónica/circuitos/Fuentes-de-corriente-y-circuitos-con-cargas-activas
   - nota/facultad
 aliases:
   - Amplificador clase A#Clase A

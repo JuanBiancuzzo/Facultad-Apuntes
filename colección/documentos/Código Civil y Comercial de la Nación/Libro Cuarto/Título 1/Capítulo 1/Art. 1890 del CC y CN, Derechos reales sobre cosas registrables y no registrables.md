@@ -6,7 +6,7 @@ articulo:
     texto: Los derechos reales recaen sobre cosas registrables cuando la ley requiere la inscripción de los títulos en el respectivo registro a los efectos que correspondan. Recaen sobre cosas no registrables, cuando los documentos portantes de derechos sobre su objeto no acceden a un registro a los fines de su inscripción.
 previo: "[[Capítulo 1, Principios comunes|Capítulo 1, Principios comunes]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

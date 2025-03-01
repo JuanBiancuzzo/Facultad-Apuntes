@@ -10,7 +10,7 @@ articulo:
     texto: Las relaciones de consumo se rigen por el régimen establecido en esta ley y sus reglamentaciones sin perjuicio de que el proveedor, por la actividad que desarrolle, esté alcanzado asimismo por otra normativa específica.
 previo: "[[colección/documentos/Ley de Defensa del consumidor/Título 1/Capítulo 1/Capítulo 1, Disposiciones generales|Capítulo 1, Disposiciones generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

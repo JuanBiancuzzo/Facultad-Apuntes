@@ -4,7 +4,7 @@ estado: Terminado
 plan: "1986"
 codigo: "8604"
 tags:
-  - ingeniería-electrónica/adc
+  - carrera/ingeniería-electrónica/adc
   - facultad/materia
 etapa: terminado
 correlativas:

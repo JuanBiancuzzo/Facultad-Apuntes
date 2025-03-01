@@ -1,7 +1,7 @@
 ---
 capitulo: 3
 tags:
-  - ingeniería-electrónica/embebidos/Memorias
+  - carrera/ingeniería-electrónica/embebidos/Memorias
   - facultad/resumen
 nombreResumen: Memorias
 ---

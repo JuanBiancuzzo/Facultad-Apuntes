@@ -2,7 +2,7 @@
 capitulo: 3
 tags:
   - ingeniería-en-informática/algo-1/Punteros
-  - ingeniería-electrónica/algo-1/Punteros
+  - carrera/ingeniería-electrónica/algo-1/Punteros
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - facultad/resumen
 nombreResumen: Punteros

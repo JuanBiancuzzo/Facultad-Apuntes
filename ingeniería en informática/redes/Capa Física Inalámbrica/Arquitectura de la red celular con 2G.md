@@ -3,7 +3,7 @@ dia: 2024-08-30
 tags:
   - ingeniería-en-informática/redes/Capa-Física-Inalámbrica
   - nota/facultad
-  - ingeniería-electrónica/redes/Capa-Física-Inalámbrica
+  - carrera/ingeniería-electrónica/redes/Capa-Física-Inalámbrica
 aliases:
   - Red 2G
   - Red Celular 2G

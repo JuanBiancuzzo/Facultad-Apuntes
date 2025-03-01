@@ -15,7 +15,7 @@ Vamos a investigar como funciona y como fue pensada la arquitectura ARM
 
 ## Resumen
 ---
-#ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits 
+#carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits 
 Arm ha desarrollado sus [[Procesador|microprocesadores]] como [[Arquitectura de una computadora|arquitectura]] IP ([[Propiedad Intelectual|propiedad intelectual]]) y los vende a cientos de fabricantes, quienes los utilizan para desarrollar sus propios [[Microcontrolador|microcontroladores]] con interfaces y memorias programables específicas. Pueden aprovechar la disponibilidad de una amplia gama de recursos compartidos, como herramientas de desarrollo, [[Lenguaje de programación|lenguajes]] y sus [[Compilador|compiladores]], [[Sistema operativo|sistemas operativos]], depuradores, etc.
 
 Hoy en día, uno de los actores principales en la propiedad intelectual de [[Procesador|microprocesadores]] es ARM, con sus familias

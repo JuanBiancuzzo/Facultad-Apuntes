@@ -8,7 +8,7 @@ articulo:
     texto: Cuando se celebren acuerdos relativos a modificaciones de elementos esenciales del contrato de trabajo o de desvinculación en los términos del artículo 241 de esta Ley, las partes podrán solicitar a la autoridad de aplicación su homologación en los términos del artículo 15 de la presente Ley.
 previo: "[[colección/documentos/Ley de Contrato de Trabajo/Título 1/Título 1, Disposiciones Generales|Título 1, Disposiciones Generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

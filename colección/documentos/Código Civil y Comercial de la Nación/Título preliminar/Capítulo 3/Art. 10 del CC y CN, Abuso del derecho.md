@@ -10,7 +10,7 @@ articulo:
     texto: El juez debe ordenar lo necesario para evitar los efectos del ejercicio abusivo o de la situación jurídica abusiva y, si correspondiere, procurar la reposición al estado de hecho anterior y fijar una indemnización.
 previo: "[[Capítulo 3, Ejercicio de los derechos|Capítulo 3, Ejercicio de los derechos]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

@@ -5,7 +5,7 @@ aliases:
   - Filtro RII
   - Filtro de Infinite impulse response
 tags:
-  - ingeniería-electrónica/señales/Filtros-digitales
+  - carrera/ingeniería-electrónica/señales/Filtros-digitales
   - nota/facultad
 etapa: sin-empezar
 ---

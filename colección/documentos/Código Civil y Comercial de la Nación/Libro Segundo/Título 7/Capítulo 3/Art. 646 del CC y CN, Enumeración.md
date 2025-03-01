@@ -21,7 +21,7 @@ articulo:
         texto: representarlo y administrar el patrimonio del hijo.
 previo: "[[Capítulo 3, Deberes y derechos de los progenitores|Capítulo 3, Deberes y derechos de los progenitores]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

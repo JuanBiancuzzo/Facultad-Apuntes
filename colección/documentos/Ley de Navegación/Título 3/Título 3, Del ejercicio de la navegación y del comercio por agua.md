@@ -4,7 +4,7 @@ nombre: Del ejercicio de la navegación y del comercio por agua
 num: 3
 previo: "[[Ley de Navegación|Ley de Navegación]]"
 tags:
-  - ingeniería-electrónica/legal/Título
+  - carrera/ingeniería-electrónica/legal/Título
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

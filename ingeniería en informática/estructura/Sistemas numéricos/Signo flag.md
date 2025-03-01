@@ -3,8 +3,8 @@ dia: 2023-04-05
 tags:
   - ingeniería-en-informática/estructura/Sistemas-numéricos
   - nota/facultad
-  - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
-  - ingeniería-electrónica/estructura/Sistemas-numéricos
+  - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
+  - carrera/ingeniería-electrónica/estructura/Sistemas-numéricos
 aliases:
   - Negative flag
 ---

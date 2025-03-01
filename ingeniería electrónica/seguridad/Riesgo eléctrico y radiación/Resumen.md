@@ -1,7 +1,7 @@
 ---
 capitulo: 6
 tags:
-  - ingeniería-electrónica/seguridad/Riesgo-eléctrico-y-radiación
+  - carrera/ingeniería-electrónica/seguridad/Riesgo-eléctrico-y-radiación
   - facultad/resumen
 nombreResumen: Riesgo eléctrico y radiación
 ---

@@ -25,7 +25,7 @@ articulo:
     texto: El cincuenta por ciento (50%) del monto percibido en concepto de multas y otras penalidades impuestas por la autoridad de aplicación conforme el presente artículo será asignado a un fondo especial destinado a cumplir con los fines del capítulo XVI —educación al consumidor— de la presente ley y demás actividades que se realicen para la ejecución de políticas de consumo, conforme lo previsto en el artículo 43, inciso a), de la misma. El fondo será administrado por la autoridad nacional de aplicación.
 previo: "[[Capítulo 12, Procedimientos y sanciones|Capítulo 12, Procedimientos y sanciones]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

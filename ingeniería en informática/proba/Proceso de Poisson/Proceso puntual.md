@@ -3,7 +3,7 @@ dia: 2023-01-23
 tags:
   - ingeniería-en-informática/proba/Proceso-de-Poisson
   - nota/facultad
-  - ingeniería-electrónica/proba/Proceso-de-Poisson
+  - carrera/ingeniería-electrónica/proba/Proceso-de-Poisson
 ---
 # Definición
 ---

@@ -3,7 +3,7 @@ dia: 2024-03-11
 aliases:
   - Sistema LTI
 tags:
-  - ingeniería-electrónica/señales/Sistemas-LTI
+  - carrera/ingeniería-electrónica/señales/Sistemas-LTI
   - nota/facultad
 ---
 # Definición

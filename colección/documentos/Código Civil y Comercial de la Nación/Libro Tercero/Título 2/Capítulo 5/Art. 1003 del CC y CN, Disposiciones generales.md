@@ -6,7 +6,7 @@ articulo:
     texto: Se aplican al objeto del contrato las disposiciones de la Sección 1a, Capítulo 5, Título IV del Libro Primero de este Código. Debe ser lícito, posible, determinado o determinable, susceptible de valoración económica y corresponder a un interés de las partes, aun cuando éste no sea patrimonial.
 previo: "[[Capítulo 5, Objeto|Capítulo 5, Objeto]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

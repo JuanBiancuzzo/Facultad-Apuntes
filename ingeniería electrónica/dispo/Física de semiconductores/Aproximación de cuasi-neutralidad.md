@@ -1,7 +1,7 @@
 ---
 dia: 2023-09-02
 tags:
-  - ingeniería-electrónica/dispo/Física-de-semiconductores
+  - carrera/ingeniería-electrónica/dispo/Física-de-semiconductores
   - nota/facultad
 ---
 # Definición

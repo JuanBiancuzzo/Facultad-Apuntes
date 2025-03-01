@@ -10,7 +10,7 @@ aliases:
 tags:
   - ingeniería-en-informática/aninfo/Ingeniería-de-software
   - nota/facultad
-  - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
+  - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
 ---
 # Definición
 ---

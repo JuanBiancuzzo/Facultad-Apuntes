@@ -6,7 +6,7 @@ tags:
   - ingeniería-en-informática/taller/Concurrencia
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
-  - ingeniería-electrónica/taller/Concurrencia
+  - carrera/ingeniería-electrónica/taller/Concurrencia
   - ingeniería-en-informática/concurrentes/Introducción
 aliases:
   - Multithreading

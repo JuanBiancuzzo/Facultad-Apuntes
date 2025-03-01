@@ -3,7 +3,7 @@ dia: 2024-03-20
 aliases:
   - Sistema LTI invariante
 tags:
-  - ingeniería-electrónica/señales/Sistemas-LTI
+  - carrera/ingeniería-electrónica/señales/Sistemas-LTI
   - nota/facultad
 ---
 # Definición

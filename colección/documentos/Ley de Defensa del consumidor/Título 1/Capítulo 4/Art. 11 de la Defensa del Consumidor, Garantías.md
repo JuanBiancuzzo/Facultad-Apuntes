@@ -8,7 +8,7 @@ articulo:
     texto: La garantía legal tendrá vigencia por TRES (3) meses cuando se trate de bienes muebles usados y por SEIS (6) meses en los demás casos a partir de la entrega, pudiendo las partes convenir un plazo mayor. En caso de que la cosa deba trasladarse a fábrica o taller habilitado el transporte será realizado por el responsable de la garantía, y serán a su cargo los gastos de flete y seguros y cualquier otro que deba realizarse para la ejecución del mismo.
 previo: "[[Capítulo 4, Cosas muebles no consumibles|Capítulo 4, Cosas muebles no consumibles]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

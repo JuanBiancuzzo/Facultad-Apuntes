@@ -2,7 +2,7 @@
 capitulo: 4
 tags:
   - ingeniería-en-informática/algebra-2/Autovalores-y-autovectores
-  - ingeniería-electrónica/algebra-2/Autovalores-y-autovectores
+  - carrera/ingeniería-electrónica/algebra-2/Autovalores-y-autovectores
   - facultad/resumen
 nombreResumen: Autovalores y autovectores
 ---

@@ -5,7 +5,7 @@ articulo:
     texto: La explotación de la propiedad intelectual sobre los programas de computación incluirá entre otras formas los contratos de licencia para su uso o reproducción.
 previo: "[[Propiedad Intelectual|Propiedad Intelectual]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 aliases:
   - Art. 55 bis de la ley de la propiedad intelectual
 ---

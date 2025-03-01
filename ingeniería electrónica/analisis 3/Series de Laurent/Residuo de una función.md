@@ -1,7 +1,7 @@
 ---
 dia: 2022-11-25
 tags:
-  - ingeniería-electrónica/analisis-3/Series-de-Laurent
+  - carrera/ingeniería-electrónica/analisis-3/Series-de-Laurent
   - nota/facultad
   - ingeniería-en-informática/analisis-3/Series-de-Laurent
 ---

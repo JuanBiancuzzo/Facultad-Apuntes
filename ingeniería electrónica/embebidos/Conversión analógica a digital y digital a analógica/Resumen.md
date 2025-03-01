@@ -1,7 +1,7 @@
 ---
 capitulo: 5
 tags:
-  - ingeniería-electrónica/embebidos/Conversión-analógica-a-digital-y-digital-a-analógica
+  - carrera/ingeniería-electrónica/embebidos/Conversión-analógica-a-digital-y-digital-a-analógica
   - facultad/resumen
 referencias:
   - "475"

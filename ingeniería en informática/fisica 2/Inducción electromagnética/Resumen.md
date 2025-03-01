@@ -2,7 +2,7 @@
 capitulo: 7
 tags:
   - ingeniería-en-informática/fisica-2/Inducción-electromagnética
-  - ingeniería-electrónica/fisica-2/Inducción-electromagnética
+  - carrera/ingeniería-electrónica/fisica-2/Inducción-electromagnética
   - facultad/resumen
 nombreResumen: Inducción electromagnética
 ---

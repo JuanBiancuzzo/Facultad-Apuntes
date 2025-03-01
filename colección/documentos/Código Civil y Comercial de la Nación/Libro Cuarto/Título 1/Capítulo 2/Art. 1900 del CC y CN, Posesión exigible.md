@@ -6,7 +6,7 @@ articulo:
     texto: La posesión para prescribir debe ser ostensible y continua.
 previo: "[[Capítulo 2, Adquisición, transmisión, extinción y oponibilidad|Capítulo 2, Adquisición, transmisión, extinción y oponibilidad]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

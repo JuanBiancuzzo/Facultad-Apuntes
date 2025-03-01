@@ -4,7 +4,7 @@ tags:
   - ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - nota/facultad
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
-  - ingeniería-electrónica/algo-1/Introducción-a-la-programación
+  - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
 ---
 # Definición
 ---

@@ -1,9 +1,9 @@
 ---
 dia: 2023-08-26
 tags:
-  - ingeniería-electrónica/señales/Señales-y-sistemas
+  - carrera/ingeniería-electrónica/señales/Señales-y-sistemas
   - nota/facultad
-  - ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
+  - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
 ---
 # Definición
 ---

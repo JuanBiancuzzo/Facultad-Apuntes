@@ -8,7 +8,7 @@ aliases:
 tags:
   - ingeniería-en-informática/redes/Capa-de-Transporte
   - nota/facultad
-  - ingeniería-electrónica/redes/Capa-de-Transporte
+  - carrera/ingeniería-electrónica/redes/Capa-de-Transporte
 ---
 # Definición
 ---

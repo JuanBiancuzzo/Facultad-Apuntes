@@ -8,7 +8,7 @@ articulo:
     texto: Cuando el empleador disponga medidas vedadas por este artículo, al trabajador le asistirá la posibilidad de optar por considerarse despedido sin causa o accionar persiguiendo el restablecimiento de las condiciones alteradas. En este último supuesto la acción se substanciará por el procedimiento sumarísimo, no pudiéndose innovar en las condiciones y modalidades de trabajo, salvo que éstas sean generales para el establecimiento o sección, hasta que recaiga sentencia definitiva.
 previo: "[[Capítulo 7, De los derechos y deberes de las partes|Capítulo 7, De los derechos y deberes de las partes]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

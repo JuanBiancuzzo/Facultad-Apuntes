@@ -17,7 +17,7 @@ articulo:
     texto: La prescripción de la acción está sujeta a lo dispuesto en el Libro Sexto.
 previo: "[[Parágrafo 3, Responsabilidad por vicios ocultos|Parágrafo 3, Responsabilidad por vicios ocultos]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

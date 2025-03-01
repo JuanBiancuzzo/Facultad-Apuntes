@@ -4,7 +4,7 @@ nombre: Solidaridad pasiva
 num: 3
 previo: "[[Sección 7, Obligaciones de sujeto plural|Sección 7, Obligaciones de sujeto plural]]"
 tags:
-  - ingeniería-electrónica/legal/Parágrafo
+  - carrera/ingeniería-electrónica/legal/Parágrafo
 ---
 # Interpretación
 ---

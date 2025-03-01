@@ -6,7 +6,7 @@ articulo:
     texto: La extinción, nulidad o ineficacia del crédito principal, extinguen los derechos y obligaciones accesorios, excepto disposición legal o convencional en contrario.
 previo: "[[Sección 10, Obligaciones principales y accesorias|Sección 10, Obligaciones principales y accesorias]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

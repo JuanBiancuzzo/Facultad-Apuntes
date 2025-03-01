@@ -8,7 +8,7 @@ articulo:
     texto: Según las circunstancias del caso, los jueces pueden disponer la remoción de la causa de la molestia o su cesación y la indemnización de los daños. Para disponer el cese de la inmisión, el juez debe ponderar especialmente el respeto debido al uso regular de la propiedad, la prioridad en el uso, el interés general y las exigencias de la producción.
 previo: "[[Capítulo 4, Límites al dominio|Capítulo 4, Límites al dominio]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

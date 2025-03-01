@@ -10,7 +10,7 @@ articulo:
     texto: La integración del mes de despido no procederá cuando la extinción se produzca durante el período de prueba establecido en el artículo 92 bis.
 previo: "[[Capítulo 1, Del preaviso|Capítulo 1, Del preaviso]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

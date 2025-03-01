@@ -2,7 +2,7 @@
 capitulo: 5
 tags:
   - ingeniería-en-informática/fisica-1/Cuerpo-rígido
-  - ingeniería-electrónica/fisica-1/Cuerpo-rígido
+  - carrera/ingeniería-electrónica/fisica-1/Cuerpo-rígido
   - facultad/resumen
 nombreResumen: Cuerpo rígido
 ---

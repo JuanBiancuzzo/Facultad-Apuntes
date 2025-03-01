@@ -4,8 +4,8 @@ tags:
   - ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
   - nota/facultad
   - ingeniería-en-informática/fisica-1/Trabajo-y-energía
-  - ingeniería-electrónica/fisica-1/Trabajo-y-energía
-  - ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
+  - carrera/ingeniería-electrónica/fisica-1/Trabajo-y-energía
+  - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
 ---
 # Definición
 ---

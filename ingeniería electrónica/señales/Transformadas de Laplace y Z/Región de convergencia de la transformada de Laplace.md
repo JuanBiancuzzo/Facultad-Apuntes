@@ -3,7 +3,7 @@ dia: 2024-03-11
 aliases:
   - ROC de la transformada de Laplace
 tags:
-  - ingeniería-electrónica/señales/Transformadas-de-Laplace-y-Z
+  - carrera/ingeniería-electrónica/señales/Transformadas-de-Laplace-y-Z
   - nota/facultad
 ---
 # Definición

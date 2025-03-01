@@ -8,7 +8,7 @@ articulo:
     texto: La revocación de la oferta hecha pública es eficaz una vez que haya sido difundida por medios similares a los empleados para hacerla conocer.
 previo: "[[Capítulo 3, Condiciones de la oferta y venta|Capítulo 3, Condiciones de la oferta y venta]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

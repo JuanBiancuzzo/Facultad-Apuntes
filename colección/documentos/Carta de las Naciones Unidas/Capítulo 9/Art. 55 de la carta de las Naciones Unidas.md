@@ -14,7 +14,7 @@ articulo:
         texto: el respeto universal a los derechos humanos y a las libertades fundamentales de todos, sin hacer distingos por motivos de raza, sexo, idioma o religión, y la efectividad de tales derechos y libertades.
 previo: "[[Capítulo 9, Cooperación internacional económica y social|Capítulo 9, Cooperación internacional económica y social]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

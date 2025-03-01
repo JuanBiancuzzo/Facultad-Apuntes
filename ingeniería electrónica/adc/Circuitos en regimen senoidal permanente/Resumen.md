@@ -1,7 +1,7 @@
 ---
 capitulo: 3
 tags:
-  - ingeniería-electrónica/adc/Circuitos-en-regimen-senoidal-permanente
+  - carrera/ingeniería-electrónica/adc/Circuitos-en-regimen-senoidal-permanente
   - ingeniería-en-informática/adc/Circuitos-en-regimen-senoidal-permanente
   - facultad/resumen
 nombreResumen: Circuitos en regimen senoidal permanente

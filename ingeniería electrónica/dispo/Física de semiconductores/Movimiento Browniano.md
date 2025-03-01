@@ -1,7 +1,7 @@
 ---
 dia: 2023-08-25
 tags:
-  - ingeniería-electrónica/dispo/Física-de-semiconductores
+  - carrera/ingeniería-electrónica/dispo/Física-de-semiconductores
   - nota/facultad
 referencias:
   - "211"

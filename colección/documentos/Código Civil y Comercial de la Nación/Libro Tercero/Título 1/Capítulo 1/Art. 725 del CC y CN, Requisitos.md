@@ -6,7 +6,7 @@ articulo:
     texto: La prestación que constituye el objeto de la obligación debe ser material y jurídicamente posible, lícita, determinada o determinable, susceptible de valoración económica y debe corresponder a un interés patrimonial o extrapatrimonial del acreedor.
 previo: "[[Capítulo 1 - Disposiciones generales|Capítulo 1 - Disposiciones generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

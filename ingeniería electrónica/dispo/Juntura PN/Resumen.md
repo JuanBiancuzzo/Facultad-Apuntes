@@ -1,7 +1,7 @@
 ---
 capitulo: 2
 tags:
-  - ingeniería-electrónica/dispo/Juntura-PN
+  - carrera/ingeniería-electrónica/dispo/Juntura-PN
   - facultad/resumen
 nombreResumen: Juntura PN
 ---

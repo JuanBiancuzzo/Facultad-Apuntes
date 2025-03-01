@@ -1,7 +1,7 @@
 ---
 dia: 2024-10-01
 tags:
-  - ingeniería-electrónica/embebidos/Conversión-analógica-a-digital-y-digital-a-analógica
+  - carrera/ingeniería-electrónica/embebidos/Conversión-analógica-a-digital-y-digital-a-analógica
   - nota/facultad
 aliases:
   - SAR

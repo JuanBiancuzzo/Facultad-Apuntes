@@ -10,7 +10,7 @@ articulo:
     texto: La parte que decide la rescisión debe dar a la otra la oportunidad razonable de renegociar de buena fe, sin incurrir en ejercicio abusivo de los derechos.
 previo: "[[Capítulo 5, Objeto|Capítulo 5, Objeto]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

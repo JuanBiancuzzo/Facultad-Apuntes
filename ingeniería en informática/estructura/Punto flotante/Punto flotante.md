@@ -7,9 +7,9 @@ tags:
   - ingeniería-en-informática/algo-1/Lenguaje-C
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
-  - ingeniería-electrónica/algo-1/Lenguaje-C
-  - ingeniería-electrónica/taller/Sintaxis
-  - ingeniería-electrónica/estructura/Punto-flotante
+  - carrera/ingeniería-electrónica/algo-1/Lenguaje-C
+  - carrera/ingeniería-electrónica/taller/Sintaxis
+  - carrera/ingeniería-electrónica/estructura/Punto-flotante
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-zig
 aliases:
   - Floating point

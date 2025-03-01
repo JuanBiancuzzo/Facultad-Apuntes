@@ -4,7 +4,7 @@ nombre: Disposiciones generales
 num: 1
 previo: "[[Título 1, Normas de protección y defensa de los consumidores|Título 1, Normas de protección y defensa de los consumidores]]"
 tags:
-  - ingeniería-electrónica/legal/Capítulo
+  - carrera/ingeniería-electrónica/legal/Capítulo
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

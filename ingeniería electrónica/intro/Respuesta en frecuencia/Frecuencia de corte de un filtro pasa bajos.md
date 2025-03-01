@@ -1,7 +1,7 @@
 ---
 dia: 2023-01-23
 tags:
-  - ingeniería-electrónica/intro/Respuesta-en-frecuencia
+  - carrera/ingeniería-electrónica/intro/Respuesta-en-frecuencia
   - nota/facultad
 ---
 # Definición

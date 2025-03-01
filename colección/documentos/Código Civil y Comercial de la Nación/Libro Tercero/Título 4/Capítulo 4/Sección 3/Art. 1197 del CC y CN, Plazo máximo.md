@@ -8,7 +8,7 @@ articulo:
     texto: El contrato es renovable expresamente por un lapso que no exceda de los máximos previstos contados desde su inicio.
 previo: "[[Sección 3, Tiempo de la locación|Sección 3, Tiempo de la locación]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

@@ -1,7 +1,7 @@
 ---
 dia: 2023-08-23
 tags:
-  - ingeniería-electrónica/dispo/Juntura-MOS
+  - carrera/ingeniería-electrónica/dispo/Juntura-MOS
   - nota/facultad
 aliases:
   - MOS

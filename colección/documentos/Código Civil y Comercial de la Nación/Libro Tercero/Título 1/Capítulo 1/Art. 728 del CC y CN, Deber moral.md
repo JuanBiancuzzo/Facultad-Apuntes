@@ -6,7 +6,7 @@ articulo:
     texto: Lo entregado en cumplimiento de deberes morales o de conciencia es irrepetible.
 previo: "[[Capítulo 1 - Disposiciones generales|Capítulo 1 - Disposiciones generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

@@ -4,7 +4,7 @@ nombre: De la prohibición del trabajo infantil y de la protección del trabajo 
 num: 8
 previo: "[[Ley de Contrato de Trabajo|Ley de Contrato de Trabajo]]"
 tags:
-  - ingeniería-electrónica/legal/Título
+  - carrera/ingeniería-electrónica/legal/Título
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

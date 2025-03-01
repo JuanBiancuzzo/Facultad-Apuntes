@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - ingeniería-en-informática/discreta/Álgebra-de-Boole
   - ingeniería-en-informática/discreta/Grafos
-  - ingeniería-electrónica/algebra-2/Transformaciones-lineales
+  - carrera/ingeniería-electrónica/algebra-2/Transformaciones-lineales
 referencias:
   - "192"
 ---

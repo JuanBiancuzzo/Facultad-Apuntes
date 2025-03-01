@@ -1,7 +1,7 @@
 ---
 capitulo: 14
 tags:
-  - ingeniería-electrónica/fisica-3/Juntura-metal-semiconductor
+  - carrera/ingeniería-electrónica/fisica-3/Juntura-metal-semiconductor
   - ingeniería-en-informática/fisica-3/Juntura-metal-semiconductor
   - facultad/resumen
 nombreResumen: Juntura metal-semiconductor

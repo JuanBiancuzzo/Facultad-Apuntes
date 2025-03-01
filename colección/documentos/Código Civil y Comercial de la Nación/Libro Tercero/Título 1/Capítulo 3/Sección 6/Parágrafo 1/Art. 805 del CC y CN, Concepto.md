@@ -6,7 +6,7 @@ articulo:
     texto: Obligación divisible es la que tiene por objeto prestaciones susceptibles de cumplimiento parcial.
 previo: "[[Parágrafo 1, Obligaciones divisibles|Parágrafo 1, Obligaciones divisibles]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

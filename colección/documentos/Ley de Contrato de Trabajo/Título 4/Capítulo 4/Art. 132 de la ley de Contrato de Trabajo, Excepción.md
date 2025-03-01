@@ -27,7 +27,7 @@ articulo:
         texto: Reintegro del precio de compra de vivienda del que sea acreedor el empleador, según planes aprobados por la autoridad competente.
 previo: "[[Capítulo 4, De la tutela y pago de la remuneración|Capítulo 4, De la tutela y pago de la remuneración]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

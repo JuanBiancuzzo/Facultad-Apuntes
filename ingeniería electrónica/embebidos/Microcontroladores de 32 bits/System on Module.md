@@ -1,7 +1,7 @@
 ---
 dia: 2024-09-09
 tags:
-  - ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
+  - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
   - nota/facultad
 aliases:
   - SoM

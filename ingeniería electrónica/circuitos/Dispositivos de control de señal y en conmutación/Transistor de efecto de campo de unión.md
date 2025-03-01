@@ -3,7 +3,7 @@ dia: 2024-04-23
 aliases:
   - JFET
 tags:
-  - ingeniería-electrónica/circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
+  - carrera/ingeniería-electrónica/circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
   - nota/facultad
 ---
 # Definición

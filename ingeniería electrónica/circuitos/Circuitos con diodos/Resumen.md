@@ -1,7 +1,7 @@
 ---
 capitulo: 1
 tags:
-  - ingeniería-electrónica/circuitos/Circuitos-con-diodos
+  - carrera/ingeniería-electrónica/circuitos/Circuitos-con-diodos
   - facultad/resumen
 referencias:
   - "425"

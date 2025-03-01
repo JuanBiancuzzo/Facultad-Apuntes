@@ -27,7 +27,7 @@ articulo:
         texto: toda otra contemplada en disposiciones de este Código o en otras leyes y cuyo carácter de tal se establece o resulta de su finalidad y normas de funcionamiento.
 previo: "[[Sección 2, Clasificación|Sección 2, Clasificación]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

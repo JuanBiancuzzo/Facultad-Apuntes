@@ -10,7 +10,7 @@ articulo:
     texto: Cuando se trata de cosas registrables, la buena fe requiere el examen previo de la documentación y constancias registrales, así como el cumplimiento de los actos de verificación pertinente establecidos en el respectivo régimen especial.
 previo: "[[Capítulo 2, Adquisición, transmisión, extinción y oponibilidad|Capítulo 2, Adquisición, transmisión, extinción y oponibilidad]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

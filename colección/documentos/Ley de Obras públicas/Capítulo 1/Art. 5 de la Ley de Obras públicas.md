@@ -18,7 +18,7 @@ articulo:
     texto: En todos los casos la contratación podrá hacerse con o sin provisión de materiales por parte del Estado.
 previo: "[[Capítulo 1, De las obras públicas en general|Capítulo 1, De las obras públicas en general]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

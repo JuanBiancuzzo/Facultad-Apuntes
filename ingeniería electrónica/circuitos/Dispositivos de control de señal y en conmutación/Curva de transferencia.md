@@ -1,7 +1,7 @@
 ---
 dia: 2024-04-20
 tags:
-  - ingeniería-electrónica/circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
+  - carrera/ingeniería-electrónica/circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
   - nota/facultad
 ---
 # Definición

@@ -1,10 +1,10 @@
 ---
 dia: 2023-09-03
 tags:
-  - ingeniería-electrónica/adc/Circuitos-en-regimen-transitorio
+  - carrera/ingeniería-electrónica/adc/Circuitos-en-regimen-transitorio
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Inducción-electromagnética
-  - ingeniería-electrónica/fisica-2/Inducción-electromagnética
+  - carrera/ingeniería-electrónica/fisica-2/Inducción-electromagnética
   - ingeniería-en-informática/adc/Circuitos-en-regimen-transitorio
 aliases:
   - Bobina

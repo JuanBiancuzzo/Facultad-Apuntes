@@ -1,11 +1,11 @@
 ---
 dia: 2023-01-23
 tags:
-  - ingeniería-electrónica/intro/Circuitos-con-resistencias
+  - carrera/ingeniería-electrónica/intro/Circuitos-con-resistencias
   - nota/facultad
   - ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
-  - ingeniería-electrónica/dispo/Física-de-semiconductores
-  - ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - carrera/ingeniería-electrónica/dispo/Física-de-semiconductores
+  - carrera/ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
 aliases:
   - Densidad de corriente#Densidad de corriente
   - Densidad de corriente superficial#Corriente superficial

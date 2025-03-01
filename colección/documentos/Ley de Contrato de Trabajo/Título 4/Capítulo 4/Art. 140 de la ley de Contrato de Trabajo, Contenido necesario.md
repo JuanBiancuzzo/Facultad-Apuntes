@@ -29,7 +29,7 @@ articulo:
         texto: Total de contribuciones abonadas por el empleador por disposición legal.
 previo: "[[Capítulo 4, De la tutela y pago de la remuneración|Capítulo 4, De la tutela y pago de la remuneración]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

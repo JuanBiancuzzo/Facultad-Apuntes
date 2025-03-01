@@ -9,7 +9,7 @@ articulo:
     texto: En caso de que un autor falleciere sin dejar herederos, y se declarase vacante su herencia, los derechos que a aquél correspondiesen sobre sus obras pasarán al Estado por todo el término de Ley, sin perjuicio de los derechos de terceros.
 previo: "[[Regimen legal de la propiedad intelectual|Regimen legal de la propiedad intelectual]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

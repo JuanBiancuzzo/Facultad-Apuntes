@@ -6,7 +6,7 @@ articulo:
     texto: "Todo pago en concepto de salario u otra forma de remuneración deberá instrumentarse mediante recibo firmado por el trabajador, o en las condiciones del artículo 59 de esta ley, si fuese el caso, los que deberán ajustarse en su forma y contenido en las disposiciones siguientes:"
 previo: "[[Capítulo 4, De la tutela y pago de la remuneración|Capítulo 4, De la tutela y pago de la remuneración]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

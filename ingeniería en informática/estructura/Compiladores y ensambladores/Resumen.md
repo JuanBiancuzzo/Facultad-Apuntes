@@ -2,7 +2,7 @@
 capitulo: 9
 tags:
   - ingeniería-en-informática/estructura/Compiladores-y-ensambladores
-  - ingeniería-electrónica/estructura/Compiladores-y-ensambladores
+  - carrera/ingeniería-electrónica/estructura/Compiladores-y-ensambladores
   - facultad/resumen
 nombreResumen: Compiladores y ensambladores
 ---

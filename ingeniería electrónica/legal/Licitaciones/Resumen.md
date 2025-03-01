@@ -1,7 +1,7 @@
 ---
 capitulo: 4
 tags:
-  - ingeniería-electrónica/legal/Licitaciones
+  - carrera/ingeniería-electrónica/legal/Licitaciones
   - facultad/resumen
 nombreResumen: Licitaciones
 ---

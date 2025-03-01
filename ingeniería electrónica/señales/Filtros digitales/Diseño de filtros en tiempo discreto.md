@@ -1,7 +1,7 @@
 ---
 dia: 2024-07-05
 tags:
-  - ingeniería-electrónica/señales/Filtros-digitales
+  - carrera/ingeniería-electrónica/señales/Filtros-digitales
   - nota/facultad
 ---
 # Definición

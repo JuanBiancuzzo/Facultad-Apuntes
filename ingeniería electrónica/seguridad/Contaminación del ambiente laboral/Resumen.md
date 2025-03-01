@@ -1,7 +1,7 @@
 ---
 capitulo: 2
 tags:
-  - ingeniería-electrónica/seguridad/Contaminación-del-ambiente-laboral
+  - carrera/ingeniería-electrónica/seguridad/Contaminación-del-ambiente-laboral
   - facultad/resumen
 nombreResumen: Contaminación del ambiente laboral
 ---

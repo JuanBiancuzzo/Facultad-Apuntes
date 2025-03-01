@@ -8,7 +8,7 @@ tags:
   - ingeniería-en-informática/redes/Capa-de-Transporte
   - nota/facultad
   - investigación/protocolos/protocolo-de-internet
-  - ingeniería-electrónica/redes/Capa-de-Transporte
+  - carrera/ingeniería-electrónica/redes/Capa-de-Transporte
   - investigación/networking/Protocolos
   - investigación/ciencias-de-la-computación/Networking/Protocolos
 ---

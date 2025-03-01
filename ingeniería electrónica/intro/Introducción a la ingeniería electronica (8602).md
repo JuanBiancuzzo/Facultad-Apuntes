@@ -4,7 +4,7 @@ estado: Terminado
 plan: "2009"
 codigo: "8602"
 tags:
-  - ingeniería-electrónica/intro
+  - carrera/ingeniería-electrónica/intro
   - facultad/materia
 etapa: terminado
 correlativas:

@@ -1,7 +1,7 @@
 ---
 dia: 2022-10-13
 tags:
-  - ingeniería-electrónica/analisis-3/Transformaciones-conformes
+  - carrera/ingeniería-electrónica/analisis-3/Transformaciones-conformes
   - nota/facultad
   - ingeniería-en-informática/analisis-3/Transformaciones-conformes
   - licenciatura-en-ciencias-matemáticas/analisis-1/Vectores-y-geometría-del-espacio

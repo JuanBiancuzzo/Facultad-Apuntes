@@ -15,7 +15,7 @@ articulo:
         texto: " que el acreedor emplace al deudor, bajo apercibimiento expreso de la resolución total o parcial del contrato, a que cumpla en un plazo no menor de quince días, excepto que de los usos, o de la índole de la prestación, resulte la procedencia de uno menor. La resolución se produce de pleno derecho al vencimiento de dicho plazo. Dicho requerimiento no es necesario si ha vencido un plazo esencial para el cumplimiento, si la parte incumplidora ha manifestado su decisión de no cumplir, o si el cumplimiento resulta imposible. En tales casos, la resolución total o parcial del contrato se produce cuando el acreedor la declara y la comunicación es recibida por la otra parte."
 previo: "[[Capítulo 13, Extinción modificación y adecuación del contrato|Capítulo 13, Extinción modificación y adecuación del contrato]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

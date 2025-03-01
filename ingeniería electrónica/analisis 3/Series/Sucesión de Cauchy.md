@@ -1,7 +1,7 @@
 ---
 dia: 2022-09-13
 tags:
-  - ingeniería-electrónica/analisis-3/Series
+  - carrera/ingeniería-electrónica/analisis-3/Series
   - nota/facultad
   - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
   - ingeniería-en-informática/analisis-3/Series

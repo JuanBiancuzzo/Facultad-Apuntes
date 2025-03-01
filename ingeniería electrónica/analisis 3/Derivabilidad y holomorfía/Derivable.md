@@ -1,7 +1,7 @@
 ---
 dia: 2022-09-09
 tags:
-  - ingeniería-electrónica/analisis-3/Derivabilidad-y-holomorfía
+  - carrera/ingeniería-electrónica/analisis-3/Derivabilidad-y-holomorfía
   - nota/facultad
   - ingeniería-en-informática/analisis-3/Derivabilidad-y-holomorfía
 aliases:

@@ -6,7 +6,7 @@ articulo:
     texto: La participación del Estado en personas jurídicas privadas no modifica el carácter de éstas. Sin embargo, la ley o el estatuto pueden prever derechos y obligaciones diferenciados, considerando el interés público comprometido en dicha participación.
 previo: "[[Sección 2, Clasificación|Sección 2, Clasificación]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

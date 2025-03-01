@@ -1,7 +1,7 @@
 ---
 capitulo: 4
 tags:
-  - ingeniería-electrónica/analisis-3/Funciones-elementales
+  - carrera/ingeniería-electrónica/analisis-3/Funciones-elementales
   - ingeniería-en-informática/analisis-3/Funciones-elementales
   - facultad/resumen
 nombreResumen: Funciones elementales

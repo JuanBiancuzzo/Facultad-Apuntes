@@ -10,7 +10,7 @@ articulo:
     texto: Se considerará igualmente que la relación laboral ha quedado extinguida por voluntad concurrente de las partes, si ello resultase del comportamiento concluyente y recíproco de las mismas, que traduzca inequívocamente el abandono de la relación.
 previo: "[[Capítulo 3, De la extinción del contrato de trabajo por voluntad concurrente de las partes|Capítulo 3, De la extinción del contrato de trabajo por voluntad concurrente de las partes]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

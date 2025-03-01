@@ -10,7 +10,7 @@ aliases:
 tags:
   - nota/investigacion
   - ingeniería-en-informática/redes/Capa-de-aplicación
-  - ingeniería-electrónica/redes/Capa-de-aplicación
+  - carrera/ingeniería-electrónica/redes/Capa-de-aplicación
   - investigación/lenguaje-de-marcado
 ---
 ```dataviewjs

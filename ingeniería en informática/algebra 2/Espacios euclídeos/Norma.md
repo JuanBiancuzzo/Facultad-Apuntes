@@ -4,8 +4,8 @@ tags:
   - ingeniería-en-informática/algebra-2/Espacios-euclídeos
   - nota/facultad
   - ingeniería-en-informática/analisis-2/Nomenclatura
-  - ingeniería-electrónica/analisis-2/Nomenclatura
-  - ingeniería-electrónica/algebra-2/Espacios-euclídeos
+  - carrera/ingeniería-electrónica/analisis-2/Nomenclatura
+  - carrera/ingeniería-electrónica/algebra-2/Espacios-euclídeos
 aliases:
   - Módulo
   - Valor absoluto

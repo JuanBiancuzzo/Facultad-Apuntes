@@ -13,7 +13,7 @@ articulo:
         texto: entre ausentes, si es recibida por el proponente durante el plazo de vigencia de la oferta.
 previo: "[[Sección 1, Consentimiento, oferta y aceptación|Sección 1, Consentimiento, oferta y aceptación]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

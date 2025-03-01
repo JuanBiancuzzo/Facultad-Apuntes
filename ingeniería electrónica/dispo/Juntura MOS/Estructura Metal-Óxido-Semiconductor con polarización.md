@@ -1,7 +1,7 @@
 ---
 dia: 2023-11-03
 tags:
-  - ingeniería-electrónica/dispo/Juntura-MOS
+  - carrera/ingeniería-electrónica/dispo/Juntura-MOS
   - nota/facultad
 aliases:
   - Estructura MOS con polarización

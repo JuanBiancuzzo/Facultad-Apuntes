@@ -4,7 +4,7 @@ nombre: Contratos celebrados por adhesión a cláusulas generales predispuestas
 num: 2
 previo: "[[Capítulo 3, Formación del consentimiento|Capítulo 3, Formación del consentimiento]]"
 tags:
-  - ingeniería-electrónica/legal/Sección
+  - carrera/ingeniería-electrónica/legal/Sección
 ---
 ```dataviewjs
     await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

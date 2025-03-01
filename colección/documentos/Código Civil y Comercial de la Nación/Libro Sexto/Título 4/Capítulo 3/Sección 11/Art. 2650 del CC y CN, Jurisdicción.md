@@ -15,7 +15,7 @@ articulo:
         texto: los jueces del lugar donde se ubica una agencia, sucursal o representación del demandado, siempre que ésta haya participado en la negociación o celebración del contrato.
 previo: "[[Sección 11, Contratos|Sección 11, Contratos]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

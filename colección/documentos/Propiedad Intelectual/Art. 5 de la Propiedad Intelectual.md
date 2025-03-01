@@ -11,7 +11,7 @@ articulo:
     texto: Para las películas cinematográficas, el depósito consistirá en una relación del argumento, diálogos, fotografías y escenarios de sus principales escenas. Para los programas de computación, consistirá el depósito de los elementos y documentos que determine la reglamentación.
 previo: "[[Propiedad Intelectual|Propiedad Intelectual]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

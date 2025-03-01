@@ -22,7 +22,7 @@ articulo:
     texto: En el caso del inciso c), se podrá prorrogar el plazo si el contratista demostrase que la demora en la iniciación de las obras se ha producido por causas inevitables y ofrezca cumplir su compromiso. En caso de que no proceda el otorgamiento de esa prórroga, o que concedida ésta el contratista tampoco diera comienzo a los trabajos en el nuevo plazo fijado, el contrato quedará rescindido con pérdida de la fianza.
 previo: "[[Capítulo 8, De la rescisión del contrato|Capítulo 8, De la rescisión del contrato]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

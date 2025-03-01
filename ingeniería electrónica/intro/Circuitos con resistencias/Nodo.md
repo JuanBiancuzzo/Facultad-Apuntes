@@ -1,7 +1,7 @@
 ---
 dia: 2023-01-23
 tags:
-  - ingeniería-electrónica/intro/Circuitos-con-resistencias
+  - carrera/ingeniería-electrónica/intro/Circuitos-con-resistencias
   - nota/facultad
 aliases:
   - Vértice

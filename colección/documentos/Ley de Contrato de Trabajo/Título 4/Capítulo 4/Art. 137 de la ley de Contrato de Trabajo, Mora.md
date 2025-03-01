@@ -6,7 +6,7 @@ articulo:
     texto: La mora en el pago de las remuneraciones se producirá por el solo vencimiento de los plazos señalados en el artículo 128 de esta ley, y cuando el empleador deduzca, retenga o compense todo o parte del salario, contra las prescripciones de los artículos 131, 132 y 133.
 previo: "[[Capítulo 4, De la tutela y pago de la remuneración|Capítulo 4, De la tutela y pago de la remuneración]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

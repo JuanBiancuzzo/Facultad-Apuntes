@@ -23,7 +23,7 @@ articulo:
     texto: Desde el inicio de las actuaciones hasta la finalización de la ejecución del contrato, toda cuestión vinculada con la contratación deberá interpretarse sobre la base de una rigurosa observancia de los principios que anteceden.
 previo: "[[Capítulo 1, Regimen general|Capítulo 1, Regimen general]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

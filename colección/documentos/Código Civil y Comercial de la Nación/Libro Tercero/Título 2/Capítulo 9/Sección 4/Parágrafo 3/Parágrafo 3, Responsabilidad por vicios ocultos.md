@@ -4,7 +4,7 @@ nombre: Responsabilidad por vicios ocultos
 num: 3
 previo: "[[Sección 4, Obligación de saneamiento|Sección 4, Obligación de saneamiento]]"
 tags:
-  - ingeniería-electrónica/legal/Parágrafo
+  - carrera/ingeniería-electrónica/legal/Parágrafo
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

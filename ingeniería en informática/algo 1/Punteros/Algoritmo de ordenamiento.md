@@ -19,7 +19,7 @@ Vamos a investigar específicamente la clasificación de los algoritmos de orden
 ```
 ## Resumen
 ---
-#ingeniería-en-informática/algo-1/Punteros #ingeniería-electrónica/algo-1/Punteros 
+#ingeniería-en-informática/algo-1/Punteros #carrera/ingeniería-electrónica/algo-1/Punteros 
 Los métodos de ordenamiento se aplican sobre un [[Array|array]] o cualquier estructura que pueda abstraerse a un array. Sobre este se aplica una secuencia de pasos para conseguir que los elementos del array estén ordenados según un criterio dado
 
 ## Archivos

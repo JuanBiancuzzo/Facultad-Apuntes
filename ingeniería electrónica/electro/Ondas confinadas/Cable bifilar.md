@@ -4,7 +4,7 @@ etapa: ampliar
 referencias:
   - "504"
 tags:
-  - ingeniería-electrónica/electro/Ondas-confinadas
+  - carrera/ingeniería-electrónica/electro/Ondas-confinadas
   - nota/facultad
 ---
 ```dataviewjs

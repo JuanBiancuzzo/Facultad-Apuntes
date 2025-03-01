@@ -3,7 +3,7 @@ dia: 2023-04-11
 tags:
   - ingeniería-en-informática/fisica-2/Termodinámica
   - nota/facultad
-  - ingeniería-electrónica/fisica-2/Termodinámica
+  - carrera/ingeniería-electrónica/fisica-2/Termodinámica
 aliases:
   - Ley de Newton
 ---

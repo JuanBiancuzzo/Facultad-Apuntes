@@ -1,9 +1,9 @@
 ---
 dia: 2023-09-05
 tags:
-  - ingeniería-electrónica/adc/Circuitos-en-regimen-de-corriente-continua
+  - carrera/ingeniería-electrónica/adc/Circuitos-en-regimen-de-corriente-continua
   - nota/facultad
-  - ingeniería-electrónica/adc/Cuadripolos
+  - carrera/ingeniería-electrónica/adc/Cuadripolos
   - ingeniería-en-informática/adc/Circuitos-en-regimen-de-corriente-continua
   - ingeniería-en-informática/adc/Cuadripolos
 aliases:

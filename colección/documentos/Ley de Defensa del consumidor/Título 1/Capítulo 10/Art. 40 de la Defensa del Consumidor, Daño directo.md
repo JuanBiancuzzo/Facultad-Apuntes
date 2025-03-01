@@ -8,7 +8,7 @@ articulo:
     texto: La responsabilidad es solidaria, sin perjuicio de las acciones de repetición que correspondan. Sólo se liberará total o parcialmente quien demuestre que la causa del daño le ha sido ajena.
 previo: "[[Capítulo 10, Responsabilidad por daños|Capítulo 10, Responsabilidad por daños]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

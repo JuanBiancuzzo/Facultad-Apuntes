@@ -10,7 +10,7 @@ articulo:
     texto: Si la obra o el servicio se ha contratado por un precio global o por una unidad de medida, ninguna de las partes puede pretender la modificación del precio total o de la unidad de medida, respectivamente, con fundamento en que la obra, el servicio o la unidad exige menos o más trabajo o que su costo es menor o mayor al previsto, excepto lo dispuesto en el artículo 1091.
 previo: "[[Sección 1, Disposiciones comunes a las obras y a los servicios|Sección 1, Disposiciones comunes a las obras y a los servicios]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

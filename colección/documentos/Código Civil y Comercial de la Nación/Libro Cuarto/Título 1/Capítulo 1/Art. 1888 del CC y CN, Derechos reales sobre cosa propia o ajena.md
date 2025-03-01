@@ -8,7 +8,7 @@ articulo:
     texto: Con relación al dueño de la cosa, los derechos reales sobre cosa ajena constituyen cargas o gravámenes reales. Las cosas se presumen sin gravamen, excepto prueba en contrario. Toda duda sobre la existencia de un gravamen real, su extensión o el modo de ejercicio, se interpreta a favor del titular del bien gravado.
 previo: "[[Capítulo 1, Principios comunes|Capítulo 1, Principios comunes]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

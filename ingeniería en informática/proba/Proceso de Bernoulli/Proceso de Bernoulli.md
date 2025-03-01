@@ -3,7 +3,7 @@ dia: 2023-01-23
 tags:
   - ingeniería-en-informática/proba/Proceso-de-Bernoulli
   - nota/facultad
-  - ingeniería-electrónica/proba/Proceso-de-Bernoulli
+  - carrera/ingeniería-electrónica/proba/Proceso-de-Bernoulli
 ---
 # Definición
 ---

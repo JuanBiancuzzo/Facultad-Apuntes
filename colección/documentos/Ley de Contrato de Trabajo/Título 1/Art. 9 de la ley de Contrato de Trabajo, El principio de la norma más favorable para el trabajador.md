@@ -10,7 +10,7 @@ articulo:
     texto: En tal sentido se aplicará la regla general procesal, en virtud de la cual los hechos deben ser probados por quien los invoca, con plena vigencia de la facultad de los magistrados en la obtención de la verdad objetiva y el respeto a la seguridad jurídica.
 previo: "[[colección/documentos/Ley de Contrato de Trabajo/Título 1/Título 1, Disposiciones Generales|Título 1, Disposiciones Generales]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

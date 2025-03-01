@@ -1,7 +1,7 @@
 ---
 dia: 2024-09-04
 tags:
-  - ingeniería-electrónica/seguridad/Prevención-de-incendios
+  - carrera/ingeniería-electrónica/seguridad/Prevención-de-incendios
   - nota/facultad
 aliases:
   - Transmisión de calor en regimen permanente

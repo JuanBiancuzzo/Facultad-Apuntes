@@ -9,7 +9,7 @@ articulo:
     texto: No serán objeto de iniciativa popular los proyectos referidos a reforma constitucional, tratados internacionales, tributos, presupuesto y materia penal.
 previo: "[[Capítulo 2, Nuevos derechos y garantías|Capítulo 2, Nuevos derechos y garantías]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

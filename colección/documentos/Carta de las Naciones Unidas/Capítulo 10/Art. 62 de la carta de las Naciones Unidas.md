@@ -14,7 +14,7 @@ articulo:
         texto: El Consejo Económico y Social podrá convocar, conforme a las reglas que prescriba la Organización, conferencias internacionales sobre asuntos de su competencia.
 previo: "[[Capítulo 10, El Consejo Económico y Social|Capítulo 10, El Consejo Económico y Social]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

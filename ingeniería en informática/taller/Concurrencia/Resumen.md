@@ -2,7 +2,7 @@
 capitulo: 4
 tags:
   - ingeniería-en-informática/taller/Concurrencia
-  - ingeniería-electrónica/taller/Concurrencia
+  - carrera/ingeniería-electrónica/taller/Concurrencia
   - facultad/resumen
 nombreResumen: Concurrencia
 ---

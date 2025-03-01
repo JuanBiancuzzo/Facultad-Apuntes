@@ -6,7 +6,7 @@ articulo:
     texto: El derecho real es el poder jurídico, de estructura legal, que se ejerce directamente sobre su objeto, en forma autónoma y que atribuye a su titular las facultades de persecución y preferencia, y las demás previstas en este Código
 previo: "[[Capítulo 1, Principios comunes|Capítulo 1, Principios comunes]]"
 tags:
-  - ingeniería-electrónica/legal/articulo
+  - carrera/ingeniería-electrónica/legal/articulo
 ---
 # Artículo
 ---

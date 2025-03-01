@@ -1,7 +1,7 @@
 ---
 capitulo: 3
 tags:
-  - ingeniería-electrónica/dispo/Diodo-de-Juntura-PN
+  - carrera/ingeniería-electrónica/dispo/Diodo-de-Juntura-PN
   - facultad/resumen
 nombreResumen: Diodo de Juntura PN
 ---

@@ -3,7 +3,7 @@ dia: 2023-04-08
 tags:
   - ingeniería-en-informática/estructura/Punto-flotante
   - nota/facultad
-  - ingeniería-electrónica/estructura/Punto-flotante
+  - carrera/ingeniería-electrónica/estructura/Punto-flotante
 ---
 # Definición
 ---

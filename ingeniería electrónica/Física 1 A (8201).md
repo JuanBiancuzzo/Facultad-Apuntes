@@ -1,7 +1,7 @@
 ---
 plan: 2009
 tags:
-  - ingeniería-electrónica/fisica-1
+  - carrera/ingeniería-electrónica/fisica-1
   - facultad/materia
 correlativas: 
 codigo: 8201
