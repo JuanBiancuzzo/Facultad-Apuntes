@@ -3,7 +3,7 @@ dia: 2024-07-27
 tags:
   - carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - nota/facultad
-  - lenguajes-de-programación
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación
   - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
 aliases:
   - Operador relacional

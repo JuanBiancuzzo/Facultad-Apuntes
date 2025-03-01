@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - carrera/ingeniería-electrónica/embebidos/Memorias
   - data-structures
-  - lenguajes-de-programación/Lenguaje-Python/Pandas
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/Lenguaje-Python/Pandas
   - carrera/ingeniería-en-informática/orga/Pandas
 aliases:
   - Pila

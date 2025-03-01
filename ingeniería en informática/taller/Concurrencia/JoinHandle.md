@@ -3,7 +3,7 @@ dia: 2023-03-29
 tags:
   - carrera/ingeniería-en-informática/taller/Concurrencia
   - nota/facultad
-  - lenguajes-de-programación/lenguaje-Rust
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
   - carrera/ingeniería-electrónica/taller/Concurrencia
 ---
 # Definición

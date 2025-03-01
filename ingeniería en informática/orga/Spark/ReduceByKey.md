@@ -3,7 +3,7 @@ dia: 2023-05-01
 tags:
   - carrera/ingeniería-en-informática/orga/Spark
   - nota/facultad
-  - lenguajes-de-programación/Lenguaje-Python/Spark
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/Lenguaje-Python/Spark
 ---
 # Definición
 ---

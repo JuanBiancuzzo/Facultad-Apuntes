@@ -4,7 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/discreta/Álgebra-de-Boole
   - nota/facultad
   - carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación
-  - lenguajes-de-programación
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación
   - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
 aliases:
   - Operador lógico

@@ -5,9 +5,9 @@ tags:
   - nota/facultad
   - carrera/ingeniería-en-informática/taller/Sintaxis
   - carrera/ingeniería-en-informática/algo-1/Lenguaje-C
-  - lenguajes-de-programación/lenguaje-Rust
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
-  - investigación/ciencias-de-la-computación/ingeniería-electrónica/algo-1/Lenguaje-C
+  - carrera/ingeniería-electrónica/algo-1/Lenguaje-C
   - carrera/ingeniería-electrónica/taller/Sintaxis
   - carrera/ingeniería-electrónica/estructura/Sistemas-numéricos
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-zig

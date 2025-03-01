@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
-  - lenguajes-de-programación
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación
   - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
   - carrera/ingeniería-en-informática/concurrentes/Introducción
 aliases:

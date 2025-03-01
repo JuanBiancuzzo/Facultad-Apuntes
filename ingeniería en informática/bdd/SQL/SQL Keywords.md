@@ -3,7 +3,7 @@ dia: 2024-03-20
 tags:
   - carrera/ingeniería-en-informática/bdd/SQL
   - nota/facultad
-  - lenguajes-de-programación/lenguaje-SQL
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-SQL
 ---
 # Definición
 ---
