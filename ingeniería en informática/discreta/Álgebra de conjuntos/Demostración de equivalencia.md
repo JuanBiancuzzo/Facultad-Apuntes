@@ -4,8 +4,8 @@ tags:
   - carrera/ingeniería-en-informática/discreta/Álgebra-de-conjuntos
   - nota/facultad
   - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
-  - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
-  - licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
+  - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
 aliases:
   - Recíproca#Usando proposiciones
   - Contrarrecíproca#Usando proposiciones

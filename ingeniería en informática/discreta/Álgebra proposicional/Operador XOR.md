@@ -4,8 +4,8 @@ tags:
   - nota/facultad
   - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
-  - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
-  - licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
+  - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
 referencias:
   - "411"
 etapa: sin-empezar

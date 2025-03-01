@@ -4,7 +4,7 @@ plan: 2022
 etapa: empezado
 estado: Me falta los capítulos de enteros, complejos y polinomios
 tags:
-  - licenciatura-en-ciencias-matemáticas/algebra-1
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1
   - facultad/materia
 correlativas: 
 referencias:

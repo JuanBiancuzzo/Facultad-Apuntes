@@ -4,8 +4,8 @@ etapa: empezado
 referencias:
   - "414"
 tags:
-  - licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
-  - licenciatura-en-ciencias-de-datos/algebra-1/Números-enteros
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
+  - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Números-enteros
   - nota/facultad
 aliases:
   - Mcm

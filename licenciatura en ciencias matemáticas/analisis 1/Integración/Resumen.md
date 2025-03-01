@@ -1,9 +1,9 @@
 ---
 capitulo: 7
 tags:
-  - licenciatura-en-ciencias-matemáticas/analisis-1/Integración
-  - licenciatura-en-ciencias-de-datos/analisis-1/Integración
-  - licenciatura-en-ciencias-físicas/analisis-1/Integración
+  - carrera/licenciatura-en-ciencias-matemáticas/analisis-1/Integración
+  - carrera/licenciatura-en-ciencias-de-datos/analisis-1/Integración
+  - carrera/licenciatura-en-ciencias-físicas/analisis-1/Integración
   - facultad/resumen
 nombreResumen: Integración
 ---

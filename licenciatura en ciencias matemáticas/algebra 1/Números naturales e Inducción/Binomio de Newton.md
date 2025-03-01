@@ -5,8 +5,8 @@ referencias:
   - "413"
   - "503"
 tags:
-  - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
-  - licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
+  - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
   - nota/facultad
 ---
 ```dataviewjs

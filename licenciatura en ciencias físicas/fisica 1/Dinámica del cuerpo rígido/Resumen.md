@@ -1,7 +1,7 @@
 ---
 capitulo: 11
 tags:
-  - licenciatura-en-ciencias-físicas/fisica-1/Dinámica-del-cuerpo-rígido
+  - carrera/licenciatura-en-ciencias-físicas/fisica-1/Dinámica-del-cuerpo-rígido
   - facultad/resumen
 nombreResumen: Dinámica del cuerpo rígido
 ---

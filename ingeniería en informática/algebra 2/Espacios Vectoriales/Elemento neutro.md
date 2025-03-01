@@ -5,8 +5,8 @@ tags:
   - nota/facultad
   - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
   - carrera/ingeniería-electrónica/algebra-2/Espacios-Vectoriales
-  - licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
-  - licenciatura-en-ciencias-de-datos/algebra-1/Números-enteros
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
+  - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Números-enteros
 aliases:
   - Elemento de identidad
 referencias:

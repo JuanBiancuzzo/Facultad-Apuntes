@@ -5,9 +5,9 @@ tags:
   - nota/facultad
   - carrera/ingeniería-en-informática/discreta/Relaciones
   - carrera/ingeniería-en-informática/discreta/Grafos
-  - licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
   - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
-  - licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
+  - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
 ---
 # Definición
 ---

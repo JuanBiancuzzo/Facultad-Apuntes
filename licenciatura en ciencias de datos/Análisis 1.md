@@ -1,7 +1,7 @@
 ---
 plan: 2020
 tags:
-  - licenciatura-en-ciencias-de-datos/analisis-1
+  - carrera/licenciatura-en-ciencias-de-datos/analisis-1
   - facultad/materia
 correlativas: 
 equivalencia: "[[licenciatura en ciencias matemáticas/analisis 1/Análisis 1.md|Análisis 1]]"

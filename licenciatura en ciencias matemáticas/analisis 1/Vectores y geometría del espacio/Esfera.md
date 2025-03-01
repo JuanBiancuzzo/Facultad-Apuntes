@@ -5,9 +5,9 @@ referencias:
   - "521"
   - "517"
 tags:
-  - licenciatura-en-ciencias-matemáticas/analisis-1/Vectores-y-geometría-del-espacio
-  - licenciatura-en-ciencias-de-datos/analisis-1/Vectores-y-geometría-del-espacio
-  - licenciatura-en-ciencias-físicas/analisis-1/Vectores-y-geometría-del-espacio
+  - carrera/licenciatura-en-ciencias-matemáticas/analisis-1/Vectores-y-geometría-del-espacio
+  - carrera/licenciatura-en-ciencias-de-datos/analisis-1/Vectores-y-geometría-del-espacio
+  - carrera/licenciatura-en-ciencias-físicas/analisis-1/Vectores-y-geometría-del-espacio
   - nota/facultad
 ---
 ```dataviewjs

@@ -4,10 +4,10 @@ etapa: ampliar
 referencias:
   - "412"
 tags:
-  - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
   - nota/facultad
   - carrera/ingeniería-en-informática/discreta/Ecuaciones-de-recurrencia
-  - licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
+  - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
 aliases:
   - Ecuación de recurrencia lineal de segundo orden homogénea
   - Sucesión de recurrencia de segundo orden homogénea

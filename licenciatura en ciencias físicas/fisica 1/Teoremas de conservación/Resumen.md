@@ -1,7 +1,7 @@
 ---
 capitulo: 8
 tags:
-  - licenciatura-en-ciencias-físicas/fisica-1/Teoremas-de-conservación
+  - carrera/licenciatura-en-ciencias-físicas/fisica-1/Teoremas-de-conservación
   - facultad/resumen
 nombreResumen: Teoremas de conservación
 ---

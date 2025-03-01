@@ -1,9 +1,9 @@
 ---
 capitulo: 5
 tags:
-  - licenciatura-en-ciencias-matemáticas/analisis-1/Extremos
-  - licenciatura-en-ciencias-de-datos/analisis-1/Extremos
-  - licenciatura-en-ciencias-físicas/analisis-1/Extremos
+  - carrera/licenciatura-en-ciencias-matemáticas/analisis-1/Extremos
+  - carrera/licenciatura-en-ciencias-de-datos/analisis-1/Extremos
+  - carrera/licenciatura-en-ciencias-físicas/analisis-1/Extremos
   - facultad/resumen
 referencias:
   - "523"

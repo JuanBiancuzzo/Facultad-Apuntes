@@ -4,9 +4,9 @@ tags:
   - carrera/ingeniería-electrónica/analisis-3/Transformaciones-conformes
   - nota/facultad
   - carrera/ingeniería-en-informática/analisis-3/Transformaciones-conformes
-  - licenciatura-en-ciencias-matemáticas/analisis-1/Vectores-y-geometría-del-espacio
-  - licenciatura-en-ciencias-de-datos/analisis-1/Vectores-y-geometría-del-espacio
-  - licenciatura-en-ciencias-físicas/analisis-1/Vectores-y-geometría-del-espacio
+  - carrera/licenciatura-en-ciencias-matemáticas/analisis-1/Vectores-y-geometría-del-espacio
+  - carrera/licenciatura-en-ciencias-de-datos/analisis-1/Vectores-y-geometría-del-espacio
+  - carrera/licenciatura-en-ciencias-físicas/analisis-1/Vectores-y-geometría-del-espacio
 referencias:
   - "517"
 etapa: ampliar

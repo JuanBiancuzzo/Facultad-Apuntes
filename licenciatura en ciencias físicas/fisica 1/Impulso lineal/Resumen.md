@@ -1,7 +1,7 @@
 ---
 capitulo: 5
 tags:
-  - licenciatura-en-ciencias-físicas/fisica-1/Impulso-lineal
+  - carrera/licenciatura-en-ciencias-físicas/fisica-1/Impulso-lineal
   - facultad/resumen
 nombreResumen: Impulso lineal
 ---

@@ -1,7 +1,7 @@
 ---
 capitulo: 3
 tags:
-  - licenciatura-en-ciencias-físicas/fisica-1/Movimiento-oscilatorio
+  - carrera/licenciatura-en-ciencias-físicas/fisica-1/Movimiento-oscilatorio
   - facultad/resumen
 nombreResumen: Movimiento oscilatorio
 ---

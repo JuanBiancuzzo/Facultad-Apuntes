@@ -1,7 +1,7 @@
 ---
 capitulo: 7
 tags:
-  - licenciatura-en-ciencias-físicas/fisica-1/Trabajo-y-energía
+  - carrera/licenciatura-en-ciencias-físicas/fisica-1/Trabajo-y-energía
   - facultad/resumen
 nombreResumen: Trabajo y energía
 ---

@@ -1,7 +1,7 @@
 ---
 capitulo: 12
 tags:
-  - licenciatura-en-ciencias-físicas/fisica-1/Relatividad-especial
+  - carrera/licenciatura-en-ciencias-físicas/fisica-1/Relatividad-especial
   - facultad/resumen
 nombreResumen: Relatividad especial
 ---

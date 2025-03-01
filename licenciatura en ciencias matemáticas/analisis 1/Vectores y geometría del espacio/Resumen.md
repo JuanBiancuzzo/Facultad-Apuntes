@@ -1,9 +1,9 @@
 ---
 capitulo: 1
 tags:
-  - licenciatura-en-ciencias-matemáticas/analisis-1/Vectores-y-geometría-del-espacio
-  - licenciatura-en-ciencias-de-datos/analisis-1/Vectores-y-geometría-del-espacio
-  - licenciatura-en-ciencias-físicas/analisis-1/Vectores-y-geometría-del-espacio
+  - carrera/licenciatura-en-ciencias-matemáticas/analisis-1/Vectores-y-geometría-del-espacio
+  - carrera/licenciatura-en-ciencias-de-datos/analisis-1/Vectores-y-geometría-del-espacio
+  - carrera/licenciatura-en-ciencias-físicas/analisis-1/Vectores-y-geometría-del-espacio
   - facultad/resumen
 referencias:
   - "517"

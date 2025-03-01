@@ -4,13 +4,13 @@ tags:
   - carrera/ingeniería-en-informática/algebra-2/Espacios-Vectoriales
   - nota/facultad
   - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
-  - licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
   - carrera/ingeniería-en-informática/discreta/Álgebra-de-Boole
   - carrera/ingeniería-en-informática/discreta/Álgebra-de-conjuntos
   - carrera/ingeniería-electrónica/algebra-2/Espacios-Vectoriales
-  - licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
-  - licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
-  - licenciatura-en-ciencias-de-datos/algebra-1/Números-enteros
+  - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
+  - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Números-enteros
 referencias:
   - "412"
   - "414"

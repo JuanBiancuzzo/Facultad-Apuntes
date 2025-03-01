@@ -4,7 +4,7 @@ plan: 1992
 etapa: sin-empezar
 estado: Sin empezar
 tags:
-  - licenciatura-en-ciencias-físicas/fisica-1
+  - carrera/licenciatura-en-ciencias-físicas/fisica-1
   - facultad/materia
 correlativas: 
 nombreMateria: Física 1

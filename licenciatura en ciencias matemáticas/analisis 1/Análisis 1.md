@@ -4,7 +4,7 @@ plan: 2022
 etapa: empezado
 estado: Empezando con vectores y geometría del espacio
 tags:
-  - licenciatura-en-ciencias-matemáticas/analisis-1
+  - carrera/licenciatura-en-ciencias-matemáticas/analisis-1
   - facultad/materia
 correlativas: 
 referencias:

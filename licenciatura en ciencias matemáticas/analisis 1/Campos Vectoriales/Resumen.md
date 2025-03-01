@@ -1,9 +1,9 @@
 ---
 capitulo: 6
 tags:
-  - licenciatura-en-ciencias-matemáticas/analisis-1/Campos-Vectoriales
-  - licenciatura-en-ciencias-de-datos/analisis-1/Campos-Vectoriales
-  - licenciatura-en-ciencias-físicas/analisis-1/Campos-Vectoriales
+  - carrera/licenciatura-en-ciencias-matemáticas/analisis-1/Campos-Vectoriales
+  - carrera/licenciatura-en-ciencias-de-datos/analisis-1/Campos-Vectoriales
+  - carrera/licenciatura-en-ciencias-físicas/analisis-1/Campos-Vectoriales
   - facultad/resumen
 nombreResumen: Campos Vectoriales
 ---

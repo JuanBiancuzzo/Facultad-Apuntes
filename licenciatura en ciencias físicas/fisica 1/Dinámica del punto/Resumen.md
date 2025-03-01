@@ -1,7 +1,7 @@
 ---
 capitulo: 2
 tags:
-  - licenciatura-en-ciencias-físicas/fisica-1/Dinámica-del-punto
+  - carrera/licenciatura-en-ciencias-físicas/fisica-1/Dinámica-del-punto
   - facultad/resumen
 nombreResumen: Dinámica del punto
 ---
