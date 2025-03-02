@@ -11,6 +11,7 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Ingeniería-de-software
   - nota/facultad
   - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
+  - carrera/ingeniería-en-informática/distribuidos/Introduccion
 ---
 # Definición
 ---
@@ -22,15 +23,19 @@ Este modelo plantea una serie de diagramas, como
 
 ## Diagrama de clases
 ---
-Describe la estructura de un [[Sistema]] con clases, asociaciones entre las clases e interfaces. Muestra la estructura interna y estática del sistema
+Describe la estructura de un sistema con clases, asociaciones entre las clases e interfaces. Muestra la estructura interna y estática del sistema
 
 ## Diagrama de casos de uso
 ---
-Mostrar la funcionalidad provista por el [[Sistema]] y su interacción con los [[Actor|usuarios]], a alto nivel
+Mostrar la funcionalidad provista por el sistema y su interacción con los [[Actor|usuarios]], a alto nivel
 
 ## Diagrama de secuencia
 ---
 Mostrar la interacción entre una serie de clases para completar una acción
+
+### Ejemplo
+---
+![[Diagrama de secuencia.png]]
 
 ## Diagrama de estado
 ---
@@ -38,4 +43,8 @@ Las máquinas de estaos se basan en la notación de [[Diagrama de estado Harel|d
 
 ## Diagrama de actividad
 ---
-Mostrar el flujo de actividades a lo largo de un ciclo de trabajo
+Mostrar el flujo de actividades a lo largo de un ciclo de trabajo, también permite ver el flujo de procesos concurrentes a lo largo del programa
+
+### Ejemplo
+---
+![[Diagrama de actividad.png]]

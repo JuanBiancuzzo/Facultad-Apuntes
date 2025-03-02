@@ -3,6 +3,7 @@ dia: 2023-10-19
 tags:
   - carrera/ingeniería-en-informática/aninfo/Analizar-y-especificar-requisitos
   - nota/facultad
+  - carrera/ingeniería-en-informática/distribuidos/Introduccion
 ---
 # Definición
 ---
