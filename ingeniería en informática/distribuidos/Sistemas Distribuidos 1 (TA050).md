@@ -12,6 +12,8 @@ etapa: sin-empezar
 estado: Sin empezar
 nombreMateria: Sistemas Distribuidos 1
 nombreReducido: distribuidos
+referencias:
+  - "625"
 ---
 # Apuntes
 ---
