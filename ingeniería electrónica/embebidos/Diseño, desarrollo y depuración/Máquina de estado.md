@@ -3,6 +3,7 @@ dia: 2024-09-10
 tags:
   - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - nota/facultad
+  - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
 aliases:
   - State Machine
   - Finite State Machine
@@ -10,6 +11,7 @@ aliases:
   - Máquina de estados finitos
 referencias:
   - "240"
+etapa: ampliar
 ---
 # Definición
 ---
@@ -32,6 +34,10 @@ Un estado está marcado como estado inicial, aquí es donde comienza la ejecuci�
 Una transición de estados define para qué entrada se cambia un estado de uno a otro
 
 Dependiendo del tipo de máquina de estados, los estados y/o transiciones producen salidas
+
+## Reconstrucción
+---
+Uno de los beneficios que otorga modelar un sistemas de esta forma, es que si tenemos un estado inicial $s_0$ y todos los eventos $e_0,~ \cdots,~ e_m$ que lo llevan a un estado $s_m$, entonces puedo recrear cualquier estado $s_1$ hasta $s_m$. Esto se puede lograr ya que esta máquina de estados es determinística
 
 ## Implementación
 ---

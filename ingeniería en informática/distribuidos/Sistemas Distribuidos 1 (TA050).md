@@ -8,8 +8,8 @@ correlativas:
   - "[[ingeniería en informática/concurrentes/Programación Concurrente (TB026).md|Programación Concurrente]]"
 codigo: TA050
 cuatri: 26C1
-etapa: sin-empezar
-estado: Sin empezar
+etapa: empezado
+estado: Terminando la clase 8
 nombreMateria: Sistemas Distribuidos 1
 nombreReducido: distribuidos
 referencias:
