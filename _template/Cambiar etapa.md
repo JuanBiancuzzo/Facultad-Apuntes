@@ -10,10 +10,6 @@
 
     let etapa = dvArchivo[DATOS_ARCHIVO.etapa];
     try {
-        if (!etapa || !Object.values(ETAPAS).includes(etapa)) {
-            throw Error("No se tiene una etapa para modificar");
-        }
-
         let nuevaEtapa = await preguntar.suggester(
             tp, (opcionEtapa) => ` ${opcionEtapa == etapa ? SIMBOLOS.confirmar : SIMBOLOS.elegir} ${opcionEtapa}`,
             Object.values(ETAPAS), "Elegir que etapa se va a usar",

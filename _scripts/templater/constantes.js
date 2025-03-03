@@ -11,7 +11,7 @@ module.exports = () => ({
         sacar: "⊖",
         agregar: "⊕",
         volver: "↶",
-        confirmar: "↶",
+        confirmar: "✓",
         elegir: "↶",
         modificar: "✏️",
         opcional: "(opcional)",
@@ -58,6 +58,7 @@ module.exports = () => ({
         },
         referencia: {
             archivo: "referencia/referenciasArchivo",
+            acumulada: "referencia/referenciasAcumuladas",
         },
         carrera: {
             mapa: "carrera/mapa",
@@ -68,6 +69,7 @@ module.exports = () => ({
     },
     SECCIONES: {
         apuntes: { nivel: 1, texto: "Apuntes" },
+        indice: { nivel: 1, texto: "Índice" },
         bibliografia: { nivel: 1, texto: "Bibliografía" },
         mapa: { nivel: 1, texto: "Mapa" },
         materias: { nivel: 1, texto: "Materias" },
@@ -238,7 +240,6 @@ module.exports = () => ({
         RESUMEN: {
             numero: "capitulo",
             parte: "parte",
-            referencias: "referencias",
             nombre: "nombreResumen",
         },
         PROYECTO: {

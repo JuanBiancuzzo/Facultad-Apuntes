@@ -1,7 +1,7 @@
 async function crearSeccionCarrera(tp) {
     const { 
         DIRECTORIOS, TAGS: { facultad: TAGS_FACULTAD },
-        DATOS: { ARCHIVO: DATOS_ARCHIVO, MATERIA: DATOS_MATERIA },
+        DATOS: { ARCHIVO: DATOS_ARCHIVO, MATERIA: DATOS_MATERIA, RESUMEN: DATOS_RESUMEN },
     } = tp.user.constantes();
 
     const seccionCarrera = tp.user.seccionCarrera(tp);
@@ -11,7 +11,6 @@ async function crearSeccionCarrera(tp) {
     const preguntar = tp.user.preguntar();
     const obtenerTag = tp.user.obtenerTag;
     const error = tp.user.error();
-
 
     const dv = app.plugins.plugins.dataview.api;
     const tArchivo = tp.file.find_tfile(tp.file.path(true));
@@ -35,7 +34,11 @@ async function crearSeccionCarrera(tp) {
             .map(tag => "#" + tag.split("/").slice(0, -1).join("/"))
             .distinct();
 
-        let carrerasPorMateria = dv.pages(`(${tagsCarreras.join(" or ")}) and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.carrera}`);
+        let carrerasPorMateria = [];
+        if (tagsCarreras.length > 0) {
+            carrerasPorMateria = dv.pages(`(${tagsCarreras.join(" or ")}) and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.carrera}`);
+        }
+
         if (carreras.length > 0 && carrerasPorMateria.every(carrera => carrera.file.path != carreras.first().file.path)) {
             carrerasPorMateria = [ ...carrerasPorMateria, carreras.first()];
         }
@@ -60,13 +63,22 @@ async function crearSeccionCarrera(tp) {
         // Buscamos obtener los tags de los resumenes, y sacarle el ultimo directorio, 
         // para obtener las materias involucradas
         let tagsMateria = resumenes
-            .flatMap(resumen => obtenerTag(tp, resumen[DATOS_ARCHIVO.tags]))
+            .flatMap(resumen => obtenerTag(tp, resumen[DATOS_ARCHIVO.tags]).map(tag => {
+                if (!resumen[DATOS_RESUMEN.parte]) return tag;
+
+                let parte = resumen[DATOS_RESUMEN.parte];
+                let { index } = [...tag.matchAll(`/${parte}`)].last();
+                return tag.slice(0, index);
+            }))
             .filter(tag => tag.split("/").length > 1)
             .map(tag => "#" + tag.split("/").slice(0, -1).join("/"))
             .distinct();
 
-        let materiasPorResumen = dv.pages(`(${tagsMateria.join(" or ")}) and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.carrera}`)
-            .filter(materia => !materia[DATOS_MATERIA.equivalencia]);
+        let materiasPorResumen = [];
+        if (tagsMateria.length > 0) {
+            materiasPorResumen = dv.pages(`(${tagsMateria.join(" or ")}) and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.materia}`)
+                .filter(materia => !materia[DATOS_MATERIA.equivalencia]);
+        }
 
         if (materias.length > 0 && materiasPorResumen.every(materia => materia.file.path != materias.first().file.path)) {
             materiasPorResumen = [ ...materiasPorResumen, materias.first()];

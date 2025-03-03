@@ -170,7 +170,7 @@ async function crearNotaFacultad(tp) {
                 );
         }
 
-        let tagsMateria = tp.user.obtenerTag(tp, materia[DATOS_MATERIA.tags]).map(tag => `#${tag}`);
+        let tagsMateria = tp.user.obtenerTag(tp, materia[DATOS_ARCHIVO.tags]).map(tag => `#${tag}`);
         resumenes = dv.pages(`(${tagsMateria.join(" or ")}) and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.resumen}`);
         break;
     }
@@ -179,7 +179,7 @@ async function crearNotaFacultad(tp) {
     if (resumenes.length > 1) {
         resumen = await preguntar.suggester(
             tp, ({ [DATOS_RESUMEN.parte]: parte, [DATOS_RESUMEN.nombre]: nombre }) => `${nombre} ${parte ? `parte ${parte}` : ""}`,
-            resumenes.sort(resumen => resumen[DATOS_RESUMEN.numero]), "Que resumen se quiere agregar esta nota?",
+            resumenes.sort(resumen => parseInt(resumen[DATOS_RESUMEN.numero], 10)), "Que resumen se quiere agregar esta nota?",
             error.Quit("No se ingresó en que resumen se va a crear la nota")
         );
     }
