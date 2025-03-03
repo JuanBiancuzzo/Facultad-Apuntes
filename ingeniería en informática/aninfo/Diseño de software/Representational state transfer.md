@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Diseño-de-software
   - nota/facultad
   - investigación/networking
+  - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
 aliases:
   - API REST
   - REST
@@ -11,6 +12,8 @@ aliases:
   - Error 300#^error-300
   - Error 400#^error-400
   - Error 500#^error-500
+  - RESTful#RESTful
+etapa: ampliar
 ---
 # Definición
 ---
@@ -23,7 +26,23 @@ Es un estilo de [[Arquitectura de aplicaciones|arquitectura de software]] para s
 | Put    | Idempotente y no seguro           | Update   |
 | Delete | Idempotente y no seguro           | Eliminar |
 
-Existen dos tipos de mensajes [[Hypertext Transfer Protocol|HTTP]]. Los request messages y los response messages
+Existen dos tipos de mensajes [[Hypertext Transfer Protocol|HTTP]]. Los request messages y los response messages, y los mensajes usan [[Javascript Object Notation (JSON)|JSON]] o [[Lenguaje de marcado extensible|XML]]
+
+Tiene un equivalente con [[Structured Query Language|SQL]]
+* POST $\iff$ [[Sentencia INSERT INTO|INSERT]]
+* GET $\iff$ [[Sentencia SELECT|SELECT]]
+* PUT $\iff$ [[Sentencia UPDATE|UPDATE]]
+* DELETE $\iff$ [[Sentencia DELETE|DELETE]]
+
+## RESTful
+---
+Este [[Protocolo de internet|protocolo]] tiene como objetivo ser eficiente, escalable y confiable. Tiene como principio esta [[Arquitectura de aplicaciones|arquitectura]]
+* [[Arquitectura cliente servidor|Arquitectura cliente-servidor]]
+* [[Cache|Cacheabilidad]]
+* [[Interfaz|Interfaces]] uniformes
+    * Una forma de verlo es como en [[Hypermedia as the engine of application state|HATEOAS]]
+* Statelessness
+* Una estructura orientada a [[Arquitectura por layers|capas]]
 
 ## Request message
 ---
@@ -45,13 +64,31 @@ Un response message tiene una estructura similar a la del pedido. La primera l
 
 Los códigos de error más comunes son
 * 200 OK ^error-200
-	* Indicando que el pedido fue exitoso. 
+    * Indicando que el pedido fue exitoso. 
+* 201 Created
+    * El POST request fue exitoso y el recurso es mandado por JSON
+* 204 No content
+    * El servicio fue completado exitosamente y no hay información adicional que mandar
 * 301 Moved Permanently ^error-300
-	* Indicando que el objeto no está disponible en esa dirección e indicando la nueva URL en los headers
+    * Indicando que el objeto no está disponible en esa dirección e indicando la nueva URL en los headers
+* 304 Not Modified
+    * Indica que el recurso no fue modificado desde la última request
 * 400 Bad Request ^error-400
-	* Es un código de error genérico para cualquier pedido que no fue entendido
-	* 404 Not Found
-		* Indicando que el documento no existe en el [[Servidor|servidor]]
+    * Es un código de error genérico para cualquier pedido que no fue entendido
+* 401 Unauthorized
+    * El usuario no tiene la autentificación necesaria
+* 403 Forbidden
+    * El request no esta permitido
+* 404 Not Found
+    * Indicando que el documento no existe en el [[Servidor|servidor]]
+* 405 Not Allowed
+    * El request no es compatible
+* 409 Conflict
+    * Hay un conflicto con un recurso que ya existe
+* 412
+    * Indica que el request fue denegado
+* 422 Unprocessable
+    * No se puede procesar
 * 505 HTTP Version Not Supported, indicando que la versión del protocolo utilizada no es soportada por el servidor ^error-500
 
 A continuación, al igual que en el request, siguen las header lines y el entity body. Para el caso de una respuesta a un pedido de GET, esta sección contiene el objeto en sí

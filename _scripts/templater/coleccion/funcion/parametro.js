@@ -35,7 +35,23 @@ class Parametro {
                 return tp.user.tipoDeDato(tp, manejoTipoDeDatos, lenguajeActual);
             }
         }
+        this.clonar = this.generarClone.bind(this, tp);
     } 
+
+    generarClone(tp) {
+        return new Parametro(tp, this.manejoTipoDeDatos, this.lenguajeActual, this.generarRepresentacion());
+    }
+
+    async definirGenericos(generarPreguntas, generarError) {
+
+    }
+
+    preguntarDatos(datosRecolectados = []) {
+        if (this.tipoDeDato?.esValido()) {
+            this.tipoDeDato.preguntarDatos(datosRecolectados);
+        }
+        return datosRecolectados;
+    }
 
     async actualizarDatos(respuesta, generarPreguntas, generarError) {
         if (respuesta == SALIR) 
@@ -96,7 +112,7 @@ class Parametro {
             : ` ${this.simbolos.agregar} Descripción del parámetro`
         )
 
-        if (this.datosLenguaje.parametroValorPorDefecto) {
+        if (this.datosLenguaje.parametro.valorPorDefecto) {
             opciones.push(this.config.valorPorDefecto);
             valores.push(this.valorPorDefecto
                 ? ` ${this.simbolos.modificar} Modificar el valor por defecto del parámetro, donde era ${this.valorPorDefecto}`
@@ -150,7 +166,7 @@ class Parametro {
 
         switch (this.lenguajeActual) {
             case this.lenguajes.python:
-                if (this.datosLenguaje.parametroValorPorDefecto && this.valorPorDefecto) {
+                if (this.datosLenguaje.valorPorDefecto && this.valorPorDefecto) {
                     textoDefault = `= ${this.valorPorDefecto}`;
                 }
 
@@ -163,7 +179,7 @@ class Parametro {
                 return `${descripcionTipoDato} ${this.nombre}`;
 
             default:
-                if (this.datosLenguaje.parametroValorPorDefecto && this.valorPorDefecto) {
+                if (this.datosLenguaje.valorPorDefecto && this.valorPorDefecto) {
                     textoDefault = `= ${this.valorPorDefecto}`;
                 }
                 return `${this.nombre}: ${descripcionTipoDato} ${textoDefault}`;
@@ -174,10 +190,15 @@ class Parametro {
         if (!this.esValido()) return "";
 
         let descripcionTipoDato = this.tipoDeDato.descripcionArgumento();
+        let textoDefault = "";
 
         switch (this.lenguajeActual) {
             case this.lenguajes.python:
-                return `${this.nombre}: ${descripcionTipoDato}`;
+                if (this.datosLenguaje.valorPorDefecto && this.valorPorDefecto) {
+                    textoDefault = `= ${this.valorPorDefecto}`;
+                }
+
+                return `${this.nombre}: ${descripcionTipoDato} ${textoDefault}`;
 
             case this.lenguajes.rust:
                 return `${this.nombre}: ${descripcionTipoDato}`;
@@ -186,7 +207,10 @@ class Parametro {
                 return `${descripcionTipoDato} ${this.nombre}`;
 
             default:
-                return `${this.nombre}: ${descripcionTipoDato}`;
+                if (this.datosLenguaje.valorPorDefecto && this.valorPorDefecto) {
+                    textoDefault = `= ${this.valorPorDefecto}`;
+                }
+                return `${this.nombre}: ${descripcionTipoDato} ${textoDefault}`;
         }
     }
 }

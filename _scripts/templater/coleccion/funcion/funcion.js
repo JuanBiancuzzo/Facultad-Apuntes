@@ -11,7 +11,8 @@ class Funcion {
     constructor(tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
         const { 
             SIMBOLOS, DATOS: { 
-                FUNCIONES: { funcion: DATOS_FUNCION }, LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } 
+                FUNCIONES: { funcion: DATOS_FUNCION, manejador: DATOS_MANEJADOR, tipoDeDato: { tipo: DATOS_TIPOS } }, 
+                LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } 
             } 
         } = tp.user.constantes();
 
@@ -20,6 +21,8 @@ class Funcion {
         this.datosLenguaje = DATOS_LENGUAJES[this.lenguajeActual];
 
         this.config = DATOS_FUNCION;
+        this.manejador = DATOS_MANEJADOR;
+        this.tipos = DATOS_TIPOS;
         this.simbolos = SIMBOLOS;
 
         this.manejoTipoDeDatos = manejoTipoDeDatos;
@@ -40,15 +43,32 @@ class Funcion {
 
         let lenguajeActual = this.lenguajeActual;
         this.informacion = {
-            nuevoParametro() {
-                return tp.user.parametro(tp, manejoTipoDeDatos, lenguajeActual);
-            },
-
-            nuevoReturn() {
-                return tp.user.return(tp, manejoTipoDeDatos, lenguajeActual);
-            },
+            nuevoParametro() { return tp.user.parametro(tp, manejoTipoDeDatos, lenguajeActual); },
+            nuevoReturn() { return tp.user.return(tp, manejoTipoDeDatos, lenguajeActual); },
+            nuevoGenerico() { return tp.user.generico(tp, manejoTipoDeDatos, lenguajeActual); }
         };
+        this.clonar = this.generarClone.bind(this, tp);
     } 
+
+    generarClone(tp) {
+        return new Funcion(tp, this.manejoTipoDeDatos, this.lenguajeActual, this.generarRepresentacion());
+    }
+
+    async definirGenericos(generarPreguntas, generarError) {
+
+    }
+
+    preguntarDatos(datosRecolectados = []) {
+        for (let parametro of this.parametros) {
+            if (parametro?.esValido()) {
+                parametro.preguntarDatos(datosRecolectados);
+            }
+        }
+        if (this.return?.esValido()) {
+            this.return.preguntarDatos(datosRecolectados);
+        }
+        return datosRecolectados;
+    }
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
         if (respuestaDada == SALIR)
@@ -148,7 +168,7 @@ class Funcion {
             valores.push(` ${this.simbolos.modificar} Modificar el valor de retorno de la función, donde era ${descripcion}`);
 
         } else {
-            let simboloReturnOpcional = this.datosLenguaje.returnOpcional ? `${this.simbolos.opcional} ` : "";
+            let simboloReturnOpcional = this.datosLenguaje.return.opcional ? `${this.simbolos.opcional} ` : "";
             opciones.push(this.config.return);
             valores.push(` ${this.simbolos.agregar} ${simboloReturnOpcional}Valor de retorno de la función`);
         }
@@ -173,7 +193,7 @@ class Funcion {
 
     esValido() {
         return this.nombre && this.descripcion && this.parametros.every(parametro => parametro && parametro.esValido())
-            && ((this.return && this.return.esValido()) || this.datosLenguaje.returnOpcional);
+            && ((this.return && this.return.esValido()) || this.datosLenguaje.return.opcional);
     }
 
     generarRepresentacion() {
@@ -190,7 +210,12 @@ class Funcion {
     descripcionCompleta() {
         if (!this.esValido()) return "";
 
+        let descripcionGenerico;
+
         let parametros = this.parametros.map(param => param.descripcionArgumento());
+        let descripcionesGenericos = this.preguntarDatos()
+            .filter(datos => datos[this.manejador.tipo] == this.tipos.generico)
+            .map(datos => this.informacion.nuevoGenerico(datos).descripcionArgumento());
 
         let descripcion = "";
         switch (this.lenguajeActual) {
@@ -207,7 +232,12 @@ class Funcion {
                 break;
 
             case this.lenguajes.rust:
-                descripcion = `fn ${this.nombre}(${parametros.join(", ")})`;
+                descripcionGenerico = "";
+                if (descripcionesGenericos.length > 0) {
+                    descripcionGenerico = `<${descripcionesGenericos.join(", ")}>`;
+                }
+
+                descripcion = `fn ${this.nombre}${descripcionGenerico}(${parametros.join(", ")})`;
                 if (this.return && this.return.esValido()) {
                     descripcion += ` -> ${this.return.descripcionArgumento()}`;
                 };
@@ -215,7 +245,12 @@ class Funcion {
                 break;
 
             default:
-                descripcion = `function ${this.nombre} :: `;
+                descripcionGenerico = "";
+                if (descripcionesGenericos.length > 0) {
+                    descripcionGenerico = `<${descripcionesGenericos.join(", ")}>`;
+                }
+
+                descripcion = `function ${this.nombre}${descripcionGenerico} :: `;
                 descripcion += parametros.length > 0 ? parametros.join(", ") : "()";
 
                 if (this.return && this.return.esValido()) {
@@ -235,9 +270,10 @@ class Funcion {
         let descripcion = "";
         switch (this.lenguajeActual) {
             case this.lenguajes.python:
-                let descripcionReturn = (this.return && this.return.esValido())
+                let descripcionReturn = this.return?.esValido()
                     ? this.return.descripcionArgumento()
                     : "None";
+
                 descripcion = `${this.nombre} Callable[[${parametros.join(", ")}], ${descripcionReturn}]`;
                 break;
 
@@ -247,7 +283,7 @@ class Funcion {
 
             case this.lenguajes.rust:
                 descripcion = `${this.nombre}: fn (${parametros.join(", ")})`;
-                if (this.return && this.return.esValido()) {
+                if (this.return?.esValido()) {
                     descripcion += ` -> ${this.return.descripcionArgumento()}`;
                 };
                 break;
@@ -256,7 +292,7 @@ class Funcion {
                 descripcion = `${this.nombre} function :: `;
                 descripcion += parametros.length > 0 ? parametros.join(", ") : "()";
 
-                if (this.return && this.return.esValido()) {
+                if (this.return?.esValido()) {
                     descripcion += ` -> ${this.return.descripcionArgumento()}`;
                 };
                 break;

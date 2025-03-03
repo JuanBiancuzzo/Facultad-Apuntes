@@ -15,7 +15,7 @@ class TipoTupla {
         this.lenguajes = LENGUAJES; 
         this.datosLenguaje = DATOS_LENGUAJES[this.lenguajeActual];
 
-        if (!(this.datosLenguaje.tieneTupla)) throw Error(`El lenguaje ${this.lenguajeActual} no debería tener tuplas`);
+        if (!(this.datosLenguaje.tupla.tieneTupla)) throw Error(`El lenguaje ${this.lenguajeActual} no debería tener tuplas`);
 
         this.simbolos = SIMBOLOS;
         this.manejoTipoDeDatos = manejoTipoDeDatos;
@@ -29,6 +29,24 @@ class TipoTupla {
         this.informacion = {
             nuevoTipoDeDato() { return tp.user.tipoDeDato(tp, manejoTipoDeDatos, lenguajeActual) },
         }
+        this.clonar = this.generarClone.bind(this, tp);
+    } 
+
+    generarClone(tp) {
+        return new TipoTupla(tp, this.manejoTipoDeDatos, this.lenguajeActual, this.generarRepresentacion());
+    }
+
+    async definirGenericos(generarPreguntas, generarError) {
+
+    }
+
+    preguntarDatos(datosRecolectados = []) {
+        for (let tipoDeDato of this.datos) {
+            if (tipoDeDato?.esValido()) {
+                tipoDeDato.preguntarDatos(datosRecolectados);
+            }
+        }
+        return datosRecolectados;
     }
 
     async actualizarDatos(respuestaDada, generarPreguntas, _generarError) {

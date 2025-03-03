@@ -15,6 +15,8 @@ class TipoArray {
         this.lenguajes = LENGUAJES; 
         this.datosLenguaje = DATOS_LENGUAJES[this.lenguajeActual];
 
+        if (!this.datosLenguaje.array.tieneArray) throw Error(`El lenguaje ${this.lenguajeActual} no tiene array`);
+
         this.config = DATOS_ARRAY;
         this.simbolos = SIMBOLOS;
 
@@ -34,6 +36,13 @@ class TipoArray {
             }
         }
     } 
+
+    preguntarDatos(datosRecolectados = []) {
+        if (this.tipoDeDato?.esValido()) {
+            this.tipoDeDato.preguntarDatos(datosRecolectados);
+        }
+        return datosRecolectados;
+    }
 
     async actualizarDatos(respuesta, generarPreguntas, generarError) {
         if (respuesta == SALIR) 
@@ -76,7 +85,7 @@ class TipoArray {
             valores.push(` ${this.simbolos.agregar} Tipo de dato del array`);
         }
 
-        if (this.datosLenguaje.arrayConCantidad) {
+        if (this.datosLenguaje.array.conCantidad) {
             opciones.push(this.config.cantidad);
             valores.push(this.cantidad
                 ? ` ${this.simbolos.modificar} Modificar la cantidad que tiene el array, donde era ${this.cantidad}`

@@ -1,5 +1,5 @@
-const MODIFICAR_METODO = "modificar";
-const ELIMINAR_METODO = "eliminar";
+const MODIFICAR_METODO = "modificar metodo";
+const ELIMINAR_METODO = "eliminar metodo";
 
 const CANTIDAD_MINIMA = 0;
 
@@ -9,7 +9,7 @@ class TipoInterfaz {
     constructor(tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
         const { 
             SIMBOLOS, DATOS: { 
-                FUNCIONES: { interfaz: DATOS_INTERFAZ },
+                FUNCIONES: { interfaz: DATOS_INTERFAZ, manejador: DATOS_MANEJADOR, tipoDeDato: { tipo: DATOS_TIPOS } },
                 LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } 
             } 
         } = tp.user.constantes();
@@ -18,9 +18,11 @@ class TipoInterfaz {
         this.lenguajes = LENGUAJES; 
         this.datosLenguaje = DATOS_LENGUAJES[this.lenguajeActual];
 
-        if (!this.datosLenguaje.genericos) throw Error(`El lenguaje ${this.lenguajeActual} no tiene genericos`);
+        if (!this.datosLenguaje.interfaz.tieneInterfaces) throw Error(`El lenguaje ${this.lenguajeActual} no tiene interfaz`);
 
         this.config = DATOS_INTERFAZ;
+        this.manejador = DATOS_MANEJADOR;
+        this.tipos = DATOS_TIPOS;
         this.simbolos = SIMBOLOS;
 
         this.manejoTipoDeDatos = manejoTipoDeDatos;
@@ -35,9 +37,30 @@ class TipoInterfaz {
 
         let lenguajeActual = this.lenguajeActual;
         this.informacion = {
-            nuevoMetodo() { return tp.user.funcion(tp, manejoTipoDeDatos, lenguajeActual); }
+            nuevoMetodo() { return tp.user.funcion(tp, manejoTipoDeDatos, lenguajeActual); },
+            nuevoGenerico() { return tp.user.generico(tp, manejoTipoDeDatos, lenguajeActual); }
         }
+
+        this.clonar = this.generarClone.bind(this, tp);
     } 
+
+    generarClone(tp) {
+        return new TipoInterfaz(tp, this.manejoTipoDeDatos, this.lenguajeActual, this.generarRepresentacion());
+    }
+
+    async definirGenericos(generarPreguntas, generarError) {
+
+    }
+
+    preguntarDatos(datosRecolectados = []) {
+        for (let metodo of this.metodos) {
+            if (metodo?.esValido()) {
+                metodo.preguntarDatos(datosRecolectados);
+            }
+        }
+        return datosRecolectados;
+    }
+
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
         if (respuestaDada == SALIR)

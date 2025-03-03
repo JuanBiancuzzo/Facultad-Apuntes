@@ -14,7 +14,7 @@ aliases:
 nombreEstructura: Hash table
 ---
 ```dataviewjs
-	await dv.view("_scripts/dataview/investigacion/mostrarEtapa", { etapa: dv.current()?.etapa });
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
@@ -33,3 +33,11 @@ nombreEstructura: Hash table
 \end{document}
 ``` 
 ^representacion
+
+Se puede hacer
+* `Insert(item)`
+    * En el caso que exista ya un elemento con esa key, se sobrescribe
+* `Delete(item)`
+* `Search(key) -> Option<item>`
+
+Item es una interfaz, donde 

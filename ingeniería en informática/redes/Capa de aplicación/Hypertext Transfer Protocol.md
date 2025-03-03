@@ -2,7 +2,8 @@
 dia: 2024-03-19
 aliases:
   - HTTP
-  - HTTPS
+  - Hypertext Transfer Protocolo Secure#HTTPS
+  - HTTPS#HTTPS
 tags:
   - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
   - nota/facultad
@@ -10,6 +11,7 @@ tags:
   - carrera/ingeniería-electrónica/redes/Capa-de-aplicación
   - investigación/networking/Protocolos
   - investigación/ciencias-de-la-computación/Networking/Protocolos
+  - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
 ---
 # Definición
 ---
@@ -51,3 +53,7 @@ Existen 3 [[Request For Comments|RFCs]]
 * 1945
 * 7230
 * 7540
+
+## HTTPS
+---
+%% Ampliar
