@@ -6,12 +6,13 @@ function archivoDeNotaIgual(tp, tArchivo, titulo) {
     if (!posibleArchivo || posibleArchivo.stat.ctime == tArchivo.stat.ctime) return null;
 
     const { DATOS: { ARCHIVO: DATOS_ARCHIVO } } = tp.user.constantes();
+    let archivoExistente = dv.page(posibleArchivo.file.path);
+
     if (!archivoExistente[DATOS_ARCHIVO.tags] || archivoExistente[DATOS_ARCHIVO.tags].length == 0)
         return null;
 
     const dv = app.plugins.plugins.dataview.api;
 
-    let archivoExistente = dv.page(posibleArchivo.file.path);
     let tagsSecciones = tp.user.tagsSeccion(tp);
 
     if (archivoExistente[DATOS_ARCHIVO.tags].every(tag => !tagsSecciones.include(tag)))

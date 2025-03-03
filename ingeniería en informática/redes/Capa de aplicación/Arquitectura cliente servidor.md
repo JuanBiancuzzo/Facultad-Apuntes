@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
   - nota/facultad
   - carrera/ingeniería-electrónica/redes/Capa-de-aplicación
+  - carrera/ingeniería-en-informática/distribuidos/Fundamentos-de-Sistemas-Distribuidos
+etapa: ampliar
 ---
 # Definición
 ---

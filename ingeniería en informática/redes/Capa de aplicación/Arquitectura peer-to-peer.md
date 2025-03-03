@@ -6,6 +6,8 @@ tags:
   - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
   - nota/facultad
   - carrera/ingeniería-electrónica/redes/Capa-de-aplicación
+  - carrera/ingeniería-en-informática/distribuidos/Fundamentos-de-Sistemas-Distribuidos
+etapa: ampliar
 ---
 # Definición
 ---
@@ -13,7 +15,7 @@ En esta [[Arquitectura de aplicaciones|arquitectura]] hay una mínima o nula dep
 
 Los peers son dueños del [[Servicio|servicio]] que provee, y son las computadoras que controlan los usuarios
 
-Esta arquitectura tiene el beneficio de ser auto escalable, e incluso mientras más host mejor es la experiencia. También son eficientes en sus costos ya que no necesitan los costos generados por conexiones a servidores
+Esta arquitectura tiene el beneficio de ser auto escalable, e incluso mientras más host mejor es la experiencia. También son eficientes en sus costos ya que no necesitan los costos generados por conexiones a servidores. Muy útiles cuando existen objetivos de colaboración por parte del negocio
 
 Por otro lado, también hay problemas de seguridad ya que no hay un lugar centralizado para asegurar ninguna política más allá de la comunicación y la funcionalidad de actores buenos en la [[Red|red]]
 
