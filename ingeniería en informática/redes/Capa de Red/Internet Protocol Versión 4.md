@@ -3,7 +3,6 @@ dia: 2024-06-14
 aliases:
   - IPv4
   - TTL
-  - Broadcast
 tags:
   - carrera/ingeniería-en-informática/redes/Capa-de-Red
   - nota/facultad
@@ -66,4 +65,4 @@ Un host típicamente tiene un único enlace para conectarse a la red. Cuando el 
 
 ## Broadcast
 ---
-La IP de broadcast `255.255.255.255` es utilizada cuando un host quiere enviar un mensaje a todos los hosts de la misma [[Subnetting|subnet]]
+La IP de [[Topología de comunicación#^broadcast|broadcast]] `255.255.255.255` es utilizada cuando un host quiere enviar un mensaje a todos los hosts de la misma [[Subnetting|subnet]]

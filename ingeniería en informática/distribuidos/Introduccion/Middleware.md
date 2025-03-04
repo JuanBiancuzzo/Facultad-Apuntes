@@ -82,5 +82,5 @@ Veamos los objetivos que tiene un middleware
 
 ### Comunicación de grupos
 ---
-* Permite [[Internet Protocol Versión 4|broadcasting]], [[Multicasting|multicasting]] y [[Internet Protocolo Anycast|anycasting]]
+* Permite [[Topología de comunicación#^broadcast|broadcasting]], [[Topología de comunicación#^muticast|multicasting]] y [[Topología de comunicación#^anycast|Anycast]]
 * Facilita localización de elementos y coordinación de tareas

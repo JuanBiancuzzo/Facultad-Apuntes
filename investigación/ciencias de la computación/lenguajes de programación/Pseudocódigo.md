@@ -28,7 +28,7 @@ tiposDeDatosPrimitivos:
 ```
 # Definición
 ---
-En [[Ciencias de la computación|ciencias de la computación]] y [[investigación/ciencias de la computación/Análisis numérico/Análisis numérico|análisis numérico]], el pseudocódigo es una descripción de [[Lenguaje de programación#Lenguaje de alto nivel|alto nivel]] compacta e informal del principio operativo de un programa informático u otro algoritmo
+En [[Ciencia de la computación|ciencias de la computación]] y [[investigación/ciencias de la computación/Análisis numérico/Análisis numérico|análisis numérico]], el pseudocódigo es una descripción de [[Lenguaje de programación#Lenguaje de alto nivel|alto nivel]] compacta e informal del principio operativo de un programa informático u otro algoritmo
 
 Utiliza las convenciones estructurales de un [[Lenguaje de programación|lenguaje de programación real]],​ pero está diseñado para la lectura humana en lugar de la lectura mediante máquina, y con independencia de cualquier otro lenguaje de programación. Normalmente, el pseudocódigo omite detalles que no son esenciales para la comprensión humana del algoritmo, tales como declaraciones de variables, código específico del sistema y algunas subrutinas
 

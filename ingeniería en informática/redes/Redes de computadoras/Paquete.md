@@ -9,6 +9,7 @@ tags:
   - carrera/ingeniería-en-informática/redes/Redes-de-computadoras
   - nota/facultad
   - carrera/ingeniería-electrónica/redes/Redes-de-computadoras
+  - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
 etapa: empezado
 ---
 # Definición
@@ -73,3 +74,9 @@ En la [[Capa de Red|capa de red]]
 * La información de la capa anterior y su respectivo header lo llama Datagram
 En la [[Capa de Enlace|capa de enlace]] 
 * La información de la capa anterior y su respectivo header lo llama Tramas
+
+## Formato de mensaje
+---
+Si formato del mensaje es en [[Número binario|binario]], por lo que busca ser eficiente en el especio y por su densidad de [[Información|información]], no [[Encoding|comprimible]]. Para esto, necesitamos la [[Serialización|serialización]] de los datos
+
+Si el formato del mensaje es en texto plano, suele ser no muy eficiente y tiene poca densidad de información. La serialización pasa a ser legible para las personas, donde suele ser usando [[Javascript Object Notation (JSON)|JSON]] o [[Lenguaje de marcado extensible|XML]]

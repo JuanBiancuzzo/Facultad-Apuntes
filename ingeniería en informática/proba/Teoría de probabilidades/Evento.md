@@ -4,8 +4,18 @@ tags:
   - carrera/ingeniería-en-informática/proba/Teoría-de-probabilidades
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Teoría-de-probabilidades
+  - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
+etapa: ampliar
 ---
 # Definición
+---
+La definición de evento depende mucho en el contexto que se esté usando
+
+## En ciencia de la computación
+---
+Suceso relativo al [[Proceso|proceso]] $P_i$ que modifica su [[Estados de un proceso|estado]]
+
+## En Probabilidad
 ---
 [[Subconjunto]] de un [[Espacio muestral|espacio muestral]] $\Omega$
 

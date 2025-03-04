@@ -28,4 +28,4 @@ importantes en la extensión, son
 * Care-of address (COA) fields ^COA
     * Una lista de uno o más COA provista por el agente externo. El agente externo seleccionará una de las direcciones cuando se registra con su agente local
 
-Con agent solicitation, un nodo móvil que quiere descubrir agentes puede realizarlo sin necesidad de esperar un [[Internet Protocol Versión 4|broadcast]] de los mismos. Para hacerlo, realiza un broadcast de un agent solicitation message. Este es un [[Paquete|paquete]] ICMP con un `type value` de $10$. Cuando un agente recibe la solicitud, este envía un agent advertisement directamente al nodo móvil ([[Unicast|unicast]])
+Con agent solicitation, un nodo móvil que quiere descubrir agentes puede realizarlo sin necesidad de esperar un [[Topología de comunicación#^broadcast|broadcast]] de los mismos. Para hacerlo, realiza un broadcast de un agent solicitation message. Este es un [[Paquete|paquete]] ICMP con un `type value` de $10$. Cuando un agente recibe la solicitud, este envía un agent advertisement directamente al nodo móvil ([[Unicast|unicast]])

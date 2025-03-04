@@ -12,7 +12,7 @@ aliases:
 Usualmente, las redes switched [[Local Area Network|LAN]] son configuradas jerárquicamente, donde cada grupo contiene su propia switched LAN que es a su vez conectada con otros grupos a través de una jerarquía de switches. Podemos identificar tres inconvenientes principales de esta configuración
 
 * Lack of Traffic Isolation
-    * Aunque las jerarquías localizan el tráfico del grupo en un único switch, el tráfico de [[Internet Protocol Versión 4#Broadcast|broadcast]] debe aún recorrer toda la red completa. Limitar este tráfico incrementaría el rendimiento de la red. Para solucionar esto podríamos reemplazar el switch central (que conecta los switches de los distintos departamentos) con un [[Router|router]]
+    * Aunque las jerarquías localizan el tráfico del grupo en un único switch, el tráfico de [[Topología de comunicación#^broadcast|broadcast]] debe aún recorrer toda la red completa. Limitar este tráfico incrementaría el rendimiento de la red. Para solucionar esto podríamos reemplazar el switch central (que conecta los switches de los distintos departamentos) con un [[Router|router]]
 * Inefficient use of Switches
     * Si aumenta el número de grupos, pero se reduce el número de hosts por grupo, estaremos ante una situación donde o bien podríamos tener muchos switches y tener un uso ineficiente de los mismos, o bien tener un único switch pero sin proveer aislamiento de tráfico
 * Managing Users

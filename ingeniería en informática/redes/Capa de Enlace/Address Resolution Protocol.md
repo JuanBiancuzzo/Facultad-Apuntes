@@ -18,7 +18,7 @@ Este [[Protocolo|protocolo]] es similar al [[Domain Name System|DNS]], pero con 
 
 Todos los hosts tienen una tabla ARP que contiene mapeos entre direcciones IP y MAC. Además, las entradas de la tabla contienen un [[Internet Protocol Versión 4#^b40fdb|campo TTL]] para definir cuanto actualizar el valor, debido a que los mapeos no son permanentes
 
-Cuando un [[Host|host]] quiere definir una dirección MAC, el adaptador enviara un [[Paquete|paquete]] ARP conteniendo la petición y la enviara en [[Internet Protocol Versión 4#Broadcast|broadcast]] a toda la subred
+Cuando un [[Host|host]] quiere definir una dirección MAC, el adaptador enviara un [[Paquete|paquete]] ARP conteniendo la petición y la enviara en [[Topología de comunicación#^broadcast|broadcast]] a toda la subred
 
 Los hosts que contiene la dirección IP referida enviara en respuesta un paquete conteniendo el mapeo solicitado. La respuesta no se enviará en un paquete broadcast, sino dirigido al que realizo la petición
 

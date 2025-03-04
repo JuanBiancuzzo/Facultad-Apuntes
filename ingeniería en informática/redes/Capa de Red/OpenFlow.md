@@ -130,7 +130,7 @@ Por último vamos que no todos los headers de IP pueden ser utilizados para el m
 Cada entrada de la tabla puede tener cero o múltiples acciones. Si hay múltiples acciones, estás se realizan en el orden especificado. Algunas de las acciones más comunes son
 
 * Forwarding
-	* Un paquete entrante puede ser direccionado a algún [[Router output port|puerto de salida]] particular, también puede ser enviado a todos los puertos ([[Internet Protocol Versión 4#Broadcast|broadcast]]) o a algunos (multicast). También puede ser encapsulado y enviado a un controlador remoto, para que este tome alguna acción como actualizar nuevas entradas en la tabla
+	* Un paquete entrante puede ser direccionado a algún [[Router output port|puerto de salida]] particular, también puede ser enviado a todos los puertos ([[Topología de comunicación#^broadcast|broadcast]]) o a algunos (multicast). También puede ser encapsulado y enviado a un controlador remoto, para que este tome alguna acción como actualizar nuevas entradas en la tabla
 * Dropping
 	* Una entrada sin acciones indica que el paquete será ignorado
 * Modify-field

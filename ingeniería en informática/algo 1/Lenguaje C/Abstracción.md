@@ -13,6 +13,6 @@ tags:
 ```
 # Definición
 ---
-En las [[Ciencias de la computación|ciencias de la computación]] el término abstracción es de gran utilidad y es utilizado de varias formas en distintas ramas de esta ciencia. La abstracción para un programador es la acción de despojar de los aspectos complejos, que no son importantes, para la resolución de un problema determinado
+En las [[Ciencia de la computación|ciencias de la computación]] el término abstracción es de gran utilidad y es utilizado de varias formas en distintas ramas de esta ciencia. La abstracción para un programador es la acción de despojar de los aspectos complejos, que no son importantes, para la resolución de un problema determinado
 
 

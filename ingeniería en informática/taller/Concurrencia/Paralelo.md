@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - carrera/ingeniería-electrónica/taller/Concurrencia
   - carrera/ingeniería-en-informática/distribuidos/Introducción
+  - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
 ---
 # Definición
 ---

@@ -11,5 +11,5 @@ tags:
 ```
 # Definición
 ---
-Se define $s_i$, el estado local del [[Proceso|proceso]] $i$ en el instante $t$, según $$ s_i = \left( X_0(t),~ X_1(t),~ \cdots,~ X_n(t) \right) $$ donde $X_j$ es una variable $j$ del proceso $i$
+Se define $s_i$, el estado local del [[Proceso|proceso]] $i$ en el instante de [[Tiempo|tiempo]] $t$, según $$ s_i = \left( X_0(t),~ X_1(t),~ \cdots,~ X_n(t) \right) $$ donde $X_j$ es una variable $j$ del proceso $i$
 

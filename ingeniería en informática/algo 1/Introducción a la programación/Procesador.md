@@ -10,6 +10,7 @@ tags:
   - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
   - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
+etapa: ampliar
 ---
 # Definición
 ---
@@ -25,3 +26,6 @@ El procesador es un dispositivo electrónico que determina qué, cuándo y con c
 4. Las interconexiones
 	* Son mecanismos que proporcionan comunicación entre la unidad de control, la ALU y los registros
 
+## Representación general
+---
+![[Modelo físico de una CPU.png]]
