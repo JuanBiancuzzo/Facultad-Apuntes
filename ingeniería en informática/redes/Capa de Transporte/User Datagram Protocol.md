@@ -9,6 +9,7 @@ tags:
   - carrera/ingeniería-electrónica/redes/Capa-de-Transporte
   - investigación/networking/Protocolos
   - investigación/ciencias-de-la-computación/Networking/Protocolos
+  - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
 ---
 # Definición
 ---

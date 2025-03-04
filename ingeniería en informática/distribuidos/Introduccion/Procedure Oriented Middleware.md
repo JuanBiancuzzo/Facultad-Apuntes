@@ -3,7 +3,7 @@ dia: 2025-03-01
 etapa: ampliar
 referencias: 
 tags:
-  - carrera/ingeniería-en-informática/distribuidos/Introduccion
+  - carrera/ingeniería-en-informática/distribuidos/Introducción
   - nota/facultad
 aliases:
   - Arquitectura Serverless

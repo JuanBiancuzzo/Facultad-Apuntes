@@ -11,7 +11,7 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Ingeniería-de-software
   - nota/facultad
   - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
-  - carrera/ingeniería-en-informática/distribuidos/Introduccion
+  - carrera/ingeniería-en-informática/distribuidos/Introducción
 ---
 # Definición
 ---

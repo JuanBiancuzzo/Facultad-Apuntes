@@ -8,10 +8,12 @@ tags:
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
   - carrera/ingeniería-electrónica/taller/Concurrencia
   - carrera/ingeniería-en-informática/concurrentes/Introducción
+  - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
 aliases:
   - Multithreading
   - Multihilos
   - POSIX Threads#Representación en C
+etapa: ampliar
 ---
 # Definición
 ---
@@ -47,7 +49,6 @@ Tenemos varios casos de comparación
 	* Limitación de algunos [[Sistema operativo|sistemas operativos]] que permitían varios procesos, pero cada uno con un único thread, lo que implica que puede haber varios thread ejecutándose en [[Kernel mode|kernel mode]]
 4. Muchos [[Kernel|kernel]] thread
 	* Para aprovechar recursos, también el kernel puede ejecutar varios threads en kernel mode
-
 
 ## Ciclo de vida de un thread
 ---

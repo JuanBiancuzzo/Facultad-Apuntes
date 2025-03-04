@@ -6,6 +6,9 @@ tags:
   - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
   - nota/facultad
   - carrera/ingeniería-electrónica/redes/Capa-de-aplicación
+  - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c/System-call/Intercomunicación-entre-procesos-system-call
+etapa: ampliar
 ---
 # Definición
 ---

@@ -4,7 +4,7 @@ etapa: ampliar
 referencias:
   - "864"
 tags:
-  - carrera/ingeniería-en-informática/distribuidos/Introduccion
+  - carrera/ingeniería-en-informática/distribuidos/Introducción
   - nota/facultad
 aliases:
   - Marshaling

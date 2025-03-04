@@ -1,7 +1,7 @@
 ---
 tags:
   - facultad/resumen
-  - carrera/ingeniería-en-informática/distribuidos/Introduccion
+  - carrera/ingeniería-en-informática/distribuidos/Introducción
 nombreResumen: Introduccion
 capitulo: "0"
 ---

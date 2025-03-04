@@ -11,6 +11,7 @@ tags:
   - carrera/ingeniería-electrónica/redes/Capa-Física-Inalámbrica
   - investigación/networking/Protocolos
   - investigación/ciencias-de-la-computación/Networking/Protocolos
+  - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
 ---
 # Definición
 ---

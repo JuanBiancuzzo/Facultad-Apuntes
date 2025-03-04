@@ -4,10 +4,12 @@ tags:
   - carrera/ingeniería-en-informática/taller/Concurrencia
   - nota/facultad
   - carrera/ingeniería-electrónica/taller/Concurrencia
+aliases:
+  - Proceso bloqueado#Blocked
 ---
 # Definición
 ---
-Dado un [[Proceso|proceso]] podemos describir su estado en el siguiente [[Grafo|grafo]]:
+Dado un [[Proceso|proceso]] podemos describir su estado en el siguiente [[Grafo|grafo]]
 
 ```tikz
 \begin{document}
@@ -67,14 +69,14 @@ Dado un [[Proceso|proceso]] podemos describir su estado en el siguiente [[Grafo|
 ## Estados
 ---
 En una visión simplificada (una versión más compleja sería la de [[Estados de un proceso en Linux|estados en linux]]), un [[Proceso|proceso]] puede encontrarse en los siguientes estados
-## Running
+### Running
 ---
 El [[Proceso|proceso]] se encuentra corriendo en un [[Procesador|procesador]]. Está ejecutando instrucciones
 
-## Ready
+### Ready
 ---
 En este estado el [[Proceso|proceso]] está listo para correr pero por algún motivo el [[Sistema operativo|SO]] ha decidido no ejecutarlo por el momento
 
-## Blocked
+### Blocked
 ---
 En este estado el [[Proceso|proceso]] ha ejecutado algún tipo de operación que hace que éste no esté listo para ejecutarse hasta que algún evento suceda

@@ -18,14 +18,11 @@ Vamos a investigar específicamente las system call relacionadas a la intercomun
 Estas [[investigación/ciencias de la computación/lenguajes de programación/lenguaje c/System call/System call|system call]] permite la comunicación entre procesos
 
 Falta
-* [[Pipe system call|pipe()]]
-* [[Msgget system call|msgget()]]
 * [[Msgsnd system call|msgsnd()]]
 * [[Msgrcv system call|msgrcv()]]
 * [[Msgctl system call|msgctl()]]
 * [[Semget system call|semget()]]
 * [[Semop system call|semop()]]
-* [[Shmget system call|shmget()]]
 * [[Shmat system call|shmat()]]
 * [[Shmdt system call|shmdt()]]
 
