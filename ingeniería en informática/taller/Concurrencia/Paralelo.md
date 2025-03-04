@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/taller/Concurrencia
   - nota/facultad
   - carrera/ingeniería-electrónica/taller/Concurrencia
+  - carrera/ingeniería-en-informática/distribuidos/Introducción
 ---
 # Definición
 ---

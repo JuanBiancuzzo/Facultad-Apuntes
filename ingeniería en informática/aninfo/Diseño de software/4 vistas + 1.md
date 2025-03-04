@@ -3,7 +3,7 @@ dia: 2023-10-22
 tags:
   - carrera/ingeniería-en-informática/aninfo/Diseño-de-software
   - nota/facultad
-  - carrera/ingeniería-en-informática/distribuidos/Introduccion
+  - carrera/ingeniería-en-informática/distribuidos/Introducción
 ---
 # Definición
 ---
@@ -32,7 +32,7 @@ Los diagramas para mostrar esto de la mejor forma son
 
 ## Vista de distribución o física
 ---
-Es usar los ejecutables y aplicarlos en el entorno de distribución como [[Servidor|servidores]]. La [[Topología|topología]] y conexiones entre los componente físicos
+Es usar los ejecutables y aplicarlos en el entorno de distribución como [[Servidor|servidores]]. La [[Topología de comunicación|topología]] y conexiones entre los componente físicos
 
 Los diagramas para mostrar esto de la mejor forma son
  * [[Diagrama de despliegue|Diagrama de despliegue]]

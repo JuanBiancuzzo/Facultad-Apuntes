@@ -7,4 +7,4 @@ tags:
 ---
 # Definición
 ---
-En un [[Routing algorithms|algoritmo]] dinámico, las rutas cambiarán debido al tráfico de la red y cambios de [[Topología|topología]]. Estos pueden ser ejecutados periódicamente o en respuesta directa a un cambio
+En un [[Routing algorithms|algoritmo]] dinámico, las rutas cambiarán debido al tráfico de la red y cambios de [[Topología de comunicación|topología]]. Estos pueden ser ejecutados periódicamente o en respuesta directa a un cambio

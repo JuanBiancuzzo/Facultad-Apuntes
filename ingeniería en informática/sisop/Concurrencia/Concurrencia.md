@@ -6,6 +6,7 @@ tags:
   - carrera/ingeniería-en-informática/taller/Concurrencia
   - carrera/ingeniería-electrónica/taller/Concurrencia
   - carrera/ingeniería-en-informática/concurrentes/Introducción
+  - carrera/ingeniería-en-informática/distribuidos/Introducción
 referencias:
   - "787"
 etapa: empezado
