@@ -9,7 +9,7 @@ correlativas:
 codigo: TA050
 cuatri: 26C1
 etapa: empezado
-estado: Terminando la clase 9
+estado: Terminando la clase 10
 nombreMateria: Sistemas Distribuidos 1
 nombreReducido: distribuidos
 referencias:

@@ -21,4 +21,4 @@ Esta clasificación de [[Middleware|middleware]] ofrece
     * Modo [[Queue|queue]]
     * Se respeta el orden de los mensajes enviados
 
-![[Message Oriented Middleware.png]]
+![[ingeniería en informática/distribuidos/Introduccion/img/Message Oriented Middleware.png]]

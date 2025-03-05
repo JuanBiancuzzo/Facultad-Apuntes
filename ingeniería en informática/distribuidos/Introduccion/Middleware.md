@@ -23,7 +23,7 @@ Veamos métodos en como un middleware puede funcionar
 * [[Transactional Procedure Middleware|Transactional Procedure]]
 * [[Procedure Oriented Middleware|Procedure Oriented]]
 * [[Object Oriented Middleware|Object Oriented]]
-* [[Message Oriented Middleware|Message Oriented]]
+* [[ingeniería en informática/distribuidos/Introduccion/Message Oriented Middleware|Message Oriented]]
 * [[Reflective Middleware|Reflective Middleware]] (de configuración dinámica)
 
 ## Vista lógica

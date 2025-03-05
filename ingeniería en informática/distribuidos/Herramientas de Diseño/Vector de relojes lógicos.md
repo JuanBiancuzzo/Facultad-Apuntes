@@ -1,6 +1,6 @@
 ---
 dia: 2025-03-04
-etapa: empezado
+etapa: ampliar
 referencias: []
 tags:
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
