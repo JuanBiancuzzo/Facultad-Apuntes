@@ -63,9 +63,6 @@ class TipoInterfaz {
 
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
-        if (respuestaDada == SALIR)
-            return true;
-
         let [respuesta, indice] = respuestaDada.split("-");
 
         switch (respuesta) {
@@ -93,8 +90,6 @@ class TipoInterfaz {
                 datos.splice(indice, 1);
                 break;
         }
-
-        return false;
     }
 
     generarPreguntas() {

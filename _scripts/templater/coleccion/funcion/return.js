@@ -52,9 +52,6 @@ class Return {
     }
 
     async actualizarDatos(respuesta, generarPreguntas, generarError) {
-        if (respuesta == SALIR) 
-            return true;
-
         switch (respuesta) {
             case this.config.descripcion:
                 this.descripcion = await generarPreguntas.prompt(
@@ -73,8 +70,6 @@ class Return {
             case MODIFICCAR_TIPO_DE_DATO:
                 await generarPreguntas.formulario(this.tipoDeDato, "Modificar tipo de dato");
         }
-
-        return false;
     }
 
     generarPreguntas() {

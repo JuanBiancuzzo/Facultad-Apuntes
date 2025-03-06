@@ -71,9 +71,6 @@ class Funcion {
     }
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
-        if (respuestaDada == SALIR)
-            return true;
-
         let [respuesta, indice] = respuestaDada.split("-");
 
         switch (respuesta) {
@@ -119,8 +116,6 @@ class Funcion {
                 await generarPreguntas.formulario(this.return, "Modificar los datos del tipo de dato que se devuelve");
                 break;
         }
-
-        return false;
     }
 
     generarPreguntas() {

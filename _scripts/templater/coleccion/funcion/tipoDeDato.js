@@ -72,9 +72,6 @@ class TipoDeDatoSimple {
     }
 
     async actualizarDatos(respuesta, generarPreguntas, generarError) {
-        if (respuesta == SALIR)
-            return true;
-
         let opcion, otrosTiposDeDatos;
 
         switch (respuesta) {
@@ -476,8 +473,6 @@ class TipoDeDatoSimple {
                 }
                 break;
         }
-
-        return false;
     }
 
     generarPreguntas() {

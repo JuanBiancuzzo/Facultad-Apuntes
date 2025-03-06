@@ -537,13 +537,14 @@ module.exports = () => ({
                     referencia: "Referencia",
                     union: "Union",
                     funcion: "Funcion",
+                    proxy: "Proxeado",
                 },
             },
             proxy: {
                 id: "id",
-                campo: "campoModificado",
-                extra: "extra",
-                valor: "valor",
+                tipo: "tipoObjeto",
+                objeto: "idObjeto",
+                genericos: "genericos"
             },
             manejador: {
                 id: "id",

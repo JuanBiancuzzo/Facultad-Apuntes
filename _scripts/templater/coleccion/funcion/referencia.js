@@ -44,9 +44,6 @@ class TipoReferencia {
     }
 
     async actualizarDatos(respuestaDada, generarPreguntas, _generarError) {
-        if (respuestaDada == SALIR)
-            return true;
-
         let [ respuesta, indice ] = respuestaDada.split("-");
 
         switch (respuesta) {
@@ -60,8 +57,6 @@ class TipoReferencia {
                 await generarPreguntas.formulario(this.datos[indice], "Modificar el tipo de dato");
                 break;
         }
-
-        return false;
     }
 
     generarPreguntas() {

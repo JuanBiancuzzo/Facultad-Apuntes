@@ -67,6 +67,7 @@ async function preguntarSeccion(tp, tipo) {
 }
 
 async function crearFormulario(tp, datos, mensaje) {
+    const { SIMBOLOS } = tp.user.constantes();
     const error = tp.user.error();
     const preguntar = tp.user.preguntar();
     const generarPreguntas = {
@@ -77,9 +78,12 @@ async function crearFormulario(tp, datos, mensaje) {
         fecha: preguntar.fecha.bind(null, tp),
     };
 
-    let continuar;
-    do {
+    while(true) {
         let { opciones, valores } = datos.generarPreguntas();
+        if (datos.esValido()) {
+            opciones.push(SALIR);
+            valores.push(` ${SIMBOLOS.confirmar} Confirmar los datos`);
+        }
 
         let respuesta = opciones[0];
         if (opciones.length > 1) {
@@ -89,15 +93,18 @@ async function crearFormulario(tp, datos, mensaje) {
             );
         }
 
+        if (respuesta == SALIR) {
+            break;
+        }
+
         try {
-            continuar = await datos.actualizarDatos(respuesta, generarPreguntas, error);
+            await datos.actualizarDatos(respuesta, generarPreguntas, error);
         } catch ({ name: _, message: mensaje }) {
             new Notice(mensaje);
             console.log(mensaje);
             continue;
         }
-
-    } while (!continuar);
+    }
 }
 
 module.exports = () => ({

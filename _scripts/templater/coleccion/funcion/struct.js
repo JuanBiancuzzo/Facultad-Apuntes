@@ -82,9 +82,6 @@ class TipoStruct {
     }
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
-        if (respuestaDada == SALIR)
-            return true;
-
         let [respuesta, indice] = respuestaDada.split("-");
 
         switch (respuesta) {
@@ -145,8 +142,6 @@ class TipoStruct {
                 );
                 break;
         }
-
-        return false;
     }
 
     generarPreguntas() {

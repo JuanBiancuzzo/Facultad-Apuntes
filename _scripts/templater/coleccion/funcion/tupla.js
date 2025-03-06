@@ -50,9 +50,6 @@ class TipoTupla {
     }
 
     async actualizarDatos(respuestaDada, generarPreguntas, _generarError) {
-        if (respuestaDada == SALIR)
-            return true;
-
         let [ respuesta, indice ] = respuestaDada.split("-");
 
         switch (respuesta) {
@@ -71,8 +68,6 @@ class TipoTupla {
                 this.splice(indice, 1);
                 break;
         }
-
-        return false;
     }
 
     generarPreguntas() {
