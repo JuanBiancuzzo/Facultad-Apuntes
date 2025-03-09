@@ -1,7 +1,9 @@
 ---
 dia: 2023-01-22
 tags:
-  - distribucion/continua
+  - carrera/ingeniería-en-informática/proba/Función-de-variable-aleatoria
+  - carrera/ingeniería-electrónica/proba/Función-de-variable-aleatoria
+  - nota/facultad
 ---
 # Definición
 ---

@@ -53,7 +53,14 @@ module.exports = () => ({
                 subtema: "coleccion/bloqueMatematica/subtema",
             },
             libro: {
+                biblioteca: "coleccion/libro/biblioteca",
                 capitulo: "coleccion/libro/capitulos"
+            },
+            distribuciones: {
+                completo: "coleccion/distribuciones/mostrarDistribuciones",
+                distribuciones: "coleccion/distribuciones/distribuciones",
+                relaciones: "coleccion/distribuciones/relaciones",
+                relacion: "coleccion/distribuciones/relacion"
             },
         },
         referencia: {
@@ -133,6 +140,12 @@ module.exports = () => ({
                 self: "archive",
                 paper: "paper",
             },
+            distribuiciones: {
+                self: "distribución",
+                discreta: "discreta",
+                continua: "continua",
+                multi: "multivariada",
+            },
         },
         referencias: "referencia",
         proyecto: {
@@ -173,7 +186,13 @@ module.exports = () => ({
             componentes: "componentes",
             bloquesMatematica: "teoremas, proposiciones y observaciones",
             estructuraDatos: "data structures",
-            distribuciones: "distribuciones",
+            distribuciones: {
+                self: "distribuciones",
+                discreto: "discreta",
+                continua: "continua",
+                multi: "multivariada",
+                relaciones: "relaciones",
+            },
             documentos: "documentos",
             funciones: {
                 self: "funciones",

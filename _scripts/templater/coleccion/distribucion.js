@@ -1,4 +1,12 @@
+class Distribucion {}
+
+class Relacion {}
+
 async function crearDistribucion(tp) {
+    const {
+        SIMBOLOS, SECCIONES,
+        DATAVIEW: { coleccion: { distribuciones: DV_DISTRIBUCIONES }, ...DATAVIEW },
+    } = tp.user.constantes();
 
     return {
         metadata: {},
@@ -10,4 +18,6 @@ async function crearDistribucion(tp) {
 
 module.exports = () => ({
     crear: crearDistribucion,
+    claseDistribucion: (...argumentos) => new Distribucion(...argumentos),
+    claseRelacion: (...argumentos) => new Relacion(...argumentos),
 });

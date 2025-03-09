@@ -75,7 +75,7 @@
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.dataStructures) {
                 ingresarOpcion("Ingresar una estructura de datos", GENERADOR.coleccion.estructuraDatos);
             }
-            if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.distribuciones) {
+            if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.distribuciones.self) {
                 ingresarOpcion("Ingresar una función de distribución", GENERADOR.coleccion.distribucion);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.documentos) {

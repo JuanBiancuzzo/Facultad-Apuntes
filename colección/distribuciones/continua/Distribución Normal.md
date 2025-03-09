@@ -1,7 +1,9 @@
 ---
 dia: 2023-01-23
 tags:
-  - distribucion/continua
+  - colección/distribuciones/distribución
+  - nota/colección
+  - distribuciones/continua
 aliases:
   - Campana de Gauss
 ---

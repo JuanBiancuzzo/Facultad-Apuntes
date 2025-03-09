@@ -1,11 +1,13 @@
 ---
 dia: 2023-01-23
 tags:
-  - distribucion/continua
+  - colección/distribuciones/distribución
+  - nota/colección
+  - distribuciones/continua
 ---
 # Definición
 ---
-Se dice que una [[Variable aleatoria]] $X$ tiene distribución Chi cuadrado de parámetro $k$ si su [[Función de densidad]] es $$ f_X(x) = \frac{1}{2^{\frac{k}{2}} \cdot \Gamma(\frac{k}{2})} \cdot x^{\frac{k}{2} - 1} \cdot e^{-\frac{x}{2}} $$ donde $\Gamma(x)$ es la [[colección/distribuciones/Función Gamma]].
+Se dice que una [[Variable aleatoria]] $X$ tiene distribución Chi cuadrado de parámetro $k$ si su [[Función de densidad]] es $$ f_X(x) = \frac{1}{2^{\frac{k}{2}} \cdot \Gamma(\frac{k}{2})} \cdot x^{\frac{k}{2} - 1} \cdot e^{-\frac{x}{2}} $$ donde $\Gamma(x)$ es la [[ingeniería en informática/proba/Función de variable aleatoria/Función Gamma]].
 
 ### Notación
 $$ X \sim \chi_k^2 $$

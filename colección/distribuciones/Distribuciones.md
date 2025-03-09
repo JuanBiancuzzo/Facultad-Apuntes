@@ -22,7 +22,7 @@ En [[Probabilidad|teoría de la probabilidad]] y [[Estadística|estadística]], 
 ## Distribuciones
 ---
 ```dataviewjs
-await dv.view("_scripts/dataview/coleccion/distribuciones");
+await dv.view("_scripts/dataview/coleccion/distribuciones/mostrarDistribuciones");
 ```
 
 # Bibliografía

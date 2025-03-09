@@ -1,11 +1,13 @@
 ---
 dia: 2023-01-23
 tags:
-  - distribucion/continua
+  - colección/distribuciones/distribución
+  - nota/colección
+  - distribuciones/continua
 ---
 # Definición
 ---
-Una [[Variable aleatoria]] tiene distribución exponencial de parametro $\lambda > 0$ si su [[Función de densidad]] esta dada por $$ f_X(x) = \lambda \cdot e^{-\lambda \cdot x} \cdot \mathbb{1}\{x > 0\} $$
+Una [[Variable aleatoria]] tiene distribución exponencial de parametron $\lambda > 0$ si su [[Función de densidad]] esta dada por $$ f_X(x) = \lambda \cdot e^{-\lambda \cdot x} \cdot \mathbb{1}\{x > 0\} $$
 ### Notación
 $$ X \sim \varepsilon(\lambda)$$
 

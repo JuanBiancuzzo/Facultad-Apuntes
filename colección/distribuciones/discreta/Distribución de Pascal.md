@@ -2,8 +2,10 @@
 dia: 2023-01-23
 tags:
   - carrera/ingeniería-en-informática/proba/Proceso-de-Bernoulli
-  - distribucion/discreta
+  - colección/distribuciones/distribución
   - carrera/ingeniería-electrónica/proba/Proceso-de-Bernoulli
+  - nota/colección
+  - distribuciones/discreta
 ---
 # Definición
 ---

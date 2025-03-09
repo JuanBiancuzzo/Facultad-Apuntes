@@ -1,7 +1,9 @@
 ---
 dia: 2023-01-23
 tags:
-  - distribucion/multivariada
+  - colección/distribuciones/distribución
+  - nota/colección
+  - distribuciones/multivariada
 ---
 # Definición
 ---
