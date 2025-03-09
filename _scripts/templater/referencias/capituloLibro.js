@@ -37,9 +37,6 @@ class Capitulo {
     }
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
-        if (respuestaDada == SALIR)
-            return true;
-
         let [ respuesta, indice ] = respuestaDada.split("-");
 
         switch (respuesta) {
@@ -120,8 +117,6 @@ class Capitulo {
                 this.paginas = { inicio: inicioPaginas, final: finalPaginas };
                 break;
         }
-
-        return false;
     }
 
     generarPreguntas() {
@@ -164,11 +159,6 @@ class Capitulo {
             ? ` ${this.simbolos.modificar} Modificar las páginas del capítulo, donde era ${this.paginas.inicio} - ${this.paginas.final}`
             : ` ${this.simbolos.agregar} ${this.simbolos.opcional} Número de páginas del capítulo`
         );
-
-        if (this.esValido()) {
-            opciones.push(SALIR);
-            valores.push(` ${this.simbolos.volver} Confirmar datos`);
-        }
 
         return { opciones: opciones, valores: valores };
     }

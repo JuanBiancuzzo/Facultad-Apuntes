@@ -586,11 +586,6 @@ class TipoDeDatoSimple {
             }
         }
 
-        if (this.esValido()) {
-            opciones.push(SALIR);
-            valores.push(` ${this.simbolos.confirmar} Confirmar datos`);
-        }
-
         return { opciones: opciones, valores: valores };
     }
 

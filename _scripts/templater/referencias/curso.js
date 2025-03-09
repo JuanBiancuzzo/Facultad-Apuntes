@@ -37,9 +37,6 @@ class Curso {
     }
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
-        if (respuestaDada == SALIR)
-            return true;
-        
         let [ respuesta, indice ] = respuestaDada.split("-");
 
         switch (respuesta) {
@@ -123,8 +120,6 @@ class Curso {
                 );
                 break;
         }
-
-        return false;
     }
 
     generarPreguntas() {
@@ -172,11 +167,6 @@ class Curso {
             ? `️ ️${this.simbolos.modificar} Modificar el URL, donde era ${this.url}`
             : ` ${this.simbolos.agregar} URL de la página`
         );
-
-        if (this.esValido()) {
-            opciones.push(SALIR);
-            valores.push(` ${this.simbolos.volver} Confirmar datos`);
-        }
 
         return { opciones: opciones, valores: valores };
     }

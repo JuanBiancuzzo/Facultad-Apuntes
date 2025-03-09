@@ -34,9 +34,6 @@ class Web {
     }
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
-        if (respuestaDada == SALIR)
-            return true;
-
         let [respuesta, indice] = respuestaDada.split("-");
 
         switch (respuesta) {
@@ -110,8 +107,6 @@ class Web {
                 );
                 break;
         }
-
-        return false;
     }
 
     generarPreguntas() {
@@ -160,11 +155,6 @@ class Web {
             ? `️ ️${this.simbolos.modificar}️ Modificar el URL, donde era ${this.url}`
             : ` ${this.simbolos.agregar} URL de la página`
         );
-
-        if (this.esValido()) {
-            opciones.push(SALIR);
-            valores.push(` ${this.simbolos.volver} Confirmar datos`);
-        }
 
         return { opciones: opciones, valores: valores };
     }

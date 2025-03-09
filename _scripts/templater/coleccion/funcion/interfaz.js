@@ -121,11 +121,6 @@ class TipoInterfaz {
             valores.push(` ${this.simbolos.agregar} Método`);
         }
 
-        if (this.esValido()) {
-            opciones.push(SALIR);
-            valores.push(` ${this.simbolos.volver} Confirmar datos`);
-        }
-
         return { opciones: opciones, valores: valores };
     }
 

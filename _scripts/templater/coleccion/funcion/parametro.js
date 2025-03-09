@@ -126,11 +126,6 @@ class Parametro {
             valores.push(` ${this.simbolos.agregar} Tipo de dato`);
         }
 
-        if (this.esValido()) {
-            opciones.push(SALIR);
-            valores.push(` ${this.simbolos.volver} Confirmar datos`);
-        }
-
         return { opciones: opciones, valores: valores };
     }
 

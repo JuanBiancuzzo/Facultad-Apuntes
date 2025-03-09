@@ -73,11 +73,6 @@ class TipoReferencia {
             valores.push(` ${this.simbolos.modificar} Modificar el tipo de dato, donde es ${descripcion}`);
         }
 
-        if (this.esValido()) {
-            opciones.push(SALIR);
-            valores.push(` ${this.simbolos.volver} Confirmar datos`);
-        }
-
         return { opciones: opciones, valores: valores };
     }
 

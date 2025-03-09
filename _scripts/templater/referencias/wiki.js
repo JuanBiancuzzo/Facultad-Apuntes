@@ -21,9 +21,6 @@ class Wikipedia {
     }
 
     async actualizarDatos(respuesta, generarPreguntas, generarError) {
-        if (respuesta == SALIR)
-            return true;
-
         switch (respuesta) {
             case this.config.nombre:
                 this.nombre = await generarPreguntas.prompt(
@@ -53,8 +50,6 @@ class Wikipedia {
                 )
                 break;
         }
-
-        return false;
     }
 
     generarPreguntas() {
@@ -78,11 +73,6 @@ class Wikipedia {
             ? `️ ️${this.simbolos.modificar}️ Modificar el URL, donde era ${this.url}`
             : ` ${this.simbolos.agregar} URL del artículo`
         );
-
-        if (this.esValido()) {
-            opciones.push(SALIR);
-            valores.push(` ${this.simbolos.volver} Confirmar datos`);
-        }
 
         return { opciones: opciones, valores: valores };
     }

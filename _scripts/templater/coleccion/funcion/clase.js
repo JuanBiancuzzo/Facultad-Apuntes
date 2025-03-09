@@ -321,11 +321,6 @@ class TipoClase {
             }
         }
 
-        if (this.esValido()) {
-            opciones.push(SALIR);
-            valores.push(` ${this.simbolos.volver} Confirmar datos`);
-        }
-
         return { opciones: opciones, valores: valores };
     }
 

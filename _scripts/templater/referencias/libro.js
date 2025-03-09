@@ -57,9 +57,6 @@ class Libro {
     }
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
-        if (respuestaDada == SALIR)
-            return true;
-
         let [ respuesta, indice ] = respuestaDada.split("-");
         switch (respuesta) {
             case MODIFICAR_AUTORE:
@@ -193,8 +190,6 @@ class Libro {
                 ultimoCapitulo.eliminar();
                 break;
         }
-
-        return false;
     }
 
     generarPreguntas() {
@@ -281,11 +276,6 @@ class Libro {
             ? ` ${this.simbolos.agregar} Capítulo del libro`
             : ` ${this.simbolos.agregar} ${this.simbolos.opcional} Capítulo del libro`
         );
-
-        if (this.esValido()) {
-            opciones.push(SALIR);
-            valores.push(` ${this.simbolos.volver} Confirmar datos`);
-        }
 
         return { opciones: opciones, valores: valores };
     }

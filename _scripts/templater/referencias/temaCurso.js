@@ -50,9 +50,6 @@ class TemaCurso {
     }
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
-        if (respuestaDada == SALIR)
-            return true;
-        
         let [ respuesta, indice ] = respuestaDada.split("-");
 
         switch (respuesta) {
@@ -124,8 +121,6 @@ class TemaCurso {
         if (this.profesores.length == 1 && this.numProfesores.length == 0) {
             this.numProfesores.push(0);
         }
-
-        return false;
     }
 
     generarPreguntas() {
@@ -191,11 +186,6 @@ class TemaCurso {
                 ? ` ${this.simbolos.agregar} ${this.simbolos.opcional} Profesore del tema`
                 : ` ${this.simbolos.agregar} Profesore del tema`
             );
-        }
-
-        if (this.esValido()) {
-            opciones.push(SALIR);
-            valores.push(` ${this.simbolos.volver} Confirmar datos`);
         }
 
         return { opciones: opciones, valores: valores };

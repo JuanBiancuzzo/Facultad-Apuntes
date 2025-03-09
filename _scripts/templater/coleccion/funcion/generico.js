@@ -117,11 +117,6 @@ class TipoGenerico {
             valores.push(` ${this.simbolos.agregar} Interfaz`);
         }
 
-        if (this.esValido()) {
-            opciones.push(SALIR);
-            valores.push(` ${this.simbolos.volver} Confirmar datos`);
-        }
-
         return { opciones: opciones, valores: valores };
     }
 

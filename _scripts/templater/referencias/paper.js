@@ -53,9 +53,6 @@ class Paper {
     }
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
-        if (respuestaDada == SALIR) 
-            return true;
-
         let [ respuesta, indice ] = respuestaDada.split("-");
 
         switch (respuesta) {
@@ -225,8 +222,6 @@ class Paper {
                 this.url = null;
                 break;
         }
-
-        return false;
     }
 
     generarPreguntas() {
@@ -331,11 +326,6 @@ class Paper {
             ? ` └-> ️${this.simbolos.modificar} Modificar el DOI del paper, donde era ${this.doi}`
             : ` └-> ${this.simbolos.agregar} ${this.url ? `${this.simbolos.opcional} ` : ""}DOI del paper`
         );
-
-        if (this.esValido()) {
-            opciones.push(SALIR);
-            valores.push(` ${this.simbolos.volver} Confirmar datos`);
-        }
 
         return { opciones: opciones, valores: valores };
     }

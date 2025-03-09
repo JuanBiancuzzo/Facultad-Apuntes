@@ -22,9 +22,6 @@ class Youtube {
     }
 
     async actualizarDatos(respuesta, generarPreguntas, generarError) {
-        if (respuesta == SALIR)
-            return true;
-
         switch (respuesta) {
             case this.config.nombreVideo:
                 this.nobmre = await generarPreguntas.prompt(
@@ -63,8 +60,6 @@ class Youtube {
                 )
                 break;
         }
-
-        return false;
     }
 
     generarPreguntas() {
@@ -94,11 +89,6 @@ class Youtube {
             ? `️ ${this.simbolos.modificar}️ Modificar el URL, donde era ${this.url}`
             : ` ${this.simbolos.agregar} URL del video`
         );
-
-        if (this.esValido()) {
-            opciones.push(SALIR);
-            valores.push(` ${this.simbolos.volver} Confirmar datos`);
-        }
 
         return { opciones: opciones, valores: valores };
     }
