@@ -390,8 +390,48 @@ class Paper {
 }
 
 async function crearPaper(tp, seguidorRef, referenciaCreada = null) {
+    const { 
+        FORMATO_DIA, ETAPAS, REFERENCIAS, DATAVIEW, CARACTERES_INVALIDOS, SECCIONES, DATOS: {
+            ARCHIVO: DATOS_ARCHIVO, REFERENCIAS: { paper: DATOS_PAPER, ...DATOS_REFERENCIAS },
+        }, TAGS: {
+            referencias: TAG_REFERENCIA, nota: TAGS_NOTA,
+            coleccion: { papers: TAGS_PAPERS, ...TAGS_COLECCION },
+        }, 
+        DIRECTORIOS: { coleccion: { papers: DIR_PAPER, ...DIR_COLECCION } }, 
+    } = tp.user.constantes();
+    const preguntar = tp.user.preguntar();
     if (!referenciaCreada) referenciaCreada = { valor: null };
 
+    let infoPaper = new Paper(tp, seguidorRef);
+    await preguntar.formulario(tp, infoPaper, "Completar la información del paper");
+    referenciaCreada.valor = infoPaper;
+	
+    let nombreArchivo = infoPaper.describir();
+	let intercambios = [[":", ","], ['"', "'"], ["<", "("], [">", ")"], ["?", ""]]
+	for (let [caracterInvalido, caracterValido] of intercambios) {
+		nombreArchivo = nombreArchivo.replaceAll(caracterInvalido, caracterValido);
+	}
+	CARACTERES_INVALIDOS.forEach(caracterInvalido => nombreArchivo = nombreArchivo.replaceAll(caracterInvalido, ","));
+
+    let texto = `\`\`\`dataviewjs\n\tawait dv.view("${DATAVIEW.self}/${DATAVIEW.etapa}", { etapa: dv.current()?.etapa });\n\`\`\`\n`;
+    texto += `${"#".repeat(SECCIONES.resumen.nivel)} ${SECCIONES.resumen.texto}\n---\n`;
+
+    return {
+        metadata: {
+            [DATOS_ARCHIVO.dia]: tp.file.creation_date(FORMATO_DIA),
+            [DATOS_ARCHIVO.etapa]: ETAPAS.sinEmpezar,
+            [DATOS_ARCHIVO.tags]: [
+                `${TAG_REFERENCIA}/${REFERENCIAS.paper.toLowerCase()}`,
+                `${TAGS_COLECCION.self}/${TAGS_PAPERS.self}/${TAGS_PAPERS.paper}`,
+                `${TAGS_NOTA.self}/${TAGS_NOTA.investigacion}`,
+            ],
+            [DATOS_REFERENCIAS.tipoCita]: REFERENCIAS.paper,
+            ...infoPaper.generarRepresentacion(),
+        },
+        carpeta: `${DIR_COLECCION.self}/${DIR_PAPER}`,
+        titulo: nombreArchivo,
+        texto: texto,
+    };
 }
 
 module.exports = (tp) => ({

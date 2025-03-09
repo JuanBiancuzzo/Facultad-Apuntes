@@ -106,16 +106,11 @@ async function crearSeccionCurso(tp) {
 
 }
 
-async function crearSeccionInvestigacion(tp) {
-
-}
-
 async function crearSeccionProyecto(tp) {
 
 }
 module.exports = (tp) => ({
     carrera: crearSeccionCarrera.bind(null, tp),
     curso: crearSeccionCurso.bind(null, tp),
-    investigacion: crearSeccionInvestigacion.bind(null, tp),
     proyecto: crearSeccionProyecto.bind(null, tp),
 });

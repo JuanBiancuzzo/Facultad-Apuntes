@@ -129,6 +129,10 @@ module.exports = () => ({
                 self: "biblioteca",
                 libro: "libro",
             },
+            papers: {
+                self: "archive",
+                paper: "paper",
+            },
         },
         referencias: "referencia",
         proyecto: {

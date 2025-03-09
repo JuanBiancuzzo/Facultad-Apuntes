@@ -1,6 +1,7 @@
 <%*
     const error = tp.user.error();
     const seccion = tp.user.seccion(tp);
+    const seccionInvestigacion = tp.user.seccionInvestigacion(tp);
     const { CREAR } = tp.user.constantes();
     const tArchivo = tp.file.find_tfile(tp.file.path(true));
 
@@ -9,7 +10,7 @@
         switch (tp.file.title) {
             case CREAR.carrera: seccionCrear = seccion.carrera; break;
             case CREAR.curso: seccionCrear = seccion.curso; break;
-            case CREAR.investigacion: seccionCrear = seccion.investigacion; break;
+            case CREAR.investigacion: seccionCrear = seccionInvestigacion.seccion; break;
             case CREAR.proyecto: seccionCrear = seccion.proyecto; break;
 
             default:
