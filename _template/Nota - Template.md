@@ -15,6 +15,11 @@
             libreriaFunciones: tp.user.libreriaFunciones().crear,
             libro: tp.user.libro(tp).crear.bind(null, seguidorRef),
             paper: tp.user.paper(tp).crear.bind(null, seguidorRef),
+            componente: tp.user.componente().crear,
+            distribucion: tp.user.distribucion().crear,
+            documentolegal: tp.user.documentolegal().crear,
+            programa: tp.user.documentolegal().crear,
+            receta: tp.user.receta().crear,
         },
     };
     const preguntar = tp.user.preguntar();
@@ -65,16 +70,16 @@
             let segundoDirectorio = directorio.at(1);
 
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.componentes) {
-                // ingresarOpcion("Ingresar un componente", TEMPLATE.coleccion.componente);
+                ingresarOpcion("Ingresar un componente", GENERADOR.coleccion.componente);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.dataStructures) {
                 ingresarOpcion("Ingresar una estructura de datos", GENERADOR.coleccion.estructuraDatos);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.distribuciones) {
-                // ingresarOpcion("Ingresar una función de distribución", TEMPLATE.coleccion.distribucion);
+                ingresarOpcion("Ingresar una función de distribución", GENERADOR.coleccion.distribucion);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.documentos) {
-                // ingresarOpcion("Ingresar un documento legal", TEMPLATE.coleccion.documentoLegal);
+                ingresarOpcion("Ingresar un documento legal", GENERADOR.coleccion.documentoLegal);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.funciones) {
                 ingresarOpcion("Ingresar una función de programación", GENERADOR.coleccion.libreriaFunciones);
@@ -83,13 +88,13 @@
                 ingresarOpcion("Ingresar un libro", GENERADOR.coleccion.libro);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.papers) {
-                // ingresarOpcion("Ingresar un paper o RFC", TEMPLATE.coleccion.paper);
+                ingresarOpcion("Ingresar un paper o RFC", GENERADOR.coleccion.paper);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.programas) {
-                // ingresarOpcion("Ingresar programa", TEMPLATE.coleccion.programa);
+                ingresarOpcion("Ingresar programa", GENERADOR.coleccion.programa);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.recetas) {
-                // ingresarOpcion("Ingresar receta", TEMPLATE.coleccion.receta);
+                ingresarOpcion("Ingresar receta", GENERADOR.coleccion.receta);
             }
             break;
     }
