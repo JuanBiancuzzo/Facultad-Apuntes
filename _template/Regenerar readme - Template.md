@@ -19,20 +19,22 @@ Un listado de materias y su estado dividido por carrera
             facultad: TAGS_FACULTAD, coleccion: TAGS_COLECCION, proyecto: TAGS_PROYECTO
         },
     } = tp.user.constantes();
-    tR += dv.markdownList(dv.pages(`#${TAGS_FACULTAD.self}/${TAGS_FACULTAD.carrera.self}`)
+
+    tR += dv.markdownList(dv.pages(`#${TAGS_FACULTAD.self}/${TAGS_FACULTAD.carrera}`)
         .map(carrera => {
             let path = carrera.file.path.replaceAll(" ", "%20");
             return `[${carrera.file.name}](${path})`;
         }));
 %>
 <%*
-    tR += dv.pages(`#${TAGS_FACULTAD.self}/${TAGS_FACULTAD.carrera.self}`)
+    tR += dv.pages(`#${TAGS_FACULTAD.self}/${TAGS_FACULTAD.carrera}`)
         .sort(carrera => carrera.file.name)
         .map(carrera => {
-            let tag = carrera[DATOS_CARRERA.tags].find(tag => tag.startsWith(TAGS_FACULTAD.carrera.self))
-                .replace(`${TAGS_FACULTAD.carrera.self}/`, "");
+            let tags = tp.user.obtenerTag(tp, carrera[DATOS_CARRERA.tags])
+                .map(tag => `#${tag}`)
+                .join(" or ")
 
-            const materias = dv.pages(`#${tag} and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.materia}`)
+            const materias = dv.pages(`(${tags}) and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.materia}`)
                 .sort(materia => materia[DATOS_MATERIA.nombre]);
             let titulos = ["Materia", "Estado"];
             if (carrera[DATOS_CARRERA.tieneCodigoLaMateria]) titulos.splice(1, 0, "Código");
@@ -47,7 +49,7 @@ Un listado de materias y su estado dividido por carrera
                     estado = equivalencia[DATOS_MATERIA.estado];
                 }                
                 let resultado = [`[${nombre}](${path})`, estado];
-                if (carrera[DATOS_CARRERA.tieneCodigoLaMateria]) resultado.splice(1, 0, materia[DATOS_MATERIA.codigoMateria]);
+                if (carrera[DATOS_CARRERA.tieneCodigoLaMateria]) resultado.splice(1, 0, materia[DATOS_MATERIA.codigo]);
                 
                 return resultado;
             }));
