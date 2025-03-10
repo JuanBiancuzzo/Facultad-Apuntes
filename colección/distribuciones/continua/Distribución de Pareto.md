@@ -4,6 +4,8 @@ tags:
   - colección/distribuciones/distribución
   - nota/colección
   - distribuciones/continua
+nombreDistribucion: Pareto
+tipoDistribucion: continua
 ---
 # Definición
 ---

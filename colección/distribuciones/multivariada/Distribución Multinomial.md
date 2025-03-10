@@ -4,6 +4,8 @@ tags:
   - colección/distribuciones/distribución
   - nota/colección
   - distribuciones/multivariada
+nombreDistribucion: Multinomial
+tipoDistribucion: multivariada
 ---
 # Definición
 ---

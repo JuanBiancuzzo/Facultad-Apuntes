@@ -4,10 +4,12 @@ tags:
   - colección/distribuciones/distribución
   - nota/colección
   - distribuciones/discreta
+nombreDistribucion: Hipergeométrica
+tipoDistribucion: discreta
 ---
 # Definición
 ---
-Hipergeométrica modela la cantidad de éxitos en $n$ extracciones sin reposición de una pobración de tamaño total $N$, de los cuales $d$ individuos son éxito y $N - d$ individuos no lo son.
+Hipergeométrica modela la cantidad de éxitos en $n$ extracciones sin reposición de una población de tamaño total $N$, de los cuales $d$ individuos son éxito y $N - d$ individuos no lo son.
 
 Se dice que una [[Variable aleatoria]] $X$ tiene distribución Hipergeométrica de parametros $N$, $d$ y $n$ si su [[Función de probabilidad]] es $$ p_X(x) = \frac{\dbinom{d}{x} \dbinom{N - d}{n - x}}{\dbinom{N}{n}} $$
 

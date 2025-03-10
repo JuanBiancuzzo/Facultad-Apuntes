@@ -4,6 +4,8 @@ tags:
   - colección/distribuciones/distribución
   - nota/colección
   - distribuciones/continua
+nombreDistribucion: Uniforme
+tipoDistribucion: continua
 ---
 # Definición
 ---

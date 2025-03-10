@@ -6,6 +6,8 @@ tags:
   - distribuciones/continua
 aliases:
   - Campana de Gauss
+nombreDistribucion: Normal
+tipoDistribucion: continua
 ---
 # Definición
 ---

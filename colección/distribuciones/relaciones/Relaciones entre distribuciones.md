@@ -1,7 +1,7 @@
 ---
 dia: 2023-02-27
 ---
-# [[Distribución Beta]] y [[Distribución uniforme]]
+# [[Distribución Beta]] y [[Distribución Uniforme]]
 ---
 Dada $X$ con distribución Beta de parámetros $1$ y $1$, $X \sim \beta(1, 1)$ es equivalente a una distribución uniforme de parámetros $0$ y $1$, $X \sim U(0, 1)$.
 
@@ -32,19 +32,19 @@ Sean $Z \sim N(0, 1)$ una distribución normal y $U \sim \chi_n^2$ una distribuc
 Sean $X_1, \cdots, X_n$ son [[Variables aleatorias independientes|independientes]] con $X_i \sim N(\mu, \sigma^2)$ entonces $Z = \sqrt{n} \frac{\overline{X} - \mu}{\sigma} \sim N(\mu = 0, \sigma^2 = 1)$.
 
 
-# [[Distribución exponencial]]
+# [[Distribución Exponencial]]
 ---
 Siendo $X_1, X_2, \cdots, X_n$ independientes y $X_i \sim \varepsilon(\lambda_i)$ entonces podemos definir: $$U = \min_{i \in \Set{1, \cdots, n}} X_i \sim \varepsilon\left(\sum_{i = 1}^n \lambda_i \right)$$y $$ \mathbb{P}(U = x_j) = \frac{\lambda_j}{\displaystyle\sum_{i = 1}^{n} \lambda_i}, j = 1, 2, 3, \cdots,  n $$
 
 
-# [[Distribución exponencial]] y [[Distribución Gamma]]
+# [[Distribución Exponencial]] y [[Distribución Gamma]]
 ---
 Si $X_1, \cdots X_n \sim Exp(\lambda)$, [[Variables aleatorias independientes|independientes]] entre si, entonces $\displaystyle \sum_{i = 1}^{n} X_i \sim \Gamma(n, \lambda)$ su suma es una distribución gamma.
 
 Dado $X$ con distribución Gamma de parametros $1$ y $\lambda$, $X \sim \Gamma(1, \lambda)$ es equivalente a una Distribución exponencial $X \sim \varepsilon(\lambda)$.
 
 
-# [[Distribución exponencial]] y [[Distribución Chi cuadrado]]
+# [[Distribución Exponencial]] y [[Distribución Chi cuadrado]]
 ---
 Si $X_1, \cdots X_n \sim Exp(\lambda)$, [[Variables aleatorias independientes|independientes]] entre si, entonces $2 \cdot \lambda \displaystyle \sum_{i = 1}^{n} X_i \sim \chi_{2n}^2$ su suma es una distribución chi cuadrado.
 
@@ -59,7 +59,7 @@ Dado $X$ con distribución Gamma de parametros $1$ y $\lambda$, $X \sim \Gamma(1
 Sean $X_1, \cdots, X_n$ son [[Variables aleatorias independientes|independientes]] con $X_i \sim N(\mu, \sigma^2)$, si definimos $$S^2 = \frac{1}{n - 1} \sum_{i = 1}^n (X_i - \overline{X})^2  $$ entonces $T = \sqrt{n} \frac{(\overline{X} - \mu)}{S} \sim t_{n-1}$.
 
 
-# [[Distribución Weibull]] y [[Distribución exponencial]]
+# [[Distribución Weibull]] y [[Distribución Exponencial]]
 ---
 Cuando se tiene una [[Variable aleatoria]] $X \sim Wei(c, 2)$ entonces $X^2 \sim Exp(\frac{1}{c^2})$ tiene una distribución exponencial.
 

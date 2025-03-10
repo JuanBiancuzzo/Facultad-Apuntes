@@ -6,6 +6,8 @@ tags:
   - carrera/ingeniería-electrónica/proba/Proceso-de-Bernoulli
   - nota/colección
   - distribuciones/discreta
+nombreDistribucion: Pascal
+tipoDistribucion: discreta
 ---
 # Definición
 ---

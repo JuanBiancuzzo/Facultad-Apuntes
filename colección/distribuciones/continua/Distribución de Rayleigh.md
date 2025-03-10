@@ -4,6 +4,8 @@ tags:
   - colección/distribuciones/distribución
   - nota/colección
   - distribuciones/continua
+nombreDistribucion: Rayleigh
+tipoDistribucion: continua
 ---
 # Definición
 ---

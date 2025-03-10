@@ -4,6 +4,8 @@ tags:
   - colección/distribuciones/distribución
   - nota/colección
   - distribuciones/discreta
+nombreDistribucion: Geométrica
+tipoDistribucion: discreta
 ---
 # Definición
 ---
