@@ -75,6 +75,8 @@ module.exports = () => ({
         },
     },
     SECCIONES: {
+        seccion: (sec) => `${"#".repeat(sec.nivel)} ${sec.texto}`,
+        seccionNombre: (sec, nombre) => `${"#".repeat(sec.nivel)} ${nombre}`,
         relaciones: { nivel: 1, texto: "Relaciones" },
         notacion: { nivel: 3, texto: "Notación" },
         apuntes: { nivel: 1, texto: "Apuntes" },
@@ -150,6 +152,10 @@ module.exports = () => ({
                 multi: "multivariada",
                 relacion: "relación",
             },
+            recetas: {
+                self: "recetas",
+                receta: "receta",
+            }
         },
         referencias: "referencia",
         proyecto: {
