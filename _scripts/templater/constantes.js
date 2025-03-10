@@ -75,6 +75,8 @@ module.exports = () => ({
         },
     },
     SECCIONES: {
+        relaciones: { nivel: 1, texto: "Relaciones" },
+        notacion: { nivel: 3, texto: "Notación" },
         apuntes: { nivel: 1, texto: "Apuntes" },
         indice: { nivel: 1, texto: "Índice" },
         bibliografia: { nivel: 1, texto: "Bibliografía" },
@@ -140,11 +142,13 @@ module.exports = () => ({
                 self: "archive",
                 paper: "paper",
             },
-            distribuiciones: {
-                self: "distribución",
+            distribuciones: {
+                self: "distribuciones",
+                distribucion: "distribución",
                 discreta: "discreta",
                 continua: "continua",
                 multi: "multivariada",
+                relacion: "relación",
             },
         },
         referencias: "referencia",
@@ -285,6 +289,22 @@ module.exports = () => ({
             dia: "dia",
             estado: "estado",
             tags: "tags",
+        },
+        DISTRIBUCION: {
+            nombre: "nombreDistribucion",
+            tipo: {
+                self: "tipoDistribucion",
+                discreta: "discreta", 
+                continua: "continua", 
+                multi: "multivariada", 
+            },
+        },
+        RELACION_DISTRIBUCION: {
+            relacionadas: "distribucionesRelacionadas",
+            tipo: {
+                self: "tipoRelacionDistribucion",
+                relacion: "relacion"
+            }
         },
         BLOQUES_MATEMATICA: {
             tema: {

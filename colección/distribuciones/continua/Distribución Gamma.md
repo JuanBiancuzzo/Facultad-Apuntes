@@ -4,11 +4,13 @@ tags:
   - colección/distribuciones/distribución
   - nota/colección
   - distribuciones/continua
+nombreDistribucion: Gamma
+tipoDistribucion: continua
 ---
 # Definición
 ---
 Se dice que una [[Variable aleatoria]] $X$ tiene distribución Gamma de parámetros $\lambda$ y $\nu$ si su [[Función de densidad]] es $$ f_X(x) = \frac{\lambda^\nu}{\Gamma(\nu)} \cdot x^{\nu - 1} \cdot e^{-\lambda \cdot x} $$
-Donde $\Gamma (\nu)$ es la [[ingeniería en informática/proba/Función de variable aleatoria/Función Gamma]] evaluada en $\nu$.
+Donde $\Gamma (\nu)$ es la [[Función gamma]] evaluada en $\nu$.
 
 ### Notación
 $$ X \sim \Gamma(\nu, \lambda) $$

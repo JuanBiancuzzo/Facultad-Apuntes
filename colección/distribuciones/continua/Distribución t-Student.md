@@ -4,10 +4,12 @@ tags:
   - colección/distribuciones/distribución
   - nota/colección
   - distribuciones/continua
+nombreDistribucion: t-Student
+tipoDistribucion: continua
 ---
 # Definición
 ---
-Se dice que una [[Variable aleatoria]] $X$ tiene distribución t-Studen de parametro $\nu$ si su [[Función de densidad]] es $$ f_X(t) = \frac{\Gamma(\frac{\nu + 1}{2})}{\sqrt{\nu \cdot \pi} \cdot \Gamma(\frac{\nu}{2})} \cdot \bigg(1 + \frac{t^2}{\nu} \bigg)^{-\frac{\nu + 1}{2}} $$ donde $\Gamma(x)$ es la [[ingeniería en informática/proba/Función de variable aleatoria/Función Gamma]].
+Se dice que una [[Variable aleatoria]] $X$ tiene distribución t-Studen de parametro $\nu$ si su [[Función de densidad]] es $$ f_X(t) = \frac{\Gamma(\frac{\nu + 1}{2})}{\sqrt{\nu \cdot \pi} \cdot \Gamma(\frac{\nu}{2})} \cdot \bigg(1 + \frac{t^2}{\nu} \bigg)^{-\frac{\nu + 1}{2}} $$ donde $\Gamma(x)$ es la [[Función gamma]].
 
 ### Notación
 $$ X \sim t_\nu $$
