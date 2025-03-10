@@ -8,7 +8,7 @@ tags:
 ---
 El concepto de afinidad de cache se tiene que tener en cuenta al armar un [[Scheduler|planificador]] con [[Arquitectura multiprocesador|multiprocesadores]] con [[ingeniería en informática/sisop/Scheduling/Cache|cache]].
 
-Cuando un [[Proceso|proceso]] corre sobre una [[Procesador|procesador]] en particular va construyendo un cachito del estado de si mismo en las cache de esa [[Procesador|CPU]]. 
+Cuando un [[Proceso|proceso]] corre sobre una [[Microprocesadores|procesador]] en particular va construyendo un cachito del estado de si mismo en las cache de esa [[Microprocesadores|CPU]]. 
 
 Entonces la próxima vez que el proceso se ejecute sería bastante interesante que se ejecutara en la misma CPU, ya que se va a ejecutar más rápido si parte de su estado esta en esa CPU.
 

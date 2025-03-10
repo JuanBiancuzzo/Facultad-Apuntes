@@ -24,5 +24,5 @@ Las directivas son los comandos que afectan en el momento de ensamblado, por lo 
 | `.endif`     | `.endif`             | Fin de estructura condicional                                      |
 
 * Indican al ensamblador como procesar una sección del [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]]
-* Las instrucciones son específicas de un [[Procesador|microprocesador]], las pseudo-instrucciones son específicas de un programa ensamblador
+* Las instrucciones son específicas de un [[Microprocesadores|microprocesador]], las pseudo-instrucciones son específicas de un programa ensamblador
 * Algunas directivas generan información en la [[Memoria|memoria]]

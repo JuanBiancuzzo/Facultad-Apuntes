@@ -14,7 +14,7 @@ aliases:
 ```
 # Definición
 ---
-Sistema compuesto por varios [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programas]] que se ejecutan simultáneamente en [[Procesador|procesadores]] distintos
+Sistema compuesto por varios [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programas]] que se ejecutan simultáneamente en [[Microprocesadores|procesadores]] distintos
 
 ## Crea aplicaciones
 ---

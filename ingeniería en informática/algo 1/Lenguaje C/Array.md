@@ -17,7 +17,7 @@ aliases:
 ```
 # Definición
 ---
-Se define un array como una colección de elementos, contigua en [[Memoria|memoria]], tiene la ventaja de ser eficiente por la utilización del [[Cache|cache]] en los [[Procesador|procesadores]]
+Se define un array como una colección de elementos, contigua en [[Memoria|memoria]], tiene la ventaja de ser eficiente por la utilización del [[Cache|cache]] en los [[Microprocesadores|procesadores]]
 
 ```tikz
 \usetikzlibrary{math}

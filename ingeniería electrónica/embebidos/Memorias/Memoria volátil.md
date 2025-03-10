@@ -31,7 +31,7 @@ El acceso a la memoria se basa en el reloj. Las soluciones RAM más recientes ut
 
 ## Acceso en paralelo
 ---
-En un [[Bus|bus]] [[Paralelo|paralelo]], todas las líneas de direcciones y datos están disponibles, lo que permite al [[Procesador|procesador]] ejecutar código y acceder a datos directamente con una velocidad de transferencia muy rápida entre la memoria y el procesador; menos de diez nanosegundos para la transferencia de una [[Palabra|palabra completa]]. Tenga en cuenta que algunas dispositivos multiplexan estas líneas
+En un [[Bus|bus]] [[Paralelo|paralelo]], todas las líneas de direcciones y datos están disponibles, lo que permite al [[Microprocesadores|procesador]] ejecutar código y acceder a datos directamente con una velocidad de transferencia muy rápida entre la memoria y el procesador; menos de diez nanosegundos para la transferencia de una [[Palabra|palabra completa]]. Tenga en cuenta que algunas dispositivos multiplexan estas líneas
 
 ## Acceso en serie
 ---

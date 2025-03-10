@@ -13,7 +13,7 @@ aliases:
 ```
 # Definición
 ---
-Es bastante usada en las [[Unidad de procesamiento gráfico (GPU) (Graphics Processing Unit)|GPUs]] pero dependiendo de la [[Procesador|CPU]] también se pueden usar y aumenta (en general) la eficiencia del [[Algoritmo|algoritmo]] en el cual se este usando
+Es bastante usada en las [[Unidad de procesamiento gráfico (GPU) (Graphics Processing Unit)|GPUs]] pero dependiendo de la [[Microprocesadores|CPU]] también se pueden usar y aumenta (en general) la eficiencia del [[Algoritmo|algoritmo]] en el cual se este usando
 
 ![[Single Instruction Multiple Data.png]]
 

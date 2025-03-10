@@ -6,7 +6,7 @@ tags:
 ---
 # Definición
 ---
-La ejecución directa de un [[ingeniería en informática/sisop/La abstracción de proceso/Programa]] significa correr un programa directamente en la [[Procesador|Procesador]]. 
+La ejecución directa de un [[ingeniería en informática/sisop/La abstracción de proceso/Programa]] significa correr un programa directamente en la [[Microprocesadores|Procesador]]. 
 
 #### Ventajas
 La ejecución es rápida y simple

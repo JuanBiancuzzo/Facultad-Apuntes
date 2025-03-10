@@ -13,7 +13,7 @@ etapa: ampliar
 ```
 # Definición
 ---
-La virtualización es el proceso de agarrar un recurso físico, como el [[Procesador|procesador]], la [[Memoria|memoria]] o el [[Hardware|hardware]], y transformándolo en una representación general, fácil de usar, y virtual de si mismo
+La virtualización es el proceso de agarrar un recurso físico, como el [[Microprocesadores|procesador]], la [[Memoria|memoria]] o el [[Hardware|hardware]], y transformándolo en una representación general, fácil de usar, y virtual de si mismo
 
 Particularmente el concepto de [[Proceso]] es el más importante de todos los conceptos que se [[Sistema operativo|sistemas operativos]]. En los sistemas operativos modernos proporcionan dos tipos de virtualización
 1. [[Virtualización de memoria|Virtualización de memoria]]

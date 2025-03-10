@@ -10,7 +10,7 @@ aliases:
 ---
 # Definición
 ---
-Cuando quiero conectar muchos dispositivos, no pueden estar todos conectados con la [[Procesador|CPU]] directamente. Para resolver esto, se utilizando buses
+Cuando quiero conectar muchos dispositivos, no pueden estar todos conectados con la [[Microprocesadores|CPU]] directamente. Para resolver esto, se utilizando buses
 
 Lo más común es la utilización de tres líneas
 * Línea de datos

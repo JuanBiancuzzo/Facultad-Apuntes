@@ -24,7 +24,7 @@ El número de la página virtual es el índice en la page table para obtener el 
 
 Una de las cosas que pueden parecer raras sobre la paginación es que si bien el [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] cree que su memoria es lineal, de hecho, su memoria está desparramada por toda la memoria física como si fuera un mosaico.
 
-El [[Procesador|procesador]] va a ejecutar una instrucción después de otra usando direcciones virtuales y esas direcciones virtuales son lineales. Si bien la instrucción ubicada en el final de una página podría estar ubicada en una región completamente diferente de la memoria física de la próxima instrucción que debe empezar en la siguiente página.
+El [[Microprocesadores|procesador]] va a ejecutar una instrucción después de otra usando direcciones virtuales y esas direcciones virtuales son lineales. Si bien la instrucción ubicada en el final de una página podría estar ubicada en una región completamente diferente de la memoria física de la próxima instrucción que debe empezar en la siguiente página.
 
 Las estructuras de datos que también son contiguas usando direcciones virtuales, en la realidad una matriz muy grande podría estar desparramada por distintos page frames físicos. La paginación encuentra el mismo [[Traslación de direcciones con tabla de segmentos#Problemas|problema que la segmentación]], saber qué espacio de la memoria está vacío es muy complicado
 

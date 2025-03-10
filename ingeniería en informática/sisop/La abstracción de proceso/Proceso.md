@@ -25,7 +25,7 @@ etapa: ampliar
 * Los [[Archivo|archivos]] abiertos
 * Las señales pendientes
 * Datos internos del [[Kernel|kernel]]
-* El estado completo del [[Procesador|procesador]]
+* El estado completo del [[Microprocesadores|procesador]]
     * Esto incluye los [[Registro|registros]] que usa el procesador
 * Un espacio de [[Dirección de memoria|direcciones de memoria]]
     * Esto incluye la memoria que usa como donde están el código del mismo proceso

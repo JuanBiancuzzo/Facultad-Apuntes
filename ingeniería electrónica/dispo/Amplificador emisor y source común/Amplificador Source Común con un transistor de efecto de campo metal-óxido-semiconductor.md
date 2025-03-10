@@ -134,7 +134,7 @@ Si $V_{out}$ se quiere dejar constante, entonces ambos enfoques implican $\impli
 
 Consecuencia de un elevado valor de $R_D$:
 * Entra en juego el valor de $r_0$, ya que $|A_{vo}| = g_m ~ (r_0 // R_D)$
-* Su implementación en [[Circuito integrado|circuitos integrados]] requiere un área muy grande de silicio. Es preferible prescindir de [[Resistor|resistores]]
+* Su implementación en [[Circuitos integrados|circuitos integrados]] requiere un área muy grande de silicio. Es preferible prescindir de [[Resistor|resistores]]
 * El valor elevado de [[Resistencia|resistencia]] incrementa el [[Ruido térmico|ruido térmico]] del [[Circuito eléctrico|circuito]]
 
 ## Máxima señal sin distorsión

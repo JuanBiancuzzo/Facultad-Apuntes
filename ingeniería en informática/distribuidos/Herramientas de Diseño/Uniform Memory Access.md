@@ -13,7 +13,7 @@ aliases:
 ```
 # Definición
 ---
-Esta estrategia para compartir [[Memoria|memoria]], tiene el mismo tiempo de acceso a la memoria para todos los [[Procesador|procesadores]], con el mismo [[Ancho de banda|ancho de banda]] compartido para todos. Esta estrategia tiene una eficacia balanceada para [[Aplicación|aplicaciones]] de uso general
+Esta estrategia para compartir [[Memoria|memoria]], tiene el mismo tiempo de acceso a la memoria para todos los [[Microprocesadores|procesadores]], con el mismo [[Ancho de banda|ancho de banda]] compartido para todos. Esta estrategia tiene una eficacia balanceada para [[Aplicación|aplicaciones]] de uso general
 
 ![[Uniform Memory Access.png]] ^representacion
 

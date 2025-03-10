@@ -20,4 +20,4 @@ El contenido de un user area
 * Información sobre las [[Contexto del nivel del usuario|area de memoria]]
 * La tabla de descriptores de archivos abiertos (Open [[File descriptor|file descriptor]] table)
 * Un puntero al [[Directorio]] actual
-* Datos estadísticos del uso de la [[Procesador|Procesador]], información de perfilado, uso de disco y limites de recursos.
+* Datos estadísticos del uso de la [[Microprocesadores|Procesador]], información de perfilado, uso de disco y limites de recursos.

@@ -10,7 +10,7 @@ Se estudiarán las políticas de planificación para un [[Sistema]]
 
 ## Mono-Procesador
 ---
-Estas son las que posea un solo [[Procesador|procesador]] con un solo núcleo de procesamiento
+Estas son las que posea un solo [[Microprocesadores|procesador]] con un solo núcleo de procesamiento
 
 ### First In, First Out (FIFO)
 ---
@@ -30,7 +30,7 @@ Estas son las que posea un solo [[Procesador|procesador]] con un solo núcleo de
 
 ## Multi-Procesador
 ---
-Estas son aquellas que posea más de un [[Procesador|procesador]] y/o con más de un núcleo de procesamiento.
+Estas son aquellas que posea más de un [[Microprocesadores|procesador]] y/o con más de un núcleo de procesamiento.
 
 ### Multi-Level Feedback Queue (MLFQ)
 ---

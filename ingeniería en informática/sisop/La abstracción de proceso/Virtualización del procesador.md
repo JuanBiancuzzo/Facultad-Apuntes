@@ -12,12 +12,12 @@ etapa: ampliar
 ```
 # Definición
 ---
-La virtualización de [[Procesador|procesamiento]] es la forma de virtualización más primitiva, consiste en dar la ilusión de la existencia de un único [[Procesador|procesador]] para cualquier [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] que requiera de su uso
+La virtualización de [[Microprocesadores|procesamiento]] es la forma de virtualización más primitiva, consiste en dar la ilusión de la existencia de un único [[Microprocesadores|procesador]] para cualquier [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] que requiera de su uso
 De esta forma, se provee
 
 ### Simplicidad en la programación
 ---
-* Cada [[Proceso]] cree que tiene toda la [[Procesador|Procesador]]
+* Cada [[Proceso]] cree que tiene toda la [[Microprocesadores|Procesador]]
 * Cada proceso cree que todos los dispositivos le pertenecen
 * Distintos dispositivos parecen tener el mismo nivel de interaces
 * Las interfaces con los dispositivos son más potentes que el [[Hardware|bere metal]]

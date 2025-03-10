@@ -14,9 +14,9 @@ Para lograr la meta de ser eficiente, CFS, intenta gastar muy poco tiempo tomand
 
 ## Modo de operación básico
 ---
-Mientras que los [[Scheduler|planificadores]] tradicionales se basan alrededor del concepto de un [[Time sharing|time-slice]] fijo, CSF opera de forma un poco diferente. Su objetivo es sencillo, dividir de forma justa la [[Procesador|Procesador]] entre todos los [[Proceso|procesos]] que están compitiendo por ella. 
+Mientras que los [[Scheduler|planificadores]] tradicionales se basan alrededor del concepto de un [[Time sharing|time-slice]] fijo, CSF opera de forma un poco diferente. Su objetivo es sencillo, dividir de forma justa la [[Microprocesadores|Procesador]] entre todos los [[Proceso|procesos]] que están compitiendo por ella. 
 
-Logra dividir la [[Procesador|CPU]] mediante una simple técnica para contar llamada [[Vruntime|virtual runtime]]. A medida que un proceso se ejecuta este acumula [[Vruntime|vruntime]]. En el caso más básico cada vruntime de un proceso se incrementa con la misma tasa, en proporción al tiempo físico. Cuando una decisión de planificación ocurre, CFS seleccionará el proceso con menos vruntime para que sea el próximo en ser ejecutado.
+Logra dividir la [[Microprocesadores|CPU]] mediante una simple técnica para contar llamada [[Vruntime|virtual runtime]]. A medida que un proceso se ejecuta este acumula [[Vruntime|vruntime]]. En el caso más básico cada vruntime de un proceso se incrementa con la misma tasa, en proporción al tiempo físico. Cuando una decisión de planificación ocurre, CFS seleccionará el proceso con menos vruntime para que sea el próximo en ser ejecutado.
 
 ### Decisión de parar la ejecución
 ---
@@ -26,7 +26,7 @@ El punto clave aquí es que hay un punto de tensión entre performance y equitat
 
 La forma en que CFS maneja esta tensión es mediante varios parámetros de control
 * `sched_latency`
-	* Este valor determina por cuanto tiempo un proceso tiene que ejecutarse antes de considerar su switcheo. El valor típico de este parámetro es de $48 ~ ms$, CFS divide este valor por el número de procesos ($n$) ejecutándose en la [[Procesador|Procesador]] para determinar el [[Time sharing|time-slice]] de un proceso, y entonces se asegura que por ese periodo de tiempo, CFS va a ser completamente justo.
+	* Este valor determina por cuanto tiempo un proceso tiene que ejecutarse antes de considerar su switcheo. El valor típico de este parámetro es de $48 ~ ms$, CFS divide este valor por el número de procesos ($n$) ejecutándose en la [[Microprocesadores|Procesador]] para determinar el [[Time sharing|time-slice]] de un proceso, y entonces se asegura que por ese periodo de tiempo, CFS va a ser completamente justo.
 * `min_granularity`
 	* Para lidiar con los multiples context switch que puede producir un `sched_latency` muy chico, se introduce otro parámetro llamado `min_grunularity`, que normalmente se setea con el valor de $6 ~ ms$. Entonces CFS nunca sedería el time-slice de un proceso por debajo de ese número, por ende con esto se asegura que no haya overhead por el context switch
 
@@ -34,7 +34,7 @@ CFS utiliza una [[Interrupción por temporizador|interrupción periódica de tie
 
 ### Weighting
 ---
-CFS tiene control sobre las prioridades de los [[Proceso|procesos]], de forma tal que los usuarios y administradores puedan asignar más [[Procesador|Procesador]] a un determinado proceso. Esto se hace con un mecanismo clásico de [[Unix|UNIX]] llamado nivel de proceso `nice`, este valor va de $-20$ a $+19$, con valor por defecto de $0$. Con una característica un poco extraña, los valores positivos de nice implica una prioridad más baja, y los valores negativos de nice implican una prioridad más alta.
+CFS tiene control sobre las prioridades de los [[Proceso|procesos]], de forma tal que los usuarios y administradores puedan asignar más [[Microprocesadores|Procesador]] a un determinado proceso. Esto se hace con un mecanismo clásico de [[Unix|UNIX]] llamado nivel de proceso `nice`, este valor va de $-20$ a $+19$, con valor por defecto de $0$. Con una característica un poco extraña, los valores positivos de nice implica una prioridad más baja, y los valores negativos de nice implican una prioridad más alta.
 
 |       | $+0$    | $+1$    | $+2$    | $+3$    | $+4$    |
 | ----- | ------- | ------- | ------- | ------- | ------- |
@@ -51,7 +51,7 @@ Estos pesos permite calcular efectivamente el [[Time sharing|time slice]] para c
 Con esto se debe generalizar el calculo de [[Vruntime|vruntime]] $$ vruntime_i = vruntime_i + \frac{weight_0}{weight_i} ~ runtime_i $$
 Este se calcula tomando el tiempo de ejecución real que el $proceso_i$ ha acumulado ($runtime_i$) y lo escala de manera inversa según el peso del proceso
 
-Un aspecto inteligente de la construcción de la tabla de pesos anterior es que la tabla conserva las proporciones de ratio de la [[Procesador|Procesador]] cuando la diferencia en valores de nice es constante
+Un aspecto inteligente de la construcción de la tabla de pesos anterior es que la tabla conserva las proporciones de ratio de la [[Microprocesadores|Procesador]] cuando la diferencia en valores de nice es constante
 
 ### Utiliza [[Árbol Rojo-Negro|árboles rojo y negro]]
 ---

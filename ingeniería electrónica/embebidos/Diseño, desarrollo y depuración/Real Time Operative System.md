@@ -14,5 +14,5 @@ En la programación con RTOS se utiliza un Núcleo de [[Sistema operativo|Sistem
     * Multitasking
     * [[Thread|Multithreading]]
     * [[Arquitectura multiprocesador|Multiprocesamiento]]
-* En lugar de pocas tareas claramente definidas y definibles en términos de recursos, se pueden ejecutar muchas tareas en uno o varios núcleos de [[Procesador|CPU]] (donde las tareas individuales puede priorizarse cómodamente y agruparse según el rendimiento de los núcleos de CPU disponibles)
+* En lugar de pocas tareas claramente definidas y definibles en términos de recursos, se pueden ejecutar muchas tareas en uno o varios núcleos de [[Microprocesadores|CPU]] (donde las tareas individuales puede priorizarse cómodamente y agruparse según el rendimiento de los núcleos de CPU disponibles)
 * Los sistemas operativos de tiempo real con sus planificadores permiten ejecutar [[Proceso|procesos]] en [[Concurrencia|concurrencia]]/[[Paralelo|paralelo]], de forma flexible y priorizada, asumiendo la responsabilidad de la funcionalidad del sistema. Tanto de forma cooperativa como [[Preemptive|apropiativa (preemptive)]]

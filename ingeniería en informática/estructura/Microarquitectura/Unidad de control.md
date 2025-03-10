@@ -22,7 +22,7 @@ etapa: ampliar
 ```
 # Definición
 ---
-La unidad de control, es uno de los tres bloques funcionales principales en los que se divide una [[Procesador|CPU]]. Su función es buscar las instrucciones en la [[Memoria|memoria]] principal, decodificarlas y ejecutarlas, empleando para ello la unidad de proceso<sup><a href="#ref-220" style="color: inherit; text-decoration: none;">[220]</a></sup> 
+La unidad de control, es uno de los tres bloques funcionales principales en los que se divide una [[Microprocesadores|CPU]]. Su función es buscar las instrucciones en la [[Memoria|memoria]] principal, decodificarlas y ejecutarlas, empleando para ello la unidad de proceso<sup><a href="#ref-220" style="color: inherit; text-decoration: none;">[220]</a></sup> 
 
 El código se almacena en una memoria externa al propio procesador, pero puede estar en el mismo chip
 

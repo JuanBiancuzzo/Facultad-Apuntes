@@ -12,7 +12,7 @@ Una computadora es un dispositivo que puede aceptar instrucciones humanas, las p
 
 ## Partes fundamentales
 ---
-* La [[Procesador|Unidad Central de Procesamiento o CPU]]
+* La [[Microprocesadores|Unidad Central de Procesamiento o CPU]]
 	* Controla el funcionamiento de la computadora y lleva a cabo sus funciones de procesamiento de datos
 * [[Memoria|La memoria principal]]
 	* Almacena datos

@@ -3,9 +3,21 @@ dia: 2024-12-25
 tags:
   - colección/componentes
   - colección/representante
+  - investigación/índice
+  - nota/investigacion
+  - investigación/electrónica/componentes
 estado: Vamos a caracterizar los componentes que vaya usando para poder así tener una lista de los componentes que suelo usar y por lo tanto tener un lugar en donde encontrar el como se tiene que usar
 ---
+# ¿Qué se va a investigar?
+---
 Vamos a registrar y guardar la info de data sheets y curvas de comportamiento de componentes, para ya saber que tenemos que hacer para usarlos
+
+## Divisiones
+---
+```dataviewjs
+await dv.view("_scripts/dataview/coleccion/componentes/componentes");
+```
+
 
 Vamos a separarlos en $5$ grupos
 * Sensores

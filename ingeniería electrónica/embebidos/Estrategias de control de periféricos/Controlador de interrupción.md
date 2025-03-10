@@ -13,7 +13,7 @@ aliases:
 ---
 # Definición
 ---
-Un controlador de interrupciones es una unidad que recibe [[Interrupción|interrupciones]] externas y genera una [[Solicitud de interrupción|IRQ]] al [[Procesador|procesador]] 
+Un controlador de interrupciones es una unidad que recibe [[Interrupción|interrupciones]] externas y genera una [[Solicitud de interrupción|IRQ]] al [[Microprocesadores|procesador]] 
 
 ![[Controlador de interrupciones.png]]
 

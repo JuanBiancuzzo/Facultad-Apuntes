@@ -20,7 +20,7 @@ Hay que denotar que para que funcione correctamente el mapeo el [[Sistema operat
 
 ![[Memory Management Unit.png]]
 
-La segunda tarea realizada por una MMU es la protección de diferentes áreas de memoria e interfaces programables dependiendo de la tarea en ejecución y los privilegios del [[Procesador|procesador]] en ese momento. Algunas áreas de memoria pueden ser accedidas por algunas partes del código y otras no. Esta es la misma funcionalidad que está disponible en la [[Protección de memoria|MPU]]; este último es un elemento opcional en algunos procesadores [[ARM's Cortex-M|Cortex-M]] y depende de la implementación según el fabricante
+La segunda tarea realizada por una MMU es la protección de diferentes áreas de memoria e interfaces programables dependiendo de la tarea en ejecución y los privilegios del [[Microprocesadores|procesador]] en ese momento. Algunas áreas de memoria pueden ser accedidas por algunas partes del código y otras no. Esta es la misma funcionalidad que está disponible en la [[Protección de memoria|MPU]]; este último es un elemento opcional en algunos procesadores [[ARM's Cortex-M|Cortex-M]] y depende de la implementación según el fabricante
 
 La tercer y última capacidad de una MMU es proporcionar [[Dirección de memoria virtual|memorias virtuales]], lo cual es un medio para ofrecer más [[Dirección de memoria|espacio de direcciones]] lógicas que el espacio de memoria físicamente disponible
 

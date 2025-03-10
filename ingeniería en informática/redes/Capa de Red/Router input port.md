@@ -11,7 +11,7 @@ Ejecuta varias funciones claves. Realiza la función de [[Capa física|capa fís
 
 ## Procesamiento
 ---
-La tabla de envío es copiada del [[Procesador|procesador]] a los input ports a través de un bus destino, como un [[Peripheral Component Interconnect (PCI) bus|PCI bus]]. De esta forma, las decisiones se toman localmente en cada input port
+La tabla de envío es copiada del [[Microprocesadores|procesador]] a los input ports a través de un bus destino, como un [[Peripheral Component Interconnect (PCI) bus|PCI bus]]. De esta forma, las decisiones se toman localmente en cada input port
 
 Para la creación de la tabla, no podremos tener una entrada para cada [[Internet Protocol Address|dirección]] posible, ya que tendríamos más de cuatro billones de entradas. Esto se resuelve teniendo entradas para distintos rangos de valores de la dirección de destino. El [[Router|router]] busca coincidencias en el [[Classless Interdomain Routing|prefijo de la dirección de destino]], si la encuentra, envía el paquete al link asociado a esa entrada en la tabla. Para los casos con múltiples coincidencias, el router utiliza la entrada con la mayor regla de prefijo que encuentre
 

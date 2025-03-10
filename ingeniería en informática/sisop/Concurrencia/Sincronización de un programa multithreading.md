@@ -15,7 +15,7 @@ Ambos escenarios son completamente distintos y tienen distintas formas de tratam
 En un programa que utiliza un modelo de programación de threads cooperativo, la forma de pensar [[Modelo secuencial|secuencial]] no sirve:
 1. La ejecución del programa depende de la forma en que los threads se intercalan en su ejecución, esto influye en los accesos a la memoria de recursos compartidos
 2. La ejecución de un programa puede no ser determinística. Diferentes corridas pueden producir distintos resultados, por ejemplo debido a decisiones del [[Thread scheduler|scheduler]]
-3. Los [[Compilador|compiladores]] y el [[Procesador|procesador físico]] pueden reordenar las instrucciones. Los compiladores modernos pueden reordenar las instrucciones para mejorar la performance del programa que se está ejecutando, este reordenamiento es generalmente invisible a los ojos de un solo thread
+3. Los [[Compilador|compiladores]] y el [[Microprocesadores|procesador físico]] pueden reordenar las instrucciones. Los compiladores modernos pueden reordenar las instrucciones para mejorar la performance del programa que se está ejecutando, este reordenamiento es generalmente invisible a los ojos de un solo thread
 
 Teniendo en cuenta lo anterior, la programación multithreading puede incorporar [[Bug|bugs]] que se caracterizan por ser:
 * Sutiles

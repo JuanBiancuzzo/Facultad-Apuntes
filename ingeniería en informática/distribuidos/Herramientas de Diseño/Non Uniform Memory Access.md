@@ -13,7 +13,7 @@ aliases:
 ```
 # Definición
 ---
-Esta estrategia para compartir [[Memoria|memoria]], tiene a cada [[Procesador|CPU]] controlando una única [[Memoria|memoria]] local, permitiendo el acceso a su memoria con el como intermediario, esto produce un mayor [[Ancho de banda|ancho de banda]] si se respeta el acceso a memoria local
+Esta estrategia para compartir [[Memoria|memoria]], tiene a cada [[Microprocesadores|CPU]] controlando una única [[Memoria|memoria]] local, permitiendo el acceso a su memoria con el como intermediario, esto produce un mayor [[Ancho de banda|ancho de banda]] si se respeta el acceso a memoria local
 
 ![[Non Uniform Memory Access.png]] ^representacion
 

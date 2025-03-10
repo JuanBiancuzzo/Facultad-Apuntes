@@ -15,13 +15,13 @@ Por cada referencia a la [[Dirección de memoria virtual|memoria virtual]], el [
 
 Este [[Buffer|buffer]] es una pequeña tabla a nivel [[Hardware|hardware]] que contiene los resultados de la recientes [[Traslación de direcciones|traslaciones de memoria]] realizadas. Cada entrada de la tabla mapea una virtual page a una physical page.
 
-Normalmente se chequean todas las entradas del buffer contra la virtual page, si existe macheo el [[Procesador|procesador]] utiliza ese macheo para formar la physical address, ahorrándose todos los pasos de la translación. Esto se lo conoce como TLB hit.
+Normalmente se chequean todas las entradas del buffer contra la virtual page, si existe macheo el [[Microprocesadores|procesador]] utiliza ese macheo para formar la physical address, ahorrándose todos los pasos de la translación. Esto se lo conoce como TLB hit.
 
 Cuando, del proceso anterior, no existe macheo en el TLB, se dice que se tiene un TLB miss.
 
 ![[TBL hit y miss.webp]]
 
-Para que sea útil, la búsqueda de la TLB necesita ser mucho más rápido que realizar una traslación completa de una [[Dirección de memoria|dirección de memoria]]. Por ende, las entradas de la tabla de la TLB son implementadas en una [[Memoria|memoria]] muy rápida, memoria estática on chip, situada muy cerca del [[Procesador|procesador]]. De hecho, para mantener esta búsqueda rápida, muchos [[Sistema|sistemas]] en la actualidad incluyen múltiples niveles de TLB. En general cuanto más pequeña es la memoria, más rápida es la búsqueda
+Para que sea útil, la búsqueda de la TLB necesita ser mucho más rápido que realizar una traslación completa de una [[Dirección de memoria|dirección de memoria]]. Por ende, las entradas de la tabla de la TLB son implementadas en una [[Memoria|memoria]] muy rápida, memoria estática on chip, situada muy cerca del [[Microprocesadores|procesador]]. De hecho, para mantener esta búsqueda rápida, muchos [[Sistema|sistemas]] en la actualidad incluyen múltiples niveles de TLB. En general cuanto más pequeña es la memoria, más rápida es la búsqueda
 
 ![[TBL on chip.webp]]
 
@@ -35,7 +35,7 @@ Para una ejecución correcta y [[Protección de memoria|segura]] de un [[ingenie
 ---
 Las [[Dirección de memoria virtual|direcciones virtuales]] del viejo [[Proceso|proceso]] ya no son más válidas, y no deben ser válidas, para el nuevo proceso. De otra forma, el nuevo proceso sería capaz de [[Read system call|leer]] las [[Dirección de memoria|direcciones]] del viejo proceso. 
 
-Frente a un context switch, se necesita descartar el contenido de TLB. Este approach se denomina flush de TLB. Debido a que perder esta información no es útil, los [[Procesador|procesadores]] agregan el [[Getpid system call|id del proceso]] que produce cada traslación
+Frente a un context switch, se necesita descartar el contenido de TLB. Este approach se denomina flush de TLB. Debido a que perder esta información no es útil, los [[Microprocesadores|procesadores]] agregan el [[Getpid system call|id del proceso]] que produce cada traslación
 
 
 ### Reducción de permiso
@@ -44,7 +44,7 @@ Cuando el [[Sistema operativo|sistema operativo]] modifica una entrada en una pa
 
 ### TLB Shutdown
 ---
-En un [[Arquitectura multiprocesador|sistema multiprocesador]] cada uno puede tener [[ingeniería en informática/sisop/Scheduling/Cache|cacheada]] una copia de una translación en su TLB. Por ende, para [[Protección de memoria|seguridad]] y correctitud, cada vez que una entrada en la page table es modificada, la correspondiente entrada en todas las TLB de los [[Procesador|procesadores]] tiene que ser descartada antes que los cambios tomen efecto. 
+En un [[Arquitectura multiprocesador|sistema multiprocesador]] cada uno puede tener [[ingeniería en informática/sisop/Scheduling/Cache|cacheada]] una copia de una translación en su TLB. Por ende, para [[Protección de memoria|seguridad]] y correctitud, cada vez que una entrada en la page table es modificada, la correspondiente entrada en todas las TLB de los [[Microprocesadores|procesadores]] tiene que ser descartada antes que los cambios tomen efecto. 
 
 Típicamente sólo el procesador actual puede invalidar su propia TLB, por ello, para eliminar una entrada en todos los procesadores del [[Sistema|sistema]], se requiere que el [[Sistema operativo|sistema operativo]] mande una interrupción a cada procesador y pida que esa entrada de la TLB sea eliminada. Esta es una operación muy costosa y por ende tiene su propio nombre y se denomina TLB shutdown
 

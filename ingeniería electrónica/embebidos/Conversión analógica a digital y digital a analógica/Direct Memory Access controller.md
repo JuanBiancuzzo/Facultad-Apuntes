@@ -17,7 +17,7 @@ etapa: ampliar
 ```
 # Definición
 ---
-El controlador de acceso directo a memoria (DMAC) permite mover información sin involucrar a la [[Procesador|CPU]], dejando que esta pueda usar sus recursos para otras operaciones
+El controlador de acceso directo a memoria (DMAC) permite mover información sin involucrar a la [[Microprocesadores|CPU]], dejando que esta pueda usar sus recursos para otras operaciones
 
 Esto lo logra usando un [[Bus|bus]] y un sistema de periféricos, en los cuales pueden transferir información entre los periféricos y [[Memoria|memoria]] como también de memoria a memoria
 

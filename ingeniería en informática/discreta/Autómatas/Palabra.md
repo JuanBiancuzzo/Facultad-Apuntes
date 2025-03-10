@@ -35,7 +35,7 @@ Pensándolo en una forma genérica, podemos establecer que una palabra es una ca
 
 ### En un sistema ARC
 ---
-Los [[Procesador|procesadores]] tienen instrucciones para acceder simultáneamente a $1$, $2$, $4$ o más bytes, esto se coincidiera una palabra
+Los [[Microprocesadores|procesadores]] tienen instrucciones para acceder simultáneamente a $1$, $2$, $4$ o más bytes, esto se coincidiera una palabra
 
 Las palabras de más de $1$ byte es guardada como una serie de bytes
 

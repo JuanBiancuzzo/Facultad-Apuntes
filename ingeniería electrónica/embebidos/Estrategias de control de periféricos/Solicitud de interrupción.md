@@ -12,7 +12,7 @@ Es el producto de una [[Interrupción|interrupción]], y su configuración míni
 
 ![[Configuración de solicitudes de interrupción mínima.png]]
 
-Esta configuración se utiliza en la mayoría de las interfaces programables para generar una solicitud de interrupción física a un [[Procesador|procesador]]
+Esta configuración se utiliza en la mayoría de las interfaces programables para generar una solicitud de interrupción física a un [[Microprocesadores|procesador]]
 
 Así, tenemos dos [[Registro|registros]] internos con un bit en cada uno
 * Un evento en un registro de control, aqui llamado `Pl_Ctrl_Reg`, de la interfaz programable se activa cuando ocurre un evento de [[Hardware|hardware]]. El procesador puede leer este bit y, mediante polling, puede ver si se ha producido el evento asociado y cuándo

@@ -163,7 +163,7 @@ tags:
 * Vamos a ver el concepto de [[Amplificador de continua|amplificador de continua]]
 * [[Amplificador diferencial|Amplificador diferencial]]
     * Parámetros del amplificador diferencial
-    * AD como etapa de entrada de un [[Circuito integrado|CI]]
+    * AD como etapa de entrada de un [[Circuitos integrados|CI]]
 * [[Fuente de corriente|Fuente de corriente]]
 * Offset
 * [[Amplificador operacional|Amplificador operacional básico]]

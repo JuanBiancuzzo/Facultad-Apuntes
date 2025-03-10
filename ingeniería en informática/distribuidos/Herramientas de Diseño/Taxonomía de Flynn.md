@@ -12,7 +12,7 @@ aliases: []
 ```
 # Definición
 ---
-Esta es una clasificación de [[Sistema|sistemas]] de acuerdo a la [[Cardinalidad|cardinalidad]] de flojos de instrucciones ([[Procesador|procesadores]]) y flujos de datos ([[Memoria|memoria]])
+Esta es una clasificación de [[Sistema|sistemas]] de acuerdo a la [[Cardinalidad|cardinalidad]] de flojos de instrucciones ([[Microprocesadores|procesadores]]) y flujos de datos ([[Memoria|memoria]])
 
 * [[Single Instruction Single Data|Single Instruction Single Data (SISD)]]
 * [[Single Instruction Multiple Data|Single Instruction Multiple Data (SIMD)]]

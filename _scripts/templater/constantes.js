@@ -62,6 +62,14 @@ module.exports = () => ({
                 relaciones: "coleccion/distribuciones/relaciones",
                 relacion: "coleccion/distribuciones/relacion"
             },
+            componentes: {
+                componentes: "coleccion/componentes/componentes",
+                actuadores: "coleccion/componentes/actuadores",
+                micros: "coleccion/componentes/micros",
+                placas: "coleccion/componentes/placas",
+                sensores: "coleccion/componentes/sensores",
+                integrados: "coleccion/componentes/integrados",
+            },
         },
         referencia: {
             archivo: "referencia/referenciasArchivo",
@@ -152,6 +160,15 @@ module.exports = () => ({
                 multi: "multivariada",
                 relacion: "relación",
             },
+            componentes: {
+                self: "componentes",
+                componente: "componente",
+                actuador: "actuador",
+                micro: "microprocesador",
+                placa: "pladaDeDesarrollo",
+                sensor: "sensor",
+                integrado: "circuitosIntegrado",
+            },
             recetas: {
                 self: "recetas",
                 receta: "receta",
@@ -193,7 +210,14 @@ module.exports = () => ({
         GDD: "game design documents",
         coleccion: {
             self: "colección",
-            componentes: "componentes",
+            componentes: {
+                self: "componentes",
+                actuadores: "actuadores",
+                micros: "microprocesadores",
+                placas: "placas de desarrollo",
+                sensores: "sensores",
+                integrados: "circuitos integrados",
+            },
             bloquesMatematica: "teoremas, proposiciones y observaciones",
             estructuraDatos: "data structures",
             distribuciones: {
@@ -310,6 +334,17 @@ module.exports = () => ({
             tipo: {
                 self: "tipoRelacionDistribucion",
                 relacion: "relacion"
+            }
+        },
+        COMPONENTES: {
+            nombre: "nombreComponete",
+            tipo: {
+                self: "tipoComponente",
+                actuador: "actuador",
+                micro: "microprocesador",
+                placa: "pladaDeDesarrollo",
+                sensor: "sensor",
+                integrado: "circuitosIntegrados",
             }
         },
         BLOQUES_MATEMATICA: {

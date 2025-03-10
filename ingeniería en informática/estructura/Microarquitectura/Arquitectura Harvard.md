@@ -18,4 +18,4 @@ Aquí, los [[Arquitectura de una computadora#^bus-direccion|buses de direcciones
 
 Sin embargo, permite realizar la lectura de una nueva instrucción al mismo tiempo que una transferencia de datos
 
-En funcionamiento, el bus de instrucciones es unidireccional, desde la [[Memoria|memoria]] al [[Procesador|procesador]]. Esto significa que es necesario encontrar una manera de cargar el código en la memoria si es memoria no volátil, pero esto es un detalle de implementación
+En funcionamiento, el bus de instrucciones es unidireccional, desde la [[Memoria|memoria]] al [[Microprocesadores|procesador]]. Esto significa que es necesario encontrar una manera de cargar el código en la memoria si es memoria no volátil, pero esto es un detalle de implementación

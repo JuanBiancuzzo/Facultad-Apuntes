@@ -463,7 +463,7 @@ Establece la intención de la virtualización, donde permite a varios tener el m
 
 ## Capítulo 4: The abstraction: The Process
 ---
-La ilusión principal de la virtualización del [[Procesador|CPU]] es la [[Abstracción|abstracción]] que llamaremos [[Proceso|proceso]]
+La ilusión principal de la virtualización del [[Microprocesadores|CPU]] es la [[Abstracción|abstracción]] que llamaremos [[Proceso|proceso]]
 
 Esta incluye ![[Proceso#Un proceso incluye]]
 Con una [[Aplicación Programming Interface|API]] que lo acompañe ![[Proceso#API's]]

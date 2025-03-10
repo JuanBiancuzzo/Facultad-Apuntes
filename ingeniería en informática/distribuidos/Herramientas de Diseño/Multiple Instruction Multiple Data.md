@@ -14,7 +14,7 @@ aliases:
 # Definición
 ---
 Se divide en dos modelos
-* Multiples [[Procesador|procesadores]]
+* Multiples [[Microprocesadores|procesadores]]
     * Con memoria y/o clock compartido
 * Multiples [[Computadora|computadoras]]
     * Sin memoria ni clock compartido

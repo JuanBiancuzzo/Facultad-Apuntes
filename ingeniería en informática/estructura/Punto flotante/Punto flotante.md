@@ -49,7 +49,7 @@ Para doble precisión este será $$ 2^{-1022} \le |x| \le 2^{1024} $$
 
 ## Representación en C
 ---
-La representación de coma flotante es una forma de notación científica usada en los [[Procesador|microprocesadores]] con la cual se pueden representar números racionales extremadamente grandes y pequeños de una manera muy eficiente y compacta, y con la que se puede realizar [[Operación aritmética|operaciones aritméticas]]
+La representación de coma flotante es una forma de notación científica usada en los [[Microprocesadores|microprocesadores]] con la cual se pueden representar números racionales extremadamente grandes y pequeños de una manera muy eficiente y compacta, y con la que se puede realizar [[Operación aritmética|operaciones aritméticas]]
 
 | Tipo          | Tamaño     | Rango de valores                                 | Precisión              |
 | ------------- | ---------- | ------------------------------------------------ | ---------------------- |

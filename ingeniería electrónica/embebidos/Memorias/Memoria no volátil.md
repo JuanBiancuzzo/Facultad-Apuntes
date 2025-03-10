@@ -6,7 +6,7 @@ tags:
 ---
 # Definición
 ---
-Este tipo de memoria tiene la propiedad de que si se corta la [[Energía|energía]], el contenido de la memoria no se pierde y está disponible nuevamente al encenderse. Esto es obligatorio para el código de inicio utilizado cuando se inicia o reinicia un [[Procesador|procesador]]
+Este tipo de memoria tiene la propiedad de que si se corta la [[Energía|energía]], el contenido de la memoria no se pierde y está disponible nuevamente al encenderse. Esto es obligatorio para el código de inicio utilizado cuando se inicia o reinicia un [[Microprocesadores|procesador]]
 * [[Read Only Memory|ROM]]
 * [[Programable Read Only Memory|PROM]]
 * [[Erasable Programmable Read Only Memory|EPROM]]

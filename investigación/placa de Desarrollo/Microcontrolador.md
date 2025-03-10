@@ -16,8 +16,8 @@ aliases:
 ```
 # Definición
 ---
-Un microcontrolador es un [[Circuito integrado|circuito integrado]] programable, capaz de ejecutar las órdenes grabadas en su [[Memoria|memoria]]. Está compuesto de varios bloques funcionales que cumplen una tarea específica. Un microcontrolador incluye en su interior las tres principales unidades funcionales de una [[Computadora|computadora]]
-* [[Procesador|Unidad central de procesamiento]]
+Un microcontrolador es un [[Circuitos integrados|circuito integrado]] programable, capaz de ejecutar las órdenes grabadas en su [[Memoria|memoria]]. Está compuesto de varios bloques funcionales que cumplen una tarea específica. Un microcontrolador incluye en su interior las tres principales unidades funcionales de una [[Computadora|computadora]]
+* [[Microprocesadores|Unidad central de procesamiento]]
 * Memoria
 * [[Mapeo de memoria en periféricos|Periféricos de entrada/salida]]
 

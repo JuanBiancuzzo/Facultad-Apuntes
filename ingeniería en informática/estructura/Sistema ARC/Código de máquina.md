@@ -14,7 +14,7 @@ etapa: ampliar
 ```
 # Definición
 ---
-El [[Lenguaje|lenguaje]] de máquina o código máquina es el sistema de códigos directamente interpretable por un circuito microprogramable, como el [[Procesador|microprocesador]] de una [[Computadora|computadora]] o el [[Microcontrolador|microcontrolador]] de un [[Autómata|autómata]]<sup><a href="#ref-219" style="color: inherit; text-decoration: none;">[219]</a></sup> 
+El [[Lenguaje|lenguaje]] de máquina o código máquina es el sistema de códigos directamente interpretable por un circuito microprogramable, como el [[Microprocesadores|microprocesador]] de una [[Computadora|computadora]] o el [[Microcontrolador|microcontrolador]] de un [[Autómata|autómata]]<sup><a href="#ref-219" style="color: inherit; text-decoration: none;">[219]</a></sup> 
 
 
 # Referencias

@@ -38,9 +38,9 @@ Veamos el diagrama de bloques, que también contiene esquemas que modelan un pin
 
 ![[GPIO en la placa STM32.png]]
 
-Podemos ver que el pin de entrada/salida, que tiene conectados circuitos robustos de [[Sensor#Protección|protección contra sobretensiones]]
+Podemos ver que el pin de entrada/salida, que tiene conectados circuitos robustos de [[Sensores#Protección|protección contra sobretensiones]]
 
-El pin GPIO está protegido hasta un nivel de entrada aplicado de $5~V$ a pesar de que el suministro de voltaje principal de la [[Microcontrolador|MCU]] es de $3.3~V$ y los voltajes del [[Procesador|procesador]] central son de $1.8~V$ 
+El pin GPIO está protegido hasta un nivel de entrada aplicado de $5~V$ a pesar de que el suministro de voltaje principal de la [[Microcontrolador|MCU]] es de $3.3~V$ y los voltajes del [[Microprocesadores|procesador]] central son de $1.8~V$ 
 
 Esto hace que la interfaz sea bastante sensilla sin la necesidad de emplear cambiadores de nivel de voltaje. O divisores de voltaje de resistencia
 
@@ -305,7 +305,7 @@ La segunda, es cuando la corriente la otorga una fuente externa, y se lo refiere
 ```
 
 >[!caution]
-> Es importante que la fuente externa sea la misma que alimente el microcontrolador, o se puede destruir el [[Circuito integrado|circuito integrado]]
+> Es importante que la fuente externa sea la misma que alimente el microcontrolador, o se puede destruir el [[Circuitos integrados|circuito integrado]]
 
 ### Corriente de salida
 ---

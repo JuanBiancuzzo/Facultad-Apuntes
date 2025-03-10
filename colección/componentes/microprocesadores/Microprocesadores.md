@@ -1,18 +1,26 @@
 ---
 dia: 2024-04-03
-aliases:
-  - CPU
-  - Microprocesador
 tags:
+  - colección/componentes/microprocesador
+  - colección/representante
+  - investigación/índice
+  - nota/investigacion
+  - investigación/electrónica/componentes/microprocesador
   - carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación
-  - nota/facultad
   - carrera/ingeniería-en-informática/sisop/Kernel
   - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
   - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
-etapa: ampliar
+aliases:
+  - Procesador
+  - Microprocesador
+  - CPU
 ---
-# Definición
+# ¿Qué se va a investigar?
+---
+Vamos a registrar todos los microprocesadores que vayamos usando a lo largo de las carreras y proyectos
+
+## Resumen
 ---
 Controla el funcionamiento de la [[Computadora|computadora]] y lleva a cabo sus funciones de procesamiento de datos
 
@@ -26,6 +34,12 @@ El procesador es un dispositivo electrónico que determina qué, cuándo y con c
 4. Las interconexiones
 	* Son mecanismos que proporcionan comunicación entre la unidad de control, la ALU y los registros
 
-## Representación general
+### Representación general
 ---
 ![[Modelo físico de una CPU.png]]
+
+## Componentes
+---
+```dataviewjs
+await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
+```

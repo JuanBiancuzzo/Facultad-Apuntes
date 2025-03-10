@@ -18,4 +18,4 @@ Otros procesos podrían estar simultáneamente en memoria para poder compartir l
 
 Para ello el hardware debe proveer un mecanismo de protección de memoria y uno de estos puede ser la [[Virtualización de memoria|memoria virtual]]
 
-Una versión más sofisticada de la MPU es la [[Memory Management Unit|MMU]]. Su función principal es recibir una [[Dirección de memoria virtual|dirección virtual]] del [[Procesador|procesador]] y generar una [[Dirección de memoria|dirección física]]
+Una versión más sofisticada de la MPU es la [[Memory Management Unit|MMU]]. Su función principal es recibir una [[Dirección de memoria virtual|dirección virtual]] del [[Microprocesadores|procesador]] y generar una [[Dirección de memoria|dirección física]]

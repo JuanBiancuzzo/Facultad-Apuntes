@@ -9,7 +9,7 @@ aliases:
 ---
 # Definición
 ---
-Esta unidad es para guardar y ejecutar las operaciones, se utilizan [[Registro|registros]] como fuentes y destinos de datos. Estos podrían ser simples y únicos, como fue el caso de los primeros [[Procesador|procesadores]], en los que se denominaban acumuladores
+Esta unidad es para guardar y ejecutar las operaciones, se utilizan [[Registro|registros]] como fuentes y destinos de datos. Estos podrían ser simples y únicos, como fue el caso de los primeros [[Microprocesadores|procesadores]], en los que se denominaban acumuladores
 
 En los procesadores modernos puede haber $16$, $32$ o incluso más. De hecho dependiendo del modo del procesador, pueden existir muchos bancos de registros
 

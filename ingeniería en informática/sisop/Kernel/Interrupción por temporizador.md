@@ -43,7 +43,7 @@ Existen las siguientes $5$ categorías amplias de temporizadores en STM
 
 ## Para un sistema operativo
 ---
-Para que el [[Kernel|Kernel]] pueda tomar el control de la [[Computadora|computadora]] debe haber algún mecanismo que periódicamente le permita al kernel desalojar el [[Proceso|proceso]] de [[User mode|usuario]] en ejecución y volver a tomar el control del [[Procesador|procesador]], y así de toda la máquina
+Para que el [[Kernel|Kernel]] pueda tomar el control de la [[Computadora|computadora]] debe haber algún mecanismo que periódicamente le permita al kernel desalojar el [[Proceso|proceso]] de [[User mode|usuario]] en ejecución y volver a tomar el control del [[Microprocesadores|procesador]], y así de toda la máquina
 
 En la actualidad todos los procesadores poseen un mecanismo de hardware llamada hardware counter, el cual puede ser seteado para que luego del transcurso de un determinado tiempo el procesador sea interrumpido. Cada procesador posee su propio timer
 

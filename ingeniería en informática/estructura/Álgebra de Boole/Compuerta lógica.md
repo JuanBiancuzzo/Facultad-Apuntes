@@ -18,7 +18,7 @@ etapa: sin-empezar
 ---
 Una puerta lógica o compuerta lógica, es un dispositivo electrónico con una [[Función#Álgebra de Bool|función de tipo booleano]] u otros tipos
 
-Se pueden aplicar a tecnología electrónica, eléctrica, mecánica, hidráulica y neumática. Componen los [[Circuito de conmutación|circuitos de conmutación]] integrados en un [[Circuito integrado|chip]]. Experimentada con relés o interruptores electromagnéticos para conseguir las condiciones de cada compuerta lógica
+Se pueden aplicar a tecnología electrónica, eléctrica, mecánica, hidráulica y neumática. Componen los [[Circuito de conmutación|circuitos de conmutación]] integrados en un [[Circuitos integrados|chip]]. Experimentada con relés o interruptores electromagnéticos para conseguir las condiciones de cada compuerta lógica
 
 
 
