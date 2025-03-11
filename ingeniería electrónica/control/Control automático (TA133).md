@@ -1,6 +1,6 @@
 ---
-etapa: sin-empezar
-estado: Sin empezar
+etapa: empezado
+estado: Voy a cursarla este cuatri
 tags:
   - facultad/materia
   - carrera/ingeniería-electrónica/control
@@ -12,6 +12,11 @@ codigo: TA133
 correlativas:
   - "[[ingeniería electrónica/Física 2 A (8202).md|Física 2 A]]"
   - "[[ingeniería electrónica/señales/Señales y sistemas (TB065).md|Señales y sistemas]]"
+referencias:
+  - "870"
+  - "881"
+  - "897"
+  - "908"
 ---
 # Apuntes
 ---

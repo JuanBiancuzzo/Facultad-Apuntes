@@ -47,6 +47,12 @@
       "icon": "lucide-archive-restore",
       "name": "Agregar elemento de colección",
       "mode": "any"
+    },
+    {
+      "id": "workspaces:load",
+      "icon": "lucide-layout",
+      "name": "Load workspace",
+      "mode": "any"
     }
   ],
   "rightRibbon": [],

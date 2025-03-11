@@ -141,7 +141,7 @@ class Libro {
                         this.editorial
                         ? `Nuevo editorial, donde antes era ${this.editorial}`
                         : "Editorial del libro",
-                        error.Quit("No se ingresó la editorial del libro")
+                        generarError.Quit("No se ingresó la editorial del libro")
                     );
                 }
 

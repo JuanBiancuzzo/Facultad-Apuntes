@@ -1,6 +1,6 @@
 ---
-etapa: sin-empezar
-estado: Sin empezar
+etapa: empezado
+estado: Voy a cursarla este cuatri
 tags:
   - facultad/materia
   - carrera/ingeniería-electrónica/estoca
@@ -12,6 +12,12 @@ codigo: TA132
 correlativas:
   - "[[ingeniería electrónica/Probabilidad y Estadística B (8104).md|Probabilidad y Estadística B]]"
   - "[[ingeniería electrónica/señales/Señales y sistemas (TB065).md|Señales y sistemas]]"
+referencias:
+  - "936"
+  - "956"
+  - "969"
+  - "992"
+  - "1004"
 ---
 # Apuntes
 ---

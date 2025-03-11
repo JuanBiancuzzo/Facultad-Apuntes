@@ -1,6 +1,6 @@
 ---
-etapa: sin-empezar
-estado: Sin empezar
+etapa: empezado
+estado: Voy a cursarla este cuatri
 tags:
   - facultad/materia
   - carrera/ingeniería-electrónica/circuitos-2
@@ -12,6 +12,10 @@ codigo: TA138
 correlativas:
   - "[[ingeniería electrónica/electro/Electromagnetismo aplicado (TB069).md|Electromagnetismo aplicado]]"
   - "[[ingeniería electrónica/circuitos/Circuitos microelectrónicos (TB068).md|Circuitos microelectrónicos]]"
+referencias:
+  - "456"
+  - "451"
+  - "922"
 ---
 # Apuntes
 ---
