@@ -26,9 +26,6 @@ class Resumen {
     }
 
     async actualizarDatos(respuesta, generarPreguntas, generarError) {
-        if (respuesta == SALIR)
-            return true;
-
         switch(respuesta) {
             case this.config.nombre:
                 let eleccion = AGREGAR_TEMA;
@@ -77,8 +74,6 @@ class Resumen {
                 );
                 break;
         }
-
-        return false;
     }
 
     generarPreguntas() {
@@ -113,11 +108,6 @@ class Resumen {
                 opciones.push(this.config.parte);
                 valores.push(descripcion);
             }
-        }
-
-        if (this.esValido()) {
-            opciones.push(SALIR);
-            valores.push(` ${this.simbolos.confirmar} Confirmar los datos`);
         }
 
         return { opciones, valores };

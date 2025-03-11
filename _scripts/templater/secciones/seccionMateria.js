@@ -64,9 +64,6 @@ class Materia {
     }
 
 	async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
-		if (respuestaDada == SALIR)
-			return true;
-
 		let [ respuesta, indice ] = respuestaDada.split("-");
 
 		switch (respuesta) {
@@ -133,8 +130,6 @@ class Materia {
 				this.correlativas.pop();
 				break;
 		}
-
-		return false;
 	}
 
 	generarPreguntas() {
@@ -193,11 +188,6 @@ class Materia {
 				? ` ${this.simbolos.agregar} Materia correlativa`
 				: ` ${this.simbolos.agregar} ${this.simbolos.opcional} Materia correlativa`
 			);
-		}
-
-		if (this.esValido()) {
-        	valores.push(` ${this.simbolos.confirmar} Confirmar datos`);
-			opciones.push(SALIR);
 		}
 
 		return { opciones: opciones, valores: valores };

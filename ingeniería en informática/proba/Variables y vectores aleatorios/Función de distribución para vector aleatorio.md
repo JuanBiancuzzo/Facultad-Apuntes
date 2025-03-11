@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-en-informática/proba/Variables-y-vectores-aleatorios
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Variables-y-vectores-aleatorios
+aliases:
+  - Función de distribución acumulada
 ---
 # Definición
 ---
@@ -12,7 +14,7 @@ Sea $X = (X_1, \cdot, X_n)$ un [[Vector aleatorio|vector aleatorio]] de [[Dimens
 ### Propiedades, para cuando $\mathbb{X} = (X, Y)$
 ---
 1) $\lim_{X, Y \to \infty}F_\mathbb{X}(x, y) = 1$, $\lim_{X,Y \to -\infty}F_\mathbb{X}(x, y) = 0$
-2) $F_\mathbb{X}(x, y)$ es monotona no decreciente en cada variable
+2) $F_\mathbb{X}(x, y)$ es [[Función monótona|monótona]] no decreciente en cada variable
 3) $F_\mathbb{X}(x, y)$ es continua a derecha en cada variable
 
 

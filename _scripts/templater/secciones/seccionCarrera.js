@@ -24,9 +24,6 @@ class Carrera {
     }
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
-        if (respuestaDada == SALIR)
-            return true;
-
         let [ respuesta, indice ] = respuestaDada.split("-");
 
         switch (respuesta) {
@@ -67,8 +64,6 @@ class Carrera {
                 this.codigo = !this.codigo;
                 break;
         }
-
-        return false;
     }
 
     generarPreguntas() {
@@ -109,11 +104,6 @@ class Carrera {
             ? ` ${this.simbolos.sacar} Las materias tienen código`
             : ` ${this.simbolos.agregar} Las materias no tienen código`
         )
-
-        if (this.esValido()) {
-            opciones.push(SALIR);
-            valores.push(` ${this.simbolos.volver} Confirmar datos`);
-        }
 
         return { opciones: opciones, valores: valores };
     }
