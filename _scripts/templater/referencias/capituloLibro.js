@@ -3,8 +3,6 @@ const ELIMINAR_EDITORE = "eliminar editores";
 
 const CANTIDAD_MINIMA_EDITORES = 0;
 
-const SALIR = "salir";
-
 class Capitulo {
     constructor(tp, seguidorRef, representacionPrevia, libro) {
         // console.log("Capitulo");

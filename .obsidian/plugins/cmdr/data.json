@@ -59,9 +59,9 @@
   "titleBar": [],
   "statusBar": [
     {
-      "id": "templater-obsidian:_template/referencias/Editar referencia - Template.md",
+      "id": "templater-obsidian:_template/Editar - Template.md",
       "icon": "lucide-file-pen",
-      "name": "Editar referencia",
+      "name": "Editar",
       "mode": "any"
     },
     {

@@ -49,6 +49,7 @@ class Libro {
         for (let capituloPrevio of capitulosPrevios) {
             this.capitulos.push(claseCapitulo.clase(this.seguidorRef, capituloPrevio, this));
         }
+        this.capitulos = this.capitulos.sort((a, b) => parseInt(a.numero, 10) - parseInt(b.numero, 10));
 
         let padre = this;
         this.informacion = {
@@ -77,11 +78,11 @@ class Libro {
 
             case this.config.autore.self:
                 this.autores.push({ 
-                    nombre: await generarPreguntas.prompt(
+                    apellido: await generarPreguntas.prompt(
                         "Apellido del autore",
                         generarError.Quit("No se ingresa el apellido del autore de forma correcta")
                     ),
-                    apellido: await generarPreguntas.prompt(
+                    nombre: await generarPreguntas.prompt(
                         "Nombre del autore",
                         generarError.Quit("No se ingresa el nombre del autore de forma correcta")
                     ),
@@ -177,12 +178,14 @@ class Libro {
 
             case MODIFICAR_CAPITULO:
                 await generarPreguntas.formulario(this.capitulos[indice], "Modificar información del capítulo");
+                this.capitulos = this.capitulos.sort((a, b) => parseInt(a.numero, 10) - parseInt(b.numero, 10));
                 break;
 
             case this.config.capitulo:
                 let nuevoCapitulo = this.informacion.capituloNuevo();
                 await generarPreguntas.formulario(nuevoCapitulo, "Ingresar información del capítulo");
                 this.capitulos.push(nuevoCapitulo);
+                this.capitulos = this.capitulos.sort((a, b) => parseInt(a.numero, 10) - parseInt(b.numero, 10));
                 break;
 
             case ELIMINAR_CAPITULO:
@@ -341,9 +344,27 @@ class Libro {
     }
 }
 
+function generarNombreArchivo(tp, infoLibro) {
+    const { CARACTERES_INVALIDOS } = tp.user.constantes();
+
+    let nombreArchivo = infoLibro.describir();
+	let intercambios = [[":", ","], ['"', "'"], ["<", "("], [">", ")"], ["?", ""]]
+	for (let [caracterInvalido, caracterValido] of intercambios) {
+		nombreArchivo = nombreArchivo.replaceAll(caracterInvalido, caracterValido);
+	}
+	CARACTERES_INVALIDOS.forEach(caracterInvalido => nombreArchivo = nombreArchivo.replaceAll(caracterInvalido, ","));
+
+    return nombreArchivo;
+}
+
+function aliasCapitulo(infoCapitulo, nombreArchivo) {
+    let descripcion = infoCapitulo.describirReducido();
+    return `${nombreArchivo}, ${descripcion}#${descripcion}`;
+}
+
 async function crearLibro(tp, seguidorRef, referenciaCreada = null) {
     const { 
-        FORMATO_DIA, ETAPAS, REFERENCIAS, CARACTERES_INVALIDOS, SECCIONES, DATOS: {
+        FORMATO_DIA, ETAPAS, REFERENCIAS, SECCIONES, DATOS: {
             ARCHIVO: DATOS_ARCHIVO, REFERENCIAS: { libro: DATOS_LIBRO, ...DATOS_REFERENCIAS },
         }, TAGS: {
             referencias: TAG_REFERENCIA, nota: TAGS_NOTA,
@@ -359,12 +380,7 @@ async function crearLibro(tp, seguidorRef, referenciaCreada = null) {
     await preguntar.formulario(tp, infoLibro, "Completar la información del libro");
     referenciaCreada.valor = infoLibro;
 	
-    let nombreArchivo = infoLibro.describir();
-	let intercambios = [[":", ","], ['"', "'"], ["<", "("], [">", ")"], ["?", ""]]
-	for (let [caracterInvalido, caracterValido] of intercambios) {
-		nombreArchivo = nombreArchivo.replaceAll(caracterInvalido, caracterValido);
-	}
-	CARACTERES_INVALIDOS.forEach(caracterInvalido => nombreArchivo = nombreArchivo.replaceAll(caracterInvalido, ","));
+    let nombreArchivo = generarNombreArchivo(tp, infoLibro);
 
     let texto = `\`\`\`dataviewjs\n\tawait dv.view("${DATAVIEW.self}/${DATAVIEW.etapa}", { etapa: dv.current()?.etapa });\n\`\`\`\n`;
     texto += `${"#".repeat(SECCIONES.resumen.nivel)} ${SECCIONES.resumen.texto}\n---\n`;
@@ -386,11 +402,7 @@ async function crearLibro(tp, seguidorRef, referenciaCreada = null) {
             ],
             [DATOS_REFERENCIAS.tipoCita]: REFERENCIAS.libro,
             ...infoLibro.generarRepresentacion(),
-            [DATOS_ARCHIVO.aliases]: capitulos
-                .map(infoCapitulo => {
-                    let descripcion = infoCapitulo.describirReducido();
-                    return `${nombreArchivo}, ${descripcion}#${descripcion}`;
-                }),
+            [DATOS_ARCHIVO.aliases]: capitulos.map(infoCapitulo => aliasCapitulo(infoCapitulo, nombreArchivo)),
         },
         carpeta: `${DIR_COLECCION.self}/${DIR_LIBRO}`,
         titulo: nombreArchivo,
@@ -398,7 +410,82 @@ async function crearLibro(tp, seguidorRef, referenciaCreada = null) {
     };
 }
 
+async function editarLibro(tp, seguidorRef, archivo) {
+    const { SECCIONES, DATOS: { ARCHIVO: DATOS_ARCHIVO } } = tp.user.constantes();
+    const preguntar = tp.user.preguntar();
+
+    let { tArchivo, dvArchivo } = archivo;
+
+    let infoVieja = new Libro(tp, seguidorRef, dvArchivo);
+    let infoNueva = new Libro(tp, seguidorRef, dvArchivo);
+    await preguntar.formulario(tp, infoNueva, "Editar la información del libro");
+
+    let nombreViejo = generarNombreArchivo(tp, infoVieja);
+    let nombreNuevo = generarNombreArchivo(tp, infoNueva);
+
+    if (nombreNuevo != nombreViejo) {
+        await app.fileManager.renameFile(tArchivo, `${tArchivo.parent.path}/${nombreNuevo}.md`);
+    }
+
+    let aliases = dvArchivo[DATOS_ARCHIVO.aliases];
+
+    let capitulosViejos = infoVieja.capitulos ? infoVieja.capitulos : [];
+    capitulosViejos.forEach(infoCapitulo => aliases.remove(aliasCapitulo(infoCapitulo, nombreViejo)));
+
+    let capitulosNuevos = infoNueva.capitulos ? infoNueva.capitulos : [];
+    capitulosNuevos.forEach(infoCapitulo => aliases.push(aliasCapitulo(infoCapitulo, nombreNuevo)));
+
+    await app.fileManager.processFrontMatter(tArchivo, (frontmatter) => {
+        let datosNuevos = infoNueva.generarRepresentacion();
+        for (let [key, value] of Object.entries(datosNuevos)) {
+            frontmatter[key] = value;
+        }
+        frontmatter[DATOS_ARCHIVO.aliases] = aliases;
+    });
+
+    let contenido = await app.vault.read(tArchivo);
+    let reemplazo = capitulosNuevos.map(capituloNuevo => {
+        let numCapitulo = parseInt(capituloNuevo.numero, 10);
+        let capituloViejo = capitulosViejos.find(capituloViejo => parseInt(capituloViejo.numero, 10) == numCapitulo);
+
+        let indice = capituloViejo
+            ? contenido.search(new RegExp(`#+\\s+${capituloViejo.describirReducido()}\\s*\n`))
+            : -1;
+
+        return {
+            numCapitulo: numCapitulo,
+            capituloNuevo: capituloNuevo,
+            indiceCapituloViejo: indice,
+        };
+    }).sort((a, b) => b.numCapitulo - a.numCapitulo);
+
+    let ultimoIndice = contenido.search(new RegExp(`\n${"#".repeat(SECCIONES.referencias.nivel)} ${SECCIONES.referencias.texto}`));
+    if (ultimoIndice < 0) contenido.length;
+
+    contenido = contenido.split("");
+
+    for (let { capituloNuevo, indiceCapituloViejo } of reemplazo) {
+        let descripcionCapNuevo = capituloNuevo.describirReducido();
+
+        if (indiceCapituloViejo < 0) {
+            indiceCapituloViejo = ultimoIndice;
+            contenido.splice(indiceCapituloViejo, 1, `## ${descripcionCapNuevo}\n---\n\n\n`);
+
+        } else {
+            let contenidoParcial = contenido.slice(indiceCapituloViejo);
+            let cantidadBorrar = contenidoParcial.indexOf("\n");
+
+            contenido.splice(indiceCapituloViejo, cantidadBorrar, `## ${descripcionCapNuevo}`);
+        }
+
+        ultimoIndice = indiceCapituloViejo - 1;
+    }
+
+    await app.vault.modify(tArchivo, contenido.join(""));
+}
+
 module.exports = (tp) => ({
     clase: (seguidorRef = null, representacionPrevia = {}) => new Libro(tp, seguidorRef, representacionPrevia),
     crear: crearLibro.bind(null, tp),
+    editar: editarLibro.bind(null, tp),
 });
