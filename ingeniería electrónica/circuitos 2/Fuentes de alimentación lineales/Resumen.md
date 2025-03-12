@@ -4,6 +4,13 @@ tags:
   - carrera/ingeniería-electrónica/circuitos-2/Fuentes-de-alimentación-lineales
 nombreResumen: Fuentes de alimentación lineales
 capitulo: 2
+referencias:
+  - "452"
+  - "453"
+  - "1017"
+  - "932"
+  - "1018"
+etapa: sin-empezar
 ---
 # Índice
 ---

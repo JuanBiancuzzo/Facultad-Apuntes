@@ -6,44 +6,51 @@ numReferencia: 451
 tituloObra: Analysis and Design of Analog Integrated Circuits
 subtituloObra: 
 nombreAutores:
-  - apellido: Gray
-    nombre: Paul R.
-  - apellido: Hurst
-    nombre: Paul J.
-  - apellido: Lewis
-    nombre: Stephen H.
-  - apellido: Meyer
-    nombre: Robert G.
+  - nombre: Paul R.
+    apellido: Gray
+  - nombre: Paul J.
+    apellido: Hurst
+  - nombre: Stephen H.
+    apellido: Lewis
+  - nombre: Robert G.
+    apellido: Meyer
 anio: "2009"
 editorial: Wiley Publishing
 edicion: "5"
 volumen: 
 url: 
 capitulos:
-  - numReferencia: 452
-    numeroCapitulo: "3"
+  - numeroCapitulo: "3"
     nombreCapitulo: Single-Transistor and Multiple-Transistor Amplifiers
+    numReferencia: 452
     editores: []
     paginas:
       inicio: "169"
       final: "250"
-  - numReferencia: 453
-    numeroCapitulo: "4"
+  - numeroCapitulo: "4"
     nombreCapitulo: Current Mirrors, Active Loads, and References
+    numReferencia: 453
     editores: []
     paginas:
       inicio: "251"
       final: "340"
-  - numReferencia: 454
-    numeroCapitulo: "7"
+  - numeroCapitulo: "7"
     nombreCapitulo: Frequency Response of Integrated Circuits
+    numReferencia: 454
     editores: []
     paginas:
       inicio: "490"
       final: "552"
-  - numReferencia: 455
-    numeroCapitulo: "12"
+  - numeroCapitulo: "8"
+    nombreCapitulo: Feedback
+    numReferencia: 1017
+    editores: []
+    paginas:
+      inicio: "553"
+      final: "623"
+  - numeroCapitulo: "12"
     nombreCapitulo: Fully Differential Operational Amplifiers
+    numReferencia: 455
     editores: []
     paginas:
       inicio: "796"
@@ -53,6 +60,7 @@ aliases:
   - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 3: Single-Transistor and Multiple-Transistor Amplifiers#Capítulo 3: Single-Transistor and Multiple-Transistor Amplifiers"
   - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 4: Current Mirrors, Active Loads, and References#Capítulo 4: Current Mirrors, Active Loads, and References"
   - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 7: Frequency Response of Integrated Circuits#Capítulo 7: Frequency Response of Integrated Circuits"
+  - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 8: Feedback#Capítulo 8: Feedback"
   - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 12: Fully Differential Operational Amplifiers#Capítulo 12: Fully Differential Operational Amplifiers"
 tags:
   - referencia/libro
@@ -83,6 +91,9 @@ tags:
 ## Capítulo 7: Frequency Response of Integrated Circuits
 ---
 
+
+## Capítulo 8: Feedback
+---
 
 
 ## Capítulo 12: Fully Differential Operational Amplifiers

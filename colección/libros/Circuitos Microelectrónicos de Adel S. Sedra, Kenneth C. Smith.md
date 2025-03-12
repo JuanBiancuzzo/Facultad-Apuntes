@@ -6,61 +6,68 @@ numReferencia: 456
 tituloObra: Circuitos Microelectrónicos
 subtituloObra: 
 nombreAutores:
-  - apellido: Sedra
-    nombre: Adel S.
-  - apellido: Smith
-    nombre: Kenneth C.
+  - nombre: Adel S.
+    apellido: Sedra
+  - nombre: Kenneth C.
+    apellido: Smith
 anio: "1999"
 editorial: Oxford University Press
 edicion: 
 volumen: 
 url: 
 capitulos:
-  - numReferencia: 457
-    numeroCapitulo: "1"
+  - numeroCapitulo: "1"
     nombreCapitulo: Introducción a la Electrónica
+    numReferencia: 457
     editores: []
     paginas:
       inicio: "1"
       final: "57"
-  - numReferencia: 458
-    numeroCapitulo: "2"
+  - numeroCapitulo: "2"
     nombreCapitulo: Amplificadores Operacionales
+    numReferencia: 458
     editores: []
     paginas:
       inicio: "60"
       final: "121"
-  - numReferencia: 459
-    numeroCapitulo: "3"
+  - numeroCapitulo: "3"
     nombreCapitulo: Diodos
+    numReferencia: 459
     editores: []
     paginas:
       inicio: "122"
       final: "220"
-  - numReferencia: 460
-    numeroCapitulo: "4"
+  - numeroCapitulo: "4"
     nombreCapitulo: Transistores de Unión Bipolar (BJT)
+    numReferencia: 460
     editores: []
     paginas:
       inicio: "221"
       final: "352"
-  - numReferencia: 461
-    numeroCapitulo: "5"
+  - numeroCapitulo: "5"
     nombreCapitulo: Transistores de Efecto de Campo (FET)
+    numReferencia: 461
     editores: []
     paginas:
       inicio: "353"
       final: "483"
-  - numReferencia: 462
-    numeroCapitulo: "13"
+  - numeroCapitulo: "8"
+    nombreCapitulo: Retroalimentación
+    numReferencia: 1018
+    editores: []
+    paginas:
+      inicio: "667"
+      final: "750"
+  - numeroCapitulo: "13"
     nombreCapitulo: Circuitos Digitales MOS
+    numReferencia: 462
     editores: []
     paginas:
       inicio: "1042"
       final: "1157"
-  - numReferencia: 463
-    numeroCapitulo: "14"
+  - numeroCapitulo: "14"
     nombreCapitulo: Circuitos Digitales Bipolares y de tecnología avanzada
+    numReferencia: 463
     editores: []
     paginas:
       inicio: "1158"
@@ -72,6 +79,7 @@ aliases:
   - "Circuitos Microelectrónicos de Adel S. Sedra, Kenneth C. Smith, Capítulo 3: Diodos#Capítulo 3: Diodos"
   - "Circuitos Microelectrónicos de Adel S. Sedra, Kenneth C. Smith, Capítulo 4: Transistores de Unión Bipolar (BJT)#Capítulo 4: Transistores de Unión Bipolar (BJT)"
   - "Circuitos Microelectrónicos de Adel S. Sedra, Kenneth C. Smith, Capítulo 5: Transistores de Efecto de Campo (FET)#Capítulo 5: Transistores de Efecto de Campo (FET)"
+  - "Circuitos Microelectrónicos de Adel S. Sedra, Kenneth C. Smith, Capítulo 8: Retroalimentación#Capítulo 8: Retroalimentación"
   - "Circuitos Microelectrónicos de Adel S. Sedra, Kenneth C. Smith, Capítulo 13: Circuitos Digitales MOS#Capítulo 13: Circuitos Digitales MOS"
   - "Circuitos Microelectrónicos de Adel S. Sedra, Kenneth C. Smith, Capítulo 14: Circuitos Digitales Bipolares y de tecnología avanzada#Capítulo 14: Circuitos Digitales Bipolares y de tecnología avanzada"
 tags:
@@ -111,6 +119,11 @@ tags:
 
 
 ## Capítulo 5: Transistores de Efecto de Campo (FET)
+---
+
+
+
+## Capítulo 8: Retroalimentación
 ---
 
 
