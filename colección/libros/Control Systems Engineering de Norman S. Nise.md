@@ -9,8 +9,8 @@ tipoCita: Libro
 tituloObra: Control Systems Engineering
 numReferencia: 908
 nombreAutores:
-  - nombre: Nise
-    apellido: Norman S.
+  - nombre: Norman S.
+    apellido: Nise
 anio: "2014"
 editorial: Wiley Publishing
 edicion: "7"
@@ -107,19 +107,19 @@ capitulos:
       inicio: "707"
       final: "765"
 aliases:
-  - "Control Systems Engineering de Nise Norman S., Capítulo 1: Introduction#Capítulo 1: Introduction"
-  - "Control Systems Engineering de Nise Norman S., Capítulo 2: Modeling in the frequency domain#Capítulo 2: Modeling in the frequency domain"
-  - "Control Systems Engineering de Nise Norman S., Capítulo 3: Modeling in the time domain#Capítulo 3: Modeling in the time domain"
-  - "Control Systems Engineering de Nise Norman S., Capítulo 4: Time response#Capítulo 4: Time response"
-  - "Control Systems Engineering de Nise Norman S., Capítulo 5: Reduction of multiple subsystems#Capítulo 5: Reduction of multiple subsystems"
-  - "Control Systems Engineering de Nise Norman S., Capítulo 6: Stability#Capítulo 6: Stability"
-  - "Control Systems Engineering de Nise Norman S., Capítulo 7: Steady-state errors#Capítulo 7: Steady-state errors"
-  - "Control Systems Engineering de Nise Norman S., Capítulo 8: Root locus techniques#Capítulo 8: Root locus techniques"
-  - "Control Systems Engineering de Nise Norman S., Capítulo 9: Design via root locus#Capítulo 9: Design via root locus"
-  - "Control Systems Engineering de Nise Norman S., Capítulo 10: Frequency response techniques#Capítulo 10: Frequency response techniques"
-  - "Control Systems Engineering de Nise Norman S., Capítulo 11: Design via frequency response#Capítulo 11: Design via frequency response"
-  - "Control Systems Engineering de Nise Norman S., Capítulo 12: Design via state space#Capítulo 12: Design via state space"
-  - "Control Systems Engineering de Nise Norman S., Capítulo 13: Digital control systems#Capítulo 13: Digital control systems"
+  - "Control Systems Engineering de Norman S. Nise, Capítulo 1: Introduction#Capítulo 1: Introduction"
+  - "Control Systems Engineering de Norman S. Nise, Capítulo 2: Modeling in the frequency domain#Capítulo 2: Modeling in the frequency domain"
+  - "Control Systems Engineering de Norman S. Nise, Capítulo 3: Modeling in the time domain#Capítulo 3: Modeling in the time domain"
+  - "Control Systems Engineering de Norman S. Nise, Capítulo 4: Time response#Capítulo 4: Time response"
+  - "Control Systems Engineering de Norman S. Nise, Capítulo 5: Reduction of multiple subsystems#Capítulo 5: Reduction of multiple subsystems"
+  - "Control Systems Engineering de Norman S. Nise, Capítulo 6: Stability#Capítulo 6: Stability"
+  - "Control Systems Engineering de Norman S. Nise, Capítulo 7: Steady-state errors#Capítulo 7: Steady-state errors"
+  - "Control Systems Engineering de Norman S. Nise, Capítulo 8: Root locus techniques#Capítulo 8: Root locus techniques"
+  - "Control Systems Engineering de Norman S. Nise, Capítulo 9: Design via root locus#Capítulo 9: Design via root locus"
+  - "Control Systems Engineering de Norman S. Nise, Capítulo 10: Frequency response techniques#Capítulo 10: Frequency response techniques"
+  - "Control Systems Engineering de Norman S. Nise, Capítulo 11: Design via frequency response#Capítulo 11: Design via frequency response"
+  - "Control Systems Engineering de Norman S. Nise, Capítulo 12: Design via state space#Capítulo 12: Design via state space"
+  - "Control Systems Engineering de Norman S. Nise, Capítulo 13: Digital control systems#Capítulo 13: Digital control systems"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

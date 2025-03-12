@@ -9,8 +9,8 @@ tipoCita: Libro
 tituloObra: Ingeniería de control moderna
 numReferencia: 897
 nombreAutores:
-  - nombre: Ogata
-    apellido: Katsuhiko
+  - nombre: Katsuhiko
+    apellido: Ogata
 anio: "2010"
 editorial: Pearson Education, Inc.
 edicion: "5"
@@ -86,16 +86,16 @@ capitulos:
       inicio: "722"
       final: "858"
 aliases:
-  - "Ingeniería de control moderna de Ogata Katsuhiko, Capítulo 1: Introducción a los sistemas de control#Capítulo 1: Introducción a los sistemas de control"
-  - "Ingeniería de control moderna de Ogata Katsuhiko, Capítulo 2: Modelado matemático de sistemas de control#Capítulo 2: Modelado matemático de sistemas de control"
-  - "Ingeniería de control moderna de Ogata Katsuhiko, Capítulo 3: Modelado matemático de sistemas mecánicos y sistemas eléctronicos#Capítulo 3: Modelado matemático de sistemas mecánicos y sistemas eléctronicos"
-  - "Ingeniería de control moderna de Ogata Katsuhiko, Capítulo 4: Modelado matemático de sistemas de fluidos y sistemas térmicos#Capítulo 4: Modelado matemático de sistemas de fluidos y sistemas térmicos"
-  - "Ingeniería de control moderna de Ogata Katsuhiko, Capítulo 5: Análisis de la respuesta transitoria y estacionaria#Capítulo 5: Análisis de la respuesta transitoria y estacionaria"
-  - "Ingeniería de control moderna de Ogata Katsuhiko, Capítulo 6: Análisis y diseño de sistemas de control por el método del lugar de las raíces#Capítulo 6: Análisis y diseño de sistemas de control por el método del lugar de las raíces"
-  - "Ingeniería de control moderna de Ogata Katsuhiko, Capítulo 7: Análisis y diseño de sistemas de control por el método de la respuesta en frecuencia#Capítulo 7: Análisis y diseño de sistemas de control por el método de la respuesta en frecuencia"
-  - "Ingeniería de control moderna de Ogata Katsuhiko, Capítulo 8: Controladores PID y controladores PID modificados#Capítulo 8: Controladores PID y controladores PID modificados"
-  - "Ingeniería de control moderna de Ogata Katsuhiko, Capítulo 9: Análisis de sistemas de control en el espacio de estados#Capítulo 9: Análisis de sistemas de control en el espacio de estados"
-  - "Ingeniería de control moderna de Ogata Katsuhiko, Capítulo 10: Diseño de sistemas de control en el espacio de estados#Capítulo 10: Diseño de sistemas de control en el espacio de estados"
+  - "Ingeniería de control moderna de Katsuhiko Ogata, Capítulo 1: Introducción a los sistemas de control#Capítulo 1: Introducción a los sistemas de control"
+  - "Ingeniería de control moderna de Katsuhiko Ogata, Capítulo 2: Modelado matemático de sistemas de control#Capítulo 2: Modelado matemático de sistemas de control"
+  - "Ingeniería de control moderna de Katsuhiko Ogata, Capítulo 3: Modelado matemático de sistemas mecánicos y sistemas eléctronicos#Capítulo 3: Modelado matemático de sistemas mecánicos y sistemas eléctronicos"
+  - "Ingeniería de control moderna de Katsuhiko Ogata, Capítulo 4: Modelado matemático de sistemas de fluidos y sistemas térmicos#Capítulo 4: Modelado matemático de sistemas de fluidos y sistemas térmicos"
+  - "Ingeniería de control moderna de Katsuhiko Ogata, Capítulo 5: Análisis de la respuesta transitoria y estacionaria#Capítulo 5: Análisis de la respuesta transitoria y estacionaria"
+  - "Ingeniería de control moderna de Katsuhiko Ogata, Capítulo 6: Análisis y diseño de sistemas de control por el método del lugar de las raíces#Capítulo 6: Análisis y diseño de sistemas de control por el método del lugar de las raíces"
+  - "Ingeniería de control moderna de Katsuhiko Ogata, Capítulo 7: Análisis y diseño de sistemas de control por el método de la respuesta en frecuencia#Capítulo 7: Análisis y diseño de sistemas de control por el método de la respuesta en frecuencia"
+  - "Ingeniería de control moderna de Katsuhiko Ogata, Capítulo 8: Controladores PID y controladores PID modificados#Capítulo 8: Controladores PID y controladores PID modificados"
+  - "Ingeniería de control moderna de Katsuhiko Ogata, Capítulo 9: Análisis de sistemas de control en el espacio de estados#Capítulo 9: Análisis de sistemas de control en el espacio de estados"
+  - "Ingeniería de control moderna de Katsuhiko Ogata, Capítulo 10: Diseño de sistemas de control en el espacio de estados#Capítulo 10: Diseño de sistemas de control en el espacio de estados"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -9,12 +9,12 @@ tipoCita: Libro
 tituloObra: Feedback Control of Dynamic Systems
 numReferencia: 870
 nombreAutores:
-  - nombre: Franklin
-    apellido: Gene F.
+  - nombre: Gene F.
+    apellido: Franklin
   - nombre: Powell
     apellido: Ryan J.
-  - nombre: Emami-Naeini
-    apellido: Abbas
+  - nombre: Abbas
+    apellido: Emami-Naeini
 anio: "2018"
 editorial: Pearson Education, Inc.
 edicion: "8"
@@ -90,16 +90,16 @@ capitulos:
       inicio: "729"
       final: "842"
 aliases:
-  - "Feedback Control of Dynamic Systems de Franklin Gene F., Powell Ryan J., Emami-Naeini Abbas, Capítulo 1: An Overview and Brief History of Feedback Control#Capítulo 1: An Overview and Brief History of Feedback Control"
-  - "Feedback Control of Dynamic Systems de Franklin Gene F., Powell Ryan J., Emami-Naeini Abbas, Capítulo 2: Dynamic Models#Capítulo 2: Dynamic Models"
-  - "Feedback Control of Dynamic Systems de Franklin Gene F., Powell Ryan J., Emami-Naeini Abbas, Capítulo 3: Dynamic Response#Capítulo 3: Dynamic Response"
-  - "Feedback Control of Dynamic Systems de Franklin Gene F., Powell Ryan J., Emami-Naeini Abbas, Capítulo 4: A First Analysis of Feedback#Capítulo 4: A First Analysis of Feedback"
-  - "Feedback Control of Dynamic Systems de Franklin Gene F., Powell Ryan J., Emami-Naeini Abbas, Capítulo 5: The Root-Locus Design Method#Capítulo 5: The Root-Locus Design Method"
-  - "Feedback Control of Dynamic Systems de Franklin Gene F., Powell Ryan J., Emami-Naeini Abbas, Capítulo 6: The Frequency-Response Design Method#Capítulo 6: The Frequency-Response Design Method"
-  - "Feedback Control of Dynamic Systems de Franklin Gene F., Powell Ryan J., Emami-Naeini Abbas, Capítulo 7: State-Space Design#Capítulo 7: State-Space Design"
-  - "Feedback Control of Dynamic Systems de Franklin Gene F., Powell Ryan J., Emami-Naeini Abbas, Capítulo 8: Digital Control#Capítulo 8: Digital Control"
-  - "Feedback Control of Dynamic Systems de Franklin Gene F., Powell Ryan J., Emami-Naeini Abbas, Capítulo 9: Nonlinear Systems#Capítulo 9: Nonlinear Systems"
-  - "Feedback Control of Dynamic Systems de Franklin Gene F., Powell Ryan J., Emami-Naeini Abbas, Capítulo 10: Control System Design: Principles and Case Studies#Capítulo 10: Control System Design: Principles and Case Studies"
+  - "Feedback Control of Dynamic Systems de Gene F. Franklin, Powell Ryan J., Abbas Emami-Naeini, Capítulo 1: An Overview and Brief History of Feedback Control#Capítulo 1: An Overview and Brief History of Feedback Control"
+  - "Feedback Control of Dynamic Systems de Gene F. Franklin, Powell Ryan J., Abbas Emami-Naeini, Capítulo 2: Dynamic Models#Capítulo 2: Dynamic Models"
+  - "Feedback Control of Dynamic Systems de Gene F. Franklin, Powell Ryan J., Abbas Emami-Naeini, Capítulo 3: Dynamic Response#Capítulo 3: Dynamic Response"
+  - "Feedback Control of Dynamic Systems de Gene F. Franklin, Powell Ryan J., Abbas Emami-Naeini, Capítulo 4: A First Analysis of Feedback#Capítulo 4: A First Analysis of Feedback"
+  - "Feedback Control of Dynamic Systems de Gene F. Franklin, Powell Ryan J., Abbas Emami-Naeini, Capítulo 5: The Root-Locus Design Method#Capítulo 5: The Root-Locus Design Method"
+  - "Feedback Control of Dynamic Systems de Gene F. Franklin, Powell Ryan J., Abbas Emami-Naeini, Capítulo 6: The Frequency-Response Design Method#Capítulo 6: The Frequency-Response Design Method"
+  - "Feedback Control of Dynamic Systems de Gene F. Franklin, Powell Ryan J., Abbas Emami-Naeini, Capítulo 7: State-Space Design#Capítulo 7: State-Space Design"
+  - "Feedback Control of Dynamic Systems de Gene F. Franklin, Powell Ryan J., Abbas Emami-Naeini, Capítulo 8: Digital Control#Capítulo 8: Digital Control"
+  - "Feedback Control of Dynamic Systems de Gene F. Franklin, Powell Ryan J., Abbas Emami-Naeini, Capítulo 9: Nonlinear Systems#Capítulo 9: Nonlinear Systems"
+  - "Feedback Control of Dynamic Systems de Gene F. Franklin, Powell Ryan J., Abbas Emami-Naeini, Capítulo 10: Control System Design: Principles and Case Studies#Capítulo 10: Control System Design: Principles and Case Studies"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

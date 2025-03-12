@@ -10,10 +10,10 @@ tituloObra: Feedback Systems
 undefined: An Introduction for Scientists and Engineers
 numReferencia: 881
 nombreAutores:
-  - nombre: Aström
-    apellido: Karl Johan
-  - nombre: Murray
-    apellido: Richard M.
+  - nombre: Karl Johan
+    apellido: Aström
+  - nombre: Richard M.
+    apellido: Murray
 anio: "2008"
 editorial: Princeton University Press
 capitulos:
@@ -123,21 +123,21 @@ capitulos:
       inicio: 
       final: 
 aliases:
-  - "Feedback Systems, An Introduction for Scientists and Engineers de Aström Karl Johan, Murray Richard M., Capítulo 1: Introduction#Capítulo 1: Introduction"
-  - "Feedback Systems, An Introduction for Scientists and Engineers de Aström Karl Johan, Murray Richard M., Capítulo 2: Feedback Principles#Capítulo 2: Feedback Principles"
-  - "Feedback Systems, An Introduction for Scientists and Engineers de Aström Karl Johan, Murray Richard M., Capítulo 3: System Modeling#Capítulo 3: System Modeling"
-  - "Feedback Systems, An Introduction for Scientists and Engineers de Aström Karl Johan, Murray Richard M., Capítulo 4: Examples#Capítulo 4: Examples"
-  - "Feedback Systems, An Introduction for Scientists and Engineers de Aström Karl Johan, Murray Richard M., Capítulo 5: Dynamic Behavior#Capítulo 5: Dynamic Behavior"
-  - "Feedback Systems, An Introduction for Scientists and Engineers de Aström Karl Johan, Murray Richard M., Capítulo 6: Linear Systems#Capítulo 6: Linear Systems"
-  - "Feedback Systems, An Introduction for Scientists and Engineers de Aström Karl Johan, Murray Richard M., Capítulo 7: State Feedback#Capítulo 7: State Feedback"
-  - "Feedback Systems, An Introduction for Scientists and Engineers de Aström Karl Johan, Murray Richard M., Capítulo 8: Output Feedback#Capítulo 8: Output Feedback"
-  - "Feedback Systems, An Introduction for Scientists and Engineers de Aström Karl Johan, Murray Richard M., Capítulo 9: Transfer Functions#Capítulo 9: Transfer Functions"
-  - "Feedback Systems, An Introduction for Scientists and Engineers de Aström Karl Johan, Murray Richard M., Capítulo 10: Frequency Domain Analysis#Capítulo 10: Frequency Domain Analysis"
-  - "Feedback Systems, An Introduction for Scientists and Engineers de Aström Karl Johan, Murray Richard M., Capítulo 11: PID Control#Capítulo 11: PID Control"
-  - "Feedback Systems, An Introduction for Scientists and Engineers de Aström Karl Johan, Murray Richard M., Capítulo 12: Frequency Domain Design#Capítulo 12: Frequency Domain Design"
-  - "Feedback Systems, An Introduction for Scientists and Engineers de Aström Karl Johan, Murray Richard M., Capítulo 13: Robust Persormance#Capítulo 13: Robust Persormance"
-  - "Feedback Systems, An Introduction for Scientists and Engineers de Aström Karl Johan, Murray Richard M., Capítulo 14: Fundamental Limits#Capítulo 14: Fundamental Limits"
-  - "Feedback Systems, An Introduction for Scientists and Engineers de Aström Karl Johan, Murray Richard M., Capítulo 15: Architecture and System Design#Capítulo 15: Architecture and System Design"
+  - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 1: Introduction#Capítulo 1: Introduction"
+  - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 2: Feedback Principles#Capítulo 2: Feedback Principles"
+  - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 3: System Modeling#Capítulo 3: System Modeling"
+  - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 4: Examples#Capítulo 4: Examples"
+  - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 5: Dynamic Behavior#Capítulo 5: Dynamic Behavior"
+  - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 6: Linear Systems#Capítulo 6: Linear Systems"
+  - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 7: State Feedback#Capítulo 7: State Feedback"
+  - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 8: Output Feedback#Capítulo 8: Output Feedback"
+  - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 9: Transfer Functions#Capítulo 9: Transfer Functions"
+  - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 10: Frequency Domain Analysis#Capítulo 10: Frequency Domain Analysis"
+  - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 11: PID Control#Capítulo 11: PID Control"
+  - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 12: Frequency Domain Design#Capítulo 12: Frequency Domain Design"
+  - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 13: Robust Persormance#Capítulo 13: Robust Persormance"
+  - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 14: Fundamental Limits#Capítulo 14: Fundamental Limits"
+  - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 15: Architecture and System Design#Capítulo 15: Architecture and System Design"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
