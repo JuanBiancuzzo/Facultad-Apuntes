@@ -13,7 +13,7 @@ tipoDistribucion: discreta
 ---
 Pascal modela la cantidad de ensayos necesarios hasta obtener $k$ éxitos si se repite de forma independiente un experimento de Bernoulli con probabilidad $p$ de éxito.
 
-Se dice que una [[Variable aleatoria|variable aleatoria]] $X$ tiene distribución de Pascal de parámetros $k$ y $p$ si su [[Función de probabilidad|función de probabilidad]] es $$ p_X(x) = \dbinom{x -1}{k - 1} \cdot (1 - p)^{x - k} \cdot p^k$$
+Se dice que una [[Variable aleatoria|variable aleatoria]] $X$ tiene distribución de Pascal de parámetros $k$ y $p$ si su [[Función de masa de probabilidad|función de probabilidad]] es $$ p_X(x) = \dbinom{x -1}{k - 1} \cdot (1 - p)^{x - k} \cdot p^k$$
 ### Notación
 $$ X \sim Pas(k, p) $$
 

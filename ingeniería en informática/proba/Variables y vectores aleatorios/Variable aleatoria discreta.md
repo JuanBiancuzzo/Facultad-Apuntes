@@ -17,4 +17,4 @@ La variable aleatoria $X$ será discreta si la suma de las probabilidades de tod
 
 ## Teorema
 ---
-Sea $X$ una variable aleatoria discreta, entonces usando la [[Función de probabilidad|función de probabilidad]], podemos plantear $$ p_X(B) = \sum_{x \in B} p_X(x) $$
+Sea $X$ una variable aleatoria discreta, entonces usando la [[Función de masa de probabilidad|función de probabilidad]], podemos plantear $$ p_X(B) = \sum_{x \in B} p_X(x) $$

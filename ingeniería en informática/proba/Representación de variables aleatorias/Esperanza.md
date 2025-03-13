@@ -22,7 +22,7 @@ Dado una función de variable aleatoria $h(X)$ cualquiera
 
 ### Para variable discreta
 ---
-Sea $X$ una [[Variable aleatoria discreta|variable aleatoria discreta]] con [[Función de probabilidad|función de probabilidad]] $p_X(x)$, el valor esperado (o media) de $X$ es $$ E[h(X)] = \sum_{x \in R_X} h(x) \cdot p_X(x) $$ donde $R_X$ es el [[Rango de una variable aleatoria|rango]]
+Sea $X$ una [[Variable aleatoria discreta|variable aleatoria discreta]] con [[Función de masa de probabilidad|función de probabilidad]] $p_X(x)$, el valor esperado (o media) de $X$ es $$ E[h(X)] = \sum_{x \in R_X} h(x) \cdot p_X(x) $$ donde $R_X$ es el [[Rango de una variable aleatoria|rango]]
 
 ### Para variable continua
 ---

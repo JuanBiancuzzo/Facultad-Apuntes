@@ -9,7 +9,7 @@ tipoDistribucion: discreta
 ---
 # Definición
 ---
-Se dice que una [[Variable aleatoria]] $X$ tiene distribución de Poisson de parámetro $\mu$ si su [[Función de probabilidad]] es $$ p_X(x) = \frac{1}{x!} \cdot \mu^x \cdot e^{-\mu}$$
+Se dice que una [[Variable aleatoria]] $X$ tiene distribución de Poisson de parámetro $\mu$ si su [[Función de masa de probabilidad]] es $$ p_X(x) = \frac{1}{x!} \cdot \mu^x \cdot e^{-\mu}$$
 ### Notación
 $$ X \sim Poi(\mu) $$
 

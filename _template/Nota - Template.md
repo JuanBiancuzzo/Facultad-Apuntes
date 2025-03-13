@@ -12,7 +12,7 @@
         },
         coleccion: {
             estructuraDatos: tp.user.estructuraDeDatos().crear.bind(null, tp),
-            libreriaFunciones: tp.user.libreriaFunciones().crear.bind(null, tp),
+            libreriaFunciones: tp.user.libreriaFunciones().crear.funcion.bind(null, tp),
             libro: tp.user.libro(tp).crear.bind(null, seguidorRef),
             paper: tp.user.paper(tp).crear.bind(null, seguidorRef),
             componente: tp.user.componente().crear.bind(null, tp),

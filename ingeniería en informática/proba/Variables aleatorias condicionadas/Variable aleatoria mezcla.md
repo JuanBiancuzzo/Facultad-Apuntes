@@ -15,7 +15,7 @@ El calculo de la [[Esperanza|esperanza]] esta dado por $$ E[X] = \sum_{m \in R_M
 
 ## Con una variable aleatoria discreta
 ---
-* Entonces la [[Función de probabilidad|función de probabilidad]] se puede calcular como $$ p_X(x) = \sum_{m \in R_M} p_{X | M = m}(x) \cdot \mathbb{P}(M = m) $$ donde se usa una [[Variable discreta condicional|variable discreta condicional]]
+* Entonces la [[Función de masa de probabilidad|función de probabilidad]] se puede calcular como $$ p_X(x) = \sum_{m \in R_M} p_{X | M = m}(x) \cdot \mathbb{P}(M = m) $$ donde se usa una [[Variable discreta condicional|variable discreta condicional]]
 
 ## Con una variable aleatoria continua
 ---

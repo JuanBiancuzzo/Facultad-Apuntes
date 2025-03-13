@@ -11,7 +11,7 @@ tipoDistribucion: discreta
 ---
 Hipergeométrica modela la cantidad de éxitos en $n$ extracciones sin reposición de una población de tamaño total $N$, de los cuales $d$ individuos son éxito y $N - d$ individuos no lo son.
 
-Se dice que una [[Variable aleatoria]] $X$ tiene distribución Hipergeométrica de parametros $N$, $d$ y $n$ si su [[Función de probabilidad]] es $$ p_X(x) = \frac{\dbinom{d}{x} \dbinom{N - d}{n - x}}{\dbinom{N}{n}} $$
+Se dice que una [[Variable aleatoria]] $X$ tiene distribución Hipergeométrica de parametros $N$, $d$ y $n$ si su [[Función de masa de probabilidad]] es $$ p_X(x) = \frac{\dbinom{d}{x} \dbinom{N - d}{n - x}}{\dbinom{N}{n}} $$
 
 ### Notación
 $$ X \sim H(N, d, n) $$

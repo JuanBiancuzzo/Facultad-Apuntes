@@ -903,6 +903,56 @@
                 }
               },
               {
+                "id": "730be93035254a9c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Resumen"
+                }
+              },
+              {
+                "id": "a91bf40954d0753c",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "colección/libros/Probability, Random Variables and Stochastic Processes de Papoulis Athanasios, Pillai S. Unnikrishna.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "lucide-file",
+                  "title": "Probability, Random Variables and Stochastic Processes de Papoulis Athanasios, Pillai S. Unnikrishna"
+                }
+              },
+              {
                 "id": "7bf8f46d8abd7581",
                 "type": "leaf",
                 "pinned": true,
@@ -1006,7 +1056,8 @@
                   "title": "Digital Signal Processing de Proakis John, Manolakis Dimitris"
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -1187,8 +1238,8 @@
           "cmdr:Load workspace": false
         }
       },
-      "active": "9fe686856cb889a6",
-      "mtime": "2025-03-12T09:39:11-03:00"
+      "active": "730be93035254a9c",
+      "mtime": "2025-03-13T17:35:12-03:00"
     },
     "TPP": {
       "main": {
@@ -1420,5 +1471,5 @@
       "mtime": "2025-03-12T09:39:42-03:00"
     }
   },
-  "active": "TPP"
+  "active": "Estoca"
 }

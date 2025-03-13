@@ -15,7 +15,7 @@ aliases:
 ---
 Dado un [[Paquete|mensaje]], cuanta información útil estoy dando. La cantidad de bit's necesarios para ser eficiente, cumple esta formula
 $$ bits = - \log_2(P) $$
-Donde $P$ es la [[Calculo de probabilidad|probabilidad]] de que ocurra lo que estamos mandando.
+Donde $P$ es la [[Probabilidad|probabilidad]] de que ocurra lo que estamos mandando.
 
 La lógica es que cuando un [[Evento|evento]] es muy probable que ocurra, queremos optimizar la cantidad de bits que mandemos, mientras que para los eventos muy improbables mandaremos más bits ya que estamos mandando más información
 

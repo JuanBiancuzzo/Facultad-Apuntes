@@ -13,7 +13,7 @@ tipoDistribucion: discreta
 ---
 Bernoulli modela un experimento con dos resultados posibles, asignado el valor $1$ a la ocurrencia del [[Evento|evento]] estudiado (que en general se lo llama éxito y tiene probabilidad $p$) y $0$ a la no ocurrencia del mismo (con probabilidad $1 - p$).
 
-Se dice que una [[Variable aleatoria|variable aleatoria]] $X$ tiene distribución de Bernoulli de parámetro $p$ si su [[Función de probabilidad|función de probabilidad]] es $$ p_X(x) = p^x \cdot (1 - p)^{1 - x}$$
+Se dice que una [[Variable aleatoria|variable aleatoria]] $X$ tiene distribución de Bernoulli de parámetro $p$ si su [[Función de masa de probabilidad|función de probabilidad]] es $$ p_X(x) = p^x \cdot (1 - p)^{1 - x}$$
 ### Notación
 $$ X \sim Ber(p) $$
 

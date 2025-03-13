@@ -11,7 +11,7 @@ Dado una [[Función de variable aleatoria#Para Vector aleatorio|función de un v
 
 ## Con variable discreta
 ---
-Sean $X$, $Y$ [[Variable aleatoria discreta|variable aleatoria discreta]], con [[Función de probabilidad|función de probabilidad]] $p_{X, Y}(x, y)$ el valor medio de $X$, $Y$ es $$ E[h(X, Y)] = \sum_x \sum_y h(x, y) \cdot p_{X, Y}(x, y) = \sum_{(x, y) \in R_{X, Y}} h(x, y) \cdot p_{X, Y}(x, y) $$ donde $x$ e $y$ están en [[Rango de un vector|rango de un vector]]
+Sean $X$, $Y$ [[Variable aleatoria discreta|variable aleatoria discreta]], con [[Función de masa de probabilidad|función de probabilidad]] $p_{X, Y}(x, y)$ el valor medio de $X$, $Y$ es $$ E[h(X, Y)] = \sum_x \sum_y h(x, y) \cdot p_{X, Y}(x, y) = \sum_{(x, y) \in R_{X, Y}} h(x, y) \cdot p_{X, Y}(x, y) $$ donde $x$ e $y$ están en [[Rango de un vector|rango de un vector]]
 
 ## Con variable continua
 ---

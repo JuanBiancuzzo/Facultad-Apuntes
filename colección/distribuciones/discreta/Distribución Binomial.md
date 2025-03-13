@@ -11,7 +11,7 @@ tipoDistribucion: discreta
 ---
 Binomial modela la cantidad de éxitos obtenidos al repetir $n$ veces de forma independiente un experimento de Bernoulli con probabilidad $p$ de éxito.
 
-Se dice que una [[Variable aleatoria]] $X$ tiene distribución Binomial de parámetros $n$ y $p$ si su [[Función de probabilidad]] es $$ p_X(x) = \dbinom{n}{x} \cdot p^x \cdot (1 - p)^{n - x} $$
+Se dice que una [[Variable aleatoria]] $X$ tiene distribución Binomial de parámetros $n$ y $p$ si su [[Función de masa de probabilidad]] es $$ p_X(x) = \dbinom{n}{x} \cdot p^x \cdot (1 - p)^{n - x} $$
 ### Notación
 $$ X \sim B(n, p) $$
 
