@@ -1,19 +1,99 @@
-const LENGUAJE = "Lenguaje";
-const LIBRERIA = "Libreria";
-const MODULO = "modulo";
-const FUNCION = "funcion";
+/*
+    Tenemos que elegir en donde se va a crear lo que se quiere crear
+    Tenemos que elegir el tipo de lo que se quiere crear
+        * Funcion
+        * Clase
+        * Struct
+        * Interfaz
+        * Enum
+    Agarrar esa informacion, y crear todo lo que sea necesario, desde
+        la libreria, modulo/s y estructura
+*/
+class Libreria {
+    constructor(tp) {
+        const { SIMBOLOS, DATOS: { FUNCIONES: DATOS_FUNCIONES } } = tp.user.constantes();
 
-const AGREGAR = "agregar";
-const SALIR = "salir";
+        this.simbolos = SIMBOLOS;
+        this.tagPorNombre = tp.user.tagPorNombre;
+        this.config = DATOS_FUNCIONES;
+        this.tipos = DATOS_FUNCIONES.tipoDeDato.tipo;
 
+        this.ubicacion = {
+            lenguaje: null,
+            libreria: null,
+            modulo: null,
+        };
+        this.tipoEstructura = null;
+        this.estructura = null;
 
-function obtenerDefault(tp, TIPOS_DE_DEFAULT, crearFuncion) {
-    return crearFuncion(TIPOS_DE_DEFAULT.diccionario, () => ({
-        [LENGUAJE]: TIPOS_DE_DEFAULT.simple,
-        [LIBRERIA]: TIPOS_DE_DEFAULT.simple,
-        [MODULO]: TIPOS_DE_DEFAULT.simple,
-        [FUNCION]: tp.user.funcion().obtenerDefault(tp, null, TIPOS_DE_DEFAULT, crearFuncion),
-    }));
+        this.crearUbicacion = {
+            nuevaLenguaje() {},
+            nuevaLibreria() {},
+            nuevoModulo() {},
+        };
+
+        this.crearEstructura = {
+            nuevaFuncion(manejador, lenguaje)   { return tp.user.funcion(tp, manejador, lenguaje); },
+            nuevaClase(manejador, lenguaje)     { return tp.user.clase(tp, manejador, lenguaje); },
+            nuevoStruct(manejador, lenguaje)    { return tp.user.struct(tp, manejador, lenguaje); },
+            nuevaInterfaz(manejador, lenguaje)  { return tp.user.interfaz(tp, manejador, lenguaje); },
+            nuevoEnum(manejador, lenguaje)      { return tp.user.enum(tp, manejador, lenguaje); },
+        };
+    }
+
+    async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
+
+    }
+
+    generarPreguntas() {
+
+    }
+
+    generarRepresentacion(tipo) {
+        switch (tipo) {
+            case this.tipos.lenguaje:
+                return this.ubicacion.lenguaje?.generarRepresentacion();
+
+            case this.tipos.libreria:
+                return this.ubicacion.libreria?.generarRepresentacion();
+
+            case this.tipos.modulo:
+                return this.ubicacion.modulo?.generarRepresentacion();
+
+            case this.tipos.funcion:
+            case this.tipos.clase:
+            case this.tipos.struct:
+            case this.tipos.interfaz:
+            case this.tipos.enum:
+                return this.estructura?.generarRepresentacion();
+            
+            default:
+                return {};
+        }
+    }
+
+    esValido() {
+        if (!this.ubicacion.lenguaje || !this.ubicacion.lenguaje.esValido())
+            return false;
+
+        if (!this.ubicacion.libreria || !this.ubicacion.libreria.esValido())
+            return false;
+
+        if (this.ubicacion.modulo && !this.ubicacion.modulo.esValido())
+            return false;
+
+        switch (this.tipoEstructura) {
+            case this.tipos.funcion:
+            case this.tipos.clase:
+            case this.tipos.struct:
+            case this.tipos.interfaz:
+            case this.tipos.enum:
+                return this.estructura.esValido();
+            
+            default:
+                return true;
+        }
+    }
 }
 
 async function actualizarDatos(tp, datos, respuesta) {

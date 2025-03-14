@@ -536,21 +536,17 @@ module.exports = () => ({
         },
         FUNCIONES: {
             lenguaje: {
-                tags: "tags",
                 nombre: "nombreLenguaje",
                 tiposPrimitivos: "tiposDeDatosPrimitivos",
                 temaInvestigacion: "temaInvestigacion",
-                obtenerTitulo: (lenguaje) => `Librerías del lenguaje de ${lenguaje}`,
             },
             libreria: {
-                tags: "tags",
                 nombre: "nombreLibreria",
-                obtenerTitulo: (lenguaje, libreria) => `Librería ${libreria} de ${lenguaje}`,
+                lenguaje: "lenguaje",
             },
             modulo: {
-                tags: "tags",
                 nombre: "nombreModulo",
-                obtenerTitulo: (lenguaje, libreria, modulo) => `Módulo ${modulo} de la librería ${libreria} en ${lenguaje}`,
+                libreria: "libreria",
             },
             funcion: {
                 nombreFuncion: "nombre",
@@ -621,6 +617,9 @@ module.exports = () => ({
                     referencia: "Referencia",
                     union: "Union",
                     funcion: "Funcion",
+                    lenguaje: "Lenguaje",
+                    libreria: "Libreria", 
+                    modulo: "Modulo",
                     proxy: "Proxeado",
                 },
             },
