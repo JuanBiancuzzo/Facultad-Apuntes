@@ -113,8 +113,13 @@ aliases:
 
 ## Capítulo 1: An Overview and Brief History of Feedback Control
 ---
+Inicialmente describimos una clasificación para los [[Sistema|sistemas]] de control
+* [[Controlador open-loop|Open-loop control]]
+* [[Controlador closed-loop|Closed-loop control]]
 
-
+Como mencionar algunos sistemas como
+* [[Sistema regulador|Regulador]]
+* [[Tracking system|Tracking system]]
 
 ## Capítulo 2: Dynamic Models
 ---

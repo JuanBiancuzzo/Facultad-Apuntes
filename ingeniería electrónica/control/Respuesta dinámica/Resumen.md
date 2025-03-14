@@ -4,6 +4,12 @@ tags:
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
 nombreResumen: Respuesta dinámica
 capitulo: 1
+referencias:
+  - "898"
+  - "899"
+  - "871"
+  - "872"
+etapa: sin-empezar
 ---
 # Índice
 ---

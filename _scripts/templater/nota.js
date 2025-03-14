@@ -63,12 +63,12 @@ async function preguntarReferenciasUsar(tp, referenciasUsar) {
 
     referenciasUsar = referencia.obtenerReferencias(tp)
         .flatMap(datosReferencia => {
-            let datos = referenciasUsar.find(([num, _]) => num == datosReferencia[DATOS_REFERENCIA.numReferencia]);
+            let datos = referenciasUsar.find(([num, _]) => num == datosReferencia.obtenerNumReferencia());
             if (!datos) return [];
 
             return [{ numero: datos[0], usado: datos[1], datos: datosReferencia }];
         })
-        .sort(({ numReferencia }) => numReferencia);
+        .sort(({ numero }) => numero);
 
     referenciasUsar = await tp.user.crearPreguntas(
         tp, (TIPOS_DE_DEFAULT, crearFuncion) => crearFuncion(TIPOS_DE_DEFAULT.array, () => {
@@ -90,7 +90,7 @@ async function preguntarReferenciasUsar(tp, referenciasUsar) {
             for (let { numero, datos: datosReferencia, usado } of datos) {
                 opciones.push(numero);
                 let estado = usado ? SIMBOLOS.sacar : SIMBOLOS.agregar;
-                valores.push(` ${estado} ${referencia.describir(tp, datosReferencia)}`);
+                valores.push(` ${estado} ${datosReferencia.describir()}`);
             }
 
             opciones.push(SALIR);
@@ -199,8 +199,8 @@ async function crearNotaFacultad(tp) {
         throw error.Quit(ERROR_EXISTE_ARCHIVO);
     }
 
-    let referenciasResumen = resumen[DATOS_RESUMEN.referencias]
-        ? resumen[DATOS_RESUMEN.referencias].map(num => parseInt(num, 10))
+    let referenciasResumen = resumen[DATOS_ARCHIVO.referencias]
+        ? resumen[DATOS_ARCHIVO.referencias].map(num => parseInt(num, 10))
         : [];
     let referenciasUsar = await preguntarReferenciasUsar(tp, referenciasResumen);
 
@@ -302,8 +302,8 @@ async function crearNotaCurso(tp) {
         throw error.Quit(ERROR_EXISTE_ARCHIVO);
     }
 
-    let referenciasResumen = resumen[DATOS_RESUMEN.referencias]
-        ? resumen[DATOS_RESUMEN.referencias].map(num => parseInt(num, 10))
+    let referenciasResumen = resumen[DATOS_ARCHIVO.referencias]
+        ? resumen[DATOS_ARCHIVO.referencias].map(num => parseInt(num, 10))
         : dv.array([]);
     referenciasResumen.values.push([resumen[DATOS_REFERENCIA.numReferencia], true]);
 

@@ -5,14 +5,24 @@ tags:
   - nota/facultad
   - carrera/ingeniería-en-informática/aninfo/Diseño-de-software
   - carrera/ingeniería-en-informática/concurrentes/Introducción
+  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
 referencias:
   - "789"
+  - "871"
 etapa: ampliar
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
 ```
-# Algunas definiciones
+# Definición
+---
+Tenemos múltiples definiciones dependiendo del área
+
+## En teoría de control
+---
+El componente central de un [[Controlador closed-loop|sistema feedback]] es el proceso, el cual su salida es controlada
+
+## En ciencia de computación
 ---
 "Es un conjunto de actividades que transforma una entrada en una salida y que consume recursos. También se lo puede definir como un programa en ejecución con derechos restringidos."
 
@@ -20,7 +30,7 @@ etapa: ampliar
 
 "Es simplemente un [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] que se está ejecutando en un instante dado"
 
-## Un proceso incluye
+### Un proceso incluye
 ---
 * Los [[Archivo|archivos]] abiertos
 * Las señales pendientes
@@ -31,7 +41,7 @@ etapa: ampliar
     * Esto incluye la memoria que usa como donde están el código del mismo proceso
 * Uno o más [[Thread|hijos de ejecución]]
 
-## API's
+### API's
 ---
 Las acciones básicas que todo [[Sistema operativo|SO]] debe proveer sobre la [[Virtualización del procesador|abstracción de la CPU]]
 * Creación (Create):
@@ -45,7 +55,7 @@ Las acciones básicas que todo [[Sistema operativo|SO]] debe proveer sobre la [[
 * Estado (Status):
 	* Tiene que existir una forma de saber sobre la situación del proceso y su [[Estados de un proceso|estado]]. Cuánto hace que se está ejecutando, en que estado se encuentra, etc.
 
-## Contexto de un proceso
+### Contexto de un proceso
 ---
 ![[Contexto del proceso#Definición]]
 

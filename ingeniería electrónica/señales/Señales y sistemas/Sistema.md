@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/señales/Señales-y-sistemas
   - nota/facultad
   - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
+  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
 ---
 # Definición
 ---

@@ -49,7 +49,7 @@ Sea entonces $F = \lim_{n \to \infty} \frac{F_{n + 1}}{F_n}$. Se observa que $F 
      &= 1 + \lim_{n \to \infty} \frac{F_{n - 1}}{F_n} \\
      &= 1 + \frac{1}{F}
 \end{align} $$
-Por lo tanto el [[Límite|límite]] $F$ satisface la ecuación $F = 1 + \frac{1}{F}$, o equivalentemente la ecuación $F^2 = F + 1$. Se concluye que $F = \Psi$, ya que es la raíz $\ge 1$ del [[Función polinomica|polinomio]]
+Por lo tanto el [[Límite|límite]] $F$ satisface la ecuación $F = 1 + \frac{1}{F}$, o equivalentemente la ecuación $F^2 = F + 1$. Se concluye que $F = \Psi$, ya que es la raíz $\ge 1$ del [[Función polinómica|polinomio]]
 
 # Referencias
 ---

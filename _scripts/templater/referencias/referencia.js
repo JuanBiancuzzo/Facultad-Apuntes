@@ -92,7 +92,6 @@ function obtenerReferencias(tp, dv = null) {
 
 function archivoReferencia(tp, numReferenciaBuscado) {
     const { TAGS, DATOS: { REFERENCIAS: DATOS_REFERENCIA } } = tp.user.constantes();
-    const error = tp.user.error();
     const dv = app.plugins.plugins.dataview.api;
 
     return dv.pages(`#${TAGS.referencias}`)

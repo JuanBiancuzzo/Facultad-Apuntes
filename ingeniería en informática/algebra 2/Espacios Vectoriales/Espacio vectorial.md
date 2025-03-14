@@ -22,4 +22,4 @@ Lo podremos escribir como $(\mathbb{V}, +, \mathbb{K}, \cdot)$ es un $\mathbb{K}
   
 * Sea $L_2(B)$ con $B \subset \mathbb{R}$ el espacio de las [[Señal|señales]] $f : B \to \mathbb{C}$ tales que $$ \int_B | f(t) |^2 dt < \infty $$
 * Sea $l^2(\mathbb{Z})$ el espacio de las señales de tiempo discreto $x[n] : \mathbb{Z} \to \mathbb{C}$ tales que $$ \sum_{n = -\infty}^{\infty} | x[n] | ^2 $$
-* Sea $\mathbb{P}(n)$ el conjunto de los [[Función polinomica|polinomios]] de grado menor o igual a $n$.
+* Sea $\mathbb{P}(n)$ el conjunto de los [[Función polinómica|polinomios]] de grado menor o igual a $n$.

@@ -12,7 +12,7 @@ Notemos que la matriz de adyacencia depende del etiquetado de sus [[Nodo|vértic
 
 Si dos matrices son semejantes, comparten el mismo espectro. Además, una matriz simétrica es semejante a su matriz diagonal $$ G \sim H \iff A_G \sim A_H $$
 La suma de autovalores de la matriz de adyacencia será, por ser cuadrada, la traza de la misma $$ \sum_{k = 1}^{n} \lambda_k = 0 $$
-Recordemos también que sea $p$ un [[Función polinomica|polinomio]] y $P$, su polinomio de matrices asociado, entonces si $\lambda$ es [[Autovalor|autovalor]] de $A$, $p(\lambda)$ es autovalor de $P(A)$. Esto implica que si $\lambda$ es autovalor de $A$, $\lambda^n$ es autovalor de $A^n$
+Recordemos también que sea $p$ un [[Función polinómica|polinomio]] y $P$, su polinomio de matrices asociado, entonces si $\lambda$ es [[Autovalor|autovalor]] de $A$, $p(\lambda)$ es autovalor de $P(A)$. Esto implica que si $\lambda$ es autovalor de $A$, $\lambda^n$ es autovalor de $A^n$
 
 Luego, la suma de los autovalores de $A^n$ es la suma de [[Camino#Ciclo (Cicle)|ciclos]] de [[Longitud de un camino|longitud]] dos, cada uno contado dos veces $$ \sum_{k = 1}^{n} \lambda_k^2 = 2m $$
 De igual forma, la suma de los autovalores de $A^3$ es la suma de triángulos, cada uno se cuenta tres veces (una por cada vértice), y cada uno tiene dos orientaciones, luego cada uno se cuenta 6 veces, entonces sea $\tau$ la cantidad de triángulos en $G$ $$ \sum_{k=1}^n \lambda_k^3 = 6\tau $$

@@ -13,7 +13,7 @@ Se puede definir la transferencia de un [[Sistema lineal e invariante en el tiem
 Usando la [[Transformada de Laplace|transformada de Laplace]] de la función de transferencia $H(s)$, (notemos que se puede hacer lo mismo en estos casos para la [[Transformada de Fourier|transformada de Fourier]]) es el cociente del [[Fasor|fasor]], que depende en [[Función periódica#Frecuencia|frecuencia]], de salida $Y(s)$ y el fasor de entrada $X(s)$, suponiendo que todas las condiciones iniciales son nulas $$ H(s) = \frac{Y(s)}{X(s)} $$
 Notemos que usando la [[Transformada de Fourier#Convolución|propiedad de convolución]] de la transformada, y la definición mencionada anteriormente $$ Y(s) = H(s) ~ X(s) $$
 
-Esta función también se puede expresar como un cociente de [[Función polinomica|polinomios]] $$ H(s) = \frac{N(s)}{D(s)} $$
+Esta función también se puede expresar como un cociente de [[Función polinómica|polinomios]] $$ H(s) = \frac{N(s)}{D(s)} $$
 Un cero, como una raíz del polinomio del numerador, es un valor que produce un valor cero en la función. Un [[Singularidad|polo]], como una raíz del polinomio del denominador, es un valor para el cual la función tiende a infinito.
 
 Si expresamos a la función de transferencia como el cociente de dos polinomios factorizados, entonces obtenemos $$ H(s) = K ~

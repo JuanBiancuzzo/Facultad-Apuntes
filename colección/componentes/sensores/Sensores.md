@@ -7,6 +7,8 @@ tags:
   - nota/investigacion
   - investigación/electrónica/componentes/sensor
   - carrera/ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
+  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
+  - bloque-matematica/Números-enteros/Divisibilidad
 referencias:
   - "241"
   - "254"

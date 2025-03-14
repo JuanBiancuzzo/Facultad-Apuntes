@@ -403,9 +403,6 @@ async function agregarDatos(tp, datos) {
 }
 
 module.exports = () => ({
-    obtenerDefault: obtenerDefault,
-    actualizarDatos: actualizarDatos,
-    generarPreguntas: generarPreguntas,
     crear: {
         funcion: crearNuevaFuncion,
         libreria: crearLibreria,

@@ -49,9 +49,9 @@
       "mode": "any"
     },
     {
-      "id": "workspaces:load",
+      "id": "workspaces:save-and-load",
       "icon": "lucide-layout",
-      "name": "Load workspace",
+      "name": "Workspaces: Save and load another layout",
       "mode": "any"
     }
   ],
@@ -99,7 +99,8 @@
       "Open Mermaid Toolbar",
       "Open homepage",
       "Templater",
-      "Omnisearch"
+      "Omnisearch",
+      "Open Git source control"
     ]
   },
   "spacing": "8",

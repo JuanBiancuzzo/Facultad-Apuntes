@@ -7,7 +7,7 @@ tags:
 ---
 # Definición
 ---
-Una función racional es un cociente de las funciónes $P$ y $Q$ donde $P$ y $Q$ son [[Función polinomica]] y $Q$ no es el polinomio nulo.
+Una función racional es un cociente de las funciónes $P$ y $Q$ donde $P$ y $Q$ son [[Función polinómica]] y $Q$ no es el polinomio nulo.
 
 Se puede pensar como la multiplicación de $P$ con la composición de la [[Función inversión]] con $Q$, es decir $\frac{P}{Q} = P \cdot (J \circ Q)$ 
 

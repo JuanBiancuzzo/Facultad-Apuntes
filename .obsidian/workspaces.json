@@ -263,6 +263,30 @@
                 }
               },
               {
+                "id": "a0c1b8a9aec7f246",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/control/Respuesta dinámica/Resumen.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Resumen"
+                }
+              },
+              {
                 "id": "99ab3cd1adc206a7",
                 "type": "leaf",
                 "pinned": true,
@@ -366,7 +390,8 @@
                   "title": "Control Systems Engineering de Norman S. Nise"
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -421,8 +446,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 330.50499725341797,
-        "collapsed": true
+        "width": 330.50499725341797
       },
       "right": {
         "id": "3bf298dcb9f1081b",
@@ -541,8 +565,6 @@
       },
       "left-ribbon": {
         "hiddenItems": {
-          "switcher:Open quick switcher": false,
-          "workspaces:Manage workspace layouts": true,
           "graph:Open graph view": true,
           "canvas:Create new canvas": true,
           "templates:Insert template": true,
@@ -550,17 +572,17 @@
           "templater-obsidian:Templater": true,
           "obsidian-git:Open Git source control": true,
           "callout-manager:Insert Callout": true,
+          "cmdr:Referencia": false,
           "cmdr:Materia facultad": false,
-          "cmdr:Nuevo tema de investigación": false,
           "cmdr:Nuevo curso": false,
+          "cmdr:Nuevo tema de investigación": false,
           "cmdr:Nuevo Proyecto": false,
           "cmdr:Agregar elemento de colección": false,
-          "cmdr:Referencia": false,
-          "cmdr:Load workspace": false
+          "cmdr:Workspaces: Save and load another layout": false
         }
       },
-      "active": "e46459332fd19a9e",
-      "mtime": "2025-03-12T09:38:33-03:00"
+      "active": "a0c1b8a9aec7f246",
+      "mtime": "2025-03-14T09:31:38-03:00"
     },
     "Circuitos 2": {
       "main": {

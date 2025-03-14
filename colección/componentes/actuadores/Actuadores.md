@@ -6,8 +6,12 @@ tags:
   - investigación/índice
   - nota/investigacion
   - investigación/electrónica/componentes/actuadores
+  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
 aliases:
   - Actuador
+  - Actuator
+referencias:
+  - "871"
 ---
 # ¿Qué se va a investigar?
 ---
@@ -15,7 +19,7 @@ Vamos a registrar todos los actuadores que vayamos usando a lo largo de las carr
 
 ## Resumen
 ---
-%% Hacer cuadro representativo de los temas %%
+Un actuador es un dispositivo que puede influenciar una variable controlada de un [[Proceso|proceso]]
 
 ## Componentes
 ---
