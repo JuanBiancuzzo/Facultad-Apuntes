@@ -15,10 +15,10 @@ const CANTIDAD_MINIMA_METODOS = 0;
 const CANTIDAD_MINIMA_VARIABLE_ESTATICAS = 0;
 const CANTIDAD_MINIMA_GENERICOS = 0;
 
-const SALIR = "salir";
-
 class TipoClase {
     constructor(tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
+        if (!representacionPrevia) representacionPrevia = {};
+
         const { 
             SIMBOLOS, DATOS: { 
                 FUNCIONES: { 

@@ -1,4 +1,7 @@
 class Libreria {
+    constructor(tp, lenguajePadre, representacionPrevia) {
+
+    }
     
     obtenerModulosDisponibles() {
 

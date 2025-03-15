@@ -48,12 +48,6 @@ class Libreria {
         this.libreria = null;
         this.modulo = null;
 
-        this.crearUbicacion = {
-            nuevoLenguaje:  tp.user.lenguaje.clase.bind(null, tp),
-            nuevaLibreria:  tp.user.libreria.clase.bind(null, tp),
-            nuevoModulo:    tp.user.modulo.clase.bind(null, tp),
-        };
-
         this.crearEstructura = {
             nuevaFuncion:   tp.user.funcion.clase.bind(null, tp),
             nuevaClase:     tp.user.clase.clase.bind(null, tp),
@@ -96,7 +90,10 @@ class Libreria {
             case MODIFICAR_TIPO_ESTRUCTURA:
             case ELEGIR_TIPO_ESTRUCTURA:
                 let nuevoTipoEstructura = await generarPreguntas.suggester(
-
+                    (tipo) => ` ${this.simbolos.elegir} ${tipo}`,
+                    [ this.tipos.funcion, this.tipos.clase, this.tipos.struct, this.tipos.interfaz, this.tipos.enum ],
+                    "Que tipo de estructura se quiere crear?",
+                    generarError.Quit("No se eligió la estructura a crear")
                 );
 
                 if (this.tipoEstructura == nuevoTipoEstructura) 
