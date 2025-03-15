@@ -3,21 +3,10 @@ const SALIR = "salir";
 
 function archivoDeNotaIgual(tp, tArchivo, titulo) {
     let posibleArchivo = tp.file.find_tfile(titulo);
-    if (!posibleArchivo || posibleArchivo.stat.ctime == tArchivo.stat.ctime) return null;
 
-    const { DATOS: { ARCHIVO: DATOS_ARCHIVO } } = tp.user.constantes();
-    const dv = app.plugins.plugins.dataview.api;
-    let archivoExistente = dv.page(`${posibleArchivo.parent.path}/${posibleArchivo.basename}`);
-
-    if (!archivoExistente[DATOS_ARCHIVO.tags] || archivoExistente[DATOS_ARCHIVO.tags].length == 0)
-        return null;
-
-    let tagsSecciones = tp.user.tagsSeccion(tp);
-
-    if (archivoExistente[DATOS_ARCHIVO.tags].every(tag => !tagsSecciones.includes(tag)))
-        return null;
-
-    return posibleArchivo;
+    return posibleArchivo && posibleArchivo.stat.ctime != tArchivo.stat.ctime
+        ? posibleArchivo
+        : null; 
 }
 
 async function abrirArchivoAgregandoTags(tp, tArchivo, tagsAAgregar = []) {

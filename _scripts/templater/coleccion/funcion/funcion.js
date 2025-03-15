@@ -5,8 +5,6 @@ const MODIFICAR_RETURN = "modificar return";
 
 const CANTIDAD_MINIMA = 0;
 
-const SALIR = "salir";
-
 class Funcion {
     constructor(tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
         const { 
@@ -292,4 +290,66 @@ class Funcion {
     }
 }
 
-module.exports = (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new Funcion(tp, manejoTipoDeDatos, lenguaje, representacionPrevia);
+async function crearFuncion(tp) {
+    const { 
+        DIRECTORIOS: { coleccion: { self: DIRECTORIO_COLECCION, funciones: DIRECTORIO_FUNCIONES } },
+        TAGS: { coleccion: { self: TAG_COLECCION, funciones: TAGS_FUNCIONES }, nota: TAGS_NOTA },
+        DATOS: { INVESTIGACION: DATOS_INVESTIGACION, FUNCIONES: DATOS_FUNCIONES },
+    } = tp.user.constantes();
+    const tagPorNombre = tp.user.tagPorNombre;
+
+    const dv = app.plugins.plugins.dataview.api;
+
+    let resultado = await tp.user.crearPreguntas(
+        tp, obtenerDefault.bind(null, tp), 
+        actualizarDatos, generarPreguntas, "Agregar función",
+    );
+
+    await agregarDatos(tp, resultado);
+
+    let nombreArchivo = `Función ${resultado[FUNCION][DATOS_FUNCIONES.funcion.firma.nombreFuncion]}`
+    let tagPath = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[resultado[LENGUAJE]]}`;
+    let dvLenguaje = dv.pages(`#${tagPath} and #${TAG_COLECCION}/${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes.self}`)
+        .first();
+    dvLenguaje = dv.page(dvLenguaje[DATOS_FUNCIONES.lenguaje.temaInvestigacion].path);
+    let tagsInvestigacion = tp.user.obtenerTag(tp, dvLenguaje[DATOS_INVESTIGACION.tags])
+        .map(tag => `${tag}/${TAGS_FUNCIONES.lenguajes[resultado[LENGUAJE]]}`);
+
+    let carpeta = `${DIRECTORIO_COLECCION}/${DIRECTORIO_FUNCIONES.self}/${DIRECTORIO_FUNCIONES[resultado[LENGUAJE]]}`;
+
+    carpeta += `/${resultado[LIBRERIA]}`;
+    tagPath += `/${tagPorNombre(resultado[LIBRERIA])}`;
+    tagsInvestigacion = tagsInvestigacion
+        .map(tag => `${tag}/${tagPorNombre(resultado[LIBRERIA])}`);
+
+    if (resultado[MODULO]) { 
+        nombreArchivo += ` del módulo ${resultado[MODULO]}`;
+        carpeta += `/${resultado[MODULO]}`;
+        tagPath += `/${tagPorNombre(resultado[MODULO])}`;
+        tagsInvestigacion = tagsInvestigacion
+            .map(tag => `${tag}/${tagPorNombre(resultado[MODULO])}`);
+    }
+
+    nombreArchivo += ` de ${resultado[LIBRERIA]} en ${resultado[LENGUAJE]}`;
+    tagPath += `/${tagPorNombre(resultado[FUNCION][DATOS_FUNCIONES.funcion.firma.nombreFuncion])}`;
+
+    return {
+        metadata: {
+            [DATOS_FUNCIONES.funcion.tags]: [
+                tagPath,
+                `${TAG_COLECCION}/${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.funcion}`,
+                ...tagsInvestigacion,
+                `${TAGS_NOTA.self}/${TAGS_NOTA.coleccion}`,
+            ],
+            [DATOS_FUNCIONES.funcion.firma.self]: resultado[FUNCION],
+        },
+        carpeta: carpeta,
+        titulo: nombreArchivo,
+        texto: "",
+    }
+}
+
+module.exports = () => ({
+    clase: (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new Funcion(tp, manejoTipoDeDatos, lenguaje, representacionPrevia),
+    crear: crearFuncion,
+});

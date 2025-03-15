@@ -1391,8 +1391,33 @@
                   "icon": "lucide-file",
                   "title": "Trabajo Profesional de Ingeniería Informática"
                 }
+              },
+              {
+                "id": "b0e0a85d2aa71d68",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería en informática/tpp/Propuesta/Resumen.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Resumen"
+                }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -1567,8 +1592,6 @@
       },
       "left-ribbon": {
         "hiddenItems": {
-          "switcher:Open quick switcher": false,
-          "workspaces:Manage workspace layouts": true,
           "graph:Open graph view": true,
           "canvas:Create new canvas": true,
           "templates:Insert template": true,
@@ -1582,12 +1605,212 @@
           "cmdr:Nuevo Proyecto": false,
           "cmdr:Agregar elemento de colección": false,
           "cmdr:Referencia": false,
-          "cmdr:Load workspace": false
+          "cmdr:Workspaces: Save and load another layout": false
         }
       },
-      "active": "e46459332fd19a9e",
-      "mtime": "2025-03-12T09:39:42-03:00"
+      "active": "b0e0a85d2aa71d68",
+      "mtime": "2025-03-15T10:29:15-03:00"
+    },
+    "Desarrollo": {
+      "main": {
+        "id": "f5ab1d04db1b6d13",
+        "type": "split",
+        "children": [
+          {
+            "id": "1f172aea5b05c70f",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "b8f86165d6d7754a",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "New tab"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "846798510ac9a674",
+        "type": "split",
+        "children": [
+          {
+            "id": "c635826e07162fe2",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "4758c10ce82e9eab",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "640b82a7dfa99277",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "1e39f14ee35d8784",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 330.50499725341797,
+        "collapsed": true
+      },
+      "right": {
+        "id": "3bf298dcb9f1081b",
+        "type": "split",
+        "children": [
+          {
+            "id": "6f578bed393edc47",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "f1644a9f662c2244",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "tag:carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "9fe686856cb889a6",
+                "type": "leaf",
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-file",
+                  "title": "Plugin no longer active"
+                }
+              },
+              {
+                "id": "41a3f6f58104b9b1",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "licenciatura en ciencias matemáticas/algebra 1/Números enteros/Teorema fundamental de la aritmética.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for Teorema fundamental de la aritmética"
+                }
+              },
+              {
+                "id": "57a461fe7ffeb22b",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links"
+                }
+              },
+              {
+                "id": "8ce68be4957a7bb0",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline"
+                }
+              },
+              {
+                "id": "224dda726ce358fa",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "Plugin no longer active"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 416.5,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "graph:Open graph view": true,
+          "canvas:Create new canvas": true,
+          "templates:Insert template": true,
+          "command-palette:Open command palette": true,
+          "templater-obsidian:Templater": true,
+          "obsidian-git:Open Git source control": true,
+          "callout-manager:Insert Callout": true,
+          "cmdr:Materia facultad": false,
+          "cmdr:Nuevo tema de investigación": false,
+          "cmdr:Nuevo curso": false,
+          "cmdr:Nuevo Proyecto": false,
+          "cmdr:Agregar elemento de colección": false,
+          "cmdr:Referencia": false,
+          "cmdr:Workspaces: Save and load another layout": false
+        }
+      },
+      "active": "b8f86165d6d7754a",
+      "mtime": "2025-03-15T12:00:38-03:00"
     }
   },
-  "active": "TPP"
+  "active": "Desarrollo"
 }

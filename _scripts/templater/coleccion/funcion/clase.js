@@ -421,4 +421,11 @@ class TipoClase {
     }
 }
 
-module.exports = (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new TipoClase(tp, manejoTipoDeDatos, lenguaje, representacionPrevia);
+async function crearClase() {
+
+}
+
+module.exports = () => ({
+    clase: (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new TipoClase(tp, manejoTipoDeDatos, lenguaje, representacionPrevia),
+    crear: crearClase
+})
