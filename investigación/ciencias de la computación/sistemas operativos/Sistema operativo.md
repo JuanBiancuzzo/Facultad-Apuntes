@@ -13,7 +13,7 @@ await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current(
 ```
 # ¿Qué se va a investigar?
 ---
-Vamos a investigar como funcione un sistema operativo desde $0$
+Vamos a investigar como funcione un sistema operativo desde $0$, nos vamos a basar en [[POSIX|POSIX]] para entender un sistema operativo
 
 ## Resumen
 ---

@@ -287,6 +287,78 @@
                 }
               },
               {
+                "id": "0577f37c55f46cd7",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/control/Respuesta dinámica/Modelo de dinámicas de la mecánica.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Modelo de dinámicas de la mecánica"
+                }
+              },
+              {
+                "id": "04a35cd584556025",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/control/Respuesta dinámica/Modelo de circuitos eléctricos.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Modelo de circuitos eléctricos"
+                }
+              },
+              {
+                "id": "36e3e0dca4c2b6e7",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/control/Respuesta dinámica/Modelo de electromecánica.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Modelo de electromecánica"
+                }
+              },
+              {
                 "id": "99ab3cd1adc206a7",
                 "type": "leaf",
                 "pinned": true,
@@ -391,311 +463,7 @@
                 }
               }
             ],
-            "currentTab": 1
-          }
-        ],
-        "direction": "vertical"
-      },
-      "left": {
-        "id": "846798510ac9a674",
-        "type": "split",
-        "children": [
-          {
-            "id": "c635826e07162fe2",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "4758c10ce82e9eab",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "alphabetical",
-                    "autoReveal": false
-                  },
-                  "icon": "lucide-folder-closed",
-                  "title": "Files"
-                }
-              },
-              {
-                "id": "640b82a7dfa99277",
-                "type": "leaf",
-                "state": {
-                  "type": "tag",
-                  "state": {
-                    "sortOrder": "alphabetical",
-                    "useHierarchy": true,
-                    "showSearch": false,
-                    "searchQuery": ""
-                  },
-                  "icon": "lucide-tags",
-                  "title": "Tags"
-                }
-              },
-              {
-                "id": "1e39f14ee35d8784",
-                "type": "leaf",
-                "state": {
-                  "type": "bookmarks",
-                  "state": {},
-                  "icon": "lucide-bookmark",
-                  "title": "Bookmarks"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "horizontal",
-        "width": 330.50499725341797
-      },
-      "right": {
-        "id": "3bf298dcb9f1081b",
-        "type": "split",
-        "children": [
-          {
-            "id": "6f578bed393edc47",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "f1644a9f662c2244",
-                "type": "leaf",
-                "state": {
-                  "type": "search",
-                  "state": {
-                    "query": "[\"capítulo\"]",
-                    "matchingCase": false,
-                    "explainSearch": false,
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical"
-                  },
-                  "icon": "lucide-search",
-                  "title": "Search"
-                }
-              },
-              {
-                "id": "9fe686856cb889a6",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "README.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "README"
-                }
-              },
-              {
-                "id": "41a3f6f58104b9b1",
-                "type": "leaf",
-                "state": {
-                  "type": "backlink",
-                  "state": {
-                    "file": "licenciatura en ciencias matemáticas/algebra 1/Números enteros/Teorema fundamental de la aritmética.md",
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical",
-                    "showSearch": false,
-                    "searchQuery": "",
-                    "backlinkCollapsed": false,
-                    "unlinkedCollapsed": true
-                  },
-                  "icon": "links-coming-in",
-                  "title": "Backlinks for Teorema fundamental de la aritmética"
-                }
-              },
-              {
-                "id": "57a461fe7ffeb22b",
-                "type": "leaf",
-                "state": {
-                  "type": "outgoing-link",
-                  "state": {
-                    "file": "README.md",
-                    "linksCollapsed": false,
-                    "unlinkedCollapsed": true
-                  },
-                  "icon": "links-going-out",
-                  "title": "Outgoing links from README"
-                }
-              },
-              {
-                "id": "8ce68be4957a7bb0",
-                "type": "leaf",
-                "state": {
-                  "type": "outline",
-                  "state": {
-                    "file": "README.md",
-                    "followCursor": false,
-                    "showSearch": false,
-                    "searchQuery": ""
-                  },
-                  "icon": "lucide-list",
-                  "title": "Outline of README"
-                }
-              },
-              {
-                "id": "224dda726ce358fa",
-                "type": "leaf",
-                "state": {
-                  "type": "git-view",
-                  "state": {},
-                  "icon": "lucide-file",
-                  "title": "Plugin no longer active"
-                }
-              }
-            ],
-            "currentTab": 1
-          }
-        ],
-        "direction": "horizontal",
-        "width": 416.5,
-        "collapsed": true
-      },
-      "left-ribbon": {
-        "hiddenItems": {
-          "graph:Open graph view": true,
-          "canvas:Create new canvas": true,
-          "templates:Insert template": true,
-          "command-palette:Open command palette": true,
-          "templater-obsidian:Templater": true,
-          "obsidian-git:Open Git source control": true,
-          "callout-manager:Insert Callout": true,
-          "cmdr:Referencia": false,
-          "cmdr:Materia facultad": false,
-          "cmdr:Nuevo curso": false,
-          "cmdr:Nuevo tema de investigación": false,
-          "cmdr:Nuevo Proyecto": false,
-          "cmdr:Agregar elemento de colección": false,
-          "cmdr:Workspaces: Save and load another layout": false
-        }
-      },
-      "active": "a0c1b8a9aec7f246",
-      "mtime": "2025-03-14T09:31:38-03:00"
-    },
-    "Circuitos 2": {
-      "main": {
-        "id": "f5ab1d04db1b6d13",
-        "type": "split",
-        "children": [
-          {
-            "id": "79a3049cc4361914",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "e46459332fd19a9e",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ingeniería electrónica/circuitos 2/Taller de diseño de circuitos electrónicos (TA138).md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Taller de diseño de circuitos electrónicos (TA138)"
-                }
-              },
-              {
-                "id": "74df3d1b14a3e075",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "colección/libros/Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "pinned": true,
-                  "icon": "lucide-file",
-                  "title": "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer"
-                }
-              },
-              {
-                "id": "5ef381d63bc6d071",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "colección/libros/Circuitos Microelectrónicos de Adel S. Sedra, Kenneth C. Smith.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "pinned": true,
-                  "icon": "lucide-file",
-                  "title": "Circuitos Microelectrónicos de Adel S. Sedra, Kenneth C. Smith"
-                }
-              },
-              {
-                "id": "7ce3bb39508b008b",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "colección/libros/Microelectronic Circuits, Analysis & Design de Rashid Mahummad H..md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "pinned": true,
-                  "icon": "lucide-file",
-                  "title": "Microelectronic Circuits, Analysis & Design de Rashid Mahummad H."
-                }
-              }
-            ]
+            "currentTab": 8
           }
         ],
         "direction": "vertical"
@@ -870,8 +638,336 @@
       },
       "left-ribbon": {
         "hiddenItems": {
-          "switcher:Open quick switcher": false,
-          "workspaces:Manage workspace layouts": true,
+          "graph:Open graph view": true,
+          "canvas:Create new canvas": true,
+          "templates:Insert template": true,
+          "command-palette:Open command palette": true,
+          "templater-obsidian:Templater": true,
+          "obsidian-git:Open Git source control": true,
+          "callout-manager:Insert Callout": true,
+          "cmdr:Materia facultad": false,
+          "cmdr:Nuevo curso": false,
+          "cmdr:Nuevo tema de investigación": false,
+          "cmdr:Nuevo Proyecto": false,
+          "cmdr:Agregar elemento de colección": false,
+          "cmdr:Referencia": false,
+          "cmdr:Workspaces: Save and load another layout": false
+        }
+      },
+      "active": "613185ec8627b81c",
+      "mtime": "2025-03-14T19:52:30-03:00"
+    },
+    "Circuitos 2": {
+      "main": {
+        "id": "f5ab1d04db1b6d13",
+        "type": "split",
+        "children": [
+          {
+            "id": "79a3049cc4361914",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "e46459332fd19a9e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/circuitos 2/Taller de diseño de circuitos electrónicos (TA138).md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Taller de diseño de circuitos electrónicos (TA138)"
+                }
+              },
+              {
+                "id": "55ee5ef753ecdff0",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/circuitos 2/Realimentación negativa/Resumen.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Resumen"
+                }
+              },
+              {
+                "id": "74df3d1b14a3e075",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "colección/libros/Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "lucide-file",
+                  "title": "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer"
+                }
+              },
+              {
+                "id": "5ef381d63bc6d071",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "colección/libros/Circuitos Microelectrónicos de Adel S. Sedra, Kenneth C. Smith.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "lucide-file",
+                  "title": "Circuitos Microelectrónicos de Adel S. Sedra, Kenneth C. Smith"
+                }
+              },
+              {
+                "id": "7ce3bb39508b008b",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "colección/libros/Microelectronic Circuits, Analysis & Design de Rashid Mahummad H..md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "lucide-file",
+                  "title": "Microelectronic Circuits, Analysis & Design de Rashid Mahummad H."
+                }
+              }
+            ],
+            "currentTab": 4
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "846798510ac9a674",
+        "type": "split",
+        "children": [
+          {
+            "id": "c635826e07162fe2",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "4758c10ce82e9eab",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "640b82a7dfa99277",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "1e39f14ee35d8784",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 330.50499725341797,
+        "collapsed": true
+      },
+      "right": {
+        "id": "3bf298dcb9f1081b",
+        "type": "split",
+        "children": [
+          {
+            "id": "6f578bed393edc47",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "f1644a9f662c2244",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "[\"capítulo\"]",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "9fe686856cb889a6",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "README.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "README"
+                }
+              },
+              {
+                "id": "41a3f6f58104b9b1",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "licenciatura en ciencias matemáticas/algebra 1/Números enteros/Teorema fundamental de la aritmética.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for Teorema fundamental de la aritmética"
+                }
+              },
+              {
+                "id": "57a461fe7ffeb22b",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "README.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from README"
+                }
+              },
+              {
+                "id": "8ce68be4957a7bb0",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "README.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of README"
+                }
+              },
+              {
+                "id": "224dda726ce358fa",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "Plugin no longer active"
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 416.5,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
           "graph:Open graph view": true,
           "canvas:Create new canvas": true,
           "templates:Insert template": true,
@@ -885,11 +981,11 @@
           "cmdr:Nuevo Proyecto": false,
           "cmdr:Agregar elemento de colección": false,
           "cmdr:Referencia": false,
-          "cmdr:Load workspace": false
+          "cmdr:Workspaces: Save and load another layout": false
         }
       },
-      "active": "e46459332fd19a9e",
-      "mtime": "2025-03-12T09:38:48-03:00"
+      "active": "7ce3bb39508b008b",
+      "mtime": "2025-03-15T08:23:36-03:00"
     },
     "Estoca": {
       "main": {
@@ -1493,5 +1589,5 @@
       "mtime": "2025-03-12T09:39:42-03:00"
     }
   },
-  "active": "Control"
+  "active": "TPP"
 }
