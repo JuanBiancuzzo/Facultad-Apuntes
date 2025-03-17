@@ -1,21 +1,18 @@
 ---
-dia: 2025-03-14
+dia: 2025-03-17
 etapa: ampliar
 referencias:
-  - "871"
   - "898"
 tags:
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - nota/facultad
-aliases:
-  - Plant
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
-Una planta puede ser una parte de un equipo, tal vez un conjunto de los elementos de una máquina que funcionan juntos, y cuyo objetivo es efectuar una operación particular. Se puede pensar que una planta es la combinación de un [[Proceso|proceso]] y un [[Actuadores|actuador]] 
+Una perturbación es una [[Señal|señal]] que tiende a afectar negativamente el valor de la salida de un [[Sistema|sistema]]. Si la perturbación se genera dentro del sistema se la denomina interna, mientras que una perturbación externa se genera fuera del sistema y es una entrada
 
 # Referencias
 ---

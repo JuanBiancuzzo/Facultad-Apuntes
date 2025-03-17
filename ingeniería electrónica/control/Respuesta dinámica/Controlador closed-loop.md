@@ -3,6 +3,7 @@ dia: 2025-03-14
 etapa: ampliar
 referencias:
   - "871"
+  - "898"
 tags:
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - nota/facultad
@@ -13,6 +14,8 @@ aliases:
   - Closed-loop control
   - Feedback control
   - Realimentación de un circuito#En circuitos de amplificador
+  - Sistema de control realimentado#En teoría de control
+  - Sistema de control en lazo cerrado#En teoría de control
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
@@ -36,10 +39,86 @@ Se lo puede definir un buen controlador si proporciona
 * Robustez
     * Esto es asegurar que independientemente de imperfecciones en la exactitud del modelo o si este cambia a lo largo del tiempo, se tiene que mantener todas las otras metas mencionadas
 
+## En teoría de control
+---
+Un sistema que mantiene una relación determinada entre la salida y la entrada de referencia, comparándolas y usando la diferencia como medio de control, se denomina sistema de control realimentado
+
+El control realimentado se refiere a una operación que, en presencia de [[Perturbación|perturbaciones]], tiende a reducir la diferencia entre la salida de un [[Sistema|sistema]] y alguna entrada de referencia, y lo realiza tomando en cuenta esta diferencia. Aquí sólo se especifican con este término las perturbaciones impredecibles, ya que las perturbaciones predecibles o conocidas siempre pueden compensarse dentro del sistema
+
+En estos sistemas de control se alimenta al [[Controlador|controlador]] la [[Señal|señal]] de error de actuación, que es la diferencia entre la [[Señal|señal]] de entrada y la señal realimentada, con el fin de reducir el error y llevar la salida del sistema a un valor deseado
+
+El término control en lazo cerrado siempre implica el uso de una acción de control realimentado para reducir el error del sistema
+
 ## En circuitos de amplificador
 ---
 Considerando un sistema realimentado ideal
 
+```tikz
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\begin{document} 
+\begin{tikzpicture}[scale=1.3, transform shape, ultra thick]
+    \tikzmath { \largor = 1.5; \radio = 0.5; \scale = 1; \sep = 1.3; }
+
+    \draw (0, 0) rectangle (\largor, \largor)
+        node[midway, scale=\scale] {Fuente};
+    \path (\largor, 0) -- ++(0, \largor)
+        node[midway] (fin_fuente) {};
+    
+    \path (fin_fuente.center) -- ++(\sep, 0)
+        node (pos_sum) {};
+    \draw ($ (pos_sum.center) + (\radio, 0) $) circle (\radio)
+        node[scale=\scale] {$\sum$};
+    \path (pos_sum.center) -- ++({2 * \radio}, 0)
+        node (fin_sum) {};
+    \path (pos_sum.center) -- ++(\radio, -\radio)
+        node (neg_sum) {};
+    
+    \path (fin_sum.center) -- ++(\sep, 0)
+        node (ini_amp) {};
+    \draw ($ (ini_amp.center) + (0, {-\largor / 2}) $)
+        rectangle ++(\largor, \largor) 
+            node[midway, scale=\scale] {$a$};
+    \path ($ (ini_amp.center) + (\largor, 0) $)
+        node (fin_amp) {};
+    
+    \path (fin_amp.center) -- ++({2 * \sep + 2 * \radio}, 0)
+        node[midway] (muestro) {}
+        node (ini_carga) {};
+    \draw ($ (ini_carga.center) + (0, {-\largor / 2}) $)
+        rectangle ++(\largor, \largor) 
+            node[midway, scale=\scale] {Carga};
+    
+    \path ($ (ini_amp.center) + (0, {-\sep - \largor}) $)
+        node (ini_reali) {};
+    \draw ($ (ini_reali.center) + (0, {-\largor / 2}) $)
+        rectangle ++(\largor, \largor) 
+            node[midway, scale=\scale] {$f$};    
+    \path ($ (ini_reali.center) + (\largor, 0) $)
+        node (fin_reali) {};
+        
+    \draw[->] (fin_fuente.center) -- (pos_sum.center)
+        node[midway, above=2pt, scale=\scale] {$x_s$}
+        node[pos=0.9, above=2pt, scale=\scale] {$+$};
+    
+    \draw[->] (fin_sum.center) -- (ini_amp.center)
+        node[midway, above=2pt, scale=\scale] {$x_i$};
+    
+    \draw[->] (fin_amp.center) -- (ini_carga.center);
+    
+    \draw[->] (muestro.center) -- (muestro |- fin_reali)
+            node[pos=0, above=2pt, scale=\scale] {$x_0$}
+        -- (fin_reali.center);
+    
+    \draw[->] (ini_reali.center) -- (ini_reali -| neg_sum)
+        -- (neg_sum.center)
+            node[midway, right=2pt, scale=\scale] {$x_f$}
+            node[pos=0.9, left=2pt, scale=\scale] {$-$};
+
+\end{tikzpicture}
+\end{document}
+```
 
 
 Se tiene 4 modelos de retroalimentación 

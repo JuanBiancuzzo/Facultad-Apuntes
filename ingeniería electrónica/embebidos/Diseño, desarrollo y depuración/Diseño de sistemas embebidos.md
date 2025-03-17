@@ -6,7 +6,7 @@ tags:
 ---
 # Definición
 ---
-El diseño de [[Sistema#^c520d7|sistema]] [[Embebido|embebido]] se orienta a
+El diseño de [[Sistema|sistema]] [[Embebido|embebido]] se orienta a
 * Reducir
     * Tamaño (portátil)
     * Consumo (alimentado a [[Batería|batería]])

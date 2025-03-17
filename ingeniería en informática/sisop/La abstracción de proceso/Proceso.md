@@ -9,6 +9,8 @@ tags:
 referencias:
   - "789"
   - "871"
+  - "898"
+  - "1020"
 etapa: ampliar
 ---
 ```dataviewjs
@@ -16,11 +18,11 @@ etapa: ampliar
 ```
 # Definición
 ---
-Tenemos múltiples definiciones dependiendo del área
+El diccionario Merriam-Webster define un proceso como una operación o un desarrollo natural progresivamente continuo, marcado por una serie de cambios graduales que se suceden unos a otros de una forma relativamente fija y que conducen a un resultado o propósito determinados; o una operación artificial o voluntaria que se hace de forma progresiva y que consta de una serie de acciones o motivos controlados, sistemáticamente dirigidos hacia un resultado o propósito determinado
 
 ## En teoría de control
 ---
-El componente central de un [[Controlador closed-loop|sistema feedback]] es el proceso, el cual su salida es controlada
+Un proceso es cualquier operación que se va a controlar. El componente central de un [[Controlador closed-loop|sistema feedback]] es el proceso, el cual su salida es controlada
 
 ## En ciencia de computación
 ---
