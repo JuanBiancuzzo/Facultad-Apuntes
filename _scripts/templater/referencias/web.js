@@ -3,8 +3,6 @@ const ELIMINAR_AUTOR = "eliminar autore";
 
 const CANTIDAD_MINIMA_AUTORES = 1;
 
-const SALIR = "salir";
-
 class Web {
     constructor(tp, seguidorRef, representacionPrevia) {
         // console.log("Web");

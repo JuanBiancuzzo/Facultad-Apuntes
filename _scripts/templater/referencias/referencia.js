@@ -14,6 +14,7 @@ async function generar(tp, seguidorRef) {
         { nombre: REFERENCIAS.youtube,       mensaje: "Citar un video de Youtube" },
         { nombre: REFERENCIAS.web,           mensaje: "Citar una página web" },
         { nombre: REFERENCIAS.wikipedia,     mensaje: "Citar una página de wikipedia" },
+        { nombre: REFERENCIAS.diccionario,   mensaje: "Citar una palabra del diccionario" },
     ];
 
     try {
@@ -29,6 +30,7 @@ async function generar(tp, seguidorRef) {
             case REFERENCIAS.youtube:
             case REFERENCIAS.web:
             case REFERENCIAS.wikipedia:
+            case REFERENCIAS.diccionario:
                 archivoCreado = await crearArchivo.crear(tp, () => crearReferencia(tp, tipoCita, seguidorRef, referenciaCreada));
                 break;
 
@@ -68,14 +70,15 @@ function obtenerClase(tp, tipoCita, datos) {
     const { REFERENCIAS } = tp.user.constantes();
 
     switch (tipoCita) {
-        case REFERENCIAS.libro: return tp.user.libro(tp).clase(null, datos); 
+        case REFERENCIAS.libro: 		return tp.user.libro(tp).clase(null, datos); 
         case REFERENCIAS.capituloLibro: return tp.user.libro(tp).clase(null, datos); 
-        case REFERENCIAS.curso: return tp.user.curso(tp).clase(null, datos); 
-        case REFERENCIAS.temaCurso: return tp.user.temaCurso(tp).clase(null, datos); 
-        case REFERENCIAS.paper: return tp.user.paper(tp).clase(null, datos); 
-        case REFERENCIAS.youtube: return tp.user.youtube(tp).clase(null, datos); 
-        case REFERENCIAS.web: return tp.user.web(tp).clase(null, datos); 
-        case REFERENCIAS.wikipedia: return tp.user.wiki(tp).clase(null, datos); 
+        case REFERENCIAS.curso: 		return tp.user.curso(tp).clase(null, datos); 
+        case REFERENCIAS.temaCurso: 	return tp.user.temaCurso(tp).clase(null, datos); 
+        case REFERENCIAS.paper: 		return tp.user.paper(tp).clase(null, datos); 
+        case REFERENCIAS.youtube: 		return tp.user.youtube(tp).clase(null, datos); 
+        case REFERENCIAS.web: 			return tp.user.web(tp).clase(null, datos); 
+        case REFERENCIAS.wikipedia: 	return tp.user.wiki(tp).clase(null, datos); 
+        case REFERENCIAS.diccionario: 	return tp.user.diccionarioOnline(tp).clase(null, datos); 
 
         default:
             throw error.Quit(`El tipo de cita ${tipoCita} no existe para crear`);
@@ -112,9 +115,10 @@ async function crearReferencia(tp, tipoCita, seguidorRef, referenciaCreada) {
 
     let referencia;
     switch (tipoCita) {
-        case REFERENCIAS.youtube: referencia = tp.user.youtube(tp).clase(seguidorRef); break;
-        case REFERENCIAS.web: referencia = tp.user.web(tp).clase(seguidorRef); break;
-        case REFERENCIAS.wikipedia: referencia = tp.user.wiki(tp).clase(seguidorRef); break;
+        case REFERENCIAS.youtube: 		referencia = tp.user.youtube(tp).clase(seguidorRef); break;
+        case REFERENCIAS.web: 			referencia = tp.user.web(tp).clase(seguidorRef); break;
+        case REFERENCIAS.wikipedia: 	referencia = tp.user.wiki(tp).clase(seguidorRef); break;
+        case REFERENCIAS.diccionario: 	referencia = tp.user.diccionarioOnline(tp).clase(seguidorRef); break;
 
         default: throw error.Quit("No debería haber llegado acá en crearReferencia");
     }

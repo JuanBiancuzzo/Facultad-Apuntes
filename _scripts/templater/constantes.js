@@ -260,6 +260,7 @@ module.exports = () => ({
         youtube: "Youtube",
         web: "Web",
         wikipedia: "Wikipedia",
+        diccionario: "DiccionarioOnline",
     },
     DATOS: {
         CARRERA: {
@@ -736,6 +737,13 @@ module.exports = () => ({
             youtube: {
                 nombreVideo: "nombreVideo",
                 nombreCanal: "nombreCanal",
+                fecha: "fecha",
+                url: "url",
+            },
+            diccionario: {
+                editorial: "editorial",
+                palabra: "palabraBuscada",
+                nombre: "nombreDiccionario",
                 fecha: "fecha",
                 url: "url",
             },
