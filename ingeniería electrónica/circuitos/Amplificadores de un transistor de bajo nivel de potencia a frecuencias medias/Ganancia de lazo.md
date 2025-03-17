@@ -3,9 +3,11 @@ dia: 2024-11-28
 etapa: ampliar
 referencias:
   - "431"
+  - "1017"
 tags:
   - carrera/ingeniería-electrónica/circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
   - nota/facultad
+  - carrera/ingeniería-electrónica/circuitos-2/Realimentación-negativa
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
