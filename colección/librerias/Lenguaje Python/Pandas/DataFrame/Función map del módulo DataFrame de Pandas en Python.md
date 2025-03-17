@@ -1,7 +1,7 @@
 ---
 tags:
   - funciones/Librerías-de-Python/Pandas/DataFrame/map
-  - colección/funciones/función
+  - colección/funciones/estructura/función
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/Lenguaje-Python/Librerías-de-Python/Pandas/DataFrame
   - nota/colección
 firma:

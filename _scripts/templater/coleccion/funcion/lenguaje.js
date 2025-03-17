@@ -4,9 +4,12 @@ class Lenguaje {
             SIMBOLOS, DATOS: { FUNCIONES: { lenguaje: DATOS_LENGUAJE } },
             TAGS: { coleccion: { self: TAG_COLECCION, funciones: TAGS_FUNCIONES } }, 
         } = tp.user.constantes();
+        const dv = app.plugins.plugins.dataview.api;
+        if (!representacionPrevia) representacionPrevia = {};
 
         this.simbolos = SIMBOLOS;
         this.config = DATOS_LENGUAJE;
+        this.tags = TAGS_FUNCIONES;
          
         this.nombre = representacionPrevia[this.config.nombre];
         this.temaInvestigacion = representacionPrevia[this.config.temaInvestigacion];
@@ -16,12 +19,20 @@ class Lenguaje {
 
         this.librerias = [];
         for (let libreria of dv.pages(`#${tagLenguaje} and #${tagRepresentante}/${TAGS_FUNCIONES.libreria}`)) {
-            this.librerias.push(tp.user.libreria.clase(tp, this, libreria));
+            this.librerias.push(tp.user.libreria().clase(tp, this, libreria));
         }
+    }
+
+    esValido() {
+        return this.nombre && this.temaInvestigacion;
     }
 
     obtenerLibreriasDisponibles() {
         return this.librerias;
+    }
+
+    obtenerLenguaje() {
+        return this.nombre;
     }
 
     esIgual(otro) {
@@ -42,10 +53,32 @@ class Lenguaje {
     nombreArchivo() {
         return `Librerías del lenguaje de ${this.nombre}`;
     }
+
+    nombreArchivoDeEstructura(nombreEstructura) {
+        return `${nombreEstructura} en ${this.nombre}`;
+    }
+
+    nombreSeccion(informacionLibreria = null) {
+        return informacionLibreria
+            ? `Librerías del lenguaje de ${this.nombre}`
+            : `${informacionLibreria} en ${this.nombre}`;
+    }
+
+    obtenerTag() {
+        return `${this.tags.self}/${this.tags.lenguajes[this.nombre]}`;
+    }
 }
 
 async function crearLenguaje() {
 
+    return {
+        metadata: {
+
+        },
+        carpeta: "",
+        titulo: "",
+        texto: "",
+    };
 }
 
 module.exports = () => ({

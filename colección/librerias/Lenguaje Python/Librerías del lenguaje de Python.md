@@ -13,4 +13,4 @@ Vamos a nombrar las librerías de Python, para poder referenciarla de una forma 
 
 ## Resumen
 ---
-* [[Librería Pandas de Python|Librería Pandas]]
+* [[Librería Pandas en Python|Librería Pandas]]

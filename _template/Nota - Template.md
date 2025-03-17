@@ -12,7 +12,7 @@
         },
         coleccion: {
             estructuraDatos: tp.user.estructuraDeDatos().crear.bind(null, tp),
-            libreriaFunciones: tp.user.libreriaFunciones().crear.funcion.bind(null, tp),
+            libreria: tp.user.libreriaFunciones().crear.bind(null, tp),
             libro: tp.user.libro(tp).crear.bind(null, seguidorRef),
             paper: tp.user.paper(tp).crear.bind(null, seguidorRef),
             componente: tp.user.componente().crear.bind(null, tp),
@@ -44,6 +44,28 @@
         }
     };
 
+    // Agregar opciones por contexto
+    if (dv.pages(`"${carpeta}" and #${TAGS.investigacion.self}/${TAGS.investigacion.indice}`).length > 0)  {
+        ingresarOpcion("Ingresar nota de investigación", GENERADOR.nota.investigacion);
+    }
+    if (dv.pages(`"${carpeta}" and (#${TAGS.materia} or #${TAGS.resumenMateria})`).length > 0)  {
+        ingresarOpcion("Ingresar nota de materia", GENERADOR.nota.facultad);
+    }
+    if (dv.pages(`"${carpeta}" and #${TAGS.curso.self}`).length > 0)  {
+        ingresarOpcion("Ingresar nota de curso", GENERADOR.nota.curso)
+    }
+    if (dv.pages(`"${carpeta}" and #${TAGS.proyecto.self}/${TAGS.proyecto.practico.self}`).length > 0)  {
+        ingresarOpcion("Ingresar nota de proyecto", GENERADOR.nota.proyecto)
+    }
+    if (dv.pages(`"${carpeta}" and #${TAGS.proyecto.self}/${TAGS.proyecto.investigacion.self}`).length > 0)  {
+        ingresarOpcion("Ingresar nota de investigación en el proyecto", GENERADOR.nota.investigacion);
+        ingresarOpcion("Ingresar nota de proyecto", GENERADOR.nota.proyecto);
+    }
+    if (dv.pages(`"${carpeta}" and #${TAGS.proyecto.self}/${TAGS.proyecto.juego.self}`).length > 0)  {
+        ingresarOpcion("Ingresar un GDD", GENERADOR.nota.proyecto)
+    }
+
+
     // Agregar opciones por directorio
     switch (directorioBase) {
         case DIRECTORIOS.referencias: ingresarOpcion("Ingresar referencia", GENERADOR.referencia); break;
@@ -68,6 +90,8 @@
         case DIRECTORIOS.coleccion.self: 
             const DIRECT_COLECCION = DIRECTORIOS.coleccion;
             let segundoDirectorio = directorio.at(1);
+            opciones = [];
+            valores = [];
 
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.componentes) {
                 ingresarOpcion("Ingresar un componente", GENERADOR.coleccion.componente);
@@ -82,7 +106,7 @@
                 ingresarOpcion("Ingresar un documento legal", GENERADOR.coleccion.documentoLegal);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.funciones) {
-                ingresarOpcion("Ingresar una función de programación", GENERADOR.coleccion.libreriaFunciones);
+                ingresarOpcion("Ingresar un componente de una libreria", GENERADOR.coleccion.libreria);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.libros) {
                 ingresarOpcion("Ingresar un libro", GENERADOR.coleccion.libro);
@@ -97,26 +121,6 @@
                 ingresarOpcion("Ingresar receta", GENERADOR.coleccion.receta);
             }
             break;
-    }
-
-    if (dv.pages(`"${carpeta}" and #${TAGS.investigacion.self}/${TAGS.investigacion.indice}`).length > 0)  {
-        ingresarOpcion("Ingresar nota de investigación", GENERADOR.nota.investigacion);
-    }
-    if (dv.pages(`"${carpeta}" and (#${TAGS.materia} or #${TAGS.resumenMateria})`).length > 0)  {
-        ingresarOpcion("Ingresar nota de materia", GENERADOR.nota.facultad);
-    }
-    if (dv.pages(`"${carpeta}" and #${TAGS.curso.self}`).length > 0)  {
-        ingresarOpcion("Ingresar nota de curso", GENERADOR.nota.curso)
-    }
-    if (dv.pages(`"${carpeta}" and #${TAGS.proyecto.self}/${TAGS.proyecto.practico.self}`).length > 0)  {
-        ingresarOpcion("Ingresar nota de proyecto", GENERADOR.nota.proyecto)
-    }
-    if (dv.pages(`"${carpeta}" and #${TAGS.proyecto.self}/${TAGS.proyecto.investigacion.self}`).length > 0)  {
-        ingresarOpcion("Ingresar nota de investigación en el proyecto", GENERADOR.nota.investigacion);
-        ingresarOpcion("Ingresar nota de proyecto", GENERADOR.nota.proyecto);
-    }
-    if (dv.pages(`"${carpeta}" and #${TAGS.proyecto.self}/${TAGS.proyecto.juego.self}`).length > 0)  {
-        ingresarOpcion("Ingresar un GDD", GENERADOR.nota.proyecto)
     }
 
     try {

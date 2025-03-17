@@ -1,22 +1,96 @@
-class Libreria {
-    constructor(tp, lenguajePadre, representacionPrevia) {
+const CANTIDAD_MINIMA_DEPENDENCIAS = 0;
 
+class Libreria {
+    constructor(tp, lenguajePadre, representacionPrevia = null) {
+        const { 
+            SIMBOLOS, DATOS: { FUNCIONES: { libreria: DATOS_LIBRERIA } },
+            TAGS: { coleccion: { self: TAG_COLECCION, funciones: TAGS_FUNCIONES } }, 
+        } = tp.user.constantes();
+        const dv = app.plugins.plugins.dataview.api;
+
+        if (!representacionPrevia) representacionPrevia = {};
+
+        this.tagPorNombre = tp.user.tagPorNombre;
+        this.simbolos = SIMBOLOS;
+        this.config = DATOS_LIBRERIA;
+        this.tags = { coleccion: TAG_COLECCION, ...TAGS_FUNCIONES };
+
+        this.nombre = representacionPrevia[this.config.nombre];
+        this.dependencias = representacionPrevia[this.config.dependencias]
+            ? representacionPrevia[this.config.dependencias]
+            : [];
+
+        this.lenguajePadre = lenguajePadre;
+
+        let tagLenguaje = this.lenguajePadre.obtenerTag();
+        let tagLibreria = `${tagLenguaje}/${this.tagPorNombre(this.nombre)}`;
+        let tagRepresentante = `${this.tags.coleccion}/${this.tags.self}`;
+
+        this.modulos = [];
+        for (let modulo of dv.pages(`#${tagLibreria} and #${tagRepresentante}/${this.tags.modulo}`)) {
+            this.modulos.push(tp.user.modulo().clase(tp, this, modulo));
+        }
+
+        this.crearManejador = tp.user.manejarTipoDato.bind(null, tp);
+    }
+
+    esValido() {
+        return this.dependencias.length >= CANTIDAD_MINIMA_DEPENDENCIAS;
+    }
+
+    esIgual(otro) {
+        return this.nombre == otro.nombre;
+    }
+
+    obtenerTiposDeDatos() {
+        return [];
+    }
+
+    obtenerManejador() {
+        let tiposDeDatos = this.obtenerTiposDeDatos();
+        for (let dependencia of this.dependencias) {
+            tiposDeDatos = tiposDeDatos.concat(dependencia.obtenerTiposDeDatos());
+        }
+
+        return this.crearManejador(tiposDeDatos);
     }
     
     obtenerModulosDisponibles() {
-
+        return this.modulos;
     }
 
     generarRepresentacion() {
-
+        return {
+            [this.config.nombre]: this.nombre,
+            [this.config.dependencias]: this.dependencias,
+        };
     }
 
     descripcion() {
+        return `Libreria ${this.nombre}`;
+    }
 
+    directorio() {
+        return "temp";
+    }
+
+    nombreArchivoDeEstructura(nombreEstructura) {
+        let descripcion = `${nombreEstructura} de ${this.nombre}`;
+        return this.lenguajePadre.nombreArchivoDeEstructura(descripcion);
+    }
+
+    nombreSeccion(informacionModulo = null) {
+        return informacionModulo
+            ? this.lenguajePadre.nombreSeccion(`${informacionModulo} de la librería Pandas`)
+            : this.lenguajePadre.nombreSeccion(`Librería ${this.nombre}`);
+    }
+
+    obtenerTag() {
+        return `${this.lenguajePadre.obtenerTag()}/${this.tagPorNombre(this.nombre)}`;
     }
 }
 
-async function crearLibreria(tp, lenguaje, libreria) {
+async function crearLibreria(tp, lenguajePadre, representacionLibreria) {
     const { 
         TEMPLATE: { coleccion: TEMPLATE_COLECCION }, 
         DIRECTORIOS: { coleccion: DIR_COLECCION },
@@ -25,6 +99,14 @@ async function crearLibreria(tp, lenguaje, libreria) {
     } = tp.user.constantes();
     const tagPorNombre = tp.user.tagPorNombre;
     const dv = app.plugins.plugins.dataview.api;
+
+    if (!representacionLibreria) representacionLibreria = {};
+
+    let libreria = new Libreria(tp, lenguajePadre, representacionLibreria);
+    if (!libreria.esValido()) {
+        await tp.user.preguntar().formulario(tp, libreria, "Ingresar la informacion de la libreria");
+    }
+
 
     let tagPath = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[lenguaje]}`;
     let tagFuncion = `${TAG_COLECCION}/${TAGS_FUNCIONES.self}`;
@@ -53,6 +135,6 @@ async function crearLibreria(tp, lenguaje, libreria) {
 }
 
 module.exports = () => ({
-    clase: () => new Libreria(),
+    clase: (tp, lenguajePadre, representacionPrevia) => new Libreria(tp, lenguajePadre, representacionPrevia),
     crear: crearLibreria,
 });

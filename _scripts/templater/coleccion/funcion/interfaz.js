@@ -3,8 +3,6 @@ const ELIMINAR_METODO = "eliminar metodo";
 
 const CANTIDAD_MINIMA = 0;
 
-const SALIR = "salir";
-
 class TipoInterfaz {
     constructor(tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
         const { 
@@ -174,4 +172,11 @@ class TipoInterfaz {
     }
 }
 
-module.exports = (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new TipoInterfaz(tp, manejoTipoDeDatos, lenguaje, representacionPrevia);
+async function crearInterfaz() {
+    
+}
+
+module.exports = () => ({
+    clase: (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new TipoInterfaz(tp, manejoTipoDeDatos, lenguaje, representacionPrevia),
+    crear: crearInterfaz,
+})

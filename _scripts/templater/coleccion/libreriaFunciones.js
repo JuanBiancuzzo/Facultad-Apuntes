@@ -24,6 +24,7 @@ class Libreria {
                 FUNCIONES: DATOS_FUNCIONES, LENGUAJE: { lenguajes: DATOS_LENGUAJES }
             }, TAGS: { coleccion: { self: TAG_COLECCION, funciones: TAGS_FUNCIONES } }, 
         } = tp.user.constantes();
+        const dv = app.plugins.plugins.dataview.api;
 
         this.simbolos = SIMBOLOS;
         this.tagPorNombre = tp.user.tagPorNombre;
@@ -39,7 +40,9 @@ class Libreria {
             let tagRepresentante = `${TAG_COLECCION}/${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes.self}`;
 
             let posibleLenguaje = dv.pages(`#${tagLenguaje} and #${tagRepresentante}`).first(); 
-            this.lenguajesDisponibles.push(tp.user.lenguaje.clase(tp, posibleLenguaje));
+            if (!posibleLenguaje) continue;
+
+            this.lenguajesDisponibles.push(tp.user.lenguaje().clase(tp, posibleLenguaje));
         }
 
         this.tipoEstructura = null;
@@ -48,35 +51,82 @@ class Libreria {
         this.libreria = null;
         this.modulo = null;
 
+        this.nuevaEstructura = {
+            funcion:   tp.user.funcion().clase.bind(null, tp),
+            clase:     tp.user.clase().clase.bind(null, tp),
+            struct:    tp.user.struct().clase.bind(null, tp),
+            interfaz:  tp.user.interfaz().clase.bind(null, tp),
+            enum:      tp.user.enum().clase.bind(null, tp),
+        };
+
         this.crearEstructura = {
-            nuevaFuncion:   tp.user.funcion.clase.bind(null, tp),
-            nuevaClase:     tp.user.clase.clase.bind(null, tp),
-            nuevoStruct:    tp.user.struct.clase.bind(null, tp),
-            nuevaInterfaz:  tp.user.interfaz.clase.bind(null, tp),
-            nuevoEnum:      tp.user.enum.clase.bind(null, tp),
+            funcion:   tp.user.funcion().crear.bind(null, tp),
+            clase:     tp.user.clase().crear.bind(null, tp),
+            struct:    tp.user.struct().crear.bind(null, tp),
+            interfaz:  tp.user.interfaz().crear.bind(null, tp),
+            enum:      tp.user.enum().crear.bind(null, tp),
         };
     }
 
     async actualizarDatos(respuesta, generarPreguntas, generarError) {
+        let mostrarEleccion = (elemento) => ` ${this.simbolos.elegir} ${elemento.descripcion()}`;
         switch (respuesta) {
-            case MODIFICAR_LENGUAJE:
             case this.tipos.lenguaje:
-                let nuevoLenguaje = await generarPreguntas.suggester(
-                    (lenguaje) => ` ${this.simbolos.elegir} ${lenguaje.descripcion()}`,
-                    this.lenguajesDisponibles, "Que lenguaje se quiere usar?",
-                    generarError.Quit("No se eligió el lenguaje")
-                );
+                this.lenguaje = this.lenguajesDisponibles.first();
+                if (this.lenguajesDisponibles.length > 1) {
+                    this.lenguaje = await generarPreguntas.suggester(
+                        this.lenguajesDisponibles.map(mostrarEleccion), this.lenguajesDisponibles,
+                        "Que lenguaje se quiere usar?", generarError.Quit("No se eligió el lenguaje")
+                    );
+                }
+                break;
 
-                if (!nuevoLenguaje.esIgual(this.lenguaje)) {
+            case MODIFICAR_LENGUAJE:
+                let nuevoLenguaje = this.lenguajesDisponibles.first();
+                if (this.lenguajesDisponibles.length > 1) {
+                    nuevoLenguaje = await generarPreguntas.suggester(
+                        this.lenguajesDisponibles.map(mostrarEleccion), this.lenguajesDisponibles,
+                        "Que lenguaje se va a usar ahora?", generarError.Quit("No se eligió el lenguaje")
+                    );
+                }
+
+                if (!this.lenguaje.esIgual(nuevoLenguaje)) {
                     this.lenguaje = nuevoLenguaje;
                     this.libreria = null;
                     this.modulo = null;
-                    if (!this.estructura) this.estructura.eliminar();
+                    this.estructura?.eliminar();
                 }
                 break;
             
-            case MODIFICAR_LIBRERIA:
             case this.tipos.libreria:
+                let opcionesLibreria = this.lenguaje.obtenerLibreriasDisponibles();
+                this.libreria = opcionesLibreria.first();
+                if (opcionesLibreria.length > 1) {
+                    this.libreria = await generarPreguntas.suggester(
+                        opcionesLibreria.map(mostrarEleccion), opcionesLibreria,
+                        "Que libreria se quiere usar?", generarError.Quit("No se eligió la libreria")
+                    );
+                }
+                this.crearNuevaEstructura();
+                break;
+
+            case MODIFICAR_LIBRERIA:
+                let nuevaOpcionesLibreria = this.lenguaje.obtenerLibreriasDisponibles();
+                let nuevaLibreria = nuevaOpcionesLibreria.first();
+
+                if (nuevaOpcionesLibreria.length > 1) {
+                    nuevaLibreria = await generarPreguntas.suggester(
+                        nuevaOpcionesLibreria.map(mostrarEleccion), nuevaOpcionesLibreria,
+                        "Que libreria se va a usar ahora?", generarError.Quit("No se eligió la libreria")
+                    );
+                }
+
+                if (!this.libreria.esIgual(nuevaLibreria)) {
+                    this.libreria = nuevaLibreria;
+                    this.modulo = null;
+                    this.estructura?.eliminar();
+                    this.crearNuevaEstructura();
+                }
                 break;
 
             case MODIFICAR_MODULO:
@@ -101,32 +151,11 @@ class Libreria {
 
                 this.tipoEstructura = nuevoTipoEstructura;
                 this.estructura?.eliminar();
-
-                switch (this.tipoEstructura) {
-                    case this.tipos.funcion:
-                        this.estructura = this.crearEstructura.funcion();
-                        break;
-
-                    case this.tipos.clase:
-                        this.estructura = this.crearEstructura.clase();
-                        break;
-
-                    case this.tipos.struct:
-                        this.estructura = this.crearEstructura.struct();
-                        break;
-
-                    case this.tipos.interfaz:
-                        this.estructura = this.crearEstructura.interfaz();
-                        break;
-
-                    case this.tipos.enum:
-                        this.estructura = this.crearEstructura.enum();
-                        break;
-                }
+                this.crearNuevaEstructura();
                 break;
 
             default:
-                this.estructura.actualizarDatos(respuesta, generarPreguntas, generarError);
+                await this.estructura.actualizarDatos(respuesta, generarPreguntas, generarError);
         }
     }
 
@@ -154,16 +183,18 @@ class Libreria {
         opciones.push(MODIFICAR_LIBRERIA);
         valores.push(`️ ${this.simbolos.modificar} Modificar la libreria, donde es ${this.libreria.descripcion()}`);
 
-        if (!this.modulo?.esValido()) {
-            opciones.push(this.tipos.modulo);
-            valores.push(` ${this.simbolos.agregar} ${this.simbolos.opcional} Modulo`);
+        if (this.libreria.obtenerModulosDisponibles().length > 0) {
+            if (!this.modulo?.esValido()) {
+                opciones.push(this.tipos.modulo);
+                valores.push(` ${this.simbolos.agregar} ${this.simbolos.opcional} Modulo`);
 
-        } else {
-            opciones.push(MODIFICAR_MODULO);
-            valores.push(`️ ${this.simbolos.modificar} Modificar el modulo, donde es ${this.modulo.descripcion()}`);
+            } else {
+                opciones.push(MODIFICAR_MODULO);
+                valores.push(`️ ${this.simbolos.modificar} Modificar el modulo, donde es ${this.modulo.descripcion()}`);
 
-            opciones.push(ELIMINAR_MODULO);
-            valores.push(`️ ${this.simbolos.sacar} Eliminar el modulo, donde es ${this.modulo.descripcion()}`);
+                opciones.push(ELIMINAR_MODULO);
+                valores.push(`️ ${this.simbolos.sacar} Eliminar el modulo, donde es ${this.modulo.descripcion()}`);
+            }
         }
 
         if (!this.tipoEstructura) {
@@ -182,27 +213,8 @@ class Libreria {
         return { opciones, valores };
     }
 
-    generarRepresentacion(tipo) {
-        switch (tipo) {
-            case this.tipos.lenguaje:
-                return this.lenguaje?.generarRepresentacion();
-
-            case this.tipos.libreria:
-                return this.libreria?.generarRepresentacion();
-
-            case this.tipos.modulo:
-                return this.modulo?.generarRepresentacion();
-
-            case this.tipos.funcion:
-            case this.tipos.clase:
-            case this.tipos.struct:
-            case this.tipos.interfaz:
-            case this.tipos.enum:
-                return this.estructura?.generarRepresentacion();
-            
-            default:
-                return {};
-        }
+    generarRepresentacion() {
+        return this.estructura?.generarRepresentacion();
     }
 
     esValido() {
@@ -224,183 +236,55 @@ class Libreria {
                 return this.estructura.esValido();
             
             default:
-                return true;
+                return false;
+        }
+    }
+
+    obtenerUbicacion() {
+        return this.modulo?.esValido()
+            ? this.modulo
+            : this.libreria;
+    }
+
+    crearNuevaEstructura() {
+        let creadorEstructura;
+        switch (this.tipoEstructura) {
+            case this.tipos.funcion:    creadorEstructura = this.nuevaEstructura.funcion; break;
+            case this.tipos.clase:      creadorEstructura = this.nuevaEstructura.clase; break;
+            case this.tipos.struct:     creadorEstructura = this.nuevaEstructura.struct; break;
+            case this.tipos.interfaz:   creadorEstructura = this.nuevaEstructura.interfaz; break;
+            case this.tipos.enum:       creadorEstructura = this.nuevaEstructura.enum; break;
+
+            default: return;
+        }
+
+        let lenguajeActual = this.lenguaje.obtenerLenguaje();
+        let manejador = this.libreria.obtenerManejador();
+
+        this.estructura = creadorEstructura(manejador, lenguajeActual);
+    }
+
+    crearDatos() {
+        switch (this.tipoEstructura) {
+            case this.tipos.funcion:    return this.crearEstructura.funcion;
+            case this.tipos.clase:      return this.crearEstructura.clase;
+            case this.tipos.struct:     return this.crearEstructura.struct;
+            case this.tipos.interfaz:   return this.crearEstructura.interfaz;
+            case this.tipos.enum:       return this.crearEstructura.enum;
+            
+            default: return {};
         }
     }
 }
 
-async function actualizarDatos(tp, datos, respuesta) {
-    const { 
-        SIMBOLOS, DATOS: { FUNCIONES: DATOS_FUNCIONES, LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJE } },
-        TAGS: { coleccion: { self: TAG_COLECCION, funciones: TAGS_FUNCIONES } }, 
-    } = tp.user.constantes(); 
-
-    const tagPorNombre = tp.user.tagPorNombre;
+async function crearLibreria(tp) {
     const preguntar = tp.user.preguntar();
-    const error = tp.user.error();
-    const dv = app.plugins.plugins.dataview.api;
 
-    let resultado, tagAcumulado, lenguajes, librerias, modulos;
-    let salir = false;
+    let libreria = new Libreria(tp);
+    await preguntar.formulario(tp, libreria, "Ingresar información de la libreria");
 
-    switch (respuesta) {
-        case LENGUAJE:
-            lenguajes = Object.values(LENGUAJES);
-            lenguajes.remove(LENGUAJES.default);
-
-            resultado = lenguajes.first();
-            if (lenguajes.length > 1) {
-                resultado = await preguntar.suggester(
-                    tp, (lenguaje) => `Lenguaje ${DATOS_LENGUAJE[lenguaje].nombre}`, lenguajes,
-                    "Como se llama el lenguaje?",
-                    error.Prompt("No se ingresó el lenguaje")
-                );
-            }
-
-            datos[LENGUAJE] = resultado;
-            break;
-
-        case LIBRERIA:
-            tagAcumulado = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[datos[LENGUAJE]]}`;
-            librerias = dv.pages(`#${tagAcumulado} and #${TAG_COLECCION}/${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.libreria}`)
-                .map(libreria => libreria[DATOS_FUNCIONES.libreria.nombre]);
-
-            resultado = AGREGAR;
-            if (librerias.length > 0) {
-                resultado = await preguntar.suggester(
-                    tp, [` ${SIMBOLOS.agregar} Agregar libreria`, ...librerias],
-                    [AGREGAR, ...librerias], "Como se llama la libreria?",
-                    error.Prompt("No se ingresó la libreria")
-                );
-            }
-
-            if (resultado == AGREGAR) {
-                resultado = await preguntar.prompt(
-                    tp, datos[LIBRERIA] 
-                        ? `Nuevo nombre de la libreria, donde antes era ${datos[LIBRERIA]}`
-                        : "Nombre de la libreria"
-                );
-            }
-
-            datos[LIBRERIA] = resultado;
-            break;
-
-        case MODULO:
-            tagAcumulado = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[datos[LENGUAJE].nombre]}/${tagPorNombre(datos[LIBRERIA])}`;
-            modulos = dv.pages(`#${tagAcumulado} and #${TAG_COLECCION}/${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.modulo}`)
-                .map(modulo => modulo[DATOS_FUNCIONES.modulo.nombre]);
-
-            resultado = AGREGAR;
-            if (modulos.length > 0) {
-                resultado = await preguntar.suggester(
-                    tp, [` ${SIMBOLOS.agregar} Agregar modulo`, ...modulos],
-                    [AGREGAR, ...modulos], "Como se llama el módulo?",
-                    error.Prompt("No se ingresó el modulo")
-                );
-            }
-
-            if (resultado == AGREGAR) {
-                resultado = await preguntar.prompt(
-                    tp, datos[MODULO] 
-                        ? `Nuevo nombre del módulo, donde antes era ${datos[MODULO]}`
-                        : "Nombre del módulo"
-                );
-            }
-
-            datos[MODULO] = resultado;
-            break;
-
-        case FUNCION:
-            const preguntasLenguaje = tp.user.funcion();
-            datos[FUNCION] = await tp.user.crearPreguntas(
-                tp, preguntasLenguaje.obtenerDefault.bind(null, tp, datos[LENGUAJE]),
-                (tp, datosDato, respuestaDada) => preguntasLenguaje.actualizarDatos(tp, datosDato, respuestaDada, datos[LENGUAJE]), 
-                (tp, datosDato) => preguntasLenguaje.generarPreguntas(tp, datosDato, datos[LENGUAJE]), 
-                "Definir la función que se quiere ingresar",
-                datos[FUNCION] ? datos[FUNCION] : {}
-            );
-            break;
-
-        case SALIR: 
-            salir = true;
-            break;
-    }
-
-    return salir;
-}
-
-function generarPreguntas(tp, datos) {
-    const { SIMBOLOS, DATOS: { LENGUAJE: DATOS_LENGUAJE } } = tp.user.constantes(); 
-    const preguntasLenguaje = tp.user.funcion();
-
-    const usoLenguaje = tp.user.funcion();
-    let opciones = [], valores = [];
-
-    opciones.push(LENGUAJE);
-    if (!datos[LENGUAJE]) {
-        valores.push(` ${SIMBOLOS.agregar} Lenguaje`);
-    } else {
-        valores.push(` ${SIMBOLOS.modificar} Modificar el lenguaje, donde era ${DATOS_LENGUAJE[datos[LENGUAJE]].nombre}`);
-
-        opciones.push(LIBRERIA);
-        if (!datos[LIBRERIA]) {
-            valores.push(` ${SIMBOLOS.agregar} Libreria`);
-        } else {
-            valores.push(` ${SIMBOLOS.modificar} Modificar la libreria, donde era ${datos[LIBRERIA]}`);
-
-            opciones.push(MODULO);
-            valores.push(datos[MODULO]
-                ? ` ${SIMBOLOS.modificar} Modificar el modulo, donde era ${datos[MODULO]}`
-                : ` ${SIMBOLOS.agregar} ${SIMBOLOS.opcional} Modulo`
-            );
-        }
-
-        opciones.push(FUNCION);
-        valores.push(preguntasLenguaje.esValido(tp, datos[FUNCION], datos[LENGUAJE])
-            ? ` ${SIMBOLOS.modificar} Modificar la función, donde era:\n\t${usoLenguaje.describir(tp, datos[FUNCION], datos[LENGUAJE]).replaceAll("\n", "\n\t")}`
-            : ` ${SIMBOLOS.agregar} Función`
-        )
-    }
-
-    if ([LENGUAJE, LIBRERIA].every(key => datos[key]) && preguntasLenguaje.esValido(tp, datos[FUNCION], datos[LENGUAJE])) {
-        opciones.push(SALIR);
-        valores.push(` ${SIMBOLOS.volver} Confirmar datos`);
-    }
-
-    return { opciones: opciones, valores: valores };
-}
-
-
-async function agregarDatos(tp, datos) {
-    const { 
-        TAGS: { coleccion: { self: TAG_COLECCION, funciones: TAGS_FUNCIONES } }, 
-        DATOS: { FUNCIONES: DATOS_FUNCIONES },
-    } = tp.user.constantes();
-    const tagPorNombre = tp.user.tagPorNombre;
-    const crearArchivo = tp.user.archivo();
-    const dv = app.plugins.plugins.dataview.api;
-
-    let keyLenguaje = DATOS_FUNCIONES.lenguaje.keyLenguaje(datos[LENGUAJE]);
-
-    let tagLenguaje = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[keyLenguaje]}`;
-    let tagLibreria = `${tagLenguaje}/${tagPorNombre(datos[LIBRERIA])}`;
-
-    let libreria = dv.pages(`#${tagLibreria} and #${TAG_COLECCION}/${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.libreria}`).first();
-    if (!libreria) {
-        await crearArchivo.crear(tp, () => crearLibreria(tp, datos[LENGUAJE], datos[LIBRERIA]));
-    } 
-
-    if (datos[MODULO]) {
-        let tagModulo = `${tagLibreria}/${tagPorNombre(datos[MODULO])}`;
-        let modulos = dv.pages(`#${tagModulo} and #${TAG_COLECCION}/${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.modulo}`);
-        if (!modulos.first()) {
-            await crearArchivo.crear(tp, () => crearModulo(tp, datos[LENGUAJE], datos[LIBRERIA], datos[MODULO]));
-        }
-    }
-}
-
-async function crearLibreria() {
-    
+    let representacion = libreria.generarRepresentacion();
+    return libreria.crearDatos(representacion);
 }
 
 module.exports = () => ({

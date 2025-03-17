@@ -2,13 +2,9 @@
 dia: 2024-09-16
 tags:
   - colección/componentes/sensor
-  - colección/representante
   - investigación/índice
   - nota/investigacion
   - investigación/electrónica/componentes/sensor
-  - carrera/ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
-  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
-  - bloque-matematica/Números-enteros/Divisibilidad
 referencias:
   - "241"
   - "254"
@@ -26,6 +22,7 @@ Vamos a registrar todos los sensores que vayamos usando a lo largo de las carrer
 
 ## Resumen
 ---
+#bloque-matematica/Números-enteros/Divisibilidad #carrera/ingeniería-electrónica/control/Respuesta-dinámica #carrera/ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
 Un [[Microcontrolador|microcontrolador]] no debería hacer decisiones sin censar el mundo exterior, entonces podemos partir de la forma más simple de censar si un switch esta abierto o cerrado
 
 ```tikz

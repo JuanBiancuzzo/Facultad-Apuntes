@@ -1,6 +1,6 @@
-const LENGUAJE_C = "c";
-const LENGUAJE_PYTHON = "python";
-const LENGUAJE_RUST = "rust";
+const LENGUAJE_C = "C";
+const LENGUAJE_PYTHON = "Python";
+const LENGUAJE_RUST = "Rust";
 const LENGUAJE_DEFAULT = "default";
 
 module.exports = () => ({
@@ -132,7 +132,7 @@ module.exports = () => ({
                 },
                 libreria: "libreria",
                 modulo: "modulo",
-                funcion: "función",
+                estructura: "estructura",
                 tipoDeDato: "tipo-de-dato",
             },
             bloqueMatematica: {
@@ -228,8 +228,8 @@ module.exports = () => ({
                 relaciones: "relaciones",
             },
             documentos: "documentos",
-            funciones: {
-                self: "funciones",
+            librerias: {
+                self: "librerias",
                 [LENGUAJE_PYTHON]: "Lenguaje Python",
                 [LENGUAJE_C]: "Lenguaje C",
                 [LENGUAJE_RUST]: "Lenguaje Rust",
@@ -370,9 +370,9 @@ module.exports = () => ({
         },
         LENGUAJE: {
             lenguajes: {
-                python: LENGUAJE_PYTHON,
-                c: LENGUAJE_C,
-                rust: LENGUAJE_RUST,
+                Python: LENGUAJE_PYTHON,
+                C: LENGUAJE_C,
+                Rust: LENGUAJE_RUST,
                 default: LENGUAJE_DEFAULT,
             },
             [LENGUAJE_C]: {
@@ -542,11 +542,10 @@ module.exports = () => ({
             },
             libreria: {
                 nombre: "nombreLibreria",
-                lenguaje: "lenguaje",
+                dependencias: "dependencias",
             },
             modulo: {
                 nombre: "nombreModulo",
-                libreria: "libreria",
             },
             funcion: {
                 nombreFuncion: "nombre",
@@ -616,7 +615,7 @@ module.exports = () => ({
                     enum: "Enum",
                     referencia: "Referencia",
                     union: "Union",
-                    funcion: "Funcion",
+                    funcion: "Función",
                     lenguaje: "Lenguaje",
                     libreria: "Libreria", 
                     modulo: "Modulo",

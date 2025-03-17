@@ -1,11 +1,53 @@
 class Modulo {
-    
-    generarRepresentacion() {
+    constructor(tp, libreriaPadre, representacionPrevia = null) {
+        const { 
+            SIMBOLOS, DATOS: { FUNCIONES: { modulo: DATOS_MODULO } },
+        } = tp.user.constantes();
+        const dv = app.plugins.plugins.dataview.api;
 
+        if (!representacionPrevia) representacionPrevia = {};
+
+        this.tagPorNombre = tp.user.tagPorNombre;
+        this.simbolos = SIMBOLOS;
+        this.config = DATOS_MODULO;
+
+        this.nombre = representacionPrevia[this.config.nombre];
+        this.libreriaPadre = libreriaPadre;
+    }
+    
+    esValido() {
+        return true;
+    }
+
+    obtenerManejador() {
+
+    }
+
+    generarRepresentacion() {
+        return {
+            [this.config.nombre]: this.nombre,
+        };
     }
 
     descripcion() {
 
+    }
+    
+    directorio() {
+        return "temp";
+    }
+
+    nombreArchivoDeEstructura(nombreEstructura) {
+        let descripcion = `${nombreEstructura} de módulo ${this.nombre}`;
+        return this.libreriaPadre.nombreArchivoDeEstructura(descripcion);
+    }
+
+    nombreSeccion() {
+        return this.libreriaPadre.nombreSeccion(`Módulo ${this.nombre}`);
+    }
+
+    obtenerTag() {
+        return `${this.libreriaPadre.obtenerTag()}/${this.tagPorNombre(this.nombre)}`;
     }
 }
 
@@ -52,6 +94,6 @@ async function crearModulo(tp, lenguaje, libreria, modulo) {
 }
 
 module.exports = () => ({
-    clase: () => new Modulo(),
+    clase: (tp, libreriaPadre, representacionPrevia = null) => new Modulo(tp, libreriaPadre, representacionPrevia),
     crear: crearModulo,
 });

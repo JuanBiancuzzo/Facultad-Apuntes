@@ -290,7 +290,7 @@ class Funcion {
     }
 }
 
-async function crearFuncion(tp) {
+async function crearFuncion(tp, representacionPrevia = null) {
     const { 
         DIRECTORIOS: { coleccion: { self: DIRECTORIO_COLECCION, funciones: DIRECTORIO_FUNCIONES } },
         TAGS: { coleccion: { self: TAG_COLECCION, funciones: TAGS_FUNCIONES }, nota: TAGS_NOTA },

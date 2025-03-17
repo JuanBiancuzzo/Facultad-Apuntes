@@ -292,4 +292,11 @@ class TipoStruct {
     }
 }
 
-module.exports = (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new TipoStruct(tp, manejoTipoDeDatos, lenguaje, representacionPrevia);
+async function crearStruct() {
+    
+}
+
+module.exports = () => ({
+    clase: (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new TipoStruct(tp, manejoTipoDeDatos, lenguaje, representacionPrevia),
+    crear: crearStruct,
+})

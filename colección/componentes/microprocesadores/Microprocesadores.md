@@ -2,15 +2,8 @@
 dia: 2024-04-03
 tags:
   - colección/componentes/microprocesador
-  - colección/representante
   - investigación/índice
   - nota/investigacion
-  - investigación/electrónica/componentes/microprocesador
-  - carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación
-  - carrera/ingeniería-en-informática/sisop/Kernel
-  - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
-  - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
-  - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
 aliases:
   - Procesador
   - Microprocesador
@@ -22,6 +15,8 @@ Vamos a registrar todos los microprocesadores que vayamos usando a lo largo de l
 
 ## Resumen
 ---
+#carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación #carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits #carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración #carrera/ingeniería-en-informática/sisop/Kernel #carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación #investigación/electrónica/componentes/microprocesador
+
 Controla el funcionamiento de la [[Computadora|computadora]] y lleva a cabo sus funciones de procesamiento de datos
 
 El procesador es un dispositivo electrónico que determina qué, cuándo y con cuáles datos una instrucción o acción debe ser ejecutada. Las partes de la unidad central de procesamiento son

@@ -2,10 +2,8 @@
 dia: 2025-03-10
 tags:
   - colección/componentes/pladaDeDesarrollo
-  - colección/representante
   - investigación/índice
   - nota/investigacion
-  - investigación/electrónica/componentes/pladaDeDesarrollo
 aliases:
   - Placa de desarrollo
 ---
@@ -15,6 +13,7 @@ Vamos a registrar todos las placas de desarrollo que vayamos usando a lo largo d
 
 ## Resumen
 ---
+#investigación/electrónica/componentes/pladaDeDesarrollo
 %% Hacer cuadro representativo de los temas %%
 
 ## Componentes

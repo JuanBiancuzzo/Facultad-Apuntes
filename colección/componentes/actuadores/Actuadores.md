@@ -2,11 +2,9 @@
 dia: 2025-03-10
 tags:
   - colección/componentes/actuador
-  - colección/representante
   - investigación/índice
   - nota/investigacion
   - investigación/electrónica/componentes/actuadores
-  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
 aliases:
   - Actuador
   - Actuator
@@ -19,6 +17,7 @@ Vamos a registrar todos los actuadores que vayamos usando a lo largo de las carr
 
 ## Resumen
 ---
+#carrera/ingeniería-electrónica/control/Respuesta-dinámica 
 Un actuador es un dispositivo que puede influenciar una variable controlada de un [[Proceso|proceso]]
 
 ## Componentes
