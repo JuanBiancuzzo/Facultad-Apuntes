@@ -17,12 +17,10 @@ class TipoReferencia {
         this.padre = padre;
 
         this.tipoDeDato = representacionPrevia 
-            ? tp.user.tipoDeDato().clase(tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia)
+            ? tp.user.tipoDeDato().clase(tp, this, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia)
             : null;
 
-        this.nuevoTipoDeDato = tp.user.tipoDeDato().clase.bind(null, tp, this.manejoTipoDeDatos, lenguajeActual);
-        
-        this.clonar = this.generarClone.bind(this, tp);
+        this.nuevoTipoDeDato = tp.user.tipoDeDato().clase.bind(null, tp, this, this.manejoTipoDeDatos, lenguajeActual);
     } 
 
     async actualizarDatos(respuestaDada, generarPreguntas, _generarError) {
@@ -95,5 +93,5 @@ class TipoReferencia {
 }
 
 module.exports = () => ({
-    clase: (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = []) => new TipoReferencia(tp, manejoTipoDeDatos, lenguaje, representacionPrevia),
+    clase: (tp, padre, manejoTipoDeDatos, lenguaje = null, representacionPrevia = []) => new TipoReferencia(tp, padre, manejoTipoDeDatos, lenguaje, representacionPrevia),
 });

@@ -31,26 +31,26 @@ class TipoDeDatoSimple {
 
         switch (representacionPrevia[this.config.tipo]) {
             case this.tipos.tupla:
-                this.valor = tp.user.tupla().clase(tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia[this.config.valor]);
+                this.valor = tp.user.tupla().clase(tp, this, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia[this.config.valor]);
                 break;
 
             case this.tipos.array:
-                this.valor = tp.user.array().clase(tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia[this.config.valor]);
+                this.valor = tp.user.array().clase(tp, this, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia[this.config.valor]);
                 break;
 
             case this.tipos.referencia:
-                this.valor = tp.user.referencia().clase(tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia[this.config.valor]);
+                this.valor = tp.user.referencia().clase(tp, this, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia[this.config.valor]);
                 break;
         }
 
-        this.crearTupla = tp.user.tupla().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
-        this.crearReferencia = tp.user.referencia().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
-        this.crearArray = tp.user.array().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
-        this.crearClase = tp.user.clase().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
-        this.crearStruct = tp.user.struct().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
-        this.crearGenerico = tp.user.generico().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
-        this.crearInterfaz = tp.user.interfaz().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
-        this.crearEnum = tp.user.enum().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearTupla = tp.user.tupla().clase.bind(null, tp, this, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearReferencia = tp.user.referencia().clase.bind(null, tp, this, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearArray = tp.user.array().clase.bind(null, tp, this, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearClase = tp.user.clase().clase.bind(null, tp, this, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearStruct = tp.user.struct().clase.bind(null, tp, this, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearGenerico = tp.user.generico().clase.bind(null, tp, this, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearInterfaz = tp.user.interfaz().clase.bind(null, tp, this, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearEnum = tp.user.enum().clase.bind(null, tp, this, this.manejoTipoDeDatos, this.lenguajeActual);
     }
 
     async actualizarDatos(respuesta, generarPreguntas, generarError) {
@@ -693,7 +693,7 @@ class TipoDeDatoSimple {
 }
 
 class TipoDeDatoMultiple {
-    constructor(tp, manejoTipoDeDatos, lenguaje, representacionPrevia = []) {
+    constructor(tp, padre, manejoTipoDeDatos, lenguaje, representacionPrevia = []) {
         const { SIMBOLOS, DATOS: { LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } } } = tp.user.constantes();
 
         this.lenguajeActual = (lenguaje in LENGUAJES) ? lenguaje : LENGUAJES.default;
@@ -707,12 +707,12 @@ class TipoDeDatoMultiple {
 
         this.datos = [];
         for (let representacionSimple of representacionPrevia) {
-            this.datos.push(new TipoDeDatoSimple(tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionSimple));
+            this.datos.push(new TipoDeDatoSimple(tp, padre, this.manejoTipoDeDatos, this.lenguajeActual, representacionSimple));
         }
 
         let lenguajeActual = this.lenguajeActual;
         this.informacion = {
-            nuevoTipoDeDato() { return new TipoDeDatoSimple(tp, manejoTipoDeDatos, lenguajeActual) },
+            nuevoTipoDeDato() { return new TipoDeDatoSimple(tp, padre, manejoTipoDeDatos, lenguajeActual) },
         }
     }
 
@@ -826,12 +826,12 @@ class TipoDeDatoMultiple {
 }
 
 module.exports = () => ({
-    clase: (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = null) => {
+    clase: (tp, padre, manejoTipoDeDatos, lenguaje = null, representacionPrevia = null) => {
         const { DATOS: { LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } } } = tp.user.constantes();
         let lenguajeActual = (lenguaje in LENGUAJES) ? lenguaje : LENGUAJES.default;
 
         return DATOS_LENGUAJES[lenguajeActual].tipoDeDato.multples
-            ? new TipoDeDatoMultiple(tp, manejoTipoDeDatos, lenguajeActual, representacionPrevia ? representacionPrevia : [])
-            : new TipoDeDatoSimple(tp, manejoTipoDeDatos, lenguajeActual, representacionPrevia ? representacionPrevia : {});
+            ? new TipoDeDatoMultiple(tp, padre, manejoTipoDeDatos, lenguajeActual, representacionPrevia ? representacionPrevia : [])
+            : new TipoDeDatoSimple(tp, padre, manejoTipoDeDatos, lenguajeActual, representacionPrevia ? representacionPrevia : {});
     },
 });

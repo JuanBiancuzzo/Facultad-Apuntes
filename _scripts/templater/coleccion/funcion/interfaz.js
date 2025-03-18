@@ -31,14 +31,11 @@ class TipoInterfaz {
 
         let metodosPrevios = representacionPrevia[this.config.metodos] ? representacionPrevia[this.config.metodos] : [];
         for (let metodo of metodosPrevios) {
-            this.metodos.push(tp.user.funcion().clase(tp, this.manejoTipoDeDatos, this.lenguajeActual, metodo));
+            this.metodos.push(tp.user.funcion().clase(tp, this, this.manejoTipoDeDatos, this.lenguajeActual, metodo));
         }
 
-        this.crearMetodo = tp.user.funcion().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
-        this.crearGenerico = tp.user.generico().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
-
-        // chequear si es necesario realmente eso
-        this.clonar = this.generarClone.bind(this, tp);
+        this.crearMetodo = tp.user.funcion().clase.bind(null, tp, this, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearGenerico = tp.user.generico().clase.bind(null, tp, this, this.manejoTipoDeDatos, this.lenguajeActual);
     } 
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
@@ -158,6 +155,6 @@ async function crearInterfaz() {
 }
 
 module.exports = () => ({
-    clase: (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new TipoInterfaz(tp, manejoTipoDeDatos, lenguaje, representacionPrevia),
+    clase: (tp, padre, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new TipoInterfaz(tp, padre, manejoTipoDeDatos, lenguaje, representacionPrevia),
     crear: crearInterfaz,
-})
+});

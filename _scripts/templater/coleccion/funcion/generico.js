@@ -30,14 +30,13 @@ class TipoGenerico {
 
         let interfacesPrevias = representacionPrevia[this.config.interfaces] ? representacionPrevia[this.config.interfaces] : [];
         for (let metodo of interfacesPrevias) {
-            this.interfaces.push(tp.user.interfaz(tp, this.manejoTipoDeDatos, this.lenguajeActual, metodo));
+            this.interfaces.push(tp.user.interfaz(tp, this, this.manejoTipoDeDatos, this.lenguajeActual, metodo));
         }
 
         let lenguajeActual = this.lenguajeActual;
         this.informacion = {
-            nuevaInterfaz() { return tp.user.interfaz(tp, manejoTipoDeDatos, lenguajeActual); },
+            nuevaInterfaz() { return tp.user.interfaz(tp, this, manejoTipoDeDatos, lenguajeActual); },
         }
-        this.clonar = this.generarClone.bind(this, tp);
     } 
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
@@ -145,4 +144,6 @@ class TipoGenerico {
     }
 }
 
-module.exports = (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new TipoGenerico(tp, manejoTipoDeDatos, lenguaje, representacionPrevia);
+module.exports = () => ({
+    clase: (tp, padre, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new TipoGenerico(tp, padre, manejoTipoDeDatos, lenguaje, representacionPrevia)
+});

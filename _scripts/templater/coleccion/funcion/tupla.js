@@ -21,12 +21,10 @@ class TipoTupla {
 
         this.datos = [];
         for (let representacionTipoDeDato of representacionPrevia) {
-            this.datos.push(tp.user.tipoDeDato().clase(tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionTipoDeDato));
+            this.datos.push(tp.user.tipoDeDato().clase(tp, this, this.manejoTipoDeDatos, this.lenguajeActual, representacionTipoDeDato));
         }
 
-        this.crearTipoDeDato = tp.user.tipoDeDato().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
-        
-        this.clonar = this.generarClone.bind(this, tp);
+        this.crearTipoDeDato = tp.user.tipoDeDato().clase.bind(null, tp, this, this.manejoTipoDeDatos, this.lenguajeActual);
     } 
 
     async actualizarDatos(respuestaDada, generarPreguntas, _generarError) {
@@ -121,5 +119,5 @@ class TipoTupla {
 }
 
 module.exports = () => ({
-    clase: (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = []) => new TipoTupla(tp, manejoTipoDeDatos, lenguaje, representacionPrevia),
+    clase: (tp, padre, manejoTipoDeDatos, lenguaje = null, representacionPrevia = []) => new TipoTupla(tp, padre, manejoTipoDeDatos, lenguaje, representacionPrevia),
 });

@@ -24,11 +24,11 @@ class TipoArray {
         this.cantidad = representacionPrevia[this.config.cantidad];
         if (representacionPrevia[this.config.tipoDeDato]) {
             this.tipoDeDato = tp.user.tipoDeDato().clase(
-                tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia[this.config.tipoDeDato]
+                tp, this, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia[this.config.tipoDeDato]
             );
         }
 
-        this.crearTipoDeDato = tp.user.tipoDeDato().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearTipoDeDato = tp.user.tipoDeDato().clase.bind(null, tp, this, this.manejoTipoDeDatos, this.lenguajeActual);
     } 
 
     async actualizarDatos(respuesta, generarPreguntas, generarError) {
@@ -154,5 +154,5 @@ class TipoArray {
 }
 
 module.exports = () => ({
-    clase: (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new TipoArray(tp, manejoTipoDeDatos, lenguaje, representacionPrevia),
+    clase: (tp, padre, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new TipoArray(tp, padre, manejoTipoDeDatos, lenguaje, representacionPrevia),
 });

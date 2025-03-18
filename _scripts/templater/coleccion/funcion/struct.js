@@ -39,20 +39,18 @@ class TipoStruct {
         let variablesEstaticasPrevias = representacionPrevia[this.config.variableEstaticas] 
             ? representacionPrevia[this.config.variableEstaticas] : [];
         for (let variableEstatica of variablesEstaticasPrevias) {
-            this.variablesEstaticas.push(tp.user.parametro().clase(tp, this.manejoTipoDeDatos, this.lenguajeActual, variableEstatica));
+            this.variablesEstaticas.push(tp.user.parametro().clase(tp, this, this.manejoTipoDeDatos, this.lenguajeActual, variableEstatica));
         }
 
         let camposPrevios = representacionPrevia[this.config.campos] 
             ? representacionPrevia[this.config.campos] : [];
         for (let campo of camposPrevios) {
-            this.campos.push(tp.user.parametro().clase(tp, this.manejoTipoDeDatos, this.lenguajeActual, campo));
+            this.campos.push(tp.user.parametro().clase(tp, this, this.manejoTipoDeDatos, this.lenguajeActual, campo));
         }
 
-        this.crearCampo = tp.user.parametro().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
-        this.crearVariableEstatica = tp.user.parametro().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
-        this.crearGenerico = tp.user.generico().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
-
-        this.clonar = this.generarClone.bind(this, tp);
+        this.crearCampo = tp.user.parametro().clase.bind(null, tp, this, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearVariableEstatica = tp.user.parametro().clase.bind(null, tp, this, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearGenerico = tp.user.generico().clase.bind(null, tp, this, this.manejoTipoDeDatos, this.lenguajeActual);
     } 
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
@@ -271,6 +269,6 @@ async function crearStruct() {
 }
 
 module.exports = () => ({
-    clase: (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new TipoStruct(tp, manejoTipoDeDatos, lenguaje, representacionPrevia),
+    clase: (tp, padre, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new TipoStruct(tp, padre, manejoTipoDeDatos, lenguaje, representacionPrevia),
     crear: crearStruct,
 })

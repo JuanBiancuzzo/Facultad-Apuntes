@@ -56,25 +56,25 @@ class TipoClase {
         let variablesEstaticasPrevias = representacionPrevia[this.config.variableEstaticas]
             ? representacionPrevia[this.config.variableEstaticas] : [];
         for (let variableEstatica of variablesEstaticasPrevias) {
-            this.variablesEstaticas.push(tp.user.parametro().clase(tp, this.manejoTipoDeDatos, this.lenguajeActual, variableEstatica));
+            this.variablesEstaticas.push(tp.user.parametro().clase(tp, this, this.manejoTipoDeDatos, this.lenguajeActual, variableEstatica));
         }
 
         let camposPrevios = representacionPrevia[this.config.campos]
             ? representacionPrevia[this.config.campos] : [];
         for (let campo of camposPrevios) {
-            this.campos.push(tp.user.parametro().clase(tp, this.manejoTipoDeDatos, this.lenguajeActual, campo));
+            this.campos.push(tp.user.parametro().clase(tp, this, this.manejoTipoDeDatos, this.lenguajeActual, campo));
         }
 
         let metodosPrevios = representacionPrevia[this.config.metodos]
             ? representacionPrevia[this.config.metodos] : [];
         for (let metodo of metodosPrevios) {
-            this.metodos.push(tp.user.funcion().clase(tp, this.manejoTipoDeDatos, this.lenguajeActual, metodo));
+            this.metodos.push(tp.user.funcion().clase(tp, this, this.manejoTipoDeDatos, this.lenguajeActual, metodo));
         }
 
-        this.crearCampo = tp.user.parametro().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
-        this.crearVariableEstatica = tp.user.parametro().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
-        this.crearMetodo = tp.user.funcion().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
-        this.crearGenerico = tp.user.generico().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearCampo = tp.user.parametro().clase.bind(null, tp, this, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearVariableEstatica = tp.user.parametro().clase.bind(null, tp, this, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearMetodo = tp.user.funcion().clase.bind(null, tp, this, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearGenerico = tp.user.generico().clase.bind(null, tp, this, this.manejoTipoDeDatos, this.lenguajeActual);
     } 
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
@@ -398,6 +398,6 @@ async function crearClase() {
 }
 
 module.exports = () => ({
-    clase: (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new TipoClase(tp, manejoTipoDeDatos, lenguaje, representacionPrevia),
+    clase: (tp, padre, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new TipoClase(tp, padre, manejoTipoDeDatos, lenguaje, representacionPrevia),
     crear: crearClase
 })

@@ -24,13 +24,11 @@ class Parametro {
         this.valorPorDefecto = representacionPrevia[this.config.valorPorDefecto];
         if (representacionPrevia[this.config.tipoDeDato]) {
             this.tipoDeDato = tp.user.tipoDeDato().clase(
-                tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia[this.config.tipoDeDato]
+                tp, this, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia[this.config.tipoDeDato]
             );
         }
         
-        this.crearTipoDeDato = tp.user.tipoDeDato().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
-
-        this.clonar = this.generarClone.bind(this, tp);
+        this.crearTipoDeDato = tp.user.tipoDeDato().clase.bind(null, tp, this, this.manejoTipoDeDatos, this.lenguajeActual);
     } 
 
     async actualizarDatos(respuesta, generarPreguntas, generarError) {
@@ -186,5 +184,5 @@ class Parametro {
 }
 
 module.exports = () => ({
-    clase: (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new Parametro(tp, manejoTipoDeDatos, lenguaje, representacionPrevia),
+    clase: (tp, padre, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new Parametro(tp, padre, manejoTipoDeDatos, lenguaje, representacionPrevia),
 });

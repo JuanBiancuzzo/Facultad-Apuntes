@@ -33,21 +33,19 @@ class Funcion {
         let parametrosPrevios = representacionPrevia[this.config.parametros] 
             ? representacionPrevia[this.config.parametros] : [];
         for (let parametroPrevio of parametrosPrevios) {
-            this.parametros.push(tp.user.parametro(tp, this.manejoTipoDeDatos, this.lenguajeActual, parametroPrevio));
+            this.parametros.push(tp.user.parametro(tp, this, this.manejoTipoDeDatos, this.lenguajeActual, parametroPrevio));
         }
 
         if (representacionPrevia[this.config.return]) {
-            this.return = tp.user.retrun(tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia[this.config.return]);
+            this.return = tp.user.retrun(tp, this, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia[this.config.return]);
         }
 
         let lenguajeActual = this.lenguajeActual;
         this.informacion = {
-            nuevoParametro() { return tp.user.parametro(tp, manejoTipoDeDatos, lenguajeActual); },
-            nuevoReturn() { return tp.user.return(tp, manejoTipoDeDatos, lenguajeActual); },
-            nuevoGenerico() { return tp.user.generico(tp, manejoTipoDeDatos, lenguajeActual); }
+            nuevoParametro() { return tp.user.parametro(tp, this, manejoTipoDeDatos, lenguajeActual); },
+            nuevoReturn() { return tp.user.return(tp, this, manejoTipoDeDatos, lenguajeActual); },
+            nuevoGenerico() { return tp.user.generico(tp, this, manejoTipoDeDatos, lenguajeActual); }
         };
-
-        this.clonar = this.generarClone.bind(this, tp);
     } 
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
@@ -332,6 +330,6 @@ async function crearFuncion(tp, representacionPrevia = null) {
 }
 
 module.exports = () => ({
-    clase: (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new Funcion(tp, manejoTipoDeDatos, lenguaje, representacionPrevia),
+    clase: (tp, padre, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new Funcion(tp, padre, manejoTipoDeDatos, lenguaje, representacionPrevia),
     crear: crearFuncion,
 });
