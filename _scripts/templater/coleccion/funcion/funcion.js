@@ -45,6 +45,7 @@ class Funcion {
             nuevoReturn() { return tp.user.return(tp, manejoTipoDeDatos, lenguajeActual); },
             nuevoGenerico() { return tp.user.generico(tp, manejoTipoDeDatos, lenguajeActual); }
         };
+
         this.clonar = this.generarClone.bind(this, tp);
     } 
 

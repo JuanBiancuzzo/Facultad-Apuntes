@@ -1,7 +1,5 @@
 const MODIFICCAR_TIPO_DE_DATO = "modificar tipo de dato";
 
-const SALIR = "salir";
-
 class TipoArray {
     constructor(tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
         const { 
@@ -24,17 +22,12 @@ class TipoArray {
 
         this.cantidad = representacionPrevia[this.config.cantidad];
         if (representacionPrevia[this.config.tipoDeDato]) {
-            this.tipoDeDato = tp.user.tipoDeDato(
+            this.tipoDeDato = tp.user.tipoDeDato().clase(
                 tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia[this.config.tipoDeDato]
             );
         }
 
-        let lenguajeActual = this.lenguajeActual;
-        this.informacion = {
-            nuevoTipoDeDato() {
-                return tp.user.tipoDeDato(tp, manejoTipoDeDatos, lenguajeActual);
-            }
-        }
+        this.crearTipoDeDato = tp.user.tipoDeDato().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
     } 
 
     preguntarDatos(datosRecolectados = []) {
@@ -45,12 +38,9 @@ class TipoArray {
     }
 
     async actualizarDatos(respuesta, generarPreguntas, generarError) {
-        if (respuesta == SALIR) 
-            return true;
-
         switch (respuesta) {
             case this.config.tipoDeDato:
-                this.tipoDeDato = this.informacion.nuevoTipoDeDato();
+                this.tipoDeDato = this.crearTipoDeDato();
                 await generarPreguntas.formulario(this.tipoDeDato, "Ingresar el tipo de dato del array");
                 break;
 
@@ -68,8 +58,6 @@ class TipoArray {
                 this.cantidad = cantidad;
                 break;
         }
-
-        return false;
     }
 
     generarPreguntas() {
@@ -171,4 +159,6 @@ class TipoArray {
     }
 }
 
-module.exports = (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new TipoArray(tp, manejoTipoDeDatos, lenguaje, representacionPrevia);
+module.exports = () => ({
+    clase: (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new TipoArray(tp, manejoTipoDeDatos, lenguaje, representacionPrevia),
+});

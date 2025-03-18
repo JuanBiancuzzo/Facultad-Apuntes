@@ -30,15 +30,13 @@ class TipoInterfaz {
 
         let metodosPrevios = representacionPrevia[this.config.metodos] ? representacionPrevia[this.config.metodos] : [];
         for (let metodo of metodosPrevios) {
-            this.metodos.push(tp.user.funcion(tp, this.manejoTipoDeDatos, this.lenguajeActual, metodo));
+            this.metodos.push(tp.user.funcion().clase(tp, this.manejoTipoDeDatos, this.lenguajeActual, metodo));
         }
 
-        let lenguajeActual = this.lenguajeActual;
-        this.informacion = {
-            nuevoMetodo() { return tp.user.funcion(tp, manejoTipoDeDatos, lenguajeActual); },
-            nuevoGenerico() { return tp.user.generico(tp, manejoTipoDeDatos, lenguajeActual); }
-        }
+        this.crearMetodo = tp.user.funcion().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearGenerico = tp.user.generico().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
 
+        // chequear si es necesario realmente eso
         this.clonar = this.generarClone.bind(this, tp);
     } 
 
@@ -74,7 +72,7 @@ class TipoInterfaz {
                 break;
 
             case this.config.metodos:
-                let nuevoMetodo = this.informacion.nuevoMetodo();
+                let nuevoMetodo = this.crearMetodo();
                 await generarPreguntas.formulario(nuevoMetodo, "Ingresar un método para la interfaz");
                 this.metodos.push(nuevoMetodo);
                 break;

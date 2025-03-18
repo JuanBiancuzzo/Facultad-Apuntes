@@ -1,8 +1,6 @@
 const AGREGAR = "agregar";
 const MODIFICAR = "modificar";
 
-const SALIR = "salir";
-
 class TipoReferencia {
     constructor(tp, manejoTipoDeDatos, lenguaje, representacionPrevia = null) {
         this.cte = tp.user.constantes();
@@ -18,13 +16,11 @@ class TipoReferencia {
         this.manejoTipoDeDatos = manejoTipoDeDatos;
 
         this.tipoDeDato = representacionPrevia 
-            ? tp.user.tipoDeDato(tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia)
+            ? tp.user.tipoDeDato().clase(tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia)
             : null;
 
-        let lenguajeActual = this.lenguajeActual;
-        this.informacion = {
-            nuevoTipoDeDato() { return tp.user.tipoDeDato(tp, manejoTipoDeDatos, lenguajeActual) },
-        }
+        this.nuevoTipoDeDato = tp.user.tipoDeDato().clase.bind(null, tp, this.manejoTipoDeDatos, lenguajeActual);
+        
         this.clonar = this.generarClone.bind(this, tp);
     } 
 
@@ -48,7 +44,7 @@ class TipoReferencia {
 
         switch (respuesta) {
             case AGREGAR:
-                let nuevoTipoDeDato = this.informacion.nuevoTipoDeDato();
+                let nuevoTipoDeDato = this.nuevoTipoDeDato();
                 await generarPreguntas.formulario(nuevoTipoDeDato, "Ingresar el tipo de dato");
                 this.datos.push(nuevoTipoDeDato);
                 break;
@@ -112,4 +108,6 @@ class TipoReferencia {
     }
 }
 
-module.exports = (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = []) => new TipoReferencia(tp, manejoTipoDeDatos, lenguaje, representacionPrevia);
+module.exports = () => ({
+    clase: (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = []) => new TipoReferencia(tp, manejoTipoDeDatos, lenguaje, representacionPrevia),
+});

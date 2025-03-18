@@ -4,8 +4,6 @@ const ELIMINAR = "eliminar";
 
 const CANTIDAD_MINIMA = 2;
 
-const SALIR = "salir";
-
 class TipoTupla {
     constructor(tp, manejoTipoDeDatos, lenguaje, representacionPrevia = []) {
         this.cte = tp.user.constantes();
@@ -22,13 +20,11 @@ class TipoTupla {
 
         this.datos = [];
         for (let representacionTipoDeDato of representacionPrevia) {
-            this.datos.push(tp.user.tipoDeDato(tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionTipoDeDato));
+            this.datos.push(tp.user.tipoDeDato().clase(tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionTipoDeDato));
         }
 
-        let lenguajeActual = this.lenguajeActual;
-        this.informacion = {
-            nuevoTipoDeDato() { return tp.user.tipoDeDato(tp, manejoTipoDeDatos, lenguajeActual) },
-        }
+        this.crearTipoDeDato = tp.user.tipoDeDato().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
+        
         this.clonar = this.generarClone.bind(this, tp);
     } 
 
@@ -54,7 +50,7 @@ class TipoTupla {
 
         switch (respuesta) {
             case AGREGAR:
-                let nuevoTipoDeDato = this.informacion.nuevoTipoDeDato();
+                let nuevoTipoDeDato = this.crearTipoDeDato();
                 await generarPreguntas.formulario(nuevoTipoDeDato, "Ingresar el tipo de dato");
                 this.datos.push(nuevoTipoDeDato);
                 break;
@@ -140,4 +136,6 @@ class TipoTupla {
     }
 }
 
-module.exports = (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = []) => new TipoTupla(tp, manejoTipoDeDatos, lenguaje, representacionPrevia);
+module.exports = () => ({
+    clase: (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = []) => new TipoTupla(tp, manejoTipoDeDatos, lenguaje, representacionPrevia),
+});

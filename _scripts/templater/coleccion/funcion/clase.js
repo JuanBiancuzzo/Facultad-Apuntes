@@ -55,28 +55,25 @@ class TipoClase {
         let variablesEstaticasPrevias = representacionPrevia[this.config.variableEstaticas]
             ? representacionPrevia[this.config.variableEstaticas] : [];
         for (let variableEstatica of variablesEstaticasPrevias) {
-            this.variablesEstaticas.push(tp.user.parametro(tp, this.manejoTipoDeDatos, this.lenguajeActual, variableEstatica));
+            this.variablesEstaticas.push(tp.user.parametro().clase(tp, this.manejoTipoDeDatos, this.lenguajeActual, variableEstatica));
         }
 
         let camposPrevios = representacionPrevia[this.config.campos]
             ? representacionPrevia[this.config.campos] : [];
         for (let campo of camposPrevios) {
-            this.campos.push(tp.user.parametro(tp, this.manejoTipoDeDatos, this.lenguajeActual, campo));
+            this.campos.push(tp.user.parametro().clase(tp, this.manejoTipoDeDatos, this.lenguajeActual, campo));
         }
 
         let metodosPrevios = representacionPrevia[this.config.metodos]
             ? representacionPrevia[this.config.metodos] : [];
         for (let metodo of metodosPrevios) {
-            this.metodos.push(tp.user.funcion(tp, this.manejoTipoDeDatos, this.lenguajeActual, metodo));
+            this.metodos.push(tp.user.funcion().clase(tp, this.manejoTipoDeDatos, this.lenguajeActual, metodo));
         }
 
-        let lenguajeActual = this.lenguajeActual;
-        this.informacion = {
-            nuevoCampo() { return tp.user.parametro(tp, manejoTipoDeDatos, lenguajeActual); },
-            nuevaVariableEstatica() { return tp.user.parametro(tp, manejoTipoDeDatos, lenguajeActual); },
-            nuevoMetodo() { return tp.user.funcion(tp, manejoTipoDeDatos, lenguajeActual); },
-            nuevoGenerico() { return tp.user.generico(tp, manejoTipoDeDatos, lenguajeActual); },
-        }
+        this.crearCampo = tp.user.parametro().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearVariableEstatica = tp.user.parametro().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearMetodo = tp.user.funcion().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearGenerico = tp.user.generico().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
     } 
 
     async definirGenericos(generarPreguntas, generarError) {
@@ -128,7 +125,7 @@ class TipoClase {
                 break;
 
             case this.config.variableEstaticas: 
-                let nuevaVariableEstatica = this.informacion.nuevaVariableEstatica();
+                let nuevaVariableEstatica = this.crearVariableEstatica();
                 await generarPreguntas.formulario(nuevaVariableEstatica, "Ingresar los datos de la variable estatica");
                 this.variablesEstaticas.push(nuevaVariableEstatica);
                 break;
@@ -143,7 +140,7 @@ class TipoClase {
                 break;
 
             case this.config.campos:
-                let nuevoCampo = this.informacion.nuevoCampo();
+                let nuevoCampo = this.crearCampo();
                 await generarPreguntas.formulario(nuevoCampo, "Ingresar los datos del campo");
                 this.campos.push(nuevoCampo);
                 break;
@@ -158,7 +155,7 @@ class TipoClase {
                 break;
 
             case this.config.metodos:
-                let nuevoMetodo = this.informacion.nuevoMetodo();
+                let nuevoMetodo = this.crearMetodo();
                 await generarPreguntas.formulario(nuevoMetodo, "Ingresar los datos del método");
                 this.metodos.push(nuevoMetodo);
                 break;
@@ -173,7 +170,7 @@ class TipoClase {
                 break;
 
             case this.config.genericos:
-                let nuevoGenerico = this.informacion.nuevoGenerico();
+                let nuevoGenerico = this.crearGenerico();
                 let nuevoIdGenerico = this.manejoTipoDeDatos.agregar(this.tipos.generico, nuevoGenerico);
                 await generarPreguntas.formulario(nuevoGenerico, "Ingresar los datos del generico");
                 this.idGenericos.push(nuevoIdGenerico);

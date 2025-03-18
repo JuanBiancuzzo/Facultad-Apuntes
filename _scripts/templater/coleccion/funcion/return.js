@@ -1,7 +1,5 @@
 const MODIFICCAR_TIPO_DE_DATO = "modificar tipo de dato";
 
-const SALIR = "salir";
-
 class Return {
     constructor(tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
         const { 
@@ -24,15 +22,13 @@ class Return {
         this.tipoDeDato = null;
 
         if (representacionPrevia[this.config.tipoDeDato]) {
-            this.tipoDeDato = tp.user.tipoDeDato(
+            this.tipoDeDato = tp.user.tipoDeDato().clase(
                 tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia[this.config.tipoDeDato]
             );
         }
 
-        let lenguajeActual = this.lenguajeActual;
-        this.informacion = {
-            nuevoTipoDeDato() { return tp.user.tipoDeDato(tp, manejoTipoDeDatos, lenguajeActual); }
-        }
+        this.crearTipoDeDato = tp.user.tipoDeDato().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
+        
         this.clonar = this.generarClone.bind(this, tp);
     } 
 
@@ -63,7 +59,7 @@ class Return {
                 break;
 
             case this.config.tipoDeDato:
-                this.tipoDeDato = this.informacion.nuevoTipoDeDato();
+                this.tipoDeDato = this.crearTipoDeDato();
                 await generarPreguntas.formulario(this.tipoDeDato, "Ingresar datos del tipo de dato");
                 break;
             
@@ -124,4 +120,6 @@ class Return {
     }
 }
 
-module.exports = (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new Return(tp, manejoTipoDeDatos, lenguaje, representacionPrevia);
+module.exports = () => ({
+    clase: (tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new Return(tp, manejoTipoDeDatos, lenguaje, representacionPrevia),
+})

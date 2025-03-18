@@ -7,8 +7,6 @@ const ELIMINAR_VARIABLE_ESTATICAS = "eliminar variable estatica";
 const CANTIDAD_MINIMA_CAMPOS = 1;
 const CANTIDAD_MINIMA_VARIABLE_ESTATICAS = 0;
 
-const SALIR = "salir";
-
 class TipoStruct {
     constructor(tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
         const { 
@@ -40,21 +38,19 @@ class TipoStruct {
         let variablesEstaticasPrevias = representacionPrevia[this.config.variableEstaticas] 
             ? representacionPrevia[this.config.variableEstaticas] : [];
         for (let variableEstatica of variablesEstaticasPrevias) {
-            this.variablesEstaticas.push(tp.user.parametro(tp, this.manejoTipoDeDatos, this.lenguajeActual, variableEstatica));
+            this.variablesEstaticas.push(tp.user.parametro().clase(tp, this.manejoTipoDeDatos, this.lenguajeActual, variableEstatica));
         }
 
         let camposPrevios = representacionPrevia[this.config.campos] 
             ? representacionPrevia[this.config.campos] : [];
         for (let campo of camposPrevios) {
-            this.campos.push(tp.user.parametro(tp, this.manejoTipoDeDatos, this.lenguajeActual, campo));
+            this.campos.push(tp.user.parametro().clase(tp, this.manejoTipoDeDatos, this.lenguajeActual, campo));
         }
 
-        let lenguajeActual = this.lenguajeActual;
-        this.informacion = {
-            nuevoCampo() { return tp.user.parametro(tp, manejoTipoDeDatos, lenguajeActual); },
-            nuevaVariableEstatica() { return tp.user.parametro(tp, manejoTipoDeDatos, lenguajeActual); },
-            nuevoGenerico() { return tp.user.generico(tp, manejoTipoDeDatos, lenguajeActual); }
-        }
+        this.crearCampo = tp.user.parametro().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearVariableEstatica = tp.user.parametro().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
+        this.crearGenerico = tp.user.generico().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
+
         this.clonar = this.generarClone.bind(this, tp);
     } 
 
@@ -104,7 +100,7 @@ class TipoStruct {
                 break;
 
             case this.config.variableEstaticas: 
-                let nuevaVariableEstatica = this.informacion.nuevaVariableEstatica();
+                let nuevaVariableEstatica = this.crearVariableEstatica();
                 await generarPreguntas.formulario(nuevaVariableEstatica, "Ingresar los datos de la variable estatica");
                 this.variablesEstaticas.push(nuevaVariableEstatica);
                 break;
@@ -119,7 +115,7 @@ class TipoStruct {
                 break;
 
             case this.config.campos:
-                let nuevoCampo = this.informacion.nuevoCampo();
+                let nuevoCampo = this.crearCampo();
                 await generarPreguntas.formulario(nuevoCampo, "Ingresar los datos del campo");
                 this.campos.push(nuevoCampo);
                 break;
