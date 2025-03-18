@@ -4,7 +4,13 @@ tags:
   - carrera/ingeniería-en-informática/proba/Variables-y-vectores-aleatorios
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Variables-y-vectores-aleatorios
+aliases:
+  - PDF marginal
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Dada una [[Función de densidad|función de densidad conjunta]], con $X$, $Y$ dos [[Variable aleatoria continua|variable aleatoria continua]] que forman un [[Vector aleatorio|vector aleatorio]], se define la función de densidad marginal como $$ \begin{align} 

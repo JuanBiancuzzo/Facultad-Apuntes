@@ -5,8 +5,13 @@ tags:
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Variables-y-vectores-aleatorios
   - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
+aliases:
+  - PMF marginal
 etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Dado una [[Función de masa de probabilidad#Para variable aleatoria|función de probabilidad conjunta]] $p_{X, Y}$ se define la función de probabilidad marginal como $$ \begin{align}

@@ -1,6 +1,6 @@
 ---
 dia: 2025-03-14
-etapa: ampliar
+etapa: empezado
 referencias:
   - "871"
   - "898"
@@ -119,6 +119,9 @@ Considerando un sistema realimentado ideal
 \end{tikzpicture}
 \end{document}
 ```
+
+
+La señal de retroalimentación $x_f$ es sustraída de la fuente de señales $x_s$, que es la entrada al [[Amplificador operacional|amplificador]] de retroalimentación completo, para producir la señal $x_i$, que es la entrada al amplificador básico $$ x_i = x_s - x_f $$
 
 
 Se tiene 4 modelos de retroalimentación 
