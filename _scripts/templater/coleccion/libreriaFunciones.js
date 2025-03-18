@@ -18,7 +18,7 @@ const MODIFICAR_TIPO_ESTRUCTURA = "modificar estructura";
         la libreria, modulo/s y estructura
 */
 class Libreria {
-    constructor(tp) {
+    constructor(tp, manejarTipoDato) {
         const { 
             SIMBOLOS, DATOS: { 
                 FUNCIONES: DATOS_FUNCIONES, LENGUAJE: { lenguajes: DATOS_LENGUAJES }
@@ -30,6 +30,7 @@ class Libreria {
         this.tagPorNombre = tp.user.tagPorNombre;
         this.config = DATOS_FUNCIONES;
         this.tipos = DATOS_FUNCIONES.tipoDeDato.tipo;
+        this.manejarTipoDato = manejarTipoDato;
 
         let lenguajesDisponibles = Object.values(DATOS_LENGUAJES);
         lenguajesDisponibles.remove(DATOS_LENGUAJES.default);
@@ -42,7 +43,7 @@ class Libreria {
             let posibleLenguaje = dv.pages(`#${tagLenguaje} and #${tagRepresentante}`).first(); 
             if (!posibleLenguaje) continue;
 
-            this.lenguajesDisponibles.push(tp.user.lenguaje().clase(tp, posibleLenguaje));
+            this.lenguajesDisponibles.push(tp.user.lenguaje().clase(tp, this.manejarTipoDato, posibleLenguaje));
         }
 
         this.tipoEstructura = null;
@@ -280,7 +281,9 @@ class Libreria {
 async function crearLibreria(tp) {
     const preguntar = tp.user.preguntar();
 
-    let libreria = new Libreria(tp);
+    let manejador = tp.user.manejarTipoDato(tp);
+
+    let libreria = new Libreria(tp, manejador);
     await preguntar.formulario(tp, libreria, "Ingresar información de la libreria");
 
     let representacion = libreria.generarRepresentacion();

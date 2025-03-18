@@ -1,7 +1,7 @@
 const MODIFICCAR_TIPO_DE_DATO = "modificar tipo de dato";
 
 class TipoArray {
-    constructor(tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
+    constructor(tp, padre, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
         const { 
             SIMBOLOS, DATOS: { 
                 FUNCIONES: { array: DATOS_ARRAY },
@@ -12,6 +12,7 @@ class TipoArray {
         this.lenguajeActual = (lenguaje in LENGUAJES) ? lenguaje : LENGUAJES.default;
         this.lenguajes = LENGUAJES; 
         this.datosLenguaje = DATOS_LENGUAJES[this.lenguajeActual];
+        this.padre = padre;
 
         if (!this.datosLenguaje.array.tieneArray) throw Error(`El lenguaje ${this.lenguajeActual} no tiene array`);
 
@@ -29,13 +30,6 @@ class TipoArray {
 
         this.crearTipoDeDato = tp.user.tipoDeDato().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
     } 
-
-    preguntarDatos(datosRecolectados = []) {
-        if (this.tipoDeDato?.esValido()) {
-            this.tipoDeDato.preguntarDatos(datosRecolectados);
-        }
-        return datosRecolectados;
-    }
 
     async actualizarDatos(respuesta, generarPreguntas, generarError) {
         switch (respuesta) {

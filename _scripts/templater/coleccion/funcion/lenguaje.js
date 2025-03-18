@@ -1,7 +1,12 @@
 class Lenguaje {
-    constructor(tp, representacionPrevia) {
+    constructor(tp, manejarTipoDato, representacionPrevia) {
         const { 
-            SIMBOLOS, DATOS: { FUNCIONES: { lenguaje: DATOS_LENGUAJE } },
+            SIMBOLOS, DATOS: { 
+                FUNCIONES: { 
+                    lenguaje: DATOS_LENGUAJE, tipoDeDato: { tipo: DATOS_TIPOS },
+                    manejador: DATOS_MANEJADOR,
+                } 
+            },
             TAGS: { coleccion: { self: TAG_COLECCION, funciones: TAGS_FUNCIONES } }, 
         } = tp.user.constantes();
         const dv = app.plugins.plugins.dataview.api;
@@ -10,6 +15,7 @@ class Lenguaje {
         this.simbolos = SIMBOLOS;
         this.config = DATOS_LENGUAJE;
         this.tags = TAGS_FUNCIONES;
+        this.manejarTipoDato = manejarTipoDato;
          
         this.nombre = representacionPrevia[this.config.nombre];
         this.temaInvestigacion = representacionPrevia[this.config.temaInvestigacion];
@@ -17,9 +23,15 @@ class Lenguaje {
         let tagLenguaje = `${TAGS_FUNCIONES.self}/${TAGS_FUNCIONES.lenguajes[this.nombre]}`;
         let tagRepresentante = `${TAG_COLECCION}/${TAGS_FUNCIONES.self}`;
 
+        let dvSelf = dv.pages(`#${tagLenguaje} and #${tagRepresentante}/${TAGS_FUNCIONES.lenguajes.self}`)
+            .first();
+        for (let { [DATOS_MANEJADOR.id]: id, [DATOS_MANEJADOR.valor]: valor } of dvSelf[this.config.tiposPrimitivos]) {
+            this.manejarTipoDato.incorporarPrevio(id, DATOS_TIPOS.primitivo, valor);
+        }
+
         this.librerias = [];
         for (let libreria of dv.pages(`#${tagLenguaje} and #${tagRepresentante}/${TAGS_FUNCIONES.libreria}`)) {
-            this.librerias.push(tp.user.libreria().clase(tp, this, libreria));
+            this.librerias.push(tp.user.libreria().clase(tp, this, this.manejarTipoDato, libreria));
         }
     }
 

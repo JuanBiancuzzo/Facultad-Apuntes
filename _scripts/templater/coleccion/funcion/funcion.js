@@ -6,7 +6,7 @@ const MODIFICAR_RETURN = "modificar return";
 const CANTIDAD_MINIMA = 0;
 
 class Funcion {
-    constructor(tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
+    constructor(tp, padre, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
         const { 
             SIMBOLOS, DATOS: { 
                 FUNCIONES: { funcion: DATOS_FUNCION, manejador: DATOS_MANEJADOR, tipoDeDato: { tipo: DATOS_TIPOS } }, 
@@ -22,6 +22,7 @@ class Funcion {
         this.manejador = DATOS_MANEJADOR;
         this.tipos = DATOS_TIPOS;
         this.simbolos = SIMBOLOS;
+        this.padre = padre;
 
         this.manejoTipoDeDatos = manejoTipoDeDatos;
 
@@ -48,26 +49,6 @@ class Funcion {
 
         this.clonar = this.generarClone.bind(this, tp);
     } 
-
-    generarClone(tp) {
-        return new Funcion(tp, this.manejoTipoDeDatos, this.lenguajeActual, this.generarRepresentacion());
-    }
-
-    async definirGenericos(generarPreguntas, generarError) {
-
-    }
-
-    preguntarDatos(datosRecolectados = []) {
-        for (let parametro of this.parametros) {
-            if (parametro?.esValido()) {
-                parametro.preguntarDatos(datosRecolectados);
-            }
-        }
-        if (this.return?.esValido()) {
-            this.return.preguntarDatos(datosRecolectados);
-        }
-        return datosRecolectados;
-    }
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
         let [respuesta, indice] = respuestaDada.split("-");

@@ -5,7 +5,7 @@ const ELIMINAR = "eliminar";
 const CANTIDAD_MINIMA = 2;
 
 class TipoTupla {
-    constructor(tp, manejoTipoDeDatos, lenguaje, representacionPrevia = []) {
+    constructor(tp, padre, manejoTipoDeDatos, lenguaje, representacionPrevia = []) {
         this.cte = tp.user.constantes();
         const { SIMBOLOS, DATOS: { LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } } } = this.cte;
 
@@ -17,6 +17,7 @@ class TipoTupla {
 
         this.simbolos = SIMBOLOS;
         this.manejoTipoDeDatos = manejoTipoDeDatos;
+        this.padre = padre;
 
         this.datos = [];
         for (let representacionTipoDeDato of representacionPrevia) {
@@ -27,23 +28,6 @@ class TipoTupla {
         
         this.clonar = this.generarClone.bind(this, tp);
     } 
-
-    generarClone(tp) {
-        return new TipoTupla(tp, this.manejoTipoDeDatos, this.lenguajeActual, this.generarRepresentacion());
-    }
-
-    async definirGenericos(generarPreguntas, generarError) {
-
-    }
-
-    preguntarDatos(datosRecolectados = []) {
-        for (let tipoDeDato of this.datos) {
-            if (tipoDeDato?.esValido()) {
-                tipoDeDato.preguntarDatos(datosRecolectados);
-            }
-        }
-        return datosRecolectados;
-    }
 
     async actualizarDatos(respuestaDada, generarPreguntas, _generarError) {
         let [ respuesta, indice ] = respuestaDada.split("-");

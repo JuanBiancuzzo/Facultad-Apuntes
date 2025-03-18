@@ -1,9 +1,12 @@
 const CANTIDAD_MINIMA_DEPENDENCIAS = 0;
 
 class Libreria {
-    constructor(tp, lenguajePadre, representacionPrevia = null) {
+    constructor(tp, manejarTipoDato, lenguajePadre, representacionPrevia = null) {
         const { 
-            SIMBOLOS, DATOS: { FUNCIONES: { libreria: DATOS_LIBRERIA } },
+            SIMBOLOS, DATOS: { 
+                FUNCIONES: { libreria: DATOS_LIBRERIA, tipoDeDato: { tipo: DATOS_TIPOS }, manejador: DATOS_MANEJADOR }, 
+                ARCHIVO: DATOS_ARCHIVO 
+            },
             TAGS: { coleccion: { self: TAG_COLECCION, funciones: TAGS_FUNCIONES } }, 
         } = tp.user.constantes();
         const dv = app.plugins.plugins.dataview.api;
@@ -14,6 +17,7 @@ class Libreria {
         this.simbolos = SIMBOLOS;
         this.config = DATOS_LIBRERIA;
         this.tags = { coleccion: TAG_COLECCION, ...TAGS_FUNCIONES };
+        this.manejarTipoDato = manejarTipoDato;
 
         this.nombre = representacionPrevia[this.config.nombre];
         this.dependencias = representacionPrevia[this.config.dependencias]
@@ -26,9 +30,27 @@ class Libreria {
         let tagLibreria = `${tagLenguaje}/${this.tagPorNombre(this.nombre)}`;
         let tagRepresentante = `${this.tags.coleccion}/${this.tags.self}`;
 
+        let estructuras = dv.pages(`#${tagLibreria} and #${tagRepresentante}/${this.tags.estructura}`)
+            .filter(({ [DATOS_ARCHIVO.tags]: tags }) => tags.some(tag => tag == tagLibreria));
+
+        for (let { [DATOS_MANEJADOR.id]: id, [DATOS_MANEJADOR.tipo]: tipo, ...datos } of estructuras) {
+            let valor;
+            switch (tipo) {
+                case DATOS_TIPOS.funcion:   valor = tp.user.funcion().clase(tp, this.manejarTipoDato, this, datos); break;
+                case DATOS_TIPOS.clase:     valor = tp.user.clase().clase(tp, this.manejarTipoDato, this, datos); break;
+                case DATOS_TIPOS.struct:    valor = tp.user.struct().clase(tp, this.manejarTipoDato, this, datos); break;
+                case DATOS_TIPOS.interfaz:  valor = tp.user.interfaz().clase(tp, this.manejarTipoDato, this, datos); break;
+                case DATOS_TIPOS.enum:      valor = tp.user.enum().clase(tp, this.manejarTipoDato, this, datos); break;
+
+                default: continue;
+            }
+
+            this.manejarTipoDato.incorporarPrevio(id, tipo, valor);
+        }
+
         this.modulos = [];
         for (let modulo of dv.pages(`#${tagLibreria} and #${tagRepresentante}/${this.tags.modulo}`)) {
-            this.modulos.push(tp.user.modulo().clase(tp, this, modulo));
+            this.modulos.push(tp.user.modulo().clase(tp, this.manejarTipoDato, this, modulo));
         }
 
         this.crearManejador = tp.user.manejarTipoDato.bind(null, tp);

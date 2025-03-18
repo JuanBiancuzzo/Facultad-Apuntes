@@ -2,7 +2,7 @@ const AGREGAR = "agregar";
 const MODIFICAR = "modificar";
 
 class TipoReferencia {
-    constructor(tp, manejoTipoDeDatos, lenguaje, representacionPrevia = null) {
+    constructor(tp, padre, manejoTipoDeDatos, lenguaje, representacionPrevia = null) {
         this.cte = tp.user.constantes();
         const { SIMBOLOS, DATOS: { LENGUAJE: { lenguajes: LENGUAJES, ...DATOS_LENGUAJES } } } = this.cte;
 
@@ -14,6 +14,7 @@ class TipoReferencia {
 
         this.simbolos = SIMBOLOS;
         this.manejoTipoDeDatos = manejoTipoDeDatos;
+        this.padre = padre;
 
         this.tipoDeDato = representacionPrevia 
             ? tp.user.tipoDeDato().clase(tp, this.manejoTipoDeDatos, this.lenguajeActual, representacionPrevia)
@@ -23,21 +24,6 @@ class TipoReferencia {
         
         this.clonar = this.generarClone.bind(this, tp);
     } 
-
-    generarClone(tp) {
-        return new TipoReferencia(tp, this.manejoTipoDeDatos, this.lenguajeActual, this.generarRepresentacion());
-    }
-
-    async definirGenericos(generarPreguntas, generarError) {
-
-    }
-
-    preguntarDatos(datosRecolectados = []) {
-        if (this.tipoDeDato?.esValido()) {
-            this.tipoDeDato.preguntarDatos(datosRecolectados);
-        }
-        return datosRecolectados;
-    }
 
     async actualizarDatos(respuestaDada, generarPreguntas, _generarError) {
         let [ respuesta, indice ] = respuestaDada.split("-");

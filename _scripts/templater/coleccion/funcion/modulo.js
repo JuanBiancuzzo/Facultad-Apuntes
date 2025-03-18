@@ -1,7 +1,11 @@
 class Modulo {
-    constructor(tp, libreriaPadre, representacionPrevia = null) {
+    constructor(tp, manejarTipoDato, libreriaPadre, representacionPrevia = null) {
         const { 
-            SIMBOLOS, DATOS: { FUNCIONES: { modulo: DATOS_MODULO } },
+            SIMBOLOS, DATOS: { 
+                FUNCIONES: { modulo: DATOS_MODULO, tipoDeDato: { tipo: DATOS_TIPOS }, manejador: DATOS_MANEJADOR }, 
+                ARCHIVO: DATOS_ARCHIVO 
+            },
+            TAGS: { coleccion: { self: TAG_COLECCION, funciones: TAGS_FUNCIONES } }, 
         } = tp.user.constantes();
         const dv = app.plugins.plugins.dataview.api;
 
@@ -10,9 +14,33 @@ class Modulo {
         this.tagPorNombre = tp.user.tagPorNombre;
         this.simbolos = SIMBOLOS;
         this.config = DATOS_MODULO;
+        this.tags = { coleccion: TAG_COLECCION, ...TAGS_FUNCIONES };
+        this.manejarTipoDato = manejarTipoDato;
 
         this.nombre = representacionPrevia[this.config.nombre];
         this.libreriaPadre = libreriaPadre;
+
+        let tagLibreria = this.libreriaPadre.obtenerTag();
+        let tagModulo = `${tagLibreria}/${this.tagPorNombre(this.nombre)}`;
+        let tagRepresentante = `${this.tags.coleccion}/${this.tags.self}`;
+
+        let estructuras = dv.pages(`#${tagModulo} and #${tagRepresentante}/${this.tags.estructura}`)
+            .filter(({ [DATOS_ARCHIVO.tags]: tags }) => tags.some(tag => tag == tagModulo));
+
+        for (let { [DATOS_MANEJADOR.id]: id, [DATOS_MANEJADOR.tipo]: tipo, ...datos } of estructuras) {
+            let valor;
+            switch (tipo) {
+                case DATOS_TIPOS.funcion:   valor = tp.user.funcion().clase(tp, this.manejarTipoDato, this, datos); break;
+                case DATOS_TIPOS.clase:     valor = tp.user.clase().clase(tp, this.manejarTipoDato, this, datos); break;
+                case DATOS_TIPOS.struct:    valor = tp.user.struct().clase(tp, this.manejarTipoDato, this, datos); break;
+                case DATOS_TIPOS.interfaz:  valor = tp.user.interfaz().clase(tp, this.manejarTipoDato, this, datos); break;
+                case DATOS_TIPOS.enum:      valor = tp.user.enum().clase(tp, this.manejarTipoDato, this, datos); break;
+
+                default: continue;
+            }
+
+            this.manejarTipoDato.incorporarPrevio(id, tipo, valor);
+        }
     }
     
     esValido() {

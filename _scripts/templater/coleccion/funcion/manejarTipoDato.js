@@ -2,7 +2,7 @@ const LARGO_ID = 50;
 const CARACTERES = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
 class Contador {
-    constructor(tp, datosPrevios = []) {
+    constructor(tp) {
         const { 
             DATOS: { FUNCIONES: { tipoDeDato: { tipo: DATOS_TIPO }, manejador: DATOS_MANEJADOR } } 
         } = tp.user.constantes();
@@ -17,17 +17,17 @@ class Contador {
             [DATOS_TIPO.union]: {},
             [DATOS_TIPO.clase]: {},
         };
+    }
 
-        for (let { [this.config.id]: id, [this.config.tipo]: tipo, [this.config.valor]: valor } of datosPrevios) {
-            if (!(tipo in this.tiposDeDatos)) 
-                continue
+    incorporarPrevio(id, tipo, valor) {
+        if (!(tipo in this.tiposDeDatos) || !(id in this.tiposDeDatos[tipo])) 
+            return;
 
-            this.tiposDeDatos[tipo][id] = {
-                [this.config.valor]: valor,
-                [this.config.apariciones]: 0,
-                [this.config.previo]: true,
-            };
-        }
+        this.tiposDeDatos[tipo][id] = {
+            [this.config.valor]: valor,
+            [this.config.apariciones]: 0,
+            [this.config.previo]: true,
+        };
     }
 
     /**
@@ -170,4 +170,4 @@ class Contador {
     }
 }
 
-module.exports = (tp, datosPrevios = []) => new Contador(tp, datosPrevios);
+module.exports = (tp) => new Contador(tp);

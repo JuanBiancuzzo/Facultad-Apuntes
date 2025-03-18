@@ -16,7 +16,7 @@ const CANTIDAD_MINIMA_VARIABLE_ESTATICAS = 0;
 const CANTIDAD_MINIMA_GENERICOS = 0;
 
 class TipoClase {
-    constructor(tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
+    constructor(tp, padre, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
         if (!representacionPrevia) representacionPrevia = {};
 
         const { 
@@ -39,6 +39,7 @@ class TipoClase {
         this.manejador = DATOS_MANEJADOR;
         this.tipos = DATOS_TIPOS;
         this.config = DATOS_CLASE;
+        this.padre = padre;
 
         this.manejoTipoDeDatos = manejoTipoDeDatos;
 
@@ -75,32 +76,6 @@ class TipoClase {
         this.crearMetodo = tp.user.funcion().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
         this.crearGenerico = tp.user.generico().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
     } 
-
-    async definirGenericos(generarPreguntas, generarError) {
-
-    }
-
-    preguntarDatos(datosRecolectados = []) {
-        for (let campo of this.campos) {
-            if (campo?.esValido()) {
-                campo.preguntarDatos(datosRecolectados);
-            }
-        }
-
-        for (let variableEstatica of this.variablesEstaticas) {
-            if (variableEstatica?.esValido()) {
-                variableEstatica.preguntarDatos(datosRecolectados);
-            }
-        }
-
-        for (let metodo of this.metodos) {
-            if (metodo?.esValido()) {
-                metodo.preguntarDatos(datosRecolectados);
-            }
-        }
-
-        return datosRecolectados;
-    }
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
         let [respuesta, indice] = respuestaDada.split("-");

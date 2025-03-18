@@ -208,8 +208,6 @@
       },
       "left-ribbon": {
         "hiddenItems": {
-          "switcher:Open quick switcher": false,
-          "workspaces:Manage workspace layouts": true,
           "graph:Open graph view": true,
           "canvas:Create new canvas": true,
           "templates:Insert template": true,
@@ -223,11 +221,11 @@
           "cmdr:Nuevo Proyecto": false,
           "cmdr:Agregar elemento de colección": false,
           "cmdr:Referencia": false,
-          "cmdr:Load workspace": false
+          "cmdr:Workspaces: Save and load another layout": false
         }
       },
       "active": "e46459332fd19a9e",
-      "mtime": "2025-03-12T09:38:05-03:00"
+      "mtime": "2025-03-18T11:39:20-03:00"
     },
     "Control": {
       "main": {
@@ -1943,5 +1941,5 @@
       "mtime": "2025-03-16T21:03:41-03:00"
     }
   },
-  "active": "Main"
+  "active": "Desarrollo"
 }

@@ -6,7 +6,7 @@ const CANCELAR = "cancelar";
 const CANTIDAD_MINIMA = 1;
 
 class TipoDeDatoSimple {
-    constructor(tp, manejoTipoDeDatos, lenguaje, representacionPrevia = {}) {
+    constructor(tp, padre, manejoTipoDeDatos, lenguaje, representacionPrevia = {}) {
         const { 
             SIMBOLOS, DATOS: { 
                 FUNCIONES: { tipoDeDato: { tipo: DATOS_TIPO, ...DATOS_TIPO_DE_DATO }, manejador: DATOS_MANEJADOR }, 
@@ -22,6 +22,7 @@ class TipoDeDatoSimple {
         this.config = { ...DATOS_TIPO_DE_DATO, tipo: DATOS_TIPO.self };
         this.tipos = DATOS_TIPO;
         this.manejador = DATOS_MANEJADOR;
+        this.padre = padre;
 
         this.manejoTipoDeDatos = manejoTipoDeDatos;
 
@@ -50,20 +51,6 @@ class TipoDeDatoSimple {
         this.crearGenerico = tp.user.generico().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
         this.crearInterfaz = tp.user.interfaz().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
         this.crearEnum = tp.user.enum().clase.bind(null, tp, this.manejoTipoDeDatos, this.lenguajeActual);
-    }
-
-    preguntarDatos(datosRecolectados = []) {
-        let representacion = this.generarRepresentacion();
-        if (!representacion[this.config.id] && !representacion[this.config.valor]) 
-            return datosRecolectados;
-
-        if (!datosRecolectados.find(({ [this.manejador.id]: id, [this.manejador.valor]: valor }) => 
-            representacion[this.manejador.id] == id && representacion[this.manejador.valor] == valor
-        )) {
-            datosRecolectados.push(representacion);
-        }
-
-        return datosRecolectados;
     }
 
     async actualizarDatos(respuesta, generarPreguntas, generarError) {

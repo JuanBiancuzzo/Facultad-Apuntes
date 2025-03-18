@@ -3,10 +3,8 @@ const ELIMINAR_INTERFAZ = "eliminar";
 
 const CANTIDAD_MINIMA = 0;
 
-const SALIR = "salir";
-
 class TipoGenerico {
-    constructor(tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
+    constructor(tp, padre, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
         const { 
             SIMBOLOS, DATOS: { 
                 FUNCIONES: { generico: DATOS_GENERICO, tipoDeDato: { tipo: DATOS_TIPOS } },
@@ -23,6 +21,7 @@ class TipoGenerico {
         this.config = DATOS_GENERICO;
         this.tipos = DATOS_TIPOS;
         this.simbolos = SIMBOLOS;
+        this.padre = padre;
 
         this.manejoTipoDeDatos = manejoTipoDeDatos;
 
@@ -40,23 +39,6 @@ class TipoGenerico {
         }
         this.clonar = this.generarClone.bind(this, tp);
     } 
-
-    generarClone(tp) {
-        return new TipoGenerico(tp, this.manejoTipoDeDatos, this.lenguajeActual, this.generarRepresentacion());
-    }
-
-    async definirGenericos(generarPreguntas, generarError) {
-
-    }
-
-    preguntarDatos(datosRecolectados = []) {
-        for (let metodo of this.interfaces) {
-            if (metodo?.esValido()) {
-                metodo.preguntarDatos(datosRecolectados);
-            }
-        }
-        return datosRecolectados;
-    }
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
         let [respuesta, indice] = respuestaDada.split("-");

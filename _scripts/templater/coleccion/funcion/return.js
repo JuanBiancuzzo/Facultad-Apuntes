@@ -1,7 +1,7 @@
 const MODIFICCAR_TIPO_DE_DATO = "modificar tipo de dato";
 
 class Return {
-    constructor(tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
+    constructor(tp, padre, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
         const { 
             SIMBOLOS, DATOS: { 
                 FUNCIONES: { return: DATOS_RETURN },
@@ -15,6 +15,7 @@ class Return {
 
         this.config = DATOS_RETURN;
         this.simbolos = SIMBOLOS;
+        this.padre = padre;
 
         this.manejoTipoDeDatos = manejoTipoDeDatos;
 
@@ -31,21 +32,6 @@ class Return {
         
         this.clonar = this.generarClone.bind(this, tp);
     } 
-
-    generarClone(tp) {
-        return new Return(tp, this.manejoTipoDeDatos, this.lenguajeActual, this.generarRepresentacion());
-    }
-
-    async definirGenericos(generarPreguntas, generarError) {
-
-    }
-
-    preguntarDatos(datosRecolectados = []) {
-        if (this.tipoDeDato?.esValido()) {
-            this.tipoDeDato.preguntarDatos(datosRecolectados);
-        }
-        return datosRecolectados;
-    }
 
     async actualizarDatos(respuesta, generarPreguntas, generarError) {
         switch (respuesta) {

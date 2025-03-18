@@ -8,7 +8,7 @@ const CANTIDAD_MINIMA_CAMPOS = 1;
 const CANTIDAD_MINIMA_VARIABLE_ESTATICAS = 0;
 
 class TipoStruct {
-    constructor(tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
+    constructor(tp, padre, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
         const { 
             SIMBOLOS, DATOS: { 
                 FUNCIONES: { struct: DATOS_STRUCT, manejador: DATOS_MANEJADOR, tipoDeDato: { tipo: DATOS_TIPOS } }, 
@@ -26,6 +26,7 @@ class TipoStruct {
         this.manejador = DATOS_MANEJADOR;
         this.tipos = DATOS_TIPOS;
         this.config = DATOS_STRUCT;
+        this.padre = padre;
 
         this.manejoTipoDeDatos = manejoTipoDeDatos;
 
@@ -53,29 +54,6 @@ class TipoStruct {
 
         this.clonar = this.generarClone.bind(this, tp);
     } 
-
-    generarClone(tp) {
-        return new TipoStruct(tp, this.manejoTipoDeDatos, this.lenguajeActual, this.generarRepresentacion());
-    }
-
-    async definirGenericos(generarPreguntas, generarError) {
-
-    }
-
-    preguntarDatos(datosRecolectados = []) {
-        for (let campo of this.campos) {
-            if (campo?.esValido()) {
-                campo.preguntarDatos(datosRecolectados);
-            }
-        }
-
-        for (let variableEstatica of this.variablesEstaticas) {
-            if (variableEstatica?.esValido()) {
-                variableEstatica.preguntarDatos(datosRecolectados);
-            }
-        }
-        return datosRecolectados;
-    }
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
         let [respuesta, indice] = respuestaDada.split("-");

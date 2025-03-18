@@ -4,7 +4,7 @@ const ELIMINAR_METODO = "eliminar metodo";
 const CANTIDAD_MINIMA = 0;
 
 class TipoInterfaz {
-    constructor(tp, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
+    constructor(tp, padre, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) {
         const { 
             SIMBOLOS, DATOS: { 
                 FUNCIONES: { interfaz: DATOS_INTERFAZ, manejador: DATOS_MANEJADOR, tipoDeDato: { tipo: DATOS_TIPOS } },
@@ -22,6 +22,7 @@ class TipoInterfaz {
         this.manejador = DATOS_MANEJADOR;
         this.tipos = DATOS_TIPOS;
         this.simbolos = SIMBOLOS;
+        this.padre = padre;
 
         this.manejoTipoDeDatos = manejoTipoDeDatos;
 
@@ -39,24 +40,6 @@ class TipoInterfaz {
         // chequear si es necesario realmente eso
         this.clonar = this.generarClone.bind(this, tp);
     } 
-
-    generarClone(tp) {
-        return new TipoInterfaz(tp, this.manejoTipoDeDatos, this.lenguajeActual, this.generarRepresentacion());
-    }
-
-    async definirGenericos(generarPreguntas, generarError) {
-
-    }
-
-    preguntarDatos(datosRecolectados = []) {
-        for (let metodo of this.metodos) {
-            if (metodo?.esValido()) {
-                metodo.preguntarDatos(datosRecolectados);
-            }
-        }
-        return datosRecolectados;
-    }
-
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
         let [respuesta, indice] = respuestaDada.split("-");
