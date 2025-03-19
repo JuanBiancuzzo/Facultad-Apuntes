@@ -6,7 +6,7 @@ tags:
 ---
 # Definición
 ---
-Sea la[[Ecuación de recurrencia lineal|ecuación de recurrencia]] $x_{n+1} = ax_n + b$, con $x_0$, $a$, $b$ constantes, entonces podemos llegar a una solución de forma artesanal de la forma $$ x_{n+1} =a_0 ~ a^n + b ~ \frac{a^n - 1}{a - 1}, ~~~ a \ne 1 $$
+Sea la[[Ecuación de recurrencia lineal|ecuación de recurrencia]] $x_{n+1} = ax_n + b$, con $x_0$, $a$, $b$ constantes, entonces podemos llegar a una solución de forma artesanal de la forma $$ x_{n+1} = x_0 ~ a^n + b ~ \frac{a^n - 1}{a - 1}, ~~~ a \ne 1 $$
 Podemos llegar a una expresión equivalente, definiendo $x^*$ como el punto de equilibrio $$ x_{n + 1} = \begin{cases} 
     (x_0 - x^*) ~ a^n + x^*, & x^* = \frac{b}{1 - a}, & a \ne 1 \\
     x_0 + bn, && a = 1

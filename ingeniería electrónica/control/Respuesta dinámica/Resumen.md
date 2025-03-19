@@ -9,7 +9,6 @@ referencias:
   - "899"
   - "871"
   - "872"
-etapa: sin-empezar
 ---
 # Índice
 ---

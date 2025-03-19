@@ -16,7 +16,7 @@ Como el [[Diodo]] es [[Función lineal|no lineal]], vemos que $i_D(t) \ne i_{D1}
 
 ## Modelo
 ---
-Queremos [[Función lineal|linealizar]] la [[Corriente del Diodo|corriente]] del [[Diodo]], para eso sabemos que podemos aplicar un [[Serie de Taylor#Polinomio de Taylor|polinomio de Taylor de orden 1]] para aproximar nuestra [[Corriente del Diodo|corriente]] dándonos $$ i_D(t) \approx i_D(t) \biggm|_{v_D = V_D} + \frac{\partial i_D(t)}{\partial v_D(t)} \Biggm|_{v_D=V_D} \cdot \underbrace{v_D(t) - V_D}_{=~ v_d(t)} $$
+Queremos [[Linealización Jacobiana|linealizar]] la [[Corriente del Diodo|corriente]] del [[Diodo|diodo]], para eso sabemos que podemos aplicar un [[Serie de Taylor#Polinomio de Taylor|polinomio de Taylor de orden 1]] para aproximar nuestra [[Corriente del Diodo|corriente]] dándonos $$ i_D(t) \approx i_D(t) \biggm|_{v_D = V_D} + \frac{\partial i_D(t)}{\partial v_D(t)} \Biggm|_{v_D=V_D} \cdot \underbrace{v_D(t) - V_D}_{=~ v_d(t)} $$
 Reemplazando la corriente del diodo $$ i_D(t) \approx \underbrace{I_0 \left[ \exp\left( \frac{V_D}{V_{th}} \right) - 1 \right]}_{I_D} + \frac{1}{V_{th}} ~ I_0 ~ \left[ \exp\left( \frac{V_D}{V_{th}} \right) \right] \cdot v_d(t) $$ donde $V_{th}$ es el [[Relación de Einstein|potencial térmico]]
 
 Dejándonos la ecuación para la corriente $$ \begin{align} 

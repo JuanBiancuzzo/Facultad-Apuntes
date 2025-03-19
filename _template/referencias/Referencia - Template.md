@@ -104,6 +104,8 @@
             await app.vault.modify(tArchivo, nuevoContenido);
         }
 
+        app.commands.executeCommandById('dataview:dataview-rebuild-current-view');
+
     } catch ({ name: nombre, message: mensaje }) {
         console.log(mensaje);
         new Notice(mensaje);

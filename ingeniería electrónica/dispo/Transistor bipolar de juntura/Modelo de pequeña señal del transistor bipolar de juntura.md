@@ -67,14 +67,13 @@ El [[Transistor bipolar de juntura|TBJ]] es un dispositivo [[Función lineal|ali
 ```
 
 
-Por lo tanto vamos a aproximarla usando el [[Serie de Taylor#Polinomio de Taylor|polinomio de Taylor]] de primer orden $$
+Por lo tanto vamos a [[Linealización Jacobiana|linealizar]] alrededor del punto $Q \equiv$  punto de polarización  $(V_{BE}, V_{CE})$ $$
 i_C(V_{BE} + v_{be}, V_{CE} + v_{ce}) \simeq ~ I_C(V_{BE}, V_{CE})
 + \frac{\partial i_C}{\partial v_{BE}} \biggm|_{Q} v_{be} 
 + \frac{\partial i_C}{\partial v_{CE}} \biggm|_{Q} v_{ce} $$ $$
 i_B(V_{BE} + v_{be}, V_{CE} + v_{ce}) \simeq ~ I_B(V_{BE}, V_{CE})
 + \frac{\partial i_B}{\partial v_{BE}} \biggm|_{Q} v_{be} 
 + \frac{\partial i_B}{\partial v_{BC}} \biggm|_{Q} v_{bc} $$
-donde $Q \equiv$  punto de polarización  $(V_{BE}, V_{CE})$.
 
 ## Rango de validez del modelo
 ---

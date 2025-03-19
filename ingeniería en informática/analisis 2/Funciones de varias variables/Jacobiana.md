@@ -7,7 +7,7 @@ tags:
 ---
 # Definición
 ---
-Con $f : U \subseteq \mathbb{R}^n \to \mathbb{R}^m$ siendo esta [[Diferenciable|diferenciable]] en el punto $x_0$, la [[Transformación lineal|transformación lineal]], y específicamente la [[Matriz|matriz]] asociada con esta, que denotaremos $Df(a) \in \mathbb{R}^{n \times m}$ y se denomina como matriz Jacobiana
+Con $f : U \subseteq \mathbb{R}^n \to \mathbb{R}^m$ siendo esta [[Diferenciable|diferenciable]] en el punto $a$, la [[Transformación lineal|transformación lineal]], y específicamente la [[Matriz|matriz]] asociada con esta, que denotaremos $Df(a) \in \mathbb{R}^{n \times m}$ y se denomina como matriz Jacobiana
 
 $$ Df(a) = \begin{pmatrix}
 		\frac{\partial f_1}{\partial x_1} & \cdots & \frac{\partial f_1}{\partial x_n} \\

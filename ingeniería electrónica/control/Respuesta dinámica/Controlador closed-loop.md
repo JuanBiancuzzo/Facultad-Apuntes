@@ -1,9 +1,10 @@
 ---
 dia: 2025-03-14
-etapa: empezado
+etapa: ampliar
 referencias:
   - "871"
   - "898"
+  - "1017"
 tags:
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - nota/facultad
@@ -103,7 +104,7 @@ Considerando un sistema realimentado ideal
         node[pos=0.9, above=2pt, scale=\scale] {$+$};
     
     \draw[->] (fin_sum.center) -- (ini_amp.center)
-        node[midway, above=2pt, scale=\scale] {$x_i$};
+        node[midway, above=2pt, scale=\scale] {$x_e$};
     
     \draw[->] (fin_amp.center) -- (ini_carga.center);
     
@@ -121,9 +122,33 @@ Considerando un sistema realimentado ideal
 ```
 
 
-La señal de retroalimentación $x_f$ es sustraída de la fuente de señales $x_s$, que es la entrada al [[Amplificador operacional|amplificador]] de retroalimentación completo, para producir la señal $x_i$, que es la entrada al amplificador básico $$ x_i = x_s - x_f $$
+La señal de retroalimentación $x_f$ es sustraída de la fuente de señales $x_s$, que es la entrada al [[Amplificador operacional|amplificador]] de retroalimentación completo, para producir la señal $x_i$, que es la entrada al amplificador básico $$ x_o = a ~ x_e $$Suponiendo que la el amplificador de realimentación no carga al amplificador, podemos obtener $$ \begin{align} 
+    x_f &= f ~ x_o \\ 
+    x_e &= x_s - x_f 
+\end{align} $$
+Combinándolas obtenemos $$ x_e = x_s - f ~ x_o $$y usando la primera expresión obtenemos $$ \begin{align} 
+    x_o &= a ~ x_s - af ~ x_o \\
+    \frac{x_o}{x_s} = A &= \frac{a}{1 + af} = \frac{a}{1 + T} \tag{1}
+\end{align} $$ donde $T$ es la [[Ganancia de lazo|ganancia de lazo]]
 
+Esta expresión es fundamental para el análisis de realimentación, ya que nos deja ver que si $T \gg 1$, la ganancia del amplificador realimentado tiene de $$ A \underset{T \to \infty}{\longrightarrow} \frac{1}{f} $$ esto nos dice que el amplificador realimentado se comporta como más como el bloque de realimentación que el amplificador $a$, los cual si tenemos un bloque de realimentación lineal, va a volver más lineal al amplificador realimentado
 
+En una realimentación negativa, el bloque de realimentación fuerza 
+
+### Sensibilidad de la ganancia
+---
+La realimentación negativa, especialmente si $T \gg 1$, permite la independencia del bloque $a$ que puede ser sensible a la temperatura, a los parámetros de los transistores, entre otras cosas
+
+También podemos ver la sensibilidad o la perdida de esta, en la ganancia del amplificador realimentado. Derivando la expresión $(1)$ obtenemos $$ \frac{dA}{da} = \frac{(1 + af) - af}{(1 + af)^2} = \frac{1}{(1 + af)^2} $$
+Que si tomamos la derivada como pequeños cambios en los valores de las ganancias podemos despejar la relación de cambio $$ \begin{align}
+\delta A &= \frac{\delta a}{(1 + af)^2} \\
+\frac{\delta A}{A} &= \frac{1 + af}{a} ~ \frac{\delta a}{(1 + af)^2} \\
+\frac{\delta A}{A} &= \frac{\frac{\delta a}{a}}{1 + af} = \frac{\frac{\delta a}{a}}{1 + T}
+\end{align} $$
+Esto muestra que la ganancia del amplificador realimentado tiene una relación de cambio $\frac{1}{T}$ más chica que la relación de cambio del amplificador sin realimentar, disminuyendo las [[Perturbación|perturbación]] del bloque $a$
+
+### Modelos de realimentación en circuitos
+---
 Se tiene 4 modelos de retroalimentación 
 * [[Realimentación de un amplificador de tensión|Muestreo de tensión y suma de tensión]]
 * [[Realimentación de un amplificador de transresistencia|Muestreo de tensión y suma de corriente]]

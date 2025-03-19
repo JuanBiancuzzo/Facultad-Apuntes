@@ -266,7 +266,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ingeniería electrónica/control/Respuesta dinámica/Resumen.md",
+                    "file": "ingeniería electrónica/control/Linealización/Resumen.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -282,30 +282,6 @@
                   },
                   "icon": "lucide-file",
                   "title": "Resumen"
-                }
-              },
-              {
-                "id": "0577f37c55f46cd7",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ingeniería electrónica/control/Respuesta dinámica/Modelo de dinámicas de la mecánica.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Modelo de dinámicas de la mecánica"
                 }
               },
               {
@@ -485,7 +461,7 @@
                 }
               }
             ],
-            "currentTab": 3
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -676,8 +652,8 @@
           "cmdr:Workspaces: Save and load another layout": false
         }
       },
-      "active": "bc62b0d182c13e1b",
-      "mtime": "2025-03-17T11:53:50-03:00"
+      "active": "a0c1b8a9aec7f246",
+      "mtime": "2025-03-19T10:01:22-03:00"
     },
     "Circuitos 2": {
       "main": {
@@ -758,6 +734,30 @@
                   },
                   "icon": "lucide-file",
                   "title": "Controlador closed-loop"
+                }
+              },
+              {
+                "id": "7a6784d448b89bb2",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Ganancia de lazo.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Ganancia de lazo"
                 }
               },
               {
@@ -863,7 +863,7 @@
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 4
           }
         ],
         "direction": "vertical"
@@ -918,7 +918,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 330.50499725341797
+        "width": 330.50499725341797,
+        "collapsed": true
       },
       "right": {
         "id": "3bf298dcb9f1081b",
@@ -1004,8 +1005,8 @@
           "cmdr:Workspaces: Save and load another layout": false
         }
       },
-      "active": "4758c10ce82e9eab",
-      "mtime": "2025-03-18T07:59:29-03:00"
+      "active": "94f83d04515f638b",
+      "mtime": "2025-03-19T08:28:11-03:00"
     },
     "Estoca": {
       "main": {
@@ -1639,12 +1640,12 @@
             "type": "tabs",
             "children": [
               {
-                "id": "7b9afde4b53c3c75",
+                "id": "31d7e8439f203563",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "README.md",
+                    "file": "investigación/ciencias de la computación/lenguajes de programación/Pseudocódigo.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -1659,7 +1660,31 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "README"
+                  "title": "Pseudocódigo"
+                }
+              },
+              {
+                "id": "14e6bdf38d91a04e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "investigación/ciencias de la computación/lenguajes de programación/Lenguaje Python/Lenguaje Python.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Lenguaje Python"
                 }
               },
               {
@@ -1759,7 +1784,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 4
           }
         ],
         "direction": "vertical"
@@ -1937,9 +1962,9 @@
           "cmdr:Workspaces: Save and load another layout": false
         }
       },
-      "active": "61b2ca1bc384d123",
-      "mtime": "2025-03-16T21:03:41-03:00"
+      "active": "5ee94156cfd0f9e6",
+      "mtime": "2025-03-18T13:46:32-03:00"
     }
   },
-  "active": "Desarrollo"
+  "active": "Control"
 }

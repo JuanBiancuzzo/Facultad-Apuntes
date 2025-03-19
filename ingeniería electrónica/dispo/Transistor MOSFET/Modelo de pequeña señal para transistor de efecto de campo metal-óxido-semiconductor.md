@@ -22,12 +22,12 @@ El [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]] es un dis
 
 ![[Circuito de pequeña señal del Transistor de efecto de campo metal-óxido-semiconductor (MOSFET).webp]]
 
-Por lo tanto vamos a aproximarla usando el [[Serie de Taylor#Polinomio de Taylor|polinomio de Taylor]] de primer orden $$ \begin{align}
+Por lo tanto vamos a [[Linealización Jacobiana|linealizar]] alrededor del punto $Q \equiv$  punto de polarización  $(V_{GS}, V_{DS}, V_{BS})$ $$ \begin{align}
 	i_D(V_{GS} + v_{gs}, V_{DS} + v_{ds}, V_{BS} + v_{bs}) \simeq& ~ I_DQ(V_{GS}, V_{DS}, V_{BS}) \\
 	+& ~ \frac{\partial i_D}{\partial v_{GS}} \biggm|_{Q} v_{gs} \\ 
 	+& ~ \frac{\partial i_D}{\partial v_{DS}} \biggm|_{Q} v_{ds} \\ 
 	+& ~ \frac{\partial i_D}{\partial v_{BS}} \biggm|_{Q} v_{bs} \\  
-\end{align} $$ donde $Q \equiv$  punto de polarización  $(V_{GS}, V_{DS}, V_{BS})$.
+\end{align} $$
 ## Rango de validez del modelo
 ---
 Recordando que $i_D$ esta dada por $$ i_D = \begin{cases} 

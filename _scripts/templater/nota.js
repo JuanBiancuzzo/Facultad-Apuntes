@@ -95,7 +95,7 @@ async function preguntarReferenciasUsar(tp, referenciasUsar) {
 
 async function crearNotaFacultad(tp) {
     const { 
-        FORMATO_DIA, DIRECTORIOS, SECCIONES, ETAPAS, TEMPLATE, 
+        FORMATO_DIA, DATAVIEW, DIRECTORIOS, SECCIONES, ETAPAS, TEMPLATE, 
         TAGS: { facultad: TAGS_FACULTAD, nota: TAGS_NOTA }, 
         DATOS: { 
             CARRERA: DATOS_CARRERA, MATERIA: DATOS_MATERIA, RESUMEN: DATOS_RESUMEN, ARCHIVO: DATOS_ARCHIVO 
@@ -193,8 +193,8 @@ async function crearNotaFacultad(tp) {
         : [];
     let referenciasUsar = await preguntarReferenciasUsar(tp, referenciasResumen);
 
-    let texto = await tp.file.include(`[[${TEMPLATE.etapa}]]`);
-    texto += `\n${"#".repeat(SECCIONES.definicion.nivel)} ${SECCIONES.definicion.texto}\n---\n`;
+    let texto = `\`\`\`dataviewjs\n\tawait dv.view("${DATAVIEW.self}/${DATAVIEW.etapa}", { etapa: dv.current()?.etapa });\n\`\`\`\n`;
+    texto += `${"#".repeat(SECCIONES.definicion.nivel)} ${SECCIONES.definicion.texto}\n---\n`;
     texto += "<% tp.file.cursor() %>\n\n"
 
     if (referenciasUsar.length > 0) {
