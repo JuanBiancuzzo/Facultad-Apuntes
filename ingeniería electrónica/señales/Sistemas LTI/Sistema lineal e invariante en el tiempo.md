@@ -8,6 +8,8 @@ tags:
   - nota/facultad
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
 etapa: ampliar
+referencias:
+  - "899"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
@@ -38,3 +40,10 @@ Sacando la [[Matriz|matriz]] $A$ como factor común, podemos ver lo siguiente $$
     &= Ax + Bu
 \end{align} $$
 Donde la condición inicial se cumple ya que $e^{A ~ 0} = 1$ y $\int_a^a f(\tau) ~ d\tau = 0$
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

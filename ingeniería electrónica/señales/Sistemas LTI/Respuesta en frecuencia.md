@@ -5,7 +5,14 @@ aliases:
 tags:
   - carrera/ingeniería-electrónica/señales/Sistemas-LTI
   - nota/facultad
+  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
+referencias:
+  - "899"
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 La respuesta en [[Función periódica#Frecuencia|frecuencia]] de un [[Circuito eléctrico|circuito]] es la variación de su comportamiento al cambiar la frecuencia de la [[Señal|señal]], donde se define como $h(t)$
@@ -17,3 +24,9 @@ Si recordamos que una señal [[Función periódica#^periodo|periódica]] puede d
 Usando la [[Transformada de Fourier|transformada de Fourier]] o la [[Transformada de Laplace|Laplace]], se lo define como $H(j\omega)$ o $H(s)$ respectivamente, o en el [[Transformada de Fourier en tiempo discreto|caso discreto]] $H\left(e^{-j\omega}\right)$
 
 * Notemos que si un [[Sistema lineal e invariante en el tiempo invertible estable|sistema LTI es estable]] siempre existe $H(s)$ $$ |H(s)| = \left| \int_{-\infty}^{\infty} h(t) \exp(-st) ~ dt \right| \le \int_{-\infty}^{\infty} |h(t) \exp(-st)| ~ dt = \exp(\mathcal{Re}(s)) \int_{-\infty}^{\infty} |h(t)| ~ dt < \infty $$
+  
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

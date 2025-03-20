@@ -1,6 +1,6 @@
 ---
 dia: 2025-03-10
-etapa: sin-empezar
+etapa: empezado
 tags:
   - referencia/libro
   - colección/biblioteca/libro
@@ -109,8 +109,15 @@ aliases:
 
 ## Capítulo 1: Introducción a los sistemas de control
 ---
-
-
+Se ve las siguientes definiciones
+* [[Variable controlada|Variable controlada]]
+* [[Planta|Planta]]
+* [[Proceso#En teoría de control|Proceso]]
+* [[Sistema|Sistema]]
+    * [[Sistema de control robusto|Sistema de control robusto]]
+    * [[Controlador open-loop|Sistema de control a lazo abierto]]
+    * [[Controlador closed-loop|Sistema de control a lazo cerrado]]
+* [[Perturbación|Perturbación]]
 
 ## Capítulo 2: Modelado matemático de sistemas de control
 ---

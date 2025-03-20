@@ -3,7 +3,14 @@ dia: 2023-11-17
 tags:
   - carrera/ingeniería-electrónica/señales/Sistemas-LTI
   - nota/facultad
+  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
+referencias:
+  - "899"
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Se puede definir la transferencia de un [[Sistema lineal e invariante en el tiempo|sistema LTI]] a partir de su [[Respuesta en frecuencia|respuesta en frecuencia]] $h(t)$, donde se puede definir completamente este sistema $$ y(t) = \mathcal{T}[x(t)] $$ de la forma $$ y(t) = h(t) * x(t) $$ donde $h(t) * x(t)$ es la [[Convolución|convolución]] entre la respuesta en frecuencia y la [[Señal|señal]]
@@ -61,3 +68,10 @@ $$ H(s) = \frac{V(s)}{I(S)} $$
 ### [[Admitancia|Admitancia]]
 ---
 $$ H(s) = \frac{I(s)}{V(S)} $$
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```
