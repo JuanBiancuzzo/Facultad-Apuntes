@@ -5,6 +5,7 @@ tags:
   - nota/facultad
 aliases:
   - Realimentación por transconductancia
+  - Shunt-Shunt Feedback
 ---
 # Definición
 ---

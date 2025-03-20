@@ -461,7 +461,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 3
           }
         ],
         "direction": "vertical"
@@ -652,8 +652,8 @@
           "cmdr:Workspaces: Save and load another layout": false
         }
       },
-      "active": "a0c1b8a9aec7f246",
-      "mtime": "2025-03-19T10:01:22-03:00"
+      "active": "04a35cd584556025",
+      "mtime": "2025-03-19T10:31:16-03:00"
     },
     "Circuitos 2": {
       "main": {
@@ -737,12 +737,12 @@
                 }
               },
               {
-                "id": "7a6784d448b89bb2",
+                "id": "c0867c9f630a00f6",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ingeniería electrónica/circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Ganancia de lazo.md",
+                    "file": "ingeniería electrónica/circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Realimentación de un amplificador de transresistencia.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -757,16 +757,16 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Ganancia de lazo"
+                  "title": "Realimentación de un amplificador de transresistencia"
                 }
               },
               {
-                "id": "94f83d04515f638b",
+                "id": "9bb325bd23f93b93",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ingeniería electrónica/circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Ganancia de lazo.md",
+                    "file": "ingeniería electrónica/circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Realimentación de un amplificador de transresistencia.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -781,7 +781,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Ganancia de lazo"
+                  "title": "Realimentación de un amplificador de transresistencia"
                 }
               },
               {
@@ -863,7 +863,7 @@
                 }
               }
             ],
-            "currentTab": 4
+            "currentTab": 5
           }
         ],
         "direction": "vertical"
@@ -1005,8 +1005,8 @@
           "cmdr:Workspaces: Save and load another layout": false
         }
       },
-      "active": "94f83d04515f638b",
-      "mtime": "2025-03-19T08:28:11-03:00"
+      "active": "5ef381d63bc6d071",
+      "mtime": "2025-03-19T17:10:38-03:00"
     },
     "Estoca": {
       "main": {

@@ -30,7 +30,7 @@ capitulos:
       inicio: "13"
       final: "62"
   - numeroCapitulo: "3"
-    nombreCapitulo: Modelado matemático de sistemas mecánicos y sistemas eléctronicos
+    nombreCapitulo: Modelado matemático de sistemas mecánicos y sistemas electrónicos
     numReferencia: 900
     editores: []
     paginas:
@@ -88,7 +88,7 @@ capitulos:
 aliases:
   - "Ingeniería de control moderna de Katsuhiko Ogata, Capítulo 1: Introducción a los sistemas de control#Capítulo 1: Introducción a los sistemas de control"
   - "Ingeniería de control moderna de Katsuhiko Ogata, Capítulo 2: Modelado matemático de sistemas de control#Capítulo 2: Modelado matemático de sistemas de control"
-  - "Ingeniería de control moderna de Katsuhiko Ogata, Capítulo 3: Modelado matemático de sistemas mecánicos y sistemas eléctronicos#Capítulo 3: Modelado matemático de sistemas mecánicos y sistemas eléctronicos"
+  - "Ingeniería de control moderna de Katsuhiko Ogata, Capítulo 3: Modelado matemático de sistemas mecánicos y sistemas electrónicos#Capítulo 3: Modelado matemático de sistemas mecánicos y sistemas electrónicos"
   - "Ingeniería de control moderna de Katsuhiko Ogata, Capítulo 4: Modelado matemático de sistemas de fluidos y sistemas térmicos#Capítulo 4: Modelado matemático de sistemas de fluidos y sistemas térmicos"
   - "Ingeniería de control moderna de Katsuhiko Ogata, Capítulo 5: Análisis de la respuesta transitoria y estacionaria#Capítulo 5: Análisis de la respuesta transitoria y estacionaria"
   - "Ingeniería de control moderna de Katsuhiko Ogata, Capítulo 6: Análisis y diseño de sistemas de control por el método del lugar de las raíces#Capítulo 6: Análisis y diseño de sistemas de control por el método del lugar de las raíces"
@@ -116,10 +116,8 @@ aliases:
 ---
 
 
-
-## Capítulo 3: Modelado matemático de sistemas mecánicos y sistemas eléctronicos
+## Capítulo 3: Modelado matemático de sistemas mecánicos y sistemas electrónicos
 ---
-
 
 
 ## Capítulo 4: Modelado matemático de sistemas de fluidos y sistemas térmicos
