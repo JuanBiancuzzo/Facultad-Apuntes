@@ -9,7 +9,7 @@ tipoDistribucion: continua
 ---
 # Definición
 ---
-Se dice que una [[Variable aleatoria]] $X$ tiene distribución de Rayleigh de parametro $\sigma$ si su [[Función de densidad]] es $$ f_X(x) = \frac{x}{\sigma^2}\cdot e^{-\displaystyle\frac{x^2}{2 \cdot \sigma^2}} $$
+Se dice que una [[Variable aleatoria|variable aleatoria]] $X$ tiene distribución de Rayleigh de parámetro $\sigma$ si su [[Función de densidad]] es $$ f_X(x) = \frac{x}{\sigma^2}\cdot e^{\displaystyle -\frac{x^2}{2\sigma^2}} $$
 
 ### Notación
 $$ X \sim Ray(\sigma) $$

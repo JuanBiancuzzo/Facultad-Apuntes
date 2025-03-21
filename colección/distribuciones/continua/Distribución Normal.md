@@ -29,7 +29,7 @@ $$ \Phi(x) = F_X(x) = \mathbb{P}(X \leq x) = \int_{-\infty}^{x} \frac{1}{\sqrt{2
 
 ## Observación
 ---
-Para cuando $\mu = 1$ y $\sigma = 0$ se le dice distrobución [[Normal estandar|normal estandar]]
+Para cuando $\mu = 1$ y $\sigma = 0$ se le dice distribución [[Normal estándar|normal estándar]]
 
 
 ## Relaciones

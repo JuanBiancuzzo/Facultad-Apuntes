@@ -4,10 +4,15 @@ tags:
   - carrera/ingeniería-en-informática/proba/Representación-de-variables-aleatorias
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
+  - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
 aliases:
   - Media
   - Valor esperado
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Es el promedio ponderado que puede tomar una [[Variable aleatoria|variable aleatoria]] $X$. Análogo al centro de masa de un objeto
@@ -15,6 +20,10 @@ Es el promedio ponderado que puede tomar una [[Variable aleatoria|variable aleat
 Sea $X$ una variable aleatoria con [[Función de distribución|función de distribución]] $F_X(x) = \mathbb{P}(X \leq x)$, si $h(X)$ es una [[Función de variable aleatoria|función de variable aleatoria]] cualquiera de $X$, si definimos $A$ como el [[Conjunto|conjunto]] de [[Átomo de una distribución|átomos]], entonces $$ E[h(X)] = \sum_{x \in A} h(x) \cdot \mathbb{P}(X = x) + \int_{x \in \mathbb{R} - A} h(x) \cdot F_{X}'(x) \cdot dx $$
 ### Notación
 Se puede expresar $\mu(X) = E[X]$
+
+## Para vector aleatorio
+---
+Sea $X \in \mathbb{R}^n$ un [[Vector aleatorio|vector aleatorio]] $n$-dimensional. La medio o esperanza de $X$ es un vector de las esperanzas de sus componentes $$ E[X] = \mu_X = \begin{bmatrix} E[X_1] \\ E[X_2] \\ \vdots \\ E[X_n] \end{bmatrix} $$
 
 ## Casos específicos
 ---
@@ -39,4 +48,4 @@ Dado los conjuntos $A_1, A_2, \cdots, A_n$ tal que $\displaystyle\bigcup_{i = 1}
 
 ## Observación
 ---
-* $E(X)$ no ne necesariamente tiene que pertenecer a $R_X$.
+* $E(X)$ no ne necesariamente tiene que pertenecer al [[Soporte|soporte]] $R_X$ 

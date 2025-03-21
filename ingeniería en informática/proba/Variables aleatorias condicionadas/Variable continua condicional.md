@@ -7,6 +7,7 @@ tags:
   - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
 aliases:
   - PDF condicional
+  - Función de densidad condicional
 etapa: ampliar
 ---
 ```dataviewjs

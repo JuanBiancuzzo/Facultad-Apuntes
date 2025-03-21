@@ -261,6 +261,54 @@
                 }
               },
               {
+                "id": "d9d5425c10294b73",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/control/Respuesta dinámica/Diagrama de bloques.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Diagrama de bloques"
+                }
+              },
+              {
+                "id": "abce410b6527877c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/control/Respuesta dinámica/Controlador automático.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Controlador automático"
+                }
+              },
+              {
                 "id": "a0c1b8a9aec7f246",
                 "type": "leaf",
                 "state": {
@@ -282,78 +330,6 @@
                   },
                   "icon": "lucide-file",
                   "title": "Resumen"
-                }
-              },
-              {
-                "id": "bc62b0d182c13e1b",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ingeniería electrónica/control/Respuesta dinámica/Controlador open-loop.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Controlador open-loop"
-                }
-              },
-              {
-                "id": "04a35cd584556025",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ingeniería electrónica/control/Respuesta dinámica/Modelo de circuitos eléctricos.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Modelo de circuitos eléctricos"
-                }
-              },
-              {
-                "id": "36e3e0dca4c2b6e7",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ingeniería electrónica/control/Respuesta dinámica/Modelo de electromecánica.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Modelo de electromecánica"
                 }
               },
               {
@@ -461,7 +437,7 @@
                 }
               }
             ],
-            "currentTab": 3
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -652,8 +628,8 @@
           "cmdr:Workspaces: Save and load another layout": false
         }
       },
-      "active": "04a35cd584556025",
-      "mtime": "2025-03-19T10:31:16-03:00"
+      "active": "abce410b6527877c",
+      "mtime": "2025-03-20T14:06:38-03:00"
     },
     "Circuitos 2": {
       "main": {
@@ -1412,6 +1388,30 @@
                 }
               },
               {
+                "id": "98d1a24532a43059",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería en informática/distribuidos/Herramientas de Diseño/Non Uniform Memory Access.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Non Uniform Memory Access"
+                }
+              },
+              {
                 "id": "b0e0a85d2aa71d68",
                 "type": "leaf",
                 "state": {
@@ -1436,7 +1436,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -1628,7 +1628,7 @@
         }
       },
       "active": "b0e0a85d2aa71d68",
-      "mtime": "2025-03-15T10:29:15-03:00"
+      "mtime": "2025-03-20T16:13:00-03:00"
     },
     "Desarrollo": {
       "main": {
@@ -1966,5 +1966,5 @@
       "mtime": "2025-03-18T13:46:32-03:00"
     }
   },
-  "active": "Control"
+  "active": "Estoca"
 }

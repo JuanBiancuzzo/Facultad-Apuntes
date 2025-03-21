@@ -7,6 +7,7 @@ tags:
   - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
 aliases:
   - PMF condicional
+  - Función de masa de probabilidad condicional
 etapa: ampliar
 ---
 ```dataviewjs

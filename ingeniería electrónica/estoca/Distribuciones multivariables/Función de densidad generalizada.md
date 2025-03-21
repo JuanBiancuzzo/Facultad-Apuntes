@@ -1,10 +1,12 @@
 ---
 dia: 2025-03-13
 etapa: ampliar
-referencias: []
+referencias: 
 tags:
   - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
   - nota/facultad
+aliases:
+  - PDF generalizada
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

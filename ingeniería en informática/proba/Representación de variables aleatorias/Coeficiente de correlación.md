@@ -4,9 +4,14 @@ tags:
   - carrera/ingeniería-en-informática/proba/Representación-de-variables-aleatorias
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
+  - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
 aliases:
   - Correlación lineal
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición 
 ---
 La forma de interpretar la [[Covarianza|covarianza]], entre las [[Variable aleatoria|variable aleatoria]] $X$ e $Y$ esta dada por $$ \rho_{XY} = \frac{Cov(X, Y)}{\sqrt{Var(X) \cdot Var(Y)}} $$ notemos como se usa la [[Varianza|varianza]] de cada variable

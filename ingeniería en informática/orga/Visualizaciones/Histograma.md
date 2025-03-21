@@ -3,10 +3,15 @@ dia: 2023-03-20
 tags:
   - carrera/ingeniería-en-informática/orga/Visualizaciones
   - nota/facultad
+  - carrera/ingeniería-electrónica/estoca/Análisis-de-datos
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
-Es un [[Plot|plot]] donde se muestra en el eje x una [[Distribución continua|distribución continua]] y en el eje y, la cantidad correspondiente al mismo
+Es un [[Plot|plot]] donde se muestra en el eje x una [[Distribución continua|distribución continua]] y en el eje y, la cantidad correspondiente al mismo. Podemos decir que representa la [[Frecuencia relativa|frecuencia de ocurrencia]] de una dada [[Variable aleatoria|variable aleatoria]] dentro de cada bin
 
 ```tikz
 \usepackage{amssymb}
@@ -69,4 +74,6 @@ Es un [[Plot|plot]] donde se muestra en el eje x una [[Distribución continua|di
 \end{document}
 ```
 
-Este plot tiene un parámetro que se llama "bins" que nos deja manejar la resolución, donde mientras más grande, más resolución.
+Este plot tiene un parámetro que se llama "bins" que nos deja manejar la resolución, donde mientras más grande, más resolución
+
+Esto también puede representar una aproximación de la [[Función de densidad|función de densidad]]/[[Función de masa de probabilidad|masa de probabilidad]]. Podemos obtenerla como $$ \hat{f}_h(x) = \frac{1}{nh} \sum_{i = 1}^{n} \sum_i \mathbb{1}\set{x_i \in B_j} \cdot \mathbb{1}\set{ x \in B_j } $$ donde $B_j = \left[ m_j - \frac{h}{2},~ m_j + \frac{h}{2} \right]$, con $h$ y $m_j$ son la longitud y centro del intervalo respectivamente

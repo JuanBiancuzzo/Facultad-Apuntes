@@ -4,7 +4,12 @@ tags:
   - carrera/ingeniería-en-informática/proba/Representación-de-variables-aleatorias
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
+  - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Sea $X$ una [[Variable aleatoria|variable aleatoria]], definimos la varianza de $X$ (usando la [[Esperanza|esperanza]]) como $$ Var(X) = E[(X - E[X])^2] $$donde podemos pensar que se usa la [[Función|función]] $h(x) = ( x - E[X] )^2$, por lo tanto podemos plantear el calculo de la varianza $$\begin{matrix}
