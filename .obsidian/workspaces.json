@@ -309,12 +309,12 @@
                 }
               },
               {
-                "id": "a0c1b8a9aec7f246",
+                "id": "ceba62d549d20201",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ingeniería electrónica/control/Linealización/Resumen.md",
+                    "file": "ingeniería electrónica/control/Respuesta dinámica/Controlador de dos posiciones.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -329,7 +329,31 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Resumen"
+                  "title": "Controlador de dos posiciones"
+                }
+              },
+              {
+                "id": "a0c1b8a9aec7f246",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/señales/Señales y sistemas/Sistema estable.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Sistema estable"
                 }
               },
               {
@@ -437,7 +461,7 @@
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 8
           }
         ],
         "direction": "vertical"
@@ -628,8 +652,8 @@
           "cmdr:Workspaces: Save and load another layout": false
         }
       },
-      "active": "abce410b6527877c",
-      "mtime": "2025-03-20T14:06:38-03:00"
+      "active": "613185ec8627b81c",
+      "mtime": "2025-03-22T11:30:32-03:00"
     },
     "Circuitos 2": {
       "main": {
@@ -1018,30 +1042,6 @@
                 }
               },
               {
-                "id": "730be93035254a9c",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Resumen"
-                }
-              },
-              {
                 "id": "a91bf40954d0753c",
                 "type": "leaf",
                 "pinned": true,
@@ -1171,8 +1171,7 @@
                   "title": "Digital Signal Processing de Proakis John, Manolakis Dimitris"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -1351,8 +1350,8 @@
           "cmdr:Workspaces: Save and load another layout": false
         }
       },
-      "active": "730be93035254a9c",
-      "mtime": "2025-03-17T14:20:01-03:00"
+      "active": "430953aaa0522f93",
+      "mtime": "2025-03-22T14:22:47-03:00"
     },
     "TPP": {
       "main": {
@@ -1966,5 +1965,5 @@
       "mtime": "2025-03-18T13:46:32-03:00"
     }
   },
-  "active": "Estoca"
+  "active": "Circuitos 2"
 }

@@ -122,6 +122,16 @@ La manera en la cual el controlador automático produce la señal de control  se
 
 Este [[Diagrama de bloques|diagrama de bloques]] de un [[Sistema|sistema]] de control industrial que consiste en un controlador automático, un [[Actuadores|actuador]], una planta y un [[Sensores|sensor]]. El controlador detecta la señal de error, que por lo general, está a un nivel de potencia muy bajo, y la amplifica a un nivel lo suficientemente alto. La salida de un controlador automático alimenta a un actuador
 
+## Clasificación
+---
+Los controladores industriales se clasifican, de acuerdo con sus acciones de control
+* [[Controlador de dos posiciones|Controladores de dos posiciones o on-off]]
+* [[Controlador proporcional|Controladores proporcionales]]
+* [[Controlador integral|Controladores integrales]]
+* [[Controlador proporcional-integral|Controladores proporcionales-integrales]]
+* [[Controlador proporcional-derivativo|Controladores proporcionales-derivativos]]
+* [[Controlador proporcional-integral-derivativo|Controladores proporcionales-integrales-derivativos]]
+
 # Referencias
 ---
 ```dataviewjs

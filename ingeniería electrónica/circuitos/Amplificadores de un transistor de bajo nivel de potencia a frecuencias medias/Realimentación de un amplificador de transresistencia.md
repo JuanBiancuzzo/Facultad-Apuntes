@@ -6,7 +6,13 @@ tags:
 aliases:
   - Realimentación por transconductancia
   - Shunt-Shunt Feedback
+referencias:
+  - "1017"
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Este [[Amplificador de transresistencia|amplificador de transresistencia]], al realimentarlo, podemos pensarlo como muestreo de [[Tensión|tensión]] y suma de [[Corriente eléctrica|corriente]]. Esto lo podemos ver con el siguiente modelo
@@ -52,10 +58,10 @@ Este [[Amplificador de transresistencia|amplificador de transresistencia]], al r
 				node (muestreo_down) {}
 			to[short] ++({-4 * (1 / 3)}, 0)
 				node (temp) {}
-			to[sV, l^=$v_s$] (temp |- ampli_in_up)
-			to[short, f^=$i_s$] ++({4 * (2 / 3)}, 0)
+			to[isource, l^=$i_s$] (temp |- ampli_in_up)
+			to[short] ++({4 * (2 / 3)}, 0)
 				node (muestreo_up) {}
-			to[short, f^=$i_i$] ++({4 * (1 / 3)}, 0);
+			to[short, f^=$i_e$] ++({4 * (1 / 3)}, 0);
 
 		\draw (reali_in_down) to[short] (muestreo_down |- reali_in_down)
 			to[short, -*] (muestreo_down);
@@ -65,7 +71,7 @@ Este [[Amplificador de transresistencia|amplificador de transresistencia]], al r
 			to[open, v_=$i_f$]
 				($ (muestreo_up |- ampli_in_down) + (-0.2, 0) $);
 		\draw ($ (ampli_in_down) + (-0.2, 0) $) 
-			to[open, v^=$v_i$] ($ (ampli_in_up) + (-0.2, 0) $);
+			to[open, v^=$v_s$] ($ (ampli_in_up) + (-0.2, 0) $);
 
 		\draw (ampli_out_down) to[short] ++({4 * (2 / 3)}, 0)
 				node (muestreo_down) {}
@@ -87,7 +93,7 @@ Este [[Amplificador de transresistencia|amplificador de transresistencia]], al r
 			to[short] (ampli_in_up);
 		\draw (ampli_out_down) to[short] ++(-2, 0)
 				node (temp) {}
-			to[american, vsource, invert, l^=$R_m i_i$] (temp |- ampli_out_up)
+			to[american, vsource, invert, l^=$R_{mo} i_e$] (temp |- ampli_out_up)
 			to[R, l_=$R_0$] (ampli_out_up);
 
 		\draw (reali_out_down) to[short] ++(-1, 0) 
@@ -104,20 +110,22 @@ Este [[Amplificador de transresistencia|amplificador de transresistencia]], al r
 			to[R, l^=$R_{ro}$] (temp |- reali_in_up)
 			to[short] (reali_in_up);
 
-		\path (ampli_north) node[above=1pt, scale=1.3] {$R_{mo} = \frac{v_o}{i_i}$};
+		\path (ampli_north) node[above=1pt, scale=1.3] {$R_{mo} = \frac{v_o}{i_e}$};
 		\path (reali_south) node[below=1pt, scale=1.2] {$k = \frac{i_f}{v_o}$};
 	\end{circuitikz}
 \end{document}
 ```
 
-Donde la [[Impedancia|transresistencia]] del [[Amplificador operacional|amplificador]] esta dada por $$ R_o = \frac{v_0}{i_s} $$
-Podemos ver la realimentación como $$ \begin{matrix} 
-	i_s = i_i + i_f \\
-	\implies i_i = i_s - i_f = i_s - k ~ v_0 = i_s - k ~ R_m ~ i_i \\
-	\boxed{ i_i ~ (1 + k ~ R_m) = i_s } 
-\end{matrix} $$
+Donde la [[Impedancia|transresistencia]] del [[Amplificador operacional|amplificador]] esta dada por $$ R_m = \frac{v_0}{i_s} $$
+Podemos ver la realimentación como $$ \begin{align} 
+    i_s &= i_e + i_f \\
+    i_e &= i_s - i_f \\
+     &= i_s - k ~ v_0 \\
+    \frac{v_0}{R_{mo}} &= i_s - k ~ v_0 \\
+    R_m &= \frac{R_{mo}}{1 + R_{mo} ~ k} \\
+\end{align} $$ donde $R_{mo} ~ k$ es la [[Ganancia de lazo|ganancia de lazo]]
 
-## Modelo ideal amplificador
+### Modelo ideal amplificador
 ---
 $R_i \to 0$
 * Para que la corriente de entrada tenga baja impedancia de paso
@@ -125,10 +133,37 @@ $R_i \to 0$
  $R_o \to 0$ 
  * Para que no afecte la caída de tensión al valor de la fuente
 
-## Modelo ideal realimentación
+### Modelo ideal realimentación
 ---
 $R_{ri} \to \infty$
 * Para no afectar la caída de tensión $v_o$ sobre la resistencia de carga $R_L$
 
  $R_{ro} \to \infty$ 
  * Para no afectar la corriente generada por la fuente
+
+## Calculo de impedancias
+---
+Para calcular las impedancias, vamos a tomar $R_s \ll Z_i$ y que estamos en el caso ideal del realimentador donde $R_{ri} \to \infty$ y $R_{ro} \to \infty$
+
+### Impedancia de entrada
+---
+Por la condición establecida, tenemos las ecuaciones $$ \begin{align} 
+    v_o &= R_{mo} ~ i_e \\
+    R_m &= \frac{v_0}{i_s} 
+\end{align} \implies \begin{cases} 
+    \displaystyle i_e = \frac{i_s}{1 + R_{mo} ~ k} \\
+    \displaystyle Z_i = \frac{v_s}{i_s}
+\end{cases} $$
+Usando ambas, podemos obtener resultando en la impedancia de entrada $Z_i$ dada por $$ \boxed{ Z_i = \frac{v_s}{i_e} \frac{1}{1 + R_{mo} ~ k} = \frac{R_i}{1 + T} } $$
+
+### Impedancia de salida
+---
+%% Hacer las cuentas %%
+
+El resultando en la impedancia de salida $Z_o$ dada por $$ \boxed{ Z_0 = \frac{R_0}{1 + T} } $$
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```
