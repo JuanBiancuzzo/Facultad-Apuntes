@@ -11,7 +11,10 @@ aliases:
   - Rango de como común de un par diferencial#Rango de modo común
 referencias:
   - "435"
-etapa: empezado
+  - "1030"
+  - "452"
+  - "453"
+etapa: ampliar
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

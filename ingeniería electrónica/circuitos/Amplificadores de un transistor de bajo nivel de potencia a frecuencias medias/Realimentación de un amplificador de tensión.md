@@ -10,6 +10,7 @@ etapa: ampliar
 aliases:
   - Realimentación por relación de tensiones
   - Series-Shunt Feedback
+  - MVSV
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

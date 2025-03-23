@@ -2,11 +2,21 @@
 dia: 2023-11-28
 aliases:
   - Amplificador Source Común con un MOSFET
+  - Modelo de pequeña señal del amplificador Source Común con un transistor de efecto de campo metal-óxido-semiconductor#Modelo de pequeña señal
+  - MPS del amplificador Source Común con un transistor de efecto de campo metal-óxido-semiconductor#Modelo de pequeña señal
+  - Modelo de pequeña señal del amplificador Source Común con un MOSFET#Modelo de pequeña señal
+  - MPS del amplificador Source Común con un MOSFET#Modelo de pequeña señal
 tags:
   - carrera/ingeniería-electrónica/dispo/Amplificador-emisor-y-source-común
   - nota/facultad
   - carrera/ingeniería-electrónica/circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
+referencias:
+  - "452"
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Consideremos el siguiente [[Amplificador de tensión|amplificador]] implementado con un [[Transistor de efecto de campo metal-óxido-semiconductor|MOSFET]]  [[Transistor de efecto de campo metal-óxido-semiconductor#Canal-N|canal N]]
@@ -78,6 +88,11 @@ Consideremos el siguiente [[Amplificador de tensión|amplificador]] implementado
 ```
 
 ^bef7b2
+## Modelo de pequeña señal
+---
+Encontrando el [[Pequeña señal alterna|modelo de pequeña señal]], vamos a buscar la [[Ganancia|ganancia]] del amplificador $A_v$ y las [[Impedancia|impedancias]] de entrada $R_i$ y $R_o$
+
+%% Grafico de amplificador en señal %%
 
 Donde tomamos $R_G = R_{G1} // R_{G2}$ , $R_{CA} = R_D // R_L$ $$\begin{array}{rl c|c c}
 	 &&&& \text{En general} \\
@@ -157,3 +172,11 @@ Existirá una deformación de la señal de salida y entonces $v_{out} \ne A_{vo}
 ---
 ![[Distorsión por tríodo en un Amplificador source común#Definición]]
 
+
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

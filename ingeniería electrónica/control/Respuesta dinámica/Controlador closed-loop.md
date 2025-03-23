@@ -5,6 +5,7 @@ referencias:
   - "871"
   - "898"
   - "1017"
+  - "1018"
 tags:
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - nota/facultad
@@ -146,6 +147,10 @@ Que si tomamos la derivada como pequeños cambios en los valores de las ganancia
 \frac{\delta A}{A} &= \frac{\frac{\delta a}{a}}{1 + af} = \frac{\frac{\delta a}{a}}{1 + T}
 \end{align} $$
 Esto muestra que la ganancia del amplificador realimentado tiene una relación de cambio $\frac{1}{T}$ más chica que la relación de cambio del amplificador sin realimentar, disminuyendo las [[Perturbación|perturbación]] del bloque $a$
+
+### Aumento de ancho de banda
+---
+
 
 ### Modelos de realimentación en circuitos
 ---

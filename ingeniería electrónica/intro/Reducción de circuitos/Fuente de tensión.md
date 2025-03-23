@@ -10,7 +10,7 @@ aliases:
 ---
 # Definición
 ---
-Es aquella que genera una [[Tensión|tensión]] entre sus terminales constante e independiente de la carga.
+Es aquella que genera una [[Tensión|tensión]] entre sus terminales constante e independiente de la carga
 
 ### Simbología
 ---

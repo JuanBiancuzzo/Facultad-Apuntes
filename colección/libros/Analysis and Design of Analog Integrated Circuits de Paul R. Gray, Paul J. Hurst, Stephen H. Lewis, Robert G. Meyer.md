@@ -1,6 +1,6 @@
 ---
 dia: 2024-11-04
-etapa: sin-empezar
+etapa: ampliar
 tipoCita: Libro
 numReferencia: 451
 tituloObra: Analysis and Design of Analog Integrated Circuits
@@ -80,13 +80,34 @@ tags:
 
 ## Capítulo 3: Single-Transistor and Multiple-Transistor Amplifiers
 ---
+Inicialmente vemos las configuraciones con un solo [[Transistor|transistor]] 
+* [[Amplificador Emisor Común con un transistor bipolar de juntura|Amplificador Emisor Común]]
+* [[Amplificador Base Común con un transistor bipolar de juntura|Amplificador Base Común]]
+* [[Amplificador Colector Común con un transistor bipolar de juntura|Amplificador Colector Común]]
+* [[Amplificador Source Común con un transistor de efecto de campo metal-óxido-semiconductor|Amplificador Source Común con un MOSFET]]
+* [[Amplificador Gate Común con un transistor de efecto de campo metal-óxido-semiconductor|Amplificador Gate Común con un MOSFET]]
+* [[Amplificador Drain Común con un transistor de efecto de campo metal-óxido-semiconductor|Amplificador Drain Común con un MOSFET]]
 
-
+Seguimos con las configuraciones con multiples transistores
+* [[Amplificador colector-emisor común|Amplificador colector-emisor común]]
+* [[Amplificador colector-colector común|Amplificador colector-colector común]]
+* [[Darlington|Darlington]] y [[Cuasi-Darlington|Cuasi-Darlington]]
+* [[Amplificador cascode|Cascode]] y [[Amplificador cascode activo|cascode activo]]
+* [[Amplificador Super Source|Super source seguidor]]
+* [[Amplificador diferencial|Par diferencial]]
 
 ## Capítulo 4: Current Mirrors, Active Loads, and References
 ---
+Se ve [[Fuente espejo|fuente espejo]] y varias configuraciones
+* [[Copia de corriente espejo simple|Espejo de corriente simple]]
+* [[Copia de corriente espejo simple con beta helper|Espejo de corriente simple con beta helper]]
+* [[Fuente Cascode|Espejo de corriente cascode]]
+* [[Copia de corriente espejo Wilson|Espejo de corriente Wilson]]
 
+También se ve [[Carga Activa Espejo (CAE)|carga activa]] y se ve como afecta al par diferencial
 
+Por último se muestra formas de crear [[Tensión|tensiones]] y [[Corriente eléctrica|corrientes]] de referencia
+* [[Bandgap voltage reference|Referencia de tensión con Bandgap]]
 
 ## Capítulo 7: Frequency Response of Integrated Circuits
 ---
@@ -94,7 +115,15 @@ tags:
 
 ## Capítulo 8: Feedback
 ---
+Se ve la idea de un [[Controlador closed-loop#En circuitos de amplificador|circuito de amplificador realimentado]], con sus ventajas y desventajas. También se ven las $4$ configuraciones de realimentación
+1. [[Realimentación de un amplificador de tensión|Muestreo de tensión y suma de tensión]]
+2. [[Realimentación de un amplificador de transresistencia|Muestreo de tensión y suma de corriente]]
+3. [[Realimentación de un amplificador de transconductancia|Muestreo de corriente y suma de tensión]]
+4. [[Realimentación de un amplificador de corriente|Muestreo de corriente y suma de corriente]]
 
+Con sus respectivos cálculos de [[Ganancia|ganancia]] total, [[Impedancia|impedancia]] de entrada y salida
+
+Se empieza a ver los [[Regulador de tensión|reguladores de tensión]], y como primer ejemplo el [[Regulador serie|regulador serie]]
 
 ## Capítulo 12: Fully Differential Operational Amplifiers
 ---

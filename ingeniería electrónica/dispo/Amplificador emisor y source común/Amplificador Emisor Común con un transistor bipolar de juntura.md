@@ -3,11 +3,21 @@ dia: 2023-11-26
 aliases:
   - Amplificador Emisor Común
   - Amplificador Emisor Común con un TBJ
+  - Modelo de pequeña señal del amplificador Emisor Común con un transistor bipolar de juntura#Modelo de pequeña señal
+  - MPS del amplificador Emisor Común con un transistor bipolar de juntura#Modelo de pequeña señal
+  - Modelo de pequeña señal del amplificador Emisor Común con un TBJ#Modelo de pequeña señal
+  - MPS del amplificador Emisor Común con un TBJ#Modelo de pequeña señal
 tags:
   - carrera/ingeniería-electrónica/dispo/Amplificador-emisor-y-source-común
   - nota/facultad
   - carrera/ingeniería-electrónica/circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
+referencias:
+  - "452"
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Este es un [[Amplificador de tensión|amplificador de tensión]], basado en un [[Transistor bipolar de juntura|TBJ]] 
@@ -84,6 +94,12 @@ Este es un [[Amplificador de tensión|amplificador de tensión]], basado en un [
 ```
 
 ^6b9228
+
+## Modelo de pequeña señal
+---
+Encontrando el [[Pequeña señal alterna|modelo de pequeña señal]], vamos a buscar la [[Ganancia|ganancia]] del amplificador $A_v$ y las [[Impedancia|impedancias]] de entrada $R_i$ y $R_o$
+
+%% Grafico de amplificador en señal %%
 
 Donde tomamos $R_B = R_{B1} // R_{B2}$, y $R_{CA} = R_C // R_L$ $$\begin{array}{rl c|c c}
 	 &&&& \text{En general} \\
@@ -265,3 +281,11 @@ Para un amplificador sin carga ($R_L \to \infty$), no se entrega potencia a la s
 Si el amplificador entrega potencia a una carga, la máxima eficiencia se obtiene cuando $$ v_{out} = v_{out, ~ max} = \frac{1}{2} V_{CC} = I_{CQ} ~ R_L $$
 Entonces, en general $$ \eta_{max} = \frac{1}{2} \frac{\frac{1}{2} V_{CC} I_{CQ} R_L}{R_L} \frac{1}{V_{CC} I_{CQ}} \cdot 100 = \frac{100}{4} = 25 $$
 Este $25 \%$ es una cota teórica máxima.
+
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

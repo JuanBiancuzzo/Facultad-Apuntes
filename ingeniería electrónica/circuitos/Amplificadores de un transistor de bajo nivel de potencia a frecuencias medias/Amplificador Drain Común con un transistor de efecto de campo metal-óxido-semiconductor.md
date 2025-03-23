@@ -2,10 +2,20 @@
 dia: 2024-04-30
 aliases:
   - Amplificador Drain Común con un MOSFET
+  - Modelo de pequeña señal del amplificador Drain Común con un transistor de efecto de campo metal-óxido-semiconductor#Modelo de pequeña señal
+  - MPS del amplificador Drain Común con un transistor de efecto de campo metal-óxido-semiconductor#Modelo de pequeña señal
+  - Modelo de pequeña señal del amplificador Drain Común con un MOSFET#Modelo de pequeña señal
+  - MPS del amplificador Drain Común con un MOSFET#Modelo de pequeña señal
 tags:
   - carrera/ingeniería-electrónica/circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
   - nota/facultad
+referencias:
+  - "452"
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 ```tikz
@@ -77,6 +87,11 @@ tags:
 ```
 
 ^6e8ccc
+## Modelo de pequeña señal
+---
+Encontrando el [[Pequeña señal alterna|modelo de pequeña señal]], vamos a buscar la [[Ganancia|ganancia]] del amplificador $A_v$ y las [[Impedancia|impedancias]] de entrada $R_i$ y $R_o$
+
+%% Grafico de amplificador en señal %%
 
 Donde tomamos $R_G = R_{G1} // R_{G2}$ , $R_{CA} = R_S // R_L$ $$\begin{array}{rl c|c c}
 	 &&&& \text{En general} \\
@@ -86,3 +101,11 @@ Donde tomamos $R_G = R_{G1} // R_{G2}$ , $R_{CA} = R_S // R_L$ $$\begin{array}{r
 \end{array} $$
 
 ^84a8e4
+
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

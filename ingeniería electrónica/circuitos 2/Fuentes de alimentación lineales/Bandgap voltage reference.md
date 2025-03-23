@@ -1,18 +1,18 @@
 ---
-dia: 2024-05-12
-tags:
-  - carrera/ingeniería-electrónica/circuitos/Amplificadores-con-varios-dispositivos-activos-de-bajo-nivel-de-potencia
-  - nota/facultad
-etapa: sin-empezar
+dia: 2025-03-22
+etapa: empezado
 referencias:
-  - "452"
+  - "453"
+  - "1023"
+tags:
+  - carrera/ingeniería-electrónica/circuitos-2/Fuentes-de-alimentación-lineales
+  - nota/facultad
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
-
 
 
 # Referencias

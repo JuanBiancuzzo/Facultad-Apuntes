@@ -176,7 +176,7 @@
   "devMode": false,
   "templateFolderPath": "_template",
   "announceUpdates": true,
-  "version": "1.13.1",
+  "version": "1.13.0",
   "disableOnlineFeatures": true,
   "enableRibbonIcon": false,
   "ai": {

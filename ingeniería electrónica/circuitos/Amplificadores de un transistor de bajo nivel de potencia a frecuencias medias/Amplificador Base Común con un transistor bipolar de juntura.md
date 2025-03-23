@@ -3,10 +3,20 @@ dia: 2024-04-30
 aliases:
   - Amplificador Base Común
   - Amplificador Base Común con TBJ
+  - Modelo de pequeña señal del amplificador Base Común con un transistor bipolar de juntura#Modelo de pequeña señal
+  - MPS del amplificador Base Común con un transistor bipolar de juntura#Modelo de pequeña señal
+  - Modelo de pequeña señal del amplificador Base Común con un TBJ#Modelo de pequeña señal
+  - MPSdel amplificador Base Común con un TBJ#Modelo de pequeña señal
 tags:
   - carrera/ingeniería-electrónica/circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
   - nota/facultad
+referencias:
+  - "452"
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 ```tikz
@@ -77,6 +87,12 @@ tags:
 ```
 ^4ae162
 
+## Modelo de pequeña señal
+---
+Encontrando el [[Pequeña señal alterna|modelo de pequeña señal]], vamos a buscar la [[Ganancia|ganancia]] del amplificador $A_v$ y las [[Impedancia|impedancias]] de entrada $R_i$ y $R_o$
+
+%% Grafico de amplificador en señal %%
+
 Donde tomamos $R_B = R_{B1} // R_{B2}$ , $R_{CA} = R_C // R_L$ $$\begin{array}{rl c|c c}
 	&&&& \text{En general} \\
 	A_v =& \displaystyle \frac{g_m ~ R_{CA}}{\frac{R_B}{r_\pi} + 1} > 0 &&& |A_v| \uparrow\uparrow \\\\
@@ -84,3 +100,10 @@ Donde tomamos $R_B = R_{B1} // R_{B2}$ , $R_{CA} = R_C // R_L$ $$\begin{array}{r
 	R_{oc} =& r_{ce} ~ \left( 1 + \frac{\beta ~ R_s}{R_s + r_\pi + R_B} \right) \xrightarrow[r_{ce} \gg 1]{} \infty &&& R_o \uparrow\uparrow \\\\
 \end{array} $$
 ^364fd0
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

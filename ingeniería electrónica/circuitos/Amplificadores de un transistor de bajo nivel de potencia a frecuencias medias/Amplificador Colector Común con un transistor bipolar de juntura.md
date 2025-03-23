@@ -4,10 +4,20 @@ aliases:
   - Amplificador Colector Común
   - Amplificador Colector Común del TBJ
   - Seguidor
+  - Modelo de pequeña señal del amplificador Colector Común con un transistor bipolar de juntura#Modelo de pequeña señal
+  - MPS del amplificador Colector Común con un transistor bipolar de juntura#Modelo de pequeña señal
+  - Modelo de pequeña señal del amplificador Colector Común con un TBJ#Modelo de pequeña señal
+  - MPS del amplificador Colector Común con un TBJ#Modelo de pequeña señal
 tags:
   - carrera/ingeniería-electrónica/circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
   - nota/facultad
+referencias:
+  - "452"
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 ```tikz
@@ -78,6 +88,11 @@ tags:
 \end{document}
 ```
 ^5c5e25
+## Modelo de pequeña señal
+---
+Encontrando el [[Pequeña señal alterna|modelo de pequeña señal]], vamos a buscar la [[Ganancia|ganancia]] del amplificador $A_v$ y las [[Impedancia|impedancias]] de entrada $R_i$ y $R_o$
+
+%% Grafico de amplificador en señal %%
 
 Donde tomamos $R_B = R_{B1} // R_{B2}$ , $R_{CA} = R_E // R_L$ $$\begin{array}{rl c|c c}
 	 &&&& \text{En general} \\
@@ -87,3 +102,11 @@ Donde tomamos $R_B = R_{B1} // R_{B2}$ , $R_{CA} = R_E // R_L$ $$\begin{array}{r
 \end{array} $$
 
 ^e8dc2c
+
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

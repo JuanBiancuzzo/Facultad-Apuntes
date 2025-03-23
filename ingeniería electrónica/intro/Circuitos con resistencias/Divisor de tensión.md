@@ -32,8 +32,8 @@ Un divisor de tensión es un [[Circuito eléctrico|circuito]] que divide la [[T
 
 		\draw (0, 0) to[american, V=$V_0$, invert] ++(0, 4)
 			to[short, v^=$I_0$] ++(3, 0)
-			to[american, R, l_=$R_1~$, v^=$V_1$] ++(0, -2)
-			to[american, R, l_=$R_2~$, v^=$V_2$] ++(0, -2)
+			to[american, R, l_=$R_1~$, v^=$V_{R_1}$] ++(0, -2)
+			to[american, R, l_=$R_2~$, v^=$V_{R_2}$] ++(0, -2)
 			to[short] (0, 0);
 		
 	\end{circuitikz}
