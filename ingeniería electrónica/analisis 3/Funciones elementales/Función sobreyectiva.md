@@ -15,7 +15,7 @@ etapa: ampliar
 ```
 # Definición
 ---
-Sea $f : A \to B$ es una [[Función|función]]. Se dice que $f$ es sobreyectiva si para todo elemento $y \in B$ ([[Codominio|codominio]]) existe al menos un elemento $x \in A$ ([[Dominio de una función|dominio]]) para el cual $f(x) = y$. Dicho de otra manera, $f$ es sobreyectiva si $Im(f) = B$
+Sea $f : A \to B$ es una [[Función|función]]. Se dice que $f$ es sobreyectiva si para todo elemento $y \in B$ ([[Codominio|codominio]]) existe al menos un elemento $x \in A$ ([[Dominio|dominio]]) para el cual $f(x) = y$. Dicho de otra manera, $f$ es sobreyectiva si $Im(f) = B$
 
 # Referencias
 ---

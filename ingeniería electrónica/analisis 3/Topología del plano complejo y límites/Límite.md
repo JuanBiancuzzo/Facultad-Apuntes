@@ -21,7 +21,7 @@ $$\lim_{z\to z_0}f(z)=l$$
 
 ## Observación
 ---
-* $z_0$ puede pertenecer o no al [[Dominio de una función|dominio]] de $f$. Pero aún en el caso en que $z_0 \in \mathbb{D}$, el valor de $f$ en este punto no interviene en absoluto en la definición.
+* $z_0$ puede pertenecer o no al [[Dominio|dominio]] de $f$. Pero aún en el caso en que $z_0 \in \mathbb{D}$, el valor de $f$ en este punto no interviene en absoluto en la definición.
 * "$z$ tiende a $z_0$ en $\mathbb{D}$", es decir, si se utiliza la expresión cinemática "$z$ se acerca a $z_0$", debe sobreentenderse "$z$ se acerca a $z_0$ sin salirse de $\mathbb{D}$"
 * La primera de las desigualdades $0 < |z - z_0| < \delta$ significa que "$z$ no puede ser $z_0$".
 

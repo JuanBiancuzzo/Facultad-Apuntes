@@ -7,6 +7,8 @@ tags:
 referencias:
   - "899"
 etapa: ampliar
+aliases:
+  - Función transferencia
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

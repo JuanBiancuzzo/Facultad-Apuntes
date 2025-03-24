@@ -290,7 +290,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ingeniería electrónica/control/Respuesta dinámica/Controlador automático.md",
+                    "file": "ingeniería electrónica/control/Respuesta dinámica/Controlador closed-loop.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -305,16 +305,16 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Controlador automático"
+                  "title": "Controlador closed-loop"
                 }
               },
               {
-                "id": "ceba62d549d20201",
+                "id": "2f776647b1df3e9e",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ingeniería electrónica/control/Respuesta dinámica/Controlador de dos posiciones.md",
+                    "file": "ingeniería electrónica/control/Respuesta dinámica/Variable de estado.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -329,16 +329,40 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Controlador de dos posiciones"
+                  "title": "Variable de estado"
                 }
               },
               {
-                "id": "a0c1b8a9aec7f246",
+                "id": "0527b4d6c72ec6d0",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ingeniería electrónica/señales/Señales y sistemas/Sistema estable.md",
+                    "file": "ingeniería electrónica/control/Respuesta dinámica/Espacio de estados.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": true,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Espacio de estados"
+                }
+              },
+              {
+                "id": "3fc4d2100bf0f390",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/control/Respuesta dinámica/Sistema en espacio de estados.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -353,7 +377,124 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Sistema estable"
+                  "title": "Sistema en espacio de estados"
+                }
+              }
+            ],
+            "currentTab": 5
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "846798510ac9a674",
+        "type": "split",
+        "children": [
+          {
+            "id": "c635826e07162fe2",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "4758c10ce82e9eab",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "640b82a7dfa99277",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "1e39f14ee35d8784",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 330.50499725341797,
+        "collapsed": true
+      },
+      "right": {
+        "id": "3bf298dcb9f1081b",
+        "type": "split",
+        "children": [
+          {
+            "id": "6f578bed393edc47",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "f1644a9f662c2244",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "[\"capítulo\"]",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "41a3f6f58104b9b1",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "ingeniería electrónica/control/Respuesta dinámica/Sistema en espacio de estados.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for Sistema en espacio de estados"
+                }
+              },
+              {
+                "id": "57a461fe7ffeb22b",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "ingeniería electrónica/control/Respuesta dinámica/Sistema en espacio de estados.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from Sistema en espacio de estados"
                 }
               },
               {
@@ -461,7 +602,261 @@
                 }
               }
             ],
-            "currentTab": 8
+            "currentTab": 5
+          }
+        ],
+        "direction": "horizontal",
+        "width": 917.5,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "graph:Open graph view": true,
+          "canvas:Create new canvas": true,
+          "templates:Insert template": true,
+          "command-palette:Open command palette": true,
+          "templater-obsidian:Templater": true,
+          "obsidian-git:Open Git source control": true,
+          "callout-manager:Insert Callout": true,
+          "cmdr:Materia facultad": false,
+          "cmdr:Nuevo curso": false,
+          "cmdr:Nuevo tema de investigación": false,
+          "cmdr:Nuevo Proyecto": false,
+          "cmdr:Agregar elemento de colección": false,
+          "cmdr:Referencia": false,
+          "cmdr:Workspaces: Save and load another layout": false
+        }
+      },
+      "active": "3fc4d2100bf0f390",
+      "mtime": "2025-03-23T15:53:36-03:00"
+    },
+    "Circuitos 2": {
+      "main": {
+        "id": "f5ab1d04db1b6d13",
+        "type": "split",
+        "children": [
+          {
+            "id": "79a3049cc4361914",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "e46459332fd19a9e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/circuitos 2/Taller de diseño de circuitos electrónicos (TA138).md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Taller de diseño de circuitos electrónicos (TA138)"
+                }
+              },
+              {
+                "id": "1c66f994e75e8a3d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/circuitos 2/Fuentes de alimentación lineales/Bandgap voltage reference.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Bandgap voltage reference"
+                }
+              },
+              {
+                "id": "52ab5d494e802d67",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/circuitos 2/Fuentes de alimentación lineales/Regulador de tensión.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Regulador de tensión"
+                }
+              },
+              {
+                "id": "52f20377e77462b9",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Realimentación de un amplificador de tensión.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Realimentación de un amplificador de tensión"
+                }
+              },
+              {
+                "id": "cbf892680af42c23",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Realimentación de un amplificador de tensión.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Realimentación de un amplificador de tensión"
+                }
+              },
+              {
+                "id": "532a5c3d953fef1e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/control/Respuesta dinámica/Controlador closed-loop.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Controlador closed-loop"
+                }
+              },
+              {
+                "id": "5317e44acd5eb3be",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Amplificador diferencial.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Amplificador diferencial"
+                }
+              },
+              {
+                "id": "fdc3e17a9055ede0",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/circuitos/Amplificadores con varios dispositivos activos de bajo nivel de potencia/Amplificador colector-emisor común.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Amplificador colector-emisor común"
+                }
+              },
+              {
+                "id": "1b51d5d270041ca8",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/circuitos/Amplificadores con varios dispositivos activos de bajo nivel de potencia/Amplificador colector-colector común.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Amplificador colector-colector común"
+                }
+              }
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -545,36 +940,12 @@
                 }
               },
               {
-                "id": "9fe686856cb889a6",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "README.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "README"
-                }
-              },
-              {
                 "id": "41a3f6f58104b9b1",
                 "type": "leaf",
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "licenciatura en ciencias matemáticas/algebra 1/Números enteros/Teorema fundamental de la aritmética.md",
+                    "file": "ingeniería electrónica/circuitos 2/Fuentes de alimentación lineales/Bandgap voltage reference.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -584,7 +955,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for Teorema fundamental de la aritmética"
+                  "title": "Backlinks for Bandgap voltage reference"
                 }
               },
               {
@@ -593,195 +964,12 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "README.md",
+                    "file": "colección/libros/Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-going-out",
-                  "title": "Outgoing links from README"
-                }
-              },
-              {
-                "id": "8ce68be4957a7bb0",
-                "type": "leaf",
-                "state": {
-                  "type": "outline",
-                  "state": {
-                    "file": "README.md",
-                    "followCursor": false,
-                    "showSearch": false,
-                    "searchQuery": ""
-                  },
-                  "icon": "lucide-list",
-                  "title": "Outline of README"
-                }
-              },
-              {
-                "id": "224dda726ce358fa",
-                "type": "leaf",
-                "state": {
-                  "type": "git-view",
-                  "state": {},
-                  "icon": "lucide-file",
-                  "title": "Plugin no longer active"
-                }
-              }
-            ],
-            "currentTab": 1
-          }
-        ],
-        "direction": "horizontal",
-        "width": 416.5,
-        "collapsed": true
-      },
-      "left-ribbon": {
-        "hiddenItems": {
-          "graph:Open graph view": true,
-          "canvas:Create new canvas": true,
-          "templates:Insert template": true,
-          "command-palette:Open command palette": true,
-          "templater-obsidian:Templater": true,
-          "obsidian-git:Open Git source control": true,
-          "callout-manager:Insert Callout": true,
-          "cmdr:Materia facultad": false,
-          "cmdr:Nuevo curso": false,
-          "cmdr:Nuevo tema de investigación": false,
-          "cmdr:Nuevo Proyecto": false,
-          "cmdr:Agregar elemento de colección": false,
-          "cmdr:Referencia": false,
-          "cmdr:Workspaces: Save and load another layout": false
-        }
-      },
-      "active": "613185ec8627b81c",
-      "mtime": "2025-03-22T11:30:32-03:00"
-    },
-    "Circuitos 2": {
-      "main": {
-        "id": "f5ab1d04db1b6d13",
-        "type": "split",
-        "children": [
-          {
-            "id": "79a3049cc4361914",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "e46459332fd19a9e",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ingeniería electrónica/circuitos 2/Taller de diseño de circuitos electrónicos (TA138).md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Taller de diseño de circuitos electrónicos (TA138)"
-                }
-              },
-              {
-                "id": "55ee5ef753ecdff0",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ingeniería electrónica/circuitos 2/Realimentación negativa/Resumen.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Resumen"
-                }
-              },
-              {
-                "id": "cbf892680af42c23",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ingeniería electrónica/control/Respuesta dinámica/Controlador closed-loop.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Controlador closed-loop"
-                }
-              },
-              {
-                "id": "c0867c9f630a00f6",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ingeniería electrónica/circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Realimentación de un amplificador de transresistencia.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Realimentación de un amplificador de transresistencia"
-                }
-              },
-              {
-                "id": "9bb325bd23f93b93",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ingeniería electrónica/circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Realimentación de un amplificador de transresistencia.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Realimentación de un amplificador de transresistencia"
+                  "title": "Outgoing links from Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer"
                 }
               },
               {
@@ -861,130 +1049,39 @@
                   "icon": "lucide-file",
                   "title": "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer"
                 }
+              },
+              {
+                "id": "c3690badc1c651b9",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "colección/libros/Electrónica básica para ingenieros de Gustavo Adolfo Ruiz Robredo.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "lucide-file",
+                  "title": "Electrónica básica para ingenieros de Gustavo Adolfo Ruiz Robredo"
+                }
               }
             ],
             "currentTab": 5
           }
         ],
-        "direction": "vertical"
-      },
-      "left": {
-        "id": "846798510ac9a674",
-        "type": "split",
-        "children": [
-          {
-            "id": "c635826e07162fe2",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "4758c10ce82e9eab",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "alphabetical",
-                    "autoReveal": false
-                  },
-                  "icon": "lucide-folder-closed",
-                  "title": "Files"
-                }
-              },
-              {
-                "id": "640b82a7dfa99277",
-                "type": "leaf",
-                "state": {
-                  "type": "tag",
-                  "state": {
-                    "sortOrder": "alphabetical",
-                    "useHierarchy": true,
-                    "showSearch": false,
-                    "searchQuery": ""
-                  },
-                  "icon": "lucide-tags",
-                  "title": "Tags"
-                }
-              },
-              {
-                "id": "1e39f14ee35d8784",
-                "type": "leaf",
-                "state": {
-                  "type": "bookmarks",
-                  "state": {},
-                  "icon": "lucide-bookmark",
-                  "title": "Bookmarks"
-                }
-              }
-            ]
-          }
-        ],
         "direction": "horizontal",
-        "width": 330.50499725341797,
-        "collapsed": true
-      },
-      "right": {
-        "id": "3bf298dcb9f1081b",
-        "type": "split",
-        "children": [
-          {
-            "id": "6f578bed393edc47",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "f1644a9f662c2244",
-                "type": "leaf",
-                "state": {
-                  "type": "search",
-                  "state": {
-                    "query": "[\"capítulo\"]",
-                    "matchingCase": false,
-                    "explainSearch": false,
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical"
-                  },
-                  "icon": "lucide-search",
-                  "title": "Search"
-                }
-              },
-              {
-                "id": "41a3f6f58104b9b1",
-                "type": "leaf",
-                "state": {
-                  "type": "backlink",
-                  "state": {
-                    "file": "colección/libros/Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer.md",
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical",
-                    "showSearch": false,
-                    "searchQuery": "",
-                    "backlinkCollapsed": false,
-                    "unlinkedCollapsed": true
-                  },
-                  "icon": "links-coming-in",
-                  "title": "Backlinks for Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer"
-                }
-              },
-              {
-                "id": "57a461fe7ffeb22b",
-                "type": "leaf",
-                "state": {
-                  "type": "outgoing-link",
-                  "state": {
-                    "file": "colección/libros/Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer.md",
-                    "linksCollapsed": false,
-                    "unlinkedCollapsed": true
-                  },
-                  "icon": "links-going-out",
-                  "title": "Outgoing links from Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer"
-                }
-              }
-            ],
-            "currentTab": 1
-          }
-        ],
-        "direction": "horizontal",
-        "width": 478.5,
+        "width": 961.5,
         "collapsed": true
       },
       "left-ribbon": {
@@ -1005,8 +1102,8 @@
           "cmdr:Workspaces: Save and load another layout": false
         }
       },
-      "active": "5ef381d63bc6d071",
-      "mtime": "2025-03-19T17:10:38-03:00"
+      "active": "1c66f994e75e8a3d",
+      "mtime": "2025-03-24T09:54:37-03:00"
     },
     "Estoca": {
       "main": {
@@ -1965,5 +2062,5 @@
       "mtime": "2025-03-18T13:46:32-03:00"
     }
   },
-  "active": "Circuitos 2"
+  "active": "Control"
 }

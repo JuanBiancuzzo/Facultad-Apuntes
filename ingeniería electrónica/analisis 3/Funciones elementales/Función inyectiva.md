@@ -15,7 +15,7 @@ etapa: ampliar
 ```
 # Definición
 ---
-Sea $f : A \to B$ es una [[Función|función]]. Se dice que $f$ es inyectiva si para todo elemento $y \in B$ ([[Codominio|imagen]]) existe a lo sumo un elemento $x \in A$ ([[Dominio de una función|dominoo]]) para el cual $f(x) = y$. Dicho de otra manera, $f$ es inyectiva si para todo $x, ~x' \in A$ tales que $f(x) = f(x')$ se tiene que $x = x'$
+Sea $f : A \to B$ es una [[Función|función]]. Se dice que $f$ es inyectiva si para todo elemento $y \in B$ ([[Codominio|imagen]]) existe a lo sumo un elemento $x \in A$ ([[Dominio|dominoo]]) para el cual $f(x) = y$. Dicho de otra manera, $f$ es inyectiva si para todo $x, ~x' \in A$ tales que $f(x) = f(x')$ se tiene que $x = x'$
 
 # Referencias
 ---

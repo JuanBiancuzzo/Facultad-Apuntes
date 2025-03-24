@@ -49,7 +49,7 @@ En el caso especifico de las curvas de interpolación, podemos crear una alterna
 
 El extremo es tener la [[Función identidad|función identidad]] por lo que sigue perfectamente al input, pero nos permite ver que si partimos de acá, sabemos que tenemos que mantener que $$ \lim_{t \to \infty} f(x) - x = 0 $$ es decir, que siempre tiene que seguir a $x$
 
-Podemos crear un [[Sistema dinámico|sistema dinámico]] de segundo orden, para reflejar un movimiento real, ya que tenemos aceleración y velocidad, donde por simplicidad llamaremos $y$ a $f(x)$ $$ y + k_1 \dot{y} + k_2 \ddot{y} = x + k_3 \dot{x} $$
+Podemos crear un [[Espacio de estados|sistema dinámico]] de segundo orden, para reflejar un movimiento real, ya que tenemos aceleración y velocidad, donde por simplicidad llamaremos $y$ a $f(x)$ $$ y + k_1 \dot{y} + k_2 \ddot{y} = x + k_3 \dot{x} $$
 
 
 Variando $k_1$,  $k_2$ y $k_3$, podemos crear distintas dinámicas, como

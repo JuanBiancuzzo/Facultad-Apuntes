@@ -121,7 +121,24 @@ Se ve las siguientes definiciones
 
 ## Capítulo 2: Modelado matemático de sistemas de control
 ---
+Se da los fundamentos del análisis de [[Sistema|sistemas]] usando la [[Transferencia del sistema|función transferencia]] y la [[Respuesta en frecuencia|respuesta al impulso]]
 
+Después se ve los [[Controlador automático|sistema de control automático]] dado una lista de [[Controlador|controladores]]
+* [[Controlador de dos posiciones|Controladores de dos posiciones o on-off]]
+* [[Controlador proporcional|Controladores proporcionales]]
+* [[Controlador integral|Controladores integrales]]
+* [[Controlador proporcional-integral|Controladores proporcionales-integrales]]
+* [[Controlador proporcional-derivativo|Controladores proporcionales-derivativos]]
+* [[Controlador proporcional-integral-derivativo|Controladores proporcionales-integrales-derivativos]]
+
+Se sigue con el modelado en el espacio de estados, viendo conceptos como
+* [[Teoría de control moderna|Teoría de control moderna]]
+* Algunas definiciones de conceptos claves
+    * [[Estado#En teoría de control|Estado]]
+    * [[Variable de estado|Variable y vector de estado]]
+    * [[Espacio de estados|Espacio de estados y sus ecuaciones]]
+
+Por último resolución usando la [[Transformada de Laplace|transformada de Laplace]] o [[Linealización Jacobiana|linealizando el problema]] alrededor de un [[Punto de equilibrio|punto de equilibrio]], para obtener la transferencia del sistema
 
 ## Capítulo 3: Modelado matemático de sistemas mecánicos y sistemas electrónicos
 ---

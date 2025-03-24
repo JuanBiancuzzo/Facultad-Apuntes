@@ -1,6 +1,6 @@
 ---
 dia: 2025-03-10
-etapa: sin-empezar
+etapa: empezado
 tags:
   - referencia/libro
   - colección/biblioteca/libro

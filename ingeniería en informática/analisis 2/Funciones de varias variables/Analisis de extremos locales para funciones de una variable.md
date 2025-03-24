@@ -50,7 +50,7 @@ Veremos como analizar los [[Máximo y mínimo local|máximos y mínimos locales]
 \end{document}
 ```
 
-Comencemos observando el grafico, donde en rojo se representa $y =f(x)$ en un cierto [[Dominio de una función|dominio]] $D$
+Comencemos observando el grafico, donde en rojo se representa $y =f(x)$ en un cierto [[Dominio|dominio]] $D$
 
 Vemos que:
 

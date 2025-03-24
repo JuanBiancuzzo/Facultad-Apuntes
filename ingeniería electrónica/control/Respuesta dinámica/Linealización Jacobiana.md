@@ -1,7 +1,8 @@
 ---
 dia: 2025-03-19
 etapa: ampliar
-referencias: 
+referencias:
+  - "899"
 tags:
   - carrera/ingeniería-electrónica/control/Linealización
   - nota/facultad
@@ -30,3 +31,10 @@ Que se puede reescribir la ecuación del sistema y su solución como $$ \begin{m
     C = \frac{\partial h}{\partial x} \Bigg|_{(x_e,~ u_e)} &&
     D = \frac{\partial h}{\partial u} \Bigg|_{(x_e,~ u_e)} 
 \end{matrix} $$
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

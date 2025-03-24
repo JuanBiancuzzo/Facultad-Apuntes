@@ -28,7 +28,7 @@ Podemos pasar de la [[Señal|señal]] [[Función senoidal|senoide]] $$ v(t) = V_
 
 ### Dominio temporal y fasorial
 ---
-Los diferentes [[Dominio de una función|dominio de una función]] y sus propiedades. Haciendo énfasis en que estamos trabajando en un régimen senoidal permanente. Esto se puede ver a partir de una [[Transformada de Fourier|transformada de Fourier]] o una [[Transformada de Laplace|transformada de Laplace]] $$ \begin{align}
+Los diferentes [[Dominio|dominio de una función]] y sus propiedades. Haciendo énfasis en que estamos trabajando en un régimen senoidal permanente. Esto se puede ver a partir de una [[Transformada de Fourier|transformada de Fourier]] o una [[Transformada de Laplace|transformada de Laplace]] $$ \begin{align}
 	\frac{dv}{dt} \Leftrightarrow j \omega V \\
 	\int v ~ dt \Leftrightarrow \frac{V}{j \omega}
 \end{align} $$

@@ -15,7 +15,7 @@ etapa: ampliar
 ```
 # Definición
 ---
-Sea $f : A \to B$ es una [[Función|función]]. Se dice que $f$ es biyectiva si es a la vez [[Función inyectiva|inyectiva]] y [[Función sobreyectiva|sobreyectiva]], es decir para todo elemento $y \in B$ ([[Codominio|codominio]]) existe exactamente un elemento $x \in A$ ([[Dominio de una función|dominio]]) para el cual $f(x) = y$
+Sea $f : A \to B$ es una [[Función|función]]. Se dice que $f$ es biyectiva si es a la vez [[Función inyectiva|inyectiva]] y [[Función sobreyectiva|sobreyectiva]], es decir para todo elemento $y \in B$ ([[Codominio|codominio]]) existe exactamente un elemento $x \in A$ ([[Dominio|dominio]]) para el cual $f(x) = y$
 
 # Referencias
 ---

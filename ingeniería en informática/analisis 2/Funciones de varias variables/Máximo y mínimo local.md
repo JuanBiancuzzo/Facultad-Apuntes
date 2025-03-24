@@ -9,7 +9,7 @@ tags:
 ---
 # Definición
 ---
-Dada $f : D \subset \mathbb{R}^n \to \mathbb{R}$ y el punto $A$ es un [[Punto interno|punto interior]] a su [[Dominio de una función|dominio]], se dice que 
+Dada $f : D \subset \mathbb{R}^n \to \mathbb{R}$ y el punto $A$ es un [[Punto interno|punto interior]] a su [[Dominio|dominio]], se dice que 
 
  * $f(A)$ es [[Mínimo|mínimo]] local de $f(x)$ cuando $\forall x \in E^*(A)$ resulta $f(x) > f(A)$
  * $f(A)$ es [[Máximo|máximo]] local de $f(x)$ cuando $\forall x \in E^*(A)$ resulta $f(x) < f(A)$

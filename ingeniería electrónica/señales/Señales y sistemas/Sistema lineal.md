@@ -4,9 +4,12 @@ tags:
   - carrera/ingeniería-electrónica/señales/Señales-y-sistemas
   - nota/facultad
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
+  - carrera/ingeniería-electrónica/control/Linealización
 referencias:
   - "899"
 etapa: ampliar
+aliases:
+  - Sistema no lineal
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
@@ -50,6 +53,10 @@ Un [[Sistema|sistema]] se denomina lineal si se aplica el [[Principio de superpo
 	\end{tikzpicture}
 \end{document}
 ```
+
+## Sistema no lineal
+---
+Un sistema es no lineal si no se aplica el principio de superposición. Por tanto, para un sistema no lineal la respuesta a dos entradas no puede calcularse tratando cada entrada a la vez y sumando los resultados
 
 # Referencias
 ---

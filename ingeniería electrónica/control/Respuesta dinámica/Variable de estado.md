@@ -1,7 +1,8 @@
 ---
 dia: 2025-03-13
 etapa: ampliar
-referencias: 
+referencias:
+  - "899"
 tags:
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - nota/facultad
@@ -13,7 +14,17 @@ aliases:
 ```
 # Definición
 ---
-El estado de un [[Sistema dinámico|sistema dinámico]] es el [[Conjunto|conjunto]] de variables más pequeño (llamadas variables de estado), de forma que el conocimiento de estas variables en $t = t_0$, junto con el conocimiento de la entrada para $t \ge t_0$, determinan completamente el comportamiento del sistema en cualquier $t \ge t_0$
+Las variables de un [[Espacio de estados|sistema dinámico]] son las variables que constituyen el menor [[Conjunto|conjunto]] de variables que determinan el estado del sistema dinámico. Si al menos se necesitan $n$ variables $x_1,~ x_2,~ \cdots,~ x_n$ para describir completamente el comportamiento de un sistema dinámico, entonces tales $n$ variables son un conjunto de variables de estado
 
-Obsérvese que el concepto de estado no está limitado a sistemas físicos. Es aplicable a sistemas biológicos, sistemas económicos, sistemas sociales y otros
+Notemos que estas variables no necesariamente tienen que ser físicamente medibles o cantidades observables
 
+Si se necesitan $n$ variables de estado para describir el sistema dado, estas se pueden considerar los $n$ componentes de un [[Vector|vector]] $x$, este se denomina vector de estado
+
+
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

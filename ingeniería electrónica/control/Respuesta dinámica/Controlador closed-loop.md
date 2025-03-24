@@ -6,6 +6,7 @@ referencias:
   - "898"
   - "1017"
   - "1018"
+  - "899"
 tags:
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - nota/facultad
@@ -50,6 +51,10 @@ El control realimentado se refiere a una operación que, en presencia de [[Pertu
 En estos sistemas de control se alimenta al [[Controlador|controlador]] la [[Señal|señal]] de error de actuación, que es la diferencia entre la [[Señal|señal]] de entrada y la señal realimentada, con el fin de reducir el error y llevar la salida del sistema a un valor deseado
 
 El término control en lazo cerrado siempre implica el uso de una acción de control realimentado para reducir el error del sistema
+
+### Efecto de las perturbaciones
+---
+%% Ver Capitulo 2 Modelado matemático de sistemas de control, Ingeniería de control moderna. para ver este tema %% 
 
 ## En circuitos de amplificador
 ---

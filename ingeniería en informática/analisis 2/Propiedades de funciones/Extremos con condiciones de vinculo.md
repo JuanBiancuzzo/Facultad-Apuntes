@@ -11,7 +11,7 @@ En este caso, vamos a aplicar el [[Análisis de extremos locales para campos esc
 
 La forma mas directa de resolver estas situaciones, consiste en imponer la condición o condiciones de vinculo mediante la [[Composición de relaciones#Funciones|composición de funciones]]
 
-Vamos a tener una expresión a maximar, que llamaremos $f(x, y)$  y una condición de vinculo que llamaremos $\vec{g}$ y sera una [[Función implícita|función implícita]], esta va a tener un [[Dominio de una función|dominio]] reducido
+Vamos a tener una expresión a maximar, que llamaremos $f(x, y)$  y una condición de vinculo que llamaremos $\vec{g}$ y sera una [[Función implícita|función implícita]], esta va a tener un [[Dominio|dominio]] reducido
 
 De $\vec{g}$ despejaremos una variable. Entonces ahora podremos plantear $h(x)$ tal que
 

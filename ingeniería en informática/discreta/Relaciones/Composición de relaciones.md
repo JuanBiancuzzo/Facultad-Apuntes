@@ -63,7 +63,7 @@ Sean $S$, $T$ dos [[Relación|relaciones]] del [[Conjunto|conjunto]] $A$. Entonc
 ---
 Sean $A$, $B$, $C$ [[Conjunto|conjuntos]], y $f : A \to B$, $g : B \to C$ [[Función|funciones]]. Entonces la composición de $f$ con $g$, que se nota $g \circ f$ , definida por $$ (g \circ f)(x) = g(f(x)), ~~~ \forall x \in A $$ resulta ser una función de $A$ en $C$
 
-La idea de componer funciones, significa "sustituir una función en otra", donde teniendo dos funciones de una variable. Cuando tenemos funciones, tenemos que tener en cuenta que se corresponda el [[Codominio|codominio]] de una con el [[Dominio de una función|dominio]] de otra
+La idea de componer funciones, significa "sustituir una función en otra", donde teniendo dos funciones de una variable. Cuando tenemos funciones, tenemos que tener en cuenta que se corresponda el [[Codominio|codominio]] de una con el [[Dominio|dominio]] de otra
 
 ### Ejemplo
 ---
