@@ -153,6 +153,13 @@ class TipoArray {
     }
 }
 
+async function obtenerArray(tp, manejoTipoDeDatos, padre, lenguaje, dvArchivo) {
+    // buscar donde estan los elementos que usa el array
+
+    return new TipoArray(tp, padre, manejoTipoDeDatos, lenguaje, dvArchivo);
+}
+
 module.exports = () => ({
     clase: (tp, padre, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new TipoArray(tp, padre, manejoTipoDeDatos, lenguaje, representacionPrevia),
+    recrear: obtenerArray,
 });

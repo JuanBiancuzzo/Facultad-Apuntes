@@ -30,17 +30,21 @@ class Modulo {
         for (let { [DATOS_MANEJADOR.id]: id, [DATOS_MANEJADOR.tipo]: tipo, ...datos } of estructuras) {
             let valor;
             switch (tipo) {
-                case DATOS_TIPOS.funcion:   valor = tp.user.funcion().clase(tp, this.manejarTipoDato, this, datos); break;
-                case DATOS_TIPOS.clase:     valor = tp.user.clase().clase(tp, this.manejarTipoDato, this, datos); break;
-                case DATOS_TIPOS.struct:    valor = tp.user.struct().clase(tp, this.manejarTipoDato, this, datos); break;
-                case DATOS_TIPOS.interfaz:  valor = tp.user.interfaz().clase(tp, this.manejarTipoDato, this, datos); break;
-                case DATOS_TIPOS.enum:      valor = tp.user.enum().clase(tp, this.manejarTipoDato, this, datos); break;
+                case DATOS_TIPOS.funcion:   valor = tp.user.funcion().recrear(tp, this.manejarTipoDato, this, this.obtenerLenguaje(), datos); break;
+                case DATOS_TIPOS.clase:     valor = tp.user.clase().recrear(tp, this.manejarTipoDato, this, this.obtenerLenguaje(), datos); break;
+                case DATOS_TIPOS.struct:    valor = tp.user.struct().recrear(tp, this.manejarTipoDato, this, this.obtenerLenguaje(), datos); break;
+                case DATOS_TIPOS.interfaz:  valor = tp.user.interfaz().recrear(tp, this.manejarTipoDato, this, this.obtenerLenguaje(), datos); break;
+                case DATOS_TIPOS.enum:      valor = tp.user.enum().recrear(tp, this.manejarTipoDato, this, this.obtenerLenguaje(), datos); break;
 
                 default: continue;
             }
 
             this.manejarTipoDato.incorporarPrevio(id, tipo, valor);
         }
+    }
+    
+    obtenerLenguaje() {
+        return this.libreriaPadre.obtenerLenguaje();
     }
     
     esValido() {

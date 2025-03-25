@@ -35,6 +35,10 @@ class Lenguaje {
         }
     }
 
+    obtenerLenguaje() {
+        return this;
+    }
+
     esValido() {
         return this.nombre && this.temaInvestigacion;
     }

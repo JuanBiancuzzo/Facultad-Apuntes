@@ -270,20 +270,20 @@ class Funcion {
     }
 }
 
-async function crearFuncion(tp, representacionPrevia = null) {
+async function crearFuncion(tp, objetoFuncion) {
     const { 
         DIRECTORIOS: { coleccion: { self: DIRECTORIO_COLECCION, funciones: DIRECTORIO_FUNCIONES } },
         TAGS: { coleccion: { self: TAG_COLECCION, funciones: TAGS_FUNCIONES }, nota: TAGS_NOTA },
         DATOS: { INVESTIGACION: DATOS_INVESTIGACION, FUNCIONES: DATOS_FUNCIONES },
     } = tp.user.constantes();
     const tagPorNombre = tp.user.tagPorNombre;
+    const preguntar = tp.user.preguntar();
 
     const dv = app.plugins.plugins.dataview.api;
 
-    let resultado = await tp.user.crearPreguntas(
-        tp, obtenerDefault.bind(null, tp), 
-        actualizarDatos, generarPreguntas, "Agregar función",
-    );
+    if (!objetoFuncion.esValido()) {
+        await preguntar.formulario(tp, objetoFuncion, "Ingresar información de la función");
+    }
 
     await agregarDatos(tp, resultado);
 
@@ -329,7 +329,14 @@ async function crearFuncion(tp, representacionPrevia = null) {
     }
 }
 
+async function obtenerFuncion(tp, manejoTipoDeDatos, padre, lenguaje, dvArchivo) {
+    // buscar donde estan los elementos que usa esta funcion
+
+    return new Funcion(tp, padre, manejoTipoDeDatos, lenguaje, dvArchivo);
+}
+
 module.exports = () => ({
     clase: (tp, padre, manejoTipoDeDatos, lenguaje = null, representacionPrevia = {}) => new Funcion(tp, padre, manejoTipoDeDatos, lenguaje, representacionPrevia),
     crear: crearFuncion,
+    recrear: obtenerFuncion,
 });

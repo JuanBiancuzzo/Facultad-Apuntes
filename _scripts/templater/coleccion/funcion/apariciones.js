@@ -1,5 +1,5 @@
 class Aparicion {
-
+    constructor() {}
 }
 
 module.exports = () => ({
