@@ -5,12 +5,14 @@ tags:
   - nota/facultad
   - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
   - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
+  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
 aliases:
   - Teorema de superposición
 referencias:
   - "200"
   - "899"
-etapa: sin-empezar
+  - "873"
+etapa: ampliar
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
@@ -22,6 +24,8 @@ El principio de superposición es una herramienta matemática que permite descom
 Técnicamente, el principio de superposición afirma que cuando las ecuaciones de comportamiento que rigen un problema físico son lineales, entonces el resultado de una medida o la solución de un problema práctico relacionado con una magnitud extensiva asociada al fenómeno, cuando están presentes los conjuntos de factores causantes A y B, puede obtenerse como la suma de los efectos de A más los efectos de B<sup><a href="#ref-200" style="color: inherit; text-decoration: none;">[200]</a></sup> 
 
 Otra forma de explicarlo es que este principio establece que la respuesta producida por la aplicación simultánea de dos funciones de entrada diferentes es la suma de las dos respuestas individuales
+
+Se puede expresar matemáticamente, considerando un [[Sistema|sistema]] con entradas $u$ y salidas $y$, y supongamos que el sistema en reposo, lo excitamos con la entrada $u_1(t)$ y obtenemos la salida $y_1(t)$, y desde el reposo, excitamos el sistema con la entrada $u_2(t)$ y obtenemos la salida $y_2(t)$. Entonces si el sistema es lineal, y este está en reposo, al excitarlo con la entrada $u(t) = \alpha_1 ~ u_1(t) + \alpha_2 ~ u_2(t)$ se tiene que obtener la salida  $y(t) = \alpha_1 ~ y_1(t) + \alpha_2 ~ y_2(t)$
 
 ## Superposición de fuerzas
 ---

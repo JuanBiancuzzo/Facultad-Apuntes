@@ -3,6 +3,7 @@ dia: 2025-03-20
 etapa: ampliar
 referencias:
   - "899"
+  - "873"
 tags:
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - nota/facultad
@@ -239,7 +240,7 @@ Teniendo como entrada $R(s)$ y bloques en [[Controlador closed-loop#En teoría d
 \end{document}
 ```
 
-Obtenemos la transferencia $H(s)$ con la salida $C(s)$ como $$ H(s) = \frac{C(s)}{R(s)} = \frac{G_1(s)}{1 + G_1(s) ~ G_2(s)} $$
+Obtenemos la transferencia $H(s)$ con la salida $C(s)$ como $$ H(s) = \frac{C(s)}{R(s)} = \frac{G_1(s)}{1 + G_1(s) ~ G_2(s)} $$ en este caso, se esta tomando que es una [[Controlador closed-loop#Realimentación negativa|realimentación negativa]]
 
 # Referencias
 ---

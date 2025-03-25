@@ -7,8 +7,7 @@ tags:
 ---
 # Definición
 ---
-Existen varios criterios de estabilidad. Se va a tomar que un sistema es estable si para entradas acotadas la salida pertenece acotada. Este criterio de estabilidad se conoce comúnmente como [[Bounded Input-Bounded Output|BIBO (Bounded Input-Bounded Output)]] 
+Para cuando se puede definir la [[Transferencia del sistema|función de transferencia]], los [[Transferencia del sistema#Polos|polos]] definen las estabilidad del sistema
 
-![[Bounded Input-Bounded Output#Definición]]
-
-La estabilidad para sistemas de tiempo discreto se define en forma similar
+Por otro lado, se puede ver la estabilidad en el [[Dominio|dominio]] del tiempo, usando los siguientes criterios
+* [[Bounded Input-Bounded Output|BIBO (Bounded Input-Bounded Output)]] 

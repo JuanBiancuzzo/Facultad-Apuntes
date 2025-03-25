@@ -5,7 +5,15 @@ tags:
   - nota/facultad
   - carrera/ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
   - carrera/ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+aliases:
+  - Ley de tensiones de Kirchhoff
+referencias:
+  - "872"
+etapa: terminado
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Al circular una [[Malla|malla]], la suma de todas las subidas de [[Tensión|tensión]] es igual a la suma de todas las caídas de tensión. Esta parte del principio de [[Conservación de la energía|conservación de la energía]].
@@ -70,3 +78,9 @@ Al circular una [[Malla|malla]], la suma de todas las subidas de [[Tensión|tens
 ```
 
 Entonces $$ \sum_{i=1}^{n} v_i = 0 $$
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

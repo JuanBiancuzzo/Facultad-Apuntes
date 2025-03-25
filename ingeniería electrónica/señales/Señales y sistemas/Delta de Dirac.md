@@ -5,7 +5,11 @@ tags:
   - nota/facultad
 aliases:
   - Impulso
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Es una [[Función de distribución|distribución]] que tiene las propiedades $$ \begin{matrix} 

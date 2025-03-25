@@ -123,13 +123,56 @@ Como mencionar algunos sistemas como
 
 ## Capítulo 2: Dynamic Models
 ---
+Se ve el modelado de sistemas
 
+Para sistemas mecánicos
+* [[Modelo de un sistema de translación|Modelo de un sistema de translación]]
+* [[Modelo de un sistema rotacional|Modelo de un sistema rotacional]]
+* [[Modelo de un sistema de translación y rotacional|Modelo de un sistema de translación y rotacional]]
 
+Para sistemas electrónicos
+* [[Ley de nodos de Kirchhoff|Ley de nodos de Kirchhoff]]
+* [[Ley de mallas de Kirchhoff|Ley de mallas de Kirchhoff]]
+* Viendo los componentes lineales
+    * [[Resistor|Resistor]]
+    * [[Capacitor|Capacitor]]
+    * [[Inductor|Inductor]]
+    * [[Fuente de tensión|Fuente de tensión]]
+    * [[Fuente de corriente|Fuente de corriente]]
+* Componentes no lineales
+    * [[Amplificador operacional|Amplificador operacional]]
+
+Para sistemas electromecánicos
+* [[Modelo de un parlante|Modelo de un parlante]]
+* [[Modelo de un motor|Modelo de un motor]]
+* [[Engranaje|Modelo de engranajes]]
+
+Para sistemas de fluidos
+* [[Conducción de calor|Modelo del flujo de calor]]
+* [[Convección de calor|Modelo de intercambio de calor]]
+* [[Modelo de fluidos incompresibles|Modelo de fluidos incompresibles]]
+* [[Modelo hidráulico de pistones|Modelo hidráulico de pistones]]
 
 ## Capítulo 3: Dynamic Response
 ---
+Inicialmente se hace una repaso de concepto de 
+* Un [[Sistema lineal e invariante en el tiempo|sistema LTI]]
+* El [[Principio de superposición|principio de superposición]]
+* La [[Sistema invariante en el tiempo|invarianza en el tiempo]]
+* La [[Respuesta en frecuencia|respuesta al impulso]]
+* La [[Convolución|convolución]]
+* Los [[Sistema causal|sistemas causales]]
+* La [[Transferencia del sistema|función de transferencia]] 
+    * Los polos y los ceros
+* La [[Transformada de Laplace|transformada de Laplace]] y su inversa
 
+Después de eso, vamos la forma de modelar sistemas, usando 
+* [[Diagrama de bloques|Diagramas de bloques]] y sus operaciones
 
+Vemos un mayor análisis del efecto que tienen los polos y los ceros de una transferencia, entre esas
+* Su [[Sistema estable|estabilidad]]
+* Los efectos de los ceros y los polos adicionales
+* Los efectos en el [[Dominio|dominio]] del tiempo 
 
 ## Capítulo 4: A First Analysis of Feedback
 ---

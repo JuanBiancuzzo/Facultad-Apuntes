@@ -5,7 +5,15 @@ tags:
   - nota/facultad
   - carrera/ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
   - carrera/ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+aliases:
+  - Ley de corrientes de Kirchhoff
+etapa: terminado
+referencias:
+  - "872"
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 La suma de todas las [[Corriente eléctrica|corrientes]] eléctricas entrantes a un [[Nodo|nodo]] es igual a la suma de todas las corrientes salientes. Esta parte del principio de [[Ecuación de continuidad#En electromagnetismo|conservación de carga]]
@@ -24,3 +32,8 @@ La suma de todas las [[Corriente eléctrica|corrientes]] eléctricas entrantes a
 
 Entonces $$ \sum^n i_\text{entrante} = \sum^m i_\text{saliente} $$
 
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

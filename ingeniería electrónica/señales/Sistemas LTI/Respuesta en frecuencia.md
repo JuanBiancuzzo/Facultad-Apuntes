@@ -8,6 +8,7 @@ tags:
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
 referencias:
   - "899"
+  - "873"
 etapa: ampliar
 ---
 ```dataviewjs
@@ -17,7 +18,9 @@ etapa: ampliar
 ---
 La respuesta en [[Función periódica#Frecuencia|frecuencia]] de un [[Circuito eléctrico|circuito]] es la variación de su comportamiento al cambiar la frecuencia de la [[Señal|señal]], donde se define como $h(t)$
 
-Si recordamos que una señal [[Función periódica#^periodo|periódica]] puede descomponerse en una suma de [[Función senoidal|senoides]] por la [[Serie de Fourier|serie de Fourier]] y la propiedad de [[Circuito lineal|linealidad de los circuitos]], entonces la respuesta en frecuencia brinda una descripción completa del circuito en estado estacionario.
+Si recordamos que una señal [[Función periódica#^periodo|periódica]] puede descomponerse en una suma de [[Función senoidal|senoides]] por la [[Serie de Fourier|serie de Fourier]] y la propiedad de [[Circuito lineal|linealidad de los circuitos]], entonces la respuesta en frecuencia brinda una descripción completa del circuito en estado estacionario
+
+Para obtener $h(t)$ tendremos que usar como entrada la [[Delta de Dirac|delta de Dirac]], la cual es el impulso para obtener la respuesta en frecuencia del mismo, ya que tiene todas las frecuencias
 
 ## Aplicando transformada de Fourier o de Laplace
 ---

@@ -3,41 +3,17 @@ dia: 2023-01-23
 tags:
   - carrera/ingeniería-electrónica/intro/Circuitos-con-capacitores
   - nota/facultad
+  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
+etapa: ampliar
+referencias:
+  - "873"
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
-La constante de tiempo ($\tau$) es un indicador de la velocidad de reacción del [[Circuito eléctrico|circuito]] ante una perturbación (debido a un escalón de [[Tensión|tensión]]). Cuanto mayor sea este valor, el valor final del estado de equilibrio se alcanzará más rápidamente
-
-### Expresión
-$$\begin{align}
-\tau = R \cdot C
-\end{align}$$
-
-### Unidades
-$$\begin{align}
-[\tau] = \Omega \cdot F = segundos \space (s)
-\end{align}$$
-
-### Características
----
-Reformulo, lo obtenido en el apartado de [[Circuito RC|circuito RC]]
-$$ \begin{cases}
-V_C (t)&= V_0 \cdot (1 - e^\text{-t/RC})\\
-i(t) &= \frac{V_0}{R} \cdot e^\text{-t/RC}\\
-\end{cases} $$
-Entonces:
-$$ \begin{cases}
-	V_C (t)&= V_0 \cdot (1 - e^{-t/\tau})\\
-	i(t) &= \frac{V_0}{R} \cdot e^{-t/\tau}\\ 
-\end{cases} $$
-
-De aquí, puedo concluir que si $t=\tau$ 
-$$ V_C (t)= V_0 \cdot \left( 1 - e^{-\frac{t}{\tau}} \right) = V_0 \cdot \left( 1 - e^{-1} \right) \approx 0.63 \cdot V_0 $$
-
-Es decir, que la [[Tensión|tensión]] de carga sobre un capacitor, en un tiempo $t=\tau$ es aproximadamente un $63\%$ de la amplitud pico-pico del escalón de entrada.
-
-### Esquematizándolo
----
+La constante de tiempo ($\tau$) es un indicador de la velocidad de reacción de un [[Sistema|sistema]]
 
 ```tikz
 \usepackage{amssymb}
@@ -46,9 +22,10 @@ Es decir, que la [[Tensión|tensión]] de carga sobre un capacitor, en un tiempo
 
 \begin{document} 
 	\tikzmath {
-		\vinicio = 2.3;
+		\vinicio = 3.5;
 		\tautiempo = 1.1;
 		\maximo = 6 * \tautiempo;
+		\radio = 0.05; \sep = 0.1;
 	}
 	\begin{tikzpicture}[scale=2.2, transform shape, ultra thick,
 		declare function={
@@ -56,39 +33,60 @@ Es decir, que la [[Tensión|tensión]] de carga sobre un capacitor, en un tiempo
 		}
 	]
 		\draw[->] (-0.2, 0) -- (\maximo, 0)
-			node[below=2pt, scale=0.7] {$t$};
+			node[below=2pt, scale=0.7] {$t / \tau$};
 		\draw[->] (0, -0.2) -- (0, {\vinicio + 0.2});
 
-		\tikzmath { \sep = 0.1; }
-		\draw[red] (-0.2, 0) 
-			-- (0, 0) \foreach \t in {0, \sep, ..., \maximo} {
-				-- (\t, {vc(\t)})
-			};
-		\draw[dashed] (-0.1, \vinicio) 
+		\draw[dashed, thick] (-0.1, \vinicio) 
 				node[left=2pt, scale=0.6] {$100~\%$}
 			-- (\maximo, \vinicio);
-			
-		\draw[dashed] (\tautiempo, -0.1)
-				node[below=2pt, scale=0.6] {$\tau$}
-			-- (\tautiempo, \vinicio);
-		
-		\draw[dashed] ({5 * \tautiempo}, -0.1)
-				node[below=2pt, scale=0.6] {$5 \tau$}
-			-- ({5 * \tautiempo}, \vinicio);
-			
-		\draw[dashed] (-0.1, {vc(\tautiempo)}) 
-				node[left=2pt, scale=0.6] {$63~\%$}
-			-- (\maximo, {vc(\tautiempo)});
-
 		\path (-0.1, 0) node[left=2pt, scale=0.6] {$0~\%$};
-		\path ({0.5 * \maximo}, {vc(\tautiempo)})
-			node[below=2pt, scale=0.6] 
-				{$v_C(t) = V_0 \left( 1 - e^{-\frac{t}{\tau}} \right)$};
+			
+		\foreach \i in {1, ..., 5} {
+    		\tikzmath {
+        		\x = \i * \tautiempo; \y = vc(\i * \tautiempo);
+        		\porcentaje = floor(100 * \y / \vinicio); 
+    		}
+    		\draw[dashed, thick] (\x, -0.1) node[below=2pt, scale=0.6] {$\i$}
+    			-- (\x, \vinicio);
+    		\draw[dashed, thick] (-0.1, \y) -- (\maximo, \y);
+    		
+    		\fill[red] (\x, \y) circle (\radio);
+    		\path (\x, \y) node[below right=2pt, scale=0.5] 
+            	{$\pgfmathprintnumber{\porcentaje} ~ \%$};
+		}
+        
+		\draw[red] (-0.2, 0) 
+			-- (0, 0) \foreach \t [parse=true] in {0, \sep, ..., \maximo + \sep} {
+				-- (\t, {vc(\t)})
+			};
+		
+		\path (0, -0.4) -- ++(\maximo, 0) node[midway, below=2pt, scale=0.7] 
+        	{$f(t) = \left(1 - \exp\left( -\frac{t}{\tau} \right) \right) ~ u(t)$};
 		
 	\end{tikzpicture}
 \end{document}
 ```
 
-### Tiempo de carga de un capacitor
+En particular podemos ver que el sistema llega al $63~\%$ después de un $\tau$, y para $5\tau$ llega a un $99 ~ \%$ que podemos aproximar a que terminó de estabilizarse
+
+## Ejemplo
 ---
-El tiempo que tarda un capacitor para cargarse en su totalidad es de $5\tau$.
+Usando un [[Circuito RC|circuito RC]] ![[Circuito RC#^representacion]]
+Obtenemos las ecuaciones $$ \begin{cases}
+\displaystyle V_C (t) &= V_0 ~ \left(1 - \exp\left(-\frac{t}{RC}\right) \right) \\
+\displaystyle i(t) &= \frac{V_0}{R} ~ \exp\left(-\frac{t}{RC}\right) \\
+\end{cases} $$
+Donde vamos a tener que $\tau = R C$, con unidades $[\tau] = \Omega \cdot F = s ~ (\text{segundos})$. Entonces
+$$ \begin{cases}
+	V_C (t) &= V_0 ~ \left(1 - \exp\left(-\frac{t}{\tau}\right) \right)\\
+	i(t) &= \frac{V_0}{R} ~ \exp\left(-\frac{t}{\tau}\right)\\ 
+\end{cases} $$
+
+De aquí, puedo concluir que si $t=\tau$ $$ V_C (t)= V_0 \cdot \left( 1 - e^{-\frac{t}{\tau}} \right) = V_0 \cdot \left( 1 - e^{-1} \right) \approx 0.63 \cdot V_0 $$ que es lo que habíamos visto previamente
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

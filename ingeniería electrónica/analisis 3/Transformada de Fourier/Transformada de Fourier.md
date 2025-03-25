@@ -5,7 +5,13 @@ tags:
   - carrera/ingeniería-electrónica/señales/Transformada-de-Fourier
   - nota/facultad
   - carrera/ingeniería-en-informática/analisis-3/Transformada-de-Fourier
+aliases:
+  - Transformada inversa de Fourier
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Sea $\mathcal{F} : L^1(\mathbb{R}, \mathbb{C}) \to C_\bullet^0(\mathbb{R}, \mathbb{C})$ la [[Transformación lineal|transformación lineal]] (donde $L^1$ es el [[Conjunto de Lebesgue de orden n|conjunto de Lebesgue]] de orden $1$, y $C_\bullet^0$ es el [[Conjunto de Lebesgue de orden n|Conjunto de Lebesgue]] de orden $\infty$) tal que $\mathcal{F}(f) = \hat{f}$  bien definida donde su [[Transformada de Fourier|transformada de Fourier]] $\hat{f}$ es [[Función continua|continua]] y verifica el [[ingeniería electrónica/analisis 3/Transformada de Fourier/Lema de Riemann-Lebesgue|lema de Riemann-Lebesgue]]

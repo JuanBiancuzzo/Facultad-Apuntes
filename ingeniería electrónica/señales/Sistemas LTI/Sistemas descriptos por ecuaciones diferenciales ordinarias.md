@@ -5,7 +5,14 @@ aliases:
 tags:
   - carrera/ingeniería-electrónica/señales/Sistemas-LTI
   - nota/facultad
+  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
+referencias:
+  - "873"
+etapa: ampliar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
 Las descripciones de [[Sistema|sistemas]] a través de [[Ecuación diferencial ordinaria|ecuaciones diferenciales]] es muy común en la práctica. Aunque vamos a considerar [[Ecuación diferencial ordinaria|ecuaciones diferenciales ordinarias]] con coeficientes constantes $$ \sum_{k = 0}^{N} a_k ~ \frac{d^k y(t)}{dt^k} = \sum_{k = 0}^{M} b_k ~ \frac{d^k x(t)}{dt^k}, ~~ \forall N, ~ M \in \mathbb{N}_0 $$
@@ -39,3 +46,8 @@ Usando la propiedad de [[Transformada de Fourier en tiempo discreto#Diferencia|d
 Para un [[Sistema lineal e invariante en el tiempo|sistema LTI]] sabemos que $$ Y\left(e^{j\Omega}\right) = H\left(e^{j\Omega}\right) ~ X\left(e^{j\Omega}\right), ~~~ H\left(e^{j\Omega}\right) = \frac{Y\left(e^{j\Omega}\right)}{X\left(e^{j\Omega}\right)} $$
 Entonces obtenemos la [[Transferencia del sistema#Transformada de Laplace|transferencia transformada]] $$ H\left(e^{j\Omega}\right) = \frac{\displaystyle \sum_{k = 0}^{M} b_k ~ \exp(-j\Omega k)}{\displaystyle \sum_{k = 0}^{N} a_k ~ \exp(-j\Omega k)} $$
 
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

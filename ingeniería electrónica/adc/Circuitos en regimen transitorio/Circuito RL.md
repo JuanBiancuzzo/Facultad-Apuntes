@@ -9,9 +9,6 @@ tags:
 ---
 Un [[Circuito eléctrico|circuito]] RL de [[Circuito de primer orden|primer orden]] es un circuito eléctrico compuesto de un [[Inductor|inductor]] y un [[Capacitor|capacitor]]
 
-### Esquematización
----
-
 ```tikz
 \usepackage[
 	americanvoltages,
@@ -34,28 +31,27 @@ Un [[Circuito eléctrico|circuito]] RL de [[Circuito de primer orden|primer ord
 }
 
 \begin{document} 
-	\begin{circuitikz}[voltage shift=0.5, scale=1.7, transform shape, thick,
+	\begin{circuitikz}[voltage shift=0.5, scale=1.4, transform shape, thick,
 		loops/.style={circuitikz/inductors/coils=#1}
 	]
-		\draw (0, 0) node[ground] {} to[short, *-] ++(-1, 0)
-			to[L, loops=4, l^=$L$, v=$v_L$] ++(0, 2)
-			to[short, -o] ++(1, 0)
-			to[short, o-] ++(1, 0)
+		\draw (0, 0) node[ground] {} to[short, *-] ++(-1.5, 0)
+			to[L, loops=4, l_=$L$, v^=$v_L$] ++(0, 2)
+			to[short, -o] ++(1.5, 0)
+			to[short, o-] ++(1.5, 0)
 			to[R, l_=$R$, v^=$v_R$] ++(0, -2)
-			to[short] ++(-1, 0);
+			to[short] ++(-1.5, 0);
 	\end{circuitikz}
 \end{document}
 ```
 
-
 ## Análisis
 ---
-Al cerrar la llave (en el instante $t=0$), por [[Ley de nodos de Kirchhoff]] de [[Malla]], se puede deducir que $$ \begin{align} 
+Al cerrar la llave (en el instante $t=0$), por [[Ley de mallas de Kirchhoff|ley de kirchhoff de mallas]], se puede deducir que $$ \begin{align} 
 	         v_R(t) &+ v_L(t) = 0 \\
 	L \frac{di}{dt} &+ Ri = 0 \\
 	  \frac{di}{dt} &+ \frac{R}{L}i = 0
 \end{align} $$
-Integrando y utilizando la condición inicial ($i(0) = i_0$) $$ \begin{align} 
+Integrando y utilizando la condición inicial $i(0) = i_0$ $$ \begin{align} 
 	\int_{i_0}^{i(t)} \frac{1}{i} ~ di &= - \int_0^t \frac{R}{L} ~dt \\
 	\ln(i) \biggm|_{i_0}^{i(t)} &= - \frac{Rt}{L} \biggm|_0^t \\
 	\ln(i(t)) - \ln(i_0) &= - \frac{Rt}{L}  + 0 \\ 

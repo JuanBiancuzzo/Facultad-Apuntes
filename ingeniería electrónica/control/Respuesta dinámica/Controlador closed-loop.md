@@ -7,6 +7,7 @@ referencias:
   - "1017"
   - "1018"
   - "899"
+  - "873"
 tags:
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - nota/facultad
@@ -19,6 +20,10 @@ aliases:
   - Realimentación de un circuito#En circuitos de amplificador
   - Sistema de control realimentado#En teoría de control
   - Sistema de control en lazo cerrado#En teoría de control
+  - Realimentación negativa#Realimentación negativa
+  - Negative feedback#Realimentación negativa
+  - Realimentación positiva#Realimentación positiva
+  - Positive feedback#Realimentación positiva
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
@@ -55,6 +60,140 @@ El término control en lazo cerrado siempre implica el uso de una acción de con
 ### Efecto de las perturbaciones
 ---
 %% Ver Capitulo 2 Modelado matemático de sistemas de control, Ingeniería de control moderna. para ver este tema %% 
+
+### Realimentación negativa
+---
+Dado el siguiente [[Diagrama de bloques|diagrama de bloques]] 
+
+```tikz
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\begin{document} 
+\begin{tikzpicture}[scale=1.3, transform shape, ultra thick]
+    \tikzmath { 
+        \largo = 2.5;  \alto = 1.5; \isep = 2;
+        \radio = 0.4; 
+        \scale = 0.85; \sep = 1.3; 
+    }
+
+    \coordinate (esq_1) at (0, {\isep - \alto / 2});
+    \draw (esq_1) rectangle ++(\largo, \alto) node[midway] {$G_1(s)$};
+    \path (esq_1) -- ++(0, \alto) node[midway] (ini_1) {};
+    \path ($ (esq_1) + (\largo, 0)$) -- ++(0, \alto) node[midway] (fin_1) {};
+    
+    \coordinate (esq_2) at (0, {-\isep + \alto / 2});
+    \draw (esq_2) rectangle ++(\largo, \alto) node[midway] {$G_2(s)$};
+    \path (esq_2) -- ++(0, \alto) node[midway] (ini_2) {};
+    \path ($ (esq_2) + (\largo, 0)$) -- ++(0, \alto) node[midway] (fin_2) {};
+    
+    \coordinate (punto_rami) at ($ (fin_1)!0.5!(fin_2) + (\sep, 0) $);
+    
+    \tikzmath { \supDer = cos(45); }
+    \coordinate (punto_suma) at ($ (ini_1)!0.5!(ini_2) + (-\sep, 0) $);
+    \begin{scope}[cm={1, 0, 0, 1, (punto_suma)}]
+        \draw (0, 0) circle (\radio); 
+        \draw ({-\radio * \supDer}, {\radio * \supDer})
+            -- ({\radio * \supDer}, {-\radio * \supDer});
+        \draw ({-\radio * \supDer}, {-\radio * \supDer})
+            -- ({\radio * \supDer}, {\radio * \supDer});
+    \end{scope}
+        
+    \path (punto_suma) -- ++(0, \radio)
+        node[pos=1] (ps_sup) {};
+    \path (punto_suma) -- ++(0, -\radio) node[pos=0.6, scale=\scale] {$-$}
+        node[pos=1] (ps_inf) {};
+    \path (punto_suma) -- ++(-\radio, 0) node[pos=0.6, scale=\scale] {$+$}
+        node[pos=1] (ps_izq) {};
+        
+    \draw[<-] (ini_1.center) -- (ini_1 -| ps_sup)
+        -- (ps_sup.center);
+    \draw[->] (ini_2.center) -- (ini_2 -| ps_inf)
+        -- (ps_inf.center);
+    
+    \draw[<-] (ps_izq.center) -- ++(-\sep, 0)
+        node[above right=2pt, scale=\scale] {$R(s)$};
+        
+    \draw (fin_1.center) -- (fin_1 -| punto_rami)
+        -- (punto_rami);
+    \draw[<-] (fin_2.center) -- (fin_2 -| punto_rami)
+        -- (punto_rami);
+    
+    \draw[->] (punto_rami) -- ++(\sep, 0)
+        node[above left=2pt, scale=\scale] {$C(s)$};
+
+\end{tikzpicture}
+\end{document}
+```
+
+Donde como $G_2(s)$ esta restándose a $R(s)$, se lo puede denominar realimentación negativa
+
+### Realimentación positiva
+---
+Dado el siguiente diagrama de bloques
+
+```tikz
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\begin{document} 
+\begin{tikzpicture}[scale=1.3, transform shape, ultra thick]
+    \tikzmath { 
+        \largo = 2.5;  \alto = 1.5; \isep = 2;
+        \radio = 0.4; 
+        \scale = 0.85; \sep = 1.3; 
+    }
+
+    \coordinate (esq_1) at (0, {\isep - \alto / 2});
+    \draw (esq_1) rectangle ++(\largo, \alto) node[midway] {$G_1(s)$};
+    \path (esq_1) -- ++(0, \alto) node[midway] (ini_1) {};
+    \path ($ (esq_1) + (\largo, 0)$) -- ++(0, \alto) node[midway] (fin_1) {};
+    
+    \coordinate (esq_2) at (0, {-\isep + \alto / 2});
+    \draw (esq_2) rectangle ++(\largo, \alto) node[midway] {$G_2(s)$};
+    \path (esq_2) -- ++(0, \alto) node[midway] (ini_2) {};
+    \path ($ (esq_2) + (\largo, 0)$) -- ++(0, \alto) node[midway] (fin_2) {};
+    
+    \coordinate (punto_rami) at ($ (fin_1)!0.5!(fin_2) + (\sep, 0) $);
+    
+    \tikzmath { \supDer = cos(45); }
+    \coordinate (punto_suma) at ($ (ini_1)!0.5!(ini_2) + (-\sep, 0) $);
+    \begin{scope}[cm={1, 0, 0, 1, (punto_suma)}]
+        \draw (0, 0) circle (\radio); 
+        \draw ({-\radio * \supDer}, {\radio * \supDer})
+            -- ({\radio * \supDer}, {-\radio * \supDer});
+        \draw ({-\radio * \supDer}, {-\radio * \supDer})
+            -- ({\radio * \supDer}, {\radio * \supDer});
+    \end{scope}
+        
+    \path (punto_suma) -- ++(0, \radio)
+        node[pos=1] (ps_sup) {};
+    \path (punto_suma) -- ++(0, -\radio) node[pos=0.6, scale=\scale] {$+$}
+        node[pos=1] (ps_inf) {};
+    \path (punto_suma) -- ++(-\radio, 0) node[pos=0.6, scale=\scale] {$+$}
+        node[pos=1] (ps_izq) {};
+        
+    \draw[<-] (ini_1.center) -- (ini_1 -| ps_sup)
+        -- (ps_sup.center);
+    \draw[->] (ini_2.center) -- (ini_2 -| ps_inf)
+        -- (ps_inf.center);
+    
+    \draw[<-] (ps_izq.center) -- ++(-\sep, 0)
+        node[above right=2pt, scale=\scale] {$R(s)$};
+        
+    \draw (fin_1.center) -- (fin_1 -| punto_rami)
+        -- (punto_rami);
+    \draw[<-] (fin_2.center) -- (fin_2 -| punto_rami)
+        -- (punto_rami);
+    
+    \draw[->] (punto_rami) -- ++(\sep, 0)
+        node[above left=2pt, scale=\scale] {$C(s)$};
+
+\end{tikzpicture}
+\end{document}
+```
+
+Donde como $G_2(s)$ esta sumándose a $R(s)$, se lo puede denominar realimentación positiva
 
 ## En circuitos de amplificador
 ---
