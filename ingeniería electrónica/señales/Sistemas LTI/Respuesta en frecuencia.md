@@ -26,7 +26,7 @@ Para obtener $h(t)$ tendremos que usar como entrada la [[Delta de Dirac|delta de
 ---
 Usando la [[Transformada de Fourier|transformada de Fourier]] o la [[Transformada de Laplace|Laplace]], se lo define como $H(j\omega)$ o $H(s)$ respectivamente, o en el [[Transformada de Fourier en tiempo discreto|caso discreto]] $H\left(e^{-j\omega}\right)$
 
-* Notemos que si un [[Sistema lineal e invariante en el tiempo invertible estable|sistema LTI es estable]] siempre existe $H(s)$ $$ |H(s)| = \left| \int_{-\infty}^{\infty} h(t) \exp(-st) ~ dt \right| \le \int_{-\infty}^{\infty} |h(t) \exp(-st)| ~ dt = \exp(\mathcal{Re}(s)) \int_{-\infty}^{\infty} |h(t)| ~ dt < \infty $$
+* Notemos que si un [[Bounded Input-Bounded Output|sistema LTI es estable]] siempre existe $H(s)$ $$ |H(s)| = \left| \int_{-\infty}^{\infty} h(t) \exp(-st) ~ dt \right| \le \int_{-\infty}^{\infty} |h(t) \exp(-st)| ~ dt = \exp(\mathcal{Re}(s)) \int_{-\infty}^{\infty} |h(t)| ~ dt < \infty $$
   
 # Referencias
 ---

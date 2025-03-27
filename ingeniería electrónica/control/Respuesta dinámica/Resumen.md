@@ -9,7 +9,12 @@ referencias:
   - "899"
   - "871"
   - "872"
+  - "873"
+etapa: sin-empezar
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Índice
 ---
 ```dataviewjs
@@ -24,4 +29,11 @@ referencias:
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/referencia/referenciasAcumuladas", { archivo: dv.current() });
+```
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```

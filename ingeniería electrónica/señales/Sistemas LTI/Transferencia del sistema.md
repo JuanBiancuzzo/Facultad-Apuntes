@@ -16,6 +16,9 @@ aliases:
   - Damping ratio#^relacion-amortiguacion
   - Frecuencia natural no amortiguada#^frecuencia-no-amortiguada
   - Undamped natural frequency#^frecuencia-no-amortiguada
+  - Cero de fase no minimal#Ceros de fase no minimal
+  - Nonminimum-phase zeros#Ceros de fase no minimal
+  - RHP#Ceros de fase no minimal
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
@@ -51,6 +54,15 @@ es decir que podemos sumar las contribuciones independientes de la constante, de
 Un cero, como una [[Raíz de una función|raíz del polinomio]] del numerador $N(s)$, es un valor que produce un valor cero en la función, es decir $$ H(s) \bigg|_{s = -z_i} = 0 $$
 Estas también corresponden a las propiedad de bloquear señales transmitida por el sistema, esto es que puede bloquear frecuencias las cuales se ubican donde se ubican los ceros
 
+Los ceros expresan su influencia modificando los coeficientes de los términos de exponentes, donde la forma en sí misma esta definida por los polos
+
+### Ceros de fase no minimal
+---
+Es el caso donde el cero se encuentra en $\sigma > 0$, produciendo en la salida una anticipación al impulso
+
+![[Pasted image 20250327102244.png]]
+
+Esto puede ser negativo para un sistema de control al moverse en dirección opuesta a la esperada
 ## Polos
 ---
 Un [[Singularidad|polo]], como una raíz del polinomio del denominador $D(s)$, es un valor para el cual la función tiende a infinito, es decir $$ |H(s)| \bigg|_{s = -p_i} = \infty $$
@@ -82,7 +94,7 @@ Se puede definir
 
 ![[Sistema de segundo orden valores posicion.png]]
 
-Donde la respuesta al impulso es $$ h(t) = \frac{\omega_n}{\sqrt{1 - \zeta^n}} ~ \exp(-\sigma t) ~ \sin(\omega_d t) ~ u(t) $$
+Donde la respuesta al impulso es $$ h(t) = \frac{\omega_n}{\sqrt{1 - \zeta^2}} ~ \exp(-\sigma t) ~ \sin(\omega_d t) ~ u(t) $$
 Obtenemos distintas curvas para de respuesta el escalón
 
 ![[Respuesta al escalón de un sistema con polos conjugados.png]]

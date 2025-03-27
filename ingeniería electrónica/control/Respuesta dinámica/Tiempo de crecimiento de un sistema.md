@@ -97,8 +97,9 @@ Buscando $0.1$ y $0.9$ de la función $t(p)$, obtenemos $$ \begin{cases}
 
 ## Sistema de segundo orden
 ---
+Usando la respuesta al escalón dada por $$ y(t) = 1 - \frac{\exp(-\sigma t)}{\sqrt{1 - \zeta^2}} ~ \left( \cos(\omega_d t) + \frac{\sigma}{\omega_d} \sin(\omega_d t) ) \right) $$
 
-
+%% Usando matlab ver si puedo encontrar una forma de encontrar el tiempo de crecimiento y dar un ejemplo %%
 
 # Referencias
 ---
