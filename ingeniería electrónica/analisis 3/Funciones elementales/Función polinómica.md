@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - carrera/ingeniería-en-informática/analisis-3/Funciones-elementales
 aliases:
-  - Polinómio
+  - Polinomio
   - Grado de un polinomio#^grado
 ---
 # Definición

@@ -17,6 +17,7 @@ Para cuando se puede definir la [[Transferencia del sistema|función de transfer
 
 Por otro lado, se puede ver la estabilidad en el [[Dominio|dominio]] del tiempo, usando los siguientes criterios
 * [[Bounded Input-Bounded Output|BIBO (Bounded Input-Bounded Output)]] 
+* [[Criterio de estabilidad de Routh-Hurwitz|Criterio de estabilidad de Routh-Hurwitz]]
 
 
 

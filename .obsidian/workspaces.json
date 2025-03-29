@@ -261,12 +261,12 @@
                 }
               },
               {
-                "id": "d9d5425c10294b73",
+                "id": "de198b74ea753c10",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ingeniería electrónica/control/Respuesta dinámica/Diagrama de bloques.md",
+                    "file": "ingeniería electrónica/señales/Sistemas LTI/Transferencia del sistema.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -281,16 +281,16 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Diagrama de bloques"
+                  "title": "Transferencia del sistema"
                 }
               },
               {
-                "id": "abce410b6527877c",
+                "id": "09dff8919c969b80",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ingeniería electrónica/control/Respuesta dinámica/Controlador closed-loop.md",
+                    "file": "ingeniería electrónica/control/Respuesta dinámica/Linealización Jacobiana.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -305,16 +305,16 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Controlador closed-loop"
+                  "title": "Linealización Jacobiana"
                 }
               },
               {
-                "id": "2f776647b1df3e9e",
+                "id": "2764c30149ad5ca2",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ingeniería electrónica/control/Respuesta dinámica/Variable de estado.md",
+                    "file": "ingeniería electrónica/señales/Señales y sistemas/Sistema estable.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -329,40 +329,16 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Variable de estado"
+                  "title": "Sistema estable"
                 }
               },
               {
-                "id": "0527b4d6c72ec6d0",
+                "id": "7df2277c517fecba",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ingeniería electrónica/control/Respuesta dinámica/Espacio de estados.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": true,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Espacio de estados"
-                }
-              },
-              {
-                "id": "3fc4d2100bf0f390",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ingeniería electrónica/control/Respuesta dinámica/Sistema en espacio de estados.md",
+                    "file": "ingeniería electrónica/señales/Señales y sistemas/Bounded Input-Bounded Output.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -377,11 +353,59 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Sistema en espacio de estados"
+                  "title": "Bounded Input-Bounded Output"
+                }
+              },
+              {
+                "id": "0a132d83a31702a1",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/adc/Circuitos en regimen transitorio/Circuito de segundo orden.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Circuito de segundo orden"
+                }
+              },
+              {
+                "id": "49acea9b517b4eb5",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/adc/Respuesta en frecuencia/Diagrama de Bode.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Diagrama de Bode"
                 }
               }
             ],
-            "currentTab": 5
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -432,7 +456,8 @@
                   "title": "Bookmarks"
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           }
         ],
         "direction": "horizontal",
@@ -453,7 +478,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "[\"capítulo\"]",
+                    "query": "",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -524,32 +549,6 @@
                 }
               },
               {
-                "id": "6a3ae0b83a05917e",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "colección/libros/Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "pinned": true,
-                  "icon": "lucide-file",
-                  "title": "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray"
-                }
-              },
-              {
                 "id": "ae1988041a39cad4",
                 "type": "leaf",
                 "pinned": true,
@@ -573,6 +572,32 @@
                   "pinned": true,
                   "icon": "lucide-file",
                   "title": "Ingeniería de control moderna de Katsuhiko Ogata"
+                }
+              },
+              {
+                "id": "6a3ae0b83a05917e",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "colección/libros/Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "lucide-file",
+                  "title": "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray"
                 }
               },
               {
@@ -602,11 +627,11 @@
                 }
               }
             ],
-            "currentTab": 5
+            "currentTab": 3
           }
         ],
         "direction": "horizontal",
-        "width": 917.5,
+        "width": 926.5,
         "collapsed": true
       },
       "left-ribbon": {
@@ -627,8 +652,8 @@
           "cmdr:Workspaces: Save and load another layout": false
         }
       },
-      "active": "3fc4d2100bf0f390",
-      "mtime": "2025-03-23T15:53:36-03:00"
+      "active": "09dff8919c969b80",
+      "mtime": "2025-03-28T19:28:22-03:00"
     },
     "Circuitos 2": {
       "main": {
@@ -1103,7 +1128,7 @@
         }
       },
       "active": "1c66f994e75e8a3d",
-      "mtime": "2025-03-24T09:54:37-03:00"
+      "mtime": "2025-03-29T17:35:25-03:00"
     },
     "Estoca": {
       "main": {
@@ -1136,6 +1161,126 @@
                   },
                   "icon": "lucide-file",
                   "title": "Procesos estocásticos (TA132)"
+                }
+              },
+              {
+                "id": "1e3e055e6d33280a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/estoca/Análisis de datos/Método de Montecarlos.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Método de Montecarlos"
+                }
+              },
+              {
+                "id": "68a1c3c265ef6bc6",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería en informática/proba/Inferencia estadística/Estimador insesgado.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Estimador insesgado"
+                }
+              },
+              {
+                "id": "6cf1d303f7888182",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería en informática/proba/Representación de variables aleatorias/Covarianza.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Covarianza"
+                }
+              },
+              {
+                "id": "0f20cc39faf3067b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería en informática/algebra 2/Matrices unitarias y ortogonales/Matriz semidefinida positiva.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Matriz semidefinida positiva"
+                }
+              },
+              {
+                "id": "c4b4c48981724fc2",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería en informática/proba/Inferencia estadística/Estimador.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Estimador"
                 }
               },
               {
@@ -1268,7 +1413,8 @@
                   "title": "Digital Signal Processing de Proakis John, Manolakis Dimitris"
                 }
               }
-            ]
+            ],
+            "currentTab": 4
           }
         ],
         "direction": "vertical"
@@ -1447,8 +1593,8 @@
           "cmdr:Workspaces: Save and load another layout": false
         }
       },
-      "active": "430953aaa0522f93",
-      "mtime": "2025-03-22T14:22:47-03:00"
+      "active": "0f20cc39faf3067b",
+      "mtime": "2025-03-28T16:08:01-03:00"
     },
     "TPP": {
       "main": {

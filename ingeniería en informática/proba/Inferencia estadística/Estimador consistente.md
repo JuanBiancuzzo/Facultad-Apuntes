@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/proba/Inferencia-estadística
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Inferencia-estadística
+  - carrera/ingeniería-electrónica/estoca/Análisis-de-datos
 ---
 # Definición
 ---
