@@ -30,4 +30,4 @@ Sean $f, ~g, ~h \in L^1(\mathbb{R}, \mathbb{C})$ (donde $L^1$ es [[Conjunto de L
 2) $g \ast f = g \ast f$
 3) $f \ast (g + h) = (f \ast g) + (f \ast h)$
 4) $(cf) \ast g = f \ast (cg) = c(f \ast g)$
-5) $\mathcal{F}(f \ast g) = \mathcal{F}(f) \cdot \mathbb{f}(g)$, donde $\mathbb{f}$ es la [[Transformada de Fourier]]. Es decir, $\forall \omega \in \mathbb{R} : \hat{f \ast g}(\omega) = \hat{f}(\omega) \cdot \hat{g}(\omega)$
+5) $\mathcal{F}(f \ast g) = \mathcal{F}(f) \cdot \mathcal{F}(g)$, donde $\mathcal{F}$ es la [[Transformada de Fourier]]. Es decir, $\forall \omega \in \mathbb{R} : \hat{f \ast g}(\omega) = \hat{f}(\omega) \cdot \hat{g}(\omega)$

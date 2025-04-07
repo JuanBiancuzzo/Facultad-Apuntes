@@ -3,7 +3,7 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/estoca/Análisis-de-datos
 nombreResumen: Análisis de datos
-capitulo: 2
+capitulo: 3
 ---
 # Índice
 ---

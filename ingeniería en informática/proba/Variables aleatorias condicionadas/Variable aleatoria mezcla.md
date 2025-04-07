@@ -19,4 +19,4 @@ El calculo de la [[Esperanza|esperanza]] esta dado por $$ E[X] = \sum_{m \in R_M
 
 ## Con una variable aleatoria continua
 ---
-* Entonces la [[Función de densidad|función de densidad]] se puede calcular como $$ f_X(x) = \sum_{m \in R_M} f_{X | M = m}(x) \cdot \mathbb{P}(M = m) $$ donde se usa una [[Variable continua condicional|variable continua condicional]]
+* Entonces la [[Función de densidad de probabilidad|función de densidad]] se puede calcular como $$ f_X(x) = \sum_{m \in R_M} f_{X | M = m}(x) \cdot \mathbb{P}(M = m) $$ donde se usa una [[Variable continua condicional|variable continua condicional]]

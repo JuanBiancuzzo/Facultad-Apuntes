@@ -15,7 +15,7 @@ Sean $X$, $Y$ [[Variable aleatoria discreta|variable aleatoria discreta]], con [
 
 ## Con variable continua
 ---
-Sean $X$, $Y$ [[Variable aleatoria continua|variable aleatoria continua]], con [[Función de densidad|función de densidad]] $f_{X, Y}(x, y)$ el valor medio de $X$, $Y$ es $$ E[h(X, Y)] = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} h(x, y) \cdot f_{X, Y}(x, y) \cdot dx \cdot dy = \int_{(x, y) \in S_{X, Y}} h(x, y) \cdot f_{X, Y}(x, y) \cdot dx \cdot dy $$ donde $S_{X, Y}$ es el [[Soporte|soporte]] de las variables $X$ e $Y$
+Sean $X$, $Y$ [[Variable aleatoria continua|variable aleatoria continua]], con [[Función de densidad de probabilidad|función de densidad]] $f_{X, Y}(x, y)$ el valor medio de $X$, $Y$ es $$ E[h(X, Y)] = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} h(x, y) \cdot f_{X, Y}(x, y) \cdot dx \cdot dy = \int_{(x, y) \in S_{X, Y}} h(x, y) \cdot f_{X, Y}(x, y) \cdot dx \cdot dy $$ donde $S_{X, Y}$ es el [[Soporte|soporte]] de las variables $X$ e $Y$
 
 
 ## Propiedades

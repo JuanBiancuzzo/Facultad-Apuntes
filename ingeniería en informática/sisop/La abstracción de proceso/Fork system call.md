@@ -31,6 +31,6 @@ pid_t fork(void);
 * Ejecución [[Concurrencia|concurrente]]
 	* Ambos procesos se ejecutan en forma concurrente por lo cual no hay determinismo en el orden de ejecución
 * [[Espacio de direcciones|Address space]] duplicados pero separados
-	* Si se pudiera ver el address space, del padre y el hijo, inmediatamente después de ejecutarse el fork, se vería que son identicos.
+	* Si se pudiera ver el address space, del padre y el hijo, inmediatamente después de ejecutarse el fork, se vería que son idénticos
 * Archivos compartidos
 	* Los user [[File descriptor|file descriptor]] table es heredada con todos sus archivos en el mismo estado

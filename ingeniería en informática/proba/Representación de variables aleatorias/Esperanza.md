@@ -35,7 +35,7 @@ Sea $X$ una [[Variable aleatoria discreta|variable aleatoria discreta]] con [[Fu
 
 ### Para variable continua
 ---
-Sea $X$ una [[Variable aleatoria continua|variable aleatoria continua]] con [[Función de densidad|función de densidad]] $f_X(x)$, el valor esperado de $X$ es $$ E[h(X)] = \int_{x \in \mathbb{R}} h(x) \cdot f_X(x) \cdot dx $$
+Sea $X$ una [[Variable aleatoria continua|variable aleatoria continua]] con [[Función de densidad de probabilidad|función de densidad]] $f_X(x)$, el valor esperado de $X$ es $$ E[h(X)] = \int_{x \in \mathbb{R}} h(x) \cdot f_X(x) \cdot dx $$
 ## Esperanza total
 ---
 Dado los conjuntos $A_1, A_2, \cdots, A_n$ tal que $\displaystyle\bigcup_{i = 1}^{n} A_i = \mathbb{R}$ y  $\displaystyle\bigcap_{i = 1}^{n} A_i = \emptyset$, es decir la [[Partición|partición]] del espacio $\mathbb{R}$, entonces se puede calcular la esperanza usando la [[Esperanza condicional|esperanza condicional]] $$ E[X] = \sum_{i = 1}^{n} E[X | X \in A_i] \mathbb{P}(X \in A_i) $$ 

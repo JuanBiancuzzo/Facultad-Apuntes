@@ -3,7 +3,7 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/estoca/Análisis-de-procesos
 nombreResumen: Análisis de procesos
-capitulo: 4
+capitulo: 5
 ---
 # Índice
 ---

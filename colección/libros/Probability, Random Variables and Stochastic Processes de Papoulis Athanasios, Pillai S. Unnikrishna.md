@@ -1,6 +1,6 @@
 ---
 dia: 2025-03-11
-etapa: sin-empezar
+etapa: ampliar
 tags:
   - referencia/libro
   - colección/biblioteca/libro
@@ -25,7 +25,7 @@ capitulos:
       inicio: "3"
       final: "14"
   - numeroCapitulo: "2"
-    nombreCapitulo: The Axioms of Probabiliity
+    nombreCapitulo: The Axioms of Probability
     numReferencia: 941
     editores: []
     paginas:
@@ -131,7 +131,7 @@ capitulos:
       final: "834"
 aliases:
   - "Probability, Random Variables and Stochastic Processes de Papoulis Athanasios, Pillai S. Unnikrishna, Capítulo 1: The Meaning of Probability#Capítulo 1: The Meaning of Probability"
-  - "Probability, Random Variables and Stochastic Processes de Papoulis Athanasios, Pillai S. Unnikrishna, Capítulo 2: The Axioms of Probabiliity#Capítulo 2: The Axioms of Probabiliity"
+  - "Probability, Random Variables and Stochastic Processes de Papoulis Athanasios, Pillai S. Unnikrishna, Capítulo 2: The Axioms of Probability#Capítulo 2: The Axioms of Probability"
   - "Probability, Random Variables and Stochastic Processes de Papoulis Athanasios, Pillai S. Unnikrishna, Capítulo 3: Repeated Trials#Capítulo 3: Repeated Trials"
   - "Probability, Random Variables and Stochastic Processes de Papoulis Athanasios, Pillai S. Unnikrishna, Capítulo 4: The Concept of a Random Variable#Capítulo 4: The Concept of a Random Variable"
   - "Probability, Random Variables and Stochastic Processes de Papoulis Athanasios, Pillai S. Unnikrishna, Capítulo 5: Functions of One Random Variable#Capítulo 5: Functions of One Random Variable"
@@ -159,13 +159,30 @@ aliases:
 
 ## Capítulo 1: The Meaning of Probability
 ---
+Se ven las siguiente definiciones
+* [[Frecuencia relativa|Frecuencia relativa]]
+* [[Probabilidad clásica|Definición clásica de la probabilidad]]
+* Las distribuciones
+    * [[Distribución Maxwell-Boltzmann|Distribución Maxwell-Boltzmann]]
+    * [[Distribución Fermi-Dirac|Distribución Fermi-Dirac]]
+    * [[Distribución Bose-Einstein|Distribución Bose-Einstein]]
 
-
-
-## Capítulo 2: The Axioms of Probabiliity
+## Capítulo 2: The Axioms of Probability
 ---
+Se hace un repaso de [[Teoría de conjuntos|teoria de conjuntos]], donde se ven las definiciones de
+* [[Conjunto|Conjunto]]
+* Operaciones
+    * [[Operador OR|Unión]]
+    * [[Operador AND|Intersección]]
+    * [[Operador NOT|Complemento]]
+    * [[Ley de De Morgan|Ley de De Morgan]]
+* [[Partición|Partición de un conjunto]]
 
+Vemos la definición del [[Espacio de probabilidad|espacio de probabilidad]], con lo que implica como son los [[Evento|eventos]], [[Evento equiprobable|eventos equiprobables]], [[Experimento aleatorio|experimento aleatorio]]
 
+Se avanza a la [[Probabilidad condicional|probabilidad condicional]], y al [[Probabilidad total|teorema de probabilidad total]]
+
+Vemos las propiedades de las variables aleatorias como son la [[Variables aleatorias independientes|independencia]]
 
 ## Capítulo 3: Repeated Trials
 ---

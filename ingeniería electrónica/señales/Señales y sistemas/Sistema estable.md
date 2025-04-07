@@ -20,7 +20,6 @@ Por otro lado, se puede ver la estabilidad en el [[Dominio|dominio]] del tiempo,
 * [[Criterio de estabilidad de Routh-Hurwitz|Criterio de estabilidad de Routh-Hurwitz]]
 
 
-
 # Referencias
 ---
 ```dataviewjs

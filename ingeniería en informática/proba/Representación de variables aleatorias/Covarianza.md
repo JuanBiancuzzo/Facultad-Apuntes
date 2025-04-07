@@ -53,7 +53,7 @@ Notemos que si $E[X_i] = 0$ para todo $i \in [1,~ \cdots,~ n]$, entonces $Cov(X)
     * Lo mismo para [[Distribución de Bernoulli|Bernoulli]]
     * Para todo las demás no se puede deducir si son independientes o no
 * $Cov(a + b \cdot X, c + d \cdot Y) = b \cdot d \cdot Cov(X, Y)$
-* $\begin{align} Cov(a_1 \cdot X_1 + a_2 \cdot X_2, a_3 \cdot X_3 + a_4 \cdot X_4) &= a_1 \cdot a_3 \cdot Cov(X_1, X_3) \\&+ a_2 \cdot a_3 \cdot Cov(X_2, X_3) \\&+ a_1 \cdot a_4 \cdot Cov(X_1, X_4) \\&+ a_2 \cdot a_4 \cdot Cov(X_2, X_4)\end{align}$ 
+* $$ \begin{align} Cov(a_1 \cdot X_1 + a_2 \cdot X_2, a_3 \cdot X_3 + a_4 \cdot X_4) &= a_1 \cdot a_3 \cdot Cov(X_1, X_3) \\&+ a_2 \cdot a_3 \cdot Cov(X_2, X_3) \\&+ a_1 \cdot a_4 \cdot Cov(X_1, X_4) \\&+ a_2 \cdot a_4 \cdot Cov(X_2, X_4)\end{align} $$ 
 * $Cov(X + Y, Z) = Cov(X, Z) + Cov(Y, Z)$ 
 * $Var(X + Y) = Var(X) + Var(Y) + 2 \cdot Cov(X, Y)$ (usando la [[Varianza|varianza]])
 

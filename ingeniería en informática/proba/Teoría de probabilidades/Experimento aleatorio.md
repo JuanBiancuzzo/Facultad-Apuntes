@@ -7,4 +7,4 @@ tags:
 ---
 # Definición
 ---
-Acciones o procesos en los cuales conocemos todos los resultados posibles pero no sabemos con certeza cuál va a ocurrir
+Acciones o procesos en los cuales conocemos todos los resultados posibles pero no sabemos con certeza cuál va a ocurrir. Al repetir el experimento se obtiene distintos resultados y por lo tanto no se puede predecir el resultado

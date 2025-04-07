@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Teoría-de-probabilidades
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
+  - carrera/ingeniería-electrónica/estoca/Repaso-probabilidad
 etapa: ampliar
 ---
 # Definición
@@ -17,7 +18,7 @@ Suceso relativo al [[Proceso|proceso]] $P_i$ que modifica su [[Estados de un pro
 
 ## En Probabilidad
 ---
-[[Subconjunto]] de un [[Espacio muestral|espacio muestral]] $\Omega$
+Un evento será un conjunto que contiene algunos, todos o ninguno de los resultados posibles de [[Espacio muestral|espacio muestral]] $\Omega$. En otras palabras es un [[Subconjunto|subconjunto]] de $\Omega$
 
 ### Ejemplo
 ---

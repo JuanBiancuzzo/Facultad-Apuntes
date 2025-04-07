@@ -3,7 +3,7 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
 nombreResumen: Distribuciones multivariables
-capitulo: 1
+capitulo: 2
 ---
 # Índice
 ---

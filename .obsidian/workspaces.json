@@ -261,12 +261,12 @@
                 }
               },
               {
-                "id": "de198b74ea753c10",
+                "id": "ed7f7bd5323f53f5",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ingeniería electrónica/señales/Sistemas LTI/Transferencia del sistema.md",
+                    "file": "ingeniería electrónica/control/Estabilidad en espacio de estados/Criterio de estabilidad de Routh-Hurwitz.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -281,16 +281,16 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Transferencia del sistema"
+                  "title": "Criterio de estabilidad de Routh-Hurwitz"
                 }
               },
               {
-                "id": "09dff8919c969b80",
+                "id": "63b5c440b0aeef40",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ingeniería electrónica/control/Respuesta dinámica/Linealización Jacobiana.md",
+                    "file": "ingeniería electrónica/control/Respuesta dinámica/Controlador proporcional.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -305,7 +305,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Linealización Jacobiana"
+                  "title": "Controlador proporcional"
                 }
               },
               {
@@ -405,7 +405,7 @@
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 3
           }
         ],
         "direction": "vertical"
@@ -456,8 +456,7 @@
                   "title": "Bookmarks"
                 }
               }
-            ],
-            "currentTab": 2
+            ]
           }
         ],
         "direction": "horizontal",
@@ -627,7 +626,7 @@
                 }
               }
             ],
-            "currentTab": 3
+            "currentTab": 5
           }
         ],
         "direction": "horizontal",
@@ -636,6 +635,8 @@
       },
       "left-ribbon": {
         "hiddenItems": {
+          "switcher:Open quick switcher": false,
+          "workspaces:Manage workspace layouts": true,
           "graph:Open graph view": true,
           "canvas:Create new canvas": true,
           "templates:Insert template": true,
@@ -652,8 +653,8 @@
           "cmdr:Workspaces: Save and load another layout": false
         }
       },
-      "active": "09dff8919c969b80",
-      "mtime": "2025-03-28T19:28:22-03:00"
+      "active": "2764c30149ad5ca2",
+      "mtime": "2025-04-06T20:46:05-03:00"
     },
     "Circuitos 2": {
       "main": {
@@ -710,6 +711,30 @@
                   },
                   "icon": "lucide-file",
                   "title": "Bandgap voltage reference"
+                }
+              },
+              {
+                "id": "114f21021e8457ba",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/intro/Circuitos con resistencias/Divisor de tensión.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Divisor de tensión"
                 }
               },
               {
@@ -881,7 +906,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -936,8 +961,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 330.50499725341797,
-        "collapsed": true
+        "width": 330.50499725341797
       },
       "right": {
         "id": "3bf298dcb9f1081b",
@@ -1111,6 +1135,8 @@
       },
       "left-ribbon": {
         "hiddenItems": {
+          "switcher:Open quick switcher": false,
+          "workspaces:Manage workspace layouts": true,
           "graph:Open graph view": true,
           "canvas:Create new canvas": true,
           "templates:Insert template": true,
@@ -1127,8 +1153,8 @@
           "cmdr:Workspaces: Save and load another layout": false
         }
       },
-      "active": "1c66f994e75e8a3d",
-      "mtime": "2025-03-29T17:35:25-03:00"
+      "active": "114f21021e8457ba",
+      "mtime": "2025-04-06T20:46:08-03:00"
     },
     "Estoca": {
       "main": {
@@ -1236,12 +1262,12 @@
                 }
               },
               {
-                "id": "0f20cc39faf3067b",
+                "id": "fa5db2e0c52ade36",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ingeniería en informática/algebra 2/Matrices unitarias y ortogonales/Matriz semidefinida positiva.md",
+                    "file": "ingeniería en informática/proba/Representación de variables aleatorias/Esperanza.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -1256,16 +1282,16 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Matriz semidefinida positiva"
+                  "title": "Esperanza"
                 }
               },
               {
-                "id": "c4b4c48981724fc2",
+                "id": "52ff879892efe5fd",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ingeniería en informática/proba/Inferencia estadística/Estimador.md",
+                    "file": "ingeniería en informática/proba/Función de variable aleatoria/Método del Jacobiano.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -1280,7 +1306,161 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Estimador"
+                  "title": "Método del Jacobiano"
+                }
+              },
+              {
+                "id": "4c710cf3b2601e55",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "colección/distribuciones/multivariada/Distribución Normal multivariada.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Distribución Normal multivariada"
+                }
+              }
+            ],
+            "currentTab": 4
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "846798510ac9a674",
+        "type": "split",
+        "children": [
+          {
+            "id": "c635826e07162fe2",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "4758c10ce82e9eab",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "640b82a7dfa99277",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "1e39f14ee35d8784",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 330.50499725341797
+      },
+      "right": {
+        "id": "3bf298dcb9f1081b",
+        "type": "split",
+        "children": [
+          {
+            "id": "6f578bed393edc47",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "f1644a9f662c2244",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "41a3f6f58104b9b1",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "licenciatura en ciencias matemáticas/algebra 1/Números enteros/Teorema fundamental de la aritmética.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for Teorema fundamental de la aritmética"
+                }
+              },
+              {
+                "id": "57a461fe7ffeb22b",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links"
+                }
+              },
+              {
+                "id": "8ce68be4957a7bb0",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "ingeniería en informática/proba/Variables y vectores aleatorios/Función de distribución.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of Función de distribución"
                 }
               },
               {
@@ -1414,169 +1594,17 @@
                 }
               }
             ],
-            "currentTab": 4
-          }
-        ],
-        "direction": "vertical"
-      },
-      "left": {
-        "id": "846798510ac9a674",
-        "type": "split",
-        "children": [
-          {
-            "id": "c635826e07162fe2",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "4758c10ce82e9eab",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "alphabetical",
-                    "autoReveal": false
-                  },
-                  "icon": "lucide-folder-closed",
-                  "title": "Files"
-                }
-              },
-              {
-                "id": "640b82a7dfa99277",
-                "type": "leaf",
-                "state": {
-                  "type": "tag",
-                  "state": {
-                    "sortOrder": "alphabetical",
-                    "useHierarchy": true,
-                    "showSearch": false,
-                    "searchQuery": ""
-                  },
-                  "icon": "lucide-tags",
-                  "title": "Tags"
-                }
-              },
-              {
-                "id": "1e39f14ee35d8784",
-                "type": "leaf",
-                "state": {
-                  "type": "bookmarks",
-                  "state": {},
-                  "icon": "lucide-bookmark",
-                  "title": "Bookmarks"
-                }
-              }
-            ]
+            "currentTab": 5
           }
         ],
         "direction": "horizontal",
-        "width": 330.50499725341797,
-        "collapsed": true
-      },
-      "right": {
-        "id": "3bf298dcb9f1081b",
-        "type": "split",
-        "children": [
-          {
-            "id": "6f578bed393edc47",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "f1644a9f662c2244",
-                "type": "leaf",
-                "state": {
-                  "type": "search",
-                  "state": {
-                    "query": "[\"capítulo\"]",
-                    "matchingCase": false,
-                    "explainSearch": false,
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical"
-                  },
-                  "icon": "lucide-search",
-                  "title": "Search"
-                }
-              },
-              {
-                "id": "9fe686856cb889a6",
-                "type": "leaf",
-                "state": {
-                  "type": "all-properties",
-                  "state": {
-                    "sortOrder": "alphabetical",
-                    "showSearch": false,
-                    "searchQuery": ""
-                  },
-                  "icon": "lucide-file",
-                  "title": "Plugin no longer active"
-                }
-              },
-              {
-                "id": "41a3f6f58104b9b1",
-                "type": "leaf",
-                "state": {
-                  "type": "backlink",
-                  "state": {
-                    "file": "licenciatura en ciencias matemáticas/algebra 1/Números enteros/Teorema fundamental de la aritmética.md",
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical",
-                    "showSearch": false,
-                    "searchQuery": "",
-                    "backlinkCollapsed": false,
-                    "unlinkedCollapsed": true
-                  },
-                  "icon": "links-coming-in",
-                  "title": "Backlinks for Teorema fundamental de la aritmética"
-                }
-              },
-              {
-                "id": "57a461fe7ffeb22b",
-                "type": "leaf",
-                "state": {
-                  "type": "outgoing-link",
-                  "state": {
-                    "linksCollapsed": false,
-                    "unlinkedCollapsed": true
-                  },
-                  "icon": "links-going-out",
-                  "title": "Outgoing links"
-                }
-              },
-              {
-                "id": "8ce68be4957a7bb0",
-                "type": "leaf",
-                "state": {
-                  "type": "outline",
-                  "state": {
-                    "followCursor": false,
-                    "showSearch": false,
-                    "searchQuery": ""
-                  },
-                  "icon": "lucide-list",
-                  "title": "Outline"
-                }
-              },
-              {
-                "id": "224dda726ce358fa",
-                "type": "leaf",
-                "state": {
-                  "type": "git-view",
-                  "state": {},
-                  "icon": "lucide-file",
-                  "title": "Plugin no longer active"
-                }
-              }
-            ],
-            "currentTab": 1
-          }
-        ],
-        "direction": "horizontal",
-        "width": 416.5,
+        "width": 917.5,
         "collapsed": true
       },
       "left-ribbon": {
         "hiddenItems": {
+          "switcher:Open quick switcher": false,
+          "workspaces:Manage workspace layouts": true,
           "graph:Open graph view": true,
           "canvas:Create new canvas": true,
           "templates:Insert template": true,
@@ -1593,8 +1621,8 @@
           "cmdr:Workspaces: Save and load another layout": false
         }
       },
-      "active": "0f20cc39faf3067b",
-      "mtime": "2025-03-28T16:08:01-03:00"
+      "active": "fa5db2e0c52ade36",
+      "mtime": "2025-04-04T08:24:49-03:00"
     },
     "TPP": {
       "main": {
@@ -1676,9 +1704,57 @@
                   "icon": "lucide-file",
                   "title": "Resumen"
                 }
+              },
+              {
+                "id": "01b896983b719254",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería en informática/redes/Redes de computadoras/Modelo Transmission Control Protocol, Internet Protocol.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Modelo Transmission Control Protocol, Internet Protocol"
+                }
+              },
+              {
+                "id": "4503a262472859c0",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería en informática/sisop/La abstracción de proceso/Fork system call.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Fork system call"
+                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 4
           }
         ],
         "direction": "vertical"
@@ -1853,6 +1929,8 @@
       },
       "left-ribbon": {
         "hiddenItems": {
+          "switcher:Open quick switcher": false,
+          "workspaces:Manage workspace layouts": true,
           "graph:Open graph view": true,
           "canvas:Create new canvas": true,
           "templates:Insert template": true,
@@ -1869,8 +1947,8 @@
           "cmdr:Workspaces: Save and load another layout": false
         }
       },
-      "active": "b0e0a85d2aa71d68",
-      "mtime": "2025-03-20T16:13:00-03:00"
+      "active": "4503a262472859c0",
+      "mtime": "2025-04-06T16:26:57-03:00"
     },
     "Desarrollo": {
       "main": {
@@ -2208,5 +2286,5 @@
       "mtime": "2025-03-18T13:46:32-03:00"
     }
   },
-  "active": "Control"
+  "active": "Estoca"
 }

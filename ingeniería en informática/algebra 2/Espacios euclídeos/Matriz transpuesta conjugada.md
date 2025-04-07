@@ -17,4 +17,4 @@ $$ A^* = \overline{A^T} $$
  * $(\alpha A)^* = \overline\alpha A^*$, $A \in \mathbb{C}^{m \times n}$, $\alpha \in \mathbb{C}$
  * $(A \cdot B)^* = B^* \cdot A^*$, $A \in \mathbb{C}^{m \times n}$, $B \in \mathbb{C}^{n \times m}$
  * $(A^*)^* = A$, $A \in \mathbb{C}^{m \times n}$
- * Si $A \ in \mathbb{C}^{1 \times 1} = \mathbb{C}$ como claramente $A^T = A$ tenemos que $A^* = \overline{A}$
+ * Si $A \in \mathbb{C}^{1 \times 1} = \mathbb{C}$ como claramente $A^T = A$ tenemos que $A^* = \overline{A}$

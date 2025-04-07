@@ -76,4 +76,4 @@ Es un [[Plot|plot]] donde se muestra en el eje x una [[Distribución continua|di
 
 Este plot tiene un parámetro que se llama "bins" que nos deja manejar la resolución, donde mientras más grande, más resolución
 
-Esto también puede representar una aproximación de la [[Función de densidad|función de densidad]]/[[Función de masa de probabilidad|masa de probabilidad]]. Podemos obtenerla como $$ \hat{f}_h(x) = \frac{1}{nh} \sum_{i = 1}^{n} \sum_i \mathbb{1}\set{x_i \in B_j} \cdot \mathbb{1}\set{ x \in B_j } $$ donde $B_j = \left[ m_j - \frac{h}{2},~ m_j + \frac{h}{2} \right]$, con $h$ y $m_j$ son la longitud y centro del intervalo respectivamente
+Esto también puede representar una aproximación de la [[Función de densidad de probabilidad|función de densidad]]/[[Función de masa de probabilidad|masa de probabilidad]]. Podemos obtenerla como $$ \hat{f}_h(x) = \frac{1}{nh} \sum_{i = 1}^{n} \sum_i \mathbb{1}\set{x_i \in B_j} \cdot \mathbb{1}\set{ x \in B_j } $$ donde $B_j = \left[ m_j - \frac{h}{2},~ m_j + \frac{h}{2} \right]$, con $h$ y $m_j$ son la longitud y centro del intervalo respectivamente

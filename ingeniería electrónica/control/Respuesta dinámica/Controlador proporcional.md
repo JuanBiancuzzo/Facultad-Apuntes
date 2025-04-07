@@ -3,6 +3,7 @@ dia: 2025-03-23
 etapa: ampliar
 referencias:
   - "899"
+  - "874"
 tags:
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - nota/facultad

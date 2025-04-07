@@ -1,6 +1,6 @@
 ---
 dia: 2025-03-13
-etapa: empezado
+etapa: ampliar
 referencias: 
 tags:
   - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
@@ -12,7 +12,7 @@ aliases: []
 ```
 # Definición
 ---
-
+Dado un [[Vector aleatorio|vector aleatorio]] $X$ marginalizarlo significa descartar algunas componentes y quedarse con un subvector de este
 
 ## Marginalización
 ---

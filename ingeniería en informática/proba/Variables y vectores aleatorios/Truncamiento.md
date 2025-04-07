@@ -11,5 +11,5 @@ Sea $X$ una [[Variable aleatoria|variable aleatoria]] con una [[Función de dist
 
 ## Observación
 ---
-Si $X$ una [[Variable aleatoria continua|variable aleatoria continua]] con una [[Función de densidad|función de densidad]] $f_X(x) = \frac{d}{dx}F_X(x)$, la función de densidad de $X$ truncada en $A$, se calcula como
+Si $X$ una [[Variable aleatoria continua|variable aleatoria continua]] con una [[Función de densidad de probabilidad|función de densidad]] $f_X(x) = \frac{d}{dx}F_X(x)$, la función de densidad de $X$ truncada en $A$, se calcula como
 $$ f_{X | X \in A}(x) = \frac{f_X(x) \cdot \mathbb{1}\{ X \in A \}}{\mathbb{P}(X \in A)} $$

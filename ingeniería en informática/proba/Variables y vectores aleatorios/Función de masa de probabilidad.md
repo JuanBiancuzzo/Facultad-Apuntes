@@ -5,6 +5,7 @@ tags:
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Variables-y-vectores-aleatorios
   - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
+  - carrera/ingeniería-electrónica/estoca/Repaso-probabilidad
 aliases:
   - PMF
   - Función de masa de probabilidad conjunta#Para vector aleatoria

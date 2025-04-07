@@ -6,20 +6,21 @@ tags:
   - distribuciones/continua
 aliases:
   - Campana de Gauss
+  - Distribución gaussiana
 nombreDistribucion: Normal
 tipoDistribucion: continua
 ---
 # Definición
 ---
-La [[Variable aleatoria|variable aleatoria]] $X$ que toma los valores $x \in \mathbb{R}$ tiene una distribución normal si su [[Función de densidad|función de densidad]] es de la forma $$ f_X(x) = \varphi(x) = \frac{1}{\sqrt{2 \cdot \pi \cdot \sigma }} \cdot e^{-(x - \mu)^2 \cdot (2 \cdot \sigma^2)^{-1}} $$
+La [[Variable aleatoria|variable aleatoria]] $X$ que toma los valores $x \in \mathbb{R}$ tiene una distribución normal si su [[Función de densidad de probabilidad|función de densidad]] es de la forma $$ f_X(x) = \varphi(x) = \frac{1}{\sqrt{2 \pi \sigma }} \cdot \exp\left(-\frac{(x - \mu)^2}{2 \sigma^2} \right) $$
 ### Notación
 $$ X \sim N(\mu, \sigma^2) $$
 
 ## Notas
 ---
 * El [[Soporte|soporte]] de $X$ es $Sop(X) = \mathbb{R}$ 
-* $\mu \in \mathbb{R}, \sigma^2 > 0$
-* La [[Esperanza|esperanza]] es $E[X] = \mu$ y la [[Varianza|varianza]] es $Var(X) = \sigma$.
+* $\mu \in \mathbb{R}$, $\sigma^2 > 0$
+* La [[Esperanza|esperanza]] es $E[X] = \mu$ y la [[Varianza|varianza]] es $Var(X) = \sigma^2$
 
 
 

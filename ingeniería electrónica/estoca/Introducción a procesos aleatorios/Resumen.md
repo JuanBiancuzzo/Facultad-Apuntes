@@ -3,7 +3,7 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/estoca/Introducción-a-procesos-aleatorios
 nombreResumen: Introducción a procesos aleatorios
-capitulo: 3
+capitulo: 4
 ---
 # Índice
 ---

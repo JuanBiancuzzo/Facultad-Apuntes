@@ -13,3 +13,6 @@ tags:
 # Definición
 ---
 Sea $A \in \mathbb{R}^{n \times n}$, se define la [[Matriz|matriz]] $A$ como matriz semidefinida positiva si $$ \forall v \in \mathbb{R}^n : v^T A v \ge 0 $$
+También se puede ver si todos los [[Autovalor|autovalores]] de $A$ son positivos
+
+También es una ecuación convexa

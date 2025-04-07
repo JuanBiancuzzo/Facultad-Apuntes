@@ -7,11 +7,11 @@ Cualquier corrección/ampliación de los contenidos en este proyecto, por favor 
 ## Carreras
 ---
 Un listado de materias y su estado dividido por carrera
-- [Licenciatura en Ciencias Matemáticas](licenciatura%20en%20ciencias%20matemáticas/Licenciatura%20en%20Ciencias%20Matemáticas.md)
-- [Licenciatura en Ciencias Físicas](licenciatura%20en%20ciencias%20físicas/Licenciatura%20en%20Ciencias%20Físicas.md)
-- [Licenciatura en Ciencias de Datos](licenciatura%20en%20ciencias%20de%20datos/Licenciatura%20en%20Ciencias%20de%20Datos.md)
-- [Ingeniería en informática](ingeniería%20en%20informática/Ingeniería%20en%20informática.md)
 - [Ingeniería electrónica](ingeniería%20electrónica/Ingeniería%20electrónica.md)
+- [Ingeniería en informática](ingeniería%20en%20informática/Ingeniería%20en%20informática.md)
+- [Licenciatura en Ciencias de Datos](licenciatura%20en%20ciencias%20de%20datos/Licenciatura%20en%20Ciencias%20de%20Datos.md)
+- [Licenciatura en Ciencias Físicas](licenciatura%20en%20ciencias%20físicas/Licenciatura%20en%20Ciencias%20Físicas.md)
+- [Licenciatura en Ciencias Matemáticas](licenciatura%20en%20ciencias%20matemáticas/Licenciatura%20en%20Ciencias%20Matemáticas.md)
 
 ### Ingeniería electrónica
 ---
@@ -149,8 +149,8 @@ Estos proyectos tienen una aplicación como resultado final
 | [Simpler GUI](proyecto%20práctico/simpler%20gui/Simpler%20GUI.md)                                                                                                               | Sin empezar                                |
 | [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)                                     | Estamos buscando información sobre el tema |
 | [Primer proyecto de robótica - Auto remoto](proyecto%20práctico/primer%20proyecto%20de%20robótica%20-%20auto%20remoto/Primer%20proyecto%20de%20robótica%20-%20Auto%20remoto.md) | Terminado                                  |
-| [Porfolio](proyecto%20práctico/porfolio/Porfolio.md)                                                                                                                            | Sin empezar                                |
 | [Plugins de Obsidian](proyecto%20práctico/plugins%20de%20obsidian/Plugins%20de%20Obsidian.md)                                                                                   | Sin empezar                                |
+| [Porfolio](proyecto%20práctico/porfolio/Porfolio.md)                                                                                                                            | Sin empezar                                |
 | [Better animations in my humble opinion](proyecto%20práctico/better%20animations%20in%20my%20humble%20opinion/Better%20animations%20in%20my%20humble%20opinion.md)              | Sin empezar                                |
 | [Obsidian Static Site Generator](proyecto%20práctico/obsidian%20static%20site%20generator/Obsidian%20Static%20Site%20Generator.md)                                              | Recién empezando                           |
 
@@ -176,10 +176,10 @@ Estos son los cursos que vaya haciendo
 
 | Curso                                                                                                                                                                                    | Estado                                       |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| [Software Construction](cursos/software%20construction/Software%20Construction.md)                                                                                                       | Sin empezar                                  |
-| [Performance Engineering of Software Systems](cursos/performance%20engineering%20of%20software%20systems/Performance%20Engineering%20of%20Software%20Systems.md)                         | Sin empezar                                  |
-| [Introduction to Algorithms](cursos/introduction%20to%20algorithms/Introduction%20to%20Algorithms.md)                                                                                    | Terminando la lecture 7 y empezando unidad 3 |
 | [Computation Structures](cursos/computation%20structures/Computation%20Structures.md)                                                                                                    | Sin empezar                                  |
+| [Introduction to Algorithms](cursos/introduction%20to%20algorithms/Introduction%20to%20Algorithms.md)                                                                                    | Terminando la lecture 7 y empezando unidad 3 |
+| [Performance Engineering of Software Systems](cursos/performance%20engineering%20of%20software%20systems/Performance%20Engineering%20of%20Software%20Systems.md)                         | Sin empezar                                  |
+| [Software Construction](cursos/software%20construction/Software%20Construction.md)                                                                                                       | Sin empezar                                  |
 | [CS50's Introduction to Cybersecurity](cursos/cs50's%20introduction%20to%20cybersecurity/CS50's%20Introduction%20to%20Cybersecurity.md)                                                  | Sin empezar                                  |
 | [Ciencia de datos para salud mental y psicología](cursos/ciencia%20de%20datos%20para%20salud%20mental%20y%20psicología/Ciencia%20de%20datos%20para%20salud%20mental%20y%20psicología.md) | Falta ver los temas más en detalles          |
 ### Colecciones

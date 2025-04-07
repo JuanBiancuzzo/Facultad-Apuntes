@@ -9,7 +9,7 @@ tipoDistribucion: continua
 ---
 # Definición
 ---
-Se dice que una [[Variable aleatoria|variable aleatoria]] $X$ tiene distribución Beta de parámetros $a$ y $b$ si su [[Función de densidad|función de densidad]] es $$ f_X(x) = \frac{\Gamma(a + b)}{\Gamma(a)\cdot\Gamma(b)} \cdot x^{a - 1} \cdot (1 - x)^{b - 1} $$ donde $\Gamma(x)$ es la [[Función gamma|función gamma]].
+Se dice que una [[Variable aleatoria|variable aleatoria]] $X$ tiene distribución Beta de parámetros $a$ y $b$ si su [[Función de densidad de probabilidad|función de densidad]] es $$ f_X(x) = \frac{\Gamma(a + b)}{\Gamma(a)\cdot\Gamma(b)} \cdot x^{a - 1} \cdot (1 - x)^{b - 1} $$ donde $\Gamma(x)$ es la [[Función gamma|función gamma]].
 
 ### Notación
 $$ X \sim \beta(a, b) $$

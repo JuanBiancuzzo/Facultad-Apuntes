@@ -9,7 +9,7 @@ tipoDistribucion: multivariada
 ---
 # Definición
 ---
-Se dice que el [[Vector aleatorio|vector aleatorio]] $X = (X_1, X_2, \cdots, X_p)$ tiene distribución normal multivariada de dimensión $p$, de parámetros $\mu \in \mathbb{R}^p$ y $\Sigma \in \mathbb{R}^{p \times p}$ (simétrica y definida positiva), si su [[ingeniería en informática/proba/Variables y vectores aleatorios/Función de densidad|función de densidad conjunta]] esta dada por $$ f_X(x) = \frac{1}{(2 \pi)^\frac{1}{2} \cdot (Det(\Sigma))^2} \cdot exp\bigg( -\frac{1}{2} \cdot (x - \mu)^T \cdot \Sigma^{-1} \cdot (x - \mu) \bigg) $$ donde $X$ y $x$ son vectores en $\mathbb{R}^p$.
+Se dice que el [[Vector aleatorio|vector aleatorio]] $X = (X_1, X_2, \cdots, X_p)$ tiene distribución normal multivariada de dimensión $p$, de parámetros $\mu \in \mathbb{R}^p$ y $\Sigma \in \mathbb{R}^{p \times p}$ que es la [[Covarianza#Para variables aleatorias|matriz de covarianza]], si su [[Función de densidad de probabilidad|función de densidad conjunta]] esta dada por $$ f_X(x) = \frac{1}{(2 \pi)^\frac{1}{2} \cdot (Det(\Sigma))^2} \cdot exp\bigg( -\frac{1}{2} \cdot (x - \mu)^T \cdot \Sigma^{-1} \cdot (x - \mu) \bigg) $$ donde $X$ y $x$ son vectores en $\mathbb{R}^p$.
 
 ### Notación
 $$ X \sim N_p(\mu, \Sigma) $$

@@ -176,8 +176,20 @@ Vemos un mayor análisis del efecto que tienen los polos y los ceros de una tran
 
 ## Capítulo 4: A First Analysis of Feedback
 ---
+Vemos los $4$ criterios para el diseño de un controlador
+* [[Sistema estable|Estabilidad]]
+* [[Tracking system|Tracking]]
+* [[Sensibilidad de un sistema|Sensibilidad]] y la [[Sensibilidad complementaria de un sistema|sensibilidad complementaria]]
+* [[Regulación de un sistema|Regulación]]
 
+Después vemos como se van pueden ir creando los [[Controlador automático|controladores]] viendo los distintos aspectos de los siguientes controladores
+* [[Controlador proporcional|Controlador proporcional]]
+* [[Controlador integral|Controlador integral]]
+* [[Controlador derivativo|Controlador derivativo]]
+* [[Controlador proporcional-integral|Controlador proporcional-integral (PI)]]
+* [[Controlador proporcional-integral-derivativo|Controlador proporcional-integral-derivativo (PID)]]
 
+Por último agrega un método para reducir el error del input a la planta
 
 ## Capítulo 5: The Root-Locus Design Method
 ---

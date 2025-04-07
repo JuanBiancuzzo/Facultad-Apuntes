@@ -3,7 +3,7 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/estoca/Aplicaciones
 nombreResumen: Aplicaciones
-capitulo: 5
+capitulo: 6
 ---
 # Índice
 ---

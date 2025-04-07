@@ -9,7 +9,7 @@ tipoDistribucion: continua
 ---
 # Definición
 ---
-Se dice que una [[Variable aleatoria]] $X$ tiene distribución de Pareto de parametros $m$ y $\alpha$ si su [[Función de densidad]] es $$ f_X(x) = \frac{\alpha \cdot m^\alpha}{x^{\alpha + 1}} $$
+Se dice que una [[Variable aleatoria]] $X$ tiene distribución de Pareto de parametros $m$ y $\alpha$ si su [[Función de densidad de probabilidad]] es $$ f_X(x) = \frac{\alpha \cdot m^\alpha}{x^{\alpha + 1}} $$
 
 ### Notación
 $$ X \sim Par(m, \alpha) $$

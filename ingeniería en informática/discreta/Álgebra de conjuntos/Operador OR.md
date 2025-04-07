@@ -15,7 +15,7 @@ aliases:
   - Unión de conjuntos
 referencias:
   - "411"
-etapa: sin-empezar
+etapa: ampliar
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
