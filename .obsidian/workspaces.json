@@ -1214,12 +1214,12 @@
                 }
               },
               {
-                "id": "68a1c3c265ef6bc6",
+                "id": "8be1ad6f30356ede",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ingeniería en informática/proba/Inferencia estadística/Estimador insesgado.md",
+                    "file": "ingeniería en informática/proba/Teoría de probabilidades/Probabilidad total.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -1234,16 +1234,16 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Estimador insesgado"
+                  "title": "Probabilidad total"
                 }
               },
               {
-                "id": "6cf1d303f7888182",
+                "id": "3d84d488baf8f3ba",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ingeniería en informática/proba/Representación de variables aleatorias/Covarianza.md",
+                    "file": "ingeniería en informática/proba/Teoría de probabilidades/Eventos independientes.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -1258,16 +1258,16 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Covarianza"
+                  "title": "Eventos independientes"
                 }
               },
               {
-                "id": "fa5db2e0c52ade36",
+                "id": "631ba235d61fe47b",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ingeniería en informática/proba/Representación de variables aleatorias/Esperanza.md",
+                    "file": "ingeniería electrónica/estoca/Repaso probabilidad/Resumen.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -1282,16 +1282,16 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Esperanza"
+                  "title": "Resumen"
                 }
               },
               {
-                "id": "52ff879892efe5fd",
+                "id": "7ffc502c1d475d33",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ingeniería en informática/proba/Función de variable aleatoria/Método del Jacobiano.md",
+                    "file": "ingeniería en informática/proba/Variables y vectores aleatorios/Función de distribución.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -1306,16 +1306,16 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Método del Jacobiano"
+                  "title": "Función de distribución"
                 }
               },
               {
-                "id": "4c710cf3b2601e55",
+                "id": "e23fa653ba84a1cb",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "colección/distribuciones/multivariada/Distribución Normal multivariada.md",
+                    "file": "ingeniería electrónica/estoca/Distribuciones multivariables/Función de distribución marginal.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -1330,11 +1330,35 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Distribución Normal multivariada"
+                  "title": "Función de distribución marginal"
+                }
+              },
+              {
+                "id": "6e625ca2964a1ad0",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería en informática/proba/Variables y vectores aleatorios/Variable aleatoria continua.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Variable aleatoria continua"
                 }
               }
             ],
-            "currentTab": 4
+            "currentTab": 7
           }
         ],
         "direction": "vertical"
@@ -1389,7 +1413,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 330.50499725341797
+        "width": 330.50499725341797,
+        "collapsed": true
       },
       "right": {
         "id": "3bf298dcb9f1081b",
@@ -1405,7 +1430,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "",
+                    "query": "tag:#carrera/ingeniería-electrónica/proba/Teoría-de-probabilidades",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -1594,7 +1619,7 @@
                 }
               }
             ],
-            "currentTab": 5
+            "currentTab": 4
           }
         ],
         "direction": "horizontal",
@@ -1621,8 +1646,8 @@
           "cmdr:Workspaces: Save and load another layout": false
         }
       },
-      "active": "fa5db2e0c52ade36",
-      "mtime": "2025-04-04T08:24:49-03:00"
+      "active": "6e625ca2964a1ad0",
+      "mtime": "2025-04-07T16:58:26-03:00"
     },
     "TPP": {
       "main": {
@@ -2286,5 +2311,5 @@
       "mtime": "2025-03-18T13:46:32-03:00"
     }
   },
-  "active": "Estoca"
+  "active": "Control"
 }

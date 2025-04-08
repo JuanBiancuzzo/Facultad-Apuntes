@@ -1,6 +1,6 @@
 ---
 dia: 2025-03-10
-etapa: sin-empezar
+etapa: empezado
 tags:
   - referencia/libro
   - colección/biblioteca/libro
@@ -151,8 +151,14 @@ aliases:
 
 ## Capítulo 1: Introduction
 ---
+Se define la idea de [[Controlador open-loop|controlador Open-loop]] (feedforward) y [[Controlador closed-loop|Closed-loop]] (feedback)
 
+Después se ven las propiedades de los controladores feedback como
+* [[Sistema de control robusto|Robustez]]
 
+Formas de controladores feedback
+* [[Controlador de dos posiciones|Controlador on-off]]
+* [[Controlador proporcional-integral-derivativo|Controlador PID]]
 
 ## Capítulo 2: Feedback Principles
 ---
