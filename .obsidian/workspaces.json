@@ -333,6 +333,30 @@
                 }
               },
               {
+                "id": "1d03f7255372a54d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ingeniería electrónica/control/Respuesta dinámica/Controlador open-loop.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Controlador open-loop"
+                }
+              },
+              {
                 "id": "7df2277c517fecba",
                 "type": "leaf",
                 "state": {
@@ -405,7 +429,7 @@
                 }
               }
             ],
-            "currentTab": 3
+            "currentTab": 4
           }
         ],
         "direction": "vertical"
@@ -630,7 +654,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 926.5,
+        "width": 864.5,
         "collapsed": true
       },
       "left-ribbon": {
@@ -653,8 +677,8 @@
           "cmdr:Workspaces: Save and load another layout": false
         }
       },
-      "active": "2764c30149ad5ca2",
-      "mtime": "2025-04-06T20:46:05-03:00"
+      "active": "1d03f7255372a54d",
+      "mtime": "2025-04-08T09:01:32-03:00"
     },
     "Circuitos 2": {
       "main": {
@@ -2311,5 +2335,5 @@
       "mtime": "2025-03-18T13:46:32-03:00"
     }
   },
-  "active": "Control"
+  "active": "Estoca"
 }

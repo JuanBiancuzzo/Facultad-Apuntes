@@ -8,6 +8,7 @@ tags:
 aliases:
   - PDF condicional
   - Función de densidad condicional
+  - Vector continuo condicional
 etapa: ampliar
 ---
 ```dataviewjs
@@ -15,7 +16,7 @@ etapa: ampliar
 ```
 # Definición
 ---
-Sea $X$ e $Y$ [[Variable aleatoria continua|variable aleatoria continua]] haciendo un [[Vector aleatorio|vector aleatorio]], con [[Función de densidad de probabilidad|función de densidad conjunta]] $f_{X,Y}(x, y)$ y [[Función de densidad marginal|función de densidad marginal]] $f_X(x)$, entonces para cualquier valor de $X$ con el cual $f_X(x) > 0$, la [[Función de densidad de probabilidad|función de densidad]] de la variable condicional de $Y$ dado que $X = x$ es   $$ f_{Y | X = x}(y) = \frac{f_{X,Y}(x, y)}{f_X(x)} $$
+Sea $X$ e $Y$ [[Variable aleatoria continua|variable aleatoria continua o vectores aleatorios continuos]] haciendo un vector aleatorio, con [[Función de densidad de probabilidad|función de densidad conjunta]] $f_{X,Y}(x, y)$ y [[Función de densidad marginal|función de densidad marginal]] $f_X(x)$, entonces para cualquier valor de $X$ con el cual $f_X(x) > 0$, la [[Función de densidad de probabilidad|función de densidad]] de la variable condicional de $Y$ dado que $X = x$ es   $$ f_{Y | X = x}(y) = \frac{f_{X,Y}(x, y)}{f_X(x)} $$
 Se define como $f_{X,Y}(x, y) = 0$ cuando $f_X(x) = 0$.
 
 ### Propiedades

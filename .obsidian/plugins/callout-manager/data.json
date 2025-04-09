@@ -5,7 +5,8 @@
       "observacion",
       "proposicion",
       "demostracion",
-      "corolario"
+      "corolario",
+      "definicion"
     ],
     "settings": {
       "teorema": [
@@ -73,6 +74,14 @@
           "changes": {
             "icon": "lucide-replace",
             "color": "219, 97, 97"
+          }
+        }
+      ],
+      "definicion": [
+        {
+          "changes": {
+            "icon": "lucide-box",
+            "color": "54, 144, 247"
           }
         }
       ]

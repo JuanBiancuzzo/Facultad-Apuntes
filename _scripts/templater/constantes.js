@@ -758,6 +758,7 @@ module.exports = () => ({
     BLOQUES_MATEMATICA: {
         bloques: {
             teorema: "teorema",
+            defincion: "definicion",
             observacion: "observacion",
             proposicion: "proposicion",
             corolario: "corolario",
@@ -767,6 +768,11 @@ module.exports = () => ({
             callout: "teorema",
             nombre: "Teorema",
             reducido: "teo",
+        },
+        definicion: {
+            callout: "definicion",
+            nombre: "Definición",
+            reducido: "def",
         },
         observacion: {
             callout: "observacion",

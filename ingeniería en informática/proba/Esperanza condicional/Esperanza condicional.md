@@ -20,7 +20,7 @@ etapa: ampliar
 Definimos a la [[Variable aleatoria|variable aleatoria]] esperanza condicional de $Y$ dado $X$, denotada por $E[Y|X]$, como la [[Función de regresión|función de regresión]] evaluado en $X$ de forma que $$ \varphi(X) = E[Y|X] $$
 Dada una variable aleatoria $X$, si se quiere calcular la [[Esperanza|esperanza]] pero cuando $X$ es una [[Truncamiento|variable truncada]], en el [[Conjunto|conjunto]] $B$ de la siguiente forma $$ E[X | X \in B] = \frac{E[X \cdot \mathbb{1} \{ X \in B \}]}{\mathbb{P}(X \in B)} $$
 
-Por lo tanto, podemos definir el conjunto $A$ siendo el conjunto de [[Átomo de una distribución|átomos]], la [[Función de distribución|función de distribución]] $F_X(x)$, y la [[Función de variable aleatoria|función de variable aleatoria]] $h(x)$ $$ E[X | X \in B] = \frac{1}{\mathbb{P}(X \in B)} \Bigg(\sum_{x \in A, x \in B}  h(x) \cdot \mathbb{P}(X = x) + \int_{x \in \mathbb{R} - A, x \in B} h(x) \cdot F_{X}'(x) \cdot dx \Bigg)$$
+Por lo tanto, podemos definir el conjunto $A$ siendo el conjunto de [[Átomo|átomos]], la [[Función de distribución|función de distribución]] $F_X(x)$, y la [[Función de variable aleatoria|función de variable aleatoria]] $h(x)$ $$ E[X | X \in B] = \frac{1}{\mathbb{P}(X \in B)} \Bigg(\sum_{x \in A, x \in B}  h(x) \cdot \mathbb{P}(X = x) + \int_{x \in \mathbb{R} - A, x \in B} h(x) \cdot F_{X}'(x) \cdot dx \Bigg)$$
 ## Para vector aleatorio
 ---
 Sea un [[Evento|evento]] $A$. Luego, definimos el operador $E[~\cdot \mid A]$ como $$ E[X \mid A] = \int_{\mathbb{R}^n} x ~ f_{X \mid A}(x \mid A) ~ dx $$

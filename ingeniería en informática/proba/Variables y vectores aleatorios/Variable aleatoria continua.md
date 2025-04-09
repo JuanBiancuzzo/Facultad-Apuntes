@@ -19,10 +19,9 @@ Una [[Variable aleatoria|variable aleatoria]] es continua si se cumplen las sigu
 
 2. Ningún valor posible de la variable aleatoria tiene [[Probabilidad|probabilidad]] positiva, es decir $\mathbb{P}(X = c) = 0, \forall c \in \mathbb{R}$
 
-
 ### Punto de vista de los átomos
 ---
-La variable aleatoria $X$ será continua si $F_X(x)$ es continua (el conjunto de [[Átomo de una distribución|átomos]] es vacío)
+La variable aleatoria $X$ será continua si $F_X(x)$ es continua (el conjunto de [[Átomo|átomos]] es vacío)
 
 
 ### Otras formas de definirla

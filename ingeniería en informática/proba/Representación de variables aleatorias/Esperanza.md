@@ -17,7 +17,8 @@ etapa: ampliar
 ---
 Es el promedio ponderado que puede tomar una [[Variable aleatoria|variable aleatoria]] $X$. Análogo al centro de masa de un objeto
 
-Sea $X$ una variable aleatoria con [[Función de distribución|función de distribución]] $F_X(x) = \mathbb{P}(X \leq x)$, si $h(X)$ es una [[Función de variable aleatoria|función de variable aleatoria]] cualquiera de $X$, si definimos $A$ como el [[Conjunto|conjunto]] de [[Átomo de una distribución|átomos]], entonces $$ E[h(X)] = \sum_{x \in A} h(x) \cdot \mathbb{P}(X = x) + \int_{x \in \mathbb{R} - A} h(x) \cdot F_{X}'(x) \cdot dx $$
+Sea $X$ una variable aleatoria con [[Función de distribución|función de distribución]] $F_X(x) = \mathbb{P}(X \leq x)$, si $h(X)$ es una [[Función de variable aleatoria|función de variable aleatoria]] cualquiera de $X$, si definimos $A$ como el [[Conjunto|conjunto]] de [[Átomo|átomos]], entonces $$ E[h(X)] = \sum_{x \in A} h(x) \cdot \mathbb{P}(X = x) + \int_{x \in \mathbb{R} - A} h(x) \cdot F_{X}'(x) \cdot dx $$
+
 ### Notación
 Se puede expresar $\mu(X) = E[X]$
 
@@ -43,9 +44,13 @@ Dado los conjuntos $A_1, A_2, \cdots, A_n$ tal que $\displaystyle\bigcup_{i = 1}
 
 ## Propiedad
 ---
-* Sea $X$ una [[Variable aleatoria|variable aleatoria]], con $E[X] = \mu$ si $h(X) = a \cdot X + b$ entonces $E[h(X)] = a \cdot \mu + b$ 
-* Se puede calcular la esperanza como $$ E[X] = \int_0^\infty (1 - F_X(x)) \cdot dx - \int_{-\infty}^0 F_X(x) \cdot dx $$
+Sea $X$ una [[Variable aleatoria|variable aleatoria]], se dice que la esperanza es lineal, es decir $$ \begin{align} 
+    E[a~X + b] &= a ~ E[X] + b, && a,~ b \in \mathbb{R} \\
+    E[AX + b] &= A ~ E[X] + b, && a \in \mathbb{R}^{n \times n},~ b \in \mathbb{R^n}
+\end{align} $$
 
+Si las variables $X$ e $Y$ son [[Variables aleatorias independientes|independientes]] entonces $$ E[XY] = E[X] ~ E[Y] $$ y también se cumple que $$ E[g(X) ~ h(Y)] = E[g(X)] ~ E[h(Y)] $$
+Se puede calcular la esperanza como $$ E[X] = \int_0^\infty (1 - F_X(x)) \cdot dx - \int_{-\infty}^0 F_X(x) \cdot dx $$
 ## Observación
 ---
 * $E(X)$ no ne necesariamente tiene que pertenecer al [[Soporte|soporte]] $R_X$ 

@@ -59,7 +59,8 @@ async function actualizarDatos(tp, datos, respuesta) {
             break;
 
         case TEMA:
-            temas = dv.pages(`#${TAG_COLECCION}/${TAGS_MATEMATICA.self}/${TAGS_MATEMATICA.tema}`);
+            temas = dv.pages(`#${TAG_COLECCION}/${TAGS_MATEMATICA.self}/${TAGS_MATEMATICA.tema}`)
+                .sort(tema => parseInt(tema[DATOS_TEMA.numero], 10));
 
             resultado = AGREGAR;
             if (temas.length > 0) {
@@ -84,7 +85,8 @@ async function actualizarDatos(tp, datos, respuesta) {
 
         case SUBTEMA:
             let nombreTemaTag = tp.user.tagPorNombre(datos[TEMA]);
-            let subtemas = dv.pages(`#${TAGS_MATEMATICA.self}/${nombreTemaTag} and #${TAG_COLECCION}/${TAGS_MATEMATICA.self}/${TAGS_MATEMATICA.subtema}`);
+            let subtemas = dv.pages(`#${TAGS_MATEMATICA.self}/${nombreTemaTag} and #${TAG_COLECCION}/${TAGS_MATEMATICA.self}/${TAGS_MATEMATICA.subtema}`)
+                .sort(subtema => parseInt(subtema[DATOS_SUBTEMA.numero], 10));
 
             resultado = AGREGAR;
             if (subtemas.length > 0) {

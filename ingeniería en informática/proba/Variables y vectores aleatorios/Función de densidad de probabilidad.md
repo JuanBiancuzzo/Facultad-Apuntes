@@ -21,7 +21,7 @@ Una [[Función|función]] $f_X : \mathbb{R} \to \mathbb{R}$, para $X$ siendo una
 * Sea $F_X(x)$ la [[Función de distribución|función de distribución]] de una variable aleatoria continua, luego $$ f_X(x) = \frac{d}{dx} F_X(x) $$
 ## Para vector aleatoria
 ---
-Sea $X$ un [[Vector aleatorio|vector aleatorio]], con sus componentes [[Variable aleatoria continua|continuas]], si $F_X$ es continua y existen sus [[Derivada parcial de orden superior|derivadas parciales]] de orden $n$. Su función de [[Función de densidad de probabilidad|función de densidad]] de [[Probabilidad|probabilidad]] resulta $$ f_X(x) = f_{X_1,~ \cdots,~ X_n}(x_1,~ \cdots,~ x_n) = \frac{\partial^n}{\partial x_1 \cdots \partial x_n} F_{X_1,~ \cdots,~ X_n}(x_1,~ \cdots,~ x_n) $$
+Sea $X$ un [[Vector aleatorio|vector aleatorio]], con sus componentes [[Variable aleatoria continua|continuas]], si $F_X$ es continua y existen sus [[Derivada parcial de orden superior|derivadas parciales]] de orden $n$. Su función de función de densidad de [[Probabilidad|probabilidad]] resulta $$ f_X(x) = f_{X_1,~ \cdots,~ X_n}(x_1,~ \cdots,~ x_n) = \frac{\partial^n}{\partial x_1 \cdots \partial x_n} F_{X_1,~ \cdots,~ X_n}(x_1,~ \cdots,~ x_n) $$
 ### Propiedades
 ---
 La $f_X$ satisface las siguientes propiedades

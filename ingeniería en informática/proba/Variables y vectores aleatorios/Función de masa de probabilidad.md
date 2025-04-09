@@ -27,7 +27,7 @@ Donde $R_X$ es el [[Rango de una variable aleatoria|rango]]
 Sea $X$ una variable aleatoria discreta 
 * La probabilidad de un punto, con la función de la función de forma que $$ p_X(x_j) = \mathbb{P}(X = x_j) = F_{X^-}(x_j) - F_{X^+}(x_j) $$es la [[Función de distribución|función de distribución]] por izquierda menos la [[Función de distribución|función de distribución]] por derecha
 * Dado un [[Conjunto|conjunto]] $A \subseteq R_X$ donde $R_X$ es el [[Rango de una variable aleatoria|rango]], entonces se puede calcular la probabilidad como $$ \mathbb{P}(X \in A) = \sum_{x \in A} P_X(x) $$
-## Para 
+## Para vector aleatorio
 ---
 Sea $X$ un [[Vector aleatorio|vector aleatorio]] con todas sus componentes son [[Variable aleatoria discreta|discretas]] si $F_X$ es constante por regiones y tiene un número finito o [[Infinito numerable|infinito numerable]] de discontinuidades. Su función de masa de probabilidad resulta $$ p_X(x) = p_{X_1,~ \cdots,~ X_n}(x_1,~ \cdots,~ x_n) = \mathbb{P}(X = x) $$ donde $x$ es uno de los puntos de discontinuidad de $F_X$
 
