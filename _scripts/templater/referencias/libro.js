@@ -7,8 +7,6 @@ const AGREGAR_EDITOR = "agregar editor";
 const CANTIDAD_MINIMA_AUTORES = 1;
 const CANTIDAD_MINIMA_CAPITULOS = 0;
 
-const SALIR = "salir";
-
 class Libro {
     constructor(tp, seguidorRef, representacionPrevia = {}) {
         // console.log("Libro");

@@ -6,10 +6,8 @@ const ELIMINAR_EDITORE = "eliminar editore";
 const CANTIDAD_MINIMA_AUTORES = 1;
 const CANTIDAD_MINIMA_EDITORES = 1;
 
-const SALIR = "salir";
-
 class Paper {
-    constructor(tp, seguidorRef, representacionPrevia) {
+    constructor(tp, seguidorRef, representacionPrevia = {}) {
         // console.log("Paper");
         const { SIMBOLOS, DATOS: { REFERENCIAS: { paper: DATOS_PAPER, ...DATOS_REFERENCIA } } } = tp.user.constantes();
 
