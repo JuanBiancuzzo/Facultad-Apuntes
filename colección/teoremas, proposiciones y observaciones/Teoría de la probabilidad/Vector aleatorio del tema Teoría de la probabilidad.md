@@ -21,6 +21,14 @@ nota:
     nombre: Matriz de autocovarianza
     path: ingeniería en informática/proba/Representación de variables aleatorias/Covarianza#^def-5-3-4
     pathRelacionado: 
+  - numero: 5
+    nombre: Dependencia lineal
+    path: colección/distribuciones/multivariada/Distribución Normal multivariada#^prop-5-3-5
+    pathRelacionado: 
+  - numero: 6
+    nombre: Transformación lineal
+    path: colección/distribuciones/multivariada/Distribución Normal multivariada#^prop-5-3-6
+    pathRelacionado: 
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/bloqueMatematica/subtema", { subtema: dv.current() });
