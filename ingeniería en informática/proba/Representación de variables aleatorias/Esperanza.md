@@ -52,7 +52,10 @@ Sea $X$ una [[Variable aleatoria|variable aleatoria]], se dice que la esperanza 
 Si las variables $X$ e $Y$ son [[Variables aleatorias independientes|independientes]] entonces $$ E[XY] = E[X] ~ E[Y] $$ y también se cumple que $$ E[g(X) ~ h(Y)] = E[g(X)] ~ E[h(Y)] $$
 Se puede calcular la esperanza como $$ E[X] = \int_0^\infty (1 - F_X(x)) \cdot dx - \int_{-\infty}^0 F_X(x) \cdot dx $$
 
-También se puede calcular usando la [[Función característica|función característica]]
+También se puede calcular la esperanza, de una variable aleatoria, de $X$ o de $X^n$ usando la [[Función característica|función característica]] notando la siguiente relación $$ \frac{d^n}{d\omega^n} \Phi_X(\omega) = \frac{d^n}{d\omega^n} E\left[ \exp\left( j\omega X \right) \right] = j^n E\left[ X^n ~ \exp\left( j\omega X \right) \right] $$
+Ahora, podemos obtener lo que buscamos, evaluando en $\omega = 0$ y despejando la esperanza, resultando en lo siguiente $$ E\left[ X^n \right] = (-j)^{n} ~ \frac{d^n}{d\omega^n} \Phi_X(\omega) \Bigg|_{\omega = 0} $$
+Se puede aplicar para vectores aleatorios, donde $X = [X_1,~ X_2]^T$ con función característica $\Psi_X(\omega_1, \omega_2)$, podemos aplicar las [[Derivada parcial|derivadas parciales]] dándonos la siguiente relación $$ \frac{\partial^{i + k}}{\partial \omega_1^i ~ \partial \omega_2^k} \Psi_X(\omega) = \frac{\partial^{i + k}}{\partial \omega_1^i ~ \partial \omega_2^k} E\bigg[ \exp\Big(j(\omega_1 ~ X_1 + \omega_2 ~ X_2) \Big) \bigg] = j^{i + k} E\left[ X_1^i ~ X_2^j ~ \exp(j\omega^T X) \right] $$
+De nuevo, podemos evaluar en $\omega = [0,~ 0]^T$ y despejar la esperanza, resultando en la siguiente expresión $$ E\left[ X_1^i ~ X_2^j \right] = (-j)^{i + k} ~ \frac{\partial^{i + k}}{\partial \omega_1^i ~ \partial \omega_2^k} \Psi_X(\omega) \Bigg|_{\omega_1 = 0,~ \omega_2 = 0} $$
 
 ## Observación
 ---
