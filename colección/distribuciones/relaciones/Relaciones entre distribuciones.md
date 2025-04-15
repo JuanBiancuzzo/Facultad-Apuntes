@@ -29,7 +29,7 @@ Sean $Z \sim N(0, 1)$ una distribución normal y $U \sim \chi_n^2$ una distribuc
 
 # [[Distribución Normal]]
 ---
-Sean $X_1, \cdots, X_n$ son [[Variables aleatorias independientes|independientes]] con $X_i \sim N(\mu, \sigma^2)$ entonces $Z = \sqrt{n} \frac{\overline{X} - \mu}{\sigma} \sim N(\mu = 0, \sigma^2 = 1)$.
+Sean $X_1, \cdots, X_n$ son [[Variables aleatorias independientes|independientes]] con $X_i \sim \mathcal{N}(\mu,~ \sigma^2)$ entonces $Z = \sqrt{n} \frac{\overline{X} - \mu}{\sigma} \sim \mathcal{N}(\mu = 0,~ \sigma^2 = 1)$
 
 
 # [[Distribución Exponencial]]

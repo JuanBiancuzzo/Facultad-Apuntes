@@ -102,7 +102,7 @@ capitulos:
       inicio: 
       final: 
   - numeroCapitulo: "13"
-    nombreCapitulo: Robust Persormance
+    nombreCapitulo: Robust Performance
     numReferencia: 894
     editores: []
     paginas:
@@ -135,7 +135,7 @@ aliases:
   - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 10: Frequency Domain Analysis#Capítulo 10: Frequency Domain Analysis"
   - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 11: PID Control#Capítulo 11: PID Control"
   - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 12: Frequency Domain Design#Capítulo 12: Frequency Domain Design"
-  - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 13: Robust Persormance#Capítulo 13: Robust Persormance"
+  - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 13: Robust Performance#Capítulo 13: Robust Performance"
   - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 14: Fundamental Limits#Capítulo 14: Fundamental Limits"
   - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 15: Architecture and System Design#Capítulo 15: Architecture and System Design"
 ---
@@ -215,7 +215,7 @@ Formas de controladores feedback
 
 
 
-## Capítulo 13: Robust Persormance
+## Capítulo 13: Robust Performance
 ---
 
 

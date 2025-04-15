@@ -51,6 +51,10 @@ Sea $X$ una [[Variable aleatoria|variable aleatoria]], se dice que la esperanza 
 
 Si las variables $X$ e $Y$ son [[Variables aleatorias independientes|independientes]] entonces $$ E[XY] = E[X] ~ E[Y] $$ y también se cumple que $$ E[g(X) ~ h(Y)] = E[g(X)] ~ E[h(Y)] $$
 Se puede calcular la esperanza como $$ E[X] = \int_0^\infty (1 - F_X(x)) \cdot dx - \int_{-\infty}^0 F_X(x) \cdot dx $$
+
+También se puede calcular usando la [[Función característica|función característica]]
+
 ## Observación
 ---
-* $E(X)$ no ne necesariamente tiene que pertenecer al [[Soporte|soporte]] $R_X$ 
+$E(X)$ no ne necesariamente tiene que pertenecer al [[Soporte|soporte]] $R_X$ 
+
