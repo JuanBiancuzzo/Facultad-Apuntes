@@ -5,192 +5,192 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": false,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
-      "query": "tag:#adc  ",
+      "query": "tag:#carrera/ingeniería-electrónica/adc  ",
       "color": {
         "a": 1,
         "rgb": 14701138
       }
     },
     {
-      "query": "tag:#algebra-2  ",
+      "query": "tag:#carrera/ingeniería-en-informática/algebra-2  ",
       "color": {
         "a": 1,
         "rgb": 14725458
       }
     },
     {
-      "query": "tag:#algo-1  ",
+      "query": "tag:#carrera/ingeniería-en-informática/algo-1  ",
       "color": {
         "a": 1,
         "rgb": 11657298
       }
     },
     {
-      "query": "tag:#algo-2  ",
+      "query": "tag:#carrera/ingeniería-en-informática/algo-2  ",
       "color": {
         "a": 1,
         "rgb": 5431378
       }
     },
     {
-      "query": "tag:#analisis-2  ",
+      "query": "tag:#carrera/ingeniería-en-informática/analisis-2  ",
       "color": {
         "a": 1,
         "rgb": 5431473
       }
     },
     {
-      "query": "tag:#analisis-3  ",
+      "query": "tag:#carrera/ingeniería-en-informática/analisis-3  ",
       "color": {
         "a": 1,
         "rgb": 5419488
       }
     },
     {
-      "query": "tag:#aninfo  ",
+      "query": "tag:#carrera/ingeniería-en-informática/aninfo  ",
       "color": {
         "a": 1,
         "rgb": 5395168
       }
     },
     {
-      "query": "tag:#bdd  ",
+      "query": "tag:#carrera/ingeniería-en-informática/bdd  ",
       "color": {
         "a": 1,
         "rgb": 11621088
       }
     },
     {
-      "query": "tag:#circuitos  ",
+      "query": "tag:#carrera/ingeniería-electrónica/circuitos  ",
       "color": {
         "a": 1,
         "rgb": 14701233
       }
     },
     {
-      "query": "tag:#discreta  ",
+      "query": "tag:#carrera/ingeniería-en-informática/discreta  ",
       "color": {
         "a": 1,
         "rgb": 14701138
       }
     },
     {
-      "query": "tag:#dispo  ",
+      "query": "tag:#carrera/ingeniería-electrónica/dispo  ",
       "color": {
         "a": 1,
         "rgb": 14725458
       }
     },
     {
-      "query": "tag:#electro  ",
+      "query": "tag:#carrera/ingeniería-electrónica/electro  ",
       "color": {
         "a": 1,
         "rgb": 11657298
       }
     },
     {
-      "query": "tag:#embebidos  ",
+      "query": "tag:#carrera/ingeniería-electrónica/embebidos  ",
       "color": {
         "a": 1,
         "rgb": 5431378
       }
     },
     {
-      "query": "tag:#estructura  ",
+      "query": "tag:#carrera/ingeniería-en-informática/estructura  ",
       "color": {
         "a": 1,
         "rgb": 5431473
       }
     },
     {
-      "query": "tag:#fisica-1 ",
+      "query": "tag:#carrera/ingeniería-en-informática/fisica-1 ",
       "color": {
         "a": 1,
         "rgb": 5419488
       }
     },
     {
-      "query": "tag:#fisica-2",
+      "query": "tag:#carrera/ingeniería-en-informática/fisica-2",
       "color": {
         "a": 1,
         "rgb": 5395168
       }
     },
     {
-      "query": "tag:#fisica-3",
+      "query": "tag:#carrera/ingeniería-electrónica/fisica-3",
       "color": {
         "a": 1,
         "rgb": 5395168
       }
     },
     {
-      "query": "tag:#intro ",
+      "query": "tag:#carrera/ingeniería-electrónica/intro ",
       "color": {
         "a": 1,
         "rgb": 5395121
       }
     },
     {
-      "query": "tag:#legal  ",
+      "query": "tag:#carrera/ingeniería-electrónica/legal  ",
       "color": {
         "a": 1,
         "rgb": 14592939
       }
     },
     {
-      "query": "tag:#numerico  ",
+      "query": "tag:#carrera/ingeniería-en-informática/numerico  ",
       "color": {
         "a": 1,
         "rgb": 14352164
       }
     },
     {
-      "query": "tag:#orga  ",
+      "query": "tag:#carrera/ingeniería-en-informática/orga  ",
       "color": {
         "a": 1,
         "rgb": 1376228
       }
     },
     {
-      "query": "tag:#proba  ",
+      "query": "tag:#carrera/ingeniería-en-informática/proba  ",
       "color": {
         "a": 1,
         "rgb": 6094711
       }
     },
     {
-      "query": "tag:#redes  ",
+      "query": "tag:#carrera/ingeniería-en-informática/redes  ",
       "color": {
         "a": 1,
         "rgb": 16720932
       }
     },
     {
-      "query": "tag:#seguridad  ",
+      "query": "tag:#carrera/ingeniería-electrónica/seguridad  ",
       "color": {
         "a": 1,
         "rgb": 5395026
       }
     },
     {
-      "query": "tag:#señales  ",
+      "query": "tag:#carrera/ingeniería-electrónica/señales  ",
       "color": {
         "a": 1,
         "rgb": 12277463
       }
     },
     {
-      "query": "tag:#sisop  ",
+      "query": "tag:#carrera/ingeniería-en-informática/sisop  ",
       "color": {
         "a": 1,
         "rgb": 9106901
       }
     },
     {
-      "query": "tag:#taller  ",
+      "query": "tag:#carrera/ingeniería-en-informática/taller  ",
       "color": {
         "a": 1,
         "rgb": 10254772
@@ -207,6 +207,6 @@
   "repelStrength": 9.91666666666667,
   "linkStrength": 1,
   "linkDistance": 220,
-  "scale": 0.07294890999850996,
-  "close": true
+  "scale": 0.059326176463068855,
+  "close": false
 }

@@ -8,6 +8,7 @@ referencias:
   - "1018"
   - "899"
   - "873"
+  - "882"
 tags:
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - nota/facultad
@@ -31,6 +32,40 @@ aliases:
 # Definición
 ---
 En un controlador feedback, la variable controlada es medida por un [[Sensores|sensor]] y esa [[Información|información]] es introducida al controlador para influenciar la variable controlada
+
+```tikz
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\begin{document} 
+\begin{tikzpicture}[scale=1.3, transform shape, ultra thick]
+    \tikzmath { \largo = 2.5; \alto = 1.5; \scale = 0.9; \sep = 1.1; }
+    \coordinate (sys_1) at (0, 0);
+    \coordinate (sys_2) at ($ (sys_1) + ({\largo + \sep}, 0) $);
+
+    \foreach \coor/\text in {sys_1/Sistema 1, sys_2/Sistema 2} {
+        \draw (\coor) rectangle ++(\largo, \alto)
+            node[midway, align=center, scale=\scale] {\text};
+        
+        \coordinate (\coor_arriba) at ($ (\coor) + ({\largo / 2}, \alto) $);
+        \coordinate (\coor_abajo)  at ($ (\coor) + ({\largo / 2}, 0) $);
+        \coordinate (\coor_izq)    at ($ (\coor) + (0, {\alto / 2}) $);
+        \coordinate (\coor_der)    at ($ (\coor) + (\largo, {\alto / 2}) $);
+    }
+    
+    \draw[->] (sys_1_der) -- (sys_2_izq) node[midway, above=2pt] {$u$};
+    \draw[->] (sys_2_der) -- ++({2 * \sep}, 0) 
+        node[midway, above=2pt] {$y$}
+        node[midway] (salida) {};
+
+    \draw [<-] (sys_1_izq) -- ++(-\sep, 0)
+        -- ++(0, {-\alto / 2 - \sep}) node (temp) {}
+        -- (temp -| salida)
+        -- (salida.center);
+
+\end{tikzpicture}
+\end{document}
+```
 
 ## Fundamentos
 ---

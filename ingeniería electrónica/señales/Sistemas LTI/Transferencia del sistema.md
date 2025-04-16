@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/señales/Sistemas-LTI
   - nota/facultad
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
+  - carrera/ingeniería-electrónica/control/Realizaciones
 referencias:
   - "899"
   - "873"
@@ -19,6 +20,10 @@ aliases:
   - Cero de fase no minimal#Ceros de fase no minimal
   - Nonminimum-phase zeros#Ceros de fase no minimal
   - RHP#Ceros de fase no minimal
+  - Transferencia estrictamente propia#^estrictamente-propia
+  - Transferencia propia#^propia
+  - Transferencia bipropia#^bipropia
+  - Transferencia impropia#^impropia
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
@@ -31,7 +36,7 @@ Usando la [[Transformada de Laplace|transformada de Laplace]] de la función de 
 Notemos que usando la [[Transformada de Fourier#Convolución|propiedad de convolución]] de la transformada, y la definición mencionada anteriormente $$ Y(s) = H(s) ~ X(s) $$
 Esto muestra como la transferencia es la transformada de la [[Respuesta en frecuencia|respuesta al impulso]], ya que si la entrada es la [[Delta de Dirac|delta de Dirac]], entonces la salida es la respuesta al impulso, y como la transformada de la delta es $1$ entonces $Y(s) = H(s)$
 
-Cuando el [[Sistemas descriptos por ecuaciones diferenciales ordinarias|sistema está descripto por ecuaciones diferenciales]], la transferencia resulta un cociente de [[Función polinómica|polinomios]] $$ H(s) = K ~ \frac{N(s)}{D(s)} $$ donde el $m$ es el [[Función polinómica#^grado|grado]] de $N(s)$ y $n$ es el grado de $D(s)$
+Cuando el [[Ecuación diferencial ordinaria#Punto de vista de los sistemas|sistema está descripto por ecuaciones diferenciales]], la transferencia resulta un cociente de [[Función polinómica|polinomios]] $$ H(s) = K ~ \frac{N(s)}{D(s)} $$ donde el $m$ es el [[Función polinómica#^grado|grado]] de $N(s)$ y $n$ es el grado de $D(s)$
 
 Si expresamos a la función de transferencia como el cociente de dos polinomios factorizados, entonces obtenemos $$ H(s) = K ~
 	\frac{ \displaystyle \prod_i^m \left(s + z_i \right) }
@@ -49,6 +54,19 @@ Por las propiedades de los [[Función logaritmica|logaritmos]] y las caracterís
 $$
 es decir que podemos sumar las contribuciones independientes de la constante, de cada polo y de cada cero
 
+## Clasificación
+---
+Dada una ecuación diferencial ordinaria a coeficientes constantes que expresaremos como $$ \frac{d^n }{dt^n} y + a_1 \frac{d^{n - 1}}{dt^{n - 1}} y + \cdots + a_n ~ y = b_0 \frac{d^m}{dt^m} u + b_1 \frac{d^{m - 1}}{dt^{m - 1}} u + \cdots + b_m ~ u $$
+donde notemos que estamos tomando con una única entrada $u$ y una única salida $y$
+
+Transformándolas y teniendo en cuenta valores iniciales nulos, obtenemos la siguiente $$ Y(s) ~ \left( s^n + a_1 ~ s^{n - 1} + \cdots + a_{n - 1} ~ s + a_n \right) = \left( b_0 ~ s^m + b_1 ~ s^{m - 1} + \cdots + b_{m - 1} ~ s + b_m \right) ~ U(s) $$
+Despejando la transferencia tenemos $$ \frac{Y(s)}{U(s)} = \frac{s^n + a_1 ~ s^{n - 1} + \cdots + a_{n - 1} ~ s + a_n}{b_0 ~ s^m + b_1 ~ s^{m - 1} + \cdots + b_{m - 1} ~ s + b_m} = \frac{a(s)}{b(s)} $$
+A partir de $n$ y $m$ podemos clasificarlas en 
+* Estrictamente propia si $m < n$ ^estrictamente-propia
+* Propia si $m \le n$ ^propia
+* Bipropia si $m = n$ ^bipropia
+* Impropia si $m > n$ ^impropia
+
 ## Ceros
 ---
 Un cero, como una [[Raíz de una función|raíz del polinomio]] del numerador $N(s)$, es un valor que produce un valor cero en la función, es decir $$ H(s) \bigg|_{s = -z_i} = 0 $$
@@ -60,9 +78,48 @@ Los ceros expresan su influencia modificando los coeficientes de los términos d
 ---
 Es el caso donde el cero se encuentra en $\sigma > 0$, produciendo en la salida una anticipación al impulso
 
-![[Pasted image 20250327102244.png]]
+```tikz
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\begin{document} 
+\begin{tikzpicture}[scale=1.2, transform shape, ultra thick]
+    \tikzmath { 
+        \xmax = 8; \xsep = 1;
+        \ymax = 4; \ymin = -2; \ysep = 1;
+        \dif = 0.5; \tick = 0.1; \definicion = 0.1;
+    
+        function senial(\t) {
+            return 3 - 3 * exp(-\t) * cos(deg(\t)) - 9 * exp(-\t) * sin(deg(\t)));
+        };
+    }
+
+    \draw[->] (0, 0) -- ({\xmax + \dif}, 0);
+    \draw[->] (0, {-\dif + \ymin}) -- (0, {\ymax + \dif});
+    
+    \foreach \xtick [parse=true] in {\xsep, 2 * \xsep, ..., \xmax} {
+        \tikzmath { int \xlable; \xlabel = int(\xtick); }
+        \draw (\xtick, \tick) -- ++(0, {-2 * \tick})
+            node[midway, below right=2pt] {$\xlabel$};
+    }
+    
+    \foreach \ytick [parse=true] in {\ymin, \ymin + \ysep, ..., \ymax} {
+        \tikzmath { int \ylable; \ylabel = int(\ytick); }
+        \draw (\tick, \ytick) -- ++({-2 * \tick}, 0)
+            node[midway, left=2pt] {$\ylabel$};
+    }
+    
+    \draw [cyan] (0, {senial(0)}) \foreach \x [parse=true] in 
+        {\definicion, 2 * \definicion, ..., \xmax + \definicion} {
+        -- (\x, {senial(\x)})
+    };
+
+\end{tikzpicture}
+\end{document}
+```
 
 Esto puede ser negativo para un sistema de control al moverse en dirección opuesta a la esperada
+
 ## Polos
 ---
 Un [[Singularidad|polo]], como una raíz del polinomio del denominador $D(s)$, es un valor para el cual la función tiende a infinito, es decir $$ |H(s)| \bigg|_{s = -p_i} = \infty $$
@@ -79,7 +136,7 @@ Notemos que $\tau = \frac{1}{\sigma}$ es la [[Constante de tiempo|constante de t
 Podemos analizar el caso general donde $$ H(s) = \frac{1}{s + z}, ~~~ z \in \mathbb{C} $$
 y obtenemos esta relación 
 
-![[Sistema de primer orden valores distintos de polos.png]]
+![[Sistema de primer orden valores distintos de polos.png|400]]
 
 ### Sistemas de segundo orden
 ---
@@ -92,14 +149,14 @@ Se puede definir
 * El parámetro $\omega_n$ es la frecuencia natural no amortiguada ^frecuencia-no-amortiguada
     * Este es el radio en el cual se encuentran los polos ubicados
 
-![[Sistema de segundo orden valores posicion.png]]
+![[Sistema de segundo orden valores posicion.png|300]]
 
 Donde la respuesta al impulso es $$ h(t) = \frac{\omega_n}{\sqrt{1 - \zeta^2}} ~ \exp(-\sigma t) ~ \sin(\omega_d t) ~ u(t) $$
 Obtenemos distintas curvas para de respuesta el escalón
 
-![[Respuesta al escalón de un sistema con polos conjugados.png]]
+![[Respuesta al escalón de un sistema con polos conjugados.png|500]]
 
-## Definiciones
+## Clasificaciones para amplificadores
 ---
 Se definen $4$ transferencias
 * Ganancia de [[Tensión|tensión]] $$ H(s) = \frac{V_o(s)}{V_i(S)} $$

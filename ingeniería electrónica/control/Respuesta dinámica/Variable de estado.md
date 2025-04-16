@@ -14,7 +14,7 @@ aliases:
 ```
 # Definición
 ---
-Las variables de un [[Espacio de estados|sistema dinámico]] son las variables que constituyen el menor [[Conjunto|conjunto]] de variables que determinan el estado del sistema dinámico. Si al menos se necesitan $n$ variables $x_1,~ x_2,~ \cdots,~ x_n$ para describir completamente el comportamiento de un sistema dinámico, entonces tales $n$ variables son un conjunto de variables de estado
+Las variables de un [[Sistema dinámico|sistema dinámico]] son las variables que constituyen el menor [[Conjunto|conjunto]] de variables que determinan el estado del sistema dinámico. Si al menos se necesitan $n$ variables $x_1,~ x_2,~ \cdots,~ x_n$ para describir completamente el comportamiento de un sistema dinámico, entonces tales $n$ variables son un conjunto de variables de estado
 
 Notemos que estas variables no necesariamente tienen que ser físicamente medibles o cantidades observables
 

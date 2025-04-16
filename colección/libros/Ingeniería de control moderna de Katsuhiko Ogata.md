@@ -136,7 +136,7 @@ Se sigue con el modelado en el espacio de estados, viendo conceptos como
 * Algunas definiciones de conceptos claves
     * [[Estado#En teoría de control|Estado]]
     * [[Variable de estado|Variable y vector de estado]]
-    * [[Espacio de estados|Espacio de estados y sus ecuaciones]]
+    * [[Sistema dinámico|Espacio de estados y sus ecuaciones]]
 
 Por último resolución usando la [[Transformada de Laplace|transformada de Laplace]] o [[Linealización Jacobiana|linealizando el problema]] alrededor de un [[Punto de equilibrio|punto de equilibrio]], para obtener la transferencia del sistema
 
