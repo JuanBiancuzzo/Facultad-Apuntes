@@ -43,8 +43,10 @@ class Resumen {
 
                     let capitulos = this.restoResumenes
                         .map(resumen => resumen[this.config.numero]);
-                    this.numero = capitulos.length > 0 
-                        ? capitulos.max() + 1 : 1;
+                    if (!this.numero) {
+                        this.numero = capitulos.length > 0
+                            ? capitulos.max() + 1 : 1;
+                    }
                     this.parte = 0;
 
                 } else {
@@ -199,17 +201,16 @@ class Resumen {
     }
 }
 
-async function editarResumen(tp, resumen) {
-    let { tArchivo: tResumen, dvArchivo: dvResumen } = resumen;
+async function editarResumen(tp, viejoResumen) {
     const { 
-        SECCIONES, DATAVIEW: { referencia: DV_REF, carrera: DV_CARRERA, ...DATAVIEW },
-		DATOS: { ARCHIVO: DATOS_ARCHIVO, MATERIA: DATOS_MATERIA, RESUMEN: DATOS_RESUMEN }, 
-        TAGS: { facultad: TAGS_FACULTAD }, 
+		DATOS: { ARCHIVO: DATOS_ARCHIVO, MATERIA: DATOS_MATERIA }, TAGS: { facultad: TAGS_FACULTAD }, 
     } = tp.user.constantes();
 	const dv = app.plugins.plugins.dataview.api;
     const preguntar = tp.user.preguntar();
     const tagPorNombre = tp.user.tagPorNombre;
     const obtenerTag = tp.user.obtenerTag;
+
+    let { tArchivo: tResumen, dvArchivo: dvResumen } = viejoResumen;
 
     let tagRepresentante = dvResumen[DATOS_ARCHIVO.tags]
         .filter(tag => tag.startsWith(TAGS_FACULTAD.carrera))
@@ -218,11 +219,56 @@ async function editarResumen(tp, resumen) {
 
     let materia = dv.pages(`#${TAGS_FACULTAD.self}/${TAGS_FACULTAD.materia} and #${tagRepresentante}`).first();
 
-    let claseResumen = new Resumen(tp, `${TAGS_FACULTAD.self}/${TAGS_FACULTAD.resumen}`, materia, dvResumen);
-    await preguntar.formulario(tp, claseResumen, "Modificar la información del tema de la materia");
+    viejoResumen = new Resumen(tp, `${TAGS_FACULTAD.self}/${TAGS_FACULTAD.resumen}`, materia, dvResumen);
+    let nuevoResumen = new Resumen(tp, `${TAGS_FACULTAD.self}/${TAGS_FACULTAD.resumen}`, materia, dvResumen);
+    await preguntar.formulario(tp, nuevoResumen, "Modificar la información del tema de la materia");
 
-    await actualizarResumenes(tp, claseResumen);
+    await actualizarResumenes(tp, nuevoResumen);
 
+    // Conseguir todas las materias que tengan como equivalente a esta materia y conseguir sus tags
+    let tagsMaterias = dv.pages(`#${TAGS_FACULTAD.self}/${TAGS_FACULTAD.materia}`)
+        .filter(cualquierMateria => cualquierMateria[DATOS_MATERIA.correlativas])
+        .filter(materiaEquivalente => materia.file.path == materiaEquivalente[DATOS_MATERIA.correlativas].path)
+        .map(materiaEquivalente => obtenerTag(tp, materiaEquivalente[DATOS_ARCHIVO.tags]));
+
+    tagsMaterias = [ ...tagsMaterias, ...obtenerTag(tp, materia[DATOS_ARCHIVO.tags]) ];
+
+    let viejasTags = [
+        ...tagsMaterias.map(tag => {
+            let subTagParte = "";
+            if (viejoResumen.tieneParte())
+                subTagParte = `/${viejoResumen.parte}`;
+            return `${tag}/${tagPorNombre(viejoResumen.nombre)}${subTagParte}`;
+        }),
+    ];
+    let nuevasTags = [
+        ...tagsMaterias.map(tag => {
+            let subTagParte = "";
+            if (nuevoResumen.tieneParte())
+                subTagParte = `/${nuevoResumen.parte}`;
+            return `${tag}/${tagPorNombre(nuevoResumen.nombre)}${subTagParte}`;
+        }),
+    ];
+
+    await cambiarArchivoConTag(tp, viejasTags, nuevasTags);
+
+    await app.fileManager.processFrontMatter(tResumen, (frontmatter) => {
+        let representacion = nuevoResumen.generarRepresentacion();
+        for (let [key, value] of Object.entries(representacion)) {
+            frontmatter[key] = value;
+        }
+    });
+
+    let nuevoNombre = nuevoResumen.nombreArchivo();
+    if (viejoResumen.nombreArchivo != nuevoNombre) {
+        await tp.file.move(`${dvResumen.file.folder}/${nuevoNombre}`, tResumen);
+    }
+
+    if (viejoResumen.nombre != nuevoResumen.nombre) {
+        let tCarpeta = tResumen.parent;
+        let carpeta = tCarpeta.path.split("/").slice(0, -1).join("/");
+        await app.fileManager.renameFile(tCarpeta, `${carpeta}/${nuevoResumen.nombre}`);
+    }
 }
 
 async function crearResumen(tp, materia) {
@@ -277,8 +323,9 @@ async function crearResumen(tp, materia) {
     };
 }
 
-async function actualizarResumenes(tp, resumen, ) {
+async function actualizarResumenes(tp, resumen) {
     const { DATOS: { ARCHIVO: DATOS_ARCHIVO, RESUMEN: DATOS_RESUMEN } } = tp.user.constantes();
+    const obtenerTag = tp.user.obtenerTag;
 
     let conflictos = resumen.buscarColisiones()
         .sort(({ nuevoNumero, nuevaParte }) => nuevoNumero ? parseInt(nuevoNumero, 10) : -parseInt(nuevaParte, 10));
@@ -296,27 +343,24 @@ async function actualizarResumenes(tp, resumen, ) {
         if (nuevaParte) {
             await app.fileManager.processFrontMatter(tResumen, (frontmatter) => {
                 frontmatter[DATOS_RESUMEN.parte] = nuevaParte;
-
-                let tagsNuevos = obtenerTag(tp, resumenEnConflicto[DATOS_ARCHIVO.tags])
-                    .map(tag => {
-                        let viejaParte = resumenEnConflicto[DATOS_RESUMEN.parte];
-                        if (viejaParte && parseInt(viejaParte, 10) > 0) {
-                            // Anteriormente era una parte
-                            let { index } = [...tag.matchAll(`/${viejaParte}`)].last();
-                            return { tagViejo: tag, tagNuevo: tag.slice(0, index) + `/${nuevaParte}` };
-
-                        } else {
-                            // Antes no era una parte
-                            return { tagViejo: tag, tagNuevo: `${tag}/${nuevaParte}` };
-                        }
-                    });
-
-                frontmatter[DATOS_ARCHIVO.tags] = resumenEnConflicto[DATOS_ARCHIVO.tags]
-                    .map(tag => {
-                        let infoTag = tagsNuevos.find(({ tagViejo }) => tag == tagViejo)
-                        return infoTag ? infoTag.tagNuevo : tag;
-                    });
             });
+
+            let tagsViejos = obtenerTag(tp, resumenEnConflicto[DATOS_ARCHIVO.tags]);
+            let tagsNuevos = tagsViejos
+                .map(tag => {
+                    let viejaParte = resumenEnConflicto[DATOS_RESUMEN.parte];
+                    if (viejaParte && parseInt(viejaParte, 10) > 0) {
+                        // Anteriormente era una parte
+                        let { index } = [...tag.matchAll(`/${viejaParte}`)].last();
+                        return tag.slice(0, index) + `/${nuevaParte}`;
+
+                    } else {
+                        // Antes no era una parte
+                        return `${tag}/${nuevaParte}`;
+                    }
+                });
+
+            await cambiarArchivoConTag(tp, tagsViejos, tagsNuevos);
 
             tResumen = await tp.file.move(`${resumenEnConflicto.file.folder}/Temp Parte ${nuevaParte}`, tResumen);
             cambiarNombre.push({ tResumen, path: `${resumenEnConflicto.file.folder}/Resumen Parte ${nuevaParte}` });
@@ -324,6 +368,24 @@ async function actualizarResumenes(tp, resumen, ) {
     } 
 
     await Promise.all(cambiarNombre.map(({ tResumen, path }) => tp.file.move(path, tResumen)));
+}
+
+async function cambiarArchivoConTag(tp, tagsViejos, tagsNuevos) {
+    const { DATOS: { ARCHIVO: DATOS_ARCHIVO } } = tp.user.constantes();
+	const dv = app.plugins.plugins.dataview.api;
+
+    let tArchivosCambiar = dv.pages(`${tagsViejos.map(tag => "#" + tag).join(" or ")}`)
+        .filter(archivo => archivo[DATOS_ARCHIVO.tags].some(tag => tagsViejos.includes(tag)))
+        .map(archivo => tp.file.find_tfile(archivo.file.path));
+
+    for (let tArchivo of tArchivosCambiar) {
+        await app.fileManager.processFrontMatter(tArchivo, (frontmatter) => {
+            let tags = frontmatter[DATOS_ARCHIVO.tags];
+            tagsViejos.forEach(tag => tags.remove(tag));
+            tagsNuevos.forEach(tag => tags.push(tag));
+            frontmatter[DATOS_ARCHIVO.tags] = tags;
+        });
+    }
 }
 
 module.exports = (tp) => ({
