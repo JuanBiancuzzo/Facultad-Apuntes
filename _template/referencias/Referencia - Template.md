@@ -20,7 +20,7 @@
         : [];
 
     let maximo = 0;
-    let referenciasTotal = referencias.obtenerReferencias(tp);
+    let referenciasTotal = referencias.obtenerReferencias(tp, dv);
     referenciasTotal.forEach(referencia => maximo = Math.max(maximo, parseInt(referencia[DATOS_REFERENCIA.numReferencia], 10)));
     referenciasTotal = referenciasTotal.sort(referencia => {
             let existe = referenciasArchivo.includes(referencia[DATOS_REFERENCIA.numReferencia]);

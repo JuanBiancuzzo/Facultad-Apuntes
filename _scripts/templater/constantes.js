@@ -299,6 +299,7 @@ module.exports = () => ({
             numero: "capitulo",
             parte: "parte",
             nombre: "nombreResumen",
+            bibliografia: "referencias",
         },
         PROYECTO: {
             dia: "dia",

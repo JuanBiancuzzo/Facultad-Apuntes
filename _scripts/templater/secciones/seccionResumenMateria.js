@@ -21,6 +21,9 @@ class Resumen {
         this.numero = representacionPrevia[this.config.numero];
         this.parte = representacionPrevia[this.config.parte]
             ? representacionPrevia[this.config.parte] : 0;
+
+        let bibliografiaActual = representacionPrevia[this.config.bibliografia];
+        this.bibliografia = tp.user.seleccionarReferencias().clase(tp, bibliografiaActual);
     }
 
     async actualizarDatos(respuesta, generarPreguntas, generarError) {
@@ -73,6 +76,9 @@ class Resumen {
                     generarError.Quit("No se ingresó la parte del tema")
                 );
                 break;
+
+            default:
+                await this.bibliografia.actualizarDatos(respuesta, generarPreguntas, generarError);
         }
     }
 
@@ -110,17 +116,22 @@ class Resumen {
             }
         }
 
+        let { opciones: opcionesBibliografia, valores: valoresBibliografia } = this.bibliografia.generarPreguntas();
+        opciones = opciones.concat(opcionesBibliografia);
+        valores = valores.concat(valoresBibliografia);
+
         return { opciones, valores };
     }
 
     esValido() {
-        return this.nombre && this.numero;
+        return this.nombre && this.numero && this.bibliografia.esValido();
     }
 
     generarRepresentacion() {
         let representacion = {
             [this.config.nombre]: this.nombre,
             [this.config.numero]: this.numero,
+            [this.config.bibliografia]: this.bibliografia.obtenerReferencias().map(num => `${num}`),
         };
 
         if (this.parte > 0) 

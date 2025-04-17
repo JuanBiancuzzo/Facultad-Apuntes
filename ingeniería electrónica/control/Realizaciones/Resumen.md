@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/control/Realizaciones
 nombreResumen: Realizaciones
 capitulo: 5
+referencias:
+  - "877"
 ---
 # Índice
 ---

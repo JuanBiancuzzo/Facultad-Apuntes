@@ -1,5 +1,5 @@
 class SeguidorReferencias {
-    constructor(tp, dv) {
+    constructor(tp, dv = null) {
         if (!dv) dv = app.plugins.plugins.dataview.api;
         const referencias = tp.user.referencia();
 
