@@ -1,7 +1,5 @@
 const AGREGAR_TEMA = "Agregar tema";
 
-const SALIR = "salir";
-
 class Resumen {
     constructor(tp, tagID, padre, representacionPrevia = {}) {
         const { 
@@ -201,11 +199,36 @@ class Resumen {
     }
 }
 
+async function editarResumen(tp, resumen) {
+    let { tArchivo: tResumen, dvArchivo: dvResumen } = resumen;
+    const { 
+        SECCIONES, DATAVIEW: { referencia: DV_REF, carrera: DV_CARRERA, ...DATAVIEW },
+		DATOS: { ARCHIVO: DATOS_ARCHIVO, MATERIA: DATOS_MATERIA, RESUMEN: DATOS_RESUMEN }, 
+        TAGS: { facultad: TAGS_FACULTAD }, 
+    } = tp.user.constantes();
+	const dv = app.plugins.plugins.dataview.api;
+    const preguntar = tp.user.preguntar();
+    const tagPorNombre = tp.user.tagPorNombre;
+    const obtenerTag = tp.user.obtenerTag;
+
+    let tagRepresentante = dvResumen[DATOS_ARCHIVO.tags]
+        .filter(tag => tag.startsWith(TAGS_FACULTAD.carrera))
+        .first()
+        .split("/").slice(0, -1).join("/");
+
+    let materia = dv.pages(`#${TAGS_FACULTAD.self}/${TAGS_FACULTAD.materia} and #${tagRepresentante}`).first();
+
+    let claseResumen = new Resumen(tp, `${TAGS_FACULTAD.self}/${TAGS_FACULTAD.resumen}`, materia, dvResumen);
+    await preguntar.formulario(tp, claseResumen, "Modificar la información del tema de la materia");
+
+    await actualizarResumenes(tp, claseResumen);
+
+}
 
 async function crearResumen(tp, materia) {
     const { 
         SECCIONES, DATAVIEW: { referencia: DV_REF, carrera: DV_CARRERA, ...DATAVIEW },
-		DATOS: { ARCHIVO: DATOS_ARCHIVO, MATERIA: DATOS_MATERIA, RESUMEN: DATOS_RESUMEN }, 
+		DATOS: { ARCHIVO: DATOS_ARCHIVO, MATERIA: DATOS_MATERIA }, 
         TAGS: { facultad: TAGS_FACULTAD }, 
     } = tp.user.constantes();
 	const dv = app.plugins.plugins.dataview.api;
@@ -233,6 +256,30 @@ async function crearResumen(tp, materia) {
     tagsMaterias = [ ...tagsMaterias, ...obtenerTag(tp, materia[DATOS_ARCHIVO.tags]) ];
 
     // Identificar y modificar en el caso de que sea necesario, algun otro resumen que haya conflicto con los datos actuales
+    await actualizarResumenes(tp, resumen);
+
+    return {
+        metadata: {
+            [DATOS_ARCHIVO.tags]: [
+                `${TAGS_FACULTAD.self}/${TAGS_FACULTAD.resumen}`,
+				...tagsMaterias.map(tag => {
+                    let subTagParte = "";
+                    if (resumen.tieneParte()) 
+                        subTagParte = `/${resumen.parte}`;
+                    return `${tag}/${tagPorNombre(resumen.nombre)}${subTagParte}`;
+                }),
+            ],
+            ...resumen.generarRepresentacion(),
+        },
+        carpeta: `${materia.file.folder}/${resumen.nombre}`,
+        titulo: resumen.nombreArchivo(),
+        texto: texto,
+    };
+}
+
+async function actualizarResumenes(tp, resumen, ) {
+    const { DATOS: { ARCHIVO: DATOS_ARCHIVO, RESUMEN: DATOS_RESUMEN } } = tp.user.constantes();
+
     let conflictos = resumen.buscarColisiones()
         .sort(({ nuevoNumero, nuevaParte }) => nuevoNumero ? parseInt(nuevoNumero, 10) : -parseInt(nuevaParte, 10));
     
@@ -276,31 +323,13 @@ async function crearResumen(tp, materia) {
         }
     } 
 
-    console.log(cambiarNombre);
     await Promise.all(cambiarNombre.map(({ tResumen, path }) => tp.file.move(path, tResumen)));
-
-    return {
-        metadata: {
-            [DATOS_ARCHIVO.tags]: [
-                `${TAGS_FACULTAD.self}/${TAGS_FACULTAD.resumen}`,
-				...tagsMaterias.map(tag => {
-                    let subTagParte = "";
-                    if (resumen.tieneParte()) 
-                        subTagParte = `/${resumen.parte}`;
-                    return `${tag}/${tagPorNombre(resumen.nombre)}${subTagParte}`;
-                }),
-            ],
-            ...resumen.generarRepresentacion(),
-        },
-        carpeta: `${materia.file.folder}/${resumen.nombre}`,
-        titulo: resumen.nombreArchivo(),
-        texto: texto,
-    };
 }
 
 module.exports = (tp) => ({
     clase: (materia, representacionPrevia = {}) => new Resumen(tp, materia, representacionPrevia),
     crear: crearResumen.bind(null, tp),
+    editar: editarResumen.bind(null, tp),
 });
 
 /**

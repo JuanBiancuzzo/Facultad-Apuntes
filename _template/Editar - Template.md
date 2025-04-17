@@ -1,6 +1,6 @@
 <%*
     const { 
-        DIRECTORIOS, REFERENCIAS, TAGS: {  },
+        DIRECTORIOS, REFERENCIAS, TAGS: { facultad: TAGS_FACULTAD },
         DATOS: { ARCHIVO: DATOS_ARCHIVO, REFERENCIAS: DATOS_REFERENCIAS },
     } = tp.user.constantes();
     const dv = app.plugins.plugins.dataview.api;
@@ -11,6 +11,9 @@
     const EDITOR = {
         coleccion: {
             libro: tp.user.libro(tp).editar.bind(null, seguidorRef),
+        },
+        seccion: {
+            resumenMateria: tp.user.seccionResumenMateria(tp).editar,
         },
     };
 
@@ -29,6 +32,12 @@
             valores.push(valor);
         }
     };
+
+    switch (true) {
+        case dvArchivo[DATOS_ARCHIVO.tags].includes(`${TAGS_FACULTAD.self}/${TAGS_FACULTAD.resumen}`):
+            ingresarOpcion("Editar resumen de la materia", EDITOR.seccion.resumenMateria);
+            break;
+    }
 
     switch (dvArchivo[DATOS_REFERENCIAS.tipoCita]) {
         case REFERENCIAS.libro: ingresarOpcion("Editar un libro", EDITOR.coleccion.libro); break;
