@@ -5,10 +5,10 @@
 
     const GENERADOR = {
         nota: {
-            facultad: tp.user.nota().notaFacultad.bind(null, tp),
-            curso: tp.user.nota().notaCurso.bind(null, tp),
-            investigacion: tp.user.nota().notaInvestigacion.bind(null, tp),
-            proyecto: tp.user.nota().notaProyecto.bind(null, tp),
+            facultad: tp.user.notaFacultad().crear.bind(null, tp),
+            curso: tp.user.notaCurso().crear.bind(null, tp),
+            investigacion: tp.user.notaInvestigacion().crear.bind(null, tp),
+            proyecto: tp.user.notaProyecto().crear.bind(null, tp),
         },
         coleccion: {
             estructuraDatos: tp.user.estructuraDeDatos().crear.bind(null, tp),

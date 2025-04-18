@@ -13,12 +13,6 @@
   ],
   "leftRibbon": [
     {
-      "id": "templater-obsidian:_template/referencias/Referencia - Template.md",
-      "icon": "lucide-file-search",
-      "name": "Referencia",
-      "mode": "any"
-    },
-    {
       "id": "quickadd:choice:3c681439-6c5a-4857-bdc5-e8f2ebf463a1",
       "icon": "lucide-album",
       "name": "Materia facultad",

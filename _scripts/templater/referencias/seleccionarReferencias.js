@@ -1,9 +1,10 @@
 const CREAR = "crear";
 const SACAR = "sacar";
+const PREFERIDA = "preferida";
 const AGREGAR = "agregar";
 
 class SeleccionReferencias {
-	constructor(tp, numReferenciasPrevias = null) {
+	constructor(tp, numReferenciasPrevias = null, numOpcionesPreferidas = null) {
         const { SIMBOLOS } = tp.user.constantes();
         const referencia = tp.user.referencia();
         const dv = app.plugins.plugins.dataview.api;
@@ -12,9 +13,22 @@ class SeleccionReferencias {
 		this.referencias = referencia.obtenerReferencias(tp, dv);
 
 		if (!numReferenciasPrevias) numReferenciasPrevias = [];
-        this.refereciasActuales = numReferenciasPrevias.map(num => {
-            return this.referencias.find(referencia => referencia.obtenerNumReferencia() == num);
-        });
+        numReferenciasPrevias = numReferenciasPrevias.map(num => parseInt(num, 10));
+
+		if (!numOpcionesPreferidas) numOpcionesPreferidas = [];
+        numOpcionesPreferidas = numOpcionesPreferidas.map(num => parseInt(num, 10));
+
+
+        this.refereciasActuales = numReferenciasPrevias
+            .filter(num => !numOpcionesPreferidas.includes(num))
+            .map(num => {
+                return this.referencias.find(referencia => referencia.obtenerNumReferencia() == num);
+            });
+
+        this.opcionesPreferidas = numOpcionesPreferidas.map(num => ({
+            ref: this.referencias.find(referencia => referencia.obtenerNumReferencia() == num), 
+            elegida: numReferenciasPrevias.includes(num),
+        }));
 
         let seguidorRef = tp.user.seguidorReferencias(tp).new(dv);
         this.informacion = {
@@ -33,6 +47,7 @@ class SeleccionReferencias {
             case AGREGAR:
                 let referenciasAgregables = this.referencias
                     .filter(referencia => !this.refereciasActuales.some(referenciaActual => referenciaActual == referencia))
+                    .filter(referencia => !this.opcionesPreferidas.some(({ ref: referenciaPreferida }) => referenciaPreferida == referencia))
                     .sort(referencia => -referencia.obtenerNumReferencia());
 
                 let referenciaAgregar = await generarPreguntas.suggester(
@@ -47,6 +62,10 @@ class SeleccionReferencias {
             case SACAR:
                 this.refereciasActuales.splice(indice, 1);
                 break;
+
+            case PREFERIDA:
+                this.opcionesPreferidas[indice].elegida = !this.opcionesPreferidas[indice].elegida;
+                break;
         }
     }
 
@@ -55,6 +74,14 @@ class SeleccionReferencias {
 
         valores.push(` ${this.simbolos.agregar} Crear referencia`)
         opciones.push(CREAR);
+
+        for (let [indice, opcionPreferida] of this.opcionesPreferidas.entries()) {
+            let { ref: referenciaPreferida, elegida } = opcionPreferida;
+            let simbolo = elegida ? this.simbolos.confirmar : this.simbolos.elegir;
+
+            valores.push(` ${simbolo} Elegir ${referenciaPreferida.describir()}`);
+            opciones.push(`${PREFERIDA}-${indice}`);
+        }
 
         for (let [indice, referenciaActual] of this.refereciasActuales.entries()) {
             valores.push(` ${this.simbolos.sacar} Sacar ${referenciaActual.describir()}`);
@@ -72,10 +99,13 @@ class SeleccionReferencias {
     }
 
     obtenerReferencias() {
-        return this.refereciasActuales.map(referencia => referencia.obtenerNumReferencia());
+        return this.opcionesPreferidas
+            .filter(({ elegida }) => elegida)
+            .map(({ ref }) => ref.obtenerNumReferencia())
+            .concat(this.refereciasActuales.map(referencia => referencia.obtenerNumReferencia()));
     }
 }
 
 module.exports = () => ({
-    clase: (tp, numReferenciasPrevias = null) => new SeleccionReferencias(tp, numReferenciasPrevias),
+    clase: (tp, numReferenciasPrevias = null, numOpcionesPreferidas = null) => new SeleccionReferencias(tp, numReferenciasPrevias, numOpcionesPreferidas),
 });

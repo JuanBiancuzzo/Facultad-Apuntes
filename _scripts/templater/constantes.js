@@ -313,6 +313,12 @@ module.exports = () => ({
             aliases: "aliases",
             referencias: "referencias",
         },
+        NOTA: {
+            etapa: "etapa",
+            referencias: "referencias",
+            nombrePrincipal: "nombre",
+            seudonimos: "aliases",
+        },
         PROGRESO: {
             dia: "dia",
             tags: "tags",

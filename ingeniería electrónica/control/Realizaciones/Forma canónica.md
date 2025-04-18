@@ -3,8 +3,8 @@ dia: 2025-04-16
 etapa: ampliar
 referencias: 
 tags:
-  - carrera/ingeniería-electrónica/control/Realizaciones
   - nota/facultad
+  - carrera/ingeniería-electrónica/control/Realizaciones
 aliases:
   - Forma canónica controlable
 ---

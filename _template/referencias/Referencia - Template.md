@@ -111,30 +111,4 @@
         new Notice(mensaje);
     }
 
-    function incluye(referencia, posibleIncluido) {
-        referencia = referencia.split("\n").map(l => l.trim());
-        posibleIncluido = posibleIncluido.split("\n").map(l => l.trim());
-
-        let empezo = false;
-        let contador = 0;
-
-        for (let linea of referencia) {
-            let lineaIgual = linea == posibleIncluido[contador];
-
-            if (!empezo && lineaIgual) {
-                empezo = true;
-                contador++;
-            } else if (empezo && lineaIgual) {
-                contador++;
-                if (contador >= posibleIncluido.length) {
-                    return contador;
-                }
-            } else if (empezo && !lineaIgual) {
-                empezo = false;
-                contador = 0;
-            }
-        }
-
-        return -1;
-    }
 _%>

@@ -1,6 +1,6 @@
 <%*
     const { 
-        DIRECTORIOS, REFERENCIAS, TAGS: { facultad: TAGS_FACULTAD },
+        DIRECTORIOS, REFERENCIAS, TAGS: { facultad: TAGS_FACULTAD, nota: TAGS_NOTA },
         DATOS: { ARCHIVO: DATOS_ARCHIVO, REFERENCIAS: DATOS_REFERENCIAS },
     } = tp.user.constantes();
     const dv = app.plugins.plugins.dataview.api;
@@ -14,6 +14,12 @@
         },
         seccion: {
             resumenMateria: tp.user.seccionResumenMateria(tp).editar,
+        },
+        nota: {
+            facultad: tp.user.notaFacultad().editar.bind(null, tp),
+            curso: tp.user.notaCurso().editar.bind(null, tp),
+            investigacion: tp.user.notaInvestigacion().editar.bind(null, tp),
+            proyecto: tp.user.notaProyecto().editar.bind(null, tp),
         },
     };
 
@@ -36,6 +42,22 @@
     switch (true) {
         case dvArchivo[DATOS_ARCHIVO.tags].includes(`${TAGS_FACULTAD.self}/${TAGS_FACULTAD.resumen}`):
             ingresarOpcion("Editar resumen de la materia", EDITOR.seccion.resumenMateria);
+            break;
+
+        case dvArchivo[DATOS_ARCHIVO.tags].includes(`${TAGS_NOTA.self}/${TAGS_NOTA.carrera}`):
+            ingresarOpcion("Editar nota facultativa", EDITOR.nota.facultad);
+            break;
+
+        case dvArchivo[DATOS_ARCHIVO.tags].includes(`${TAGS_NOTA.self}/${TAGS_NOTA.proyecto}`):
+            ingresarOpcion("Editar nota de proyecto", EDITOR.nota.proyecto);
+            break;
+
+        case dvArchivo[DATOS_ARCHIVO.tags].includes(`${TAGS_NOTA.self}/${TAGS_NOTA.curso}`):
+            ingresarOpcion("Editar nota de un curso", EDITOR.nota.curso);
+            break;
+
+        case dvArchivo[DATOS_ARCHIVO.tags].includes(`${TAGS_NOTA.self}/${TAGS_NOTA.investigacion}`):
+            ingresarOpcion("Editar nota de investigacion", EDITOR.nota.investigacion);
             break;
     }
 
