@@ -139,10 +139,10 @@ async function editarNotaFacultad(tp, viejoArchivo) {
         }, 
     } = tp.user.constantes();
 	const dv = app.plugins.plugins.dataview.api;
+
     const preguntar = tp.user.preguntar();
     const notaTool = tp.user.nota();
-    const tagPorNombre = tp.user.tagPorNombre;
-    const obtenerTag = tp.user.obtenerTag;
+    const dataview = tp.user.dataview();
 
     let { tArchivo, dvArchivo } = viejoArchivo;
 
@@ -157,25 +157,43 @@ async function editarNotaFacultad(tp, viejoArchivo) {
 
     let { [DATOS_NOTA.nombrePrincipal]: tituloNuevo, ...representacion } = nota.obtenerRepresentacion();
 
-    let hayReferenciasViejas = dvArchivo[DATOS_NOTA.referencias].length > 0;
+    let hayReferenciasViejas = dvArchivo[DATOS_NOTA.referencias]?.length > 0;
     let hayReferenciasNuevas = representacion[DATOS_NOTA.referencias].length > 0;
-    if (hayReferenciasViejas ^ hayReferenciasNuevas) {
-        const TEXTO_REFERENCIA = `${"#".repeat(SECCIONES.referencias.nivel)} ${SECCIONES.referencias.texto}\n---\n`
-            + `\`\`\`dataviewjs\n\tawait dv.view("${DATAVIEW.self}/${DATAVIEW.referencia.archivo}", { archivo: dv.current() });\n\`\`\``;
 
+    let hayModificarReferencias = hayReferenciasViejas ^ hayReferenciasNuevas;
+    let hayModificarEtapa = !dvArchivo[DATOS_NOTA.etapa];
+
+    if (hayModificarReferencias || hayModificarEtapa) {
         let nuevoContenido = await app.vault.read(tArchivo);
 
-        let indiceReferencias = notaTool.incluye(nuevoContenido, TEXTO_REFERENCIA);
-        let hayTopicoReferencias = indiceReferencias > 0;
+        if (hayModificarEtapa) {
+            const TEXTO_ETAPA = dataview.crearSeccion(`await dv.view("${DATAVIEW.self}/${DATAVIEW.etapa}", { etapa: dv.current()?.etapa })`);
 
-        if (hayReferenciasNuevas && !hayTopicoReferencias) {
-            // Agregar el topico
-            nuevoContenido = `${nuevoContenido}\n\n${TEXTO_REFERENCIA}`;
+            if (nuevoContenido.slice(0, 3) == "---") {
+                // mejorar como se esta buscando, usar ragex o algo asi
+                let index = nuevoContenido.slice(3).indexOf("---") + 7; // 3 del ---, 4 del ---\n
+                nuevoContenido = `${nuevoContenido.slice(0, index)}${TEXTO_ETAPA}\n${nuevoContenido.slice(index)}`;
+            } else {
+                nuevoContenido = `${TEXTO_ETAPA}\n${nuevoContenido}`;
+            }
+        }
 
-        } else if (!hayReferenciasNuevas && hayTopicoReferencias) {
-            // Sacar el topico
-            // corregir - TODO
-            nuevoContenido = nuevoContenido.slice(0, indiceReferencias - `\n\n${TEXTO_REFERENCIA}`.length);
+        if (hayModificarReferencias) {
+            const TEXTO_REFERENCIA = `${"#".repeat(SECCIONES.referencias.nivel)} ${SECCIONES.referencias.texto}\n---\n`
+                + dataview.crearSeccion(`await dv.view("${DATAVIEW.self}/${DATAVIEW.referencia.archivo}", { archivo: dv.current() });`);
+
+            let indiceReferencias = notaTool.incluye(nuevoContenido, TEXTO_REFERENCIA);
+            let hayTopicoReferencias = indiceReferencias > 0;
+
+            if (hayReferenciasNuevas && !hayTopicoReferencias) {
+                // Agregar el topico
+                nuevoContenido = `${nuevoContenido}\n\n${TEXTO_REFERENCIA}`;
+
+            } else if (!hayReferenciasNuevas && hayTopicoReferencias) {
+                // Sacar el topico
+                // corregir - TODO
+                // nuevoContenido = nuevoContenido.slice(0, indiceReferencias - `\n\n${TEXTO_REFERENCIA}`.length);
+            }
         }
 
         await app.vault.modify(tArchivo, nuevoContenido);
@@ -207,6 +225,7 @@ async function crearNotaFacultad(tp) {
     const notaTool = tp.user.nota();
     const preguntar = tp.user.preguntar();
     const error = tp.user.error();
+    const dataview = tp.user.dataview();
 
     const dv = app.plugins.plugins.dataview.api;
     const tArchivo = tp.file.find_tfile(tp.file.path(true));
@@ -292,12 +311,13 @@ async function crearNotaFacultad(tp) {
         throw error.Quit(ERROR_EXISTE_ARCHIVO);
     }
 
-    let texto = `\`\`\`dataviewjs\n\tawait dv.view("${DATAVIEW.self}/${DATAVIEW.etapa}", { etapa: dv.current()?.etapa });\n\`\`\`\n`;
+    let texto = `${dataview.crearSeccion(`await dv.view("${DATAVIEW.self}/${DATAVIEW.etapa}", { etapa: dv.current()?.etapa })`)}\n`;
     texto += `${"#".repeat(SECCIONES.definicion.nivel)} ${SECCIONES.definicion.texto}\n---\n`;
     texto += "<% tp.file.cursor() %>\n\n"
 
     if (representacion[DATOS_NOTA.referencias].length > 0) {
-        texto += await tp.file.include(`[[${TEMPLATE.seccionReferencia}]]`);
+        texto += `${"#".repeat(SECCIONES.referencias.nivel)} ${SECCIONES.referencias.texto}\n---\n`;
+        texto += dataview.crearSeccion(`await dv.view("${DATAVIEW.self}/${DATAVIEW.referencia.archivo}", { archivo: dv.current() });`);
     }
 
     return {
