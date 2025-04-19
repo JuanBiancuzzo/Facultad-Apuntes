@@ -20,6 +20,20 @@ edicion: "5"
 volumen: 
 url: 
 capitulos:
+  - numeroCapitulo: "1"
+    nombreCapitulo: Models for Integrated-Circuit Active Devices
+    numReferencia: 1048
+    editores: []
+    paginas:
+      inicio: "1"
+      final: "77"
+  - numeroCapitulo: "2"
+    nombreCapitulo: Bipolar, MOS, and BiCMOS Integrated-Circuit Technology
+    numReferencia: 1049
+    editores: []
+    paginas:
+      inicio: "78"
+      final: "168"
   - numeroCapitulo: "3"
     nombreCapitulo: Single-Transistor and Multiple-Transistor Amplifiers
     numReferencia: 452
@@ -34,6 +48,20 @@ capitulos:
     paginas:
       inicio: "251"
       final: "340"
+  - numeroCapitulo: "5"
+    nombreCapitulo: Output Stages
+    numReferencia: 1050
+    editores: []
+    paginas:
+      inicio: "341"
+      final: "399"
+  - numeroCapitulo: "6"
+    nombreCapitulo: Operational Amplifiers with Single-Ended Outputs
+    numReferencia: 1051
+    editores: []
+    paginas:
+      inicio: "400"
+      final: "489"
   - numeroCapitulo: "7"
     nombreCapitulo: Frequency Response of Integrated Circuits
     numReferencia: 454
@@ -48,6 +76,27 @@ capitulos:
     paginas:
       inicio: "553"
       final: "623"
+  - numeroCapitulo: "9"
+    nombreCapitulo: Frequency Response and Stability of Feedback Amplifiers
+    numReferencia: 1052
+    editores: []
+    paginas:
+      inicio: "624"
+      final: "703"
+  - numeroCapitulo: "10"
+    nombreCapitulo: Nonlinear Analog Circuits
+    numReferencia: 1053
+    editores: []
+    paginas:
+      inicio: "704"
+      final: "735"
+  - numeroCapitulo: "11"
+    nombreCapitulo: Noise in Integrated Circuits
+    numReferencia: 1054
+    editores: []
+    paginas:
+      inicio: "736"
+      final: "795"
   - numeroCapitulo: "12"
     nombreCapitulo: Fully Differential Operational Amplifiers
     numReferencia: 455
@@ -57,10 +106,17 @@ capitulos:
       final: "870"
 cover: Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer.jpg
 aliases:
+  - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 1: Models for Integrated-Circuit Active Devices#Capítulo 1: Models for Integrated-Circuit Active Devices"
+  - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 2: Bipolar, MOS, and BiCMOS Integrated-Circuit Technology#Capítulo 2: Bipolar, MOS, and BiCMOS Integrated-Circuit Technology"
   - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 3: Single-Transistor and Multiple-Transistor Amplifiers#Capítulo 3: Single-Transistor and Multiple-Transistor Amplifiers"
   - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 4: Current Mirrors, Active Loads, and References#Capítulo 4: Current Mirrors, Active Loads, and References"
+  - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 5: Output Stages#Capítulo 5: Output Stages"
+  - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 6: Operational Amplifiers with Single-Ended Outputs#Capítulo 6: Operational Amplifiers with Single-Ended Outputs"
   - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 7: Frequency Response of Integrated Circuits#Capítulo 7: Frequency Response of Integrated Circuits"
   - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 8: Feedback#Capítulo 8: Feedback"
+  - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 9: Frequency Response and Stability of Feedback Amplifiers#Capítulo 9: Frequency Response and Stability of Feedback Amplifiers"
+  - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 10: Nonlinear Analog Circuits#Capítulo 10: Nonlinear Analog Circuits"
+  - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 11: Noise in Integrated Circuits#Capítulo 11: Noise in Integrated Circuits"
   - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 12: Fully Differential Operational Amplifiers#Capítulo 12: Fully Differential Operational Amplifiers"
 tags:
   - referencia/libro
@@ -76,6 +132,12 @@ tags:
 	let actual = dv.current();
 	await dv.view("_scripts/dataview/coleccion/libro/capitulos", { libro: actual, capitulos: actual?.capitulos });
 ```
+## Capítulo 1: Models for Integrated-Circuit Active Devices
+---
+
+
+## Capítulo 2: Bipolar, MOS, and BiCMOS Integrated-Circuit Technology
+---
 
 
 ## Capítulo 3: Single-Transistor and Multiple-Transistor Amplifiers
@@ -107,7 +169,13 @@ Se ve [[Fuente espejo|fuente espejo]] y varias configuraciones
 También se ve [[Carga Activa Espejo (CAE)|carga activa]] y se ve como afecta al par diferencial
 
 Por último se muestra formas de crear [[Tensión|tensiones]] y [[Corriente eléctrica|corrientes]] de referencia
-* [[Bandgap voltage reference|Referencia de tensión con Bandgap]]
+* [[Bandgap voltage reference|Referencia de tensión con Bandgap]]## Capítulo 5: Output Stages
+---
+
+
+## Capítulo 6: Operational Amplifiers with Single-Ended Outputs
+---
+
 
 ## Capítulo 7: Frequency Response of Integrated Circuits
 ---
@@ -124,6 +192,18 @@ Se ve la idea de un [[Controlador closed-loop#En circuitos de amplificador|circu
 Con sus respectivos cálculos de [[Ganancia|ganancia]] total, [[Impedancia|impedancia]] de entrada y salida
 
 Se empieza a ver los [[Regulador de tensión|reguladores de tensión]], y como primer ejemplo el [[Regulador serie|regulador serie]]
+
+## Capítulo 9: Frequency Response and Stability of Feedback Amplifiers
+---
+
+
+## Capítulo 10: Nonlinear Analog Circuits
+---
+
+
+## Capítulo 11: Noise in Integrated Circuits
+---
+
 
 ## Capítulo 12: Fully Differential Operational Amplifiers
 ---

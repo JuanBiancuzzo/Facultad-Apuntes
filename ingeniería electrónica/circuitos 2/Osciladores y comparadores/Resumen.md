@@ -4,6 +4,11 @@ tags:
   - carrera/ingeniería-electrónica/circuitos-2/Osciladores-y-comparadores
 nombreResumen: Osciladores y comparadores
 capitulo: 4
+referencias:
+  - "935"
+  - "939"
+  - "1047"
+  - "1034"
 ---
 # Índice
 ---

@@ -1,9 +1,13 @@
 ---
 tags:
   - facultad/resumen
-  - carrera/ingeniería-electrónica/circuitos-2/Estabilidad-y-comensación
-nombreResumen: Estabilidad y comensación
+  - carrera/ingeniería-electrónica/circuitos-2/Estabilidad-y-compensación
+nombreResumen: Estabilidad y compensación
 capitulo: 3
+referencias:
+  - "1052"
+  - "932"
+  - "1028"
 ---
 # Índice
 ---
