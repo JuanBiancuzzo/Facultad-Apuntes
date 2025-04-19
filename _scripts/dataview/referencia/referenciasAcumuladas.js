@@ -1,5 +1,9 @@
 const { archivo } = input;
 
+await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo });
+return;
+
+
 if (!archivo) {
     dv.paragraph("No esta cargando - Recargar");
     return;

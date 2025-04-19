@@ -1,5 +1,13 @@
 let { archivo } = input;
 
+let tagsMateria = archivo.tags.filter(tag => !tag.startsWith("facultad"));
+let resumenes = dv.pages(`#facultad/resumen and (${tagsMateria.map(tag => `#${tag}`).join(" or ")})`)
+    .distinct(resumen => resumen.nombreResumen)
+    .sort(resumen => parseInt(resumen.capitulo, 10))
+    .map(resumen => resumen.nombreResumen);
+
+dv.list(resumenes);
+
 /** mostrarContenido => para materias y cursos, let { materia } = input;
 
 const PAPER = "Paper";
