@@ -4,6 +4,11 @@ tags:
   - carrera/ingeniería-electrónica/control/Linealización
 nombreResumen: Linealización
 capitulo: 2
+referencias:
+  - "879"
+  - "899"
+  - "887"
+  - "920"
 ---
 # Índice
 ---

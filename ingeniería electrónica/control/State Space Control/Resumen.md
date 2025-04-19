@@ -3,7 +3,8 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/control/State-Space-Control
 nombreResumen: State Space Control
-capitulo: 11
+capitulo: "10"
+referencias: []
 ---
 # Índice
 ---

@@ -3,8 +3,8 @@ dia: 2025-03-19
 etapa: ampliar
 referencias: 
 tags:
-  - carrera/ingeniería-electrónica/control/Linealización
   - nota/facultad
+  - carrera/ingeniería-electrónica/control/Linealización
 aliases:
   - Punto de equilibro estable
   - Punto de equilibrio inestable

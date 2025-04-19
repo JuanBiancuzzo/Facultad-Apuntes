@@ -3,7 +3,8 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/control/Control-PID
 nombreResumen: Control PID
-capitulo: 10
+capitulo: "9"
+referencias: []
 ---
 # Índice
 ---

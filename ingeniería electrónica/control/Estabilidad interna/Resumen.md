@@ -3,7 +3,9 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/control/Estabilidad-interna
 nombreResumen: Estabilidad interna
-capitulo: 4
+capitulo: 5
+referencias:
+  - "888"
 ---
 # Índice
 ---

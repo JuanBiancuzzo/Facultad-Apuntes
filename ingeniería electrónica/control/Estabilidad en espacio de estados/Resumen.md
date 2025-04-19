@@ -3,7 +3,12 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/control/Estabilidad-en-espacio-de-estados
 nombreResumen: Estabilidad en espacio de estados
-capitulo: 3
+capitulo: 4
+referencias:
+  - "886"
+  - "874"
+  - "902"
+  - "914"
 ---
 # Índice
 ---

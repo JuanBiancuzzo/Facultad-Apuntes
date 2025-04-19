@@ -3,7 +3,11 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/control/Root-Locus
 nombreResumen: Root Locus
-capitulo: 7
+capitulo: 6
+referencias:
+  - "893"
+  - "875"
+  - "916"
 ---
 # Índice
 ---

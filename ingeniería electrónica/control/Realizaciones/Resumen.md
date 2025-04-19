@@ -3,7 +3,7 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/control/Realizaciones
 nombreResumen: Realizaciones
-capitulo: 5
+capitulo: "3"
 referencias:
   - "877"
   - "899"

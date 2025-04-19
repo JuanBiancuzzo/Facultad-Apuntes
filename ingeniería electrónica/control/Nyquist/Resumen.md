@@ -3,7 +3,12 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/control/Nyquist
 nombreResumen: Nyquist
-capitulo: 8
+capitulo: "7"
+referencias:
+  - "918"
+  - "891"
+  - "904"
+  - "876"
 ---
 # Índice
 ---

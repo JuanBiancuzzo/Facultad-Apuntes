@@ -4,8 +4,8 @@ etapa: ampliar
 referencias:
   - "899"
 tags:
-  - carrera/ingeniería-electrónica/control/Linealización
   - nota/facultad
+  - carrera/ingeniería-electrónica/control/Linealización
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

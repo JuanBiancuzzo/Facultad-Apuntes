@@ -3,7 +3,8 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/control/Control-Digital
 nombreResumen: Control Digital
-capitulo: 9
+capitulo: "8"
+referencias: []
 ---
 # Índice
 ---
