@@ -15,7 +15,7 @@ Notar que definimos la transformada para $\Omega \in [-\pi, ~ \pi)$. Esto es as�
 
 ## Teorema
 ---
-Sobre el espacio $l_2(\mathbb{Z})$ el operador $x(n) \to \mathcal{F}\Set{x(n)}$ es [[Función biyectiva|biyectiva]], usando un sentido cuadrático en $L_2([-\pi, \pi)$. Además para cada $x(n) \in l_2(\mathbb{Z})$ existe su transformada de Fourier $X\left(e^{j\Omega}\right) \equiv \mathcal{F}\Set{x(n)}$  la cual es de [[Medida de una señal#Energía|energía]] finita. Así mismo para cada señal $X\left(e^{j\Omega}\right) \in L_2([-\pi, ~\pi))$ existe $x(n) \equiv \mathcal{F}^{-1}\Set{x(n)}$ también de energía finita. Además se cumple la [[Igualdad de Parseval|relación de Parseval]] $$ \sum_{k = -\infty}^{\infty} |x(n)|^2 = \frac{1}{2\pi} \int_{-\pi}^{\pi} \left| X\left(e^{j\Omega}\right) \right|^2 ~ d\Omega $$
+Sobre el espacio $l_2(\mathbb{Z})$ el operador $x(n) \to \mathcal{F}\Set{x(n)}$ es [[Función biyectiva|biyectiva]], usando un sentido cuadrático en $L_2([-\pi, \pi)$. Además para cada $x(n) \in l_2(\mathbb{Z})$ existe su transformada de Fourier $X\left(e^{j\Omega}\right) \equiv \mathcal{F}\Set{x(n)}$  la cual es de [[Energía de una señal|energía]] finita. Así mismo para cada señal $X\left(e^{j\Omega}\right) \in L_2([-\pi, ~\pi))$ existe $x(n) \equiv \mathcal{F}^{-1}\Set{x(n)}$ también de energía finita. Además se cumple la [[Igualdad de Parseval|relación de Parseval]] $$ \sum_{k = -\infty}^{\infty} |x(n)|^2 = \frac{1}{2\pi} \int_{-\pi}^{\pi} \left| X\left(e^{j\Omega}\right) \right|^2 ~ d\Omega $$
 
 ## Relación con la serie de Fourier
 ---

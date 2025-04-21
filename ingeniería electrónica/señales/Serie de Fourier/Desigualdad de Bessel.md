@@ -13,7 +13,7 @@ Esto es lo que se denomina la desigualdad de Bessel
 
 ## Desarrollo
 ---
-Considerando una [[Señal|señal]] de [[Medida de una señal#Energía|energía]] finita $L_2([0, T))$, con [[Producto interno|producto interno]] $$ \langle f(t), g(t) \rangle = \frac{1}{T} \int_0^T f(t) ~ g^*(t) ~ dt $$ y [[Base ortonormal|base ortonormal]] dada por $$ \Set{ 
+Considerando una [[Señal|señal]] de [[Energía de una señal|energía]] finita $L_2([0, T))$, con [[Producto interno|producto interno]] $$ \langle f(t), g(t) \rangle = \frac{1}{T} \int_0^T f(t) ~ g^*(t) ~ dt $$ y [[Base ortonormal|base ortonormal]] dada por $$ \Set{ 
 	\cdots,
 	\exp\left( -2 j\omega_0 t \right),
 	\exp\left( -j\omega_0 t \right),

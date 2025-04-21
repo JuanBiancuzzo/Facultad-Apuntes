@@ -4,7 +4,13 @@ tags:
   - carrera/ingeniería-electrónica/analisis-3/Serie-de-Fourier
   - nota/facultad
   - carrera/ingeniería-en-informática/analisis-3/Serie-de-Fourier
+etapa: ampliar
+referencias: []
+aliases: []
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 Para toda $f \in E_P$ ([[Conjunto de funciones periódicas]]) entonces $$ \sum_{n = -\infty}^\infty | c_n(f) |^2 = \frac{1}{P} \Vert f \Vert_2^2 $$

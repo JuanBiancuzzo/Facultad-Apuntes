@@ -11,6 +11,7 @@ aliases:
   - Proceso aleatorio discreto de tiempo continuo#Tiempo continuo con variable aleatoria discreta
   - Proceso aleatorio continuo de tiempo discreto#Tiempo discreto con variable aleatoria continua
   - Proceso aleatorio discreto de tiempo discreto#Tiempo discreto con variable aleatoria continua
+  - Proceso aleatorio
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

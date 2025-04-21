@@ -4,7 +4,14 @@ tags:
   - nota/facultad
   - carrera/ingeniería-en-informática/analisis-2/Propiedades-de-funciones
   - carrera/ingeniería-electrónica/analisis-2/Propiedades-de-funciones
+aliases:
+  - Curva de nivel
+etapa: ampliar
+referencias: []
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 El [[Conjunto|conjunto]] de nivel se puede pensar como [[Grafica de una función|la grafica de una función]] donde en vez de ser para cualquier $y \in B$ donde $B$ es el [[Codominio|codominio]], sino $y$ siendo un valor $k$ constante

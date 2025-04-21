@@ -18,7 +18,7 @@ Lo podremos escribir como $(\mathbb{V}, +, \mathbb{K}, \cdot)$ es un $\mathbb{K}
 
 ## Ejemplos
 ---
-* Sea $L_2(\mathbb{R})$ el espacio de las [[Señal|señales]] $f : \mathbb{R} \to \mathbb{C}$ tales que $$ \int_{- \infty}^{\infty} | f(t) |^2 dt < \infty $$ es decir las señales con [[Medida de una señal#Energía|energía]] finita en toda la recta
+* Sea $L_2(\mathbb{R})$ el espacio de las [[Señal|señales]] $f : \mathbb{R} \to \mathbb{C}$ tales que $$ \int_{- \infty}^{\infty} | f(t) |^2 dt < \infty $$ es decir las señales con [[Energía de una señal|energía]] finita en toda la recta
   
 * Sea $L_2(B)$ con $B \subset \mathbb{R}$ el espacio de las [[Señal|señales]] $f : B \to \mathbb{C}$ tales que $$ \int_B | f(t) |^2 dt < \infty $$
 * Sea $l^2(\mathbb{Z})$ el espacio de las señales de tiempo discreto $x[n] : \mathbb{Z} \to \mathbb{C}$ tales que $$ \sum_{n = -\infty}^{\infty} | x[n] | ^2 $$

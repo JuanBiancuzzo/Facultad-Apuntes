@@ -37,4 +37,6 @@ $$ \text{Señales} ~~~ \begin{cases}
 
 ## Medidas de señales
 ---
-![[Medida de una señal#Definición]]
+* [[Energía de una señal|Energía]]
+* [[Potencia de una señal|Potencia]]
+* [[Valor medio de una señal|Valor medio]]

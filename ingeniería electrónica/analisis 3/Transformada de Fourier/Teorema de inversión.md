@@ -5,10 +5,10 @@ tags:
   - nota/facultad
   - carrera/ingeniería-en-informática/analisis-3/Transformada-de-Fourier
 ---
-El teorema de inversión es u teorema de [[Convergencia puntual]], análogo al de [[Condición de Dirichlet para la convergencia puntual|Dirichlet]] para [[Serie de Fourier]]. 
-
 # Definición
 ---
+El teorema de inversión es un teorema de [[Convergencia puntual]], análogo al de [[Condición de Dirichlet para la convergencia puntual|Dirichlet]] para [[Serie de Fourier]]. 
+
 Sea $f : \mathbb{R} \to \mathbb{C}$ [[Seccionalmente continua]] y [[Absolutamente integrable]] en $\mathbb{R}$. Entonces, para cada $x \in \mathbb{R}$ donde existen y son finitas las derivadas laterales de $f$, se tiene la igualdad $$ \frac{1}{2\pi} vp\int_{-\infty}^{+\infty} \hat{f}(\omega)e^{i\omega x}d\omega = \frac{1}{2} \bigg[ f(x^-) + f(x^+) \bigg] $$
 
 # Observaciones
