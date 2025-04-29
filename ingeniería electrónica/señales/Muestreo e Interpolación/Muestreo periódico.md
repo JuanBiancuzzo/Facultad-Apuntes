@@ -59,5 +59,5 @@ Vemos entonces que $X_p(j \omega) = X\left( e^{j\Omega} \right) \biggm|_{\Omega=
 Y la transformada de la secuencia $x(n)$ se puede escribir como $$ X\left( e^{j\Omega} \right) = \frac{1}{T} \sum_{k = -\infty}^{\infty} X_c\left( j \left( \frac{\Omega}{T} - \frac{2\pi k}{T} \right) \right) $$
 Vemos que la transformada de Fourier de $x(n)$ es [[Función periódica|periódica]] como debe ser y que está directamente relacionada con la transformada $X_c(j\omega)$ de la [[Señal#^016a35|señal de tiempo continuo]] origina $x_c(t)$
 
-Está claro que si $X_c(j\omega) = 0, ~~ \forall |\omega| \ge W$ y $2W < \omega_s$ [[Filtro antialiasing|no tenemos aliasing]] y que $$ X\left( e^{j\Omega} \right) = \frac{1}{T} X_c\left( j \frac{\Omega}{T} \right), ~~~ \Omega \in [-\pi, ~\pi) $$
+Está claro que si [[Señal de banda limitada|señal limitada]] $X_c(j\omega) = 0, ~~ \forall |\omega| \ge W$ y $2W < \omega_s$ [[Filtro antialiasing|no tenemos aliasing]] y que $$ X\left( e^{j\Omega} \right) = \frac{1}{T} X_c\left( j \frac{\Omega}{T} \right), ~~~ \Omega \in [-\pi, ~\pi) $$
 Cuando no hay aliasing, la transformada de Fourier de la secuencia $x(n)$ es una versión escalada de frecuencia de $X_c(j\omega)$, donde el factor de escala esta dada por $$ \omega = \frac{\Omega}{T} $$

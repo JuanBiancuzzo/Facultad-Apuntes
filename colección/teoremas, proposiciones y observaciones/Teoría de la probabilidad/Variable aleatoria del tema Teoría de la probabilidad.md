@@ -29,6 +29,18 @@ nota:
     nombre: 
     path: ingeniería en informática/proba/Representación de variables aleatorias/Covarianza#^prop-5-2-6
     pathRelacionado: 
+  - numero: 7
+    nombre: 
+    path: ingeniería en informática/proba/Representación de variables aleatorias/Esperanza#^obs-5-2-7
+    pathRelacionado: 
+  - numero: 8
+    nombre: Energía de una variable aleatoria
+    path: ingeniería en informática/proba/Representación de variables aleatorias/Esperanza#^def-5-2-8
+    pathRelacionado: 
+  - numero: 9
+    nombre: Convergencia en media cuadrática
+    path: ingeniería en informática/proba/Inferencia estadística/Consistencia en media cuadrática#^def-5-2-9
+    pathRelacionado: 
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/bloqueMatematica/subtema", { subtema: dv.current() });

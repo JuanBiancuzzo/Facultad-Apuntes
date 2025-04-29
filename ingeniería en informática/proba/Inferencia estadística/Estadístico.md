@@ -4,7 +4,13 @@ tags:
   - carrera/ingeniería-en-informática/proba/Inferencia-estadística
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Inferencia-estadística
+etapa: ampliar
+referencias: []
+aliases: []
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 Un estadístico es cualquier [[Función|función]] medible $T_n = T(\underline{X})$ con valores en un espacio euclídeo de dimensión finita

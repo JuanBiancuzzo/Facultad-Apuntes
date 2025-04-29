@@ -8,7 +8,9 @@ tags:
 aliases:
   - Media
   - Valor esperado
+  - Energía de una variable aleatoria#^def-5-2-8
 etapa: ampliar
+referencias: []
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
@@ -18,6 +20,14 @@ etapa: ampliar
 Es el promedio ponderado que puede tomar una [[Variable aleatoria|variable aleatoria]] $X$. Análogo al centro de masa de un objeto
 
 Sea $X$ una variable aleatoria con [[Función de distribución|función de distribución]] $F_X(x) = \mathbb{P}(X \leq x)$, si $h(X)$ es una [[Función de variable aleatoria|función de variable aleatoria]] cualquiera de $X$, si definimos $A$ como el [[Conjunto|conjunto]] de [[Átomo|átomos]], entonces $$ E[h(X)] = \sum_{x \in A} h(x) \cdot \mathbb{P}(X = x) + \int_{x \in \mathbb{R} - A} h(x) \cdot F_{X}'(x) \cdot dx $$
+
+> [!observacion]+ Observación 5.2.7  
+> Notemos que el caso que llamaremos esperanza es cuando $h(x)$ sea la [[Función identidad|función identidad]], es decir $h(x) = x$
+^obs-5-2-7
+
+> [!definicion]+ Definición 5.2.8 (Energía de una variable aleatoria) 
+> Vamos a definir la energía de una variable aleatoria como el caso donde $h(x) = x^2$, y en general denotada como $\mathcal{E}_X = E\left[ X^2 \right]$
+^def-5-2-8
 
 ### Notación
 Se puede expresar $\mu(X) = E[X]$

@@ -7,8 +7,9 @@ tags:
   - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
 etapa: ampliar
 aliases:
-  - Energía de una variable aleatoria#^energia
   - Variable discreta degenerada#^variable-degenerada
+  - Variable degenerada#^variable-degenerada
+referencias: []
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
@@ -20,8 +21,7 @@ Sea $X$ una [[Variable aleatoria|variable aleatoria]], definimos la varianza de 
 	\\ \\
 	Var(X) =\sum_{x \in A} ( x - E[X] )^2 \cdot \mathbb{P}(X = x) + \int_{x \in \mathbb{R} - A} ( x - E[X] )^2 \cdot F_{X}'(x) \cdot dx
 \end{matrix}$$
-Tambien se puede calcular más simple $$ Var(X) = E[X^2] - E[X]^2 $$
-Donde en general al termino $E[X^2]$ como la energía de la variable $X$ ^energia
+Tambien se puede calcular más simple $$ Var(X) = E[X^2] - E[X]^2 $$ donde el termino $E[X^2]$ como la [[Esperanza#^def-5-2-8|energía de la variable]] $X$
 
 La varianza mide la dispersión de la variable en torno de su [[Esperanza|media]]. Mayor varianza implica mayor dispersión y menor varianza implica que la variable está más concentrada cerca de su media
 
