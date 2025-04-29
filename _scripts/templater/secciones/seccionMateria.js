@@ -5,21 +5,24 @@ const SALAR_EQUIVALENCIA = "sacar equivalencia";
 const CANTIDAD_MINIMA_CORRELATIVAS = 0;
 const MES_INICIO_SEGUNDO_CUATRI = 6;
 
-const SALIR = "salir";
-
 class Materia {
     constructor(tp, carrera, representacionPrevia = {}) {
         const { 
-			SIMBOLOS, TAGS: { facultad: TAGS_FACULTAD }, DATOS: { 
-				CARRERA: DATOS_CARRERA, MATERIA: DATOS_MATERIA, ARCHIVO: DATOS_ARCHIVO 
-			}  
+			SIMBOLOS, TAGS: { facultad: TAGS_FACULTAD }, DATOS: { MATERIA: DATOS_MATERIA }  
 		} = tp.user.constantes();
 		const dv = app.plugins.plugins.dataview.api;
-    	const obtenerTag = tp.user.obtenerTag;
+		const seccionResumen = tp.user.seccionResumenMateria(tp);
 
 		this.simbolos = SIMBOLOS;
 		this.config = DATOS_MATERIA;
+		this.carrera = carrera;
+		this.tags = TAGS_FACULTAD;
+    	this.obtenerTag = tp.user.obtenerTag.bind(null, tp);
+    	this.tagPorNombre = tp.user.tagPorNombre;
 
+		this.planesPosibles = () => this.carrera.obtenerPlanesDeEstudio();
+
+		this.resumenes = [];
 		this.cuatrisPosibles = [];
 		let [ mes, anio ] = tp.file.creation_date("MM-YY").split("-").map(num => parseInt(num, 10));
 		this.cuatrisPosibles.push(`${anio}C1`);
@@ -30,23 +33,13 @@ class Materia {
 			this.cuatrisPosibles.push(`${anio}C1`);
 			this.cuatrisPosibles.push(`${anio}C2`);
 		}
-		this.planesPosibles = carrera[DATOS_CARRERA.planesDeEstudio];
 
-		let tagsCarrera = obtenerTag(tp, carrera[DATOS_ARCHIVO.tags])
-			.map(tag => `#${tag}`);
-
-    	this.posiblesMateriasCorrelativas = dv.pages(`(${tagsCarrera.join(" or ")}) and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.materia}`)
-			.filter(materia => materia[this.config.nombre] != representacionPrevia[this.config.nombre])
-			.sort(materia => {
-				if (materia[this.config.equivalencia]) 
-					materia = dv.page(materia[this.config.equivalencia].path);
-				return representacionCuatri(materia[this.config.infoCuatri]);
-			});
 
 		this.nombre = representacionPrevia[this.config.nombre];
 		this.reducido = representacionPrevia[this.config.nombreReducido];
 		this.cuatri = representacionPrevia[this.config.infoCuatri];
 		this.plan = representacionPrevia[this.config.plan];
+
 		let correlativasViejas = representacionPrevia[this.config.correlativas]
 			? representacionPrevia[this.config.correlativas] : [];
 		this.correlativas = [];
@@ -55,32 +48,69 @@ class Materia {
 		}
 
 		this.equivalencia = representacionPrevia[this.config.equivalencia];
+		this.codigo = representacionPrevia[this.config.codigo];
 
-		this.tieneCodigo = carrera[DATOS_CARRERA.tieneCodigoLaMateria];
-		this.codigo = carrera[this.config.codigo];
+		if (this.planesPosibles().length == 1 && !this.plan) 
+			this.plan = this.planesPosibles().first();
 
-		if (this.planesPosibles.length == 1 && !this.plan) 
-			this.plan = this.planesPosibles.first();
+		this.posiblesMateriasCorrelativas = () => {
+			return this.carrera.obtenerMaterias()
+				.filter(materia => !materia.esIgual(this));
+		};
+
+        let padre = this;
+        this.informacion = {
+            resumenNuevo(representacion) { return seccionResumen.clase(padre, representacion); },
+        };
+
+        this.recalcularResumenes();
     }
+
+	esIgual(otraMateria) {
+		return this.nombre == otraMateria.nombre && this.plan == otraMateria.plan;
+	}
+
+	recalcularResumenes() {
+        const dv = app.plugins.plugins.dataview.api;
+        this.resumenes = [];
+
+		if (!this.reducido) {
+			return;
+		}
+
+		let tagsMateria = this.obtenerTag(this.carrera.obtenerTags())
+			.map(tag => `#${tag}/${this.tagPorNombre(this.reducido)}`);
+
+        dv.pages(`#${this.tags.self}/${this.tags.resumen} and (${tagsMateria.join(" or ")})`)
+            .forEach(resumen => this.resumenes.push(this.informacion.resumenNuevo(resumen)));
+	}
 
 	async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
 		let [ respuesta, indice ] = respuestaDada.split("-");
 
 		switch (respuesta) {
 			case this.config.nombre:
-				this.nombre = await generarPreguntas.prompt(
+				let nuevoNombre = await generarPreguntas.prompt(
 					"Nombre de la materia", 
 					generarError.Quit("No se ingresó nombre de la materia")
 				);
 
-				this.reducido = null;
+				if (nuevoNombre != this.nombre) {
+					this.nombre = nuevoNombre;
+					this.reducido = null;
+				}
 				break;
 
 			case this.config.nombreReducido:
-				this.reducido = await generarPreguntas.prompt(
+				let nuevoNombreReducido = await generarPreguntas.prompt(
 					`Nombre de la materia ${this.nombre} en su forma reducida`, 
 					generarError.Quit("No se ingresó el nombre reducido")
 				);
+
+				if (nuevoNombreReducido != this.reducido) {
+					this.reducido = nuevoNombreReducido;
+					this.recalcularResumenes();
+				} 
 				break;
 
 			case this.config.codigo:
@@ -102,7 +132,7 @@ class Materia {
 			
 			case this.config.plan:
 				this.plan = await generarPreguntas.suggester(
-					plan => `Plan ${plan}`, this.planesPosibles, 
+					plan => `Plan ${plan}`, this.planesPosibles(), 
 					"El plan de la materia",
 					generarError.Prompt("No se ingresó el plan de la materia")
 				);
@@ -112,7 +142,7 @@ class Materia {
 				this.correlativas.splice(indice, 1);
 			
 			case this.config.correlativas:
-				let correlativasDisponibles = this.posiblesMateriasCorrelativas
+				let correlativasDisponibles = this.posiblesMateriasCorrelativas()
 					.filter(materia => !this.correlativas.find(correlativa => correlativa[this.config.nombre] == materia[this.config.nombre]));
 				
 				let correlativaElegido = correlativasDisponibles.first();
@@ -150,7 +180,7 @@ class Materia {
 			valores.push(` ${this.simbolos.agregar} Nombre de la materia`)
 		}
 
-		if (this.tieneCodigo) {
+		if (this.carrera.tieneCodigoParaMateria()) {
 			opciones.push(this.config.codigo);
 			valores.push(this.codigo 
 				? ` ${this.simbolos.modificar} Modificar el código de la materia, donde era ${this.codigo}`
@@ -165,7 +195,7 @@ class Materia {
 		);
 
 		opciones.push(this.config.plan);
-		valores.push(this.planesPosibles.includes(this.plan)
+		valores.push(this.planesPosibles().includes(this.plan)
 			? ` ${this.simbolos.modificar} Modificar el plan en el que se hace la materia, donde era ${this.plan}`
 			: ` ${this.simbolos.agregar} El plan en el que se hace la materia`
 		);
@@ -181,8 +211,8 @@ class Materia {
 			valores.push(` ${this.simbolos.sacar} Eliminar la correlativa ${ultimaCorrelativa[this.config.nombre]}`);
 		}
 
-		console.log(`Hay menos correlativas anotadas que disponibles? ${this.correlativas.length < this.posiblesMateriasCorrelativas.length}`);
-		if (this.correlativas.length < this.posiblesMateriasCorrelativas.length) {
+		console.log(`Hay menos correlativas anotadas que disponibles? ${this.correlativas.length < this.posiblesMateriasCorrelativas().length}`);
+		if (this.correlativas.length < this.posiblesMateriasCorrelativas().length) {
 			opciones.push(this.config.correlativas);
 			valores.push(this.correlativas.lenght < CANTIDAD_MINIMA_CORRELATIVAS
 				? ` ${this.simbolos.agregar} Materia correlativa`
@@ -195,10 +225,10 @@ class Materia {
 
 	esValido() {
 		return this.cuatrisPosibles.includes(this.cuatri)
-			&& this.planesPosibles.includes(this.plan)
+			&& this.planesPosibles().includes(this.plan)
 			&& this.nombre && this.reducido 
 			&& this.correlativas.length >= CANTIDAD_MINIMA_CORRELATIVAS
-			&& (!this.tieneCodigo || this.codigo);
+			&& (!this.carrera.tieneCodigoParaMateria() || this.codigo);
 	}
 
 	generarRepresentacion() {
@@ -216,6 +246,36 @@ class Materia {
 
 	descripcion() {
 		return this.nombre;
+	}
+
+	obtenerTags() {
+		return [
+			`${this.tags.self}/${this.tags.materia}`,
+			...this.obtenerTag(this.carrera.obtenerTags())
+				.map(tag => `${tag}/${this.tagPorNombre(this.reducido)}`),
+		]
+	}
+
+	obtenerResumenes() {
+		return this.resumenes;
+	}
+
+    obtenerDirectorio() {
+		return `${this.carrera.obtenerDirectorio()}/${this.reducido}`;
+    }
+
+
+    eleccionMasPrecisa(path, datos) {
+        let resultado = this.resumenes.flatMap(resumen => resumen.eleccionMasPrecisa(path, datos));
+
+        if (resultado.length == 0 && path.includes(this.obtenerDirectorio())) {
+			console.log(this.obtenerDirectorio())
+			console.log(`Resumenes: ${this.resumenes.length}`)
+            resultado.push(this);
+		}
+
+        datos.numero += 1;
+        return resultado;
 	}
 }
 
@@ -235,11 +295,8 @@ async function crearMateria(tp, carrera) {
     const { 
         SECCIONES, ETAPAS, DATAVIEW: { referencia: DV_REF, carrera: DV_CARRERA, ...DATAVIEW },
 		DATOS: { ARCHIVO: DATOS_ARCHIVO, MATERIA: DATOS_MATERIA }, 
-		TAGS: { facultad: TAGS_FACULTAD }, 
     } = tp.user.constantes();
     const preguntar = tp.user.preguntar();
-    const tagPorNombre = tp.user.tagPorNombre;
-    const obtenerTag = tp.user.obtenerTag;
 
     let materia = new Materia(tp, carrera);
     await preguntar.formulario(tp, materia, "Ingresar la información de la materia");
@@ -257,22 +314,25 @@ async function crearMateria(tp, carrera) {
         metadata: {
 			[DATOS_ARCHIVO.etapa]: ETAPAS.sinEmpezar,
 			[DATOS_MATERIA.estado]: "Sin empezar",
-            [DATOS_ARCHIVO.tags]: [
-                `${TAGS_FACULTAD.self}/${TAGS_FACULTAD.materia}`,
-				...obtenerTag(tp, carrera[DATOS_ARCHIVO.tags])
-					.map(tag => `${tag}/${tagPorNombre(materia.reducido)}`),
-            ],
+            [DATOS_ARCHIVO.tags]: materia.obtenerTags(),
             ...materia.generarRepresentacion(),
         },
-        carpeta: `${carrera.file.folder}/${materia.reducido}`,
+        carpeta: materia.obtenerDirectorio(),
         titulo: nombreMateria,
         texto: texto,
     };
 }
 
+async function editarMateria(tp, archivo) {
+	let { tArchivo: tMateria, dvArchivo: materia } = archivo;
+
+	console.log(materia);
+}
+
 module.exports = (tp) => ({
     clase: (carrera, representacionPrevia = {}) => new Materia(tp, carrera, representacionPrevia),
     crear: crearMateria.bind(null, tp),
+    editar: editarMateria.bind(null, tp),
 	representacionNumericaCuatri: representacionCuatri,
 	descripcionCuatri: descripcionCuatri,
 });

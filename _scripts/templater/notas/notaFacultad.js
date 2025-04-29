@@ -1,8 +1,12 @@
 const ERROR_EXISTE_ARCHIVO = "Este archivo ya existe\nUsando archivo ya existente";
 
-const CANTIDAD_MINIMA_ALIAS = 0;
 const ELIMINAR_ALIAS = "eliminar alias";
 const MODIFICAR_ALIAS = "modificar alias";
+const ELIMINAR_DIRECCION = "eliminar direccion";
+const MODIFICAR_DIRECCION = "modificar direccion";
+
+const CANTIDAD_MINIMA_ALIAS = 0;
+const CANTIDAD_MINIMA_DIRECCIONES = 1;
 
 class NotaFacultad {
     constructor(tp, referenciasPreferidas = null, representacionPrevia = null) {
@@ -233,6 +237,12 @@ async function crearNotaFacultad(tp) {
     let carpeta = tArchivo.parent.path.split("/");
     if (carpeta.last().trim() == DIRECTORIOS.imagenes) carpeta.pop();
 
+
+    let tituloArchivo = tp.file.title.startsWith("Untitle") ? null : tp.file.title;
+    let tareaPreguntarTitulo = !tituloArchivo
+        ? preguntar.prompt(tp, "Nombre de la nota", error.Quit("No se ingresó el nombre de la nota"))
+        : Promise.resolve();
+
     let directorioActual = carpeta.join("/");
     let resumenes = dv.pages(`"${directorioActual}" and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.resumen}`);
     let materias = dv.pages(`"${directorioActual}" and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.materia}`);
@@ -299,7 +309,7 @@ async function crearNotaFacultad(tp) {
         ? resumen[DATOS_RESUMEN.bibliografia].map(num => parseInt(num, 10))
         : [];
 
-    let tituloArchivo = tp.file.title.startsWith("Untitle") ? null : tp.file.title;
+    await tareaPreguntarTitulo;
     let nota = new NotaFacultad(tp, referenciasResumen, { [DATOS_NOTA.nombrePrincipal]: tituloArchivo });
     await preguntar.formulario(tp, nota, "Crear la nota");
 

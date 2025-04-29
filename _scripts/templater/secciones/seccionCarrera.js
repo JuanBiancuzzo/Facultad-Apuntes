@@ -5,14 +5,18 @@ const DEFAULT_ESTADO = "Carrera sin empezar";
 
 const CANTIDAD_MINIMA_PLANES = 1;
 
-const SALIR = "salir";
-
 class Carrera {
     constructor(tp, representacionPrevia = {}) {
-        const { SIMBOLOS, DATOS: { CARRERA: DATOS_CARRERA }  } = tp.user.constantes();
+        const { 
+            SIMBOLOS, DATOS: { CARRERA: DATOS_CARRERA }, TAGS: { facultad: TAGS_FACULTAD } 
+        } = tp.user.constantes();
+        const seccionMateria = tp.user.seccionMateria(tp);
 
         this.simbolos = SIMBOLOS;
         this.config = DATOS_CARRERA;
+        this.tagPorNombre = tp.user.tagPorNombre;
+        this.tags = TAGS_FACULTAD;
+        this.materias = [];
 
         this.nombre = representacionPrevia[this.config.nombre];
         this.estado = representacionPrevia[this.config.estado]
@@ -21,6 +25,25 @@ class Carrera {
             ? representacionPrevia[this.config.planesDeEstudio] : [];
         this.codigo = representacionPrevia[this.config.tieneCodigoLaMateria]
             ? representacionPrevia[this.config.tieneCodigoLaMateria] : false;
+
+        let padre = this;
+        this.informacion = {
+            materiaNueva(representacion) { return seccionMateria.clase(padre, representacion); },
+        };
+
+        this.recalcularMaterias();
+    }
+
+    recalcularMaterias() {
+        const dv = app.plugins.plugins.dataview.api;
+        this.materias = [];
+
+        if (!this.nombre) {
+            return;
+        }
+
+        dv.pages(`#${this.tags.self}/${this.tags.materia} and #${this.tags.carrera}/${this.tagPorNombre(this.nombre.toLowerCase())}`)
+            .forEach(materia => this.materias.push(this.informacion.materiaNueva(materia)));
     }
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
@@ -28,10 +51,15 @@ class Carrera {
 
         switch (respuesta) {
             case this.config.nombre:
-                this.nombre = await generarPreguntas.prompt(
+                let nuevoNombre = await generarPreguntas.prompt(
                     "Nuevo nombre para la carrera", 
                     generarError.Quit("No se ingresó el nombre")
                 );
+
+                if (nuevoNombre != this.nombre) {
+                    this.nombre = nuevoNombre;
+                    this.recalcularMaterias();
+                }
                 break;
 
             case this.config.estado:
@@ -124,33 +152,66 @@ class Carrera {
     descripcion() {
         return this.nombre;
     }
+
+    obtenerDirectorio() {
+        return this.nombre.toLowerCase();
+    }
+
+    obtenerTags() {
+        return [
+            `${this.tags.self}/${this.tags.carrera}`,
+            `${this.tags.carrera}/${this.tagPorNombre(this.nombre.toLowerCase())}`,
+        ];
+    }
+
+    obtenerPlanesDeEstudio() {
+        return this.planes;
+    }
+
+    tieneCodigoParaMateria() {
+        return this.codigo;
+    }
+
+    obtenerMaterias() {
+        return this.materias;
+    }
+
+    eleccionMasPrecisa(path, datos) {
+        let resultado = this.materias.flatMap(materia => materia.eleccionMasPrecisa(path, datos));
+
+        if (resultado.length == 0 && path.includes(this.obtenerDirectorio()))
+            resultado.push(this);
+
+        datos.numero += 1;
+        return resultado;
+    }
+}
+
+async function editarCarrera(tp, archivo) {
+    let { tArchivo: tCarrera, dvArchivo: carrera } = archivo;
 }
 
 async function crearCarrera(tp) {
     const { 
-        SECCIONES, DATAVIEW: { carrera: DV_CARRERA, ...DATAVIEW },
-        TAGS: { facultad: TAGS_FACULTAD }, DATOS: { CARRERA: DATOS_CARRERA } 
+        SECCIONES, DATAVIEW: { carrera: DV_CARRERA, ...DATAVIEW }, DATOS: { CARRERA: DATOS_CARRERA }
     } = tp.user.constantes();
     const preguntar = tp.user.preguntar();
-    const tagPorNombre = tp.user.tagPorNombre;
+    const dataview = tp.user.dataview();
 
     let carrera = new Carrera(tp);
     await preguntar.formulario(tp, carrera, "Ingresar la información de la carrera");
 
     let texto = `${"#".repeat(SECCIONES.mapa.nivel)} ${SECCIONES.mapa.texto}\n---\n`;
-    texto += `\`\`\`dataviewjs\n\tawait dv.view("${DATAVIEW.self}/${DV_CARRERA.mapa}", { carrera: dv.current() });\n\`\`\`\n\n`;
+    texto += dataview.crearSeccion(`await dv.view("${DATAVIEW.self}/${DV_CARRERA.mapa}", { carrera: dv.current() });`);
     texto += `${"#".repeat(SECCIONES.materias.nivel)} ${SECCIONES.materias.texto}\n---\n`;
-    texto += `\`\`\`dataviewjs\n\tawait dv.view("${DATAVIEW.self}/${DV_CARRERA.materias}", { carrera: dv.current() });\n\`\`\`\n`;
+    texto += dataview.crearSeccion(`await dv.view("${DATAVIEW.self}/${DV_CARRERA.materias}", { carrera: dv.current() });`);
 
     return {
         metadata: {
-            [DATOS_CARRERA.tags]: [
-                `${TAGS_FACULTAD.self}/${TAGS_FACULTAD.carrera}`,
-                `${TAGS_FACULTAD.carrera}/${tagPorNombre(carrera.nombre.toLowerCase())}`,
-            ],
+            [DATOS_CARRERA.tags]: carrera.obtenerTags(),
             ...carrera.generarRepresentacion(),
         },
-        carpeta: carrera.nombre.toLowerCase(),
+        carpeta: carrera.obtenerDirectorio(),
         titulo: carrera.nombre,
         texto: texto,
     };
@@ -159,4 +220,5 @@ async function crearCarrera(tp) {
 module.exports = (tp) => ({
     clase: (representacionPrevia = {}) => new Carrera(tp, representacionPrevia),
     crear: crearCarrera.bind(null, tp),
+    editar: editarCarrera.bind(null, tp),
 });

@@ -1,21 +1,16 @@
 const AGREGAR_TEMA = "Agregar tema";
 
 class Resumen {
-    constructor(tp, tagID, padre, representacionPrevia = {}) {
+    constructor(tp, padre, representacionPrevia = {}) {
         const { 
-            SIMBOLOS, DATOS: { RESUMEN: DATOS_RESUMEN, ARCHIVO: DATOS_ARCHIVO },
+            SIMBOLOS, DATOS: { RESUMEN: DATOS_RESUMEN }, TAGS: { facultad: TAGS_FACULTAD }, 
         } = tp.user.constantes();
-	    const dv = app.plugins.plugins.dataview.api;
-    	const obtenerTag = tp.user.obtenerTag;
 
         this.simbolos = SIMBOLOS;
         this.config = DATOS_RESUMEN;
-
-		let tagsPadre = obtenerTag(tp, padre[DATOS_ARCHIVO.tags])
-			.map(tag => `#${tag}`);
-    	this.restoResumenes = dv.pages(`(${tagsPadre.join(" or ")}) and #${tagID}`)
-			.filter(resumen => resumen[this.config.numero] != representacionPrevia[this.config.numero])
-			.sort(resumen => parseInt(resumen[this.config.numero], 10));
+        this.tags = TAGS_FACULTAD;
+        this.obtenerTag = tp.user.obtenerTag.bind(null, tp);
+        this.padre = padre;
 
         this.nombre = representacionPrevia[this.config.nombre];
         this.numero = representacionPrevia[this.config.numero];
@@ -24,6 +19,15 @@ class Resumen {
 
         let bibliografiaActual = representacionPrevia[this.config.bibliografia];
         this.bibliografia = tp.user.seleccionarReferencias().clase(tp, bibliografiaActual);
+
+        this.restoResumenes = () => {
+            return this.padre.obtenerResumenes()
+                .filter(resumen => !resumen.esIgual(this));
+        }
+    }
+
+    esIgual(otroResumen) {
+        return this.nombre == otroResumen.nombre && this.numero == otroResumen.numero && this.parte == otroResumen.parte;
     }
 
     async actualizarDatos(respuesta, generarPreguntas, generarError) {
@@ -140,10 +144,6 @@ class Resumen {
         return representacion;
     }
 
-    tieneParte() {
-        return this.parte > 0;
-    }
-
     tieneParteDv(representacion = {}) {
         if (!representacion[this.config.parte]) {
             return false;
@@ -210,6 +210,31 @@ class Resumen {
 
         return colisiones;
     }
+
+    obtenerTags() {
+        return [
+            `${this.tags.self}/${this.tags.resumen}`,
+            ...this.padre.obtenerTags().map(tag => {
+                let subTagParte = "";
+                if (this.parte > 0)
+                    subTagParte = `/${this.parte}`;
+                return `${tag}/${this.tagPorNombre(this.nombre)}${subTagParte}`;
+            }),
+        ];
+    }
+
+    obtenerDirectorio() {
+        return `${this.padre.obtenerDirectorio()}/${this.nombre}`
+    }
+
+    eleccionMasPrecisa(path, datos) {
+        let resultado = [];
+        if (path.includes(this.obtenerDirectorio()))
+            resultado.push(this);
+
+        datos.numero += 1;
+        return resultado;
+	}
 }
 
 async function editarResumen(tp, viejoResumen) {
@@ -285,50 +310,31 @@ async function editarResumen(tp, viejoResumen) {
 async function crearResumen(tp, materia) {
     const { 
         SECCIONES, DATAVIEW: { referencia: DV_REF, carrera: DV_CARRERA, ...DATAVIEW },
-		DATOS: { ARCHIVO: DATOS_ARCHIVO, MATERIA: DATOS_MATERIA }, 
-        TAGS: { facultad: TAGS_FACULTAD }, 
+		DATOS: { ARCHIVO: DATOS_ARCHIVO }, 
     } = tp.user.constantes();
-	const dv = app.plugins.plugins.dataview.api;
     const preguntar = tp.user.preguntar();
-    const tagPorNombre = tp.user.tagPorNombre;
-    const obtenerTag = tp.user.obtenerTag;
+    const dataview = tp.user.dataview;
 
-    let resumen = new Resumen(tp, `${TAGS_FACULTAD.self}/${TAGS_FACULTAD.resumen}`, materia);
+    let resumen = new Resumen(tp, materia);
     await preguntar.formulario(tp, resumen, "Ingresar la información del tema de la materia");
 
     let texto = `${"#".repeat(SECCIONES.indice.nivel)} ${SECCIONES.indice.texto}\n---\n`;
-    texto += `\`\`\`dataviewjs\n\tawait dv.view("${DATAVIEW.self}/${DV_CARRERA.apuntes}", { archivo: dv.current() });\n\`\`\`\n\n`;
+    texto += dataview.crearSeccion(`await dv.view("${DATAVIEW.self}/${DV_CARRERA.apuntes}", { archivo: dv.current() });`);
 
     texto += `${"#".repeat(SECCIONES.resumen.nivel)} ${SECCIONES.resumen.texto}\n---\n%% Pendiente %%\n\n`;
 
     texto += `${"#".repeat(SECCIONES.bibliografia.nivel)} ${SECCIONES.bibliografia.texto}\n---\n`;
-    texto += `\`\`\`dataviewjs\n\tawait dv.view("${DATAVIEW.self}/${DV_REF.acumulada}", { archivo: dv.current() });\n\`\`\`\n`;
-
-    // Conseguir todas las materias que tengan como equivalente a esta materia y conseguir sus tags
-    let tagsMaterias = dv.pages(`#${TAGS_FACULTAD.self}/${TAGS_FACULTAD.materia}`)
-        .filter(cualquierMateria => cualquierMateria[DATOS_MATERIA.correlativas])
-        .filter(materiaEquivalente => materia.file.path == materiaEquivalente[DATOS_MATERIA.correlativas].path)
-        .map(materiaEquivalente => obtenerTag(tp, materiaEquivalente[DATOS_ARCHIVO.tags]));
-
-    tagsMaterias = [ ...tagsMaterias, ...obtenerTag(tp, materia[DATOS_ARCHIVO.tags]) ];
+    texto += dataview.crearSeccion(`await dv.view("${DATAVIEW.self}/${DV_REF.acumulada}", { archivo: dv.current() });`);
 
     // Identificar y modificar en el caso de que sea necesario, algun otro resumen que haya conflicto con los datos actuales
     await actualizarResumenes(tp, resumen);
 
     return {
         metadata: {
-            [DATOS_ARCHIVO.tags]: [
-                `${TAGS_FACULTAD.self}/${TAGS_FACULTAD.resumen}`,
-				...tagsMaterias.map(tag => {
-                    let subTagParte = "";
-                    if (resumen.tieneParte()) 
-                        subTagParte = `/${resumen.parte}`;
-                    return `${tag}/${tagPorNombre(resumen.nombre)}${subTagParte}`;
-                }),
-            ],
+            [DATOS_ARCHIVO.tags]: resumen.obtenerTags(),
             ...resumen.generarRepresentacion(),
         },
-        carpeta: `${materia.file.folder}/${resumen.nombre}`,
+        carpeta: resumen.obtenerDirectorio(),
         titulo: resumen.nombreArchivo(),
         texto: texto,
     };

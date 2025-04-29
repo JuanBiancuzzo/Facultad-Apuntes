@@ -1,10 +1,36 @@
 async function crearSeccionCarrera(tp) {
-    const { 
-        DIRECTORIOS, TAGS: { facultad: TAGS_FACULTAD },
-        DATOS: { ARCHIVO: DATOS_ARCHIVO, MATERIA: DATOS_MATERIA, RESUMEN: DATOS_RESUMEN },
-    } = tp.user.constantes();
+    const { DIRECTORIOS, TAGS: { facultad: TAGS_FACULTAD }, DATOS: { CARRERA: DATOS_CARRERA } } = tp.user.constantes();
 
+    const dv = app.plugins.plugins.dataview.api;
+    const tArchivo = tp.file.find_tfile(tp.file.path(true));
     const seccionCarrera = tp.user.seccionCarrera(tp);
+
+    let carpeta = tArchivo.parent.path.split("/");
+    if (carpeta.last().trim() == DIRECTORIOS.imagenes) carpeta.pop();
+
+    const carreras = dv.pages(`#${TAGS_FACULTAD.self}/${TAGS_FACULTAD.carrera}`)
+        .map(carrera => {
+            return seccionCarrera.clase({
+                [DATOS_CARRERA.nombre]: carrera.file.name,
+                ...carrera,
+            });
+        });
+
+    console.log(carreras);
+
+    let directorioActual = carpeta.join("/");
+    let cantidadChequeos = { numero: 0 };
+    let mejorAjuste = carreras.flatMap(carrera => carrera.eleccionMasPrecisa(directorioActual, cantidadChequeos));
+
+    console.log(cantidadChequeos);
+
+    console.log("Mejor ajuste:")
+    console.log(mejorAjuste);
+
+    throw Error("Upsi")
+
+    /*
+    DATOS: { ARCHIVO: DATOS_ARCHIVO, MATERIA: DATOS_MATERIA, RESUMEN: DATOS_RESUMEN },
     const seccionMateria = tp.user.seccionMateria(tp);
     const seccionResumen = tp.user.seccionResumenMateria(tp);
 
@@ -12,13 +38,6 @@ async function crearSeccionCarrera(tp) {
     const obtenerTag = tp.user.obtenerTag;
     const error = tp.user.error();
 
-    const dv = app.plugins.plugins.dataview.api;
-    const tArchivo = tp.file.find_tfile(tp.file.path(true));
-
-    let carpeta = tArchivo.parent.path.split("/");
-    if (carpeta.last().trim() == DIRECTORIOS.imagenes) carpeta.pop();
-
-    let directorioActual = carpeta.join("/");
     const carreras = dv.pages(`"${directorioActual}" and #${TAGS_FACULTAD.self}/${TAGS_FACULTAD.carrera}`);
     if (carreras.length > 1) {
         return await seccionCarrera.crear();
@@ -100,6 +119,7 @@ async function crearSeccionCarrera(tp) {
     }
 
     return await seccionCarrera.crear();
+    */
 }
 
 async function crearSeccionCurso(tp) {
