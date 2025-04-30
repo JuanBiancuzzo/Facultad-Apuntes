@@ -33,3 +33,19 @@ Para el caso de que una de las dos variables sea una [[Varianza##^variable-degen
 ## Consistencia
 ---
 Dada una [[Sucesión|sucesión]] de [[Estimador|estimadores]] $\hat{\theta}_n$ de $\theta$, decimos que $T = \hat{\theta}$ es consistente en media cuadrática si $$\lim_{n \to \infty} \text{ECM}(\hat{\theta}_n) = 0, ~\forall \theta \in \Theta $$
+
+## Relación con otros tipos de convergencia
+---
+Esta es una de las convergencias más fuertes, ya que esta implica la [[Convergencia en probabilidad|convergencia en probabilidad]], y sabemos que esta implica la [[Convergencia en distribución|convergencia en distribución]] $$ X_n \xrightarrow{M.S.} X \implies X_n \xrightarrow{p} X \implies X_n \xrightarrow{d} X $$
+> [!demostracion]- Demostración
+> Para probar que la convergencia en media cuadrática implica convergencia en probabilidad, recordemos que eligiendo un $\varepsilon > 0$ y logramos probar que $$ \lim_{n \to \infty} \mathbb{P}(|X_n - X| > \varepsilon) = 0 $$ entonces converge en probabilidad. También notemos que como sabemos que converge en media cuadrática, vamos a tener que $$ \lim_{n \to \infty} \text{ECM}(X_n,~ X) = 0 $$
+> 
+> Usando la [[Desigualdad de Tchevychev#Generalización|desigualdad de Tchevychev generalizada]] que dice $$ \mathbb{P}(|X_n - X| > \varepsilon) \le \frac{\text{ECM}(X_n,~ X)}{\varepsilon^2} $$ podemos tomar el limite para esta desigualdad $$ \begin{align} 
+>     \lim_{n \to \infty} \mathbb{P}(|X_n - X| > \varepsilon) &\le \lim_{n \to \infty} \frac{\text{ECM}(X_n,~ X)}{\varepsilon^2} \\
+>     \lim_{n \to \infty} \mathbb{P}(|X_n - X| > \varepsilon) &\le 0 \\
+>     \lim_{n \to \infty} \mathbb{P}(|X_n - X| > \varepsilon) &= 0
+> \end{align} $$
+> 
+> De esta forma probando que al converger en media cuadrática implica converger en probabilidad
+
+Notemos que no tiene ninguna implicación con la [[Convergencia en forma casi segura|convergencia en forma casi segura]] 

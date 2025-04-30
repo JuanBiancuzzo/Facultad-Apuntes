@@ -41,6 +41,18 @@ nota:
     nombre: Convergencia en media cuadrática
     path: ingeniería en informática/proba/Inferencia estadística/Consistencia en media cuadrática#^def-5-2-9
     pathRelacionado: 
+  - numero: 10
+    nombre: 
+    path: ingeniería en informática/proba/Representación de variables aleatorias/Desigualdad de Tchevychev#^obs-5-2-10
+    pathRelacionado: 
+  - numero: 11
+    nombre: Ley fuerte de los grandes números
+    path: ingeniería electrónica/estoca/Análisis de datos/Ley de los grandes números#^def-5-2-11
+    pathRelacionado: 
+  - numero: 12
+    nombre: Ley débil de los grandes números
+    path: ingeniería electrónica/estoca/Análisis de datos/Ley de los grandes números#^def-5-2-12
+    pathRelacionado: 
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/bloqueMatematica/subtema", { subtema: dv.current() });

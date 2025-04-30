@@ -6,8 +6,8 @@ tags:
   - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
   - carrera/ingeniería-electrónica/estoca/Análisis-de-datos
 etapa: ampliar
-referencias: []
-aliases: []
+referencias: 
+aliases:
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

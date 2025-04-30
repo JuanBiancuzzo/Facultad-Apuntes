@@ -6,7 +6,13 @@ tags:
   - carrera/ingeniería-en-informática/analisis-2/Propiedades-de-funciones
   - carrera/ingeniería-electrónica/analisis-2/Propiedades-de-funciones
   - carrera/ingeniería-en-informática/analisis-3/Topología-del-plano-complejo-y-límites
+etapa: ampliar
+referencias: []
+aliases: []
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 Sea $f:\mathbb{D} \to \mathbb{C}$ una [[Función|función]] definida en un [[Conjunto|conjunto]] $\mathbb{D} \subseteq \mathbb{C}$, sea $z_0 \in \mathbb{C}$ un [[Punto de acumulación|punto de acumulación]] de $\mathbb{D}$ y sea $l \in \mathbb{C}$. Entonces, se dice que "$f$ tiende a $l$ cuando $z$ tiende a $z_0$", o bien que "$l$ es límite de $f$ cuando $z$ tiende a $z_0$", sii:
