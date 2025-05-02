@@ -89,7 +89,7 @@ etapa: ampliar
 ^6e8ccc
 ## Modelo de pequeña señal
 ---
-Encontrando el [[Pequeña señal alterna|modelo de pequeña señal]], vamos a buscar la [[Ganancia|ganancia]] del amplificador $A_v$ y las [[Impedancia|impedancias]] de entrada $R_i$ y $R_o$
+Encontrando el [[Linealización Jacobiana|modelo de pequeña señal]], vamos a buscar la [[Ganancia|ganancia]] del amplificador $A_v$ y las [[Impedancia|impedancias]] de entrada $R_i$ y $R_o$
 
 %% Grafico de amplificador en señal %%
 

@@ -8,7 +8,7 @@ referencias:
   - "879"
   - "899"
   - "887"
-  - "920"
+  - "910"
 ---
 # Índice
 ---
@@ -18,7 +18,7 @@ referencias:
 
 # Resumen
 ---
-%% Pendiente %%
+La [[Linealización Jacobiana|linealización]] es una herramienta para el análisis de un [[Sistema lineal|sistema no lineal]] con todo lo que podamos aplicar aun [[sistema lineal|sistema lineal]]
 
 # Bibliografía
 ---

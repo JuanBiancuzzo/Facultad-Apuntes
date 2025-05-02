@@ -64,7 +64,7 @@ Teniendo una representación equivalente a $$ \begin{align}
     \dot{x}(t) &= f(x,~ u,~ t) \\
     y(t) &= g(x,~ u,~ t)
 \end{align} $$
-Si se [[Linealización Jacobiana|linealizan]] estas ecuaciones alrededor del [[Estado de operación|estado de operación]], se tienen las siguientes ecuaciones de estado y de salida $$ \begin{align} 
+Si se [[Linealización Jacobiana|linealizan]] estas ecuaciones alrededor de la condición de operación, se tienen las siguientes ecuaciones de estado y de salida $$ \begin{align} 
     \dot{x}(t) &= A(t) x(t) + B(t) u(t) \\
     y(t) &= C(t) x(t) + D(t) u(t)
 \end{align} $$ donde

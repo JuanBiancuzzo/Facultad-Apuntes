@@ -23,7 +23,7 @@ Este segundo transistor esta en la configuración colector común. Donde usamos 
 
 ## Modelo de pequeña señal
 ---
-Para el análisis de [[Pequeña señal alterna|pequeña señal]] podemos ver que esta configuración funciona como un único [[Transistor bipolar de juntura|TBJ]] y por lo tanto vamos a encontrar sus parámetros [[Modelo de pequeña señal del transistor bipolar de juntura#Transconductancia|transconductancia]] $g_m$, [[Modelo de pequeña señal del transistor bipolar de juntura#Conductancia de entrada o de base|resistencia de entrada]] $r_\pi$ y [[Ganancia de corriente en modo activo directo|ganancia de corriente]] $\beta_0$
+Para el análisis de [[Linealización Jacobiana|pequeña señal]] podemos ver que esta configuración funciona como un único [[Transistor bipolar de juntura|TBJ]] y por lo tanto vamos a encontrar sus parámetros [[Modelo de pequeña señal del transistor bipolar de juntura#Transconductancia|transconductancia]] $g_m$, [[Modelo de pequeña señal del transistor bipolar de juntura#Conductancia de entrada o de base|resistencia de entrada]] $r_\pi$ y [[Ganancia de corriente en modo activo directo|ganancia de corriente]] $\beta_0$
 
 %% Grafico de mps %%
 

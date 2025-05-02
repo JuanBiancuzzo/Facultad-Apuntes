@@ -20,9 +20,6 @@ Notemos que estas variables no necesariamente tienen que ser físicamente medibl
 
 Si se necesitan $n$ variables de estado para describir el sistema dado, estas se pueden considerar los $n$ componentes de un [[Vector|vector]] $x$, este se denomina vector de estado
 
-
-
-
 # Referencias
 ---
 ```dataviewjs

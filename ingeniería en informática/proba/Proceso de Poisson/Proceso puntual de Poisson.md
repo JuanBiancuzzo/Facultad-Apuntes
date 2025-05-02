@@ -6,6 +6,7 @@ tags:
   - carrera/ingeniería-en-informática/proba/Proceso-de-Poisson
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Proceso-de-Poisson
+  - carrera/ingeniería-electrónica/estoca/Introducción-a-procesos-aleatorios
 ---
 # Definición
 ---
