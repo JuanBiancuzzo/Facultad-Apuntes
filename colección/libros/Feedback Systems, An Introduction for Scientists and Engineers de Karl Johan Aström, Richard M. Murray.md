@@ -167,7 +167,7 @@ Formas de controladores feedback
 
 ## Capítulo 3: System Modeling
 ---
-
+Se ve como se puede representar un [[Sistema dinámico|sistema dinámico]] en su [[Forma canónica controlable|forma canónica controlable]]
 
 
 ## Capítulo 4: Examples

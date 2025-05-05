@@ -6,12 +6,15 @@ tags:
   - carrera/ingeniería-electrónica/proba/Variables-y-vectores-aleatorios
   - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
   - carrera/ingeniería-electrónica/estoca/Repaso-probabilidad
+  - carrera/ingeniería-electrónica/estoca/Introducción-a-procesos-aleatorios
 aliases:
   - Función de distribución para vector aleatorio#Para vector aleatoria
   - Función de distribución acumulada#Para vector aleatoria
   - CDF
   - Función de distribución conjunta#Para vector aleatorio
+  - Función de distribución para un proceso estocástico#Para un proceso estocástico
 etapa: ampliar
+referencias:
 ---
 # Definición
 ---
@@ -57,3 +60,8 @@ Notemos que cada subvector de $X$ va a ser a su vez un vector aleatorio, con su 
       \end{align} $$
 * $F_\mathbb{X_1,~ \cdots,~ X_n}(x_1,~ \cdots,~ x_n)$ es [[Función monótona|monótona]] no decreciente en cada variable
 * Dado una vector aleatorio $\mathbb{X}$, se puede calcular la [[Probabilidad|probabilidad]] de que $\mathbb{X}$ este en un intervalo $(a_1, b_1) \times (a_2, b_2)$  $$\mathbb{P}((X, Y) \in (a_1, b_1) \times (a_2, b_2)) = F_\mathbb{X}(b_1, b_2) - F_\mathbb{X}(a_1, b_2) - F_\mathbb{X}(b_1, a_2) + F_\mathbb{X}(a_1, a_2)$$
+## Para un proceso estocástico
+---
+Dado un [[Proceso estocástico|proceso]] $X(t)$, donde notemos que es una colección de variables aleatorias indexadas $$ \Set{ X(t) : t \in \mathcal{T} } $$ entonces si elegimos $n \in \mathbb{N}$ tiempos: $t_1 < t_2 < \cdots < t_n$ podemos definir un vector aleatorio $$ X(t_1,~ t_2,~ \cdots,~ t_n) = [X(t_1),~ X(t_2),~ \cdots,~ X(t_n)]^T $$ que está formado por las variables aleatorias del proceso en esos tiempos
+
+Dicho vector tendrá una función de distribución $$ F_{X(t_1,~ \cdots,~ t_n)}(x_1,~ \cdots,~ x_n) = \mathbb{P}(X(t_1) \le x_1,~ \cdots,~ X(t_n) \le x_n) $$ y esta caracteriza al vector $X(t_1,~ \cdots,~ t_n)$ porque nos dice cómo se relacionan las variables que lo componentes, relacionando los tiempos indicados

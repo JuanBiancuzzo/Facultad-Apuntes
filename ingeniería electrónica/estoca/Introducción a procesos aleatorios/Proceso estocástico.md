@@ -1,7 +1,7 @@
 ---
 dia: 2025-04-14
 etapa: ampliar
-referencias: []
+referencias: 
 tags:
   - carrera/ingeniería-electrónica/estoca/Introducción-a-procesos-aleatorios
   - nota/facultad
@@ -93,5 +93,5 @@ Como tenemos $2$ variables, podemos tener continuo o discreto para ambas
     * Con la variable aleatoria continua, $\mathcal{S} \subseteq \mathbb{R}$ ^tiempo-discreto-variable-continua
         * Como ejemplo es el [[Ruido blanco|ruido blanco]]
     * Con la variable aleatoria discreta, $\mathcal{S} \subseteq \mathbb{Z}$ ^tiempo-discreto-variable-discreta
-        * Como ejemplo es el [[Random walk|random walk]]
+        * Como ejemplo es el [[Random walk|random walk]], o el [[Proceso de Bernoulli|proceso de Bernoulli]]
 

@@ -6,6 +6,7 @@ referencias:
   - "228"
   - "229"
   - "882"
+  - "884"
 tags:
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - nota/facultad

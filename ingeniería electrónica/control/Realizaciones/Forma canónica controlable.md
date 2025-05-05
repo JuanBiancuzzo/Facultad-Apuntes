@@ -1,23 +1,38 @@
 ---
 dia: 2025-04-16
 etapa: ampliar
-referencias: 
+referencias:
+  - "877"
+  - "884"
+  - "899"
 tags:
   - nota/facultad
   - carrera/ingeniería-electrónica/control/Realizaciones
-aliases:
-  - Forma canónica controlable
+aliases: []
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
-Partiendo de una [[Transferencia del sistema#^propia|transferencia propia]] dada por el sistema de ecuación $$ \begin{cases} 
-    \displaystyle \frac{d^n }{dt^n} y + a_1 \frac{d^{n - 1}}{dt^{n - 1}} y + \cdots + a_n ~ y = u \\
-    \displaystyle y = b_1 ~ x_1 + b_2 ~ x_2 + \cdots + b_n ~ x_n + d ~ u
-\end{cases} $$
-Donde podemos graficar el [[Diagrama de bloques|diagrama de bloques]] 
+Partiendo de una [[Transferencia del sistema#^bipropia|transferencia bipropia]] de un [[Sistema lineal e invariante en el tiempo|sistema LTI]] dada por $$ \frac{d^n}{dt^n} y + a_1 \frac{d^{n - 1}}{dt^{n - 1}} y + \cdots + a_n y = u $$ donde podemos definir las [[Variable de estado|variables de estado]] de la siguiente forma $$ x = \begin{bmatrix} 
+    x_1 \\ x_2 \\ \vdots \\ x_{n - 1} \\ x_n
+\end{bmatrix} = \begin{bmatrix} 
+    \displaystyle \frac{d^{m-1}}{dt^{n-1}} y \\
+    \displaystyle \frac{d^{m-2}}{dt^{n-2}} y \\
+    \vdots \\
+    \displaystyle \frac{d}{dt} y \\
+    \displaystyle  y
+\end{bmatrix} $$ por lo que las ecuaciones del espacio de estado son $$ \frac{d}{dt}x = \begin{bmatrix} 
+    -a_1 & -a_2 & \cdots & -a_{n - 1} & -a_n \\
+    1 & 0 & \cdots & 0 & 0 \\
+    0 & 1 & \cdots & 0 & 0 \\
+    \vdots & \vdots & \ddots & \vdots & \vdots \\
+    0 & 0 & \cdots & 1 & 0 \\
+\end{bmatrix} x + \begin{bmatrix} 1 \\ 0 \\ 0 \\ \vdots \\ 0 \end{bmatrix} u, ~~~~~ y = x_n $$
+Generalizando lo visto anteriormente, tenemos el sistema $$ \frac{d^n}{dt^n} y + a_1 \frac{d^{n - 1}}{dt^{n - 1}} y + \cdots + a_n y = b_0 \frac{d^n}{dt^n} u + b_1 \frac{d^{n - 1}}{dt^{n - 1}} u + \cdots + b_n u $$
+
+Podemos graficar el [[Diagrama de bloques|diagrama de bloques]] 
 
 ```tikz
 \usetikzlibrary{math}
@@ -154,7 +169,7 @@ Donde podemos graficar el [[Diagrama de bloques|diagrama de bloques]]
 \end{document}
 ```
 
-Podemos entonces encontrar la [[Sistema dinámico#^matriz-estados|matriz de estados]] $A$, [[Sistema dinámico#^matriz-entrada|matriz de entrada]] $B$, [[Sistema dinámico#^matriz-salida|matriz de salida]] $C$ y la [[Sistema dinámico#^matriz-directa|matriz de transmisión directa]] $D$ $$ \begin{align}
+Por lo tanto encontrar la [[Sistema dinámico#^matriz-estados|matriz de estados]] $A$, [[Sistema dinámico#^matriz-entrada|matriz de entrada]] $B$, [[Sistema dinámico#^matriz-salida|matriz de salida]] $C$ y la [[Sistema dinámico#^matriz-directa|matriz de transmisión directa]] $D$ $$ \begin{align}
     \dot{x}(t) &= \underbrace{\begin{bmatrix} 
         -a_1 & -a_2 & \cdots & -a_{n - 1} & -a_n \\
         1 & 0 & \cdots & 0 & 0 \\
@@ -165,7 +180,13 @@ Podemos entonces encontrar la [[Sistema dinámico#^matriz-estados|matriz de esta
         1 \\ 0 \\ 0 \\ \vdots \\ 0
     \end{bmatrix}}_{\displaystyle B} u \\
     y &= \underbrace{\begin{bmatrix} 
-        b_1 & b_2 & \cdots b_n
+        b_1 & b_2 & \cdots & b_n
     \end{bmatrix}}_{\displaystyle C} ~ x + \underbrace{d}_{\displaystyle D} ~u
 \end{align} $$
-Esta es la forma canónica, también conocida como la forma canónica controlable
+Algo a notar es que si obtenemos la [[Transferencia del sistema|transferencia]] del sistema, dada por la expresión $$ C(s) = C (s\mathbb{I} - A)^{-1} B + D = \frac{b_1 s^{n-1} + b_2 s^{n-2} + \cdots + b_{n-1} s + b_n}{s^n + a_1 s^{n-1} + \cdots + a_{n-1} s + a_n} + d = \frac{b(s)}{a(s)} + d $$ por lo que si obtenemos la transferencia, donde tenemos una parte dada por una transferencia propia $\frac{b(s)}{a(s)}$ y una dada por una transferencia bipropia $d$, tenemos que los coeficientes del [[Función polinómica|polinomio]] $b(s)$ son los componentes de $C$ y los coeficientes del polinomio del denominador $a(s)$, con el signo opuesto, aparecen en la primera fila de la matriz $A$
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

@@ -19,7 +19,7 @@ referencias:
 
 # Resumen
 ---
-%% Pendiente %%
+
 
 # Bibliografía
 ---
