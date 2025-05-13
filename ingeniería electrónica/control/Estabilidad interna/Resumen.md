@@ -5,8 +5,8 @@ tags:
 nombreResumen: Estabilidad interna
 capitulo: 5
 referencias:
-  - "888"
   - "876"
+  - "893"
 ---
 # Índice
 ---

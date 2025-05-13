@@ -172,10 +172,10 @@ aliases:
 referencias:
   - "701"
 ---
-    ```dataviewjs
+```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
 ```
-# Definición
+# Definición 
 ---
 > Se basa en la estructura de un [[Árbol binario|árbol binario]] pero donde además establece un [[Relación de orden|orden]] la cual impone una invariante
 > 

@@ -9,7 +9,7 @@ referencias:
   - "875"
   - "916"
 ---
-# Índice
+¿# Índice
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });

@@ -6,6 +6,9 @@ tags:
   - carrera/ingeniería-electrónica/analisis-2/Nomenclatura
   - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
 etapa: ampliar
+referencias: []
+aliases:
+  - Teorema de Cauchy-Schwarz
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

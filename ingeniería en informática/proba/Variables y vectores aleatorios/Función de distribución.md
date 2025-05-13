@@ -13,8 +13,10 @@ aliases:
   - CDF
   - Función de distribución conjunta#Para vector aleatorio
   - Función de distribución para un proceso estocástico#Para un proceso estocástico
+  - Distribución finito dimensional#^FIDI
+  - FIDI#^FIDI
 etapa: ampliar
-referencias:
+referencias: []
 ---
 # Definición
 ---
@@ -64,4 +66,16 @@ Notemos que cada subvector de $X$ va a ser a su vez un vector aleatorio, con su 
 ---
 Dado un [[Proceso estocástico|proceso]] $X(t)$, donde notemos que es una colección de variables aleatorias indexadas $$ \Set{ X(t) : t \in \mathcal{T} } $$ entonces si elegimos $n \in \mathbb{N}$ tiempos: $t_1 < t_2 < \cdots < t_n$ podemos definir un vector aleatorio $$ X(t_1,~ t_2,~ \cdots,~ t_n) = [X(t_1),~ X(t_2),~ \cdots,~ X(t_n)]^T $$ que está formado por las variables aleatorias del proceso en esos tiempos
 
-Dicho vector tendrá una función de distribución $$ F_{X(t_1,~ \cdots,~ t_n)}(x_1,~ \cdots,~ x_n) = \mathbb{P}(X(t_1) \le x_1,~ \cdots,~ X(t_n) \le x_n) $$ y esta caracteriza al vector $X(t_1,~ \cdots,~ t_n)$ porque nos dice cómo se relacionan las variables que lo componentes, relacionando los tiempos indicados
+Dicho vector tendrá una función de distribución $$ F_{X(t_1,~ \cdots,~ t_n)}(x_1,~ \cdots,~ x_n) = \mathbb{P}(X(t_1) \le x_1,~ \cdots,~ X(t_n) \le x_n) $$ y esta caracteriza al vector $X(t_1,~ \cdots,~ t_n)$ porque nos dice cómo se relacionan las variables que lo componentes, relacionando los tiempos indicados. Diremos que es una distribución finito dimensional (FIDI) de orden $n$ del proceso, porque involucra a $n$ tiempos ^FIDI
+
+Siempre que se tenga una FIDI de orden $n$ se pueden obtener las FIDI de ordenes inferiores [[Función de distribución marginal|marginalizando]], pero para tener toda la información posible, tenemos que definir para todo $n \in \mathbb{N}$, para todo $(t_1,~ \cdots,~ t_n) \in \mathcal{T}^n$ con $t_1 < t_2 < \cdots < t_n$ debemos conocer las funciones $$ F_{X(t_1,~ \cdots,~ t_n)}(x_1,~ \cdots,~ x_n) = \mathbb{P}(X(t_1) \le x_1,~ \cdots,~ X(t_n) \le x_n) $$ donde este [[Conjunto|conjunto]] es el [[Conjunto de partes|conjunto partes]] de $\mathcal{T}$, el cual es muy grande
+
+
+> [!teorema]+ Teorema 6.2.1 (Teorema de consistencia de Kolmogorov) 
+> Dado un [[Conjunto|conjunto]] $\mathcal{T}$, sea una familia de funciones de distribución $$ \mathcal{F} = \Set{ F_{t_1,~ \cdots,~ t_n} : t_1 < \cdots < t_n,~ n \ge 1,~ t_i \in \mathcal{T} } $$ 
+> Tal que
+>  * Para cada $n \ge 1$, la función $F_{t_1,~ \cdots,~ t_n} : \mathbb{R}^n \to [0,~ 1]$ es una función de distribución ($F_X(x)$ es [[Función monótona|monótona]] no decreciente, $F_X(x)$ es continua por derecha, $\lim_{x \to -\infty} F_X(x) = 0$  y $\lim_{x \to \infty} F_X(x) = 1$) 
+>  * Es consistente, es decir, si elijo $\set{ t_{k_1},~ \cdots,~ t_{k_m} } \subseteq \set{t_1,~ \cdots,~ t_n}$, entonces: $F_{t_{k_1},~ \cdots,~ t_{k_m}}$ es la [[Función de distribución marginal|marginal]] de $F_{t_1,~ \cdots,~ t_n}$ correspondientes a los indices $k_1,~ \cdots,~ k_m$
+> 
+> Entonces existe un [[Proceso estocástico|proceso estocástico]] con los tiempos $\mathcal{T}$ que tiene a $\mathcal{F}$ como su conjunto de FIDIs
+^teo-6-2-1

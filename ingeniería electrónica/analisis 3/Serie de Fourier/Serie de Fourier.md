@@ -5,14 +5,21 @@ tags:
   - carrera/ingeniería-electrónica/señales/Serie-de-Fourier
   - nota/facultad
   - carrera/ingeniería-en-informática/analisis-3/Serie-de-Fourier
+etapa: ampliar
+referencias: []
+aliases:
+  - Suma de Fourier#^suma-fourier
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 La [[Serie]] de Fourier de $f \in E_P$ ([[Conjunto de funciones periódicas|conjunto de funciones periódicas]] de [[Función periódica#^periodo|periodo]] $P$) es la serie $$ f(t) = \sum_{n = -\infty}^\infty c_n(f) \cdot \exp\left( i \frac{2 \pi n}{P}  t\right) $$ donde los coeficientes $c_n(f)$ son los [[Coeficientes de Fourier|coeficientes de Fourier]]. 
 
 Donde esta igualdad se da cuando la [[Señal|señal]] $f(t)$ tiene [[Energía de una señal|energía]] finita, y para variaciones acotadas, se cumple la [[Condición de Dirichlet para la convergencia puntual|condición de Dirichlet para convergencia puntual]]
 
-Cada proyección $f_m = \sum_{n = - m}^m c_n(f) \cdot e_n$ se denomina suma de Fourier.
+Cada proyección $f_m = \sum_{n = - m}^m c_n(f) \cdot e_n$ se denomina suma de Fourier ^suma-fourier
 
 ## Caso de señal real
 ---
