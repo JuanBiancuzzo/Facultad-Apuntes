@@ -4,13 +4,11 @@ const PREFERIDA = "preferida";
 const AGREGAR = "agregar";
 
 class SeleccionReferencias {
-	constructor(tp, numReferenciasPrevias = null, numOpcionesPreferidas = null) {
-        const { SIMBOLOS } = tp.user.constantes();
-        const referencia = tp.user.referencia();
-        const dv = app.plugins.plugins.dataview.api;
+	constructor(constantes, referencia, obtenerReferencias, dv, seguidorReferencias, numReferenciasPrevias = null, numOpcionesPreferidas = null) {
+        const { SIMBOLOS } = constantes;
 
         this.simbolos = SIMBOLOS;
-		this.referencias = referencia.obtenerReferencias(tp, dv);
+		this.referencias = obtenerReferencias(dv);
 
 		if (!numReferenciasPrevias) numReferenciasPrevias = [];
         numReferenciasPrevias = numReferenciasPrevias.map(num => parseInt(num, 10));
@@ -30,7 +28,7 @@ class SeleccionReferencias {
             elegida: numReferenciasPrevias.includes(num),
         }));
 
-        let seguidorRef = tp.user.seguidorReferencias(tp).new(dv);
+        let seguidorRef = seguidorReferencias.new(dv);
         this.informacion = {
             async crearReferencia() { return await referencia.generar(tp, seguidorRef); },
         };
@@ -106,6 +104,14 @@ class SeleccionReferencias {
     }
 }
 
-module.exports = () => ({
-    clase: (tp, numReferenciasPrevias = null, numOpcionesPreferidas = null) => new SeleccionReferencias(tp, numReferenciasPrevias, numOpcionesPreferidas),
+module.exports = (tp) => ({
+    clase: SeleccionReferencias.bind(
+        null, 
+        tp.user.constantes(), 
+        tp.user.referencia(), 
+        tp.user.referencia().obtenerReferencias.bind(null, tp), 
+        app.plugins.plugins.dataview.api, 
+        tp.user.seguidorReferencias(tp)
+    ),
+    // clase: (tp, numReferenciasPrevias = null, numOpcionesPreferidas = null) => new SeleccionReferencias(tp, numReferenciasPrevias, numOpcionesPreferidas),
 });

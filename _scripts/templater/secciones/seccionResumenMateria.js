@@ -1,16 +1,16 @@
 const AGREGAR_TEMA = "Agregar tema";
 
 class Resumen {
-    constructor(tp, padre, representacionPrevia = {}) {
+    constructor(constantes, obtenerTag, seleccionarReferencias, representacionPrevia = {}) {
         const { 
             SIMBOLOS, DATOS: { RESUMEN: DATOS_RESUMEN }, TAGS: { facultad: TAGS_FACULTAD }, 
-        } = tp.user.constantes();
+        } = constantes;
 
         this.simbolos = SIMBOLOS;
         this.config = DATOS_RESUMEN;
         this.tags = TAGS_FACULTAD;
-        this.obtenerTag = tp.user.obtenerTag.bind(null, tp);
-        this.padre = padre;
+        this.obtenerTag = obtenerTag;
+        this.padre = null;
 
         this.nombre = representacionPrevia[this.config.nombre];
         this.numero = representacionPrevia[this.config.numero];
@@ -18,12 +18,16 @@ class Resumen {
             ? representacionPrevia[this.config.parte] : 0;
 
         let bibliografiaActual = representacionPrevia[this.config.bibliografia];
-        this.bibliografia = tp.user.seleccionarReferencias().clase(tp, bibliografiaActual);
+        this.bibliografia = new seleccionarReferencias(bibliografiaActual);
 
         this.restoResumenes = () => {
             return this.padre.obtenerResumenes()
                 .filter(resumen => !resumen.esIgual(this));
         }
+    }
+
+    agregarPadre(padre) {
+        this.padre = padre;
     }
 
     esIgual(otroResumen) {
@@ -315,7 +319,7 @@ async function crearResumen(tp, materia) {
     const preguntar = tp.user.preguntar();
     const dataview = tp.user.dataview;
 
-    let resumen = new Resumen(tp, materia);
+    let resumen = new Resumen(tp.user.constantes(), tp.user.obtenerTag.bind(null, tp), materia);
     await preguntar.formulario(tp, resumen, "Ingresar la información del tema de la materia");
 
     let texto = `${"#".repeat(SECCIONES.indice.nivel)} ${SECCIONES.indice.texto}\n---\n`;
@@ -406,7 +410,7 @@ async function cambiarArchivoConTag(tp, tagsViejos, tagsNuevos) {
 }
 
 module.exports = (tp) => ({
-    clase: (materia, representacionPrevia = {}) => new Resumen(tp, materia, representacionPrevia),
+    clase: Resumen.bind(null, tp.user.constantes(), tp.user.obtenerTag.bind(null, tp), tp.user.seleccionarReferencias(tp).clase),
     crear: crearResumen.bind(null, tp),
     editar: editarResumen.bind(null, tp),
 });

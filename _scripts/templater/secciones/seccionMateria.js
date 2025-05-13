@@ -6,30 +6,28 @@ const CANTIDAD_MINIMA_CORRELATIVAS = 0;
 const MES_INICIO_SEGUNDO_CUATRI = 6;
 
 class Materia {
-    constructor(tp, carrera, representacionPrevia = {}) {
+    constructor(constantes, obtenerTag, tagPorNombre, creation_date, representacionPrevia = {}) {
         const { 
 			SIMBOLOS, TAGS: { facultad: TAGS_FACULTAD }, DATOS: { MATERIA: DATOS_MATERIA }  
-		} = tp.user.constantes();
-		const dv = app.plugins.plugins.dataview.api;
-		const seccionResumen = tp.user.seccionResumenMateria(tp);
+		} = constantes;
 
 		this.simbolos = SIMBOLOS;
 		this.config = DATOS_MATERIA;
-		this.carrera = carrera;
+		this.carrera = null;
 		this.tags = TAGS_FACULTAD;
-    	this.obtenerTag = tp.user.obtenerTag.bind(null, tp);
-    	this.tagPorNombre = tp.user.tagPorNombre;
+    	this.obtenerTag = obtenerTag;
+    	this.tagPorNombre = tagPorNombre;
 
 		this.planesPosibles = () => this.carrera.obtenerPlanesDeEstudio();
 
 		this.resumenes = [];
 		this.cuatrisPosibles = [];
-		let [ mes, anio ] = tp.file.creation_date("MM-YY").split("-").map(num => parseInt(num, 10));
+		let [ mes, anio ] = creation_date("MM-YY").split("-").map(num => parseInt(num, 10));
 		this.cuatrisPosibles.push(`${anio}C1`);
 		if (mes >= MES_INICIO_SEGUNDO_CUATRI)
 			this.cuatrisPosibles.push(`${anio}C2`);
 
-		for (anio = tp.file.creation_date("YY") - 1; anio >= 19; anio--) {
+		for (anio = creation_date("YY") - 1; anio >= 19; anio--) {
 			this.cuatrisPosibles.push(`${anio}C1`);
 			this.cuatrisPosibles.push(`${anio}C2`);
 		}
@@ -42,47 +40,28 @@ class Materia {
 
 		let correlativasViejas = representacionPrevia[this.config.correlativas]
 			? representacionPrevia[this.config.correlativas] : [];
+
+		
 		this.correlativas = [];
 		for (let correlativaVieja of correlativasViejas) {
-			this.correlativas.push(dv.page(correlativaVieja.path));
+			// this.correlativas.push(dv.page(correlativaVieja.path));
 		}
 
 		this.equivalencia = representacionPrevia[this.config.equivalencia];
 		this.codigo = representacionPrevia[this.config.codigo];
 
-		if (this.planesPosibles().length == 1 && !this.plan) 
-			this.plan = this.planesPosibles().first();
-
 		this.posiblesMateriasCorrelativas = () => {
 			return this.carrera.obtenerMaterias()
 				.filter(materia => !materia.esIgual(this));
 		};
-
-        let padre = this;
-        this.informacion = {
-            resumenNuevo(representacion) { return seccionResumen.clase(padre, representacion); },
-        };
-
-        this.recalcularResumenes();
     }
+
+	agregarCarrera(carrera) {
+		this.carrera = carrera;
+	}
 
 	esIgual(otraMateria) {
 		return this.nombre == otraMateria.nombre && this.plan == otraMateria.plan;
-	}
-
-	recalcularResumenes() {
-        const dv = app.plugins.plugins.dataview.api;
-        this.resumenes = [];
-
-		if (!this.reducido) {
-			return;
-		}
-
-		let tagsMateria = this.obtenerTag(this.carrera.obtenerTags())
-			.map(tag => `#${tag}/${this.tagPorNombre(this.reducido)}`);
-
-        dv.pages(`#${this.tags.self}/${this.tags.resumen} and (${tagsMateria.join(" or ")})`)
-            .forEach(resumen => this.resumenes.push(this.informacion.resumenNuevo(resumen)));
 	}
 
 	async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
@@ -163,6 +142,9 @@ class Materia {
 	}
 
 	generarPreguntas() {
+		if (this.planesPosibles().length == 1 && !this.plan) 
+			this.plan = this.planesPosibles().first();
+
 		let valores = [];
 		let opciones = [];
 
@@ -298,7 +280,8 @@ async function crearMateria(tp, carrera) {
     } = tp.user.constantes();
     const preguntar = tp.user.preguntar();
 
-    let materia = new Materia(tp, carrera);
+    let materia = new Materia(tp.user.constantes(), tp.user.obtenerTag.bind(null, tp), tp.user.tagPorNombre, tp.file.creation_date);
+	materia.agregarCarrera(carrera);
     await preguntar.formulario(tp, materia, "Ingresar la información de la materia");
 
 	let nombreMateria = materia.nombre
@@ -330,7 +313,7 @@ async function editarMateria(tp, archivo) {
 }
 
 module.exports = (tp) => ({
-    clase: (carrera, representacionPrevia = {}) => new Materia(tp, carrera, representacionPrevia),
+    clase: Materia.bind(null, tp.user.constantes(), tp.user.obtenerTag.bind(null, tp), tp.file.creation_date, tp.user.tagPorNombre),
     crear: crearMateria.bind(null, tp),
     editar: editarMateria.bind(null, tp),
 	representacionNumericaCuatri: representacionCuatri,

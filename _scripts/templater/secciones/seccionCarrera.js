@@ -6,15 +6,14 @@ const DEFAULT_ESTADO = "Carrera sin empezar";
 const CANTIDAD_MINIMA_PLANES = 1;
 
 class Carrera {
-    constructor(tp, representacionPrevia = {}) {
+    constructor(constantes, tagPorNombre, representacionPrevia = {}) {
         const { 
             SIMBOLOS, DATOS: { CARRERA: DATOS_CARRERA }, TAGS: { facultad: TAGS_FACULTAD } 
-        } = tp.user.constantes();
-        const seccionMateria = tp.user.seccionMateria(tp);
+        } = constantes;
 
         this.simbolos = SIMBOLOS;
         this.config = DATOS_CARRERA;
-        this.tagPorNombre = tp.user.tagPorNombre;
+        this.tagPorNombre = tagPorNombre;
         this.tags = TAGS_FACULTAD;
         this.materias = [];
 
@@ -25,25 +24,10 @@ class Carrera {
             ? representacionPrevia[this.config.planesDeEstudio] : [];
         this.codigo = representacionPrevia[this.config.tieneCodigoLaMateria]
             ? representacionPrevia[this.config.tieneCodigoLaMateria] : false;
-
-        let padre = this;
-        this.informacion = {
-            materiaNueva(representacion) { return seccionMateria.clase(padre, representacion); },
-        };
-
-        this.recalcularMaterias();
     }
 
-    recalcularMaterias() {
-        const dv = app.plugins.plugins.dataview.api;
-        this.materias = [];
-
-        if (!this.nombre) {
-            return;
-        }
-
-        dv.pages(`#${this.tags.self}/${this.tags.materia} and #${this.tags.carrera}/${this.tagPorNombre(this.nombre.toLowerCase())}`)
-            .forEach(materia => this.materias.push(this.informacion.materiaNueva(materia)));
+    agregarMaterias(...materias) {
+        this.materias = this.materias.concat(materias);
     }
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
@@ -58,7 +42,6 @@ class Carrera {
 
                 if (nuevoNombre != this.nombre) {
                     this.nombre = nuevoNombre;
-                    this.recalcularMaterias();
                 }
                 break;
 
@@ -198,7 +181,7 @@ async function crearCarrera(tp) {
     const preguntar = tp.user.preguntar();
     const dataview = tp.user.dataview();
 
-    let carrera = new Carrera(tp);
+    let carrera = new Carrera(tp.user.constantes(), tp.user.tagPorNombre);
     await preguntar.formulario(tp, carrera, "Ingresar la información de la carrera");
 
     let texto = `${"#".repeat(SECCIONES.mapa.nivel)} ${SECCIONES.mapa.texto}\n---\n`;
@@ -218,7 +201,7 @@ async function crearCarrera(tp) {
 }
 
 module.exports = (tp) => ({
-    clase: (representacionPrevia = {}) => new Carrera(tp, representacionPrevia),
+    clase: Carrera.bind(null, tp.user.constantes(), tp.user.tagPorNombre),
     crear: crearCarrera.bind(null, tp),
     editar: editarCarrera.bind(null, tp),
 });

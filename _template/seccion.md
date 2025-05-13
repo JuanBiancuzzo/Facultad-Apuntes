@@ -1,5 +1,6 @@
 <%*
     const error = tp.user.error();
+    const seccionFacultad = tp.user.seccionGeneralFacultad(tp);
     const seccion = tp.user.seccion(tp);
     const seccionInvestigacion = tp.user.seccionInvestigacion(tp);
     const { CREAR } = tp.user.constantes();
@@ -8,7 +9,7 @@
     try {
         let seccionCrear;
         switch (tp.file.title) {
-            case CREAR.carrera: seccionCrear = seccion.carrera; break;
+            case CREAR.carrera: seccionCrear = seccionFacultad.elegirYCrear; break;
             case CREAR.curso: seccionCrear = seccion.curso; break;
             case CREAR.investigacion: seccionCrear = seccionInvestigacion.seccion; break;
             case CREAR.proyecto: seccionCrear = seccion.proyecto; break;
