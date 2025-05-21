@@ -22,4 +22,4 @@ Para ver la definición de un vector al cuadrado ver [[Potencias de un vector|po
 ## Para probabilidad
 ---
 Sean $X$ e $Y$ dos [[Variable aleatoria|variables aleatorias]]. Luego, $$ E^2[X~Y] \le E\left[ X^2 \right] ~ E\left[ Y^2 \right] $$
-Una formulación equivalente considera los [[Covarianza|momentos centrados]], resultando $$ Cov^2(X,~ Y) \le \sigma_X^2 ~ \sigma_Y^2 $$
+Una formulación equivalente considera los [[Covarianza cruzada|momentos centrados]], resultando $$ Cov^2(X,~ Y) \le \sigma_X^2 ~ \sigma_Y^2 $$

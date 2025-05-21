@@ -20,7 +20,7 @@ $$ X \sim M(n, p_1, p_2, \cdots, p_k) $$
 ---
 * El [[Rango de un vector|Rango]] de $X$ es $R_X = \set{ x \in \Set{0, 1, 2, \cdots, n}^k, \displaystyle\sum_{i = 1}^{k} x_i = n}$.
 * $\displaystyle{\sum_{i = 1}^{k} p_i = 1}, n \in \mathbb{N}$.
-* La [[Esperanza]] es $E[X_i] = n \cdot p_i$, la [[Varianza]] es $Var(X_i) = n \cdot p_i \cdot (1 - p_1)$ y su [[Covarianza]] es $Cov(X_i, X_j) = \begin{cases} Var(X_i) & i = j \\ -n \cdot p_i \cdot p_j & i \ne j \end{cases}$.
+* La [[Esperanza]] es $E[X_i] = n \cdot p_i$, la [[Varianza]] es $Var(X_i) = n \cdot p_i \cdot (1 - p_1)$ y su [[Covarianza cruzada|covarianza]] es $Cov(X_i, X_j) = \begin{cases} Var(X_i) & i = j \\ -n \cdot p_i \cdot p_j & i \ne j \end{cases}$.
 
 # Observaciones
 ---

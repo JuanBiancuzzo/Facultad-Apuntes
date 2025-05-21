@@ -17,11 +17,11 @@ tags:
 Un [[Proceso estocástico|proceso]] $X(t)$ es estacionario en sentido amplio si $$ \begin{align} 
     E[X(t)] &= \mu_X(t) = \mu_X \\
     R_X(t,~ t + \tau) &= E[X(t) ~ X(t + \tau)] = h(\tau) = R_X(\tau)
-\end{align} $$ donde $E[\cdot]$ es la [[Esperanza|esperanza]] y $R_X$ es la [[Covarianza#^def-5-3-3|matriz de autocorrelación]]
+\end{align} $$ donde $E[\cdot]$ es la [[Esperanza|esperanza]] y $R_X$ es la [[Correlación cruzada#^def-5-3-3|matriz de autocorrelación]]
 
 ## Propiedades
 ---
-De estas se puede determinar que la [[Covarianza#^def-5-3-4|matriz de autocovarianza]] es [[Función|función]] sólo de $\tau$ $$ C_X(t,~ t + \tau) = R_X(t,~ t + \tau) - \mu_X(t) ~ \mu_X(t + \tau) = R_X(\tau) - \mu_X^2 = C_X(\tau) $$
+De estas se puede determinar que la [[Covarianza cruzada#^def-5-3-4|matriz de autocovarianza]] es [[Función|función]] sólo de $\tau$ $$ C_X(t,~ t + \tau) = R_X(t,~ t + \tau) - \mu_X(t) ~ \mu_X(t + \tau) = R_X(\tau) - \mu_X^2 = C_X(\tau) $$
 También que la [[Varianza|varianza]] del proceso es constante $$ \sigma_X^2(t) = C_X(t,~ t) = C_X(0) = R_X(0) - \mu_X^2 $$
 Tanto $R_X(\tau)$ y $C_X(\tau)$ ambas son no negativas en $\tau = 0$ $$ \begin{array}{c} 
     R_X(0) = E\left[ |X(t)|^2 \right] \ge 0, && C_X(0) = Var(X(t)) \ge 0

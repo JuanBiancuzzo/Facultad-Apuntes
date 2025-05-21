@@ -26,7 +26,7 @@ Vamos a probar que la media muestral [[Consistencia en media cuadrática#^def-5-
 >     Var(\hat{\mu}(n)) &= Var\left( \frac{1}{n} \sum_{i = 1}^{n} X_i \right) \\
 >     &= \frac{1}{n^2} \sum_{i = 1}^{n} Var(X_i) \\
 >     &= \frac{\sigma_X^2}{n}
-> \end{align} $$ notemos que estamos tomando que son [[Variables aleatorias independientes|independientes]] entre sí, sino involucraría la [[Covarianza|covarianzas]] de todas las $X_i$
+> \end{align} $$ notemos que estamos tomando que son [[Variables aleatorias independientes|independientes]] entre sí, sino involucraría la [[Covarianza cruzada|covarianzas]] de todas las $X_i$
 > 
 > Por lo tanto, como se da que $$ \lim_{n \to \infty} \text{ECM} = \lim_{n \to \infty} \frac{\sigma_X^2}{n} = 0 $$ podemos decir que $\hat{\mu}(n)$ converge en media cuadrática a la media $\mu$
 

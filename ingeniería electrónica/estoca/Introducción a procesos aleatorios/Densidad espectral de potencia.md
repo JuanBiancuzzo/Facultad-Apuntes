@@ -20,7 +20,7 @@ Un modo de analizar estas variaciones es utilizando el [[Transformada de Fourier
 La densidad espectral de potencia (PSD) de un [[Proceso estocástico|proceso]] [[Proceso estacionario en sentido amplio|ESA]] $X(n)$ es $$ S_X(\omega) = \lim_{N \to \infty} E\left[ \frac{1}{2N + 1} \left| \sum_{n = -N}^{N} X(n) ~ \exp(-j \omega n) \right|^2 \right],~~~ -\frac{\pi}{2} \le \omega \le \frac{\pi}{2} $$
 
 > [!teorema]+ Teorema 6.1.1 (Wiener-Khinchin) 
-> La [[Densidad espectral de potencia|PSD]] de un [[Proceso estocástico|proceso]] [[Proceso estacionario en sentido amplio|ESA]] $X(n)$ coincide con la [[Transformada de Fourier|transformada de Fourier]] de su [[Covarianza#^def-5-3-3|función de autocorrelación]] $$ S_X(\omega) = \mathcal{F}\set{ R_X } = \sum_{\tau = -\infty}^{\infty} R_X(\tau) ~ \exp(-j \omega \tau) $$
+> La [[Densidad espectral de potencia|PSD]] de un [[Proceso estocástico|proceso]] [[Proceso estacionario en sentido amplio|ESA]] $X(n)$ coincide con la [[Transformada de Fourier|transformada de Fourier]] de su [[Correlación cruzada#^def-5-3-3|función de autocorrelación]] $$ S_X(\omega) = \mathcal{F}\set{ R_X } = \sum_{\tau = -\infty}^{\infty} R_X(\tau) ~ \exp(-j \omega \tau) $$
 > 
 > > [!demostracion]- Demostración
 > > Empezando $$ \begin{align} 

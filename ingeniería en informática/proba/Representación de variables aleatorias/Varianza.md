@@ -29,4 +29,4 @@ La varianza mide la dispersión de la variable en torno de su [[Esperanza|media]
 ---
 * $Var(a \cdot X + b) = a^2 \cdot Var(X)$
 * Si $Var(x) = 0$ existe un único $x$ tal que $\mathbb{P}(X = x) = 1$, es decir que es una variable discreta degenerada ^variable-degenerada
-* $Var(X + Y) = Var(X) + Var(Y) + 2 \cdot Cov(X, Y)$ donde $Cov(X, Y)$ es la [[Covarianza|covarianza]], recordemos que si $X$ e $Y$ son [[Variables aleatorias independientes|independientes]] entonces $Cov(X, Y) = 0$
+* $Var(X + Y) = Var(X) + Var(Y) + 2 \cdot Cov(X, Y)$ donde $Cov(X, Y)$ es la [[Covarianza cruzada|covarianza]], recordemos que si $X$ e $Y$ son [[Variables aleatorias independientes|independientes]] entonces $Cov(X, Y) = 0$

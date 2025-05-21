@@ -19,15 +19,15 @@ nota:
     pathRelacionado: 
   - numero: 4
     nombre: Variables ortogonales
-    path: ingeniería en informática/proba/Representación de variables aleatorias/Covarianza#^def-5-2-4
+    path: ingeniería en informática/orga/Visualizaciones/Correlación cruzada#^def-5-2-4
     pathRelacionado: 
   - numero: 5
     nombre: Variables descorrelacionadas
-    path: ingeniería en informática/proba/Representación de variables aleatorias/Covarianza#^def-5-2-5
+    path: ingeniería en informática/proba/Representación de variables aleatorias/Covarianza cruzada#^def-5-2-5
     pathRelacionado: 
   - numero: 6
     nombre: 
-    path: ingeniería en informática/proba/Representación de variables aleatorias/Covarianza#^prop-5-2-6
+    path: ingeniería en informática/proba/Representación de variables aleatorias/Covarianza cruzada#^prop-5-2-6
     pathRelacionado: 
   - numero: 7
     nombre: 

@@ -25,6 +25,7 @@ Esto se llama proceso de Bernoulli, y $X_i = 1$ se lo llama éxito y $p$ la prob
 ---
 Dado la variable $Y$ como la cantidad de éxitos en $n$ ensayos de Bernoulli, su [[Rango de una variable aleatoria|rango]] es $R_Y = \Set{0,~ 1,~ 2,~ \cdots,~ n}$ y vemos que $Y$ tiene una [[Distribución Binomial|distribución Binomial]], $Y \sim B(n,~ p)$. Pero notemos que $$Y = \sum_{i = 1}^{n}X_i$$
 
+
 ## Cantidad de ensayos hasta el primer éxito
 ---
 Dado la variable $N$ como la cantidad de ensayos de Bernoulli hasta el primer éxito, su [[Rango de una variable aleatoria|rango]] es $R_N = \mathbb{N}$ y vemos que $N$ tiene una [[Distribución Geométrica|distribución Geométrica]], $N \sim G(p)$

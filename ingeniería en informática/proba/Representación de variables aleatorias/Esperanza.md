@@ -5,10 +5,12 @@ tags:
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
   - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
+  - carrera/ingeniería-electrónica/estoca/Introducción-a-procesos-aleatorios
 aliases:
   - Media
   - Valor esperado
   - Energía de una variable aleatoria#^def-5-2-8
+  - Energía de un proceso estocástico#^def-6-2-2
 etapa: ampliar
 referencias: []
 ---
@@ -36,6 +38,16 @@ Se puede expresar $\mu(X) = E[X]$
 ---
 Sea $X \in \mathbb{R}^n$ un [[Vector aleatorio|vector aleatorio]] $n$-dimensional. La medio o esperanza de $X$ es un vector de las esperanzas de sus componentes $$ E[X] = \mu_X = \begin{bmatrix} E[X_1] \\ E[X_2] \\ \vdots \\ E[X_n] \end{bmatrix} $$
 
+## Para un proceso estocástico
+---
+Dada un [[Proceso estocástico|proceso estocástico]] $X$ definimos su esperanza o media (si existe) como $$ E[X(t)] = \mu_X(t) $$
+Vemos que la media es una [[Función|función]] determinística del tiempo, que a cada $t_0 \in \mathcal{T}$ le asigna la esperanza de la variable $X(t_0)$
+
+> [!definicion]+ Definición 6.2.2 (Energía de un proceso estocástico) 
+> Se define la energía del proceso como $$ \mathcal{E}_X(t) = E\left[ X^2(t) \right] $$
+> 
+> Notemos que es un caso particular de la [[Correlación cruzada#Para un proceso estocástico|autocorrelación]] al considerar $t_1 = t_2 = t$ dándonos $R_X(t_1,~ t_2) = R_X(t,~ t) = E\left[ X^2(t) \right]$
+^def-6-2-2
 ## Casos específicos
 ---
 Dado una función de variable aleatoria $h(X)$ cualquiera

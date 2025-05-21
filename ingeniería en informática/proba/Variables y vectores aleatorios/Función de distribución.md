@@ -16,7 +16,7 @@ aliases:
   - Distribución finito dimensional#^FIDI
   - FIDI#^FIDI
 etapa: ampliar
-referencias: []
+referencias:
 ---
 # Definición
 ---

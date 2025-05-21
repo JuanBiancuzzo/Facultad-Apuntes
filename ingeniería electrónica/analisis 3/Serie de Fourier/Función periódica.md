@@ -5,9 +5,14 @@ tags:
   - nota/facultad
   - carrera/ingeniería-en-informática/analisis-3/Serie-de-Fourier
 aliases:
-  - Periodo#^periodo
+  - Período#^periodo
   - Frecuencia#Frecuencia
+etapa: empezado
+referencias: []
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 Dado un [[Números Reales|número real]] positivo, una [[Función|función]] $f : \mathbb{R} \to \mathbb{C}$ es $P$-periódica sii $$\forall x \in \mathbb{R} : f(x + P) = f(x)$$ siendo $P$ el periodo 

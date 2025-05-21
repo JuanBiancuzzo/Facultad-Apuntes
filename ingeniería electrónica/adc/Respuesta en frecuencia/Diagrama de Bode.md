@@ -4,7 +4,14 @@ tags:
   - carrera/ingeniería-electrónica/adc/Respuesta-en-frecuencia
   - nota/facultad
   - carrera/ingeniería-en-informática/adc/Respuesta-en-frecuencia
+etapa: ampliar
+referencias:
+  - "890"
+aliases: []
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 Los diagramas de Bode son gráficas semi[[Función logaritmica|logarítmicas]] de la magnitud (en [[Decibel|decibeles]]) y de la fase de una [[Transferencia del sistema|función de transferencia]] $H(s)$ en función de [[Función periódica#Frecuencia|frecuencia]]
@@ -172,3 +179,9 @@ Para la magnitud $$ \begin{align}
 Con una pendiente de $-40 ~ \frac{dB}{\text{década}}$
 
 Para el cero complejo conjugado los diagramas quedan invertidos. La magnitud tiene una pendiente de $40 ~ \frac{dB}{\text{década}}$ y la fase tiene una pendiente de $\pi$ por década.
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

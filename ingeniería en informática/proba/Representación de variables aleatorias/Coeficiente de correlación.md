@@ -14,7 +14,7 @@ etapa: ampliar
 ```
 # Definición 
 ---
-La forma de interpretar la [[Covarianza|covarianza]], entre las [[Variable aleatoria|variable aleatoria]] $X$ e $Y$ esta dada por $$ \rho_{XY} = \frac{Cov(X, Y)}{\sqrt{Var(X) \cdot Var(Y)}} $$ notemos como se usa la [[Varianza|varianza]] de cada variable
+La forma de interpretar la [[Covarianza cruzada|covarianza]], entre las [[Variable aleatoria|variable aleatoria]] $X$ e $Y$ esta dada por $$ \rho_{XY} = \frac{Cov(X, Y)}{\sqrt{Var(X) \cdot Var(Y)}} $$ notemos como se usa la [[Varianza|varianza]] de cada variable
 
 ## Observación
 ---
