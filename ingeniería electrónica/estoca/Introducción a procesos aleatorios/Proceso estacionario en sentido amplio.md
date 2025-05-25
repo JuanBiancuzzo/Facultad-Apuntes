@@ -14,7 +14,7 @@ tags:
 ```
 # Definición
 ---
-Un [[Proceso estocástico|proceso]] $X(t)$ es estacionario en sentido amplio si $$ \begin{align} 
+Un [[Proceso estocástico|proceso]] $X(t)$ es estacionario en sentido amplio si cumple $$ \begin{align} 
     E[X(t)] &= \mu_X(t) = \mu_X \\
     R_X(t,~ t + \tau) &= E[X(t) ~ X(t + \tau)] = h(\tau) = R_X(\tau)
 \end{align} $$ donde $E[\cdot]$ es la [[Esperanza|esperanza]] y $R_X$ es la [[Correlación cruzada#^def-5-3-3|matriz de autocorrelación]]

@@ -21,6 +21,11 @@ Si un proceso es ESE, su distribución no depende de cuándo se comienza a conta
 
 Cabe aclarar que tiene que cumplirse que $t_k + \tau \in \mathcal{T}$, para $k \in [1,~ n]$, ya que sino no tiene sentido la definición de distribución que se esta planteando
 
+
+> [!observacion]+ Observación 6.1.2  
+> Cualquier [[Proceso estocástico|proceso]] que sea estacionario estricto, debe ser [[Proceso estacionario en sentido amplio|estacionario en sentido amplio]]
+^obs-6-1-2
+
 ## Proceso estacionario de primer orden
 ---
 Un [[Proceso estocástico|proceso]] $X(t)$ es estacionario de primer orden, su FIDI tiene que cumplir que $$ F_{X(t)} = F_{X(0)} = F_X, ~~~~ \forall t \in \mathcal{T} $$
