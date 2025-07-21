@@ -8,12 +8,13 @@ tags:
   - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
   - carrera/ingeniería-electrónica/estoca/Introducción-a-procesos-aleatorios
 etapa: ampliar
-referencias: 
+referencias: []
 aliases:
   - Momento cruzado
   - Matriz de correlación cruzada#^def-5-3-1
   - Matriz de autocorrelación#^def-5-3-3
   - Autocorrelación de un proceso estocástico#Para un proceso estocástico
+  - Correlación cruzada de un proceso estocástico#Para un proceso estocástico
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
@@ -67,10 +68,14 @@ La autocorrelación es una [[Matriz semidefinida positiva|matriz semidefinida po
 ---
 Dado un [[Proceso estocástico|proceso estocástico]] $X$ definimos su autocorrelación (si existe) como $$ R_X(t_1,~ t_2) = E[X(t_1) ~ X(t_2)] $$
 
+Trabajando con dos procesos podemos definir la correlación cruzada $$ R_{X,~ Y}(t_1,~ t_2) = E\left[ X(t_1) ~ Y^T(t_2) \right] $$
+
 ### Propiedades
 ---
 Tiene la relación con la [[Covarianza cruzada#Para un proceso estocástico|autocovarianza]] $$ R_X(t_1,~ t_2) = C_X(t_1,~ t_2) + \mu_X(t_1) ~ \mu_X(t_2) $$
 Es una función simétrica, es decir $R_X(t_1,~ t_2) = R_X(t_2,~ t_1)$
+
+Para la correlación cruzada, los procesos son [[Procesos conjuntamente estacionarios en sentido estricto|conjuntamente ESE]], entonces depende de la diferencia de los tiempos $$ R_{X,~ Y}(t,~ t + \tau) \equiv R_{X,~ Y}(\tau) $$
 
 
 ## Calculo para Python Pandas

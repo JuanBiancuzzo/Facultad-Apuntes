@@ -37,7 +37,6 @@ Si $X = [X_1,~ \cdots,~ X_n]^T$ es un vector aleatorio con componentes [[Variabl
 > 
 > Que es lo que búscabamos probar
 
-Se puede
 
 ## Para vector continuo
 ---

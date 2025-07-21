@@ -7,6 +7,7 @@ tags:
   - investigación/machine-Learning
   - investigación/ciencias-de-la-computación/Machine-learning
   - investigación/matemática/Estadística/Machine-learning
+  - carrera/ingeniería-electrónica/estoca/Análisis-de-datos
 aliases:
   - PCA
 ---

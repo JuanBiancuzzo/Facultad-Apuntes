@@ -5,7 +5,7 @@ tags:
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Teoría-de-probabilidades
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
-  - carrera/ingeniería-electrónica/estoca/Repaso-probabilidad
+  - carrera/ingeniería-electrónica/estoca/Repaso
 etapa: ampliar
 ---
 # Definición

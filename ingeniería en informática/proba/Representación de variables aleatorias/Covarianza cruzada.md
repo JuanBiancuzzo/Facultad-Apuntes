@@ -97,7 +97,9 @@ La autocovarianza es una [[Matriz semidefinida positiva|matriz semidefinida posi
 Dado un [[Proceso estocástico|proceso estocástico]] $X$ definimos su autocovarianza (si existe) como $$ C_X(t_1,~ t_2) = E[(X(t_1) - \mu_X(t_1)) ~ (X(t_2) - \mu_X(t_2))] $$
 
 Si se considera $t_1 = t_2 = t$ tengo la varianza en función del tiempo $$ Var(X)(t) = \sigma_X^2(t) = C_X(t,~ t) = Var(X(t)) $$
-
+Trabajando con dos procesos podemos definir la correlación cruzada $$ C_{X,~ Y}(t_1,~ t_2) = Cov\left( X(t_1) ~ Y^T(t_2) \right) $$
 ### Propiedades
 ---
 Tiene la relación con la [[Correlación cruzada#Para un proceso estocástico|autocorrelación]] $$ C_X(t_1,~ t_2) = R_X(t_1,~ t_2) - \mu_X(t_1) ~ \mu_X(t_2) $$
+
+Para la correlación cruzada, los procesos son [[Procesos conjuntamente estacionarios en sentido estricto|conjuntamente ESE]], entonces depende de la diferencia de los tiempos $$ C_{X,~ Y}(t,~ t + \tau) \equiv C_{X,~ Y}(\tau) $$

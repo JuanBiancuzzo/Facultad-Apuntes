@@ -7,7 +7,7 @@ tags:
   - nota/investigacion
   - "#carrera/ingeniería-electrónica/proba/Teoría-de-probabilidades"
   - "#carrera/ingeniería-en-informática/proba/Teoría-de-probabilidades"
-  - carrera/ingeniería-electrónica/estoca/Repaso-probabilidad
+  - carrera/ingeniería-electrónica/estoca/Repaso
 aliases:
   - Teorema sigma-aditividad
 ---

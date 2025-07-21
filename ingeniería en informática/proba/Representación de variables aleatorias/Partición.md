@@ -8,7 +8,7 @@ tags:
   - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
   - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
   - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
-  - carrera/ingeniería-electrónica/estoca/Repaso-probabilidad
+  - carrera/ingeniería-electrónica/estoca/Repaso
 etapa: ampliar
 ---
 ```dataviewjs

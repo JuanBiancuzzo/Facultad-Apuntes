@@ -3,9 +3,9 @@ dia: 2025-04-07
 etapa: ampliar
 referencias: 
 tags:
-  - carrera/ingeniería-electrónica/estoca/Repaso-probabilidad
   - nota/facultad
   - carrera/ingeniería-en-informática/discreta/Álgebra-de-conjuntos
+  - carrera/ingeniería-electrónica/estoca/Repaso
 aliases:
   - Conjuntos mutuamente excluyentes 2 a 2
 ---

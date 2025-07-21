@@ -33,6 +33,9 @@ Marketing/Buisness:
 6. [Oversubscribed de Dan Priestsley](https://www.amazon.com/Oversubscribed-How-People-Lining-Business/dp/0857088254?crid=20FUN0K0475TP&dib=eyJ2IjoiMSJ9.7Tkc792eUVB-E_fipTsJ0g.0ztbyoSRKj0qfcwtoZQPvMmlJzMjcxNBt7tkPJ_arwU&dib_tag=se&keywords=oversubscribed+by+dan+priestley&qid=1729866546&s=books&sprefix=oversubscribed+by+dan+priestsley,stripbooks-intl-ship,196&sr=1-1)
 7. Day Trading Attention de Gary Vee
 
+Música:
+1. [Understanding Acoustics](https://www.amazon.com/Understanding-Acoustics-Experimentalists-Vibration-Graduate/dp/3319499769)
+
 Psico (?):
 1. [The lessons of history](https://www.amazon.com/Lessons-History-Will-Durant/dp/143914995X?crid=2LSIQGR9CJW6U&dib=eyJ2IjoiMSJ9.BnI9pFJ-J-5QXF9gItvf4BXJ9mGLSjWfxbCZfenWsJcSk7Ta0YlfOLT6xvPzglHczegsLTMLdMaqlKMqDQYcqqrVVnOdhKbNFupH5ZQFlIcG2sE5yr9-QaPLPm9BWobYDBdLL69kTLvSa3w9U-8b7yVLpRof7cYMytKXDi4ilsrzbiDioiICwyBf3-iUV8YvYP087fC1FRUqqYzE6snbTukmx7q7uxI6sI3iwDD4B9E.-7PVBRJo3Zu8DjR9EqJ6v1VSWeC2pXc2e5Apx7GXKgM&dib_tag=se&keywords=The+lessons+of+history&qid=1729866601&s=books&sprefix=day+trading+attention+by+gary+vee,stripbooks-intl-ship,200&sr=1-1)
 2. [Clear thinking](https://www.amazon.com/Clear-Thinking-Turning-Ordinary-Extraordinary/dp/0593086112/ref=sims_dp_d_dex_ai_speed_loc_mtl_v5_t1_d_sccl_3_1/145-7695751-8397345?content-id=amzn1.sym.526d27b3-2efe-4f81-8a09-4d61e1515e3b)

@@ -43,7 +43,7 @@ Esto es cierto pues para ello hay que resolver el [[Sistema lineal|sistema linea
 ## Conclusión
 ---
 Se concluye que esta sucesión $(\gamma_n)_{n \in \mathbb{N}_0} = (\alpha ~ r^n + \beta ~ \overline{r}^n)_{n \in \mathbb{N}_0}$ coincide con la sucesión de Lucas original $(a_n)_{n \in \mathbb{N}_0}$, ya que satisface las mismas condiciones iniciales y la misma recurrencia. Por lo tanto el término general de la sucesión $(a_n)_{n \in \mathbb{N}_0}$ es $$ a_n = \alpha ~ r^n + \beta ~ \overline{r}^n, ~~~ \forall n \in \mathbb{N}_0 $$
-## Distintos casos de raices
+## Distintos casos de raíces
 ---
 Podemos obtener la solución general como suma de solución de la homogénea más una solución particular
 

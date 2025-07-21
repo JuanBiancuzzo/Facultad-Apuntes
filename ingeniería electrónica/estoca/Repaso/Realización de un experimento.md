@@ -3,8 +3,8 @@ dia: 2025-04-07
 etapa: ampliar
 referencias: 
 tags:
-  - carrera/ingeniería-electrónica/estoca/Repaso-probabilidad
   - nota/facultad
+  - carrera/ingeniería-electrónica/estoca/Repaso
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

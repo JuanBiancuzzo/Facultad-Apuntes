@@ -5,8 +5,8 @@ tags:
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Variables-y-vectores-aleatorios
   - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
-  - carrera/ingeniería-electrónica/estoca/Repaso-probabilidad
   - carrera/ingeniería-electrónica/estoca/Introducción-a-procesos-aleatorios
+  - carrera/ingeniería-electrónica/estoca/Repaso
 aliases:
   - Función de distribución para vector aleatorio#Para vector aleatoria
   - Función de distribución acumulada#Para vector aleatoria
@@ -15,9 +15,12 @@ aliases:
   - Función de distribución para un proceso estocástico#Para un proceso estocástico
   - Distribución finito dimensional#^FIDI
   - FIDI#^FIDI
+referencias: []
 etapa: ampliar
-referencias:
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 Sea $(\Omega, \mathcal{A}, \mathbb{P})$ un [[Espacio de probabilidad|espacio de probabilidad]] y $X$ una [[Variable aleatoria|variable aleatoria]], definimos su función de distribución $F_X : \mathbb{R} \to [0, 1]$ dada por $$ F_X(x) = P(X \leq x), \forall x \in \mathbb{R} $$ que satisface lo siguiente

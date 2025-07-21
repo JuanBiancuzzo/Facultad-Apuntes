@@ -13,5 +13,5 @@ tags:
 ```
 # Definición
 ---
-Al analizar varias [[Variable aleatoria|variables aleatorias]] en forma conjunta es interesante introducir el concepto de condicionalidad. Para ello, definimos la [[Función de distribución|CDF]] condicionada a un [[Evento#En Probabilidad|evento]] $A$ que caracteriza el comportamiento de $X$ cuando sabemos que $A$ ocurrió. Si $\mathbb{P} > 0$, tenemos $$ F_{X \mid A}(x) = \mathbb{P}(X \le x \mid A) = \frac{\mathbb{P}(X \le x, A)}{\mathbb{P}(A)} $$
+Al analizar varias [[Variable aleatoria|variables aleatorias]] en forma conjunta es interesante introducir el concepto de condicionalidad. Para ello, definimos la [[Función de distribución|CDF]] condicionada a un [[Evento#En Probabilidad|evento]] $A$ que caracteriza el comportamiento de $X$ cuando sabemos que $A$ ocurrió. Si $\mathbb{P}(A) > 0$, tenemos $$ F_{X \mid A}(x) = \mathbb{P}(X \le x \mid A) = \frac{\mathbb{P}(X \le x, A)}{\mathbb{P}(A)} $$
 

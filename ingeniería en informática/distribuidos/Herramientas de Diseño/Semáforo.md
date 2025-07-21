@@ -17,7 +17,7 @@ Tiene dos operaciones validas que son
 * `signal(P)`: Incrementa el valor de $S$
 * `wait(V)`: Decrementa el valor de $S$
 
-Un [[Mutex|mutex]] usa un $S = \set{0,~ 1}$, el cual se usa para acceder a secciones críticas.
+Un [[Mutex|mutex]] usa un $S = \set{0,~ 1}$, el cual se usa para acceder a [[Sección critica|secciones críticas]]
 
 En el caso de que se llame a `signal` pero $S$ este en su valor máximo, el [[Proceso|proceso]] que lo llamo se queda [[Estados de un proceso#Blocked|bloqueado]] hasta que algún otro proceso use `wait` liberando ese recurso
 

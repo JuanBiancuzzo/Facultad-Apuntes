@@ -37,7 +37,7 @@ tags:
 ```
 
 En la figura se representa $y = f(x)$ con $a \le x \le b$, por simple observación es claro que
- * $f(b)$ es el [[Mínimo|mínimo]] valor de $f$ en el $[a, b]$
+ * $f(x_2)$ es el [[Mínimo|mínimo]] valor de $f$ en el $[a, b]$
  * $f(x_1)$ es el [[Máximo|máximo]] valor de $f$ en el $[a, b]$
 
 Estos son los [[Máximo y mínimo absoluto|máximos y mínimos absolutos]] de la función en dicho intervalo

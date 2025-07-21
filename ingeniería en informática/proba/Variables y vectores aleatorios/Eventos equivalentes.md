@@ -4,7 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/proba/Variables-y-vectores-aleatorios
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Variables-y-vectores-aleatorios
-  - carrera/ingeniería-electrónica/estoca/Repaso-probabilidad
+  - carrera/ingeniería-electrónica/estoca/Repaso
 ---
 # Definición
 ---

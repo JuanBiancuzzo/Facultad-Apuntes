@@ -4,7 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/proba/Inferencia-estadística
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Inferencia-estadística
-  - carrera/ingeniería-electrónica/estoca/Repaso-probabilidad
+  - carrera/ingeniería-electrónica/estoca/Repaso
 etapa: ampliar
 referencias: []
 aliases: []

@@ -4,7 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/proba/Teoría-de-probabilidades
   - nota/facultad
   - carrera/ingeniería-electrónica/proba/Teoría-de-probabilidades
-  - carrera/ingeniería-electrónica/estoca/Repaso-probabilidad
+  - carrera/ingeniería-electrónica/estoca/Repaso
 aliases:
   - Teorema de probabilidad total
 ---

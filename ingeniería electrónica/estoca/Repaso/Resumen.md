@@ -1,9 +1,10 @@
 ---
 tags:
   - facultad/resumen
-  - carrera/ingeniería-electrónica/estoca/Repaso-probabilidad
-nombreResumen: Repaso probabilidad
+  - carrera/ingeniería-electrónica/estoca/Repaso
+nombreResumen: Repaso
 capitulo: "1"
+referencias: []
 ---
 # Índice
 ---

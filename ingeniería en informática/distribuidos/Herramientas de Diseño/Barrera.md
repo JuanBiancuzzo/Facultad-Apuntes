@@ -11,7 +11,7 @@ tags:
 ```
 # Definición
 ---
- busca que $n$ [[Proceso|procesos]] se ejecuten al mismo tiempo, esto lo consigue [[Estados de un proceso#Blocked|bloqueado procesos]], hasta que se tengan los $n$ procesos necesarios
+ Busca que $n$ [[Proceso|procesos]] se ejecuten al mismo tiempo, esto lo consigue [[Estados de un proceso#Blocked|bloqueado procesos]], hasta que se tengan los $n$ procesos necesarios
 
 ![[Barrera.png]]
 

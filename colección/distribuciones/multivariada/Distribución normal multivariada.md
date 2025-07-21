@@ -13,9 +13,9 @@ aliases:
 ---
 # Definición
 ---
-Se dice que el [[Vector aleatorio|vector aleatorio]] $X = [X_1, X_2, \cdots, X_p]^T$ tiene distribución normal multivariada de dimensión $p$, de parámetros $\mu \in \mathbb{R}^p$ y $\Sigma \in \mathbb{R}^{p \times p}$ que es la [[Covarianza#^def-5-3-4|matriz de autocovarianza]] la cual tiene que ser inversible, si su [[Función de densidad de probabilidad|función de densidad conjunta]] esta dada por $$ f_X(x) = \frac{1}{\sqrt{(2 \pi)^p ~ \det(\Sigma)}} \cdot \exp\left( -\frac{1}{2} \cdot (x - \mu)^T \cdot \Sigma^{-1} \cdot (x - \mu) \right) $$ donde $X$ y $x$ son vectores en $\mathbb{R}^p$
+Se dice que el [[Vector aleatorio|vector aleatorio]] $X = [X_1, X_2, \cdots, X_p]^T$ tiene distribución normal multivariada de dimensión $p$, de parámetros $\mu \in \mathbb{R}^p$ y $\Sigma \in \mathbb{R}^{p \times p}$ que es la [[Covarianza cruzada#^def-5-3-4|matriz de autocovarianza]] la cual tiene que ser inversible, si su [[Función de densidad de probabilidad|función de densidad conjunta]] esta dada por $$ f_X(x) = \frac{1}{\sqrt{(2 \pi)^p ~ \det(\Sigma)}} \cdot \exp\left( -\frac{1}{2} \cdot (x - \mu)^T \cdot \Sigma^{-1} \cdot (x - \mu) \right) $$ donde $X$ y $x$ son vectores en $\mathbb{R}^p$
 
-También se puede definir de la siguiente forma, se dice que $X$ es un vector aleatorio normal de [[Esperanza#Para vector aleatorio|media]] $\mu_X$ y [[Covarianza#^def-5-3-4|matriz de autocovarianza]] $C_X$ si y sólo si su [[Función característica|función característica]] es $$ \Phi_X(\omega) =  \exp\left( j\omega^T \mu_X \right) ~ \exp\Bigg( -\frac{ \omega^T C_X \omega }{2} \Bigg)  $$
+También se puede definir de la siguiente forma, se dice que $X$ es un vector aleatorio normal de [[Esperanza#Para vector aleatorio|media]] $\mu_X$ y matriz de autocovarianza $C_X$ si y sólo si su [[Función característica|función característica]] es $$ \Phi_X(\omega) =  \exp\left( j\omega^T \mu_X \right) ~ \exp\Bigg( -\frac{ \omega^T C_X \omega }{2} \Bigg)  $$
 ### Notación
 $$ X \sim \mathcal{N}_p(\mu, \Sigma) $$
 
@@ -53,7 +53,7 @@ Sea $Y = \displaystyle\sum_{i = 1}^{n} a_i \cdot X_i$ entonces $Y \sim \mathcal{
 
 Por la [[Distribución Normal multivariada#^prop-5-3-6|proposición 5.3.6]] podemos decir que cualquier subvector del vector aleatorio normal es, a su vez, un vector normal, la cual incluye a las [[Función de densidad marginal|marginales]]
 
-Para la distribución normal multivariada se tiene que sus variables son [[Covarianza#^def-5-2-5|descorrelacionadas]] entonces sus componentes son independientes
+Para la distribución normal multivariada se tiene que sus variables son [[Covarianza cruzada#^def-5-2-5|descorrelacionadas]] entonces sus componentes son independientes
 
 Para encontrar la función característica de la normal multivariada $Z \sim \mathcal{N}_p(0,~ \mathbb{I}_p)$, usando la [[Distribución Normal#^funcion-caracteristica-normal-estandar|función característica para la normal estándar]] y las propiedades de las funciones características para componentes independientes obtenemos $$ \Psi_Z(\omega) = \exp\left( -\frac{\lVert \omega \rVert^2}{2} \right) $$ donde $\lVert \cdot \rVert$ es la [[Norma|norma]], y como en el caso uni-dimensional, que salvo por un factor de escala, la función característica del vector aleatoria estándar tiene su misma forma y en cierto sentido podemos pensar que la distribución normal estándar es una [[Autovector|autofunción]] de esta transformación
 
@@ -65,7 +65,7 @@ Aplicando la transformación obtenemos $$ \begin{align}
      &= \exp\left( j\omega^T \mu_X \right) ~ \exp\Bigg( -\frac{ \omega^T ~ \overbrace{A A^T}^{C_X} ~\omega }{2} \Bigg) \\
      &= \exp\left( j\omega^T \mu_X \right) ~ \exp\Bigg( -\frac{ \omega^T C_X \omega }{2} \Bigg) \\
 \end{align} $$
-Como para la función característica no aparece, a diferencia de la función de densidad, $C_X^{-1}$ entonces existe para cualquiera sea su $C_X$, sin importar si es un [[Covarianza#^teo-4-1-1|vector aleatorio degenerado]] o no
+Como para la función característica no aparece, a diferencia de la función de densidad, $C_X^{-1}$ entonces existe para cualquiera sea su $C_X$, sin importar si es un [[Vector aleatorio degenerado|vector aleatorio degenerado]] o no
 
 ### Simulación
 ---

@@ -24,7 +24,7 @@ Las leyes de los grandes números son [[Teorema|teoremas]] que implican el compo
 Esto implica que la media muestral converge siempre a la media de las variables en forma casi segura, y además, en media cuadrática si la varianza es finita
 
 > [!definicion]+ Definición 5.2.12 (Ley débil de los grandes números) 
-> Dada una [[Sucesión de variables aleatorias|sucesión]] $\set{ X_n }_{n \in \mathbb{N}_0}$ de variables [[Variables aleatorias independientes|independientes]] e idénticamente distribuidas, de [[Esperanza|media]] $\mu$ (la [[Varianza|varianza]] no necesariamente finita), se tiene que la [[Media muestral|media muestral]] [[Convergencia en probabilidad|converge en probabilidad]] a la media $\mu$, es decir $$ \bar{X}(n) = \frac{1}{n} \sum_{i = 1}^{n} X_i \xrightarrow{p} \mu ~~~ \text{cuando} ~ n \to \infty $$
+> Dada una [[Sucesión de variables aleatorias|sucesión]] $\set{ X_n }_{n \in \mathbb{N}_0}$ de variables [[Variables aleatorias independientes|independientes]] e idénticamente distribuidas, de [[Esperanza|media]] $\mu$ (la [[Varianza|varianza]] necesariamente menor a finita), se tiene que la [[Media muestral|media muestral]] [[Convergencia en probabilidad|converge en probabilidad]] a la media $\mu$, es decir $$ \bar{X}(n) = \frac{1}{n} \sum_{i = 1}^{n} X_i \xrightarrow{p} \mu ~~~ \text{cuando} ~ n \to \infty $$
 ^def-5-2-12
 
 Como esta es una implicación de la ley fuerte, es el motivo por el cual se llama ley débil. También, en el caso que la varianza sea finita, se puede demostrar usando la [[Consistencia en media cuadrática#^def-5-2-9|convergencia en media cuadrática]] 
