@@ -8,9 +8,9 @@ subtituloObra: A Code of Conduct for Professional Programmers
 nombreAutores:
   - apellido: Martin
     nombre: Robert C.
-anio: "2011"
+anio: 2011
 editorial: Pearson Education, Inc.
-edicion: "1"
+edicion: 2011
 volumen: 
 url: 
 capitulos: 

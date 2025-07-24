@@ -10,9 +10,9 @@ nombreAutores:
     nombre: Randal
   - apellido: O'Hallaron
     nombre: David
-anio: "2015"
+anio: 2015
 editorial: Pearson Education, Inc.
-edicion: "3"
+edicion: 2015
 volumen: 
 url: 
 capitulos: 

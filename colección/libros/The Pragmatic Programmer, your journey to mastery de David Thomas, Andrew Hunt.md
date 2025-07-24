@@ -10,9 +10,9 @@ nombreAutores:
     nombre: David
   - apellido: Hunt
     nombre: Andrew
-anio: "2019"
+anio: 2019
 editorial: Addison-Wesley Professional
-edicion: "2"
+edicion: 2019
 volumen: 
 url: 
 capitulos: 

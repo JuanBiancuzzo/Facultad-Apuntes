@@ -12,7 +12,7 @@ nombreAutores:
     nombre: Yoshua
   - apellido: Courville
     nombre: Aaron
-anio: "2016"
+anio: 2016
 editorial: Massachusetts Institute of Technology Press
 edicion: 
 volumen: 

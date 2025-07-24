@@ -8,7 +8,7 @@ subtituloObra: The World's Most Mysterious Unsolved Math Problem
 nombreAutores:
   - apellido: Nahin
     nombre: Paul
-anio: "2021"
+anio: 2021
 editorial: Princeton University Press
 edicion: 
 volumen: 

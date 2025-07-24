@@ -8,7 +8,7 @@ subtituloObra:
 nombreAutores:
   - apellido: Cheng
     nombre: David K.
-anio: "2019"
+anio: 2019
 editorial: Pearson Education, Inc.
 edicion: 
 volumen: 

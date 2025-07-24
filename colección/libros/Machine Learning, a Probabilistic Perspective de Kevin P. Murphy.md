@@ -8,7 +8,7 @@ subtituloObra: A Probabilistic Perspective
 nombreAutores:
   - apellido: Murphy
     nombre: Kevin P.
-anio: "2012"
+anio: 2012
 editorial: Massachusetts Institute of Technology Press
 edicion: 
 volumen: 

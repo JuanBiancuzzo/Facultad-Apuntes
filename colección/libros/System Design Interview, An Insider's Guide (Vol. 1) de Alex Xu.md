@@ -7,10 +7,10 @@ tituloObra: "System Design Interview: An Insider's Guide"
 nombreAutores:
   - apellido: Xu
     nombre: Alex
-anio: "2020"
+anio: 2020
 editorial: Byte Code LLC
-edicion: "2"
-volumen: "1"
+edicion: 2020
+volumen: 2020
 url: 
 capitulos: 
 cover: System Design Interview, An Insider's Guide (Vol. 1) de Alex Xu.jpg

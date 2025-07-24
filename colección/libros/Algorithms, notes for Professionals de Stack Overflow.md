@@ -8,7 +8,7 @@ subtituloObra: Notes for Professionals
 nombreAutores:
   - apellido: Stack Overflow
     nombre: ""
-anio: "2017"
+anio: 2017
 editorial: GoalKicker
 edicion: 
 volumen: 

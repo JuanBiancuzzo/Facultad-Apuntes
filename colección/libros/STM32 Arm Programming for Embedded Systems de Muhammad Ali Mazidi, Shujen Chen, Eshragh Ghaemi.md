@@ -12,7 +12,7 @@ nombreAutores:
     nombre: Shujen
   - apellido: Ghaemi
     nombre: Eshragh
-anio: "2018"
+anio: 2018
 editorial: MicroDigitalEd
 edicion: 
 volumen: 

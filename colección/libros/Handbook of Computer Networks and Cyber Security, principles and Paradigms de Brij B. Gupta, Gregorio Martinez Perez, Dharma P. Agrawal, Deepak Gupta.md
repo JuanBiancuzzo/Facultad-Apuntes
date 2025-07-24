@@ -14,7 +14,7 @@ nombreAutores:
     nombre: Dharma P.
   - apellido: Gupta
     nombre: Deepak
-anio: "2020"
+anio: 2020
 editorial: Springer
 edicion: 
 volumen: 

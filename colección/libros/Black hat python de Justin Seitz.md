@@ -7,7 +7,7 @@ tituloObra: Black hat python
 nombreAutores:
   - apellido: Seitz
     nombre: Justin
-anio: "2015"
+anio: 2015
 editorial: No Starch Press
 edicion: 
 volumen: 

@@ -16,7 +16,7 @@ nombreAutores:
     nombre: Robert
   - apellido: Taylor
     nombre: Jonathan
-anio: "2023"
+anio: 2023
 editorial: Springer
 edicion: 
 volumen: 

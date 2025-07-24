@@ -19,6 +19,9 @@
     "correlativas": "multitext",
     "planes": "multitext",
     "tieneCodigo": "checkbox",
-    "esOnline": "checkbox"
+    "esOnline": "checkbox",
+    "anio": "number",
+    "edicion": "number",
+    "volumen": "number"
   }
 }

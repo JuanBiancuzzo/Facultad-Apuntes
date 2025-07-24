@@ -12,9 +12,9 @@ nombreAutores:
     nombre: Christopher C.
   - apellido: Coplan
     nombre: Michael A.
-anio: "2009"
+anio: 2009
 editorial: Cambridge University Press
-edicion: "4"
+edicion: 2009
 volumen: 
 url: 
 capitulos: 

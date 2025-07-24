@@ -7,7 +7,7 @@ tituloObra: How to lie with statistics
 nombreAutores:
   - apellido: Huff
     nombre: Darrell
-anio: "1954"
+anio: 1954
 editorial: W. W. Norton & Company
 edicion: 
 volumen: 

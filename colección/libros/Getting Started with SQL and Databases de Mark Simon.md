@@ -7,7 +7,7 @@ tituloObra: Getting Started with SQL and Databases
 nombreAutores:
   - apellido: Simon
     nombre: Mark
-anio: "2023"
+anio: 2023
 editorial: Apress
 edicion: 
 volumen: 

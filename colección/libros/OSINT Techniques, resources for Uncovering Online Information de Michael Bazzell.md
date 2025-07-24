@@ -8,9 +8,9 @@ subtituloObra: Resources for Uncovering Online Information
 nombreAutores:
   - apellido: Bazzell
     nombre: Michael
-anio: "2023"
+anio: 2023
 editorial: CreateSpace Independent Publishing Platform
-edicion: "10"
+edicion: 2023
 volumen: 
 url: 
 capitulos: 

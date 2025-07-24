@@ -8,7 +8,7 @@ subtituloObra:
 nombreAutores:
   - apellido: Burkov
     nombre: Andriy
-anio: "2019"
+anio: 2019
 editorial: Eleven Languages
 edicion: 
 volumen: 

@@ -10,9 +10,9 @@ nombreAutores:
     nombre: James
   - apellido: Ross
     nombre: Keith
-anio: "2016"
+anio: 2016
 editorial: Pearson Education, Inc.
-edicion: "7"
+edicion: 2016
 volumen: 
 url: 
 capitulos:

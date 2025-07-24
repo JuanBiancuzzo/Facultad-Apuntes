@@ -8,9 +8,9 @@ subtituloObra: A Handbook of Agile Software Craftsmanship
 nombreAutores:
   - apellido: Martin
     nombre: Robert C.
-anio: "2008"
+anio: 2008
 editorial: Pearson Education, Inc.
-edicion: "1"
+edicion: 2008
 volumen: 
 url: 
 capitulos: 

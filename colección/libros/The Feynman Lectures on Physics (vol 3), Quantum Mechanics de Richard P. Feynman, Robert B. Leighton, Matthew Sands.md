@@ -12,10 +12,10 @@ nombreAutores:
   - apellido: Sands
     nombre: Matthew
 subtituloObra: Quantum Mechanics
-anio: "1964"
+anio: 1964
 editorial: Addison-Wesley Professional
 edicion: 
-volumen: "3"
+volumen: .nan
 url: https://www.feynmanlectures.caltech.edu/III_toc.html
 capitulos: 
 cover: The Feynman Lectures on Physics, Quantum Mechanics de Richard P. Feynman, Robert B. Leighton, Matthew Sands.jpg

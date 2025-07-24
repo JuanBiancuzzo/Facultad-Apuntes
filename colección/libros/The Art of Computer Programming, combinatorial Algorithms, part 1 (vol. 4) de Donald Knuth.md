@@ -8,10 +8,10 @@ subtituloObra: Combinatorial Algorithms, Parte 1
 nombreAutores:
   - apellido: Knuth
     nombre: Donald
-anio: "2011"
+anio: 2011
 editorial: Addison-Wesley Professional
-edicion: "1"
-volumen: "4"
+edicion: 2011
+volumen: 2011
 url: 
 capitulos: 
 cover: The Art of Computer Programming, combinatorial Algorithms, Parte 1 (vol. 4) de Donald Knuth.jpg

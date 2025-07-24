@@ -9,9 +9,9 @@ nombreAutores:
     nombre: Harold
   - apellido: Sussman
     nombre: Gerald Jay
-anio: "1996"
+anio: 1996
 editorial: Massachusetts Institute of Technology Press
-edicion: "2"
+edicion: 1996
 volumen: 
 url: https://web.mit.edu/6.001/6.037/sicp.pdf
 capitulos: 

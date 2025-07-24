@@ -7,7 +7,7 @@ tituloObra: Gentleman Programming Book
 nombreAutores:
   - apellido: Buscaglia
     nombre: Alan
-anio: "2024"
+anio: 2024
 editorial: Alan Buscaglia
 edicion: 
 volumen: 

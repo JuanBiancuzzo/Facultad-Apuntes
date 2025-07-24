@@ -14,7 +14,7 @@ nombreAutores:
     nombre: Sahand
   - apellido: Depraz
     nombre: Florian
-anio: "2021"
+anio: 2021
 editorial: Arm Education Media
 edicion: 
 volumen: 

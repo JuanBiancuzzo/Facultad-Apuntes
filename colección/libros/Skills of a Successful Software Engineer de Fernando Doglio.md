@@ -8,7 +8,7 @@ subtituloObra:
 nombreAutores:
   - apellido: Doglio
     nombre: Fernando
-anio: "2022"
+anio: 2022
 editorial: Manning Publications Co
 edicion: 
 volumen: 

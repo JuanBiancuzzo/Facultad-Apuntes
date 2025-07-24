@@ -8,9 +8,9 @@ subtituloObra:
 nombreAutores:
   - apellido: Stallings
     nombre: William
-anio: "2013"
+anio: 2013
 editorial: Pearson Education, Inc.
-edicion: "8"
+edicion: 2013
 volumen: 
 url: 
 capitulos: 

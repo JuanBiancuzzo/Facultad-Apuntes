@@ -14,9 +14,9 @@ nombreAutores:
     nombre: Chris
   - apellido: Petoff
     nombre: Jennifer
-anio: "2016"
+anio: 2016
 editorial: O'Reilly Media, Inc.
-edicion: "1"
+edicion: 2016
 volumen: 
 url: 
 capitulos: 

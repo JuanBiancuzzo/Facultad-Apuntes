@@ -10,9 +10,9 @@ nombreAutores:
     nombre: Gregorio Oscar
   - apellido: Zola
     nombre: Julio Guillermo
-anio: "2024"
+anio: 2024
 editorial: Nueva Librería
-edicion: "3"
+edicion: 2024
 volumen: 
 url: 
 capitulos:

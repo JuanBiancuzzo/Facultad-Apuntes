@@ -8,7 +8,7 @@ subtituloObra:
 nombreAutores:
   - apellido: Lozano-Robledo
     nombre: Álvaro
-anio: "2011"
+anio: 2011
 editorial: American Mathematical Society
 edicion: 
 volumen: 

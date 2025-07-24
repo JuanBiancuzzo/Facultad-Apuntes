@@ -7,7 +7,7 @@ tituloObra: Calculus for the practical man
 nombreAutores:
   - apellido: Thompson
     nombre: James Edgar
-anio: "1923"
+anio: 1923
 editorial: Macmillan Co
 edicion: 
 volumen: 

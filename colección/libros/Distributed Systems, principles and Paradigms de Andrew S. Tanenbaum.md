@@ -8,9 +8,9 @@ subtituloObra: Principles and Paradigms
 nombreAutores:
   - apellido: Tanenbaum
     nombre: Andrew S.
-anio: "2016"
+anio: 2016
 editorial: CreateSpace Independent Publishing Platform
-edicion: "2"
+edicion: 2016
 volumen: 
 url: 
 capitulos: 

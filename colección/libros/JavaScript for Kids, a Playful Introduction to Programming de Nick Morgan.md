@@ -8,7 +8,7 @@ subtituloObra: A Playful Introduction to Programming
 nombreAutores:
   - apellido: Morgan
     nombre: Nick
-anio: "2014"
+anio: 2014
 editorial: No Starch Press
 edicion: 
 volumen: 

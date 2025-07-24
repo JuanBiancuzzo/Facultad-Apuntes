@@ -7,9 +7,9 @@ tituloObra: Hacker's delight
 nombreAutores:
   - apellido: Warren Jr.
     nombre: Henry S.
-anio: "2012"
+anio: 2012
 editorial: Pearson Education, Inc.
-edicion: "2"
+edicion: 2012
 volumen: 
 url: 
 capitulos: 

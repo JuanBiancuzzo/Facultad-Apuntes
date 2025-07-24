@@ -8,9 +8,9 @@ subtituloObra:
 nombreAutores:
   - apellido: Mair
     nombre: Patrick
-anio: "2018"
+anio: 2018
 editorial: Springer
-edicion: "1"
+edicion: 2018
 volumen: 
 url: 
 capitulos: 

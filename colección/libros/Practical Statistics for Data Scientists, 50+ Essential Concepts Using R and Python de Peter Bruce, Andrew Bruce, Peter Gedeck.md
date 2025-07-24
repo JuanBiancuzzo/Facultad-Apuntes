@@ -12,9 +12,9 @@ nombreAutores:
     nombre: Andrew
   - apellido: Gedeck
     nombre: Peter
-anio: "2020"
+anio: 2020
 editorial: O'Reilly Media, Inc.
-edicion: "2"
+edicion: 2020
 volumen: 
 url: 
 capitulos: 

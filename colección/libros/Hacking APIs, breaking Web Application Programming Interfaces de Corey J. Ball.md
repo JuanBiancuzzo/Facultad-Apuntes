@@ -8,7 +8,7 @@ subtituloObra: Breaking Web Application Programming Interfaces
 nombreAutores:
   - apellido: Ball
     nombre: Corey J.
-anio: "2022"
+anio: 2022
 editorial: No Starch Press
 edicion: 
 volumen: 

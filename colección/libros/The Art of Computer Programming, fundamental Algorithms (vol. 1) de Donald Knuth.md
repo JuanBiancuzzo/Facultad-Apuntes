@@ -8,10 +8,10 @@ subtituloObra: Fundamental Algorithms
 nombreAutores:
   - apellido: Knuth
     nombre: Donald
-anio: "1997"
+anio: 1997
 editorial: Addison-Wesley Professional
-edicion: "3"
-volumen: "1"
+edicion: 1997
+volumen: 1997
 url: 
 capitulos: 
 cover: The Art of Computer Programming, fundamental Algorithms (vol. 1) de Donald Knuth.jpg

@@ -8,9 +8,9 @@ subtituloObra: A Linux and UNIX System Programming Handbook
 nombreAutores:
   - apellido: Kerrisk
     nombre: Michael
-anio: "2010"
+anio: 2010
 editorial: No Starch Press
-edicion: "1"
+edicion: 2010
 volumen: 
 url: 
 capitulos: 

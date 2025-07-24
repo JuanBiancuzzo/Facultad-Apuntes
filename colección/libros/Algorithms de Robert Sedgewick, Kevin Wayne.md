@@ -10,9 +10,9 @@ nombreAutores:
     nombre: Robert
   - apellido: Wayne
     nombre: Kevin
-anio: "2011"
+anio: 2011
 editorial: Addison-Wesley Professional
-edicion: "4"
+edicion: 2011
 volumen: 
 url: 
 capitulos: 

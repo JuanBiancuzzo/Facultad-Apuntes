@@ -7,10 +7,10 @@ tituloObra: Game Engine Architecture
 nombreAutores:
   - apellido: Gregory
     nombre: Jason
-anio: "2018"
+anio: 2018
 editorial: CRC Press
 edicion: 
-volumen: "3"
+volumen: .nan
 url: 
 capitulos: 
 cover: Game Engine Architecture de Jason Gregory.png

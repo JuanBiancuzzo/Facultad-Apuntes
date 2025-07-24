@@ -9,7 +9,7 @@ nombreAutores:
     nombre: Ramzi H.
   - apellido: Arpaci-Desseau
     nombre: Andrea C.
-anio: "2014"
+anio: 2014
 editorial: Arpaci-Desseau Books
 edicion: 
 volumen: 
@@ -423,7 +423,7 @@ tags:
   - referencia/libro
   - colección/biblioteca/libro
   - nota/investigacion
-subtituloObra:
+subtituloObra: 
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -10,9 +10,9 @@ nombreAutores:
     nombre: Keith A.
   - apellido: Borsboom
     nombre: Denny
-anio: "2013"
+anio: 2013
 editorial: Routledge
-edicion: "1"
+edicion: 2013
 volumen: 
 url: 
 capitulos: 

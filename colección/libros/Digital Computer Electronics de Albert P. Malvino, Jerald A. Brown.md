@@ -10,9 +10,9 @@ nombreAutores:
     nombre: Albert P.
   - apellido: Brown
     nombre: Jerald A.
-anio: "1992"
+anio: 1992
 editorial: Career Education
-edicion: "3"
+edicion: 1992
 volumen: 
 url: 
 capitulos:

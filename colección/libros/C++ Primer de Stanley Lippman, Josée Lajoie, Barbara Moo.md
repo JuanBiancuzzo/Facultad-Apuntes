@@ -12,9 +12,9 @@ nombreAutores:
     nombre: Josée
   - apellido: Moo
     nombre: Barbara
-anio: "2012"
+anio: 2012
 editorial: Addison-Wesley Professional
-edicion: "5"
+edicion: 2012
 volumen: 
 url: 
 capitulos: 

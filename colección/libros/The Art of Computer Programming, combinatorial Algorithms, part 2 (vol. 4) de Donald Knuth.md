@@ -8,10 +8,10 @@ subtituloObra: Combinatorial Algorithms, part 2
 nombreAutores:
   - apellido: Knuth
     nombre: Donald
-anio: "2022"
+anio: 2022
 editorial: Addison-Wesley Professional
-edicion: "1"
-volumen: "4"
+edicion: 2022
+volumen: 2022
 url: 
 capitulos: 
 cover: The Art of Computer Programming, combinatorial Algorithms, part 2 (vol. 4) de Donald Knuth.jpg

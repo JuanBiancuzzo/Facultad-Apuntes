@@ -12,9 +12,9 @@ nombreAutores:
     nombre: Hannes
   - apellido: Howard
     nombre: Cole
-anio: "2019"
+anio: 2019
 editorial: Manning Publications Co
-edicion: "1"
+edicion: 2019
 volumen: 
 url: 
 capitulos: 

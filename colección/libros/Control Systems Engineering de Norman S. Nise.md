@@ -11,9 +11,9 @@ numReferencia: 908
 nombreAutores:
   - nombre: Norman S.
     apellido: Nise
-anio: "2014"
+anio: 2014
 editorial: Wiley Publishing
-edicion: "7"
+edicion: 2014
 capitulos:
   - numeroCapitulo: "1"
     nombreCapitulo: Introduction
@@ -120,6 +120,7 @@ aliases:
   - "Control Systems Engineering de Norman S. Nise, Capítulo 11: Design via frequency response#Capítulo 11: Design via frequency response"
   - "Control Systems Engineering de Norman S. Nise, Capítulo 12: Design via state space#Capítulo 12: Design via state space"
   - "Control Systems Engineering de Norman S. Nise, Capítulo 13: Digital control systems#Capítulo 13: Digital control systems"
+volumen: 2014
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

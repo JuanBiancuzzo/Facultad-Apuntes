@@ -15,7 +15,7 @@ nombreAutores:
     apellido: Ronald W.
   - nombre: Buck
     apellido: John R.
-anio: "1999"
+anio: 1999
 editorial: Prentice Hall
 capitulos:
   - numeroCapitulo: "1"
@@ -107,6 +107,8 @@ aliases:
   - "Discrete-Time Signal Processing de Oppenheim Alan V., Schafer Ronald W., Buck John R., Capítulo 9: Computation of the Discrete Fourier Transform#Capítulo 9: Computation of the Discrete Fourier Transform"
   - "Discrete-Time Signal Processing de Oppenheim Alan V., Schafer Ronald W., Buck John R., Capítulo 10: Fourier Analysis of Signals Using the Discrete Fourier Transform#Capítulo 10: Fourier Analysis of Signals Using the Discrete Fourier Transform"
   - "Discrete-Time Signal Processing de Oppenheim Alan V., Schafer Ronald W., Buck John R., Capítulo 11: Discrete Hilbert Transforms#Capítulo 11: Discrete Hilbert Transforms"
+edicion: 1999
+volumen: 1999
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

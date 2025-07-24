@@ -10,9 +10,9 @@ nombreAutores:
     nombre: Brian W.
   - apellido: Ritchie
     nombre: Dennis M.
-anio: "1988"
+anio: 1988
 editorial: Pearson Education, Inc.
-edicion: "2"
+edicion: 1988
 volumen: 
 url: 
 capitulos: 

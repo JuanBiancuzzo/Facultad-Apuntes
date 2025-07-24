@@ -12,9 +12,9 @@ nombreAutores:
     nombre: Oded
   - apellido: Shmueli
     nombre: Erez
-anio: "2023"
+anio: 2023
 editorial: Springer
-edicion: "3"
+edicion: 2023
 volumen: 
 url: https://doi.org/10.1007/978-3-031-24628-9_16
 capitulos:

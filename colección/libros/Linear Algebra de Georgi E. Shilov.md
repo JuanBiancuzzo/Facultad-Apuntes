@@ -8,7 +8,7 @@ subtituloObra:
 nombreAutores:
   - apellido: Shilov
     nombre: Georgi E.
-anio: "1977"
+anio: 1977
 editorial: Dover Publications
 edicion: 
 volumen: 

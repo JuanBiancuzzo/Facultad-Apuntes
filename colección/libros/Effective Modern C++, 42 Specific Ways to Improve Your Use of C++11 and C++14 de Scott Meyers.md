@@ -8,9 +8,9 @@ subtituloObra: 42 Specific Ways to Improve Your Use of C++11 and C++14
 nombreAutores:
   - apellido: Meyers
     nombre: Scott
-anio: "2014"
+anio: 2014
 editorial: O'Reilly Media, Inc.
-edicion: "1"
+edicion: 2014
 volumen: 
 url: 
 capitulos: 

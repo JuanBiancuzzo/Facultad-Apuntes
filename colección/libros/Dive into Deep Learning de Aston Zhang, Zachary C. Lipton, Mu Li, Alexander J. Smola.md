@@ -14,9 +14,9 @@ nombreAutores:
     nombre: Mu
   - apellido: Smola
     nombre: Alexander J.
-anio: "2023"
+anio: 2023
 editorial: Cambridge University Press
-edicion: "1"
+edicion: 2023
 volumen: 
 url: 
 capitulos: 

@@ -10,7 +10,7 @@ nombreAutores:
     apellido: Sedra
   - nombre: Kenneth C.
     apellido: Smith
-anio: "1999"
+anio: 1999
 editorial: Oxford University Press
 edicion: 
 volumen: 

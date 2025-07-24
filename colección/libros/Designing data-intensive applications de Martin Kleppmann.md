@@ -7,7 +7,7 @@ tituloObra: Designing data-intensive applications
 nombreAutores:
   - apellido: Kleppmann
     nombre: Martin
-anio: "2017"
+anio: 2017
 editorial: O'Reilly Media, Inc.
 edicion: 
 volumen: 

@@ -8,7 +8,7 @@ subtituloObra: A Bayesian Workflow in Tidy R
 nombreAutores:
   - apellido: Schmettow
     nombre: Martin
-anio: "2021"
+anio: 2021
 editorial: Springer
 edicion: 
 volumen: 

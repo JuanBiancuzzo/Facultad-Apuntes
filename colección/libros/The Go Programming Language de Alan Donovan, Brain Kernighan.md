@@ -10,9 +10,9 @@ nombreAutores:
     nombre: Alan
   - apellido: Kernighan
     nombre: Brain
-anio: "2015"
+anio: 2015
 editorial: Addison-Wesley Professional
-edicion: "1"
+edicion: 2015
 volumen: 
 url: 
 capitulos: 

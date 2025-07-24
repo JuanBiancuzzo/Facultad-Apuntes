@@ -10,10 +10,10 @@ nombreAutores:
     nombre: Walter Gustavo
   - apellido: Trainotti
     nombre: Valentino
-anio: "2003"
+anio: 2003
 editorial: Nueva Librería
 edicion: 
-volumen: "1"
+volumen: .nan
 url: 
 capitulos: 
 cover: Ingeniería Electromagnética (vol. 1) de Walter Gustavo Fano, Valentino Trainotti.jpg

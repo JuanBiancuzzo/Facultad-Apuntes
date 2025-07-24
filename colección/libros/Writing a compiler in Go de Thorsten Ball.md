@@ -7,7 +7,7 @@ tituloObra: Writing a compiler in Go
 nombreAutores:
   - apellido: Ball
     nombre: Thorsten
-anio: "2018"
+anio: 2018
 editorial: Thorsten Ball
 edicion: 
 volumen: 

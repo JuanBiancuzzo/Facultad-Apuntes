@@ -8,10 +8,10 @@ subtituloObra: Practical Guide To Penetration Testing
 nombreAutores:
   - apellido: Kim
     nombre: Peter
-anio: "2018"
+anio: 2018
 editorial: CreateSpace Independent Publishing Platform
 edicion: 
-volumen: "3"
+volumen: .nan
 url: 
 capitulos: 
 cover: The Hacker Playbook, practical Guide To Penetration Testing (vol. 3) de Peter Kim.jpg

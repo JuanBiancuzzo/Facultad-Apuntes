@@ -17,9 +17,9 @@ nombreAutores:
     nombre: Michal
   - apellido: Hillaire
     nombre: Sébastien
-anio: "2018"
+anio: 2018
 editorial: CRC Press
-edicion: "4"
+edicion: 2018
 volumen: 
 url: https://www.realtimerendering.com/Real-Time_Rendering_4th-TOC_Preface_Intro_Bib_Index.pdf
 capitulos: 

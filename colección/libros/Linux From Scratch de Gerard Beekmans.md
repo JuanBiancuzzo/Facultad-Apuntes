@@ -7,9 +7,9 @@ tituloObra: Linux From Scratch
 nombreAutores:
   - apellido: Beekmans
     nombre: Gerard
-anio: "2024"
+anio: 2024
 editorial: Gerard Beekmans
-edicion: "12"
+edicion: 2024
 volumen: 
 url: https://www.linuxfromscratch.org/lfs/downloads/12.1/LFS-BOOK-12.1.pdf
 capitulos: 

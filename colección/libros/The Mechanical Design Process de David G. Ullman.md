@@ -7,9 +7,9 @@ tituloObra: The Mechanical Design Process
 nombreAutores:
   - apellido: Ullman
     nombre: David G.
-anio: "1991"
+anio: 1991
 editorial: The McGraw-Hill Companies
-edicion: "4"
+edicion: 1991
 volumen: 
 url: 
 capitulos: 

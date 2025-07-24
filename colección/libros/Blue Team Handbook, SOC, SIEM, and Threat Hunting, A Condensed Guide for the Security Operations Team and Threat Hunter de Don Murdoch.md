@@ -8,7 +8,7 @@ subtituloObra: "SOC, SIEM, and Threat Hunting: A Condensed Guide for the Securit
 nombreAutores:
   - apellido: Murdoch
     nombre: Don
-anio: "2019"
+anio: 2019
 editorial: Don Murdoch
 edicion: 
 volumen: 

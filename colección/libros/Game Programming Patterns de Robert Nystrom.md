@@ -8,7 +8,7 @@ subtituloObra:
 nombreAutores:
   - apellido: Nystrom
     nombre: Robert
-anio: "2014"
+anio: 2014
 editorial: Genever Benning
 edicion: 
 volumen: 

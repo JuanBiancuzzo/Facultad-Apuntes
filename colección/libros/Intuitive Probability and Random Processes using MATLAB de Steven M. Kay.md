@@ -11,9 +11,9 @@ numReferencia: 969
 nombreAutores:
   - nombre: Steven M.
     apellido: Kay
-anio: "2005"
+anio: 2005
 editorial: Springer
-edicion: "1"
+edicion: 2005
 capitulos:
   - numeroCapitulo: "1"
     nombreCapitulo: Introduction
@@ -192,6 +192,7 @@ aliases:
   - "Intuitive Probability and Random Processes using MATLAB de Steven M. Kay, Capítulo 20: Gaussian Random Processes#Capítulo 20: Gaussian Random Processes"
   - "Intuitive Probability and Random Processes using MATLAB de Steven M. Kay, Capítulo 21: Poisson Random Processes#Capítulo 21: Poisson Random Processes"
   - "Intuitive Probability and Random Processes using MATLAB de Steven M. Kay, Capítulo 22: Markov Chains#Capítulo 22: Markov Chains"
+volumen: 2005
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

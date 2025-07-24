@@ -12,9 +12,9 @@ nombreAutores:
     nombre: Michal
   - apellido: Stillwell
     nombre: David
-anio: "2020"
+anio: 2020
 editorial: Routledge
-edicion: "4"
+edicion: 2020
 volumen: 
 url: 
 capitulos: 

@@ -12,9 +12,9 @@ nombreAutores:
     nombre: Stefan
   - apellido: Skold
     nombre: Johan
-anio: "2018"
+anio: 2018
 editorial: Academic Press
-edicion: "1"
+edicion: 1
 volumen: 
 url: 
 capitulos:
@@ -48,3 +48,22 @@ tags:
 ---
 
 
+<%*
+    const dv = app.plugins.plugins.dataview.api;
+    
+    const libros = dv.pages('#referencia/libro');
+    let cambios = [];
+    
+    for (let libro of libros) {
+        let tArchivo = tp.file.find_tfile(libro.file.path);
+        let cambio = app.fileManager.processFrontMatter(tArchivo, (frontmatter) => {
+            if (frontmatter["volumen"] !== null) {
+                frontmatter["volumen"] = parseInt(frontmatter["volumen"], 10);
+            }
+        });
+        cambios.push(cambio); 
+    }    
+    // await Promise.all(cambios);
+    console.log("Termiando");
+    return
+%>

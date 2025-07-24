@@ -8,7 +8,7 @@ subtituloObra:
 nombreAutores:
   - apellido: Raschka
     nombre: Sebastian
-anio: "2024"
+anio: 2024
 editorial: Manning Publications Co
 edicion: 
 volumen: 

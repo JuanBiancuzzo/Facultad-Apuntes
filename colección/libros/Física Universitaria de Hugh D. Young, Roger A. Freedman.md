@@ -9,10 +9,10 @@ nombreAutores:
     nombre: Hugh D.
   - apellido: Freedman
     nombre: Roger A.
-anio: "2009"
+anio: 2009
 editorial: Addison-Wesley Professional
-edicion: "12"
-volumen: "1"
+edicion: 2009
+volumen: 2009
 url: 
 capitulos: 
 cover: Física Universitaria de Hugh D. Young, Roger A. Freedman.png

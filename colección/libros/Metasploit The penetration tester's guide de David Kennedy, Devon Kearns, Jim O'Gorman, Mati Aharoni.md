@@ -13,7 +13,7 @@ nombreAutores:
     nombre: Jim
   - apellido: Aharoni
     nombre: Mati
-anio: "2011"
+anio: 2011
 editorial: No Starch Press
 edicion: 
 volumen: 

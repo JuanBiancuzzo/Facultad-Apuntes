@@ -12,10 +12,10 @@ nombreAutores:
     nombre: Robert B.
   - apellido: Sands
     nombre: Matthew
-anio: "1964"
+anio: 1964
 editorial: Addison-Wesley Professional
 edicion: 
-volumen: "1"
+volumen: .nan
 url: https://www.feynmanlectures.caltech.edu/I_toc.html
 capitulos: 
 cover: The Feynman Lectures on Physics, Mainly Mechanics, Radiation and Heat de Richard P. Feynman, Robert B. Leighton, Matthew Sands.jpg

@@ -8,10 +8,10 @@ subtituloObra: Sorting and Searching
 nombreAutores:
   - apellido: Knuth
     nombre: Donald
-anio: "1998"
+anio: 1998
 editorial: Addison-Wesley Professional
-edicion: "2"
-volumen: "3"
+edicion: 1998
+volumen: 1998
 url: 
 capitulos: 
 cover: The Art of Computer Programing, sorting and Searching (vol. 3) de Donald Knuth.jpg

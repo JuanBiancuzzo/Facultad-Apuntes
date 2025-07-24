@@ -12,7 +12,7 @@ nombreAutores:
     nombre: Tom
   - apellido: Wright
     nombre: Hyrum
-anio: "2020"
+anio: 2020
 editorial: O'Reilly Media, Inc.
 edicion: 
 volumen: 

@@ -8,9 +8,9 @@ subtituloObra: What It Takes to Disappear
 nombreAutores:
   - apellido: Bazzell
     nombre: Michael
-anio: "2024"
+anio: 2024
 editorial: CreateSpace Independent Publishing Platform
-edicion: "4"
+edicion: 2024
 volumen: 
 url: 
 capitulos: 

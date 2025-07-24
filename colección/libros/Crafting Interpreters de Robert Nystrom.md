@@ -8,7 +8,7 @@ subtituloObra:
 nombreAutores:
   - apellido: Nystrom
     nombre: Robert
-anio: "2015"
+anio: 2015
 editorial: Robert Nystrom
 edicion: 
 volumen: 

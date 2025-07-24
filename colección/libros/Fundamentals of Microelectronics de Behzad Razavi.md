@@ -8,9 +8,9 @@ subtituloObra:
 nombreAutores:
   - apellido: Razavi
     nombre: Behzad
-anio: "2013"
+anio: 2013
 editorial: Wiley Publishing
-edicion: "2"
+edicion: 2013
 volumen: 
 url: 
 capitulos:

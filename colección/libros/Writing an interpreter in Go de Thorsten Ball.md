@@ -7,7 +7,7 @@ tituloObra: Writing an interpreter in Go
 nombreAutores:
   - apellido: Ball
     nombre: Thorsten
-anio: "2016"
+anio: 2016
 editorial: Thorsten Ball
 edicion: 
 volumen: 

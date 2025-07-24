@@ -8,7 +8,7 @@ subtituloObra:
 nombreAutores:
   - apellido: Poldrack
     nombre: Russell A.
-anio: "2018"
+anio: 2018
 editorial: Stanford University
 edicion: 
 volumen: 

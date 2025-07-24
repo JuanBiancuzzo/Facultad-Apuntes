@@ -14,9 +14,9 @@ nombreAutores:
     apellido: Lewis
   - nombre: Robert G.
     apellido: Meyer
-anio: "2009"
+anio: 2009
 editorial: Wiley Publishing
-edicion: "5"
+edicion: 2009
 volumen: 
 url: 
 capitulos:

@@ -9,10 +9,10 @@ nombreAutores:
     nombre: Alex
   - apellido: Lam
     nombre: Sahn
-anio: "2022"
+anio: 2022
 editorial: Byte Code LLC
 edicion: 
-volumen: "2"
+volumen: .nan
 url: 
 capitulos: 
 cover: System Design Interview, An Insider's Guide (Vol. 2) de Alex Xu, Sahn Lam.jpg

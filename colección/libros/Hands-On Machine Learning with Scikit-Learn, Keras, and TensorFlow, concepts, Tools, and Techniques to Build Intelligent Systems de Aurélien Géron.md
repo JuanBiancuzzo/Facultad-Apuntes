@@ -8,9 +8,9 @@ subtituloObra: Concepts, Tools, and Techniques to Build Intelligent Systems
 nombreAutores:
   - apellido: Géron
     nombre: Aurélien
-anio: "2019"
+anio: 2019
 editorial: O'Reilly Media, Inc.
-edicion: "2"
+edicion: 2019
 volumen: 
 url: 
 capitulos: 

@@ -8,9 +8,9 @@ subtituloObra: Algoritmos, estructuras de datos y objetos
 nombreAutores:
   - apellido: Aguilar
     nombre: Luis Joyanes
-anio: "2008"
+anio: 2008
 editorial: McGraw-Hill Interamericana de España S.L
-edicion: "5"
+edicion: 2008
 volumen: 
 url: 
 capitulos: 

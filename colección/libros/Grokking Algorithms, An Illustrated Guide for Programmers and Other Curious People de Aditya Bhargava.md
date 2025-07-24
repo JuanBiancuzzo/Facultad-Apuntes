@@ -8,7 +8,7 @@ subtituloObra: An Illustrated Guide for Programmers and Other Curious People
 nombreAutores:
   - apellido: Bhargava
     nombre: Aditya
-anio: "2016"
+anio: 2016
 editorial: Manning Publications Co
 edicion: 
 volumen: 

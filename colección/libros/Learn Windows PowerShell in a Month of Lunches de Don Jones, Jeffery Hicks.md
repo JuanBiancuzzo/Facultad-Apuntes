@@ -10,9 +10,9 @@ nombreAutores:
     nombre: Don
   - apellido: Hicks
     nombre: Jeffery
-anio: "2012"
+anio: 2012
 editorial: Manning Publications Co
-edicion: "2"
+edicion: 2012
 volumen: 
 url: 
 capitulos: 

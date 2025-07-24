@@ -8,9 +8,9 @@ subtituloObra:
 nombreAutores:
   - apellido: Colliot
     nombre: Olivier
-anio: "2023"
+anio: 2023
 editorial: Humana Press
-edicion: "1"
+edicion: 2023
 volumen: 
 url: 
 capitulos:

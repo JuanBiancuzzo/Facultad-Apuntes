@@ -7,7 +7,7 @@ tituloObra: How Emotions Are Made
 nombreAutores:
   - apellido: Feldman Barrett
     nombre: Lisa
-anio: "2017"
+anio: 2017
 editorial: Houghton Mifflin Hardcourt
 edicion: 
 volumen: 

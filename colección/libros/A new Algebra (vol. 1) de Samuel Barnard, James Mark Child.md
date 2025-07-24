@@ -10,14 +10,14 @@ nombreAutores:
     nombre: Samuel
   - apellido: Child
     nombre: James Mark
-anio: "2022"
+anio: 2022
 editorial: Legare Street Press
 edicion: 
-volumen: "1"
+volumen: .nan
 url: 
-capitulos: []
+capitulos: 
 cover: A new Algebra (vol. 1) de Samuel Barnard, J M Child.jpg
-aliases: []
+aliases: 
 tags:
   - referencia/libro
   - colección/biblioteca/libro

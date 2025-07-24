@@ -8,7 +8,7 @@ subtituloObra: Concepts and Design
 nombreAutores:
   - apellido: Sinha
     nombre: Pradeep K.
-anio: "1996"
+anio: 1996
 editorial: Wiley-IEEE Press
 edicion: 
 volumen: 

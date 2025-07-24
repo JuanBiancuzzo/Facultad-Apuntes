@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Patricio
   - apellido: Lowe
     nombre: Jen
-anio: "2015"
+anio: 2015
 editorial: Patricio Gonzalez Vivo
 edicion: 
 volumen: 

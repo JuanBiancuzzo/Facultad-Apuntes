@@ -7,7 +7,7 @@ tituloObra: Leveling Up with SQL
 nombreAutores:
   - apellido: Simon
     nombre: Mark
-anio: "2023"
+anio: 2023
 editorial: Apress
 edicion: 
 volumen: 

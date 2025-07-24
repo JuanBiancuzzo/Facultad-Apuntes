@@ -9,7 +9,7 @@ nombreAutores:
     nombre: Frank
   - apellido: Johnston
     nombre: Ollie
-anio: "1981"
+anio: 1981
 editorial: Walt Disney Productions
 edicion: 
 volumen: 

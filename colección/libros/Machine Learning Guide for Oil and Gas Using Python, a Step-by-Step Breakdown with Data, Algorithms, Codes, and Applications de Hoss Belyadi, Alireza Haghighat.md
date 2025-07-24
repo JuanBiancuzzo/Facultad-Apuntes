@@ -10,9 +10,9 @@ nombreAutores:
     nombre: Hoss
   - apellido: Haghighat
     nombre: Alireza
-anio: "2021"
+anio: 2021
 editorial: Gulf Professional Publishing
-edicion: "1"
+edicion: 2021
 volumen: 
 url: 
 capitulos:

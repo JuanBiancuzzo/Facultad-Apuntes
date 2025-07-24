@@ -8,7 +8,7 @@ subtituloObra:
 nombreAutores:
   - apellido: Krick
     nombre: Teresa
-anio: "2017"
+anio: 2017
 editorial: Departamento de Matemática, Facultad de Ciencias Exactas y Naturales
 edicion: 
 volumen: 

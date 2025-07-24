@@ -8,9 +8,9 @@ subtituloObra: A Practical Handbook of Software Construction
 nombreAutores:
   - apellido: McConnell
     nombre: Steve
-anio: "2004"
+anio: 2004
 editorial: Microsoft Press
-edicion: "2"
+edicion: 2004
 volumen: 
 url: 
 capitulos: 

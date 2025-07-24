@@ -9,7 +9,7 @@ nombreAutores:
     nombre: Silvanus P.
   - apellido: Gardner
     nombre: Martin
-anio: "1998"
+anio: 1998
 editorial: St. Martin's Press
 edicion: 
 volumen: 

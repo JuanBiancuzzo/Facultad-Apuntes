@@ -8,9 +8,9 @@ subtituloObra: Data Wrangling with pandas, NumPy and Jupyter
 nombreAutores:
   - apellido: McKinney
     nombre: Wes
-anio: "2022"
+anio: 2022
 editorial: O'Reilly Media, Inc.
-edicion: "3"
+edicion: 2022
 volumen: 
 url: 
 capitulos: 

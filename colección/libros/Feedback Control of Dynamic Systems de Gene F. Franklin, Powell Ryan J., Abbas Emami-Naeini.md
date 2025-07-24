@@ -15,9 +15,9 @@ nombreAutores:
     apellido: Ryan J.
   - nombre: Abbas
     apellido: Emami-Naeini
-anio: "2018"
+anio: 2018
 editorial: Pearson Education, Inc.
-edicion: "8"
+edicion: 2018
 capitulos:
   - numeroCapitulo: "1"
     nombreCapitulo: An Overview and Brief History of Feedback Control
@@ -100,6 +100,7 @@ aliases:
   - "Feedback Control of Dynamic Systems de Gene F. Franklin, Powell Ryan J., Abbas Emami-Naeini, Capítulo 8: Digital Control#Capítulo 8: Digital Control"
   - "Feedback Control of Dynamic Systems de Gene F. Franklin, Powell Ryan J., Abbas Emami-Naeini, Capítulo 9: Nonlinear Systems#Capítulo 9: Nonlinear Systems"
   - "Feedback Control of Dynamic Systems de Gene F. Franklin, Powell Ryan J., Abbas Emami-Naeini, Capítulo 10: Control System Design: Principles and Case Studies#Capítulo 10: Control System Design: Principles and Case Studies"
+volumen: 2018
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

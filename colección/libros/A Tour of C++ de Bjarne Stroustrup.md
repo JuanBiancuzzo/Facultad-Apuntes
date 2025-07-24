@@ -8,9 +8,9 @@ subtituloObra: ""
 nombreAutores:
   - apellido: Stroustrup
     nombre: Bjarne
-anio: "2018"
+anio: 2018
 editorial: Addison-Wesley Professional
-edicion: "2"
+edicion: 2018
 volumen: 
 url: 
 capitulos: 

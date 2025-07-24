@@ -8,7 +8,7 @@ subtituloObra: An introduction to backend development
 nombreAutores:
   - apellido: Palmieri
     nombre: Luca
-anio: "2022"
+anio: 2022
 editorial: Independently published
 edicion: 
 volumen: 

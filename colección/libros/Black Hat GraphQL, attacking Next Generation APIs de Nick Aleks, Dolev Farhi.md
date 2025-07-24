@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Nick
   - apellido: Farhi
     nombre: Dolev
-anio: "2023"
+anio: 2023
 editorial: No Starch Press
 edicion: 
 volumen: 

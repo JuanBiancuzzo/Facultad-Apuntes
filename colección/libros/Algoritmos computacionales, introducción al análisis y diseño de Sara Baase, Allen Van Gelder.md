@@ -10,9 +10,9 @@ nombreAutores:
     nombre: Sara
   - apellido: Van Gelder
     nombre: Allen
-anio: "2000"
+anio: 2000
 editorial: Addison-Wesley Professional
-edicion: "3"
+edicion: 2000
 volumen: 
 url: 
 capitulos: 

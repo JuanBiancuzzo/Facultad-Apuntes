@@ -8,7 +8,7 @@ subtituloObra: The Guide to Finding and Reporting Web Vulnerabilities
 nombreAutores:
   - apellido: Li
     nombre: Vickie
-anio: "2021"
+anio: 2021
 editorial: No Starch Press
 edicion: 
 volumen: 

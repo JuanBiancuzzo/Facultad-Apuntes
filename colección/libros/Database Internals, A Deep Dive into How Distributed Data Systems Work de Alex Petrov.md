@@ -8,9 +8,9 @@ subtituloObra: A Deep Dive into How Distributed Data Systems Work
 nombreAutores:
   - apellido: Petrov
     nombre: Alex
-anio: "2019"
+anio: 2019
 editorial: O'Reilly Media, Inc.
-edicion: "1"
+edicion: 2019
 volumen: 
 url: 
 capitulos: 

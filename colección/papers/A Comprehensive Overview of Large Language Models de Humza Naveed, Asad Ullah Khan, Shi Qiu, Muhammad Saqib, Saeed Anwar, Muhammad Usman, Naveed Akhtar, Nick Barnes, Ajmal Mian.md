@@ -24,13 +24,13 @@ autores:
     nombre: Ajmal
 tituloInforme: A Comprehensive Overview of Large Language Models
 numeroInforme: 
-anio: "2024"
-editores: []
+anio: 2024
+editores: 
 url: https://doi.org/10.48550/arXiv.2307.06435
-tags: 
- - referencia/paper
- - biblioteca/paper
- - nota/investigacion
+tags:
+  - referencia/paper
+  - biblioteca/paper
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

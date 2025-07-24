@@ -12,9 +12,9 @@ numReferencia: 922
 nombreAutores:
   - nombre: Rashid
     apellido: Mahummad H.
-anio: "2010"
+anio: 2010
 editorial: CL Engineering
-edicion: "2"
+edicion: 2010
 capitulos:
   - numeroCapitulo: "1"
     nombreCapitulo: Introduction to Electronics and Design
@@ -145,6 +145,7 @@ aliases:
   - "Microelectronic Circuits, Analysis & Design de Rashid Mahummad H., Capítulo 14: Operational Amplifiers#Capítulo 14: Operational Amplifiers"
   - "Microelectronic Circuits, Analysis & Design de Rashid Mahummad H., Capítulo 15: Introduction to Digital Electronics#Capítulo 15: Introduction to Digital Electronics"
   - "Microelectronic Circuits, Analysis & Design de Rashid Mahummad H., Capítulo 16: Integrated Analog Circuits and Applications#Capítulo 16: Integrated Analog Circuits and Applications"
+volumen: 2010
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -12,7 +12,7 @@ nombreAutores:
     nombre: Yuxi (Hayden)
   - apellido: Mirjalili
     nombre: Vahid
-anio: "2022"
+anio: 2022
 editorial: Packt Publishing
 edicion: 
 volumen: 

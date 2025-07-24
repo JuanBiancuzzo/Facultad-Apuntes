@@ -12,9 +12,9 @@ nombreAutores:
     nombre: Xun
   - apellido: Ou
     nombre: Jinping
-anio: "2014"
+anio: 2014
 editorial: Butterworth-Heinemann
-edicion: "1"
+edicion: 2014
 volumen: 
 url: 
 capitulos:

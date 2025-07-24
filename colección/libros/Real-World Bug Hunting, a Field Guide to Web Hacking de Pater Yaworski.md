@@ -8,7 +8,7 @@ subtituloObra: A Field Guide to Web Hacking
 nombreAutores:
   - apellido: Yaworski
     nombre: Pater
-anio: "2019"
+anio: 2019
 editorial: No Starch Press
 edicion: 
 volumen: 

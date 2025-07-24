@@ -13,7 +13,7 @@ nombreAutores:
     nombre: Pramod
   - apellido: Dehghani
     nombre: Zhamak
-anio: "2021"
+anio: 2021
 editorial: O'Reilly Media, Inc.
 edicion: 
 volumen: 

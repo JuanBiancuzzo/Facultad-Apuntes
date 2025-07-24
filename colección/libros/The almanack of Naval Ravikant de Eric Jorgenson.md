@@ -7,7 +7,7 @@ tituloObra: The almanack of Naval Ravikant
 nombreAutores:
   - apellido: Jorgenson
     nombre: Eric
-anio: "2020"
+anio: 2020
 editorial: Magrathea Publishing
 edicion: 
 volumen: 

@@ -8,9 +8,9 @@ subtituloObra: An Iterative Process for Production-Ready Applications
 nombreAutores:
   - apellido: Huyen
     nombre: Chip
-anio: "2022"
+anio: 2022
 editorial: O'Reilly Media, Inc.
-edicion: "1"
+edicion: 2022
 volumen: 
 url: 
 capitulos: 

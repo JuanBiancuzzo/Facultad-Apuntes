@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Isaac
   - apellido: Motte
     nombre: Andrew
-anio: "2018"
+anio: 2018
 editorial: CreateSpace Independent Publishing Platform
 edicion: 
 volumen: 

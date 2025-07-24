@@ -8,9 +8,9 @@ subtituloObra: Data Structures and Algorithmic Puzzles
 nombreAutores:
   - apellido: Karumanchi
     nombre: Narasimha
-anio: "2026"
+anio: 2026
 editorial: CareerMonk Publications
-edicion: "5"
+edicion: 2026
 volumen: 
 url: 
 capitulos: 

@@ -13,9 +13,9 @@ nombreAutores:
     apellido: John
   - nombre: Manolakis
     apellido: Dimitris
-anio: "2006"
+anio: 2006
 editorial: Pearson Education, Inc.
-edicion: "3"
+edicion: 2006
 capitulos:
   - numeroCapitulo: "1"
     nombreCapitulo: Introduction
@@ -114,6 +114,7 @@ aliases:
   - "Digital Signal Processing de Proakis John, Manolakis Dimitris, Capítulo 10: Multirate digital signal processing#Capítulo 10: Multirate digital signal processing"
   - "Digital Signal Processing de Proakis John, Manolakis Dimitris, Capítulo 11: Linear prediction and optimum linear filters#Capítulo 11: Linear prediction and optimum linear filters"
   - "Digital Signal Processing de Proakis John, Manolakis Dimitris, Capítulo 12: Power spectrum estimation#Capítulo 12: Power spectrum estimation"
+volumen: 2006
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

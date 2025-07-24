@@ -7,7 +7,7 @@ tituloObra: How we learn
 nombreAutores:
   - apellido: Dehaene
     nombre: Stanislas
-anio: "2020"
+anio: 2020
 editorial: Viking Press
 edicion: 
 volumen: 

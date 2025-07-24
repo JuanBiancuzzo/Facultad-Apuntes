@@ -10,10 +10,10 @@ nombreAutores:
     nombre: William R.
   - apellido: Wright
     nombre: Gary R.
-anio: "1996"
+anio: 1996
 editorial: Addison-Wesley Professional
-edicion: "1"
-volumen: "3"
+edicion: 1996
+volumen: 1996
 url: 
 capitulos: 
 cover: TCP,IP Illustrated, TCP for Transactions, HTTP, NNTP and the Unix Domain Protocols (vol. 3) de William R. Stevens, Gary R. Wright.jpg

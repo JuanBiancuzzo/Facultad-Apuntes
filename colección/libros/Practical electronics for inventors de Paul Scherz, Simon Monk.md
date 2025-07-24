@@ -10,9 +10,9 @@ nombreAutores:
     nombre: Paul
   - apellido: Monk
     nombre: Simon
-anio: "2016"
+anio: 2016
 editorial: The McGraw-Hill Companies
-edicion: "4"
+edicion: 2016
 volumen: 
 url: 
 capitulos: 

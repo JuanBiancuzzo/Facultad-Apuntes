@@ -7,9 +7,9 @@ tituloObra: LTSPICE, Análisis de circuitos y dispositivos electrónicos
 nombreAutores:
   - apellido: González
     nombre: Mónica Liliana
-anio: "2018"
+anio: 2018
 editorial: Editorial de la Universidad de La Plata
-edicion: "1"
+edicion: 2018
 volumen: 
 url: 
 capitulos: 

@@ -14,7 +14,7 @@ nombreAutores:
     apellido: Aström
   - nombre: Richard M.
     apellido: Murray
-anio: "2008"
+anio: 2008
 editorial: Princeton University Press
 capitulos:
   - numeroCapitulo: "1"
@@ -138,6 +138,8 @@ aliases:
   - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 13: Robust Performance#Capítulo 13: Robust Performance"
   - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 14: Fundamental Limits#Capítulo 14: Fundamental Limits"
   - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 15: Architecture and System Design#Capítulo 15: Architecture and System Design"
+edicion: 2008
+volumen: 2008
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

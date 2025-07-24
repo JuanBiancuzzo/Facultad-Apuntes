@@ -8,9 +8,9 @@ subtituloObra: 17 Equations That Changed the World
 nombreAutores:
   - apellido: Stewart
     nombre: Ian
-anio: "2012"
+anio: 2012
 editorial: Basic Books
-edicion: "1"
+edicion: 2012
 volumen: 
 url: 
 capitulos: 

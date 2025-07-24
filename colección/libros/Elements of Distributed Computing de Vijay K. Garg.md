@@ -8,7 +8,7 @@ subtituloObra:
 nombreAutores:
   - apellido: Garg
     nombre: Vijay K.
-anio: "2002"
+anio: 2002
 editorial: Wiley-IEEE Press
 edicion: 
 volumen: 

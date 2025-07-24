@@ -8,10 +8,10 @@ subtituloObra: The Protocols
 nombreAutores:
   - apellido: Stevens
     nombre: William R.
-anio: "1994"
+anio: 1994
 editorial: Addison-Wesley Professional
-edicion: "2"
-volumen: "1"
+edicion: 1994
+volumen: 1994
 url: 
 capitulos: 
 cover: TCP,IP Illustrated (vol. 1) de William R. Stevens.jpg

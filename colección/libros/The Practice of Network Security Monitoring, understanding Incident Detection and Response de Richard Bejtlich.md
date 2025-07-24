@@ -8,9 +8,9 @@ subtituloObra: Understanding Incident Detection and Response
 nombreAutores:
   - apellido: Bejtlich
     nombre: Richard
-anio: "2013"
+anio: 2013
 editorial: No Starch Press
-edicion: "1"
+edicion: 2013
 volumen: 
 url: 
 capitulos: 
