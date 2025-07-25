@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Michael
 anio: 2024
 editorial: CreateSpace Independent Publishing Platform
-edicion: 2024
+edicion: 4
 volumen: 
 url: 
 capitulos: 

@@ -12,7 +12,7 @@ nombreAutores:
     nombre: Simon
 anio: 2016
 editorial: The McGraw-Hill Companies
-edicion: 2016
+edicion: 4
 volumen: 
 url: 
 capitulos: 

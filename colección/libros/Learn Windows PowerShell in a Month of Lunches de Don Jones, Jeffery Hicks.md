@@ -12,7 +12,7 @@ nombreAutores:
     nombre: Jeffery
 anio: 2012
 editorial: Manning Publications Co
-edicion: 2012
+edicion: 
 volumen: 
 url: 
 capitulos: 

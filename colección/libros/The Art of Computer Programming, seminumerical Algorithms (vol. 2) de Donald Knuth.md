@@ -10,8 +10,8 @@ nombreAutores:
     nombre: Donald
 anio: 1997
 editorial: Addison-Wesley Professional
-edicion: 1997
-volumen: 1997
+edicion: 3
+volumen: 2
 url: 
 capitulos: 
 cover: The Art of Computer Programming, seminumerical Algorithms (vol. 2) de Donald Knuth.jpg

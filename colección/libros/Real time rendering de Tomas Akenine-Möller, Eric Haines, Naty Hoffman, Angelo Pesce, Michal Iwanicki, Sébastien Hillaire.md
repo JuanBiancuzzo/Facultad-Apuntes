@@ -19,7 +19,7 @@ nombreAutores:
     nombre: Sébastien
 anio: 2018
 editorial: CRC Press
-edicion: 2018
+edicion: 4
 volumen: 
 url: https://www.realtimerendering.com/Real-Time_Rendering_4th-TOC_Preface_Intro_Bib_Index.pdf
 capitulos: 

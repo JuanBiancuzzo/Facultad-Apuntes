@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Olivier
 anio: 2023
 editorial: Humana Press
-edicion: 2023
+edicion: 
 volumen: 
 url: 
 capitulos:

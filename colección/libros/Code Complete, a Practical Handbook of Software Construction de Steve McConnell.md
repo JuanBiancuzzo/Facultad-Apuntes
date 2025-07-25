@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Steve
 anio: 2004
 editorial: Microsoft Press
-edicion: 2004
+edicion: 2
 volumen: 
 url: 
 capitulos: 

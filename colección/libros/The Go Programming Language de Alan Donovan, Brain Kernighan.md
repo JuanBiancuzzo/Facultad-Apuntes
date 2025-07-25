@@ -12,7 +12,7 @@ nombreAutores:
     nombre: Brain
 anio: 2015
 editorial: Addison-Wesley Professional
-edicion: 2015
+edicion: 
 volumen: 
 url: 
 capitulos: 

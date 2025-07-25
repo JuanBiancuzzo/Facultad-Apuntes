@@ -17,7 +17,7 @@ nombreAutores:
     apellido: Emami-Naeini
 anio: 2018
 editorial: Pearson Education, Inc.
-edicion: 2018
+edicion: 8
 capitulos:
   - numeroCapitulo: "1"
     nombreCapitulo: An Overview and Brief History of Feedback Control

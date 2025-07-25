@@ -14,7 +14,7 @@ nombreAutores:
     apellido: Mahummad H.
 anio: 2010
 editorial: CL Engineering
-edicion: 2010
+edicion: 2
 capitulos:
   - numeroCapitulo: "1"
     nombreCapitulo: Introduction to Electronics and Design

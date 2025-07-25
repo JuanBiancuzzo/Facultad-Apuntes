@@ -12,7 +12,7 @@ nombreAutores:
     nombre: Allen
 anio: 2000
 editorial: Addison-Wesley Professional
-edicion: 2000
+edicion: 3
 volumen: 
 url: 
 capitulos: 

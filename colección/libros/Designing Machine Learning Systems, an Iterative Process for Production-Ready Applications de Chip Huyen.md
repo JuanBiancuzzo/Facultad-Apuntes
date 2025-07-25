@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Chip
 anio: 2022
 editorial: O'Reilly Media, Inc.
-edicion: 2022
+edicion: 
 volumen: 
 url: 
 capitulos: 

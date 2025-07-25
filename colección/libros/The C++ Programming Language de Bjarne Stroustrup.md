@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Bjarne
 anio: 2013
 editorial: Addison-Wesley Professional
-edicion: 2013
+edicion: 4
 volumen: 
 url: 
 capitulos: 

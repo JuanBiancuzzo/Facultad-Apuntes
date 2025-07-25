@@ -10,8 +10,8 @@ nombreAutores:
     nombre: Donald
 anio: 2022
 editorial: Addison-Wesley Professional
-edicion: 2022
-volumen: 2022
+edicion: 
+volumen: 4
 url: 
 capitulos: 
 cover: The Art of Computer Programming, combinatorial Algorithms, part 2 (vol. 4) de Donald Knuth.jpg

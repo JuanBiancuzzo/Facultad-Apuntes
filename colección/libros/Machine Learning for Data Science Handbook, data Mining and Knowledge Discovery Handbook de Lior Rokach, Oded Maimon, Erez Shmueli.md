@@ -14,7 +14,7 @@ nombreAutores:
     nombre: Erez
 anio: 2023
 editorial: Springer
-edicion: 2023
+edicion: 3
 volumen: 
 url: https://doi.org/10.1007/978-3-031-24628-9_16
 capitulos:

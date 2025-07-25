@@ -12,7 +12,7 @@ nombreAutores:
     nombre: Jerald A.
 anio: 1992
 editorial: Career Education
-edicion: 1992
+edicion: 3
 volumen: 
 url: 
 capitulos:

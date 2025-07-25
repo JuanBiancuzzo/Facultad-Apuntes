@@ -16,7 +16,7 @@ nombreAutores:
     nombre: Jennifer
 anio: 2016
 editorial: O'Reilly Media, Inc.
-edicion: 2016
+edicion: 
 volumen: 
 url: 
 capitulos: 

@@ -12,7 +12,7 @@ nombreAutores:
     nombre: Keith
 anio: 2016
 editorial: Pearson Education, Inc.
-edicion: 2016
+edicion: 7
 volumen: 
 url: 
 capitulos:

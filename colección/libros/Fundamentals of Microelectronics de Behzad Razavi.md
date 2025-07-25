@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Behzad
 anio: 2013
 editorial: Wiley Publishing
-edicion: 2013
+edicion: 2
 volumen: 
 url: 
 capitulos:

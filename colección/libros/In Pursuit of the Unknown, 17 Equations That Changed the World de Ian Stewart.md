@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Ian
 anio: 2012
 editorial: Basic Books
-edicion: 2012
+edicion: 
 volumen: 
 url: 
 capitulos: 

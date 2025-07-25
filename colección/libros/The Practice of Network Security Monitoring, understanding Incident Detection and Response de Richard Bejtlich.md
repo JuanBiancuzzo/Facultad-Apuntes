@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Richard
 anio: 2013
 editorial: No Starch Press
-edicion: 2013
+edicion: 
 volumen: 
 url: 
 capitulos: 

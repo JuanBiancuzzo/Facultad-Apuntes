@@ -14,7 +14,7 @@ nombreAutores:
     nombre: David
 anio: 2020
 editorial: Routledge
-edicion: 2020
+edicion: 4
 volumen: 
 url: 
 capitulos: 

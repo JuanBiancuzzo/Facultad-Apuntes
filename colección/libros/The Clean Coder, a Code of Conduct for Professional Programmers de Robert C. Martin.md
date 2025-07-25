@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Robert C.
 anio: 2011
 editorial: Pearson Education, Inc.
-edicion: 2011
+edicion: 
 volumen: 
 url: 
 capitulos: 

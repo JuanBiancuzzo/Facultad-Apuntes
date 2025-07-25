@@ -11,7 +11,7 @@ tipoDistribucion: multivariada
 ---
 La variable aleatoria Multinomial modela la cantidad de observaciones de cada resultado posible al repetir $n$ veces de forma independiente un experimento que toma valores en $\Set{1, \cdots, k}$ con probabilidades $p_i$ para cada resultado $i \in \Set{1, \cdots, k}$
 
-Se dice que una [[Vector aleatorio]] $X = (X_1, X_2, \cdots, X_k)$ tiene distribución Multinominal de parametros $n$ y $p_1, p_2, \cdots, p_k$ si su [[Función de masa de probabilidad]] es $$ p_X(x_1, x_2, \cdots, x_k) = \frac{n!}{x_1! \cdot x_2! \cdots x_k!} \cdot p_1^{x_1} \cdot p_2^{x_2} \cdots p_k^{x_k} $$
+Se dice que una [[Vector aleatorio]] $X = (X_1, X_2, \cdots, X_k)$ tiene distribución Multinominal de parámetros $n$ y $p_1, p_2, \cdots, p_k$ si su [[Función de masa de probabilidad]] es $$ p_X(x_1, x_2, \cdots, x_k) = \frac{n!}{x_1! \cdot x_2! \cdots x_k!} \cdot p_1^{x_1} \cdot p_2^{x_2} \cdots p_k^{x_k} $$
 
 ### Notación
 $$ X \sim M(n, p_1, p_2, \cdots, p_k) $$

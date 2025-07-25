@@ -12,7 +12,7 @@ nombreAutores:
     nombre: Denny
 anio: 2013
 editorial: Routledge
-edicion: 2013
+edicion: 
 volumen: 
 url: 
 capitulos: 

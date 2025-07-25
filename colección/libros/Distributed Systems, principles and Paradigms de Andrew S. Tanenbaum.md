@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Andrew S.
 anio: 2016
 editorial: CreateSpace Independent Publishing Platform
-edicion: 2016
+edicion: 2
 volumen: 
 url: 
 capitulos: 

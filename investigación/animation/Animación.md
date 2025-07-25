@@ -15,7 +15,7 @@ Vamos a ver como producir las mejores animaciones, con el menor esfuerzo posible
 
 También vamos a ver animación tradicional para entender ese paradigma
 
-Vamos a investigar como se crean animaciones, y como mejorarlas, como propone el proyecto [[Better animations in my humble opinion|better animations in my humble opinion]]
+Vamos a investigar como se crean animaciones, y como mejorarlas, como propone el proyecto [[proyecto práctico/better animations in my humble opinion/Better animations in my humble opinion|better animations in my humble opinion]]
 ## Resumen
 ---
 Nos podemos basar en canales como 

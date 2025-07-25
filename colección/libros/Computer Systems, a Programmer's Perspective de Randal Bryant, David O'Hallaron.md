@@ -12,7 +12,7 @@ nombreAutores:
     nombre: David
 anio: 2015
 editorial: Pearson Education, Inc.
-edicion: 2015
+edicion: 3
 volumen: 
 url: 
 capitulos: 

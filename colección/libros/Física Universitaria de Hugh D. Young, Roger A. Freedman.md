@@ -11,8 +11,8 @@ nombreAutores:
     nombre: Roger A.
 anio: 2009
 editorial: Addison-Wesley Professional
-edicion: 2009
-volumen: 2009
+edicion: 12
+volumen: 1
 url: 
 capitulos: 
 cover: Física Universitaria de Hugh D. Young, Roger A. Freedman.png

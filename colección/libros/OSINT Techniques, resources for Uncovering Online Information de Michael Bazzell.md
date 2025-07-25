@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Michael
 anio: 2023
 editorial: CreateSpace Independent Publishing Platform
-edicion: 2023
+edicion: 10
 volumen: 
 url: 
 capitulos: 

@@ -9,7 +9,7 @@ nombreAutores:
     nombre: Henry S.
 anio: 2012
 editorial: Pearson Education, Inc.
-edicion: 2012
+edicion: 2
 volumen: 
 url: 
 capitulos: 

@@ -9,7 +9,7 @@ nombreAutores:
     nombre: Martin
 anio: 2019
 editorial: Addison-Wesley Professional
-edicion: 2019
+edicion: 2
 volumen: 
 url: 
 capitulos: 

@@ -12,7 +12,7 @@ nombreAutores:
     nombre: Dennis M.
 anio: 1988
 editorial: Pearson Education, Inc.
-edicion: 1988
+edicion: 2
 volumen: 
 url: 
 capitulos: 

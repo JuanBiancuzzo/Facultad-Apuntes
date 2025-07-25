@@ -10,8 +10,8 @@ nombreAutores:
     nombre: William R.
 anio: 1994
 editorial: Addison-Wesley Professional
-edicion: 1994
-volumen: 1994
+edicion: 2
+volumen: 1
 url: 
 capitulos: 
 cover: TCP,IP Illustrated (vol. 1) de William R. Stevens.jpg

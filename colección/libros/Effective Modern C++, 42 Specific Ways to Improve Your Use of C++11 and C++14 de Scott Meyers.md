@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Scott
 anio: 2014
 editorial: O'Reilly Media, Inc.
-edicion: 2014
+edicion: 
 volumen: 
 url: 
 capitulos: 

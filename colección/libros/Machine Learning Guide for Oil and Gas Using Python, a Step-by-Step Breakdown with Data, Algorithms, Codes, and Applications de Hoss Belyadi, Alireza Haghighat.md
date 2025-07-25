@@ -12,7 +12,7 @@ nombreAutores:
     nombre: Alireza
 anio: 2021
 editorial: Gulf Professional Publishing
-edicion: 2021
+edicion: 
 volumen: 
 url: 
 capitulos:

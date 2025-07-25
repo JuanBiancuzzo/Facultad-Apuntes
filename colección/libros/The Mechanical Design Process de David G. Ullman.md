@@ -9,7 +9,7 @@ nombreAutores:
     nombre: David G.
 anio: 1991
 editorial: The McGraw-Hill Companies
-edicion: 1991
+edicion: 4
 volumen: 
 url: 
 capitulos: 

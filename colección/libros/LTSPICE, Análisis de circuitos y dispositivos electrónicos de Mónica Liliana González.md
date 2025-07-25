@@ -9,7 +9,7 @@ nombreAutores:
     nombre: Mónica Liliana
 anio: 2018
 editorial: Editorial de la Universidad de La Plata
-edicion: 2018
+edicion: 
 volumen: 
 url: 
 capitulos: 

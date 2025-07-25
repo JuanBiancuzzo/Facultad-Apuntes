@@ -16,7 +16,7 @@ nombreAutores:
     nombre: Alexander J.
 anio: 2023
 editorial: Cambridge University Press
-edicion: 2023
+edicion: 
 volumen: 
 url: 
 capitulos: 

@@ -9,7 +9,7 @@ nombreAutores:
     nombre: Gerard
 anio: 2024
 editorial: Gerard Beekmans
-edicion: 2024
+edicion: 
 volumen: 
 url: https://www.linuxfromscratch.org/lfs/downloads/12.1/LFS-BOOK-12.1.pdf
 capitulos: 

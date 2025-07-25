@@ -12,8 +12,8 @@ nombreAutores:
     nombre: Gary R.
 anio: 1996
 editorial: Addison-Wesley Professional
-edicion: 1996
-volumen: 1996
+edicion: 
+volumen: 3
 url: 
 capitulos: 
 cover: TCP,IP Illustrated, TCP for Transactions, HTTP, NNTP and the Unix Domain Protocols (vol. 3) de William R. Stevens, Gary R. Wright.jpg

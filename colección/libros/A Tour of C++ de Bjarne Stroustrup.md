@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Bjarne
 anio: 2018
 editorial: Addison-Wesley Professional
-edicion: 2018
+edicion: 2
 volumen: 
 url: 
 capitulos: 

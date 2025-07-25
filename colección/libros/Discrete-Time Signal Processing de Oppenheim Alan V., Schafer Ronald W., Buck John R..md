@@ -107,8 +107,8 @@ aliases:
   - "Discrete-Time Signal Processing de Oppenheim Alan V., Schafer Ronald W., Buck John R., Capítulo 9: Computation of the Discrete Fourier Transform#Capítulo 9: Computation of the Discrete Fourier Transform"
   - "Discrete-Time Signal Processing de Oppenheim Alan V., Schafer Ronald W., Buck John R., Capítulo 10: Fourier Analysis of Signals Using the Discrete Fourier Transform#Capítulo 10: Fourier Analysis of Signals Using the Discrete Fourier Transform"
   - "Discrete-Time Signal Processing de Oppenheim Alan V., Schafer Ronald W., Buck John R., Capítulo 11: Discrete Hilbert Transforms#Capítulo 11: Discrete Hilbert Transforms"
-edicion: 1999
-volumen: 1999
+edicion: 2
+volumen:
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

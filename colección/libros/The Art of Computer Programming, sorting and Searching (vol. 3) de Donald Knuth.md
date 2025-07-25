@@ -3,15 +3,15 @@ dia: 2024-11-17
 etapa: sin-empezar
 tipoCita: Libro
 numReferencia: 557
-tituloObra: The Art of Computer Programing
+tituloObra: The Art of Computer Programming
 subtituloObra: Sorting and Searching
 nombreAutores:
   - apellido: Knuth
     nombre: Donald
 anio: 1998
 editorial: Addison-Wesley Professional
-edicion: 1998
-volumen: 1998
+edicion: 2
+volumen: 3
 url: 
 capitulos: 
 cover: The Art of Computer Programing, sorting and Searching (vol. 3) de Donald Knuth.jpg

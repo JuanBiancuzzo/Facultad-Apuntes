@@ -29,7 +29,7 @@ Leer:
 * [[Algorithms for Scalable Synchronization on Shared-Memory Multiprocessors de John M. Mellor-Crummey, Michael L. Scott|Algorithms for Scalable Synchronization on Shared-Memory Multiprocessors]]
 * [[The Art of Computer Programming, fundamental Algorithms (vol. 1) de Donald Knuth|The Art of Computer Programming, fundamental Algorithms (vol. 1)]]
 * [[The Art of Computer Programming, seminumerical Algorithms (vol. 2) de Donald Knuth|The Art of Computer Programming, seminumerical Algorithms (vol. 2)]]
-* [[The Art of Computer Programing, sorting and Searching (vol. 3) de Donald Knuth|The Art of Computer Programing, sorting and Searching (vol. 3)]]
+* [[The Art of Computer Programming, sorting and Searching (vol. 3) de Donald Knuth|The Art of Computer Programing, sorting and Searching (vol. 3)]]
 * [[The Art of Computer Programming, combinatorial Algorithms, part 1 (vol. 4) de Donald Knuth|The Art of Computer Programming, combinatorial Algorithms, part 1 (vol. 4)]]
 * [[The Art of Computer Programming, combinatorial Algorithms, part 2 (vol. 4) de Donald Knuth|The Art of Computer Programming, combinatorial Algorithms, part 2 (vol. 4)]]
 * [[Grokking Algorithms, An Illustrated Guide for Programmers and Other Curious People de Aditya Bhargava|Grokking Algorithms, An Illustrated Guide for Programmers and Other Curious People]]

@@ -111,8 +111,8 @@ aliases:
   - "Electrónica básica para ingenieros de Gustavo Adolfo Ruiz Robredo, Capítulo 10: Generadores de señal#Capítulo 10: Generadores de señal"
   - "Electrónica básica para ingenieros de Gustavo Adolfo Ruiz Robredo, Capítulo 11: Reguladores de tensión#Capítulo 11: Reguladores de tensión"
   - "Electrónica básica para ingenieros de Gustavo Adolfo Ruiz Robredo, Capítulo 12: Introducción a los tiristores#Capítulo 12: Introducción a los tiristores"
-edicion: 2009
-volumen: 2009
+edicion: 
+volumen:
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Aurélien
 anio: 2019
 editorial: O'Reilly Media, Inc.
-edicion: 2019
+edicion: 2
 volumen: 
 url: 
 capitulos: 

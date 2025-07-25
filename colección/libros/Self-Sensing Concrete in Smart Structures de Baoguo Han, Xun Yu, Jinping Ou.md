@@ -14,7 +14,7 @@ nombreAutores:
     nombre: Jinping
 anio: 2014
 editorial: Butterworth-Heinemann
-edicion: 2014
+edicion: 
 volumen: 
 url: 
 capitulos:

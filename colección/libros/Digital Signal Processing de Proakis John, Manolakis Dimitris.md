@@ -15,7 +15,7 @@ nombreAutores:
     apellido: Dimitris
 anio: 2006
 editorial: Pearson Education, Inc.
-edicion: 2006
+edicion: 3
 capitulos:
   - numeroCapitulo: "1"
     nombreCapitulo: Introduction

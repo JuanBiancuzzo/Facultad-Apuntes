@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Patrick
 anio: 2018
 editorial: Springer
-edicion: 2018
+edicion: 
 volumen: 
 url: 
 capitulos: 

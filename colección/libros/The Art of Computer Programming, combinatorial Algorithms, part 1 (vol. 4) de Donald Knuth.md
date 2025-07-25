@@ -10,8 +10,8 @@ nombreAutores:
     nombre: Donald
 anio: 2011
 editorial: Addison-Wesley Professional
-edicion: 2011
-volumen: 2011
+edicion: 
+volumen: 4
 url: 
 capitulos: 
 cover: The Art of Computer Programming, combinatorial Algorithms, Parte 1 (vol. 4) de Donald Knuth.jpg

@@ -14,7 +14,7 @@ nombreAutores:
     nombre: Barbara
 anio: 2012
 editorial: Addison-Wesley Professional
-edicion: 2012
+edicion: 5
 volumen: 
 url: 
 capitulos: 

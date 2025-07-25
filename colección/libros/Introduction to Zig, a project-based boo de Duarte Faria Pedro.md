@@ -14,7 +14,7 @@ nombreAutores:
     apellido: Pedro
 anio: 2024
 editorial: Independently published
-edicion: 2024
+edicion: -1
 url: https://github.com/pedropark99/zig-book
 capitulos:
   - numeroCapitulo: "1"
@@ -154,7 +154,7 @@ aliases:
   - "Introduction to Zig, a project-based boo de Duarte Faria Pedro, Capítulo 15: Project 4 - Developing an image filter#Capítulo 15: Project 4 - Developing an image filter"
   - "Introduction to Zig, a project-based boo de Duarte Faria Pedro, Capítulo 16: Introducing threads and parallelism in Zig#Capítulo 16: Introducing threads and parallelism in Zig"
   - "Introduction to Zig, a project-based boo de Duarte Faria Pedro, Capítulo 17: Introducing Vectors and SIMD#Capítulo 17: Introducing Vectors and SIMD"
-volumen: 2024
+volumen:
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

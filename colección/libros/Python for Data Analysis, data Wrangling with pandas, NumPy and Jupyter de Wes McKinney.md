@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Wes
 anio: 2022
 editorial: O'Reilly Media, Inc.
-edicion: 2022
+edicion: 2
 volumen: 
 url: 
 capitulos: 

@@ -14,7 +14,7 @@ nombreAutores:
     nombre: Cole
 anio: 2019
 editorial: Manning Publications Co
-edicion: 2019
+edicion: 
 volumen: 
 url: 
 capitulos: 

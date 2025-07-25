@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Alex
 anio: 2019
 editorial: O'Reilly Media, Inc.
-edicion: 2019
+edicion: 
 volumen: 
 url: 
 capitulos: 

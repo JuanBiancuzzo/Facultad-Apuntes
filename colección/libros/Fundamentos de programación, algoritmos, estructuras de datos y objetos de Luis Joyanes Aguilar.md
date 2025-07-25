@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Luis Joyanes
 anio: 2008
 editorial: McGraw-Hill Interamericana de España S.L
-edicion: 2008
+edicion: 3
 volumen: 
 url: 
 capitulos: 

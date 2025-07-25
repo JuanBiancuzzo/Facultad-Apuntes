@@ -10,7 +10,7 @@ nombreAutores:
     nombre: William
 anio: 2013
 editorial: Pearson Education, Inc.
-edicion: 2013
+edicion: 8
 volumen: 
 url: 
 capitulos: 

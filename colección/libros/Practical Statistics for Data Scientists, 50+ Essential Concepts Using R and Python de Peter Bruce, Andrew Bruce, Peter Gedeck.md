@@ -14,7 +14,7 @@ nombreAutores:
     nombre: Peter
 anio: 2020
 editorial: O'Reilly Media, Inc.
-edicion: 2020
+edicion: 
 volumen: 
 url: 
 capitulos: 

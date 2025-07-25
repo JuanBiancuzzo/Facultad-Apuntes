@@ -12,7 +12,7 @@ nombreAutores:
     nombre: Andrew
 anio: 2019
 editorial: Addison-Wesley Professional
-edicion: 2019
+edicion: 
 volumen: 
 url: 
 capitulos: 

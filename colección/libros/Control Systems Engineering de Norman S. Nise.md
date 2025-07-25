@@ -13,7 +13,7 @@ nombreAutores:
     apellido: Nise
 anio: 2014
 editorial: Wiley Publishing
-edicion: 2014
+edicion: 7
 capitulos:
   - numeroCapitulo: "1"
     nombreCapitulo: Introduction

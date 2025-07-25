@@ -11,7 +11,7 @@ nombreAutores:
     nombre: Gerald Jay
 anio: 1996
 editorial: Massachusetts Institute of Technology Press
-edicion: 1996
+edicion: 2
 volumen: 
 url: https://web.mit.edu/6.001/6.037/sicp.pdf
 capitulos: 

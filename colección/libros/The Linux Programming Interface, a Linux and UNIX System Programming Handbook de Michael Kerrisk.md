@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Michael
 anio: 2010
 editorial: No Starch Press
-edicion: 2010
+edicion: 
 volumen: 
 url: 
 capitulos: 

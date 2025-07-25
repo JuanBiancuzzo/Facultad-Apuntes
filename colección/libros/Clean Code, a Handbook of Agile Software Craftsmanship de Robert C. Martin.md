@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Robert C.
 anio: 2008
 editorial: Pearson Education, Inc.
-edicion: 2008
+edicion: 
 volumen: 
 url: 
 capitulos: 

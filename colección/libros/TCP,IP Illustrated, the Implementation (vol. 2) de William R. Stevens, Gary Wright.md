@@ -12,8 +12,8 @@ nombreAutores:
     nombre: Gary
 anio: 2017
 editorial: Addison-Wesley Professional
-edicion: 2017
-volumen: 2017
+edicion: 
+volumen: 2
 url: 
 capitulos: 
 cover: TCP,IP Illustrated, the Implementation (vol. 2) de William R. Stevens, Gary Wright.jpg

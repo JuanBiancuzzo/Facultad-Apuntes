@@ -10,7 +10,7 @@ nombreAutores:
     nombre: Narasimha
 anio: 2026
 editorial: CareerMonk Publications
-edicion: 2026
+edicion: 5
 volumen: 
 url: 
 capitulos: 

@@ -12,7 +12,7 @@ nombreAutores:
     nombre: Julio Guillermo
 anio: 2024
 editorial: Nueva Librería
-edicion: 2024
+edicion: 2
 volumen: 
 url: 
 capitulos:
