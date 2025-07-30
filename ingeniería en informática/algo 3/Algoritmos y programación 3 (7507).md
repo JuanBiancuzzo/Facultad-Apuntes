@@ -8,7 +8,7 @@ tags:
   - facultad/materia
 etapa: sin-empezar
 correlativas:
-  - "[[Algoritmos y programación 2 (7541)|Algoritmos y programación 2]]"
+  - "[[ingeniería en informática/algo 2/Algoritmos y programación 2 (7541).md]]"
 nombreMateria: Algoritmos y programación 3
 nombreReducido: algo 3
 ---

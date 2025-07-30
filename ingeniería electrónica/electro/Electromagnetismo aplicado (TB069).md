@@ -8,7 +8,7 @@ tags:
   - facultad/materia
 etapa: ampliar
 correlativas:
-  - "[[Análisis de circuitos (8604)|Análisis de Circuitos]]"
+  - "[[ingeniería electrónica/adc/Análisis de circuitos (8604).md]]"
 referencias:
   - "538"
   - "539"

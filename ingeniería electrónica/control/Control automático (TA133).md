@@ -10,8 +10,8 @@ cuatri: 25C1
 plan: "2023"
 codigo: TA133
 correlativas:
-  - "[[ingeniería electrónica/Física 2 A (8202).md|Física 2 A]]"
-  - "[[ingeniería electrónica/señales/Señales y sistemas (TB065).md|Señales y sistemas]]"
+  - "[[ingeniería electrónica/Física 2 A (8202).md]]"
+  - "[[ingeniería electrónica/señales/Señales y sistemas (TB065).md]]"
 referencias:
   - "870"
   - "881"

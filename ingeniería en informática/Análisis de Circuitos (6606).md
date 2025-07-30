@@ -4,12 +4,12 @@ tags:
   - carrera/ingeniería-en-informática/adc
   - facultad/materia-equivalente
 correlativas:
-  - "[[Física 2 A (6203)|Física 2]]"
-  - "[[ingeniería en informática/Análisis Matemático 3 A (6110).md|Análisis Matemático 3 A]]"
+  - "[[ingeniería en informática/fisica 2/Física 2 A (6203).md]]"
+  - "[[ingeniería en informática/Análisis Matemático 3 A (6110).md]]"
 codigo: 6606
 equivalencia: "[[ingeniería electrónica/adc/Análisis de circuitos (8604).md|Análisis de circuitos (8604)]]"
 nombreMateria: Análisis de Circuitos
-nombreReducido:
+nombreReducido: 
 ---
 # Apuntes
 ---

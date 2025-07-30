@@ -8,7 +8,7 @@ tags:
   - facultad/materia
 etapa: terminado
 correlativas:
-  - "[[Algoritmos y programación 3 (7507)|Algoritmos y programación 3]]"
+  - "[[ingeniería en informática/algo 3/Algoritmos y programación 3 (7507).md]]"
 nombreMateria: Análisis de la información
 nombreReducido: aninfo
 ---

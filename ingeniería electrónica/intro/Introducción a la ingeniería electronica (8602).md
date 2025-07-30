@@ -8,7 +8,7 @@ tags:
   - facultad/materia
 etapa: terminado
 correlativas:
-  - "[[Física 1 A (8201)|Física 1 A]]"
+  - "[[ingeniería electrónica/Física 1 A (8201).md]]"
 nombreMateria: Introducción a la ingeniería electronica
 nombreReducido: intro
 ---

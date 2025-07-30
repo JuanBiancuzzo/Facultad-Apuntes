@@ -8,8 +8,8 @@ tags:
   - facultad/materia
 etapa: empezado
 correlativas:
-  - "[[Álgebra 2 A (6108)|Álgebra 2]]"
-  - "[[Algoritmos y programación 2 (7541)|Algoritmos y programación 2]]"
+  - "[[ingeniería en informática/algebra 2/Álgebra 2 A (6108).md]]"
+  - "[[ingeniería en informática/algo 2/Algoritmos y programación 2 (7541).md]]"
 nombreMateria: Análisis numérico
 nombreReducido: numerico
 ---

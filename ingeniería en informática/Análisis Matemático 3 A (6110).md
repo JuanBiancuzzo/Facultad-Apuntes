@@ -4,12 +4,12 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3
   - facultad/materia-equivalente
 correlativas:
-  - "[[Análisis matemático 2 A (6103)|Análisis matemático 2]]"
-  - "[[Álgebra 2 A (6108)|Álgebra 2]]"
+  - "[[ingeniería en informática/analisis 2/Análisis matemático 2 A (6103).md]]"
+  - "[[ingeniería en informática/algebra 2/Álgebra 2 A (6108).md]]"
 codigo: 6110
 equivalencia: "[[ingeniería electrónica/analisis 3/Análisis matemático 3 (6110).md|Análisis matemático 3 (6110)]]"
 nombreMateria: Análisis Matemático 3 A
-nombreReducido:
+nombreReducido: 
 ---
 # Apuntes
 ---

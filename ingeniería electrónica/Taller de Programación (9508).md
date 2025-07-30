@@ -4,11 +4,11 @@ tags:
   - carrera/ingeniería-electrónica/taller
   - facultad/materia-equivalente
 correlativas:
-  - "[[ingeniería electrónica/Algoritmos y Programación 2 (9512).md|Algoritmos y Programación 2]]"
+  - "[[ingeniería electrónica/Algoritmos y Programación 2 (9512).md]]"
 codigo: 9508
 equivalencia: "[[ingeniería en informática/taller/Taller de programación 1 (9508).md|Taller de programación 1 (9508)]]"
 nombreMateria: Taller de Programación
-nombreReducido:
+nombreReducido: 
 ---
 # Apuntes
 ---

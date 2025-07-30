@@ -8,9 +8,9 @@ tags:
   - facultad/materia
 etapa: ampliar
 correlativas:
-  - "[[Algoritmos y Programación 1 (9511)|Algoritmos y programación 1]]"
-  - "[[Técnica Digital (8601)|Técnica Digital]]"
-  - "[[Dispositivos semiconductores (8603)|Dispositivos semiconductores]]"
+  - "[[ingeniería electrónica/Algoritmos y Programación 1 (9511).md]]"
+  - "[[ingeniería electrónica/Técnica Digital (8601).md]]"
+  - "[[ingeniería electrónica/dispo/Dispositivos semiconductores (8603).md]]"
 referencias:
   - "464"
   - "466"

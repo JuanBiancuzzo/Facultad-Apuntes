@@ -4,8 +4,8 @@ tags:
   - carrera/ingeniería-en-informática/distribuidos
   - facultad/materia
 correlativas:
-  - "[[ingeniería en informática/redes/Redes (TA048).md|Redes]]"
-  - "[[ingeniería en informática/concurrentes/Programación Concurrente (TB026).md|Programación Concurrente]]"
+  - "[[ingeniería en informática/redes/Redes (TA048).md]]"
+  - "[[ingeniería en informática/concurrentes/Programación Concurrente (TB026).md]]"
 codigo: TA050
 cuatri: 26C1
 etapa: empezado

@@ -8,8 +8,8 @@ tags:
   - facultad/materia
 etapa: terminado
 correlativas:
-  - "[[Física 1 A (6201)|Física 1]]"
-  - "[[Análisis matemático 2 A (6103)|Análisis matemático 2]]"
+  - "[[ingeniería en informática/fisica 1/Física 1 A (6201).md]]"
+  - "[[ingeniería en informática/analisis 2/Análisis matemático 2 A (6103).md]]"
 nombreMateria: Física 2 A
 nombreReducido: fisica 2
 ---

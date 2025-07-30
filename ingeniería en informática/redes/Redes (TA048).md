@@ -8,7 +8,7 @@ tags:
   - facultad/materia
 etapa: terminado
 correlativas:
-  - "[[Sistemas operativos (7508)|Sistemas operativos]]"
+  - "[[ingeniería en informática/sisop/Sistemas operativos (7508).md]]"
 referencias:
   - "588"
 nombreMateria: Redes

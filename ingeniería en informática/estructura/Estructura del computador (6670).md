@@ -8,8 +8,8 @@ tags:
   - facultad/materia
 etapa: terminado
 correlativas:
-  - "[[Física 2 A (6203)|Física 2]]"
-  - "[[Algoritmos y programación 2 (7541)|Algoritmos y programación 2]]"
+  - "[[ingeniería en informática/fisica 2/Física 2 A (6203).md]]"
+  - "[[ingeniería en informática/algo 2/Algoritmos y programación 2 (7541).md]]"
 nombreMateria: Estructura del computador
 nombreReducido: estructura
 ---

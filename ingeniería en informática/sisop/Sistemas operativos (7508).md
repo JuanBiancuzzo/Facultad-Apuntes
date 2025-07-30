@@ -8,7 +8,7 @@ tags:
   - facultad/materia
 etapa: terminado
 correlativas:
-  - "[[Estructura del computador (6670)|Estructura del computador]]"
+  - "[[ingeniería en informática/estructura/Estructura del computador (6670).md]]"
 referencias:
   - "325"
 nombreMateria: Sistemas operativos

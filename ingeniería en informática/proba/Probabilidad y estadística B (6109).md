@@ -8,7 +8,7 @@ tags:
   - facultad/materia
 etapa: terminado
 correlativas:
-  - "[[Álgebra 2 A (6108)|Álgebra 2]]"
+  - "[[ingeniería en informática/algebra 2/Álgebra 2 A (6108).md]]"
 nombreMateria: Probabilidad y estadística B
 nombreReducido: proba
 ---

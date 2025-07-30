@@ -8,8 +8,8 @@ tags:
   - facultad/materia
 etapa: terminado
 correlativas:
-  - "[[Álgebra 2 A (8102)|Álgebra 2 A]]"
-  - "[[Análisis Matemático 2 A (8101)|Análisis Matemático 2 A]]"
+  - "[[ingeniería electrónica/Álgebra 2 A (8102).md]]"
+  - "[[ingeniería electrónica/Análisis Matemático 2 A (8101).md]]"
 nombreMateria: Análisis matemático 3
 nombreReducido: analisis 3
 ---
