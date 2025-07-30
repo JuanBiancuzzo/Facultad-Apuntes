@@ -2,10 +2,10 @@
 plan: 2009
 tags:
   - carrera/ingeniería-electrónica/analisis-2
-  - facultad/materia
+  - facultad/materia-equivalente
 correlativas: 
 codigo: 8101
-equivalencia: "[[Análisis matemático 2 A (6103)|Análisis matemático 2 A (6103)]]"
+equivalencia: "[[ingeniería en informática/analisis 2/Análisis matemático 2 A (6103).md|Análisis matemático 2 A (6103)]]"
 nombreMateria: Análisis Matemático 2 A
 nombreReducido:
 ---

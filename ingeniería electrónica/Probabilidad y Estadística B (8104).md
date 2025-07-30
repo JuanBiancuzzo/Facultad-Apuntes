@@ -2,12 +2,12 @@
 plan: 2009
 tags:
   - carrera/ingeniería-electrónica/proba
-  - facultad/materia
+  - facultad/materia-equivalente
 correlativas:
   - "[[ingeniería electrónica/Análisis Matemático 2 A (8101).md|Análisis Matemático 2 A]]"
   - "[[ingeniería electrónica/Álgebra 2 A (8102).md|Álgebra 2 A]]"
 codigo: 8104
-equivalencia: "[[Probabilidad y estadística B (6109)|Probabilidad y estadística B (6109)]]"
+equivalencia: "[[ingeniería en informática/proba/Probabilidad y estadística B (6109).md]]"
 nombreMateria: Probabilidad y Estadística B
 nombreReducido:
 ---

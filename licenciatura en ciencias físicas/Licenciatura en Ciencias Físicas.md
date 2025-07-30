@@ -6,6 +6,7 @@ estado: Todavía no empecé a tomar apuntes
 planes:
   - "1992"
 tieneCodigo: false
+etapa: sin-empezar
 ---
 # Mapa
 ---

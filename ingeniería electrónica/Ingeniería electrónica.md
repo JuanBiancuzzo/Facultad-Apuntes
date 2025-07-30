@@ -7,6 +7,7 @@ planes:
   - "2009"
   - "2023"
 tieneCodigo: true
+etapa: empezado
 ---
 # Mapa
 ---

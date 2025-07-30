@@ -91,3 +91,5 @@ Como primer paso estoy intentando generar una [[Base de datos|base de datos]] en
 \end{document}
 ```
 
+
+![[BDD de own_wiki.svg]]

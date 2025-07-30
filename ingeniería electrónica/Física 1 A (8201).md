@@ -2,10 +2,10 @@
 plan: 2009
 tags:
   - carrera/ingeniería-electrónica/fisica-1
-  - facultad/materia
+  - facultad/materia-equivalente
 correlativas: 
 codigo: 8201
-equivalencia: "[[Física 1 A (6201)|Física 1 A (6201)]]"
+equivalencia: "[[ingeniería en informática/fisica 1/Física 1 A (6201).md|Física 1 A (6201)]]"
 nombreMateria: Física 1 A
 nombreReducido:
 ---

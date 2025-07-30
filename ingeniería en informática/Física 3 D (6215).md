@@ -2,7 +2,7 @@
 plan: 1986
 tags:
   - carrera/ingeniería-en-informática/fisica-3
-  - facultad/materia
+  - facultad/materia-equivalente
 correlativas:
   - "[[Física 2 A (6203)|Física 2]]"
   - "[[Álgebra 2 A (6108)|Álgebra 2]]"

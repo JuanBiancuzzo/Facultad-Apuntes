@@ -2,12 +2,12 @@
 plan: 2009
 tags:
   - carrera/ingeniería-electrónica/algebra-2
-  - facultad/materia
+  - facultad/materia-equivalente
 correlativas: 
 codigo: 8102
-equivalencia: "[[Álgebra 2 A (6108)|Álgebra 2 A (6108)]]"
+equivalencia: "[[ingeniería en informática/algebra 2/Álgebra 2 A (6108).md|Álgebra 2 A (6108)]]"
 nombreMateria: Álgebra 2 A
-nombreReducido: 
+nombreReducido:
 ---
 # Apuntes
 ---

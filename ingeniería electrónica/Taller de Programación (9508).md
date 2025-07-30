@@ -2,7 +2,7 @@
 plan: 2009
 tags:
   - carrera/ingeniería-electrónica/taller
-  - facultad/materia
+  - facultad/materia-equivalente
 correlativas:
   - "[[ingeniería electrónica/Algoritmos y Programación 2 (9512).md|Algoritmos y Programación 2]]"
 codigo: 9508

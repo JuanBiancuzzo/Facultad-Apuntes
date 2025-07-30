@@ -6,6 +6,7 @@ estado: Empecé con álgebra
 planes:
   - "2020"
 tieneCodigo: false
+etapa: sin-empezar
 ---
 # Mapa
 ---

@@ -2,7 +2,7 @@
 plan: 2009
 tags:
   - carrera/ingeniería-electrónica/algo-2
-  - facultad/materia
+  - facultad/materia-equivalente
 correlativas:
   - "[[ingeniería electrónica/Algoritmos y Programación 1 (9511).md|Algoritmos y Programación 1]]"
 codigo: 9512
@@ -15,6 +15,8 @@ nombreReducido:
 ```dataviewjs
 	await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
 ```
+
+
 
 # Bibliografía
 ---

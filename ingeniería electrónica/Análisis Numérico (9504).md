@@ -2,7 +2,7 @@
 plan: 2009
 tags:
   - carrera/ingeniería-electrónica/numerico
-  - facultad/materia
+  - facultad/materia-equivalente
 correlativas:
   - "[[ingeniería electrónica/Algoritmos y Programación 1 (9511).md|Algoritmos y Programación 1]]"
   - "[[ingeniería electrónica/Análisis Matemático 2 A (8101).md|Análisis Matemático 2 A]]"
