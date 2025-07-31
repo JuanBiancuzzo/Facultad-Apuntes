@@ -18,6 +18,7 @@ referencias:
   - "969"
   - "992"
   - "1004"
+pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
 ---
 # Apuntes
 ---

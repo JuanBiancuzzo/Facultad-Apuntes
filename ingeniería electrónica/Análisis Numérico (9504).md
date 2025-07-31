@@ -11,6 +11,7 @@ codigo: 9504
 equivalencia: "[[ingeniería en informática/numerico/Análisis numérico (7512).md|Análisis numérico (7512)]]"
 nombreMateria: Análisis Numérico
 nombreReducido: 
+pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
 ---
 # Apuntes
 ---

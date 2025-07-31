@@ -12,6 +12,7 @@ correlativas:
   - "[[ingeniería en informática/algo 3/Algoritmos y programación 3 (7507).md]]"
 nombreMateria: Base de datos
 nombreReducido: bdd
+pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
 ---
 # Apuntes
 ---

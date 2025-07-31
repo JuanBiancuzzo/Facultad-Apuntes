@@ -11,6 +11,7 @@ correlativas:
   - "[[ingeniería en informática/algo 2/Algoritmos y programación 2 (7541).md]]"
 nombreMateria: Taller de programación 1
 nombreReducido: taller
+pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
 ---
 # Apuntes
 ---

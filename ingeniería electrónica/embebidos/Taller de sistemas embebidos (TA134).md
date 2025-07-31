@@ -17,6 +17,7 @@ referencias:
   - "472"
 nombreMateria: Taller de sistemas embebidos
 nombreReducido: embebidos
+pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
 ---
 # Apuntes
 ---

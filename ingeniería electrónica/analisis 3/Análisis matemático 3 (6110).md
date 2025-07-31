@@ -12,6 +12,7 @@ correlativas:
   - "[[ingeniería electrónica/Análisis Matemático 2 A (8101).md]]"
 nombreMateria: Análisis matemático 3
 nombreReducido: analisis 3
+pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
 ---
 # Apuntes
 ---

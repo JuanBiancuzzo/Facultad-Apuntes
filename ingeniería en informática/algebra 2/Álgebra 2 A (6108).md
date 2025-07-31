@@ -9,6 +9,7 @@ tags:
 etapa: empezado
 nombreMateria: Álgebra 2 A
 nombreReducido: algebra 2
+pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
 ---
 # Apuntes
 ---

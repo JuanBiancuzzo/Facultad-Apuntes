@@ -12,6 +12,7 @@ correlativas:
   - "[[ingeniería electrónica/intro/Introducción a la ingeniería electronica (8602).md]]"
 nombreMateria: Dispositivos semiconductores
 nombreReducido: dispo
+pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
 ---
 # Apuntes
 ---

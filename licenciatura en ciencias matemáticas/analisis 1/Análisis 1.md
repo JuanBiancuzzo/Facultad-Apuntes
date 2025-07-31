@@ -11,6 +11,7 @@ referencias:
   - "518"
 nombreMateria: Análisis 1
 nombreReducido: analisis 1
+pathCarrera: "[[licenciatura en ciencias matemáticas/Licenciatura en Ciencias Matemáticas.md]]"
 ---
 # Apuntes
 ---

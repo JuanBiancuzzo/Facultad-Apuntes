@@ -9,6 +9,7 @@ codigo: 9508
 equivalencia: "[[ingeniería en informática/taller/Taller de programación 1 (9508).md|Taller de programación 1 (9508)]]"
 nombreMateria: Taller de Programación
 nombreReducido: 
+pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
 ---
 # Apuntes
 ---

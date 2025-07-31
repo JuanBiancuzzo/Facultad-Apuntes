@@ -11,6 +11,7 @@ correlativas:
   - "[[ingeniería en informática/algo 1/Algoritmos y programación 1 (7540).md]]"
 nombreMateria: Algoritmos y programación 2
 nombreReducido: algo 2
+pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
 ---
 # Apuntes
 ---

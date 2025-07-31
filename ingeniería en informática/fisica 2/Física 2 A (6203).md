@@ -12,6 +12,7 @@ correlativas:
   - "[[ingeniería en informática/analisis 2/Análisis matemático 2 A (6103).md]]"
 nombreMateria: Física 2 A
 nombreReducido: fisica 2
+pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
 ---
 # Apuntes
 ---

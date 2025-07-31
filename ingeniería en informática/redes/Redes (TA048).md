@@ -13,6 +13,7 @@ referencias:
   - "588"
 nombreMateria: Redes
 nombreReducido: redes
+pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
 ---
 # Apuntes
 ---

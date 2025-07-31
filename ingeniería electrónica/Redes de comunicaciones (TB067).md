@@ -7,7 +7,8 @@ correlativas:
 codigo: TB067
 equivalencia: "[[ingeniería en informática/redes/Redes (TA048).md|Redes (TA048)]]"
 nombreMateria: Redes de comunicaciones
-nombreReducido:
+nombreReducido: 
+pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
 ---
 # Apuntes
 ---

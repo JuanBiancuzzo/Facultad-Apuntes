@@ -11,6 +11,7 @@ referencias:
   - "410"
 nombreMateria: Álgebra 1
 nombreReducido: algebra 1
+pathCarrera: "[[licenciatura en ciencias matemáticas/Licenciatura en Ciencias Matemáticas.md]]"
 ---
 # Apuntes
 ---

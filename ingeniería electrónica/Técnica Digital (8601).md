@@ -9,6 +9,7 @@ codigo: "8601"
 equivalencia: "[[ingeniería en informática/estructura/Estructura del computador (6670).md|Estructura del computador (6670)]]"
 nombreMateria: Técnica Digital
 nombreReducido: 
+pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
 ---
 # Apuntes
 ---

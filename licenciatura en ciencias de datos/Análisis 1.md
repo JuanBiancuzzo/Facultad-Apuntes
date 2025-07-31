@@ -6,7 +6,8 @@ tags:
 correlativas: 
 equivalencia: "[[licenciatura en ciencias matemáticas/analisis 1/Análisis 1.md|Análisis 1]]"
 nombreMateria: Análisis 1
-nombreReducido:
+nombreReducido: 
+pathCarrera: "[[licenciatura en ciencias de datos/Licenciatura en Ciencias de Datos.md]]"
 ---
 # Apuntes
 ---

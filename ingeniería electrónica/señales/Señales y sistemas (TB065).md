@@ -12,6 +12,7 @@ correlativas:
   - "[[ingeniería electrónica/Análisis Matemático 2 A (8101).md]]"
 nombreMateria: Señales y sistemas
 nombreReducido: señales
+pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
 ---
 # Apuntes
 ---

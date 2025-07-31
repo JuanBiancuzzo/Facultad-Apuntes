@@ -9,12 +9,14 @@ codigo: 9512
 equivalencia: "[[ingeniería en informática/algo 2/Algoritmos y programación 2 (7541).md|Algoritmos y programación 2 (7541)]]"
 nombreMateria: Algoritmos y Programación 2
 nombreReducido: 
+pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
 ---
 # Apuntes
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
 ```
+
 
 # Bibliografía
 ---

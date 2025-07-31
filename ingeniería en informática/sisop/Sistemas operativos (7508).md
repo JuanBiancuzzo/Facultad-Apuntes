@@ -13,6 +13,7 @@ referencias:
   - "325"
 nombreMateria: Sistemas operativos
 nombreReducido: sisop
+pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
 ---
 # Apuntes
 ---

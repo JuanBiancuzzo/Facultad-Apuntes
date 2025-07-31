@@ -10,6 +10,7 @@ codigo: 8104
 equivalencia: "[[ingeniería en informática/proba/Probabilidad y estadística B (6109).md]]"
 nombreMateria: Probabilidad y Estadística B
 nombreReducido: 
+pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
 ---
 # Apuntes
 ---

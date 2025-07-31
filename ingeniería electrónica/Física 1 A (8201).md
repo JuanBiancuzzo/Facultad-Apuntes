@@ -7,7 +7,8 @@ correlativas:
 codigo: 8201
 equivalencia: "[[ingeniería en informática/fisica 1/Física 1 A (6201).md|Física 1 A (6201)]]"
 nombreMateria: Física 1 A
-nombreReducido:
+nombreReducido: 
+pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
 ---
 # Apuntes
 ---

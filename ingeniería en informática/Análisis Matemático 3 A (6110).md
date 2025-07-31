@@ -10,6 +10,7 @@ codigo: 6110
 equivalencia: "[[ingeniería electrónica/analisis 3/Análisis matemático 3 (6110).md|Análisis matemático 3 (6110)]]"
 nombreMateria: Análisis Matemático 3 A
 nombreReducido: 
+pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
 ---
 # Apuntes
 ---

@@ -11,6 +11,7 @@ correlativas:
   - "[[ingeniería en informática/algo 3/Algoritmos y programación 3 (7507).md]]"
 nombreMateria: Análisis de la información
 nombreReducido: aninfo
+pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
 ---
 # Apuntes
 ---

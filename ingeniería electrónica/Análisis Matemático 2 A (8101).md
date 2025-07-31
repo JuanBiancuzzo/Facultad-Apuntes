@@ -7,7 +7,8 @@ correlativas:
 codigo: 8101
 equivalencia: "[[ingeniería en informática/analisis 2/Análisis matemático 2 A (6103).md|Análisis matemático 2 A (6103)]]"
 nombreMateria: Análisis Matemático 2 A
-nombreReducido:
+nombreReducido: 
+pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
 ---
 # Apuntes
 ---

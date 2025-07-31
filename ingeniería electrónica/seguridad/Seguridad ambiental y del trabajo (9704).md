@@ -9,6 +9,7 @@ tags:
 etapa: terminado
 nombreMateria: Seguridad ambiental y del trabajo
 nombreReducido: seguridad
+pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
 ---
 # Apuntes
 ---

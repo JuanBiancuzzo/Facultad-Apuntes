@@ -14,6 +14,7 @@ referencias:
   - "539"
 nombreMateria: Electromagnetismo aplicado
 nombreReducido: electro
+pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
 ---
 # Apuntes
 ---

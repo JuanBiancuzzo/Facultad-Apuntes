@@ -13,6 +13,7 @@ correlativas:
   - "[[ingeniería electrónica/Física 2 A (8202).md]]"
 nombreMateria: Análisis de circuitos
 nombreReducido: adc
+pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
 ---
 # Apuntes
 ---

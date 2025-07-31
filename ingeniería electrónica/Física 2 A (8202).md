@@ -10,6 +10,7 @@ codigo: 8202
 equivalencia: "[[ingeniería en informática/fisica 2/Física 2 A (6203).md|Física 2 A (6203)]]"
 nombreMateria: Física 2 A
 nombreReducido: 
+pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
 ---
 # Apuntes
 ---

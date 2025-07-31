@@ -6,7 +6,8 @@ tags:
 correlativas: 
 equivalencia: "[[licenciatura en ciencias matemáticas/algebra 1/Álgebra 1.md|Álgebra 1]]"
 nombreMateria: Álgebra 1
-nombreReducido:
+nombreReducido: 
+pathCarrera: "[[licenciatura en ciencias de datos/Licenciatura en Ciencias de Datos.md]]"
 ---
 # Apuntes
 ---

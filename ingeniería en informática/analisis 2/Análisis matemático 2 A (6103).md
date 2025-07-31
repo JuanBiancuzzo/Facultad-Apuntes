@@ -9,6 +9,7 @@ tags:
 etapa: empezado
 nombreMateria: Análisis matemático 2 A
 nombreReducido: analisis 2
+pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
 ---
 # Apuntes
 ---

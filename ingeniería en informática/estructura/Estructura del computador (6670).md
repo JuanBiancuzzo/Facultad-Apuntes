@@ -12,6 +12,7 @@ correlativas:
   - "[[ingeniería en informática/algo 2/Algoritmos y programación 2 (7541).md]]"
 nombreMateria: Estructura del computador
 nombreReducido: estructura
+pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
 ---
 # Apuntes
 ---

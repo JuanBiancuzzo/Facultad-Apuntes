@@ -10,6 +10,7 @@ codigo: 6606
 equivalencia: "[[ingeniería electrónica/adc/Análisis de circuitos (8604).md|Análisis de circuitos (8604)]]"
 nombreMateria: Análisis de Circuitos
 nombreReducido: 
+pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
 ---
 # Apuntes
 ---

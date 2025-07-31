@@ -10,6 +10,7 @@ codigo: 6215
 equivalencia: "[[ingeniería electrónica/fisica 3/Física 3 (8203).md|Física 3 (8203)]]"
 nombreMateria: Física 3 D
 nombreReducido: 
+pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
 ---
 # Apuntes
 ---
