@@ -10,9 +10,10 @@ tags:
   - referencia/cursotema
   - curso/software-construction/Testing
   - cursos/resumen
-curso: "[[cursos/software construction/Software Construction|Software Construction]]"
+curso: "[[cursos/software construction/Software Construction.md]]"
 tipoCita: CursoTema
 nombreResumen: Testing
+tipoCurso: Online
 ---
 # Índice
 ---

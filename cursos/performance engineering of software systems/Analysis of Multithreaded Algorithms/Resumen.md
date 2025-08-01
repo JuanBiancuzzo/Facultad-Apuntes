@@ -10,9 +10,10 @@ tags:
   - referencia/cursotema
   - curso/performance-engineering-of-software-systems/Analysis-of-Multithreaded-Algorithms
   - cursos/resumen
-curso: "[[cursos/performance engineering of software systems/Performance Engineering of Software Systems|Performance Engineering of Software Systems]]"
+curso: "[[cursos/performance engineering of software systems/Performance Engineering of Software Systems.md]]"
 tipoCita: CursoTema
 nombreResumen: Analysis of Multithreaded Algorithms
+tipoCurso: Online
 ---
 # Índice
 ---

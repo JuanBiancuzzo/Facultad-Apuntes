@@ -10,9 +10,10 @@ tags:
   - referencia/cursotema
   - curso/software-construction/Sockets-and-Networking
   - cursos/resumen
-curso: "[[cursos/software construction/Software Construction|Software Construction]]"
+curso: "[[cursos/software construction/Software Construction.md]]"
 tipoCita: CursoTema
 nombreResumen: Sockets and Networking
+tipoCurso: Online
 ---
 # Índice
 ---

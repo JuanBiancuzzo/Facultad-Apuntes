@@ -10,9 +10,10 @@ tags:
   - referencia/cursotema
   - curso/performance-engineering-of-software-systems/C-to-Assembly
   - cursos/resumen
-curso: "[[cursos/performance engineering of software systems/Performance Engineering of Software Systems|Performance Engineering of Software Systems]]"
+curso: "[[cursos/performance engineering of software systems/Performance Engineering of Software Systems.md]]"
 tipoCita: CursoTema
 nombreResumen: C to Assembly
+tipoCurso: Online
 ---
 # Índice
 ---

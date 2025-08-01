@@ -10,9 +10,10 @@ tags:
   - referencia/cursotema
   - curso/software-construction/Debugging
   - cursos/resumen
-curso: "[[cursos/software construction/Software Construction|Software Construction]]"
+curso: "[[cursos/software construction/Software Construction.md]]"
 tipoCita: CursoTema
 nombreResumen: Debugging
+tipoCurso: Online
 ---
 # Índice
 ---

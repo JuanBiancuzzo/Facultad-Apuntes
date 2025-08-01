@@ -9,9 +9,10 @@ tags:
   - referencia/cursotema
   - curso/computation-structures/Combinational-Logic
   - cursos/resumen
-curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
+curso: "[[cursos/computation structures/Computation Structures.md]]"
 tipoCita: CursoTema
 nombreResumen: Combinational Logic
+tipoCurso: Online
 ---
 # Índice
 ---

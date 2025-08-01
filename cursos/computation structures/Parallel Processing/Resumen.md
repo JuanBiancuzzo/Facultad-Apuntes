@@ -9,9 +9,10 @@ tags:
   - referencia/cursotema
   - curso/computation-structures/Parallel-Processing
   - cursos/resumen
-curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
+curso: "[[cursos/computation structures/Computation Structures.md]]"
 tipoCita: CursoTema
 nombreResumen: Parallel Processing
+tipoCurso: Online
 ---
 # Índice
 ---

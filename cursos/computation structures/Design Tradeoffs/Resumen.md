@@ -9,9 +9,10 @@ tags:
   - referencia/cursotema
   - curso/computation-structures/Design-Tradeoffs
   - cursos/resumen
-curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
+curso: "[[cursos/computation structures/Computation Structures.md]]"
 tipoCita: CursoTema
 nombreResumen: Design Tradeoffs
+tipoCurso: Online
 ---
 # Índice
 ---

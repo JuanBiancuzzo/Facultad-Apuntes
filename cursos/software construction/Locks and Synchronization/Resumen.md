@@ -10,9 +10,10 @@ tags:
   - referencia/cursotema
   - curso/software-construction/Locks-and-Synchronization
   - cursos/resumen
-curso: "[[cursos/software construction/Software Construction|Software Construction]]"
+curso: "[[cursos/software construction/Software Construction.md]]"
 tipoCita: CursoTema
 nombreResumen: Locks and Synchronization
+tipoCurso: Online
 ---
 # Índice
 ---

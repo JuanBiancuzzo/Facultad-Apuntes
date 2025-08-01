@@ -11,8 +11,9 @@ tags:
   - referencia/cursotema
   - curso/introduction-to-algorithms/Sorting-and-Trees
   - cursos/resumen
-curso: "[[cursos/introduction to algorithms/Introduction to Algorithms|Introduction to Algorithms]]"
+curso: "[[cursos/introduction to algorithms/Introduction to Algorithms.md]]"
 nombreResumen: Sorting and Trees
+tipoCurso: Online
 ---
 # Índice
 ---

@@ -10,9 +10,10 @@ tags:
   - referencia/cursotema
   - curso/software-construction/Avoiding-Debuggng
   - cursos/resumen
-curso: "[[cursos/software construction/Software Construction|Software Construction]]"
+curso: "[[cursos/software construction/Software Construction.md]]"
 tipoCita: CursoTema
 nombreResumen: Avoiding Debuggng
+tipoCurso: Online
 ---
 # Índice
 ---

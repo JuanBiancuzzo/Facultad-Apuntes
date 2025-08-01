@@ -13,6 +13,8 @@ referencias:
   - "660"
   - "661"
 nombreResumen: Machine learning, deep learning e interpretabilidad algorítmica
+curso: "[[cursos/ciencia de datos para salud mental y psicología/Ciencia de datos para salud mental y psicología.md]]"
+tipoCurso: Presencial
 ---
 # Índice
 ---

@@ -9,6 +9,8 @@ referencias:
   - "662"
   - "663"
 nombreResumen: Procesamiento del lenguaje natural e IA generativo
+curso: "[[cursos/ciencia de datos para salud mental y psicología/Ciencia de datos para salud mental y psicología.md]]"
+tipoCurso: Presencial
 ---
 # Índice
 ---

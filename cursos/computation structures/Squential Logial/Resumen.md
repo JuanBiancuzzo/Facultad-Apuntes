@@ -9,9 +9,10 @@ tags:
   - referencia/cursotema
   - curso/computation-structures/Squential-Logial
   - cursos/resumen
-curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
+curso: "[[cursos/computation structures/Computation Structures.md]]"
 tipoCita: CursoTema
 nombreResumen: Squential Logial
+tipoCurso: Online
 ---
 # Índice
 ---

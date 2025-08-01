@@ -9,9 +9,10 @@ tags:
   - referencia/cursotema
   - curso/computation-structures/Devices-and-Interrupts
   - cursos/resumen
-curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
+curso: "[[cursos/computation structures/Computation Structures.md]]"
 tipoCita: CursoTema
 nombreResumen: Devices and Interrupts
+tipoCurso: Online
 ---
 # Índice
 ---

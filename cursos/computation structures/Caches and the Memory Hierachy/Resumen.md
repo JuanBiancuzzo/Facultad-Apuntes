@@ -9,9 +9,10 @@ tags:
   - referencia/cursotema
   - curso/computation-structures/Caches-and-the-Memory-Hierachy
   - cursos/resumen
-curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
+curso: "[[cursos/computation structures/Computation Structures.md]]"
 tipoCita: CursoTema
 nombreResumen: Caches and the Memory Hierachy
+tipoCurso: Online
 ---
 # Índice
 ---

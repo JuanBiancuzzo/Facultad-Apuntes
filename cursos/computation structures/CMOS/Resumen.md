@@ -9,9 +9,10 @@ tags:
   - referencia/cursotema
   - curso/computation-structures/CMOS
   - cursos/resumen
-curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
+curso: "[[cursos/computation structures/Computation Structures.md]]"
 tipoCita: CursoTema
 nombreResumen: CMOS
+tipoCurso: Online
 ---
 # Índice
 ---
@@ -22,7 +23,6 @@ nombreResumen: CMOS
 # Resumen
 ---
 %% Pendiente... %%
-
 
 # Bibliografía
 ---

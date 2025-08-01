@@ -9,9 +9,10 @@ tags:
   - referencia/cursotema
   - curso/computation-structures/Assembly-Language-Models-of-Computation
   - cursos/resumen
-curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
+curso: "[[cursos/computation structures/Computation Structures.md]]"
 tipoCita: CursoTema
 nombreResumen: Assembly Language, Models of Computation
+tipoCurso: Online
 ---
 # Índice
 ---

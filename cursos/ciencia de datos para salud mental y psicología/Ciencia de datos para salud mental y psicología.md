@@ -11,6 +11,7 @@ referencias:
   - "631"
   - "632"
 nombreCurso: Ciencia de datos para salud mental y psicología
+fechaCurso: "2024"
 ---
 # Descripción
 ---

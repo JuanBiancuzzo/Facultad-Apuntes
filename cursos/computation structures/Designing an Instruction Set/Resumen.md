@@ -9,9 +9,10 @@ tags:
   - referencia/cursotema
   - curso/computation-structures/Designing-an-Instruction-Set
   - cursos/resumen
-curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
+curso: "[[cursos/computation structures/Computation Structures.md]]"
 tipoCita: CursoTema
 nombreResumen: Designing an Instruction Set
+tipoCurso: Online
 ---
 # Índice
 ---

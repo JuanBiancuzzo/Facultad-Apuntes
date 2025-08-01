@@ -10,9 +10,10 @@ tags:
   - referencia/cursotema
   - curso/software-construction/Little-Languages
   - cursos/resumen
-curso: "[[cursos/software construction/Software Construction|Software Construction]]"
+curso: "[[cursos/software construction/Software Construction.md]]"
 tipoCita: CursoTema
 nombreResumen: Little Languages
+tipoCurso: Online
 ---
 # Índice
 ---

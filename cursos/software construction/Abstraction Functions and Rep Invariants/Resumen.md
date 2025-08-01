@@ -10,9 +10,10 @@ tags:
   - referencia/cursotema
   - curso/software-construction/Abstraction-Functions-and-Rep-Invariants
   - cursos/resumen
-curso: "[[cursos/software construction/Software Construction|Software Construction]]"
+curso: "[[cursos/software construction/Software Construction.md]]"
 tipoCita: CursoTema
 nombreResumen: Abstraction Functions and Rep Invariants
+tipoCurso: Online
 ---
 # Índice
 ---

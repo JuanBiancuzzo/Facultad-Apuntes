@@ -9,9 +9,10 @@ tags:
   - referencia/cursotema
   - curso/cs50s-introduction-to-cybersecurity/Securing-Software
   - cursos/resumen
-curso: "[[cursos/cs50's introduction to cybersecurity/CS50's Introduction to Cybersecurity|CS50's Introduction to Cybersecurity]]"
+curso: "[[cursos/cs50's introduction to cybersecurity/CS50's Introduction to Cybersecurity.md]]"
 tipoCita: CursoTema
 nombreResumen: Securing Software
+tipoCurso: Online
 ---
 # Índice
 ---

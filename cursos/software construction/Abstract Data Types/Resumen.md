@@ -10,9 +10,10 @@ tags:
   - referencia/cursotema
   - curso/software-construction/Abstract-Data-Types
   - cursos/resumen
-curso: "[[cursos/software construction/Software Construction|Software Construction]]"
+curso: "[[cursos/software construction/Software Construction.md]]"
 tipoCita: CursoTema
 nombreResumen: Abstract Data Types
+tipoCurso: Online
 ---
 # Índice
 ---

@@ -10,9 +10,10 @@ tags:
   - referencia/cursotema
   - curso/software-construction/Map-Filter-Reduce
   - cursos/resumen
-curso: "[[cursos/software construction/Software Construction|Software Construction]]"
+curso: "[[cursos/software construction/Software Construction.md]]"
 tipoCita: CursoTema
 nombreResumen: Map, Filter, Reduce
+tipoCurso: Online
 ---
 # Índice
 ---

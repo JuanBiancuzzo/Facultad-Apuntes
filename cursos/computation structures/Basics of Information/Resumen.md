@@ -9,9 +9,10 @@ tags:
   - referencia/cursotema
   - curso/computation-structures/Basics-of-Information
   - cursos/resumen
-curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
+curso: "[[cursos/computation structures/Computation Structures.md]]"
 tipoCita: CursoTema
 nombreResumen: Basics of Information
+tipoCurso: Online
 ---
 # Índice
 ---

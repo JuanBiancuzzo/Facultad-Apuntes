@@ -10,9 +10,10 @@ tags:
   - referencia/cursotema
   - curso/software-construction/Regular-Expressions-and-Grammars
   - cursos/resumen
-curso: "[[cursos/software construction/Software Construction|Software Construction]]"
+curso: "[[cursos/software construction/Software Construction.md]]"
 tipoCita: CursoTema
 nombreResumen: Regular Expressions and Grammars
+tipoCurso: Online
 ---
 # Índice
 ---

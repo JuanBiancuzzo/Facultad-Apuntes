@@ -9,9 +9,10 @@ tags:
   - referencia/cursotema
   - curso/computation-structures/Finite-State-Machines
   - cursos/resumen
-curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
+curso: "[[cursos/computation structures/Computation Structures.md]]"
 tipoCita: CursoTema
 nombreResumen: Finite State Machines
+tipoCurso: Online
 ---
 # Índice
 ---

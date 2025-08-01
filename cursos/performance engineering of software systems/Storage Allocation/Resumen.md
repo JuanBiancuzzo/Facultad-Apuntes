@@ -10,9 +10,10 @@ tags:
   - referencia/cursotema
   - curso/performance-engineering-of-software-systems/Storage-Allocation
   - cursos/resumen
-curso: "[[cursos/performance engineering of software systems/Performance Engineering of Software Systems|Performance Engineering of Software Systems]]"
+curso: "[[cursos/performance engineering of software systems/Performance Engineering of Software Systems.md]]"
 tipoCita: CursoTema
 nombreResumen: Storage Allocation
+tipoCurso: Online
 ---
 # Índice
 ---

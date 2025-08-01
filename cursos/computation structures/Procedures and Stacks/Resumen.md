@@ -9,9 +9,10 @@ tags:
   - referencia/cursotema
   - curso/computation-structures/Procedures-and-Stacks
   - cursos/resumen
-curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
+curso: "[[cursos/computation structures/Computation Structures.md]]"
 tipoCita: CursoTema
 nombreResumen: Procedures and Stacks
+tipoCurso: Online
 ---
 # Índice
 ---

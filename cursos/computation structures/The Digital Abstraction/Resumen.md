@@ -9,9 +9,10 @@ tags:
   - referencia/cursotema
   - curso/computation-structures/The-Digital-Abstraction
   - cursos/resumen
-curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
+curso: "[[cursos/computation structures/Computation Structures.md]]"
 tipoCita: CursoTema
 nombreResumen: The Digital Abstraction
+tipoCurso: Online
 ---
 # Índice
 ---

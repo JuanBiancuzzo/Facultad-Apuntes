@@ -11,8 +11,9 @@ tags:
   - referencia/cursotema
   - curso/introduction-to-algorithms/Introduction
   - cursos/resumen
-curso: "[[cursos/introduction to algorithms/Introduction to Algorithms|Introduction to Algorithms]]"
+curso: "[[cursos/introduction to algorithms/Introduction to Algorithms.md]]"
 nombreResumen: Introduction
+tipoCurso: Online
 ---
 # Índice
 ---

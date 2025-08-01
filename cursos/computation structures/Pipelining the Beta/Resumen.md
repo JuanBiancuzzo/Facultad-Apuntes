@@ -9,9 +9,10 @@ tags:
   - referencia/cursotema
   - curso/computation-structures/Pipelining-the-Beta
   - cursos/resumen
-curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
+curso: "[[cursos/computation structures/Computation Structures.md]]"
 tipoCita: CursoTema
 nombreResumen: Pipelining the Beta
+tipoCurso: Online
 ---
 # Índice
 ---

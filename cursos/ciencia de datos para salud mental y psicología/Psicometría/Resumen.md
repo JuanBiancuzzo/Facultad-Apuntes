@@ -14,6 +14,8 @@ referencias:
   - "654"
 etapa: sin-empezar
 nombreResumen: Psicometría
+curso: "[[cursos/ciencia de datos para salud mental y psicología/Ciencia de datos para salud mental y psicología.md]]"
+tipoCurso: Presencial
 ---
 # Índice
 ---

@@ -9,9 +9,10 @@ tags:
   - referencia/cursotema
   - curso/computation-structures/Compilers
   - cursos/resumen
-curso: "[[cursos/computation structures/Computation Structures|Computation Structures]]"
+curso: "[[cursos/computation structures/Computation Structures.md]]"
 tipoCita: CursoTema
 nombreResumen: Compilers
+tipoCurso: Online
 ---
 # Índice
 ---
