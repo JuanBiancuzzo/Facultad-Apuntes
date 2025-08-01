@@ -10,8 +10,10 @@ cuatri: 25C1
 plan: "2023"
 codigo: TA138
 correlativas:
-  - "[[ingeniería electrónica/electro/Electromagnetismo aplicado (TB069).md]]"
-  - "[[ingeniería electrónica/circuitos/Circuitos microelectrónicos (TB068).md]]"
+  - path: ingeniería electrónica/electro/Electromagnetismo aplicado (TB069).md
+    tipo: Materia
+  - path: ingeniería electrónica/circuitos/Circuitos microelectrónicos (TB068).md
+    tipo: Materia
 referencias:
   - "456"
   - "451"

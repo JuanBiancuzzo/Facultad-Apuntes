@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/estructura/Álgebra-de-Boole
   - facultad/resumen
 nombreResumen: Álgebra de Boole
+materiaResumen: ingeniería en informática/estructura/Estructura del computador (6670).md
 ---
 # Índice 
 ---

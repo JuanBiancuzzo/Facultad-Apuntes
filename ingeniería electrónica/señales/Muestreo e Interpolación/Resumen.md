@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/señales/Muestreo-e-Interpolación
   - facultad/resumen
 nombreResumen: Muestreo e Interpolación
+materiaResumen: ingeniería electrónica/señales/Señales y sistemas (TB065).md
 ---
 # Índice 
 ---

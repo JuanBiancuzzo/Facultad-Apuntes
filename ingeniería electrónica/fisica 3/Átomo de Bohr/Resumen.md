@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-en-informática/fisica-3/Átomo-de-Bohr
   - facultad/resumen
 nombreResumen: Átomo de Bohr
+materiaResumen: ingeniería electrónica/fisica 3/Física 3 (8203).md
 ---
 # Índice 
 ---

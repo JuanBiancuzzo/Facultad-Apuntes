@@ -6,6 +6,7 @@ tags:
 referencias:
   - "465"
 nombreResumen: Microcontroladores de 32 bits
+materiaResumen: ingeniería electrónica/embebidos/Taller de sistemas embebidos (TA134).md
 ---
 # Índice
 ---

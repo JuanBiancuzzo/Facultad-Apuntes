@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/estoca/Análisis-de-datos
 nombreResumen: Análisis de datos
 capitulo: 3
+materiaResumen: ingeniería electrónica/estoca/Procesos estocásticos (TA132).md
 ---
 # Índice
 ---

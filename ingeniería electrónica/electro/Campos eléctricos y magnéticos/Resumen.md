@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
   - facultad/resumen
 nombreResumen: Campos eléctricos y magnéticos
+materiaResumen: ingeniería electrónica/electro/Electromagnetismo aplicado (TB069).md
 ---
 # Índice
 ---

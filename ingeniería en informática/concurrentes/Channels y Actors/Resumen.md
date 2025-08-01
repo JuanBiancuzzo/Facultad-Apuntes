@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/concurrentes/Channels-y-Actors
   - facultad/resumen
 nombreResumen: Channels y Actors
+materiaResumen: ingeniería en informática/concurrentes/Programación Concurrente (TB026).md
 ---
 # Índice
 ---

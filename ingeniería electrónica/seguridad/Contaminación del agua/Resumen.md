@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/seguridad/Contaminación-del-agua
   - facultad/resumen
 nombreResumen: Contaminación del agua
+materiaResumen: ingeniería electrónica/seguridad/Seguridad ambiental y del trabajo (9704).md
 ---
 # Índice 
 ---

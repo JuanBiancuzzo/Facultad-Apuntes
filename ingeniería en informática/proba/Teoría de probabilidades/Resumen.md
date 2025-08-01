@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/proba/Teoría-de-probabilidades
   - facultad/resumen
 nombreResumen: Teoría de probabilidades
+materiaResumen: ingeniería en informática/proba/Probabilidad y estadística B (6109).md
 ---
 # Índice 
 ---

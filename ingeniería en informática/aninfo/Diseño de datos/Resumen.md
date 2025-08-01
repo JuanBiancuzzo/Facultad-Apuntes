@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Diseño-de-datos
   - facultad/resumen
 nombreResumen: Diseño de datos
+materiaResumen: ingeniería en informática/aninfo/Análisis de la información (7509).md
 ---
 # Índice 
 ---

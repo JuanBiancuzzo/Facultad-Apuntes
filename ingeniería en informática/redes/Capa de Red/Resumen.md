@@ -8,6 +8,7 @@ referencias:
   - "592"
   - "593"
 nombreResumen: Capa de Red
+materiaResumen: ingeniería en informática/redes/Redes (TA048).md
 ---
 # Índice 
 ---

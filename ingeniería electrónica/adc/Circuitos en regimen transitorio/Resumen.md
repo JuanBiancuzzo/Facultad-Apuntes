@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-transitorio
   - facultad/resumen
 nombreResumen: Circuitos en regimen transitorio
+materiaResumen: ingeniería electrónica/adc/Análisis de circuitos (8604).md
 ---
 # Índice 
 ---

@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/intro/Circuitos-con-capacitores
   - facultad/resumen
 nombreResumen: Circuitos con capacitores
+materiaResumen: ingeniería electrónica/intro/Introducción a la ingeniería electronica (8602).md
 ---
 # Índice 
 ---

@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/tpp/Propuesta
   - facultad/resumen
 nombreResumen: Propuesta
+materiaResumen: ingeniería en informática/tpp/Trabajo Profesional de Ingeniería Informática.md
 ---
 # Índice 
 ---

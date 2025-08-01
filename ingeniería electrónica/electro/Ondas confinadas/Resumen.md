@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/electro/Ondas-confinadas
   - facultad/resumen
 nombreResumen: Ondas confinadas
+materiaResumen: ingeniería electrónica/electro/Electromagnetismo aplicado (TB069).md
 ---
 # Índice
 ---

@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/distribuidos/Fundamentos-de-Sistemas-Distribuidos
   - facultad/resumen
 nombreResumen: Fundamentos de Sistemas Distribuidos
+materiaResumen: ingeniería en informática/distribuidos/Sistemas Distribuidos 1 (TA050).md
 ---
 # Índice
 ---

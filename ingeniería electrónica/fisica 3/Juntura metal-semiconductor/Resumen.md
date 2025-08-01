@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-en-informática/fisica-3/Juntura-metal-semiconductor
   - facultad/resumen
 nombreResumen: Juntura metal-semiconductor
+materiaResumen: ingeniería electrónica/fisica 3/Física 3 (8203).md
 ---
 # Índice 
 ---

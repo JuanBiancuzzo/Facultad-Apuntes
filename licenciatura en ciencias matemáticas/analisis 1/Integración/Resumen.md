@@ -6,6 +6,7 @@ tags:
   - carrera/licenciatura-en-ciencias-físicas/analisis-1/Integración
   - facultad/resumen
 nombreResumen: Integración
+materiaResumen: licenciatura en ciencias matemáticas/analisis 1/Análisis 1.md
 ---
 # Índice
 ---

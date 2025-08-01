@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/circuitos-2/Tecnologia-de-componentes
 nombreResumen: Tecnologia de componentes
 capitulo: 9
+materiaResumen: ingeniería electrónica/circuitos 2/Taller de diseño de circuitos electrónicos (TA138).md
 ---
 # Índice
 ---

@@ -10,6 +10,7 @@ referencias:
   - "904"
   - "876"
   - "1052"
+materiaResumen: ingeniería electrónica/control/Control automático (TA133).md
 ---
 # Índice
 ---

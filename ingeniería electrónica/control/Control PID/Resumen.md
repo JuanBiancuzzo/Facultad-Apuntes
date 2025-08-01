@@ -5,6 +5,7 @@ tags:
 nombreResumen: Control PID
 capitulo: "9"
 referencias: []
+materiaResumen: ingeniería electrónica/control/Control automático (TA133).md
 ---
 # Índice
 ---

@@ -9,6 +9,7 @@ referencias:
   - "874"
   - "902"
   - "914"
+materiaResumen: ingeniería electrónica/control/Control automático (TA133).md
 ---
 # Índice
 ---

@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/estructura/Compiladores-y-ensambladores
   - facultad/resumen
 nombreResumen: Compiladores y ensambladores
+materiaResumen: ingeniería en informática/estructura/Estructura del computador (6670).md
 ---
 # Índice
 ---

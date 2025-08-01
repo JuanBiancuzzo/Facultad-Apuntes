@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/estructura/Sistema-ARC
   - facultad/resumen
 nombreResumen: Sistema ARC
+materiaResumen: ingeniería en informática/estructura/Estructura del computador (6670).md
 ---
 # Índice
 ---

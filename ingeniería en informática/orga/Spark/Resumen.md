@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/orga/Spark
   - facultad/resumen
 nombreResumen: Spark
+materiaResumen: ingeniería en informática/orga/Organización de datos (7506).md
 ---
 # Índice 
 ---

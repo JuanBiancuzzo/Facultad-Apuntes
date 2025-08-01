@@ -7,6 +7,7 @@ tags:
 referencias:
   - "417"
 nombreResumen: Polinomios con coeficientes en un cuerpo
+materiaResumen: licenciatura en ciencias matemáticas/algebra 1/Álgebra 1.md
 ---
 # Índice
 ---

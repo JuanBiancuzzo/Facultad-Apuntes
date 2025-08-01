@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/taller/Organizacion
   - facultad/resumen
 nombreResumen: Organizacion
+materiaResumen: ingeniería en informática/taller/Taller de programación 1 (9508).md
 ---
 # Índice 
 ---

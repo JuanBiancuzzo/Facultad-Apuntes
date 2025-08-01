@@ -8,8 +8,10 @@ tags:
   - facultad/materia
 etapa: empezado
 correlativas:
-  - "[[ingeniería electrónica/Álgebra 2 A (8102).md]]"
-  - "[[ingeniería electrónica/Análisis Matemático 2 A (8101).md]]"
+  - path: ingeniería electrónica/Álgebra 2 A (8102).md
+    tipo: Equivalente
+  - path: ingeniería electrónica/Análisis Matemático 2 A (8101).md
+    tipo: Equivalente
 nombreMateria: Señales y sistemas
 nombreReducido: señales
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"

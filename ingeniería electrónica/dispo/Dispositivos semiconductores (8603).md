@@ -8,8 +8,10 @@ tags:
   - facultad/materia
 etapa: terminado
 correlativas:
-  - "[[ingeniería electrónica/Física 2 A (8202).md]]"
-  - "[[ingeniería electrónica/intro/Introducción a la ingeniería electronica (8602).md]]"
+  - path: ingeniería electrónica/Física 2 A (8202).md
+    tipo: Equivalente
+  - path: ingeniería electrónica/intro/Introducción a la ingeniería electronica (8602).md
+    tipo: Materia
 nombreMateria: Dispositivos semiconductores
 nombreReducido: dispo
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"

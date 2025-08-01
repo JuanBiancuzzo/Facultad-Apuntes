@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/numerico/Sistemas-de-ecuaciones-lineales
   - facultad/resumen
 nombreResumen: Sistemas de ecuaciones lineales
+materiaResumen: ingeniería en informática/numerico/Análisis numérico (7512).md
 ---
 # Índice 
 ---

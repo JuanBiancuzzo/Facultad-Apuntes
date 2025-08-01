@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/fisica-1/Cinemática-y-dinámica
   - facultad/resumen
 nombreResumen: Cinemática y dinámica
+materiaResumen: ingeniería en informática/fisica 1/Física 1 A (6201).md
 ---
 # Índice 
 ---

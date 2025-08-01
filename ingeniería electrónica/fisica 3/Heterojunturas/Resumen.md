@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-en-informática/fisica-3/Heterojunturas
   - facultad/resumen
 nombreResumen: Heterojunturas
+materiaResumen: ingeniería electrónica/fisica 3/Física 3 (8203).md
 ---
 # Índice 
 ---

@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - facultad/resumen
 nombreResumen: Diseño, desarrollo y depuración
+materiaResumen: ingeniería electrónica/embebidos/Taller de sistemas embebidos (TA134).md
 ---
 # Índice
 ---

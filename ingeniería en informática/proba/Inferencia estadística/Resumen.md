@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/proba/Inferencia-estadística
   - facultad/resumen
 nombreResumen: Inferencia estadística
+materiaResumen: ingeniería en informática/proba/Probabilidad y estadística B (6109).md
 ---
 # Índice 
 ---

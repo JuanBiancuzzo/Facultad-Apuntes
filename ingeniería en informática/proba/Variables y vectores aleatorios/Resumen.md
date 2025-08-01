@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/proba/Variables-y-vectores-aleatorios
   - facultad/resumen
 nombreResumen: Variables y vectores aleatorios
+materiaResumen: ingeniería en informática/proba/Probabilidad y estadística B (6109).md
 ---
 # Índice 
 ---

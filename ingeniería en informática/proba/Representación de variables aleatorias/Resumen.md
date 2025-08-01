@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
   - facultad/resumen
 nombreResumen: Representación de variables aleatorias
+materiaResumen: ingeniería en informática/proba/Probabilidad y estadística B (6109).md
 ---
 # Índice 
 ---

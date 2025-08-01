@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-en-informática/fisica-3/Mecánica-estadística
   - facultad/resumen
 nombreResumen: Mecánica estadística
+materiaResumen: ingeniería electrónica/fisica 3/Física 3 (8203).md
 ---
 # Índice 
 ---

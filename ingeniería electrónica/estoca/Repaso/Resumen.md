@@ -5,6 +5,7 @@ tags:
 nombreResumen: Repaso
 capitulo: "1"
 referencias: []
+materiaResumen: ingeniería electrónica/estoca/Procesos estocásticos (TA132).md
 ---
 # Índice
 ---

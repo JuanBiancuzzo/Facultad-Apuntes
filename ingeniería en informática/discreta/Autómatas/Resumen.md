@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/discreta/Autómatas
   - facultad/resumen
 nombreResumen: Autómatas
+materiaResumen: ingeniería en informática/discreta/Matemática discreta (6107).md
 ---
 # Índice
 ---

@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-de-corriente-continua
   - facultad/resumen
 nombreResumen: Circuitos en regimen de corriente continua
+materiaResumen: ingeniería electrónica/adc/Análisis de circuitos (8604).md
 ---
 # Índice 
 ---

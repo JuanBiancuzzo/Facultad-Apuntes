@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Requisitos-en-contexto
   - facultad/resumen
 nombreResumen: Requisitos en contexto
+materiaResumen: ingeniería en informática/aninfo/Análisis de la información (7509).md
 ---
 # Índice 
 ---

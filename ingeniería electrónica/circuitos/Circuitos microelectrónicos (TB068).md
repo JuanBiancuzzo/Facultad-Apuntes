@@ -8,8 +8,10 @@ tags:
   - facultad/materia
 etapa: ampliar
 correlativas:
-  - "[[ingeniería electrónica/adc/Análisis de circuitos (8604).md]]"
-  - "[[ingeniería electrónica/dispo/Dispositivos semiconductores (8603).md]]"
+  - path: ingeniería electrónica/adc/Análisis de circuitos (8604).md
+    tipo: Materia
+  - path: ingeniería electrónica/dispo/Dispositivos semiconductores (8603).md
+    tipo: Materia
 referencias:
   - "424"
   - "439"

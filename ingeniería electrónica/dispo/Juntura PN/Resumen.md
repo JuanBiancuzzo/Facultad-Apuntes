@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/dispo/Juntura-PN
   - facultad/resumen
 nombreResumen: Juntura PN
+materiaResumen: ingeniería electrónica/dispo/Dispositivos semiconductores (8603).md
 ---
 # Índice 
 ---

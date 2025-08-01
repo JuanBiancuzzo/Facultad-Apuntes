@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/numerico/Ecuaciones-diferenciales-ordinarias-a-valores-iniciales
   - facultad/resumen
 nombreResumen: Ecuaciones diferenciales ordinarias a valores iniciales
+materiaResumen: ingeniería en informática/numerico/Análisis numérico (7512).md
 ---
 # Índice 
 ---

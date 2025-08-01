@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
 nombreResumen: Distribuciones multivariables
 capitulo: 2
+materiaResumen: ingeniería electrónica/estoca/Procesos estocásticos (TA132).md
 ---
 # Índice
 ---

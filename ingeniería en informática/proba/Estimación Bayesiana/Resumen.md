@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/proba/Estimación-Bayesiana
   - facultad/resumen
 nombreResumen: Estimación Bayesiana
+materiaResumen: ingeniería en informática/proba/Probabilidad y estadística B (6109).md
 ---
 # Índice 
 ---

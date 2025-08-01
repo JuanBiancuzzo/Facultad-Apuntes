@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/orga/Pandas
   - facultad/resumen
 nombreResumen: Pandas
+materiaResumen: ingeniería en informática/orga/Organización de datos (7506).md
 ---
 # Índice 
 ---

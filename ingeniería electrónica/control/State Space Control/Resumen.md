@@ -5,6 +5,7 @@ tags:
 nombreResumen: State Space Control
 capitulo: "10"
 referencias: []
+materiaResumen: ingeniería electrónica/control/Control automático (TA133).md
 ---
 # Índice
 ---

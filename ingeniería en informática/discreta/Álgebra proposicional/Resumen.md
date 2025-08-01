@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
   - facultad/resumen
 nombreResumen: Álgebra proposicional
+materiaResumen: ingeniería en informática/discreta/Matemática discreta (6107).md
 ---
 # Índice
 ---

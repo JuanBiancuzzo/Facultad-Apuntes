@@ -9,6 +9,7 @@ referencias:
   - "469"
   - "470"
 nombreResumen: Estrategias de control de periféricos
+materiaResumen: ingeniería electrónica/embebidos/Taller de sistemas embebidos (TA134).md
 ---
 # Índice
 ---

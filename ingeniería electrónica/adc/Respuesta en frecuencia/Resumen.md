@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-en-informática/adc/Respuesta-en-frecuencia
   - facultad/resumen
 nombreResumen: Respuesta en frecuencia
+materiaResumen: ingeniería electrónica/adc/Análisis de circuitos (8604).md
 ---
 # Índice 
 ---

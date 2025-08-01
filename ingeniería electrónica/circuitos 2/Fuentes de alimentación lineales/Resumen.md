@@ -11,6 +11,7 @@ referencias:
   - "932"
   - "1018"
 etapa: sin-empezar
+materiaResumen: ingeniería electrónica/circuitos 2/Taller de diseño de circuitos electrónicos (TA138).md
 ---
 # Índice
 ---

@@ -8,6 +8,7 @@ tags:
 referencias:
   - "523"
 nombreResumen: Extremos
+materiaResumen: licenciatura en ciencias matemáticas/analisis 1/Análisis 1.md
 ---
 # Índice
 ---

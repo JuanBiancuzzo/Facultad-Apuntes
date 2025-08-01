@@ -7,6 +7,7 @@ capitulo: 5
 referencias:
   - "876"
   - "893"
+materiaResumen: ingeniería electrónica/control/Control automático (TA133).md
 ---
 # Índice
 ---

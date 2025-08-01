@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Analizar-y-especificar-requisitos
   - facultad/resumen
 nombreResumen: Analizar y especificar requisitos
+materiaResumen: ingeniería en informática/aninfo/Análisis de la información (7509).md
 ---
 # Índice 
 ---

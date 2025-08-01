@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/proba/Variables-aleatorias-condicionadas
   - facultad/resumen
 nombreResumen: Variables aleatorias condicionadas
+materiaResumen: ingeniería en informática/proba/Probabilidad y estadística B (6109).md
 ---
 # Índice 
 ---

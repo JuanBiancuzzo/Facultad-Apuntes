@@ -4,6 +4,7 @@ tags:
   - carrera/licenciatura-en-ciencias-físicas/fisica-1/Interacción-gravitatoria
   - facultad/resumen
 nombreResumen: Interacción gravitatoria
+materiaResumen: licenciatura en ciencias físicas/fisica 1/Física 1.md
 ---
 # Índice
 ---

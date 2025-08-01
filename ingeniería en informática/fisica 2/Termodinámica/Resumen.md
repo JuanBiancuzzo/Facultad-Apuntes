@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/fisica-2/Termodinámica
   - facultad/resumen
 nombreResumen: Termodinámica
+materiaResumen: ingeniería en informática/fisica 2/Física 2 A (6203).md
 ---
 # Índice 
 ---

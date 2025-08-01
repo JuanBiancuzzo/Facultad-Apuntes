@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/fisica-2/Magnetostática-en-el-vacío
   - facultad/resumen
 nombreResumen: Magnetostática en el vacío
+materiaResumen: ingeniería en informática/fisica 2/Física 2 A (6203).md
 ---
 # Índice 
 ---

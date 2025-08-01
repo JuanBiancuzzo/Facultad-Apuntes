@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/fisica-2/Circuitos-en-régimen-alterno-permanente
   - facultad/resumen
 nombreResumen: Circuitos en régimen alterno permanente
+materiaResumen: ingeniería en informática/fisica 2/Física 2 A (6203).md
 ---
 # Índice 
 ---

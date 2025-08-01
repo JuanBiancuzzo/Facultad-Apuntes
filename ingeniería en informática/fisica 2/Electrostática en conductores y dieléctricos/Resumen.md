@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
   - facultad/resumen
 nombreResumen: Electrostática en conductores y dieléctricos
+materiaResumen: ingeniería en informática/fisica 2/Física 2 A (6203).md
 ---
 # Índice 
 ---

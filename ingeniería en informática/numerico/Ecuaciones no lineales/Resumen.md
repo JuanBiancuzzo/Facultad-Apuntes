@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/numerico/Ecuaciones-no-lineales
   - facultad/resumen
 nombreResumen: Ecuaciones no lineales
+materiaResumen: ingeniería en informática/numerico/Análisis numérico (7512).md
 ---
 # Índice 
 ---

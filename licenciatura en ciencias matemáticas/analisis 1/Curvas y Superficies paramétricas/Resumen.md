@@ -8,6 +8,7 @@ tags:
 referencias:
   - "519"
 nombreResumen: Curvas y Superficies paramétricas
+materiaResumen: licenciatura en ciencias matemáticas/analisis 1/Análisis 1.md
 ---
 # Índice
 ---

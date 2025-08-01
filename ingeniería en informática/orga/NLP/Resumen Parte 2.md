@@ -5,6 +5,7 @@ tags:
   - facultad/resumen
 parte: 2
 nombreResumen: NLP
+materiaResumen: ingeniería en informática/orga/Organización de datos (7506).md
 ---
 # Índice 
 ---

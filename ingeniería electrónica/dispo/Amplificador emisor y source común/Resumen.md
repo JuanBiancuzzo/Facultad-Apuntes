@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/dispo/Amplificador-emisor-y-source-común
   - facultad/resumen
 nombreResumen: Amplificador emisor y source común
+materiaResumen: ingeniería electrónica/dispo/Dispositivos semiconductores (8603).md
 ---
 # Índice 
 ---

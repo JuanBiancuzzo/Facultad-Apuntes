@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/dispo/Juntura-MOS
   - facultad/resumen
 nombreResumen: Juntura MOS
+materiaResumen: ingeniería electrónica/dispo/Dispositivos semiconductores (8603).md
 ---
 # Índice 
 ---

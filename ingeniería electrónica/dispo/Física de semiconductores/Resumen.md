@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/dispo/Física-de-semiconductores
   - facultad/resumen
 nombreResumen: Física de semiconductores
+materiaResumen: ingeniería electrónica/dispo/Dispositivos semiconductores (8603).md
 ---
 # Índice 
 ---

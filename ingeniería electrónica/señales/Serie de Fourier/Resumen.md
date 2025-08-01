@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/señales/Serie-de-Fourier
   - facultad/resumen
 nombreResumen: Serie de Fourier
+materiaResumen: ingeniería electrónica/señales/Señales y sistemas (TB065).md
 ---
 # Índice 
 ---

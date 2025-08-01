@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/electro/Campo-electromagnético
   - facultad/resumen
 nombreResumen: Campo electromagnético
+materiaResumen: ingeniería electrónica/electro/Electromagnetismo aplicado (TB069).md
 ---
 # Índice
 ---

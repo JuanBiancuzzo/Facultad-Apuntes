@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/señales/Señales-y-sistemas
   - facultad/resumen
 nombreResumen: Señales y sistemas
+materiaResumen: ingeniería electrónica/señales/Señales y sistemas (TB065).md
 ---
 # Índice 
 ---

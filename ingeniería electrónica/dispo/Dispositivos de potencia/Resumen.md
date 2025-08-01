@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/dispo/Dispositivos-de-potencia
   - facultad/resumen
 nombreResumen: Dispositivos de potencia
+materiaResumen: ingeniería electrónica/dispo/Dispositivos semiconductores (8603).md
 ---
 # Índice 
 ---

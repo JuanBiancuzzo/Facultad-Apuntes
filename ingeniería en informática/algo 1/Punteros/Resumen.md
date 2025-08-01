@@ -6,6 +6,7 @@ tags:
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - facultad/resumen
 nombreResumen: Punteros
+materiaResumen: ingeniería en informática/algo 1/Algoritmos y programación 1 (7540).md
 ---
 # Índice
 ---

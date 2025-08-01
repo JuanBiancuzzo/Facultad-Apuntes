@@ -10,6 +10,7 @@ referencias:
   - "445"
   - "453"
 nombreResumen: Fuentes de corriente y circuitos con cargas activas
+materiaResumen: ingeniería electrónica/circuitos/Circuitos microelectrónicos (TB068).md
 ---
 # Índice 
 ---

@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/intro/Respuesta-en-frecuencia
   - facultad/resumen
 nombreResumen: Respuesta en frecuencia
+materiaResumen: ingeniería electrónica/intro/Introducción a la ingeniería electronica (8602).md
 ---
 # Índice 
 ---

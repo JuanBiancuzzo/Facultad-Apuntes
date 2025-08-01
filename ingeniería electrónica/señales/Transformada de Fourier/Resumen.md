@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/señales/Transformada-de-Fourier
   - facultad/resumen
 nombreResumen: Transformada de Fourier
+materiaResumen: ingeniería electrónica/señales/Señales y sistemas (TB065).md
 ---
 # Índice 
 ---

@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/numerico/Errores
   - facultad/resumen
 nombreResumen: Errores
+materiaResumen: ingeniería en informática/numerico/Análisis numérico (7512).md
 ---
 # Índice 
 ---

@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/seguridad/Ergonomia
   - facultad/resumen
 nombreResumen: Ergonomia
+materiaResumen: ingeniería electrónica/seguridad/Seguridad ambiental y del trabajo (9704).md
 ---
 # Índice 
 ---

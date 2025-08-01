@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/distribuidos/Tolerancia-a-Fallas-y-Tiempo-Real
   - facultad/resumen
 nombreResumen: Tolerancia a Fallas y Tiempo Real
+materiaResumen: ingeniería en informática/distribuidos/Sistemas Distribuidos 1 (TA050).md
 ---
 # Índice
 ---

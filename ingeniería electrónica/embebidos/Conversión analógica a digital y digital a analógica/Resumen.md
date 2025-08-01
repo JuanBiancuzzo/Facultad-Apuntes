@@ -8,6 +8,7 @@ referencias:
   - "473"
   - "474"
 nombreResumen: Conversión analógica a digital y digital a analógica
+materiaResumen: ingeniería electrónica/embebidos/Taller de sistemas embebidos (TA134).md
 ---
 # Índice
 ---

@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/discreta/Álgebra-de-conjuntos
   - facultad/resumen
 nombreResumen: Álgebra de conjuntos
+materiaResumen: ingeniería en informática/discreta/Matemática discreta (6107).md
 ---
 # Índice 
 ---

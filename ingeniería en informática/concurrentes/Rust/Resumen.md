@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/concurrentes/Rust
   - facultad/resumen
 nombreResumen: Rust
+materiaResumen: ingeniería en informática/concurrentes/Programación Concurrente (TB026).md
 ---
 # Índice
 ---

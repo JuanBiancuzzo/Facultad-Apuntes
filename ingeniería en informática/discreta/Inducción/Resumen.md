@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/discreta/Inducción
   - facultad/resumen
 nombreResumen: Inducción
+materiaResumen: ingeniería en informática/discreta/Matemática discreta (6107).md
 ---
 # Índice
 ---

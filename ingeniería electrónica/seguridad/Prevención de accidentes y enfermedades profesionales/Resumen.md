@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
   - facultad/resumen
 nombreResumen: Prevención de accidentes y enfermedades profesionales
+materiaResumen: ingeniería electrónica/seguridad/Seguridad ambiental y del trabajo (9704).md
 ---
 # Índice 
 ---

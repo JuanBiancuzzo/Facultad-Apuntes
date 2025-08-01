@@ -7,6 +7,7 @@ tags:
 referencias:
   - "590"
 nombreResumen: Capa de aplicación
+materiaResumen: ingeniería en informática/redes/Redes (TA048).md
 ---
 # Índice 
 ---

@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/seguridad/Prevención-de-incendios
   - facultad/resumen
 nombreResumen: Prevención de incendios
+materiaResumen: ingeniería electrónica/seguridad/Seguridad ambiental y del trabajo (9704).md
 ---
 # Índice 
 ---

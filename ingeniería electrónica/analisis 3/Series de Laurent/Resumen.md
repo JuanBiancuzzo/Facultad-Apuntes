@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Series-de-Laurent
   - facultad/resumen
 nombreResumen: Series de Laurent
+materiaResumen: ingeniería electrónica/analisis 3/Análisis matemático 3 (6110).md
 ---
 # Índice 
 ---

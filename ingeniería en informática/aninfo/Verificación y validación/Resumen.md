@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Verificación-y-validación
   - facultad/resumen
 nombreResumen: Verificación y validación
+materiaResumen: ingeniería en informática/aninfo/Análisis de la información (7509).md
 ---
 # Índice 
 ---

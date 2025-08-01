@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/embebidos/Sistemas-operativos-de-tiempo-real
   - facultad/resumen
 nombreResumen: Sistemas operativos de tiempo real
+materiaResumen: ingeniería electrónica/embebidos/Taller de sistemas embebidos (TA134).md
 ---
 # Índice
 ---

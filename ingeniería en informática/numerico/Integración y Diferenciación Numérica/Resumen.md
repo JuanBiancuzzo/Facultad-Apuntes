@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/numerico/Integración-y-Diferenciación-Numérica
   - facultad/resumen
 nombreResumen: Integración y Diferenciación Numérica
+materiaResumen: ingeniería en informática/numerico/Análisis numérico (7512).md
 ---
 # Índice 
 ---

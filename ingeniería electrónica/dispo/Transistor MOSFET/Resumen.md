@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/dispo/Transistor-MOSFET
   - facultad/resumen
 nombreResumen: Transistor MOSFET
+materiaResumen: ingeniería electrónica/dispo/Dispositivos semiconductores (8603).md
 ---
 # Índice 
 ---

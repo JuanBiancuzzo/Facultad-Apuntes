@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/concurrentes/Distributed-Transactions
   - facultad/resumen
 nombreResumen: Distributed Transactions
+materiaResumen: ingeniería en informática/concurrentes/Programación Concurrente (TB026).md
 ---
 # Índice
 ---

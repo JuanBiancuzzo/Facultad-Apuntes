@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Series
   - facultad/resumen
 nombreResumen: Series
+materiaResumen: ingeniería electrónica/analisis 3/Análisis matemático 3 (6110).md
 ---
 # Índice 
 ---

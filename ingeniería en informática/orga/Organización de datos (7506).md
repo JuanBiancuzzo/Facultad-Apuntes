@@ -8,8 +8,10 @@ tags:
   - facultad/materia
 etapa: empezado
 correlativas:
-  - "[[ingeniería en informática/algebra 2/Álgebra 2 A (6108).md]]"
-  - "[[ingeniería en informática/algo 2/Algoritmos y programación 2 (7541).md]]"
+  - path: ingeniería en informática/algebra 2/Álgebra 2 A (6108).md
+    tipo: Materia
+  - path: ingeniería en informática/algo 2/Algoritmos y programación 2 (7541).md
+    tipo: Materia
 nombreMateria: Organización de datos
 nombreReducido: orga
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"

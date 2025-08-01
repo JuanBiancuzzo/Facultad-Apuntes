@@ -8,6 +8,7 @@ referencias:
   - "446"
   - "455"
 nombreResumen: Amplificadores diferenciales
+materiaResumen: ingeniería electrónica/circuitos/Circuitos microelectrónicos (TB068).md
 ---
 # Índice 
 ---

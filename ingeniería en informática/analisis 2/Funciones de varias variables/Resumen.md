@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/analisis-2/Funciones-de-varias-variables
   - facultad/resumen
 nombreResumen: Funciones de varias variables
+materiaResumen: ingeniería en informática/analisis 2/Análisis matemático 2 A (6103).md
 ---
 # Índice
 ---

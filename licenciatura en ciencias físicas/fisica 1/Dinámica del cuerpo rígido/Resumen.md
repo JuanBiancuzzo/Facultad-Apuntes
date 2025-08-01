@@ -4,6 +4,7 @@ tags:
   - carrera/licenciatura-en-ciencias-físicas/fisica-1/Dinámica-del-cuerpo-rígido
   - facultad/resumen
 nombreResumen: Dinámica del cuerpo rígido
+materiaResumen: licenciatura en ciencias físicas/fisica 1/Física 1.md
 ---
 # Índice
 ---

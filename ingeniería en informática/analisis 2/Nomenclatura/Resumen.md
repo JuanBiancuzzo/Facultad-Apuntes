@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/analisis-2/Nomenclatura
   - facultad/resumen
 nombreResumen: Nomenclatura
+materiaResumen: ingeniería en informática/analisis 2/Análisis matemático 2 A (6103).md
 ---
 # Índice
 ---

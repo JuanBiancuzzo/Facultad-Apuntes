@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Ingeniería-de-requisitos
   - facultad/resumen
 nombreResumen: Ingeniería de requisitos
+materiaResumen: ingeniería en informática/aninfo/Análisis de la información (7509).md
 ---
 # Índice 
 ---

@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/fisica-1/Hidrodinámica
   - facultad/resumen
 nombreResumen: Hidrodinámica
+materiaResumen: ingeniería en informática/fisica 1/Física 1 A (6201).md
 ---
 # Índice 
 ---

@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Transformaciones-conformes
   - facultad/resumen
 nombreResumen: Transformaciones conformes
+materiaResumen: ingeniería electrónica/analisis 3/Análisis matemático 3 (6110).md
 ---
 # Índice 
 ---

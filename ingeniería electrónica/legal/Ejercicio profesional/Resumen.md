@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/legal/Ejercicio-profesional
   - facultad/resumen
 nombreResumen: Ejercicio profesional
+materiaResumen: ingeniería electrónica/legal/Legislación y ejercicio profesional (9111).md
 ---
 # Índice 
 ---

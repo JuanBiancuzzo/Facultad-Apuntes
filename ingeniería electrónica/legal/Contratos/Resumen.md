@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/legal/Contratos
   - facultad/resumen
 nombreResumen: Contratos
+materiaResumen: ingeniería electrónica/legal/Legislación y ejercicio profesional (9111).md
 ---
 # Índice 
 ---

@@ -9,6 +9,7 @@ referencias:
   - "517"
   - "521"
 nombreResumen: Vectores y geometría del espacio
+materiaResumen: licenciatura en ciencias matemáticas/analisis 1/Análisis 1.md
 ---
 # Índice
 ---

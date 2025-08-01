@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/discreta/Ecuaciones-de-recurrencia
   - facultad/resumen
 nombreResumen: Ecuaciones de recurrencia
+materiaResumen: ingeniería en informática/discreta/Matemática discreta (6107).md
 ---
 # Índice
 ---

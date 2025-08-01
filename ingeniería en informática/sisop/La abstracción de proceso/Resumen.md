@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/sisop/La-abstracción-de-proceso
   - facultad/resumen
 nombreResumen: La abstracción de proceso
+materiaResumen: ingeniería en informática/sisop/Sistemas operativos (7508).md
 ---
 # Índice 
 ---

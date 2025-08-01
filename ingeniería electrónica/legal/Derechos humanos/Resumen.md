@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/legal/Derechos-humanos
   - facultad/resumen
 nombreResumen: Derechos humanos
+materiaResumen: ingeniería electrónica/legal/Legislación y ejercicio profesional (9111).md
 ---
 # Índice 
 ---

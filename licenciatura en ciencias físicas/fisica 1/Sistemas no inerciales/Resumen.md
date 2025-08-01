@@ -4,6 +4,7 @@ tags:
   - carrera/licenciatura-en-ciencias-físicas/fisica-1/Sistemas-no-inerciales
   - facultad/resumen
 nombreResumen: Sistemas no inerciales
+materiaResumen: licenciatura en ciencias físicas/fisica 1/Física 1.md
 ---
 # Índice
 ---

@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/concurrentes/Introducción
   - facultad/resumen
 nombreResumen: Introducción
+materiaResumen: ingeniería en informática/concurrentes/Programación Concurrente (TB026).md
 ---
 # Índice
 ---

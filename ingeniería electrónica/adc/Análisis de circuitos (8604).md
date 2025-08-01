@@ -8,9 +8,12 @@ tags:
   - facultad/materia
 etapa: terminado
 correlativas:
-  - "[[ingeniería electrónica/analisis 3/Análisis matemático 3 (6110).md]]"
-  - "[[ingeniería electrónica/intro/Introducción a la ingeniería electronica (8602).md]]"
-  - "[[ingeniería electrónica/Física 2 A (8202).md]]"
+  - path: ingeniería electrónica/analisis 3/Análisis matemático 3 (6110).md
+    tipo: Materia
+  - path: ingeniería electrónica/intro/Introducción a la ingeniería electronica (8602).md
+    tipo: Materia
+  - path: ingeniería electrónica/Física 2 A (8202).md
+    tipo: Equivalente
 nombreMateria: Análisis de circuitos
 nombreReducido: adc
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"

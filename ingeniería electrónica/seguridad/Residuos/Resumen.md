@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/seguridad/Residuos
   - facultad/resumen
 nombreResumen: Residuos
+materiaResumen: ingeniería electrónica/seguridad/Seguridad ambiental y del trabajo (9704).md
 ---
 # Índice 
 ---

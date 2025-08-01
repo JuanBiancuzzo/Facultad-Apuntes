@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/orga/Machine-learning
   - facultad/resumen
 nombreResumen: Machine learning
+materiaResumen: ingeniería en informática/orga/Organización de datos (7506).md
 ---
 # Índice 
 ---

@@ -10,8 +10,10 @@ cuatri: 25C1
 plan: "2023"
 codigo: TA132
 correlativas:
-  - "[[ingeniería electrónica/Probabilidad y Estadística B (8104).md]]"
-  - "[[ingeniería electrónica/señales/Señales y sistemas (TB065).md]]"
+  - path: ingeniería electrónica/Probabilidad y Estadística B (8104).md
+    tipo: Equivalente
+  - path: ingeniería electrónica/señales/Señales y sistemas (TB065).md
+    tipo: Materia
 referencias:
   - "936"
   - "956"

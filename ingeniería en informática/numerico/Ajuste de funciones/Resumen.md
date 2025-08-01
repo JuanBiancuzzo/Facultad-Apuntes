@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/numerico/Ajuste-de-funciones
   - facultad/resumen
 nombreResumen: Ajuste de funciones
+materiaResumen: ingeniería en informática/numerico/Análisis numérico (7512).md
 ---
 # Índice 
 ---

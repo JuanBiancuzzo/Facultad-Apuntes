@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Propiedades-de-las-funciones-holomorfas
   - facultad/resumen
 nombreResumen: Propiedades de las funciones holomorfas
+materiaResumen: ingeniería electrónica/analisis 3/Análisis matemático 3 (6110).md
 ---
 # Índice 
 ---

@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/fisica-2/Inducción-electromagnética
   - facultad/resumen
 nombreResumen: Inducción electromagnética
+materiaResumen: ingeniería en informática/fisica 2/Física 2 A (6203).md
 ---
 # Índice 
 ---

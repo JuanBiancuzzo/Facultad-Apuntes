@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/intro/Multimetro
   - facultad/resumen
 nombreResumen: Multimetro
+materiaResumen: ingeniería electrónica/intro/Introducción a la ingeniería electronica (8602).md
 ---
 # Índice 
 ---

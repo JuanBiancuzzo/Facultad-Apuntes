@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/circuitos-2/Fuentes-de-alimentación-conmutadas
 nombreResumen: Fuentes de alimentación conmutadas
 capitulo: 6
+materiaResumen: ingeniería electrónica/circuitos 2/Taller de diseño de circuitos electrónicos (TA138).md
 ---
 # Índice
 ---

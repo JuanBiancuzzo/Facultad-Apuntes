@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/proba/Teorema-central-del-límite
   - facultad/resumen
 nombreResumen: Teorema central del límite
+materiaResumen: ingeniería en informática/proba/Probabilidad y estadística B (6109).md
 ---
 # Índice 
 ---

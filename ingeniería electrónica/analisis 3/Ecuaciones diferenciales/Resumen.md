@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Ecuaciones-diferenciales
   - facultad/resumen
 nombreResumen: Ecuaciones diferenciales
+materiaResumen: ingeniería electrónica/analisis 3/Análisis matemático 3 (6110).md
 ---
 # Índice 
 ---

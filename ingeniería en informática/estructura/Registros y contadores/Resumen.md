@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/estructura/Registros-y-contadores
   - facultad/resumen
 nombreResumen: Registros y contadores
+materiaResumen: ingeniería en informática/estructura/Estructura del computador (6670).md
 ---
 # Índice 
 ---

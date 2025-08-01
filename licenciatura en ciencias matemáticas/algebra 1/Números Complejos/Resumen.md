@@ -7,6 +7,7 @@ tags:
 referencias:
   - "416"
 nombreResumen: Números Complejos
+materiaResumen: licenciatura en ciencias matemáticas/algebra 1/Álgebra 1.md
 ---
 # Índice
 ---

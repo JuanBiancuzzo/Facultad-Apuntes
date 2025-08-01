@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/estoca/Análisis-de-procesos
 nombreResumen: Análisis de procesos
 capitulo: 5
+materiaResumen: ingeniería electrónica/estoca/Procesos estocásticos (TA132).md
 ---
 # Índice
 ---

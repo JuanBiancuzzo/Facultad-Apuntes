@@ -6,6 +6,7 @@ tags:
   - carrera/licenciatura-en-ciencias-físicas/analisis-1/Polinomio-de-Taylor
   - facultad/resumen
 nombreResumen: Polinomio de Taylor
+materiaResumen: licenciatura en ciencias matemáticas/analisis 1/Análisis 1.md
 ---
 # Índice
 ---

@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/estructura/Punto-flotante
   - facultad/resumen
 nombreResumen: Punto flotante
+materiaResumen: ingeniería en informática/estructura/Estructura del computador (6670).md
 ---
 # Índice 
 ---

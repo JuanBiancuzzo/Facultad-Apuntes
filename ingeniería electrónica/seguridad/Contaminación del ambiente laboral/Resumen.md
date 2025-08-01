@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/seguridad/Contaminación-del-ambiente-laboral
   - facultad/resumen
 nombreResumen: Contaminación del ambiente laboral
+materiaResumen: ingeniería electrónica/seguridad/Seguridad ambiental y del trabajo (9704).md
 ---
 # Índice 
 ---

@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Ingeniería-de-software
   - facultad/resumen
 nombreResumen: Ingeniería de software
+materiaResumen: ingeniería en informática/aninfo/Análisis de la información (7509).md
 ---
 # Índice 
 ---

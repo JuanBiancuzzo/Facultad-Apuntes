@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/señales/Sistemas-LTI
   - facultad/resumen
 nombreResumen: Sistemas LTI
+materiaResumen: ingeniería electrónica/señales/Señales y sistemas (TB065).md
 ---
 # Índice 
 ---

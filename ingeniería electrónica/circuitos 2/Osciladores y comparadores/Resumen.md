@@ -9,6 +9,7 @@ referencias:
   - "939"
   - "1047"
   - "1034"
+materiaResumen: ingeniería electrónica/circuitos 2/Taller de diseño de circuitos electrónicos (TA138).md
 ---
 # Índice
 ---

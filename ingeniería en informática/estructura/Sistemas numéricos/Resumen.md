@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/estructura/Sistemas-numéricos
   - facultad/resumen
 nombreResumen: Sistemas numéricos
+materiaResumen: ingeniería en informática/estructura/Estructura del computador (6670).md
 ---
 # Índice 
 ---

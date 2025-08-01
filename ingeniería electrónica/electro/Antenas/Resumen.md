@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/electro/Antenas
   - facultad/resumen
 nombreResumen: Antenas
+materiaResumen: ingeniería electrónica/electro/Electromagnetismo aplicado (TB069).md
 ---
 # Índice
 ---

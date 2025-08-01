@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/señales/Filtros-digitales
   - facultad/resumen
 nombreResumen: Filtros digitales
+materiaResumen: ingeniería electrónica/señales/Señales y sistemas (TB065).md
 ---
 # Índice 
 ---

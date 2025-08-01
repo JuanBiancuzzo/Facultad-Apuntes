@@ -11,6 +11,7 @@ referencias:
   - "872"
   - "873"
 etapa: sin-empezar
+materiaResumen: ingeniería electrónica/control/Control automático (TA133).md
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

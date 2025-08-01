@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-en-informática/fisica-3/Radiación-de-cuerpo-negro
   - facultad/resumen
 nombreResumen: Radiación de cuerpo negro
+materiaResumen: ingeniería electrónica/fisica 3/Física 3 (8203).md
 ---
 # Índice 
 ---

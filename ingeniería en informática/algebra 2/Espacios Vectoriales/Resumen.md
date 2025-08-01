@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/algebra-2/Espacios-Vectoriales
   - facultad/resumen
 nombreResumen: Espacios Vectoriales
+materiaResumen: ingeniería en informática/algebra 2/Álgebra 2 A (6108).md
 ---
 # Índice 
 ---

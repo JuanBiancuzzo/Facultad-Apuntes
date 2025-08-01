@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/legal/Derechos-comerciales-y-sociales
   - facultad/resumen
 nombreResumen: Derechos comerciales y sociales
+materiaResumen: ingeniería electrónica/legal/Legislación y ejercicio profesional (9111).md
 ---
 # Índice 
 ---

@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Derivabilidad-y-holomorfía
   - facultad/resumen
 nombreResumen: Derivabilidad y holomorfía
+materiaResumen: ingeniería electrónica/analisis 3/Análisis matemático 3 (6110).md
 ---
 # Índice 
 ---

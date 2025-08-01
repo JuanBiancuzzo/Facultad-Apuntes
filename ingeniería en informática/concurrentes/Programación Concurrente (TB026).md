@@ -4,8 +4,10 @@ tags:
   - carrera/ingeniería-en-informática/concurrentes
   - facultad/materia
 correlativas:
-  - "[[ingeniería en informática/taller/Taller de programación 1 (9508).md]]"
-  - "[[ingeniería en informática/sisop/Sistemas operativos (7508).md]]"
+  - path: ingeniería en informática/taller/Taller de programación 1 (9508).md
+    tipo: Materia
+  - path: ingeniería en informática/sisop/Sistemas operativos (7508).md
+    tipo: Materia
 codigo: TB026
 cuatri: 25C2
 etapa: sin-empezar

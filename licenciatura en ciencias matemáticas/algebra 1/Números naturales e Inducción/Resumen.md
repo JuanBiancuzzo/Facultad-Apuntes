@@ -8,6 +8,7 @@ referencias:
   - "412"
   - "413"
 nombreResumen: Números naturales e Inducción
+materiaResumen: licenciatura en ciencias matemáticas/algebra 1/Álgebra 1.md
 ---
 # Índice
 ---

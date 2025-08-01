@@ -4,6 +4,7 @@ tags:
   - carrera/licenciatura-en-ciencias-físicas/fisica-1/Cinemática-del-punto
   - facultad/resumen
 nombreResumen: Cinemática del punto
+materiaResumen: licenciatura en ciencias físicas/fisica 1/Física 1.md
 ---
 # Índice
 ---

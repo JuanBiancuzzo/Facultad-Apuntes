@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/bdd/SQL
   - facultad/resumen
 nombreResumen: SQL
+materiaResumen: ingeniería en informática/bdd/Base de datos (TA044).md
 ---
 # Índice 
 ---

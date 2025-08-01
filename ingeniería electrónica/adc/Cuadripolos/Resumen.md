@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-en-informática/adc/Cuadripolos
   - facultad/resumen
 nombreResumen: Cuadripolos
+materiaResumen: ingeniería electrónica/adc/Análisis de circuitos (8604).md
 ---
 # Índice 
 ---

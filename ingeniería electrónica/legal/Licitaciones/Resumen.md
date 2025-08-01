@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/legal/Licitaciones
   - facultad/resumen
 nombreResumen: Licitaciones
+materiaResumen: ingeniería electrónica/legal/Legislación y ejercicio profesional (9111).md
 ---
 # Índice 
 ---

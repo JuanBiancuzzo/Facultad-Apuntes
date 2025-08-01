@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/fisica-2/Magnetismo-estacionario-en-medios-materiales
   - facultad/resumen
 nombreResumen: Magnetismo estacionario en medios materiales
+materiaResumen: ingeniería en informática/fisica 2/Física 2 A (6203).md
 ---
 # Índice 
 ---

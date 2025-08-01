@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/proba/Test-de-hipótesis
   - facultad/resumen
 nombreResumen: Test de hipótesis
+materiaResumen: ingeniería en informática/proba/Probabilidad y estadística B (6109).md
 ---
 # Índice 
 ---

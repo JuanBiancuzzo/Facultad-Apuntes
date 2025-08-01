@@ -4,6 +4,7 @@ tags:
   - carrera/licenciatura-en-ciencias-físicas/fisica-1/Impulso-lineal
   - facultad/resumen
 nombreResumen: Impulso lineal
+materiaResumen: licenciatura en ciencias físicas/fisica 1/Física 1.md
 ---
 # Índice
 ---

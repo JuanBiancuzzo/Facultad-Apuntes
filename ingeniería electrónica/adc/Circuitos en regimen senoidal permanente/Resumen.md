@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-senoidal-permanente
   - facultad/resumen
 nombreResumen: Circuitos en regimen senoidal permanente
+materiaResumen: ingeniería electrónica/adc/Análisis de circuitos (8604).md
 ---
 # Índice 
 ---

@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/circuitos-2/Modulaciones-conmutadas
 nombreResumen: Modulaciones conmutadas
 capitulo: 5
+materiaResumen: ingeniería electrónica/circuitos 2/Taller de diseño de circuitos electrónicos (TA138).md
 ---
 # Índice
 ---

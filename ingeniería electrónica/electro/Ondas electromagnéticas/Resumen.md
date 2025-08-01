@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/electro/Ondas-electromagnéticas-en-el-vacío
   - facultad/resumen
 nombreResumen: Ondas electromagnéticas
+materiaResumen: ingeniería electrónica/electro/Electromagnetismo aplicado (TB069).md
 ---
 # Índice
 ---

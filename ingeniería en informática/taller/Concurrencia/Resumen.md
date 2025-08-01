@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/taller/Concurrencia
   - facultad/resumen
 nombreResumen: Concurrencia
+materiaResumen: ingeniería en informática/taller/Taller de programación 1 (9508).md
 ---
 # Índice 
 ---

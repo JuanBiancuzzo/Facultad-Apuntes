@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/proba/Proceso-de-Poisson
   - facultad/resumen
 nombreResumen: Proceso de Poisson
+materiaResumen: ingeniería en informática/proba/Probabilidad y estadística B (6109).md
 ---
 # Índice 
 ---

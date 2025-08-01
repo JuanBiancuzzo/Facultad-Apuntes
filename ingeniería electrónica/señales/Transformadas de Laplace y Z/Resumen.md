@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/señales/Transformadas-de-Laplace-y-Z
   - facultad/resumen
 nombreResumen: Transformadas de Laplace y Z
+materiaResumen: ingeniería electrónica/señales/Señales y sistemas (TB065).md
 ---
 # Índice 
 ---

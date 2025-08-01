@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/fisica-1/Cuerpo-rígido
   - facultad/resumen
 nombreResumen: Cuerpo rígido
+materiaResumen: ingeniería en informática/fisica 1/Física 1 A (6201).md
 ---
 # Índice 
 ---

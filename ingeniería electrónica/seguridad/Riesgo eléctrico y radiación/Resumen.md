@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/seguridad/Riesgo-eléctrico-y-radiación
   - facultad/resumen
 nombreResumen: Riesgo eléctrico y radiación
+materiaResumen: ingeniería electrónica/seguridad/Seguridad ambiental y del trabajo (9704).md
 ---
 # Índice 
 ---

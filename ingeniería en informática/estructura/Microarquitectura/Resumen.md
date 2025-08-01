@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/estructura/Microarquitectura
   - facultad/resumen
 nombreResumen: Microarquitectura
+materiaResumen: ingeniería en informática/estructura/Estructura del computador (6670).md
 ---
 # Índice
 ---

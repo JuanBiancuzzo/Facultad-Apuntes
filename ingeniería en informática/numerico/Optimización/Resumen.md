@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/numerico/Optimización
   - facultad/resumen
 nombreResumen: Optimización
+materiaResumen: ingeniería en informática/numerico/Análisis numérico (7512).md
 ---
 # Índice 
 ---

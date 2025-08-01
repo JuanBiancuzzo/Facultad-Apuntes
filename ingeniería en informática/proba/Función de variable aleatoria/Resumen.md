@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/proba/Función-de-variable-aleatoria
   - facultad/resumen
 nombreResumen: Función de variable aleatoria
+materiaResumen: ingeniería en informática/proba/Probabilidad y estadística B (6109).md
 ---
 # Índice 
 ---

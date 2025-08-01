@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/sisop/Scheduling
   - facultad/resumen
 nombreResumen: Scheduling
+materiaResumen: ingeniería en informática/sisop/Sistemas operativos (7508).md
 ---
 # Índice 
 ---

@@ -5,6 +5,7 @@ tags:
 nombreResumen: Control Digital
 capitulo: "8"
 referencias: []
+materiaResumen: ingeniería electrónica/control/Control automático (TA133).md
 ---
 # Índice
 ---

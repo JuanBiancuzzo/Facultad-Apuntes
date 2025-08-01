@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Desarrollo-de-software-y-modelos-de-proceso
   - facultad/resumen
 nombreResumen: Desarrollo de software y modelos de proceso
+materiaResumen: ingeniería en informática/aninfo/Análisis de la información (7509).md
 ---
 # Índice 
 ---

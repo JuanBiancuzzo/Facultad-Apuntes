@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/dispo/Transistor-bipolar-de-juntura
   - facultad/resumen
 nombreResumen: Transistor bipolar de juntura
+materiaResumen: ingeniería electrónica/dispo/Dispositivos semiconductores (8603).md
 ---
 # Índice 
 ---

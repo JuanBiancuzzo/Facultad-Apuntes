@@ -12,6 +12,7 @@ referencias:
   - "462"
   - "463"
 nombreResumen: Circuitos con diodos
+materiaResumen: ingeniería electrónica/circuitos/Circuitos microelectrónicos (TB068).md
 ---
 # Índice 
 ---

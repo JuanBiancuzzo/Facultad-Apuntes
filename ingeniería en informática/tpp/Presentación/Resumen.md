@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/tpp/Presentación
   - facultad/resumen
 nombreResumen: Presentación
+materiaResumen: ingeniería en informática/tpp/Trabajo Profesional de Ingeniería Informática.md
 ---
 # Índice 
 ---

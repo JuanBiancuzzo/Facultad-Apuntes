@@ -5,6 +5,7 @@ tags:
   - investigación/ciencias-de-la-computación/Programación-asincrónica
   - facultad/resumen
 nombreResumen: Programación Asincrónica
+materiaResumen: ingeniería en informática/concurrentes/Programación Concurrente (TB026).md
 ---
 # Índice
 ---

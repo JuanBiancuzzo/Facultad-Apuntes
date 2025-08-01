@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/señales/Transformada-discreta-de-Fourier
   - facultad/resumen
 nombreResumen: Transformada discreta de Fourier
+materiaResumen: ingeniería electrónica/señales/Señales y sistemas (TB065).md
 ---
 # Índice 
 ---

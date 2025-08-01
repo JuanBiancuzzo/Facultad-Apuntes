@@ -14,6 +14,7 @@ referencias:
   - "460"
   - "461"
 nombreResumen: Dispositivos de control de señal y en conmutación
+materiaResumen: ingeniería electrónica/circuitos/Circuitos microelectrónicos (TB068).md
 ---
 # Índice 
 ---

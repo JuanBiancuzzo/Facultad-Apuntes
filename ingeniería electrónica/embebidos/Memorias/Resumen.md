@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/embebidos/Memorias
   - facultad/resumen
 nombreResumen: Memorias
+materiaResumen: ingeniería electrónica/embebidos/Taller de sistemas embebidos (TA134).md
 ---
 # Índice
 ---

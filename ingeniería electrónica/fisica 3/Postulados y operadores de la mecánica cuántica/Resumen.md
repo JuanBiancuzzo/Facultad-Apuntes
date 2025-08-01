@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-en-informática/fisica-3/Postulados-y-operadores-de-la-mecánica-cuántica
   - facultad/resumen
 nombreResumen: Postulados y operadores de la mecánica cuántica
+materiaResumen: ingeniería electrónica/fisica 3/Física 3 (8203).md
 ---
 # Índice 
 ---

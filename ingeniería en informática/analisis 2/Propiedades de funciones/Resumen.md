@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/analisis-2/Propiedades-de-funciones
   - facultad/resumen
 nombreResumen: Propiedades de funciones
+materiaResumen: ingeniería en informática/analisis 2/Análisis matemático 2 A (6103).md
 ---
 # Índice
 ---

@@ -11,6 +11,7 @@ referencias:
   - "450"
   - "452"
 nombreResumen: Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias
+materiaResumen: ingeniería electrónica/circuitos/Circuitos microelectrónicos (TB068).md
 ---
 # Índice 
 ---

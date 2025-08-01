@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/estructura/Flip-Flops
   - facultad/resumen
 nombreResumen: Flip-Flops
+materiaResumen: ingeniería en informática/estructura/Estructura del computador (6670).md
 ---
 # Índice 
 ---

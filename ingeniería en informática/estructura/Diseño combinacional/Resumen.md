@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/estructura/Diseño-combinacional
   - facultad/resumen
 nombreResumen: Diseño combinacional
+materiaResumen: ingeniería en informática/estructura/Estructura del computador (6670).md
 ---
 # Índice 
 ---

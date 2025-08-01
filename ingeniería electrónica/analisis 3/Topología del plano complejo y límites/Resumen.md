@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Topología-del-plano-complejo-y-límites
   - facultad/resumen
 nombreResumen: Topología del plano complejo y límites
+materiaResumen: ingeniería electrónica/analisis 3/Análisis matemático 3 (6110).md
 ---
 # Índice 
 ---

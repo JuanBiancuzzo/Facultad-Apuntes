@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Peopleware
   - facultad/resumen
 nombreResumen: Peopleware
+materiaResumen: ingeniería en informática/aninfo/Análisis de la información (7509).md
 ---
 # Índice 
 ---
