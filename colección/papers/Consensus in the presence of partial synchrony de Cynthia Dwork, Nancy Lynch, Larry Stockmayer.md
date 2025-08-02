@@ -17,7 +17,7 @@ editores:
 url: https://doi.org/10.1145/42282.42283
 tags:
   - referencia/paper
-  - biblioteca/paper
+  - colección/biblioteca/paper
   - nota/investigacion
   - carrera/ingeniería-en-informática/tpp/Propuesta
 ---

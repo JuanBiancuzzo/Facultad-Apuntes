@@ -33,7 +33,7 @@ editores: []
 url: https://doi.org/10.1038/s44159-023-00218-4
 tags: 
  - referencia/paper
- - biblioteca/paper
+ - colección/biblioteca/paper
  - nota/investigacion
 ---
 ```dataviewjs

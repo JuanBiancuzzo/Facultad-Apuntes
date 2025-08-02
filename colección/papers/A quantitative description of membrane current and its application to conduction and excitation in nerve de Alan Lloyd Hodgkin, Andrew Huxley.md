@@ -15,7 +15,7 @@ editores:
 url: https://pmc.ncbi.nlm.nih.gov/articles/PMC1392413/
 tags:
   - referencia/paper
-  - biblioteca/paper
+  - colección/biblioteca/paper
   - nota/investigacion
   - investigación/neurociencias
 aliases:

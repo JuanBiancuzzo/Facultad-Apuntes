@@ -24,7 +24,7 @@ url:
 doi: 10.1145/1457720.1457743
 tags: 
  - referencia/paper
- - biblioteca/paper
+ - colección/biblioteca/paper
  - nota/investigacion
 ---
 ```dataviewjs

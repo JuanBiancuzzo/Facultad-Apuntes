@@ -5,7 +5,7 @@ referencias:
   - 700
 tags:
   - curso/introduction-to-algorithms/Introduction
-  - nota/investigacion
+  - nota/curso
   - investigación/ciencias-de-la-computación/algoritmos
 ---
 ```dataviewjs

@@ -15,7 +15,7 @@ editores:
 url: http://www.scholarpedia.org/article/Deep_belief_networks
 tags:
   - referencia/paper
-  - biblioteca/paper
+  - colección/biblioteca/paper
   - nota/investigacion
   - investigación/machine-Learning/Deep-Learning
   - investigación/ciencias-de-la-computación/Machine-learning/Deep-Learning

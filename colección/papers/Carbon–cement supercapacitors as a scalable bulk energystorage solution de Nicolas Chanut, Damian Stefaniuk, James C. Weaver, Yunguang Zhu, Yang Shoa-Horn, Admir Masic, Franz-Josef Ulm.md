@@ -25,7 +25,7 @@ editores: []
 url: https://www.pnas.org/doi/epdf/10.1073/pnas.2304318120
 tags:
   - referencia/paper
-  - biblioteca/paper
+  - colección/biblioteca/paper
   - nota/investigacion
   - investigación/generación-de-energía/Baterías
 ---

@@ -20,7 +20,7 @@ url: https://doi.org/10.1145/362575.362577
 doi: 
 tags: 
  - referencia/paper
- - biblioteca/paper
+ - colección/biblioteca/paper
  - nota/investigacion
 ---
 ```dataviewjs

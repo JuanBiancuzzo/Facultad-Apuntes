@@ -15,7 +15,7 @@ editores:
 url: http://www.andreasaristidou.com/publications/papers/FABRIK.pdf
 tags:
   - referencia/paper
-  - biblioteca/paper
+  - colección/biblioteca/paper
   - nota/investigacion
   - investigación/ciencias-de-la-computación/algoritmos
 aliases:

@@ -19,7 +19,7 @@ editores:
 url: 
 tags:
   - referencia/paper
-  - biblioteca/paper
+  - colección/biblioteca/paper
   - nota/investigacion
   - investigación/generación-de-energía/Baterías
 aliases:

@@ -25,7 +25,7 @@ editores:
 url: 
 tags:
   - referencia/paper
-  - biblioteca/paper
+  - colección/biblioteca/paper
   - nota/investigacion
   - carrera/ingeniería-en-informática/algebra-2/Autovalores-y-autovectores
   - carrera/ingeniería-electrónica/algebra-2/Autovalores-y-autovectores

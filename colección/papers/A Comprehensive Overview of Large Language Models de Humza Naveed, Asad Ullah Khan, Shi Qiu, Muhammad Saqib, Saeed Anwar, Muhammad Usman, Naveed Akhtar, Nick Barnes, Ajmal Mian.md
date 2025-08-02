@@ -29,7 +29,7 @@ editores:
 url: https://doi.org/10.48550/arXiv.2307.06435
 tags:
   - referencia/paper
-  - biblioteca/paper
+  - colección/biblioteca/paper
   - nota/investigacion
 ---
 ```dataviewjs

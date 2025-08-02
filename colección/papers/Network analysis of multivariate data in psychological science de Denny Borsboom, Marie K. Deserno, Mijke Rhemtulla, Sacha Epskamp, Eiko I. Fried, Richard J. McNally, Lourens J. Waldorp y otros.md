@@ -41,7 +41,7 @@ editores: []
 url: http://dx.doi.org/10.1038/s43586-021-00055-w
 tags: 
  - referencia/paper
- - biblioteca/paper
+ - colección/biblioteca/paper
  - nota/investigacion
 ---
 ```dataviewjs

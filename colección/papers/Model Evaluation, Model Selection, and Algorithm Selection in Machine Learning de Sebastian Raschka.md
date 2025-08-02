@@ -13,7 +13,7 @@ editores: []
 url: https://api.semanticscholar.org/CorpusID:49529756
 tags: 
  - referencia/paper
- - biblioteca/paper
+ - colección/biblioteca/paper
  - nota/investigacion
 ---
 ```dataviewjs

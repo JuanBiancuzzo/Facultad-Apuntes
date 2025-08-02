@@ -17,7 +17,7 @@ editores:
 url: 
 tags:
   - referencia/paper
-  - biblioteca/paper
+  - colección/biblioteca/paper
   - nota/investigacion
   - investigación/protocolos
   - investigación/ciencias-de-la-computación/algoritmos

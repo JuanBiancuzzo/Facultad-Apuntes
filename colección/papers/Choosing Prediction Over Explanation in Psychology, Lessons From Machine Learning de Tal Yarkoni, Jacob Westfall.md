@@ -15,7 +15,7 @@ editores: []
 url: "Choosing prediction over explanation in psychology: Lessons from Machine Learning"
 tags: 
  - referencia/paper
- - biblioteca/paper
+ - colección/biblioteca/paper
  - nota/investigacion
 ---
 ```dataviewjs

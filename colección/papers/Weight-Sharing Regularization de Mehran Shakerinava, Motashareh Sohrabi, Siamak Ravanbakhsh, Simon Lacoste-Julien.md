@@ -19,7 +19,7 @@ editores:
 url: 
 tags:
   - referencia/paper
-  - biblioteca/paper
+  - colección/biblioteca/paper
   - nota/investigacion
   - investigación/machine-Learning/Regularization
   - investigación/ciencias-de-la-computación/Machine-learning/Regularization

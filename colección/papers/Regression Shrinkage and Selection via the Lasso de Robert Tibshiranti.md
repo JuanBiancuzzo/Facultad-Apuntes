@@ -13,7 +13,7 @@ editores:
 url: https://www.jstor.org/stable/2346178
 tags:
   - referencia/paper
-  - biblioteca/paper
+  - colección/biblioteca/paper
   - nota/investigacion
   - investigación/machine-Learning/Regularization
   - carrera/ingeniería-en-informática/orga/Machine-learning

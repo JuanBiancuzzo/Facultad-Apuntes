@@ -27,7 +27,7 @@ editores:
 url: 
 tags:
   - referencia/paper
-  - biblioteca/paper
+  - colección/biblioteca/paper
   - nota/investigacion
   - investigación/machine-Learning/transformers
   - investigación/ciencias-de-la-computación/Machine-learning/transformers

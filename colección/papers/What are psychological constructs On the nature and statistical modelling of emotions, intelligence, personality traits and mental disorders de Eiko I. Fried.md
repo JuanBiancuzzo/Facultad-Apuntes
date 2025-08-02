@@ -13,7 +13,7 @@ editores: []
 url: http://dx.doi.org/10.1080/17437199.2017.1306718
 tags: 
  - referencia/paper
- - biblioteca/paper
+ - colección/biblioteca/paper
  - nota/investigacion
 ---
 ```dataviewjs

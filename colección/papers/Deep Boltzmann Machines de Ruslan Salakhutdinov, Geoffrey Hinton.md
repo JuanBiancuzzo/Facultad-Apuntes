@@ -15,7 +15,7 @@ editores:
 url: https://proceedings.mlr.press/v5/salakhutdinov09a.html
 tags:
   - referencia/paper
-  - biblioteca/paper
+  - colección/biblioteca/paper
   - nota/investigacion
   - investigación/machine-Learning/Deep-Learning
   - investigación/ciencias-de-la-computación/Machine-learning/Deep-Learning

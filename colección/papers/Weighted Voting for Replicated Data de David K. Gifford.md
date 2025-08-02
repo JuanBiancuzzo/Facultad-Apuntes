@@ -13,7 +13,7 @@ editores:
 url: 
 tags:
   - referencia/paper
-  - biblioteca/paper
+  - colección/biblioteca/paper
   - nota/investigacion
   - carrera/ingeniería-en-informática/tpp/Propuesta
 ---
