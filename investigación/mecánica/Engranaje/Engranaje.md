@@ -3,8 +3,8 @@ dia: 2024-11-15
 estado: Sin empezar
 tags:
   - investigación/índice
-  - nota/investigacion
   - investigación/mecánica/Engranaje
+  - nota/investigacion
 aliases:
   - Gear
   - Corona

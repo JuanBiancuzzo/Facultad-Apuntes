@@ -15,9 +15,9 @@ url:
 capitulos: 
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 cover: Fooled by Randomness de Nissim Nicholas Taleb.jpg
 ---
 ```dataviewjs

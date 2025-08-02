@@ -2,10 +2,10 @@
 dia: 2023-09-05
 tags:
   - carrera/ingeniería-electrónica/adc/Circuitos-en-regimen-de-corriente-continua
-  - nota/facultad
   - carrera/ingeniería-electrónica/adc/Cuadripolos
   - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-de-corriente-continua
   - carrera/ingeniería-en-informática/adc/Cuadripolos
+  - nota/facultad
 aliases:
   - Cuadripolo en cascada
 ---

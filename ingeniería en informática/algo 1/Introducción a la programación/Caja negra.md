@@ -1,9 +1,9 @@
 ---
 dia: 2024-07-27
 tags:
+  - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
   - carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - nota/facultad
-  - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
 aliases:
   - Black box
 ---

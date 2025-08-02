@@ -1,10 +1,10 @@
 ---
 dia: 2023-11-17
 tags:
+  - carrera/ingeniería-electrónica/control/Realizaciones
+  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - carrera/ingeniería-electrónica/señales/Sistemas-LTI
   - nota/facultad
-  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
-  - carrera/ingeniería-electrónica/control/Realizaciones
 referencias:
   - "899"
   - "873"

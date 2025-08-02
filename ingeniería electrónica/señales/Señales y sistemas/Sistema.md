@@ -1,10 +1,10 @@
 ---
 dia: 2023-08-26
 tags:
+  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
+  - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - carrera/ingeniería-electrónica/señales/Señales-y-sistemas
   - nota/facultad
-  - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
-  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
 referencias:
   - "898"
 etapa: ampliar

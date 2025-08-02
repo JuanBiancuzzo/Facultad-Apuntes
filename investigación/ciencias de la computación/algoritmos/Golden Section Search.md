@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "479"
 tags:
-  - nota/investigacion
   - investigación/ciencias-de-la-computación/algoritmos
+  - nota/investigacion
 aliases:
   - Búsqueda de la sección dorada
 ---

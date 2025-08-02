@@ -19,9 +19,9 @@ capitulos:
 cover: Algoritmos computacionales, introducción al análisis y diseño de Sara Baase, Allen Van Gelder.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

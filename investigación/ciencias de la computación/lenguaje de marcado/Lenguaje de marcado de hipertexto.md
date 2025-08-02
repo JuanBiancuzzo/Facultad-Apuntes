@@ -8,10 +8,11 @@ aliases:
   - HyperText Markup Language
   - HTML
 tags:
-  - nota/investigacion
-  - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
   - carrera/ingeniería-electrónica/redes/Capa-de-aplicación
+  - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
   - investigación/lenguaje-de-marcado
+  - nota/facultad
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

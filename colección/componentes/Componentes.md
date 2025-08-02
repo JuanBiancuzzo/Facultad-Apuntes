@@ -3,9 +3,10 @@ dia: 2024-12-25
 tags:
   - colección/componentes
   - colección/representante
-  - investigación/índice
-  - nota/investigacion
   - investigación/electrónica/componentes
+  - investigación/índice
+  - nota/colección
+  - nota/investigacion
 estado: Vamos a caracterizar los componentes que vaya usando para poder así tener una lista de los componentes que suelo usar y por lo tanto tener un lugar en donde encontrar el como se tiene que usar
 ---
 # ¿Qué se va a investigar?

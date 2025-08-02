@@ -4,8 +4,8 @@ etapa: empezado
 referencias:
   - 665
 tags:
-  - nota/investigacion
   - investigación/electrónica
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

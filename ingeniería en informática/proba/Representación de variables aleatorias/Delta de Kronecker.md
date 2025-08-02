@@ -4,8 +4,8 @@ etapa: ampliar
 referencias:
   - "1022"
 tags:
-  - carrera/ingeniería-en-informática/proba/Representación-de-variables-aleatorias
   - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
+  - carrera/ingeniería-en-informática/proba/Representación-de-variables-aleatorias
   - nota/facultad
 ---
 ```dataviewjs

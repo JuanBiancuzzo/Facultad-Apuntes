@@ -1,9 +1,9 @@
 ---
 dia: 2023-01-23
 tags:
+  - carrera/ingeniería-electrónica/proba/Variables-aleatorias-condicionadas
   - carrera/ingeniería-en-informática/proba/Variables-aleatorias-condicionadas
   - nota/facultad
-  - carrera/ingeniería-electrónica/proba/Variables-aleatorias-condicionadas
 ---
 # Definición
 ---

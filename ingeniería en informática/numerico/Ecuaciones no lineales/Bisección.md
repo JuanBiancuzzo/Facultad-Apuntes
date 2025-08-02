@@ -1,9 +1,9 @@
 ---
 dia: 2023-03-14
 tags:
+  - carrera/ingeniería-electrónica/numerico/Ecuaciones-no-lineales
   - carrera/ingeniería-en-informática/numerico/Ecuaciones-no-lineales
   - nota/facultad
-  - carrera/ingeniería-electrónica/numerico/Ecuaciones-no-lineales
 ---
 # Definición
 ---

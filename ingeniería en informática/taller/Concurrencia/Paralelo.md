@@ -1,11 +1,11 @@
 ---
 dia: 2023-03-29
 tags:
+  - carrera/ingeniería-electrónica/taller/Concurrencia
+  - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
+  - carrera/ingeniería-en-informática/distribuidos/Introducción
   - carrera/ingeniería-en-informática/taller/Concurrencia
   - nota/facultad
-  - carrera/ingeniería-electrónica/taller/Concurrencia
-  - carrera/ingeniería-en-informática/distribuidos/Introducción
-  - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
 ---
 # Definición
 ---

@@ -2,8 +2,9 @@
 dia: 2024-08-27
 tags:
   - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
-  - nota/facultad
   - investigación/placa-de-Desarrollo/placa-de-desarrollo-Nucleo-64/placa-STM32-F302R8
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - ARM 7
 ---

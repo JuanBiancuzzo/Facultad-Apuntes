@@ -20,11 +20,12 @@ anio: "2006"
 editores: 
 url: 
 tags:
-  - referencia/paper
   - colección/biblioteca/paper
-  - nota/investigacion
-  - investigación/protocolos
   - investigación/ciencias-de-la-computación/algoritmos
+  - investigación/protocolos
+  - nota/colección
+  - nota/investigacion
+  - referencia/paper
 aliases:
   - HQ Replication
   - Hybrid Quorum Protocol for Byzantine Fault Tolerance

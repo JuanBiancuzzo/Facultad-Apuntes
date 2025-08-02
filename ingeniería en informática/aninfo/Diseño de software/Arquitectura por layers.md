@@ -2,8 +2,8 @@
 dia: 2023-10-22
 tags:
   - carrera/ingeniería-en-informática/aninfo/Diseño-de-software
-  - nota/facultad
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
+  - nota/facultad
 aliases:
   - Layer
 etapa: ampliar

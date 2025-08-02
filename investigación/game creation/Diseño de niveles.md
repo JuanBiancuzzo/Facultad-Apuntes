@@ -8,8 +8,8 @@ referencias:
   - "181"
   - "301"
 tags:
-  - nota/investigacion
   - investigación/game-creation
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

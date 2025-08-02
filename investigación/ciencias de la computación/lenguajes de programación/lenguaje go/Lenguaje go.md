@@ -2,8 +2,8 @@
 dia: 2024-10-07
 estado: Sin empezar
 tags:
-  - investigación/índice
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-go
+  - investigación/índice
   - nota/investigacion
 aliases:
   - Golang

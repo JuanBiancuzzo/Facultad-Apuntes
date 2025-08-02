@@ -16,9 +16,9 @@ anio: "1982"
 editores: 
 url: 
 tags:
-  - referencia/paper
   - colección/biblioteca/paper
-  - nota/investigacion
+  - nota/colección
+  - referencia/paper
 aliases:
   - Problema de los generales bizantinos
   - The Byzantine Generals Problem

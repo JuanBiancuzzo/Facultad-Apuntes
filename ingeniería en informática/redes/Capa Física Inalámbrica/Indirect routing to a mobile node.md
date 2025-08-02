@@ -1,12 +1,13 @@
 ---
 dia: 2024-08-31
 tags:
-  - carrera/ingeniería-en-informática/redes/Capa-Física-Inalámbrica
-  - nota/facultad
-  - investigación/protocolos/protocolo-de-internet
   - carrera/ingeniería-electrónica/redes/Capa-Física-Inalámbrica
-  - investigación/networking/Protocolos
+  - carrera/ingeniería-en-informática/redes/Capa-Física-Inalámbrica
   - investigación/ciencias-de-la-computación/Networking/Protocolos
+  - investigación/networking/Protocolos
+  - investigación/protocolos/protocolo-de-internet
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Mobile-node-to-foreign-agent protocol#^mobile-node-to-foreign-agent-protocol
   - Foreign-agent-to-home-agent registration protocol#^foreign-agent-to-home-agent-registration-protocol

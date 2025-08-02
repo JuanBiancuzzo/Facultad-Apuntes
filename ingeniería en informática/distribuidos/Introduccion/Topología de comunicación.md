@@ -3,9 +3,9 @@ dia: 2025-03-03
 etapa: ampliar
 referencias: 
 tags:
+  - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
   - carrera/ingeniería-en-informática/distribuidos/Introducción
   - nota/facultad
-  - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
 aliases:
   - Grupo de comunicación
   - Unicast#^unicast

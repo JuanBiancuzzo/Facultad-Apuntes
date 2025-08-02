@@ -2,9 +2,10 @@
 dia: 2023-11-08
 tags:
   - carrera/ingeniería-en-informática/sisop/File-system
-  - nota/facultad
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c/System-call/File-system-system-calls
   - investigación/ciencias-de-la-computación/sistemas-operativos/File-system/System-call
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Dup2 system call
 ---

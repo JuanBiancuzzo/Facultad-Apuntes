@@ -1,12 +1,12 @@
 ---
 dia: 2023-01-22
 tags:
-  - nota/facultad
-  - carrera/ingeniería-en-informática/analisis-2/Nomenclatura
   - carrera/ingeniería-electrónica/analisis-2/Nomenclatura
-  - carrera/licenciatura-en-ciencias-matemáticas/analisis-1/Vectores-y-geometría-del-espacio
+  - carrera/ingeniería-en-informática/analisis-2/Nomenclatura
   - carrera/licenciatura-en-ciencias-de-datos/analisis-1/Vectores-y-geometría-del-espacio
   - carrera/licenciatura-en-ciencias-físicas/analisis-1/Vectores-y-geometría-del-espacio
+  - carrera/licenciatura-en-ciencias-matemáticas/analisis-1/Vectores-y-geometría-del-espacio
+  - nota/facultad
 aliases:
   - Distancia entre vectores
 referencias:

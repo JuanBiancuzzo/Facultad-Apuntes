@@ -14,10 +14,11 @@ anio: "1995"
 editores: 
 url: https://doi.org/10.1145/224964.224987
 tags:
-  - referencia/paper
-  - colección/biblioteca/paper
-  - nota/investigacion
   - carrera/ingeniería-en-informática/tpp/Propuesta
+  - colección/biblioteca/paper
+  - nota/colección
+  - nota/facultad
+  - referencia/paper
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

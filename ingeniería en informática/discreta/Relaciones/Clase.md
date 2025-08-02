@@ -1,8 +1,8 @@
 ---
 dia: 2024-08-07
-tags: 
- - carrera/ingeniería-en-informática/discreta/Relaciones
- - nota/facultad
+tags:
+  - carrera/ingeniería-en-informática/discreta/Relaciones
+  - nota/facultad
 ---
 # Definición
 ---

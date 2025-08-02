@@ -19,9 +19,9 @@ capitulos:
 cover: The Book Of Shaders de Patricio Gonzalez Vivo, Jen Lowe.png
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

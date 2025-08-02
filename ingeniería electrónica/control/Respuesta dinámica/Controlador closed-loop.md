@@ -10,10 +10,10 @@ referencias:
   - "873"
   - "882"
 tags:
-  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
-  - nota/facultad
   - carrera/ingeniería-electrónica/circuitos-2/Realimentación-negativa
   - carrera/ingeniería-electrónica/circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
+  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
+  - nota/facultad
 aliases:
   - Controlador feedback
   - Closed-loop control

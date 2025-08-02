@@ -1,9 +1,9 @@
 ---
 dia: 2024-09-04
 tags:
+  - carrera/ingeniería-electrónica/analisis-2/Funciones-de-varias-variables
   - carrera/ingeniería-en-informática/analisis-2/Funciones-de-varias-variables
   - nota/facultad
-  - carrera/ingeniería-electrónica/analisis-2/Funciones-de-varias-variables
 referencias:
   - "226"
 aliases:

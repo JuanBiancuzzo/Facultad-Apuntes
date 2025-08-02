@@ -2,8 +2,8 @@
 dia: 2023-11-17
 tags:
   - carrera/ingeniería-electrónica/adc/Respuesta-en-frecuencia
-  - nota/facultad
   - carrera/ingeniería-en-informática/adc/Respuesta-en-frecuencia
+  - nota/facultad
 etapa: ampliar
 referencias:
   - "890"

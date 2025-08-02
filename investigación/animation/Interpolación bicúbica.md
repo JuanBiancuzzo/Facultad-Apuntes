@@ -4,9 +4,9 @@ etapa: sin-empezar
 referencias:
   - "609"
 tags:
-  - nota/investigacion
   - investigación/animation
   - investigación/game-engine/Animation-Engine
+  - nota/investigacion
 aliases:
   - Bicubic interpolation
 ---

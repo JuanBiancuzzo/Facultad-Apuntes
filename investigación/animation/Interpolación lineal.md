@@ -5,9 +5,9 @@ referencias:
   - "608"
   - "611"
 tags:
-  - nota/investigacion
   - investigación/animation
   - investigación/game-engine/Animation-Engine
+  - nota/investigacion
 aliases:
   - Linear Interpolation
   - Funciones de suavizado#Funciones de suavizado

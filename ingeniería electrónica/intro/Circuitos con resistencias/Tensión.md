@@ -1,11 +1,11 @@
 ---
 dia: 2023-01-23
 tags:
-  - carrera/ingeniería-electrónica/intro/Circuitos-con-resistencias
-  - nota/facultad
-  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
   - carrera/ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
   - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
+  - carrera/ingeniería-electrónica/intro/Circuitos-con-resistencias
+  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
+  - nota/facultad
 aliases:
   - Diferencia de potencial
   - Potencial electrodinámico escalar

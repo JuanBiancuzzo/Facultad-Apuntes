@@ -2,8 +2,8 @@
 dia: 2024-08-09
 tags:
   - carrera/ingeniería-en-informática/discreta/Grafos
-  - nota/facultad
   - data-structures
+  - nota/facultad
 ---
 # Definición
 ---

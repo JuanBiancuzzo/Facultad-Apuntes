@@ -1,12 +1,12 @@
 ---
 dia: 2023-01-23
 tags:
-  - carrera/ingeniería-en-informática/proba/Esperanza-condicional
-  - nota/facultad
-  - carrera/ingeniería-en-informática/proba/Representación-de-variables-aleatorias
+  - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
   - carrera/ingeniería-electrónica/proba/Esperanza-condicional
   - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
-  - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
+  - carrera/ingeniería-en-informática/proba/Esperanza-condicional
+  - carrera/ingeniería-en-informática/proba/Representación-de-variables-aleatorias
+  - nota/facultad
 aliases:
   - Ley de la esperanza total#^ley-esperanza-total
   - Ley de suavizado de la esperanza#^ley-esperanza-total

@@ -2,8 +2,8 @@
 dia: 2024-12-18
 tags:
   - investigación/índice
-  - nota/investigacion
   - investigación/matemática/Álgebra
+  - nota/investigacion
 estado: Sin empezar
 ---
 ```dataviewjs

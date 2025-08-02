@@ -2,10 +2,12 @@
 dia: 2025-01-18
 etapa: empezado
 tags:
-  - investigación/ciencias-de-la-computación/data-structures
-  - nota/colección
   - colección/data-structures/estructura
   - curso/introduction-to-algorithms/Sorting-and-Trees
+  - investigación/ciencias-de-la-computación/data-structures
+  - nota/colección
+  - nota/curso
+  - nota/investigacion
 nombreEstructura: Árbol binario de búsqueda
 métodos:
   - nombre: BuildTree

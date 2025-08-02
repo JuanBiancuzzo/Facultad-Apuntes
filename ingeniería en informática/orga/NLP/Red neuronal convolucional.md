@@ -2,10 +2,11 @@
 dia: 2023-08-12
 tags:
   - carrera/ingeniería-en-informática/orga/NLP/2
-  - nota/facultad
-  - investigación/machine-Learning/Deep-Learning
   - investigación/ciencias-de-la-computación/Machine-learning/Deep-Learning
+  - investigación/machine-Learning/Deep-Learning
   - investigación/matemática/Estadística/Machine-learning/Deep-Learning
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Convolutional Neural Network
   - CNN

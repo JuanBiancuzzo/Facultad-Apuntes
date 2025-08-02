@@ -4,9 +4,9 @@ etapa: terminado
 referencias:
   - "65"
 tags:
-  - nota/investigacion
   - investigación/ciencias-de-la-computación/Análisis-numérico/Numerical-Linear-Algebra/integrator/métodos-de-Runge-Kutta
   - investigación/matemática/Análisis-numérico/Numerical-Linear-Algebra/integrator
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

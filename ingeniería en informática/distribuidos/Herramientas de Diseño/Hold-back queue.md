@@ -4,9 +4,11 @@ etapa: ampliar
 referencias: 
 tags:
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
-  - nota/facultad
   - colección/data-structures/estructura
   - investigación/ciencias-de-la-computación/data-structures
+  - nota/colección
+  - nota/facultad
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

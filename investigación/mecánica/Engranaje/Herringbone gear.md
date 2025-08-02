@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "535"
 tags:
-  - nota/investigacion
   - investigación/mecánica/Engranaje
+  - nota/investigacion
 aliases:
   - Espiga de engranajes
 ---

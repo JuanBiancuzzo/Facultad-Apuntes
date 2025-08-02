@@ -1,10 +1,10 @@
 ---
 dia: 2023-11-15
 tags:
-  - nota/facultad
-  - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
   - carrera/ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
+  - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
   - carrera/ingeniería-en-informática/sisop/Kernel
+  - nota/facultad
 aliases:
   - Excepción
 ---

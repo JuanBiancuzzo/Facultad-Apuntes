@@ -2,11 +2,11 @@
 dia: 2024-10-02
 estado: Sin empezar
 tags:
+  - investigación/ciencias-de-la-computación/Machine-learning/modelos-generativos
   - investigación/índice
   - investigación/machine-Learning/modelos-generativos
-  - investigación/ciencias-de-la-computación/Machine-learning/modelos-generativos
-  - nota/investigacion
   - investigación/matemática/Estadística/Machine-learning/modelos-generativos
+  - nota/investigacion
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

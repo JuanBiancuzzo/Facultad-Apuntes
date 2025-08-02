@@ -18,10 +18,11 @@ anio: "2024"
 editores: 
 url: 
 tags:
-  - referencia/paper
   - colección/biblioteca/paper
-  - nota/investigacion
   - investigación/generación-de-energía/Baterías
+  - nota/colección
+  - nota/investigacion
+  - referencia/paper
 aliases:
   - "Estructural de fibra de carbono\rBatería"
 ---

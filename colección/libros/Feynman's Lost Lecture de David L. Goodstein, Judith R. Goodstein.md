@@ -18,9 +18,9 @@ capitulos:
 cover: Feynman's Lost Lecture de David L. Goodstein, Judith R. Goodstein.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

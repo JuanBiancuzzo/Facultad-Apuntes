@@ -3,10 +3,10 @@ dia: 2023-01-23
 aliases:
   - PPP
 tags:
+  - carrera/ingeniería-electrónica/estoca/Introducción-a-procesos-aleatorios
+  - carrera/ingeniería-electrónica/proba/Proceso-de-Poisson
   - carrera/ingeniería-en-informática/proba/Proceso-de-Poisson
   - nota/facultad
-  - carrera/ingeniería-electrónica/proba/Proceso-de-Poisson
-  - carrera/ingeniería-electrónica/estoca/Introducción-a-procesos-aleatorios
 ---
 # Definición
 ---

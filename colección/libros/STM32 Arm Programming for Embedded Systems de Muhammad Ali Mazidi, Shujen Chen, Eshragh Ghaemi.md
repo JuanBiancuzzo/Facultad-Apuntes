@@ -39,9 +39,9 @@ aliases:
   - "STM32 Arm Programming for Embedded Systems de Muhammad Ali Mazidi, Shujen Chen, Eshragh Ghaemi, Capítulo 9: I2C Protocol and RTC Interfacing#Capítulo 9: I2C Protocol and RTC Interfacing"
   - "STM32 Arm Programming for Embedded Systems de Muhammad Ali Mazidi, Shujen Chen, Eshragh Ghaemi, Capítulo 13: DMA Programing#Capítulo 13: DMA Programing"
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

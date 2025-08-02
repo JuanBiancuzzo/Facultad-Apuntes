@@ -18,12 +18,13 @@ anio: "2024"
 editores: 
 url: 
 tags:
-  - referencia/paper
   - colección/biblioteca/paper
-  - nota/investigacion
-  - investigación/machine-Learning/Regularization
   - investigación/ciencias-de-la-computación/Machine-learning/Regularization
+  - investigación/machine-Learning/Regularization
   - investigación/matemática/Estadística/Machine-learning/Regularization
+  - nota/colección
+  - nota/investigacion
+  - referencia/paper
 aliases:
   - Weight-Sharing Regularization
 ---

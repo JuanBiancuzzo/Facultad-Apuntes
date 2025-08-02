@@ -17,9 +17,9 @@ capitulos:
 cover: Designing Machine Learning Systems, an Iterative Process for Production-Ready Applications de Chip Huyen.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

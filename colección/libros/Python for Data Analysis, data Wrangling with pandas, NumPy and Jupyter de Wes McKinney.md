@@ -17,11 +17,12 @@ capitulos:
 cover: Python for Data Analysis, data Wrangling with pandas, NumPy and Jupyter de Wes McKinney.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/Lenguaje-Python/NumPy
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/Lenguaje-Python/Pandas
+  - nota/colección
+  - nota/investigacion
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

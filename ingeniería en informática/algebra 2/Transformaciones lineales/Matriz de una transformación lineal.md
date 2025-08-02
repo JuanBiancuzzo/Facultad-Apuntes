@@ -1,9 +1,9 @@
 ---
 dia: 2023-01-22
 tags:
+  - carrera/ingeniería-electrónica/algebra-2/Transformaciones-lineales
   - carrera/ingeniería-en-informática/algebra-2/Transformaciones-lineales
   - nota/facultad
-  - carrera/ingeniería-electrónica/algebra-2/Transformaciones-lineales
 ---
 # Definición
 ---

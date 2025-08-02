@@ -1,11 +1,12 @@
 ---
 dia: 2023-11-08
 tags:
-  - carrera/ingeniería-en-informática/sisop/File-system
-  - nota/facultad
   - carrera/ingeniería-electrónica/algo-1/Manejo-de-archivos
   - carrera/ingeniería-en-informática/algo-1/Manejo-de-archivos
+  - carrera/ingeniería-en-informática/sisop/File-system
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
+  - nota/facultad
+  - nota/investigacion
 ---
 # Definición
 ---

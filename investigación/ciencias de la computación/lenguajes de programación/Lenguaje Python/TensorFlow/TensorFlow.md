@@ -2,8 +2,8 @@
 dia: 2024-12-09
 estado: Sin empezar
 tags:
-  - investigación/índice
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/Lenguaje-Python/TensorFlow
+  - investigación/índice
   - nota/investigacion
 ---
 ```dataviewjs

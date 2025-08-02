@@ -1,9 +1,9 @@
 ---
 dia: 2023-01-23
 tags:
+  - carrera/ingeniería-electrónica/circuitos/Fuentes-de-corriente-y-circuitos-con-cargas-activas
   - carrera/ingeniería-electrónica/dispo/Amplificador-emisor-y-source-común
   - nota/facultad
-  - carrera/ingeniería-electrónica/circuitos/Fuentes-de-corriente-y-circuitos-con-cargas-activas
 ---
 # Definición
 ---

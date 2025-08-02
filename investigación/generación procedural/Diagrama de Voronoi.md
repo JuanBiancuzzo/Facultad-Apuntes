@@ -3,8 +3,8 @@ dia: 2024-10-19
 etapa: sin-empezar
 referencias: 
 tags:
-  - nota/investigacion
   - investigación/generación-procedural
+  - nota/investigacion
 aliases:
   - Polígonos de Thiessen
   - Voronoi diagram

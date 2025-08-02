@@ -2,9 +2,9 @@
 etapa: sin-empezar
 dia: 2025-04-06
 tags:
-  - nota/colección
   - colección/distribuciones/distribución
   - distribuciones/continua
+  - nota/colección
 nombreDistribucion: Bose-Einstein
 tipoDistribucion: continua
 referencias:

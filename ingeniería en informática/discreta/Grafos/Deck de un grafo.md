@@ -1,8 +1,8 @@
 ---
 dia: 2024-08-13
-tags: 
- - carrera/ingeniería-en-informática/discreta/Grafos
- - nota/facultad
+tags:
+  - carrera/ingeniería-en-informática/discreta/Grafos
+  - nota/facultad
 ---
 # Definición
 ---

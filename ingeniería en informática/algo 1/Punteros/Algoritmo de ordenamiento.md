@@ -5,7 +5,7 @@ referencias:
 tags:
   - investigación/ciencias-de-la-computación/algoritmos/Sorting-algorithms
   - investigación/índice
-  - nota/facultad
+  - nota/investigacion
 aliases:
   - Método de ordenamiento
   - Sorting algorithms

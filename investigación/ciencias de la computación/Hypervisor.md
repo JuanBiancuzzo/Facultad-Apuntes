@@ -5,9 +5,10 @@ referencias:
   - "843"
   - "844"
 tags:
-  - investigación/ciencias-de-la-computación
-  - nota/investigacion
   - carrera/ingeniería-en-informática/distribuidos/Introducción
+  - investigación/ciencias-de-la-computación
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Virtual Machine Monitor
 ---

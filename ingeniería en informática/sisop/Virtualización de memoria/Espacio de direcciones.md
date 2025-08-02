@@ -1,11 +1,11 @@
 ---
 dia: 2023-11-19
 tags:
-  - carrera/ingeniería-en-informática/sisop/Virtualización-de-memoria
-  - nota/facultad
-  - carrera/ingeniería-en-informática/estructura/Sistema-ARC
   - carrera/ingeniería-electrónica/embebidos/Memorias
   - carrera/ingeniería-electrónica/estructura/Sistema-ARC
+  - carrera/ingeniería-en-informática/estructura/Sistema-ARC
+  - carrera/ingeniería-en-informática/sisop/Virtualización-de-memoria
+  - nota/facultad
 aliases:
   - Address space
 ---

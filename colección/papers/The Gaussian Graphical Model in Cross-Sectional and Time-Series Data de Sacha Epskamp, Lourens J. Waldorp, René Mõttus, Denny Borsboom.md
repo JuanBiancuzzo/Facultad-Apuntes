@@ -18,9 +18,9 @@ anio: "2018"
 editores: 
 url: https://doi.org/10.1080/00273171.2018.1454823
 tags:
-  - referencia/paper
   - colección/biblioteca/paper
-  - nota/investigacion
+  - nota/colección
+  - referencia/paper
 nombreRevista: Multivariate Behavioral Research
 ---
 ```dataviewjs

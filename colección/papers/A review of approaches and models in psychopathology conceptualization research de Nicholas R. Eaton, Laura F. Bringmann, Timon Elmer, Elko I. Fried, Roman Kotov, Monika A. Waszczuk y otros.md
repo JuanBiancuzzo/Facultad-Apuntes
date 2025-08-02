@@ -31,10 +31,10 @@ numeroInforme:
 anio: "2023"
 editores: []
 url: https://doi.org/10.1038/s44159-023-00218-4
-tags: 
- - referencia/paper
- - colección/biblioteca/paper
- - nota/investigacion
+tags:
+  - colección/biblioteca/paper
+  - nota/colección
+  - referencia/paper
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

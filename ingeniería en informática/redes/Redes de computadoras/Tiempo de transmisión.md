@@ -1,10 +1,10 @@
 ---
 dia: 2024-04-18
 tags:
-  - carrera/ingeniería-en-informática/redes/Redes-de-computadoras
-  - nota/facultad
   - carrera/ingeniería-electrónica/redes/Redes-de-computadoras
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
+  - carrera/ingeniería-en-informática/redes/Redes-de-computadoras
+  - nota/facultad
 aliases:
   - Tiempo de delivery
 etapa: ampliar

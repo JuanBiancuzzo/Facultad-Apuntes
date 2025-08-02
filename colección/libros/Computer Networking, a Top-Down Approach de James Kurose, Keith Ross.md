@@ -91,9 +91,9 @@ aliases:
   - "Computer Networking, a Top-Down Approach de James Kurose, Keith Ross, Capítulo 8: Security in Computer Networks#Capítulo 8: Security in Computer Networks"
   - "Computer Networking, a Top-Down Approach de James Kurose, Keith Ross, Capítulo 9: Multimedia Networking#Capítulo 9: Multimedia Networking"
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

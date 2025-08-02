@@ -4,8 +4,8 @@ etapa: ampliar
 referencias: 
 tags:
   - carrera/ingeniería-en-informática/concurrentes/Introducción
-  - nota/facultad
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
+  - nota/facultad
 aliases:
   - Camino crítico#^camino-critico
 ---

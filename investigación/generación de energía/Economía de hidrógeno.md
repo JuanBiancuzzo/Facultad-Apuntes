@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "549"
 tags:
-  - nota/investigacion
   - investigación/generación-de-energía
+  - nota/investigacion
 aliases:
   - Hydrogen economy
 ---

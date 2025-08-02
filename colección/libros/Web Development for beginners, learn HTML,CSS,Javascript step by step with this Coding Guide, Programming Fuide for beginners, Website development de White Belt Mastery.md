@@ -17,9 +17,9 @@ capitulos:
 cover: Web Development for beginners, learn HTML,CSS,Javascript step by step with this Coding Guide, Programming Fuide for beginners, Website development de White Belt Mastery.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

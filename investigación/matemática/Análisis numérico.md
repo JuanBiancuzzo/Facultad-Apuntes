@@ -5,6 +5,7 @@ tag:
   - nota/investigacion
   - investigación/matemática/Análisis-numérico
 equivalente: "[[investigación/ciencias de la computación/Análisis numérico/Análisis numérico.md|Análisis numérico]]"
+tags: []
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

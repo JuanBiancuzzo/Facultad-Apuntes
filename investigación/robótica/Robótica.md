@@ -2,10 +2,10 @@
 dia: 2024-11-19
 estado: Sin empezar
 tags:
-  - investigación/índice
-  - nota/investigacion
-  - investigación/robótica
   - investigación/electrónica/Robot
+  - investigación/índice
+  - investigación/robótica
+  - nota/investigacion
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

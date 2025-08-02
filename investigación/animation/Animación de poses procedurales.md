@@ -4,9 +4,9 @@ etapa: terminado
 referencias:
   - "26"
 tags:
-  - nota/investigacion
   - investigación/animation
   - investigación/game-engine/Animation-Engine
+  - nota/investigacion
 aliases:
   - Procedural pose animation
 ---

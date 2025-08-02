@@ -19,9 +19,9 @@ capitulos:
 cover: The Pragmatic Programmer, your journey to mastery de David Thomas, Andrew Hunt.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

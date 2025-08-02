@@ -4,8 +4,8 @@ etapa: ampliar
 referencias:
   - "286"
 tags:
-  - nota/investigacion
   - investigación/ciencias-de-la-computación/algoritmos
+  - nota/investigacion
 aliases:
   - Tolerancia a faltas bizantinas
 ---

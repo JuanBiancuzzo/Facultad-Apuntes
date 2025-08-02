@@ -2,8 +2,8 @@
 dia: 2024-08-29
 tags:
   - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
-  - nota/facultad
   - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
+  - nota/facultad
 aliases:
   - SoC
   - Sistema en un chip

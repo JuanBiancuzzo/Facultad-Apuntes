@@ -17,9 +17,9 @@ capitulos:
 cover: Fundamentos de programación, algoritmos, estructuras de datos y objetos de Luis Joyanes Aguilar.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

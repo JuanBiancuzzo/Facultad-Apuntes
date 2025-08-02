@@ -21,9 +21,9 @@ capitulos:
 cover: Software Engineering at Google, lessons Learned from Programming Over Time de Titus Winters, Tom Manshreck, Hyrum Wright.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

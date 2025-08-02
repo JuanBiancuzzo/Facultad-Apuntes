@@ -2,8 +2,8 @@
 dia: 2024-07-31
 estado: Sin empezar
 tags:
-  - investigación/índice
   - investigación/ciencias-de-la-computación/compilador
+  - investigación/índice
   - nota/investigacion
 aliases:
   - Compilador de una sola pasada#^compilador-pasadas

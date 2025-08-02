@@ -2,9 +2,9 @@
 dia: 2023-09-03
 tags:
   - carrera/ingeniería-electrónica/adc/Circuitos-en-regimen-de-corriente-continua
-  - nota/facultad
-  - carrera/ingeniería-en-informática/discreta/Grafos
   - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-de-corriente-continua
+  - carrera/ingeniería-en-informática/discreta/Grafos
+  - nota/facultad
 ---
 # Definición
 ---

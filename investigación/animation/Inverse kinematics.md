@@ -5,9 +5,9 @@ referencias:
   - "24"
   - "320"
 tags:
-  - nota/investigacion
   - investigación/animation
   - investigación/game-engine/Animation-Engine
+  - nota/investigacion
 aliases:
   - Cinemáticas inversas
   - IK

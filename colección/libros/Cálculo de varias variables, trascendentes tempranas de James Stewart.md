@@ -81,9 +81,9 @@ aliases:
   - "Cálculo de varias variables, trascendentes tempranas de James Stewart, Capítulo 16: Cálculo vectorial#Capítulo 16: Cálculo vectorial"
   - "Cálculo de varias variables, trascendentes tempranas de James Stewart, Capítulo 17: Ecuaciones diferenciales de segundo orden#Capítulo 17: Ecuaciones diferenciales de segundo orden"
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -23,9 +23,9 @@ capitulos:
 cover: Site Reliability Engineering, how Google Runs Production Systems de Niall Richard Murphy, Betsy Beyer, Chris Jones, Jennifer Petoff.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

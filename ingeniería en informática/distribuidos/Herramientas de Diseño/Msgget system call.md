@@ -4,8 +4,9 @@ etapa: ampliar
 referencias: 
 tags:
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
-  - nota/facultad
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c/System-call/Intercomunicación-entre-procesos-system-call
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Message queue (System V)
 ---

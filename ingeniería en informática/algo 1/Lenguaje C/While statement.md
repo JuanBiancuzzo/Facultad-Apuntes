@@ -1,13 +1,14 @@
 ---
 dia: 2024-07-27
 tags:
-  - nota/facultad
-  - carrera/ingeniería-en-informática/algo-1/Lenguaje-C
-  - carrera/ingeniería-en-informática/taller/Sintaxis
-  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
-  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - carrera/ingeniería-electrónica/algo-1/Lenguaje-C
   - carrera/ingeniería-electrónica/taller/Sintaxis
+  - carrera/ingeniería-en-informática/algo-1/Lenguaje-C
+  - carrera/ingeniería-en-informática/taller/Sintaxis
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Sentencia while
   - Sentencia mientras

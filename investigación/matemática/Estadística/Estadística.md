@@ -3,8 +3,8 @@ dia: 2024-11-17
 estado: Sin empezar
 tags:
   - investigación/índice
-  - nota/investigacion
   - investigación/matemática/Estadística
+  - nota/investigacion
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

@@ -2,8 +2,9 @@
 dia: 2024-08-16
 tags:
   - carrera/ingeniería-en-informática/discreta/Grafos
-  - nota/facultad
   - investigación/ciencias-de-la-computación/algoritmos
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Flujo de un grafo
 ---

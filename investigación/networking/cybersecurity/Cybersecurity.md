@@ -2,10 +2,10 @@
 dia: 2024-11-05
 estado: Sin empezar
 tags:
-  - investigación/índice
-  - nota/investigacion
-  - investigación/networking/cybersecurity
   - investigación/ciencias-de-la-computación/Networking/cybersecurity
+  - investigación/índice
+  - investigación/networking/cybersecurity
+  - nota/investigacion
 aliases:
   - Ciberseguridad
 referencias:

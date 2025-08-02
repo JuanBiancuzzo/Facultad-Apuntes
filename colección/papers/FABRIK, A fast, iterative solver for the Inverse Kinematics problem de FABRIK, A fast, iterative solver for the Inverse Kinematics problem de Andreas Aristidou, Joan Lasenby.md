@@ -14,10 +14,11 @@ anio: "2011"
 editores: 
 url: http://www.andreasaristidou.com/publications/papers/FABRIK.pdf
 tags:
-  - referencia/paper
   - colección/biblioteca/paper
-  - nota/investigacion
   - investigación/ciencias-de-la-computación/algoritmos
+  - nota/colección
+  - nota/investigacion
+  - referencia/paper
 aliases:
   - FABRIK
   - Forward And Backward Reaching Inverse Kinematics

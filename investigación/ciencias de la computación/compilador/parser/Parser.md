@@ -2,8 +2,8 @@
 dia: 2024-07-31
 estado: Sin empezar
 tags:
-  - investigación/índice
   - investigación/ciencias-de-la-computación/compilador/parser
+  - investigación/índice
   - nota/investigacion
 aliases: []
 ---

@@ -20,11 +20,12 @@ anio: "2007"
 editores: 
 url: 
 tags:
-  - referencia/paper
   - colección/biblioteca/paper
-  - nota/investigacion
-  - investigación/protocolos
   - investigación/ciencias-de-la-computación/algoritmos
+  - investigación/protocolos
+  - nota/colección
+  - nota/investigacion
+  - referencia/paper
 aliases:
   - Zyzzyva
   - Speculative Byzantine Fault Tolerance

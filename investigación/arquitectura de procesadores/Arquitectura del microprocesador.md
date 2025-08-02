@@ -2,9 +2,9 @@
 dia: 2024-10-20
 estado: Sin empezar
 tags:
+  - investigación/arquitectura-de-procesadores
   - investigación/índice
   - nota/investigacion
-  - investigación/arquitectura-de-procesadores
 aliases:
   - Arquitectura de procesador
   - Ciclo fetch-decode-execute

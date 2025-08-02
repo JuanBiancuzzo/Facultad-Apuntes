@@ -2,9 +2,9 @@
 dia: 2024-10-02
 estado: Sin empezar
 tags:
+  - investigación/ciencias-de-la-computación/Machine-learning/transformers
   - investigación/índice
   - investigación/machine-Learning/transformers
-  - investigación/ciencias-de-la-computación/Machine-learning/transformers
   - investigación/matemática/Estadística/Machine-learning/transformers
   - nota/investigacion
 ---

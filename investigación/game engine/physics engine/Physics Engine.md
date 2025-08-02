@@ -2,8 +2,8 @@
 dia: 2024-10-15
 estado: Sin empezar
 tags:
-  - investigación/índice
   - investigación/game-engine/physics-engine
+  - investigación/índice
   - nota/investigacion
 ---
 ```dataviewjs

@@ -3,10 +3,10 @@ dia: 2024-04-18
 aliases:
   - P2P
 tags:
-  - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
-  - nota/facultad
   - carrera/ingeniería-electrónica/redes/Capa-de-aplicación
   - carrera/ingeniería-en-informática/distribuidos/Fundamentos-de-Sistemas-Distribuidos
+  - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
+  - nota/facultad
 etapa: ampliar
 ---
 # Definición

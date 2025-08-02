@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "318"
 tags:
-  - nota/investigacion
   - investigación/generación-procedural
+  - nota/investigacion
 aliases:
   - DLA
 ---

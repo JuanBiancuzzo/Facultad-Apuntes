@@ -5,8 +5,9 @@ referencias:
   - "869"
 tags:
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
-  - nota/facultad
   - investigación/ciencias-de-la-computación/algoritmos
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Reloj lógico de Lamport
 ---

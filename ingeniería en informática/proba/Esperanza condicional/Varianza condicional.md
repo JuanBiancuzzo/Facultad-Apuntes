@@ -1,9 +1,9 @@
 ---
 dia: 2023-01-23
 tags:
+  - carrera/ingeniería-electrónica/proba/Esperanza-condicional
   - carrera/ingeniería-en-informática/proba/Esperanza-condicional
   - nota/facultad
-  - carrera/ingeniería-electrónica/proba/Esperanza-condicional
 ---
 # Definición
 ---

@@ -5,7 +5,7 @@ tags:
   - investigación/storytelling/worldbuilding
   - nota/investigacion
 estado: Falta resumir
-aliases:
+aliases: 
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

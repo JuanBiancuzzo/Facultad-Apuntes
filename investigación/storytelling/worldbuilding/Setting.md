@@ -7,8 +7,8 @@ referencias:
   - "99"
   - "100"
 tags:
-  - nota/investigacion
   - investigación/storytelling/worldbuilding
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

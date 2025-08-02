@@ -2,10 +2,11 @@
 dia: 2023-08-13
 tags:
   - carrera/ingeniería-en-informática/orga/NLP/2
-  - nota/facultad
-  - investigación/machine-Learning/Natural-Language-Processing
   - investigación/ciencias-de-la-computación/Machine-learning/Natural-Language-Processing
+  - investigación/machine-Learning/Natural-Language-Processing
   - investigación/matemática/Estadística/Machine-learning/Natural-Language-Processing
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - RNN
   - RNR

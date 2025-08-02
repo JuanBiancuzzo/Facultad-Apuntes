@@ -5,8 +5,8 @@ referencias:
   - "37"
   - "158"
 tags:
-  - nota/investigacion
   - investigación/herramientas/docker
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

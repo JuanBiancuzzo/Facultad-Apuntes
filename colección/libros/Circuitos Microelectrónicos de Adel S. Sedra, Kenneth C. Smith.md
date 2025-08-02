@@ -131,9 +131,9 @@ aliases:
   - "Circuitos Microelectrónicos de Adel S. Sedra, Kenneth C. Smith, Capítulo 13: Circuitos Digitales MOS#Capítulo 13: Circuitos Digitales MOS"
   - "Circuitos Microelectrónicos de Adel S. Sedra, Kenneth C. Smith, Capítulo 14: Circuitos Digitales Bipolares y de tecnología avanzada#Capítulo 14: Circuitos Digitales Bipolares y de tecnología avanzada"
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

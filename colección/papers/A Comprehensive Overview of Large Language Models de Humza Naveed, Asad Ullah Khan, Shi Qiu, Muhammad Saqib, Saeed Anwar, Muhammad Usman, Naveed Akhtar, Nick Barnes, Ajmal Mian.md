@@ -28,9 +28,9 @@ anio: 2024
 editores: 
 url: https://doi.org/10.48550/arXiv.2307.06435
 tags:
-  - referencia/paper
   - colección/biblioteca/paper
-  - nota/investigacion
+  - nota/colección
+  - referencia/paper
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

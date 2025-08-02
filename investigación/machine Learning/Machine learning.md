@@ -1,11 +1,11 @@
 ---
 dia: 2024-07-12
 tags:
-  - investigación/índice
-  - nota/investigacion
-  - investigación/machine-Learning
   - investigación/ciencias-de-la-computación/Machine-learning
+  - investigación/índice
+  - investigación/machine-Learning
   - investigación/matemática/Estadística/Machine-learning
+  - nota/investigacion
 aliases:
   - AI
 estado: Falta resumir

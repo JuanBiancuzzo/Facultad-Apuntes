@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "527"
 tags:
-  - nota/investigacion
   - investigación/generación-de-energía
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

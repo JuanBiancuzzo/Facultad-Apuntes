@@ -2,9 +2,9 @@
 dia: 2024-10-15
 estado: Sin empezar
 tags:
+  - investigación/ciencias-de-la-computación/sistemas-operativos
   - investigación/índice
   - nota/investigacion
-  - investigación/ciencias-de-la-computación/sistemas-operativos
 referencias:
   - "325"
 ---

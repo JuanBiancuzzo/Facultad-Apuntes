@@ -157,9 +157,9 @@ aliases:
   - "Digital Computer Electronics de Albert P. Malvino, Jerald A. Brown, Capítulo 22: Branching and loops#Capítulo 22: Branching and loops"
   - "Digital Computer Electronics de Albert P. Malvino, Jerald A. Brown, Capítulo 23: Subroutine and Stack instructions#Capítulo 23: Subroutine and Stack instructions"
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

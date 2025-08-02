@@ -3,10 +3,11 @@ dia: 2024-12-23
 etapa: ampliar
 referencias: 
 tags:
-  - carrera/ingeniería-en-informática/algo-1/Lenguaje-C
   - carrera/ingeniería-electrónica/algo-1/Lenguaje-C
+  - carrera/ingeniería-en-informática/algo-1/Lenguaje-C
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - nota/facultad
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

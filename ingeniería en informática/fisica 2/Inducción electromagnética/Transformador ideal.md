@@ -1,9 +1,9 @@
 ---
 dia: 2024-09-03
 tags:
+  - carrera/ingeniería-electrónica/fisica-2/Inducción-electromagnética
   - carrera/ingeniería-en-informática/fisica-2/Inducción-electromagnética
   - nota/facultad
-  - carrera/ingeniería-electrónica/fisica-2/Inducción-electromagnética
 ---
 # Definición
 ---

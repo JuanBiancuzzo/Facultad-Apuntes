@@ -2,8 +2,8 @@
 dia: 2024-12-25
 tags:
   - investigación/índice
-  - nota/investigacion
   - investigación/matemática/Probabilidad
+  - nota/investigacion
 estado: Sin empezar
 referencias:
   - "941"

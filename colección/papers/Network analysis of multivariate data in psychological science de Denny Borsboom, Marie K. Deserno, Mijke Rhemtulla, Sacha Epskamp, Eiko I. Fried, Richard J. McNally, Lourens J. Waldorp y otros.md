@@ -39,10 +39,10 @@ numeroInforme:
 anio: "2021"
 editores: []
 url: http://dx.doi.org/10.1038/s43586-021-00055-w
-tags: 
- - referencia/paper
- - colección/biblioteca/paper
- - nota/investigacion
+tags:
+  - colección/biblioteca/paper
+  - nota/colección
+  - referencia/paper
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

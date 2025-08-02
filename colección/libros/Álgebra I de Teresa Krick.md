@@ -73,9 +73,9 @@ aliases:
   - "Álgebra I de Teresa Krick, Capítulo 6: Números Complejos#Capítulo 6: Números Complejos"
   - "Álgebra I de Teresa Krick, Capítulo 7: Polinomios#Capítulo 7: Polinomios"
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

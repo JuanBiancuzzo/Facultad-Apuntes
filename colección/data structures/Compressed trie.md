@@ -6,9 +6,10 @@ referencias:
 aliases:
   - Compressed prefix tree
 tags:
-  - nota/colección
-  - investigación/ciencias-de-la-computación/data-structures
   - colección/data-structures/estructura
+  - investigación/ciencias-de-la-computación/data-structures
+  - nota/colección
+  - nota/investigacion
 nombreEstructura: Compressed trie
 ---
 ```dataviewjs

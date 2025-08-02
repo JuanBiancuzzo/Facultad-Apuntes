@@ -1,10 +1,10 @@
 ---
 dia: 2024-08-29
 tags:
-  - carrera/ingeniería-en-informática/estructura/Sistema-ARC
-  - nota/facultad
   - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
   - carrera/ingeniería-electrónica/estructura/Sistema-ARC
+  - carrera/ingeniería-en-informática/estructura/Sistema-ARC
+  - nota/facultad
 referencias:
   - "219"
 etapa: ampliar

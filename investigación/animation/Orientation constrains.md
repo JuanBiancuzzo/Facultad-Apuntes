@@ -4,9 +4,9 @@ etapa: ampliar
 referencias:
   - "154"
 tags:
-  - nota/investigacion
   - investigación/animation
   - investigación/game-engine/Animation-Engine
+  - nota/investigacion
 aliases:
   - Angle constrains
 ---

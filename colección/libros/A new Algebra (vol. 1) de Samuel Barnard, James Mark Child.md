@@ -19,9 +19,9 @@ capitulos:
 cover: A new Algebra (vol. 1) de Samuel Barnard, J M Child.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -1,9 +1,9 @@
 ---
 dia: 2023-08-24
 tags:
+  - carrera/ingeniería-electrónica/fisica-2/Inducción-electromagnética
   - carrera/ingeniería-en-informática/fisica-2/Inducción-electromagnética
   - nota/facultad
-  - carrera/ingeniería-electrónica/fisica-2/Inducción-electromagnética
 aliases:
   - Ley de Faraday-Lenz#Ley de Faraday-Lenz
   - Regla de flujo#Ley de Faraday-Lenz

@@ -2,9 +2,9 @@
 dia: 2025-03-22
 etapa: sin-empezar
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 tipoCita: Libro
 tituloObra: Electrónica básica para ingenieros
 numReferencia: 1024
@@ -112,7 +112,7 @@ aliases:
   - "Electrónica básica para ingenieros de Gustavo Adolfo Ruiz Robredo, Capítulo 11: Reguladores de tensión#Capítulo 11: Reguladores de tensión"
   - "Electrónica básica para ingenieros de Gustavo Adolfo Ruiz Robredo, Capítulo 12: Introducción a los tiristores#Capítulo 12: Introducción a los tiristores"
 edicion: 
-volumen:
+volumen: 
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

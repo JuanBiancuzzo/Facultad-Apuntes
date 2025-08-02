@@ -18,9 +18,9 @@ anio: "2019"
 editores: 
 url: 
 tags:
-  - referencia/paper
   - colección/biblioteca/paper
-  - nota/investigacion
+  - nota/colección
+  - referencia/paper
 aliases:
   - BERT
 ---

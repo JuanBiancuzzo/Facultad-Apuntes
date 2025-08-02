@@ -1,16 +1,17 @@
 ---
 dia: 2024-03-21
 tags:
+  - carrera/ingeniería-electrónica/analisis-2/Nomenclatura
+  - carrera/ingeniería-en-informática/analisis-2/Nomenclatura
   - carrera/ingeniería-en-informática/bdd/SQL
-  - nota/facultad
   - carrera/ingeniería-en-informática/discreta/Álgebra-de-conjuntos
   - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
-  - carrera/ingeniería-en-informática/analisis-2/Nomenclatura
-  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
-  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
-  - carrera/ingeniería-electrónica/analisis-2/Nomenclatura
   - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-SQL
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Conjunción
   - Intersección de conjuntos

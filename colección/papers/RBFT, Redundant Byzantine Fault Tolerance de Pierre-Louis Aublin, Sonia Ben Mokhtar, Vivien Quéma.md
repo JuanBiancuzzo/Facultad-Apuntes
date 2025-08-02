@@ -16,11 +16,12 @@ anio: "2013"
 editores: 
 url: 
 tags:
-  - referencia/paper
   - colección/biblioteca/paper
-  - nota/investigacion
-  - investigación/protocolos
   - investigación/ciencias-de-la-computación/algoritmos
+  - investigación/protocolos
+  - nota/colección
+  - nota/investigacion
+  - referencia/paper
 aliases:
   - RBFT
   - Redundant Byzantine Fault Tolerance

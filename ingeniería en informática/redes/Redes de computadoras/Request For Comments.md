@@ -4,9 +4,9 @@ aliases:
   - RFC
   - Petición de comentarios
 tags:
+  - carrera/ingeniería-electrónica/redes/Redes-de-computadoras
   - carrera/ingeniería-en-informática/redes/Redes-de-computadoras
   - nota/facultad
-  - carrera/ingeniería-electrónica/redes/Redes-de-computadoras
 referencias:
   - "255"
 etapa: sin-empezar

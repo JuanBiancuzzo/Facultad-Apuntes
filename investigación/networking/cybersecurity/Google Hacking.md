@@ -4,9 +4,9 @@ etapa: ampliar
 referencias:
   - "484"
 tags:
-  - nota/investigacion
   - investigación/ciencias-de-la-computación/Networking/cybersecurity
   - investigación/networking/cybersecurity
+  - nota/investigacion
 aliases:
   - Google dorking
 ---

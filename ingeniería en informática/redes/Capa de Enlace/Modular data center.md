@@ -1,9 +1,9 @@
 ---
 dia: 2024-08-26
 tags:
-  - nota/facultad
-  - carrera/ingeniería-en-informática/redes/Capa-de-Enlace
   - carrera/ingeniería-electrónica/redes/Capa-de-Enlace
+  - carrera/ingeniería-en-informática/redes/Capa-de-Enlace
+  - nota/facultad
 aliases:
   - MDC
 ---

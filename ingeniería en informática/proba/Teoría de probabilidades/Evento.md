@@ -1,11 +1,11 @@
 ---
 dia: 2023-04-03
 tags:
-  - carrera/ingeniería-en-informática/proba/Teoría-de-probabilidades
-  - nota/facultad
+  - carrera/ingeniería-electrónica/estoca/Repaso
   - carrera/ingeniería-electrónica/proba/Teoría-de-probabilidades
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
-  - carrera/ingeniería-electrónica/estoca/Repaso
+  - carrera/ingeniería-en-informática/proba/Teoría-de-probabilidades
+  - nota/facultad
 etapa: ampliar
 ---
 # Definición

@@ -2,9 +2,9 @@
 dia: 2025-03-10
 etapa: empezado
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 tipoCita: Libro
 tituloObra: Feedback Systems
 undefined: An Introduction for Scientists and Engineers
@@ -139,7 +139,7 @@ aliases:
   - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 14: Fundamental Limits#Capítulo 14: Fundamental Limits"
   - "Feedback Systems, An Introduction for Scientists and Engineers de Karl Johan Aström, Richard M. Murray, Capítulo 15: Architecture and System Design#Capítulo 15: Architecture and System Design"
 edicion: 2
-volumen:
+volumen: 
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

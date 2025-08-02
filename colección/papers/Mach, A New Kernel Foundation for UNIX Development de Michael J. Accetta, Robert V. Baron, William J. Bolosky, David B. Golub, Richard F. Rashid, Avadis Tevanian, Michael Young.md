@@ -24,10 +24,11 @@ anio: "1986"
 editores: 
 url: https://api.semanticscholar.org/CorpusID:38305444
 tags:
-  - referencia/paper
-  - colección/biblioteca/paper
-  - nota/investigacion
   - carrera/ingeniería-en-informática/tpp/Propuesta
+  - colección/biblioteca/paper
+  - nota/colección
+  - nota/facultad
+  - referencia/paper
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -2,9 +2,9 @@
 dia: 2024-10-17
 estado: Sin empezar
 tags:
+  - investigación/ciencias-de-la-computación/sistemas-operativos/memory-management
   - investigación/índice
   - nota/investigacion
-  - investigación/ciencias-de-la-computación/sistemas-operativos/memory-management
 referencias:
   - "362"
 etapa: sin-empezar

@@ -2,8 +2,8 @@
 dia: 2022-12-04
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Transformada-de-Fourier
-  - nota/facultad
   - carrera/ingeniería-en-informática/analisis-3/Transformada-de-Fourier
+  - nota/facultad
 ---
 # Definición
 ---

@@ -1,9 +1,9 @@
 ---
 dia: 2023-01-23
 tags:
+  - carrera/ingeniería-electrónica/fisica-2/Termodinámica
   - carrera/ingeniería-en-informática/fisica-2/Termodinámica
   - nota/facultad
-  - carrera/ingeniería-electrónica/fisica-2/Termodinámica
 referencias:
   - "198"
 etapa: sin-empezar

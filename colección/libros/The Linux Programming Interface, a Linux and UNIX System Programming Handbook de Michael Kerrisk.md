@@ -17,10 +17,11 @@ capitulos:
 cover: The Linux Programming Interface, a Linux and UNIX System Programming Handbook de Michael Kerrisk.jpg
 aliases: 
 tags:
-  - referencia/libro
-  - colección/biblioteca/libro
-  - nota/investigacion
   - carrera/ingeniería-en-informática/tpp/Propuesta
+  - colección/biblioteca/libro
+  - nota/colección
+  - nota/facultad
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

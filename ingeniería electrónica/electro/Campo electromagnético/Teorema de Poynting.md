@@ -1,8 +1,8 @@
 ---
 dia: 2024-09-12
 tags:
-  - nota/facultad
   - carrera/ingeniería-electrónica/electro/Campo-electromagnético
+  - nota/facultad
 aliases:
   - Vector de Poyting
   - Intensidad de la radiación de una onda electromagnética#^intensidad-radiacion

@@ -2,8 +2,9 @@
 dia: 2023-04-03
 tags:
   - carrera/ingeniería-en-informática/orga/Compresión
-  - nota/facultad
   - investigación/matemática/teoría-de-la-información
+  - nota/facultad
+  - nota/investigacion
 referencias:
   - "196"
 etapa: ampliar

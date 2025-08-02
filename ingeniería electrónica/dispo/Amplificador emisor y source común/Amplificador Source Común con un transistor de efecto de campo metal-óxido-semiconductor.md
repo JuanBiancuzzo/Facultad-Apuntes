@@ -7,9 +7,9 @@ aliases:
   - Modelo de pequeña señal del amplificador Source Común con un MOSFET#Modelo de pequeña señal
   - MPS del amplificador Source Común con un MOSFET#Modelo de pequeña señal
 tags:
+  - carrera/ingeniería-electrónica/circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
   - carrera/ingeniería-electrónica/dispo/Amplificador-emisor-y-source-común
   - nota/facultad
-  - carrera/ingeniería-electrónica/circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
 referencias:
   - "452"
 etapa: ampliar

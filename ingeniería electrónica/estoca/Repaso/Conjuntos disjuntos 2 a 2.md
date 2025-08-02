@@ -3,9 +3,9 @@ dia: 2025-04-07
 etapa: ampliar
 referencias: 
 tags:
-  - nota/facultad
-  - carrera/ingeniería-en-informática/discreta/Álgebra-de-conjuntos
   - carrera/ingeniería-electrónica/estoca/Repaso
+  - carrera/ingeniería-en-informática/discreta/Álgebra-de-conjuntos
+  - nota/facultad
 aliases:
   - Conjuntos mutuamente excluyentes 2 a 2
 ---

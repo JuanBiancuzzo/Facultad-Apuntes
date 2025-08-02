@@ -1,12 +1,12 @@
 ---
 dia: 2024-08-05
 tags:
-  - carrera/ingeniería-en-informática/analisis-2/Nomenclatura
-  - nota/facultad
   - carrera/ingeniería-electrónica/analisis-2/Nomenclatura
-  - carrera/licenciatura-en-ciencias-matemáticas/analisis-1/Vectores-y-geometría-del-espacio
+  - carrera/ingeniería-en-informática/analisis-2/Nomenclatura
   - carrera/licenciatura-en-ciencias-de-datos/analisis-1/Vectores-y-geometría-del-espacio
   - carrera/licenciatura-en-ciencias-físicas/analisis-1/Vectores-y-geometría-del-espacio
+  - carrera/licenciatura-en-ciencias-matemáticas/analisis-1/Vectores-y-geometría-del-espacio
+  - nota/facultad
 referencias:
   - "517"
 etapa: empezado

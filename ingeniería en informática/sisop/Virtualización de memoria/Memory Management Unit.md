@@ -3,9 +3,9 @@ dia: 2023-11-14
 aliases:
   - MMU
 tags:
+  - carrera/ingeniería-electrónica/embebidos/Memorias
   - carrera/ingeniería-en-informática/sisop/Virtualización-de-memoria
   - nota/facultad
-  - carrera/ingeniería-electrónica/embebidos/Memorias
 ---
 # Definición
 ---

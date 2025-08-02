@@ -1,11 +1,12 @@
 ---
 dia: 2024-04-16
 tags:
-  - carrera/ingeniería-electrónica/señales/Muestreo-e-Interpolación
-  - nota/facultad
-  - carrera/ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
   - carrera/ingeniería-electrónica/embebidos/Conversión-analógica-a-digital-y-digital-a-analógica
+  - carrera/ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
+  - carrera/ingeniería-electrónica/señales/Muestreo-e-Interpolación
   - investigación/placa-de-Desarrollo/placa-de-desarrollo-Nucleo-64/placa-STM32-F302R8
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Conversor A/D
   - A/D converter
@@ -17,7 +18,7 @@ aliases:
   - Módulo HAL del conversor A/D#Modulo HAL
   - Módulo Hardware Abstraction Layer del ADC#Modulo HAL
   - Módulo HAL del ADC#Modulo HAL
-referencias:
+referencias: 
 ---
 # Definición
 ---

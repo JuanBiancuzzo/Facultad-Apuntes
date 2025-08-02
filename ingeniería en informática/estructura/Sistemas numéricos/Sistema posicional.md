@@ -1,11 +1,11 @@
 ---
 dia: 2023-03-14
 tags:
-  - carrera/ingeniería-en-informática/estructura/Sistemas-numéricos
-  - nota/facultad
   - carrera/ingeniería-electrónica/estructura/Sistemas-numéricos
-  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
+  - carrera/ingeniería-en-informática/estructura/Sistemas-numéricos
   - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Números-enteros
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
+  - nota/facultad
 aliases:
   - Desarrollo de un número entero en base d
 referencias:

@@ -2,8 +2,8 @@
 dia: 2024-10-08
 estado: Sin empezar
 tags:
-  - investigación/índice
   - investigación/herramientas/LTSpice
+  - investigación/índice
   - nota/investigacion
 ---
 ```dataviewjs

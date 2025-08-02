@@ -14,12 +14,13 @@ anio: "2009"
 editores: 
 url: https://proceedings.mlr.press/v5/salakhutdinov09a.html
 tags:
-  - referencia/paper
   - colección/biblioteca/paper
-  - nota/investigacion
-  - investigación/machine-Learning/Deep-Learning
   - investigación/ciencias-de-la-computación/Machine-learning/Deep-Learning
+  - investigación/machine-Learning/Deep-Learning
   - investigación/matemática/Estadística/Machine-learning/Deep-Learning
+  - nota/colección
+  - nota/investigacion
+  - referencia/paper
 aliases:
   - Deep Boltzmann Machines
   - DBM

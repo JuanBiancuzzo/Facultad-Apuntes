@@ -2,10 +2,10 @@
 dia: 2022-09-19
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Series
-  - nota/facultad
-  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
   - carrera/ingeniería-en-informática/analisis-3/Series
   - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
+  - nota/facultad
 referencias:
   - "412"
 etapa: ampliar

@@ -1,9 +1,9 @@
 ---
 dia: 2024-03-14
 tags:
+  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - carrera/ingeniería-electrónica/señales/Señales-y-sistemas
   - nota/facultad
-  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
 referencias:
   - "873"
 etapa: ampliar

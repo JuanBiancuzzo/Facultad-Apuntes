@@ -5,10 +5,11 @@ referencias:
   - "196"
   - "196"
 tags:
-  - nota/investigacion
   - carrera/ingeniería-en-informática/orga/Compresión
-  - investigación/matemática/encoding/lossless-compression-encoding
   - investigación/ciencias-de-la-computación/algoritmos
+  - investigación/matemática/encoding/lossless-compression-encoding
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Huffman Codes
   - Huffman Coding

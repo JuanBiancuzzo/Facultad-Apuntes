@@ -1,10 +1,11 @@
 ---
 dia: 2024-07-28
 tags:
-  - carrera/ingeniería-en-informática/taller/Sintaxis
-  - nota/facultad
-  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
   - carrera/ingeniería-electrónica/taller/Sintaxis
+  - carrera/ingeniería-en-informática/taller/Sintaxis
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Tuple
 ---

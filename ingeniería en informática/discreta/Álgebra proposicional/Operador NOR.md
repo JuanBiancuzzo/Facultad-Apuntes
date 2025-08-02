@@ -1,8 +1,8 @@
 ---
 dia: 2024-08-02
 tags:
-  - nota/facultad
   - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
+  - nota/facultad
 aliases:
   - Peirce
 ---

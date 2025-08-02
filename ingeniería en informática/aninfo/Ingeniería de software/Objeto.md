@@ -2,8 +2,9 @@
 dia: 2023-08-31
 tags:
   - carrera/ingeniería-en-informática/aninfo/Ingeniería-de-software
-  - nota/facultad
   - curso/introduction-to-algorithms/Introduction
+  - nota/curso
+  - nota/facultad
 referencias:
   - "700"
 etapa: ampliar

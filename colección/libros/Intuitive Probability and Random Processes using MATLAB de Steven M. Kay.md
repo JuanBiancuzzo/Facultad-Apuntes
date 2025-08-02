@@ -2,9 +2,9 @@
 dia: 2025-03-11
 etapa: sin-empezar
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 tipoCita: Libro
 tituloObra: Intuitive Probability and Random Processes using MATLAB
 numReferencia: 969
@@ -192,7 +192,7 @@ aliases:
   - "Intuitive Probability and Random Processes using MATLAB de Steven M. Kay, Capítulo 20: Gaussian Random Processes#Capítulo 20: Gaussian Random Processes"
   - "Intuitive Probability and Random Processes using MATLAB de Steven M. Kay, Capítulo 21: Poisson Random Processes#Capítulo 21: Poisson Random Processes"
   - "Intuitive Probability and Random Processes using MATLAB de Steven M. Kay, Capítulo 22: Markov Chains#Capítulo 22: Markov Chains"
-volumen:
+volumen: 
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

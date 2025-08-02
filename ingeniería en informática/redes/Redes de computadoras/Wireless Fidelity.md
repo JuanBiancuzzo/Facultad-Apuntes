@@ -4,11 +4,11 @@ aliases:
   - WiFi
   - "802.11"
 tags:
+  - carrera/ingeniería-electrónica/redes/Capa-Física-Inalámbrica
+  - carrera/ingeniería-electrónica/redes/Redes-de-computadoras
+  - carrera/ingeniería-en-informática/redes/Capa-Física-Inalámbrica
   - carrera/ingeniería-en-informática/redes/Redes-de-computadoras
   - nota/facultad
-  - carrera/ingeniería-en-informática/redes/Capa-Física-Inalámbrica
-  - carrera/ingeniería-electrónica/redes/Redes-de-computadoras
-  - carrera/ingeniería-electrónica/redes/Capa-Física-Inalámbrica
 ---
 # Definición
 ---

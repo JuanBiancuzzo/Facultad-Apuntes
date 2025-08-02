@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "486"
 tags:
-  - nota/investigacion
   - investigación/matemática
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

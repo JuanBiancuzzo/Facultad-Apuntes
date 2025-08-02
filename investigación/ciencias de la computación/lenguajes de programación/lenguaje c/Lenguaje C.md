@@ -2,9 +2,9 @@
 dia: 2024-10-06
 estado: Sin empezar
 tags:
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - investigación/índice
   - nota/investigacion
-  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

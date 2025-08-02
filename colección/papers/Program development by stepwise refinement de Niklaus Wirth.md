@@ -18,10 +18,10 @@ anio: "1971"
 editores: []
 url: https://doi.org/10.1145/362575.362577
 doi: 
-tags: 
- - referencia/paper
- - colección/biblioteca/paper
- - nota/investigacion
+tags:
+  - colección/biblioteca/paper
+  - nota/colección
+  - referencia/paper
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

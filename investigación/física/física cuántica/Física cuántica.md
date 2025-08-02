@@ -2,8 +2,8 @@
 dia: 2024-09-03
 estado: Sin empezar
 tags:
-  - investigación/índice
   - investigación/física/física-cuántica
+  - investigación/índice
   - nota/investigacion
 aliases:
   - Mecánica cuántica

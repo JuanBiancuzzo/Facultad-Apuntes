@@ -2,11 +2,11 @@
 dia: 2024-10-14
 estado: Tenemos en sí la idea de varios protocolos, pero me gustaría investigarlos más y tal vez implementar alguno de ellos para darme una idea de como funcionan
 tags:
-  - investigación/índice
-  - nota/investigacion
-  - investigación/protocolos/protocolo-de-internet
-  - investigación/networking/Protocolos
   - investigación/ciencias-de-la-computación/Networking/Protocolos
+  - investigación/índice
+  - investigación/networking/Protocolos
+  - investigación/protocolos/protocolo-de-internet
+  - nota/investigacion
 aliases:
   - Internet Protocol
   - IP

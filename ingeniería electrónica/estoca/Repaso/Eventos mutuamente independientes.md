@@ -3,10 +3,10 @@ dia: 2025-04-07
 etapa: terminado
 referencias: 
 tags:
-  - nota/facultad
-  - carrera/ingeniería-en-informática/proba/Teoría-de-probabilidades
-  - carrera/ingeniería-electrónica/proba/Teoría-de-probabilidades
   - carrera/ingeniería-electrónica/estoca/Repaso
+  - carrera/ingeniería-electrónica/proba/Teoría-de-probabilidades
+  - carrera/ingeniería-en-informática/proba/Teoría-de-probabilidades
+  - nota/facultad
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

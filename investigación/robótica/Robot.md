@@ -3,9 +3,9 @@ dia: 2024-12-23
 etapa: ampliar
 referencias: 
 tags:
-  - nota/investigacion
-  - investigación/robótica
   - investigación/electrónica/Robótica
+  - investigación/robótica
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

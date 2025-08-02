@@ -4,10 +4,10 @@ etapa: sin-empezar
 referencias:
   - "488"
 tags:
-  - nota/investigacion
-  - investigación/machine-Learning/Red-Neuronal
   - investigación/ciencias-de-la-computación/Machine-learning/red-Neuronal
+  - investigación/machine-Learning/Red-Neuronal
   - investigación/matemática/Estadística/Machine-learning/red-Neuronal
+  - nota/investigacion
 aliases:
   - Perceptron
 ---

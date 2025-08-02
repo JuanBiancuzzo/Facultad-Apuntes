@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "541"
 tags:
-  - nota/investigacion
   - investigación/generación-de-energía/Baterías
+  - nota/investigacion
 aliases:
   - Batería de sodio-ion
   - Sodium-ion battery

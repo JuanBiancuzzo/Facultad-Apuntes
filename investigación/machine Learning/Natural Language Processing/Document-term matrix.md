@@ -4,11 +4,12 @@ etapa: ampliar
 referencias:
   - "633"
 tags:
-  - investigación/machine-Learning/Natural-Language-Processing
-  - nota/investigacion
   - curso/ciencia-de-datos-para-salud-mental-y-psicología/Machine-learning-deep-learning-e-interpretabilidad-algorítmica
   - investigación/ciencias-de-la-computación/Machine-learning/Natural-Language-Processing
+  - investigación/machine-Learning/Natural-Language-Processing
   - investigación/matemática/Estadística/Machine-learning/Natural-Language-Processing
+  - nota/curso
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

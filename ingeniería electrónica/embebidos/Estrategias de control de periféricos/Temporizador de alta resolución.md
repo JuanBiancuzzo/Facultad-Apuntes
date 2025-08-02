@@ -1,8 +1,8 @@
 ---
 dia: 2024-09-26
-tags: 
- - carrera/ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
- - nota/facultad
+tags:
+  - carrera/ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
+  - nota/facultad
 ---
 # Definición
 ---

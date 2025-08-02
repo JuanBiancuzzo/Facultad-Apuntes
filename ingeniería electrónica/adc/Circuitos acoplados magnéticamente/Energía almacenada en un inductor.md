@@ -2,8 +2,8 @@
 dia: 2023-11-17
 tags:
   - carrera/ingeniería-electrónica/adc/Circuitos-acoplados-magnéticamente
-  - nota/facultad
   - carrera/ingeniería-en-informática/adc/Circuitos-acoplados-magnéticamente
+  - nota/facultad
 aliases:
   - Energía almacenada en una bobina
 ---

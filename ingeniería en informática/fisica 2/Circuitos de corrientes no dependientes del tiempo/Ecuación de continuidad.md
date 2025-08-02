@@ -1,10 +1,10 @@
 ---
 dia: 2024-09-02
 tags:
-  - carrera/ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
-  - nota/facultad
   - carrera/ingeniería-electrónica/electro/Campo-electromagnético
   - carrera/ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - carrera/ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - nota/facultad
 referencias:
   - "213"
 aliases:

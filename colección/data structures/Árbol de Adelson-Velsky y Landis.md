@@ -2,9 +2,10 @@
 dia: 2025-01-21
 etapa: empezado
 tags:
+  - colección/data-structures/estructura
   - investigación/ciencias-de-la-computación/data-structures
   - nota/colección
-  - colección/data-structures/estructura
+  - nota/investigacion
 nombreEstructura: Árbol de Adelson-Velsky y Landis
 métodos:
   - nombre: BuildTree

@@ -18,10 +18,11 @@ anio: "2005"
 editores: 
 url: https://doi.org/10.1145/1065944.1065952
 tags:
-  - referencia/paper
-  - colección/biblioteca/paper
-  - nota/investigacion
   - carrera/ingeniería-en-informática/tpp/Propuesta
+  - colección/biblioteca/paper
+  - nota/colección
+  - nota/facultad
+  - referencia/paper
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

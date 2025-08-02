@@ -1,10 +1,10 @@
 ---
 dia: 2024-12-23
 tags:
-  - investigación/índice
-  - nota/investigacion
   - investigación/ciencias-de-la-computación/Análisis-numérico
+  - investigación/índice
   - investigación/matemática/Análisis-numérico
+  - nota/investigacion
 estado: Sin empezar
 aliases:
   - Cálculo numérico

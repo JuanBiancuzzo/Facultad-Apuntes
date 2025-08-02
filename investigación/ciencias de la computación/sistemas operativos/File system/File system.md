@@ -1,9 +1,9 @@
 ---
 dia: 2024-12-22
 tags:
+  - investigación/ciencias-de-la-computación/sistemas-operativos/File-system
   - investigación/índice
   - nota/investigacion
-  - investigación/ciencias-de-la-computación/sistemas-operativos/File-system
 estado: Sin empezar
 aliases:
   - Soft link#Soft link

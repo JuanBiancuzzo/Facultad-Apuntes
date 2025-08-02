@@ -3,8 +3,8 @@ dia: 2024-08-26
 etapa: sin-empezar
 referencias: 
 tags:
-  - nota/investigacion
   - investigación/game-engine/rendering-engine
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

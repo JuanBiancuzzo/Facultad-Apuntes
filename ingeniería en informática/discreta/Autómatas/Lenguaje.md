@@ -1,8 +1,8 @@
 ---
 dia: 2024-08-08
-tags: 
- - carrera/ingeniería-en-informática/discreta/Autómatas
- - nota/facultad
+tags:
+  - carrera/ingeniería-en-informática/discreta/Autómatas
+  - nota/facultad
 ---
 # Definición
 ---

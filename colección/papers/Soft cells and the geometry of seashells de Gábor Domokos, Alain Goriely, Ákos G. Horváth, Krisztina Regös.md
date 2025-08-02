@@ -18,10 +18,11 @@ anio: "2024"
 editores: []
 url: 
 tags:
-  - referencia/paper
   - colección/biblioteca/paper
-  - nota/investigacion
   - investigación/matemática
+  - nota/colección
+  - nota/investigacion
+  - referencia/paper
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

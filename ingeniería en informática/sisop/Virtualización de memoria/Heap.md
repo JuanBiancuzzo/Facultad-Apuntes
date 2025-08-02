@@ -2,10 +2,13 @@
 dia: 2023-11-20
 tags:
   - carrera/ingeniería-en-informática/sisop/Virtualización-de-memoria
-  - nota/facultad
-  - curso/introduction-to-algorithms/Sorting-and-Trees
   - colección/data-structures/estructura
+  - curso/introduction-to-algorithms/Sorting-and-Trees
   - investigación/ciencias-de-la-computación/data-structures
+  - nota/colección
+  - nota/curso
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Max-Heap
   - Min-Heap

@@ -17,9 +17,9 @@ capitulos:
 cover: JavaScript for Kids, a Playful Introduction to Programming de Nick Morgan.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

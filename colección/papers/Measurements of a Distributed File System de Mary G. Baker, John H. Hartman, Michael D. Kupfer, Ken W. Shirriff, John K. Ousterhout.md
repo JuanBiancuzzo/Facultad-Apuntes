@@ -20,10 +20,11 @@ anio: "1991"
 editores: 
 url: 
 tags:
-  - referencia/paper
-  - colección/biblioteca/paper
-  - nota/investigacion
   - carrera/ingeniería-en-informática/tpp/Propuesta
+  - colección/biblioteca/paper
+  - nota/colección
+  - nota/facultad
+  - referencia/paper
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

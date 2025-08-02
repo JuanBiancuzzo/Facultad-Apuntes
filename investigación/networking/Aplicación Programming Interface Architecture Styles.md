@@ -6,9 +6,9 @@ referencias:
 aliases:
   - API Architecture Styles
 tags:
-  - nota/investigacion
-  - investigación/networking
   - investigación/ciencias-de-la-computación/Networking
+  - investigación/networking
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -2,8 +2,8 @@
 dia: 2024-07-08
 tags:
   - investigación/índice
-  - nota/investigacion
   - investigación/storytelling/worldbuilding/Conlang
+  - nota/investigacion
 estado: Falta resumir
 referencias:
   - "509"

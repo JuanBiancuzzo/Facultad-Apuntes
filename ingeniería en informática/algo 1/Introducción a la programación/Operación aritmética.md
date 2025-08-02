@@ -1,10 +1,11 @@
 ---
 dia: 2024-07-27
 tags:
-  - carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación
-  - nota/facultad
-  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
+  - carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Operador aritmético
 ---

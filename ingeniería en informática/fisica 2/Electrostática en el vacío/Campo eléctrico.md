@@ -1,12 +1,12 @@
 ---
 dia: 2024-09-01
 tags:
+  - carrera/ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
+  - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
+  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
   - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
   - nota/facultad
-  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
-  - carrera/ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
-  - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
-  - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
 aliases:
   - Densidad lineal de carga#^densidad-lineal
   - Densidad superficial de carga#^densidad-superficial

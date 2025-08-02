@@ -2,8 +2,8 @@
 dia: 2022-09-12
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Funciones-elementales
-  - nota/facultad
   - carrera/ingeniería-en-informática/analisis-3/Funciones-elementales
+  - nota/facultad
 ---
 Se define como el [[Argumento]] pero limitado al rango $[-\pi, \pi]$
 

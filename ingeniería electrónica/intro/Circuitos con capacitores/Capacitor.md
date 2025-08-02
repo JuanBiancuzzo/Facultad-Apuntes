@@ -1,12 +1,12 @@
 ---
 dia: 2023-01-23
 tags:
-  - carrera/ingeniería-electrónica/intro/Circuitos-con-capacitores
-  - nota/facultad
-  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
-  - carrera/ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
   - carrera/ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
   - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - carrera/ingeniería-electrónica/intro/Circuitos-con-capacitores
+  - carrera/ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - nota/facultad
 aliases:
   - Potencia de un capacitor#Potencia instantánea
   - Energía de un capacitor#Energía almacenada

@@ -10,9 +10,9 @@ aliases:
   - MOSFET canal P#Canal-P
   - Transistor MOSFET P#Canal-P
 tags:
+  - carrera/ingeniería-electrónica/circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
   - carrera/ingeniería-electrónica/dispo/Transistor-MOSFET
   - nota/facultad
-  - carrera/ingeniería-electrónica/circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
 ---
 # Definición
 ---

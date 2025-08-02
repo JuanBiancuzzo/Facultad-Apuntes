@@ -7,9 +7,9 @@ referencias:
   - "899"
   - "910"
 tags:
-  - nota/facultad
   - carrera/ingeniería-electrónica/circuitos/Circuitos-con-diodos
   - carrera/ingeniería-electrónica/control/Linealización
+  - nota/facultad
 aliases:
   - Análisis de pequeña señal
 ---

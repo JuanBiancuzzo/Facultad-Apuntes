@@ -2,9 +2,9 @@
 dia: 2022-12-04
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Transformada-de-Laplace
-  - nota/facultad
   - carrera/ingeniería-electrónica/señales/Transformadas-de-Laplace-y-Z
   - carrera/ingeniería-en-informática/analisis-3/Transformada-de-Laplace
+  - nota/facultad
 aliases:
   - Transformada inversa de Laplace
 etapa: ampliar

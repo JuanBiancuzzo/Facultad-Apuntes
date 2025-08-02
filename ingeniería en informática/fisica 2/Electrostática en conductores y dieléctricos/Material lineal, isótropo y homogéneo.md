@@ -1,12 +1,12 @@
 ---
 dia: 2024-09-02
 tags:
-  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
-  - nota/facultad
-  - carrera/ingeniería-en-informática/fisica-2/Magnetismo-estacionario-en-medios-materiales
   - carrera/ingeniería-electrónica/electro/Ondas-electromagnéticas-en-el-vacío
   - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
   - carrera/ingeniería-electrónica/fisica-2/Magnetismo-estacionario-en-medios-materiales
+  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - carrera/ingeniería-en-informática/fisica-2/Magnetismo-estacionario-en-medios-materiales
+  - nota/facultad
 aliases:
   - Material LIH
   - Susceptibilidad dieléctrica#^susceptibilidad-dielectrica

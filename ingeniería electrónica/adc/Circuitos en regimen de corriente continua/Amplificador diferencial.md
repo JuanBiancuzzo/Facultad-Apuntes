@@ -2,9 +2,9 @@
 dia: 2023-09-05
 tags:
   - carrera/ingeniería-electrónica/adc/Circuitos-en-regimen-de-corriente-continua
-  - nota/facultad
-  - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-de-corriente-continua
   - carrera/ingeniería-electrónica/circuitos/Amplificadores-diferenciales
+  - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-de-corriente-continua
+  - nota/facultad
 aliases:
   - Par diferencial
   - Rango de modo común de un amplificador diferencial#Rango de modo común

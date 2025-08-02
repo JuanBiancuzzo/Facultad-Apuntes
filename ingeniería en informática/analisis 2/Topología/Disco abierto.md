@@ -1,14 +1,14 @@
 ---
 dia: 2023-01-22
 tags:
-  - nota/facultad
+  - carrera/ingeniería-electrónica/analisis-2/Topología/1
   - carrera/ingeniería-electrónica/analisis-3/Topología-del-plano-complejo-y-límites
   - carrera/ingeniería-en-informática/analisis-2/Topología/1
-  - carrera/ingeniería-electrónica/analisis-2/Topología/1
   - carrera/ingeniería-en-informática/analisis-3/Topología-del-plano-complejo-y-límites
-  - carrera/licenciatura-en-ciencias-matemáticas/analisis-1/Vectores-y-geometría-del-espacio
   - carrera/licenciatura-en-ciencias-de-datos/analisis-1/Vectores-y-geometría-del-espacio
   - carrera/licenciatura-en-ciencias-físicas/analisis-1/Vectores-y-geometría-del-espacio
+  - carrera/licenciatura-en-ciencias-matemáticas/analisis-1/Vectores-y-geometría-del-espacio
+  - nota/facultad
 aliases:
   - Circulo
 referencias:

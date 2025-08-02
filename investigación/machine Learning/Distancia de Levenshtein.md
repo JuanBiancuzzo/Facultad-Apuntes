@@ -4,10 +4,10 @@ etapa: sin-empezar
 referencias:
   - "511"
 tags:
-  - nota/investigacion
-  - investigación/machine-Learning
   - investigación/ciencias-de-la-computación/Machine-learning
+  - investigación/machine-Learning
   - investigación/matemática/Estadística/Machine-learning
+  - nota/investigacion
 aliases:
   - Distancia de edición
   - Distancia entre palabras

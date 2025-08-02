@@ -1,9 +1,9 @@
 ---
 dia: 2023-03-14
 tags:
+  - carrera/ingeniería-electrónica/numerico/Errores
   - carrera/ingeniería-en-informática/numerico/Errores
   - nota/facultad
-  - carrera/ingeniería-electrónica/numerico/Errores
 ---
 # Definición
 ---

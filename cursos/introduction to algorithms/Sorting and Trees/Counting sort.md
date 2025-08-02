@@ -5,8 +5,9 @@ referencias:
   - "701"
 tags:
   - curso/introduction-to-algorithms/Sorting-and-Trees
-  - nota/curso
   - investigación/ciencias-de-la-computación/algoritmos/Sorting-algorithms
+  - nota/curso
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -3,11 +3,12 @@ dia: 2025-04-06
 etapa: empezado
 referencias: 
 tags:
-  - investigación/matemática/Probabilidad
-  - nota/investigacion
   - "#carrera/ingeniería-electrónica/proba/Teoría-de-probabilidades"
   - "#carrera/ingeniería-en-informática/proba/Teoría-de-probabilidades"
   - carrera/ingeniería-electrónica/estoca/Repaso
+  - investigación/matemática/Probabilidad
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Teorema sigma-aditividad
 ---

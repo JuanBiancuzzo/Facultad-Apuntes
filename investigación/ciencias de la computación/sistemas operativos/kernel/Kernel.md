@@ -2,10 +2,11 @@
 dia: 2024-10-15
 estado: Sin empezar
 tags:
-  - investigación/índice
-  - nota/investigacion
   - carrera/ingeniería-en-informática/sisop/Kernel
   - investigación/ciencias-de-la-computación/sistemas-operativos/kernel
+  - investigación/índice
+  - nota/facultad
+  - nota/investigacion
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

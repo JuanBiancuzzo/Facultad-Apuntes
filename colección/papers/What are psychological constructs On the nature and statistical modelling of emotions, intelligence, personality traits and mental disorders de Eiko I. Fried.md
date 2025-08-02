@@ -11,10 +11,10 @@ numeroInforme:
 anio: "2017"
 editores: []
 url: http://dx.doi.org/10.1080/17437199.2017.1306718
-tags: 
- - referencia/paper
- - colección/biblioteca/paper
- - nota/investigacion
+tags:
+  - colección/biblioteca/paper
+  - nota/colección
+  - referencia/paper
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

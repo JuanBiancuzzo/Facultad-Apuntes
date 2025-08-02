@@ -1,16 +1,17 @@
 ---
 dia: 2023-04-08
 tags:
-  - carrera/ingeniería-en-informática/estructura/Punto-flotante
-  - nota/facultad
-  - carrera/ingeniería-en-informática/taller/Sintaxis
+  - carrera/ingeniería-electrónica/algo-1/Lenguaje-C
+  - carrera/ingeniería-electrónica/estructura/Punto-flotante
+  - carrera/ingeniería-electrónica/taller/Sintaxis
   - carrera/ingeniería-en-informática/algo-1/Lenguaje-C
+  - carrera/ingeniería-en-informática/estructura/Punto-flotante
+  - carrera/ingeniería-en-informática/taller/Sintaxis
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
-  - carrera/ingeniería-electrónica/algo-1/Lenguaje-C
-  - carrera/ingeniería-electrónica/taller/Sintaxis
-  - carrera/ingeniería-electrónica/estructura/Punto-flotante
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-zig
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Floating point
   - Float

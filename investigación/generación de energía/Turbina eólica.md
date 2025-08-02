@@ -5,8 +5,8 @@ referencias:
   - "530"
   - "531"
 tags:
-  - nota/investigacion
   - investigación/generación-de-energía
+  - nota/investigacion
 aliases:
   - Turbina eólica vertical#Vertical
 ---

@@ -20,13 +20,14 @@ anio: "2017"
 editores: 
 url: 
 tags:
-  - referencia/paper
   - colección/biblioteca/paper
-  - nota/investigacion
-  - investigación/machine-Learning/transformers
   - investigación/ciencias-de-la-computación/algoritmos
   - investigación/ciencias-de-la-computación/Machine-learning/transformers
+  - investigación/machine-Learning/transformers
   - investigación/matemática/Estadística/Machine-learning/transformers
+  - nota/colección
+  - nota/investigacion
+  - referencia/paper
 aliases:
   - Proximal Policy Optimization Algorithms
   - PPO

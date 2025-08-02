@@ -2,9 +2,9 @@
 dia: 2025-03-10
 etapa: sin-empezar
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 tipoCita: Libro
 tituloObra: Control Systems Engineering
 numReferencia: 908

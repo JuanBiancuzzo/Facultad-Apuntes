@@ -19,9 +19,9 @@ capitulos:
 cover: C Programming Language de Brian W. Kernighan, Dennis M. Ritchie.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

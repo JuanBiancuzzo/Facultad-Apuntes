@@ -1,8 +1,8 @@
 ---
 dia: 2024-07-08
 tags:
-  - investigación/índice
   - investigación/generación-procedural
+  - investigación/índice
   - nota/investigacion
 aliases:
   - Procedural generation

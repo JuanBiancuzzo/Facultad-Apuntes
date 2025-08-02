@@ -17,9 +17,9 @@ capitulos:
 cover: Pro MERN Stack, full Stack Web App Development with Mongo, Express, React and Node de Vasan Subramanian.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

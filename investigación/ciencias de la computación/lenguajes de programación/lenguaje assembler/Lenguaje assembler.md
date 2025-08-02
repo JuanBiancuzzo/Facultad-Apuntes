@@ -2,9 +2,9 @@
 dia: 2024-08-29
 estado: Sin empezar
 tags:
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-assembler
   - investigación/índice
   - nota/investigacion
-  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-assembler
 referencias:
   - "202"
 etapa: sin-empezar

@@ -23,9 +23,9 @@ capitulos:
 cover: Handbook of Computer Networks and Cyber Security, principles and Paradigms de Brij B. Gupta, Gregorio Martinez Perez, Dharma P. Agrawal, Deepak Gupta.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -2,9 +2,10 @@
 dia: 2024-09-10
 tags:
   - carrera/ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
-  - nota/facultad
-  - investigación/placa-de-Desarrollo/placa-de-desarrollo-Nucleo-64/placa-STM32-F302R8
   - investigación/placa-de-Desarrollo/arduino
+  - investigación/placa-de-Desarrollo/placa-de-desarrollo-Nucleo-64/placa-STM32-F302R8
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - GPIO
   - Entrada-salida de propósito general

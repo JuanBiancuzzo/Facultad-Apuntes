@@ -3,8 +3,8 @@ dia: 2025-04-07
 etapa: ampliar
 referencias: 
 tags:
-  - nota/facultad
   - carrera/ingeniería-electrónica/estoca/Repaso
+  - nota/facultad
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -4,8 +4,9 @@ etapa: ampliar
 referencias: 
 tags:
   - carrera/ingeniería-electrónica/estoca/Análisis-de-datos
-  - nota/facultad
   - investigación/ciencias-de-la-computación/algoritmos
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - LCG
 ---

@@ -1,9 +1,9 @@
 ---
 dia: 2024-12-10
 tags:
+  - investigación/ciencias-de-la-computación/Machine-learning
   - investigación/índice
   - nota/investigacion
-  - investigación/ciencias-de-la-computación/Machine-learning
 equivalente: "[[investigación/machine Learning/Machine learning.md|Machine learning]]"
 ---
 ```dataviewjs

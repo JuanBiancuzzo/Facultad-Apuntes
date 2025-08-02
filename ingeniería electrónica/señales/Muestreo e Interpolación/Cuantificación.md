@@ -1,9 +1,9 @@
 ---
 dia: 2024-05-14
 tags:
+  - carrera/ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
   - carrera/ingeniería-electrónica/señales/Muestreo-e-Interpolación
   - nota/facultad
-  - carrera/ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
 ---
 # Definición
 ---

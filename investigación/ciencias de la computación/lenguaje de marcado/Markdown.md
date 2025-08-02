@@ -3,8 +3,7 @@ dia: 2024-07-31
 etapa: empezado
 referencias:
   - "206"
-tags:
-  - nota/investigacion
+tags: []
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

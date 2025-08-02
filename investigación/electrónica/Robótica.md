@@ -5,6 +5,7 @@ tag:
   - nota/investigacion
   - investigación/electrónica/Robot
 equivalente: "[[investigación/robótica/Robótica|Robótica]]"
+tags: []
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

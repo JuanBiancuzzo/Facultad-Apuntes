@@ -17,10 +17,10 @@ numeroInforme:
 anio: "2013"
 editores: []
 url: 
-tags: 
- - referencia/paper
- - colección/biblioteca/paper
- - nota/investigacion
+tags:
+  - colección/biblioteca/paper
+  - nota/colección
+  - referencia/paper
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

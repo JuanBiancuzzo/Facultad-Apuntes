@@ -5,8 +5,8 @@ referencias:
   - "873"
 tags:
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
-  - nota/facultad
   - carrera/ingeniería-electrónica/intro/Circuitos-con-capacitores
+  - nota/facultad
 aliases:
   - Rise time of a system
 ---

@@ -22,9 +22,9 @@ capitulos:
 cover: Introduction to Algorithms de Thomas H. Cormen, Charles E. Leiserson, Ronald L Rivest Rivest, Clifford Stein.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

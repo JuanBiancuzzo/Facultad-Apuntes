@@ -1,9 +1,9 @@
 ---
 dia: 2024-06-07
 tags:
-  - nota/facultad
-  - carrera/ingeniería-en-informática/redes/Capa-de-Red
   - carrera/ingeniería-electrónica/redes/Capa-de-Red
+  - carrera/ingeniería-en-informática/redes/Capa-de-Red
+  - nota/facultad
 ---
 # Definición
 ---

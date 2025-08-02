@@ -5,12 +5,13 @@ aliases:
   - POP3
   - Post Office Protocol - Version 3
 tags:
-  - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
-  - nota/facultad
-  - investigación/protocolos/protocolo-de-internet
   - carrera/ingeniería-electrónica/redes/Capa-de-aplicación
-  - investigación/networking/Protocolos
+  - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
   - investigación/ciencias-de-la-computación/Networking/Protocolos
+  - investigación/networking/Protocolos
+  - investigación/protocolos/protocolo-de-internet
+  - nota/facultad
+  - nota/investigacion
 ---
 # Definición
 ---

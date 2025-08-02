@@ -1,9 +1,9 @@
 ---
 dia: 2024-08-22
 tags:
+  - carrera/ingeniería-electrónica/redes/Capa-de-Enlace
   - carrera/ingeniería-en-informática/redes/Capa-de-Enlace
   - nota/facultad
-  - carrera/ingeniería-electrónica/redes/Capa-de-Enlace
 aliases:
   - CRC
   - Cyclic Redundancy Check codes

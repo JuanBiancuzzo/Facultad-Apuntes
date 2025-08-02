@@ -3,8 +3,8 @@ dia: 2024-11-17
 etapa: sin-empezar
 referencias: 
 tags:
-  - nota/investigacion
   - investigación/mecánica
+  - nota/investigacion
 aliases:
   - WAAM
 ---

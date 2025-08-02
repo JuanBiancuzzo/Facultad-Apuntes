@@ -2,12 +2,12 @@
 dia: 2022-09-21
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Series
-  - nota/facultad
   - carrera/ingeniería-en-informática/analisis-3/Series
+  - nota/facultad
 etapa: ampliar
 referencias:
   - "1056"
-aliases:
+aliases: 
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

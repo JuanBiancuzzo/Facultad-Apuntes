@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "483"
 tags:
-  - nota/investigacion
   - investigación/ciencias-de-la-computación/algoritmos
+  - nota/investigacion
 aliases:
   - Optimización por enjambre de partículas
 ---

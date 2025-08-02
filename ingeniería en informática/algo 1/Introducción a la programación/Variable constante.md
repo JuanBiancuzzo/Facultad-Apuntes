@@ -1,13 +1,14 @@
 ---
 dia: 2024-07-27
 tags:
-  - carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación
-  - nota/facultad
-  - carrera/ingeniería-en-informática/taller/Sintaxis
-  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
-  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
   - carrera/ingeniería-electrónica/taller/Sintaxis
+  - carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación
+  - carrera/ingeniería-en-informática/taller/Sintaxis
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
+  - nota/facultad
+  - nota/investigacion
 referencias:
   - "845"
 etapa: ampliar

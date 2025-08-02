@@ -3,10 +3,11 @@ dia: 2025-02-10
 etapa: ampliar
 referencias: 
 tags:
-  - carrera/ingeniería-en-informática/algo-1/Manejo-de-archivos
   - carrera/ingeniería-electrónica/algo-1/Manejo-de-archivos
+  - carrera/ingeniería-en-informática/algo-1/Manejo-de-archivos
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - nota/facultad
+  - nota/investigacion
 aliases:
   - fread
 ---

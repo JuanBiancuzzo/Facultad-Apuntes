@@ -1,8 +1,8 @@
 ---
 dia: 2024-07-08
 tags:
-  - investigación/índice
   - investigación/ciencias-de-la-computación/lenguaje-de-marcado
+  - investigación/índice
   - nota/investigacion
 estado: Falta resumir
 referencias:

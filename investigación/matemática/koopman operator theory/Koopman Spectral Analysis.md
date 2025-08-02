@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "169"
 tags:
-  - nota/investigacion
   - investigación/matemática/koopman-operator-theory
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

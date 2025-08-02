@@ -2,8 +2,8 @@
 dia: 2024-08-05
 tags:
   - carrera/ingeniería-en-informática/discreta/Álgebra-de-conjuntos
-  - nota/facultad
   - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
+  - nota/facultad
 ---
 # Definición
 ---

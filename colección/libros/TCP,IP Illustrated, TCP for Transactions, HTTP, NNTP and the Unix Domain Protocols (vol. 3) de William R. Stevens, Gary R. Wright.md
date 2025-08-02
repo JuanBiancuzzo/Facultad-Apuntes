@@ -20,9 +20,9 @@ cover: TCP,IP Illustrated, TCP for Transactions, HTTP, NNTP and the Unix Domain 
 aliases:
   - TCP/IP Illustrated, TCP for Transactions, HTTP, NNTP and the Unix Domain Protocols (vol. 3) de William R. Stevens, Gary R. Wright
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

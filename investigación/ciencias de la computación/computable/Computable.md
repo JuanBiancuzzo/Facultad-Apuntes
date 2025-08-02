@@ -2,9 +2,9 @@
 dia: 2024-11-16
 estado: Sin empezar
 tags:
+  - investigación/ciencias-de-la-computación/computable
   - investigación/índice
   - nota/investigacion
-  - investigación/ciencias-de-la-computación/computable
 referencias:
   - "543"
 ---

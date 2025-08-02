@@ -4,9 +4,9 @@ etapa: ampliar
 referencias: 
 tags:
   - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
-  - nota/facultad
-  - carrera/ingeniería-en-informática/proba/Variables-aleatorias-condicionadas
   - carrera/ingeniería-electrónica/proba/Variables-aleatorias-condicionadas
+  - carrera/ingeniería-en-informática/proba/Variables-aleatorias-condicionadas
+  - nota/facultad
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

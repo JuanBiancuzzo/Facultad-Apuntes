@@ -1,9 +1,9 @@
 ---
 dia: 2023-09-23
 tags:
+  - carrera/ingeniería-electrónica/circuitos/Circuitos-con-diodos
   - carrera/ingeniería-electrónica/dispo/Diodo-de-Juntura-PN
   - nota/facultad
-  - carrera/ingeniería-electrónica/circuitos/Circuitos-con-diodos
 ---
 # Definición
 ---

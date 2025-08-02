@@ -13,10 +13,10 @@ numeroInforme:
 anio: "2017"
 editores: []
 url: "Choosing prediction over explanation in psychology: Lessons from Machine Learning"
-tags: 
- - referencia/paper
- - colección/biblioteca/paper
- - nota/investigacion
+tags:
+  - colección/biblioteca/paper
+  - nota/colección
+  - referencia/paper
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

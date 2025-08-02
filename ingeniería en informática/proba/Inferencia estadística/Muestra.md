@@ -1,10 +1,10 @@
 ---
 dia: 2023-01-23
 tags:
+  - carrera/ingeniería-electrónica/estoca/Repaso
+  - carrera/ingeniería-electrónica/proba/Inferencia-estadística
   - carrera/ingeniería-en-informática/proba/Inferencia-estadística
   - nota/facultad
-  - carrera/ingeniería-electrónica/proba/Inferencia-estadística
-  - carrera/ingeniería-electrónica/estoca/Repaso
 etapa: ampliar
 referencias: []
 aliases: []

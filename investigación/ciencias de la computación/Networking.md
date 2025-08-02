@@ -5,6 +5,7 @@ tag:
   - investigación/ciencias-de-la-computación/Networking
   - nota/investigacion
 equivalente: "[[investigación/networking/Red.md|Red]]"
+tags: []
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

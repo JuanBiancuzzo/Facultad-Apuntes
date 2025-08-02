@@ -4,9 +4,10 @@ etapa: ampliar
 referencias: 
 tags:
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
-  - nota/facultad
-  - investigación/protocolos
   - investigación/ciencias-de-la-computación/algoritmos
+  - investigación/protocolos
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Algoritmo parcialmente sincrónico#Parcialmente sincrónico
   - Algoritmo asincrónico#Asincrónico

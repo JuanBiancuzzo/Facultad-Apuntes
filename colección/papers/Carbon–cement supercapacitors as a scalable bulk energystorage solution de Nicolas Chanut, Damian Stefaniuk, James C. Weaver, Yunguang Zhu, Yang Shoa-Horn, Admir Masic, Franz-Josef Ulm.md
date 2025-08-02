@@ -24,10 +24,11 @@ anio: "2023"
 editores: []
 url: https://www.pnas.org/doi/epdf/10.1073/pnas.2304318120
 tags:
-  - referencia/paper
   - colección/biblioteca/paper
-  - nota/investigacion
   - investigación/generación-de-energía/Baterías
+  - nota/colección
+  - nota/investigacion
+  - referencia/paper
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

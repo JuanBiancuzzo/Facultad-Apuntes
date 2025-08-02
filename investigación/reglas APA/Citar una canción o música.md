@@ -7,8 +7,8 @@ aliases:
   - Citar una canción
   - Citar música
 tags:
-  - nota/investigacion
   - investigación/reglas-APA
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -2,11 +2,11 @@
 dia: 2024-11-25
 estado: Sin empezar
 tags:
+  - investigación/ciencias-de-la-computación/Machine-learning/Deep-Learning
   - investigación/índice
   - investigación/machine-Learning/Deep-Learning
-  - nota/investigacion
-  - investigación/ciencias-de-la-computación/Machine-learning/Deep-Learning
   - investigación/matemática/Estadística/Machine-learning/Deep-Learning
+  - nota/investigacion
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

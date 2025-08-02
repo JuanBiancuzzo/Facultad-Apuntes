@@ -6,8 +6,8 @@ referencias:
 aliases:
   - Plantilla
 tags:
-  - nota/investigacion
   - investigación/herramientas/hugo
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

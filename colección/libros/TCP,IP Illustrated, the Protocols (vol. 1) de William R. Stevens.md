@@ -18,9 +18,9 @@ cover: TCP,IP Illustrated (vol. 1) de William R. Stevens.jpg
 aliases:
   - TCP/IP Illustrated, the Protocols (vol. 1) de William R. Stevens
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

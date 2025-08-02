@@ -2,8 +2,8 @@
 dia: 2024-08-27
 tags:
   - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
-  - nota/facultad
   - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
+  - nota/facultad
 aliases:
   - Arquitectura de un sistema embebido#Arquitectura
 ---

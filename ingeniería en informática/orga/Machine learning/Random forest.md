@@ -2,10 +2,11 @@
 dia: 2023-08-12
 tags:
   - carrera/ingeniería-en-informática/orga/Machine-learning
-  - nota/facultad
-  - investigación/machine-Learning/Ensemble
   - investigación/ciencias-de-la-computación/Machine-learning/Ensemble
+  - investigación/machine-Learning/Ensemble
   - investigación/matemática/Estadística/Machine-learning/Ensemble
+  - nota/facultad
+  - nota/investigacion
 referencias:
   - "640"
 etapa: sin-empezar

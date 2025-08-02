@@ -4,10 +4,10 @@ etapa: sin-empezar
 referencias:
   - "512"
 tags:
-  - nota/investigacion
-  - investigación/machine-Learning/transformers
   - investigación/ciencias-de-la-computación/Machine-learning/transformers
+  - investigación/machine-Learning/transformers
   - investigación/matemática/Estadística/Machine-learning/transformers
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -2,9 +2,10 @@
 dia: 2024-09-16
 tags:
   - colección/componentes/circuitoIntegrado
-  - investigación/índice
-  - nota/investigacion
   - investigación/electrónica/componentes/circuitoIntegrado
+  - investigación/índice
+  - nota/colección
+  - nota/investigacion
 aliases:
   - Circuito integrado
   - Chip

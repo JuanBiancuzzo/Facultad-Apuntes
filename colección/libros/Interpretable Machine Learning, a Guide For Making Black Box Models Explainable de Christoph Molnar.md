@@ -17,9 +17,9 @@ capitulos:
 cover: Interpretable Machine Learning, a Guide For Making Black Box Models Explainable de Christoph Molnar.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

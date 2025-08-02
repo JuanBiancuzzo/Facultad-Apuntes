@@ -2,10 +2,10 @@
 dia: 2023-11-16
 tags:
   - carrera/ingeniería-electrónica/adc/Circuitos-acoplados-magnéticamente
-  - nota/facultad
-  - carrera/ingeniería-en-informática/fisica-2/Inducción-electromagnética
   - carrera/ingeniería-electrónica/fisica-2/Inducción-electromagnética
   - carrera/ingeniería-en-informática/adc/Circuitos-acoplados-magnéticamente
+  - carrera/ingeniería-en-informática/fisica-2/Inducción-electromagnética
+  - nota/facultad
 aliases:
   - Coeficiente de inducción mutuo
 ---

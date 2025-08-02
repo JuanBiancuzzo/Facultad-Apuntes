@@ -4,12 +4,13 @@ etapa: ampliar
 referencias:
   - 785
 tags:
-  - nota/investigacion
-  - investigación/ciencias-de-la-computación/lenguajes-de-programación
-  - investigación/ciencias-de-la-computación/Análisis-numérico
-  - investigación/matemática/Análisis-numérico
-  - funciones/Librerías-de-Pseudocódigo
   - colección/funciones/lenguaje
+  - funciones/Librerías-de-Pseudocódigo
+  - investigación/ciencias-de-la-computación/Análisis-numérico
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación
+  - investigación/matemática/Análisis-numérico
+  - nota/colección
+  - nota/investigacion
 aliases:
   - Lenguaje de descripción algorítmico
 tiposDeDatosPrimitivos:

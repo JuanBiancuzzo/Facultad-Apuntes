@@ -2,8 +2,9 @@
 dia: 2023-11-16
 tags:
   - carrera/ingeniería-en-informática/sisop/La-abstracción-de-proceso
-  - nota/facultad
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c/System-call/Procesos-system-calls
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Exec system call
   - Execl system call

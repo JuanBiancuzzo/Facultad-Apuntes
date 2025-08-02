@@ -1,13 +1,14 @@
 ---
 dia: 2023-01-23
 tags:
-  - carrera/ingeniería-en-informática/proba/Representación-de-variables-aleatorias
-  - nota/facultad
-  - carrera/ingeniería-en-informática/orga/Machine-learning
-  - investigación/machine-Learning
-  - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
-  - investigación/ciencias-de-la-computación/Machine-learning
   - "#investigación/matemática/Estadística/Machine-learning"
+  - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
+  - carrera/ingeniería-en-informática/orga/Machine-learning
+  - carrera/ingeniería-en-informática/proba/Representación-de-variables-aleatorias
+  - investigación/ciencias-de-la-computación/Machine-learning
+  - investigación/machine-Learning
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Regresión lineal
   - Ajuste lineal

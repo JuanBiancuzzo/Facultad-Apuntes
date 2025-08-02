@@ -1,9 +1,9 @@
 ---
 dia: 2024-01-10
 tags:
+  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - carrera/ingeniería-electrónica/legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
-  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
 referencias:
   - "899"
   - "1037"

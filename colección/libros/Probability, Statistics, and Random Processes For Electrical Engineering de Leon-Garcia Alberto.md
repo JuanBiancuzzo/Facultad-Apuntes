@@ -2,9 +2,9 @@
 dia: 2025-03-11
 etapa: sin-empezar
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 tipoCita: Libro
 tituloObra: Probability, Statistics, and Random Processes For Electrical Engineering
 numReferencia: 956

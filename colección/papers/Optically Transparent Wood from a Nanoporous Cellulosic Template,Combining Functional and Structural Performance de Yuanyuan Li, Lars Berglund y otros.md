@@ -20,9 +20,9 @@ anio: "2016"
 editores: 
 url: 
 tags:
-  - referencia/paper
   - colección/biblioteca/paper
-  - nota/investigacion
+  - nota/colección
+  - referencia/paper
 referencias:
   - "569"
 ---

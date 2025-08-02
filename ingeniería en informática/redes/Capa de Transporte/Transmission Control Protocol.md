@@ -3,15 +3,16 @@ dia: 2024-03-11
 aliases:
   - TCP
 tags:
-  - carrera/ingeniería-en-informática/redes/Capa-de-Transporte
-  - nota/facultad
-  - carrera/ingeniería-en-informática/redes/Capa-Física-Inalámbrica
-  - investigación/protocolos/protocolo-de-internet
   - carrera/ingeniería-electrónica/redes/Capa-de-Transporte
   - carrera/ingeniería-electrónica/redes/Capa-Física-Inalámbrica
-  - investigación/networking/Protocolos
-  - investigación/ciencias-de-la-computación/Networking/Protocolos
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
+  - carrera/ingeniería-en-informática/redes/Capa-de-Transporte
+  - carrera/ingeniería-en-informática/redes/Capa-Física-Inalámbrica
+  - investigación/ciencias-de-la-computación/Networking/Protocolos
+  - investigación/networking/Protocolos
+  - investigación/protocolos/protocolo-de-internet
+  - nota/facultad
+  - nota/investigacion
 ---
 # Definición
 ---

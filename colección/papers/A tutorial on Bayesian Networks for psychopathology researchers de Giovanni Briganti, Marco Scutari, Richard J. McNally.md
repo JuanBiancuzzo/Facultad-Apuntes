@@ -15,10 +15,10 @@ numeroInforme:
 anio: "2021"
 editores: []
 url: https://doi.org/10.31234/osf.io/h4vxa
-tags: 
- - referencia/paper
- - colección/biblioteca/paper
- - nota/investigacion
+tags:
+  - colección/biblioteca/paper
+  - nota/colección
+  - referencia/paper
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

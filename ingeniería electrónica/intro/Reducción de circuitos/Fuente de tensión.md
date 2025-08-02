@@ -1,10 +1,10 @@
 ---
 dia: 2023-01-23
 tags:
-  - carrera/ingeniería-electrónica/intro/Reducción-de-circuitos
-  - nota/facultad
-  - carrera/ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
   - carrera/ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - carrera/ingeniería-electrónica/intro/Reducción-de-circuitos
+  - carrera/ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - nota/facultad
 aliases:
   - Generador de tensión
 ---

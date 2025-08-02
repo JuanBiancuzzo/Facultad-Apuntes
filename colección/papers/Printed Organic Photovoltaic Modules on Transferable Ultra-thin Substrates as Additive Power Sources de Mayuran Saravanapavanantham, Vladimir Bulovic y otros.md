@@ -16,9 +16,9 @@ anio: "2023"
 editores: []
 url: 
 tags:
-  - referencia/paper
   - colección/biblioteca/paper
-  - nota/investigacion
+  - nota/colección
+  - referencia/paper
 referencias:
   - "537"
 ---

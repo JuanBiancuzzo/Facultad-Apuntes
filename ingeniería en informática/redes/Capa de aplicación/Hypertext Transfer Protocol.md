@@ -5,13 +5,14 @@ aliases:
   - Hypertext Transfer Protocolo Secure#HTTPS
   - HTTPS#HTTPS
 tags:
-  - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
-  - nota/facultad
-  - investigación/protocolos/protocolo-de-internet
   - carrera/ingeniería-electrónica/redes/Capa-de-aplicación
-  - investigación/networking/Protocolos
-  - investigación/ciencias-de-la-computación/Networking/Protocolos
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
+  - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
+  - investigación/ciencias-de-la-computación/Networking/Protocolos
+  - investigación/networking/Protocolos
+  - investigación/protocolos/protocolo-de-internet
+  - nota/facultad
+  - nota/investigacion
 ---
 # Definición
 ---

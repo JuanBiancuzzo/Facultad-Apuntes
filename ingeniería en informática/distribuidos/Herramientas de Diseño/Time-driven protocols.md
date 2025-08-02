@@ -4,8 +4,9 @@ etapa: ampliar
 referencias: 
 tags:
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
-  - nota/facultad
   - investigación/protocolos/protocolo-de-internet
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Protocolos guiado por tiempos
 ---

@@ -2,10 +2,11 @@
 dia: 2023-08-12
 tags:
   - carrera/ingeniería-en-informática/orga/Machine-learning
-  - nota/facultad
-  - investigación/machine-Learning
   - investigación/ciencias-de-la-computación/Machine-learning
+  - investigación/machine-Learning
   - investigación/matemática/Estadística/Machine-learning
+  - nota/facultad
+  - nota/investigacion
 ---
 # Definición
 ---

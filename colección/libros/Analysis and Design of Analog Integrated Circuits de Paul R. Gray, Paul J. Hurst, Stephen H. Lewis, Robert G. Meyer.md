@@ -119,9 +119,9 @@ aliases:
   - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 11: Noise in Integrated Circuits#Capítulo 11: Noise in Integrated Circuits"
   - "Analysis and Design of Analog Integrated Circuits de Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, Robert G. Meyer, Capítulo 12: Fully Differential Operational Amplifiers#Capítulo 12: Fully Differential Operational Amplifiers"
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

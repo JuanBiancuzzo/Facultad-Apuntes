@@ -1,12 +1,12 @@
 ---
 dia: 2023-03-23
 tags:
-  - carrera/ingeniería-en-informática/orga/Visualizaciones
-  - nota/facultad
-  - carrera/ingeniería-en-informática/proba/Representación-de-variables-aleatorias
-  - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
   - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
   - carrera/ingeniería-electrónica/estoca/Introducción-a-procesos-aleatorios
+  - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
+  - carrera/ingeniería-en-informática/orga/Visualizaciones
+  - carrera/ingeniería-en-informática/proba/Representación-de-variables-aleatorias
+  - nota/facultad
 etapa: ampliar
 referencias: []
 aliases:

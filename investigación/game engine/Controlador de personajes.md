@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "43"
 tags:
-  - nota/investigacion
   - investigación/game-engine
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

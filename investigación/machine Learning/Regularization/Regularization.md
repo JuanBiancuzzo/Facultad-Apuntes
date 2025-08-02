@@ -2,11 +2,11 @@
 dia: 2024-11-26
 estado: Sin empezar
 tags:
+  - investigación/ciencias-de-la-computación/Machine-learning/Regularization
   - investigación/índice
   - investigación/machine-Learning/Regularization
-  - nota/investigacion
-  - investigación/ciencias-de-la-computación/Machine-learning/Regularization
   - investigación/matemática/Estadística/Machine-learning/Regularization
+  - nota/investigacion
 aliases:
   - Regularización
 ---

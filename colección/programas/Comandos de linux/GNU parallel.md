@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "505"
 tags:
-  - nota/investigacion
   - investigación/herramientas/Comandos-de-linux
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

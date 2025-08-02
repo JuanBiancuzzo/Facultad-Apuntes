@@ -2,10 +2,10 @@
 dia: 2022-09-12
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Funciones-elementales
-  - nota/facultad
-  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
   - carrera/ingeniería-en-informática/analisis-3/Funciones-elementales
   - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
+  - nota/facultad
 referencias:
   - "411"
 etapa: ampliar

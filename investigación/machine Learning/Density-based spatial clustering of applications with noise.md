@@ -4,11 +4,11 @@ etapa: sin-empezar
 referencias:
   - "493"
 tags:
-  - nota/investigacion
-  - investigación/machine-Learning
   - investigación/ciencias-de-la-computación/algoritmos
   - investigación/ciencias-de-la-computación/Machine-learning
+  - investigación/machine-Learning
   - investigación/matemática/Estadística/Machine-learning
+  - nota/investigacion
 aliases:
   - DBSCAN
 ---

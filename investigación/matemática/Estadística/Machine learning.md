@@ -5,6 +5,7 @@ tag:
   - nota/investigacion
   - investigación/matemática/Estadística/Machine-learning
 equivalente: "[[investigación/machine Learning/Machine learning.md|Machine learning]]"
+tags: []
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

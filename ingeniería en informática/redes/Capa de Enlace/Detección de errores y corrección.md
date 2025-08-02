@@ -1,11 +1,11 @@
 ---
 dia: 2024-08-22
 tags:
-  - carrera/ingeniería-en-informática/redes/Capa-de-Enlace
-  - nota/facultad
-  - carrera/ingeniería-en-informática/redes/Capa-de-Transporte
   - carrera/ingeniería-electrónica/redes/Capa-de-Enlace
   - carrera/ingeniería-electrónica/redes/Capa-de-Transporte
+  - carrera/ingeniería-en-informática/redes/Capa-de-Enlace
+  - carrera/ingeniería-en-informática/redes/Capa-de-Transporte
+  - nota/facultad
 aliases:
   - Error detection and correction
   - EDC

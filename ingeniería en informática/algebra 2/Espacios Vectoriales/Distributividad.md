@@ -1,19 +1,19 @@
 ---
 dia: 2023-04-08
 tags:
-  - carrera/ingeniería-en-informática/algebra-2/Espacios-Vectoriales
-  - nota/facultad
-  - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
-  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
-  - carrera/ingeniería-en-informática/discreta/Álgebra-de-Boole
-  - carrera/ingeniería-en-informática/estructura/Álgebra-de-Boole
-  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
   - carrera/ingeniería-electrónica/algebra-2/Espacios-Vectoriales
   - carrera/ingeniería-electrónica/estructura/Álgebra-de-Boole
+  - carrera/ingeniería-en-informática/algebra-2/Espacios-Vectoriales
+  - carrera/ingeniería-en-informática/discreta/Álgebra-de-Boole
+  - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
+  - carrera/ingeniería-en-informática/estructura/Álgebra-de-Boole
   - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
-  - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
-  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
   - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Números-enteros
+  - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
+  - nota/facultad
 referencias:
   - "412"
   - "414"

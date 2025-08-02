@@ -29,9 +29,9 @@ cover: Self-Sensing Concrete in Smart Structures de Baoguo Han, Xun Yu, Jinping 
 aliases:
   - "Self-Sensing Concrete in Smart Structures de Baoguo Han, Xun Yu, Jinping Ou, Capítulo 11: Challenges of Self-Sensing Concrete#Capítulo 11: Challenges of Self-Sensing Concrete"
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

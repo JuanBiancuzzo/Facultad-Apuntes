@@ -1,11 +1,11 @@
 ---
 dia: 2023-01-23
 tags:
-  - carrera/ingeniería-electrónica/intro/Reducción-de-circuitos
-  - nota/facultad
-  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
-  - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
+  - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
+  - carrera/ingeniería-electrónica/intro/Reducción-de-circuitos
+  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
+  - nota/facultad
 aliases:
   - Teorema de superposición
 referencias:

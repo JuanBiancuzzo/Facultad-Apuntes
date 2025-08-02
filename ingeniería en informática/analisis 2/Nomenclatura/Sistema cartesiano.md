@@ -1,9 +1,9 @@
 ---
 dia: 2024-09-04
 tags:
+  - carrera/ingeniería-electrónica/analisis-2/Nomenclatura
   - carrera/ingeniería-en-informática/analisis-2/Nomenclatura
   - nota/facultad
-  - carrera/ingeniería-electrónica/analisis-2/Nomenclatura
 aliases:
   - Coordenadas cartesianas
   - Transformar coordenadas cartesianas a cilíndricas#^cartesianas-cilindricas

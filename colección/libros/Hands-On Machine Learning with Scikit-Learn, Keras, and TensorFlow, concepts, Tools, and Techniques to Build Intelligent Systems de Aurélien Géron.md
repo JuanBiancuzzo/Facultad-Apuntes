@@ -17,9 +17,9 @@ capitulos:
 cover: Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, concepts, Tools, and Techniques to Build Intelligent Systems de Aurélien Géron.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

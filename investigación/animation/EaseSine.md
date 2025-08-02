@@ -4,9 +4,9 @@ etapa: sin-empezar
 referencias:
   - "611"
 tags:
-  - nota/investigacion
   - investigación/animation
   - investigación/game-engine/Animation-Engine
+  - nota/investigacion
 aliases:
   - EaseInSine
   - EaseOutSine

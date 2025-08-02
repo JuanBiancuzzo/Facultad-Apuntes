@@ -1,8 +1,8 @@
 ---
 dia: 2024-07-17
 tags:
-  - investigación/índice
   - investigación/dibujo
+  - investigación/índice
   - nota/investigacion
 estado: Falta resumir
 ---

@@ -1,10 +1,10 @@
 ---
 dia: 2024-04-18
 tags:
-  - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
-  - nota/facultad
   - carrera/ingeniería-electrónica/redes/Capa-de-aplicación
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
+  - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
+  - nota/facultad
 aliases:
   - Inter-Process Communication
   - IPC

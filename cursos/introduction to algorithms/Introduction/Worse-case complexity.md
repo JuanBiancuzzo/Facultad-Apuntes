@@ -6,7 +6,7 @@ referencias:
   - "784"
 tags:
   - curso/introduction-to-algorithms/Introduction
-  - nota/investigacion
+  - nota/curso
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

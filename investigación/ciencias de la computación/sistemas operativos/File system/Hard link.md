@@ -3,9 +3,10 @@ dia: 2024-12-22
 etapa: ampliar
 referencias: 
 tags:
-  - nota/investigacion
-  - investigación/ciencias-de-la-computación/sistemas-operativos/File-system
   - carrera/ingeniería-en-informática/sisop/File-system
+  - investigación/ciencias-de-la-computación/sistemas-operativos/File-system
+  - nota/facultad
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

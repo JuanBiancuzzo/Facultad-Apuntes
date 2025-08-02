@@ -5,8 +5,9 @@ referencias:
   - "701"
 tags:
   - curso/introduction-to-algorithms/Sorting-and-Trees
-  - nota/curso
   - investigación/ciencias-de-la-computación/algoritmos/Sorting-algorithms
+  - nota/curso
+  - nota/investigacion
 aliases:
   - Ordenamiento con árbol binario de búsqueda
   - BST Sort

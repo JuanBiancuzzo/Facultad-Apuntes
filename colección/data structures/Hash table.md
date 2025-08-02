@@ -3,10 +3,12 @@ dia: 2024-09-30
 etapa: sin-empezar
 referencias: 
 tags:
-  - nota/colección
-  - investigación/ciencias-de-la-computación/data-structures
   - colección/data-structures/estructura
   - curso/introduction-to-algorithms/Hashing
+  - investigación/ciencias-de-la-computación/data-structures
+  - nota/colección
+  - nota/curso
+  - nota/investigacion
 aliases:
   - Hash map
   - Tabla de hash

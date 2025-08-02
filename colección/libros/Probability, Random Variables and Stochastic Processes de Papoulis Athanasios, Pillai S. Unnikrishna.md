@@ -2,9 +2,9 @@
 dia: 2025-03-11
 etapa: ampliar
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 tipoCita: Libro
 tituloObra: Probability, Random Variables and Stochastic Processes
 numReferencia: 936

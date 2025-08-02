@@ -1,9 +1,9 @@
 ---
 dia: 2023-01-23
 tags:
+  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - carrera/ingeniería-electrónica/intro/Circuitos-con-capacitores
   - nota/facultad
-  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
 etapa: ampliar
 referencias:
   - "873"

@@ -1,10 +1,10 @@
 ---
 dia: 2023-04-09
 tags:
-  - nota/facultad
-  - carrera/ingeniería-en-informática/estructura/Álgebra-de-Boole
-  - carrera/ingeniería-en-informática/discreta/Álgebra-de-Boole
   - carrera/ingeniería-electrónica/estructura/Álgebra-de-Boole
+  - carrera/ingeniería-en-informática/discreta/Álgebra-de-Boole
+  - carrera/ingeniería-en-informática/estructura/Álgebra-de-Boole
+  - nota/facultad
 aliases:
   - Puerta lógica
 referencias:

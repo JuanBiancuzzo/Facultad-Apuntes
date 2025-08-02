@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "501"
 tags:
-  - nota/investigacion
   - investigación/game-engine/rendering-engine
+  - nota/investigacion
 aliases:
   - Phong illumination
   - Phong lighting

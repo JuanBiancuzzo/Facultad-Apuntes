@@ -6,8 +6,8 @@ referencias:
 aliases:
   - Impostors
 tags:
-  - nota/investigacion
   - investigación/game-engine/técnicas
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

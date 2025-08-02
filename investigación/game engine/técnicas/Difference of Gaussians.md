@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "165"
 tags:
-  - nota/investigacion
   - investigación/game-engine/técnicas
+  - nota/investigacion
 aliases:
   - DoG
 ---

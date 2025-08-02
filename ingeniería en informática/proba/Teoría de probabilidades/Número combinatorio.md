@@ -1,11 +1,11 @@
 ---
 dia: 2024-01-13
 tags:
-  - carrera/ingeniería-en-informática/proba/Teoría-de-probabilidades
-  - nota/facultad
-  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
   - carrera/ingeniería-electrónica/proba/Teoría-de-probabilidades
+  - carrera/ingeniería-en-informática/proba/Teoría-de-probabilidades
   - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
+  - nota/facultad
 referencias:
   - "413"
 etapa: terminado

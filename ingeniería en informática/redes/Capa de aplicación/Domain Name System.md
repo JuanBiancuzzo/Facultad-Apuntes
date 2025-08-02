@@ -3,11 +3,11 @@ dia: 2024-03-19
 aliases:
   - DNS
 tags:
-  - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
-  - nota/facultad
+  - bloque-matematica/Número-naturales
   - carrera/ingeniería-electrónica/redes/Capa-de-aplicación
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
-  - bloque-matematica/Número-naturales
+  - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
+  - nota/facultad
 ---
 # Definición
 ---

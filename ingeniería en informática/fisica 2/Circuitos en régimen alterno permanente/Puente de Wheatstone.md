@@ -4,10 +4,10 @@ etapa: sin-empezar
 referencias:
   - "628"
 tags:
-  - carrera/ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
   - carrera/ingeniería-electrónica/fisica-2/Circuitos-en-régimen-alterno-permanente
-  - nota/facultad
   - carrera/ingeniería-electrónica/intro/Circuitos-con-resistencias
+  - carrera/ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
+  - nota/facultad
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

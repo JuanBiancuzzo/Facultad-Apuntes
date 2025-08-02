@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "508"
 tags:
-  - nota/investigacion
   - investigación/storytelling/worldbuilding/Conlang
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

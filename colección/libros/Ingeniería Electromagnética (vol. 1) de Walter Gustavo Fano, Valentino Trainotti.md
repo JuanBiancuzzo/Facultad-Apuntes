@@ -19,9 +19,9 @@ capitulos:
 cover: Ingeniería Electromagnética (vol. 1) de Walter Gustavo Fano, Valentino Trainotti.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

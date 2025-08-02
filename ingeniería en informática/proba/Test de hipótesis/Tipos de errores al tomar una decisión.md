@@ -1,9 +1,9 @@
 ---
 dia: 2023-01-23
 tags:
+  - carrera/ingeniería-electrónica/proba/Test-de-hipótesis
   - carrera/ingeniería-en-informática/proba/Test-de-hipótesis
   - nota/facultad
-  - carrera/ingeniería-electrónica/proba/Test-de-hipótesis
 ---
 # Error de tipo I
 ![[Error de tipo 1#Definición]]

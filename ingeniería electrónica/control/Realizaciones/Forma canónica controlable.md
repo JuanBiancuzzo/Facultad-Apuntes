@@ -6,8 +6,8 @@ referencias:
   - "884"
   - "899"
 tags:
-  - nota/facultad
   - carrera/ingeniería-electrónica/control/Realizaciones
+  - nota/facultad
 aliases: []
 ---
 ```dataviewjs

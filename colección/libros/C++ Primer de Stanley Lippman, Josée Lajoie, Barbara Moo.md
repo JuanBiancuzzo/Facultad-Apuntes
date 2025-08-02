@@ -21,9 +21,9 @@ capitulos:
 cover: C++ Primer de Stanley Lippman, Josée Lajoie, Barbara Moo.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

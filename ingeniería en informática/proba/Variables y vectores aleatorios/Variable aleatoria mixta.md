@@ -1,10 +1,10 @@
 ---
 dia: 2023-01-23
 tags:
+  - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
+  - carrera/ingeniería-electrónica/proba/Variables-y-vectores-aleatorios
   - carrera/ingeniería-en-informática/proba/Variables-y-vectores-aleatorios
   - nota/facultad
-  - carrera/ingeniería-electrónica/proba/Variables-y-vectores-aleatorios
-  - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
 etapa: ampliar
 aliases:
   - Vector aleatorio mixto#Para vector aleatorio

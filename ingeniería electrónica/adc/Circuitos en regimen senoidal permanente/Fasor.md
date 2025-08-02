@@ -2,11 +2,11 @@
 dia: 2023-09-03
 tags:
   - carrera/ingeniería-electrónica/adc/Circuitos-en-regimen-senoidal-permanente
-  - nota/facultad
-  - carrera/ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
   - carrera/ingeniería-electrónica/electro/Campo-electromagnético
   - carrera/ingeniería-electrónica/fisica-2/Circuitos-en-régimen-alterno-permanente
   - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-senoidal-permanente
+  - carrera/ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
+  - nota/facultad
 referencias:
   - "221"
 ---

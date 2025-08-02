@@ -14,10 +14,11 @@ anio: "1952"
 editores: 
 url: https://pmc.ncbi.nlm.nih.gov/articles/PMC1392413/
 tags:
-  - referencia/paper
   - colección/biblioteca/paper
-  - nota/investigacion
   - investigación/neurociencias
+  - nota/colección
+  - nota/investigacion
+  - referencia/paper
 aliases:
   - Modelo de Hodgkin y Huxley
 referencias:

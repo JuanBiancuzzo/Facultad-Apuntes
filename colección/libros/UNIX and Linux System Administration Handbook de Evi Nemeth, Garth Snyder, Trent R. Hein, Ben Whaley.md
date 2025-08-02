@@ -22,10 +22,11 @@ capitulos:
 cover: UNIX and Linux System Administration Handbook de Evi Nemeth, Garth Snyder, Trent R. Hein, Ben Whaley.jpg
 aliases: 
 tags:
-  - referencia/libro
-  - colección/biblioteca/libro
-  - nota/investigacion
   - carrera/ingeniería-en-informática/tpp/Propuesta
+  - colección/biblioteca/libro
+  - nota/colección
+  - nota/facultad
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

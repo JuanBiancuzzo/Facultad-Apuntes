@@ -5,8 +5,8 @@ referencias:
   - "566"
   - "571"
 tags:
-  - nota/investigacion
   - investigación/mecánica
+  - nota/investigacion
 aliases:
   - mmWaves
 ---

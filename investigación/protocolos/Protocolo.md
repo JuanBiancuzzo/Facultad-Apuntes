@@ -3,8 +3,8 @@ dia: 2024-10-13
 estado: Tenemos principalmente los protocolos de red pero no mucho más allá de eso
 tags:
   - investigación/índice
-  - nota/investigacion
   - investigación/protocolos
+  - nota/investigacion
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

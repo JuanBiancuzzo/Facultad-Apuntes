@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "567"
 tags:
-  - nota/investigacion
   - investigación/ciencias-de-la-computación/algoritmos
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

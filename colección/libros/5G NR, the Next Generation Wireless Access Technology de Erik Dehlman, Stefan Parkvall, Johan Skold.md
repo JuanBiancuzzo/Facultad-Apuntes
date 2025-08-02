@@ -29,9 +29,9 @@ cover: 5G NR, the Next Generation Wireless Access Technology de Erik Dehlman, St
 aliases:
   - "5G NR, the Next Generation Wireless Access Technology de Erik Dehlman, Stefan Parkvall, Johan Skold, Capítulo 19: RF Technologies at mm-Wave Frequencies#Capítulo 19: RF Technologies at mm-Wave Frequencies"
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

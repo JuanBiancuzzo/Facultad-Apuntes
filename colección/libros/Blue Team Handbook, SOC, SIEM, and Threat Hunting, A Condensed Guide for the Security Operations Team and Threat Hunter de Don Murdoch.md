@@ -17,9 +17,9 @@ capitulos:
 cover: Blue Team Handbook, SOC, SIEM, and Threat Hunting, A Condensed Guide for the Security Operations Team and Threat Hunter de Don Murdoch.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

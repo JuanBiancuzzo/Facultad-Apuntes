@@ -1,10 +1,11 @@
 ---
 dia: 2023-01-23
 tags:
-  - colección/distribuciones/distribución
-  - nota/colección
-  - distribuciones/multivariada
   - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
+  - colección/distribuciones/distribución
+  - distribuciones/multivariada
+  - nota/colección
+  - nota/facultad
 nombreDistribucion: Normal multivariada
 tipoDistribucion: multivariada
 aliases:

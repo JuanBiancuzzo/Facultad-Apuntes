@@ -3,9 +3,9 @@ dia: 2023-01-22
 aliases:
   - Gramiano
 tags:
+  - carrera/ingeniería-electrónica/algebra-2/Espacios-euclídeos
   - carrera/ingeniería-en-informática/algebra-2/Espacios-euclídeos
   - nota/facultad
-  - carrera/ingeniería-electrónica/algebra-2/Espacios-euclídeos
 ---
 # Definición
 ---

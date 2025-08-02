@@ -22,9 +22,9 @@ capitulos:
 cover: Metasploit The penetration tester's guide de David Kennedy, Devon Kearns, Jim O'Gorman, Mati Aharoni.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

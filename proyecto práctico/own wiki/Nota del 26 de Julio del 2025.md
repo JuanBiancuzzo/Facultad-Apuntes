@@ -1,8 +1,8 @@
 ---
 dia: 2025-07-26
 tags:
-  - proyecto-práctico/Own-wiki
   - nota/proyecto
+  - proyecto-práctico/Own-wiki
 ---
 # Progreso
 ---

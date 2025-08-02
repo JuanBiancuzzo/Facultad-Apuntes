@@ -2,8 +2,8 @@
 dia: 2024-09-03
 estado: Sin empezar
 tags:
-  - investigación/índice
   - investigación/generación-de-energía
+  - investigación/índice
   - nota/investigacion
 ---
 ```dataviewjs

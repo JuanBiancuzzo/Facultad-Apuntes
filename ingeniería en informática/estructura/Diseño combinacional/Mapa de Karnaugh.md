@@ -1,9 +1,9 @@
 ---
 dia: 2023-04-21
 tags:
+  - carrera/ingeniería-electrónica/estructura/Diseño-combinacional
   - carrera/ingeniería-en-informática/estructura/Diseño-combinacional
   - nota/facultad
-  - carrera/ingeniería-electrónica/estructura/Diseño-combinacional
 ---
 # Definición
 ---

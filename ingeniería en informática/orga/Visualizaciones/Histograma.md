@@ -1,9 +1,9 @@
 ---
 dia: 2023-03-20
 tags:
+  - carrera/ingeniería-electrónica/estoca/Análisis-de-datos
   - carrera/ingeniería-en-informática/orga/Visualizaciones
   - nota/facultad
-  - carrera/ingeniería-electrónica/estoca/Análisis-de-datos
 etapa: ampliar
 ---
 ```dataviewjs

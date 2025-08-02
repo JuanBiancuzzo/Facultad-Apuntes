@@ -7,8 +7,8 @@ aliases:
   - Citar documentos legales
   - Citar leyes
 tags:
-  - nota/investigacion
   - investigación/reglas-APA
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

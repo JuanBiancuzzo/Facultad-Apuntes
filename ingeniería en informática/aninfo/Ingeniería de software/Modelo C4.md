@@ -2,8 +2,8 @@
 dia: 2023-08-27
 tags:
   - carrera/ingeniería-en-informática/aninfo/Ingeniería-de-software
-  - nota/facultad
   - carrera/ingeniería-en-informática/distribuidos/Introducción
+  - nota/facultad
 ---
 # Definición
 ---

@@ -2,10 +2,11 @@
 dia: 2023-03-16
 tags:
   - carrera/ingeniería-en-informática/orga/Pandas
-  - nota/facultad
+  - carrera/ingeniería-en-informática/orga/Spark
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/Lenguaje-Python/Pandas
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/Lenguaje-Python/Spark
-  - carrera/ingeniería-en-informática/orga/Spark
+  - nota/facultad
+  - nota/investigacion
 ---
 # Definición
 ---

@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "61"
 tags:
-  - nota/investigacion
   - investigación/generación-procedural
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

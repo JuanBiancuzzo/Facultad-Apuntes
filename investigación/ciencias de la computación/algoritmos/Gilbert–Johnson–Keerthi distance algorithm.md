@@ -3,8 +3,8 @@ dia: 2024-12-21
 etapa: sin-empezar
 referencias: 
 tags:
-  - nota/investigacion
   - investigación/ciencias-de-la-computación/algoritmos
+  - nota/investigacion
 aliases:
   - GJK distance algorithm
   - GJK algorithm

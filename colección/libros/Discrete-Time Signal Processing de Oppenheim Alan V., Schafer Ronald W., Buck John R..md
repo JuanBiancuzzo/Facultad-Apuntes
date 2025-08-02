@@ -2,9 +2,9 @@
 dia: 2025-03-11
 etapa: sin-empezar
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 tipoCita: Libro
 tituloObra: Discrete-Time Signal Processing
 numReferencia: 992
@@ -108,7 +108,7 @@ aliases:
   - "Discrete-Time Signal Processing de Oppenheim Alan V., Schafer Ronald W., Buck John R., Capítulo 10: Fourier Analysis of Signals Using the Discrete Fourier Transform#Capítulo 10: Fourier Analysis of Signals Using the Discrete Fourier Transform"
   - "Discrete-Time Signal Processing de Oppenheim Alan V., Schafer Ronald W., Buck John R., Capítulo 11: Discrete Hilbert Transforms#Capítulo 11: Discrete Hilbert Transforms"
 edicion: 2
-volumen:
+volumen: 
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

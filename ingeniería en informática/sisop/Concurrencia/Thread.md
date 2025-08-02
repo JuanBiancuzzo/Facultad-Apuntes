@@ -1,14 +1,15 @@
 ---
 dia: 2023-11-09
 tags:
-  - carrera/ingeniería-en-informática/sisop/Concurrencia
-  - nota/facultad
-  - carrera/ingeniería-en-informática/taller/Concurrencia
-  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
-  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
   - carrera/ingeniería-electrónica/taller/Concurrencia
   - carrera/ingeniería-en-informática/concurrentes/Introducción
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
+  - carrera/ingeniería-en-informática/sisop/Concurrencia
+  - carrera/ingeniería-en-informática/taller/Concurrencia
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Multithreading
   - Multihilos

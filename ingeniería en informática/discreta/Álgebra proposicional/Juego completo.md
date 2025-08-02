@@ -1,8 +1,8 @@
 ---
 dia: 2024-08-07
-tags: 
- - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
- - nota/facultad
+tags:
+  - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
+  - nota/facultad
 ---
 # Definición
 ---

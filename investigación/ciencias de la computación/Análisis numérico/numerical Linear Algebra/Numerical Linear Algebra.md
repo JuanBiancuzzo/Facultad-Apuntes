@@ -2,10 +2,10 @@
 dia: 2024-10-31
 estado: Sin empezar
 tags:
-  - investigación/índice
-  - nota/investigacion
   - investigación/ciencias-de-la-computación/Análisis-numérico/Numerical-Linear-Algebra
+  - investigación/índice
   - investigación/matemática/Análisis-numérico/Numerical-Linear-Algebra
+  - nota/investigacion
 aliases:
   - NLA
   - Applied Linear Algebra

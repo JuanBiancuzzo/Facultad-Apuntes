@@ -4,8 +4,8 @@ etapa: ampliar
 referencias:
   - "873"
 tags:
-  - nota/facultad
   - carrera/ingeniería-electrónica/control/Estabilidad-en-espacio-de-estados
+  - nota/facultad
 aliases:
   - Routh-Hurwitz's Stability Criterion
 ---

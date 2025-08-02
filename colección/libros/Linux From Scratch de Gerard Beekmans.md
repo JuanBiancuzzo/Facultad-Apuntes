@@ -16,10 +16,11 @@ capitulos:
 cover: Linux From Scratch de Gerard Beekmans.jpg
 aliases: 
 tags:
-  - referencia/libro
-  - colección/biblioteca/libro
-  - nota/investigacion
   - carrera/ingeniería-en-informática/tpp/Propuesta
+  - colección/biblioteca/libro
+  - nota/colección
+  - nota/facultad
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

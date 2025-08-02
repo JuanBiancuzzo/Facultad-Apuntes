@@ -6,8 +6,9 @@ referencias:
   - "477"
 tags:
   - carrera/ingeniería-electrónica/embebidos/Conversión-analógica-a-digital-y-digital-a-analógica
-  - nota/facultad
   - investigación/protocolos
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - I2C
   - I<sup>2</sup>C

@@ -1,11 +1,11 @@
 ---
 dia: 2024-09-01
 tags:
-  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
-  - nota/facultad
-  - carrera/ingeniería-en-informática/fisica-1/Trabajo-y-energía
   - carrera/ingeniería-electrónica/fisica-1/Trabajo-y-energía
   - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
+  - carrera/ingeniería-en-informática/fisica-1/Trabajo-y-energía
+  - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
+  - nota/facultad
 ---
 # Definición
 ---

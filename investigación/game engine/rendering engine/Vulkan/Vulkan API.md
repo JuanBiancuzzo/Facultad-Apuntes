@@ -1,8 +1,8 @@
 ---
 dia: 2024-07-08
 tags:
-  - investigación/índice
   - investigación/game-engine/rendering-engine/Vulkan
+  - investigación/índice
   - nota/investigacion
 estado: Falta resumir
 aliases:

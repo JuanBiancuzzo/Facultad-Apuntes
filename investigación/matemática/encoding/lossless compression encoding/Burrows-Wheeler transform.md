@@ -5,8 +5,8 @@ referencias:
   - "406"
   - "407"
 tags:
-  - nota/investigacion
   - investigación/matemática/encoding/lossless-compression-encoding
+  - nota/investigacion
 aliases:
   - BWT
   - Block-sorting compression

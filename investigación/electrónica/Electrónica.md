@@ -1,9 +1,9 @@
 ---
 dia: 2024-12-23
 tags:
+  - investigación/electrónica
   - investigación/índice
   - nota/investigacion
-  - investigación/electrónica
 estado: Sin empezar
 ---
 ```dataviewjs

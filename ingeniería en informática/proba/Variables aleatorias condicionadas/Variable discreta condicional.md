@@ -1,10 +1,10 @@
 ---
 dia: 2023-01-23
 tags:
+  - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
+  - carrera/ingeniería-electrónica/proba/Variables-aleatorias-condicionadas
   - carrera/ingeniería-en-informática/proba/Variables-aleatorias-condicionadas
   - nota/facultad
-  - carrera/ingeniería-electrónica/proba/Variables-aleatorias-condicionadas
-  - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
 aliases:
   - PMF condicional
   - Función de masa de probabilidad condicional

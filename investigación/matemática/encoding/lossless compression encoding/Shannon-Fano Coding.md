@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "196"
 tags:
-  - nota/investigacion
   - investigación/matemática/encoding/lossless-compression-encoding
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

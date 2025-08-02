@@ -1,11 +1,12 @@
 ---
 dia: 2024-07-09
 tags:
-  - investigación/índice
-  - nota/investigacion
-  - investigación/ciencias-de-la-computación/data-structures
   - colección/data-structures
   - colección/representante
+  - investigación/ciencias-de-la-computación/data-structures
+  - investigación/índice
+  - nota/colección
+  - nota/investigacion
 estado: Vamos a describir y representar las estructuras de datos
 aliases:
   - Data structures

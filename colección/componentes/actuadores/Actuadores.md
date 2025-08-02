@@ -2,9 +2,10 @@
 dia: 2025-03-10
 tags:
   - colección/componentes/actuador
-  - investigación/índice
-  - nota/investigacion
   - investigación/electrónica/componentes/actuadores
+  - investigación/índice
+  - nota/colección
+  - nota/investigacion
 aliases:
   - Actuador
   - Actuator

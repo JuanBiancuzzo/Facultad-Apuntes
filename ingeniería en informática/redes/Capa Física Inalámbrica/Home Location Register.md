@@ -1,9 +1,9 @@
 ---
 dia: 2024-08-31
 tags:
+  - carrera/ingeniería-electrónica/redes/Capa-Física-Inalámbrica
   - carrera/ingeniería-en-informática/redes/Capa-Física-Inalámbrica
   - nota/facultad
-  - carrera/ingeniería-electrónica/redes/Capa-Física-Inalámbrica
 aliases:
   - HLR
 ---

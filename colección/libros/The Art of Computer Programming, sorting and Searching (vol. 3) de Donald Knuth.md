@@ -17,9 +17,9 @@ capitulos:
 cover: The Art of Computer Programing, sorting and Searching (vol. 3) de Donald Knuth.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

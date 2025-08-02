@@ -2,10 +2,10 @@
 dia: 2023-09-03
 tags:
   - carrera/ingeniería-electrónica/adc/Circuitos-en-regimen-transitorio
-  - nota/facultad
-  - carrera/ingeniería-en-informática/fisica-2/Inducción-electromagnética
   - carrera/ingeniería-electrónica/fisica-2/Inducción-electromagnética
   - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-transitorio
+  - carrera/ingeniería-en-informática/fisica-2/Inducción-electromagnética
+  - nota/facultad
 aliases:
   - Bobina
   - Energía de un inductor#Energía almacenada

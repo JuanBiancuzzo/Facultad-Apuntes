@@ -2,10 +2,10 @@
 dia: 2024-08-03
 tags:
   - carrera/ingeniería-en-informática/discreta/Álgebra-de-conjuntos
-  - nota/facultad
   - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
-  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
   - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
+  - nota/facultad
 aliases:
   - Recíproca#Usando proposiciones
   - Contrarrecíproca#Usando proposiciones

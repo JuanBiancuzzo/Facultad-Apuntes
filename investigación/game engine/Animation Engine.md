@@ -5,6 +5,7 @@ tag:
   - investigación/game-engine/Animation-Engine
   - nota/investigacion
 equivalente: "[[investigación/animation/Animación.md|Animación]]"
+tags: []
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

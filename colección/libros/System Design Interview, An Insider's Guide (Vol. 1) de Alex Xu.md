@@ -16,9 +16,9 @@ capitulos:
 cover: System Design Interview, An Insider's Guide (Vol. 1) de Alex Xu.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

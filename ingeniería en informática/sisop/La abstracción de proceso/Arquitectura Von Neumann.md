@@ -1,11 +1,11 @@
 ---
 dia: 2023-11-15
 tags:
+  - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
+  - carrera/ingeniería-electrónica/estructura/Microarquitectura
+  - carrera/ingeniería-en-informática/estructura/Microarquitectura
   - carrera/ingeniería-en-informática/sisop/La-abstracción-de-proceso
   - nota/facultad
-  - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
-  - carrera/ingeniería-en-informática/estructura/Microarquitectura
-  - carrera/ingeniería-electrónica/estructura/Microarquitectura
 ---
 # Definición
 ---

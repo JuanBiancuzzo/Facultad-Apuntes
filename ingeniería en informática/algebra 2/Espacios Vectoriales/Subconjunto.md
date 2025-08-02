@@ -1,11 +1,11 @@
 ---
 dia: 2024-01-13
 tags:
-  - carrera/ingeniería-en-informática/algebra-2/Espacios-Vectoriales
-  - nota/facultad
-  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
   - carrera/ingeniería-electrónica/algebra-2/Espacios-Vectoriales
+  - carrera/ingeniería-en-informática/algebra-2/Espacios-Vectoriales
   - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
+  - nota/facultad
 referencias:
   - "411"
 etapa: ampliar

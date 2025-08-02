@@ -5,8 +5,9 @@ aliases:
   - Transformada Rápida de Fourier
 tags:
   - carrera/ingeniería-electrónica/señales/Transformada-discreta-de-Fourier
-  - nota/facultad
   - investigación/ciencias-de-la-computación/algoritmos
+  - nota/facultad
+  - nota/investigacion
 ---
 # Definición
 ---

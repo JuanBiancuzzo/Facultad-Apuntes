@@ -1,10 +1,10 @@
 ---
 dia: 2023-01-23
 tags:
-  - carrera/ingeniería-electrónica/intro/Circuitos-con-resistencias
-  - nota/facultad
-  - carrera/ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
   - carrera/ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - carrera/ingeniería-electrónica/intro/Circuitos-con-resistencias
+  - carrera/ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
+  - nota/facultad
 aliases:
   - Resistencias en serie#En serie
   - Resistencias en paralelo#En paralelo

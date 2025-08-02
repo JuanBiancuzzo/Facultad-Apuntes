@@ -2,8 +2,9 @@
 dia: 2023-11-12
 tags:
   - carrera/ingeniería-en-informática/sisop/Virtualización-de-memoria
-  - nota/facultad
   - investigación/ciencias-de-la-computación/sistemas-operativos
+  - nota/facultad
+  - nota/investigacion
 referencias:
   - "787"
 etapa: ampliar

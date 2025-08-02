@@ -1,8 +1,8 @@
 ---
 dia: 2024-07-12
 tags:
-  - investigación/índice
   - investigación/game-creation/NPC-AI
+  - investigación/índice
   - nota/investigacion
 estado: Falta resumir
 aliases:

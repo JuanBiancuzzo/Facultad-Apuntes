@@ -1,9 +1,9 @@
 ---
 dia: 2023-01-22
 tags:
-  - nota/facultad
-  - carrera/ingeniería-en-informática/analisis-2/Nomenclatura
   - carrera/ingeniería-electrónica/analisis-2/Nomenclatura
+  - carrera/ingeniería-en-informática/analisis-2/Nomenclatura
+  - nota/facultad
 aliases:
   - Producto escalar
 ---

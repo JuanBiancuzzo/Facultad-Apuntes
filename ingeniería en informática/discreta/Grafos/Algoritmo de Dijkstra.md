@@ -1,11 +1,12 @@
 ---
 dia: 2024-08-16
 tags:
-  - carrera/ingeniería-en-informática/discreta/Grafos
-  - nota/facultad
-  - carrera/ingeniería-en-informática/redes/Capa-de-Red
   - carrera/ingeniería-electrónica/redes/Capa-de-Red
+  - carrera/ingeniería-en-informática/discreta/Grafos
+  - carrera/ingeniería-en-informática/redes/Capa-de-Red
   - investigación/ciencias-de-la-computación/algoritmos
+  - nota/facultad
+  - nota/investigacion
 ---
 # Definición
 ---

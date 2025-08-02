@@ -2,8 +2,8 @@
 dia: 2024-09-10
 tags:
   - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
-  - nota/facultad
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
+  - nota/facultad
 aliases:
   - State Machine
   - Finite State Machine

@@ -4,9 +4,10 @@ etapa: sin-empezar
 referencias:
   - "689"
 tags:
+  - colección/data-structures/estructura
   - investigación/ciencias-de-la-computación/data-structures
   - nota/colección
-  - colección/data-structures/estructura
+  - nota/investigacion
 nombreEstructura: Fibonacci Heap
 ---
 ```dataviewjs

@@ -5,7 +5,7 @@ referencias:
   - "645"
 tags:
   - curso/ciencia-de-datos-para-salud-mental-y-psicología/Psicometría
-  - nota/investigacion
+  - nota/curso
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

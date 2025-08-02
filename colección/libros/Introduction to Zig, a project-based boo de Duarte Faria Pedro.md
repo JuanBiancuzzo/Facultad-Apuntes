@@ -2,9 +2,9 @@
 dia: 2025-02-26
 etapa: sin-empezar
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 tipoCita: Libro
 tituloObra: Introduction to Zig
 undefined: a project-based boo
@@ -154,7 +154,7 @@ aliases:
   - "Introduction to Zig, a project-based boo de Duarte Faria Pedro, Capítulo 15: Project 4 - Developing an image filter#Capítulo 15: Project 4 - Developing an image filter"
   - "Introduction to Zig, a project-based boo de Duarte Faria Pedro, Capítulo 16: Introducing threads and parallelism in Zig#Capítulo 16: Introducing threads and parallelism in Zig"
   - "Introduction to Zig, a project-based boo de Duarte Faria Pedro, Capítulo 17: Introducing Vectors and SIMD#Capítulo 17: Introducing Vectors and SIMD"
-volumen:
+volumen: 
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

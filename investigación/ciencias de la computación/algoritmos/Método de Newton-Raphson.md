@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "481"
 tags:
-  - nota/investigacion
   - investigación/ciencias-de-la-computación/algoritmos
+  - nota/investigacion
 aliases:
   - Método de Newton
   - Newton method

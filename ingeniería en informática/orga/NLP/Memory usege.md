@@ -2,10 +2,11 @@
 dia: 2023-03-27
 tags:
   - carrera/ingeniería-en-informática/orga/NLP/1
-  - nota/facultad
-  - investigación/machine-Learning/Natural-Language-Processing
   - investigación/ciencias-de-la-computación/Machine-learning/Natural-Language-Processing
+  - investigación/machine-Learning/Natural-Language-Processing
   - investigación/matemática/Estadística/Machine-learning/Natural-Language-Processing
+  - nota/facultad
+  - nota/investigacion
 ---
 # Definición
 ---

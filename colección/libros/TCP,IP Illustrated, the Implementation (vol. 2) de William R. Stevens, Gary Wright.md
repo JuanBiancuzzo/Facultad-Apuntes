@@ -20,9 +20,9 @@ cover: TCP,IP Illustrated, the Implementation (vol. 2) de William R. Stevens, Ga
 aliases:
   - TCP/IP Illustrated, the Implementation (vol. 2) de William R. Stevens, Gary Wright
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

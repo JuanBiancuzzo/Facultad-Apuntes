@@ -2,9 +2,9 @@
 dia: 2024-10-20
 estado: Sin empezar
 tags:
+  - investigación/arquitectura-de-procesadores/arquitectura-ARM
   - investigación/índice
   - nota/investigacion
-  - investigación/arquitectura-de-procesadores/arquitectura-ARM
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

@@ -1,11 +1,11 @@
 ---
 dia: 2023-01-22
 tags:
-  - carrera/ingeniería-en-informática/algebra-2/Espacios-euclídeos
-  - nota/facultad
-  - carrera/ingeniería-en-informática/analisis-2/Nomenclatura
-  - carrera/ingeniería-electrónica/analisis-2/Nomenclatura
   - carrera/ingeniería-electrónica/algebra-2/Espacios-euclídeos
+  - carrera/ingeniería-electrónica/analisis-2/Nomenclatura
+  - carrera/ingeniería-en-informática/algebra-2/Espacios-euclídeos
+  - carrera/ingeniería-en-informática/analisis-2/Nomenclatura
+  - nota/facultad
 aliases:
   - Módulo
   - Valor absoluto

@@ -1,8 +1,8 @@
 ---
 dia: 2024-10-15
-tags: 
- - carrera/ingeniería-en-informática/tpp
- - nota/proyecto 
+tags:
+  - carrera/ingeniería-en-informática/tpp
+  - nota/facultad
 ---
 # Progreso
 ---

@@ -2,11 +2,11 @@
 dia: 2024-11-26
 estado: Sin empezar
 tags:
+  - investigación/ciencias-de-la-computación/Machine-learning/Ensemble
   - investigación/índice
   - investigación/machine-Learning/Ensemble
-  - nota/investigacion
-  - investigación/ciencias-de-la-computación/Machine-learning/Ensemble
   - investigación/matemática/Estadística/Machine-learning/Ensemble
+  - nota/investigacion
 referencias:
   - "636"
 aliases:

@@ -4,8 +4,8 @@ aliases:
   - Polo aislado
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Series-de-Laurent
-  - nota/facultad
   - carrera/ingeniería-en-informática/analisis-3/Series-de-Laurent
+  - nota/facultad
 ---
 # Definición
 ---

@@ -2,10 +2,11 @@
 etapa: sin-empezar
 dia: 2025-04-08
 tags:
-  - nota/colección
+  - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
   - colección/distribuciones/distribución
   - distribuciones/multivariada
-  - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
+  - nota/colección
+  - nota/facultad
 nombreDistribucion: Uniforme multidimensional
 tipoDistribucion: multivariada
 ---

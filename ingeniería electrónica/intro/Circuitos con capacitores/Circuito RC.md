@@ -2,8 +2,8 @@
 dia: 2023-01-23
 tags:
   - carrera/ingeniería-electrónica/intro/Circuitos-con-capacitores
-  - nota/facultad
   - carrera/ingeniería-electrónica/intro/Respuesta-en-frecuencia
+  - nota/facultad
 aliases:
   - Filtro RC#Respuesta en frecuencia
 ---

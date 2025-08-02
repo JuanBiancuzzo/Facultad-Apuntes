@@ -1,11 +1,12 @@
 ---
 dia: 2024-03-21
 tags:
-  - carrera/ingeniería-en-informática/discreta/Álgebra-de-Boole
-  - nota/facultad
-  - carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación
-  - investigación/ciencias-de-la-computación/lenguajes-de-programación
   - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
+  - carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación
+  - carrera/ingeniería-en-informática/discreta/Álgebra-de-Boole
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Operador lógico
 ---

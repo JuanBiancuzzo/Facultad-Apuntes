@@ -3,6 +3,7 @@ dia: 2024-04-03
 tags:
   - colección/componentes/microprocesador
   - investigación/índice
+  - nota/colección
   - nota/investigacion
 aliases:
   - Procesador

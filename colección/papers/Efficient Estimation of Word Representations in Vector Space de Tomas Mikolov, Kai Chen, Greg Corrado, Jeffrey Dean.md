@@ -18,12 +18,13 @@ anio: "2013"
 editores: 
 url: 
 tags:
-  - referencia/paper
   - colección/biblioteca/paper
-  - nota/investigacion
-  - investigación/machine-Learning/sequence-modeling
   - investigación/ciencias-de-la-computación/Machine-learning/sequence-modeling
+  - investigación/machine-Learning/sequence-modeling
   - investigación/matemática/Estadística/Machine-learning/sequence-modeling
+  - nota/colección
+  - nota/investigacion
+  - referencia/paper
 aliases:
   - Word2Vec
 ---

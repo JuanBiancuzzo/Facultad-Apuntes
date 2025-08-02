@@ -1,12 +1,12 @@
 ---
 dia: 2023-03-29
 tags:
-  - carrera/ingeniería-en-informática/sisop/Concurrencia
-  - nota/facultad
-  - carrera/ingeniería-en-informática/taller/Concurrencia
   - carrera/ingeniería-electrónica/taller/Concurrencia
   - carrera/ingeniería-en-informática/concurrentes/Introducción
   - carrera/ingeniería-en-informática/distribuidos/Introducción
+  - carrera/ingeniería-en-informática/sisop/Concurrencia
+  - carrera/ingeniería-en-informática/taller/Concurrencia
+  - nota/facultad
 referencias:
   - "787"
 etapa: empezado

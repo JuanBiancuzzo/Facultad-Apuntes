@@ -1,10 +1,10 @@
 ---
 dia: 2024-04-03
 tags:
+  - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
+  - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - nota/facultad
-  - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
-  - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
 ---
 # Definición
 ---

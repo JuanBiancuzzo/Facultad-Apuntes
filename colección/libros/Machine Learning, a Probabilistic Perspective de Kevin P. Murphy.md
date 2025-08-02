@@ -17,9 +17,9 @@ capitulos:
 cover: Machine Learning, a Probabilistic Perspective de Kevin P. Murphy.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

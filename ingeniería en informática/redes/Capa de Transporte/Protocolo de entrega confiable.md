@@ -7,12 +7,13 @@ aliases:
   - Acknowledgement
   - ACK
 tags:
-  - carrera/ingeniería-en-informática/redes/Capa-de-Transporte
-  - nota/facultad
-  - investigación/protocolos/protocolo-de-internet
   - carrera/ingeniería-electrónica/redes/Capa-de-Transporte
-  - investigación/networking/Protocolos
+  - carrera/ingeniería-en-informática/redes/Capa-de-Transporte
   - investigación/ciencias-de-la-computación/Networking/Protocolos
+  - investigación/networking/Protocolos
+  - investigación/protocolos/protocolo-de-internet
+  - nota/facultad
+  - nota/investigacion
 ---
 # Definición
 ---

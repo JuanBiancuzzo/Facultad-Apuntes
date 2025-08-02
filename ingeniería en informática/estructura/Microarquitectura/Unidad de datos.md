@@ -1,9 +1,9 @@
 ---
 dia: 2024-08-29
 tags:
+  - carrera/ingeniería-electrónica/estructura/Microarquitectura
   - carrera/ingeniería-en-informática/estructura/Microarquitectura
   - nota/facultad
-  - carrera/ingeniería-electrónica/estructura/Microarquitectura
 aliases:
   - Unidad de datos de la arquitectura ARC#En la arquitectura ARC
 ---

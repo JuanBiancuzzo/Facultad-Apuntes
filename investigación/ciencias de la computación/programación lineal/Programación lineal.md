@@ -2,9 +2,9 @@
 dia: 2024-10-30
 estado: Sin empezar
 tags:
+  - investigación/ciencias-de-la-computación/programación-lineal
   - investigación/índice
   - nota/investigacion
-  - investigación/ciencias-de-la-computación/programación-lineal
 aliases:
   - Linear programming
   - LP

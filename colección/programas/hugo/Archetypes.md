@@ -4,8 +4,8 @@ etapa: ampliar
 referencias:
   - "173"
 tags:
-  - nota/investigacion
   - investigación/herramientas/hugo
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

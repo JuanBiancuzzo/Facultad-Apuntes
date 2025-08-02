@@ -1,11 +1,11 @@
 ---
 dia: 2024-07-13
 tags:
+  - investigación/ciencias-de-la-computación/Machine-learning/model-based-reinforcement-learning
   - investigación/índice
   - investigación/machine-Learning/model-based-reinforcement-learning
-  - investigación/ciencias-de-la-computación/Machine-learning/model-based-reinforcement-learning
-  - nota/investigacion
   - investigación/matemática/Estadística/Machine-learning/model-based-reinforcement-learning
+  - nota/investigacion
 estado: Falta resumir
 ---
 ```dataviewjs

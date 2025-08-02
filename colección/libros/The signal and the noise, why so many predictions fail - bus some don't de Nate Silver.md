@@ -17,9 +17,9 @@ capitulos:
 cover: The signal and the noise, why so many predictions fail - bus some don't de Nate Silver.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

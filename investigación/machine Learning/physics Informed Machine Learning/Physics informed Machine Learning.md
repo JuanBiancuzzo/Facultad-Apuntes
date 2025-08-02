@@ -1,11 +1,11 @@
 ---
 dia: 2024-07-13
 tags:
+  - investigación/ciencias-de-la-computación/Machine-learning/physics-Informed-Machine-Learning
   - investigación/índice
   - investigación/machine-Learning/physics-Informed-Machine-Learning
-  - investigación/ciencias-de-la-computación/Machine-learning/physics-Informed-Machine-Learning
-  - nota/investigacion
   - investigación/matemática/Estadística/Machine-learning/physics-Informed-Machine-Learning
+  - nota/investigacion
 estado: Falta resumir
 ---
 ```dataviewjs

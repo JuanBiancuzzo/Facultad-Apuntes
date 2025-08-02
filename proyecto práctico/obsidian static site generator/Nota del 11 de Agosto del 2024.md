@@ -1,8 +1,8 @@
 ---
 dia: 2024-08-11
-tags: 
- - proyecto-práctico/obsidian-static-site-generator
- - nota/proyecto 
+tags:
+  - nota/proyecto
+  - proyecto-práctico/obsidian-static-site-generator
 ---
 # Progreso
 ---

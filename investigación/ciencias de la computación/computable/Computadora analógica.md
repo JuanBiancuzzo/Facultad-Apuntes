@@ -4,8 +4,8 @@ etapa: empezado
 referencias:
   - "544"
 tags:
-  - nota/investigacion
   - investigación/computable
+  - nota/investigacion
 aliases:
   - Computadora analógica
   - Computador analógico

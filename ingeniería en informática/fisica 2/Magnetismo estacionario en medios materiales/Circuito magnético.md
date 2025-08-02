@@ -1,9 +1,9 @@
 ---
 dia: 2024-09-03
 tags:
-  - nota/facultad
-  - carrera/ingeniería-en-informática/fisica-2/Magnetismo-estacionario-en-medios-materiales
   - carrera/ingeniería-electrónica/fisica-2/Magnetismo-estacionario-en-medios-materiales
+  - carrera/ingeniería-en-informática/fisica-2/Magnetismo-estacionario-en-medios-materiales
+  - nota/facultad
 referencias:
   - "216"
 etapa: sin-empezar

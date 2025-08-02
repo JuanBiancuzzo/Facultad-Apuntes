@@ -1,10 +1,10 @@
 ---
 dia: 2024-08-28
 tags:
-  - carrera/ingeniería-en-informática/estructura/Sistema-ARC
-  - nota/facultad
   - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
   - carrera/ingeniería-electrónica/estructura/Sistema-ARC
+  - carrera/ingeniería-en-informática/estructura/Sistema-ARC
+  - nota/facultad
 aliases:
   - Sintaxis de ensamblador en ARC#Sintaxis
   - Subrutinas de ensamblador en ARC#Subrutinas

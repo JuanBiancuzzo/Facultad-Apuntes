@@ -2,9 +2,9 @@
 dia: 2024-11-11
 estado: Sin empezar
 tags:
+  - investigación/herramientas/KiCad
   - investigación/índice
   - nota/investigacion
-  - investigación/herramientas/KiCad
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

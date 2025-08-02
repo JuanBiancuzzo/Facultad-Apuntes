@@ -25,9 +25,9 @@ capitulos:
 cover: An Introduction to Statistical Learning, with Applications in Python de Gareth James, Daniela Witten, Trevor Hastie, Robert Ribshirani, Jonathan Taylor.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

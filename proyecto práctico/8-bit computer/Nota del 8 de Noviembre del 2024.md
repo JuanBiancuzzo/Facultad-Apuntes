@@ -1,8 +1,8 @@
 ---
 dia: 2024-11-08
 tags:
-  - proyecto-práctico/8-bit-computer
   - nota/proyecto
+  - proyecto-práctico/8-bit-computer
 ---
 # Progreso
 ---

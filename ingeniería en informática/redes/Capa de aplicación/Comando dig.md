@@ -1,10 +1,11 @@
 ---
 dia: 2024-03-28
 tags:
-  - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
-  - nota/facultad
   - carrera/ingeniería-electrónica/redes/Capa-de-aplicación
+  - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
   - investigación/herramientas/Comandos-de-linux
+  - nota/facultad
+  - nota/investigacion
 ---
 # Definición
 ---

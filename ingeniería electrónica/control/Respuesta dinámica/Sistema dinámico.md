@@ -9,8 +9,9 @@ referencias:
   - "884"
 tags:
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
-  - nota/facultad
   - investigación/matemática/koopman-operator-theory
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Espacio de estados
   - Sistema en espacio de estados

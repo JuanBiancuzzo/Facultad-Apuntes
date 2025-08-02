@@ -3,11 +3,12 @@ dia: 2025-02-10
 etapa: ampliar
 referencias: 
 tags:
-  - carrera/ingeniería-en-informática/algo-1/Punteros
   - carrera/ingeniería-electrónica/algo-1/Punteros
+  - carrera/ingeniería-en-informática/algo-1/Punteros
+  - investigación/ciencias-de-la-computación/algoritmos/Sorting-algorithms
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - nota/facultad
-  - investigación/ciencias-de-la-computación/algoritmos/Sorting-algorithms
+  - nota/investigacion
 aliases:
   - Ordenamiento de burbuja
 ---

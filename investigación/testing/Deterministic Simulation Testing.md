@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "499"
 tags:
-  - nota/investigacion
   - investigación/testing
+  - nota/investigacion
 aliases:
   - DST
 ---

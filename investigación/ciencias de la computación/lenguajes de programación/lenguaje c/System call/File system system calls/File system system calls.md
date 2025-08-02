@@ -1,10 +1,10 @@
 ---
 dia: 2024-12-22
 tags:
-  - investigación/índice
-  - nota/investigacion
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c/System-call/File-system-system-calls
   - investigación/ciencias-de-la-computación/sistemas-operativos/File-system/System-call
+  - investigación/índice
+  - nota/investigacion
 estado: Sin empezar
 ---
 ```dataviewjs

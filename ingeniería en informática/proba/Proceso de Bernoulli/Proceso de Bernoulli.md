@@ -1,10 +1,10 @@
 ---
 dia: 2023-01-23
 tags:
+  - carrera/ingeniería-electrónica/estoca/Introducción-a-procesos-aleatorios
+  - carrera/ingeniería-electrónica/proba/Proceso-de-Bernoulli
   - carrera/ingeniería-en-informática/proba/Proceso-de-Bernoulli
   - nota/facultad
-  - carrera/ingeniería-electrónica/proba/Proceso-de-Bernoulli
-  - carrera/ingeniería-electrónica/estoca/Introducción-a-procesos-aleatorios
 etapa: ampliar
 referencias: []
 aliases: []

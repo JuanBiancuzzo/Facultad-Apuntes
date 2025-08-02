@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "545"
 tags:
-  - nota/investigacion
   - investigación/computable
+  - nota/investigacion
 aliases:
   - Informática cuántica
 ---

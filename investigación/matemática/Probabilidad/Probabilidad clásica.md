@@ -4,10 +4,10 @@ etapa: ampliar
 referencias:
   - "940"
 tags:
-  - investigación/matemática/Probabilidad
-  - nota/investigacion
   - "#carrera/ingeniería-electrónica/proba/Teoría-de-probabilidades"
   - "#carrera/ingeniería-en-informática/proba/Teoría-de-probabilidades"
+  - investigación/matemática/Probabilidad
+  - nota/investigacion
 aliases:
   - Probabilidad de Laplace
 ---

@@ -1,9 +1,9 @@
 ---
 dia: 2023-01-23
 tags:
+  - carrera/ingeniería-electrónica/proba/Función-de-variable-aleatoria
   - carrera/ingeniería-en-informática/proba/Función-de-variable-aleatoria
   - nota/facultad
-  - carrera/ingeniería-electrónica/proba/Función-de-variable-aleatoria
 ---
 # [[Distribución de Poisson]]
 ---

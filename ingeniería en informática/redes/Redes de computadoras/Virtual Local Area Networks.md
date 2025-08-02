@@ -1,9 +1,9 @@
 ---
 dia: 2024-08-26
 tags:
+  - carrera/ingeniería-electrónica/redes/Redes-de-computadoras
   - carrera/ingeniería-en-informática/redes/Redes-de-computadoras
   - nota/facultad
-  - carrera/ingeniería-electrónica/redes/Redes-de-computadoras
 aliases:
   - VLAN
 ---

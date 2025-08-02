@@ -3,8 +3,8 @@ dia: 2025-03-21
 etapa: ampliar
 referencias: []
 tags:
-  - carrera/ingeniería-en-informática/algebra-2/Matrices-unitarias-y-ortogonales
   - carrera/ingeniería-electrónica/algebra-2/Matrices-unitarias-y-ortogonales
+  - carrera/ingeniería-en-informática/algebra-2/Matrices-unitarias-y-ortogonales
   - nota/facultad
 ---
 ```dataviewjs

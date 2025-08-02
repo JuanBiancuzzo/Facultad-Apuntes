@@ -3,9 +3,9 @@ dia: 2024-06-03
 aliases:
   - Control de congestión de TCP
 tags:
+  - carrera/ingeniería-electrónica/redes/Capa-de-Transporte
   - carrera/ingeniería-en-informática/redes/Capa-de-Transporte
   - nota/facultad
-  - carrera/ingeniería-electrónica/redes/Capa-de-Transporte
 ---
 # Definición
 ---

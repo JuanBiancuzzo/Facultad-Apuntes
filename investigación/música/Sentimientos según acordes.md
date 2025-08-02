@@ -5,8 +5,8 @@ referencias:
   - "56"
   - "57"
 tags:
-  - nota/investigacion
   - investigación/música
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

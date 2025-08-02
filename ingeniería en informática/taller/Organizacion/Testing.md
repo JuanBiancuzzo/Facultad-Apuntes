@@ -1,10 +1,11 @@
 ---
 dia: 2023-03-20
 tags:
-  - carrera/ingeniería-en-informática/taller/Organizacion
-  - nota/facultad
-  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
   - carrera/ingeniería-electrónica/taller/Organizacion
+  - carrera/ingeniería-en-informática/taller/Organizacion
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
+  - nota/facultad
+  - nota/investigacion
 ---
 # Definición
 ---

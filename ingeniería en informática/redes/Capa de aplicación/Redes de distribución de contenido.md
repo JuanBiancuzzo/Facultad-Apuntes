@@ -4,9 +4,9 @@ aliases:
   - CDN
   - Content provider networks
 tags:
+  - carrera/ingeniería-electrónica/redes/Capa-de-aplicación
   - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
   - nota/facultad
-  - carrera/ingeniería-electrónica/redes/Capa-de-aplicación
 ---
 # Definición
 ---

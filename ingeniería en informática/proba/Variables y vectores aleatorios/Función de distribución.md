@@ -1,12 +1,12 @@
 ---
 dia: 2023-01-23
 tags:
-  - carrera/ingeniería-en-informática/proba/Variables-y-vectores-aleatorios
-  - nota/facultad
-  - carrera/ingeniería-electrónica/proba/Variables-y-vectores-aleatorios
   - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
   - carrera/ingeniería-electrónica/estoca/Introducción-a-procesos-aleatorios
   - carrera/ingeniería-electrónica/estoca/Repaso
+  - carrera/ingeniería-electrónica/proba/Variables-y-vectores-aleatorios
+  - carrera/ingeniería-en-informática/proba/Variables-y-vectores-aleatorios
+  - nota/facultad
 aliases:
   - Función de distribución para vector aleatorio#Para vector aleatoria
   - Función de distribución acumulada#Para vector aleatoria

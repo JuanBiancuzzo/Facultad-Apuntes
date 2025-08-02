@@ -1,9 +1,9 @@
 ---
 dia: 2023-08-27
 tags:
+  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - carrera/ingeniería-en-informática/aninfo/Ingeniería-de-software
   - nota/facultad
-  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
 referencias:
   - "871"
 etapa: ampliar

@@ -2,9 +2,10 @@
 dia: 2023-10-16
 tags:
   - carrera/ingeniería-en-informática/aninfo/Diseño-de-software
-  - nota/facultad
-  - investigación/networking
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
+  - investigación/networking
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - API REST
   - REST

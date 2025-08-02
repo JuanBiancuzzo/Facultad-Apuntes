@@ -21,9 +21,9 @@ capitulos:
 cover: Practical Statistics for Data Scientists, 50+ Essential Concepts Using R and Python de Peter Bruce, Andrew Bruce, Peter Gedeck.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

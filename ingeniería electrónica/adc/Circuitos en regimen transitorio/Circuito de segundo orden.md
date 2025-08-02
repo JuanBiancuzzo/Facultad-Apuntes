@@ -2,8 +2,8 @@
 dia: 2023-09-23
 tags:
   - carrera/ingeniería-electrónica/adc/Circuitos-en-regimen-transitorio
-  - nota/facultad
   - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-transitorio
+  - nota/facultad
 aliases:
   - Sobreamortiguado#Sobreamortiguado
   - Críticamente amortiguado#Críticamente amortiguado

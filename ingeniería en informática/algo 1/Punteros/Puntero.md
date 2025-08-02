@@ -4,11 +4,13 @@ etapa: empezado
 referencias:
   - "700"
 tags:
-  - carrera/ingeniería-en-informática/algo-1/Punteros
   - carrera/ingeniería-electrónica/algo-1/Punteros
-  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
-  - nota/facultad
+  - carrera/ingeniería-en-informática/algo-1/Punteros
   - curso/introduction-to-algorithms/Introduction
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
+  - nota/curso
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Operador de Dirección#^operador-direccion
   - Operador de Indirección#^operador-indireccion

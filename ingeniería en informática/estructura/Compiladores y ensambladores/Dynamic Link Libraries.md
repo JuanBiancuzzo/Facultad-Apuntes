@@ -1,9 +1,9 @@
 ---
 dia: 2024-08-29
 tags:
+  - carrera/ingeniería-electrónica/estructura/Compiladores-y-ensambladores
   - carrera/ingeniería-en-informática/estructura/Compiladores-y-ensambladores
   - nota/facultad
-  - carrera/ingeniería-electrónica/estructura/Compiladores-y-ensambladores
 aliases:
   - Linking loader dinámico
   - DLL

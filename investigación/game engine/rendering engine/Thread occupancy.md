@@ -5,8 +5,8 @@ referencias:
   - "160"
   - "161"
 tags:
-  - nota/investigacion
   - investigación/game-engine/rendering-engine
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

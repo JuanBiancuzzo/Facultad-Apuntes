@@ -3,9 +3,9 @@ dia: 2024-04-22
 aliases:
   - FTTH
 tags:
+  - carrera/ingeniería-electrónica/redes/Redes-de-computadoras
   - carrera/ingeniería-en-informática/redes/Redes-de-computadoras
   - nota/facultad
-  - carrera/ingeniería-electrónica/redes/Redes-de-computadoras
 ---
 # Definición
 ---

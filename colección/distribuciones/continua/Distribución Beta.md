@@ -2,8 +2,8 @@
 dia: 2023-01-23
 tags:
   - colección/distribuciones/distribución
-  - nota/colección
   - distribuciones/continua
+  - nota/colección
 nombreDistribucion: Beta
 tipoDistribucion: continua
 ---

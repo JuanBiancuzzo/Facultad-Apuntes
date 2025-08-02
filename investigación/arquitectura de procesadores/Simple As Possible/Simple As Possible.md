@@ -2,8 +2,8 @@
 dia: 2024-11-30
 estado: Sin empezar
 tags:
-  - investigación/índice
   - investigación/arquitectura-de-procesadores/Simple-As-Possible
+  - investigación/índice
   - nota/investigacion
 aliases:
   - SAP

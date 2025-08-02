@@ -17,9 +17,9 @@ capitulos:
 cover: Database Internals, A Deep Dive into How Distributed Data Systems Work de Alex Petrov.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

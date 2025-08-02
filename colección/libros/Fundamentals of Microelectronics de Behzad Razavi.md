@@ -83,9 +83,9 @@ aliases:
   - "Fundamentals of Microelectronics de Behzad Razavi, Capítulo 15: Analog Filters#Capítulo 15: Analog Filters"
   - "Fundamentals of Microelectronics de Behzad Razavi, Capítulo 16: Digital CMOS Circuits#Capítulo 16: Digital CMOS Circuits"
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

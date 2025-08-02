@@ -2,9 +2,9 @@
 dia: 2024-11-17
 estado: Sin empezar
 tags:
+  - investigación/ciencias-de-la-computación/lenguajes-de-programación/Lenguaje-Python/NumPy
   - investigación/índice
   - nota/investigacion
-  - investigación/ciencias-de-la-computación/lenguajes-de-programación/Lenguaje-Python/NumPy
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

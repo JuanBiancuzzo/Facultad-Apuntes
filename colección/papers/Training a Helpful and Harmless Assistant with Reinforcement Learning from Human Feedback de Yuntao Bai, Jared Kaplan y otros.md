@@ -72,12 +72,13 @@ anio: "2022"
 editores: 
 url: 
 tags:
-  - referencia/paper
   - colección/biblioteca/paper
-  - nota/investigacion
-  - investigación/machine-Learning/transformers
   - investigación/ciencias-de-la-computación/Machine-learning/transformers
+  - investigación/machine-Learning/transformers
   - investigación/matemática/Estadística/Machine-learning/transformers
+  - nota/colección
+  - nota/investigacion
+  - referencia/paper
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

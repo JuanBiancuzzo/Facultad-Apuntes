@@ -1,10 +1,11 @@
 ---
 dia: 2024-08-02
 tags:
-  - carrera/ingeniería-en-informática/redes/Capa-de-Red
-  - nota/facultad
   - carrera/ingeniería-electrónica/redes/Capa-de-Red
+  - carrera/ingeniería-en-informática/redes/Capa-de-Red
   - investigación/ciencias-de-la-computación/algoritmos
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Algoritmo de ruteo
 ---

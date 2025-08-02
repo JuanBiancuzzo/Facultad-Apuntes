@@ -1,11 +1,12 @@
 ---
 dia: 2024-12-25
 tags:
-  - investigación/índice
-  - nota/investigacion
-  - investigación/matemática/Probabilidad/Distribuciones
   - colección/distribuciones
   - colección/representante
+  - investigación/índice
+  - investigación/matemática/Probabilidad/Distribuciones
+  - nota/colección
+  - nota/investigacion
 estado: Vamos a ver las distribuciones probabilísticas discretas, continuas y multivariadas
 referencias:
   - "836"

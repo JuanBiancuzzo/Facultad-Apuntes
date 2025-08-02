@@ -1,10 +1,10 @@
 ---
 dia: 2024-08-29
 tags:
-  - carrera/ingeniería-en-informática/estructura/Compiladores-y-ensambladores
-  - nota/facultad
   - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - carrera/ingeniería-electrónica/estructura/Compiladores-y-ensambladores
+  - carrera/ingeniería-en-informática/estructura/Compiladores-y-ensambladores
+  - nota/facultad
 ---
 # Definición
 ---

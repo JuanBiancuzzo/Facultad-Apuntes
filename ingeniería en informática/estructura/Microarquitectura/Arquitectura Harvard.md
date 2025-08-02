@@ -1,10 +1,10 @@
 ---
 dia: 2024-08-29
 tags:
-  - carrera/ingeniería-en-informática/estructura/Microarquitectura
-  - nota/facultad
   - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
   - carrera/ingeniería-electrónica/estructura/Microarquitectura
+  - carrera/ingeniería-en-informática/estructura/Microarquitectura
+  - nota/facultad
 ---
 # Definición
 ---

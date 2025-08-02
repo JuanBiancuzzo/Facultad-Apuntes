@@ -1,10 +1,10 @@
 ---
 dia: 2024-09-09
 tags:
-  - carrera/ingeniería-en-informática/estructura/Sistema-ARC
-  - nota/facultad
   - carrera/ingeniería-electrónica/embebidos/Microcontroladores-de-32-bits
   - carrera/ingeniería-electrónica/estructura/Sistema-ARC
+  - carrera/ingeniería-en-informática/estructura/Sistema-ARC
+  - nota/facultad
 aliases:
   - Código binario
   - Codificación de código máquina en la arquitectura ARC#En la arquitectura ARC

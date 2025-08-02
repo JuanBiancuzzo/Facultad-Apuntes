@@ -2,8 +2,8 @@
 dia: 2023-11-27
 tags:
   - carrera/ingeniería-electrónica/adc/Cuadripolos
-  - nota/facultad
   - carrera/ingeniería-en-informática/adc/Cuadripolos
+  - nota/facultad
 ---
 # Definición
 ---

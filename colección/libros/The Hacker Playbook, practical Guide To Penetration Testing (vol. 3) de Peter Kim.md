@@ -17,9 +17,9 @@ capitulos:
 cover: The Hacker Playbook, practical Guide To Penetration Testing (vol. 3) de Peter Kim.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

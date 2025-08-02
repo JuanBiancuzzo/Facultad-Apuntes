@@ -1,11 +1,11 @@
 ---
 dia: 2023-08-26
 tags:
-  - carrera/ingeniería-en-informática/sisop/La-abstracción-de-proceso
-  - nota/facultad
+  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - carrera/ingeniería-en-informática/aninfo/Diseño-de-software
   - carrera/ingeniería-en-informática/concurrentes/Introducción
-  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
+  - carrera/ingeniería-en-informática/sisop/La-abstracción-de-proceso
+  - nota/facultad
 referencias:
   - "789"
   - "871"

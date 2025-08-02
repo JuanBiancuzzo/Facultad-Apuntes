@@ -2,8 +2,8 @@
 dia: 2022-09-13
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Series
-  - nota/facultad
   - carrera/ingeniería-en-informática/analisis-3/Series
+  - nota/facultad
 ---
 Dada una [[Sucesión]] $\alpha : \mathbb{N} \to \mathbb{K}$, donde $\mathbb{K} \in \{ \mathbb{R}, \mathbb{C} \}$ 
 

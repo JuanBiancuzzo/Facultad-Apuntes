@@ -2,10 +2,10 @@
 dia: 2022-12-05
 tags:
   - carrera/ingeniería-electrónica/analisis-3/Transformada-de-Laplace
-  - nota/facultad
-  - carrera/ingeniería-en-informática/analisis-3/Transformada-de-Laplace
   - carrera/ingeniería-electrónica/proba/Función-de-variable-aleatoria
+  - carrera/ingeniería-en-informática/analisis-3/Transformada-de-Laplace
   - carrera/ingeniería-en-informática/proba/Función-de-variable-aleatoria
+  - nota/facultad
 ---
 # Definición
 ---

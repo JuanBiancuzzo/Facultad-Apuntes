@@ -6,10 +6,11 @@ referencias:
   - "492"
 tags:
   - carrera/ingeniería-en-informática/orga/Machine-learning
-  - nota/facultad
-  - investigación/machine-Learning/Regularization
   - investigación/ciencias-de-la-computación/Machine-learning/Regularization
+  - investigación/machine-Learning/Regularization
   - investigación/matemática/Estadística/Machine-learning/Regularization
+  - nota/facultad
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

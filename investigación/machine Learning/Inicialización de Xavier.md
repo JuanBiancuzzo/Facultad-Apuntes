@@ -4,10 +4,10 @@ etapa: sin-empezar
 referencias:
   - "490"
 tags:
-  - nota/investigacion
-  - investigación/machine-Learning
   - investigación/ciencias-de-la-computación/Machine-learning
+  - investigación/machine-Learning
   - investigación/matemática/Estadística/Machine-learning
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

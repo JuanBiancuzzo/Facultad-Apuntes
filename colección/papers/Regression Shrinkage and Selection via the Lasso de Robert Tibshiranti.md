@@ -12,13 +12,15 @@ anio: "1995"
 editores: 
 url: https://www.jstor.org/stable/2346178
 tags:
-  - referencia/paper
-  - colección/biblioteca/paper
-  - nota/investigacion
-  - investigación/machine-Learning/Regularization
   - carrera/ingeniería-en-informática/orga/Machine-learning
+  - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/Machine-learning/Regularization
+  - investigación/machine-Learning/Regularization
   - investigación/matemática/Estadística/Machine-learning/Regularization
+  - nota/colección
+  - nota/facultad
+  - nota/investigacion
+  - referencia/paper
 aliases:
   - Least Absolute Shrinkage and Selection Operator
   - LASSO

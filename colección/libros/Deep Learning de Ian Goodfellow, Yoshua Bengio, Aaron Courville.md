@@ -21,9 +21,9 @@ capitulos:
 cover: Deep Learning de Ian Goodfellow, Yoshua Bengio, Aaron Courville.jpg
 aliases: 
 tags:
-  - referencia/libro
   - colección/biblioteca/libro
-  - nota/investigacion
+  - nota/colección
+  - referencia/libro
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

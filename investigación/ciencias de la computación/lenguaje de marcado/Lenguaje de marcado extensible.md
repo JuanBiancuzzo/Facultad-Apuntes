@@ -7,8 +7,8 @@ aliases:
   - XML
   - Extensible Markup Language
 tags:
-  - nota/investigacion
   - investigación/lenguaje-de-marcado
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

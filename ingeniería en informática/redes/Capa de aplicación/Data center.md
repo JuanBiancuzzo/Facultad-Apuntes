@@ -1,11 +1,11 @@
 ---
 dia: 2024-03-19
 tags:
-  - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
-  - nota/facultad
-  - carrera/ingeniería-en-informática/redes/Redes-de-computadoras
   - carrera/ingeniería-electrónica/redes/Capa-de-aplicación
   - carrera/ingeniería-electrónica/redes/Redes-de-computadoras
+  - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
+  - carrera/ingeniería-en-informática/redes/Redes-de-computadoras
+  - nota/facultad
 aliases:
   - Top of Rack switch
   - Blades

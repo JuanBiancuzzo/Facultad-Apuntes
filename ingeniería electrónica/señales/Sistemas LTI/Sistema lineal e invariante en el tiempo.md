@@ -4,9 +4,9 @@ aliases:
   - Sistema LTI
   - Solución forzada en el tiempo#Solución
 tags:
+  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - carrera/ingeniería-electrónica/señales/Sistemas-LTI
   - nota/facultad
-  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
 etapa: ampliar
 referencias:
   - "899"

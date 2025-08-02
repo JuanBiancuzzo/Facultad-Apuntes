@@ -1,8 +1,8 @@
 ---
 dia: 2025-03-15
 tags:
-  - proyecto-práctico/Trabajo-Profesional-de-Ingeniería-Informática
   - nota/proyecto
+  - proyecto-práctico/Trabajo-Profesional-de-Ingeniería-Informática
 ---
 # Progreso
 ---

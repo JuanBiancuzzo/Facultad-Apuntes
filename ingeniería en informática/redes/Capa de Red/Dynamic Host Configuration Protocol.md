@@ -4,12 +4,13 @@ aliases:
   - DHCP
   - Protocolo dinámico de configuración de hosts
 tags:
-  - carrera/ingeniería-en-informática/redes/Capa-de-Red
-  - nota/facultad
-  - investigación/protocolos/protocolo-de-internet
   - carrera/ingeniería-electrónica/redes/Capa-de-Red
-  - investigación/networking/Protocolos
+  - carrera/ingeniería-en-informática/redes/Capa-de-Red
   - investigación/ciencias-de-la-computación/Networking/Protocolos
+  - investigación/networking/Protocolos
+  - investigación/protocolos/protocolo-de-internet
+  - nota/facultad
+  - nota/investigacion
 ---
 # Definición
 ---

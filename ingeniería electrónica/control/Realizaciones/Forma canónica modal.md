@@ -6,8 +6,8 @@ referencias:
 aliases:
   - Modal canonical form
 tags:
-  - nota/facultad
   - carrera/ingeniería-electrónica/control/Realizaciones
+  - nota/facultad
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

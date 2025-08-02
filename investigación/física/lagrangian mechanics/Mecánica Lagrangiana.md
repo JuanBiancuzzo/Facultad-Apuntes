@@ -1,8 +1,8 @@
 ---
 dia: 2024-07-08
 tags:
-  - investigación/índice
   - investigación/física/lagrangian-mechanics
+  - investigación/índice
   - nota/investigacion
 estado: Falta resumir
 aliases:

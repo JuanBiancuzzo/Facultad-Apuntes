@@ -5,8 +5,8 @@ referencias:
   - "573"
   - "574"
 tags:
-  - nota/investigacion
   - investigación/mecánica
+  - nota/investigacion
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

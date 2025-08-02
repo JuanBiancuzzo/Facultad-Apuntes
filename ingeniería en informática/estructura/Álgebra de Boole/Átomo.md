@@ -1,14 +1,14 @@
 ---
 dia: 2023-01-23
 tags:
-  - nota/facultad
+  - carrera/ingeniería-electrónica/estructura/Álgebra-de-Boole
   - carrera/ingeniería-electrónica/fisica-3/Átomo-de-Bohr
+  - carrera/ingeniería-electrónica/proba/Variables-y-vectores-aleatorios
   - carrera/ingeniería-en-informática/discreta/Álgebra-de-Boole
   - carrera/ingeniería-en-informática/estructura/Álgebra-de-Boole
   - carrera/ingeniería-en-informática/fisica-3/Átomo-de-Bohr
-  - carrera/ingeniería-electrónica/estructura/Álgebra-de-Boole
   - carrera/ingeniería-en-informática/proba/Variables-y-vectores-aleatorios
-  - carrera/ingeniería-electrónica/proba/Variables-y-vectores-aleatorios
+  - nota/facultad
 etapa: ampliar
 ---
 ```dataviewjs

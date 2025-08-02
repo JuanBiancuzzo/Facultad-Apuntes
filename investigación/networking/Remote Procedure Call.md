@@ -6,12 +6,13 @@ referencias:
   - "1"
   - "865"
 tags:
-  - nota/investigacion
-  - carrera/ingeniería-en-informática/tpp/Propuesta
-  - investigación/networking
-  - investigación/ciencias-de-la-computación/Networking
-  - investigación/protocolos/protocolo-de-internet
   - carrera/ingeniería-en-informática/distribuidos/Fundamentos-de-Sistemas-Distribuidos
+  - carrera/ingeniería-en-informática/tpp/Propuesta
+  - investigación/ciencias-de-la-computación/Networking
+  - investigación/networking
+  - investigación/protocolos/protocolo-de-internet
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - RPC
   - gRPC#gRPC

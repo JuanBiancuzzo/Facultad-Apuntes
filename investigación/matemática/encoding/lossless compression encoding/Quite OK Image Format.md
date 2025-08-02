@@ -4,8 +4,8 @@ etapa: sin-empezar
 referencias:
   - "502"
 tags:
-  - nota/investigacion
   - investigación/matemática/encoding/lossless-compression-encoding
+  - nota/investigacion
 aliases:
   - QOI
 ---

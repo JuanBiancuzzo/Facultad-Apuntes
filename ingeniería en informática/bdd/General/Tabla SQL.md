@@ -2,8 +2,9 @@
 dia: 2024-05-10
 tags:
   - carrera/ingeniería-en-informática/bdd/General
-  - nota/facultad
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-SQL
+  - nota/facultad
+  - nota/investigacion
 ---
 # Definición
 ---

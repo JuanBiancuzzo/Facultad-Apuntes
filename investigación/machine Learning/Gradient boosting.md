@@ -4,10 +4,10 @@ etapa: sin-empezar
 referencias:
   - "640"
 tags:
-  - nota/investigacion
-  - investigación/machine-Learning/Ensemble
   - investigación/ciencias-de-la-computación/Machine-learning/Ensemble
+  - investigación/machine-Learning/Ensemble
   - investigación/matemática/Estadística/Machine-learning/Ensemble
+  - nota/investigacion
 aliases:
   - Extreme gradient boosting
   - Adaptive gradient boosting

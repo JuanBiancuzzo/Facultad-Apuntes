@@ -1,14 +1,15 @@
 ---
 dia: 2024-08-22
 tags:
-  - carrera/ingeniería-en-informática/redes/Capa-de-Enlace
-  - nota/facultad
-  - carrera/ingeniería-en-informática/redes/Capa-Física-Inalámbrica
-  - investigación/protocolos/protocolo-de-internet
   - carrera/ingeniería-electrónica/redes/Capa-de-Enlace
   - carrera/ingeniería-electrónica/redes/Capa-Física-Inalámbrica
-  - investigación/networking/Protocolos
+  - carrera/ingeniería-en-informática/redes/Capa-de-Enlace
+  - carrera/ingeniería-en-informática/redes/Capa-Física-Inalámbrica
   - investigación/ciencias-de-la-computación/Networking/Protocolos
+  - investigación/networking/Protocolos
+  - investigación/protocolos/protocolo-de-internet
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - CDMA
 ---

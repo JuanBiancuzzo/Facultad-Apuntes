@@ -1,10 +1,10 @@
 ---
 dia: 2023-08-24
 tags:
-  - carrera/ingeniería-en-informática/fisica-2/Magnetostática-en-el-vacío
-  - nota/facultad
   - carrera/ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
   - carrera/ingeniería-electrónica/fisica-2/Magnetostática-en-el-vacío
+  - carrera/ingeniería-en-informática/fisica-2/Magnetostática-en-el-vacío
+  - nota/facultad
 ---
 # Definición
 ---

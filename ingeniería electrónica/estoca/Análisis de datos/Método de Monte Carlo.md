@@ -5,8 +5,9 @@ referencias:
   - "653"
 tags:
   - carrera/ingeniería-electrónica/estoca/Análisis-de-datos
-  - nota/facultad
   - investigación/matemática/Estadística
+  - nota/facultad
+  - nota/investigacion
 aliases: []
 ---
 ```dataviewjs

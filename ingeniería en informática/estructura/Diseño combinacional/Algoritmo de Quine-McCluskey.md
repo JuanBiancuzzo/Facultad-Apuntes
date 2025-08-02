@@ -1,10 +1,11 @@
 ---
 dia: 2023-04-23
 tags:
-  - carrera/ingeniería-en-informática/estructura/Diseño-combinacional
-  - nota/facultad
   - carrera/ingeniería-electrónica/estructura/Diseño-combinacional
+  - carrera/ingeniería-en-informática/estructura/Diseño-combinacional
   - investigación/ciencias-de-la-computación/algoritmos
+  - nota/facultad
+  - nota/investigacion
 ---
 # Definición
 ---

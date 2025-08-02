@@ -3,6 +3,7 @@ dia: 2025-03-10
 tags:
   - colección/componentes/pladaDeDesarrollo
   - investigación/índice
+  - nota/colección
   - nota/investigacion
 aliases:
   - Placa de desarrollo

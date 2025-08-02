@@ -1,9 +1,9 @@
 ---
 dia: 2024-12-22
 tags:
+  - investigación/ciencias-de-la-computación/sistemas-operativos/File-system/System-call
   - investigación/índice
   - nota/investigacion
-  - investigación/ciencias-de-la-computación/sistemas-operativos/File-system/System-call
 equivalente: "[[investigación/ciencias de la computación/lenguajes de programación/lenguaje c/System call/File system system calls/File system system calls.md|File system system calls]]"
 ---
 ```dataviewjs

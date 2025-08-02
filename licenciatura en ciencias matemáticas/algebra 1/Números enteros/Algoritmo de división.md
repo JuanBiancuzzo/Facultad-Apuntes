@@ -4,10 +4,11 @@ etapa: empezado
 referencias:
   - "414"
 tags:
-  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
   - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Números-enteros
-  - nota/facultad
+  - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
   - investigación/ciencias-de-la-computación/algoritmos
+  - nota/facultad
+  - nota/investigacion
 aliases:
   - Cociente
   - Resto
