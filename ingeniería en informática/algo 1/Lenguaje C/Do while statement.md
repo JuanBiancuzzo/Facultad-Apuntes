@@ -10,6 +10,8 @@ aliases:
   - Sentencia do while
   - Sentencia repetir hasta
   - Sentencia hacer hasta
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Lenguaje C/Resumen.md]]"
 ---
 # Definición
 ---

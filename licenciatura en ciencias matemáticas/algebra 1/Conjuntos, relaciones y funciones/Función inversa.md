@@ -8,6 +8,8 @@ tags:
   - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
   - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
   - nota/facultad
+vinculoFacultad:
+  - "[[licenciatura en ciencias matemáticas/algebra 1/Conjuntos, relaciones y funciones/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

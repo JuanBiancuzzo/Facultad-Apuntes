@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/analisis-3/Topología-del-plano-complejo-y-límites
   - carrera/ingeniería-en-informática/analisis-3/Topología-del-plano-complejo-y-límites
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Topología del plano complejo y límites/Resumen.md]]"
 ---
 # Definición
 ---

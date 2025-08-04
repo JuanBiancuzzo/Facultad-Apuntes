@@ -11,6 +11,8 @@ referencias:
 aliases:
   - Librería
 etapa: sin-empezar
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Lenguaje C/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

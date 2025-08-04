@@ -9,6 +9,8 @@ tags:
 aliases:
   - Series regulator
   - Fuente serie
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos 2/Fuentes de alimentación lineales/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

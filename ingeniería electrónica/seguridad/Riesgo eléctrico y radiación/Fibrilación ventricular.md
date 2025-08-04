@@ -3,6 +3,8 @@ dia: 2023-04-17
 tags:
   - carrera/ingeniería-electrónica/seguridad/Riesgo-eléctrico-y-radiación
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/seguridad/Riesgo eléctrico y radiación/Resumen.md]]"
 ---
 # Definición
 ---

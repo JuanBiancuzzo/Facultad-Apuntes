@@ -7,6 +7,8 @@ tags:
 aliases:
   - Red Celular 3G
   - Red 3G
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
 ---
 # Definición
 ---

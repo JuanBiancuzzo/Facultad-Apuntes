@@ -13,6 +13,11 @@ aliases:
   - Estándar error#std-error
   - Standard error#std-error
   - Stderror#std-error
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
+  - "[[ingeniería en informática/algo 1/Introducción a la programación/Resumen.md]]"
+  - "[[ingeniería en informática/concurrentes/Introducción/Resumen.md]]"
+  - "[[ingeniería en informática/sisop/La abstracción de proceso/Resumen.md]]"
 ---
 # Definición
 ---

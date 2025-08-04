@@ -3,6 +3,8 @@ dia: 2023-11-15
 tags:
   - carrera/ingeniería-en-informática/sisop/Kernel
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/sisop/Kernel/Resumen.md]]"
 ---
 # Definición
 ---

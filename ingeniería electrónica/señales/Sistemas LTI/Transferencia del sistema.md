@@ -24,6 +24,10 @@ aliases:
   - Transferencia propia#^propia
   - Transferencia bipropia#^bipropia
   - Transferencia impropia#^impropia
+vinculoFacultad:
+  - "[[ingeniería electrónica/control/Realizaciones/Resumen.md]]"
+  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
+  - "[[ingeniería electrónica/señales/Sistemas LTI/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -11,6 +11,8 @@ tags:
   - investigación/matemática/Estadística/Machine-learning/Regularization
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/orga/Machine learning/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

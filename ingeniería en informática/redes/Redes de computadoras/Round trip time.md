@@ -7,6 +7,8 @@ tags:
   - carrera/ingeniería-en-informática/redes/Redes-de-computadoras
   - nota/facultad
 etapa: sin-empezar
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Redes de computadoras/Resumen.md]]"
 ---
 # Definición
 ---

@@ -7,6 +7,9 @@ tags:
   - carrera/ingeniería-electrónica/redes/Redes-de-computadoras
   - carrera/ingeniería-en-informática/redes/Redes-de-computadoras
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Ondas confinadas/Resumen.md]]"
+  - "[[ingeniería en informática/redes/Redes de computadoras/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

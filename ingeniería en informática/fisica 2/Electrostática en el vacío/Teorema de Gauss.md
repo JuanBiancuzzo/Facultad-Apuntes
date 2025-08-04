@@ -16,6 +16,11 @@ aliases:
   - Ley de Gauss para el Campo magnético#Para el campo magnético
   - Ecuación de la divergencia
   - Teorema de la divergencia
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Funciones de varias variables/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Electrostática en conductores y dieléctricos/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Electrostática en el vacío/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Magnetostática en el vacío/Resumen.md]]"
 ---
 # Definición
 ---

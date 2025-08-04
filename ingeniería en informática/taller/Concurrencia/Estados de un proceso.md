@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - Proceso bloqueado#Blocked
+vinculoFacultad:
+  - "[[ingeniería en informática/taller/Concurrencia/Resumen.md]]"
 ---
 # Definición
 ---

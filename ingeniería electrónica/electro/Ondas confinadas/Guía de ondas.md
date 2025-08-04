@@ -7,6 +7,8 @@ tags:
   - nota/facultad
 aliases:
   - Línea de transmisión
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Ondas confinadas/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

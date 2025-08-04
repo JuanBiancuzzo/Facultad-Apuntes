@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - Onda plana electromagnética elemental
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Ondas electromagnéticas/Resumen.md]]"
 ---
 # Definición
 ---

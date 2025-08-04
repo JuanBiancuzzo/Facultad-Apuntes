@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/proba/Estimación-Bayesiana
   - carrera/ingeniería-en-informática/proba/Estimación-Bayesiana
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/proba/Estimación Bayesiana/Resumen.md]]"
 ---
 # Definición
 ---

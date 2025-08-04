@@ -3,6 +3,8 @@ dia: 2023-07-16
 tags:
   - carrera/ingeniería-electrónica/seguridad/Residuos
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/seguridad/Residuos/Resumen.md]]"
 ---
 # Definición
 ---

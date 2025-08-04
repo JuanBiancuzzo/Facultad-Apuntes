@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - Peirce
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Álgebra proposicional/Resumen.md]]"
 ---
 # Definición
 ---

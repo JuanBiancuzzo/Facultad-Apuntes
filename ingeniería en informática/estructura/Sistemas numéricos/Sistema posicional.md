@@ -11,6 +11,9 @@ aliases:
 referencias:
   - "414"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería en informática/estructura/Sistemas numéricos/Resumen.md]]"
+  - "[[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

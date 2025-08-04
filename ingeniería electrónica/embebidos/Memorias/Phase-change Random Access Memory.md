@@ -7,6 +7,8 @@ aliases:
   - Phase-change RAM
   - PRAM
   - Memoria de cambio de fase
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
 ---
 # Definición
 ---

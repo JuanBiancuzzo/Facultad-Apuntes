@@ -30,6 +30,8 @@ aliases:
   - Penalización L1
 referencias:
   - "492"
+vinculoFacultad:
+  - "[[ingeniería en informática/orga/Machine learning/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

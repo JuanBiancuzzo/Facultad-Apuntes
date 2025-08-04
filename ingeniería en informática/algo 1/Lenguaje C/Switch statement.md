@@ -10,6 +10,8 @@ aliases:
   - Sentencia switch
   - Sentencia match
   - Sentencia según caso
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Lenguaje C/Resumen.md]]"
 ---
 # Definición
 ---

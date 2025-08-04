@@ -9,6 +9,9 @@ referencias:
   - "240"
 aliases:
   - Teoría de autómatas
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
+  - "[[ingeniería en informática/discreta/Autómatas/Resumen.md]]"
 ---
 # Definición
 ---

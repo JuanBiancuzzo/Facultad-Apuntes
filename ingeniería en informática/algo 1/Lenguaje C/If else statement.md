@@ -9,6 +9,8 @@ tags:
 aliases:
   - Sentencia si sino
   - Sentencia if else
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Lenguaje C/Resumen.md]]"
 ---
 # Definición
 ---

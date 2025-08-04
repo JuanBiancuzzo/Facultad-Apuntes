@@ -6,6 +6,9 @@ tags:
   - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Números-enteros
   - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/estructura/Sistemas numéricos/Resumen.md]]"
+  - "[[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Resumen.md]]"
 ---
 # Definición
 ---

@@ -10,6 +10,10 @@ referencias:
 etapa: ampliar
 aliases:
   - Sistema no lineal
+vinculoFacultad:
+  - "[[ingeniería electrónica/control/Linealización/Resumen.md]]"
+  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
+  - "[[ingeniería electrónica/señales/Señales y sistemas/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -6,6 +6,10 @@ tags:
   - carrera/ingeniería-en-informática/estructura/Microarquitectura
   - carrera/ingeniería-en-informática/sisop/La-abstracción-de-proceso
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Microcontroladores de 32 bits/Resumen.md]]"
+  - "[[ingeniería en informática/estructura/Microarquitectura/Resumen.md]]"
+  - "[[ingeniería en informática/sisop/La abstracción de proceso/Resumen.md]]"
 ---
 # Definición
 ---

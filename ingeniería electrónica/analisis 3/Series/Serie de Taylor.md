@@ -8,6 +8,8 @@ etapa: ampliar
 referencias:
   - "1056"
 aliases: 
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Series/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

@@ -15,6 +15,8 @@ aliases:
   - Dividendo
   - Divisor
   - Tablas de Restos#Tablas de Restos
+vinculoFacultad:
+  - "[[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

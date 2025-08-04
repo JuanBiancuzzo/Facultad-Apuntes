@@ -3,6 +3,8 @@ dia: 2024-03-11
 tags:
   - carrera/ingeniería-electrónica/circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos/Dispositivos de control de señal y en conmutación/Resumen.md]]"
 ---
 # Definición
 ---

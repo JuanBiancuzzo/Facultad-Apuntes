@@ -9,6 +9,8 @@ aliases:
 referencias:
   - "665"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería en informática/estructura/Registros y contadores/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

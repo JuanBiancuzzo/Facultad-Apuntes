@@ -6,6 +6,8 @@ tags:
 aliases:
   - Inmersión
   - Espesor de un grafo
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

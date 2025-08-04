@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - THD
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Resumen.md]]"
 ---
 # Definición
 ---

@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/algo-1/Introducción-a-la-programación
   - carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Introducción a la programación/Resumen.md]]"
 ---
 # Definición
 ---

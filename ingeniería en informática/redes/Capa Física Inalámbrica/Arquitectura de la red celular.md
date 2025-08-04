@@ -7,6 +7,8 @@ tags:
 aliases:
   - Global System for Mobile Communications
   - GSM
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
 ---
 # Definición
 ---

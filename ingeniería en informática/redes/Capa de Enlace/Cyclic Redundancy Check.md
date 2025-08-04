@@ -8,6 +8,8 @@ aliases:
   - CRC
   - Cyclic Redundancy Check codes
   - Polynomial codes
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de Enlace/Resumen.md]]"
 ---
 # Definición
 ---

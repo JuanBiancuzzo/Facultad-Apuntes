@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - MQMS
+vinculoFacultad:
+  - "[[ingeniería en informática/sisop/Scheduling/Resumen.md]]"
 ---
 # Definición
 ---

@@ -15,6 +15,8 @@ aliases:
   - HSS#^HSS
   - P-GW^#P-GW
   - S-GW#^S-GW
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
 ---
 # Definición
 ---

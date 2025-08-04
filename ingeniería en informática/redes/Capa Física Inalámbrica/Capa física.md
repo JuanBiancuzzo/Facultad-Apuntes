@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/redes/Capa-Física-Inalámbrica
   - carrera/ingeniería-en-informática/redes/Capa-Física-Inalámbrica
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
 ---
 # Definición
 ---

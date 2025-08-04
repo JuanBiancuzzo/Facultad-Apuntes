@@ -3,6 +3,8 @@ dia: 2024-03-26
 tags:
   - carrera/ingeniería-electrónica/señales/Serie-de-Fourier
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/señales/Serie de Fourier/Resumen.md]]"
 ---
 # Definición
 ---

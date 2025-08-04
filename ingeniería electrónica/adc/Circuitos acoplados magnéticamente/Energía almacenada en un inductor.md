@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - Energía almacenada en una bobina
+vinculoFacultad:
+  - "[[ingeniería electrónica/adc/Circuitos acoplados magnéticamente/Resumen.md]]"
 ---
 # Definición
 ---

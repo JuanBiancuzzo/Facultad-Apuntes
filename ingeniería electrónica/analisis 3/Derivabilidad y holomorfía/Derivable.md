@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - Derivada
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Derivabilidad y holomorfía/Resumen.md]]"
 ---
 # Definición
 ---

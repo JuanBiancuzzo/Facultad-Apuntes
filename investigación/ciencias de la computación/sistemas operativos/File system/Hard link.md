@@ -7,6 +7,8 @@ tags:
   - investigación/ciencias-de-la-computación/sistemas-operativos/File-system
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/sisop/File system/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

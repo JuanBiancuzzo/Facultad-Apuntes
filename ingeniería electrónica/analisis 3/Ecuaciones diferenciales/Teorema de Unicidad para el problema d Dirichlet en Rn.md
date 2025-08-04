@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/analisis-3/Ecuaciones-diferenciales
   - carrera/ingeniería-en-informática/analisis-3/Ecuaciones-diferenciales
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Ecuaciones diferenciales/Resumen.md]]"
 ---
 # Definición
 ---

@@ -34,6 +34,8 @@ tags:
   - nota/facultad
   - nota/investigacion
   - referencia/paper
+vinculoFacultad:
+  - "[[ingeniería en informática/algebra 2/Autovalores y autovectores/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/analisis-2/Nomenclatura
   - carrera/ingeniería-en-informática/analisis-2/Nomenclatura
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Nomenclatura/Resumen.md]]"
 ---
 # Definición
 ---

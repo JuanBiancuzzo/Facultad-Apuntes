@@ -6,6 +6,8 @@ tags:
   - carrera/ingeniería-electrónica/algebra-2/Matrices-unitarias-y-ortogonales
   - carrera/ingeniería-en-informática/algebra-2/Matrices-unitarias-y-ortogonales
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/algebra 2/Matrices unitarias y ortogonales/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

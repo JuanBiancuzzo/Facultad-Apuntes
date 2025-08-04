@@ -3,6 +3,8 @@ dia: 2023-08-26
 tags:
   - carrera/ingeniería-en-informática/aninfo/Diseño-de-datos
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/aninfo/Diseño de datos/Resumen.md]]"
 ---
 # Definición
 ---

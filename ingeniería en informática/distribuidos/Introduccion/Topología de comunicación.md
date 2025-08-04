@@ -13,6 +13,9 @@ aliases:
   - Multicast#^muticast
   - Broadcast#^broadcast
   - Comunicación punto a punto#^unicast
+vinculoFacultad:
+  - "[[ingeniería en informática/distribuidos/Herramientas de Diseño/Resumen.md]]"
+  - "[[ingeniería en informática/distribuidos/Introduccion/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

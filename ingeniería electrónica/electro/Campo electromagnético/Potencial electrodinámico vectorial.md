@@ -8,6 +8,8 @@ aliases:
   - Condición de Lorentz#^condicion-de-lorentz
   - Ajuste de Lorentz#^condicion-de-lorentz
   - Potencial vectorial magnético
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Campo electromagnético/Resumen.md]]"
 ---
 # Definición
 ---

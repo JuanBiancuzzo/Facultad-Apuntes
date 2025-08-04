@@ -11,6 +11,8 @@ tipoDistribucion: multivariada
 aliases:
   - Vector aleatorio normal
   - Vector aleatorio gaussiano
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md]]"
 ---
 # Definición
 ---

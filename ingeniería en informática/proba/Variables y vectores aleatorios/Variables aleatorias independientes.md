@@ -10,6 +10,9 @@ aliases:
   - Variable aleatoria continua independiente#Para variable continua
   - Variable aleatoria discreta independiente#Para variable discreta
   - Vector aleatorio independiente#Para vector aleatorio
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Variables y vectores aleatorios/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -4,6 +4,9 @@ tags:
   - carrera/ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
   - carrera/ingeniería-electrónica/señales/Muestreo-e-Interpolación
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Estrategias de control de periféricos/Resumen.md]]"
+  - "[[ingeniería electrónica/señales/Muestreo e Interpolación/Resumen.md]]"
 ---
 # Definición
 ---

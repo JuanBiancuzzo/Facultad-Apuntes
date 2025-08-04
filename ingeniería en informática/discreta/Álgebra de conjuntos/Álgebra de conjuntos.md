@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 referencias:
   - "191"
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Álgebra de conjuntos/Resumen.md]]"
 ---
 # Definición
 ---

@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - Proceso de diseño de UI
+vinculoFacultad:
+  - "[[ingeniería en informática/aninfo/Prototipado y experiencia del usuario/Resumen.md]]"
 ---
 # Definición
 ---

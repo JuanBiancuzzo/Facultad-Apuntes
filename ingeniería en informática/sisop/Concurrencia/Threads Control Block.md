@@ -5,6 +5,8 @@ aliases:
 tags:
   - carrera/ingeniería-en-informática/sisop/Concurrencia
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/sisop/Concurrencia/Resumen.md]]"
 ---
 # Definición
 ---

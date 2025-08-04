@@ -3,6 +3,8 @@ dia: 2023-08-09
 tags:
   - carrera/ingeniería-en-informática/orga/Machine-learning
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/orga/Machine learning/Resumen.md]]"
 ---
 # Definición
 ---

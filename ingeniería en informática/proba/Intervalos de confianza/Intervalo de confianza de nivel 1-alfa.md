@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/proba/Intervalos-de-confianza
   - carrera/ingeniería-en-informática/proba/Intervalos-de-confianza
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/proba/Intervalos de confianza/Resumen.md]]"
 ---
 # Definición
 ---

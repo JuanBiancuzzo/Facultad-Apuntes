@@ -16,6 +16,9 @@ tags:
   - investigación/protocolos/protocolo-de-internet
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de Enlace/Resumen.md]]"
+  - "[[ingeniería en informática/redes/Redes de computadoras/Resumen.md]]"
 ---
 # Definición
 ---

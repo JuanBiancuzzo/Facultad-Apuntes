@@ -8,6 +8,9 @@ tags:
 aliases:
   - Entorno abierto de un vértice
   - Entorno cerrado de un vértice
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Topología/Resumen Parte 1.md]]"
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

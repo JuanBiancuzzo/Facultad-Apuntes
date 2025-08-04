@@ -10,6 +10,11 @@ tags:
   - carrera/ingeniería-en-informática/proba/Variables-y-vectores-aleatorios
   - nota/facultad
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/fisica 3/Átomo de Bohr/Resumen.md]]"
+  - "[[ingeniería en informática/discreta/Álgebra de Boole/Resumen.md]]"
+  - "[[ingeniería en informática/estructura/Álgebra de Boole/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Variables y vectores aleatorios/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

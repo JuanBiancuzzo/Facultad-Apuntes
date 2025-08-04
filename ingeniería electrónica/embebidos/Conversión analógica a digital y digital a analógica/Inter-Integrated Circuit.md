@@ -12,6 +12,8 @@ tags:
 aliases:
   - I2C
   - I<sup>2</sup>C
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Conversión analógica a digital y digital a analógica/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

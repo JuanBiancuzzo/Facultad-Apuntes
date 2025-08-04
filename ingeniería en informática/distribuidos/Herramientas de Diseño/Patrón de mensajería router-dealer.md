@@ -5,6 +5,8 @@ referencias:
 tags:
   - carrera/ingeniería-en-informática/distribuidos/Fundamentos-de-Sistemas-Distribuidos
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/distribuidos/Fundamentos de Sistemas Distribuidos/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

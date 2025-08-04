@@ -7,6 +7,8 @@ tags:
   - investigación/machine-Learning
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/orga/Machine learning/Resumen.md]]"
 ---
 # Definición
 ---

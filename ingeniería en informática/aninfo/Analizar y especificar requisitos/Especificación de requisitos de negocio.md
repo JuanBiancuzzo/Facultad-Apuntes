@@ -6,6 +6,8 @@ tags:
 etapa: sin-empezar
 aliases:
   - BRD
+vinculoFacultad:
+  - "[[ingeniería en informática/aninfo/Analizar y especificar requisitos/Resumen.md]]"
 ---
 # Definición
 ---

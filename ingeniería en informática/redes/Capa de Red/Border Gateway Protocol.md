@@ -10,6 +10,8 @@ tags:
   - nota/investigacion
 aliases:
   - BGP
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de Red/Resumen.md]]"
 ---
 # Definición
 ---

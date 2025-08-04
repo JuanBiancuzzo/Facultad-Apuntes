@@ -9,6 +9,10 @@ tags:
   - nota/facultad
 aliases:
   - Producto cartesiano entre grafos#Entre grafos
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Nomenclatura/Resumen.md]]"
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
+  - "[[licenciatura en ciencias matemáticas/algebra 1/Conjuntos, relaciones y funciones/Resumen.md]]"
 ---
 # Definición
 ---

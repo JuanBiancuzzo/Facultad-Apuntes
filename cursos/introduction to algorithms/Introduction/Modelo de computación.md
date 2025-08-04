@@ -8,6 +8,8 @@ tags:
   - investigación/ciencias-de-la-computación/algoritmos
   - nota/curso
   - nota/investigacion
+vinculoCurso:
+  - "[[cursos/introduction to algorithms/Introduction/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

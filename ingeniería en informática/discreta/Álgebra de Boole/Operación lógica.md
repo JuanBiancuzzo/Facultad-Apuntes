@@ -9,6 +9,9 @@ tags:
   - nota/investigacion
 aliases:
   - Operador lógico
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Introducción a la programación/Resumen.md]]"
+  - "[[ingeniería en informática/discreta/Álgebra de Boole/Resumen.md]]"
 ---
 # Definición
 ---

@@ -11,6 +11,8 @@ aliases:
   - Dirección MAC
   - Dirección LAN
   - Dirección física
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de Enlace/Resumen.md]]"
 ---
 # Definición
 ---

@@ -5,6 +5,8 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Series-de-Laurent
   - nota/facultad
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Series de Laurent/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -8,6 +8,9 @@ tags:
 etapa: ampliar
 aliases:
   - Vector aleatorio discreto#Para vector aleatorio
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Variables y vectores aleatorios/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

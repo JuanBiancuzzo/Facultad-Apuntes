@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/proba/Teoría-de-probabilidades
   - carrera/ingeniería-en-informática/proba/Teoría-de-probabilidades
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/proba/Teoría de probabilidades/Resumen.md]]"
 ---
 # Definición
 ---

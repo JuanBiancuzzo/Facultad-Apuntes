@@ -11,6 +11,9 @@ aliases:
 referencias:
   - "787"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
+  - "[[ingeniería en informática/sisop/Virtualización de memoria/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

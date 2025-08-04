@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/estructura/Punto-flotante
   - carrera/ingeniería-en-informática/estructura/Punto-flotante
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/estructura/Punto flotante/Resumen.md]]"
 ---
 # Definición
 ---

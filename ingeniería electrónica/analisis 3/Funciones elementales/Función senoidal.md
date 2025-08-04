@@ -7,6 +7,8 @@ tags:
 aliases:
   - Frecuencia angular#^parametros
   - Fase inicial#^parametros
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Funciones elementales/Resumen.md]]"
 ---
 # Definición
 ---

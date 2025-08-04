@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/estructura/Flip-Flops
   - carrera/ingeniería-en-informática/estructura/Flip-Flops
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/estructura/Flip-Flops/Resumen.md]]"
 ---
 # Definición
 ---

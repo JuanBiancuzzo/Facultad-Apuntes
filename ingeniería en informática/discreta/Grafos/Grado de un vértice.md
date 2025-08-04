@@ -6,6 +6,8 @@ tags:
 aliases:
   - Degree of a vertex
   - Sucesión de grados de un grafo
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

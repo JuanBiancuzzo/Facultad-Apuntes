@@ -10,6 +10,9 @@ tags:
 referencias:
   - "517"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Transformaciones conformes/Resumen.md]]"
+  - "[[licenciatura en ciencias matemáticas/analisis 1/Vectores y geometría del espacio/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

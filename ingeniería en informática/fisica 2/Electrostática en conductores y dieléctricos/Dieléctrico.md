@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - Aislante
+vinculoFacultad:
+  - "[[ingeniería en informática/fisica 2/Electrostática en conductores y dieléctricos/Resumen.md]]"
 ---
 # Definición
 ---

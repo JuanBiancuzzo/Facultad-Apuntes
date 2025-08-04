@@ -10,6 +10,8 @@ aliases:
   - Capa de abstracción de un Sistema Operativo
 referencias:
   - "203"
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
 ---
 # Definición
 ---

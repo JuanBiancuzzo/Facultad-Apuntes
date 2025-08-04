@@ -10,6 +10,8 @@ tags:
   - investigación/protocolos/protocolo-de-internet
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de Transporte/Resumen.md]]"
 ---
 # Definición
 ---

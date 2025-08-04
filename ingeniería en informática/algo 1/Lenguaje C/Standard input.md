@@ -10,6 +10,8 @@ aliases:
   - Estándar input
   - Std input
   - Scanf#^scanf
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Lenguaje C/Resumen.md]]"
 ---
 # Definición
 ---

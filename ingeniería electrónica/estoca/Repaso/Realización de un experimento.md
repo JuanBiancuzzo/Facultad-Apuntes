@@ -5,6 +5,8 @@ referencias:
 tags:
   - carrera/ingeniería-electrónica/estoca/Repaso
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Repaso/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

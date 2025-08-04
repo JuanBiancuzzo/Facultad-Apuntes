@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/proba/Teorema-central-del-límite
   - carrera/ingeniería-en-informática/proba/Teorema-central-del-límite
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/proba/Teorema central del límite/Resumen.md]]"
 ---
 # Definición
 ---

@@ -6,6 +6,8 @@ tags:
 aliases:
   - Arista-conectividad
   - vértice-conectividad
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

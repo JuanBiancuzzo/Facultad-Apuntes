@@ -6,6 +6,8 @@ tags:
 aliases:
   - Digrafo
   - Grafo dirigido
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

@@ -10,6 +10,8 @@ aliases:
   - Frequency-hopping spread spectrum
   - FHSS
   - 802.15.1
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
 ---
 # Definición
 ---

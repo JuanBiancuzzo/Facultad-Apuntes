@@ -8,6 +8,9 @@ tags:
   - nota/facultad
 aliases:
   - Camino crítico#^camino-critico
+vinculoFacultad:
+  - "[[ingeniería en informática/concurrentes/Introducción/Resumen.md]]"
+  - "[[ingeniería en informática/distribuidos/Herramientas de Diseño/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

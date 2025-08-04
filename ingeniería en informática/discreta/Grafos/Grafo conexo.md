@@ -6,6 +6,8 @@ tags:
 aliases:
   - Grafo disconexo
   - Grafo fuertemente conexo
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

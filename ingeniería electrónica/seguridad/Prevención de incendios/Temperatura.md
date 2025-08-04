@@ -5,6 +5,9 @@ tags:
   - carrera/ingeniería-electrónica/seguridad/Prevención-de-incendios
   - carrera/ingeniería-en-informática/fisica-2/Termodinámica
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/seguridad/Prevención de incendios/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Termodinámica/Resumen.md]]"
 ---
 # Definición
 ---

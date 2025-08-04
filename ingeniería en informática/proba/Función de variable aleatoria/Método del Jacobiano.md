@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - Método del Jacobiano generalizado#Método del Jacobiano
+vinculoFacultad:
+  - "[[ingeniería en informática/proba/Función de variable aleatoria/Resumen.md]]"
 ---
 # Definición
 ---

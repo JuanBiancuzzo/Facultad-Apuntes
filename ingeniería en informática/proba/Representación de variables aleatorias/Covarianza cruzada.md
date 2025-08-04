@@ -17,6 +17,10 @@ aliases:
   - Matriz de autocovarianza#^def-5-3-4
   - Autocovarianza para un proceso estocástico#Para un proceso estocástico
 referencias: []
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md]]"
+  - "[[ingeniería electrónica/estoca/Introducción a procesos aleatorios/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Representación de variables aleatorias/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

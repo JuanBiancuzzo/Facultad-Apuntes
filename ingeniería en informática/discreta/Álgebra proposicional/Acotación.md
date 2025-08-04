@@ -8,6 +8,8 @@ aliases:
   - Ley de dominación para el producto
 referencias:
   - "186"
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Álgebra proposicional/Resumen.md]]"
 ---
 # Definición
 ---

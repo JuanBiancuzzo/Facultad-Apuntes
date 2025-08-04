@@ -6,6 +6,8 @@ tags:
 aliases:
   - QDR
   - Quad pumping
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
 ---
 # Definición
 ---

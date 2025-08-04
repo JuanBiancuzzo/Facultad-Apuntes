@@ -4,6 +4,9 @@ tags:
   - carrera/ingeniería-electrónica/circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
   - carrera/ingeniería-electrónica/dispo/Amplificador-emisor-y-source-común
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Resumen.md]]"
+  - "[[ingeniería electrónica/dispo/Amplificador emisor y source común/Resumen.md]]"
 ---
 # Definición
 ---

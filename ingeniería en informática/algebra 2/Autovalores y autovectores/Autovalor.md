@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/algebra-2/Autovalores-y-autovectores
   - carrera/ingeniería-en-informática/algebra-2/Autovalores-y-autovectores
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/algebra 2/Autovalores y autovectores/Resumen.md]]"
 ---
 # Definición
 ---

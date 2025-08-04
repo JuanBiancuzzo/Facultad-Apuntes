@@ -7,6 +7,8 @@ aliases:
   - Sistemas activados por eventos
   - Sistemas activados por interrupciones
   - E-TS
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
 ---
 # Definición
 ---

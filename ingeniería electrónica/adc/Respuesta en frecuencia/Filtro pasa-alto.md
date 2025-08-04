@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/adc/Respuesta-en-frecuencia
   - carrera/ingeniería-en-informática/adc/Respuesta-en-frecuencia
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/adc/Respuesta en frecuencia/Resumen.md]]"
 ---
 # Definición
 ---

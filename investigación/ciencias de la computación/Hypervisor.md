@@ -11,6 +11,8 @@ tags:
   - nota/investigacion
 aliases:
   - Virtual Machine Monitor
+vinculoFacultad:
+  - "[[ingeniería en informática/distribuidos/Introduccion/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

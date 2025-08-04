@@ -9,6 +9,8 @@ tags:
   - nota/investigacion
 aliases:
   - GRU
+vinculoFacultad:
+  - "[[ingeniería en informática/orga/NLP/Resumen Parte 2.md]]"
 ---
 # Definición
 ---

@@ -6,6 +6,8 @@ aliases:
 tags:
   - carrera/ingeniería-en-informática/sisop/Virtualización-de-memoria
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/sisop/Virtualización de memoria/Resumen.md]]"
 ---
 # Definición
 ---

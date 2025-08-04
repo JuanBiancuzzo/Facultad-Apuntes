@@ -7,6 +7,9 @@ tags:
   - nota/facultad
 aliases:
   - Solución del problema de conexionado
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Microcontroladores de 32 bits/Resumen.md]]"
+  - "[[ingeniería en informática/estructura/Microarquitectura/Resumen.md]]"
 ---
 # Definición
 ---

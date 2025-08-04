@@ -9,6 +9,10 @@ tags:
 etapa: ampliar
 referencias:
   - "873"
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Ecuaciones diferenciales/Resumen.md]]"
+  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
+  - "[[ingeniería electrónica/señales/Sistemas LTI/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

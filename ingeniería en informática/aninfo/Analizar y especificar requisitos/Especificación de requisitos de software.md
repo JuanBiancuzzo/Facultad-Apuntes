@@ -5,6 +5,8 @@ aliases:
 tags:
   - carrera/ingeniería-en-informática/aninfo/Analizar-y-especificar-requisitos
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/aninfo/Analizar y especificar requisitos/Resumen.md]]"
 ---
 # Definición
 ---

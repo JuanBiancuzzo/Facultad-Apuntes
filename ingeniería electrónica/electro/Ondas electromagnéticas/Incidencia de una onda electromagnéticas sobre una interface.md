@@ -12,6 +12,8 @@ aliases:
   - Impedancia de campo#^impedancia-de-campo
   - Impedancia de onda#^impedancia-de-campo
   - Leyes de Snell#^ley-snell
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Ondas electromagnéticas/Resumen.md]]"
 ---
 # Definición
 ---

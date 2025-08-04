@@ -7,6 +7,8 @@ aliases:
   - SDRAM
   - Memoria de acceso aleatorio dinámica síncrona
   - DRAM síncrona
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
 ---
 # Definición
 ---

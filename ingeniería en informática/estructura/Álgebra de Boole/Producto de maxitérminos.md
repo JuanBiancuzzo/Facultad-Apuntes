@@ -7,6 +7,9 @@ tags:
   - nota/facultad
 aliases:
   - Producto de sumas
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Álgebra proposicional/Resumen.md]]"
+  - "[[ingeniería en informática/estructura/Álgebra de Boole/Resumen.md]]"
 ---
 # Definición
 ---

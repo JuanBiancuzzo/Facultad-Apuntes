@@ -6,6 +6,9 @@ tags:
   - nota/facultad
 aliases:
   - Filtro RC#Respuesta en frecuencia
+vinculoFacultad:
+  - "[[ingeniería electrónica/intro/Circuitos con capacitores/Resumen.md]]"
+  - "[[ingeniería electrónica/intro/Respuesta en frecuencia/Resumen.md]]"
 ---
 # Definición
 ---

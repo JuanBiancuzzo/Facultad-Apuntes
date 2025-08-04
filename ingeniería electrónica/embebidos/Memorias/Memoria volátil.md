@@ -8,6 +8,8 @@ aliases:
   - Memoria volátil de acceso síncrono#Acceso síncrono
   - Memoria volátil de acceso en serie#Acceso en serie
   - Memoria volátil de acceso en paralelo#Acceso en paralelo
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
 ---
 # Definición
 ---

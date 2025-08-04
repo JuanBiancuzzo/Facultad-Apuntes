@@ -8,6 +8,8 @@ tags:
 aliases:
   - Punto de equilibro estable
   - Punto de equilibrio inestable
+vinculoFacultad:
+  - "[[ingeniería electrónica/control/Linealización/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

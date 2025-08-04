@@ -11,6 +11,8 @@ aliases:
   - Tensión inducida#^tension-inducida
   - Fuerza electromotriz inducida#^tension-inducida
   - FEM#^tension-inducida
+vinculoFacultad:
+  - "[[ingeniería en informática/fisica 2/Inducción electromagnética/Resumen.md]]"
 ---
 # Definición
 ---

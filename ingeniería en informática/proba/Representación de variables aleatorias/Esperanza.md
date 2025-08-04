@@ -13,6 +13,10 @@ aliases:
   - Energía de un proceso estocástico#^def-6-2-2
 etapa: ampliar
 referencias: []
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md]]"
+  - "[[ingeniería electrónica/estoca/Introducción a procesos aleatorios/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Representación de variables aleatorias/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

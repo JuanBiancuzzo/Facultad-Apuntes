@@ -10,6 +10,8 @@ tags:
   - nota/investigacion
 aliases:
   - Firma de una función
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Lenguaje C/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

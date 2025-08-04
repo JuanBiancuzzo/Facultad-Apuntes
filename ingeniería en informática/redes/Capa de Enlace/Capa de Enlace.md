@@ -6,6 +6,8 @@ tags:
   - carrera/ingeniería-electrónica/redes/Capa-de-Enlace
   - carrera/ingeniería-en-informática/redes/Capa-de-Enlace
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de Enlace/Resumen.md]]"
 ---
 # Definición
 ---

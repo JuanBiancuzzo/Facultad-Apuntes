@@ -7,6 +7,8 @@ aliases:
   - ReRAM
   - Memoria de acesso aleatorio resistiva
   - RRAM
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
 ---
 # Definición
 ---

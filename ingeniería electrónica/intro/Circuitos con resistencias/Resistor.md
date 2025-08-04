@@ -3,6 +3,8 @@ dia: 2023-01-23
 tags:
   - carrera/ingeniería-electrónica/intro/Circuitos-con-resistencias
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/intro/Circuitos con resistencias/Resumen.md]]"
 ---
 # Definición
 ---

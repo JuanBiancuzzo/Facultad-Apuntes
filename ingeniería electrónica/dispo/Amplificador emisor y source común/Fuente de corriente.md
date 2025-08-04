@@ -4,6 +4,9 @@ tags:
   - carrera/ingeniería-electrónica/circuitos/Fuentes-de-corriente-y-circuitos-con-cargas-activas
   - carrera/ingeniería-electrónica/dispo/Amplificador-emisor-y-source-común
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos/Fuentes de corriente y circuitos con cargas activas/Resumen.md]]"
+  - "[[ingeniería electrónica/dispo/Amplificador emisor y source común/Resumen.md]]"
 ---
 # Definición
 ---

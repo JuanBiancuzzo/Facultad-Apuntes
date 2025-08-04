@@ -8,6 +8,8 @@ aliases:
   - Coordenadas polares
   - Coordenadas circulares
 etapa: sin-empezar
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Nomenclatura/Resumen.md]]"
 ---
 # Definición
 ---

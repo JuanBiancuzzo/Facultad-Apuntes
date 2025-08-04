@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-en-informática/discreta/Grafos
   - data-structures
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

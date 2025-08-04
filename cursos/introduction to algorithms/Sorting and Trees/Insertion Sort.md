@@ -13,6 +13,8 @@ aliases:
   - Ordenamiento por inserción
   - Binary Insertion Sort
   - Ordenamiento por inserción binaria
+vinculoCurso:
+  - "[[cursos/introduction to algorithms/Sorting and Trees/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

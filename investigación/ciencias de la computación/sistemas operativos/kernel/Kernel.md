@@ -7,6 +7,8 @@ tags:
   - investigación/índice
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/sisop/Kernel/Resumen.md]]"
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

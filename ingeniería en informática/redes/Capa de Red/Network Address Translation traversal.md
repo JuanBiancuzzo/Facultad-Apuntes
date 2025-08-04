@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - NAT traversal
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de Red/Resumen.md]]"
 ---
 # Definición
 ---

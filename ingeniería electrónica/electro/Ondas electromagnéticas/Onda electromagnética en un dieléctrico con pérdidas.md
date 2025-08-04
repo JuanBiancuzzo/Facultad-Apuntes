@@ -7,6 +7,8 @@ aliases:
   - Ecuación de ondas reducidas de Helmholtz en un dieléctrico con pérdidas
   - Ecuación de Helmholtz en un dieléctrico con pérdidas
   - Impedancia intrínseca del medio con pérdida#^impedancia-intriseca-del-medio-con-perdidas
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Ondas electromagnéticas/Resumen.md]]"
 ---
 # Definición
 ---

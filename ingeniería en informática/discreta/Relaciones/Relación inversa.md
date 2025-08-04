@@ -3,6 +3,8 @@ dia: 2024-08-07
 tags:
   - carrera/ingeniería-en-informática/discreta/Relaciones
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Relaciones/Resumen.md]]"
 ---
 # Definición
 ---

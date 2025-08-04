@@ -3,6 +3,8 @@ dia: 2023-09-02
 tags:
   - carrera/ingeniería-electrónica/dispo/Física-de-semiconductores
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/dispo/Física de semiconductores/Resumen.md]]"
 ---
 # Definición
 ---

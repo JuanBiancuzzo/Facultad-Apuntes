@@ -9,6 +9,8 @@ aliases:
   - Ecuaciones del telegrafista#^ecuaciones-telegrafista
   - Impedancia característica de la línea ideal#^impedancia-caracteristica-linea
   - Modelo de constantes distribuidas
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Ondas confinadas/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -5,6 +5,8 @@ aliases:
 tags:
   - carrera/ingeniería-en-informática/sisop/La-abstracción-de-proceso
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/sisop/La abstracción de proceso/Resumen.md]]"
 ---
 # Definición
 ---

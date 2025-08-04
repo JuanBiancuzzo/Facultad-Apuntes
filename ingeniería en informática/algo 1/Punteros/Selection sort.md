@@ -10,6 +10,8 @@ tags:
   - nota/investigacion
 aliases:
   - Ordenamiento por selección
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Punteros/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

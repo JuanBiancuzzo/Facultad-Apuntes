@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Analizar-y-especificar-requisitos
   - nota/facultad
 etapa: sin-empezar
+vinculoFacultad:
+  - "[[ingeniería en informática/aninfo/Analizar y especificar requisitos/Resumen.md]]"
 ---
 # Definición
 ---

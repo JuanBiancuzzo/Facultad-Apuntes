@@ -12,6 +12,11 @@ referencias:
   - "898"
   - "1020"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
+  - "[[ingeniería en informática/aninfo/Diseño de software/Resumen.md]]"
+  - "[[ingeniería en informática/concurrentes/Introducción/Resumen.md]]"
+  - "[[ingeniería en informática/sisop/La abstracción de proceso/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

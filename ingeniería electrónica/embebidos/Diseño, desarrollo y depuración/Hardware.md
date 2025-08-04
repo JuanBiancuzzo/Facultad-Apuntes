@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 referencias:
   - "235"
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
 ---
 # Definición
 ---

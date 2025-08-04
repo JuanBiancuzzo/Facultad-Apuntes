@@ -10,6 +10,8 @@ tags:
 aliases:
   - RNN
   - RNR
+vinculoFacultad:
+  - "[[ingeniería en informática/orga/NLP/Resumen Parte 2.md]]"
 ---
 # Definición
 ---

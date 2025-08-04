@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - SAR
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Conversión analógica a digital y digital a analógica/Resumen.md]]"
 ---
 # Definición
 ---

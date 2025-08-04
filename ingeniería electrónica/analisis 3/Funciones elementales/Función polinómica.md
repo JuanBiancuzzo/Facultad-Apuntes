@@ -7,6 +7,8 @@ tags:
 aliases:
   - Polinomio
   - Grado de un polinomio#^grado
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Funciones elementales/Resumen.md]]"
 ---
 # Definición
 ---

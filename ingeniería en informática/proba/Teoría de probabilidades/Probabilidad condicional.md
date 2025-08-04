@@ -7,6 +7,9 @@ tags:
   - nota/facultad
 aliases:
   - Fórmula de Bayes
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Repaso/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Teoría de probabilidades/Resumen.md]]"
 ---
 # Definición
 ---

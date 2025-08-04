@@ -13,6 +13,8 @@ aliases:
   - Foreign-agent-to-home-agent registration protocol#^foreign-agent-to-home-agent-registration-protocol
   - Home-agent datagram encapsulation protocol#^home-agent-datagram-encapsulation-protocol
   - Foreign-agent decapsulation protocol#^foreign-agent-decapsulation-protocol
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
 ---
 # Definición
 ---

@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/analisis-3/Integrales-impropias
   - carrera/ingeniería-en-informática/analisis-3/Integrales-impropias
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Integrales impropias/Resumen.md]]"
 ---
 # Definción
 ---

@@ -5,6 +5,8 @@ tags:
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/Lenguaje-Python/Pandas
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/orga/Pandas/Resumen.md]]"
 ---
 # Definición
 ---

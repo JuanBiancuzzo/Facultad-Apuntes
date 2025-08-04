@@ -11,6 +11,8 @@ tags:
   - nota/investigacion
 aliases:
   - Teorema sigma-aditividad
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Repaso/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

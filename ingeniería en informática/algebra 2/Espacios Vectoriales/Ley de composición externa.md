@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - Producto por escalar
+vinculoFacultad:
+  - "[[ingeniería en informática/algebra 2/Espacios Vectoriales/Resumen.md]]"
 ---
 # Definición
 ---

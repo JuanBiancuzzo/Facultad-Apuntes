@@ -12,6 +12,9 @@ tags:
   - nota/facultad
 aliases:
   - Análisis de pequeña señal
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos/Circuitos con diodos/Resumen.md]]"
+  - "[[ingeniería electrónica/control/Linealización/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

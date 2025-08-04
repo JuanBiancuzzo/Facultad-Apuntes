@@ -8,6 +8,8 @@ referencias:
   - "225"
 aliases:
   - Campo solenoidal
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Funciones de varias variables/Resumen.md]]"
 ---
 # Definición
 ---

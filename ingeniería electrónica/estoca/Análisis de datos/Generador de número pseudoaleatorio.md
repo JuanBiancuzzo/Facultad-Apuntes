@@ -7,6 +7,8 @@ tags:
   - nota/facultad
 aliases:
   - PRNG
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Análisis de datos/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

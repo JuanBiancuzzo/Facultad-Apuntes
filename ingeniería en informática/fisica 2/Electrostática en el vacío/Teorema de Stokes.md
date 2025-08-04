@@ -8,6 +8,9 @@ tags:
   - nota/facultad
 aliases:
   - Ley del rotor
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Funciones de varias variables/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Electrostática en el vacío/Resumen.md]]"
 ---
 # Definición
 ---

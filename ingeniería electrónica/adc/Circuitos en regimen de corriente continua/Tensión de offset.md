@@ -7,6 +7,8 @@ tags:
   - carrera/ingeniería-electrónica/adc/Circuitos-en-regimen-de-corriente-continua
   - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-de-corriente-continua
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

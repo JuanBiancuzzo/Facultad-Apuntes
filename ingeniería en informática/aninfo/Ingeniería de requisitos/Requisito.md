@@ -3,6 +3,8 @@ dia: 2023-08-26
 tags:
   - carrera/ingeniería-en-informática/aninfo/Ingeniería-de-requisitos
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/aninfo/Ingeniería de requisitos/Resumen.md]]"
 ---
 # Definición
 ---

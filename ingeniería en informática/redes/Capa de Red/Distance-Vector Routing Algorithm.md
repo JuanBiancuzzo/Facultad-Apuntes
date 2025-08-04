@@ -7,6 +7,8 @@ tags:
 aliases:
   - DV Routing Algorithm
   - DV Algoritmo de ruteo
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de Red/Resumen.md]]"
 ---
 # Definición
 ---

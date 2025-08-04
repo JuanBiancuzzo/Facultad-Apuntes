@@ -3,6 +3,8 @@ dia: 2024-04-29
 tags:
   - carrera/ingeniería-electrónica/señales/Muestreo-e-Interpolación
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/señales/Muestreo e Interpolación/Resumen.md]]"
 ---
 # Definición
 ---

@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - BPMN
+vinculoFacultad:
+  - "[[ingeniería en informática/aninfo/Ingeniería de software/Resumen.md]]"
 ---
 # Definición
 ---

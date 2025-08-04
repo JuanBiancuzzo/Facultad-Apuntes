@@ -7,6 +7,8 @@ tags:
   - nota/investigacion
 aliases:
   - Flujo de un grafo
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

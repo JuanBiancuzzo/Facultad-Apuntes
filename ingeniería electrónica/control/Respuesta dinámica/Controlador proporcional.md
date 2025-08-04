@@ -7,6 +7,8 @@ referencias:
 tags:
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

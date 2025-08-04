@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/analisis-2/Propiedades-de-funciones
   - carrera/ingeniería-en-informática/analisis-2/Propiedades-de-funciones
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Propiedades de funciones/Resumen.md]]"
 ---
 # Definición
 ---

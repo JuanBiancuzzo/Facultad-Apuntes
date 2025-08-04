@@ -8,6 +8,9 @@ tags:
   - nota/facultad
 aliases:
   - Operador de Laplace
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Ecuaciones diferenciales/Resumen.md]]"
+  - "[[ingeniería en informática/analisis 2/Funciones de varias variables/Resumen.md]]"
 ---
 # Definición
 ---

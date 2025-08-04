@@ -10,6 +10,8 @@ aliases:
   - Ecuación escalar de D' Alembert
   - Onda progresiva#^onda-progresiva
   - Onda regresiva#^onda-regresiva
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Ondas electromagnéticas/Resumen.md]]"
 ---
 # Definición
 ---

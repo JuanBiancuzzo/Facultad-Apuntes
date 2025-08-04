@@ -5,6 +5,8 @@ aliases:
 tags:
   - carrera/ingeniería-electrónica/seguridad/Ergonomia
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/seguridad/Ergonomia/Resumen.md]]"
 ---
 # Definición
 ---

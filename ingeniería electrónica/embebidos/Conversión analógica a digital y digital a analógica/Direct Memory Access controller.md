@@ -11,6 +11,8 @@ aliases:
   - Controlador de Acceso Directo a Memoria
   - DMAC
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Conversión analógica a digital y digital a analógica/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

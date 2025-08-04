@@ -8,6 +8,8 @@ tags:
   - nota/investigacion
 aliases:
   - Archivo de cabecera
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Lenguaje C/Resumen.md]]"
 ---
 # Definición
 ---

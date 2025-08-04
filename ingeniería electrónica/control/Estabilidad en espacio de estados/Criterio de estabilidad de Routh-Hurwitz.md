@@ -8,6 +8,8 @@ tags:
   - nota/facultad
 aliases:
   - Routh-Hurwitz's Stability Criterion
+vinculoFacultad:
+  - "[[ingeniería electrónica/control/Estabilidad en espacio de estados/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

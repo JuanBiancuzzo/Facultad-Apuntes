@@ -10,6 +10,12 @@ tags:
   - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
   - nota/facultad
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Repaso/Resumen.md]]"
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
+  - "[[ingeniería en informática/discreta/Relaciones/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Representación de variables aleatorias/Resumen.md]]"
+  - "[[licenciatura en ciencias matemáticas/algebra 1/Conjuntos, relaciones y funciones/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

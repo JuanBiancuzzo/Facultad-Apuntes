@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - CC
+vinculoFacultad:
+  - "[[ingeniería en informática/fisica 2/Circuitos de corrientes no dependientes del tiempo/Resumen.md]]"
 ---
 # Definición
 ---

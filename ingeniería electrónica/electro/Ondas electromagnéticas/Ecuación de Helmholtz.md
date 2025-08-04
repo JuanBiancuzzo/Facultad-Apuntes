@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 referencias:
   - "282"
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Ondas electromagnéticas/Resumen.md]]"
 ---
 # Definición
 ---

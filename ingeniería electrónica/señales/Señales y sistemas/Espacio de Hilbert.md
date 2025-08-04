@@ -3,6 +3,8 @@ dia: 2024-03-13
 tags:
   - carrera/ingeniería-electrónica/señales/Señales-y-sistemas
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/señales/Señales y sistemas/Resumen.md]]"
 ---
 # Definición
 ---

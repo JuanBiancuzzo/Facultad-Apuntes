@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/adc/Circuitos-acoplados-magnéticamente
   - carrera/ingeniería-en-informática/adc/Circuitos-acoplados-magnéticamente
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/adc/Circuitos acoplados magnéticamente/Resumen.md]]"
 ---
 # Definición
 ---

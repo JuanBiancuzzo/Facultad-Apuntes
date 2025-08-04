@@ -3,6 +3,8 @@ dia: 2023-08-26
 tags:
   - carrera/ingeniería-en-informática/aninfo/Peopleware
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/aninfo/Peopleware/Resumen.md]]"
 ---
 # Definición
 ---

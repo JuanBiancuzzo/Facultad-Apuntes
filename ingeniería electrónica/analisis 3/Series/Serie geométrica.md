@@ -9,6 +9,9 @@ tags:
 referencias:
   - "412"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Series/Resumen.md]]"
+  - "[[licenciatura en ciencias matemáticas/algebra 1/Números naturales e Inducción/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - Intra-AS routing
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de Red/Resumen.md]]"
 ---
 # Definición
 ---

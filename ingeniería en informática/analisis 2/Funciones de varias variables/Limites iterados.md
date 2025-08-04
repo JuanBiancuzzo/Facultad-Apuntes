@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/analisis-2/Funciones-de-varias-variables
   - carrera/ingeniería-en-informática/analisis-2/Funciones-de-varias-variables
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Funciones de varias variables/Resumen.md]]"
 ---
 # Definición
 ---

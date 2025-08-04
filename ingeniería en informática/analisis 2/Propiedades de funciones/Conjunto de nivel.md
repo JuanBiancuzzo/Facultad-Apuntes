@@ -8,6 +8,8 @@ aliases:
   - Curva de nivel
 etapa: ampliar
 referencias: []
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Propiedades de funciones/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

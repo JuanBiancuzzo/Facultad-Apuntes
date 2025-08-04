@@ -11,6 +11,9 @@ tags:
   - carrera/ingeniería-en-informática/redes/Redes-de-computadoras
   - nota/facultad
 etapa: empezado
+vinculoFacultad:
+  - "[[ingeniería en informática/distribuidos/Herramientas de Diseño/Resumen.md]]"
+  - "[[ingeniería en informática/redes/Redes de computadoras/Resumen.md]]"
 ---
 # Definición
 ---

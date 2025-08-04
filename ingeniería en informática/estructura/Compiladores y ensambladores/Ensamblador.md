@@ -5,6 +5,9 @@ tags:
   - carrera/ingeniería-electrónica/estructura/Compiladores-y-ensambladores
   - carrera/ingeniería-en-informática/estructura/Compiladores-y-ensambladores
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
+  - "[[ingeniería en informática/estructura/Compiladores y ensambladores/Resumen.md]]"
 ---
 # Definición
 ---

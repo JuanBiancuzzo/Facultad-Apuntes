@@ -3,6 +3,8 @@ dia: 2024-08-20
 tags:
   - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
 ---
 # Definición
 ---

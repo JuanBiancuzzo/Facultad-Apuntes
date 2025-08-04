@@ -3,6 +3,8 @@ dia: 2024-09-29
 tags:
   - carrera/ingeniería-electrónica/electro/Ondas-electromagnéticas-en-el-vacío
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Ondas electromagnéticas/Resumen.md]]"
 ---
 # Definición
 ---

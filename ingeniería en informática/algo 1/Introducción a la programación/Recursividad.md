@@ -10,6 +10,9 @@ tags:
   - nota/investigacion
 aliases:
   - Recursividad indirecta#Recursividad indirecta
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Introducción a la programación/Resumen.md]]"
+  - "[[ingeniería en informática/algo 1/Lenguaje C/Resumen.md]]"
 ---
 # Definición
 ---

@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/fisica-2/Termodinámica
   - carrera/ingeniería-en-informática/fisica-2/Termodinámica
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/fisica 2/Termodinámica/Resumen.md]]"
 ---
 # Definición
 ---

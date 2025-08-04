@@ -3,6 +3,8 @@ dia: 2023-08-23
 tags:
   - carrera/ingeniería-electrónica/dispo/Juntura-PN
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/dispo/Juntura PN/Resumen.md]]"
 ---
 # Definición
 ---

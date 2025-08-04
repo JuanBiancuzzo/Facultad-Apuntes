@@ -9,6 +9,8 @@ tags:
   - nota/facultad
 nombreDistribucion: Uniforme multidimensional
 tipoDistribucion: multivariada
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md]]"
 ---
 # Definición
 ---

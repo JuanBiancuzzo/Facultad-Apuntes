@@ -5,6 +5,9 @@ tags:
   - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Conjuntos-relaciones-y-funciones
   - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Relaciones/Resumen.md]]"
+  - "[[licenciatura en ciencias matemáticas/algebra 1/Conjuntos, relaciones y funciones/Resumen.md]]"
 ---
 # Definición
 ---

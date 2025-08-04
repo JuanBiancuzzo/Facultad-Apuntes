@@ -11,6 +11,8 @@ aliases:
   - Realimentación por relación de tensiones
   - Series-Shunt Feedback
   - MVSV
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

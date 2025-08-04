@@ -11,6 +11,8 @@ aliases:
   - PDE
 referencias:
   - "230"
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Ecuaciones diferenciales/Resumen.md]]"
 ---
 # Definición
 ---

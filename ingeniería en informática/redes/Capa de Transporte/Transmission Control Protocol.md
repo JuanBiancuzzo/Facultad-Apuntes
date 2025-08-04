@@ -13,6 +13,10 @@ tags:
   - investigación/protocolos/protocolo-de-internet
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/distribuidos/Herramientas de Diseño/Resumen.md]]"
+  - "[[ingeniería en informática/redes/Capa de Transporte/Resumen.md]]"
+  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
 ---
 # Definición
 ---

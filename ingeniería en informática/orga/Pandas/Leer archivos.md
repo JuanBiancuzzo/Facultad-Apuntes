@@ -7,6 +7,9 @@ tags:
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/Lenguaje-Python/Spark
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/orga/Pandas/Resumen.md]]"
+  - "[[ingeniería en informática/orga/Spark/Resumen.md]]"
 ---
 # Definición
 ---

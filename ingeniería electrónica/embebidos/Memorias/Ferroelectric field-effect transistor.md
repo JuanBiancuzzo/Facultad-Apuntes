@@ -6,6 +6,8 @@ tags:
 aliases:
   - FeFET
   - Ferroelectric FET
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
 ---
 # Definición
 ---

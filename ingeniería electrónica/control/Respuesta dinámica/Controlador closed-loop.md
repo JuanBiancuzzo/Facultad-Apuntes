@@ -25,6 +25,10 @@ aliases:
   - Negative feedback#Realimentación negativa
   - Realimentación positiva#Realimentación positiva
   - Positive feedback#Realimentación positiva
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos 2/Realimentación negativa/Resumen.md]]"
+  - "[[ingeniería electrónica/circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Resumen.md]]"
+  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

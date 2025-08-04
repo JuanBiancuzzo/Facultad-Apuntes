@@ -8,6 +8,8 @@ tags:
   - nota/investigacion
 aliases:
   - Result
+vinculoFacultad:
+  - "[[ingeniería en informática/taller/Sintaxis/Resumen.md]]"
 ---
 # Definición
 ---

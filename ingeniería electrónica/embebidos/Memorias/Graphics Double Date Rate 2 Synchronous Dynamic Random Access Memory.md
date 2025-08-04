@@ -9,6 +9,8 @@ aliases:
   - GDDR 2 Synchronous Dynamic Random Access Memory
   - Graphics Double Date Rate 2 SDRAM
   - DDR gráfico
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
 ---
 # Definición
 ---

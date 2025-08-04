@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - Espacio de direcciones
+vinculoFacultad:
+  - "[[ingeniería en informática/sisop/Virtualización de memoria/Resumen.md]]"
 ---
 # Definición
 ---

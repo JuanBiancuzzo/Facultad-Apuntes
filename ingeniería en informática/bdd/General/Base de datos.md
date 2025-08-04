@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - BDD
+vinculoFacultad:
+  - "[[ingeniería en informática/bdd/General/Resumen.md]]"
 ---
 # Definición
 ---

@@ -6,6 +6,8 @@ tags:
 aliases:
   - Sistemas activados por intervalos
   - T-TS
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
 ---
 # Definición
 ---

@@ -4,6 +4,9 @@ tags:
   - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - carrera/ingeniería-electrónica/señales/Muestreo-e-Interpolación
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
+  - "[[ingeniería electrónica/señales/Muestreo e Interpolación/Resumen.md]]"
 ---
 # Definición
 ---

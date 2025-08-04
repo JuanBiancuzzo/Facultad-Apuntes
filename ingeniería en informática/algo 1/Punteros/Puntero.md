@@ -14,6 +14,10 @@ tags:
 aliases:
   - Operador de Dirección#^operador-direccion
   - Operador de Indirección#^operador-indireccion
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Punteros/Resumen.md]]"
+vinculoCurso:
+  - "[[cursos/introduction to algorithms/Introduction/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

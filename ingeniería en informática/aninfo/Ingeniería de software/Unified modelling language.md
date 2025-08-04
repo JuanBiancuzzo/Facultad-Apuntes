@@ -12,6 +12,10 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Ingeniería-de-software
   - carrera/ingeniería-en-informática/distribuidos/Introducción
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
+  - "[[ingeniería en informática/aninfo/Ingeniería de software/Resumen.md]]"
+  - "[[ingeniería en informática/distribuidos/Introduccion/Resumen.md]]"
 ---
 # Definición
 ---

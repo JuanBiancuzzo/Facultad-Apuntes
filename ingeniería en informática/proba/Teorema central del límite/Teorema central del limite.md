@@ -5,6 +5,8 @@ tags:
   - carrera/ingeniería-en-informática/proba/Teorema-central-del-límite
   - nota/facultad
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería en informática/proba/Teorema central del límite/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

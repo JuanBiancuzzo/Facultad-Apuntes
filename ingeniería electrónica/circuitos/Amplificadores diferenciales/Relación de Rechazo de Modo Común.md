@@ -10,6 +10,8 @@ aliases:
   - RRMC
   - Common Mode Rejection Ratio
   - CMRR
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos/Amplificadores diferenciales/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

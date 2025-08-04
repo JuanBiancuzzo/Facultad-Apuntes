@@ -3,6 +3,8 @@ dia: 2023-06-13
 tags:
   - carrera/ingeniería-electrónica/seguridad/Contaminación-del-aire
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/seguridad/Contaminación del aire/Resumen.md]]"
 ---
 # Definición
 ---

@@ -8,6 +8,8 @@ tags:
   - nota/investigacion
 aliases:
   - Dup2 system call
+vinculoFacultad:
+  - "[[ingeniería en informática/sisop/File system/Resumen.md]]"
 ---
 # Definición
 ---

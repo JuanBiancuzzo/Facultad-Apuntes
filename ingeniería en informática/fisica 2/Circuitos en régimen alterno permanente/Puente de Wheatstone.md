@@ -8,6 +8,9 @@ tags:
   - carrera/ingeniería-electrónica/intro/Circuitos-con-resistencias
   - carrera/ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/intro/Circuitos con resistencias/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Circuitos en régimen alterno permanente/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

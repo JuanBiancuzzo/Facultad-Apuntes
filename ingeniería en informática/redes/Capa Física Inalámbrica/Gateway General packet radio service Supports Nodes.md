@@ -7,6 +7,8 @@ tags:
 aliases:
   - Gateway GPRS Supports Nodes
   - GGSN
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
 ---
 # Definición
 ---

@@ -14,6 +14,8 @@ aliases:
   - Camino simple#Camino simple (Path)
   - Circuito#Circuito (Circuit)
   - Ciclo#Ciclo (Cicle)
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

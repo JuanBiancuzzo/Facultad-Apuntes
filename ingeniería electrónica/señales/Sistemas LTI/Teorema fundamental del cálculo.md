@@ -7,6 +7,8 @@ tags:
   - nota/facultad
 aliases:
   - Regla de Leibniz
+vinculoFacultad:
+  - "[[ingeniería electrónica/señales/Sistemas LTI/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

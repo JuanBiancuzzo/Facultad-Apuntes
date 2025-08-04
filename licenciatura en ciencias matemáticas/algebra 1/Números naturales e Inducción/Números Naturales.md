@@ -11,6 +11,8 @@ aliases:
   - Axiomas de Peano#Los axiomas de Peano
   - Número natural
   - Sucesor#Los axiomas de Peano
+vinculoFacultad:
+  - "[[licenciatura en ciencias matemáticas/algebra 1/Números naturales e Inducción/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

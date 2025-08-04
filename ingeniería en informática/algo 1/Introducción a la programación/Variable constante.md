@@ -12,6 +12,9 @@ tags:
 referencias:
   - "845"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Introducción a la programación/Resumen.md]]"
+  - "[[ingeniería en informática/taller/Sintaxis/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -7,6 +7,8 @@ tags:
 aliases:
   - Serving GPRS Support Nodes
   - SGSN
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
 ---
 # Definición
 ---

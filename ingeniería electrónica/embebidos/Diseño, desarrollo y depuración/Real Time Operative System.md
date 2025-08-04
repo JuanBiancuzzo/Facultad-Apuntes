@@ -6,6 +6,8 @@ tags:
 aliases:
   - Sistema Operativo de Tiempo Real
   - RTOS
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
 ---
 # Definición
 ---

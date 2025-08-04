@@ -5,6 +5,8 @@ referencias:
 tags:
   - curso/ciencia-de-datos-para-salud-mental-y-psicología/Psicometría
   - nota/curso
+vinculoCurso:
+  - "[[cursos/ciencia de datos para salud mental y psicología/Psicometría/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

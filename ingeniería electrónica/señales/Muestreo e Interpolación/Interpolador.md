@@ -6,6 +6,8 @@ aliases:
 tags:
   - carrera/ingeniería-electrónica/señales/Muestreo-e-Interpolación
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/señales/Muestreo e Interpolación/Resumen.md]]"
 ---
 # Definición
 ---

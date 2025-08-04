@@ -9,6 +9,8 @@ aliases:
   - Circuito capacitivo puro#Circuito capacitivo puro
   - Circuito inductivo puro#Circuito inductivo puro
   - CA
+vinculoFacultad:
+  - "[[ingeniería en informática/fisica 2/Circuitos en régimen alterno permanente/Resumen.md]]"
 ---
 # Definición
 ---

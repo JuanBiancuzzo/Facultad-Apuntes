@@ -6,6 +6,8 @@ tags:
 referencias:
   - "787"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería en informática/sisop/La abstracción de proceso/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

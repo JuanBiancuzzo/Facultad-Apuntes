@@ -7,6 +7,8 @@ aliases:
   - SSRAM
   - Memoria de acceso aleatorio estático síncrona
   - SRAM síncrona
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
 ---
 # Definición
 ---

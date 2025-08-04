@@ -3,6 +3,8 @@ dia: 2023-10-25
 tags:
   - carrera/ingeniería-en-informática/aninfo/Prototipado-y-experiencia-del-usuario
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/aninfo/Prototipado y experiencia del usuario/Resumen.md]]"
 ---
 # Definición
 ---

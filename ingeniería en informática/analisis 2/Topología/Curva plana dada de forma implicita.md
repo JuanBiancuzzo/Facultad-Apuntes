@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/analisis-2/Topología/2
   - carrera/ingeniería-en-informática/analisis-2/Topología/2
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Topología/Resumen Parte 2.md]]"
 ---
 # Definición
 ---

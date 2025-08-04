@@ -5,6 +5,8 @@ aliases:
 tags:
   - carrera/ingeniería-electrónica/dispo/Dispositivos-de-potencia
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/dispo/Dispositivos de potencia/Resumen.md]]"
 ---
 # Definición
 ---

@@ -3,6 +3,8 @@ dia: 2024-01-12
 tags:
   - carrera/ingeniería-electrónica/legal/Obligaciones
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/legal/Obligaciones/Resumen.md]]"
 ---
 # Definición
 ---

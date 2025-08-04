@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/adc/Circuitos-en-regimen-senoidal-permanente
   - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-senoidal-permanente
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/adc/Circuitos en regimen senoidal permanente/Resumen.md]]"
 ---
 # Definición
 ---

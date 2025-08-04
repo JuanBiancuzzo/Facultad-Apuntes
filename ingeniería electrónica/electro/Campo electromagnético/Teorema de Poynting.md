@@ -7,6 +7,8 @@ aliases:
   - Vector de Poyting
   - Intensidad de la radiación de una onda electromagnética#^intensidad-radiacion
   - Potencia perdida de una onda electromagnética#En medios materiales
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Campo electromagnético/Resumen.md]]"
 ---
 # Definición
 ---

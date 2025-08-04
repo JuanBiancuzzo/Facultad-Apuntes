@@ -7,6 +7,8 @@ tags:
   - nota/investigacion
 aliases:
   - Memory-Mapped Peripherals
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Estrategias de control de periféricos/Resumen.md]]"
 ---
 # Definición
 ---

@@ -8,6 +8,8 @@ tags:
   - carrera/ingeniería-electrónica/redes/Capa-de-Transporte
   - carrera/ingeniería-en-informática/redes/Capa-de-Transporte
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de Transporte/Resumen.md]]"
 ---
 # Definición
 ---

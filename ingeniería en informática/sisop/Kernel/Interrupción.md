@@ -7,6 +7,10 @@ tags:
   - nota/facultad
 aliases:
   - Excepción
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Estrategias de control de periféricos/Resumen.md]]"
+  - "[[ingeniería electrónica/embebidos/Microcontroladores de 32 bits/Resumen.md]]"
+  - "[[ingeniería en informática/sisop/Kernel/Resumen.md]]"
 ---
 # Definición
 ---

@@ -6,6 +6,9 @@ tags:
   - carrera/licenciatura-en-ciencias-de-datos/algebra-1/Números-naturales-e-Inducción
   - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Series/Resumen.md]]"
+  - "[[licenciatura en ciencias matemáticas/algebra 1/Números naturales e Inducción/Resumen.md]]"
 ---
 # Definición
 ---

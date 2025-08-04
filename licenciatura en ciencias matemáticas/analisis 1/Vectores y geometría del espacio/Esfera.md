@@ -9,6 +9,8 @@ tags:
   - carrera/licenciatura-en-ciencias-físicas/analisis-1/Vectores-y-geometría-del-espacio
   - carrera/licenciatura-en-ciencias-matemáticas/analisis-1/Vectores-y-geometría-del-espacio
   - nota/facultad
+vinculoFacultad:
+  - "[[licenciatura en ciencias matemáticas/analisis 1/Vectores y geometría del espacio/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

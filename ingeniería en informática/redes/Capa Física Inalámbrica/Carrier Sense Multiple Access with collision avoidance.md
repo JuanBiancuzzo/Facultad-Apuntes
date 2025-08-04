@@ -13,6 +13,8 @@ aliases:
   - RTS#^RTS
   - Clear to Send#^CTS
   - CTS#^CTS
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
 ---
 # Definición
 ---

@@ -12,6 +12,9 @@ aliases:
 referencias:
   - "240"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
+  - "[[ingeniería en informática/distribuidos/Herramientas de Diseño/Resumen.md]]"
 ---
 # Definición
 ---

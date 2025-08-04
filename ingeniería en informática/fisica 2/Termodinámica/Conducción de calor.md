@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - Ley de Fourier
+vinculoFacultad:
+  - "[[ingeniería en informática/fisica 2/Termodinámica/Resumen.md]]"
 ---
 # Definición
 ---

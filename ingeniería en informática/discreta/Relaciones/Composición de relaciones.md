@@ -12,6 +12,10 @@ aliases:
 referencias:
   - "411"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Propiedades de funciones/Resumen.md]]"
+  - "[[ingeniería en informática/discreta/Relaciones/Resumen.md]]"
+  - "[[licenciatura en ciencias matemáticas/algebra 1/Conjuntos, relaciones y funciones/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

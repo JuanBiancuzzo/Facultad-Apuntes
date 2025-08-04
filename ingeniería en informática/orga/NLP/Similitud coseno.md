@@ -9,6 +9,8 @@ tags:
   - nota/investigacion
 aliases:
   - Distancia coseno
+vinculoFacultad:
+  - "[[ingeniería en informática/orga/NLP/Resumen Parte 1.md]]"
 ---
 # Definición
 ---

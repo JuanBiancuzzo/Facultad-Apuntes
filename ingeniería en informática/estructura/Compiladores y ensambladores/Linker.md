@@ -7,6 +7,9 @@ tags:
   - nota/facultad
 aliases:
   - Link-editor#Link-Editor
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
+  - "[[ingeniería en informática/estructura/Compiladores y ensambladores/Resumen.md]]"
 ---
 # Definición
 ---

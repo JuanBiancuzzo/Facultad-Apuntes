@@ -12,6 +12,9 @@ aliases:
 referencias:
   - "217"
 etapa: empezado
+vinculoFacultad:
+  - "[[ingeniería electrónica/adc/Circuitos acoplados magnéticamente/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Inducción electromagnética/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

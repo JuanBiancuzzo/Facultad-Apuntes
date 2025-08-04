@@ -5,6 +5,9 @@ tags:
   - carrera/ingeniería-electrónica/proba/Variables-y-vectores-aleatorios
   - carrera/ingeniería-en-informática/proba/Variables-y-vectores-aleatorios
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Repaso/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Variables y vectores aleatorios/Resumen.md]]"
 ---
 # Definición
 ---

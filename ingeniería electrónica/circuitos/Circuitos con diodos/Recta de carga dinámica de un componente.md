@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - Curva de carga dinámica de un componente
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos/Circuitos con diodos/Resumen.md]]"
 ---
 # Definición
 ---

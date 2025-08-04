@@ -12,6 +12,8 @@ aliases:
   - AVL Sort
   - Ordenamiento con árbol Adelson-Velsky and Landis
   - Ordenamiento con árbol AVL
+vinculoCurso:
+  - "[[cursos/introduction to algorithms/Sorting and Trees/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

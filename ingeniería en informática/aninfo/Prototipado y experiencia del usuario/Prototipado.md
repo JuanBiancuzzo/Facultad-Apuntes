@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - Prototipo
+vinculoFacultad:
+  - "[[ingeniería en informática/aninfo/Prototipado y experiencia del usuario/Resumen.md]]"
 ---
 # Definición
 ---

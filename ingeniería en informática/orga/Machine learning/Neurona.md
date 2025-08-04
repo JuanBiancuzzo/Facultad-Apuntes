@@ -7,6 +7,8 @@ tags:
   - investigación/machine-Learning/Red-Neuronal
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/orga/Machine learning/Resumen.md]]"
 ---
 # Definición
 ---

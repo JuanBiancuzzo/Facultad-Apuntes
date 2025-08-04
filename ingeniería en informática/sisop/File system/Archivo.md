@@ -7,6 +7,9 @@ tags:
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Manejo de archivos/Resumen.md]]"
+  - "[[ingeniería en informática/sisop/File system/Resumen.md]]"
 ---
 # Definición
 ---

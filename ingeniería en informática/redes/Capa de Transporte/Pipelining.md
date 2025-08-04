@@ -5,6 +5,9 @@ tags:
   - carrera/ingeniería-electrónica/redes/Capa-de-Transporte
   - carrera/ingeniería-en-informática/redes/Capa-de-Transporte
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Microcontroladores de 32 bits/Resumen.md]]"
+  - "[[ingeniería en informática/redes/Capa de Transporte/Resumen.md]]"
 ---
 # Definición
 ---

@@ -9,6 +9,8 @@ aliases:
 referencias:
   - "212"
 etapa: terminado
+vinculoFacultad:
+  - "[[ingeniería en informática/fisica 2/Circuitos de corrientes no dependientes del tiempo/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -3,6 +3,8 @@ dia: 2023-10-22
 tags:
   - carrera/ingeniería-en-informática/aninfo/Requisitos-en-contexto
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/aninfo/Requisitos en contexto/Resumen.md]]"
 ---
 # Definición
 ---

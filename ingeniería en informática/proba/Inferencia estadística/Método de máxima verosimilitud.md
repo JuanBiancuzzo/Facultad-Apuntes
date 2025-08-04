@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - EMV
+vinculoFacultad:
+  - "[[ingeniería en informática/proba/Inferencia estadística/Resumen.md]]"
 ---
 # Definición
 ---

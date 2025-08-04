@@ -5,6 +5,9 @@ tags:
   - carrera/ingeniería-electrónica/intro/Circuitos-con-capacitores
   - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/intro/Circuitos con capacitores/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Electrostática en conductores y dieléctricos/Resumen.md]]"
 ---
 # Definición
 ---

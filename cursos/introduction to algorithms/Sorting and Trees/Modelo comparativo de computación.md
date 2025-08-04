@@ -6,6 +6,8 @@ referencias:
 tags:
   - curso/introduction-to-algorithms/Sorting-and-Trees
   - nota/curso
+vinculoCurso:
+  - "[[cursos/introduction to algorithms/Sorting and Trees/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -10,6 +10,8 @@ aliases:
   - Rotacional
   - Campo conservativo
   - Campo irrotacional
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Funciones de varias variables/Resumen.md]]"
 ---
 # Definición
 ---

@@ -5,6 +5,8 @@ aliases:
 tags:
   - carrera/ingeniería-en-informática/aninfo/Ingeniería-de-software
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/aninfo/Ingeniería de software/Resumen.md]]"
 ---
 # Definición
 ---

@@ -6,6 +6,9 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Transformada-de-Laplace
   - carrera/ingeniería-en-informática/proba/Función-de-variable-aleatoria
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Transformada de Laplace/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Función de variable aleatoria/Resumen.md]]"
 ---
 # Definición
 ---

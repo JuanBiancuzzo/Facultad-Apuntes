@@ -11,6 +11,10 @@ aliases:
   - Material LIH
   - Susceptibilidad dieléctrica#^susceptibilidad-dielectrica
   - Susceptibilidad magnética#^susceptibilidad-magnetica
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Ondas electromagnéticas/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Electrostática en conductores y dieléctricos/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Magnetismo estacionario en medios materiales/Resumen.md]]"
 ---
 # Definición
 ---

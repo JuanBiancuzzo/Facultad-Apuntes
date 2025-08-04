@@ -7,6 +7,8 @@ tags:
 aliases:
   - Función C-lineal
   - Función R-lineal
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Transformaciones conformes/Resumen.md]]"
 ---
 # Definición
 ---

@@ -10,6 +10,9 @@ referencias:
   - "899"
   - "873"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
+  - "[[ingeniería electrónica/señales/Sistemas LTI/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

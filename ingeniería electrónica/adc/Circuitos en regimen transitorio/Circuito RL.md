@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/adc/Circuitos-en-regimen-transitorio
   - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-transitorio
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/adc/Circuitos en regimen transitorio/Resumen.md]]"
 ---
 # Definición
 ---

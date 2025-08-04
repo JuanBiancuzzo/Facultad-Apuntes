@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - Bajo nivel de potencia#Bajo nivel de potencia
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos/Dispositivos de control de señal y en conmutación/Resumen.md]]"
 ---
 # Definición
 ---

@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/proba/Proceso-de-Poisson
   - carrera/ingeniería-en-informática/proba/Proceso-de-Poisson
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/proba/Proceso de Poisson/Resumen.md]]"
 ---
 # Definición
 ---

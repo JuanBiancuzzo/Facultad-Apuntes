@@ -3,6 +3,8 @@ dia: 2023-01-23
 tags:
   - carrera/ingeniería-electrónica/intro/Potencia
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/intro/Potencia/Resumen.md]]"
 ---
 # Definición
 ---

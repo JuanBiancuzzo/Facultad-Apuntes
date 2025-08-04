@@ -9,6 +9,9 @@ aliases:
   - Digital to analog converter
   - D/A converter
   - DAC
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Conversión analógica a digital y digital a analógica/Resumen.md]]"
+  - "[[ingeniería electrónica/señales/Muestreo e Interpolación/Resumen.md]]"
 ---
 # Definición
 ---

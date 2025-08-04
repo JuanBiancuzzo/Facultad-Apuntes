@@ -8,6 +8,8 @@ aliases:
   - Derivada direccional máxima
   - Derivada direccional mínima
   - Derivada direccional nula
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Propiedades de funciones/Resumen.md]]"
 ---
 # Definición
 ---

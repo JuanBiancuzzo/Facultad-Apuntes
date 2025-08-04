@@ -10,6 +10,8 @@ tags:
   - nota/investigacion
 aliases:
   - MPLS
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de Enlace/Resumen.md]]"
 ---
 # Definición
 ---

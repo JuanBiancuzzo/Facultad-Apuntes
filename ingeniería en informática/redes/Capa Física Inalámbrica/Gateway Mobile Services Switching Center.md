@@ -7,6 +7,8 @@ tags:
 aliases:
   - Home MSC
   - GMSC
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
 ---
 # Definición
 ---

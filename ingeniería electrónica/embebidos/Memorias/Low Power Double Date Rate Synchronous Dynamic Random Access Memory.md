@@ -10,6 +10,8 @@ aliases:
   - Low Power DDR SDRAM
   - Low Power Double Date Rate Synchronous Dynamic Random Access Memory
   - DDR de bajo consumo
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
 ---
 # Definición
 ---

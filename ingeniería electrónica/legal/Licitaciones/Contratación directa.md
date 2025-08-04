@@ -3,6 +3,8 @@ dia: 2024-02-13
 tags:
   - carrera/ingeniería-electrónica/legal/Licitaciones
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/legal/Licitaciones/Resumen.md]]"
 ---
 # Definición
 ---

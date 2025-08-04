@@ -5,6 +5,8 @@ tags:
   - investigación/ciencias-de-la-computación/algoritmos
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

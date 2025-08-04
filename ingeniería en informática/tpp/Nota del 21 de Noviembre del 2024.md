@@ -3,6 +3,9 @@ dia: 2024-11-21
 tags:
   - carrera/ingeniería-en-informática/tpp
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/tpp/Presentación/Resumen.md]]"
+  - "[[ingeniería en informática/tpp/Propuesta/Resumen.md]]"
 ---
 # Progreso
 ---

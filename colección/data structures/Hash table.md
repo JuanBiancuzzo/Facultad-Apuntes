@@ -14,6 +14,10 @@ aliases:
   - Tabla de hash
   - Diccionario
 nombreEstructura: Hash table
+vinculoCurso:
+  - "[[cursos/introduction to algorithms/Graphs/Resumen.md]]"
+  - "[[cursos/introduction to algorithms/Hashing/Resumen.md]]"
+  - "[[cursos/introduction to algorithms/Numerics/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

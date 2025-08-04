@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/fisica-2/Inducción-electromagnética
   - carrera/ingeniería-en-informática/fisica-2/Inducción-electromagnética
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/fisica 2/Inducción electromagnética/Resumen.md]]"
 ---
 # Definición
 ---

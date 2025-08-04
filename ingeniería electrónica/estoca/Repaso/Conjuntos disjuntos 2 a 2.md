@@ -8,6 +8,9 @@ tags:
   - nota/facultad
 aliases:
   - Conjuntos mutuamente excluyentes 2 a 2
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Repaso/Resumen.md]]"
+  - "[[ingeniería en informática/discreta/Álgebra de conjuntos/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/estructura/Diseño-combinacional
   - carrera/ingeniería-en-informática/estructura/Diseño-combinacional
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/estructura/Diseño combinacional/Resumen.md]]"
 ---
 # Definición
 ---

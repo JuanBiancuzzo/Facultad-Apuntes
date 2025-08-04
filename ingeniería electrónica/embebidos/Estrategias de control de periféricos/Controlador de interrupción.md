@@ -10,6 +10,9 @@ aliases:
   - Non Maskable Interrupt#^NMI
   - Interrupción no enmascarable#^NMI
   - NMI#^NMI
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Estrategias de control de periféricos/Resumen.md]]"
+  - "[[ingeniería electrónica/embebidos/Microcontroladores de 32 bits/Resumen.md]]"
 ---
 # Definición
 ---

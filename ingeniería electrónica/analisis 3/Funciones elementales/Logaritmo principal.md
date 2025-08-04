@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/analisis-3/Funciones-elementales
   - carrera/ingeniería-en-informática/analisis-3/Funciones-elementales
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Funciones elementales/Resumen.md]]"
 ---
 # Definción
 ---

@@ -7,6 +7,8 @@ aliases:
   - Anticlique#^anticlique
   - Clan
   - Conjunto independente de vértices
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

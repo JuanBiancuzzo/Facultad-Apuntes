@@ -10,6 +10,9 @@ aliases:
   - Función de densidad condicional
   - Vector continuo condicional
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Variables aleatorias condicionadas/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

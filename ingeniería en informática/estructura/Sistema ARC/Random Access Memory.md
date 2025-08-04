@@ -8,6 +8,9 @@ tags:
 aliases:
   - RAM
   - Memoria de acceso aleatorio
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
+  - "[[ingeniería en informática/estructura/Sistema ARC/Resumen.md]]"
 ---
 # Definición
 ---

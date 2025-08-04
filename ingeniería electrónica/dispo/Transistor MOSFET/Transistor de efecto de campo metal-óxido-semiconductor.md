@@ -13,6 +13,9 @@ tags:
   - carrera/ingeniería-electrónica/circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
   - carrera/ingeniería-electrónica/dispo/Transistor-MOSFET
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos/Dispositivos de control de señal y en conmutación/Resumen.md]]"
+  - "[[ingeniería electrónica/dispo/Transistor MOSFET/Resumen.md]]"
 ---
 # Definición
 ---

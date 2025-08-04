@@ -10,6 +10,9 @@ aliases:
   - Top of Rack switch
   - Blades
   - TOR switch
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de aplicación/Resumen.md]]"
+  - "[[ingeniería en informática/redes/Redes de computadoras/Resumen.md]]"
 ---
 # Definición
 ---

@@ -13,6 +13,8 @@ aliases:
 tags:
   - carrera/ingeniería-electrónica/circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos/Dispositivos de control de señal y en conmutación/Resumen.md]]"
 ---
 # Definición
 ---

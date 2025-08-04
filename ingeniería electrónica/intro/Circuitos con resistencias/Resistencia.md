@@ -8,6 +8,9 @@ tags:
 aliases:
   - Resistencias en serie#En serie
   - Resistencias en paralelo#En paralelo
+vinculoFacultad:
+  - "[[ingeniería electrónica/intro/Circuitos con resistencias/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Circuitos de corrientes no dependientes del tiempo/Resumen.md]]"
 ---
 # Definición:
 ---

@@ -8,6 +8,8 @@ tags:
   - carrera/ingeniería-electrónica/señales/Filtros-digitales
   - nota/facultad
 etapa: sin-empezar
+vinculoFacultad:
+  - "[[ingeniería electrónica/señales/Filtros digitales/Resumen.md]]"
 ---
 # Definición
 ---

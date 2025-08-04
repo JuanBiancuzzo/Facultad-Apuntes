@@ -9,6 +9,8 @@ tags:
   - nota/facultad
 nombreDistribucion: Bernoulli
 tipoDistribucion: discreta
+vinculoFacultad:
+  - "[[ingeniería en informática/proba/Proceso de Bernoulli/Resumen.md]]"
 ---
 # Definición
 ---

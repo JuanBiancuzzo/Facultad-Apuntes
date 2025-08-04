@@ -16,6 +16,8 @@ aliases:
   - Huffman's algorithm
   - Huffman Encoding Algorithm
   - Codificación de Huffman
+vinculoFacultad:
+  - "[[ingeniería en informática/orga/Compresión/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });;

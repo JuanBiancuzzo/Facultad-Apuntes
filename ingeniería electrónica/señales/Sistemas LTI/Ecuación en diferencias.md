@@ -8,6 +8,8 @@ tags:
 etapa: ampliar
 referencias:
   - "1041"
+vinculoFacultad:
+  - "[[ingeniería electrónica/señales/Sistemas LTI/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

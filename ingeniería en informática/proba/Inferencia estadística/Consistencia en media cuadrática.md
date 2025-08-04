@@ -11,6 +11,9 @@ aliases:
   - Convergencia en media cuadrática#^def-5-2-9
   - Error cuadrático medio
   - ECM
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Inferencia estadística/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

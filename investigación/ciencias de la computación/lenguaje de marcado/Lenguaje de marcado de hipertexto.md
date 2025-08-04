@@ -13,6 +13,8 @@ tags:
   - investigación/lenguaje-de-marcado
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de aplicación/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

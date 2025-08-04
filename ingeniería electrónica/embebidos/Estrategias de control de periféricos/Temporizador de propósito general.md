@@ -7,6 +7,8 @@ tags:
   - nota/investigacion
 aliases:
   - Temporizador GP
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Estrategias de control de periféricos/Resumen.md]]"
 ---
 # Definición
 ---

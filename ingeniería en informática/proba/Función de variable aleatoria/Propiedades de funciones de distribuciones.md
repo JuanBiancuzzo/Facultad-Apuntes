@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/proba/Función-de-variable-aleatoria
   - carrera/ingeniería-en-informática/proba/Función-de-variable-aleatoria
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/proba/Función de variable aleatoria/Resumen.md]]"
 ---
 # [[Distribución de Poisson]]
 ---

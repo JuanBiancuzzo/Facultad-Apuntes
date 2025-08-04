@@ -6,6 +6,8 @@ tags:
 aliases:
   - Multímetro True RMS
   - Multímetro Verdadero Valor Eficaz
+vinculoFacultad:
+  - "[[ingeniería electrónica/intro/Multimetro/Resumen.md]]"
 ---
 # Definición
 ---

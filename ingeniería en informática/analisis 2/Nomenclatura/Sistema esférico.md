@@ -8,6 +8,8 @@ aliases:
   - Coordenadas esféricas
   - Transformar coordenadas esféricas a cartesianas#^esfericas-cartesianas
   - Transformar coordenadas esféricas a cilíndricas#^esfericas-cilindricas
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Nomenclatura/Resumen.md]]"
 ---
 # Definición
 ---

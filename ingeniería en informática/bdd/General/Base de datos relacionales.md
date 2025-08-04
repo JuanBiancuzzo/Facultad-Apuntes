@@ -3,6 +3,8 @@ dia: 2023-11-28
 tags:
   - carrera/ingeniería-en-informática/bdd/General
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/bdd/General/Resumen.md]]"
 ---
 # Definición
 ---

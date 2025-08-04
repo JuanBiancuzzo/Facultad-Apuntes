@@ -8,6 +8,8 @@ tags:
   - investigación/ciencias-de-la-computación/algoritmos
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería electrónica/señales/Transformada discreta de Fourier/Resumen.md]]"
 ---
 # Definición
 ---

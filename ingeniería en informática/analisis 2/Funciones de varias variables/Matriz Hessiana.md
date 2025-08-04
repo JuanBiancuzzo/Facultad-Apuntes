@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - Determinante Hessiano
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Funciones de varias variables/Resumen.md]]"
 ---
 # Definición
 ---

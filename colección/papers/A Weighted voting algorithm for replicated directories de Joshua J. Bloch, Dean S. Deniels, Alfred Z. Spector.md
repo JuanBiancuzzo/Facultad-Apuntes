@@ -21,6 +21,8 @@ tags:
   - nota/colección
   - nota/facultad
   - referencia/paper
+vinculoFacultad:
+  - "[[ingeniería en informática/tpp/Propuesta/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

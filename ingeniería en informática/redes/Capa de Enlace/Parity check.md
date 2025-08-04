@@ -11,6 +11,10 @@ aliases:
   - Paridad
   - Forward error correction
   - FEC
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Microcontroladores de 32 bits/Resumen.md]]"
+  - "[[ingeniería en informática/estructura/Sistemas numéricos/Resumen.md]]"
+  - "[[ingeniería en informática/redes/Capa de Enlace/Resumen.md]]"
 ---
 # Definición
 ---

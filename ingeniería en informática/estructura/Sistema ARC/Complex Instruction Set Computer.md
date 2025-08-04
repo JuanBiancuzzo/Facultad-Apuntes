@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - CISC
+vinculoFacultad:
+  - "[[ingeniería en informática/estructura/Sistema ARC/Resumen.md]]"
 ---
 # Definición
 ---

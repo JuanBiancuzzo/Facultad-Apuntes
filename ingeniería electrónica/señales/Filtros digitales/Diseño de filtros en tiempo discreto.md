@@ -3,6 +3,8 @@ dia: 2024-07-05
 tags:
   - carrera/ingeniería-electrónica/señales/Filtros-digitales
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/señales/Filtros digitales/Resumen.md]]"
 ---
 # Definición
 ---

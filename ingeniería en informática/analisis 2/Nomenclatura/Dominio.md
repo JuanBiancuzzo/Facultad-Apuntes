@@ -8,6 +8,9 @@ tags:
   - nota/facultad
 referencias:
   - "183"
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Nomenclatura/Resumen.md]]"
+  - "[[licenciatura en ciencias matemáticas/algebra 1/Conjuntos, relaciones y funciones/Resumen.md]]"
 ---
 # Definición
 ---

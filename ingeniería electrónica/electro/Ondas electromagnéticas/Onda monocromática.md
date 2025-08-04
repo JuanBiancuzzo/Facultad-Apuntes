@@ -10,6 +10,8 @@ aliases:
   - Vector de onda#Vector de onda
   - Vector de propagación#Vector de onda
   - Campo armónico
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Ondas electromagnéticas/Resumen.md]]"
 ---
 # Definición
 ---

@@ -6,6 +6,8 @@ tags:
 aliases:
   - EEPROM
   - E2PROM
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
 ---
 # Definición
 ---

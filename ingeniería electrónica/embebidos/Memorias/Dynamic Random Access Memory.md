@@ -7,6 +7,8 @@ aliases:
   - DRAM
   - Memoria de acceso aleatorio dinámica
   - RAM dinámica
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
 ---
 # Definición
 ---

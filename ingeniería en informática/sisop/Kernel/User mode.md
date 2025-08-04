@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - Modo usuario
+vinculoFacultad:
+  - "[[ingeniería en informática/sisop/Kernel/Resumen.md]]"
 ---
 # Definición
 ---

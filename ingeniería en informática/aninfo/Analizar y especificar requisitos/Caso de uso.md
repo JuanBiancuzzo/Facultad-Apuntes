@@ -4,6 +4,9 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Analizar-y-especificar-requisitos
   - carrera/ingeniería-en-informática/distribuidos/Introducción
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/aninfo/Analizar y especificar requisitos/Resumen.md]]"
+  - "[[ingeniería en informática/distribuidos/Introduccion/Resumen.md]]"
 ---
 # Definición
 ---

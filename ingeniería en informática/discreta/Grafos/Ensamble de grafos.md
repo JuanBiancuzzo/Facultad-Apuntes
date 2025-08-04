@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - Join graphs
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

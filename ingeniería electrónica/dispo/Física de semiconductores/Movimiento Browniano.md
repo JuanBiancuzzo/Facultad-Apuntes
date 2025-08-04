@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 referencias:
   - "211"
+vinculoFacultad:
+  - "[[ingeniería electrónica/dispo/Física de semiconductores/Resumen.md]]"
 ---
 # Definición
 ---

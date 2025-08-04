@@ -8,6 +8,8 @@ tags:
 referencias:
   - "196"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería en informática/orga/Compresión/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

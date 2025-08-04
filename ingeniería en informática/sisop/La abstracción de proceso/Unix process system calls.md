@@ -3,6 +3,8 @@ dia: 2023-11-18
 tags:
   - carrera/ingeniería-en-informática/sisop/La-abstracción-de-proceso
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/sisop/La abstracción de proceso/Resumen.md]]"
 ---
 # Definición
 ---

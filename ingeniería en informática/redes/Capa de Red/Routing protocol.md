@@ -11,6 +11,8 @@ tags:
   - nota/facultad
   - nota/investigacion
 etapa: sin-empezar
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de Red/Resumen.md]]"
 ---
 # Definición
 ---

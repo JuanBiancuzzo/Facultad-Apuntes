@@ -9,6 +9,8 @@ tags:
   - nota/facultad
 nombreDistribucion: Pascal
 tipoDistribucion: discreta
+vinculoFacultad:
+  - "[[ingeniería en informática/proba/Proceso de Bernoulli/Resumen.md]]"
 ---
 # Definición
 ---

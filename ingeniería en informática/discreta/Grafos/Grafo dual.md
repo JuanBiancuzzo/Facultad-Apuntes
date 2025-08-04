@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - Grafo bidual
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

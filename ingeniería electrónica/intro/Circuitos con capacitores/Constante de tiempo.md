@@ -7,6 +7,9 @@ tags:
 etapa: ampliar
 referencias:
   - "873"
+vinculoFacultad:
+  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
+  - "[[ingeniería electrónica/intro/Circuitos con capacitores/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -9,6 +9,9 @@ tags:
 referencias:
   - "413"
 etapa: terminado
+vinculoFacultad:
+  - "[[ingeniería en informática/proba/Teoría de probabilidades/Resumen.md]]"
+  - "[[licenciatura en ciencias matemáticas/algebra 1/Números naturales e Inducción/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

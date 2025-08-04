@@ -12,6 +12,9 @@ tags:
 aliases:
   - Sentencia while
   - Sentencia mientras
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Lenguaje C/Resumen.md]]"
+  - "[[ingeniería en informática/taller/Sintaxis/Resumen.md]]"
 ---
 # Definición
 ---

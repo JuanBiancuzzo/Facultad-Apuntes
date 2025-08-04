@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/fisica-2/Circuitos-en-régimen-alterno-permanente
   - carrera/ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/fisica 2/Circuitos en régimen alterno permanente/Resumen.md]]"
 ---
 # Definición
 ---

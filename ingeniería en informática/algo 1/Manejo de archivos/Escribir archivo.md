@@ -10,6 +10,8 @@ tags:
   - nota/investigacion
 aliases:
   - fwrite
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Manejo de archivos/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

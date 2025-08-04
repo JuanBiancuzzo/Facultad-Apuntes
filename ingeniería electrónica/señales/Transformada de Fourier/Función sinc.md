@@ -3,6 +3,8 @@ dia: 2024-04-09
 tags:
   - carrera/ingeniería-electrónica/señales/Transformada-de-Fourier
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/señales/Transformada de Fourier/Resumen.md]]"
 ---
 # Definición
 ---

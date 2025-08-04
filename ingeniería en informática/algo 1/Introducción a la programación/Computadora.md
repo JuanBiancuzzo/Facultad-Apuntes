@@ -5,6 +5,9 @@ tags:
   - carrera/ingeniería-electrónica/embebidos/Diseño-desarrollo-y-depuración
   - carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
+  - "[[ingeniería en informática/algo 1/Introducción a la programación/Resumen.md]]"
 ---
 # Definición
 ---

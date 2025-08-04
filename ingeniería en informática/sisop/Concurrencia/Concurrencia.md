@@ -10,6 +10,11 @@ tags:
 referencias:
   - "787"
 etapa: empezado
+vinculoFacultad:
+  - "[[ingeniería en informática/concurrentes/Introducción/Resumen.md]]"
+  - "[[ingeniería en informática/distribuidos/Introduccion/Resumen.md]]"
+  - "[[ingeniería en informática/sisop/Concurrencia/Resumen.md]]"
+  - "[[ingeniería en informática/taller/Concurrencia/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

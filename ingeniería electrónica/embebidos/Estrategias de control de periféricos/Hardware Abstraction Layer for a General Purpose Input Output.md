@@ -13,6 +13,8 @@ aliases:
   - Capa de abstracción de hardware para un GPIO
   - HAL para un entrada-salida de propósito general
   - HAL para un GPIO
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Estrategias de control de periféricos/Resumen.md]]"
 ---
 # Definición
 ---

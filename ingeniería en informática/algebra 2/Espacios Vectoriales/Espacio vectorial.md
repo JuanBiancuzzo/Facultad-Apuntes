@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/algebra-2/Espacios-Vectoriales
   - carrera/ingeniería-en-informática/algebra-2/Espacios-Vectoriales
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/algebra 2/Espacios Vectoriales/Resumen.md]]"
 ---
 # Definición
 ---

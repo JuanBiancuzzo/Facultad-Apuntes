@@ -3,6 +3,8 @@ dia: 2023-09-05
 tags:
   - carrera/ingeniería-en-informática/aninfo/Descubrimiento-de-requisitos
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/aninfo/Descubrimiento de requisitos/Resumen.md]]"
 ---
 # Definición
 ---

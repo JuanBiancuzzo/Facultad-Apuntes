@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - Producto vectorial
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Nomenclatura/Resumen.md]]"
 ---
 # Definición
 ---

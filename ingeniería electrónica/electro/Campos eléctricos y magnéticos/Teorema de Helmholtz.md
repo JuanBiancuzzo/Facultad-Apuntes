@@ -3,6 +3,8 @@ dia: 2024-09-04
 tags:
   - carrera/ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Campos eléctricos y magnéticos/Resumen.md]]"
 ---
 # Definición
 ---

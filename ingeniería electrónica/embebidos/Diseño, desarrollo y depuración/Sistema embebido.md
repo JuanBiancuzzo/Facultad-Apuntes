@@ -6,6 +6,9 @@ tags:
   - nota/facultad
 aliases:
   - Arquitectura de un sistema embebido#Arquitectura
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
+  - "[[ingeniería electrónica/embebidos/Microcontroladores de 32 bits/Resumen.md]]"
 ---
 # Definición
 ---

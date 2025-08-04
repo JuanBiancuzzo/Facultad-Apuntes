@@ -8,6 +8,8 @@ tags:
   - nota/facultad
 aliases:
   - CC-CE
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos/Amplificadores con varios dispositivos activos de bajo nivel de potencia/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -7,6 +7,8 @@ tags:
   - nota/facultad
 aliases:
   - Orden FIFO de recepción de mensajes
+vinculoFacultad:
+  - "[[ingeniería en informática/distribuidos/Herramientas de Diseño/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

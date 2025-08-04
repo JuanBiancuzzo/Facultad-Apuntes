@@ -6,6 +6,8 @@ tags:
 aliases:
   - Validación cruzada
   - k-fold cross validation
+vinculoFacultad:
+  - "[[ingeniería en informática/orga/Machine learning/Resumen.md]]"
 ---
 # Definición
 ---

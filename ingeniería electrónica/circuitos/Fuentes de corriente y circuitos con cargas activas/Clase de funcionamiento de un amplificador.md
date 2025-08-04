@@ -12,6 +12,8 @@ aliases:
   - Amplificador clase C#Clase C
   - Amplificador clase AB#Clase AB
   - Amplificador clase D#Clase D
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos/Fuentes de corriente y circuitos con cargas activas/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

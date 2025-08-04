@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/proba/Test-de-hipótesis
   - carrera/ingeniería-en-informática/proba/Test-de-hipótesis
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/proba/Test de hipótesis/Resumen.md]]"
 ---
 # Definición
 ---

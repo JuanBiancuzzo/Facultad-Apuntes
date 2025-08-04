@@ -8,6 +8,8 @@ tags:
 aliases:
   - EXTI
   - Controlador de interrupciones externo
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Estrategias de control de periféricos/Resumen.md]]"
 ---
 # Definición
 ---

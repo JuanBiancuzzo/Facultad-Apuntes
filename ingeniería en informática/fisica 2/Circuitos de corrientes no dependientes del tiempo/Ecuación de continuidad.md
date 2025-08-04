@@ -10,6 +10,9 @@ referencias:
 aliases:
   - Conservación de la carga#En electromagnetismo
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Campo electromagnético/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Circuitos de corrientes no dependientes del tiempo/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

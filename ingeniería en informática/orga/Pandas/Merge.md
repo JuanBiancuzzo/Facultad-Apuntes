@@ -11,6 +11,10 @@ tags:
   - nota/investigacion
 aliases:
   - Sentencia JOIN
+vinculoFacultad:
+  - "[[ingeniería en informática/bdd/SQL/Resumen.md]]"
+  - "[[ingeniería en informática/orga/Pandas/Resumen.md]]"
+  - "[[ingeniería en informática/orga/Spark/Resumen.md]]"
 ---
 # Definición
 ---

@@ -16,6 +16,10 @@ referencias:
   - "701"
 etapa: ampliar
 nombreEstructura: Heap
+vinculoFacultad:
+  - "[[ingeniería en informática/sisop/Virtualización de memoria/Resumen.md]]"
+vinculoCurso:
+  - "[[cursos/introduction to algorithms/Sorting and Trees/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

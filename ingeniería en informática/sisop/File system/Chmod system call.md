@@ -8,6 +8,8 @@ tags:
   - nota/investigacion
 aliases:
   - Fchmod system call
+vinculoFacultad:
+  - "[[ingeniería en informática/sisop/File system/Resumen.md]]"
 ---
 # Definición
 ---

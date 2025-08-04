@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/redes/Capa-de-aplicación
   - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de aplicación/Resumen.md]]"
 ---
 # Definición
 ---

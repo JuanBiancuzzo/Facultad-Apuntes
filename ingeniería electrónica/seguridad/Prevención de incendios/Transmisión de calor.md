@@ -6,6 +6,8 @@ tags:
 aliases:
   - Transmisión de calor en regimen permanente
   - Transmisión de calor en regimen estacionario
+vinculoFacultad:
+  - "[[ingeniería electrónica/seguridad/Prevención de incendios/Resumen.md]]"
 ---
 # Definición
 ---

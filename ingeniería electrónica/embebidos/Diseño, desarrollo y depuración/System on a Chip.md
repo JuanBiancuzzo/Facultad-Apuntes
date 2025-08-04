@@ -9,6 +9,9 @@ aliases:
   - Sistema en un chip
 referencias:
   - "205"
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
+  - "[[ingeniería electrónica/embebidos/Microcontroladores de 32 bits/Resumen.md]]"
 ---
 # Definición
 ---

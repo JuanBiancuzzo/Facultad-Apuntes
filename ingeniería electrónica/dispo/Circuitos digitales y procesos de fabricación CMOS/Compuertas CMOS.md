@@ -3,6 +3,8 @@ dia: 2024-03-27
 tags:
   - carrera/ingeniería-electrónica/dispo/Circuitos-digitales-y-procesos-de-fabricación-CMOS
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/dispo/Circuitos digitales y procesos de fabricación CMOS/Resumen.md]]"
 ---
 # Definición
 ---

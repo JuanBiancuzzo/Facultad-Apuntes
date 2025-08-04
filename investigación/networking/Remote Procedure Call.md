@@ -17,6 +17,9 @@ aliases:
   - RPC
   - gRPC#gRPC
   - Llamada a procedimiento remoto
+vinculoFacultad:
+  - "[[ingeniería en informática/distribuidos/Fundamentos de Sistemas Distribuidos/Resumen.md]]"
+  - "[[ingeniería en informática/tpp/Propuesta/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

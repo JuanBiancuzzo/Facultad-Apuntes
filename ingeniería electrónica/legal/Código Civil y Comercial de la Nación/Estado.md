@@ -8,6 +8,9 @@ referencias:
   - "899"
   - "1037"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
+  - "[[ingeniería electrónica/legal/Código Civil y Comercial de la Nación/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -3,6 +3,8 @@ dia: 2024-08-14
 tags:
   - carrera/ingeniería-en-informática/discreta/Grafos
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

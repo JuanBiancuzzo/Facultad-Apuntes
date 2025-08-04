@@ -6,6 +6,8 @@ tags:
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Introducción a la programación/Resumen.md]]"
 ---
 # Definición
 ---

@@ -11,6 +11,9 @@ aliases:
   - Flags de la ALU#Flags
   - Program Status Register#^PSR
   - PSR#^PSR
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Microcontroladores de 32 bits/Resumen.md]]"
+  - "[[ingeniería en informática/estructura/Microarquitectura/Resumen.md]]"
 ---
 # Definición
 ---

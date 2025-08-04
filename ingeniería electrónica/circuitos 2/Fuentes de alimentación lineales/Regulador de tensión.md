@@ -8,6 +8,8 @@ tags:
   - nota/facultad
 aliases:
   - Voltage regulator
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos 2/Fuentes de alimentación lineales/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

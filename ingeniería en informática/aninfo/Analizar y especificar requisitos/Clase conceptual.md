@@ -3,6 +3,8 @@ dia: 2023-10-12
 tags:
   - carrera/ingeniería-en-informática/aninfo/Analizar-y-especificar-requisitos
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/aninfo/Analizar y especificar requisitos/Resumen.md]]"
 ---
 # Definición
 ---

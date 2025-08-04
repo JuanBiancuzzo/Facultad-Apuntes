@@ -7,6 +7,8 @@ referencias:
 tags:
   - curso/introduction-to-algorithms/Introduction
   - nota/curso
+vinculoCurso:
+  - "[[cursos/introduction to algorithms/Introduction/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

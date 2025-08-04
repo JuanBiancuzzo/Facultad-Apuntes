@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 referencias:
   - "187"
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Álgebra proposicional/Resumen.md]]"
 ---
 # Definición
 ---

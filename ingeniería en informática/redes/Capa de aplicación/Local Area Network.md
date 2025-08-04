@@ -7,6 +7,8 @@ tags:
   - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
   - nota/facultad
 etapa: sin-empezar
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de aplicación/Resumen.md]]"
 ---
 # Definición
 ---

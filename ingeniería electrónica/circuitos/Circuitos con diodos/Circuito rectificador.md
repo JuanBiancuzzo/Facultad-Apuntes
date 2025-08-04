@@ -3,6 +3,8 @@ dia: 2024-03-24
 tags:
   - carrera/ingeniería-electrónica/circuitos/Circuitos-con-diodos
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos/Circuitos con diodos/Resumen.md]]"
 ---
 # Definición
 ---

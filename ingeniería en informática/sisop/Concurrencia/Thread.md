@@ -15,6 +15,11 @@ aliases:
   - Multihilos
   - POSIX Threads#Representación en C
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería en informática/concurrentes/Introducción/Resumen.md]]"
+  - "[[ingeniería en informática/distribuidos/Herramientas de Diseño/Resumen.md]]"
+  - "[[ingeniería en informática/sisop/Concurrencia/Resumen.md]]"
+  - "[[ingeniería en informática/taller/Concurrencia/Resumen.md]]"
 ---
 # Definición
 ---

@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - Grado de una cara
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

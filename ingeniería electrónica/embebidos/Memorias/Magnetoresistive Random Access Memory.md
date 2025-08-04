@@ -8,6 +8,8 @@ aliases:
   - Magnetoresistive RAM
   - RAM Magnetorresistiva
   - RAM magnética
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
 ---
 # Definición
 ---

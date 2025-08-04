@@ -6,6 +6,8 @@ tags:
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/taller/Concurrencia/Resumen.md]]"
 ---
 # Definición
 ---

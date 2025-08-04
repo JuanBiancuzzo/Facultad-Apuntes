@@ -13,6 +13,9 @@ aliases:
   - ISA
   - Arquitectura de set de instrucciones de ARC#Set de instrucciones de ARC
   - ISA de ARC#Set de instrucciones de ARC
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Microcontroladores de 32 bits/Resumen.md]]"
+  - "[[ingeniería en informática/estructura/Sistema ARC/Resumen.md]]"
 ---
 # Definición
 ---

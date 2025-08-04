@@ -7,6 +7,8 @@ aliases:
   - Grafo casi regular
 referencias:
   - "193"
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

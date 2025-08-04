@@ -3,6 +3,8 @@ dia: 2023-09-05
 tags:
   - carrera/ingeniería-electrónica/intro/Reducción-de-circuitos
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/intro/Reducción de circuitos/Resumen.md]]"
 ---
 # Definición
 ---

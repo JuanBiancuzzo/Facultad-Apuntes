@@ -12,6 +12,10 @@ aliases:
   - Energía de un capacitor#Energía almacenada
   - Capacitores en serie#En serie
   - Capacitores en paralelo#En paralelo
+vinculoFacultad:
+  - "[[ingeniería electrónica/intro/Circuitos con capacitores/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Circuitos de corrientes no dependientes del tiempo/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Electrostática en conductores y dieléctricos/Resumen.md]]"
 ---
 # Definición
 ---

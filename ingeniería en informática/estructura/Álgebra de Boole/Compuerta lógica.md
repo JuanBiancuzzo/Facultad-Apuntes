@@ -10,6 +10,9 @@ aliases:
 referencias:
   - "323"
 etapa: sin-empezar
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Álgebra de Boole/Resumen.md]]"
+  - "[[ingeniería en informática/estructura/Álgebra de Boole/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

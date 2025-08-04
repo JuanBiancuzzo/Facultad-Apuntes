@@ -9,6 +9,8 @@ aliases:
   - Patrón de mensajería publisher-subscriber#Fanout
   - Patrón de mensajería routing#Routing
   - Patrón de mensajería Topic#Topic
+vinculoFacultad:
+  - "[[ingeniería en informática/distribuidos/Fundamentos de Sistemas Distribuidos/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

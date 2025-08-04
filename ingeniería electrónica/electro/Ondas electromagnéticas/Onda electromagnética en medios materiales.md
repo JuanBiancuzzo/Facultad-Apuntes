@@ -10,6 +10,8 @@ aliases:
   - Velocidad de fase de una onda electromagnética#^velocidad-fase
   - Impedancia intrínseca del medio#^impedancia-intrinseca-del-medio
   - Velocidad de propagación de las ondas electromagnéticas#^velocidad-fase
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Ondas electromagnéticas/Resumen.md]]"
 ---
 # Definición
 ---

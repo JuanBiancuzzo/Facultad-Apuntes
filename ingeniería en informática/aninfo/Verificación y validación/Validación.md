@@ -3,6 +3,8 @@ dia: 2023-08-27
 tags:
   - carrera/ingeniería-en-informática/aninfo/Verificación-y-validación
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/aninfo/Verificación y validación/Resumen.md]]"
 ---
 # Definición
 ---

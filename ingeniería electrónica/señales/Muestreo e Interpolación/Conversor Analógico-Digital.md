@@ -19,6 +19,10 @@ aliases:
   - Módulo Hardware Abstraction Layer del ADC#Modulo HAL
   - Módulo HAL del ADC#Modulo HAL
 referencias: 
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Conversión analógica a digital y digital a analógica/Resumen.md]]"
+  - "[[ingeniería electrónica/embebidos/Estrategias de control de periféricos/Resumen.md]]"
+  - "[[ingeniería electrónica/señales/Muestreo e Interpolación/Resumen.md]]"
 ---
 # Definición
 ---

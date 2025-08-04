@@ -12,6 +12,8 @@ aliases:
   - Agente Discovery in Mobile IP
   - Care-of address#^COA
   - COA#^COA
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
 ---
 # Definición
 ---

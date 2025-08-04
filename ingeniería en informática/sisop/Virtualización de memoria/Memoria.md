@@ -7,6 +7,9 @@ tags:
 aliases:
   - Malloc#`malloc()`
   - Free#`free()`
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
+  - "[[ingeniería en informática/sisop/Virtualización de memoria/Resumen.md]]"
 ---
 # Definición
 ---

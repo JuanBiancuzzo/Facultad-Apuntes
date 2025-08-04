@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - 802.15.4
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
 ---
 # Definición
 ---

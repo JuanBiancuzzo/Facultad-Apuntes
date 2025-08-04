@@ -7,6 +7,8 @@ aliases:
   - Idempotencia
 referencias:
   - "189"
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Álgebra proposicional/Resumen.md]]"
 ---
 # Definición
 ---

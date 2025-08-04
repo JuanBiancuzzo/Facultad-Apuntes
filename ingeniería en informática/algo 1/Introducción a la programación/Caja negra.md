@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - Black box
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Introducción a la programación/Resumen.md]]"
 ---
 # Definición
 ---

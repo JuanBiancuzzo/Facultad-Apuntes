@@ -13,6 +13,8 @@ aliases:
   - CSMA con detección de colisiones
   - CSMA with collision detection
   - CSMA/CD
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de Enlace/Resumen.md]]"
 ---
 # Definición
 ---

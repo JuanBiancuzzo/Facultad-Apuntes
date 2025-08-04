@@ -3,6 +3,8 @@ dia: 2023-01-23
 tags:
   - carrera/ingeniería-electrónica/intro/Multimetro
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/intro/Multimetro/Resumen.md]]"
 ---
 # Definición
 ---

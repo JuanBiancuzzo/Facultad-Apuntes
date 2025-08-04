@@ -6,6 +6,8 @@ tags:
   - investigación/ciencias-de-la-computación/sistemas-operativos/File-system/System-call
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/sisop/File system/Resumen.md]]"
 ---
 # Definición
 ---

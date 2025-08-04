@@ -6,6 +6,8 @@ aliases: []
 tags:
   - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

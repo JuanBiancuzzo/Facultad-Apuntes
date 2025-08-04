@@ -10,6 +10,8 @@ aliases:
   - Mascara de una dirección IP
   - Prefijo de una dirección IP
   - Prefix of an IP Address
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de Red/Resumen.md]]"
 ---
 # Definición
 ---

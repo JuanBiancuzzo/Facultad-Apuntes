@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - Inversión de la estructura MOS
+vinculoFacultad:
+  - "[[ingeniería electrónica/dispo/Juntura MOS/Resumen.md]]"
 ---
 # Definición
 ---

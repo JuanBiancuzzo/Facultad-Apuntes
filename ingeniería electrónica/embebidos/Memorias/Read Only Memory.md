@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - ROM
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
 ---
 # Definición
 ---

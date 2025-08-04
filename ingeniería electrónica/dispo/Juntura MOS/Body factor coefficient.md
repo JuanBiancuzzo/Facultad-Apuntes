@@ -3,6 +3,8 @@ dia: 2023-11-03
 tags:
   - carrera/ingeniería-electrónica/dispo/Juntura-MOS
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/dispo/Juntura MOS/Resumen.md]]"
 ---
 # Definición
 ---

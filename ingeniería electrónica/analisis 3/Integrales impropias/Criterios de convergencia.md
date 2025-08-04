@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/analisis-3/Integrales-impropias
   - carrera/ingeniería-en-informática/analisis-3/Integrales-impropias
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Integrales impropias/Resumen.md]]"
 ---
 Para las integrales de la forma $\int_a^\infty f(x) \cdot dx$, donde todas las funciones involucradas se suponen [[Seccionalmente continua]].
 

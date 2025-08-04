@@ -5,6 +5,8 @@ referencias:
 tags:
   - carrera/ingeniería-en-informática/concurrentes/Introducción
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/concurrentes/Introducción/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

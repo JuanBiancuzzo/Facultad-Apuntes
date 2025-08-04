@@ -3,6 +3,8 @@ dia: 2023-12-01
 tags:
   - carrera/ingeniería-en-informática/sisop/Virtualización-de-memoria
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/sisop/Virtualización de memoria/Resumen.md]]"
 ---
 # Definición
 ---

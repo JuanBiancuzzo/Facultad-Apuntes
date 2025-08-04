@@ -6,6 +6,9 @@ tags:
   - carrera/ingeniería-en-informática/analisis-2/Funciones-de-varias-variables
   - carrera/ingeniería-en-informática/analisis-2/Propiedades-de-funciones
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Funciones de varias variables/Resumen.md]]"
+  - "[[ingeniería en informática/analisis 2/Propiedades de funciones/Resumen.md]]"
 ---
 # Definición
 ---

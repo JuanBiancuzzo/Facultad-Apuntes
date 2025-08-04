@@ -8,6 +8,9 @@ tags:
 etapa: ampliar
 referencias: []
 aliases: []
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Introducción a procesos aleatorios/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Proceso de Bernoulli/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

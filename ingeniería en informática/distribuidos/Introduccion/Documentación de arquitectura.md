@@ -5,6 +5,8 @@ referencias:
 tags:
   - carrera/ingeniería-en-informática/distribuidos/Introducción
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/distribuidos/Introduccion/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

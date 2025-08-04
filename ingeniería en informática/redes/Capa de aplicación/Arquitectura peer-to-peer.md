@@ -8,6 +8,9 @@ tags:
   - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
   - nota/facultad
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería en informática/distribuidos/Fundamentos de Sistemas Distribuidos/Resumen.md]]"
+  - "[[ingeniería en informática/redes/Capa de aplicación/Resumen.md]]"
 ---
 # Definición
 ---

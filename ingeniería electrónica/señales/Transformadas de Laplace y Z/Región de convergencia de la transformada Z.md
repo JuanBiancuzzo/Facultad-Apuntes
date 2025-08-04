@@ -5,6 +5,8 @@ aliases:
 tags:
   - carrera/ingeniería-electrónica/señales/Transformadas-de-Laplace-y-Z
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/señales/Transformadas de Laplace y Z/Resumen.md]]"
 ---
 # Definición
 ---

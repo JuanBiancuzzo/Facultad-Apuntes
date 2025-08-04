@@ -7,6 +7,9 @@ tags:
   - nota/facultad
 aliases:
   - Generador de tensión
+vinculoFacultad:
+  - "[[ingeniería electrónica/intro/Reducción de circuitos/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Circuitos de corrientes no dependientes del tiempo/Resumen.md]]"
 ---
 # Definición
 ---

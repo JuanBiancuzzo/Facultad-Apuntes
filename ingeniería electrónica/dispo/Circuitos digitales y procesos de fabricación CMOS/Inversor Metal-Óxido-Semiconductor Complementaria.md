@@ -6,6 +6,8 @@ tags:
 aliases:
   - Inversor CMOS
   - Inversor MOS Complementaria
+vinculoFacultad:
+  - "[[ingeniería electrónica/dispo/Circuitos digitales y procesos de fabricación CMOS/Resumen.md]]"
 ---
 # Definición
 ---

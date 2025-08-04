@@ -9,6 +9,8 @@ aliases:
   - Manejador de dispositivos
 referencias:
   - "252"
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Estrategias de control de periféricos/Resumen.md]]"
 ---
 # Definición
 ---

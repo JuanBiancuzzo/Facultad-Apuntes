@@ -6,6 +6,8 @@ tags:
   - carrera/ingeniería-electrónica/algo-1/Lenguaje-C
   - carrera/ingeniería-en-informática/algo-1/Lenguaje-C
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Lenguaje C/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

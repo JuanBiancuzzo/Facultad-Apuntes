@@ -9,6 +9,9 @@ tags:
 etapa: ampliar
 referencias: []
 aliases: []
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Topología del plano complejo y límites/Resumen.md]]"
+  - "[[ingeniería en informática/analisis 2/Propiedades de funciones/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

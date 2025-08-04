@@ -8,6 +8,8 @@ aliases:
   - F-RAM
   - FRAM
   - Ferroelectric RAM
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
 ---
 # Definición
 ---

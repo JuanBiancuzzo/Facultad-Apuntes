@@ -12,6 +12,11 @@ tags:
 aliases:
   - Carga de polarización#Cargas de polarización
   - Portador de carga#Cargas libres
+vinculoFacultad:
+  - "[[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Resumen.md]]"
+  - "[[ingeniería electrónica/dispo/Física de semiconductores/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Electrostática en conductores y dieléctricos/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Electrostática en el vacío/Resumen.md]]"
 ---
 # Definición
 ---

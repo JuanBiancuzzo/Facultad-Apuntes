@@ -11,6 +11,9 @@ aliases:
   - Bit#Bit
   - Byte#Byte
   - Bit de información
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Introducción a la programación/Resumen.md]]"
+  - "[[ingeniería en informática/orga/Compresión/Resumen.md]]"
 ---
 # Definición
 ---

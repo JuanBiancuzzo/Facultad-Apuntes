@@ -9,6 +9,10 @@ tags:
   - nota/curso
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/orga/Machine learning/Resumen.md]]"
+vinculoCurso:
+  - "[[cursos/introduction to algorithms/Sorting and Trees/Resumen.md]]"
 ---
 # Definición
 ---

@@ -3,6 +3,8 @@ dia: 2023-01-23
 tags:
   - carrera/ingeniería-electrónica/intro/Respuesta-en-frecuencia
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/intro/Respuesta en frecuencia/Resumen.md]]"
 ---
 # Definición
 ---

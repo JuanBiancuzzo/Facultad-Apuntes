@@ -6,6 +6,8 @@ tags:
 aliases:
   - Matching
   - Conjunto independiente de aristas
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

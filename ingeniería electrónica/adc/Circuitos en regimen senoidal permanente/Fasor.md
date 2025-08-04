@@ -9,6 +9,10 @@ tags:
   - nota/facultad
 referencias:
   - "221"
+vinculoFacultad:
+  - "[[ingeniería electrónica/adc/Circuitos en regimen senoidal permanente/Resumen.md]]"
+  - "[[ingeniería electrónica/electro/Campo electromagnético/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Circuitos en régimen alterno permanente/Resumen.md]]"
 ---
 # Definición
 ---

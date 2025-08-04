@@ -7,6 +7,8 @@ tags:
   - investigación/matemática/Estadística/Machine-learning/Natural-Language-Processing
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/orga/NLP/Resumen Parte 2.md]]"
 ---
 # Definición
 ---

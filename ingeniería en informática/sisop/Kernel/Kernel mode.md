@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - Modo kernel
+vinculoFacultad:
+  - "[[ingeniería en informática/sisop/Kernel/Resumen.md]]"
 ---
 # Definición
 ---

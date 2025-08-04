@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 referencias:
   - "231"
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Campo electromagnético/Resumen.md]]"
 ---
 # Definición
 ---

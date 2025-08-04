@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/estructura/Registros-y-contadores
   - carrera/ingeniería-en-informática/estructura/Registros-y-contadores
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/estructura/Registros y contadores/Resumen.md]]"
 ---
 # Definición
 ---

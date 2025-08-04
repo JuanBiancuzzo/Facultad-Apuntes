@@ -22,6 +22,12 @@ referencias:
   - "411"
   - "845"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Lenguaje C/Resumen.md]]"
+  - "[[ingeniería en informática/analisis 2/Nomenclatura/Resumen.md]]"
+  - "[[ingeniería en informática/discreta/Álgebra proposicional/Resumen.md]]"
+  - "[[ingeniería en informática/estructura/Álgebra de Boole/Resumen.md]]"
+  - "[[ingeniería en informática/taller/Sintaxis/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

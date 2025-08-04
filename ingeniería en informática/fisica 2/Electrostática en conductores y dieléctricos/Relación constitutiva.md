@@ -13,6 +13,10 @@ aliases:
   - Relación constitutiva eléctrica#Para campo eléctrico
   - Relación constitutiva magnética#Para campo magnético
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Campos eléctricos y magnéticos/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Electrostática en conductores y dieléctricos/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Magnetismo estacionario en medios materiales/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

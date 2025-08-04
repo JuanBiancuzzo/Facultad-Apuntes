@@ -7,6 +7,8 @@ tags:
 referencias:
   - "223"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería en informática/fisica 2/Termodinámica/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

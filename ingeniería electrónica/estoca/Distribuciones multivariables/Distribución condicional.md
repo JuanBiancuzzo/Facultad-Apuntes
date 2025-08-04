@@ -7,6 +7,9 @@ tags:
   - carrera/ingeniería-electrónica/proba/Variables-aleatorias-condicionadas
   - carrera/ingeniería-en-informática/proba/Variables-aleatorias-condicionadas
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Variables aleatorias condicionadas/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

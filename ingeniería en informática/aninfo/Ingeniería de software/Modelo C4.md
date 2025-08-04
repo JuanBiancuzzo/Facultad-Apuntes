@@ -4,6 +4,9 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Ingeniería-de-software
   - carrera/ingeniería-en-informática/distribuidos/Introducción
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/aninfo/Ingeniería de software/Resumen.md]]"
+  - "[[ingeniería en informática/distribuidos/Introduccion/Resumen.md]]"
 ---
 # Definición
 ---

@@ -12,6 +12,8 @@ aliases:
   - Corriente de conducción#^corriente-conduccion
   - Densidad de corriente de desplazamiento#^corriente-desplazamiento
   - Corriente de desplazamiento#^corriente-desplazamiento
+vinculoFacultad:
+  - "[[ingeniería en informática/fisica 2/Magnetostática en el vacío/Resumen.md]]"
 ---
 # Definición
 ---

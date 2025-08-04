@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - Unidad de datos de la arquitectura ARC#En la arquitectura ARC
+vinculoFacultad:
+  - "[[ingeniería en informática/estructura/Microarquitectura/Resumen.md]]"
 ---
 # Definición
 ---

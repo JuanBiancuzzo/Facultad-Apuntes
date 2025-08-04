@@ -6,6 +6,8 @@ tags:
 aliases:
   - Ecuación de ondas reducidas de Helmholtz en un conductor
   - Ecuación de Helmholtz en un conductor
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Ondas electromagnéticas/Resumen.md]]"
 ---
 # Definición
 ---

@@ -3,6 +3,8 @@ dia: 2024-09-09
 tags:
   - carrera/ingeniería-electrónica/embebidos/Memorias
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
 ---
 # Definición
 ---

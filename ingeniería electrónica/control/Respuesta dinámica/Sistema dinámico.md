@@ -19,6 +19,8 @@ aliases:
   - Matriz de entrada#^matriz-entrada
   - Matriz de salida#^matriz-salida
   - Matriz de transmisión directa#^matriz-directa
+vinculoFacultad:
+  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -11,6 +11,10 @@ aliases:
   - Función de densidad conjunta#Para vector aleatoria
   - PDF conjunta#Para vector aleatoria
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md]]"
+  - "[[ingeniería electrónica/estoca/Repaso/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Variables y vectores aleatorios/Resumen.md]]"
 ---
 # Definición
 ---

@@ -12,6 +12,10 @@ aliases:
   - Densidad de corriente volumétrica#Corriente volumétrica
   - Corriente eléctrica superficial#Corriente superficial
   - Corriente eléctrica volumétrica#Corriente volumétrica
+vinculoFacultad:
+  - "[[ingeniería electrónica/dispo/Física de semiconductores/Resumen.md]]"
+  - "[[ingeniería electrónica/intro/Circuitos con resistencias/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Circuitos de corrientes no dependientes del tiempo/Resumen.md]]"
 ---
 # Definición
 ---

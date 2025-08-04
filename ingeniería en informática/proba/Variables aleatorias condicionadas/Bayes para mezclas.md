@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/proba/Variables-aleatorias-condicionadas
   - carrera/ingeniería-en-informática/proba/Variables-aleatorias-condicionadas
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/proba/Variables aleatorias condicionadas/Resumen.md]]"
 ---
 # Definición
 ---

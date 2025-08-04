@@ -7,6 +7,9 @@ tags:
 referencias:
   - "871"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
+  - "[[ingeniería en informática/aninfo/Ingeniería de software/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

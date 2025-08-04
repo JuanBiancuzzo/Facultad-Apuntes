@@ -6,6 +6,8 @@ referencias:
 tags:
   - carrera/ingeniería-electrónica/circuitos/Amplificadores-diferenciales
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos/Amplificadores diferenciales/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -15,6 +15,9 @@ referencias:
   - "452"
   - "453"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Resumen.md]]"
+  - "[[ingeniería electrónica/circuitos/Amplificadores diferenciales/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

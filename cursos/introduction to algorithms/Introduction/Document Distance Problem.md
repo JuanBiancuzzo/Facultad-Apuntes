@@ -8,6 +8,8 @@ tags:
   - nota/curso
 aliases:
   - Problema de la distancia entre documentos
+vinculoCurso:
+  - "[[cursos/introduction to algorithms/Introduction/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

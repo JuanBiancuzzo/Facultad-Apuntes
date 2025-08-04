@@ -3,6 +3,8 @@ dia: 2024-09-26
 tags:
   - carrera/ingeniería-electrónica/embebidos/Estrategias-de-control-de-periféricos
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Estrategias de control de periféricos/Resumen.md]]"
 ---
 # Definición
 ---

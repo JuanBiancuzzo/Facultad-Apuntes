@@ -7,6 +7,8 @@ tags:
 aliases:
   - Link-state algorithms
   - LS algorithms
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de Red/Resumen.md]]"
 ---
 # Definición
 ---

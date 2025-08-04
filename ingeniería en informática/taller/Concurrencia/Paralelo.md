@@ -6,6 +6,10 @@ tags:
   - carrera/ingeniería-en-informática/distribuidos/Introducción
   - carrera/ingeniería-en-informática/taller/Concurrencia
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/distribuidos/Herramientas de Diseño/Resumen.md]]"
+  - "[[ingeniería en informática/distribuidos/Introduccion/Resumen.md]]"
+  - "[[ingeniería en informática/taller/Concurrencia/Resumen.md]]"
 ---
 # Definición
 ---

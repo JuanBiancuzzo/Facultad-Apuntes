@@ -11,6 +11,8 @@ tags:
   - nota/investigacion
 aliases:
   - Esquema de Euclides extendido#^equema-euclides-extendido
+vinculoFacultad:
+  - "[[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - Onda electromagnética en un dieléctrico sin pérdidas
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Ondas electromagnéticas/Resumen.md]]"
 ---
 # Definición
 ---

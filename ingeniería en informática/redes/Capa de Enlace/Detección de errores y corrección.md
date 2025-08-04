@@ -9,6 +9,9 @@ tags:
 aliases:
   - Error detection and correction
   - EDC
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de Enlace/Resumen.md]]"
+  - "[[ingeniería en informática/redes/Capa de Transporte/Resumen.md]]"
 ---
 # Definición
 ---

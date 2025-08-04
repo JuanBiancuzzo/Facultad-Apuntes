@@ -7,6 +7,8 @@ aliases:
   - Bus de dirección#^bus-direccion
   - Bus de datos#^bus-datos
   - Bus de control#^bus-control
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Microcontroladores de 32 bits/Resumen.md]]"
 ---
 # Definición
 ---

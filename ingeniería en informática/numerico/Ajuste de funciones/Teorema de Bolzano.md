@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - Teorema del valor medio
+vinculoFacultad:
+  - "[[ingeniería en informática/numerico/Ajuste de funciones/Resumen.md]]"
 ---
 # Definición
 ---

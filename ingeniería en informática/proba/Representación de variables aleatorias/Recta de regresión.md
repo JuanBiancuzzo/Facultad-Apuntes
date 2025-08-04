@@ -15,6 +15,9 @@ aliases:
 referencias:
   - "308"
 etapa: sin-empezar
+vinculoFacultad:
+  - "[[ingeniería en informática/orga/Machine learning/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Representación de variables aleatorias/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -8,6 +8,9 @@ tags:
 aliases:
   - Tiempo de delivery
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería en informática/distribuidos/Herramientas de Diseño/Resumen.md]]"
+  - "[[ingeniería en informática/redes/Redes de computadoras/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

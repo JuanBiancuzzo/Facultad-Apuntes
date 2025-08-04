@@ -5,6 +5,8 @@ aliases:
 tags:
   - carrera/ingeniería-en-informática/aninfo/Prototipado-y-experiencia-del-usuario
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/aninfo/Prototipado y experiencia del usuario/Resumen.md]]"
 ---
 # Definición
 ---

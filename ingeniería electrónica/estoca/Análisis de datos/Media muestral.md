@@ -6,6 +6,8 @@ aliases: []
 tags:
   - carrera/ingeniería-electrónica/estoca/Análisis-de-datos
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Análisis de datos/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

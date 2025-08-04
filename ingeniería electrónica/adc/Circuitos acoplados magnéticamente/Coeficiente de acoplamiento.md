@@ -6,6 +6,9 @@ tags:
   - carrera/ingeniería-en-informática/adc/Circuitos-acoplados-magnéticamente
   - carrera/ingeniería-en-informática/fisica-2/Inducción-electromagnética
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/adc/Circuitos acoplados magnéticamente/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Inducción electromagnética/Resumen.md]]"
 ---
 # Definición
 ---

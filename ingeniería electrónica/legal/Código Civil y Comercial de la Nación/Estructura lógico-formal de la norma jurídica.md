@@ -3,6 +3,8 @@ dia: 2024-01-12
 tags:
   - carrera/ingeniería-electrónica/legal/Código-Civil-y-Comercial-de-la-Nación
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/legal/Código Civil y Comercial de la Nación/Resumen.md]]"
 ---
 # Definición
 ---

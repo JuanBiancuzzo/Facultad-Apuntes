@@ -10,6 +10,8 @@ tags:
 aliases:
   - Convolutional Neural Network
   - CNN
+vinculoFacultad:
+  - "[[ingeniería en informática/orga/NLP/Resumen Parte 2.md]]"
 ---
 # Definición
 ---

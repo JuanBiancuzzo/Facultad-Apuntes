@@ -10,6 +10,10 @@ aliases:
   - Diferencia de potencial
   - Potencial electrodinámico escalar
   - Potencial retardado escalar
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Campos eléctricos y magnéticos/Resumen.md]]"
+  - "[[ingeniería electrónica/intro/Circuitos con resistencias/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Electrostática en el vacío/Resumen.md]]"
 ---
 # Definición
 ---

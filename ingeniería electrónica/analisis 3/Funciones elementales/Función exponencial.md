@@ -6,6 +6,10 @@ tags:
   - carrera/ingeniería-electrónica/señales/Transformada-discreta-de-Fourier
   - carrera/ingeniería-en-informática/analisis-3/Funciones-elementales
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Funciones elementales/Resumen.md]]"
+  - "[[ingeniería electrónica/señales/Sistemas LTI/Resumen.md]]"
+  - "[[ingeniería electrónica/señales/Transformada discreta de Fourier/Resumen.md]]"
 ---
 # Definición
 ---

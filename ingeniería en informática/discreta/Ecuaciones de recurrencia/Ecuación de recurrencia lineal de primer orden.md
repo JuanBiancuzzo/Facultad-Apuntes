@@ -3,6 +3,8 @@ dia: 2024-08-08
 tags:
   - carrera/ingeniería-en-informática/discreta/Ecuaciones-de-recurrencia
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Ecuaciones de recurrencia/Resumen.md]]"
 ---
 # Definición
 ---

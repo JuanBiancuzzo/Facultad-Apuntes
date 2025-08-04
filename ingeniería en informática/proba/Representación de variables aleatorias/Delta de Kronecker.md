@@ -7,6 +7,8 @@ tags:
   - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
   - carrera/ingeniería-en-informática/proba/Representación-de-variables-aleatorias
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/proba/Representación de variables aleatorias/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

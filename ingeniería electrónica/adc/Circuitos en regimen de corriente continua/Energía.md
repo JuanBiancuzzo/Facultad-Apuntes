@@ -6,6 +6,9 @@ tags:
   - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-de-corriente-continua
   - carrera/ingeniería-en-informática/fisica-1/Trabajo-y-energía
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 1/Trabajo y energía/Resumen.md]]"
 ---
 # Definición
 ---

@@ -11,6 +11,8 @@ aliases:
   - Std output
   - Printf#^printf
   - Putchar#^putchar
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Lenguaje C/Resumen.md]]"
 ---
 # Definición
 ---

@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - Estructura MOS con polarización
+vinculoFacultad:
+  - "[[ingeniería electrónica/dispo/Juntura MOS/Resumen.md]]"
 ---
 # Definición
 ---

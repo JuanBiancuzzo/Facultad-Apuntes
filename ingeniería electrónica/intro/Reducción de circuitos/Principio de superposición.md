@@ -13,6 +13,10 @@ referencias:
   - "899"
   - "873"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
+  - "[[ingeniería electrónica/intro/Reducción de circuitos/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Electrostática en el vacío/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

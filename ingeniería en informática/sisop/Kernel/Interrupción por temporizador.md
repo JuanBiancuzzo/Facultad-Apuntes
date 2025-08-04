@@ -12,6 +12,9 @@ aliases:
   - Bucles de bloques de fase#^preescalador
   - PLL#^preescalador
   - Temporizador
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Estrategias de control de periféricos/Resumen.md]]"
+  - "[[ingeniería en informática/sisop/Kernel/Resumen.md]]"
 ---
 # Definición
 ---

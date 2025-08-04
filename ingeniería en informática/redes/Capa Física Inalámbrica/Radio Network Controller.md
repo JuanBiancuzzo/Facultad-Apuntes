@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - RNC
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
 ---
 # Definición
 ---

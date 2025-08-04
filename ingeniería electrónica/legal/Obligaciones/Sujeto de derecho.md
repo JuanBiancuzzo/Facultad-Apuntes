@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - Titular
+vinculoFacultad:
+  - "[[ingeniería electrónica/legal/Obligaciones/Resumen.md]]"
 ---
 # Definición
 ---

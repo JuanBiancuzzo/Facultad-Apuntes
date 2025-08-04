@@ -11,6 +11,10 @@ tags:
   - nota/investigacion
 aliases:
   - TF-IDF
+vinculoFacultad:
+  - "[[ingeniería en informática/orga/NLP/Resumen Parte 1.md]]"
+vinculoCurso:
+  - "[[cursos/ciencia de datos para salud mental y psicología/Machine learning, deep learning e interpretabilidad algorítmica/Resumen.md]]"
 ---
 # Definición
 ---

@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - DFA
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Autómatas/Resumen.md]]"
 ---
 # Definición
 ---

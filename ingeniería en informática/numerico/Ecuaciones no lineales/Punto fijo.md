@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/numerico/Ecuaciones-no-lineales
   - carrera/ingeniería-en-informática/numerico/Ecuaciones-no-lineales
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/numerico/Ecuaciones no lineales/Resumen.md]]"
 ---
 # Definición
 ---

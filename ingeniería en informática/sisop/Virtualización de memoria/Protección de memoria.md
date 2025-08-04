@@ -7,6 +7,9 @@ tags:
 aliases:
   - MPU
   - Memory Protection Unit
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
+  - "[[ingeniería en informática/sisop/Virtualización de memoria/Resumen.md]]"
 ---
 # Definición
 ---

@@ -8,6 +8,10 @@ tags:
 referencias:
   - "700"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería en informática/aninfo/Ingeniería de software/Resumen.md]]"
+vinculoCurso:
+  - "[[cursos/introduction to algorithms/Introduction/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

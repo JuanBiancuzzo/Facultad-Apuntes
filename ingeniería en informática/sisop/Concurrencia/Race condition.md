@@ -3,6 +3,8 @@ dia: 2023-03-29
 tags:
   - carrera/ingeniería-en-informática/sisop/Concurrencia
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/sisop/Concurrencia/Resumen.md]]"
 ---
 # Definición
 ---

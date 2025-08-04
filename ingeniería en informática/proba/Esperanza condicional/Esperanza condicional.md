@@ -11,6 +11,10 @@ aliases:
   - Ley de la esperanza total#^ley-esperanza-total
   - Ley de suavizado de la esperanza#^ley-esperanza-total
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Esperanza condicional/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Representación de variables aleatorias/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

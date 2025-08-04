@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - VLAN
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Redes de computadoras/Resumen.md]]"
 ---
 # Definición
 ---

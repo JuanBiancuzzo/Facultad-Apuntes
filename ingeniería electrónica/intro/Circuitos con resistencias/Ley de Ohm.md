@@ -9,6 +9,10 @@ tags:
   - nota/facultad
 aliases:
   - Ley de Ohm microscópica#^ley-de-ohm-microscopica
+vinculoFacultad:
+  - "[[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Resumen.md]]"
+  - "[[ingeniería electrónica/intro/Circuitos con resistencias/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Circuitos de corrientes no dependientes del tiempo/Resumen.md]]"
 ---
 # Definición 
 ---

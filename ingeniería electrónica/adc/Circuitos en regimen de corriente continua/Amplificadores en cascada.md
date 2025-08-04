@@ -8,6 +8,9 @@ tags:
   - nota/facultad
 aliases:
   - Cuadripolo en cascada
+vinculoFacultad:
+  - "[[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Resumen.md]]"
+  - "[[ingeniería electrónica/adc/Cuadripolos/Resumen.md]]"
 ---
 # Definición
 ---

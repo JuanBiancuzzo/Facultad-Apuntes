@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/estructura/Álgebra-de-Boole
   - carrera/ingeniería-en-informática/estructura/Álgebra-de-Boole
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/estructura/Álgebra de Boole/Resumen.md]]"
 ---
 # Definición
 ---

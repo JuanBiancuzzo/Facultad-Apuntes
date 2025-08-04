@@ -6,6 +6,8 @@ tags:
 aliases:
   - Juntura en directa#Polarización directa
   - Juntura en inversa#Polarización inversa
+vinculoFacultad:
+  - "[[ingeniería electrónica/dispo/Juntura PN/Resumen.md]]"
 ---
 # Definición
 ---

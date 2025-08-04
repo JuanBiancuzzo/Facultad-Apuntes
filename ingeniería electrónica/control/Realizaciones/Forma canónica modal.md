@@ -8,6 +8,8 @@ aliases:
 tags:
   - carrera/ingeniería-electrónica/control/Realizaciones
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/control/Realizaciones/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

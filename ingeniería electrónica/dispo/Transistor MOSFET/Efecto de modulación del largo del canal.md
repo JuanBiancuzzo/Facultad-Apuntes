@@ -3,6 +3,8 @@ dia: 2023-11-11
 tags:
   - carrera/ingeniería-electrónica/dispo/Transistor-MOSFET
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/dispo/Transistor MOSFET/Resumen.md]]"
 ---
 # Definición
 ---

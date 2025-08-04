@@ -9,6 +9,8 @@ aliases:
   - Frecuencia#Frecuencia
 etapa: empezado
 referencias: []
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Serie de Fourier/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

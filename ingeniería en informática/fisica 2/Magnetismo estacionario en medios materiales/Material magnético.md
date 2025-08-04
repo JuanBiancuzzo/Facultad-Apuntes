@@ -8,6 +8,9 @@ tags:
 aliases:
   - Campo de magnetización#^campo-magnetizacion
   - Campo magnético#^campo-magnetico
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Campos eléctricos y magnéticos/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Magnetismo estacionario en medios materiales/Resumen.md]]"
 ---
 # Definición
 ---

@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - PROM
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
 ---
 # Definición
 ---

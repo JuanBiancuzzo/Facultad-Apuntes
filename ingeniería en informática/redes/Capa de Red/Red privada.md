@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - Reino de direcciones privada
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de Red/Resumen.md]]"
 ---
 # Definición
 ---

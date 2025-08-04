@@ -8,6 +8,9 @@ tags:
   - carrera/ingeniería-electrónica/circuitos/Dispositivos-de-control-de-señal-y-en-conmutación
   - carrera/ingeniería-electrónica/dispo/Transistor-bipolar-de-juntura
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos/Dispositivos de control de señal y en conmutación/Resumen.md]]"
+  - "[[ingeniería electrónica/dispo/Transistor bipolar de juntura/Resumen.md]]"
 ---
 # Definición
 ---

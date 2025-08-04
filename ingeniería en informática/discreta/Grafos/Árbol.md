@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - Bosque
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

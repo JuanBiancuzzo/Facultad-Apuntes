@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - Leyer-4 switch
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de Enlace/Resumen.md]]"
 ---
 # Definición
 ---

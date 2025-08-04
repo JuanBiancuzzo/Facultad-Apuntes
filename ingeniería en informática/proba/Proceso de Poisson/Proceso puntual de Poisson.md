@@ -7,6 +7,9 @@ tags:
   - carrera/ingeniería-electrónica/proba/Proceso-de-Poisson
   - carrera/ingeniería-en-informática/proba/Proceso-de-Poisson
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Introducción a procesos aleatorios/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Proceso de Poisson/Resumen.md]]"
 ---
 # Definición
 ---

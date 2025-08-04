@@ -11,6 +11,8 @@ tags:
   - nota/investigacion
 aliases:
   - PCA
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Análisis de datos/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

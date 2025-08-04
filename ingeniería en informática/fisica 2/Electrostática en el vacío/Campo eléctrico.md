@@ -12,6 +12,10 @@ aliases:
   - Densidad superficial de carga#^densidad-superficial
   - Densidad volumétrica de carga#^densidad-volumetrica
   - Campo electrostático
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Campos eléctricos y magnéticos/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Electrostática en conductores y dieléctricos/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Electrostática en el vacío/Resumen.md]]"
 ---
 # Definición
 ---

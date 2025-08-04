@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/algebra-2/Transformaciones-lineales
   - carrera/ingeniería-en-informática/algebra-2/Transformaciones-lineales
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/algebra 2/Transformaciones lineales/Resumen.md]]"
 ---
 # Definición
 ---

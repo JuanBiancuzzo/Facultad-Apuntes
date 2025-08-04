@@ -11,6 +11,8 @@ aliases:
   - Open-loop control
   - Controlador de lazo abierto
   - Feedforward control
+vinculoFacultad:
+  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

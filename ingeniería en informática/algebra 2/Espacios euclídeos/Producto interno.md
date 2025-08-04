@@ -8,6 +8,9 @@ tags:
   - nota/facultad
 aliases:
   - Producto escalar
+vinculoFacultad:
+  - "[[ingeniería en informática/algebra 2/Espacios euclídeos/Resumen.md]]"
+  - "[[ingeniería en informática/analisis 2/Nomenclatura/Resumen.md]]"
 ---
 # Definición
 ---

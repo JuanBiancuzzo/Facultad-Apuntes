@@ -12,6 +12,8 @@ aliases:
   - Proceso aleatorio continuo de tiempo discreto#^tiempo-discreto-variable-continua
   - Proceso aleatorio discreto de tiempo discreto#^tiempo-discreto-variable-discreta
   - Proceso aleatorio
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Introducción a procesos aleatorios/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

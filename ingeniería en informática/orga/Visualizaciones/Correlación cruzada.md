@@ -15,6 +15,11 @@ aliases:
   - Matriz de autocorrelación#^def-5-3-3
   - Autocorrelación de un proceso estocástico#Para un proceso estocástico
   - Correlación cruzada de un proceso estocástico#Para un proceso estocástico
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md]]"
+  - "[[ingeniería electrónica/estoca/Introducción a procesos aleatorios/Resumen.md]]"
+  - "[[ingeniería en informática/orga/Visualizaciones/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Representación de variables aleatorias/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

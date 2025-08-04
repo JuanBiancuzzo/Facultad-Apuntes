@@ -15,6 +15,13 @@ referencias:
   - "412"
   - "414"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería en informática/algebra 2/Espacios Vectoriales/Resumen.md]]"
+  - "[[ingeniería en informática/discreta/Álgebra de Boole/Resumen.md]]"
+  - "[[ingeniería en informática/discreta/Álgebra de conjuntos/Resumen.md]]"
+  - "[[ingeniería en informática/discreta/Álgebra proposicional/Resumen.md]]"
+  - "[[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Resumen.md]]"
+  - "[[licenciatura en ciencias matemáticas/algebra 1/Números naturales e Inducción/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

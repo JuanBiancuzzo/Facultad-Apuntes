@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/algebra-2/Espacios-euclídeos
   - carrera/ingeniería-en-informática/algebra-2/Espacios-euclídeos
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/algebra 2/Espacios euclídeos/Resumen.md]]"
 ---
 # Definición
 ---

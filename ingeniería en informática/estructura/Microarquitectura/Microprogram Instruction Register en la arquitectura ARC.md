@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - MIR en la arquitectura ARC
+vinculoFacultad:
+  - "[[ingeniería en informática/estructura/Microarquitectura/Resumen.md]]"
 ---
 # Definición
 ---

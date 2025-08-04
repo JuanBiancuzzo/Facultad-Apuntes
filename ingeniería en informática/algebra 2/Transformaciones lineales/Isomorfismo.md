@@ -8,6 +8,10 @@ tags:
   - nota/facultad
 referencias:
   - "192"
+vinculoFacultad:
+  - "[[ingeniería en informática/algebra 2/Transformaciones lineales/Resumen.md]]"
+  - "[[ingeniería en informática/discreta/Álgebra de Boole/Resumen.md]]"
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

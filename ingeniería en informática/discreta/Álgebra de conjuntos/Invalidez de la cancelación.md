@@ -4,6 +4,9 @@ tags:
   - carrera/ingeniería-en-informática/discreta/Álgebra-de-conjuntos
   - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Álgebra de conjuntos/Resumen.md]]"
+  - "[[ingeniería en informática/discreta/Álgebra proposicional/Resumen.md]]"
 ---
 # Definición
 ---

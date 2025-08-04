@@ -7,6 +7,8 @@ tags:
 aliases:
   - Red 2G
   - Red Celular 2G
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
 ---
 # Definición
 ---

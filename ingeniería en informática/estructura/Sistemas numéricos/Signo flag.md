@@ -7,6 +7,9 @@ tags:
   - nota/facultad
 aliases:
   - Negative flag
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Microcontroladores de 32 bits/Resumen.md]]"
+  - "[[ingeniería en informática/estructura/Sistemas numéricos/Resumen.md]]"
 ---
 # Definición
 ---

@@ -5,6 +5,9 @@ tags:
   - carrera/ingeniería-en-informática/discreta/Álgebra-de-Boole
   - carrera/ingeniería-en-informática/estructura/Álgebra-de-Boole
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Álgebra de Boole/Resumen.md]]"
+  - "[[ingeniería en informática/estructura/Álgebra de Boole/Resumen.md]]"
 ---
 # Definición
 ---

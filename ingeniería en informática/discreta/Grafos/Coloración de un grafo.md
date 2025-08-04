@@ -7,6 +7,8 @@ aliases:
   - Número cromático
   - Índice cromático
   - Teorema de Vizing
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

@@ -12,6 +12,9 @@ aliases:
 referencias:
   - "517"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Nomenclatura/Resumen.md]]"
+  - "[[licenciatura en ciencias matemáticas/analisis 1/Vectores y geometría del espacio/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

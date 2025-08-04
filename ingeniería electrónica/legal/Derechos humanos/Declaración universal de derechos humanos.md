@@ -3,6 +3,8 @@ dia: 2024-02-15
 tags:
   - carrera/ingeniería-electrónica/legal/Derechos-humanos
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/legal/Derechos humanos/Resumen.md]]"
 ---
 # Definición
 ---

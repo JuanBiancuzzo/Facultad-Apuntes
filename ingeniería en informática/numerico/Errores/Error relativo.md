@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/numerico/Errores
   - carrera/ingeniería-en-informática/numerico/Errores
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/numerico/Errores/Resumen.md]]"
 ---
 # Definición
 ---

@@ -3,6 +3,8 @@ dia: 2024-05-29
 tags:
   - carrera/ingeniería-electrónica/señales/Transformadas-de-Laplace-y-Z
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/señales/Transformadas de Laplace y Z/Resumen.md]]"
 ---
 # Definición
 ---

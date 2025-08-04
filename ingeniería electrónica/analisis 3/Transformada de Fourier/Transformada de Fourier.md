@@ -8,6 +8,9 @@ tags:
 aliases:
   - Transformada inversa de Fourier
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Transformada de Fourier/Resumen.md]]"
+  - "[[ingeniería electrónica/señales/Transformada de Fourier/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

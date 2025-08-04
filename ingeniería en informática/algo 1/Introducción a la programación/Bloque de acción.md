@@ -7,6 +7,8 @@ tags:
 aliases:
   - Estructura de control secuencial
   - Scope
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Introducción a la programación/Resumen.md]]"
 ---
 # Definición
 ---

@@ -3,6 +3,8 @@ dia: 2024-02-05
 tags:
   - carrera/ingeniería-electrónica/legal/Contratos
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/legal/Contratos/Resumen.md]]"
 ---
 # Definición
 ---

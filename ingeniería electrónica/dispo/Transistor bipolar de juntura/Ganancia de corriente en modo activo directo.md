@@ -5,6 +5,8 @@ tags:
   - nota/facultad
 aliases:
   - Ganancia de corriente en MAD
+vinculoFacultad:
+  - "[[ingeniería electrónica/dispo/Transistor bipolar de juntura/Resumen.md]]"
 ---
 # Definición
 ---

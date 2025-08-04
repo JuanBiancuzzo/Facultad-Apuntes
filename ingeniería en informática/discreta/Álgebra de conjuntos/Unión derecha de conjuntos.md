@@ -3,6 +3,8 @@ dia: 2024-04-12
 tags:
   - carrera/ingeniería-en-informática/discreta/Álgebra-de-conjuntos
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Álgebra de conjuntos/Resumen.md]]"
 ---
 # Definición
 ---

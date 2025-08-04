@@ -8,6 +8,8 @@ tags:
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-zig
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 1/Lenguaje C/Resumen.md]]"
 ---
 # Definición
 ---

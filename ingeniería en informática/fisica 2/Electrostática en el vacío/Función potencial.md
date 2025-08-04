@@ -10,6 +10,8 @@ aliases:
   - Función potencial escalar#Potencial escalar
   - Función potencial vectorial#Potencial vectorial
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería en informática/fisica 2/Electrostática en el vacío/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -6,6 +6,8 @@ tags:
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-SQL
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/bdd/SQL/Resumen.md]]"
 ---
 # Definición
 ---

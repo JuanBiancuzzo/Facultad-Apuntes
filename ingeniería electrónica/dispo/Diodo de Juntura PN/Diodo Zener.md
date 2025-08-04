@@ -4,6 +4,9 @@ tags:
   - carrera/ingeniería-electrónica/circuitos/Circuitos-con-diodos
   - carrera/ingeniería-electrónica/dispo/Diodo-de-Juntura-PN
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos/Circuitos con diodos/Resumen.md]]"
+  - "[[ingeniería electrónica/dispo/Diodo de Juntura PN/Resumen.md]]"
 ---
 # Definición
 ---

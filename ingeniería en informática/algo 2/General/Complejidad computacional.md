@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/algo-2/General
   - carrera/ingeniería-en-informática/algo-2/General
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/algo 2/General/Resumen.md]]"
 ---
 # Definición
 ---

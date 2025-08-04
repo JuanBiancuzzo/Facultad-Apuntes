@@ -5,6 +5,8 @@ referencias: []
 tags:
   - carrera/ingeniería-electrónica/electro/Ondas-confinadas
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Ondas confinadas/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

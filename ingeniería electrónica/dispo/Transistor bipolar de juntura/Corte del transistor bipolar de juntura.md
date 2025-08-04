@@ -5,6 +5,8 @@ aliases:
 tags:
   - carrera/ingeniería-electrónica/dispo/Transistor-bipolar-de-juntura
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/dispo/Transistor bipolar de juntura/Resumen.md]]"
 ---
 # Definición
 ---

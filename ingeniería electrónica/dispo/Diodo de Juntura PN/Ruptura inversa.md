@@ -3,6 +3,8 @@ dia: 2023-09-23
 tags:
   - carrera/ingeniería-electrónica/dispo/Diodo-de-Juntura-PN
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/dispo/Diodo de Juntura PN/Resumen.md]]"
 ---
 # Definición
 ---

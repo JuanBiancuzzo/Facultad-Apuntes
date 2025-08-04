@@ -6,6 +6,8 @@ tags:
 aliases:
   - Buen conductor#Buen conductor
   - Buen dieléctrico#Buen dieléctrico
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Ondas electromagnéticas/Resumen.md]]"
 ---
 # Definición
 ---

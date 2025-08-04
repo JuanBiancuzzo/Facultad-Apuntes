@@ -7,6 +7,8 @@ aliases:
   - SRAM
   - Memoria de acceso aleatorio estático
   - RAM estática
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
 ---
 # Definición
 ---

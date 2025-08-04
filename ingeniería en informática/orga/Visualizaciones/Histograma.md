@@ -5,6 +5,9 @@ tags:
   - carrera/ingeniería-en-informática/orga/Visualizaciones
   - nota/facultad
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Análisis de datos/Resumen.md]]"
+  - "[[ingeniería en informática/orga/Visualizaciones/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -3,6 +3,8 @@ dia: 2024-08-02
 tags:
   - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Álgebra proposicional/Resumen.md]]"
 ---
 # Definición
 ---

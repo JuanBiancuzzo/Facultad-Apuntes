@@ -6,6 +6,9 @@ tags:
   - carrera/ingeniería-en-informática/fisica-1/Trabajo-y-energía
   - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/fisica 1/Trabajo y energía/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Electrostática en el vacío/Resumen.md]]"
 ---
 # Definición
 ---

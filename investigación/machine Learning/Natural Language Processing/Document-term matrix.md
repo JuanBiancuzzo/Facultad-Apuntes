@@ -10,6 +10,8 @@ tags:
   - investigación/matemática/Estadística/Machine-learning/Natural-Language-Processing
   - nota/curso
   - nota/investigacion
+vinculoCurso:
+  - "[[cursos/ciencia de datos para salud mental y psicología/Machine learning, deep learning e interpretabilidad algorítmica/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

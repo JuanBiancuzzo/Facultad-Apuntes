@@ -8,6 +8,9 @@ tags:
   - nota/facultad
 referencias:
   - "222"
+vinculoFacultad:
+  - "[[ingeniería electrónica/adc/Circuitos en regimen senoidal permanente/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Circuitos en régimen alterno permanente/Resumen.md]]"
 ---
 # Definición
 ---

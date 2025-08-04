@@ -7,6 +7,8 @@ tags:
 aliases:
   - Ad hoc
 etapa: sin-empezar
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
 ---
 # Definición
 ---

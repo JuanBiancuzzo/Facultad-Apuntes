@@ -7,6 +7,10 @@ tags:
   - carrera/ingeniería-en-informática/proba/Teoría-de-probabilidades
   - nota/facultad
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Repaso/Resumen.md]]"
+  - "[[ingeniería en informática/distribuidos/Herramientas de Diseño/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Teoría de probabilidades/Resumen.md]]"
 ---
 # Definición
 ---

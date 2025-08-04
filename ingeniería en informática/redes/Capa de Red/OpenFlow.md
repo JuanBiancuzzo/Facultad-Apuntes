@@ -7,6 +7,8 @@ tags:
 aliases:
   - Match-plus-action
   - OperFlow Protocol
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de Red/Resumen.md]]"
 ---
 # Definición
 ---

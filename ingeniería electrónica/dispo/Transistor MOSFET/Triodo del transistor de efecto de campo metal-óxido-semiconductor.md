@@ -5,6 +5,8 @@ aliases:
 tags:
   - carrera/ingeniería-electrónica/dispo/Transistor-MOSFET
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/dispo/Transistor MOSFET/Resumen.md]]"
 ---
 # Definición
 ---

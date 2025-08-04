@@ -8,6 +8,8 @@ aliases:
   - Capa de abstracción de hardware
 referencias:
   - "204"
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
 ---
 # Definición
 ---

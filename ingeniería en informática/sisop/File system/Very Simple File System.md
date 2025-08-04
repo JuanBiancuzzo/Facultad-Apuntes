@@ -5,6 +5,8 @@ aliases:
 tags:
   - carrera/ingeniería-en-informática/sisop/File-system
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/sisop/File system/Resumen.md]]"
 ---
 # Definición
 ---

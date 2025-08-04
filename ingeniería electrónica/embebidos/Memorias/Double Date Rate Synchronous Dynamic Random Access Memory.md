@@ -13,6 +13,8 @@ aliases:
   - DDR3
   - DDR4
   - DDR5
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
 ---
 # Definición
 ---

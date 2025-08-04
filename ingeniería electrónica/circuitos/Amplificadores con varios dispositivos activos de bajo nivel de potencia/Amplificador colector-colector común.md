@@ -9,6 +9,8 @@ tags:
 aliases:
   - Modelo de pequeña señal del amplificador colector-colector común#Modelo de pequeña señal
   - MPS del amplificador colector-colector común#Modelo de pequeña señal
+vinculoFacultad:
+  - "[[ingeniería electrónica/circuitos/Amplificadores con varios dispositivos activos de bajo nivel de potencia/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

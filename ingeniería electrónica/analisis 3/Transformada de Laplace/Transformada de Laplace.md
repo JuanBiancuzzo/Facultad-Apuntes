@@ -10,6 +10,9 @@ aliases:
 etapa: ampliar
 referencias:
   - "873"
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Transformada de Laplace/Resumen.md]]"
+  - "[[ingeniería electrónica/señales/Transformadas de Laplace y Z/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

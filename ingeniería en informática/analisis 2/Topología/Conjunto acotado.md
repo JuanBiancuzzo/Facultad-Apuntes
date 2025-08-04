@@ -8,6 +8,9 @@ tags:
 aliases:
   - Conjunto superiormente acotado
   - Conjunto inferiormente acotado
+vinculoFacultad:
+  - "[[ingeniería en informática/analisis 2/Topología/Resumen Parte 1.md]]"
+  - "[[ingeniería en informática/discreta/Relaciones/Resumen.md]]"
 ---
 # Definición
 ---

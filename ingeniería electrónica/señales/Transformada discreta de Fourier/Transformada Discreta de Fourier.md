@@ -9,6 +9,8 @@ aliases:
 tags:
   - carrera/ingeniería-electrónica/señales/Transformada-discreta-de-Fourier
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/señales/Transformada discreta de Fourier/Resumen.md]]"
 ---
 # Definición
 ---

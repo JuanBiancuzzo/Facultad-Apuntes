@@ -7,6 +7,9 @@ tags:
   - carrera/ingeniería-electrónica/proba/Teoría-de-probabilidades
   - carrera/ingeniería-en-informática/proba/Teoría-de-probabilidades
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/estoca/Repaso/Resumen.md]]"
+  - "[[ingeniería en informática/proba/Teoría de probabilidades/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

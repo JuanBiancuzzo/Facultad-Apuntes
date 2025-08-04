@@ -8,6 +8,9 @@ tags:
   - nota/facultad
 aliases:
   - Recinto compacto
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Ecuaciones diferenciales/Resumen.md]]"
+  - "[[ingeniería en informática/analisis 2/Topología/Resumen Parte 1.md]]"
 ---
 # Definición
 ---

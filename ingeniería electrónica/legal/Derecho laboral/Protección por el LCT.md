@@ -3,6 +3,8 @@ dia: 2024-02-20
 tags:
   - carrera/ingeniería-electrónica/legal/Derecho-laboral
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/legal/Derecho laboral/Resumen.md]]"
 ---
 # Definición
 ---

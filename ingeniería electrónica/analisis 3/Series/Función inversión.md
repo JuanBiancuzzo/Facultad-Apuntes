@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 referencias: 
 etapa: empezado
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Series/Resumen.md]]"
 ---
 # Definición
 ---

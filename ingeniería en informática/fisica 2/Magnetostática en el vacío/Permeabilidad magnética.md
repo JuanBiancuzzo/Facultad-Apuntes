@@ -11,6 +11,9 @@ aliases:
   - Permeabilidad magnética en el vacío#^permeabilidad-magnetica-en-el-vacio
   - Permeabilidad magnética relativa#^permeabilidad-magnetica-relativa
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/electro/Campos eléctricos y magnéticos/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Magnetostática en el vacío/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

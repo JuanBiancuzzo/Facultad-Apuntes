@@ -8,6 +8,9 @@ tags:
 aliases:
   - Código binario
   - Codificación de código máquina en la arquitectura ARC#En la arquitectura ARC
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Microcontroladores de 32 bits/Resumen.md]]"
+  - "[[ingeniería en informática/estructura/Sistema ARC/Resumen.md]]"
 ---
 # Definición
 ---

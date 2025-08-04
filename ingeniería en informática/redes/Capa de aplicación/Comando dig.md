@@ -6,6 +6,8 @@ tags:
   - investigación/herramientas/Comandos-de-linux
   - nota/facultad
   - nota/investigacion
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa de aplicación/Resumen.md]]"
 ---
 # Definición
 ---

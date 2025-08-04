@@ -12,6 +12,11 @@ aliases:
 referencias:
   - "700"
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Autómatas/Resumen.md]]"
+  - "[[ingeniería en informática/estructura/Sistema ARC/Resumen.md]]"
+vinculoCurso:
+  - "[[cursos/introduction to algorithms/Introduction/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

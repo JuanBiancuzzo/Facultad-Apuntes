@@ -11,6 +11,9 @@ referencias:
 aliases:
   - Triángulo de potencia#Triángulo de potencia
 etapa: ampliar
+vinculoFacultad:
+  - "[[ingeniería electrónica/adc/Circuitos en regimen senoidal permanente/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Circuitos en régimen alterno permanente/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

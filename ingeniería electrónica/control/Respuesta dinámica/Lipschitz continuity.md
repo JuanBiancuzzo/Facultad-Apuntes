@@ -8,6 +8,8 @@ tags:
   - nota/facultad
 aliases:
   - Continuidad de Lipschitz
+vinculoFacultad:
+  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

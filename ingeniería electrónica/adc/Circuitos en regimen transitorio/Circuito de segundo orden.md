@@ -8,6 +8,8 @@ aliases:
   - Sobreamortiguado#Sobreamortiguado
   - Críticamente amortiguado#Críticamente amortiguado
   - Subamortiguado#Subamortiguado
+vinculoFacultad:
+  - "[[ingeniería electrónica/adc/Circuitos en regimen transitorio/Resumen.md]]"
 ---
 # Definición
 ---

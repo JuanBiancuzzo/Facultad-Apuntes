@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/adc/Cuadripolos
   - carrera/ingeniería-en-informática/adc/Cuadripolos
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/adc/Cuadripolos/Resumen.md]]"
 ---
 # Definición
 ---

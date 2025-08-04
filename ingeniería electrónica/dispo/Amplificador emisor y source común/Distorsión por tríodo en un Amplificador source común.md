@@ -3,6 +3,8 @@ dia: 2024-02-15
 tags:
   - carrera/ingeniería-electrónica/dispo/Amplificador-emisor-y-source-común
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/dispo/Amplificador emisor y source común/Resumen.md]]"
 ---
 # Definición
 ---

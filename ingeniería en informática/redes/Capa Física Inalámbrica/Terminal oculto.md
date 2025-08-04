@@ -6,6 +6,8 @@ tags:
   - nota/facultad
 aliases:
   - Hidden terminal
+vinculoFacultad:
+  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
 ---
 # Definición
 ---

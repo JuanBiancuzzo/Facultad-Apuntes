@@ -12,6 +12,8 @@ aliases:
   - Execlp system call
   - Execv system call
   - Execcvp system call
+vinculoFacultad:
+  - "[[ingeniería en informática/sisop/La abstracción de proceso/Resumen.md]]"
 ---
 # Definición
 ---

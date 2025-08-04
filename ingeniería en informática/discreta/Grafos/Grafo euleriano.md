@@ -6,6 +6,8 @@ tags:
 aliases:
   - Explorador
   - Grafo semieuleriano
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

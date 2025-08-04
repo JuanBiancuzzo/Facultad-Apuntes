@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/proba/Esperanza-condicional
   - carrera/ingeniería-en-informática/proba/Esperanza-condicional
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería en informática/proba/Esperanza condicional/Resumen.md]]"
 ---
 # Definición
 ---

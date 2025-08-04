@@ -7,6 +7,8 @@ tags:
   - nota/investigacion
 aliases:
   - DFS
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
 ---
 # Definición
 ---

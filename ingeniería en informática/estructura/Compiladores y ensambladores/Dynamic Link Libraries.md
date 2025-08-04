@@ -7,6 +7,8 @@ tags:
 aliases:
   - Linking loader dinámico
   - DLL
+vinculoFacultad:
+  - "[[ingeniería en informática/estructura/Compiladores y ensambladores/Resumen.md]]"
 ---
 # Definición
 ---

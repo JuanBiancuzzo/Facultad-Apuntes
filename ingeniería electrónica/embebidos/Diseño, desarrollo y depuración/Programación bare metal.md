@@ -6,6 +6,8 @@ tags:
 aliases:
   - Super-loop
   - Polling & interrupts
+vinculoFacultad:
+  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
 ---
 # Definición
 ---

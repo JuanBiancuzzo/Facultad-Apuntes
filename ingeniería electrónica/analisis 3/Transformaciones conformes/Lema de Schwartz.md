@@ -4,6 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/analisis-3/Transformaciones-conformes
   - carrera/ingeniería-en-informática/analisis-3/Transformaciones-conformes
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/analisis 3/Transformaciones conformes/Resumen.md]]"
 ---
 Sea $f: U \to \mathbb{C}$ [[Holomorfa]] en un abierto $U$ del plano complejo que contiene el [[Disco]] $D = \Set{z \in \mathbb{C}: |z| < 1}$ tal que $f(0) = 0$. Entonces:
 1) Para todo $z \in D$ se verifica que $|f(z)| \le |z|$.

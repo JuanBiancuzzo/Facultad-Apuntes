@@ -14,6 +14,9 @@ aliases:
   - Principio de inducción "corrido"#Inducción "corrida"
   - Inducción débil
   - PI
+vinculoFacultad:
+  - "[[ingeniería en informática/discreta/Inducción/Resumen.md]]"
+  - "[[licenciatura en ciencias matemáticas/algebra 1/Números naturales e Inducción/Resumen.md]]"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

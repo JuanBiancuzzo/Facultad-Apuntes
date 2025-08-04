@@ -3,6 +3,8 @@ dia: 2024-03-16
 tags:
   - carrera/ingeniería-electrónica/señales/Sistemas-LTI
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/señales/Sistemas LTI/Resumen.md]]"
 ---
 # Definición
 ---

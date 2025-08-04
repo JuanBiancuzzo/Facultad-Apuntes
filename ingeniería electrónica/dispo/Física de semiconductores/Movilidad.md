@@ -5,6 +5,9 @@ tags:
   - carrera/ingeniería-electrónica/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
   - carrera/ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
   - nota/facultad
+vinculoFacultad:
+  - "[[ingeniería electrónica/dispo/Física de semiconductores/Resumen.md]]"
+  - "[[ingeniería en informática/fisica 2/Circuitos de corrientes no dependientes del tiempo/Resumen.md]]"
 ---
 # Definición
 ---
