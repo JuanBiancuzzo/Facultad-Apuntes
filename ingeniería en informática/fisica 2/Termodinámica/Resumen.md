@@ -6,6 +6,9 @@ tags:
   - facultad/resumen
 nombreResumen: Termodinámica
 materiaResumen: ingeniería en informática/fisica 2/Física 2 A (6203).md
+infoTemaMateria:
+  materia: Física 2 A
+  carrera: Ingeniería en informática
 ---
 # Índice 
 ---

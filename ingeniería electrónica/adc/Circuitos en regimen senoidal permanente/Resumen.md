@@ -6,6 +6,9 @@ tags:
   - facultad/resumen
 nombreResumen: Circuitos en regimen senoidal permanente
 materiaResumen: ingeniería electrónica/adc/Análisis de circuitos (8604).md
+infoTemaMateria:
+  materia: Análisis de circuitos
+  carrera: Ingeniería electrónica
 ---
 # Índice 
 ---

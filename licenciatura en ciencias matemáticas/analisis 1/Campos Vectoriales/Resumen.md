@@ -7,6 +7,9 @@ tags:
   - facultad/resumen
 nombreResumen: Campos Vectoriales
 materiaResumen: licenciatura en ciencias matemáticas/analisis 1/Análisis 1.md
+infoTemaMateria:
+  materia: Análisis 1
+  carrera: Licenciatura en Ciencias Matemáticas
 ---
 # Índice
 ---

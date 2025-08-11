@@ -5,6 +5,9 @@ tags:
   - facultad/resumen
 nombreResumen: Ondas confinadas
 materiaResumen: ingeniería electrónica/electro/Electromagnetismo aplicado (TB069).md
+infoTemaMateria:
+  materia: Electromagnetismo aplicado
+  carrera: Ingeniería electrónica
 ---
 # Índice
 ---

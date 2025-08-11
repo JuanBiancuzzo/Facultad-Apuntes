@@ -5,6 +5,9 @@ tags:
   - facultad/resumen
 nombreResumen: Propuesta
 materiaResumen: ingeniería en informática/tpp/Trabajo Profesional de Ingeniería Informática.md
+infoTemaMateria:
+  materia: Trabajo Profesional de Ingeniería Informática
+  carrera: Ingeniería en informática
 ---
 # Índice 
 ---

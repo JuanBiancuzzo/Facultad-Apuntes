@@ -5,6 +5,9 @@ tags:
   - facultad/resumen
 nombreResumen: Código Civil y Comercial de la Nación
 materiaResumen: ingeniería electrónica/legal/Legislación y ejercicio profesional (9111).md
+infoTemaMateria:
+  materia: Legislación y ejercicio profesional
+  carrera: Ingeniería electrónica
 ---
 # Índice 
 ---

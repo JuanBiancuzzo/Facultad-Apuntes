@@ -5,6 +5,9 @@ tags:
   - facultad/resumen
 nombreResumen: Álgebra de Boole
 materiaResumen: ingeniería en informática/discreta/Matemática discreta (6107).md
+infoTemaMateria:
+  materia: Matemática discreta
+  carrera: Ingeniería en informática
 ---
 # Índice 
 ---

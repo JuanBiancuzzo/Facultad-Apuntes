@@ -5,6 +5,9 @@ tags:
   - facultad/resumen
 nombreResumen: Amplificador emisor y source común
 materiaResumen: ingeniería electrónica/dispo/Dispositivos semiconductores (8603).md
+infoTemaMateria:
+  materia: Dispositivos semiconductores
+  carrera: Ingeniería electrónica
 ---
 # Índice 
 ---

@@ -8,6 +8,9 @@ referencias:
   - "594"
 nombreResumen: Capa de Enlace
 materiaResumen: ingeniería en informática/redes/Redes (TA048).md
+infoTemaMateria:
+  materia: Redes
+  carrera: Ingeniería en informática
 ---
 # Índice 
 ---

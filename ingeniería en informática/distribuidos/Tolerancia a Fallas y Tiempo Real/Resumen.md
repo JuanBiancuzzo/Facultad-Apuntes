@@ -5,6 +5,9 @@ tags:
   - facultad/resumen
 nombreResumen: Tolerancia a Fallas y Tiempo Real
 materiaResumen: ingeniería en informática/distribuidos/Sistemas Distribuidos 1 (TA050).md
+infoTemaMateria:
+  materia: Sistemas Distribuidos 1
+  carrera: Ingeniería en informática
 ---
 # Índice
 ---

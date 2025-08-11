@@ -13,6 +13,10 @@ equivalencia: "[[ingeniería electrónica/analisis 3/Análisis matemático 3 (61
 nombreMateria: Análisis Matemático 3 A
 nombreReducido: 
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
+nombreCarrera: Ingeniería en informática
+materiaEquivalente:
+  nombre: Análisis matemático 3
+  carrera: Ingeniería electrónica
 ---
 # Apuntes
 ---

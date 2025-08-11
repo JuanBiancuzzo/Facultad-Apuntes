@@ -6,6 +6,9 @@ tags:
   - facultad/resumen
 nombreResumen: Flip-Flops
 materiaResumen: ingeniería en informática/estructura/Estructura del computador (6670).md
+infoTemaMateria:
+  materia: Estructura del computador
+  carrera: Ingeniería en informática
 ---
 # Índice 
 ---

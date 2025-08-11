@@ -7,6 +7,9 @@ tags:
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
 nombreResumen: Manejo de archivos
 materiaResumen: ingeniería en informática/algo 1/Algoritmos y programación 1 (7540).md
+infoTemaMateria:
+  materia: Algoritmos y programación 1
+  carrera: Ingeniería en informática
 ---
 # Índice
 ---

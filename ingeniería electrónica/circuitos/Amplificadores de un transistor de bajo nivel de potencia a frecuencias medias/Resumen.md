@@ -12,6 +12,9 @@ referencias:
   - "452"
 nombreResumen: Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias
 materiaResumen: ingeniería electrónica/circuitos/Circuitos microelectrónicos (TB068).md
+infoTemaMateria:
+  materia: Circuitos microelectrónicos
+  carrera: Ingeniería electrónica
 ---
 # Índice 
 ---

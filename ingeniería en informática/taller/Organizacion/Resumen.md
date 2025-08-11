@@ -6,6 +6,9 @@ tags:
   - facultad/resumen
 nombreResumen: Organizacion
 materiaResumen: ingeniería en informática/taller/Taller de programación 1 (9508).md
+infoTemaMateria:
+  materia: Taller de programación 1
+  carrera: Ingeniería en informática
 ---
 # Índice 
 ---

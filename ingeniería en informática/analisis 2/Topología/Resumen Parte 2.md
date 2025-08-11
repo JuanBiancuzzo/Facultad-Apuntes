@@ -7,6 +7,9 @@ tags:
 parte: 2
 nombreResumen: Topología
 materiaResumen: ingeniería en informática/analisis 2/Análisis matemático 2 A (6103).md
+infoTemaMateria:
+  materia: Análisis matemático 2 A
+  carrera: Ingeniería en informática
 ---
 # Índice
 ---

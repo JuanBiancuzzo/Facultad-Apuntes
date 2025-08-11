@@ -8,6 +8,10 @@ equivalencia: "[[licenciatura en ciencias matemáticas/algebra 1/Álgebra 1.md|�
 nombreMateria: Álgebra 1
 nombreReducido: 
 pathCarrera: "[[licenciatura en ciencias de datos/Licenciatura en Ciencias de Datos.md]]"
+nombreCarrera: Licenciatura en Ciencias de Datos
+materiaEquivalente:
+  nombre: Álgebra 1
+  carrera: Licenciatura en Ciencias Matemáticas
 ---
 # Apuntes
 ---

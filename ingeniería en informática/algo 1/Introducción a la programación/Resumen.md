@@ -6,6 +6,9 @@ tags:
   - facultad/resumen
 nombreResumen: Introducción a la programación
 materiaResumen: ingeniería en informática/algo 1/Algoritmos y programación 1 (7540).md
+infoTemaMateria:
+  materia: Algoritmos y programación 1
+  carrera: Ingeniería en informática
 ---
 # Índice 
 ---

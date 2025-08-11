@@ -6,6 +6,9 @@ tags:
   - facultad/resumen
 nombreResumen: Sistema de particulas
 materiaResumen: ingeniería en informática/fisica 1/Física 1 A (6201).md
+infoTemaMateria:
+  materia: Física 1 A
+  carrera: Ingeniería en informática
 ---
 # Índice 
 ---

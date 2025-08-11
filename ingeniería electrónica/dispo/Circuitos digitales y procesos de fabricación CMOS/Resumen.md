@@ -5,6 +5,9 @@ tags:
   - facultad/resumen
 nombreResumen: Circuitos digitales y procesos de fabricación CMOS
 materiaResumen: ingeniería electrónica/dispo/Dispositivos semiconductores (8603).md
+infoTemaMateria:
+  materia: Dispositivos semiconductores
+  carrera: Ingeniería electrónica
 ---
 # Índice 
 ---

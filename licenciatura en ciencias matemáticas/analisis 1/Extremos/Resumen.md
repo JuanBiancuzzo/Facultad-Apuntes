@@ -9,6 +9,9 @@ referencias:
   - "523"
 nombreResumen: Extremos
 materiaResumen: licenciatura en ciencias matemáticas/analisis 1/Análisis 1.md
+infoTemaMateria:
+  materia: Análisis 1
+  carrera: Licenciatura en Ciencias Matemáticas
 ---
 # Índice
 ---

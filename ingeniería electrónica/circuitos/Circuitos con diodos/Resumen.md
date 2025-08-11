@@ -13,6 +13,9 @@ referencias:
   - "463"
 nombreResumen: Circuitos con diodos
 materiaResumen: ingeniería electrónica/circuitos/Circuitos microelectrónicos (TB068).md
+infoTemaMateria:
+  materia: Circuitos microelectrónicos
+  carrera: Ingeniería electrónica
 ---
 # Índice 
 ---

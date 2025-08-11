@@ -13,6 +13,10 @@ equivalencia: "[[ingeniería en informática/fisica 2/Física 2 A (6203).md|Fís
 nombreMateria: Física 2 A
 nombreReducido: 
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
+nombreCarrera: Ingeniería electrónica
+materiaEquivalente:
+  nombre: Física 2 A
+  carrera: Ingeniería en informática
 ---
 # Apuntes
 ---

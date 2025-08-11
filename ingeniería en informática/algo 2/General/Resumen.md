@@ -6,6 +6,9 @@ tags:
   - facultad/resumen
 nombreResumen: General
 materiaResumen: ingeniería en informática/algo 2/Algoritmos y programación 2 (7541).md
+infoTemaMateria:
+  materia: Algoritmos y programación 2
+  carrera: Ingeniería en informática
 ---
 # Índice 
 ---

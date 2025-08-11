@@ -13,6 +13,10 @@ equivalencia: "[[ingeniería en informática/proba/Probabilidad y estadística B
 nombreMateria: Probabilidad y Estadística B
 nombreReducido: 
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
+nombreCarrera: Ingeniería electrónica
+materiaEquivalente:
+  nombre: Probabilidad y estadística B
+  carrera: Ingeniería en informática
 ---
 # Apuntes
 ---

@@ -13,6 +13,10 @@ equivalencia: "[[ingeniería electrónica/fisica 3/Física 3 (8203).md|Física 3
 nombreMateria: Física 3 D
 nombreReducido: 
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
+nombreCarrera: Ingeniería en informática
+materiaEquivalente:
+  nombre: Física 3
+  carrera: Ingeniería electrónica
 ---
 # Apuntes
 ---

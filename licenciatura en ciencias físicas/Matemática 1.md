@@ -8,6 +8,10 @@ equivalencia: "[[licenciatura en ciencias matemáticas/analisis 1/Análisis 1.md
 nombreMateria: Matemática 1
 nombreReducido: 
 pathCarrera: "[[licenciatura en ciencias físicas/Licenciatura en Ciencias Físicas.md]]"
+nombreCarrera: Licenciatura en Ciencias Físicas
+materiaEquivalente:
+  nombre: Análisis 1
+  carrera: Licenciatura en Ciencias Matemáticas
 ---
 # Apuntes
 ---

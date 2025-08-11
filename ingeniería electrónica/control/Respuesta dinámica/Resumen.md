@@ -12,6 +12,9 @@ referencias:
   - "873"
 etapa: sin-empezar
 materiaResumen: ingeniería electrónica/control/Control automático (TA133).md
+infoTemaMateria:
+  materia: Control automático
+  carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

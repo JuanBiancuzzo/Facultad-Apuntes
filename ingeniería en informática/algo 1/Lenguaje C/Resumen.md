@@ -7,6 +7,9 @@ tags:
   - facultad/resumen
 nombreResumen: Lenguaje C
 materiaResumen: ingeniería en informática/algo 1/Algoritmos y programación 1 (7540).md
+infoTemaMateria:
+  materia: Algoritmos y programación 1
+  carrera: Ingeniería en informática
 ---
 # Índice 
 ---

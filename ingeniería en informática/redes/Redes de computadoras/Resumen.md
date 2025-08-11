@@ -8,6 +8,9 @@ referencias:
   - "589"
 nombreResumen: Redes de computadoras
 materiaResumen: ingeniería en informática/redes/Redes (TA048).md
+infoTemaMateria:
+  materia: Redes
+  carrera: Ingeniería en informática
 ---
 # Índice 
 ---

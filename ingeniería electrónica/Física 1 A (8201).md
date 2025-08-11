@@ -9,6 +9,10 @@ equivalencia: "[[ingeniería en informática/fisica 1/Física 1 A (6201).md|Fís
 nombreMateria: Física 1 A
 nombreReducido: 
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
+nombreCarrera: Ingeniería electrónica
+materiaEquivalente:
+  nombre: Física 1 A
+  carrera: Ingeniería en informática
 ---
 # Apuntes
 ---

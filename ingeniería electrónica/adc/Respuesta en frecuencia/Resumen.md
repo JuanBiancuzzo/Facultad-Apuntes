@@ -6,6 +6,9 @@ tags:
   - facultad/resumen
 nombreResumen: Respuesta en frecuencia
 materiaResumen: ingeniería electrónica/adc/Análisis de circuitos (8604).md
+infoTemaMateria:
+  materia: Análisis de circuitos
+  carrera: Ingeniería electrónica
 ---
 # Índice 
 ---

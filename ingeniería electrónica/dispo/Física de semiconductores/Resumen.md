@@ -5,6 +5,9 @@ tags:
   - facultad/resumen
 nombreResumen: Física de semiconductores
 materiaResumen: ingeniería electrónica/dispo/Dispositivos semiconductores (8603).md
+infoTemaMateria:
+  materia: Dispositivos semiconductores
+  carrera: Ingeniería electrónica
 ---
 # Índice 
 ---

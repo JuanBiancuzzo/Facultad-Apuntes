@@ -1,6 +1,6 @@
 ---
 dia: 2024-12-19
-etapa: sin-empezar
+etapa: empezado
 estado: Terminando la lecture 7 y empezando unidad 3
 nombreAutores:
   - apellido: Demaine

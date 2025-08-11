@@ -5,6 +5,9 @@ tags:
 nombreResumen: Introducción a procesos aleatorios
 capitulo: 4
 materiaResumen: ingeniería electrónica/estoca/Procesos estocásticos (TA132).md
+infoTemaMateria:
+  materia: Procesos estocásticos
+  carrera: Ingeniería electrónica
 ---
 # Índice
 ---

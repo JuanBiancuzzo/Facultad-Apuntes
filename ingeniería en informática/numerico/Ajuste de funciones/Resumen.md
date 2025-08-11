@@ -6,6 +6,9 @@ tags:
   - facultad/resumen
 nombreResumen: Ajuste de funciones
 materiaResumen: ingeniería en informática/numerico/Análisis numérico (7512).md
+infoTemaMateria:
+  materia: Análisis numérico
+  carrera: Ingeniería en informática
 ---
 # Índice 
 ---

@@ -6,6 +6,9 @@ tags:
   - facultad/resumen
 nombreResumen: Programación Asincrónica
 materiaResumen: ingeniería en informática/concurrentes/Programación Concurrente (TB026).md
+infoTemaMateria:
+  materia: Programación Concurrente
+  carrera: Ingeniería en informática
 ---
 # Índice
 ---

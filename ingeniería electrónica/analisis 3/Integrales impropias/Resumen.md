@@ -6,6 +6,9 @@ tags:
   - facultad/resumen
 nombreResumen: Integrales impropias
 materiaResumen: ingeniería electrónica/analisis 3/Análisis matemático 3 (6110).md
+infoTemaMateria:
+  materia: Análisis matemático 3
+  carrera: Ingeniería electrónica
 ---
 # Índice 
 ---

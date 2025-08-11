@@ -15,6 +15,10 @@ equivalencia: "[[ingeniería en informática/numerico/Análisis numérico (7512)
 nombreMateria: Análisis Numérico
 nombreReducido: 
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
+nombreCarrera: Ingeniería electrónica
+materiaEquivalente:
+  nombre: Análisis numérico
+  carrera: Ingeniería en informática
 ---
 # Apuntes
 ---

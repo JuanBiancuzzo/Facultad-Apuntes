@@ -11,6 +11,10 @@ equivalencia: "[[ingeniería en informática/estructura/Estructura del computado
 nombreMateria: Técnica Digital
 nombreReducido: 
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
+nombreCarrera: Ingeniería electrónica
+materiaEquivalente:
+  nombre: Estructura del computador
+  carrera: Ingeniería en informática
 ---
 # Apuntes
 ---

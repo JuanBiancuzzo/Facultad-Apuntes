@@ -13,6 +13,9 @@ referencias:
   - "454"
 nombreResumen: Amplificadores con varios dispositivos activos de bajo nivel de potencia
 materiaResumen: ingeniería electrónica/circuitos/Circuitos microelectrónicos (TB068).md
+infoTemaMateria:
+  materia: Circuitos microelectrónicos
+  carrera: Ingeniería electrónica
 ---
 # Índice 
 ---

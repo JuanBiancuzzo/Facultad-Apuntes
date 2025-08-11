@@ -9,6 +9,9 @@ referencias:
   - "932"
   - "1028"
 materiaResumen: ingeniería electrónica/circuitos 2/Taller de diseño de circuitos electrónicos (TA138).md
+infoTemaMateria:
+  materia: Taller de diseño de circuitos electrónicos
+  carrera: Ingeniería electrónica
 ---
 # Índice
 ---

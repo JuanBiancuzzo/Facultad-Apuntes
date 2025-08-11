@@ -6,6 +6,9 @@ tags:
   - facultad/resumen
 nombreResumen: Funciones de varias variables
 materiaResumen: ingeniería en informática/analisis 2/Análisis matemático 2 A (6103).md
+infoTemaMateria:
+  materia: Análisis matemático 2 A
+  carrera: Ingeniería en informática
 ---
 # Índice
 ---

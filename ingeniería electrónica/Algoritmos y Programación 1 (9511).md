@@ -9,6 +9,10 @@ equivalencia: "[[ingeniería en informática/algo 1/Algoritmos y programación 1
 nombreMateria: Algoritmos y Programación 1
 nombreReducido: 
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
+nombreCarrera: Ingeniería electrónica
+materiaEquivalente:
+  nombre: Algoritmos y programación 1
+  carrera: Ingeniería en informática
 ---
 # Apuntes
 ---

@@ -5,6 +5,9 @@ tags:
   - facultad/resumen
 nombreResumen: Sincronización
 materiaResumen: ingeniería en informática/concurrentes/Programación Concurrente (TB026).md
+infoTemaMateria:
+  materia: Programación Concurrente
+  carrera: Ingeniería en informática
 ---
 # Índice
 ---

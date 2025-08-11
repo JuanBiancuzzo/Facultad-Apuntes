@@ -9,6 +9,10 @@ equivalencia: "[[ingeniería en informática/redes/Redes (TA048).md|Redes (TA048
 nombreMateria: Redes de comunicaciones
 nombreReducido: 
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
+nombreCarrera: Ingeniería electrónica
+materiaEquivalente:
+  nombre: Redes
+  carrera: Ingeniería en informática
 ---
 # Apuntes
 ---

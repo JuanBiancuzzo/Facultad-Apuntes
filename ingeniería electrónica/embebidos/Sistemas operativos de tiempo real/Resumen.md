@@ -5,6 +5,9 @@ tags:
   - facultad/resumen
 nombreResumen: Sistemas operativos de tiempo real
 materiaResumen: ingeniería electrónica/embebidos/Taller de sistemas embebidos (TA134).md
+infoTemaMateria:
+  materia: Taller de sistemas embebidos
+  carrera: Ingeniería electrónica
 ---
 # Índice
 ---

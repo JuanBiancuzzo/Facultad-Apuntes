@@ -5,6 +5,9 @@ tags:
 nombreResumen: Distribuciones multivariables
 capitulo: 2
 materiaResumen: ingeniería electrónica/estoca/Procesos estocásticos (TA132).md
+infoTemaMateria:
+  materia: Procesos estocásticos
+  carrera: Ingeniería electrónica
 ---
 # Índice
 ---

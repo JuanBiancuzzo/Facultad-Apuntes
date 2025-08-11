@@ -5,6 +5,9 @@ tags:
   - facultad/resumen
 nombreResumen: Ergonomia
 materiaResumen: ingeniería electrónica/seguridad/Seguridad ambiental y del trabajo (9704).md
+infoTemaMateria:
+  materia: Seguridad ambiental y del trabajo
+  carrera: Ingeniería electrónica
 ---
 # Índice 
 ---

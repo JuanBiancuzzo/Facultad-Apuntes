@@ -6,6 +6,9 @@ tags:
   - facultad/resumen
 nombreResumen: Ecuaciones no lineales
 materiaResumen: ingeniería en informática/numerico/Análisis numérico (7512).md
+infoTemaMateria:
+  materia: Análisis numérico
+  carrera: Ingeniería en informática
 ---
 # Índice 
 ---

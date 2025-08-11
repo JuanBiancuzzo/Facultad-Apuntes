@@ -9,6 +9,10 @@ equivalencia: "[[ingeniería en informática/analisis 2/Análisis matemático 2 
 nombreMateria: Análisis Matemático 2 A
 nombreReducido: 
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
+nombreCarrera: Ingeniería electrónica
+materiaEquivalente:
+  nombre: Análisis matemático 2 A
+  carrera: Ingeniería en informática
 ---
 # Apuntes
 ---

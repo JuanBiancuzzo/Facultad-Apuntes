@@ -5,6 +5,9 @@ tags:
   - facultad/resumen
 nombreResumen: Spark
 materiaResumen: ingeniería en informática/orga/Organización de datos (7506).md
+infoTemaMateria:
+  materia: Organización de datos
+  carrera: Ingeniería en informática
 ---
 # Índice 
 ---

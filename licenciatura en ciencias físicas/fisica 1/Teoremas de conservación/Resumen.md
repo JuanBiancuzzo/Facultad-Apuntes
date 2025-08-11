@@ -5,6 +5,9 @@ tags:
   - facultad/resumen
 nombreResumen: Teoremas de conservación
 materiaResumen: licenciatura en ciencias físicas/fisica 1/Física 1.md
+infoTemaMateria:
+  materia: Física 1
+  carrera: Licenciatura en Ciencias Físicas
 ---
 # Índice
 ---

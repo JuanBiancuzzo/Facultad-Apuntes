@@ -6,6 +6,9 @@ tags:
   - facultad/resumen
 nombreResumen: Matrices unitarias y ortogonales
 materiaResumen: ingeniería en informática/algebra 2/Álgebra 2 A (6108).md
+infoTemaMateria:
+  materia: Álgebra 2 A
+  carrera: Ingeniería en informática
 ---
 # Índice 
 ---

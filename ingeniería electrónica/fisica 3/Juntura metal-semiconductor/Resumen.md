@@ -6,6 +6,9 @@ tags:
   - facultad/resumen
 nombreResumen: Juntura metal-semiconductor
 materiaResumen: ingeniería electrónica/fisica 3/Física 3 (8203).md
+infoTemaMateria:
+  materia: Física 3
+  carrera: Ingeniería electrónica
 ---
 # Índice 
 ---

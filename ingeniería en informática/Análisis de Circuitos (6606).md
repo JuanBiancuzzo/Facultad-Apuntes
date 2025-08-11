@@ -13,6 +13,10 @@ equivalencia: "[[ingeniería electrónica/adc/Análisis de circuitos (8604).md|A
 nombreMateria: Análisis de Circuitos
 nombreReducido: 
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
+nombreCarrera: Ingeniería en informática
+materiaEquivalente:
+  nombre: Análisis de circuitos
+  carrera: Ingeniería electrónica
 ---
 # Apuntes
 ---

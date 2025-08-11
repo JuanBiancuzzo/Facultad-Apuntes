@@ -5,6 +5,9 @@ tags:
 nombreResumen: Análisis de datos
 capitulo: 3
 materiaResumen: ingeniería electrónica/estoca/Procesos estocásticos (TA132).md
+infoTemaMateria:
+  materia: Procesos estocásticos
+  carrera: Ingeniería electrónica
 ---
 # Índice
 ---

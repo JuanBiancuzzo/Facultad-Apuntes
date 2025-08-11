@@ -5,6 +5,9 @@ tags:
   - facultad/resumen
 nombreResumen: Dinámica del cuerpo rígido
 materiaResumen: licenciatura en ciencias físicas/fisica 1/Física 1.md
+infoTemaMateria:
+  materia: Física 1
+  carrera: Licenciatura en Ciencias Físicas
 ---
 # Índice
 ---

@@ -5,6 +5,9 @@ tags:
   - facultad/resumen
 nombreResumen: Ejercicio profesional
 materiaResumen: ingeniería electrónica/legal/Legislación y ejercicio profesional (9111).md
+infoTemaMateria:
+  materia: Legislación y ejercicio profesional
+  carrera: Ingeniería electrónica
 ---
 # Índice 
 ---

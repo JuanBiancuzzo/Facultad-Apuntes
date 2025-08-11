@@ -11,6 +11,10 @@ equivalencia: "[[ingeniería en informática/taller/Taller de programación 1 (9
 nombreMateria: Taller de Programación
 nombreReducido: 
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
+nombreCarrera: Ingeniería electrónica
+materiaEquivalente:
+  nombre: Taller de programación 1
+  carrera: Ingeniería en informática
 ---
 # Apuntes
 ---

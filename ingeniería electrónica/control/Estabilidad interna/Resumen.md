@@ -8,6 +8,9 @@ referencias:
   - "876"
   - "893"
 materiaResumen: ingeniería electrónica/control/Control automático (TA133).md
+infoTemaMateria:
+  materia: Control automático
+  carrera: Ingeniería electrónica
 ---
 # Índice
 ---

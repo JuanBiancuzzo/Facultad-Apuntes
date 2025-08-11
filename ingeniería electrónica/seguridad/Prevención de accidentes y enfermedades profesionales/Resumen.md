@@ -5,6 +5,9 @@ tags:
   - facultad/resumen
 nombreResumen: Prevención de accidentes y enfermedades profesionales
 materiaResumen: ingeniería electrónica/seguridad/Seguridad ambiental y del trabajo (9704).md
+infoTemaMateria:
+  materia: Seguridad ambiental y del trabajo
+  carrera: Ingeniería electrónica
 ---
 # Índice 
 ---

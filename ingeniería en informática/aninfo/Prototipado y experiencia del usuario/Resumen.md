@@ -5,6 +5,9 @@ tags:
   - facultad/resumen
 nombreResumen: Prototipado y experiencia del usuario
 materiaResumen: ingeniería en informática/aninfo/Análisis de la información (7509).md
+infoTemaMateria:
+  materia: Análisis de la información
+  carrera: Ingeniería en informática
 ---
 # Índice 
 ---

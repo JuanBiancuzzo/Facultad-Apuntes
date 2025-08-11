@@ -5,6 +5,9 @@ tags:
 nombreResumen: Introduccion
 capitulo: "0"
 materiaResumen: ingeniería en informática/distribuidos/Sistemas Distribuidos 1 (TA050).md
+infoTemaMateria:
+  materia: Sistemas Distribuidos 1
+  carrera: Ingeniería en informática
 ---
 # Índice
 ---

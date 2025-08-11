@@ -5,6 +5,9 @@ tags:
   - facultad/resumen
 nombreResumen: Concurrencia
 materiaResumen: ingeniería en informática/sisop/Sistemas operativos (7508).md
+infoTemaMateria:
+  materia: Sistemas operativos
+  carrera: Ingeniería en informática
 ---
 # Índice 
 ---

@@ -8,6 +8,9 @@ referencias:
   - "417"
 nombreResumen: Polinomios con coeficientes en un cuerpo
 materiaResumen: licenciatura en ciencias matemáticas/algebra 1/Álgebra 1.md
+infoTemaMateria:
+  materia: Álgebra 1
+  carrera: Licenciatura en Ciencias Matemáticas
 ---
 # Índice
 ---

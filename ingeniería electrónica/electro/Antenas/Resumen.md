@@ -5,6 +5,9 @@ tags:
   - facultad/resumen
 nombreResumen: Antenas
 materiaResumen: ingeniería electrónica/electro/Electromagnetismo aplicado (TB069).md
+infoTemaMateria:
+  materia: Electromagnetismo aplicado
+  carrera: Ingeniería electrónica
 ---
 # Índice
 ---
