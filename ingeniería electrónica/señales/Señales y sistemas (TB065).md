@@ -15,6 +15,7 @@ correlativas:
 nombreMateria: Señales y sistemas
 nombreReducido: señales
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
+nombreCarrera: Ingeniería electrónica
 ---
 # Apuntes
 ---

@@ -12,6 +12,8 @@ referencias:
 nombreMateria: Álgebra 1
 nombreReducido: algebra 1
 pathCarrera: "[[licenciatura en ciencias matemáticas/Licenciatura en Ciencias Matemáticas.md]]"
+nombreCarrera: Licenciatura en Ciencias Matemáticas
+codigo: 1003
 ---
 # Apuntes
 ---

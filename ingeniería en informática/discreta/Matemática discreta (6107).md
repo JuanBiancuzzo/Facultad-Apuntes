@@ -10,6 +10,7 @@ etapa: terminado
 nombreMateria: Matemática discreta
 nombreReducido: discreta
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
+nombreCarrera: Ingeniería en informática
 ---
 # Apuntes
 ---

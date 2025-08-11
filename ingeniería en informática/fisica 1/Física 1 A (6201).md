@@ -10,6 +10,7 @@ etapa: empezado
 nombreMateria: Física 1 A
 nombreReducido: fisica 1
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
+nombreCarrera: Ingeniería en informática
 ---
 # Apuntes
 ---

@@ -20,6 +20,7 @@ referencias:
 nombreMateria: Circuitos microelectrónicos
 nombreReducido: circuitos
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
+nombreCarrera: Ingeniería electrónica
 ---
 # Apuntes
 ---

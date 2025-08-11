@@ -15,6 +15,7 @@ correlativas:
 nombreMateria: Física 2 A
 nombreReducido: fisica 2
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
+nombreCarrera: Ingeniería en informática
 ---
 # Apuntes
 ---

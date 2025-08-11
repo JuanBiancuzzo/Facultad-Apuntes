@@ -21,6 +21,7 @@ referencias:
 nombreMateria: Algoritmos y programación 1
 nombreReducido: algo 1
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
+nombreCarrera: Ingeniería en informática
 ---
 # Apuntes
 ---

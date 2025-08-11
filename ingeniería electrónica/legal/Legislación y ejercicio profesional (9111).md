@@ -10,6 +10,7 @@ etapa: empezado
 nombreMateria: Legislación y ejercicio profesional
 nombreReducido: legal
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
+nombreCarrera: Ingeniería electrónica
 ---
 # Apuntes
 ---

@@ -13,6 +13,7 @@ correlativas:
 nombreMateria: Probabilidad y estadística B
 nombreReducido: proba
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
+nombreCarrera: Ingeniería en informática
 ---
 # Apuntes
 ---

@@ -13,6 +13,7 @@ correlativas:
 nombreMateria: Análisis de la información
 nombreReducido: aninfo
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
+nombreCarrera: Ingeniería en informática
 ---
 # Apuntes
 ---

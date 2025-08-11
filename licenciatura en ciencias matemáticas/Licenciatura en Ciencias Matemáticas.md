@@ -5,7 +5,7 @@ tags:
 estado: Empecé con álgebra
 planes:
   - "2022"
-tieneCodigo: false
+tieneCodigo: true
 etapa: empezado
 ---
 # Mapa

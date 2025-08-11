@@ -16,6 +16,7 @@ referencias:
 nombreMateria: Electromagnetismo aplicado
 nombreReducido: electro
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
+nombreCarrera: Ingeniería electrónica
 ---
 # Apuntes
 ---

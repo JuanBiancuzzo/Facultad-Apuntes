@@ -13,6 +13,7 @@ correlativas:
 nombreMateria: Taller de programación 1
 nombreReducido: taller
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
+nombreCarrera: Ingeniería en informática
 ---
 # Apuntes
 ---

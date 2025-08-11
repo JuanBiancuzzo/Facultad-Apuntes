@@ -15,6 +15,7 @@ estado: Sin empezar
 nombreMateria: Programación Concurrente
 nombreReducido: concurrentes
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
+nombreCarrera: Ingeniería en informática
 ---
 # Apuntes
 ---

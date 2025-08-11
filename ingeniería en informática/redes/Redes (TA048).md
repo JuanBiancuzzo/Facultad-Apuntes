@@ -15,6 +15,7 @@ referencias:
 nombreMateria: Redes
 nombreReducido: redes
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
+nombreCarrera: Ingeniería en informática
 ---
 # Apuntes
 ---

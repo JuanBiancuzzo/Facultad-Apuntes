@@ -21,6 +21,7 @@ referencias:
   - "992"
   - "1004"
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
+nombreCarrera: Ingeniería electrónica
 ---
 # Apuntes
 ---

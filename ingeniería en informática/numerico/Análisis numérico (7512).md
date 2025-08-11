@@ -15,6 +15,7 @@ correlativas:
 nombreMateria: Análisis numérico
 nombreReducido: numerico
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
+nombreCarrera: Ingeniería en informática
 ---
 # Apuntes
 ---

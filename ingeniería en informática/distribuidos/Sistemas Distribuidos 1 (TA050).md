@@ -17,6 +17,7 @@ nombreReducido: distribuidos
 referencias:
   - "625"
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
+nombreCarrera: Ingeniería en informática
 ---
 # Apuntes
 ---

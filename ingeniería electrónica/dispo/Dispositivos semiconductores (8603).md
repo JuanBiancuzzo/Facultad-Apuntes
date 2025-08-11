@@ -15,6 +15,7 @@ correlativas:
 nombreMateria: Dispositivos semiconductores
 nombreReducido: dispo
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
+nombreCarrera: Ingeniería electrónica
 ---
 # Apuntes
 ---

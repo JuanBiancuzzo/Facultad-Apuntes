@@ -15,6 +15,7 @@ correlativas:
 nombreMateria: Estructura del computador
 nombreReducido: estructura
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
+nombreCarrera: Ingeniería en informática
 ---
 # Apuntes
 ---

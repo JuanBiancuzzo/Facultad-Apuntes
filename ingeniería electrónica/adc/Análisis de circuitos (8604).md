@@ -17,6 +17,7 @@ correlativas:
 nombreMateria: Análisis de circuitos
 nombreReducido: adc
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
+nombreCarrera: Ingeniería electrónica
 ---
 # Apuntes
 ---

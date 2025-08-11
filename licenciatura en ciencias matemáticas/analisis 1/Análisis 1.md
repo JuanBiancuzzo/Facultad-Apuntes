@@ -12,6 +12,8 @@ referencias:
 nombreMateria: Análisis 1
 nombreReducido: analisis 1
 pathCarrera: "[[licenciatura en ciencias matemáticas/Licenciatura en Ciencias Matemáticas.md]]"
+nombreCarrera: Licenciatura en Ciencias Matemáticas
+codigo: 1000
 ---
 # Apuntes
 ---

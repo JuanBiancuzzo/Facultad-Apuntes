@@ -15,6 +15,7 @@ correlativas:
 nombreMateria: Trabajo Profesional de Ingeniería Informática
 nombreReducido: tpp
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
+nombreCarrera: Ingeniería en informática
 ---
 # Propuesta
 ---

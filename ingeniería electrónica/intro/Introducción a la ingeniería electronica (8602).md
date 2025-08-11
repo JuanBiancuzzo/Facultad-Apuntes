@@ -13,6 +13,7 @@ correlativas:
 nombreMateria: Introducción a la ingeniería electronica
 nombreReducido: intro
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
+nombreCarrera: Ingeniería electrónica
 ---
 # Apuntes
 ---

@@ -13,6 +13,7 @@ correlativas:
 nombreMateria: Algoritmos y programación 2
 nombreReducido: algo 2
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
+nombreCarrera: Ingeniería en informática
 ---
 # Apuntes
 ---

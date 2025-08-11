@@ -15,6 +15,7 @@ correlativas:
 nombreMateria: Análisis matemático 3
 nombreReducido: analisis 3
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
+nombreCarrera: Ingeniería electrónica
 ---
 # Apuntes
 ---

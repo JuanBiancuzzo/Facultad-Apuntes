@@ -10,6 +10,7 @@ correlativas:
 nombreMateria: Física 1
 nombreReducido: fisica 1
 pathCarrera: "[[licenciatura en ciencias físicas/Licenciatura en Ciencias Físicas.md]]"
+nombreCarrera: Licenciatura en Ciencias Físicas
 ---
 # Apuntes
 ---
