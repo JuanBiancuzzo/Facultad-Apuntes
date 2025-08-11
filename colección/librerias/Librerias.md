@@ -5,7 +5,7 @@ tags:
   - colección/representante
 estado: Vamos a ver las librerías de diferentes lenguajes
 ---
-Vamos a organizar las funciones de [[Biblioteca|librerías]] de diferentes lenguajes
+Vamos a organizar las funciones de [[ingeniería en informática/algo 1/Lenguaje C/Biblioteca|librerías]] de diferentes lenguajes
 
 Incluir 
 * [[Spark|Spark de Python]]

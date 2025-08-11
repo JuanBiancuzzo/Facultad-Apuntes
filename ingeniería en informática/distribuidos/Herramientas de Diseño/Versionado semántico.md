@@ -13,7 +13,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Es un estándar utilizado para definir versiones de [[Aplicación Programming Interface|API]] y [[Biblioteca|librerías]]. Pone el foco en brindar información de retrocompatibilidad de la [[Interfaz|interfaz]]
+Es un estándar utilizado para definir versiones de [[Aplicación Programming Interface|API]] y [[ingeniería en informática/algo 1/Lenguaje C/Biblioteca|librerías]]. Pone el foco en brindar información de retrocompatibilidad de la [[Interfaz|interfaz]]
 
 ![[Versionado semántico.png]]
 

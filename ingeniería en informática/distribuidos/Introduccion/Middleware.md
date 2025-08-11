@@ -36,7 +36,7 @@ La capa de software entre el sistema operativo y la [[Capa de aplicación|capa d
 
 ## Vista física (centralizado)
 ---
-Tenemos distintos clientes, que en vez de ser una capa, termina siendo un conjunto de servicios, y este middleware expone una [[Aplicación Programming Interface|API]] o [[Biblioteca|librería]] la cual los usuarios usan para utilizar los servicios que ofrece
+Tenemos distintos clientes, que en vez de ser una capa, termina siendo un conjunto de servicios, y este middleware expone una [[Aplicación Programming Interface|API]] o [[ingeniería en informática/algo 1/Lenguaje C/Biblioteca|librería]] la cual los usuarios usan para utilizar los servicios que ofrece
 
 ![[Vista física centralizada de middleware.png]]
 

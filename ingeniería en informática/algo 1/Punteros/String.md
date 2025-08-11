@@ -22,7 +22,7 @@ Un string es un [[Array|array]] de caracteres, usada para representar texto
 ---
 En el caso especifico de [[Lenguaje C|C]], se usa los [[Representación de un caracter|carácter]] dado por la [[Tabla ASCII|tabla ASCII]], y se lo dice [[NULL|null]] terminated ya que el vector define cuando termina con el carácter null (`'\0'`) 
 
-Podemos construirlo como cualquier vector, teniendo en cuenta que muchas funciones de la [[Biblioteca|librería]] estándar espera que el string termine con ese carácter
+Podemos construirlo como cualquier vector, teniendo en cuenta que muchas funciones de la [[ingeniería en informática/algo 1/Lenguaje C/Biblioteca|librería]] estándar espera que el string termine con ese carácter
 
 ```c
 char string[5] = { 'H', 'o', 'l', 'a', '\0' };

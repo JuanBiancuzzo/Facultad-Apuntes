@@ -18,7 +18,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Esta [[Función#Expresión en C|función]] de la [[Biblioteca|librería]] estándar de [[Lenguaje C|C]], con la [[Prototipo de función|firma]]
+Esta [[Función#Expresión en C|función]] de la [[ingeniería en informática/algo 1/Lenguaje C/Biblioteca|librería]] estándar de [[Lenguaje C|C]], con la [[Prototipo de función|firma]]
 
 ```c
 /* Permite leer en un archivo de texto

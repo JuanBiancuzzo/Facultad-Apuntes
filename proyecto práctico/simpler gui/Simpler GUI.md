@@ -7,7 +7,7 @@ tags:
 ---
 # Propuesta
 ---
-Vamos a crear una [[Biblioteca|librería]], siguiendo la [[Arquitectura cliente servidor|arquitectura cliente-servidor]], usa un [[Protocolo|protocolo]] para informar que modificar y que información se ingresó por el usuario. Inspirado en 
+Vamos a crear una [[ingeniería en informática/algo 1/Lenguaje C/Biblioteca|librería]], siguiendo la [[Arquitectura cliente servidor|arquitectura cliente-servidor]], usa un [[Protocolo|protocolo]] para informar que modificar y que información se ingresó por el usuario. Inspirado en 
 * [Raylib GUI](https://github.com/raysan5/raygui/blob/master/src/raygui.h)
 
 

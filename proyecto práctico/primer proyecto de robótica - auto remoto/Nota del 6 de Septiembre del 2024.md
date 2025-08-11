@@ -23,7 +23,7 @@ void loop() {
 }
 ```
 
-Para el sensor infrarrojo, usamos receptor infrarrojo `VS1838B`, y usando la [[Biblioteca|biblioteca]] `IRremote` que se puede encontrar en [repo de github](https://github.com/Arduino-IRremote/Arduino-IRremote) donde usa una [[Variable|variable]] global `IrReceiver` para controlar la decodificación, por lo que se inicializa 
+Para el sensor infrarrojo, usamos receptor infrarrojo `VS1838B`, y usando la [[ingeniería en informática/algo 1/Lenguaje C/Biblioteca|biblioteca]] `IRremote` que se puede encontrar en [repo de github](https://github.com/Arduino-IRremote/Arduino-IRremote) donde usa una [[Variable|variable]] global `IrReceiver` para controlar la decodificación, por lo que se inicializa 
 
 ```c
 void setup() {

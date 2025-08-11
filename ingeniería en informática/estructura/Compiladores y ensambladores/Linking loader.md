@@ -9,4 +9,4 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Linkea en tiempo de carga. Además de relocalizar, busca automáticamente [[Biblioteca|bibliotecas]], [[Linker|linkea]] y carga el [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] en [[Memoria|memoria]]. De esta forma, el ejecutable no tiene que contener las bibliotecas utilizadas
+Linkea en tiempo de carga. Además de relocalizar, busca automáticamente [[ingeniería en informática/algo 1/Lenguaje C/Biblioteca|bibliotecas]], [[Linker|linkea]] y carga el [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] en [[Memoria|memoria]]. De esta forma, el ejecutable no tiene que contener las bibliotecas utilizadas
