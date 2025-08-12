@@ -8,8 +8,8 @@ tags:
   - facultad/materia
 etapa: terminado
 correlativas:
-  - path: ingeniería en informática/algo 3/Algoritmos y programación 3 (7507).md
-    tipo: Materia
+  - tipo: Materia
+    materia: Algoritmos y programación 3
 nombreMateria: Análisis de la información
 nombreReducido: aninfo
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"

@@ -8,8 +8,8 @@ tags:
   - facultad/materia
 etapa: terminado
 correlativas:
-  - path: ingeniería electrónica/Física 1 A (8201).md
-    tipo: Equivalente
+  - tipo: Equivalente
+    materia: Física 1 A
 nombreMateria: Introducción a la ingeniería electronica
 nombreReducido: intro
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"

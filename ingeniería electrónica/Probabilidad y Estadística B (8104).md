@@ -4,10 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/proba
   - facultad/materia-equivalente
 correlativas:
-  - path: ingeniería electrónica/Análisis Matemático 2 A (8101).md
-    tipo: Equivalente
-  - path: ingeniería electrónica/Álgebra 2 A (8102).md
-    tipo: Equivalente
+  - tipo: Equivalente
+    materia: Análisis Matemático 2 A
+  - tipo: Equivalente
+    materia: Álgebra 2 A
 codigo: 8104
 equivalencia: "[[ingeniería en informática/proba/Probabilidad y estadística B (6109).md]]"
 nombreMateria: Probabilidad y Estadística B

@@ -8,10 +8,10 @@ tags:
   - facultad/materia
 etapa: empezado
 correlativas:
-  - path: ingeniería en informática/orga/Organización de datos (7506).md
-    tipo: Materia
-  - path: ingeniería en informática/algo 3/Algoritmos y programación 3 (7507).md
-    tipo: Materia
+  - tipo: Materia
+    materia: Organización de datos
+  - tipo: Materia
+    materia: Algoritmos y programación 3
 nombreMateria: Base de datos
 nombreReducido: bdd
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"

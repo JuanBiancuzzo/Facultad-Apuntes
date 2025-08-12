@@ -8,10 +8,10 @@ tags:
   - facultad/materia
 etapa: terminado
 correlativas:
-  - path: ingeniería en informática/fisica 1/Física 1 A (6201).md
-    tipo: Materia
-  - path: ingeniería en informática/analisis 2/Análisis matemático 2 A (6103).md
-    tipo: Materia
+  - tipo: Materia
+    materia: Física 1 A
+  - tipo: Materia
+    materia: Análisis matemático 2 A
 nombreMateria: Física 2 A
 nombreReducido: fisica 2
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"

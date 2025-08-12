@@ -10,10 +10,10 @@ cuatri: 25C1
 plan: "2023"
 codigo: TA133
 correlativas:
-  - path: ingeniería electrónica/Física 2 A (8202).md
-    tipo: Equivalente
-  - path: ingeniería electrónica/señales/Señales y sistemas (TB065).md
-    tipo: Materia
+  - tipo: Equivalente
+    materia: Física 2 A
+  - tipo: Materia
+    materia: Señales y sistemas
 referencias:
   - "870"
   - "881"

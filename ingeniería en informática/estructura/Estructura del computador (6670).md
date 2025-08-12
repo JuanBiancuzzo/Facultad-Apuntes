@@ -8,10 +8,10 @@ tags:
   - facultad/materia
 etapa: terminado
 correlativas:
-  - path: ingeniería en informática/fisica 2/Física 2 A (6203).md
-    tipo: Materia
-  - path: ingeniería en informática/algo 2/Algoritmos y programación 2 (7541).md
-    tipo: Materia
+  - tipo: Materia
+    materia: Física 2 A
+  - tipo: Materia
+    materia: Algoritmos y programación 2
 nombreMateria: Estructura del computador
 nombreReducido: estructura
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"

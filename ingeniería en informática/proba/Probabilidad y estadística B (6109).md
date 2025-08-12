@@ -8,8 +8,8 @@ tags:
   - facultad/materia
 etapa: terminado
 correlativas:
-  - path: ingeniería en informática/algebra 2/Álgebra 2 A (6108).md
-    tipo: Materia
+  - tipo: Materia
+    materia: Álgebra 2 A
 nombreMateria: Probabilidad y estadística B
 nombreReducido: proba
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"

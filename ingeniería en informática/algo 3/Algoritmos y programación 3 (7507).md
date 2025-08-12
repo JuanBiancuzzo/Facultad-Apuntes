@@ -8,8 +8,8 @@ tags:
   - facultad/materia
 etapa: sin-empezar
 correlativas:
-  - path: ingeniería en informática/algo 2/Algoritmos y programación 2 (7541).md
-    tipo: Materia
+  - tipo: Materia
+    materia: Algoritmos y programación 2
 nombreMateria: Algoritmos y programación 3
 nombreReducido: algo 3
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"

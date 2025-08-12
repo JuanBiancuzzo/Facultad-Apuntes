@@ -8,8 +8,8 @@ tags:
   - facultad/materia
 etapa: terminado
 correlativas:
-  - path: ingeniería en informática/sisop/Sistemas operativos (7508).md
-    tipo: Materia
+  - tipo: Materia
+    materia: Sistemas operativos
 referencias:
   - "588"
 nombreMateria: Redes

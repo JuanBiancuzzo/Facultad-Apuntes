@@ -4,8 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/estructura
   - facultad/materia-equivalente
 correlativas:
-  - path: ingeniería electrónica/intro/Introducción a la ingeniería electronica (8602).md
-    tipo: Materia
+  - tipo: Materia
+    materia: Introducción a la ingeniería electronica
 codigo: "8601"
 equivalencia: "[[ingeniería en informática/estructura/Estructura del computador (6670).md|Estructura del computador (6670)]]"
 nombreMateria: Técnica Digital

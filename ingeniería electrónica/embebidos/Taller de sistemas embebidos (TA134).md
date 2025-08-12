@@ -8,12 +8,12 @@ tags:
   - facultad/materia
 etapa: ampliar
 correlativas:
-  - path: ingeniería electrónica/Algoritmos y Programación 1 (9511).md
-    tipo: Equivalente
-  - path: ingeniería electrónica/Técnica Digital (8601).md
-    tipo: Equivalente
-  - path: ingeniería electrónica/dispo/Dispositivos semiconductores (8603).md
-    tipo: Materia
+  - tipo: Equivalente
+    materia: Algoritmos y Programación 1
+  - tipo: Equivalente
+    materia: Técnica Digital
+  - tipo: Materia
+    materia: Dispositivos semiconductores
 referencias:
   - "464"
   - "466"

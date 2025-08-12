@@ -4,8 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/algo-3
   - facultad/materia-equivalente
 correlativas:
-  - path: ingeniería electrónica/Algoritmos y Programación 2 (9512).md
-    tipo: Equivalente
+  - tipo: Equivalente
+    materia: Algoritmos y Programación 2
 codigo: 9502
 equivalencia: "[[ingeniería en informática/algo 3/Algoritmos y programación 3 (7507).md|Algoritmos y programación 3 (7507)]]"
 nombreMateria: Algoritmos y Programación 3

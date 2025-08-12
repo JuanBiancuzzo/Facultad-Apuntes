@@ -4,10 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/fisica-2
   - facultad/materia-equivalente
 correlativas:
-  - path: ingeniería electrónica/Física 1 A (8201).md
-    tipo: Equivalente
-  - path: ingeniería electrónica/Análisis Matemático 2 A (8101).md
-    tipo: Equivalente
+  - tipo: Equivalente
+    materia: Física 1 A
+  - tipo: Equivalente
+    materia: Análisis Matemático 2 A
 codigo: 8202
 equivalencia: "[[ingeniería en informática/fisica 2/Física 2 A (6203).md|Física 2 A (6203)]]"
 nombreMateria: Física 2 A

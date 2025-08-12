@@ -4,12 +4,12 @@ tags:
   - carrera/ingeniería-electrónica/numerico
   - facultad/materia-equivalente
 correlativas:
-  - path: ingeniería electrónica/Algoritmos y Programación 1 (9511).md
-    tipo: Equivalente
-  - path: ingeniería electrónica/Análisis Matemático 2 A (8101).md
-    tipo: Equivalente
-  - path: ingeniería electrónica/Álgebra 2 A (8102).md
-    tipo: Equivalente
+  - tipo: Equivalente
+    materia: Algoritmos y Programación 1
+  - tipo: Equivalente
+    materia: Análisis Matemático 2 A
+  - tipo: Equivalente
+    materia: Álgebra 2 A
 codigo: 9504
 equivalencia: "[[ingeniería en informática/numerico/Análisis numérico (7512).md|Análisis numérico (7512)]]"
 nombreMateria: Análisis Numérico
