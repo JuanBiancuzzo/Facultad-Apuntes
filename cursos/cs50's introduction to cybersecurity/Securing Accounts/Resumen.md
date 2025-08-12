@@ -13,6 +13,10 @@ tags:
   - cursos/resumen
 nombreResumen: Securing Accounts
 tipoCurso: Online
+infoCurso:
+  curso: CS50's Introduction to Cybersecurity
+  tipo: Online
+  anio: "2023"
 ---
 # Índice
 ---

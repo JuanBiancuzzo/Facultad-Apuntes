@@ -14,6 +14,10 @@ curso: "[[cursos/software construction/Software Construction.md]]"
 tipoCita: CursoTema
 nombreResumen: Queues and Message-Passing
 tipoCurso: Online
+infoCurso:
+  curso: Software Construction
+  tipo: Online
+  anio: "2016"
 ---
 # Índice
 ---

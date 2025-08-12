@@ -6,6 +6,10 @@ tags:
 nombreResumen: Inferencia causal y machine learning causal
 curso: "[[cursos/ciencia de datos para salud mental y psicología/Ciencia de datos para salud mental y psicología.md]]"
 tipoCurso: Presencial
+infoCurso:
+  curso: Ciencia de datos para salud mental y psicología
+  tipo: Presencial
+  anio: "2024"
 ---
 # Índice
 ---

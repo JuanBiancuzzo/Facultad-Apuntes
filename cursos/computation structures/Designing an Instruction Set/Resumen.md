@@ -13,6 +13,10 @@ curso: "[[cursos/computation structures/Computation Structures.md]]"
 tipoCita: CursoTema
 nombreResumen: Designing an Instruction Set
 tipoCurso: Online
+infoCurso:
+  curso: Computation Structures
+  tipo: Online
+  anio: "2017"
 ---
 # Índice
 ---

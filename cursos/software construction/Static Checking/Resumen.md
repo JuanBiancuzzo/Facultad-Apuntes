@@ -14,6 +14,10 @@ curso: "[[cursos/software construction/Software Construction.md]]"
 tipoCita: CursoTema
 nombreResumen: Static Checking
 tipoCurso: Online
+infoCurso:
+  curso: Software Construction
+  tipo: Online
+  anio: "2016"
 ---
 # Índice
 ---

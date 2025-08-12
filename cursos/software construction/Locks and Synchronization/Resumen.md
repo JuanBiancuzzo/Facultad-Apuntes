@@ -14,6 +14,10 @@ curso: "[[cursos/software construction/Software Construction.md]]"
 tipoCita: CursoTema
 nombreResumen: Locks and Synchronization
 tipoCurso: Online
+infoCurso:
+  curso: Software Construction
+  tipo: Online
+  anio: "2016"
 ---
 # Índice
 ---

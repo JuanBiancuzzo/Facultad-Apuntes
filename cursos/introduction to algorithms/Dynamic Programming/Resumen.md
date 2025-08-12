@@ -14,6 +14,10 @@ tags:
 curso: "[[cursos/introduction to algorithms/Introduction to Algorithms.md]]"
 nombreResumen: Dynamic Programming
 tipoCurso: Online
+infoCurso:
+  curso: Introduction to Algorithms
+  tipo: Online
+  anio: "2011"
 ---
 # Índice
 ---

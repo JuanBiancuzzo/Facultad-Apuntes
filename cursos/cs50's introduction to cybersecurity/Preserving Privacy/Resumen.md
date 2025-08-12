@@ -13,6 +13,10 @@ curso: "[[cursos/cs50's introduction to cybersecurity/CS50's Introduction to Cyb
 tipoCita: CursoTema
 nombreResumen: Preserving Privacy
 tipoCurso: Online
+infoCurso:
+  curso: CS50's Introduction to Cybersecurity
+  tipo: Online
+  anio: "2023"
 ---
 # Índice
 ---

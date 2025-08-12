@@ -14,6 +14,10 @@ curso: "[[cursos/performance engineering of software systems/Performance Enginee
 tipoCita: CursoTema
 nombreResumen: DSLs and Autotuning
 tipoCurso: Online
+infoCurso:
+  curso: Performance Engineering of Software Systems
+  tipo: Online
+  anio: "2018"
 ---
 # Índice
 ---
