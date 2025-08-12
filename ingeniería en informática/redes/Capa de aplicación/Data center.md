@@ -11,8 +11,14 @@ aliases:
   - Blades
   - TOR switch
 vinculoFacultad:
-  - "[[ingeniería en informática/redes/Capa de aplicación/Resumen.md]]"
-  - "[[ingeniería en informática/redes/Redes de computadoras/Resumen.md]]"
+  - tema: Capa de aplicación
+    capitulo: 2
+    materia: Redes
+    carrera: Ingeniería en informática
+  - tema: Redes de computadoras
+    capitulo: 1
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

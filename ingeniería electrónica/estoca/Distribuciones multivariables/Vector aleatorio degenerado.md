@@ -7,7 +7,10 @@ tags:
   - carrera/ingeniería-electrónica/estoca/Distribuciones-multivariables
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md]]"
+  - tema: Distribuciones multivariables
+    capitulo: 2
+    materia: Procesos estocásticos
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

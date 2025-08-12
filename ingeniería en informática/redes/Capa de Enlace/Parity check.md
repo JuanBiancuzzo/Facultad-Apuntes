@@ -12,9 +12,18 @@ aliases:
   - Forward error correction
   - FEC
 vinculoFacultad:
-  - "[[ingeniería electrónica/embebidos/Microcontroladores de 32 bits/Resumen.md]]"
-  - "[[ingeniería en informática/estructura/Sistemas numéricos/Resumen.md]]"
-  - "[[ingeniería en informática/redes/Capa de Enlace/Resumen.md]]"
+  - tema: Microcontroladores de 32 bits
+    capitulo: 2
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
+  - tema: Sistemas numéricos
+    capitulo: 1
+    materia: Estructura del computador
+    carrera: Ingeniería en informática
+  - tema: Capa de Enlace
+    capitulo: 5
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -6,8 +6,14 @@ tags:
   - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/intro/Circuitos con resistencias/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Electrostática en conductores y dieléctricos/Resumen.md]]"
+  - tema: Circuitos con resistencias
+    capitulo: 1
+    materia: Introducción a la ingeniería electronica
+    carrera: Ingeniería electrónica
+  - tema: Electrostática en conductores y dieléctricos
+    capitulo: 3
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -8,7 +8,10 @@ tags:
 aliases:
   - Línea de transmisión
 vinculoFacultad:
-  - "[[ingeniería electrónica/electro/Ondas confinadas/Resumen.md]]"
+  - tema: Ondas confinadas
+    capitulo: 4
+    materia: Electromagnetismo aplicado
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

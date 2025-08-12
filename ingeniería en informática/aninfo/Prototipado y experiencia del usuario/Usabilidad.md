@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Prototipado-y-experiencia-del-usuario
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/aninfo/Prototipado y experiencia del usuario/Resumen.md]]"
+  - tema: Prototipado y experiencia del usuario
+    capitulo: 9
+    materia: Análisis de la información
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

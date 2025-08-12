@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/proba/Inferencia-estadística
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/proba/Inferencia estadística/Resumen.md]]"
+  - tema: Inferencia estadística
+    capitulo: 10
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 # Definción
 ---

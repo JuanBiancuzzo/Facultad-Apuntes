@@ -6,8 +6,14 @@ tags:
   - carrera/ingeniería-en-informática/discreta/Grafos
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Resumen.md]]"
-  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
+  - tema: Circuitos en regimen de corriente continua
+    capitulo: 1
+    materia: Análisis de circuitos
+    carrera: Ingeniería electrónica
+  - tema: Grafos
+    capitulo: 8
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

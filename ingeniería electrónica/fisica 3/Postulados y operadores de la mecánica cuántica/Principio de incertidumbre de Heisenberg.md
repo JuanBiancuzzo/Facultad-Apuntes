@@ -8,9 +8,18 @@ tags:
   - carrera/ingeniería-en-informática/fisica-3/Postulados-y-operadores-de-la-mecánica-cuántica
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Transformada de Fourier/Resumen.md]]"
-  - "[[ingeniería electrónica/fisica 3/Postulados y operadores de la mecánica cuántica/Resumen.md]]"
-  - "[[ingeniería electrónica/señales/Transformada de Fourier/Resumen.md]]"
+  - tema: Transformada de Fourier
+    capitulo: 15
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
+  - tema: Postulados y operadores de la mecánica cuántica
+    capitulo: 7
+    materia: Física 3
+    carrera: Ingeniería electrónica
+  - tema: Transformada de Fourier
+    capitulo: 4
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

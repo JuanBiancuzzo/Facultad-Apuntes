@@ -20,9 +20,18 @@ referencias:
   - "845"
 etapa: sin-empezar
 vinculoFacultad:
-  - "[[ingeniería en informática/algo 1/Lenguaje C/Resumen.md]]"
-  - "[[ingeniería en informática/estructura/Punto flotante/Resumen.md]]"
-  - "[[ingeniería en informática/taller/Sintaxis/Resumen.md]]"
+  - tema: Lenguaje C
+    capitulo: 2
+    materia: Algoritmos y programación 1
+    carrera: Ingeniería en informática
+  - tema: Punto flotante
+    capitulo: 2
+    materia: Estructura del computador
+    carrera: Ingeniería en informática
+  - tema: Sintaxis
+    capitulo: 1
+    materia: Taller de programación 1
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

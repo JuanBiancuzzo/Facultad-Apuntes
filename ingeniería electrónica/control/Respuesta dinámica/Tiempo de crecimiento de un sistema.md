@@ -10,8 +10,14 @@ tags:
 aliases:
   - Rise time of a system
 vinculoFacultad:
-  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
-  - "[[ingeniería electrónica/intro/Circuitos con capacitores/Resumen.md]]"
+  - tema: Respuesta dinámica
+    capitulo: 1
+    materia: Control automático
+    carrera: Ingeniería electrónica
+  - tema: Circuitos con capacitores
+    capitulo: 3
+    materia: Introducción a la ingeniería electronica
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

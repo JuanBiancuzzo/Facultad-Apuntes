@@ -6,7 +6,10 @@ tags:
 aliases:
   - BPMN
 vinculoFacultad:
-  - "[[ingeniería en informática/aninfo/Ingeniería de software/Resumen.md]]"
+  - tema: Ingeniería de software
+    capitulo: 1
+    materia: Análisis de la información
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

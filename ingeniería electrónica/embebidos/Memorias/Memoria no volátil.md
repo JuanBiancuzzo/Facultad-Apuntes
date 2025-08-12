@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/embebidos/Memorias
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
+  - tema: Memorias
+    capitulo: 3
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

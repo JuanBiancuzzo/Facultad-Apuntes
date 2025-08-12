@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/analisis-2/Topología/2
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/analisis 2/Topología/Resumen Parte 2.md]]"
+  - tema: Topología
+    capitulo: 5
+    materia: Análisis matemático 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -8,7 +8,10 @@ aliases:
   - Índice cromático
   - Teorema de Vizing
 vinculoFacultad:
-  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
+  - tema: Grafos
+    capitulo: 8
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

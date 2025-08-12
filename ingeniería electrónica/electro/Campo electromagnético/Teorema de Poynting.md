@@ -8,7 +8,10 @@ aliases:
   - Intensidad de la radiación de una onda electromagnética#^intensidad-radiacion
   - Potencia perdida de una onda electromagnética#En medios materiales
 vinculoFacultad:
-  - "[[ingeniería electrónica/electro/Campo electromagnético/Resumen.md]]"
+  - tema: Campo electromagnético
+    capitulo: 2
+    materia: Electromagnetismo aplicado
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

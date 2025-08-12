@@ -7,7 +7,10 @@ tags:
 aliases:
   - MIR en la arquitectura ARC
 vinculoFacultad:
-  - "[[ingeniería en informática/estructura/Microarquitectura/Resumen.md]]"
+  - tema: Microarquitectura
+    capitulo: 10
+    materia: Estructura del computador
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

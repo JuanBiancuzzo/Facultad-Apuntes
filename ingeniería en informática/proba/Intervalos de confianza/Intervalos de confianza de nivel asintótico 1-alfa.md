@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/proba/Intervalos-de-confianza
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/proba/Intervalos de confianza/Resumen.md]]"
+  - tema: Intervalos de confianza
+    capitulo: 12
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

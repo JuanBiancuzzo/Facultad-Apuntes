@@ -8,8 +8,14 @@ tags:
   - nota/facultad
   - nota/investigacion
 vinculoFacultad:
-  - "[[ingeniería en informática/algo 1/Manejo de archivos/Resumen.md]]"
-  - "[[ingeniería en informática/sisop/File system/Resumen.md]]"
+  - tema: Manejo de archivos
+    capitulo: 4
+    materia: Algoritmos y programación 1
+    carrera: Ingeniería en informática
+  - tema: File system
+    capitulo: 6
+    materia: Sistemas operativos
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

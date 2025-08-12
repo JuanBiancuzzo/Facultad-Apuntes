@@ -8,7 +8,10 @@ aliases:
   - Red Celular 3G
   - Red 3G
 vinculoFacultad:
-  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
+  - tema: Capa Física Inalámbrica
+    capitulo: 6
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

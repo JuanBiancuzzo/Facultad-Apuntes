@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/señales/Serie-de-Fourier
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/señales/Serie de Fourier/Resumen.md]]"
+  - tema: Serie de Fourier
+    capitulo: 3
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

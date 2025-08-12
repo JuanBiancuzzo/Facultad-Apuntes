@@ -5,8 +5,14 @@ tags:
   - carrera/ingeniería-en-informática/distribuidos/Introducción
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/aninfo/Ingeniería de software/Resumen.md]]"
-  - "[[ingeniería en informática/distribuidos/Introduccion/Resumen.md]]"
+  - tema: Ingeniería de software
+    capitulo: 1
+    materia: Análisis de la información
+    carrera: Ingeniería en informática
+  - tema: Introduccion
+    capitulo: "0"
+    materia: Sistemas Distribuidos 1
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

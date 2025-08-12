@@ -6,7 +6,10 @@ tags:
 aliases:
   - DFA
 vinculoFacultad:
-  - "[[ingeniería en informática/discreta/Autómatas/Resumen.md]]"
+  - tema: Autómatas
+    capitulo: 5
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

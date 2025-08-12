@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/legal/Licitaciones
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/legal/Licitaciones/Resumen.md]]"
+  - tema: Licitaciones
+    capitulo: 4
+    materia: Legislación y ejercicio profesional
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

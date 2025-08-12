@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/señales/Transformada-de-Fourier
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/señales/Transformada de Fourier/Resumen.md]]"
+  - tema: Transformada de Fourier
+    capitulo: 4
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

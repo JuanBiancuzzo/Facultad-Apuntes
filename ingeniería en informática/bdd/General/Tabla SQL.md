@@ -6,7 +6,10 @@ tags:
   - nota/facultad
   - nota/investigacion
 vinculoFacultad:
-  - "[[ingeniería en informática/bdd/General/Resumen.md]]"
+  - tema: General
+    capitulo: 1
+    materia: Base de datos
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

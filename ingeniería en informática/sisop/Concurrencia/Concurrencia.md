@@ -11,10 +11,22 @@ referencias:
   - "787"
 etapa: empezado
 vinculoFacultad:
-  - "[[ingeniería en informática/concurrentes/Introducción/Resumen.md]]"
-  - "[[ingeniería en informática/distribuidos/Introduccion/Resumen.md]]"
-  - "[[ingeniería en informática/sisop/Concurrencia/Resumen.md]]"
-  - "[[ingeniería en informática/taller/Concurrencia/Resumen.md]]"
+  - tema: Introducción
+    capitulo: 1
+    materia: Programación Concurrente
+    carrera: Ingeniería en informática
+  - tema: Introduccion
+    capitulo: "0"
+    materia: Sistemas Distribuidos 1
+    carrera: Ingeniería en informática
+  - tema: Concurrencia
+    capitulo: 5
+    materia: Sistemas operativos
+    carrera: Ingeniería en informática
+  - tema: Concurrencia
+    capitulo: 4
+    materia: Taller de programación 1
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

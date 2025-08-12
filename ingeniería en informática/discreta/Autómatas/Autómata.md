@@ -10,8 +10,14 @@ referencias:
 aliases:
   - Teoría de autómatas
 vinculoFacultad:
-  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
-  - "[[ingeniería en informática/discreta/Autómatas/Resumen.md]]"
+  - tema: Diseño, desarrollo y depuración
+    capitulo: 1
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
+  - tema: Autómatas
+    capitulo: 5
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

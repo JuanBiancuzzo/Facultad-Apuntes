@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/proba/Estimación-Bayesiana
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/proba/Estimación Bayesiana/Resumen.md]]"
+  - tema: Estimación Bayesiana
+    capitulo: 13
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

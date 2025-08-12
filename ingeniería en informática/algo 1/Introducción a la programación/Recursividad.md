@@ -11,8 +11,14 @@ tags:
 aliases:
   - Recursividad indirecta#Recursividad indirecta
 vinculoFacultad:
-  - "[[ingeniería en informática/algo 1/Introducción a la programación/Resumen.md]]"
-  - "[[ingeniería en informática/algo 1/Lenguaje C/Resumen.md]]"
+  - tema: Introducción a la programación
+    capitulo: 1
+    materia: Algoritmos y programación 1
+    carrera: Ingeniería en informática
+  - tema: Lenguaje C
+    capitulo: 2
+    materia: Algoritmos y programación 1
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -8,8 +8,14 @@ tags:
   - nota/facultad
   - nota/investigacion
 vinculoFacultad:
-  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
-  - "[[ingeniería en informática/redes/Capa de Red/Resumen.md]]"
+  - tema: Grafos
+    capitulo: 8
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
+  - tema: Capa de Red
+    capitulo: 4
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

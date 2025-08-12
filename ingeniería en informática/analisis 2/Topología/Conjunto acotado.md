@@ -9,8 +9,14 @@ aliases:
   - Conjunto superiormente acotado
   - Conjunto inferiormente acotado
 vinculoFacultad:
-  - "[[ingeniería en informática/analisis 2/Topología/Resumen Parte 1.md]]"
-  - "[[ingeniería en informática/discreta/Relaciones/Resumen.md]]"
+  - tema: Topología
+    capitulo: 2
+    materia: Análisis matemático 2 A
+    carrera: Ingeniería en informática
+  - tema: Relaciones
+    capitulo: 4
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

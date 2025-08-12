@@ -16,8 +16,14 @@ referencias:
   - "453"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Resumen.md]]"
-  - "[[ingeniería electrónica/circuitos/Amplificadores diferenciales/Resumen.md]]"
+  - tema: Circuitos en regimen de corriente continua
+    capitulo: 1
+    materia: Análisis de circuitos
+    carrera: Ingeniería electrónica
+  - tema: Amplificadores diferenciales
+    capitulo: 5
+    materia: Circuitos microelectrónicos
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

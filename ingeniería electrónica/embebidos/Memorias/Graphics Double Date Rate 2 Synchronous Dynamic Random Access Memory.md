@@ -10,7 +10,10 @@ aliases:
   - Graphics Double Date Rate 2 SDRAM
   - DDR gráfico
 vinculoFacultad:
-  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
+  - tema: Memorias
+    capitulo: 3
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

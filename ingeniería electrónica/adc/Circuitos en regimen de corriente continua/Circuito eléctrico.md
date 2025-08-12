@@ -7,8 +7,14 @@ tags:
   - carrera/ingeniería-en-informática/fisica-2/Circuitos-de-corrientes-no-dependientes-del-tiempo
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Circuitos de corrientes no dependientes del tiempo/Resumen.md]]"
+  - tema: Circuitos en regimen de corriente continua
+    capitulo: 1
+    materia: Análisis de circuitos
+    carrera: Ingeniería electrónica
+  - tema: Circuitos de corrientes no dependientes del tiempo
+    capitulo: 4
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

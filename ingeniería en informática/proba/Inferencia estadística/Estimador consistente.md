@@ -6,8 +6,14 @@ tags:
   - carrera/ingeniería-en-informática/proba/Inferencia-estadística
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/estoca/Análisis de datos/Resumen.md]]"
-  - "[[ingeniería en informática/proba/Inferencia estadística/Resumen.md]]"
+  - tema: Análisis de datos
+    capitulo: 3
+    materia: Procesos estocásticos
+    carrera: Ingeniería electrónica
+  - tema: Inferencia estadística
+    capitulo: 10
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -8,7 +8,10 @@ referencias:
   - "195"
 etapa: sin-empezar
 vinculoFacultad:
-  - "[[ingeniería en informática/redes/Capa de Red/Resumen.md]]"
+  - tema: Capa de Red
+    capitulo: 4
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

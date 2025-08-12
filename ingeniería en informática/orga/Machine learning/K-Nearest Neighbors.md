@@ -13,7 +13,10 @@ referencias:
   - "640"
 etapa: empezado
 vinculoFacultad:
-  - "[[ingeniería en informática/orga/Machine learning/Resumen.md]]"
+  - tema: Machine learning
+    capitulo: 9
+    materia: Organización de datos
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

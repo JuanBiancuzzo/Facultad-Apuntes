@@ -10,7 +10,10 @@ tags:
   - nota/facultad
 aliases: []
 vinculoFacultad:
-  - "[[ingeniería electrónica/control/Realizaciones/Resumen.md]]"
+  - tema: Realizaciones
+    capitulo: "3"
+    materia: Control automático
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

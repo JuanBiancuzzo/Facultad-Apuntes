@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/estructura/Compiladores-y-ensambladores
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/estructura/Compiladores y ensambladores/Resumen.md]]"
+  - tema: Compiladores y ensambladores
+    capitulo: 9
+    materia: Estructura del computador
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

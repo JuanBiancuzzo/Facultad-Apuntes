@@ -13,7 +13,10 @@ aliases:
   - Proceso aleatorio discreto de tiempo discreto#^tiempo-discreto-variable-discreta
   - Proceso aleatorio
 vinculoFacultad:
-  - "[[ingeniería electrónica/estoca/Introducción a procesos aleatorios/Resumen.md]]"
+  - tema: Introducción a procesos aleatorios
+    capitulo: 4
+    materia: Procesos estocásticos
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

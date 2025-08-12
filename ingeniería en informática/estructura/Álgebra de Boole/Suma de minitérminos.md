@@ -8,8 +8,14 @@ tags:
 aliases:
   - Suma de productos
 vinculoFacultad:
-  - "[[ingeniería en informática/discreta/Álgebra proposicional/Resumen.md]]"
-  - "[[ingeniería en informática/estructura/Álgebra de Boole/Resumen.md]]"
+  - tema: Álgebra proposicional
+    capitulo: 2
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
+  - tema: Álgebra de Boole
+    capitulo: 3
+    materia: Estructura del computador
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

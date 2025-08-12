@@ -10,8 +10,14 @@ tags:
   - carrera/ingeniería-en-informática/redes/Redes-de-computadoras
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/distribuidos/Herramientas de Diseño/Resumen.md]]"
-  - "[[ingeniería en informática/redes/Redes de computadoras/Resumen.md]]"
+  - tema: Herramientas de Diseño
+    capitulo: 1
+    materia: Sistemas Distribuidos 1
+    carrera: Ingeniería en informática
+  - tema: Redes de computadoras
+    capitulo: 1
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

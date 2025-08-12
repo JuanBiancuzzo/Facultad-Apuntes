@@ -9,7 +9,10 @@ aliases:
   - Punto de equilibro estable
   - Punto de equilibrio inestable
 vinculoFacultad:
-  - "[[ingeniería electrónica/control/Linealización/Resumen.md]]"
+  - tema: Linealización
+    capitulo: 2
+    materia: Control automático
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

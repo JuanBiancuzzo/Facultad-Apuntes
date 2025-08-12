@@ -16,10 +16,22 @@ referencias:
   - "222"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/adc/Circuitos en regimen senoidal permanente/Resumen.md]]"
-  - "[[ingeniería electrónica/intro/Potencia/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Circuitos de corrientes no dependientes del tiempo/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Circuitos en régimen alterno permanente/Resumen.md]]"
+  - tema: Circuitos en regimen senoidal permanente
+    capitulo: 3
+    materia: Análisis de circuitos
+    carrera: Ingeniería electrónica
+  - tema: Potencia
+    capitulo: 5
+    materia: Introducción a la ingeniería electronica
+    carrera: Ingeniería electrónica
+  - tema: Circuitos de corrientes no dependientes del tiempo
+    capitulo: 4
+    materia: Física 2 A
+    carrera: Ingeniería en informática
+  - tema: Circuitos en régimen alterno permanente
+    capitulo: 8
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

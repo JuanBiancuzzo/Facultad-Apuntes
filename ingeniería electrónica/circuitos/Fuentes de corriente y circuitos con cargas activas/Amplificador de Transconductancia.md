@@ -6,7 +6,10 @@ tags:
   - carrera/ingeniería-electrónica/circuitos/Fuentes-de-corriente-y-circuitos-con-cargas-activas
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/circuitos/Fuentes de corriente y circuitos con cargas activas/Resumen.md]]"
+  - tema: Fuentes de corriente y circuitos con cargas activas
+    capitulo: 6
+    materia: Circuitos microelectrónicos
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -10,8 +10,14 @@ referencias:
   - "411"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Funciones elementales/Resumen.md]]"
-  - "[[licenciatura en ciencias matemáticas/algebra 1/Conjuntos, relaciones y funciones/Resumen.md]]"
+  - tema: Funciones elementales
+    capitulo: 4
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
+  - tema: Conjuntos, relaciones y funciones
+    capitulo: 1
+    materia: Álgebra 1
+    carrera: Licenciatura en Ciencias Matemáticas
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

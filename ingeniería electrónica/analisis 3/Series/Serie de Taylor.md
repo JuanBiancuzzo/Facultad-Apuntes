@@ -9,7 +9,10 @@ referencias:
   - "1056"
 aliases: 
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Series/Resumen.md]]"
+  - tema: Series
+    capitulo: 3
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

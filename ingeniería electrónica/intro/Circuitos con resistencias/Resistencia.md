@@ -9,8 +9,14 @@ aliases:
   - Resistencias en serie#En serie
   - Resistencias en paralelo#En paralelo
 vinculoFacultad:
-  - "[[ingeniería electrónica/intro/Circuitos con resistencias/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Circuitos de corrientes no dependientes del tiempo/Resumen.md]]"
+  - tema: Circuitos con resistencias
+    capitulo: 1
+    materia: Introducción a la ingeniería electronica
+    carrera: Ingeniería electrónica
+  - tema: Circuitos de corrientes no dependientes del tiempo
+    capitulo: 4
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición:
 ---

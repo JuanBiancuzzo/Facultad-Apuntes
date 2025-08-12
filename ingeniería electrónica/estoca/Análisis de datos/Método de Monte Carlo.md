@@ -10,7 +10,10 @@ tags:
   - nota/investigacion
 aliases: []
 vinculoFacultad:
-  - "[[ingeniería electrónica/estoca/Análisis de datos/Resumen.md]]"
+  - tema: Análisis de datos
+    capitulo: 3
+    materia: Procesos estocásticos
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

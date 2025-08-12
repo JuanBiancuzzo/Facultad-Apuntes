@@ -7,7 +7,10 @@ aliases:
   - Transmisión de calor en regimen permanente
   - Transmisión de calor en regimen estacionario
 vinculoFacultad:
-  - "[[ingeniería electrónica/seguridad/Prevención de incendios/Resumen.md]]"
+  - tema: Prevención de incendios
+    capitulo: 3
+    materia: Seguridad ambiental y del trabajo
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

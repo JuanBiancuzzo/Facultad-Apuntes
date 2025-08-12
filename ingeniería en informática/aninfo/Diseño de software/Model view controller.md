@@ -6,7 +6,10 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Diseño-de-software
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/aninfo/Diseño de software/Resumen.md]]"
+  - tema: Diseño de software
+    capitulo: 8
+    materia: Análisis de la información
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

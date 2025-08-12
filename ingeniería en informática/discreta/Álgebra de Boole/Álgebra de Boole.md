@@ -6,8 +6,14 @@ tags:
   - carrera/ingeniería-en-informática/estructura/Álgebra-de-Boole
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/discreta/Álgebra de Boole/Resumen.md]]"
-  - "[[ingeniería en informática/estructura/Álgebra de Boole/Resumen.md]]"
+  - tema: Álgebra de Boole
+    capitulo: 3
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
+  - tema: Álgebra de Boole
+    capitulo: 3
+    materia: Estructura del computador
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

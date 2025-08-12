@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/fisica-2/Inducción-electromagnética
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/fisica 2/Inducción electromagnética/Resumen.md]]"
+  - tema: Inducción electromagnética
+    capitulo: 7
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

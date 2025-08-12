@@ -7,7 +7,10 @@ tags:
   - carrera/ingeniería-electrónica/circuitos/Amplificadores-diferenciales
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/circuitos/Amplificadores diferenciales/Resumen.md]]"
+  - tema: Amplificadores diferenciales
+    capitulo: 5
+    materia: Circuitos microelectrónicos
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

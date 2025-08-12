@@ -7,7 +7,10 @@ tags:
 aliases:
   - Método del Jacobiano generalizado#Método del Jacobiano
 vinculoFacultad:
-  - "[[ingeniería en informática/proba/Función de variable aleatoria/Resumen.md]]"
+  - tema: Función de variable aleatoria
+    capitulo: 4
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -7,7 +7,10 @@ etapa: ampliar
 referencias: []
 aliases: []
 vinculoFacultad:
-  - "[[ingeniería electrónica/señales/Muestreo e Interpolación/Resumen.md]]"
+  - tema: Muestreo e Interpolación
+    capitulo: 5
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

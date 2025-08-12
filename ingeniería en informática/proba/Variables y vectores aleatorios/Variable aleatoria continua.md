@@ -8,7 +8,10 @@ etapa: ampliar
 aliases:
   - Vector aleatorio continuo#Para vector aleatorio
 vinculoFacultad:
-  - "[[ingeniería en informática/proba/Variables y vectores aleatorios/Resumen.md]]"
+  - tema: Variables y vectores aleatorios
+    capitulo: 2
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -17,8 +17,14 @@ aliases:
   - Inductores en paralelo#En paralelo
   - Bobinas en paralelo#En paralelo
 vinculoFacultad:
-  - "[[ingeniería electrónica/adc/Circuitos en regimen transitorio/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Inducción electromagnética/Resumen.md]]"
+  - tema: Circuitos en regimen transitorio
+    capitulo: 2
+    materia: Análisis de circuitos
+    carrera: Ingeniería electrónica
+  - tema: Inducción electromagnética
+    capitulo: 7
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

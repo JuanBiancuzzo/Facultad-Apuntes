@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/proba/Teoría-de-probabilidades
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/proba/Teoría de probabilidades/Resumen.md]]"
+  - tema: Teoría de probabilidades
+    capitulo: 1
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

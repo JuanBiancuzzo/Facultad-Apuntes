@@ -7,8 +7,14 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Topología-del-plano-complejo-y-límites
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Topología del plano complejo y límites/Resumen.md]]"
-  - "[[ingeniería en informática/analisis 2/Topología/Resumen Parte 1.md]]"
+  - tema: Topología del plano complejo y límites
+    capitulo: 1
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
+  - tema: Topología
+    capitulo: 2
+    materia: Análisis matemático 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

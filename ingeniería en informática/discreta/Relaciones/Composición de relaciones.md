@@ -13,9 +13,18 @@ referencias:
   - "411"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería en informática/analisis 2/Propiedades de funciones/Resumen.md]]"
-  - "[[ingeniería en informática/discreta/Relaciones/Resumen.md]]"
-  - "[[licenciatura en ciencias matemáticas/algebra 1/Conjuntos, relaciones y funciones/Resumen.md]]"
+  - tema: Propiedades de funciones
+    capitulo: 3
+    materia: Análisis matemático 2 A
+    carrera: Ingeniería en informática
+  - tema: Relaciones
+    capitulo: 4
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
+  - tema: Conjuntos, relaciones y funciones
+    capitulo: 1
+    materia: Álgebra 1
+    carrera: Licenciatura en Ciencias Matemáticas
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

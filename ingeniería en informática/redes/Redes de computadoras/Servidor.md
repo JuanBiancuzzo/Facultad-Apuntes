@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/redes/Redes-de-computadoras
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/redes/Redes de computadoras/Resumen.md]]"
+  - tema: Redes de computadoras
+    capitulo: 1
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

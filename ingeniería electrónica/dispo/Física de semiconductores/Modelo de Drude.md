@@ -9,8 +9,14 @@ aliases:
   - Velocidad de deriva
   - Velocidad de arrastre
 vinculoFacultad:
-  - "[[ingeniería electrónica/dispo/Física de semiconductores/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Circuitos de corrientes no dependientes del tiempo/Resumen.md]]"
+  - tema: Física de semiconductores
+    capitulo: 1
+    materia: Dispositivos semiconductores
+    carrera: Ingeniería electrónica
+  - tema: Circuitos de corrientes no dependientes del tiempo
+    capitulo: 4
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

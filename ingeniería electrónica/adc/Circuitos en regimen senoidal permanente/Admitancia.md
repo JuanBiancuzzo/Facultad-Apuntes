@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-senoidal-permanente
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/adc/Circuitos en regimen senoidal permanente/Resumen.md]]"
+  - tema: Circuitos en regimen senoidal permanente
+    capitulo: 3
+    materia: Análisis de circuitos
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

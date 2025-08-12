@@ -8,7 +8,10 @@ referencias:
   - "198"
 etapa: sin-empezar
 vinculoFacultad:
-  - "[[ingeniería en informática/fisica 2/Termodinámica/Resumen.md]]"
+  - tema: Termodinámica
+    capitulo: 1
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -10,7 +10,10 @@ aliases:
   - Controlador on-off
   - Controlador de encendido y apagado
 vinculoFacultad:
-  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
+  - tema: Respuesta dinámica
+    capitulo: 1
+    materia: Control automático
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

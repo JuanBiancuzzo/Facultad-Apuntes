@@ -6,8 +6,14 @@ tags:
   - carrera/ingeniería-en-informática/estructura/Compiladores-y-ensambladores
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
-  - "[[ingeniería en informática/estructura/Compiladores y ensambladores/Resumen.md]]"
+  - tema: Diseño, desarrollo y depuración
+    capitulo: 1
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
+  - tema: Compiladores y ensambladores
+    capitulo: 9
+    materia: Estructura del computador
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -11,8 +11,14 @@ referencias:
   - "517"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Transformaciones conformes/Resumen.md]]"
-  - "[[licenciatura en ciencias matemáticas/analisis 1/Vectores y geometría del espacio/Resumen.md]]"
+  - tema: Transformaciones conformes
+    capitulo: 5
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
+  - tema: Vectores y geometría del espacio
+    capitulo: 1
+    materia: Análisis 1
+    carrera: Licenciatura en Ciencias Matemáticas
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

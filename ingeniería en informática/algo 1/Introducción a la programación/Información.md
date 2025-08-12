@@ -12,8 +12,14 @@ aliases:
   - Byte#Byte
   - Bit de información
 vinculoFacultad:
-  - "[[ingeniería en informática/algo 1/Introducción a la programación/Resumen.md]]"
-  - "[[ingeniería en informática/orga/Compresión/Resumen.md]]"
+  - tema: Introducción a la programación
+    capitulo: 1
+    materia: Algoritmos y programación 1
+    carrera: Ingeniería en informática
+  - tema: Compresión
+    capitulo: 4
+    materia: Organización de datos
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/proba/Esperanza-condicional
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/proba/Esperanza condicional/Resumen.md]]"
+  - tema: Esperanza condicional
+    capitulo: 6
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

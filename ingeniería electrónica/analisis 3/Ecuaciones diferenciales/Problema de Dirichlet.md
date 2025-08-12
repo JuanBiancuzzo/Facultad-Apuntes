@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Ecuaciones-diferenciales
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Ecuaciones diferenciales/Resumen.md]]"
+  - tema: Ecuaciones diferenciales
+    capitulo: 11
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

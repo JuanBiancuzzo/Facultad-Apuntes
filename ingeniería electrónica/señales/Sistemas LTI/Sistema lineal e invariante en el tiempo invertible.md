@@ -6,7 +6,10 @@ tags:
   - carrera/ingeniería-electrónica/señales/Sistemas-LTI
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/señales/Sistemas LTI/Resumen.md]]"
+  - tema: Sistemas LTI
+    capitulo: 2
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

@@ -8,7 +8,10 @@ tags:
 aliases:
   - IDL
 vinculoFacultad:
-  - "[[ingeniería en informática/distribuidos/Fundamentos de Sistemas Distribuidos/Resumen.md]]"
+  - tema: Fundamentos de Sistemas Distribuidos
+    capitulo: 2
+    materia: Sistemas Distribuidos 1
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

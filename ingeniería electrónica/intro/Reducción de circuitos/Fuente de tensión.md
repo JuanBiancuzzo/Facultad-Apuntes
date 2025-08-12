@@ -8,8 +8,14 @@ tags:
 aliases:
   - Generador de tensión
 vinculoFacultad:
-  - "[[ingeniería electrónica/intro/Reducción de circuitos/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Circuitos de corrientes no dependientes del tiempo/Resumen.md]]"
+  - tema: Reducción de circuitos
+    capitulo: 2
+    materia: Introducción a la ingeniería electronica
+    carrera: Ingeniería electrónica
+  - tema: Circuitos de corrientes no dependientes del tiempo
+    capitulo: 4
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

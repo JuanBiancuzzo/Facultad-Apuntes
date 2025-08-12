@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Propiedades-de-las-funciones-holomorfas
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Propiedades de las funciones holomorfas/Resumen.md]]"
+  - tema: Propiedades de las funciones holomorfas
+    capitulo: 6
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

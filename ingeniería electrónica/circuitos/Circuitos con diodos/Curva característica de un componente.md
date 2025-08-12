@@ -6,7 +6,10 @@ tags:
 aliases:
   - Recta característica de un componente
 vinculoFacultad:
-  - "[[ingeniería electrónica/circuitos/Circuitos con diodos/Resumen.md]]"
+  - tema: Circuitos con diodos
+    capitulo: 1
+    materia: Circuitos microelectrónicos
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

@@ -7,7 +7,10 @@ tags:
   - nota/facultad
   - nota/investigacion
 vinculoFacultad:
-  - "[[ingeniería en informática/taller/Organizacion/Resumen.md]]"
+  - tema: Organizacion
+    capitulo: 2
+    materia: Taller de programación 1
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

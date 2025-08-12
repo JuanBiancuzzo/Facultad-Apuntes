@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/legal/Derechos-humanos
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/legal/Derechos humanos/Resumen.md]]"
+  - tema: Derechos humanos
+    capitulo: 6
+    materia: Legislación y ejercicio profesional
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

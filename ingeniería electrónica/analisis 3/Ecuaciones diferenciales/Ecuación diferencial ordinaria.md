@@ -10,9 +10,18 @@ etapa: ampliar
 referencias:
   - "873"
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Ecuaciones diferenciales/Resumen.md]]"
-  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
-  - "[[ingeniería electrónica/señales/Sistemas LTI/Resumen.md]]"
+  - tema: Ecuaciones diferenciales
+    capitulo: 11
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
+  - tema: Respuesta dinámica
+    capitulo: 1
+    materia: Control automático
+    carrera: Ingeniería electrónica
+  - tema: Sistemas LTI
+    capitulo: 2
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

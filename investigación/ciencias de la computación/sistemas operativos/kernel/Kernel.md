@@ -8,7 +8,10 @@ tags:
   - nota/facultad
   - nota/investigacion
 vinculoFacultad:
-  - "[[ingeniería en informática/sisop/Kernel/Resumen.md]]"
+  - tema: Kernel
+    capitulo: 1
+    materia: Sistemas operativos
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

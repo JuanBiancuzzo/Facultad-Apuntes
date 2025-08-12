@@ -7,7 +7,10 @@ referencias:
   - "873"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/señales/Señales y sistemas/Resumen.md]]"
+  - tema: Señales y sistemas
+    capitulo: 1
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

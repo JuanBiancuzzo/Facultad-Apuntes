@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/intro/Potencia
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/intro/Potencia/Resumen.md]]"
+  - tema: Potencia
+    capitulo: 5
+    materia: Introducción a la ingeniería electronica
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

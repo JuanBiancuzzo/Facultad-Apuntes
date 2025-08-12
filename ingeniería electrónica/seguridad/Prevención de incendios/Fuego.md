@@ -11,7 +11,10 @@ aliases:
   - Fuego Tipo K#Tipo Tipo K (Estados unidos)/ F (Europa)
   - Fuego Tipo F#Tipo Tipo K (Estados unidos)/ F (Europa)
 vinculoFacultad:
-  - "[[ingeniería electrónica/seguridad/Prevención de incendios/Resumen.md]]"
+  - tema: Prevención de incendios
+    capitulo: 3
+    materia: Seguridad ambiental y del trabajo
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

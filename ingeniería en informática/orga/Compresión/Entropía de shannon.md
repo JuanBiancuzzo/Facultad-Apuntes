@@ -9,7 +9,10 @@ referencias:
   - "196"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería en informática/orga/Compresión/Resumen.md]]"
+  - tema: Compresión
+    capitulo: 4
+    materia: Organización de datos
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

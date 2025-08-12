@@ -6,8 +6,14 @@ tags:
   - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/electro/Campos eléctricos y magnéticos/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Electrostática en conductores y dieléctricos/Resumen.md]]"
+  - tema: Campos eléctricos y magnéticos
+    capitulo: 1
+    materia: Electromagnetismo aplicado
+    carrera: Ingeniería electrónica
+  - tema: Electrostática en conductores y dieléctricos
+    capitulo: 3
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

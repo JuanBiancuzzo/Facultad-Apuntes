@@ -14,8 +14,14 @@ tags:
   - carrera/ingeniería-electrónica/dispo/Transistor-MOSFET
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/circuitos/Dispositivos de control de señal y en conmutación/Resumen.md]]"
-  - "[[ingeniería electrónica/dispo/Transistor MOSFET/Resumen.md]]"
+  - tema: Dispositivos de control de señal y en conmutación
+    capitulo: 2
+    materia: Circuitos microelectrónicos
+    carrera: Ingeniería electrónica
+  - tema: Transistor MOSFET
+    capitulo: 6
+    materia: Dispositivos semiconductores
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

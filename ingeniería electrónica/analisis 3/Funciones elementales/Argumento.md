@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Funciones-elementales
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Funciones elementales/Resumen.md]]"
+  - tema: Funciones elementales
+    capitulo: 4
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
 ---
 Sea $z \in \mathbb{C}$, tal que $z = x + i \cdot y$, se define como 
 $$ arg : \mathbb{C} - \{0\} \to \mathbb{R} : arg(z) =

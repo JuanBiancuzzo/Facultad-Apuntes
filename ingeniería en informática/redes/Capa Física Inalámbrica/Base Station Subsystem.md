@@ -10,7 +10,10 @@ referencias:
   - "208"
 etapa: sin-empezar
 vinculoFacultad:
-  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
+  - tema: Capa Física Inalámbrica
+    capitulo: 6
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

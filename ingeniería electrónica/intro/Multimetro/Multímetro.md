@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/intro/Multimetro
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/intro/Multimetro/Resumen.md]]"
+  - tema: Multimetro
+    capitulo: 6
+    materia: Introducción a la ingeniería electronica
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

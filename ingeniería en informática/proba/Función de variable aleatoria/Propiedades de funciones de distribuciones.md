@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/proba/Función-de-variable-aleatoria
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/proba/Función de variable aleatoria/Resumen.md]]"
+  - tema: Función de variable aleatoria
+    capitulo: 4
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 # [[Distribución de Poisson]]
 ---

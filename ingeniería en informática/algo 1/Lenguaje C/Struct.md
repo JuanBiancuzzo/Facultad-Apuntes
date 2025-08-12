@@ -14,8 +14,14 @@ aliases:
   - Typedef#Typedef
 etapa: empezado
 vinculoFacultad:
-  - "[[ingeniería en informática/algo 1/Lenguaje C/Resumen.md]]"
-  - "[[ingeniería en informática/algo 1/Punteros/Resumen.md]]"
+  - tema: Lenguaje C
+    capitulo: 2
+    materia: Algoritmos y programación 1
+    carrera: Ingeniería en informática
+  - tema: Punteros
+    capitulo: 3
+    materia: Algoritmos y programación 1
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

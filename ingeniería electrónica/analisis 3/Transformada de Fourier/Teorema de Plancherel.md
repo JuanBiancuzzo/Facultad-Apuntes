@@ -8,7 +8,10 @@ etapa: ampliar
 referencias: []
 aliases: []
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Transformada de Fourier/Resumen.md]]"
+  - tema: Transformada de Fourier
+    capitulo: 15
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

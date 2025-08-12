@@ -9,7 +9,10 @@ tags:
   - nota/facultad
   - nota/investigacion
 vinculoFacultad:
-  - "[[ingeniería en informática/algo 1/Punteros/Resumen.md]]"
+  - tema: Punteros
+    capitulo: 3
+    materia: Algoritmos y programación 1
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

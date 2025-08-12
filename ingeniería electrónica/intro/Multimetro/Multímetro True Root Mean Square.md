@@ -7,7 +7,10 @@ aliases:
   - Multímetro True RMS
   - Multímetro Verdadero Valor Eficaz
 vinculoFacultad:
-  - "[[ingeniería electrónica/intro/Multimetro/Resumen.md]]"
+  - tema: Multimetro
+    capitulo: 6
+    materia: Introducción a la ingeniería electronica
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

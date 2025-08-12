@@ -11,8 +11,14 @@ etapa: ampliar
 aliases:
   - Sucesión por recurrencia lineal
 vinculoFacultad:
-  - "[[ingeniería en informática/discreta/Ecuaciones de recurrencia/Resumen.md]]"
-  - "[[licenciatura en ciencias matemáticas/algebra 1/Números naturales e Inducción/Resumen.md]]"
+  - tema: Ecuaciones de recurrencia
+    capitulo: 7
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
+  - tema: Números naturales e Inducción
+    capitulo: 2
+    materia: Álgebra 1
+    carrera: Licenciatura en Ciencias Matemáticas
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

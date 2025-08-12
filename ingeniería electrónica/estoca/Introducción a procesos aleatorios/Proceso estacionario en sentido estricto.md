@@ -10,7 +10,10 @@ tags:
   - carrera/ingeniería-electrónica/estoca/Introducción-a-procesos-aleatorios
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/estoca/Introducción a procesos aleatorios/Resumen.md]]"
+  - tema: Introducción a procesos aleatorios
+    capitulo: 4
+    materia: Procesos estocásticos
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

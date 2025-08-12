@@ -6,7 +6,10 @@ tags:
   - nota/facultad
   - nota/investigacion
 vinculoFacultad:
-  - "[[ingeniería en informática/bdd/SQL/Resumen.md]]"
+  - tema: SQL
+    capitulo: 2
+    materia: Base de datos
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

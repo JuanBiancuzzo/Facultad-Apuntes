@@ -7,8 +7,14 @@ tags:
   - carrera/ingeniería-en-informática/proba/Función-de-variable-aleatoria
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Transformada de Laplace/Resumen.md]]"
-  - "[[ingeniería en informática/proba/Función de variable aleatoria/Resumen.md]]"
+  - tema: Transformada de Laplace
+    capitulo: 16
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
+  - tema: Función de variable aleatoria
+    capitulo: 4
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

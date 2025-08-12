@@ -9,7 +9,10 @@ referencias:
   - "787"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería en informática/sisop/Virtualización de memoria/Resumen.md]]"
+  - tema: Virtualización de memoria
+    capitulo: 3
+    materia: Sistemas operativos
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -8,9 +8,18 @@ tags:
   - nota/facultad
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/estoca/Repaso/Resumen.md]]"
-  - "[[ingeniería en informática/distribuidos/Herramientas de Diseño/Resumen.md]]"
-  - "[[ingeniería en informática/proba/Teoría de probabilidades/Resumen.md]]"
+  - tema: Repaso
+    capitulo: "1"
+    materia: Procesos estocásticos
+    carrera: Ingeniería electrónica
+  - tema: Herramientas de Diseño
+    capitulo: 1
+    materia: Sistemas Distribuidos 1
+    carrera: Ingeniería en informática
+  - tema: Teoría de probabilidades
+    capitulo: 1
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

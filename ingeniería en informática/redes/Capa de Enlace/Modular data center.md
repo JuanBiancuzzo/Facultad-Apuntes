@@ -7,7 +7,10 @@ tags:
 aliases:
   - MDC
 vinculoFacultad:
-  - "[[ingeniería en informática/redes/Capa de Enlace/Resumen.md]]"
+  - tema: Capa de Enlace
+    capitulo: 5
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

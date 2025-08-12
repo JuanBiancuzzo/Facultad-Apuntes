@@ -13,8 +13,14 @@ tags:
 aliases:
   - CDMA
 vinculoFacultad:
-  - "[[ingeniería en informática/redes/Capa de Enlace/Resumen.md]]"
-  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
+  - tema: Capa de Enlace
+    capitulo: 5
+    materia: Redes
+    carrera: Ingeniería en informática
+  - tema: Capa Física Inalámbrica
+    capitulo: 6
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

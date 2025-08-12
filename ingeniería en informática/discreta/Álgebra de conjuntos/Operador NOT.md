@@ -18,11 +18,26 @@ referencias:
   - "411"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/dispo/Circuitos digitales y procesos de fabricación CMOS/Resumen.md]]"
-  - "[[ingeniería en informática/bdd/SQL/Resumen.md]]"
-  - "[[ingeniería en informática/discreta/Álgebra de conjuntos/Resumen.md]]"
-  - "[[ingeniería en informática/discreta/Álgebra proposicional/Resumen.md]]"
-  - "[[licenciatura en ciencias matemáticas/algebra 1/Conjuntos, relaciones y funciones/Resumen.md]]"
+  - tema: Circuitos digitales y procesos de fabricación CMOS
+    capitulo: 9
+    materia: Dispositivos semiconductores
+    carrera: Ingeniería electrónica
+  - tema: SQL
+    capitulo: 2
+    materia: Base de datos
+    carrera: Ingeniería en informática
+  - tema: Álgebra de conjuntos
+    capitulo: 1
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
+  - tema: Álgebra proposicional
+    capitulo: 2
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
+  - tema: Conjuntos, relaciones y funciones
+    capitulo: 1
+    materia: Álgebra 1
+    carrera: Licenciatura en Ciencias Matemáticas
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

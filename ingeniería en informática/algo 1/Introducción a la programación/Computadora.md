@@ -6,8 +6,14 @@ tags:
   - carrera/ingeniería-en-informática/algo-1/Introducción-a-la-programación
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
-  - "[[ingeniería en informática/algo 1/Introducción a la programación/Resumen.md]]"
+  - tema: Diseño, desarrollo y depuración
+    capitulo: 1
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
+  - tema: Introducción a la programación
+    capitulo: 1
+    materia: Algoritmos y programación 1
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

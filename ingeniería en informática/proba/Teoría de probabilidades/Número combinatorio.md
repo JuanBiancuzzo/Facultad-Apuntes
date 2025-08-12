@@ -10,8 +10,14 @@ referencias:
   - "413"
 etapa: terminado
 vinculoFacultad:
-  - "[[ingeniería en informática/proba/Teoría de probabilidades/Resumen.md]]"
-  - "[[licenciatura en ciencias matemáticas/algebra 1/Números naturales e Inducción/Resumen.md]]"
+  - tema: Teoría de probabilidades
+    capitulo: 1
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
+  - tema: Números naturales e Inducción
+    capitulo: 2
+    materia: Álgebra 1
+    carrera: Licenciatura en Ciencias Matemáticas
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

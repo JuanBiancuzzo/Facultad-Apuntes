@@ -8,8 +8,14 @@ referencias:
   - "871"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
-  - "[[ingeniería en informática/aninfo/Ingeniería de software/Resumen.md]]"
+  - tema: Respuesta dinámica
+    capitulo: 1
+    materia: Control automático
+    carrera: Ingeniería electrónica
+  - tema: Ingeniería de software
+    capitulo: 1
+    materia: Análisis de la información
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

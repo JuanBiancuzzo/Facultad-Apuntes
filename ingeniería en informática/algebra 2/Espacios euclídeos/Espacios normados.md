@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/algebra-2/Espacios-euclídeos
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/algebra 2/Espacios euclídeos/Resumen.md]]"
+  - tema: Espacios euclídeos
+    capitulo: 3
+    materia: Álgebra 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

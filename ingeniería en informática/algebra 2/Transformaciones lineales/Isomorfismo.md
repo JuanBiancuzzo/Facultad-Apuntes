@@ -9,9 +9,18 @@ tags:
 referencias:
   - "192"
 vinculoFacultad:
-  - "[[ingeniería en informática/algebra 2/Transformaciones lineales/Resumen.md]]"
-  - "[[ingeniería en informática/discreta/Álgebra de Boole/Resumen.md]]"
-  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
+  - tema: Transformaciones lineales
+    capitulo: 2
+    materia: Álgebra 2 A
+    carrera: Ingeniería en informática
+  - tema: Álgebra de Boole
+    capitulo: 3
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
+  - tema: Grafos
+    capitulo: 8
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

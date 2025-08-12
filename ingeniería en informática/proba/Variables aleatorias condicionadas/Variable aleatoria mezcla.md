@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/proba/Variables-aleatorias-condicionadas
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/proba/Variables aleatorias condicionadas/Resumen.md]]"
+  - tema: Variables aleatorias condicionadas
+    capitulo: 5
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -11,9 +11,18 @@ tags:
 aliases:
   - Pila
 vinculoFacultad:
-  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
-  - "[[ingeniería en informática/orga/Pandas/Resumen.md]]"
-  - "[[ingeniería en informática/sisop/Virtualización de memoria/Resumen.md]]"
+  - tema: Memorias
+    capitulo: 3
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
+  - tema: Pandas
+    capitulo: 1
+    materia: Organización de datos
+    carrera: Ingeniería en informática
+  - tema: Virtualización de memoria
+    capitulo: 3
+    materia: Sistemas operativos
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

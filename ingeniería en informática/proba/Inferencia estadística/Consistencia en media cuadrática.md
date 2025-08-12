@@ -12,8 +12,14 @@ aliases:
   - Error cuadrático medio
   - ECM
 vinculoFacultad:
-  - "[[ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md]]"
-  - "[[ingeniería en informática/proba/Inferencia estadística/Resumen.md]]"
+  - tema: Distribuciones multivariables
+    capitulo: 2
+    materia: Procesos estocásticos
+    carrera: Ingeniería electrónica
+  - tema: Inferencia estadística
+    capitulo: 10
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

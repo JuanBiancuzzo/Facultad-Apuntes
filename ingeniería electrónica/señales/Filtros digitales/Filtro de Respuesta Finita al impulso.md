@@ -9,7 +9,10 @@ tags:
   - nota/facultad
 etapa: sin-empezar
 vinculoFacultad:
-  - "[[ingeniería electrónica/señales/Filtros digitales/Resumen.md]]"
+  - tema: Filtros digitales
+    capitulo: 8
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

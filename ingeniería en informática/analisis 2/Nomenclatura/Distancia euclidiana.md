@@ -13,8 +13,14 @@ referencias:
   - "517"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería en informática/analisis 2/Nomenclatura/Resumen.md]]"
-  - "[[licenciatura en ciencias matemáticas/analisis 1/Vectores y geometría del espacio/Resumen.md]]"
+  - tema: Nomenclatura
+    capitulo: 1
+    materia: Análisis matemático 2 A
+    carrera: Ingeniería en informática
+  - tema: Vectores y geometría del espacio
+    capitulo: 1
+    materia: Análisis 1
+    carrera: Licenciatura en Ciencias Matemáticas
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

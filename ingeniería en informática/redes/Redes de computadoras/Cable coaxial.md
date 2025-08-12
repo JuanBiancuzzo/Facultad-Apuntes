@@ -8,8 +8,14 @@ tags:
   - carrera/ingeniería-en-informática/redes/Redes-de-computadoras
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/electro/Ondas confinadas/Resumen.md]]"
-  - "[[ingeniería en informática/redes/Redes de computadoras/Resumen.md]]"
+  - tema: Ondas confinadas
+    capitulo: 4
+    materia: Electromagnetismo aplicado
+    carrera: Ingeniería electrónica
+  - tema: Redes de computadoras
+    capitulo: 1
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

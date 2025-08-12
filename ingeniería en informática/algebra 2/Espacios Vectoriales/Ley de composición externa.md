@@ -7,7 +7,10 @@ tags:
 aliases:
   - Producto por escalar
 vinculoFacultad:
-  - "[[ingeniería en informática/algebra 2/Espacios Vectoriales/Resumen.md]]"
+  - tema: Espacios Vectoriales
+    capitulo: 1
+    materia: Álgebra 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

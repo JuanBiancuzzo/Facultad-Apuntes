@@ -13,7 +13,10 @@ aliases:
   - Execv system call
   - Execcvp system call
 vinculoFacultad:
-  - "[[ingeniería en informática/sisop/La abstracción de proceso/Resumen.md]]"
+  - tema: La abstracción de proceso
+    capitulo: 2
+    materia: Sistemas operativos
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

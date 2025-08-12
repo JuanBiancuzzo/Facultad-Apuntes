@@ -11,8 +11,14 @@ referencias:
   - "323"
 etapa: sin-empezar
 vinculoFacultad:
-  - "[[ingeniería en informática/discreta/Álgebra de Boole/Resumen.md]]"
-  - "[[ingeniería en informática/estructura/Álgebra de Boole/Resumen.md]]"
+  - tema: Álgebra de Boole
+    capitulo: 3
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
+  - tema: Álgebra de Boole
+    capitulo: 3
+    materia: Estructura del computador
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

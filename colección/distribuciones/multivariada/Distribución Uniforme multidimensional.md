@@ -10,7 +10,10 @@ tags:
 nombreDistribucion: Uniforme multidimensional
 tipoDistribucion: multivariada
 vinculoFacultad:
-  - "[[ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md]]"
+  - tema: Distribuciones multivariables
+    capitulo: 2
+    materia: Procesos estocásticos
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

@@ -9,7 +9,10 @@ tags:
 aliases:
   - Algoritmo de ruteo
 vinculoFacultad:
-  - "[[ingeniería en informática/redes/Capa de Red/Resumen.md]]"
+  - tema: Capa de Red
+    capitulo: 4
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -9,7 +9,10 @@ aliases:
   - Ajuste de Lorentz#^condicion-de-lorentz
   - Potencial vectorial magnético
 vinculoFacultad:
-  - "[[ingeniería electrónica/electro/Campo electromagnético/Resumen.md]]"
+  - tema: Campo electromagnético
+    capitulo: 2
+    materia: Electromagnetismo aplicado
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

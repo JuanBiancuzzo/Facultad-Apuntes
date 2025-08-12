@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Derivabilidad-y-holomorfía
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Derivabilidad y holomorfía/Resumen.md]]"
+  - tema: Derivabilidad y holomorfía
+    capitulo: 2
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

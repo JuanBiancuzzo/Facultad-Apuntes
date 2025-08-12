@@ -9,7 +9,10 @@ referencias:
   - "890"
 aliases: []
 vinculoFacultad:
-  - "[[ingeniería electrónica/adc/Respuesta en frecuencia/Resumen.md]]"
+  - tema: Respuesta en frecuencia
+    capitulo: 5
+    materia: Análisis de circuitos
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/electro/Campos-eléctricos-y-magnéticos
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/electro/Campos eléctricos y magnéticos/Resumen.md]]"
+  - tema: Campos eléctricos y magnéticos
+    capitulo: 1
+    materia: Electromagnetismo aplicado
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

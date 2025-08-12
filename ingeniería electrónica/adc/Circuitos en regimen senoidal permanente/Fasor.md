@@ -10,9 +10,18 @@ tags:
 referencias:
   - "221"
 vinculoFacultad:
-  - "[[ingeniería electrónica/adc/Circuitos en regimen senoidal permanente/Resumen.md]]"
-  - "[[ingeniería electrónica/electro/Campo electromagnético/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Circuitos en régimen alterno permanente/Resumen.md]]"
+  - tema: Circuitos en regimen senoidal permanente
+    capitulo: 3
+    materia: Análisis de circuitos
+    carrera: Ingeniería electrónica
+  - tema: Campo electromagnético
+    capitulo: 2
+    materia: Electromagnetismo aplicado
+    carrera: Ingeniería electrónica
+  - tema: Circuitos en régimen alterno permanente
+    capitulo: 8
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

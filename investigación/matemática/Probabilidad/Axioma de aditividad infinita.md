@@ -12,7 +12,10 @@ tags:
 aliases:
   - Teorema sigma-aditividad
 vinculoFacultad:
-  - "[[ingeniería electrónica/estoca/Repaso/Resumen.md]]"
+  - tema: Repaso
+    capitulo: "1"
+    materia: Procesos estocásticos
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

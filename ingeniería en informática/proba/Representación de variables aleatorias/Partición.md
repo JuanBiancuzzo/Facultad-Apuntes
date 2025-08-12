@@ -11,11 +11,26 @@ tags:
   - nota/facultad
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/estoca/Repaso/Resumen.md]]"
-  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
-  - "[[ingeniería en informática/discreta/Relaciones/Resumen.md]]"
-  - "[[ingeniería en informática/proba/Representación de variables aleatorias/Resumen.md]]"
-  - "[[licenciatura en ciencias matemáticas/algebra 1/Conjuntos, relaciones y funciones/Resumen.md]]"
+  - tema: Repaso
+    capitulo: "1"
+    materia: Procesos estocásticos
+    carrera: Ingeniería electrónica
+  - tema: Grafos
+    capitulo: 8
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
+  - tema: Relaciones
+    capitulo: 4
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
+  - tema: Representación de variables aleatorias
+    capitulo: 3
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
+  - tema: Conjuntos, relaciones y funciones
+    capitulo: 1
+    materia: Álgebra 1
+    carrera: Licenciatura en Ciencias Matemáticas
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

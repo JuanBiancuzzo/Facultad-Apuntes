@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Peopleware
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/aninfo/Peopleware/Resumen.md]]"
+  - tema: Peopleware
+    capitulo: 12
+    materia: Análisis de la información
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

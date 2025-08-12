@@ -9,8 +9,14 @@ tags:
   - carrera/ingeniería-electrónica/circuitos/Amplificadores-de-un-transistor-de-bajo-nivel-de-potencia-a-frecuencias-medias
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/circuitos 2/Realimentación negativa/Resumen.md]]"
-  - "[[ingeniería electrónica/circuitos/Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias/Resumen.md]]"
+  - tema: Realimentación negativa
+    capitulo: 1
+    materia: Taller de diseño de circuitos electrónicos
+    carrera: Ingeniería electrónica
+  - tema: Amplificadores de un transistor de bajo nivel de potencia a frecuencias medias
+    capitulo: 3
+    materia: Circuitos microelectrónicos
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

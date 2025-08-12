@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/analisis-2/Propiedades-de-funciones
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/analisis 2/Propiedades de funciones/Resumen.md]]"
+  - tema: Propiedades de funciones
+    capitulo: 3
+    materia: Análisis matemático 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

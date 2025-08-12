@@ -6,8 +6,14 @@ tags:
   - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Conjuntos-relaciones-y-funciones
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/discreta/Relaciones/Resumen.md]]"
-  - "[[licenciatura en ciencias matemáticas/algebra 1/Conjuntos, relaciones y funciones/Resumen.md]]"
+  - tema: Relaciones
+    capitulo: 4
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
+  - tema: Conjuntos, relaciones y funciones
+    capitulo: 1
+    materia: Álgebra 1
+    carrera: Licenciatura en Ciencias Matemáticas
 ---
 # Definición
 ---

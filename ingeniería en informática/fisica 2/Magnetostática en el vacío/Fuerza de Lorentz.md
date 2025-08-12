@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/fisica-2/Magnetostática-en-el-vacío
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/fisica 2/Magnetostática en el vacío/Resumen.md]]"
+  - tema: Magnetostática en el vacío
+    capitulo: 5
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

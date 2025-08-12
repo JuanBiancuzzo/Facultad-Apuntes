@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/numerico/Errores
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/numerico/Errores/Resumen.md]]"
+  - tema: Errores
+    capitulo: 1
+    materia: Análisis numérico
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

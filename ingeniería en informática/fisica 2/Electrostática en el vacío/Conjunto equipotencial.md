@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/fisica 2/Electrostática en el vacío/Resumen.md]]"
+  - tema: Electrostática en el vacío
+    capitulo: 2
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

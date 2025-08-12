@@ -17,7 +17,10 @@ referencias:
 etapa: ampliar
 nombreEstructura: Heap
 vinculoFacultad:
-  - "[[ingeniería en informática/sisop/Virtualización de memoria/Resumen.md]]"
+  - tema: Virtualización de memoria
+    capitulo: 3
+    materia: Sistemas operativos
+    carrera: Ingeniería en informática
 vinculoCurso:
   - "[[cursos/introduction to algorithms/Sorting and Trees/Resumen.md]]"
 ---

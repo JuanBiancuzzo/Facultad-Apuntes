@@ -10,7 +10,10 @@ tags:
 aliases:
   - Distancia coseno
 vinculoFacultad:
-  - "[[ingeniería en informática/orga/NLP/Resumen Parte 1.md]]"
+  - tema: NLP
+    capitulo: 3
+    materia: Organización de datos
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

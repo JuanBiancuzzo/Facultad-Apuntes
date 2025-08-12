@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/seguridad/Ergonomia
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/seguridad/Ergonomia/Resumen.md]]"
+  - tema: Ergonomia
+    capitulo: 15
+    materia: Seguridad ambiental y del trabajo
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

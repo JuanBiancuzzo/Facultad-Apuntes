@@ -18,8 +18,14 @@ aliases:
   - gRPC#gRPC
   - Llamada a procedimiento remoto
 vinculoFacultad:
-  - "[[ingeniería en informática/distribuidos/Fundamentos de Sistemas Distribuidos/Resumen.md]]"
-  - "[[ingeniería en informática/tpp/Propuesta/Resumen.md]]"
+  - tema: Fundamentos de Sistemas Distribuidos
+    capitulo: 2
+    materia: Sistemas Distribuidos 1
+    carrera: Ingeniería en informática
+  - tema: Propuesta
+    capitulo: 1
+    materia: Trabajo Profesional de Ingeniería Informática
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

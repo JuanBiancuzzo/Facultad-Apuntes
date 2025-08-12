@@ -10,8 +10,14 @@ referencias: []
 aliases:
   - Teorema de Cauchy-Schwarz
 vinculoFacultad:
-  - "[[ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md]]"
-  - "[[ingeniería en informática/analisis 2/Nomenclatura/Resumen.md]]"
+  - tema: Distribuciones multivariables
+    capitulo: 2
+    materia: Procesos estocásticos
+    carrera: Ingeniería electrónica
+  - tema: Nomenclatura
+    capitulo: 1
+    materia: Análisis matemático 2 A
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

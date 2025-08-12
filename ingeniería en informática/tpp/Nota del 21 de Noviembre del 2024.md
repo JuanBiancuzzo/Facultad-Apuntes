@@ -4,8 +4,14 @@ tags:
   - carrera/ingeniería-en-informática/tpp
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/tpp/Presentación/Resumen.md]]"
-  - "[[ingeniería en informática/tpp/Propuesta/Resumen.md]]"
+  - tema: Presentación
+    capitulo: 2
+    materia: Trabajo Profesional de Ingeniería Informática
+    carrera: Ingeniería en informática
+  - tema: Propuesta
+    capitulo: 1
+    materia: Trabajo Profesional de Ingeniería Informática
+    carrera: Ingeniería en informática
 ---
 # Progreso
 ---

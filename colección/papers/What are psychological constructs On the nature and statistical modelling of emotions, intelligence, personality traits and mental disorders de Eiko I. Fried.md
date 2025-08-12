@@ -9,7 +9,7 @@ autores:
 tituloInforme: What are psychological constructs? On the nature and statistical modelling of emotions, intelligence, personality traits and mental disorders
 numeroInforme: 
 anio: "2017"
-editores: []
+editores: 
 url: http://dx.doi.org/10.1080/17437199.2017.1306718
 tags:
   - colección/biblioteca/paper

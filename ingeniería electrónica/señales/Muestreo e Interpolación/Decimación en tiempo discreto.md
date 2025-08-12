@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/señales/Muestreo-e-Interpolación
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/señales/Muestreo e Interpolación/Resumen.md]]"
+  - tema: Muestreo e Interpolación
+    capitulo: 5
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

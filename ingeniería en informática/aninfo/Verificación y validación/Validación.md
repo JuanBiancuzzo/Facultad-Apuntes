@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Verificación-y-validación
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/aninfo/Verificación y validación/Resumen.md]]"
+  - tema: Verificación y validación
+    capitulo: 5
+    materia: Análisis de la información
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

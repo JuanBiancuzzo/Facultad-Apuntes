@@ -10,8 +10,14 @@ aliases:
   - Error detection and correction
   - EDC
 vinculoFacultad:
-  - "[[ingeniería en informática/redes/Capa de Enlace/Resumen.md]]"
-  - "[[ingeniería en informática/redes/Capa de Transporte/Resumen.md]]"
+  - tema: Capa de Enlace
+    capitulo: 5
+    materia: Redes
+    carrera: Ingeniería en informática
+  - tema: Capa de Transporte
+    capitulo: 3
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -11,7 +11,10 @@ aliases:
   - Sentencia repetir hasta
   - Sentencia hacer hasta
 vinculoFacultad:
-  - "[[ingeniería en informática/algo 1/Lenguaje C/Resumen.md]]"
+  - tema: Lenguaje C
+    capitulo: 2
+    materia: Algoritmos y programación 1
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

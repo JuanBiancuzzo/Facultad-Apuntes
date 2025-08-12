@@ -6,7 +6,10 @@ tags:
   - nota/facultad
   - nota/investigacion
 vinculoFacultad:
-  - "[[ingeniería en informática/orga/Pandas/Resumen.md]]"
+  - tema: Pandas
+    capitulo: 1
+    materia: Organización de datos
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

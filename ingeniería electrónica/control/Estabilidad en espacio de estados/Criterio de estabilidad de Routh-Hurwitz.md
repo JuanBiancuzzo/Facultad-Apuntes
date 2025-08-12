@@ -9,7 +9,10 @@ tags:
 aliases:
   - Routh-Hurwitz's Stability Criterion
 vinculoFacultad:
-  - "[[ingeniería electrónica/control/Estabilidad en espacio de estados/Resumen.md]]"
+  - tema: Estabilidad en espacio de estados
+    capitulo: 4
+    materia: Control automático
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

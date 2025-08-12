@@ -12,9 +12,18 @@ aliases:
   - PDF conjunta#Para vector aleatoria
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md]]"
-  - "[[ingeniería electrónica/estoca/Repaso/Resumen.md]]"
-  - "[[ingeniería en informática/proba/Variables y vectores aleatorios/Resumen.md]]"
+  - tema: Distribuciones multivariables
+    capitulo: 2
+    materia: Procesos estocásticos
+    carrera: Ingeniería electrónica
+  - tema: Repaso
+    capitulo: "1"
+    materia: Procesos estocásticos
+    carrera: Ingeniería electrónica
+  - tema: Variables y vectores aleatorios
+    capitulo: 2
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

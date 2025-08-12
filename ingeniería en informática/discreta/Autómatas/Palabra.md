@@ -13,8 +13,14 @@ referencias:
   - "700"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería en informática/discreta/Autómatas/Resumen.md]]"
-  - "[[ingeniería en informática/estructura/Sistema ARC/Resumen.md]]"
+  - tema: Autómatas
+    capitulo: 5
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
+  - tema: Sistema ARC
+    capitulo: 8
+    materia: Estructura del computador
+    carrera: Ingeniería en informática
 vinculoCurso:
   - "[[cursos/introduction to algorithms/Introduction/Resumen.md]]"
 ---

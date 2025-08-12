@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/seguridad/Contaminación-del-agua
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/seguridad/Contaminación del agua/Resumen.md]]"
+  - tema: Contaminación del agua
+    capitulo: 7
+    materia: Seguridad ambiental y del trabajo
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

@@ -8,7 +8,10 @@ tags:
   - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
   - nota/facultad
 vinculoFacultad:
-  - "[[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Resumen.md]]"
+  - tema: Números enteros
+    capitulo: 3
+    materia: Álgebra 1
+    carrera: Licenciatura en Ciencias Matemáticas
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

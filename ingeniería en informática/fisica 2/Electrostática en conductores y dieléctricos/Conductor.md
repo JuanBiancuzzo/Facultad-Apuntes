@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/fisica 2/Electrostática en conductores y dieléctricos/Resumen.md]]"
+  - tema: Electrostática en conductores y dieléctricos
+    capitulo: 3
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

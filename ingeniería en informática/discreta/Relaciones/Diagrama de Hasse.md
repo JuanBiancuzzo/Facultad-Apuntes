@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-en-informática/discreta/Relaciones
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/discreta/Relaciones/Resumen.md]]"
+  - tema: Relaciones
+    capitulo: 4
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

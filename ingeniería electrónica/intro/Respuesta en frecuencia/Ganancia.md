@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/intro/Respuesta-en-frecuencia
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/intro/Respuesta en frecuencia/Resumen.md]]"
+  - tema: Respuesta en frecuencia
+    capitulo: 4
+    materia: Introducción a la ingeniería electronica
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

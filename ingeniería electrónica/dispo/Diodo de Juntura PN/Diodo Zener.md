@@ -5,8 +5,14 @@ tags:
   - carrera/ingeniería-electrónica/dispo/Diodo-de-Juntura-PN
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/circuitos/Circuitos con diodos/Resumen.md]]"
-  - "[[ingeniería electrónica/dispo/Diodo de Juntura PN/Resumen.md]]"
+  - tema: Circuitos con diodos
+    capitulo: 1
+    materia: Circuitos microelectrónicos
+    carrera: Ingeniería electrónica
+  - tema: Diodo de Juntura PN
+    capitulo: 3
+    materia: Dispositivos semiconductores
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

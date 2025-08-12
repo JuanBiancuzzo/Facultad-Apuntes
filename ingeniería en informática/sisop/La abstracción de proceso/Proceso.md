@@ -13,10 +13,22 @@ referencias:
   - "1020"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
-  - "[[ingeniería en informática/aninfo/Diseño de software/Resumen.md]]"
-  - "[[ingeniería en informática/concurrentes/Introducción/Resumen.md]]"
-  - "[[ingeniería en informática/sisop/La abstracción de proceso/Resumen.md]]"
+  - tema: Respuesta dinámica
+    capitulo: 1
+    materia: Control automático
+    carrera: Ingeniería electrónica
+  - tema: Diseño de software
+    capitulo: 8
+    materia: Análisis de la información
+    carrera: Ingeniería en informática
+  - tema: Introducción
+    capitulo: 1
+    materia: Programación Concurrente
+    carrera: Ingeniería en informática
+  - tema: La abstracción de proceso
+    capitulo: 2
+    materia: Sistemas operativos
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

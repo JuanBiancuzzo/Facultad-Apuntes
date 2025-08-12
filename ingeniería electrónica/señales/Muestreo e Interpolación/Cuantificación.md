@@ -5,8 +5,14 @@ tags:
   - carrera/ingeniería-electrónica/señales/Muestreo-e-Interpolación
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/embebidos/Estrategias de control de periféricos/Resumen.md]]"
-  - "[[ingeniería electrónica/señales/Muestreo e Interpolación/Resumen.md]]"
+  - tema: Estrategias de control de periféricos
+    capitulo: 4
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
+  - tema: Muestreo e Interpolación
+    capitulo: 5
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

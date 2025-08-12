@@ -11,9 +11,18 @@ etapa: ampliar
 aliases:
   - Sistema no lineal
 vinculoFacultad:
-  - "[[ingeniería electrónica/control/Linealización/Resumen.md]]"
-  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
-  - "[[ingeniería electrónica/señales/Señales y sistemas/Resumen.md]]"
+  - tema: Linealización
+    capitulo: 2
+    materia: Control automático
+    carrera: Ingeniería electrónica
+  - tema: Respuesta dinámica
+    capitulo: 1
+    materia: Control automático
+    carrera: Ingeniería electrónica
+  - tema: Señales y sistemas
+    capitulo: 1
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

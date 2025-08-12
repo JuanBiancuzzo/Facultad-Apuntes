@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-en-informática/discreta/Ecuaciones-de-recurrencia
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/discreta/Ecuaciones de recurrencia/Resumen.md]]"
+  - tema: Ecuaciones de recurrencia
+    capitulo: 7
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

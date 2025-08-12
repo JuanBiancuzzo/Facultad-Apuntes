@@ -7,7 +7,10 @@ tags:
 aliases:
   - Teorema del valor medio
 vinculoFacultad:
-  - "[[ingeniería en informática/numerico/Ajuste de funciones/Resumen.md]]"
+  - tema: Ajuste de funciones
+    capitulo: 3
+    materia: Análisis numérico
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

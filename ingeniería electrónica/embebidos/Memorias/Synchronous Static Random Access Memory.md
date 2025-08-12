@@ -8,7 +8,10 @@ aliases:
   - Memoria de acceso aleatorio estático síncrona
   - SRAM síncrona
 vinculoFacultad:
-  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
+  - tema: Memorias
+    capitulo: 3
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

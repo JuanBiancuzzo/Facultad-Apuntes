@@ -9,8 +9,14 @@ tags:
 aliases:
   - Cuadripolo en cascada
 vinculoFacultad:
-  - "[[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Resumen.md]]"
-  - "[[ingeniería electrónica/adc/Cuadripolos/Resumen.md]]"
+  - tema: Circuitos en regimen de corriente continua
+    capitulo: 1
+    materia: Análisis de circuitos
+    carrera: Ingeniería electrónica
+  - tema: Cuadripolos
+    capitulo: 6
+    materia: Análisis de circuitos
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

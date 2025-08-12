@@ -7,7 +7,10 @@ aliases:
   - Inversor CMOS
   - Inversor MOS Complementaria
 vinculoFacultad:
-  - "[[ingeniería electrónica/dispo/Circuitos digitales y procesos de fabricación CMOS/Resumen.md]]"
+  - tema: Circuitos digitales y procesos de fabricación CMOS
+    capitulo: 9
+    materia: Dispositivos semiconductores
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

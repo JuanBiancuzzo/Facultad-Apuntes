@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/señales/Señales-y-sistemas
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/señales/Señales y sistemas/Resumen.md]]"
+  - tema: Señales y sistemas
+    capitulo: 1
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

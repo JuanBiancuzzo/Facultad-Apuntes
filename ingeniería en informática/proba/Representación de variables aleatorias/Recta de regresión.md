@@ -16,8 +16,14 @@ referencias:
   - "308"
 etapa: sin-empezar
 vinculoFacultad:
-  - "[[ingeniería en informática/orga/Machine learning/Resumen.md]]"
-  - "[[ingeniería en informática/proba/Representación de variables aleatorias/Resumen.md]]"
+  - tema: Machine learning
+    capitulo: 9
+    materia: Organización de datos
+    carrera: Ingeniería en informática
+  - tema: Representación de variables aleatorias
+    capitulo: 3
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

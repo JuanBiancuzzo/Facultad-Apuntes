@@ -5,8 +5,14 @@ tags:
   - carrera/ingeniería-en-informática/discreta/Álgebra-proposicional
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/discreta/Álgebra de conjuntos/Resumen.md]]"
-  - "[[ingeniería en informática/discreta/Álgebra proposicional/Resumen.md]]"
+  - tema: Álgebra de conjuntos
+    capitulo: 1
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
+  - tema: Álgebra proposicional
+    capitulo: 2
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

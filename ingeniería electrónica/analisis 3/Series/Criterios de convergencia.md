@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Series
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Series/Resumen.md]]"
+  - tema: Series
+    capitulo: 3
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
 ---
 ## Criterio de Chauchy
 ---

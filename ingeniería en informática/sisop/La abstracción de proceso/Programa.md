@@ -14,10 +14,22 @@ aliases:
   - Standard error#std-error
   - Stderror#std-error
 vinculoFacultad:
-  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
-  - "[[ingeniería en informática/algo 1/Introducción a la programación/Resumen.md]]"
-  - "[[ingeniería en informática/concurrentes/Introducción/Resumen.md]]"
-  - "[[ingeniería en informática/sisop/La abstracción de proceso/Resumen.md]]"
+  - tema: Diseño, desarrollo y depuración
+    capitulo: 1
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
+  - tema: Introducción a la programación
+    capitulo: 1
+    materia: Algoritmos y programación 1
+    carrera: Ingeniería en informática
+  - tema: Introducción
+    capitulo: 1
+    materia: Programación Concurrente
+    carrera: Ingeniería en informática
+  - tema: La abstracción de proceso
+    capitulo: 2
+    materia: Sistemas operativos
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -5,7 +5,10 @@ tags:
   - nota/facultad
 etapa: sin-empezar
 vinculoFacultad:
-  - "[[ingeniería electrónica/legal/Derechos comerciales y sociales/Resumen.md]]"
+  - tema: Derechos comerciales y sociales
+    capitulo: 8
+    materia: Legislación y ejercicio profesional
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

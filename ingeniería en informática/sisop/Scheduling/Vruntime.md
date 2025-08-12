@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-en-informática/sisop/Scheduling
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/sisop/Scheduling/Resumen.md]]"
+  - tema: Scheduling
+    capitulo: 4
+    materia: Sistemas operativos
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

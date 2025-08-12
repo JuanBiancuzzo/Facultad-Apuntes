@@ -6,7 +6,10 @@ tags:
 referencias:
   - "231"
 vinculoFacultad:
-  - "[[ingeniería electrónica/electro/Campo electromagnético/Resumen.md]]"
+  - tema: Campo electromagnético
+    capitulo: 2
+    materia: Electromagnetismo aplicado
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

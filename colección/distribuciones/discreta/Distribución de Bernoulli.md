@@ -10,7 +10,10 @@ tags:
 nombreDistribucion: Bernoulli
 tipoDistribucion: discreta
 vinculoFacultad:
-  - "[[ingeniería en informática/proba/Proceso de Bernoulli/Resumen.md]]"
+  - tema: Proceso de Bernoulli
+    capitulo: 7
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

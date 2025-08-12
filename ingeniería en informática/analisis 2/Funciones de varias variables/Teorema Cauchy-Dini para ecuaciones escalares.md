@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/analisis-2/Funciones-de-varias-variables
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/analisis 2/Funciones de varias variables/Resumen.md]]"
+  - tema: Funciones de varias variables
+    capitulo: 4
+    materia: Análisis matemático 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

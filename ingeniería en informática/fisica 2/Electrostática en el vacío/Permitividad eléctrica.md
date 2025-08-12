@@ -15,9 +15,18 @@ referencias:
   - "210"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/electro/Campos eléctricos y magnéticos/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Electrostática en conductores y dieléctricos/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Electrostática en el vacío/Resumen.md]]"
+  - tema: Campos eléctricos y magnéticos
+    capitulo: 1
+    materia: Electromagnetismo aplicado
+    carrera: Ingeniería electrónica
+  - tema: Electrostática en conductores y dieléctricos
+    capitulo: 3
+    materia: Física 2 A
+    carrera: Ingeniería en informática
+  - tema: Electrostática en el vacío
+    capitulo: 2
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

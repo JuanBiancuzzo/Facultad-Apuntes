@@ -10,8 +10,14 @@ aliases:
   - Módulo
   - Valor absoluto
 vinculoFacultad:
-  - "[[ingeniería en informática/algebra 2/Espacios euclídeos/Resumen.md]]"
-  - "[[ingeniería en informática/analisis 2/Nomenclatura/Resumen.md]]"
+  - tema: Espacios euclídeos
+    capitulo: 3
+    materia: Álgebra 2 A
+    carrera: Ingeniería en informática
+  - tema: Nomenclatura
+    capitulo: 1
+    materia: Análisis matemático 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

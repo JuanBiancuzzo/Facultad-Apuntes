@@ -22,7 +22,10 @@ tags:
   - nota/facultad
   - referencia/paper
 vinculoFacultad:
-  - "[[ingeniería en informática/tpp/Propuesta/Resumen.md]]"
+  - tema: Propuesta
+    capitulo: 1
+    materia: Trabajo Profesional de Ingeniería Informática
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

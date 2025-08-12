@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-en-informática/orga/Visualizaciones
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/orga/Visualizaciones/Resumen.md]]"
+  - tema: Visualizaciones
+    capitulo: 2
+    materia: Organización de datos
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

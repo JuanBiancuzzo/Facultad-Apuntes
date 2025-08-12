@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Descubrimiento-de-requisitos
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/aninfo/Descubrimiento de requisitos/Resumen.md]]"
+  - tema: Descubrimiento de requisitos
+    capitulo: 3
+    materia: Análisis de la información
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

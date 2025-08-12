@@ -6,7 +6,10 @@ tags:
   - carrera/ingeniería-electrónica/seguridad/Protección-auditiva
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/seguridad/Protección auditiva/Resumen.md]]"
+  - tema: Protección auditiva
+    capitulo: 4
+    materia: Seguridad ambiental y del trabajo
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

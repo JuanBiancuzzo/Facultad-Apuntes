@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Series
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Series/Resumen.md]]"
+  - tema: Series
+    capitulo: 3
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
 ---
 Dada una [[Serie]] $\alpha : \mathbb{N} \to \mathbb{K} : \bigg(\sum_{k = 0}^n \alpha_k \bigg)_{n = 1}^\infty$ , donde $\mathbb{K} \in \{ \mathbb{R}, \mathbb{C} \}$
 Utilizando el teorema [[Teoremas de completitud y de continuidad secuencial#Teorema 2 mathbb K mathbb R mathbb C|Teoremas de completitud y de continuidad secuencial]]

@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/legal/Obligaciones
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/legal/Obligaciones/Resumen.md]]"
+  - tema: Obligaciones
+    capitulo: 2
+    materia: Legislación y ejercicio profesional
+    carrera: Ingeniería electrónica
 ---
 # Según sus efectos: Civiles o Naturales
 ---

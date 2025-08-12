@@ -12,8 +12,14 @@ aliases:
   - Desigualdad de Tchevychev generalizada#Generalización
   - Desigualdad de Chebycheff generalizada#Generalización
 vinculoFacultad:
-  - "[[ingeniería electrónica/estoca/Análisis de datos/Resumen.md]]"
-  - "[[ingeniería en informática/proba/Representación de variables aleatorias/Resumen.md]]"
+  - tema: Análisis de datos
+    capitulo: 3
+    materia: Procesos estocásticos
+    carrera: Ingeniería electrónica
+  - tema: Representación de variables aleatorias
+    capitulo: 3
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

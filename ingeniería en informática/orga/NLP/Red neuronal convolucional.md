@@ -11,7 +11,10 @@ aliases:
   - Convolutional Neural Network
   - CNN
 vinculoFacultad:
-  - "[[ingeniería en informática/orga/NLP/Resumen Parte 2.md]]"
+  - tema: NLP
+    capitulo: 10
+    materia: Organización de datos
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

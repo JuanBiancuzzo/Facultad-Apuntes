@@ -6,7 +6,10 @@ tags:
   - nota/facultad
   - nota/investigacion
 vinculoFacultad:
-  - "[[ingeniería en informática/orga/Spark/Resumen.md]]"
+  - tema: Spark
+    capitulo: 6
+    materia: Organización de datos
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

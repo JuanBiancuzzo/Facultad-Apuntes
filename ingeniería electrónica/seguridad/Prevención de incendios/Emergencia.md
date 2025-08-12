@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/seguridad/Prevención-de-incendios
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/seguridad/Prevención de incendios/Resumen.md]]"
+  - tema: Prevención de incendios
+    capitulo: 3
+    materia: Seguridad ambiental y del trabajo
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

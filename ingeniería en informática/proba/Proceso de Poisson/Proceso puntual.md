@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/proba/Proceso-de-Poisson
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/proba/Proceso de Poisson/Resumen.md]]"
+  - tema: Proceso de Poisson
+    capitulo: 8
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

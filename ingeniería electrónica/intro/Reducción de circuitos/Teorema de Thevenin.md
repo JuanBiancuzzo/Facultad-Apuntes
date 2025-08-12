@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/intro/Reducción-de-circuitos
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/intro/Reducción de circuitos/Resumen.md]]"
+  - tema: Reducción de circuitos
+    capitulo: 2
+    materia: Introducción a la ingeniería electronica
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

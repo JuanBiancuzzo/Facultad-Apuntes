@@ -10,9 +10,18 @@ tags:
 aliases:
   - Producto cartesiano entre grafos#Entre grafos
 vinculoFacultad:
-  - "[[ingeniería en informática/analisis 2/Nomenclatura/Resumen.md]]"
-  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
-  - "[[licenciatura en ciencias matemáticas/algebra 1/Conjuntos, relaciones y funciones/Resumen.md]]"
+  - tema: Nomenclatura
+    capitulo: 1
+    materia: Análisis matemático 2 A
+    carrera: Ingeniería en informática
+  - tema: Grafos
+    capitulo: 8
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
+  - tema: Conjuntos, relaciones y funciones
+    capitulo: 1
+    materia: Álgebra 1
+    carrera: Licenciatura en Ciencias Matemáticas
 ---
 # Definición
 ---

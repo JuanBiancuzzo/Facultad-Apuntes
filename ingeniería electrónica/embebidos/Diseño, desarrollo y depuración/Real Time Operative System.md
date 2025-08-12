@@ -7,7 +7,10 @@ aliases:
   - Sistema Operativo de Tiempo Real
   - RTOS
 vinculoFacultad:
-  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
+  - tema: Diseño, desarrollo y depuración
+    capitulo: 1
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

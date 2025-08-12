@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Requisitos-en-contexto
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/aninfo/Requisitos en contexto/Resumen.md]]"
+  - tema: Requisitos en contexto
+    capitulo: 7
+    materia: Análisis de la información
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

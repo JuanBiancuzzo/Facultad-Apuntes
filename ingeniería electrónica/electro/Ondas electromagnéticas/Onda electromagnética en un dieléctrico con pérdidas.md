@@ -8,7 +8,10 @@ aliases:
   - Ecuación de Helmholtz en un dieléctrico con pérdidas
   - Impedancia intrínseca del medio con pérdida#^impedancia-intriseca-del-medio-con-perdidas
 vinculoFacultad:
-  - "[[ingeniería electrónica/electro/Ondas electromagnéticas/Resumen.md]]"
+  - tema: Ondas electromagnéticas
+    capitulo: 3
+    materia: Electromagnetismo aplicado
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

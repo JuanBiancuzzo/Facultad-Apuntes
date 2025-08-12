@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/seguridad/Prevención-de-accidentes-y-enfermedades-profesionales
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/seguridad/Prevención de accidentes y enfermedades profesionales/Resumen.md]]"
+  - tema: Prevención de accidentes y enfermedades profesionales
+    capitulo: 1
+    materia: Seguridad ambiental y del trabajo
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

@@ -7,7 +7,10 @@ aliases:
   - Velocidad de la energía#^velocidad-energia
   - Velocidad de la luz#^velocidad-energia
 vinculoFacultad:
-  - "[[ingeniería electrónica/electro/Ondas electromagnéticas/Resumen.md]]"
+  - tema: Ondas electromagnéticas
+    capitulo: 3
+    materia: Electromagnetismo aplicado
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

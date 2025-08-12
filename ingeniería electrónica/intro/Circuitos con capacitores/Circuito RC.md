@@ -7,8 +7,14 @@ tags:
 aliases:
   - Filtro RC#Respuesta en frecuencia
 vinculoFacultad:
-  - "[[ingeniería electrónica/intro/Circuitos con capacitores/Resumen.md]]"
-  - "[[ingeniería electrónica/intro/Respuesta en frecuencia/Resumen.md]]"
+  - tema: Circuitos con capacitores
+    capitulo: 3
+    materia: Introducción a la ingeniería electronica
+    carrera: Ingeniería electrónica
+  - tema: Respuesta en frecuencia
+    capitulo: 4
+    materia: Introducción a la ingeniería electronica
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

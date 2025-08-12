@@ -12,7 +12,10 @@ referencias:
   - "201"
 etapa: sin-empezar
 vinculoFacultad:
-  - "[[ingeniería en informática/redes/Capa de Enlace/Resumen.md]]"
+  - tema: Capa de Enlace
+    capitulo: 5
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

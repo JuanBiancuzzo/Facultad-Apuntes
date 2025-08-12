@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/señales/Transformada-discreta-de-Fourier
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/señales/Transformada discreta de Fourier/Resumen.md]]"
+  - tema: Transformada discreta de Fourier
+    capitulo: 6
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

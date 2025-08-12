@@ -6,7 +6,10 @@ tags:
   - nota/facultad
 etapa: sin-empezar
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Integrales impropias/Resumen.md]]"
+  - tema: Integrales impropias
+    capitulo: 10
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

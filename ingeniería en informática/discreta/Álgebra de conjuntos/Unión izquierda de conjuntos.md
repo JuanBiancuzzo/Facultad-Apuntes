@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-en-informática/discreta/Álgebra-de-conjuntos
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/discreta/Álgebra de conjuntos/Resumen.md]]"
+  - tema: Álgebra de conjuntos
+    capitulo: 1
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -8,7 +8,10 @@ aliases:
   - Función C-lineal
   - Función R-lineal
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Transformaciones conformes/Resumen.md]]"
+  - tema: Transformaciones conformes
+    capitulo: 5
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

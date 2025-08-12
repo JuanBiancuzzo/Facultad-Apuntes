@@ -8,7 +8,10 @@ aliases:
   - MSC
   - MSC gateway
 vinculoFacultad:
-  - "[[ingeniería en informática/redes/Capa Física Inalámbrica/Resumen.md]]"
+  - tema: Capa Física Inalámbrica
+    capitulo: 6
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

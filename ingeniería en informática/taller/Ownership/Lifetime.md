@@ -7,7 +7,10 @@ tags:
   - nota/facultad
   - nota/investigacion
 vinculoFacultad:
-  - "[[ingeniería en informática/taller/Ownership/Resumen.md]]"
+  - tema: Ownership
+    capitulo: 3
+    materia: Taller de programación 1
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

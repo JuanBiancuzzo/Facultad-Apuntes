@@ -13,8 +13,14 @@ tags:
 aliases:
   - Análisis de pequeña señal
 vinculoFacultad:
-  - "[[ingeniería electrónica/circuitos/Circuitos con diodos/Resumen.md]]"
-  - "[[ingeniería electrónica/control/Linealización/Resumen.md]]"
+  - tema: Circuitos con diodos
+    capitulo: 1
+    materia: Circuitos microelectrónicos
+    carrera: Ingeniería electrónica
+  - tema: Linealización
+    capitulo: 2
+    materia: Control automático
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

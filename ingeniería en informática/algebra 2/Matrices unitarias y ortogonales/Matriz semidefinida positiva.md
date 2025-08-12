@@ -7,7 +7,10 @@ tags:
   - carrera/ingeniería-en-informática/algebra-2/Matrices-unitarias-y-ortogonales
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/algebra 2/Matrices unitarias y ortogonales/Resumen.md]]"
+  - tema: Matrices unitarias y ortogonales
+    capitulo: 6
+    materia: Álgebra 2 A
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

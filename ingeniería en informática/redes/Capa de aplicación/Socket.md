@@ -11,8 +11,14 @@ tags:
   - nota/investigacion
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería en informática/distribuidos/Herramientas de Diseño/Resumen.md]]"
-  - "[[ingeniería en informática/redes/Capa de aplicación/Resumen.md]]"
+  - tema: Herramientas de Diseño
+    capitulo: 1
+    materia: Sistemas Distribuidos 1
+    carrera: Ingeniería en informática
+  - tema: Capa de aplicación
+    capitulo: 2
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

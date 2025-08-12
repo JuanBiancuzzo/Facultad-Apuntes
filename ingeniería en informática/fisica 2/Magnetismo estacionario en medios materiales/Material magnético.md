@@ -9,8 +9,14 @@ aliases:
   - Campo de magnetización#^campo-magnetizacion
   - Campo magnético#^campo-magnetico
 vinculoFacultad:
-  - "[[ingeniería electrónica/electro/Campos eléctricos y magnéticos/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Magnetismo estacionario en medios materiales/Resumen.md]]"
+  - tema: Campos eléctricos y magnéticos
+    capitulo: 1
+    materia: Electromagnetismo aplicado
+    carrera: Ingeniería electrónica
+  - tema: Magnetismo estacionario en medios materiales
+    capitulo: 6
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

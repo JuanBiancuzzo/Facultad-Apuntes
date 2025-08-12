@@ -9,9 +9,18 @@ referencias:
   - "898"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
-  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
-  - "[[ingeniería electrónica/señales/Señales y sistemas/Resumen.md]]"
+  - tema: Respuesta dinámica
+    capitulo: 1
+    materia: Control automático
+    carrera: Ingeniería electrónica
+  - tema: Diseño, desarrollo y depuración
+    capitulo: 1
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
+  - tema: Señales y sistemas
+    capitulo: 1
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

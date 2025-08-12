@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-en-informática/orga/Machine-learning
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/orga/Machine learning/Resumen.md]]"
+  - tema: Machine learning
+    capitulo: 9
+    materia: Organización de datos
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

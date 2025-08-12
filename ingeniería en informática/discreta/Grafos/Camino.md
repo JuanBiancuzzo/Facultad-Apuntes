@@ -15,7 +15,10 @@ aliases:
   - Circuito#Circuito (Circuit)
   - Ciclo#Ciclo (Cicle)
 vinculoFacultad:
-  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
+  - tema: Grafos
+    capitulo: 8
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

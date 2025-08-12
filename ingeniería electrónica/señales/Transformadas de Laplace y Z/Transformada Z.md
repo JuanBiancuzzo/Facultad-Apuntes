@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/señales/Transformadas-de-Laplace-y-Z
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/señales/Transformadas de Laplace y Z/Resumen.md]]"
+  - tema: Transformadas de Laplace y Z
+    capitulo: 7
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

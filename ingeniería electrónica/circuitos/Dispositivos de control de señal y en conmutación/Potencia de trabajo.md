@@ -6,7 +6,10 @@ tags:
 aliases:
   - Bajo nivel de potencia#Bajo nivel de potencia
 vinculoFacultad:
-  - "[[ingeniería electrónica/circuitos/Dispositivos de control de señal y en conmutación/Resumen.md]]"
+  - tema: Dispositivos de control de señal y en conmutación
+    capitulo: 2
+    materia: Circuitos microelectrónicos
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

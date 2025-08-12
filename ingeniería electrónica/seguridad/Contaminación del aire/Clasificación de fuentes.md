@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/seguridad/Contaminación-del-aire
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/seguridad/Contaminación del aire/Resumen.md]]"
+  - tema: Contaminación del aire
+    capitulo: 13
+    materia: Seguridad ambiental y del trabajo
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

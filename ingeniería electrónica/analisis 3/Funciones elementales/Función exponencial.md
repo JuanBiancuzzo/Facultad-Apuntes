@@ -7,9 +7,18 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Funciones-elementales
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Funciones elementales/Resumen.md]]"
-  - "[[ingeniería electrónica/señales/Sistemas LTI/Resumen.md]]"
-  - "[[ingeniería electrónica/señales/Transformada discreta de Fourier/Resumen.md]]"
+  - tema: Funciones elementales
+    capitulo: 4
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
+  - tema: Sistemas LTI
+    capitulo: 2
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
+  - tema: Transformada discreta de Fourier
+    capitulo: 6
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

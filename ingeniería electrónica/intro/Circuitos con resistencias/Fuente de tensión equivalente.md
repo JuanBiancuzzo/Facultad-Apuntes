@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/intro/Circuitos-con-resistencias
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/intro/Circuitos con resistencias/Resumen.md]]"
+  - tema: Circuitos con resistencias
+    capitulo: 1
+    materia: Introducción a la ingeniería electronica
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

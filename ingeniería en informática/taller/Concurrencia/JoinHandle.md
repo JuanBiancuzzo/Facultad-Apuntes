@@ -7,7 +7,10 @@ tags:
   - nota/facultad
   - nota/investigacion
 vinculoFacultad:
-  - "[[ingeniería en informática/taller/Concurrencia/Resumen.md]]"
+  - tema: Concurrencia
+    capitulo: 4
+    materia: Taller de programación 1
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

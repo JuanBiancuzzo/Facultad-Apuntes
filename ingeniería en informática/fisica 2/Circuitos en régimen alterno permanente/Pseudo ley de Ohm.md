@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/fisica 2/Circuitos en régimen alterno permanente/Resumen.md]]"
+  - tema: Circuitos en régimen alterno permanente
+    capitulo: 8
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

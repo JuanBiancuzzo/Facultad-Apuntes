@@ -9,8 +9,14 @@ aliases:
   - Correlación lineal
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/estoca/Distribuciones multivariables/Resumen.md]]"
-  - "[[ingeniería en informática/proba/Representación de variables aleatorias/Resumen.md]]"
+  - tema: Distribuciones multivariables
+    capitulo: 2
+    materia: Procesos estocásticos
+    carrera: Ingeniería electrónica
+  - tema: Representación de variables aleatorias
+    capitulo: 3
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

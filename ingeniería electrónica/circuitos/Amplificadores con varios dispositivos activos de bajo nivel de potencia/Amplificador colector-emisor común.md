@@ -9,7 +9,10 @@ tags:
 aliases:
   - CC-CE
 vinculoFacultad:
-  - "[[ingeniería electrónica/circuitos/Amplificadores con varios dispositivos activos de bajo nivel de potencia/Resumen.md]]"
+  - tema: Amplificadores con varios dispositivos activos de bajo nivel de potencia
+    capitulo: 4
+    materia: Circuitos microelectrónicos
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

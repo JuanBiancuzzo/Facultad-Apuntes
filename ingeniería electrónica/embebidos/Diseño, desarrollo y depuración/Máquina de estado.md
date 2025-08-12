@@ -13,8 +13,14 @@ referencias:
   - "240"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
-  - "[[ingeniería en informática/distribuidos/Herramientas de Diseño/Resumen.md]]"
+  - tema: Diseño, desarrollo y depuración
+    capitulo: 1
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
+  - tema: Herramientas de Diseño
+    capitulo: 1
+    materia: Sistemas Distribuidos 1
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

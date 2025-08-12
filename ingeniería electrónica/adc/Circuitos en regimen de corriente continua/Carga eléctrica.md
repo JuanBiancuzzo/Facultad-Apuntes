@@ -13,10 +13,22 @@ aliases:
   - Carga de polarización#Cargas de polarización
   - Portador de carga#Cargas libres
 vinculoFacultad:
-  - "[[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Resumen.md]]"
-  - "[[ingeniería electrónica/dispo/Física de semiconductores/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Electrostática en conductores y dieléctricos/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Electrostática en el vacío/Resumen.md]]"
+  - tema: Circuitos en regimen de corriente continua
+    capitulo: 1
+    materia: Análisis de circuitos
+    carrera: Ingeniería electrónica
+  - tema: Física de semiconductores
+    capitulo: 1
+    materia: Dispositivos semiconductores
+    carrera: Ingeniería electrónica
+  - tema: Electrostática en conductores y dieléctricos
+    capitulo: 3
+    materia: Física 2 A
+    carrera: Ingeniería en informática
+  - tema: Electrostática en el vacío
+    capitulo: 2
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

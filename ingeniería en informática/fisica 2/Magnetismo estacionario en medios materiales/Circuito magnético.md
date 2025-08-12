@@ -8,7 +8,10 @@ referencias:
   - "216"
 etapa: sin-empezar
 vinculoFacultad:
-  - "[[ingeniería en informática/fisica 2/Magnetismo estacionario en medios materiales/Resumen.md]]"
+  - tema: Magnetismo estacionario en medios materiales
+    capitulo: 6
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

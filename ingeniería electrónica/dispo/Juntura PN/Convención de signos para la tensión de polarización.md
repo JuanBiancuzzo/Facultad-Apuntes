@@ -7,7 +7,10 @@ aliases:
   - Juntura en directa#Polarización directa
   - Juntura en inversa#Polarización inversa
 vinculoFacultad:
-  - "[[ingeniería electrónica/dispo/Juntura PN/Resumen.md]]"
+  - tema: Juntura PN
+    capitulo: 2
+    materia: Dispositivos semiconductores
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

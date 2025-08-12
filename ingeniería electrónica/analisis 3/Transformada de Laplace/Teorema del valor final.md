@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Transformada-de-Laplace
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Transformada de Laplace/Resumen.md]]"
+  - tema: Transformada de Laplace
+    capitulo: 16
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

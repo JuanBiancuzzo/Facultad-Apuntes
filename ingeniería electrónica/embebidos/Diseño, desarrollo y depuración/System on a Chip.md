@@ -10,8 +10,14 @@ aliases:
 referencias:
   - "205"
 vinculoFacultad:
-  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
-  - "[[ingeniería electrónica/embebidos/Microcontroladores de 32 bits/Resumen.md]]"
+  - tema: Diseño, desarrollo y depuración
+    capitulo: 1
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
+  - tema: Microcontroladores de 32 bits
+    capitulo: 2
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

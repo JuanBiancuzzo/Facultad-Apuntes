@@ -8,7 +8,10 @@ aliases:
   - Polinomio
   - Grado de un polinomio#^grado
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Funciones elementales/Resumen.md]]"
+  - tema: Funciones elementales
+    capitulo: 4
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

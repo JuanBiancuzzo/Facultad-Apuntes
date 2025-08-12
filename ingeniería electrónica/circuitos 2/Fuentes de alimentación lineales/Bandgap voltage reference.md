@@ -8,7 +8,10 @@ tags:
   - carrera/ingeniería-electrónica/circuitos-2/Fuentes-de-alimentación-lineales
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/circuitos 2/Fuentes de alimentación lineales/Resumen.md]]"
+  - tema: Fuentes de alimentación lineales
+    capitulo: 2
+    materia: Taller de diseño de circuitos electrónicos
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

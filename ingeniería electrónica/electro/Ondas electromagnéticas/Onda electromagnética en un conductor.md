@@ -7,7 +7,10 @@ aliases:
   - Ecuación de ondas reducidas de Helmholtz en un conductor
   - Ecuación de Helmholtz en un conductor
 vinculoFacultad:
-  - "[[ingeniería electrónica/electro/Ondas electromagnéticas/Resumen.md]]"
+  - tema: Ondas electromagnéticas
+    capitulo: 3
+    materia: Electromagnetismo aplicado
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

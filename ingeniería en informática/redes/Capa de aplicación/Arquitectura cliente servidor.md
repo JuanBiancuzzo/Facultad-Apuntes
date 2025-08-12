@@ -7,8 +7,14 @@ tags:
   - nota/facultad
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería en informática/distribuidos/Fundamentos de Sistemas Distribuidos/Resumen.md]]"
-  - "[[ingeniería en informática/redes/Capa de aplicación/Resumen.md]]"
+  - tema: Fundamentos de Sistemas Distribuidos
+    capitulo: 2
+    materia: Sistemas Distribuidos 1
+    carrera: Ingeniería en informática
+  - tema: Capa de aplicación
+    capitulo: 2
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -12,9 +12,18 @@ aliases:
   - Susceptibilidad dieléctrica#^susceptibilidad-dielectrica
   - Susceptibilidad magnética#^susceptibilidad-magnetica
 vinculoFacultad:
-  - "[[ingeniería electrónica/electro/Ondas electromagnéticas/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Electrostática en conductores y dieléctricos/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Magnetismo estacionario en medios materiales/Resumen.md]]"
+  - tema: Ondas electromagnéticas
+    capitulo: 3
+    materia: Electromagnetismo aplicado
+    carrera: Ingeniería electrónica
+  - tema: Electrostática en conductores y dieléctricos
+    capitulo: 3
+    materia: Física 2 A
+    carrera: Ingeniería en informática
+  - tema: Magnetismo estacionario en medios materiales
+    capitulo: 6
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

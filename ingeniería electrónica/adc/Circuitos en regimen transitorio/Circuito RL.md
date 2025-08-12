@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/adc/Circuitos-en-regimen-transitorio
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/adc/Circuitos en regimen transitorio/Resumen.md]]"
+  - tema: Circuitos en regimen transitorio
+    capitulo: 2
+    materia: Análisis de circuitos
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/dispo/Transistor-MOSFET
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/dispo/Transistor MOSFET/Resumen.md]]"
+  - tema: Transistor MOSFET
+    capitulo: 6
+    materia: Dispositivos semiconductores
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

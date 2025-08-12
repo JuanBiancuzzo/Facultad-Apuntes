@@ -6,8 +6,14 @@ tags:
   - carrera/ingeniería-en-informática/fisica-2/Circuitos-en-régimen-alterno-permanente
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/electro/Campo electromagnético/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Circuitos en régimen alterno permanente/Resumen.md]]"
+  - tema: Campo electromagnético
+    capitulo: 2
+    materia: Electromagnetismo aplicado
+    carrera: Ingeniería electrónica
+  - tema: Circuitos en régimen alterno permanente
+    capitulo: 8
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

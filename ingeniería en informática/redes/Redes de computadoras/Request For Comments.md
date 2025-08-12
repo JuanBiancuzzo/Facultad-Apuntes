@@ -11,7 +11,10 @@ referencias:
   - "255"
 etapa: sin-empezar
 vinculoFacultad:
-  - "[[ingeniería en informática/redes/Redes de computadoras/Resumen.md]]"
+  - tema: Redes de computadoras
+    capitulo: 1
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

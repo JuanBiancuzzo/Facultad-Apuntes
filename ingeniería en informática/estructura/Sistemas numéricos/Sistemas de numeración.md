@@ -7,8 +7,14 @@ tags:
   - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-enteros
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/estructura/Sistemas numéricos/Resumen.md]]"
-  - "[[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Resumen.md]]"
+  - tema: Sistemas numéricos
+    capitulo: 1
+    materia: Estructura del computador
+    carrera: Ingeniería en informática
+  - tema: Números enteros
+    capitulo: 3
+    materia: Álgebra 1
+    carrera: Licenciatura en Ciencias Matemáticas
 ---
 # Definición
 ---

@@ -14,7 +14,10 @@ aliases:
   - HAL para un entrada-salida de propósito general
   - HAL para un GPIO
 vinculoFacultad:
-  - "[[ingeniería electrónica/embebidos/Estrategias de control de periféricos/Resumen.md]]"
+  - tema: Estrategias de control de periféricos
+    capitulo: 4
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

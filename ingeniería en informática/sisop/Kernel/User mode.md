@@ -6,7 +6,10 @@ tags:
 aliases:
   - Modo usuario
 vinculoFacultad:
-  - "[[ingeniería en informática/sisop/Kernel/Resumen.md]]"
+  - tema: Kernel
+    capitulo: 1
+    materia: Sistemas operativos
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

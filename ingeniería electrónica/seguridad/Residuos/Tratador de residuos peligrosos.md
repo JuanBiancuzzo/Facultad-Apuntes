@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/seguridad/Residuos
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/seguridad/Residuos/Resumen.md]]"
+  - tema: Residuos
+    capitulo: 11
+    materia: Seguridad ambiental y del trabajo
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

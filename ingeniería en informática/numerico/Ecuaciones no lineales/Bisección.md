@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/numerico/Ecuaciones-no-lineales
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/numerico/Ecuaciones no lineales/Resumen.md]]"
+  - tema: Ecuaciones no lineales
+    capitulo: 2
+    materia: Análisis numérico
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/adc/Cuadripolos
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/adc/Cuadripolos/Resumen.md]]"
+  - tema: Cuadripolos
+    capitulo: 6
+    materia: Análisis de circuitos
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

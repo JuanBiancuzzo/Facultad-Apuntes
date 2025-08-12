@@ -10,8 +10,14 @@ etapa: ampliar
 referencias: []
 aliases: []
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Topología del plano complejo y límites/Resumen.md]]"
-  - "[[ingeniería en informática/analisis 2/Propiedades de funciones/Resumen.md]]"
+  - tema: Topología del plano complejo y límites
+    capitulo: 1
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
+  - tema: Propiedades de funciones
+    capitulo: 3
+    materia: Análisis matemático 2 A
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

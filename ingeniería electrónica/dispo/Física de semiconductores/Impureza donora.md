@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/dispo/Física-de-semiconductores
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/dispo/Física de semiconductores/Resumen.md]]"
+  - tema: Física de semiconductores
+    capitulo: 1
+    materia: Dispositivos semiconductores
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

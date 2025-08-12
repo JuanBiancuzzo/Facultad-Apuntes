@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Transformaciones-conformes
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Transformaciones conformes/Resumen.md]]"
+  - tema: Transformaciones conformes
+    capitulo: 5
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
 ---
 # Definición 
 ---

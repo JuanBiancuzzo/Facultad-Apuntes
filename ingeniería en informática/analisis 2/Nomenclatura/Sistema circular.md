@@ -9,7 +9,10 @@ aliases:
   - Coordenadas circulares
 etapa: sin-empezar
 vinculoFacultad:
-  - "[[ingeniería en informática/analisis 2/Nomenclatura/Resumen.md]]"
+  - tema: Nomenclatura
+    capitulo: 1
+    materia: Análisis matemático 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

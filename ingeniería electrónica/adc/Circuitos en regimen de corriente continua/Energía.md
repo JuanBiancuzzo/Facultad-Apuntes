@@ -7,8 +7,14 @@ tags:
   - carrera/ingeniería-en-informática/fisica-1/Trabajo-y-energía
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 1/Trabajo y energía/Resumen.md]]"
+  - tema: Circuitos en regimen de corriente continua
+    capitulo: 1
+    materia: Análisis de circuitos
+    carrera: Ingeniería electrónica
+  - tema: Trabajo y energía
+    capitulo: 2
+    materia: Física 1 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

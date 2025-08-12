@@ -23,11 +23,26 @@ referencias:
   - "845"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería en informática/algo 1/Lenguaje C/Resumen.md]]"
-  - "[[ingeniería en informática/analisis 2/Nomenclatura/Resumen.md]]"
-  - "[[ingeniería en informática/discreta/Álgebra proposicional/Resumen.md]]"
-  - "[[ingeniería en informática/estructura/Álgebra de Boole/Resumen.md]]"
-  - "[[ingeniería en informática/taller/Sintaxis/Resumen.md]]"
+  - tema: Lenguaje C
+    capitulo: 2
+    materia: Algoritmos y programación 1
+    carrera: Ingeniería en informática
+  - tema: Nomenclatura
+    capitulo: 1
+    materia: Análisis matemático 2 A
+    carrera: Ingeniería en informática
+  - tema: Álgebra proposicional
+    capitulo: 2
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
+  - tema: Álgebra de Boole
+    capitulo: 3
+    materia: Estructura del computador
+    carrera: Ingeniería en informática
+  - tema: Sintaxis
+    capitulo: 1
+    materia: Taller de programación 1
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

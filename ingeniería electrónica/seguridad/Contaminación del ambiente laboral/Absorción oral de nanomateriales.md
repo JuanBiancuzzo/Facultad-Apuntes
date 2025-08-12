@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/seguridad/Contaminación-del-ambiente-laboral
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/seguridad/Contaminación del ambiente laboral/Resumen.md]]"
+  - tema: Contaminación del ambiente laboral
+    capitulo: 2
+    materia: Seguridad ambiental y del trabajo
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

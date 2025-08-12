@@ -11,7 +11,10 @@ aliases:
   - Vector de propagación#Vector de onda
   - Campo armónico
 vinculoFacultad:
-  - "[[ingeniería electrónica/electro/Ondas electromagnéticas/Resumen.md]]"
+  - tema: Ondas electromagnéticas
+    capitulo: 3
+    materia: Electromagnetismo aplicado
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

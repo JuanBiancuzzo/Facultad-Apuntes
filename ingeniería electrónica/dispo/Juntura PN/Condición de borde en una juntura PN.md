@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/dispo/Juntura-PN
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/dispo/Juntura PN/Resumen.md]]"
+  - tema: Juntura PN
+    capitulo: 2
+    materia: Dispositivos semiconductores
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

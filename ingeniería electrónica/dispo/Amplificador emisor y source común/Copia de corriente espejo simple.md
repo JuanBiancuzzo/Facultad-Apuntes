@@ -8,8 +8,14 @@ aliases:
   - Espejo de corriente simple
   - Fuente espejo simple
 vinculoFacultad:
-  - "[[ingeniería electrónica/circuitos/Fuentes de corriente y circuitos con cargas activas/Resumen.md]]"
-  - "[[ingeniería electrónica/dispo/Amplificador emisor y source común/Resumen.md]]"
+  - tema: Fuentes de corriente y circuitos con cargas activas
+    capitulo: 6
+    materia: Circuitos microelectrónicos
+    carrera: Ingeniería electrónica
+  - tema: Amplificador emisor y source común
+    capitulo: 7
+    materia: Dispositivos semiconductores
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

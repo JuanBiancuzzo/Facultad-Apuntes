@@ -9,8 +9,14 @@ etapa: ampliar
 referencias: []
 aliases: []
 vinculoFacultad:
-  - "[[ingeniería electrónica/estoca/Introducción a procesos aleatorios/Resumen.md]]"
-  - "[[ingeniería en informática/proba/Proceso de Bernoulli/Resumen.md]]"
+  - tema: Introducción a procesos aleatorios
+    capitulo: 4
+    materia: Procesos estocásticos
+    carrera: Ingeniería electrónica
+  - tema: Proceso de Bernoulli
+    capitulo: 7
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

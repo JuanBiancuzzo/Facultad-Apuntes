@@ -13,7 +13,10 @@ aliases:
   - Densidad de corriente de desplazamiento#^corriente-desplazamiento
   - Corriente de desplazamiento#^corriente-desplazamiento
 vinculoFacultad:
-  - "[[ingeniería en informática/fisica 2/Magnetostática en el vacío/Resumen.md]]"
+  - tema: Magnetostática en el vacío
+    capitulo: 5
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -6,8 +6,14 @@ tags:
   - nota/facultad
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/estoca/Análisis de datos/Resumen.md]]"
-  - "[[ingeniería en informática/orga/Visualizaciones/Resumen.md]]"
+  - tema: Análisis de datos
+    capitulo: 3
+    materia: Procesos estocásticos
+    carrera: Ingeniería electrónica
+  - tema: Visualizaciones
+    capitulo: 2
+    materia: Organización de datos
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

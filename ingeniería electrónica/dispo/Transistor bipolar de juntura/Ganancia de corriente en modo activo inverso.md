@@ -6,7 +6,10 @@ tags:
 aliases:
   - Ganancia de corriente en MAI
 vinculoFacultad:
-  - "[[ingeniería electrónica/dispo/Transistor bipolar de juntura/Resumen.md]]"
+  - tema: Transistor bipolar de juntura
+    capitulo: 4
+    materia: Dispositivos semiconductores
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

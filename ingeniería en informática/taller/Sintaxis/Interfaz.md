@@ -11,8 +11,14 @@ aliases:
   - Trait
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería en informática/distribuidos/Herramientas de Diseño/Resumen.md]]"
-  - "[[ingeniería en informática/taller/Sintaxis/Resumen.md]]"
+  - tema: Herramientas de Diseño
+    capitulo: 1
+    materia: Sistemas Distribuidos 1
+    carrera: Ingeniería en informática
+  - tema: Sintaxis
+    capitulo: 1
+    materia: Taller de programación 1
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/algebra-2/Autovalores-y-autovectores
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/algebra 2/Autovalores y autovectores/Resumen.md]]"
+  - tema: Autovalores y autovectores
+    capitulo: 4
+    materia: Álgebra 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

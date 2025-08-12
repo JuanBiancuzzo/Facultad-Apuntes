@@ -8,7 +8,10 @@ etapa: ampliar
 referencias: []
 aliases: []
 vinculoFacultad:
-  - "[[ingeniería en informática/proba/Inferencia estadística/Resumen.md]]"
+  - tema: Inferencia estadística
+    capitulo: 10
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

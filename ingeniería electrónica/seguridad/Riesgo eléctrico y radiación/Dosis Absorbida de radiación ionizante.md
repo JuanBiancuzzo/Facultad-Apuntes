@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/seguridad/Riesgo-eléctrico-y-radiación
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/seguridad/Riesgo eléctrico y radiación/Resumen.md]]"
+  - tema: Riesgo eléctrico y radiación
+    capitulo: 6
+    materia: Seguridad ambiental y del trabajo
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

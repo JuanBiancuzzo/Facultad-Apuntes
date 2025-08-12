@@ -9,8 +9,14 @@ tags:
 aliases:
   - Operador de Laplace
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Ecuaciones diferenciales/Resumen.md]]"
-  - "[[ingeniería en informática/analisis 2/Funciones de varias variables/Resumen.md]]"
+  - tema: Ecuaciones diferenciales
+    capitulo: 11
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
+  - tema: Funciones de varias variables
+    capitulo: 4
+    materia: Análisis matemático 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

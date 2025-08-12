@@ -6,8 +6,14 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Transformada-de-Fourier
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Transformada de Fourier/Resumen.md]]"
-  - "[[ingeniería electrónica/señales/Transformada de Fourier/Resumen.md]]"
+  - tema: Transformada de Fourier
+    capitulo: 15
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
+  - tema: Transformada de Fourier
+    capitulo: 4
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

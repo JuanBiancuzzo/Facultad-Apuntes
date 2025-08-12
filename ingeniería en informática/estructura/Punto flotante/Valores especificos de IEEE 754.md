@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/estructura/Punto-flotante
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/estructura/Punto flotante/Resumen.md]]"
+  - tema: Punto flotante
+    capitulo: 2
+    materia: Estructura del computador
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

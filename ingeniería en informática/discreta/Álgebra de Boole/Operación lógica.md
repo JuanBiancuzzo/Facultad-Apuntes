@@ -10,8 +10,14 @@ tags:
 aliases:
   - Operador lógico
 vinculoFacultad:
-  - "[[ingeniería en informática/algo 1/Introducción a la programación/Resumen.md]]"
-  - "[[ingeniería en informática/discreta/Álgebra de Boole/Resumen.md]]"
+  - tema: Introducción a la programación
+    capitulo: 1
+    materia: Algoritmos y programación 1
+    carrera: Ingeniería en informática
+  - tema: Álgebra de Boole
+    capitulo: 3
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

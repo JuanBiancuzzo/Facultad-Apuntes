@@ -6,8 +6,14 @@ tags:
   - carrera/ingeniería-en-informática/fisica-2/Magnetostática-en-el-vacío
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/electro/Campos eléctricos y magnéticos/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Magnetostática en el vacío/Resumen.md]]"
+  - tema: Campos eléctricos y magnéticos
+    capitulo: 1
+    materia: Electromagnetismo aplicado
+    carrera: Ingeniería electrónica
+  - tema: Magnetostática en el vacío
+    capitulo: 5
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

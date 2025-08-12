@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/estructura/Flip-Flops
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/estructura/Flip-Flops/Resumen.md]]"
+  - tema: Flip-Flops
+    capitulo: 6
+    materia: Estructura del computador
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

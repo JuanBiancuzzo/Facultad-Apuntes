@@ -11,7 +11,10 @@ aliases:
   - Onda electromagnética polarización elípticamente#^polarizacion-eliptica
   - Onda electromagnética polarización circularmente#^polarizacion-circular
 vinculoFacultad:
-  - "[[ingeniería electrónica/electro/Ondas electromagnéticas/Resumen.md]]"
+  - tema: Ondas electromagnéticas
+    capitulo: 3
+    materia: Electromagnetismo aplicado
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

@@ -10,7 +10,10 @@ referencias:
   - "665"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería en informática/estructura/Registros y contadores/Resumen.md]]"
+  - tema: Registros y contadores
+    capitulo: 7
+    materia: Estructura del computador
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

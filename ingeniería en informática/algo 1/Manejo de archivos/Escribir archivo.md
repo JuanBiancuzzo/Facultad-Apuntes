@@ -11,7 +11,10 @@ tags:
 aliases:
   - fwrite
 vinculoFacultad:
-  - "[[ingeniería en informática/algo 1/Manejo de archivos/Resumen.md]]"
+  - tema: Manejo de archivos
+    capitulo: 4
+    materia: Algoritmos y programación 1
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/fisica-2/Termodinámica
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/fisica 2/Termodinámica/Resumen.md]]"
+  - tema: Termodinámica
+    capitulo: 1
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

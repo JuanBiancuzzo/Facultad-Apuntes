@@ -13,9 +13,18 @@ tags:
   - carrera/ingeniería-en-informática/distribuidos/Introducción
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
-  - "[[ingeniería en informática/aninfo/Ingeniería de software/Resumen.md]]"
-  - "[[ingeniería en informática/distribuidos/Introduccion/Resumen.md]]"
+  - tema: Diseño, desarrollo y depuración
+    capitulo: 1
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
+  - tema: Ingeniería de software
+    capitulo: 1
+    materia: Análisis de la información
+    carrera: Ingeniería en informática
+  - tema: Introduccion
+    capitulo: "0"
+    materia: Sistemas Distribuidos 1
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

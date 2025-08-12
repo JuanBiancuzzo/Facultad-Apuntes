@@ -17,10 +17,22 @@ aliases:
   - Ecuación de la divergencia
   - Teorema de la divergencia
 vinculoFacultad:
-  - "[[ingeniería en informática/analisis 2/Funciones de varias variables/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Electrostática en conductores y dieléctricos/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Electrostática en el vacío/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Magnetostática en el vacío/Resumen.md]]"
+  - tema: Funciones de varias variables
+    capitulo: 4
+    materia: Análisis matemático 2 A
+    carrera: Ingeniería en informática
+  - tema: Electrostática en conductores y dieléctricos
+    capitulo: 3
+    materia: Física 2 A
+    carrera: Ingeniería en informática
+  - tema: Electrostática en el vacío
+    capitulo: 2
+    materia: Física 2 A
+    carrera: Ingeniería en informática
+  - tema: Magnetostática en el vacío
+    capitulo: 5
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

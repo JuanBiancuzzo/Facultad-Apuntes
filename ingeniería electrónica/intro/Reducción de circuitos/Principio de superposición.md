@@ -14,9 +14,18 @@ referencias:
   - "873"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/control/Respuesta dinámica/Resumen.md]]"
-  - "[[ingeniería electrónica/intro/Reducción de circuitos/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Electrostática en el vacío/Resumen.md]]"
+  - tema: Respuesta dinámica
+    capitulo: 1
+    materia: Control automático
+    carrera: Ingeniería electrónica
+  - tema: Reducción de circuitos
+    capitulo: 2
+    materia: Introducción a la ingeniería electronica
+    carrera: Ingeniería electrónica
+  - tema: Electrostática en el vacío
+    capitulo: 2
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

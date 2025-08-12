@@ -9,8 +9,14 @@ aliases:
   - Entorno abierto de un vértice
   - Entorno cerrado de un vértice
 vinculoFacultad:
-  - "[[ingeniería en informática/analisis 2/Topología/Resumen Parte 1.md]]"
-  - "[[ingeniería en informática/discreta/Grafos/Resumen.md]]"
+  - tema: Topología
+    capitulo: 2
+    materia: Análisis matemático 2 A
+    carrera: Ingeniería en informática
+  - tema: Grafos
+    capitulo: 8
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

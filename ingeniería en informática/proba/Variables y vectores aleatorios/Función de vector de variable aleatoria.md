@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/proba/Variables-y-vectores-aleatorios
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/proba/Variables y vectores aleatorios/Resumen.md]]"
+  - tema: Variables y vectores aleatorios
+    capitulo: 2
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

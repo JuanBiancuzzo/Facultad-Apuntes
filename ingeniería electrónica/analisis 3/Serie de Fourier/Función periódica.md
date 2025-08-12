@@ -10,7 +10,10 @@ aliases:
 etapa: empezado
 referencias: []
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Serie de Fourier/Resumen.md]]"
+  - tema: Serie de Fourier
+    capitulo: 12
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

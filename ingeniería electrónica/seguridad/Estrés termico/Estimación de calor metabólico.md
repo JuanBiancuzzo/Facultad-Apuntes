@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/seguridad/Estrés-termico
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/seguridad/Estrés termico/Resumen.md]]"
+  - tema: Estrés termico
+    capitulo: 5
+    materia: Seguridad ambiental y del trabajo
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

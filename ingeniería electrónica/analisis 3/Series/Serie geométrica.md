@@ -10,8 +10,14 @@ referencias:
   - "412"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Series/Resumen.md]]"
-  - "[[licenciatura en ciencias matemáticas/algebra 1/Números naturales e Inducción/Resumen.md]]"
+  - tema: Series
+    capitulo: 3
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
+  - tema: Números naturales e Inducción
+    capitulo: 2
+    materia: Álgebra 1
+    carrera: Licenciatura en Ciencias Matemáticas
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

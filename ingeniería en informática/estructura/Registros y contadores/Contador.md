@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/estructura/Registros-y-contadores
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/estructura/Registros y contadores/Resumen.md]]"
+  - tema: Registros y contadores
+    capitulo: 7
+    materia: Estructura del computador
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -14,8 +14,14 @@ aliases:
   - Broadcast#^broadcast
   - Comunicación punto a punto#^unicast
 vinculoFacultad:
-  - "[[ingeniería en informática/distribuidos/Herramientas de Diseño/Resumen.md]]"
-  - "[[ingeniería en informática/distribuidos/Introduccion/Resumen.md]]"
+  - tema: Herramientas de Diseño
+    capitulo: 1
+    materia: Sistemas Distribuidos 1
+    carrera: Ingeniería en informática
+  - tema: Introduccion
+    capitulo: "0"
+    materia: Sistemas Distribuidos 1
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

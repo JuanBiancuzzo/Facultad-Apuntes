@@ -12,7 +12,10 @@ tags:
   - nota/facultad
   - nota/investigacion
 vinculoFacultad:
-  - "[[ingeniería en informática/redes/Capa de Transporte/Resumen.md]]"
+  - tema: Capa de Transporte
+    capitulo: 3
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

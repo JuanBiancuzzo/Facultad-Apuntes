@@ -14,9 +14,18 @@ referencias:
   - "414"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería en informática/algebra 2/Espacios Vectoriales/Resumen.md]]"
-  - "[[ingeniería en informática/discreta/Álgebra proposicional/Resumen.md]]"
-  - "[[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Resumen.md]]"
+  - tema: Espacios Vectoriales
+    capitulo: 1
+    materia: Álgebra 2 A
+    carrera: Ingeniería en informática
+  - tema: Álgebra proposicional
+    capitulo: 2
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
+  - tema: Números enteros
+    capitulo: 3
+    materia: Álgebra 1
+    carrera: Licenciatura en Ciencias Matemáticas
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

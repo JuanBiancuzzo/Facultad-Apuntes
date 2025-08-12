@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/circuitos/Circuitos-con-diodos
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/circuitos/Circuitos con diodos/Resumen.md]]"
+  - tema: Circuitos con diodos
+    capitulo: 1
+    materia: Circuitos microelectrónicos
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

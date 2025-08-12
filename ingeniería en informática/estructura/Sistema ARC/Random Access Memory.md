@@ -9,8 +9,14 @@ aliases:
   - RAM
   - Memoria de acceso aleatorio
 vinculoFacultad:
-  - "[[ingeniería electrónica/embebidos/Memorias/Resumen.md]]"
-  - "[[ingeniería en informática/estructura/Sistema ARC/Resumen.md]]"
+  - tema: Memorias
+    capitulo: 3
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
+  - tema: Sistema ARC
+    capitulo: 8
+    materia: Estructura del computador
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

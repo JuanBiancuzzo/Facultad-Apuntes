@@ -9,8 +9,14 @@ tags:
 aliases:
   - Ley del rotor
 vinculoFacultad:
-  - "[[ingeniería en informática/analisis 2/Funciones de varias variables/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Electrostática en el vacío/Resumen.md]]"
+  - tema: Funciones de varias variables
+    capitulo: 4
+    materia: Análisis matemático 2 A
+    carrera: Ingeniería en informática
+  - tema: Electrostática en el vacío
+    capitulo: 2
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

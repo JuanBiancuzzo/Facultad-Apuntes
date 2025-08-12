@@ -6,7 +6,10 @@ tags:
 aliases:
   - Capacidad de la estructura MOS
 vinculoFacultad:
-  - "[[ingeniería electrónica/dispo/Juntura MOS/Resumen.md]]"
+  - tema: Juntura MOS
+    capitulo: 5
+    materia: Dispositivos semiconductores
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

@@ -7,7 +7,10 @@ referencias:
   - "787"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería en informática/sisop/La abstracción de proceso/Resumen.md]]"
+  - tema: La abstracción de proceso
+    capitulo: 2
+    materia: Sistemas operativos
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

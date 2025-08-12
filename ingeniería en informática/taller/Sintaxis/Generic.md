@@ -7,7 +7,10 @@ tags:
   - nota/facultad
   - nota/investigacion
 vinculoFacultad:
-  - "[[ingeniería en informática/taller/Sintaxis/Resumen.md]]"
+  - tema: Sintaxis
+    capitulo: 1
+    materia: Taller de programación 1
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

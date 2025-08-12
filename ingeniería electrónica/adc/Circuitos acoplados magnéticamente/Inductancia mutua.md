@@ -9,8 +9,14 @@ tags:
 aliases:
   - Coeficiente de inducción mutuo
 vinculoFacultad:
-  - "[[ingeniería electrónica/adc/Circuitos acoplados magnéticamente/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Inducción electromagnética/Resumen.md]]"
+  - tema: Circuitos acoplados magnéticamente
+    capitulo: 4
+    materia: Análisis de circuitos
+    carrera: Ingeniería electrónica
+  - tema: Inducción electromagnética
+    capitulo: 7
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

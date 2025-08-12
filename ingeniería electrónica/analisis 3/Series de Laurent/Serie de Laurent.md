@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Series-de-Laurent
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Series de Laurent/Resumen.md]]"
+  - tema: Series de Laurent
+    capitulo: 8
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

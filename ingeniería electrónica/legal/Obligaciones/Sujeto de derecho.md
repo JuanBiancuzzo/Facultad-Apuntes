@@ -6,7 +6,10 @@ tags:
 aliases:
   - Titular
 vinculoFacultad:
-  - "[[ingeniería electrónica/legal/Obligaciones/Resumen.md]]"
+  - tema: Obligaciones
+    capitulo: 2
+    materia: Legislación y ejercicio profesional
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

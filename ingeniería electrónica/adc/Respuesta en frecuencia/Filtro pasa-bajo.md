@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/adc/Respuesta-en-frecuencia
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/adc/Respuesta en frecuencia/Resumen.md]]"
+  - tema: Respuesta en frecuencia
+    capitulo: 5
+    materia: Análisis de circuitos
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

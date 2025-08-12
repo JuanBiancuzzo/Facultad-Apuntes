@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/algebra-2/Transformaciones-lineales
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/algebra 2/Transformaciones lineales/Resumen.md]]"
+  - tema: Transformaciones lineales
+    capitulo: 2
+    materia: Álgebra 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

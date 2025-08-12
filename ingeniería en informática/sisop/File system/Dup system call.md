@@ -9,7 +9,10 @@ tags:
 aliases:
   - Dup2 system call
 vinculoFacultad:
-  - "[[ingeniería en informática/sisop/File system/Resumen.md]]"
+  - tema: File system
+    capitulo: 6
+    materia: Sistemas operativos
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/legal/Derecho-laboral
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/legal/Derecho laboral/Resumen.md]]"
+  - tema: Derecho laboral
+    capitulo: 5
+    materia: Legislación y ejercicio profesional
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

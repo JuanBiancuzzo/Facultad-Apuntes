@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/algo-2/General
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/algo 2/General/Resumen.md]]"
+  - tema: General
+    capitulo: 1
+    materia: Algoritmos y programación 2
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -5,8 +5,14 @@ tags:
   - carrera/ingeniería-electrónica/señales/Muestreo-e-Interpolación
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Resumen.md]]"
-  - "[[ingeniería electrónica/señales/Muestreo e Interpolación/Resumen.md]]"
+  - tema: Diseño, desarrollo y depuración
+    capitulo: 1
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
+  - tema: Muestreo e Interpolación
+    capitulo: 5
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

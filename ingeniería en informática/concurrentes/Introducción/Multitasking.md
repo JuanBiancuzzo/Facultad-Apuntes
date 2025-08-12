@@ -6,7 +6,10 @@ tags:
   - carrera/ingeniería-en-informática/concurrentes/Introducción
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/concurrentes/Introducción/Resumen.md]]"
+  - tema: Introducción
+    capitulo: 1
+    materia: Programación Concurrente
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

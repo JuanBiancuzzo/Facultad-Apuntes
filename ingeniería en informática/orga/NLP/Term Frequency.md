@@ -12,7 +12,10 @@ tags:
   - nota/facultad
   - nota/investigacion
 vinculoFacultad:
-  - "[[ingeniería en informática/orga/NLP/Resumen Parte 1.md]]"
+  - tema: NLP
+    capitulo: 3
+    materia: Organización de datos
+    carrera: Ingeniería en informática
 vinculoCurso:
   - "[[cursos/ciencia de datos para salud mental y psicología/Machine learning, deep learning e interpretabilidad algorítmica/Resumen.md]]"
 ---

@@ -6,7 +6,10 @@ tags:
   - nota/facultad
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Series de Laurent/Resumen.md]]"
+  - tema: Series de Laurent
+    capitulo: 8
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

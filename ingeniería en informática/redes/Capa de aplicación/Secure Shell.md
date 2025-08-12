@@ -12,7 +12,10 @@ tags:
   - nota/investigacion
 etapa: sin-empezar
 vinculoFacultad:
-  - "[[ingeniería en informática/redes/Capa de aplicación/Resumen.md]]"
+  - tema: Capa de aplicación
+    capitulo: 2
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

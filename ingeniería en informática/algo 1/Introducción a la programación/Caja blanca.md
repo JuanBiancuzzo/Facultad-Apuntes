@@ -7,7 +7,10 @@ tags:
 aliases:
   - White box
 vinculoFacultad:
-  - "[[ingeniería en informática/algo 1/Introducción a la programación/Resumen.md]]"
+  - tema: Introducción a la programación
+    capitulo: 1
+    materia: Algoritmos y programación 1
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

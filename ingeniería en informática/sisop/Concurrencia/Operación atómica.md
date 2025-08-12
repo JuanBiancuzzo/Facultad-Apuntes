@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-en-informática/sisop/Concurrencia
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/sisop/Concurrencia/Resumen.md]]"
+  - tema: Concurrencia
+    capitulo: 5
+    materia: Sistemas operativos
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

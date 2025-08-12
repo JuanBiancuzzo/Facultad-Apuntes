@@ -7,7 +7,10 @@ tags:
   - carrera/licenciatura-en-ciencias-matemáticas/algebra-1/Números-naturales-e-Inducción
   - nota/facultad
 vinculoFacultad:
-  - "[[licenciatura en ciencias matemáticas/algebra 1/Números naturales e Inducción/Resumen.md]]"
+  - tema: Números naturales e Inducción
+    capitulo: 2
+    materia: Álgebra 1
+    carrera: Licenciatura en Ciencias Matemáticas
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

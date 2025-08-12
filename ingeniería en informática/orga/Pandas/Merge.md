@@ -12,9 +12,18 @@ tags:
 aliases:
   - Sentencia JOIN
 vinculoFacultad:
-  - "[[ingeniería en informática/bdd/SQL/Resumen.md]]"
-  - "[[ingeniería en informática/orga/Pandas/Resumen.md]]"
-  - "[[ingeniería en informática/orga/Spark/Resumen.md]]"
+  - tema: SQL
+    capitulo: 2
+    materia: Base de datos
+    carrera: Ingeniería en informática
+  - tema: Pandas
+    capitulo: 1
+    materia: Organización de datos
+    carrera: Ingeniería en informática
+  - tema: Spark
+    capitulo: 6
+    materia: Organización de datos
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

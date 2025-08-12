@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Diseño-de-datos
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/aninfo/Diseño de datos/Resumen.md]]"
+  - tema: Diseño de datos
+    capitulo: 10
+    materia: Análisis de la información
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

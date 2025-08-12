@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/estructura/Diseño-combinacional
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/estructura/Diseño combinacional/Resumen.md]]"
+  - tema: Diseño combinacional
+    capitulo: 4
+    materia: Estructura del computador
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

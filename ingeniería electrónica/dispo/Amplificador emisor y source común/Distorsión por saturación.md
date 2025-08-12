@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/dispo/Amplificador-emisor-y-source-común
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/dispo/Amplificador emisor y source común/Resumen.md]]"
+  - tema: Amplificador emisor y source común
+    capitulo: 7
+    materia: Dispositivos semiconductores
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

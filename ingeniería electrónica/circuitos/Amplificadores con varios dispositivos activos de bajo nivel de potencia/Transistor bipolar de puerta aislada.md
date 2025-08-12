@@ -9,9 +9,18 @@ tags:
   - carrera/ingeniería-electrónica/dispo/Transistor-MOSFET
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/circuitos/Amplificadores con varios dispositivos activos de bajo nivel de potencia/Resumen.md]]"
-  - "[[ingeniería electrónica/dispo/Transistor bipolar de juntura/Resumen.md]]"
-  - "[[ingeniería electrónica/dispo/Transistor MOSFET/Resumen.md]]"
+  - tema: Amplificadores con varios dispositivos activos de bajo nivel de potencia
+    capitulo: 4
+    materia: Circuitos microelectrónicos
+    carrera: Ingeniería electrónica
+  - tema: Transistor bipolar de juntura
+    capitulo: 4
+    materia: Dispositivos semiconductores
+    carrera: Ingeniería electrónica
+  - tema: Transistor MOSFET
+    capitulo: 6
+    materia: Dispositivos semiconductores
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

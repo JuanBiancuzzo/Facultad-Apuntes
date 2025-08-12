@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Serie-de-Fourier
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Serie de Fourier/Resumen.md]]"
+  - tema: Serie de Fourier
+    capitulo: 12
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

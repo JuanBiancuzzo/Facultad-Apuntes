@@ -11,7 +11,10 @@ aliases:
   - Impedancia intrínseca del medio#^impedancia-intrinseca-del-medio
   - Velocidad de propagación de las ondas electromagnéticas#^velocidad-fase
 vinculoFacultad:
-  - "[[ingeniería electrónica/electro/Ondas electromagnéticas/Resumen.md]]"
+  - tema: Ondas electromagnéticas
+    capitulo: 3
+    materia: Electromagnetismo aplicado
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

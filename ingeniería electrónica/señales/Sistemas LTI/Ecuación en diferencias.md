@@ -9,7 +9,10 @@ etapa: ampliar
 referencias:
   - "1041"
 vinculoFacultad:
-  - "[[ingeniería electrónica/señales/Sistemas LTI/Resumen.md]]"
+  - tema: Sistemas LTI
+    capitulo: 2
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

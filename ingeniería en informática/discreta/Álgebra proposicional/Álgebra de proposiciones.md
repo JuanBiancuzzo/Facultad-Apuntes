@@ -6,7 +6,10 @@ tags:
 aliases:
   - Lógica proposicional
 vinculoFacultad:
-  - "[[ingeniería en informática/discreta/Álgebra proposicional/Resumen.md]]"
+  - tema: Álgebra proposicional
+    capitulo: 2
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

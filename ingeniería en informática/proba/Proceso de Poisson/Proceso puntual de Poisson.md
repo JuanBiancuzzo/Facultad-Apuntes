@@ -8,8 +8,14 @@ tags:
   - carrera/ingeniería-en-informática/proba/Proceso-de-Poisson
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/estoca/Introducción a procesos aleatorios/Resumen.md]]"
-  - "[[ingeniería en informática/proba/Proceso de Poisson/Resumen.md]]"
+  - tema: Introducción a procesos aleatorios
+    capitulo: 4
+    materia: Procesos estocásticos
+    carrera: Ingeniería electrónica
+  - tema: Proceso de Poisson
+    capitulo: 8
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

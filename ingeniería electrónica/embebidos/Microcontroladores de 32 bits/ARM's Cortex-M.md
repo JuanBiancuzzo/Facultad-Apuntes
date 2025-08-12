@@ -8,7 +8,10 @@ tags:
 aliases:
   - ARM 7
 vinculoFacultad:
-  - "[[ingeniería electrónica/embebidos/Microcontroladores de 32 bits/Resumen.md]]"
+  - tema: Microcontroladores de 32 bits
+    capitulo: 2
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

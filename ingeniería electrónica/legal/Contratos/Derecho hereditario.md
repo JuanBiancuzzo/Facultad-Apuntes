@@ -4,7 +4,10 @@ tags:
   - carrera/ingeniería-electrónica/legal/Contratos
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/legal/Contratos/Resumen.md]]"
+  - tema: Contratos
+    capitulo: 3
+    materia: Legislación y ejercicio profesional
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/analisis-3/Series
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Series/Resumen.md]]"
+  - tema: Series
+    capitulo: 3
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
 ---
 Dados las [[Serie|series]] $\alpha : \mathbb{N} \to \mathbb{R} : \bigg(\sum_{k = 0}^n \alpha_k \bigg)_{n = 1}^\infty$ y la serie $\beta : \mathbb{N} \to \mathbb{R} : \bigg(\sum_{k = 0}^n \beta_k \bigg)_{n = 1}^\infty$
 

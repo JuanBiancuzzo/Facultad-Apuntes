@@ -9,7 +9,10 @@ referencias:
   - "242"
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/intro/Circuitos con resistencias/Resumen.md]]"
+  - tema: Circuitos con resistencias
+    capitulo: 1
+    materia: Introducción a la ingeniería electronica
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

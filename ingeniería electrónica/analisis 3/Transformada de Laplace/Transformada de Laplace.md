@@ -11,8 +11,14 @@ etapa: ampliar
 referencias:
   - "873"
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Transformada de Laplace/Resumen.md]]"
-  - "[[ingeniería electrónica/señales/Transformadas de Laplace y Z/Resumen.md]]"
+  - tema: Transformada de Laplace
+    capitulo: 16
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
+  - tema: Transformadas de Laplace y Z
+    capitulo: 7
+    materia: Señales y sistemas
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

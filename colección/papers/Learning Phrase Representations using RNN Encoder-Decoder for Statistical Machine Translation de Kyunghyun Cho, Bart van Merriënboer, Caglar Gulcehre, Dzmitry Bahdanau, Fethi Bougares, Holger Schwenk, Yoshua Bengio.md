@@ -35,7 +35,10 @@ tags:
   - nota/investigacion
   - referencia/paper
 vinculoFacultad:
-  - "[[ingeniería en informática/algebra 2/Autovalores y autovectores/Resumen.md]]"
+  - tema: Autovalores y autovectores
+    capitulo: 4
+    materia: Álgebra 2 A
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

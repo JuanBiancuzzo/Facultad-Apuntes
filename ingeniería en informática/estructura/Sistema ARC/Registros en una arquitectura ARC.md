@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/estructura/Sistema-ARC
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/estructura/Sistema ARC/Resumen.md]]"
+  - tema: Sistema ARC
+    capitulo: 8
+    materia: Estructura del computador
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -7,9 +7,18 @@ tags:
   - carrera/ingeniería-en-informática/sisop/La-abstracción-de-proceso
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería electrónica/embebidos/Microcontroladores de 32 bits/Resumen.md]]"
-  - "[[ingeniería en informática/estructura/Microarquitectura/Resumen.md]]"
-  - "[[ingeniería en informática/sisop/La abstracción de proceso/Resumen.md]]"
+  - tema: Microcontroladores de 32 bits
+    capitulo: 2
+    materia: Taller de sistemas embebidos
+    carrera: Ingeniería electrónica
+  - tema: Microarquitectura
+    capitulo: 10
+    materia: Estructura del computador
+    carrera: Ingeniería en informática
+  - tema: La abstracción de proceso
+    capitulo: 2
+    materia: Sistemas operativos
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

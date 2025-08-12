@@ -9,8 +9,14 @@ tags:
 aliases:
   - Recinto compacto
 vinculoFacultad:
-  - "[[ingeniería electrónica/analisis 3/Ecuaciones diferenciales/Resumen.md]]"
-  - "[[ingeniería en informática/analisis 2/Topología/Resumen Parte 1.md]]"
+  - tema: Ecuaciones diferenciales
+    capitulo: 11
+    materia: Análisis matemático 3
+    carrera: Ingeniería electrónica
+  - tema: Topología
+    capitulo: 2
+    materia: Análisis matemático 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

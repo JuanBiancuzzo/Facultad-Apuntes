@@ -13,9 +13,18 @@ aliases:
   - Capacitores en serie#En serie
   - Capacitores en paralelo#En paralelo
 vinculoFacultad:
-  - "[[ingeniería electrónica/intro/Circuitos con capacitores/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Circuitos de corrientes no dependientes del tiempo/Resumen.md]]"
-  - "[[ingeniería en informática/fisica 2/Electrostática en conductores y dieléctricos/Resumen.md]]"
+  - tema: Circuitos con capacitores
+    capitulo: 3
+    materia: Introducción a la ingeniería electronica
+    carrera: Ingeniería electrónica
+  - tema: Circuitos de corrientes no dependientes del tiempo
+    capitulo: 4
+    materia: Física 2 A
+    carrera: Ingeniería en informática
+  - tema: Electrostática en conductores y dieléctricos
+    capitulo: 3
+    materia: Física 2 A
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

@@ -11,10 +11,22 @@ tags:
   - nota/facultad
 etapa: ampliar
 vinculoFacultad:
-  - "[[ingeniería electrónica/fisica 3/Átomo de Bohr/Resumen.md]]"
-  - "[[ingeniería en informática/discreta/Álgebra de Boole/Resumen.md]]"
-  - "[[ingeniería en informática/estructura/Álgebra de Boole/Resumen.md]]"
-  - "[[ingeniería en informática/proba/Variables y vectores aleatorios/Resumen.md]]"
+  - tema: Átomo de Bohr
+    capitulo: 5
+    materia: Física 3
+    carrera: Ingeniería electrónica
+  - tema: Álgebra de Boole
+    capitulo: 3
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
+  - tema: Álgebra de Boole
+    capitulo: 3
+    materia: Estructura del computador
+    carrera: Ingeniería en informática
+  - tema: Variables y vectores aleatorios
+    capitulo: 2
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

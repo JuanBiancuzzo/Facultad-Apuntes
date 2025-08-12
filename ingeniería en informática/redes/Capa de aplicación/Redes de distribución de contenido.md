@@ -8,7 +8,10 @@ tags:
   - carrera/ingeniería-en-informática/redes/Capa-de-aplicación
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/redes/Capa de aplicación/Resumen.md]]"
+  - tema: Capa de aplicación
+    capitulo: 2
+    materia: Redes
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

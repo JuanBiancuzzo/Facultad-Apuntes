@@ -6,7 +6,10 @@ tags:
   - carrera/ingeniería-en-informática/aninfo/Desarrollo-de-software-y-modelos-de-proceso
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/aninfo/Desarrollo de software y modelos de proceso/Resumen.md]]"
+  - tema: Desarrollo de software y modelos de proceso
+    capitulo: 11
+    materia: Análisis de la información
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

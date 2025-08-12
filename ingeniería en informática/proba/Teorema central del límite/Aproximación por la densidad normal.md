@@ -5,7 +5,10 @@ tags:
   - carrera/ingeniería-en-informática/proba/Teorema-central-del-límite
   - nota/facultad
 vinculoFacultad:
-  - "[[ingeniería en informática/proba/Teorema central del límite/Resumen.md]]"
+  - tema: Teorema central del límite
+    capitulo: 9
+    materia: Probabilidad y estadística B
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

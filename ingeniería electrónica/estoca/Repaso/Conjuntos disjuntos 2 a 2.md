@@ -9,8 +9,14 @@ tags:
 aliases:
   - Conjuntos mutuamente excluyentes 2 a 2
 vinculoFacultad:
-  - "[[ingeniería electrónica/estoca/Repaso/Resumen.md]]"
-  - "[[ingeniería en informática/discreta/Álgebra de conjuntos/Resumen.md]]"
+  - tema: Repaso
+    capitulo: "1"
+    materia: Procesos estocásticos
+    carrera: Ingeniería electrónica
+  - tema: Álgebra de conjuntos
+    capitulo: 1
+    materia: Matemática discreta
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

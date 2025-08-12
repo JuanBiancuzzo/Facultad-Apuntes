@@ -15,7 +15,10 @@ aliases:
   - Operador de Dirección#^operador-direccion
   - Operador de Indirección#^operador-indireccion
 vinculoFacultad:
-  - "[[ingeniería en informática/algo 1/Punteros/Resumen.md]]"
+  - tema: Punteros
+    capitulo: 3
+    materia: Algoritmos y programación 1
+    carrera: Ingeniería en informática
 vinculoCurso:
   - "[[cursos/introduction to algorithms/Introduction/Resumen.md]]"
 ---
