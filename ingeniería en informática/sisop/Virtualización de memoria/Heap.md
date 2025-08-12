@@ -22,7 +22,11 @@ vinculoFacultad:
     materia: Sistemas operativos
     carrera: Ingeniería en informática
 vinculoCurso:
-  - "[[cursos/introduction to algorithms/Sorting and Trees/Resumen.md]]"
+  - tema: Sorting and Trees
+    capitulo: 2
+    tipo: Online
+    curso: Introduction to Algorithms
+    anio: "2011"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

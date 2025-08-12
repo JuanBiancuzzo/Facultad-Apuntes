@@ -9,7 +9,11 @@ tags:
 aliases:
   - RAM
 vinculoCurso:
-  - "[[cursos/introduction to algorithms/Introduction/Resumen.md]]"
+  - tema: Introduction
+    capitulo: 1
+    tipo: Online
+    curso: Introduction to Algorithms
+    anio: "2011"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

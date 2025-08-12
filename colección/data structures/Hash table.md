@@ -15,9 +15,21 @@ aliases:
   - Diccionario
 nombreEstructura: Hash table
 vinculoCurso:
-  - "[[cursos/introduction to algorithms/Graphs/Resumen.md]]"
-  - "[[cursos/introduction to algorithms/Hashing/Resumen.md]]"
-  - "[[cursos/introduction to algorithms/Numerics/Resumen.md]]"
+  - tema: Graphs
+    capitulo: 5
+    tipo: Online
+    curso: Introduction to Algorithms
+    anio: "2011"
+  - tema: Hashing
+    capitulo: 3
+    tipo: Online
+    curso: Introduction to Algorithms
+    anio: "2011"
+  - tema: Numerics
+    capitulo: 4
+    tipo: Online
+    curso: Introduction to Algorithms
+    anio: "2011"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

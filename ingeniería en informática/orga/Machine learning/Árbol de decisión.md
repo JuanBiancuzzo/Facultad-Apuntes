@@ -15,7 +15,11 @@ vinculoFacultad:
     materia: Organización de datos
     carrera: Ingeniería en informática
 vinculoCurso:
-  - "[[cursos/introduction to algorithms/Sorting and Trees/Resumen.md]]"
+  - tema: Sorting and Trees
+    capitulo: 2
+    tipo: Online
+    curso: Introduction to Algorithms
+    anio: "2011"
 ---
 # Definición
 ---

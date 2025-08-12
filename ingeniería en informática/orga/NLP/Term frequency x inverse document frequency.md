@@ -17,7 +17,11 @@ vinculoFacultad:
     materia: Organización de datos
     carrera: Ingeniería en informática
 vinculoCurso:
-  - "[[cursos/ciencia de datos para salud mental y psicología/Machine learning, deep learning e interpretabilidad algorítmica/Resumen.md]]"
+  - tema: Machine learning, deep learning e interpretabilidad algorítmica
+    capitulo: 2
+    tipo: Presencial
+    curso: Ciencia de datos para salud mental y psicología
+    anio: "2024"
 ---
 # Definición
 ---

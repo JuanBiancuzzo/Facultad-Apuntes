@@ -11,7 +11,11 @@ tags:
   - nota/curso
   - nota/investigacion
 vinculoCurso:
-  - "[[cursos/ciencia de datos para salud mental y psicología/Machine learning, deep learning e interpretabilidad algorítmica/Resumen.md]]"
+  - tema: Machine learning, deep learning e interpretabilidad algorítmica
+    capitulo: 2
+    tipo: Presencial
+    curso: Ciencia de datos para salud mental y psicología
+    anio: "2024"
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
