@@ -4,8 +4,8 @@
   "obsidian-git",
   "obsidian-tikzjax",
   "quickadd",
-  "cmdr",
   "tag-wrangler",
   "callout-manager",
-  "better-export-pdf"
+  "better-export-pdf",
+  "cmdr"
 ]

@@ -320,6 +320,13 @@ async function crearNotaFacultad(tp) {
         texto += dataview.crearSeccion(`await dv.view("${DATAVIEW.self}/${DATAVIEW.referencia.archivo}", { archivo: dv.current() });`);
     }
 
+    console.table({
+        "tema": resumen[DATOS_RESUMEN.nombre],
+        "capitulo": resumen[DATOS_RESUMEN.numero],
+        "materia": resumen["infoTemaMateria"]["materia"],
+        "carrera": resumen["infoTemaMateria"]["carrera"],
+    })
+
     return {
         metadata: {
             [DATOS_ARCHIVO.dia]: tp.file.creation_date(FORMATO_DIA),
@@ -328,6 +335,14 @@ async function crearNotaFacultad(tp) {
                 ...tp.user.obtenerTag(tp, resumen[DATOS_ARCHIVO.tags]),
                 `${TAGS_NOTA.self}/${TAGS_NOTA.carrera}`,
             ],
+            "vinculoFacultad": [
+                {
+                    "tema": resumen[DATOS_RESUMEN.nombre],
+                    "capitulo": resumen[DATOS_RESUMEN.numero],
+                    "materia": resumen["infoTemaMateria"]["materia"],
+                    "carrera": resumen["infoTemaMateria"]["carrera"],
+                }
+            ]
         },
         carpeta: resumen.file.folder,
         titulo: titulo,

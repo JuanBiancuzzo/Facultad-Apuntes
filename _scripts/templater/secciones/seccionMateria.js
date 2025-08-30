@@ -234,7 +234,7 @@ function representacionCuatri(cuatri) {
 async function crearMateria(tp, carrera) {
     const { 
         SECCIONES, ETAPAS, DATAVIEW: { referencia: DV_REF, carrera: DV_CARRERA, ...DATAVIEW },
-		DATOS: { ARCHIVO: DATOS_ARCHIVO, MATERIA: DATOS_MATERIA }, 
+		DATOS: { ARCHIVO: DATOS_ARCHIVO, MATERIA: DATOS_MATERIA, CARRERA: DATOS_CARRERA }, 
 		TAGS: { facultad: TAGS_FACULTAD }, 
     } = tp.user.constantes();
     const preguntar = tp.user.preguntar();
@@ -262,6 +262,7 @@ async function crearMateria(tp, carrera) {
 				...obtenerTag(tp, carrera[DATOS_ARCHIVO.tags])
 					.map(tag => `${tag}/${tagPorNombre(materia.reducido)}`),
             ],
+			"nombreCarrera": carrera[DATOS_CARRERA.nombre],
             ...materia.generarRepresentacion(),
         },
         carpeta: `${carrera.file.folder}/${materia.reducido}`,

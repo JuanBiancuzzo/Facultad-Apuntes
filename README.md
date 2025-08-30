@@ -31,7 +31,9 @@ Un listado de materias, sus códigos y su estado actual
 | [Procesos estocásticos](ingeniería%20electrónica/estoca/Procesos%20estocásticos%20(TA132).md)                                                          | TA132  | Voy a cursarla este cuatri                     |
 | [Seguridad ambiental y del trabajo](ingeniería%20electrónica/seguridad/Seguridad%20ambiental%20y%20del%20trabajo%20(9704).md)                          | 9704   | Terminado                                      |
 | [Señales y sistemas](ingeniería%20electrónica/señales/Señales%20y%20sistemas%20(TB065).md)                                                             | TB065  | Falta pasar las presentaciones del último tema |
+| [Taller de Comunicaciones Digitales](ingeniería%20electrónica/taller%20de%20comunicaciones/Taller%20de%20Comunicaciones%20Digitales%20(TA137).md)      | TA137  | Sin empezar                                    |
 | [Taller de diseño de circuitos electrónicos](ingeniería%20electrónica/circuitos%202/Taller%20de%20diseño%20de%20circuitos%20electrónicos%20(TA138).md) | TA138  | Voy a cursarla este cuatri                     |
+| [Taller de Procesamiento de Señales](ingeniería%20electrónica/taller%20de%20señales/Taller%20de%20Procesamiento%20de%20Señales%20(TA136).md)           | TA136  | Sin empezar                                    |
 | [Taller de sistemas embebidos](ingeniería%20electrónica/embebidos/Taller%20de%20sistemas%20embebidos%20(TA134).md)                                     | TA134  | Voy a cursarla este cuatri                     |
 
 ### Ingeniería en informática
@@ -78,12 +80,12 @@ Un listado de materias y su estado actual
 
 ### Licenciatura en Ciencias Matemáticas
 ---
-Un listado de materias y su estado actual
+Un listado de materias, sus códigos y su estado actual
 
-| Materia                                                                               | Estado                                                    |
-| ------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| [Álgebra 1](licenciatura%20en%20ciencias%20matemáticas/algebra%201/Álgebra%201.md)    | Me falta los capítulos de enteros, complejos y polinomios |
-| [Análisis 1](licenciatura%20en%20ciencias%20matemáticas/analisis%201/Análisis%201.md) | Empezando con vectores y geometría del espacio            |
+| Materia                                                                               | Código | Estado                                                    |
+| ------------------------------------------------------------------------------------- | ------ | --------------------------------------------------------- |
+| [Álgebra 1](licenciatura%20en%20ciencias%20matemáticas/algebra%201/Álgebra%201.md)    | 1003   | Me falta los capítulos de enteros, complejos y polinomios |
+| [Análisis 1](licenciatura%20en%20ciencias%20matemáticas/analisis%201/Análisis%201.md) | 1000   | Empezando con vectores y geometría del espacio            |
 ## Investigación
 ---
 La intención en este repositorio es tener un lugar donde poder investigar sobre temas, vinculándolo con otros, y viendo que relaciones aparecen.
@@ -171,12 +173,12 @@ Estos proyectos se basan en recolectar información distinto de un tema de inves
 | Colección                                                                                                                                         | Estado                                                                                                                                                                                           |
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [Artículos](colección/documentos/Artículos.md)                                                                                                    | Vamos a enunciar todos los documentos legales                                                                                                                                                    |
+| [Biblioteca](colección/libros/Biblioteca.md)                                                                                                      | Vamos a colectar libros que me interese analizar para poder aprender y referenciarlos                                                                                                            |
 | [Componentes](colección/componentes/Componentes.md)                                                                                               | Vamos a caracterizar los componentes que vaya usando para poder así tener una lista de los componentes que suelo usar y por lo tanto tener un lugar en donde encontrar el como se tiene que usar |
 | [Distribuciones](colección/distribuciones/Distribuciones.md)                                                                                      | Vamos a ver las distribuciones probabilísticas discretas, continuas y multivariadas                                                                                                              |
 | [Estructura de datos](colección/data%20structures/Estructura%20de%20datos.md)                                                                     | Vamos a describir y representar las estructuras de datos                                                                                                                                         |
 | [Filamentos](colección/impresion%203d/Filamentos.md)                                                                                              | Vamos a recolectar los posibles filamentos que se podrían usar para imprimir, con sus propiedades y con sus características para poder comprobar que filamento es el mejor para cada situación   |
 | [Librerias](colección/librerias/Librerias.md)                                                                                                     | Vamos a ver las librerías de diferentes lenguajes                                                                                                                                                |
-| [Biblioteca](colección/libros/Biblioteca.md)                                                                                                              | Vamos a colectar libros que me interese analizar para poder aprender y referenciarlos                                                                                                            |
 | [Papers](colección/papers/Papers.md)                                                                                                              | Vamos a colectar papers, RFC y documentos del estilo que me interese analizar relacionado a todo el contexto de esta página y poder referenciarla                                                |
 | [Programas](colección/programas/Programas.md)                                                                                                     | Vamos a ver como usar los siguientes programas, ya sean con GUI o por linea de comandos                                                                                                          |
 | [Recetas](colección/recetas/Recetas.md)                                                                                                           | Todavía no tiene nada pero la idea es agregar recetas y explorar los aspectos de nutrición que pueden aparecer                                                                                   |
