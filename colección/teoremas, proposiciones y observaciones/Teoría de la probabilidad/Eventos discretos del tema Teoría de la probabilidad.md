@@ -6,13 +6,17 @@ tags:
 nombreSubtema: Eventos discretos
 nota:
   - numero: 1
-    nombre: 
+    nombre:
     path: investigación/matemática/Probabilidad/Probabilidad#^teo-5-1-1
-    pathRelacionado: 
+    pathRelacionado:
   - numero: 2
-    nombre: 
+    nombre:
     path: investigación/matemática/Probabilidad/Probabilidad#^teo-5-1-2
-    pathRelacionado: 
+    pathRelacionado:
+  - numero: 3
+    nombre: Eventos independientes
+    path: ingeniería en informática/proba/Teoría de probabilidades/Eventos independientes#^def-5-1-3
+    pathRelacionado:
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/bloqueMatematica/subtema", { subtema: dv.current() });

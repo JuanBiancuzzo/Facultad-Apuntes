@@ -20,6 +20,10 @@ vinculoFacultad:
     capitulo: 10
     materia: Probabilidad y estadística B
     carrera: Ingeniería en informática
+  - tema: Repaso de probabilidad y estadística
+    capitulo: 1
+    materia: Taller de Procesamiento de Señales
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
@@ -30,6 +34,8 @@ Dadas dos [[Variable aleatoria|variables aleatorias]] $X$ e $Y$ en [[Espacio de 
 donde se puede decir que es la [[Esperanza#^def-5-2-8|energía]] de la diferencia entre $X$ e $Y$
 
 Para el caso de que una de las dos variables sea una [[Varianza##^variable-degenerada|variable degenerada]] a una constante $c$, donde podemos decir que $$ \text{ECM}(X,~ c) = \sigma_X^2 + |E[X] - c|^2 $$ donde $\sigma_X^2$ es la [[Varianza|varianza]] de $X$ y $E[X] - c$ es el [[Sesgo|sesgo]] de $X$, donde lo podemos interpretar como $X$ un [[Estimador|estimador]] de $c$
+
+De esta última se puede extraer la relación, se puede tener la [[Inecuación|inecuación]] siguiente $$ ECM(X,~ c) \ge \sigma^2_X $$ con igualdad sii $c = E[X]$
 
 ## Convergencia
 ---

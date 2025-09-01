@@ -15,13 +15,19 @@ vinculoFacultad:
     capitulo: 1
     materia: Probabilidad y estadística B
     carrera: Ingeniería en informática
+  - tema: Repaso de probabilidad y estadística
+    capitulo: 1
+    materia: Taller de Procesamiento de Señales
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
-Sea $(\Omega, \mathscr{A}, \mathbb{P})$ un [[Espacio de probabilidad|e.p.]], $A$ y $B \in \mathscr{A}$, $A$ y $B$ serán dos [[Evento|eventos]] independientes sii $$ \mathbb{P}(A \cap B) = \mathbb{P}(A) ~ \mathbb{P}(B) $$
+> [!definicion]+ Definición 5.1.3 (Eventos independientes) 
+> Sea $(\Omega, \mathscr{A}, \mathbb{P})$ un [[Espacio de probabilidad|e.p.]], $A$ y $B \in \mathscr{A}$, $A$ y $B$ serán dos [[Evento|eventos]] independientes sii $$ \mathbb{P}(A \cap B) = \mathbb{P}(A) ~ \mathbb{P}(B) $$
+^def-5-1-3
 
 ## Propiedades
 ---

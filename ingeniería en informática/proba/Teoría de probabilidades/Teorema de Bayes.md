@@ -4,11 +4,21 @@ tags:
   - carrera/ingeniería-electrónica/proba/Teoría-de-probabilidades
   - carrera/ingeniería-en-informática/proba/Teoría-de-probabilidades
   - nota/facultad
+aliases: 
+  - Regla de bayes
 vinculoFacultad:
   - tema: Teoría de probabilidades
     capitulo: 1
     materia: Probabilidad y estadística B
     carrera: Ingeniería en informática
+  - tema: Repaso de probabilidad y estadística
+    capitulo: 1
+    materia: Taller de Procesamiento de Señales
+    carrera: Ingeniería electrónica
+  - tema: Repaso de probabilidad y estadística
+    capitulo: 1
+    materia: Taller de Procesamiento de Señales
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

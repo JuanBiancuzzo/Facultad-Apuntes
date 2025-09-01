@@ -10,7 +10,7 @@
   "autoPairMarkdown": false,
   "showLineNumber": false,
   "strictLineBreaks": false,
-  "propertiesInDocument": "visible",
+  "propertiesInDocument": "source",
   "readableLineLength": true,
   "attachmentFolderPath": "./img",
   "showIndentGuide": false,

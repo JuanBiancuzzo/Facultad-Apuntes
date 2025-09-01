@@ -6,11 +6,16 @@ tags:
   - nota/facultad
 aliases:
   - EMV
+  - Estimador de máxima verosimilitud
 vinculoFacultad:
   - tema: Inferencia estadística
     capitulo: 10
     materia: Probabilidad y estadística B
     carrera: Ingeniería en informática
+  - tema: Repaso de probabilidad y estadística
+    capitulo: 1
+    materia: Taller de Procesamiento de Señales
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

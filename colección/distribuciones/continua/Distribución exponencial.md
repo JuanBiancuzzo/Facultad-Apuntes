@@ -6,6 +6,11 @@ tags:
   - nota/colección
 nombreDistribucion: Exponencial
 tipoDistribucion: continua
+vinculoFacultad:
+  - tema: Repaso de probabilidad y estadística
+    capitulo: 1
+    materia: Taller de Procesamiento de Señales
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

@@ -5,6 +5,11 @@ tags:
   - investigación/índice
   - investigación/matemática/Estadística
   - nota/investigacion
+vinculoFacultad:
+  - tema: Repaso de probabilidad y estadística
+    capitulo: 1
+    materia: Taller de Procesamiento de Señales
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

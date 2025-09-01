@@ -14,6 +14,10 @@ vinculoFacultad:
     capitulo: 2
     materia: Organización de datos
     carrera: Ingeniería en informática
+  - tema: Repaso de probabilidad y estadística
+    capitulo: 1
+    materia: Taller de Procesamiento de Señales
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
