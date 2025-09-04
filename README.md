@@ -146,6 +146,7 @@ Estos proyectos tienen como objetivo investigar y crear pruebas para llegar a un
 | Proyecto                                                                                                                                                                       | Estado                                     |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------ |
 | [Ray Marching con a diagramas de Voronói](proyecto%20investigación/ray%20marching%20con%20a%20diagramas%20de%20voronói/Ray%20Marching%20con%20a%20diagramas%20de%20Voronói.md) | Sin empezar                                |
+| [Ray Marching con A estrella](proyecto%20investigación/ray%20marching%20con%20a-estrella/Ray%20Marching%20con%20A%20estrella.md)                                               | Sin empezar                                |
 | [Lagrangian Physics Engine](proyecto%20investigación/lagrangian%20physics%20engine/Lagrangian%20Physics%20Engine.md)                                                           | Sin empezar                                |
 | [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)                                    | Estamos buscando información sobre el tema |
 
