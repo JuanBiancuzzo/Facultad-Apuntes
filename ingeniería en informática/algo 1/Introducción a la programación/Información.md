@@ -20,16 +20,29 @@ vinculoFacultad:
     capitulo: 4
     materia: Organización de datos
     carrera: Ingeniería en informática
+  - tema: Elementos de Teoría de Información
+    capitulo: 1
+    materia: Taller de Comunicaciones Digitales
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---
 Dado un [[Paquete|mensaje]], cuanta información útil estoy dando. La cantidad de bit's necesarios para ser eficiente, cumple esta formula
-$$ bits = - \log_2(P) $$
-Donde $P$ es la [[Probabilidad|probabilidad]] de que ocurra lo que estamos mandando.
+$$ I(x) = - \log_2(\mathbb{P}(x)) ~~~~ [I(x)] = \text{bits} $$
+Donde $\mathbb{P}(x)$ es la [[Probabilidad|probabilidad]] de que ocurra el [[ingeniería en informática/proba/Teoría de probabilidades/Evento|evento]] $x$
 
-La lógica es que cuando un [[Evento|evento]] es muy probable que ocurra, queremos optimizar la cantidad de bits que mandemos, mientras que para los eventos muy improbables mandaremos más bits ya que estamos mandando más información
+La lógica es que cuando un evento es muy probable que ocurra, queremos optimizar la cantidad de bits que mandemos, mientras que para los eventos muy improbables mandaremos más bits ya que estamos mandando más información
 
 Por ejemplo, digamos que tenemos una moneda cargada, dando una probabilidad de $0.75$ de caer en cara. Por lo tanto como es más común no nos conviene mandar muchos bits, por eso $-log_2(0.75) = 0.415037~bits$, mientras que para ceca como tiene $0.25$ de probabilidad se tiene que enviar con mayor información $-log_2(0.25)=2~bits$
+
+### Propiedades
+---
+* La información $I(x)$ y la [[Probabilidad|probabilidad]] $\mathbb{P}(x)$ son inversamente relacionadas
+* $I(x) \ge 0$, observando el [[Evento|evento]] $x$ no hace que se pierda información
+* $\mathbb{P}(x) = 1 \implies I(x) = 0$
+* Si $\mathbb{P}(x \cap y) = \mathbb{P}(x) ~ \mathbb{P}(y)$, es decir que son [[Eventos independientes|eventos independientes]], entonces $I(x \cap y) = I(x) + I(y)$
+
+La única [[Función|función]] que logra cumplir estas propiedades es $$ I(x) = -log_b( \mathbb{P}(x) ) $$ donde $b$ representa la base en la que se guardaría esa información, en general se usa $b = 2$ para guardarlo en bits
 
 ## Cuantificación
 ---

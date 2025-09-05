@@ -8,6 +8,10 @@ vinculoFacultad:
     capitulo: 5
     materia: Matemática discreta
     carrera: Ingeniería en informática
+  - tema: Elementos de Teoría de Información
+    capitulo: 1
+    materia: Taller de Comunicaciones Digitales
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

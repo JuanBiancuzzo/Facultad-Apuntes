@@ -13,7 +13,7 @@ infoTemaMateria:
   materia: Control automático
   carrera: Ingeniería electrónica
 ---
-¿# Índice
+# Índice
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });

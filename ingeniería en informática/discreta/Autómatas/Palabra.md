@@ -9,6 +9,7 @@ tags:
   - nota/facultad
 aliases:
   - Palabra nula#Palabra nula
+  - Longitud de una palabra#^longitud
 referencias:
   - "700"
 etapa: ampliar
@@ -27,6 +28,10 @@ vinculoCurso:
     tipo: Online
     curso: Introduction to Algorithms
     anio: "2011"
+  - tema: Elementos de Teoría de Información
+    capitulo: 1
+    materia: Taller de Comunicaciones Digitales
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
@@ -35,7 +40,7 @@ vinculoCurso:
 ---
 Una [[Sucesión|sucesión]] de [[Letra|letras]] es una palabra. Por ejemplo, $x = abaac$, donde $\Sigma = \Set{a,~b,~c}$, siendo este el [[Alfabeto|alfabeto]]
 
-Llamaremos longitud a la cantidad de letras de un palabra. Siguiendo el ejemplo $|x| = 5$
+Llamaremos longitud a la cantidad de letras de un palabra. Siguiendo el ejemplo $|x| = 5$ ^longitud
 
 ## Palabra nula
 ---
