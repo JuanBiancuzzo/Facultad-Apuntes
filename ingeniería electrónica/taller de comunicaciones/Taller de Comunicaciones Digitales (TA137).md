@@ -9,6 +9,11 @@ nombreReducido: taller de comunicaciones
 cuatri: 25C2
 plan: "2023"
 codigo: TA137
+referencias:
+  - 1082
+  - 1083
+  - 1084
+  - 1085
 correlativas:
   - tipo: Equivalente
     materia: Redes

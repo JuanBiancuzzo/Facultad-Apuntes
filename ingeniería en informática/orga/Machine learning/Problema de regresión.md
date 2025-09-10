@@ -18,3 +18,5 @@ vinculoFacultad:
 Se puede entender el problema de la regresión como estimar $Y = \varphi(X)$ utilizando el [[ingeniería en informática/proba/Inferencia estadística/Consistencia en media cuadrática|error cuadrático medio]] como [[ingeniería electrónica/taller de señales/Regresión en Inteligencia Artificial/Función de costo|función de costo]]
 
 Son aquellos problemas que se logran resolver estableciendo una relación entre valores dados para llegar a un valor numérico
+
+Su solución esta dada 

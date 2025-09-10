@@ -4,7 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/taller-de-comunicaciones/Modulación-digital
 nombreResumen: Modulación digital
 capitulo: 3
-referencias: []
+referencias: 
+ - 1086
 infoTemaMateria:
   materia: Taller de Comunicaciones Digitales
   carrera: Ingeniería electrónica

@@ -11,6 +11,7 @@ aliases:
   - Estimador insesgado#^estimador-insesgado
   - Estimador asintóticamente insesgado#^estimador-asintoticamente-insesgado
   - Sesgo de un estimador
+  - Bias
 vinculoFacultad:
   - tema: Análisis de datos
     capitulo: 3
@@ -22,6 +23,10 @@ vinculoFacultad:
     carrera: Ingeniería en informática
   - tema: Repaso de probabilidad y estadística
     capitulo: 1
+    materia: Taller de Procesamiento de Señales
+    carrera: Ingeniería electrónica
+  - tema: Regresión en Inteligencia Artificial
+    capitulo: 2
     materia: Taller de Procesamiento de Señales
     carrera: Ingeniería electrónica
 ---

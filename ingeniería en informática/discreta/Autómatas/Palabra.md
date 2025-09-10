@@ -22,16 +22,16 @@ vinculoFacultad:
     capitulo: 8
     materia: Estructura del computador
     carrera: Ingeniería en informática
+  - tema: Elementos de Teoría de Información
+    capitulo: 1
+    materia: Taller de Comunicaciones Digitales
+    carrera: Ingeniería electrónica
 vinculoCurso:
   - tema: Introduction
     capitulo: 1
     tipo: Online
     curso: Introduction to Algorithms
     anio: "2011"
-  - tema: Elementos de Teoría de Información
-    capitulo: 1
-    materia: Taller de Comunicaciones Digitales
-    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

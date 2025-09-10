@@ -28,6 +28,10 @@ vinculoFacultad:
     capitulo: 1
     materia: Taller de Procesamiento de Señales
     carrera: Ingeniería electrónica
+  - tema: Regresión en Inteligencia Artificial
+    capitulo: 2
+    materia: Taller de Procesamiento de Señales
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

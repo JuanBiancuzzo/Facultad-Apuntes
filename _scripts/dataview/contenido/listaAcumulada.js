@@ -1,12 +1,52 @@
 let { archivo } = input;
 
-let tagsMateria = archivo.tags.filter(tag => !tag.startsWith("facultad"));
-let resumenes = dv.pages(`#facultad/resumen and (${tagsMateria.map(tag => `#${tag}`).join(" or ")})`)
-    .distinct(resumen => resumen.nombreResumen)
-    .sort(resumen => parseInt(resumen.capitulo, 10))
-    .map(resumen => resumen.nombreResumen);
+if (archivo.tags.contains("facultad/materia")) {
+    let tagsMateria = archivo.tags.filter(tag => !tag.startsWith("facultad"));
+    let resumenes = dv.pages(`#facultad/resumen and (${tagsMateria.map(tag => `#${tag}`).join(" or ")})`)
+        .distinct(resumen => resumen.nombreResumen)
+        .sort(resumen => parseInt(resumen.capitulo, 10))
+        .map(resumen => crearReferencia(resumen.file.path, resumen.nombreResumen));
 
-dv.list(resumenes);
+    dv.list(resumenes);
+
+} else if (archivo.tags.contains("facultad/resumen")) {
+    let notas = dv.pages()
+        .filter(nota => nota.vinculoFacultad != undefined)
+        .filter(nota => nota.vinculoFacultad.findIndex(({ tema, capitulo, materia, carrera }) => {
+            return tema == archivo.nombreResumen
+                && capitulo == archivo.capitulo
+                && materia == archivo.infoTemaMateria.materia
+                && carrera == archivo.infoTemaMateria.carrera
+        }) >= 0)
+        .distinct(nota => nota.file.name)
+        .sort(nota => nota.file.name)
+        .flatMap(nota => {
+            let solucion = [  ];
+            let path = nota.file.path;
+            solucion.push(crearReferencia(path, nota.file.name));
+
+            if (nota.aliases == undefined) 
+                return solucion
+
+            for (let alias of nota.aliases) {
+                if (!alias.contains("#")) {
+                    solucion.push(crearReferencia(path, alias));
+                    continue
+                }
+
+                let conjunto = alias.split("#");
+
+                solucion.push(crearReferencia(`${path}#${conjunto[1]}`, conjunto[0]));
+            }
+            return solucion;
+        })
+    dv.list(notas);
+}
+
+function crearReferencia(path, texto) {
+    return `<a data-tooltip-position="top" aria-label="${path}" data-href="${path}" \
+        class="internal-link hide" target="_blank" rel="noopener"> ${texto} </a>`;
+}
 
 /** mostrarContenido => para materias y cursos, let { materia } = input;
 
@@ -108,10 +148,6 @@ let datos = dv.pages(`#${tagRepresentante} and #resumen`)
 
 await dv.view("_scripts/dataview/mostrarElementos", { lista: datos, defaultVacio: "Todavía no hay archivos" });
 
-function crearReferencia(path, texto) {
-    return `<a data-tooltip-position="top" aria-label="${path}" data-href="${path}" \
-        class="internal-link hide" target="_blank" rel="noopener"> ${texto} </a>`;
-}
  */
 
 /** mostrarResumen => para resumenes, let { resumen } = input;

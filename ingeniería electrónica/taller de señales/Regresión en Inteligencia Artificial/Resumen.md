@@ -4,7 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/taller-de-señales/Regresión-en-Inteligencia-Artificial
 nombreResumen: Regresión en Inteligencia Artificial
 capitulo: 2
-referencias: []
+referencias: 
+  - 1066
 infoTemaMateria:
   materia: Taller de Procesamiento de Señales
   carrera: Ingeniería electrónica

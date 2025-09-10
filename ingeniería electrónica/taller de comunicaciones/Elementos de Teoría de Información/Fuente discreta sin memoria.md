@@ -21,3 +21,10 @@ Una fuente discreta sin memoria se la conoce de esa forma ya que genera [[ingeni
 
 
 
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```
