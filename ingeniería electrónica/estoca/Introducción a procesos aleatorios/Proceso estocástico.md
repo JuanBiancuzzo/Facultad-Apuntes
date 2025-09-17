@@ -81,7 +81,6 @@ Sea $(\varXi,~ \mathcal{A},~ \mathbb{P})$  un [[Espacio de probabilidad|espacio 
         \end{scope}
     }
     
-    
 \end{tikzpicture}
 \end{document}
 ```

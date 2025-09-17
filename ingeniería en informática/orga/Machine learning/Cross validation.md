@@ -11,6 +11,14 @@ vinculoFacultad:
     capitulo: 9
     materia: Organización de datos
     carrera: Ingeniería en informática
+  - tema: Regresión en Inteligencia Artificial
+    capitulo: 2
+    materia: Taller de Procesamiento de Señales
+    carrera: Ingeniería electrónica
+  - tema: Regresión en Inteligencia Artificial
+    capitulo: 2
+    materia: Taller de Procesamiento de Señales
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

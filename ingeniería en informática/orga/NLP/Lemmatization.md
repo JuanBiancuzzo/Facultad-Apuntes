@@ -15,4 +15,4 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Es un tipo de [[Normalización]] donde se devuelve la base de la palabra (lemma), muchas veces por medio de un diccionario de lemmas para cada palabra.
+Es un tipo de [[Normalización|normalización]] donde se devuelve la base de la palabra (lemma), muchas veces por medio de un diccionario de lemmas para cada palabra.

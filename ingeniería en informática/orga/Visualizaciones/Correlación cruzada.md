@@ -78,7 +78,7 @@ Si $X$ e $Y$ son [[Variables aleatorias independientes|variables independientes]
 ### Propiedades
 ---
 Tiene la relación con [[Covarianza cruzada#^def-5-3-2|covarianza cruzada]] $$ R(X,~ Y) = Cov(X,~ Y) + E[X] ~ E[Y]^T $$
-La autocorrelación es una [[Matriz semidefinida positiva|matriz semidefinida positiva]] y [[Matriz simétrica|simétrica]] 
+La autocorrelación es una [[ingeniería en informática/algebra 2/Matrices unitarias y ortogonales/Matriz definida positiva|matriz semidefinida positiva]] y [[Matriz simétrica|simétrica]] 
     * Al ser simétrica, es [[Diagonalización de una matriz|diagonalizable]], y en este caso diagonalizable ortogonalmente es decir que lo vamos a poder descomponer de la siguiente forma $$ R(X) = QD_2Q^T $$
 
 ## Para un proceso estocástico

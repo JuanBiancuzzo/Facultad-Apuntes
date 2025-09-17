@@ -12,11 +12,17 @@ tags:
   - nota/investigacion
 aliases:
   - Penalización Ridge
+  - Weigth decay
+  - Regularización de Tikhonov
 vinculoFacultad:
   - tema: Machine learning
     capitulo: 9
     materia: Organización de datos
     carrera: Ingeniería en informática
+  - tema: Regresión en Inteligencia Artificial
+    capitulo: 2
+    materia: Taller de Procesamiento de Señales
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

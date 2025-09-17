@@ -1,5 +1,5 @@
 ---
-dia: 2025-09-01
+dia: 2025-09-10
 etapa: empezado
 referencias: []
 aliases: []
@@ -7,6 +7,10 @@ tags:
   - nota/facultad
   - carrera/ingeniería-electrónica/taller-de-señales/Regresión-en-Inteligencia-Artificial
 vinculoFacultad:
+  - tema: Machine learning
+    capitulo: 9
+    materia: Organización de datos
+    carrera: Ingeniería en informática
   - tema: Regresión en Inteligencia Artificial
     capitulo: 2
     materia: Taller de Procesamiento de Señales
@@ -17,5 +21,4 @@ vinculoFacultad:
 ```
 # Definición
 ---
-
-
+El recall es una [[ingeniería en informática/orga/Machine learning/Métrica de un modelo|métrica]] intenta ... donde se define como $$ \text{Recall} = \frac{\#\text{recuperados}}{\#\text{totales}} $$ donde tiene un [[Hiper-parámetros de un modelo|hiper-parámetro]] de como determinar que es un valor correcto

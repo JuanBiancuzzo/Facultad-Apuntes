@@ -9,6 +9,11 @@ tags:
   - nota/investigacion
 aliases:
   - Regularización
+vinculoFacultad:
+  - tema: Regresión en Inteligencia Artificial
+    capitulo: 2
+    materia: Taller de Procesamiento de Señales
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

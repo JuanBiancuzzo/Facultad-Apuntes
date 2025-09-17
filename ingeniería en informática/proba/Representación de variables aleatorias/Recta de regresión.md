@@ -14,7 +14,7 @@ aliases:
   - Ajuste lineal
 referencias:
   - "308"
-etapa: empezado
+etapa: ampliar
 vinculoFacultad:
   - tema: Machine learning
     capitulo: 9
@@ -38,9 +38,19 @@ vinculoFacultad:
 ```
 # Definición
 ---
-En [[Estadística|estadística]], la regresión lineal o ajuste lineal es un modelo matemático usado para aproximar la relación de dependencia entre una variable $y$, $m$ variables independientes $x_i$ con $m \in \mathbb{Z}^+$ u un término independientes $\epsilon$. Intenta resolver un [[Problema de regresión|problema de regresión]], dado $$ y = \beta_0 + \beta_1 x_1 + \cdots + \beta_m x_m + \epsilon $$ donde $\beta_i$ con $i \in [0, ~\cdots,~m]$, son parámetros del modelo
+En [[Estadística|estadística]], la regresión lineal o ajuste lineal es un modelo matemático usado para aproximar la relación de dependencia entre una variable $y$, $m$ variables independientes $x_i$ con $m \in \mathbb{Z}^+$ u un término independientes $\epsilon$. Intenta resolver un [[Problema de regresión|problema de regresión]], dado $$ y = \beta_1 x_1 + \cdots + \beta_m x_m + \epsilon $$ donde $\beta_i$ con $i \in [1, ~\cdots,~m]$, son parámetros del modelo
 
-Esto se puede expresar usando un [[ingeniería en informática/proba/Variables y vectores aleatorios/Vector aleatorio|vector aleatorio]] de la siguiente forma $$ Y = \beta X + \epsilon $$
+Esto se puede expresar usando un [[ingeniería en informática/proba/Variables y vectores aleatorios/Vector aleatorio|vector aleatorio]] de la siguiente forma $$ Y = \beta^T X + \epsilon $$
+Se busca encontrar $\beta$ y $\epsilon$ tal que $$ (\beta,~ \epsilon) = \underset{\beta \in \mathbb{R}^{m},~ \epsilon \in \mathbb{R}}{\arg\min} \frac{1}{n} \sum_{i = 1}^{n} l(X_i,~ Y_i) $$ donde $l(x,~ y)$ es la [[ingeniería electrónica/taller de señales/Regresión en Inteligencia Artificial/Función de costo|función de costo]]
+
+Utilizando como función de costo al [[ingeniería en informática/proba/Inferencia estadística/Consistencia en media cuadrática|error cuadrático medio]], se puede definir esta ecuación como un problema de [[ingeniería en informática/algebra 2/Espacios euclídeos/Proyección ortogonal|proyección ortogonal]], planteando de forma vectorial, definiendo $X \in \mathbb{R}^{n + 1}$ e $y \in \mathbb{R}^n$ y $w \in \mathbb{R}^{m + 1}$ de la siguiente forma $$ X = \begin{bmatrix} 1 & x_1^T \\ 1 & x_2^T \\ \vdots & \vdots \\ 1 & x_n^T \end{bmatrix}, ~~~  y =\begin{bmatrix} y_1 \\ y_2 \\ \vdots \\ y_n \end{bmatrix}, ~~~  w =\begin{bmatrix} \epsilon \\ \beta_1 \\ \vdots \\ \beta_m \end{bmatrix} $$por lo tanto el problema de minimización se reduce a minimizar $$ J(w) = \frac{1}{n} \lVert Xw - y \rVert^2 $$ donde asumimos que $n \gg m$, esto es una suposición entendible ya que recordemos que $n$ son la cantidad de datos y $m$ la cantidad de parámetros que se necesite
+
+Cuyo [[ingeniería en informática/analisis 2/Funciones de varias variables/Gradiente|gradiente]] y [[ingeniería en informática/analisis 2/Funciones de varias variables/Matriz Hessiana|matriz Hessiana]] respecto a $w$ son $$ \nabla J(w) = \frac{2}{n} X^T (Xw - y),~~~~ \mathcal{H}_J(w) = \frac{2}{n} X^T X $$ donde por la suposición la matriz Hessiana es inversible
+
+> [!demostracion]- Demostración
+> Pendiente...
+
+En este caso como la matriz Hessiana al ser una [[ingeniería en informática/algebra 2/Matrices unitarias y ortogonales/Matriz definida positiva|matriz definida positiva]], y por lo tanto el problema será [[ingeniería en informática/analisis 2/Topología/Conjunto convexo|convexo]] por lo tanto al igualar el gradiente siendo $0$ será efectivamente un mínimo. Despejando $w$ del gradiente igualado a $0$ se obtiene $$ w = \left( X^T X \right)^{-1} ~ X^T y $$ la solución es la [[Matriz psudoinversa|matriz psudoinversa]] de la matriz $X$ multiplicada por $y$
 ## Punto de vista de la probabilidad
 ---
 > [!teorema]+ Teorema 7.1.1 (Recta de regresión) 
@@ -58,10 +68,11 @@ Por lo tanto, la recta de regresión es la [[Función de variable aleatoria#Para
 
 ## Punto de vista de la computación
 ---
-Planteamos la hipótesis de este modelo, que establece $$ h_\theta \left( \overline{x} \right) = \theta^t \cdot \overline{x} $$
-donde $\overline{x}$ es una muestra y $\theta$ es el parámetro que queremos aprender
+Esta representación simple permite limitar al máximo la complejidad del modelo, relacionado al [[ingeniería en informática/orga/Machine learning/Aprendizaje supervisado#^gap-generalizacion|gap de generalización]], y si ajustamos a unos datos, podemos minimizar el [[ingeniería en informática/orga/Machine learning/Aprendizaje supervisado#^riesgo-empirico|riesgo empírico]]
 
-Podemos encontrarlo de forma numérica con el [[Descenso de gradiente|descenso de gradiente]] 
+Sea $\Set{(x_i,~ y_i)}_{i = 1}^{n}$ un [[ingeniería en informática/algebra 2/Espacios Vectoriales/Conjunto|conjunto]] de datos con $x_i \in \mathbb{R}^d$ e $y_i \in \mathbb{R}$. Planteamos la hipótesis de este modelo, que establece $$ h_\theta \left( \overline{x} \right) = \theta^t \cdot \overline{x} $$ donde $\overline{x}$ es una muestra y $\theta$ es el parámetro que queremos aprender
+
+En este caso se puede resolver de forma directa usando el resultado analítico obtenido anteriormente, o se puede encontrar de forma numérica con el [[Descenso de gradiente|descenso de gradiente]] 
 
 
 # Referencias
