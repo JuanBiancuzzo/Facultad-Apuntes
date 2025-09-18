@@ -26,7 +26,7 @@ $$ g(X) = \hat{Y} $$
 
 ## Mejor predictor
 ---
-Se define el mejor predictor, como el que minimiza el error cuadrático medio, y este es la función $$ \varphi(x) = E[Y \mid X = x] $$
+Se define el mejor predictor, como el que minimiza el error cuadrático medio, a la función dada por la [[ingeniería en informática/proba/Esperanza condicional/Esperanza condicional|esperanza condicional]] $$ \varphi(x) = E[Y \mid X = x] $$
 > [!demostracion]- Demostración
 > Sumando y restando la [[ingeniería en informática/proba/Esperanza condicional/Esperanza condicional|esperanza condicional]] en la expresión a minimizar se observa que $$ \begin{align} 
 >     E\left[ (Y - \varphi(X))^2 \right] =& E\left[ (Y - E[Y \mid X] + E[Y \mid X] - \varphi(X))^2 \right] \\ 

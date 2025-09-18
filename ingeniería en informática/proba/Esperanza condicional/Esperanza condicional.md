@@ -63,8 +63,7 @@ Usando la [[Variable continua condicional|función de densidad condicional]] $f_
   
 * $X$ e $Y$ son [[Variables aleatorias independientes|variables independientes]] si $E[Y|X] = E[Y]$
 * $E[r(X)|X] = r(X)$
-
-
+* ![[ingeniería en informática/proba/Representación de variables aleatorias/Predicción#Mejor predictor]]
 # Observación
 ---
 * La esperanza condicional siempre existe, y además es única con [[Probabilidad|probabilidad]] $1$.

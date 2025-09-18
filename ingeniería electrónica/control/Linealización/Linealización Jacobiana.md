@@ -29,7 +29,7 @@ vinculoFacultad:
 ---
 Con la finalidad de obtener un [[Modelo matemático|modelo matemático]] [[Sistema lineal|lineal]] para un [[Sistema lineal|sistema no lineal]], se supone que las [[Variable de estado|variables]] sólo se desvían ligeramente de alguna condición de operación. Considérese un [[Sistema|sistema]] cuya entrada es $x(t)$ y cuya salida es $y(t)$. La relación entre $y(t)$ y $x(t)$ se obtiene mediante $$ y = f(x) $$
 Si la condición de operación normal corresponde a $\bar{x}$ y $\bar{y}$, la ecuación anterior se expande en [[Serie de Taylor|serie de Taylor]] alrededor de ese punto, del modo $$ y = \bar{y} + \frac{d}{dx}f(\bar{x}) ~ (x - \bar{x}) + \frac{1}{2!} \frac{d^2}{dx^2}f(\bar{x}) ~ (x - \bar{x})^2 + \cdots = \sum_{n = 0}^{\infty} \frac{1}{n!} \frac{d^n}{dx^n} f(\bar{x}) ~ (x - \bar{x})^n $$
-Si la variación $x - \bar{x}$ es pequeña, es posible no considerar los términos de orden superior en $x - \bar{x}$. Entonces, usando el [[Polinomio de Taylor|polinomio de Taylor de primer orden]] $$ y = \bar{y} + K ~ (x - \bar{x}) $$ donde $K = \frac{d}{dx} f(x) \bigg|_{x = \bar{x}}$  
+Si la variación $x - \bar{x}$ es pequeña, es posible no considerar los términos de orden superior en $x - \bar{x}$. Entonces, usando el [[ingeniería electrónica/analisis 3/Series/Serie de Taylor|polinomio de Taylor de primer orden]] $$ y = \bar{y} + K ~ (x - \bar{x}) $$ donde $K = \frac{d}{dx} f(x) \bigg|_{x = \bar{x}}$  
 
 ```tikz
 \usetikzlibrary{math}
