@@ -14,6 +14,7 @@ aliases:
   - Error empírico#^riesgo-empirico
   - Error bayesiano#^error-bayesiano
   - Gap de generalización#^gap-generalizacion
+  - Relación de compromiso sesgo varianza#Relación de compromiso Sesgo/Varianza
 vinculoFacultad:
   - tema: Machine learning
     capitulo: 9

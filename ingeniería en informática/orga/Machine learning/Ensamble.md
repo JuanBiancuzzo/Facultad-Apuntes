@@ -19,7 +19,7 @@ Los mejores [[investigación/machine Learning/Machine learning|algoritmos de mac
 
 ### Bagging
 ---
-Hacer subconjuntos distintos del mismo [[Validación del modelo|set de entrenamiento]], y entrenando varios [[investigación/machine Learning/Machine learning|algoritmos]]. Estos van a dar un determinado resultado y por medio de alguna votación se determina el resultado final.
+Hacer subconjuntos distintos del mismo [[ingeniería en informática/orga/Machine learning/Entrenar un modelo#Conjunto de entrenamiento|set de entrenamiento]], y entrenando varios [[investigación/machine Learning/Machine learning|algoritmos]]. Estos van a dar un determinado resultado y por medio de alguna votación se determina el resultado final.
 
 Esto disminuye la posibilidad de [[Overfitting|overfitting]], ya que cada uno no ve la totalidad de los registros del set de entrenamiento.
 

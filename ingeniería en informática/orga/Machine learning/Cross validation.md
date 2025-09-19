@@ -22,4 +22,4 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Es dividir el [[Validación del modelo|set de entrenamiento]] en $k$ particiones del mismo tamaño, conocidos como "folds", usando cada fold como set de validación. Después se promedia la [[Métrica de un modelo|métrica]] en las $k$ validaciones.
+Es dividir el [[ingeniería en informática/orga/Machine learning/Entrenar un modelo#Conjunto de entrenamiento|set de entrenamiento]] en $k$ particiones del mismo tamaño, conocidos como "folds", usando cada fold como set de validación. Después se promedia la [[Métrica de un modelo|métrica]] en las $k$ validaciones

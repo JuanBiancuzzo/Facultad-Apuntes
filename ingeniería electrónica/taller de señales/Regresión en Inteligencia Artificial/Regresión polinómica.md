@@ -1,8 +1,9 @@
 ---
 dia: 2025-09-17
-etapa: empezado
+etapa: ampliar
 referencias: []
-aliases: []
+aliases: 
+  - Ajuste polinómico
 tags:
   - carrera/ingeniería-electrónica/taller-de-señales/Regresión-en-Inteligencia-Artificial
   - nota/facultad
@@ -26,6 +27,7 @@ Independientemente de la complejidad de la esperanza condicional, el [[ingenier�
     1 & x_{n,1} & x_{n,2} & x_{n,1}^2 & x_{n,2}^2 & x_{n,1} ~ x_{n,2} \\
 \end{bmatrix} $$ donde $x_{i, k}$ es la muestra $i$-ésima de la variable $k$-ésima, y este ejemplo corresponde a un mapa polinómico de orden $2$
 
+Donde se define el [[ingeniería en informática/orga/Machine learning/Hiper-parámetros de un modelo|hiper-parámetro]] $\nu$ como el [[ingeniería electrónica/analisis 3/Funciones elementales/Función polinómica#^grado|grado]] u orden máximo del [[ingeniería electrónica/analisis 3/Funciones elementales/Función polinómica|polinomio]] generado por las combinaciones de predictores
 
 > [!observacion]+ Observación 7.1.2  
 > La vectorización correspondiente a un mapa polinómico de orden $\nu$ sobre $d$ predictores posee una cantidad de columnas $\binom{d + \nu}{\nu}$
@@ -92,4 +94,6 @@ Independientemente de la complejidad de la esperanza condicional, el [[ingenier�
 
 Es importante destacar que el mapa polinómico entrega predictores en magnitudes no comparables. Por ese motivo es indispensable luego de utilizar un mapa polinómico [[ingeniería en informática/orga/NLP/Normalización|normalizar]]
 
+Con esto nos podemos asegurar de obtener un valor bajo de [[ingeniería en informática/orga/Machine learning/Aprendizaje supervisado#^riesgo-empirico|riesgo empírico]] pero al aumentar tanto la complejidad, se tiene que tener en cuenta el aumento del [[ingeniería en informática/orga/Machine learning/Aprendizaje supervisado#^gap-generalizacion|gap de generalización]] por lo que se puede utilizar métodos de [[investigación/machine Learning/Regularization/Regularization|regularización]]
 
+En la práctica, si usamos como ejemplo la [[ingeniería en informática/orga/Machine learning/Penalización L2|penalización L2]], se deja fijo el $\nu$ dando un margen suficiente de complejidad al modelo, y controlar el overfitting con el hiper-parámetro de regularización. Es decir que la etapa de validación se efectuará sobre $\lambda$ y no $\nu$. Esto es beneficioso porque permite un incremento controlado de la regularización ya que mientras $\lambda \in \mathbb{R}$, $\nu \in \mathbb{N}$ necesita dar saltos discretos
