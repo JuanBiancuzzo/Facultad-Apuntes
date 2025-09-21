@@ -26,7 +26,6 @@ Recordemos que en la etapa de entrenamiento, se usará un modelo con [[ingenier�
 
 El problema principal de este enfoque aparece con la dimensión $\lambda$, ya que existen más combinaciones posibles de valores al aumentar la dimensión de $\lambda$. Por lo que existen diferentes métodos para la búsqueda de los hiper-parámetros, también conocido como tuning el model
 * [[ingeniería electrónica/taller de señales/Regresión en Inteligencia Artificial/Grid search|Grid-search]]
-* Random-search
-	* Se determina el conjunto valores a probar, y se intenta mejorar la [[Métrica de un modelo|métrica]] probando $k$ combinaciones posibles
+* [[ingeniería electrónica/taller de señales/Regresión en Inteligencia Artificial/Random search|Random-search]]
 * Optimización bayesiana
 	* Se determina por cada hiper-parámetro una distribución de probabilidades, y va probando combinaciones y en base a los resultados actualiza esas distribuciones
