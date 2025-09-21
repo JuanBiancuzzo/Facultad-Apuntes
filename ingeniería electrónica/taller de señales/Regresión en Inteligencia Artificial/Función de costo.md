@@ -1,6 +1,6 @@
 ---
 dia: 2025-09-01
-etapa: empezado
+etapa: sin-empezar
 referencias: []
 aliases: []
 tags:

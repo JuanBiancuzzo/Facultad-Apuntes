@@ -19,9 +19,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-El [[Conjunto|conjunto]] de nivel se puede pensar como [[Grafica de una función|la grafica de una función]] donde en vez de ser para cualquier $y \in B$ donde $B$ es el [[Codominio|codominio]], sino $y$ siendo un valor $k$ constante
-
-$$\{(x_1, x_2, \cdots, x_n, k) \in \mathbb{R}^{n+1} : (x_1, x_2, \cdots, x_n) \in U, k = f(x_1, x_2, \cdots, x_n) \}$$
+El [[Conjunto|conjunto]] de nivel se puede pensar como [[Grafica de una función|la grafica de una función]] donde en vez de ser para cualquier $y \in B$ donde $B$ es el [[Codominio|codominio]], sino $y$ siendo un valor $k$ constante $$ \Set{ (x_1, x_2, \cdots, x_n, k) \in \mathbb{R}^{n+1} : (x_1, x_2, \cdots, x_n) \in U, k = f(x_1, x_2, \cdots, x_n) } $$
 
 Tambien visto como
 
