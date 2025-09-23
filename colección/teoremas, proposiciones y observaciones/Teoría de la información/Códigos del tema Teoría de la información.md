@@ -21,6 +21,14 @@ nota:
     nombre:
     path: ingeniería electrónica/taller de comunicaciones/Elementos de Teoría de Información/Teorema de codificación de fuente#^teo-8-1-4
     pathRelacionado:
+  - numero: 5
+    nombre:
+    path: ingeniería electrónica/taller de comunicaciones/Elementos de Teoría de Información/Código absolutamente óptimo#^obs-8-1-5
+    pathRelacionado:
+  - numero: 6
+    nombre:
+    path: ingeniería electrónica/taller de comunicaciones/Elementos de Teoría de Información/Teorema de codificación de fuente#^teo-8-1-6
+    pathRelacionado:
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/bloqueMatematica/subtema", { subtema: dv.current() });

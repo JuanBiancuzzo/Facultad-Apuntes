@@ -8,14 +8,14 @@ tags:
 aliases:
   - Fórmula de Bayes
 vinculoFacultad:
-  - tema: Repaso
-    capitulo: "1"
-    materia: Procesos estocásticos
-    carrera: Ingeniería electrónica
   - tema: Teoría de probabilidades
     capitulo: 1
     materia: Probabilidad y estadística B
     carrera: Ingeniería en informática
+  - tema: Repaso
+    capitulo: 1
+    materia: Procesos estocásticos
+    carrera: Ingeniería electrónica
   - tema: Repaso de probabilidad y estadística
     capitulo: 1
     materia: Taller de Procesamiento de Señales

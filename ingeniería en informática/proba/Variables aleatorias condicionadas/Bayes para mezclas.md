@@ -18,4 +18,4 @@ La [[Función de masa de probabilidad|función de probabilidad]] de $M$ dado que
 
 # Observación
 ---
-Es el equivalente a la [[Formula de Bayes|formula de Bayes]], utilizando [[Probabilidad condicional|probabilidad condicional]]. No se puede usar la definición ya que $\mathbb{P}(X = x) = 0$ ya que sabemos que $X$ es una [[Variable aleatoria continua|variable aleatoria continua]]
+Es el equivalente a la [[ingeniería en informática/proba/Teoría de probabilidades/Teorema de Bayes|formula de Bayes]], utilizando [[Probabilidad condicional|probabilidad condicional]]. No se puede usar la definición ya que $\mathbb{P}(X = x) = 0$ ya que sabemos que $X$ es una [[Variable aleatoria continua|variable aleatoria continua]]

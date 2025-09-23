@@ -27,3 +27,15 @@ vinculoFacultad:
 ^teo-8-1-4
 
 La entropía representa un límite fundamental en el número promedio de símbolos necesarios para representar una fuente discreta sin memoria
+
+
+> [!teorema]+ Teorema 8.1.6  
+> Dada una [[ingeniería electrónica/taller de comunicaciones/Elementos de Teoría de Información/Fuente discreta sin memoria|fuente discreta sin memoria]] con [[ingeniería en informática/orga/Compresión/Entropía de shannon|entropía]] $H(\mathcal{S})$ existe un [[ingeniería electrónica/taller de comunicaciones/Elementos de Teoría de Información/Código prefijo|código prefijo]] $r$-ario cuya [[ingeniería electrónica/taller de comunicaciones/Elementos de Teoría de Información/Longitud promedio de un alfabeto|longitud promedio]] satisface $$ \frac{H(\mathcal{S})}{\log_2(r)} \le \bar{L} < \frac{H(\mathcal{S})}{\log_2(r)} + 1 $$ con el uso de [[ingeniería electrónica/taller de comunicaciones/Elementos de Teoría de Información/Extensión de una fuente discrete sin memoria|fuente extendida]] se consigue $\bar{L}$ más próximo del límite inferior del [[ingeniería electrónica/taller de comunicaciones/Elementos de Teoría de Información/Teorema de codificación de fuente|teorema de codificación de fuente]] pero, con el compromiso de una complejidad mayor de decodificador $$ \begin{align}
+>     \frac{H\left( \mathcal{S}^n \right)}{\log_2(r)} &\le \bar{L}_n < \frac{H\left( \mathcal{S}^n \right)}{\log_2(r)} + 1 \\
+>     \frac{n ~ H\mathcal{S})}{\log_2(r)} &\le \bar{L}_n < \frac{n ~ H\mathcal{S})}{\log_2(r)} + 1 \\
+>     \frac{H\mathcal{S})}{\log_2(r)} &\le \frac{\bar{L}_n}{n} < \frac{H\mathcal{S})}{\log_2(r)} + \frac{1}{n} \\
+>     \frac{H\mathcal{S})}{\log_2(r)} &\le \bar{L} < \frac{H\mathcal{S})}{\log_2(r)} + \frac{1}{n} \\
+>     \frac{H\mathcal{S})}{\log_2(r)} &\le \bar{L} < \lim_{n \to \infty} \frac{H\mathcal{S})}{\log_2(r)} + \frac{1}{n} \\
+>     \implies& \lim_{n \to \infty} \bar{L} = \frac{H\mathcal{S})}{\log_2(r)}
+> \end{align} $$
+^teo-8-1-6

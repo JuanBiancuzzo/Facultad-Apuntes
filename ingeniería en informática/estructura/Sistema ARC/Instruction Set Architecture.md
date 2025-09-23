@@ -99,7 +99,7 @@ Se toma la siguiente sintaxis
 ```
 
 * Distingue mayúsculas de minúsculas
-* Números por defecto es en [[Base númerica|base]] $10$
+* Números por defecto es en [[ingeniería en informática/estructura/Sistemas numéricos/Base numérica|base]] $10$
 * Si empieza con "$0$x" o finaliza con "h", se trata de hexadecimal
 
 ## Subrutinas

@@ -23,6 +23,6 @@ $$ \underbrace{f_{\Theta|\underline X = \underline x} (\theta)}_\text{a posterio
 
 Tambien permite encontrar [[Intervalo de confianza de nivel 1-alfa|intervalos de confianza]] de forma más simple solo encontrando [[Cuantil|cuantiles]] con la distribución "a posteriori". 
 
-Esta idea es partiendo del [[Teorema de Bayes|teorma de Bayes]]
+Esta idea es partiendo del [[ingeniería en informática/proba/Teoría de probabilidades/Teorema de Bayes|teorma de Bayes]]
 
 

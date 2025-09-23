@@ -12,10 +12,5 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Dado el [[Conjunto|conjunto]] $U$, $Fa(U)$ es el conjunto frontera de este, donde todos sus puntos son [[Punto frontera|punto frontera]] de $U$.
+Dado el [[Conjunto|conjunto]] $U$, $Fa(U)$ es el conjunto frontera de este, donde todos sus puntos son [[Punto frontera|punto frontera]] de $U$ $$ Fa(U)=\Set{ x \in \mathbb{C} : U \cdot D(x, r) \neq \emptyset, [\mathbb{C}-U] \cdot D(x, r) \neq \emptyset } $$ donde si se tiene un conjunto $U$ se denota la frontera de este como $\partial U$
 
-$$Fa(U)=\{ x \in \mathbb{C} : U \cdot D(x, r) \neq \emptyset, [\mathbb{C}-U] \cdot D(x, r) \neq \emptyset \}$$
-
-# Notación
----
-Si se tiene un conjunto $U$ se denota la frontera de este como $\partial U$

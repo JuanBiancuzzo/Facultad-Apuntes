@@ -12,7 +12,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Hay 4 casos para esta conversión entre [[Base númerica|base]]:
+Hay 4 casos para esta conversión entre [[ingeniería en informática/estructura/Sistemas numéricos/Base numérica|base]]:
 
 ## Conversión de cualquier base a base $10$
 Para poder convertir cualquier número en cualquier base, a base $10$, se utiliza lo siguiente:

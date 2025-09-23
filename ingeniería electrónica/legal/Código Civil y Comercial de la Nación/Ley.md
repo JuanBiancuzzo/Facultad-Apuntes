@@ -35,10 +35,6 @@ La ley, en cuanto resultado de la actividad del órgano legislativo puede ser en
 * Es norma emanada de una autoridad con competencia específica
 	* Para crear [[Norma jurídica|normas jurídicas]] siguiendo procedimientos preestablecidos. Esto es producto de la principal autoridad normativa: el [[Poder Legislativo|Poder Legislativo Nacional]]
 
-## Procedimiento de creación legal
----
-![[Procedimiento de creación legal#Definición]]
-
 ## Comienzo de la obligatoriedad
 ---
 Una ley es obligatoria cuando rige efectivamente los comportamientos en un momento determinado. Habitualmente con la obligatoriedad se alude a la [[Art. 5 del CC y CN, Vigencia|vigencia]]. La ley puede tener una vigencia determinada o indeterminada. Tiene vigencia determinada cuando establece el momento en que comenzará su obligatoriedad e indeterminada cuando no lo hace, dejando que el comienzo de su vigencia sea determinado conforme a otras normas generales ya existentes, como la del [[Art. 5 del CC y CN, Vigencia|art. 5 del CC y CN]] 
@@ -70,7 +66,3 @@ Un caso de enervación es el proceso al que se suele llamar desuetudo, por el cu
 También se da la enervación por la declaración de inconstitucionalidad de la ley por parte del [[Poder Judicial|Poder Judicial]]. En este caso, los efectos de la declaración judicial se limitan a las partes del proceso en el que se ha cuestionado la constitucionalidad de la ley. 
 
 Citamos, por último, el caso de enervación de la ley por parte de los particulares quienes, en sus convenciones contractuales, pueden dejar de lado (inobservar) las leyes supletorias en virtud del ya referido principio de libertad de contratación. Como lo señalamos en oportunidad de clasificar las normas jurídicas en supletorias o dispositivas y de orden público, las primeras son las que suplen la voluntad de las partes o, dicho de otro modo, sólo operan cuando las partes no han establecido algo distinto en sus cláusulas contractuales.
-
-## Clasificación de las leyes
----
-![[Clasificación de las leyes#Definición]]

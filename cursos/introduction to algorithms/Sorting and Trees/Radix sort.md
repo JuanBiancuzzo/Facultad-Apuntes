@@ -25,7 +25,7 @@ vinculoCurso:
 ```
 # Definición
 ---
-Es un [[Algoritmo de ordenamiento|algoritmo de ordenamiento]] que ordena enteros procesando sus dígitos en forma individual en una [[Base númerica|base]] $b$. Podemos decir que $d$ es la cantidad de dígitos $d = \log_b(k)$ 
+Es un [[Algoritmo de ordenamiento|algoritmo de ordenamiento]] que ordena enteros procesando sus dígitos en forma individual en una [[ingeniería en informática/estructura/Sistemas numéricos/Base numérica|base]] $b$. Podemos decir que $d$ es la cantidad de dígitos $d = \log_b(k)$ 
 
 1. Ordenar, con [[Counting sort|counting sort]], todos los $n$ elementos por el digito menos significativo
 *  `...`

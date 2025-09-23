@@ -26,7 +26,6 @@ Se define el prefijo de longitud $i$ como los elementos $(m_{k,~1},~ m_{k,~2},~ 
 
 Finalmente podemos definir un código, como aquel código el cual ninguna palabra de código es prefijo de ninguna otra palabra de código. En otras palabras, para todo $m_k$ no existe otra palabra $m_j$ tal que $m_j$ sea prefijo de $m_k$
 
-
 > [!observacion]+ Observación 8.1.1  
 > Todo [[ingeniería electrónica/taller de comunicaciones/Elementos de Teoría de Información/Código prefijo|código prefijo]] es de [[Código de decodificación instantánea|decodificación instantánea]]
 ^obs-8-1-1

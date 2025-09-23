@@ -10,6 +10,13 @@ etapa: empezado
 nombreMateria: Legislación y ejercicio profesional
 nombreReducido: legal
 nombreCarrera: Ingeniería electrónica
+referencias:
+  - 1088
+  - 1089
+  - 1090
+  - 1091
+  - 1092
+  - 1093
 ---
 # Apuntes
 ---
@@ -22,9 +29,7 @@ nombreCarrera: Ingeniería electrónica
 ```dataviewjs
 	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
 ```
-# Documentos
----
-Se tiene varios documentos utilizados a lo largo de la cursada, estos siendo
+
 
 ```dataviewjs
 await dv.view("_scripts/dataview/coleccion/articulos/documentos");

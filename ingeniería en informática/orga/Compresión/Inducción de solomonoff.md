@@ -14,13 +14,13 @@ vinculoFacultad:
 Se puede explicar con los siguientes 4 pasos:
 1) Recolectamos los datos y los ponemos en el formato, entrada -> salida
 2) Iteramos todos los programas posibles, y los que terminan, miramos si su salida dado la entrada es lo que queríamos para el dato actual
-3) Actualizamos la [[Probabilidad]] de que cada programa sea el que explica el fenómeno utilizando la [[Formula de Bayes]]
+3) Actualizamos la [[Probabilidad]] de que cada programa sea el que explica el fenómeno utilizando la [[ingeniería en informática/proba/Teoría de probabilidades/Teorema de Bayes]]
 4) Repetimos
 
 ### Ejemplo
 Supongamos que tenemos dos hipotesis que nos dan correctamente la salida. Con esto estaríamos usando el [[Principio de epicúreo]].
 
-Utilizando la [[Formula de Bayes]] para cada hipotesis, nos queda lo siguiente $$ \mathbb{P}(H_k|E) = \frac{\mathbb{P}(E|H_k) \cdot \mathbb{P}(H_k)}{\mathbb{P}(E)} $$
+Utilizando la [[ingeniería en informática/proba/Teoría de probabilidades/Teorema de Bayes]] para cada hipotesis, nos queda lo siguiente $$ \mathbb{P}(H_k|E) = \frac{\mathbb{P}(E|H_k) \cdot \mathbb{P}(H_k)}{\mathbb{P}(E)} $$
 Como esta hipotesis replica perfectamente los datos de salida: $$\mathbb{P}(E|H_k) = 1$$ 
 
 Después para ver la probabilidad de que la hipotesis $H_k$ de la respuesta correcta, utilizaremos la idea de la [[Navaja de Ockam]], donde darémos menor probabilidad aquellos programas que tengan una [[Complejidad de Kolmogorov|complejidad]] mayor. Dandonos lo siguiente $$ \mathbb{P}(H_k) = 2^{-K(H_k)} $$

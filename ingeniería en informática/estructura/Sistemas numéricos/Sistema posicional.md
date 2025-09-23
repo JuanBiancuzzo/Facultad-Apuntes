@@ -27,7 +27,7 @@ vinculoFacultad:
 # Definición
 ---
 > [!teorema]+ Teorema 1.2.26 (Desarrollo de base d)
-> Sea $d \in \mathbb{N}$ con $d \ge 2$. Todo número $a \in \mathbb{N}_0$ admite un desarrollo en [[Base númerica|base]] $d$ de la forma $$ a = r_n ~ d^n + r_{n - 1} ~ d^{n - 1} + \cdots + r_1 ~ d + r_0 $$ con $0 \le r_i < d$ para $0 \le i \le n$ y $r_n \ne 0$ si $a \ne 0$
+> Sea $d \in \mathbb{N}$ con $d \ge 2$. Todo número $a \in \mathbb{N}_0$ admite un desarrollo en [[ingeniería en informática/estructura/Sistemas numéricos/Base numérica|base]] $d$ de la forma $$ a = r_n ~ d^n + r_{n - 1} ~ d^{n - 1} + \cdots + r_1 ~ d + r_0 $$ con $0 \le r_i < d$ para $0 \le i \le n$ y $r_n \ne 0$ si $a \ne 0$
 > 
 > Además dicho desarrollo, con las exigencias $0 \le r_i < d$ impuestas para los [[Símbolo|símbolos]], es único
 > 

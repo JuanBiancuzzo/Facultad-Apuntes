@@ -123,7 +123,7 @@ let x = 23; // i32
 let y: u128 = 503_432;
 ```
 
-También se puede expresar números literales en diferentes [[Base númerica|bases]], dados por la siguiente tabla
+También se puede expresar números literales en diferentes [[ingeniería en informática/estructura/Sistemas numéricos/Base numérica|bases]], dados por la siguiente tabla
 
 | Bases            |    Ejemplo    |
 | ---------------- | :-----------: |
