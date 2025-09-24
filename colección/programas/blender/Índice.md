@@ -4,13 +4,15 @@ tags:
   - investigación/índice
   - investigación/herramientas/blender
 estado: Falta resumir
+aliases:
+  - Blender
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });
 ```
 # ¿Qué se va a investigar?
 ---
-La idea es aprender la idea general de usar blender. Vamos a ver los canales de yotube
+La idea es aprender la idea general de usar [Blender](https://www.blender.org/). Vamos a ver los canales de youtube
 * [CrossMind Studio](https://www.youtube.com/@CrossMindStudio)
 * [SouthernShotty](https://www.youtube.com/@SouthernShotty)
 * [Smeaf](https://www.youtube.com/@Smeaf)

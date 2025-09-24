@@ -29,9 +29,9 @@ vinculoFacultad:
 ---
 Podemos entender el problema del aprendizaje supervisado como inferir una etiqueta $Y$ a partir del [[ingeniería en informática/proba/Representación de variables aleatorias/Predicción|predictor]] $X$, dependiendo de si $X$ es de tipo numérico entonces es un [[ingeniería en informática/orga/Machine learning/Problema de regresión|problema de regresión]] o en el caso de que sea categórico entonces sería un [[ingeniería en informática/orga/Machine learning/Problema de clasificación|problema de clasificación]]
 
-El objetivo será crear un [[ingeniería en informática/aninfo/Ingeniería de software/Modelo|modelo]] minimizar el valor [[ingeniería en informática/proba/Representación de variables aleatorias/Esperanza|esperado]] de la [[ingeniería electrónica/taller de señales/Regresión en Inteligencia Artificial/Función de costo|función de costo]] $l(x,~ y)$, el cuál recibe el nombre de riesgo esperado $E[l(X,~ Y)]$. La estimación que minimice dicho riesgo se conocerá como solución óptima ^riesgo-esperado
+El objetivo será crear un [[ingeniería en informática/aninfo/Ingeniería de software/Modelo|modelo]] minimizar el valor [[ingeniería en informática/proba/Representación de variables aleatorias/Esperanza|esperado]] de la [[ingeniería electrónica/taller de señales/Regresión en Inteligencia Artificial/Función de costo|función de costo]] $\ell(x,~ y)$, el cuál recibe el nombre de riesgo esperado $E[\ell(X,~ Y)]$. La estimación que minimice dicho riesgo se conocerá como solución óptima ^riesgo-esperado
 
-Por otro lado existe el riesgo empírico, este se calcula como $$ \frac{1}{n} \sum_{i = 1}^n l(x_i,~ y_i) $$ para un conjunto de datos observados $\set{(x_i,~ y_i)}_{i = 1}^n$ ^riesgo-empirico
+Por otro lado existe el riesgo empírico, este se calcula como $$ \frac{1}{n} \sum_{i = 1}^n \ell(x_i,~ y_i) $$ para un conjunto de datos observados $\set{(x_i,~ y_i)}_{i = 1}^n$ ^riesgo-empirico
 
 Llamaremos error bayesiano al mínimo error posible capaz de ser alcanzado. Estamos hablando de un límite fundamental para el error que nunca podrá ser mejorado independientemente de la tecnología utilizada ^error-bayesiano
 
@@ -39,7 +39,7 @@ Llamaremos error bayesiano al mínimo error posible capaz de ser alcanzado. Esta
 ---
 Para encontrar una solución, solo se busca minimizar el riesgo empírico, pero se busca minimizar el riesgo esperado, donde no necesariamente van a coincidir
 
-En este sentido surge el gap de generalización que es la capacidad de generalizar el comportamiento de los datos observados a datos desconocidos $$ \underbrace{E[l(X,~ Y)]}_\text{Riesgo esperado} = \frac{1}{n} \underbrace{\sum_{i = 1}^n l(x_i,~ y_i)}_\text{Riesgo empírico} + \left(\underbrace{E[l(X,~ Y)] - \frac{1}{n} \sum_{i = 1}^n l(x_i,~ y_i)}_\text{Gap de generalización} \right) $$ ^gap-generalizacion
+En este sentido surge el gap de generalización que es la capacidad de generalizar el comportamiento de los datos observados a datos desconocidos $$ \underbrace{E[\ell(X,~ Y)]}_\text{Riesgo esperado} = \frac{1}{n} \underbrace{\sum_{i = 1}^n \ell(x_i,~ y_i)}_\text{Riesgo empírico} + \left(\underbrace{E[\ell(X,~ Y)] - \frac{1}{n} \sum_{i = 1}^n \ell(x_i,~ y_i)}_\text{Gap de generalización} \right) $$ ^gap-generalizacion
 En este sentido, para disminuir el riesgo esperado se necesita simultáneamente tratar de minimizar el riesgo empírico y el gap de generalización, dos magnitudes de características muy distintas 
 
 Este problema es una relación de compromiso entre el [[ingeniería en informática/proba/Inferencia estadística/Sesgo|sesgo]], representado por el riesgo empírico y la [[ingeniería en informática/proba/Representación de variables aleatorias/Varianza|varianza]] representado por el gap

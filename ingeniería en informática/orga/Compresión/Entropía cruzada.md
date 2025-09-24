@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Se define como cual es la [[Entropía de shannon|entropía]] de mi mensaje diseñado con una [[Función de masa de probabilidad]] $Q$ pero se envian con una [[Función de masa de probabilidad]] $P$. Dandonos lo siguiente
+Se define como cual es la [[Entropía de shannon|entropía]] de mi mensaje diseñado con una [[Función de masa de probabilidad]] $Q$ pero se envían con una [[Función de masa de probabilidad]] $P$. Dándonos lo siguiente
 $$ H(P, Q) = - \sum_i P_i \cdot log_2(Q_i) $$
 
 También se puede plantear como 

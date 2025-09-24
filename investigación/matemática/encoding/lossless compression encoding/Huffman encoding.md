@@ -340,9 +340,9 @@ Generando, finalmente, los códigos, que se puede construir recorriendo el camin
    
     \path (nodo_4) node[below=2pt] {$00$};
     \path (nodo_5) node[below=2pt] {$01$};
-    \path (nodo_6) node[below=2pt] {$11$};
-    \path (nodo_7) node[below=2pt] {$100$};
-    \path (nodo_8) node[below=2pt] {$101$};
+    \path (nodo_6) node[below=2pt] {$10$};
+    \path (nodo_7) node[below=2pt] {$110$};
+    \path (nodo_8) node[below=2pt] {$111$};
     
     
 \end{tikzpicture}

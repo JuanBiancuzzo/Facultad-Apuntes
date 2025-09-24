@@ -4,6 +4,8 @@ tags:
   - investigación/índice
   - investigación/herramientas/motion-canvas
 estado: Falta resumir
+aliases:
+  - Motion canvas
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });
