@@ -55,16 +55,24 @@ Este resultado expresar el error bayesiano como la suma de los errores dentro de
 \definecolor{rellenoRojo}{RGB}{255, 204, 204} 
 
 
-\begin{tikzpicture}[scale=2.3, transform shape, thick]    
+\begin{tikzpicture}[scale=2.1, transform shape, thick]    
     \tikzmath { 
         function normal(\x, \m, \s) {
             return exp(-(\x - \m)^2 / (2 * \s^2)) / sqrt(2 * pi * \s);
         };
-        \ancho = 2.7; \dif = 0.05; \escala = 0.6;
-        \probaA = 4; \mA = -1.1; \sA = 0.4;
-        \probaB = 3.4; \mB = 0.4; \sB = 0.7;
+        \ancho = 3.7; \dif = 0.075; \escala = 0.6;
+        \probaA = 6.1; \mA = -1.9; \sA = 0.5;
+        \probaB = 5.4; \mB = 0.4; \sB = 1;
         
-        \medioX = -0.4745;
+        \d = (\probaB / \probaA) * sqrt(\sA / \sB);
+        \rel = \sA^2 / \sB^2;
+        \a = 1 - \rel;
+        \b = 2 * (\mB * \rel - \mA);
+        \c = \mA * \mA - \rel * \mB^2 + 2 * \sA^2 * ln(\d);
+        
+        \medioX = \mA < \mB
+            ? (-\b + sqrt(\b^2 - 4 * \a * \c)) / (2 * \a)
+            : (-\b - sqrt(\b^2 - 4 * \a * \c)) / (2 * \a);
         \medioY = \probaA * normal(\medioX, \mA, \sA);
     }
     
@@ -97,13 +105,16 @@ Este resultado expresar el error bayesiano como la suma de los errores dentro de
             {$P_Y(2) ~ p_{X \mid Y = 2}(x)$};
     
     \draw[dashed] (\medioX, 0) -- ++(0, {\medioY + .5});
-    \draw[|->, ultra thick] (\medioX, -0.2) -- ({\ancho - 0.5}, -0.2)
+    \draw[|->, ultra thick] (\medioX, -0.2) -- ({\ancho - 0.2}, -0.2)
         node[midway, below=2pt, scale=\escala] {$\mathcal{R}_2$};
-    \draw[|->, ultra thick] (\medioX, -0.2) -- ({-\ancho + 0.5}, -0.2)
+    \draw[|->, ultra thick] (\medioX, -0.2) -- ({-\ancho + 0.2}, -0.2)
         node[midway, below=2pt, scale=\escala] {$\mathcal{R}_1$};
     
 \end{tikzpicture}
 \end{document}
 ```
 
+Teniendo como ejemplo un clasificador unidimensional de dos clases. Las regiones $\mathcal{R}_1$ y $\mathcal{R}_2$ son delimitadas a partir de $P_{Y \mid X = x}(1) \lessgtr P_{Y \mid X = x}(0)$ . Para cada $x \in \mathbb{R}$, esas regiones son equivalentes a comparar $P_Y(1) ~ p_{X \mid Y = 1}(x) \lessgtr P_Y(0) ~ p_{X \mid Y = 0}(x)$, ya que $p_X(x)$ es la misma de ambos lados
+
+El error bayesiano puede verse como la región sombreada, es la suma del área bajo la curva de $y = 1$ que cae en $\mathcal{R}_2$ (sombreado azul) y la curva de $y = 2$ que cae en $\mathcal{R}_2$ (sombreado rojo)
 
