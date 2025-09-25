@@ -69,7 +69,6 @@ Dada una moneda, donde la probabilidad de cara es $x \in [0,1]$ y la probabilida
 
 Donde vemos que cuando $x = 0.5$ que es el momento donde es más difícil predecir si la moneda es cara o ceca, es donde la [[Entropía|entropía]] es mayor. También en los extremos donde la probabilidad de que sea cara, o en otro extremos que sea ceca, es $1$ la entropía termina siendo $0$ ya que no es necesario mandar información
 
-
 # Referencias
 ---
 ```dataviewjs

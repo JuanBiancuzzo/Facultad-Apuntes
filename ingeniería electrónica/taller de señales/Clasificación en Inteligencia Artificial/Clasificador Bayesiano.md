@@ -1,6 +1,6 @@
 ---
 dia: 2025-09-23
-etapa: empezado
+etapa: ampliar
 referencias: []
 aliases: []
 tags:
@@ -117,4 +117,3 @@ Este resultado expresar el error bayesiano como la suma de los errores dentro de
 Teniendo como ejemplo un clasificador unidimensional de dos clases. Las regiones $\mathcal{R}_1$ y $\mathcal{R}_2$ son delimitadas a partir de $P_{Y \mid X = x}(1) \lessgtr P_{Y \mid X = x}(0)$ . Para cada $x \in \mathbb{R}$, esas regiones son equivalentes a comparar $P_Y(1) ~ p_{X \mid Y = 1}(x) \lessgtr P_Y(0) ~ p_{X \mid Y = 0}(x)$, ya que $p_X(x)$ es la misma de ambos lados
 
 El error bayesiano puede verse como la región sombreada, es la suma del área bajo la curva de $y = 1$ que cae en $\mathcal{R}_2$ (sombreado azul) y la curva de $y = 2$ que cae en $\mathcal{R}_2$ (sombreado rojo)
-

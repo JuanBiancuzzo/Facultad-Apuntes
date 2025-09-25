@@ -15,3 +15,5 @@ Yo creo que las propiedades que debería tener mi sistema de [[ingeniería en in
 Todas logran crear animaciones, donde especialmente Motion Canvas logra crear animaciones con un aspecto de UI que se asemeja a [[investigación/ciencias de la computación/lenguaje de marcado/Lenguaje de marcado de hipertexto|HTML]], que es lo que estoy buscando
 
 Para reiterar o recordar, mi intención es crear una librería, que me permita escribir UI estática como también animada, con animaciones 2D o 3D, de forma procedural y posiblemente dinámicas al input del usuario
+
+También me gusta mucho como blender usa [[colección/programas/blender/geometry nodes/Índice|geometry nodes]] para crear de forma constructiva y procedural los objetos, entonces estaría bueno probar algo similar. Cabe aclarar que esta forma también aplica para los [[Shader|sheders]] 

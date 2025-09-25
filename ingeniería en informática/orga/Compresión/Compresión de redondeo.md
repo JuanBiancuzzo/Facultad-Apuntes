@@ -22,6 +22,6 @@ Dado una tabla dada por los [[Información#Bit|bit]], tenemos
 | E   | 0.34  | 1.55639 | 2        |
 | F   | 0.05  | 4.32193 | 5         |
 
-Por lo tanto se calculamos cuantos bits en promedio estaríamos usando al redondeara, nos queda que estaríamos $2.61$ que es mejor que usar $3$ bits por letra. Pero es peor que el optimo ya que si vemos la [[Entropía de shannon|entropía]] esta nos da $2.03$.
+Por lo tanto se calculamos cuantos bits en promedio estaríamos usando al redondeara, nos queda que estaríamos $2.61$ que es mejor que usar $3$ bits por letra. Pero es peor que el optimo ya que si vemos la [[ingeniería en informática/orga/Compresión/Entropía de Shannon|entropía]] esta nos da $2.03$.
 
 $$ H = \sum_i \mathbb{P}(x_i) \cdot \text{bit's} $$
