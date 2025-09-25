@@ -22,12 +22,16 @@ aliases: []
 
 # Interpretación
 ---
+Este artículo pone al [[colección/documentos/Código Civil y Comercial de la Nación/Código Civil y Comercial de la Nación|CC y CN]] en su posición relativa a otros documentos, para ser parte de un [[ingeniería electrónica/legal/Código Civil y Comercial de la Nación/Sistema jurídico|sistema jurídico]] que debe respetar principios y derechos contenidos en instrumentos jurídicos de mayor jerarquía, que son los que cumplen dos funciones fundamentales
+1. Sentar las bases axiológicas sobre las cuales se estructura el CC y CN
+2. Servir de guía para resolver los casos que se presenten mediante la aplicación de diferentes fuentes
+    1. Leyes aplicables que deben, precisamente, estar en total consonancia con la Constitución Nacional y los tratados de derechos humanos en los que el país sea parte
+    2. Un segundo nivel, los usos, prácticas y costumbres en las siguientes condiciones
+        1. Cuando las leyes o los interesados se refieren a ellos
+        2. En situaciones no regladas legalmente
+        3. Siempre que no sean contrarios a derecho
 
-
-
-Las fuentes de derecho son las siguientes: 
-* Leyes aplicables, tanto del mismo [[Código Civil y Comercial de la Nación|CC y CN]] como las leyes complementarias, como también los tratados de derechos humanos en los que la Argentina sea parte. 
-* El uso, prácticas y costumbres, que no sean contrarios al derecho, en situaciones no regladas legalmente y cuando las leyes o los interesados se refieren a estas.
+Las fuentes deben aplicarse teniéndose en cuenta la finalidad de la norma, de este modo, se recepta como uno de los principios de [[colección/documentos/Código Civil y Comercial de la Nación/Título preliminar/Capítulo 1/Art. 2 del CC y CN, Interpretación|interpretación]], el [[Principio teleológico|principio teleológico]], cuestión que se complementa con el dispuesto en el [[colección/documentos/Código Civil y Comercial de la Nación/Título preliminar/Capítulo 1/Art. 2 del CC y CN, Interpretación|art. 2]]
 
 # Referencias
 ---

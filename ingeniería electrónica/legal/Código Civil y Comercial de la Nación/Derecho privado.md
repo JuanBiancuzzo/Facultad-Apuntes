@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Regula las relaciones entre los [[Sujeto de derecho|sujetos]]. Civil, comercial y de trabajo.
+Regula las relaciones entre los [[Sujeto de derecho|sujetos]]. Civil, comercial y de trabajo
 
 ## Ejemplos
 ---

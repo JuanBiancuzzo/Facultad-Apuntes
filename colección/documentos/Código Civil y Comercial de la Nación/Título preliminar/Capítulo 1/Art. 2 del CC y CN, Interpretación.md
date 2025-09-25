@@ -19,4 +19,4 @@ Las reglas de interpretación sostienen
 2. Interpretar la ley por la utilidad que otorga, sin tener en cuenta la intención histórica u original del mismo. 
 3. Usando leyes similares o análogas a esta. 
 4. Interpretarla en referencia al [[Ordenamiento jurídico|ordenamiento jurídico]], de manera de situar esta interpretación en concordancia con todo el [[Sistema|sistema]]. 
-5. Aludir a los principios y valores jurídicos. Cabe remarcar que se agregar reglas para las leyes de algunas ´areas especificas, como la interpretación al regular algunas instituciones o figuras, o [[Contrato del consumidor|contratos de consumo
+5. Aludir a los principios y valores jurídicos. Cabe remarcar que se agregar reglas para las leyes de algunas áreas especificas, como la interpretación al regular algunas instituciones o figuras, o [[Contrato del consumidor|contratos de consumo]]

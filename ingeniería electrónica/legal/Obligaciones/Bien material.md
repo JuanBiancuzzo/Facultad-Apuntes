@@ -8,6 +8,8 @@ vinculoFacultad:
     capitulo: 2
     materia: Legislación y ejercicio profesional
     carrera: Ingeniería electrónica
+aliases:
+  - Cosa
 ---
 # Definición
 ---
