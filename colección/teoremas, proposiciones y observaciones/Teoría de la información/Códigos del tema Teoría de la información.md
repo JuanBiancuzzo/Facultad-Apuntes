@@ -29,6 +29,14 @@ nota:
     nombre:
     path: ingeniería electrónica/taller de comunicaciones/Elementos de Teoría de Información/Teorema de codificación de fuente#^teo-8-1-6
     pathRelacionado:
+  - numero: 7
+    nombre: Divergencia de Kullback Leibler
+    path: ingeniería en informática/orga/Compresión/Divergencia de Kullback-Leibler#^def-8-1-7
+    pathRelacionado:
+  - numero: 8
+    nombre:
+    path: ingeniería en informática/orga/Compresión/Divergencia de Kullback-Leibler#^pro-8-1-8
+    pathRelacionado:
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/bloqueMatematica/subtema", { subtema: dv.current() });

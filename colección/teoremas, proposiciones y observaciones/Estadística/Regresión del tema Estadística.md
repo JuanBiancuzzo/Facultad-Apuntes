@@ -11,7 +11,7 @@ nota:
     pathRelacionado:
   - numero: 2
     nombre:
-    path: ingeniería electrónica/taller de señales/Regresión en Inteligencia Artificial/Regresión polinómica#^obs-7-1-2
+    path: ingeniería electrónica/taller de señales/Regresión en Inteligencia Artificial/Regresión polinómica#^pro-7-1-2
     pathRelacionado:
 ---
 ```dataviewjs

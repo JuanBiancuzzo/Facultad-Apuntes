@@ -9,6 +9,10 @@ nota:
     nombre:
     path: ingeniería electrónica/taller de señales/Clasificación en Inteligencia Artificial/Clasificador Bayesiano#^obs-7-3-1
     pathRelacionado:
+  - numero: 2
+    nombre:
+    path: ingeniería electrónica/taller de señales/Clasificación en Inteligencia Artificial/Clasificador#^pro-7-3-2
+    pathRelacionado:
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/bloqueMatematica/subtema", { subtema: dv.current() });

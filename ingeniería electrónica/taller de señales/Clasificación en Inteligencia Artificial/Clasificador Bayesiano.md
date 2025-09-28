@@ -20,12 +20,12 @@ vinculoFacultad:
 Se denomina clasificador bayesiano al clasificador óptimo que minimiza el valor [[ingeniería en informática/proba/Representación de variables aleatorias/Esperanza|esperado]] de la [[ingeniería electrónica/taller de señales/Regresión en Inteligencia Artificial/Función de costo|función de costo]] $\ell(x,~ y)$ dado por la [[ingeniería electrónica/taller de señales/Clasificación en Inteligencia Artificial/Loss 0-1|loss 0-1]] alcanzando el [[ingeniería en informática/orga/Machine learning/Aprendizaje supervisado#^error-bayesiano|error bayesiano]]. Este clasificador será presentado en el siguiente resultado 
 
 
-> [!observacion]+ Observación 7.3.1  
+> [!propiedad]+ Propiedad 7.3.1  
 > $\mathbb{P}(Y \ne \varphi(X)) \ge 1 - \mathbb{E}[ \max_{y} P_{Y \mid X = X}(y) ]$ con igualdad si y solo si $\varphi(x) = \arg\max_{y} P_{Y \mid X = x}(y)$. Donde la notación $P_{Y \mid X = X}(y)$ representa la [[ingeniería en informática/proba/Teoría de probabilidades/Probabilidad condicional|probabilidad condicional]] $P_{Y \mid X = x}(y)$ evaluada en la [[ingeniería en informática/proba/Variables y vectores aleatorios/Variable aleatoria|variable aleatoria]] $X$
 > 
 > > [!demostracion]- Demostración
 > > Usando las propiedades de la [[ingeniería en informática/proba/Representación de variables aleatorias/Esperanza|esperanza]] permite definir una probabilidad como $\mathbb{P}(Y = \varphi(X)) = \mathbb{E}[\mathbb{P}(Y = \varphi(X) \mid X)]$. La [[ingeniería en informática/proba/Teoría de probabilidades/Probabilidad condicional|probabilidad condicional]] dentro de la esperanza es muy fácil de acotar como $$ \mathbb{P}(Y = \varphi(X) \mid X = x) = P_{Y \mid X = x}(\varphi(x)) \le \max_{y \in \mathcal{Y}} P_{Y \mid X = x}(y) $$ con igualdad si y solo si $\varphi(x) = \arg\max_{y \in \mathcal{Y}} P_{Y \max X = x}(y)$. Luego $$ \mathbb{P}(Y \ne \varphi(X)) = 1 - \mathbb{E}[\mathbb{P}(Y = \varphi(X) \mid X)] \ge 1 - \mathbb{E}\left[ \max_{y \in \mathcal{Y}} P_{Y \mid X = X}(y) \right] $$
-^obs-7-3-1
+^pro-7-3-1
 
 Este resultado define el clasificador bayesiano como $\varphi(x) = \arg\max_{y} P_{Y \mid X = x}(y)$. El mismo no es para nada sorprendente, indica que el mejor clasificador es el que elige siempre la opción más probable
 

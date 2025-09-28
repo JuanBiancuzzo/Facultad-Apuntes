@@ -8,6 +8,7 @@ tags:
   - nota/facultad
   - nota/investigacion
 aliases:
+  - Vencinos más cercanos
   - KNN
 referencias:
   - "640"
@@ -17,6 +18,10 @@ vinculoFacultad:
     capitulo: 9
     materia: Organización de datos
     carrera: Ingeniería en informática
+  - tema: Clasificación en Inteligencia Artificial
+    capitulo: 3
+    materia: Taller de Procesamiento de Señales
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

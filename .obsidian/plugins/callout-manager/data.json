@@ -6,7 +6,8 @@
       "proposicion",
       "demostracion",
       "corolario",
-      "definicion"
+      "definicion",
+      "propiedad"
     ],
     "settings": {
       "teorema": [
@@ -82,6 +83,14 @@
           "changes": {
             "icon": "lucide-box",
             "color": "54, 144, 247"
+          }
+        }
+      ],
+      "propiedad": [
+        {
+          "changes": {
+            "icon": "lucide-codepen",
+            "color": "238, 233, 180"
           }
         }
       ]

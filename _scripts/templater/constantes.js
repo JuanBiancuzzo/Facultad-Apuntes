@@ -766,6 +766,7 @@ module.exports = () => ({
         bloques: {
             teorema: "teorema",
             defincion: "definicion",
+            propiedad: "propiedad",
             observacion: "observacion",
             proposicion: "proposicion",
             corolario: "corolario",
@@ -780,6 +781,11 @@ module.exports = () => ({
             callout: "definicion",
             nombre: "Definición",
             reducido: "def",
+        },
+        propiedad: {
+            callout: "propiedad",
+            nombre: "Propiedad",
+            reducido: "pro",
         },
         observacion: {
             callout: "observacion",

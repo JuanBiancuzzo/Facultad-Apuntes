@@ -42,7 +42,7 @@ Se define el mejor predictor, como el que minimiza el error cuadrático medio, a
 # Observación
 ---
 * Si $g(X) = c$ entonces podemos llegar a ver como $c = E[Y]$ por lo que  $E. C. M = Var(X)$ la "distancia minima" es la [[Varianza|varianza]]
-* Si $g(\mathbb{X}) = a + b \cdot X$ entonces buscando el minimo de $E.C.M$ encontramos que esta en función de la [[Covarianza cruzada|covarianza]] de la forma $$ \begin{cases} a = E[Y] - b \cdot E[X] \\ b = \displaystyle\frac{Cov(X, Y)}{Var(X)}  \end{cases} $$ entonces $g(\mathbb{X}) = \displaystyle\frac{Cov(X, Y)}{Var(X)} \cdot (X - E[X]) + E[Y]$, y esta es la [[Recta de regresión|recta de regresión]]
+* Si $g(\mathbb{X}) = a + b \cdot X$ entonces buscando el mínimo de $E.C.M$ encontramos que esta en función de la [[Covarianza cruzada|covarianza]] de la forma $$ \begin{cases} a = E[Y] - b \cdot E[X] \\ b = \displaystyle\frac{Cov(X, Y)}{Var(X)}  \end{cases} $$ entonces $g(\mathbb{X}) = \displaystyle\frac{Cov(X, Y)}{Var(X)} \cdot (X - E[X]) + E[Y]$, y esta es la [[Recta de regresión|recta de regresión]]
 
 # Nota
 ---
