@@ -60,18 +60,55 @@ Empezando por el estimador de $c_k$ se tiene $$ \hat{c}_k = \frac{1}{n} ~ \#(\ma
 > \end{align} $$
 
 Para el estimador del [[ingeniería en informática/proba/Representación de variables aleatorias/Esperanza|media]] por categoría $\mu_k$ se tiene $$ \hat{\mu}_k = \frac{1}{\#(\mathcal{D}_k)} \sum_{x \in \mathcal{D}_k} x $$
-> [!demostracion]+ Demostración
-> Se tiene que ver como para cada categoría es una [[ingeniería electrónica/estoca/Análisis de datos/Media muestral|media muestral]] por lo que es un estimador insesgado. Pero planteándolo de otra forma, se puede observar que las medias pueden escribirse como $$ \hat{\mu}_{k} = \frac{1}{\#(\mathcal{D}_k)} \sum_{i = 1}^{n} x_i ~ \mathbb{1}\Set{ y_i = k } $$ Se define $\textbf{y} = (y_1,~ \cdots,~ y_n)$ , donde $\#(\mathcal{D}_k) = f(\textbf{y})$ es función de las etiquetas. Utilizando las propiedades de la [[ingeniería en informática/proba/Esperanza condicional/Esperanza condicional|esperanza condicional]] $$ \mathbb{E}\left[ \hat{\mu}_k \right] = \mathbb{E}\left[ \mathbb{E}\left[ \hat{\mu}_k \mid \textbf{y} \right] \right] = \mathbb{E}\left[ \frac{1}{\#(\mathcal{D}_k)} \sum_{i = 1}^{n} \mathbb{E}\left[ \hat{\mu}_k \mid \textbf{y} \right] \mathbb{1}\Set{ y_i = k } \right] $$
+> [!demostracion]- Demostración
+> Se tiene que ver como para cada categoría es una [[ingeniería electrónica/estoca/Análisis de datos/Media muestral|media muestral]] por lo que es un estimador insesgado. Pero planteándolo de otra forma, se puede observar que las medias pueden escribirse como $$ \hat{\mu}_{k} = \frac{1}{\#(\mathcal{D}_k)} \sum_{i = 1}^{n} x_i ~ \mathbb{1}\Set{ y_i = k } $$ Se define $\textbf{y} = (y_1,~ \cdots,~ y_n)$ , donde $\#(\mathcal{D}_k) = f(\textbf{y})$ es función de las etiquetas. Utilizando las propiedades de la [[ingeniería en informática/proba/Esperanza condicional/Esperanza condicional|esperanza condicional]] $$ \mathbb{E}\left[ \hat{\mu}_k \right] = \mathbb{E}\left[ \mathbb{E}\left[ \hat{\mu}_k \mid \textbf{y} \right] \right] = \mathbb{E}\left[ \frac{1}{\#(\mathcal{D}_k)} \sum_{i = 1}^{n} \mathbb{E}\left[ x_i \mid \textbf{y} \right] \mathbb{1}\Set{ y_i = k } \right] $$
 > 
 > Dado que los pares $(x,~ y)$ son independientes entre ellos, $\mathbb{E}[x_i \mid \textbf{y}] = \mathbb{E}[x_i \mid y_i] = \mu_{y_i}$. Por lo tanto $$ \mathbb{E}\left[ \hat{\mu}_k \right] = \mathbb{E}\left[ \frac{\mu_k}{\#(\mathcal{D}_k)} \sum_{i = 1}^{n} \mathbb{1}\Set{ y_i = k } \right] = \mu_k $$
 
+Para el estimador de la [[ingeniería en informática/proba/Representación de variables aleatorias/Covarianza cruzada#^def-5-3-2|covarianza]] por categoría $\Sigma_k$ se tiene $$ \hat{\Sigma}_{k} = \frac{1}{\#(\mathcal{D}_k) - 1} \sum_{x \in \mathcal{D}_k} (x - \hat{\mu}_k) ~ (x - \hat{\mu}_k)^T $$
+> [!demostracion]- Demostración
+> Se puede observar que las matrices de covarianza se pueden escribirse como $$ \hat{\Sigma}_{k} = \frac{1}{\#(\mathcal{D}_k) - 1} \sum_{i = 1}^{n} (x_i - \hat{\mu}_k) ~ (x_i - \hat{\mu}_k)^T ~ \mathbb{1}\Set{ y_i = k } $$ Se define $\textbf{y} = (y_1,~ \cdots,~ y_n)$ , donde $\#(\mathcal{D}_k) = f(\textbf{y})$ es función de las etiquetas. Utilizando las propiedades de la [[ingeniería en informática/proba/Esperanza condicional/Esperanza condicional|esperanza condicional]] $$ \mathbb{E}\left[ \hat{\Sigma}_k \right] = \mathbb{E}\left[ \mathbb{E}\left[ \hat{\Sigma}_k \mid \textbf{y} \right] \right] = \mathbb{E}\left[ \frac{1}{\#(\mathcal{D}_k)} \sum_{i = 1}^{n} \mathbb{E}\left[ (x_i - \hat{\mu}_k) ~ (x_i - \hat{\mu}_k)^T \mid \textbf{y} \right] \mathbb{1}\Set{ y_i = k } \right] $$ 
+> 
+> Donde el producto dentro de la esperanza puede reescribirse como $(x_i - \hat{\mu}_k) ~ (x_i - \hat{\mu}_k)^T = x_i x_i - x_i \hat{\mu}_k^T - \hat{\mu}_k x_i^T + \hat{\mu}_k \hat{\mu}_k^T$. La esperanza de cada uno de estos términos puede escribirse como $$ \begin{align} 
+>     \mathbb{E}\left[ x_i x_i^T \mid \textbf{y} \right] &= \Sigma_{y_i} + \mu_{y_i} \mu_{y_i}^T \\
+>     \mathbb{E}\left[ x_i \hat{\mu}_k^T \mid \textbf{y} \right] &= \frac{1}{\#(\mathcal{D}_k)} \sum_{j = 1}^{n} \mathbb{E}\left[ x_i x_j^T \mid \textbf{y} \right] \mathbb{1}\Set{y_j = k} \\
+>      &= \frac{1}{\#(\mathcal{D}_k)} \left( \Sigma_k + \mu_k \mu_k^T + (\#(\mathcal{D}_k) - 1) \mu_{y_i} \mu_k^T \right) \\
+>     \mathbb{E}\left[ \hat{\mu}_k x_i^T \mid \textbf{y} \right] &= \frac{1}{\#(\mathcal{D}_k)} \left( \Sigma_k + \mu_k \mu_k^T + (\#(\mathcal{D}_k) - 1) \mu_k \mu_{y_i}^T \right) \\
+>     \mathbb{E}\left[ \hat{\mu}_k \hat{\mu}_k^T \mid \textbf{y} \right] &= \frac{1}{\#(\mathcal{D}_k)^2} \sum_{i = 1}^{n} \sum_{j = 1}^{n} \mathbb{E}\left[ x_i x_j^T \mid \textbf{y} \right] \mathbb{1}\Set{y_i = y_j = k} \\
+>      &= \frac{1}{\#(\mathcal{D}_k)^2} \left(\#(\mathcal{D}_k) \left(\Sigma_k + \mu_k \mu_k^T \right) + (\#(\mathcal{D}_k)^2 - \#(\mathcal{D}_k)) \mu_k \mu_{y_i}^T \right) \\
+>      &= \frac{1}{\#(\mathcal{D}_k)^2} \left(\#(\mathcal{D}_k) \Sigma_k + \#(\mathcal{D}_k)^2 \mu_k \mu_{y_i}^T \right) \\
+>      &= \frac{1}{\#(\mathcal{D}_k)} \Sigma_k + \mu_k \mu_{y_i}^T \\
+> \end{align} $$
+> 
+> Ahora, teniendo en cuenta que en la sumatoria inicial se tiene la indicadora $\mathbb{1}\Set{ y_i = k }$ las cuatro ecuaciones se simplifican a $$ \begin{align} 
+>     \mathbb{E}\left[ x_i x_i^T \mid \textbf{y} \right] &= \Sigma_k + \mu_k \mu_k^T \\
+>     \mathbb{E}\left[ x_i \hat{\mu}_k^T \mid \textbf{y} \right] &= \frac{1}{\#(\mathcal{D}_k)} \left( \Sigma_k + \mu_k \mu_k^T + (\#(\mathcal{D}_k) - 1) \mu_k \mu_k^T \right) \\
+>      &= \frac{1}{\#(\mathcal{D}_k)} \left( \Sigma_k + \#(\mathcal{D}_k) \mu_k \mu_k^T \right) \\
+>      &= \frac{1}{\#(\mathcal{D}_k)} \Sigma_k +\mu_k \mu_k^T \\
+>     \mathbb{E}\left[ \hat{\mu}_k x_i^T \mid \textbf{y} \right] &= \frac{1}{\#(\mathcal{D}_k)} \Sigma_k +\mu_k \mu_k^T \\
+>     \mathbb{E}\left[ \hat{\mu}_k \hat{\mu}_k^T \mid \textbf{y} \right] &= \frac{1}{\#(\mathcal{D}_k)} \Sigma_k + \mu_k \mu_{y_i}^T \\ 
+> \end{align} $$
+> 
+> Resultando en el producto inicial dando $$ \begin{align} 
+>     \mathbb{E}\left[ (x_i - \hat{\mu}_k) ~ (x_i - \hat{\mu}_k)^T \mid \textbf{y} \right] \mathbb{1}\Set{ y_i = k } &= \left( \Sigma_k + \mu_k \mu_k^T \right) - \left( \frac{1}{\#(\mathcal{D}_k)} \Sigma_k + \mu_k \mu_k^T \right) \\
+>      &= \frac{\#(\mathcal{D}_k) - 1}{\#(\mathcal{D}_k)} \Sigma_k \mathbb{1}\Set{ y_i = k }
+> \end{align} $$
+> 
+> Finalmente compilando lo desarrollado $$ \begin{align} 
+>     \mathbb{E}\left[ \hat{\Sigma}_k \right] &= \mathbb{E}\left[ \mathbb{E}\left[ \hat{\Sigma}_k \mid \textbf{y} \right] \right] \\
+>      &= \mathbb{E}\left[ \frac{1}{\#(\mathcal{D}_k) - 1} \sum_{i = 1}^{n} \frac{\#(\mathcal{D}_k) - 1}{\#(\mathcal{D}_k)} \Sigma_k \mathbb{1}\Set{ y_i = k } \right] \\
+>      &= \mathbb{E}\left[ \frac{\Sigma_k}{\#(\mathcal{D}_k)} \sum_{i = 1}^{n} \mathbb{1}\Set{ y_i = k } \right] \\
+>     \mathbb{E}\left[ \hat{\Sigma}_k \right] &= \Sigma_k \\
+> \end{align} $$
 
-
-
-$$ \begin{align} 
-    \mathcal{D}_k &= \Set{ x_i : 1 \le i \le n \land y_i = k } \\ 
-    \hat{c}_k &= \frac{1}{n} ~ \#(\mathcal{D}_k) \tag{1} \\
-    \hat{\mu}_k = \frac{1}{\#(\mathcal{D}_k)} \sum_{x \in \mathcal{D}_k} x \tag{2} \\
-    \hat{\Sigma}_{k} &= \frac{1}{\#(\mathcal{D}_k) - 1} \sum_{x \in \mathcal{D}_k} (x - \hat{\mu}_k) ~ (x - \hat{\mu}_k)^T \tag{3} \\
-    \hat{\Sigma} &= \frac{1}{n - K} \sum_{k = 1}^{K} (\#(\mathcal{D}_k) - 1) \hat{\Sigma}_{k} \tag{4}
-\end{align} $$ donde en el caso de QDA se utilizan las $\hat{\Sigma}_k$ (no es necesario calcular $\hat{\Sigma}$) y en el caso de LDA las $\hat{\Sigma}_k$ solamente son un paso intermedio en el cálculo de la covarianza del modelo $\hat{\Sigma}$
+Por último el estimador de $\Sigma$ donde solo es necesario para LDA donde en el caso de QDA se utilizan las $\hat{\Sigma}_k$ (no es necesario calcular $\hat{\Sigma}$) $$ \hat{\Sigma} = \frac{1}{n - K} \sum_{k = 1}^{K} (\#(\mathcal{D}_k) - 1) \hat{\Sigma}_{k} $$
+> [!demostracion]- Demostración
+> Supongamos que $X \mid_{Y = k} \sim \mathcal{N}(\mu_k,~ \Sigma)$ y $Y \sim Cat(c_1,~ \cdots,~ c_K)$. En este caso, las verdaderas covarianzas son iguales pero los estimadores $\hat{\Sigma}_k$ son distintos. Los mismos se combinan, utilizando el desarrollo de la demostración del estimador $\hat{\Sigma}_k$, como $$ \begin{align} 
+>     \mathbb{E}\left[ \hat{\Sigma} \right] &= \frac{1}{n - K} \sum_{k = 1}^{K} \mathbb{E}\left[ (\#(\mathcal{D}_k) - 1) \hat{\Sigma}_{k} \right] \\
+>     &= \frac{1}{n - K} \sum_{k = 1}^{K} \mathbb{E}\left[ \sum_{i = 1}^{n} (x_i - \hat{\mu}_k) ~ (x_i - \hat{\mu}_k)^T ~ \mathbb{1}\Set{ y_i = k } \right] \\
+>     &= \frac{1}{n - K} \sum_{k = 1}^{K} \mathbb{E}\left[ (\#(\mathcal{D}_k) - 1) \Sigma_k \right] \\
+>     &= \frac{\Sigma}{n - K} \sum_{k = 1}^{K} \mathbb{E}\left[ (\#(\mathcal{D}_k) - 1) \right] \\
+>     &= \frac{\Sigma}{n - K} \sum_{k = 1}^{K} (n ~ c_k - 1) \\
+>     &= \frac{\Sigma}{n - K} \left( n ~ \sum_{k = 1}^{K} c_k - K \right) \\
+>    \mathbb{E}\left[ \hat{\Sigma} \right] &= \Sigma
+> \end{align}$$

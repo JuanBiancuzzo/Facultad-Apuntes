@@ -11,6 +11,8 @@ aliases:
   - Convergencia en media cuadrática#^def-5-2-9
   - Error cuadrático medio
   - ECM
+  - Mean squared error
+  - MSE
 vinculoFacultad:
   - tema: Distribuciones multivariables
     capitulo: 2
@@ -30,7 +32,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Dadas dos [[Variable aleatoria|variables aleatorias]] $X$ e $Y$ en [[Espacio de Hilbert de segundo orden|espacio L2 de variables aleatorias]] $L^2$, definimos el error cuadrático medio (ECM) entre ellas como $$ \text{ECM}(X,~ Y) = E\left[ (X - Y)^2 \right] $$
+Dadas dos [[Variable aleatoria|variables aleatorias]] $X$ e $Y$ en [[Espacio de Hilbert de segundo orden|espacio L2 de variables aleatorias]] $L^2$, definimos el error cuadrático medio (ECM) entre ellas como $$ \text{ECM}(X,~ Y) = \mathbb{E}\left[ (X - Y)^2 \right] $$
 donde se puede decir que es la [[Esperanza#^def-5-2-8|energía]] de la diferencia entre $X$ e $Y$
 
 Para el caso de que una de las dos variables sea una [[Varianza##^variable-degenerada|variable degenerada]] a una constante $c$, donde podemos decir que $$ \text{ECM}(X,~ c) = \sigma_X^2 + |E[X] - c|^2 $$ donde $\sigma_X^2$ es la [[Varianza|varianza]] de $X$ y $E[X] - c$ es el [[Sesgo|sesgo]] de $X$, donde lo podemos interpretar como $X$ un [[Estimador|estimador]] de $c$

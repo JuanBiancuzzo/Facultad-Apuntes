@@ -32,8 +32,7 @@ Teniendo $m$ puntos en $n$ dimensiones, podemos usar KNN para [[Problema de clas
 
 Agarrando los $k$ vecinos más cercanos, en caso de ser un problema de clasificación, tomamos la etiqueta que más se repita, y si es un problema de regresión tomaremos un promedio de los valores.
 
-Notemos que como calcular la distancia también es un hiper-parámetro.
-
+Notemos que como calcular la distancia también es un hiper-parámetro
 
 # Referencias
 ---

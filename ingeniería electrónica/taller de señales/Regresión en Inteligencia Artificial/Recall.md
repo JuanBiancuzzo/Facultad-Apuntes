@@ -21,4 +21,4 @@ vinculoFacultad:
 ```
 # Definición
 ---
-El recall es una [[ingeniería en informática/orga/Machine learning/Métrica de un modelo|métrica]] intenta ... donde se define como $$ \text{Recall} = \frac{\#\text{recuperados}}{\#\text{totales}} $$ donde tiene un [[Hiper-parámetros de un modelo|hiper-parámetro]] de como determinar que es un valor correcto
+El recall es una [[ingeniería en informática/orga/Machine learning/Métrica de un modelo|métrica]] intenta estimar la [[investigación/matemática/Probabilidad/Probabilidad|probabilidad]] de  donde se define como $$ \text{Recall} = \frac{\#\text{recuperados}}{\#\text{totales}} $$ donde tiene un [[Hiper-parámetros de un modelo|hiper-parámetro]] de como determinar que es un valor correcto
