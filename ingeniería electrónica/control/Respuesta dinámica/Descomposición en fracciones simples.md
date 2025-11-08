@@ -3,6 +3,8 @@ dia: 2025-03-14
 etapa: terminado
 referencias:
   - "1019"
+aliases:
+  - Partial fraction decomposition
 tags:
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - nota/facultad

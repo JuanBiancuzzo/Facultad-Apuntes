@@ -1,4 +1,4 @@
----
+        ---
 dia: 2023-01-23
 tags:
   - carrera/ingeniería-electrónica/intro/Circuitos-con-resistencias

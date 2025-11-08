@@ -1,11 +1,12 @@
 ---
-dia: 2025-09-26
+dia: 2024-11-10
 etapa: empezado
-referencias: []
+referencias:
+  - "487"
 aliases:
   - GMM
   - Gaussian Mixture Model
-  - Función discriminante#^funcion-discriminante  
+  - Función discriminante#^funcion-discriminante
   - Análisis del discriminante cuadrático
   - Quadratic Discriminant Analysis
   - QDA
@@ -14,8 +15,11 @@ aliases:
   - LDA#Análisis del discriminante lineal
 tags:
   - carrera/ingeniería-electrónica/taller-de-señales/Clasificación-en-Inteligencia-Artificial
-  - investigación/ciencias-de-la-computación/algoritmos
   - nota/facultad
+  - investigación/ciencias-de-la-computación/algoritmos
+  - investigación/ciencias-de-la-computación/Machine-learning
+  - investigación/machine-Learning
+  - investigación/matemática/Estadística/Machine-learning
   - nota/investigacion
 vinculoFacultad:
   - tema: Clasificación en Inteligencia Artificial
@@ -112,3 +116,10 @@ Por último el estimador de $\Sigma$ donde solo es necesario para LDA donde en e
 >     &= \frac{\Sigma}{n - K} \left( n ~ \sum_{k = 1}^{K} c_k - K \right) \\
 >    \mathbb{E}\left[ \hat{\Sigma} \right] &= \Sigma
 > \end{align}$$
+
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

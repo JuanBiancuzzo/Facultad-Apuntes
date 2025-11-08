@@ -1,9 +1,9 @@
 ---
-capitulo: 9
+capitulo: 3
 tags:
-  - carrera/ingeniería-electrónica/legal/Derechos-comerciales-y-sociales
+  - carrera/ingeniería-electrónica/legal/Sociedad
   - facultad/resumen
-nombreResumen: Derechos comerciales y sociales
+nombreResumen: Sociedad
 materiaResumen: ingeniería electrónica/legal/Legislación y ejercicio profesional (9111).md
 infoTemaMateria:
   materia: Legislación y ejercicio profesional

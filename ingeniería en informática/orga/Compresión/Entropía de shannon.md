@@ -17,15 +17,23 @@ vinculoFacultad:
     capitulo: 1
     materia: Taller de Comunicaciones Digitales
     carrera: Ingeniería electrónica
+  - tema: Clasificación en Inteligencia Artificial
+    capitulo: 3
+    materia: Taller de Procesamiento de Señales
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
-La entropía de una [[ingeniería electrónica/taller de comunicaciones/Elementos de Teoría de Información/Fuente discreta sin memoria|fuente discreta sin memoria]] con [[ingeniería en informática/discreta/Autómatas/Alfabeto|alfabeto]] $\mathcal{S}$, es el [[ingeniería en informática/proba/Representación de variables aleatorias/Esperanza|valor medio]] de la [[ingeniería en informática/algo 1/Introducción a la programación/Información|información]] $I(s_i)$ sobre el alfabeto $\mathcal{S}$ $$ H = E[I(\mathcal{S})] -\sum_i \mathbb{P}(s_i) \cdot \log_2(\mathbb{P}(s_i)) $$ donde $s_i$ es el [[ingeniería en informática/proba/Teoría de probabilidades/Evento|evento]] que se quiere mandar, y por lo tanto $\mathbb{P}(s_i)$ es la [[investigación/matemática/Probabilidad/Probabilidad|probabilidad]] que ocurra ese evento
+La entropía, recibe su nombre por su analogía con la [[Entropía|termodinámica]], y representa el [[ingeniería en informática/proba/Representación de variables aleatorias/Esperanza|valor medio]] de la [[ingeniería en informática/algo 1/Introducción a la programación/Información|información]] que aporta una [[ingeniería en informática/proba/Variables y vectores aleatorios/Variable aleatoria|variable aleatoria]]. 
 
-Las unidades de la entropía son [[ingeniería en informática/algo 1/Introducción a la programación/Información#Bit|bits]] por símbolo de la fuente
+En el caso de tener una [[ingeniería electrónica/taller de comunicaciones/Elementos de Teoría de Información/Fuente discreta sin memoria|fuente discreta sin memoria]] con [[ingeniería en informática/discreta/Autómatas/Alfabeto|alfabeto]] $\mathcal{S}$, es el valor medio de la información $I(s_i)$ sobre el alfabeto $\mathcal{S}$ $$ H = E[I(\mathcal{S})] -\sum_i \mathbb{P}(s_i) \cdot \log_2(\mathbb{P}(s_i)) $$ donde $s_i$ es el [[ingeniería en informática/proba/Teoría de probabilidades/Evento|evento]] que se quiere mandar, y por lo tanto $\mathbb{P}(s_i)$ es la [[investigación/matemática/Probabilidad/Probabilidad|probabilidad]] que ocurra ese evento
+
+Las unidades de la entropía son [[ingeniería en informática/algo 1/Introducción a la programación/Información#Bit|bits]] por símbolo de la fuente, donde cabe aclarar que si la base del [[ingeniería electrónica/analisis 3/Funciones elementales/Logaritmo principal|logaritmo]] es distinto de $2$ las unidades cambiarán. En los casos más conocidos 
+* Con base igual a $10$ se lo llama Hartley
+* Con base igual a $e$ se lo llama Nat
 
 Esta entropía nos va a dar una idea de que tan impredecible es un fenómeno. Ya que se compensan la probabilidad de un evento y los bits de información de ese evento.
 
