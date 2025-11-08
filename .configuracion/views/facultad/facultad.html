@@ -1,0 +1,113 @@
+{{ block "facultad" . }}
+    <header id="header">
+        <h3>Own wiki</h3>
+    </header>
+    <main id="main">
+        <div class="sidebar contenido" id="left-sidebar"></div>
+        <div class="contenido" id="centro" hx-swap="innerHTML" x-data="{ pathStack: [['Own wiki', '#body', '{{ PathViewURL "Index" }}'], ['Facultad', '#body', '{{ PathViewURL "Facultad" }}']] }">
+            <div 
+                hx-trigger="revealed"
+                hx-get="{{ EndpointURL "Facultad/Carreras" }}"
+                hx-swap="outterHTML">
+                Cargando...
+            </div>
+        </div>
+        <div class="sidebar contenido" id="right-sidebar">
+            Podria decir algo
+        </div>
+    </main>
+{{ end }}
+
+{{ block "path" . }}
+    <hr style="margin-bottom: .5em;">
+    <div style="display: flex; flex-direction: row; padding-left: .5em;">
+        <template x-for="(path, index) in pathStack" :key="index">
+            <span class="pathElement"
+                    x-on:click="pathStack = pathStack.slice(0, index + 1)"
+                    x-show="index + 1 < pathStack.length"
+                >
+                <h4 x-bind:hx-target="path[1]" x-bind:hx-get="path[2]" x-text="path[0]"
+                ></h4> 
+                <p style="padding: 0 .5em 0 .5em;" x-show="index + 2 < pathStack.length"> > </p>
+            </span>
+        </template>
+    </div>
+    <hr style="margin-top: .5em;">
+{{ end }}
+
+{{ block "carreras" . }}
+    <h1 style="display: flex;"> Facultad </h1>
+    {{ template "path" . }}
+    <div style="display: grid;">
+        {{ range .Carreras }}
+            <h3 hx-target="#centro" hx-get="{{ EndpointURL "Facultad/Materias" .id }}" 
+                x-on:click="pathStack.push([ '{{ .nombre }}', '#centro', '{{ EndpointURL "Facultad/Carreras" }}'])"
+            >
+                {{ .nombre }}
+            </h3>
+        {{ end }}
+    </div>
+{{ end }}
+
+{{ block "carrera" . }}
+    <h1 style="display: flex;"> {{ .Carrera.nombre }} </h1>
+    {{ template "path" . }}
+
+    <div id="elementos" style="display: grid;">
+        {{ range  .Materias }}
+            {{ if eq .Tabla "Materias" }}
+                <div hx-target="#centro" hx-get="{{ EndpointURL "Facultad/Temas" .refCarrera.id .id }}" 
+                    x-on:click="pathStack.push([ '{{ .nombre }}', '#centro', '{{ EndpointURL "Facultad/Materias" .Carrera.id }}'])"
+                    style="background-color: blue;">
+                    <h3>
+                        {{ .nombre }}
+                    </h3>
+                </div>
+            {{ else }}
+                <div hx-target="#centro" hx-get="{{ EndpointURL "Facultad/Temas" .refCarrera.id .refMateria.id }}" 
+                    x-on:click="pathStack.push([ '{{ .nombre }}', '#centro', '{{ EndpointURL "Facultad/Materias" .Carrera.id }}'])"
+                    style="background-color: green;">
+                    <h3>
+                        {{ .nombre }}
+                    </h3>
+                </div>
+            {{ end }}
+        {{ end }}
+    </div>
+{{ end }}
+
+{{ block "materia" . }}
+    {{ $idCarrera := .Materia.refCarrera.id }}
+    {{ $idMateria := .Materia.id }}
+    <h1 style="display: flex;"> {{ .Materia.nombre }} </h1>
+    {{ template "path" . }}
+
+    {{ range .Temas }}
+        <h3 hx-target="#centro" hx-get="{{ EndpointURL "Facultad/Notas" $idCarrera $idMateria .id }}">
+            {{ .nombre }}
+        </h3>
+    {{ end }}
+{{ end }}
+
+{{ block "temaMateria" . }}
+    {{ $idCarrera := .Tema.refMateria.refCarrera.id }}
+    {{ $idMateria := .Tema.refMateria.id }}
+    <h1 style="display: flex;"> {{ .Tema.nombre }} </h1>
+    <hr style="margin-bottom: .5em;">
+    <div style="display: flex; flex-direction: row; padding-left: .5em;">
+        <h4 hx-target="#body" hx-get="{{ PathViewURL "Index" }}"> Own wiki </h4> 
+            <p style="padding: 0 .5em 0 .5em;"> > </p>
+        <h4 hx-target="#centro" hx-get="{{ EndpointURL "Facultad/Carreras" }}"> Facultad </h4>
+            <p style="padding: 0 .5em 0 .5em;"> > </p>
+        <h4 hx-target="#centro" hx-get="{{ EndpointURL "Facultad/Materias" $idCarrera }}"> {{ .Tema.refMateria.refCarrera.nombre }} </h4>
+            <p style="padding: 0 .5em 0 .5em;"> > </p>
+        <h4 hx-target="#centro" hx-get="{{ EndpointURL "Facultad/Temas" $idCarrera $idMateria }}"> {{ .Tema.refMateria.nombre }} </h4>
+    </div>
+    <hr style="margin-top: .5em;">
+    <hr>
+    <div id="elementos" style="display: grid;">
+        {{ range  .Notas }}
+            <h3> {{ .nombre }} </h3>
+        {{ end }}
+    </div>
+{{ end }}

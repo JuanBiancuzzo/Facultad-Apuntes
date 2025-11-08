@@ -1,11 +1,2 @@
-.obsidian/workspace.json
-.obsidian/workspaces.json
-.obsidian/workspace-mobile.json
-.obsidian/appearance.json                     
-.obsidian/backlink.json                     
-
-.obsidian/plugins/git/data.json
-.obsidian/plugins/oz-clear-unused-images/data.json
-
-.trash
-temp/
+*.db-shm
+*.db-wal
