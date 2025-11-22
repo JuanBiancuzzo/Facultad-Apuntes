@@ -1,6 +1,6 @@
 ---
 etapa: empezado
-estado: Voy a cursarla este cuatri
+estado: Falta entrar en detalle en todas las secciones
 tags:
   - facultad/materia
   - carrera/ingeniería-electrónica/circuitos-2

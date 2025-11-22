@@ -1,6 +1,6 @@
 ---
 etapa: empezado
-estado: Voy a cursarla este cuatri
+estado: Falta terminar introducción a procesos aleatorios, y análisis de procesos
 tags:
   - facultad/materia
   - carrera/ingeniería-electrónica/estoca

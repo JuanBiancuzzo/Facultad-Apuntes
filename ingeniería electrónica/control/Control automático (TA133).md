@@ -1,6 +1,6 @@
 ---
 etapa: empezado
-estado: Voy a cursarla este cuatri
+estado: Falta desde Root locus en adelantes
 tags:
   - facultad/materia
   - carrera/ingeniería-electrónica/control

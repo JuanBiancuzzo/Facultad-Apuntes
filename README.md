@@ -17,24 +17,24 @@ Un listado de materias y su estado dividido por carrera
 ---
 Un listado de materias, sus códigos y su estado actual
 
-| Materia                                                                                                                                                | Código | Estado                                         |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | ---------------------------------------------- |
-| [Análisis de circuitos](ingeniería%20electrónica/adc/Análisis%20de%20circuitos%20(8604).md)                                                            | 8604   | Terminado                                      |
-| [Análisis matemático 3](ingeniería%20electrónica/analisis%203/Análisis%20matemático%203%20(6110).md)                                                   | 6110   | Terminado                                      |
-| [Circuitos microelectrónicos](ingeniería%20electrónica/circuitos/Circuitos%20microelectrónicos%20(TB068).md)                                           | TB068  | Falta últimos temas                            |
-| [Control automático](ingeniería%20electrónica/control/Control%20automático%20(TA133).md)                                                               | TA133  | Voy a cursarla este cuatri                     |
-| [Dispositivos semiconductores](ingeniería%20electrónica/dispo/Dispositivos%20semiconductores%20(8603).md)                                              | 8603   | Terminado                                      |
-| [Electromagnetismo aplicado](ingeniería%20electrónica/electro/Electromagnetismo%20aplicado%20(TB069).md)                                               | TB069  | Voy a cursarla este cuatri                     |
-| [Física 3](ingeniería%20electrónica/fisica%203/Física%203%20(8203).md)                                                                                 | 8203   | Falta pasar el resumen                         |
-| [Introducción a la ingeniería electronica](ingeniería%20electrónica/intro/Introducción%20a%20la%20ingeniería%20electronica%20(8602).md)                | 8602   | Terminado                                      |
-| [Legislación y ejercicio profesional](ingeniería%20electrónica/legal/Legislación%20y%20ejercicio%20profesional%20(9111).md)                            | 9111   | Falta terminar los últimos capítulos           |
-| [Procesos estocásticos](ingeniería%20electrónica/estoca/Procesos%20estocásticos%20(TA132).md)                                                          | TA132  | Voy a cursarla este cuatri                     |
-| [Seguridad ambiental y del trabajo](ingeniería%20electrónica/seguridad/Seguridad%20ambiental%20y%20del%20trabajo%20(9704).md)                          | 9704   | Terminado                                      |
-| [Señales y sistemas](ingeniería%20electrónica/señales/Señales%20y%20sistemas%20(TB065).md)                                                             | TB065  | Falta pasar las presentaciones del último tema |
-| [Taller de Comunicaciones Digitales](ingeniería%20electrónica/taller%20de%20comunicaciones/Taller%20de%20Comunicaciones%20Digitales%20(TA137).md)      | TA137  | Sin empezar                                    |
-| [Taller de diseño de circuitos electrónicos](ingeniería%20electrónica/circuitos%202/Taller%20de%20diseño%20de%20circuitos%20electrónicos%20(TA138).md) | TA138  | Voy a cursarla este cuatri                     |
-| [Taller de Procesamiento de Señales](ingeniería%20electrónica/taller%20de%20señales/Taller%20de%20Procesamiento%20de%20Señales%20(TA136).md)           | TA136  | Sin empezar                                    |
-| [Taller de sistemas embebidos](ingeniería%20electrónica/embebidos/Taller%20de%20sistemas%20embebidos%20(TA134).md)                                     | TA134  | Voy a cursarla este cuatri                     |
+| Materia                                                                                                                                                | Código | Estado                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | ------------------------------------------------------------------------------------ |
+| [Análisis de circuitos](ingeniería%20electrónica/adc/Análisis%20de%20circuitos%20(8604).md)                                                            | 8604   | Terminado                                                                            |
+| [Análisis matemático 3](ingeniería%20electrónica/analisis%203/Análisis%20matemático%203%20(6110).md)                                                   | 6110   | Terminado                                                                            |
+| [Circuitos microelectrónicos](ingeniería%20electrónica/circuitos/Circuitos%20microelectrónicos%20(TB068).md)                                           | TB068  | Falta últimos temas                                                                  |
+| [Control automático](ingeniería%20electrónica/control/Control%20automático%20(TA133).md)                                                               | TA133  | Falta desde Root locus en adelantes                                                  |
+| [Dispositivos semiconductores](ingeniería%20electrónica/dispo/Dispositivos%20semiconductores%20(8603).md)                                              | 8603   | Terminado                                                                            |
+| [Electromagnetismo aplicado](ingeniería%20electrónica/electro/Electromagnetismo%20aplicado%20(TB069).md)                                               | TB069  | Falta terminar ondas confinadas y antenas                                            |
+| [Física 3](ingeniería%20electrónica/fisica%203/Física%203%20(8203).md)                                                                                 | 8203   | Falta pasar el resumen                                                               |
+| [Introducción a la ingeniería electronica](ingeniería%20electrónica/intro/Introducción%20a%20la%20ingeniería%20electronica%20(8602).md)                | 8602   | Terminado                                                                            |
+| [Legislación y ejercicio profesional](ingeniería%20electrónica/legal/Legislación%20y%20ejercicio%20profesional%20(9111).md)                            | 9111   | Falta terminar los últimos capítulos                                                 |
+| [Procesos estocásticos](ingeniería%20electrónica/estoca/Procesos%20estocásticos%20(TA132).md)                                                          | TA132  | Falta terminar introducción a procesos aleatorios, y análisis de procesos            |
+| [Seguridad ambiental y del trabajo](ingeniería%20electrónica/seguridad/Seguridad%20ambiental%20y%20del%20trabajo%20(9704).md)                          | 9704   | Terminado                                                                            |
+| [Señales y sistemas](ingeniería%20electrónica/señales/Señales%20y%20sistemas%20(TB065).md)                                                             | TB065  | Falta pasar las presentaciones del último tema                                       |
+| [Taller de Comunicaciones Digitales](ingeniería%20electrónica/taller%20de%20comunicaciones/Taller%20de%20Comunicaciones%20Digitales%20(TA137).md)      | TA137  | Cursandola                                                                           |
+| [Taller de diseño de circuitos electrónicos](ingeniería%20electrónica/circuitos%202/Taller%20de%20diseño%20de%20circuitos%20electrónicos%20(TA138).md) | TA138  | Falta entrar en detalle en todas las secciones                                       |
+| [Taller de Procesamiento de Señales](ingeniería%20electrónica/taller%20de%20señales/Taller%20de%20Procesamiento%20de%20Señales%20(TA136).md)           | TA136  | Cursandola                                                                           |
+| [Taller de sistemas embebidos](ingeniería%20electrónica/embebidos/Taller%20de%20sistemas%20embebidos%20(TA134).md)                                     | TA134  | Falta terminar los protocolos y hacer la parte de sistemas operativos en tiempo real |
 
 ### Ingeniería en informática
 ---

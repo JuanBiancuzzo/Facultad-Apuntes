@@ -2,7 +2,7 @@
 cuatri: 24C2
 codigo: TA134
 plan: 2023
-estado: Voy a cursarla este cuatri
+estado: Falta terminar los protocolos y hacer la parte de sistemas operativos en tiempo real
 tags:
   - carrera/ingeniería-electrónica/embebidos
   - facultad/materia

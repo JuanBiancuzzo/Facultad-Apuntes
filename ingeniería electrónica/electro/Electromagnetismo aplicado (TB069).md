@@ -2,7 +2,7 @@
 cuatri: 24C2
 codigo: TB069
 plan: 2023
-estado: Voy a cursarla este cuatri
+estado: Falta terminar ondas confinadas y antenas
 tags:
   - carrera/ingeniería-electrónica/electro
   - facultad/materia

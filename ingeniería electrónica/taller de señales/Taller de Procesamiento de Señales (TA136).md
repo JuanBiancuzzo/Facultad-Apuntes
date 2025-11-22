@@ -1,6 +1,6 @@
 ---
-etapa: sin-empezar
-estado: Sin empezar
+etapa: empezado
+estado: Cursandola
 tags:
   - facultad/materia
   - carrera/ingeniería-electrónica/taller-de-señales
