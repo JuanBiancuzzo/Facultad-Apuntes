@@ -19,4 +19,4 @@ Las tablas hacen referencia a objetos de una [[Base de datos relacionales|base d
 
 Las tablas se componen de dos estructuras
 * [[Registro SQL|Registros]]
-* [[Campo SQL|Campos]]
+* [[ingeniería en informática/bdd/General/Campo|Campos]]

@@ -8,7 +8,7 @@ tags:
   - nota/facultad
   - nota/investigacion
 aliases:
-  - Trait
+  - En Rust#Trait
 etapa: ampliar
 vinculoFacultad:
   - tema: Herramientas de Diseño

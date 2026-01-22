@@ -60,7 +60,7 @@ Se tiene $4$ componentes
 
 ## gRPC
 ---
-Definición de RPC basada en [[Hypertext Transfer Protoco 2 (HTTP2)l|HTTP2]] para transporte usa Protocol Buffer para encoding y tiene [[Topología de comunicación#^unicast|conexión punto a punto]] basada en `server:port`. Usa un archivo con extensión `.proto` para definir los servicios y los mensajes 
+Definición de RPC basada en [[Hypertext Transfer Protoco 2 (HTTP2)l|HTTP2]] para transporte usa [[Protocol Buffer|Protocol Buffer]] para encoding y tiene [[Topología de comunicación#^unicast|conexión punto a punto]] basada en `server:port`. Usa un archivo con extensión `.proto` para definir los servicios y los mensajes 
 
 # Referencias
 ---

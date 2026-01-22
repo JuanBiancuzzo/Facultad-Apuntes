@@ -13,9 +13,12 @@ vinculoFacultad:
 ---
 # Definición
 ---
+
+## En SQL
+---
 Corresponde al nombre de la columna. Debe ser único y además de tener un tipo de dato asociado
 
-## Ejemplo
+### Ejemplo
 ---
 Teniendo la tabla
 

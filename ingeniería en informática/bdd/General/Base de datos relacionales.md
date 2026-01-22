@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Las [[Base de datos|base de datos]] relacionales, son [[Tabla SQL|tablas]] con [[Campo SQL|columnas (atributos)]], tiene claves primarias y claves foráneas
+Las [[Base de datos|base de datos]] relacionales, son [[Tabla SQL|tablas]] con [[ingeniería en informática/bdd/General/Campo|columnas (atributos)]], tiene claves primarias y claves foráneas
 
 ## Claves primarias
 ---
