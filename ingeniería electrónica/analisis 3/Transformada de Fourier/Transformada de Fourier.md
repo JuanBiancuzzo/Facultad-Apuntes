@@ -59,7 +59,8 @@ Sea $x(t)$ tal que $X(j\omega) = \mathcal{F}[x(t)]$, tenemos que $$ \mathcal{F}[
 ### Conjugación y simetría conjugada
 ---
 Sea $x(t)$ tal que $X(j\omega) = \mathcal{F}[x(t)]$, tenemos $$ \mathcal{F}[x^*(t - t_0)] = X^*(-j\omega) $$
-* Si $x(t)$ es real $X(j\omega) = X^*(-j\omega)$. Esto implica $\mathcal{Re}(X(j\omega)) = \mathcal{Re}(X(-j\omega))$  y $\mathcal{Im}(X(j\omega)) = -\mathcal{Im}(X(-j\omega))$
+%% Hacer demostraciones  %%
+* Si $x(t)$ es real $X(j\omega) = X^*(-j\omega)$. Esto implica $\mathcal{Re}(X(j\omega)) = \mathcal{Re}(X(-j\omega))$  y $\mathcal{Im}(X(j\omega)) = -\mathcal{Im}(X(-j\omega))$ y que podemos decir, independientemente de $x(t)$ que $\lvert  X(j\omega) \rvert$ es una función par
 	* Si además $x(t)$ es [[Función par|par]] se puede chequear que $X(j\omega) = X^*(j\omega)$. Entonces $X(j\omega)$ es real y par
 	* Si además $x(t)$ es [[Función impar|impar]] se puede chequear que $X(j\omega) = -X^*(j\omega)$. Entonces $X(j\omega)$ es imaginaria pura e impar
 

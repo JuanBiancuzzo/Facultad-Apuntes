@@ -7,6 +7,8 @@ tags:
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c
   - nota/facultad
   - nota/investigacion
+aliases:
+  - File
 vinculoFacultad:
   - tema: Manejo de archivos
     capitulo: 4
