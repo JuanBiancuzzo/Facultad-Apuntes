@@ -3,6 +3,8 @@ dia: 2024-11-21
 etapa: ampliar
 referencias:
   - "611"
+aliases: 
+  - Smoothstep
 tags:
   - investigación/animation
   - investigación/game-engine/Animation-Engine
@@ -13,7 +15,7 @@ tags:
 ```
 # Definición
 ---
-Crea una animación que acelera y/o desacelera usando la formula $f(t) = t^2$
+Esta [[investigación/animation/Ease function|easing function]] crea una animación que acelera y/o desacelera usando la formula $f(t) = t^2$
 
 ```tikz
 \usepackage{amssymb}

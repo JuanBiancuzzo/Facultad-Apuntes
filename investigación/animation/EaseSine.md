@@ -17,7 +17,7 @@ aliases:
 ```
 # Definición
 ---
-Crea una animación que acelera y/o desacelera usando la formula del [[Función seno|seno]]
+Esta [[investigación/animation/Ease function|easing function]] crea una animación que acelera y/o desacelera usando la formula del [[Función seno|seno]]
 
 ```tikz
 \usepackage{amssymb}

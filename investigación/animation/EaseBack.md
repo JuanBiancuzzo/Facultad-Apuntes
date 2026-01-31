@@ -13,7 +13,7 @@ tags:
 ```
 # Definición
 ---
-Retrasa el movimiento de la animación ligeramente antes de empezar, y/o al final
+Esta [[investigación/animation/Ease function|easing function]] retrasa el movimiento de la animación ligeramente antes de empezar, y/o al final
 
 ```tikz
 \usepackage{amssymb}

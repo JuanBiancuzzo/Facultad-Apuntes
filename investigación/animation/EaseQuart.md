@@ -13,7 +13,7 @@ tags:
 ```
 # Definición
 ---
-Crea una animación que acelera y/o desacelera usando la formula $f(t) = t^4$
+Esta [[investigación/animation/Ease function|easing function]] crea una animación que acelera y/o desacelera usando la formula $f(t) = t^4$
 
 ```tikz
 \usepackage{amssymb}
@@ -90,7 +90,7 @@ Crea una animación que acelera y/o desacelera usando la formula $f(t) = t^4$
         \matrix[matrix of math nodes, left delimiter=\lbrace, below = 0 of temp] 
         (mat) {
             8 t^3 & si ~ t < 0.5 \\
-            1 - \frac{(2 - 2t)^4}{2} & si ~ t > 0.5 \\
+            1 - 8 (1 - t)^4 & si ~ t > 0.5 \\
         };
     \end{scope}
 

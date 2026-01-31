@@ -13,7 +13,7 @@ tags:
 ```
 # Definición
 ---
-Crea una animación que acelera y/o desacelera usando la formula [[Función polinómica|exponencial]]
+Esta [[investigación/animation/Ease function|easing function]] crea una animación que acelera y/o desacelera usando la formula [[Función polinómica|exponencial]]
 
 ```tikz
 \usepackage{amssymb}

@@ -14,7 +14,7 @@ vinculoFacultad:
 ---
 Este método, o mejor llamado [[Algoritmo|algoritmo]], nos permite hallar una base ortogonal de cualquier otra base, usando el [[Producto interno|producto interno]] determinado
 
-Entonces, entiendo la base $B = \{v_1, v_2, v_3, \cdot, v_n \}$, vamos a construir la base $B_p = \{w_1, w_2, w_3, \cdot, w_n \}$, siendo esta un [[Sistema ortogonal|sistema ortogonal]], de la siguiente forma
+Entonces, teniendo la base $B = \{v_1, v_2, v_3, \cdots, v_n \}$, vamos a construir la base $B_p = \{w_1, w_2, w_3, \cdots, w_n \}$, siendo esta un [[Sistema ortogonal|sistema ortogonal]], de la siguiente forma
 
 $$ w_k = v_k - \sum_{j = 1}^{k - 1} \frac{\langle v_k, w_j \rangle}{\langle w_j, w_j \rangle} \cdot w_j $$
 

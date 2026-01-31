@@ -13,7 +13,7 @@ tags:
 ```
 # Definición
 ---
-Crea animaciones que aceleran y/o desaceleran usando la formula $f(t) = t^3$
+Esta [[investigación/animation/Ease function|easing function]] crea animaciones que aceleran y/o desaceleran usando la formula $f(t) = t^3$
 
 ```tikz
 \usepackage{amssymb}
@@ -90,7 +90,7 @@ Crea animaciones que aceleran y/o desaceleran usando la formula $f(t) = t^3$
         \matrix[matrix of math nodes, left delimiter=\lbrace, below = 0 of temp] 
         (mat) {
             4 t^3 & si ~ t < 0.5 \\
-            1 - \frac{(2 - 2t)^3}{2} & si ~ t > 0.5 \\
+            1 - 4 (1 - t)^3 & si ~ t > 0.5 \\
         };
     \end{scope}
 

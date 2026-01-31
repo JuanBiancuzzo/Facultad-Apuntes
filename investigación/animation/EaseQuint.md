@@ -13,7 +13,7 @@ tags:
 ```
 # Definición
 ---
-Crea una animación que acelera y/o desacelera usando la formula $f(t) = t^5$
+Esta [[investigación/animation/Ease function|easing function]] crea una animación que acelera y/o desacelera usando la formula $f(t) = t^5$
 
 ```tikz
 \usepackage{amssymb}
@@ -90,7 +90,7 @@ Crea una animación que acelera y/o desacelera usando la formula $f(t) = t^5$
         \matrix[matrix of math nodes, left delimiter=\lbrace, below = 0 of temp] 
         (mat) {
             16 t^5 & si ~ t < 0.5 \\
-            1 - \frac{(2 - 2t)^5}{2} & si ~ t > 0.5 \\
+            1 - 16 (1 - t)^5 & si ~ t > 0.5 \\
         };
     \end{scope}
 

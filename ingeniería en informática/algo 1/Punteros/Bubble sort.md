@@ -28,10 +28,10 @@ Este [[Algoritmo de ordenamiento|método de burbujeo]] tiene como idea principal
 function BubbleSort :: array: Integer[], n: Integer -> Integer[]
     for i in 0..n then
         for j in 0..n - i then
-            if array[i] > array[j] then
+            if array[j+1] > array[j] then
                 let temp = array[j]
-                array[j] = array[i]
-                array[i] = temp
+                array[j] = array[j+1]
+                array[j+1] = temp
             end
         end    
     end

@@ -13,7 +13,7 @@ tags:
 ```
 # Definici처n
 ---
-Crea una animaci처n que acelera y/o desacelera usando una [[Disco abierto|funci처n circular]]
+Esta [[investigaci처n/animation/Ease function|easing function]] crea una animaci처n que acelera y/o desacelera usando una [[Disco abierto|funci처n circular]]
 
 ```tikz
 \usepackage{amssymb}
@@ -90,7 +90,7 @@ Crea una animaci처n que acelera y/o desacelera usando una [[Disco abierto|funci�
         \matrix[matrix of math nodes, left delimiter=\lbrace, below = 0 of temp] 
         (mat) {
             \frac{1}{2} \left( 1 - \sqrt{1 - 4 t^2} \right) & si ~ t < 0.5 \\
-            \frac{1}{2} \left(\sqrt{1 - (-2t + 2)^2} + 1 \right) & si ~ t > 0.5 \\
+            \frac{1}{2} \left(\sqrt{1 - 4(1 - t)^2} + 1 \right) & si ~ t > 0.5 \\
         };
     \end{scope}
 
