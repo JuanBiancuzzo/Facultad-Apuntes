@@ -58,6 +58,9 @@ Estos papers los menciona en los videos:
 * [Cap 2](https://youtu.be/cddCr95fnvI?si=ee6j0b4gMtk7ki0g)
 * [Cap 3](https://youtu.be/v8_JmK906fw?si=JDOgGioQBNNNkqLw)
 
+También ver
+* [Canal de Youtube: Cem Yuksel](https://www.youtube.com/@cem_yuksel)
+
 ## Resumen
 ---
 

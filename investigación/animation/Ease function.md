@@ -3,7 +3,7 @@ dia: 2024-11-21
 etapa: sin-empezar
 tags:
   - investigación/animation
-  - investigación/game-engine/Animation-Engine
+  - investigación/juegos/game-engine/Animation-Engine
   - nota/investigacion
 ---
 ```dataviewjs

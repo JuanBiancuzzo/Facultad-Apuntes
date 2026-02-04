@@ -8,7 +8,7 @@ tags:
 ---
 # Propuesta
 ---
-Vamos a intentar implementar el [[Ray marching|algoritmo de Ray marching]] usando [[Bounding Volume Hierarchy (BVH)|BVH]] donde tenemos que recorrer este [[ingeniería en informática/discreta/Grafos/Árbol|árbol]] por lo que el método tradicional es hacer [[Breadth First Search (BFS)|BFS]] pero tal vez se puede buscar alguna optimización utilizando el [[Algoritmo A estrella|algoritmo A estrella]]  con una [[Heuristica|heuristica]] que ayude a encontrar el triangulo correcto
+Vamos a intentar implementar el [[investigación/juegos/game engine/técnicas/Ray marching|algoritmo de Ray marching]] usando [[Bounding Volume Hierarchy (BVH)|BVH]] donde tenemos que recorrer este [[ingeniería en informática/discreta/Grafos/Árbol|árbol]] por lo que el método tradicional es hacer [[Breadth First Search (BFS)|BFS]] pero tal vez se puede buscar alguna optimización utilizando el [[Algoritmo A estrella|algoritmo A estrella]]  con una [[Heuristica|heuristica]] que ayude a encontrar el triangulo correcto
 
 # Presentar
 ---

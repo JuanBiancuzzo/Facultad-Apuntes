@@ -111,6 +111,7 @@ Mecánica:
 9. [Prototyping and Modelmaking for Product Design](https://www.amazon.com/Prototyping-Modelmaking-Product-Design-Second/dp/1786275112)
 10. [Compliant Mechanisms](https://www.amazon.com/Compliant-Mechanisms-Larry-L-Howell/dp/047138478X)
 11. [Handbook of Compliant Mechanisms](https://www.amazon.com/Handbook-Compliant-Mechanisms-Larry-Howell/dp/1119953456)
+12. Making It: Manufacturing Techniques for Product Design by Lefteri, Chris - ISBN: 9781856697491
 
 Diseño:
 1. The Branding Method - Carolina Kairos  

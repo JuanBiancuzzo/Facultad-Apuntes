@@ -5,7 +5,7 @@ referencias:
   - "154"
 tags:
   - investigación/animation
-  - investigación/game-engine/Animation-Engine
+  - investigación/juegos/game-engine/Animation-Engine
   - nota/investigacion
 ---
 ```dataviewjs

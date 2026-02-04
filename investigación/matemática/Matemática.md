@@ -13,6 +13,8 @@ await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current(
 ---
 Vamos a investigar cosas relacionadas al área puramente matemático
 
+Ver este [video](https://youtu.be/ZWH-4GJaErM?si=GTs4EDHsichTxAqM) para encontrar libros sobre matemática en general
+
 ## Resumen
 ---
 Pendiente...

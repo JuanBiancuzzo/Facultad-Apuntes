@@ -6,7 +6,7 @@ referencias:
   - "342"
 tags:
   - investigación/animation
-  - investigación/game-engine/Animation-Engine
+  - investigación/juegos/game-engine/Animation-Engine
   - nota/investigacion
 aliases:
   - Curvas de interpolación entre keyframes

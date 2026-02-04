@@ -8,7 +8,7 @@ tags:
 ---
 # Propuesta
 ---
-Vamos a intentar crear un [[Physics Engine|motor de física]] usando [[investigación/física/lagrangian mechanics/Índice|Lagrangian mechanics]] para poder resolver las colisiones entre objetos
+Vamos a intentar crear un [[investigación/juegos/game engine/physics engine/Physics Engine|motor de física]] usando [[investigación/física/lagrangian mechanics/Índice|Lagrangian mechanics]] para poder resolver las colisiones entre objetos
 
 Para conseguirlo vamos a crear una interfaz para poder usar este motor, y esta encapsulará toda la lógica necesaria para usarla
 

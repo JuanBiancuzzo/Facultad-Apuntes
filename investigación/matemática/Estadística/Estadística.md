@@ -16,7 +16,7 @@ await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current(
 ```
 # ¿Qué se va a investigar?
 ---
-Vamos a estudiar la rama de la matemática que es la estadística para poder usarla para resolver problemas como pueden aparecer en [[Trazado de rayos|Ray tracing]]
+Vamos a estudiar la rama de la matemática que es la estadística para poder usarla para resolver problemas como pueden aparecer en [[investigación/juegos/game engine/técnicas/Trazado de rayos|Ray tracing]]
 
 ## Resumen
 ---

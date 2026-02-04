@@ -10,7 +10,7 @@ aliases:
   - Animación procedural con IK
 tags:
   - investigación/animation
-  - investigación/game-engine/Animation-Engine
+  - investigación/juegos/game-engine/Animation-Engine
   - nota/investigacion
 ---
 ```dataviewjs
@@ -25,7 +25,7 @@ El principal motivo por el cual se usa animación procedural es la libertad de c
 ---
 Vamos a usar [[Inverse kinematics|IK]] para mover puntos que podrían el [[Skeleton for animation (Esquelo para animar)|esqueleto]] de un personaje, y el [[Inverse kinematics#Algoritmos|algoritmo de IK]] dado un punto final, nos permite determinar como debería colocarse el esqueleto para llegar a ese punto
 
-En general se usa [[Ray casting|ray casting]] como una herramienta para entender el ambiente alrededor del personaje. Puede usarse para ver la [[Distancia euclidiana|distancia]] al piso, o la distancia a una pared. Se usa esa información para generar puntos a los cuales se le puede pasar al algoritmo de IK para crear nuevas posiciones y orientaciones del esqueleto
+En general se usa [[investigación/juegos/game engine/técnicas/Ray casting|ray casting]] como una herramienta para entender el ambiente alrededor del personaje. Puede usarse para ver la [[Distancia euclidiana|distancia]] al piso, o la distancia a una pared. Se usa esa información para generar puntos a los cuales se le puede pasar al algoritmo de IK para crear nuevas posiciones y orientaciones del esqueleto
 
 Lo difícil del movimiento procedural, es encontrar cuales son los puntos finales en los cuales el personaje tiene que moverse, ya que el resto es dar el resultado a un algoritmo para encontrar las posiciones y orientaciones del esqueleto dado esa posición final que debería estar una parte del cuerpo del personaje
 
