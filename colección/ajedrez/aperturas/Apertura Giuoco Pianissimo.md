@@ -1,6 +1,29 @@
 ---
 dia: 2026-02-03
 etapa: sin-empezar
+inicio: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR
+movimientos:
+  -
+    - e2
+    - e4
+  -
+    - e7
+    - e5
+  -
+    - g1
+    - f3
+  -
+    - b8
+    - c6
+  -
+    - f1
+    - c4
+  -
+    - f8
+    - c5
+  -
+    - d2
+    - d3
 tags:
   - colección/apertura/ajedrez
   - nota/colección
