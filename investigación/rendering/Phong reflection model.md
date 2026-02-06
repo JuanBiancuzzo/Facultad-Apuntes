@@ -1,17 +1,15 @@
 ---
-dia: 2024-07-08
+dia: 2024-11-11
 etapa: sin-empezar
 referencias:
-  - "40"
-  - "41"
-  - "142"
-  - "179"
-aliases:
-  - Nanite
-  - Virtual geometry
+  - "501"
 tags:
   - investigación/juegos/game-engine/rendering-engine
+  - investigación/rendering
   - nota/investigacion
+aliases:
+  - Phong illumination
+  - Phong lighting
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

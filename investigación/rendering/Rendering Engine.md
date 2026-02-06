@@ -3,6 +3,7 @@ dia: 2024-10-15
 estado: Sin empezar
 tags:
   - investigación/juegos/game-engine/rendering-engine
+  - investigación/rendering
   - investigación/índice
   - nota/investigacion
 ---

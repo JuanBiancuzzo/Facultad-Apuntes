@@ -1,10 +1,12 @@
 ---
-dia: 2024-07-09
+dia: 2024-07-16
 etapa: sin-empezar
 referencias:
-  - "140"
+  - "160"
+  - "161"
 tags:
   - investigación/juegos/game-engine/rendering-engine
+  - investigación/rendering
   - nota/investigacion
 ---
 ```dataviewjs

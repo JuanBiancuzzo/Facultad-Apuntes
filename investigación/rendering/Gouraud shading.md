@@ -1,9 +1,11 @@
 ---
-dia: 2024-08-26
+dia: 2024-11-11
 etapa: sin-empezar
-referencias: 
+referencias:
+  - "500"
 tags:
   - investigación/juegos/game-engine/rendering-engine
+  - investigación/rendering
   - nota/investigacion
 ---
 ```dataviewjs
@@ -11,7 +13,7 @@ tags:
 ```
 # Definición
 ---
-Vamos a investigar la forma de representar de forma estandarizada una escena en distintos softwares, basándonos en la documentación en [openUSD](https://openusd.org/release/index.html)
+
 
 
 

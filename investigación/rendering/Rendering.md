@@ -1,7 +1,8 @@
 ---
 dia: 2026-01-30
 tags:
-  - investigación/graphics
+  - investigación/rendering
+  - investigación/juegos/game-engine/rendering
   - investigación/índice
   - nota/investigacion
 estado: Falta resumir
