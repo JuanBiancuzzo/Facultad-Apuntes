@@ -6,6 +6,7 @@ tags:
   - carrera/ingeniería-electrónica/legal/documento
 aliases:
   - Ley 25.036
+  - Ley de Propiedad Intelectual
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

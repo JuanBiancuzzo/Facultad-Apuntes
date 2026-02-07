@@ -14,7 +14,7 @@ tags:
 
 # Interpretación
 ---
-Los derechos reales recaen sobre cosas registrables cuando la [[Ley|ley]] requiere la inscripción de los [[Sujeto de derecho#Sujeto activo|titulares]] en el respectivo registro a los efectos que correspondan
+Los derechos reales recaen sobre cosas registrables cuando la [[Ley|ley]] requiere la inscripción de los [[ingeniería electrónica/legal/Introducción al derecho/Persona#Sujeto activo|titulares]] en el respectivo registro a los efectos que correspondan
 
 Recaen sobre cosas no registrables, cuando los documentos portantes de derechos sobre su objeto no acceden a un registro a los fines de su inscripción
 

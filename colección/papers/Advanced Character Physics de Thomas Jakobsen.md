@@ -21,4 +21,3 @@ tags:
 ```
 # Resumen
 ---
-<% tp.file.cursor() %>

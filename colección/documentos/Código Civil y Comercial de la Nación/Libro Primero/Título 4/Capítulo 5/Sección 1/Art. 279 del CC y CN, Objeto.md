@@ -10,7 +10,7 @@ tags:
 ---
 # Artículo
 ---
-"El objeto del [[Acto jurídico|acto jurídico]] no debe ser un hecho imposible o prohibido por la [[Ley|ley]], contrario a la [[Moral|moral]], a las buenas costumbres, al [[Art. 12 del CC y CN, Orden público. Fraude a la ley|orden público]] o lesivo de los [[Derecho|derechos]] ajenos o de la dignidad humana. Tampoco puede ser un bien que por un motivo especial se haya prohibido que lo sea."
+"El objeto del [[ingeniería electrónica/legal/Introducción al derecho/Acto jurídico|acto jurídico]] no debe ser un hecho imposible o prohibido por la [[Ley|ley]], contrario a la [[Moral|moral]], a las buenas costumbres, al [[Art. 12 del CC y CN, Orden público. Fraude a la ley|orden público]] o lesivo de los [[Derecho|derechos]] ajenos o de la dignidad humana. Tampoco puede ser un bien que por un motivo especial se haya prohibido que lo sea."
 
 # Interpretación
 ---

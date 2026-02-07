@@ -16,7 +16,7 @@ tags:
 ---
 Oferta es una proposición unilateral que una de las partes dirige a otra para celebrar un contrato. O, como lo define el [[Código Civil y Comercial de la Nación|Código Civil y Comercial]] estación dirigida a persona determinada o determinable, con la intención de obligarse y con las precisiones necesarias para establecer los efectos que debe producir de ser aceptada. 
 
-No es un [[Acto jurídico|acto]] preparatorio del contrato, sino una de las declaraciones contractuales. Así, pues, solo hay oferta cuando el contrato puede quedar concluido con la sola aceptación de la otra parte, sin necesidad de una nueva manifestación del que hizo la primera proposición. 
+No es un [[ingeniería electrónica/legal/Introducción al derecho/Acto jurídico|acto]] preparatorio del contrato, sino una de las declaraciones contractuales. Así, pues, solo hay oferta cuando el contrato puede quedar concluido con la sola aceptación de la otra parte, sin necesidad de una nueva manifestación del que hizo la primera proposición. 
 
 En consecuencia, la oferta debe ser distinguida:
 1. De la invitación a oír ofertas, en la cual una persona se limita a hacer saber que tiene interés en celebrar cierto negocio y que escucha ofertas. Ejemplo típico es el de la subasta pública, en la que el martillero invita a formular propuestas, pero el contrato no queda concluido sino cuando hace la adjudicación a la más alta
@@ -46,7 +46,7 @@ Para que haya oferta válida es necesario:
 
 2. Que tenga por objeto un contrato determinado, con todos los antecedentes constitutivos de los contratos. O, con palabras del Código Civil y Comercial, que tenga las precisiones necesarias para establecer los efectos que debe producir de ser aceptada. Es decir, la propuesta debe contener todos los elementos necesarios como para que una aceptación lisa y llana permita tener por concluido el contrato. Así, por ejemplo, si se trata de una compraventa, será necesario que la oferta contenga la determinación de la cosa y el precio; faltando cualquiera de estos elementos, no habrá oferta válida, pues ellos son esenciales en dicho contrato.
 
-3. Que exista intención de obligarse. Todo [[Acto jurídico|acto jurídico]] (y la oferta lo es) requiere que sea ejecutado con intención para ser válido ([[Art. 260 del CC y CN, Acto voluntario|art. 260]]). Por ello, si no hay verdadera intención de obligarse, no hay oferta. Es el caso de la oferta hecha con espíritu de broma o sin entender obligarse, como, por ejemplo, las palabras pronunciadas en una representación teatral. 
+3. Que exista intención de obligarse. Todo [[ingeniería electrónica/legal/Introducción al derecho/Acto jurídico|acto jurídico]] (y la oferta lo es) requiere que sea ejecutado con intención para ser válido ([[Art. 260 del CC y CN, Acto voluntario|art. 260]]). Por ello, si no hay verdadera intención de obligarse, no hay oferta. Es el caso de la oferta hecha con espíritu de broma o sin entender obligarse, como, por ejemplo, las palabras pronunciadas en una representación teatral. 
 
 ## Duración de la oferta
 ---

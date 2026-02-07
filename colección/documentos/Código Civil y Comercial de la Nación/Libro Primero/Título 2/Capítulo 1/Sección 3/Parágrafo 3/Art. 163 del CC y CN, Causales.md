@@ -40,7 +40,7 @@ tags:
  c. la consecución del objeto para el cual la persona jurídica se formó, o la imposibilidad sobreviviente de cumplirlo;
  d. el vencimiento del plazo;
  e. la declaración de quiebra; la disolución queda sin efecto si la quiebra concluye por avenimiento o se dispone la conversión del trámite en concurso preventivo, o si la ley especial prevé un régimen distinto;
- f. la fusión respecto de las [[Persona jurídica|personas jurídicas]] que se fusionan o la persona o personas jurídicas cuyo [[Art. 154 del CC y CN, Patrimonio|patrimonio]] es absorbido; y la escisión respecto de la persona jurídica que se divide y destina todo su patrimonio;
+ f. la fusión respecto de las [[Persona jurídica|personas jurídicas]] que se fusionan o la persona o personas jurídicas cuyo [[Patrimonio|patrimonio]] es absorbido; y la escisión respecto de la persona jurídica que se divide y destina todo su patrimonio;
  g. la reducción a uno del número de miembros, si la ley especial exige pluralidad de ellos y ésta no es restablecida dentro de los tres meses;
  h. la denegatoria o revocación firmes de la autorización estatal para funcionar, cuando ésta sea requerida;
  i. el agotamiento de los bienes destinados a sostenerla;

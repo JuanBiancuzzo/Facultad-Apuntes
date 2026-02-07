@@ -10,7 +10,7 @@ tags:
 ---
 # Artículo
 ---
-"El [[Hecho jurídico#Clasificación de los hechos jurídicos|acto voluntario]] es el ejecutado con discernimiento, intención y libertad, que se manifiesta por un [[Hecho jurídico|hecho]] exterior."
+"El [[ingeniería electrónica/legal/Introducción al derecho/Acto jurídico|acto voluntario]] es el ejecutado con discernimiento, intención y libertad, que se manifiesta por un [[ingeniería electrónica/legal/Introducción al derecho/Hecho#Hecho jurídico|hecho]] exterior."
 
 # Interpretación
 ---

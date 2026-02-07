@@ -10,7 +10,7 @@ tags:
 ---
 # Artículo
 ---
-"Contrato es el [[Acto jurídico|acto jurídico]] mediante el cual dos o más partes manifiestan su consentimiento para crear, regular, modificar, transferir o extinguir [[Relación jurídica|relaciones jurídicas]] patrimoniales."
+"Contrato es el [[ingeniería electrónica/legal/Introducción al derecho/Acto jurídico|acto jurídico]] mediante el cual dos o más partes manifiestan su consentimiento para crear, regular, modificar, transferir o extinguir [[Relación jurídica|relaciones jurídicas]] patrimoniales."
 
 # Interpretación
 ---

@@ -4,6 +4,7 @@ etapa: empezado
 referencias:
   - "608"
   - "611"
+  - "610"
 tags:
   - investigación/animation
   - investigación/juegos/game-engine/Animation-Engine
@@ -12,11 +13,15 @@ aliases:
   - Linear Interpolation
   - Funciones de suavizado#Funciones de suavizado
   - Easing functions#Funciones de suavizado
+  - Lerp
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
+---
+
+## FrameRate Independent
 ---
 
 

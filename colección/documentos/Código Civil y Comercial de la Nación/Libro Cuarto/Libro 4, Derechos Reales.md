@@ -16,7 +16,7 @@ aliases:
 ---
 El derecho real es el poder jurídico, de estructura legal, que se ejerce directamente sobre su [[Cosa|objeto]], y que atribuye a su titular las facultades de persecución y preferencia, y las demás previstas en este [[Código Civil y Comercial de la Nación|Código]]. Tenemos que notar que el [[[Libro 4, Derechos Reales|Libro Cuarto del CC y CN]]
 
-Son los que comportan, para el [[Sujeto de derecho#Sujeto activo|titular]], la facultad de actuar sobre la [[Cosa|cosa]] dentro de los límites normativos y, para las demás personas, el deber de abstenerse de perturbar ese ejercicio en salvaguardia del derecho fundamental de propiedad reconocido por el [[Art. 17 de la Constitución Nacional|art. 17 de la Constitución Nacional]]. 
+Son los que comportan, para el [[ingeniería electrónica/legal/Introducción al derecho/Persona#Sujeto activo|titular]], la facultad de actuar sobre la [[Cosa|cosa]] dentro de los límites normativos y, para las demás personas, el deber de abstenerse de perturbar ese ejercicio en salvaguardia del derecho fundamental de propiedad reconocido por el [[Art. 17 de la Constitución Nacional|art. 17 de la Constitución Nacional]]. 
 
 Son los derechos definidos en el [[Art. 1882 del CC y CN, Concepto|art. 1882 del Código Civil y Comercial]] como ![[Art. 1882 del CC y CN, Concepto#Artículo]]
 ![[Art. 1887 del CC y CN, Enumeración#Artículo]]
@@ -27,7 +27,7 @@ La regulación de los derechos reales en cuanto a sus elementos, contenido, adqu
 
 ## Persecución y preferencia
 ---
-El derecho real atribuye a su [[Sujeto de derecho#Sujeto activo|titular]] la facultad de perseguir la [[Cosa|cosa]] en poder de quien se encuentra, y de hacer valer su preferencia con respecto a otro derecho real o [[Derechos créditorios o personales|personal]] que haya obtenido oponibilidad posteriormente.
+El derecho real atribuye a su [[ingeniería electrónica/legal/Introducción al derecho/Persona#Sujeto activo|titular]] la facultad de perseguir la [[Cosa|cosa]] en poder de quien se encuentra, y de hacer valer su preferencia con respecto a otro derecho real o [[Derechos créditorios o personales|personal]] que haya obtenido oponibilidad posteriormente.
 
 ### Derecho de persecución
 ---
@@ -43,7 +43,7 @@ El derecho real atribuye a su [[Sujeto de derecho#Sujeto activo|titular]] la fac
 
 ## Carga o gravamen real
 ---
-Las cosas se presumen sin gravamen, excepto prueba en contrario. Toda duda sobre la existencia de un gravamen real, su extensión o el modo de ejercicio, se interpreta a favor del [[Sujeto de derecho#Sujeto activo|titular]] del bien gravado.
+Las cosas se presumen sin gravamen, excepto prueba en contrario. Toda duda sobre la existencia de un gravamen real, su extensión o el modo de ejercicio, se interpreta a favor del [[ingeniería electrónica/legal/Introducción al derecho/Persona#Sujeto activo|titular]] del bien gravado.
 
 ## Derechos reales principales y accesorios
 ---

@@ -10,7 +10,7 @@ tags:
 ---
 # Artículo
 ---
-"El [[Hecho jurídico|hecho jurídico]] es el acontecimiento que, conforme al [[Ordenamiento jurídico|ordenamiento jurídico]], produce el nacimiento, modificación o extinción de [[Relación jurídica|relaciones jurídicas]] o [[Situación jurídica|situaciones jurídicas]]"
+"El [[ingeniería electrónica/legal/Introducción al derecho/Hecho#Hecho jurídico|hecho jurídico]] es el acontecimiento que, conforme al [[Ordenamiento jurídico|ordenamiento jurídico]], produce el nacimiento, modificación o extinción de [[Relación jurídica|relaciones jurídicas]] o [[Situación jurídica|situaciones jurídicas]]"
 
 # Interpretación
 ---
