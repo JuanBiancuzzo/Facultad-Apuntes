@@ -28,11 +28,11 @@ La persona humana es un sujeto de derecho. Tiene libertad de actuar como prefier
 * Estado civil
     * Relación de familia, como que es hijo de, casado, soltero, divorciado
 * Domicilio
-    * Real
+    * Real [[Art. 73 del CC y CN, Domicilio real|Art. 73 del CC y CN]]
         * Aquel donde la persona vive
-    * Legal
+    * Legal [[Art. 74 del CC y CN, Domicilio legal|Art. 74 del CC y CN]]
         * Donde la ley presume que la persona habita. Si se le tiene que notificar respecto de actos jurídicos será ahí y no puede excusarse de no haber recibido la notificación
-    * Especial
+    * Especial [[Art. 75 del CC y CN, Domicilio especial|Art. 75 del CC y CN]]
         * Es el que la parte en el contexto de un contrato fijo como domicilio
 * [[Patrimonio|Patrimonio]]
     * ![[ingeniería electrónica/legal/Introducción al derecho/Patrimonio#^definicion]]

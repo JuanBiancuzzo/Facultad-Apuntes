@@ -21,15 +21,19 @@ vinculoFacultad:
 ---
 La persona jurídica es una entidad susceptible de adquirir [[ingeniería electrónica/legal/Introducción al derecho/Derecho|derechos]] y contraer [[Obligación|obligaciones]], compuesta por [[ingeniería electrónica/legal/Introducción al derecho/Persona humana|personas humanas]] que se agrupan para lograr determinado fin. Una persona jurídica puede ejercer sus derechos a través de sus miembros
 
-
 ## Atributos
 ---
 Sus atributos son
-* Nombre
-* Domicilio
-* [[ingeniería electrónica/legal/Introducción al derecho/Patrimonio|Patrimonio]]
-* Duración
-* Funcionamiento
+* Nombre [[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 3/Parágrafo 1/Art. 151 del CC y CN, Nombre|Art. 151 del CC y CN]]
+    * La persona jurídica debe tener un nombre que la identifique como tal, con el aditamento indicativo de la forma jurídica adoptada
+* Domicilio [[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 3/Parágrafo 1/Art. 152 del CC y CN, Domicilio y sede social|Art. 152 del CC y CN]]
+    * El domicilio de la persona jurídica es el fijado en sus estatutos o en la autorización que se le dio para funcionar
+* [[ingeniería electrónica/legal/Introducción al derecho/Patrimonio|Patrimonio]] [[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 3/Parágrafo 1/Art. 154 del CC y CN, Patrimonio|Art. 154 del CC y CN]]
+    * La persona jurídica tiene que tener un patrimonio
+* Duración [[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 3/Parágrafo 1/Art. 155 del CC y CN, Duración|Art. 155 del CC y CN]]
+    * La duración de la persona jurídica es ilimitada en el tiempo, excepto que la ley o el estatuto dispongan lo contrario
+* Funcionamiento u objeto [[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 3/Parágrafo 1/Art. 156 del CC y CN, Objeto|Art. 156 del CC y CN]]
+    * El objeto de la persona jurídica debe ser preciso y determinado
 
 ## Comienzo de la existencia
 ---
@@ -37,7 +41,7 @@ El comienzo es a partir de su constitución, donde las personas expresan su volu
 
 ## Clasificación
 ---
-Una persona jurídica puede clasificarse en privada y pública, de la siguiente forma
+Una persona jurídica puede clasificarse en privada y pública, como se menciona en el [[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 2/Art. 145 del CC y CN, Clases|Art. 145 del CC y CN]], de la siguiente forma
 
 * Persona jurídica privada, del [[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 2/Art. 148 del CC y CN, Personas jurídicas privadas|Art. 148 del CC y CN]] ^persona-juridica-privada
     * Las [[Sociedad|sociedades]]

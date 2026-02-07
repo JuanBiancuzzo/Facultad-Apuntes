@@ -18,7 +18,9 @@ vinculoFacultad:
 ```
 # Definición
 ---
-La capacidad de ejercicio o de hecho se relaciona con la aptitud de las [[ingeniería electrónica/legal/Introducción al derecho/Persona humana|personas]] para ejercer y contraer por si misma derechos y deberes, y se ven limitadas en los casos de
+La capacidad de ejercicio, que se menciona en el [[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 1/Capítulo 2/Sección 1/Art. 23 del CC y CN, Capacidad de ejercicio|Art. 23 del CC y CN]], o de hecho se relaciona con la aptitud de las [[ingeniería electrónica/legal/Introducción al derecho/Persona humana|personas]] para ejercer y contraer por si misma derechos y deberes,
+
+Como se menciona en el [[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 1/Capítulo 2/Sección 1/Art. 24 del CC y CN, Personas incapaces de ejercicio|Art. 24 del CC y CN]], esta capacidad se ven limitadas en los casos de
 * Persona por nacer
 * Minoría de edad
 * Personas declaradas con capacidad restringida o incapaces
