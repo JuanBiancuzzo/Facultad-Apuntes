@@ -10,7 +10,7 @@ tags:
 ---
 # Artículo
 ---
-"La novación es la extinción de una [[Art. 724 del CC y CN, Definición|obligación]] por la creación de otra nueva, destinada a reemplazarla."
+"La novación es la extinción de una [[ingeniería electrónica/legal/Obligaciones/Obligación|obligación]] por la creación de otra nueva, destinada a reemplazarla."
 
 # Interpretación
 ---

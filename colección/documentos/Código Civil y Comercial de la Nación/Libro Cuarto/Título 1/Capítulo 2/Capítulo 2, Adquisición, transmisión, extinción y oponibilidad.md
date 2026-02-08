@@ -17,7 +17,7 @@ Donde se entiende por título, el [[ingeniería electrónica/legal/Introducción
 
 ## Prescripción
 ---
-Dicho de un [[Derecho|derecho]], de una responsabilidad o de una [[Art. 724 del CC y CN, Definición|obligación]]: Extinguirse por haber transcurrido cierto período de tiempo, especialmente un plazo legal
+Dicho de un [[Derecho|derecho]], de una responsabilidad o de una [[ingeniería electrónica/legal/Obligaciones/Obligación|obligación]]: Extinguirse por haber transcurrido cierto período de tiempo, especialmente un plazo legal
 
 En términos legales, por el transcurso del tiempo se pueden dar
 
@@ -27,7 +27,7 @@ En términos legales, por el transcurso del tiempo se pueden dar
 
 ### Prescripción liberatoria
 ---
-Lo que prescribe es una [[Art. 724 del CC y CN, Definición|obligación]], el deudor queda liberado de ella.
+Lo que prescribe es una [[ingeniería electrónica/legal/Obligaciones/Obligación|obligación]], el deudor queda liberado de ella.
 
 # Artículos
 ---

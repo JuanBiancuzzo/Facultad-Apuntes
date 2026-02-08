@@ -21,6 +21,6 @@ Se caracterizan por la existencia de dos categorías de socios
 * Los socios comanditados o solidarios
     * Estos responden como los socios de las [[ingeniería electrónica/legal/Derecho societario/Sociedad colectiva|sociedades colectivas]]
 * Los socios comanditarios
-    * Estos responden solamente por los aportes efectuados a la sociedad, que deben necesariamente consistir en [[Obligación#Dar|obligación de dar]]
+    * Estos responden solamente por los aportes efectuados a la sociedad, que deben necesariamente consistir en [[Obligación#^obligacion-dar|obligación de dar]]
 
 Los límites de la responsabilidad, sobre los socios comanditarios, les está prohibido ejercer la administración de la sociedad, la cual deberá estar a cargo de los socios comanditados o terceros

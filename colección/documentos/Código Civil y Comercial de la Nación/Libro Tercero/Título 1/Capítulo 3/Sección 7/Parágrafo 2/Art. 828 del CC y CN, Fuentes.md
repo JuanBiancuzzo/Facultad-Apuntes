@@ -10,7 +10,7 @@ tags:
 ---
 # Artículo
 ---
-"La [[Parágrafo 2, Obligaciones solidarias. Disposiciones generales|solidaridad]] no se presume y debe surgir inequívocamente de la [[Ley|ley]] o del título constitutivo de la [[Art. 724 del CC y CN, Definición|obligación]]."
+"La [[Parágrafo 2, Obligaciones solidarias. Disposiciones generales|solidaridad]] no se presume y debe surgir inequívocamente de la [[Ley|ley]] o del título constitutivo de la [[ingeniería electrónica/legal/Obligaciones/Obligación|obligación]]."
 
 # Interpretación
 ---

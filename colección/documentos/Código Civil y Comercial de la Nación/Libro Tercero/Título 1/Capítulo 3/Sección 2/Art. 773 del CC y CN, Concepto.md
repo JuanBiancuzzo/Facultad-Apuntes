@@ -10,7 +10,7 @@ tags:
 ---
 # Artículo
 ---
-"La [[Art. 724 del CC y CN, Definición|obligación]] de hacer es aquella cuyo objeto consiste en la prestación de un servicio o en la realización de un hecho, en el tiempo, lugar y modo acordados por las partes."
+"La [[ingeniería electrónica/legal/Obligaciones/Obligación|obligación]] de hacer es aquella cuyo objeto consiste en la prestación de un servicio o en la realización de un hecho, en el tiempo, lugar y modo acordados por las partes."
 
 # Interpretación
 ---
