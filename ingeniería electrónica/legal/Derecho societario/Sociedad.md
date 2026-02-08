@@ -6,18 +6,19 @@ aliases:
   - Sociedad comercial
   - Responsabilidad limitada#^responsabilidad-limitada
   - Responsabilidad ilimitada#^responsabilidad-ilimitada
-  - Responsabilidad Mancomunada#^responsabilidad-mancomunada
-  - Responsabilidad Solidaria#^responsabilidad-solidaria
-  - Responsabilidad Subsidiaria#^responsabilidad-subsidiaria
-  - Responsabilidad No subsidiaria#^responsabilidad-no-subsidiaria
+  - Responsabilidad mancomunada#^responsabilidad-mancomunada
+  - Responsabilidad solidaria#^responsabilidad-solidaria
+  - Responsabilidad subsidiaria#^responsabilidad-subsidiaria
+  - Responsabilidad no subsidiaria#^responsabilidad-no-subsidiaria
   - Sociedades de interés#Sociedades de interés
+  - Sociedades de Personas#Sociedades de interés
   - Sociedades por cuotas#Sociedades por cuotas
   - Sociedades por acciones#Sociedades por acciones
 tags:
-  - carrera/ingeniería-electrónica/legal/Sociedades
+  - carrera/ingeniería-electrónica/legal/Derecho-societario
   - nota/facultad
 vinculoFacultad:
-  - tema: Sociedades
+  - tema: Derecho societario
     capitulo: 2
     materia: Legislación y ejercicio profesional
     carrera: Ingeniería electrónica
@@ -57,7 +58,20 @@ Los elementos específicos del contratos de sociedad comercial son, los siguient
 * La participación en los beneficios y suportación en las pérdidas
     * La obtención de beneficios económicos es el fin común o causa del contrato de sociedad, debiendo los socios soportar las perdidas sufridas por la sociedad
 
-## Responsabilidades
+## Órganos sociales
+---
+* De gobierno
+    * La asamblea o reunión de socios, tiene como función la toma de decisiones de la sociedad
+* De administración y representación
+    * Están a cargo de 
+        * Balances e inventarios
+        * Convocar a asambleas
+        * Realización de negocios con terceros
+    * Actúan en nombre de la sociedad 
+* De fiscalización
+    * Controla a los demás órganos, por medio de sus integrantes como también por órganos especiales (Sindicatura o Consejo de Vigilancia)
+
+## Responsabilidades de los socios
 ---
 * Según los [[Bien|bienes]] con los que puede responder
     * Limitada  ^responsabilidad-limitada
@@ -200,8 +214,8 @@ Son sociedades que cuentan por lo general con muy pocos socios, y se caracteriza
 
 Entre ellas se cuentan
 * Las [[Sociedad colectiva|sociedades colectivas]]
-* Las [[Sociedad de capital e industria|sociedades de capital e industria]]
 * Las [[Sociedad en comandita simple|sociedades en comandita simple]]
+* Las [[Sociedad de capital e industria|sociedades de capital e industria]]
 
 ### Sociedades por cuotas
 ---
@@ -211,7 +225,7 @@ Son exclusivamente las [[Sociedad de Responsabilidad Limitada|sociedades de resp
 
 ### Sociedades por acciones
 ---
-Son aquellas sociedades en las cuales su capital social se divide en acciones que se incorporan a títulos representativos, y así circulan. Sus socios, denominados accionistas, limitan su responsabilidad a la integración de las acciones suscriptas
+Son aquellas sociedades en las cuales su capital social se divide en [[Acciones|acciones]] que se incorporan a títulos representativos, y así circulan. Sus socios, denominados accionistas, limitan su responsabilidad a la integración de las acciones suscriptas
 
 Entre ellas se cuentan
 * Las [[Sociedad Anónima|sociedades anónimas]]

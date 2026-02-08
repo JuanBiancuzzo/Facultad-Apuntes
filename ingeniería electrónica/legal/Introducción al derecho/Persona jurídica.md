@@ -9,13 +9,14 @@ aliases:
   - Fundación#^fundacion
 tags:
   - carrera/ingeniería-electrónica/legal/Introducción-al-derecho
+  - carrera/ingeniería-electrónica/legal/Derecho-societario
   - nota/facultad
 vinculoFacultad:
   - tema: Introducción al derecho
     capitulo: 1
     materia: Legislación y ejercicio profesional
     carrera: Ingeniería electrónica
-  - tema: Sociedades
+  - tema: Derecho societario
     capitulo: 2
     materia: Legislación y ejercicio profesional
     carrera: Ingeniería electrónica
