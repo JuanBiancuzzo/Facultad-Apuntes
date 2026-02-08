@@ -10,6 +10,8 @@ aliases:
   - Responsabilidad solidaria#^responsabilidad-solidaria
   - Responsabilidad subsidiaria#^responsabilidad-subsidiaria
   - Responsabilidad no subsidiaria#^responsabilidad-no-subsidiaria
+  - Sociedades irregulares#Sociedades irregulares
+  - Sociedades de hecho#Sociedades irregulares
   - Sociedades de interés#Sociedades de interés
   - Sociedades de Personas#Sociedades de interés
   - Sociedades por cuotas#Sociedades por cuotas
@@ -68,7 +70,7 @@ Los elementos específicos del contratos de sociedad comercial son, los siguient
         * Convocar a asambleas
         * Realización de negocios con terceros
     * Actúan en nombre de la sociedad 
-* De fiscalización
+* De fiscalización ^fiscalizacion
     * Controla a los demás órganos, por medio de sus integrantes como también por órganos especiales (Sindicatura o Consejo de Vigilancia)
 
 ## Responsabilidades de los socios
@@ -205,6 +207,10 @@ Los elementos específicos del contratos de sociedad comercial son, los siguient
 \end{tikzpicture}
 \end{document}
 ``` 
+### Sociedades irregulares
+---
+Si la sociedades no es creada mediante contrato escrito, carece de tipicidad o no está inscripta en el registro público de comercio, se la define como sociedad irregular o de hecho
+
 ### Sociedades de interés
 ---
 Son sociedades que cuentan por lo general con muy pocos socios, y se caracterizan fundamentalmente por 
@@ -235,3 +241,11 @@ Entre ellas se cuentan
 * Las [[Sociedad por acciones simplificada|sociedades por acciones simplificadas]]
 * Las [[Sociedad cooperativas|sociedades cooperativas]]
 * Las [[Sociedad de garantía recíproca|sociedades de garantía recíproca]]
+
+## Disolución
+---
+La disolución de una sociedad puede ser por 
+* Pérdida total del capital social
+* Quiebra
+* Fusión con otra sociedad
+* Resolución firme que le retire autorización para funcionar

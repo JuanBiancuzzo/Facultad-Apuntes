@@ -58,13 +58,17 @@ Existe el derecho de receso, el cual trans una modificación al estatuto que alt
 ### De representación y administración
 ---
 Como órgano representativo se encuentra el Directorio, el cual tiene como características
-* 
+* El directorio puede ser unipersonal o pluripersonal según este en el estatuto o se establezca en asamblea ordinaria
+    * Para sociedades anónimas no unipersonales, el directorio debe estar integrado por $3$ directores como mínimo
+* No es necesario ser accionista para ocupar un cargo en el directorio
+* Los integrantes del directorio deben actuar colegiadamente, sesionar y decidir por mayoría cada uno de los aspectos de le gestión social
+* El estatuto tiene que aclarar el tiempo del cargo de los directores elegidos que no puede superar los $3$ ejercicios
+* Los directores tienen una [[ingeniería electrónica/legal/Derecho societario/Sociedad#^responsabilidad-solidaria|responsabilidad solidaria]], e [[ingeniería electrónica/legal/Derecho societario/Sociedad#^responsabilidad-ilimitada|ilimitada]] por daños y perjuicios sufridos por la sociedad, accionistas o terceros debido a su mala gestión según el criterio de lealtad y diligencia previsto en el [[Art. 59 del LGS,|Art. 59 del LGS]]
 
-Presidente del directorio -> administración
-
+La función del director es remunerada, establecida en el estatuto o fijada por la asamblea general ordinaria de accionistas. Tiene un monto máximo, incluyendo sueldos y otras remuneraciones por desempeño, de un $25\%$ de las ganancias
 ### De Fiscalización
 ---
-[[Sindicatura|sindicatura]] o [[Consejo de vigilancia|consejo de vigilancia]]
+La fiscalización de una sociedad anónima puede ser una [[Sindicatura|sindicatura]] o [[Consejo de vigilancia|consejo de vigilancia]]
 
 ## Participación estatal mayoritaria
 ---

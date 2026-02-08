@@ -2,7 +2,7 @@
 cuatri: 25C2
 codigo: "9111"
 plan: 2009
-estado: Terminado la introducción al derecho
+estado: Terminado derecho societario
 tags:
   - carrera/ingeniería-electrónica/legal
   - facultad/materia
