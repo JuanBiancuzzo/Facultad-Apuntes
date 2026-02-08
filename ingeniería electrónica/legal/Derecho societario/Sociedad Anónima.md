@@ -30,7 +30,11 @@ Sus rasgos tipificantes son
 
 ## Constitución
 ---
-
+La constitución de una SA puede ser por 
+* Instrumento público
+    * Es el caso más común, y es por medio de una escritura pública
+* Acto único
+* Por suscripción pública
 
 ## Órganos sociales
 ---
@@ -38,11 +42,23 @@ Los órganos de una sociedad de responsabilidad limitada son
 
 ### De gobierno
 ---
-Asamblea de accionistas
+La asamblea es una reunión entre accionistas convocada y celebrada de acuerdo a la [[ingeniería electrónica/legal/Introducción al derecho/Ley|ley]] y los estatutos para considerar y resolver asuntos para los cuales se la convoca
+
+Tiene como características
+* Las decisiones son obtenidas por el regimen de mayoría
+* Solo funciona cuando es convocada por el órgano administrativo, 
+    * Su función no es continuo
+* De facultad indelegable
+    * No puede ser reemplazada por otro órgano de la sociedad
+* Es un acto formal ad solemnitatem
+    * Regulado por el legislador para permitir la participación de todos los accionistas y evitar el abuso del grupo de control
+
+Existe el derecho de receso, el cual trans una modificación al estatuto que alteran sustancialmente a la sociedad, se le permite al accionista desvincularse de la sociedad con reembolso del valor de su participación
 
 ### De representación y administración
 ---
-Directorio -> representación
+Como órgano representativo se encuentra el Directorio, el cual tiene como características
+* 
 
 Presidente del directorio -> administración
 
