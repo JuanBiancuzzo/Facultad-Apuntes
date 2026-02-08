@@ -14,6 +14,7 @@ aliases:
   - Obligación no hacer#^obligacion-no-hacer
   - Obligación facultativa#^obligacion-facultativa
   - Obligación alternativa#^obligacion-alternativa
+  - Obligación con clausula penal#^obligacion-con-clausula-penal
   - Obligación divisible#^obligacion-divisible
   - Obligación indivisible#^obligacion-indivisible
 tags:
@@ -37,6 +38,8 @@ Esta prestación debe ser
 * Lícita
 * Determinada o determinable
 * Susceptible de valoración económica, respondiendo a un interés que pueda ser [[ingeniería electrónica/legal/Introducción al derecho/Patrimonio|patrimonial]] o extrapatrimonial del acreedor
+
+No hay obligación sin causa, es decir, sin que derive de algún hecho idóneo para producirla, de conformidad con el [[ingeniería electrónica/legal/Introducción al derecho/Ordenamiento jurídico|ordenamiento jurídico]]. [[colección/documentos/Código Civil y Comercial de la Nación/Libro Tercero/Título 1/Capítulo 1/Art. 726 del CC y CN, Causa|Art. 726 del CC y CN]]
 
 ## Clasificación
 ---
@@ -77,7 +80,11 @@ Se puede clasificar una obligación por distintos aspectos
         * Hay una prestación principal y otra accesoria. El acreedor solo puede exigir la principal, pero el deudor también puede liberarse cumpliendo la accesoria
     * Alternativa [[colección/documentos/Código Civil y Comercial de la Nación/Libro Tercero/Título 1/Capítulo 3/Sección 3/Sección 3, Obligaciones alternativas|Libro tercero, título primero, sección 3 del CC y CN]] ^obligacion-alternativa
         * La obligación tiene por objeto una prestación entre varias, el deudor puede cumplir la que quiera pero solo una
-    
+
+* Según si tienen causa penal
+    * Con clausula penal [[colección/documentos/Código Civil y Comercial de la Nación/Libro Tercero/Título 1/Capítulo 3/Sección 5/Art. 790 del CC y CN, Concepto|Art. 790 del CC y CN]] ^obligacion-con-clausula-penal
+        * La clausula penal es aquella por la cual una persona, para asegurar el cumplimiento de una obligación, se sujeta a una pena o multa en caso de retardar o de no ejecutar la obligación
+
 * Según si la prestación puede fraccionarse
     * Divisibles [[colección/documentos/Código Civil y Comercial de la Nación/Libro Tercero/Título 1/Capítulo 3/Sección 6/Parágrafo 1/Parágrafo 1, Obligaciones divisibles|Libro tercero, título primero, sección 6, parágrafo 1 del CC y CN]] ^obligacion-divisible
         * Las prestaciones se pueden cumplir parcialmente. Esto requiere que la prestación sea materialmente fraccionable y que el valor del objeto no quede afectado por efecto de su división
