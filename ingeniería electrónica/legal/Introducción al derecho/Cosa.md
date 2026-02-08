@@ -40,3 +40,9 @@ Son cosas consumibles, según el [[Art. 231 CC y CN, Cosas consumibles|Art. 231 
 ---
 Son cosas fungibles, según el [[Art. 232 CC y CN, Cosas fungibles|Art. 232 CC y CN]], aquellas en que todo individuo de la especie equivale a otro individuo de la misma especie, y puede sustituirse por otras de la misma calidad y en igual cantidad
 
+## Frutos 
+---
+Los frutos, según el [[Art. 133 del CC y CN, Frutos y productos]], son los objetos que un [[ingeniería electrónica/legal/Introducción al derecho/Bien|bien]] produce, de modo renovable, sin que se altere o disminuya su sustancia
+* Frutos naturales son las producciones espontáneas de la naturaleza
+* Frutos industriales son los que se producen por la industria de las personas o la cultura de la tierra
+* Frutos civiles son las rentas que la cosa produce

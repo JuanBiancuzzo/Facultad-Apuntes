@@ -1,10 +1,10 @@
 ---
-tipo: Título
-nombre: Del ejercicio de la navegación y del comercio por agua
-num: 3
-previo: "[[colección/documentos/Ley de Navegación/Ley de Navegación|Ley de Navegación]]"
+tipo: Capítulo
+nombre: Disposiciones Generales
+num: 1
+previo: "[[colección/documentos/Ley General de Sociedades/Ley General de Sociedades|Ley General de Sociedades]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Título
+  - carrera/ingeniería-electrónica/legal/Capítulo
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

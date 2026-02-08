@@ -2,7 +2,7 @@
 tipo: Capítulo
 nombre: Propiedad y armamento del buque
 num: 1
-previo: "[[Título 3, Del ejercicio de la navegación y del comercio por agua|Título 3, Del ejercicio de la navegación y del comercio por agua]]"
+previo: "[[colección/documentos/Ley de Navegación/Título 3/Título 3, Del ejercicio de la navegación y del comercio por agua|Título 3, Del ejercicio de la navegación y del comercio por agua]]"
 tags:
   - carrera/ingeniería-electrónica/legal/Capítulo
 ---

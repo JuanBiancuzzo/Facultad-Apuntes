@@ -5,12 +5,18 @@ referencias: []
 aliases:
   - Persona jurídica privada#^persona-juridica-privada
   - Persona jurídica pública#^persona-juridica-publica
+  - Asociación civil#^asociacion-civil
+  - Fundación#^fundacion
 tags:
   - carrera/ingeniería-electrónica/legal/Introducción-al-derecho
   - nota/facultad
 vinculoFacultad:
   - tema: Introducción al derecho
     capitulo: 1
+    materia: Legislación y ejercicio profesional
+    carrera: Ingeniería electrónica
+  - tema: Sociedades
+    capitulo: 2
     materia: Legislación y ejercicio profesional
     carrera: Ingeniería electrónica
 ---
@@ -25,7 +31,7 @@ La persona jurídica es una entidad susceptible de adquirir [[ingeniería electr
 ---
 Sus atributos son
 * Nombre [[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 3/Parágrafo 1/Art. 151 del CC y CN, Nombre|Art. 151 del CC y CN]]
-    * La persona jurídica debe tener un nombre que la identifique como tal, con el aditamento indicativo de la forma jurídica adoptada
+    * La persona jurídica debe tener un nombre que la identifique como tal, con el aditamento indicativo de la forma jurídica adoptada ([[Sociedad de Responsabilidad Limitada|SRL]], [[Sociedad Acciones Simplificada| SAS]], [[Sociedad Anónima|SA]]). El nombre debe satisfacer los recaudos de veracidad, novedad y aptitud distintiva, tanto respecto de otros nombre, como de [[Marca|marcas]], nombre de fantasía u otras formas de referencias a [[Bien|bienes]] o servicios
 * Domicilio [[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 3/Parágrafo 1/Art. 152 del CC y CN, Domicilio y sede social|Art. 152 del CC y CN]]
     * El domicilio de la persona jurídica es el fijado en sus estatutos o en la autorización que se le dio para funcionar
 * [[ingeniería electrónica/legal/Introducción al derecho/Patrimonio|Patrimonio]] [[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 3/Parágrafo 1/Art. 154 del CC y CN, Patrimonio|Art. 154 del CC y CN]]
@@ -44,10 +50,19 @@ El comienzo es a partir de su constitución, donde las personas expresan su volu
 Una persona jurídica puede clasificarse en privada y pública, como se menciona en el [[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 2/Art. 145 del CC y CN, Clases|Art. 145 del CC y CN]], de la siguiente forma
 
 * Persona jurídica privada, del [[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 2/Art. 148 del CC y CN, Personas jurídicas privadas|Art. 148 del CC y CN]] ^persona-juridica-privada
-    * Las [[Sociedad|sociedades]]
-    * Las asociaciones civiles
+    * Las [[ingeniería electrónica/legal/Derecho societario/Sociedad|sociedades]]
+    * Las asociaciones civiles ^asociacion-civil
+        * Entidad sin ánimo de lucro, integrada por [[ingeniería electrónica/legal/Introducción al derecho/Persona humana|personas humanas]]
+        * Objeto: fomentar entre sus socios y/o terceros alguna actividad como 
+            * Cultural 
+            * Educativo
+            * Divulgación
+            * Deportiva
+        * Necesidad de autorización para funcionar
     * Las simples asociaciones
-    * Las fundaciones
+    * Las fundaciones ^fundacion
+        * Finalidad de bien común, sin fin de lucro
+        * Necesidad de autorización para funcionar
     * Las iglesias, confesiones, comunidades o entidades religiosas
     * Las mutuales
     * Las cooperativas
@@ -60,7 +75,13 @@ Una persona jurídica puede clasificarse en privada y pública, como se menciona
 
 ## Estatuto
 ---
+Dispone al respecto el [[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 3/Parágrafo 2/Art. 157 del CC y CN, Modificación del estatuto|Art. 157 del CC y CN]], "La modificación del estatuto produce efectos desde su otorgamiento. Si requiere inscripción es oponible a terceros a partir de ésta, excepto que el tercero la conociera"
 
+De manera tal que, en las relaciones internas de la persona jurídica, la decisión del órgano correspondiente es oponible desde el momento de su adopción y obliga a los administradores a su ejecución
+
+## Inoponibilidad 
+---
+Si una persona jurídica actúa con el objetivo la consecución de fines ajenos a la persona jurídica, constituya un recurso para violar la ley, el orden público o la [[Buena fe|buena fe]], o para frustrar derecho de cualquier persona, según el [[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 2/Capítulo 1/Sección 1/Art. 144 del CC y CN, Inoponibilidad de la personalidad jurídica|Art. 144 del CC y CN]], imputa las consecuencias y efectos de la ilegítima o extrasocietaria operación a sus responsables, generalmente beneficiarios de esa manera de proceder
 
 ## Fin de una persona
 ---

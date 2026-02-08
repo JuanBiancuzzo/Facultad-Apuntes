@@ -79,12 +79,12 @@ Por ejemplo, el contrato de locación de un inmueble, no modifica el patrimonio,
 ---
 Los vicios en el contexto de los actos jurídicos son anomalías que afectan la validez de un acto, entre están
 
-* Lesión
+* Lesión [[Art. 322 del CC y CN, Lesión|Art. 322 del CC y CN]]
     * Sucede cuando una de las partes explota desproporcionada la situación o necesidad de la otra, que no pudiendo obrar de otra manera, lleva adelante el acto jurídico
     * En estos casos se puede demandar la nulidad o modificación de los actos jurídicos
-* Simulación
+* Simulación [[Art. 333 del CC y CN, Caracterización|Art. 333]] y [[Art. 334 del CC y CN, Simulación lícita e ilícita|Art. 334 del CC y CN]]
     * Hay una contradicción entre lo querido y lo manifestado. Ocurre cuando se encubre un acto jurídico bajo la apariencia de otros o tiene clausulas que no son sinceras, engañando a terceros
     * En estos casos se vuelve nulo el acto jurídico
-* Fraude
+* Fraude 
     * Hay fraude cuando una persona insolvente (incapaz de pagar deudas) adquiere bienes sabiendo que después no podrá hacer frente a sus obligaciones para con los acreedores
     * En estos casos, los acreedores pueden solicitar la [[ingeniería electrónica/legal/Introducción al derecho/Persona jurídica#Inoponibilidad|declaración de inoponibilidad]]

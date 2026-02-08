@@ -22,7 +22,7 @@ El delito recae como [[ingeniería electrónica/legal/Introducción al derecho/H
 
 El cuasidelito es el ejecutado con culpa ^cuasidelito
 
-El delito doloso es realizado con conciencia y voluntad generando daños a una [[ingeniería electrónica/legal/Introducción al derecho/Persona|persona]] o [[Bien|bienes]] de otro. Por ejemplo matar a una persona para roberle
+El delito doloso es realizado con conciencia y voluntad generando daños a una [[ingeniería electrónica/legal/Introducción al derecho/Persona|persona]] o [[Bien|bienes]] de otro. Por ejemplo matar a una persona para robarle
 
 El delito culposo es realizado con imprudencia o negligencia resultando en un acto dañoso hacia otro. Por ejemplo, por conducir con exceso de velocidad y matar a un peatón
 

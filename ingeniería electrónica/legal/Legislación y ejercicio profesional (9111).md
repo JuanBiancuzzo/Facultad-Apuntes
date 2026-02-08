@@ -2,7 +2,7 @@
 cuatri: 25C2
 codigo: "9111"
 plan: 2009
-estado: Falta terminar los últimos capítulos
+estado: Terminado la introducción al derecho
 tags:
   - carrera/ingeniería-electrónica/legal
   - facultad/materia

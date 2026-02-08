@@ -1,18 +1,18 @@
 ---
-tipo: Título
-nombre: Del ejercicio de la navegación y del comercio por agua
-num: 3
-previo: "[[colección/documentos/Ley de Navegación/Ley de Navegación|Ley de Navegación]]"
+abreviacion: de la LGS
+grupos:
+  - Capítulo
+  - Sección
+artConNombre: true
 tags:
-  - carrera/ingeniería-electrónica/legal/Título
+  - carrera/ingeniería-electrónica/legal/documento
+aliases:
+  - Ley 19.550
+  - LGS
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });
 ```
-# Interpretación
----
-
-
 # Artículos
 ---
 ```dataviewjs

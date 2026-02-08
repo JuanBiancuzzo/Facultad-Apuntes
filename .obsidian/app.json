@@ -22,5 +22,6 @@
     "margin": "0",
     "downscalePercent": 60
   },
-  "newLinkFormat": "absolute"
+  "newLinkFormat": "absolute",
+  "vimMode": true
 }

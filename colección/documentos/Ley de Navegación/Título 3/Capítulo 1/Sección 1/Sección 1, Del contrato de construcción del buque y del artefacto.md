@@ -2,7 +2,7 @@
 tipo: Sección
 nombre: Del contrato de construcción del buque y del artefacto
 num: 1
-previo: "[[Capítulo 1, Propiedad y armamento del buque|Capítulo 1, Propiedad y armamento del buque]]"
+previo: "[[colección/documentos/Ley de Navegación/Título 3/Capítulo 1/Capítulo 1, Propiedad y armamento del buque|Capítulo 1, Propiedad y armamento del buque]]"
 tags:
   - carrera/ingeniería-electrónica/legal/Sección
 ---
