@@ -12,8 +12,10 @@
       },
       "folder": {
         "enabled": true,
-        "folders": [],
-        "chooseWhenCreatingNote": false,
+        "folders": [
+          "/"
+        ],
+        "chooseWhenCreatingNote": true,
         "createInSameFolderAsActiveFile": false,
         "chooseFromSubfolders": false
       },
