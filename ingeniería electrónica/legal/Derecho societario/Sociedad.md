@@ -35,15 +35,15 @@ La sociedad comercial, según el [[colección/documentos/Ley General de Sociedad
 Esta se trata de un contrato de organización creado como medio de concentrar capitales para la realización de una actividad de carácter económico y a través del cual sus otorgantes disponen de un complejo de normas estructurales y funcionales destinadas a regular permanentemente las relaciones emergentes del negocio jurídico constituido
 
 Los contratos de sociedades se caracterizan por
-* Es [[ingeniería electrónica/legal/Contratos/Contrato#Contratos consensuales o reales|consensuales]]
+* Es [[ingeniería electrónica/legal/Contratos/Contrato#^contrato-consencual|consensuales]]
     * Basta con el consentimiento de los otorgantes para hacer nacer los [[Derecho|derechos]] y [[Obligación|obligaciones]] que se derivan del carácter de socios
-* Es [[ingeniería electrónica/legal/Contratos/Contrato#Contratos conmutativos o aleatorios|conmutativo]]
+* Es [[ingeniería electrónica/legal/Contratos/Contrato#contrato-conmutativo|conmutativo]]
     * Al momento de constituir la sociedad las partes pueden conocer las ventajas y sacrificios que el negocio ofrece
-* Es [[ingeniería electrónica/legal/Contratos/Contrato#Contratos onerosos y gratuitos|oneroso]]
+* Es [[ingeniería electrónica/legal/Contratos/Contrato#^contrato-oneroso|oneroso]]
     * Porque no es concebible que una persona pueda adquirir los derechos de socio si no cumple con la necesaria aportación al fondo común
 * Es de ejecución continuada o duradera
     * El contrato no se celebra para una operación sino para realizar actividades y generar con ellas ganancias a sus socios
-* Es [[ingeniería electrónica/legal/Contratos/Contrato#Contratos unilaterales o bilaterales|plurilateral]]
+* Es [[ingeniería electrónica/legal/Contratos/Contrato#^contrato-plurilateral|plurilateral]]
     * Porque el contrato ha sido pensado como instrumento de concentración de capital, y alberga a un número ilimitado de socios
 * Es un contrato de organización
     * Cada parte constituye, a través de prestaciones coordinadas, el [[Patrimonio|patrimonio]] de un nuevo [[ingeniería electrónica/legal/Introducción al derecho/Persona|sujeto de derecho]] creado en virtud del contrato a través del cual los socios obtendrán los beneficios esperados

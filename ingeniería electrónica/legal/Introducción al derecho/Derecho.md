@@ -2,7 +2,8 @@
 dia: 2026-02-06
 etapa: empezado
 referencias: []
-aliases: []
+aliases:
+  - Abuso de derecho#Abuso del derecho
 tags:
   - carrera/ingeniería-electrónica/legal/Introducción-al-derecho
   - nota/facultad
