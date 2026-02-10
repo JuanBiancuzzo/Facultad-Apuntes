@@ -22,4 +22,4 @@ Como establece este artículo, el fraude a la ley es el acto de eludir la prohib
 
 Podemos tomar como ejemplo:
 
-Si entre dos [[Persona jurídica|personas jurídicas]], para evitar tener un contrato laboral y así evitar la ley de contrato de trabajo, se presenta como un [[Monotributista|monotributista]], prestando servicios y de esa forma establecer un [[Contrato|contrato]] entre partes. Esto le permite al empleador evadir el cumplimiento de estas normas de [[Carácter imperativo|]].
+Si entre dos [[Persona jurídica|personas jurídicas]], para evitar tener un contrato laboral y así evitar la ley de contrato de trabajo, se presenta como un [[Monotributista|monotributista]], prestando servicios y de esa forma establecer un [[ingeniería electrónica/legal/Contratos/Contrato|contrato]] entre partes. Esto le permite al empleador evadir el cumplimiento de estas normas de [[Carácter imperativo|]].

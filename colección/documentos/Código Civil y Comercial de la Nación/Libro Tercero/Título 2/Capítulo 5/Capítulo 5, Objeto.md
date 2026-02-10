@@ -11,7 +11,7 @@ tags:
 ```
 # Interpretación
 ---
-Como regla, toda prestación puede ser objeto de contrato. En línea con la precedente afirmación, el [[Código Civil y Comercial de la Nación|Código Civil y Comercial]] ha establecido, de manera expresa, aquellas prestaciones que no pueden ser objeto del [[Contrato|contrato]]
+Como regla, toda prestación puede ser objeto de contrato. En línea con la precedente afirmación, el [[Código Civil y Comercial de la Nación|Código Civil y Comercial]] ha establecido, de manera expresa, aquellas prestaciones que no pueden ser objeto del [[ingeniería electrónica/legal/Contratos/Contrato|contrato]]
 
 Como enuncia el [[Art. 1004 del CC y CN, Objetos prohibidos|artículo 1004]] ![[Art. 1004 del CC y CN, Objetos prohibidos#Artículo]]
 Añade el [[Art. 279 del CC y CN, Objeto|artículo 279]] que el hecho tampoco puede ser contrario a las buenas costumbres. ![[Art. 1004 del CC y CN, Objetos prohibidos#Interpretación]]

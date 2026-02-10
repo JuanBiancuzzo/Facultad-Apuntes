@@ -6,7 +6,8 @@ tags:
   - nota/facultad
 etapa: ampliar
 referencias: []
-aliases: []
+aliases: 
+  - Teorema de Parserval
 vinculoFacultad:
   - tema: Serie de Fourier
     capitulo: 12

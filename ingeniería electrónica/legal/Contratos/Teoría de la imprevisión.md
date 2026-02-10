@@ -19,7 +19,7 @@ vinculoFacultad:
 ---
 Es la situación en la cual a una o ambas partes, se vuelve extremadamente difícil cumplir con su [[ingeniería electrónica/legal/Obligaciones/Obligación|obligación]] de manera impredecible, pero si se puede modificar para que pueda seguir cumpliendo con sus obligaciones
 
-En el marco de los [[Contrato|contratos]], representa la intervención del [[ingeniería electrónica/legal/Introducción al derecho/Estado|Estado]] mediante un [[Juez|juez]] con el rol de mantener la equidad en los contratos. Este se encarga de modificar las obligaciones para restablecer la equidad gravemente alterada
+En el marco de los [[ingeniería electrónica/legal/Contratos/Contrato|contratos]], representa la intervención del [[ingeniería electrónica/legal/Introducción al derecho/Estado|Estado]] mediante un [[Juez|juez]] con el rol de mantener la equidad en los contratos. Este se encarga de modificar las obligaciones para restablecer la equidad gravemente alterada
 
 Por ejemplo, en pandemia el alcohol se volvió escaso y caro. Un proveedor del mismo acordó un [[Contrato de compraventa|contrato de compraventa]] de alcohol previo a la pandemia fijando un precio que a partir del comienzo de la pandemia ya no le resultaba conveniente fijar. Puede intervenir un juez para devolver la equidad
 

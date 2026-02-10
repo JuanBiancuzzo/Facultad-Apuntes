@@ -238,9 +238,9 @@ Los contratos se extinguen naturalmente cuando los contratantes cumplen con sus 
 * Muerte de las partes
     * En general, la muerte de las partes o una de ellas no extingue el contrato, sino que pasa a sus herederos
     * Si la transmisión a los herederos es incompatible con la naturaleza de la obligación
-* Rescisión bilateral
+* Rescisión bilateral ^recision-bilateral
     * Por acuerdo de voluntades se deja sin efecto el contrato
-* Rescisión unilateral
+* Rescisión unilateral ^recision-unilateral
     * Una sola de las partes tiene la facultad de ponerle fin a las relaciones contractuales total o parcialmente
 * Revocación
     * Dado una causa que lo justifique, una de las partes puede extinguir total o parcialmente el contrato

@@ -17,5 +17,5 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Según el [[colección/documentos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 3/Sección 3/Art. 993 del CC y CN, Cartas de intención|Art. 993 del CC y CN]], es el instrumento mediante el cual una parte o todas ellas expresan su consentimiento para negociar sobre ciertas bases limitando a cuestiones relativa a un futuro [[Contrato|contrato]]. Esta no configura un contrato, con constituye una oferta ni tiene fuerza obligatoria
+Según el [[colección/documentos/Código Civil y Comercial de la Nación/Libro Tercero/Título 2/Capítulo 3/Sección 3/Art. 993 del CC y CN, Cartas de intención|Art. 993 del CC y CN]], es el instrumento mediante el cual una parte o todas ellas expresan su consentimiento para negociar sobre ciertas bases limitando a cuestiones relativa a un futuro [[ingeniería electrónica/legal/Contratos/Contrato|contrato]]. Esta no configura un contrato, con constituye una oferta ni tiene fuerza obligatoria
 

@@ -10,7 +10,7 @@ tags:
 ---
 # Artículo
 ---
-"Los [[Derecho|derechos]] resultantes de los [[Contrato|contratos]] integran el derecho de propiedad del contratante."
+"Los [[Derecho|derechos]] resultantes de los [[ingeniería electrónica/legal/Contratos/Contrato|contratos]] integran el derecho de propiedad del contratante."
 
 # Interpretación
 ---

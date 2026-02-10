@@ -17,7 +17,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-En el marco de los [[Contrato|contratos]], representa la intervención del [[ingeniería electrónica/legal/Introducción al derecho/Estado|Estado]] mediante un [[Juez|juez]] con el rol de mantener la equidad en los contratos y dispone de la teoría de la lesión
+En el marco de los [[ingeniería electrónica/legal/Contratos/Contrato|contratos]], representa la intervención del [[ingeniería electrónica/legal/Introducción al derecho/Estado|Estado]] mediante un [[Juez|juez]] con el rol de mantener la equidad en los contratos y dispone de la teoría de la lesión
 
 Este le permite reducir las prestaciones excesivas y anular los contratos en los que las contraprestaciones resultan muy desproporcionales, donde hubo [[ingeniería electrónica/legal/Introducción al derecho/Derecho#Abuso del derecho|abuso de derecho]] 
 

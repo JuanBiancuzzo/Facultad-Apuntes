@@ -16,7 +16,7 @@ tags:
 ---
 # Artículo
 ---
-"Las demandas que versen sobre relaciones de consumo pueden interponerse, a elección del consumidor, ante los [[Juez|jueces]] del lugar de celebración del contrato, del cumplimiento de la prestación del servicio, de la entrega de bienes, del cumplimiento de la obligación de garantía, del domicilio del demandado o del lugar donde el consumidor realiza actos necesarios para la celebración del [[Contrato|contrato]].
+"Las demandas que versen sobre relaciones de consumo pueden interponerse, a elección del consumidor, ante los [[Juez|jueces]] del lugar de celebración del contrato, del cumplimiento de la prestación del servicio, de la entrega de bienes, del cumplimiento de la obligación de garantía, del domicilio del demandado o del lugar donde el consumidor realiza actos necesarios para la celebración del [[ingeniería electrónica/legal/Contratos/Contrato|contrato]].
 
 También son competentes los jueces del Estado donde el demandado tiene sucursal, agencia o cualquier forma de representación comercial, cuando éstas hayan intervenido en la celebración del contrato o cuando el demandado las haya mencionado a los efectos del cumplimiento de una garantía contractual.
 
