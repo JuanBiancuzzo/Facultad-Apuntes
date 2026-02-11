@@ -244,7 +244,7 @@ Los contratos se extinguen naturalmente cuando los contratantes cumplen con sus 
     * Una sola de las partes tiene la facultad de ponerle fin a las relaciones contractuales total o parcialmente
 * Revocación
     * Dado una causa que lo justifique, una de las partes puede extinguir total o parcialmente el contrato
-* Resolución
+* Resolución ^resolucion
     * Se extingue el contrato como consecuencia de un acto posterior a la celebración 
     * Causas de resolución importantes
         * Pacto comisorio
