@@ -53,7 +53,7 @@ Se pueden clasificar las normas por distintos ámbitos o características
         * [[Derecho Administrativo|Derecho Administrativo]]
         * [[Derecho Tributario|Derecho Tributario]]
         * [[Derecho penal|Derecho Penal]]
-        * [[Derecho del consumidor|Derecho del consumidor]]
+        * [[ingeniería electrónica/legal/Derecho laboral/Derecho de consumo|Derecho del consumidor]]
 * Normas de derecho privado
     * Regula las relaciones entre sujetos
     * Busca satisfacer los intereses de las partes involucradas

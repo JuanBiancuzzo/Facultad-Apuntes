@@ -2,11 +2,11 @@
 cuatri: 25C2
 codigo: "9111"
 plan: 2009
-estado: Terminado con Ejercicio profesional y derecho procesal
+estado: Terminado, tal vez incluir más detalle de los articulos y su influencia en la información
 tags:
   - carrera/ingeniería-electrónica/legal
   - facultad/materia
-etapa: empezado
+etapa: ampliar
 nombreMateria: Legislación y ejercicio profesional
 nombreReducido: legal
 nombreCarrera: Ingeniería electrónica
