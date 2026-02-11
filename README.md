@@ -26,7 +26,7 @@ Un listado de materias, sus códigos y su estado actual
 | [Electromagnetismo aplicado](ingeniería%20electrónica/electro/Electromagnetismo%20aplicado%20(TB069).md)                                               | TB069  | Falta terminar ondas confinadas y antenas                                            |
 | [Física 3](ingeniería%20electrónica/fisica%203/Física%203%20(8203).md)                                                                                 | 8203   | Falta pasar el resumen                                                               |
 | [Introducción a la ingeniería electronica](ingeniería%20electrónica/intro/Introducción%20a%20la%20ingeniería%20electronica%20(8602).md)                | 8602   | Terminado                                                                            |
-| [Legislación y ejercicio profesional](ingeniería%20electrónica/legal/Legislación%20y%20ejercicio%20profesional%20(9111).md)                            | 9111   | Terminado con Derecho real                                                           |
+| [Legislación y ejercicio profesional](ingeniería%20electrónica/legal/Legislación%20y%20ejercicio%20profesional%20(9111).md)                            | 9111   | Terminado con Propiedad intelec                                                      |
 | [Procesos estocásticos](ingeniería%20electrónica/estoca/Procesos%20estocásticos%20(TA132).md)                                                          | TA132  | Falta terminar introducción a procesos aleatorios, y análisis de procesos            |
 | [Seguridad ambiental y del trabajo](ingeniería%20electrónica/seguridad/Seguridad%20ambiental%20y%20del%20trabajo%20(9704).md)                          | 9704   | Terminado                                                                            |
 | [Señales y sistemas](ingeniería%20electrónica/señales/Señales%20y%20sistemas%20(TB065).md)                                                             | TB065  | Falta pasar las presentaciones del último tema                                       |
@@ -163,10 +163,10 @@ Estos son los cursos que vaya haciendo
 
 | Curso                                                                                                                                                            | Estado                                       |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| [Computation Structures](cursos/computation%20structures/Computation%20Structures.md)                                                                            | Sin empezar                                  |
-| [Introduction to Algorithms](cursos/introduction%20to%20algorithms/Introduction%20to%20Algorithms.md)                                                            | Terminando la lecture 7 y empezando unidad 3 |
-| [Performance Engineering of Software Systems](cursos/performance%20engineering%20of%20software%20systems/Performance%20Engineering%20of%20Software%20Systems.md) | Sin empezar                                  |
 | [Software Construction](cursos/software%20construction/Software%20Construction.md)                                                                               | Sin empezar                                  |
+| [Performance Engineering of Software Systems](cursos/performance%20engineering%20of%20software%20systems/Performance%20Engineering%20of%20Software%20Systems.md) | Sin empezar                                  |
+| [Introduction to Algorithms](cursos/introduction%20to%20algorithms/Introduction%20to%20Algorithms.md)                                                            | Terminando la lecture 7 y empezando unidad 3 |
+| [Computation Structures](cursos/computation%20structures/Computation%20Structures.md)                                                                            | Sin empezar                                  |
 | [CS50's Introduction to Cybersecurity](cursos/cs50's%20introduction%20to%20cybersecurity/CS50's%20Introduction%20to%20Cybersecurity.md)                          | Sin empezar                                  |
 ### Colecciones
 ---

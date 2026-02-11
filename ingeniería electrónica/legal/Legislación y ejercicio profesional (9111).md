@@ -2,7 +2,7 @@
 cuatri: 25C2
 codigo: "9111"
 plan: 2009
-estado: Terminado con Derecho real
+estado: Terminado con Propiedad intelectual
 tags:
   - carrera/ingeniería-electrónica/legal
   - facultad/materia
