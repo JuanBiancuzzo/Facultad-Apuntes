@@ -7,7 +7,7 @@ articulo:
     texto: Quien haya recibido de los autores o de sus derecho-habientes de un programa de computación una licencia para usarlo, podrá reproducir una única copia de salvaguardia de los ejemplares originales del mismo.
   - tipo: texto
     texto: Dicha copia deberá estar debidamente identificada, con indicación del licenciado que realizó la copia y la fecha de la misma. La copia de salvaguardia no podrá ser utilizada para otra finalidad que la de reemplazar el ejemplar original del programa de computación licenciado si ese original se pierde o deviene inútil para su utilización.
-previo: "[[Propiedad Intelectual|Propiedad Intelectual]]"
+previo: "[[colección/documentos/Propiedad Intelectual/Ley de Propiedad Intelectual|Propiedad Intelectual]]"
 tags:
   - carrera/ingeniería-electrónica/legal/articulo
 ---

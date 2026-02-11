@@ -13,7 +13,7 @@ aliases:
 ```
 # Definición
 ---
-Esta ley tiene correcciones expresadas en [[Propiedad Intelectual|Propiedad Intelectual Ley 25.036]]
+Esta ley tiene correcciones expresadas en [[colección/documentos/Propiedad Intelectual/Ley de Propiedad Intelectual|Propiedad Intelectual Ley 25.036]]
 
 # Artículos
 ---

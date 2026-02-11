@@ -113,7 +113,7 @@ Se puede finalizar su obligatoriedad de $2$ formas
         * Subrogación es dejar totalmente sin efecto y reemplazarla por otra
 * Enervación
     * La ley pierde eficacia por alguna practica social
-        * Por ejemplo, fotocopiar un texto de un autor es una actividad que va en contra de la [[Propiedad Intelectual|Ley de Propiedad Intelectual]]
+        * Por ejemplo, fotocopiar un texto de un autor es una actividad que va en contra de la [[colección/documentos/Propiedad Intelectual/Ley de Propiedad Intelectual|Ley de Propiedad Intelectual]]
 
 ## Características
 ---
