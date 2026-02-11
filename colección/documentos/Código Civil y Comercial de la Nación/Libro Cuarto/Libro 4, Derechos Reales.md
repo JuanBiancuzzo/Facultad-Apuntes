@@ -6,8 +6,6 @@ previo: "[[Código Civil y Comercial de la Nación|Código Civil y Comercial de 
 tags:
   - carrera/ingeniería-electrónica/legal/Libro
   - carrera/ingeniería-electrónica/legal/Derecho-real
-aliases:
-  - Derecho real
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

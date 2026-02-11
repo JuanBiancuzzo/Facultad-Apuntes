@@ -4,7 +4,9 @@ etapa: empezado
 referencias: []
 aliases:
   - Bien inmueble#Inmueble
+  - Cosa inmueble#Inmueble
   - Bien Mueble#Mueble
+  - Cosa Mueble#Mueble
 tags:
   - carrera/ingeniería-electrónica/legal/Introducción-al-derecho
   - nota/facultad

@@ -128,5 +128,5 @@ La extinción de las obligaciones pueden ser clasificadas por las que satisfacen
         * El acreedor renuncia a los derechos para recibir el pago
     * Renuncia a los derechos por parte del acreedor
         * Es un sentido más general que la remisión
-    * Prescripción
+    * [[ingeniería electrónica/legal/Derecho real/Prescripción#^prescricion-liberatoria|Prescripción liberatoria]]
         * El deudor se libera de la obligación debido al transcurso del tiempo

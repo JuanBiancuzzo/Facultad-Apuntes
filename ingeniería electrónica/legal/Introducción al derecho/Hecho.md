@@ -12,7 +12,6 @@ aliases:
   - Hecho jurídico humano voluntario ilícito#Hecho jurídico humano voluntario ilícito
   - Hecho jurídico humano voluntario lícito#Hecho jurídico humano voluntario lícito
   - Simple acto lícito#Simple acto lícito
-  - Acto jurídico#Acto jurídico
 tags:
   - carrera/ingeniería-electrónica/legal/Introducción-al-derecho
   - nota/facultad

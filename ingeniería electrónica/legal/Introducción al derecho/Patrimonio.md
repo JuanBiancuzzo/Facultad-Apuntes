@@ -2,13 +2,19 @@
 dia: 2026-02-07
 etapa: empezado
 referencias: []
-aliases: []
+aliases: 
+  - Derecho patrimonial
 tags:
   - carrera/ingeniería-electrónica/legal/Introducción-al-derecho
+  - carrera/ingeniería-electrónica/legal/Derecho-real
   - nota/facultad
 vinculoFacultad:
   - tema: Introducción al derecho
     capitulo: 1
+    materia: Legislación y ejercicio profesional
+    carrera: Ingeniería electrónica
+  - tema: Derecho real
+    capitulo: 6
     materia: Legislación y ejercicio profesional
     carrera: Ingeniería electrónica
 ---
@@ -23,6 +29,5 @@ El patrimonio, como está comprendido en el [[colección/documentos/Código Civi
 ---
 Son aquellos que sirven para la satisfacción de las necesidades económicas del titular de los derechos. Abarcan
 * [[Derecho Personal|Derechos personales]]
-    * Le da la [[ingeniería electrónica/legal/Introducción al derecho/Derecho|facultad]] al titular del derecho a exigir que una persona cumpla con su [[ingeniería electrónica/legal/Obligaciones/Obligación|obligación]]
 * [[Derecho Real|Derechos reales]]
 * [[Derecho Intelectual|Derechos intelectuales]]
