@@ -3,7 +3,7 @@ dia: 2024-07-31
 tags:
   - proyecto/práctico
   - proyecto-práctico/obsidian-static-site-generator
-estado: Recién empezando
+estado: Archivado, no se va a seguir con este proyecto
 ---
 # Propuesta
 ---

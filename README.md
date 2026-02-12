@@ -128,17 +128,15 @@ Un listado de los proyectos y su estado actual
 ---
 Estos proyectos tienen una aplicación como resultado final
 
-| Proyecto                                                                                                                                                                        | Estado                                     |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| [8-bit computer](proyecto%20práctico/8-bit%20computer/8-bit%20computer.md)                                                                                                      | Empezando por la ALU                       |
-| [Simpler GUI](proyecto%20práctico/simpler%20gui/Simpler%20GUI.md)                                                                                                               | Sin empezar                                |
-| [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)                                     | Estamos buscando información sobre el tema |
-| [Primer proyecto de robótica - Auto remoto](proyecto%20práctico/primer%20proyecto%20de%20robótica%20-%20auto%20remoto/Primer%20proyecto%20de%20robótica%20-%20Auto%20remoto.md) | Terminado                                  |
-| [Plugins de Obsidian](proyecto%20práctico/plugins%20de%20obsidian/Plugins%20de%20Obsidian.md)                                                                                   | Sin empezar                                |
-| [Porfolio](proyecto%20práctico/porfolio/Porfolio.md)                                                                                                                            | Sin empezar                                |
-| [Better animations in my humble opinion](proyecto%20práctico/better%20animations%20in%20my%20humble%20opinion/Better%20animations%20in%20my%20humble%20opinion.md)              | Sin empezar                                |
-| [Obsidian Static Site Generator](proyecto%20práctico/obsidian%20static%20site%20generator/Obsidian%20Static%20Site%20Generator.md)                                              | Recién empezando                           |
-| [Own wiki](proyecto%20práctico/own%20wiki/Own%20wiki.md)                                                                                                                        | Haciendo el backend                        |
+| Proyecto                                                                                                                                                                        | Estado                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| [8-bit computer](proyecto%20práctico/8-bit%20computer/8-bit%20computer.md)                                                                                                      | Empezando por la ALU                           |
+| [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)                                     | Estamos buscando información sobre el tema     |
+| [Primer proyecto de robótica - Auto remoto](proyecto%20práctico/primer%20proyecto%20de%20robótica%20-%20auto%20remoto/Primer%20proyecto%20de%20robótica%20-%20Auto%20remoto.md) | Terminado                                      |
+| [Porfolio](proyecto%20práctico/porfolio/Porfolio.md)                                                                                                                            | Sin empezar                                    |
+| [Better animations in my humble opinion](proyecto%20práctico/better%20animations%20in%20my%20humble%20opinion/Better%20animations%20in%20my%20humble%20opinion.md)              | Sin empezar                                    |
+| [Obsidian Static Site Generator](proyecto%20práctico/obsidian%20static%20site%20generator/Obsidian%20Static%20Site%20Generator.md)                                              | Archivado, no se va a seguir con este proyecto |
+| [Own wiki](proyecto%20práctico/own%20wiki/Own%20wiki.md)                                                                                                                        | Haciendo el backend                            |
 
 ### Proyectos de investigación
 ---
@@ -163,10 +161,10 @@ Estos son los cursos que vaya haciendo
 
 | Curso                                                                                                                                                            | Estado                                       |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| [Software Construction](cursos/software%20construction/Software%20Construction.md)                                                                               | Sin empezar                                  |
-| [Performance Engineering of Software Systems](cursos/performance%20engineering%20of%20software%20systems/Performance%20Engineering%20of%20Software%20Systems.md) | Sin empezar                                  |
-| [Introduction to Algorithms](cursos/introduction%20to%20algorithms/Introduction%20to%20Algorithms.md)                                                            | Terminando la lecture 7 y empezando unidad 3 |
 | [Computation Structures](cursos/computation%20structures/Computation%20Structures.md)                                                                            | Sin empezar                                  |
+| [Introduction to Algorithms](cursos/introduction%20to%20algorithms/Introduction%20to%20Algorithms.md)                                                            | Terminando la lecture 7 y empezando unidad 3 |
+| [Performance Engineering of Software Systems](cursos/performance%20engineering%20of%20software%20systems/Performance%20Engineering%20of%20Software%20Systems.md) | Sin empezar                                  |
+| [Software Construction](cursos/software%20construction/Software%20Construction.md)                                                                               | Sin empezar                                  |
 | [CS50's Introduction to Cybersecurity](cursos/cs50's%20introduction%20to%20cybersecurity/CS50's%20Introduction%20to%20Cybersecurity.md)                          | Sin empezar                                  |
 ### Colecciones
 ---
