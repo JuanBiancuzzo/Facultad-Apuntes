@@ -26,8 +26,6 @@ Por ejemplo, si se tiene la secuencia de caracteres "AAAABBCCCAAAAA" se puede tr
 
 Notemos que este método solo es mejor si realmente hay repetidos de forma consecutiva, ya sea caracteres únicos, o conjunto de caracteres. En el caso que esto no se cumpla, se tiene dos consecuencias donde estamos usando [[ingeniería en informática/sisop/Virtualización de memoria/Memoria|memoria]] para guardar esas cantidades, y por lo tanto si no hay repetidos la estamos desperdiciando, y además este método impone aumentar la cantidad de símbolos ya que se necesita los símbolos por ejemplo del "1A", "2A", "3A", etc. por lo que complejiza el proceso de [[investigación/matemática/encoding/Encoding|encoding]] al aumentar la cantidad de símbolos
 
-
-
 # Referencias
 ---
 ```dataviewjs

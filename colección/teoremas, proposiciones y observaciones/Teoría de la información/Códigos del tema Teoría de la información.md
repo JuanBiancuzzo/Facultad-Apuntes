@@ -23,7 +23,7 @@ nota:
     pathRelacionado:
   - numero: 5
     nombre:
-    path: ingeniería electrónica/taller de comunicaciones/Elementos de Teoría de Información/Código absolutamente óptimo#^obs-8-1-5
+    path: ingeniería electrónica/taller de comunicaciones/Elementos de Teoría de Información/Código óptimo#^obs-8-1-5
     pathRelacionado:
   - numero: 6
     nombre:
@@ -36,6 +36,10 @@ nota:
   - numero: 8
     nombre:
     path: ingeniería en informática/orga/Compresión/Divergencia de Kullback-Leibler#^pro-8-1-8
+    pathRelacionado:
+  - numero: 9
+    nombre: Teorema de codificación de canal
+    path: ingeniería electrónica/taller de comunicaciones/Elementos de Teoría de Información/Codificación de canal#^teo-8-1-9
     pathRelacionado:
 ---
 ```dataviewjs

@@ -42,7 +42,9 @@ Por ejemplo, digamos que tenemos una moneda cargada, dando una probabilidad de $
 * $\mathbb{P}(x) = 1 \implies I(x) = 0$
 * Si $\mathbb{P}(x \cap y) = \mathbb{P}(x) ~ \mathbb{P}(y)$, es decir que son [[Eventos independientes|eventos independientes]], entonces $I(x \cap y) = I(x) + I(y)$
 
-La única [[Función|función]] que logra cumplir estas propiedades es $$ I(x) = -log_b( \mathbb{P}(x) ) $$ donde $b$ representa la base en la que se guardaría esa información, en general se usa $b = 2$ para guardarlo en bits
+La única [[Función|función]] que logra cumplir estas propiedades es $$ I(x) = -log_b( \mathbb{P}(x) ) $$ donde $b$ representa la base en la que se guardaría esa información
+* En general se usa $b = 2$ para guardarlo en bits
+* Usando $b = e$ entonces la información tiene unidad de nat
 
 ## Cuantificación
 ---

@@ -21,14 +21,18 @@ vinculoFacultad:
     capitulo: 3
     materia: Taller de Procesamiento de Señales
     carrera: Ingeniería electrónica
-aliases: []
+aliases: 
+  - Entropía de Shannon#En la teoría de la información
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
-La entropía, recibe su nombre por su analogía con la [[Entropía|termodinámica]], y representa el [[ingeniería en informática/proba/Representación de variables aleatorias/Esperanza|valor medio]] de la [[ingeniería en informática/algo 1/Introducción a la programación/Información|información]] que aporta una [[ingeniería en informática/proba/Variables y vectores aleatorios/Variable aleatoria|variable aleatoria]]. 
+
+## En la teoría de la información
+---
+La entropía, o entropía de Shannon, recibe su nombre por su analogía con la [[Entropía|termodinámica]], y representa el [[ingeniería en informática/proba/Representación de variables aleatorias/Esperanza|valor medio]] de la [[ingeniería en informática/algo 1/Introducción a la programación/Información|información]] que aporta una [[ingeniería en informática/proba/Variables y vectores aleatorios/Variable aleatoria|variable aleatoria]] 
 
 En el caso de tener una [[ingeniería electrónica/taller de comunicaciones/Elementos de Teoría de Información/Fuente discreta sin memoria|fuente discreta sin memoria]] con [[ingeniería en informática/discreta/Autómatas/Alfabeto|alfabeto]] $\mathcal{S}$, es el valor medio de la información $I(s_i)$ sobre el alfabeto $\mathcal{S}$ $$ H = E[I(\mathcal{S})] = -\sum_i \mathbb{P}(s_i) \cdot \log_2(\mathbb{P}(s_i)) $$ donde $s_i$ es el [[ingeniería en informática/proba/Teoría de probabilidades/Evento|evento]] que se quiere mandar, y por lo tanto $\mathbb{P}(s_i)$ es la [[investigación/matemática/Probabilidad/Probabilidad|probabilidad]] que ocurra ese evento
 
@@ -38,14 +42,14 @@ Las unidades de la entropía son [[ingeniería en informática/algo 1/Introducci
 
 Esta entropía nos va a dar una idea de que tan impredecible es un fenómeno. Ya que se compensan la probabilidad de un evento y los bits de información de ese evento
 
-## Propiedades
+### Propiedades
 ---
 Se tiene las siguientes propiedades
 1. $H(\mathcal{S}) \ge 0$
 2. $H(\mathcal{S}) = 0$ sii $\mathbb{P}(s_i) = 1$ para algún $s_i \in \mathcal{S}$
 3. $H(\mathcal{S}) \le \log_2(|\mathcal{S}|)$
 
-## Ejemplo
+### Ejemplo
 ---
 Dada una moneda, donde la probabilidad de cara es $x \in [0,1]$ y la probabilidad de ceca es $1-x$. Si calculamos $H(x)$ de este problema, nos queda
 
