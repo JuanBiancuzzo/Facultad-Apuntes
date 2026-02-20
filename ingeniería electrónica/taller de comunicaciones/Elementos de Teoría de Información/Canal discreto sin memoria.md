@@ -5,6 +5,7 @@ referencias: []
 aliases:
   - DMC
   - Matriz de transición del canal#^matriz-transicion
+  - Capacidad de un canal discreto sin memoria#Capacidad del canal
 tags:
   - carrera/ingeniería-electrónica/taller-de-comunicaciones/Elementos-de-Teoría-de-Información
   - nota/facultad
