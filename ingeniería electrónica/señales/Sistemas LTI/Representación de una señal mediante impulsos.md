@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Se puede representar una [[Señal#^02aea6|señal discreta]] mediante [[Delta de Dirac|impulsos]] de la siguiente forma $$ x[n] = \sum_{k = -\infty}^{\infty} x[k] ~ \delta[n - k] $$
+Se puede representar una [[Señal#^discreta|señal discreta]] mediante [[Delta de Dirac|impulsos]] de la siguiente forma $$ x[n] = \sum_{k = -\infty}^{\infty} x[k] ~ \delta[n - k] $$
 Como ejemplo veamos la función 
 ```tikz
 \begin{document} 

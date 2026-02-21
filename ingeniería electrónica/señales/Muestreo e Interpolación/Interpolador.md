@@ -14,7 +14,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-El concepto del interpolador es utilizando una [[Señal#^02aea6|señal discreta]] a una [[Señal#^016a35|señal continua]]
+El concepto del interpolador es utilizando una [[Señal#^discreta|señal discreta]] a una [[Señal#^continua|señal continua]]
 
 ## Interpolador de banda limitada
 ---

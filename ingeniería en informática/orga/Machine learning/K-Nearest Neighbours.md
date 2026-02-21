@@ -1,7 +1,7 @@
 ---
 dia: 2023-08-10
 tags:
-  - "#investigación/matemática/Estadística/Machine-learning"
+  - investigación/matemática/Estadística/Machine-learning
   - carrera/ingeniería-en-informática/orga/Machine-learning
   - investigación/ciencias-de-la-computación/Machine-learning
   - investigación/machine-Learning

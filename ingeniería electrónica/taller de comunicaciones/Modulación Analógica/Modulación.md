@@ -6,9 +6,14 @@ aliases: []
 tags:
   - carrera/ingeniería-electrónica/taller-de-comunicaciones/Modulación-Analógica
   - nota/facultad
+  - carrera/ingeniería-electrónica/taller-de-comunicaciones/Modulación-digital
 vinculoFacultad:
   - tema: Modulación Analógica
     capitulo: 2
+    materia: Taller de Comunicaciones Digitales
+    carrera: Ingeniería electrónica
+  - tema: Modulación digital
+    capitulo: 3
     materia: Taller de Comunicaciones Digitales
     carrera: Ingeniería electrónica
 ---

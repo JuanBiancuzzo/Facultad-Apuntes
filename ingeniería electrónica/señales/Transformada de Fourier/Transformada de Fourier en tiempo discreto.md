@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Podemos definir la [[Transformada de Fourier|transformada de Fourier]] para [[Señal#^02aea6|señales de tiempo discreto]]. Consideremos una señal $x(n)$. Se define la transformada de Fourier de $x(n)$ o $X\left(e^{j\Omega}\right) \equiv \mathcal{F}\Set{x(n)}$ como $$ X\left(e^{j\Omega}\right) = \sum_{n = -\infty}^{\infty} x(n) ~ \exp(-j\Omega n), ~~~ \Omega \in [-\pi, ~\pi) $$
+Podemos definir la [[Transformada de Fourier|transformada de Fourier]] para [[Señal#^discreta|señales de tiempo discreto]]. Consideremos una señal $x(n)$. Se define la transformada de Fourier de $x(n)$ o $X\left(e^{j\Omega}\right) \equiv \mathcal{F}\Set{x(n)}$ como $$ X\left(e^{j\Omega}\right) = \sum_{n = -\infty}^{\infty} x(n) ~ \exp(-j\Omega n), ~~~ \Omega \in [-\pi, ~\pi) $$
 La definición dada arriba de la transformada de Fourier tiene sentido siempre y cuando $X\left(e^{j\Omega}\right)$ esté bien definida. Es decir la [[Serie|serie]] debe existir para todo $\Omega$ y ser finita. Esto por ejemplo se cumple si $x(n) \in l_1(\mathbb{Z})$
 
 La transformada de Fourier $\mathcal{F}$ se debe interpretar como un [[Operador|operador]] que mapea señales $x(n)$ en un determinado [[Espacio vectorial|espacio vectorial]] y entrega señales $X\left(e^{j\Omega}\right)$ en otro espacio vectorial donde podamos obtener caracterizaciones útiles de la señal original.

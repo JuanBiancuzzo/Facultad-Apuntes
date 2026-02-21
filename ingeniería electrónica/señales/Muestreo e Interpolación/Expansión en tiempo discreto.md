@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-El [[Muestreo periódico|muestreo]] de [[Señal#^02aea6|señales de tiempo discreto]] obedece a los mismo principios que las [[Señal#^016a35|señales de tiempo continuo]] y las ideas de fondo son básicamente las mismas
+El [[Muestreo periódico|muestreo]] de [[Señal#^discreta|señales de tiempo discreto]] obedece a los mismo principios que las [[Señal#^continua|señales de tiempo continuo]] y las ideas de fondo son básicamente las mismas
 
 Dada una señal de tiempo discreto $x(n)$ consideramos la siguiente señal $$ x_e(n) = \begin{cases} 
 	x(n / L) &~~~ \text{si} ~ n ~ \text{es múltiplo de} ~ L \\

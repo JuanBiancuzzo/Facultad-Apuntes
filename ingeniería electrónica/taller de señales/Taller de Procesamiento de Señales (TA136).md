@@ -10,7 +10,7 @@ cuatri: 25C2
 plan: "2023"
 codigo: TA136
 referencias:
-  - "1057"
+  - 1057
   - 1058
   - 659
   - 564

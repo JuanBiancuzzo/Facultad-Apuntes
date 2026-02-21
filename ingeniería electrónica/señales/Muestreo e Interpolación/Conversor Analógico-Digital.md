@@ -65,7 +65,7 @@ Podemos [[Modelo|modelar]] un conversor A/D de la siguiente forma
 
 ^8b8439
 
-Donde vamos a definir $x_c(t)$ como la [[Señal#^016a35|señal continua]] a convertir, y $$ \begin{align} 
+Donde vamos a definir $x_c(t)$ como la [[Señal#^continua|señal continua]] a convertir, y $$ \begin{align} 
 	p(t) &= \sum_{n = -\infty}^{\infty} \delta(t - nT) \\
 	x_p(t) &= x_c(t) ~ p(t) \\
 	&= \sum_{n = -\infty}^{\infty} x_c(t) ~ \delta(t - nT) \\

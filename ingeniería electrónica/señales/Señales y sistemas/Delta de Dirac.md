@@ -100,4 +100,4 @@ En el caso discreto, la delta se define como $$ \delta[n] = \begin{cases}
 * En el caso discreto, usando la [[Función de Heaviside|función escalón]]
 	* $\displaystyle u[n] = \sum_{k = - \infty}^{n} \delta[n]$
 	* $\displaystyle \delta[n] = u[n] - u[n - 1]$
-	* $\displaystyle \sum_{k = -\infty}^{\infty} x[k] ~ \delta[n - k] = x[n]$ para cualquier [[Señal#^02aea6|señal de tiempo discreto]] $x[n]$
+	* $\displaystyle \sum_{k = -\infty}^{\infty} x[k] ~ \delta[n - k] = x[n]$ para cualquier [[Señal#^discreta|señal de tiempo discreto]] $x[n]$

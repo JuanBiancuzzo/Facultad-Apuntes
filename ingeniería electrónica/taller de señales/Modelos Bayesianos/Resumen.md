@@ -3,7 +3,7 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/taller-de-señales/Modelos-Bayesianos
 nombreResumen: Modelos Bayesianos
-capitulo: 6
+capitulo: 5
 referencias: []
 infoTemaMateria:
   materia: Taller de Procesamiento de Señales

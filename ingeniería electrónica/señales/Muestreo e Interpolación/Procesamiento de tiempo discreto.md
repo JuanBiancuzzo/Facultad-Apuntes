@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-La posibilidad de poder [[Muestreo|muestrear]] una [[Señal#^02aea6|señal de tiempo continuo]] y poder volver a recuperar la señal original a partir de sus muestras permite que muchas operaciones de procesamiento de una señal se puedan realizar en tiempo discreto
+La posibilidad de poder [[Muestreo|muestrear]] una [[Señal#^continua|señal de tiempo continuo]] y poder volver a recuperar la señal original a partir de sus muestras permite que muchas operaciones de procesamiento de una señal se puedan realizar en tiempo discreto
 
 ```tikz
 \usetikzlibrary{calc}

@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Es un [[Muestreo|muestreo]] equispaciado en frecuencia de la [[Transformada de Fourier|transformada de Fourier]] de una secuencia de [[Señal#^02aea6|tiempo discreto]]
+Es un [[Muestreo|muestreo]] equispaciado en frecuencia de la [[Transformada de Fourier|transformada de Fourier]] de una secuencia de [[Señal#^continua|tiempo discreto]]
 
   Consideremos las exponenciales discretas con frecuencia fundamentales $\frac{2\pi}{N}k$ $$ \begin{align} 
 	W_N &= \exp\left(-j\frac{2\pi}{N}\right) \\
