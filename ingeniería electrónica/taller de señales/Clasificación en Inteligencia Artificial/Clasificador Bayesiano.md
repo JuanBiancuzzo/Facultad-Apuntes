@@ -50,7 +50,8 @@ Este resultado expresar el error bayesiano como la suma de los errores dentro de
 \usepackage{amssymb}
 
 \begin{document} 
-\definecolor{azul}{RGB}{100, 100, 255} 
+\definecolor{azul}{RGB}{0, 127, 204}
+\definecolor{rojo}{RGB}{255, 0, 127} 
 \definecolor{rellenoAzul}{RGB}{204, 204, 255} 
 \definecolor{rellenoRojo}{RGB}{255, 204, 204} 
 
@@ -77,6 +78,7 @@ Este resultado expresar el error bayesiano como la suma de los errores dentro de
     }
     
     \draw[->] (\mA, 0) -- ++(0, {\probaA * normal(\mA, \mA, \sA)});
+    \draw[->] (\mB, 0) -- ++(0, {\probaB * normal(\mB, \mB, \sB)});
     
     \foreach \proba/\m/\s/\color/\dir in {
         \probaA/\mA/\sA/rellenoAzul/1, 
@@ -88,7 +90,7 @@ Este resultado expresar el error bayesiano como la suma de los errores dentro de
         } -- cycle;       
     }
     
-    \foreach \proba/\m/\s/\color in {\probaA/\mA/\sA/azul, \probaB/\mB/\sB/red} {
+    \foreach \proba/\m/\s/\color in {\probaA/\mA/\sA/azul, \probaB/\mB/\sB/rojo} {
         \draw[\color] (-\ancho, {\proba * normal(-\ancho, \m, \s)}) \foreach \x
             [parse=true] in {-\ancho, -\ancho + \dif, ..., \ancho} {
             -- (\x, {\proba * normal(\x, \m, \s)})
@@ -101,7 +103,7 @@ Este resultado expresar el error bayesiano como la suma de los errores dentro de
         node[above left=2pt, scale=\escala, color = azul] 
             {$P_Y(1) ~ p_{X \mid Y = 1}(x)$};
     \path ({0.4 * \ancho}, {\probaB * normal(0.4 * \ancho, \mB, \sB)})
-        node[above right=2pt, scale=\escala, color = red] 
+        node[above right=2pt, scale=\escala, color = rojo] 
             {$P_Y(2) ~ p_{X \mid Y = 2}(x)$};
     
     \draw[dashed] (\medioX, 0) -- ++(0, {\medioY + .5});
@@ -113,7 +115,20 @@ Este resultado expresar el error bayesiano como la suma de los errores dentro de
 \end{tikzpicture}
 \end{document}
 ```
+^representacion-grafica
 
 Teniendo como ejemplo un clasificador unidimensional de dos clases. Las regiones $\mathcal{R}_1$ y $\mathcal{R}_2$ son delimitadas a partir de $P_{Y \mid X = x}(1) \lessgtr P_{Y \mid X = x}(0)$ . Para cada $x \in \mathbb{R}$, esas regiones son equivalentes a comparar $P_Y(1) ~ p_{X \mid Y = 1}(x) \lessgtr P_Y(0) ~ p_{X \mid Y = 0}(x)$, ya que $p_X(x)$ es la misma de ambos lados
 
+Se puede calcular de forma general el punto o los puntos de intersección, se parte sobre la expresión general $$ \begin{align}
+    \frac{\mathbb{P}(a)}{\sqrt{2\pi ~ \sigma_a}} \exp\left( \frac{(x - \mu_a)^2}{2\sigma_a} \right) &= \frac{\mathbb{P}(b)}{\sqrt{2\pi ~ \sigma_b}} \exp\left( \frac{(x - \mu_b)^2}{2\sigma_b} \right) \\
+    d ~ \exp\left( \frac{(x - \mu_a)^2}{2\sigma_a} \right) &= \exp\left( \frac{(x - \mu_b)^2}{2\sigma_b} \right) & d &= \frac{\mathbb{P}(a)}{\mathbb{P}(b)} ~ \sqrt{\frac{\sigma_b}{\sigma_a}} \\
+    2 \ln(d) + \frac{(x - \mu_a)^2}{\sigma_a} &= \frac{(x - \mu_b)^2}{\sigma_b} \\
+    2 \ln(d) ~ \sigma_a + x^2 - 2 \mu_a x + \mu_a^2 &= r ~ x^2 - 2 r ~ \mu_b x + r ~ \mu_b^2 & r &= \frac{\sigma_a}{\sigma_b} \\
+    a ~ x^2 + b ~ x + c &= 0 && \begin{cases} 
+        a = 1 - r \\
+        b = 2 ~ (r \mu_b - \mu_a) \\
+        c = \mu_a^2 - r ~ \mu_b^2 + 2 \sigma_a \ln(d) \\
+    \end{cases} \\
+    \gamma_{1,~2} &= \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\end{align} $$
 El error bayesiano puede verse como la región sombreada, es la suma del área bajo la curva de $y = 1$ que cae en $\mathcal{R}_2$ (sombreado azul) y la curva de $y = 2$ que cae en $\mathcal{R}_2$ (sombreado rojo)

@@ -7,6 +7,8 @@ tags:
 referencias:
   - "873"
 etapa: ampliar
+aliases: 
+  - Filtro causal
 vinculoFacultad:
   - tema: Respuesta dinámica
     capitulo: 1

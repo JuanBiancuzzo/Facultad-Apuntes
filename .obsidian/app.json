@@ -8,7 +8,7 @@
     "biblioteca/libros/covers/"
   ],
   "autoPairMarkdown": false,
-  "showLineNumber": false,
+  "showLineNumber": true,
   "strictLineBreaks": false,
   "propertiesInDocument": "source",
   "readableLineLength": true,
