@@ -3,6 +3,7 @@ dia: 2026-02-22
 etapa: empezado
 referencias: []
 aliases:
+  - Constelación#Constelación
   - Interferencia inter simbólica#^isi
   - ISI#^isi
   - Inter Symbol Interference#^isi
@@ -119,6 +120,28 @@ Es un tipo de [[ingeniería electrónica/taller de comunicaciones/Modulación An
 \end{tikzpicture}
 \end{document}
 ```
+
+Se tiene tiene valores que caracterizan a una modulación
+* $R_s$ es la tasa de símbolos del modulador, medido en símbolos por segundo o baudios
+* $R_b$ es la tasa de bits para un alfabeto de $M$ símbolos, medida en bits por segundo
+    * $M$ es la cantidad de símbolos con $M = 2^k$
+    * $k$ es la cantidad de bits por símbolo
+    * $R_b = k ~ R_s$
+* $T_s$ es el tiempo de un símbolo $T_s = R_s^{-1}$, medida en segundos
+* $T_b$ es el tiempo de un bit $T_b = R_b^{-1}$, medidas en segundos
+* $E_s$ es la [[ingeniería electrónica/señales/Señales y sistemas/Energía de una señal|energía]] media de la [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Modulación digital#Constelación|constelación]], medida en Joules
+    * Esta se puede calcular como $$ E_s = \sum_{i = 0}^{M - 1} \mathbb{P}(s_i) ~ \lVert s_i \rVert^2 $$
+* $E_b$ es la energía media de la constelación por bit, medida en Joules
+* $P$ es la [[ingeniería electrónica/intro/Potencia/Potencia|potencia]], medida en Watts
+    * $P = E_s ~ R_s$
+    * También se lo puede escribir como $S_{rx}$ o $S_{tx}$ para la del receptor o transmisor respectivamente
+
+## Constelación
+---
+Se denomina constelación al [[ingeniería en informática/algebra 2/Espacios Vectoriales/Conjunto|conjunto]] de símbolos en la [[ingeniería en informática/analisis 2/Nomenclatura/Base ortonormal|base ortonormal]] generada por los componentes
+
+## Filtros terminales
+---
 La entrada esta dada por $$ x(t) = \sum_{k} a_k ~ p_g(t - k ~ T_s) $$ donde $p_g$ es el pulso del generador, para tener después del canal $$ y(t) = \left[ \sum_k A_k ~ p_r(t - t_d - k ~ T_s) \right] + n_0(t) $$ donde 
 * $t_d$ representa los retardos que introduce tanto los filtros como la transmisión
 * $A_k = K_c ~ a_k$ representando la modificación por atenuación del canal

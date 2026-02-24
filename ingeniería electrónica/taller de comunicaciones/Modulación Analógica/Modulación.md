@@ -24,15 +24,15 @@ vinculoFacultad:
 ---
 La modulación permite adaptar el espectro de frecuencias del mensaje a transmitir al rango de frecuencias de trabajo de los dispositivos y medios que conforman el sistema Transmisor-Canal-Receptor
 
-Una modulación consiste en variar algún parámetro de una señal, conocida como portadora $p(t)$, en función de la señal o mensaje a transmitir $m(t)$, o modulante
-
 ### Modulación de amplitud
 ---
-Existen $4$ variantes de modulación de amplitud de la portadora
+Para [[Modulación analógica|modulaciones analógicas]], existen $4$ variantes de modulación de amplitud de la portadora
 1. [[Doble Banda Lateral - Portadora Suprimida|Doble Banda Lateral - Portadora Suprimida (DBL-PS)]]
 2. [[Doble Banda Lateral - Portadora Fuerte|Doble Banda Lateral - Portadora Fuerte (DBL-PF o AM)]]
 3. [[Banda Lateral Única|Banda Lateral Única (BLU)]]
 4. [[Banda Lateral Vestigial|Banda Lateral Vestigial (BLV)]]
+
+Para [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Modulación digital|modulaciones digitales]] se tiene
 
 ### Modulación de fase
 ---
