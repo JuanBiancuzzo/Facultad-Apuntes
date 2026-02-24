@@ -6,6 +6,7 @@ aliases:
   - Interferencia inter simbólica#^isi
   - ISI#^isi
   - Inter Symbol Interference#^isi
+  - Criterio de Nyquist para ISI nulo#^prop-9-1-1
 tags:
   - carrera/ingeniería-electrónica/taller-de-comunicaciones/Modulación-digital
   - nota/facultad
@@ -187,3 +188,77 @@ Por lo tanto, teniendo en cuenta que $\rho \in [-1,~ 1]$, se buscará un $s_1$ y
 ---
 En este caso se tiene que considerar el ISI, y el ruido, también se puede interpretar que este caso es más general que el anterior, por lo que el resultado de este debe llevar al del caso $1$ si el término del ISI desaparece
 
+En este caso tendremos que definir $H_{tx}(\omega)$, $H_{rx}(\omega)$ y el umbral $\gamma$, y si notamos podemos plantear una transferencia equivalente de todo el sistema $$ H(\omega) = H_{tx}(\omega) ~ H_{c}(\omega) ~ H_{rx}(\omega) $$ 
+Esto es util para definir el comportamiento general del sistema, como que se busca anular el ISI necesitamos lo siguiente $$ h(n ~ T_s) = \begin{dcases}
+    1 & \text{si} ~ n = 0 \\
+    0 & \text{si} ~ n \ne 0 \\
+\end{dcases} $$ forzando que en el momento de [[ingeniería electrónica/señales/Muestreo e Interpolación/Muestreo|muestreo]] sea nulo para todo valor que no sea el actual ($n = 0$)
+
+
+> [!proposicion]+ Proposición 9.1.1 (Criterio de Nyquist para ISI nulo) 
+> Dado una transferencia $h(t)$ para obtener un ISI nulo se necesita $$ h(n ~ T_s) = \begin{dcases} 
+>     1 & \text{si} ~ n = 0 \\
+>     0 & \text{si} ~ n \ne 0 \\
+> \end{dcases} $$ por lo que se define $$ \sum_{k = -\infty}^{\infty} H\left(\omega - \frac{k}{T_s} \right) = T_s $$
+> 
+> > [!demostracion]- Demostración
+> > Se puede demostrar de forma algebraica, utilizando la [[ingeniería electrónica/señales/Transformada discreta de Fourier/Transformada Discreta de Fourier|DFT]] y el [[ingeniería electrónica/señales/Muestreo e Interpolación/Muestreo periódico|Teorema de muestreo de Nyquist]] se puede expresar de la siguiente de las siguientes dos formas $$ \begin{align}
+> >     \sum_{n = -\infty}^{\infty} h(n ~ T_s) ~ \exp(-j\omega ~ n ~ T_s) &= \frac{1}{T_s} \sum_{k = -\infty}^{\infty} H\left( \omega - \frac{k}{T_s} \right) \\
+> >     \underbrace{h(0 ~ T_s)}_{=~1} ~ \exp(-j\omega ~ 0 ~ T_s) &= \frac{1}{T_s} \sum_{k = -\infty}^{\infty} H\left( \omega - \frac{k}{T_s} \right) \\
+> >     1 &= \frac{1}{T_s} \sum_{k = -\infty}^{\infty} H\left( \omega - \frac{k}{T_s} \right) \\
+> > \end{align} $$
+^prop-9-1-1
+
+Lo que buscamos es una transferencia que 
+1. Cumpla el criterio de Nyquist
+2. Sea implementable, incluye que sea causal
+3. Que tenga el mínimo [[Ancho de banda|ancho de banda]] posible 
+
+El segundo punto descarta la elección de un [[ingeniería electrónica/adc/Respuesta en frecuencia/Filtro pasa-bajo|filtro pasa-bajo]] ideal con frecuencia de corte de $\frac{1}{2 T_s} = W_0$
+
+El tercer punto descarta la elección de un triangulo, de ancho de $\frac{1}{T_s}$ generando el doble del ancho de banda que el ideal
+
+Podemos proponer un [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Función coseno elevado|filtro de coseno elevado]] con un $r > 0$ ![[ingeniería electrónica/taller de comunicaciones/Modulación digital/Función coseno elevado#^representacion]]
+Donde podemos definir $W$ en función del ancho de banda idea $W_0$ y el factor de caída $r$, dado por $$ \begin{align} 
+    W &= W_0 (r + 1) \\
+     &= \frac{1}{2 T_s} (r + 1) \\
+     &= \frac{R_s}{2} (r + 1) \\
+     &= \frac{R_b}{2 \log_2(M)} (r + 1), & R_s = \frac{R_b}{\log_2(M)} \\
+\end{align} $$ donde $M$ es la cantidad de símbolos
+
+Tiene el problema de ser [[ingeniería electrónica/señales/Señales y sistemas/Sistema causal|no es causal]], para resolver esto se propone un filtro basado en el filtro $h(t)$ del coseno elevado que aproxima a este dado por $$ \hat{h}(t) \simeq \mathbb{1}\Set{-k T_s \le t - t_0 \le k T_s} h(t - t_0),~~~ \text{con} ~ k \in \mathbb{N}_0 $$ introduciendo un delay de $k T_s$ pero logrando que sea causal y [[ingeniería electrónica/señales/Filtros digitales/Filtro de Respuesta Finita al impulso|FIR]]
+
+Existe una relación de compromiso donde un $k$ muy grande, permite reducir la complejidad del filtro aumentando el valor de $r$, pero con la desventaja de un ancho de banda mayor. Por otro lado un $r$ chico aumenta la complejidad pero permite un $k$ más chico, reduciendo el delay 
+
+Actualmente tiene un mayor peso el uso de ancho de banda por lo que se suele usar un $r \in [0.2,~ 0.35]$ 
+
+### Filtros terminales óptimos
+---
+Tenemos como datos 
+ * Definimos la transferencia del generador $P_g(\omega)$, ya sea de pulsos como señales [[ingeniería electrónica/analisis 3/Funciones elementales/Función senoidal|senoidales]] 
+ * $S_{tx}$ la [[ingeniería electrónica/intro/Potencia/Potencia|potencia]] de salida del transmisor
+ * La transferencia del [[ingeniería electrónica/taller de comunicaciones/Elementos de Teoría de Información/Canal discreto sin memoria|canal]] $H_c(\omega)$ la cual tiene un ancho de banda $W$
+ * La [[ingeniería electrónica/estoca/Introducción a procesos aleatorios/Densidad espectral de potencia|PSD]] del ruido del canal $G_n(\omega)$
+ * $R_s$ la tasa de símbolos por segundo 
+
+Se tiene como requisitos
+ * Se necesita cumplir que $P_g(\omega) ~ H_{tx}(\omega) ~ H_c(\omega) ~ H_{rx}(\omega) = K_c ~ H(\omega)$ donde $$ \sum_{k = -\infty}^{\infty} H\left(\omega - \frac{k}{T_s} \right) = T_s $$ notemos que se usará el filtro del coseno elevado para $H(\omega)$
+   
+ * Se busca minimizar el $P_e$ lo cual implica maximizar $\frac{A^2}{\sigma_0^2}$ la relación señal ruido
+
+Con estos datos y estos requisitos, se obtiene los filtros óptimos $$ \begin{align}
+    \left| H_{tx}^{opt}(\omega) \right|^2 &= \frac{ K_c^2 ~ |H(\omega)| ~ G_n^{\frac{1}{2}}(\omega) }{ |P_g(\omega)|^2 ~ |H_c(\omega)| } \\\\
+    \left| H_{rx}^{opt}(\omega) \right|^2 &= \frac{ |H(\omega)| }{ |H_c(\omega)| ~ G_n^{\frac{1}{2}}(\omega) } \\
+\end{align} $$ donde la probabilidad de error esta dada por $$ \frac{A^2}{\sigma_0^2} \Big|_\text{max} = \frac{3 ~ S_{tx} ~ T_s}{M^2 - 1} \left[ \int_{-\infty}^{\infty} \frac{ |H(\omega)| ~ G_n^{\frac{1}{2}}(\omega) }{ |H_c(\omega)| } ~ d\omega \right]^{-2} $$ entonces $$ P_b = \frac{2 (M - 1)}{M ~ \log_2(M)} ~ Q\left( \frac{3 ~ S_{tx} ~ T_s}{M^2 - 1} \left[ \int_{-\infty}^{\infty} \frac{ |H(\omega)| ~ G_n^{\frac{1}{2}}(\omega) }{ |H_c(\omega)| } ~ d\omega \right]^{-2} \right) $$
+
+Tomando estas suposiciones
+ * Que para el caso de pulsos del generador, estos con una duración $\tau$ cumplen que $$ \tau \ll T_s : |P_g(\omega)| \simeq 1, ~~ \forall |\omega| < W $$
+ * [[ingeniería electrónica/estoca/Introducción a procesos aleatorios/Ruido blanco|Ruido blanco]] constante dado por $G_n(\omega) = \frac{N_0}{2}$
+ * La respuesta del canal sea plana implicando $$ |H_c(\omega)| = \alpha < 1, ~~~ \arg(H_c(\omega)) = -a^2 ~ \omega,~ \text{con}~ a \in \mathbb{R} $$
+Podemos simplificar obteniendo $$ \begin{align}
+    \left| H_{tx}^{opt}(\omega) \right|^2 &\propto |H(\omega)| &\implies \left| H_{tx}^{opt}(\omega) \right|^2 &\propto \sqrt{|H(\omega)|} \\
+    \left| H_{rx}^{opt}(\omega) \right|^2 &\propto |H(\omega)| &\implies \left| H_{rx}^{opt}(\omega) \right|^2 &\propto \sqrt{|H(\omega)|} \\
+    \frac{A^2}{\sigma_0^2} \Big|_\text{max} &= \frac{3 S_{tx} ~ T_s}{M^2 - 1} \frac{2 \alpha^2}{N_0} \underbrace{\left[ \int_{-\infty}^{\infty} |H(\omega)| ~ d\omega \right]^{-2}}_{=~1,~~ \forall r \in [0,~ 1]} & S_{tx} ~ \alpha^2 = S_{rx},~~& T_s ~ S_{rx} = E_s \\
+    &= \frac{6 E_b ~ \log_2(M)}{(M^2 - 1) ~ N_0} \\
+    P_b &\simeq \frac{2 (M - 1)}{M \log_2(M)} ~ Q\left( \sqrt{\frac{6 E_b ~ \log_2(M)}{(M^2 - 1) ~ N_0}} \right)
+\end{align} $$
