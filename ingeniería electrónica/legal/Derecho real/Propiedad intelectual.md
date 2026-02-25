@@ -3,6 +3,7 @@ dia: 2026-02-11
 etapa: empezado
 referencias: []
 aliases: 
+  - Derechos de autor
   - Obra póstuma#Obras póstumas
   - Obra extranjera#Obras extranjeras
   - Obra colaborativa#Colaboración

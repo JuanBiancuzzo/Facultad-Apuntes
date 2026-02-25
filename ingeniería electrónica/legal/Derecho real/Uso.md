@@ -17,7 +17,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Según [[colección/documentos/Código Civil y Comercial de la Nación/Libro Cuarto/Título 9/Título 9, Uso|título 9, libro cuarto del CC y CN]], es el [[ingeniería electrónica/legal/Derecho real/Derecho Real|derecho real]] de usar y cosas una [[ingeniería electrónica/legal/Introducción al derecho/Cosa|cosa]] ajena, su parte material o indivisa en la extensión y límites establecidos sin alterar su sustancia
+Según [[colección/documentos/Código Civil y Comercial de la Nación/Libro Cuarto/Título 9/Título 9, Uso|título 9, libro cuarto del CC y CN]], es el [[ingeniería electrónica/legal/Derecho real/Derecho Real|derecho real]] de usar y gozar una [[ingeniería electrónica/legal/Introducción al derecho/Cosa|cosa]] ajena, su parte material o indivisa en la extensión y límites establecidos sin alterar su sustancia
 
 El uso entonces es por un tiempo y extensión determinado, si la extensión no se establece en el título, entonces se entiende que es un [[ingeniería electrónica/legal/Derecho real/Usufructo|usufructo]]
 

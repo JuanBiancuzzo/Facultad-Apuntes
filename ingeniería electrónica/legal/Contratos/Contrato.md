@@ -138,7 +138,7 @@ Una oferta puede tener un plazo de vigencia
 
 Una oferta se puede retractar cuando se comunique la retractación antes o al mismo tiempo que el destinatario recibe la oferta
 
-La oferta pierde su fuerza obligatoria cuando el proponente o destinatario de la oferte fallece o se incapacita antes de la recepción de la aceptación
+La oferta pierde su fuerza obligatoria cuando el proponente o destinatario de la oferta fallece o se incapacita antes de la recepción de la aceptación
 
 ## Aceptación
 ---
@@ -164,7 +164,7 @@ El objeto es la prestación prometida por las partes, debe ser susceptible de va
 
 ## Causa
 ---
-Se puede pensar a la causa como fuente (de obligación) o se puede pensar la causa como fin (donde se asume un obligación). También se puede definir, como se hace en el [[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 4/Capítulo 5/Sección 2/Art. 281 del CC y CN, Causa|Art. 281 del CC y CN]], como la razón directa y concreta de la celebración del acto
+Se puede pensar a la causa como fuente (de obligación) o se puede pensar la causa como fin (donde se asume una obligación). También se puede definir, como se hace en el [[colección/documentos/Código Civil y Comercial de la Nación/Libro Primero/Título 4/Capítulo 5/Sección 2/Art. 281 del CC y CN, Causa|Art. 281 del CC y CN]], como la razón directa y concreta de la celebración del acto
 
 ## Cláusula Accesorias
 ---

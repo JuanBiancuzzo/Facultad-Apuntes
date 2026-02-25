@@ -18,7 +18,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Que las obras, [[ingeniería electrónica/legal/Introducción al derecho/Bien|bienes]] y servicios sean obtenidos con la mejor tecnología proporcionada a las necesidades, en el momento oportuno y al menor costo posible. También que la venta de bienes sea al mejor postor para el desempeño eficiente de la administración y para el logro de los resultados requeridos por la sociedad
+Que las [[Obra|obra]], [[ingeniería electrónica/legal/Introducción al derecho/Bien|bienes]] y servicios sean obtenidos con la mejor tecnología proporcionada a las necesidades, en el momento oportuno y al menor costo posible. También que la venta de bienes sea al mejor postor para el desempeño eficiente de la administración y para el logro de los resultados requeridos por la sociedad
 
 El régimen de contrataciones de la Administración Pública Nacional (APN) es aplicable a todas las contrataciones en los que sea parte las jurisdicciones y entidades de la administración nacional, incluyendo aquí a la administración central y a los organismos descentralizados
 

@@ -112,7 +112,7 @@ Causales de extinción del contrato
 * Desistimiento del comitente
 * Muerte, desaparición y falencia del contratista
     * Muerte del contratista resuelve el contrato
-    * La muerte del comitente hace imposible o inútil la ejecución de la obra resuelve el contrato
+    * La muerte del comitente que haga imposible o inútil la ejecución de la obra resuelve el contrato
     * Si el contratista quiebra, el comitente tiene el derecho a pedir la resolución del contrato
     * Si el comitente quiebra, y el pago no fue realizado por anticipación, el contratista tiene el derecho de resolver el contrato
 * Imposibilidad del contratista para hacer o terminar la obra

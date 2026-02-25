@@ -117,7 +117,7 @@ La extinción de las obligaciones pueden ser clasificadas por las que satisfacen
     * Compensación
         * Cuando ambas partes son deudores y acreedores, el uno del otro
     * Transacción
-        * Se logra por concesiones recíprocas
+        * Acuerdo entre las partes, donde el acreedor acepta algo "menor" a lo obligado con el fin de acabar con la diferencia
     * Confusión
         * Cuando el deudor y el acreedor es la misma persona
     

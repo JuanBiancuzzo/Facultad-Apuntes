@@ -23,5 +23,6 @@
     "downscalePercent": 60
   },
   "newLinkFormat": "absolute",
-  "vimMode": true
+  "vimMode": true,
+  "defaultViewMode": "preview"
 }
