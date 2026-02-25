@@ -22,7 +22,7 @@ vinculoFacultad:
 ---
 Este tipo de [[ingeniería electrónica/taller de comunicaciones/Modulación Digital/Modulación digital|modulación]] se aplica cuando se [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Transmisión en banda pasante|transmite en banda pasante]], y con una [[ingeniería electrónica/señales/Señales y sistemas/Señal#^discreta|señal discreta]], este conjunto de símbolos genera un [[ingeniería en informática/discreta/Autómatas/Alfabeto|alfabeto]] y la transmisión de cada símbolo esta dado por un tiempo $T_s$
 
-Es equivalente al [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Pulse-Amplitud Modulation|M-PAM]], ya que propone un solo componente $$ \phi(t) = \sqrt{\frac{2}{T_s}} \cos(\omega_p t) ~ h_{tx}(t) $$
+Es equivalente al [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Pulse-Amplitud Modulation|M-PAM]], ya que propone un solo componente $$ \varphi(t) = \sqrt{\frac{2}{T_s}} \cos(\omega_p t) ~ h_{tx}(t) $$
 %% Dibujo de la constelación %%
 
 Al definir las posiciones de los símbolos en función de la distancia mínima entre símbolos, podemos relacionarla con la energía de símbolo, siendo estos equiprobables, dado por $$ \begin{align}

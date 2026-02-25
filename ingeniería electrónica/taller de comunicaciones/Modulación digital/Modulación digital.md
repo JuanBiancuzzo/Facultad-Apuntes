@@ -181,6 +181,8 @@ Tomando la suposición de símbolos equiprobables y que la [[ingeniería en info
     2z - (a_1 + a_2) &= 0 \\
     \gamma &= \frac{a_1 + a_2}{2} \\
 \end{align} $$
+Donde $\gamma$ es la variable de define la [[Región de decisión|región de decisión]]
+
 Finalmente la probabilidad de error $P_e$ que por ser un caso binario este es igual que $P_b$ y esta dado por $$ \begin{align}
     P_e &= \underbrace{\mathbb{P}(\text{elegido}~s_2 \mid \text{enviado}~s_1)}_{\mathbb{P}(Z < \gamma)} ~ \mathbb{P}(s_1) + \underbrace{\mathbb{P}(\text{elegido}~s_1 \mid \text{enviado}~s_2)}_{\mathbb{P}(Z > \gamma)} ~ \mathbb{P}(s_2) \\
      &= \mathbb{P}(s_1) ~ \int_{-\infty}^{\gamma} f_{Z \mid S_1}(z) ~ dz + \mathbb{P}(s_2) ~ \int_{\gamma}^{\infty} f_{Z \mid S_2}(z) ~ dz 
