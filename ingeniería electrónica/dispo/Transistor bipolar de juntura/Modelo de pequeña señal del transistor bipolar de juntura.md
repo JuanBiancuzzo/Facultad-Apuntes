@@ -188,7 +188,7 @@ Entonces, considerando $V_{BE}$ constante $$ g_\mu = \frac{\partial i_B}{\partia
 Como la variación de la zona de vaciamiento de la juntura BC no afecta a la inyección de huecos en el emisor $$ \frac{\partial i_{B1}}{\partial v_{CE}} \biggm|_{Q} = 0 $$
 Si consideramos que toda la corriente $i_B$ está determinada por $i_{B2}$ podemos decir que $$ \frac{\partial i_{B2}}{\partial i_C} = \frac{\partial i_B}{\partial i_C} = \frac{1}{\beta_0} $$ donde $\beta_0$ es la [[Ganancia de corriente de pequeña señal para el transistor bipolar de juntura|ganancia de corriente en pequeña señal]]  y entonces podemos reescribirla como $$ g_\mu = \frac{\partial i_{B2}}{\partial i_C} \biggm|_{Q} \frac{\partial i_C}{\partial v_{CE}} \biggm|_{Q} = \frac{1}{\beta_0} g_o $$donde $g_o$ es la [[Modelo de pequeña señal del transistor bipolar de juntura#Conductancia de salida o de colector|conductancia de colector]] 
 
-Como $i_{B2} < i_B$ la relación entre $g_\mu$ y $g_o$ resulta en una [[Cota superior]], es decir $$ g_\mu < \frac{1}{\beta_0} g_o $$ y esto hace que $g_\mu$ tenga un valor muy bajo y generalmente puede despreciarse
+Como $i_{B2} < i_B$ la relación entre $g_\mu$ y $g_o$ resulta en una [[ingeniería en informática/discreta/Relaciones/Cota]], es decir $$ g_\mu < \frac{1}{\beta_0} g_o $$ y esto hace que $g_\mu$ tenga un valor muy bajo y generalmente puede despreciarse
 
 ## Modelo para altas frecuencias
 ---

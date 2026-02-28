@@ -31,6 +31,8 @@ Cabe aclarar que para $M = 2$, se lo suele llamar BPSK y solo se define  solo un
 
 %% Dibujo de la constelación %%
 
+## Probabilidad de error
+---
 Podemos definir la posición de los símbolos en función de la distancia mínima, donde notemos que lo importante en sí mismo es el radio $r$ 
 
 %% Dibujo trianglulo %%
@@ -64,6 +66,21 @@ Finalmente podemos calcular la probabilidad de error $$ \begin{align}
     &\simeq 2 ~ Q\left( \frac{d}{2\sigma} \right) \\
 \end{align} $$ con la expresión de la distancia y recordando que $\sigma^2 = \frac{N_0}{2}$, se obtiene $$ P_e \simeq 2 ~ Q\left( \sqrt{ 2 \frac{E_s}{N_0}} \sin\left( \frac{\pi}{M} \right) \right) $$
 Para el caso de $M = 2$, notemos que al ser igual que el 2-ASK, entonces su probabilidad de error es de $$ P_e = Q\left( \sqrt{2 ~ \frac{E_s}{N_0}} \right) $$
+## Cotas
+---
+Se puede acotar esta probabilidad de error con por [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Cota de unión de fronteras por vecinos más cercanos|unión de fronteras por vecinos más cercanos]] dando para el caso de $M > 2$ $$ \begin{align}
+    P_e &\le \langle N_e \rangle ~ Q\left(\frac{d}{2\sigma}\right) \\
+    &\le \left( \frac{1}{M} \sum_{i = 1}^{M} N_i \right) ~ Q\left(\frac{d}{2\sigma}\right) \\
+    &\le \left( \frac{1}{M} \sum_{i = 1}^{M} 2 \right) ~ Q\left(\frac{d}{2\sigma}\right) \\
+    &\le 2 ~ Q\left(\frac{d}{2\sigma}\right) \\
+\end{align} $$ en este caso esta cota es igual a la aproximación que se había hecho antes al despreciar el término correspondiente al $Q^2(\cdot)$
+
+Para el caso de $M = 2$, la cantidad de vecinos es $1$ dándonos exactamente el mismo valor que el esperado
+
+## Relación con probabilidad de error de bit y símbolos
+---
+La relación entre la probabilidad de símbolos con la probabilidad de bit, y como esta modulación permite la utilización del [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Código de Gray|código de Gray]], podemos hacer la simplificación que si existe un error en un símbolo, esta dada por un solo bit, y por lo tanto $$ \mathbb{P_b} \simeq \frac{P_e}{\log_2(M)} $$
+
 ## Característica
 ---
 Esta modulación tiene el beneficio de no ser afectado por la atenuación ya que la información que diferencia un símbolo de otro es la fase y no la amplitud. También tiene muy buena eficiencia espectral

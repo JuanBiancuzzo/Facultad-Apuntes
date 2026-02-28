@@ -30,6 +30,8 @@ En este caso vamos a tomar cuando esta es cuadrada, por lo que se limita la cant
 
 %% Dibujo de la constelación %%
 
+## Probabilidad de error
+---
 Al definir las posiciones de los símbolos en función de la distancia mínima entre símbolos, podemos relacionarla con la energía de símbolos, siendo estos equiprobables
 
 Notemos que los $4$ cuadrantes son iguales, por lo que podemos calcular solo uno de los cuadrantes, por lo tanto $$\begin{align}
@@ -58,7 +60,7 @@ Para aproximar la probabilidad de error, donde se considera el error que se tien
 1. Las esquinas donde solo tienen $2$ vecinos
     * Existen siempre $4$ símbolos en esta región
 2. Los aristas donde tiene $3$ vecinos
-    * Existen $4\left(\sqrt{M} - 2\right)$ símbolos en esta región 
+    * Existen $4\left( \sqrt{M} - 2 \right)$ símbolos en esta región 
 3. El centro donde tienen $4$ vecinos
     * Existen $\left(\sqrt{M} - 2\right)^2 = M - 4\sqrt{M} + 4$ símbolos en esta región
 
@@ -75,7 +77,7 @@ $$ donde $Q(\cdot) = Q\left( \frac{d}{2\sigma} \right)$
 
 Calculamos la probabilidad de acierto como $$ \begin{align}
     P_c &= \frac{1}{M} \begin{bmatrix}
-        4 \\ \sqrt{M} - 2 \\ M - 4\sqrt{M} + 4
+        4 \\ 4\left( \sqrt{M} - 2 \right) \\ M - 4\sqrt{M} + 4
     \end{bmatrix}^T ~ \begin{bmatrix}
        1 - 2Q(\cdot) + Q^2(\cdot) \\ 
        1 - 3Q(\cdot) + 2Q^2(\cdot) \\ 
@@ -101,5 +103,19 @@ Finalmente podemos calcular la probabilidad de error $$ \begin{align}
     &= 4 \left( 1 - \frac{1}{\sqrt{M}} \right) ~Q(\cdot) - 4 \left( 1 - \frac{1}{\sqrt{M}} \right)^2 ~Q^2(\cdot) \\
     &\simeq 4 \left( 1 - \frac{1}{\sqrt{M}} \right) ~Q\left( \frac{d}{2\sigma} \right) \\
 \end{align} $$ con la expresión de la distancia y recordando que $\sigma^2 = \frac{N_0}{2}$, se obtiene $$ P_e \simeq 4 \left( 1 - \frac{1}{\sqrt{M}} \right) ~Q\left( \sqrt{ \frac{3}{M - 1} \frac{E_s}{N_0}} \right) $$
+## Cotas
+---
+Se puede acotar esta probabilidad de error con por [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Cota de unión de fronteras por vecinos más cercanos|unión de fronteras por vecinos más cercanos]] dando $$ \begin{align}
+    P_e &\le \langle N_e \rangle ~ Q\left(\frac{d}{2\sigma}\right) \\
+    &\le \left( \frac{1}{M} \sum_{i = 1}^{M} N_i \right) ~ Q\left(\frac{d}{2\sigma}\right) \\
+    &\le \frac{1}{M} \left( 2 ~ (4) + 3 ~ \left( 4 \left( \sqrt{M} - 2 \right) \right) + 4 ~ \left( M - 4\sqrt{M} + 4 \right) \right) ~ Q\left(\frac{d}{2\sigma}\right) \\
+    &\le \frac{1}{M} \left( 4M - 4\sqrt{M} \right) ~ Q\left(\frac{d}{2\sigma}\right) \\
+    &\le 4 \left( 1 - \frac{1}{\sqrt{M}} \right) ~ Q\left(\frac{d}{2\sigma}\right) \\
+\end{align} $$ en este caso esta cota es igual a la aproximación que se había hecho antes al despreciar el término correspondiente al $Q^2(\cdot)$
+
+## Relación con probabilidad de error de bit y símbolos
+---
+La relación entre la probabilidad de símbolos con la probabilidad de bit, y como esta modulación permite la utilización del [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Código de Gray|código de Gray]], podemos hacer la simplificación que si existe un error en un símbolo, esta dada por un solo bit, y por lo tanto $$ \mathbb{P_b} \simeq \frac{P_e}{\log_2(M)} $$
+
 ## Característica
 ---

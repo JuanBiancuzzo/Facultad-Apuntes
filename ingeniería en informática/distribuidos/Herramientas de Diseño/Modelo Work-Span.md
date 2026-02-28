@@ -16,7 +16,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Este modelo, a diferencia de la [[Ley de Amdahl|ley de Amdahl]] y la [[Ley de Gustafson|ley de Gustafson-Barsis]], intenta acercarse más a la realidad para estimar las optimizaciones ofreciendo una [[Cota inferior|cota inferior]] y [[Cota superior|cota superior]] para el speedup
+Este modelo, a diferencia de la [[Ley de Amdahl|ley de Amdahl]] y la [[Ley de Gustafson|ley de Gustafson-Barsis]], intenta acercarse más a la realidad para estimar las optimizaciones ofreciendo una [[ingeniería en informática/discreta/Relaciones/Cota|cota inferior]] y [[ingeniería en informática/discreta/Relaciones/Cota|cota superior]] para el speedup
 
 ## Hipótesis
 ---

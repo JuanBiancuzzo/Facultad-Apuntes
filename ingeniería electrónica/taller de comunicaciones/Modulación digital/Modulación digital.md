@@ -187,10 +187,10 @@ Finalmente la probabilidad de error $P_e$ que por ser un caso binario este es ig
     P_e &= \underbrace{\mathbb{P}(\text{elegido}~s_2 \mid \text{enviado}~s_1)}_{\mathbb{P}(Z < \gamma)} ~ \mathbb{P}(s_1) + \underbrace{\mathbb{P}(\text{elegido}~s_1 \mid \text{enviado}~s_2)}_{\mathbb{P}(Z > \gamma)} ~ \mathbb{P}(s_2) \\
      &= \mathbb{P}(s_1) ~ \int_{-\infty}^{\gamma} f_{Z \mid S_1}(z) ~ dz + \mathbb{P}(s_2) ~ \int_{\gamma}^{\infty} f_{Z \mid S_2}(z) ~ dz 
 \end{align} $$ como ambas integrales son simétricas respecto de $\gamma$ y los símbolos son equiprobables como mencionamos antes, se puede simplificar a $$ P_e = \int_{\gamma}^{\infty} f_{Z \mid S_2}(z) ~ dz $$ [[ingeniería en informática/proba/Teorema central del límite/Proceso de normalización de una variable aleatoria|normalizando]] la variable aleatoria se puede escribir como $$ \begin{align} 
-    P_e &= Q\left( \frac{\gamma}{\sigma} \right) \\
+    P_e &= Q\left( \frac{\gamma - a_2}{\sigma} \right) \\
      &= Q\left( \frac{a_1 - a_2}{2 ~ \sigma} \right) \\
      &= Q\left( \frac{1}{2} \sqrt{\frac{(a_1 - a_2)^2}{\sigma^2}} \right) \\
-\end{align} $$ se plantea $\frac{(a_1 - a_2)^2}{\sigma^2}$ para relacionarlo a una [[Relación señal-ruido|relación señal a ruido]]
+\end{align} $$ se plantea $\frac{(a_1 - a_2)^2}{\sigma^2}$ para relacionarlo a una [[Relación señal-ruido|relación señal a ruido]], y notemos que $a_1 - a_2$ es la distancia mínima entre los símbolos por lo que también se puede expresar la probabilidad de error como $$ P_e = Q\left( \frac{d}{2\sigma} \right) $$
 
 Para minimizar $P_e$ se necesita maximizar el argumento de $Q(\cdot)$ y esto se logra con un [[Filtro adaptativo|filtro adaptativo]] que propone para maximizar la relación señal a ruido $$ h(t) = k ~ m(T - t) $$ donde $m(t)$ es la forma de onda utilizada y $k \in \mathbb{R}$, el cual tomaremos como $k = 1$
 

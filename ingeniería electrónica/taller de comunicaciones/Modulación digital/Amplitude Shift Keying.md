@@ -25,6 +25,8 @@ Este tipo de [[ingeniería electrónica/taller de comunicaciones/Modulación Dig
 Es equivalente al [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Pulse-Amplitud Modulation|M-PAM]], ya que propone un solo componente $$ \varphi(t) = \sqrt{\frac{2}{T_s}} \cos(\omega_p t) ~ h_{tx}(t) $$
 %% Dibujo de la constelación %%
 
+## Probabilidad de error
+---
 Al definir las posiciones de los símbolos en función de la distancia mínima entre símbolos, podemos relacionarla con la energía de símbolo, siendo estos equiprobables, dado por $$ \begin{align}
     E_s &= \frac{1}{M} \sum_{i = 0}^{M - 1} \lVert s_i \rVert^2 \\
     &= \frac{2}{M} \sum_{j = 0}^{\left\lfloor \frac{ M - 1}{2} \right\rfloor } \left( (2j + 1) \frac{d}{2} \right)^2 \\
@@ -57,6 +59,19 @@ Finalmente podemos calcular la probabilidad de error $$ \begin{align}
     &= 2\left(1 - \frac{1}{M}\right) ~ Q(\cdot) - \left(1 - \frac{2}{M}\right) ~ Q^2(\cdot) \\
     &\simeq 2\left(1 - \frac{1}{M}\right) ~ Q\left( \frac{d}{2\sigma} \right) \\
 \end{align} $$ con la expresión de la distancia y recordando que $\sigma^2 = \frac{N_0}{2}$, se obtiene $$ P_e \simeq 2 \left( 1 - \frac{1}{M} \right) ~ Q\left( \sqrt{ \frac{6}{\left(M^2 - 1\right)} \frac{E_s}{N_0}} \right) $$
+## Cotas
+---
+Se puede acotar esta probabilidad de error con por [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Cota de unión de fronteras por vecinos más cercanos|unión de fronteras por vecinos más cercanos]] dando $$ \begin{align}
+    P_e &\le \langle N_e \rangle ~ Q\left(\frac{d}{2\sigma}\right) \\
+    &\le \left( \frac{1}{M} \sum_{i = 1}^{M} N_i \right) ~ Q\left(\frac{d}{2\sigma}\right) \\
+    &\le \frac{1}{M} \left( 2 + 2 ~ (M - 2) \right) ~ Q\left(\frac{d}{2\sigma}\right) \\
+    &\le \frac{2(M - 1)}{M} ~ Q\left(\frac{d}{2\sigma}\right) \\
+    &\le 2\left(1 - \frac{1}{M}\right) ~ Q\left(\frac{d}{2\sigma}\right) \\
+\end{align} $$ en este caso esta cota es igual a la aproximación que se había hecho antes al despreciar el término correspondiente al $Q^2(\cdot)$
+
+## Relación con probabilidad de error de bit y símbolos
+---
+La relación entre la probabilidad de símbolos con la probabilidad de bit, y como esta modulación permite la utilización del [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Código de Gray|código de Gray]], podemos hacer la simplificación que si existe un error en un símbolo, esta dada por un solo bit, y por lo tanto $$ \mathbb{P_b} \simeq \frac{P_e}{\log_2(M)} $$
 
 ## Característica
 ---

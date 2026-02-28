@@ -26,7 +26,7 @@ Este tipo de [[Protocolo de internet|protocolo]] [[Algoritmo sincrónico|sincró
 
 ## Steady and Tight $\Delta$-protocol
 ---
-Este protocolo logra lo pedido a partir de definir (usando el reloj) un tiempo inicial y un tiempo final en el cual se puede procesar el [[Paquete|mensaje]] recibido, produciendo una [[Cota superior|cota superior]] para el tightness que se suele llamar $\pi$. Por otro lado, al establecer un tiempo inicial $\Delta$, también impone una cota superior para el steadiness, esta siendo $\Delta + \pi$
+Este protocolo logra lo pedido a partir de definir (usando el reloj) un tiempo inicial y un tiempo final en el cual se puede procesar el [[Paquete|mensaje]] recibido, produciendo una [[ingeniería en informática/discreta/Relaciones/Cota|cota superior]] para el tightness que se suele llamar $\pi$. Por otro lado, al establecer un tiempo inicial $\Delta$, también impone una cota superior para el steadiness, esta siendo $\Delta + \pi$
 
 ![[Steady and tight Delta protocol.png]]
 

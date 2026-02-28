@@ -19,9 +19,9 @@ Una $k$-coloración es una asignación al [[Conjunto|conjunto]] de vértices tal
 
 El número cromático de un grafo, designado con $\chi(G)$, es el mínimo $k$ para el cual es posible una coloración. Es decir, existe una $\chi$-coloración y para toda $k$-coloración, entonces $\chi \le k$. Los grafos con un número cromático de uno, son solo los [[Grafo nulo|grafos nulos]] $N_n$
 
-Una [[Cota inferior|cota inferior]] del número cromático de $G$ es el número $p$ si $K_p$ ([[Grafo simple completo|grafo completo]]) es un subgrafo de $G$, notemos que la [[Demostración de equivalencia#Usando proposiciones|recíproca]] es falsa
+Una [[ingeniería en informática/discreta/Relaciones/Cota|cota inferior]] del número cromático de $G$ es el número $p$ si $K_p$ ([[Grafo simple completo|grafo completo]]) es un subgrafo de $G$, notemos que la [[Demostración de equivalencia#Usando proposiciones|recíproca]] es falsa
 
-Una [[Cota superior|cota superior]] del número cromático de $G$ es $\Delta(G) + 1$. Recordemos que se denota $\Delta(G)$ al [[Grafo#^8663e2|máximo grado]]
+Una [[ingeniería en informática/discreta/Relaciones/Cota|cota superior]] del número cromático de $G$ es $\Delta(G) + 1$. Recordemos que se denota $\Delta(G)$ al [[Grafo#^8663e2|máximo grado]]
 
 Se llama el índice cromático $\chi'(G)$ de un grafo al [[Cardinalidad|cardinal]] de una coloración mínima de aristas. Se consideran dos aristas adyacentes si inciden sobre el mismo vértice. Para las aristas, tendremos cotas mucho más poderosa, con el teorema de Vizing $$ \Delta(G) \le \chi'(G) \le \Delta(G) + 1 $$
 ## Demostración

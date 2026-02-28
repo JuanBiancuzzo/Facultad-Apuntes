@@ -16,7 +16,7 @@ aliases:
 ---
 Es una forma en la que una [[Sistema distribuido|red distribuida]] para llegar a un consenso de un valor, incluso cuando algunos nodos de la [[Red|red]] no respondan o respondan con la información incorrecta. Se usa este mecanismo de votación para garantizar que se llegue a una respuesta incluso en caso de fallos en la red. Este problema se deriva del problema de los [[The Byzantine Generals Problem de Leslie Lamport, Robert Shostak, Marshall Pease|generales bizantinos]]
 
-En este se prueba que se necesita $3m + 1$ procesos, donde $m$ es la cantidad de [[Nodo|nodos]] que no funcionan correctamente, para llegar a un conceso correcto, por lo que nos pone una [[Cota superior|cota superior]] a la cantidad de nodos no fiables siendo esta, un menor a $1/3$ de la cantidad de procesos
+En este se prueba que se necesita $3m + 1$ procesos, donde $m$ es la cantidad de [[Nodo|nodos]] que no funcionan correctamente, para llegar a un conceso correcto, por lo que nos pone una [[ingeniería en informática/discreta/Relaciones/Cota|cota superior]] a la cantidad de nodos no fiables siendo esta, un menor a $1/3$ de la cantidad de procesos
 
 ## Tipos de fallas
 ---
