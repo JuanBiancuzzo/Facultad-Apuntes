@@ -32,15 +32,31 @@ Al definir las posiciones de los símbolos en función de la distancia mínima e
     &= \frac{d^2}{2M} \left( \frac{M}{6} ~ (M^2 - 1) \right)\\
     &= \frac{d^2}{12} (M^2 - 1)\\
 \end{align} $$
-Notemos que $M - 2$ símbolos tiene dos vecinos, y los restantes $2$ tiene un único vecino, aproximando el error de un símbolo al error que ocurre con sus vecinos, podemos aproximar la probabilidad de error para cualquier $M$ como $$ \begin{align}
-    P_e &= 2 ~ Q(\cdot) + 2 \sum_{k = 1}^{M - 2} Q(\cdot), & Q(\cdot) = Q\left( \frac{d}{2\sigma} \right) \\
-     &= \left( 2 + 2 \sum_{k = 1}^{M - 2} 1 \right) ~ Q(\cdot)  \\
-     &= 2(M - 1) ~ Q(\cdot) 
-\end{align} $$ con la expresión de la distancia y recordando que $\sigma^2 = \frac{N_0}{2}$, se obtiene $$ \begin{align}
-    P_e &= 2(M - 1) Q\left( \frac{d}{2\sigma} \right) \\
-     &= 2(M - 1) Q\left( \frac{1}{2} \sqrt{ \frac{12 ~ E_s}{M^2 - 1} ~ \frac{2}{N_0} } \right) \\
-     &= 2(M - 1) Q\left( \sqrt{ \frac{6}{(M^2 - 1)} ~ \frac{E_s}{N_0} } \right) \\
+
+Para aproximar la probabilidad de error, donde se considera el error que se tiene con los vecinos. Notemos que podemos separar los símbolos en $2$ regiones
+1. Las esquinas donde solo tienen $1$ vecino
+    * Existen siempre $2$ símbolos en esta región
+2. Los aristas donde tiene $2$ vecinos
+    * Existen $M - 2$ símbolos en esta región 
+
+Para calcular el error, vamos a plantear $$ P_e = 1 - P_c, ~~~~ P_c = \sum_{i = 1}^{M} \mathbb{P}(s_i) ~ \underbrace{\mathbb{P}(s_i = \hat{s}_i \mid s_i = s)}_\text{sé eligió el símbolo correcto} $$
+Para la región con $1$ vecinos en diferentes direcciones, su probabilidad de acierto es $$
+    P_{ci} = (1 - Q(\cdot)) 
+$$ para la región con $2$ vecinos su probabilidad de acierto es $$ 
+    P_{ci} = (1 - Q(\cdot))^2 = \left( 1 - 2Q(\cdot) + Q^2(\cdot) \right)
+$$ donde $Q(\cdot) = Q\left( \frac{d}{2\sigma} \right)$
+
+Calculamos la probabilidad de acierto como $$ \begin{align}
+    P_c &= \frac{1}{M} \left( 2 ~ \left(1 - Q(\cdot) \right) + (M - 2) ~ \left(1 - 2Q(\cdot) + Q^2(\cdot) \right) \right) \\
+    &= \frac{1}{M} \left( M - 2(M - 1) ~ Q(\cdot) + (M - 2) ~ Q^2(\cdot) \right) \\
+    &=  1 - 2\left(1 - \frac{1}{M}\right) ~ Q(\cdot) + \left(1 - \frac{2}{M}\right) ~ Q^2(\cdot) \\
 \end{align} $$
+Finalmente podemos calcular la probabilidad de error $$ \begin{align}
+    P_e &= 1 - P_c \\
+    &= 1 - \left( 1 - 2\left(1 - \frac{1}{M}\right) ~ Q(\cdot) + \left(1 - \frac{2}{M}\right) ~ Q^2(\cdot) \right) \\
+    &= 2\left(1 - \frac{1}{M}\right) ~ Q(\cdot) - \left(1 - \frac{2}{M}\right) ~ Q^2(\cdot) \\
+    &\simeq 2\left(1 - \frac{1}{M}\right) ~ Q\left( \frac{d}{2\sigma} \right) \\
+\end{align} $$ con la expresión de la distancia y recordando que $\sigma^2 = \frac{N_0}{2}$, se obtiene $$ P_e \simeq 2 \left( 1 - \frac{1}{M} \right) ~ Q\left( \sqrt{ \frac{6}{\left(M^2 - 1\right)} \frac{E_s}{N_0}} \right) $$
 
 ## Característica
 ---

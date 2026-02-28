@@ -46,14 +46,23 @@ Al definir las posiciones de los símbolos en función de la distancia mínima e
      &= r^2 \\
      &= \frac{d^2}{4 \sin^2\left( \frac{\pi}{M} \right)}
 \end{align} $$
-Partiendo del caso de que $M > 2$, podemos notar que todos los símbolos tiene $2$ vecinos, aproximando el error de un símbolo al error que ocurre con sus vecinos, podemos aproximar la probabilidad de error como $$ \begin{align}
-    P_e &= 2 \sum_{k = 1}^{M} Q(\cdot), & Q(\cdot) = Q\left( \frac{d}{2\sigma} \right) \\
-     &= 2M ~ Q(\cdot) 
-\end{align} $$ con la expresión de la distancia y recordando que $\sigma^2 = \frac{N_0}{2}$, se obtiene $$ \begin{align}
-    P_e &= 2M ~ Q\left( \frac{d}{2\sigma} \right) \\
-     &= 2M ~ Q\left( \frac{1}{2} \sqrt{ 4 E_s ~ \sin^2\left( \frac{\pi}{M} \right) \frac{2}{N_0} } \right) \\
-     &= 2M ~ Q\left( \sqrt{ 2 ~ \frac{E_s}{N_0} } \sin\left( \frac{\pi}{M} \right) \right) \\
+
+Partiendo del caso de que $M > 2$, para aproximar la probabilidad de error, donde se considera el error que se tiene con los vecinos
+
+Para calcular el error, vamos a plantear $$ P_e = 1 - P_c, ~~~~ P_c = \sum_{i = 1}^{M} \mathbb{P}(s_i) ~ \underbrace{\mathbb{P}(s_i = \hat{s}_i \mid s_i = s)}_\text{sé eligió el símbolo correcto} $$
+Notemos que todos los símbolos tiene $2$ vecinos, por lo tanto $$ P_{ci} = \left( 1 - Q(\cdot) \right)^2 $$ donde $Q(\cdot) = Q\left( \frac{d}{2\sigma} \right)$
+
+Se puede calcular la probabilidad de acierto como $$ \begin{align}
+    P_c &= \frac{1}{M} \sum_{i = 1}^{M} \left( 1 - Q(\cdot) \right)^2 \\
+    &= \left( 1 - 2Q(\cdot) + Q^2(\cdot) \right) \\
 \end{align} $$
+
+Finalmente podemos calcular la probabilidad de error $$ \begin{align}
+    P_e &= 1 - P_c \\
+    &= 1 - \left( 1 - 2Q(\cdot) + Q^2(\cdot) \right) \\
+    &= 2Q(\cdot) - Q^2(\cdot) \\
+    &\simeq 2 ~ Q\left( \frac{d}{2\sigma} \right) \\
+\end{align} $$ con la expresión de la distancia y recordando que $\sigma^2 = \frac{N_0}{2}$, se obtiene $$ P_e \simeq 2 ~ Q\left( \sqrt{ 2 \frac{E_s}{N_0}} \sin\left( \frac{\pi}{M} \right) \right) $$
 Para el caso de $M = 2$, notemos que al ser igual que el 2-ASK, entonces su probabilidad de error es de $$ P_e = Q\left( \sqrt{2 ~ \frac{E_s}{N_0}} \right) $$
 ## Característica
 ---

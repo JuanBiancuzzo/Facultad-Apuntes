@@ -31,6 +31,7 @@ vinculoFacultad:
 ---
 El dominio, en matemática, de una [[Función|función]] $f: D \to H$ es el [[Conjunto|conjunto]] de existencia de ella misma, es decir, los valores para los cuales la función está definida<sup><a href="#ref-183" style="color: inherit; text-decoration: none;">[183]</a></sup>  $$ \text{Dom}(f) = \Set{ x \in D : \exists y \in H : f(x) = y } $$
 
+
 El dominio, en el derecho argentino, es el [[ingeniería electrónica/legal/Derecho real/Derecho Real|derecho real]] en virtud del cual una [[ingeniería electrónica/legal/Introducción al derecho/Cosa|cosa]] se encuentra sometida a la voluntad y acción de una [[ingeniería electrónica/legal/Introducción al derecho/Persona|persona]]. Este se puede clasificar en
 * Perfecto, según [[colección/documentos/Código Civil y Comercial de la Nación/Libro Cuarto/Título 3/Capítulo 1/Art. 1941 del CC y CN, Dominio perfecto|Art. 1941 del CC y CN]],  donde otorga todas las facultades de usar, gozar y disponer material y jurídicamente de una cosa dentro de los limites previsto por la ley
 * Imperfecto, según el [[colección/documentos/Código Civil y Comercial de la Nación/Libro Cuarto/Título 3/Capítulo 1/Art. 1946 del CC y CN, Dominio imperfecto|Art. 1946 del CC y CN]], es donde está sometido a condición o plazo resolutorio o si la cosa esta [[ingeniería electrónica/legal/Derecho real/Derecho Real#Carga o gravamen real|gravada]]
