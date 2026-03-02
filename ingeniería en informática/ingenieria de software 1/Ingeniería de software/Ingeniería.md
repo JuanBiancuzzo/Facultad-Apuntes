@@ -1,0 +1,14 @@
+---
+dia: 2023-08-26
+tags:
+  - carrera/ingeniería-en-informática/ingenieria-software-1/Ingeniería-de-software
+  - nota/facultad
+vinculoFacultad:
+  - tema: Ingeniería de software
+    capitulo: 1
+    materia: Análisis de la información
+    carrera: Ingeniería en informática
+---
+# Definición
+---
+Creación de soluciones costo efectivas a problemas prácticos mediante la aplicación de conocimientos codificado para construir cosas al servicio de la humanidad

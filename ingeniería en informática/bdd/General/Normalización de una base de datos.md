@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-La normalización de [[Base de datos|bases de datos]] es un proceso importante en el diseño de [[Base de datos relacionales|base de datos relaciones]] que consiste en designar y aplicar una serie de reglas a las relaciones obtenidas tras el paso del [[Modelo|modelo]] entidad-relación al modelo relacional con objeto de minimizar la redundancia de datos, facilitando su gestión posterior
+La normalización de [[Base de datos|bases de datos]] es un proceso importante en el diseño de [[Base de datos relacionales|base de datos relaciones]] que consiste en designar y aplicar una serie de reglas a las relaciones obtenidas tras el paso del [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]] entidad-relación al modelo relacional con objeto de minimizar la redundancia de datos, facilitando su gestión posterior
 
 El proceso de normalización se basa en relaciones que se conocen que mantienen los datos, principalmente dependencias funcionales, multivaluadas y de unión
 

@@ -18,7 +18,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-En esta [[Arquitectura de aplicaciones|arquitectura]] hay un [[Host|host]] que siempre esta, llamado [[Servidor|servidor]], que sirve request de otros host que llamaremos clientes.
+En esta [[ingeniería en informática/ingenieria de software 1/Diseño de software/Arquitectura de aplicaciones|arquitectura]] hay un [[Host|host]] que siempre esta, llamado [[Servidor|servidor]], que sirve request de otros host que llamaremos clientes.
 
 Notemos que los clientes no tienen forma directa de comunicarse entre ellos sino que tiene que ser por medio de esa entidad centralizada llamada servidor.
 

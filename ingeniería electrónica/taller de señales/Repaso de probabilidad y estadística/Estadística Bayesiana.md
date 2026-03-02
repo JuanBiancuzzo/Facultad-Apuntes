@@ -20,7 +20,7 @@ vinculoFacultad:
 ---
 La estadística bayesiana busca verdades en contexto de incertidumbre, interpretando la [[investigación/matemática/Probabilidad/Probabilidad|probabilidad]] como una medida de credibilidad en un [[ingeniería en informática/proba/Teoría de probabilidades/Evento|evento]]
 
-El [[ingeniería en informática/aninfo/Ingeniería de software/Modelo|modelo]] no solo representa el fenómeno a predecir, sino también nuestra propia ignorancia sobre el mismo. Busca evitar mentir maximizando incertidumbre dada la información disponible
+El [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]] no solo representa el fenómeno a predecir, sino también nuestra propia ignorancia sobre el mismo. Busca evitar mentir maximizando incertidumbre dada la información disponible
 
 A nivel técnico, la estadística bayesiana representa los parámetros del modelo por medio de una [[ingeniería en informática/proba/Variables y vectores aleatorios/Variable aleatoria|variable aleatoria]] $T$ con [[ingeniería en informática/proba/Variables y vectores aleatorios/Función de distribución|distribución]] a priori $p_T(\theta)$. En este tipo de modelos, la hipótesis de [[ingeniería en informática/proba/Variables y vectores aleatorios/Variables aleatorias independientes|independencia]] es válida cuando se conoce el parámetro. Es decir que la [[ingeniería en informática/proba/Inferencia estadística/Función de verosimilitud|verosimilitud]] de una muestra puede escribirse como $$ p_{X \mid T = \theta}(X) = \prod_{i = 0}^n  p_{X \mid T = \theta}(x_i) $$ no se pierde generalidad en asumir que las variables son idénticamente distribuidas
 

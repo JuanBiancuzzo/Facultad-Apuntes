@@ -20,7 +20,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-En esta [[Arquitectura de aplicaciones|arquitectura]] hay una mínima o nula dependencia en [[Servidor|servidores dedicados]] en [[Data center|data centers]]. Esta arquitectura usa directamente las comunicaciones entre los pares de [[Host|host]] que llamamos peers
+En esta [[ingeniería en informática/ingenieria de software 1/Diseño de software/Arquitectura de aplicaciones|arquitectura]] hay una mínima o nula dependencia en [[Servidor|servidores dedicados]] en [[Data center|data centers]]. Esta arquitectura usa directamente las comunicaciones entre los pares de [[Host|host]] que llamamos peers
 
 Los peers son dueños del [[Servicio|servicio]] que provee, y son las computadoras que controlan los usuarios
 

@@ -16,7 +16,7 @@ vinculoFacultad:
 ---
 Es un objeto que lleva [[Información|información]] total o parcial sobre el comportamiento de un [[Sistema|sistema]] físico.
 
-Estas se pueden [[Modelar|modelizar]] de forma matemática como 
+Estas se pueden [[ingeniería en informática/ingenieria de software 1/Diseño de software/Modelar|modelizar]] de forma matemática como 
 $$ x(t) : \mathbb{R}^N \to \mathbb{R} $$ ^continua
 
 Esto siendo un ejemplo de una señal continua, en el caso de ser discreta 

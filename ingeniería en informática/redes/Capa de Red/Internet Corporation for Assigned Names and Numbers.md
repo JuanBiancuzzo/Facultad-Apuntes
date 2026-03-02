@@ -14,4 +14,4 @@ vinculoFacultad:
 ---
 # Definición
 ---
-El rol de esta [[Organización|organización]] sin fines de lucro no es solo reservar [[Internet Protocol Address|direcciones IP]],  sino también manejar los [[Domain Name System#Root|servidores raíz DNS]]. Esta organización reserva direcciones para los registros de internet regionales
+El rol de esta [[ingeniería en informática/ingenieria de software 1/Desarrollo de software y modelos de proceso/Organización|organización]] sin fines de lucro no es solo reservar [[Internet Protocol Address|direcciones IP]],  sino también manejar los [[Domain Name System#Root|servidores raíz DNS]]. Esta organización reserva direcciones para los registros de internet regionales

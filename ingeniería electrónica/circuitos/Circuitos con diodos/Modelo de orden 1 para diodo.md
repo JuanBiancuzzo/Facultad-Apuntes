@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Para este [[Modelo|modelo]] utilizaremos la [[Recta de carga dinámica de un componente|resistencia dinámica en el punto Q]] como pendiente en [[Convención de signos para la tensión de polarización#Polarización directa|directa]]
+Para este [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]] utilizaremos la [[Recta de carga dinámica de un componente|resistencia dinámica en el punto Q]] como pendiente en [[Convención de signos para la tensión de polarización#Polarización directa|directa]]
 
 Calculamos la [[Conductancia dinámica|conductancia dinámica]] $$ g_d \biggm|_{Q} = \frac{d I_d}{d V_d} \biggm|_{Q} \approx \frac{I_{dQ}}{V_{th}} $$
 Dando que la resistencia sea $$ r_d \approx \frac{V_{th}}{I_{dQ}} $$

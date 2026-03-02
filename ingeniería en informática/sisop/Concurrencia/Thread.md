@@ -45,7 +45,7 @@ Los threads comparten los recursos del [[Proceso|proceso]], entre ellos, el [[Es
 
 Es una secuencia de [[Operación atómica|ejecución atómica]] que representa una tarea planificable de ejecución. Donde
  * Secuencia de ejecución atómica
-	 * Cada thread ejecuta una secuencia de instrucciones como lo hace un bloque de código en el [[Modelo]] de programación secuencial
+	 * Cada thread ejecuta una secuencia de instrucciones como lo hace un bloque de código en el [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo]] de programación secuencial
  * Tarea planificable de ejecución
 	 * El [[Sistema operativo]] tiene injerencia sobre el mismo en cualquier momento y puede ejecutarlo, suspenderlo y continuarlo cuando él desee
 

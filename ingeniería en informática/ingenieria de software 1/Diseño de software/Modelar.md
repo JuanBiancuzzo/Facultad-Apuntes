@@ -1,0 +1,25 @@
+---
+dia: 2023-10-22
+tags:
+  - carrera/ingeniería-en-informática/ingenieria-software-1/Diseño-de-software
+  - nota/facultad
+vinculoFacultad:
+  - tema: Diseño de software
+    capitulo: 8
+    materia: Análisis de la información
+    carrera: Ingeniería en informática
+---
+# Definición
+---
+Existen dos posibles caminos 
+
+## Modelado ágil
+---
+* Modelos informales
+* Costo de mantener los [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelados]] vs utilidad de los modelos
+
+## Ingeniería de software basada en modelos
+---
+* Los modelos evolucionan y se transforman en el [[Software|software]]
+* Relativamente populares en determinados segmentos
+

@@ -29,7 +29,7 @@ vinculoFacultad:
 ---
 Podemos entender el problema del aprendizaje supervisado como inferir una etiqueta $Y$ a partir del [[ingeniería en informática/proba/Representación de variables aleatorias/Predicción|predictor]] $X$, dependiendo de si $X$ es de tipo numérico entonces es un [[ingeniería en informática/orga/Machine learning/Problema de regresión|problema de regresión]] o en el caso de que sea categórico entonces sería un [[ingeniería en informática/orga/Machine learning/Problema de clasificación|problema de clasificación]]
 
-El objetivo será crear un [[ingeniería en informática/aninfo/Ingeniería de software/Modelo|modelo]] minimizar el valor [[ingeniería en informática/proba/Representación de variables aleatorias/Esperanza|esperado]] de la [[ingeniería electrónica/taller de señales/Regresión en Inteligencia Artificial/Función de costo|función de costo]] $\ell(x,~ y)$, el cuál recibe el nombre de riesgo esperado $E[\ell(X,~ Y)]$. La estimación que minimice dicho riesgo se conocerá como solución óptima ^riesgo-esperado
+El objetivo será crear un [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]] minimizar el valor [[ingeniería en informática/proba/Representación de variables aleatorias/Esperanza|esperado]] de la [[ingeniería electrónica/taller de señales/Regresión en Inteligencia Artificial/Función de costo|función de costo]] $\ell(x,~ y)$, el cuál recibe el nombre de riesgo esperado $E[\ell(X,~ Y)]$. La estimación que minimice dicho riesgo se conocerá como solución óptima ^riesgo-esperado
 
 Por otro lado existe el riesgo empírico, este se calcula como $$ \frac{1}{n} \sum_{i = 1}^n \ell(x_i,~ y_i) $$ para un conjunto de datos observados $\set{(x_i,~ y_i)}_{i = 1}^n$ ^riesgo-empirico
 

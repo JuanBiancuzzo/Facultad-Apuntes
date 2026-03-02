@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Este [[Modelo]] asume que:
+Este [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo]] asume que:
 * El caudal másico $[g \cdot s^{-1}]$ es continuo y constante durante el período de tiempo seleccionado
 * El [[Contaminación atmosférica|contaminante]] gaseoso o particulado con un diámetro menor a $10~\mu m$
 * El viento es uniforme en toda la capa donde se produce la dispersión

@@ -16,7 +16,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-La [[Arquitectura de aplicaciones|arquitectura]] representa aquellas decisiones de importancia, medidas de acuerdo al costo de modificarlas
+La [[ingeniería en informática/ingenieria de software 1/Diseño de software/Arquitectura de aplicaciones|arquitectura]] representa aquellas decisiones de importancia, medidas de acuerdo al costo de modificarlas
 
 Es decir tiene un carácter evolutivo, donde se tiene que adaptar rápidamente a los cambios, aportando valores iterativamente. No busca el entendimiento de todo la arquitectura
 

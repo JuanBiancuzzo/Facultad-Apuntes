@@ -21,7 +21,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-El [[Modelo|modelo]] de pequeña señal para el [[Transistor de efecto de campo de unión|JFET]] esta dado
+El [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]] de pequeña señal para el [[Transistor de efecto de campo de unión|JFET]] esta dado
 
 ![[Modelo de pequeña señal de JFET.png]]
 

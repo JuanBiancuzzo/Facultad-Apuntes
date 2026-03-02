@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-La programación [[Thread|multihilo]] extiende el [[Modelo secuencial]] de programación de un único [[Thread|hilo]] de ejecución. En este [[Modelo]] se puede encontrar dos escenarios posibles
+La programación [[Thread|multihilo]] extiende el [[Modelo secuencial]] de programación de un único [[Thread|hilo]] de ejecución. En este [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo]] se puede encontrar dos escenarios posibles
 1. Un [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] está compuesto por un conjunto de [[Thread|threads]] independientes que operan sobre un conjunto de datos que están completamente separados entre sí y son independientes
 2. Un programa está compuesto por un conjunto de thread que trabajan en forma cooperativa sobre un set de [[Memoria|memoria]] y datos que son compartidos
 

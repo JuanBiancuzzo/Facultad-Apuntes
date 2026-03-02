@@ -35,7 +35,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Podemos [[Modelo|modelar]] un conversor A/D de la siguiente forma
+Podemos [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelar]] un conversor A/D de la siguiente forma
 
 ```tikz
 \begin{document} 

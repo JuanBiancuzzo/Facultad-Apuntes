@@ -18,7 +18,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-El [[Modelo|modelo]] SISD es el modelo estándar de un procesador sin [[Paralelo|paralelismo]]
+El [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]] SISD es el modelo estándar de un procesador sin [[Paralelo|paralelismo]]
 
 ![[Single Instruction Single Data.png]]
 

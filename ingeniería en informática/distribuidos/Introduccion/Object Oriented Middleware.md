@@ -18,7 +18,7 @@ vinculoFacultad:
 ---
 Esta clasificación de [[Middleware|middleware]] ofrece
 * Mensajes hacia objetos distribuidos
-* Los [[Objeto|objetos]] viven dentro del middleware
+* Los [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Objeto|objetos]] viven dentro del middleware
     * Donde los clientes tienen una referencia a los objetos que ofrece el middleware
 * Esquema de '[[Marshalling|marshalling]]' o [[Serialización|serialización]] para transmitir la información
 

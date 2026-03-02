@@ -19,10 +19,10 @@ vinculoCurso:
 # Definición
 ---
 Es un [[Modelo de computación|modelo de computación]], donde tiene
-* Permite [[Memory Managment|alocar memoria de forma dinámica]] que llamaremos [[Objeto|objeto]]
+* Permite [[Memory Managment|alocar memoria de forma dinámica]] que llamaremos [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Objeto|objeto]]
 * Acceder y operar en, [[Big O Notation|usando Big O Notation]], cuestan $O(1)$
 
-Es un [[Modelo|modelo]] menos poderoso al de [[Random Access Machine|Random Access Machine]] ya que en este último se puede implementar el Pointer Machine, resolviendo la [[Abstracción|abstracción]] que este modelo propone 
+Es un [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]] menos poderoso al de [[Random Access Machine|Random Access Machine]] ya que en este último se puede implementar el Pointer Machine, resolviendo la [[Abstracción|abstracción]] que este modelo propone 
 
 # Referencias
 ---

@@ -26,7 +26,7 @@ En desarrollo de producto, el producto viable mínimo (MVP) es un producto con s
 ---
 Cuando un ingeniero tiene que diseñar una nueva solución [[System on a Chip|SoC]] y ha considerado las cuestiones relevantes destacadas en la sección anterior según lo que se requiere que haga el producto, debe pensar en los elementos clave que se utilizarán y/o desarrollarán
 
-En primer lugar, suele ser bueno establecer un primer sistema funcional como [[Prototipado|prototipo]] para verificar la funcionalidad del dispositivo esperado
+En primer lugar, suele ser bueno establecer un primer sistema funcional como [[ingeniería en informática/ingenieria de software 1/Prototipado y experiencia del usuario/Prototipado|prototipo]] para verificar la funcionalidad del dispositivo esperado
 
 Si es demasiado trabajo diseñar una [[Placa de circuito impreso (PCB) (Printed Circuit Board)|PCB]] específica para el producto, es posible optar por un sistema basado en [[Computers on modules|CoM]] o [[System on Module|SoM]]
 

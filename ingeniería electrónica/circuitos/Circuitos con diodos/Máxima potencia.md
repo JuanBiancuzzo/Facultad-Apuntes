@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Debemos considerar, en la validez de los [[Modelo|modelos]], que todos los dispositivos tienen una [[Potencia|potencia]] máxima que pueden manejar. Si la superan el componente se degrada y deja de funcionar
+Debemos considerar, en la validez de los [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelos]], que todos los dispositivos tienen una [[Potencia|potencia]] máxima que pueden manejar. Si la superan el componente se degrada y deja de funcionar
 
 Los [[Diodo|diodos]] [[Potencia disipada|disipan potencia]] tanto en [[Convención de signos para la tensión de polarización#Polarización directa|directa]] como en [[Ruptura inversa|ruptura]], por lo que debemos consultar la hoja de datos para ver cuál es ese límite
 

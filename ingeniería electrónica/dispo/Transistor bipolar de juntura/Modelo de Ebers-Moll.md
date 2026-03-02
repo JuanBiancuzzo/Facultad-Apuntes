@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Este [[Modelo]] representa el [[Transistor bipolar de juntura|TBJ]] con dos [[Diodo|diodos]] y una [[Fuente de corriente]]
+Este [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo]] representa el [[Transistor bipolar de juntura|TBJ]] con dos [[Diodo|diodos]] y una [[Fuente de corriente]]
 
 ![[Modelo de Ebers-Moll.webp]]
 

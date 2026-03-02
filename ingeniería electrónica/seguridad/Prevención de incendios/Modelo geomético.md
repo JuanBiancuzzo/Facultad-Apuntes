@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Este [[Modelo]] también conocido como el tetraedro del fuego
+Este [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo]] también conocido como el tetraedro del fuego
 
 ```tikz
 \usepackage{amssymb}

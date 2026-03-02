@@ -24,11 +24,11 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Una máquina de estados es un [[Modelo|modelo]] de comportamiento. Consta de un número finito de estados y, por lo tanto, también se denomina máquina de estados finitos
+Una máquina de estados es un [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]] de comportamiento. Consta de un número finito de estados y, por lo tanto, también se denomina máquina de estados finitos
 
 Según el estado actual y una entrada determinada, la máquina realiza transiciones de estado y produce resultados
 
-Hay tipos básicos como las [[Máquina Mealy|máquinas Mealy]] y [[Máquina de Moore|Moore]] y tipos más complejos como los [[Diagrama de estado Harel|diagrama de estado Harel]] y [[Unified modelling language#Diagrama de estado|UML]]
+Hay tipos básicos como las [[Máquina Mealy|máquinas Mealy]] y [[Máquina de Moore|Moore]] y tipos más complejos como los [[Diagrama de estado Harel|diagrama de estado Harel]] y [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Unified modelling language#Diagrama de estado|UML]]
 
 ## Componentes
 ---
@@ -53,7 +53,7 @@ Uno de los beneficios que otorga modelar un sistemas de esta forma, es que si te
 Tenemos múltiples opciones para codificar en [[Lenguaje C|C]] diagramas de estados finito, a saber
 * Mediante combinaciones de [[Switch statement#En C|switch]], múltiples [[If statement#En C|if]] o punteros a función
 * Tablas de estados de una o dos dimensiones
-* [[Patrones de diseño (Gang of four)|Patrones de diseños]] de estado [[Programación oientada a objetos (OOP) (POO)|orientados a objetos]]
+* [[ingeniería en informática/ingenieria de software 1/Diseño de software/Patrones de diseño (Gang of four)|Patrones de diseños]] de estado [[Programación oientada a objetos (OOP) (POO)|orientados a objetos]]
 * Otras técnicas que combinan a las anteriores ([[Framework|frameworks]])
 
 ```tikz

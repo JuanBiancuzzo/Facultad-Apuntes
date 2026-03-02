@@ -32,7 +32,7 @@ Un [[Sistema embebido|sistema embebido]] es un [[Sistema|sistema]] electrónico 
 * Asegurar el tiempo de respuesta
 * Asegurar la seguridad (algunos campos de aplicación exigen estándares de seguridad)
 * Atender la mayor cantidad de tareas posibles
-* Contar con conectividad e [[Interfaz de usuario|interfaz de usuario]] en uso corriente (el sistema debe ser capaz de establecer comunicación con otros dispositivos y ofrecer un medio a través del cual el usuario puede interactuar con el sistema)
+* Contar con conectividad e [[ingeniería en informática/ingenieria de software 1/Prototipado y experiencia del usuario/Interfaz de usuario|interfaz de usuario]] en uso corriente (el sistema debe ser capaz de establecer comunicación con otros dispositivos y ofrecer un medio a través del cual el usuario puede interactuar con el sistema)
 * Congeniar recursos de hardware con los requerimientos del software
 
 ## Un pantallazo del Diseño/Desarrollo/Depuración de Hardware

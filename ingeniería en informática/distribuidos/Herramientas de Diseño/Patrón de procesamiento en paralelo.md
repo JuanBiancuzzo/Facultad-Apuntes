@@ -16,7 +16,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Existen varias formas de procesar información en [[Paralelo|paralelo]], estaos están basados en algoritmos y no tan abstractos como los [[Patrones de diseño (Gang of four)|patrones de diseño]], sin incluir detalles de implementación y por ende agnósticos a [[Lenguaje de programación|lenguajes de programación]]. Entre ellas están
+Existen varias formas de procesar información en [[Paralelo|paralelo]], estaos están basados en algoritmos y no tan abstractos como los [[ingeniería en informática/ingenieria de software 1/Diseño de software/Patrones de diseño (Gang of four)|patrones de diseño]], sin incluir detalles de implementación y por ende agnósticos a [[Lenguaje de programación|lenguajes de programación]]. Entre ellas están
 * [[Fork-join|Fork-join]]
 * [[Pack|Pack]]
 * [[Split|Split]]

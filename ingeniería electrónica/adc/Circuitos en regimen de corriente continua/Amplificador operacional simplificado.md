@@ -12,7 +12,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Podemos simplificar un [[Amplificador operacional]], con el siguiente [[Modelo]]
+Podemos simplificar un [[Amplificador operacional]], con el siguiente [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo]]
 
 ```tikz 
 \usepackage{circuitikz} 

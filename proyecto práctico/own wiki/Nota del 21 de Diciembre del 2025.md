@@ -15,6 +15,6 @@ Con todo eso en mente, la estructura que propongo se compone en módulos
     * Componente, representa un bloque mínimo de información, como la información de un Libro o un Capítulos. Los componentes pueden ser Fuertes o Débiles
         * Un componente Fuerte, representa información que no depende de otra. Como la información de un Libro
         * Un componente Débil, representa, por oposición, información que depende de otro componente. Como la información de un Capítulo, ya que depende de la información de un Libro
-    * View, representa la forma de transformar una entidad en una representación visual del mismo. En este [[ingeniería en informática/aninfo/Ingeniería de software/Modelo|modelo]] no existe una Entidad sin una representación visual, pero si existe una Entidad con varias representaciones visuales
+    * View, representa la forma de transformar una entidad en una representación visual del mismo. En este [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]] no existe una Entidad sin una representación visual, pero si existe una Entidad con varias representaciones visuales
 3. Para abstraernos de la plataforma dado la salida, vamos a establecer nuestra propia representación de como construir una visualización, y luego, cada plataforma se encargará de mostrarla de la misma forma que la mostrarían otras plataformas
 

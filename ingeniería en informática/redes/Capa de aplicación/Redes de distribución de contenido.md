@@ -41,7 +41,7 @@ Para determinar el mejor clúster, las CDN realizan medidas en tiempo real del d
 ---
 Estas [[Red|redes]] son los Netflix, Google, etc. de distribuir contenido
 * Acerca el contenido a los [[Arquitectura cliente servidor#Cliente|clientes]]
-	* Minimizar [[Delay in packet switches|latencia]] (mejor [[Experiencia del usuario|UX]])
+	* Minimizar [[Delay in packet switches|latencia]] (mejor [[ingeniería en informática/ingenieria de software 1/Prototipado y experiencia del usuario/Experiencia del usuario|UX]])
 	* Maximizar [[Throughput de una red|throughput]]
 * Minimizar el [[Tráfico|tráfico]] en el [[Internet Service Provider#Tier 1|núcleo de internet]]
 	* Evitar replicación de [[Paquete|paquetes]]

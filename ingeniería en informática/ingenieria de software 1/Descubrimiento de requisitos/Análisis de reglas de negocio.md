@@ -1,0 +1,18 @@
+---
+dia: 2023-09-05
+tags:
+  - carrera/ingeniería-en-informática/ingenieria-software-1/Descubrimiento-de-requisitos
+  - nota/facultad
+vinculoFacultad:
+  - tema: Descubrimiento de requisitos
+    capitulo: 3
+    materia: Análisis de la información
+    carrera: Ingeniería en informática
+---
+# Definición
+---
+Las políticas y reglas de negocio dirigen y restringen la estructura y la operación de la organización.
+
+Una política organizacional es una directiva no procesable que apoya un objetivo de negocio. Una regla de negocio es una directiva específica, procesable y [[ingeniería en informática/ingenieria de software 1/Verificación y validación/Verificación|verificable]] que apoya una política organizacional.
+
+Algunas reglas de negocio complicadas pueden expresarse como tablas o [[Árbol de decisión|árboles de decisión]].

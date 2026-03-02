@@ -21,7 +21,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Podemos [[Modelo|modelar]] un conversor D/A de la siguiente forma
+Podemos [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelar]] un conversor D/A de la siguiente forma
 
 ```tikz
 \begin{document} 

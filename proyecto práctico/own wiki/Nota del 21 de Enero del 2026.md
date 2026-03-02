@@ -48,7 +48,7 @@ Por otro lado, el servicio de `SystemInteraction` define las funciones que el pr
 
 ## Views
 ---
-Tenemos el problema que las animaciones se prestan mucho más al [[Retain mode|retain mode]], mientras que las [[ingeniería en informática/aninfo/Prototipado y experiencia del usuario/Interfaz de usuario|UI]] se prestan mucho más al [[Immediate mode|immediate mode]].  
+Tenemos el problema que las animaciones se prestan mucho más al [[Retain mode|retain mode]], mientras que las [[ingeniería en informática/ingenieria de software 1/Prototipado y experiencia del usuario/Interfaz de usuario|UI]] se prestan mucho más al [[Immediate mode|immediate mode]].  
 
 
 ```go

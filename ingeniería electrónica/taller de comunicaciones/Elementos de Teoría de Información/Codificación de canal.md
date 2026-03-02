@@ -18,7 +18,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Se puede [[ingeniería en informática/aninfo/Ingeniería de software/Modelo|modelar]] el proceso de codificación de un [[ingeniería electrónica/taller de comunicaciones/Elementos de Teoría de Información/Canal discreto sin memoria|canal]] con esta estructura
+Se puede [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelar]] el proceso de codificación de un [[ingeniería electrónica/taller de comunicaciones/Elementos de Teoría de Información/Canal discreto sin memoria|canal]] con esta estructura
 
 ```tikz
 \usetikzlibrary{math}

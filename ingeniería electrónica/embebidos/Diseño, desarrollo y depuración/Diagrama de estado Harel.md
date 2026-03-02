@@ -18,7 +18,7 @@ Harel concluyó que "un enfoque de estados debe ser modular, jerárquico y bien 
 Acuñó el término "statechart" y lo definió como
 * "statecharts = state-diagrams + depth + orphogonality + broadcast communication"
 
-Básicamente, los [[Diagrama de estado|diagramas de estados]] de Harel son máquinas de Mealy/[[Máquina de Moore|Moore]] ampliadas con conceptos adicionales que nos permiten [[Modelar|modelar]] sistemas complejos de una manera práctica
+Básicamente, los [[Diagrama de estado|diagramas de estados]] de Harel son máquinas de Mealy/[[Máquina de Moore|Moore]] ampliadas con conceptos adicionales que nos permiten [[ingeniería en informática/ingenieria de software 1/Diseño de software/Modelar|modelar]] sistemas complejos de una manera práctica
 
 Al utilizar estados compuestos y subdiagramas, podemos aportar más profundidad a los diagramas de estado, manteniendo al mismo tiempo los diagramas claros y bien estructurados
 

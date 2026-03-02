@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Este [[Modelo]] toma al átomos de Silicio, que tiene 4 [[Electrón|electrones]] débilmente ligados, esto ayuda a generar una [[Red cristalina]] con una [[Red del diamante]], esto produce que tenga una densidad atómica de $5 \times 10^{22}~cm^{-3}$.
+Este [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo]] toma al átomos de Silicio, que tiene 4 [[Electrón|electrones]] débilmente ligados, esto ayuda a generar una [[Red cristalina]] con una [[Red del diamante]], esto produce que tenga una densidad atómica de $5 \times 10^{22}~cm^{-3}$.
 
 ## Concentración de [[Carga eléctrica|portadores]]
 ---

@@ -16,7 +16,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Este diagrama se suele usar para diseñar una [[Arquitectura de aplicaciones|arquitectura]], ya que permite ver los procesos generales del [[Sistema|sistema]], como también los puntos escalables del mismo. Algo que también debería aclararse es que muestra los archivos estáticos, como también lo que llaman "colas" que ejemplifican la comunicación entre procesos que posiblemente estén separados y necesitan un buffer  
+Este diagrama se suele usar para diseñar una [[ingeniería en informática/ingenieria de software 1/Diseño de software/Arquitectura de aplicaciones|arquitectura]], ya que permite ver los procesos generales del [[Sistema|sistema]], como también los puntos escalables del mismo. Algo que también debería aclararse es que muestra los archivos estáticos, como también lo que llaman "colas" que ejemplifican la comunicación entre procesos que posiblemente estén separados y necesitan un buffer  
 
 ## Ejemplo
 ---

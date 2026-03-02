@@ -22,7 +22,7 @@ vinculoFacultad:
 ---
 [[Host|Host]], [[Router|routers]] y otros dispositivos ejecutan [[Protocolo|protocolos]] que controlan el envío y recepción de [[Información|información]] dentro de [[Internet|internet]]
 
-Este [[Modelo|modelo]] que representa la estructura general tiene $5$ capas
+Este [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]] que representa la estructura general tiene $5$ capas
 * [[Capa de aplicación|Capa de Aplicación]]
 * [[Capa de transporte|Capa de Transporte]]
 * [[Capa de Red|Capa de Red]]

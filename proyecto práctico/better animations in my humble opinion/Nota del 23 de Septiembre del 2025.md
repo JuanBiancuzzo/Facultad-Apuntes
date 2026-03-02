@@ -6,7 +6,7 @@ tags:
 ---
 # Progreso
 ---
-Yo creo que las propiedades que debería tener mi sistema de [[ingeniería en informática/aninfo/Prototipado y experiencia del usuario/Interfaz de usuario|UI]] se basan en $4$ aplicaciones 
+Yo creo que las propiedades que debería tener mi sistema de [[ingeniería en informática/ingenieria de software 1/Prototipado y experiencia del usuario/Interfaz de usuario|UI]] se basan en $4$ aplicaciones 
 * [Manim](https://www.manim.community/)
 * [[colección/programas/motion canvas/Índice|Motion canvas]]
 * [[colección/programas/blender/Índice|Blender]]

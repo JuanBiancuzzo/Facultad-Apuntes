@@ -15,7 +15,7 @@ Actualmente hay un bug en hacer las querys, pero no es nada que no se pueda reso
 
 Para la tercera, se me ocurrió hacer un endpoint especifico a delete, que su único trabajo sería eliminar elementos de la base de datos. Para eso en el [[Javascript Object Notation (JSON)|JSON]], en la sección de variables, cuando se quiere hacer una variable según una tabla, ahí podemos crear una variable (como hicimos con los pathView) y generar la información suficiente para mandarlo a una función que cree el [[Uniform Resource Locator (URL)|url]]
 
-Para actualizar, se puede atar en la misma sección del JSON, para definir bien como hacer el url del [[ingeniería en informática/aninfo/Diseño de software/Representational state transfer|POST]] pero no lo tengo bien claro como se debería hacer para hacer. Tal vez pueda hacer un solo endpoint, y que se pase toda la información necesaria
+Para actualizar, se puede atar en la misma sección del JSON, para definir bien como hacer el url del [[ingeniería en informática/ingenieria de software 1/Diseño de software/Representational state transfer|POST]] pero no lo tengo bien claro como se debería hacer para hacer. Tal vez pueda hacer un solo endpoint, y que se pase toda la información necesaria
 
 ## Resumen
 ---

@@ -20,7 +20,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Se puede [[ingeniería en informática/aninfo/Ingeniería de software/Modelo|modelar]] un canal con esta estructura
+Se puede [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelar]] un canal con esta estructura
 
 ```tikz
 \usetikzlibrary{math}

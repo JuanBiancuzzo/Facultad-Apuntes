@@ -16,7 +16,7 @@ Esta capa representa la aplicación como tal, en la que puede ejecutarse en dife
 
 Desde el punto de vista del desarrollador de aplicaciones, la [[Arquitectura de redes|arquitecturas de redes]] esta fija y provee servicios específicos a la aplicaciones.
 
-Para un desarrollador de aplicaciones, tiene a su disposiciones, son las [[Arquitectura de aplicaciones|arquitecturas de aplicaciones]]
+Para un desarrollador de aplicaciones, tiene a su disposiciones, son las [[ingeniería en informática/ingenieria de software 1/Diseño de software/Arquitectura de aplicaciones|arquitecturas de aplicaciones]]
 
 
 

@@ -103,7 +103,7 @@ Obtener el sistema y la señal de salida que permite modificar una señal de ent
 
 ## Modelado
 ---
-[[Modelar|Diseñar]] un sistema y la señal de salida que permite modificar una señal de entrada de determinada forma, como un radar
+[[ingeniería en informática/ingenieria de software 1/Diseño de software/Modelar|Diseñar]] un sistema y la señal de salida que permite modificar una señal de entrada de determinada forma, como un radar
 
 ```tikz
 \usepackage{amssymb}

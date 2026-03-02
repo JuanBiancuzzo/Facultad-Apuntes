@@ -18,7 +18,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Los [[Servidor|servidores]] ya no proveen servicios sino objetos. Existe un [[Middleware|middleware]] que oculta la complejidad de referencias a [[Objeto|objeto]] remoto, invocación de acciones, errores/excepciones y la [[Recolector de basura (Garbage collector)|recolección de basura]] 
+Los [[Servidor|servidores]] ya no proveen servicios sino objetos. Existe un [[Middleware|middleware]] que oculta la complejidad de referencias a [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Objeto|objeto]] remoto, invocación de acciones, errores/excepciones y la [[Recolector de basura (Garbage collector)|recolección de basura]] 
 
-Esta forma de representar ejecución de código de forma distribuida, especialmente en oposición a [[Remote Procedure Call|RPC]], este es un [[Modelo|modelo]] con estado, representado por los objetos
+Esta forma de representar ejecución de código de forma distribuida, especialmente en oposición a [[Remote Procedure Call|RPC]], este es un [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]] con estado, representado por los objetos
 

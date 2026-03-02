@@ -84,7 +84,7 @@ En un controlador feedback, la variable controlada es medida por un [[Sensores|s
 ---
 Se lo puede definir un buen controlador si proporciona
 * [[Sistema estable|Estabilidad]]
-    * El sistema es estable para todo tiempo, es un [[Requisito|requisito]] absoluto
+    * El sistema es estable para todo tiempo, es un [[ingeniería en informática/ingenieria de software 1/Ingeniería de requisitos/Requisito|requisito]] absoluto
     * El sistema puede ser inestable por $2$ motivos
         1. El sistema siendo controlado es inestable
         2. El mismo feedback vuelve inestable el sistema

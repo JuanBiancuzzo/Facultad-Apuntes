@@ -18,4 +18,4 @@ La [[Aplicación|aplicación]] se escribe accediendo directamente al [[Hardware|
 * La aplicación accede directamente a los registros de hardware del [[Microcontrolador|microcontrolador]]
 * En un [[Camino#Ciclo (Cicle)|bucle]]/[[Lazo|lazo sin fin]], que ejecuta tareas con un tiempo de ejecución fijo
 * Esta ejecución secuencial sólo se desvía cuando ocurre un [[Interrupción|evento de interrupción]]
-* Este enfoque de desarrollo bare metal para [[Sistema embebido|sistemas embebidos]] se conoce como Super-loop, con modelado de tareas ([[Unified modelling language#Diagrama de estado|diagrama de estado]])
+* Este enfoque de desarrollo bare metal para [[Sistema embebido|sistemas embebidos]] se conoce como Super-loop, con modelado de tareas ([[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Unified modelling language#Diagrama de estado|diagrama de estado]])

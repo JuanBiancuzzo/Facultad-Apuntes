@@ -17,7 +17,7 @@ tags:
 ---
 En resumen, un GDD muestra todos los elementos claves del juego y sirve como plano para el juego. Estos elementos claves pueden ser
 * Mecánicas
-* [[Requisito del sistema|Requisitos del sistema]]
+* [[ingeniería en informática/ingenieria de software 1/Analizar y especificar requisitos/Requisito del sistema|Requisitos del sistema]]
 * Plataformas en las que estará disponible
 * etc.
 
@@ -79,15 +79,15 @@ Veamos varias posibilidades de headers que tenga el GDD, para poder describir
     * Música
     * Efectos de sonido
 * Experiencia de juego
-    * [[Interfaz de usuario|UI]]/[[Experiencia del usuario|UX]]
+    * [[ingeniería en informática/ingenieria de software 1/Prototipado y experiencia del usuario/Interfaz de usuario|UI]]/[[ingeniería en informática/ingenieria de software 1/Prototipado y experiencia del usuario/Experiencia del usuario|UX]]
     * Controles
     * Menus
-* [[Requisito de negocio|Requisitos de mercado]]
+* [[ingeniería en informática/ingenieria de software 1/Analizar y especificar requisitos/Requisito de negocio|Requisitos de mercado]]
     * Prioridades
     * [[Producto mínimo viable|MVP]]
     * Marketing
     * Post-lanzamiento
-* [[Requisito de software|Requisitos técnicos]]
+* [[ingeniería en informática/ingenieria de software 1/Analizar y especificar requisitos/Requisito de software|Requisitos técnicos]]
     * Sistemas
     * Tareas
     * Actividades

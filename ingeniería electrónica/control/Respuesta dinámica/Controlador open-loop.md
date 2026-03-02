@@ -114,7 +114,7 @@ Algo que todavía no se tuvo en cuenta es el hecho de las [[Perturbación|pertur
 \end{document}
 ```
 
-Como este controlador intenta igualar, en forma contraria, a las perturbaciones entonces necesita un buen [[Modelo|modelo]] de la [[Planta|planta]], en caso contrario podría producir efectos no deseados y sin forma de corregirlos
+Como este controlador intenta igualar, en forma contraria, a las perturbaciones entonces necesita un buen [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]] de la [[Planta|planta]], en caso contrario podría producir efectos no deseados y sin forma de corregirlos
 
 # Referencias
 ---

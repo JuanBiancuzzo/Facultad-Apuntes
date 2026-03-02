@@ -56,7 +56,7 @@ Tenemos varias formas de clasificar estas interfaces
 
 * Web APIs
     * Web services based APIs ([[Hypertext Transfer Protocol|HTTP]] + [[Simple Object Access Protocol (SOAP)|SOAP]])
-    * [[Representational state transfer|REST]] based APIs
+    * [[ingeniería en informática/ingenieria de software 1/Diseño de software/Representational state transfer|REST]] based APIs
 
 * Library-based / [[Framework|Frameworks]]
     * [[Lenguaje Java|Java]] API

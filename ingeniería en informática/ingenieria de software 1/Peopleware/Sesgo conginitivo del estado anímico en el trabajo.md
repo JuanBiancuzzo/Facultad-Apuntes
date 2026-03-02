@@ -1,0 +1,18 @@
+---
+dia: 2023-11-28
+tags:
+  - carrera/ingeniería-en-informática/ingenieria-software-1/Peopleware
+  - nota/facultad
+vinculoFacultad:
+  - tema: Peopleware
+    capitulo: 12
+    materia: Análisis de la información
+    carrera: Ingeniería en informática
+---
+# Definición
+---
+Depende menos de factores generales, como beneficios y estatus. Son más importantes los aspectos situacionales:
+* Oportunidades de socializar con los compañeros
+* Bajo ruido ambiental
+* Presión del tiempo
+* La presencia del jefe (pero que estar solo)

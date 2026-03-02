@@ -17,7 +17,7 @@ tags:
 ---
 Las [[Aplicación Programming Interface|API's]] son claves para el desarrollo de [[Software|software]]
 * SOAP
-* [[Representational state transfer|RESTful]]
+* [[ingeniería en informática/ingenieria de software 1/Diseño de software/Representational state transfer|RESTful]]
 * GraphQL
 * [[Remote Procedure Call#gRPC|gRPC]]
 * WebSocket

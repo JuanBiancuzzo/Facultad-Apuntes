@@ -13,7 +13,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Una base de datos es una colección ordenada de [[Dato|datos]] administrada por un [[Sistema|sistema]] de gestión
+Una base de datos es una colección ordenada de [[ingeniería en informática/ingenieria de software 1/Diseño de datos/Dato|datos]] administrada por un [[Sistema|sistema]] de gestión
 
 ## Tipos de base de datos
 ---
@@ -25,7 +25,7 @@ Tenemos lo siguientes tipos de base de datos
 * [[Base de datos en memoria|Base de datos en memoria]] ![[Base de datos en memoria#Características]]
 * [[Base de datos distribuidos|Base de datos distribuidos]] ![[Base de datos distribuidos#Características]]
 
-## Transformación del [[Modelado de dominio|modelo de dominio]] a la base de datos
+## Transformación del [[ingeniería en informática/ingenieria de software 1/Analizar y especificar requisitos/Modelado de dominio|modelo de dominio]] a la base de datos
 ---
 
 ```tikz

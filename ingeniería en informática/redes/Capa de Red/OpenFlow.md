@@ -147,7 +147,7 @@ Este protocolo opera entre un controlador [[Software-defined networking|SDN]] y 
 
 Entre los [[Paquete|mensajes]] más importantes enviados desde el controlador al switch están
 * Configuration
-    * Este mensaje permite al controlador consultar o establecer los parámetros de [[Configuración|configuración]] del switch
+    * Este mensaje permite al controlador consultar o establecer los parámetros de [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Configuración|configuración]] del switch
 * Modify-State
     * Este mensaje es utilizado por el controlador para agregar, eliminar, o modificar entradas en la tabla de flujo del switch, y establecer propiedades en los puertos del mismo
 * Read-State

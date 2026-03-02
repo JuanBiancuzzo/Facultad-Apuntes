@@ -22,7 +22,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-El entrenamiento de un [[ingeniería en informática/aninfo/Ingeniería de software/Modelo|modelo]] es un [[Problema de optimización|problema de optimización]], donde buscamos los parámetros óptimos para minimizar o maximizar la [[Métrica de un modelo|métrica]] elegida. Dependiendo del modelo varía la técnica de optimización a usar
+El entrenamiento de un [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]] es un [[Problema de optimización|problema de optimización]], donde buscamos los parámetros óptimos para minimizar o maximizar la [[Métrica de un modelo|métrica]] elegida. Dependiendo del modelo varía la técnica de optimización a usar
 
 ## Conjuntos de datos
 ---

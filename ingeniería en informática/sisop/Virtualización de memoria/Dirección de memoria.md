@@ -13,4 +13,4 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Una dirección de memoria es un formato de localización de bytes de [[Memoria|memoria]] con la cual un [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] o un dispositivo de [[Hardware|hardware]] accede o almacena [[Dato|datos]] para su posterior utilización
+Una dirección de memoria es un formato de localización de bytes de [[Memoria|memoria]] con la cual un [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] o un dispositivo de [[Hardware|hardware]] accede o almacena [[ingeniería en informática/ingenieria de software 1/Diseño de datos/Dato|datos]] para su posterior utilización

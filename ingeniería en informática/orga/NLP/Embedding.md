@@ -15,7 +15,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Representa palabra o [[Token|token]] con un vector denso, y esto se logra con [[Modelo|modelos]] como
+Representa palabra o [[Token|token]] con un vector denso, y esto se logra con [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelos]] como
 * [[Efficient Estimation of Word Representations in Vector Space de Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean|Word2Vec]]
 * [[Glove]]
 * [[Star space]]

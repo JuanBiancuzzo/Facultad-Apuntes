@@ -19,7 +19,7 @@ Los VFS es el pegamento que habilita a las system calls como por ejemplo `open()
 
 ## Objetos
 ---
-Los VFS presentan una serie de estructuras que [[Modelar|modelan]] un [[File system]], estas estructuras se denominan objetos. Estos objetos son:
+Los VFS presentan una serie de estructuras que [[ingeniería en informática/ingenieria de software 1/Diseño de software/Modelar|modelan]] un [[File system]], estas estructuras se denominan objetos. Estos objetos son:
 * Super bloque:
 	* Representa a un sistema de archivos
 * Inodo:

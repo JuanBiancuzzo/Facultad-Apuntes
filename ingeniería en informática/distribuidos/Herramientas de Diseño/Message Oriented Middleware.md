@@ -54,7 +54,7 @@ Por otro lado, la cola de mensajes preserva este orden y no se pierden intercamb
 
 ## Modelo sincrónico vs asincrónico
 ---
-En el [[Modelo|modelo]] [[Sincronismo|sincrónico]] tiene la ventaja la simplicidad en el modelo de conexiones, ya que este es el de [[Topología de comunicación#^unicast|punto a punto]], y permite obtener respuestas instantáneas a pedidos concretos
+En el [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]] [[Sincronismo|sincrónico]] tiene la ventaja la simplicidad en el modelo de conexiones, ya que este es el de [[Topología de comunicación#^unicast|punto a punto]], y permite obtener respuestas instantáneas a pedidos concretos
 
 ```tikz
 \usepackage{amssymb}

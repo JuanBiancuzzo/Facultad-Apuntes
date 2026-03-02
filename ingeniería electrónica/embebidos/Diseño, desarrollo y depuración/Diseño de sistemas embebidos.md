@@ -30,6 +30,6 @@ El diseño de [[Sistema|sistema]] [[Embebido|embebido]] se orienta a
     * Mayor cantidad de tareas posibles
 * Contar con
     * Conectividad
-    * [[Interfaz de usuario|Interfaz de usuario]]
+    * [[ingeniería en informática/ingenieria de software 1/Prototipado y experiencia del usuario/Interfaz de usuario|Interfaz de usuario]]
 * Congeniar
     * Recursos de [[Hardware|HW]] con los requerimientos del [[Software|SW]]

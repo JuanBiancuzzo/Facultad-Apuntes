@@ -1,0 +1,21 @@
+---
+dia: 2023-10-25
+tags:
+  - carrera/ingeniería-en-informática/ingenieria-software-1/Prototipado-y-experiencia-del-usuario
+  - nota/facultad
+aliases:
+  - Principios de diseño de UI
+vinculoFacultad:
+  - tema: Prototipado y experiencia del usuario
+    capitulo: 9
+    materia: Análisis de la información
+    carrera: Ingeniería en informática
+---
+# Definición
+---
+* Usable por todos
+* Flexibilidad en el uso
+* Simple e intuitivo
+* Información efectiva
+* Tolerancia al error
+* Uso requiere el menor esfuerzo

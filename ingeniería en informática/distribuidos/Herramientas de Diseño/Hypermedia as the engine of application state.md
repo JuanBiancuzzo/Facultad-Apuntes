@@ -19,7 +19,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Esta forma arquitectura que impone sobre [[Representational state transfer#RESTful|RESTful]] que tiene la filosofía de permitir explorar la [[Aplicación Programming Interface|API]] por medio de las respuestas dadas al servidor, es decir, en la respuesta [[Javascript Object Notation (JSON)|JSON]] o [[Lenguaje de marcado extensible|XML]], este devuelve links que pueden convertirse en botones para el usuario
+Esta forma arquitectura que impone sobre [[ingeniería en informática/ingenieria de software 1/Diseño de software/Representational state transfer#RESTful|RESTful]] que tiene la filosofía de permitir explorar la [[Aplicación Programming Interface|API]] por medio de las respuestas dadas al servidor, es decir, en la respuesta [[Javascript Object Notation (JSON)|JSON]] o [[Lenguaje de marcado extensible|XML]], este devuelve links que pueden convertirse en botones para el usuario
 
 # Referencias
 ---

@@ -1,0 +1,19 @@
+---
+dia: 2023-10-19
+tags:
+  - carrera/ingeniería-en-informática/ingenieria-software-1/Analizar-y-especificar-requisitos
+  - nota/facultad
+vinculoFacultad:
+  - tema: Analizar y especificar requisitos
+    capitulo: 4
+    materia: Análisis de la información
+    carrera: Ingeniería en informática
+---
+# Definición
+---
+Que esta dado por un título, que siempre es un verbo en voz activa hacia un objeto, y una descripción resumida del comportamiento
+
+# Ejemplo
+---
+#### Consultar productos disponibles
+El cliente consulta los productos disponibles, filtrándolos por categoría, descripción o código de producto.

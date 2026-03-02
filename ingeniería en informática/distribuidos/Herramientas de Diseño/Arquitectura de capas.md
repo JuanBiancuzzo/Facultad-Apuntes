@@ -16,11 +16,11 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Esta metodología de [[Arquitectura de aplicaciones|arquitectura]] tiene como ventajas las siguientes
+Esta metodología de [[ingeniería en informática/ingenieria de software 1/Diseño de software/Arquitectura de aplicaciones|arquitectura]] tiene como ventajas las siguientes
 * Permite dividir el problema en sub-problemas
 * Fomentan el uso de [[Interfaz|interfaces]]
 * Permiten intercambiar componentes reutilizando conectores y [[Protocolo|protocolos]] ya definidos
 
 Existen dos tipos de separación por capas
-* [[Arquitectura por layers|Layers o capas lógicas]] 
+* [[ingeniería en informática/ingenieria de software 1/Diseño de software/Arquitectura por layers|Layers o capas lógicas]] 
 * [[Arquitectura por tiers|Tiers o capas físicas]]
