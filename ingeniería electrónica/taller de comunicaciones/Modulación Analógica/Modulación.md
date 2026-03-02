@@ -24,6 +24,10 @@ vinculoFacultad:
 ---
 La modulación permite adaptar el espectro de frecuencias del mensaje a transmitir al rango de frecuencias de trabajo de los dispositivos y medios que conforman el sistema Transmisor-Canal-Receptor
 
+![[ingeniería electrónica/taller de comunicaciones/Modulación Analógica/img/Modulation_categorization.svg]]
+
+%% Reemplazar imagen por diagrama hecho por mi %%
+
 ### Modulación de amplitud
 ---
 Para [[Modulación analógica|modulaciones analógicas]], existen $4$ variantes de modulación de amplitud de la portadora
@@ -36,9 +40,9 @@ Para [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Mod
 
 ### Modulación de fase
 ---
-Existen $2$ variantes de modulación de fase de la portadora
+Existe una variante de modulación de fase de la portadora
 1. Modulación de fase
-2. [[Modulación de frecuencia|Modulación de frecuencia (FM)]]
 
 ### Modulación de frecuencia
 ---
+[[Modulación de frecuencia|Modulación de frecuencia (FM)]]
