@@ -1,6 +1,6 @@
 ---
 etapa: empezado
-estado: Cursandola
+estado: Falta aprendizaje no supervisado y modelos bayesianos
 tags:
   - facultad/materia
   - carrera/ingeniería-electrónica/taller-de-señales

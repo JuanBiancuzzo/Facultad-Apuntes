@@ -1,6 +1,6 @@
 ---
 etapa: empezado
-estado: Cursandola
+estado: Falta terminar codificación
 tags:
   - facultad/materia
   - carrera/ingeniería-electrónica/taller-de-comunicaciones
