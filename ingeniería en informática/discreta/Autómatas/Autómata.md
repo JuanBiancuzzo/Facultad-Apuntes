@@ -27,8 +27,6 @@ En la matemática, la teoría de autómatas es una rama de la [[Teoría de la co
 
 Un autómata es un [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]] matemático para una [[Máquina de estado|máquina de estado finito]]. Una FSM es una máquina que, dada una entrada de símbolos, "salta" a través de una serie de estados de acuerdo a una [[Función|función]] de transición. En la variedad común "[[Máquina Mealy|Mealy]]" de FSMs, esta función de transición dice al autómata a qué estado cambiar dados unos determinados estado y símbolo <sup><a href="#ref-240" style="color: inherit; text-decoration: none;">[240]</a></sup> 
 
-
-
 # Referencias
 ---
 ```dataviewjs

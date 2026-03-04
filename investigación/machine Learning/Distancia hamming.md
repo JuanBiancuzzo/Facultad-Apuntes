@@ -2,6 +2,8 @@
 dia: 2024-11-19
 etapa: sin-empezar
 referencias: 
+aliases:
+  - Pesos de Hamming
 tags:
   - investigación/ciencias-de-la-computación/Machine-learning
   - investigación/machine-Learning

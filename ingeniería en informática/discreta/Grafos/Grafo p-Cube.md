@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo|grafo]], los vértices se etiquetan con una cadena binaria de $p$ dígitos, con una arista si la [[Distancia hamming|distancia hamming]] es $1$. Alternativamente, puede pensarse con el [[Producto cartesiano|producto cartesiano]] de $p$ veces ([[Grafo simple completo|grafo completo de orden 2]]) $K_2$ 
+Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo|grafo]], los vértices se etiquetan con una cadena binaria de $p$ dígitos, con una arista si la [[investigación/machine Learning/Distancia Hamming|distancia hamming]] es $1$. Alternativamente, puede pensarse con el [[Producto cartesiano|producto cartesiano]] de $p$ veces ([[Grafo simple completo|grafo completo de orden 2]]) $K_2$ 
 
 ```tikz
 \usepackage{amssymb}

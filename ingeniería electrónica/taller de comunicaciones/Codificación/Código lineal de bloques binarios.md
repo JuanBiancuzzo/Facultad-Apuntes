@@ -54,7 +54,7 @@ Se define la distancia mínimo de un código de línea como $$ \begin{align}
     d_{min} &= \min_{u \ne v} d(u,~ v) \\
     &= \min_{u \ne v} W\underbrace{\left(u \oplus v \right)}_{T \in S} \\
     &= \min_{u \ne v} W\left(T \right) \\
-\end{align} $$ donde $W(\cdot)$ es la [[Función peso de Hamming|función peso de Hamming]] ^distancia-minima
+\end{align} $$ donde $W(\cdot)$ es la [[investigación/machine Learning/Distancia Hamming|función peso de Hamming]] ^distancia-minima
 
 Con esta distancia se puede definir la capacidad de detección y corrección de errores 
 * Permite corregir $\alpha \le t = \left\lfloor \frac{d_{min} - 1}{2} \right\rfloor$
