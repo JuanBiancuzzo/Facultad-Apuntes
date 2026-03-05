@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Es similar al [[Multímetro True Root Mean Square|multímetro True RMS]], cambia en que puede calcular directamente el valor de la [[Tensión eficaz|tensión eficaz]] total ($V_{eficaz}$).
+Es similar al [[ingeniería electrónica/intro/Multimetro/Multímetro True Root Mean Square|multímetro True RMS]], cambia en que puede calcular directamente el valor de la [[Tensión eficaz|tensión eficaz]] total ($V_{eficaz}$).
 
 ## Modos
 ---

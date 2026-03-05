@@ -1,12 +1,12 @@
 ---
 tags:
   - facultad/resumen
-  - carrera/ingeniería-electrónica/taller-de-comunicaciones/Codificación
-nombreResumen: Codificación
-capitulo: 4
+  - carrera/ingeniería-electrónica/taller-de-control/tema
+nombreResumen: Tema
+capitulo: 1
 referencias: []
 infoTemaMateria:
-  materia: Taller de Comunicaciones Digitales
+  materia: Taller de Automatización y Control
   carrera: Ingeniería electrónica
 ---
 # Índice

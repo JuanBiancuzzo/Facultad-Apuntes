@@ -1,12 +1,12 @@
 ---
 tags:
   - facultad/resumen
-  - carrera/ingeniería-electrónica/taller-de-comunicaciones/Canal-real
-nombreResumen: Canal real
-capitulo: 4
+  - carrera/ingeniería-electrónica/robótica-móvil/tema
+nombreResumen: Tema
+capitulo: 1
 referencias: []
 infoTemaMateria:
-  materia: Taller de Comunicaciones Digitales
+  materia: Robótica móvil
   carrera: Ingeniería electrónica
 ---
 # Índice

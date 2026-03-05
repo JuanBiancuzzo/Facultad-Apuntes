@@ -1,12 +1,12 @@
 ---
 tags:
   - facultad/resumen
-  - carrera/ingeniería-electrónica/taller-de-comunicaciones/Codificación
-nombreResumen: Codificación
-capitulo: 4
+  - carrera/ingeniería-electrónica/quimica/modelo-atómico
+nombreResumen: Modelo atómico
+capitulo: 1
 referencias: []
 infoTemaMateria:
-  materia: Taller de Comunicaciones Digitales
+  materia: Química y electroquímica
   carrera: Ingeniería electrónica
 ---
 # Índice

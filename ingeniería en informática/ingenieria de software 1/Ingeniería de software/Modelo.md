@@ -3,6 +3,7 @@ dia: 2023-08-27
 tags:
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - carrera/ingeniería-en-informática/ingenieria-software-1/Ingeniería-de-software
+  - carrera/ingeniería-electrónica/quimica/modelo-atómico
   - nota/facultad
 referencias:
   - "871"
@@ -16,6 +17,10 @@ vinculoFacultad:
     capitulo: 1
     materia: Análisis de la información
     carrera: Ingeniería en informática
+  - tema: Modelo atómico
+    capitulo: 1
+    materia: Química y electroquímica
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

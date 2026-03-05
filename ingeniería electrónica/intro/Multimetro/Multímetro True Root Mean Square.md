@@ -14,7 +14,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Es un tipo de [[Multímetro|multímetro]] que utiliza la medida True RMS (**Verdadero Valor Eficaz**) que consta de fórmulas matemáticas más complejas que permiten obtener un valor más aproximado a la realidad que otros multímetros.
+Es un tipo de [[ingeniería electrónica/intro/Multimetro/Multímetro|multímetro]] que utiliza la medida True RMS (**Verdadero Valor Eficaz**) que consta de fórmulas matemáticas más complejas que permiten obtener un valor más aproximado a la realidad que otros multímetros.
 
 ## Modos
 ---

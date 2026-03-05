@@ -1,13 +1,13 @@
 ---
 tags:
   - facultad/resumen
-  - carrera/ingeniería-electrónica/taller-de-comunicaciones/Codificación
-nombreResumen: Codificación
-capitulo: 4
+  - carrera/ingeniería-en-informática/taller-seguridad
+nombreResumen: Tema
+capitulo: 1
 referencias: []
 infoTemaMateria:
-  materia: Taller de Comunicaciones Digitales
-  carrera: Ingeniería electrónica
+  materia: Taller de Seguridad Informática
+  carrera: Ingeniería en informática
 ---
 # Índice
 ---
