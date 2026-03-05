@@ -405,6 +405,1249 @@ Supongamos que al recibir, obtuvimos el mensaje $$ z = \begin{array}{c:c} 101 ~ 
 
 En amarillo tenemos la distancia del vector recibido y el vector que se obtiene en tendría para cada rama del ciclo 
 
+Este algoritmo logra conseguir el patrón más probable para la secuencia de información recibida. Para esto se avanza iterativamente a lo largo del tiempo, acumulando el peso de las aristas, y en el caso de tener dos aristas incidiendo en el mismo nodo, se tomará el camino con menos peso y descartará los caminos con mayor peso
+
+Empezando por los primeros dos periodos que como no hay más de una arista yendo a un solo nodo, no tiene nada interesante
+
+```tikz
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usetikzlibrary{matrix}
+
+\begin{document} 
+\definecolor{rojo}{RGB}{255, 0, 127} % #FF0080
+\definecolor{azul}{RGB}{0, 127, 204} % #007ecc
+\definecolor{amarillo}{RGB}{249, 207, 50} 
+   
+\begin{tikzpicture}[
+    scale=1.1, transform shape, thick, 
+    shorten <= 0.5em, shorten >= 0.5em,
+    every left delimiter/.style={xshift=0.15cm, yshift=-0.1cm},
+    every right delimiter/.style={xshift=-0.15cm, yshift=-0.1cm}
+]
+    \def\labels {{ "000", "001", "010", "011", "100", "101", "110", "111" }}
+    \def\swaps {{ {{1,2}} }}
+    \def\bitsRecibidos {{ 
+        {{1.1,-1.05,0.9}}, {{0.85,1.05,-0.9}}, 
+        {{0.95,-1.1,0.85}}, {{1.05,-0.85,0.9}}, 
+        {{1.1,0.95,0.9}}, {{-1.05,0.9,1.1}}, 
+        {{0.85,0.95,1.05}} 
+    }}
+    \def\pesos {{ 5.59, 0.34, 5.63, 2.8 }}
+    \tikzmath {
+        \sepX = 2; \sepY = 2; \radio = 0.075;
+        \bitsEnviados = 5; \bitsRetorno = 2;
+        \puntos = \bitsEnviados + \bitsRetorno; \n = 3; \N = 2^(\n - 1);
+        \scale = 0.7; \pos = 0.25; \tick = 0.2;
+        \puntoCorte = 1; \sigPuntoCorte = int(\puntoCorte + 1);
+        
+        function siguienteCero(\i) {
+            return floor(\i / 2);
+        };
+        
+        function siguienteUno(\i) {
+            return int(2 + floor(\i / 2));
+        };
+        
+        function distancia(\x1, \y1, \z1, \x2, \y2, \z2) {
+            return veclen(\x1 - \x2, veclen(\y1 - \y2, \z1 - \z2));
+        };
+        
+        function index(\bit, \estado) {
+            let \bitUno = mod(floor(\estado / 2), 2);
+            let \bitDos = mod(\estado, 2);
+            
+            return int(
+                4 * mod(\bit * 1 + \bitUno * 1 + \bitDos * 1, 2)
+                + 2 * mod(\bit * 0 + \bitUno * 1 + \bitDos * 1, 2)
+                + 1 * mod(\bit * 1 + \bitUno * 0 + \bitDos * 1, 2));
+        };
+    }
+
+    \foreach \i [parse=true] in {0, ..., \N - 1} {
+        \coordinate (q_\i) at (0, {(\N - 1 - \i) * \sepY});
+    }
+    \coordinate (tiempo) at (0, {-0.5 * \sepY});
+    \coordinate (bits) at ({0.5 * \sepX}, {(\N - 0.8) * \sepY});
+
+    \foreach \currentSwap in \swaps {
+        \tikzmath { \swapI = \currentSwap[0]; \swapJ = \currentSwap[1]; }
+        \path (q_\swapI) node (temp) {};
+        \coordinate (q_\swapI) at (q_\swapJ);
+        \coordinate (q_\swapJ) at (temp.center);
+    }
+    
+    \begin{scope}[shorten <= 0, shorten >= 0]
+    \draw[->] (tiempo) -- ++({(\sigPuntoCorte + 0.5) * \sepX}, 0)
+        node[pos=1.01, above=2pt, scale=\scale] {$t$};
+    \foreach \i [parse=true] in {0, ..., \puntos} {
+        \draw ($ (tiempo) + ({\i * \sepX}, {\tick / 2}) $) 
+            -- ++(0, -\tick) node[below=2pt, scale=\scale] {$\i$};
+            
+        \ifnum \sigPuntoCorte=\i
+            \breakforeach
+        \fi
+    }
+    \end{scope}
+    
+    \foreach \label [count=\rama from 0] in {$00$, $01$, $10$, $11$} {
+        \path (q_\rama) node[left=0.5cm] {\label};
+        \foreach \i in {0, 1, ..., \puntos} {
+            \fill ($ (q_\rama) + ({\i * \sepX}, 0) $) 
+                circle (\radio);
+                
+            \ifnum \sigPuntoCorte=\i
+                \breakforeach
+            \fi
+        }
+    }
+
+    \pgfkeys{/pgf/number format/.cd,fixed,precision=2}
+    \foreach \desde/\hasta [count=\i from 0] in {0/0, 2/1, 1/2, 2/2} {
+    \tikzmath {
+        \indexCero = index(0, \i);
+        \xCero = int(2 * mod(floor(\indexCero / 4), 2) - 1);
+        \yCero = int(2 * mod(floor(\indexCero / 2), 2) - 1);
+        \zCero = int(2 * mod(floor(\indexCero / 1), 2) - 1);
+        
+        \indexUno = index(1, \i);
+        \xUno = int(2 * mod(floor(\indexUno / 4), 2) - 1);
+        \yUno = int(2 * mod(floor(\indexUno / 2), 2) - 1);
+        \zUno = int(2 * mod(floor(\indexUno / 1), 2) - 1);
+    }
+        
+    \foreach \nivel [parse=true] in {\desde, ..., \puntos - 1} {
+        \tikzmath {
+            \xRx = \bitsRecibidos[\nivel][0];
+            \yRx = \bitsRecibidos[\nivel][1];
+            \zRx = \bitsRecibidos[\nivel][2];
+            
+            \distCero = distancia(\xCero,\yCero,\zCero, \xRx,\yRx,\zRx);
+            \labelCero = \labels[\indexCero];
+            \distUno = distancia(\xUno,\yUno,\zUno, \xRx,\yRx,\zRx);
+            \labelUno = \labels[\indexUno];
+            
+            \hastaCero = siguienteCero(\i);
+            \hastaUno = siguienteUno(\i);
+            
+            \ceroPos = (\i == \hastaCero) ? 0.6 : \pos;
+            \unoPos = (\i == \hastaUno) ? 0.6 : 1 - \pos;
+            \distCeroPos = (\i == \hastaCero) ? \pos : 1 - \pos;
+            \distUnoPos = \pos;
+
+            \nivelMaximo = \nivel < (\puntos - \hasta) ? 0 : 1;
+            \corteNivel = \nivel <= \puntoCorte ? 0 : 1;
+            \condicionCorte = int(\nivelMaximo + \corteNivel);
+        }
+        \ifnum \condicionCorte = 0 
+        
+            \ifnum \nivel < \bitsEnviados
+            \draw[rojo, ->] ($ (q_\i) + ({\nivel * \sepX}, 0)$) 
+                -- ($ (q_\hastaUno) + ({(\nivel + 1) * \sepX}, 0)$)
+                    node[pos=\unoPos, fill=white, scale=\scale] 
+                        {$\labelUno$}
+                    node[pos=\distUnoPos, fill=white, scale=\scale, text=amarillo] {\pgfmathprintnumber{\distUno}};
+            \fi
+            
+            \draw[azul, ->] ($ (q_\i) + ({\nivel * \sepX}, 0)$) 
+                -- ($ (q_\hastaCero) + ({(\nivel + 1) * \sepX}, 0)$)
+                    node[pos=\ceroPos, fill=white, scale=\scale]
+                        {$\labelCero$}
+                    node[pos=\distCeroPos, fill=white, scale=\scale, text=amarillo] {\pgfmathprintnumber{\distCero}};
+            
+        \else
+            \tikzmath {
+                \peso = \pesos[\i];
+            }
+            \path ($ (q_\i) + ({\nivel * \sepX}, 0)$) 
+                node[right=2pt, scale=\scale, text=amarillo] 
+                    {\pgfmathprintnumber{\peso}};
+            \breakforeach
+        \fi
+    }
+    }
+\end{tikzpicture}
+\end{document}
+```
+
+Actualmente no tenemos forma de descartar ningún camino, por lo que avanzaremos todos por igual, y ahora sí tenemos puntos de conflicto
+
+```tikz
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usetikzlibrary{matrix}
+
+\begin{document} 
+\definecolor{rojo}{RGB}{255, 0, 127} % #FF0080
+\definecolor{azul}{RGB}{0, 127, 204} % #007ecc
+\definecolor{amarillo}{RGB}{249, 207, 50} 
+   
+\begin{tikzpicture}[
+    scale=1.1, transform shape, thick, 
+    shorten <= 0.5em, shorten >= 0.5em,
+    every left delimiter/.style={xshift=0.15cm, yshift=-0.1cm},
+    every right delimiter/.style={xshift=-0.15cm, yshift=-0.1cm}
+]
+    \def\labels {{ "000", "001", "010", "011", "100", "101", "110", "111" }}
+    \def\swaps {{ {{1,2}} }}
+    \def\bitsRecibidos {{ 
+        {{1.1,-1.05,0.9}}, {{0.85,1.05,-0.9}}, 
+        {{0.95,-1.1,0.85}}, {{1.05,-0.85,0.9}}, 
+        {{1.1,0.95,0.9}}, {{-1.05,0.9,1.1}}, 
+        {{0.85,0.95,1.05}} 
+    }}
+    \def\pesos {{ 
+        {{ 8.28, 2.45 }}, {{ 5.78, 3.75 }}, 
+        {{ 8.43, 4.76 }}, {{ 8.5, 4.65 }} 
+    }}
+    \tikzmath {
+        \sepX = 2; \sepY = 2; \radio = 0.075;
+        \bitsEnviados = 5; \bitsRetorno = 2;
+        \puntos = \bitsEnviados + \bitsRetorno; \n = 3; \N = 2^(\n - 1);
+        \scale = 0.7; \pos = 0.25; \tick = 0.2;
+        \puntoCorte = 2; \sigPuntoCorte = int(\puntoCorte + 1);
+        
+        function siguienteCero(\i) {
+            return floor(\i / 2);
+        };
+        
+        function siguienteUno(\i) {
+            return int(2 + floor(\i / 2));
+        };
+        
+        function distancia(\x1, \y1, \z1, \x2, \y2, \z2) {
+            return veclen(\x1 - \x2, veclen(\y1 - \y2, \z1 - \z2));
+        };
+        
+        function index(\bit, \estado) {
+            let \bitUno = mod(floor(\estado / 2), 2);
+            let \bitDos = mod(\estado, 2);
+            
+            return int(
+                4 * mod(\bit * 1 + \bitUno * 1 + \bitDos * 1, 2)
+                + 2 * mod(\bit * 0 + \bitUno * 1 + \bitDos * 1, 2)
+                + 1 * mod(\bit * 1 + \bitUno * 0 + \bitDos * 1, 2));
+        };
+    }
+
+    \foreach \i [parse=true] in {0, ..., \N - 1} {
+        \coordinate (q_\i) at (0, {(\N - 1 - \i) * \sepY});
+    }
+    \coordinate (tiempo) at (0, {-0.5 * \sepY});
+    \coordinate (bits) at ({0.5 * \sepX}, {(\N - 0.8) * \sepY});
+
+    \foreach \currentSwap in \swaps {
+        \tikzmath { \swapI = \currentSwap[0]; \swapJ = \currentSwap[1]; }
+        \path (q_\swapI) node (temp) {};
+        \coordinate (q_\swapI) at (q_\swapJ);
+        \coordinate (q_\swapJ) at (temp.center);
+    }
+    
+    \begin{scope}[shorten <= 0, shorten >= 0]
+    \draw[->] (tiempo) -- ++({(\sigPuntoCorte + 0.5) * \sepX}, 0)
+        node[pos=1.01, above=2pt, scale=\scale] {$t$};
+    \foreach \i [parse=true] in {0, ..., \puntos} {
+        \draw ($ (tiempo) + ({\i * \sepX}, {\tick / 2}) $) 
+            -- ++(0, -\tick) node[below=2pt, scale=\scale] {$\i$};
+            
+        \ifnum \sigPuntoCorte=\i
+            \breakforeach
+        \fi
+    }
+    \end{scope}
+    
+    \foreach \label [count=\rama from 0] in {$00$, $01$, $10$, $11$} {
+        \path (q_\rama) node[left=0.5cm] {\label};
+        \foreach \i in {0, 1, ..., \puntos} {
+            \fill ($ (q_\rama) + ({\i * \sepX}, 0) $) 
+                circle (\radio);
+                
+            \ifnum \sigPuntoCorte=\i
+                \breakforeach
+            \fi
+        }
+    }
+
+    \pgfkeys{/pgf/number format/.cd,fixed,precision=2}
+    \foreach \desde/\hasta [count=\i from 0] in {0/0, 2/1, 1/2, 2/2} {
+    \tikzmath {
+        \indexCero = index(0, \i);
+        \xCero = int(2 * mod(floor(\indexCero / 4), 2) - 1);
+        \yCero = int(2 * mod(floor(\indexCero / 2), 2) - 1);
+        \zCero = int(2 * mod(floor(\indexCero / 1), 2) - 1);
+        
+        \indexUno = index(1, \i);
+        \xUno = int(2 * mod(floor(\indexUno / 4), 2) - 1);
+        \yUno = int(2 * mod(floor(\indexUno / 2), 2) - 1);
+        \zUno = int(2 * mod(floor(\indexUno / 1), 2) - 1);
+    }
+        
+    \foreach \nivel [parse=true] in {\desde, ..., \puntos - 1} {
+        \tikzmath {
+            \xRx = \bitsRecibidos[\nivel][0];
+            \yRx = \bitsRecibidos[\nivel][1];
+            \zRx = \bitsRecibidos[\nivel][2];
+            
+            \distCero = distancia(\xCero,\yCero,\zCero, \xRx,\yRx,\zRx);
+            \labelCero = \labels[\indexCero];
+            \distUno = distancia(\xUno,\yUno,\zUno, \xRx,\yRx,\zRx);
+            \labelUno = \labels[\indexUno];
+            
+            \hastaCero = siguienteCero(\i);
+            \hastaUno = siguienteUno(\i);
+            
+            \ceroPos = (\i == \hastaCero) ? 0.6 : \pos;
+            \unoPos = (\i == \hastaUno) ? 0.6 : 1 - \pos;
+            \distCeroPos = (\i == \hastaCero) ? \pos : 1 - \pos;
+            \distUnoPos = \pos;
+
+            \nivelMaximo = \nivel < (\puntos - \hasta) ? 0 : 1;
+            \corteNivel = \nivel <= \puntoCorte ? 0 : 1;
+            \condicionCorte = int(\nivelMaximo + \corteNivel);
+        }
+        \ifnum \condicionCorte = 0 
+        
+            \ifnum \nivel < \bitsEnviados
+            \draw[rojo, ->] ($ (q_\i) + ({\nivel * \sepX}, 0)$) 
+                -- ($ (q_\hastaUno) + ({(\nivel + 1) * \sepX}, 0)$)
+                    node[pos=\unoPos, fill=white, scale=\scale] 
+                        {$\labelUno$}
+                    node[pos=\distUnoPos, fill=white, scale=\scale, text=amarillo] {\pgfmathprintnumber{\distUno}};
+            \fi
+            
+            \draw[azul, ->] ($ (q_\i) + ({\nivel * \sepX}, 0)$) 
+                -- ($ (q_\hastaCero) + ({(\nivel + 1) * \sepX}, 0)$)
+                    node[pos=\ceroPos, fill=white, scale=\scale]
+                        {$\labelCero$}
+                    node[pos=\distCeroPos, fill=white, scale=\scale, text=amarillo] {\pgfmathprintnumber{\distCero}};
+            
+        \else
+            \tikzmath {
+                \pesoArriba = \pesos[\i][0];
+                \pesoAbajo = \pesos[\i][1];
+            }
+            \path ($ (q_\i) + ({\nivel * \sepX}, 0)$) 
+                node[above right=2pt, scale=\scale, text=amarillo] 
+                    {\pgfmathprintnumber{\pesoArriba}}
+                node[below right=2pt, scale=\scale, text=amarillo] 
+                    {\pgfmathprintnumber{\pesoAbajo}};
+            \breakforeach
+        \fi
+    }
+    }
+\end{tikzpicture}
+\end{document}
+```
+
+Con estos, vamos a descartar los caminos que lleguen con un peso mayor a este nodo, ya que no van a ser más probables que los caminos con un menor peso. Esto produce de forma recursiva, donde si no hay caminos salientes de un nodo, el camino que llegue a este, es menos probable y por lo tanto se puede descartar
+
+En este caso, vemos como los caminos dado por la secuencia
+* $000$ cuyo peso es $8.28$
+* $001$  cuyo peso es $8.43$
+* $010$ cuyo peso es $5.78$
+* $011$ cuyo peso es $8.5$
+Todos son mayores que los otros caminos, por lo tanto se descartan y en el proceso se descarta los caminos $00$ y $01$, de forma recursiva, se descarta el camino $0$
+
+Partiendo de estos descartes, se avanza un periodo más
+
+```tikz
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usetikzlibrary{matrix}
+
+\begin{document} 
+\definecolor{rojo}{RGB}{255, 0, 127} % #FF0080
+\definecolor{azul}{RGB}{0, 127, 204} % #007ecc
+\definecolor{amarillo}{RGB}{249, 207, 50} 
+   
+\begin{tikzpicture}[
+    scale=1.1, transform shape, thick, 
+    shorten <= 0.5em, shorten >= 0.5em,
+    every left delimiter/.style={xshift=0.15cm, yshift=-0.1cm},
+    every right delimiter/.style={xshift=-0.15cm, yshift=-0.1cm}
+]
+    \def\labels {{ "000", "001", "010", "011", "100", "101", "110", "111" }}
+    \def\swaps {{ {{1,2}} }}
+    \def\bitsRecibidos {{ 
+        {{1.1,-1.05,0.9}}, {{0.85,1.05,-0.9}}, 
+        {{0.95,-1.1,0.85}}, {{1.05,-0.85,0.9}}, 
+        {{1.1,0.95,0.9}}, {{-1.05,0.9,1.1}}, 
+        {{0.85,0.95,1.05}} 
+    }}
+    \def\caminoInicial {{ 0, 1 }} % estado, bit
+    \def\caminos {{ 
+        {{ 2, 0, 1, 0 }}, 
+        {{ 2, 0, 1, 1 }}, 
+        {{ 2, 1, 3, 0 }}, 
+        {{ 2, 1, 3, 1 }}
+    }}
+    \def\pesos {{ % peso anterior, peso siguiente 1, peso siguiente 2
+        {{ 2.45, 5.25, 6.62 }}, {{ 4.76, 6.4, 6.71 }},
+        {{ 3.75, 2.64, 8.11 }}, {{ 4.65, 6.61, 7.37 }} 
+    }}
+    \tikzmath {
+        \sepX = 2; \sepY = 2; \radio = 0.075;
+        \n = 3; \N = 2^(\n - 1);
+        \scale = 0.7; \pos = 0.25; \tick = 0.2;
+        \puntoCorte = 3; 
+        
+        function siguienteCero(\i) {
+            return floor(\i / 2);
+        };
+        
+        function siguienteUno(\i) {
+            return int(2 + floor(\i / 2));
+        };
+        
+        function distancia(\x1, \y1, \z1, \x2, \y2, \z2) {
+            return veclen(\x1 - \x2, veclen(\y1 - \y2, \z1 - \z2));
+        };
+        
+        function index(\bit, \estado) {
+            let \bitUno = mod(floor(\estado / 2), 2);
+            let \bitDos = mod(\estado, 2);
+            
+            return int(
+                4 * mod(\bit * 1 + \bitUno * 1 + \bitDos * 1, 2)
+                + 2 * mod(\bit * 0 + \bitUno * 1 + \bitDos * 1, 2)
+                + 1 * mod(\bit * 1 + \bitUno * 0 + \bitDos * 1, 2));
+        };
+    }
+
+    \foreach \i [parse=true] in {0, ..., \N - 1} {
+        \coordinate (q_\i) at (0, {(\N - 1 - \i) * \sepY});
+    }
+    \coordinate (tiempo) at (0, {-0.5 * \sepY});
+    \coordinate (bits) at ({0.5 * \sepX}, {(\N - 0.8) * \sepY});
+
+    \foreach \currentSwap in \swaps {
+        \tikzmath { \swapI = \currentSwap[0]; \swapJ = \currentSwap[1]; }
+        \path (q_\swapI) node (temp) {};
+        \coordinate (q_\swapI) at (q_\swapJ);
+        \coordinate (q_\swapJ) at (temp.center);
+    }
+    
+    \begin{scope}[shorten <= 0, shorten >= 0]
+    \draw[->] (tiempo) -- ++({(\puntoCorte + 1.5) * \sepX}, 0)
+        node[pos=1.01, above=2pt, scale=\scale] {$t$};
+    \foreach \i [parse=true] in {0, ..., \puntoCorte + 1} {
+        \draw ($ (tiempo) + ({\i * \sepX}, {\tick / 2}) $) 
+            -- ++(0, -\tick) node[below=2pt, scale=\scale] {$\i$};
+    }
+    \end{scope}
+    
+    \foreach \label [count=\rama from 0] in {$00$, $01$, $10$, $11$} {
+        \path (q_\rama) node[left=0.5cm] {\label};
+        \foreach \i [parse=true] in {0, 1, ..., \puntoCorte + 1} {
+            \fill ($ (q_\rama) + ({\i * \sepX}, 0) $) circle (\radio);
+        }
+    }
+    
+    \tikzmath { \largoCaminoInicial = floor(dim(\caminoInicial) / 2); }
+    \foreach \nivel [parse=true] in {0, ..., \largoCaminoInicial - 1} {
+        \tikzmath {
+            \estado = \caminoInicial[int(2 * \nivel + 0)];
+            \bit = \caminoInicial[int(2 * \nivel + 1)];
+            
+            \indice = index(\bit, \estado);
+            \label = \labels[\indice];
+            \hasta = int(\bit) == 0 
+                ? siguienteCero(\estado) : siguienteUno(\estado);
+            \color = int(\bit) == 0 ? "azul" : "rojo";
+        }
+        
+        \draw[->, \color] ($ (q_\estado) + ({\nivel * \sepX}, 0)$) 
+            -- ($ (q_\hasta) + ({(\nivel + 1) * \sepX}, 0)$)
+                node[pos=0.5, fill=white, scale=\scale] {$\label$};
+    }
+    
+    \tikzmath { \cantCaminos = dim(\caminos); }
+    \foreach \i [parse=true] in {0, ..., \cantCaminos - 1} {
+        \tikzmath { \largoCamino = floor(dim(\caminos[\i]) / 2) - 1; }
+        \foreach \nivelAgregado [parse=true] in {0, ..., \largoCamino} {
+            \tikzmath {
+                \nivel = \largoCaminoInicial + \nivelAgregado;
+                \estado = \caminos[\i][int(2 * \nivelAgregado + 0)];
+                \bit = \caminos[\i][int(2 * \nivelAgregado + 1)];
+                
+                \indice = index(\bit, \estado);
+                \label = \labels[\indice];
+                \hasta = int(\bit) == 0 
+                    ? siguienteCero(\estado) : siguienteUno(\estado);
+                \color = int(\bit) == 0 ? "azul" : "rojo";
+            }
+            
+            \draw[->, \color] ($ (q_\estado) + ({\nivel * \sepX}, 0)$) 
+                -- ($ (q_\hasta) + ({(\nivel + 1) * \sepX}, 0)$)
+                    node[pos=0.5, fill=white, scale=\scale] {$\label$};
+        }
+    }
+    
+    
+    \pgfkeys{/pgf/number format/.cd,fixed,precision=2}
+    \foreach \estado in {0, 1, 2, 3} {
+        \tikzmath {
+            \indexCero = index(0, \estado);
+            \xCero = int(2 * mod(floor(\indexCero / 4), 2) - 1);
+            \yCero = int(2 * mod(floor(\indexCero / 2), 2) - 1);
+            \zCero = int(2 * mod(floor(\indexCero / 1), 2) - 1);
+            
+            \indexUno = index(1, \estado);
+            \xUno = int(2 * mod(floor(\indexUno / 4), 2) - 1);
+            \yUno = int(2 * mod(floor(\indexUno / 2), 2) - 1);
+            \zUno = int(2 * mod(floor(\indexUno / 1), 2) - 1);
+            
+            \nivel = \puntoCorte;
+        
+            \xRx = \bitsRecibidos[\nivel][0];
+            \yRx = \bitsRecibidos[\nivel][1];
+            \zRx = \bitsRecibidos[\nivel][2];
+            
+            \distCero = distancia(\xCero,\yCero,\zCero, \xRx,\yRx,\zRx);
+            \labelCero = \labels[\indexCero];
+            \distUno = distancia(\xUno,\yUno,\zUno, \xRx,\yRx,\zRx);
+            \labelUno = \labels[\indexUno];
+            
+            \hastaCero = siguienteCero(\estado);
+            \hastaUno = siguienteUno(\estado);
+            
+            \ceroPos = (\estado == \hastaCero) ? 0.6 : \pos;
+            \unoPos = (\estado == \hastaUno) ? 0.6 : 1 - \pos;
+            \distCeroPos = (\estado == \hastaCero) ? \pos : 1 - \pos;
+            \distUnoPos = \pos;
+
+            \pesoPrevio = \pesos[\estado][0];
+            \pesoArriba = \pesos[\estado][1];
+            \pesoAbajo = \pesos[\estado][2];
+        }
+        
+        \draw[rojo, ->] ($ (q_\estado) + ({\nivel * \sepX}, 0)$) 
+            -- ($ (q_\hastaUno) + ({(\nivel + 1) * \sepX}, 0)$)
+                node[pos=\unoPos, fill=white, scale=\scale] 
+                    {$\labelUno$}
+                node[pos=\distUnoPos, fill=white, scale=\scale, text=amarillo] {\pgfmathprintnumber{\distUno}};
+        
+        \draw[azul, ->] ($ (q_\estado) + ({\nivel * \sepX}, 0)$) 
+            -- ($ (q_\hastaCero) + ({(\nivel + 1) * \sepX}, 0)$)
+                node[pos=\ceroPos, fill=white, scale=\scale]
+                    {$\labelCero$}
+                node[pos=\distCeroPos, fill=white, scale=\scale, text=amarillo] {\pgfmathprintnumber{\distCero}};
+            
+            
+        \path ($ (q_\estado) + ({\nivel * \sepX}, 0)$) 
+            node[left=2pt, fill=white, scale=\scale, text=amarillo] 
+                {\pgfmathprintnumber{\pesoPrevio}};
+        \path ($ (q_\estado) + ({(\nivel + 1) * \sepX}, 0)$) 
+            node[above right=2pt, scale=\scale, text=amarillo] 
+                {\pgfmathprintnumber{\pesoArriba}}
+            node[below right=2pt, scale=\scale, text=amarillo] 
+                {\pgfmathprintnumber{\pesoAbajo}};
+    }
+    
+\end{tikzpicture}
+\end{document}
+```
+
+De nuevo, necesitamos descartar los caminos con un mayor peso, que son
+* $1100$
+* $1101$
+* $1110$
+* $1111$
+Ahora se descartan los caminos $110$ y $111$, de forma recursiva, se descarta el camino $11$
+
+```tikz
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usetikzlibrary{matrix}
+
+\begin{document} 
+\definecolor{rojo}{RGB}{255, 0, 127} % #FF0080
+\definecolor{azul}{RGB}{0, 127, 204} % #007ecc
+\definecolor{amarillo}{RGB}{249, 207, 50} 
+   
+\begin{tikzpicture}[
+    scale=1.1, transform shape, thick, 
+    shorten <= 0.5em, shorten >= 0.5em,
+    every left delimiter/.style={xshift=0.15cm, yshift=-0.1cm},
+    every right delimiter/.style={xshift=-0.15cm, yshift=-0.1cm}
+]
+    \def\labels {{ "000", "001", "010", "011", "100", "101", "110", "111" }}
+    \def\swaps {{ {{1,2}} }}
+    \def\bitsRecibidos {{ 
+        {{1.1,-1.05,0.9}}, {{0.85,1.05,-0.9}}, 
+        {{0.95,-1.1,0.85}}, {{1.05,-0.85,0.9}}, 
+        {{1.1,0.95,0.9}}, {{-1.05,0.9,1.1}}, 
+        {{0.85,0.95,1.05}} 
+    }}
+    \def\caminoInicial {{ 0, 1, 2, 0 }} % estado, bit
+    \def\caminos {{ 
+        {{ 1, 0, 0, 0 }}, 
+        {{ 1, 0, 0, 1 }}, 
+        {{ 1, 1, 2, 0 }}, 
+        {{ 1, 1, 2, 1 }} 
+    }}
+    \def\pesos {{ % peso anterior, peso siguiente 1, peso siguiente 2
+        {{ 5.25, 8.69, 6.55 }}, {{ 6.4, 4.51, 9.48 }},
+        {{ 2.64, 7.21, 9.23 }}, {{ 6.61, 4.74, 9.33 }} 
+    }}
+    \tikzmath {
+        \sepX = 2; \sepY = 2; \radio = 0.075;
+        \n = 3; \N = 2^(\n - 1);
+        \scale = 0.7; \pos = 0.25; \tick = 0.2;
+        \puntoCorte = 4; 
+        
+        function siguienteCero(\i) {
+            return floor(\i / 2);
+        };
+        
+        function siguienteUno(\i) {
+            return int(2 + floor(\i / 2));
+        };
+        
+        function distancia(\x1, \y1, \z1, \x2, \y2, \z2) {
+            return veclen(\x1 - \x2, veclen(\y1 - \y2, \z1 - \z2));
+        };
+        
+        function index(\bit, \estado) {
+            let \bitUno = mod(floor(\estado / 2), 2);
+            let \bitDos = mod(\estado, 2);
+            
+            return int(
+                4 * mod(\bit * 1 + \bitUno * 1 + \bitDos * 1, 2)
+                + 2 * mod(\bit * 0 + \bitUno * 1 + \bitDos * 1, 2)
+                + 1 * mod(\bit * 1 + \bitUno * 0 + \bitDos * 1, 2));
+        };
+    }
+
+    \foreach \i [parse=true] in {0, ..., \N - 1} {
+        \coordinate (q_\i) at (0, {(\N - 1 - \i) * \sepY});
+    }
+    \coordinate (tiempo) at (0, {-0.5 * \sepY});
+    \coordinate (bits) at ({0.5 * \sepX}, {(\N - 0.8) * \sepY});
+
+    \foreach \currentSwap in \swaps {
+        \tikzmath { \swapI = \currentSwap[0]; \swapJ = \currentSwap[1]; }
+        \path (q_\swapI) node (temp) {};
+        \coordinate (q_\swapI) at (q_\swapJ);
+        \coordinate (q_\swapJ) at (temp.center);
+    }
+    
+    \begin{scope}[shorten <= 0, shorten >= 0]
+    \draw[->] (tiempo) -- ++({(\puntoCorte + 1.5) * \sepX}, 0)
+        node[pos=1.01, above=2pt, scale=\scale] {$t$};
+    \foreach \i [parse=true] in {0, ..., \puntoCorte + 1} {
+        \draw ($ (tiempo) + ({\i * \sepX}, {\tick / 2}) $) 
+            -- ++(0, -\tick) node[below=2pt, scale=\scale] {$\i$};
+    }
+    \end{scope}
+    
+    \foreach \label [count=\rama from 0] in {$00$, $01$, $10$, $11$} {
+        \path (q_\rama) node[left=0.5cm] {\label};
+        \foreach \i [parse=true] in {0, 1, ..., \puntoCorte + 1} {
+            \fill ($ (q_\rama) + ({\i * \sepX}, 0) $) circle (\radio);
+        }
+    }
+    
+    \tikzmath { \largoCaminoInicial = floor(dim(\caminoInicial) / 2); }
+    \foreach \nivel [parse=true] in {0, ..., \largoCaminoInicial - 1} {
+        \tikzmath {
+            \estado = \caminoInicial[int(2 * \nivel + 0)];
+            \bit = \caminoInicial[int(2 * \nivel + 1)];
+            
+            \indice = index(\bit, \estado);
+            \label = \labels[\indice];
+            \hasta = int(\bit) == 0 
+                ? siguienteCero(\estado) : siguienteUno(\estado);
+            \color = int(\bit) == 0 ? "azul" : "rojo";
+        }
+        
+        \draw[->, \color] ($ (q_\estado) + ({\nivel * \sepX}, 0)$) 
+            -- ($ (q_\hasta) + ({(\nivel + 1) * \sepX}, 0)$)
+                node[pos=0.5, fill=white, scale=\scale] {$\label$};
+    }
+    
+    \tikzmath { \cantCaminos = dim(\caminos); }
+    \foreach \i [parse=true] in {0, ..., \cantCaminos - 1} {
+        \tikzmath { \largoCamino = floor(dim(\caminos[\i]) / 2) - 1; }
+        \foreach \nivelAgregado [parse=true] in {0, ..., \largoCamino} {
+            \tikzmath {
+                \nivel = \largoCaminoInicial + \nivelAgregado;
+                \estado = \caminos[\i][int(2 * \nivelAgregado + 0)];
+                \bit = \caminos[\i][int(2 * \nivelAgregado + 1)];
+                
+                \indice = index(\bit, \estado);
+                \label = \labels[\indice];
+                \hasta = int(\bit) == 0 
+                    ? siguienteCero(\estado) : siguienteUno(\estado);
+                \color = int(\bit) == 0 ? "azul" : "rojo";
+            }
+            
+            \draw[->, \color] ($ (q_\estado) + ({\nivel * \sepX}, 0)$) 
+                -- ($ (q_\hasta) + ({(\nivel + 1) * \sepX}, 0)$)
+                    node[pos=0.5, fill=white, scale=\scale] {$\label$};
+        }
+    }
+    
+    
+    \pgfkeys{/pgf/number format/.cd,fixed,precision=2}
+    \foreach \estado in {0, 1, 2, 3} {
+        \tikzmath {
+            \indexCero = index(0, \estado);
+            \xCero = int(2 * mod(floor(\indexCero / 4), 2) - 1);
+            \yCero = int(2 * mod(floor(\indexCero / 2), 2) - 1);
+            \zCero = int(2 * mod(floor(\indexCero / 1), 2) - 1);
+            
+            \indexUno = index(1, \estado);
+            \xUno = int(2 * mod(floor(\indexUno / 4), 2) - 1);
+            \yUno = int(2 * mod(floor(\indexUno / 2), 2) - 1);
+            \zUno = int(2 * mod(floor(\indexUno / 1), 2) - 1);
+            
+            \nivel = \puntoCorte;
+        
+            \xRx = \bitsRecibidos[\nivel][0];
+            \yRx = \bitsRecibidos[\nivel][1];
+            \zRx = \bitsRecibidos[\nivel][2];
+            
+            \distCero = distancia(\xCero,\yCero,\zCero, \xRx,\yRx,\zRx);
+            \labelCero = \labels[\indexCero];
+            \distUno = distancia(\xUno,\yUno,\zUno, \xRx,\yRx,\zRx);
+            \labelUno = \labels[\indexUno];
+            
+            \hastaCero = siguienteCero(\estado);
+            \hastaUno = siguienteUno(\estado);
+            
+            \ceroPos = (\estado == \hastaCero) ? 0.6 : \pos;
+            \unoPos = (\estado == \hastaUno) ? 0.6 : 1 - \pos;
+            \distCeroPos = (\estado == \hastaCero) ? \pos : 1 - \pos;
+            \distUnoPos = \pos;
+
+            \pesoPrevio = \pesos[\estado][0];
+            \pesoArriba = \pesos[\estado][1];
+            \pesoAbajo = \pesos[\estado][2];
+        }
+        
+        \draw[rojo, ->] ($ (q_\estado) + ({\nivel * \sepX}, 0)$) 
+            -- ($ (q_\hastaUno) + ({(\nivel + 1) * \sepX}, 0)$)
+                node[pos=\unoPos, fill=white, scale=\scale] 
+                    {$\labelUno$}
+                node[pos=\distUnoPos, fill=white, scale=\scale, text=amarillo] {\pgfmathprintnumber{\distUno}};
+        
+        \draw[azul, ->] ($ (q_\estado) + ({\nivel * \sepX}, 0)$) 
+            -- ($ (q_\hastaCero) + ({(\nivel + 1) * \sepX}, 0)$)
+                node[pos=\ceroPos, fill=white, scale=\scale]
+                    {$\labelCero$}
+                node[pos=\distCeroPos, fill=white, scale=\scale, text=amarillo] {\pgfmathprintnumber{\distCero}};
+            
+            
+        \path ($ (q_\estado) + ({\nivel * \sepX}, 0)$) 
+            node[left=2pt, fill=white, scale=\scale, text=amarillo] 
+                {\pgfmathprintnumber{\pesoPrevio}};
+        \path ($ (q_\estado) + ({(\nivel + 1) * \sepX}, 0)$) 
+            node[above right=2pt, scale=\scale, text=amarillo] 
+                {\pgfmathprintnumber{\pesoArriba}}
+            node[below right=2pt, scale=\scale, text=amarillo] 
+                {\pgfmathprintnumber{\pesoAbajo}};
+    }
+    
+\end{tikzpicture}
+\end{document}
+```
+
+Ahora se eliminan los caminos 
+* $10000$
+* $10101$
+* $10110$
+* $10111$
+Descartando el camino $1011$
+
+```tikz
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usetikzlibrary{matrix}
+
+\begin{document} 
+\definecolor{rojo}{RGB}{255, 0, 127} % #FF0080
+\definecolor{azul}{RGB}{0, 127, 204} % #007ecc
+\definecolor{amarillo}{RGB}{249, 207, 50} 
+   
+\begin{tikzpicture}[
+    scale=1.1, transform shape, thick, 
+    shorten <= 0.5em, shorten >= 0.5em,
+    every left delimiter/.style={xshift=0.15cm, yshift=-0.1cm},
+    every right delimiter/.style={xshift=-0.15cm, yshift=-0.1cm}
+]
+    \def\labels {{ "000", "001", "010", "011", "100", "101", "110", "111" }}
+    \def\swaps {{ {{1,2}} }}
+    \def\bitsRecibidos {{ 
+        {{1.1,-1.05,0.9}}, {{0.85,1.05,-0.9}}, 
+        {{0.95,-1.1,0.85}}, {{1.05,-0.85,0.9}}, 
+        {{1.1,0.95,0.9}}, {{-1.05,0.9,1.1}}, 
+        {{0.85,0.95,1.05}} 
+    }}
+    \def\caminoInicial {{ 0, 1, 2, 0 }} % estado, bit
+    \def\caminos {{ 
+        {{ 1, 0, 0, 0, 0, 1 }}, 
+        {{ 1, 0, 0, 1, 2, 0 }}, 
+        {{ 1, 0, 0, 1, 2, 1 }}, 
+        {{ 1, 1, 2, 0, 1, 0 }}
+    }}
+    \def\pesos {{ % peso anterior, peso siguiente 1, peso siguiente 2
+        {{ 6.55, 9.41, 6.56 }}, {{ 4.51, 10.15, 6.64 }},
+        {{ 7.21, -1, -1 }}, {{ 4.74, -1, -1 }} 
+    }}
+    \tikzmath {
+        \sepX = 2; \sepY = 2; \radio = 0.075;
+        \n = 3; \N = 2^(\n - 1);
+        \scale = 0.7; \pos = 0.25; \tick = 0.2;
+        \puntoCorte = 5; 
+        
+        function siguienteCero(\i) {
+            return floor(\i / 2);
+        };
+        
+        function siguienteUno(\i) {
+            return int(2 + floor(\i / 2));
+        };
+        
+        function distancia(\x1, \y1, \z1, \x2, \y2, \z2) {
+            return veclen(\x1 - \x2, veclen(\y1 - \y2, \z1 - \z2));
+        };
+        
+        function index(\bit, \estado) {
+            let \bitUno = mod(floor(\estado / 2), 2);
+            let \bitDos = mod(\estado, 2);
+            
+            return int(
+                4 * mod(\bit * 1 + \bitUno * 1 + \bitDos * 1, 2)
+                + 2 * mod(\bit * 0 + \bitUno * 1 + \bitDos * 1, 2)
+                + 1 * mod(\bit * 1 + \bitUno * 0 + \bitDos * 1, 2));
+        };
+    }
+
+    \foreach \i [parse=true] in {0, ..., \N - 1} {
+        \coordinate (q_\i) at (0, {(\N - 1 - \i) * \sepY});
+    }
+    \coordinate (tiempo) at (0, {-0.5 * \sepY});
+    \coordinate (bits) at ({0.5 * \sepX}, {(\N - 0.8) * \sepY});
+
+    \foreach \currentSwap in \swaps {
+        \tikzmath { \swapI = \currentSwap[0]; \swapJ = \currentSwap[1]; }
+        \path (q_\swapI) node (temp) {};
+        \coordinate (q_\swapI) at (q_\swapJ);
+        \coordinate (q_\swapJ) at (temp.center);
+    }
+    
+    \begin{scope}[shorten <= 0, shorten >= 0]
+    \draw[->] (tiempo) -- ++({(\puntoCorte + 1.5) * \sepX}, 0)
+        node[pos=1.01, above=2pt, scale=\scale] {$t$};
+    \foreach \i [parse=true] in {0, ..., \puntoCorte + 1} {
+        \draw ($ (tiempo) + ({\i * \sepX}, {\tick / 2}) $) 
+            -- ++(0, -\tick) node[below=2pt, scale=\scale] {$\i$};
+    }
+    \end{scope}
+    
+    \foreach \label [count=\rama from 0] in {$00$, $01$, $10$, $11$} {
+        \path (q_\rama) node[left=0.5cm] {\label};
+        \foreach \i [parse=true] in {0, 1, ..., \puntoCorte + 1} {
+            \fill ($ (q_\rama) + ({\i * \sepX}, 0) $) circle (\radio);
+        }
+    }
+    
+    \tikzmath { \largoCaminoInicial = floor(dim(\caminoInicial) / 2); }
+    \foreach \nivel [parse=true] in {0, ..., \largoCaminoInicial - 1} {
+        \tikzmath {
+            \estado = \caminoInicial[int(2 * \nivel + 0)];
+            \bit = \caminoInicial[int(2 * \nivel + 1)];
+            
+            \indice = index(\bit, \estado);
+            \label = \labels[\indice];
+            \hasta = int(\bit) == 0 
+                ? siguienteCero(\estado) : siguienteUno(\estado);
+            \color = int(\bit) == 0 ? "azul" : "rojo";
+        }
+        
+        \draw[->, \color] ($ (q_\estado) + ({\nivel * \sepX}, 0)$) 
+            -- ($ (q_\hasta) + ({(\nivel + 1) * \sepX}, 0)$)
+                node[pos=0.5, fill=white, scale=\scale] {$\label$};
+    }
+    
+    \tikzmath { \cantCaminos = dim(\caminos); }
+    \foreach \i [parse=true] in {0, ..., \cantCaminos - 1} {
+        \tikzmath { \largoCamino = floor(dim(\caminos[\i]) / 2) - 1; }
+        \foreach \nivelAgregado [parse=true] in {0, ..., \largoCamino} {
+            \tikzmath {
+                \nivel = \largoCaminoInicial + \nivelAgregado;
+                \estado = \caminos[\i][int(2 * \nivelAgregado + 0)];
+                \bit = \caminos[\i][int(2 * \nivelAgregado + 1)];
+                
+                \indice = index(\bit, \estado);
+                \label = \labels[\indice];
+                \hasta = int(\bit) == 0 
+                    ? siguienteCero(\estado) : siguienteUno(\estado);
+                \color = int(\bit) == 0 ? "azul" : "rojo";
+            }
+            
+            \draw[->, \color] ($ (q_\estado) + ({\nivel * \sepX}, 0)$) 
+                -- ($ (q_\hasta) + ({(\nivel + 1) * \sepX}, 0)$)
+                    node[pos=0.5, fill=white, scale=\scale] {$\label$};
+        }
+    }
+    
+    \pgfkeys{/pgf/number format/.cd,fixed,precision=2}
+    \foreach \estado in {0, 1, 2, 3} {
+        \tikzmath {
+            \indexCero = index(0, \estado);
+            \xCero = int(2 * mod(floor(\indexCero / 4), 2) - 1);
+            \yCero = int(2 * mod(floor(\indexCero / 2), 2) - 1);
+            \zCero = int(2 * mod(floor(\indexCero / 1), 2) - 1);
+            
+            \nivel = \puntoCorte;
+        
+            \xRx = \bitsRecibidos[\nivel][0];
+            \yRx = \bitsRecibidos[\nivel][1];
+            \zRx = \bitsRecibidos[\nivel][2];
+            
+            \distCero = distancia(\xCero,\yCero,\zCero, \xRx,\yRx,\zRx);
+            \labelCero = \labels[\indexCero];
+            
+            \hastaCero = siguienteCero(\estado);
+            
+            \ceroPos = (\estado == \hastaCero) ? 0.6 : \pos;
+            \distCeroPos = (\estado == \hastaCero) ? \pos : 1 - \pos;
+
+            \pesoPrevio = \pesos[\estado][0];
+            \pesoArriba = \pesos[\estado][1];
+            \pesoAbajo = \pesos[\estado][2];
+            \condicionDeMasPesos = \pesoArriba > 0 ? 1 : 0;
+        }
+        
+        \draw[azul, ->] ($ (q_\estado) + ({\nivel * \sepX}, 0)$) 
+            -- ($ (q_\hastaCero) + ({(\nivel + 1) * \sepX}, 0)$)
+                node[pos=\ceroPos, fill=white, scale=\scale]
+                    {$\labelCero$}
+                node[pos=\distCeroPos, fill=white, scale=\scale, text=amarillo] {\pgfmathprintnumber{\distCero}};
+            
+            
+        \path ($ (q_\estado) + ({\nivel * \sepX}, 0)$) 
+            node[left=2pt, fill=white, scale=\scale, text=amarillo] 
+                {\pgfmathprintnumber{\pesoPrevio}};
+                
+        \ifnum \condicionDeMasPesos = 1
+            \path ($ (q_\estado) + ({(\nivel + 1) * \sepX}, 0)$) 
+                node[above right=2pt, scale=\scale, text=amarillo] 
+                    {\pgfmathprintnumber{\pesoArriba}}
+                node[below right=2pt, scale=\scale, text=amarillo] 
+                    {\pgfmathprintnumber{\pesoAbajo}};
+        \fi
+    }
+    
+\end{tikzpicture}
+\end{document}
+```
+
+En este caso descartando los caminos
+* $101000$
+* $100010$
+Descartando el camino desde $1000$ y $101$ 
+
+```tikz
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usetikzlibrary{matrix}
+
+\begin{document} 
+\definecolor{rojo}{RGB}{255, 0, 127} % #FF0080
+\definecolor{azul}{RGB}{0, 127, 204} % #007ecc
+\definecolor{amarillo}{RGB}{249, 207, 50} 
+   
+\begin{tikzpicture}[
+    scale=1.1, transform shape, thick, 
+    shorten <= 0.5em, shorten >= 0.5em,
+    every left delimiter/.style={xshift=0.15cm, yshift=-0.1cm},
+    every right delimiter/.style={xshift=-0.15cm, yshift=-0.1cm}
+]
+    \def\labels {{ "000", "001", "010", "011", "100", "101", "110", "111" }}
+    \def\swaps {{ {{1,2}} }}
+    \def\bitsRecibidos {{ 
+        {{1.1,-1.05,0.9}}, {{0.85,1.05,-0.9}}, 
+        {{0.95,-1.1,0.85}}, {{1.05,-0.85,0.9}}, 
+        {{1.1,0.95,0.9}}, {{-1.05,0.9,1.1}}, 
+        {{0.85,0.95,1.05}} 
+    }}
+    % estado, bit
+    \def\caminoInicial {{ 0, 1, 2, 0, 1, 0, 0, 1 }} 
+    \def\caminos {{ 
+        {{ 2, 0, 1, 0 }}, 
+        {{ 2, 1, 3, 0 }} 
+    }}
+    \def\pesos {{ % peso anterior, peso siguiente 1, peso siguiente 2
+        {{ 6.56, 9.94, 6.81 }}, {{ 6.64, -1, -1 }},
+        {{ -1, -1, -1 }}, {{ -1, -1, -1 }} 
+    }}
+    \tikzmath {
+        \sepX = 2; \sepY = 2; \radio = 0.075;
+        \n = 3; \N = 2^(\n - 1);
+        \scale = 0.7; \pos = 0.25; \tick = 0.2;
+        \puntoCorte = 6; 
+        
+        function siguienteCero(\i) {
+            return floor(\i / 2);
+        };
+        
+        function siguienteUno(\i) {
+            return int(2 + floor(\i / 2));
+        };
+        
+        function distancia(\x1, \y1, \z1, \x2, \y2, \z2) {
+            return veclen(\x1 - \x2, veclen(\y1 - \y2, \z1 - \z2));
+        };
+        
+        function index(\bit, \estado) {
+            let \bitUno = mod(floor(\estado / 2), 2);
+            let \bitDos = mod(\estado, 2);
+            
+            return int(
+                4 * mod(\bit * 1 + \bitUno * 1 + \bitDos * 1, 2)
+                + 2 * mod(\bit * 0 + \bitUno * 1 + \bitDos * 1, 2)
+                + 1 * mod(\bit * 1 + \bitUno * 0 + \bitDos * 1, 2));
+        };
+    }
+
+    \foreach \i [parse=true] in {0, ..., \N - 1} {
+        \coordinate (q_\i) at (0, {(\N - 1 - \i) * \sepY});
+    }
+    \coordinate (tiempo) at (0, {-0.5 * \sepY});
+    \coordinate (bits) at ({0.5 * \sepX}, {(\N - 0.8) * \sepY});
+
+    \foreach \currentSwap in \swaps {
+        \tikzmath { \swapI = \currentSwap[0]; \swapJ = \currentSwap[1]; }
+        \path (q_\swapI) node (temp) {};
+        \coordinate (q_\swapI) at (q_\swapJ);
+        \coordinate (q_\swapJ) at (temp.center);
+    }
+    
+    \begin{scope}[shorten <= 0, shorten >= 0]
+    \draw[->] (tiempo) -- ++({(\puntoCorte + 1.5) * \sepX}, 0)
+        node[pos=1.01, above=2pt, scale=\scale] {$t$};
+    \foreach \i [parse=true] in {0, ..., \puntoCorte + 1} {
+        \draw ($ (tiempo) + ({\i * \sepX}, {\tick / 2}) $) 
+            -- ++(0, -\tick) node[below=2pt, scale=\scale] {$\i$};
+    }
+    \end{scope}
+    
+    \foreach \label [count=\rama from 0] in {$00$, $01$, $10$, $11$} {
+        \path (q_\rama) node[left=0.5cm] {\label};
+        \foreach \i [parse=true] in {0, 1, ..., \puntoCorte + 1} {
+            \fill ($ (q_\rama) + ({\i * \sepX}, 0) $) circle (\radio);
+        }
+    }
+    
+    \tikzmath { \largoCaminoInicial = floor(dim(\caminoInicial) / 2); }
+    \foreach \nivel [parse=true] in {0, ..., \largoCaminoInicial - 1} {
+        \tikzmath {
+            \estado = \caminoInicial[int(2 * \nivel + 0)];
+            \bit = \caminoInicial[int(2 * \nivel + 1)];
+            
+            \indice = index(\bit, \estado);
+            \label = \labels[\indice];
+            \hasta = int(\bit) == 0 
+                ? siguienteCero(\estado) : siguienteUno(\estado);
+            \color = int(\bit) == 0 ? "azul" : "rojo";
+        }
+        
+        \draw[->, \color] ($ (q_\estado) + ({\nivel * \sepX}, 0)$) 
+            -- ($ (q_\hasta) + ({(\nivel + 1) * \sepX}, 0)$)
+                node[pos=0.5, fill=white, scale=\scale] {$\label$};
+    }
+    
+    \tikzmath { \cantCaminos = dim(\caminos); }
+    \foreach \i [parse=true] in {0, ..., \cantCaminos - 1} {
+        \tikzmath { \largoCamino = floor(dim(\caminos[\i]) / 2) - 1; }
+        \foreach \nivelAgregado [parse=true] in {0, ..., \largoCamino} {
+            \tikzmath {
+                \nivel = \largoCaminoInicial + \nivelAgregado;
+                \estado = \caminos[\i][int(2 * \nivelAgregado + 0)];
+                \bit = \caminos[\i][int(2 * \nivelAgregado + 1)];
+                
+                \indice = index(\bit, \estado);
+                \label = \labels[\indice];
+                \hasta = int(\bit) == 0 
+                    ? siguienteCero(\estado) : siguienteUno(\estado);
+                \color = int(\bit) == 0 ? "azul" : "rojo";
+            }
+            
+            \draw[->, \color] ($ (q_\estado) + ({\nivel * \sepX}, 0)$) 
+                -- ($ (q_\hasta) + ({(\nivel + 1) * \sepX}, 0)$)
+                    node[pos=0.5, fill=white, scale=\scale] {$\label$};
+        }
+    }
+    
+    \pgfkeys{/pgf/number format/.cd,fixed,precision=2}
+    \foreach \estado in {0, 1} {
+        \tikzmath {
+            \indexCero = index(0, \estado);
+            \xCero = int(2 * mod(floor(\indexCero / 4), 2) - 1);
+            \yCero = int(2 * mod(floor(\indexCero / 2), 2) - 1);
+            \zCero = int(2 * mod(floor(\indexCero / 1), 2) - 1);
+            
+            \nivel = \puntoCorte;
+        
+            \xRx = \bitsRecibidos[\nivel][0];
+            \yRx = \bitsRecibidos[\nivel][1];
+            \zRx = \bitsRecibidos[\nivel][2];
+            
+            \distCero = distancia(\xCero,\yCero,\zCero, \xRx,\yRx,\zRx);
+            \labelCero = \labels[\indexCero];
+            
+            \hastaCero = siguienteCero(\estado);
+            
+            \ceroPos = (\estado == \hastaCero) ? 0.6 : \pos;
+            \distCeroPos = (\estado == \hastaCero) ? \pos : 1 - \pos;
+
+            \pesoPrevio = \pesos[\estado][0];
+            \pesoArriba = \pesos[\estado][1];
+            \pesoAbajo = \pesos[\estado][2];
+            \condicionDeMasPesos = \pesoArriba > 0 ? 1 : 0;
+        }
+        
+        \draw[azul, ->] ($ (q_\estado) + ({\nivel * \sepX}, 0)$) 
+            -- ($ (q_\hastaCero) + ({(\nivel + 1) * \sepX}, 0)$)
+                node[pos=\ceroPos, fill=white, scale=\scale]
+                    {$\labelCero$}
+                node[pos=\distCeroPos, fill=white, scale=\scale, text=amarillo] {\pgfmathprintnumber{\distCero}};
+            
+            
+        \path ($ (q_\estado) + ({\nivel * \sepX}, 0)$) 
+            node[left=2pt, fill=white, scale=\scale, text=amarillo] 
+                {\pgfmathprintnumber{\pesoPrevio}};
+                
+        \ifnum \condicionDeMasPesos = 1
+            \path ($ (q_\estado) + ({(\nivel + 1) * \sepX}, 0)$) 
+                node[above right=2pt, scale=\scale, text=amarillo] 
+                    {\pgfmathprintnumber{\pesoArriba}}
+                node[below right=2pt, scale=\scale, text=amarillo] 
+                    {\pgfmathprintnumber{\pesoAbajo}};
+        \fi
+    }
+    
+\end{tikzpicture}
+\end{document}
+```
+
+Finalmente descartando el camino $1001000$, dejando como mensaje final decodificado al $10011~00$ que se ve de la siguiente forma 
+
+```tikz
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usetikzlibrary{matrix}
+
+\begin{document} 
+\definecolor{rojo}{RGB}{255, 0, 127} % #FF0080
+\definecolor{azul}{RGB}{0, 127, 204} % #007ecc
+\definecolor{amarillo}{RGB}{249, 207, 50} 
+   
+\begin{tikzpicture}[
+    scale=1.1, transform shape, thick, 
+    shorten <= 0.5em, shorten >= 0.5em,
+    every left delimiter/.style={xshift=0.15cm, yshift=-0.1cm},
+    every right delimiter/.style={xshift=-0.15cm, yshift=-0.1cm}
+]
+    \def\labels {{ "000", "001", "010", "011", "100", "101", "110", "111" }}
+    \def\swaps {{ {{1,2}} }}
+    \def\bitsRecibidos {{ 
+        {{1.1,-1.05,0.9}}, {{0.85,1.05,-0.9}}, 
+        {{0.95,-1.1,0.85}}, {{1.05,-0.85,0.9}}, 
+        {{1.1,0.95,0.9}}, {{-1.05,0.9,1.1}}, 
+        {{0.85,0.95,1.05}} 
+    }}
+    % estado, bit
+    \def\caminoInicial {{ 0, 1, 2, 0, 1, 0, 0, 1, 2, 1, 3, 0 , 1, 0 }} 
+    \tikzmath {
+        \sepX = 2; \sepY = 2; \radio = 0.075;
+        \n = 3; \N = 2^(\n - 1);
+        \scale = 0.7; \pos = 0.25; \tick = 0.2;
+        \puntoCorte = 6; 
+        
+        function siguienteCero(\i) {
+            return floor(\i / 2);
+        };
+        
+        function siguienteUno(\i) {
+            return int(2 + floor(\i / 2));
+        };
+        
+        function distancia(\x1, \y1, \z1, \x2, \y2, \z2) {
+            return veclen(\x1 - \x2, veclen(\y1 - \y2, \z1 - \z2));
+        };
+        
+        function index(\bit, \estado) {
+            let \bitUno = mod(floor(\estado / 2), 2);
+            let \bitDos = mod(\estado, 2);
+            
+            return int(
+                4 * mod(\bit * 1 + \bitUno * 1 + \bitDos * 1, 2)
+                + 2 * mod(\bit * 0 + \bitUno * 1 + \bitDos * 1, 2)
+                + 1 * mod(\bit * 1 + \bitUno * 0 + \bitDos * 1, 2));
+        };
+    }
+
+    \foreach \i [parse=true] in {0, ..., \N - 1} {
+        \coordinate (q_\i) at (0, {(\N - 1 - \i) * \sepY});
+    }
+    \coordinate (tiempo) at (0, {-0.5 * \sepY});
+    \coordinate (bits) at ({0.5 * \sepX}, {(\N - 0.8) * \sepY});
+
+    \foreach \currentSwap in \swaps {
+        \tikzmath { \swapI = \currentSwap[0]; \swapJ = \currentSwap[1]; }
+        \path (q_\swapI) node (temp) {};
+        \coordinate (q_\swapI) at (q_\swapJ);
+        \coordinate (q_\swapJ) at (temp.center);
+    }
+    
+    \begin{scope}[shorten <= 0, shorten >= 0]
+    \draw[->] (tiempo) -- ++({(\puntoCorte + 1.5) * \sepX}, 0)
+        node[pos=1.01, above=2pt, scale=\scale] {$t$};
+    \foreach \i [parse=true] in {0, ..., \puntoCorte + 1} {
+        \draw ($ (tiempo) + ({\i * \sepX}, {\tick / 2}) $) 
+            -- ++(0, -\tick) node[below=2pt, scale=\scale] {$\i$};
+    }
+    \end{scope}
+    
+    \foreach \label [count=\rama from 0] in {$00$, $01$, $10$, $11$} {
+        \path (q_\rama) node[left=0.5cm] {\label};
+        \foreach \i [parse=true] in {0, 1, ..., \puntoCorte + 1} {
+            \fill ($ (q_\rama) + ({\i * \sepX}, 0) $) circle (\radio);
+        }
+    }
+    
+    \tikzmath { \largoCaminoInicial = floor(dim(\caminoInicial) / 2); }
+    \foreach \nivel [parse=true] in {0, ..., \largoCaminoInicial - 1} {
+        \tikzmath {
+            \estado = \caminoInicial[int(2 * \nivel + 0)];
+            \bit = \caminoInicial[int(2 * \nivel + 1)];
+            
+            \indice = index(\bit, \estado);
+            \label = \labels[\indice];
+            \hasta = int(\bit) == 0 
+                ? siguienteCero(\estado) : siguienteUno(\estado);
+            \color = int(\bit) == 0 ? "azul" : "rojo";
+        }
+        
+        \draw[->, \color] ($ (q_\estado) + ({\nivel * \sepX}, 0)$) 
+            -- ($ (q_\hasta) + ({(\nivel + 1) * \sepX}, 0)$)
+                node[pos=0.5, fill=white, scale=\scale] {$\label$};
+    }
+    
+\end{tikzpicture}
+\end{document}
+```
 
 # Referencias
 ---
