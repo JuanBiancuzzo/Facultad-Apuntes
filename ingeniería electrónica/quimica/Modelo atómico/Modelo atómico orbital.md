@@ -2,7 +2,11 @@
 dia: 2026-03-05
 etapa: empezado
 referencias: []
-aliases: []
+aliases: 
+  - Número cuántico principal#^numero-principa
+  - Número cuántico azimutal#^numero-azimutal
+  - Número cuántico magnético#^numero-magnetico
+  - Número cuántico de Spin#^numero-spin
 tags:
   - carrera/ingeniería-electrónica/quimica/modelo-atómico
   - nota/facultad
@@ -28,11 +32,11 @@ Partiendo del [[ingeniería electrónica/quimica/Modelo atómico/Modelo de Bohr|
     * En un átomo, no pueden existir dos electrones con los mismo valores de sus cuatro números cuánticos
 
 La solución de la ecuación de onda asociada a cada electrón da como resultado $4$ [[ingeniería en informática/algebra 2/Autovalores y autovectores/Autovalor|autovalores]] y que se los conoce como números cuánticos. Con estos $4$ números cuánticos se puede representar completamente un átomo
-1. Número cuántico principal $n$
+1. Número cuántico principal $n$ ^numero-principa
     * Sólo puede tomar valores [[licenciatura en ciencias matemáticas/algebra 1/Números naturales e Inducción/Números Naturales|naturales]]
     * Caracteriza el tamaño del orbital
     * Se puede interpretar como el nivel energético
-2. Número cuántico azimutal $l$
+2. Número cuántico azimutal $l$ ^numero-azimutal
     *  Sólo puede tomar valores [[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Números enteros|enteros]] entre $0$ y $n - 1$ 
     * Caracteriza la forma del orbital
         * Para $l = 0$ tienen forma de esfera
@@ -44,12 +48,12 @@ La solución de la ecuación de onda asociada a cada electrón da como resultado
         * $2$ representado por $d$
         * $3$ representado por $f$
         * $4$ representado por $g$
-3. Número cuántico magnético $m$
+3. Número cuántico magnético $m$ ^numero-magnetico
     *  Sólo puede tomar valores enteros entre $-l$ y $+l$
     * Caracteriza la orientación del orbital
         * Para un mismo subnivel (mismo $l$) puede haber varios orbitales que sólo difieren en su disposición espacial
     * Representa cantidad de orbitales con la misma energía
-4. Número cuántico de Spin $s$
+4. Número cuántico de Spin $s$ ^numero-spin
     *  Sólo puede los valores $-\frac{1}{2}$ y $+\frac{1}{2}$
     * Caracteriza el sentido de giro del electrón de un orbital
     * Por orbital entran $2$ electrones, por el principio de exclusión de Pauli mencionado antes

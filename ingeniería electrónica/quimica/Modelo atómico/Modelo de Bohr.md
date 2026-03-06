@@ -25,7 +25,7 @@ Tiene los siguientes postulados
     * Cada órbita
         * Esta caracterizada por un [[licenciatura en ciencias matemáticas/algebra 1/Números naturales e Inducción/Números Naturales|número natural]] $n$ 
         * Es circular y tiene un radio determinado $r_n$
-        * Tiene asociada una energía del electrón, $E_n$ constante y puede calcularse según $$ E_n = -\frac{K}{n^2} $$
+        * Tiene asociada una energía del electrón, $E_n$ constante y puede calcularse según $$ E_n = -\frac{K}{n^2} $$ mientras más grande $n$ más grande es la energía pero al mismo tiempo hay menos diferencia entre niveles consecutivos
 2. El electrón sólo gana o pierde energía, cuando cambia de una órbita permitida a otra, absorbiendo o emitiendo un [[Fotón|fotón]], con energía correspondiente a la diferencia de energías entre las órbitas que cambie
     * El electrón se encuentra normalmente en el nivel de menor energía, $n = 1$ que se lo llama nivel fundamental
     * Cuando recibe algún estímulo externo puede ocupar niveles de energía mayores, llamados niveles excitados
