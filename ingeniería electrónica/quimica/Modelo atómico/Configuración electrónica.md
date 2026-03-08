@@ -73,7 +73,7 @@ Para definir el orden en el cual los electrones se ubican en los orbitales, es d
 
 Por el [[Principio de exclusión de Pauli|principio de exclusión de Pauli]], y como el [[ingeniería electrónica/quimica/Modelo atómico/Modelo atómico orbital#^numero-spin|número cuántico de Spin]] teniendo dos valores, por cada orbital puede existir $2$ electrones. Por lo tanto por cada orbital se utiliza el supra índice para indicar la cantidad de electrones disponibles para ese nivel de energía y subnivel de energía
 
-Se puede abreviar esta configuración electrónica, empezando por el [[Átomo noble|átomo noble]] previo, y agregando la secuencia de electrones faltantes
+Se puede abreviar esta configuración electrónica, empezando por el [[ingeniería electrónica/quimica/Tabla periódica/Tabla periódica#^gas-noble|gas noble]] previo, y agregando la secuencia de electrones faltantes
 
 Se define la configuración electrónica externa (CEE) a estos últimos electrones después de un átomo noble. Estos son los electrones que interactúan en interacciones químicas ^cee
 
