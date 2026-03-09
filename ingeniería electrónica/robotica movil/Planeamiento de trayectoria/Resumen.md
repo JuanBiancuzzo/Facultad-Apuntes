@@ -3,7 +3,7 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/robótica-móvil/Planeamiento-de-trayectoria
 nombreResumen: Planeamiento de trayectoria
-capitulo: 7
+capitulo: 8
 referencias: []
 infoTemaMateria:
   materia: Robótica móvil

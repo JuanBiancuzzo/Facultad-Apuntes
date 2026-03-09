@@ -16,7 +16,7 @@ Sea $S$ un [[Subespacio|subespacio]] de $\mathbb{V}$ y $v \in \mathbb{V}$, decim
 
 $$ \hat{v} \in S \text{ y } v - \hat{v} \in S^\perp $$
 
-Se puede encontrar $\hat{v}$ teniendo una base con el [[Sistema ortogonal|sistema ortogonal]] de $S$ tal que $B_S = \{v_1, v_2, \cdots, v_r \}$ (que si tenemos una base pero esta no es ortogonal, entonces podemos usar el [[Método de Gram-Schmidt|método de Gram-Schmidt]] para convertirlo en ortogonal), entonces
+Se puede encontrar $\hat{v}$ teniendo una base con el [[ingeniería en informática/analisis 2/Nomenclatura/Ortogonalidad|sistema ortogonal]] de $S$ tal que $B_S = \{v_1, v_2, \cdots, v_r \}$ (que si tenemos una base pero esta no es ortogonal, entonces podemos usar el [[Método de Gram-Schmidt|método de Gram-Schmidt]] para convertirlo en ortogonal), entonces
 
 $$ \hat{v} = \frac{\langle v, v_1 \rangle}{\langle v_1, v_1 \rangle} \cdot v_1 + \frac{\langle v, v_2 \rangle}{\langle v_2, v_2 \rangle} \cdot v_2 + \cdots + \frac{\langle v, v_r \rangle}{\langle v_r, v_r \rangle} \cdot v_r $$
 

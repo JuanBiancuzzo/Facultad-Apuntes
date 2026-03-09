@@ -105,7 +105,7 @@ Si $Cov(X,~ Y) < 0$ entonces tienen más probabilidad valores donde una esta por
 ---
 Tiene la relación con la [[Correlación cruzada|correlación cruzada]] $$ Cov(X,~ Y) = R(X,~ Y) - E[X] ~ E[Y]^T $$
 
-Dada una [[Transformación afín|transformación afín]] $Y = AX + b$ entonces $$ Cov(Y) = A Cov(X) A^T $$
+Dada una [[investigación/matemática/Transformación afín|transformación afín]] $Y = AX + b$ entonces $$ Cov(Y) = A Cov(X) A^T $$
 
 La autocovarianza es una [[ingeniería en informática/algebra 2/Matrices unitarias y ortogonales/Matriz definida positiva|matriz semidefinida positiva]] y [[Matriz simétrica|simétrica]] 
     * Al ser simétrica, es [[Diagonalización de una matriz|diagonalizable]], y en este caso diagonalizable ortogonalmente es decir que lo vamos a poder descomponer de la siguiente forma $$ Cov(X) = PD_1P^T $$

@@ -3,7 +3,7 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/robótica-móvil/SLAM
 nombreResumen: SLAM
-capitulo: 6
+capitulo: 7
 referencias: []
 infoTemaMateria:
   materia: Robótica móvil

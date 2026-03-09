@@ -3,7 +3,7 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/robótica-móvil/Sensores
 nombreResumen: Sensores
-capitulo: 2
+capitulo: 3
 referencias: []
 infoTemaMateria:
   materia: Robótica móvil

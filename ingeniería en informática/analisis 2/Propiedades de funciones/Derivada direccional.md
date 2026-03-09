@@ -16,7 +16,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Sea $f: U \subseteq \mathbb{R}^n \to \mathbb{R}$ una [[Función|función]] definida en el [[Conjunto abierto|conjunto abierto]] $U$ de $\mathbb{R}^n$ y sea $x_0 \in U$ un punto dado de $U$. Sea $v \in \mathbb{R}^n$ un [[Versor|versor]], se define la derivada en dirección $v$ tal que 
+Sea $f: U \subseteq \mathbb{R}^n \to \mathbb{R}$ una [[Función|función]] definida en el [[Conjunto abierto|conjunto abierto]] $U$ de $\mathbb{R}^n$ y sea $x_0 \in U$ un punto dado de $U$. Sea $v \in \mathbb{R}^n$ un [[ingeniería electrónica/robotica movil/Repaso álgebra/Vector|versor]], se define la derivada en dirección $v$ tal que 
 
 $$ f'_\hat{v} = \lim{h \to 0}\frac{f(x_0 + h \cdot v) - f(x_0)}{h} $$
 

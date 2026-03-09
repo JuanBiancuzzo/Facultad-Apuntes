@@ -3,7 +3,7 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/robótica-móvil/Filtros-Bayesianos
 nombreResumen: Filtros Bayesianos
-capitulo: 5
+capitulo: 6
 referencias: []
 infoTemaMateria:
   materia: Robótica móvil

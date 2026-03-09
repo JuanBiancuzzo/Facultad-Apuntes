@@ -3,7 +3,7 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/robótica-móvil/Paradigma-de-control
 nombreResumen: Paradigma de control
-capitulo: 1
+capitulo: 2
 referencias: []
 infoTemaMateria:
   materia: Robótica móvil

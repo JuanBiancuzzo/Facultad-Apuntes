@@ -3,7 +3,7 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/robótica-móvil/Modelos
 nombreResumen: Modelos
-capitulo: 4
+capitulo: 5
 referencias: []
 infoTemaMateria:
   materia: Robótica móvil

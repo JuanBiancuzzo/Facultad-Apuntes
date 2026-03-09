@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/analisis-2/Nomenclatura
   - carrera/ingeniería-en-informática/algebra-2/Espacios-euclídeos
   - carrera/ingeniería-en-informática/analisis-2/Nomenclatura
+  - carrera/ingeniería-electrónica/robótica-móvil/Repaso-álgebra
   - nota/facultad
 aliases:
   - Producto escalar
@@ -17,6 +18,10 @@ vinculoFacultad:
     capitulo: 1
     materia: Análisis matemático 2 A
     carrera: Ingeniería en informática
+  - tema: Repaso álgebra
+    capitulo: 1
+    materia: Robótica móvil
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---
@@ -29,3 +34,7 @@ Sea $\mathbb{V}$ un $\mathbb{K}$-[[Espacio vectorial|espacio vectorial]]. Un pro
  3. $\langle x, x \rangle > 0$ si $x \ne 0$
 
 Un $\mathbb{K}$-espacio vectorial con producto interno $\langle \cdot , \cdot \rangle$ se llama espacio euclídeo y lo denotaremos por $(\mathbb{V}, \langle \cdot, \cdot \rangle)$
+
+## Para matrices
+---
+La [[Matriz de Gram|matriz de Gram]] de una base $B$ determina al [[Producto interno|producto interno]] $\langle \cdot, \cdot \rangle$. En caso este llamamos a $G_B$ la matriz del producto interno $\langle \cdot, \cdot \rangle$ en la base $B$ $$ \langle x, y \rangle := y^T \cdot G_B \cdot x $$

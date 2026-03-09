@@ -15,7 +15,7 @@ vinculoFacultad:
 ---
 En el caso de las [[Sistema cartesiano|coordenadas cartesianas]], para facilitar el tratamiento matemático trabajamos con ondas planas, donde los campos dependen de una única coordenada espacial y del tiempo $$ \begin{align} \vec{E}(\vec{r},~t) = \vec{E}(\vec{z},~t) && \vec{H}(\vec{r},~t) = \vec{H}(z,~t) \end{align} $$
 
-Además, para evitar [[Derivable|derivar]] [[Versor|versores]], usaremos ondas linealmente polarizadas, donde los campos mantienen su dirección vectorial en el tiempo $$ \begin{align} \vec{E}(\vec{r},~t) = E(z,~t) ~ \hat{e}_0 && \vec{H}(\vec{r},~t) = H(z,~t) ~ \hat{h}_0 \end{align} $$ con $\hat{e}_0$ y $\hat{h}_0$ son los versores (constantes) que definen la dirección de los campos
+Además, para evitar [[Derivable|derivar]] [[ingeniería electrónica/robotica movil/Repaso álgebra/Vector|versores]], usaremos ondas linealmente polarizadas, donde los campos mantienen su dirección vectorial en el tiempo $$ \begin{align} \vec{E}(\vec{r},~t) = E(z,~t) ~ \hat{e}_0 && \vec{H}(\vec{r},~t) = H(z,~t) ~ \hat{h}_0 \end{align} $$ con $\hat{e}_0$ y $\hat{h}_0$ son los versores (constantes) que definen la dirección de los campos
 
 Entonces, partiendo de una [[Onda electromagnética|onda electromagnética]] $$ \nabla^2 \vec{E} - \frac{1}{c^2} \frac{\partial^2}{\partial t^2}\vec{E} = 0 \implies \frac{\partial^2}{\partial z^2} E - \frac{1}{c^2} \frac{\partial^2}{\partial t^2}E = 0 $$
 

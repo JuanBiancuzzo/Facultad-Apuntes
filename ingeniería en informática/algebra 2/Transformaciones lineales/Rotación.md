@@ -3,12 +3,19 @@ dia: 2023-01-22
 tags:
   - carrera/ingeniería-electrónica/algebra-2/Transformaciones-lineales
   - carrera/ingeniería-en-informática/algebra-2/Transformaciones-lineales
+  - carrera/ingeniería-electrónica/robótica-móvil/Repaso-álgebra
   - nota/facultad
+aliases:
+  - Matriz de rotación
 vinculoFacultad:
   - tema: Transformaciones lineales
     capitulo: 2
     materia: Álgebra 2 A
     carrera: Ingeniería en informática
+  - tema: Repaso álgebra
+    capitulo: 1
+    materia: Robótica móvil
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---
@@ -99,12 +106,11 @@ Entonces veamos el caso ${1 \choose 0}$:
 ```
 
 
-Podemos ver el triangulo rectángulo, entonces la posición en $x$ esta dado por el $cos(50.42\degree)$ y la $y$ esta dado por $sin(50.42\degree)$, entonces:
-
-$$ R{1 \choose 0} = {cos\left(50.42\degree\right) \choose sin\left(50.42\degree\right)} $$
-
-Ahora en el caso de ${0 \choose 1}$:
-
+Podemos ver el triangulo rectángulo, entonces la posición en $x$ esta dado por el $cos(50.42\degree)$ y la $y$ esta dado por $sin(50.42\degree)$, entonces $$ R_{50.42\degree} ~ \begin{bmatrix}1 \\ 0 \end{bmatrix} = \begin{bmatrix} 
+    \cos\left( 50.42\degree \right) \\
+    \sin\left( 50.42\degree \right) \\
+\end{bmatrix} $$
+Ahora en el caso de $\begin{bmatrix} 0 \\ 1 \end{bmatrix}$:
 
 ```tikz
 \begin{document}
@@ -139,10 +145,17 @@ Ahora en el caso de ${0 \choose 1}$:
 \end{document}
 ```
 
-En este caso, la posición en $x$ esta dado por $sin(50.42\degree + \pi)$ y la $y$ esta dado por $cos(50.42\degree)$, que es el equivalente a $-sin(50.42\degree)$, entonces nos queda
+En este caso, la posición en $x$ esta dado por $\sin(50.42\degree + \pi)$ y la $y$ esta dado por $\cos(50.42\degree)$, que es el equivalente a $-\sin(50.42\degree)$, entonces nos queda$$ R_{50.42\degree} ~ \begin{bmatrix} 1 \\ 0 \end{bmatrix} = \begin{bmatrix} -\sin\left( 50.42\degree \right) \\ \cos\left( 50.42\degree \right) \end{bmatrix} $$
 
-$$ R{1 \choose 0} = {-sin(50.42\degree) \choose cos(50.42\degree)} $$
+Por lo tanto podemos escribir la [[ingeniería en informática/algebra 2/Espacios Vectoriales/Matriz|matriz]] de rotación, para cualquier ángulo $$ R_\theta \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} := \begin{bmatrix} 
+    \cos(\theta) & -\sin(\theta) \\ 
+    \sin(\theta) & \cos(\theta) 
+\end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} $$ donde esta matriz de rotación es una [[ingeniería en informática/analisis 2/Nomenclatura/Ortogonalidad#Para matrices|matriz ortogonal]] con [[ingeniería en informática/algebra 2/Espacios Vectoriales/Matriz#Determinante|determinante]] igual a $\pm 1$
 
-Por lo tanto podemos escribir la matriz de rotación, para cualquier ángulo
-
-$$ R{x_1 \choose x_2} := \begin{pmatrix} \cos(\theta) & -\sin(\theta) \\ \sin(\theta) & \cos(\theta) \end{pmatrix} {x_1 \choose x_2}$$
+Para $3$ [[ingeniería en informática/algebra 2/Espacios Vectoriales/Dimensión|dimensiones]] existen $3$ marices de rotación $$ R_x(\theta) = \begin{bmatrix} 
+    1 & 0 & 0 \\ 0 & \cos \theta & -\sin \theta \\ 0 & \sin \theta & \cos \theta
+\end{bmatrix} ~~~~ R_y(\theta) = \begin{bmatrix} 
+    \cos \theta & 0 & -\sin \theta \\ 0 & 1 & 0 \\ \sin \theta & 0 & \cos \theta
+\end{bmatrix} ~~~~ R_z(\theta) = \begin{bmatrix} 
+    \cos \theta & -\sin \theta & 0 \\ \sin \theta & \cos \theta & 0 \\ 0 & 0 & 1 
+\end{bmatrix} $$

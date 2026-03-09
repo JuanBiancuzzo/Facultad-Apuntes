@@ -3,12 +3,17 @@ dia: 2023-01-22
 tags:
   - carrera/ingeniería-electrónica/algebra-2/Espacios-Vectoriales
   - carrera/ingeniería-en-informática/algebra-2/Espacios-Vectoriales
+  - carrera/ingeniería-electrónica/robótica-móvil/Repaso-álgebra
   - nota/facultad
 vinculoFacultad:
   - tema: Espacios Vectoriales
     capitulo: 1
     materia: Álgebra 2 A
     carrera: Ingeniería en informática
+  - tema: Repaso álgebra
+    capitulo: 1
+    materia: Robótica móvil
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

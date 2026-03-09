@@ -1,9 +1,9 @@
 ---
 tags:
   - facultad/resumen
-  - carrera/ingeniería-electrónica/robótica-móvil/Robótica-probabilistica
-nombreResumen: Robótica probabilistica
-capitulo: 4
+  - carrera/ingeniería-electrónica/robótica-móvil/Repaso-álgebra
+nombreResumen: Repaso álgebra
+capitulo: 1
 referencias: []
 infoTemaMateria:
   materia: Robótica móvil
