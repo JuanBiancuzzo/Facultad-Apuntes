@@ -63,7 +63,6 @@ Un listado de materias, sus códigos y su estado actual
 | [Sistemas Distribuidos 1](ingeniería%20en%20informática/distribuidos/Sistemas%20Distribuidos%201%20(TA050).md)                              | TA050  | Terminando la clase 10                              |
 | [Sistemas operativos](ingeniería%20en%20informática/sisop/Sistemas%20operativos%20(7508).md)                                                | 7508   | Terminado                                           |
 | [Taller de programación 1](ingeniería%20en%20informática/taller/Taller%20de%20programación%201%20(9508).md)                                 | 9508   | Falta pasar las presentaciones de los últimos temas |
-| [Taller de Seguridad Informática](ingeniería%20en%20informática/taller%20de%20seguridad/Taller%20de%20Seguridad%20Informática%20(TA051).md) | TA051  | Cursandola                                          |
 | [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md) | TA053  | Estamos buscando información sobre el tema          |
 
 ### Licenciatura en Ciencias de Datos
