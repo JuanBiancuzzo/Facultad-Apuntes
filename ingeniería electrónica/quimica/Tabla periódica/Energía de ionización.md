@@ -20,7 +20,7 @@ vinculoFacultad:
 ---
 Es la [[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Energía|energía]] necesaria para arrancar un [[ingeniería electrónica/dispo/Física de semiconductores/Electrón|electrón]] desde un [[ingeniería en informática/estructura/Álgebra de Boole/Átomo|átomo]] en la fase gaseosa. También se puede pensar como la fuerza con la que el átomo retiene sus electrones y por consiguiente una fácil forma de iones positivos
 
-Las energías de ionización sucesivas para un mismo elemento crecen muy deprisa, debido a la dificultad creciente para arrancar un electrón cuando existe una carga positiva que le atrae y menos carga negativas que le repelen
+Las energías de ionización sucesivas para un mismo elemento crecen muy rápido, debido a la dificultad creciente para arrancar un electrón cuando existe una carga positiva que le atrae y menos carga negativas que le repelen
 
 El conocimiento de los valores relativos de las energías de ionización sirve para predecir si un elemento tenderá a forma un [[Compuesto iónico|compuesto iónico]] o [[Compuesto covalente|covalente]]
 

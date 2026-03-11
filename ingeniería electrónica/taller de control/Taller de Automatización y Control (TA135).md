@@ -9,7 +9,10 @@ nombreReducido: taller de control
 cuatri: 26C1
 plan: "2023"
 codigo: TA135
-referencias: []
+referencias: 
+  - "908"
+  - "1107"
+  - "1108"
 correlativas:
   - tipo: Materia
     materia: Control automático
