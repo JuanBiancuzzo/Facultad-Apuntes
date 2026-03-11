@@ -1,9 +1,9 @@
 ---
 tags:
   - facultad/resumen
-  - carrera/ingeniería-electrónica/taller-de-control/tema
-nombreResumen: Tema
-capitulo: 1
+  - carrera/ingeniería-electrónica/taller-de-control/Límites-de-implementación
+nombreResumen: Límites de implementación
+capitulo: 2
 referencias: []
 infoTemaMateria:
   materia: Taller de Automatización y Control
