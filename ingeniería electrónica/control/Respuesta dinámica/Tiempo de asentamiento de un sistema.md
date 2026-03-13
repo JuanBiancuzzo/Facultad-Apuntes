@@ -21,7 +21,7 @@ vinculoFacultad:
 ---
 El tiempo de asentamiento $t_s$ es el tiempo que toma el transitorio del [[Sistema|sistema]] en decaer dentro de un rango dado, donde en general se usa como margen un $1\%$ 
 
-![[Time-Domain specifications.png]]
+![[ingeniería electrónica/control/Respuesta dinámica/img/Time-Domain specifications.png]]
 
 ## Sistema de primer orden
 ---

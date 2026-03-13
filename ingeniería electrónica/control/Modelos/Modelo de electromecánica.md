@@ -4,11 +4,11 @@ etapa: sin-empezar
 referencias:
   - "872"
 tags:
-  - carrera/ingeniería-electrónica/control/Respuesta-dinámica
+  - carrera/ingeniería-electrónica/control/Modelos
   - nota/facultad
 vinculoFacultad:
-  - tema: Respuesta dinámica
-    capitulo: 1
+  - tema: Modelos
+    capitulo: 0
     materia: Control automático
     carrera: Ingeniería electrónica
 ---

@@ -14,6 +14,7 @@ tags:
   - nota/investigacion
 aliases:
   - Espacio de estados
+  - Ecuación de estado
   - Sistema en espacio de estados
   - Matriz de estados#^matriz-estados
   - Matriz de entrada#^matriz-entrada
@@ -32,9 +33,9 @@ vinculoFacultad:
 ---
 Un sistema dinámico es un [[Sistema|sistema]] donde su comportamiento cambia con el tiempo. El concepto de espacio de estados esta muy relacionado relacionado.
 
-El [[Espacio|espacio]] $n$-dimensional cuyos ejes de coordenadas están formados por el eje $x_1$, eje $x_2$, $\cdots$, eje $x_n$, donde $x_1,~ x_2,~ \cdots,~ x_n$ son las [[Variable de estado|variables de estado]], se denomina espacio de estados. Cualquier estado se puede representar como un punto en el espacio de estados
+El [[Espacio|espacio]] $n$-dimensional cuyos ejes de coordenadas están formados por el eje $x_1$, eje $x_2$, $\cdots$, eje $x_n$, donde $x_1,~ x_2,~ \cdots,~ x_n$ son las [[ingeniería electrónica/control/Respuesta dinámica/Variable de estado|variables de estado]], se denomina espacio de estados. Cualquier estado se puede representar como un punto en el espacio de estados
 
-El análisis de este se concentra en los $3$ tipos de variables que aparecen en el modelado de los sistemas dinámicos; las variables de entrada, las variables de salida y las variables de estados. Podemos saber cuantas variables de estamos observando la cantidad de sistemas integradores que aparezcan en el mismo [[Diagrama de bloques|diagrama de bloques]]
+El análisis de este se concentra en los $3$ tipos de variables que aparecen en el modelado de los sistemas dinámicos; las variables de entrada, las variables de salida y las variables de estados. Podemos saber cuantas variables de estamos observando la cantidad de sistemas integradores que aparezcan en el mismo [[ingeniería electrónica/control/Respuesta dinámica/Diagrama de bloques|diagrama de bloques]]
 
 Sea un sistema de múltiples entradas-múltiples salidas con $n$ integradores. Supóngase también que hay $r$ entradas $u_1(t),~ u_2(t),~ \cdots,~ u_r(t)$ y $m$ salidas $y_1(t),~ y_2(t),~ \cdots,~ y_m(t)$. Se definen las $n$ salidas de los integradores como variables de estado $x_1(t),~ x_2(t),~ \cdots,~ x_n(t)$. Entonces el sistema se puede describir mediante [[Ecuación diferencial ordinaria|ecuación diferencial]] de primer orden de la siguiente manera $$ \begin{align} 
     \dot{x}_1(t) &= f_1(x_1,~ x_2,~ \cdots,~ x_n;~ u_1,~ u_2,~ \cdots,~ u_r;~ t) \\
@@ -158,9 +159,11 @@ Vamos a tomar que el [[Sistema lineal|sistema es lineal]] o que fue linealizado 
     sX(s) - x(0) &= A X(s) + B U(s) \\
     Y(s) &= C X(s) + D U(s)
 \end{align} $$
-Con condiciones iniciales nulas, usando la primera ecuación, se puede reescribir de la siguiente forma $$ X(s) = (sI - A)^{-1} ~ B U(s) $$ donde $I$ es la [[Matriz identidad|matriz identidad]]
+Con condiciones iniciales nulas, usando la primera ecuación, se puede reescribir de la siguiente forma $$ X(s) = (s \mathbb{I} - A)^{-1} ~ B U(s) $$ donde $\mathbb{I}$ es la [[Matriz identidad|matriz identidad]]
 
-Sustituyendo está última ecuación, en la ecuación de salida, obtenemos $$ Y(S) = \left[ C ~ (sI - A)^{-1} ~ B + D \right] ~ U(s) $$ por lo que podemos tener la transferencia $$ G(s) = C ~ (sI - A)^{-1} ~ B + D $$ donde si $r > 1$ y $m > 1$, entonces $G(s)$ es una matriz de transferencia
+Sustituyendo está última ecuación, en la ecuación de salida, obtenemos $$ Y(S) = \left[ C ~ (s\mathbb{I} - A)^{-1} ~ B + D \right] ~ U(s) $$ por lo que podemos tener la transferencia $$ G(s) = C ~ (s\mathbb{I} - A)^{-1} ~ B + D $$ donde si $r > 1$ y $m > 1$, entonces $G(s)$ es una matriz de transferencia
+
+Se suele escribir a la función de transferencia $G(s)$ de forma racional irreducible $$ G(s) = \frac{N(s)}{D(s)} $$ donde $D(s)$ de denominador, es el [[ingeniería en informática/algebra 2/Transformaciones lineales/Polinomio característico del operador L|polinomio característico]] de $G(s)$ y $N(s)$ de numerador
 
 # Referencias
 ---

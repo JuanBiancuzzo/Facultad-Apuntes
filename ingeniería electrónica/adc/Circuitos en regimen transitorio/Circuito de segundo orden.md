@@ -31,7 +31,7 @@ Los pasos para resolver ejercicios de segundo orden son
 Debemos proponer una posible soluciones para nuestras soluciones, por lo que imaginemos que tenemos la siguiente ecuación diferencial $$ y'' + 2 \alpha ~ y' + \omega_0^2 ~ y = f(t) $$
 ### Homogénea
 ---
-Para la homogénea consideraremos que $f(t) = 0$, y plantearemos el [[Polinomio caracteristico del operador L|polinomio característico]] y consiguiendo sus raíces nos queda $$ \begin{align} 
+Para la homogénea consideraremos que $f(t) = 0$, y plantearemos el [[ingeniería en informática/algebra 2/Transformaciones lineales/Polinomio característico del operador L|polinomio característico]] y consiguiendo sus raíces nos queda $$ \begin{align} 
 	s_1 = - \alpha + \sqrt{\alpha^2 - \omega_0^2} && 
 	s_2 = - \alpha - \sqrt{\alpha^2 - \omega_0^2}
 \end{align} $$

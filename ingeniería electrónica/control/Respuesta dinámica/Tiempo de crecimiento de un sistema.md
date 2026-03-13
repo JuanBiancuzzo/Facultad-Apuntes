@@ -26,7 +26,7 @@ vinculoFacultad:
 ---
 El tiempo de crecimiento $t_r$ es el tiempo que toma el [[Sistema|sistema]] en alcanzar valores cercanos del punto de estabilización
 
-![[Time-Domain specifications.png]]
+![[ingeniería electrónica/control/Respuesta dinámica/img/Time-Domain specifications.png]]
 
 Las especificaciones del problema a resolver es lo que establece que valores son cercanos al punto de estabilización. En general es desde el $10\%$ hasta el $90\%$
 

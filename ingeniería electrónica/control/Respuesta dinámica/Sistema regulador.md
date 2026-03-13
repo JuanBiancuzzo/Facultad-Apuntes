@@ -19,7 +19,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Se lo llama [[Sistema|sistema]] regulador, aquel sistema el cual permita mantener el output estable y constante, a pesar de [[Perturbación|perturbaciones]] desconocidas
+Se lo llama [[Sistema|sistema]] regulador, aquel sistema el cual permita mantener el output estable y constante, a pesar de [[ingeniería electrónica/control/Respuesta dinámica/Perturbación|perturbaciones]] desconocidas
 
 # Referencias
 ---

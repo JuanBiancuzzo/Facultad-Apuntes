@@ -110,35 +110,35 @@ aliases:
 ## Capítulo 1: Introducción a los sistemas de control
 ---
 Se ve las siguientes definiciones
-* [[Variable controlada|Variable controlada]]
-* [[Planta|Planta]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Variable controlada|Variable controlada]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Planta|Planta]]
 * [[Proceso#En teoría de control|Proceso]]
 * [[Sistema|Sistema]]
-    * [[Sistema de control robusto|Sistema de control robusto]]
-    * [[Controlador open-loop|Sistema de control a lazo abierto]]
-    * [[Controlador closed-loop|Sistema de control a lazo cerrado]]
-* [[Perturbación|Perturbación]]
+    * [[ingeniería electrónica/control/Respuesta dinámica/Sistema de control robusto|Sistema de control robusto]]
+    * [[ingeniería electrónica/control/Respuesta dinámica/Controlador open-loop|Sistema de control a lazo abierto]]
+    * [[ingeniería electrónica/control/Respuesta dinámica/Controlador closed-loop|Sistema de control a lazo cerrado]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Perturbación|Perturbación]]
 
 ## Capítulo 2: Modelado matemático de sistemas de control
 ---
 Se da los fundamentos del análisis de [[Sistema|sistemas]] usando la [[Transferencia del sistema|función transferencia]] y la [[Respuesta en frecuencia|respuesta al impulso]]
 
-Después se ve los [[Controlador automático|sistema de control automático]] dado una lista de [[Controlador|controladores]]
-* [[Controlador de dos posiciones|Controladores de dos posiciones o on-off]]
-* [[Controlador proporcional|Controladores proporcionales]]
-* [[Controlador integral|Controladores integrales]]
-* [[Controlador proporcional-integral|Controladores proporcionales-integrales]]
-* [[Controlador proporcional-derivativo|Controladores proporcionales-derivativos]]
-* [[Controlador proporcional-integral-derivativo|Controladores proporcionales-integrales-derivativos]]
+Después se ve los [[ingeniería electrónica/control/Respuesta dinámica/Controlador automático|sistema de control automático]] dado una lista de [[ingeniería electrónica/control/Respuesta dinámica/Controlador|controladores]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Controlador de dos posiciones|Controladores de dos posiciones o on-off]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Controlador proporcional|Controladores proporcionales]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Controlador integral|Controladores integrales]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Controlador proporcional-integral|Controladores proporcionales-integrales]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Controlador proporcional-derivativo|Controladores proporcionales-derivativos]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Controlador proporcional-integral-derivativo|Controladores proporcionales-integrales-derivativos]]
 
 Se sigue con el modelado en el espacio de estados, viendo conceptos como
-* [[Teoría de control moderna|Teoría de control moderna]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Teoría de control moderna|Teoría de control moderna]]
 * Algunas definiciones de conceptos claves
     * [[Estado#En teoría de control|Estado]]
-    * [[Variable de estado|Variable y vector de estado]]
-    * [[Sistema dinámico|Espacio de estados y sus ecuaciones]]
+    * [[ingeniería electrónica/control/Respuesta dinámica/Variable de estado|Variable y vector de estado]]
+    * [[ingeniería electrónica/control/Respuesta dinámica/Sistema dinámico|Espacio de estados y sus ecuaciones]]
 
-Por último resolución usando la [[Transformada de Laplace|transformada de Laplace]] o [[Linealización Jacobiana|linealizando el problema]] alrededor de un [[Punto de equilibrio|punto de equilibrio]], para obtener la transferencia del sistema
+Por último resolución usando la [[Transformada de Laplace|transformada de Laplace]] o [[Linealización Jacobiana|linealizando el problema]] alrededor de un [[ingeniería electrónica/control/Respuesta dinámica/Punto de equilibrio|punto de equilibrio]], para obtener la transferencia del sistema
 
 ## Capítulo 3: Modelado matemático de sistemas mecánicos y sistemas electrónicos
 ---

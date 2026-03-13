@@ -1,6 +1,6 @@
 ---
 dia: 2025-05-02
-etapa: sin-empezar
+etapa: empezado
 referencias:
   - "877"
 aliases:
@@ -19,7 +19,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-
+Es una forma de representar las [[ingeniería electrónica/control/Respuesta dinámica/Sistema dinámico|ecuaciones de estados]] y de salida a partir de las [[ingeniería electrónica/señales/Sistemas LTI/Transferencia del sistema|función de transferencia]]. Partimos de la función de transferencia y la descomponemos en [[ingeniería electrónica/control/Respuesta dinámica/Descomposición en fracciones simples|fracciones simples]]
 
 # Referencias
 ---

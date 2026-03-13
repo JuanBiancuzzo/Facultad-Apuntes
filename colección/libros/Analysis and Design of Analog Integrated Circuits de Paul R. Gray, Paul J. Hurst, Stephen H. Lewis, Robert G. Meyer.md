@@ -183,7 +183,7 @@ Por último se muestra formas de crear [[Tensión|tensiones]] y [[Corriente elé
 
 ## Capítulo 8: Feedback
 ---
-Se ve la idea de un [[Controlador closed-loop#En circuitos de amplificador|circuito de amplificador realimentado]], con sus ventajas y desventajas. También se ven las $4$ configuraciones de realimentación
+Se ve la idea de un [[ingeniería electrónica/control/Respuesta dinámica/Controlador closed-loop#En circuitos de amplificador|circuito de amplificador realimentado]], con sus ventajas y desventajas. También se ven las $4$ configuraciones de realimentación
 1. [[Realimentación de un amplificador de tensión|Muestreo de tensión y suma de tensión]]
 2. [[Realimentación de un amplificador de transresistencia|Muestreo de tensión y suma de corriente]]
 3. [[Realimentación de un amplificador de transconductancia|Muestreo de corriente y suma de tensión]]

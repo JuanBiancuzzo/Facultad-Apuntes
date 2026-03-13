@@ -19,11 +19,11 @@ vinculoFacultad:
 ---
 Es el valor máxima del [[Sistema|sistema]] $M_p$ que supera el punto de estabilización, y en general se expresa como un porcentaje
 
-![[Time-Domain specifications.png]]
+![[ingeniería electrónica/control/Respuesta dinámica/img/Time-Domain specifications.png]]
 
 ## Sistema de primer orden
 ---
-Por el mismo motivo que vimos en el [[Tiempo de pico máximo de un sistema#Sistema de primer orden|tiempo de pico máximo]], no se puede tener un pico para un sistema de primer orden
+Por el mismo motivo que vimos en el [[ingeniería electrónica/control/Respuesta dinámica/Tiempo de pico máximo de un sistema#Sistema de primer orden|tiempo de pico máximo]], no se puede tener un pico para un sistema de primer orden
 
 ## Sistema de segundo orden
 ---

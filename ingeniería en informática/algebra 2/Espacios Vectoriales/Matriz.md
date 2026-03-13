@@ -6,6 +6,7 @@ aliases:
   - Matriz inversa#Matriz inversa
   - Traza#Traza
   - Determinante#Determinante
+  - Matriz adjunta#Adjunta
 tags:
   - carrera/ingeniería-electrónica/algebra-2/Espacios-Vectoriales
   - carrera/ingeniería-en-informática/algebra-2/Espacios-Vectoriales
@@ -20,7 +21,13 @@ vinculoFacultad:
     capitulo: 1
     materia: Robótica móvil
     carrera: Ingeniería electrónica
+etapa: empezado
+referencias:
+  - "1109"
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 Una matriz es un arreglo bidimensional de números, de $\mathbb{k}^{m \times n}$ 
@@ -71,9 +78,7 @@ Dados dos [[ingeniería electrónica/robotica movil/Repaso álgebra/Vector|vecto
 
 ## Determinante
 ---
-Solo definido para matrices cuadradas
-
-Para las matrices de $2 \times 2$, sea $A = [a_{ij}]$ y $|A| = \det(A)$ entonces $$ \begin{vmatrix}
+Solo definido para matrices cuadradas. Para las matrices de $2 \times 2$, sea $A = [a_{ij}]$ y $|A| = \det(A)$ entonces $$ \begin{vmatrix}
     a_{11} & a_{12} \\
     a_{21} & a_{22} \\
 \end{vmatrix} = a_{11} ~ a_{22} - a_{12} ~ a_{21} $$
@@ -95,3 +100,13 @@ Para las matrices de $3 \times 3$, sea $A = [a_{ij}]$ y $|A| = \det(A)$ entonces
     * Si $B$ resulta de $A$ al sumar el múltiplo de una fila a otra fila, entonces $$ \det(B) = \det(A) $$
 * Transpuesta $$ \det\left( A^T \right) = \det(A) $$
 * Multiplicación $$ \det( A ~ B ) = \det(A) ~ \det(B) $$
+
+## Adjunta
+---
+Solo definido para matrices cuadradas. La matriz adjunta, denotada $\text{adj}(A)$ de la matriz $A$ es la transpuesta de su [[Matriz de cofactores|matriz de cofactores]] $C$ $$ \text{adj}(A) = C^T $$
+El producto entre la matriz $A$ y la matriz adjunta da una matriz diagonal escalado por el determinante de la matriz original $$ A ~ \text{adj}(A) = \det(A) ~ \mathbb{I} $$ donde $\mathbb{I}$ es la identidad del mismo tamaño de $A$, de esta expresión se puede definir el inverso de $A$ como $$ A^{-1} = \frac{\text{adj}(A)}{\det(A)} $$
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

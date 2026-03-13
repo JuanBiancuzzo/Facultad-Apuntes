@@ -24,7 +24,7 @@ Un tipo común de [[Regulador de tensión|regulador de tensión]] es los regulad
 
 ![[Regulador de tensión.png]]
 
-El nombre de "serie" viene del hecho que la [[Tensión|tensión]] de salida [[Variable controlada|controlada]] por un [[Transistor|transistor]] en serie con la salida
+El nombre de "serie" viene del hecho que la [[Tensión|tensión]] de salida [[ingeniería electrónica/control/Respuesta dinámica/Variable controlada|controlada]] por un [[Transistor|transistor]] en serie con la salida
 
 Notemos que esta configuración es [[Realimentación de un amplificador de tensión|MVSV]], donde podemos interpretar que la tensión de referencias $V_{ref}$ es el generador y el [[Divisor de tensión|divisor de tensión]] es el bloque realimentador
 

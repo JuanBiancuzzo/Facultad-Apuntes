@@ -1,6 +1,6 @@
 ---
 etapa: empezado
-estado: Falta desde Root locus en adelantes
+estado: Falta desde Root locus en adelante
 tags:
   - facultad/materia
   - carrera/ingeniería-electrónica/control

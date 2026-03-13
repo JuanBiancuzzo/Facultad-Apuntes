@@ -22,7 +22,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Los [[Sistema|sistemas]] en los cuales la salida no tiene efecto sobre la acción de control se denominan sistemas de control en lazo abierto. En otras palabras, si el [[Controlador|controlador]] no usa las mediciones de la salida del sistema siendo controladas, este sistema se llama controlador open-loop
+Los [[Sistema|sistemas]] en los cuales la salida no tiene efecto sobre la acción de control se denominan sistemas de control en lazo abierto. En otras palabras, si el [[ingeniería electrónica/control/Respuesta dinámica/Controlador|controlador]] no usa las mediciones de la salida del sistema siendo controladas, este sistema se llama controlador open-loop
 
 ```tikz
 \usetikzlibrary{math}
@@ -54,7 +54,7 @@ Los [[Sistema|sistemas]] en los cuales la salida no tiene efecto sobre la acció
 
 La expresión open-loop refiere al hecho que no hay ningún [[Camino#Camino simple (Path)|camino]] que vuelve a la sección del controlador. Las variables controladas $u$ son independiente de las variables de salida $y$
 
-Algo que todavía no se tuvo en cuenta es el hecho de las [[Perturbación|perturbaciones]], y como las maneja un sistema a lazo abierto. Este sistema lo que puede hacer (sin leer la salida) es [[Sensores|censar]] la perturbación y generar una señal que cancele la perturbación
+Algo que todavía no se tuvo en cuenta es el hecho de las [[ingeniería electrónica/control/Respuesta dinámica/Perturbación|perturbaciones]], y como las maneja un sistema a lazo abierto. Este sistema lo que puede hacer (sin leer la salida) es [[Sensores|censar]] la perturbación y generar una señal que cancele la perturbación
 
 ```tikz
 \usetikzlibrary{math}
@@ -114,7 +114,7 @@ Algo que todavía no se tuvo en cuenta es el hecho de las [[Perturbación|pertur
 \end{document}
 ```
 
-Como este controlador intenta igualar, en forma contraria, a las perturbaciones entonces necesita un buen [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]] de la [[Planta|planta]], en caso contrario podría producir efectos no deseados y sin forma de corregirlos
+Como este controlador intenta igualar, en forma contraria, a las perturbaciones entonces necesita un buen [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]] de la [[ingeniería electrónica/control/Respuesta dinámica/Planta|planta]], en caso contrario podría producir efectos no deseados y sin forma de corregirlos
 
 # Referencias
 ---

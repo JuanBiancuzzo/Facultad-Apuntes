@@ -115,12 +115,12 @@ volumen: 2018
 ## Capítulo 1: An Overview and Brief History of Feedback Control
 ---
 Inicialmente describimos una clasificación para los [[Sistema|sistemas]] de control
-* [[Controlador open-loop|Open-loop control]]
-* [[Controlador closed-loop|Closed-loop control]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Controlador open-loop|Open-loop control]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Controlador closed-loop|Closed-loop control]]
 
 Como mencionar algunos sistemas como
-* [[Sistema regulador|Regulador]]
-* [[Tracking system|Tracking system]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Sistema regulador|Regulador]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Tracking system|Tracking system]]
 
 ## Capítulo 2: Dynamic Models
 ---
@@ -168,7 +168,7 @@ Inicialmente se hace una repaso de concepto de
 * La [[Transformada de Laplace|transformada de Laplace]] y su inversa
 
 Después de eso, vamos la forma de modelar sistemas, usando 
-* [[Diagrama de bloques|Diagramas de bloques]] y sus operaciones
+* [[ingeniería electrónica/control/Respuesta dinámica/Diagrama de bloques|Diagramas de bloques]] y sus operaciones
 
 Vemos un mayor análisis del efecto que tienen los polos y los ceros de una transferencia, entre esas
 * Su [[Sistema estable|estabilidad]]
@@ -179,16 +179,16 @@ Vemos un mayor análisis del efecto que tienen los polos y los ceros de una tran
 ---
 Vemos los $4$ criterios para el diseño de un controlador
 * [[Sistema estable|Estabilidad]]
-* [[Tracking system|Tracking]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Tracking system|Tracking]]
 * [[Sensibilidad de un sistema|Sensibilidad]] y la [[Sensibilidad complementaria de un sistema|sensibilidad complementaria]]
 * [[Regulación de un sistema|Regulación]]
 
-Después vemos como se van pueden ir creando los [[Controlador automático|controladores]] viendo los distintos aspectos de los siguientes controladores
-* [[Controlador proporcional|Controlador proporcional]]
-* [[Controlador integral|Controlador integral]]
+Después vemos como se van pueden ir creando los [[ingeniería electrónica/control/Respuesta dinámica/Controlador automático|controladores]] viendo los distintos aspectos de los siguientes controladores
+* [[ingeniería electrónica/control/Respuesta dinámica/Controlador proporcional|Controlador proporcional]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Controlador integral|Controlador integral]]
 * [[Controlador derivativo|Controlador derivativo]]
-* [[Controlador proporcional-integral|Controlador proporcional-integral (PI)]]
-* [[Controlador proporcional-integral-derivativo|Controlador proporcional-integral-derivativo (PID)]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Controlador proporcional-integral|Controlador proporcional-integral (PI)]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Controlador proporcional-integral-derivativo|Controlador proporcional-integral-derivativo (PID)]]
 
 Por último agrega un método para reducir el error del input a la planta
 

@@ -99,9 +99,9 @@ Se lo puede definir un buen controlador si proporciona
 ---
 Un sistema que mantiene una relación determinada entre la salida y la entrada de referencia, comparándolas y usando la diferencia como medio de control, se denomina sistema de control realimentado
 
-El control realimentado se refiere a una operación que, en presencia de [[Perturbación|perturbaciones]], tiende a reducir la diferencia entre la salida de un [[Sistema|sistema]] y alguna entrada de referencia, y lo realiza tomando en cuenta esta diferencia. Aquí sólo se especifican con este término las perturbaciones impredecibles, ya que las perturbaciones predecibles o conocidas siempre pueden compensarse dentro del sistema
+El control realimentado se refiere a una operación que, en presencia de [[ingeniería electrónica/control/Respuesta dinámica/Perturbación|perturbaciones]], tiende a reducir la diferencia entre la salida de un [[Sistema|sistema]] y alguna entrada de referencia, y lo realiza tomando en cuenta esta diferencia. Aquí sólo se especifican con este término las perturbaciones impredecibles, ya que las perturbaciones predecibles o conocidas siempre pueden compensarse dentro del sistema
 
-En estos sistemas de control se alimenta al [[Controlador|controlador]] la [[Señal|señal]] de error de actuación, que es la diferencia entre la [[Señal|señal]] de entrada y la señal realimentada, con el fin de reducir el error y llevar la salida del sistema a un valor deseado
+En estos sistemas de control se alimenta al [[ingeniería electrónica/control/Respuesta dinámica/Controlador|controlador]] la [[Señal|señal]] de error de actuación, que es la diferencia entre la [[Señal|señal]] de entrada y la señal realimentada, con el fin de reducir el error y llevar la salida del sistema a un valor deseado
 
 El término control en lazo cerrado siempre implica el uso de una acción de control realimentado para reducir el error del sistema
 
@@ -111,7 +111,7 @@ El término control en lazo cerrado siempre implica el uso de una acción de con
 
 ### Realimentación negativa
 ---
-Dado el siguiente [[Diagrama de bloques|diagrama de bloques]] 
+Dado el siguiente [[ingeniería electrónica/control/Respuesta dinámica/Diagrama de bloques|diagrama de bloques]] 
 
 ```tikz
 \usetikzlibrary{math}
@@ -338,7 +338,7 @@ Que si tomamos la derivada como pequeños cambios en los valores de las ganancia
 \frac{\delta A}{A} &= \frac{1 + af}{a} ~ \frac{\delta a}{(1 + af)^2} \\
 \frac{\delta A}{A} &= \frac{\frac{\delta a}{a}}{1 + af} = \frac{\frac{\delta a}{a}}{1 + T}
 \end{align} $$
-Esto muestra que la ganancia del amplificador realimentado tiene una relación de cambio $\frac{1}{T}$ más chica que la relación de cambio del amplificador sin realimentar, disminuyendo las [[Perturbación|perturbación]] del bloque $a$
+Esto muestra que la ganancia del amplificador realimentado tiene una relación de cambio $\frac{1}{T}$ más chica que la relación de cambio del amplificador sin realimentar, disminuyendo las [[ingeniería electrónica/control/Respuesta dinámica/Perturbación|perturbación]] del bloque $a$
 
 ### Aumento de ancho de banda
 ---

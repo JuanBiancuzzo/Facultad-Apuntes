@@ -27,7 +27,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Con la finalidad de obtener un [[Modelo matemático|modelo matemático]] [[Sistema lineal|lineal]] para un [[Sistema lineal|sistema no lineal]], se supone que las [[Variable de estado|variables]] sólo se desvían ligeramente de alguna condición de operación. Considérese un [[Sistema|sistema]] cuya entrada es $x(t)$ y cuya salida es $y(t)$. La relación entre $y(t)$ y $x(t)$ se obtiene mediante $$ y = f(x) $$
+Con la finalidad de obtener un [[ingeniería electrónica/control/Respuesta dinámica/Modelo matemático|modelo matemático]] [[Sistema lineal|lineal]] para un [[Sistema lineal|sistema no lineal]], se supone que las [[ingeniería electrónica/control/Respuesta dinámica/Variable de estado|variables]] sólo se desvían ligeramente de alguna condición de operación. Considérese un [[Sistema|sistema]] cuya entrada es $x(t)$ y cuya salida es $y(t)$. La relación entre $y(t)$ y $x(t)$ se obtiene mediante $$ y = f(x) $$
 Si la condición de operación normal corresponde a $\bar{x}$ y $\bar{y}$, la ecuación anterior se expande en [[Serie de Taylor|serie de Taylor]] alrededor de ese punto, del modo $$ y = \bar{y} + \frac{d}{dx}f(\bar{x}) ~ (x - \bar{x}) + \frac{1}{2!} \frac{d^2}{dx^2}f(\bar{x}) ~ (x - \bar{x})^2 + \cdots = \sum_{n = 0}^{\infty} \frac{1}{n!} \frac{d^n}{dx^n} f(\bar{x}) ~ (x - \bar{x})^n $$
 Si la variación $x - \bar{x}$ es pequeña, es posible no considerar los términos de orden superior en $x - \bar{x}$. Entonces, usando el [[ingeniería electrónica/analisis 3/Series/Serie de Taylor|polinomio de Taylor de primer orden]] $$ y = \bar{y} + K ~ (x - \bar{x}) $$ donde $K = \frac{d}{dx} f(x) \bigg|_{x = \bar{x}}$  
 
@@ -130,7 +130,7 @@ Expresándolo por cada una de sus $i$-esimo y $j$-esimo componente, respectivame
         \displaystyle \frac{\partial}{\partial u_1} h_N & \cdots & \displaystyle \frac{\partial}{\partial u_M} h_N 
     \end{bmatrix}_{\displaystyle  (\bar{x},~ \bar{u})}
 \end{array} $$
-Tomando un [[Punto de equilibrio|punto de equilibrio]] $(x_e,~ u_e)$, recordando que $f_i(x_e,~ u_e) = 0$, $\forall i \in [1,~ \cdots,~ N]$, y usando el cambio de variable $z = x - x_e$, $v = u - u_e$ e $w = y - h(x_e,~ u_e)$ obtenemos $$ \begin{array}{c} 
+Tomando un [[ingeniería electrónica/control/Respuesta dinámica/Punto de equilibrio|punto de equilibrio]] $(x_e,~ u_e)$, recordando que $f_i(x_e,~ u_e) = 0$, $\forall i \in [1,~ \cdots,~ N]$, y usando el cambio de variable $z = x - x_e$, $v = u - u_e$ e $w = y - h(x_e,~ u_e)$ obtenemos $$ \begin{array}{c} 
     \dot{z} = Az + Bv, && w = Cz + Dv
 \end{array} $$ con las mismas matrices de antes
 
@@ -141,7 +141,7 @@ Tomando un sistema de una entrada $u \in \mathbb{R}$ y una salida $y \in \mathbb
     y &= h(x,~ u), & y &\in \mathbb{R}
 \end{align} $$ donde vamos a tomar la condición de operación $(\bar{x},~ \bar{u})$ 
 
-Vamos a definir nuevas [[Variable de estado|variables de estado]] $z$, como también variables de entrada $v$ y variables de salida $w$ $$ \begin{array}{c} 
+Vamos a definir nuevas [[ingeniería electrónica/control/Respuesta dinámica/Variable de estado|variables de estado]] $z$, como también variables de entrada $v$ y variables de salida $w$ $$ \begin{array}{c} 
     z = x - \bar{x}, && v = u - \bar{u}, && w = y - h(\bar{x},~ \bar{u})
 \end{array} $$ donde todas estas variables son cercanas a $0$ cuando estamos cerca de la condición de operación
 

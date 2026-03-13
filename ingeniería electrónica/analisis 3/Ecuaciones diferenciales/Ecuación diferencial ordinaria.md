@@ -30,7 +30,7 @@ vinculoFacultad:
 ---
 La [[Función|función]] incógnita depende de una sola variable y se presenta en la ecuación con sus derivadas hasta cierto orden
 
-Se puede garantizar la existencia y la unicidad, si la función cumple con la [[Lipschitz continuity|continuidad de Lipschitz]]
+Se puede garantizar la existencia y la unicidad, si la función cumple con la [[ingeniería electrónica/control/Respuesta dinámica/Lipschitz continuity|continuidad de Lipschitz]]
 
 ## Punto de vista de los sistemas
 ---

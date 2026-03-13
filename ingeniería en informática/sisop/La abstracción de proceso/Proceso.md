@@ -39,7 +39,7 @@ El diccionario Merriam-Webster define un proceso como una operación o un desarr
 
 ## En teoría de control
 ---
-Un proceso es cualquier operación que se va a controlar. El componente central de un [[Controlador closed-loop|sistema feedback]] es el proceso, el cual su salida es controlada
+Un proceso es cualquier operación que se va a controlar. El componente central de un [[ingeniería electrónica/control/Respuesta dinámica/Controlador closed-loop|sistema feedback]] es el proceso, el cual su salida es controlada
 
 ## En ciencia de computación
 ---

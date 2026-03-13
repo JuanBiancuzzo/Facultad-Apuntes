@@ -18,7 +18,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Para un [[Controlador automático|controlador]] con [[Controlador automático#^accion-control|acción de control]] proporcional, la relación entre la salida del controlador $u(t)$ y la señal de error $e(t)$ es $$ u(t) = K_p ~ e(t) $$ o bien, en cantidades transformadas por el [[Transformada de Laplace|método de Laplace]], $$ \frac{U(s)}{E(s)} = K
+Para un [[ingeniería electrónica/control/Respuesta dinámica/Controlador automático|controlador]] con [[ingeniería electrónica/control/Respuesta dinámica/Controlador automático#^accion-control|acción de control]] proporcional, la relación entre la salida del controlador $u(t)$ y la señal de error $e(t)$ es $$ u(t) = K_p ~ e(t) $$ o bien, en cantidades transformadas por el [[Transformada de Laplace|método de Laplace]], $$ \frac{U(s)}{E(s)} = K
 _p $$ donde $K_p$ se considera la ganancia proporcional
 
 Cualquiera que sea el mecanismo real y la forma de la potencia de operación, el controlador proporcional es, en esencia, un [[Amplificador operacional|amplificador]] con una [[Ganancia|ganancia]] ajustable

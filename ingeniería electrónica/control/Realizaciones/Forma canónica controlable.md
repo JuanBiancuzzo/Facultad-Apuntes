@@ -20,7 +20,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Partiendo de una [[Transferencia del sistema#^bipropia|transferencia bipropia]] de un [[Sistema lineal e invariante en el tiempo|sistema LTI]] dada por $$ \frac{d^n}{dt^n} y + a_1 \frac{d^{n - 1}}{dt^{n - 1}} y + \cdots + a_n y = u $$ donde podemos definir las [[Variable de estado|variables de estado]] de la siguiente forma $$ x = \begin{bmatrix} 
+Partiendo de una [[Transferencia del sistema#^bipropia|transferencia bipropia]] de un [[Sistema lineal e invariante en el tiempo|sistema LTI]] dada por $$ \frac{d^n}{dt^n} y + a_1 \frac{d^{n - 1}}{dt^{n - 1}} y + \cdots + a_n y = u $$ donde podemos definir las [[ingeniería electrónica/control/Respuesta dinámica/Variable de estado|variables de estado]] de la siguiente forma $$ x = \begin{bmatrix} 
     x_1 \\ x_2 \\ \vdots \\ x_{n - 1} \\ x_n
 \end{bmatrix} = \begin{bmatrix} 
     \displaystyle \frac{d^{m-1}}{dt^{n-1}} y \\
@@ -37,7 +37,7 @@ Partiendo de una [[Transferencia del sistema#^bipropia|transferencia bipropia]] 
 \end{bmatrix} x + \begin{bmatrix} 1 \\ 0 \\ 0 \\ \vdots \\ 0 \end{bmatrix} u, ~~~~~ y = x_n $$
 Generalizando lo visto anteriormente, tenemos el sistema $$ \frac{d^n}{dt^n} y + a_1 \frac{d^{n - 1}}{dt^{n - 1}} y + \cdots + a_n y = b_0 \frac{d^n}{dt^n} u + b_1 \frac{d^{n - 1}}{dt^{n - 1}} u + \cdots + b_n u $$
 
-Podemos graficar el [[Diagrama de bloques|diagrama de bloques]] 
+Podemos graficar el [[ingeniería electrónica/control/Respuesta dinámica/Diagrama de bloques|diagrama de bloques]] 
 
 ```tikz
 \usetikzlibrary{math}
@@ -174,7 +174,7 @@ Podemos graficar el [[Diagrama de bloques|diagrama de bloques]]
 \end{document}
 ```
 
-Por lo tanto encontrar la [[Sistema dinámico#^matriz-estados|matriz de estados]] $A$, [[Sistema dinámico#^matriz-entrada|matriz de entrada]] $B$, [[Sistema dinámico#^matriz-salida|matriz de salida]] $C$ y la [[Sistema dinámico#^matriz-directa|matriz de transmisión directa]] $D$ $$ \begin{align}
+Por lo tanto encontrar la [[ingeniería electrónica/control/Respuesta dinámica/Sistema dinámico#^matriz-estados|matriz de estados]] $A$, [[ingeniería electrónica/control/Respuesta dinámica/Sistema dinámico#^matriz-entrada|matriz de entrada]] $B$, [[ingeniería electrónica/control/Respuesta dinámica/Sistema dinámico#^matriz-salida|matriz de salida]] $C$ y la [[ingeniería electrónica/control/Respuesta dinámica/Sistema dinámico#^matriz-directa|matriz de transmisión directa]] $D$ $$ \begin{align}
     \dot{x}(t) &= \underbrace{\begin{bmatrix} 
         -a_1 & -a_2 & \cdots & -a_{n - 1} & -a_n \\
         1 & 0 & \cdots & 0 & 0 \\

@@ -19,7 +19,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-La señal de control o variable manipulada es la cantidad o condición que el [[Controlador|controlador]] modifica para afectar el valor de la [[Variable controlada|variable controlada]]
+La señal de control o variable manipulada es la cantidad o condición que el [[ingeniería electrónica/control/Respuesta dinámica/Controlador|controlador]] modifica para afectar el valor de la [[ingeniería electrónica/control/Respuesta dinámica/Variable controlada|variable controlada]]
 
 # Referencias
 ---

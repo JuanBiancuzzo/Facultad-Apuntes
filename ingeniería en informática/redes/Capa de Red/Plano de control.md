@@ -22,6 +22,6 @@ Los [[Routing algorithms|routing algorithms]] determinan el contenido de la [[Fo
 
 ## Control centralizado
 ---
-Existen un [[Controlador|controlador]] lógico y centrado que computa y distribuye las [[Forwarding table|tablas]] de envío para cada router. El controlador interactúa con el [[Control agent|control agent]] de cada router a través de un protocolo definido
+Existen un [[ingeniería electrónica/control/Respuesta dinámica/Controlador|controlador]] lógico y centrado que computa y distribuye las [[Forwarding table|tablas]] de envío para cada router. El controlador interactúa con el [[Control agent|control agent]] de cada router a través de un protocolo definido
 
 A pesar de que se lo trata como un controlador único, este puede ser un sistema distribuido

@@ -17,9 +17,9 @@ vinculoFacultad:
 ```
 # Definición
 ---
-El primer paso para el diseño de un sistema de control es la obtención del [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]] matemático de la [[Planta|planta]]. Este proceso introduce un error ya que siempre va a diferencias entre el modelo y la planta en el mundo físico
+El primer paso para el diseño de un sistema de control es la obtención del [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]] matemático de la [[ingeniería electrónica/control/Respuesta dinámica/Planta|planta]]. Este proceso introduce un error ya que siempre va a diferencias entre el modelo y la planta en el mundo físico
 
-Una aproximación razonable para asegurar que el [[Controlador|controlador]] diseñado basado en un modelo es incorporar la [[Incertidumbre|incertidumbre]] introducidas por las [[Perturbación|perturbaciones]]. El sistema de control diseñado basado en esta aproximación se denomina sistema de control robusto
+Una aproximación razonable para asegurar que el [[ingeniería electrónica/control/Respuesta dinámica/Controlador|controlador]] diseñado basado en un modelo es incorporar la [[Incertidumbre|incertidumbre]] introducidas por las [[ingeniería electrónica/control/Respuesta dinámica/Perturbación|perturbaciones]]. El sistema de control diseñado basado en esta aproximación se denomina sistema de control robusto
 
 Si se supone que la planta real que se desea controlar es $\tilde{G}(s)$ y que el modelo matemático de la planta real es $G(s)$. Donde pueden estar relacionadas por un factor multiplicativo del tipo $$ \tilde{G}(s) = G(s) ~ [1 + \Delta(S)] $$ o por un factor aditivo $$ \tilde{G}(s) = G(s) + \Delta(S) $$ o de otras formas 
 

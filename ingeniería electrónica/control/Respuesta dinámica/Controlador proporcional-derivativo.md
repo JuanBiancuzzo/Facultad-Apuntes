@@ -19,7 +19,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Para un [[Controlador automático|controlador]] con [[Controlador automático#^accion-control|acción de control]] [[Controlador proporcional|proporcional]] y derivativa (PD) y se define su acción de control como $$ u(t) = K_p ~ e(t) + K_p ~ T_d ~ \frac{de(t)}{dt} $$ 
+Para un [[ingeniería electrónica/control/Respuesta dinámica/Controlador automático|controlador]] con [[ingeniería electrónica/control/Respuesta dinámica/Controlador automático#^accion-control|acción de control]] [[ingeniería electrónica/control/Respuesta dinámica/Controlador proporcional|proporcional]] y derivativa (PD) y se define su acción de control como $$ u(t) = K_p ~ e(t) + K_p ~ T_d ~ \frac{de(t)}{dt} $$ 
 La [[Transferencia del sistema|función de transferencia]] es $$ \frac{U(s)}{E(s)} = K_p ~ (1 + T_d ~ s) $$ donde $T_d$ es el tiempo derivativo ^tiempo-derivativo
 
 # Referencias

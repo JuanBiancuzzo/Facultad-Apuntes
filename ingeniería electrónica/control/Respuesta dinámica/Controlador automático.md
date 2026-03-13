@@ -19,7 +19,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Un [[Controlador|controlador]] automático compara el valor real de la salida de una [[Planta|planta]] con la entrada de referencia (el valor deseado), determina la desviación y produce una [[Señal de control|señal de control]] que reduce la desviación a $0$ o a un valor pequeño 
+Un [[ingeniería electrónica/control/Respuesta dinámica/Controlador|controlador]] automático compara el valor real de la salida de una [[ingeniería electrónica/control/Respuesta dinámica/Planta|planta]] con la entrada de referencia (el valor deseado), determina la desviación y produce una [[ingeniería electrónica/control/Respuesta dinámica/Señal de control|señal de control]] que reduce la desviación a $0$ o a un valor pequeño 
 
 La manera en la cual el controlador automático produce la señal de control  se denomina acción de control ^accion-control
 
@@ -125,17 +125,17 @@ La manera en la cual el controlador automático produce la señal de control  se
 \end{document}
 ```
 
-Este [[Diagrama de bloques|diagrama de bloques]] de un [[Sistema|sistema]] de control industrial que consiste en un controlador automático, un [[Actuadores|actuador]], una planta y un [[Sensores|sensor]]. El controlador detecta la señal de error, que por lo general, está a un nivel de potencia muy bajo, y la amplifica a un nivel lo suficientemente alto. La salida de un controlador automático alimenta a un actuador
+Este [[ingeniería electrónica/control/Respuesta dinámica/Diagrama de bloques|diagrama de bloques]] de un [[Sistema|sistema]] de control industrial que consiste en un controlador automático, un [[Actuadores|actuador]], una planta y un [[Sensores|sensor]]. El controlador detecta la señal de error, que por lo general, está a un nivel de potencia muy bajo, y la amplifica a un nivel lo suficientemente alto. La salida de un controlador automático alimenta a un actuador
 
 ## Clasificación
 ---
 Los controladores industriales se clasifican, de acuerdo con sus acciones de control
-* [[Controlador de dos posiciones|Controladores de dos posiciones o on-off]]
-* [[Controlador proporcional|Controladores proporcionales]]
-* [[Controlador integral|Controladores integrales]]
-* [[Controlador proporcional-integral|Controladores proporcionales-integrales]]
-* [[Controlador proporcional-derivativo|Controladores proporcionales-derivativos]]
-* [[Controlador proporcional-integral-derivativo|Controladores proporcionales-integrales-derivativos]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Controlador de dos posiciones|Controladores de dos posiciones o on-off]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Controlador proporcional|Controladores proporcionales]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Controlador integral|Controladores integrales]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Controlador proporcional-integral|Controladores proporcionales-integrales]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Controlador proporcional-derivativo|Controladores proporcionales-derivativos]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Controlador proporcional-integral-derivativo|Controladores proporcionales-integrales-derivativos]]
 
 # Referencias
 ---

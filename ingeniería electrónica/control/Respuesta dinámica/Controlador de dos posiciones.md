@@ -20,7 +20,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-En un [[Sistema|sistema]] de control de dos posiciones es un [[Controlador automático|controlador]] donde el elemento de actuación sólo tiene dos posiciones fijas que, en muchos casos, son simplemente encendido y apagado. El control de dos posiciones o de encendido y apagado es relativamente simple y barato
+En un [[Sistema|sistema]] de control de dos posiciones es un [[ingeniería electrónica/control/Respuesta dinámica/Controlador automático|controlador]] donde el elemento de actuación sólo tiene dos posiciones fijas que, en muchos casos, son simplemente encendido y apagado. El control de dos posiciones o de encendido y apagado es relativamente simple y barato
 
 Supóngase que la [[Señal|señal]] de salida del controlador es $u(t)$ y que la señal de error es $e(t)$. En el control de dos posiciones, la señal $u(t)$ permanece en un valor ya sea [[Máximo|máximo]] o [[Mínimo|mínimo]], dependiendo de si la señal de error es positiva o negativa. De este modo $$ u(t) = \begin{cases} 
     U_1, && \text{para} ~~ e(t) > 0 \\
@@ -29,13 +29,13 @@ Supóngase que la [[Señal|señal]] de salida del controlador es $u(t)$ y que la
 
 También puede existir una brecha diferencial, donde $u(t)$ conserva su valor hasta que la señal de error haya superado un umbral mayor a $0$. Este comportamiento se puede modelar con una [[Curva de Histéresis|curva de histéresis]]. Este comportamiento puede ser deseado para evitar la frecuente apagado y prendido de un sistema
 
-Veamos el [[Diagrama de bloques|diagrama de bloques]] en ambos casos ![[Controlador de dos posiciones.png]]
+Veamos el [[ingeniería electrónica/control/Respuesta dinámica/Diagrama de bloques|diagrama de bloques]] en ambos casos ![[ingeniería electrónica/control/Respuesta dinámica/img/Controlador de dos posiciones.png]]
 
 ## Ejemplo
 ---
-Como ejemplo, si tenemos una [[Variable de estado|variable de estado]] $q(t)$, podemos ver el efecto que tiene esta brecha diferencial
+Como ejemplo, si tenemos una [[ingeniería electrónica/control/Respuesta dinámica/Variable de estado|variable de estado]] $q(t)$, podemos ver el efecto que tiene esta brecha diferencial
 
-![[Ejemplo controlador de dos posiciones con brecha diferencial.png]]
+![[ingeniería electrónica/control/Respuesta dinámica/img/Ejemplo controlador de dos posiciones con brecha diferencial.png]]
 
 # Referencias
 ---

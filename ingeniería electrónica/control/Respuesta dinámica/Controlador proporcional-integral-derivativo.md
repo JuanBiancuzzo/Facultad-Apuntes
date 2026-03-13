@@ -19,14 +19,14 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Para un [[Controlador automático|controlador]] con [[Controlador automático#^accion-control|acción de control]] [[Controlador proporcional|proporcional]], [[Controlador integral|integral]] y derivativa (PID). Esta acción combinada tiene las ventajas de cada una de las $3$ acciones de control individuales
+Para un [[ingeniería electrónica/control/Respuesta dinámica/Controlador automático|controlador]] con [[ingeniería electrónica/control/Respuesta dinámica/Controlador automático#^accion-control|acción de control]] [[ingeniería electrónica/control/Respuesta dinámica/Controlador proporcional|proporcional]], [[ingeniería electrónica/control/Respuesta dinámica/Controlador integral|integral]] y derivativa (PID). Esta acción combinada tiene las ventajas de cada una de las $3$ acciones de control individuales
 
-La ecuación de un controlador con esta acción combinada está dado por $$ u(t) = K_p ~ e(t) + \frac{K_p}{T_i} \int_0^t e(t) ~ dt + K_p ~ T_d \frac{de(t)}{dt} $$ donde $T_i$ es [[Controlador proporcional-integral#^tiempo-integral|tiempo integral]], y $T_d$ es el [[Controlador proporcional-derivativo#^tiempo-derivativo|tiempo derivativo]]
+La ecuación de un controlador con esta acción combinada está dado por $$ u(t) = K_p ~ e(t) + \frac{K_p}{T_i} \int_0^t e(t) ~ dt + K_p ~ T_d \frac{de(t)}{dt} $$ donde $T_i$ es [[ingeniería electrónica/control/Respuesta dinámica/Controlador proporcional-integral#^tiempo-integral|tiempo integral]], y $T_d$ es el [[ingeniería electrónica/control/Respuesta dinámica/Controlador proporcional-derivativo#^tiempo-derivativo|tiempo derivativo]]
 
 La [[Transferencia del sistema|función de transferencia]] es $$ \frac{U(s)}{E(s)} = K_p ~ \left( 1 + \frac{1}{T_i ~ s} + T_d ~ s \right) $$
-Veamos el [[Diagrama de bloques|diagrama de bloques]] de este controlador
+Veamos el [[ingeniería electrónica/control/Respuesta dinámica/Diagrama de bloques|diagrama de bloques]] de este controlador
 
-![[Controlador proporcional-integral-derivativo.png]]
+![[ingeniería electrónica/control/Respuesta dinámica/img/Controlador proporcional-integral-derivativo.png]]
 
 # Referencias
 ---

@@ -19,9 +19,9 @@ vinculoFacultad:
 ```
 # Definición
 ---
-El tiempo de pico máximo $t_p$ es el tiempo que toma el [[Sistema|sistema]] llega al [[Overshoot de un sistema|overshoot]]
+El tiempo de pico máximo $t_p$ es el tiempo que toma el [[Sistema|sistema]] llega al [[ingeniería electrónica/control/Respuesta dinámica/Overshoot de un sistema|overshoot]]
 
-![[Time-Domain specifications.png]]
+![[ingeniería electrónica/control/Respuesta dinámica/img/Time-Domain specifications.png]]
 
 ## Sistema de primer orden
 ---

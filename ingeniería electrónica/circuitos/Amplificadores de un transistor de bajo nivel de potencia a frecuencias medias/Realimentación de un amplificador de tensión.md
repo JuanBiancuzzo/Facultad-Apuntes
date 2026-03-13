@@ -22,7 +22,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Este [[Amplificador de tensión|amplificador de tensión]], al [[Controlador closed-loop#En circuitos de amplificador|realimentarlo]], podemos pensarlo como muestreo de [[Tensión|tensión]] y suma de tensión. Esto lo podemos ver con el siguiente modelo
+Este [[Amplificador de tensión|amplificador de tensión]], al [[ingeniería electrónica/control/Respuesta dinámica/Controlador closed-loop#En circuitos de amplificador|realimentarlo]], podemos pensarlo como muestreo de [[Tensión|tensión]] y suma de tensión. Esto lo podemos ver con el siguiente modelo
 
 ```tikz
 \usepackage[

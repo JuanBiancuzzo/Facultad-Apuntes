@@ -153,14 +153,14 @@ volumen:
 
 ## Capítulo 1: Introduction
 ---
-Se define la idea de [[Controlador open-loop|controlador Open-loop]] (feedforward) y [[Controlador closed-loop|Closed-loop]] (feedback)
+Se define la idea de [[ingeniería electrónica/control/Respuesta dinámica/Controlador open-loop|controlador Open-loop]] (feedforward) y [[ingeniería electrónica/control/Respuesta dinámica/Controlador closed-loop|Closed-loop]] (feedback)
 
 Después se ven las propiedades de los controladores feedback como
-* [[Sistema de control robusto|Robustez]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Sistema de control robusto|Robustez]]
 
 Formas de controladores feedback
-* [[Controlador de dos posiciones|Controlador on-off]]
-* [[Controlador proporcional-integral-derivativo|Controlador PID]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Controlador de dos posiciones|Controlador on-off]]
+* [[ingeniería electrónica/control/Respuesta dinámica/Controlador proporcional-integral-derivativo|Controlador PID]]
 
 ## Capítulo 2: Feedback Principles
 ---
@@ -169,7 +169,7 @@ Formas de controladores feedback
 
 ## Capítulo 3: System Modeling
 ---
-Se ve como se puede representar un [[Sistema dinámico|sistema dinámico]] en su [[Forma canónica controlable|forma canónica controlable]]
+Se ve como se puede representar un [[ingeniería electrónica/control/Respuesta dinámica/Sistema dinámico|sistema dinámico]] en su [[Forma canónica controlable|forma canónica controlable]]
 
 
 ## Capítulo 4: Examples

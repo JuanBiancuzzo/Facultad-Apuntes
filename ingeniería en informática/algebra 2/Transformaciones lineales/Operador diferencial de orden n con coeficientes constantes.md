@@ -24,6 +24,6 @@ Partiendo de un polinomio, tal que
 
 $$ p(x) = (x-\lambda_1)(x-\lambda_2)\cdots(x-\lambda_n) $$
 
-donde $\lambda_1, \lambda_2, \cdots, \lambda_n \in \mathbb{C}$ son las $n$ raices de $p$, entonces podemos escribir el operador $L$ tal que 
+donde $\lambda_1, \lambda_2, \cdots, \lambda_n \in \mathbb{C}$ son las $n$ raíces de $p$, entonces podemos escribir el operador $L$ tal que 
 
 $$ L = (D-\lambda_1 I) \circ (D-\lambda_2 I) \circ \cdots \circ (D-\lambda_n I)$$
