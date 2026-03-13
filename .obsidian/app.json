@@ -1,5 +1,9 @@
 {
   "vimMode": true,
   "promptDelete": false,
-  "propertiesInDocument": "source"
+  "propertiesInDocument": "source",
+  "attachmentFolderPath": "./img",
+  "newFileLocation": "current",
+  "newLinkFormat": "absolute",
+  "alwaysUpdateLinks": true
 }
