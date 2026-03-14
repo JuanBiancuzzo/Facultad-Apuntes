@@ -18,7 +18,7 @@ Los aislantes o dieléctricos no poseen [[Electrón|electrones]] libres, por lo 
 
 ## Modelo elemental
 ---
-* Cada [[Molécula|molécula]] del material adquiere un [[Momento dipolar dieléctrico|momento dipolar eléctrico]] inducido proporcional al [[Campo eléctrico|campo]] externo $\vec{E}$
+* Cada [[Molécula|molécula]] del material adquiere un [[ingeniería en informática/fisica 2/Electrostática en conductores y dieléctricos/Momento dipolar eléctrico|momento dipolar eléctrico]] inducido proporcional al [[Campo eléctrico|campo]] externo $\vec{E}$
 * Las moléculas poseen una distribución de carga positiva y negativa, por lo que son reorientadas por el campo externo, en lugar de estar orientadas al azar
 
 ## Polarización

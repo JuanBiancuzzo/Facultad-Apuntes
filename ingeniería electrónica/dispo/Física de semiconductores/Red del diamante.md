@@ -11,4 +11,4 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Los átomos forman un tetraedro, ligados por compartir un [[Electrón|electrón]] de valencia ([[Enlace covalente]])
+Los átomos forman un tetraedro, ligados por compartir un [[Electrón|electrón]] de valencia ([[ingeniería electrónica/quimica/Enlaces químicos/Unión covalente]])

@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Es la ruptura de un [[Enlace covalente]] que da lugar a un [[Electrón]] $e^-$ y un [[Hueco]] $h^+$. Requiere energía de una fuente externa como térmica, óptica u otra.
+Es la ruptura de un [[ingeniería electrónica/quimica/Enlaces químicos/Unión covalente]] que da lugar a un [[Electrón]] $e^-$ y un [[Hueco]] $h^+$. Requiere energía de una fuente externa como térmica, óptica u otra.
 
 Podemos definir la tasa de generación como $$ G = G_\text{term} + G_\text{opt} + \cdots $$ donde las unidades son $[G] = cm^{-3} \cdot s^{-1}$.
 

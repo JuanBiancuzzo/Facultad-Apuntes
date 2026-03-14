@@ -107,3 +107,11 @@ Utilizando la [[Representación de Lewis|representación de Lewis]] podemos ver 
 \end{tikzpicture}
 \end{document}
 ```
+
+## Excepciones
+---
+Algunos átomos forman compuestos estables cuya estructura no puede explicarse a partir de esta regla, porque no completan con $8$ electrones su último nivel de energía
+
+* Por ejemplo, el Hidrógeno sólo tiene un electrón en su capa de valencia y con dos electrones ya es estable, al igual que el gas nombre que tienen más cerca, el Helio. Nunca alcanzan los $8$ electrones
+* Algunos elementos como el Fósforo o el azufre, que pueden en algunos casos presentar más de $8$ electrones en su [[Capa de valencia|capa de valencia]]. En esos casos hablamos de "octetos expandidos". Ejemplos de esto son los compuestos $\text{P} \text{Cl}_5$ y $\text{S} \text{F}_6$
+* Otros elementos como el Berilio y el Boro presentan una excepción a la regla del octeto porque no llegan a los $8$ electrones de valencia cuando forman [[ingeniería electrónica/quimica/Enlaces químicos/Unión química|uniones]]. Esto se da en en el $\text{Be} \text{Cl}_2$ y $\text{B} \text{Cl}_3$, por ejemplo. Hablamos en este caso de "octeto incompleto". También ocurren en algunas [[Molécula|moléculas]] en las cuales el $n$° de electrones del átomo central es impar, por ejemplo $\text{N} \text{O}$ y $\text{N} \text{O}_2$

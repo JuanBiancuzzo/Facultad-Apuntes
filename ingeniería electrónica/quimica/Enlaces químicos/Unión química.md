@@ -20,8 +20,8 @@ vinculoFacultad:
 La [[ingeniería electrónica/quimica/Tabla periódica/Electronegatividad|electronegatividad]] define el tipo de enlace que se presentara entre dos [[ingeniería en informática/estructura/Álgebra de Boole/Átomo|átomos]] o especies, específicamente la diferencia de electronegatividad $\Delta\varepsilon$ entre los dos átomos que intervienen en la unión
 * Si $\Delta\varepsilon > 2$ entonces la [[Unión iónica|unión iónica]]
 * Si $\Delta\varepsilon < 2$ y las $\varepsilon$ son altas entonces la es una [[Unión covalente|unión covalente]]
-	* Si la diferencia es nula, entonces el enlace es [[Enlace apolar|apolar]]
-	* Si la diferencia no es nula, entonces el enlace es [[Enlace polar|polar]]
+	* Si la diferencia es nula, entonces el enlace es [[ingeniería electrónica/quimica/Enlaces químicos/Polaridad de enlace|apolar]]
+	* Si la diferencia no es nula, entonces el enlace es [[ingeniería electrónica/quimica/Enlaces químicos/Polaridad de enlace|polar]]
 * Si $\Delta\varepsilon < 2$ y las $\varepsilon$ son bajas entonces la es una [[Unión metálica|unión metálica]]
 
 Esta es una simplificación, ya que para cuando la diferencia es nula, es una unión covalente pura, y cuando aumenta la diferencia el enlace se vuelve más iónico, hasta que la diferencia es mayor y el enlace es principalmente iónico
