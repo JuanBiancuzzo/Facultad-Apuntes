@@ -40,7 +40,7 @@ Ambas se puede verse como
 * Partículas líquidas
 	* Son aquellas que forman nieblas y brumas
 * Gases
-	* Son aquellos que se encuentran como tales en las condiciones habituales de [[Presión]] y [[Temperatura]] y cuyo comportamiento se puede describir mediante las [[Gases ideales|ecuaciones de los gases perfectos]]
+	* Son aquellos que se encuentran como tales en las condiciones habituales de [[Presión]] y [[Temperatura]] y cuyo comportamiento se puede describir mediante las [[Gas ideal|ecuaciones de los gases perfectos]]
 * Vapores
 	* Son sustancias gaseosas que están en equilibro con la fase líquida o sólida en las condiciones habituales de [[Presión]] y [[Temperatura]]
 

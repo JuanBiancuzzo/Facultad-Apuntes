@@ -1,17 +1,13 @@
 ---
-dia: 2023-08-25
+dia: 2026-03-15
 etapa: empezado
 referencias: []
-aliases: []
+aliases:
+  - CNPT
 tags:
-  - carrera/ingeniería-electrónica/dispo/Física-de-semiconductores
   - carrera/ingeniería-electrónica/quimica/Magnitudes-atómicas-y-moleculares
   - nota/facultad
 vinculoFacultad:
-  - tema: Física de semiconductores
-    capitulo: 1
-    materia: Dispositivos semiconductores
-    carrera: Ingeniería electrónica
   - tema: Magnitudes atómicas y moleculares
     capitulo: 4
     materia: Química y electroquímica
@@ -22,4 +18,5 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Un electrón "libre" ($e^-$) es una [[Carga eléctrica|carga]] negativa de $$ q_{e^-} = -1.6 \times 10 ^{-19} C $$ y un peso de $$ m_{e^{-}} = 9.11 ~ 10^{-31} ~ \text{Kg} $$
+Se define las condiciones normales de [[Presión|presión]] y [[ingeniería electrónica/seguridad/Prevención de incendios/Temperatura|temperatura]] como $1 ~ \text{atm}$ y $273 ~ \text{K}$
+
