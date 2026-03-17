@@ -2,7 +2,8 @@
 dia: 2026-03-13
 etapa: empezado
 referencias: []
-aliases: []
+aliases: 
+  - Enlace químico
 tags:
   - carrera/ingeniería-electrónica/quimica/Enlaces-químicos
   - nota/facultad
