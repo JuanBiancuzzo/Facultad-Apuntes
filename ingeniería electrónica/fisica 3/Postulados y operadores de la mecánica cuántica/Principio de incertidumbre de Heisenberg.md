@@ -35,9 +35,10 @@ Esta relacionada por una [[Transformada de Fourier|transformada de Fourier]], ve
 ```tikz
 \usepackage{pgfplots}
 \usepackage{amssymb}
+\pgfplotsset{compat=1.16}
 
 \begin{document} 
-	\begin{tikzpicture}[scale=0.9, transform shape]
+	\begin{tikzpicture}[scale=0.9, transform shape, ultra thick]
 		\begin{axis}[
 			xmin=-15, ymin=0,
 			xmax=15, ymax=0.4, 

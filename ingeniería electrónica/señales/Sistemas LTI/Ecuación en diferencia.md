@@ -4,6 +4,7 @@ aliases:
   - Sistemas descriptos por ecuaciones en diferencias
 tags:
   - carrera/ingeniería-electrónica/señales/Sistemas-LTI
+  - carrera/ingeniería-electrónica/control/Control-Digital
   - nota/facultad
 etapa: ampliar
 referencias:
@@ -12,6 +13,10 @@ vinculoFacultad:
   - tema: Sistemas LTI
     capitulo: 2
     materia: Señales y sistemas
+    carrera: Ingeniería electrónica
+  - tema: Control Digital
+    capitulo: "8"
+    materia: Control automático
     carrera: Ingeniería electrónica
 ---
 ```dataviewjs

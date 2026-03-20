@@ -5,10 +5,10 @@ referencias: []
 aliases:
   - REDOX
 tags:
-  - carrera/ingeniería-electrónica/quimica/Compuestos-inorgánicos
   - nota/facultad
+  - carrera/ingeniería-electrónica/quimica/Química-orgnánica-e-inorgánica
 vinculoFacultad:
-  - tema: Compuestos inorgánicos
+  - tema: Química orgnánica e inorgánica
     capitulo: 5
     materia: Química y electroquímica
     carrera: Ingeniería electrónica

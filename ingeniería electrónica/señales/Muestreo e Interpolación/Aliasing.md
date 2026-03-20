@@ -1,17 +1,29 @@
 ---
 dia: 2024-04-22
+etapa: ampliar
+referencias: []
+aliases:
+  - Filtro antialiasing
 tags:
   - carrera/ingeniería-electrónica/señales/Muestreo-e-Interpolación
   - nota/facultad
+  - carrera/ingeniería-electrónica/control/Control-Digital
 vinculoFacultad:
   - tema: Muestreo e Interpolación
     capitulo: 5
     materia: Señales y sistemas
     carrera: Ingeniería electrónica
+  - tema: Control Digital
+    capitulo: "8"
+    materia: Control automático
+    carrera: Ingeniería electrónica
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
+```
 # Definición
 ---
-Un [[Filtro|filtro]] antialiasing intenta reducir el [[Aliasing|aliasing]] de una [[Señal|señal]], donde podemos convertir una señal arbitraria a una [[Señal de banda limitada|señal de banda limitada]] usando un [[Filtro pasa-bajo|filtro pasa-bajo]] 
+Un [[Filtro|filtro]] antialiasing intenta reducir el [[[ingeniería electrónica/señales/Muestreo e Interpolación/Filtro antialiasing|aliasing]]de una [[Señal|señal]], donde podemos convertir una señal arbitraria a una [[Señal de banda limitada|señal de banda limitada]] usando un [[Filtro pasa-bajo|filtro pasa-bajo]] 
 
 ```tikz
 \usetikzlibrary{math}
@@ -272,3 +284,4 @@ Si aplicamos el filtro, entonces tenemos lo siguiente
 ```
 
 Si nuestro objetivo es obtener una representación fiel de una señal mediante [[Muestreo|muestreo]] siempre tenemos que usar un filtro antialiasing
+

@@ -7,14 +7,14 @@ aliases:
   - No metal
 tags:
   - carrera/ingeniería-electrónica/quimica/tabla-periódica
-  - carrera/ingeniería-electrónica/quimica/Compuestos-inorgánicos
   - nota/facultad
+  - carrera/ingeniería-electrónica/quimica/Química-orgnánica-e-inorgánica
 vinculoFacultad:
   - tema: Tabla periódica
     capitulo: 2
     materia: Química y electroquímica
     carrera: Ingeniería electrónica
-  - tema: Compuestos inorgánicos
+  - tema: Química orgnánica e inorgánica
     capitulo: 5
     materia: Química y electroquímica
     carrera: Ingeniería electrónica

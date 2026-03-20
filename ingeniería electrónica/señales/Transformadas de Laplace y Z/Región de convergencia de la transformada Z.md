@@ -1,16 +1,26 @@
 ---
 dia: 2024-05-31
+etapa: empezado
+referencias: []
 aliases:
   - ROC de la transformada Z
 tags:
   - carrera/ingeniería-electrónica/señales/Transformadas-de-Laplace-y-Z
+  - carrera/ingeniería-electrónica/control/Control-Digital
   - nota/facultad
 vinculoFacultad:
   - tema: Transformadas de Laplace y Z
     capitulo: 7
     materia: Señales y sistemas
     carrera: Ingeniería electrónica
+  - tema: Control Digital
+    capitulo: "8"
+    materia: Control automático
+    carrera: Ingeniería electrónica
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 Sea una [[Señal|señal]] $x(n)$. Definiremos la ROC de la [[Transformada Z|transformada Z]] $x(n) \xleftrightarrow{~~\mathcal{Z}} X(z)$ como $$ ROC\Set{X(z)} = \Set{ z = r ~ e^{j\Omega} \in \mathbb{C} : \sum_{k = -\infty}^{\infty} |x(k)| ~ r^{-k} < \infty } $$
@@ -33,7 +43,3 @@ Dado que la ROC es muy importante en la especificación de la transformada Z de 
 6. Si $x(n)$ es una señal bilateral y la circunferencia $|z| = r_3$ está en la ROC, la misma será un anillo en $\mathbb{C}$ que incluye a $|z| = r_3$
    
 7. Si $x(n)$ es tal que su transformada Z es racional, su ROC está limitada por sus polos. Además ningún polo está contenido en la ROC
-
-## Propiedades de la transformada Z
----
-![[Transformada Z#Propiedades]]

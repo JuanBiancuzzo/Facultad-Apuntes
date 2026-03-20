@@ -3,7 +3,6 @@ dia: 2024-05-29
 aliases:
   - Intensidad del tráfico
   - Latencia
-  - Delay
 tags:
   - carrera/ingeniería-electrónica/redes/Redes-de-computadoras
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño

@@ -1,14 +1,25 @@
 ---
 dia: 2024-05-29
+etapa: empezado
+referencias: []
+aliases: []
 tags:
   - carrera/ingeniería-electrónica/señales/Transformadas-de-Laplace-y-Z
+  - carrera/ingeniería-electrónica/control/Control-Digital
   - nota/facultad
 vinculoFacultad:
   - tema: Transformadas de Laplace y Z
     capitulo: 7
     materia: Señales y sistemas
     carrera: Ingeniería electrónica
+  - tema: Control Digital
+    capitulo: "8"
+    materia: Control automático
+    carrera: Ingeniería electrónica
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 Se define la transformada Z de $x(n)$ de la siguiente forma $$ X(z) = \sum_{k = -\infty}^{\infty} x(k) ~ z^{-k} $$

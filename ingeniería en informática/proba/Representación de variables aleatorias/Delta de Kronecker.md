@@ -6,12 +6,17 @@ referencias:
 tags:
   - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
   - carrera/ingeniería-en-informática/proba/Representación-de-variables-aleatorias
+  - carrera/ingeniería-electrónica/control/Control-Digital
   - nota/facultad
 vinculoFacultad:
   - tema: Representación de variables aleatorias
     capitulo: 3
     materia: Probabilidad y estadística B
     carrera: Ingeniería en informática
+  - tema: Control Digital
+    capitulo: "8"
+    materia: Control automático
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });

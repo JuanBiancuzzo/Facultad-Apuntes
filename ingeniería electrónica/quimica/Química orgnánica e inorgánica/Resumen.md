@@ -1,8 +1,8 @@
 ---
 tags:
   - facultad/resumen
-  - carrera/ingeniería-electrónica/quimica/Compuestos-inorgánicos
-nombreResumen: Compuestos inorgánicos
+  - carrera/ingeniería-electrónica/quimica/Química-orgnánica-e-inorgánica
+nombreResumen: Química orgnánica e inorgánica
 capitulo: 5
 referencias: []
 infoTemaMateria:
