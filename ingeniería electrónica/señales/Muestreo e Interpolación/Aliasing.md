@@ -23,7 +23,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Un [[Filtro|filtro]] antialiasing intenta reducir el [[[ingeniería electrónica/señales/Muestreo e Interpolación/Filtro antialiasing|aliasing]]de una [[Señal|señal]], donde podemos convertir una señal arbitraria a una [[Señal de banda limitada|señal de banda limitada]] usando un [[Filtro pasa-bajo|filtro pasa-bajo]] 
+Un [[Filtro|filtro]] antialiasing intenta reducir el [[[ingeniería electrónica/señales/Muestreo e Interpolación/Filtro antialiasing|aliasing]] de una [[Señal|señal]], donde podemos convertir una señal arbitraria a una [[Señal de banda limitada|señal de banda limitada]] usando un [[Filtro pasa-bajo|filtro pasa-bajo]] 
 
 ```tikz
 \usetikzlibrary{math}
