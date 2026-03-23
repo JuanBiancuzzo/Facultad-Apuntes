@@ -117,7 +117,7 @@ tags:
 
  1. Legislar en materia aduanera. Establecer los [[Derecho|derechos]] de importación y exportación, los cuales, así como las avaluaciones sobre las que recaigan, serán uniformes en toda la Nación.
     
- 2. Imponer contribuciones indirectas como facultad concurrente con las provincias. Imponer contribuciones directas, por tiempo determinado, proporcionalmente iguales en todo el territorio de la Nación, siempre que la defensa, seguridad común y bien general del [[Estado|Estado]] lo exijan. Las contribuciones previstas en este inciso, con excepción de la parte o el total de las que tengan asignación específica, son coparticipables.
+ 2. Imponer contribuciones indirectas como facultad concurrente con las provincias. Imponer contribuciones directas, por tiempo determinado, proporcionalmente iguales en todo el territorio de la Nación, siempre que la defensa, seguridad común y bien general del [[ingeniería electrónica/legal/Introducción al derecho/Estado|Estado]] lo exijan. Las contribuciones previstas en este inciso, con excepción de la parte o el total de las que tengan asignación específica, son coparticipables.
 
 	Una [[Ley|ley]] convenio, sobre la base de acuerdos entre la Nación y las provincias, instituirá regímenes de coparticipación de estas contribuciones, garantizando la automaticidad en la remisión de los fondos.
 

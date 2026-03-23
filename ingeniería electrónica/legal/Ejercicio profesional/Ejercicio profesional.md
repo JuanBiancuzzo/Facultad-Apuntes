@@ -24,7 +24,7 @@ El ejercicio profesional es toda actividad remunerada o gratuita que requiere la
 * Realización de estudios, proyectos, direcciones de obra, asesoramientos, [[Pericia|pericias]], tasaciones, mensuras, ensayos, análisis, certificaciones, entre otros
 * Desempeño de cargos, funciones, comisiones o empleo, privado o público, incluso nombramientos judiciales de oficio o a propuesta de parte
 
-El profesional para poder ejercer la profesión en la jurisdicción tiene que estar inscripto en la matricula correspondiente. Tiene que matricularse en el [[Consejo Profesional de ingenería|Consejo profesional]] que corresponda de acuerdo a esa jurisdicción
+El profesional para poder ejercer la profesión en la jurisdicción tiene que estar inscripto en la matricula correspondiente. Tiene que matricularse en el [[ingeniería electrónica/legal/Ejercicio profesional/Consejo Profesional de ingenería|Consejo profesional]] que corresponda de acuerdo a esa jurisdicción
 
 El ejercicio profesional sin título implica un [[ingeniería electrónica/legal/Introducción al derecho/Delito|delito]] penal, mientras que ejercer sin matricula es una falta de ética, pero no es delito
 

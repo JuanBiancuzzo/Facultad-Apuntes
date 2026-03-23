@@ -17,5 +17,5 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Se distinguen de las [[Sociedad Anónima#Participación estatal mayoritaria|sociedades anónimas con participación estatal mayoritaria]] en el sentido de que en estas el interés del [[Estado|Estado]] no necesariamente debe ser superior al capital privado
+Se distinguen de las [[Sociedad Anónima#Participación estatal mayoritaria|sociedades anónimas con participación estatal mayoritaria]] en el sentido de que en estas el interés del [[ingeniería electrónica/legal/Introducción al derecho/Estado|Estado]] no necesariamente debe ser superior al capital privado
 

@@ -5,12 +5,21 @@ tags:
   - carrera/ingeniería-en-informática/ingenieria-software-1/Diseño-de-software
   - carrera/ingeniería-en-informática/concurrentes/Introducción
   - carrera/ingeniería-en-informática/sisop/La-abstracción-de-proceso
+  - colección/diccionario/palabra
+  - nota/colección
+  - referencia/diccionarioonline
   - nota/facultad
 referencias:
   - "789"
   - "871"
   - "898"
-  - "1020"
+tipoCita: DiccionarioOnline
+numReferencia: 1020
+editorial: Merriam-Webster. (n. d.)
+palabraBuscada: Process
+fecha: 2025-03-17
+nombreDiccionario: Marriam-Webster
+url: https://www.merriam-webster.com/dictionary/process
 etapa: ampliar
 vinculoFacultad:
   - tema: Respuesta dinámica

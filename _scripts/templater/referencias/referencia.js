@@ -90,7 +90,14 @@ function obtenerReferencias(tp, dv = null) {
 	if (!dv) dv = app.plugins.plugins.dataview.api;
 
     return dv.pages(`#${TAGS.referencias}`)
-        .flatMap(archivo => obtenerClase(tp, archivo[DATOS_REFERENCIA.tipoCita], archivo).obtenerReferencias());
+        .flatMap(archivo => {
+			try {
+				let clase = obtenerClase(tp, archivo[DATOS_REFERENCIA.tipoCita], archivo)
+				return clase.obtenerReferencias();
+			} catch {
+				throw Error(`Error al crear clase u obtener referencia, en ${archivo[DATOS_REFERENCIA.tipoCita]} y archivo: ${archivo.file.name}`)
+			}
+		});
 }
 
 function archivoReferencia(tp, numReferenciaBuscado) {

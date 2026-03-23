@@ -30,7 +30,7 @@ Comprende a los contratos
 * [[Contrato de consultoría|Consultoría]]
 * [[Contrato de alquiler|Alquileres]] con opción de compra
 * [[Contrato de permutas|Permutas]]
-* Concesiones de uso de los bienes del dominio público y privado del [[Estado|estado]] nacional
+* Concesiones de uso de los bienes del dominio público y privado del [[ingeniería electrónica/legal/Introducción al derecho/Estado|estado]] nacional
 * Todos los contratos que no estén expresamente excluidos
 * [[Contrato de obra pública|Obras públicas]]
 * [[Concesión de obra pública|Concesiones de obras públicas]]

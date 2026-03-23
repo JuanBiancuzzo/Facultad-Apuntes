@@ -3,7 +3,17 @@ dia: 2026-02-06
 etapa: empezado
 referencias: []
 aliases: []
+tipoCita: DiccionarioOnline
+numReferencia: 1037
+editorial: REAL ACADEMIA ESPAÑOLA
+palabraBuscada: Estado
+fecha: 2025-03-23
+nombreDiccionario: Diccionario de la lengua española, 23.ª ed
+url: https://dle.rae.es/estado
 tags:
+  - colección/diccionario/palabra
+  - nota/colección
+  - referencia/diccionarioonline
   - carrera/ingeniería-electrónica/legal/Introducción-al-derecho
   - nota/facultad
 vinculoFacultad:
@@ -26,6 +36,10 @@ Este esta compuesto por
     * Parte del universo donde se ejerce el poder del Estado, donde habita la población
 * Vínculo jurídico
     * Vínculo social en donde el comportamiento de las personas se ve regulado por derechos y deberes recíprocos
+
+Según la [[Real Academia Española (RAE)|REA]] también se lo puede definir como
+1. Situación en que se encuentra alguien o algo, y en especial cada uno de sus sucesivos modelos de ser o estar
+2. Cada uno de los estamentos en que se consideraba divido el cuerpo social
 
 ## Jerarquía normativa
 ---

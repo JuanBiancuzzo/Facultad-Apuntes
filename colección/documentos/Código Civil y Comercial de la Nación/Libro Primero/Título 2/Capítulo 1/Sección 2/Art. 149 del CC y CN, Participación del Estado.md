@@ -10,7 +10,7 @@ tags:
 ---
 # Artículo
 ---
-"La participación del [[Estado|Estado]] en [[Art. 148 del CC y CN, Personas jurídicas privadas|personas jurídicas privadas]] no modifica el carácter de éstas. Sin embargo, la [[Ley|ley]] o el estatuto pueden prever [[Derecho|derechos]] y [[ingeniería electrónica/legal/Obligaciones/Obligación|obligaciones]] diferenciados, considerando el interés público comprometido en dicha participación."
+"La participación del [[ingeniería electrónica/legal/Introducción al derecho/Estado|Estado]] en [[Art. 148 del CC y CN, Personas jurídicas privadas|personas jurídicas privadas]] no modifica el carácter de éstas. Sin embargo, la [[Ley|ley]] o el estatuto pueden prever [[Derecho|derechos]] y [[ingeniería electrónica/legal/Obligaciones/Obligación|obligaciones]] diferenciados, considerando el interés público comprometido en dicha participación."
 
 # Interpretación
 ---

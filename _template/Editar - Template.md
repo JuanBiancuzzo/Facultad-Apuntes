@@ -64,7 +64,6 @@
     switch (dvArchivo[DATOS_REFERENCIAS.tipoCita]) {
         case REFERENCIAS.libro: ingresarOpcion("Editar un libro", EDITOR.coleccion.libro); break;
     }
-
     try {
         let editor;
         switch (opciones.length) {
@@ -86,7 +85,6 @@
         }
 
     } catch ({ name: nombre, message: mensaje }) {
-
         switch (nombre) {
             case error.nombre.quit:
             case error.nombre.prompt:

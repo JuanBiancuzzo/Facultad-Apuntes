@@ -134,7 +134,7 @@ Después se ve los [[ingeniería electrónica/control/Respuesta dinámica/Contro
 Se sigue con el modelado en el espacio de estados, viendo conceptos como
 * [[ingeniería electrónica/control/Respuesta dinámica/Teoría de control moderna|Teoría de control moderna]]
 * Algunas definiciones de conceptos claves
-    * [[Estado#En teoría de control|Estado]]
+    * [[ingeniería electrónica/legal/Introducción al derecho/Estado#En teoría de control|Estado]]
     * [[ingeniería electrónica/control/Respuesta dinámica/Variable de estado|Variable y vector de estado]]
     * [[ingeniería electrónica/control/Respuesta dinámica/Sistema dinámico|Espacio de estados y sus ecuaciones]]
 

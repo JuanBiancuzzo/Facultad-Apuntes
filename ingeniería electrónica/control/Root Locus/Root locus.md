@@ -18,7 +18,77 @@ vinculoFacultad:
 ```
 # Definición
 ---
-La técnica de Root Locus permite analizar y diseñar el efecto de [[ingeniería electrónica/control/Respuesta dinámica/Controlador closed-loop|loop]] del sistema, tomando el siguiente grafico, se usa el diagrama para poder ver como los [[ingeniería electrónica/señales/Sistemas LTI/Transferencia del sistema|polos]] del closed-loop del sistema donde la ganancia $K$ cambia
+La técnica de Root Locus permite analizar y diseñar el efecto de [[ingeniería electrónica/control/Respuesta dinámica/Controlador closed-loop|loop]] del sistema, tomando el siguiente grafico, se usa el diagrama para poder ver como los [[ingeniería electrónica/señales/Sistemas LTI/Transferencia del sistema|polos]] del lazo cerrado del sistema donde la ganancia $K$ cambia
+
+Dado el sistema genérico
+```tikz
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\begin{document} 
+\begin{tikzpicture}[scale=1.1, transform shape, ultra thick]
+    \tikzmath { 
+        \largo = 2.5; \alto = 1.5; \isep = 1.8; \sep = 1.3; 
+        \radio = 0.4; \scale = 1.3; \scaleSimb = 0.85; \scaleText = 1.1;
+    }
+	
+	\coordinate (diferencia) at (0, 0);
+	\coordinate (ampli) at ({\radio + \sep + \largo / 2}, 0);
+	\coordinate (planta) at ($ (ampli) + ({\isep + \largo}, 0) $);
+	\coordinate (retro) at ($ (ampli)!0.5!(planta) + (0, {-\isep - \alto / 2}) $);
+	
+	\foreach \coor/\arr/\abj/\izq/\der in {diferencia//-/+/} {
+		\begin{scope}[cm={1, 0, 0, 1, (\coor)}] 
+			\foreach \angle/\label in {-45/\der, 45/\arr, 135/\izq, 225/\abj} {
+				\tikzmath { \angleLabel = \angle + 45; }
+				\draw (0, 0) -- ({\radio * cos(\angle)}, {\radio * sin(\angle)});
+				\path (0, 0) 
+					-- ({\radio * cos(\angleLabel)}, {\radio * sin(\angleLabel)})
+						node[pos=0.6, scale=\scaleSimb] {\label};
+			}	
+			\draw (0, 0) circle (\radio);
+		\end{scope}
+	}
+
+	\foreach \coor/\label/\texto in {ampli/K/Ganancia, planta/G(s)/Planta, retro/H(s)/Realimentación} {
+		\draw ($ (\coor) + ({-\largo / 2}, {-\alto / 2}) $) 
+			rectangle ++(\largo, \alto) 
+				node[midway, scale=\scale] {$\label$};
+		\path ($ (\coor) + ({-\largo / 2}, {\alto / 2}) $)
+			-- ++(\largo, 0)
+				node[midway, above=2pt, scale=\scaleText] {\texto};
+	}
+	
+	\draw[->] ($ (diferencia) + (\radio, 0) $) -- ++(\sep, 0);
+	\draw[->] ($ (ampli) + ({\largo / 2}, 0) $) -- ++(\isep, 0);
+	\draw[->] ($ (planta) + ({\largo / 2}, 0) $) -- ++({2 * \isep}, 0)
+		node[midway] (temp) {}
+		node[pos=0.7, above=2pt, scale=\scale] {$C(s)$};
+		
+	\draw[->] (temp.center) -- (temp |- retro)
+		-- ($ (retro) + ({\largo / 2}, 0) $);
+	\draw[->] ($ (retro) + ({-\largo / 2}, 0) $)
+		-- (diferencia |- retro)
+		-- ($ (diferencia) + (0, -\radio) $);
+		
+	\draw[<-] ($ (diferencia) + (-\radio, 0) $) 
+		-- ++(-\isep, 0)
+			node[midway, above=2pt, scale=\scale] {$R(s)$};
+
+\end{tikzpicture}
+\end{document}
+```
+
+
+
+Se obtiene la [[Transferencia de lazo|transferencia de lazo]] $$ T(s) = \frac{K ~ G(s)}{1 + K ~ G(s) ~ H(s)} $$ por lo que tiene polos en $$ K ~ G(s) ~ H(s) = -1 $$ donde podemos representarlo de forma [[ingeniería en informática/analisis 2/Nomenclatura/Sistema circular|polar]] dando $$ \begin{dcases}
+	\left| K ~ G(s) ~ H(s) \right| = 1 \\
+	\angle K ~ G(s) ~ H(s) = (2k + 1) ~ \pi, & k \in \mathbb{Z}
+\end{dcases} $$
+
+## Ejemplo
+---
+Tomando como sistema
 
 ```tikz
 \usetikzlibrary{math}
@@ -48,7 +118,7 @@ La técnica de Root Locus permite analizar y diseñar el efecto de [[ingeniería
 		\end{scope}
 	}
 
-	\foreach \coor/\label/\texto in {ampli/K_1/Amplificador, planta/\frac{K_2}{s ~ (s + 10)}/Planta} {
+	\foreach \coor/\label/\texto in {ampli/K/Amplificador, planta/\frac{1}{s ~ (s + 10)}/Planta} {
 		\draw ($ (\coor) + ({-\largo / 2}, {-\alto / 2}) $) 
 			rectangle ++(\largo, \alto) 
 				node[midway, scale=\scale] {$\label$};
@@ -63,7 +133,7 @@ La técnica de Root Locus permite analizar y diseñar el efecto de [[ingeniería
 		node[midway] (temp) {}
 		node[pos=0.7, above=2pt, scale=\scale] {$C(s)$};
 		
-	\draw (temp.center) -- ++(0, {-0.75 * \largo})
+	\draw[->] (temp.center) -- ++(0, {-0.75 * \largo})
 		-- ($ (diferencia) + (0, {-0.75 * \largo}) $)
 		-- ($ (diferencia) + (0, -\radio) $);
 		
@@ -75,7 +145,7 @@ La técnica de Root Locus permite analizar y diseñar el efecto de [[ingeniería
 \end{document}
 ```
 
-Tomando el sistema general como $$ G(s) = \frac{K}{s^2 + 10s + K} $$
+Tomando el sistema con $G(s) = \frac{1}{s ~ (s + 10)}$ y $H(s) = 1$, se tiene la transferencia de lazo cerrado $$ T(s) = \frac{K}{s^2 + 10s + K} $$
 Al variar $K$ desde $0$ a $50$, se obtiene la tabla de los polos 
 
 | $K$  | Polo $1$        | Polo $2$        |
@@ -91,7 +161,9 @@ Al variar $K$ desde $0$ a $50$, se obtiene la tabla de los polos
 | $40$ | $-5 + j ~ 3.87$ | $-5 - j ~ 3.87$ |
 | $45$ | $-5 + j ~ 4.47$ | $-5 - j ~ 4.47$ |
 | $50$ | $-5 + j ~ 5$    | $-5 - j ~ 5$    |
-El diagrama de Root locus, representa el camino de los polos al cambiar la ganancia del sistema, donde se utiliza valores $K \in \mathbb{R}_+$
+
+El diagrama de Root locus, de este sistema, se puede encontrar exactamente encontrando las [[Raíz de una función|raíces]] del polinomio
+
 ```tikz
 \usepackage{amssymb}
 \usetikzlibrary{math}
@@ -149,8 +221,6 @@ El diagrama de Root locus, representa el camino de los polos al cambiar la ganan
 \end{tikzpicture}
 \end{document}
 ```
-
-Tomando una planta general, tenemos $$ G(s) = \frac{K ~ C(s)}{1 + K ~ G(s) ~ H(s)} $$
 
 # Referencias
 ---

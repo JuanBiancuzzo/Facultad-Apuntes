@@ -72,7 +72,7 @@ La fiscalización de una sociedad anónima puede ser una [[Sindicatura|sindicatu
 
 ## Participación estatal mayoritaria
 ---
-Se trata de un subtipo de las sociedades anónimas, donde su característica es la presencia del [[Estado|Estado]] nacional, Estados provinciales, municipios u organismos estatales autorizados al efecto como titulares en forma individual o conjunta de acciones que representan el $51\%$ del capital social y que sean suficientes para prevalecer en las asambleas ordinarias y extraordinarias
+Se trata de un subtipo de las sociedades anónimas, donde su característica es la presencia del [[ingeniería electrónica/legal/Introducción al derecho/Estado|Estado]] nacional, Estados provinciales, municipios u organismos estatales autorizados al efecto como titulares en forma individual o conjunta de acciones que representan el $51\%$ del capital social y que sean suficientes para prevalecer en las asambleas ordinarias y extraordinarias
 
 ## Sociedad Anónima Unipersonal
 ---
