@@ -47,6 +47,12 @@
       "icon": "lucide-layout",
       "name": "Workspaces: Save and load another layout",
       "mode": "any"
+    },
+    {
+      "id": "cmdr:macro-1",
+      "icon": "lucide-app-window-mac",
+      "name": "Save and Load workspace",
+      "mode": "any"
     }
   ],
   "rightRibbon": [],
@@ -84,6 +90,21 @@
       ],
       "name": "Commitear",
       "icon": "star",
+      "startup": false
+    },
+    {
+      "macro": [
+        {
+          "action": 0,
+          "commandId": "workspaces:save"
+        },
+        {
+          "action": 0,
+          "commandId": "workspaces:open-modal"
+        }
+      ],
+      "name": "Save and Load workspace",
+      "icon": "lucide-app-window-mac",
       "startup": false
     }
   ],

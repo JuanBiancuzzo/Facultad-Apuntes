@@ -4,7 +4,7 @@ const ELIMINAR_AUTOR = "eliminar autore";
 const CANTIDAD_MINIMA_AUTORES = 1;
 
 class Diccionario {
-    constructor(tp, seguidorRef, representacionPrevia) {
+    constructor(tp, seguidorRef, representacionPrevia = {}) {
         // console.log("Diccionariio online");
         const {
             SIMBOLOS, DATOS: { REFERENCIAS: { diccionario: DATOS_DICCIONARIO, ...DATOS_REFERENCIA } }
@@ -146,6 +146,48 @@ class Diccionario {
     }
 }
 
+async function crearPalabraDiccionario(tp, seguidorRef, referenciaCreada = null) {
+    const { 
+        FORMATO_DIA, ETAPAS, REFERENCIAS, SECCIONES, DATOS: {
+            ARCHIVO: DATOS_ARCHIVO, REFERENCIAS: { diccionario: DATOS_DICCIONARIO, ...DATOS_REFERENCIAS },
+        }, TAGS: {
+            referencias: TAG_REFERENCIA, nota: TAGS_NOTA,
+            coleccion: { diccionario: TAGS_DICCIONARIO, ...TAGS_COLECCION },
+        }, 
+        DIRECTORIOS: { coleccion: { diccionarios: DIR_DICCIONARIOS, ...DIR_COLECCION } }, 
+    } = tp.user.constantes();
+    const preguntar = tp.user.preguntar();
+    if (!referenciaCreada) referenciaCreada = { valor: null };
+
+    let infoDiccionario = new Diccionario(tp, seguidorRef);
+    await preguntar.formulario(tp, infoDiccionario, "Completar la información de la palabra del diccionario");
+    referenciaCreada.valor = infoDiccionario;
+
+    let texto = SECCIONES.seccion(SECCIONES.definicion);
+    texto += "\n---\n"
+
+    return {
+        metadata: {
+            [DATOS_ARCHIVO.dia]: tp.file.creation_date(FORMATO_DIA),
+            [DATOS_ARCHIVO.tags]: [
+                `${TAG_REFERENCIA}/${REFERENCIAS.diccionario.toLowerCase()}`,
+                `${TAGS_COLECCION.self}/${TAGS_DICCIONARIO.self}/${TAGS_DICCIONARIO.palabra}`,
+            ],
+            [DATOS_REFERENCIAS.tipoCita]: REFERENCIAS.diccionario,
+            ...infoDiccionario.generarRepresentacion(),
+        },
+        carpeta: DIR_DICCIONARIOS,
+        titulo: infoDiccionario.palabra,
+        texto: texto,
+    }
+}
+
+async function editarPalabraDiccionario(tp, seguidorRef, archivo) {
+    
+}
+
 module.exports = (tp) => ({
     clase: (seguidorRef, representacionPrevia = {}) => new Diccionario(tp, seguidorRef, representacionPrevia),
+    crear: crearPalabraDiccionario.bind(null, tp),
+    editar: editarPalabraDiccionario.bind(null, tp),
 });

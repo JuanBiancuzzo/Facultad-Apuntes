@@ -12,4 +12,6 @@ fecha: 2026-03-23
 nombreDiccionario: Diccionario de la lengua española, 23.ª ed
 url: https://dle.rae.es/indiviso
 ---
+# Definición
+---
 No separado o dividido en partes

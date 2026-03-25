@@ -11,6 +11,7 @@
     const EDITOR = {
         coleccion: {
             libro: tp.user.libro(tp).editar.bind(null, seguidorRef),
+            diccionario: tp.user.diccionarioOnline(tp).editar.bind(null, seguidorRef),
         },
         seccion: {
             resumenMateria: tp.user.seccionResumenMateria(tp).editar,

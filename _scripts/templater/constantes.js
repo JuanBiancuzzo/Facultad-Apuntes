@@ -152,6 +152,10 @@ module.exports = () => ({
                 self: "archive",
                 paper: "paper",
             },
+            diccionario: {
+                self: "diccionario",
+                palabra: "palabra",
+            },
             distribuciones: {
                 self: "distribuciones",
                 distribucion: "distribución",
@@ -236,6 +240,7 @@ module.exports = () => ({
             },
             libros: "libros",
             papers: "papers",
+            diccionarios: "diccionarios",
             programas: "programas",
             recetas: "recetas",
         },

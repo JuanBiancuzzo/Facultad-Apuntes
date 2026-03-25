@@ -20,6 +20,7 @@
             documentolegal: tp.user.documentolegal().crear.bind(null, tp),
             programa: tp.user.documentolegal().crear.bind(null, tp),
             receta: tp.user.receta().crear.bind(null, tp),
+            diccionario: tp.user.diccionarioOnline(tp).crear.bind(null, seguidorRef),
         },
     };
     const preguntar = tp.user.preguntar();
@@ -95,6 +96,9 @@
 
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.componentes) {
                 ingresarOpcion("Ingresar un componente", GENERADOR.coleccion.componente);
+            }
+            if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.diccionarios) {
+                ingresarOpcion("Ingresar una palabra de diccionario", GENERADOR.coleccion.diccionario);
             }
             if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.dataStructures) {
                 ingresarOpcion("Ingresar una estructura de datos", GENERADOR.coleccion.estructuraDatos);

@@ -20,7 +20,6 @@ vinculoFacultad:
 ---
 La técnica de Root Locus permite analizar y diseñar el efecto de [[ingeniería electrónica/control/Respuesta dinámica/Controlador closed-loop|loop]] del sistema, tomando el siguiente grafico, se usa el diagrama para poder ver como los [[ingeniería electrónica/señales/Sistemas LTI/Transferencia del sistema|polos]] del lazo cerrado del sistema donde la ganancia $K$ cambia
 
-Dado el sistema genérico
 ```tikz
 \usetikzlibrary{math}
 \usetikzlibrary{calc}
@@ -79,12 +78,33 @@ Dado el sistema genérico
 \end{document}
 ```
 
+A [[ingeniería electrónica/control/Root Locus/Transferencia de lazo#^lado-abierto|lazo abierto]] se considera que la transferencia es $$ L(s) = K ~ G(s) ~ H(s) $$ donde la podemos reescribir $$ L(s) = K ~ \frac{\displaystyle \prod_{i = 1}^{m} (s - z_i)}{\displaystyle \prod_{i = 1}^{n} (s - p_i)} $$ donde $z_1,~ \cdots,~ z_m$ son los [[ingeniería electrónica/señales/Sistemas LTI/Transferencia del sistema#Ceros|ceros]] a lazo abierto y $p_1,~ \cdots,~ p_n$ son los [[ingeniería electrónica/señales/Sistemas LTI/Transferencia del sistema#Polos|polos]] a lazo abierto
+
+A [[ingeniería electrónica/control/Root Locus/Transferencia de lazo#^lado-cerrado|lazo cerrado]], se puede tiene $$ T(s) = \frac{K ~ G(s)}{1 + K ~ G(s) ~ H(s)}, ~~~ \text{donde} \begin{dcases}
+	G(s) = \frac{N_G(s)}{D_G(s)} \\
+	H(s) = \frac{N_H(s)}{D_H(s)} \\
+\end{dcases} $$ por lo tanto podemos reescribirlo como $$ \begin{align}
+	T(s) &= \frac{K ~ \frac{N_G(s)}{D_G(s)}}{1 + K ~ \frac{N_G(s)}{D_G(s)} ~ \frac{N_H(s)}{D_H(s)}} \\
+	&= \frac{K ~ N_G(s) ~ D_H(s)}{D_G(s) ~ D_H(s) + K ~ N_G(s) ~ N_H(s)}
+\end{align} $$ 
+Para encontrar los polos de lazo cerrado y analizar la estabilidad del sistema, se buscan los $s$ tal que $$ D_G(s) ~ D_H(s) + K ~ N_G(s) ~ N_H(s) = 1 + K ~ G(s) ~ H(s) = 0 $$
+El Root locus, muestra como los polos de lazo cerrado se mueve, dados por la ecuación anterior, barriendo los valores de $K$ desde $0$ hasta $\infty$. Se puede lograr utilizando métodos numéricos para obtener las [[Raíz de una función|raíces]] de las expresión mencionada, como [[investigación/ciencias de la computación/algoritmos/Método de Newton-Raphson|método de Newton]] o también se puede hacer a mano con las siguientes reglas
+
+### Reglas
+---
+Como dijimos para buscar los polos a lazo cerrado, buscamos los $s$ que cumplan $$ K ~ G(s) ~ H(s) = -1 $$ como este producto es [[Número complejo|complejo]], esta igualdad es tanto en módulo como en fase. Por lo que para probar si un punto $s$ está en el Root locus, es decir, es un polo a lazo cerrado para algún $K$, debe cumplir la siguiente condición de módulo y fase 
+
+Como condición de módulo $$ |K ~ G(s) ~ H(s)| = K ~ \frac{\displaystyle \prod_{i = 1}^{m} |s - z_i|}{\displaystyle \prod_{i = 1}^{n} |s - p_i|} = 1  $$
+Como condición de fase $$ \begin{align}
+	\angle (K ~ G(s) ~ H(s)) &= \sum_{i = 1}^{m} \angle (s - z_i) - \sum_{i = 1}^{n} \angle (s - p_i) \\
+	&= \pi ~ (2k + 1),~~~ k \in \mathbb{Z}
+\end{align} $$
+1. Se sitúan los polos y ceros a lazo abierto en el plazo $s$, y las ramas del Root locus empiezan en los polos en el lazo abierto y terminan en los ceros del lazo abierto
+	* Si se tienen la misma cantidad de ceros que de polos, todas las ramas van a terminar en los ceros finitos
+	* Si no se tiene la misma cantidad, $n - m$ ramas, van a terminar en infinitos
+2. 
 
 
-Se obtiene la [[Transferencia de lazo|transferencia de lazo]] $$ T(s) = \frac{K ~ G(s)}{1 + K ~ G(s) ~ H(s)} $$ por lo que tiene polos en $$ K ~ G(s) ~ H(s) = -1 $$ donde podemos representarlo de forma [[ingeniería en informática/analisis 2/Nomenclatura/Sistema circular|polar]] dando $$ \begin{dcases}
-	\left| K ~ G(s) ~ H(s) \right| = 1 \\
-	\angle K ~ G(s) ~ H(s) = (2k + 1) ~ \pi, & k \in \mathbb{Z}
-\end{dcases} $$
 
 ## Ejemplo
 ---
