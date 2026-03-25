@@ -172,11 +172,12 @@ async function crearPalabraDiccionario(tp, seguidorRef, referenciaCreada = null)
             [DATOS_ARCHIVO.tags]: [
                 `${TAG_REFERENCIA}/${REFERENCIAS.diccionario.toLowerCase()}`,
                 `${TAGS_COLECCION.self}/${TAGS_DICCIONARIO.self}/${TAGS_DICCIONARIO.palabra}`,
+                `${TAGS_NOTA.self}/${TAGS_NOTA.coleccion}`,
             ],
             [DATOS_REFERENCIAS.tipoCita]: REFERENCIAS.diccionario,
             ...infoDiccionario.generarRepresentacion(),
         },
-        carpeta: DIR_DICCIONARIOS,
+        carpeta: `${DIR_COLECCION.self}/${DIR_DICCIONARIOS}`,
         titulo: infoDiccionario.palabra,
         texto: texto,
     }

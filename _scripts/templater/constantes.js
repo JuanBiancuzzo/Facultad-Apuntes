@@ -240,7 +240,7 @@ module.exports = () => ({
             },
             libros: "libros",
             papers: "papers",
-            diccionarios: "diccionarios",
+            diccionarios: "diccionario",
             programas: "programas",
             recetas: "recetas",
         },

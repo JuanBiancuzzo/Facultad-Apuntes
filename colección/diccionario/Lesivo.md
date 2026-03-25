@@ -3,14 +3,15 @@ dia: 2026-03-25
 tags:
   - referencia/diccionarioonline
   - colección/diccionario/palabra
+  - nota/colección
 tipoCita: DiccionarioOnline
-numReferencia: 1142
+numReferencia: 1143
 editorial: REAL ACADEMIA ESPAÑOLA
-palabraBuscada: Inocuo
+palabraBuscada: Lesivo
 fecha: 2026-03-25
 nombreDiccionario: Diccionario de la lengua española, 23.ª ed
-url: https://dle.rae.es/inocuo
+url: https://dle.rae.es/lesivo
 ---
 # Definición
 ---
-Que no hace deño
+Que causa o puede causar lesión
