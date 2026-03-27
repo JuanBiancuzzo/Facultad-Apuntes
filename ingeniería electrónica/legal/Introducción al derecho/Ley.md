@@ -34,30 +34,31 @@ La creación de una ley, como se mencionó anteriormente, es emanada de una auto
     \tikzmath { 
         \largoPasos = dim(\pasos); \posInicial = 0;
         \primerPaso = \pasos[\posInicial];
-        \largo = 2.5; \alto = 1.5; 
+        \largoInicio = 2; \largo = 2.7; \alto = 1.5; 
+        \prop = 0.2; \posicion = 0.45;
         \size = 0.85;
     }
     \draw (0, 0) 
-        -- ++(\largo, 0) node (temp) {}
-        -- ++({\largo / 2}, {-\alto / 2})
-        -- ++({-\largo / 2}, {-\alto / 2})
-        -- ++(-\largo, 0)
+        -- ++(\largoInicio, 0) node (temp) {}
+        -- ++({\prop * \largo}, {-\alto / 2})
+        -- ++({-\prop * \largo}, {-\alto / 2})
+        -- ++(-\largoInicio, 0)
         -- cycle;
-    \path (0, {-\alto / 2}) -- ++({3 * \largo / 2}, 0)
+    \path (0, {-\alto / 2}) -- ++({\largoInicio + \prop * \largo}, 0)
         node[pos=0.4, scale=\size] {\primerPaso};
     
     \foreach \indice [parse=true] in {\posInicial + 1, ..., \largoPasos - 1} {
         \tikzmath { \paso = \pasos[\indice]; }
         
-        \path ($ (temp.center) + ({\largo / 2}, {-\alto / 2}) $) 
-            -- ++(\largo, 0) node[pos=0.4, scale=\size] {\paso};
+        \path ($ (temp.center) + ({\prop * \largo}, {-\alto / 2}) $) 
+            -- ++(\largo, 0) node[pos=\posicion, scale=\size] {\paso};
         
         \draw (temp.center) 
             -- ++(\largo, 0) node (temp) {}
-            -- ++({\largo / 2}, {-\alto / 2})
-            -- ++({-\largo / 2}, {-\alto / 2})
+            -- ++({\prop * \largo}, {-\alto / 2})
+            -- ++({-\prop * \largo}, {-\alto / 2})
             -- ++(-\largo, 0)
-            -- ++({\largo / 2}, {\alto / 2})
+            -- ++({\prop * \largo}, {\alto / 2})
             -- cycle;        
     }
     
