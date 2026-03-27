@@ -12,7 +12,7 @@
         },
         coleccion: {
             estructuraDatos: tp.user.estructuraDeDatos().crear.bind(null, tp),
-            libreria: tp.user.libreriaFunciones().crear.bind(null, tp),
+            // libreria: tp.user.libreriaFunciones().crear.bind(null, tp),
             libro: tp.user.libro(tp).crear.bind(null, seguidorRef),
             paper: tp.user.paper(tp).crear.bind(null, seguidorRef),
             componente: tp.user.componente().crear.bind(null, tp),
@@ -21,6 +21,7 @@
             programa: tp.user.documentolegal().crear.bind(null, tp),
             receta: tp.user.receta().crear.bind(null, tp),
             diccionario: tp.user.diccionarioOnline(tp).crear.bind(null, seguidorRef),
+            ejercicio: tp.user.ejercicios(tp, dv).crearEjercicio,
         },
     };
     const preguntar = tp.user.preguntar();
@@ -66,7 +67,6 @@
         ingresarOpcion("Ingresar un GDD", GENERADOR.nota.proyecto)
     }
 
-
     // Agregar opciones por directorio
     switch (directorioBase) {
         case DIRECTORIOS.referencias: ingresarOpcion("Ingresar referencia", GENERADOR.referencia); break;
@@ -91,38 +91,31 @@
         case DIRECTORIOS.coleccion.self: 
             const DIRECT_COLECCION = DIRECTORIOS.coleccion;
             let segundoDirectorio = directorio.at(1);
-            opciones = [];
-            valores = [];
+            opciones = []; valores = []; // Limpiando los datos anteriores
 
-            if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.componentes) {
-                ingresarOpcion("Ingresar un componente", GENERADOR.coleccion.componente);
-            }
-            if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.diccionarios) {
-                ingresarOpcion("Ingresar una palabra de diccionario", GENERADOR.coleccion.diccionario);
-            }
-            if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.dataStructures) {
-                ingresarOpcion("Ingresar una estructura de datos", GENERADOR.coleccion.estructuraDatos);
-            }
-            if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.distribuciones.self) {
-                ingresarOpcion("Ingresar una función de distribución", GENERADOR.coleccion.distribucion);
-            }
-            if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.documentos) {
-                ingresarOpcion("Ingresar un documento legal", GENERADOR.coleccion.documentoLegal);
-            }
-            if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.funciones) {
-                ingresarOpcion("Ingresar un componente de una libreria", GENERADOR.coleccion.libreria);
-            }
-            if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.libros) {
-                ingresarOpcion("Ingresar un libro", GENERADOR.coleccion.libro);
-            }
-            if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.papers) {
-                ingresarOpcion("Ingresar un paper o RFC", GENERADOR.coleccion.paper);
-            }
-            if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.programas) {
-                ingresarOpcion("Ingresar programa", GENERADOR.coleccion.programa);
-            }
-            if (segundoDirectorio == undefined || segundoDirectorio == DIRECT_COLECCION.recetas) {
-                ingresarOpcion("Ingresar receta", GENERADOR.coleccion.receta);
+            let colecciones = {
+                [DIRECT_COLECCION.componentes.self]:    ["Ingresar un componente",                  GENERADOR.coleccion.componente],
+                [DIRECT_COLECCION.diccionarios]:        ["Ingresar una palabra de diccionario",     GENERADOR.coleccion.diccionario],
+                [DIRECT_COLECCION.ejercicios]:          ["Ingresar un ejercicio",                   GENERADOR.coleccion.ejercicio],
+                [DIRECT_COLECCION.estructuraDatos]:     ["Ingresar una estructura de datos",        GENERADOR.coleccion.estructuraDatos],
+                [DIRECT_COLECCION.distribuciones.self]: ["Ingresar una función de distribución",    GENERADOR.coleccion.distribucion],
+                [DIRECT_COLECCION.documentos]:          ["Ingresar un documento legal",             GENERADOR.coleccion.documentolegal],
+                [DIRECT_COLECCION.librerias.self]:      ["Ingresar un componente de una libreria",  GENERADOR.coleccion.libreria],
+                [DIRECT_COLECCION.libros]:              ["Ingresar un libro",                       GENERADOR.coleccion.libro],
+                [DIRECT_COLECCION.papers]:              ["Ingresar un paper o RFC",                 GENERADOR.coleccion.paper],
+                [DIRECT_COLECCION.programas]:           ["Ingresar programa",                       GENERADOR.coleccion.programa],
+                [DIRECT_COLECCION.recetas]:             ["Ingresar receta",                         GENERADOR.coleccion.receta],
+            };
+
+            if (segundoDirectorio in colecciones) {
+                let [mensaje, generador] = colecciones[segundoDirectorio];
+                ingresarOpcion(mensaje, generador);
+
+            } else {
+                for (let [mensaje, generador] of Object.values(colecciones)) {
+                    ingresarOpcion(mensaje, generador);
+                }
+
             }
             break;
     }

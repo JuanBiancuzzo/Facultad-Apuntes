@@ -5,7 +5,6 @@ const CANTIDAD_MINIMA_AUTORES = 1;
 
 class Diccionario {
     constructor(tp, seguidorRef, representacionPrevia = {}) {
-        // console.log("Diccionariio online");
         const {
             SIMBOLOS, DATOS: { REFERENCIAS: { diccionario: DATOS_DICCIONARIO, ...DATOS_REFERENCIA } }
         } = tp.user.constantes();
@@ -23,7 +22,6 @@ class Diccionario {
         this.numReferencia = representacionPrevia[this.config.numReferencia]
             ? representacionPrevia[this.config.numReferencia]
             : this.seguidorRef?.conseguirReferencia();
-
     }
 
     async actualizarDatos(respuesta, generarPreguntas, generarError) {

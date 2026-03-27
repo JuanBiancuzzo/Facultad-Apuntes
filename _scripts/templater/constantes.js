@@ -101,6 +101,9 @@ module.exports = () => ({
         operaciones: { nivel: 2, texto: "Operaciones" },
         metodo: { nivel: 3 },
         capitulo: { nivel: 2 },
+        enunciado: { nivel: 1, texto: "Enunciado" },
+        resolucion: { nivel: 1, texto: "Resolución" },
+        resultado: { nivel: 1, texto: "Resultado" },
     },
     TAGS: {
         investigacion: {
@@ -176,6 +179,11 @@ module.exports = () => ({
             recetas: {
                 self: "recetas",
                 receta: "receta",
+            },
+            ejercicios: {
+                self: "ejercicios",
+                ejercicio: "ejercicio",
+                guia: "guia",
             }
         },
         referencias: "referencia",
@@ -241,6 +249,7 @@ module.exports = () => ({
             libros: "libros",
             papers: "papers",
             diccionarios: "diccionario",
+            ejercicios: "ejercicios",
             programas: "programas",
             recetas: "recetas",
         },
@@ -653,6 +662,11 @@ module.exports = () => ({
             nombre: "nombreEstructura",
             idEstructura: "idEstructura",
             datosTiposDeDatos: "tiposDeDatos",
+        },
+        EJERCICIOS: {
+            enunciado: "enunciado",
+            resultado: "resultado",
+            numero: "numero",
         },
         REFERENCIAS: {
             numReferencia: "numReferencia",
