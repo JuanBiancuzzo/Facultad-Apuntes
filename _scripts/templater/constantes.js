@@ -670,7 +670,6 @@ module.exports = () => ({
                 ejercicios: "ejercicios",
             },
             ejercicio: {
-                guia: "numeroDeGuia",
                 nombre: "nombre",
                 numero: "numero",
             }
