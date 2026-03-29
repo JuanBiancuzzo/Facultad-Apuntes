@@ -2,7 +2,8 @@
 dia: 2026-03-15
 etapa: empezado
 referencias: []
-aliases: []
+aliases:
+  - Valencias
 tags:
   - nota/facultad
   - carrera/ingeniería-electrónica/quimica/Química-orgnánica-e-inorgánica
@@ -19,7 +20,7 @@ vinculoFacultad:
 ---
 Es un número [[licenciatura en ciencias matemáticas/algebra 1/Números enteros/Números enteros|entero]] que se asigna a cada uno de los elementos en una sustancia. Está relacionado con el número de [[ingeniería electrónica/dispo/Física de semiconductores/Electrón|electrones]] que los [[ingeniería en informática/estructura/Álgebra de Boole/Átomo|átomos]] de dicho elemento involucran en el [[ingeniería electrónica/quimica/Enlaces químicos/Unión química|enlace químico]], en esa sustancia particular
 
-Este número será negativo para el elemento más electronegativo de la unión en cuestión y positivo para el menos electronegativo. Donde se puede pensar como la carga que tendría cada elemento si todos los enlaces en las sustancias fueran [[ingeniería electrónica/quimica/Enlaces químicos/Unión iónica|iónicos]]
+Este número será negativo para el elemento más [[ingeniería electrónica/quimica/Tabla periódica/Electronegatividad|electronegativo]] de la unión en cuestión y positivo para el menos electronegativo. Donde se puede pensar como la carga que tendría cada elemento si todos los enlaces en las sustancias fueran [[ingeniería electrónica/quimica/Enlaces químicos/Unión iónica|iónicos]]
 
 ## Reglas según la IUPAC
 ---

@@ -664,9 +664,16 @@ module.exports = () => ({
             datosTiposDeDatos: "tiposDeDatos",
         },
         EJERCICIOS: {
-            enunciado: "enunciado",
-            resultado: "resultado",
-            numero: "numero",
+            guia: {
+                nombre: "nombre",
+                numero: "numero",
+                ejercicios: "ejercicios",
+            },
+            ejercicio: {
+                guia: "numeroDeGuia",
+                nombre: "nombre",
+                numero: "numero",
+            }
         },
         REFERENCIAS: {
             numReferencia: "numReferencia",
