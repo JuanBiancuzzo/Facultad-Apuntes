@@ -2,7 +2,8 @@
 dia: 2026-03-05
 etapa: empezado
 referencias: []
-aliases: []
+aliases:
+  - Especie isotópica
 tags:
   - carrera/ingeniería-electrónica/quimica/modelo-atómico
   - nota/facultad

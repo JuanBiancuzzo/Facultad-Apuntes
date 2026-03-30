@@ -175,12 +175,12 @@ async function crearEjercicio(tp, dv) {
     await preguntar.formulario(tp, infoEjercicio, "Completar la información del ejercicio");
 
     let texto = SECCIONES.seccion(SECCIONES.enunciado);
+    texto += "\n---\n<% tp.file.cursor() %>\n"
+
+    texto += "\n" + SECCIONES.seccion(SECCIONES.resolucion);
     texto += "\n---\n\n"
 
-    texto += "\n\n" + SECCIONES.seccion(SECCIONES.resolucion);
-    texto += "\n---\n\n"
-
-    texto += "\n\n" + SECCIONES.seccion(SECCIONES.resultado);
+    texto += "\n" + SECCIONES.seccion(SECCIONES.resultado);
     texto += "\n---\n\n"
 
     return {

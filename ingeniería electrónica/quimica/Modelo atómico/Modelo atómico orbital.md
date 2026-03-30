@@ -3,6 +3,7 @@ dia: 2026-03-05
 etapa: empezado
 referencias: []
 aliases: 
+  - Número cuántico#^numero-cuantico
   - Número cuántico principal#^numero-principa
   - Número cuántico azimutal#^numero-azimutal
   - Número cuántico magnético#^numero-magnetico
@@ -31,7 +32,7 @@ Partiendo del [[ingeniería electrónica/quimica/Modelo atómico/Modelo de Bohr|
 4. [[Principio de exclusión de Pauli|Principio de exclusión de Pauli]]
     * En un átomo, no pueden existir dos electrones con los mismo valores de sus cuatro números cuánticos
 
-La solución de la ecuación de onda asociada a cada electrón da como resultado $4$ [[ingeniería en informática/algebra 2/Autovalores y autovectores/Autovalor|autovalores]] y que se los conoce como números cuánticos. Con estos $4$ números cuánticos se puede representar completamente un átomo
+La solución de la ecuación de onda asociada a cada electrón da como resultado $4$ [[ingeniería en informática/algebra 2/Autovalores y autovectores/Autovalor|autovalores]] y que se los conoce como números cuánticos. Con estos $4$ números cuánticos se puede representar completamente un átomo ^numero-cuantico
 1. Número cuántico principal $n$ ^numero-principa
     * Sólo puede tomar valores [[licenciatura en ciencias matemáticas/algebra 1/Números naturales e Inducción/Números Naturales|naturales]]
     * Caracteriza el tamaño del orbital

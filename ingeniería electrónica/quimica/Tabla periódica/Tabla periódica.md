@@ -3,10 +3,12 @@ dia: 2026-03-05
 etapa: empezado
 referencias: []
 aliases: 
+  - Grupo de la tabla periódica#^grupo-periodo
+  - Periodo de la tabla periódica#^grupo-periodo
   - Número másico#^numeros
   - Número atómico#^numeros
   - Metal alcalino#^metal-alcalino
-  - Metal alcalinotérreo$^metal-alcalinoterreos
+  - Metal alcalinotérreo#^metal-alcalinoterreos
   - Halógeno#^halogenos
   - Gas noble#^gas-noble
 tags:
@@ -181,6 +183,8 @@ En la esquina superior izquierda se ubica la masa atómica medida en [[ingenier�
 \end{tikzpicture}
 \end{document}
 ```
+
+Se definen los grupos como está indicado en la tabla, por regla general son los las columnas. Por otro lado, el período se refiere a las filas de la tabla ^grupo-periodo
 
 En color azul, en los grupos $1$ y $2$, se encuentran los átomos donde en su configuración externa tiene electrones en el orbital $s$
 * Al grupo $1$ se los llama metales alcalinos ^metal-alcalino
