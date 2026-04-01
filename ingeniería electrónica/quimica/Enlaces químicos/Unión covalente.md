@@ -4,6 +4,8 @@ etapa: empezado
 referencias: []
 aliases:
   - Enlace covalente
+  - Enlace covalente dativo#^dativo
+  - Enlace covalente coordinado#^dativo
   - Enlace homonuclear#^tipo-enlace
   - Enlace heteronuclear#^tipo-enlace
   - Enlace sigma#^enlace-sigma
@@ -263,7 +265,8 @@ Los enlaces pueden ser
 	\end{tikzpicture}
 	\end{document}
 	```
-	donde el enlace es un enlace $\sigma$ 
+	donde el enlace es un enlace $\sigma$ ^dativo
+	Se puede pensar como que uno de los elementos da todos los electrones para el enlace, pero finalmente sigue siendo un enlace simple
 
 Se los denomina enlaces homonuclear, cuando es un enlace entre [[ingeniería en informática/estructura/Álgebra de Boole/Átomo|átomos]] iguales y heteronuclear cuando son átomos diferentes ^tipo-enlace
 

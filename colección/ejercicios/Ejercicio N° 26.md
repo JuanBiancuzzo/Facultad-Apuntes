@@ -8,7 +8,9 @@ numero: 26
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+Elegir la [[Estructura de Lewis|estructura de Lewis]] correcta para el [[ingeniería electrónica/quimica/Modelo atómico/Ion|ion]] carbonato entre las siguientes opciones, justificando la estructura
+
+![[colección/ejercicios/img/Ejercicio N° 26.png]]
 
 # Resolución
 ---

@@ -4,6 +4,7 @@ etapa: empezado
 referencias: []
 aliases:
   - Enlace iónico
+  - Unión electrostática
 tags:
   - carrera/ingeniería-electrónica/quimica/Enlaces-químicos
   - nota/facultad
