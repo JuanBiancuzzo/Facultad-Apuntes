@@ -335,7 +335,9 @@ class Ejercicio {
 
 async function crearGuia(tp, dv) {
     const { 
-        FORMATO_DIA, SECCIONES, DATOS: { ARCHIVO: DATOS_ARCHIVO }, TAGS: {
+        FORMATO_DIA, SECCIONES, DATOS: { 
+            ARCHIVO: DATOS_ARCHIVO , EJERCICIOS: { guia: DATOS_GUIA }
+        }, TAGS: {
             coleccion: { ejercicios: TAGS_EJERCICIOS, ...TAGS_COLECCION },
         }, 
         DIRECTORIOS: { coleccion: { ejercicios: DIR_EJERCICIOS, ...DIR_COLECCION } }, 
