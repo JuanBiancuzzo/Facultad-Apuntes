@@ -22,6 +22,7 @@
             receta: tp.user.receta().crear.bind(null, tp),
             diccionario: tp.user.diccionarioOnline(tp).crear.bind(null, seguidorRef),
             ejercicio: tp.user.ejercicios(tp, dv).crearEjercicio,
+            guia: tp.user.ejercicios(tp, dv).crearGuia,
         },
     };
     const preguntar = tp.user.preguntar();
@@ -96,7 +97,8 @@
             let colecciones = {
                 [DIRECT_COLECCION.componentes.self]:    ["Ingresar un componente",                  GENERADOR.coleccion.componente],
                 [DIRECT_COLECCION.diccionarios]:        ["Ingresar una palabra de diccionario",     GENERADOR.coleccion.diccionario],
-                [DIRECT_COLECCION.ejercicios]:          ["Ingresar un ejercicio",                   GENERADOR.coleccion.ejercicio],
+                [DIRECT_COLECCION.ejercicios]:          ["Ingresar un ejercicio",                   GENERADOR.coleccion.ejercicio,
+                                                         "Ingresar una guia",                       GENERADOR.coleccion.guia],
                 [DIRECT_COLECCION.estructuraDatos]:     ["Ingresar una estructura de datos",        GENERADOR.coleccion.estructuraDatos],
                 [DIRECT_COLECCION.distribuciones.self]: ["Ingresar una función de distribución",    GENERADOR.coleccion.distribucion],
                 [DIRECT_COLECCION.documentos]:          ["Ingresar un documento legal",             GENERADOR.coleccion.documentolegal],
@@ -108,14 +110,19 @@
             };
 
             if (segundoDirectorio in colecciones) {
-                let [mensaje, generador] = colecciones[segundoDirectorio];
-                ingresarOpcion(mensaje, generador);
-
-            } else {
-                for (let [mensaje, generador] of Object.values(colecciones)) {
+                let coleccion = colecciones[segundoDirectorio];
+                for (let i = 0; i < coleccion.length; i += 2) {
+                    let [mensaje, generador] = [coleccion[i], coleccion[i + 1]];
                     ingresarOpcion(mensaje, generador);
                 }
 
+            } else {
+                for (let coleccion of Object.values(colecciones)) {
+                    for (let i = 0; i < coleccion.length; i += 2) {
+                        let [mensaje, generador] = [coleccion[i], coleccion[i + 1]];
+                        ingresarOpcion(mensaje, generador);
+                    }
+                }
             }
             break;
     }

@@ -13,6 +13,8 @@ module.exports = () => ({
         volver: "↶",
         confirmar: "✓",
         elegir: "↶",
+        arriba: "↑",
+        abajo: "↓",
         modificar: "✏️",
         opcional: "(opcional)",
     },
