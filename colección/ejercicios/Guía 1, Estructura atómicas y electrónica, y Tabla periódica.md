@@ -27,4 +27,7 @@ ejercicios:
 ---
 # Ejercicio
 ---
-%% Seccion con ejercicios %%
+```dataviewjs
+	let actual = dv.current();
+	await dv.view("_scripts/dataview/coleccion/ejercicios/guia", { ejercicios: actual["ejercicios"] });
+```

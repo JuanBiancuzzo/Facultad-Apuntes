@@ -339,6 +339,7 @@ async function crearGuia(tp, dv) {
             coleccion: { ejercicios: TAGS_EJERCICIOS, ...TAGS_COLECCION },
         }, 
         DIRECTORIOS: { coleccion: { ejercicios: DIR_EJERCICIOS, ...DIR_COLECCION } }, 
+        DATAVIEW: { coleccion: { ejercicios: DV_EJERCICIOS }, ...DATAVIEW },
     } = tp.user.constantes();
     const preguntar = tp.user.preguntar();
     const archivos = tp.user.archivo();
@@ -347,7 +348,9 @@ async function crearGuia(tp, dv) {
     await preguntar.formulario(tp, infoGuia, "Completar la información de la guia");
 
     let texto = SECCIONES.seccion({ nivel: 1, texto: "Ejercicio" });
-    texto += "\n---\n%% Seccion con ejercicios %%";
+    texto += "\n---\n";
+    texto += `\`\`\`dataviewjs\n\tlet actual = dv.current();\n\tawait dv.view("${DATAVIEW.self}/${DV_EJERCICIOS.guia}", { ejercicios: actual["${DATOS_GUIA.ejercicios}"] });\n\`\`\`\n\n`;
+
 
     for (let infoEjercicio of Object.values(infoGuia.ejerciciosAgregados)) {
         await archivos.crear(tp, async () => await crearEjercicio(tp, dv, infoEjercicio));

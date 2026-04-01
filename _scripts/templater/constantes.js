@@ -72,6 +72,9 @@ module.exports = () => ({
                 sensores: "coleccion/componentes/sensores",
                 integrados: "coleccion/componentes/integrados",
             },
+            ejercicios: {
+                guia: "coleccion/ejercicios/guia"
+            }
         },
         referencia: {
             archivo: "referencia/referenciasArchivo",
