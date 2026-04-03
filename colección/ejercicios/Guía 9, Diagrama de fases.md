@@ -1,16 +1,16 @@
 ---
-dia: 2026-04-01
+dia: 2026-04-03
 tags:
   - colección/ejercicios/guia
 numero: 8
 nombre: Diagrama de fases
 ejercicios:
-  - 99
-  - 100
-  - 101
-  - 102
-  - 103
-  - 104
+  - 115
+  - 116
+  - 117
+  - 118
+  - 119
+  - 120
 ---
 # Ejercicio
 ---
