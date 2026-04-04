@@ -5,6 +5,7 @@ referencias:
   - "1144"
 aliases:
   - Molécula orgánica
+  - Nomenclatura de compuestos orgánicos#Nomenclatura
 tags:
   - carrera/ingeniería-electrónica/quimica/Química-orgnánica-e-inorgánica
   - nota/facultad
@@ -26,6 +27,10 @@ Las [[Molécula|moléculas]] organizas se dividen en $2$ partes
 	* [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Hidrocarburos|Hidrocarburos]]
 * [[Molécula orgánica artificial|Moléculas orgánicas artificiales]], son sustancias que no existen en la naturaleza y han sido fabricadas o sintetizadas por personas, entre estas se encuentran los
 	* [[Plástico|Plásticos]]
+
+## Nomenclatura
+---
+
 
 # Referencias
 ---

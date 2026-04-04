@@ -3,7 +3,14 @@ dia: 2026-03-29
 etapa: empezado
 referencias:
   - "1145"
-aliases: []
+  - "1146"
+aliases:
+  - Nomenclatura de compuestos inorgánicos#Nomenclatura
+  - Nomenclatura tradicional de compuestos inorgánicos#Nomenclatura tradicional
+  - Nomenclatura sistemática de compuestos inorgánicos#Nomenclatura sistemática
+  - Nomenclatura de atomicidad de compuestos inorgánicos#Nomenclatura sistemática
+  - Nomenclatura IUPAC de compuestos inorgánicos#Nomenclatura IUPAC
+  - Nomenclatura de stock de compuestos inorgánicos#Nomenclatura IUPAC
 tags:
   - carrera/ingeniería-electrónica/quimica/Química-orgnánica-e-inorgánica
   - nota/facultad
@@ -111,6 +118,22 @@ Se denomina compuesto inorgánico a aquellos [[Compuesto químico|compuestos qu�
 \end{tikzpicture}
 \end{document}
 ```
+
+## Nomenclatura
+---
+Hay $3$ tipos de nomenclaturas, tradicional, por atomicidad/sistemático y por [[Unión Internacional de Química Pura y Aplicada (IUPAC) (International Union of Pure and Applied Chemistry)|IUPAC]]/numeral de stock
+
+### Nomenclatura tradicional
+---
+Si el metal tiene un solo [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Número de Oxidación|número de oxidación]], lo llamamos "óxido de (metal)". Si tiene $2$ números de oxidación, para el menor usamos la terminación "-oso", y para el mayor "-ico"
+
+### Nomenclatura sistemática
+---
+Se nombre "(--)óxido de de (--)metal", anteponiendo a cada uno el prefijo que indica la atomicidad en la fórmula
+
+### Nomenclatura IUPAC
+---
+Se llama "óxido de (metal)", acompañado por el número de oxidación del metal entre paréntesis, en romanos. Si el metal tiene un único número de oxidación, no se pone
 
 # Referencias
 ---

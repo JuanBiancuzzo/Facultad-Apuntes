@@ -3,6 +3,7 @@ dia: 2026-03-07
 etapa: empezado
 referencias: []
 aliases: 
+  - Electropositividad
   - Escala de Pauling#^escala-pauling
 tags:
   - carrera/ingeniería-electrónica/quimica/tabla-periódica

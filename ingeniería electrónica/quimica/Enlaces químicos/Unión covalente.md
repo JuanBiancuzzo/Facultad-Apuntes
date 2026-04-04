@@ -275,3 +275,5 @@ Para compartir electrones, los átomos deben acercar los orbitales que los conti
 	* Los orbitales se solapan longitudinalmente
 * Enlace $\pi$ ^enlace-pi
 	* Los orbitales se solapan de forma paralela
+	* Son siempre menos energéticos (o más débiles) que los enlaces $\sigma$ ya que no se solapan los dos orbitales
+	* Necesitan menos [[Energía|energía]] para romper el enlace
