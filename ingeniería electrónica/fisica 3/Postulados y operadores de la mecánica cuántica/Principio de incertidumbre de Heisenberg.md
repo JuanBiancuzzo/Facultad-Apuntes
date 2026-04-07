@@ -35,20 +35,25 @@ Esta relacionada por una [[Transformada de Fourier|transformada de Fourier]], ve
 ```tikz
 \usepackage{pgfplots}
 \usepackage{amssymb}
+\usetikzlibrary{calc}
 \pgfplotsset{compat=1.16}
 
 \begin{document} 
-	\begin{tikzpicture}[scale=0.9, transform shape, ultra thick]
-		\begin{axis}[
-			xmin=-15, ymin=0,
-			xmax=15, ymax=0.4, 
-			samples=100,
-			grid=major,
-			xlabel=$t$,
-			ylabel=Amplitud,
-			legend style={fill=white},
-		]
-		
+\begin{tikzpicture}[scale=0.9, transform shape, ultra thick]
+	\coordinate (serie_tiempo) at (-6, -3);
+	\coordinate (serie_freq) at (6, -3);
+	\coordinate (mitad) at (2, 1);
+
+	\begin{axis}[
+		xmin=-15, ymin=0,
+		xmax=15, ymax=0.4, 
+		samples=100,
+		grid=major,
+		xlabel=$t$,
+		ylabel=Amplitud,
+		legend style={fill=white},
+		cm={1, 0, 0, 1, (serie_tiempo)},
+	]
 		\addplot[cyan, ultra thick, domain=-15:15] 
 			{ (2 * 3.14 * 1)^(-0.5) * exp(-\x^2 * (2 * 1^2)^(-1)) };
 		\addlegendentry{$\sigma = 1$};
@@ -60,29 +65,24 @@ Esta relacionada por una [[Transformada de Fourier|transformada de Fourier]], ve
 		\addplot[green, ultra thick, domain=-15:15] 
 			{ (2 * 3.14 * 10)^(-0.5) * exp(-\x^2 * (2 * 10^2)^(-1)) };
 		\addlegendentry{$\sigma = 10$};
-		
-		\end{axis}
-	\end{tikzpicture}
-	
-	\begin{tikzpicture}[scale=0.8, transform shape]
-		\draw[->, ultra thick] (0, 0.25) 
-			.. controls (0.2, 0.5) and (1.8, 0.5) .. (2, 0.25)
-			node[midway, above=2pt, font=\bfseries, scale=1.5]
-				{$\mathcal{F}$};
-		\path (0, -6);
-	\end{tikzpicture}
+	\end{axis}
 
-	\begin{tikzpicture}[scale=0.9, transform shape]
-		\begin{axis}[
-			xmin=-5, ymin=0,
-			xmax=5, ymax=1, 
-			samples=200,
-			grid=major,
-			xlabel=$\omega$,
-			ylabel=Amplitud,
-			legend style={fill=white}
-		]
-		
+	\begin{scope}[cm={1, 0, 0, 1, (mitad)}]
+		\draw[->, ultra thick] (0, 0.25) 
+			.. controls (0.2, 0.7) and (1.8, 0.7) .. (2, 0.25)
+			node[midway, above=2pt, font=\bfseries, scale=1.5] {$\mathcal{F}$};
+	\end{scope}
+			
+	\begin{axis}[
+		xmin=-5, ymin=0,
+		xmax=5, ymax=1, 
+		samples=200,
+		grid=major,
+		xlabel=$\omega$,
+		ylabel=Amplitud,
+		legend style={fill=white},
+		cm={1, 0, 0, 1, (serie_freq)},
+	]
 		\addplot[cyan, ultra thick, domain=-5:5] 
 			{ exp(-\x^2 * 1^2 * (2)^(-1)) };
 		\addlegendentry{$\sigma = 1$};
@@ -94,9 +94,9 @@ Esta relacionada por una [[Transformada de Fourier|transformada de Fourier]], ve
 		\addplot[green, ultra thick, domain=-5:5] 
 			{ exp(-\x^2 * 10^2 * (2)^(-1)) };
 		\addlegendentry{$\sigma = 10$};
-		
-		\end{axis}
-	\end{tikzpicture}
+	\end{axis}
+	
+\end{tikzpicture}
 \end{document}
 ```
 

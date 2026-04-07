@@ -4,6 +4,9 @@ etapa: empezado
 referencias: []
 aliases:
   - Enlace covalente
+  - Enlace covalente simple#^simple
+  - Enlace covalente doble#^doble
+  - Enlace covalente triple#^triple
   - Enlace covalente dativo#^dativo
   - Enlace covalente coordinado#^dativo
   - Enlace homonuclear#^tipo-enlace
@@ -88,7 +91,7 @@ Los enlaces pueden ser
 	\end{tikzpicture}
 	\end{document}
 	```
-	los enlaces siempre son enlaces $\sigma$
+	los enlaces siempre son enlaces $\sigma$ ^simple
 
 * Dobles, cuando se comparte $2$ electrones
 	```tikz
@@ -150,7 +153,7 @@ Los enlaces pueden ser
 	\end{tikzpicture}
 	\end{document}
 	```
-	los enlaces siempre son enlaces $\pi$
+	los enlaces siempre son enlaces $\pi$ ^doble
 
 * Triples, cuando se comparte $3$ electrones
 	```tikz
@@ -200,7 +203,7 @@ Los enlaces pueden ser
 	\end{tikzpicture}
 	\end{document}
 	```
-	los enlaces son uno enlace $\sigma$ y otro enlace $\pi$
+	los enlaces son uno enlace $\sigma$ y otro enlace $\pi$ ^triple
 
 * Dativo, es equivalente a un enlace simple
 	```tikz

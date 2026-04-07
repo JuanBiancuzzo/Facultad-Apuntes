@@ -25,6 +25,7 @@ La expresión que indica la ubicación de los [[ingeniería electrónica/dispo/F
 Cada orbital tiene una [[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Energía|energía]] asociada que depende de $n$ [[ingeniería electrónica/quimica/Modelo atómico/Modelo atómico orbital#^numero-principa|número cuántico principal]] y $l$ el [[ingeniería electrónica/quimica/Modelo atómico/Modelo atómico orbital#^numero-azimutal|número cuántico azimutal]]. La energía del orbital aumenta con $n$ y para un mismo $n$, aumenta con $l$. Además los electrones se ubican ocupando los orbitales de menor energía
 
 Para definir el orden en el cual los electrones se ubican en los orbitales, es donde surge la regla de la diagonal
+
 ```tikz
 \usepackage{amssymb}
 \usetikzlibrary{math}
@@ -32,40 +33,88 @@ Para definir el orden en el cual los electrones se ubican en los orbitales, es d
 
 \begin{document} 
 \definecolor{azul}{RGB}{0, 127, 204}
+
+\definecolor{col1}{RGB}{255, 0, 127} 
+\definecolor{col2}{RGB}{255, 25, 25} 
+\definecolor{col3}{RGB}{229, 51, 178} 
+\definecolor{col4}{RGB}{178, 102, 229} 
+\definecolor{col5}{RGB}{102, 127, 229} 
+\definecolor{col6}{RGB}{0, 127, 204}
    
 \begin{tikzpicture}[scale=1.1, transform shape, thick]
-    \def\numerosAzimutales {{ "s", "p", "d", "f" }}
-    \tikzmath {
-        \niveles = 8; \subniveles = dim(\numerosAzimutales);
-        \scale = 1; \sep = 0.9;
-    }
+	\def\numerosAzimutales {{ "s", "p", "d", "f" }}
+	\def\potencias {{ 1, 3, 5, 7 }}
+	\tikzmath {
+		\niveles = 7; \scale = 1; \sep = 0.9; 
+		\largo = 0.4; \interSep = 0.15; \factorCre = 0.7;
+		\subniveles = dim(\numerosAzimutales);
+	}
 
-    \begin{scope}[<-, draw=azul]
-        \foreach \n in {1, ..., \niveles} {
-            \tikzmath { \largo = \sep * (2 + floor((\n - 1) / 2)); }
-            \ifnum \n < \niveles 
-                \draw (0, {-(\n + 1) * \sep}) -- ++(\largo, \largo);
-                
-            \else
-                \draw (\sep, {-\n * \sep}) 
-                    -- ++({\largo - \sep}, {\largo - \sep});
-            \fi
-        }
-    \end{scope}
-    
-    \foreach \l in {1, ..., \subniveles} {
-        \tikzmath { 
-            \numeroAzimutal = \numerosAzimutales[int(\l - 1)]; 
-            \potencia = int(2 * (2 * \l - 1)); % impares por 2
-        }
-        \foreach \n [parse=true] in {\l, ..., \niveles - \l + 1} {
-            \ifnum \n < \niveles
-                \path ({\l * \sep}, {-\n * \sep})
-                    node[scale=\scale, fill=white] 
-                        {$\n$\numeroAzimutal${}^{\potencia}$};
-            \fi
-        }
-    }
+	\begin{scope}[cm={1, 0, 0, 1, (0, {\niveles * \sep})}]
+	    \begin{scope}[<-, draw=azul]
+	        \foreach \n in {1, ..., \niveles} {
+	            \tikzmath { \largo = \sep * (2 + floor((\n - 1) / 2)); }
+	            \ifnum \n < \niveles 
+	                \draw (0, {-(\n + 1) * \sep}) -- ++(\largo, \largo);
+	                
+	            \else
+	                \draw (\sep, {-\n * \sep}) 
+	                    -- ++({\largo - \sep}, {\largo - \sep});
+	            \fi
+	        }
+	    \end{scope}
+	    
+	    \foreach \l in {1, ..., \subniveles} {
+	        \tikzmath { 
+	            \numeroAzimutal = \numerosAzimutales[int(\l - 1)]; 
+				% La x2 es porque como los electrones tiene 2 spin
+				% pueden entrar dos en el mismo orbital
+	            \potencia = int(2 * \potencias[int(\l - 1)]); 
+	        }
+	        \foreach \n [parse=true] in {\l, ..., \niveles - \l + 1} {
+	            \ifnum \n < \niveles
+	                \path ({\l * \sep}, {-\n * \sep})
+	                    node[scale=\scale, fill=white] 
+	                        {$\n$\numeroAzimutal${}^{\potencia}$};
+	            \fi
+	        }
+	    }
+	\end{scope}
+	
+	\begin{scope}[cm={1, 0, 0, 1, (6.5, 0)}]
+		\draw[->] ({-\sep / 2}, 0) -- ({-\sep / 2}, {\niveles * \sep})
+			node[midway, above=2pt, rotate=90, scale=\scale] {Energía};
+
+		\coordinate (corrimiento) at (0, 0);
+	    \foreach \l in {1, ..., \subniveles} {
+	        \tikzmath { 
+	            \pos = int(\l - 1); 
+	            \numeroAzimutal = \numerosAzimutales[\pos]; 
+				\orbitales = \potencias[\pos]; 
+			}
+			
+	        \foreach \n [parse=true] in {\l, ..., \niveles - \l + 1} {
+	            \ifnum \n < \niveles
+				\coordinate (altura) at (0, {(\n + (\l - 1) * \factorCre) * \sep});
+				\foreach \i [parse=true] in {0, ..., \orbitales - 1} {
+					\draw[color = col\n] ($ 
+						(corrimiento |- altura) 
+						+ ({\i * (\largo + \interSep)}, 0) 
+					$) -- ++(\largo, 0);
+				}
+				
+				\path (corrimiento |- altura) -- ++({
+					\largo + (\largo + \interSep) * (\orbitales - 1)
+				}, 0) node[midway, below=2pt, scale=\scale] 
+						{$\n$\numeroAzimutal};
+	            \fi
+			}
+			
+			\coordinate (corrimiento) at ($ 
+				(corrimiento) + ({(\largo + \interSep) * \orbitales}, 0)
+			$);
+		}
+	\end{scope}
     
 \end{tikzpicture}
 \end{document}
