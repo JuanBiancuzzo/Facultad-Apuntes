@@ -31,4 +31,6 @@ Según la [[Unión Internacional de Química Pura y Aplicada (IUPAC) (Internatio
 * El $\text{O}$ presenta habitualmente n° de oxidación $-2$, como en $\text{Mg} \text{O}$ y $\text{Al}_2 \text{O}_3$
 * Los elementos del grupo $1$ presentan n° de oxidación $1$ y los del grupo $2$ presentan un n° de oxidación $2$
 * El flúor, como el elemento más electronegativo, presenta n° de oxidación $-1$
-* Los [[ingeniería electrónica/quimica/Tabla periódica/Tabla periódica#^halogenos|halógenos]], tienen n° de oxidación $-1$ en compuestos binarios, pero al combinarlos con oxigeno, su n° de oxidación pasa a ser positivo $1$, $3$, $5$ y $7$
+* Los [[ingeniería electrónica/quimica/Tabla periódica/Tabla periódica#^halogenos|halógenos]], tienen n° de oxidación $-1$ en [[Sal binaria|sales binarios]], pero al combinarlos con oxigeno, su n° de oxidación pasa a ser positivo $1$, $3$, $5$ y $7$
+
+Estas son reglas generales, dependiendo del compuesto se van a dar más aclaraciones en las cuales queda claro o es fácil de encontrar el número de oxidaciones de todos los átomos que forman parte del compuesto

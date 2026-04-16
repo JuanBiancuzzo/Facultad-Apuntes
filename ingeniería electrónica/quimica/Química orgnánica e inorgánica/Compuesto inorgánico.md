@@ -34,22 +34,22 @@ Se denomina compuesto inorgánico a aquellos [[Compuesto químico|compuestos qu�
 
 \begin{document} 
 \begin{tikzpicture}[
-	scale=1.1, transform shape, thick, shorten <= 0.5em, shorten >= 0.5em
+	scale=1, transform shape, thick, shorten <= 0.5em, shorten >= 0.5em
 ]
 	\def\radios {{ 1.1, 0.85, 0.7 }}
 	\def\scales {{ 0.9, 0.75, 0.7 }}
-	\def\angulos {{ 40, 70, 75, 105, 110, 140 }}
+	\def\angulos {{ 40, 50, 70, 75, 90, 105, 110, 130, 140 }}
 	\def\distancias {{ 2, 1.8 }}
 	
 	\coordinate (binarios) at (0, 0);
-	\coordinate (ternarios) at (7, 0);
+	\coordinate (ternarios) at (8, 0);
 	
 	\begin{scope}[cm={1, 0, 0, 1, (binarios)}]
 		\draw (0, 0) circle ({\radios[0]})
 			node[scale={\scales[0]}, align=center] {Compuestos\\binarios};
 			
 		\foreach \iAngulo/\texto [count=\i] in 
-			{0/Óxidos, 2/Peróxidos, 3/Hidruros, 5/Sales\\Binarisas} {
+			{0/Óxidos, 3/Peróxidos, 5/Hidruros, 8/Sales\\Binarisas} {
 			\tikzmath { 
 				\radioIni = \radios[0]; \radioFin = \radios[1]; 
 				\dist = \radioIni + \distancias[0] + \radioFin;
@@ -68,8 +68,8 @@ Se denomina compuesto inorgánico a aquellos [[Compuesto químico|compuestos qu�
 		}
 				
 		\foreach \padre/\iAngulo/\texto in {
-			1/0/Óxidos\\Básicos, 1/2/Óxidos\\Ácidos, 
-			3/2/Hidruro\\metalico, 3/3/Hidrácido} {
+			1/0/Óxidos\\Básicos, 1/3/Óxidos\\Ácidos, 
+			3/3/Hidruro\\metalico, 3/5/Hidrácido} {
 			\tikzmath { 
 				\radioIni = \radios[1]; \radioFin = \radios[2]; 
 				\dist = \radioIni + \distancias[1] + \radioFin;
@@ -96,7 +96,7 @@ Se denomina compuesto inorgánico a aquellos [[Compuesto químico|compuestos qu�
 		\draw (0, 0) circle ({\radios[0]})
 			node[scale={\scales[0]}, align=center] {Compuestos\\ternarios};
 			
-		\foreach \iAngulo/\texto in {1/Hidróxidos, 4/Oxácidos} {
+		\foreach \iAngulo/\texto in {1/Hidróxidos, 4/Oxácidos, 7/Sal ternaria} {
 			\tikzmath { 
 				\radioIni = \radios[0]; \radioFin = \radios[1]; 
 				\dist = \radioIni + \distancias[0] + \radioFin;
@@ -119,13 +119,25 @@ Se denomina compuesto inorgánico a aquellos [[Compuesto químico|compuestos qu�
 \end{document}
 ```
 
+Compuestos binarios
+* [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Óxido básico|Óxido básico]]
+* [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Óxido ácido|Óxido ácido]]
+* [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Sal binaria|Sal binaria]]
+* [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Hidrácido|Hidrácido]]
+* [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Hidruro metálico|Hidruro metálico]]
+
+Compuestos ternarios
+* [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Hidróxido|Hidróxido]]
+* [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Oxoácido|Oxoácido]]
+* [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Oxosal|Oxosal]]
+
 ## Nomenclatura
 ---
 Hay $3$ tipos de nomenclaturas, tradicional, por atomicidad/sistemático y por [[Unión Internacional de Química Pura y Aplicada (IUPAC) (International Union of Pure and Applied Chemistry)|IUPAC]]/numeral de stock
 
 ### Nomenclatura tradicional
 ---
-Si el metal tiene un solo [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Número de Oxidación|número de oxidación]], lo llamamos "óxido de (metal)". Si tiene $2$ números de oxidación, para el menor usamos la terminación "-oso", y para el mayor "-ico"
+Si el metal tiene un solo número de oxidación, lo llamamos "óxido de (metal)". Si tiene $2$ números de oxidación, para el menor usamos la terminación "-oso", y para el mayor "-ico"
 
 ### Nomenclatura sistemática
 ---
