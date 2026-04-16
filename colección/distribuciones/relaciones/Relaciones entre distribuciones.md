@@ -1,5 +1,8 @@
 ---
 dia: 2023-02-27
+tags:
+  - colección/distribuciones/relacion
+  - distribuciones/relacion
 ---
 # [[Distribución Beta]] y [[Distribución Uniforme]]
 ---

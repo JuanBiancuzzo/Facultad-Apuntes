@@ -83,7 +83,6 @@ Vamos a enumerar algunas transformaciones conocidas
 | $senh(\alpha t) ~ H(t)$                    | $\displaystyle\frac{\alpha}{s^2 - \alpha^2}$         | $Re(s) > \vert\alpha\vert$ | $\alpha$ constante                                                        |
 | $cosh(\alpha t) ~ H(t)$                    | $\displaystyle\frac{s}{s^2 - \alpha^2}$              | $Re(s) > \vert\alpha\vert$ | $\alpha$ constante                                                        |
 
-
 # Referencias
 ---
 ```dataviewjs

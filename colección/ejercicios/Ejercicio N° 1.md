@@ -26,7 +26,5 @@ b) Indicar cuáles son isótropos y cuales isobaros entre sí
 ---
 
 
-
 # Resultado
 ---
-

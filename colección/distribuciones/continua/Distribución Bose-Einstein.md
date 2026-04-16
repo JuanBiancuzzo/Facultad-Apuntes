@@ -20,6 +20,8 @@ referencias:
 ### Notación
 $$ X \sim $$
 
+
+
 # Relaciones
 ---
 ```dataviewjs
