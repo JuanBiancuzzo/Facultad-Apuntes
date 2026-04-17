@@ -30,6 +30,18 @@ En la disociación con agua, libera un [[ingeniería electrónica/quimica/Modelo
 ---
 Hay $3$ tipos de nomenclaturas, [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico#Nomenclatura tradicional|tradicional]], por [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico#Nomenclatura sistemática|atomicidad/sistemático]]  y por [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico#Nomenclatura IUPAC|IUPAC/numeral de stock]]
 
+### Nomenclatura tradicional
+---
+Si el no metal tiene un solo número de oxidación, lo llamamos "ácido de (no metal)". Si tiene $2$ números de oxidación, para el menor usamos la terminación "-oso", y para el mayor "-ico"
+
+### Nomenclatura sistemática
+---
+Se nombre "(--)oxo(no metal)ato de (--)hidrógeno" donde la primera cantidad indica la cantidad de oxígeno, anteponiendo a cada uno el prefijo que indica la atomicidad en la fórmula
+
+### Nomenclatura IUPAC
+---
+Se llama "(no metal)ato de hidrógeno", acompañado por el número de oxidación del no metal entre paréntesis, en romanos. Si el metal tiene un único número de oxidación, no se pone
+
 ### Ejemplos
 ---
 Para $\text{H}_2 \text{C} \text{O}_3$ que viene al tomar al [[Carbono|carbono]] con un número de oxidación de $+4$ y que este es el mayor que tiene, por eso lo nombraríamos como 

@@ -31,6 +31,18 @@ Estos al ser una [[Compuesto iónico|sustancia iónica]], se disocian en agua, l
 ---
 Hay $3$ tipos de nomenclaturas, [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico#Nomenclatura tradicional|tradicional]], por [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico#Nomenclatura sistemática|atomicidad/sistemático]]  y por [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico#Nomenclatura IUPAC|IUPAC/numeral de stock]]
 
+### Nomenclatura tradicional
+---
+Si el metal tiene un solo número de oxidación, lo llamamos "hidróxido de (metal)". Si tiene $2$ números de oxidación, para el menor usamos la terminación "-oso", y para el mayor "-ico"
+
+### Nomenclatura sistemática
+---
+Se nombre "(--)hidróxido de (--)metal", anteponiendo a cada uno el prefijo que indica la atomicidad en la fórmula
+
+### Nomenclatura IUPAC
+---
+Se llama "hidróxido de (metal)", acompañado por el número de oxidación del metal entre paréntesis, en romanos. Si el metal tiene un único número de oxidación, no se pone
+
 ### Ejemplos
 ---
 Para $\text{Fe} (\text{O} \text{H})_2$ que viene al tomar al [[Hierro|hierro]] con un número de oxidación de $+2$  que este es el menor que tiene. También hay que aclarar que se usa la raíz del latín, por eso lo nombraríamos como 

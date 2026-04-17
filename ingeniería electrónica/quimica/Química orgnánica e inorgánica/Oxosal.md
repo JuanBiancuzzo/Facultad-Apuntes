@@ -32,6 +32,18 @@ Hay que aclarar que en el anión, la unión es [[ingeniería electrónica/quimic
 ---
 Hay $3$ tipos de nomenclaturas, [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico#Nomenclatura tradicional|tradicional]], por [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico#Nomenclatura sistemática|atomicidad/sistemático]]  y por [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico#Nomenclatura IUPAC|IUPAC/numeral de stock]]
 
+### Nomenclatura tradicional
+---
+Se utiliza el no metal del oxoácido, cambiando el "-oso" por "-ito" y "-ico" por "-ato", y se termina con el no metal del hidróxido
+
+### Nomenclatura sistemática
+---
+Se nombre "(--)oxo(no metal)ato de (--)metal", donde le no metal es del oxoácido y el metal del hidróxido, anteponiendo a cada uno el prefijo que indica la atomicidad en la fórmula
+
+### Nomenclatura IUPAC
+---
+Se llama con el mismo nombre del no metal del oxoácido con su correspondiente número de oxidación, y la terminación de "de (metal)" del hidróxido. Para ambos se acompaña por el número de oxidación entre paréntesis, en números romanos. Si solo tiene un único número de oxidación, este no se pone
+
 ### Ejemplos
 ---
 Para $\text{Na}_2 \text{C} \text{O}_3$ que viene al tomar al [[Carbono|carbono]] con un número de oxidación de $+4$ y el [[Sodio|sodio]] con su único número de oxidación de $+1$

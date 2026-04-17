@@ -28,12 +28,15 @@ Hay $3$ tipos de nomenclaturas, [[ingeniería electrónica/quimica/Química orgn
 
 ### Nomenclatura tradicional
 ---
+Se toma el no metal del hidrácido con la terminación "-uro" indicando su valencia negativa, y usando el metal del hidróxido
 
 ### Nomenclatura sistemática
 ---
+Se toma no metal del hidrácido que toma el formato "(--)(no metal)uro" que indica su única valencia negativa y la cantidad, y el metal del hidróxido en el formato "(--)metal"
 
 ### Nomenclatura IUPAC
 ---
+Se toma no metal del hidrácido que toma la terminación "-uro" que indica su única valencia negativa y el metal del hidróxido, acompañado del número de oxidación en el caso de tener más de uno. A cada uno es acompañado por el número de oxidación entre paréntesis. En cada uno, si solo tiene un número de oxidación, este no se pone
 
 ### Ejemplos
 ---

@@ -27,6 +27,18 @@ Este es un óxido [[ingeniería electrónica/quimica/Enlaces químicos/Unión co
 ---
 Hay $3$ tipos de nomenclaturas, [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico#Nomenclatura tradicional|tradicional]], por [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico#Nomenclatura sistemática|atomicidad/sistemático]]  y por [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico#Nomenclatura IUPAC|IUPAC/numeral de stock]]
 
+### Nomenclatura tradicional
+---
+Si el no metal tiene un solo número de oxidación, lo llamamos "óxido de (no metal)". Si tiene $2$ números de oxidación, para el menor usamos la terminación "-oso", y para el mayor "-ico"
+
+### Nomenclatura sistemática
+---
+Se nombre "(--)óxido de (--)(no metal)", anteponiendo a cada uno el prefijo que indica la atomicidad en la fórmula
+
+### Nomenclatura IUPAC
+---
+Se llama "óxido de (no metal)", acompañado por el número de oxidación del metal entre paréntesis, en romanos. Si el metal tiene un único número de oxidación, no se pone
+
 ### Ejemplos
 ---
 Para $\text{C} \text{O}_2$ que viene al tomar al [[Carbono|carbono]] con un número de oxidación de $+4$, que tiene la [[ingeniería electrónica/quimica/Enlaces químicos/Estructura de Lewis|estructura de Lewis]]

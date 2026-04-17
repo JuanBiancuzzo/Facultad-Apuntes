@@ -22,4 +22,4 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Un electrón "libre" ($e^-$) es una [[Carga eléctrica|carga]] negativa de $$ q_{e^-} = -1.6 \times 10 ^{-19} C $$ y un peso de $$ m_{e^{-}} = 9.11 ~ 10^{-31} ~ \text{Kg} $$
+Un electrón "libre" ($e^-$) es una [[Carga eléctrica|carga]] negativa de $$ q_{e^-} = -1.6 \times 10 ^{-19} C $$ y un peso de $$ m_{e^{-}} = 9.109 ~ 10^{-31} ~ \text{Kg} $$

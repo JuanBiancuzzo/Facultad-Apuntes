@@ -29,12 +29,17 @@ Hay $3$ tipos de nomenclaturas, [[ingeniería electrónica/quimica/Química orgn
 
 ### Nomenclatura tradicional
 ---
+Si el metal tiene un solo número de oxidación, lo llamamos "hidruro de (metal)". Si tiene más de un número de oxidación, para el menor usamos la terminación "-oso", y para el mayor "-ico"
+
+Se lo llama hidruro para denotar que el hidrógeno tiene valencia negativa
 
 ### Nomenclatura sistemática
 ---
+Se nombre "(--)hidruro de (--)metal" donde la  terminación "-uro" representa que el hidrógeno usa su valencia negativa, anteponiendo a cada uno el prefijo que indica la atomicidad en la fórmula
 
 ### Nomenclatura IUPAC
 ---
+Se llama "hidruro de (metal)", donde la terminación "-uro" representa que el hidrógeno usa su valencia negativa, acompañado por el número de oxidación del metal entre paréntesis, en romanos. Si el metal tiene un único número de oxidación, no se pone
 
 ### Ejemplos
 ---
