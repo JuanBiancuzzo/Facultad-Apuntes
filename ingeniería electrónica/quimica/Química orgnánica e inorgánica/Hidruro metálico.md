@@ -17,7 +17,9 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Este [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico|compuesto inorgánico]] se forma con un [[ingeniería electrónica/quimica/Tabla periódica/Carácter metálico|metal]] y [[Hidrógeno|hidrógeno]] $\text{H}_2$, y será un compuesto binario. En estos casos el hidrógeno siempre tiene un [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Número de Oxidación|número de oxidación]] de $-1$, salvo excepciones
+Este [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico|compuesto inorgánico]] se forma con un [[ingeniería electrónica/quimica/Tabla periódica/Carácter metálico|metal]] e [[Hidrógeno|hidrógeno]] $\text{H}_2$, y será un compuesto binario. En estos casos el hidrógeno siempre tiene un [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Número de Oxidación|número de oxidación]] de $-1$, salvo excepciones
+
+Tiene el formato $$ \text{Metal} ~ \text{H}_x $$
 
 Este es un [[Compuesto iónico|compuesto iónico]], donde el metal cede sus [[ingeniería electrónica/dispo/Física de semiconductores/Electrón|electrones]] a los hidrógenos, y por eso el hidrógeno usa su valencia negativa
 
@@ -36,7 +38,7 @@ Hay $3$ tipos de nomenclaturas, [[ingeniería electrónica/quimica/Química orgn
 
 ### Ejemplos
 ---
-Para $\text{Na} \text{H}$ que viene a tomar al [[Sodio|sodio]]  con un número de oxidación de $+1$, que tiene la [[ingeniería electrónica/quimica/Enlaces químicos/Estructura de Lewis|estructura de Lewis]]
+Para $\text{Na} \text{H}$ que viene a tomar al [[Sodio|sodio]] con un número de oxidación de $+1$, que tiene la [[ingeniería electrónica/quimica/Enlaces químicos/Estructura de Lewis|estructura de Lewis]]
 
 ```tikz
 \usepackage{amssymb}

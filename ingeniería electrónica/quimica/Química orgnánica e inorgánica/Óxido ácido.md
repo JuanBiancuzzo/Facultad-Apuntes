@@ -19,6 +19,8 @@ vinculoFacultad:
 ---
 Este [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico|compuesto inorgánico]] se forma con un [[ingeniería electrónica/quimica/Tabla periódica/Carácter metálico|no metal]] y [[Oxígeno|oxígeno]] $\text{O}_2$, y será un compuesto binario. En estos casos el oxígeno siempre tiene un [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Número de Oxidación|número de oxidación]] de $-2$, salvo excepciones
 
+Tiene el formato $$ \text{NoMetal}_x  \text{O}_y $$
+
 Este es un óxido [[ingeniería electrónica/quimica/Enlaces químicos/Unión covalente|covalentes]], donde los dos no metales comparten [[ingeniería electrónica/dispo/Física de semiconductores/Electrón|electrones]]
 
 ## Nomenclatura

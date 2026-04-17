@@ -20,6 +20,8 @@ vinculoFacultad:
 ---
 Este [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico|compuesto inorgánico]] se forma con un [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Óxido ácido|óxido ácido]] y [[ingeniería electrónica/seguridad/Prevención de incendios/Agua|agua]] $\text{H}_2 \text{O}$, y será un compuesto ternario. En estos casos el [[Oxígeno|oxígeno]] siempre tiene un [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Número de Oxidación|número de oxidación]] de $-2$ y el [[Hidrógeno|hidrógeno]] con n° ox $= 1$, salvo excepciones
 
+Tiene el formato $$ \text{H}_x ~ \text{NoMetal} ~ \text{O}_y $$
+
 Todos los [[ingeniería electrónica/quimica/Enlaces químicos/Unión química|enlaces]] son [[ingeniería electrónica/quimica/Enlaces químicos/Unión covalente|covalentes]], donde los hidrógenos van unidos al oxígeno y éste al no [[ingeniería electrónica/quimica/Tabla periódica/Carácter metálico|No metal]]
 
 En la disociación con agua, libera un [[ingeniería electrónica/quimica/Modelo atómico/Ion|anión]] óxido ácido y un [[ingeniería electrónica/quimica/Modelo atómico/Ion|catión]] llamado grupo hidronio que tiene la composición química $\text{H}_3 \text{O}$ ^grupo-hidronio

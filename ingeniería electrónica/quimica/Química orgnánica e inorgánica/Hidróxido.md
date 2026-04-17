@@ -21,6 +21,8 @@ vinculoFacultad:
 ---
 Este [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico|compuesto inorgánico]] se forma con un [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Óxido básico|óxido básico]] y [[ingeniería electrónica/seguridad/Prevención de incendios/Agua|agua]] $\text{H}_2 \text{O}$, y será un compuesto ternario. En estos casos el [[Oxígeno|oxígeno]] siempre tiene un [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Número de Oxidación|número de oxidación]] de $-2$ y el [[Hidrógeno|hidrógeno]] con n° ox $= 1$, salvo excepciones
 
+Tiene el formato $$ \text{Metal} ~ (\text{O} \text{H})_y $$
+
 En estas aparece un grupo llamado oxhidrilo o hidroxilo, que tiene la composición química de $\text{O} \text{H}$ ^grupo-hidroxilo
 
 Estos al ser una [[Compuesto iónico|sustancia iónica]], se disocian en agua, liberan un [[ingeniería electrónica/quimica/Modelo atómico/Ion|catión]]  del [[ingeniería electrónica/quimica/Tabla periódica/Carácter metálico|no metal]] que formaba el óxido básico y un [[ingeniería electrónica/quimica/Modelo atómico/Ion|anión]] llamado grupo oxhidrilo

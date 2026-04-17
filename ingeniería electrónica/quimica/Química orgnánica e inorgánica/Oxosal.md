@@ -20,6 +20,8 @@ vinculoFacultad:
 ---
 Este [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico|compuesto inorgánico]] se forma con un [[ingeniería electrónica/quimica/Tabla periódica/Carácter metálico|metal]], un [[ingeniería electrónica/quimica/Tabla periódica/Carácter metálico|no metal]] y [[Oxígeno|oxígeno]]  y será un compuesto ternario. Se forman al reaccionar un [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Oxoácido|oxoácido]] y un [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Hidróxido|hidróxido]] en un proceso que se llama [[Neutralización|neutralización]]. En estos casos el oxígeno siempre tiene un [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Número de Oxidación|número de oxidación]] de $-2$ y el [[Hidrógeno|hidrógeno]] con n° ox $= 1$, salvo excepciones
 
+Tiene el formato $$ \text{Metal}_x ~ \left( \text{NoMetal} ~ \text{O}_y \right)_z $$
+
 Recordemos que los oxoácidos, al disociarlos en agua, liberan [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Oxoácido#^grupo-hidronio|hidronios]] y los hidróxidos liberan [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Hidróxido#^grupo-hidroxilo|oxhidrilos]]. Ambos al combinarlos forman una [[Molécula|molécula]] de [[ingeniería electrónica/seguridad/Prevención de incendios/Agua|agua]] neutra, por eso el proceso se llama neutralización
 
 Como subproducto de la reacción, quedan el [[ingeniería electrónica/quimica/Modelo atómico/Ion|catión]] del hidróxido y el [[ingeniería electrónica/quimica/Modelo atómico/Ion|anión]] del oxoácido, los cuales forman la sal. Por lo que si tenemos la composición del oxoácido, se reemplaza los hidrógenos por el metal del hidróxido

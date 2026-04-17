@@ -140,6 +140,8 @@ Hay $3$ tipos de nomenclaturas, tradicional, por atomicidad/sistemático y por [
 Si el metal tiene un solo número de oxidación, lo llamamos "óxido de (metal)". Si tiene $2$ números de oxidación, para el menor usamos la terminación "-oso", y para el mayor "-ico"
 
 Para los hidruros metálicos, se reemplaza la palabra óxido por hidruro, donde la terminación "-uro" representa que el [[Hidrógeno|hidrógeno]] usa su valencia negativa
+Para los hidrácidos, se reemplaza la palabra óxido por ácido que toma la terminación "-hídrico"
+Para las sales binarias, se toma el no metal del hidrácido con la terminación "-uro" indicando su valencia negativa, y usando el metal del hidróxido
 
 Para los hidróxidos, se reemplaza la palabra óxido por hidróxido
 Para los oxoácidos, se reemplaza la palabra óxido por ácido
@@ -150,6 +152,8 @@ Para la oxosal, se utiliza el no metal del oxoácido, cambiando el "-oso" por "-
 Se nombre "(--)óxido de (--)metal", anteponiendo a cada uno el prefijo que indica la atomicidad en la fórmula
 
 Para los hidruros metálicos, se reemplaza la palabra óxido por "(--)hidruro", donde la terminación "-uro" representa que el [[Hidrógeno|hidrógeno]] usa su valencia negativa
+Para los hidrácidos, toma la forma de "(no metal)uro de (--)hidrógeno" 
+Para las sales binarias, se toma no metal del hidrácido que toma el formato "(--)(no metal)uro" que indica su única valencia negativa y la cantidad, y el metal del hidróxido en el formato "(--)metal"
 
 Para los hidróxidos, reemplazamos la palabra óxido por hidróxido
 Para los oxoácidos, se reemplaza "(--)oxo(no metal)ato de (--)hidrógeno" donde la primera cantidad indica la cantidad de [[Oxígeno|oxígenos]]
@@ -160,6 +164,8 @@ Para la oxosal, se usa el mismo nombre del "(--)oxo(no metal)ato", y la terminac
 Se llama "óxido de (metal)", acompañado por el número de oxidación del metal entre paréntesis, en romanos. Si el metal tiene un único número de oxidación, no se pone
 
 Para los hidruros metálicos, se reemplaza la palabra óxido por hidruro, donde la terminación "-uro" representa que el [[Hidrógeno|hidrógeno]] usa su valencia negativa
+Para los hidrácidos, toma la forma de "(no metal)uro de hidrógeno", no es necesario los números de oxidación ya que en estos casos, esta es negativa y por lo tanto es única
+Para las sales binarias, se toma no metal del hidrácido que toma la terminación "-uro" que indica su única valencia negativa y el metal del hidróxido, acompañado del número de oxidación en el caso de tener más de uno
 
 Para los hidróxidos, reemplazamos la palabra óxido por hidróxido
 Para los oxoácidos, se usa "(no metal)ato (número) de hidrógeno", donde se agrega el número en el caso que tenga más de un número de oxidación
