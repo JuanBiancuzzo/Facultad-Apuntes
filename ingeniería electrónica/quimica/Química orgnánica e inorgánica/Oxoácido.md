@@ -2,7 +2,8 @@
 dia: 2026-04-16
 etapa: empezado
 referencias: []
-aliases: []
+aliases: 
+  - Grupo hidronio#^grupo-hidronio
 tags:
   - carrera/ingeniería-electrónica/quimica/Química-orgnánica-e-inorgánica
   - nota/facultad
@@ -17,5 +18,19 @@ vinculoFacultad:
 ```
 # Definición
 ---
+Este [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico|compuesto inorgánico]] se forma con un [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Óxido ácido|óxido ácido]] y [[ingeniería electrónica/seguridad/Prevención de incendios/Agua|agua]] $\text{H}_2 \text{O}$, y será un compuesto ternario. En estos casos el [[Oxígeno|oxígeno]] siempre tiene un [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Número de Oxidación|número de oxidación]] de $-2$ y el [[Hidrógeno|hidrógeno]] con n° ox $= 1$, salvo excepciones
 
+Todos los [[ingeniería electrónica/quimica/Enlaces químicos/Unión química|enlaces]] son [[ingeniería electrónica/quimica/Enlaces químicos/Unión covalente|covalentes]], donde los hidrógenos van unidos al oxígeno y éste al no [[ingeniería electrónica/quimica/Tabla periódica/Carácter metálico|No metal]]
 
+En la disociación con agua, libera un [[ingeniería electrónica/quimica/Modelo atómico/Ion|anión]] óxido ácido y un [[ingeniería electrónica/quimica/Modelo atómico/Ion|catión]] llamado grupo hidronio que tiene la composición química $\text{H}_3 \text{O}$ ^grupo-hidronio
+
+## Nomenclatura
+---
+Hay $3$ tipos de nomenclaturas, [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico#Nomenclatura tradicional|tradicional]], por [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico#Nomenclatura sistemática|atomicidad/sistemático]]  y por [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Compuesto inorgánico#Nomenclatura IUPAC|IUPAC/numeral de stock]]
+
+### Ejemplos
+---
+Para $\text{H}_2 \text{C} \text{O}_3$ que viene al tomar al [[Carbono|carbono]] con un número de oxidación de $+4$ y que este es el mayor que tiene, por eso lo nombraríamos como 
+* En el tradicional: ácido carbónico 
+* En el sistemático: trioxocarbonato de dihibrógeno
+* En el de IUPAC: carbonato (IV) de hidrógeno
