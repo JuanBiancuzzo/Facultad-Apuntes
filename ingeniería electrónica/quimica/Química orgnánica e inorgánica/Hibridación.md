@@ -5,7 +5,7 @@ referencias:
   - "1147"
 aliases: 
   - Hibridación sp3#Hibridación sp3
-  - Hibridación sp2#Hibridación sp
+  - Hibridación sp2#Hibridación sp2
   - Hibridación sp#Hibridación sp
 tags:
   - carrera/ingeniería-electrónica/quimica/Química-orgnánica-e-inorgánica

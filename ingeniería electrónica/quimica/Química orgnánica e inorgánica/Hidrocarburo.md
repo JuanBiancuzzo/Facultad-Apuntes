@@ -101,5 +101,78 @@ En estos se pueden dividir en
 
 ### Cíclicos
 ---
+Se nombran igual que los lineales, anteponiendo el prefijo "ciclo-". Como característica general, las cadenas más cortas suelen ser más reactivos, ya que son más inestables
 
+```tikz
+\usepackage{amssymb}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+
+\begin{document} 
+\begin{tikzpicture}[scale=1.7, transform shape, thick]
+	\tikzmath {
+		\sep = 1.3; \eSep = 0.2; \eInterSep = 0.08; \alto = 0.01;
+		\scale = 1; \radio = 0.7; \sepAngulo = 90;
+	}
+	
+	\coordinate (cadena_1) at ({0.05 * \sep}, \sep);
+	\coordinate (cadena_2) at (-\sep, 0);
+	\coordinate (cadena_3) at (\sep, 0);
+	
+	\def\elementos{{ 
+		{"cadena_1", "CH$_2$"}, 
+		{"cadena_2", "CH$_2$"}, 
+		{"cadena_3", "CH$_2$"}
+	}}
+	\def\uniones{{
+		{"cadena_1", "cadena_2", 1}, 
+		{"cadena_2", "cadena_3", 1}, 
+		{"cadena_3", "cadena_1", 1} 
+	}}
+	
+	\tikzmath { \cantElementos = dim(\elementos); }
+	\foreach \i [parse=true] in {0, ..., \cantElementos - 1} {
+		\tikzmath {
+			\coor = \elementos[\i][0]; \label = \elementos[\i][1]; 
+		}
+		\path (\coor) node[scale=\scale] {\label};
+	}
+
+	\tikzmath { \cantUniones = dim(\uniones); }
+	\foreach \i [parse=true] in {0, ..., \cantUniones - 1} {
+		\tikzmath { 
+			\desde = \uniones[\i][0]; \hasta = \uniones[\i][1]; 
+			\cantUniones = \uniones[\i][2];
+			
+			coordinate \diff;
+			\diff = (\hasta) - (\desde); 
+			
+			\ptToCm = 1 / 28.45;
+
+			% Necesitamos calcular el angulo y la distancia
+			\angulo = atan2(\diffy, \diffx);
+			\distancia = sqrt(abs(\diffx)^2 + abs(\diffy)^2);
+			
+			\cosA = cos(\angulo); \sinA = sin(\angulo);
+			\puntoMedio = (\cantUniones - 1) * \eInterSep / 2;
+		}
+		
+		\begin{scope}[cm={\cosA, \sinA, -\sinA, \cosA, (\desde)}]
+			\foreach \i [parse=true] in {0, ..., \cantUniones - 1} {
+				\draw[shorten <=\radio cm, shorten >=\radio cm] 
+					(0, {\i * \eInterSep - \puntoMedio}) 
+						-- ++({\ptToCm * \distancia}, 0);
+			}
+		\end{scope}
+	}
+	
+\end{tikzpicture}
+\end{document}
+```
+
+El cual, al solo tener $3$ carbonos, con enlaces simples, se lo llamaría propano pero al ser cíclico, se lo llama ciclopropano
+
+De igual forma existen dos clasificaciones para los cíclicos, estas son
+* [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Aromático|Aromáticos]]
+* 
 

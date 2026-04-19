@@ -1,8 +1,9 @@
 ---
-dia: 2026-04-18
+dia: 2026-04-19
 etapa: empezado
 referencias: []
-aliases: []
+aliases:
+  - Ácido dicarboxílico
 tags:
   - carrera/ingeniería-electrónica/quimica/Química-orgnánica-e-inorgánica
   - nota/facultad
@@ -17,32 +18,15 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Estos son los [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Hidrocarburo|hidrocarburos]] donde su estructura esta dada por una cadena de [[Carbono|carbonos]] unidos por [[ingeniería electrónica/quimica/Enlaces químicos/Unión covalente#^simple|enlaces covalentes simples]] y al menos un [[ingeniería electrónica/quimica/Enlaces químicos/Unión covalente#^triple|enlace triple]], el resto de los enlaces necesarios se cubren con los [[Hidrógeno|hidrógenos]]. Cabe aclarar que la cadena principal debe incluir el triple enlace
+Este representa un [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Hidrocarburo|hidrocarburo]] donde el [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Grupo funcional|grupo funcional]] es un [[Carboxilo|carboxilo]] $(\text{C} \text{O}_2 \text{H})$ (que parece un [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Oxoácido|oxoácido]]) donde el enlace hay un [[ingeniería electrónica/quimica/Enlaces químicos/Unión covalente#^doble|enlace doble]] entre el [[Carbono|carbono]] y el [[Oxígeno|oxígeno]]. Este grupo siempre se encuentra en un extremo de la cadena, ya que el carbono tiene $3$ enlaces formados
 
-Se los llama hidrocarburos insaturados, porque el triple enlace se puede abrir para completar con otros [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Grupo funcional|grupos funcionales]], y esto requiere muy poca [[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Energía|energía]] para lograrse. Todos los carbonos que participan del enlace triple presentan [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Hibridación#Hibridación sp|hibridación sp]]
+En el caso de tener dos grupo carboxílicos, se los conoce como ácidos dicarboxílicos, y no puede haber más ya que se agregan a los extremos de la cadena
 
 ## Nomenclatura
 ---
-Siempre tiene el sufijo "-ino", y dependiendo de la cantidad de carbonos que tenga la cadena principal, se usa los siguientes prefijos
+Se nombre el hidrocarburo y se agregar el prefijo "ácido-" y el sufijo "-oico". Nunca es necesario aclarar la posición porque se sabe que siempre esta en una punta, y haría que los números sea lo más chico posible
 
-| Cantidad de C | Prefijo   |
-| ------------- | --------- |
-| $1$           | met-      |
-| $2$           | et-       |
-| $3$           | prop-     |
-| $4$           | but-      |
-| $5$           | pent-     |
-| $6$           | hex-      |
-| $7$           | hept-     |
-| $8$           | oct-      |
-| $9$           | non-      |
-| $10$          | dec-      |
-| $11$          | undex-    |
-| $12$          | dodec-    |
-| $13$          | tridec-   |
-| $14$          | tetradec- |
-
-Para los grupos funcionales, se nombran primero, con un número indicando el carbono de la cadena al que están unidos. Se agrega la posición del/los doble enlaces, en el caso que existan multiples posibilidades. Los números en el nombre deben ser los más pequeños
+En el caso de ser un ácido dicarboxílico, el sufijo es "-dioico"
 
 ## Ejemplo
 ---
@@ -58,17 +42,22 @@ Para los grupos funcionales, se nombran primero, con un número indicando el car
 		\sep = 1.3; \eSep = 0.2; \eInterSep = 0.08; \alto = 0.01;
 		\scale = 1; \radio = 0.7; \sepAngulo = 90;
 	}
-	
-	\foreach \i in {1, 2} {
-		\coordinate (cadena_\i) at ({\i * \sep}, 0);
-	}
+
+	\coordinate (cadena_2) at (0, 0);
+	\coordinate (cadena_1) at ($ (cadena_2) + (\sep, 0) $);
+	\coordinate (grupo_oxigeno) at ($ (cadena_1) + (\sep, 0) $);
+	\coordinate (grupo_hidroxilo) at ($ (cadena_1) + (0, \sep) $);
 	
 	\def\elementos{{ 
-		{"cadena_1", "CH"}, 
-		{"cadena_2", "CH"}
+		{"cadena_1", "C"}, 
+		{"cadena_2", "CH$_3$"},
+		{"grupo_oxigeno", "O"},
+		{"grupo_hidroxilo", "OH"}
 	}}
 	\def\uniones{{
-		{"cadena_1", "cadena_2", 3}
+		{"cadena_1", "cadena_2", 1}, 
+		{"cadena_1", "grupo_oxigeno", 2},
+		{"cadena_1", "grupo_hidroxilo", 1}
 	}}
 	
 	\tikzmath { \cantElementos = dim(\elementos); }
@@ -92,7 +81,7 @@ Para los grupos funcionales, se nombran primero, con un número indicando el car
 
 			% Necesitamos calcular el angulo y la distancia
 			\angulo = atan2(\diffy, \diffx);
-			\distancia = sqrt(\diffx^2 + \diffy^2);
+			\distancia = sqrt(abs(\diffx)^2 + abs(\diffy)^2);
 			
 			\cosA = cos(\angulo); \sinA = sin(\angulo);
 			\puntoMedio = (\cantUniones - 1) * \eInterSep / 2;
@@ -110,8 +99,10 @@ Para los grupos funcionales, se nombran primero, con un número indicando el car
 \end{tikzpicture}
 \end{document}
 ```
+^ejemplo
 
-Como tiene $2$ carbonos, y tiene un enlace triple en el único lugar posible, se lo llama etino o acetileno, siendo este el alqueno más chico
+Tenemos una cadena principal de $2$ carbonos, por lo que se nombra ácido etanoico
+
 
 ```tikz
 \usepackage{amssymb}
@@ -125,34 +116,35 @@ Como tiene $2$ carbonos, y tiene un enlace triple en el único lugar posible, se
 		\scale = 1; \radio = 0.7; \sepAngulo = 90;
 	}
 	
-	\foreach \i in {1, ..., 8} {
+	\foreach \i in {1, ..., 4} {
 		\coordinate (cadena_\i) at ({\i * \sep}, 0);
 	}
-	\coordinate (grupo_cloro) at ($ (cadena_2) + (0, -\sep) $);
-	\coordinate (grupo_metil) at ($ (cadena_6) + (0, -\sep) $);
+	
+	\foreach \dir/\union [count=\i] in {-1/1, 1/4} {
+		\coordinate (grupo_oxigeno_\i) at 
+			($ (cadena_\union) + ({\dir * \sep}, {0.3 * \sep}) $);
+		\coordinate (grupo_hidroxilo_\i) at 
+			($ (cadena_\union) + ({\dir * \sep}, {-0.3 * \sep}) $);
+	}
 	
 	\def\elementos{{ 
-		{"cadena_1", "CH$_3$"}, 
-		{"cadena_2", "CH"}, 
-		{"cadena_3", "CH$_2$"}, 
+		{"cadena_1", "C"}, 
+		{"cadena_2", "CH$_2$"},
+		{"cadena_3", "CH$_2$"},
 		{"cadena_4", "C"}, 
-		{"cadena_5", "C"},
-		{"cadena_6", "CH"},
-		{"cadena_7", "CH$_2$"},
-		{"cadena_8", "CH$_3$"},
-		{"grupo_cloro", "Cl"},
-		{"grupo_metil", "CH$_3$"}
+		{"grupo_oxigeno_1", "O"},
+		{"grupo_oxigeno_2", "O"},
+		{"grupo_hidroxilo_1", "OH"},
+		{"grupo_hidroxilo_2", "OH"}
 	}}
 	\def\uniones{{
 		{"cadena_1", "cadena_2", 1}, 
 		{"cadena_2", "cadena_3", 1}, 
 		{"cadena_3", "cadena_4", 1}, 
-		{"cadena_4", "cadena_5", 3},
-		{"cadena_5", "cadena_6", 1},
-		{"cadena_6", "cadena_7", 1},
-		{"cadena_7", "cadena_8", 1},
-		{"cadena_2", "grupo_cloro", 1},
-		{"cadena_6", "grupo_metil", 1}
+		{"cadena_1", "grupo_oxigeno_1", 2},
+		{"cadena_1", "grupo_hidroxilo_1", 1},
+		{"cadena_4", "grupo_oxigeno_2", 2},
+		{"cadena_4", "grupo_hidroxilo_2", 1}
 	}}
 	
 	\tikzmath { \cantElementos = dim(\elementos); }
@@ -195,4 +187,4 @@ Como tiene $2$ carbonos, y tiene un enlace triple en el único lugar posible, se
 \end{document}
 ```
 
-En este caso notemos que la cadena principal tiene $8$, con el triple enlace entre el carbono $4$ y $5$. También es importante notar los $2$ grupos funcionales, el [[Cloro|cloro]] y el [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Alqueno|metano]], en las posiciones $2$ y $6$, respectivamente. En este caso el cloro es menos importante en la reacción química que el metano, por lo que deberíamos nombrarlo primero. Finalmente, lo podemos llamar 2-Cloro-6-metil-4-octino
+La cadena principal tiene $4$ carbonos, y tiene dos grupos carboxilos, por lo que se nombra ácido butanodioico

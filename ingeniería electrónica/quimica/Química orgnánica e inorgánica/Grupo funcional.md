@@ -25,12 +25,14 @@ Vamos a denotar con una R la representación de la fórmula general de la cadena
 ## Funciones oxigenadas rulo
 ---
 Presencia de algún enlace carbono-[[Oxígeno|oxígeno]], [[ingeniería electrónica/quimica/Enlaces químicos/Unión covalente#^simple|sencillo]] (C-O) o [[ingeniería electrónica/quimica/Enlaces químicos/Unión covalente#^doble|doble]] (C=O)
+* [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Alcohol|Alcoholes]], con un [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Hidróxido#^grupo-hidroxilo|grupo hidroxilo]] ![[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Alcohol#^ejemplo]]
+* [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Aldehído|Aldehídos]], con un grupo [[Carbonilo|carbonilo]] ![[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Aldehído#^ejemplo]]
+* [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Cetona|Cetonas]], con un grupo carbonilo ![[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Cetona#^ejemplo]]
+* [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Ácido carboxílico|Ácidos carboxílicos]], con un grupo [[Carboxilo|carboxilo]] ![[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Ácido carboxílico#^ejemplo]]
 
 | Grupo funcional        | Serie homólogo | Formula | Prefijo | Sufijo |
 | ---------------------- | -------------- | ------- | ------- | ------ |
-| Grupo hidroxilo        |                |         |         |        |
 | Grupo alcoxi o ariloxi |                |         |         |        |
-| Grupo carbonilo        |                |         |         |        |
 | Grupo carboxilo        |                |         |         |        |
 | Grupo acilo            |                |         |         |        |
 
