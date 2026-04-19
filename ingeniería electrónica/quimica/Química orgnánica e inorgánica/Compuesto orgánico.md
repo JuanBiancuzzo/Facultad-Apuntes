@@ -24,7 +24,7 @@ Es un [[Compuesto químico|compuesto químico]] que contiene [[Carbono|carbono]]
 
 Las [[Molécula|moléculas]] organizas se dividen en $2$ partes
 * [[Molécula orgánica natural (Biomoléculas)|Moléculas orgánicas naturales]], son las sintetizadas por los seres vivos, y se llaman biomoléculas, entre estas se encuentran los 
-	* [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Hidrocarburos|Hidrocarburos]]
+	* [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Hidrocarburo|Hidrocarburo]]
 * [[Molécula orgánica artificial|Moléculas orgánicas artificiales]], son sustancias que no existen en la naturaleza y han sido fabricadas o sintetizadas por personas, entre estas se encuentran los
 	* [[Plástico|Plásticos]]
 
