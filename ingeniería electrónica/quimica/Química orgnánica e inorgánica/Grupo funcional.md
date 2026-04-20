@@ -39,6 +39,7 @@ Presencia de algún enlace carbono-[[Oxígeno|oxígeno]], [[ingeniería electró
 ## Funciones nitrogenadas
 ---
 Presencia de enlaces carbono-[[Nitrógeno|nitrógeno]], C-N, C=N o C≡N
+* [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Amina|Aminas]]
 
 | Grupo funcional         | Serie homólogo | Formula | Prefijo | Sufijo |
 | ----------------------- | -------------- | ------- | ------- | ------ |
@@ -67,9 +68,9 @@ Compuestos por carbono, [[Hidrógeno|hidrógeno]] y [[ingeniería electrónica/q
 ## Grupos que contienen metales
 ---
 
-| Grupo funcional        | Serie homólogo | Formula | Prefijo | Sufijo |
-| ---------------------- | -------------- | ------- | ------- | ------ |
-|   |                |         |         |        |
+| Grupo funcional | Serie homólogo | Formula | Prefijo | Sufijo |
+| --------------- | -------------- | ------- | ------- | ------ |
+|                 |                |         |         |        |
 
 
 # Referencias
