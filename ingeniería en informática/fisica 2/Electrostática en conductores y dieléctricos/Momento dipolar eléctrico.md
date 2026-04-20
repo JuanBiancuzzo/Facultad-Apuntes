@@ -1,6 +1,6 @@
 ---
 dia: 2024-09-02
-etapa: sin-empezar
+etapa: empezado
 tags:
   - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
   - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
@@ -15,6 +15,10 @@ vinculoFacultad:
     capitulo: 3
     materia: Química y electroquímica
     carrera: Ingeniería electrónica
+referencias: []
+aliases:
+  - Dipolo
+  - Dipolo inducido#Dipolos inducidos
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
@@ -189,3 +193,7 @@ En el caso de que haya más de un enlace, se deben tomar en cuenta el momento di
 Para conocer o estimar la estructura espacial de la molécula, debemos tener en cuenta también los pares de electrones libres
 
 Por regla general, cuando en los enlaces existan pares de electrones libres, la geometría electrónica no coincide con la molecular, y pasa a ser polar
+
+## Dipolos inducidos
+---
+En el caso donde el momento dipolar es nulo, se puede crear o inducir, un dipolo por medio de la cercanía de un compuesto [[ingeniería electrónica/quimica/Enlaces químicos/Polaridad de enlace#^enlace-polar|polar]], un compuesto no polar pero que afecte la nube electrónica o un [[ingeniería electrónica/quimica/Modelo atómico/Ion|ion]], creando instantáneamente un momento dipolar

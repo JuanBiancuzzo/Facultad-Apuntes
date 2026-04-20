@@ -8,10 +8,15 @@ aliases:
   - Enlace apolar#^enlace-no-polar
 tags:
   - carrera/ingeniería-electrónica/quimica/Enlaces-químicos
+  - carrera/ingeniería-electrónica/quimica/Fuerzas-intermoleculares
   - nota/facultad
 vinculoFacultad:
   - tema: Enlaces químicos
     capitulo: 3
+    materia: Química y electroquímica
+    carrera: Ingeniería electrónica
+  - tema: Fuerzas intermoleculares
+    capitulo: 6
     materia: Química y electroquímica
     carrera: Ingeniería electrónica
 ---
@@ -33,4 +38,6 @@ Esta distribución asimétrica de carga se cuantifica con la magnitud [[ingenier
 	* $\mu = 0$
 	* Se da cuando los átomos que forman el enlace son iguales y por lo tanto tienen la misma electronegatividad
 	* Ejemplo, el $\text{Cl}_2$
+
+Cuando el enlace es [[ingeniería electrónica/quimica/Enlaces químicos/Unión iónica|iónico]], siempre es un enlace polar, y es mucho más (en general) a los enlaces polares en una [[Molécula|molécula]], es decir, un enlace covalente
 
