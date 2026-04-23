@@ -21,5 +21,5 @@ Mora es el estado en el cual el incumplimiento material se hace jurídicamente r
 
 Tiene como requisitos
 * El incumplimiento
-* Que ese incumplimiento sea atribuible al deudor
+* Que ese incumplimiento sea atribuible al [[ingeniería electrónica/legal/Obligaciones/Obligación|deudor]]
 

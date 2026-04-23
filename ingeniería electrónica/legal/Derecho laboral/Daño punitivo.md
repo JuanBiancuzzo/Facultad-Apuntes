@@ -17,7 +17,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-El daño punitivo es una "multa civil" que busca prevenir conductas por parte de los [[ingeniería electrónica/legal/Derecho laboral/Contrato de consumo#^proveedor|proveedores]] que afecten los [[ingeniería electrónica/legal/Derecho laboral/Derecho de consumo|derechos de los consumidores]] y en el caso de realizarlas sanciones a favor del [[ingeniería electrónica/legal/Derecho laboral/Contrato de consumo#^consumidor|consumidor]] 
+El [[ingeniería electrónica/legal/Obligaciones/Daño|daño]] punitivo es una "multa civil" que busca prevenir conductas por parte de los [[ingeniería electrónica/legal/Derecho laboral/Contrato de consumo#^proveedor|proveedores]] que afecten los [[ingeniería electrónica/legal/Derecho laboral/Derecho de consumo|derechos de los consumidores]] y en el caso de realizarlas sanciones a favor del [[ingeniería electrónica/legal/Derecho laboral/Contrato de consumo#^consumidor|consumidor]] 
 
 Se impone a quien ejecuto la conducta, no de forma solidaria con los miembros de la cadena de comercialización. Si hay varios que realizaron la conducta, el [[Juez|juez]] impone una sanción específica para cada uno
 
