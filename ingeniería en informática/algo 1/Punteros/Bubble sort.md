@@ -227,7 +227,7 @@ Seguimos hasta terminar
 \end{tikzpicture}
 \end{document}
 ```
-
+ 
 ```tikz
 \usetikzlibrary{math}
 \usetikzlibrary{calc}
@@ -269,7 +269,7 @@ Seguimos hasta terminar
 \end{tikzpicture}
 \end{document}
 ```
-
+ 
 ```tikz
 \usetikzlibrary{math}
 \usetikzlibrary{calc}
@@ -310,7 +310,7 @@ Seguimos hasta terminar
 \end{tikzpicture}
 \end{document}
 ```
-
+ 
 ```tikz
 \usetikzlibrary{math}
 \usetikzlibrary{calc}
