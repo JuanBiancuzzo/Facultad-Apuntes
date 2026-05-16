@@ -41,7 +41,7 @@ El modelo de servicio de red define las características del envío end-to-end e
 	* El paquete enviado llegará a destino dentro de un rango de [[Delay in packet switches|delay]] especificado
 * In-order packet delivery
 	* Los paquetes llegarán a destino en el orden que fueron enviados
-* Guaranteed minimal [[Bandwidth|bandwidth]]
+* Guaranteed minimal [[ingeniería en informática/redes/Capa de Transporte/Ancho de banda|bandwidth]]
 	* Asegurará un ancho de banda mínimo, mientras que la aplicación envíe los datos a por lo menos ese ancho de banda
 * Security
 	* La capa de red podría encriptar los datagramas y proveer confidencialidad de los paquetes

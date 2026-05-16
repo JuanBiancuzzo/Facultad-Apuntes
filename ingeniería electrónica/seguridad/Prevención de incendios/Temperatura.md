@@ -14,7 +14,25 @@ vinculoFacultad:
     capitulo: 1
     materia: Física 2 A
     carrera: Ingeniería en informática
+etapa: empezado
+referencias: []
+aliases:
+  - Escala de temperatura de Celcius#Escaal Celcius
+  - Escala de temperatura de Kelvin#Escala Kelvin
+  - Escala de temperatura de Fahrenheit#Escala Fahrenheit
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 Es la medida de la concentración de [[Calor|calor]]
+
+## Escala Celsius
+---
+
+## Escala Kelvin
+---
+
+## Escala Fahrenheit
+---

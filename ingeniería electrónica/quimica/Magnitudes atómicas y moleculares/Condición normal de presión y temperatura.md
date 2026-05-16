@@ -6,10 +6,15 @@ aliases:
   - CNPT
 tags:
   - carrera/ingeniería-electrónica/quimica/Magnitudes-atómicas-y-moleculares
+  - carrera/ingeniería-electrónica/quimica/Estados-de-la-materia
   - nota/facultad
 vinculoFacultad:
   - tema: Magnitudes atómicas y moleculares
     capitulo: 4
+    materia: Química y electroquímica
+    carrera: Ingeniería electrónica
+  - tema: Estados de la materia
+    capitulo: 7
     materia: Química y electroquímica
     carrera: Ingeniería electrónica
 ---

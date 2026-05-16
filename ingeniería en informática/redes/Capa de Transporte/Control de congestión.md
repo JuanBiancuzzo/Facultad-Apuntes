@@ -12,7 +12,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-El control de congestión intenta evitar la congestión de la [[Red|red]], mientras que intenta que cada [[Host|host]] tenga parte igual de [[Bandwidth|bandwidth]]
+El control de congestión intenta evitar la congestión de la [[Red|red]], mientras que intenta que cada [[Host|host]] tenga parte igual de [[ingeniería en informática/redes/Capa de Transporte/Ancho de banda|bandwidth]]
 
 ## Problemática
 ---
@@ -44,4 +44,4 @@ Muchas aplicaciones de multimedia prefieren utilizar [[User Datagram Protocol|UD
 
 ### Fairness con TCP
 ---
-Incluso si podemos forzar a que el [[Tráfico|tráfico]] de UDP se comporte de forma justa, el problema no está totalmente resuelto. Nada impide a una aplicación basada en TCP de utilizar múltiples conexiones paralelas, efectivamente obteniendo una mayor porción del [[Bandwidth|bandwidth]] en un medio congestionado
+Incluso si podemos forzar a que el [[Tráfico|tráfico]] de UDP se comporte de forma justa, el problema no está totalmente resuelto. Nada impide a una aplicación basada en TCP de utilizar múltiples conexiones paralelas, efectivamente obteniendo una mayor porción del [[ingeniería en informática/redes/Capa de Transporte/Ancho de banda|bandwidth]] en un medio congestionado

@@ -10,10 +10,15 @@ aliases:
   - Volumen molar#^volumen-molar
 tags:
   - carrera/ingeniería-electrónica/quimica/Magnitudes-atómicas-y-moleculares
+  - carrera/ingeniería-electrónica/quimica/Estados-de-la-materia
   - nota/facultad
 vinculoFacultad:
   - tema: Magnitudes atómicas y moleculares
     capitulo: 4
+    materia: Química y electroquímica
+    carrera: Ingeniería electrónica
+  - tema: Estados de la materia
+    capitulo: 7
     materia: Química y electroquímica
     carrera: Ingeniería electrónica
 ---
@@ -28,7 +33,7 @@ De esta se define el $\text{mol}$ donde $$ 1 ~ \text{mol} = N_A ~ \text{particul
 
 De aquí aparece la idea de masa molar, que representa la masa de $1 ~ \text{mol}$ de sustancia, con unidades de $\frac{\text{g}}{\text{mol}}$ ^masa-molar
 
-Utilizando la [[ingeniería electrónica/quimica/Magnitudes atómicas y moleculares/Ley de Gases Ideales|ley de Gases Ideales]], surge la magnitud de volumen molar $V_m$, que representa el volumen ocupado por $1 ~ \text{mol}$ de gas. En [[ingeniería electrónica/quimica/Magnitudes atómicas y moleculares/Condición normal de presión y temperatura|CNPT]], un [[Gas ideal|gas ideal]] tiene un volumen molar de $22.4 \frac{\text{L}}{\text{mol}}$  ^volumen-molar
+Utilizando la [[ingeniería electrónica/quimica/Magnitudes atómicas y moleculares/Ley de Gases Ideales|ley de Gases Ideales]], surge la magnitud de volumen molar $V_m$, que representa el volumen ocupado por $1 ~ \text{mol}$ de gas. En [[ingeniería electrónica/quimica/Magnitudes atómicas y moleculares/Condición normal de presión y temperatura|CNPT]], un [[Gas#Gas ideal|gas ideal]] tiene un volumen molar de $22.4 \frac{\text{L}}{\text{mol}}$  ^volumen-molar
 
 # Referencias
 ---

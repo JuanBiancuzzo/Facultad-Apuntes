@@ -22,7 +22,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-En esta, el [[Bandwidth|bandwidth]] del [[Acceso a una red por cable|enlace]] es compartido en el tiempo, en la [[Función periódica#Frecuencia|frecuencia]] y en código, a múltiples estaciones simultáneamente
+En esta, el [[ingeniería en informática/redes/Capa de Transporte/Ancho de banda|bandwidth]] del [[Acceso a una red por cable|enlace]] es compartido en el tiempo, en la [[Función periódica#Frecuencia|frecuencia]] y en código, a múltiples estaciones simultáneamente
 
 Tenemos los [[Protocolo de internet|protocolos]]
 * [[Time Division Multiplexing|Time division multiplexing (TDM)]]

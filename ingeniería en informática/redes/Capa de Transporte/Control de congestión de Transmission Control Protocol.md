@@ -11,7 +11,12 @@ vinculoFacultad:
     capitulo: 3
     materia: Redes
     carrera: Ingeniería en informática
+etapa: empezado
+referencias: []
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 El enfoque tomado por [[Transmission Control Protocol|TCP]] entonces es que cada remitente limite la tasa a la cual envía [[Tráfico|tráfico]] a través de sus conexiones en función de la [[Control de congestión|congestión]] recibida
@@ -24,7 +29,7 @@ Para decidir como exactamente se modificará la ventana de congestión, se segui
 * Un [[Paquete|segmento]] perdido implica congestión, y el remitente deberá reducir su tasa de transmisión cuando esto ocurre
 * La confirmación de un paquete indica que la red está entregando los segmentos, y el remitente deberá aumentar su tasa de transmisión
 
-La estrategia de TCP entonces será la de [[Bandwidth|bandwidth]] probing. La tasa de transmisión se aumentará lentamente en respuesta a los ACK recibidos y disminuirá al encontrarse con una perdida. El objetivo es alcanzar una velocidad estable que no cause perdida de paquetes
+La estrategia de TCP entonces será la de [[Ancho de banda|bandwidth]] probing. La tasa de transmisión se aumentará lentamente en respuesta a los ACK recibidos y disminuirá al encontrarse con una perdida. El objetivo es alcanzar una velocidad estable que no cause perdida de paquetes
 
 Ahora podremos definir el [[Algoritmo|algoritmo]] de congestión de control de TCP, el cual tiene tres componentes principales
 * [[Slow Start|Slow Start]]

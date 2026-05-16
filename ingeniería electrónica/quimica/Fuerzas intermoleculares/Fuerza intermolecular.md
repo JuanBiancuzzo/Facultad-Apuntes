@@ -19,7 +19,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Son [[Fuerza|fuerzas]] en las cuales interactúan [[Molécula|moléculas]], donde son mucho más débiles que las [[ingeniería electrónica/quimica/Fuerzas intermoleculares/Fuerza intramolecular|fuerzas intramoleculares]] y suelen responder a [[Estado de agregación|estado de agregación]]
+Son [[Fuerza|fuerzas]] en las cuales interactúan [[Molécula|moléculas]], donde son mucho más débiles que las [[ingeniería electrónica/quimica/Fuerzas intermoleculares/Fuerza inframolecular|fuerzas intramoleculares]] y suelen responder a [[ingeniería electrónica/quimica/Estados de la materia/Estado de agregación|estado de agregación]]
 
 ## Clasificación
 ---
