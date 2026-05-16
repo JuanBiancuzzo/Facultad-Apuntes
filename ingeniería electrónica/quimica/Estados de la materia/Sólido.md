@@ -2,7 +2,8 @@
 dia: 2026-05-16
 etapa: empezado
 referencias: []
-aliases: []
+aliases: 
+  - Vidrio#^vidrio
 tags:
   - carrera/ingeniería-electrónica/quimica/Estados-de-la-materia
   - nota/facultad
@@ -29,3 +30,29 @@ Tiene como propiedades microscópicas
  * Están prácticamente fijas y "ordenadas"
  * [[ingeniería electrónica/quimica/Fuerzas intermoleculares/Fuerza intermolecular|Fuerzas]] de atracción son tan fuertes que fijan su posición en el espacio, del orden de $100$ a $4000 ~ \frac{\text{kJ}}{\text{mol}}$, como los [[ingeniería electrónica/quimica/Tabla periódica/Carácter metálico|metales]], [[Sal|sales]] o el [[ingeniería electrónica/seguridad/Prevención de incendios/Agua|hielo]]
  * La única [[Energía cinética|energía cinética]] viene de la vibración, por lo que la energía de atracción es predominante 
+
+## Clasificación
+---
+Existen dos grupos donde se pueden clasificar los sólidos
+* [[Red cristalina|Cristales]], es donde las partículas que componen el sólido se disponen en el espacio, manteniendo un ordenamiento regular
+	* [[Sólido iónico|Sólido iónico]]
+	* [[Sólido atómico|Sólido atómico]]
+	* [[Sólido molecular|Sólido molecular]]
+	* [[Sólido metálico|Sólido metálico]]
+* Amorfos, es donde las partículas se disponen en el espacio de manera aleatoria
+	* Vidrios ^vidrio
+	* Ciertos [[Polímero|polímeros]]
+
+## Propiedades
+---
+Las propiedades de los sólidos se pueden separar en $3$
+* Térmicas
+	* Punto de [[ingeniería electrónica/quimica/Estados de la materia/Estado de agregación#Cambio de estado|fusión]]
+	* La [[ingeniería en informática/fisica 2/Termodinámica/Conductividad térmica|conductividad térmica]]
+* Mecánica
+	* Dureza
+	* Tenacidad
+	* Elasticidad
+	* Plasticidad
+* Eléctricas
+	* La [[ingeniería en informática/fisica 2/Circuitos de corrientes no dependientes del tiempo/Conductividad eléctrica|conductividad eléctrica]]

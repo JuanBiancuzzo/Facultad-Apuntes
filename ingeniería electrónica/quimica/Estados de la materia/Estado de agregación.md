@@ -7,6 +7,7 @@ aliases:
   - Fusión#Cambio de estado
   - Solidificación#Cambio de estado
   - Evaporación#Cambio de estado
+  - Ebullición#Cambio de estado
   - Condensación#Cambio de estado
   - Deposición#Cambio de estado
   - Deposicioón#Cambio de estado

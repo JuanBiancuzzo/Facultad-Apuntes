@@ -25,7 +25,7 @@ Actúan por:
 
 # Limitaciones
 Las espumas en general tienen las siguientes limitaciones:
-* Se debe tener en cuenta que no son muy efectivas en incendios de aceites calientes y no son aptas para gases licuados o sustancias que se encuentran a temperaturas equivalentes al punto de [[Ebullición|ebullición]] del agua.
+* Se debe tener en cuenta que no son muy efectivas en incendios de aceites calientes y no son aptas para gases licuados o sustancias que se encuentran a temperaturas equivalentes al punto de [[ingeniería electrónica/quimica/Estados de la materia/Estado de agregación#Cambio de estado|ebullición]] del agua.
 
 * Tampoco se las puede utilizar en sistemas energizados eléctricamente o con sustancias que reaccionan químicamente con el agua.
 

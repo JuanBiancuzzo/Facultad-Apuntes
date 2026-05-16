@@ -18,7 +18,7 @@ Donde:
 * $c$ es el intercambio de calor entre el cuerpo y el ambiente por [[Conducción de calor|conducción]] $(Kcal/h)$  (se puede despreciar en el ambiente laboral)
 * $R$ es el intercambio de calor entre el cuerpo y el ambiente por [[Radiación|radiación]] $(Kcal/h)$ 
 * $V$ es el intercambio de calor por ventilación pulmonar $(Kcal/h)$ (se puede despreciar en el ambiente laboral)
-* $E$ es el intercambio de calor entre el cuerpo y el ambiente por [[Evaporación|evaporación]] $(Kcal/h)$ 
+* $E$ es el intercambio de calor entre el cuerpo y el ambiente por [[ingeniería electrónica/quimica/Estados de la materia/Estado de agregación#Cambio de estado|Evaporación]] $(Kcal/h)$ 
 
 Por lo tanto para nosotros es útil expresarlo como $$ M \pm R \pm C = E $$
 ## Intercambio por convección de calor

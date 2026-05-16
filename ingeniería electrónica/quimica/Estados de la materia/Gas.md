@@ -2,10 +2,11 @@
 dia: 2026-05-16
 etapa: empezado
 referencias: []
-aliases: 
+aliases:
   - Gas ideal#Gas ideal
   - Gas real#Gas real
   - Factor de compresión#^factor-de-compresion
+  - Vapor
 tags:
   - carrera/ingeniería-electrónica/quimica/Estados-de-la-materia
   - nota/facultad

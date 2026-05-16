@@ -30,3 +30,10 @@ Tiene como propiedades microscópicas
  * Las fuerzas intermoleculares son bastante fuertes como para mantener juntas las moléculas, del orden de $15$ a $70 ~ \frac{\text{kJ}}{\text{mol}}$, donde no tienen forma propia como el [[Mercurio|mercurio]], [[Bromo|bromo]], el [[ingeniería electrónica/seguridad/Prevención de incendios/Agua|agua]] o el [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Alcano|pentano]] 
  * La [[Energía cinética|energía cinética]] es baja, y es más prevalente las energías de atracción 
 
+## Propiedades
+---
+Los líquidos pueden mostrar estas propiedades físicas, que estas fuertemente relacionadas con las fuerzas intermoleculares
+* [[Tensión superficial|Tensión superficial]]
+* [[Capilaridad|Capilaridad]]
+* [[Viscosidad|Viscosidad]]
+* [[Presión de vapor|Presión de vapor]]
