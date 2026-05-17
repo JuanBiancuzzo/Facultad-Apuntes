@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-En las [[Juntura PN|junturas PN]] la [[Recombinación]] y la [[Generación]] ocurren principalmente en las superficies
+En las [[Juntura PN|junturas PN]] la [[ingeniería electrónica/dispo/Física de semiconductores/Recombinación de portadores]] y la [[ingeniería electrónica/dispo/Física de semiconductores/Generación de portadores]] ocurren principalmente en las superficies
 * En las superficies se interrumpe la [[Red cristalina|estructura cristalina]] perfectamente periódica
   $\implies$ gran cantidad de enlaces rotos:
 	* Centros de generación y recombinación

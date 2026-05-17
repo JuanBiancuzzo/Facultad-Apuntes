@@ -17,8 +17,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-
-
+Son [[ingeniería electrónica/quimica/Estados de la materia/Sólido|sólidos]] donde su partícula de formación son [[Molécula|moléculas]]
 
 ## Propiedades
 ---

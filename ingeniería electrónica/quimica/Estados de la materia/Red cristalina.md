@@ -6,6 +6,8 @@ referencias:
   - "1153"
 aliases:
   - Celda unitaria#Celda unitaria
+  - Unidad elemental de una celda unitaria#^unidad-elemental
+  - Número de coordinación de una celda unitaria#^numero-coordinacion
 tags:
   - carrera/ingeniería-electrónica/quimica/Estados-de-la-materia
   - nota/facultad
@@ -27,6 +29,13 @@ La estructura cristalina es la forma [[Sólido|sólida]] de cómo se ordenan y e
 Se define como celda unitaria a la unidad estructural fundamental de la estructura cristalina, determinada por la geometría y la posición de las partículas dentro de la celda
 
 ![[ingeniería electrónica/quimica/Estados de la materia/img/Celda unitaria.png]]
+
+Se definen magnitudes importantes dada una celda unitaria, entre ellas esta
+* La unidad elemental ^unidad-elemental
+	* La cual define la cantidad de partículas que existen dentro de la celda
+	* Si existe en un [[ingeniería electrónica/intro/Circuitos con resistencias/Nodo|vértice]], este será $\displaystyle \frac{1}{8}$ de unidad elemental, de forma similar, en una [[Arista|arista]] es $\displaystyle \frac{1}{4}$ y en una cara es $\displaystyle \frac{1}{2}$
+* El número de coordinación ^numero-coordinacion
+	* Corresponde a la cantidad de unidades elementales vistas desde cualquier vértice de la celda 
 
 ### Clasificación
 ---

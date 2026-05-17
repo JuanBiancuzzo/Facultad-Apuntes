@@ -18,7 +18,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-
+Son [[ingeniería electrónica/quimica/Estados de la materia/Sólido|sólidos]] donde su partícula de formación son [[ingeniería en informática/estructura/Álgebra de Boole/Átomo|átomos]] que forman [[ingeniería electrónica/quimica/Enlaces químicos/Unión covalente|enlaces covalentes]]
 
 ## Propiedades
 ---

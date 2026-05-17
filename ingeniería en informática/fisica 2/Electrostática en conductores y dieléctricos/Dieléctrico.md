@@ -3,6 +3,7 @@ dia: 2024-09-01
 tags:
   - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
   - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - carrera/ingeniería-electrónica/quimica/Estados-de-la-materia
   - nota/facultad
 aliases:
   - Aislante
@@ -11,6 +12,10 @@ vinculoFacultad:
     capitulo: 3
     materia: Física 2 A
     carrera: Ingeniería en informática
+  - tema: Estados de la materia
+    capitulo: 7
+    materia: Química y electroquímica
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

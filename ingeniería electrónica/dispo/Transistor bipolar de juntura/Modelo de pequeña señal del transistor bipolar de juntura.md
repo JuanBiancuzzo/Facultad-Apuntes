@@ -178,7 +178,7 @@ Calculándolo en MAD y un TBJ de tipo NPN, tenemos que $$ i_B = \frac{i_C}{\beta
 ---
 Los cambios en $v_{BE}$ también producen cambios en $i_B$ $$ I_B = I_{B1} + I_{B2} $$ donde
 * $I_{B1}$ [[Corriente eléctrica|corriente]] debido a la inyección de [[Hueco|huecos]] de la base hacia el emisor
-* $I_{B2}$ corriente de [[Recombinación|recombinación]] de [[Carga eléctrica|portadores]] en la base
+* $I_{B2}$ corriente de [[ingeniería electrónica/dispo/Física de semiconductores/Recombinación de portadores|recombinación]] de [[Carga eléctrica|portadores]] en la base
 
 Para el cálculo de polarización, $I_{B2}$ se considera despreciable y $I_{B1}$ es predominante.
 

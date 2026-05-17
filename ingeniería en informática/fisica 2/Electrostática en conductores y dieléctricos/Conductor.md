@@ -3,12 +3,17 @@ dia: 2024-09-01
 tags:
   - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-conductores-y-dieléctricos
   - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-conductores-y-dieléctricos
+  - carrera/ingeniería-electrónica/quimica/Estados-de-la-materia
   - nota/facultad
 vinculoFacultad:
   - tema: Electrostática en conductores y dieléctricos
     capitulo: 3
     materia: Física 2 A
     carrera: Ingeniería en informática
+  - tema: Estados de la materia
+    capitulo: 7
+    materia: Química y electroquímica
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---
@@ -20,11 +25,11 @@ Experimentalmente, podemos probar que el [[Campo eléctrico|campo eléctrico]] d
 
 ## Campo eléctrico en las cercanías de un conductor
 ---
-Si analizamos un punto muy cercano a la superficie, el campo eléctrico es perpendicular a la superficie, por lo que si aplicamos la [[Teorema de Gauss#Para campo eléctrico|ley de gauss]], llegamos a la expresión del campo eléctrico en las cercanías de la superficie. Es similar al campo de un plano infinito, pero solo tenemos en cuenta una de las tapas de la superficie de gauss, ya que la que se encuentra dentro del conductor tiene flujo nulo $$ \vec{E}_p = \frac{\sigma_p}{\epsilon_0} ~ \hat{n}_c $$
+Si analizamos un punto muy cercano a la superficie, el campo eléctrico es perpendicular a la superficie, por lo que si aplicamos la [[Teorema de Gauss#Para campo eléctrico|ley de Gauss]], llegamos a la expresión del campo eléctrico en las cercanías de la superficie. Es similar al campo de un plano infinito, pero solo tenemos en cuenta una de las tapas de la superficie de gauss, ya que la que se encuentra dentro del conductor tiene flujo nulo $$ \vec{E}_p = \frac{\sigma_p}{\epsilon_0} ~ \hat{n}_c $$
 
 ## Cascará esférica conductora
 ---
-Este caso es similar al del [[Blindaje electroestático|blindaje electroestático]], pero al tener una carga en el interior, el campo en el medio ya no es nulo. Por ley de gauss, tenemos que la carga de la superficie interior del cascarón $Q_{int}$ debe anular a la carga de la esfera conductora $Q$. Por otro lado, la carga del cascarón era inicialmente nula, por lo que se deben anular las cargas de la superficie interior y exterior $Q_{ext}$ (carga total permanece constante) $$ \begin{align} Q_{int} &= -Q \\ Q_{ext} &= Q \end{align} $$
+Este caso es similar al del [[Blindaje electroestático|blindaje electroestático]], pero al tener una carga en el interior, el campo en el medio ya no es nulo. Por ley de Gauss, tenemos que la carga de la superficie interior del cascarón $Q_{int}$ debe anular a la carga de la esfera conductora $Q$. Por otro lado, la carga del cascarón era inicialmente nula, por lo que se deben anular las cargas de la superficie interior y exterior $Q_{ext}$ (carga total permanece constante) $$ \begin{align} Q_{int} &= -Q \\ Q_{ext} &= Q \end{align} $$
 ```tikz
 \usepackage{amssymb}
 \usetikzlibrary{math}

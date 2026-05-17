@@ -44,7 +44,7 @@ y si conozco $p(x)$ puedo calcular la [[Corriente de difusión|densidad de corri
 
 ### En la zona SCR
 ---
-Sabemos que las [[Modelo de enlace de Silicio#Concentración de Portador de carga portadores|Concentraciones]] de [[Hueco|huecos]] y [[Electrón|electrones]] es "baja" por la [[Aproximación de vaciamiento]], por lo que no hay [[Recombinación]], y podemos decir que $$ \begin{align}
+Sabemos que las [[Modelo de enlace de Silicio#Concentración de Portador de carga portadores|Concentraciones]] de [[Hueco|huecos]] y [[Electrón|electrones]] es "baja" por la [[Aproximación de vaciamiento]], por lo que no hay [[ingeniería electrónica/dispo/Física de semiconductores/Recombinación de portadores]], y podemos decir que $$ \begin{align}
 	i_p(-x_p) = i_p(x_n) \\
 	i_n(-x_p) = i_n(x_n)
 \end{align} $$

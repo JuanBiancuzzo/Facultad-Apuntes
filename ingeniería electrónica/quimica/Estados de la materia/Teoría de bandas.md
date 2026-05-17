@@ -2,7 +2,9 @@
 dia: 2026-05-16
 etapa: empezado
 referencias: []
-aliases: []
+aliases: 
+  - Banda de valencia#^nombre-bandas
+  - Banda de conducción#^nombre-bandas
 tags:
   - carrera/ingeniería-electrónica/quimica/Estados-de-la-materia
   - nota/facultad
@@ -23,7 +25,7 @@ Los [[ingeniería electrónica/dispo/Física de semiconductores/Electrón|electr
 
 La banda o conjunto de orbitales moleculares se llena empezando por los niveles de menor energía. Están tan cercanos entre sí que los electrones pueden ocupar cualquier posición dentro de la banda
 
-La banda de energía formada por los orbitales moleculares de valencia se la llama banda de valencia. La banda formada por los orbitales moleculares vacíos se llama banda de conducción
+La banda de energía formada por los orbitales moleculares de valencia se la llama banda de valencia. La banda formada por los orbitales moleculares vacíos se llama banda de conducción ^nombre-bandas
 
 A veces ambas bandas se solapan energéticamente como en el caso del [[Litio|litio]] ![[ingeniería electrónica/quimica/Estados de la materia/img/Teoría de bandas caso litio.png]]
 

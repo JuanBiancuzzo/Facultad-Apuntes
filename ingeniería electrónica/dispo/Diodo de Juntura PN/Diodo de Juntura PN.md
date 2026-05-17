@@ -35,7 +35,7 @@ Se altera el balance de [[Corriente eléctrica|corrientes]] $$ |J_{dif}| > |J_{a
 Debido a este desbalance, aparece una [[Corriente eléctrica|corriente]] neta (de difusión) en la SCR
 * Inyección de [[Hueco|huecos]] $h^+$ en n-QNR y de [[Electrón|electrones]] $e^-$ en p-QNR
 * Exceso de minoritarios en regiones QNR
-* Prevalece la [[Recombinación|recombinación]]
+* Prevalece la [[ingeniería electrónica/dispo/Física de semiconductores/Recombinación de portadores|recombinación]]
 
 Hay una gran difusión de $h^+$ en n-QNR y de $e^-$ en p-QNR entonces la corriente puede ser grande
 
@@ -51,6 +51,6 @@ Se altera el balance de [[Corriente eléctrica|corrientes]] $$ |J_{arr}| > |J_{d
 Debido a este desbalance, aparece una [[Corriente eléctrica|corriente]] neta (de arrastre) en la SCR
 * Extracción de [[Hueco|huecos]] $h^+$ en n-QNR y de [[Electrón|electrones]] $e^-$ en p-QNR
 * Déficit de minoritarios en regiones QNR
-* Prevalece la [[Generación|generación]]
+* Prevalece la [[ingeniería electrónica/dispo/Física de semiconductores/Generación de portadores|generación]]
 
 Hace falta compensar pocos $h^+$ en n-QNR y $e^-$ en p-QNR por lo tanto la corriente es pequeña y negativa

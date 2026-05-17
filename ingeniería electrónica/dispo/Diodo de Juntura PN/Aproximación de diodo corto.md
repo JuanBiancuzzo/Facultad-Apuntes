@@ -12,7 +12,7 @@ vinculoFacultad:
 # Definición
 ---
 La distancia que recorre el [[Carga eléctrica#Cargas libres|portador]] ($W_p$ ancho del [[Semiconductor|semiconductor]]) es comparable con el [[Movimiento térmico de portadores|camino libre medio]] ($\lambda_c$)
-$\implies$ la [[Probabilidad|probabilidad]] de [[Recombinación|recombinación]] es muy baja
+$\implies$ la [[Probabilidad|probabilidad]] de [[ingeniería electrónica/dispo/Física de semiconductores/Recombinación de portadores|recombinación]] es muy baja
 $\implies$ Todo portador que ingresa a la QNR, la atraviesa en su totalidad hasta alcanzar el extremo contrario
 
 Esto se conoce como la aproximación de [[Diodo|diodo]] corto
