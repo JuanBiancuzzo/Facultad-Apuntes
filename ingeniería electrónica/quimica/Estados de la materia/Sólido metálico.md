@@ -22,7 +22,7 @@ Son [[ingeniería electrónica/quimica/Estados de la materia/Sólido|sólidos]] 
 ## Propiedades
 ---
 * Térmicas
-	* Tiene un punto de [[ingeniería electrónica/quimica/Estados de la materia/Estado de agregación#Cambio de estado|fusión]] y [[ingeniería electrónica/quimica/Estados de la materia/Estado de agregación#Cambio de estado|ebullición]] es generalmente alto
+	* Tiene un punto de [[ingeniería electrónica/quimica/Estados de la materia/Estado de agregación de la materia#Cambio de estado|fusión]] y [[ingeniería electrónica/quimica/Estados de la materia/Estado de agregación de la materia#Cambio de estado|ebullición]] es generalmente alto
 	* Tiene una [[ingeniería en informática/fisica 2/Termodinámica/Conductividad térmica|conductividad térmica]] alta
 * Mecánica
 	* Variada

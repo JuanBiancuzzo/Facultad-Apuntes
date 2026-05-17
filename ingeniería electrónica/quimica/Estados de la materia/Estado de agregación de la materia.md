@@ -3,7 +3,9 @@ dia: 2026-05-16
 etapa: empezado
 referencias: []
 aliases:
+  - Fase de la materia
   - Cambio de estado#Cambio de estado
+  - Cambio de fase#Cambio de estado
   - Fusión#Cambio de estado
   - Solidificación#Cambio de estado
   - Evaporación#Cambio de estado
@@ -38,6 +40,8 @@ Las sustancias pasan de un estado a otro por un [[ingeniería en informática/si
 \usetikzlibrary{arrows.meta, automata, positioning}
 
 \begin{document} 
+	\definecolor{azul}{RGB}{0, 127, 204}
+	\definecolor{rojo}{RGB}{218, 111, 142}
 	\begin{tikzpicture}[scale=1.3, transform shape, thick]
 		\tikzmath { \radio = 1.8; }	
 	
@@ -47,17 +51,19 @@ Las sustancias pasan de un estado a otro por un [[ingeniería en informática/si
 
 		\begin{scope}[
 			>={Stealth[round]}, ->, shorten >=4pt, bend angle=15, bend left, 
-			every node/.style={fill=white}
+			every node/.style={fill=white, text=black}
 		]
-			\path (q_s) edge node {Fusión} (q_l);
-			\path (q_l) edge node {Solidificación} (q_s);
+			\path[rojo] (q_s) edge node {Fusión} (q_l);
+			\path[azul] (q_l) edge node {Solidificación} (q_s);
 			
-			\path (q_g) edge node {Condensación} (q_l);
-			\path (q_l) edge node {Evaporación} (q_g);
+			\path[azul] (q_g) edge node {Condensación} (q_l);
+			\path[rojo] (q_l) edge node {Evaporación} (q_g);
 			
-			\path (q_g) edge node {Deposición} (q_s);
-			\path (q_s) edge node {Sublimación} (q_g);
+			\path[azul] (q_g) edge node {Deposición} (q_s);
+			\path[rojo] (q_s) edge node {Sublimación} (q_g);
 		\end{scope}
 	\end{tikzpicture}
 \end{document}
 ```
+
+Los procesos de fusión, evaporación y sublimación, son procesos [[Endotérmico|endotérmicos]]. Los procesos de solidificación, deposición y condensación, son procesos [[Exotérmico|exotérmicos]]

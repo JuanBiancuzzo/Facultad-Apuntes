@@ -21,7 +21,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Es un [[ingeniería electrónica/quimica/Estados de la materia/Estado de agregación|estado de agregación]] que tiene propiedades macroscópicas y microscópicas
+Es un [[ingeniería electrónica/quimica/Estados de la materia/Estado de agregación de la materia|estado de agregación]] que tiene propiedades macroscópicas y microscópicas
 
 Tiene como propiedades macroscópicas
 * Son compresibles

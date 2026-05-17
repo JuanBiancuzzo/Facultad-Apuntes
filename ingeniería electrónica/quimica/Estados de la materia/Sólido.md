@@ -18,7 +18,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Es un [[ingeniería electrónica/quimica/Estados de la materia/Estado de agregación|estado de agregación]] que tiene propiedades macroscópicas y microscópicas
+Es un [[ingeniería electrónica/quimica/Estados de la materia/Estado de agregación de la materia|estado de agregación]] que tiene propiedades macroscópicas y microscópicas
 
 Tiene como propiedades macroscópicas
 * Es incompresible
@@ -47,7 +47,7 @@ Existen dos grupos donde se pueden clasificar los sólidos
 ---
 Las propiedades de los sólidos se pueden separar en $3$
 * Térmicas
-	* Punto de [[ingeniería electrónica/quimica/Estados de la materia/Estado de agregación#Cambio de estado|fusión]]
+	* Punto de [[ingeniería electrónica/quimica/Estados de la materia/Estado de agregación de la materia#Cambio de estado|fusión]]
 	* La [[ingeniería en informática/fisica 2/Termodinámica/Conductividad térmica|conductividad térmica]]
 * Mecánica
 	* Dureza

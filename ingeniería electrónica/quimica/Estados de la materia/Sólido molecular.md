@@ -22,7 +22,7 @@ Son [[ingeniería electrónica/quimica/Estados de la materia/Sólido|sólidos]] 
 ## Propiedades
 ---
 * Térmicas
-	* Tiene un punto de [[ingeniería electrónica/quimica/Estados de la materia/Estado de agregación#Cambio de estado|fusión]] y [[ingeniería electrónica/quimica/Estados de la materia/Estado de agregación#Cambio de estado|ebullición]] es débil para atracciones de Van der Waals, y medianamente débil para atracciones por puente de hidrógeno
+	* Tiene un punto de [[ingeniería electrónica/quimica/Estados de la materia/Estado de agregación de la materia#Cambio de estado|fusión]] y [[ingeniería electrónica/quimica/Estados de la materia/Estado de agregación de la materia#Cambio de estado|ebullición]] es débil para atracciones de Van der Waals, y medianamente débil para atracciones por puente de hidrógeno
 	* Tiene una [[ingeniería en informática/fisica 2/Termodinámica/Conductividad térmica|conductividad térmica]] baja
 * Mecánica
 	* Blandos para atracciones de Van der Waals, y medianamente duros para atracciones por puente de hidrógeno
