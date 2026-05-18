@@ -66,4 +66,4 @@ Las sustancias pasan de un estado a otro por un [[ingeniería en informática/si
 \end{document}
 ```
 
-Los procesos de fusión, evaporación y sublimación, son procesos [[Endotérmico|endotérmicos]]. Los procesos de solidificación, deposición y condensación, son procesos [[Exotérmico|exotérmicos]]
+Los procesos de fusión, evaporación y sublimación, son procesos [[ingeniería electrónica/quimica/Soluciones y solubilidad/Proceso endotérmico|endotérmicos]]. Los procesos de solidificación, deposición y condensación, son procesos [[ingeniería electrónica/quimica/Soluciones y solubilidad/Proceso exotérmico|exotérmicos]]
