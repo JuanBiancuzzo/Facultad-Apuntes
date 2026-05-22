@@ -1,7 +1,7 @@
 ---
 dia: 2026-05-02
 tags:
-  - proyecto-práctico/Sistema-operativo-distribuido
+  - proyecto-práctico/os-distribuido
   - nota/proyecto
 ---
 # Progreso
