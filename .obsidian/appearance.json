@@ -10,5 +10,6 @@
     "header_size",
     "custon_callouts"
   ],
-  "showRibbon": true
+  "showRibbon": true,
+  "nativeMenus": false
 }
