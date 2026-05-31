@@ -7,8 +7,8 @@
   "translucency": false,
   "enabledCssSnippets": [
     "mostrar-bloques",
-    "header_size",
-    "custon_callouts"
+    "custon_callouts",
+    "header_size"
   ],
   "showRibbon": true,
   "nativeMenus": false

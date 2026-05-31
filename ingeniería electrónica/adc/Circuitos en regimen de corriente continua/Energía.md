@@ -32,7 +32,9 @@ vinculoFacultad:
 ```
 # Definición
 ---
-La energía de un [[Sistema|sistema]] mide su capacidad de hacer [[Trabajo|trabajo]]. No se destruye nunca, solo se transforma de un tipo a otro. Es un escalar, se mide en Julios $J = [N ~ m]$
+La energía de un [[Sistema|sistema]] mide su capacidad de hacer [[Trabajo|trabajo]], o de transferir [[ingeniería en informática/fisica 2/Termodinámica/Calor|calor]]. Es un escalar, se mide en Julios $J = [N ~ m]$
+
+Como dice la [[ingeniería electrónica/quimica/Termodinámica/Termodinámica#Primera ley|primera ley de la termodinámica]], la energía no se destruye nunca, solo se transforma de un tipo a otro
 
 ## Energía cinética
 ---
@@ -45,6 +47,6 @@ Es la energía que poseen los cuerpos o moléculas debido a su posición en un c
 
 ## Energía interna
 ---
-La energía total almacenada por un [[ingeniería electrónica/señales/Señales y sistemas/Sistema|sistema]] se denomina energía interna, denotada por la letra $U$
+La energía total almacenada por un [[ingeniería electrónica/señales/Señales y sistemas/Sistema|sistema]] se denomina energía interna, denotada por la letra $U$, esta es una [[ingeniería electrónica/quimica/Termodinámica/Función de estado|función de estado]]
 
 La energía interna de un sistema es el resultado de la contribución de la energía cinética de todas las partes que lo constituyen, además de la energía potencial 
