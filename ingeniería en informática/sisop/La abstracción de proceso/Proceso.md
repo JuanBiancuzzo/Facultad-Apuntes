@@ -5,14 +5,15 @@ tags:
   - carrera/ingeniería-en-informática/ingenieria-software-1/Diseño-de-software
   - carrera/ingeniería-en-informática/concurrentes/Introducción
   - carrera/ingeniería-en-informática/sisop/La-abstracción-de-proceso
+  - carrera/ingeniería-electrónica/quimica/Termodinámica
   - colección/diccionario/palabra
-  - nota/colección
   - referencia/diccionarioonline
+  - nota/colección
   - nota/facultad
 referencias:
-  - "789"
   - "871"
   - "898"
+  - "789"
 tipoCita: DiccionarioOnline
 numReferencia: 1020
 editorial: Merriam-Webster. (n. d.)
@@ -38,6 +39,13 @@ vinculoFacultad:
     capitulo: 2
     materia: Sistemas operativos
     carrera: Ingeniería en informática
+  - tema: Termodinámica
+    capitulo: 10
+    materia: Química y electroquímica
+    carrera: Ingeniería electrónica
+aliases:
+  - Proceso reversible#^reversible
+  - Proceso irreversible#^irreversible
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
@@ -49,6 +57,16 @@ El diccionario Merriam-Webster define un proceso como una operación o un desarr
 ## En teoría de control
 ---
 Un proceso es cualquier operación que se va a controlar. El componente central de un [[ingeniería electrónica/control/Respuesta dinámica/Controlador closed-loop|sistema feedback]] es el proceso, el cual su salida es controlada
+
+## En física
+---
+Es cualquier cambio de un [[ingeniería electrónica/legal/Introducción al derecho/Estado|estado]] de [[ingeniería electrónica/control/Respuesta dinámica/Punto de equilibrio|equilibrio]] a otro estado de equilibrio, donde se pueden clasificar en $2$ tipos de procesos
+* Proceso reversible ^reversible
+	* Cuando el sistema realiza la transformación del estado inicial al final pasando por sucesivos estados de equilibrio con el entorno
+	* El proceso tiene lugar de forma infinitamente lenta 
+	* El sistema podría volver al estado inicial por el mismo camino sin modificar el entorno
+* Proceso irreversible ^irreversible
+	* Es un proceso que no es reversible. Los estados intermedios de la transformación no son de equilibrio con el entorno
 
 ## En ciencia de computación
 ---

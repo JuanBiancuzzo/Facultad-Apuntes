@@ -3,22 +3,28 @@ dia: 2023-01-23
 tags:
   - carrera/ingeniería-electrónica/fisica-2/Termodinámica
   - carrera/ingeniería-en-informática/fisica-2/Termodinámica
+  - carrera/ingeniería-electrónica/quimica/Termodinámica
   - nota/facultad
 referencias:
   - "198"
-etapa: sin-empezar
+etapa: empezado
+aliases: []
 vinculoFacultad:
   - tema: Termodinámica
     capitulo: 1
     materia: Física 2 A
     carrera: Ingeniería en informática
+  - tema: Termodinámica
+    capitulo: 10
+    materia: Química y electroquímica
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
 ```
 # Definición
 ---
-Se denomina calor a la [[Energía|energía]] (medido en $J$) en tránsito que se reconoce solo cuando se cruza la frontera de un [[Sistema|sistema]] termodinámico<sup><a href="#ref-198" style="color: inherit; text-decoration: none;">[198]</a></sup> $$ q = \int_i^f dq = \int_{T_i}^{T_f} m ~ C(T) dT $$ donde $C(T)$ es el [[Calor especifico|calor especifico]]
+Se denomina calor a la [[Energía|energía]] (medido en $J$) en tránsito que se reconoce solo cuando se cruza la frontera de un [[Sistema|sistema]] [[ingeniería electrónica/quimica/Termodinámica/Termodinámica|termodinámico]] <sup><a href="#ref-198" style="color: inherit; text-decoration: none;">[198]</a></sup> $$ q = \int_i^f dq = \int_{T_i}^{T_f} m ~ C(T) dT $$ donde $C(T)$ es el [[Calor especifico|calor especifico]]
 
 # Referencias
 ---

@@ -15,17 +15,30 @@ tags:
   - nota/colección
   - referencia/diccionarioonline
   - carrera/ingeniería-electrónica/legal/Introducción-al-derecho
+  - carrera/ingeniería-electrónica/quimica/Termodinámica
   - nota/facultad
 vinculoFacultad:
   - tema: Introducción al derecho
     capitulo: 1
     materia: Legislación y ejercicio profesional
     carrera: Ingeniería electrónica
+  - tema: Termodinámica
+    capitulo: 10
+    materia: Química y electroquímica
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
 ```
 # Definición
+---
+Tiene multiples definiciones
+
+## En relación a los sistemas
+---
+El estado es la condición en la que se encuentra el [[ingeniería electrónica/señales/Señales y sistemas/Sistema|sistema]], y está definida por los valores que adopten sus [[ingeniería electrónica/control/Respuesta dinámica/Variable de estado|variables de estado]], siempre y cuando las variables definan todas las características relevantes del sistema
+
+## En derecho
 ---
 Es una forma de organización política, donde una [[Persona jurídica|persona jurídica]] establece un [[Ordenamiento jurídico|orden jurídico]] con órganos que crean, aplican y hacen cumplir las normas
 
@@ -45,6 +58,6 @@ Según la [[Real Academia Española (RAE)|REA]] también se lo puede definir com
 ---
 En primer lugar se encuentra la [[colección/documentos/Constitución de la Nación/Constitución de la Nación|Constitución Nacional]] (norma suprema) y los [[Tratado internacional|tratados internacionales]] en materia de [[Derecho humano|derechos humanos]] reconocidos por la Argentina
 
-En segundo lugar se encuentra la [[Ley|Ley]]
+En segundo lugar se encuentra la [[ingeniería electrónica/legal/Introducción al derecho/Ley|ley]]
 
 En tercer lugar se encuentra los decretos, ordenanzas y resoluciones

@@ -29,7 +29,7 @@ Tiene como propiedades microscópicas
  * La [[Distancia|distancia]] intermolecular es muy chica
  * Están prácticamente fijas y "ordenadas"
  * [[ingeniería electrónica/quimica/Fuerzas intermoleculares/Fuerza intermolecular|Fuerzas]] de atracción son tan fuertes que fijan su posición en el espacio, del orden de $100$ a $4000 ~ \frac{\text{kJ}}{\text{mol}}$, como los [[ingeniería electrónica/quimica/Tabla periódica/Carácter metálico|metales]], [[Sal|sales]] o el [[ingeniería electrónica/seguridad/Prevención de incendios/Agua|hielo]]
- * La única [[Energía cinética|energía cinética]] viene de la vibración, por lo que la energía de atracción es predominante 
+ * La única [[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Energía#Energía cinética|energía cinética]] viene de la vibración, por lo que la energía de atracción es predominante 
 
 ## Clasificación
 ---

@@ -3,9 +3,9 @@ let { archivo } = input;
 if (archivo.tags.contains("facultad/materia")) {
     let tagsMateria = archivo.tags.filter(tag => !tag.startsWith("facultad"));
     let resumenes = dv.pages(`#facultad/resumen and (${tagsMateria.map(tag => `#${tag}`).join(" or ")})`)
-        .distinct(resumen => resumen.nombreResumen)
+        .distinct(resumen => resumen.nombreResumen + (resumen.parte ? resumen.parte : ""))
         .sort(resumen => parseInt(resumen.capitulo, 10))
-        .map(resumen => crearReferencia(resumen.file.path, resumen.nombreResumen));
+        .map(resumen => crearReferencia(resumen.file.path, resumen.nombreResumen + (resumen.parte ? ` - Parte ${resumen.parte}` : "")));
 
     dv.list(resumenes);
 
@@ -21,11 +21,11 @@ if (archivo.tags.contains("facultad/materia")) {
         .distinct(nota => nota.file.name)
         .sort(nota => nota.file.name)
         .flatMap(nota => {
-            let solucion = [  ];
+            let solucion = [];
             let path = nota.file.path;
             solucion.push(crearReferencia(path, nota.file.name));
 
-            if (nota.aliases == undefined) 
+            if (nota.aliases == undefined)
                 return solucion
 
             for (let alias of nota.aliases) {

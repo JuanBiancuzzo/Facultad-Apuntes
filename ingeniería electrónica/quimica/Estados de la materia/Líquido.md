@@ -28,7 +28,7 @@ Tiene como propiedades microscópicas
  * La [[Distancia|distancia]] intermolecular es relativamente chica
  * Existe cierto orden, ya que las [[ingeniería electrónica/quimica/Fuerzas intermoleculares/Fuerza intermolecular|fuerzas intermoleculares]] fuerzan a [[Molécula|moléculas]] vecinas a moverse en el mismo sentido
  * Las fuerzas intermoleculares son bastante fuertes como para mantener juntas las moléculas, del orden de $15$ a $70 ~ \frac{\text{kJ}}{\text{mol}}$, donde no tienen forma propia como el [[Mercurio|mercurio]], [[Bromo|bromo]], el [[ingeniería electrónica/seguridad/Prevención de incendios/Agua|agua]] o el [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Alcano|pentano]] 
- * La [[Energía cinética|energía cinética]] es baja, y es más prevalente las energías de atracción 
+ * La [[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Energía#Energía cinética|energía cinética]] es baja, y es más prevalente las energías de atracción 
 
 ## Propiedades
 ---

@@ -5,6 +5,7 @@ tags:
   - carrera/ingeniería-electrónica/fisica-2/Electrostática-en-el-vacío
   - carrera/ingeniería-en-informática/fisica-1/Trabajo-y-energía
   - carrera/ingeniería-en-informática/fisica-2/Electrostática-en-el-vacío
+  - carrera/ingeniería-electrónica/quimica/Termodinámica
   - nota/facultad
 vinculoFacultad:
   - tema: Trabajo y energía
@@ -15,6 +16,10 @@ vinculoFacultad:
     capitulo: 2
     materia: Física 2 A
     carrera: Ingeniería en informática
+  - tema: Termodinámica
+    capitulo: 10
+    materia: Química y electroquímica
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---

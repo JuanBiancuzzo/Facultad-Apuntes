@@ -33,7 +33,7 @@ Tiene como propiedades microscópicas
  * La [[Distancia|distancia]] intermolecular es grande, y en constante movimiento
  * El movimiento es caótico, existen choquen entre sí y con las paredes del recipiente
  * [[ingeniería electrónica/quimica/Fuerzas intermoleculares/Fuerza intermolecular|Fuerzas]] de atracción son despreciables, ya que los gases reales son [[ingeniería electrónica/quimica/Fuerzas intermoleculares/Fuerza intermolecular#^fuerzas-van-der-waals|fuerzas de van der Waals]], del orden de $2$ a $4 ~ \frac{\text{kJ}}{\text{mol}}$ como el caso del [[Oxígeno|oxígeno]], [[Nitrógeno|nitrógeno]] o el [[Argón|argón]]
- * La [[Energía cinética|energía cinética]] es mucho más a la [[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Energía|energía]] de atracción entre ellas. Esta energía cinética es principalmente dada por la [[ingeniería electrónica/seguridad/Prevención de incendios/Temperatura|temperatura]]
+ * La [[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Energía#Energía cinética|energía cinética]] es mucho más a la [[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Energía|energía]] de atracción entre ellas. Esta energía cinética es principalmente dada por la [[ingeniería electrónica/seguridad/Prevención de incendios/Temperatura|temperatura]]
 
 ## Gas ideal
 ---
