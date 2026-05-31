@@ -1,9 +1,9 @@
 ---
 tags:
   - facultad/resumen
-  - carrera/ingeniería-electrónica/quimica/Termoquímica
-nombreResumen: Termoquímica
-capitulo: 11
+  - carrera/ingeniería-electrónica/quimica/Termodinámica
+nombreResumen: Termodinámica
+capitulo: 10
 referencias: []
 infoTemaMateria:
   materia: Química y electroquímica

@@ -9,7 +9,7 @@ aliases:
   - Reacción de síntesis#^sintesis
   - Reacción de descomposición#^descomposicion
   - Reacción de sustitución simple#^sustitucion-simple
-  - Reacción de desplazamiento simple, ^sustitucion-simple
+  - Reacción de desplazamiento simple#^sustitucion-simple
   - Reacción de sustitución doble#^sustitucion-doble
   - Reacción de desplazamiento doble#^sustitucion-doble
 tags:

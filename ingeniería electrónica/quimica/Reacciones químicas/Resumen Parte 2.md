@@ -4,7 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/quimica/Reacciones-químicas/2
 parte: 2
 nombreResumen: Reacciones químicas
-capitulo: 11
+capitulo: 12
 referencias: []
 infoTemaMateria:
   materia: Química y electroquímica
