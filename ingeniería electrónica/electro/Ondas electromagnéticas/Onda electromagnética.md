@@ -8,7 +8,14 @@ vinculoFacultad:
     capitulo: 3
     materia: Electromagnetismo aplicado
     carrera: Ingeniería electrónica
+etapa: empezado
+referencias: []
+aliases:
+  - Luz
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 Partiendo de las [[Ecuaciones de Maxwell|ecuaciones de Maxwell]] ![[Ecuaciones de Maxwell#^ecuaciones]] que representan al [[Campo electromagnético|campo electromagnético]] en su mayor generalidad

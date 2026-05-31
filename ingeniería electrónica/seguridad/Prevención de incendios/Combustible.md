@@ -11,4 +11,4 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Material que cede [[Electrón|electrones]] a un agente oxidante. Estado: sólido, líquido o gaseoso.
+Material que cede [[Electrón|electrones]] a un [[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Reacción química de óxido-reducción#^agente|agente oxidante]]. Estado: [[ingeniería electrónica/quimica/Estados de la materia/Sólido|sólido]], [[ingeniería electrónica/quimica/Estados de la materia/Líquido|líquido]] o [[ingeniería electrónica/quimica/Estados de la materia/Gas|gaseoso]]

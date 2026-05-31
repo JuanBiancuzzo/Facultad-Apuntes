@@ -83,10 +83,6 @@ Las acciones básicas que todo [[Sistema operativo|SO]] debe proveer sobre la [[
 * Estado (Status):
 	* Tiene que existir una forma de saber sobre la situación del proceso y su [[Estados de un proceso|estado]]. Cuánto hace que se está ejecutando, en que estado se encuentra, etc.
 
-### Contexto de un proceso
----
-![[Contexto del proceso#Definición]]
-
 
 # Referencias
 ---

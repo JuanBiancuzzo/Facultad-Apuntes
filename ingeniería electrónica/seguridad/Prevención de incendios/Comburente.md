@@ -11,4 +11,4 @@ vinculoFacultad:
 ---
 # Definición
 ---
-[[Agente]] que puede oxidar a un [[Combustible|combustible]]. Ejemplo: Oxígeno del aire. Otros: el polvo de magnesio puede arder en atmósferas de $CO_2$ y el calcio en atmósferas de Nitrógeno
+[[ingeniería electrónica/quimica/Química orgnánica e inorgánica/Reacción química de óxido-reducción#^agente|Agente que puede oxidar]] a un [[Combustible|combustible]]. Ejemplo: [[Oxígeno|Oxígeno]] del aire. Otros: el polvo de [[Magnesio|Magnesio]] puede arder en [[investigación/storytelling/Atmósfera|atmósfera]] de $CO_2$ y el calcio en atmósferas de [[Nitrógeno|Nitrógeno]]
