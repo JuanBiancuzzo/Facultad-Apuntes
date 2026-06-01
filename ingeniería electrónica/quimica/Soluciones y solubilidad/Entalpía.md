@@ -25,7 +25,7 @@ vinculoFacultad:
 ---
 La entalpía es una magnitud [[Termodinámica|termodinámica]], simbolizada con la letra $H$, definida como "el flujo de [[Energía térmica|energía térmica]] en los procesos químicos efectuados a [[Presión|presión]] constante cuando el único [[ingeniería en informática/fisica 2/Electrostática en el vacío/Trabajo|trabajo]] es de presión-[[Volumen|volumen]]", es decir, la cantidad de energía que un [[ingeniería electrónica/señales/Señales y sistemas/Sistema|sistema]] intercambia con su entorno
 
-En el caso que el calor sea suministrado a presión constante, este será igual a la entalpía dada por $$ H = U + PV $$
+En el caso que el calor sea suministrado a presión constante, este será igual a la entalpía dada por $$ H = U + PV $$ y esta es una [[ingeniería electrónica/quimica/Termodinámica/Función de estado|función de estado]]
 
 # Referencias
 ---

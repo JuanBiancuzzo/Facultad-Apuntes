@@ -13,12 +13,18 @@ aliases:
   - Condensación#Cambio de estado
   - Deposición#Cambio de estado
   - Deposicioón#Cambio de estado
+  - Calor latente#^calor-latente
 tags:
   - carrera/ingeniería-electrónica/quimica/Estados-de-la-materia
+  - carrera/ingeniería-electrónica/quimica/Termodinámica
   - nota/facultad
 vinculoFacultad:
   - tema: Estados de la materia
     capitulo: 7
+    materia: Química y electroquímica
+    carrera: Ingeniería electrónica
+  - tema: Termodinámica
+    capitulo: 10
     materia: Química y electroquímica
     carrera: Ingeniería electrónica
 ---
@@ -66,4 +72,8 @@ Las sustancias pasan de un estado a otro por un [[ingeniería en informática/si
 \end{document}
 ```
 
-Los procesos de fusión, evaporación y sublimación, son procesos [[ingeniería electrónica/quimica/Soluciones y solubilidad/Proceso endotérmico|endotérmicos]]. Los procesos de solidificación, deposición y condensación, son procesos [[ingeniería electrónica/quimica/Soluciones y solubilidad/Proceso exotérmico|exotérmicos]]
+Los procesos de fusión, evaporación y sublimación, son [[ingeniería electrónica/quimica/Termodinámica/Proceso endotérmico|procesos endotérmico]]. Los procesos de solidificación, deposición y condensación, son [[ingeniería electrónica/quimica/Termodinámica/Proceso exotérmico|procesos exotérmico]]
+
+En estos procesos, la presión y la temperatura son constantes, y por lo tanto no solo se puede calcular la [[ingeniería electrónica/quimica/Soluciones y solubilidad/Entalpía|entalpía]] de cada proceso, por ejemplo $$ \Delta H_\text{vap} = H_m(\text{vapor}) - H_m(\text{líquido}) $$ pero además como es presión constante, por lo que el [[ingeniería electrónica/quimica/Termodinámica/Capacidad calorífica#^calor-presion-constante|calor a presión constante]] es igual a la variación de entalpía $Q_\text{vap} = \Delta H_\text{vap}$, y esta se la conoce como calor latente, y en este caso calor latente de vaporización ^calor-latente
+
+Como la entalpía es una [[ingeniería electrónica/quimica/Termodinámica/Función de estado|función de estado]], entonces se da que cualquier [[ingeniería en informática/discreta/Grafos/Camino|camino]] de procesos de cambios de estado, siempre que empiecen y terminen en el mismo lugar, van a dar a la misma variación de entalpía

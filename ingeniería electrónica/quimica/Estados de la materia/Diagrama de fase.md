@@ -5,12 +5,19 @@ referencias: []
 aliases: 
   - Fluido supercrítico#^fluido-supercritico
   - Presión de vapor del sólido#^presion-vapor-solido
+  - Curva de calentamiento#Curva de calentamiento
+  - Curva de enfriamiento#Curva de enfriamiento
 tags:
   - carrera/ingeniería-electrónica/quimica/Estados-de-la-materia
+  - carrera/ingeniería-electrónica/quimica/Termodinámica
   - nota/facultad
 vinculoFacultad:
   - tema: Estados de la materia
     capitulo: 7
+    materia: Química y electroquímica
+    carrera: Ingeniería electrónica
+  - tema: Termodinámica
+    capitulo: 10
     materia: Química y electroquímica
     carrera: Ingeniería electrónica
 ---
@@ -47,6 +54,10 @@ Analizando el gráfico vemos que
 * Entre D y E, la ebullición del líquido hasta que sea completamente vapor
 * Entre E y F, es el calentamiento del vapor hasta la temperatura final
 
+Cabe aclarar, como entre B y C, el calor que se agrega para cambiar de fase, es [[ingeniería electrónica/quimica/Estados de la materia/Estado de agregación de la materia#^calor-latente|calor latente]] de fusión, y entre D y E el de vaporización
+
+En los otros rangos, las pendientes de cada [[ingeniería en informática/analisis 2/Topología/Curva|curva]], van a estar relacionadas a las [[ingeniería electrónica/quimica/Termodinámica/Capacidad calorífica#Presión constante|capacidad calorífica a presión constante]], del sólido $C_P(s)$, del líquido $C_P(l)$ y del vapor $C_P(v)$
+
 ### Curva de enfriamiento
 ---
 Este curva representa la temperatura en función del [[ingeniería en informática/fisica 2/Termodinámica/Calor|calor]] liberado para una presión constante, por lo que se puede pensar como una recta de pendiente nula, en el diagrama de fase de esa sustancia
@@ -59,3 +70,7 @@ Analizando el gráfico vemos que
 * Entre C y D, es el enfriamiento del líquido hasta su temperatura de [[ingeniería electrónica/quimica/Estados de la materia/Estado de agregación de la materia#Cambio de estado|solidificación]] $T_\text{soli}$
 * Entre D y E, la solidificación del líquido hasta que sea completamente sólido
 * Entre E y F, es el enfriamiento del sólido hasta la temperatura final
+
+Cabe aclarar, como entre B y C, el calor que se agrega para cambiar de fase, es calor latente de condensación, y entre D y E el de solidificación
+
+En los otros rangos, las pendientes de cada curva, van a estar relacionadas a las capacidad calorífica a presión constante]], del sólido $C_P(s)$, del líquido $C_P(l)$ y del vapor $C_P(v)$
