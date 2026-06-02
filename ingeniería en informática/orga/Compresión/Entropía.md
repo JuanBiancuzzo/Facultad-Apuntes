@@ -3,6 +3,7 @@ dia: 2023-04-03
 tags:
   - carrera/ingeniería-en-informática/orga/Compresión
   - investigación/matemática/teoría-de-la-información
+  - carrera/ingeniería-electrónica/quimica/Termodinámica
   - nota/facultad
   - nota/investigacion
 referencias:
@@ -21,6 +22,10 @@ vinculoFacultad:
     capitulo: 3
     materia: Taller de Procesamiento de Señales
     carrera: Ingeniería electrónica
+  - tema: Termodinámica
+    capitulo: 10
+    materia: Química y electroquímica
+    carrera: Ingeniería electrónica
 aliases: 
   - Entropía de Shannon#En la teoría de la información
 ---
@@ -29,6 +34,13 @@ aliases:
 ```
 # Definición
 ---
+
+## En física
+---
+La entropía es una [[ingeniería en informática/analisis 2/Nomenclatura/Función|función]] [[ingeniería electrónica/quimica/Termodinámica/Termodinámica|termodinámica]] que es una medida del desorden del [[ingeniería electrónica/señales/Señales y sistemas/Sistema|sistema]], y esta es una [[ingeniería electrónica/quimica/Termodinámica/Función de estado|función de estado]]
+
+La variación de entropía $dS$ de un sistema cuando pasa de un [[ingeniería electrónica/legal/Introducción al derecho/Estado|estado]] a otro se define por la expresión $$ dS = \frac{dq_{rev}}{T} $$
+
 
 ## En la teoría de la información
 ---

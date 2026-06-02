@@ -46,6 +46,7 @@ vinculoFacultad:
 aliases:
   - Proceso reversible#^reversible
   - Proceso irreversible#^irreversible
+  - Proceso espontáneo#^espontaneo
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
@@ -65,8 +66,13 @@ Es cualquier cambio de un [[ingeniería electrónica/legal/Introducción al dere
 	* Cuando el sistema realiza la transformación del estado inicial al final pasando por sucesivos estados de equilibrio con el entorno
 	* El proceso tiene lugar de forma infinitamente lenta 
 	* El sistema podría volver al estado inicial por el mismo camino sin modificar el entorno
+	* También se puede pensar como un proceso donde la variación de [[ingeniería en informática/orga/Compresión/Entropía|entropía]] es igual a $0$, es decir $\Delta S = 0$
 * Proceso irreversible ^irreversible
 	* Es un proceso que no es reversible. Los estados intermedios de la transformación no son de equilibrio con el entorno
+
+También se puede clasificar en $2$ tipos de procesos
+* Proceso espontáneo ^espontaneo
+	* Donde se entiende un proceso espontáneo, como algo que ocurre "naturalmente", a lo largo de un período de tiempo (no necesariamente chico), donde la variación de entropía es mayor a $0$, es decir $\Delta S > 0$ 
 
 ## En ciencia de computación
 ---
