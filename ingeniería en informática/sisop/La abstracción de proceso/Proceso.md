@@ -47,6 +47,7 @@ aliases:
   - Proceso reversible#^reversible
   - Proceso irreversible#^irreversible
   - Proceso espontáneo#^espontaneo
+  - Proceso no espontáneo#^no-espontaneo
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
@@ -73,6 +74,8 @@ Es cualquier cambio de un [[ingeniería electrónica/legal/Introducción al dere
 También se puede clasificar en $2$ tipos de procesos
 * Proceso espontáneo ^espontaneo
 	* Donde se entiende un proceso espontáneo, como algo que ocurre "naturalmente", a lo largo de un período de tiempo (no necesariamente chico), donde la variación de entropía es mayor a $0$, es decir $\Delta S > 0$ 
+	* Se puede también determinar si un proceso es espontáneo, a presión y temperatura constantes, utilizando la [[ingeniería electrónica/quimica/Termodinámica/Energía libre de Gibbs|energía libre de Gibbs]], cuando esta sea $\Delta G < 0$
+* Proceso no-espontáneo ^no-espontaneo
 
 ## En ciencia de computación
 ---

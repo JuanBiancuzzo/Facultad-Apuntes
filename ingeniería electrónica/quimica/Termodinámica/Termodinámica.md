@@ -41,7 +41,11 @@ En todo sistema en [[ingeniería electrónica/control/Respuesta dinámica/Punto 
 
 ## Tercera ley
 ---
+Las entropías de todos los [[ingeniería electrónica/quimica/Estados de la materia/Red cristalina|cristales]] perfectos se aproximan a cero a medida que la [[ingeniería electrónica/seguridad/Prevención de incendios/Temperatura#Escala Kelvin|temperatura absoluta]] se aproxima a $0$
 
+La importancia de esta ley, es que nos permite calcular entropías absolutas de las sustancias, ya que siempre podríamos plantear $$ S(\text{estado final}) = S(0~\text{K}) + \Delta S $$
+
+Esta entropía absoluta se pueden utilizarse para determinar la dirección de las [[ingeniería electrónica/quimica/Reacciones químicas/Reacción química|reacciones químicas]], esto es porque se puede relacionar con la [[ingeniería electrónica/quimica/Termodinámica/Energía libre de Gibbs|energía libre de Gibbs]], donde como [[ingeniería en informática/analisis 2/Nomenclatura/Función|función]], su [[ingeniería en informática/discreta/Relaciones/Mínimo|mínimo]] es el punto de equilibrio, y por lo tanto para donde disminuya será la dirección de la reacción
 
 # Referencias
 ---
