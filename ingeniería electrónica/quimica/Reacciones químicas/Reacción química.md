@@ -53,7 +53,7 @@ Según la forma de energía intercambiada
 * Intercambio de forma de [[ingeniería electrónica/electro/Ondas electromagnéticas/Onda electromagnética|luz]], lo cual lo ve la [[Fotoquímica|fotoquímica]], es [[Proceso endoluminoso|endoluminosa]] o [[Proceso exoluminoso|exoluminosa]]
 	* Por ejemplo, la [[Fotosíntesis|fotosíntesis]] $$ 6 \text{C0}_2 + 6 \text{H}_2 \text{O} + \text{luz} \to \text{C}_6 ~ \text{H}_{12} ~ \text{O}_6  + 6 \text{O}_2 $$
 * Intercambio en forma de [[ingeniería en informática/fisica 2/Termodinámica/Calor|calor]], lo cual lo ve la [[ingeniería electrónica/quimica/Termoquímica/Termoquímica|termoquímica]], es [[Proceso endotérmico|endotérmica]] o [[Proceso exotérmico|exotérmica]]
-	* Por ejemplo, la [[Combustión|combustión]] $$ \text{CH}_4 ~ \text{(g)} + 2 \text{O}_2 ~ \text{(g)} \to \text{CO}_2  ~ \text{(g)} + 2\text{H}_2 \text{O} ~ \text{(g)} + \text{calor} $$
+	* Por ejemplo, la [[ingeniería electrónica/quimica/Reacciones químicas/Reacción de combustión|combustión]] $$ \text{CH}_4 ~ \text{(g)} + 2 \text{O}_2 ~ \text{(g)} \to \text{CO}_2  ~ \text{(g)} + 2\text{H}_2 \text{O} ~ \text{(g)} + \text{calor} $$
 * Intercambio en forma de [[Electricidad|electricidad]], lo cual lo ve la [[Electroquímica|electroquímica]], es [[Proceso endoeléctrico|endoeléctrica]] o [[Proceso exoeléctrico|exoeléctrica]]
 	* Por ejemplo, la [[Electrolisis|electrolisis]] $$ 2 \text{H}_2 \text{O} ~ \text{(l)} \xrightarrow{\text{electricidad}} \text{O}_2  ~ \text{(g)} + 2\text{H}_2 ~ \text{(g)} $$
 ### Reagrupamiento de átomos

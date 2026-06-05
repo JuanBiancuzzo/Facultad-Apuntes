@@ -76,7 +76,7 @@ Donde la entalpía de formación estándar de un elemento, en su forma más esta
 
 ## Entalpía de combustión
 ---
-La entalpía estándar de combustión, denotada $\Delta H_c^0$, es la entalpía estándar de reacción para la [[ingeniería electrónica/quimica/Reacciones químicas/Combustión|combustión]] de un [[ingeniería electrónica/quimica/Magnitudes atómicas y moleculares/Número de Avogradro|mol]] de sustancia que se quema (reaccionando con el [[Oxígeno|oxígeno]]) en una [[ingeniería electrónica/quimica/Reacciones químicas/Combustión|reacción de combustión completa]] en condiciones estándar ($1$ bar)
+La entalpía estándar de combustión, denotada $\Delta H_c^0$, es la entalpía estándar de reacción para la [[ingeniería electrónica/quimica/Reacciones químicas/Reacción de combustión|combustión]] de un [[ingeniería electrónica/quimica/Magnitudes atómicas y moleculares/Número de Avogradro|mol]] de sustancia que se quema (reaccionando con el [[Oxígeno|oxígeno]]) en una [[ingeniería electrónica/quimica/Reacciones químicas/Reacción de combustión|reacción de combustión completa]] en condiciones estándar ($1$ bar)
 
 # Referencias
 ---
