@@ -3,8 +3,8 @@ dia: 2026-05-29
 etapa: empezado
 referencias: []
 aliases:
-  - Reactivo de una racción química#^reactivo
-  - Producto de una racción química#^producto
+  - Reactivo de una reacción química#^reactivo
+  - Producto de una reacción química#^producto
   - Coeficiente estequiométrico de una reacción química#^coeficientes
   - Reacción de síntesis#^sintesis
   - Reacción de descomposición#^descomposicion
@@ -14,10 +14,15 @@ aliases:
   - Reacción de desplazamiento doble#^sustitucion-doble
 tags:
   - carrera/ingeniería-electrónica/quimica/Reacciones-químicas/1
+  - carrera/ingeniería-electrónica/quimica/Termoquímica
   - nota/facultad
 vinculoFacultad:
   - tema: Reacciones químicas
     capitulo: 9
+    materia: Química y electroquímica
+    carrera: Ingeniería electrónica
+  - tema: Termoquímica
+    capitulo: 11
     materia: Química y electroquímica
     carrera: Ingeniería electrónica
 ---
@@ -40,16 +45,16 @@ Esta clasificación no es una separación única, sino que las reacciones pueden
 
 ### Criterio energético
 ---
-Todas las reacciones están acompañadas de un cambio de [[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Energía|energía]]. Esto es debido a que toda sustancia tiene su energía interna. Cuando una sustancia se transforma en otra, u otras, mediante una reacción química se rompen [[ingeniería electrónica/quimica/Enlaces químicos/Unión química|enlaces]] y se forman nuevos, de modo que se libera o absorbe energía
+Todas las reacciones están acompañadas de un cambio de [[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Energía|energía]]. Esto es debido a que toda sustancia tiene su [[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Energía#Energía interna|energía interna]]. Cuando una sustancia se transforma en otra, u otras, mediante una reacción química se rompen [[ingeniería electrónica/quimica/Enlaces químicos/Unión química|enlaces]] y se forman nuevos, de modo que se libera o absorbe energía, no se pierde energía como se enuncia en la [[ingeniería electrónica/quimica/Termodinámica/Termodinámica#Primera ley|primera ley de la termodinámica]]
 
 Si la reacción absorbe energía del entorno es una [[Proceso endergónico|reacción endergónica]], mientra que si libera energía del entorno es una [[Proceso Exergónico|reacción exergónica]]
 
 Según la forma de energía intercambiada
-* Intercambio de forma de [[ingeniería electrónica/electro/Ondas electromagnéticas/Onda electromagnética|luz]], es [[Proceso endoluminoso|endoluminosa]] o [[Proceso exoluminoso|exoluminosa]]
+* Intercambio de forma de [[ingeniería electrónica/electro/Ondas electromagnéticas/Onda electromagnética|luz]], lo cual lo ve la [[Fotoquímica|fotoquímica]], es [[Proceso endoluminoso|endoluminosa]] o [[Proceso exoluminoso|exoluminosa]]
 	* Por ejemplo, la [[Fotosíntesis|fotosíntesis]] $$ 6 \text{C0}_2 + 6 \text{H}_2 \text{O} + \text{luz} \to \text{C}_6 ~ \text{H}_{12} ~ \text{O}_6  + 6 \text{O}_2 $$
-* Intercambio en forma de [[ingeniería en informática/fisica 2/Termodinámica/Calor|calor]], es [[Proceso endotérmico|endotérmica]] o [[Proceso exotérmico|exotérmica]]
+* Intercambio en forma de [[ingeniería en informática/fisica 2/Termodinámica/Calor|calor]], lo cual lo ve la [[ingeniería electrónica/quimica/Termoquímica/Termoquímica|termoquímica]], es [[Proceso endotérmico|endotérmica]] o [[Proceso exotérmico|exotérmica]]
 	* Por ejemplo, la [[Combustión|combustión]] $$ \text{CH}_4 ~ \text{(g)} + 2 \text{O}_2 ~ \text{(g)} \to \text{CO}_2  ~ \text{(g)} + 2\text{H}_2 \text{O} ~ \text{(g)} + \text{calor} $$
-* Intercambio en forma de [[Electricidad|electricidad]], es [[Proceso endoeléctrico|endoeléctrica]] o [[Proceso exoeléctrico|exoeléctrica]]
+* Intercambio en forma de [[Electricidad|electricidad]], lo cual lo ve la [[Electroquímica|electroquímica]], es [[Proceso endoeléctrico|endoeléctrica]] o [[Proceso exoeléctrico|exoeléctrica]]
 	* Por ejemplo, la [[Electrolisis|electrolisis]] $$ 2 \text{H}_2 \text{O} ~ \text{(l)} \xrightarrow{\text{electricidad}} \text{O}_2  ~ \text{(g)} + 2\text{H}_2 ~ \text{(g)} $$
 ### Reagrupamiento de átomos
 ---

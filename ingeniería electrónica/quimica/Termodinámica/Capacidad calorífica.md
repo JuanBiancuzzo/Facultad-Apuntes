@@ -41,27 +41,7 @@ Las capacidades caloríficas de las sustancias dependen de la temperatura y dism
 A [[Presión|presión]] constante, la pendiente de la tangente a la curva de [[ingeniería electrónica/quimica/Soluciones y solubilidad/Entalpía|entalpía]] para una temperatura dada se llama capacidad calorífica a presión constante $C_p$ y formalmente se define como $$ C_p = \left( \frac{\partial H}{\partial T} \right)_P $$
 ![[ingeniería electrónica/quimica/Termodinámica/img/Curva de calor a presión constante.png]]
 
-Se puede demostrar que a presión constante, la entalpía es igual al calor liberado o absorbido $\Delta H = Q_p$, por lo tanto $$ \Delta H = \int_{T_1}^{T_2} C_P ~ dT $$ ^calor-presion-constante
-
-> [!demostracion]- Demostración
-> Para un cambio infinitesimal general en el [[ingeniería electrónica/legal/Introducción al derecho/Estado|estado]] del [[ingeniería electrónica/señales/Señales y sistemas/Sistema|sistema]], la [[ingeniería electrónica/adc/Circuitos en regimen de corriente continua/Energía#Energía interna|energía interna]] $U$ cambia $U + dU$, la [[Presión|presión]] $P$ cambia $P + dP$, y el [[Volumen|volumen]] $V$ cambia $V + dV$, entonces a partir de la definición de [[ingeniería electrónica/quimica/Soluciones y solubilidad/Entalpía|entalpía]] $$ \begin{align} 
-> 	H + dH &= (U + dU) + (P + dP) (V + dV) \\
-> 	 &= U + dU + P ~ V + P ~ dV + V ~ dP + \underbrace{dP ~ dV}_{\simeq 0} \\
-> 	H + dH &= \underbrace{U + PV}_{H} + dU + P ~ dV + V ~ dP \\
-> 	dH &= dU + P ~ dV + V ~ dP \\
-> \end{align} $$
-> Notemos lo siguiente
-> 1. Por la expresión de energía interna $dU = \delta Q + \delta W$
-> 2. Como la presión es constante $dP = 0$ y finalmente que a presión constante
-> 3. El único trabajo que puede hacer es modificar su volumen, dado por $\delta W = -P ~ dV$ tomando como convención la vista desde el sistema
-> 
-> Por lo tanto, podemos reescribir la expresión de la siguiente forma $$ \begin{align} 
-> 	dH &= dU + P ~ dV + V ~ dP \\
-> 	 &= \delta Q + (-P ~ dV) + P ~ dV \\
-> 	dH &= \delta Q  
-> \end{align} $$
-> 
-> Pudimos demostrar que la variación de entalpía es el calor a presión constante
+Recordando que a presión presión constante, la entalpía es igual al calor liberado o absorbido $\Delta H = Q_p$, por lo tanto $$ \Delta H = \int_{T_1}^{T_2} C_P ~ dT $$ ^calor-presion-constante
 
 Para un gas ideal, su energía interna, era solo debido a la energía cinética y esta es solo función de la temperatura, por lo tanto $$ \begin{align}
 	\displaystyle E_c &= n \frac{3}{2} RT = U, & C_V &= n \frac{3}{2} R, ~~~ \text{Para un gas monoatómico} \\ 
