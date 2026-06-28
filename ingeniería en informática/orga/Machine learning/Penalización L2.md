@@ -14,6 +14,7 @@ aliases:
   - Penalización Ridge
   - Weigth decay
   - Regularización de Tikhonov
+  - Regularización L2
 vinculoFacultad:
   - tema: Machine learning
     capitulo: 9

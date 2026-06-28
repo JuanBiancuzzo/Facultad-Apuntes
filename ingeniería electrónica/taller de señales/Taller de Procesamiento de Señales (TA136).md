@@ -9,6 +9,11 @@ nombreReducido: taller de señales
 cuatri: 25C2
 plan: "2023"
 codigo: TA136
+guias: 
+  - 10
+  - 11
+  - 12
+  - 13
 referencias:
   - 1057
   - 1058
@@ -31,6 +36,12 @@ nombreCarrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
+```
+
+# Guías
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/contenido/guiasAcumuladas", { archivo: dv.current() });
 ```
 
 # Bibliografía
