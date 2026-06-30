@@ -43,7 +43,7 @@ La [[ingeniería electrónica/señales/Señales y sistemas/Señal|señal]] es $r
 \end{document}
 ```
 
-Queremos encontrar $h(t)$ tal que se maximice la [[Relación señal-ruido|relación señal a ruido]] $\frac{a(t)^2}{\sigma_0^2}$, en $t = T$ ya que se espera muestrear al periodo $T$
+Queremos encontrar $h(t)$ tal que se maximice la [[ingeniería en informática/redes/Capa Física Inalámbrica/Signal to noise|relación señal a ruido]] $\frac{a(t)^2}{\sigma_0^2}$, en $t = T$ ya que se espera muestrear al periodo $T$
 
 ```tikz
 \usetikzlibrary{math}

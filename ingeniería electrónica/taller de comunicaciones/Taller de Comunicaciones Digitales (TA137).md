@@ -14,6 +14,18 @@ referencias:
   - 1083
   - 1084
   - 1085
+guias: 
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
 correlativas:
   - tipo: Equivalente
     materia: Redes
@@ -113,6 +125,12 @@ nombreCarrera: Ingeniería electrónica
         
 \end{tikzpicture}
 \end{document}
+```
+
+# Guías
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/contenido/guiasAcumuladas", { archivo: dv.current() });
 ```
 
 # Bibliografía

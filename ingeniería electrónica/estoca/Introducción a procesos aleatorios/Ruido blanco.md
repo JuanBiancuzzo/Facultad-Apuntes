@@ -4,6 +4,7 @@ etapa: ampliar
 referencias: []
 aliases:
   - Ruido blanco gaussiano
+  - WGN
 tags:
   - carrera/ingeniería-electrónica/estoca/Introducción-a-procesos-aleatorios
   - nota/facultad

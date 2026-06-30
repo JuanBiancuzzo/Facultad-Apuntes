@@ -5,9 +5,11 @@ for (let ejercicio of dv.pages("#colección/ejercicios/ejercicio")) {
     ejerciciosGeneral[parseInt(ejercicio.numero, 10)] = ejercicio;
 }
 
-let infoEjercicios = Object.entries(ejercicios).map(([indice, numEjercicio]) => {
-    let ejercicio = ejerciciosGeneral[parseInt(numEjercicio, 10)];
-    let link = crearReferencia(ejercicio.file.path, `Ejercicio N°${parseInt(indice, 10) + 1}`);
+const infoEjercicios = Object.entries(ejercicios).map(([indice, numEjercicio]) => {
+    const ejercicio = ejerciciosGeneral[parseInt(numEjercicio, 10)];
+    const nombre = `Ejercicio N°${parseInt(indice, 10) + 1}${ejercicio.nombre != undefined ? `: ${ejercicio.nombre}` : ""}`;
+
+    let link = crearReferencia(ejercicio.file.path, nombre);
     return `<li> ${link} </li>`;
 });
 

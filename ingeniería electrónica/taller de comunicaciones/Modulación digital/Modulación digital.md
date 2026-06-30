@@ -8,6 +8,7 @@ aliases:
   - ISI#^isi
   - Inter Symbol Interference#^isi
   - Criterio de Nyquist para ISI nulo#^prop-9-1-1
+  - Energía media de una constelación#^energia-constelacion
 tags:
   - carrera/ingeniería-electrónica/taller-de-comunicaciones/Modulación-digital
   - nota/facultad
@@ -129,7 +130,7 @@ Se tiene tiene valores que caracterizan a una modulación
     * $R_b = k ~ R_s$
 * $T_s$ es el tiempo de un símbolo $T_s = R_s^{-1}$, medida en segundos
 * $T_b$ es el tiempo de un bit $T_b = R_b^{-1}$, medidas en segundos
-* $E_s$ es la [[ingeniería electrónica/señales/Señales y sistemas/Energía de una señal|energía]] media de la [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Modulación digital#Constelación|constelación]], medida en Joules
+* $E_s$ es la [[ingeniería electrónica/señales/Señales y sistemas/Energía de una señal|energía]] media de la [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Modulación digital#Constelación|constelación]], medida en [[Joule|Joules]] ^energia-constelacion
     * Esta se puede calcular como $$ E_s = \sum_{i = 0}^{M - 1} \mathbb{P}(s_i) ~ \lVert s_i \rVert^2 $$
 * $E_b$ es la energía media de la constelación por bit, medida en Joules
 * $P$ es la [[ingeniería electrónica/intro/Potencia/Potencia|potencia]], medida en Watts
@@ -190,7 +191,7 @@ Finalmente la probabilidad de error $P_e$ que por ser un caso binario este es ig
     P_e &= Q\left( \frac{\gamma - a_2}{\sigma} \right) \\
      &= Q\left( \frac{a_1 - a_2}{2 ~ \sigma} \right) \\
      &= Q\left( \frac{1}{2} \sqrt{\frac{(a_1 - a_2)^2}{\sigma^2}} \right) \\
-\end{align} $$ se plantea $\frac{(a_1 - a_2)^2}{\sigma^2}$ para relacionarlo a una [[Relación señal-ruido|relación señal a ruido]], y notemos que $a_1 - a_2$ es la distancia mínima entre los símbolos por lo que también se puede expresar la probabilidad de error como $$ P_e = Q\left( \frac{d}{2\sigma} \right) $$
+\end{align} $$ se plantea $\frac{(a_1 - a_2)^2}{\sigma^2}$ para relacionarlo a una [[ingeniería en informática/redes/Capa Física Inalámbrica/Signal to noise|relación señal a ruido]], y notemos que $a_1 - a_2$ es la distancia mínima entre los símbolos por lo que también se puede expresar la probabilidad de error como $$ P_e = Q\left( \frac{d}{2\sigma} \right) $$
 
 Para minimizar $P_e$ se necesita maximizar el argumento de $Q(\cdot)$ y esto se logra con un [[Filtro adaptativo|filtro adaptativo]] que propone para maximizar la relación señal a ruido $$ h(t) = k ~ m(T - t) $$ donde $m(t)$ es la forma de onda utilizada y $k \in \mathbb{R}$, el cual tomaremos como $k = 1$
 

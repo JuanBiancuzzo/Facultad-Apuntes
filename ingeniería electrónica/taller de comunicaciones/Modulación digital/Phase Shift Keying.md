@@ -85,5 +85,5 @@ La relación entre la probabilidad de símbolos con la probabilidad de bit, y co
 ---
 Esta modulación tiene el beneficio de no ser afectado por la atenuación ya que la información que diferencia un símbolo de otro es la fase y no la amplitud. También tiene muy buena eficiencia espectral
 
-Tiene como desventaja que para valores grandes de $M$ los símbolos quedan cada vez más cerca a pesar de tener una energía de símbolo cada vez mayor, haciendo que se necesite una mayor [[Relación señal-ruido|relación señal ruido]] para obtener el mismo 
+Tiene como desventaja que para valores grandes de $M$ los símbolos quedan cada vez más cerca a pesar de tener una energía de símbolo cada vez mayor, haciendo que se necesite una mayor [[ingeniería en informática/redes/Capa Física Inalámbrica/Signal to noise|relación señal ruido]] para obtener el mismo 
 

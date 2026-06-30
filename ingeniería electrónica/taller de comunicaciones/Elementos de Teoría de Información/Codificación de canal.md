@@ -4,6 +4,7 @@ etapa: empezado
 referencias: []
 aliases: 
   - 2do Teorema de Shannon#^teo-8-1-9
+  - Segundo Teorema de Shannon#^teo-8-1-9
 tags:
   - carrera/ingeniería-electrónica/taller-de-comunicaciones/Elementos-de-Teoría-de-Información
   - nota/facultad

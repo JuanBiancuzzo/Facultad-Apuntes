@@ -28,6 +28,7 @@ vinculoFacultad:
     carrera: Ingeniería electrónica
 aliases: 
   - Entropía de Shannon#En la teoría de la información
+  - Entropía diferencial de Shannon#Entropía diferencia
   - Entropía molar estándar#^entropia-molar-estandar
 ---
 ```dataviewjs
@@ -95,38 +96,8 @@ Se tiene las siguientes propiedades
 2. $H(\mathcal{S}) = 0$ sii $\mathbb{P}(s_i) = 1$ para algún $s_i \in \mathcal{S}$
 3. $H(\mathcal{S}) \le \log_2(|\mathcal{S}|)$
 
-### Ejemplo
+### Entropía diferencia
 ---
-Dada una moneda, donde la probabilidad de cara es $x \in [0,1]$ y la probabilidad de ceca es $1-x$. Si calculamos $H(x)$ de este problema, nos queda
-
-```tikz
-\usepackage{pgfplots}
-\begin{document} 
-
-\pgfplotsset{minor grid style={color=gray, thin, opacity=0.5}} 
-\pgfplotsset{major grid style={color=gray, thick}} 
-
-\begin{tikzpicture}[scale=1.5, transform shape]
-	\begin{axis}[
-		xmin=-0.2, ymin=-0.2,
-		xmax=1.2, ymax=1.2, 
-		samples=50,
-		axis lines=middle,
-		xtick={-0.5, 0, 0.5, 1, 1.5},
-		ytick={-0.5, 0, 0.5, 1, 1.5},
-		minor tick num=5,
-		grid=both,
-		xticklabel style={anchor={north west}},
-		yticklabel style={anchor={south east}},
-	]
-	  \addplot[orange, ultra thick, domain=0:1] 
-		  { -\x * log2(\x) - (1 - \x) * log2(1 - \x) };
-	\end{axis}	
-\end{tikzpicture}
-\end{document}
-```
-
-Donde vemos que cuando $x = 0.5$ que es el momento donde es más difícil predecir si la moneda es cara o ceca, es donde la [[Entropía|entropía]] es mayor. También en los extremos donde la probabilidad de que sea cara, o en otro extremos que sea ceca, es $1$ la entropía termina siendo $0$ ya que no es necesario mandar información
 
 # Referencias
 ---

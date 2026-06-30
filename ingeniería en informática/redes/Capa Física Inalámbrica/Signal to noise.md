@@ -6,6 +6,7 @@ tags:
   - nota/facultad
 aliases:
   - SNR
+  - Relación señal a ruido
 vinculoFacultad:
   - tema: Capa Física Inalámbrica
     capitulo: 6

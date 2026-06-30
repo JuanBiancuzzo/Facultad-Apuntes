@@ -9,7 +9,14 @@ vinculoFacultad:
     capitulo: 1
     materia: Análisis matemático 2 A
     carrera: Ingeniería en informática
+etapa: empezado
+referencias: []
+aliases:
+  - BON
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 Un [[Conjunto|conjunto]], o como es [[Linealmente independiente|linealmente independiente]] podemos llamarlo [[Base|base]], ortonormal es cuando es [[ingeniería en informática/analisis 2/Nomenclatura/Ortogonalidad|conjunto ortogonal]] y todos sus vectores sean [[ingeniería electrónica/robotica movil/Repaso álgebra/Vector|vectores]], y por lo que van a cumplir
