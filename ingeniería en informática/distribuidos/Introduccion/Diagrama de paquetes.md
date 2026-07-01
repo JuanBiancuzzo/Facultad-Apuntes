@@ -20,5 +20,5 @@ Este diagrama nos permite entender como están distribuidos nuestros paquetes en
 
 ## Ejemplo
 ---
-![[Diagrama de paquetes.png]]
+![[ingeniería en informática/distribuidos/Introduccion/img/Diagrama de paquetes.png]]
 

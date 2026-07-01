@@ -28,7 +28,7 @@ Una máquina de estados es un [[ingeniería en informática/ingenieria de softwa
 
 Según el estado actual y una entrada determinada, la máquina realiza transiciones de estado y produce resultados
 
-Hay tipos básicos como las [[Máquina Mealy|máquinas Mealy]] y [[Máquina de Moore|Moore]] y tipos más complejos como los [[Diagrama de estado Harel|diagrama de estado Harel]] y [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Unified modelling language#Diagrama de estado|UML]]
+Hay tipos básicos como las [[Máquina Mealy|máquinas Mealy]] y [[Máquina de Moore|Moore]] y tipos más complejos como los [[Diagrama de estado Harel|diagrama de estado Harel]] y [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Unified modelling language#Diagrama de máquina de estado|UML]]
 
 ## Componentes
 ---

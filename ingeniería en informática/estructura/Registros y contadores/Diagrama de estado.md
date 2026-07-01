@@ -12,4 +12,4 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Este diagrama es un [[Grafo]] donde los estados del sistema se representan como nodos y las aristas direccionadas son los cambios de estado.
+Este diagrama es un [[ingeniería en informática/discreta/Grafos/Grafo|grafo]] donde los estados del sistema se representan como [[ingeniería electrónica/intro/Circuitos con resistencias/Nodo|nodos]] y las [[Arista|aristas]] direccionadas son los cambios de estado

@@ -162,8 +162,7 @@ class Web {
     }
 
     esValido() {
-        return this.fecha && this.titulo && this.pagina && this.url
-            && this.autores.length >= CANTIDAD_MINIMA_AUTORES;
+        return this.titulo && this.pagina && this.url;
     }
 
     generarRepresentacion() {

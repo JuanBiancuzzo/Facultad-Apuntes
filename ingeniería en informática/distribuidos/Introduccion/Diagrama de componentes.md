@@ -20,5 +20,5 @@ Este diagrama de mucho más alto nivel, y permite ver como interactúan los comp
 
 ## Ejemplo
 ---
-![[Diagrama de componentes.png]]
+![[ingeniería en informática/distribuidos/Introduccion/img/Diagrama de componentes.png]]
 

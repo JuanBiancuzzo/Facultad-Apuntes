@@ -57,16 +57,16 @@ function mostrarCitaPaper(archivo) {
         .filter(({ nombre, apellido }) => archivo.autores.findIndex(({ nombreAutore, apellidoAutore }) => nombre == nombreAutore && apellido == apellidoAutore) < 0)
         .map(({ nombre, apellido }) => `${apellido}, ${nombre.charAt(0)}`);
 
-    const numInforme = archivo.numeroInforme 
-        ? ` (Informe n°${archivo.numeroInforme})` 
+    const numInforme = archivo.numeroInforme
+        ? ` (Informe n°${archivo.numeroInforme})`
         : "";
     const url = archivo.url ? ` ${archivo.url}.` : "";
-    
+
     return `${autores.join(", ")} (${archivo.anio}) <i>${archivo.tituloInforme}</i>${numInforme}. ${editores.join(", ")}${url}`;
 }
 
 function mostrarCitaLibro(archivo, num) {
-    const tituloObra = ` <i>${archivo.tituloObra}${archivo.subtituloObra ? ": " + archivo.subtituloObra: ""}</i>.`;
+    const tituloObra = ` <i>${archivo.tituloObra}${archivo.subtituloObra ? ": " + archivo.subtituloObra : ""}</i>.`;
     const editorial = ` ${archivo.editorial}.`;
     const nombreAutores = mostrarNombreAutores(archivo.nombreAutores);
     const anio = ` (${archivo.anio}).`;
@@ -75,27 +75,27 @@ function mostrarCitaLibro(archivo, num) {
     let datosSeparados = [];
     if (archivo.edicion) datosSeparados.push(`${archivo.edicion} ed.`);
     if (archivo.volumen) datosSeparados.push(`Vol. ${archivo.volumen}`);
-    let datosJuntos = datosSeparados.length > 0 
+    let datosJuntos = datosSeparados.length > 0
         ? ` (${datosSeparados.join(", ")}).`
         : "";
-    
-    const capitulos = archivo.capitulos ? archivo.capitulos : [];
-    const capitulo = capitulos.find(({numReferencia, ..._}) => numReferencia == num);
 
-    if (!capitulo) 
+    const capitulos = archivo.capitulos ? archivo.capitulos : [];
+    const capitulo = capitulos.find(({ numReferencia, ..._ }) => numReferencia == num);
+
+    if (!capitulo)
         return `${nombreAutores}. ${anio}${tituloObra}${datosJuntos}${editorial}${url}`;
 
     if (capitulo.paginas) datosSeparados.push(`pp. ${capitulo.paginas.inicio}-${capitulo.paginas.final}`);
-    datosJuntos = datosSeparados.length > 0 
+    datosJuntos = datosSeparados.length > 0
         ? ` (${datosSeparados.join(", ")}).`
         : "";
 
     const numeroCapitulo = `Capitulo ${capitulo.numeroCapitulo}`;
     const nombreCapitulo = capitulo.nombreCapitulo ? ` ${capitulo.nombreCapitulo}` : "";
     const tituloCapitulo = `${numeroCapitulo}${nombreCapitulo}`;
-    
+
     const editores = capitulo.editores ? capitulo.editores : [];
-    const textoEditores = editores.length > 0 
+    const textoEditores = editores.length > 0
         ? ` en ${mostrarNombreAutores(editores)} (Ed.)`
         : "";
 
@@ -103,27 +103,33 @@ function mostrarCitaLibro(archivo, num) {
 }
 
 function mostrarCitaWeb(archivo) {
-    const nombreAutores = mostrarNombreAutores(archivo.nombreAutores);
     const tituloArticulo = archivo.tituloArticulo;
     const nombrePagina = archivo.nombrePagina;
-    
-    const fecha = archivo.fechaPublicacion.c;
-    const dia = fecha.day;
-    const mes = MESES[ fecha.month - 1 ];
-    const anio = fecha.year;
-    
     const url = archivo.url;
 
-    return `${nombreAutores}. (${dia} de ${mes} del ${anio}). <i>${tituloArticulo}</i>. ${nombrePagina}. ${url}`;
+    var textoFecha = "n.d.";
+    if (archivo.fechaPublicacion != undefined) {
+        const fecha = archivo.fechaPublicacion.c;
+        const dia = fecha.day;
+        const mes = MESES[fecha.month - 1];
+        const anio = fecha.year;
+        textoFecha = `${dia} de ${mes} del ${anio}`;
+    }
+
+    if (archivo.nombreAutore) {
+        const nombreAutores = mostrarNombreAutores(archivo.nombreAutores);
+        return `${nombreAutores}. (${textoFecha}). <i>${tituloArticulo}</i>. ${nombrePagina}. ${url}`;
+    }
+    return `${nombrePagina}. (${textoFecha}). <i>${tituloArticulo}</i>. ${url}`;
 }
 
 function mostrarCitaWiki(archivo) {
     const nombreArticulo = archivo.nombreArticulo;
 
     const dia = archivo.fecha.c.day;
-    const mes = MESES[ archivo.fecha.c.month - 1 ];
+    const mes = MESES[archivo.fecha.c.month - 1];
     const anio = archivo.fecha.c.year;
-    
+
     const url = archivo.url;
 
     return `${nombreArticulo}. (${dia} de ${mes} del ${anio}). En <i> Wikipedia </i>. ${url}`;
@@ -132,11 +138,11 @@ function mostrarCitaWiki(archivo) {
 function mostrarCitaYoutube(archivo) {
     const nombreCanal = archivo.nombreCanal;
     const nombreVideo = archivo.nombreVideo;
-    
+
     const dia = archivo.fecha.c.day;
-    const mes = MESES[ archivo.fecha.c.month - 1 ];
+    const mes = MESES[archivo.fecha.c.month - 1];
     const anio = archivo.fecha.c.year;
-    
+
     const url = archivo.url;
 
     return `${nombreCanal} (${dia} de ${mes} del ${anio}). <i> ${nombreVideo} </i>. [Archivo de video]. Youtube. ${url}`;

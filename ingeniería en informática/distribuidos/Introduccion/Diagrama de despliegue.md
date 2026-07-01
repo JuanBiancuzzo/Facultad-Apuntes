@@ -20,5 +20,5 @@ En este diagrama es una herramienta para mostrar la comunicación entre máquina
 
 ## Ejemplo
 ---
-![[Diagrama de despliegue.png]]
+![[ingeniería en informática/distribuidos/Introduccion/img/Diagrama de despliegue.png]]
 

@@ -60,4 +60,4 @@ Los diagramas para mostrar esto de la mejor forma son
 
 ## Vista de escenarios
 ---
-Junta las 4 vistas, es una vista más dinámica. Esta tiene los [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Unified modelling language#Diagrama de casos de uso|diagrama de casos de ]]
+Junta las 4 vistas, es una vista más dinámica. Esta tiene los [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Unified modelling language#Diagrama de casos de uso|diagrama de casos de usos]]
