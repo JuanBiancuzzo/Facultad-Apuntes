@@ -20,7 +20,7 @@ Esta clasificación de [[Middleware|middleware]] ofrece
 * Funciona como un sistema de mensajería entre aquellas aplicaciones que utilizan el middleware
 * Pueden enviarse [[Paquete|mensajes]] bajo cierto 'tópico' para que aquellos interesados lo reciban 
     * Modo [[Bus|information bus]]
-    * Similar al [[Patrón de diseño (design pattern)|patrón de diseño]] [[Patrón de diseño observer|observer]]
+    * Similar al [[ingeniería en informática/algo 3/Patrones/Patrón de diseño|patrón de diseño]] [[ingeniería en informática/algo 3/Patrones/Patrón observer|observer]]
     * No necesariamente se respeta el orden de los mensajes enviados
 * Pueden enviarse mensajes con un destinatario definido
     * Modo [[Queue|queue]]

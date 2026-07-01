@@ -21,7 +21,7 @@ vinculoFacultad:
 ---
 Es una [[Función|función]] general para iterar y editar cada elemento
 
-* Planteando con un [[Programación oientada a objetos (OOP) (POO)|paradigma de objetos]], se puede implementar usando el [[Patrón iterador|patrón Iterador]]
+* Planteando con un [[Programación oientada a objetos (OOP) (POO)|paradigma de objetos]], se puede implementar usando el [[ingeniería en informática/algo 3/Patrones/Patrón iterator|patrón iterador]]
 * En un [[Programación funcional|paradigma funcional]] se puede hacer por medio de [[Recursividad|recursividad]]
 
 ## En Pandas

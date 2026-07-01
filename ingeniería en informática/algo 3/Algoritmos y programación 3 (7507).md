@@ -15,5 +15,14 @@ nombreReducido: algo 3
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
 nombreCarrera: Ingeniería en informática
 ---
-# Apuntes 
+# Apuntes
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
+```
+
+# Bibliografía
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

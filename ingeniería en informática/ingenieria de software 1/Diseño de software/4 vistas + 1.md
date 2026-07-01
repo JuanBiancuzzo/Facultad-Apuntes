@@ -29,7 +29,7 @@ La estructura lógica que tiene el [[Sistema|sistema]], en función de
 
 Los diagramas para mostrar esto de la mejor forma son
  * [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Unified modelling language#Diagrama de clases|Diagrama de clases]]
- * [[Diagrama de estado|Diagrama de estados]]
+ * [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Unified modelling language#Diagrama de máquina de estados|Diagrama de máquina de estados]]
 
 ## Vista de implementación o de desarrollo
 ---
@@ -44,7 +44,7 @@ Los diagramas para mostrar esto de la mejor forma son
 Es usar los ejecutables y aplicarlos en el entorno de distribución como [[Servidor|servidores]]. La [[Topología de comunicación|topología]] y conexiones entre los componente físicos
 
 Los diagramas para mostrar esto de la mejor forma son
- * [[Diagrama de despliegue|Diagrama de despliegue]]
+ * [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Unified modelling language#Diagrama de despliegue|Diagrama de despliegue]]
  * [[Diagrama de robustez|Diagrama de robustez]]
 
 ## Vista de procesos o dinámica
@@ -55,8 +55,8 @@ Son aquellos [[Proceso|procesos]] desde el punto de vista del [[Sistema operativ
 * Flujo temporal de mensajes en el sistema (Secuencia)
 
 Los diagramas para mostrar esto de la mejor forma son
- * [[Diagrama de paquetes|Diagrama de paquetes]]
- * [[Diagrama de componentes|Diagrama de componentes]]
+ * [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Unified modelling language#Diagrama de paquetes|Diagrama de paquetes]]
+ * [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Unified modelling language#Diagrama de paquetes|Diagrama de componentes]]
 
 ## Vista de escenarios
 ---

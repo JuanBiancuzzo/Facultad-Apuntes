@@ -53,6 +53,6 @@ function Dijkstra(Graph, source):
 	return dist[], prev[]
 ```
 
-[[Complejidad computacional|Complejidad]]: $O(|E| + |V| ~ \log|V|)$ 
+[[ingeniería en informática/algo 2/General/Complejidad computacional|Complejidad]]: $O(|E| + |V| ~ \log|V|)$ 
 * $E$ es el número de aristas, ejes o conexiones
 * $V$ es el número de vértices, nodos o participantes

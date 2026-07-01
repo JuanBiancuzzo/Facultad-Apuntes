@@ -35,7 +35,7 @@ Estas son las [[Aplicación Programming Interface|Application Program Interface 
 Estas son interfaces con el objetivo de comunicar dos partes del mismo sistema, y por lo tanto su implementación varia dependiendo de varios factores
 
 Estos pueden ser 
-* [[Patrón de diseño facade|Facades]]
+* [[ingeniería en informática/algo 3/Patrones/Patrón facade|Facades]]
 * Las interfaces de [[Lenguaje c++|C++]], o los traits de [[Lenguaje Rust|Rust]] 
 
 ## Orientación del contrato

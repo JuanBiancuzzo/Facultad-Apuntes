@@ -23,7 +23,7 @@ En esta entrada, detallaremos el proceso de citar y referenciar diversos tipos d
 	* Citar capítulo
 		* Apellido, A. y Apellido, B. (año). Título del capítulo. En N. Apellido (Ed.), _Título del libro_ (pp. xx-xx). Editorial.
 * Libro en línea
-	* Apellido, N. y Apellido, N. (año). Título del libro. Editorial. [[Digital Object Identifier (DOI)|DOI]] o [[Uniform Resource Locator (URL)|URL]]
+	* Apellido, N. y Apellido, N. (año). Título del libro. Editorial. [[Digital Object Identifier (DOI)|DOI]] o [[ingeniería en informática/ingenieria de software 1/Diseño de software/Uniform Resource Identifier#Uniform Resource Locator||URL]]
 	* Ejemplo
 		* Versión electrónica de la versión impresa
 			* Herrera Cáceres, C. y Rosillo Peña, M. (2019). _Confort y eficiencia energética en el diseño de edificaciones_. Universidad del Valle. https://www.reddebibliotecas.org.co/

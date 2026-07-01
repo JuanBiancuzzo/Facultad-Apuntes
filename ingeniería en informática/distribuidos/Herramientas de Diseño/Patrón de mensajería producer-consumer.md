@@ -16,7 +16,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Este patrón de mensajería es similar al [[Patrón de diseño observer|patrón de diseño observer]], donde la comunicación es de un productor a un consumidor. Dependiendo de la implementación se podría admitir múltiples consumidores y/o múltiples productores
+Este patrón de mensajería es similar al [[ingeniería en informática/algo 3/Patrones/Patrón observer|patrón de diseño observer]], donde la comunicación es de un productor a un consumidor. Dependiendo de la implementación se podría admitir múltiples consumidores y/o múltiples productores
 
 ![[Patrón de mensajería producer-consumer.png]]
 

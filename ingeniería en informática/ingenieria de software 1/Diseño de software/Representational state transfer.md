@@ -97,6 +97,8 @@ Los códigos de error más comunes son
     * Hay un conflicto con un recurso que ya existe
 * 412
     * Indica que el request fue denegado
+* 418 I'm a teapot
+    * El servidor se convirtió en una tetera
 * 422 Unprocessable
     * No se puede procesar
 * 505 HTTP Version Not Supported, indicando que la versión del protocolo utilizada no es soportada por el servidor ^error-500

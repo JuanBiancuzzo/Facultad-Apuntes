@@ -81,21 +81,21 @@ Se puede entender al diagrama de objetos, como un caso particular del diagrama d
 
 ## Diagrama de paquetes
 ---
-El diagrama muestra las dependencias entre paquetes, donde se entiende como paquete al conjunto de objetos
+Este diagrama nos permite entender como están distribuidos nuestros paquetes en el [[Sistema distribuido|sistema distribuido]]. La relevante de este diagrama es que nos muestra visualmente las dependencias de nuestros paquetes
 
 ![[ingeniería en informática/ingenieria de software 1/Ingeniería de software/img/Diagrama de paquetes.png|450]]
 
 ## Diagrama de componentes
 ---
-El diagrama muestra la interconexión entre componentes, que son funcionalidades con una única responsabilidad, y donde la conexión entre estos componentes representa el flujo de datos para crear un resultado
+Este diagrama de mucho más alto nivel, y permite ver como interactúan los componentes o servicios entre sí . Se entiene como componente a la funcionalidades con una única responsabilidad
 
 ![[ingeniería en informática/ingenieria de software 1/Ingeniería de software/img/Diagrama de componentes.png|600]]
 
 ## Diagrama de despliegue
 ---
-El diagrama de despliegue representa la comunicación entre [[ingeniería en informática/sisop/La abstracción de proceso/Proceso|procesos]], y los [[investigación/networking/Protocolos|protocolos]] entre ellos
+En este diagrama es una herramienta para mostrar la comunicación entre máquinas donde no todas son necesariamente [[Computadora|computadoras]], y los [[investigación/networking/Protocolos|protocolos]] entre ellos
 
-![[ingeniería en informática/ingenieria de software 1/Ingeniería de software/img/Diagrama de despliegue.png|600]]
+![[ingeniería en informática/distribuidos/Introduccion/img/Diagrama de despliegue.png|600]]
 
 ## Diagrama de perfil
 ---

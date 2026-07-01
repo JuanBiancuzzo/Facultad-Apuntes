@@ -16,7 +16,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-La FFT es un [[Algoritmo|algoritmo]] para computar la [[Transformada Discreta de Fourier|DFT]] con una [[Complejidad computacional|complejidad computacional]] de $O(n ~ \log n)$ 
+La FFT es un [[Algoritmo|algoritmo]] para computar la [[Transformada Discreta de Fourier|DFT]] con una [[ingeniería en informática/algo 2/General/Complejidad computacional|complejidad computacional]] de $O(n ~ \log n)$ 
 
 Al observar la matriz $W$ ![[Serie discreta de Fourier#^eb7ec0]] 
 Podemos ver que la misma presenta mucha simetría. Esta simetría puede ser explotada para reducir sustancialmente el cálculo de la DFT. De esta forma surgen los algoritmos FFT para el cálculo rápido de la DFT
