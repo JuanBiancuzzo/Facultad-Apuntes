@@ -18,9 +18,11 @@ vinculoFacultad:
 ```
 # Definición
 ---
+Este patrón está relacionado a las [[ingeniería electrónica/embebidos/Diseño, desarrollo y depuración/Máquina de estado|máquina de estados finitos]], el problema a resolver es como crear un objeto que tiene diferentes estados únicos los cuales definen una funcionalidad, y el objeto puede ir cambiando dependiendo de lo que ocurre
 
+El patrón lo resuelve utilizando una [[ingeniería en informática/taller/Sintaxis/Interfaz|interfaz]] que representa todo lo que puede hacer un estado, e implementaciones concretas del mismo. Las mismas van cambiando el estado del objeto
 
-
+![[ingeniería en informática/algo 3/Patrones/img/Patrón state.png|500]]
 
 # Referencias
 ---

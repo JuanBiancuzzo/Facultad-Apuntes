@@ -18,9 +18,11 @@ vinculoFacultad:
 ```
 # Definición
 ---
+Este patrón se utiliza cuando se tiene el siguiente problema, cuando se tiene un [[ingeniería en informática/discreta/Grafos/Árbol|árbol]] o jerarquía de objetos y lista de objetos, pero se quiere actuar sobre todos para realizar una acción
 
+El patrón resuelve este problema creando una [[ingeniería en informática/taller/Sintaxis/Interfaz|interfaz]] para realizar esta acción, y mientas las hojas del árbol tienen un resultado fijo de esta acción, los nodos intermedios la realizar consultando su hijos que cumplen la interfaz
 
-
+![[ingeniería en informática/algo 3/Patrones/img/Patrón composite.png|500]]
 
 # Referencias
 ---

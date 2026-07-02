@@ -18,8 +18,11 @@ vinculoFacultad:
 ```
 # Definición
 ---
+Este patrón se utiliza cuando se tiene el siguiente problema, se quiere iterar sobre un conjunto de elementos, el cual puede ser una [[colección/data structures/Lista enlazada|lista]], [[ingeniería en informática/discreta/Grafos/Árbol|árbol]] u una estructura totalmente arbitraria
 
+El patrón resuelve el problema abstrayendo la idea de la estructura por debajo, creando una [[ingeniería en informática/taller/Sintaxis/Interfaz|interfaz]] la cual utilizando [[ingeniería en informática/ingenieria de software 1/Diseño de software/SOLID#Dependency inversion|dependency inversion principal]], la estructura utiliza esta interfaz para fijar la forma en la cual iterar
 
+![[ingeniería en informática/algo 3/Patrones/img/Patrón iterator.png|500]]
 
 
 # Referencias

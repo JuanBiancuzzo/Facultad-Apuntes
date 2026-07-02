@@ -18,7 +18,11 @@ vinculoFacultad:
 ```
 # Definición
 ---
+Este patrón se utiliza cuando se tiene el siguiente problema, cuando la implementación de la solución a un problema pero la forma en la cual uno tiene que inicializar y manejar correctamente las partes de esta implementación son muy complicadas
 
+Este patrón plantea crear una interfaz entre la solución implementada y el usuario de la misma. Aislando la complejidad de su uso
+
+![[ingeniería en informática/algo 3/Patrones/img/Patrón facade.png|500]]
 
 
 

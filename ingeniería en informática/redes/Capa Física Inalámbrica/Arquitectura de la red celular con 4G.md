@@ -13,7 +13,7 @@ aliases:
   - Mobility Management Entity#^MME
   - MME#^MME
   - HSS#^HSS
-  - P-GW^#P-GW
+  - P-GW#^P-GW
   - S-GW#^S-GW
 vinculoFacultad:
   - tema: Capa Física Inalámbrica

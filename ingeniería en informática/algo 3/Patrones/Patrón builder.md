@@ -18,8 +18,11 @@ vinculoFacultad:
 ```
 # Definición
 ---
+Este patrón se utiliza cuando se tiene el siguiente problema, cuando la complejidad del problema viene por como configurar un objeto
 
+El patrón plantea crear otro objeto, donde se divida y simplifica la creación de objeto en partes, con un paso final que sea la construcción completa del objeto original 
 
+![[ingeniería en informática/algo 3/Patrones/img/Patrón builder.png|500]]
 
 
 # Referencias

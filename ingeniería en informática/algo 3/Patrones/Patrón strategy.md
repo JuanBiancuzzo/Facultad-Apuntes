@@ -18,9 +18,11 @@ vinculoFacultad:
 ```
 # Definición
 ---
+Este patrón se utiliza cuando se tiene el siguiente problema, cuando existe un objeto en particular que puede hacer una cosa especifica de varias formas diferentes
 
+El patrón resuelve el problema, creando una interfaz que represente hacer esa acción especifica, y que cada implementación de la misma sea la forma distinta de hacerlo. Esto va muy de la mano del [[ingeniería en informática/ingenieria de software 1/Diseño de software/SOLID#Dependency inversion#Dependency inversion|dependency inversion principal]]
 
-
+![[ingeniería en informática/algo 3/Patrones/img/Patrón strategy.png|500]]
 
 # Referencias
 ---
