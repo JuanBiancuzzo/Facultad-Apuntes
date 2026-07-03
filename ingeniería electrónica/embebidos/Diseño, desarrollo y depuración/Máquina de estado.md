@@ -53,7 +53,7 @@ Uno de los beneficios que otorga modelar un sistemas de esta forma, es que si te
 Tenemos múltiples opciones para codificar en [[Lenguaje C|C]] diagramas de estados finito, a saber
 * Mediante combinaciones de [[Switch statement#En C|switch]], múltiples [[If statement#En C|if]] o punteros a función
 * Tablas de estados de una o dos dimensiones
-* [[ingeniería en informática/ingenieria de software 1/Diseño de software/Patrones de diseño (Gang of four)|Patrones de diseños]] de estado [[Programación oientada a objetos (OOP) (POO)|orientados a objetos]]
+* [[ingeniería en informática/algo 3/Patrones/Patrón de diseño|Patrones de diseños]] de estado [[Programación oientada a objetos (OOP) (POO)|orientados a objetos]]
 * Otras técnicas que combinan a las anteriores ([[Framework|frameworks]])
 
 ```tikz

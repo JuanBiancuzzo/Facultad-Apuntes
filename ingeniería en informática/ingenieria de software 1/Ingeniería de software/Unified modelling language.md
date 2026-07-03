@@ -87,7 +87,7 @@ Este diagrama nos permite entender como están distribuidos nuestros paquetes en
 
 ## Diagrama de componentes
 ---
-Este diagrama de mucho más alto nivel, y permite ver como interactúan los componentes o servicios entre sí . Se entiene como componente a la funcionalidades con una única responsabilidad
+Este diagrama de mucho más alto nivel, y permite ver como interactúan los componentes o servicios entre sí. Se entiende como componente a la funcionalidades con una única responsabilidad
 
 ![[ingeniería en informática/ingenieria de software 1/Ingeniería de software/img/Diagrama de componentes.png|600]]
 

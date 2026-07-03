@@ -55,6 +55,6 @@ Definición de la arquitectura, los componentes y las [[ingeniería en informát
 * Tolerancia a fallas
 * Interacción y presentación
 * Seguridad
-![[ingeniería en informática/ingenieria de software 1/Diseño de software/General Responsibility Assignment Software Patterns (GRASP)#Definición]]
-![[ingeniería en informática/ingenieria de software 1/Diseño de software/Patrones de diseño (Gang of four)#Definición]]
+![[ingeniería en informática/ingenieria de software 1/Diseño de software/General Responsibility Assignment Software Patterns#Definición]]
+![[ingeniería en informática/algo 3/Patrones/Patrón de diseño#Definición]]
 ![[ingeniería en informática/ingenieria de software 1/Diseño de software/SOLID#Definición]]

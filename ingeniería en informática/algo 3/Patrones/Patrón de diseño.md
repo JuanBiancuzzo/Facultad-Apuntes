@@ -1,5 +1,5 @@
 ---
-dia: 2026-07-01
+dia: 2023-10-22
 etapa: empezado
 referencias:
   - "1167"
@@ -8,10 +8,15 @@ aliases:
 tags:
   - carrera/ingeniería-en-informática/algo-3/Patrones
   - nota/facultad
+  - carrera/ingeniería-en-informática/ingenieria-software-1/Diseño-de-software
 vinculoFacultad:
   - tema: Patrones
     capitulo: 1
     materia: Algoritmos y programación 3
+    carrera: Ingeniería en informática
+  - tema: Diseño de software
+    capitulo: 8
+    materia: Análisis de la información
     carrera: Ingeniería en informática
 ---
 ```dataviewjs

@@ -8,7 +8,14 @@ vinculoFacultad:
     capitulo: 8
     materia: Análisis de la información
     carrera: Ingeniería en informática
+etapa: empezado
+referencias: []
+aliases:
+  - GRASP
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 Los patrones son
@@ -18,6 +25,6 @@ Los patrones son
 * Information expert
 * High cohesion
 * Low coupling
-* Polymorphism
+* [[Polymorphism|Polymorphism]]
 * Protected variation
 * Pure fabrication
