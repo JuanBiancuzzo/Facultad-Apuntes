@@ -12,6 +12,12 @@ La intención es tener $4$ módulos, que representan el funcionamiento completo 
 3. Planeamiento de trayectorias
 4. Interfaz con el usuario
 
+Para el modelado, sería bueno intentar conseguir un modelo no lineal del sistema, ya que lo usaríamos para la estimación de estados, y la [[ingeniería electrónica/control/Linealización/Linealización Jacobiana|linealización]]. Especialmente para este último, estaría interesante combinar multiples [[ingeniería electrónica/control/Respuesta dinámica/Punto de equilibrio|puntos de equilibrio]], para hacer la linealización alrededor de estos puntos y usar [[Gain Scheduling|gain scheduling]] para controlar de forma lineal incluso en un rango grande de no linealidad
+
+Finalmente, también sería interesante ver como hacer pruebas automáticas para evaluar de forma digital si con el modelado utilizado, se puede garantizar (de nuevo de forma digital y dentro del modelo obtenido) los criterios de estabilidad y limites de diseño impuestos
+
+Se puede utilizar [[Docker container|Docker]] en conjunto con una [[Máquina virtual|máquina virtual]] como [[QEMU|QEMU]] para virtualizar la arquitectura y los recursos que tiene nuestro sistema, obteniendo métricas como tiempos de ejecución, rise time para diferentes tests, y otros que nos parezcan útiles para definir el correcto comportamiento del drone
+
 ## Estimación de estados
 ---
 Principalmente sería un [[Observador|observador]], utilizando un [[ingeniería electrónica/taller de control/Observadores/Filtro de Kalman|filtro de Kalman]]. Donde la información se utilizaría un [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]] del drone, no lineal, y las mediciones de sensores como un [[Inertial Measurement Unit (IMU)|IMU]], sensor de distancia para la altura, y/o sensor de presión. Para estos sensores tal vez sea bueno investigar como utilizar [[ingeniería electrónica/embebidos/Conversión analógica a digital y digital a analógica/Direct Memory Access controller|DMA]] e [[ingeniería en informática/sisop/Kernel/Interrupción|interrupciones]] para tener una manera más eficiente de conseguir esa información de los [[colección/componentes/sensores/Sensores|sensores]]
