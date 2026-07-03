@@ -4,7 +4,7 @@ estado: Planeamiento el proyecto
 tags:
   - proyecto/práctico
   - proyecto-práctico/drone
-github: https://github.com/JuanBiancuzzo/drone
+github: https://github.com/JuanBiancuzzo/Overengineered-Drone
 ---
 # Propuesta
 ---
