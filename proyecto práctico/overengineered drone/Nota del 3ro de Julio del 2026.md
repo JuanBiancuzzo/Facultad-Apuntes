@@ -1,7 +1,7 @@
 ---
 dia: 2026-07-03
 tags:
-  - proyecto-práctico/Drone
+  - proyecto-práctico/Overengineered-drone
   - nota/proyecto
 ---
 # Progreso

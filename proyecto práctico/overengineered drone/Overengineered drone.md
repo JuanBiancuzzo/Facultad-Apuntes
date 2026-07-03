@@ -3,7 +3,7 @@ dia: 2024-11-19
 estado: Planeamiento el proyecto
 tags:
   - proyecto/práctico
-  - proyecto-práctico/drone
+  - proyecto-práctico/Overengineered-drone
 github: https://github.com/JuanBiancuzzo/Overengineered-Drone
 ---
 # Propuesta
