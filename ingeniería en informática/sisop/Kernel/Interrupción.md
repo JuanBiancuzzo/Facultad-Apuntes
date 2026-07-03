@@ -7,6 +7,7 @@ tags:
   - nota/facultad
 aliases:
   - Excepción
+  - Interrupts
 vinculoFacultad:
   - tema: Estrategias de control de periféricos
     capitulo: 4

@@ -1,9 +1,9 @@
 ---
 tags:
   - facultad/resumen
-  - carrera/ingeniería-electrónica/taller-de-control/Control-robusto
-nombreResumen: Control robusto
-capitulo: 9
+  - carrera/ingeniería-electrónica/taller-de-control/Realimentación-de-estados
+nombreResumen: Realimentación de estados
+capitulo: 8
 referencias: []
 infoTemaMateria:
   materia: Taller de Automatización y Control
