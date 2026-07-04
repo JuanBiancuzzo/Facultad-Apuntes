@@ -12,7 +12,7 @@ Vamos a crear un drone, para aplicar conceptos de control y robótica, como excu
 
 # Presentar
 ---
-![](https://juanbiancuzzo.github.io/8-bit-computer/)
+![](https://juanbiancuzzo.github.io/Overengineered-Drone/)
 
 
 # Notas
