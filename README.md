@@ -155,12 +155,6 @@ Estos proyectos tienen como objetivo investigar y crear pruebas para llegar a un
 | [Lagrangian Physics Engine](proyecto%20investigación/lagrangian%20physics%20engine/Lagrangian%20Physics%20Engine.md)                                                           | Sin empezar                                |
 | [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)                                    | Estamos buscando información sobre el tema |
 
-### Game Design Documents
----
-Estos proyectos tienen como objetivo crear un GDD y mostrar el desarrollo del juego
-
-| Juego | Estado |
-| ----- | ------ |
 ### Cursos
 ---
 Estos son los cursos que vaya haciendo

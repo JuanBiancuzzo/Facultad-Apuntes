@@ -149,22 +149,6 @@ Estos proyectos tienen como objetivo investigar y crear pruebas para llegar a un
     tR += `${tabla}\n`;
 _%>
 
-### Game Design Documents
----
-Estos proyectos tienen como objetivo crear un GDD y mostrar el desarrollo del juego
-
-<%* 
-    proyectos = dv.pages(`#${TAGS_PROYECTO.self}/${TAGS_PROYECTO.juego.self}`)
-        .sort(proyecto => proyecto[DATOS_PROYECTO.dia], direction="desc");
-    
-    tR += dv.markdownTable(["Juego", "Estado"], proyectos.map(proyecto => {
-        let nombre = proyecto.file.name.trim();
-        let path = `${proyecto.file.path}`.replaceAll(" ", "%20");
-        
-        return [ `[${nombre}](${path})`, proyecto[DATOS_PROYECTO.estado] ];
-    }));
-_%>
-
 ### Cursos
 ---
 Estos son los cursos que vaya haciendo
