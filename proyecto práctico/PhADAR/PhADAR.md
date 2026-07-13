@@ -12,7 +12,7 @@ La idea es crear un [[colección/componentes/sensores/Sensores|sensor]] que perm
 
 # Presentar
 ---
-![](https://juanbiancuzzo.github.io/8-bit-computer/)
+![](https://juanbiancuzzo.github.io/phase-array-detection-and-ranging/)
 
 
 # Notas

@@ -10,7 +10,14 @@ vinculoFacultad:
     capitulo: 2
     materia: Base de datos
     carrera: Ingeniería en informática
+etapa: empezado
+referencias: []
+aliases:
+  - DELETE statement
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 Esta [[Sentencia de SQL|sentencia]] se usa para eliminar un [[Registro SQL|registro]] de una [[Tabla SQL|tabla]]

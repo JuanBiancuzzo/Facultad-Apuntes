@@ -1,7 +1,7 @@
 ---
 cuatri: 23C1
 estado: Falta pasar las presentaciones de los últimos temas
-plan: 2009
+plan: 1986
 codigo: "9508"
 tags:
   - carrera/ingeniería-en-informática/taller

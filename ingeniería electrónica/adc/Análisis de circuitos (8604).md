@@ -1,7 +1,7 @@
 ---
 cuatri: 23C2
 estado: Terminado
-plan: "1986"
+plan: "2009"
 codigo: "8604"
 tags:
   - carrera/ingeniería-electrónica/adc

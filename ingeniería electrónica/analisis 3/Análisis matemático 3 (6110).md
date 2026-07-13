@@ -1,7 +1,7 @@
 ---
 cuatri: 22C2
 estado: Terminado
-plan: "1986"
+plan: "2009"
 codigo: "6110"
 tags:
   - carrera/ingeniería-electrónica/analisis-3
