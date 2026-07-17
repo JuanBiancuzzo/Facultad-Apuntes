@@ -4,6 +4,7 @@ tags:
   - carrera/ingeniería-electrónica/adc/Circuitos-acoplados-magnéticamente
   - carrera/ingeniería-en-informática/adc/Circuitos-acoplados-magnéticamente
   - facultad/resumen
+etapa: sin-empezar
 nombreResumen: Circuitos acoplados magnéticamente
 materiaResumen: ingeniería electrónica/adc/Análisis de circuitos (8604).md
 infoTemaMateria:

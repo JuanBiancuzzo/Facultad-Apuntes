@@ -6,6 +6,7 @@ tags:
   - nota/facultad
 aliases: 
   - Mejor predictor#Mejor predictor
+  - Estimador bayesiano#Mejor predictor
   - Predictor
 vinculoFacultad:
   - tema: Representación de variables aleatorias

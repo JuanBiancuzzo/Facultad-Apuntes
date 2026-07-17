@@ -14,7 +14,13 @@ vinculoFacultad:
     capitulo: 3
     materia: Taller de Procesamiento de Señales
     carrera: Ingeniería electrónica
+etapa: empezado
+referencias:
+  - "1168"
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 > [!definicion]+ Definición 8.1.7 (Divergencia de Kullback Leibler) 
@@ -23,6 +29,13 @@ vinculoFacultad:
 
 La divergencia de Kullback Leibler no es una [[Distancia|distancia]] ya que no es simétrica $D_{KL}(P \mid\mid Q) \ne D_{KL}(Q \mid\mid P)$, pero si tiene la siguiente propiedad
 
+También se puede pensar como la diferencia entre la [[ingeniería en informática/orga/Compresión/Entropía cruzada|entropía cruzada]] entre $Q$ con respecto a $P$ y la [[ingeniería en informática/orga/Compresión/Entropía|entropía]] de $P$, se puede llegar desde la expresión anteriormente mencionada $$ \begin{align} 
+	D_{KL}(P \mid\mid Q) &= \sum_{y \in \mathcal{Y}} P(y) ~ \ln\left( -\frac{Q(y)}{P(y)} \right) \\
+	 &= \sum_{y \in \mathcal{Y}} P(y) ~ \bigg( \ln(-Q(y)) - \ln(-P(y)) \bigg) \\
+	 &= \sum_{y \in \mathcal{Y}} P(y) ~ \ln(-Q(y)) - P(y) ~  \ln(-P(y)) \\
+	 &= \sum_{y \in \mathcal{Y}} P(y) ~ \ln(-Q(y)) - \sum_{y \in \mathcal{Y}} P(y) ~  \ln(-P(y)) \\
+	 &= H(Q,~ P) - H(P) \\
+\end{align} $$
 
 > [!propiedad]+ Propiedad 8.1.8  
 > $D_{KL}(P \mid\mid Q) \ge 0$ con igualdad sii $P(y) = Q(y)$ para todo $y \in \mathcal{Y}$
@@ -36,3 +49,9 @@ La divergencia de Kullback Leibler no es una [[Distancia|distancia]] ya que no e
 ^pro-8-1-8
 
 Esta propiedad implica que la divergencia alcanza su [[ingeniería en informática/discreta/Relaciones/Mínimo|mínimo]] cuando las distribuciones son iguales. Esta [[Métrica|métrica]] permite proponer modelos cuyo valor óptimo sea la verdadera distribución
+
+# Referencias
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
+```

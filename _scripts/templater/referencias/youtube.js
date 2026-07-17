@@ -1,5 +1,3 @@
-const SALIR = "salir";
-
 class Youtube {
     constructor(tp, seguidorRef, representacionPrevia) {
         // console.log("Youtube");
@@ -24,12 +22,12 @@ class Youtube {
     async actualizarDatos(respuesta, generarPreguntas, generarError) {
         switch (respuesta) {
             case this.config.nombreVideo:
-                this.nobmre = await generarPreguntas.prompt(
+                this.nombre = await generarPreguntas.prompt(
                     this.nombre
                         ? `Nuevo nombre del video, donde antes era ${this.nombre}`
                         : "Nombre del video",
-                    generarError.Quit("No se ingresó nombre del video")
-                );
+                    generarError.Quit("No se ingresó el nombre del video")
+                )
                 break;
 
             case this.config.nombreCanal:
@@ -67,7 +65,7 @@ class Youtube {
         let valores = [];
 
         opciones.push(this.config.nombreVideo);
-        valores.push(this.nobmre
+        valores.push(this.nombre
             ? `️ ${this.simbolos.modificar}️ Modificar el nombre del video, donde era ${this.nombre}`
             : ` ${this.simbolos.agregar} Nombre del video`
         );
