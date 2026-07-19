@@ -78,9 +78,10 @@ def inicializar(nombre_archivo: str):
                 archivo.write("\n]\n")
 
         except Exception as e:
+            cola_mensajes.shutdown(immediate = True)
             print(f"Ocurrio un error {e}({type(e)}) al intentar escribir en el archivo")
 
-    Thread(target = procesar, daemon = True, args = (_cola_mensajes, )).start()
+    Thread(target = procesar, daemon = False, args = (_cola_mensajes, )).start()
 
 def terminar():
     global _cola_mensajes
@@ -94,4 +95,5 @@ def loggear(nivel: LoggerNivel, mensaje: str) -> None:
     global _cola_mensajes
     if _cola_mensajes is None:
         return
+
     _cola_mensajes.put(Mensaje(nivel, mensaje))

@@ -23,9 +23,13 @@ class Argumentos:
     archivos_omitir: List[str]
     tamanio_batch: int
 
-    def __init__(self, input_path: str, output_path: str, archivos_omitir: List[str] = [], directorios_omitir: List[str] = [], batch = 1) -> None:
+    def __init__(
+        self, input_path: str, output_path: str, logs_path: str | None = None,
+        archivos_omitir: List[str] = [], directorios_omitir: List[str] = [], batch = 1
+    ) -> None:
         self.input_path = input_path
         self.output_path = output_path
+        self.logs_path = logs_path
         self.archivos_omitir = archivos_omitir
         self.directorios_omitir = directorios_omitir
         self.tamanio_batch = batch
@@ -84,9 +88,6 @@ Options:
             directorio = "/".join(path.split("/")[:-1]).strip()
             if directorio != "": os.makedirs(directorio, exist_ok = True)
             argumentos.logs_path = path
-
-        else:
-            argumentos.logs_path = None
         
         try: 
             argumentos.tamanio_batch = int(dicc_args["--batch"])
