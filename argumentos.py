@@ -18,6 +18,7 @@ class ErrorArgumentos(StrEnum):
 class Argumentos:
     input_path: str
     output_path: str
+    logs_path: str | None
     directorios_omitir: List[str]
     archivos_omitir: List[str]
     tamanio_batch: int
@@ -34,7 +35,7 @@ class Argumentos:
         dicc_args = docopt(f"""
 Usage:
   importer.py -i=<input-directorio> -o=<output-bdd>
-  importer.py cli -i=<input-directorio> -o=<output-bdd> [-b=<batch>] [-e=<excluir>]...
+  importer.py cli -i=<input-directorio> -o=<output-bdd> [-l=<logs>] [-b=<batch>] [-e=<excluir>]...
   importer.py file -i=<input-directorio> -o=<output-bdd> [-f=<archivo-config>]
   importer.py --help
   importer.py --version
@@ -45,6 +46,7 @@ Options:
 
     -i=<input-directorio>, --input-directorio=<input-directorio> Path al directorio con los datos.
     -o=<output-bdd>, --output-bdd=<output-bdd>                   Path al archivo de SQLite que se quiere generar.
+    -l=<logs>, --logs=<logs>                                     Path al archivo de logs que se quiere generar.
     -b=<batch>, --batch=<batch>                                  Se bloques de archivos a procesar, esta el tamaño del bloque [default: {DEFAULT_BATCH}].
     -e=<excluir>, --excluir=<excluir>                            Directorios y archivos a excluir de los datos a procesar.
     -f=<archivo-config>, --archivo-config=<archivo-config>       Archivo con la configuracion en .json equivalente a los otros parametros.
@@ -76,7 +78,16 @@ Options:
 
             elif os.path.exists(path_completo):
                 return argumentos, ErrorArgumentos.EXCLUIDO_INVALIDO
+        
+        if dicc_args["--logs"]:
+            path = _limpear_path(dicc_args["--logs"])
+            directorio = "/".join(path.split("/")[:-1]).strip()
+            if directorio != "": os.makedirs(directorio, exist_ok = True)
+            argumentos.logs_path = path
 
+        else:
+            argumentos.logs_path = None
+        
         try: 
             argumentos.tamanio_batch = int(dicc_args["--batch"])
             if argumentos.tamanio_batch <= 0:
@@ -99,6 +110,7 @@ Options:
         except:
             return argumentos, ErrorArgumentos.PATH_CONFIGURACION_INVALIDO
 
+        dicc_args["--logs"] = datos.get("logs")
         dicc_args["--batch"] = datos.get("batch", DEFAULT_BATCH)
         dicc_args["--excluir"] = datos.get("excluir", [])
 

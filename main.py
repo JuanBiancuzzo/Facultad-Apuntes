@@ -49,7 +49,8 @@ def main(args: Argumentos) -> None:
     error = None
 
     try: 
-        logger.inicializar("logs.json")
+        if args.logs_path: 
+            logger.inicializar(args.logs_path)
         cargar_datos(args, conn)
 
     except Exception as e:
