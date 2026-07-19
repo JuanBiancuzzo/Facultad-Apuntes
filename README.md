@@ -134,9 +134,9 @@ Estos proyectos tienen una aplicación como resultado final
 | Proyecto                                                                                                                                                                        | Estado                                         |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
 | [8-bit computer](proyecto%20práctico/8-bit%20computer/8-bit%20computer.md)                                                                                                      | Empezando por la ALU                           |
+| [PhADAR](proyecto%20práctico/PhADAR/PhADAR.md)                                                                                                                                  | En etapa de investigación                      |
 | [Sistema operativo distribuido](proyecto%20práctico/os-distribuido/Sistema%20operativo%20distribuido.md)                                                                        | sin-empezar                                    |
 | [Overengineered drone](proyecto%20práctico/overengineered%20drone/Overengineered%20drone.md)                                                                                    | Planeamiento el proyecto                       |
-| [PhADAR](proyecto%20práctico/PhADAR/PhADAR.md)                                                                                                                                  | En etapa de investigación                      |
 | [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)                                     | Estamos buscando información sobre el tema     |
 | [Primer proyecto de robótica - Auto remoto](proyecto%20práctico/primer%20proyecto%20de%20robótica%20-%20auto%20remoto/Primer%20proyecto%20de%20robótica%20-%20Auto%20remoto.md) | Terminado                                      |
 | [Porfolio](proyecto%20práctico/porfolio/Porfolio.md)                                                                                                                            | Sin empezar                                    |
@@ -161,10 +161,10 @@ Estos son los cursos que vaya haciendo
 
 | Curso                                                                                                                                                            | Estado                                       |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| [Computation Structures](cursos/computation%20structures/Computation%20Structures.md)                                                                            | Sin empezar                                  |
 | [Introduction to Algorithms](cursos/introduction%20to%20algorithms/Introduction%20to%20Algorithms.md)                                                            | Terminando la lecture 7 y empezando unidad 3 |
 | [Performance Engineering of Software Systems](cursos/performance%20engineering%20of%20software%20systems/Performance%20Engineering%20of%20Software%20Systems.md) | Sin empezar                                  |
 | [Software Construction](cursos/software%20construction/Software%20Construction.md)                                                                               | Sin empezar                                  |
+| [Computation Structures](cursos/computation%20structures/Computation%20Structures.md)                                                                            | Sin empezar                                  |
 | [CS50's Introduction to Cybersecurity](cursos/cs50's%20introduction%20to%20cybersecurity/CS50's%20Introduction%20to%20Cybersecurity.md)                          | Sin empezar                                  |
 ### Colecciones
 ---

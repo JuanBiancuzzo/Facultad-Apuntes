@@ -6,7 +6,7 @@ tags:
 nombreResumen: Prototipado y experiencia del usuario
 materiaResumen: ingeniería en informática/aninfo/Análisis de la información (7509).md
 infoTemaMateria:
-  materia: Análisis de la información
+  materia: Ingeniería de Software 1
   carrera: Ingeniería en informática
 ---
 # Índice 

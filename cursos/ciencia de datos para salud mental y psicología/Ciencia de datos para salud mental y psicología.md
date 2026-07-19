@@ -1,12 +1,14 @@
 ---
 etapa: empezado
 estado: Falta ver los temas más en detalles
+tipoCita: CursoPresencial
 nombreAutores:
   - apellido: Low
     nombre: Daniel M.
 tags:
   - curso/ciencia-de-datos-para-salud-mental-y-psicología
   - cursos/curso-presencial
+  - referencia/curso-presencial
 referencias:
   - "631"
   - "632"
