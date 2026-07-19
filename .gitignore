@@ -1,11 +1,14 @@
-.obsidian/workspace.json
-.obsidian/workspaces.json
-.obsidian/workspace-mobile.json
-.obsidian/appearance.json                     
-.obsidian/backlink.json                     
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
 
-.obsidian/plugins/git/data.json
-.obsidian/plugins/oz-clear-unused-images/data.json
+# Virtual environments
+.venv
 
-.trash
-temp/
+# Particulares
+logs/*
+*.db
