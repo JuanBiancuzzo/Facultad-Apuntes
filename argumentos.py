@@ -1,13 +1,18 @@
 import os
+import json
 from docopt import docopt # Libreria docopt-ng
 from dataclasses import dataclass
-from typing import List, Tuple
+from typing import Dict, List, Tuple, Any
 from enum import StrEnum
+
+DEFAULT_BATCH = 20
 
 class ErrorArgumentos(StrEnum):
     BATCH_INVALIDO = "El batch tiene que ser un numero"
     BATCH_NO_POSITIVO = "El numero de batch es negativo o cero"
     EXCLUIDO_INVALIDO = "El path a excluir no es archivo ni directorio"
+    PATH_CONFIGURACION_INVALIDO = "El path de configuracion no existe"
+    FORMATO_CONFIGURACION_INVALIDO = "El formato de la configuracion en .json deberia tener un valor de batch (opcional) y una lista de archivo/directorio a excluir debajo del nombre 'excluir'"
 
 @dataclass
 class Argumentos:
@@ -26,9 +31,11 @@ class Argumentos:
 
     @classmethod
     def parsear(cls) -> Tuple[Argumentos, ErrorArgumentos | None]:
-        dicc_args = docopt("""
+        dicc_args = docopt(f"""
 Usage:
-  importer.py -i=<input-directorio> -o=<output-bdd> [-b=<batch>] [-e=<excluir>]...
+  importer.py -i=<input-directorio> -o=<output-bdd>
+  importer.py cli -i=<input-directorio> -o=<output-bdd> [-b=<batch>] [-e=<excluir>]...
+  importer.py file -i=<input-directorio> -o=<output-bdd> [-f=<archivo-config>]
   importer.py --help
   importer.py --version
 
@@ -36,10 +43,11 @@ Options:
     --help       Mostrar los argumentos posibles.
     --version    Version.
 
-    -i=<input-directorio>, --input-directorio=<input-directorio> Directories to skip.
-    -o=<output-bdd>, --output-bdd=<output-bdd>                   Directories to skip.
-    -b=<batch>, --batch=<batch>                                  Directories to skip [default: 20].
-    -e=<excluir>, --excluir=<excluir>                            Directories to skip.
+    -i=<input-directorio>, --input-directorio=<input-directorio> Path al directorio con los datos.
+    -o=<output-bdd>, --output-bdd=<output-bdd>                   Path al archivo de SQLite que se quiere generar.
+    -b=<batch>, --batch=<batch>                                  Se bloques de archivos a procesar, esta el tamaño del bloque [default: {DEFAULT_BATCH}].
+    -e=<excluir>, --excluir=<excluir>                            Directorios y archivos a excluir de los datos a procesar.
+    -f=<archivo-config>, --archivo-config=<archivo-config>       Archivo con la configuracion en .json equivalente a los otros parametros.
 """
 , version = "0.1.0")
 
@@ -48,6 +56,16 @@ Options:
             _limpear_path(dicc_args["--output-bdd"]),
         )
 
+        if dicc_args["cli"]:
+            return cls._parsear_cli(argumentos, dicc_args)
+
+        elif dicc_args["file"]:
+            return cls._parsear_file(argumentos, dicc_args)
+
+        return argumentos, None
+
+    @classmethod
+    def _parsear_cli(cls, argumentos: Argumentos, dicc_args: Dict[str, Any]) -> Tuple[Argumentos, ErrorArgumentos | None]:
         for path_excluido in map(_limpear_path, dicc_args["--excluir"]):
             path_completo = os.path.join(argumentos.input_path, path_excluido)
             if os.path.isfile(path_completo):
@@ -67,6 +85,24 @@ Options:
             return argumentos, ErrorArgumentos.BATCH_INVALIDO
         
         return argumentos, None
+
+    @classmethod
+    def _parsear_file(cls, argumentos: Argumentos, dicc_args: Dict[str, Any]) -> Tuple[Argumentos, ErrorArgumentos | None]:
+        path_configuracion = dicc_args["--archivo-config"]
+        if path_configuracion is None:
+            return argumentos, None
+
+        try:
+            with open(path_configuracion, "r") as archivo_configuracion:
+                datos = json.load(archivo_configuracion)
+
+        except:
+            return argumentos, ErrorArgumentos.PATH_CONFIGURACION_INVALIDO
+
+        dicc_args["--batch"] = datos.get("batch", DEFAULT_BATCH)
+        dicc_args["--excluir"] = datos.get("excluir", [])
+
+        return cls._parsear_cli(argumentos, dicc_args)
 
 def _limpear_path(path: str) -> str:
     return os.path.join(*path.replace("\\", "/").split("/"))

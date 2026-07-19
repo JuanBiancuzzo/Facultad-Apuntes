@@ -1,0 +1,14 @@
+{
+    "excluir": [
+        ".git",
+        ".obsidian",
+        "_scripts",
+        "_template",
+        "temp",
+        ".trash",
+        ".gitignore",
+        ".gitmodules",
+        "LICENSE",
+        "README.md"
+    ]
+}

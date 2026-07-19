@@ -11,4 +11,4 @@ wheels/
 
 # Particulares
 logs/*
-*.db
+run.sh
