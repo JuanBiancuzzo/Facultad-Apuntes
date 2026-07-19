@@ -60,21 +60,25 @@ def inicializar(nombre_archivo: str):
 
     _cola_mensajes = Queue()
     def procesar(cola_mensajes: Queue):
-        with open(nombre_archivo, "w") as archivo:
-            archivo.write("[\n\t")
-            archivo.write("\n\t".join(Mensaje(LoggerNivel.DEBUG, "Inicio").json().split("\n")))
+        try:
+            with open(nombre_archivo, "w") as archivo:
+                archivo.write("[\n\t")
+                archivo.write("\n\t".join(Mensaje(LoggerNivel.DEBUG, "Inicio").json().split("\n")))
 
-            while True:
-                try: 
-                    mensaje = cola_mensajes.get()
-                    archivo.write(",\n\t" + "\n\t".join(mensaje.json().split("\n")))
-                    print(mensaje.terminal())
-                    cola_mensajes.task_done()
+                while True:
+                    try: 
+                        mensaje = cola_mensajes.get()
+                        archivo.write(",\n\t" + "\n\t".join(mensaje.json().split("\n")))
+                        print(mensaje.terminal())
+                        cola_mensajes.task_done()
 
-                except ShutDown:
-                    break
+                    except ShutDown:
+                        break
 
-            archivo.write("\n]\n")
+                archivo.write("\n]\n")
+
+        except Exception as e:
+            print(f"Ocurrio un error {e}({type(e)}) al intentar escribir en el archivo")
 
     Thread(target = procesar, daemon = True, args = (_cola_mensajes, )).start()
 
