@@ -1,13 +1,24 @@
-# Python-generated files
-__pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
+# Typescript-generated files
+# Dependencies
+node_modules/
+jspm_packages/
+web_modules/
 
-# Virtual environments
-.venv
+# TypeScript Build Artifacts
+dist/
+build/
+out/
+lib/
+*.tsbuildinfo
+
+# Debug and Logs
+npm-debug.log*
+
+# Environment Variables and Secrets
+.env
+.env.local
+.env.*.local
+*.env
 
 # Particulares
 logs/*
