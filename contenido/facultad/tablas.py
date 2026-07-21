@@ -1,6 +1,6 @@
 from sqlite3 import Connection as Conn, Cursor
 from typing import Dict, Any
-from contenido.tablas.registros import Tabla, TablasFacultad as Tablas, TablasColeccion, TablasGenerales, TablasGenerales
+from contenido.tablas import Tabla, TablasFacultad as Tablas, TablasColeccion, TablasGenerales, TablasGenerales
 
 class TablaCarrera(Tabla):
     nombre = Tablas.CARRERAS

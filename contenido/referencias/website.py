@@ -39,7 +39,7 @@ class ReferenciaWeb(Dato):
             archivo.extra["nombrePagina"],
             fecha,
             archivo.extra["url"],
-            Referencia._obtener_clave(int(archivo.extra["numReferencia"])),
+            Referencia._obtener_clave(archivo.extra["numReferencia"]),
         )
         datos.append(website)
 
@@ -60,8 +60,9 @@ class ReferenciaWeb(Dato):
         return ReferenciaWeb._obtener_clave(self.clave_referencia) 
 
     @classmethod
-    def _obtener_clave(cls, clave_referencia: Clave) -> Clave: 
-        return Clave(TipoNodo.REFERENCIA_WEBSITE, clave_referencia.hash)
+    def _obtener_clave(cls, referencia: int | str | Clave) -> Clave: 
+        hash = Referencia._obtener_clave(referencia).hash
+        return Clave(TipoNodo.REFERENCIA_WEBSITE, hash)
 
     def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo:
         try: 

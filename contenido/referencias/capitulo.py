@@ -45,7 +45,7 @@ class ReferenciaCapitulo(Dato):
                     extra_capitulo.get("nombreCapitulo", None),
                     paginas,
                     clave_ref_libro,
-                    Referencia._obtener_clave(int(extra_capitulo["numReferencia"]))
+                    Referencia._obtener_clave(extra_capitulo["numReferencia"])
                 )
                 datos.append(capitulo)
             except Exception as e:
@@ -70,15 +70,7 @@ class ReferenciaCapitulo(Dato):
 
     @classmethod
     def _obtener_clave(cls, referencia: int | Clave) -> Clave: 
-        if type(referencia) is int:
-            hash = Referencia._obtener_clave(referencia).hash
-        elif type(referencia) is Clave:
-            hash = referencia.hash
-        else:
-            mensaje = f"Al obtener clave de libro no es numero ni clave"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje) 
-
+        hash = Referencia._obtener_clave(referencia).hash
         return Clave(TipoNodo.REFERENCIA_CAPITULO_LIBRO, hash)
 
     def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo:

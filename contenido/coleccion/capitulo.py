@@ -4,7 +4,6 @@ from typing import Dict, List
 from dataclasses import dataclass
 
 from archivos import Archivo
-from archivos.texto import Texto, Seccion, split_secciones
 from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
@@ -28,13 +27,12 @@ class Capitulo(Dato):
         if etapa is None:
             return None
 
-        clave_ref_libro = ReferenciaLibro._obtener_clave(int(archivo.extra["numReferencia"]))
+        clave_ref_libro = ReferenciaLibro._obtener_clave(archivo.extra["numReferencia"])
         clave_libro = Libro._obtener_clave(clave_ref_libro)
 
         datos = []
         for extra_capitulo in archivo.extra.get("info_capitulo", []):
-            num_referencia = int(extra_capitulo["numReferencia"])
-            clave_ref_capitulo = ReferenciaCapitulo._obtener_clave(num_referencia)
+            clave_ref_capitulo = ReferenciaCapitulo._obtener_clave(extra_capitulo["numReferencia"])
             datos.append(Capitulo(etapa, None, clave_libro, clave_ref_capitulo))
     
         return datos

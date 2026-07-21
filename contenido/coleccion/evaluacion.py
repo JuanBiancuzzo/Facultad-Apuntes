@@ -1,4 +1,5 @@
 import sqlite3 as sql
+import datetime as dt
 
 from typing import Dict, List
 from dataclasses import dataclass
@@ -9,20 +10,20 @@ from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
 from .ejercicios import Ejercicio
-from .tablas import TablaGuia as Tabla, TablaEjerciciosGuia
+from .tablas import TablaEvaluacion as Tabla, TablaEjerciciosEvaluacion
 
 @dataclass
-class Guia(Dato):
+class Evaluacion(Dato):
     numero: int
-    nombre: str
+    fecha: dt.date
     clave_ejercicios: List[Clave]
 
     @classmethod
-    def parsear(cls, archivo: Archivo) -> List[Dato]:
+    def parsear(cls, archivo: Archivo) -> List[Evaluacion]:
         try: 
-            guia = Guia(
+            evaluacion = Evaluacion(
                 numero = int(archivo.extra["numero"]), 
-                nombre = archivo.extra["nombre"], 
+                fecha = archivo.extra["fecha"], 
                 clave_ejercicios = [ 
                     Ejercicio._obtener_clave(int(ejercicio))
                     for ejercicio in archivo.extra["ejercicios"] 
@@ -30,30 +31,30 @@ class Guia(Dato):
             )
 
         except Exception as err:
-            loggear(LoggerNivel.FATAL, f"Al intentar crear libro {archivo.extra.get("numero", "invalido")}, no tiene etapa")
+            loggear(LoggerNivel.FATAL, "Error al crear evaluacion")
             raise err
 
-        return [guia]
+        return [evaluacion]
 
     def dependo(self) -> List[Clave]: 
         return self.clave_ejercicios
 
     def obtener_clave(self) -> Clave: 
-        return Guia._obtener_clave(self.numero)
+        return Evaluacion._obtener_clave(self.numero)
 
     @classmethod
-    def _obtener_clave(cls, numero_guia) -> Clave: 
-        return Clave.de_texto(TipoNodo.GUIA, f"{numero_guia}<|>{numero_guia}")
+    def _obtener_clave(cls, numero_evaluacion) -> Clave: 
+        return Clave.de_texto(TipoNodo.EVALUACION, f"{numero_evaluacion}<:>{numero_evaluacion}")
 
     def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo | None:
         try: 
-            id_guia = Tabla.insertar(cursor, self.nombre)
+            id_evaluacion = Tabla.insertar(cursor, self.fecha)
 
         except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al insertar guia {self.numero} de ejercicios")
+            loggear(LoggerNivel.FATAL, f"Al insertar evaluacion {self.numero} de ejercicios")
             raise e
 
-        if id_guia is None:
+        if id_evaluacion is None:
             mensaje = f"La guia insertada no tiene id"
             loggear(LoggerNivel.FATAL, mensaje)
             raise Exception(mensaje)
@@ -61,10 +62,10 @@ class Guia(Dato):
         try: 
             for clave_ejercicio in self.clave_ejercicios:
                 id_ejercicio = dependencias[clave_ejercicio]
-                TablaEjerciciosGuia.insertar(cursor, id_guia, id_ejercicio)
+                TablaEjerciciosEvaluacion.insertar(cursor, id_evaluacion, id_ejercicio)
 
         except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al insertar guia {self.numero} con relacion con ejercicio")
+            loggear(LoggerNivel.FATAL, f"Al insertar evaluacion {self.numero} con relacion con ejercicio")
             raise e
 
-        return Nodo(id_guia, self.obtener_clave())
+        return Nodo(id_evaluacion, self.obtener_clave())

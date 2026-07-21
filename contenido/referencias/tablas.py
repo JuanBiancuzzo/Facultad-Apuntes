@@ -1,7 +1,6 @@
 from sqlite3 import Connection as Conn, Cursor
 from typing import Dict, Any
-from contenido.tablas.registros import Tabla, TablasReferencias as Tablas, TablasGenerales
-
+from contenido.tablas import Tabla, timestamp, TablasReferencias as Tablas, TablasGenerales
 import datetime as dt
 
 class TablaReferencia(Tabla):
@@ -20,7 +19,7 @@ class TablaReferencia(Tabla):
     def insertar(cls, cursor: Cursor, tipo: str, fecha_registrado: dt.datetime) -> int | None: 
         return cls._insertar(cursor, {
             "tipo": tipo,
-            "fecha_registrada": fecha_registrado.timestamp(),
+            "fecha_registrada": timestamp(fecha_registrado),
         })
 
 class TablaWebsite(Tabla):
@@ -29,6 +28,7 @@ class TablaWebsite(Tabla):
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
             CREATE TABLE IF NOT EXISTS {self.nombre} (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
                 nombre_articulo TEXT NOT NULL,
                 nombre_pagina TEXT NOT NULL,
                 fecha INTEGER DEFAULT NULL,
@@ -46,8 +46,7 @@ class TablaWebsite(Tabla):
             "url": url,
             "num_referencia": num_referencia
         }
-        if fecha:
-            datos["fecha"] = dt.datetime.combine(fecha, dt.datetime.min.time(), tzinfo = dt.timezone.utc)
+        if fecha: datos["fecha"] = timestamp(fecha)
         return cls._insertar(cursor, datos)
 
 class TablaWikipedia(Tabla):
@@ -68,7 +67,7 @@ class TablaWikipedia(Tabla):
     def insertar(cls, cursor: Cursor, nombre: str, fecha: dt.date, url: str, num_referencia: int) -> None:
         cls._insertar(cursor, {
             "nombre_articulo": nombre, 
-            "fecha": dt.datetime.combine(fecha, dt.datetime.min.time(), tzinfo = dt.timezone.utc), 
+            "fecha": timestamp(fecha), 
             "url": url, 
             "num_referencia": num_referencia,
         })
@@ -93,7 +92,7 @@ class TablaYoutube(Tabla):
         cls._insertar(cursor, {
             "nombre_video": nombre_video, 
             "nombre_canal": nombre_canal,
-            "fecha_video": dt.datetime.combine(fecha, dt.datetime.min.time(), tzinfo = dt.timezone.utc),
+            "fecha_video": timestamp(fecha),
             "url": url,
             "num_referencia": num_referencia,
         })
@@ -172,6 +171,38 @@ class TablaCapitulo(Tabla):
         if pagina_final: valores["pagina_final"] = pagina_final
         return cls._insertar(cursor, valores)
 
+class TablaPaper(Tabla):
+    nombre = Tablas.PAPER
+
+    def crear(self, conn: Conn):
+        conn.execute(f"""
+            CREATE TABLE IF NOT EXISTS {self.nombre} (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                titulo TEXT NOT NULL,
+                anio INTEGER NOT NULL,
+                doi TEXT,
+                url TEXT,
+                
+                num_referencia INTEGER NOT NULL REFERENCES {Tablas.REFERENCIAS}(num_referencia),
+
+                CHECK (
+                    (doi IS NOT NULL OR url IS NOT NULL) 
+                )
+            );
+        """)
+
+    @classmethod
+    def insertar(cls, cursor: Cursor, titulo: str, anio: int, doi: str | None, url: str | None, num_referencia: int) -> int | None:
+        valores: Dict[str, Any] = {
+            "titulo": titulo,
+            "anio": anio,
+            "num_referencia": num_referencia,
+        }
+        if doi: valores["doi"] = doi
+        if url: valores["url"] = url
+            
+        return cls._insertar(cursor, valores)
+
 class TablaDiccionario(Tabla):
     nombre = Tablas.DICCIONARIO
 
@@ -196,7 +227,7 @@ class TablaDiccionario(Tabla):
     ) -> int | None:
         return cls._insertar(cursor, {
             "palabra": palabra,
-            "fecha": dt.datetime.combine(fecha, dt.datetime.min.time(), tzinfo = dt.timezone.utc),
+            "fecha": timestamp(fecha),
             "diccionario": diccionario,
             "url": url,
             "id_editorial": id_editorial,

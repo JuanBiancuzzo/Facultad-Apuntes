@@ -27,6 +27,7 @@ def crear_tablas(conn: Conn):
         ],
         [
             coleccion.TablaGuia(),
+            coleccion.TablaEvaluacion(),
 
             facultad.TablaPlanDeEstudio(),
 
@@ -34,10 +35,12 @@ def crear_tablas(conn: Conn):
             referencias.TablaWikipedia(),
             referencias.TablaYoutube(),
             referencias.TablaLibro(),
+            referencias.TablaPaper(),
             referencias.TablaDiccionario(),
         ],
         [
             coleccion.TablaEjerciciosGuia(),
+            coleccion.TablaEjerciciosEvaluacion(),
             coleccion.TablaLibro(),
             coleccion.TablaDiccionario(),
 

@@ -16,8 +16,12 @@ def _registrar_markdown(tag: str, archivo: Archivo) -> List[Dato]:
                 if extra: datos.extend(extra)
 
             case "ejercicios/guia":
-                guia = coleccion.Guia.parsear(archivo)
-                if guia: datos.append(guia)
+                extra = coleccion.Guia.parsear(archivo)
+                if extra: datos.extend(extra)
+
+            case "ejercicios/evaluacion":
+                extra = coleccion.Evaluacion.parsear(archivo)
+                if extra: datos.extend(extra)
 
             case "apertura/ajedrez":
                 datos.append(coleccion.Ajedrez.parsear(archivo))
@@ -40,6 +44,9 @@ def _registrar_markdown(tag: str, archivo: Archivo) -> List[Dato]:
         match tag.replace("referencia/", ""):
             case "libro":
                 extra = referencias.Libro.parsear(archivo)
+
+            case "paper":
+                extra = referencias.Paper.parsear(archivo)
 
             case "wikipedia":
                 extra = referencias.Wikipedia.parsear(archivo)

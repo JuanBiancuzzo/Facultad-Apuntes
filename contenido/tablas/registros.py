@@ -1,6 +1,3 @@
-from sqlite3 import Connection as Conn, Cursor
-from abc import ABC, abstractmethod
-from typing import Dict, Any
 from enum import StrEnum
 
 type Tablas = TablasFacultad | TablasReferencias | TablasColeccion | TablasExtra | TablasGenerales
@@ -31,12 +28,15 @@ class TablasReferencias(StrEnum):
 
     LIBRO = "ReferenciasLibro"
     CAPITULOS = "ReferenciasCapituloLibro"
+    PAPER = "ReferenciasPaper"
 
 class TablasColeccion(StrEnum):
     # Ejercicios
     EJERCICIOS = "Ejercicios"
     GUIAS = "Guias"
     GUIA_EJERCICIOS = "EjercicioPorGuia"
+    EVALUACION = "Evaluaciones"
+    EVALUACION_EJERCICIOS = "EjercicioPorEvaluacion"
 
     # Ajedrez
     AJEDREZ = "MovimientosAjedrez"
@@ -44,6 +44,9 @@ class TablasColeccion(StrEnum):
     # Biblioteca
     LIBRO = "Libros"
     CAPITULO = "CapitulosLibro"
+
+    # Papers
+    PAPER = "Papers"
 
     # Diccionario
     DICCIONARIO = "Diccionario"

@@ -9,67 +9,64 @@ from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
-from contenido.general.editorial import Editorial
 from contenido.general.autore import Autore
 
 from .autore_referencia import AutoreReferencia
-from .tablas import TablaLibro as Tabla
+from .tablas import TablaPaper as Tabla
+
 
 @dataclass
-class ReferenciaLibro:
+class ReferenciaPaper:
     titulo: str
-    subtitulo: str | None
     anio: int
-    edicion: str | None
-    volumen: int | None
     doi: str | None
-    clave_editorial: Clave
+    url: str | None
     clave_referencia: Clave
 
     @classmethod
     def parsear(cls, archivo: Archivo) -> List[Dato]:
         datos = []
 
-        editorial = Editorial(archivo.extra["editorial"])
-        datos.append(editorial)
-
-        try: 
-            volumen = int(archivo.extra["volumen"])
-        except:
-            volumen = None
-
         try:
-            libro = ReferenciaLibro(
-                archivo.extra["tituloObra"],
-                archivo.extra.get("subtituloObra", None),
+            paper = ReferenciaPaper(
+                archivo.extra["tituloInforme"],
                 int(archivo.extra["anio"]),
-                archivo.extra.get("edicion", None),
-                volumen,
-                archivo.extra.get("url", None),
-                editorial.obtener_clave(),
+                _string_vacio(archivo.extra.get("doi")),
+                _string_vacio(archivo.extra.get("url")),
                 Referencia._obtener_clave(archivo.extra["numReferencia"]),
             )
-            datos.append(libro)
+            datos.append(paper)
 
         except Exception as e:
-            loggear(LoggerNivel.FATAL, "No se pudo crear ref de libro")
+            loggear(LoggerNivel.FATAL, "No se pudo crear ref de paper")
             raise e
 
-        clave_libro = libro.obtener_clave()
-        for autore in archivo.extra["nombreAutores"]:
+        clave_paper = paper.obtener_clave()
+        autores = archivo.extra.get("autores", [])
+        if autores is None: autores = []
+        for autore in autores:
             autore = Autore(autore["nombre"], autore["apellido"])
             datos.append(autore)
 
-            autore_referencia = AutoreReferencia.libro(clave_libro, autore.obtener_clave())
+            autore_referencia = AutoreReferencia.paper_autore(clave_paper, autore.obtener_clave())
+            datos.append(autore_referencia)
+
+        editores = archivo.extra.get("editores", [])
+        if editores is None: editores = []
+        for autore in editores:
+            autore = Autore(autore["nombre"], autore["apellido"])
+            datos.append(autore)
+
+            autore_referencia = AutoreReferencia.paper_editore(clave_paper, autore.obtener_clave())
             datos.append(autore_referencia)
 
         return datos
 
     def dependo(self) -> List[Clave]: 
-        return [ self.clave_editorial, self.clave_referencia ] 
+        return [ self.clave_referencia ] 
 
     def obtener_clave(self) -> Clave: 
-        return ReferenciaLibro._obtener_clave(self.clave_referencia) 
+        return ReferenciaPaper._obtener_clave(self.clave_referencia) 
 
     @classmethod
     def _obtener_clave(cls, referencia: int | str | Clave) -> Clave: 
@@ -78,25 +75,29 @@ class ReferenciaLibro:
 
     def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo:
         try: 
-            id_libro = Tabla.insertar(
+            id_paper = Tabla.insertar(
                 cursor,
                 self.titulo,
-                self.subtitulo,
                 self.anio,
-                self.edicion,
-                self.volumen,
                 self.doi,
-                dependencias[self.clave_editorial],
+                self.url,
                 dependencias[self.clave_referencia],
             )
 
         except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al insertar ref libro, con clave de libro: {self.titulo}")
+            loggear(LoggerNivel.FATAL, f"Al insertar ref paper, con clave de libro: {self.titulo}")
             raise e 
 
-        if id_libro is None:
-            mensaje = f"El libro insertado no tiene id"
+        if id_paper is None:
+            mensaje = f"El paper insertado no tiene id"
             loggear(LoggerNivel.FATAL, mensaje)
             raise Exception(mensaje)
 
-        return Nodo(id_libro, self.obtener_clave())
+        return Nodo(id_paper, self.obtener_clave())
+
+def _string_vacio(texto: str | None) -> str | None:
+    if texto is None:
+        return None
+
+    texto = texto.strip()
+    return texto if texto != "" else None

@@ -14,6 +14,11 @@ class TipoAutoreReferencia(StrEnum):
     WEBSITE = "Web"
     LIBRO = "Libro"
     CAPITULO = "CapituloLibro"
+    PAPER_AUTORE = "PaperAutore"
+    PAPER_EDITORE = "PaperEditore"
+
+    def crear(self, clave_referencia: Clave, clave_autore: Clave) -> AutoreReferencia:
+        return AutoreReferencia(self, clave_referencia, clave_autore)
 
 @dataclass
 class AutoreReferencia(Dato):
@@ -23,16 +28,23 @@ class AutoreReferencia(Dato):
 
     @classmethod
     def website(cls, clave_website: Clave, clave_autore: Clave) -> AutoreReferencia:
-        return AutoreReferencia(TipoAutoreReferencia.WEBSITE, clave_website, clave_autore)
+        return TipoAutoreReferencia.WEBSITE.crear(clave_website, clave_autore)
 
     @classmethod
     def libro(cls, clave_libro: Clave, clave_autore: Clave) -> AutoreReferencia:
-        return AutoreReferencia(TipoAutoreReferencia.LIBRO, clave_libro, clave_autore)
+        return TipoAutoreReferencia.LIBRO.crear(clave_libro, clave_autore)
 
     @classmethod
     def capitulo(cls, clave_capitulo: Clave, clave_autore: Clave) -> AutoreReferencia:
-        return AutoreReferencia(TipoAutoreReferencia.CAPITULO, clave_capitulo, clave_autore)
+        return TipoAutoreReferencia.CAPITULO.crear(clave_capitulo, clave_autore)
 
+    @classmethod
+    def paper_autore(cls, clave_paper: Clave, clave_autore: Clave) -> AutoreReferencia:
+        return TipoAutoreReferencia.PAPER_AUTORE.crear(clave_paper, clave_autore)
+
+    @classmethod
+    def paper_editore(cls, clave_paper: Clave, clave_autore: Clave) -> AutoreReferencia:
+        return TipoAutoreReferencia.PAPER_EDITORE.crear(clave_paper, clave_autore)
 
     def dependo(self) -> List[Clave]: 
         return [ self.clave_referencia, self.clave_autore ]

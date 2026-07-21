@@ -19,6 +19,7 @@ class TipoNodo(IntEnum):
     # Coleccion
     EJERCICIO = auto()
     GUIA = auto()
+    EVALUACION = auto()
     AJEDREZ = auto()
     LIBRO = auto()
     CAPITULO = auto()

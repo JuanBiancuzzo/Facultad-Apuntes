@@ -1,6 +1,7 @@
 from sqlite3 import Connection as Conn, Cursor
-from contenido.tablas.registros import Tabla, TablasColeccion as Tablas, TablasGenerales, TablasReferencias
+from contenido.tablas import Tabla, timestamp, TablasColeccion as Tablas, TablasGenerales, TablasReferencias
 from typing import Dict, List, Any
+import datetime as dt
 
 class TablaAjedrez(Tabla):
     nombre = Tablas.AJEDREZ
@@ -82,6 +83,41 @@ class TablaEjerciciosGuia(Tabla):
             "id_ejercicio": id_ejercicio,
         })
 
+class TablaEvaluacion(Tabla):
+    nombre = Tablas.EVALUACION
+
+    def crear(self, conn: Conn) -> None:
+        conn.execute(f"""
+            CREATE TABLE IF NOT EXISTS {self.nombre} (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                fecha INTEGER NOT NULL
+            );
+        """)
+
+    @classmethod
+    def insertar(cls, cursor: Cursor, fecha: dt.date) -> int | None: 
+        return cls._insertar(cursor, {
+            "fecha": timestamp(fecha),
+        })
+
+class TablaEjerciciosEvaluacion(Tabla):
+    nombre = Tablas.EVALUACION_EJERCICIOS
+
+    def crear(self, conn: Conn) -> None:
+        conn.execute(f"""
+            CREATE TABLE IF NOT EXISTS {self.nombre} (
+                id_evaluacion INTEGER REFERENCES {Tablas.EVALUACION}(id),
+                id_ejercicio INTEGER REFERENCES {Tablas.EJERCICIOS}(id)
+            );
+        """)
+
+    @classmethod
+    def insertar(cls, cursor: Cursor, id_evaluacion: int, id_ejercicio: int) -> None: 
+        cls._insertar(cursor, {
+            "id_evaluacion": id_evaluacion,
+            "id_ejercicio": id_ejercicio,
+        })
+
 class TablaLibro(Tabla):
     nombre = Tablas.LIBRO
 
@@ -91,18 +127,20 @@ class TablaLibro(Tabla):
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 etapa TEXT NOT NULL,
                 
+                id_cover INTEGER REFERENCES {TablasGenerales.IMAGENES}(id),
                 id_resumen INTEGER REFERENCES {TablasGenerales.BLOQUE_TEXTO}(id),
                 id_libro_referencia INTEGER NOT NULL REFERENCES {TablasReferencias.LIBRO}(num_referencia)
             );
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, etapa: str, id_resumen: int | None, id_ref_libro) -> int | None: 
+    def insertar(cls, cursor: Cursor, etapa: str, id_resumen: int | None, id_cover: int | None, id_ref_libro) -> int | None: 
         valores: Dict[str, Any] = {
             "etapa": etapa,
             "id_libro_referencia": id_ref_libro,
         }
         if id_resumen: valores["id_resumen"] = id_resumen
+        if id_cover: valores["id_cover"] = id_cover
         return cls._insertar(cursor, valores)
 
 class TablaCapitulo(Tabla):

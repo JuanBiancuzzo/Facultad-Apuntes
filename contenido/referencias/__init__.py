@@ -5,4 +5,5 @@ from .website import ReferenciaWeb, ReferenciaWeb as Web
 from .diccionario import ReferenciaDiccionario, ReferenciaDiccionario as Diccionario
 from .libro import ReferenciaLibro, ReferenciaLibro as Libro
 from .capitulo import ReferenciaCapitulo, ReferenciaCapitulo as Capitulo
+from .paper import ReferenciaPaper, ReferenciaPaper as Paper
 from .autore_referencia import AutoreReferencia 

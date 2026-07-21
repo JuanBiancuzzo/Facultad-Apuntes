@@ -19,6 +19,7 @@ class TipoReferencia(Enum):
     LIBRO = "Libro"
     CAPITULO = "Capitulo"
     DICCIONARIO = "DiccionarioOnline"
+    PAPER = "Paper"
     # CURSO_ONLINE = "Curso"
     # CURSO_PRESENCIAL = "CursoPresencial"
     # TEMA_CURSO = "CursoTema"
@@ -80,8 +81,30 @@ class Referencia(Dato):
         return Referencia._obtener_clave(self.num_referencia)
 
     @classmethod
-    def _obtener_clave(cls, num_referencia) -> Clave:
-        return Clave.de_texto(TipoNodo.REFERENCIA, f"{num_referencia}><{num_referencia}")
+    def _obtener_clave(cls, referencia: int | str | Clave) -> Clave:
+        if type(referencia) is Clave:
+            if referencia.tipo == TipoNodo.REFERENCIA:
+                return referencia
+
+            mensaje = f"Se intento obtener la clave de una referencia pasando otra clave que no es referencia"
+            loggear(LoggerNivel.FATAL, mensaje)
+            raise Exception(mensaje)
+
+        if type(referencia) is str:
+            try:
+                referencia = int(referencia)
+
+            except:
+                mensaje = f"Se intento obtener la clave de una referencia pasando un string que no tiene el num_referencia"
+                loggear(LoggerNivel.FATAL, mensaje)
+                raise Exception(mensaje)
+
+        if type(referencia) is int:
+            return Clave.de_texto(TipoNodo.REFERENCIA, f"{referencia}><{referencia}")
+
+        mensaje = f"Se intento obtener la clave de una referencia otro tipo de dato que es {type(referencia)}"
+        loggear(LoggerNivel.FATAL, mensaje)
+        raise Exception(mensaje)
 
     def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo:
         try: 

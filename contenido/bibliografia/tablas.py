@@ -1,5 +1,5 @@
 from sqlite3 import Connection as Conn, Cursor
-from contenido.tablas.registros import Tabla, TablasExtra as Tablas, TablasReferencias
+from contenido.tablas import Tabla, TablasExtra as Tablas, TablasReferencias
 
 class TablaBibliografia(Tabla):
     nombre = Tablas.BIBLIOGRAFIA
