@@ -6,7 +6,7 @@ from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
-from contenido.general import tablas as ts
+from .tablas import TablaEditorial as Tabla
 
 @dataclass
 class Editorial(Dato):
@@ -24,7 +24,7 @@ class Editorial(Dato):
 
     def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo | None:
         try: 
-            id_editorial = ts.TablaEditorial.insertar(cursor, self.nombre)
+            id_editorial = Tabla.insertar(cursor, self.nombre)
 
         except Exception as e:
             loggear(LoggerNivel.FATAL, f"Al insertar editorial de nombre: {self.nombre}")

@@ -1,11 +1,11 @@
 from typing import List
 
 from dependencias import Dato
-from archivos import Archivo
+from archivos import Archivo, Extension
 
-from contenido import referencias, facultad, coleccion
+from contenido import referencias, general, facultad, coleccion
 
-def _registrar_nodo(tag: str, archivo: Archivo) -> List[Dato]:
+def _registrar_markdown(tag: str, archivo: Archivo) -> List[Dato]:
     datos = []
     tag = tag.lower()
 
@@ -75,7 +75,14 @@ def _registrar_nodo(tag: str, archivo: Archivo) -> List[Dato]:
 
 def registrar(archivo: Archivo) -> List[Dato]:
     datos = []
-    for tag in archivo.extra.get("tags", []):
-        datos.extend(_registrar_nodo(tag, archivo))
+    extension = archivo.metadata.extension
+
+    if extension == Extension.MARKDOWN:
+        for tag in archivo.extra.get("tags", []):
+            datos.extend(_registrar_markdown(tag, archivo))
+
+    elif general.TipoImagen.es_imagen(extension):
+        datos.extend(general.Imagen.parsear(archivo))
+
     return datos
 

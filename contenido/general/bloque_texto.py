@@ -7,7 +7,7 @@ from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
-from contenido.general import tablas as ts
+from .tablas import TablaBloqueTexto as Tabla
 
 @dataclass
 class BloqueTexto(Dato):
@@ -25,7 +25,7 @@ class BloqueTexto(Dato):
 
     def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo | None:
         try: 
-            id_texto = ts.TablaBloqueTexto.insertar(cursor, self.texto.bjson())
+            id_texto = Tabla.insertar(cursor, self.texto.bjson())
 
         except Exception as e:
             loggear(LoggerNivel.FATAL, f"Al insertar bloque de texto {self.texto.texto[:20]}")

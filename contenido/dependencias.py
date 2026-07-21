@@ -8,6 +8,7 @@ class TipoNodo(IntEnum):
     BLOQUE_TEXTO = auto()
     EDITORIAL = auto()
     BIBLIOGRAFIA = auto()
+    IMAGEN = auto()
 
     # Facultad
     CARRERA = auto()

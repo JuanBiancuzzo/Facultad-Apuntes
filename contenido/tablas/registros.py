@@ -52,21 +52,8 @@ class TablasGenerales(StrEnum):
     AUTORES = "Autores"
     BLOQUE_TEXTO = "BloqueDeTexto"
     EDITORIAL = "Editoriales"
+    IMAGENES = "Imagenes"
 
 class TablasExtra(StrEnum):
     BIBLIOGRAFIA = "Bibliografia"
 
-class Tabla(ABC):
-    nombre: Tablas
-
-    @abstractmethod
-    def crear(self, conn: Conn) -> None: 
-        """ Crear tablas """
-
-    @classmethod
-    def _insertar(cls, cursor: Cursor, valores: Dict[str, Any]) -> int | None:
-        cursor.execute(f"""
-            INSERT INTO {cls.nombre} ({", ".join(valores.keys())})
-            VALUES ({", ".join("?" for _ in valores)})
-        """, tuple(valores.values()))
-        return cursor.lastrowid

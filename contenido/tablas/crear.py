@@ -7,13 +7,14 @@ from contenido.facultad import tablas as facultad
 from contenido.referencias import tablas as referencias
 from contenido.bibliografia import tablas as bibliografia
 
-from .registros import Tabla
+from .tabla import Tabla
 
 def crear_tablas(conn: Conn):
     orden: List[List[Tabla]] = [
         [ 
             general.TablaAutore(),
             general.TablaEditorial(),
+            general.TablaImagen(),
             general.TablaBloqueTexto(),
 
             coleccion.TablaAjedrez(),

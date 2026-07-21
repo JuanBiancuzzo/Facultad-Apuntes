@@ -1,5 +1,5 @@
 from sqlite3 import Connection as Conn, Cursor
-from contenido.tablas.registros import Tabla, TablasGenerales as Tablas
+from contenido.tablas import Tabla, TablasGenerales as Tablas
 
 class TablaAutore(Tabla):
     nombre = Tablas.AUTORES
@@ -54,3 +54,21 @@ class TablaEditorial(Tabla):
             "nombre": nombre,
         }) 
 
+class TablaImagen(Tabla):
+    nombre = Tablas.IMAGENES
+
+    def crear(self, conn: Conn) -> None: 
+        conn.execute(f"""
+            CREATE TABLE IF NOT EXISTS {self.nombre} (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                tipo TEXT NOT NULL,
+                imagen BLOB NOT NULL
+            );
+        """)
+
+    @classmethod
+    def insertar(cls, cursor: Cursor, tipo: str, imagen: bytes) -> int | None: 
+        return cls._insertar(cursor, {
+            "tipo": tipo,
+            "imagen": imagen,
+        })
