@@ -1,4 +1,5 @@
 import sqlite3 as sql
+import os
 
 from typing import Dict, List
 from dataclasses import dataclass
@@ -9,13 +10,18 @@ from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
 from contenido.general.etapa import Etapa
+from contenido.general.imagen import Imagen
 from contenido.referencias.libro import ReferenciaLibro
 from .tablas import TablaLibro as Tabla
+
+CARPETA_COVER = "covers"
 
 @dataclass
 class Libro(Dato):
     etapa: Etapa
+
     clave_resumen: Clave | None
+    clave_cover: Clave | None
     clave_ref_libro: Clave
 
     @classmethod
@@ -26,12 +32,21 @@ class Libro(Dato):
             loggear(LoggerNivel.FATAL, mensaje)
             raise Exception(mensaje)
 
-        clave_ref_libro = ReferenciaLibro._obtener_clave(int(archivo.extra["numReferencia"]))
-        return [Libro(etapa, None, clave_ref_libro)]
+        clave_cover = None
+        if "cover" in archivo.extra:
+            clave_cover = Imagen._obtener_clave(os.path.join(
+                archivo.metadata.directorio, 
+                CARPETA_COVER, 
+                archivo.extra["cover"],
+            ))
+
+        clave_ref_libro = ReferenciaLibro._obtener_clave(archivo.extra["numReferencia"])
+        return [Libro(etapa, None, clave_cover, clave_ref_libro)]
 
     def dependo(self) -> List[Clave]: 
         dependencias = [ self.clave_ref_libro ]
         if self.clave_resumen: dependencias.append(self.clave_resumen)
+        if self.clave_cover: dependencias.append(self.clave_cover)
         return dependencias
 
     def obtener_clave(self) -> Clave: 
@@ -43,14 +58,15 @@ class Libro(Dato):
 
     def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo | None:
         try: 
-            id_ref_libro = dependencias[self.clave_ref_libro]
             id_resumen = dependencias[self.clave_resumen] if self.clave_resumen else None
+            id_cover = dependencias[self.clave_cover] if self.clave_cover else None
 
             id_libro = Tabla.insertar(
                 cursor, 
                 self.etapa.value, 
                 id_resumen, 
-                id_ref_libro,
+                id_cover,
+                dependencias[self.clave_ref_libro],
             )
 
         except Exception as e:
