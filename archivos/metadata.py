@@ -3,9 +3,9 @@ import os
 
 from typing import Self
 from dataclasses import dataclass
-from enum import Enum
+from enum import StrEnum
 
-class Extension(Enum):
+class Extension(StrEnum):
     MARKDOWN = "md"
     PNG = "png"
     WEBP = "webp"
@@ -19,7 +19,7 @@ class Extension(Enum):
     @classmethod
     def de_texto(cls, texto: str) -> Self | None:
         for extension in cls:
-            if extension.value == texto:
+            if extension == texto:
                 return extension
         return None
 
@@ -31,8 +31,8 @@ class Metadata:
     dia_creacion: dt.datetime
 
     def nombre_base(self) -> str: 
-        return f"{self.nombre}.{self.extension.value}"
+        return f"{self.nombre}.{self.extension}"
 
     def path(self) -> str:
-        nombre_base = f"{self.nombre}.{self.extension.value}"
+        nombre_base = f"{self.nombre}.{self.extension}"
         return os.path.join(self.directorio, nombre_base)

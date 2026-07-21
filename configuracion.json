@@ -1,5 +1,5 @@
 {
-    "logs": "logs/log.json",
+    "logs": "_resultado/log.json",
     "excluir": [
         ".git",
         ".obsidian",

@@ -20,15 +20,16 @@ class Archivo:
     metadata: Metadata
     extra: Dict[str, Any]
     contenido: Texto
+    blob: bytes
 
-    def __init__(self, metadata: Metadata, extra: Dict[str, Any] = {}, contenido: str | Texto = ""):
-        self.metadata = metadata
-        self.extra = extra
+    @classmethod 
+    def crear_blob(cls, metadata: Metadata, blob: bytes) -> Archivo:
+        return Archivo(metadata, {}, Texto(""), blob)
 
-        if type(contenido) is str:
-            self.contenido = Texto(contenido)
-        elif type(contenido) is Texto:
-            self.contenido = contenido
+
+    @classmethod 
+    def crear_md(cls, metadata: Metadata, extra: Dict[str, Any], contenido: Texto):
+        return Archivo(metadata, extra, contenido, b'') 
 
     @classmethod
     def parsear(cls, nombre_archivo: str, root_path: str) -> Tuple[Archivo | None, ErrorArchvio | None]:
@@ -51,9 +52,15 @@ class Archivo:
             dt.datetime.fromtimestamp(stadisticas.st_ctime, tz = dt.timezone.utc),
         )
 
-        if extension != Extension.MARKDOWN:
-            return Archivo(metadata), None
+        match extension:
+            case Extension.MARKDOWN:
+                return cls._parsear_md(metadata, nombre_archivo), None
 
+            case _:
+                return cls._parsear_blob(metadata, nombre_archivo)
+
+    @classmethod
+    def _parsear_md(cls, metadata: Metadata, nombre_archivo: str) -> Archivo:
         # Leer archivo
         texto = ""
         extra = {}
@@ -75,5 +82,10 @@ class Archivo:
         if contenido is None:
             contenido = Texto()
 
-        return Archivo(metadata, extra, contenido), None
+        return Archivo.crear_md(metadata, extra, contenido)
 
+    @classmethod
+    def _parsear_blob(cls, metadata: Metadata, nombre_archivo: str) -> Tuple[Archivo | None, ErrorArchvio | None]:
+        with open(nombre_archivo, 'rb') as fd_archivo:
+            blob = fd_archivo.read()
+        return Archivo.crear_blob(metadata, blob), None
