@@ -91,7 +91,7 @@ class ReferenciaLibro:
             )
 
         except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al insertar ref libro, con clave de libro: {self.titulo}")
+            loggear(LoggerNivel.FATAL, f"Al insertar ref libro: {self.titulo}")
             raise e 
 
         if id_libro is None:

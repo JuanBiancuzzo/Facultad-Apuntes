@@ -16,6 +16,8 @@ class TipoAutoreReferencia(StrEnum):
     CAPITULO = "CapituloLibro"
     PAPER_AUTORE = "PaperAutore"
     PAPER_EDITORE = "PaperEditore"
+    CURSO_ONLINE = "CursoOnline"
+    TEMA = "Tema"
 
     def crear(self, clave_referencia: Clave, clave_autore: Clave) -> AutoreReferencia:
         return AutoreReferencia(self, clave_referencia, clave_autore)
@@ -45,6 +47,15 @@ class AutoreReferencia(Dato):
     @classmethod
     def paper_editore(cls, clave_paper: Clave, clave_autore: Clave) -> AutoreReferencia:
         return TipoAutoreReferencia.PAPER_EDITORE.crear(clave_paper, clave_autore)
+
+    @classmethod
+    def curso_online(cls, clave_curso: Clave, clave_autore: Clave) -> AutoreReferencia:
+        return TipoAutoreReferencia.CURSO_ONLINE.crear(clave_curso, clave_autore)
+
+    @classmethod
+    def tema(cls, clave_tema: Clave, clave_autore: Clave) -> AutoreReferencia:
+        return TipoAutoreReferencia.TEMA.crear(clave_tema, clave_autore)
+
 
     def dependo(self) -> List[Clave]: 
         return [ self.clave_referencia, self.clave_autore ]

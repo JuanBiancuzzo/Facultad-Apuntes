@@ -26,6 +26,7 @@ class TipoNodo(IntEnum):
     PAPER = auto()
     DICCIONARIO = auto()
 
+    # Referencias
     REFERENCIA = auto()
     AUTORES_REFERENCIA = auto()
     REFERENCIA_WEBSITE = auto()
@@ -34,3 +35,5 @@ class TipoNodo(IntEnum):
     REFERENCIA_LIBRO = auto()
     REFERENCIA_CAPITULO_LIBRO = auto()
     REFERENCIA_DICCIONARIO_ONLINE = auto()
+    REFERENCIA_CURSO_ONLINE = auto()
+    REFERENCIA_TEMA = auto()

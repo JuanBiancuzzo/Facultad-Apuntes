@@ -234,6 +234,65 @@ class TablaDiccionario(Tabla):
             "num_referencia": num_referencia,
         })
 
+class TablaCursoOnline(Tabla):
+    nombre = Tablas.CURSO_ONLINE
+
+    def crear(self, conn: Conn):
+        conn.execute(f"""
+            CREATE TABLE IF NOT EXISTS {self.nombre} (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                nombre_curso TEXT NOT NULL,
+                nombre_pagina TEXT NOT NULL,
+                anio INTEGER NOT NULL,
+                url TEXT NOT NULL,
+
+                num_referencia INTEGER NOT NULL REFERENCES {Tablas.REFERENCIAS}(num_referencia)
+            );
+        """)
+
+    @classmethod
+    def insertar(
+        cls, cursor: Cursor, nombre_curso: str, nombre_pagina: str, anio: int, url: str, num_referencia: int,
+    ) -> int | None:
+        return cls._insertar(cursor, {
+            "nombre_curso": nombre_curso,
+            "nombre_pagina": nombre_pagina,
+            "anio": anio,
+            "url": url,
+            "num_referencia": num_referencia,
+        })
+
+class TablaTema(Tabla):
+    nombre = Tablas.TEMA
+
+    def crear(self, conn: Conn):
+        conn.execute(f"""
+            CREATE TABLE IF NOT EXISTS {self.nombre} (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                nombre TEXT NOT NULL,
+                capitulo INTEGER NOT NULL,
+                parte INTEGER,
+                
+                id_curso INTEGER NOT NULL REFERENCES {Tablas.CURSO_ONLINE}(id),
+                num_referencia INTEGER NOT NULL REFERENCES {Tablas.REFERENCIAS}(num_referencia)
+            );
+        """)
+
+    @classmethod
+    def insertar(
+        cls, cursor: Cursor, nombre: str, capitulo: int, parte: int | None,
+        id_curso: int, num_referencia: int
+    ) -> int | None:
+        valores: Dict[str, Any] = {
+            "nombre": nombre, 
+            "capitulo": capitulo,
+            "id_curso": id_curso,
+            "num_referencia": num_referencia,
+        }
+        if parte: valores["parte"] = parte
+        return cls._insertar(cursor, valores)
+
+
 class TablaReferenciaAutore(Tabla):
     nombre = Tablas.AUTORES_REFERENCIAS
 

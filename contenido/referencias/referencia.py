@@ -20,9 +20,9 @@ class TipoReferencia(Enum):
     CAPITULO = "Capitulo"
     DICCIONARIO = "DiccionarioOnline"
     PAPER = "Paper"
-    # CURSO_ONLINE = "Curso"
+    CURSO_ONLINE = "Curso"
     # CURSO_PRESENCIAL = "CursoPresencial"
-    # TEMA_CURSO = "CursoTema"
+    TEMA_CURSO = "CursoTema"
 
     @classmethod
     def de_texto(cls, texto: str) -> TipoReferencia | None:

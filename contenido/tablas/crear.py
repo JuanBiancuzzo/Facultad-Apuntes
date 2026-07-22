@@ -36,6 +36,7 @@ def crear_tablas(conn: Conn):
             referencias.TablaYoutube(),
             referencias.TablaLibro(),
             referencias.TablaPaper(),
+            referencias.TablaCursoOnline(),
             referencias.TablaDiccionario(),
         ],
         [
@@ -48,6 +49,7 @@ def crear_tablas(conn: Conn):
             facultad.TablaMateria(),
             
             referencias.TablaCapitulo(),
+            referencias.TablaTema(),
         ],
         [
             coleccion.TablaCapitulo(),

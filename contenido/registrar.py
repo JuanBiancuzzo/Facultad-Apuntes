@@ -64,6 +64,9 @@ def _registrar_markdown(tag: str, archivo: Archivo) -> List[Dato]:
             case "diccionarioonline":
                 extra = referencias.Diccionario.parsear(archivo)
 
+            case "curso":
+                extra = referencias.CursoOnline.parsear(archivo)
+
             case _: extra = []
 
         if extra: datos.extend(extra)
