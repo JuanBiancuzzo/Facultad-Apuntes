@@ -9,7 +9,7 @@ const MOVER_ABAJO_EJERCICIO = "abajo ejercicio";
 class Evaluacion {
     constructor(tp, dv, representacionPrevia = {}) {
         const {
-            SIMBOLOS,
+            SIMBOLOS, ETAPAS,
             TAGS: { coleccion: { ejercicios: TAGS_EJERCICIOS, ...TAGS_COLECCION } },
             DATOS: { EJERCICIOS: { evaluacion: DATOS_EVALUACION, ejercicio: DATOS_EJERCICIOS } },
         } = tp.user.constantes();
@@ -60,6 +60,7 @@ class Evaluacion {
         let generarNuevoEjercicio = () => {
             let numero = this.seguidorEjercicios.conseguirNumero();
             let ejercicio = new Ejercicio(tp, dv, {
+                [DATOS_EJERCICIOS.etapa]: ETAPAS.sinEmpezar,
                 [DATOS_EJERCICIOS.numero]: numero,
             });
             this.ejerciciosAgregados[numero] = ejercicio;
@@ -230,7 +231,7 @@ class Evaluacion {
 class Guia {
     constructor(tp, dv, representacionPrevia = {}) {
         const {
-            SIMBOLOS,
+            SIMBOLOS, ETAPAS,
             TAGS: { coleccion: { ejercicios: TAGS_EJERCICIOS, ...TAGS_COLECCION } },
             DATOS: { EJERCICIOS: { guia: DATOS_GUIA, ejercicio: DATOS_EJERCICIOS } },
         } = tp.user.constantes();
@@ -280,6 +281,7 @@ class Guia {
         let generarNuevoEjercicio = () => {
             let numero = this.seguidorEjercicios.conseguirNumero();
             let ejercicio = new Ejercicio(tp, dv, {
+                [DATOS_EJERCICIOS.etapa]: ETAPAS.sinEmpezar,
                 [DATOS_EJERCICIOS.numero]: numero,
             });
             this.ejerciciosAgregados[numero] = ejercicio;
@@ -447,16 +449,20 @@ class Guia {
 class Ejercicio {
     constructor(tp, dv, representacionPrevia = {}) {
         const {
-            SIMBOLOS, SECCIONES,
+            SIMBOLOS, SECCIONES, ETAPAS,
             TAGS: { coleccion: { ejercicios: TAGS_EJERCICIOS, ...TAGS_COLECCION } },
             DATOS: { EJERCICIOS: DATOS_EJERCICIOS },
         } = tp.user.constantes();
 
         this.simbolos = SIMBOLOS;
         this.secciones = SECCIONES;
+        this.etapas = ETAPAS;
         this.config = DATOS_EJERCICIOS;
 
         this.nombre = representacionPrevia[this.config.ejercicio.nombre];
+        this.etapa = representacionPrevia[this.config.etapa]
+            ? representacionPrevia[this.config.etapa]
+            : this.etapas.sinEmpezar;
 
         if (this.config.ejercicio.numero in representacionPrevia) {
             this.numero = representacionPrevia[this.config.ejercicio.numero];
@@ -487,6 +493,15 @@ class Ejercicio {
                     generarError.Quit("No se ingresó nombre del ejercicio")
                 );
                 break;
+
+            case this.config.etapa:
+                this.etapa = await generarPreguntas.suggester(
+                    ["Sin empezar", "Empezado", "Ampliar", "Terminado"],
+                    [this.etapas.sinEmpezar, this.etapas.empezado, this.etapas.ampliar, this.etapas.terminado],
+                    "Ingresar la etapa que se quiere elegir",
+                    generarError.Quit("No se ingresó la etapa de la nota"),
+                );
+                break;
         }
     }
 
@@ -500,6 +515,16 @@ class Ejercicio {
             : ` ${this.simbolos.agregar} Nombre del ejercicio`
         );
 
+        let mapeoEtapaTexto = {
+            [this.etapas.sinEmpezar]: "Sin empezar",
+            [this.etapas.empezado]: "Empezado",
+            [this.etapas.ampliar]: "Ampliar",
+            [this.etapas.terminado]: "Terminado",
+        };
+
+        opciones.push(this.config.etapa);
+        valores.push(` ${this.simbolos.modificar} Modificar la etapa, donde era ${mapeoEtapaTexto[this.etapa]}`);
+
         return { opciones: opciones, valores: valores };
     }
 
@@ -512,10 +537,12 @@ class Ejercicio {
             return {
                 [this.config.ejercicio.numero]: this.numero,
                 [this.config.ejercicio.nombre]: this.nombre,
+                [this.config.ejercicio.etapa]: this.etapa,
             }
         } else {
             return {
                 [this.config.ejercicio.numero]: this.numero,
+                [this.config.ejercicio.etapa]: this.etapa,
             }
         }
     }
@@ -653,12 +680,11 @@ async function crearEjercicio(tp, dv, infoPrevia = {}) {
     texto += "\n" + SECCIONES.seccion(SECCIONES.resolucion);
     texto += "\n---\n\n"
 
-    texto += "\n" + SECCIONES.seccion(SECCIONES.resultado);
-    texto += "\n---\n\n"
+    // texto += "\n" + SECCIONES.seccion(SECCIONES.resultado);
+    // texto += "\n---\n\n"
 
     return {
         metadata: {
-            [DATOS_ARCHIVO.etapa]: ETAPAS.sinEmpezar,
             [DATOS_ARCHIVO.dia]: tp.file.creation_date(FORMATO_DIA),
             [DATOS_ARCHIVO.tags]: [
                 `${TAGS_COLECCION.self}/${TAGS_EJERCICIOS.self}/${TAGS_EJERCICIOS.ejercicio}`,

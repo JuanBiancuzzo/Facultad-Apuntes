@@ -74,7 +74,7 @@ module.exports = () => ({
             },
             ejercicios: {
                 guia: "coleccion/ejercicios/guia",
-                guia: "coleccion/ejercicios/evaluacion"
+                evaluacion: "coleccion/ejercicios/evaluacion"
             }
         },
         referencia: {
@@ -683,6 +683,7 @@ module.exports = () => ({
             },
             ejercicio: {
                 nombre: "nombre",
+                etapa: "etapa",
                 numero: "numero",
             }
         },
