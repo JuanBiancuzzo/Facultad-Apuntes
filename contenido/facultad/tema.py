@@ -50,7 +50,10 @@ class Tema(Dato):
             Seccion(1, nombre) 
             for nombre in ["Índice", "Resumen", "Bibliografía"]
         ])
-        resumen = BloqueTexto(Texto(resultado["Resumen"])) if resultado["Resumen"] is not None else None
+        resumen = None
+        if resultado["Resumen"]:
+            texto = Texto(resultado["Resumen"])
+            resumen = None if texto.vacio() else BloqueTexto(texto)
 
         datos: List[Dato] = []
 
