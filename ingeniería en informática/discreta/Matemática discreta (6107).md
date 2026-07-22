@@ -3,6 +3,10 @@ cuatri: 22C1
 codigo: 6107
 plan: 1986
 estado: Terminado
+guias:
+  - 37
+  - 38
+  - 39
 tags:
   - carrera/ingeniería-en-informática/discreta
   - facultad/materia
@@ -16,6 +20,12 @@ nombreCarrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
+```
+
+# Guías
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/contenido/guiasAcumuladas", { archivo: dv.current() });
 ```
 
 # Bibliografía
