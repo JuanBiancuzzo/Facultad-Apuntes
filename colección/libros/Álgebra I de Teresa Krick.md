@@ -21,6 +21,8 @@ capitulos:
     paginas:
       inicio: "9"
       final: "46"
+    guias: 
+      - 33
   - numReferencia: 412
     numeroCapitulo: "2"
     nombreCapitulo: Números Naturales e Inducción
@@ -28,6 +30,8 @@ capitulos:
     paginas:
       inicio: "47"
       final: "86"
+    guias: 
+      - 34
   - numReferencia: 413
     numeroCapitulo: "3"
     nombreCapitulo: Combinatoria
@@ -35,6 +39,8 @@ capitulos:
     paginas:
       inicio: "87"
       final: "106"
+    guias: 
+      - 35
   - numReferencia: 414
     numeroCapitulo: "4"
     nombreCapitulo: Enteros - Primera parte
@@ -42,6 +48,8 @@ capitulos:
     paginas:
       inicio: "107"
       final: "168"
+    guias: 
+      - 36
   - numReferencia: 415
     numeroCapitulo: "5"
     nombreCapitulo: Enteros - Segunda Parte
@@ -49,6 +57,7 @@ capitulos:
     paginas:
       inicio: "169"
       final: "214"
+    guias: []
   - numReferencia: 416
     numeroCapitulo: "6"
     nombreCapitulo: Números Complejos
@@ -56,6 +65,7 @@ capitulos:
     paginas:
       inicio: "215"
       final: "238"
+    guias: []
   - numReferencia: 417
     numeroCapitulo: "7"
     nombreCapitulo: Polinomios
@@ -63,6 +73,7 @@ capitulos:
     paginas:
       inicio: "239"
       final: "279"
+    guias: []
 cover: Álgebra I de Teresa Krick.png
 aliases:
   - "Álgebra I de Teresa Krick, Capítulo 1: Conjuntos, Relaciones y Funciones#Capítulo 1: Conjuntos, Relaciones y Funciones"

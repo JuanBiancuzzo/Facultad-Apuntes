@@ -9,6 +9,11 @@ tags:
 correlativas: 
 referencias:
   - "410"
+guias:
+  - 33
+  - 34
+  - 35
+  - 36
 nombreMateria: Álgebra 1
 nombreReducido: algebra 1
 pathCarrera: "[[licenciatura en ciencias matemáticas/Licenciatura en Ciencias Matemáticas.md]]"
@@ -19,6 +24,12 @@ codigo: 1003
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
+```
+
+# Guías
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/contenido/guiasAcumuladas", { archivo: dv.current() });
 ```
 
 # Bibliografía
