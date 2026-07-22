@@ -1,5 +1,5 @@
 from sqlite3 import Connection as Conn, Cursor
-from contenido.tablas import Tabla, timestamp, TablasColeccion as Tablas, TablasGenerales, TablasReferencias
+from contenido.tablas import Tabla, timestamp, TablasColeccion as Tablas, TablasGenerales, TablasReferencias, TablasColeccion
 from typing import Dict, List, Any
 import datetime as dt
 
@@ -170,6 +170,24 @@ class TablaCapitulo(Tabla):
         }
         if id_resumen: valores["id_resumen"] = id_resumen
         return cls._insertar(cursor, valores)
+
+class TablaGuiasDeCapitulo(Tabla):
+    nombre = Tablas.GUIAS_CAPITULO
+
+    def crear(self, conn: Conn) -> None:
+        conn.execute(f"""
+            CREATE TABLE IF NOT EXISTS {self.nombre} (
+                id_capitulo INTEGER NOT NULL REFERENCES {Tablas.CAPITULO}(id),
+                id_guia INTEGER NOT NULL REFERENCES {TablasColeccion.GUIAS}(id)
+            );
+        """)
+    
+    @classmethod
+    def insertar(cls, cursor: Cursor, id_capitulo: int, id_guia: int) -> None:
+        cls._insertar(cursor, {
+            "id_capitulo": id_capitulo,
+            "id_guia": id_guia,
+        })
 
 class TablaPaper(Tabla):
     nombre = Tablas.PAPER

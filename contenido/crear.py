@@ -7,7 +7,7 @@ from contenido.facultad import tablas as facultad
 from contenido.referencias import tablas as referencias
 from contenido.bibliografia import tablas as bibliografia
 
-from .tabla import Tabla
+from contenido.tablas import Tabla
 
 def crear_tablas(conn: Conn):
     orden: List[List[Tabla]] = [
@@ -59,6 +59,8 @@ def crear_tablas(conn: Conn):
             facultad.TablaTema(),
         ],
         [
+            coleccion.TablaGuiasDeCapitulo(),
+
             referencias.TablaReferenciaAutore(),
 
             bibliografia.TablaBibliografia(),

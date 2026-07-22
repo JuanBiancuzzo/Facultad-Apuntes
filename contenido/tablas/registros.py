@@ -48,6 +48,7 @@ class TablasColeccion(StrEnum):
     # Biblioteca
     LIBRO = "Libros"
     CAPITULO = "CapitulosLibro"
+    GUIAS_CAPITULO = "GuiasPorCapitulo"
 
     # Papers
     PAPER = "Papers"

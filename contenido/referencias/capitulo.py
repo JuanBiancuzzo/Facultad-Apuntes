@@ -31,14 +31,16 @@ class ReferenciaCapitulo(Dato):
 
         capitulos = archivo.extra.get("capitulos", []) 
         if capitulos is None: capitulos = []
+
         for extra_capitulo in capitulos:
             try:
-                paginas = extra_capitulo.get("paginas", None) 
-                if paginas is not None:
-                    inicio = paginas.get("inicio", None)
-                    final = paginas.get("final", None)
+                paginas = None
+                paginas_info = extra_capitulo.get("paginas", None) 
+                if paginas_info is not None:
+                    inicio = paginas_info.get("inicio", None)
+                    final = paginas_info.get("final", None)
                     if inicio is not None and final is not None:
-                        paginas = (int(inicio), int(final))
+                        paginas = ( int(inicio), int(final) )
 
                 capitulo = ReferenciaCapitulo(
                     int(extra_capitulo["numeroCapitulo"]),

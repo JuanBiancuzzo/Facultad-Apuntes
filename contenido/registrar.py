@@ -48,6 +48,9 @@ def _registrar_markdown(tag: str, archivo: Archivo) -> List[Dato]:
         match tag.replace("referencia/", ""):
             case "libro":
                 extra = referencias.Libro.parsear(archivo)
+                extra_capitulo = referencias.Capitulo.parsear(archivo)
+                if extra and extra_capitulo: 
+                    extra.extend(extra_capitulo)
 
             case "paper":
                 extra = referencias.Paper.parsear(archivo)
@@ -99,4 +102,3 @@ def registrar(archivo: Archivo) -> List[Dato]:
         datos.extend(general.Imagen.parsear(archivo))
 
     return datos
-
