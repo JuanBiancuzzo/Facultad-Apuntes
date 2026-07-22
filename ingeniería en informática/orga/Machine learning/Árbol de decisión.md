@@ -1,7 +1,7 @@
 ---
 dia: 2023-08-11
 tags:
-  - "#investigación/matemática/Estadística/Machine-learning"
+  - investigación/matemática/Estadística/Machine-learning
   - carrera/ingeniería-en-informática/orga/Machine-learning
   - curso/introduction-to-algorithms/Sorting-and-Trees
   - investigación/ciencias-de-la-computación/Machine-learning
@@ -20,7 +20,14 @@ vinculoCurso:
     tipo: Online
     curso: Introduction to Algorithms
     anio: "2011"
+etapa: empezado
+referencias: []
+aliases:
+  - Feature importance#Feature importance
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 Se define un árbol de decisión como un [[Árbol binario|árbol binario]] en el cual cada nodo intermedio en este árbol es una decisión binaria, y cada hoja es el resultado final de las decisiones
@@ -62,6 +69,10 @@ Podemos analizar un [[Algoritmo|algoritmo]] (usando el [[Modelo comparativo de c
 > > 
 > > Llegando a lo que buscábamos probar
 ^teo-3-1-2
+
+## Feature importance
+---
+
 
 ## En machine learning
 ---

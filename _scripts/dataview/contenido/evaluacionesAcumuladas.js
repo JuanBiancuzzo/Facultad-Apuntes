@@ -7,7 +7,7 @@ if (numeroEvaluaciones !== undefined) {
     const evaluaciones = dv.pages("#colección/ejercicios/evaluacion")
         .filter(evaluacion => numeroEvaluaciones.contains(evaluacion.numero))
         .sort(evaluacion => evaluacion.fecha)
-        .map((evaluacion, index) => crearReferencia(evaluacion.file.path, `Evaluacion ${index + 1} del ${describirFecha(evaluacion.fecha)}`));
+        .map(evaluacion => crearReferencia(evaluacion.file.path, `Evaluacion del ${describirFecha(evaluacion.fecha)}`));
     dv.list(evaluaciones);
 
 } else {
