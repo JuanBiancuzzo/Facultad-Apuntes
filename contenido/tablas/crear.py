@@ -42,6 +42,7 @@ def crear_tablas(conn: Conn):
             coleccion.TablaEjerciciosGuia(),
             coleccion.TablaEjerciciosEvaluacion(),
             coleccion.TablaLibro(),
+            coleccion.TablaPaper(),
             coleccion.TablaDiccionario(),
 
             facultad.TablaMateria(),

@@ -23,6 +23,7 @@ class TipoNodo(IntEnum):
     AJEDREZ = auto()
     LIBRO = auto()
     CAPITULO = auto()
+    PAPER = auto()
     DICCIONARIO = auto()
 
     REFERENCIA = auto()

@@ -134,7 +134,7 @@ class TablaLibro(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, etapa: str, id_resumen: int | None, id_cover: int | None, id_ref_libro) -> int | None: 
+    def insertar(cls, cursor: Cursor, etapa: str, id_resumen: int | None, id_cover: int | None, id_ref_libro: int) -> int | None: 
         valores: Dict[str, Any] = {
             "etapa": etapa,
             "id_libro_referencia": id_ref_libro,
@@ -164,6 +164,29 @@ class TablaCapitulo(Tabla):
             "etapa": etapa,
             "id_libro": id_libro,
             "id_capitulo_referencia": id_ref_capitulo,
+        }
+        if id_resumen: valores["id_resumen"] = id_resumen
+        return cls._insertar(cursor, valores)
+
+class TablaPaper(Tabla):
+    nombre = Tablas.PAPER
+
+    def crear(self, conn: Conn) -> None:
+        conn.execute(f"""
+            CREATE TABLE IF NOT EXISTS {self.nombre} (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                etapa TEXT NOT NULL,
+                
+                id_resumen INTEGER REFERENCES {TablasGenerales.BLOQUE_TEXTO}(id),
+                id_paper_referencia INTEGER NOT NULL REFERENCES {TablasReferencias.PAPER}(num_referencia)
+            );
+        """)
+
+    @classmethod
+    def insertar(cls, cursor: Cursor, etapa: str, id_resumen: int | None, id_ref_paper: int) -> int | None: 
+        valores: Dict[str, Any] = {
+            "etapa": etapa,
+            "id_paper_referencia": id_ref_paper,
         }
         if id_resumen: valores["id_resumen"] = id_resumen
         return cls._insertar(cursor, valores)

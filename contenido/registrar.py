@@ -33,6 +33,10 @@ def _registrar_markdown(tag: str, archivo: Archivo) -> List[Dato]:
                 extra = coleccion.Capitulo.parsear(archivo)
                 if extra: datos.extend(extra)
 
+            case "biblioteca/paper":
+                extra = coleccion.Paper.parsear(archivo)
+                if extra: datos.extend(extra)
+
             case "diccionario/palabra":
                 extra = coleccion.Diccionario.parsear(archivo)
                 if extra: datos.extend(extra)
