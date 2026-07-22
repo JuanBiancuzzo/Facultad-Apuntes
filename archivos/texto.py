@@ -11,6 +11,9 @@ class Texto:
     def parsear(cls, texto: str) -> Texto | None:
         return Texto(texto)
 
+    def vacio(self) -> bool:
+        return self.texto.strip() == ""
+
     def hash(self) -> int:
         return int(shake_256(self.texto.encode("utf-8")).hexdigest(7), 16)
 

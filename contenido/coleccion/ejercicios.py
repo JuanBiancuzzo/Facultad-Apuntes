@@ -46,13 +46,23 @@ class Ejercicio(Dato):
         ])
 
         enunciado, resolucion, resultado = tuple(( 
-            BloqueTexto(Texto(seccion)) if seccion is not None else None
+            Texto(seccion) if seccion is not None else None
             for seccion in map(lambda s: resultado_split[s], secciones)
         ))
         if enunciado is None or resolucion is None:
             mensaje = f"El ejercicio {numero} no tiene enunciado o resolucion"
             loggear(LoggerNivel.FATAL, mensaje)
             raise Exception(mensaje)
+
+        enunciado = BloqueTexto(
+            Texto(f"%% Ejercicio {numero} - Enunciado %%") if enunciado.vacio() else enunciado
+        )
+        resolucion = BloqueTexto(
+            Texto(f"%% Ejercicio {numero} - Resolucion %%") if resolucion.vacio()  else resolucion
+        )
+
+        if resultado is not None:
+            resultado = None if resultado.vacio() else  BloqueTexto(resultado)
 
         datos: List[Dato] = [enunciado, resolucion]
         if resultado: datos.append(resultado)
