@@ -55,6 +55,7 @@ def crear_tablas(conn: Conn):
             coleccion.TablaCapitulo(),
 
             facultad.TablaGuiasDeMateria(),
+            facultad.TablaEvaluacionesDeMateria(),
             facultad.TablaTema(),
         ],
         [

@@ -77,11 +77,11 @@ def _registrar_markdown(tag: str, archivo: Archivo) -> List[Dato]:
                 extra = facultad.Carrera.parsear(archivo)
                 if extra: datos.extend(extra)
 
-            case "facultad/materia":
+            case "materia":
                 extra = facultad.Materia.parsear(archivo)
                 if extra: datos.extend(extra)
 
-            case "facultad/resumen":
+            case "resumen":
                 extra = facultad.Tema.parsear(archivo)
                 if extra: datos.extend(extra)
 

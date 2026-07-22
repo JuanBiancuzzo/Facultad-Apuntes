@@ -12,6 +12,7 @@ class TablasFacultad(StrEnum):
     MATERIAS_EQ = "MateriasEquivalentes"
     CUATRI = "Cuatrimestres"
     GUIAS_MATERIA = "GuiasPorMateria"
+    EVALUACIONES_MATERIA = "EvaluacionesPorMateria"
     CORRELATIVAS = "CorrelativasDeMaterias"
 
     # Tema

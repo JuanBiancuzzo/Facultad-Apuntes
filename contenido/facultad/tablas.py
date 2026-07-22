@@ -117,6 +117,24 @@ class TablaGuiasDeMateria(Tabla):
             "id_guia": id_guia,
         })
 
+class TablaEvaluacionesDeMateria(Tabla):
+    nombre = Tablas.EVALUACIONES_MATERIA
+
+    def crear(self, conn: Conn) -> None:
+        conn.execute(f"""
+            CREATE TABLE IF NOT EXISTS {self.nombre} (
+                id_materia INTEGER NOT NULL REFERENCES {Tablas.MATERIAS}(id),
+                id_evaluacion INTEGER NOT NULL REFERENCES {TablasColeccion.EVALUACION}(id)
+            );
+        """)
+    
+    @classmethod
+    def insertar(cls, cursor: Cursor, id_materia: int, id_evaluacion: int) -> None:
+        cls._insertar(cursor, {
+            "id_materia": id_materia,
+            "id_evaluacion": id_evaluacion,
+        })
+
 class TablaTema(Tabla):
     nombre = Tablas.TEMA
 

@@ -14,11 +14,12 @@ from contenido.bibliografia.bibliografia import Bibliografia
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa
 from contenido.coleccion.guias import Guia
+from contenido.coleccion.evaluacion import Evaluacion
 
 from .carrera import Carrera
 from .plan_de_estudio import PlanDeEstudio
 from .cuatrimestre import Cuatrimestre
-from .tablas import TablaMateria as Tabla, TablaGuiasDeMateria
+from .tablas import TablaMateria as Tabla, TablaGuiasDeMateria, TablaEvaluacionesDeMateria
 
 @dataclass
 class Materia(Dato):
@@ -28,9 +29,11 @@ class Materia(Dato):
     etapa: Etapa 
     clave_plan: Clave
     codigo: str | None
+
     clave_cuatrimestre: Clave
     clave_resumen: Clave | None
     clave_guias: List[Clave]
+    clave_evaluaciones: List[Clave]
 
     @classmethod
     def parsear(cls, archivo: Archivo) -> List[Dato] | None:
@@ -67,6 +70,7 @@ class Materia(Dato):
             cuatrimestre.obtener_clave(),
             clave_resumen,
             list(map(lambda num: Guia._obtener_clave(int(num)), archivo.extra.get("guias", []))),
+            list(map(lambda num: Evaluacion._obtener_clave(int(num)), archivo.extra.get("evaluaciones", []))),
         )
         datos.append(materia)
 
@@ -83,6 +87,7 @@ class Materia(Dato):
             self.clave_plan,
             self.clave_cuatrimestre,
             *self.clave_guias,
+            *self.clave_evaluaciones,
         ]
         if self.clave_resumen is not None:
             dependencias.append(self.clave_resumen)
@@ -126,6 +131,15 @@ class Materia(Dato):
 
         except Exception as e:
             loggear(LoggerNivel.FATAL, f"Al insertar materia con nombre {self.nombre_materia}, error al insertar las guias vinculadas")
+            raise e 
+
+        try:
+            for clave_evaluacion in self.clave_evaluaciones:
+                id_evaluacion = dependencias[clave_evaluacion]
+                TablaEvaluacionesDeMateria.insertar(cursor, id_materia, id_evaluacion)
+
+        except Exception as e:
+            loggear(LoggerNivel.FATAL, f"Al insertar materia con nombre {self.nombre_materia}, error al insertar las evaluaciones vinculadas")
             raise e 
 
         return Nodo(id_materia, self.obtener_clave())
