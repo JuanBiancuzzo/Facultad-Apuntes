@@ -23,10 +23,9 @@ autores:
   - apellido: Mian
     nombre: Ajmal
 tituloInforme: A Comprehensive Overview of Large Language Models
-numeroInforme: 
 anio: 2024
 editores: 
-url: https://doi.org/10.48550/arXiv.2307.06435
+doi: https://doi.org/10.48550/arXiv.2307.06435
 tags:
   - colección/biblioteca/paper
   - nota/colección

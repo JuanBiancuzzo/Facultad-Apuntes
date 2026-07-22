@@ -14,7 +14,7 @@ tituloInforme: Sequence to Sequence Learning with Neural Networks
 numeroInforme: 
 anio: "2014"
 editores: 
-url: 
+doi: https://doi.org/10.48550/arXiv.1409.3215
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/Machine-learning/sequence-modeling

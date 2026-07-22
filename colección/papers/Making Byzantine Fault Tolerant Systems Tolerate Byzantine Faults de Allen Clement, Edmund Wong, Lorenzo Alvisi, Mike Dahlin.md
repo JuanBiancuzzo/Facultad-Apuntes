@@ -16,7 +16,7 @@ tituloInforme: Making Byzantine Fault Tolerant Systems Tolerate Byzantine Faults
 numeroInforme: 
 anio: "2009"
 editores: 
-url: 
+url: https://dl.acm.org/doi/10.5555/1558977.1558988
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/algoritmos

@@ -10,7 +10,7 @@ tituloInforme: A Conceptual Introduction to Hamiltonian Monte Carlo
 numeroInforme: 
 anio: "2018"
 editores: []
-url: 
+doi: https://doi.org/10.48550/arXiv.1701.02434
 tags:
   - colección/biblioteca/paper
   - nota/colección

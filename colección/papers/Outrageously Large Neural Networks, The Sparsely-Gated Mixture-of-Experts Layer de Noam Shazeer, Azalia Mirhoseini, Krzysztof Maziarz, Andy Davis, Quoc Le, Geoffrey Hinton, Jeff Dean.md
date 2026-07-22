@@ -22,7 +22,7 @@ tituloInforme: Outrageously Large Neural Networks, The Sparsely-Gated Mixture-of
 numeroInforme: 
 anio: "2017"
 editores: 
-url: 
+doi: https://doi.org/10.48550/arXiv.1701.06538
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/Machine-learning/sequence-modeling

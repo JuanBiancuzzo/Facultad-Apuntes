@@ -16,7 +16,7 @@ tituloInforme: Weight-Sharing Regularization
 numeroInforme: 
 anio: "2024"
 editores: 
-url: 
+doi: https://doi.org/10.48550/arXiv.2311.03096
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/Machine-learning/Regularization

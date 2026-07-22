@@ -16,7 +16,7 @@ tituloInforme: Composable Memory Transactions
 numeroInforme: 
 anio: "2005"
 editores: 
-url: https://doi.org/10.1145/1065944.1065952
+doi: https://doi.org/10.1145/1065944.1065952
 tags:
   - carrera/ingeniería-en-informática/tpp/Propuesta
   - colección/biblioteca/paper

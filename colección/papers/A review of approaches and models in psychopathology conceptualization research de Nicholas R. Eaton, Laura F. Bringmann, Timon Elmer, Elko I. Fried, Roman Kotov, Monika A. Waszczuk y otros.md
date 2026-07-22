@@ -30,7 +30,7 @@ tituloInforme: A review of approaches and models in psychopathology conceptualiz
 numeroInforme: 
 anio: "2023"
 editores: []
-url: https://doi.org/10.1038/s44159-023-00218-4
+doi: https://doi.org/10.1038/s44159-023-00218-4
 tags:
   - colección/biblioteca/paper
   - nota/colección

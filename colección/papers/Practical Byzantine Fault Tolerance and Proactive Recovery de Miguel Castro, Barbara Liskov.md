@@ -12,7 +12,7 @@ tituloInforme: Practical Byzantine Fault Tolerance and Proactive Recovery
 numeroInforme: 
 anio: "2002"
 editores: 
-url: 
+doi: https://doi.org/10.1145/571637.571640
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/algoritmos

@@ -16,7 +16,7 @@ tituloInforme: Efficient Estimation of Word Representations in Vector Space
 numeroInforme: 
 anio: "2013"
 editores: 
-url: 
+doi: https://doi.org/10.48550/arXiv.1301.3781
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/Machine-learning/sequence-modeling

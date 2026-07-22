@@ -14,7 +14,7 @@ tituloInforme: Consensus in the presence of partial synchrony
 numeroInforme: 
 anio: "1988"
 editores: 
-url: https://doi.org/10.1145/42282.42283
+doi: https://doi.org/10.1145/42282.42283
 tags:
   - carrera/ingeniería-en-informática/tpp/Propuesta
   - colección/biblioteca/paper

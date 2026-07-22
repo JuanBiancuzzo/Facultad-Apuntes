@@ -18,7 +18,7 @@ tituloInforme: "Writing a scientific article: A step-by-step guide for beginners
 numeroInforme: 
 anio: "2015"
 editores: 
-url: 
+url: https://doi.org/10.1016/j.eurger.2015.08.005
 tags:
   - colección/biblioteca/paper
   - nota/colección

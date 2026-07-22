@@ -38,7 +38,7 @@ tituloInforme: Network analysis of multivariate data in psychological science
 numeroInforme: 
 anio: "2021"
 editores: []
-url: http://dx.doi.org/10.1038/s43586-021-00055-w
+doi: http://doi.org/10.1038/s43586-021-00055-w
 tags:
   - colección/biblioteca/paper
   - nota/colección

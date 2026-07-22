@@ -70,7 +70,7 @@ tituloInforme: Training a Helpful and Harmless Assistant with Reinforcement Lear
 numeroInforme: 
 anio: "2022"
 editores: 
-url: 
+doi: https://doi.org/10.48550/arXiv.2204.05862
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/Machine-learning/transformers

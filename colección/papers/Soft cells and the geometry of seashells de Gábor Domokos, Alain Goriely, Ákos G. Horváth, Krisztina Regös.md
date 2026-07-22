@@ -16,7 +16,7 @@ tituloInforme: Soft cells and the geometry of seashells
 numeroInforme: 
 anio: "2024"
 editores: []
-url: 
+doi: https://doi.org/10.1093/pnasnexus/pgae311
 tags:
   - colección/biblioteca/paper
   - investigación/matemática

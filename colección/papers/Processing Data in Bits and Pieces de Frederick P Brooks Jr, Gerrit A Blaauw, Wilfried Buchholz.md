@@ -20,7 +20,6 @@ paginas:
   final: "124"
 anio: "1959"
 editores: []
-url: 
 doi: 10.1145/1457720.1457743
 tags:
   - colección/biblioteca/paper

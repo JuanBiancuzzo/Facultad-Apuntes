@@ -18,7 +18,7 @@ tituloInforme: Distributed Representations of Words and Phrases and their Compos
 numeroInforme: 
 anio: "2013"
 editores: 
-url: 
+doi: https://doi.org/10.48550/arXiv.1310.4546
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/Machine-learning/sequence-modeling

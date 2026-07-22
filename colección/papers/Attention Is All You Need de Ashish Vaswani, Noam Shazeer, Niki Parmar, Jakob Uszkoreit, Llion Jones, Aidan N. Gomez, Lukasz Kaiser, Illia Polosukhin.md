@@ -24,7 +24,7 @@ tituloInforme: Attention Is All You Need
 numeroInforme: 
 anio: "2023"
 editores: 
-url: 
+doi: https://doi.org/10.48550/arXiv.1706.03762
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/Machine-learning/transformers

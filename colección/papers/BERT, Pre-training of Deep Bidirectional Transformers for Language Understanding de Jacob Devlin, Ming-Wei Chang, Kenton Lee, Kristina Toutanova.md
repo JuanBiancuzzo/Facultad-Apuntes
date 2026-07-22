@@ -16,7 +16,7 @@ tituloInforme: BERT, Pre-training of Deep Bidirectional Transformers for Languag
 numeroInforme: 
 anio: "2019"
 editores: 
-url: 
+doi: https://doi.org/10.48550/arXiv.1810.04805
 tags:
   - colección/biblioteca/paper
   - nota/colección

@@ -20,7 +20,7 @@ tituloInforme: Using Generative AI to create lexicons for interpretable text mod
 numeroInforme: 
 anio: "2024"
 editores: []
-url: http://dx.doi.org/10.31234/osf.io/vf2bc
+doi: http://doi.org/10.31234/osf.io/vf2bc
 tags:
   - colección/biblioteca/paper
   - nota/colección

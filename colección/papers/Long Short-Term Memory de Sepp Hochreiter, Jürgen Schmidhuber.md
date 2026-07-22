@@ -12,7 +12,7 @@ tituloInforme: Long Short-Term Memory
 numeroInforme: 
 anio: "1997"
 editores: 
-url: 
+doi: https//doi.org/10.1162/neco.1997.9.8.1735
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/Machine-learning/sequence-modeling

@@ -22,7 +22,7 @@ tituloInforme: Carbon–cement supercapacitors as a scalable bulk energystorage 
 numeroInforme: 
 anio: "2023"
 editores: []
-url: https://www.pnas.org/doi/epdf/10.1073/pnas.2304318120
+doi: https://doi.org/10.1073/pnas.2304318120
 tags:
   - colección/biblioteca/paper
   - investigación/generación-de-energía/Baterías

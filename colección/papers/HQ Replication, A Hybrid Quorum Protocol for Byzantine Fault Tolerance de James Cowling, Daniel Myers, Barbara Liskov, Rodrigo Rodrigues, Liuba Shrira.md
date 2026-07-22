@@ -18,7 +18,7 @@ tituloInforme: HQ Replication, A Hybrid Quorum Protocol for Byzantine Fault Tole
 numeroInforme: 
 anio: "2006"
 editores: 
-url: 
+url: https://www.usenix.org/legacy/events/osdi06/tech/cowling.html
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/algoritmos

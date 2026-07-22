@@ -14,7 +14,7 @@ tituloInforme: Simple Mechanism for Optimal Light-Use Efficiency of Photosynthes
 numeroInforme: 
 anio: "2024"
 editores: []
-url: 
+doi: https://doi.org/10.1103/prxenergy.3.023014
 tags:
   - colección/biblioteca/paper
   - nota/colección

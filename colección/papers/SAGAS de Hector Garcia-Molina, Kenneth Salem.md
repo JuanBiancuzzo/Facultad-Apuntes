@@ -12,7 +12,7 @@ tituloInforme: SAGAS
 numeroInforme: 
 anio: "1987"
 editores: 
-url: 
+doi: https://doi.org/10.1145/38714.38742
 tags:
   - carrera/ingeniería-en-informática/tpp/Propuesta
   - colección/biblioteca/paper

@@ -12,6 +12,7 @@ tituloInforme: FABRIK, A fast, iterative solver for the Inverse Kinematics probl
 numeroInforme: 
 anio: "2011"
 editores: 
+doi: https://doi.org/10.1016/j.gmod.2011.05.003
 url: http://www.andreasaristidou.com/publications/papers/FABRIK.pdf
 tags:
   - colección/biblioteca/paper

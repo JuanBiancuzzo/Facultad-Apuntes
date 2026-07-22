@@ -28,7 +28,7 @@ tituloInforme: RoBERTa, A Robustly Optimized BERT Pretraining Aproach
 numeroInforme: 
 anio: "2019"
 editores: 
-url: 
+doi: https://doi.org/10.48550/arXiv.1907.11692
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/Machine-learning/transformers

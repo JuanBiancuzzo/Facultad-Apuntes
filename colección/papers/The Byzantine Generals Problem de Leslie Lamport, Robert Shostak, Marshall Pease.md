@@ -14,7 +14,7 @@ tituloInforme: The Byzantine Generals Problem
 numeroInforme: 
 anio: "1982"
 editores: 
-url: 
+doi: https://doi.org/10.1145/357172.357176
 tags:
   - colección/biblioteca/paper
   - nota/colección

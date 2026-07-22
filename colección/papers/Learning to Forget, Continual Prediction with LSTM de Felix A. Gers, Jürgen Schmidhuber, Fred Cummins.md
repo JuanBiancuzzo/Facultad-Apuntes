@@ -10,11 +10,11 @@ autores:
     nombre: Jürgen
   - apellido: Cummins
     nombre: Fred
-tituloInforme: Learning to Forget, Contunual Prediction with LSTM
+tituloInforme: Learning to Forget, Continual Prediction with LSTM
 numeroInforme: 
 anio: "1999"
 editores: 
-url: 
+doi: https//doi.org/10.1049/cp:19991218
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/Machine-learning/sequence-modeling

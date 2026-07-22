@@ -12,7 +12,7 @@ tituloInforme: Deep Belief Networks
 numeroInforme: 
 anio: "2009"
 editores: 
-url: http://www.scholarpedia.org/article/Deep_belief_networks
+doi: http://doi.org/10.4249/scholarpedia.5947
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/Machine-learning/Deep-Learning

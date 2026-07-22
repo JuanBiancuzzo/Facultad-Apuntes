@@ -12,7 +12,7 @@ tituloInforme: Ragdoll Physics
 numeroInforme: 
 anio: "2007"
 editores: 
-url: 
+url: https://api.semanticscholar.org/CorpusID:15889188
 tags:
   - colección/biblioteca/paper
   - nota/colección

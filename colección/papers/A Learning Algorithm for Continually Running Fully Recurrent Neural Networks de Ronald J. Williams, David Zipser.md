@@ -12,7 +12,7 @@ tituloInforme: A Learning Algorithm for Continually Running Fully Recurrent Neur
 numeroInforme: 
 anio: "1989"
 editores: 
-url: 
+doi: https://doi.org/10.1162/neco.1989.1.2.270
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/Machine-learning/sequence-modeling

@@ -18,7 +18,7 @@ tituloInforme: Design, Analysis and Development of Epoxy Resin made Omnidirectio
 numeroInforme: 
 anio: "2020"
 editores: 
-url: 
+doi: https://doi.org/10.1088/1757-899X/988/1/012044
 tags:
   - colección/biblioteca/paper
   - nota/colección

@@ -26,7 +26,7 @@ tituloInforme: Exploring the Limits of Transfer Learning with a Unified Text-toT
 numeroInforme: 
 anio: "2023"
 editores: 
-url: 
+doi: https://doi.org/10.48550/arXiv.1910.10683 
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/Machine-learning/transformers

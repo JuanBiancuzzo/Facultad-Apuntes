@@ -18,7 +18,7 @@ tituloInforme: Measurements of a Distributed File System
 numeroInforme: 
 anio: "1991"
 editores: 
-url: 
+doi: https://doi.org/10.1145/121132.121164
 tags:
   - carrera/ingeniería-en-informática/tpp/Propuesta
   - colección/biblioteca/paper

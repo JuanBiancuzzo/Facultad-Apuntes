@@ -18,7 +18,7 @@ tituloInforme: Proximal Policy Optimization Algorithms
 numeroInforme: 
 anio: "2017"
 editores: 
-url: 
+doi: https://doi.org/10.48550/arXiv.1707.06347
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/algoritmos

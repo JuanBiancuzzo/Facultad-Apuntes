@@ -22,7 +22,7 @@ tituloInforme: Learning Phrase Representations using RNN Encoder-Decoder for Sta
 numeroInforme: 
 anio: "2014"
 editores: 
-url: 
+doi: https://doi.org/10.48550/arXiv.1406.1078
 tags:
   - carrera/ingeniería-electrónica/algebra-2/Autovalores-y-autovectores
   - carrera/ingeniería-en-informática/algebra-2/Autovalores-y-autovectores

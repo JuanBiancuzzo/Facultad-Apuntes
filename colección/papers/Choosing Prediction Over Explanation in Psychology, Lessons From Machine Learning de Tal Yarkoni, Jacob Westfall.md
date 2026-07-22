@@ -12,7 +12,7 @@ tituloInforme: "Choosing Prediction Over Explanation in Psychology: Lessons From
 numeroInforme: 
 anio: "2017"
 editores: []
-url: "Choosing prediction over explanation in psychology: Lessons from Machine Learning"
+doi: https://doi.org/10.1177/1745691617693393
 tags:
   - colección/biblioteca/paper
   - nota/colección

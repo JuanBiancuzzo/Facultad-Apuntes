@@ -10,7 +10,7 @@ tituloInforme: Variable-stiffness–morphing wheel inspired by the surface tensi
 numeroInforme: 
 anio: "2024"
 editores: 
-url: 
+doi: https://doi.org/10.1126/scirobotics.adl2067
 tags:
   - colección/biblioteca/paper
   - nota/colección

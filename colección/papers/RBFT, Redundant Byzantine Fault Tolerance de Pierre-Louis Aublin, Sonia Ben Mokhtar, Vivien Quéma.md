@@ -14,7 +14,7 @@ tituloInforme: RBFT, Redundant Byzantine Fault Tolerance
 numeroInforme: 
 anio: "2013"
 editores: 
-url: 
+doi: https://doi.org/10.1109/ICDCS.2013.53
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/algoritmos

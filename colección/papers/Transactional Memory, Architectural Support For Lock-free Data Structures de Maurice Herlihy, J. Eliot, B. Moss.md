@@ -14,7 +14,7 @@ tituloInforme: "Transactional Memory: Architectural Support For Lock-free Data S
 numeroInforme: 
 anio: "1993"
 editores: 
-url: https://doi.org/10.1109/ISCA.1993.698569
+doi: https://doi.org/10.1109/ISCA.1993.698569
 tags:
   - carrera/ingeniería-en-informática/tpp/Propuesta
   - colección/biblioteca/paper

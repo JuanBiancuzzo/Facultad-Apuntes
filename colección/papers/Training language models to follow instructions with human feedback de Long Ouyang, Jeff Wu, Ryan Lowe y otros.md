@@ -48,7 +48,7 @@ tituloInforme: Training language models to follow instructions with human feedba
 numeroInforme: 
 anio: "2022"
 editores: 
-url: 
+doi: https://doi.org/10.48550/arXiv.2203.02155
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/Machine-learning/transformers

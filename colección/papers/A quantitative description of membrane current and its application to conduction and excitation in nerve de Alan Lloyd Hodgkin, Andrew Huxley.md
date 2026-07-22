@@ -12,7 +12,7 @@ tituloInforme: A quantitative description of membrane current and its applicatio
 numeroInforme: 
 anio: "1952"
 editores: 
-url: https://pmc.ncbi.nlm.nih.gov/articles/PMC1392413/
+doi: https://doi.org/10.1113/jphysiol.1952.sp004764
 tags:
   - colección/biblioteca/paper
   - investigación/neurociencias

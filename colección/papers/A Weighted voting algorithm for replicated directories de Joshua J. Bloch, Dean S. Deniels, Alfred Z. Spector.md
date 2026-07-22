@@ -14,7 +14,7 @@ tituloInforme: A Weighted voting algorithm for replicated directories
 numeroInforme: 
 anio: "1987"
 editores: 
-url: https://doi.org/10.1145/31846.31847
+doi: https://doi.org/10.1145/31846.31847
 tags:
   - carrera/ingeniería-en-informática/tpp/Propuesta
   - colección/biblioteca/paper

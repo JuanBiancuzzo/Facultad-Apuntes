@@ -24,7 +24,7 @@ tituloInforme: Fine-Tuning Language Models from Human Preferences
 numeroInforme: 
 anio: "2020"
 editores: 
-url: 
+doi: https://doi.org/10.48550/arXiv.1909.08593
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/Machine-learning/transformers

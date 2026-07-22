@@ -16,7 +16,7 @@ tituloInforme: Unveiling the Multifunctional Carbon Fiber Structural Battery
 numeroInforme: 
 anio: "2024"
 editores: 
-url: 
+doi: https://doi.org/10.1002/adma.202409725
 tags:
   - colección/biblioteca/paper
   - investigación/generación-de-energía/Baterías

@@ -18,7 +18,7 @@ tituloInforme: Fault-Scalable Byzantine Fault-Tolerant Services
 numeroInforme: 
 anio: "2005"
 editores: 
-url: 
+doi: https://doi.org/10.1145/1095809.1095817 
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/algoritmos

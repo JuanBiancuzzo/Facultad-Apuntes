@@ -10,7 +10,7 @@ tituloInforme: Weighted Voting for Replicated Data
 numeroInforme: 
 anio: "1979"
 editores: 
-url: 
+doi: https://doi.org/10.1145/800215.806583
 tags:
   - carrera/ingeniería-en-informática/tpp/Propuesta
   - colección/biblioteca/paper

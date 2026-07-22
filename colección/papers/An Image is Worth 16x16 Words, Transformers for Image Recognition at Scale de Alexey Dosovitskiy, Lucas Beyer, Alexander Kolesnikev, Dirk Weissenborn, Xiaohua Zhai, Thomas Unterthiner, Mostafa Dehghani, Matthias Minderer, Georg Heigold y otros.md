@@ -32,7 +32,7 @@ tituloInforme: An Image is Worth 16x16 Words, Transformers for Image Recognition
 numeroInforme: 
 anio: "2021"
 editores: 
-url: 
+doi: https://doi.org/10.48550/arXiv.2010.11929
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/Machine-learning/transformers

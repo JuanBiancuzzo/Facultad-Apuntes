@@ -12,7 +12,7 @@ tituloInforme: Algorithms for Scalable Synchronization on Shared-Memory Multipro
 numeroInforme: 
 anio: "1991"
 editores: 
-url: 
+doi: https://doi.org/10.1145/103727.103729
 tags:
   - carrera/ingeniería-en-informática/tpp/Propuesta
   - colección/biblioteca/paper

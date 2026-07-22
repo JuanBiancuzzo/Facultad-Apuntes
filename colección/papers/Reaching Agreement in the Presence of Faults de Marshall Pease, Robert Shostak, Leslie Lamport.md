@@ -14,7 +14,7 @@ tituloInforme: Reaching Agreement in the Presence of Faults
 numeroInforme: 
 anio: "1980"
 editores: []
-url: 
+doi: https://doi.org/10.1145/322186.322188
 tags:
   - colección/biblioteca/paper
   - nota/colección

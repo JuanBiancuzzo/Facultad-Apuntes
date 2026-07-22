@@ -32,7 +32,7 @@ tituloInforme: "OceanStore: an architecture for global-scale persistent storage"
 numeroInforme: 
 anio: "2000"
 editores: 
-url: https://doi.org/10.1145/356989.357007
+doi: https://doi.org/10.1145/356989.357007
 tags:
   - carrera/ingeniería-en-informática/tpp/Propuesta
   - colección/biblioteca/paper

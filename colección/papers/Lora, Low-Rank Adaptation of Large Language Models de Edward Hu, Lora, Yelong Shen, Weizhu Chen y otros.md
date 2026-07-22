@@ -24,7 +24,7 @@ tituloInforme: Lora, Low-Rank Adaptation of Large Language Models
 numeroInforme: 
 anio: "2021"
 editores: 
-url: 
+doi: https://doi.org/10.48550/arXiv.2106.09685
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/Machine-learning/transformers

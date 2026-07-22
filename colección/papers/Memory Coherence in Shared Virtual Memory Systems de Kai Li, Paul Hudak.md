@@ -12,7 +12,7 @@ tituloInforme: Memory Coherence in Shared Virtual Memory Systems
 numeroInforme: 
 anio: "1989"
 editores: 
-url: 
+doi: https://doi.org/10.1145/75104.75105
 tags:
   - carrera/ingeniería-en-informática/tpp/Propuesta
   - colección/biblioteca/paper

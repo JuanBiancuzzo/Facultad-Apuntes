@@ -10,7 +10,7 @@ tituloInforme: Advanced Character Physics
 numeroInforme: 
 anio: "2001"
 editores: []
-url: 
+url: https://www.researchgate.net/publication/228599597_Advanced_character_physics
 tags:
   - colección/biblioteca/paper
   - nota/colección

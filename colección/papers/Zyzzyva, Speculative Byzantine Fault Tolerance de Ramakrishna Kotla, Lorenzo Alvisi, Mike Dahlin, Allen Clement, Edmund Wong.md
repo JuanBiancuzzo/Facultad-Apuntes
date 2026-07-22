@@ -18,7 +18,7 @@ tituloInforme: Zyzzyva, Speculative Byzantine Fault Tolerance
 numeroInforme: 
 anio: "2007"
 editores: 
-url: 
+doi: https://doi.org/10.1145/1323293.1294267
 tags:
   - colección/biblioteca/paper
   - investigación/ciencias-de-la-computación/algoritmos

@@ -14,7 +14,7 @@ tituloInforme: Printed Organic Photovoltaic Modules on Transferable Ultra-thin S
 numeroInforme: 
 anio: "2023"
 editores: []
-url: 
+doi: https://doi.org/10.1002/smtd.202200940
 tags:
   - colección/biblioteca/paper
   - nota/colección

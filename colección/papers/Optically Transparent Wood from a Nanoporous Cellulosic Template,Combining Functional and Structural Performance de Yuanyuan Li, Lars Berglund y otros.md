@@ -18,7 +18,7 @@ tituloInforme: Optically Transparent Wood from a Nanoporous Cellulosic Template:
 numeroInforme: 
 anio: "2016"
 editores: 
-url: 
+doi: https://doi.org/10.1021/acs.biomac.6b00145
 tags:
   - colección/biblioteca/paper
   - nota/colección
