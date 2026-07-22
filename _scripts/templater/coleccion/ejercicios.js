@@ -6,9 +6,230 @@ const ELIMINAR_EJERCICIO = "eliminar ejercicio";
 const MOVER_ARRIBA_EJERCICIO = "arriba ejercicio";
 const MOVER_ABAJO_EJERCICIO = "abajo ejercicio";
 
+class Evaluacion {
+    constructor(tp, dv, representacionPrevia = {}) {
+        const {
+            SIMBOLOS,
+            TAGS: { coleccion: { ejercicios: TAGS_EJERCICIOS, ...TAGS_COLECCION } },
+            DATOS: { EJERCICIOS: { evaluacion: DATOS_EVALUACION, ejercicio: DATOS_EJERCICIOS } },
+        } = tp.user.constantes();
+        const seguidorGeneral = tp.user.seguidorReferencias(tp);
+
+        this.describirFecha = tp.user.describir().fecha.bind(null, tp);
+        this.simbolos = SIMBOLOS;
+        this.config = DATOS_EVALUACION;
+        this.configEjercicio = DATOS_EJERCICIOS;
+        this.posiblesEjercicios = dv.pages(`#${TAGS_COLECCION.self}/${TAGS_EJERCICIOS.self}/${TAGS_EJERCICIOS.ejercicio}`)
+            .map(ejercicio => new Ejercicio(tp, dv, ejercicio))
+            .sort(ejercicio => ejercicio[this.configEjercicio.numero]);
+
+        this.fecha = representacionPrevia[this.config.fecha];
+        if (this.config.ejercicios in representacionPrevia) {
+            this.ejercicios = representacionPrevia[this.config.ejercicios];
+
+        } else {
+            this.ejercicios = [];
+        }
+
+        if (this.config.numero in representacionPrevia) {
+            this.numero = representacionPrevia[this.config.numero];
+
+        } else {
+            this.numero = DEFAULT_NUMERO;
+            let numEvaluacion = dv.pages(`#${TAGS_COLECCION.self}/${TAGS_EJERCICIOS.self}/${TAGS_EJERCICIOS.evaluacion}`)
+                .map(archivo => archivo[this.config.numero])
+                .sort(numero => numero);
+
+            for (let numero of numEvaluacion) {
+                if (this.numero == numero) {
+                    this.numero++;
+                } else {
+                    break;
+                }
+            }
+        }
+
+        this.seguidorEjercicios = seguidorGeneral.newGeneral(() => {
+            return dv.pages(`#${TAGS_COLECCION.self}/${TAGS_EJERCICIOS.self}/${TAGS_EJERCICIOS.ejercicio}`)
+                .map(archivo => archivo[DATOS_EJERCICIOS.numero])
+                .sort(numero => numero)
+                .values;
+        });
+
+        this.ejerciciosAgregados = {}
+        let generarNuevoEjercicio = () => {
+            let numero = this.seguidorEjercicios.conseguirNumero();
+            let ejercicio = new Ejercicio(tp, dv, {
+                [DATOS_EJERCICIOS.numero]: numero,
+            });
+            this.ejerciciosAgregados[numero] = ejercicio;
+            return ejercicio;
+        };
+
+        this.informacion = {
+            ejercicioNuevo: () => generarNuevoEjercicio(),
+        }
+    }
+
+    async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
+        let [respuesta, indice] = respuestaDada.split("-");
+        if (indice) {
+            indice = parseInt(indice, 10);
+        }
+
+        switch (respuesta) {
+            case this.config.fecha:
+                this.fecha = await generarPreguntas.fecha(
+                    this.fecha
+                        ? `Nueva fecha de la evaluacion, donde antes era ${this.describirFecha(this.fecha)}`
+                        : "Fecha de la evaluacion",
+                    generarError.Quit("No se ingresó un formato de fecha válido"),
+                    generarError.Quit("No se ingresó la fecha de la evaluacion")
+                );
+                break;
+
+            case MODIFICAR_EJERCICIO:
+                await generarPreguntas.formulario(this.ejercicios[indice], "Modificar información del ejercicio");
+                break;
+
+            case this.config.ejercicios:
+                let respuesta = AGREGAR_EJERCICIO;
+                let ejerciciosElegir = [];
+                for (let i = 0; i < this.posiblesEjercicios.length; i++) {
+                    let ejercicioActual = this.posiblesEjercicios[i];
+
+                    let fueElegido = false;
+                    let numEjercicioActual = ejercicioActual[this.configEjercicio.numero];
+                    for (let j = 0; j < this.ejercicios.length && !fueElegido; j++) {
+                        let numEjericioElegido = this.ejercicios[j][this.configEjercicio.numero];
+                        if (numEjericioElegido == numEjercicioActual) {
+                            fueElegido = true;
+                        }
+                    }
+
+                    if (!fueElegido) {
+                        ejerciciosElegir.push([i, ejercicioActual.titulo()]);
+                    }
+                }
+                if (ejerciciosElegir.length > 0) {
+                    respuesta = await generarPreguntas.suggester(
+                        [
+                            ` ${this.simbolos.agregar} Agregar ejercicio`,
+                            ...ejerciciosElegir.map(([_, nombre]) => nombre),
+                        ],
+                        [AGREGAR_EJERCICIO, ...ejerciciosElegir.map(([i, _]) => i)],
+                        "Agregar ejercicio",
+                        generarError.Quit("No se ingreso el ejercicio para la evaluacion"),
+                    );
+                }
+
+                if (respuesta == AGREGAR_EJERCICIO) {
+                    let cantidadEjerciciosNuevos = await generarPreguntas.numero(
+                        "Número de ejercicios a agregar",
+                        generarError.Quit("No se ingresa el número de ejercicios nuevos a agregar"),
+                    );
+
+                    if (cantidadEjerciciosNuevos <= 0) {
+                        break;
+
+                    } else if (cantidadEjerciciosNuevos == 1) {
+                        let nuevoEjercicio = this.informacion.ejercicioNuevo();
+                        await generarPreguntas.formulario(nuevoEjercicio, "Ingresar información del ejercicio");
+                        this.ejercicios.push(nuevoEjercicio);
+                    } else {
+                        for (let i = 0; i < cantidadEjerciciosNuevos; i++) {
+                            this.ejercicios.push(this.informacion.ejercicioNuevo());
+                        }
+                    }
+
+                } else {
+                    this.ejercicios.push(this.posiblesEjercicios[respuesta]);
+                }
+
+                break;
+
+            case ELIMINAR_EJERCICIO:
+                let [ejercicioEliminar] = this.ejercicios.splice(indice, 1);
+                if (ejercicioEliminar[this.configEjercicio.numero] in this.ejerciciosAgregados) {
+                    this.seguidorEjercicios.devolver(ejercicioEliminar[this.configEjercicio.numero]);
+                    delete this.ejerciciosAgregados[ejercicioEliminar[this.configEjercicio.numero]];
+                }
+                break;
+
+            case MOVER_ARRIBA_EJERCICIO:
+                if (indice <= 0) {
+                    break;
+                }
+
+                [this.ejercicios[indice], this.ejercicios[indice - 1]] = [this.ejercicios[indice - 1], this.ejercicios[indice]];
+                break;
+
+            case MOVER_ABAJO_EJERCICIO:
+                if (indice >= this.ejercicios.length - 1) {
+                    break;
+                }
+
+                [this.ejercicios[indice], this.ejercicios[indice + 1]] = [this.ejercicios[indice + 1], this.ejercicios[indice]];
+                break;
+        }
+    }
+
+    generarPreguntas() {
+        let opciones = [];
+        let valores = [];
+
+        opciones.push(this.config.fecha);
+        valores.push(this.fecha
+            ? ` ${this.simbolos.modificar} Modificar la fecha de la evaluacion, donde era ${this.fecha}`
+            : ` ${this.simbolos.agregar} Fecha de la evaluacion`
+        );
+
+        for (let [indice, ejercicio] of this.ejercicios.entries()) {
+            let descripcionEjercicio = ejercicio.titulo();
+            opciones.push(`${MODIFICAR_EJERCICIO}-${indice}`);
+            valores.push(` ${this.simbolos.modificar} ${descripcionEjercicio}`);
+
+            if (indice > 0) {
+                opciones.push(`${MOVER_ARRIBA_EJERCICIO}-${indice}`);
+                valores.push(` ${this.simbolos.arriba} Mover arriba, ${descripcionEjercicio}`);
+            }
+
+            if (indice < this.ejercicios.length - 1) {
+                opciones.push(`${MOVER_ABAJO_EJERCICIO}-${indice}`);
+                valores.push(` ${this.simbolos.abajo} Mover abajo, ${descripcionEjercicio}`);
+            }
+
+            opciones.push(`${ELIMINAR_EJERCICIO}-${indice}`);
+            valores.push(` ${this.simbolos.sacar} Eliminar ${descripcionEjercicio}`);
+        }
+
+        opciones.push(this.config.ejercicios);
+        valores.push(` ${this.simbolos.agregar} Agregar ejercicio`);
+
+        return { opciones: opciones, valores: valores };
+    }
+
+    generarRepresentacion() {
+        return {
+            [this.config.numero]: this.numero,
+            [this.config.fecha]: this.fecha,
+            [this.config.ejercicios]: this.ejercicios
+                .map(ejercicio => ejercicio[this.configEjercicio.numero]),
+        }
+    }
+
+    esValido() {
+        return this.fecha && this.ejercicios.length > 0;
+    }
+
+    titulo() {
+        return this.describirFecha(this.fecha);
+    }
+}
+
 class Guia {
     constructor(tp, dv, representacionPrevia = {}) {
-        const { 
+        const {
             SIMBOLOS,
             TAGS: { coleccion: { ejercicios: TAGS_EJERCICIOS, ...TAGS_COLECCION } },
             DATOS: { EJERCICIOS: { guia: DATOS_GUIA, ejercicio: DATOS_EJERCICIOS } },
@@ -58,7 +279,7 @@ class Guia {
         this.ejerciciosAgregados = {}
         let generarNuevoEjercicio = () => {
             let numero = this.seguidorEjercicios.conseguirNumero();
-            let ejercicio = new Ejercicio(tp, dv, { 
+            let ejercicio = new Ejercicio(tp, dv, {
                 [DATOS_EJERCICIOS.numero]: numero,
             });
             this.ejerciciosAgregados[numero] = ejercicio;
@@ -71,7 +292,7 @@ class Guia {
     }
 
     async actualizarDatos(respuestaDada, generarPreguntas, generarError) {
-        let [ respuesta, indice ] = respuestaDada.split("-");
+        let [respuesta, indice] = respuestaDada.split("-");
         if (indice) {
             indice = parseInt(indice, 10);
         }
@@ -104,16 +325,16 @@ class Guia {
                     }
 
                     if (!fueElegido) {
-                        ejerciciosElegir.push([ i, ejercicioActual.titulo() ]);
+                        ejerciciosElegir.push([i, ejercicioActual.titulo()]);
                     }
                 }
                 if (ejerciciosElegir.length > 0) {
                     respuesta = await generarPreguntas.suggester(
                         [
-                            ` ${this.simbolos.agregar} Agregar ejercicio`, 
+                            ` ${this.simbolos.agregar} Agregar ejercicio`,
                             ...ejerciciosElegir.map(([_, nombre]) => nombre),
-                        ], 
-                        [ AGREGAR_EJERCICIO, ...ejerciciosElegir.map(([i, _]) => i)],
+                        ],
+                        [AGREGAR_EJERCICIO, ...ejerciciosElegir.map(([i, _]) => i)],
                         "Agregar ejercicio",
                         generarError.Quit("No se ingreso el ejercicio para la guia"),
                     );
@@ -145,7 +366,7 @@ class Guia {
                 break;
 
             case ELIMINAR_EJERCICIO:
-                let [ ejercicioEliminar ] = this.ejercicios.splice(indice, 1);
+                let [ejercicioEliminar] = this.ejercicios.splice(indice, 1);
                 if (ejercicioEliminar[this.configEjercicio.numero] in this.ejerciciosAgregados) {
                     this.seguidorEjercicios.devolver(ejercicioEliminar[this.configEjercicio.numero]);
                     delete this.ejerciciosAgregados[ejercicioEliminar[this.configEjercicio.numero]];
@@ -157,7 +378,7 @@ class Guia {
                     break;
                 }
 
-                [ this.ejercicios[indice], this.ejercicios[indice - 1] ] = [ this.ejercicios[indice - 1], this.ejercicios[indice] ];
+                [this.ejercicios[indice], this.ejercicios[indice - 1]] = [this.ejercicios[indice - 1], this.ejercicios[indice]];
                 break;
 
             case MOVER_ABAJO_EJERCICIO:
@@ -165,7 +386,7 @@ class Guia {
                     break;
                 }
 
-                [ this.ejercicios[indice], this.ejercicios[indice + 1] ] = [ this.ejercicios[indice + 1], this.ejercicios[indice] ];
+                [this.ejercicios[indice], this.ejercicios[indice + 1]] = [this.ejercicios[indice + 1], this.ejercicios[indice]];
                 break;
         }
     }
@@ -209,7 +430,7 @@ class Guia {
         return {
             [this.config.numero]: this.numero,
             [this.config.nombre]: this.nombre,
-            [this.config.ejercicios]: this.ejercicios   
+            [this.config.ejercicios]: this.ejercicios
                 .map(ejercicio => ejercicio[this.configEjercicio.numero]),
         }
     }
@@ -225,7 +446,7 @@ class Guia {
 
 class Ejercicio {
     constructor(tp, dv, representacionPrevia = {}) {
-        const { 
+        const {
             SIMBOLOS, SECCIONES,
             TAGS: { coleccion: { ejercicios: TAGS_EJERCICIOS, ...TAGS_COLECCION } },
             DATOS: { EJERCICIOS: DATOS_EJERCICIOS },
@@ -236,7 +457,7 @@ class Ejercicio {
         this.config = DATOS_EJERCICIOS;
 
         this.nombre = representacionPrevia[this.config.ejercicio.nombre];
-        
+
         if (this.config.ejercicio.numero in representacionPrevia) {
             this.numero = representacionPrevia[this.config.ejercicio.numero];
 
@@ -260,7 +481,7 @@ class Ejercicio {
         switch (respuestaDada) {
             case this.config.ejercicio.nombre:
                 this.nombre = await generarPreguntas.prompt(
-                    this.nombre 
+                    this.nombre
                         ? `Nuevo nombre del ejercicio, donde antes era ${this.nombre}`
                         : "Nombre del ejercicio",
                     generarError.Quit("No se ingresó nombre del ejercicio")
@@ -302,7 +523,7 @@ class Ejercicio {
     async describir(tp, dv) {
         let archivos = dv.pages(`#${TAGS_COLECCION.self}/${TAGS_EJERCICIOS.self}/${TAGS_EJERCICIOS.ejercicio}`)
             .filter(archivo => archivo[this.config.ejercicio.numero] == this.numero);
-        
+
         switch (archivos.length) {
             case 0:
                 return this.titulo();
@@ -327,20 +548,59 @@ class Ejercicio {
     }
 
     titulo() {
-        return this.nombre 
+        return this.nombre
             ? `Ejercicio N° ${this.numero}, ${this.nombre}`
             : `Ejercicio N° ${this.numero}`
     }
 }
 
-async function crearGuia(tp, dv) {
-    const { 
-        FORMATO_DIA, SECCIONES, DATOS: { 
-            ARCHIVO: DATOS_ARCHIVO , EJERCICIOS: { guia: DATOS_GUIA }
+async function crearEvaluacion(tp, dv) {
+    const {
+        FORMATO_DIA, SECCIONES, DATOS: {
+            ARCHIVO: DATOS_ARCHIVO, EJERCICIOS: { evaluacion: DATOS_EVALUACION }
         }, TAGS: {
             coleccion: { ejercicios: TAGS_EJERCICIOS, ...TAGS_COLECCION },
-        }, 
-        DIRECTORIOS: { coleccion: { ejercicios: DIR_EJERCICIOS, ...DIR_COLECCION } }, 
+        },
+        DIRECTORIOS: { coleccion: { ejercicios: DIR_EJERCICIOS, ...DIR_COLECCION } },
+        DATAVIEW: { coleccion: { ejercicios: DV_EJERCICIOS }, ...DATAVIEW },
+    } = tp.user.constantes();
+    const preguntar = tp.user.preguntar();
+    const archivos = tp.user.archivo();
+
+    let infoEvaluacion = new Evaluacion(tp, dv);
+    await preguntar.formulario(tp, infoEvaluacion, "Completar la información de la evaluacion");
+
+    let texto = SECCIONES.seccion({ nivel: 1, texto: "Ejercicio" });
+    texto += "\n---\n";
+    texto += `\`\`\`dataviewjs\n\tlet actual = dv.current();\n\tawait dv.view("${DATAVIEW.self}/${DV_EJERCICIOS.guia}", { ejercicios: actual["${DATOS_EVALUACION.ejercicios}"] });\n\`\`\`\n\n`;
+
+
+    for (let infoEjercicio of Object.values(infoEvaluacion.ejerciciosAgregados)) {
+        await archivos.crear(tp, async () => await crearEjercicio(tp, dv, infoEjercicio));
+    }
+
+    return {
+        metadata: {
+            [DATOS_ARCHIVO.dia]: tp.file.creation_date(FORMATO_DIA),
+            [DATOS_ARCHIVO.tags]: [
+                `${TAGS_COLECCION.self}/${TAGS_EJERCICIOS.self}/${TAGS_EJERCICIOS.evaluacion}`,
+            ],
+            ...infoEvaluacion.generarRepresentacion(),
+        },
+        carpeta: `${DIR_COLECCION.self}/${DIR_EJERCICIOS}`,
+        titulo: `Evaluación ${infoEvaluacion.numero} del ${infoEvaluacion.titulo()}`,
+        texto: texto,
+    }
+}
+
+async function crearGuia(tp, dv) {
+    const {
+        FORMATO_DIA, SECCIONES, DATOS: {
+            ARCHIVO: DATOS_ARCHIVO, EJERCICIOS: { guia: DATOS_GUIA }
+        }, TAGS: {
+            coleccion: { ejercicios: TAGS_EJERCICIOS, ...TAGS_COLECCION },
+        },
+        DIRECTORIOS: { coleccion: { ejercicios: DIR_EJERCICIOS, ...DIR_COLECCION } },
         DATAVIEW: { coleccion: { ejercicios: DV_EJERCICIOS }, ...DATAVIEW },
     } = tp.user.constantes();
     const preguntar = tp.user.preguntar();
@@ -373,12 +633,12 @@ async function crearGuia(tp, dv) {
 }
 
 async function crearEjercicio(tp, dv, infoPrevia = {}) {
-    const { 
+    const {
         FORMATO_DIA, ETAPAS, SECCIONES, DATOS: { ARCHIVO: DATOS_ARCHIVO }, TAGS: {
             nota: TAGS_NOTA,
             coleccion: { ejercicios: TAGS_EJERCICIOS, ...TAGS_COLECCION },
-        }, 
-        DIRECTORIOS: { coleccion: { ejercicios: DIR_EJERCICIOS, ...DIR_COLECCION } }, 
+        },
+        DIRECTORIOS: { coleccion: { ejercicios: DIR_EJERCICIOS, ...DIR_COLECCION } },
     } = tp.user.constantes();
     const preguntar = tp.user.preguntar();
 
@@ -415,4 +675,5 @@ async function crearEjercicio(tp, dv, infoPrevia = {}) {
 module.exports = (tp, dv) => ({
     crearEjercicio: crearEjercicio.bind(null, tp, dv),
     crearGuia: crearGuia.bind(null, tp, dv),
+    crearEvaluacion: crearEvaluacion.bind(null, tp, dv),
 });

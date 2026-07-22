@@ -16,7 +16,3 @@ Graficar $\hat{P}(1 \mid x)$ para una clasificación binaria mediante un [[inves
 # Resolución
 ---
 
-
-# Resultado
----
-

@@ -2,6 +2,8 @@
 dia: 2024-09-30
 etapa: sin-empezar
 referencias: 
+aliases:
+  - Naive Bayes Gaussiano
 tags:
   - investigación/ciencias-de-la-computación/Machine-learning
   - investigación/machine-Learning

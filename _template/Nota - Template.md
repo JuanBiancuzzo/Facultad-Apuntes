@@ -23,6 +23,7 @@
             diccionario: tp.user.diccionarioOnline(tp).crear.bind(null, seguidorRef),
             ejercicio: tp.user.ejercicios(tp, dv).crearEjercicio,
             guia: tp.user.ejercicios(tp, dv).crearGuia,
+            evaluacion: tp.user.ejercicios(tp, dv).crearEvaluacion,
         },
     };
     const preguntar = tp.user.preguntar();
@@ -98,7 +99,8 @@
                 [DIRECT_COLECCION.componentes.self]:    ["Ingresar un componente",                  GENERADOR.coleccion.componente],
                 [DIRECT_COLECCION.diccionarios]:        ["Ingresar una palabra de diccionario",     GENERADOR.coleccion.diccionario],
                 [DIRECT_COLECCION.ejercicios]:          ["Ingresar un ejercicio",                   GENERADOR.coleccion.ejercicio,
-                                                         "Ingresar una guia",                       GENERADOR.coleccion.guia],
+                                                         "Ingresar una guia",                       GENERADOR.coleccion.guia,
+                                                         "Ingresar una evaluacion",                 GENERADOR.coleccion.evaluacion],
                 [DIRECT_COLECCION.estructuraDatos]:     ["Ingresar una estructura de datos",        GENERADOR.coleccion.estructuraDatos],
                 [DIRECT_COLECCION.distribuciones.self]: ["Ingresar una función de distribución",    GENERADOR.coleccion.distribucion],
                 [DIRECT_COLECCION.documentos]:          ["Ingresar un documento legal",             GENERADOR.coleccion.documentolegal],

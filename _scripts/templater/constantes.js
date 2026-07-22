@@ -5,7 +5,7 @@ const LENGUAJE_DEFAULT = "default";
 
 module.exports = () => ({
     CARACTERES_INVALIDOS: ['*', '"', '\\', '/', '<', '>', ':', '|', '?'],
-    MESES: (mes) => [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" ][mes - 1],
+    MESES: (mes) => ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"][mes - 1],
     FORMATO_DIA: "YYYY-MM-DD",
     SIMBOLOS: {
         sacar: "⊖",
@@ -73,7 +73,8 @@ module.exports = () => ({
                 integrados: "coleccion/componentes/integrados",
             },
             ejercicios: {
-                guia: "coleccion/ejercicios/guia"
+                guia: "coleccion/ejercicios/guia",
+                guia: "coleccion/ejercicios/evaluacion"
             }
         },
         referencia: {
@@ -189,6 +190,7 @@ module.exports = () => ({
                 self: "ejercicios",
                 ejercicio: "ejercicio",
                 guia: "guia",
+                evaluacion: "evaluacion",
             }
         },
         referencias: "referencia",
@@ -197,7 +199,7 @@ module.exports = () => ({
             investigacion: {
                 self: "investigación",
                 general: "proyecto-investigación",
-            }, 
+            },
             practico: {
                 self: "práctico",
                 general: "proyecto-práctico"
@@ -351,9 +353,9 @@ module.exports = () => ({
             nombre: "nombreDistribucion",
             tipo: {
                 self: "tipoDistribucion",
-                discreta: "discreta", 
-                continua: "continua", 
-                multi: "multivariada", 
+                discreta: "discreta",
+                continua: "continua",
+                multi: "multivariada",
             },
         },
         RELACION_DISTRIBUCION: {
@@ -496,7 +498,7 @@ module.exports = () => ({
                 },
                 struct: {
                     tieneStruct: true,
-                    herencia: false, 
+                    herencia: false,
                     variableEstaticas: false,
                 },
                 generico: {
@@ -644,7 +646,7 @@ module.exports = () => ({
                     union: "Union",
                     funcion: "Función",
                     lenguaje: "Lenguaje",
-                    libreria: "Libreria", 
+                    libreria: "Libreria",
                     modulo: "Modulo",
                     proxy: "Proxeado",
                 },
@@ -671,6 +673,11 @@ module.exports = () => ({
         EJERCICIOS: {
             guia: {
                 nombre: "nombre",
+                numero: "numero",
+                ejercicios: "ejercicios",
+            },
+            evaluacion: {
+                fecha: "fecha",
                 numero: "numero",
                 ejercicios: "ejercicios",
             },

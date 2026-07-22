@@ -14,6 +14,10 @@ guias:
   - 11
   - 12
   - 13
+evaluaciones:
+  - 1
+  - 2
+  - 3
 referencias:
   - 1057
   - 1058
@@ -42,6 +46,12 @@ nombreCarrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/contenido/guiasAcumuladas", { archivo: dv.current() });
+```
+
+# Evaluaciones
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/contenido/evaluacionesAcumuladas", { archivo: dv.current() });
 ```
 
 # Bibliografía
