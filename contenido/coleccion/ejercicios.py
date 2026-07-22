@@ -10,6 +10,7 @@ from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
 from contenido.general.bloque_texto import BloqueTexto
+from contenido.general.etapa import Etapa
 from .tablas import TablaEjercicio as Tabla
 
 SECCION_ENUNCIADO = "Enunciado"
@@ -19,17 +20,25 @@ SECCION_RESULTADO = "Resultado"
 @dataclass
 class Ejercicio(Dato):
     numero: int
+    etapa: Etapa 
     enunciado: Clave
     resolucion: Clave
     resultado: Clave | None
 
     @classmethod
-    def parsear(cls, archivo: Archivo) -> List[Dato] | None:
+    def parsear(cls, archivo: Archivo) -> List[Dato]:
+        etapa = Etapa.de_texto(archivo.extra["etapa"])
+        if etapa is None:
+            mensaje = f"La etapa de la materia {archivo.extra["nombreMateria"]} no es valida {archivo.extra["etapa"]}"
+            loggear(LoggerNivel.FATAL, mensaje)
+            raise Exception(mensaje)
+
         try: 
             numero = int(archivo.extra["numero"])
 
-        except:
-            return None
+        except Exception as err:
+            loggear(LoggerNivel.FATAL, f"Ejercicio en el archivo {archivo.metadata.path()} no tiene un numero valido")
+            raise err
 
         secciones = [SECCION_ENUNCIADO, SECCION_RESOLUCION, SECCION_RESULTADO]
         resultado_split = split_secciones(archivo.contenido, [
@@ -41,16 +50,19 @@ class Ejercicio(Dato):
             for seccion in map(lambda s: resultado_split[s], secciones)
         ))
         if enunciado is None or resolucion is None:
-            return None
+            mensaje = f"El ejercicio {numero} no tiene enunciado o resolucion"
+            loggear(LoggerNivel.FATAL, mensaje)
+            raise Exception(mensaje)
 
         datos: List[Dato] = [enunciado, resolucion]
-        if resultado is not None:
-            datos.append(resultado)
+        if resultado: datos.append(resultado)
+
         datos.append(Ejercicio(
             numero,
+            etapa,
             enunciado.obtener_clave(),
             resolucion.obtener_clave(),
-            resultado.obtener_clave() if resultado is not None else None,
+            resultado.obtener_clave() if resultado else None,
         ))
         return datos
 
@@ -72,6 +84,7 @@ class Ejercicio(Dato):
         try: 
             id_ejercicio = Tabla.insertar(
                 cursor, 
+                self.etapa.value,
                 dependencias[self.enunciado],
                 dependencias[self.resolucion],
                 dependencias[self.resultado] if self.resultado is not None else None,

@@ -34,6 +34,8 @@ class TablaEjercicio(Tabla):
         conn.execute(f"""
             CREATE TABLE IF NOT EXISTS {self.nombre} (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
+                etapa TEXT NOT NULL,
+
                 id_enunciado INTEGER NOT NULL REFERENCES {TablasGenerales.BLOQUE_TEXTO}(id),
                 id_resolucion INTEGER NOT NULL REFERENCES {TablasGenerales.BLOQUE_TEXTO}(id),
                 id_resultado INTEGER REFERENCES {TablasGenerales.BLOQUE_TEXTO}(id)
@@ -41,8 +43,9 @@ class TablaEjercicio(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, id_enunciado: int, id_resolucion: int, id_resultado: int | None) -> int | None: 
+    def insertar(cls, cursor: Cursor, etapa: str, id_enunciado: int, id_resolucion: int, id_resultado: int | None) -> int | None: 
         return cls._insertar(cursor, {
+            "etapa": etapa,
             "id_enunciado": id_enunciado,
             "id_resolucion": id_resolucion,
             "id_resultado": id_resultado,

@@ -36,20 +36,24 @@ class Materia(Dato):
     clave_evaluaciones: List[Clave]
 
     @classmethod
-    def parsear(cls, archivo: Archivo) -> List[Dato] | None:
+    def parsear(cls, archivo: Archivo) -> List[Dato]:
         etapa = Etapa.de_texto(archivo.extra["etapa"])
         if etapa is None:
-            return None
+            mensaje = f"La etapa de la materia {archivo.extra["nombreMateria"]} no es valida {archivo.extra["etapa"]}"
+            loggear(LoggerNivel.FATAL, mensaje)
+            raise Exception(mensaje)
 
         cuatrimestre = Cuatrimestre.de_texto(archivo.extra["cuatri"])
         if cuatrimestre is None:
-            return None
+            mensaje = f"El cuatrimestre de la materia {archivo.extra["nombreMateria"]} no es valida {archivo.extra["cuatri"]}"
+            loggear(LoggerNivel.FATAL, mensaje)
+            raise Exception(mensaje)
 
         clave_carrera = Carrera._obtener_clave(archivo.extra["nombreCarrera"])
 
         resultado = split_secciones(archivo.contenido, [
             Seccion(1, nombre) 
-            for nombre in ["Apuntes", "Resumen", "Guías", "Bibliografía"]
+            for nombre in ["Apuntes", "Resumen", "Guías", "Evaluacion", "Bibliografía"]
         ])
         resumen = BloqueTexto(Texto(resultado["Resumen"])) if resultado["Resumen"] is not None else None
 
