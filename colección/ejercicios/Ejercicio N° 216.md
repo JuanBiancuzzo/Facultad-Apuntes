@@ -1,5 +1,5 @@
 ---
-etapa: sin-empezar
+etapa: empezado
 dia: 2026-07-21
 tags:
   - colección/ejercicios/ejercicio
@@ -12,8 +12,7 @@ Sea $$ \begin{align}
 	Z &\sim \text{Cat}(c_1,~ \cdots,~ c_K) & 
 	X \mid Z = k &\sim \text{Exp}(\lambda_k) 
 \end{align} $$
-1. Escriba la verosimilitud completa
-2. Escriba la expresión del paso E y obtenga las ecuaciones de actualización del paso M. Derive las expresiones de actualización para $c_k$ y $\lambda_k$ 
+Escriba la expresión del paso E y obtenga las ecuaciones de actualización del paso M. Derive las expresiones de actualización para $c_k$ y $\lambda_k$ 
 
 # Resolución
 ---

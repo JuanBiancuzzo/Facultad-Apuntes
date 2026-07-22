@@ -1,5 +1,5 @@
 ---
-etapa: sin-empezar
+etapa: empezado
 dia: 2026-07-21
 tags:
   - colección/ejercicios/ejercicio
@@ -8,7 +8,7 @@ numero: 215
 ---
 # Enunciado
 ---
-Se da una tabla de datos de entrenamiento compuesta por $(X,~ Y)$, donde $X \in \mathbb{R}^d$ e $Y \in \set{0,~ 1}$ $$ \begin{array}{c|c} 
+Se da una tabla de datos de entrenamiento compuesta por $(X,~ Y)$, donde $X \in \mathbb{R}^d$ e $Y \in \set{0,~ 1}$ $$ \begin{array}{ c|c } 
 	X & 1.2 & 0.2 & 2.3 & 0.4 & 2.0 & 1.6 & 1.0 & 2.5 & 2.7 \\\hline 
 	Y & 0 & 1 & 0 & 0 & 0 & 1 & 1 & 1 & 1
 \end{array} $$

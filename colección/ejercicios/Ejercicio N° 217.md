@@ -1,5 +1,5 @@
 ---
-etapa: sin-empezar
+etapa: empezado
 dia: 2026-07-21
 tags:
   - colección/ejercicios/ejercicio

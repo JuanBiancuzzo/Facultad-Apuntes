@@ -62,6 +62,7 @@ class Evaluacion {
             let ejercicio = new Ejercicio(tp, dv, {
                 [DATOS_EJERCICIOS.etapa]: ETAPAS.sinEmpezar,
                 [DATOS_EJERCICIOS.numero]: numero,
+                [DATOS_EJERCICIOS.conResultado]: false,
             });
             this.ejerciciosAgregados[numero] = ejercicio;
             return ejercicio;
@@ -245,6 +246,7 @@ class Guia {
             .sort(ejercicio => ejercicio[this.configEjercicio.numero]);
 
         this.nombre = representacionPrevia[this.config.nombre];
+        this.conResultado = representacionPrevia[this.config.conResultado];
         if (this.config.ejercicios in representacionPrevia) {
             this.ejercicios = representacionPrevia[this.config.ejercicios];
 
@@ -278,18 +280,19 @@ class Guia {
         });
 
         this.ejerciciosAgregados = {}
-        let generarNuevoEjercicio = () => {
+        let generarNuevoEjercicio = (conResultado) => {
             let numero = this.seguidorEjercicios.conseguirNumero();
             let ejercicio = new Ejercicio(tp, dv, {
                 [DATOS_EJERCICIOS.etapa]: ETAPAS.sinEmpezar,
                 [DATOS_EJERCICIOS.numero]: numero,
+                [DATOS_EJERCICIOS.conResultado]: conResultado,
             });
             this.ejerciciosAgregados[numero] = ejercicio;
             return ejercicio;
         };
 
         this.informacion = {
-            ejercicioNuevo: () => generarNuevoEjercicio(),
+            ejercicioNuevo: (conResultado) => generarNuevoEjercicio(conResultado),
         }
     }
 
@@ -305,6 +308,13 @@ class Guia {
                     "Nombre de la guia",
                     generarError.Quit("No se ingresa el nombre de la guia"),
                 );
+                break;
+
+            case this.config.conResultado:
+                this.conResultado = !this.conResultado;
+                for (let j = 0; j < this.ejercicios.length; j++) {
+                    this.ejercicios[j][this.configEjercicio.conResultado] = this.conResultado;
+                }
                 break;
 
             case MODIFICAR_EJERCICIO:
@@ -352,12 +362,12 @@ class Guia {
                         break;
 
                     } else if (cantidadEjerciciosNuevos == 1) {
-                        let nuevoEjercicio = this.informacion.ejercicioNuevo();
+                        let nuevoEjercicio = this.informacion.ejercicioNuevo(this.conResultado);
                         await generarPreguntas.formulario(nuevoEjercicio, "Ingresar información del ejercicio");
                         this.ejercicios.push(nuevoEjercicio);
                     } else {
                         for (let i = 0; i < cantidadEjerciciosNuevos; i++) {
-                            this.ejercicios.push(this.informacion.ejercicioNuevo());
+                            this.ejercicios.push(this.informacion.ejercicioNuevo(this.conResultado));
                         }
                     }
 
@@ -402,6 +412,9 @@ class Guia {
             ? ` ${this.simbolos.modificar} Modificar el nombre de la guia, donde era ${this.nombre}`
             : ` ${this.simbolos.agregar} Nombre de la guia`
         );
+
+        opciones.push(this.config.conResultado);
+        valores.push(` ${this.simbolos.modificar} Invertir si tiene resultado el ejercicio, donde era ${this.conResultado ? "Con resultado" : "Sin resultado"}`);
 
         for (let [indice, ejercicio] of this.ejercicios.entries()) {
             let descripcionEjercicio = ejercicio.titulo();
@@ -463,6 +476,7 @@ class Ejercicio {
         this.etapa = representacionPrevia[this.config.etapa]
             ? representacionPrevia[this.config.etapa]
             : this.etapas.sinEmpezar;
+        this.conResultado = representacionPrevia[this.config.ejercicio.conResultado];
 
         if (this.config.ejercicio.numero in representacionPrevia) {
             this.numero = representacionPrevia[this.config.ejercicio.numero];
@@ -680,8 +694,10 @@ async function crearEjercicio(tp, dv, infoPrevia = {}) {
     texto += "\n" + SECCIONES.seccion(SECCIONES.resolucion);
     texto += "\n---\n\n"
 
-    // texto += "\n" + SECCIONES.seccion(SECCIONES.resultado);
-    // texto += "\n---\n\n"
+    if (infoEjercicio.conResultado) {
+        texto += "\n" + SECCIONES.seccion(SECCIONES.resultado);
+        texto += "\n---\n\n"
+    }
 
     return {
         metadata: {

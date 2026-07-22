@@ -675,6 +675,7 @@ module.exports = () => ({
                 nombre: "nombre",
                 numero: "numero",
                 ejercicios: "ejercicios",
+                conResultado: "conResultado",
             },
             evaluacion: {
                 fecha: "fecha",
@@ -685,6 +686,7 @@ module.exports = () => ({
                 nombre: "nombre",
                 etapa: "etapa",
                 numero: "numero",
+                conResultado: "conResultado",
             }
         },
         REFERENCIAS: {

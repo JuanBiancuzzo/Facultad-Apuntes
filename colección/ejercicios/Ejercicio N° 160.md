@@ -1,5 +1,5 @@
 ---
-etapa: sin-empezar
+etapa: empezado
 dia: 2026-07-21
 tags:
   - colección/ejercicios/ejercicio
@@ -12,7 +12,7 @@ Considere el [[ingeniería en informática/orga/Machine learning/Problema de reg
 1. Hallar la [[ingeniería en informática/proba/Variables aleatorias condicionadas/Variable continua condicional|densidad condicional]] $p_{Y \mid X}(y \mid x)$
 2. Calcular la [[ingeniería en informática/proba/Esperanza condicional/Esperanza condicional|esperanza]] $\mathbb{E}[ Y \mid X = x ]$
 3. Indique cuál es el [[ingeniería en informática/proba/Representación de variables aleatorias/Predicción#Mejor predictor|estimador bayesiano óptimo]]
-4. Calcule el [[ingeniería en informática/orga/Machine learning/Aprendizaje supervisado#^error-bayesiano|error bayesiano]] asociado al estimador obtenido
+4. Calcule el [[ingeniería en informática/proba/Representación de variables aleatorias/Predicción#Mejor predictor|error bayesiano]] asociado al estimador obtenido
 
 # Resolución
 ---
