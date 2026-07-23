@@ -1,8 +1,9 @@
 from sqlite3 import Connection as Conn, Cursor
-from contenido.tablas import Tabla, registrar_tabla, TablasColeccion as Tablas
-from contenido.tablas import timestamp, TablasGenerales, TablasReferencias
+from tablas import Tabla, registrar_tabla
 from typing import Dict, List, Any
 import datetime as dt
+
+from contenido.tablas import TablasColeccion as Tablas, TablasGenerales, TablasReferencias, timestamp
 
 @registrar_tabla
 class TablaAjedrez(Tabla):

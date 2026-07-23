@@ -1,7 +1,8 @@
 from sqlite3 import Connection as Conn, Cursor
+from tablas import Tabla, registrar_tabla
 from typing import Dict, Any
-from contenido.tablas import Tabla, registrar_tabla, TablasFacultad as Tablas
-from contenido.tablas import TablasColeccion, TablasGenerales, TablasGenerales
+
+from contenido.tablas import TablasFacultad as Tablas, TablasColeccion, TablasGenerales, TablasGenerales
 
 @registrar_tabla
 class TablaCarrera(Tabla):

@@ -1,16 +1,22 @@
 from sqlite3 import Connection as Conn, Cursor
 from abc import ABC, abstractmethod
-from typing import Dict, List, Any
-from .registros import Tablas
+from typing import Dict, List, Iterable, Any
 
-tablas_registradas = []
+type Tablas = str
+
+_tablas_registradas = []
 def registrar_tabla(cls):
-    global tablas_registradas
-    tablas_registradas.append(cls)
+    global _tablas_registradas
+    _tablas_registradas.append(cls)
+    return cls
+
+def tablas_registradas() -> Iterable[Tabla]:
+    global _tablas_registradas
+    return map(lambda tabla: tabla(), _tablas_registradas)
 
 class Tabla(ABC):
     nombre: Tablas
-    # necesito_tablas: List[Tablas]
+    necesito_tablas: List[Tablas]
 
     @abstractmethod
     def crear(self, conn: Conn) -> None: 

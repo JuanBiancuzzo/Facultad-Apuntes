@@ -7,7 +7,9 @@ from archivos import Archivo
 
 from argumentos import Argumentos 
 from lectura import procesar_archivos, Procesar
-from contenido import crear_tablas, registrar 
+from tablas import crear_tablas
+
+from contenido import registrar 
 
 def parsear_archivos(nombre: str) -> Archivo | None:
     archivo, err = Archivo.parsear(nombre, args.input_path)

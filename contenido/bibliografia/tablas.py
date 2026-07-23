@@ -1,6 +1,7 @@
 from sqlite3 import Connection as Conn, Cursor
-from contenido.tablas import Tabla, registrar_tabla, TablasExtra as Tablas
-from contenido.tablas import TablasReferencias, TablasFacultad
+from tablas import Tabla, registrar_tabla
+
+from contenido.tablas import TablasExtra as Tablas, TablasReferencias, TablasFacultad
 
 @registrar_tabla
 class TablaBibliografia(Tabla):

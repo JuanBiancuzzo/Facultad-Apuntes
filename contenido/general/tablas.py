@@ -1,5 +1,7 @@
 from sqlite3 import Connection as Conn, Cursor
-from contenido.tablas import Tabla, registrar_tabla, TablasGenerales as Tablas
+from tablas import Tabla, registrar_tabla
+
+from contenido.tablas import TablasGenerales as Tablas
 
 @registrar_tabla
 class TablaAutore(Tabla):

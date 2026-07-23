@@ -3,5 +3,4 @@ from .registros import Tablas, \
     TablasColeccion,  TablasExtra, \
     TablasGenerales 
 
-from .tabla import Tabla, registrar_tabla
 from .utilidad import timestamp
