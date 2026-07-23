@@ -1,8 +1,15 @@
 from sqlite3 import Connection as Conn, Cursor
-from contenido.tablas import Tabla, TablasExtra as Tablas, TablasReferencias
+from contenido.tablas import Tabla, registrar_tabla, TablasExtra as Tablas
+from contenido.tablas import TablasReferencias, TablasFacultad
 
+@registrar_tabla
 class TablaBibliografia(Tabla):
     nombre = Tablas.BIBLIOGRAFIA
+    necesito_tablas = [ 
+        TablasReferencias.REFERENCIAS,  
+        TablasFacultad.MATERIAS,
+        TablasFacultad.TEMA,
+    ]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""

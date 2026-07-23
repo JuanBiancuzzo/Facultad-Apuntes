@@ -1,10 +1,13 @@
 from sqlite3 import Connection as Conn, Cursor
-from contenido.tablas import Tabla, timestamp, TablasColeccion as Tablas, TablasGenerales, TablasReferencias, TablasColeccion
+from contenido.tablas import Tabla, registrar_tabla, TablasColeccion as Tablas
+from contenido.tablas import timestamp, TablasGenerales, TablasReferencias
 from typing import Dict, List, Any
 import datetime as dt
 
+@registrar_tabla
 class TablaAjedrez(Tabla):
     nombre = Tablas.AJEDREZ
+    necesito_tablas = []
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -27,8 +30,10 @@ class TablaAjedrez(Tabla):
             "movimientos": movimientos_conjunto
         })
 
+@registrar_tabla
 class TablaEjercicio(Tabla):
     nombre = Tablas.EJERCICIOS
+    necesito_tablas = [ TablasGenerales.BLOQUE_TEXTO ]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -51,8 +56,10 @@ class TablaEjercicio(Tabla):
             "id_resultado": id_resultado,
         })
 
+@registrar_tabla
 class TablaGuia(Tabla):
     nombre = Tablas.GUIAS
+    necesito_tablas = []
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -68,8 +75,10 @@ class TablaGuia(Tabla):
             "nombre": nombre,
         })
 
+@registrar_tabla
 class TablaEjerciciosGuia(Tabla):
     nombre = Tablas.GUIA_EJERCICIOS
+    necesito_tablas = [ Tablas.GUIAS, Tablas.EJERCICIOS ]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -86,8 +95,10 @@ class TablaEjerciciosGuia(Tabla):
             "id_ejercicio": id_ejercicio,
         })
 
+@registrar_tabla
 class TablaEvaluacion(Tabla):
     nombre = Tablas.EVALUACION
+    necesito_tablas = []
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -103,8 +114,10 @@ class TablaEvaluacion(Tabla):
             "fecha": timestamp(fecha),
         })
 
+@registrar_tabla
 class TablaEjerciciosEvaluacion(Tabla):
     nombre = Tablas.EVALUACION_EJERCICIOS
+    necesito_tablas = [ Tablas.EVALUACION, Tablas.EJERCICIOS ]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -121,8 +134,14 @@ class TablaEjerciciosEvaluacion(Tabla):
             "id_ejercicio": id_ejercicio,
         })
 
+@registrar_tabla
 class TablaLibro(Tabla):
     nombre = Tablas.LIBRO
+    necesito_tablas = [ 
+        TablasGenerales.IMAGENES, 
+        TablasGenerales.BLOQUE_TEXTO,
+        TablasReferencias.LIBRO,
+    ]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -146,8 +165,14 @@ class TablaLibro(Tabla):
         if id_cover: valores["id_cover"] = id_cover
         return cls._insertar(cursor, valores)
 
+@registrar_tabla
 class TablaCapitulo(Tabla):
     nombre = Tablas.CAPITULO
+    necesito_tablas = [ 
+        Tablas.LIBRO, 
+        TablasGenerales.BLOQUE_TEXTO,
+        TablasReferencias.CAPITULOS,
+    ]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -157,7 +182,7 @@ class TablaCapitulo(Tabla):
                 
                 id_resumen INTEGER REFERENCES {TablasGenerales.BLOQUE_TEXTO}(id),
                 id_libro INTEGER NOT NULL REFERENCES {Tablas.LIBRO}(id),
-                id_capitulo_referencia INTEGER NOT NULL REFERENCES {TablasReferencias.LIBRO}(num_referencia)
+                id_capitulo_referencia INTEGER NOT NULL REFERENCES {TablasReferencias.CAPITULOS}(num_referencia)
             );
         """)
 
@@ -171,14 +196,16 @@ class TablaCapitulo(Tabla):
         if id_resumen: valores["id_resumen"] = id_resumen
         return cls._insertar(cursor, valores)
 
+@registrar_tabla
 class TablaGuiasDeCapitulo(Tabla):
     nombre = Tablas.GUIAS_CAPITULO
+    necesito_tablas = [ Tablas.CAPITULO, Tablas.GUIAS ]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
             CREATE TABLE IF NOT EXISTS {self.nombre} (
                 id_capitulo INTEGER NOT NULL REFERENCES {Tablas.CAPITULO}(id),
-                id_guia INTEGER NOT NULL REFERENCES {TablasColeccion.GUIAS}(id)
+                id_guia INTEGER NOT NULL REFERENCES {Tablas.GUIAS}(id)
             );
         """)
     
@@ -189,8 +216,13 @@ class TablaGuiasDeCapitulo(Tabla):
             "id_guia": id_guia,
         })
 
+@registrar_tabla
 class TablaPaper(Tabla):
     nombre = Tablas.PAPER
+    necesito_tablas = [ 
+        TablasGenerales.BLOQUE_TEXTO,
+        TablasReferencias.PAPER,
+    ]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -212,8 +244,13 @@ class TablaPaper(Tabla):
         if id_resumen: valores["id_resumen"] = id_resumen
         return cls._insertar(cursor, valores)
 
+@registrar_tabla
 class TablaDiccionario(Tabla):
     nombre = Tablas.DICCIONARIO
+    necesito_tablas = [
+        TablasGenerales.BLOQUE_TEXTO,
+        TablasReferencias.DICCIONARIO,
+    ]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""

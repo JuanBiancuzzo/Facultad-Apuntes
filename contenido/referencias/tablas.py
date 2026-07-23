@@ -1,10 +1,13 @@
 from sqlite3 import Connection as Conn, Cursor
 from typing import Dict, Any
-from contenido.tablas import Tabla, timestamp, TablasReferencias as Tablas, TablasGenerales
+from contenido.tablas import Tabla, registrar_tabla, TablasReferencias as Tablas
+from contenido.tablas import timestamp, TablasGenerales
 import datetime as dt
 
+@registrar_tabla
 class TablaReferencia(Tabla):
     nombre = Tablas.REFERENCIAS
+    necesito_tablas = []
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -22,8 +25,10 @@ class TablaReferencia(Tabla):
             "fecha_registrada": timestamp(fecha_registrado),
         })
 
+@registrar_tabla
 class TablaWebsite(Tabla):
     nombre = Tablas.WEB
+    necesito_tablas = [ Tablas.REFERENCIAS ]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -49,8 +54,10 @@ class TablaWebsite(Tabla):
         if fecha: datos["fecha"] = timestamp(fecha)
         return cls._insertar(cursor, datos)
 
+@registrar_tabla
 class TablaWikipedia(Tabla):
     nombre = Tablas.WIKIPEDIA
+    necesito_tablas = [ Tablas.REFERENCIAS ]
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -72,8 +79,10 @@ class TablaWikipedia(Tabla):
             "num_referencia": num_referencia,
         })
 
+@registrar_tabla
 class TablaYoutube(Tabla):
     nombre = Tablas.YOUTUBE
+    necesito_tablas = [ Tablas.REFERENCIAS ]
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -97,8 +106,10 @@ class TablaYoutube(Tabla):
             "num_referencia": num_referencia,
         })
 
+@registrar_tabla
 class TablaLibro(Tabla):
     nombre = Tablas.LIBRO
+    necesito_tablas = [ Tablas.REFERENCIAS, TablasGenerales.EDITORIAL ]
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -134,8 +145,10 @@ class TablaLibro(Tabla):
         if doi: valores["doi"] = doi
         return cls._insertar(cursor, valores)
 
+@registrar_tabla
 class TablaCapitulo(Tabla):
     nombre = Tablas.CAPITULOS
+    necesito_tablas = [ Tablas.REFERENCIAS, Tablas.LIBRO ]
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -171,8 +184,10 @@ class TablaCapitulo(Tabla):
         if pagina_final: valores["pagina_final"] = pagina_final
         return cls._insertar(cursor, valores)
 
+@registrar_tabla
 class TablaPaper(Tabla):
     nombre = Tablas.PAPER
+    necesito_tablas = [ Tablas.REFERENCIAS ]
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -203,8 +218,10 @@ class TablaPaper(Tabla):
             
         return cls._insertar(cursor, valores)
 
+@registrar_tabla
 class TablaDiccionario(Tabla):
     nombre = Tablas.DICCIONARIO
+    necesito_tablas = [ Tablas.REFERENCIAS, TablasGenerales.EDITORIAL ]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -234,8 +251,10 @@ class TablaDiccionario(Tabla):
             "num_referencia": num_referencia,
         })
 
+@registrar_tabla
 class TablaCursoOnline(Tabla):
     nombre = Tablas.CURSO_ONLINE
+    necesito_tablas = [ Tablas.REFERENCIAS ]
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -262,8 +281,10 @@ class TablaCursoOnline(Tabla):
             "num_referencia": num_referencia,
         })
 
+@registrar_tabla
 class TablaTema(Tabla):
     nombre = Tablas.TEMA
+    necesito_tablas = [ Tablas.REFERENCIAS, Tablas.CURSO_ONLINE ]
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -293,8 +314,18 @@ class TablaTema(Tabla):
         return cls._insertar(cursor, valores)
 
 
+@registrar_tabla
 class TablaReferenciaAutore(Tabla):
     nombre = Tablas.AUTORES_REFERENCIAS
+    necesito_tablas = [ 
+        TablasGenerales.AUTORES,
+        Tablas.WEB,
+        Tablas.LIBRO,
+        Tablas.CAPITULOS,
+        Tablas.PAPER,
+        Tablas.CURSO_ONLINE,
+        Tablas.TEMA,
+    ]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""

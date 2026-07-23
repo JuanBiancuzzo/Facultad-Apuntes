@@ -1,9 +1,12 @@
 from sqlite3 import Connection as Conn, Cursor
 from typing import Dict, Any
-from contenido.tablas import Tabla, TablasFacultad as Tablas, TablasColeccion, TablasGenerales, TablasGenerales
+from contenido.tablas import Tabla, registrar_tabla, TablasFacultad as Tablas
+from contenido.tablas import TablasColeccion, TablasGenerales, TablasGenerales
 
+@registrar_tabla
 class TablaCarrera(Tabla):
     nombre = Tablas.CARRERAS
+    necesito_tablas = []
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -25,8 +28,10 @@ class TablaCarrera(Tabla):
             "etapa": etapa,
         })
 
+@registrar_tabla
 class TablaPlanDeEstudio(Tabla):
     nombre = Tablas.PLANES_DE_ESTUDIO
+    necesito_tablas = [ Tablas.CARRERAS ]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -44,8 +49,10 @@ class TablaPlanDeEstudio(Tabla):
             "id_carrera": id_carrera,
         })
 
+@registrar_tabla
 class TablaCuatrimestre(Tabla):
     nombre = Tablas.CUATRI
+    necesito_tablas = []
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -63,8 +70,15 @@ class TablaCuatrimestre(Tabla):
             "parte": parte,
         })
 
+@registrar_tabla
 class TablaMateria(Tabla):
     nombre = Tablas.MATERIAS
+    necesito_tablas = [ 
+        TablasGenerales.BLOQUE_TEXTO,
+        Tablas.PLANES_DE_ESTUDIO,
+        Tablas.CARRERAS,
+        Tablas.CUATRI,
+    ]
         
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -99,8 +113,10 @@ class TablaMateria(Tabla):
         if id_resumen: valores["id_resumen"] = id_resumen
         return cls._insertar(cursor, valores)
 
+@registrar_tabla
 class TablaGuiasDeMateria(Tabla):
     nombre = Tablas.GUIAS_MATERIA
+    necesito_tablas = [ Tablas.MATERIAS, TablasColeccion.GUIAS ]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -117,8 +133,10 @@ class TablaGuiasDeMateria(Tabla):
             "id_guia": id_guia,
         })
 
+@registrar_tabla
 class TablaEvaluacionesDeMateria(Tabla):
     nombre = Tablas.EVALUACIONES_MATERIA
+    necesito_tablas = [ Tablas.MATERIAS, TablasColeccion.EVALUACION ]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -135,8 +153,10 @@ class TablaEvaluacionesDeMateria(Tabla):
             "id_evaluacion": id_evaluacion,
         })
 
+@registrar_tabla
 class TablaTema(Tabla):
     nombre = Tablas.TEMA
+    necesito_tablas = [ TablasGenerales.BLOQUE_TEXTO, Tablas.MATERIAS ]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""

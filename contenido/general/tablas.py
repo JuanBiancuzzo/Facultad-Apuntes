@@ -1,8 +1,10 @@
 from sqlite3 import Connection as Conn, Cursor
-from contenido.tablas import Tabla, TablasGenerales as Tablas
+from contenido.tablas import Tabla, registrar_tabla, TablasGenerales as Tablas
 
+@registrar_tabla
 class TablaAutore(Tabla):
     nombre = Tablas.AUTORES
+    necesito_tablas = []
 
     def crear(self, conn: Conn) -> None: 
         conn.execute(f"""
@@ -20,8 +22,10 @@ class TablaAutore(Tabla):
             "apellido": apellido,
         })
 
+@registrar_tabla
 class TablaBloqueTexto(Tabla):
     nombre = Tablas.BLOQUE_TEXTO
+    necesito_tablas = []
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -37,8 +41,10 @@ class TablaBloqueTexto(Tabla):
             "texto": bjson,
         }) 
 
+@registrar_tabla
 class TablaEditorial(Tabla):
     nombre = Tablas.EDITORIAL
+    necesito_tablas = []
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -54,8 +60,10 @@ class TablaEditorial(Tabla):
             "nombre": nombre,
         }) 
 
+@registrar_tabla
 class TablaImagen(Tabla):
     nombre = Tablas.IMAGENES
+    necesito_tablas = []
 
     def crear(self, conn: Conn) -> None: 
         conn.execute(f"""
