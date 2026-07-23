@@ -25,10 +25,12 @@ class Capitulo(Dato):
     clave_ref_capitulo: Clave
 
     @classmethod
-    def parsear(cls, archivo: Archivo) -> List[Dato] | None:
+    def parsear(cls, archivo: Archivo) -> List[Dato]:
         etapa = Etapa.de_texto(archivo.extra["etapa"])
         if etapa is None:
-            return None
+            mensaje = f"La etapa de un capitulo del libro {archivo.metadata.nombre} no es valida {archivo.extra["etapa"]}"
+            loggear(LoggerNivel.FATAL, mensaje)
+            raise Exception(mensaje)
 
         clave_ref_libro = ReferenciaLibro._obtener_clave(archivo.extra["numReferencia"])
         clave_libro = Libro._obtener_clave(clave_ref_libro)

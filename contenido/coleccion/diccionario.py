@@ -18,7 +18,7 @@ class Diccionario(Dato):
     clave_ref_diccionario: Clave
 
     @classmethod
-    def parsear(cls, archivo: Archivo) -> List[Dato] | None:
+    def parsear(cls, archivo: Archivo) -> List[Dato]:
         texto = BloqueTexto(archivo.contenido)
         return [
             texto, 

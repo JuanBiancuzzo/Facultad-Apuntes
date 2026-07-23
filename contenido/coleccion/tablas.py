@@ -6,6 +6,30 @@ import datetime as dt
 from contenido.tablas import TablasColeccion as Tablas, TablasGenerales, TablasReferencias, timestamp
 
 @registrar_tabla
+class TablaColeccion(Tabla):
+    nombre = Tablas.COLECCION
+    necesito_tablas = [ TablasGenerales.BLOQUE_TEXTO ]
+
+    def crear(self, conn: Conn) -> None:
+        conn.execute(f"""
+            CREATE TABLE IF NOT EXISTS {self.nombre} (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                tipo TEXT NOT NULL,
+                estado TEXT NOT NULL,
+
+                id_descripcion INTEGER NOT NULL REFERENCES {TablasGenerales.BLOQUE_TEXTO}(id)
+            );
+        """)
+
+    @classmethod
+    def insertar(cls, cursor: Cursor, tipo: str, estado: str, id_descripcion: int) -> None: 
+        cls._insertar(cursor, {
+            "tipo": tipo,
+            "estado": estado,
+            "id_descripcion": id_descripcion,
+        })
+
+@registrar_tabla
 class TablaAjedrez(Tabla):
     nombre = Tablas.AJEDREZ
     necesito_tablas = []

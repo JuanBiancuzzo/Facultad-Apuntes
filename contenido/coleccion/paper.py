@@ -22,7 +22,7 @@ class Paper(Dato):
     clave_ref_paper: Clave
 
     @classmethod
-    def parsear(cls, archivo: Archivo) -> List[Dato] | None:
+    def parsear(cls, archivo: Archivo) -> List[Dato]:
         etapa = Etapa.de_texto(archivo.extra["etapa"])
         if etapa is None:
             mensaje = f"Al intentar crear paper {archivo.metadata.nombre}, no tiene etapa"

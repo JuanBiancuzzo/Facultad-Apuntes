@@ -11,35 +11,30 @@ def _registrar_markdown(tag: str, archivo: Archivo) -> List[Dato]:
 
     if tag.startswith("colección/"):
         match tag.replace("colección/", ""):
+            case "representante":
+                datos.extend(coleccion.Coleccion.parsear(archivo))
+
             case "ejercicios/ejercicio":
-                extra = coleccion.Ejercicio.parsear(archivo)
-                if extra: datos.extend(extra)
+                datos.extend(coleccion.Ejercicio.parsear(archivo))
 
             case "ejercicios/guia":
-                extra = coleccion.Guia.parsear(archivo)
-                if extra: datos.extend(extra)
+                datos.extend(coleccion.Guia.parsear(archivo))
 
             case "ejercicios/evaluacion":
-                extra = coleccion.Evaluacion.parsear(archivo)
-                if extra: datos.extend(extra)
+                datos.extend(coleccion.Evaluacion.parsear(archivo))
 
             case "apertura/ajedrez":
                 datos.append(coleccion.Ajedrez.parsear(archivo))
 
             case "biblioteca/libro":
-                extra = coleccion.Libro.parsear(archivo)
-                if extra: datos.extend(extra)
-
-                extra = coleccion.Capitulo.parsear(archivo)
-                if extra: datos.extend(extra)
+                datos.extend(coleccion.Libro.parsear(archivo))
+                datos.extend(coleccion.Capitulo.parsear(archivo))
 
             case "biblioteca/paper":
-                extra = coleccion.Paper.parsear(archivo)
-                if extra: datos.extend(extra)
+                datos.extend(coleccion.Paper.parsear(archivo))
 
             case "diccionario/palabra":
-                extra = coleccion.Diccionario.parsear(archivo)
-                if extra: datos.extend(extra)
+                datos.extend(coleccion.Diccionario.parsear(archivo))
 
     elif tag.startswith("referencia/"):
         extra = referencias.Referencia.parsear(archivo)

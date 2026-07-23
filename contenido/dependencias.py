@@ -17,6 +17,7 @@ class TipoNodo(IntEnum):
     PLAN_DE_ESTUDIO = auto() 
 
     # Coleccion
+    COLECCION = auto()
     EJERCICIO = auto()
     GUIA = auto()
     EVALUACION = auto()

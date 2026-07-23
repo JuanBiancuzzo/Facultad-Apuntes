@@ -35,6 +35,8 @@ class TablasReferencias(StrEnum):
     TEMA = "ReferenciasTema"
 
 class TablasColeccion(StrEnum):
+    COLECCION = "Colecciones"
+
     # Ejercicios
     EJERCICIOS = "Ejercicios"
     GUIAS = "Guias"

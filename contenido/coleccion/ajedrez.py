@@ -22,7 +22,7 @@ class Ajedrez(Dato):
     movimientos: List[str]
 
     @classmethod
-    def parsear(cls, archivo: Archivo) -> Ajedrez:
+    def parsear(cls, archivo: Archivo) -> Dato:
         return Ajedrez(
             archivo.metadata.nombre,
             TipoMovimientosAjedrez.APERTURA,
