@@ -1,10 +1,8 @@
-# Python-generated files
-__pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
+# Golang-generated files
+go.work
+go.work.sum
+*_templ.go
+*_templ.text
 
 # Virtual environments
 .venv
