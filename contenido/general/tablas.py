@@ -1,7 +1,7 @@
 from sqlite3 import Connection as Conn, Cursor
 from tablas import Tabla, registrar_tabla
 
-from contenido.tablas import TablasGenerales as Tablas
+from contenido.tablas import TablasGenerales as Tablas, TablasColeccion, TablasFacultad
 
 @registrar_tabla
 class TablaAutore(Tabla):
@@ -23,6 +23,40 @@ class TablaAutore(Tabla):
             "nombre": nombre,
             "apellido": apellido,
         })
+
+@registrar_tabla
+class TablaEmbedding(Tabla):
+    nombre = Tablas.EMBEDDING
+    necesito_tablas = [
+        TablasColeccion.COLECCION,
+
+        TablasColeccion.AJEDREZ,
+        TablasColeccion.DICCIONARIO,
+        TablasColeccion.EJERCICIOS,
+
+        TablasColeccion.LIBRO,
+        TablasColeccion.CAPITULO,
+        TablasColeccion.PAPER,
+    ]
+
+    def crear(self, conn: Conn) -> None:
+        conn.execute(f"""
+            CREATE TABLE IF NOT EXISTS {self.nombre} (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                embedding BLOB NOT NULL,
+
+                tabla TEXT NOT NULL,
+                id_dato INTEGER NOT NULL
+            );
+        """)
+
+    @classmethod
+    def insertar(cls, cursor: Cursor, embedding: bytes, tabla: str, id_dato: int) -> int | None: 
+        return cls._insertar(cursor, {
+            "embedding": embedding,
+            "tabla": tabla,
+            "id_dato": id_dato,
+        }) 
 
 @registrar_tabla
 class TablaBloqueTexto(Tabla):
