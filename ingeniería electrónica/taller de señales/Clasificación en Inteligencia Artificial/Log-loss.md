@@ -2,7 +2,8 @@
 dia: 2025-09-26
 etapa: empezado
 referencias: []
-aliases: []
+aliases: 
+  - Negative log-loss
 tags:
   - carrera/ingeniería-electrónica/taller-de-señales/Clasificación-en-Inteligencia-Artificial
   - nota/facultad
