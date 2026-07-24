@@ -26,7 +26,6 @@ class Archivo:
     def crear_blob(cls, metadata: Metadata, blob: bytes) -> Archivo:
         return Archivo(metadata, {}, Texto(""), blob)
 
-
     @classmethod 
     def crear_md(cls, metadata: Metadata, extra: Dict[str, Any], contenido: Texto):
         return Archivo(metadata, extra, contenido, b'') 

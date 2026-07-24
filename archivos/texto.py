@@ -3,6 +3,8 @@ from hashlib import shake_256
 from typing import Dict, List, Any
 from dataclasses import dataclass
 
+TAMANIO_CHUNK = 1000
+
 @dataclass
 class Texto:
     texto: str = ""
@@ -20,6 +22,18 @@ class Texto:
     def bjson(self) -> bytes:
         return bytes(self.texto, "utf-8")
 
+    def chunks(self) -> List[str]:
+        split = [
+            self.texto[i : i + TAMANIO_CHUNK] 
+            for i in range(0, len(self.texto), TAMANIO_CHUNK)
+        ]
+
+        if len(split) > 1 and len(split[-1]) < TAMANIO_CHUNK // 2:
+            split[-2] = f"{split[-2]}{split[-1]}"
+            split = split[:-1]
+
+        return split
+
 @dataclass
 class Seccion:
     nivel: int
@@ -31,7 +45,7 @@ FINAL_SECCION = "_final_"
 
 def match_seccion(seccion: Seccion):
     nivel = "".join(("#" for _ in range(seccion.nivel)))
-    return f"{nivel} {seccion.header}" + "[ ]*[\n]*-{3,}[ ]*[\n]*"
+    return f"{nivel} {seccion.header}" + "[ ]*[\n]*-{3,}[ ]*[\n]*" if seccion.separador else ""
 
 def encontrar_primer(valores: List[Any | None]) -> Any | None:
     for valor in valores:
@@ -49,10 +63,7 @@ def split_secciones(texto: Texto, secciones: List[Seccion]) -> Dict[str, str | N
         parseo[seccion.header] = None
 
         resultado = re.search(patron, texto.texto[indice_inicio:], re.DOTALL)
-        if resultado is not None:
-            indice_inicio = resultado.span()[1]
-            resultado = indice_inicio
-
+        if resultado is not None: resultado = resultado.span()
         partes.append(resultado)
 
     inicio = encontrar_primer(partes)
@@ -60,17 +71,17 @@ def split_secciones(texto: Texto, secciones: List[Seccion]) -> Dict[str, str | N
         parseo[INICIO_SECCION] = texto.texto
         return parseo
 
-    parseo[INICIO_SECCION] = texto.texto[:inicio].strip()
+    parseo[INICIO_SECCION] = texto.texto[:inicio[1]].strip()
     for seccion, (i, indice_inicio) in zip(secciones, enumerate(partes)):
         if indice_inicio is None:
             continue
         
         siguiente = encontrar_primer(partes[i+1:])
         if siguiente is None:
-            parseo[seccion.header] = texto.texto[inicio:].strip()
+            parseo[seccion.header] = texto.texto[inicio[1]:].strip()
             break
 
-        parseo[seccion.header] = texto.texto[inicio:siguiente].strip()
+        parseo[seccion.header] = texto.texto[inicio[1]:siguiente[0]].strip()
         inicio = siguiente
 
     return parseo
