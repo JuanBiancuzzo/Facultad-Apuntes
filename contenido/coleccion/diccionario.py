@@ -9,6 +9,7 @@ from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
 from contenido.general.bloque_texto import BloqueTexto
+from contenido.general.embedding import Embbeding
 from contenido.referencias.diccionario import ReferenciaDiccionario
 from .tablas import TablaDiccionario as Tabla
 
@@ -19,14 +20,23 @@ class Diccionario(Dato):
 
     @classmethod
     def parsear(cls, archivo: Archivo) -> List[Dato]:
+        datos = []
+
         texto = BloqueTexto(archivo.contenido)
-        return [
-            texto, 
-            Diccionario(
-                texto.obtener_clave(), 
-                ReferenciaDiccionario._obtener_clave(int(archivo.extra["numReferencia"])),
-            ),
-        ]
+        datos.append(texto)
+
+        diccionario = Diccionario(
+            texto.obtener_clave(), 
+            ReferenciaDiccionario._obtener_clave(archivo.extra["numReferencia"]),
+        )
+        datos.append(diccionario)
+
+        palabra = archivo.extra["palabraBuscada"]
+        clave_diccionario = diccionario.obtener_clave()
+        embedding = Embbeding.de_string(Tabla.nombre, clave_diccionario, palabra)
+        datos.append(embedding)
+
+        return datos
 
     def dependo(self) -> List[Clave]: 
         return [ self.clave_definicion, self.clave_ref_diccionario ]

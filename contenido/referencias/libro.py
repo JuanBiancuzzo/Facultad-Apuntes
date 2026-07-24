@@ -27,6 +27,33 @@ class ReferenciaLibro:
     clave_referencia: Clave
 
     @classmethod
+    def nombre_representativo(cls, archivo: Archivo) -> str:
+        try: 
+            volumen = int(archivo.extra["volumen"])
+        except:
+            volumen = None
+
+        try:
+            titulo = archivo.extra["tituloObra"]
+            subtitulo = archivo.extra.get("subtituloObra", None)
+            edicion = archivo.extra.get("edicion", None)
+            autores = archivo.extra["nombreAutores"]
+
+        except Exception as e:
+            loggear(LoggerNivel.FATAL, "No se pudo obtener el nombre representativo del libro")
+            raise e
+
+        nombre = titulo
+        if subtitulo: nombre += f", {subtitulo}"
+        if edicion: nombre += f" Edicion {edicion}"
+        if volumen: nombre += f" Vol N°{volumen}"
+
+        autores = map(lambda autore: f"{autore["nombre"]} {autore["nombre"]}", autores)
+        nombre += f" escrito por: {", ".join(autores)}"
+
+        return nombre
+
+    @classmethod
     def parsear(cls, archivo: Archivo) -> List[Dato]:
         datos = []
 

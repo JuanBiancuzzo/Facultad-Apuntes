@@ -5,10 +5,11 @@ from dataclasses import dataclass
 from enum import Enum
 
 from archivos import Archivo
-from dependencias import Dato, Clave
+from dependencias import Dato, Nodo, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
+from contenido.general.embedding import Embbeding
 from contenido.general.bloque_texto import BloqueTexto
 from .tablas import TablaColeccion as Tabla
 
@@ -75,6 +76,11 @@ class Coleccion(Dato):
         )
         datos.append(coleccion)
 
+        datos_coleccion = (Tabla.nombre, coleccion.obtener_clave())
+        datos.append(Embbeding.de_string(*datos_coleccion, tipo.value))
+        datos.append(Embbeding.de_string(*datos_coleccion, coleccion.estado))
+        datos.extend(Embbeding.de_texto(*datos_coleccion, descripcion.texto))
+
         return datos
 
     def dependo(self) -> List[Clave]: 
@@ -101,9 +107,9 @@ class Coleccion(Dato):
         raise Exception(mensaje)
         
 
-    def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> None:
+    def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo:
         try: 
-            Tabla.insertar(
+            id_tabla = Tabla.insertar(
                 cursor,
                 self.tipo.texto(),
                 self.estado,
@@ -114,5 +120,10 @@ class Coleccion(Dato):
             loggear(LoggerNivel.FATAL, f"Al insertar coleccion con nombre: {self.tipo}")
             raise e
 
-        return None
+        if id_tabla is None:
+            mensaje = f"La coleccion insertada no tiene id"
+            loggear(LoggerNivel.FATAL, mensaje)
+            raise Exception(mensaje)
+
+        return Nodo(id_tabla, self.obtener_clave())
 

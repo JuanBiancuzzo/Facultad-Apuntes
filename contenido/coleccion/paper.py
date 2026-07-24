@@ -3,11 +3,14 @@ import sqlite3 as sql
 from typing import Dict, List
 from dataclasses import dataclass
 
-from archivos import Archivo
+from archivos import Archivo, Texto
+from archivos.texto import split_secciones, Seccion
 from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
+from contenido.general.embedding import Embbeding
+from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa
 from contenido.referencias.paper import ReferenciaPaper
 from .tablas import TablaPaper as Tabla
@@ -23,14 +26,43 @@ class Paper(Dato):
 
     @classmethod
     def parsear(cls, archivo: Archivo) -> List[Dato]:
+        datos = []
+
         etapa = Etapa.de_texto(archivo.extra["etapa"])
         if etapa is None:
             mensaje = f"Al intentar crear paper {archivo.metadata.nombre}, no tiene etapa"
             loggear(LoggerNivel.FATAL, mensaje)
             raise Exception(mensaje)
 
-        clave_ref_libro = ReferenciaPaper._obtener_clave(archivo.extra["numReferencia"])
-        return [Paper(etapa, None, clave_ref_libro)]
+        resultado: Dict[str, str | None] = split_secciones(archivo.contenido, [ 
+            Seccion(1, "Resumen"),
+            Seccion(1, "Referencias"),
+        ])
+
+        bloque_resumen: BloqueTexto | None = None
+        if resultado["Resumen"] is not None:
+            resumen = Texto(resultado["Resumen"])
+            if not resumen.vacio(): 
+                bloque_resumen = BloqueTexto(resumen)
+                datos.append(bloque_resumen)
+
+        clave_ref_paper = ReferenciaPaper._obtener_clave(archivo.extra["numReferencia"])
+        paper = Paper(
+            etapa, 
+            bloque_resumen.obtener_clave() if bloque_resumen else None, 
+            clave_ref_paper,
+        )
+        datos.append(paper)
+
+        datos_paper = (Tabla.nombre, paper.obtener_clave())
+
+        nombre = ReferenciaPaper.nombre_representativo(archivo)
+        datos.append(Embbeding.de_string(*datos_paper, nombre))
+
+        if bloque_resumen is not None:
+            datos.extend(Embbeding.de_texto(*datos_paper, bloque_resumen.texto))
+
+        return datos
 
     def dependo(self) -> List[Clave]: 
         dependencias = [ self.clave_ref_paper ]

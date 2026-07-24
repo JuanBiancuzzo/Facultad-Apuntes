@@ -24,7 +24,7 @@ def _registrar_markdown(tag: str, archivo: Archivo) -> List[Dato]:
                 datos.extend(coleccion.Evaluacion.parsear(archivo))
 
             case "apertura/ajedrez":
-                datos.append(coleccion.Ajedrez.parsear(archivo))
+                datos.extend(coleccion.Ajedrez.parsear(archivo))
 
             case "biblioteca/libro":
                 datos.extend(coleccion.Libro.parsear(archivo))

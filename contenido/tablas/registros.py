@@ -60,6 +60,7 @@ class TablasColeccion(StrEnum):
 
 class TablasGenerales(StrEnum):
     AUTORES = "Autores"
+    EMBEDDING = "Embeddings"
     BLOQUE_TEXTO = "BloqueDeTexto"
     EDITORIAL = "Editoriales"
     IMAGENES = "Imagenes"

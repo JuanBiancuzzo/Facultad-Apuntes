@@ -1,6 +1,6 @@
 import sqlite3 as sql
 
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Any
 from dataclasses import dataclass
 
 from archivos.archivo import Archivo
@@ -23,6 +23,22 @@ class ReferenciaCapitulo(Dato):
 
     clave_ref_libro: Clave
     clave_referencia: Clave
+
+    @classmethod
+    def nombre_representativo(cls, archivo: Archivo, extra_capitulo: Dict[str, Any]) -> str:
+        nombre_libro = ReferenciaLibro.nombre_representativo(archivo)
+
+        try:
+            numero = int(extra_capitulo["numeroCapitulo"])
+            nombre_capitulo = extra_capitulo.get("nombreCapitulo", None)
+            
+        except Exception as e:
+            loggear(LoggerNivel.FATAL, "No se pudo obtener el nombre representativo del capitulo")
+            raise e
+
+        nombre = f"{nombre_libro}, Capitulo N°{numero}"
+        if nombre_capitulo: nombre += f" {nombre_capitulo}"
+        return nombre
 
     @classmethod
     def parsear(cls, archivo: Archivo) -> List[Dato]:

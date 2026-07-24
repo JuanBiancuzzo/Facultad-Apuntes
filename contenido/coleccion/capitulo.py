@@ -8,6 +8,8 @@ from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
+from contenido.general.embedding import Embbeding
+from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa
 from contenido.coleccion.guias import Guia
 from contenido.referencias.libro import ReferenciaLibro
@@ -41,14 +43,27 @@ class Capitulo(Dato):
         if info_capitulos is None: info_capitulos = []
 
         for extra_capitulo in info_capitulos:
+            bloque_resumen: BloqueTexto | None = None
+
             capitulo = Capitulo(
                 etapa, 
-                None, 
+                bloque_resumen.obtener_clave() if bloque_resumen else None, 
                 clave_libro, 
                 list(map(lambda num: Guia._obtener_clave(int(num)), extra_capitulo.get("guias", []))),
                 ReferenciaCapitulo._obtener_clave(extra_capitulo["numReferencia"]),
             )
             datos.append(capitulo)
+
+            datos_capitulo = (Tabla.nombre, capitulo.obtener_clave())
+
+            if "nombreCapitulo" in extra_capitulo:
+                nombre = ReferenciaCapitulo.nombre_representativo(archivo, extra_capitulo)
+                embedding = Embbeding.de_string(*datos_capitulo, nombre)
+                datos.append(embedding)
+
+            if bloque_resumen is not None:
+                embedding = Embbeding.de_texto(*datos_capitulo, bloque_resumen)
+                datos.append(embedding)
 
         return datos
 

@@ -5,10 +5,12 @@ from dataclasses import dataclass
 
 from archivos.archivo import Archivo, Texto
 from archivos.texto import Seccion, split_secciones
+from contenido.general import embedding
 from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
+from contenido.general.embedding import Embbeding
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa
 from .tablas import TablaEjercicio as Tabla
@@ -20,6 +22,7 @@ SECCION_RESULTADO = "Resultado"
 @dataclass
 class Ejercicio(Dato):
     numero: int
+    nombre: str | None
     etapa: Etapa 
     enunciado: Clave
     resolucion: Clave
@@ -62,18 +65,31 @@ class Ejercicio(Dato):
         )
 
         if resultado is not None:
-            resultado = None if resultado.vacio() else  BloqueTexto(resultado)
+            resultado = None if resultado.vacio() else BloqueTexto(resultado)
 
         datos: List[Dato] = [enunciado, resolucion]
         if resultado: datos.append(resultado)
 
-        datos.append(Ejercicio(
+        ejercicio = Ejercicio(
             numero,
+            archivo.extra.get("nombre"),
             etapa,
             enunciado.obtener_clave(),
             resolucion.obtener_clave(),
             resultado.obtener_clave() if resultado else None,
-        ))
+        )
+        datos.append(ejercicio)
+
+        # Embedding a para todo texto relacionado
+        datos_ejercicio = (Tabla.nombre, ejercicio.obtener_clave())
+        if ejercicio.nombre: 
+            embedding = Embbeding.de_string(*datos_ejercicio, ejercicio.nombre)
+            datos.append(embedding)
+        datos.extend(Embbeding.de_texto(*datos_ejercicio, enunciado.texto))
+        datos.extend(Embbeding.de_texto(*datos_ejercicio, resolucion.texto))
+        if resultado:
+            datos.extend(Embbeding.de_texto(*datos_ejercicio, resultado.texto))
+
         return datos
 
 
@@ -94,6 +110,7 @@ class Ejercicio(Dato):
         try: 
             id_ejercicio = Tabla.insertar(
                 cursor, 
+                self.nombre,
                 self.etapa.value,
                 dependencias[self.enunciado],
                 dependencias[self.resolucion],

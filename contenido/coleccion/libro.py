@@ -9,6 +9,8 @@ from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
+from contenido.general.embedding import Embbeding
+from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa
 from contenido.general.imagen import Imagen
 from contenido.referencias.libro import ReferenciaLibro
@@ -26,6 +28,8 @@ class Libro(Dato):
 
     @classmethod
     def parsear(cls, archivo: Archivo) -> List[Dato]:
+        datos = []
+
         etapa = Etapa.de_texto(archivo.extra["etapa"])
         if etapa is None:
             mensaje = f"Al intentar crear libro {archivo.metadata.nombre}, no tiene etapa"
@@ -40,8 +44,26 @@ class Libro(Dato):
                 archivo.extra["cover"],
             ))
 
+        bloque_resumen: BloqueTexto | None = None
+
         clave_ref_libro = ReferenciaLibro._obtener_clave(archivo.extra["numReferencia"])
-        return [Libro(etapa, None, clave_cover, clave_ref_libro)]
+        libro = Libro(
+            etapa, 
+            bloque_resumen.obtener_clave() if bloque_resumen else None, 
+            clave_cover, 
+            clave_ref_libro,
+        )
+        datos.append(libro)
+
+        datos_libro = (Tabla.nombre, libro.obtener_clave())
+
+        nombre = ReferenciaLibro.nombre_representativo(archivo)
+        datos.append(Embbeding.de_string(*datos_libro, nombre))
+
+        if bloque_resumen is not None:
+            datos.extend(Embbeding.de_texto(*datos_libro, bloque_resumen.texto))
+
+        return datos
 
     def dependo(self) -> List[Clave]: 
         dependencias = [ self.clave_ref_libro ]

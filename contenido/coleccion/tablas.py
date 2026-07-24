@@ -22,8 +22,8 @@ class TablaColeccion(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, tipo: str, estado: str, id_descripcion: int) -> None: 
-        cls._insertar(cursor, {
+    def insertar(cls, cursor: Cursor, tipo: str, estado: str, id_descripcion: int) -> int | None: 
+        return cls._insertar(cursor, {
             "tipo": tipo,
             "estado": estado,
             "id_descripcion": id_descripcion,
@@ -46,9 +46,9 @@ class TablaAjedrez(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, nombre: str, tipo: str, inicio: str, movimientos: List[str]) -> None: 
+    def insertar(cls, cursor: Cursor, nombre: str, tipo: str, inicio: str, movimientos: List[str]) -> int | None: 
         movimientos_conjunto = ";".join(movimientos)
-        cls._insertar(cursor, {
+        return cls._insertar(cursor, {
             "nombre": nombre,
             "tipo": tipo,
             "inicio": inicio,
@@ -64,6 +64,7 @@ class TablaEjercicio(Tabla):
         conn.execute(f"""
             CREATE TABLE IF NOT EXISTS {self.nombre} (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
+                nombre TEXT,
                 etapa TEXT NOT NULL,
 
                 id_enunciado INTEGER NOT NULL REFERENCES {TablasGenerales.BLOQUE_TEXTO}(id),
@@ -73,13 +74,16 @@ class TablaEjercicio(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, etapa: str, id_enunciado: int, id_resolucion: int, id_resultado: int | None) -> int | None: 
-        return cls._insertar(cursor, {
+    def insertar(cls, cursor: Cursor, nombre: str | None, etapa: str, id_enunciado: int, id_resolucion: int, id_resultado: int | None) -> int | None: 
+        valores: Dict[str, Any] = {
             "etapa": etapa,
             "id_enunciado": id_enunciado,
             "id_resolucion": id_resolucion,
             "id_resultado": id_resultado,
-        })
+        }
+        if nombre: valores["nombre"] = nombre
+
+        return cls._insertar(cursor, valores)
 
 @registrar_tabla
 class TablaGuia(Tabla):

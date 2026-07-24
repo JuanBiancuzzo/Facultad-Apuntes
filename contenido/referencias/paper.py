@@ -24,6 +24,22 @@ class ReferenciaPaper:
     clave_referencia: Clave
 
     @classmethod
+    def nombre_representativo(cls, archivo: Archivo) -> str:
+        nombre = archivo.extra["tituloInforme"]
+
+        autores = archivo.extra.get("autores", [])
+        if autores is None: autores = []
+        autores = map(lambda autore: f"{autore["nombre"]} {autore["nombre"]}", autores)
+        nombre += f" escrito por: {", ".join(autores)}"
+
+        editores = archivo.extra.get("editores", [])
+        if editores is None: editores = []
+        editores = list(map(lambda autore: f"{autore["nombre"]} {autore["nombre"]}", editores))
+        if len(editores) > 0: nombre += f" , con editores: {", ".join(editores)}"
+
+        return nombre
+
+    @classmethod
     def parsear(cls, archivo: Archivo) -> List[Dato]:
         datos = []
 

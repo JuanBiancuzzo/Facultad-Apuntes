@@ -1,7 +1,7 @@
 import os
 import sqlite3 as sql
-import logger 
 
+import logger
 from dependencias import ManagerDependencias
 from archivos import Archivo
 

@@ -6,6 +6,7 @@ class TipoNodo(IntEnum):
     # Genearl y extra
     AUTORE = auto()
     BLOQUE_TEXTO = auto()
+    EMBEDDING = auto()
     EDITORIAL = auto()
     BIBLIOGRAFIA = auto()
     IMAGEN = auto()

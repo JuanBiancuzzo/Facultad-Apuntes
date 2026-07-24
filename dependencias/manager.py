@@ -84,7 +84,8 @@ class ManagerDependencias:
 
     def guardar_nodo(self, cursor: sql.Cursor, clave: Clave, dato: Dato, clave_dependencias: List[Clave]) -> None:
         if clave in self.datos:
-            loggear(LoggerNivel.ERROR, f"Ya existe la clave: {clave} en los datos del manager")
+            loggear(LoggerNivel.ERROR, f"Ya existe la clave: {clave} en los datos del manager {self.datos[clave]} = {dato}?")
+            return
 
         self.datos[clave] = dato
 

@@ -5,10 +5,12 @@ from dataclasses import dataclass
 from enum import StrEnum
 
 from archivos import Archivo
-from dependencias import Dato, Clave
+from contenido.general import embedding
+from dependencias import Dato, Nodo, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
+from contenido.general.embedding import Embbeding
 from .tablas import TablaAjedrez as Tabla
 
 class TipoMovimientosAjedrez(StrEnum):
@@ -22,13 +24,22 @@ class Ajedrez(Dato):
     movimientos: List[str]
 
     @classmethod
-    def parsear(cls, archivo: Archivo) -> Dato:
-        return Ajedrez(
+    def parsear(cls, archivo: Archivo) -> List[Dato]:
+        datos = []
+
+        ajedrez = Ajedrez(
             archivo.metadata.nombre,
             TipoMovimientosAjedrez.APERTURA,
             archivo.extra["inicio"],
             list(map(lambda par: "-".join(par), archivo.extra["movimientos"])),
         )
+        datos.append(ajedrez)
+
+        clave_ajedrez = ajedrez.obtener_clave()
+        embedding = Embbeding.de_string(Tabla.nombre, clave_ajedrez, ajedrez.nombre)
+        datos.append(embedding)
+
+        return datos
 
     def dependo(self) -> List[Clave]: 
         return super().dependo()
@@ -40,9 +51,9 @@ class Ajedrez(Dato):
     def _obtener_clave(cls, nombre: str, tipo: TipoMovimientosAjedrez, inicio: str) -> Clave: 
         return Clave.de_texto(TipoNodo.AJEDREZ, f"{nombre}({tipo})->{inicio}")
 
-    def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> None:
+    def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo:
         try: 
-            Tabla.insertar(
+            id_ajedrez = Tabla.insertar(
                 cursor,
                 self.nombre,
                 self.tipo,
@@ -54,5 +65,10 @@ class Ajedrez(Dato):
             loggear(LoggerNivel.FATAL, f"Al insertar movimiento de ajedrez con nombre: {self.nombre}")
             raise e
 
-        return None
+        if id_ajedrez is None:
+            mensaje = f"El movimiento de ajedrez insertado no tiene id"
+            loggear(LoggerNivel.FATAL, mensaje)
+            raise Exception(mensaje)
+
+        return Nodo(id_ajedrez, self.obtener_clave())
 
