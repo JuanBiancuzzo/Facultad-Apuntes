@@ -11,7 +11,7 @@ nombreAutores:
 anio: 2018
 editorial: CreateSpace Independent Publishing Platform
 edicion: 
-volumen: .nan
+volumen: 3
 url: 
 capitulos: 
 cover: The Hacker Playbook, practical Guide To Penetration Testing (vol. 3) de Peter Kim.jpg

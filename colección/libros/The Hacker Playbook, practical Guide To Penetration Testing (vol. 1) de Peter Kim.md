@@ -11,7 +11,7 @@ nombreAutores:
 anio: 2014
 editorial: CreateSpace Independent Publishing Platform
 edicion: 
-volumen: .nan
+volumen: 1
 url: 
 capitulos: 
 cover: The Hacker Playbook, practical Guide To Penetration Testing (vol. 1) de Peter Kim.jpg
