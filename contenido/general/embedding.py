@@ -1,5 +1,4 @@
 import sqlite3 as sql
-import numpy as np
 from fastembed import TextEmbedding
 from dataclasses import dataclass
 from typing import Dict, List, ClassVar

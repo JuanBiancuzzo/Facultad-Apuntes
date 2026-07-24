@@ -14,6 +14,9 @@ class TipoBibliografia(StrEnum):
     MATERIA = "Materia"
     TEMA_FACULTAD = "Tema de facultad"
 
+    CURSO = "Curso"
+    TEMA_CURSO = "Tema de curso"
+
 @dataclass
 class Bibliografia(Dato):
     tipo: TipoBibliografia

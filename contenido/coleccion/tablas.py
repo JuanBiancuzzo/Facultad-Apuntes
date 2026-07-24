@@ -226,26 +226,6 @@ class TablaCapitulo(Tabla):
         return cls._insertar(cursor, valores)
 
 @registrar_tabla
-class TablaGuiasDeCapitulo(Tabla):
-    nombre = Tablas.GUIAS_CAPITULO
-    necesito_tablas = [ Tablas.CAPITULO, Tablas.GUIAS ]
-
-    def crear(self, conn: Conn) -> None:
-        conn.execute(f"""
-            CREATE TABLE IF NOT EXISTS {self.nombre} (
-                id_capitulo INTEGER NOT NULL REFERENCES {Tablas.CAPITULO}(id),
-                id_guia INTEGER NOT NULL REFERENCES {Tablas.GUIAS}(id)
-            );
-        """)
-    
-    @classmethod
-    def insertar(cls, cursor: Cursor, id_capitulo: int, id_guia: int) -> None:
-        cls._insertar(cursor, {
-            "id_capitulo": id_capitulo,
-            "id_guia": id_guia,
-        })
-
-@registrar_tabla
 class TablaPaper(Tabla):
     nombre = Tablas.PAPER
     necesito_tablas = [ 

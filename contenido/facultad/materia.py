@@ -10,7 +10,9 @@ from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
 from contenido.referencias.referencia import Referencia
-from contenido.bibliografia.bibliografia import Bibliografia
+from contenido.extra.bibliografia import Bibliografia
+from contenido.extra.guias import GuiaPorDato as GuiasDeMateria
+from contenido.extra.evalauciones import EvaluacionPorDato as EvaluacionesDeMateria
 from contenido.general.embedding import Embbeding
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa
@@ -20,7 +22,7 @@ from contenido.coleccion.evaluacion import Evaluacion
 from .carrera import Carrera
 from .plan_de_estudio import PlanDeEstudio
 from .cuatrimestre import Cuatrimestre
-from .tablas import TablaMateria as Tabla, TablaGuiasDeMateria, TablaEvaluacionesDeMateria
+from .tablas import TablaMateria as Tabla
 
 @dataclass
 class Materia(Dato):
@@ -33,8 +35,6 @@ class Materia(Dato):
 
     clave_cuatrimestre: Clave
     clave_resumen: Clave | None
-    clave_guias: List[Clave]
-    clave_evaluaciones: List[Clave]
 
     @classmethod
     def parsear(cls, archivo: Archivo) -> List[Dato]:
@@ -78,8 +78,6 @@ class Materia(Dato):
             archivo.extra.get("codigo", None),
             cuatrimestre.obtener_clave(),
             clave_resumen,
-            list(map(lambda num: Guia._obtener_clave(int(num)), archivo.extra.get("guias", []))),
-            list(map(lambda num: Evaluacion._obtener_clave(int(num)), archivo.extra.get("evaluaciones", []))),
         )
         datos.append(materia)
 
@@ -87,6 +85,14 @@ class Materia(Dato):
         for num_referencia in map(lambda num: int(num), archivo.extra.get("referencias", [])):
             clave_referencia = Referencia._obtener_clave(num_referencia)
             datos.append(Bibliografia.materia(clave_materia, clave_referencia))
+
+        for num_guia in map(lambda num: int(num), archivo.extra.get("guias", [])):
+            clave_guia = Guia._obtener_clave(num_guia)
+            datos.append(GuiasDeMateria.materia(clave_materia, clave_guia))
+
+        for num_evaluacion in map(lambda num: int(num), archivo.extra.get("evaluaciones", [])):
+            clave_evaluacion = Evaluacion._obtener_clave(num_evaluacion)
+            datos.append(EvaluacionesDeMateria.materia(clave_materia, clave_evaluacion))
 
         datos_materia = (Tabla.nombre, clave_materia)
         datos.append(Embbeding.de_string(*datos_materia, f"{materia.nombre_materia} de {nombre_carrera}"))
@@ -101,8 +107,6 @@ class Materia(Dato):
             self.clave_carrera,
             self.clave_plan,
             self.clave_cuatrimestre,
-            *self.clave_guias,
-            *self.clave_evaluaciones,
         ]
         if self.clave_resumen is not None:
             dependencias.append(self.clave_resumen)
@@ -138,23 +142,5 @@ class Materia(Dato):
             mensaje = f"La materia insertada no tiene id"
             loggear(LoggerNivel.FATAL, mensaje)
             raise Exception(mensaje)
-
-        try:
-            for clave_guia in self.clave_guias:
-                id_guia = dependencias[clave_guia]
-                TablaGuiasDeMateria.insertar(cursor, id_materia, id_guia)
-
-        except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al insertar materia con nombre {self.nombre_materia}, error al insertar las guias vinculadas")
-            raise e 
-
-        try:
-            for clave_evaluacion in self.clave_evaluaciones:
-                id_evaluacion = dependencias[clave_evaluacion]
-                TablaEvaluacionesDeMateria.insertar(cursor, id_materia, id_evaluacion)
-
-        except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al insertar materia con nombre {self.nombre_materia}, error al insertar las evaluaciones vinculadas")
-            raise e 
 
         return Nodo(id_materia, self.obtener_clave())

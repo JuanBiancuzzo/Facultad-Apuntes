@@ -9,7 +9,7 @@ from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
-from contenido.bibliografia.bibliografia import Bibliografia
+from contenido.extra.bibliografia import Bibliografia
 from contenido.general.embedding import Embbeding
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa

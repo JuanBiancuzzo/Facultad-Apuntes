@@ -2,6 +2,7 @@ from sqlite3 import Connection as Conn
 from typing import Dict, List
 
 from .tabla import Tablas, Tabla, tablas_registradas
+from logger import loggear, LoggerNivel
 
 def cumple_dependencias(necesito: List[Tablas], creadas: List[Tablas]) -> bool:
     if len(necesito) == 0:
@@ -30,6 +31,8 @@ def crear_tablas(conn: Conn):
 
         # Cumple las dependencias dependencias 
         tabla.crear(conn)
+        loggear(LoggerNivel.INFO, f"Creando tabla: {tabla.nombre}")
+
         creadas.append(tabla.nombre)
 
         pendientes = dependencias.pop(tabla.nombre, [])
@@ -39,6 +42,7 @@ def crear_tablas(conn: Conn):
                 continue
 
             pendiente.crear(conn)
+            loggear(LoggerNivel.INFO, f"Creando tabla: {pendiente.nombre}")
             creadas.append(pendiente.nombre)
             pendientes.extend(dependencias.pop(pendiente.nombre, []))
 

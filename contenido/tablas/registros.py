@@ -9,10 +9,8 @@ class TablasFacultad(StrEnum):
 
     # Materias
     MATERIAS = "Materias"
-    MATERIAS_EQ = "MateriasEquivalentes"
+    # MATERIAS_EQ = "MateriasEquivalentes"
     CUATRI = "Cuatrimestres"
-    GUIAS_MATERIA = "GuiasPorMateria"
-    EVALUACIONES_MATERIA = "EvaluacionesPorMateria"
     CORRELATIVAS = "CorrelativasDeMaterias"
 
     # Tema
@@ -50,13 +48,15 @@ class TablasColeccion(StrEnum):
     # Biblioteca
     LIBRO = "Libros"
     CAPITULO = "CapitulosLibro"
-    GUIAS_CAPITULO = "GuiasPorCapitulo"
 
     # Papers
     PAPER = "Papers"
 
     # Diccionario
     DICCIONARIO = "Diccionario"
+
+    # Cursos
+    CURSO = "Cursos"
 
 class TablasGenerales(StrEnum):
     AUTORES = "Autores"
@@ -67,4 +67,6 @@ class TablasGenerales(StrEnum):
 
 class TablasExtra(StrEnum):
     BIBLIOGRAFIA = "Bibliografia"
+    GUIAS = "GuiasPorElemento"
+    EVALUACIONES = "EvaluacionesPorElemento"
 
