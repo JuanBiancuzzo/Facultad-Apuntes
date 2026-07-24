@@ -57,11 +57,13 @@ class Ejercicio(Dato):
             loggear(LoggerNivel.FATAL, mensaje)
             raise Exception(mensaje)
 
+        enunciado_vacio = enunciado.vacio()
         enunciado = BloqueTexto(
-            Texto(f"%% Ejercicio {numero} - Enunciado %%") if enunciado.vacio() else enunciado
+            Texto(f"%% Ejercicio {numero} - Enunciado %%") if enunciado_vacio else enunciado
         )
+        resolucion_vacio = resolucion.vacio()
         resolucion = BloqueTexto(
-            Texto(f"%% Ejercicio {numero} - Resolucion %%") if resolucion.vacio()  else resolucion
+            Texto(f"%% Ejercicio {numero} - Resolucion %%") if resolucion_vacio  else resolucion
         )
 
         if resultado is not None:
@@ -85,8 +87,11 @@ class Ejercicio(Dato):
         if ejercicio.nombre: 
             embedding = Embbeding.de_string(*datos_ejercicio, ejercicio.nombre)
             datos.append(embedding)
-        datos.extend(Embbeding.de_texto(*datos_ejercicio, enunciado.texto))
-        datos.extend(Embbeding.de_texto(*datos_ejercicio, resolucion.texto))
+
+        if not enunciado_vacio:
+            datos.extend(Embbeding.de_texto(*datos_ejercicio, enunciado.texto))
+        if not resolucion_vacio:
+            datos.extend(Embbeding.de_texto(*datos_ejercicio, resolucion.texto))
         if resultado:
             datos.extend(Embbeding.de_texto(*datos_ejercicio, resultado.texto))
 

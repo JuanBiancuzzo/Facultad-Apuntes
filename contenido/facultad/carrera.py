@@ -4,9 +4,11 @@ from typing import Dict, List
 from dataclasses import dataclass
 
 from archivos.archivo import Archivo
+from contenido.general import embedding
 from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
+from contenido.general.embedding import Embbeding
 from contenido.general.etapa import Etapa
 from contenido.dependencias import TipoNodo
 from .plan_de_estudio import PlanDeEstudio
@@ -21,6 +23,7 @@ class Carrera(Dato):
 
     @classmethod
     def parsear(cls, archivo: Archivo) -> List[Dato] | None:
+        datos = []
         etapa = Etapa.de_texto(archivo.extra["etapa"])
         if etapa is None:
             return None
@@ -31,14 +34,16 @@ class Carrera(Dato):
             archivo.extra["tieneCodigo"],
             etapa,
         )
+        datos.append(carrera)
+        clave_carrera = carrera.obtener_clave()
 
-        return [
-            carrera,
-            *(
-                PlanDeEstudio(plan, carrera.obtener_clave())
-                for plan in archivo.extra["planes"]
-            )
-        ]
+        for plan in archivo.extra["planes"]:
+            datos.append(PlanDeEstudio(plan, clave_carrera))
+
+        embedding = Embbeding.de_string(Tabla.nombre, clave_carrera, carrera.nombre)
+        datos.append(embedding)
+
+        return datos
 
     def dependo(self) -> List[Clave]: 
         return []

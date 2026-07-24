@@ -11,6 +11,7 @@ from logger import loggear, LoggerNivel
 from contenido.dependencias import TipoNodo
 from contenido.referencias.referencia import Referencia
 from contenido.bibliografia.bibliografia import Bibliografia
+from contenido.general.embedding import Embbeding
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa
 from contenido.coleccion.guias import Guia
@@ -49,23 +50,24 @@ class Materia(Dato):
             loggear(LoggerNivel.FATAL, mensaje)
             raise Exception(mensaje)
 
-        clave_carrera = Carrera._obtener_clave(archivo.extra["nombreCarrera"])
+        nombre_carrera = archivo.extra["nombreCarrera"]
+        clave_carrera = Carrera._obtener_clave(nombre_carrera)
 
         resultado = split_secciones(archivo.contenido, [
             Seccion(1, nombre) 
             for nombre in ["Apuntes", "Resumen", "Guías", "Evaluacion", "Bibliografía"]
         ])
-        resumen = None
+        bloque_resumen = None
         if resultado["Resumen"]:
             texto = Texto(resultado["Resumen"])
-            resumen = None if texto.vacio() else BloqueTexto(texto)
+            bloque_resumen = None if texto.vacio() else BloqueTexto(texto)
 
         datos: List[Dato] = [ cuatrimestre ]
 
         clave_resumen = None
-        if resumen is not None:
-            datos.append(resumen)
-            clave_resumen = resumen.obtener_clave()
+        if bloque_resumen is not None:
+            datos.append(bloque_resumen)
+            clave_resumen = bloque_resumen.obtener_clave()
 
         materia = Materia(
             archivo.extra["nombreMateria"],
@@ -85,6 +87,12 @@ class Materia(Dato):
         for num_referencia in map(lambda num: int(num), archivo.extra.get("referencias", [])):
             clave_referencia = Referencia._obtener_clave(num_referencia)
             datos.append(Bibliografia.materia(clave_materia, clave_referencia))
+
+        datos_materia = (Tabla.nombre, clave_materia)
+        datos.append(Embbeding.de_string(*datos_materia, f"{materia.nombre_materia} de {nombre_carrera}"))
+
+        if bloque_resumen is not None:
+            datos.extend(Embbeding.de_texto(*datos_materia, bloque_resumen.texto))
 
         return datos
 

@@ -37,6 +37,10 @@ class TablaEmbedding(Tabla):
         TablasColeccion.LIBRO,
         TablasColeccion.CAPITULO,
         TablasColeccion.PAPER,
+
+        TablasFacultad.CARRERAS,
+        TablasFacultad.MATERIAS,
+        TablasFacultad.TEMA,
     ]
 
     def crear(self, conn: Conn) -> None:

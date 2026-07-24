@@ -7,7 +7,10 @@ TAMANIO_CHUNK = 1000
 
 @dataclass
 class Texto:
-    texto: str = ""
+    texto: str
+
+    def __init__(self, texto: str | None = None): 
+        self.texto = texto if texto is not None else ""
 
     @classmethod
     def parsear(cls, texto: str) -> Texto | None:

@@ -10,6 +10,7 @@ from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
 from contenido.bibliografia.bibliografia import Bibliografia
+from contenido.general.embedding import Embbeding
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa
 from contenido.referencias.referencia import Referencia
@@ -27,40 +28,40 @@ class Tema(Dato):
     clave_resumen: Clave | None
 
     @classmethod
-    def parsear(cls, archivo: Archivo) -> List[Dato] | None:
-        try:
-            etapa = Etapa.de_texto(archivo.extra["etapa"])
-            if etapa is None:
-                return None
-        except: 
-            etapa = Etapa.SIN_EMPEZAR
+    def parsear(cls, archivo: Archivo) -> List[Dato]:
+        etapa = Etapa.de_texto(archivo.extra.get("etapa", ""))
+        if etapa is None: etapa = Etapa.SIN_EMPEZAR
 
         try: 
             info_tema = archivo.extra["infoTemaMateria"]
+            nombre_materia = info_tema["materia"]
+            nombre_carrera = info_tema["carrera"]
+
             clave_materia = Materia._obtener_clave(
-                info_tema["materia"],
-                Carrera._obtener_clave(info_tema["carrera"]),
+                nombre_materia, Carrera._obtener_clave(nombre_carrera),
             )
 
         except:
-            print("Tema mal echo: ", archivo.metadata.nombre)
-            return
+            mensaje = f"Tema mal echo: {archivo.metadata.nombre}"
+            loggear(LoggerNivel.FATAL, mensaje)
+            raise Exception(mensaje)
 
         resultado = split_secciones(archivo.contenido, [
             Seccion(1, nombre) 
             for nombre in ["Índice", "Resumen", "Bibliografía"]
         ])
-        resumen = None
+        bloque_resumen = None
         if resultado["Resumen"]:
             texto = Texto(resultado["Resumen"])
-            resumen = None if texto.vacio() else BloqueTexto(texto)
+            bloque_resumen = None if texto.vacio() else BloqueTexto(texto)
 
         datos: List[Dato] = []
 
         clave_resumen = None
-        if resumen is not None:
-            datos.append(resumen)
-            clave_resumen = resumen.obtener_clave()
+        if bloque_resumen is not None:
+            datos.append(bloque_resumen)
+            clave_resumen = bloque_resumen.obtener_clave()
+
         try:
             parte = int(archivo.extra["parte"])
         except:
@@ -76,14 +77,23 @@ class Tema(Dato):
                 clave_resumen,
             )
             datos.append(tema)
+
         except:
-            print(f"Error al parsear Tema de carrera: {archivo.extra["nombreResumen"]}")
-            return None
+            mensaje = f"Error al parsear Tema de carrera: {archivo.extra["nombreResumen"]}"
+            loggear(LoggerNivel.FATAL, mensaje)
+            raise Exception(mensaje)
 
         clave_tema = tema.obtener_clave()
         for num_referencia in map(lambda num: int(num), archivo.extra.get("referencias", [])):
             clave_referencia = Referencia._obtener_clave(num_referencia)
             datos.append(Bibliografia.tema_facultad(clave_tema, clave_referencia))
+
+        datos_tema = (Tabla.nombre, clave_tema)
+        nombre = f"{tema.nombre_tema} N°{tema.capitulo} de la materia {nombre_materia} de la carrera {nombre_carrera}"
+        datos.append(Embbeding.de_string(*datos_tema, nombre))
+
+        if bloque_resumen is not None:
+            datos.extend(Embbeding.de_texto(*datos_tema, bloque_resumen.texto))
 
         return datos
 
