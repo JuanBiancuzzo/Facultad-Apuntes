@@ -4,9 +4,10 @@ import (
 	"fmt"
 	"time"
 
-	t "editor-sqlite/bdd/tablas"
-	r "editor-sqlite/estructuras/referencias"
-	g "editor-sqlite/estructuras/general"
+	t "editor-sqlite/repositorio/internal/tablas"
+
+	er "editor-sqlite/estructuras/referencias"
+	eg "editor-sqlite/estructuras/general"
 )
 
 type bddReferenciaWeb struct {
@@ -21,25 +22,25 @@ func (d *bddReferenciaWeb) obtenerDatos() []any {
 	return []any{ &d.id, &d.nombreArticulo, &d.nombrePagina, &d.fecha, &d.url }
 }
 	
-func (a *AlmReferencia) ObtenerReferenciaWeb(numReferencia int) (*r.ReferenciaWeb, error) {
+func (r *RepoReferencia) ObtenerReferenciaWeb(numReferencia int) (*er.ReferenciaWeb, error) {
 	var datos bddReferenciaWeb
 	query := generarQuery(t.TR_WEB, []string{ "id", "nombre_articulo", "nombre_pagina", "fecha", "url" })
-	fila := a.bdd.QueryRow(query, numReferencia)
+	fila := r.bdd.QueryRow(query, numReferencia)
 	if err := fila.Scan(datos.obtenerDatos()...); err != nil {
 		return nil, fmt.Errorf("Error al hacer un select en la tabla de referencias de web, con error: %v", err)
 	}
 
-	datosAutores, err := a.obtenerAutoresReferencia(r.TR_WEB, datos.id)
+	datosAutores, err := r.obtenerAutoresReferencia(er.TR_WEB, datos.id)
 	if err != nil {
 		return nil, fmt.Errorf("Al obtener autores para la web, se tuvo el error: %v", err)
 	}
 
-	autores := make([]g.Autore, len(datosAutores))
+	autores := make([]eg.Autore, len(datosAutores))
 	for i, datoAutore := range datosAutores {
-		autores[i] = *g.NewAutore(datoAutore.nombre, datoAutore.apellido)
+		autores[i] = *eg.NewAutore(datoAutore.nombre, datoAutore.apellido)
 	}
 
-	return r.NewReferenciaWeb(
+	return er.NewReferenciaWeb(
 		datos.nombreArticulo,
 		datos.nombrePagina,
 		time.Unix(datos.fecha, 0),
@@ -57,7 +58,7 @@ func (d *bddReferenciaAutore) obtenerDatos() []any {
 	return []any{ &d.nombre, &d.apellido }
 }
 
-func (a *AlmReferencia) obtenerAutoresReferencia(tipo r.TipoReferencia, id_referencia int) ([]bddReferenciaAutore, error) {
+func (r *RepoReferencia) obtenerAutoresReferencia(tipo er.TipoReferencia, id_referencia int) ([]bddReferenciaAutore, error) {
 	var datos []bddReferenciaAutore
 	query := fmt.Sprintf(`
 		SELECT %s.nombre, %s.apellido FROM %s 
@@ -66,7 +67,7 @@ func (a *AlmReferencia) obtenerAutoresReferencia(tipo r.TipoReferencia, id_refer
 		t.TG_AUTORES, t.TG_AUTORES, t.TR_AUTORES_REFERENCIAS, t.TG_AUTORES,
 	)
 
-	filas, err := a.bdd.Query(query, tipo, id_referencia)
+	filas, err := r.bdd.Query(query, tipo, id_referencia)
 	if err != nil {
 		return datos, fmt.Errorf("No se pudo obtener autores para la referencia de tipo %s, con error: %v", tipo, err)
 	}

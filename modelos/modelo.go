@@ -5,24 +5,24 @@ import (
 
 	tea "charm.land/bubbletea/v2"
 
-	a "editor-sqlite/almacenamiento"
+	r "editor-sqlite/repositorio"
 )
 
 type modelo struct {
-	almacenamiento a.Almacenamiento	
+	repo r.Repositorio	
 	procesoEmbeddings *ProcesoEmbbeding
 	ancho int
 	alto int
 }
 
-func NewModelo(almacenamiento a.Almacenamiento) (tea.Model, error) {
+func NewModelo(repositorio r.Repositorio) (tea.Model, error) {
 	embeddings, err := NewProcesoEmbbeding()
 	if err != nil {
 		return nil, fmt.Errorf("Ocurrio un error al obtener proceso de embbeddings: %v\n", err)
 	}
 
 	return &modelo{ 
-		almacenamiento: almacenamiento,
+		repo: repositorio,
 		procesoEmbeddings: embeddings,
 		ancho: -1,
 		alto: -1,
@@ -62,6 +62,6 @@ func (m *modelo) View() (view tea.View) {
 }
 
 func (m *modelo) Close() {
-	m.almacenamiento.Close()
+	m.repo.Close()
 	m.procesoEmbeddings.Close()
 }

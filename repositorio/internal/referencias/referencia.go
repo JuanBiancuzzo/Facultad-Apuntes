@@ -6,18 +6,19 @@ import (
 	"strings"
 	"database/sql"
 
-	t "editor-sqlite/bdd/tablas"
-	r "editor-sqlite/estructuras/referencias"
+	t "editor-sqlite/repositorio/internal/tablas"
+
+	er "editor-sqlite/estructuras/referencias"
 )
 
-type AlmReferencia struct {
+type RepoReferencia struct {
 	bdd *sql.DB
 
 	// Tal vez plantear un cache
 }
 
-func NewAlmacenamientoReferencia(bdd *sql.DB) *AlmReferencia {
-	return &AlmReferencia { 
+func NewRepositorioReferencia(bdd *sql.DB) *RepoReferencia {
+	return &RepoReferencia { 
 		bdd: bdd, 
 	}
 }
@@ -32,19 +33,19 @@ func (d *bddReferencia) obtenerDatos() []any {
 	return []any{ &d.numReferencia, &d.tipo, &d.fechaRegistrada }
 }
 
-func (a *AlmReferencia) ObtenerReferencia(numReferencia int) (*r.Referencia, error) {
+func (r *RepoReferencia) ObtenerReferencia(numReferencia int) (*er.Referencia, error) {
 	var datos bddReferencia
 	query := fmt.Sprintf(
 		"SELECT num_referencia, tipo, fecha_registrada FROM %s WHERE num_referencia = ?",
 		t.TR_REFERENCIAS,
 	)
 
-	fila := a.bdd.QueryRow(query, numReferencia)
+	fila := r.bdd.QueryRow(query, numReferencia)
 	if err := fila.Scan(datos.obtenerDatos()...); err != nil {
 		return nil, fmt.Errorf("Error al hacer un select en la tabla de referencias, con error: %v", err)
 	}
 
-	tipo, err := r.ObtenerTipoReferencia(datos.tipo)
+	tipo, err := er.ObtenerTipoReferencia(datos.tipo)
 	if err != nil {
 		return nil, fmt.Errorf("No se pudo tener el tipo de referencia, con error: %v", err)
 	}
@@ -52,31 +53,33 @@ func (a *AlmReferencia) ObtenerReferencia(numReferencia int) (*r.Referencia, err
 	fechaRegistrada := time.Unix(datos.fechaRegistrada, 0) 
 
 	switch tipo {
-	case r.TR_YOUTUBE:
-		dato, err := a.ObtenerReferenciaYoutube(numReferencia);
+	case er.TR_YOUTUBE:
+		dato, err := r.ObtenerReferenciaYoutube(numReferencia);
 		if err != nil {
 			return nil, fmt.Errorf("Al obtener ref de youtube: %v", err)
 		}
-		return r.NewReferencia(numReferencia, tipo, fechaRegistrada, *dato), nil
+		return er.NewReferencia(numReferencia, tipo, fechaRegistrada, *dato), nil
 
-	case r.TR_WIKIPEDIA:
-		dato, err := a.ObtenerReferenciaWikipedia(numReferencia);
+	case er.TR_WIKIPEDIA:
+		dato, err := r.ObtenerReferenciaWikipedia(numReferencia);
 		if err != nil {
 			return nil, fmt.Errorf("Al obtener ref de wikipedia: %v", err)
 		}
-		return r.NewReferencia(numReferencia, tipo, fechaRegistrada, *dato), nil
+		return er.NewReferencia(numReferencia, tipo, fechaRegistrada, *dato), nil
 
-	case r.TR_WEB:
-		dato, err := a.ObtenerReferenciaWeb(numReferencia);
+	case er.TR_WEB:
+		dato, err := r.ObtenerReferenciaWeb(numReferencia);
 		if err != nil {
 			return nil, fmt.Errorf("Al obtener ref de web: %v", err)
 		}
-		return r.NewReferencia(numReferencia, tipo, fechaRegistrada, *dato), nil
+		return er.NewReferencia(numReferencia, tipo, fechaRegistrada, *dato), nil
 
 	default: 
 		return nil, fmt.Errorf("No se maneja todavia el tipo: %s", tipo)
 	}
 }
+
+func (r *RepoReferencia) Close() {}
 
 func generarQuery(tabla t.Tablas, parametros []string) string {
 	return fmt.Sprintf(

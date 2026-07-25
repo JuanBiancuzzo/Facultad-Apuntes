@@ -5,13 +5,13 @@ import (
 	"os"
 
 	m "editor-sqlite/modelos"
-	b "editor-sqlite/bdd"
+	r "editor-sqlite/repositorio"
 
 	tea "charm.land/bubbletea/v2"
 )
 
 func main() {
-	baseDeDato, err := b.NewAlmacenamiento("assets/datos.db")
+	baseDeDato, err := r.NewRepositorioBdd("assets/datos.db")
 	if err != nil {
         fmt.Printf("Ocurrio un error al obtener contendio: %v\n", err)
 		os.Exit(1)

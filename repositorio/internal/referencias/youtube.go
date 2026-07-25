@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	t "editor-sqlite/bdd/tablas"
-	r "editor-sqlite/estructuras/referencias"
+	t "editor-sqlite/repositorio/internal/tablas"
+
+	er "editor-sqlite/estructuras/referencias"
 )
 
 type bddReferenciaYoutube struct {
@@ -19,15 +20,15 @@ func (d *bddReferenciaYoutube) obtenerDatos() []any {
 	return []any{ &d.nombreVideo, &d.nombreCanal, &d.fechaVideo, &d.url }
 }
 	
-func (a *AlmReferencia) ObtenerReferenciaYoutube(numReferencia int) (*r.ReferenciaYoutube, error) {
+func (r *RepoReferencia) ObtenerReferenciaYoutube(numReferencia int) (*er.ReferenciaYoutube, error) {
 	var datos bddReferenciaYoutube
 	query := generarQuery(t.TR_YOUTUBE, []string{"nombre_video", "nombre_canal", "fecha_video", "url"})
-	fila := a.bdd.QueryRow(query, numReferencia)
+	fila := r.bdd.QueryRow(query, numReferencia)
 	if err := fila.Scan(datos.obtenerDatos()...); err != nil {
 		return nil, fmt.Errorf("Error al hacer un select en la tabla de referencias de youtube, con error: %v", err)
 	}
 
-	return r.NewReferenciaYoutube(
+	return er.NewReferenciaYoutube(
 		datos.nombreVideo,
 		datos.nombreCanal,
 		time.Unix(datos.fechaVideo, 0),
