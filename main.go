@@ -1,11 +1,13 @@
 package main
 
 import (
-	"fmt"
 	"os"
 
+	log "editor-sqlite/logger"
 	m "editor-sqlite/modelos"
 	r "editor-sqlite/repositorio"
+	p "editor-sqlite/proceso_embedding"
+	c "editor-sqlite/compartido"
 
 	tea "charm.land/bubbletea/v2"
 )
@@ -13,24 +15,29 @@ import (
 func main() {
 	baseDeDato, err := r.NewRepositorioBdd("assets/datos.db")
 	if err != nil {
-        fmt.Printf("Ocurrio un error al obtener contendio: %v\n", err)
+		log.Errorf("Ocurrio un error al obtener contendio: %v\n", err)
 		os.Exit(1)
 	}
+	defer baseDeDato.Close()
 
-	modelo, err := m.NewModelo(baseDeDato)
+	embeddings, err := p.NewProcesoEmbedding()
 	if err != nil {
-        fmt.Printf("Error al crear el modelo con: %v\n", err)
-        os.Exit(1)
+		log.Errorf("Ocurrio un error al obtener proceso de embeddings: %v\n", err)
+		os.Exit(1)
+	}
+	defer embeddings.Close()
 
+	estado := c.NewEstadoCompartido(baseDeDato, embeddings)
+
+	modelo, err := m.NewModelo(estado)
+	if err != nil {
+        log.Errorf("Error al crear el modelo con: %v\n", err)
+        os.Exit(1)
 	} 
 
 	programa := tea.NewProgram(modelo)
 	if _, err = programa.Run(); err != nil {
-        fmt.Printf("Error al crear el programa: %v\n", err)
+        log.Errorf("Error al crear el programa: %v\n", err)
         os.Exit(1)
-
-	} else {
-        fmt.Println("Termino correctamente el programa")
-        os.Exit(0)
 	}
 }
