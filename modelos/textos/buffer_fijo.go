@@ -126,13 +126,5 @@ func (b *bufferFijo) Clonar() Buffer {
 }
 
 func (b *bufferFijo) Reiniciar() {
-	for i := range b.alto {
-		for j := range b.ancho {
-			// Ver si esta optimizacion ayuda o empeora por lo aleatorio de la condicion
-			// if b.pantalla[i][j] == RUNA_FINAL {
-			// 	break
-			// }
-			b.pantalla[i][j] = RUNA_FINAL
-		}
-	}
+	b.pantalla = crearMatrizVacia(b.alto, b.ancho)
 }
