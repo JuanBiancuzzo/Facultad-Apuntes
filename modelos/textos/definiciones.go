@@ -6,6 +6,7 @@ const RUNA_FINAL = rune(0)
 type TipoWrap uint 
 
 const (
+	_TU_NULO = 0
 	TU_WRAP TipoWrap = iota
 	TU_DESCARTAR
 )

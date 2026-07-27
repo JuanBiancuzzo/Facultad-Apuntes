@@ -10,7 +10,6 @@ import (
 	t "editor-sqlite/modelos/textos"
 )
 
-const TAM_TITULO int = 110
 const TITULO string = `
 ███╗   ███╗██╗███╗   ██╗██████╗     ███████╗██╗██████╗ ███████╗     ██████╗ ██╗   ██╗███████╗███████╗████████╗
 ████╗ ████║██║████╗  ██║██╔══██╗    ██╔════╝██║██╔══██╗██╔════╝    ██╔═══██╗██║   ██║██╔════╝██╔════╝╚══██╔══╝
@@ -28,7 +27,7 @@ type modeloPortada struct {
 }
 
 func NewModeloPortada(modelo Submodelo) Submodelo {
-	tamanioTexto := TAM_TITULO
+	tamanioTexto := t.LargoRunas(TITULO)
 	texto := fmt.Sprintf("\n\n%s\n\n", TITULO)
 
 	return &modeloPortada {
@@ -75,9 +74,8 @@ func (m *modeloPortada) Update(msg tea.Msg) (Submodelo, tea.Cmd) {
 
     case tea.WindowSizeMsg:
 		ancho := valor.Width
-		alto := valor.Height
 
-		if err := m.titulo.CambiarTamanio(ancho, alto); err != nil {
+		if err := m.titulo.CambiarAncho(ancho); err != nil {
 			log.Warnf("El cambiar el tamanio del titulo en la portada, tuvo el error: %w", err)
 		}
 	}
@@ -97,7 +95,7 @@ func (m *modeloPortada) Update(msg tea.Msg) (Submodelo, tea.Cmd) {
 }
 
 func (m *modeloPortada) View(buffer t.Buffer) { 
-	buffer.EscribirFixAlto(m.titulo, m.skipear, t.TA_IZQUIERDA)
+	buffer.EscribirFixAlto(m.titulo, -m.skipear, t.TA_IZQUIERDA)
 	if m.modeloInicio == nil {
 		return 
 	}

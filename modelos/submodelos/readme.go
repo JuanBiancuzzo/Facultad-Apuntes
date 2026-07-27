@@ -43,9 +43,8 @@ func (m *modeloReadme) Update(msg tea.Msg) (Submodelo, tea.Cmd) {
 	switch valor := msg.(type) {
     case tea.WindowSizeMsg:
 		ancho := min(valor.Width, m.anchoMaximo)
-		alto := valor.Height
 
-		if err := m.texto.CambiarTamanio(ancho, alto); err != nil {
+		if err := m.texto.CambiarAncho(ancho); err != nil {
 			log.Warnf("El cambiar el tamanio del texto en el readme, tuvo el error: %w", err)
 		}
 	}
