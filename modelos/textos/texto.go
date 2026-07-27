@@ -1,7 +1,5 @@
 package textos
 
-// !!!! HACER QUE CUMPLA LA INTERFAZ DE BUFFER !!!!
-
 // Esto podria mejorarse usando la estructura Rope y con hojas de GapBuffers, para
 //   mejorar la edificiencia de la edicion de textos 
 // Por ahora solo sera un string, pero vere la funcionalidad generica para que no
@@ -10,18 +8,39 @@ package textos
 //   GapBuffer si es poco texto pero si ya es mucho, ver si puede ser una estructura
 //   Rope con hojas de GapBuffers
 type Texto struct {
-	texto string
+	lineas []string
+
+	alineamiento TipoAlinear
+	wrap TipoWrap
 
 	// Contando runas
-	alto  int
 	ancho int
+	alto  int
 }
 
-// Aca puede ser que tengamos la idea de text-align, y text-justify, en relacion
-//   a un ancho particular
-func NewTexto(texto string) *Texto {
-	return &Texto{
-		texto: texto,
+func NewTexto(texto string, anchoTexto, anchoDisponible int, alineamiento TipoAlinear) *Texto {
+	lineas := []string{texto}
+	return &Texto {
+		lineas: lineas,
+
+		alineamiento: alineamiento,
+		wrap: TU_DESCARTAR,
+
+		ancho: anchoDisponible,
+		alto: len(lineas),
+	}
+}
+
+func NewTextoWrap(texto string, ancho int, alineamiento TipoAlinear) *Texto {
+	lineas := []string{texto}
+	return &Texto {
+		lineas: lineas,
+
+		alineamiento: alineamiento,
+		wrap: TU_WRAP,
+
+		ancho: ancho,
+		alto: len(lineas),
 	}
 }
 
@@ -37,7 +56,7 @@ func (t *Texto) Alto() int {
 	return t.alto
 }
 
-func (t *Texto) CambiarTamanio(ancho, alto int, tipo TipoWrap) error {
+func (t *Texto) CambiarTamanio(ancho, alto int) error {
 	return nil
 }
 
@@ -59,7 +78,7 @@ func (t *Texto) EscribirFixPosicion(buffer Buffer, ancho, alto int) error  {
 
 func (t *Texto) Clonar() Buffer {
 	return &Texto {
-		texto: t.texto,
+		lineas: t.lineas,
 		ancho: t.ancho,
 		alto: t.alto,
 	}

@@ -3,6 +3,7 @@ package submodelos
 import (
 	tea "charm.land/bubbletea/v2"
 
+	log "editor-sqlite/logger"
 	r "editor-sqlite/repositorio"
 	c "editor-sqlite/compartido"
 
@@ -13,12 +14,17 @@ type modeloReadme struct {
 	request *c.Estado
 
 	texto *t.Texto
+	anchoMaximo int
 }
 
-func NewModeloReadme(estado *c.Estado) Submodelo {
+func NewModeloReadme(estado *c.Estado, anchoMaximo int) Submodelo {
+	texto := "Hola tanto tiempo\nComo va eso?"
+
 	return &modeloReadme {
 		request: estado,
-		texto: t.NewTexto("Hola tanto tiempo\nComo va eso?"),
+
+		texto: t.NewTextoWrap(texto, anchoMaximo, t.TA_IZQUIERDA),
+		anchoMaximo: anchoMaximo,
 	}
 }
 
@@ -34,7 +40,16 @@ func (m *modeloReadme) Nombre() string {
 }
 
 func (m *modeloReadme) Update(msg tea.Msg) (Submodelo, tea.Cmd) {
-	switch /* valor := */ msg.(type) {}
+	switch valor := msg.(type) {
+    case tea.WindowSizeMsg:
+		ancho := min(valor.Width, m.anchoMaximo)
+		alto := valor.Height
+
+		if err := m.texto.CambiarTamanio(ancho, alto); err != nil {
+			log.Warnf("El cambiar el tamanio del texto en el readme, tuvo el error: %w", err)
+		}
+	}
+
 	return m, nil
 }
 

@@ -8,12 +8,21 @@ import (
 type bufferInfinito struct {
 	ancho int
 	alto  int
+	wrap  TipoWrap
 
 	// Convencion: Primer elemento son filas, y el segundo columnas
 	pantalla [][]rune
 }
 
 func NewBufferScrollInfinito(ancho int) (Buffer, error) {
+	return newBufferScrollInfinito(ancho, TU_DESCARTAR)
+}
+
+func NewBufferScrollInfinitoWrap(ancho int) (Buffer, error) {
+	return newBufferScrollInfinito(ancho, TU_WRAP)
+}
+
+func newBufferScrollInfinito(ancho int, wrap TipoWrap) (Buffer, error) {
 	if ancho <= 0 {
 		return nil, fmt.Errorf("El tamaño del buffer es invalido, con %d", ancho)
 	}
@@ -22,6 +31,7 @@ func NewBufferScrollInfinito(ancho int) (Buffer, error) {
 		ancho: ancho,
 		alto: 0,
 		pantalla: [][]rune{},
+		wrap: wrap,
 	}, nil
 }
 
@@ -41,17 +51,14 @@ func (b *bufferInfinito) Alto() int {
 	return b.alto
 }
 
-func (b *bufferInfinito) CambiarTamanio(ancho, _ int, tipo TipoWrap) error {
+func (b *bufferInfinito) CambiarTamanio(ancho, _ int) error {
 	if ancho <= 0 {
 		return fmt.Errorf("El tamaño del buffer es invalido, con %d", ancho)
 	}
 
-	switch tipo {
+	switch b.wrap {
 	case TU_WRAP: 
 	case TU_DESCARTAR: 
-
-	default: 	
-		return fmt.Errorf("El tipo %d no es valido", tipo)
 	}
 
 	b.ancho = ancho

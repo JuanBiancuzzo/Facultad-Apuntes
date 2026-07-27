@@ -28,12 +28,13 @@ type modeloPortada struct {
 }
 
 func NewModeloPortada(modelo Submodelo) Submodelo {
-	titulo := t.NewTexto(fmt.Sprintf("\n\n%s", TITULO)/* , buffer.Ancho */) 
+	tamanioTexto := TAM_TITULO
+	texto := fmt.Sprintf("\n\n%s\n\n", TITULO)
 
 	return &modeloPortada {
 		modeloInicio: modelo,
 
-		titulo: titulo,
+		titulo: t.NewTexto(texto, tamanioTexto, tamanioTexto, t.TA_CENTRO),
 		skipear: 0,
 	}
 }
@@ -66,17 +67,25 @@ func (m *modeloPortada) Nombre() string {
 func (m *modeloPortada) Update(msg tea.Msg) (Submodelo, tea.Cmd) {
 	cmds := []tea.Cmd{}
 
-	switch msg := msg.(type) {
+	switch valor := msg.(type) {
 	case AvanzarPortadaMsg:
 		m.skipear++
 		cmds = append(cmds, NewAvanzarPortadaCmd(20 * time.Millisecond))
+		msg = nil
 
-	default: 
-		if m.modeloInicio != nil {
-			var cmd tea.Cmd
-			m.modeloInicio, cmd = m.modeloInicio.Update(msg)
-			cmds = append(cmds, cmd)
+    case tea.WindowSizeMsg:
+		ancho := valor.Width
+		alto := valor.Height
+
+		if err := m.titulo.CambiarTamanio(ancho, alto); err != nil {
+			log.Warnf("El cambiar el tamanio del titulo en la portada, tuvo el error: %w", err)
 		}
+	}
+
+	if m.modeloInicio != nil {
+		var cmd tea.Cmd
+		m.modeloInicio, cmd = m.modeloInicio.Update(msg)
+		cmds = append(cmds, cmd)
 	}
 
 	var submodelo Submodelo = m

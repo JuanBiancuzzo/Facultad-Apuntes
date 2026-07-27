@@ -16,6 +16,8 @@ import (
 	mm "editor-sqlite/modelos/mensajes"
 )
 
+const MAX_ANCHO_SUBMODULO int = 90
+
 type modelo struct {
 	// Manejo genearl del sistema
 	// - undo-tree
@@ -35,7 +37,7 @@ type modelo struct {
 func NewModelo(estado *cc.Estado) (tea.Model, error) {
 	var contadorVentanas uint32 = 0
 	ventana := v.NewVentanaDefault(contadorVentanas, s.NewModeloPortada(
-		s.NewModeloReadme(estado),
+		s.NewModeloReadme(estado, MAX_ANCHO_SUBMODULO),
 	))
 	contadorVentanas++
 
@@ -76,7 +78,7 @@ func (m *modelo) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 		var err error
 		if m.background != nil {
-			err = m.background.CambiarTamanio(ancho, alto, t.TU_DESCARTAR)
+			err = m.background.CambiarTamanio(ancho, alto)
 
 		} else {
 			m.background, err = t.NewBufferScrollInfinito(ancho)
@@ -86,7 +88,7 @@ func (m *modelo) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		}
 
 		if m.foreground != nil {
-			err = m.foreground.CambiarTamanio(ancho, alto, t.TU_DESCARTAR)
+			err = m.foreground.CambiarTamanio(ancho, alto)
 
 		} else {
 			m.foreground, err = t.NewBuffer(ancho, alto)

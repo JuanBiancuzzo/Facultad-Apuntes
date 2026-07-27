@@ -42,8 +42,7 @@ func (v *Ventana) Update(msg tea.Msg) tea.Cmd {
 
     case tea.WindowSizeMsg:
 		// En el caso de tener multiples ventanas aca ajustariamos eso
-		msg = nil
-	
+		//   creando el mensaje para que sea un mensaje distinto para cada panel	
 	
     case kk.KeyPress:
 		var ok bool

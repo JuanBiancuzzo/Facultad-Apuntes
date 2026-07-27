@@ -7,7 +7,7 @@ type Buffer interface {
 	Ancho() int
 	Alto() int
 
-	CambiarTamanio(ancho, alto int, tipo TipoWrap) error
+	CambiarTamanio(ancho, alto int) error
 
 	Escribir(buffer Buffer, tipo TipoAlinear) error 
 	EscribirFixAlto(buffer Buffer, alto int, tipo TipoAlinear) error 
