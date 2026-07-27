@@ -21,7 +21,7 @@ type Componente interface {
 
 	Update(msg tea.Msg) tea.Cmd
 
-	View(buffer t.Buffer)
+	View(info t.InfoBuffer) (string, bool)
 
 	Close()
 }

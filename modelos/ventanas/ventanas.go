@@ -79,10 +79,11 @@ func (v *Ventana) Update(msg tea.Msg) tea.Cmd {
 	return tea.Batch(cmds...)
 }
 
-func (v *Ventana) View(buffer t.Buffer) { 
+func (v *Ventana) View(info t.InfoBuffer) string { 
 	if v.submodelo != nil {
-		v.submodelo.View(buffer)
+		return v.submodelo.View(info)
 	}
+	return ""
 }
 
 func (v *Ventana) Close() {

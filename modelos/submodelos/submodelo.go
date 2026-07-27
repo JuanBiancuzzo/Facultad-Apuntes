@@ -13,7 +13,7 @@ type Submodelo interface {
 
 	Update(msg tea.Msg) (Submodelo, tea.Cmd)
 
-	View(buffer t.Buffer)
+	View(info t.InfoBuffer) string
 
 	Close()
 }

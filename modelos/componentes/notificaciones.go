@@ -5,6 +5,7 @@ import (
 	"slices"
 
 	tea "charm.land/bubbletea/v2"
+	// lip "charm.land/lipgloss/v2"
 
 	m "editor-sqlite/modelos/componentes/mensajes"
 	t "editor-sqlite/modelos/textos"
@@ -15,22 +16,22 @@ const MIN_ANCHO = 20
 
 type notificacion struct {
 	id        uint64
-	texto     string
+	texto     *t.Texto
 	prioridad uint32
 }
 
 type Notificaciones struct {
 	activas []notificacion
 
-	ancho int
 	idContador uint64
+	// hacer contexto y cancel para cerrar todas las notificaciones
+	//  que se tengan pendientes
 }
 
 func newNotificaciones() *Notificaciones {
 	return &Notificaciones {
 		activas: []notificacion{},
 	
-		ancho: 1 << 16,
 		idContador: 0,
 	}
 }
@@ -45,10 +46,6 @@ func (n *Notificaciones) Update(msg tea.Msg) tea.Cmd {
 	cmds := []tea.Cmd{}
 
 	switch valor := msg.(type) {
-    case tea.WindowSizeMsg:
-		// Utilizamos un cuarto de la pantalla
-		n.ancho = valor.Width >> 2
-
 	case m.NotificacionMsg:
 		var idNotificacion uint64
 		if valor.Duracion != nil {
@@ -67,27 +64,31 @@ func (n *Notificaciones) Update(msg tea.Msg) tea.Cmd {
 
 		n.activas = append(n.activas, notificacion {
 			id: idNotificacion,
-			texto: valor.Texto,
+			texto: t.NewTexto(valor.Texto),
 			prioridad: valor.Prioridad,
 		})
 		
 	case m.EliminarNotificacionMsg:
-		cantidadActual := len(n.activas)
-		for i := 0; i < cantidadActual; i++ {
-			if n.activas[i].id == valor.Id {
-				n.activas = slices.Delete(n.activas, i, i + 1)
-				i--
+		eliminar := make([]int, 0, len(n.activas))
+		for i, notificacion := range n.activas {
+			if notificacion.id == valor.Id {
+				eliminar = append(eliminar, i)
 			}
+		}
+		for i := len(eliminar) - 1; i >= 0; i-- {
+			n.activas = slices.Delete(n.activas, i, i + 1)
 		}
 	}
 
 	return tea.Batch(cmds...)
 }
 
-func (n *Notificaciones) View(buffer t.Buffer) {
-	if n.ancho < MIN_ANCHO || len(n.activas) == 0 {
-		return
+func (n *Notificaciones) View(info t.InfoBuffer) (string, bool) {
+	if info.Ancho < MIN_ANCHO || len(n.activas) == 0 {
+		return "", false
 	}
+
+	return "", false
 }
 
 func (n *Notificaciones) Close() {}

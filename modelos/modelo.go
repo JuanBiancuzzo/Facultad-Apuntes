@@ -4,8 +4,8 @@ import (
 	"slices"
 
 	tea "charm.land/bubbletea/v2"
+	lip "charm.land/lipgloss/v2"
 
-	log "editor-sqlite/logger"
 	k "editor-sqlite/keybinds/keys"
 	cc "editor-sqlite/compartido"
 
@@ -26,12 +26,14 @@ type modelo struct {
 	ventanaActiva uint
 
 	// Visualizacion 
-	background t.Buffer
-	foreground t.Buffer
+	background *t.InfoBuffer
+	foreground *t.InfoBuffer
 
 	// Datos particulares para modificar el estado
 	focusVentana bool
 	contadorVentanas uint32
+	bufferVentana string
+	renderTemporal bool
 }
 
 func NewModelo(estado *cc.Estado) (tea.Model, error) {
@@ -51,6 +53,8 @@ func NewModelo(estado *cc.Estado) (tea.Model, error) {
 
 		focusVentana: true,
 		contadorVentanas: contadorVentanas,
+		bufferVentana: "",
+		renderTemporal: false,
 	}, nil
 }
 
@@ -76,26 +80,17 @@ func (m *modelo) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		ancho := valor.Width
 		alto := valor.Height
 
-		var err error
-		if m.background != nil {
-			err = m.background.CambiarTamanio(ancho, alto)
+		if m.background == nil {
+			m.background = t.NewInfoBuffer(ancho, alto)
+		}
+		m.background.ActualizarTamanio(ancho, alto)
 
-		} else {
-			m.background, err = t.NewBufferScrollInfinito(ancho)
+		if m.foreground == nil {
+			m.foreground = t.NewInfoBuffer(ancho, alto)
 		}
-		if err != nil {
-			log.Errorf("Al cambiar tamaño de background, ocurrio el error: %w", err)
-		}
+		m.foreground.ActualizarTamanio(ancho, alto)
 
-		if m.foreground != nil {
-			err = m.foreground.CambiarTamanio(ancho, alto)
-
-		} else {
-			m.foreground, err = t.NewBuffer(ancho, alto)
-		}
-		if err != nil {
-			log.Errorf("Al cambiar tamaño de foreground, ocurrio el error: %w", err)
-		}
+		m.renderTemporal = true
 
     case tea.KeyPressMsg:
 		msg = k.NewKeyFromTea(valor.Key())
@@ -148,19 +143,26 @@ func (m *modelo) View() (view tea.View) {
 		return view
 	}
 
-	m.foreground.Reiniciar()
+	capas := make([]*lip.Layer, 0, len(m.componentes) + 1)
+
+	zIndex := 1
 	for _, componente := range m.componentes {
-		componente.View(m.foreground)
+		if buffer, ok := componente.View(*m.foreground); ok {
+			capa := lip.NewLayer(buffer).Z(zIndex)
+			capas = append(capas, capa)
+		}
 	}
 
-	if m.focusVentana && len(m.ventanas) > 0 {
-		m.background.Reiniciar()
-		m.ventanas[m.ventanaActiva].View(m.background)
+	if (m.renderTemporal || m.focusVentana) && len(m.ventanas) > 0 {
+		m.bufferVentana = m.ventanas[m.ventanaActiva].View(*m.background)
+		m.renderTemporal = false
 	}
 
-	pantallaCompleta := m.background.Clonar()
-	pantallaCompleta.Escribir(m.foreground, t.TA_ARRIBA | t.TA_IZQUIERDA)
-	view.SetContent(pantallaCompleta.Imprimir())
+	capa := lip.NewLayer(m.bufferVentana).Z(0)
+	capas = append(capas, capa)
+
+	compositor := lip.NewCompositor(capas...)
+	view.SetContent(compositor.Render())
 	return view
 }
 
