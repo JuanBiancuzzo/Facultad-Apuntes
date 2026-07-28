@@ -6,6 +6,11 @@ import (
 	g "editor-sqlite/estructuras/general"
 )
 
+/*
+	Agregar un procesos: 
+	 * Para las formulas de latex (ketex/el otro)
+	 * Para tikz si quiero generar esos svgs
+*/
 type Procesos struct {
 	embeddings *procesoEmbedding
 }
@@ -26,6 +31,11 @@ func (p *Procesos) ConseguirEmbedding(texto string) (*g.Embedding, error) {
 		return nil, fmt.Errorf("No existe el proceso de embeddings")
 	}
 	return p.embeddings.ConseguirEmbedding(texto)
+}
+
+
+func (p *Procesos) ConseguirMultiplesEmbedding(textos []string) ([]*g.Embedding, error) {
+	return []*g.Embedding{}, fmt.Errorf("TODO")
 }
 
 func (p *Procesos) Close() {
