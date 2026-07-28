@@ -6,7 +6,7 @@ import (
 	log "editor-sqlite/logger"
 	m "editor-sqlite/modelos"
 	r "editor-sqlite/repositorio"
-	p "editor-sqlite/proceso_embedding"
+	p "editor-sqlite/procesos"
 	c "editor-sqlite/compartido"
 
 	tea "charm.land/bubbletea/v2"
@@ -20,14 +20,14 @@ func main() {
 	}
 	defer baseDeDato.Close()
 
-	embeddings, err := p.NewProcesoEmbedding()
+	procesos, err := p.NewProcesos()
 	if err != nil {
-		log.Errorf("Ocurrio un error al obtener proceso de embeddings: %v\n", err)
+		log.Errorf("Ocurrio un error al obtener procesos: %v\n", err)
 		os.Exit(1)
 	}
-	defer embeddings.Close()
+	defer procesos.Close()
 
-	estado := c.NewEstadoCompartido(baseDeDato, embeddings)
+	estado := c.NewEstadoCompartido(baseDeDato, procesos)
 
 	modelo, err := m.NewModelo(estado)
 	if err != nil {

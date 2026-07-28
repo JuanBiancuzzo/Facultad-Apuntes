@@ -1,4 +1,4 @@
-package proceso_embedding
+package procesos
 
 import (
 	"fmt"
@@ -14,7 +14,7 @@ import (
 	g "editor-sqlite/estructuras/general"
 )
 
-type ProcesoEmbedding struct {
+type procesoEmbedding struct {
 	Comando *exec.Cmd
 	InputPipe io.WriteCloser
 	OutputPipe io.ReadCloser
@@ -24,8 +24,8 @@ type ProcesoEmbedding struct {
 	cancelMutex *sync.Mutex
 }
 
-func NewProcesoEmbedding() (*ProcesoEmbedding, error) {
-	argumentos := "run --directory proceso_embedding main.py" 
+func newProcesoEmbedding() (*procesoEmbedding, error) {
+	argumentos := "run --directory procesos/proceso_embedding main.py" 
 	comando := exec.Command("uv", strings.Split(argumentos, " ")...)
 	
 	if inputPipe, err := comando.StdinPipe(); err != nil {
@@ -39,7 +39,7 @@ func NewProcesoEmbedding() (*ProcesoEmbedding, error) {
 
 	} else {
 		var cancelMutex sync.Mutex
-		return &ProcesoEmbedding{
+		return &procesoEmbedding{
 			Comando: comando,
 			InputPipe: inputPipe,
 			OutputPipe: outputPipe,
@@ -51,13 +51,13 @@ func NewProcesoEmbedding() (*ProcesoEmbedding, error) {
 	}
 }
 
-func (e *ProcesoEmbedding) ConseguirEmbedding(texto string) (*g.Embedding, error) {
+func (e *procesoEmbedding) ConseguirEmbedding(texto string) (*g.Embedding, error) {
 	contador := e.cancelContador 
 	e.cancelContador++
 
 	ctx, cancel := context.WithCancel(context.Background())
 	e.cancels[contador] = cancel
-	defer e.EliminarCancel(contador)
+	defer e.eliminarCancel(contador)
 
 	input := ctxio.NewWriter(ctx, e.InputPipe)
 	texto = fmt.Sprintf("%s\n", strings.TrimSpace(texto))
@@ -74,7 +74,7 @@ func (e *ProcesoEmbedding) ConseguirEmbedding(texto string) (*g.Embedding, error
 	return g.NewEmbedding(bytes), nil
 }
 
-func (e *ProcesoEmbedding) EliminarCancel(contador uint32) {
+func (e *procesoEmbedding) eliminarCancel(contador uint32) {
 	e.cancelMutex.Lock()
 	if cancel, ok := e.cancels[contador]; ok {
 		cancel()
@@ -83,7 +83,7 @@ func (e *ProcesoEmbedding) EliminarCancel(contador uint32) {
 	e.cancelMutex.Unlock()
 }
 
-func (e *ProcesoEmbedding) Close() {
+func (e *procesoEmbedding) Close() {
 	e.Comando.Process.Signal(syscall.SIGTERM)
 
 	e.InputPipe.Close()
@@ -95,6 +95,4 @@ func (e *ProcesoEmbedding) Close() {
 	}
 	clear(e.cancels)
 	e.cancelMutex.Unlock()
-
 }
-

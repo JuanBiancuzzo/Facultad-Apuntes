@@ -5,20 +5,20 @@ import (
 
 	log "editor-sqlite/logger"
 	r "editor-sqlite/repositorio"
-	p "editor-sqlite/proceso_embedding"
+	p "editor-sqlite/procesos"
 
 	g "editor-sqlite/estructuras/general"
 )
 
 type Estado struct {
-	repo       r.Repositorio
-	embeddings *p.ProcesoEmbedding
+	repo     r.Repositorio
+	procesos *p.Procesos
 }
 
-func NewEstadoCompartido(repo r.Repositorio, embeddings *p.ProcesoEmbedding) *Estado {
+func NewEstadoCompartido(repo r.Repositorio, procesos *p.Procesos) *Estado {
 	return &Estado {
 		repo,
-		embeddings,
+		procesos,
 	}
 }
 
@@ -30,11 +30,11 @@ func (e *Estado) Repo(request func(r.Repositorio) tea.Msg) tea.Cmd {
 
 func (e *Estado) Embedding(texto string, request func(g.Embedding, r.Repositorio) tea.Msg) tea.Cmd {
 	return func() tea.Msg {
-		embed, err := e.embeddings.ConseguirEmbedding(texto)
+		embedding, err := e.procesos.ConseguirEmbedding(texto)
 		if err != nil {
 			log.Fatalf("Error al pedir embedding del texto %q, con error: %w", texto, err)
 			return nil
 		}
-		return request(*embed, e.repo)
+		return request(*embedding, e.repo)
 	}
 }
