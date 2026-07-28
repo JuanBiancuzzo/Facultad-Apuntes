@@ -3,13 +3,13 @@ import sqlite3 as sql
 from typing import Dict, List
 from dataclasses import dataclass
 
-from archivos import Archivo
 from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
+from contenido.archivo import Archivo
 from contenido.general.bloque_texto import BloqueTexto
-from contenido.general.embedding import Embbeding
+from contenido.general.embedding import Embedding
 from contenido.referencias.diccionario import ReferenciaDiccionario
 from .tablas import TablaDiccionario as Tabla
 
@@ -33,8 +33,7 @@ class Diccionario(Dato):
 
         palabra = archivo.extra["palabraBuscada"]
         clave_diccionario = diccionario.obtener_clave()
-        embedding = Embbeding.de_string(Tabla.nombre, clave_diccionario, palabra)
-        datos.append(embedding)
+        datos.extend(Embedding.de_string(Tabla.nombre, clave_diccionario, palabra))
 
         return datos
 

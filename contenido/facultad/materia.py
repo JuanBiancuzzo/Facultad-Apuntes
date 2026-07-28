@@ -3,17 +3,16 @@ import sqlite3 as sql
 from typing import Dict, List
 from dataclasses import dataclass
 
-from archivos import Archivo, Texto
-from archivos.texto import Seccion, split_secciones
 from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
+from contenido.archivo import Archivo, Texto, Seccion
 from contenido.referencias.referencia import Referencia
 from contenido.extra.bibliografia import Bibliografia
 from contenido.extra.guias import GuiaPorDato as GuiasDeMateria
 from contenido.extra.evalauciones import EvaluacionPorDato as EvaluacionesDeMateria
-from contenido.general.embedding import Embbeding
+from contenido.general.embedding import Embedding
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa
 from contenido.coleccion.guias import Guia
@@ -53,7 +52,7 @@ class Materia(Dato):
         nombre_carrera = archivo.extra["nombreCarrera"]
         clave_carrera = Carrera._obtener_clave(nombre_carrera)
 
-        resultado = split_secciones(archivo.contenido, [
+        resultado = archivo.contenido.split_secciones([
             Seccion(1, nombre) 
             for nombre in ["Apuntes", "Resumen", "Guías", "Evaluacion", "Bibliografía"]
         ])
@@ -95,10 +94,10 @@ class Materia(Dato):
             datos.append(EvaluacionesDeMateria.materia(clave_materia, clave_evaluacion))
 
         datos_materia = (Tabla.nombre, clave_materia)
-        datos.append(Embbeding.de_string(*datos_materia, f"{materia.nombre_materia} de {nombre_carrera}"))
+        datos.extend(Embedding.de_string(*datos_materia, f"{materia.nombre_materia} de {nombre_carrera}"))
 
         if bloque_resumen is not None:
-            datos.extend(Embbeding.de_texto(*datos_materia, bloque_resumen.texto))
+            datos.extend(Embedding.de_texto(*datos_materia, bloque_resumen.texto))
 
         return datos
 

@@ -11,20 +11,13 @@ from tablas import crear_tablas
 
 from contenido import registrar 
 
-def parsear_archivos(nombre: str) -> Archivo | None:
-    archivo, err = Archivo.parsear(nombre, args.input_path)
-    if err is not None:
-        print(err)
-        return None
-    return archivo
-
 def cargar_datos(args: Argumentos, conn: sql.Connection):
     # Intentamos crear tablas en orden de dependencias
     crear_tablas(conn)
 
     archivos = procesar_archivos(Procesar(
         args.input_path, 
-        parsear_archivos,
+        lambda nombre: Archivo.parsear(nombre, args.input_path),
         args.directorios_omitir, 
         args.archivos_omitir,
     ))

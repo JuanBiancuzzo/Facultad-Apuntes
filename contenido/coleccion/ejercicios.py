@@ -3,14 +3,12 @@ import sqlite3 as sql
 from typing import Dict, List
 from dataclasses import dataclass
 
-from archivos.archivo import Archivo, Texto
-from archivos.texto import Seccion, split_secciones
-from contenido.general import embedding
 from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
-from contenido.general.embedding import Embbeding
+from contenido.archivo import Archivo, Texto, Seccion
+from contenido.general.embedding import Embedding
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa
 from .tablas import TablaEjercicio as Tabla
@@ -44,7 +42,7 @@ class Ejercicio(Dato):
             raise err
 
         secciones = [SECCION_ENUNCIADO, SECCION_RESOLUCION, SECCION_RESULTADO]
-        resultado_split = split_secciones(archivo.contenido, [
+        resultado_split = archivo.contenido.split_secciones([
             Seccion(1, nombre) for nombre in secciones
         ])
 
@@ -85,15 +83,14 @@ class Ejercicio(Dato):
         # Embedding a para todo texto relacionado
         datos_ejercicio = (Tabla.nombre, ejercicio.obtener_clave())
         if ejercicio.nombre: 
-            embedding = Embbeding.de_string(*datos_ejercicio, ejercicio.nombre)
-            datos.append(embedding)
+            datos.extend(Embedding.de_string(*datos_ejercicio, ejercicio.nombre))
 
         if not enunciado_vacio:
-            datos.extend(Embbeding.de_texto(*datos_ejercicio, enunciado.texto))
+            datos.extend(Embedding.de_texto(*datos_ejercicio, enunciado.texto))
         if not resolucion_vacio:
-            datos.extend(Embbeding.de_texto(*datos_ejercicio, resolucion.texto))
+            datos.extend(Embedding.de_texto(*datos_ejercicio, resolucion.texto))
         if resultado:
-            datos.extend(Embbeding.de_texto(*datos_ejercicio, resultado.texto))
+            datos.extend(Embedding.de_texto(*datos_ejercicio, resultado.texto))
 
         return datos
 

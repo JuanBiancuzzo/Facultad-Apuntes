@@ -4,12 +4,12 @@ from typing import Self, Dict, List
 from dataclasses import dataclass
 from enum import Enum
 
-from archivos import Archivo
 from dependencias import Dato, Nodo, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
-from contenido.general.embedding import Embbeding
+from contenido.archivo import Archivo
+from contenido.general.embedding import Embedding
 from contenido.general.bloque_texto import BloqueTexto
 from .tablas import TablaColeccion as Tabla
 
@@ -77,9 +77,9 @@ class Coleccion(Dato):
         datos.append(coleccion)
 
         datos_coleccion = (Tabla.nombre, coleccion.obtener_clave())
-        datos.append(Embbeding.de_string(*datos_coleccion, tipo.value))
-        datos.append(Embbeding.de_string(*datos_coleccion, coleccion.estado))
-        datos.extend(Embbeding.de_texto(*datos_coleccion, descripcion.texto))
+        datos.extend(Embedding.de_string(*datos_coleccion, tipo.value))
+        datos.extend(Embedding.de_string(*datos_coleccion, coleccion.estado))
+        datos.extend(Embedding.de_texto(*datos_coleccion, descripcion.texto))
 
         return datos
 

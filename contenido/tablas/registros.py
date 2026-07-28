@@ -64,6 +64,7 @@ class TablasGenerales(StrEnum):
     BLOQUE_TEXTO = "BloqueDeTexto"
     EDITORIAL = "Editoriales"
     IMAGENES = "Imagenes"
+    LINK = "LinksInternos"
 
 class TablasExtra(StrEnum):
     BIBLIOGRAFIA = "Bibliografia"

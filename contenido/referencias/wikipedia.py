@@ -4,11 +4,11 @@ from typing import Dict, List
 from dataclasses import dataclass
 import datetime as dt
 
-from archivos.archivo import Archivo
 from dependencias import Clave, Dato
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
+from contenido.archivo import Archivo
 from .referencia import Referencia
 from .tablas import TablaWikipedia as Tabla
 

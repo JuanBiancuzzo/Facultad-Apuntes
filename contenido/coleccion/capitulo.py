@@ -3,13 +3,13 @@ import sqlite3 as sql
 from typing import Dict, List
 from dataclasses import dataclass
 
-from archivos import Archivo
 from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
+from contenido.archivo import Archivo
 from contenido.extra.guias import GuiaPorDato as GuiasDeCapitulo
-from contenido.general.embedding import Embbeding
+from contenido.general.embedding import Embedding
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa
 from contenido.coleccion.guias import Guia
@@ -61,12 +61,11 @@ class Capitulo(Dato):
             datos_capitulo = (Tabla.nombre, clave_capitulo)
             if "nombreCapitulo" in extra_capitulo:
                 nombre = ReferenciaCapitulo.nombre_representativo(archivo, extra_capitulo)
-                embedding = Embbeding.de_string(*datos_capitulo, nombre)
-                datos.append(embedding)
+                datos.extend(Embedding.de_string(*datos_capitulo, nombre))
 
             if bloque_resumen is not None:
-                embedding = Embbeding.de_texto(*datos_capitulo, bloque_resumen)
-                datos.append(embedding)
+                embedding = Embedding.de_texto(*datos_capitulo, bloque_resumen)
+                datos.extend(embedding)
 
         return datos
 

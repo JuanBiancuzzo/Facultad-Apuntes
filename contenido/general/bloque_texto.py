@@ -2,11 +2,11 @@ import sqlite3 as sql
 from dataclasses import dataclass
 from typing import Dict, List
 
-from archivos import Texto
 from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
+from contenido.archivo import Texto
 from .tablas import TablaBloqueTexto as Tabla
 
 @dataclass

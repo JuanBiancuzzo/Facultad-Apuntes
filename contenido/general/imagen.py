@@ -41,7 +41,7 @@ class Imagen(Dato):
             loggear(LoggerNivel.FATAL, mensaje)
             raise Exception(mensaje)
 
-        return [Imagen(tipo, archivo.metadata.path(), archivo.blob)]
+        return [Imagen(tipo, archivo.metadata.path(), archivo.contenido)]
 
     def dependo(self) -> List[Clave]: 
         return super().dependo()

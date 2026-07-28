@@ -5,11 +5,11 @@ from dataclasses import dataclass
 import datetime as dt
 from enum import Enum
 
-from archivos.archivo import Archivo
 from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
+from contenido.archivo import Archivo
 from .tablas import TablaReferencia as Tabla
 
 class TipoReferencia(Enum):

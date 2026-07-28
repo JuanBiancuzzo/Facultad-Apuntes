@@ -9,6 +9,7 @@ class TipoNodo(IntEnum):
     EMBEDDING = auto()
     EDITORIAL = auto()
     IMAGEN = auto()
+    LINK = auto()
 
     BIBLIOGRAFIA = auto()
     GUIAS_POR_DATO = auto()

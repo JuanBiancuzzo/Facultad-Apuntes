@@ -3,13 +3,12 @@ import sqlite3 as sql
 from typing import Dict, List
 from dataclasses import dataclass
 
-from archivos import Archivo, Texto
-from archivos.texto import split_secciones, Seccion
 from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
-from contenido.general.embedding import Embbeding
+from contenido.archivo import Archivo, Texto, Seccion
+from contenido.general.embedding import Embedding
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa
 from contenido.referencias.paper import ReferenciaPaper
@@ -34,7 +33,7 @@ class Paper(Dato):
             loggear(LoggerNivel.FATAL, mensaje)
             raise Exception(mensaje)
 
-        resultado: Dict[str, str | None] = split_secciones(archivo.contenido, [ 
+        resultado: Dict[str, str | None] = archivo.contenido.split_secciones([ 
             Seccion(1, "Resumen"),
             Seccion(1, "Referencias"),
         ])
@@ -57,10 +56,10 @@ class Paper(Dato):
         datos_paper = (Tabla.nombre, paper.obtener_clave())
 
         nombre = ReferenciaPaper.nombre_representativo(archivo)
-        datos.append(Embbeding.de_string(*datos_paper, nombre))
+        datos.extend(Embedding.de_string(*datos_paper, nombre))
 
         if bloque_resumen is not None:
-            datos.extend(Embbeding.de_texto(*datos_paper, bloque_resumen.texto))
+            datos.extend(Embedding.de_texto(*datos_paper, bloque_resumen.texto))
 
         return datos
 

@@ -3,14 +3,13 @@ import sqlite3 as sql
 from typing import Dict, List
 from dataclasses import dataclass
 
-from archivos.archivo import Archivo, Texto
-from archivos.texto import Seccion, split_secciones
 from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
+from contenido.archivo import Archivo, Texto, Seccion
 from contenido.extra.bibliografia import Bibliografia
-from contenido.general.embedding import Embbeding
+from contenido.general.embedding import Embedding
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa
 from contenido.referencias.referencia import Referencia
@@ -46,7 +45,7 @@ class Tema(Dato):
             loggear(LoggerNivel.FATAL, mensaje)
             raise Exception(mensaje)
 
-        resultado = split_secciones(archivo.contenido, [
+        resultado = archivo.contenido.split_secciones([
             Seccion(1, nombre) 
             for nombre in ["Índice", "Resumen", "Bibliografía"]
         ])
@@ -90,10 +89,10 @@ class Tema(Dato):
 
         datos_tema = (Tabla.nombre, clave_tema)
         nombre = f"{tema.nombre_tema} N°{tema.capitulo} de la materia {nombre_materia} de la carrera {nombre_carrera}"
-        datos.append(Embbeding.de_string(*datos_tema, nombre))
+        datos.extend(Embedding.de_string(*datos_tema, nombre))
 
         if bloque_resumen is not None:
-            datos.extend(Embbeding.de_texto(*datos_tema, bloque_resumen.texto))
+            datos.extend(Embedding.de_texto(*datos_tema, bloque_resumen.texto))
 
         return datos
 

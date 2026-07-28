@@ -1,8 +1,9 @@
 from typing import List
 
 from dependencias import Dato
-from archivos import Archivo, Extension
+from archivos import Archivo as ArchivoGeneral, Extension
 
+from contenido.archivo import Archivo
 from contenido import referencias, general, facultad, coleccion
 
 def _registrar_markdown(tag: str, archivo: Archivo) -> List[Dato]:
@@ -85,15 +86,16 @@ def _registrar_markdown(tag: str, archivo: Archivo) -> List[Dato]:
 
     return datos 
 
-def registrar(archivo: Archivo) -> List[Dato]:
+def registrar(archivo_general: ArchivoGeneral) -> List[Dato]:
     datos = []
-    extension = archivo.metadata.extension
+    extension = archivo_general.metadata.extension
 
     if extension == Extension.MARKDOWN:
+        archivo = Archivo.parsear(archivo_general)
         for tag in archivo.extra.get("tags", []):
             datos.extend(_registrar_markdown(tag, archivo))
 
     elif general.TipoImagen.es_imagen(extension):
-        datos.extend(general.Imagen.parsear(archivo))
+        datos.extend(general.Imagen.parsear(archivo_general))
 
     return datos

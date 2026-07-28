@@ -4,12 +4,12 @@ import os
 from typing import Dict, List
 from dataclasses import dataclass
 
-from archivos import Archivo
 from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
-from contenido.general.embedding import Embbeding
+from contenido.archivo import Archivo
+from contenido.general.embedding import Embedding
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa
 from contenido.general.imagen import Imagen
@@ -58,10 +58,10 @@ class Libro(Dato):
         datos_libro = (Tabla.nombre, libro.obtener_clave())
 
         nombre = ReferenciaLibro.nombre_representativo(archivo)
-        datos.append(Embbeding.de_string(*datos_libro, nombre))
+        datos.extend(Embedding.de_string(*datos_libro, nombre))
 
         if bloque_resumen is not None:
-            datos.extend(Embbeding.de_texto(*datos_libro, bloque_resumen.texto))
+            datos.extend(Embedding.de_texto(*datos_libro, bloque_resumen.texto))
 
         return datos
 

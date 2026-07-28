@@ -4,13 +4,12 @@ from typing import Dict, List
 from dataclasses import dataclass
 from enum import StrEnum
 
-from archivos import Archivo
-from contenido.general import embedding
 from dependencias import Dato, Nodo, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
-from contenido.general.embedding import Embbeding
+from contenido.archivo import Archivo
+from contenido.general.embedding import Embedding
 from .tablas import TablaAjedrez as Tabla
 
 class TipoMovimientosAjedrez(StrEnum):
@@ -36,8 +35,7 @@ class Ajedrez(Dato):
         datos.append(ajedrez)
 
         clave_ajedrez = ajedrez.obtener_clave()
-        embedding = Embbeding.de_string(Tabla.nombre, clave_ajedrez, ajedrez.nombre)
-        datos.append(embedding)
+        datos.extend(Embedding.de_string(Tabla.nombre, clave_ajedrez, ajedrez.nombre))
 
         return datos
 

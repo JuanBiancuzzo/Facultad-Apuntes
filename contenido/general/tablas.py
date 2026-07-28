@@ -1,4 +1,5 @@
 from sqlite3 import Connection as Conn, Cursor
+from typing import Dict, Any
 from tablas import Tabla, registrar_tabla
 
 from contenido.tablas import TablasGenerales as Tablas, TablasColeccion, TablasFacultad
@@ -27,39 +28,21 @@ class TablaAutore(Tabla):
 @registrar_tabla
 class TablaEmbedding(Tabla):
     nombre = Tablas.EMBEDDING
-    necesito_tablas = [
-        TablasColeccion.COLECCION,
-
-        TablasColeccion.AJEDREZ,
-        TablasColeccion.DICCIONARIO,
-        TablasColeccion.EJERCICIOS,
-
-        TablasColeccion.LIBRO,
-        TablasColeccion.CAPITULO,
-        TablasColeccion.PAPER,
-
-        TablasFacultad.CARRERAS,
-        TablasFacultad.MATERIAS,
-        TablasFacultad.TEMA,
-    ]
+    necesito_tablas = [ Tablas.LINK ]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
             CREATE TABLE IF NOT EXISTS {self.nombre} (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
                 embedding BLOB NOT NULL,
-
-                tabla TEXT NOT NULL,
-                id_dato INTEGER NOT NULL
+                id_link INTEGER NOT NULL REFERENCES {Tablas.LINK}(id)
             );
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, embedding: bytes, tabla: str, id_dato: int) -> int | None: 
-        return cls._insertar(cursor, {
+    def insertar(cls, cursor: Cursor, embedding: bytes, id_link: int) -> None: 
+        cls._insertar(cursor, {
             "embedding": embedding,
-            "tabla": tabla,
-            "id_dato": id_dato,
+            "id_link": id_link,
         }) 
 
 @registrar_tabla
@@ -120,3 +103,43 @@ class TablaImagen(Tabla):
             "tipo": tipo,
             "imagen": imagen,
         })
+
+@registrar_tabla
+class TablaLink(Tabla):
+    nombre = Tablas.LINK
+    necesito_tablas = [
+        TablasColeccion.COLECCION,
+
+        TablasColeccion.AJEDREZ,
+        TablasColeccion.DICCIONARIO,
+        TablasColeccion.EJERCICIOS,
+
+        TablasColeccion.LIBRO,
+        TablasColeccion.CAPITULO,
+        TablasColeccion.PAPER,
+
+        # TablasColeccion.CURSO,
+
+        TablasFacultad.CARRERAS,
+        TablasFacultad.MATERIAS,
+        TablasFacultad.TEMA,
+    ]
+
+    def crear(self, conn: Conn) -> None:
+        conn.execute(f"""
+            CREATE TABLE IF NOT EXISTS {self.nombre} (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                tabla TEXT NOT NULL,
+                id_dato INTEGER NOT NULL,
+                info BLOB
+            );
+        """)
+
+    @classmethod
+    def insertar(cls, cursor: Cursor, tabla: str, id_dato: int, info: bytes | None) -> int | None: 
+        valores: Dict[str, Any] = {
+            "tabla": tabla,
+            "id_dato": id_dato,
+        }
+        if info: valores["info"] = info
+        return cls._insertar(cursor, valores) 

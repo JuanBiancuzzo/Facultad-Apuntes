@@ -3,11 +3,11 @@ import sqlite3 as sql
 from typing import Dict, List
 from dataclasses import dataclass
 
-from archivos import Archivo
 from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
+from contenido.archivo import Archivo
 from .ejercicios import Ejercicio
 from .tablas import TablaGuia as Tabla, TablaEjerciciosGuia
 

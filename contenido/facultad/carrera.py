@@ -3,12 +3,11 @@ import sqlite3 as sql
 from typing import Dict, List
 from dataclasses import dataclass
 
-from archivos.archivo import Archivo
-from contenido.general import embedding
 from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
-from contenido.general.embedding import Embbeding
+from contenido.archivo import Archivo
+from contenido.general.embedding import Embedding
 from contenido.general.etapa import Etapa
 from contenido.dependencias import TipoNodo
 from .plan_de_estudio import PlanDeEstudio
@@ -40,8 +39,7 @@ class Carrera(Dato):
         for plan in archivo.extra["planes"]:
             datos.append(PlanDeEstudio(plan, clave_carrera))
 
-        embedding = Embbeding.de_string(Tabla.nombre, clave_carrera, carrera.nombre)
-        datos.append(embedding)
+        datos.extend(Embedding.de_string(Tabla.nombre, clave_carrera, carrera.nombre))
 
         return datos
 
