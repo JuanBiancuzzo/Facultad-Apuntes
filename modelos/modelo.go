@@ -21,6 +21,9 @@ const MAX_ANCHO_SUBMODULO int = 90
 type modelo struct {
 	// Manejo genearl del sistema
 	// - undo-tree
+	// Hacer un sistema de request del componente para mandar mensajes
+	//   esto se puede hacer con un stack para ir pidiendo ese request 
+	//   y mantener ese requisito hasta que digan que ya estan
 	componentes map[c.ComponenteId]c.Componente
 	ventanas []*v.Ventana
 	ventanaActiva uint
