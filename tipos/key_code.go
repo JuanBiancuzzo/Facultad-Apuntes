@@ -1,4 +1,4 @@
-package keys
+package tipos
 
 type Codigo rune
 

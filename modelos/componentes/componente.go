@@ -1,34 +1,12 @@
 package componentes
 
 import (
-	tea "charm.land/bubbletea/v2"
-	lip "charm.land/lipgloss/v2"
-
 	c "editor-sqlite/compartido"
-	t "editor-sqlite/modelos/textos"
+	t "editor-sqlite/tipos"
 )
 
-type ComponenteId uint
-
-const (
-	CI_NOTIFICACIONES ComponenteId = iota
-	CI_COMMAND_PALLETE 
-	CI_BUSQUEDA 
-	CI_HARPOON
-)
-
-type Componente interface {
-	Init() tea.Cmd
-
-	Update(msg tea.Msg) tea.Cmd
-
-	View(info t.InfoBuffer) (*lip.Layer, bool)
-
-	Close()
-}
-
-func DefaultComponentes(_ *c.Estado) map[ComponenteId]Componente {
-	return map[ComponenteId]Componente{
-		CI_NOTIFICACIONES: newNotificaciones(),
+func DefaultComponentes(_ *c.Estado) map[t.ComponenteId]t.Componente {
+	return map[t.ComponenteId]t.Componente{
+		t.CI_NOTIFICACIONES: newNotificaciones(),
 	}
 }

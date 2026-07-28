@@ -1,4 +1,4 @@
-package keys
+package tipos
 
 import (
 	tea "charm.land/bubbletea/v2"

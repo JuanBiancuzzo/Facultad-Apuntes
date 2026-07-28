@@ -1,9 +1,7 @@
-package submodelos
+package tipos
 
 import (
 	tea "charm.land/bubbletea/v2"
-
-	t "editor-sqlite/modelos/textos"
 )
 
 type Submodelo interface {
@@ -13,7 +11,7 @@ type Submodelo interface {
 
 	Update(msg tea.Msg) (Submodelo, tea.Cmd)
 
-	View(info t.InfoBuffer) string
+	View(info InfoBuffer) string
 
 	Close()
 }

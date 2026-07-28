@@ -1,4 +1,4 @@
-package textos
+package tipos
 
 import (
 	lip "charm.land/lipgloss/v2"

@@ -8,7 +8,7 @@ import (
 	tea "charm.land/bubbletea/v2"
 	lip "charm.land/lipgloss/v2"
 
-	t "editor-sqlite/modelos/textos"
+	t "editor-sqlite/tipos"
 )
 
 const TITULO string = `
@@ -21,14 +21,14 @@ const TITULO string = `
 `
 
 type modeloPortada struct {
-	modeloInicio Submodelo
+	modeloInicio t.Submodelo
 
 	titulo     string
 	altoTitulo int
 	skipear    int
 }
 
-func NewModeloPortada(modelo Submodelo) Submodelo {
+func NewModeloPortada(modelo t.Submodelo) t.Submodelo {
 	titulo := fmt.Sprintf("\n\n%s\n\n", TITULO)
 	alto := lip.Height(lip.NewStyle().Render(titulo))
 
@@ -41,12 +41,12 @@ func NewModeloPortada(modelo Submodelo) Submodelo {
 	}
 }
 
-type AvanzarPortadaMsg struct {}
+type avanzarPortadaMsg struct {}
 
 func NewAvanzarPortadaCmd(tiempo time.Duration) tea.Cmd {
 	return func() tea.Msg {
 		<- time.After(tiempo)
-		return AvanzarPortadaMsg{}
+		return avanzarPortadaMsg{}
 	}
 }
 
@@ -67,11 +67,11 @@ func (m *modeloPortada) Nombre() string {
 	return m.modeloInicio.Nombre()
 }
 
-func (m *modeloPortada) Update(msg tea.Msg) (Submodelo, tea.Cmd) {
+func (m *modeloPortada) Update(msg tea.Msg) (t.Submodelo, tea.Cmd) {
 	cmds := []tea.Cmd{}
 
 	switch /* valor := */ msg.(type) {
-	case AvanzarPortadaMsg:
+	case avanzarPortadaMsg:
 		m.skipear++
 		cmds = append(cmds, NewAvanzarPortadaCmd(100 * time.Millisecond))
 		msg = nil
@@ -83,7 +83,7 @@ func (m *modeloPortada) Update(msg tea.Msg) (Submodelo, tea.Cmd) {
 		cmds = append(cmds, cmd)
 	}
 
-	var submodelo Submodelo = m
+	var submodelo t.Submodelo = m
 	if m.skipear > m.altoTitulo {
 		submodelo = m.modeloInicio
 	}

@@ -1,9 +1,9 @@
-package arboles
+package editor
 
 import (
 	"fmt"
 
-	k "editor-sqlite/keybinds/keys"
+	t "editor-sqlite/tipos"
 )
 
 type arbolAcciones struct {
@@ -11,7 +11,7 @@ type arbolAcciones struct {
 	nodoActual *NodoAccion
 }
 
-func NewArbolAcciones(nodos ...*NodoAccion) Arbol {
+func NewArbolAcciones(nodos ...*NodoAccion) t.Arbol {
 	return &arbolAcciones {
 		nodos: nodos,
 		nodoActual: nil,
@@ -27,8 +27,8 @@ func (a *arbolAcciones) Describir() string {
 	)
 }
 
-func (a *arbolAcciones) Actualizar(key k.KeyPress) (Accion, bool) {
-	if key.Codigo == k.C_BORRAR && a.nodoActual != nil {
+func (a *arbolAcciones) Actualizar(key t.KeyPress) (t.Accion, bool) {
+	if key.Codigo == t.C_BORRAR && a.nodoActual != nil {
 		a.nodoActual = a.nodoActual.Volver()
 		return nil, false
 	}

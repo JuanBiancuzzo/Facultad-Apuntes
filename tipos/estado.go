@@ -1,4 +1,4 @@
-package keybinds
+package tipos
 
 type Estado uint
 

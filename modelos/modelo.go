@@ -6,14 +6,13 @@ import (
 	tea "charm.land/bubbletea/v2"
 	lip "charm.land/lipgloss/v2"
 
-	k "editor-sqlite/keybinds/keys"
+	t "editor-sqlite/tipos"
+	mm "editor-sqlite/mensajes"
 	cc "editor-sqlite/compartido"
 
-	t "editor-sqlite/modelos/textos"
 	v "editor-sqlite/modelos/ventanas"
 	s "editor-sqlite/modelos/submodelos"
 	c "editor-sqlite/modelos/componentes"
-	mm "editor-sqlite/modelos/mensajes"
 )
 
 const MAX_ANCHO_SUBMODULO int = 90
@@ -24,7 +23,7 @@ type modelo struct {
 	// Hacer un sistema de request del componente para mandar mensajes
 	//   esto se puede hacer con un stack para ir pidiendo ese request 
 	//   y mantener ese requisito hasta que digan que ya estan
-	componentes map[c.ComponenteId]c.Componente
+	componentes map[t.ComponenteId]t.Componente
 	ventanas []*v.Ventana
 	ventanaActiva uint
 
@@ -96,13 +95,13 @@ func (m *modelo) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		m.renderTemporal = true
 
     case tea.KeyPressMsg:
-		msg = k.NewKeyFromTea(valor.Key())
+		msg = t.NewKeyFromTea(valor.Key())
 
 	case mm.CambiarFocoMsg:
 		m.focusVentana = valor.FocusVentana
 		msg = nil
 
-	case v.CerrandoVentanaMsg:
+	case mm.CerrandoVentanaMsg:
 		// eliminar ventana con id
 		for i, ventana := range m.ventanas {
 			if ventana.Id == valor.Id {

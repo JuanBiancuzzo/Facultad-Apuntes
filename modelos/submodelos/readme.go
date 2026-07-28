@@ -8,8 +8,7 @@ import (
 
 	r "editor-sqlite/repositorio"
 	c "editor-sqlite/compartido"
-
-	t "editor-sqlite/modelos/textos"
+	t "editor-sqlite/tipos"
 )
 
 type modeloReadme struct {
@@ -18,7 +17,7 @@ type modeloReadme struct {
 	anchoMaximo int
 }
 
-func NewModeloReadme(estado *c.Estado, anchoMaximo int) Submodelo {
+func NewModeloReadme(estado *c.Estado, anchoMaximo int) t.Submodelo {
 	return &modeloReadme {
 		request: estado,
 
@@ -37,7 +36,7 @@ func (m *modeloReadme) Nombre() string {
 	return "Readme"
 }
 
-func (m *modeloReadme) Update(msg tea.Msg) (Submodelo, tea.Cmd) {
+func (m *modeloReadme) Update(msg tea.Msg) (t.Submodelo, tea.Cmd) {
 	switch /* valor := */ msg.(type) {}
 	return m, nil
 }

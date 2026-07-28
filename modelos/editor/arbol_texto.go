@@ -1,9 +1,9 @@
-package arboles
+package editor
 
 import (
 	"fmt"
 
-	k "editor-sqlite/keybinds/keys"
+	t "editor-sqlite/tipos"
 )
 
 /*
@@ -15,28 +15,28 @@ type arbolTexto struct {
 	nodos      []*NodoAccion
 	nodoActual *NodoAccion
 
-	procesarKey func(k.KeyPress) Accion
+	procesarKey func(t.KeyPress) t.Accion
 }
 
-func NewArbolInsertar(nodos ...*NodoAccion) Arbol {
-	return newArbolTexto(nodos, func(key k.KeyPress) Accion {
+func NewArbolInsertar(nodos ...*NodoAccion) t.Arbol {
+	return newArbolTexto(nodos, func(key t.KeyPress) t.Accion {
 		return key 
 	})
 }
 
-func NewArbolReplazar(nodos ...*NodoAccion) Arbol {
-	return newArbolTexto(nodos, func(key k.KeyPress) Accion {
-		return k.KeyRemplazar(key)
+func NewArbolReplazar(nodos ...*NodoAccion) t.Arbol {
+	return newArbolTexto(nodos, func(key t.KeyPress) t.Accion {
+		return t.KeyRemplazar(key)
 	})
 }
 
-func NewArbolReplazarAvanzar(nodos ...*NodoAccion) Arbol {
-	return newArbolTexto(nodos, func(key k.KeyPress) Accion {
-		return k.KeyRemplazarAvanzar(key)
+func NewArbolReplazarAvanzar(nodos ...*NodoAccion) t.Arbol {
+	return newArbolTexto(nodos, func(key t.KeyPress) t.Accion {
+		return t.KeyRemplazarAvanzar(key)
 	})
 }
 
-func newArbolTexto(nodos []*NodoAccion, procesarKey func(k.KeyPress) Accion) Arbol {
+func newArbolTexto(nodos []*NodoAccion, procesarKey func(t.KeyPress) t.Accion) t.Arbol {
 	return &arbolTexto {
 		nodos: nodos,
 		nodoActual: nil,
@@ -54,8 +54,8 @@ func (a *arbolTexto) Describir() string {
 	)
 }
 
-func (a *arbolTexto) Actualizar(key k.KeyPress) (Accion, bool) {
-	if key.Codigo == k.C_BORRAR && a.nodoActual != nil {
+func (a *arbolTexto) Actualizar(key t.KeyPress) (t.Accion, bool) {
+	if key.Codigo == t.C_BORRAR && a.nodoActual != nil {
 		a.nodoActual = a.nodoActual.Volver()
 		return nil, false
 	}
@@ -67,7 +67,7 @@ func (a *arbolTexto) Actualizar(key k.KeyPress) (Accion, bool) {
 		a.nodoActual = a.nodoActual.Actualizar(key)
 	}
 
-	var accion Accion = a.procesarKey(key)
+	var accion t.Accion = a.procesarKey(key)
 	ok := true
 
 	if a.nodoActual != nil {

@@ -7,8 +7,8 @@ import (
 	tea "charm.land/bubbletea/v2"
 	lip "charm.land/lipgloss/v2"
 
-	m "editor-sqlite/modelos/componentes/mensajes"
-	t "editor-sqlite/modelos/textos"
+	m "editor-sqlite/mensajes"
+	t "editor-sqlite/tipos"
 )
 
 const MAX_NOTIFICACIONES = 100
@@ -68,8 +68,8 @@ func (n *Notificaciones) Update(msg tea.Msg) tea.Cmd {
 
 	case m.ActualizarNotificacionMsg:
 		for i, notificacion := range n.activas {
-			if notificacion.id = valor.Id {
-				n.activas[i].Texto = valor.Texto
+			if notificacion.id == valor.Id {
+				n.activas[i].texto = valor.Texto
 			}
 		}
 		

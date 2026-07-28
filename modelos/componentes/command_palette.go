@@ -2,14 +2,9 @@ package componentes
 
 import (
 	tea "charm.land/bubbletea/v2"
+	lip "charm.land/lipgloss/v2"
 
-	// log "editor-sqlite/logger"
-	k "editor-sqlite/keybinds"
-	kk "editor-sqlite/keybinds/keys"
-	ke "editor-sqlite/keybinds/editor"
-
-	t "editor-sqlite/modelos/textos"
-	s "editor-sqlite/modelos/submodelos"
+	t "editor-sqlite/tipos"
 )
 
 /*
@@ -17,20 +12,20 @@ import (
 */
 
 type CommandPalette struct {
-	id ComponenteId
+	id t.ComponenteId
 
-	keybindings k.MaquinaEstados
+	keybindings t.MaquinaEstados
 }
 
-func (c *CommandPalette)Init() tea.Cmd {
+func (c *CommandPalette) Init() tea.Cmd {
 	return nil
 }
 
-func (c *CommandPalette) Update()(msg tea.Msg) tea.Cmd {
+func (c *CommandPalette) Update(msg tea.Msg) tea.Cmd {
 	return nil
 }
 
-func (c *CommandPalette) Info t.InfoBuffer) (*lip.Layer, bool) {
+func (c *CommandPalette) Info (info t.InfoBuffer) (*lip.Layer, bool) {
 	return nil, false
 }
 

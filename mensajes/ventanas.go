@@ -1,4 +1,4 @@
-package ventanas
+package mensajes
 
 import (
 	tea "charm.land/bubbletea/v2"

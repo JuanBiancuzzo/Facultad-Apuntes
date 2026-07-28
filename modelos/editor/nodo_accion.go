@@ -1,24 +1,24 @@
-package arboles
+package editor
 
 import (
 	"fmt"
 	"strings"
 
-	k "editor-sqlite/keybinds/keys"
+	t "editor-sqlite/tipos"
 )
 
 type NodoAccion struct {
 	padre  *NodoAccion
-	key    k.KeyPress
+	key    t.KeyPress
 	esNodo bool
 
 	hijos []*NodoAccion
 
-	accion      Accion
+	accion      t.Accion
 	descripcion string
 }
 
-func NewNodo(key k.KeyPress, nodos ...*NodoAccion) *NodoAccion {
+func NewNodo(key t.KeyPress, nodos ...*NodoAccion) *NodoAccion {
 	nodo := &NodoAccion {
 		padre: nil,
 		accion: nil,
@@ -35,7 +35,7 @@ func NewNodo(key k.KeyPress, nodos ...*NodoAccion) *NodoAccion {
 	return nodo
 }
 
-func NewHoja(key k.KeyPress, accion Accion, descripcion string) *NodoAccion {
+func NewHoja(key t.KeyPress, accion t.Accion, descripcion string) *NodoAccion {
 	return &NodoAccion {
 		padre: nil,
 		hijos: []*NodoAccion{},
@@ -47,7 +47,7 @@ func NewHoja(key k.KeyPress, accion Accion, descripcion string) *NodoAccion {
 	}
 }
 
-func ObtenerNodo(nodos []*NodoAccion, key k.KeyPress) *NodoAccion {
+func ObtenerNodo(nodos []*NodoAccion, key t.KeyPress) *NodoAccion {
 	for _, nodo := range nodos {
 		if nodo.key.Comparar(key) {
 			return nodo
@@ -76,11 +76,11 @@ func (n *NodoAccion) String() string {
 	return fmt.Sprintf("Hoja con key %s (%s)", n.key.String(), n.descripcion)
 }
 
-func (n *NodoAccion) ObtenerAccion() (Accion, bool) {
+func (n *NodoAccion) ObtenerAccion() (t.Accion, bool) {
 	return n.accion, !n.esNodo
 }
 
-func (n *NodoAccion) Actualizar(key k.KeyPress) *NodoAccion {
+func (n *NodoAccion) Actualizar(key t.KeyPress) *NodoAccion {
 	if n.esNodo {
 		return ObtenerNodo(n.hijos, key)
 	}
