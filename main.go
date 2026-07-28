@@ -13,7 +13,7 @@ import (
 )
 
 func main() {
-	baseDeDato, err := r.NewRepositorioBdd("assets/datos.db")
+	baseDeDato, err := r.NewRepositorioBdd("repositorio/datos.db")
 	if err != nil {
 		log.Errorf("Ocurrio un error al obtener contendio: %v\n", err)
 		os.Exit(1)
