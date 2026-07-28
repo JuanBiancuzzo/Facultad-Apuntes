@@ -2,6 +2,7 @@ package ventanas
 
 import (
 	tea "charm.land/bubbletea/v2"
+	lip "charm.land/lipgloss/v2"
 
 	t "editor-sqlite/tipos"
 	a "editor-sqlite/acciones"
@@ -78,10 +79,35 @@ func (v *Ventana) Update(msg tea.Msg) tea.Cmd {
 }
 
 func (v *Ventana) View(info t.InfoBuffer) string { 
-	if v.submodelo != nil {
-		return v.submodelo.View(info)
+	if v.submodelo == nil {
+		return ""
 	}
-	return ""
+	// Mostrar estado del arbol, y el nombre del submodelo
+	buffer := v.submodelo.View(info)
+	capaInicial := lip.NewLayer(buffer).Z(0)
+
+	estiloBloque := lip.NewStyle().
+		BorderForeground(lip.Color("#438496")).
+		Padding(0, 2).
+		BorderStyle(lip.ThickBorder()).
+		BorderLeft(false).
+		BorderBottom(true).
+		BorderTop(true).
+		BorderRight(true)
+
+
+	estado := v.keybindings.Estado().String()
+	estado = estiloBloque.Bold(true).Render(estado)
+
+	nombre := v.submodelo.Nombre()
+	nombre = estiloBloque.BorderStyle(lip.RoundedBorder()).Render(nombre)
+
+	altura := info.Alto - max(lip.Height(estado), lip.Height(nombre))
+	capaExtra := lip.NewLayer(
+		lip.JoinHorizontal(lip.Top, estado, nombre),
+	).Y(altura).Z(1)
+
+	return lip.NewCompositor(capaInicial, capaExtra).Render()
 }
 
 func (v *Ventana) Close() {

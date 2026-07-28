@@ -37,6 +37,10 @@ func NewEditorConEstadoInicial(estado t.Estado) t.MaquinaEstados {
 	}
 }
 
+func (e *Editor) Estado() t.Estado {
+	return e.estado
+}
+
 func (e *Editor) CambiarEstado(estado t.Estado) error {
 	if estado >= t.MAX_ESTADOS {
 		return fmt.Errorf("El estado %d es invalido", estado)
