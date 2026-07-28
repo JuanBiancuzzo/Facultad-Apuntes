@@ -56,3 +56,17 @@ func NewEliminarNotificacionConDuracionCmd(id uint64, duracion time.Duration) te
 		}
 	}
 }
+
+type ActualizarNotificacionMsg struct {
+	Id    uint64
+	Texto string
+}
+
+func NewActualizarNotificacionCmd(id uint16, texto string) tea.Cmd {
+	return func() tea.Msg {
+		return ActualizarNotificacionMsg {
+			Id: uint64(id),
+			Texto: texto,
+		}
+	}
+}

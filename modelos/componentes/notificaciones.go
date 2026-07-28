@@ -65,6 +65,13 @@ func (n *Notificaciones) Update(msg tea.Msg) tea.Cmd {
 			texto: valor.Texto,
 			prioridad: valor.Prioridad,
 		})
+
+	case m.ActualizarNotificacionMsg:
+		for i, notificacion := range n.activas {
+			if notificacion.id = valor.Id {
+				n.activas[i].Texto = valor.Texto
+			}
+		}
 		
 	case m.EliminarNotificacionMsg:
 		n.activas = slices.DeleteFunc(n.activas, func(notificacion notificacion) bool {
