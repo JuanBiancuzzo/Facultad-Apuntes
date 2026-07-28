@@ -45,6 +45,12 @@ func (m *modeloReadme) Update(msg tea.Msg) (Submodelo, tea.Cmd) {
 func (m *modeloReadme) View(info t.InfoBuffer) string { 
 	ancho := min(info.Ancho, m.anchoMaximo)
 
+	header := lip.NewStyle().
+		// Foreground(lip.Color("#009688")).
+		BorderStyle(lip.RoundedBorder()).
+		Width(ancho).
+		BorderBottom(true).
+		Render("# Readme")
 
 	colorLink := lip.Color("#9457F7")
 	estiloLink := lip.NewStyle().
@@ -64,14 +70,15 @@ func (m *modeloReadme) View(info t.InfoBuffer) string {
 	issueLink := estiloLinkTemp.Hyperlink("https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue").
 		Render("issue")
 
-	texto := "\nVoy a ir poniendo mis apuntes acá, y estoy usando %s para escribir y crear los vínculos entre las páginas por lo que es recomendable para poder navegar los apuntes.\n\nCualquier corrección/ampliación de los contenidos en este proyecto, por favor hacer un %s para poder visualizar los cambios pedidos. En el caso de sugerir cualquier cosa, por favor crear un %s donde ahí lo podré ver."
-	texto = fmt.Sprintf(texto, obsidianLink, pullRequestLink, issueLink)
+	texto := fmt.Sprintf("\n%s\nVoy a ir poniendo mis apuntes acá, y estoy usando %s para escribir y crear los vínculos entre las páginas por lo que es recomendable para poder navegar los apuntes.\n\nCualquier corrección/ampliación de los contenidos en este proyecto, por favor hacer un %s para poder visualizar los cambios pedidos. En el caso de sugerir cualquier cosa, por favor crear un %s donde ahí lo podré ver.", 
+		header,
+		obsidianLink, pullRequestLink, issueLink,
+	)
 	texto = lip.NewStyle().
 		Width(ancho).
 		Align(lip.Left).
 		Render(texto)
 	
-	texto = lip.Wrap(texto, ancho, " ")
 	texto = lip.PlaceHorizontal(info.Ancho, lip.Center, texto)
 	return info.RestringirTamanio(texto)
 }

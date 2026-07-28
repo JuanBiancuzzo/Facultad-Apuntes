@@ -2,6 +2,7 @@ package componentes
 
 import (
 	tea "charm.land/bubbletea/v2"
+	lip "charm.land/lipgloss/v2"
 
 	c "editor-sqlite/compartido"
 	t "editor-sqlite/modelos/textos"
@@ -21,7 +22,7 @@ type Componente interface {
 
 	Update(msg tea.Msg) tea.Cmd
 
-	View(info t.InfoBuffer) (string, bool)
+	View(info t.InfoBuffer) (*lip.Layer, bool)
 
 	Close()
 }

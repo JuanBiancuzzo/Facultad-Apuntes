@@ -147,9 +147,8 @@ func (m *modelo) View() (view tea.View) {
 
 	zIndex := 1
 	for _, componente := range m.componentes {
-		if buffer, ok := componente.View(*m.foreground); ok {
-			capa := lip.NewLayer(buffer).Z(zIndex)
-			capas = append(capas, capa)
+		if capa, ok := componente.View(*m.foreground); ok {
+			capas = append(capas, capa.Z(zIndex))
 		}
 	}
 

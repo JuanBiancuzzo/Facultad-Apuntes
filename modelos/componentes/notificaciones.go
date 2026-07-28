@@ -5,7 +5,7 @@ import (
 	"slices"
 
 	tea "charm.land/bubbletea/v2"
-	// lip "charm.land/lipgloss/v2"
+	lip "charm.land/lipgloss/v2"
 
 	m "editor-sqlite/modelos/componentes/mensajes"
 	t "editor-sqlite/modelos/textos"
@@ -16,7 +16,7 @@ const MIN_ANCHO = 20
 
 type notificacion struct {
 	id        uint64
-	texto     *t.Texto
+	texto     string
 	prioridad uint32
 }
 
@@ -37,8 +37,10 @@ func newNotificaciones() *Notificaciones {
 }
 
 func (n *Notificaciones) Init() tea.Cmd {
-	return m.NewNotificacionConDuracionCmd(
-		"Oh hi", 1 << 10, 5 * time.Second,
+	return tea.Batch (
+		m.NewNotificacionConDuracionCmd("Oh hi", 1, 5 * time.Second),
+		m.NewNotificacionConDuracionCmd("Tanto tiempo", 2, 7 * time.Second),
+		m.NewNotificacionConDuracionCmd("Chau?", 2, 9 * time.Second),
 	)
 }
 
@@ -47,48 +49,52 @@ func (n *Notificaciones) Update(msg tea.Msg) tea.Cmd {
 
 	switch valor := msg.(type) {
 	case m.NotificacionMsg:
-		var idNotificacion uint64
+		var idNotificacion uint64 = valor.Id
 		if valor.Duracion != nil {
 			idNotificacion = n.idContador
 			n.idContador++
 
-			cmds = append(cmds, tea.Tick(*valor.Duracion, func(_ time.Time) tea.Msg {
-				return m.EliminarNotificacionMsg { 
-					Id: idNotificacion,
-				}
-			}))
-
-		} else {
-			idNotificacion = valor.Id
+			cmd := m.NewEliminarNotificacionConDuracionCmd(
+				idNotificacion, *valor.Duracion,
+			)
+			cmds = append(cmds, cmd)
 		}
 
 		n.activas = append(n.activas, notificacion {
 			id: idNotificacion,
-			texto: t.NewTexto(valor.Texto),
+			texto: valor.Texto,
 			prioridad: valor.Prioridad,
 		})
 		
 	case m.EliminarNotificacionMsg:
-		eliminar := make([]int, 0, len(n.activas))
-		for i, notificacion := range n.activas {
-			if notificacion.id == valor.Id {
-				eliminar = append(eliminar, i)
-			}
-		}
-		for i := len(eliminar) - 1; i >= 0; i-- {
-			n.activas = slices.Delete(n.activas, i, i + 1)
-		}
+		n.activas = slices.DeleteFunc(n.activas, func(notificacion notificacion) bool {
+			return notificacion.id == valor.Id
+		})
 	}
 
 	return tea.Batch(cmds...)
 }
 
-func (n *Notificaciones) View(info t.InfoBuffer) (string, bool) {
+func (n *Notificaciones) View(info t.InfoBuffer) (*lip.Layer, bool) {
 	if info.Ancho < MIN_ANCHO || len(n.activas) == 0 {
-		return "", false
+		return nil, false
 	}
 
-	return "", false
+	ancho := info.Ancho / 5
+	estiloNotificacion := lip.NewStyle().
+		BorderForeground(lip.Color("#438496")).
+		BorderStyle(lip.RoundedBorder()).
+		Padding(0, 1).
+		Width(ancho)
+
+	bloques := make([]string, len(n.activas))
+	for i, notificacion := range n.activas {
+		bloques[i] = estiloNotificacion.Render(notificacion.texto)
+	}
+
+	buffer := info.RestringirTamanio(lip.JoinVertical(lip.Top, bloques...))
+	capa := lip.NewLayer(buffer).X(info.Ancho - lip.Width(buffer))
+	return capa, true
 }
 
 func (n *Notificaciones) Close() {}

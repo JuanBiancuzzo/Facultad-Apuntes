@@ -47,3 +47,12 @@ func NewEliminarNotificacionCmd(id uint16) tea.Cmd {
 		}
 	}
 }
+
+func NewEliminarNotificacionConDuracionCmd(id uint64, duracion time.Duration) tea.Cmd {
+	return func() tea.Msg {
+		<- time.After(duracion)
+		return EliminarNotificacionMsg { 
+			Id: uint64(id),
+		}
+	}
+}
