@@ -689,7 +689,7 @@ async function crearEjercicio(tp, dv, infoPrevia = {}) {
     }
 
     let texto = SECCIONES.seccion(SECCIONES.enunciado);
-    texto += "\n---\n<% tp.file.cursor() %>\n"
+    texto += "\n---\n\n"
 
     texto += "\n" + SECCIONES.seccion(SECCIONES.resolucion);
     texto += "\n---\n\n"
