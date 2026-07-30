@@ -30,7 +30,7 @@ class TablasReferencias(StrEnum):
     PAPER = "ReferenciasPaper"
 
     CURSO_ONLINE = "ReferenciasCursoOnline"
-    TEMA = "ReferenciasTema"
+    TEMA = "ReferenciasTemaCurso"
 
 class TablasColeccion(StrEnum):
     COLECCION = "Colecciones"
