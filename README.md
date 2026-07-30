@@ -171,5 +171,5 @@ Como anotaciones en general:
     | id_referencia | INTEGER    |    NO    |     REFERENCES      |---------------------+   
     +---------------+------------+----------+---------------------+                  
             * tipo puede ser "Web", "Libro", "CapituloLibro", "PaperAutore", 
-               "PaperEditore", "CursoOnline", "ProfesoresTema"
+               "PaperEditore", "CursoOnline", "TemaProfesore"
 ```
