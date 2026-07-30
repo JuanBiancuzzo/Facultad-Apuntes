@@ -8,7 +8,7 @@ numero: 62
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

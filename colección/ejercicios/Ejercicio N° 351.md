@@ -8,7 +8,7 @@ numero: 351
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

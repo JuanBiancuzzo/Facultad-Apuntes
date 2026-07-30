@@ -8,7 +8,7 @@ numero: 296
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

@@ -8,7 +8,7 @@ numero: 311
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

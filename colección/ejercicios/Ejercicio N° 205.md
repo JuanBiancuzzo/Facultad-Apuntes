@@ -8,7 +8,7 @@ numero: 205
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

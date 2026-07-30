@@ -8,7 +8,7 @@ numero: 305
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

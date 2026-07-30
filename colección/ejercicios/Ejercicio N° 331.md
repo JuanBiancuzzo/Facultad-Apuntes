@@ -8,7 +8,7 @@ numero: 331
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

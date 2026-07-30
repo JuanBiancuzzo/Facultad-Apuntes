@@ -8,7 +8,7 @@ numero: 301
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

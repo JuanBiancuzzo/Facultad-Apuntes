@@ -8,7 +8,7 @@ numero: 243
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

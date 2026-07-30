@@ -8,7 +8,7 @@ numero: 282
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

@@ -8,7 +8,7 @@ numero: 279
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

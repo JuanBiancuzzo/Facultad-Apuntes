@@ -8,7 +8,7 @@ numero: 293
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

@@ -8,7 +8,7 @@ etapa: sin-empezar
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

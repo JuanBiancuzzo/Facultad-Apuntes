@@ -8,7 +8,7 @@ numero: 212
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

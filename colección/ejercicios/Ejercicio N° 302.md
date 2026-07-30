@@ -8,7 +8,7 @@ numero: 302
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

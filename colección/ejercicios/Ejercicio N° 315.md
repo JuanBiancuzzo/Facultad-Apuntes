@@ -8,7 +8,7 @@ numero: 315
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

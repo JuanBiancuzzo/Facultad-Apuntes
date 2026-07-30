@@ -8,7 +8,7 @@ numero: 333
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

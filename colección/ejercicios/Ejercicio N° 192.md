@@ -8,7 +8,7 @@ numero: 192
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

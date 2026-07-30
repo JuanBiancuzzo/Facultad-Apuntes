@@ -8,7 +8,7 @@ numero: 300
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

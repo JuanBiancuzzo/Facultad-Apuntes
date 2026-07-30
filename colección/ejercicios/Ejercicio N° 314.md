@@ -8,7 +8,7 @@ numero: 314
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

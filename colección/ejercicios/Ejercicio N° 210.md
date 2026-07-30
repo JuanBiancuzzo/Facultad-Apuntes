@@ -8,7 +8,7 @@ numero: 210
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

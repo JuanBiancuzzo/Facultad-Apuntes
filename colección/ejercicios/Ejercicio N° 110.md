@@ -8,7 +8,7 @@ numero: 110
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

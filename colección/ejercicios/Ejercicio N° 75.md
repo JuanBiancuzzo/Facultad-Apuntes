@@ -8,7 +8,7 @@ numero: 75
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

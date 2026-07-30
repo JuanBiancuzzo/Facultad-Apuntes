@@ -8,7 +8,7 @@ numero: 338
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

@@ -8,7 +8,7 @@ numero: 114
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

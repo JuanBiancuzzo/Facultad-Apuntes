@@ -8,7 +8,7 @@ numero: 120
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

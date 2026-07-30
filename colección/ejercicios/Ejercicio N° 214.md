@@ -8,7 +8,7 @@ numero: 214
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

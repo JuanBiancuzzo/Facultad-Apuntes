@@ -8,7 +8,7 @@ numero: 347
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

@@ -8,7 +8,7 @@ numero: 115
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

@@ -8,7 +8,7 @@ numero: 111
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

@@ -8,7 +8,7 @@ numero: 330
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

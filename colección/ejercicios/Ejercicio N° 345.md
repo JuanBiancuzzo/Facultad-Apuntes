@@ -8,7 +8,7 @@ numero: 345
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

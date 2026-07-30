@@ -8,7 +8,7 @@ numero: 281
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

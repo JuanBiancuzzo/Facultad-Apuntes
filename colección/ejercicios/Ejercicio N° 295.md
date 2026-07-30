@@ -8,7 +8,7 @@ numero: 295
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

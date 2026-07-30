@@ -8,7 +8,7 @@ numero: 327
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

@@ -8,7 +8,7 @@ numero: 36
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

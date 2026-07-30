@@ -8,7 +8,7 @@ numero: 335
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---

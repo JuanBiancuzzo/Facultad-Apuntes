@@ -8,7 +8,7 @@ numero: 99
 ---
 # Enunciado
 ---
-<% tp.file.cursor() %>
+ 
 
 # Resolución
 ---
