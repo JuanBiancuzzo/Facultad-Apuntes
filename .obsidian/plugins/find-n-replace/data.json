@@ -1,0 +1,41 @@
+{
+  "maxResults": 1000,
+  "enableAutoSearch": true,
+  "searchDebounceDelay": 300,
+  "logLevel": 1,
+  "fileGroupStates": {
+    "colección/ejercicios/Ejercicio N° 100.md": true,
+    "investigación/ciencias de la computación/Ciencia de la computación.md": false,
+    "cursos/computation structures/Assembly Language, Models of Computation/Resumen.md": false,
+    "cursos/computation structures/Basics of Information/Resumen.md": false,
+    "colección/data structures/Compressed trie.md": false
+  },
+  "defaultIncludePatterns": [],
+  "defaultExcludePatterns": [
+    "_referencias/",
+    "_scripts/",
+    "_template/"
+  ],
+  "searchHistory": [
+    "<% tp.file.cursor() %>"
+  ],
+  "replaceHistory": [
+    " "
+  ],
+  "maxHistorySize": 50,
+  "enableSearchHistory": true,
+  "confirmDestructiveActions": true,
+  "rememberSearchOptions": false,
+  "rememberFileGroupStates": true,
+  "warnDangerousRegex": true,
+  "lastSearchOptions": {
+    "matchCase": false,
+    "wholeWord": false,
+    "useRegex": false,
+    "multiline": false
+  },
+  "highlightDuration": 2000,
+  "persistentHighlight": false,
+  "showLineNumbers": true,
+  "showFileExtensions": false
+}
