@@ -124,7 +124,7 @@ class TablaLibro(Tabla):
                 volumen INTEGER,
                 doi TEXT,
                 
-                id_editorial INTEGER REFERENCES {TablasGenerales.EDITORIAL}(id),
+                id_editorial INTEGER NOT NULL REFERENCES {TablasGenerales.EDITORIAL}(id),
                 num_referencia INTEGER NOT NULL REFERENCES {Tablas.REFERENCIAS}(num_referencia)
             );
         """)

@@ -17,7 +17,7 @@ class TipoAutoreReferencia(StrEnum):
     PAPER_AUTORE = "PaperAutore"
     PAPER_EDITORE = "PaperEditore"
     CURSO_ONLINE = "CursoOnline"
-    TEMA = "Tema"
+    TEMA = "ProfesoresTema"
 
     def crear(self, clave_referencia: Clave, clave_autore: Clave) -> AutoreReferencia:
         return AutoreReferencia(self, clave_referencia, clave_autore)
