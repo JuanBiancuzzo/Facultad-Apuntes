@@ -11,4 +11,5 @@ wheels/
 
 # Particulares
 _resultado/*
+makefile
 run.sh
