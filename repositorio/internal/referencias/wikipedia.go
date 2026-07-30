@@ -9,27 +9,35 @@ import (
 	er "editor-sqlite/estructuras/referencias"
 )
 
+const PARAMETROS_WIKIPEDIA = []string{ "nombre_articulo", "fecha", "url" }
+
 type bddReferenciaWikipedia struct {
 	nombreArticulo string
 	fecha int64
 	url string
 }
 
-func (d *bddReferenciaWikipedia) obtenerDatos() []any {
+func (d *bddReferenciaWikipedia) InfoTabla() (t.Tablas, []string) {
+	return t.TR_WIKIPEDIA, PARAMETROS_WIKIPEDIA
+}
+
+func (d *bddReferenciaWikipedia) ObtenerDatos() []any {
 	return []any{ &d.nombreArticulo, &d.fecha, &d.url }
+}
+
+func (d *bddReferenciaWikipedia) CrearElemento() (*er.ReferenciaWikipedia, error) {
+	return er.NewReferenciaWikipedia(
+		d.nombreArticulo,
+		time.Unix(d.fecha, 0),
+		d.url,
+	), nil
+}
+
+func (r *RepoReferencia) ObtenerReferenciasWikipedia(numReferencias []int) ([]*er.ReferenciaWikipedia, error) {
+	return crearReferencias(numReferencias, bddReferenciaWikipedia{})
 }
 	
 func (r *RepoReferencia) ObtenerReferenciaWikipedia(numReferencia int) (*er.ReferenciaWikipedia, error) {
-	var datos bddReferenciaWikipedia
-	query := generarQuery(t.TR_WIKIPEDIA, []string{ "nombre_articulo", "fecha", "url" })
-	fila := r.bdd.QueryRow(query, numReferencia)
-	if err := fila.Scan(datos.obtenerDatos()...); err != nil {
-		return nil, fmt.Errorf("Error al hacer un select en la tabla de referencias de wikipedia, con error: %v", err)
-	}
-
-	return er.NewReferenciaWikipedia(
-		datos.nombreArticulo,
-		time.Unix(datos.fecha, 0),
-		datos.url,
-	), nil
+	return crearReferencia(numReferencia, bddReferenciaWikipedia{})
 }
+

@@ -9,12 +9,20 @@ import (
 type TipoReferencia string
 
 const (
-    TR_YOUTUBE = "Youtube"
-    TR_WIKIPEDIA = "Wikipedia"
-    TR_WEB = "Web"
-    TR_LIBRO = "Libro"
-    TR_CAPITULO = "Capitulo"
-    TR_DICCIONARIO = "DiccionarioOnline"
+    TR_REFERENCIAS = "Referencias"
+    TR_AUTORES_REFERENCIAS = "AutoresParaReferencias"
+
+    TR_WEB = "ReferenciasWebsite"
+    TR_WIKIPEDIA = "ReferenciasWikipedia"
+    TR_YOUTUBE = "ReferenciasYoutube"
+    TR_DICCIONARIO = "ReferenciasDiccionarioOnline"
+
+    TR_LIBRO = "ReferenciasLibro"
+    TR_CAPITULOS = "ReferenciasCapituloLibro"
+    TR_PAPER = "ReferenciasPaper"
+
+    TR_CURSO_ONLINE = "ReferenciasCursoOnline"
+    TR_TEMA = "ReferenciasTemaCurso"
 
 	TR_ERROR = "Error"
 )

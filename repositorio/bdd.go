@@ -34,7 +34,5 @@ func (b *repositorioBdd) ObtenerReferencia(numReferencia int) (*er.Referencia, e
 }
 
 func (b *repositorioBdd) Close() {
-	b.repoReferencia.Close()
-
 	b.bdd.Close()
 }
