@@ -10,6 +10,7 @@ from contenido.dependencias import TipoNodo
 from contenido.archivo import Archivo
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.embedding import Embedding
+from contenido.links import coleccion as link
 from contenido.referencias.diccionario import ReferenciaDiccionario
 from .tablas import TablaDiccionario as Tabla
 
@@ -31,9 +32,12 @@ class Diccionario(Dato):
         )
         datos.append(diccionario)
 
-        palabra = archivo.extra["palabraBuscada"]
         clave_diccionario = diccionario.obtener_clave()
-        datos.extend(Embedding.de_string(Tabla.nombre, clave_diccionario, palabra))
+        datos.append(Diccionario._obtener_link(clave_diccionario))
+
+        palabra = archivo.extra["palabraBuscada"]
+        link_palabra = link.Diccionario.gen_nombre(clave_diccionario)
+        datos.extend(Embedding.parsear((link_palabra, palabra)))
 
         return datos
 
@@ -46,6 +50,13 @@ class Diccionario(Dato):
     @classmethod
     def _obtener_clave(cls, clave_ref_diccionario: Clave) -> Clave: 
         return Clave.de_texto(TipoNodo.DICCIONARIO, f"{clave_ref_diccionario}>|>{clave_ref_diccionario}")
+
+    def obtener_link(self) -> link.Link: 
+        return Diccionario._obtener_link(self.obtener_clave())
+
+    @classmethod
+    def _obtener_link(cls, clave: Clave) -> link.Link: 
+        return link.Diccionario.gen(clave)
 
     def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo | None:
         try: 

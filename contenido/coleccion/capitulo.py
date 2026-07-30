@@ -1,6 +1,6 @@
 import sqlite3 as sql
 
-from typing import Dict, List
+from typing import Iterable, Dict, List, Tuple
 from dataclasses import dataclass
 
 from dependencias import Nodo, Dato, Clave
@@ -15,6 +15,7 @@ from contenido.general.etapa import Etapa
 from contenido.coleccion.guias import Guia
 from contenido.referencias.libro import ReferenciaLibro
 from contenido.referencias.capitulo import ReferenciaCapitulo
+from contenido.links import coleccion as link
 from .libro import Libro
 from .tablas import TablaCapitulo as Tabla
 
@@ -58,14 +59,21 @@ class Capitulo(Dato):
                 clave_guia = Guia._obtener_clave(num_guia)
                 datos.append(GuiasDeCapitulo.capitulo_libro(clave_capitulo, clave_guia))
 
-            datos_capitulo = (Tabla.nombre, clave_capitulo)
+            # Link con embbedings
+            datos.append(capitulo._obtener_link(clave_capitulo))
+
             if "nombreCapitulo" in extra_capitulo:
                 nombre = ReferenciaCapitulo.nombre_representativo(archivo, extra_capitulo)
-                datos.extend(Embedding.de_string(*datos_capitulo, nombre))
+                clave_nommbre = link.Capitulo.gen_nombre(clave_capitulo)
+                datos.extend(Embedding.parsear((clave_nommbre, nombre)))
 
             if bloque_resumen is not None:
-                embedding = Embedding.de_texto(*datos_capitulo, bloque_resumen)
-                datos.extend(embedding)
+                pares: Iterable[Tuple[link.Link, str]] = (
+                    ( link.Capitulo.gen_resumen(clave_capitulo, id), texto )
+                    for id, texto in bloque_resumen.texto.chunks()
+                )
+                datos.extend(( link for link, _ in pares ))
+                datos.extend(Embedding.parsear(*pares))
 
         return datos
 
@@ -80,6 +88,13 @@ class Capitulo(Dato):
     @classmethod
     def _obtener_clave(cls, clave_libro: Clave, clave_ref_capitulo: Clave) -> Clave: 
         return Clave.de_texto(TipoNodo.CAPITULO, f"{clave_libro}<:>{clave_ref_capitulo}")
+
+    def obtener_link(self) -> link.Link: 
+        return Capitulo._obtener_link(self.obtener_clave())
+
+    @classmethod
+    def _obtener_link(cls, clave: Clave) -> link.Link: 
+        return link.Capitulo.gen(clave)
 
     def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo:
         try: 

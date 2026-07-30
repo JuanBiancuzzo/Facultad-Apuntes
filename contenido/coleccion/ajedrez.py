@@ -10,6 +10,7 @@ from logger import loggear, LoggerNivel
 from contenido.dependencias import TipoNodo
 from contenido.archivo import Archivo
 from contenido.general.embedding import Embedding
+from contenido.links import coleccion as link
 from .tablas import TablaAjedrez as Tabla
 
 class TipoMovimientosAjedrez(StrEnum):
@@ -34,8 +35,10 @@ class Ajedrez(Dato):
         )
         datos.append(ajedrez)
 
-        clave_ajedrez = ajedrez.obtener_clave()
-        datos.extend(Embedding.de_string(Tabla.nombre, clave_ajedrez, ajedrez.nombre))
+        link_ajedrez = ajedrez.obtener_link()
+        datos.append(link_ajedrez)
+
+        datos.extend(Embedding.parsear((link_ajedrez, ajedrez.nombre)))
 
         return datos
 
@@ -48,6 +51,13 @@ class Ajedrez(Dato):
     @classmethod
     def _obtener_clave(cls, nombre: str, tipo: TipoMovimientosAjedrez, inicio: str) -> Clave: 
         return Clave.de_texto(TipoNodo.AJEDREZ, f"{nombre}({tipo})->{inicio}")
+
+    def obtener_link(self) -> link.Link: 
+        return link.Ajedrez.gen(self.obtener_clave())
+
+    @classmethod
+    def _obtener_link(cls, clave: Clave) -> link.Link: 
+        return link.Ajedrez.gen(clave)
 
     def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo:
         try: 

@@ -1,6 +1,6 @@
 import sqlite3 as sql
 
-from typing import Dict, List
+from typing import Iterable, Dict, List, Tuple
 from dataclasses import dataclass
 
 from dependencias import Nodo, Dato, Clave
@@ -11,6 +11,7 @@ from contenido.archivo import Archivo, Texto, Seccion
 from contenido.general.embedding import Embedding
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa
+from contenido.links import coleccion as link
 from contenido.referencias.paper import ReferenciaPaper
 from .tablas import TablaPaper as Tabla
 
@@ -33,14 +34,14 @@ class Paper(Dato):
             loggear(LoggerNivel.FATAL, mensaje)
             raise Exception(mensaje)
 
-        resultado: Dict[str, str | None] = archivo.contenido.split_secciones([ 
+        resultado: Dict[str, Texto | None] = archivo.contenido.split_secciones([ 
             Seccion(1, "Resumen"),
             Seccion(1, "Referencias"),
         ])
 
         bloque_resumen: BloqueTexto | None = None
         if resultado["Resumen"] is not None:
-            resumen = Texto(resultado["Resumen"])
+            resumen = resultado["Resumen"]
             if not resumen.vacio(): 
                 bloque_resumen = BloqueTexto(resumen)
                 datos.append(bloque_resumen)
@@ -53,14 +54,21 @@ class Paper(Dato):
         )
         datos.append(paper)
 
-        datos_paper = (Tabla.nombre, paper.obtener_clave())
+        clave_paper = paper.obtener_clave()
+        datos.append(Paper._obtener_link(clave_paper))
 
         nombre = ReferenciaPaper.nombre_representativo(archivo)
-        datos.extend(Embedding.de_string(*datos_paper, nombre))
+        clave_nommbre = link.Libro.gen_nombre(clave_paper)
+        datos.extend(Embedding.parsear((clave_nommbre, nombre)))
 
         if bloque_resumen is not None:
-            datos.extend(Embedding.de_texto(*datos_paper, bloque_resumen.texto))
-
+            pares: Iterable[Tuple[link.Link, str]] = (
+                ( link.Paper.gen_resumen(clave_paper, id), texto )
+                for id, texto in bloque_resumen.texto.chunks()
+            )
+            datos.extend(( link for link, _ in pares ))
+            datos.extend(Embedding.parsear(*pares))
+            
         return datos
 
     def dependo(self) -> List[Clave]: 
@@ -74,6 +82,13 @@ class Paper(Dato):
     @classmethod
     def _obtener_clave(cls, clave_ref_paper: Clave) -> Clave: 
         return Clave.de_texto(TipoNodo.PAPER, f"{clave_ref_paper}<|>{clave_ref_paper}")
+
+    def obtener_link(self) -> link.Link: 
+        return Paper._obtener_link(self.obtener_clave())
+
+    @classmethod
+    def _obtener_link(cls, clave: Clave) -> link.Link: 
+        return link.Paper.gen(clave)
 
     def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo | None:
         try: 

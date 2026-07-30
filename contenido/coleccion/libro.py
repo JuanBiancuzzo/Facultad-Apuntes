@@ -1,7 +1,7 @@
 import sqlite3 as sql
 import os
 
-from typing import Dict, List
+from typing import Iterable, Dict, List, Tuple
 from dataclasses import dataclass
 
 from dependencias import Nodo, Dato, Clave
@@ -13,6 +13,7 @@ from contenido.general.embedding import Embedding
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa
 from contenido.general.imagen import Imagen
+from contenido.links import coleccion as link
 from contenido.referencias.libro import ReferenciaLibro
 from .tablas import TablaLibro as Tabla
 
@@ -55,13 +56,20 @@ class Libro(Dato):
         )
         datos.append(libro)
 
-        datos_libro = (Tabla.nombre, libro.obtener_clave())
+        clave_libro = libro.obtener_clave()
+        datos.append(Libro._obtener_link(clave_libro))
 
         nombre = ReferenciaLibro.nombre_representativo(archivo)
-        datos.extend(Embedding.de_string(*datos_libro, nombre))
+        clave_nommbre = link.Libro.gen_nombre(clave_libro)
+        datos.extend(Embedding.parsear((clave_nommbre, nombre)))
 
         if bloque_resumen is not None:
-            datos.extend(Embedding.de_texto(*datos_libro, bloque_resumen.texto))
+            pares: Iterable[Tuple[link.Link, str]] = (
+                ( link.Libro.gen_resumen(clave_libro, id), texto )
+                for id, texto in bloque_resumen.texto.chunks()
+            )
+            datos.extend(( link for link, _ in pares ))
+            datos.extend(Embedding.parsear(*pares))
 
         return datos
 
@@ -77,6 +85,13 @@ class Libro(Dato):
     @classmethod
     def _obtener_clave(cls, clave_ref_libro: Clave) -> Clave: 
         return Clave.de_texto(TipoNodo.LIBRO, f"{clave_ref_libro}<|>{clave_ref_libro}")
+
+    def obtener_link(self) -> link.Link: 
+        return Libro._obtener_link(self.obtener_clave())
+
+    @classmethod
+    def _obtener_link(cls, clave: Clave) -> link.Link: 
+        return link.Libro.gen(clave)
 
     def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo | None:
         try: 

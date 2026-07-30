@@ -1,6 +1,6 @@
 import sqlite3 as sql
 
-from typing import Self, Dict, List
+from typing import Self, Iterable, Dict, List, Tuple
 from dataclasses import dataclass
 from enum import Enum
 
@@ -11,6 +11,7 @@ from contenido.dependencias import TipoNodo
 from contenido.archivo import Archivo
 from contenido.general.embedding import Embedding
 from contenido.general.bloque_texto import BloqueTexto
+from contenido.links import coleccion as link
 from .tablas import TablaColeccion as Tabla
 
 class TipoColeccion(Enum):
@@ -53,14 +54,14 @@ class TipoColeccion(Enum):
 
 @dataclass
 class Coleccion(Dato):
-    tipo: TipoColeccion
+    nombre: TipoColeccion
     estado: str
     clave_descripcion: Clave
 
     @classmethod
     def parsear(cls, archivo: Archivo) -> List[Dato]:
-        tipo = TipoColeccion.de_texto(archivo.metadata.nombre)
-        if tipo is None:
+        nombre = TipoColeccion.de_texto(archivo.metadata.nombre)
+        if nombre is None:
             mensaje = f"El tipo de coleccion '{archivo.metadata.nombre}' no esta siendo manejada"
             loggear(LoggerNivel.FATAL, mensaje)
             raise Exception(mensaje)
@@ -70,16 +71,25 @@ class Coleccion(Dato):
         datos.append(descripcion)
 
         coleccion = Coleccion(
-            tipo, 
+            nombre, 
             archivo.extra["estado"],
             descripcion.obtener_clave(),
         )
         datos.append(coleccion)
 
-        datos_coleccion = (Tabla.nombre, coleccion.obtener_clave())
-        datos.extend(Embedding.de_string(*datos_coleccion, tipo.value))
-        datos.extend(Embedding.de_string(*datos_coleccion, coleccion.estado))
-        datos.extend(Embedding.de_texto(*datos_coleccion, descripcion.texto))
+        clave_coleccion = coleccion.obtener_clave()
+        link_coleccion = coleccion._obtener_link(clave_coleccion)
+        datos.append(link_coleccion)
+
+        link_nombre = link.Coleccion.gen_nombre(clave_coleccion)
+        datos.extend(Embedding.parsear((link_nombre, nombre.texto())))
+
+        pares: Iterable[Tuple[link.Link, str]] = (
+            ( link.Coleccion.gen_descripcion(clave_coleccion, id), texto )
+            for id, texto in descripcion.texto.chunks()
+        )
+        datos.extend(( link for link, _ in pares ))
+        datos.extend(Embedding.parsear(*pares))
 
         return datos
 
@@ -87,37 +97,43 @@ class Coleccion(Dato):
         return [ self.clave_descripcion ]
 
     def obtener_clave(self) -> Clave: 
-        return Coleccion._obtener_clave(self.tipo)
+        return Coleccion._obtener_clave(self.nombre)
     
     @classmethod
-    def _obtener_clave(cls, tipo: str | TipoColeccion) -> Clave: 
-        if type(tipo) is str:
-            nuevo_tipo = TipoColeccion.de_texto(tipo)
-            if nuevo_tipo is None:
-                mensaje = f"El tipo de coleccion {tipo} no es posible para obtener clave"
+    def _obtener_clave(cls, nombre: str | TipoColeccion) -> Clave: 
+        if type(nombre) is str:
+            nuevo_nombre = TipoColeccion.de_texto(nombre)
+            if nuevo_nombre is None:
+                mensaje = f"El nombre de coleccion {nombre} no es posible para obtener clave"
                 loggear(LoggerNivel.FATAL, mensaje)
                 raise Exception(mensaje)
-            tipo = nuevo_tipo
+            nombre = nuevo_nombre
 
-        if type(tipo) is TipoColeccion:
-            return Clave.de_texto(TipoNodo.COLECCION, f"{tipo}-{tipo}")
+        if type(nombre) is TipoColeccion:
+            return Clave.de_texto(TipoNodo.COLECCION, f"{nombre}-{nombre}")
 
-        mensaje = f"El {tipo} con type {type(tipo)} no es un string o un tipo, por lo que no se puede obtener clave"
+        mensaje = f"El {nombre} con type {type(nombre)} no es un string o un nombre, por lo que no se puede obtener clave"
         loggear(LoggerNivel.FATAL, mensaje)
         raise Exception(mensaje)
+
+    def obtener_link(self) -> link.Link: 
+        return Coleccion._obtener_link(self.obtener_clave())
         
+    @classmethod
+    def _obtener_link(cls, clave: Clave) -> link.Link: 
+        return link.Coleccion.gen(clave)
 
     def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo:
         try: 
             id_tabla = Tabla.insertar(
                 cursor,
-                self.tipo.texto(),
+                self.nombre.texto(),
                 self.estado,
                 dependencias[self.clave_descripcion],
             )
 
         except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al insertar coleccion con nombre: {self.tipo}")
+            loggear(LoggerNivel.FATAL, f"Al insertar coleccion con nombre: {self.nombre}")
             raise e
 
         if id_tabla is None:

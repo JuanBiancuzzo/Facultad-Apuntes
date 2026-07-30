@@ -10,6 +10,7 @@ from contenido.archivo import Archivo
 from contenido.general.embedding import Embedding
 from contenido.general.etapa import Etapa
 from contenido.dependencias import TipoNodo
+from contenido.links import facultad as link
 from .plan_de_estudio import PlanDeEstudio
 from .tablas import TablaCarrera as Tabla
 
@@ -39,7 +40,9 @@ class Carrera(Dato):
         for plan in archivo.extra["planes"]:
             datos.append(PlanDeEstudio(plan, clave_carrera))
 
-        datos.extend(Embedding.de_string(Tabla.nombre, clave_carrera, carrera.nombre))
+        datos.append(Carrera._obtener_link(clave_carrera))
+        link_palabra = link.Diccionario.gen_nombre(clave_carrera)
+        datos.extend(Embedding.parsear((link_palabra, carrera.nombre)))
 
         return datos
 
@@ -52,6 +55,13 @@ class Carrera(Dato):
     @classmethod
     def _obtener_clave(cls, nombre_carrera) -> Clave:
         return Clave.de_texto(TipoNodo.CARRERA, f"{nombre_carrera}-|-{nombre_carrera}" )
+
+    def obtener_link(self) -> link.Link: 
+        return Carrera._obtener_link(self.obtener_clave())
+
+    @classmethod
+    def _obtener_link(cls, clave: Clave) -> link.Link: 
+        return link.Carrera.gen(clave)
 
     def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo | None:
         try: 

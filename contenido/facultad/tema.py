@@ -1,6 +1,6 @@
 import sqlite3 as sql
 
-from typing import Dict, List
+from typing import Iterable, Dict, List, Tuple
 from dataclasses import dataclass
 
 from dependencias import Nodo, Dato, Clave
@@ -13,6 +13,8 @@ from contenido.general.embedding import Embedding
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa
 from contenido.referencias.referencia import Referencia
+from contenido.links import facultad as link
+
 from .carrera import Carrera
 from .materia import Materia
 from .tablas import TablaTema as Tabla
@@ -51,7 +53,7 @@ class Tema(Dato):
         ])
         bloque_resumen = None
         if resultado["Resumen"]:
-            texto = Texto(resultado["Resumen"])
+            texto = resultado["Resumen"]
             bloque_resumen = None if texto.vacio() else BloqueTexto(texto)
 
         datos: List[Dato] = []
@@ -83,16 +85,23 @@ class Tema(Dato):
             raise Exception(mensaje)
 
         clave_tema = tema.obtener_clave()
+        datos.append(Tema._obtener_link(clave_tema))
+
         for num_referencia in map(lambda num: int(num), archivo.extra.get("referencias", [])):
             clave_referencia = Referencia._obtener_clave(num_referencia)
             datos.append(Bibliografia.tema_facultad(clave_tema, clave_referencia))
 
-        datos_tema = (Tabla.nombre, clave_tema)
         nombre = f"{tema.nombre_tema} N°{tema.capitulo} de la materia {nombre_materia} de la carrera {nombre_carrera}"
-        datos.extend(Embedding.de_string(*datos_tema, nombre))
+        clave_nommbre = link.Tema.gen_nombre(clave_materia)
+        datos.extend(Embedding.parsear((clave_nommbre, nombre)))
 
         if bloque_resumen is not None:
-            datos.extend(Embedding.de_texto(*datos_tema, bloque_resumen.texto))
+            pares: Iterable[Tuple[link.Link, str]] = (
+                ( link.Tema.gen_resumen(clave_materia, id), texto )
+                for id, texto in bloque_resumen.texto.chunks()
+            )
+            datos.extend(( link for link, _ in pares ))
+            datos.extend(Embedding.parsear(*pares))
 
         return datos
 
@@ -108,6 +117,13 @@ class Tema(Dato):
     @classmethod
     def _obtener_clave(cls, nommbre_tema: str, clave_materia: Clave, parte: int | None) -> Clave:
         return Clave.de_texto(TipoNodo.MATERIA, f"{nommbre_tema}<|-{clave_materia}-|>{nommbre_tema}:{parte}")
+
+    def obtener_link(self) -> link.Link: 
+        return Tema._obtener_link(self.obtener_clave())
+
+    @classmethod
+    def _obtener_link(cls, clave: Clave) -> link.Link: 
+        return link.Tema.gen(clave)
 
     def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo | None:
         try: 

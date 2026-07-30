@@ -1,13 +1,12 @@
 import sqlite3 as sql
 from fastembed import TextEmbedding
 from dataclasses import dataclass
-from typing import Dict, List, ClassVar
+from typing import ClassVar, Iterable, Dict, List, Tuple
 
 from dependencias import Dato, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
-from contenido.archivo import Texto
 from .link import Link
 from .tablas import TablaEmbedding as Tabla
 
@@ -21,24 +20,16 @@ class Embedding(Dato):
     clave_link: Clave
 
     @classmethod
-    def de_texto(cls, tabla: str, clave_dato: Clave, texto: Texto, info: bytes | None = None) -> List[Dato]:
-        link = Link.parsear(tabla, clave_dato, info)
-        clave_link = link.obtener_clave()
+    def parsear(cls, *pares: Tuple[ Link | Clave, str ]) -> List[Dato]:
+        claves: Iterable[Clave] = (
+            link if type(link) is Clave else link.obtener_clave()
+            for link, _ in pares
+        )
+        textos: Iterable[str] = ( texto for _, texto in pares )
 
-        datos = [ link ]
-        for embedding in cls.modelo.embed(texto.chunks()):
+        datos = []
+        for clave_link, embedding in zip(claves, cls.modelo.embed(textos)):
             datos.append(Embedding(embedding.tobytes(), clave_link))
-        return datos
-
-    @classmethod
-    def de_string(cls, tabla: str, clave_dato: Clave, string: str, info: bytes | None = None) -> List[Dato]:
-        link = Link.parsear(tabla, clave_dato, info)
-        clave_link = link.obtener_clave()
-
-        datos = [ link ]
-        embedding = list(cls.modelo.embed(string))[0]
-        datos.append(Embedding(embedding.tobytes(), clave_link))
-
         return datos
 
     def __str__(self) -> str:

@@ -15,7 +15,11 @@ class Link(Dato):
     clave_dato: Clave
 
     @classmethod
-    def parsear(cls, tabla: str, clave_dato: Clave, info: bytes | None = None) -> Dato:
+    def parsear_entero(cls, tabla: str, clave_dato: Clave) -> Link:
+        return Link(tabla, None, clave_dato)
+
+    @classmethod
+    def parsear(cls, tabla: str, clave_dato: Clave, info: bytes) -> Link:
         return Link(tabla, info, clave_dato)
 
     def dependo(self) -> List[Clave]: 

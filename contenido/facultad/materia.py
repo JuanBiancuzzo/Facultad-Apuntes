@@ -1,6 +1,6 @@
 import sqlite3 as sql
 
-from typing import Dict, List
+from typing import Iterable, Dict, List, Tuple
 from dataclasses import dataclass
 
 from dependencias import Nodo, Dato, Clave
@@ -17,6 +17,7 @@ from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa
 from contenido.coleccion.guias import Guia
 from contenido.coleccion.evaluacion import Evaluacion
+from contenido.links import facultad as link
 
 from .carrera import Carrera
 from .plan_de_estudio import PlanDeEstudio
@@ -81,6 +82,8 @@ class Materia(Dato):
         datos.append(materia)
 
         clave_materia = materia.obtener_clave()
+        datos.append(Materia._obtener_link(clave_materia))
+
         for num_referencia in map(lambda num: int(num), archivo.extra.get("referencias", [])):
             clave_referencia = Referencia._obtener_clave(num_referencia)
             datos.append(Bibliografia.materia(clave_materia, clave_referencia))
@@ -93,11 +96,17 @@ class Materia(Dato):
             clave_evaluacion = Evaluacion._obtener_clave(num_evaluacion)
             datos.append(EvaluacionesDeMateria.materia(clave_materia, clave_evaluacion))
 
-        datos_materia = (Tabla.nombre, clave_materia)
-        datos.extend(Embedding.de_string(*datos_materia, f"{materia.nombre_materia} de {nombre_carrera}"))
+        nombre = f"{materia.nombre_materia} de {nombre_carrera}"
+        clave_nommbre = link.Materia.gen_nombre(clave_materia)
+        datos.extend(Embedding.parsear((clave_nommbre, nombre)))
 
         if bloque_resumen is not None:
-            datos.extend(Embedding.de_texto(*datos_materia, bloque_resumen.texto))
+            pares: Iterable[Tuple[link.Link, str]] = (
+                ( link.Materia.gen_resumen(clave_materia, id), texto )
+                for id, texto in bloque_resumen.texto.chunks()
+            )
+            datos.extend(( link for link, _ in pares ))
+            datos.extend(Embedding.parsear(*pares))
 
         return datos
 
@@ -117,6 +126,13 @@ class Materia(Dato):
     @classmethod
     def _obtener_clave(cls, nommbre_materia: str, clave_carrera: Clave) -> Clave:
         return Clave.de_texto(TipoNodo.MATERIA, f"{nommbre_materia}<|-{clave_carrera}-|>{nommbre_materia}")
+
+    def obtener_link(self) -> link.Link: 
+        return Materia._obtener_link(self.obtener_clave())
+
+    @classmethod
+    def _obtener_link(cls, clave: Clave) -> link.Link: 
+        return link.Materia.gen(clave)
 
     def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo | None:
         try: 

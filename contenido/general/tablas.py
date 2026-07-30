@@ -131,7 +131,14 @@ class TablaLink(Tabla):
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 tabla TEXT NOT NULL,
                 id_dato INTEGER NOT NULL,
-                info BLOB
+                dato_entero INTEGER NOT NULL CHECK (done IN (0, 1)),
+                dirty INTEGER NOT NULL CHECK (done IN (0, 1)),
+                info BLOB,
+
+                CHECH (
+                    (dato_entero = 1 AND LENGTH(info) = 0) OR
+                    (dato_entero = 0 AND LENGTH(info) > 0)
+                )
             );
         """)
 
@@ -140,6 +147,12 @@ class TablaLink(Tabla):
         valores: Dict[str, Any] = {
             "tabla": tabla,
             "id_dato": id_dato,
+            "dato_entero": 1,
+            "dirty": 0,
         }
-        if info: valores["info"] = info
+
+        if info is not None: 
+            valores["info"] = info
+            valores["dato_entero"] = 0
+
         return cls._insertar(cursor, valores) 

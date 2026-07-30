@@ -1,6 +1,6 @@
 import sqlite3 as sql
 
-from typing import Dict, List
+from typing import Iterable, Dict, List, Tuple
 from dataclasses import dataclass
 
 from dependencias import Nodo, Dato, Clave
@@ -9,6 +9,7 @@ from logger import loggear, LoggerNivel
 from contenido.dependencias import TipoNodo
 from contenido.archivo import Archivo, Texto, Seccion
 from contenido.general.embedding import Embedding
+from contenido.links import coleccion as link
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa
 from .tablas import TablaEjercicio as Tabla
@@ -47,7 +48,7 @@ class Ejercicio(Dato):
         ])
 
         enunciado, resolucion, resultado = tuple(( 
-            Texto(seccion) if seccion is not None else None
+            seccion if seccion is not None else None
             for seccion in map(lambda s: resultado_split[s], secciones)
         ))
         if enunciado is None or resolucion is None:
@@ -57,11 +58,13 @@ class Ejercicio(Dato):
 
         enunciado_vacio = enunciado.vacio()
         enunciado = BloqueTexto(
-            Texto(f"%% Ejercicio {numero} - Enunciado %%") if enunciado_vacio else enunciado
+            Texto.parsear(f"%% Ejercicio {numero} - Enunciado %%") 
+            if enunciado_vacio else enunciado
         )
         resolucion_vacio = resolucion.vacio()
         resolucion = BloqueTexto(
-            Texto(f"%% Ejercicio {numero} - Resolucion %%") if resolucion_vacio  else resolucion
+            Texto.parsear(f"%% Ejercicio {numero} - Resolucion %%") 
+            if resolucion_vacio  else resolucion
         )
 
         if resultado is not None:
@@ -81,19 +84,32 @@ class Ejercicio(Dato):
         datos.append(ejercicio)
 
         # Embedding a para todo texto relacionado
-        datos_ejercicio = (Tabla.nombre, ejercicio.obtener_clave())
-        if ejercicio.nombre: 
-            datos.extend(Embedding.de_string(*datos_ejercicio, ejercicio.nombre))
+        clave_ejercicio = ejercicio.obtener_clave()
 
-        if not enunciado_vacio:
-            datos.extend(Embedding.de_texto(*datos_ejercicio, enunciado.texto))
-        if not resolucion_vacio:
-            datos.extend(Embedding.de_texto(*datos_ejercicio, resolucion.texto))
-        if resultado:
-            datos.extend(Embedding.de_texto(*datos_ejercicio, resultado.texto))
+        if ejercicio.nombre: 
+            link_nombre = link.Ejercicio.gen_nombre(clave_ejercicio) 
+            datos.append(link_nombre)
+            datos.extend(Embedding.parsear((link_nombre, ejercicio.nombre)))
+
+        validos = [ not enunciado_vacio, not resolucion_vacio, resultado is not None ]
+        bloques = [ enunciado, resolucion, resultado ]
+        generadores = [ 
+            link.Ejercicio.gen_enunciado, link.Ejercicio.gen_resolucion,
+            link.Ejercicio.gen_resultado,
+        ]
+
+        for valido, bloque, generador in zip(validos, bloques, generadores):
+            if not valido:
+                continue
+
+            pares: Iterable[Tuple[link.Link, str]] = (
+                ( generador(clave_ejercicio, id), texto )
+                for id, texto in bloque.texto.chunks()
+            )
+            datos.extend(( link for link, _ in pares ))
+            datos.extend(Embedding.parsear(*pares))
 
         return datos
-
 
     def dependo(self) -> List[Clave]: 
         dependencias = [ self.enunciado, self.resolucion ]
@@ -107,6 +123,13 @@ class Ejercicio(Dato):
     @classmethod
     def _obtener_clave(cls, numero: int) -> Clave:
         return Clave.de_texto(TipoNodo.EJERCICIO, f"{numero}:-:{numero}")
+
+    def obtener_link(self) -> link.Link:
+        return Ejercicio._obtener_link(self.obtener_clave())
+
+    @classmethod
+    def _obtener_link(cls, clave: Clave) -> link.Link:
+        return link.Ejercicio.gen(clave)
 
     def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo | None:
         try: 
