@@ -12,4 +12,3 @@ nombreLibreria: Pandas
 
 ## Resumen
 ---
-Pendiente...

@@ -17,7 +17,7 @@ nombreEstructura: Compressed trie
 ```
 # Definición
 ---
-> %% Descripción de la estructura %%
+>  
 ^descripcion
 ```tikz
 \usetikzlibrary{math}

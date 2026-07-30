@@ -7,4 +7,3 @@
 
 <%* tR += `${"#".repeat(SECCIONES.resumenInvestigacion.nivel)} ${SECCIONES.resumenInvestigacion.texto}` %>
 ---
-Pendiente...

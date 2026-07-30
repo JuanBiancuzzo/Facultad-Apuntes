@@ -15,7 +15,7 @@ nombreEstructura: Spatial Hash Grids
 ```
 # Definición
 ---
-> %% Descripción de la estructura %%
+>  
 ^descripcion
 ```tikz
 \usetikzlibrary{math}

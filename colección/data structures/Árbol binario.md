@@ -15,7 +15,7 @@ nombreEstructura: Árbol binario
 ```
 # Definición
 ---
-> %% Descripción de la estructura %%
+>  
 ^descripcion
 ```tikz
 \usetikzlibrary{math}

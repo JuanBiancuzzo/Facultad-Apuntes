@@ -16,7 +16,7 @@ nombreEstructura: Lista enlazada
 ```
 # Definición
 ---
-> %% Descripción de la estructura %%
+>  
 ^descripcion
 ```tikz
 \usetikzlibrary{math}

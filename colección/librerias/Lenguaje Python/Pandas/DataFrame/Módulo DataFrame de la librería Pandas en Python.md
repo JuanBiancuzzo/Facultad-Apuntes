@@ -12,4 +12,3 @@ nombreModulo: DataFrame
 
 ## Resumen
 ---
-Pendiente...
