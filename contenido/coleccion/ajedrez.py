@@ -14,7 +14,15 @@ from contenido.links import coleccion as link
 from .tablas import TablaAjedrez as Tabla
 
 class TipoMovimientosAjedrez(StrEnum):
-    APERTURA = "Apertura"
+    APERTURA_ABIERTA     = "Aperturas abiertas"
+    APERTURA_SEMIABIERTA = "Aperturas semiabiertas"
+    APERTURA_CERRADA     = "Aperturas cerradas"
+    APERTURA_SEMICERRADA = "Aperturas semicerradas"
+    APERTURA_DE_FLANCO   = "Aperturas de flanco"
+    APERTURA_IRREGULARES = "Aperturas irregulares"
+
+    MEDIO_JUEGO = "Medio juego"
+    FINAL = "Final"
 
 @dataclass
 class Ajedrez(Dato):
@@ -29,7 +37,7 @@ class Ajedrez(Dato):
 
         ajedrez = Ajedrez(
             archivo.metadata.nombre,
-            TipoMovimientosAjedrez.APERTURA,
+            archivo.extra["tipo"],
             archivo.extra["inicio"],
             list(map(lambda par: "-".join(par), archivo.extra["movimientos"])),
         )
@@ -53,7 +61,7 @@ class Ajedrez(Dato):
         return Clave.de_texto(TipoNodo.AJEDREZ, f"{nombre}({tipo})->{inicio}")
 
     def obtener_link(self) -> link.Link: 
-        return link.Ajedrez.gen(self.obtener_clave())
+        return Ajedrez._obtener_link(self.obtener_clave())
 
     @classmethod
     def _obtener_link(cls, clave: Clave) -> link.Link: 
