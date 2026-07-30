@@ -19,7 +19,7 @@ Vamos a investigar la rama de la computación que busca [[Algoritmo|algoritmos]]
 ## Resumen
 ---
 
-%% Pendiente... %%
+ 
 
 ## Archivos
 ---

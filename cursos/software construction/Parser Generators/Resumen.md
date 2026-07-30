@@ -27,7 +27,7 @@ infoCurso:
 
 # Resumen
 ---
-%% Pendiente... %%
+ 
 
 
 # Bibliografía

@@ -15,7 +15,7 @@ await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current(
 
 ## Resumen
 ---
-%% Pendiente... %%
+ 
 Crear un mapa de los temas en forma espiral
 
 ## Archivos

@@ -17,7 +17,7 @@ await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.curren
 
 # Resumen
 ---
-%% Pendiente... %%
+ 
 
 
 # Bibliografía

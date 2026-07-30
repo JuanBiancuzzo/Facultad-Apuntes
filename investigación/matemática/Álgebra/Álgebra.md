@@ -15,7 +15,7 @@ Vamos a investigar la rama de la matemática que estudia la combinación de elem
 
 ## Resumen
 ---
-%% Pendiente... %%
+ 
 
 ## Archivos
 ---

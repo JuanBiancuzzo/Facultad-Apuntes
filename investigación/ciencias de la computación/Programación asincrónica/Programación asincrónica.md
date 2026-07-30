@@ -15,7 +15,7 @@ Vamos a investigar este modelo de [[Concurrencia|concurrencia]]
 
 ## Resumen
 ---
-%% Pendiente... %%
+ 
 
 ## Archivos
 ---
