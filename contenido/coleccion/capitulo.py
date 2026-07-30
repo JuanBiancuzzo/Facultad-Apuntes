@@ -8,7 +8,7 @@ from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
 from contenido.archivo import Archivo
-from contenido.extra.guias import GuiaPorDato as GuiasDeCapitulo
+from contenido.general.guias import GuiaPorDato as GuiasDeCapitulo
 from contenido.general.embedding import Embedding
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa

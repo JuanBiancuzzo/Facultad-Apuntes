@@ -7,8 +7,8 @@ from dependencias import Nodo, Dato, Clave
 from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
-from contenido.archivo import Archivo, Texto, Seccion
-from contenido.extra.bibliografia import Bibliografia
+from contenido.archivo import Archivo, Seccion
+from contenido.general.bibliografia import Bibliografia
 from contenido.general.embedding import Embedding
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa

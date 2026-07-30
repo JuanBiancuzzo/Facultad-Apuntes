@@ -66,7 +66,6 @@ class TablasGenerales(StrEnum):
     IMAGENES = "Imagenes"
     LINK = "LinksInternos"
 
-class TablasExtra(StrEnum):
     BIBLIOGRAFIA = "Bibliografia"
     GUIAS = "GuiasPorElemento"
     EVALUACIONES = "EvaluacionesPorElemento"

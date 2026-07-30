@@ -9,9 +9,9 @@ from logger import loggear, LoggerNivel
 from contenido.dependencias import TipoNodo
 from contenido.archivo import Archivo, Texto, Seccion
 from contenido.referencias.referencia import Referencia
-from contenido.extra.bibliografia import Bibliografia
-from contenido.extra.guias import GuiaPorDato as GuiasDeMateria
-from contenido.extra.evalauciones import EvaluacionPorDato as EvaluacionesDeMateria
+from contenido.general.bibliografia import Bibliografia
+from contenido.general.guias import GuiaPorDato as GuiasDeMateria
+from contenido.general.evaluaciones import EvaluacionPorDato as EvaluacionesDeMateria
 from contenido.general.embedding import Embedding
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.etapa import Etapa
