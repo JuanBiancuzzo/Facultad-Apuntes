@@ -190,7 +190,7 @@ Las colecciones tiene su tabla, pero ademas cada elemento tiene su propia tabla 
   | id_descripcion | INTEGER    |    NO    |      REFERENCES     |-->| BloqueDeTexto |  
   +----------------+------------+----------+---------------------+   +---------------+                 
 ```
-Donde ese tipo puede ser:
+Donde ese `tipo` puede ser:
  * Ajedrez
  * Biblioteca
  * Bloque de matematica
@@ -368,3 +368,29 @@ Donde ese tipo puede ser:
 
 #### Recetas
 ---
+
+### Facultad
+---
+
+### Temas de investigacion
+---
+
+### General
+---
+
+## CST para el texto
+Para el texto, y como se puede ver en la tabla `BloqueDeTexto` donde tiene `texto` en tipo `BLOB`, esto es porque no se utiliza exactamente un string para representar el texto. Se utiliza un Concrete Syntax Tree (CST) que representa el texto en forma de arbol, con las consideraciones necesarias para representar un lenguaje de enmarcado como lo es Markdown
+
+A pesar que este arbol se construya a partir de Markdown, el arbol no representa el lenguaje, sino que es una representacion inspirada en Markdown y en AsciiDoc, ya que tiene propiedades que Markdown no tiene. Se puede pensar mas como un subset de features de AsciiDoc mas que Markdown
+
+Como es una estructura customizada a los requisitos que busco, voy a detallar ahora los nodos que tiene este arbol, sus relaciones y la forma de serializarlo
+
+### Nodos
+---
+
+### Relaciones
+---
+
+### Serializacion
+---
+
