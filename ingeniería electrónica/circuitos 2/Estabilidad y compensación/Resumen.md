@@ -21,7 +21,7 @@ infoTemaMateria:
 
 # Resumen
 ---
-%% Pendiente %%
+ 
 
 # Bibliografía
 ---

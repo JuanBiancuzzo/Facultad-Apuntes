@@ -30,7 +30,7 @@ nombreCarrera: Ingeniería electrónica
 
 ## Resumen
 ---
-%% Pendiente %%
+ 
 
 # Bibliografía
 ---

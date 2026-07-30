@@ -23,7 +23,7 @@ infoTemaMateria:
 
 # Resumen
 ---
-%% Pendiente %%
+ 
 
 # Bibliografía
 ---

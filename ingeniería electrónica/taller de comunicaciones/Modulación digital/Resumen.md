@@ -19,7 +19,7 @@ infoTemaMateria:
 
 # Resumen
 ---
-%% Pendiente %%
+ 
 
 # Bibliografía
 ---

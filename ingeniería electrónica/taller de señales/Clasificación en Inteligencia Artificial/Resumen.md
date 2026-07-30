@@ -32,7 +32,7 @@ infoTemaMateria:
 
 # Resumen
 ---
-%% Pendiente %%
+ 
     
 
 # Bibliografía
