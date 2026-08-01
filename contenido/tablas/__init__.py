@@ -1,6 +1,5 @@
 from .registros import Tablas, \
     TablasFacultad, TablasReferencias, \
-    TablasColeccion,  TablasExtra, \
-    TablasGenerales 
+    TablasColeccion,  TablasGenerales
 
 from .utilidad import timestamp

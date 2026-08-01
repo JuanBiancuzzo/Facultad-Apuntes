@@ -133,11 +133,11 @@ class TablaLink(Tabla):
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 tabla TEXT NOT NULL,
                 id_dato INTEGER NOT NULL,
-                dato_entero INTEGER NOT NULL CHECK (done IN (0, 1)),
-                dirty INTEGER NOT NULL CHECK (done IN (0, 1)),
+                dato_entero INTEGER NOT NULL CHECK (dato_entero IN (0, 1)),
+                dirty INTEGER NOT NULL CHECK (dirty IN (0, 1)),
                 info BLOB,
 
-                CHECH (
+                CHECK (
                     (dato_entero = 1 AND LENGTH(info) = 0) OR
                     (dato_entero = 0 AND LENGTH(info) > 0)
                 )

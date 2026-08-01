@@ -1,6 +1,6 @@
 from enum import StrEnum
 
-type Tablas = TablasFacultad | TablasReferencias | TablasColeccion | TablasExtra | TablasGenerales
+type Tablas = TablasFacultad | TablasReferencias | TablasColeccion | TablasGenerales
 
 class TablasFacultad(StrEnum):
     # Carrera

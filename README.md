@@ -375,10 +375,13 @@ Donde ese `tipo` puede ser:
 ### Temas de investigacion
 ---
 
+### Notas
+---
+
 ### General
 ---
 
-## CST para el texto
+## CST para el texto - V1
 Para el texto, y como se puede ver en la tabla `BloqueDeTexto` donde tiene `texto` en tipo `BLOB`, esto es porque no se utiliza exactamente un string para representar el texto. Se utiliza un Concrete Syntax Tree (CST) que representa el texto en forma de arbol, con las consideraciones necesarias para representar un lenguaje de enmarcado como lo es Markdown
 
 A pesar que este arbol se construya a partir de Markdown, el arbol no representa el lenguaje, sino que es una representacion inspirada en Markdown y en AsciiDoc, ya que tiene propiedades que Markdown no tiene. Se puede pensar mas como un subset de features de AsciiDoc mas que Markdown
@@ -387,9 +390,105 @@ Como es una estructura customizada a los requisitos que busco, voy a detallar ah
 
 ### Nodos
 ---
+Los nodos los podemos separar en inline o no, que suele ser una la separacion habitual en el caso de este tipo de lenguajes 
+
+Para inline, donde se omite el "inline" si aparece tambien en el otro grupo, tenemos:
+ * Texto plano
+ * Codigo 
+ * Comentario
+ * Ecuacion
+ * Imagen
+ * Referencia
+
+El resto es:
+ * Documento
+ * Seccion
+ * Parrafo
+ * Header
+ * Linea
+ * Codigo 
+ * Comentario
+ * Ecuacion
+ * Imagen
+ * Referencia
+ * Callout
+ * Tabla
 
 ### Relaciones
 ---
+Vamos a expresarlo en formado de un lenguaje formarl, ya que vi que es una buena forma de expresar el contenido de este lenguaje de enmarcado
+```
+start := Documento | Seccion | Parrafo | Header
+
+# --- Documento ---
+Documento              := Seccion <Header_k> <ListaDocumento_k>
+                         | Parrafo <Header_k> <ListaDocumento_k>
+<ListaDocumento_k>     := <Header_{1..k}> <ListaDocumento_{1..k}>
+                         | <Header_{1..k}>
+<ListaDocumento{i..j}> := <ListaDocumento_i> | <ListaDocumento_(i-1)> | ... | <ListaDocumento_j>
+ 
+# --- Seccion ---
+Seccion          := <ListaSeccion> 
+<ListaSeccion> := <Parrafo> <ListaSeccion>
+                 | <Parrafo> <Parrafo>
+
+# --- Parrafo ---
+Parrafo        := <ListaParrafo> <Break>
+<Break>        := '\n'
+<ListaParrafo> := <Otro> <ListaParrafo>
+                 | Linea <NodoBloque> <ListaParrafo>
+                 | Linea <NodoBloque>
+                 | <NodoBloque>
+                 | Linea
+
+<NodoBloque> := Ecuacion | Comentario | BloqueDeCodigo | Imagen | Tabla | Referencia | Callout
+
+# --- Header --- 
+Header          := <Header_1> | <Header_2> | <Header_3> | <Header_4> | <Header_5> | <Header_6>
+<Header_6>      := 6 LineaInline Seccion
+                  | 6 LineaInline Parrafo
+                  | 6 LineaInline <Break>
+<Header_k>      := k LineaInline Seccion <Header_{(k-1)..6}>
+                  | <NivelHeader> LineaInline Seccion
+                  | <NivelHeader> LineaInline Parrafo <Header_{(k-1)..6}>
+                  | <NivelHeader> LineaInline Parrafo 
+                  | <NivelHeader> LineaInline <Break> <Header_{(k-1)..6}>
+                  | <NivelHeader> LineaInline <Break>
+<Header_{i..j}> := <Header_i> | <Header_(i-1)> | ... | <Header_j>
+
+# --- Linea ---
+Linea        := <ListaLinea>
+<ListaLinea> := <NodoInlineSeparable> <ListaLinea>
+               | TextoPlano <NodoInlineSeparable> <ListaLinea>
+               | TextoPlano <NodoInlineSeparable>
+               | <NodoInlineSeparable>
+               | TextoPlano
+
+<NodoInline>          := <NodoInlineSeparable> | TextoPlano
+<NodoInlineSeparable> := EcuacionInline | ComentarioInline | CodigoInline | ImagenInline | Referencia
+
+# --- Textos ---
+TextoPlano     := <Modificador> cadena_de_caracteres
+<Modificador>  := <ModBold> <ModItalics> <ModTachada> <ModResaltado> <ModPosicion>
+<ModBold>      := True | False
+<ModItalics>   := True | False
+<ModTachada>   := True | False
+<ModResaltado> := True | False
+<ModPosicion>  := <ModInfra> False | False <ModSupra>
+<ModInfra>     := True | False
+<ModSupra>     := True | False
+
+EcuacionInline   := cadena_de_caracteres
+ComentarioInline := cadena_de_caracteres
+CodigoInline     := cadena_de_caracteres
+
+# --- Referencia Inline ---
+
+# --- Imagen Inline ---
+```
+Para simplificar la notacion, se utiliza valores genericos utilizando la notacion `<Nombre_k>`, donde `k` es un entero.
+
+Se entiende como `cadena_de_caracteres`, a una lista de caracteres, sin caracteres especiales como `\n`, `\0` o `\t`.
 
 ### Serializacion
 ---

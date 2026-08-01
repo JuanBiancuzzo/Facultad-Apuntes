@@ -7,4 +7,4 @@ from .imagen import Imagen, TipoImagen
 
 from .bibliografia import Bibliografia
 from .guias import GuiaPorDato
-from .evalauciones import EvaluacionPorDato
+from .evaluaciones import EvaluacionPorDato
