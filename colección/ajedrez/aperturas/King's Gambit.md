@@ -1,6 +1,7 @@
 ---
 dia: 2026-02-03
 etapa: sin-empezar
+tipo: Aperturas abiertas
 inicio: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR
 movimientos:
   -
