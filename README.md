@@ -471,8 +471,7 @@ Linea        := <ListaLinea> <Label>
                | <NodoInlineSeparable>
                | TextoPlano
 
-<NodoInline>          := <NodoInlineSeparable> | TextoPlano
-<NodoInlineSeparable> := EcuacionInline | ComentarioInline | CodigoInline | ImagenInline | Referencia
+<NodoInlineSeparable> := EcuacionInline | ComentarioInline | CodigoInline | ImagenInline | ReferenciaInline
 
 # --- BloqueDeCodigo ---
 BloqueDeCodigo := <Lenguaje> <Codigo> <Label>
@@ -568,6 +567,8 @@ Se tiene los terminales que se deben entender como:
  * A los `bytes` como un conjunto arbitrario de bytes, sin limitacion alguna
 
 Como comentario, el alto y ancho de la imagen, no seria en pixeles sino que seria en funcion del tamaño de un caracter, lo que se conoce como `em` en css. Esta decision es porque esta pensado este diseño para GUI's como para TUI's por lo que necesitamos una manera que afecte de la misma manera a ambos
+
+Como último comentario, aunque se expresa que 2 `TextoPlano` no pueden estar uno al lado del otro en una `Linea`, realmente si pueden estar siempre y cuando estos no tengan los mismos modificadores
 
 ### Serialización
 ---
