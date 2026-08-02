@@ -416,13 +416,17 @@ El resto es:
 
 ### Relaciones
 ---
-Vamos a expresarlo en formado de un lenguaje formarl, ya que vi que es una buena forma de expresar el contenido de este lenguaje de enmarcado
+Vamos a expresarlo en formado de un lenguaje formarl, ya que vi que es una buena forma de expresar el contenido de este lenguaje de enmarcado. Notemos que no puede ser un Context-Free Grammar por el uso de tablas, aunque de por si los headers no colaboran, siguien siendo un caso finito de caso capaz de ser reducido a muchos casos simples, pero las tablas al tener una cantidad ilimitada de columnas y filas, no se puede expresar en un caso limitado de casos
 ```
-start := Documento | Seccion | Parrafo | Header
+start    := <Inicio>
+<Inicio> := Documento | Seccion | Parrafo | Header
 
 # --- Documento ---
 Documento              := Seccion <Header_k> <ListaDocumento_k>
                          | Parrafo <Header_k> <ListaDocumento_k>
+                         | <Header_k> <ListaDocumento_k>
+                         | Seccion Header
+                         | Parrafo Header
 <ListaDocumento_k>     := <Header_{1..k}> <ListaDocumento_{1..k}>
                          | <Header_{1..k}>
 <ListaDocumento{i..j}> := <ListaDocumento_i> | <ListaDocumento_(i-1)> | ... | <ListaDocumento_j>
@@ -433,13 +437,15 @@ Seccion          := <ListaSeccion>
                  | <Parrafo> <Parrafo>
 
 # --- Parrafo ---
-Parrafo        := <ListaParrafo> <Break>
+Parrafo        := <ListaParrafo> <Label> <Break>
+                 | <ListaParrafo> <Break>
 <Break>        := '\n'
-<ListaParrafo> := <Otro> <ListaParrafo>
+<ListaParrafo> := <NodoBloque> <ListaParrafo>
                  | Linea <NodoBloque> <ListaParrafo>
                  | Linea <NodoBloque>
                  | <NodoBloque>
                  | Linea
+<Label>        := texto
 
 <NodoBloque> := Ecuacion | Comentario | BloqueDeCodigo | Imagen | Tabla | Referencia | Callout
 
@@ -457,7 +463,8 @@ Header          := <Header_1> | <Header_2> | <Header_3> | <Header_4> | <Header_5
 <Header_{i..j}> := <Header_i> | <Header_(i-1)> | ... | <Header_j>
 
 # --- Linea ---
-Linea        := <ListaLinea>
+Linea        := <ListaLinea> <Label>
+               | <ListaLinea> 
 <ListaLinea> := <NodoInlineSeparable> <ListaLinea>
                | TextoPlano <NodoInlineSeparable> <ListaLinea>
                | TextoPlano <NodoInlineSeparable>
@@ -467,28 +474,100 @@ Linea        := <ListaLinea>
 <NodoInline>          := <NodoInlineSeparable> | TextoPlano
 <NodoInlineSeparable> := EcuacionInline | ComentarioInline | CodigoInline | ImagenInline | Referencia
 
-# --- Textos ---
-TextoPlano     := <Modificador> cadena_de_caracteres
-<Modificador>  := <ModBold> <ModItalics> <ModTachada> <ModResaltado> <ModPosicion>
-<ModBold>      := True | False
-<ModItalics>   := True | False
-<ModTachada>   := True | False
-<ModResaltado> := True | False
-<ModPosicion>  := <ModInfra> False | False <ModSupra>
-<ModInfra>     := True | False
-<ModSupra>     := True | False
+# --- BloqueDeCodigo ---
+BloqueDeCodigo := <Lenguaje> <Codigo> <Label>
+                 | <Lenguaje> <Codigo> 
+                 | <Codigo> <Label>
+                 | <Codigo>
+<Lenguaje>     := texto
+<Codigo>       := cadena_de_caracteres
 
-EcuacionInline   := cadena_de_caracteres
-ComentarioInline := cadena_de_caracteres
-CodigoInline     := cadena_de_caracteres
+# --- Comentario ---
+Comentario := cadena_de_caracteres
+
+# --- Ecuacion ---
+Ecuacion := cadena_de_caracteres <Label>
+
+# --- Imagen ---
+Imagen              := <ModificadorImagen> <PathImagen>
+                      | <PathImagen>
+<PathImagen>        := url | path_archivo
+<ModificadorImagen> := Comb(<ModAltText> <ModTitulo> <ModDescripcion> <Label> <ModPosicion>)
+<ModAltText>        := texto
+<ModTitulo>         := TextoPlano
+<ModDescripcion>    := TextoPlano
+<ModPosicion>       := <ModAncho> <ModAlto>
+                      | <ModAncho>
+<ModAncho>          := numero
+<ModAlto>           := numero
+
+# --- Referencia ---
+Referencia          := <ReferenciaInterna> Linea
+                      | <ReferenciaExterna> Linea
+<ReferenciaInterna> := bytes
+<ReferenciaExterna> := url | path_archivo
+
+# --- Callout ---
+Callout                := <ModificadorCallout> <Inicio>
+                         | <Inicio> 
+<ModificadorCallout>   := <IdentificadorCallout> <TituloCallout>
+                         | <IdentificadorCallout>
+<IdentificadorCallout> := <AperturaCallout> texto
+<AperturaCallout>      := abierto | cerrado | default
+<TituloCallout>        := <TextoPlano>
+
+# --- Tabla ---
+Tabla               := <Ancho_n> <Alto_m> <ColumnasTabla_n> <FilasTabla_n_m>
+                      | <Ancho_n> <Alto_0> <ColumnasTabla_n>
+<Ancho_n>           := numero(n) 
+<Alto_m>            := numero(m)
+<ColumnasTabla_1>   := <AlineacionColumna> TextoPlano 
+<ColumnasTabla_n>   := <AlineacionColumna> TextoPlano <ColumnasTabla_(n-1)>
+<AlineacionColumna> := izquierda | centro | derecha
+<FilasTabla_n_1>    := <FilaTabla_n>
+<FilasTabla_n_m>    := <FilaTabla_n> <FilasTabla_n_(m-1)>
+<FilaTabla_1>       := <CeldaTabla> 
+<FilaTabla_n>       := <CeldaTabla> <FilaTabla_(n-1)>
+<CeldaTabla>        := TextoPlano | vacio
+
+# --- Inline ---
+# ---- Textos ----
+TextoPlano         := <ModificadorTexto> texto
+<ModificadorTexto> := <ModBold> <ModItalics> <ModTachada> <ModResaltado> <ModPosicion>
+<ModBold>          := True | False
+<ModItalics>       := True | False
+<ModTachada>       := True | False
+<ModResaltado>     := True | False
+<ModPosicion>      := <ModInfra> False | False <ModSupra>
+<ModInfra>         := True | False
+<ModSupra>         := True | False
+
+EcuacionInline   := texto
+ComentarioInline := texto
+CodigoInline     := texto
 
 # --- Referencia Inline ---
+ReferenciaInline := <ReferenciaInterna> Linea
+                   | <ReferenciaExterna> Linea
 
 # --- Imagen Inline ---
+ImagenInline              := <ModificadorImagenInline> <PathImagen>
+                            | <PathImagen>
+<ModificadorImagenInline> := <ModAltText>
 ```
-Para simplificar la notacion, se utiliza valores genericos utilizando la notacion `<Nombre_k>`, donde `k` es un entero.
 
-Se entiende como `cadena_de_caracteres`, a una lista de caracteres, sin caracteres especiales como `\n`, `\0` o `\t`.
+Para simplificar la notacion, se utiliza valores genericos utilizando la notacion `<Nombre_k>`, donde `k` es un entero. Como se menciono antes, aunque esto permite generar muchos casos, no necesariamente hace que sea un Context-Free Grammar y se puede ver con el caso de la Tabla. Tambien utilizando la notacion `Comb(Opt_1, Opt_2, ..., Opt_n)` como cualquier combinacion de las opciones, pero sin repetir
+
+Se tiene los terminales que se deben entender como:
+ * A la `cadena_de_caracteres` como cualquier secuencia de caracteres. Se espera que este lenguaje tiene una representacion puntual, los caracteres no incluyen los delimitadores 
+ * Al `texto` como un subconjunto de `cadena_de_caracteres`, donde no incluye caracteres como `\n`, `\t`
+ * Al `vacio` como ningun tipo de caracter, por lo que no se guarda nada de informacion
+ * Al `url` como una cadena de caracteres que implica un url valido
+ * Al `path_archivo` como el path relativo de un archivo en el file system
+ * Al `numero` como un numero natural positivo, y que `numero(n)` representa que `n` es un numero, y no el caracter `'n'`
+ * A los `bytes` como un conjunto arbitrario de bytes, sin limitacion alguna
+
+Como comentario, el alto y ancho de la imagen, no seria en pixeles sino que seria en funcion del tamaño de un caracter, lo que se conoce como `em` en css. Esta decision es porque esta pensado este diseño para GUI's como para TUI's por lo que necesitamos una manera que afecte de la misma manera a ambos
 
 ### Serializacion
 ---
