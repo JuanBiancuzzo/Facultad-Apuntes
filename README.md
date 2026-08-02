@@ -514,7 +514,7 @@ Callout                := <ModificadorCallout> <Inicio>
                          | <IdentificadorCallout>
 <IdentificadorCallout> := <AperturaCallout> texto
 <AperturaCallout>      := abierto | cerrado | default
-<TituloCallout>        := <TextoPlano>
+<TituloCallout>        := Linea
 
 # --- Tabla ---
 Tabla               := <Ancho_n> <Alto_m> <ColumnasTabla_n> <FilasTabla_n_m>
