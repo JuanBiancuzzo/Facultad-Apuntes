@@ -36,11 +36,26 @@ def cargar_datos(args: Argumentos, conn: sql.Connection):
 
     manager.close()
 
-def main(args: Argumentos) -> None:
-    if os.path.exists(args.output_path):
-        os.remove(args.output_path)
+def guardar_schema(conn: sql.Connection, path_schema: str):
+    cursor = conn.cursor()
 
-    conn = sql.connect(args.output_path)
+    cursor.execute("SELECT sql FROM sqlite_master WHERE sql IS NOT NULL")
+    resultado = cursor.fetchall()
+    
+    with open(path_schema, "w", encoding = "utf-8") as archivo:
+        for tabla in resultado:
+            archivo.write(f"{tabla[0]};\n\n")
+
+    cursor.close()
+
+def main(args: Argumentos) -> None:
+    path_bdd = f"{args.output_path}{args.base_de_datos}"
+    path_schema = f"{args.output_path}{args.schema}"
+
+    if os.path.exists(path_bdd):
+        os.remove(path_bdd)
+
+    conn = sql.connect(path_bdd)
     error = None
 
     try: 
@@ -53,8 +68,10 @@ def main(args: Argumentos) -> None:
 
     conn.commit()
     conn.execute("VACUUM")
-    conn.close()
 
+    guardar_schema(conn, path_schema)
+
+    conn.close()
     logger.terminar()
 
     if error is not None:
