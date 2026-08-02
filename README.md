@@ -574,11 +574,12 @@ Como comentario, el alto y ancho de la imagen, no seria en pixeles sino que seri
 En esta sección detallaré como se serializaría esta estructura, donde permitir optimizaciones decidí tener un punto de inicio el cual separa la estructura del texto como cadena de caracteres. Por lo que inicialmente siempre se puede leer la siguiente estructura
 
 ```
-  0      6       14       22     n-estructura         n-string
-  +------+--------+--------+----------------+----------------+
-  |MCQv01| largo  | largo  | bytes          | bytes          |
-  +------+--------+--------+----------------+----------------+
+  0        8       16       24     n-estructura         n-string
+  +--------+--------+--------+----------------+----------------+
+  |MCQv01.0| largo  | largo  | bytes          | bytes          |
+  +--------+--------+--------+----------------+----------------+
 ```
 
 Donde de bit 6 a 14, es el largo de los bytes para las estructuras, y de bit 14 a 22, es el largo de los bytes para el string en si mismo. Actualmente esto no da nada de información a la estructura debajo, pero es la forma general de empezar a leer
 
+Esta estructura muestra como se va a separar la estructura del texto, o contenido, que tiene el árbol. Por otro lado, se verá mucho el patrón de tener índices al array que es el string
