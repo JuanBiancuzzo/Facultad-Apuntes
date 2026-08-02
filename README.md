@@ -534,13 +534,13 @@ Tabla               := <Ancho_n> <Alto_m> <ColumnasTabla_n> <FilasTabla_n_m>
 # ---- Textos ----
 TextoPlano         := <ModificadorTexto> texto
 <ModificadorTexto> := <ModBold> <ModItalics> <ModTachada> <ModResaltado> <ModPosicion>
-<ModBold>          := True | False
-<ModItalics>       := True | False
-<ModTachada>       := True | False
-<ModResaltado>     := True | False
-<ModPosicion>      := <ModInfra> False | False <ModSupra>
-<ModInfra>         := True | False
-<ModSupra>         := True | False
+<ModBold>          := true | false
+<ModItalics>       := true | false
+<ModTachada>       := true | false
+<ModResaltado>     := true | false
+<ModPosicion>      := <ModInfra> false | false <ModSupra>
+<ModInfra>         := true | false
+<ModSupra>         := true | false
 
 EcuacionInline   := texto
 ComentarioInline := texto
