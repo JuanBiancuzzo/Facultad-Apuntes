@@ -1,15 +1,17 @@
 {
-    "logs": "_resultado/log.json",
-    "excluir": [
-        ".git",
-        ".obsidian",
-        "_scripts",
-        "_template",
-        "temp",
-        ".trash",
-        ".gitignore",
-        ".gitmodules",
-        "LICENSE",
-        "README.md"
-    ]
+  "logs": "_resultado/log.json",
+  "base-de-datos": "datos.db",
+  "schema": "schema.sql",
+  "excluir": [
+    ".git",
+    ".obsidian",
+    "_scripts",
+    "_template",
+    "temp",
+    ".trash",
+    ".gitignore",
+    ".gitmodules",
+    "LICENSE",
+    "README.md"
+  ]
 }

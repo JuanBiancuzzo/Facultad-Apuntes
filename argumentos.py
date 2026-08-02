@@ -6,6 +6,8 @@ from typing import Dict, List, Tuple, Any
 from enum import StrEnum
 
 DEFAULT_BATCH = 20
+DEFAULT_NOMBRE_SCHEMA = "schema.sql"
+DEFAULT_NOMBRE_BDD = "datos.db"
 
 class ErrorArgumentos(StrEnum):
     BATCH_INVALIDO = "El batch tiene que ser un numero"
@@ -18,29 +20,30 @@ class ErrorArgumentos(StrEnum):
 class Argumentos:
     input_path: str
     output_path: str
+    base_de_datos: str
+    schema: str
     logs_path: str | None
     directorios_omitir: List[str]
     archivos_omitir: List[str]
     tamanio_batch: int
 
-    def __init__(
-        self, input_path: str, output_path: str, logs_path: str | None = None,
-        archivos_omitir: List[str] = [], directorios_omitir: List[str] = [], batch = 1
-    ) -> None:
+    def __init__(self, input_path: str, output_path: str) -> None:
         self.input_path = input_path
         self.output_path = output_path
-        self.logs_path = logs_path
-        self.archivos_omitir = archivos_omitir
-        self.directorios_omitir = directorios_omitir
-        self.tamanio_batch = batch
+        self.base_de_datos = DEFAULT_NOMBRE_BDD
+        self.schema = DEFAULT_NOMBRE_SCHEMA
+        self.logs_path = None
+        self.archivos_omitir = []
+        self.directorios_omitir = []
+        self.tamanio_batch = DEFAULT_BATCH
 
     @classmethod
     def parsear(cls) -> Tuple[Argumentos, ErrorArgumentos | None]:
         dicc_args = docopt(f"""
 Usage:
-  importer.py -i=<input-directorio> -o=<output-bdd>
-  importer.py cli -i=<input-directorio> -o=<output-bdd> [-l=<logs>] [-b=<batch>] [-e=<excluir>]...
-  importer.py file -i=<input-directorio> -o=<output-bdd> [-f=<archivo-config>]
+  importer.py -i=<input-directorio> -o=<output-directorio>
+  importer.py cli -i=<input-directorio> -o=<output-directorio> [-b=<base-de-datos>] [-s=<schema>] [-l=<logs>] [-t=<tamanio-bloque>] [-e=<excluir>]...
+  importer.py file -i=<input-directorio> -o=<output-directorio> [-f=<archivo-config>]
   importer.py --help
   importer.py --version
 
@@ -48,18 +51,20 @@ Options:
     --help       Mostrar los argumentos posibles.
     --version    Version.
 
-    -i=<input-directorio>, --input-directorio=<input-directorio> Path al directorio con los datos.
-    -o=<output-bdd>, --output-bdd=<output-bdd>                   Path al archivo de SQLite que se quiere generar.
-    -l=<logs>, --logs=<logs>                                     Path al archivo de logs que se quiere generar.
-    -b=<batch>, --batch=<batch>                                  Se bloques de archivos a procesar, esta el tamaño del bloque [default: {DEFAULT_BATCH}].
-    -e=<excluir>, --excluir=<excluir>                            Directorios y archivos a excluir de los datos a procesar.
-    -f=<archivo-config>, --archivo-config=<archivo-config>       Archivo con la configuracion en .json equivalente a los otros parametros.
+    -i=<input-directorio>, --input-directorio=<input-directorio>    Path al directorio con los datos.
+    -o=<output-directorio>, --output-directorio=<output-directorio> Path al directorio en donde todos los archivos se generarán.
+    -b=<base-de-datos>, --base-de-datos=<base-de-datos>             Nombre del archivo de la base de datos [default: {DEFAULT_NOMBRE_BDD}].
+    -s=<schema>, --schema=<schema>                                  Nombre del archivo donde se guardará el Schema de la base de datos [default: {DEFAULT_NOMBRE_SCHEMA}].
+    -l=<logs>, --logs=<logs>                                        Path al archivo de logs que se quiere generar.
+    -t=<tamanio-bloque>, --tamanio-bloque=<tamanio-bloque>          Se bloques de archivos a procesar, esta el tamaño del bloque [default: {DEFAULT_BATCH}].
+    -e=<excluir>, --excluir=<excluir>                               Directorios y archivos a excluir de los datos a procesar.
+    -f=<archivo-config>, --archivo-config=<archivo-config>          Archivo con la configuracion en .json equivalente a los otros parametros.
 """
 , version = "0.1.0")
 
         argumentos = Argumentos(
             _limpear_path(dicc_args["--input-directorio"]),
-            _limpear_path(dicc_args["--output-bdd"]),
+            _limpear_path(dicc_args["--output-directorio"]),
         )
 
         if dicc_args["cli"]:
@@ -72,6 +77,9 @@ Options:
 
     @classmethod
     def _parsear_cli(cls, argumentos: Argumentos, dicc_args: Dict[str, Any]) -> Tuple[Argumentos, ErrorArgumentos | None]:
+        argumentos.base_de_datos = dicc_args["--base-de-datos"]
+        argumentos.schema = dicc_args["--schema"]
+
         for path_excluido in map(_limpear_path, dicc_args["--excluir"]):
             path_completo = os.path.join(argumentos.input_path, path_excluido)
             if os.path.isfile(path_completo):
@@ -111,8 +119,10 @@ Options:
         except:
             return argumentos, ErrorArgumentos.PATH_CONFIGURACION_INVALIDO
 
+        dicc_args["--schema"] = datos.get("schema", DEFAULT_NOMBRE_SCHEMA)
+        dicc_args["--base-de-datos"] = datos.get("base-de-datos", DEFAULT_NOMBRE_BDD)
         dicc_args["--logs"] = datos.get("logs")
-        dicc_args["--batch"] = datos.get("batch", DEFAULT_BATCH)
+        dicc_args["--tamanio-bloque"] = datos.get("tamanio-bloque", DEFAULT_BATCH)
         dicc_args["--excluir"] = datos.get("excluir", [])
 
         return cls._parsear_cli(argumentos, dicc_args)
