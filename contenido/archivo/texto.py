@@ -5,9 +5,6 @@ from dataclasses import dataclass
 
 from .arbol import Arbol
 from .nodos import Nodo
-from contenido.serializacion import Ser
-
-NOMBRE_PROTOCOLO = "MCQv01"
 
 INICIO_SECCION = "_inicio_"
 FINAL_SECCION = "_final_"
@@ -37,37 +34,9 @@ class Texto:
         return self.nodo.id()
 
     def bjson(self) -> bytes:
-        reducido = None if self.nodo is None else self.nodo.reducir_exaustivo()
-        if reducido is None:
-            return Ser.pack(
-                Ser.comb(Ser.Bytes, Ser.Uint64, Ser.Uint64),
-                NOMBRE_PROTOCOLO.encode('ascii'), 0, 0, 
-            )
-
-        texto_acumulado = ""
-        largo_actual = 0
-
-        def guardar(texto: str) -> Tuple[int, int]:
-            nonlocal texto_acumulado, largo_actual
-
-            texto = texto.strip()
-            largo_texto = len(texto) 
-
-            resultado = ( largo_actual, largo_actual + largo_texto )
-            texto_acumulado = f"{texto_acumulado}{texto}"
-
-            largo_actual += largo_texto
-            return resultado
-
-
-        resultado_bytes = reducido.serializar(guardar)
-        resultado_texto = bytes(texto_acumulado, "utf-8")
-
-        return Ser.pack(
-            Ser.comb(Ser.Bytes, Ser.Uint64, Ser.Uint64, Ser.Bytes, Ser.Bytes),
-            NOMBRE_PROTOCOLO.encode('ascii'), len(resultado_bytes), len(resultado_texto), 
-            resultado_bytes, resultado_texto,
-        )
+        if self.nodo is None:
+            return Arbol.serializar_nulo()
+        return Arbol.serializar(self.nodo)
 
     def string(self) -> str:
         return "" if self.nodo is None else self.nodo.string()

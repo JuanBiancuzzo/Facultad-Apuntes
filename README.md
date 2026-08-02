@@ -569,6 +569,16 @@ Se tiene los terminales que se deben entender como:
 
 Como comentario, el alto y ancho de la imagen, no seria en pixeles sino que seria en funcion del tamaño de un caracter, lo que se conoce como `em` en css. Esta decision es porque esta pensado este diseño para GUI's como para TUI's por lo que necesitamos una manera que afecte de la misma manera a ambos
 
-### Serializacion
+### Serialización
 ---
+En esta sección detallaré como se serializaría esta estructura, donde permitir optimizaciones decidí tener un punto de inicio el cual separa la estructura del texto como cadena de caracteres. Por lo que inicialmente siempre se puede leer la siguiente estructura
+
+```
+  0      6       14       22     n-estructura         n-string
+  +------+--------+--------+----------------+----------------+
+  |MCQv01| largo  | largo  | bytes          | bytes          |
+  +------+--------+--------+----------------+----------------+
+```
+
+Donde de bit 6 a 14, es el largo de los bytes para las estructuras, y de bit 14 a 22, es el largo de los bytes para el string en si mismo. Actualmente esto no da nada de información a la estructura debajo, pero es la forma general de empezar a leer
 
