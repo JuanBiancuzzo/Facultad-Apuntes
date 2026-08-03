@@ -41,11 +41,22 @@ var ConfirmModal = class extends import_obsidian.Modal {
     this.message = message;
     this.result = false;
     this.isOpen = false;
+    this.resolvePromise = null;
     this.options = {
       confirmText: (options == null ? void 0 : options.confirmText) || "OK",
       confirmClass: (options == null ? void 0 : options.confirmClass) || "mod-cta",
       cancelText: (options == null ? void 0 : options.cancelText) || "Cancel"
     };
+  }
+  /**
+   * Opens the modal and returns a Promise that resolves with the user's choice
+   * Replaces the spin-wait polling pattern
+   */
+  openAndConfirm() {
+    return new Promise((resolve) => {
+      this.resolvePromise = resolve;
+      this.open();
+    });
   }
   onOpen() {
     this.isOpen = true;
@@ -72,6 +83,10 @@ var ConfirmModal = class extends import_obsidian.Modal {
   onClose() {
     this.isOpen = false;
     this.contentEl.empty();
+    if (this.resolvePromise) {
+      this.resolvePromise(this.result);
+      this.resolvePromise = null;
+    }
   }
 };
 
@@ -81,9 +96,10 @@ var import_obsidian3 = require("obsidian");
 // src/utils/constants.ts
 var CONTEXT_BEFORE_MATCH = 10;
 var CONTEXT_AFTER_MATCH = 50;
+var REPLACE_PREVIEW_DEBOUNCE_DELAY = 150;
 var FOCUS_DELAY = 100;
-var MODAL_POLL_INTERVAL = 50;
 var FILTER_UPDATE_DEBOUNCE_DELAY = 500;
+var MAX_FILE_GROUP_STATES = 500;
 
 // src/utils/helpers.ts
 function sleep(ms) {
@@ -112,6 +128,10 @@ var DEFAULT_SETTINGS = {
   searchHistory: [],
   // Start with empty history
   replaceHistory: [],
+  // Start with empty history
+  includeHistory: [],
+  // Start with empty history
+  excludeHistory: [],
   // Start with empty history
   maxHistorySize: 50,
   // Default to 50 entries
@@ -260,6 +280,24 @@ var Logger = class _Logger {
   }
 };
 
+// src/utils/replacement.ts
+function expandReplacement(template, match) {
+  var _a, _b;
+  const input = (_a = match.input) != null ? _a : "";
+  const offset = (_b = match.index) != null ? _b : 0;
+  let result = template.replace(/\$(\$|&|`|'|\d{1,2})/g, (_, token) => {
+    var _a2;
+    if (token === "$") return "$";
+    if (token === "&") return match[0];
+    if (token === "`") return input.slice(0, offset);
+    if (token === "'") return input.slice(offset + match[0].length);
+    const groupNum = parseInt(token, 10);
+    return (_a2 = match[groupNum]) != null ? _a2 : "";
+  });
+  result = result.replace(/\\n/g, "\n").replace(/\\t/g, "	");
+  return result;
+}
+
 // src/modals/helpModal.ts
 var HelpModal = class extends import_obsidian3.Modal {
   constructor(app, plugin) {
@@ -271,6 +309,7 @@ var HelpModal = class extends import_obsidian3.Modal {
     const { contentEl } = this;
     contentEl.empty();
     contentEl.addClass("find-replace-help-modal");
+    this.modalEl.addClass("find-replace-help-modal-container");
     new import_obsidian3.Setting(contentEl).setName("Find-n-Replace - Keyboard shortcuts").setHeading();
     const subtitleDiv = contentEl.createDiv("help-subtitle");
     subtitleDiv.createEl("p", {
@@ -385,6 +424,20 @@ var HelpModal = class extends import_obsidian3.Modal {
         recommendedHotkey: "<kbd>Ctrl/Cmd</kbd>+<kbd>K</kbd>",
         description: "Clears inputs and resets toggles",
         category: "Utility"
+      },
+      {
+        id: "open-help",
+        name: "Open help",
+        recommendedHotkey: "<kbd>?</kbd>",
+        description: "Opens this help dialog",
+        category: "Utility"
+      },
+      {
+        id: "toggle-word-wrap",
+        name: "Toggle word-wrap",
+        recommendedHotkey: "<kbd>Ctrl/Cmd</kbd>+<kbd>Alt</kbd>+<kbd>Z</kbd>",
+        description: "Wraps long result lines",
+        category: "View"
       }
     ];
     return commands.map((cmd) => ({
@@ -521,6 +574,11 @@ var HelpModal = class extends import_obsidian3.Modal {
   renderFileFilteringGuide(container) {
     const filterGuideDiv = container.createDiv("help-file-filtering");
     new import_obsidian3.Setting(filterGuideDiv).setName("File filtering guide").setHeading();
+    const defaultP = filterGuideDiv.createEl("p");
+    defaultP.insertAdjacentText("beforeend", "By default, Find-n-Replace searches ");
+    const allTypesStrong = defaultP.createEl("strong");
+    allTypesStrong.insertAdjacentText("beforeend", "all text file types");
+    defaultP.insertAdjacentText("beforeend", " (.md, .txt, .html, .json, .js, .css, etc.). Non-markdown files show a colored extension badge in results for easy identification.");
     const introP = filterGuideDiv.createEl("p");
     introP.insertAdjacentText("beforeend", "Use the ");
     const filterBtnStrong = introP.createEl("strong");
@@ -533,7 +591,7 @@ var HelpModal = class extends import_obsidian3.Modal {
     introP.insertAdjacentText("beforeend", " and ");
     const excludeStrong = introP.createEl("strong");
     excludeStrong.insertAdjacentText("beforeend", '"files to exclude"');
-    introP.insertAdjacentText("beforeend", " inputs. This helps you search only the files you need, improving performance on large vaults.");
+    introP.insertAdjacentText("beforeend", " inputs. Use these to narrow your search to specific files or folders.");
     const patternTypesDiv = filterGuideDiv.createDiv("filter-pattern-types");
     patternTypesDiv.createEl("h4", { text: "Pattern types" });
     const patternList = patternTypesDiv.createEl("ul");
@@ -564,14 +622,14 @@ var HelpModal = class extends import_obsidian3.Modal {
       li.insertAdjacentText("beforeend", ` - ${description}`);
     });
     const includeDiv = filterGuideDiv.createDiv("filter-include-section");
-    includeDiv.createEl("h4", { text: "files to include (search only these files)" });
+    includeDiv.createEl("h4", { text: "files to include (narrow search to these files)" });
     const includeExamples = includeDiv.createEl("ul");
     const includeItems = [
-      "`.md` - Only markdown files",
-      "`.md,.txt` - Markdown and text files only",
+      "`.md` - Only markdown files (exclude other text types)",
       "`Notes/,Daily/` - Only files in Notes and Daily folders",
-      "`*.js` - Only JavaScript files (using glob pattern)",
-      "`Notes/*.md` - Only markdown files in the Notes folder"
+      "`*.html` - Only HTML files (e.g., web clippings)",
+      "`Notes/*.md` - Only markdown files in the Notes folder",
+      "`_SS/` - Only files in a specific folder"
     ];
     includeItems.forEach((item) => {
       const li = includeExamples.createEl("li");
@@ -596,11 +654,11 @@ var HelpModal = class extends import_obsidian3.Modal {
     examplesDiv.createEl("h4", { text: "Common use cases" });
     const examplesList = examplesDiv.createEl("ul");
     const examples = [
-      "<strong>Search only active notes:</strong> Include: <code>.md</code>, Exclude: <code>Archive/,Templates/</code>",
-      "<strong>Search specific project:</strong> Include: <code>Projects/MyProject/</code>",
-      "<strong>Skip all temporary files:</strong> Exclude: <code>*.tmp,*backup*,.trash/</code>",
-      "<strong>Search code files:</strong> Include: <code>.js,.ts,.css,.html</code>",
-      "<strong>Large vault optimization:</strong> Include: <code>Notes/,Daily/</code>, Exclude: <code>Archive/,*.pdf</code>"
+      "<strong>Markdown only:</strong> Include: <code>.md</code> (ignores .html, .json, etc.)",
+      "<strong>Search specific folder:</strong> Include: <code>Projects/MyProject/</code>",
+      "<strong>Skip temporary files:</strong> Exclude: <code>*.tmp,*backup*,.trash/</code>",
+      "<strong>Web clippings only:</strong> Include: <code>.html</code>",
+      "<strong>Large vault optimization:</strong> Include: <code>Notes/</code>, Exclude: <code>Archive/</code>"
     ];
     examples.forEach((example) => {
       const li = examplesList.createEl("li");
@@ -700,8 +758,7 @@ var HelpModal = class extends import_obsidian3.Modal {
 
 // src/core/searchEngine.ts
 var import_obsidian4 = require("obsidian");
-var SearchEngine = class {
-  // Track files that failed during search
+var _SearchEngine = class _SearchEngine {
   constructor(app, plugin) {
     this.lastCompiledRegex = null;
     this.lastSearchOptions = "";
@@ -755,6 +812,15 @@ var SearchEngine = class {
           (ext) => ext === extension || ext === "." + extension
         );
         this.logger.trace(`File ${file.path}: extension ${extension}, included: ${included}`);
+        return included;
+      });
+    } else {
+      filteredFiles = filteredFiles.filter((file) => {
+        if (!(file instanceof import_obsidian4.TFile)) return false;
+        const included = _SearchEngine.TEXT_EXTENSIONS.has(file.extension.toLowerCase());
+        if (!included) {
+          this.logger.trace(`File ${file.path}: extension ${file.extension} not in text list, skipping`);
+        }
         return included;
       });
     }
@@ -837,9 +903,10 @@ var SearchEngine = class {
    * @param query - The search query string
    * @param options - Search configuration options
    * @param sessionFilters - Optional session-only filters (overrides plugin settings)
+   * @param signal - Optional AbortSignal to cancel search early
    * @returns Promise resolving to array of search results
    */
-  async performSearch(query, options, sessionFilters) {
+  async performSearch(query, options, sessionFilters, signal) {
     const trimmedQuery = query.trim();
     this.logger.debug("performSearch called:", { query: trimmedQuery, options });
     this.failedFiles = [];
@@ -854,11 +921,9 @@ var SearchEngine = class {
       }
     }
     const results = [];
-    const hasSessionFilters = sessionFilters && (sessionFilters.fileExtensions && sessionFilters.fileExtensions.length > 0 || sessionFilters.searchInFolders && sessionFilters.searchInFolders.length > 0 || sessionFilters.includePatterns && sessionFilters.includePatterns.length > 0 || sessionFilters.excludeFolders && sessionFilters.excludeFolders.length > 0 || sessionFilters.excludePatterns && sessionFilters.excludePatterns.length > 0);
-    const shouldUseAllFiles = hasSessionFilters || !sessionFilters;
-    const allFiles = shouldUseAllFiles ? this.app.vault.getAllLoadedFiles() : this.app.vault.getMarkdownFiles();
+    const allFiles = this.app.vault.getAllLoadedFiles();
     const files = this.filterFiles(allFiles, sessionFilters);
-    this.logger.debug("Found", files.length, shouldUseAllFiles ? "files" : "markdown files", "to search");
+    this.logger.debug("Found", files.length, "files to search");
     let regex = null;
     if (options.useRegex || options.wholeWord) {
       regex = this.buildSearchRegex(query, options);
@@ -867,11 +932,16 @@ var SearchEngine = class {
     const BATCH_SIZE = 10;
     const YIELD_DELAY = 0;
     for (let batchStart = 0; batchStart < files.length; batchStart += BATCH_SIZE) {
+      if (signal == null ? void 0 : signal.aborted) {
+        this.logger.debug("Search aborted by signal, stopping early");
+        break;
+      }
       const batch = files.slice(batchStart, batchStart + BATCH_SIZE);
       await Promise.all(batch.map(async (file) => {
         var _a, _b, _c;
         try {
           const content = await this.app.vault.read(file);
+          const lines = content.split("\n");
           if (options.multiline === true && options.useRegex && regex) {
             for (const m of Array.from(content.matchAll(regex))) {
               if (!m[0]) continue;
@@ -879,8 +949,7 @@ var SearchEngine = class {
               const lineNumber = beforeMatch.split("\n").length - 1;
               const lineStartPos = beforeMatch.lastIndexOf("\n") + 1;
               const colInLine = ((_b = m.index) != null ? _b : 0) - lineStartPos;
-              const lines2 = content.split("\n");
-              const lineContent = lines2[lineNumber] || "";
+              const lineContent = lines[lineNumber] || "";
               results.push({
                 file,
                 line: lineNumber,
@@ -892,7 +961,6 @@ var SearchEngine = class {
             }
             return;
           }
-          const lines = content.split("\n");
           const isDotRegex = options.useRegex && regex && (regex.source === "." || regex.source === ".*");
           if (isDotRegex) {
             for (let i = 0; i < lines.length; i++) {
@@ -1006,6 +1074,7 @@ var SearchEngine = class {
     const searchQuery = options.matchCase ? trimmedQuery : trimmedQuery.toLowerCase();
     try {
       const content = await this.app.vault.read(file);
+      const lines = content.split("\n");
       if (options.multiline === true && options.useRegex && regex) {
         for (const m of Array.from(content.matchAll(regex))) {
           if (!m[0]) continue;
@@ -1013,8 +1082,7 @@ var SearchEngine = class {
           const lineNumber = beforeMatch.split("\n").length - 1;
           const lineStartPos = beforeMatch.lastIndexOf("\n") + 1;
           const colInLine = ((_b = m.index) != null ? _b : 0) - lineStartPos;
-          const lines2 = content.split("\n");
-          const lineContent = lines2[lineNumber] || "";
+          const lineContent = lines[lineNumber] || "";
           results.push({
             file,
             line: lineNumber,
@@ -1026,7 +1094,6 @@ var SearchEngine = class {
         }
         return results;
       }
-      const lines = content.split("\n");
       const isDotRegex = options.useRegex && regex && (regex.source === "." || regex.source === ".*");
       if (isDotRegex) {
         for (let i = 0; i < lines.length; i++) {
@@ -1105,6 +1172,7 @@ var SearchEngine = class {
     const cacheKey = JSON.stringify({ query, options });
     if (this.lastSearchOptions === cacheKey && this.lastCompiledRegex) {
       this.logger.debug("Using cached regex for:", cacheKey);
+      this.lastCompiledRegex.lastIndex = 0;
       return this.lastCompiledRegex;
     }
     this.logger.debug("Building new regex for:", cacheKey);
@@ -1159,6 +1227,65 @@ var SearchEngine = class {
     this.clearCache();
   }
 };
+// Track files that failed during search
+// Default text file extensions to search (excludes binary files like images, PDFs, etc.)
+_SearchEngine.TEXT_EXTENSIONS = /* @__PURE__ */ new Set([
+  "md",
+  "txt",
+  "js",
+  "ts",
+  "jsx",
+  "tsx",
+  "css",
+  "scss",
+  "sass",
+  "less",
+  "json",
+  "yaml",
+  "yml",
+  "xml",
+  "html",
+  "htm",
+  "csv",
+  "svg",
+  "py",
+  "rb",
+  "java",
+  "c",
+  "cpp",
+  "h",
+  "hpp",
+  "cs",
+  "go",
+  "rs",
+  "swift",
+  "sh",
+  "bash",
+  "zsh",
+  "ps1",
+  "bat",
+  "cmd",
+  "sql",
+  "graphql",
+  "gql",
+  "ini",
+  "conf",
+  "config",
+  "env",
+  "properties",
+  "log",
+  "markdown",
+  "mdown",
+  "mkd",
+  "mdx",
+  "tex",
+  "bib",
+  "org",
+  "rst",
+  "adoc",
+  "asciidoc"
+]);
+var SearchEngine = _SearchEngine;
 
 // src/core/replacementEngine.ts
 var import_obsidian5 = require("obsidian");
@@ -1189,6 +1316,10 @@ var ReplacementEngine = class {
     const modifiedLines = /* @__PURE__ */ new Map();
     switch (mode) {
       case "one": {
+        if (!target || typeof target !== "object" || !("file" in target) || !("line" in target) || !("matchText" in target)) {
+          this.logger.error("Invalid target for single replacement - not a SearchResult", target);
+          break;
+        }
         const res = target;
         grouped.set(res.file, [res]);
         const resultIndex = results.findIndex(
@@ -1204,6 +1335,10 @@ var ReplacementEngine = class {
       }
       case "selected": {
         for (const idx of Array.from(selectedIndices)) {
+          if (idx < 0 || idx >= results.length) {
+            this.logger.warn(`Invalid selection index ${idx} (results length: ${results.length}), skipping`);
+            continue;
+          }
           const res = results[idx];
           if (!grouped.has(res.file)) grouped.set(res.file, []);
           grouped.get(res.file).push(res);
@@ -1294,124 +1429,145 @@ var ReplacementEngine = class {
    * @param replaceAllInFile - If true, replaces all matches in file; if false, only specified matches
    */
   async applyReplacements(file, matches, replaceText, searchOptions, replaceAllInFile = false) {
-    var _a, _b, _c;
     try {
-      let content = await this.app.vault.read(file);
-      const regex = this.searchEngine.buildSearchRegex(((_a = matches[0]) == null ? void 0 : _a.pattern) || "", searchOptions);
-      if (searchOptions.multiline === true && searchOptions.useRegex) {
-        if (replaceAllInFile) {
-          content = content.replace(regex, (match, ...rest) => {
-            const offset = rest[rest.length - 2];
-            const input = rest[rest.length - 1];
-            const groups = rest.slice(0, -2);
-            const execArray = [match, ...groups];
-            execArray.index = offset;
-            execArray.input = input;
-            return this.expandReplacement(execArray, replaceText, input, searchOptions);
-          });
-        } else {
-          const sortedMatches = [...matches].sort((a, b) => {
-            const aPos = this.getCharacterPosition(content, a.line, a.col || 0);
-            const bPos = this.getCharacterPosition(content, b.line, b.col || 0);
-            return bPos - aPos;
-          });
-          for (const match of sortedMatches) {
-            const charPos = this.getCharacterPosition(content, match.line, match.col || 0);
-            regex.lastIndex = 0;
-            let regexMatch;
-            while ((regexMatch = regex.exec(content)) !== null) {
-              if (regexMatch.index === charPos && regexMatch[0] === match.matchText) {
-                const replacement = this.expandReplacement(regexMatch, replaceText, content, searchOptions);
-                content = content.slice(0, regexMatch.index) + replacement + content.slice(regexMatch.index + regexMatch[0].length);
-                break;
-              }
-              if (regexMatch[0].length === 0) {
-                regex.lastIndex++;
-                if (regex.lastIndex >= content.length) break;
-              }
-            }
-          }
-        }
-        await this.app.vault.modify(file, content);
-        return;
-      }
-      const lines = content.split("\n");
-      if (replaceAllInFile) {
-        const uniqueLines = Array.from(new Set(matches.map((m) => m.line)));
-        for (const lineNum of uniqueLines) {
-          const lineText = (_b = lines[lineNum]) != null ? _b : "";
-          lines[lineNum] = lineText.replace(regex, (match, ...rest) => {
-            const offset = rest[rest.length - 2];
-            const input = rest[rest.length - 1];
-            const groups = rest.slice(0, -2);
-            const execArray = [match, ...groups];
-            execArray.index = offset;
-            execArray.input = input;
-            return this.expandReplacement(execArray, replaceText, input, searchOptions);
-          });
-        }
-      } else {
-        matches.sort(
-          (a, b) => a.line === b.line ? (b.col || 0) - (a.col || 0) : b.line - a.line
-        );
-        for (const res of matches) {
-          const lineText = (_c = lines[res.line]) != null ? _c : "";
-          let matchArr;
-          regex.lastIndex = 0;
-          const startTime = Date.now();
-          const REGEX_TIMEOUT_MS = 5e3;
-          let foundMatch = false;
-          while ((matchArr = regex.exec(lineText)) !== null) {
-            if (Date.now() - startTime > REGEX_TIMEOUT_MS) {
-              const userMessage = `Regex pattern timed out in file "${file.path}". Try simplifying your search pattern.`;
-              this.logger.error(userMessage, void 0, true);
-              throw new Error(`Regex execution timeout after ${REGEX_TIMEOUT_MS}ms. Pattern may be too complex or unsafe.`);
-            }
-            if (matchArr.index === res.col) {
-              const replacement = this.expandReplacement(matchArr, replaceText, lineText, searchOptions);
-              lines[res.line] = lineText.slice(0, matchArr.index) + replacement + lineText.slice(matchArr.index + matchArr[0].length);
-              foundMatch = true;
-              break;
-            }
-            if (matchArr[0].length === 0) {
-              regex.lastIndex++;
-              if (regex.lastIndex >= lineText.length) {
-                break;
-              }
-            }
-          }
-          if (!foundMatch) {
-            this.logger.warn(`Could not find match at expected position - line ${res.line}, col ${res.col}, text: "${res.matchText}"`);
-          }
-        }
-      }
-      await this.app.vault.modify(file, lines.join("\n"));
+      await this.app.vault.process(file, (content) => {
+        return this.transformContent(content, matches, replaceText, searchOptions, replaceAllInFile, file.path);
+      });
     } catch (error) {
       this.logger.error(`Failed to replace content in file ${file.path}:`, error);
       throw new Error(`Replacement failed for file "${file.path}": ${error instanceof Error ? error.message : "Unknown error"}`);
     }
   }
   /**
+   * Pure transformation function for file content replacement
+   * @param content - Original file content
+   * @param matches - Array of SearchResult objects to replace
+   * @param replaceText - The replacement text
+   * @param searchOptions - Current search options
+   * @param replaceAllInFile - If true, replaces all matches; if false, only specified matches
+   * @param filePath - File path for logging
+   * @returns Modified content
+   */
+  transformContent(content, matches, replaceText, searchOptions, replaceAllInFile, filePath) {
+    var _a;
+    const regex = this.searchEngine.buildSearchRegex(((_a = matches[0]) == null ? void 0 : _a.pattern) || "", searchOptions);
+    if (searchOptions.multiline === true && searchOptions.useRegex) {
+      return this.transformMultilineContent(content, matches, replaceText, searchOptions, replaceAllInFile, regex);
+    }
+    const lines = content.split("\n");
+    if (replaceAllInFile) {
+      this.replaceAllInLines(lines, matches, replaceText, searchOptions, regex);
+    } else {
+      this.replaceSpecificMatches(lines, matches, replaceText, searchOptions, regex, filePath);
+    }
+    return lines.join("\n");
+  }
+  /**
+   * Handles multiline content transformation
+   */
+  transformMultilineContent(content, matches, replaceText, searchOptions, replaceAllInFile, regex) {
+    if (replaceAllInFile) {
+      return content.replace(regex, (match, ...rest) => {
+        const offset = rest[rest.length - 2];
+        const input = rest[rest.length - 1];
+        const groups = rest.slice(0, -2);
+        const execArray = [match, ...groups];
+        execArray.index = offset;
+        execArray.input = input;
+        return this.expandReplacement(execArray, replaceText, input, searchOptions);
+      });
+    }
+    const sortedMatches = [...matches].sort((a, b) => {
+      const aPos = this.getCharacterPosition(content, a.line, a.col || 0);
+      const bPos = this.getCharacterPosition(content, b.line, b.col || 0);
+      return bPos - aPos;
+    });
+    let result = content;
+    for (const match of sortedMatches) {
+      const charPos = this.getCharacterPosition(result, match.line, match.col || 0);
+      regex.lastIndex = 0;
+      let regexMatch;
+      while ((regexMatch = regex.exec(result)) !== null) {
+        if (regexMatch.index === charPos && regexMatch[0] === match.matchText) {
+          const replacement = this.expandReplacement(regexMatch, replaceText, result, searchOptions);
+          result = result.slice(0, regexMatch.index) + replacement + result.slice(regexMatch.index + regexMatch[0].length);
+          break;
+        }
+        if (regexMatch[0].length === 0) {
+          regex.lastIndex++;
+          if (regex.lastIndex >= result.length) break;
+        }
+      }
+    }
+    return result;
+  }
+  /**
+   * Replaces all matches in the specified lines
+   */
+  replaceAllInLines(lines, matches, replaceText, searchOptions, regex) {
+    var _a;
+    const uniqueLines = Array.from(new Set(matches.map((m) => m.line)));
+    for (const lineNum of uniqueLines) {
+      const lineText = (_a = lines[lineNum]) != null ? _a : "";
+      lines[lineNum] = lineText.replace(regex, (match, ...rest) => {
+        const offset = rest[rest.length - 2];
+        const input = rest[rest.length - 1];
+        const groups = rest.slice(0, -2);
+        const execArray = [match, ...groups];
+        execArray.index = offset;
+        execArray.input = input;
+        return this.expandReplacement(execArray, replaceText, input, searchOptions);
+      });
+    }
+  }
+  /**
+   * Replaces only specific matches at exact positions
+   */
+  replaceSpecificMatches(lines, matches, replaceText, searchOptions, regex, filePath) {
+    var _a;
+    matches.sort(
+      (a, b) => a.line === b.line ? (b.col || 0) - (a.col || 0) : b.line - a.line
+    );
+    for (const res of matches) {
+      const lineText = (_a = lines[res.line]) != null ? _a : "";
+      let matchArr;
+      regex.lastIndex = 0;
+      const startTime = Date.now();
+      const REGEX_TIMEOUT_MS = 5e3;
+      let foundMatch = false;
+      while ((matchArr = regex.exec(lineText)) !== null) {
+        if (Date.now() - startTime > REGEX_TIMEOUT_MS) {
+          this.logger.error(`Regex pattern timed out in file "${filePath}". Try simplifying your search pattern.`, void 0, true);
+          throw new Error(`Regex execution timeout after ${REGEX_TIMEOUT_MS}ms. Pattern may be too complex or unsafe.`);
+        }
+        if (matchArr.index === res.col && matchArr[0] === res.matchText) {
+          const replacement = this.expandReplacement(matchArr, replaceText, lineText, searchOptions);
+          lines[res.line] = lineText.slice(0, matchArr.index) + replacement + lineText.slice(matchArr.index + matchArr[0].length);
+          foundMatch = true;
+          break;
+        }
+        if (matchArr[0].length === 0) {
+          regex.lastIndex++;
+          if (regex.lastIndex >= lineText.length) break;
+        }
+      }
+      if (!foundMatch) {
+        this.logger.warn(`Could not find match at expected position - line ${res.line}, col ${res.col}, text: "${res.matchText}"`);
+      }
+    }
+  }
+  /**
    * Expands replacement text with special tokens like $1, $&, etc.
-   * Handles regex capture groups and special replacement sequences
+   * Delegates to shared expandReplacement utility for consistency with preview
    * @param matchArr - The RegExp match result with capture groups
    * @param replacement - The replacement text template
-   * @param input - The original input string
+   * @param _input - The original input string (unused, match.input is used instead)
    * @param searchOptions - Current search options
    * @returns The final replacement string
    */
-  expandReplacement(matchArr, replacement, input, searchOptions) {
-    var _a, _b, _c;
+  expandReplacement(matchArr, replacement, _input, searchOptions) {
     if (!searchOptions.useRegex) return replacement;
-    const offset = (_a = matchArr.index) != null ? _a : 0;
-    let out = replacement;
-    out = out.replace(/\$(\d+)/g, (_, n) => {
-      var _a2;
-      return (_a2 = matchArr[Number(n)]) != null ? _a2 : "";
-    });
-    out = out.replace(/\$\$/g, "$").replace(/\$&/g, matchArr[0]).replace(/\$`/g, input.slice(0, offset)).replace(/\$'/g, input.slice(offset + ((_c = (_b = matchArr[0]) == null ? void 0 : _b.length) != null ? _c : 0)));
-    out = out.replace(/\\n/g, "\n").replace(/\\t/g, "	");
-    return out;
+    return expandReplacement(replacement, matchArr);
   }
   /**
    * Shows appropriate notification after replacement operation
@@ -1626,6 +1782,7 @@ var FileOperations = class {
 };
 
 // src/core/historyManager.ts
+var ALL_HISTORY_KEYS = ["searchHistory", "replaceHistory", "includeHistory", "excludeHistory"];
 var HistoryManager = class {
   constructor(plugin) {
     this.plugin = plugin;
@@ -1644,108 +1801,156 @@ var HistoryManager = class {
     return this.plugin.settings.enableSearchHistory !== false;
   }
   /**
-   * Adds a search pattern to history
+   * Adds a pattern to the given history array
    * Implements LRU: moves existing entry to front, deduplicates consecutive entries
-   * @param pattern - The search pattern to add
+   * @param key - Which history array to add to
+   * @param pattern - The pattern to add
+   * @param trim - Whether to trim the pattern and skip blank values
+   *               (false preserves whitespace and allows empty strings, e.g. replace text)
    */
-  addSearch(pattern) {
-    if (!this.isHistoryEnabled()) {
-      this.logger.debug("History is disabled, skipping save");
-      return;
-    }
-    if (!pattern || pattern.trim() === "") {
-      this.logger.debug("Skipping empty search pattern");
-      return;
-    }
-    const trimmed = pattern.trim();
-    const history = this.plugin.settings.searchHistory;
-    if (history.length > 0 && history[0] === trimmed) {
-      this.logger.debug("Skipping duplicate search pattern:", trimmed);
-      return;
-    }
-    const existingIndex = history.indexOf(trimmed);
-    if (existingIndex > 0) {
-      history.splice(existingIndex, 1);
-      this.logger.debug("Moved existing search pattern to front:", trimmed);
-    }
-    history.unshift(trimmed);
-    const maxSize = this.getMaxSize();
-    if (history.length > maxSize) {
-      const removed = history.splice(maxSize);
-      this.logger.debug(`Trimmed search history: removed ${removed.length} old entries`);
-    }
-    void this.plugin.saveSettings();
-    this.logger.debug("Added search to history:", trimmed, `(total: ${history.length})`);
-  }
-  /**
-   * Adds a replace pattern to history
-   * Implements LRU: moves existing entry to front, deduplicates consecutive entries
-   * @param pattern - The replace pattern to add
-   */
-  addReplace(pattern) {
+  addEntry(key, pattern, trim) {
     if (!this.isHistoryEnabled()) {
       this.logger.debug("History is disabled, skipping save");
       return;
     }
     if (pattern === null || pattern === void 0) {
-      this.logger.debug("Skipping null/undefined replace pattern");
+      this.logger.debug(`Skipping null/undefined ${key} pattern`);
       return;
     }
-    const history = this.plugin.settings.replaceHistory;
+    if (trim) {
+      if (pattern.trim() === "") {
+        this.logger.debug(`Skipping empty ${key} pattern`);
+        return;
+      }
+      pattern = pattern.trim();
+    }
+    const history = this.plugin.settings[key];
     if (history.length > 0 && history[0] === pattern) {
-      this.logger.debug("Skipping duplicate replace pattern:", pattern);
+      this.logger.debug(`Skipping duplicate ${key} pattern:`, pattern);
       return;
     }
     const existingIndex = history.indexOf(pattern);
     if (existingIndex > 0) {
       history.splice(existingIndex, 1);
-      this.logger.debug("Moved existing replace pattern to front:", pattern);
+      this.logger.debug(`Moved existing ${key} pattern to front:`, pattern);
     }
     history.unshift(pattern);
     const maxSize = this.getMaxSize();
     if (history.length > maxSize) {
       const removed = history.splice(maxSize);
-      this.logger.debug(`Trimmed replace history: removed ${removed.length} old entries`);
+      this.logger.debug(`Trimmed ${key}: removed ${removed.length} old entries`);
     }
     void this.plugin.saveSettings();
-    this.logger.debug("Added replace to history:", pattern, `(total: ${history.length})`);
+    this.logger.debug(`Added ${key} entry:`, pattern, `(total: ${history.length})`);
+  }
+  /**
+   * Gets a copy of the given history array (newest first)
+   */
+  getEntries(key) {
+    return [...this.plugin.settings[key]];
+  }
+  /**
+   * Clears the given history array
+   */
+  clearEntries(key) {
+    this.plugin.settings[key] = [];
+    void this.plugin.saveSettings();
+    this.logger.info(`Cleared ${key}`);
+  }
+  /**
+   * Removes a specific entry from the given history array
+   */
+  removeEntry(key, pattern) {
+    const history = this.plugin.settings[key];
+    const index = history.indexOf(pattern);
+    if (index !== -1) {
+      history.splice(index, 1);
+      void this.plugin.saveSettings();
+      this.logger.debug(`Removed ${key} entry:`, pattern);
+    }
+  }
+  /**
+   * Adds a search pattern to history
+   * @param pattern - The search pattern to add
+   */
+  addSearch(pattern) {
+    this.addEntry("searchHistory", pattern, true);
+  }
+  /**
+   * Adds a replace pattern to history
+   * Empty strings are allowed (common use case: delete matches), whitespace is preserved
+   * @param pattern - The replace pattern to add
+   */
+  addReplace(pattern) {
+    this.addEntry("replaceHistory", pattern, false);
+  }
+  /**
+   * Adds a "files to include" filter pattern to history
+   * @param pattern - The include pattern to add
+   */
+  addInclude(pattern) {
+    this.addEntry("includeHistory", pattern, true);
+  }
+  /**
+   * Adds a "files to exclude" filter pattern to history
+   * @param pattern - The exclude pattern to add
+   */
+  addExclude(pattern) {
+    this.addEntry("excludeHistory", pattern, true);
   }
   /**
    * Gets the search history (newest first)
-   * @returns Array of search patterns
    */
   getSearchHistory() {
-    return [...this.plugin.settings.searchHistory];
+    return this.getEntries("searchHistory");
   }
   /**
    * Gets the replace history (newest first)
-   * @returns Array of replace patterns
    */
   getReplaceHistory() {
-    return [...this.plugin.settings.replaceHistory];
+    return this.getEntries("replaceHistory");
+  }
+  /**
+   * Gets the "files to include" history (newest first)
+   */
+  getIncludeHistory() {
+    return this.getEntries("includeHistory");
+  }
+  /**
+   * Gets the "files to exclude" history (newest first)
+   */
+  getExcludeHistory() {
+    return this.getEntries("excludeHistory");
   }
   /**
    * Clears all search history
    */
   clearSearchHistory() {
-    this.plugin.settings.searchHistory = [];
-    void this.plugin.saveSettings();
-    this.logger.info("Cleared search history");
+    this.clearEntries("searchHistory");
   }
   /**
    * Clears all replace history
    */
   clearReplaceHistory() {
-    this.plugin.settings.replaceHistory = [];
-    void this.plugin.saveSettings();
-    this.logger.info("Cleared replace history");
+    this.clearEntries("replaceHistory");
   }
   /**
-   * Clears all history (search and replace)
+   * Clears all "files to include" history
+   */
+  clearIncludeHistory() {
+    this.clearEntries("includeHistory");
+  }
+  /**
+   * Clears all "files to exclude" history
+   */
+  clearExcludeHistory() {
+    this.clearEntries("excludeHistory");
+  }
+  /**
+   * Clears all history (search, replace, include, exclude)
    */
   clearAllHistory() {
-    this.clearSearchHistory();
-    this.clearReplaceHistory();
+    ALL_HISTORY_KEYS.forEach((key) => this.clearEntries(key));
     this.logger.info("Cleared all history");
   }
   /**
@@ -1754,13 +1959,7 @@ var HistoryManager = class {
    * @param pattern - The pattern to remove
    */
   removeSearchEntry(pattern) {
-    const history = this.plugin.settings.searchHistory;
-    const index = history.indexOf(pattern);
-    if (index !== -1) {
-      history.splice(index, 1);
-      void this.plugin.saveSettings();
-      this.logger.debug("Removed search entry:", pattern);
-    }
+    this.removeEntry("searchHistory", pattern);
   }
   /**
    * Removes a specific entry from replace history
@@ -1768,13 +1967,7 @@ var HistoryManager = class {
    * @param pattern - The pattern to remove
    */
   removeReplaceEntry(pattern) {
-    const history = this.plugin.settings.replaceHistory;
-    const index = history.indexOf(pattern);
-    if (index !== -1) {
-      history.splice(index, 1);
-      void this.plugin.saveSettings();
-      this.logger.debug("Removed replace entry:", pattern);
-    }
+    this.removeEntry("replaceHistory", pattern);
   }
   /**
    * Trims history arrays to match current max size setting
@@ -1782,16 +1975,14 @@ var HistoryManager = class {
    */
   updateMaxSize() {
     const maxSize = this.getMaxSize();
-    if (this.plugin.settings.searchHistory.length > maxSize) {
-      const removed = this.plugin.settings.searchHistory.length - maxSize;
-      this.plugin.settings.searchHistory.splice(maxSize);
-      this.logger.info(`Trimmed search history to ${maxSize} entries (removed ${removed})`);
-    }
-    if (this.plugin.settings.replaceHistory.length > maxSize) {
-      const removed = this.plugin.settings.replaceHistory.length - maxSize;
-      this.plugin.settings.replaceHistory.splice(maxSize);
-      this.logger.info(`Trimmed replace history to ${maxSize} entries (removed ${removed})`);
-    }
+    ALL_HISTORY_KEYS.forEach((key) => {
+      const history = this.plugin.settings[key];
+      if (history.length > maxSize) {
+        const removed = history.length - maxSize;
+        history.splice(maxSize);
+        this.logger.info(`Trimmed ${key} to ${maxSize} entries (removed ${removed})`);
+      }
+    });
     void this.plugin.saveSettings();
   }
 };
@@ -1799,7 +1990,6 @@ var HistoryManager = class {
 // src/ui/components/renderer.ts
 var import_obsidian7 = require("obsidian");
 var UIRenderer = class {
-  // Session-only state (not persisted)
   constructor(elements, searchEngine, plugin) {
     this.isCollapsed = true;
     this.sessionFileGroupStates = {};
@@ -1807,6 +1997,13 @@ var UIRenderer = class {
     this.searchEngine = searchEngine;
     this.plugin = plugin;
     this.logger = Logger.create(plugin, "UIRenderer");
+  }
+  /**
+   * Sets the callback for toggling file selection via Ctrl/Cmd+Click on file header
+   * @param callback - Function to call with (startIndex, count) when file header is Ctrl/Cmd+clicked
+   */
+  setToggleFileSelectionCallback(callback) {
+    this.onToggleFileSelection = callback;
   }
   /**
    * Renders all search results in the UI
@@ -1846,12 +2043,8 @@ var UIRenderer = class {
    * - Ellipsis menu enabled/disabled based on results
    */
   renderResults(results, replaceText, searchOptions, totalResults, isLimited) {
-    var _a;
     this.elements.resultsContainer.empty();
     const lineElements = [];
-    (_a = this.elements.resultsContainer) == null ? void 0 : _a.querySelectorAll(".file-group").forEach((group) => {
-      group.classList.add("collapsed");
-    });
     const resultsByFile = {};
     results.forEach((r) => {
       const path = r.file.path;
@@ -1875,7 +2068,8 @@ var UIRenderer = class {
       if (isFileCollapsed) {
         fileDiv.addClass("collapsed");
       }
-      this.createFileGroupHeader(fileDiv, filePath, fileResults, tabIndex);
+      const fileStartIndex = globalIndex;
+      this.createFileGroupHeader(fileDiv, filePath, fileResults, tabIndex, fileStartIndex);
       tabIndex += 2;
       fileResults.forEach((res) => {
         const lineDiv = this.createResultLine(fileDiv, res, replaceText, globalIndex, searchOptions, tabIndex);
@@ -1894,21 +2088,32 @@ var UIRenderer = class {
    * @param fileDiv - Container element for the file group
    * @param filePath - Path of the file
    * @param fileResults - Results for this file
+   * @param tabIndex - Tab index for keyboard navigation
+   * @param fileStartIndex - Global index of first result in this file (for selection)
    */
-  createFileGroupHeader(fileDiv, filePath, fileResults, tabIndex) {
+  createFileGroupHeader(fileDiv, filePath, fileResults, tabIndex, fileStartIndex) {
     const header = fileDiv.createDiv("file-group-header");
     header.setAttribute("tabindex", tabIndex.toString());
     header.setAttribute("role", "button");
-    header.setAttribute("aria-label", `Toggle ${filePath.replace(".md", "")} section`);
+    header.setAttribute("aria-label", `Toggle ${filePath.replace(/\.[^.]+$/, "")} section (Ctrl/Cmd+Click to select all)`);
+    const extMatch = filePath.match(/\.([^.]+)$/);
+    const fileExt = extMatch ? extMatch[1].toLowerCase() : "";
+    const isMarkdown = fileExt === "md";
     header.createSpan({
       cls: "file-group-heading",
-      text: filePath.replace(".md", "")
+      text: isMarkdown ? filePath.replace(/\.md$/, "") : filePath
     });
+    if (!isMarkdown && fileExt) {
+      header.createSpan({
+        cls: "file-ext-badge",
+        text: `.${fileExt}`
+      });
+    }
     header.createSpan({ cls: "file-results-count", text: ` (${fileResults.length})` });
     const replaceAllFileBtn = header.createEl("button", {
       cls: "clickable-icon",
       attr: {
-        "aria-label": `Replace all in "${filePath.replace(".md", "")}"`,
+        "aria-label": `Replace all in "${filePath.replace(/\.[^.]+$/, "")}"`,
         "data-tooltip-position": "top",
         "tabindex": (tabIndex + 1).toString()
       }
@@ -1917,6 +2122,18 @@ var UIRenderer = class {
     replaceAllFileBtn.setAttribute("data-file-path", filePath);
     header.addEventListener("click", (e) => {
       if (e.target.closest(".clickable-icon")) {
+        return;
+      }
+      if (e.metaKey || e.ctrlKey) {
+        e.preventDefault();
+        if (this.onToggleFileSelection) {
+          this.onToggleFileSelection(fileStartIndex, fileResults.length);
+          this.logger.debug("File header Ctrl/Cmd+Click: toggling selection", {
+            filePath,
+            startIndex: fileStartIndex,
+            count: fileResults.length
+          });
+        }
         return;
       }
       const group = header.closest(".file-group");
@@ -2005,11 +2222,11 @@ var UIRenderer = class {
       let before2 = lineText.slice(start2, matchIndex2);
       if (start2 > 0) before2 = "\u2026 " + before2;
       if (before2) container.appendText(before2);
-      const mark = container.createEl("mark", {
+      const mark2 = container.createEl("mark", {
         text: firstLine + (hasMoreLines ? "\u2026" : "")
       });
       if (hasMoreLines) {
-        mark.title = `Multiline match (${lines.length} lines):
+        mark2.title = `Multiline match (${lines.length} lines):
 ${matchText}`;
       }
       if (replaceText) {
@@ -2028,6 +2245,7 @@ ${matchText}`;
             preview = replaceText;
           }
           if (preview !== matchText && preview.trim()) {
+            mark2.addClass("has-replace-preview");
             const previewLines = preview.split("\n");
             const previewFirstLine = previewLines[0];
             const previewHasMoreLines = previewLines.length > 1;
@@ -2067,7 +2285,7 @@ ${preview}`;
     if (start > 0) before = "\u2026 " + before;
     if (end < lineText.length) after = after + " \u2026";
     if (before) container.appendText(before);
-    container.createEl("mark", { text: mid });
+    const mark = container.createEl("mark", { text: mid });
     if (replaceText) {
       try {
         let preview;
@@ -2084,6 +2302,7 @@ ${preview}`;
           preview = replaceText;
         }
         if (preview !== mid) {
+          mark.addClass("has-replace-preview");
           container.createSpan({
             cls: "replace-preview",
             text: preview
@@ -2240,6 +2459,7 @@ ${preview}`;
   }
   /**
    * Cleans up saved file group states for files that no longer exist in the vault
+   * and caps size to prevent unbounded growth
    * @param currentFilePaths - Array of file paths that currently have search results
    */
   cleanupFileGroupStates(_currentFilePaths) {
@@ -2253,6 +2473,15 @@ ${preview}`;
         hasChanges = true;
         this.logger.debug(`Cleaned up state for non-existent file: ${filePath}`);
       }
+    }
+    const keys = Object.keys(savedStates);
+    if (keys.length > MAX_FILE_GROUP_STATES) {
+      const toRemove = keys.length - MAX_FILE_GROUP_STATES;
+      for (let i = 0; i < toRemove; i++) {
+        delete savedStates[keys[i]];
+      }
+      hasChanges = true;
+      this.logger.debug(`Evicted ${toRemove} oldest file group states`);
     }
     if (hasChanges) {
       void this.plugin.saveSettings();
@@ -2278,20 +2507,13 @@ ${preview}`;
   }
   /**
    * Expands a replacement string with regex capture groups
+   * Delegates to shared expandReplacement utility for consistency with actual replacement
    * @param replaceText - The replacement pattern (e.g., "🚧🚧$1🚧🚧")
    * @param match - The regex match result containing capture groups
    * @returns The expanded replacement string
    */
   expandReplacementString(replaceText, match) {
-    let result = replaceText;
-    result = result.replace(/\$&/g, match[0]);
-    for (let i = 1; i < match.length; i++) {
-      const captureGroup = match[i] || "";
-      const regex = new RegExp(`\\$${i}`, "g");
-      result = result.replace(regex, captureGroup);
-    }
-    result = result.replace(/\$\$/g, "$");
-    return result;
+    return expandReplacement(replaceText, match);
   }
   /**
    * Cleanup method for when the renderer is no longer needed
@@ -2410,6 +2632,64 @@ var SelectionManager = class {
     this.updateSelectionUI();
   }
   /**
+   * Selects a range of results by index
+   * Adds all indices in the specified range to the selection.
+   *
+   * @param {number} startIndex - First index to select (inclusive)
+   * @param {number} count - Number of consecutive indices to select
+   *
+   * @remarks
+   * **Triggered By:**
+   * - Ctrl/Cmd+Click on file header to select all matches in that file
+   *
+   * **Behavior:**
+   * - Adds indices to existing selection (does not clear first)
+   * - Updates UI to show newly selected results
+   * - Updates selected count display in adaptive toolbar
+   */
+  selectRange(startIndex, count) {
+    for (let i = startIndex; i < startIndex + count; i++) {
+      if (i < this.lineElements.length) {
+        this.selectedIndices.add(i);
+      }
+    }
+    this.updateSelectionUI();
+  }
+  /**
+   * Deselects a range of results by index
+   * Removes all indices in the specified range from the selection.
+   *
+   * @param {number} startIndex - First index to deselect (inclusive)
+   * @param {number} count - Number of consecutive indices to deselect
+   */
+  deselectRange(startIndex, count) {
+    for (let i = startIndex; i < startIndex + count; i++) {
+      this.selectedIndices.delete(i);
+    }
+    this.updateSelectionUI();
+  }
+  /**
+   * Toggles selection for a range of results
+   * If all indices in range are selected, deselects them all; otherwise selects them all.
+   *
+   * @param {number} startIndex - First index in range (inclusive)
+   * @param {number} count - Number of consecutive indices in range
+   */
+  toggleRangeSelection(startIndex, count) {
+    let allSelected = true;
+    for (let i = startIndex; i < startIndex + count && i < this.lineElements.length; i++) {
+      if (!this.selectedIndices.has(i)) {
+        allSelected = false;
+        break;
+      }
+    }
+    if (allSelected) {
+      this.deselectRange(startIndex, count);
+    } else {
+      this.selectRange(startIndex, count);
+    }
+  }
+  /**
    * Clears all selections
    * Removes all selected indices and updates UI to show no selections.
    *
@@ -2494,93 +2774,6 @@ var SelectionManager = class {
     }
   }
   /**
-   * Handles keyboard shortcuts for selection
-   * Processes Ctrl/Cmd+A (select all) and Escape (clear selection) keyboard shortcuts.
-   *
-   * @param {KeyboardEvent} event - The keyboard event to process
-   * @returns {boolean} True if the event was handled and should be prevented, false otherwise
-   *
-   * @remarks
-   * **Supported Shortcuts:**
-   * - Ctrl/Cmd+A: Select all results (always handled)
-   * - Escape: Clear selection (only handled if selections exist)
-   *
-   * **Event Handling:**
-   * - Prevents default browser behavior when shortcuts are triggered
-   * - Returns true to indicate event was consumed
-   * - Returns false to allow event bubbling for unhandled keys
-   */
-  handleKeyboardShortcut(event) {
-    if ((event.ctrlKey || event.metaKey) && event.key === "a") {
-      event.preventDefault();
-      this.selectAll();
-      return true;
-    }
-    if (event.key === "Escape") {
-      if (this.hasSelection()) {
-        event.preventDefault();
-        this.clearSelection();
-        return true;
-      }
-    }
-    return false;
-  }
-  /**
-   * Gets indices of selected results within a specific file
-   * Filters selected indices to return only those belonging to the specified file.
-   *
-   * @param {string} filePath - Path of the file to filter by
-   * @param {SearchResult[]} allResults - All search results for index-to-file mapping
-   * @returns {number[]} Array of selected indices for the specified file
-   *
-   * @remarks
-   * Used for file-specific operations like "Replace all in file" with selections.
-   */
-  getSelectedIndicesForFile(filePath, allResults) {
-    return Array.from(this.selectedIndices).filter((idx) => {
-      var _a;
-      const result = allResults[idx];
-      return ((_a = result == null ? void 0 : result.file) == null ? void 0 : _a.path) === filePath;
-    });
-  }
-  /**
-   * Selects all results for a specific file
-   * Adds all result indices belonging to the specified file to the selection.
-   *
-   * @param {string} filePath - Path of the file
-   * @param {SearchResult[]} allResults - All search results for index-to-file mapping
-   *
-   * @remarks
-   * Useful for bulk operations on a single file's results.
-   * Preserves existing selections for other files.
-   */
-  selectAllInFile(filePath, allResults) {
-    allResults.forEach((result, idx) => {
-      if (result.file.path === filePath) {
-        this.selectedIndices.add(idx);
-      }
-    });
-    this.updateSelectionUI();
-  }
-  /**
-   * Deselects all results for a specific file
-   * Removes all result indices belonging to the specified file from the selection.
-   *
-   * @param {string} filePath - Path of the file
-   * @param {SearchResult[]} allResults - All search results for index-to-file mapping
-   *
-   * @remarks
-   * Opposite of selectAllInFile(). Preserves selections for other files.
-   */
-  deselectAllInFile(filePath, allResults) {
-    allResults.forEach((result, idx) => {
-      if (result.file.path === filePath) {
-        this.selectedIndices.delete(idx);
-      }
-    });
-    this.updateSelectionUI();
-  }
-  /**
    * Adjusts selection indices when results are removed from the array
    * Recalculates selected indices after removals to maintain correct references.
    *
@@ -2606,6 +2799,7 @@ var SelectionManager = class {
    * - New selection: [1, 2, 3] (indices 3 and 5 shifted down)
    */
   adjustSelectionForRemovedIndices(removedIndices) {
+    const oldSize = this.selectedIndices.size;
     const newSelection = /* @__PURE__ */ new Set();
     for (const selectedIndex of Array.from(this.selectedIndices)) {
       const removedBeforeCount = removedIndices.filter((removedIndex) => removedIndex < selectedIndex).length;
@@ -2619,8 +2813,49 @@ var SelectionManager = class {
     this.updateSelectionUI();
     this.logger.debug("Selection adjusted for removed indices:", {
       removedIndices,
-      oldSelectionSize: this.selectedIndices.size + removedIndices.filter((idx) => this.selectedIndices.has(idx)).length,
+      oldSelectionSize: oldSize,
       newSelectionSize: this.selectedIndices.size
+    });
+  }
+  /**
+   * Adjusts selection indices when results are inserted into the array
+   * Shifts selected indices at or after the insertion point up by the count.
+   *
+   * @param {number} insertionIndex - Index where new results were inserted
+   * @param {number} count - Number of results that were inserted
+   *
+   * @remarks
+   * **Critical for External File Modification:**
+   * - When a file is modified externally, its results are removed and re-inserted
+   * - Selections in files after the modified file must shift up
+   * - Without this, "Replace selected" would target wrong matches
+   *
+   * **Algorithm:**
+   * - For each selected index >= insertionIndex, add count to it
+   * - Indices before insertionIndex remain unchanged
+   *
+   * **Example:**
+   * - Original selection: [1, 3, 5]
+   * - Insert 2 results at index 2
+   * - New selection: [1, 5, 7] (indices 3 and 5 shifted up by 2)
+   */
+  adjustSelectionForInsertedIndices(insertionIndex, count) {
+    if (count === 0) return;
+    const newSelection = /* @__PURE__ */ new Set();
+    for (const selectedIndex of this.selectedIndices) {
+      if (selectedIndex >= insertionIndex) {
+        newSelection.add(selectedIndex + count);
+      } else {
+        newSelection.add(selectedIndex);
+      }
+    }
+    const oldSize = this.selectedIndices.size;
+    this.selectedIndices = newSelection;
+    this.updateSelectionUI();
+    this.logger.debug("Selection adjusted for inserted indices:", {
+      insertionIndex,
+      count,
+      selectionSize: oldSize
     });
   }
   /**
@@ -2675,10 +2910,12 @@ var SelectionManager = class {
 // src/ui/components/searchController.ts
 var import_obsidian8 = require("obsidian");
 var SearchController = class {
+  // Monotonic counter to detect stale searches
   constructor(plugin, elements, searchEngine, state, renderResultsCallback, clearResultsCallback, getSessionFiltersCallback) {
     // Search state management
     this.currentSearchController = null;
     this.isSearching = false;
+    this.searchSeq = 0;
     this.plugin = plugin;
     this.logger = Logger.create(plugin, "SearchController");
     this.elements = elements;
@@ -2687,6 +2924,21 @@ var SearchController = class {
     this.renderResultsCallback = renderResultsCallback;
     this.clearResultsCallback = clearResultsCallback;
     this.getSessionFiltersCallback = getSessionFiltersCallback;
+  }
+  /**
+   * Shows the search spinner and adaptive toolbar
+   */
+  showSpinner() {
+    var _a, _b;
+    (_a = this.elements.adaptiveToolbar) == null ? void 0 : _a.classList.remove("hidden");
+    (_b = this.elements.searchSpinner) == null ? void 0 : _b.classList.remove("hidden");
+  }
+  /**
+   * Hides the search spinner
+   */
+  hideSpinner() {
+    var _a;
+    (_a = this.elements.searchSpinner) == null ? void 0 : _a.classList.add("hidden");
   }
   /**
    * Gets the current searching state
@@ -2794,36 +3046,41 @@ var SearchController = class {
    * @throws Will log errors and show user notification on search failure
    */
   async performSearch() {
-    var _a, _b, _c, _d;
-    const callId = Date.now().toString();
-    this.logger.debug(`[${callId}] ===== SEARCH START =====`);
-    if (this.currentSearchController) {
-      this.logger.debug(`[${callId}] FORCE CANCELLING previous search controller`);
-      this.currentSearchController.abort();
-    }
-    this.currentSearchController = new AbortController();
+    var _a, _b;
+    const searchId = Date.now().toString();
+    this.logger.debug(`[${searchId}] ===== SEARCH START =====`);
+    (_a = this.currentSearchController) == null ? void 0 : _a.abort();
+    const controller = new AbortController();
+    this.currentSearchController = controller;
+    const mySeq = ++this.searchSeq;
+    const isStale = () => controller.signal.aborted || mySeq !== this.searchSeq;
     this.searchEngine.clearCache();
-    this.logger.debug(`[${callId}] Cleared SearchEngine cache`);
+    this.logger.debug(`[${searchId}] Cleared SearchEngine cache, seq=${mySeq}`);
     if (this.isSearching) {
-      this.logger.debug(`[${callId}] Concurrent search detected, waiting for completion...`);
+      this.logger.debug(`[${searchId}] Concurrent search detected, waiting for completion...`);
       let waitCount = 0;
       while (this.isSearching && waitCount < 100) {
         await sleep(10);
         waitCount++;
       }
       if (this.isSearching) {
-        this.logger.warn(`[${callId}] Previous search failed to complete within timeout, force resetting`);
+        this.logger.warn(`[${searchId}] Previous search failed to complete within timeout, force resetting`);
         this.isSearching = false;
       }
     }
-    this.currentSearchController = new AbortController();
-    const searchId = callId;
+    if (isStale()) {
+      this.logger.debug(`[${searchId}] Search superseded while waiting, aborting`);
+      return;
+    }
     const timerName = `performSearch-${searchId}`;
+    let lockAcquired = false;
     this.isSearching = true;
+    lockAcquired = true;
+    this.showSpinner();
     this.logger.debug(`[${searchId}] Search lock acquired, starting execution`);
     this.logger.time(timerName);
     try {
-      const query = (_a = this.elements.searchInput) == null ? void 0 : _a.value;
+      const query = (_b = this.elements.searchInput) == null ? void 0 : _b.value;
       this.logger.debug(`[${searchId}] Query: "${query}"`);
       const searchOptions = this.readSearchOptionsOnce();
       this.logger.debug(`[${searchId}] Search options FROZEN:`, searchOptions);
@@ -2833,8 +3090,8 @@ var SearchController = class {
         this.state.results = [];
         return;
       }
-      if ((_b = this.currentSearchController) == null ? void 0 : _b.signal.aborted) {
-        this.logger.debug(`[${searchId}] Search cancelled before starting`);
+      if (isStale()) {
+        this.logger.debug(`[${searchId}] Search superseded before starting`);
         return;
       }
       if (searchOptions.useRegex) {
@@ -2846,16 +3103,16 @@ var SearchController = class {
           return;
         }
       }
-      if ((_c = this.currentSearchController) == null ? void 0 : _c.signal.aborted) {
-        this.logger.debug(`[${searchId}] Search cancelled before execution`);
+      if (isStale()) {
+        this.logger.debug(`[${searchId}] Search superseded before execution`);
         return;
       }
       this.logger.debug(`[${searchId}] Starting SearchEngine.performSearch`);
       const sessionFilters = this.getSessionFiltersCallback();
-      const results = await this.searchEngine.performSearch(query, searchOptions, sessionFilters);
+      const results = await this.searchEngine.performSearch(query, searchOptions, sessionFilters, controller.signal);
       this.logger.debug(`[${searchId}] SearchEngine.performSearch completed: ${results.length} results`);
-      if ((_d = this.currentSearchController) == null ? void 0 : _d.signal.aborted) {
-        this.logger.debug(`[${searchId}] Search cancelled after completion, not updating UI`);
+      if (isStale()) {
+        this.logger.debug(`[${searchId}] Search superseded after completion, discarding results`);
         return;
       }
       this.logger.info(`[${searchId}] Search completed: found ${results.length} results for "${query}"`);
@@ -2889,9 +3146,14 @@ var SearchController = class {
         this.logger.debug("Timer cleanup failed (expected in some cases)");
       }
     } finally {
-      this.isSearching = false;
-      this.currentSearchController = null;
-      this.logger.debug(`[${searchId}] ===== SEARCH LOCK RELEASED =====`);
+      if (this.currentSearchController === controller) {
+        this.currentSearchController = null;
+      }
+      if (lockAcquired) {
+        this.isSearching = false;
+        this.hideSpinner();
+        this.logger.debug(`[${searchId}] ===== SEARCH LOCK RELEASED =====`);
+      }
     }
   }
   /**
@@ -2973,7 +3235,6 @@ var import_obsidian9 = require("obsidian");
 
 // src/ui/components/historyNavigator.ts
 var HistoryNavigator = class {
-  // Prevent feedback loop
   constructor(plugin) {
     this.input = null;
     this.history = [];
@@ -2982,6 +3243,9 @@ var HistoryNavigator = class {
     this.draft = "";
     // Saves current input when entering history mode
     this.isNavigating = false;
+    // Prevent feedback loop
+    this.keydownListener = null;
+    this.inputListener = null;
     this.plugin = plugin;
     this.logger = Logger.create(plugin, "HistoryNavigator");
   }
@@ -2993,12 +3257,14 @@ var HistoryNavigator = class {
   attachTo(input, getHistory) {
     this.input = input;
     this.history = getHistory();
-    input.addEventListener("keydown", (e) => this.handleKeyDown(e, getHistory));
-    input.addEventListener("input", () => {
+    this.keydownListener = (e) => this.handleKeyDown(e, getHistory);
+    this.inputListener = () => {
       if (!this.isNavigating) {
         this.resetPosition();
       }
-    });
+    };
+    input.addEventListener("keydown", this.keydownListener);
+    input.addEventListener("input", this.inputListener);
     this.logger.debug("HistoryNavigator attached to input");
   }
   /**
@@ -3107,7 +3373,17 @@ var HistoryNavigator = class {
    * @internal Test utility - cleanup happens via component disposal in production
    */
   detach() {
+    if (this.input) {
+      if (this.keydownListener) {
+        this.input.removeEventListener("keydown", this.keydownListener);
+      }
+      if (this.inputListener) {
+        this.input.removeEventListener("input", this.inputListener);
+      }
+    }
     this.input = null;
+    this.keydownListener = null;
+    this.inputListener = null;
     this.history = [];
     this.resetPosition();
     this.logger.debug("HistoryNavigator detached");
@@ -3130,6 +3406,8 @@ var SearchToolbar = class {
     this.performSearchCallback = performSearchCallback;
     this.searchHistoryNavigator = new HistoryNavigator(plugin);
     this.replaceHistoryNavigator = new HistoryNavigator(plugin);
+    this.includeHistoryNavigator = new HistoryNavigator(plugin);
+    this.excludeHistoryNavigator = new HistoryNavigator(plugin);
     this.initializeSessionFilters();
   }
   /**
@@ -3299,7 +3577,7 @@ var SearchToolbar = class {
       cls: "inline-toggle-btn toolbar-action clickable-icon",
       attr: {
         "aria-label": "Toggle file filters",
-        "tabindex": "6"
+        "tabindex": "7"
       }
     });
     (0, import_obsidian9.setIcon)(filterBtn, "filter");
@@ -3307,7 +3585,7 @@ var SearchToolbar = class {
       cls: "inline-toggle-btn toolbar-action clickable-icon",
       attr: {
         "aria-label": "Clear search",
-        "tabindex": "7"
+        "tabindex": "8"
       }
     });
     (0, import_obsidian9.setIcon)(clearAllBtn, "search-x");
@@ -3361,9 +3639,12 @@ var SearchToolbar = class {
     const includeInput = includeInputContainer.createEl("input", {
       type: "text",
       cls: "filter-input",
-      placeholder: "e.g. .md, Notes/, *.js",
-      attr: { "tabindex": "8" }
+      placeholder: "e.g. .md, Notes/, *.js (\u2191\u2193 for history)",
+      attr: { "tabindex": "9" }
     });
+    if (this.plugin.settings.enableSearchHistory) {
+      this.includeHistoryNavigator.attachTo(includeInput, () => this.plugin.historyManager.getIncludeHistory());
+    }
     const includeClearBtn = includeInputContainer.createEl("button", {
       cls: "input-clear-icon filter-clear-icon",
       attr: {
@@ -3381,9 +3662,12 @@ var SearchToolbar = class {
     const excludeInput = excludeInputContainer.createEl("input", {
       type: "text",
       cls: "filter-input",
-      placeholder: "e.g. *.tmp, Archive/, *backup*",
-      attr: { "tabindex": "9" }
+      placeholder: "e.g. *.tmp, Archive/, *backup* (\u2191\u2193 for history)",
+      attr: { "tabindex": "10" }
     });
+    if (this.plugin.settings.enableSearchHistory) {
+      this.excludeHistoryNavigator.attachTo(excludeInput, () => this.plugin.historyManager.getExcludeHistory());
+    }
     const excludeClearBtn = excludeInputContainer.createEl("button", {
       cls: "input-clear-icon filter-clear-icon",
       attr: {
@@ -3409,14 +3693,14 @@ var SearchToolbar = class {
    *
    * @remarks
    * This container is populated by UIRenderer with search results organized by file.
-   * The container is focusable (tabindex: 12) and serves as the target for keyboard navigation
+   * The container is focusable (tabindex: 13) and serves as the target for keyboard navigation
    * from the adaptive toolbar.
    * Initially hidden until results are rendered.
    */
   createResultsContainer(containerEl) {
     return containerEl.createDiv({
       cls: "find-replace-results hidden",
-      attr: { "tabindex": "12" }
+      attr: { "tabindex": "13" }
     });
   }
   /**
@@ -3455,6 +3739,8 @@ var SearchToolbar = class {
   createAdaptiveToolbar(searchToolbar) {
     const adaptiveToolbar = searchToolbar.createDiv("find-replace-adaptive-toolbar hidden");
     const resultsSummary = adaptiveToolbar.createDiv("adaptive-results-summary");
+    const searchSpinner = resultsSummary.createSpan("search-spinner hidden");
+    (0, import_obsidian9.setIcon)(searchSpinner, "loader-2");
     const resultsCountEl = resultsSummary.createEl("span", {
       cls: "adaptive-results-count",
       text: "0 results"
@@ -3472,7 +3758,7 @@ var SearchToolbar = class {
         "disabled": true,
         // Start disabled (no results)
         "aria-label": "Replace actions menu",
-        "tabindex": "10"
+        "tabindex": "11"
       }
     });
     (0, import_obsidian9.setIcon)(ellipsisMenuBtn, "more-horizontal");
@@ -3481,7 +3767,7 @@ var SearchToolbar = class {
       cls: "adaptive-action-btn clickable-icon hidden",
       attr: {
         "aria-label": "Expand all",
-        "tabindex": "11"
+        "tabindex": "12"
       }
     });
     (0, import_obsidian9.setIcon)(expandCollapseBtn, "copy-plus");
@@ -3489,6 +3775,7 @@ var SearchToolbar = class {
       adaptiveToolbar,
       resultsCountEl,
       selectedCountEl,
+      searchSpinner,
       ellipsisMenuBtn,
       toolbarBtn: expandCollapseBtn
     };
@@ -3551,12 +3838,20 @@ var SearchToolbar = class {
     includeInput.addEventListener("keydown", (e) => {
       if (e.key === "Enter") {
         window.clearTimeout(updateTimeout);
+        const value = includeInput.value.trim();
+        if (value && this.plugin.settings.enableSearchHistory) {
+          this.plugin.historyManager.addInclude(value);
+        }
         void updateFiltersAndSearch();
       }
     });
     excludeInput.addEventListener("keydown", (e) => {
       if (e.key === "Enter") {
         window.clearTimeout(updateTimeout);
+        const value = excludeInput.value.trim();
+        if (value && this.plugin.settings.enableSearchHistory) {
+          this.plugin.historyManager.addExclude(value);
+        }
         void updateFiltersAndSearch();
       }
     });
@@ -3581,6 +3876,7 @@ var SearchToolbar = class {
    * - `.md` → fileExtensions array (dot removed)
    * - `Notes/` → searchInFolders or excludeFolders (trailing slash removed)
    * - `*.js` → includePatterns or excludePatterns (contains wildcards)
+   * - `test-capture.md` → includePatterns or excludePatterns (filename with extension)
    *
    * **Session-Only Behavior:**
    * - Reads from sessionFilters property (in-memory state)
@@ -3612,6 +3908,13 @@ var SearchToolbar = class {
   }
   /**
    * Parse filter patterns into extensions, folders, and globs
+   *
+   * Pattern classification:
+   * - `.md` → extension (starts with dot)
+   * - `*.js`, `test?` → glob (contains wildcards)
+   * - `Notes/` → folder (ends with slash)
+   * - `test-capture.md` → glob (has file extension)
+   * - `Notes` → folder (plain name)
    */
   parseFilterPatterns(input) {
     const patterns = input.split(",").map((p) => p.trim()).filter((p) => p.length > 0);
@@ -3623,8 +3926,12 @@ var SearchToolbar = class {
         extensions.push(pattern.substring(1));
       } else if (pattern.includes("*") || pattern.includes("?")) {
         globs.push(pattern);
-      } else {
+      } else if (pattern.endsWith("/")) {
         folders.push(pattern.replace(/\/$/, ""));
+      } else if (/\.[a-zA-Z0-9]{1,10}$/.test(pattern)) {
+        globs.push(pattern);
+      } else {
+        folders.push(pattern);
       }
     });
     return { extensions, folders, globs };
@@ -3857,24 +4164,6 @@ var SearchToolbar = class {
         showEllipsisMenu(e);
       }
     });
-    ellipsisMenuBtn.addEventListener("replace-all-vault", () => {
-      void (async () => {
-        try {
-          await this.replaceAllVaultCallback();
-        } catch (error) {
-          this.logger.error("Replace all vault keyboard shortcut error", error, true);
-        }
-      })();
-    });
-    ellipsisMenuBtn.addEventListener("replace-selected", () => {
-      void (async () => {
-        try {
-          await this.replaceSelectedCallback();
-        } catch (error) {
-          this.logger.error("Replace selected keyboard shortcut error", error, true);
-        }
-      })();
-    });
   }
   /**
    * Updates the filter button state to show active filters count
@@ -3924,9 +4213,9 @@ var SearchToolbar = class {
 // src/ui/components/actionHandler.ts
 var import_obsidian10 = require("obsidian");
 var ActionHandler = class {
-  constructor(plugin, elements, searchEngine, replacementEngine, performSearchCallback, renderResultsCallback) {
-    this.isSearching = false;
+  constructor(plugin, view, elements, searchEngine, replacementEngine, performSearchCallback, renderResultsCallback) {
     this.plugin = plugin;
+    this.view = view;
     this.logger = Logger.create(plugin, "ActionHandler");
     this.elements = elements;
     this.searchEngine = searchEngine;
@@ -3958,7 +4247,8 @@ var ActionHandler = class {
   }
   /**
    * Sets up all event handlers for the UI
-   * Initializes event listeners for replace input, toggle buttons, clear button, and expand/collapse.
+   * Initializes event listeners for replace input, clear button, and expand/collapse.
+   * Note: Toggle handlers are managed by SearchToolbar to avoid double-firing searches.
    *
    * @remarks
    * This method must be called during view initialization to enable user interactions.
@@ -3966,18 +4256,8 @@ var ActionHandler = class {
    */
   setupEventHandlers() {
     this.setupReplaceInputHandler();
-    this.setupToggleHandlers();
     this.setupClearButtonHandler();
     this.setupExpandCollapseHandler();
-  }
-  /**
-   * Updates the isSearching state (called from SearchController)
-   * Used to coordinate state between SearchController and ActionHandler.
-   *
-   * @param {boolean} isSearching - True if search is in progress, false otherwise
-   */
-  setSearchingState(isSearching) {
-    this.isSearching = isSearching;
   }
   /**
    * Sets callbacks for accessing view state
@@ -3985,13 +4265,16 @@ var ActionHandler = class {
    *
    * @param {function} getResultsCallback - Function that returns current search results array
    * @param {function} getSelectedIndicesCallback - Function that returns Set of selected result indices
+   * @param {function} getSessionFiltersCallback - Function that returns current session filters
    *
    * @remarks
    * Must be called before any replace operations to ensure state access is available.
    */
-  setStateCallbacks(getResultsCallback, getSelectedIndicesCallback) {
+  setStateCallbacks(getResultsCallback, getSelectedIndicesCallback, getSessionFiltersCallback, getTotalResultsCallback) {
     this.getResultsCallback = getResultsCallback;
     this.getSelectedIndicesCallback = getSelectedIndicesCallback;
+    this.getSessionFiltersCallback = getSessionFiltersCallback;
+    this.getTotalResultsCallback = getTotalResultsCallback;
   }
   /**
    * Sets the expand/collapse callback for toolbar button
@@ -4003,45 +4286,21 @@ var ActionHandler = class {
     this.toggleExpandCollapseCallback = callback;
   }
   /**
-   * Sets up replace input change handler for preview updates
-   * Preserves selections when replace text changes to improve UX
+   * Sets callback to suspend/resume file modification events during bulk operations
    */
-  setupReplaceInputHandler() {
-    this.elements.replaceInput.addEventListener("input", () => {
-      this.renderResultsCallback(true);
-    });
+  setSuspendFileEventsCallback(callback) {
+    this.suspendFileEventsCallback = callback;
   }
   /**
-   * Sets up toggle button handlers with debouncing
+   * Sets up replace input change handler for preview updates
+   * Preserves selections when replace text changes to improve UX
+   * Debounced to prevent DOM rebuilds on every keystroke with large result sets
    */
-  setupToggleHandlers() {
-    const toggleButtons = [
-      this.elements.matchCaseCheckbox,
-      this.elements.wholeWordCheckbox,
-      this.elements.regexCheckbox
-    ];
-    toggleButtons.forEach((toggleBtn) => {
-      if (toggleBtn) {
-        const toggleName = toggleBtn.getAttribute("aria-label") || "unknown";
-        const debouncedToggleSearch = (0, import_obsidian10.debounce)(() => {
-          const query = this.elements.searchInput.value.trim();
-          this.logger.debug(`[Toggle:${toggleName}] Click triggered for query: "${query}"`);
-          if (this.isSearching) {
-            this.logger.warn(`[Toggle:${toggleName}] Search in progress, option change may cause inconsistency`);
-          }
-          this.searchEngine.clearCache();
-          this.logger.debug(`[Toggle:${toggleName}] Cleared SearchEngine cache due to option change`);
-          if (query.length > 0) {
-            this.logger.debug(`[Toggle:${toggleName}] Calling performSearch for: "${query}"`);
-            void this.performSearchCallback();
-          } else {
-            this.logger.debug(`[Toggle:${toggleName}] No query, skipping search`);
-          }
-        }, this.plugin.settings.searchDebounceDelay);
-        this.logger.debug(`[Toggle:${toggleName}] Setting up click listener with debounce: ${this.plugin.settings.searchDebounceDelay}ms`);
-        toggleBtn.addEventListener("click", debouncedToggleSearch);
-      }
-    });
+  setupReplaceInputHandler() {
+    const debouncedRender = (0, import_obsidian10.debounce)(() => {
+      this.renderResultsCallback(true);
+    }, REPLACE_PREVIEW_DEBOUNCE_DELAY);
+    this.elements.replaceInput.addEventListener("input", debouncedRender);
   }
   /**
    * Sets up clear button handler
@@ -4116,24 +4375,26 @@ var ActionHandler = class {
    * @throws Will log error and show user notification on replacement failure
    */
   async replaceSelectedMatches() {
+    var _a, _b;
     this.logger.debug("=== REPLACE SELECTED START ===");
     this.logger.debug("replaceSelectedMatches called");
     const replaceText = this.elements.replaceInput.value;
     const searchOptions = this.getSearchOptions();
+    if (!this.getSelectedIndicesCallback) {
+      this.logger.error("No selected indices callback set");
+      return;
+    }
+    const selectedIndices = this.getSelectedIndicesCallback();
+    if (selectedIndices.size === 0) {
+      this.logger.warn("No matches selected for replacement");
+      return;
+    }
+    if (!replaceText) {
+      const confirmed = await this.showReplaceConfirmation("Replace selected matches with empty content? This cannot be undone.");
+      if (!confirmed) return;
+    }
+    (_a = this.suspendFileEventsCallback) == null ? void 0 : _a.call(this, true);
     try {
-      if (!this.getSelectedIndicesCallback) {
-        this.logger.error("No selected indices callback set");
-        return;
-      }
-      const selectedIndices = this.getSelectedIndicesCallback();
-      if (selectedIndices.size === 0) {
-        this.logger.warn("No matches selected for replacement");
-        return;
-      }
-      if (!replaceText) {
-        const confirmed = await this.showReplaceConfirmation("Replace selected matches with empty content? This cannot be undone.");
-        if (!confirmed) return;
-      }
       this.logger.info(`Starting replace operation for ${selectedIndices.size} selected matches`);
       if (!this.getResultsCallback) {
         this.logger.error("No results callback set");
@@ -4154,6 +4415,8 @@ var ActionHandler = class {
       await this.performSearchCallback();
     } catch (error) {
       this.logger.error("Failed to replace selected matches", error, true);
+    } finally {
+      (_b = this.suspendFileEventsCallback) == null ? void 0 : _b.call(this, false);
     }
   }
   /**
@@ -4187,6 +4450,7 @@ var ActionHandler = class {
    * @throws Will log error and show user notification on replacement failure
    */
   async replaceAllInVault() {
+    var _a, _b, _c, _d, _e, _f, _g;
     this.logger.debug("=== REPLACE ALL IN VAULT START ===");
     const query = this.elements.searchInput.value.trim();
     const replaceText = this.elements.replaceInput.value;
@@ -4195,24 +4459,47 @@ var ActionHandler = class {
       this.logger.warn("No search query provided for replace all");
       return;
     }
+    if (!this.getSessionFiltersCallback) {
+      this.logger.error("No session filters callback set");
+      return;
+    }
+    const sessionFilters = this.getSessionFiltersCallback();
+    const displayedResults = (_b = (_a = this.getResultsCallback) == null ? void 0 : _a.call(this)) != null ? _b : [];
+    const totalInfo = (_c = this.getTotalResultsCallback) == null ? void 0 : _c.call(this);
+    if (displayedResults.length === 0 && (!totalInfo || totalInfo.count === 0)) {
+      this.logger.warn("No matches found for replace all");
+      return;
+    }
     if (this.plugin.settings.confirmDestructiveActions) {
-      const confirmResult = await this.showReplaceAllConfirmation(query, replaceText);
+      const matchCount = (_d = totalInfo == null ? void 0 : totalInfo.count) != null ? _d : displayedResults.length;
+      const uniqueFiles = new Set(displayedResults.map((r) => r.file.path));
+      const estimatedFileCount = uniqueFiles.size;
+      const isEstimate = (_e = totalInfo == null ? void 0 : totalInfo.isLimited) != null ? _e : false;
+      const confirmResult = await this.showReplaceAllConfirmation(
+        matchCount,
+        estimatedFileCount,
+        replaceText,
+        isEstimate
+      );
       if (!confirmResult) {
         this.logger.debug("Replace all operation cancelled by user");
         return;
       }
     }
+    (_f = this.suspendFileEventsCallback) == null ? void 0 : _f.call(this, true);
     try {
-      this.logger.info(`Starting replace all operation: "${query}" \u2192 "${replaceText}"`);
-      if (!this.getResultsCallback) {
-        this.logger.error("No results callback set");
+      this.logger.debug("Running unlimited search for Replace All");
+      const allResults = await this.searchEngine.performSearch(query, searchOptions, sessionFilters);
+      this.logger.debug(`Unlimited search found ${allResults.length} total matches`);
+      if (allResults.length === 0) {
+        this.logger.warn("No matches found for replace all after confirmation");
         return;
       }
-      const currentResults = this.getResultsCallback();
+      this.logger.info(`Starting replace all operation: "${query}" \u2192 "${replaceText}" (${allResults.length} matches)`);
       const selectedIndices = /* @__PURE__ */ new Set();
       const result = await this.replacementEngine.dispatchReplace(
         "vault",
-        currentResults,
+        allResults,
         selectedIndices,
         replaceText,
         searchOptions
@@ -4224,13 +4511,18 @@ var ActionHandler = class {
       await this.performSearchCallback();
     } catch (error) {
       this.logger.error("Failed to replace all matches in vault", error, true);
+    } finally {
+      (_g = this.suspendFileEventsCallback) == null ? void 0 : _g.call(this, false);
     }
   }
   /**
-   * Shows confirmation modal for replace all operation
+   * Shows confirmation modal for replace all operation with counts
    */
-  async showReplaceAllConfirmation(query, replaceText) {
-    const message = replaceText === "" ? "Replace all matches across the vault with an empty value? This action cannot be undone." : "Replace all matches across the vault? This action cannot be undone.";
+  async showReplaceAllConfirmation(matchCount, fileCount, replaceText, isEstimate = false) {
+    const countPrefix = isEstimate ? "at least " : "";
+    const matchText = matchCount === 1 ? "1 match" : `${matchCount.toLocaleString()} matches`;
+    const fileText = fileCount === 1 ? "1 file" : `${fileCount} files`;
+    const message = replaceText === "" ? `Delete ${countPrefix}${matchText} across ${fileText}? This action cannot be undone.` : `Replace ${countPrefix}${matchText} across ${fileText}? This action cannot be undone.`;
     return this.showReplaceConfirmation(message);
   }
   /**
@@ -4238,11 +4530,7 @@ var ActionHandler = class {
    */
   async showReplaceConfirmation(message) {
     const modal = new ConfirmModal(this.plugin.app, message);
-    modal.open();
-    while (modal.isOpen) {
-      await sleep(MODAL_POLL_INTERVAL);
-    }
-    return modal.result;
+    return modal.openAndConfirm();
   }
   /**
    * Gets current search options from toggle buttons
@@ -4281,15 +4569,16 @@ var ActionHandler = class {
    * - Event listener persists until explicitly removed
    */
   setupKeyboardShortcuts() {
-    activeDocument.addEventListener("keydown", this.replaceAllKeyHandler);
-    activeDocument.addEventListener("keydown", this.replaceSelectedKeyHandler);
+    const doc = this.elements.containerEl.ownerDocument;
+    this.view.registerDomEvent(doc, "keydown", this.replaceAllKeyHandler);
+    this.view.registerDomEvent(doc, "keydown", this.replaceSelectedKeyHandler);
   }
   /**
    * Cleans up event listeners
+   * Note: Keyboard shortcuts registered via view.registerDomEvent are automatically
+   * cleaned up when the view is unloaded, so no manual removal needed for those.
    */
   cleanup() {
-    activeDocument.removeEventListener("keydown", this.replaceAllKeyHandler);
-    activeDocument.removeEventListener("keydown", this.replaceSelectedKeyHandler);
     this.logger.debug("ActionHandler cleanup completed");
   }
 };
@@ -4306,13 +4595,16 @@ var FindReplaceView = class extends import_obsidian11.ItemView {
    */
   constructor(leaf, app, plugin) {
     super(leaf);
+    // Flag to suspend file events during bulk operations
+    this.suspendFileEvents = false;
     this.plugin = plugin;
     this.logger = Logger.create(plugin, "FindReplaceView");
     this.state = {
       isCollapsed: false,
       selectedIndices: /* @__PURE__ */ new Set(),
       results: [],
-      lineElements: []
+      lineElements: [],
+      isWordWrapEnabled: false
     };
     this.searchEngine = new SearchEngine(app, plugin);
     this.fileOperations = new FileOperations(app, plugin);
@@ -4389,11 +4681,15 @@ var FindReplaceView = class extends import_obsidian11.ItemView {
       includeInput: filterElements.includeInput,
       excludeInput: filterElements.excludeInput,
       adaptiveToolbar: adaptiveElements.adaptiveToolbar,
-      ellipsisMenuBtn: adaptiveElements.ellipsisMenuBtn
+      ellipsisMenuBtn: adaptiveElements.ellipsisMenuBtn,
+      searchSpinner: adaptiveElements.searchSpinner
     };
     this.replacementEngine = new ReplacementEngine(this.app, this.plugin, this.searchEngine);
     this.uiRenderer = new UIRenderer(this.elements, this.searchEngine, this.plugin);
     this.selectionManager = new SelectionManager(this.elements, this.plugin);
+    this.uiRenderer.setToggleFileSelectionCallback((startIndex, count) => {
+      this.selectionManager.toggleRangeSelection(startIndex, count);
+    });
     this.searchToolbar.setSelectionManager(this.selectionManager);
     this.searchController = new SearchController(
       this.plugin,
@@ -4406,11 +4702,16 @@ var FindReplaceView = class extends import_obsidian11.ItemView {
     );
     this.actionHandler = new ActionHandler(
       this.plugin,
+      this,
+      // Pass view for registerDomEvent (proper cleanup on popout windows)
       this.elements,
       this.searchEngine,
       this.replacementEngine,
       () => this.searchController.performSearch(),
-      (preserveSelection = false) => this.renderResults(preserveSelection)
+      (preserveSelection = false) => {
+        const searchOptions = this.searchController.getSearchOptions();
+        this.renderResultsWithOptions(searchOptions, preserveSelection);
+      }
     );
     this.searchToolbar.updateReplaceCallbacks(
       () => this.actionHandler.replaceSelectedMatches(),
@@ -4418,10 +4719,18 @@ var FindReplaceView = class extends import_obsidian11.ItemView {
     );
     this.actionHandler.setStateCallbacks(
       () => this.state.results,
-      () => this.selectionManager.getSelectedIndices()
+      () => this.selectionManager.getSelectedIndices(),
+      () => this.searchToolbar.getSessionFilters(),
+      () => {
+        var _a, _b;
+        return { count: (_a = this.state.totalResults) != null ? _a : 0, isLimited: (_b = this.state.isLimited) != null ? _b : false };
+      }
     );
     this.actionHandler.setExpandCollapseCallback(() => {
       this.uiRenderer.toggleExpandCollapseAll();
+    });
+    this.actionHandler.setSuspendFileEventsCallback((suspend) => {
+      this.suspendFileEvents = suspend;
     });
     this.searchController.setupBasicNavigation();
     if (this.plugin.settings.enableAutoSearch) {
@@ -4429,7 +4738,6 @@ var FindReplaceView = class extends import_obsidian11.ItemView {
     }
     this.actionHandler.setupEventHandlers();
     this.actionHandler.setupKeyboardShortcuts();
-    this.actionHandler.setSearchingState(this.searchController.getSearchingState());
     this.setupResultClickHandlers();
     window.setTimeout(() => {
       this.elements.searchInput.focus();
@@ -4452,11 +4760,6 @@ var FindReplaceView = class extends import_obsidian11.ItemView {
     this.state.lineElements = [];
     this.elements = null;
     return Promise.resolve();
-  }
-  /**
-   * Called when plugin settings change - no longer needed as filters are session-only
-   */
-  onSettingsChanged() {
   }
   /**
    * Sets up result click handlers (delegated) - other event handling is now done by ActionHandler
@@ -4485,28 +4788,12 @@ var FindReplaceView = class extends import_obsidian11.ItemView {
     await this.searchController.performSearch();
   }
   /**
-   * Renders search results using FROZEN search options (no race conditions)
-   */
-  renderResultsWithOptions(searchOptions) {
-    const replaceText = this.elements.replaceInput.value;
-    const lineElements = this.uiRenderer.renderResults(
-      this.state.results,
-      replaceText,
-      searchOptions,
-      this.state.totalResults,
-      this.state.isLimited
-    );
-    this.state.lineElements = lineElements;
-    this.selectionManager.setupSelection(lineElements);
-  }
-  /**
-   * DEPRECATED: Use renderResultsWithOptions() to avoid race conditions
-   * This method reads search options which can cause inconsistency during search
+   * Renders search results with provided search options
+   * @param searchOptions - The search options to use for rendering
    * @param preserveSelection - Whether to preserve existing selections (default: false)
    */
-  renderResults(preserveSelection = false) {
+  renderResultsWithOptions(searchOptions, preserveSelection = false) {
     const replaceText = this.elements.replaceInput.value;
-    const searchOptions = this.searchController.getSearchOptions();
     const lineElements = this.uiRenderer.renderResults(
       this.state.results,
       replaceText,
@@ -4693,51 +4980,7 @@ var FindReplaceView = class extends import_obsidian11.ItemView {
    */
   async confirmReplaceEmpty(message) {
     const modal = new ConfirmModal(this.app, message);
-    modal.open();
-    while (modal.isOpen) {
-      await sleep(MODAL_POLL_INTERVAL);
-    }
-    return modal.result;
-  }
-  /**
-   * Creates a checkbox option with label and proper event handling
-   * @param parent - Parent element to attach the option to
-   * @param label - Display text for the option
-   * @param id - Unique identifier for this option
-   * @returns The container element for this option
-   */
-  createOption(parent, label, id) {
-    const toggleContainer = parent.createDiv("toggle-container");
-    toggleContainer.createEl(
-      "label",
-      {
-        text: `${label}:`,
-        attr: {
-          "for": `toggle-${id}-checkbox`
-        }
-      }
-    );
-    const checkboxContainer = toggleContainer.createDiv("checkbox-container");
-    const checkbox = checkboxContainer.createEl(
-      "input",
-      {
-        cls: "toggle-checkbox",
-        attr: {
-          type: "checkbox",
-          id: `toggle-${id}-checkbox`
-        }
-      }
-    );
-    checkboxContainer.addEventListener("click", () => {
-      const isEnabled = checkboxContainer.classList.toggle("is-enabled");
-      checkbox.checked = isEnabled;
-      checkbox.dispatchEvent(new Event("change", { bubbles: true }));
-    });
-    checkbox.addEventListener("change", () => {
-      const isEnabled = checkbox.checked;
-      checkboxContainer.classList.toggle("is-enabled", isEnabled);
-    });
-    return toggleContainer;
+    return modal.openAndConfirm();
   }
   // Search-related methods have been moved to SearchController
   /**
@@ -4768,12 +5011,18 @@ var FindReplaceView = class extends import_obsidian11.ItemView {
       for (const index of sortedIndices) {
         this.state.results.splice(index, 1);
       }
+      if (this.state.totalResults !== void 0) {
+        this.state.totalResults -= sortedIndices.length;
+      }
       this.selectionManager.adjustSelectionForRemovedIndices(sortedIndices);
       const searchOptions = this.searchController.getSearchOptions();
       const resultsBeforeRevalidation = this.state.results.length;
       await this.revalidateModifiedResults(affectedResults, searchOptions);
       const resultsAfterRevalidation = this.state.results.length;
       const revalidationRemoved = resultsBeforeRevalidation - resultsAfterRevalidation;
+      if (this.state.totalResults !== void 0 && revalidationRemoved > 0) {
+        this.state.totalResults -= revalidationRemoved;
+      }
       if (revalidationRemoved > affectedResults.replacedResultIndices.length * 5) {
         this.logger.warn(`Suspicious result removal detected:`, {
           originalCount: originalResultCount,
@@ -4809,7 +5058,6 @@ var FindReplaceView = class extends import_obsidian11.ItemView {
       );
       this.state.lineElements = lineElements;
       this.selectionManager.setupSelection(lineElements, true);
-      this.updateSearchStatistics();
       this.logger.debug("Incremental update completed successfully");
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : String(error);
@@ -4877,13 +5125,7 @@ var FindReplaceView = class extends import_obsidian11.ItemView {
   doesLineStillMatch(lineText, originalResult, regex, searchOptions, _query) {
     if ((searchOptions.useRegex || searchOptions.wholeWord) && regex) {
       regex.lastIndex = 0;
-      const matches = [];
-      let match;
-      while ((match = regex.exec(lineText)) !== null) {
-        matches.push(match);
-        if (!regex.global) break;
-      }
-      return matches.some((m) => m[0] === originalResult.matchText);
+      return Array.from(lineText.matchAll(regex)).some((m) => m[0] === originalResult.matchText);
     } else {
       const haystack = searchOptions.matchCase ? lineText : lineText.toLowerCase();
       const needle = searchOptions.matchCase ? originalResult.matchText : originalResult.matchText.toLowerCase();
@@ -4891,20 +5133,12 @@ var FindReplaceView = class extends import_obsidian11.ItemView {
     }
   }
   /**
-   * Updates search statistics after incremental changes
-   */
-  updateSearchStatistics() {
-    const resultCount = this.state.results.length;
-    const fileCount = new Set(this.state.results.map((r) => r.file.path)).size;
-    this.logger.debug("Updated search statistics", { resultCount, fileCount });
-  }
-  /**
    * Handles external file modifications - updates search results in-place
    * Called when a file with search results is modified outside the plugin
    * @param file - The file that was modified
    */
   async handleFileModified(file) {
-    if (this.state.results.length === 0) {
+    if (this.suspendFileEvents) {
       return;
     }
     const query = this.elements.searchInput.value.trim();
@@ -4917,15 +5151,20 @@ var FindReplaceView = class extends import_obsidian11.ItemView {
         fileResultIndices.push(i);
       }
     }
-    if (fileResultIndices.length === 0) {
-      return;
-    }
     const oldResultCount = fileResultIndices.length;
     this.logger.debug(`File ${file.path} modified, updating ${oldResultCount} results`);
     try {
       const searchOptions = this.searchController.getSearchOptions();
       this.searchEngine.clearCache();
       const newFileResults = await this.searchEngine.searchSingleFile(file, query, searchOptions);
+      if (oldResultCount === 0 && newFileResults.length > 0) {
+        this.logger.debug(`File ${file.path} now has ${newFileResults.length} new matches. Running full search.`);
+        await this.performSearch();
+        return;
+      }
+      if (oldResultCount === 0 && newFileResults.length === 0) {
+        return;
+      }
       if (oldResultCount > 0 && newFileResults.length === 0) {
         this.logger.warn(`File ${file.path} had ${oldResultCount} results but single-file search returned 0. Falling back to full search.`);
         await this.performSearch();
@@ -4940,6 +5179,7 @@ var FindReplaceView = class extends import_obsidian11.ItemView {
       const removedBeforeInsertion = sortedIndices.filter((i) => i < insertionIndex).length;
       const adjustedInsertionIndex = insertionIndex - removedBeforeInsertion;
       this.state.results.splice(adjustedInsertionIndex, 0, ...newFileResults);
+      this.selectionManager.adjustSelectionForInsertedIndices(adjustedInsertionIndex, newFileResults.length);
       if (this.state.totalResults !== void 0) {
         this.state.totalResults = this.state.totalResults - fileResultIndices.length + newFileResults.length;
       }
@@ -4958,7 +5198,6 @@ var FindReplaceView = class extends import_obsidian11.ItemView {
       );
       this.state.lineElements = lineElements;
       this.selectionManager.setupSelection(lineElements, true);
-      this.updateSearchStatistics();
     } catch (error) {
       this.logger.error(`Failed to update results for modified file ${file.path}`, error);
     }
@@ -5000,7 +5239,6 @@ var FindReplaceView = class extends import_obsidian11.ItemView {
     );
     this.state.lineElements = lineElements;
     this.selectionManager.setupSelection(lineElements, true);
-    this.updateSearchStatistics();
   }
   /**
    * Handles file rename - updates file references in results
@@ -5113,12 +5351,26 @@ var FindReplaceView = class extends import_obsidian11.ItemView {
   commandClearAll() {
     this.elements.searchInput.value = "";
     this.elements.replaceInput.value = "";
-    [this.elements.matchCaseCheckbox, this.elements.wholeWordCheckbox, this.elements.regexCheckbox].forEach((btn) => {
+    this.elements.searchInput.dispatchEvent(new Event("input", { bubbles: true }));
+    this.elements.replaceInput.dispatchEvent(new Event("input", { bubbles: true }));
+    [
+      this.elements.matchCaseCheckbox,
+      this.elements.wholeWordCheckbox,
+      this.elements.regexCheckbox,
+      this.elements.multilineCheckbox
+    ].forEach((btn) => {
       if (btn) {
         btn.setAttribute("aria-pressed", "false");
         btn.classList.remove("is-active");
       }
     });
+    if (this.plugin.settings.rememberSearchOptions) {
+      this.plugin.settings.lastSearchOptions.matchCase = false;
+      this.plugin.settings.lastSearchOptions.wholeWord = false;
+      this.plugin.settings.lastSearchOptions.useRegex = false;
+      this.plugin.settings.lastSearchOptions.multiline = false;
+      void this.plugin.saveSettings();
+    }
     this.clearResults();
     this.elements.searchInput.focus();
   }
@@ -5195,6 +5447,18 @@ var FindReplaceView = class extends import_obsidian11.ItemView {
     this.searchToolbar.openHelpModal();
   }
   /**
+   * Command: Toggle word-wrap on result snippets
+   */
+  commandToggleWordWrap() {
+    this.state.isWordWrapEnabled = !this.state.isWordWrapEnabled;
+    if (this.state.isWordWrapEnabled) {
+      this.elements.resultsContainer.classList.add("word-wrap-enabled");
+    } else {
+      this.elements.resultsContainer.classList.remove("word-wrap-enabled");
+    }
+    this.logger.debug("Word-wrap toggled:", this.state.isWordWrapEnabled);
+  }
+  /**
    * Sets the search input text
    * Used when opening the view with pre-populated search text
    */
@@ -5226,150 +5490,220 @@ var VaultFindReplaceSettingTab = class extends import_obsidian12.PluginSettingTa
     super(app, plugin);
     this.plugin = plugin;
   }
-  display() {
-    const { containerEl } = this;
-    containerEl.empty();
-    containerEl.addClass("find-n-replace-settings");
-    new import_obsidian12.Setting(containerEl).setName("Maximum results").setDesc("Maximum number of search results to display. Higher values may impact performance.").addText(
-      (text) => text.setPlaceholder("1000").setValue(this.plugin.settings.maxResults.toString()).onChange(async (value) => {
-        const num = parseInt(value, 10);
-        if (!isNaN(num) && num > 0) {
-          this.plugin.settings.maxResults = num;
-          await this.plugin.saveSettings();
-        }
-      })
-    );
-    new import_obsidian12.Setting(containerEl).setName("Enable auto-search").setDesc("Automatically search as you type (with debounce delay).").addToggle(
-      (toggle) => toggle.setValue(this.plugin.settings.enableAutoSearch).onChange(async (value) => {
-        this.plugin.settings.enableAutoSearch = value;
-        await this.plugin.saveSettings();
-      })
-    );
-    new import_obsidian12.Setting(containerEl).setName("Search debounce delay").setDesc("Delay in milliseconds before auto-search triggers while typing.").addText(
-      (text) => text.setPlaceholder("300").setValue(this.plugin.settings.searchDebounceDelay.toString()).onChange(async (value) => {
-        const num = parseInt(value, 10);
-        if (!isNaN(num) && num >= 0) {
-          this.plugin.settings.searchDebounceDelay = num;
-          await this.plugin.saveSettings();
-        }
-      })
-    );
-    new import_obsidian12.Setting(containerEl).setName("Search history").setHeading();
-    new import_obsidian12.Setting(containerEl).setName("Enable search history").setDesc("Save search and replace patterns for quick access using arrow keys (\u2191\u2193).").addToggle(
-      (toggle) => toggle.setValue(this.plugin.settings.enableSearchHistory).onChange(async (value) => {
-        this.plugin.settings.enableSearchHistory = value;
-        await this.plugin.saveSettings();
-      })
-    );
-    new import_obsidian12.Setting(containerEl).setName("Maximum history entries").setDesc("Maximum number of search and replace patterns to remember. Range: 10-200.").addText(
-      (text) => text.setPlaceholder("50").setValue(this.plugin.settings.maxHistorySize.toString()).onChange(async (value) => {
-        const num = parseInt(value, 10);
-        if (!isNaN(num) && num >= 10 && num <= 200) {
-          this.plugin.settings.maxHistorySize = num;
-          await this.plugin.saveSettings();
-          this.plugin.historyManager.updateMaxSize();
-        }
-      })
-    );
-    new import_obsidian12.Setting(containerEl).setName("Clear search history").setDesc(`Clear all saved search and replace patterns. Current history size: ${this.plugin.settings.searchHistory.length} search, ${this.plugin.settings.replaceHistory.length} replace.`).addButton(
-      (button) => button.setButtonText("Clear all history").setWarning().onClick(async () => {
-        const modal = new ConfirmModal(
-          this.app,
-          "Are you sure you want to clear all search and replace history? This action cannot be undone.",
+  getSettingDefinitions() {
+    return [
+      // Core settings group
+      {
+        type: "group",
+        heading: "Search settings",
+        items: [
           {
-            confirmText: "Clear",
-            confirmClass: "mod-warning",
-            cancelText: "Cancel"
+            name: "Maximum results",
+            desc: "Maximum number of search results to display. Higher values may impact performance.",
+            control: {
+              type: "text",
+              key: "maxResults",
+              placeholder: "1000",
+              validate: (value) => {
+                const num = parseInt(value, 10);
+                if (isNaN(num) || num <= 0) {
+                  return "Must be a positive number";
+                }
+                return void 0;
+              }
+            }
+          },
+          {
+            name: "Enable auto-search",
+            desc: "Automatically search as you type (with debounce delay).",
+            control: { type: "toggle", key: "enableAutoSearch" }
+          },
+          {
+            name: "Search debounce delay",
+            desc: "Delay in milliseconds before auto-search triggers while typing.",
+            control: {
+              type: "text",
+              key: "searchDebounceDelay",
+              placeholder: "300",
+              validate: (value) => {
+                const num = parseInt(value, 10);
+                if (isNaN(num) || num < 0) {
+                  return "Must be a non-negative number";
+                }
+                return void 0;
+              }
+            }
           }
-        );
-        modal.open();
-        while (modal.isOpen) {
-          await sleep(MODAL_POLL_INTERVAL);
-        }
-        if (modal.result) {
-          this.plugin.historyManager.clearAllHistory();
-          await this.plugin.saveSettings();
-          new import_obsidian12.Notice("Search and replace history cleared");
-          this.display();
-        }
-      })
-    );
-    new import_obsidian12.Setting(containerEl).setName("File filtering defaults").setHeading();
-    containerEl.createEl("p", {
-      text: "These settings provide default values when opening a new find & replace view. Once a view is open, filter changes are session-only.",
-      cls: "setting-item-description"
-    });
-    new import_obsidian12.Setting(containerEl).setName("Default files to include").setDesc('Default patterns that populate the "files to include" input when opening the view. Supports extensions (.md), folders (Notes/), and globs (*.js). Example: .md,.txt,Notes/,Projects/').addText(
-      (text) => text.setPlaceholder("e.g. .md, Notes/, *.js").setValue(this.plugin.settings.defaultIncludePatterns.join(",")).onChange(async (value) => {
-        this.plugin.settings.defaultIncludePatterns = value.split(",").map((pattern) => pattern.trim()).filter((pattern) => pattern.length > 0);
-        await this.plugin.saveSettings();
-      })
-    );
-    new import_obsidian12.Setting(containerEl).setName("Default files to exclude").setDesc('Default patterns that populate the "files to exclude" input when opening the view. Supports globs (*.tmp), folders (Archive/), and patterns (*backup*). Example: *.tmp,Archive/,*backup*').addText(
-      (text) => text.setPlaceholder("e.g. *.tmp, Archive/, *backup*").setValue(this.plugin.settings.defaultExcludePatterns.join(",")).onChange(async (value) => {
-        this.plugin.settings.defaultExcludePatterns = value.split(",").map((pattern) => pattern.trim()).filter((pattern) => pattern.length > 0);
-        await this.plugin.saveSettings();
-      })
-    );
-    const filterInfoDiv = containerEl.createDiv("setting-item");
-    filterInfoDiv.createEl("div", {
-      cls: "setting-item-info",
-      text: ""
-    });
-    const filterInfoContent = filterInfoDiv.createDiv("setting-item-description");
-    filterInfoContent.addClass("filter-info-box");
-    const titleLine = filterInfoContent.createEl("div");
-    titleLine.createEl("strong", { text: "How default file filters work:" });
-    const list = filterInfoContent.createEl("div");
-    list.appendText("\u2022 These default settings populate the ");
-    list.createEl("strong", { text: '"files to include"' });
-    list.appendText(" and ");
-    list.createEl("strong", { text: '"files to exclude"' });
-    list.appendText(" inputs when you open the Find-n-Replace view");
-    list.createEl("br");
-    list.appendText("\u2022 Filter inputs in the view are ");
-    list.createEl("strong", { text: "session-only" });
-    list.appendText(" - they don't modify these default settings");
-    list.createEl("br");
-    list.appendText("\u2022 To apply new defaults: change settings above, then ");
-    list.createEl("strong", { text: "close and reopen" });
-    list.appendText(" the Find-n-Replace view");
-    list.createEl("br");
-    list.appendText("\u2022 Leave settings empty to start with no filters by default");
-    list.createEl("br");
-    list.appendText("\u2022 Uses VSCode-style pattern syntax for familiar file filtering");
-    new import_obsidian12.Setting(containerEl).setName("User experience").setHeading();
-    new import_obsidian12.Setting(containerEl).setName("Confirm destructive actions").setDesc("Show confirmation dialog before replace all in vault operations. Disable for faster workflow if you're confident.").addToggle(
-      (toggle) => toggle.setValue(this.plugin.settings.confirmDestructiveActions).onChange(async (value) => {
-        this.plugin.settings.confirmDestructiveActions = value;
-        await this.plugin.saveSettings();
-      })
-    );
-    new import_obsidian12.Setting(containerEl).setName("Remember search options").setDesc("Persist match case, whole word, regex, and multiline toggle states across sessions. When disabled, toggles reset to off each time you open the view.").addToggle(
-      (toggle) => toggle.setValue(this.plugin.settings.rememberSearchOptions).onChange(async (value) => {
-        this.plugin.settings.rememberSearchOptions = value;
-        await this.plugin.saveSettings();
-      })
-    );
-    new import_obsidian12.Setting(containerEl).setName("Remember file group states across restarts").setDesc("Persist expand/collapse state of result file groups to disk. When enabled, group states are saved across Obsidian restarts. When disabled, states only persist during current session (reset when view closes).").addToggle(
-      (toggle) => toggle.setValue(this.plugin.settings.rememberFileGroupStates).onChange(async (value) => {
-        this.plugin.settings.rememberFileGroupStates = value;
-        await this.plugin.saveSettings();
-      })
-    );
-    new import_obsidian12.Setting(containerEl).setName("Warn about slow regex patterns").setDesc("Show a warning notice when using regex patterns that may cause performance issues (e.g., .* or .+ followed by specific characters).").addToggle(
-      (toggle) => toggle.setValue(this.plugin.settings.warnDangerousRegex).onChange(async (value) => {
-        this.plugin.settings.warnDangerousRegex = value;
-        await this.plugin.saveSettings();
-      })
-    );
-    new import_obsidian12.Setting(containerEl).setName("Troubleshooting").setHeading();
-    new import_obsidian12.Setting(containerEl).setName("Console logging level").setDesc("Control how much information is shown in the browser console. Higher levels include all lower levels.").addDropdown((dropdown) => {
-      dropdown.addOption(0 /* SILENT */.toString(), "Silent - no console output").addOption(1 /* ERROR */.toString(), "Errors only - critical failures only (recommended)").addOption(2 /* WARN */.toString(), "Standard - errors and warnings").addOption(3 /* INFO */.toString(), "Verbose - all info, warnings, and errors").addOption(4 /* DEBUG */.toString(), "Debug - full debugging output").addOption(5 /* TRACE */.toString(), "Trace - maximum verbosity (development)").setValue(this.plugin.settings.logLevel.toString()).onChange(async (value) => {
-        this.plugin.settings.logLevel = parseInt(value);
-        await this.plugin.saveSettings();
-      });
-    });
+        ]
+      },
+      // Search history group
+      {
+        type: "group",
+        heading: "Search history",
+        items: [
+          {
+            name: "Enable search history",
+            desc: "Save search, replace, and file filter patterns for quick access using arrow keys (\u2191\u2193).",
+            control: { type: "toggle", key: "enableSearchHistory" }
+          },
+          {
+            name: "Maximum history entries",
+            desc: "Maximum number of patterns to remember in each history. Range: 10-200.",
+            control: {
+              type: "text",
+              key: "maxHistorySize",
+              placeholder: "50",
+              validate: (value) => {
+                const num = parseInt(value, 10);
+                if (isNaN(num) || num < 10 || num > 200) {
+                  return "Must be between 10 and 200";
+                }
+                return void 0;
+              }
+            }
+          },
+          {
+            name: "Clear search history",
+            render: (setting) => {
+              const updateDesc = () => {
+                setting.setDesc(`Clear all saved search, replace, and file filter patterns. Current history size: ${this.plugin.settings.searchHistory.length} search, ${this.plugin.settings.replaceHistory.length} replace, ${this.plugin.settings.includeHistory.length} include, ${this.plugin.settings.excludeHistory.length} exclude.`);
+              };
+              updateDesc();
+              setting.addButton(
+                (button) => button.setButtonText("Clear all history").setDestructive().onClick(async () => {
+                  const modal = new ConfirmModal(
+                    this.app,
+                    "Are you sure you want to clear all search, replace, and file filter history? This action cannot be undone.",
+                    {
+                      confirmText: "Clear",
+                      confirmClass: "mod-warning",
+                      cancelText: "Cancel"
+                    }
+                  );
+                  const confirmed = await modal.openAndConfirm();
+                  if (confirmed) {
+                    this.plugin.historyManager.clearAllHistory();
+                    await this.plugin.saveSettings();
+                    new import_obsidian12.Notice("Search, replace, and filter history cleared");
+                    updateDesc();
+                  }
+                })
+              );
+            }
+          }
+        ]
+      },
+      // File filtering defaults group
+      {
+        type: "group",
+        heading: "File filtering defaults",
+        items: [
+          {
+            name: "Filter behavior",
+            desc: "These settings provide default values when opening a new find & replace view. Once a view is open, filter changes are session-only."
+          },
+          {
+            name: "Default files to include",
+            desc: 'Default patterns that populate the "files to include" input when opening the view. Supports extensions (.md), folders (Notes/), and globs (*.js). Example: .md,.txt,Notes/,Projects/',
+            render: (setting) => {
+              setting.addText(
+                (text) => text.setPlaceholder("e.g. .md, Notes/, *.js").setValue(this.plugin.settings.defaultIncludePatterns.join(",")).onChange(async (value) => {
+                  this.plugin.settings.defaultIncludePatterns = value.split(",").map((pattern) => pattern.trim()).filter((pattern) => pattern.length > 0);
+                  await this.plugin.saveSettings();
+                })
+              );
+            }
+          },
+          {
+            name: "Default files to exclude",
+            desc: 'Default patterns that populate the "files to exclude" input when opening the view. Supports globs (*.tmp), folders (Archive/), and patterns (*backup*). Example: *.tmp,Archive/,*backup*',
+            render: (setting) => {
+              setting.addText(
+                (text) => text.setPlaceholder("e.g. *.tmp, Archive/, *backup*").setValue(this.plugin.settings.defaultExcludePatterns.join(",")).onChange(async (value) => {
+                  this.plugin.settings.defaultExcludePatterns = value.split(",").map((pattern) => pattern.trim()).filter((pattern) => pattern.length > 0);
+                  await this.plugin.saveSettings();
+                })
+              );
+            }
+          },
+          {
+            name: "How default file filters work",
+            render: (setting) => {
+              setting.settingEl.addClass("filter-info-box");
+              const descEl = setting.descEl;
+              const list = descEl.createEl("div");
+              list.appendText("\u2022 These default settings populate the ");
+              list.createEl("strong", { text: '"files to include"' });
+              list.appendText(" and ");
+              list.createEl("strong", { text: '"files to exclude"' });
+              list.appendText(" inputs when you open the Find-n-Replace view");
+              list.createEl("br");
+              list.appendText("\u2022 Filter inputs in the view are ");
+              list.createEl("strong", { text: "session-only" });
+              list.appendText(" - they don't modify these default settings");
+              list.createEl("br");
+              list.appendText("\u2022 To apply new defaults: change settings above, then ");
+              list.createEl("strong", { text: "close and reopen" });
+              list.appendText(" the Find-n-Replace view");
+              list.createEl("br");
+              list.appendText("\u2022 Leave settings empty to start with no filters by default");
+              list.createEl("br");
+              list.appendText("\u2022 Uses VSCode-style pattern syntax for familiar file filtering");
+            }
+          }
+        ]
+      },
+      // User experience group
+      {
+        type: "group",
+        heading: "User experience",
+        items: [
+          {
+            name: "Confirm destructive actions",
+            desc: "Show confirmation dialog before replace all in vault operations. Disable for faster workflow if you're confident.",
+            control: { type: "toggle", key: "confirmDestructiveActions" }
+          },
+          {
+            name: "Remember search options",
+            desc: "Persist match case, whole word, regex, and multiline toggle states across sessions. When disabled, toggles reset to off each time you open the view.",
+            control: { type: "toggle", key: "rememberSearchOptions" }
+          },
+          {
+            name: "Remember file group states across restarts",
+            desc: "Persist expand/collapse state of result file groups to disk. When enabled, group states are saved across Obsidian restarts. When disabled, states only persist during current session (reset when view closes).",
+            control: { type: "toggle", key: "rememberFileGroupStates" }
+          },
+          {
+            name: "Warn about slow regex patterns",
+            desc: "Show a warning notice when using regex patterns that may cause performance issues (e.g., .* or .+ followed by specific characters).",
+            control: { type: "toggle", key: "warnDangerousRegex" }
+          }
+        ]
+      },
+      // Troubleshooting group
+      {
+        type: "group",
+        heading: "Troubleshooting",
+        items: [
+          {
+            name: "Console logging level",
+            desc: "Control how much information is shown in the browser console. Higher levels include all lower levels.",
+            control: {
+              type: "dropdown",
+              key: "logLevel",
+              options: {
+                [0 /* SILENT */.toString()]: "Silent - no console output",
+                [1 /* ERROR */.toString()]: "Errors only - critical failures only (recommended)",
+                [2 /* WARN */.toString()]: "Standard - errors and warnings",
+                [3 /* INFO */.toString()]: "Verbose - all info, warnings, and errors",
+                [4 /* DEBUG */.toString()]: "Debug - full debugging output",
+                [5 /* TRACE */.toString()]: "Trace - maximum verbosity (development)"
+              }
+            }
+          }
+        ]
+      }
+    ];
   }
 };
 
@@ -5524,6 +5858,16 @@ var VaultFindReplacePlugin = class extends import_obsidian13.Plugin {
         }
       }
     });
+    this.addCommand({
+      id: "toggle-word-wrap",
+      name: "Toggle word-wrap in results",
+      callback: () => {
+        const view = this.getActiveView();
+        if (view) {
+          view.commandToggleWordWrap();
+        }
+      }
+    });
     this.registerFileEvents();
   }
   /**
@@ -5642,11 +5986,11 @@ var VaultFindReplacePlugin = class extends import_obsidian13.Plugin {
   }
   async loadSettings() {
     try {
-      const loadedData = await this.loadData() || {};
-      this.settings = Object.assign({}, DEFAULT_SETTINGS, loadedData);
+      const loadedData = await this.loadData();
+      this.settings = Object.assign(structuredClone(DEFAULT_SETTINGS), loadedData != null ? loadedData : {});
     } catch (error) {
       console.error("find-n-replace: Failed to load settings, using defaults:", error);
-      this.settings = { ...DEFAULT_SETTINGS };
+      this.settings = structuredClone(DEFAULT_SETTINGS);
     }
   }
   async saveSettings() {

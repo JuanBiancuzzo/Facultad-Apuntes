@@ -25,13 +25,15 @@
       },
       "openFile": false,
       "openFileInMode": "default",
-      "fileExistsMode": "Overwrite the file",
-      "setFileExistsBehavior": true,
       "fileOpening": {
         "location": "tab",
         "direction": "vertical",
         "focus": true,
         "mode": "default"
+      },
+      "fileExistsBehavior": {
+        "kind": "apply",
+        "mode": "overwrite"
       }
     },
     {
@@ -59,13 +61,15 @@
       },
       "openFile": true,
       "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": true,
       "fileOpening": {
         "location": "tab",
         "direction": "vertical",
         "focus": true,
         "mode": "default"
+      },
+      "fileExistsBehavior": {
+        "kind": "apply",
+        "mode": "increment"
       }
     },
     {
@@ -93,13 +97,15 @@
       },
       "openFile": true,
       "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": true,
       "fileOpening": {
         "location": "tab",
         "direction": "vertical",
         "focus": true,
         "mode": "default"
+      },
+      "fileExistsBehavior": {
+        "kind": "apply",
+        "mode": "increment"
       }
     },
     {
@@ -127,13 +133,15 @@
       },
       "openFile": true,
       "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": true,
       "fileOpening": {
         "location": "tab",
         "direction": "vertical",
         "focus": true,
         "mode": "default"
+      },
+      "fileExistsBehavior": {
+        "kind": "apply",
+        "mode": "increment"
       }
     },
     {
@@ -161,13 +169,15 @@
       },
       "openFile": true,
       "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": true,
       "fileOpening": {
         "location": "tab",
         "direction": "vertical",
         "focus": true,
         "mode": "default"
+      },
+      "fileExistsBehavior": {
+        "kind": "apply",
+        "mode": "increment"
       }
     },
     {
@@ -197,26 +207,32 @@
       },
       "openFile": true,
       "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": false,
       "fileOpening": {
         "location": "tab",
         "direction": "vertical",
         "focus": true,
         "mode": "default"
+      },
+      "fileExistsBehavior": {
+        "kind": "prompt"
       }
     }
   ],
   "inputPrompt": "single-line",
   "persistInputPromptDrafts": true,
   "useSelectionAsCaptureValue": true,
+  "searchNestedChoices": true,
+  "templateFolderLauncherRow": "bottom",
   "devMode": false,
-  "templateFolderPath": "_template",
+  "templateFolderPaths": [
+    "_template"
+  ],
   "announceUpdates": "all",
-  "version": "2.11.0",
+  "version": "2.21.0",
   "globalVariables": {},
   "onePageInputEnabled": false,
   "disableOnlineFeatures": true,
+  "enableUriCallbacks": false,
   "enableRibbonIcon": false,
   "showCaptureNotification": true,
   "showInputCancellationNotification": false,
@@ -260,19 +276,73 @@
             "maxTokens": 8192
           },
           {
-            "name": "gpt-4-32k",
-            "maxTokens": 32768
-          },
-          {
-            "name": "gpt-4-1106-preview",
-            "maxTokens": 128000
-          },
-          {
             "name": "text-davinci-003",
             "maxTokens": 4096
+          },
+          {
+            "name": "gpt-5.5",
+            "maxTokens": 1050000,
+            "maxOutputTokens": 128000,
+            "supportsTemperature": false
+          },
+          {
+            "name": "gpt-5.4",
+            "maxTokens": 1050000,
+            "maxOutputTokens": 128000,
+            "supportsTemperature": false
+          },
+          {
+            "name": "gpt-5.4-mini",
+            "maxTokens": 400000,
+            "maxOutputTokens": 128000,
+            "supportsTemperature": false
+          },
+          {
+            "name": "gpt-5.4-nano",
+            "maxTokens": 400000,
+            "maxOutputTokens": 128000,
+            "supportsTemperature": false
+          },
+          {
+            "name": "gpt-4.1",
+            "maxTokens": 1047576,
+            "maxOutputTokens": 32768,
+            "supportsTemperature": true
+          },
+          {
+            "name": "gpt-4.1-mini",
+            "maxTokens": 1047576,
+            "maxOutputTokens": 32768,
+            "supportsTemperature": true
+          },
+          {
+            "name": "gpt-4o",
+            "maxTokens": 128000,
+            "maxOutputTokens": 16384,
+            "supportsTemperature": true
+          },
+          {
+            "name": "gpt-4o-mini",
+            "maxTokens": 128000,
+            "maxOutputTokens": 16384,
+            "supportsTemperature": true
+          },
+          {
+            "name": "o3",
+            "maxTokens": 200000,
+            "maxOutputTokens": 100000,
+            "supportsTemperature": false
+          },
+          {
+            "name": "o4-mini",
+            "maxTokens": 200000,
+            "maxOutputTokens": 100000,
+            "supportsTemperature": false
           }
         ],
-        "modelSource": "auto"
+        "modelSource": "modelsDev",
+        "autoSyncModels": true,
+        "id": "openai"
       }
     ]
   },
@@ -287,6 +357,11 @@
     "migrateFileOpeningSettings": true,
     "backfillFileOpeningDefaults": true,
     "setProviderModelDiscoveryMode": true,
-    "migrateProviderApiKeysToSecretStorage": true
+    "migrateProviderApiKeysToSecretStorage": true,
+    "consolidateFileExistsBehavior": true,
+    "repairTemplateFileExistsBehavior": true,
+    "migrateToMultipleTemplateFolders": true,
+    "refreshStaleDefaultModelSeeds": true,
+    "pinAiModelRefs": true
   }
 }
