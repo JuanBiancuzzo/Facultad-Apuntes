@@ -1,33 +1,31 @@
 import sqlite3 as sql
+from typing import dict, list
 
-from typing import Dict, List
-from dataclasses import dataclass
-
-from dependencias import Nodo, Dato, Clave
-from logger import loggear, LoggerNivel
-
-from contenido.dependencias import TipoNodo
 from contenido.archivo import Archivo
+from contenido.dependencias import TipoNodo
+from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.embedding import Embedding
 from contenido.links import coleccion as link
 from contenido.referencias.diccionario import ReferenciaDiccionario
+from dependencias import Clave, Dato, Nodo
+
 from .tablas import TablaDiccionario as Tabla
 
-@dataclass
+
 class Diccionario(Dato):
-    clave_definicion: Clave 
+    clave_definicion: Clave
     clave_ref_diccionario: Clave
 
     @classmethod
-    def parsear(cls, archivo: Archivo) -> List[Dato]:
+    def parsear(cls, archivo: Archivo) -> list[Dato]:
         datos = []
 
         texto = BloqueTexto(archivo.contenido)
         datos.append(texto)
 
         diccionario = Diccionario(
-            texto.obtener_clave(), 
+            texto.obtener_clave(),
             ReferenciaDiccionario._obtener_clave(archivo.extra["numReferencia"]),
         )
         datos.append(diccionario)
@@ -41,38 +39,42 @@ class Diccionario(Dato):
 
         return datos
 
-    def dependo(self) -> List[Clave]: 
-        return [ self.clave_definicion, self.clave_ref_diccionario ]
+    def dependo(self) -> list[Clave]:
+        return [self.clave_definicion, self.clave_ref_diccionario]
 
-    def obtener_clave(self) -> Clave: 
+    def obtener_clave(self) -> Clave:
         return Diccionario._obtener_clave(self.clave_ref_diccionario)
 
     @classmethod
-    def _obtener_clave(cls, clave_ref_diccionario: Clave) -> Clave: 
-        return Clave.de_texto(TipoNodo.DICCIONARIO, f"{clave_ref_diccionario}>|>{clave_ref_diccionario}")
+    def _obtener_clave(cls, clave_ref_diccionario: Clave) -> Clave:
+        return Clave.de_texto(
+            TipoNodo.DICCIONARIO, f"{clave_ref_diccionario}>|>{clave_ref_diccionario}"
+        )
 
-    def obtener_link(self) -> link.Link: 
+    def obtener_link(self) -> link.Link:
         return Diccionario._obtener_link(self.obtener_clave())
 
     @classmethod
-    def _obtener_link(cls, clave: Clave) -> link.Link: 
+    def _obtener_link(cls, clave: Clave) -> link.Link:
         return link.Diccionario.gen(clave)
 
-    def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo | None:
-        try: 
+    def insertar_datos(
+        self, cursor: sql.Cursor, dependencias: dict[Clave, int]
+    ) -> Nodo | None:
+        try:
             id_diccionario = Tabla.insertar(
-                cursor, 
+                cursor,
                 dependencias[self.clave_definicion],
-                dependencias[self.clave_ref_diccionario], 
+                dependencias[self.clave_ref_diccionario],
             )
 
-        except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al insertar coleccion de diccionario, con clave de definicion: {self.clave_ref_diccionario}")
-            raise e 
+        except Exception as err:
+            raise ErrorInsertar(
+                f"Al insertar coleccion de diccionario, con clave de definicion: {self.clave_ref_diccionario}",
+                err,
+            )
 
         if id_diccionario is None:
-            mensaje = f"La definicion insertada no tiene id"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            raise ErrorIdNoGenerado("La definicion insertada no tiene id")
 
         return Nodo(id_diccionario, self.obtener_clave())

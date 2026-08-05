@@ -1,14 +1,16 @@
-from sqlite3 import Connection as Conn, Cursor
-from tablas import Tabla, registrar_tabla
-from typing import Dict, List, Any
 import datetime as dt
+from sqlite3 import Connection as Conn
+from sqlite3 import Cursor
+from typing import Any, dict, list
 
-from contenido.tablas import TablasColeccion as Tablas, TablasGenerales, TablasReferencias, timestamp
+from contenido.tablas import TablasColeccion as Tablas
+from contenido.tablas import TablasGenerales, TablasReferencias, timestamp
+from tablas import Tabla, registrar_tabla
 
-@registrar_tabla
+
 class TablaColeccion(Tabla):
     nombre = Tablas.COLECCION
-    necesito_tablas = [ TablasGenerales.BLOQUE_TEXTO ]
+    necesito_tablas = [TablasGenerales.BLOQUE_TEXTO]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -22,12 +24,18 @@ class TablaColeccion(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, tipo: str, estado: str, id_descripcion: int) -> int | None: 
-        return cls._insertar(cursor, {
-            "tipo": tipo,
-            "estado": estado,
-            "id_descripcion": id_descripcion,
-        })
+    def insertar(
+        cls, cursor: Cursor, tipo: str, estado: str, id_descripcion: int
+    ) -> int | None:
+        return cls._insertar(
+            cursor,
+            {
+                "tipo": tipo,
+                "estado": estado,
+                "id_descripcion": id_descripcion,
+            },
+        )
+
 
 @registrar_tabla
 class TablaAjedrez(Tabla):
@@ -46,19 +54,25 @@ class TablaAjedrez(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, nombre: str, tipo: str, inicio: str, movimientos: List[str]) -> int | None: 
+    def insertar(
+        cls, cursor: Cursor, nombre: str, tipo: str, inicio: str, movimientos: list[str]
+    ) -> int | None:
         movimientos_conjunto = ";".join(movimientos)
-        return cls._insertar(cursor, {
-            "nombre": nombre,
-            "tipo": tipo,
-            "inicio": inicio,
-            "movimientos": movimientos_conjunto
-        })
+        return cls._insertar(
+            cursor,
+            {
+                "nombre": nombre,
+                "tipo": tipo,
+                "inicio": inicio,
+                "movimientos": movimientos_conjunto,
+            },
+        )
+
 
 @registrar_tabla
 class TablaEjercicio(Tabla):
     nombre = Tablas.EJERCICIOS
-    necesito_tablas = [ TablasGenerales.BLOQUE_TEXTO ]
+    necesito_tablas = [TablasGenerales.BLOQUE_TEXTO]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -74,16 +88,26 @@ class TablaEjercicio(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, nombre: str | None, etapa: str, id_enunciado: int, id_resolucion: int, id_resultado: int | None) -> int | None: 
-        valores: Dict[str, Any] = {
+    def insertar(
+        cls,
+        cursor: Cursor,
+        nombre: str | None,
+        etapa: str,
+        id_enunciado: int,
+        id_resolucion: int,
+        id_resultado: int | None,
+    ) -> int | None:
+        valores: dict[str, Any] = {
             "etapa": etapa,
             "id_enunciado": id_enunciado,
             "id_resolucion": id_resolucion,
             "id_resultado": id_resultado,
         }
-        if nombre: valores["nombre"] = nombre
+        if nombre:
+            valores["nombre"] = nombre
 
         return cls._insertar(cursor, valores)
+
 
 @registrar_tabla
 class TablaGuia(Tabla):
@@ -99,15 +123,19 @@ class TablaGuia(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, nombre: str) -> int | None: 
-        return cls._insertar(cursor, {
-            "nombre": nombre,
-        })
+    def insertar(cls, cursor: Cursor, nombre: str) -> int | None:
+        return cls._insertar(
+            cursor,
+            {
+                "nombre": nombre,
+            },
+        )
+
 
 @registrar_tabla
 class TablaEjerciciosGuia(Tabla):
     nombre = Tablas.GUIA_EJERCICIOS
-    necesito_tablas = [ Tablas.GUIAS, Tablas.EJERCICIOS ]
+    necesito_tablas = [Tablas.GUIAS, Tablas.EJERCICIOS]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -118,11 +146,15 @@ class TablaEjerciciosGuia(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, id_guia: int, id_ejercicio: int) -> None: 
-        cls._insertar(cursor, {
-            "id_guia": id_guia,
-            "id_ejercicio": id_ejercicio,
-        })
+    def insertar(cls, cursor: Cursor, id_guia: int, id_ejercicio: int) -> None:
+        cls._insertar(
+            cursor,
+            {
+                "id_guia": id_guia,
+                "id_ejercicio": id_ejercicio,
+            },
+        )
+
 
 @registrar_tabla
 class TablaEvaluacion(Tabla):
@@ -138,15 +170,19 @@ class TablaEvaluacion(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, fecha: dt.date) -> int | None: 
-        return cls._insertar(cursor, {
-            "fecha": timestamp(fecha),
-        })
+    def insertar(cls, cursor: Cursor, fecha: dt.date) -> int | None:
+        return cls._insertar(
+            cursor,
+            {
+                "fecha": timestamp(fecha),
+            },
+        )
+
 
 @registrar_tabla
 class TablaEjerciciosEvaluacion(Tabla):
     nombre = Tablas.EVALUACION_EJERCICIOS
-    necesito_tablas = [ Tablas.EVALUACION, Tablas.EJERCICIOS ]
+    necesito_tablas = [Tablas.EVALUACION, Tablas.EJERCICIOS]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -157,17 +193,21 @@ class TablaEjerciciosEvaluacion(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, id_evaluacion: int, id_ejercicio: int) -> None: 
-        cls._insertar(cursor, {
-            "id_evaluacion": id_evaluacion,
-            "id_ejercicio": id_ejercicio,
-        })
+    def insertar(cls, cursor: Cursor, id_evaluacion: int, id_ejercicio: int) -> None:
+        cls._insertar(
+            cursor,
+            {
+                "id_evaluacion": id_evaluacion,
+                "id_ejercicio": id_ejercicio,
+            },
+        )
+
 
 @registrar_tabla
 class TablaLibro(Tabla):
     nombre = Tablas.LIBRO
-    necesito_tablas = [ 
-        TablasGenerales.IMAGENES, 
+    necesito_tablas = [
+        TablasGenerales.IMAGENES,
         TablasGenerales.BLOQUE_TEXTO,
         TablasReferencias.LIBRO,
     ]
@@ -185,20 +225,30 @@ class TablaLibro(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, etapa: str, id_resumen: int | None, id_cover: int | None, id_ref_libro: int) -> int | None: 
-        valores: Dict[str, Any] = {
+    def insertar(
+        cls,
+        cursor: Cursor,
+        etapa: str,
+        id_resumen: int | None,
+        id_cover: int | None,
+        id_ref_libro: int,
+    ) -> int | None:
+        valores: dict[str, Any] = {
             "etapa": etapa,
             "id_libro_referencia": id_ref_libro,
         }
-        if id_resumen: valores["id_resumen"] = id_resumen
-        if id_cover: valores["id_cover"] = id_cover
+        if id_resumen:
+            valores["id_resumen"] = id_resumen
+        if id_cover:
+            valores["id_cover"] = id_cover
         return cls._insertar(cursor, valores)
+
 
 @registrar_tabla
 class TablaCapitulo(Tabla):
     nombre = Tablas.CAPITULO
-    necesito_tablas = [ 
-        Tablas.LIBRO, 
+    necesito_tablas = [
+        Tablas.LIBRO,
         TablasGenerales.BLOQUE_TEXTO,
         TablasReferencias.CAPITULOS,
     ]
@@ -216,19 +266,28 @@ class TablaCapitulo(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, etapa: str, id_resumen: int | None, id_libro: int, id_ref_capitulo: int) -> int | None: 
-        valores: Dict[str, Any] = {
+    def insertar(
+        cls,
+        cursor: Cursor,
+        etapa: str,
+        id_resumen: int | None,
+        id_libro: int,
+        id_ref_capitulo: int,
+    ) -> int | None:
+        valores: dict[str, Any] = {
             "etapa": etapa,
             "id_libro": id_libro,
             "id_capitulo_referencia": id_ref_capitulo,
         }
-        if id_resumen: valores["id_resumen"] = id_resumen
+        if id_resumen:
+            valores["id_resumen"] = id_resumen
         return cls._insertar(cursor, valores)
+
 
 @registrar_tabla
 class TablaPaper(Tabla):
     nombre = Tablas.PAPER
-    necesito_tablas = [ 
+    necesito_tablas = [
         TablasGenerales.BLOQUE_TEXTO,
         TablasReferencias.PAPER,
     ]
@@ -245,13 +304,17 @@ class TablaPaper(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, etapa: str, id_resumen: int | None, id_ref_paper: int) -> int | None: 
-        valores: Dict[str, Any] = {
+    def insertar(
+        cls, cursor: Cursor, etapa: str, id_resumen: int | None, id_ref_paper: int
+    ) -> int | None:
+        valores: dict[str, Any] = {
             "etapa": etapa,
             "id_paper_referencia": id_ref_paper,
         }
-        if id_resumen: valores["id_resumen"] = id_resumen
+        if id_resumen:
+            valores["id_resumen"] = id_resumen
         return cls._insertar(cursor, valores)
+
 
 @registrar_tabla
 class TablaDiccionario(Tabla):
@@ -272,8 +335,13 @@ class TablaDiccionario(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, id_definicion: int, id_ref_diccionario: int) -> int | None: 
-        return cls._insertar(cursor, {
-            "id_definicion": id_definicion,
-            "id_diccionario_referencia": id_ref_diccionario,
-        })
+    def insertar(
+        cls, cursor: Cursor, id_definicion: int, id_ref_diccionario: int
+    ) -> int | None:
+        return cls._insertar(
+            cursor,
+            {
+                "id_definicion": id_definicion,
+                "id_diccionario_referencia": id_ref_diccionario,
+            },
+        )

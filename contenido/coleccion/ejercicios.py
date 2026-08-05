@@ -1,77 +1,78 @@
 import sqlite3 as sql
-
-from typing import Iterable, Dict, List, Tuple
 from dataclasses import dataclass
+from typing import dict, iterable, list, tuple
 
-from dependencias import Nodo, Dato, Clave
-from logger import loggear, LoggerNivel
-
+from contenido.archivo import Archivo, Seccion, Texto
 from contenido.dependencias import TipoNodo
-from contenido.archivo import Archivo, Texto, Seccion
-from contenido.general.embedding import Embedding
-from contenido.links import coleccion as link
+from contenido.errores import ErrorIdNoGenerado, ErrorInsertar, ErrorParseo
 from contenido.general.bloque_texto import BloqueTexto
+from contenido.general.embedding import Embedding
 from contenido.general.etapa import Etapa
+from contenido.links import coleccion as link
+from dependencias import Clave, Dato, Nodo
+
 from .tablas import TablaEjercicio as Tabla
 
 SECCION_ENUNCIADO = "Enunciado"
 SECCION_RESOLUCION = "Resolución"
 SECCION_RESULTADO = "Resultado"
 
+
 @dataclass
 class Ejercicio(Dato):
     numero: int
     nombre: str | None
-    etapa: Etapa 
+    etapa: Etapa
     enunciado: Clave
     resolucion: Clave
     resultado: Clave | None
 
     @classmethod
-    def parsear(cls, archivo: Archivo) -> List[Dato]:
+    def parsear(cls, archivo: Archivo) -> list[Dato]:
         etapa = Etapa.de_texto(archivo.extra["etapa"])
         if etapa is None:
-            mensaje = f"La etapa de la materia {archivo.extra["nombreMateria"]} no es valida {archivo.extra["etapa"]}"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            mensaje = f"La etapa de la materia {archivo.extra['nombreMateria']} no es valida {archivo.extra['etapa']}"
+            raise ErrorParseo(mensaje)
 
-        try: 
+        try:
             numero = int(archivo.extra["numero"])
 
         except Exception as err:
-            loggear(LoggerNivel.FATAL, f"Ejercicio en el archivo {archivo.metadata.path()} no tiene un numero valido")
-            raise err
+            mensaje = f"Ejercicio en el archivo {archivo.metadata.path()} no tiene un numero valido"
+            raise ErrorParseo(mensaje, err)
 
         secciones = [SECCION_ENUNCIADO, SECCION_RESOLUCION, SECCION_RESULTADO]
-        resultado_split = archivo.contenido.split_secciones([
-            Seccion(1, nombre) for nombre in secciones
-        ])
+        resultado_split = archivo.contenido.split_secciones(
+            [Seccion(1, nombre) for nombre in secciones]
+        )
 
-        enunciado, resolucion, resultado = tuple(( 
+        enunciado, resolucion, resultado = tuple(
             seccion if seccion is not None else None
-            for seccion in map(lambda s: resultado_split[s], secciones)
-        ))
+            for seccion in (resultado_split[s] for s in secciones)
+        )
         if enunciado is None or resolucion is None:
             mensaje = f"El ejercicio {numero} no tiene enunciado o resolucion"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            raise ErrorParseo(mensaje)
 
         enunciado_vacio = enunciado.vacio()
         enunciado = BloqueTexto(
-            Texto.parsear(f"%% Ejercicio {numero} - Enunciado %%") 
-            if enunciado_vacio else enunciado
+            Texto.parsear(f"%% Ejercicio {numero} - Enunciado %%")
+            if enunciado_vacio
+            else enunciado
         )
         resolucion_vacio = resolucion.vacio()
         resolucion = BloqueTexto(
-            Texto.parsear(f"%% Ejercicio {numero} - Resolucion %%") 
-            if resolucion_vacio  else resolucion
+            Texto.parsear(f"%% Ejercicio {numero} - Resolucion %%")
+            if resolucion_vacio
+            else resolucion
         )
 
         if resultado is not None:
             resultado = None if resultado.vacio() else BloqueTexto(resultado)
 
-        datos: List[Dato] = [enunciado, resolucion]
-        if resultado: datos.append(resultado)
+        datos: list[Dato] = [enunciado, resolucion]
+        if resultado:
+            datos.append(resultado)
 
         ejercicio = Ejercicio(
             numero,
@@ -86,15 +87,16 @@ class Ejercicio(Dato):
         # Embedding a para todo texto relacionado
         clave_ejercicio = ejercicio.obtener_clave()
 
-        if ejercicio.nombre: 
-            link_nombre = link.Ejercicio.gen_nombre(clave_ejercicio) 
+        if ejercicio.nombre:
+            link_nombre = link.Ejercicio.gen_nombre(clave_ejercicio)
             datos.append(link_nombre)
             datos.extend(Embedding.parsear((link_nombre, ejercicio.nombre)))
 
-        validos = [ not enunciado_vacio, not resolucion_vacio, resultado is not None ]
-        bloques = [ enunciado, resolucion, resultado ]
-        generadores = [ 
-            link.Ejercicio.gen_enunciado, link.Ejercicio.gen_resolucion,
+        validos = [not enunciado_vacio, not resolucion_vacio, resultado is not None]
+        bloques = [enunciado, resolucion, resultado]
+        generadores = [
+            link.Ejercicio.gen_enunciado,
+            link.Ejercicio.gen_resolucion,
             link.Ejercicio.gen_resultado,
         ]
 
@@ -102,22 +104,22 @@ class Ejercicio(Dato):
             if not valido:
                 continue
 
-            pares: Iterable[Tuple[link.Link, str]] = (
-                ( generador(clave_ejercicio, id), texto )
+            pares: iterable[tuple[link.Link, str]] = (
+                (generador(clave_ejercicio, id), texto)
                 for id, texto in bloque.texto.chunks()
             )
-            datos.extend(( link for link, _ in pares ))
+            datos.extend((link for link, _ in pares))
             datos.extend(Embedding.parsear(*pares))
 
         return datos
 
-    def dependo(self) -> List[Clave]: 
-        dependencias = [ self.enunciado, self.resolucion ]
+    def dependo(self) -> list[Clave]:
+        dependencias = [self.enunciado, self.resolucion]
         if self.resultado is not None:
             dependencias.append(self.resultado)
         return dependencias
 
-    def obtener_clave(self) -> Clave: 
+    def obtener_clave(self) -> Clave:
         return Ejercicio._obtener_clave(self.numero)
 
     @classmethod
@@ -131,10 +133,12 @@ class Ejercicio(Dato):
     def _obtener_link(cls, clave: Clave) -> link.Link:
         return link.Ejercicio.gen(clave)
 
-    def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo | None:
-        try: 
+    def insertar_datos(
+        self, cursor: sql.Cursor, dependencias: dict[Clave, int]
+    ) -> Nodo | None:
+        try:
             id_ejercicio = Tabla.insertar(
-                cursor, 
+                cursor,
                 self.nombre,
                 self.etapa.value,
                 dependencias[self.enunciado],
@@ -142,13 +146,10 @@ class Ejercicio(Dato):
                 dependencias[self.resultado] if self.resultado is not None else None,
             )
 
-        except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al insertar ejercicio con numero: {self.numero}")
-            raise e
+        except Exception as err:
+            raise ErrorInsertar(f"Al insertar ejercicio con numero: {self.numero}", err)
 
         if id_ejercicio is None:
-            mensaje = f"El ejercicio insertado no tiene id"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje) 
+            raise ErrorIdNoGenerado("El ejercicio insertado no tiene id")
 
         return Nodo(id_ejercicio, self.obtener_clave())

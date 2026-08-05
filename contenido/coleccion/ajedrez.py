@@ -1,47 +1,55 @@
 import sqlite3 as sql
-
-from typing import Dict, List
 from dataclasses import dataclass
 from enum import StrEnum
+from typing import dict, list
 
-from dependencias import Dato, Nodo, Clave
-from logger import loggear, LoggerNivel
-
-from contenido.dependencias import TipoNodo
 from contenido.archivo import Archivo
+from contenido.dependencias import TipoNodo
+from contenido.errores import ErrorIdNoGenerado, ErrorInsertar, ErrorParseo
 from contenido.general.embedding import Embedding
 from contenido.links import coleccion as link
+from dependencias import Clave, Dato, Nodo
+
 from .tablas import TablaAjedrez as Tabla
 
+
 class TipoMovimientosAjedrez(StrEnum):
-    APERTURA_ABIERTA     = "Aperturas abiertas"
+    APERTURA_ABIERTA = "Aperturas abiertas"
     APERTURA_SEMIABIERTA = "Aperturas semiabiertas"
-    APERTURA_CERRADA     = "Aperturas cerradas"
+    APERTURA_CERRADA = "Aperturas cerradas"
     APERTURA_SEMICERRADA = "Aperturas semicerradas"
-    APERTURA_DE_FLANCO   = "Aperturas de flanco"
+    APERTURA_DE_FLANCO = "Aperturas de flanco"
     APERTURA_IRREGULARES = "Aperturas irregulares"
 
     MEDIO_JUEGO = "Medio juego"
     FINAL = "Final"
+
 
 @dataclass
 class Ajedrez(Dato):
     nombre: str
     tipo: TipoMovimientosAjedrez
     inicio: str
-    movimientos: List[str]
+    movimientos: list[str]
 
     @classmethod
-    def parsear(cls, archivo: Archivo) -> List[Dato]:
+    def parsear(cls, archivo: Archivo) -> list[Dato]:
         datos = []
 
-        ajedrez = Ajedrez(
-            archivo.metadata.nombre,
-            archivo.extra["tipo"],
-            archivo.extra["inicio"],
-            list(map(lambda par: "-".join(par), archivo.extra["movimientos"])),
-        )
-        datos.append(ajedrez)
+        try:
+            ajedrez = Ajedrez(
+                archivo.metadata.nombre,
+                archivo.extra["tipo"],
+                archivo.extra["inicio"],
+                ["-".join(par) for par in archivo.extra["movimientos"]],
+            )
+            datos.append(ajedrez)
+
+        except Exception as err:
+            raise ErrorParseo(
+                f"En el archivo: {archivo.metadata.nombre} no se pudo generar movimiento de ajedrez",
+                err,
+            )
 
         link_ajedrez = ajedrez.obtener_link()
         datos.append(link_ajedrez)
@@ -50,25 +58,29 @@ class Ajedrez(Dato):
 
         return datos
 
-    def dependo(self) -> List[Clave]: 
+    def dependo(self) -> list[Clave]:
         return super().dependo()
 
-    def obtener_clave(self) -> Clave: 
+    def obtener_clave(self) -> Clave:
         return Ajedrez._obtener_clave(self.nombre, self.tipo, self.inicio)
-    
+
     @classmethod
-    def _obtener_clave(cls, nombre: str, tipo: TipoMovimientosAjedrez, inicio: str) -> Clave: 
+    def _obtener_clave(
+        cls, nombre: str, tipo: TipoMovimientosAjedrez, inicio: str
+    ) -> Clave:
         return Clave.de_texto(TipoNodo.AJEDREZ, f"{nombre}({tipo})->{inicio}")
 
-    def obtener_link(self) -> link.Link: 
+    def obtener_link(self) -> link.Link:
         return Ajedrez._obtener_link(self.obtener_clave())
 
     @classmethod
-    def _obtener_link(cls, clave: Clave) -> link.Link: 
+    def _obtener_link(cls, clave: Clave) -> link.Link:
         return link.Ajedrez.gen(clave)
 
-    def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo:
-        try: 
+    def insertar_datos(
+        self, cursor: sql.Cursor, dependencias: dict[Clave, int]
+    ) -> Nodo:
+        try:
             id_ajedrez = Tabla.insertar(
                 cursor,
                 self.nombre,
@@ -77,14 +89,12 @@ class Ajedrez(Dato):
                 self.movimientos,
             )
 
-        except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al insertar movimiento de ajedrez con nombre: {self.nombre}")
-            raise e
+        except Exception as err:
+            raise ErrorInsertar(
+                f"Al insertar movimiento de ajedrez con nombre: {self.nombre}", err
+            )
 
         if id_ajedrez is None:
-            mensaje = f"El movimiento de ajedrez insertado no tiene id"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            raise ErrorIdNoGenerado("El movimiento de ajedrez insertado no tiene id")
 
         return Nodo(id_ajedrez, self.obtener_clave())
-
