@@ -25,6 +25,4 @@ vinculoFacultad:
 ```
 # Definición
 ---
-El accuracy es una [[ingeniería en informática/orga/Machine learning/Métrica de un modelo|métrica]] ... donde se define como $$ \text{Accuracy} = \frac{\#\text{correctos}}{\#\text{totales}} $$ donde tiene un [[Hiper-parámetros de un modelo|hiper-parámetro]] de como determinar que es un valor correcto
-
-También se puede definir más simplemente para un [[ingeniería electrónica/taller de señales/Clasificación en Inteligencia Artificial/Clasificador|clasificador]] que intenta estimar $\varphi(X)$ como $$ \mathbb{P}(Y = \varphi(X)) $$
+La [[ingeniería en informática/orga/Machine learning/Métrica de un modelo|métrica]] de accuracy es la [[investigación/matemática/Probabilidad/Probabilidad|probabilidad]]  de que el [[ingeniería electrónica/taller de señales/Clasificación en Inteligencia Artificial/Clasificador|clasificador]] $\varphi(X)$ sea igual al valor que se estima, se define como $$ \text{Accuracy} = \mathbb{P}\big( Y = \varphi(X) \big) \simeq \frac{\#\text{correctos}}{\#\text{totales}} $$ donde tiene un [[Hiper-parámetros de un modelo|hiper-parámetro]] de como determinar que es un valor correcto

@@ -1,6 +1,13 @@
 ---
 dia: 2023-01-23
-materia: intro
+tags:
+  - carrera/ingeniería-electrónica/intro/Multimetro
+  - nota/facultad
+vinculoFacultad:
+  - tema: Multimetro
+    capitulo: 6
+    materia: Introducción a la ingeniería electronica
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---
