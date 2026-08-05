@@ -1,13 +1,13 @@
 import sqlite3 as sql
-
-from typing import Dict, List
 from dataclasses import dataclass
-
-from dependencias import Nodo, Dato, Clave
-from logger import loggear, LoggerNivel
+from typing import dict, list
 
 from contenido.dependencias import TipoNodo
+from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
+from dependencias import Clave, Dato, Nodo
+
 from .tablas import TablaCuatrimestre as Tabla
+
 
 @dataclass
 class Cuatrimestre(Dato):
@@ -31,27 +31,28 @@ class Cuatrimestre(Dato):
         except:
             return None
 
-    def dependo(self) -> List[Clave]: 
+    def dependo(self) -> list[Clave]:
         return []
 
-    def obtener_clave(self) -> Clave: 
+    def obtener_clave(self) -> Clave:
         return Cuatrimestre._obtener_clave(self.anio, self.parte)
 
     @classmethod
     def _obtener_clave(cls, anio: int, parte: int) -> Clave:
         return Clave.de_texto(TipoNodo.CUATRIMESTRE, f"{anio}C{parte}")
 
-    def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo | None:
+    def insertar_datos(
+        self, cursor: sql.Cursor, dependencias: dict[Clave, int]
+    ) -> Nodo | None:
         try:
             id_cuatri = Tabla.insertar(cursor, self.anio, self.parte)
 
-        except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al insertar cuatrimestre de {self.anio}C{self.parte}")
-            raise e 
+        except Exception as err:
+            raise ErrorInsertar(
+                "Al insertar cuatrimestre de {self.anio}C{self.parte}", err
+            )
 
         if id_cuatri is None:
-            mensaje = f"El cuatrimestre insertado no tiene id"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            raise ErrorIdNoGenerado("El cuatrimestre insertado no tiene id")
 
         return Nodo(id_cuatri, self.obtener_clave())

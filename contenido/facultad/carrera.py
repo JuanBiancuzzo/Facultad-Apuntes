@@ -1,28 +1,29 @@
 import sqlite3 as sql
-
-from typing import Dict, List
 from dataclasses import dataclass
-
-from dependencias import Nodo, Dato, Clave
-from logger import loggear, LoggerNivel
+from typing import dict, list
 
 from contenido.archivo import Archivo
+from contenido.dependencias import TipoNodo
+from contenido.errores import ErrorInsertar, ErrorParseo
+from contenido.errores.insertar import ErrorIdNoGenerado
 from contenido.general.embedding import Embedding
 from contenido.general.etapa import Etapa
-from contenido.dependencias import TipoNodo
 from contenido.links import facultad as link
+from dependencias import Clave, Dato, Nodo
+
 from .plan_de_estudio import PlanDeEstudio
 from .tablas import TablaCarrera as Tabla
+
 
 @dataclass
 class Carrera(Dato):
     nombre: str
     estado: str
     tiene_codigo: bool
-    etapa: Etapa 
+    etapa: Etapa
 
     @classmethod
-    def parsear(cls, archivo: Archivo) -> List[Dato] | None:
+    def parsear(cls, archivo: Archivo) -> list[Dato] | None:
         datos = []
         etapa = Etapa.de_texto(archivo.extra["etapa"])
         if etapa is None:
@@ -46,40 +47,35 @@ class Carrera(Dato):
 
         return datos
 
-    def dependo(self) -> List[Clave]: 
+    def dependo(self) -> list[Clave]:
         return []
 
-    def obtener_clave(self) -> Clave: 
+    def obtener_clave(self) -> Clave:
         return Carrera._obtener_clave(self.nombre)
 
     @classmethod
     def _obtener_clave(cls, nombre_carrera) -> Clave:
-        return Clave.de_texto(TipoNodo.CARRERA, f"{nombre_carrera}-|-{nombre_carrera}" )
+        return Clave.de_texto(TipoNodo.CARRERA, f"{nombre_carrera}-|-{nombre_carrera}")
 
-    def obtener_link(self) -> link.Link: 
+    def obtener_link(self) -> link.Link:
         return Carrera._obtener_link(self.obtener_clave())
 
     @classmethod
-    def _obtener_link(cls, clave: Clave) -> link.Link: 
+    def _obtener_link(cls, clave: Clave) -> link.Link:
         return link.Carrera.gen(clave)
 
-    def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo | None:
-        try: 
+    def insertar_datos(
+        self, cursor: sql.Cursor, dependencias: dict[Clave, int]
+    ) -> Nodo | None:
+        try:
             id_carrera = Tabla.insertar(
-                cursor, 
-                self.nombre,
-                self.estado,
-                self.tiene_codigo,
-                self.etapa.value
+                cursor, self.nombre, self.estado, self.tiene_codigo, self.etapa.value
             )
 
-        except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al insertar carrera con nombre: {self.nombre}")
-            raise e
+        except Exception as err:
+            raise ErrorInsertar(f"Al insertar carrera con nombre: {self.nombre}", err)
 
         if id_carrera is None:
-            mensaje = f"La carrera insertada no tiene id"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            raise ErrorIdNoGenerado("La carrera insertada no tiene id")
 
         return Nodo(id_carrera, self.obtener_clave())
