@@ -20,6 +20,8 @@ guias:
   - 7
   - 8
   - 9
+evaluaciones: 
+  - 8
 correlativas:
   - tipo: Equivalente
     materia: Física 2 A
@@ -31,15 +33,22 @@ nombreCarrera: Ingeniería electrónica
 	await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
 ```
 
+## Resumen
+---
+
+
 # Guías
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/contenido/guiasAcumuladas", { archivo: dv.current() });
 ```
-
-## Resumen
----
  
+# Evaluaciones
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/contenido/evaluacionesAcumuladas", { archivo: dv.current() });
+```
+
 
 # Bibliografía
 ---

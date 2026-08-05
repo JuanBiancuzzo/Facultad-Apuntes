@@ -10,6 +10,9 @@ cuatri: 26C1
 plan: "2023"
 codigo: TA154
 referencias: []
+evaluaciones: 
+  - 6
+  - 7
 correlativas:
   - tipo: Materia
     materia: Procesos estocásticos
@@ -26,6 +29,12 @@ nombreCarrera: Ingeniería electrónica
 ## Resumen
 ---
  
+
+# Evaluaciones
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/contenido/evaluacionesAcumuladas", { archivo: dv.current() });
+```
 
 # Bibliografía
 ---

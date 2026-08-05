@@ -19,7 +19,3 @@ Sea el [[ingeniería en informática/orga/Machine learning/Árbol de decisión|�
 # Resolución
 ---
 
-
-# Resultado
----
-
