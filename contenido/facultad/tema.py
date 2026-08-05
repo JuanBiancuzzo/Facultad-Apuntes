@@ -23,7 +23,7 @@ class Tema(Dato):
     etapa: Etapa
     capitulo: int
     parte: int | None
-    clave_resumen: Clave | None
+    clave_mdc: Clave | None  # mdc = mapa de contenido
 
     @classmethod
     def parsear(cls, archivo: Archivo) -> list[Dato]:
@@ -47,17 +47,17 @@ class Tema(Dato):
         resultado = archivo.contenido.split_secciones(
             [Seccion(1, nombre) for nombre in ["Índice", "Resumen", "Bibliografía"]]
         )
-        bloque_resumen = None
+        bloque_mapa_contenido = None
         if resultado["Resumen"]:
             texto = resultado["Resumen"]
-            bloque_resumen = None if texto.vacio() else BloqueTexto(texto)
+            bloque_mapa_contenido = None if texto.vacio() else BloqueTexto(texto)
 
         datos: list[Dato] = []
 
-        clave_resumen = None
-        if bloque_resumen is not None:
-            datos.append(bloque_resumen)
-            clave_resumen = bloque_resumen.obtener_clave()
+        clave_mdc = None
+        if bloque_mapa_contenido is not None:
+            datos.append(bloque_mapa_contenido)
+            clave_mdc = bloque_mapa_contenido.obtener_clave()
 
         try:
             parte = int(archivo.extra["parte"])
@@ -71,7 +71,7 @@ class Tema(Dato):
                 etapa,
                 int(archivo.extra["capitulo"]),
                 parte,
-                clave_resumen,
+                clave_mdc,
             )
             datos.append(tema)
 
@@ -94,10 +94,10 @@ class Tema(Dato):
         clave_nommbre = link.Tema.gen_nombre(clave_materia)
         datos.extend(Embedding.parsear((clave_nommbre, nombre)))
 
-        if bloque_resumen is not None:
+        if bloque_mapa_contenido is not None:
             pares: iterable[tuple[link.Link, str]] = (
                 (link.Tema.gen_resumen(clave_materia, id), texto)
-                for id, texto in bloque_resumen.texto.chunks()
+                for id, texto in bloque_mapa_contenido.texto.chunks()
             )
             datos.extend((link for link, _ in pares))
             datos.extend(Embedding.parsear(*pares))
@@ -106,8 +106,8 @@ class Tema(Dato):
 
     def dependo(self) -> list[Clave]:
         dependencias = [self.clave_materia]
-        if self.clave_resumen is not None:
-            dependencias.append(self.clave_resumen)
+        if self.clave_mdc is not None:
+            dependencias.append(self.clave_mdc)
         return dependencias
 
     def obtener_clave(self) -> Clave:
@@ -133,10 +133,8 @@ class Tema(Dato):
         self, cursor: sql.Cursor, dependencias: dict[Clave, int]
     ) -> Nodo | None:
         try:
-            id_resumen = (
-                dependencias[self.clave_resumen]
-                if self.clave_resumen is not None
-                else None
+            id_mdc = (
+                dependencias[self.clave_mdc] if self.clave_mdc is not None else None
             )
             id_tema = Tabla.insertar(
                 cursor,
@@ -144,7 +142,7 @@ class Tema(Dato):
                 self.etapa.value,
                 self.capitulo,
                 self.parte,
-                id_resumen,
+                id_mdc,
                 dependencias[self.clave_materia],
             )
 

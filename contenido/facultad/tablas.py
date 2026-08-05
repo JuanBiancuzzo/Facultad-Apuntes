@@ -7,7 +7,6 @@ from contenido.tablas import TablasGenerales
 from tablas import Tabla, registrar_tabla
 
 
-@registrar_tabla
 class TablaCarrera(Tabla):
     nombre = Tablas.CARRERAS
     necesito_tablas = []
@@ -107,7 +106,7 @@ class TablaMateria(Tabla):
                 etapa TEXT NOT NULL,
                 codigo TEXT,
 
-                id_resumen INTEGER REFERENCES {TablasGenerales.BLOQUE_TEXTO}(id),
+                id_mdc INTEGER REFERENCES {TablasGenerales.BLOQUE_TEXTO}(id),
                 id_plan INTEGER NOT NULL REFERENCES {Tablas.PLANES_DE_ESTUDIO}(id),
                 id_carrera INTEGER NOT NULL REFERENCES {Tablas.CARRERAS}(id),
                 id_cuatrimestre INTEGER NOT NULL REFERENCES {Tablas.CUATRI}(id)
@@ -122,7 +121,7 @@ class TablaMateria(Tabla):
         estado: str,
         etapa: str,
         codigo: str | None,
-        id_resumen: int | None,
+        id_mdc: int | None,
         id_plan: int,
         id_carrera: int,
         id_cuatri: int,
@@ -137,8 +136,8 @@ class TablaMateria(Tabla):
         }
         if codigo:
             valores["codigo"] = codigo
-        if id_resumen:
-            valores["id_resumen"] = id_resumen
+        if id_mdc:
+            valores["id_mdc"] = id_mdc
         return cls._insertar(cursor, valores)
 
 
@@ -156,7 +155,7 @@ class TablaTema(Tabla):
                 capitulo INTEGER NOT NULL,
                 parte INTEGER,
 
-                id_resumen INTEGER REFERENCES {TablasGenerales.BLOQUE_TEXTO}(id),
+                id_mdc INTEGER REFERENCES {TablasGenerales.BLOQUE_TEXTO}(id),
                 id_materia INTEGER NOT NULL REFERENCES {Tablas.MATERIAS}(id)
             );
         """)
@@ -169,7 +168,7 @@ class TablaTema(Tabla):
         etapa: str,
         capitulo: int,
         parte: int | None,
-        id_resumen: int | None,
+        id_mdc: int | None,
         id_materia: int,
     ) -> int | None:
         valores: dict[str, Any] = {
@@ -180,6 +179,6 @@ class TablaTema(Tabla):
         }
         if parte:
             valores["parte"] = parte
-        if id_resumen:
-            valores["id_resumen"] = id_resumen
+        if id_mdc:
+            valores["id_mdc"] = id_mdc
         return cls._insertar(cursor, valores)

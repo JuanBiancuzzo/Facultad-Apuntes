@@ -15,7 +15,6 @@ from contenido.general.guias import GuiaPorDato as GuiasDeMateria
 from contenido.links import facultad as link
 from contenido.referencias.referencia import Referencia
 from dependencias import Clave, Dato, Nodo
-from logger import LoggerNivel, loggear
 
 from .carrera import Carrera
 from .cuatrimestre import Cuatrimestre
@@ -32,7 +31,7 @@ class Materia(Dato):
     codigo: str | None
 
     clave_cuatrimestre: Clave
-    clave_resumen: Clave | None
+    clave_mdc: Clave | None  # mdc = mapa de contenido
 
     @classmethod
     def parsear(cls, archivo: Archivo) -> list[Dato]:
@@ -61,17 +60,17 @@ class Materia(Dato):
                 ]
             ]
         )
-        bloque_resumen = None
+        bloque_mapa_contenido = None
         if resultado["Resumen"]:
             texto = Texto(resultado["Resumen"])
-            bloque_resumen = None if texto.vacio() else BloqueTexto(texto)
+            bloque_mapa_contenido = None if texto.vacio() else BloqueTexto(texto)
 
         datos: list[Dato] = [cuatrimestre]
 
-        clave_resumen = None
-        if bloque_resumen is not None:
-            datos.append(bloque_resumen)
-            clave_resumen = bloque_resumen.obtener_clave()
+        clave_mdc = None
+        if bloque_mapa_contenido is not None:
+            datos.append(bloque_mapa_contenido)
+            clave_mdc = bloque_mapa_contenido.obtener_clave()
 
         materia = Materia(
             archivo.extra["nombreMateria"],
@@ -81,7 +80,7 @@ class Materia(Dato):
             PlanDeEstudio._obtener_clave(archivo.extra["plan"], clave_carrera),
             archivo.extra.get("codigo", None),
             cuatrimestre.obtener_clave(),
-            clave_resumen,
+            clave_mdc,
         )
         datos.append(materia)
 
@@ -124,8 +123,8 @@ class Materia(Dato):
             self.clave_plan,
             self.clave_cuatrimestre,
         ]
-        if self.clave_resumen is not None:
-            dependencias.append(self.clave_resumen)
+        if self.clave_mdc is not None:
+            dependencias.append(self.clave_mdc)
         return dependencias
 
     def obtener_clave(self) -> Clave:
@@ -148,18 +147,17 @@ class Materia(Dato):
         self, cursor: sql.Cursor, dependencias: dict[Clave, int]
     ) -> Nodo | None:
         try:
-            id_resumen = (
-                dependencias[self.clave_resumen]
-                if self.clave_resumen is not None
-                else None
-            )
+            id_mdc = None
+            if self.clave_mdc is not None:
+                id_mdc = dependencias[self.clave_mdc]
+
             id_materia = Tabla.insertar(
                 cursor,
                 self.nombre_materia,
                 self.estado,
                 self.etapa.value,
                 self.codigo,
-                id_resumen,
+                id_mdc,
                 dependencias[self.clave_plan],
                 dependencias[self.clave_carrera],
                 dependencias[self.clave_cuatrimestre],
