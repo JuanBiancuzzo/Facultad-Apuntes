@@ -7,6 +7,7 @@ aliases:
   - Traza#Traza
   - Determinante#Determinante
   - Matriz adjunta#Adjunta
+  - Norma Matricial#Norma Matricial
 tags:
   - carrera/ingeniería-electrónica/algebra-2/Espacios-Vectoriales
   - carrera/ingeniería-en-informática/algebra-2/Espacios-Vectoriales
@@ -105,6 +106,10 @@ Para las matrices de $3 \times 3$, sea $A = [a_{ij}]$ y $|A| = \det(A)$ entonces
 ---
 Solo definido para matrices cuadradas. La matriz adjunta, denotada $\text{adj}(A)$ de la matriz $A$ es la transpuesta de su [[Matriz de cofactores|matriz de cofactores]] $C$ $$ \text{adj}(A) = C^T $$
 El producto entre la matriz $A$ y la matriz adjunta da una matriz diagonal escalado por el determinante de la matriz original $$ A ~ \text{adj}(A) = \det(A) ~ \mathbb{I} $$ donde $\mathbb{I}$ es la identidad del mismo tamaño de $A$, de esta expresión se puede definir el inverso de $A$ como $$ A^{-1} = \frac{\text{adj}(A)}{\det(A)} $$
+## Norma Matricial
+---
+Esta se puede calcular como $$ |A| = \sqrt{ \lambda_\text{max}(A^* A) } $$ donde se entiende $\lambda_\text{max}$ el [[ingeniería en informática/algebra 2/Autovalores y autovectores/Autovalor|autovalor]] [[ingeniería en informática/discreta/Relaciones/Máximo|máximo]] del producto entre la matriz conjugada $A^*$ y la propia matriz $A$
+
 # Referencias
 ---
 ```dataviewjs
