@@ -1,30 +1,23 @@
 ---
 etapa: empezado
-estado: Falta últimos temas
+estado: Falta pasar el resumen
 tags:
   - facultad/materia
-  - carrera/ingeniería-electrónica/quimica
-nombreMateria: Química y electroquímica
-nombreReducido: quimica
+  - carrera/ingeniería-electrónica/robótica-móvil
+nombreMateria: Robótica móvil
+nombreReducido: robótica móvil
 cuatri: 26C1
 plan: "2023"
-codigo: CB041
+codigo: TA154
 referencias: []
-guias: 
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
+evaluaciones: 
   - 6
   - 7
-  - 8
-  - 9
-evaluaciones: 
-  - 8
 correlativas:
+  - tipo: Materia
+    materia: Procesos estocásticos
   - tipo: Equivalente
-    materia: Física 2 A
+    materia: Algoritmos y Programación 1
 nombreCarrera: Ingeniería electrónica
 ---
 # Apuntes
@@ -35,20 +28,13 @@ nombreCarrera: Ingeniería electrónica
 
 ## Resumen
 ---
-
-
-# Guías
----
-```dataviewjs
-	await dv.view("_scripts/dataview/contenido/guiasAcumuladas", { archivo: dv.current() });
-```
  
+
 # Evaluaciones
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/contenido/evaluacionesAcumuladas", { archivo: dv.current() });
 ```
-
 
 # Bibliografía
 ---

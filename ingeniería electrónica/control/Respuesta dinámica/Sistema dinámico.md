@@ -49,7 +49,7 @@ Las salidas del sistema se obtienen mediante $$ \begin{align}
     &~~\vdots \\
     y_m(t) &= g_m(x_1,~ x_2,~ \cdots,~ x_n;~ u_1,~ u_2,~ \cdots,~ u_r;~ t) \\
 \end{align} $$
-La cual podemos expresar de forma concisa usando [[Vector|vectores]] de la siguiente forma $$ \begin{array}{c} 
+La cual podemos expresar de forma concisa usando [[ingeniería electrónica/robótica móvil/Repaso álgebra/Vector|vectores]] de la siguiente forma $$ \begin{array}{c} 
     x(t) = \begin{bmatrix} x_1(t) \\ x_2(t) \\ \vdots \\ x_n(t) \end{bmatrix}, ~~~~~
     f(x,~ u,~ t) = \begin{bmatrix} 
         f_1(x_1,~ x_2,~ \cdots,~ x_n;~ u_1,~ u_2,~ \cdots,~ u_r;~ t) \\

@@ -1,4 +1,6 @@
 ---
+etapa: sin-empezar
+estado: Cursandola
 plan: 2023
 tags:
   - carrera/ingeniería-en-informática/concurrentes
@@ -9,13 +11,12 @@ correlativas:
   - tipo: Materia
     materia: Sistemas operativos
 codigo: TB026
-cuatri: 25C2
-etapa: sin-empezar
-estado: Sin empezar
+cuatri: 26C2
 nombreMateria: Programación Concurrente
 nombreReducido: concurrentes
-pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
 nombreCarrera: Ingeniería en informática
+referencias: []
+evaluaciones: []
 ---
 # Apuntes
 ---

@@ -3,21 +3,17 @@ etapa: empezado
 estado: Cursandola
 tags:
   - facultad/materia
-  - carrera/ingeniería-electrónica/robótica-móvil
-nombreMateria: Robótica móvil
-nombreReducido: robotica movil
-cuatri: 26C1
+  - carrera/ingeniería-electrónica/robótica-industrial
+nombreMateria: Robótica industrial
+nombreReducido: robótica industrial
+cuatri: 26C2
 plan: "2023"
-codigo: TA154
+codigo: TA155
 referencias: []
-evaluaciones: 
-  - 6
-  - 7
+evaluaciones: []
 correlativas:
   - tipo: Materia
-    materia: Procesos estocásticos
-  - tipo: Equivalente
-    materia: Algoritmos y Programación 1
+    materia: Taller de Automatización y Control
 nombreCarrera: Ingeniería electrónica
 ---
 # Apuntes

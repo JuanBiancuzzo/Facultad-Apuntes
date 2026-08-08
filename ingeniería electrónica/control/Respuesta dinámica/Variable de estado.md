@@ -23,7 +23,7 @@ Las variables de un [[ingeniería electrónica/control/Respuesta dinámica/Siste
 
 Notemos que estas variables no necesariamente tienen que ser físicamente medibles o cantidades observables
 
-Si se necesitan $n$ variables de estado para describir el sistema dado, estas se pueden considerar los $n$ componentes de un [[Vector|vector]] $x$, este se denomina vector de estado
+Si se necesitan $n$ variables de estado para describir el sistema dado, estas se pueden considerar los $n$ componentes de un [[ingeniería electrónica/robótica móvil/Repaso álgebra/Vector|vector]] $x$, este se denomina vector de estado
 
 # Referencias
 ---

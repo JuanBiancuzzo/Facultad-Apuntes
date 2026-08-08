@@ -27,7 +27,7 @@ aliases:
 ---
 Está formado por dos [[Carga eléctrica|cargas]] $q$, del mismo [[Norma|módulo]] y signo opuesto, separadas una [[Distancia euclidiana|distancia]] $\delta$. Nos interesa el [[Campo eléctrico|campo]] del dipolo para valores mucho mayores que $\delta$
 
-Definimos el momento dipolar del [[ingeniería electrónica/robotica movil/Repaso álgebra/Vector|vector]] $\vec{p}$ $$ \lVert \vec{p} \rVert = q ~ \delta $$tiene la dirección de la [[Recta|recta]] que une ambas cargas, apuntando hacia la carga positiva
+Definimos el momento dipolar del [[ingeniería electrónica/robótica móvil/Repaso álgebra/Vector|vector]] $\vec{p}$ $$ \lVert \vec{p} \rVert = q ~ \delta $$tiene la dirección de la [[Recta|recta]] que une ambas cargas, apuntando hacia la carga positiva
 
 Si el dipolo se encuentra en un campo eléctrico, se produce un [[Torque|torque]] $\tau$ sobre el mismo. Este torque tiende a alinear el dipolo ($\vec{p}$) en la dirección del campo externo
 

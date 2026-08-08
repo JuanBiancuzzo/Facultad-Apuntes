@@ -1,31 +1,18 @@
 ---
 etapa: empezado
-estado: Falta últimos temas
+estado: Cursandola
 tags:
   - facultad/materia
-  - carrera/ingeniería-electrónica/quimica
-nombreMateria: Química y electroquímica
-nombreReducido: quimica
-cuatri: 26C1
+  - carrera/ingeniería-en-informática/ebt-1
+nombreMateria: Empresas de Bases Tecnológicas 1
+nombreReducido: ebt 1
+cuatri: 26C2
 plan: "2023"
-codigo: CB041
+codigo: TC018
 referencias: []
-guias: 
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-evaluaciones: 
-  - 8
-correlativas:
-  - tipo: Equivalente
-    materia: Física 2 A
-nombreCarrera: Ingeniería electrónica
+evaluaciones: []
+correlativas: []
+nombreCarrera: Ingeniería en informática
 ---
 # Apuntes
 ---
@@ -35,20 +22,13 @@ nombreCarrera: Ingeniería electrónica
 
 ## Resumen
 ---
-
-
-# Guías
----
-```dataviewjs
-	await dv.view("_scripts/dataview/contenido/guiasAcumuladas", { archivo: dv.current() });
-```
  
+
 # Evaluaciones
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/contenido/evaluacionesAcumuladas", { archivo: dv.current() });
 ```
-
 
 # Bibliografía
 ---

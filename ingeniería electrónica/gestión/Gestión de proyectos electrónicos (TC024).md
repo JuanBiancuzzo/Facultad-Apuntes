@@ -1,30 +1,19 @@
 ---
 etapa: empezado
-estado: Falta últimos temas
+estado: Cursandola
 tags:
   - facultad/materia
-  - carrera/ingeniería-electrónica/quimica
-nombreMateria: Química y electroquímica
-nombreReducido: quimica
-cuatri: 26C1
+  - carrera/ingeniería-electrónica/gestión
+nombreMateria: Gestión de proyectos electrónicos
+nombreReducido: gestión
+cuatri: 26C2
 plan: "2023"
-codigo: CB041
+codigo: TC024
 referencias: []
-guias: 
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-evaluaciones: 
-  - 8
+evaluaciones: []
 correlativas:
-  - tipo: Equivalente
-    materia: Física 2 A
+  - tipo: Materia
+    materia: Introducción a la ingeniería electronica
 nombreCarrera: Ingeniería electrónica
 ---
 # Apuntes
@@ -35,20 +24,13 @@ nombreCarrera: Ingeniería electrónica
 
 ## Resumen
 ---
-
-
-# Guías
----
-```dataviewjs
-	await dv.view("_scripts/dataview/contenido/guiasAcumuladas", { archivo: dv.current() });
-```
  
+
 # Evaluaciones
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/contenido/evaluacionesAcumuladas", { archivo: dv.current() });
 ```
-
 
 # Bibliografía
 ---

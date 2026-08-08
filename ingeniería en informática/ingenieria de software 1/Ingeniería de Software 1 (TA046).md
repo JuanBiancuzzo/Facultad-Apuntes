@@ -1,12 +1,12 @@
 ---
 cuatri: 26C1
-estado: Cursandola
+estado: Terminado
 plan: "2023"
 codigo: TA046
 tags:
   - carrera/ingeniería-en-informática/ingenieria-software-1
   - facultad/materia
-etapa: ampliar
+etapa: terminado
 correlativas:
   - tipo: Materia
     materia: Algoritmos y programación 3

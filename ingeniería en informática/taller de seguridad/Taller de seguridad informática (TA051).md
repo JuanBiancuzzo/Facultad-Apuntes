@@ -1,31 +1,20 @@
 ---
 etapa: empezado
-estado: Falta últimos temas
+estado: Cursandola
 tags:
   - facultad/materia
-  - carrera/ingeniería-electrónica/quimica
-nombreMateria: Química y electroquímica
-nombreReducido: quimica
-cuatri: 26C1
+  - carrera/ingeniería-en-informática/taller-de-seguridad
+nombreMateria: Taller de seguridad informática
+nombreReducido: taller de seguridad
+cuatri: 26C2
 plan: "2023"
-codigo: CB041
+codigo: TA051
 referencias: []
-guias: 
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-evaluaciones: 
-  - 8
-correlativas:
-  - tipo: Equivalente
-    materia: Física 2 A
-nombreCarrera: Ingeniería electrónica
+evaluaciones: []
+correlativas: 
+  - tipo: Materia
+    materia: Redes
+nombreCarrera: Ingeniería en informática
 ---
 # Apuntes
 ---
@@ -35,20 +24,13 @@ nombreCarrera: Ingeniería electrónica
 
 ## Resumen
 ---
-
-
-# Guías
----
-```dataviewjs
-	await dv.view("_scripts/dataview/contenido/guiasAcumuladas", { archivo: dv.current() });
-```
  
+
 # Evaluaciones
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/contenido/evaluacionesAcumuladas", { archivo: dv.current() });
 ```
-
 
 # Bibliografía
 ---

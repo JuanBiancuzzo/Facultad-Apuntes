@@ -1,6 +1,6 @@
 ---
 etapa: empezado
-estado: Cursandola
+estado: Hay que leer los libros en la bibliografía
 tags:
   - facultad/materia
   - carrera/ingeniería-electrónica/taller-de-control

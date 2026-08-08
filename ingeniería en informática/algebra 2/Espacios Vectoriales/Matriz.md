@@ -75,7 +75,7 @@ Es un [[ingeniería electrónica/analisis 3/Transformaciones conformes/Función 
 
 La traza es invariante a semejanza $$ \text{tr}\left( P^{-1} A P \right) = \text{tr}\left( P ~ \left(P^{-1} ~ A \right) \right) = \text{tr}(A) $$
 La traza es invariante a la transposición $$ \text{tr}(A) = \text{tr}\left( A^T \right) $$
-Dados dos [[ingeniería electrónica/robotica movil/Repaso álgebra/Vector|vectores]] $a$ y $b$, entonces $\text{tr}\left( a^T ~ b \right) = \text{tr}\left( a ~ b^T \right)$
+Dados dos [[ingeniería electrónica/robótica móvil/Repaso álgebra/Vector|vectores]] $a$ y $b$, entonces $\text{tr}\left( a^T ~ b \right) = \text{tr}\left( a ~ b^T \right)$
 
 ## Determinante
 ---
