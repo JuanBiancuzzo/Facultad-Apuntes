@@ -1,5 +1,5 @@
 ---
-etapa: sin-empezar
+etapa: empezando
 dia: 2026-06-27
 tags:
   - colección/ejercicios/ejercicio
@@ -17,8 +17,3 @@ Los habitantes de Smallville pueden ser considerados trabajador registrado, trab
 
 # Resolución
 ---
-
-
-# Resultado
----
-

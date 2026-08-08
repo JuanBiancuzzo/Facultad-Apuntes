@@ -1,5 +1,5 @@
 ---
-etapa: sin-empezar
+etapa: empezado
 dia: 2026-06-27
 tags:
   - colección/ejercicios/ejercicio
@@ -15,8 +15,3 @@ Encontrar el estado estacionario de una [[Cadena de Markov|cadena de Markov]] ho
 \end{pmatrix} $$
 # Resolución
 ---
-
-
-# Resultado
----
-

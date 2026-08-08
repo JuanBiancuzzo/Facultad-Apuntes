@@ -1,5 +1,5 @@
 ---
-etapa: sin-empezar
+etapa: empezado
 dia: 2026-06-27
 tags:
   - colección/ejercicios/ejercicio
@@ -16,8 +16,3 @@ Estudiar la relación de causalidad para $(X,~ Y) \sim \mathcal{U}(\Lambda)$, do
 
 # Resolución
 ---
-
-
-# Resultado
----
-

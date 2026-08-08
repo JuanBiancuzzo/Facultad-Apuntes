@@ -1,5 +1,5 @@
 ---
-etapa: sin-empezar
+etapa: empezado
 dia: 2026-06-27
 tags:
   - colección/ejercicios/ejercicio
@@ -18,9 +18,5 @@ Clusterizar, via el [[investigación/ciencias de la computación/algoritmos/Algo
 |  $3$   |  $3$  |  $2$  |
 
 # Resolución
----
-
-
-# Resultado
 ---
 

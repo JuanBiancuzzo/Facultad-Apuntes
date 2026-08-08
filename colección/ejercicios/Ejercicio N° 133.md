@@ -1,5 +1,5 @@
 ---
-etapa: sin-empezar
+etapa: empezado
 dia: 2026-06-27
 tags:
   - colección/ejercicios/ejercicio
@@ -12,8 +12,3 @@ Estudiar la relación de causalidad para $$ P_{XY}(x,~y) = e^{-x} ~ \mathbb{1}\s
 
 # Resolución
 ---
-
-
-# Resultado
----
-

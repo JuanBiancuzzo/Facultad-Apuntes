@@ -1,5 +1,5 @@
 ---
-etapa: sin-empezar
+etapa: empezado
 dia: 2026-06-27
 tags:
   - colección/ejercicios/ejercicio
@@ -12,8 +12,3 @@ Sea la distribución correspondiente al modelo gráfico $$ P(x,~y) \propto \exp\
 
 # Resolución
 ---
-
-
-# Resultado
----
-

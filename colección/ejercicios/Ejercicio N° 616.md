@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 616
-etapa: empezado
+etapa: ampliar
 ---
 # Enunciado
 ---
@@ -16,6 +16,9 @@ Marcar como Verdadero o Falso cada una de las siguientes afirmaciones
 5. Para obtener un mapa de grillas de ocupación, debe asumirse que la ocupación de una celda no depende de la ocupación de las celdas vecinas ^punto-5
 
 # Resolución
+---
+
+# Resultado
 ---
 [[colección/ejercicios/Ejercicio N° 616#^punto-1|1.]] Verdadero
 [[colección/ejercicios/Ejercicio N° 616#^punto-2|2.]] Falso
