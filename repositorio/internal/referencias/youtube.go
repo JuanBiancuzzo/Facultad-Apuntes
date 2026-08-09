@@ -1,21 +1,19 @@
 package referencias
 
-import (  
-	"fmt"
+import (
 	"time"
 
-	t "editor-sqlite/repositorio/internal/tablas"
-
 	er "editor-sqlite/estructuras/referencias"
+	t "editor-sqlite/repositorio/internal/tablas"
 )
 
-const PARAMETROS_YOUTUBE = []string{"nombre_video", "nombre_canal", "fecha_video", "url"}
+var PARAMETROS_YOUTUBE = []string{"nombre_video", "nombre_canal", "fecha_video", "url"}
 
 type bddReferenciaYoutube struct {
 	nombreVideo string
 	nombreCanal string
-	fechaVideo int64
-	url string
+	fechaVideo  int64
+	url         string
 }
 
 func (d *bddReferenciaYoutube) InfoTabla() (t.Tablas, []string) {
@@ -23,10 +21,10 @@ func (d *bddReferenciaYoutube) InfoTabla() (t.Tablas, []string) {
 }
 
 func (d *bddReferenciaYoutube) ObtenerDatos() []any {
-	return []any{ &d.nombreVideo, &d.nombreCanal, &d.fechaVideo, &d.url }
+	return []any{&d.nombreVideo, &d.nombreCanal, &d.fechaVideo, &d.url}
 }
 
-func (d *bddReferenciaYoutube) CrearElemento() (*er.ReferenciaWikipedia, error) {
+func (d *bddReferenciaYoutube) CrearElemento() (*er.ReferenciaYoutube, error) {
 	return er.NewReferenciaYoutube(
 		d.nombreVideo,
 		d.nombreCanal,
@@ -35,10 +33,16 @@ func (d *bddReferenciaYoutube) CrearElemento() (*er.ReferenciaWikipedia, error) 
 	), nil
 }
 
-func (r *RepoReferencia) ObtenerReferenciasYoutube(numReferencias []int) ([]*er.ReferenciaYoutube, error) {
-	return crearReferencias(numReferencias, bddReferenciaYoutube{})
+func (r *RepoReferencia) ObtenerReferenciasYoutube(
+	numReferencias []int,
+) ([]*er.ReferenciaYoutube, error) {
+	datos := bddReferenciaYoutube{}
+	return crearReferencias(r.bdd, numReferencias, &datos)
 }
-	
-func (r *RepoReferencia) ObtenerReferenciaYoutube(numReferencia int) (*er.ReferenciaYoutube, error) {
-	return crearReferencia(numReferencia, bddReferenciaYoutube{})
-} 
+
+func (r *RepoReferencia) ObtenerReferenciaYoutube(
+	numReferencia int,
+) (*er.ReferenciaYoutube, error) {
+	datos := bddReferenciaYoutube{}
+	return crearReferencia(r.bdd, numReferencia, &datos)
+}

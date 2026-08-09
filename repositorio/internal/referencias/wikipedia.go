@@ -1,20 +1,18 @@
 package referencias
 
-import (  
-	"fmt"
+import (
 	"time"
 
-	t "editor-sqlite/repositorio/internal/tablas"
-
 	er "editor-sqlite/estructuras/referencias"
+	t "editor-sqlite/repositorio/internal/tablas"
 )
 
-const PARAMETROS_WIKIPEDIA = []string{ "nombre_articulo", "fecha", "url" }
+var PARAMETROS_WIKIPEDIA = []string{"nombre_articulo", "fecha", "url"}
 
 type bddReferenciaWikipedia struct {
 	nombreArticulo string
-	fecha int64
-	url string
+	fecha          int64
+	url            string
 }
 
 func (d *bddReferenciaWikipedia) InfoTabla() (t.Tablas, []string) {
@@ -22,7 +20,7 @@ func (d *bddReferenciaWikipedia) InfoTabla() (t.Tablas, []string) {
 }
 
 func (d *bddReferenciaWikipedia) ObtenerDatos() []any {
-	return []any{ &d.nombreArticulo, &d.fecha, &d.url }
+	return []any{&d.nombreArticulo, &d.fecha, &d.url}
 }
 
 func (d *bddReferenciaWikipedia) CrearElemento() (*er.ReferenciaWikipedia, error) {
@@ -33,11 +31,16 @@ func (d *bddReferenciaWikipedia) CrearElemento() (*er.ReferenciaWikipedia, error
 	), nil
 }
 
-func (r *RepoReferencia) ObtenerReferenciasWikipedia(numReferencias []int) ([]*er.ReferenciaWikipedia, error) {
-	return crearReferencias(numReferencias, bddReferenciaWikipedia{})
-}
-	
-func (r *RepoReferencia) ObtenerReferenciaWikipedia(numReferencia int) (*er.ReferenciaWikipedia, error) {
-	return crearReferencia(numReferencia, bddReferenciaWikipedia{})
+func (r *RepoReferencia) ObtenerReferenciasWikipedia(
+	numReferencias []int,
+) ([]*er.ReferenciaWikipedia, error) {
+	datos := bddReferenciaWikipedia{}
+	return crearReferencias(r.bdd, numReferencias, &datos)
 }
 
+func (r *RepoReferencia) ObtenerReferenciaWikipedia(
+	numReferencia int,
+) (*er.ReferenciaWikipedia, error) {
+	datos := bddReferenciaWikipedia{}
+	return crearReferencia(r.bdd, numReferencia, &datos)
+}

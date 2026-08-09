@@ -2,39 +2,44 @@ package referencias
 
 import (
 	"fmt"
-	"time"
 	"strings"
+	"time"
 
 	g "editor-sqlite/estructuras/general"
 )
 
-type ReferenciaWeb struct {
+type ReferenciaWebsite struct {
 	NombreArticulo string
-	NombrePagina string
-	Fecha time.Time
-	Url string
-	Autores []g.Autore
+	NombrePagina   string
+	Fecha          time.Time
+	URL            string
+	Autores        []g.Autore
 }
 
-func NewReferenciaWeb(nombreArticulo, nombrePagina string, dia time.Time, url string, autores []g.Autore) *ReferenciaWeb {
-	return &ReferenciaWeb {
+func NewReferenciaWeb(
+	nombreArticulo, nombrePagina string,
+	dia time.Time,
+	url string,
+	autores []g.Autore,
+) *ReferenciaWebsite {
+	return &ReferenciaWebsite{
 		NombreArticulo: nombreArticulo,
-		NombrePagina: nombrePagina,
-		Fecha: dia,
-		Url: url,
-		Autores: autores,
+		NombrePagina:   nombrePagina,
+		Fecha:          dia,
+		URL:            url,
+		Autores:        autores,
 	}
 }
 
-func (rw *ReferenciaWeb) ToString() string { 
+func (rw *ReferenciaWebsite) ToString() string {
 	nombres := make([]string, len(rw.Autores))
 	for i, autore := range rw.Autores {
 		nombres[i] = autore.ToString()
 	}
 
 	return fmt.Sprintf(
-		"%s en %s, de %s", 
-		rw.NombreArticulo, 
+		"%s en %s, de %s",
+		rw.NombreArticulo,
 		rw.NombrePagina,
 		strings.Join(nombres, ", "),
 	)

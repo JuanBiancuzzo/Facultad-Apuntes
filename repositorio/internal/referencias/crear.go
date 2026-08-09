@@ -1,6 +1,7 @@
 package referencias
 
-import (  
+import (
+	"database/sql"
 	"fmt"
 	"strings"
 
@@ -8,20 +9,24 @@ import (
 )
 
 type mapeoBdd[T any] interface {
-	InfoTabla() (t.Tabla, []string)
+	InfoTabla() (t.Tablas, []string)
 
 	ObtenerDatos() []any
 
 	CrearElemento() (T, error)
 }
 
-func crearReferencias[T any](numReferencias []int, dato mapeoBdd[T]) ([]T, error) {
+func crearReferencias[T any](bdd *sql.DB, numReferencias []int, dato mapeoBdd[T]) ([]T, error) {
 	tabla, parametros := dato.InfoTabla()
-	
+
 	query := generarQueryMultiples(tabla, parametros, len(numReferencias))
-	filas, err := r.bdd.Query(query, numReferencias)
+	filas, err := bdd.Query(query, numReferencias)
 	if err != nil {
-		return datos, fmt.Errorf("No se pudo obtener las referencias de %s, con error: %v", tabla, err)
+		return []T{}, fmt.Errorf(
+			"No se pudo obtener las referencias de %s, con error: %v",
+			tabla,
+			err,
+		)
 	}
 	defer filas.Close()
 
@@ -29,29 +34,47 @@ func crearReferencias[T any](numReferencias []int, dato mapeoBdd[T]) ([]T, error
 
 	for filas.Next() {
 		if err := filas.Scan(dato.ObtenerDatos()...); err != nil {
-			return nil, fmt.Errorf("Error al hacer un select en la tabla de referencias de %s, con error: %v", tabla, err)
+			return nil, fmt.Errorf(
+				"Error al hacer un select en la tabla de referencias de %s, con error: %v",
+				tabla,
+				err,
+			)
 		}
 
 		referencia, err := dato.CrearElemento()
 		if err != nil {
-			return nil, fmt.Errorf("Error al crear elemento para tabla %s, con error: %v", tabla, err)
+			return nil, fmt.Errorf(
+				"Error al crear elemento para tabla %s, con error: %v",
+				tabla,
+				err,
+			)
 		}
 		referencias = append(referencias, referencia)
 	}
 
 	if err = filas.Err(); err != nil {
-		return nil, fmt.Errorf("Error al hacer un select en la tabla de referencias de %s, al terminar, con error: %v", tabla, err)
+		return nil, fmt.Errorf(
+			"Error al hacer un select en la tabla de referencias de %s, al terminar, con error: %v",
+			tabla,
+			err,
+		)
 	}
 	return referencias, nil
 }
 
-func crearReferencia[T any](numReferencia int, dato mapeoBdd[T]) (T, error) {
-	query := generarQuery(dato.InfoTabla())
-	fila := r.bdd.QueryRow(query, numReferencia)
+func crearReferencia[T any](bdd *sql.DB, numReferencia int, dato mapeoBdd[T]) (T, error) {
+	tabla, parametros := dato.InfoTabla()
+
+	query := generarQuery(tabla, parametros)
+	fila := bdd.QueryRow(query, numReferencia)
 
 	if err := fila.Scan(dato.ObtenerDatos()...); err != nil {
 		var valor T
-		return valor, fmt.Errorf("Error al hacer un select en la tabla %s, con error: %v", tabla, err)
+		return valor, fmt.Errorf(
+			"Error al hacer un select en la tabla %s, con error: %v",
+			tabla,
+			err,
+		)
 	}
 
 	return dato.CrearElemento()
@@ -72,7 +95,7 @@ func generarQueryMultiples(tabla t.Tablas, parametros []string, cantidadReferenc
 
 	return fmt.Sprintf(
 		"SELECT %s FROM %s WHERE num_referencia IN (%s)",
-		strings.Join(parametros, ", "), tabla, 
+		strings.Join(parametros, ", "), tabla,
 		strings.Join(placeholder, ", "),
 	)
 }
