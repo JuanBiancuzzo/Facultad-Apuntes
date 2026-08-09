@@ -1,6 +1,5 @@
 import sqlite3 as sql
 from dataclasses import dataclass
-from typing import dict, list
 
 from contenido.dependencias import TipoNodo
 from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
@@ -33,8 +32,9 @@ class PlanDeEstudio(Dato):
             id_carrera = dependencias[self.clave_carrera]
             id_plan = Tabla.insertar(cursor, self.plan, id_carrera)
 
-        except Exception as e:
-            raise ErrorInsertar(f"Al insertar plan de estudio, con plan: {self.plan}")
+        except Exception as err:
+            mensaje = f"Al insertar plan de estudio, con plan: {self.plan}"
+            raise ErrorInsertar(mensaje, err)
 
         if id_plan is None:
             raise ErrorIdNoGenerado("El plan de estudio insertado no tiene id")

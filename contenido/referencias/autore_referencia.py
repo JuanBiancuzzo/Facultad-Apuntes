@@ -1,14 +1,13 @@
 import sqlite3 as sql
-
-from typing import Dict, List
 from dataclasses import dataclass
 from enum import StrEnum
 
-from dependencias import Dato, Clave
-from logger import loggear, LoggerNivel
-
 from contenido.dependencias import TipoNodo
+from contenido.errores import ErrorInsertar
+from dependencias import Clave, Dato
+
 from .tablas import TablaReferenciaAutore as Tabla
+
 
 class TipoAutoreReferencia(StrEnum):
     WEBSITE = "Web"
@@ -21,6 +20,7 @@ class TipoAutoreReferencia(StrEnum):
 
     def crear(self, clave_referencia: Clave, clave_autore: Clave) -> AutoreReferencia:
         return AutoreReferencia(self, clave_referencia, clave_autore)
+
 
 @dataclass
 class AutoreReferencia(Dato):
@@ -56,23 +56,32 @@ class AutoreReferencia(Dato):
     def tema(cls, clave_tema: Clave, clave_autore: Clave) -> AutoreReferencia:
         return TipoAutoreReferencia.TEMA.crear(clave_tema, clave_autore)
 
+    def dependo(self) -> list[Clave]:
+        return [self.clave_referencia, self.clave_autore]
 
-    def dependo(self) -> List[Clave]: 
-        return [ self.clave_referencia, self.clave_autore ]
-
-    def obtener_clave(self) -> Clave: 
-        return AutoreReferencia._obtener_clave(self.tipo, self.clave_referencia, self.clave_autore)
+    def obtener_clave(self) -> Clave:
+        return AutoreReferencia._obtener_clave(
+            self.tipo, self.clave_referencia, self.clave_autore
+        )
 
     @classmethod
-    def _obtener_clave(cls, tipo: TipoAutoreReferencia, clave_referencia: Clave,  clave_autore: Clave) -> Clave:
-        return Clave.de_texto(TipoNodo.AUTORES_REFERENCIA, f"{tipo}->{clave_referencia}-{clave_autore}")
+    def _obtener_clave(
+        cls, tipo: TipoAutoreReferencia, clave_referencia: Clave, clave_autore: Clave
+    ) -> Clave:
+        return Clave.de_texto(
+            TipoNodo.AUTORES_REFERENCIA, f"{tipo}->{clave_referencia}-{clave_autore}"
+        )
 
-    def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> None:
-        try: 
+    def insertar_datos(
+        self, cursor: sql.Cursor, dependencias: dict[Clave, int]
+    ) -> None:
+        try:
             id_referencia = dependencias[self.clave_referencia]
             id_autore = dependencias[self.clave_autore]
             Tabla.insertar(cursor, self.tipo, id_referencia, id_autore)
 
-        except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al insertar autore de referencia: {self.tipo} -> {self.clave_referencia} y {self.clave_autore}")
-            raise e
+        except Exception as err:
+            raise ErrorInsertar(
+                f"Al insertar autore de referencia: {self.tipo} -> {self.clave_referencia} y {self.clave_autore}",
+                err,
+            )

@@ -1,12 +1,12 @@
 import sqlite3 as sql
 from dataclasses import dataclass
-from typing import Dict, List
-
-from dependencias import Dato, Nodo, Clave
-from logger import loggear, LoggerNivel
 
 from contenido.dependencias import TipoNodo
+from dependencias import Clave, Dato, Nodo
+from logger import LoggerNivel, loggear
+
 from .tablas import TablaLink as Tabla
+
 
 @dataclass
 class Link(Dato):
@@ -22,16 +22,21 @@ class Link(Dato):
     def parsear(cls, tabla: str, clave_dato: Clave, info: bytes) -> Link:
         return Link(tabla, info, clave_dato)
 
-    def dependo(self) -> List[Clave]: 
-        return [ self.clave_dato ]
+    def dependo(self) -> list[Clave]:
+        return [self.clave_dato]
 
-    def obtener_clave(self) -> Clave: 
-        return Clave.de_texto(TipoNodo.LINK, f"{self.tabla}, {self.clave_dato}, {str(self.info_arbitraria)}")
+    def obtener_clave(self) -> Clave:
+        return Clave.de_texto(
+            TipoNodo.LINK,
+            f"{self.tabla}, {self.clave_dato}, {self.info_arbitraria!s}",
+        )
 
-    def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo:
-        try: 
+    def insertar_datos(
+        self, cursor: sql.Cursor, dependencias: dict[Clave, int]
+    ) -> Nodo:
+        try:
             id_link = Tabla.insertar(
-                cursor, 
+                cursor,
                 self.tabla,
                 dependencias[self.clave_dato],
                 self.info_arbitraria,
@@ -39,10 +44,10 @@ class Link(Dato):
 
         except Exception as e:
             loggear(LoggerNivel.FATAL, f"Al insertar link en la tabla {self.tabla}")
-            raise e 
+            raise e
 
         if id_link is None:
-            mensaje = f"El link insertado no tiene id"
+            mensaje = "El link insertado no tiene id"
             loggear(LoggerNivel.FATAL, mensaje)
             raise Exception(mensaje)
 

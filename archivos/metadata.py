@@ -1,9 +1,9 @@
 import datetime as dt
 import os
-
-from typing import Self
 from dataclasses import dataclass
 from enum import StrEnum
+from typing import Self
+
 
 class Extension(StrEnum):
     MARKDOWN = "md"
@@ -23,14 +23,15 @@ class Extension(StrEnum):
                 return extension
         return None
 
+
 @dataclass
 class Metadata:
-    nombre: str # sin extension
-    directorio: str # directorio desde la raiz
+    nombre: str  # sin extension
+    directorio: str  # directorio desde la raiz
     extension: Extension
     dia_creacion: dt.datetime
 
-    def nombre_base(self) -> str: 
+    def nombre_base(self) -> str:
         return f"{self.nombre}.{self.extension}"
 
     def path(self) -> str:

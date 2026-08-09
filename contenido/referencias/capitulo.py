@@ -1,69 +1,77 @@
 import sqlite3 as sql
-
-from typing import Dict, List, Tuple, Any
 from dataclasses import dataclass
+from typing import Any
 
-from dependencias import Nodo, Dato, Clave
-from logger import loggear, LoggerNivel
-
-from contenido.dependencias import TipoNodo
 from contenido.archivo import Archivo
+from contenido.dependencias import TipoNodo
 from contenido.general.autore import Autore
+from dependencias import Clave, Dato, Nodo
+from logger import LoggerNivel, loggear
 
 from .autore_referencia import AutoreReferencia
 from .libro import ReferenciaLibro
 from .referencia import Referencia
 from .tablas import TablaCapitulo as Tabla
 
+
 @dataclass
 class ReferenciaCapitulo(Dato):
     numero: int
     titulo: str | None
-    paginas: Tuple[int, int] | None
+    paginas: tuple[int, int] | None
 
     clave_ref_libro: Clave
     clave_referencia: Clave
 
     @classmethod
-    def nombre_representativo(cls, archivo: Archivo, extra_capitulo: Dict[str, Any]) -> str:
+    def nombre_representativo(
+        cls, archivo: Archivo, extra_capitulo: dict[str, Any]
+    ) -> str:
         nombre_libro = ReferenciaLibro.nombre_representativo(archivo)
 
         try:
             numero = int(extra_capitulo["numeroCapitulo"])
             nombre_capitulo = extra_capitulo.get("nombreCapitulo", None)
-            
+
         except Exception as e:
-            loggear(LoggerNivel.FATAL, "No se pudo obtener el nombre representativo del capitulo")
+            loggear(
+                LoggerNivel.FATAL,
+                "No se pudo obtener el nombre representativo del capitulo",
+            )
             raise e
 
         nombre = f"{nombre_libro}, Capitulo N°{numero}"
-        if nombre_capitulo: nombre += f" {nombre_capitulo}"
+        if nombre_capitulo:
+            nombre += f" {nombre_capitulo}"
         return nombre
 
     @classmethod
-    def parsear(cls, archivo: Archivo) -> List[Dato]:
+    def parsear(cls, archivo: Archivo) -> list[Dato]:
         datos = []
-        clave_ref_libro = ReferenciaLibro._obtener_clave(int(archivo.extra["numReferencia"]))
+        clave_ref_libro = ReferenciaLibro._obtener_clave(
+            int(archivo.extra["numReferencia"])
+        )
 
-        capitulos = archivo.extra.get("capitulos", []) 
-        if capitulos is None: capitulos = []
+        capitulos = archivo.extra.get("capitulos", [])
+        if capitulos is None:
+            capitulos = []
 
         for extra_capitulo in capitulos:
             try:
                 paginas = None
-                paginas_info = extra_capitulo.get("paginas", None) 
+                paginas_info = extra_capitulo.get("paginas", None)
                 if paginas_info is not None:
                     inicio = paginas_info.get("inicio", None)
                     final = paginas_info.get("final", None)
                     if inicio is not None and final is not None:
-                        paginas = ( int(inicio), int(final) )
+                        paginas = (int(inicio), int(final))
 
                 capitulo = ReferenciaCapitulo(
                     int(extra_capitulo["numeroCapitulo"]),
                     extra_capitulo.get("nombreCapitulo", None),
                     paginas,
                     clave_ref_libro,
-                    Referencia._obtener_clave(extra_capitulo["numReferencia"])
+                    Referencia._obtener_clave(extra_capitulo["numReferencia"]),
                 )
                 datos.append(capitulo)
             except Exception as e:
@@ -72,27 +80,31 @@ class ReferenciaCapitulo(Dato):
 
             clave_ref_capitulo = capitulo.obtener_clave()
             for editore in extra_capitulo.get("editores", []):
-                editore = Autore(editore["nombre"], editore["apellido"]) 
+                editore = Autore(editore["nombre"], editore["apellido"])
                 datos.append(editore)
 
-                editore_referencia = AutoreReferencia.capitulo(clave_ref_capitulo, editore.obtener_clave())
+                editore_referencia = AutoreReferencia.capitulo(
+                    clave_ref_capitulo, editore.obtener_clave()
+                )
                 datos.append(editore_referencia)
 
         return datos
 
-    def dependo(self) -> List[Clave]: 
-        return [ self.clave_ref_libro, self.clave_referencia ] 
+    def dependo(self) -> list[Clave]:
+        return [self.clave_ref_libro, self.clave_referencia]
 
-    def obtener_clave(self) -> Clave: 
-        return ReferenciaCapitulo._obtener_clave(self.clave_referencia) 
+    def obtener_clave(self) -> Clave:
+        return ReferenciaCapitulo._obtener_clave(self.clave_referencia)
 
     @classmethod
-    def _obtener_clave(cls, referencia: int | Clave) -> Clave: 
+    def _obtener_clave(cls, referencia: int | Clave) -> Clave:
         hash = Referencia._obtener_clave(referencia).hash
         return Clave(TipoNodo.REFERENCIA_CAPITULO_LIBRO, hash)
 
-    def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo:
-        try: 
+    def insertar_datos(
+        self, cursor: sql.Cursor, dependencias: dict[Clave, int]
+    ) -> Nodo:
+        try:
             id_capitulo = Tabla.insertar(
                 cursor,
                 self.numero,
@@ -104,8 +116,11 @@ class ReferenciaCapitulo(Dato):
             )
 
         except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al insertar ref de capitulo de un libro, con clave de libro: {self.clave_ref_libro}")
-            raise e 
+            loggear(
+                LoggerNivel.FATAL,
+                f"Al insertar ref de capitulo de un libro, con clave de libro: {self.clave_ref_libro}",
+            )
+            raise e
 
         if id_capitulo is None:
             mensaje = f"El ref capitulo insertado no tiene id"

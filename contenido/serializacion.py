@@ -1,14 +1,15 @@
 import struct
-
-from typing import Any
 from enum import StrEnum
+from typing import Any
 
 BIG_ENDIAN = ">"
 LITTLE_ENDIAN = "<"
 
 ENDINES = BIG_ENDIAN
+
+
 class Ser(StrEnum):
-    Uint8  = f"{ENDINES}B"
+    Uint8 = f"{ENDINES}B"
     Uint16 = f"{ENDINES}H"
     Uint32 = f"{ENDINES}I"
     Uint64 = f"{ENDINES}Q"
@@ -22,15 +23,11 @@ class Ser(StrEnum):
 
     @classmethod
     def comb(cls, *ser: Ser) -> str:
-        solo_bytes = all(( s == Ser.Bytes for s in ser ))
-        elementos = "".join(
-            s if s == Ser.Bytes else s[1]
-            for s in ser
-        )
+        solo_bytes = all(s == Ser.Bytes for s in ser)
+        elementos = "".join(s if s == Ser.Bytes else s[1] for s in ser)
 
         return elementos if solo_bytes else f"{ENDINES}{elementos}"
 
     @classmethod
     def pack(cls, ser: Ser | str, *datos: Any) -> bytes:
-        return struct.pack( ser, *datos )
-
+        return struct.pack(ser, *datos)

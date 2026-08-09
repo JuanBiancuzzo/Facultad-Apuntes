@@ -1,19 +1,17 @@
 import sqlite3 as sql
-
-from typing import Dict, List
 from dataclasses import dataclass
 
-from contenido.referencias.referencia import Referencia
-from dependencias import Nodo, Dato, Clave
-from logger import loggear, LoggerNivel
-
-from contenido.dependencias import TipoNodo
 from contenido.archivo import Archivo
-from contenido.general.editorial import Editorial
+from contenido.dependencias import TipoNodo
 from contenido.general.autore import Autore
+from contenido.general.editorial import Editorial
+from contenido.referencias.referencia import Referencia
+from dependencias import Clave, Dato, Nodo
+from logger import LoggerNivel, loggear
 
 from .autore_referencia import AutoreReferencia
 from .tablas import TablaLibro as Tabla
+
 
 @dataclass
 class ReferenciaLibro:
@@ -28,7 +26,7 @@ class ReferenciaLibro:
 
     @classmethod
     def nombre_representativo(cls, archivo: Archivo) -> str:
-        try: 
+        try:
             volumen = int(archivo.extra["volumen"])
         except:
             volumen = None
@@ -40,27 +38,33 @@ class ReferenciaLibro:
             autores = archivo.extra["nombreAutores"]
 
         except Exception as e:
-            loggear(LoggerNivel.FATAL, "No se pudo obtener el nombre representativo del libro")
+            loggear(
+                LoggerNivel.FATAL,
+                "No se pudo obtener el nombre representativo del libro",
+            )
             raise e
 
         nombre = titulo
-        if subtitulo: nombre += f", {subtitulo}"
-        if edicion: nombre += f" Edicion {edicion}"
-        if volumen: nombre += f" Vol N°{volumen}"
+        if subtitulo:
+            nombre += f", {subtitulo}"
+        if edicion:
+            nombre += f" Edicion {edicion}"
+        if volumen:
+            nombre += f" Vol N°{volumen}"
 
-        autores = map(lambda autore: f"{autore["nombre"]} {autore["nombre"]}", autores)
-        nombre += f" escrito por: {", ".join(autores)}"
+        autores = (f"{autore['nombre']} {autore['nombre']}" for autore in autores)
+        nombre += f" escrito por: {', '.join(autores)}"
 
         return nombre
 
     @classmethod
-    def parsear(cls, archivo: Archivo) -> List[Dato]:
+    def parsear(cls, archivo: Archivo) -> list[Dato]:
         datos = []
 
         editorial = Editorial(archivo.extra["editorial"])
         datos.append(editorial)
 
-        try: 
+        try:
             volumen = int(archivo.extra["volumen"])
         except:
             volumen = None
@@ -87,24 +91,28 @@ class ReferenciaLibro:
             autore = Autore(autore["nombre"], autore["apellido"])
             datos.append(autore)
 
-            autore_referencia = AutoreReferencia.libro(clave_libro, autore.obtener_clave())
+            autore_referencia = AutoreReferencia.libro(
+                clave_libro, autore.obtener_clave()
+            )
             datos.append(autore_referencia)
 
         return datos
 
-    def dependo(self) -> List[Clave]: 
-        return [ self.clave_editorial, self.clave_referencia ] 
+    def dependo(self) -> list[Clave]:
+        return [self.clave_editorial, self.clave_referencia]
 
-    def obtener_clave(self) -> Clave: 
-        return ReferenciaLibro._obtener_clave(self.clave_referencia) 
+    def obtener_clave(self) -> Clave:
+        return ReferenciaLibro._obtener_clave(self.clave_referencia)
 
     @classmethod
-    def _obtener_clave(cls, referencia: int | str | Clave) -> Clave: 
+    def _obtener_clave(cls, referencia: int | str | Clave) -> Clave:
         hash = Referencia._obtener_clave(referencia).hash
         return Clave(TipoNodo.REFERENCIA_LIBRO, hash)
 
-    def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo:
-        try: 
+    def insertar_datos(
+        self, cursor: sql.Cursor, dependencias: dict[Clave, int]
+    ) -> Nodo:
+        try:
             id_libro = Tabla.insertar(
                 cursor,
                 self.titulo,
@@ -119,7 +127,7 @@ class ReferenciaLibro:
 
         except Exception as e:
             loggear(LoggerNivel.FATAL, f"Al insertar ref libro: {self.titulo}")
-            raise e 
+            raise e
 
         if id_libro is None:
             mensaje = f"El libro insertado no tiene id"

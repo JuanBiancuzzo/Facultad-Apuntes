@@ -1,12 +1,11 @@
-from typing import List
-
-from dependencias import Dato
-from archivos import Archivo as ArchivoGeneral, Extension
-
+from archivos import Archivo as ArchivoGeneral
+from archivos import Extension
+from contenido import coleccion, facultad, general, referencias
 from contenido.archivo import Archivo
-from contenido import referencias, general, facultad, coleccion
+from dependencias import Dato
 
-def _registrar_markdown(tag: str, archivo: Archivo) -> List[Dato]:
+
+def _registrar_markdown(tag: str, archivo: Archivo) -> list[Dato]:
     datos = []
     tag = tag.lower()
 
@@ -39,13 +38,14 @@ def _registrar_markdown(tag: str, archivo: Archivo) -> List[Dato]:
 
     elif tag.startswith("referencia/"):
         extra = referencias.Referencia.parsear(archivo)
-        if extra: datos.extend(extra)
+        if extra:
+            datos.extend(extra)
 
         match tag.replace("referencia/", ""):
             case "libro":
                 extra = referencias.Libro.parsear(archivo)
                 extra_capitulo = referencias.Capitulo.parsear(archivo)
-                if extra and extra_capitulo: 
+                if extra and extra_capitulo:
                     extra.extend(extra_capitulo)
 
             case "paper":
@@ -66,27 +66,33 @@ def _registrar_markdown(tag: str, archivo: Archivo) -> List[Dato]:
             case "curso":
                 extra = referencias.CursoOnline.parsear(archivo)
 
-            case _: extra = []
+            case _:
+                extra = []
 
-        if extra: datos.extend(extra)
+        if extra:
+            datos.extend(extra)
 
     elif tag.startswith("facultad/"):
         match tag.replace("facultad/", ""):
             case "carrera":
                 extra = facultad.Carrera.parsear(archivo)
-                if extra: datos.extend(extra)
+                if extra:
+                    datos.extend(extra)
 
             case "materia":
                 extra = facultad.Materia.parsear(archivo)
-                if extra: datos.extend(extra)
+                if extra:
+                    datos.extend(extra)
 
             case "resumen":
                 extra = facultad.Tema.parsear(archivo)
-                if extra: datos.extend(extra)
+                if extra:
+                    datos.extend(extra)
 
-    return datos 
+    return datos
 
-def registrar(archivo_general: ArchivoGeneral) -> List[Dato]:
+
+def registrar(archivo_general: ArchivoGeneral) -> list[Dato]:
     datos = []
     extension = archivo_general.metadata.extension
 

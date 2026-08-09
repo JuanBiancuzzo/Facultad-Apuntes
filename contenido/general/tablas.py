@@ -1,15 +1,21 @@
 from sqlite3 import Connection as Conn, Cursor
-from typing import Dict, Any
+from typing import Any
 from tablas import Tabla, registrar_tabla
 
-from contenido.tablas import TablasGenerales as Tablas, TablasReferencias, TablasColeccion, TablasFacultad
+from contenido.tablas import (
+    TablasGenerales as Tablas,
+    TablasReferencias,
+    TablasColeccion,
+    TablasFacultad,
+)
+
 
 @registrar_tabla
 class TablaAutore(Tabla):
     nombre = Tablas.AUTORES
     necesito_tablas = []
 
-    def crear(self, conn: Conn) -> None: 
+    def crear(self, conn: Conn) -> None:
         conn.execute(f"""
             CREATE TABLE IF NOT EXISTS {self.nombre} (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -19,16 +25,20 @@ class TablaAutore(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, nombre: str, apellido: str) -> int | None: 
-        return cls._insertar(cursor, {
-            "nombre": nombre,
-            "apellido": apellido,
-        })
+    def insertar(cls, cursor: Cursor, nombre: str, apellido: str) -> int | None:
+        return cls._insertar(
+            cursor,
+            {
+                "nombre": nombre,
+                "apellido": apellido,
+            },
+        )
+
 
 @registrar_tabla
 class TablaEmbedding(Tabla):
     nombre = Tablas.EMBEDDING
-    necesito_tablas = [ Tablas.LINK ]
+    necesito_tablas = [Tablas.LINK]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -39,11 +49,15 @@ class TablaEmbedding(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, embedding: bytes, id_link: int) -> None: 
-        cls._insertar(cursor, {
-            "embedding": embedding,
-            "id_link": id_link,
-        }) 
+    def insertar(cls, cursor: Cursor, embedding: bytes, id_link: int) -> None:
+        cls._insertar(
+            cursor,
+            {
+                "embedding": embedding,
+                "id_link": id_link,
+            },
+        )
+
 
 @registrar_tabla
 class TablaBloqueTexto(Tabla):
@@ -59,10 +73,14 @@ class TablaBloqueTexto(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, bjson: bytes) -> int | None: 
-        return cls._insertar(cursor, {
-            "texto": bjson,
-        }) 
+    def insertar(cls, cursor: Cursor, bjson: bytes) -> int | None:
+        return cls._insertar(
+            cursor,
+            {
+                "texto": bjson,
+            },
+        )
+
 
 @registrar_tabla
 class TablaEditorial(Tabla):
@@ -78,17 +96,21 @@ class TablaEditorial(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, nombre: str) -> int | None: 
-        return cls._insertar(cursor, {
-            "nombre": nombre,
-        }) 
+    def insertar(cls, cursor: Cursor, nombre: str) -> int | None:
+        return cls._insertar(
+            cursor,
+            {
+                "nombre": nombre,
+            },
+        )
+
 
 @registrar_tabla
 class TablaImagen(Tabla):
     nombre = Tablas.IMAGENES
     necesito_tablas = []
 
-    def crear(self, conn: Conn) -> None: 
+    def crear(self, conn: Conn) -> None:
         conn.execute(f"""
             CREATE TABLE IF NOT EXISTS {self.nombre} (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -98,34 +120,34 @@ class TablaImagen(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, tipo: str, imagen: bytes) -> int | None: 
-        return cls._insertar(cursor, {
-            "tipo": tipo,
-            "imagen": imagen,
-        })
+    def insertar(cls, cursor: Cursor, tipo: str, imagen: bytes) -> int | None:
+        return cls._insertar(
+            cursor,
+            {
+                "tipo": tipo,
+                "imagen": imagen,
+            },
+        )
+
 
 @registrar_tabla
 class TablaLink(Tabla):
     nombre = Tablas.LINK
     necesito_tablas = [
         TablasColeccion.COLECCION,
-
         TablasColeccion.AJEDREZ,
         TablasColeccion.DICCIONARIO,
         TablasColeccion.EJERCICIOS,
-
         TablasColeccion.LIBRO,
         TablasColeccion.CAPITULO,
         TablasColeccion.PAPER,
-
         # TablasColeccion.CURSO,
-
         TablasFacultad.CARRERAS,
         TablasFacultad.MATERIAS,
         TablasFacultad.TEMA,
     ]
 
-    # Ver si se puede hacer info BLOB sea un BLOB y un TEXT, asi tal vez usar la 
+    # Ver si se puede hacer info BLOB sea un BLOB y un TEXT, asi tal vez usar la
     #   buscar texto en ese texto
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -145,7 +167,9 @@ class TablaLink(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, tabla: str, id_dato: int, info: bytes | None) -> int | None: 
+    def insertar(
+        cls, cursor: Cursor, tabla: str, id_dato: int, info: bytes | None
+    ) -> int | None:
         valores: Dict[str, Any] = {
             "tabla": tabla,
             "id_dato": id_dato,
@@ -153,22 +177,44 @@ class TablaLink(Tabla):
             "dirty": 0,
         }
 
-        if info is not None: 
+        if info is not None:
             valores["info"] = info
             valores["dato_entero"] = 0
 
-        return cls._insertar(cursor, valores) 
+        return cls._insertar(cursor, valores)
+
+
+@registrar_tabla
+class TablaRelaciones(Tabla):
+    nombre = Tablas.RELACIONES
+    necesito_tablas = [Tablas.LINK]
+
+    def crear(self, conn: Conn) -> None:
+        conn.execute(f"""
+            CREATE TABLE IF NOT EXISTS {self.nombre} (
+                id_dato INTEGER NOT NULL REFERENCES {Tablas.LINK}(id),
+                id_ralacionado INTEGER NOT NULL REFERENCES {Tablas.LINK}(id)
+            );
+        """)
+
+    @classmethod
+    def insertar(cls, cursor: Cursor, id_dato: int, id_relacionado: int) -> int | None:
+        return cls._insertar(
+            cursor,
+            {
+                "id_dato": id_dato,
+                "id_relacionado": id_relacionado,
+            },
+        )
 
 
 @registrar_tabla
 class TablaBibliografia(Tabla):
     nombre = Tablas.BIBLIOGRAFIA
-    necesito_tablas = [ 
-        TablasReferencias.REFERENCIAS,  
-
+    necesito_tablas = [
+        TablasReferencias.REFERENCIAS,
         TablasFacultad.MATERIAS,
         TablasFacultad.TEMA,
-
         # TablasColeccion.CURSO,
     ]
 
@@ -182,21 +228,24 @@ class TablaBibliografia(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, tipo: str, id_dato: int, id_referencia) -> None: 
-        cls._insertar(cursor, {
-            "tipo": tipo,
-            "id_dato": id_dato,
-            "id_referencia": id_referencia,
-        })
+    def insertar(cls, cursor: Cursor, tipo: str, id_dato: int, id_referencia) -> None:
+        cls._insertar(
+            cursor,
+            {
+                "tipo": tipo,
+                "id_dato": id_dato,
+                "id_referencia": id_referencia,
+            },
+        )
+
 
 @registrar_tabla
 class TablaGuias(Tabla):
     nombre = Tablas.GUIAS
-    necesito_tablas = [ 
-        TablasColeccion.GUIAS,  
-
+    necesito_tablas = [
+        TablasColeccion.GUIAS,
         TablasFacultad.MATERIAS,
-        TablasColeccion.CAPITULO,  
+        TablasColeccion.CAPITULO,
         # TablasColeccion.CURSO,
     ]
 
@@ -208,21 +257,24 @@ class TablaGuias(Tabla):
                 id_guia INTEGER NOT NULL REFERENCES {TablasColeccion.GUIAS}(id)
             );
         """)
-    
+
     @classmethod
     def insertar(cls, cursor: Cursor, tipo: str, id_dato: int, id_guia: int) -> None:
-        cls._insertar(cursor, {
-            "tipo": tipo,
-            "id_dato": id_dato,
-            "id_guia": id_guia,
-        })
+        cls._insertar(
+            cursor,
+            {
+                "tipo": tipo,
+                "id_dato": id_dato,
+                "id_guia": id_guia,
+            },
+        )
+
 
 @registrar_tabla
 class TablaEvaluaciones(Tabla):
     nombre = Tablas.EVALUACIONES
-    necesito_tablas = [ 
-        TablasColeccion.EVALUACION,  
-
+    necesito_tablas = [
+        TablasColeccion.EVALUACION,
         TablasFacultad.MATERIAS,
         # TablasColeccion.CURSO,
     ]
@@ -235,11 +287,14 @@ class TablaEvaluaciones(Tabla):
                 id_guia INTEGER NOT NULL REFERENCES {TablasColeccion.GUIAS}(id)
             );
         """)
-    
+
     @classmethod
     def insertar(cls, cursor: Cursor, tipo: str, id_dato: int, id_guia: int) -> None:
-        cls._insertar(cursor, {
-            "tipo": tipo,
-            "id_dato": id_dato,
-            "id_guia": id_guia,
-        })
+        cls._insertar(
+            cursor,
+            {
+                "tipo": tipo,
+                "id_dato": id_dato,
+                "id_guia": id_guia,
+            },
+        )

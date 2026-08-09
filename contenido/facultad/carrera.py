@@ -1,10 +1,9 @@
 import sqlite3 as sql
 from dataclasses import dataclass
-from typing import dict, list
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
-from contenido.errores import ErrorInsertar, ErrorParseo
+from contenido.errores import ErrorInsertar
 from contenido.errores.insertar import ErrorIdNoGenerado
 from contenido.general.embedding import Embedding
 from contenido.general.etapa import Etapa

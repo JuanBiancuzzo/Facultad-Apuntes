@@ -1,6 +1,5 @@
 import sqlite3 as sql
 from dataclasses import dataclass
-from typing import dict, list
 
 from contenido.dependencias import TipoNodo
 from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
@@ -48,9 +47,8 @@ class Cuatrimestre(Dato):
             id_cuatri = Tabla.insertar(cursor, self.anio, self.parte)
 
         except Exception as err:
-            raise ErrorInsertar(
-                "Al insertar cuatrimestre de {self.anio}C{self.parte}", err
-            )
+            mensaje = "Al insertar cuatrimestre de {self.anio}C{self.parte}"
+            raise ErrorInsertar(mensaje, err)
 
         if id_cuatri is None:
             raise ErrorIdNoGenerado("El cuatrimestre insertado no tiene id")

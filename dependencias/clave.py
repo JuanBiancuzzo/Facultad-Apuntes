@@ -1,6 +1,6 @@
-from hashlib import shake_256
 from dataclasses import dataclass
-from typing import Tuple
+from hashlib import shake_256
+
 
 @dataclass
 class Clave:
@@ -12,7 +12,7 @@ class Clave:
         return Clave(tipo, Clave.hashear(texto))
 
     @classmethod
-    def de_tupla(cls, par: Tuple[int, int]) -> Clave:
+    def de_tupla(cls, par: tuple[int, int]) -> Clave:
         return Clave(par[0], par[1])
 
     @classmethod

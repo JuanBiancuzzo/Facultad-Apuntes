@@ -1,5 +1,4 @@
 import sqlite3 as sql
-from typing import dict, list
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo

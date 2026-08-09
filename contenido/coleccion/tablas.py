@@ -1,7 +1,7 @@
 import datetime as dt
 from sqlite3 import Connection as Conn
 from sqlite3 import Cursor
-from typing import Any, dict, list
+from typing import Any
 
 from contenido.tablas import TablasColeccion as Tablas
 from contenido.tablas import TablasGenerales, TablasReferencias, timestamp

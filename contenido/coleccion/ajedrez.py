@@ -1,7 +1,6 @@
 import sqlite3 as sql
 from dataclasses import dataclass
 from enum import StrEnum
-from typing import dict, list
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
@@ -90,9 +89,8 @@ class Ajedrez(Dato):
             )
 
         except Exception as err:
-            raise ErrorInsertar(
-                f"Al insertar movimiento de ajedrez con nombre: {self.nombre}", err
-            )
+            mensaje = f"Al insertar movimiento de ajedrez con nombre: {self.nombre}"
+            raise ErrorInsertar(mensaje, err)
 
         if id_ajedrez is None:
             raise ErrorIdNoGenerado("El movimiento de ajedrez insertado no tiene id")

@@ -1,9 +1,12 @@
-from sqlite3 import Connection as Conn, Cursor
-from tablas import Tabla, registrar_tabla
-from typing import Dict, Any
 import datetime as dt
+from sqlite3 import Connection as Conn
+from sqlite3 import Cursor
+from typing import Any
 
-from contenido.tablas import TablasReferencias as Tablas, TablasGenerales, timestamp
+from contenido.tablas import TablasGenerales, timestamp
+from contenido.tablas import TablasReferencias as Tablas
+from tablas import Tabla, registrar_tabla
+
 
 @registrar_tabla
 class TablaReferencia(Tabla):
@@ -20,16 +23,22 @@ class TablaReferencia(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, tipo: str, fecha_registrado: dt.datetime) -> int | None: 
-        return cls._insertar(cursor, {
-            "tipo": tipo,
-            "fecha_registrada": timestamp(fecha_registrado),
-        })
+    def insertar(
+        cls, cursor: Cursor, tipo: str, fecha_registrado: dt.datetime
+    ) -> int | None:
+        return cls._insertar(
+            cursor,
+            {
+                "tipo": tipo,
+                "fecha_registrada": timestamp(fecha_registrado),
+            },
+        )
+
 
 @registrar_tabla
 class TablaWebsite(Tabla):
     nombre = Tablas.WEB
-    necesito_tablas = [ Tablas.REFERENCIAS ]
+    necesito_tablas = [Tablas.REFERENCIAS]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -45,20 +54,30 @@ class TablaWebsite(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, nombre_articulo: str, nombre_pagina: str, fecha: dt.date | None, url: str, num_referencia: int) -> int | None:
+    def insertar(
+        cls,
+        cursor: Cursor,
+        nombre_articulo: str,
+        nombre_pagina: str,
+        fecha: dt.date | None,
+        url: str,
+        num_referencia: int,
+    ) -> int | None:
         datos = {
             "nombre_articulo": nombre_articulo,
             "nombre_pagina": nombre_pagina,
             "url": url,
-            "num_referencia": num_referencia
+            "num_referencia": num_referencia,
         }
-        if fecha: datos["fecha"] = timestamp(fecha)
+        if fecha:
+            datos["fecha"] = timestamp(fecha)
         return cls._insertar(cursor, datos)
+
 
 @registrar_tabla
 class TablaWikipedia(Tabla):
     nombre = Tablas.WIKIPEDIA
-    necesito_tablas = [ Tablas.REFERENCIAS ]
+    necesito_tablas = [Tablas.REFERENCIAS]
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -72,18 +91,24 @@ class TablaWikipedia(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, nombre: str, fecha: dt.date, url: str, num_referencia: int) -> None:
-        cls._insertar(cursor, {
-            "nombre_articulo": nombre, 
-            "fecha": timestamp(fecha), 
-            "url": url, 
-            "num_referencia": num_referencia,
-        })
+    def insertar(
+        cls, cursor: Cursor, nombre: str, fecha: dt.date, url: str, num_referencia: int
+    ) -> None:
+        cls._insertar(
+            cursor,
+            {
+                "nombre_articulo": nombre,
+                "fecha": timestamp(fecha),
+                "url": url,
+                "num_referencia": num_referencia,
+            },
+        )
+
 
 @registrar_tabla
 class TablaYoutube(Tabla):
     nombre = Tablas.YOUTUBE
-    necesito_tablas = [ Tablas.REFERENCIAS ]
+    necesito_tablas = [Tablas.REFERENCIAS]
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -98,19 +123,31 @@ class TablaYoutube(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, nombre_video: str, nombre_canal: str, fecha: dt.date, url: str, num_referencia: int) -> None:
-        cls._insertar(cursor, {
-            "nombre_video": nombre_video, 
-            "nombre_canal": nombre_canal,
-            "fecha_video": timestamp(fecha),
-            "url": url,
-            "num_referencia": num_referencia,
-        })
+    def insertar(
+        cls,
+        cursor: Cursor,
+        nombre_video: str,
+        nombre_canal: str,
+        fecha: dt.date,
+        url: str,
+        num_referencia: int,
+    ) -> None:
+        cls._insertar(
+            cursor,
+            {
+                "nombre_video": nombre_video,
+                "nombre_canal": nombre_canal,
+                "fecha_video": timestamp(fecha),
+                "url": url,
+                "num_referencia": num_referencia,
+            },
+        )
+
 
 @registrar_tabla
 class TablaLibro(Tabla):
     nombre = Tablas.LIBRO
-    necesito_tablas = [ Tablas.REFERENCIAS, TablasGenerales.EDITORIAL ]
+    necesito_tablas = [Tablas.REFERENCIAS, TablasGenerales.EDITORIAL]
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -131,25 +168,38 @@ class TablaLibro(Tabla):
 
     @classmethod
     def insertar(
-        cls, cursor: Cursor, titulo: str, subtitulo: str | None, anio: int, edicion: str | None,
-        volumen: int | None, doi: str | None, id_editorial: int, num_referencia: int,
+        cls,
+        cursor: Cursor,
+        titulo: str,
+        subtitulo: str | None,
+        anio: int,
+        edicion: str | None,
+        volumen: int | None,
+        doi: str | None,
+        id_editorial: int,
+        num_referencia: int,
     ) -> int | None:
-        valores: Dict[str, Any] = {
+        valores: dict[str, Any] = {
             "titulo": titulo,
             "anio": anio,
             "id_editorial": id_editorial,
             "num_referencia": num_referencia,
         }
-        if subtitulo: valores["subtitulo"] = subtitulo
-        if edicion: valores["edicion"] = edicion
-        if volumen: valores["volumen"] = volumen 
-        if doi: valores["doi"] = doi
+        if subtitulo:
+            valores["subtitulo"] = subtitulo
+        if edicion:
+            valores["edicion"] = edicion
+        if volumen:
+            valores["volumen"] = volumen
+        if doi:
+            valores["doi"] = doi
         return cls._insertar(cursor, valores)
+
 
 @registrar_tabla
 class TablaCapitulo(Tabla):
     nombre = Tablas.CAPITULOS
-    necesito_tablas = [ Tablas.REFERENCIAS, Tablas.LIBRO ]
+    necesito_tablas = [Tablas.REFERENCIAS, Tablas.LIBRO]
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -172,23 +222,33 @@ class TablaCapitulo(Tabla):
 
     @classmethod
     def insertar(
-        cls, cursor: Cursor, numero: int, titulo: str | None, pagina_inicio: int | None,
-        pagina_final: int | None, id_libro: int, num_referencia: int,
+        cls,
+        cursor: Cursor,
+        numero: int,
+        titulo: str | None,
+        pagina_inicio: int | None,
+        pagina_final: int | None,
+        id_libro: int,
+        num_referencia: int,
     ) -> int | None:
-        valores: Dict[str, Any] = {
+        valores: dict[str, Any] = {
             "numero": numero,
             "id_libro": id_libro,
             "num_referencia": num_referencia,
         }
-        if titulo: valores["titulo"] = titulo
-        if pagina_inicio: valores["pagina_inicio"] = pagina_inicio
-        if pagina_final: valores["pagina_final"] = pagina_final
+        if titulo:
+            valores["titulo"] = titulo
+        if pagina_inicio:
+            valores["pagina_inicio"] = pagina_inicio
+        if pagina_final:
+            valores["pagina_final"] = pagina_final
         return cls._insertar(cursor, valores)
+
 
 @registrar_tabla
 class TablaPaper(Tabla):
     nombre = Tablas.PAPER
-    necesito_tablas = [ Tablas.REFERENCIAS ]
+    necesito_tablas = [Tablas.REFERENCIAS]
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -208,21 +268,32 @@ class TablaPaper(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, titulo: str, anio: int, doi: str | None, url: str | None, num_referencia: int) -> int | None:
-        valores: Dict[str, Any] = {
+    def insertar(
+        cls,
+        cursor: Cursor,
+        titulo: str,
+        anio: int,
+        doi: str | None,
+        url: str | None,
+        num_referencia: int,
+    ) -> int | None:
+        valores: dict[str, Any] = {
             "titulo": titulo,
             "anio": anio,
             "num_referencia": num_referencia,
         }
-        if doi: valores["doi"] = doi
-        if url: valores["url"] = url
-            
+        if doi:
+            valores["doi"] = doi
+        if url:
+            valores["url"] = url
+
         return cls._insertar(cursor, valores)
+
 
 @registrar_tabla
 class TablaDiccionario(Tabla):
     nombre = Tablas.DICCIONARIO
-    necesito_tablas = [ Tablas.REFERENCIAS, TablasGenerales.EDITORIAL ]
+    necesito_tablas = [Tablas.REFERENCIAS, TablasGenerales.EDITORIAL]
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -240,22 +311,32 @@ class TablaDiccionario(Tabla):
 
     @classmethod
     def insertar(
-        cls, cursor: Cursor, palabra: str, fecha: dt.date, diccionario: str, 
-        url: str, id_editorial: int, num_referencia: int,
+        cls,
+        cursor: Cursor,
+        palabra: str,
+        fecha: dt.date,
+        diccionario: str,
+        url: str,
+        id_editorial: int,
+        num_referencia: int,
     ) -> int | None:
-        return cls._insertar(cursor, {
-            "palabra": palabra,
-            "fecha": timestamp(fecha),
-            "diccionario": diccionario,
-            "url": url,
-            "id_editorial": id_editorial,
-            "num_referencia": num_referencia,
-        })
+        return cls._insertar(
+            cursor,
+            {
+                "palabra": palabra,
+                "fecha": timestamp(fecha),
+                "diccionario": diccionario,
+                "url": url,
+                "id_editorial": id_editorial,
+                "num_referencia": num_referencia,
+            },
+        )
+
 
 @registrar_tabla
 class TablaCursoOnline(Tabla):
     nombre = Tablas.CURSO_ONLINE
-    necesito_tablas = [ Tablas.REFERENCIAS ]
+    necesito_tablas = [Tablas.REFERENCIAS]
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -272,20 +353,30 @@ class TablaCursoOnline(Tabla):
 
     @classmethod
     def insertar(
-        cls, cursor: Cursor, nombre_curso: str, nombre_pagina: str, anio: int, url: str, num_referencia: int,
+        cls,
+        cursor: Cursor,
+        nombre_curso: str,
+        nombre_pagina: str,
+        anio: int,
+        url: str,
+        num_referencia: int,
     ) -> int | None:
-        return cls._insertar(cursor, {
-            "nombre_curso": nombre_curso,
-            "nombre_pagina": nombre_pagina,
-            "anio": anio,
-            "url": url,
-            "num_referencia": num_referencia,
-        })
+        return cls._insertar(
+            cursor,
+            {
+                "nombre_curso": nombre_curso,
+                "nombre_pagina": nombre_pagina,
+                "anio": anio,
+                "url": url,
+                "num_referencia": num_referencia,
+            },
+        )
+
 
 @registrar_tabla
 class TablaTema(Tabla):
     nombre = Tablas.TEMA
-    necesito_tablas = [ Tablas.REFERENCIAS, Tablas.CURSO_ONLINE ]
+    necesito_tablas = [Tablas.REFERENCIAS, Tablas.CURSO_ONLINE]
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -302,23 +393,29 @@ class TablaTema(Tabla):
 
     @classmethod
     def insertar(
-        cls, cursor: Cursor, nombre: str, capitulo: int, parte: int | None,
-        id_curso: int, num_referencia: int
+        cls,
+        cursor: Cursor,
+        nombre: str,
+        capitulo: int,
+        parte: int | None,
+        id_curso: int,
+        num_referencia: int,
     ) -> int | None:
-        valores: Dict[str, Any] = {
-            "nombre": nombre, 
+        valores: dict[str, Any] = {
+            "nombre": nombre,
             "capitulo": capitulo,
             "id_curso": id_curso,
             "num_referencia": num_referencia,
         }
-        if parte: valores["parte"] = parte
+        if parte:
+            valores["parte"] = parte
         return cls._insertar(cursor, valores)
 
 
 @registrar_tabla
 class TablaReferenciaAutore(Tabla):
     nombre = Tablas.AUTORES_REFERENCIAS
-    necesito_tablas = [ 
+    necesito_tablas = [
         TablasGenerales.AUTORES,
         Tablas.WEB,
         Tablas.LIBRO,
@@ -338,10 +435,14 @@ class TablaReferenciaAutore(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, tipo: str, id_referencia: int, id_autore: int) -> None:
-        cls._insertar(cursor, {
-            "tipo": tipo,
-            "id_referencia": id_referencia,
-            "id_autore": id_autore,
-        })
-
+    def insertar(
+        cls, cursor: Cursor, tipo: str, id_referencia: int, id_autore: int
+    ) -> None:
+        cls._insertar(
+            cursor,
+            {
+                "tipo": tipo,
+                "id_referencia": id_referencia,
+                "id_autore": id_autore,
+            },
+        )

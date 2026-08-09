@@ -1,13 +1,15 @@
-import os
 import json
-from docopt import docopt # Libreria docopt-ng
+import os
 from dataclasses import dataclass
-from typing import Dict, List, Tuple, Any
 from enum import StrEnum
+from typing import Any
+
+from docopt import docopt  # Libreria docopt-ng
 
 DEFAULT_BATCH = 20
 DEFAULT_NOMBRE_SCHEMA = "schema.sql"
 DEFAULT_NOMBRE_BDD = "datos.db"
+
 
 class ErrorArgumentos(StrEnum):
     BATCH_INVALIDO = "El batch tiene que ser un numero"
@@ -16,6 +18,7 @@ class ErrorArgumentos(StrEnum):
     PATH_CONFIGURACION_INVALIDO = "El path de configuracion no existe"
     FORMATO_CONFIGURACION_INVALIDO = "El formato de la configuracion en .json deberia tener un valor de batch (opcional) y una lista de archivo/directorio a excluir debajo del nombre 'excluir'"
 
+
 @dataclass
 class Argumentos:
     input_path: str
@@ -23,8 +26,8 @@ class Argumentos:
     base_de_datos: str
     schema: str
     logs_path: str | None
-    directorios_omitir: List[str]
-    archivos_omitir: List[str]
+    directorios_omitir: list[str]
+    archivos_omitir: list[str]
     tamanio_batch: int
 
     def __init__(self, input_path: str, output_path: str) -> None:
@@ -38,8 +41,9 @@ class Argumentos:
         self.tamanio_batch = DEFAULT_BATCH
 
     @classmethod
-    def parsear(cls) -> Tuple[Argumentos, ErrorArgumentos | None]:
-        dicc_args = docopt(f"""
+    def parsear(cls) -> tuple[Argumentos, ErrorArgumentos | None]:
+        dicc_args = docopt(
+            f"""
 Usage:
   importer.py -i=<input-directorio> -o=<output-directorio>
   importer.py cli -i=<input-directorio> -o=<output-directorio> [-b=<base-de-datos>] [-s=<schema>] [-l=<logs>] [-t=<tamanio-bloque>] [-e=<excluir>]...
@@ -59,8 +63,9 @@ Options:
     -t=<tamanio-bloque>, --tamanio-bloque=<tamanio-bloque>          Se bloques de archivos a procesar, esta el tamaño del bloque [default: {DEFAULT_BATCH}].
     -e=<excluir>, --excluir=<excluir>                               Directorios y archivos a excluir de los datos a procesar.
     -f=<archivo-config>, --archivo-config=<archivo-config>          Archivo con la configuracion en .json equivalente a los otros parametros.
-"""
-, version = "0.1.0")
+""",
+            version="0.1.0",
+        )
 
         argumentos = Argumentos(
             _limpear_path(dicc_args["--input-directorio"]),
@@ -76,7 +81,9 @@ Options:
         return argumentos, None
 
     @classmethod
-    def _parsear_cli(cls, argumentos: Argumentos, dicc_args: Dict[str, Any]) -> Tuple[Argumentos, ErrorArgumentos | None]:
+    def _parsear_cli(
+        cls, argumentos: Argumentos, dicc_args: dict[str, Any]
+    ) -> tuple[Argumentos, ErrorArgumentos | None]:
         argumentos.base_de_datos = dicc_args["--base-de-datos"]
         argumentos.schema = dicc_args["--schema"]
 
@@ -90,24 +97,27 @@ Options:
 
             elif os.path.exists(path_completo):
                 return argumentos, ErrorArgumentos.EXCLUIDO_INVALIDO
-        
+
         if dicc_args["--logs"]:
             path = _limpear_path(dicc_args["--logs"])
             directorio = "/".join(path.split("/")[:-1]).strip()
-            if directorio != "": os.makedirs(directorio, exist_ok = True)
+            if directorio != "":
+                os.makedirs(directorio, exist_ok=True)
             argumentos.logs_path = path
-        
-        try: 
+
+        try:
             argumentos.tamanio_batch = int(dicc_args["--batch"])
             if argumentos.tamanio_batch <= 0:
                 return argumentos, ErrorArgumentos.BATCH_NO_POSITIVO
         except:
             return argumentos, ErrorArgumentos.BATCH_INVALIDO
-        
+
         return argumentos, None
 
     @classmethod
-    def _parsear_file(cls, argumentos: Argumentos, dicc_args: Dict[str, Any]) -> Tuple[Argumentos, ErrorArgumentos | None]:
+    def _parsear_file(
+        cls, argumentos: Argumentos, dicc_args: dict[str, Any]
+    ) -> tuple[Argumentos, ErrorArgumentos | None]:
         path_configuracion = dicc_args["--archivo-config"]
         if path_configuracion is None:
             return argumentos, None
@@ -126,6 +136,7 @@ Options:
         dicc_args["--excluir"] = datos.get("excluir", [])
 
         return cls._parsear_cli(argumentos, dicc_args)
+
 
 def _limpear_path(path: str) -> str:
     return os.path.join(*path.replace("\\", "/").split("/"))

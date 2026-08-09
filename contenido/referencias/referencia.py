@@ -1,16 +1,15 @@
-import sqlite3 as sql
-
-from typing import Dict, List
-from dataclasses import dataclass
 import datetime as dt
+import sqlite3 as sql
+from dataclasses import dataclass
 from enum import Enum
 
-from dependencias import Nodo, Dato, Clave
-from logger import loggear, LoggerNivel
-
-from contenido.dependencias import TipoNodo
 from contenido.archivo import Archivo
+from contenido.dependencias import TipoNodo
+from dependencias import Clave, Dato, Nodo
+from logger import LoggerNivel, loggear
+
 from .tablas import TablaReferencia as Tabla
+
 
 class TipoReferencia(Enum):
     YOUTUBE = "Youtube"
@@ -31,6 +30,7 @@ class TipoReferencia(Enum):
                 return extension
         return None
 
+
 @dataclass
 class Referencia(Dato):
     num_referencia: int
@@ -38,20 +38,25 @@ class Referencia(Dato):
     fecha_registrado: dt.datetime
 
     @classmethod
-    def parsear(cls, archivo: Archivo) -> List[Dato] | None:
-        datos: List[Dato] = []
+    def parsear(cls, archivo: Archivo) -> list[Dato] | None:
+        datos: list[Dato] = []
 
         tipo = TipoReferencia.de_texto(archivo.extra["tipoCita"])
         if tipo is None:
-            loggear(LoggerNivel.WARN, f"Tipo de referencia no reconocida: {archivo.extra["tipoCita"]}")
-            return None # Despues cambiar a raise Exception(mensaje)
+            loggear(
+                LoggerNivel.WARN,
+                f"Tipo de referencia no reconocida: {archivo.extra['tipoCita']}",
+            )
+            return None  # Despues cambiar a raise Exception(mensaje)
 
-        try: 
-            datos.append(Referencia(
-                int(archivo.extra["numReferencia"]), 
-                tipo, 
-                archivo.metadata.dia_creacion,
-            ))
+        try:
+            datos.append(
+                Referencia(
+                    int(archivo.extra["numReferencia"]),
+                    tipo,
+                    archivo.metadata.dia_creacion,
+                )
+            )
 
         except Exception as e:
             loggear(LoggerNivel.FATAL, f"Al crear referencia de tipo: {tipo}")
@@ -59,14 +64,17 @@ class Referencia(Dato):
 
         if tipo == TipoReferencia.LIBRO:
             capitulos = archivo.extra.get("capitulos", [])
-            if capitulos is None: capitulos = []
+            if capitulos is None:
+                capitulos = []
             for extra_capitulo in capitulos:
                 try:
-                    datos.append(Referencia(
-                        int(extra_capitulo["numReferencia"]), 
-                        TipoReferencia.CAPITULO, 
-                        archivo.metadata.dia_creacion,
-                    ))
+                    datos.append(
+                        Referencia(
+                            int(extra_capitulo["numReferencia"]),
+                            TipoReferencia.CAPITULO,
+                            archivo.metadata.dia_creacion,
+                        )
+                    )
 
                 except Exception as e:
                     loggear(LoggerNivel.FATAL, f"Al crear referencia de tipo: {tipo}")
@@ -74,10 +82,10 @@ class Referencia(Dato):
 
         return datos
 
-    def dependo(self) -> List[Clave]: 
+    def dependo(self) -> list[Clave]:
         return []
 
-    def obtener_clave(self) -> Clave: 
+    def obtener_clave(self) -> Clave:
         return Referencia._obtener_clave(self.num_referencia)
 
     @classmethod
@@ -106,8 +114,10 @@ class Referencia(Dato):
         loggear(LoggerNivel.FATAL, mensaje)
         raise Exception(mensaje)
 
-    def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo:
-        try: 
+    def insertar_datos(
+        self, cursor: sql.Cursor, dependencias: dict[Clave, int]
+    ) -> Nodo:
+        try:
             id_referencia = Tabla.insertar(
                 cursor,
                 self.tipo.value,
@@ -115,8 +125,11 @@ class Referencia(Dato):
             )
 
         except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al insertar referencias con num: {self.num_referencia}")
-            raise e 
+            loggear(
+                LoggerNivel.FATAL,
+                f"Al insertar referencias con num: {self.num_referencia}",
+            )
+            raise e
 
         if id_referencia is None:
             mensaje = f"La referencia insertada no tiene id"

@@ -1,18 +1,16 @@
 import sqlite3 as sql
-
-from typing import Dict, List
 from dataclasses import dataclass
 
-from contenido.referencias.referencia import Referencia
-from dependencias import Nodo, Dato, Clave
-from logger import loggear, LoggerNivel
-
-from contenido.dependencias import TipoNodo
 from contenido.archivo import Archivo
+from contenido.dependencias import TipoNodo
 from contenido.general.autore import Autore
+from contenido.referencias.referencia import Referencia
+from dependencias import Clave, Dato, Nodo
+from logger import LoggerNivel, loggear
 
 from .autore_referencia import AutoreReferencia
 from .tablas import TablaCursoOnline as Tabla
+
 
 @dataclass
 class ReferenciaCursoOnline:
@@ -23,7 +21,7 @@ class ReferenciaCursoOnline:
     clave_referencia: Clave
 
     @classmethod
-    def parsear(cls, archivo: Archivo) -> List[Dato]:
+    def parsear(cls, archivo: Archivo) -> list[Dato]:
         datos = []
 
         try:
@@ -48,24 +46,28 @@ class ReferenciaCursoOnline:
             autore = Autore(autore["nombre"], autore["apellido"])
             datos.append(autore)
 
-            autore_referencia = AutoreReferencia.curso_online(clave_curso, autore.obtener_clave())
+            autore_referencia = AutoreReferencia.curso_online(
+                clave_curso, autore.obtener_clave()
+            )
             datos.append(autore_referencia)
 
         return datos
 
-    def dependo(self) -> List[Clave]: 
-        return [ self.clave_referencia ] 
+    def dependo(self) -> list[Clave]:
+        return [self.clave_referencia]
 
-    def obtener_clave(self) -> Clave: 
-        return ReferenciaCursoOnline._obtener_clave(self.clave_referencia) 
+    def obtener_clave(self) -> Clave:
+        return ReferenciaCursoOnline._obtener_clave(self.clave_referencia)
 
     @classmethod
-    def _obtener_clave(cls, referencia: int | str | Clave) -> Clave: 
+    def _obtener_clave(cls, referencia: int | str | Clave) -> Clave:
         hash = Referencia._obtener_clave(referencia).hash
         return Clave(TipoNodo.REFERENCIA_CURSO_ONLINE, hash)
 
-    def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo:
-        try: 
+    def insertar_datos(
+        self, cursor: sql.Cursor, dependencias: dict[Clave, int]
+    ) -> Nodo:
+        try:
             id_curso = Tabla.insertar(
                 cursor,
                 self.nombre_curso,
@@ -77,7 +79,7 @@ class ReferenciaCursoOnline:
 
         except Exception as e:
             loggear(LoggerNivel.FATAL, f"Al insertar ref de curso: {self.nombre_curso}")
-            raise e 
+            raise e
 
         if id_curso is None:
             mensaje = f"El Curso insertado no tiene id"
@@ -85,4 +87,3 @@ class ReferenciaCursoOnline:
             raise Exception(mensaje)
 
         return Nodo(id_curso, self.obtener_clave())
-

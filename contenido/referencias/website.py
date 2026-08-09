@@ -1,18 +1,17 @@
-import sqlite3 as sql
-
-from typing import Dict, List
-from dataclasses import dataclass
 import datetime as dt
+import sqlite3 as sql
+from dataclasses import dataclass
 
-from contenido.referencias.referencia import Referencia
-from dependencias import Nodo, Dato, Clave
-from logger import loggear, LoggerNivel
-
-from contenido.dependencias import TipoNodo
 from contenido.archivo import Archivo
+from contenido.dependencias import TipoNodo
 from contenido.general.autore import Autore
+from contenido.referencias.referencia import Referencia
+from dependencias import Clave, Dato, Nodo
+from logger import LoggerNivel, loggear
+
 from .autore_referencia import AutoreReferencia
 from .tablas import TablaWebsite as Tabla
+
 
 @dataclass
 class ReferenciaWeb(Dato):
@@ -23,9 +22,9 @@ class ReferenciaWeb(Dato):
     clave_referencia: Clave
 
     @classmethod
-    def parsear(cls, archivo: Archivo) -> List[Dato]:
+    def parsear(cls, archivo: Archivo) -> list[Dato]:
         datos = []
-        try: 
+        try:
             fecha = dt.date.strptime(archivo.extra["fechaPublicacion"], "%Y-%m-%d")
 
         except TypeError:
@@ -48,24 +47,28 @@ class ReferenciaWeb(Dato):
             autore = Autore(autore["nombre"], autore["apellido"])
             datos.append(autore)
 
-            autore_referencia = AutoreReferencia.website(clave_website, autore.obtener_clave())
+            autore_referencia = AutoreReferencia.website(
+                clave_website, autore.obtener_clave()
+            )
             datos.append(autore_referencia)
 
         return datos
 
-    def dependo(self) -> List[Clave]: 
-        return [ self.clave_referencia ] 
+    def dependo(self) -> list[Clave]:
+        return [self.clave_referencia]
 
-    def obtener_clave(self) -> Clave: 
-        return ReferenciaWeb._obtener_clave(self.clave_referencia) 
+    def obtener_clave(self) -> Clave:
+        return ReferenciaWeb._obtener_clave(self.clave_referencia)
 
     @classmethod
-    def _obtener_clave(cls, referencia: int | str | Clave) -> Clave: 
+    def _obtener_clave(cls, referencia: int | str | Clave) -> Clave:
         hash = Referencia._obtener_clave(referencia).hash
         return Clave(TipoNodo.REFERENCIA_WEBSITE, hash)
 
-    def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo:
-        try: 
+    def insertar_datos(
+        self, cursor: sql.Cursor, dependencias: dict[Clave, int]
+    ) -> Nodo:
+        try:
             id_website = Tabla.insertar(
                 cursor,
                 self.nombre_articulo,
@@ -76,8 +79,11 @@ class ReferenciaWeb(Dato):
             )
 
         except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al insertar ref web del articulo {self.nombre_articulo}")
-            raise e 
+            loggear(
+                LoggerNivel.FATAL,
+                f"Al insertar ref web del articulo {self.nombre_articulo}",
+            )
+            raise e
 
         if id_website is None:
             mensaje = f"La referencia web insertada no tiene id"

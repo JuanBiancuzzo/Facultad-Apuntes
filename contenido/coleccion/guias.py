@@ -1,5 +1,4 @@
 import sqlite3 as sql
-from typing import dict, list
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
@@ -64,8 +63,7 @@ class Guia(Dato):
                 TablaEjerciciosGuia.insertar(cursor, id_guia, id_ejercicio)
 
         except Exception as err:
-            raise ErrorInsertar(
-                f"Al insertar guia {self.numero} con relacion con ejercicio", err
-            )
+            mensaje = f"Al insertar guia {self.numero} con relacion con ejercicio"
+            raise ErrorInsertar(mensaje, err)
 
         return Nodo(id_guia, self.obtener_clave())

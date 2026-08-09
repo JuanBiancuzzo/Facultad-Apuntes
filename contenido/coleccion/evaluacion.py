@@ -1,7 +1,6 @@
 import datetime as dt
 import sqlite3 as sql
 from dataclasses import dataclass
-from typing import dict, list
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
@@ -55,9 +54,8 @@ class Evaluacion(Dato):
             id_evaluacion = Tabla.insertar(cursor, self.fecha)
 
         except Exception as err:
-            raise ErrorInsertar(
-                f"Al insertar evaluacion {self.numero} de ejercicios", err
-            )
+            mensaje = f"Al insertar evaluacion {self.numero} de ejercicios"
+            raise ErrorInsertar(mensaje, err)
 
         if id_evaluacion is None:
             raise ErrorIdNoGenerado("La guia insertada no tiene id")
@@ -68,8 +66,7 @@ class Evaluacion(Dato):
                 TablaEjerciciosEvaluacion.insertar(cursor, id_evaluacion, id_ejercicio)
 
         except Exception as err:
-            raise ErrorInsertar(
-                f"Al insertar evaluacion {self.numero} con relacion con ejercicio", err
-            )
+            mensaje = f"Al insertar evaluacion {self.numero} con relacion con ejercicio"
+            raise ErrorInsertar(mensaje, err)
 
         return Nodo(id_evaluacion, self.obtener_clave())

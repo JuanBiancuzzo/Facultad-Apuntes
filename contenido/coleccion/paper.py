@@ -1,6 +1,6 @@
 import sqlite3 as sql
+from collections.abc import Iterable
 from dataclasses import dataclass
-from typing import dict, iterable, list, tuple
 
 from contenido.archivo import Archivo, Seccion, Texto
 from contenido.dependencias import TipoNodo
@@ -64,7 +64,7 @@ class Paper(Dato):
         datos.extend(Embedding.parsear((clave_nommbre, nombre)))
 
         if bloque_resumen is not None:
-            pares: iterable[tuple[link.Link, str]] = (
+            pares: Iterable[tuple[link.Link, str]] = (
                 (link.Paper.gen_resumen(clave_paper, id), texto)
                 for id, texto in bloque_resumen.texto.chunks()
             )

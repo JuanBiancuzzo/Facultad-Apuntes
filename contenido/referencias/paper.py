@@ -1,15 +1,12 @@
 import sqlite3 as sql
-
-from typing import Dict, List
 from dataclasses import dataclass
 
-from contenido.referencias.referencia import Referencia
-from dependencias import Nodo, Dato, Clave
-from logger import loggear, LoggerNivel
-
-from contenido.dependencias import TipoNodo
 from contenido.archivo import Archivo
+from contenido.dependencias import TipoNodo
 from contenido.general.autore import Autore
+from contenido.referencias.referencia import Referencia
+from dependencias import Clave, Dato, Nodo
+from logger import LoggerNivel, loggear
 
 from .autore_referencia import AutoreReferencia
 from .tablas import TablaPaper as Tabla
@@ -27,20 +24,23 @@ class ReferenciaPaper:
     def nombre_representativo(cls, archivo: Archivo) -> str:
         nombre = archivo.extra["tituloInforme"]
 
-        autores = archivo.extra.get("autores", [])
-        if autores is None: autores = []
-        autores = map(lambda autore: f"{autore["nombre"]} {autore["nombre"]}", autores)
-        nombre += f" escrito por: {", ".join(autores)}"
+        autores = archivo.extra.get("autores")
+        if autores is None:
+            autores = []
+        autores = (f"{autore['nombre']} {autore['nombre']}" for autore in autores)
+        nombre += f" escrito por: {', '.join(autores)}"
 
-        editores = archivo.extra.get("editores", [])
-        if editores is None: editores = []
-        editores = list(map(lambda autore: f"{autore["nombre"]} {autore["nombre"]}", editores))
-        if len(editores) > 0: nombre += f" , con editores: {", ".join(editores)}"
+        editores = archivo.extra.get("editores")
+        if editores is None:
+            editores = []
+        editores = (f"{autore['nombre']} {autore['nombre']}" for autore in editores)
+        if len(editores) > 0:
+            nombre += f" , con editores: {', '.join(editores)}"
 
         return nombre
 
     @classmethod
-    def parsear(cls, archivo: Archivo) -> List[Dato]:
+    def parsear(cls, archivo: Archivo) -> list[Dato]:
         datos = []
 
         try:
@@ -59,38 +59,46 @@ class ReferenciaPaper:
 
         clave_paper = paper.obtener_clave()
         autores = archivo.extra.get("autores", [])
-        if autores is None: autores = []
+        if autores is None:
+            autores = []
         for autore in autores:
             autore = Autore(autore["nombre"], autore["apellido"])
             datos.append(autore)
 
-            autore_referencia = AutoreReferencia.paper_autore(clave_paper, autore.obtener_clave())
+            autore_referencia = AutoreReferencia.paper_autore(
+                clave_paper, autore.obtener_clave()
+            )
             datos.append(autore_referencia)
 
         editores = archivo.extra.get("editores", [])
-        if editores is None: editores = []
+        if editores is None:
+            editores = []
         for autore in editores:
             autore = Autore(autore["nombre"], autore["apellido"])
             datos.append(autore)
 
-            autore_referencia = AutoreReferencia.paper_editore(clave_paper, autore.obtener_clave())
+            autore_referencia = AutoreReferencia.paper_editore(
+                clave_paper, autore.obtener_clave()
+            )
             datos.append(autore_referencia)
 
         return datos
 
-    def dependo(self) -> List[Clave]: 
-        return [ self.clave_referencia ] 
+    def dependo(self) -> list[Clave]:
+        return [self.clave_referencia]
 
-    def obtener_clave(self) -> Clave: 
-        return ReferenciaPaper._obtener_clave(self.clave_referencia) 
+    def obtener_clave(self) -> Clave:
+        return ReferenciaPaper._obtener_clave(self.clave_referencia)
 
     @classmethod
-    def _obtener_clave(cls, referencia: int | str | Clave) -> Clave: 
+    def _obtener_clave(cls, referencia: int | str | Clave) -> Clave:
         hash = Referencia._obtener_clave(referencia).hash
         return Clave(TipoNodo.REFERENCIA_LIBRO, hash)
 
-    def insertar_datos(self, cursor: sql.Cursor, dependencias: Dict[Clave, int]) -> Nodo:
-        try: 
+    def insertar_datos(
+        self, cursor: sql.Cursor, dependencias: dict[Clave, int]
+    ) -> Nodo:
+        try:
             id_paper = Tabla.insertar(
                 cursor,
                 self.titulo,
@@ -101,8 +109,11 @@ class ReferenciaPaper:
             )
 
         except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al insertar ref paper, con clave de libro: {self.titulo}")
-            raise e 
+            loggear(
+                LoggerNivel.FATAL,
+                f"Al insertar ref paper, con clave de libro: {self.titulo}",
+            )
+            raise e
 
         if id_paper is None:
             mensaje = f"El paper insertado no tiene id"
@@ -110,6 +121,7 @@ class ReferenciaPaper:
             raise Exception(mensaje)
 
         return Nodo(id_paper, self.obtener_clave())
+
 
 def _string_vacio(texto: str | None) -> str | None:
     if texto is None:

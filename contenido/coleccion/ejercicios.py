@@ -1,6 +1,6 @@
 import sqlite3 as sql
 from dataclasses import dataclass
-from typing import dict, iterable, list, tuple
+from collections.abc import Iterable
 
 from contenido.archivo import Archivo, Seccion, Texto
 from contenido.dependencias import TipoNodo
@@ -104,7 +104,7 @@ class Ejercicio(Dato):
             if not valido:
                 continue
 
-            pares: iterable[tuple[link.Link, str]] = (
+            pares: Iterable[tuple[link.Link, str]] = (
                 (generador(clave_ejercicio, id), texto)
                 for id, texto in bloque.texto.chunks()
             )
