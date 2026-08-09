@@ -3,6 +3,7 @@ from dataclasses import dataclass
 from enum import StrEnum
 
 from contenido.dependencias import TipoNodo
+from contenido.errores.insertar import ErrorInsertar
 from dependencias import Clave, Dato
 from logger import LoggerNivel, loggear
 
@@ -57,9 +58,8 @@ class Bibliografia(Dato):
             id_referencia = dependencias[self.clave_referencia]
             Tabla.insertar(cursor, self.tipo, id_dato, id_referencia)
 
-        except Exception as e:
-            loggear(
-                LoggerNivel.FATAL,
+        except Exception as err:
+            raise ErrorInsertar(
                 f"Al insertar bibliografia con tipo: {self.tipo}, dato: {self.clave_dato} y ref: {self.clave_referencia}",
+                err,
             )
-            raise e

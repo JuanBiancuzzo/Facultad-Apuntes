@@ -3,6 +3,7 @@ from dataclasses import dataclass
 from enum import StrEnum
 
 from contenido.dependencias import TipoNodo
+from contenido.errores.insertar import ErrorInsertar
 from dependencias import Clave, Dato
 from logger import LoggerNivel, loggear
 
@@ -57,8 +58,7 @@ class EvaluacionPorDato(Dato):
             Tabla.insertar(cursor, self.tipo, id_dato, id_evaluacion)
 
         except Exception as err:
-            loggear(
-                LoggerNivel.FATAL,
+            raise ErrorInsertar(
                 f"Al insertar evaluacions por dato con tipo: {self.tipo}, dato: {self.clave_dato} y ref: {self.clave_evaluacion}",
+                err,
             )
-            raise err

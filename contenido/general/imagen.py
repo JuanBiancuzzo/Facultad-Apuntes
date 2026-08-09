@@ -4,6 +4,7 @@ from enum import StrEnum
 
 from archivos import Archivo, Extension
 from contenido.dependencias import TipoNodo
+from contenido.errores.insertar import ErrorIdNoGenerado, ErrorInsertar
 from dependencias import Clave, Dato, Nodo
 from logger import LoggerNivel, loggear
 
@@ -62,13 +63,10 @@ class Imagen(Dato):
         try:
             id_imagen = Tabla.insertar(cursor, self.tipo, self.blob)
 
-        except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al insertar imagen {self.path}")
-            raise e
+        except Exception as err:
+            raise ErrorInsertar(f"Al insertar imagen {self.path}", err)
 
         if id_imagen is None:
-            mensaje = f"La imagen insertada no tiene id"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            raise ErrorIdNoGenerado("La imagen insertada no tiene id")
 
         return Nodo(id_imagen, self.obtener_clave())

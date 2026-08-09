@@ -4,8 +4,8 @@ from dataclasses import dataclass
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
+from contenido.errores import ErrorInsertar
 from dependencias import Clave, Dato
-from logger import LoggerNivel, loggear
 
 from .referencia import Referencia
 from .tablas import TablaYoutube as Tabla
@@ -54,9 +54,8 @@ class ReferenciaYoutube(Dato):
                 dependencias[self.clave_referencia],
             )
 
-        except Exception as e:
-            loggear(
-                LoggerNivel.FATAL,
+        except Exception as err:
+            raise ErrorInsertar(
                 f"Al insertar referencia de youtuve, con {self.nombre_video} de {self.nombre_canal}",
+                err,
             )
-            raise e

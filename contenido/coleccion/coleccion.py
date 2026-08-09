@@ -6,6 +6,7 @@ from typing import Self
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
+from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.embedding import Embedding
 from contenido.links import coleccion as link
@@ -139,15 +140,10 @@ class Coleccion(Dato):
                 dependencias[self.clave_descripcion],
             )
 
-        except Exception as e:
-            loggear(
-                LoggerNivel.FATAL, f"Al insertar coleccion con nombre: {self.nombre}"
-            )
-            raise e
+        except Exception as err:
+            raise ErrorInsertar(f"Al insertar coleccion con nombre: {self.nombre}", err)
 
         if id_tabla is None:
-            mensaje = f"La coleccion insertada no tiene id"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            raise ErrorIdNoGenerado("La coleccion insertada no tiene id")
 
         return Nodo(id_tabla, self.obtener_clave())

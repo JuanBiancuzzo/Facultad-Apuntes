@@ -2,8 +2,8 @@ import sqlite3 as sql
 from dataclasses import dataclass
 
 from contenido.dependencias import TipoNodo
+from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
 from dependencias import Clave, Dato, Nodo
-from logger import LoggerNivel, loggear
 
 from .tablas import TablaAutore as Tabla
 
@@ -31,15 +31,11 @@ class Autore(Dato):
         try:
             id_autore = Tabla.insertar(cursor, self.nombre, self.apellido)
 
-        except Exception as e:
-            loggear(
-                LoggerNivel.FATAL, f"Al insertar autore {self.nombre} {self.apellido}"
-            )
-            raise e
+        except Exception as err:
+            mensaje = f"Al insertar autore {self.nombre} {self.apellido}"
+            raise ErrorInsertar(mensaje, err)
 
         if id_autore is None:
-            mensaje = f"El autore insertado no tiene id"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            raise ErrorIdNoGenerado("El autore insertado no tiene id")
 
         return Nodo(id_autore, self.obtener_clave())

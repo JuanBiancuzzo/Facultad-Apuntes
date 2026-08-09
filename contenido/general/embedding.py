@@ -6,6 +6,7 @@ from typing import ClassVar
 from fastembed import TextEmbedding
 
 from contenido.dependencias import TipoNodo
+from contenido.errores.insertar import ErrorInsertar
 from dependencias import Clave, Dato
 from logger import LoggerNivel, loggear
 
@@ -57,5 +58,4 @@ class Embedding(Dato):
             )
 
         except Exception as err:
-            loggear(LoggerNivel.FATAL, f"Al insertar embedding: {self}")
-            raise err
+            raise ErrorInsertar(f"Al insertar embedding: {self}", err)

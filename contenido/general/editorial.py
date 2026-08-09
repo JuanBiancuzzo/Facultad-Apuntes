@@ -2,6 +2,7 @@ import sqlite3 as sql
 from dataclasses import dataclass
 
 from contenido.dependencias import TipoNodo
+from contenido.errores.insertar import ErrorIdNoGenerado, ErrorInsertar
 from dependencias import Clave, Dato, Nodo
 from logger import LoggerNivel, loggear
 
@@ -28,15 +29,10 @@ class Editorial(Dato):
         try:
             id_editorial = Tabla.insertar(cursor, self.nombre)
 
-        except Exception as e:
-            loggear(
-                LoggerNivel.FATAL, f"Al insertar editorial de nombre: {self.nombre}"
-            )
-            raise e
+        except Exception as err:
+            raise ErrorInsertar(f"Al insertar editorial de nombre: {self.nombre}", err)
 
         if id_editorial is None:
-            mensaje = f"La editorial insertada no tiene id"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            raise ErrorIdNoGenerado("La editorial insertada no tiene id")
 
         return Nodo(id_editorial, self.obtener_clave())

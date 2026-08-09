@@ -4,6 +4,7 @@ from typing import Any
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
+from contenido.errores.insertar import ErrorIdNoGenerado, ErrorInsertar
 from contenido.general.autore import Autore
 from dependencias import Clave, Dato, Nodo
 from logger import LoggerNivel, loggear
@@ -115,16 +116,11 @@ class ReferenciaCapitulo(Dato):
                 dependencias[self.clave_referencia],
             )
 
-        except Exception as e:
-            loggear(
-                LoggerNivel.FATAL,
-                f"Al insertar ref de capitulo de un libro, con clave de libro: {self.clave_ref_libro}",
-            )
-            raise e
+        except Exception as err:
+            mensaje = f"Al insertar ref de capitulo de un libro, con clave de libro: {self.clave_ref_libro}"
+            raise ErrorInsertar(mensaje, err)
 
         if id_capitulo is None:
-            mensaje = f"El ref capitulo insertado no tiene id"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            raise ErrorIdNoGenerado("El ref capitulo insertado no tiene id")
 
         return Nodo(id_capitulo, self.obtener_clave())

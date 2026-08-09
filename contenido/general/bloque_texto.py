@@ -3,6 +3,7 @@ from dataclasses import dataclass
 
 from contenido.archivo import Texto
 from contenido.dependencias import TipoNodo
+from contenido.errores.insertar import ErrorIdNoGenerado, ErrorInsertar
 from dependencias import Clave, Dato, Nodo
 from logger import LoggerNivel, loggear
 
@@ -29,16 +30,11 @@ class BloqueTexto(Dato):
         try:
             id_texto = Tabla.insertar(cursor, self.texto.bjson())
 
-        except Exception as e:
-            loggear(
-                LoggerNivel.FATAL,
-                f"Al insertar bloque de texto {self.texto.string()[:20]}",
-            )
-            raise e
+        except Exception as err:
+            mensaje = f"Al insertar bloque de texto {self.texto.string()[:20]}"
+            raise ErrorInsertar(mensaje, err)
 
         if id_texto is None:
-            mensaje = f"El texto insertado no tiene id"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            raise ErrorIdNoGenerado("El texto insertado no tiene id")
 
         return Nodo(id_texto, self.obtener_clave())

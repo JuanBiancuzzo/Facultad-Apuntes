@@ -3,8 +3,7 @@ from dataclasses import dataclass
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
-from contenido.errores import ErrorInsertar
-from contenido.errores.insertar import ErrorIdNoGenerado
+from contenido.errores import ErrorInsertar, ErrorIdNoGenerado
 from contenido.general.embedding import Embedding
 from contenido.general.etapa import Etapa
 from contenido.links import facultad as link

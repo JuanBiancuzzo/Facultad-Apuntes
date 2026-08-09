@@ -4,6 +4,7 @@ from dataclasses import dataclass
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
+from contenido.errores.insertar import ErrorIdNoGenerado, ErrorInsertar
 from contenido.general.editorial import Editorial
 from dependencias import Clave, Dato, Nodo
 from logger import LoggerNivel, loggear
@@ -73,16 +74,15 @@ class ReferenciaDiccionario(Dato):
                 dependencias[self.clave_referencia],
             )
 
-        except Exception as e:
-            loggear(
-                LoggerNivel.FATAL,
+        except Exception as err:
+            raise ErrorInsertar(
                 f"Al insertar referencia de palabra de diccionario, con {self.palabra}",
+                err,
             )
-            raise e
 
         if id_diccionario is None:
-            mensaje = f"La referencia de diccionario insertado no tiene id"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            raise ErrorIdNoGenerado(
+                "La referencia de diccionario insertado no tiene id"
+            )
 
         return Nodo(id_diccionario, self.obtener_clave())

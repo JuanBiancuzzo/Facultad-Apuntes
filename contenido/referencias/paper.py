@@ -3,6 +3,7 @@ from dataclasses import dataclass
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
+from contenido.errores.insertar import ErrorIdNoGenerado, ErrorInsertar
 from contenido.general.autore import Autore
 from contenido.referencias.referencia import Referencia
 from dependencias import Clave, Dato, Nodo
@@ -108,17 +109,12 @@ class ReferenciaPaper:
                 dependencias[self.clave_referencia],
             )
 
-        except Exception as e:
-            loggear(
-                LoggerNivel.FATAL,
-                f"Al insertar ref paper, con clave de libro: {self.titulo}",
-            )
-            raise e
+        except Exception as err:
+            mensaje = f"Al insertar ref paper, con clave de libro: {self.titulo}"
+            raise ErrorInsertar(mensaje, err)
 
         if id_paper is None:
-            mensaje = f"El paper insertado no tiene id"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            raise ErrorIdNoGenerado("El paper insertado no tiene id")
 
         return Nodo(id_paper, self.obtener_clave())
 

@@ -4,6 +4,7 @@ from dataclasses import dataclass
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
+from contenido.errores.insertar import ErrorIdNoGenerado, ErrorInsertar
 from contenido.general.autore import Autore
 from contenido.referencias.referencia import Referencia
 from dependencias import Clave, Dato, Nodo
@@ -78,16 +79,11 @@ class ReferenciaWeb(Dato):
                 dependencias[self.clave_referencia],
             )
 
-        except Exception as e:
-            loggear(
-                LoggerNivel.FATAL,
-                f"Al insertar ref web del articulo {self.nombre_articulo}",
-            )
-            raise e
+        except Exception as err:
+            mensaje = f"Al insertar ref web del articulo {self.nombre_articulo}"
+            raise ErrorInsertar(mensaje, err)
 
         if id_website is None:
-            mensaje = f"La referencia web insertada no tiene id"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            raise ErrorIdNoGenerado("La referencia web insertada no tiene id")
 
         return Nodo(id_website, self.obtener_clave())

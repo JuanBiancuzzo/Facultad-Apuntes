@@ -4,6 +4,7 @@ from dataclasses import dataclass
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
+from contenido.errores import ErrorInsertar
 from dependencias import Clave, Dato
 from logger import LoggerNivel, loggear
 
@@ -56,9 +57,6 @@ class ReferenciaWikipedia(Dato):
                 dependencias[self.clave_referencia],
             )
 
-        except Exception as e:
-            loggear(
-                LoggerNivel.FATAL,
-                f"Al insertar referencia de wikipedia, con {self.nombre_articulo}",
-            )
-            raise e
+        except Exception as err:
+            mensaje = f"Al insertar referencia de wikipedia, con {self.nombre_articulo}"
+            raise ErrorInsertar(mensaje, err)

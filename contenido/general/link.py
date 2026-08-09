@@ -2,6 +2,7 @@ import sqlite3 as sql
 from dataclasses import dataclass
 
 from contenido.dependencias import TipoNodo
+from contenido.errores.insertar import ErrorIdNoGenerado, ErrorInsertar
 from dependencias import Clave, Dato, Nodo
 from logger import LoggerNivel, loggear
 
@@ -42,13 +43,10 @@ class Link(Dato):
                 self.info_arbitraria,
             )
 
-        except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al insertar link en la tabla {self.tabla}")
-            raise e
+        except Exception as err:
+            raise ErrorInsertar(f"Al insertar link en la tabla {self.tabla}", err)
 
         if id_link is None:
-            mensaje = "El link insertado no tiene id"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            raise ErrorIdNoGenerado("El link insertado no tiene id")
 
         return Nodo(id_link, self.obtener_clave())

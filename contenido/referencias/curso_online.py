@@ -3,6 +3,7 @@ from dataclasses import dataclass
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
+from contenido.errores.insertar import ErrorIdNoGenerado, ErrorInsertar
 from contenido.general.autore import Autore
 from contenido.referencias.referencia import Referencia
 from dependencias import Clave, Dato, Nodo
@@ -77,13 +78,10 @@ class ReferenciaCursoOnline:
                 dependencias[self.clave_referencia],
             )
 
-        except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al insertar ref de curso: {self.nombre_curso}")
-            raise e
+        except Exception as err:
+            raise ErrorInsertar(f"Al insertar ref de curso: {self.nombre_curso}", err)
 
         if id_curso is None:
-            mensaje = f"El Curso insertado no tiene id"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            raise ErrorIdNoGenerado("El Curso insertado no tiene id")
 
         return Nodo(id_curso, self.obtener_clave())

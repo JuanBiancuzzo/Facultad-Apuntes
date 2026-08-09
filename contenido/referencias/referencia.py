@@ -5,6 +5,7 @@ from enum import Enum
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
+from contenido.errores.insertar import ErrorIdNoGenerado, ErrorInsertar
 from dependencias import Clave, Dato, Nodo
 from logger import LoggerNivel, loggear
 
@@ -124,16 +125,11 @@ class Referencia(Dato):
                 self.fecha_registrado,
             )
 
-        except Exception as e:
-            loggear(
-                LoggerNivel.FATAL,
-                f"Al insertar referencias con num: {self.num_referencia}",
-            )
-            raise e
+        except Exception as err:
+            mensaje = f"Al insertar referencias con num: {self.num_referencia}"
+            raise ErrorInsertar(mensaje, err)
 
         if id_referencia is None:
-            mensaje = f"La referencia insertada no tiene id"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            raise ErrorIdNoGenerado("La referencia insertada no tiene id")
 
         return Nodo(id_referencia, self.obtener_clave())
