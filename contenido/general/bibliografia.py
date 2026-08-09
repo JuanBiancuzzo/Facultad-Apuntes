@@ -3,9 +3,8 @@ from dataclasses import dataclass
 from enum import StrEnum
 
 from contenido.dependencias import TipoNodo
-from contenido.errores.insertar import ErrorInsertar
+from contenido.errores import ErrorInsertar
 from dependencias import Clave, Dato
-from logger import LoggerNivel, loggear
 
 from .tablas import TablaBibliografia as Tabla
 

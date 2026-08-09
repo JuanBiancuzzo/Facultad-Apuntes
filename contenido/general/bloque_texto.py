@@ -3,7 +3,7 @@ from dataclasses import dataclass
 
 from contenido.archivo import Texto
 from contenido.dependencias import TipoNodo
-from contenido.errores.insertar import ErrorIdNoGenerado, ErrorInsertar
+from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
 from dependencias import Clave, Dato, Nodo
 from logger import LoggerNivel, loggear
 

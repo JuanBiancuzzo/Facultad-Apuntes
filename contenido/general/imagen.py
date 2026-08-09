@@ -4,7 +4,7 @@ from enum import StrEnum
 
 from archivos import Archivo, Extension
 from contenido.dependencias import TipoNodo
-from contenido.errores.insertar import ErrorIdNoGenerado, ErrorInsertar
+from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
 from dependencias import Clave, Dato, Nodo
 from logger import LoggerNivel, loggear
 

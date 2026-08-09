@@ -4,7 +4,7 @@ from typing import Any
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
-from contenido.errores.insertar import ErrorIdNoGenerado, ErrorInsertar
+from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
 from contenido.general.autore import Autore
 from dependencias import Clave, Dato, Nodo
 from logger import LoggerNivel, loggear

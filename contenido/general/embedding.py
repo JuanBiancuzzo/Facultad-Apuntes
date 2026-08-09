@@ -6,7 +6,7 @@ from typing import ClassVar
 from fastembed import TextEmbedding
 
 from contenido.dependencias import TipoNodo
-from contenido.errores.insertar import ErrorInsertar
+from contenido.errores import ErrorInsertar
 from dependencias import Clave, Dato
 from logger import LoggerNivel, loggear
 
