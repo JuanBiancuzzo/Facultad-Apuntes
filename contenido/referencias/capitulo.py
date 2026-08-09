@@ -7,7 +7,6 @@ from contenido.dependencias import TipoNodo
 from contenido.errores import ErrorIdNoGenerado, ErrorInsertar, ErrorParseo
 from contenido.general.autore import Autore
 from dependencias import Clave, Dato, Nodo
-from logger import LoggerNivel, loggear
 
 from .autore_referencia import AutoreReferencia
 from .libro import ReferenciaLibro
@@ -34,12 +33,9 @@ class ReferenciaCapitulo(Dato):
             numero = int(extra_capitulo["numeroCapitulo"])
             nombre_capitulo = extra_capitulo.get("nombreCapitulo", None)
 
-        except Exception as e:
-            loggear(
-                LoggerNivel.FATAL,
-                "No se pudo obtener el nombre representativo del capitulo",
-            )
-            raise e
+        except Exception as err:
+            mensaje = "No se pudo obtener el nombre representativo del capitulo"
+            raise ErrorParseo(mensaje, err)
 
         nombre = f"{nombre_libro}, Capitulo N°{numero}"
         if nombre_capitulo:

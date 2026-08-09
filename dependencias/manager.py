@@ -78,13 +78,16 @@ class ManagerDependencias:
                 (clave.tipo, clave.hash),
             )
         except Exception as err:
-            loggear(LoggerNivel.FATAL, f"Al buscar preexistente con la clave: {clave}")
+            loggear(
+                LoggerNivel.FATAL,
+                f"Al buscar preexistente con la clave: {clave} con error: {err}",
+            )
             raise err
 
         return cursor.fetchone() is not None
 
     def cumple_dependencias(self, cursor: sql.Cursor, claves: list[Clave]) -> bool:
-        return all((self.preexiste(cursor, clave) for clave in claves))
+        return all(self.preexiste(cursor, clave) for clave in claves)
 
     def guardar_nodo(
         self,

@@ -8,7 +8,6 @@ from contenido.general.autore import Autore
 from contenido.general.editorial import Editorial
 from contenido.referencias.referencia import Referencia
 from dependencias import Clave, Dato, Nodo
-from logger import LoggerNivel, loggear
 
 from .autore_referencia import AutoreReferencia
 from .tablas import TablaLibro as Tabla
@@ -38,12 +37,9 @@ class ReferenciaLibro:
             edicion = archivo.extra.get("edicion", None)
             autores = archivo.extra["nombreAutores"]
 
-        except Exception as e:
-            loggear(
-                LoggerNivel.FATAL,
-                "No se pudo obtener el nombre representativo del libro",
-            )
-            raise e
+        except Exception as err:
+            mensaje = "No se pudo obtener el nombre representativo del libro"
+            raise ErrorParseo(mensaje, err)
 
         nombre = titulo
         if subtitulo:
