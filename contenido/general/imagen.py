@@ -4,9 +4,8 @@ from enum import StrEnum
 
 from archivos import Archivo, Extension
 from contenido.dependencias import TipoNodo
-from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
+from contenido.errores import ErrorIdNoGenerado, ErrorInsertar, ErrorParseo
 from dependencias import Clave, Dato, Nodo
-from logger import LoggerNivel, loggear
 
 from .tablas import TablaImagen as Tabla
 
@@ -39,11 +38,9 @@ class Imagen(Dato):
     def parsear(cls, archivo: Archivo) -> list[Dato]:
         tipo = TipoImagen.de_extension(archivo.metadata.extension)
         if tipo is None:
-            mensaje = (
+            raise ErrorParseo(
                 f"Creando imagen, no es un tipo aceptado: {archivo.metadata.extension}"
             )
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
 
         return [Imagen(tipo, archivo.metadata.path(), archivo.contenido)]
 

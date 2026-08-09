@@ -3,11 +3,10 @@ from dataclasses import dataclass
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
-from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
+from contenido.errores import ErrorIdNoGenerado, ErrorInsertar, ErrorParseo
 from contenido.general.autore import Autore
 from contenido.referencias.referencia import Referencia
 from dependencias import Clave, Dato, Nodo
-from logger import LoggerNivel, loggear
 
 from .autore_referencia import AutoreReferencia
 from .tablas import TablaCursoOnline as Tabla
@@ -35,9 +34,8 @@ class ReferenciaCursoOnline:
             )
             datos.append(curso)
 
-        except Exception as e:
-            loggear(LoggerNivel.FATAL, "No se pudo crear ref de curso")
-            raise e
+        except Exception as err:
+            raise ErrorParseo("No se pudo crear ref de curso", err)
 
         clave_curso = curso.obtener_clave()
 

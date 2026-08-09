@@ -4,7 +4,7 @@ from typing import Any
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
-from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
+from contenido.errores import ErrorIdNoGenerado, ErrorInsertar, ErrorParseo
 from contenido.general.autore import Autore
 from dependencias import Clave, Dato, Nodo
 from logger import LoggerNivel, loggear
@@ -75,9 +75,8 @@ class ReferenciaCapitulo(Dato):
                     Referencia._obtener_clave(extra_capitulo["numReferencia"]),
                 )
                 datos.append(capitulo)
-            except Exception as e:
-                loggear(LoggerNivel.FATAL, f"Al crear capitulo con {extra_capitulo}")
-                raise e
+            except Exception as err:
+                raise ErrorParseo(f"Al crear capitulo con {extra_capitulo}", err)
 
             clave_ref_capitulo = capitulo.obtener_clave()
             for editore in extra_capitulo.get("editores", []):

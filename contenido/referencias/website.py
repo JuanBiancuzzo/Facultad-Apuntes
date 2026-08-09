@@ -8,7 +8,6 @@ from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
 from contenido.general.autore import Autore
 from contenido.referencias.referencia import Referencia
 from dependencias import Clave, Dato, Nodo
-from logger import LoggerNivel, loggear
 
 from .autore_referencia import AutoreReferencia
 from .tablas import TablaWebsite as Tabla

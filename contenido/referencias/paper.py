@@ -3,11 +3,10 @@ from dataclasses import dataclass
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
-from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
+from contenido.errores import ErrorIdNoGenerado, ErrorInsertar, ErrorParseo
 from contenido.general.autore import Autore
 from contenido.referencias.referencia import Referencia
 from dependencias import Clave, Dato, Nodo
-from logger import LoggerNivel, loggear
 
 from .autore_referencia import AutoreReferencia
 from .tablas import TablaPaper as Tabla
@@ -54,9 +53,8 @@ class ReferenciaPaper:
             )
             datos.append(paper)
 
-        except Exception as e:
-            loggear(LoggerNivel.FATAL, "No se pudo crear ref de paper")
-            raise e
+        except Exception as err:
+            raise ErrorParseo("No se pudo crear ref de paper", err)
 
         clave_paper = paper.obtener_clave()
         autores = archivo.extra.get("autores", [])

@@ -5,7 +5,6 @@ from enum import StrEnum
 from contenido.dependencias import TipoNodo
 from contenido.errores import ErrorInsertar
 from dependencias import Clave, Dato
-from logger import LoggerNivel, loggear
 
 from .tablas import TablaEvaluaciones as Tabla
 

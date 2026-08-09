@@ -3,7 +3,7 @@ from dataclasses import dataclass
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
-from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
+from contenido.errores import ErrorIdNoGenerado, ErrorInsertar, ErrorParseo
 from contenido.general.autore import Autore
 from contenido.general.editorial import Editorial
 from contenido.referencias.referencia import Referencia
@@ -83,9 +83,8 @@ class ReferenciaLibro:
             )
             datos.append(libro)
 
-        except Exception as e:
-            loggear(LoggerNivel.FATAL, "No se pudo crear ref de libro")
-            raise e
+        except Exception as err:
+            raise ErrorParseo("No se pudo crear ref de libro", err)
 
         clave_libro = libro.obtener_clave()
         for autore in archivo.extra["nombreAutores"]:

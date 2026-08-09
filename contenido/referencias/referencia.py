@@ -6,6 +6,7 @@ from enum import Enum
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
 from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
+from contenido.errores import ErrorParseo
 from dependencias import Clave, Dato, Nodo
 from logger import LoggerNivel, loggear
 
@@ -59,9 +60,8 @@ class Referencia(Dato):
                 )
             )
 
-        except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al crear referencia de tipo: {tipo}")
-            raise e
+        except Exception as err:
+            raise ErrorParseo(f"Al crear referencia de tipo: {tipo}", err)
 
         if tipo == TipoReferencia.LIBRO:
             capitulos = archivo.extra.get("capitulos", [])
@@ -77,9 +77,8 @@ class Referencia(Dato):
                         )
                     )
 
-                except Exception as e:
-                    loggear(LoggerNivel.FATAL, f"Al crear referencia de tipo: {tipo}")
-                    raise e
+                except Exception as err:
+                    raise ErrorParseo(f"Al crear referencia de tipo: {tipo}", err)
 
         return datos
 
@@ -94,26 +93,26 @@ class Referencia(Dato):
         if type(referencia) is Clave:
             if referencia.tipo == TipoNodo.REFERENCIA:
                 return referencia
-
-            mensaje = f"Se intento obtener la clave de una referencia pasando otra clave que no es referencia"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            raise ErrorParseo(
+                "Se intento obtener la clave de una referencia pasando otra clave que no es referencia"
+            )
 
         if type(referencia) is str:
             try:
                 referencia = int(referencia)
 
-            except:
-                mensaje = f"Se intento obtener la clave de una referencia pasando un string que no tiene el num_referencia"
-                loggear(LoggerNivel.FATAL, mensaje)
-                raise Exception(mensaje)
+            except Exception as err:
+                raise ErrorParseo(
+                    "Se intento obtener la clave de una referencia pasando un string que no tiene el num_referencia",
+                    err,
+                )
 
-        if type(referencia) is int:
-            return Clave.de_texto(TipoNodo.REFERENCIA, f"{referencia}><{referencia}")
+        if type(referencia) is not int:
+            raise ErrorParseo(
+                "Se intento obtener la clave de una referencia otro tipo de dato que es {type(referencia)}"
+            )
 
-        mensaje = f"Se intento obtener la clave de una referencia otro tipo de dato que es {type(referencia)}"
-        loggear(LoggerNivel.FATAL, mensaje)
-        raise Exception(mensaje)
+        return Clave.de_texto(TipoNodo.REFERENCIA, f"{referencia}><{referencia}")
 
     def insertar_datos(
         self, cursor: sql.Cursor, dependencias: dict[Clave, int]

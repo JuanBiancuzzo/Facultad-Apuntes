@@ -4,10 +4,9 @@ from dataclasses import dataclass
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
-from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
+from contenido.errores import ErrorIdNoGenerado, ErrorInsertar, ErrorParseo
 from contenido.general.editorial import Editorial
 from dependencias import Clave, Dato, Nodo
-from logger import LoggerNivel, loggear
 
 from .referencia import Referencia
 from .tablas import TablaDiccionario as Tabla
@@ -54,9 +53,7 @@ class ReferenciaDiccionario(Dato):
             hash = referencia.hash
 
         else:
-            mensaje = f"Al obtener clave de diccionario no es numero ni clave"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            raise ErrorParseo("Al obtener clave de diccionario no es numero ni clave")
 
         return Clave(TipoNodo.REFERENCIA_DICCIONARIO_ONLINE, hash)
 

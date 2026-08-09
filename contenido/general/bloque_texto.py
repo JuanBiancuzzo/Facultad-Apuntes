@@ -5,7 +5,6 @@ from contenido.archivo import Texto
 from contenido.dependencias import TipoNodo
 from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
 from dependencias import Clave, Dato, Nodo
-from logger import LoggerNivel, loggear
 
 from .tablas import TablaBloqueTexto as Tabla
 

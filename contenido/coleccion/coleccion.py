@@ -7,11 +7,11 @@ from typing import Self
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
 from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
+from contenido.errores import ErrorParseo
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.embedding import Embedding
 from contenido.links import coleccion as link
 from dependencias import Clave, Dato, Nodo
-from logger import LoggerNivel, loggear
 
 from .tablas import TablaColeccion as Tabla
 
@@ -67,8 +67,7 @@ class Coleccion(Dato):
         nombre = TipoColeccion.de_texto(archivo.metadata.nombre)
         if nombre is None:
             mensaje = f"El tipo de coleccion '{archivo.metadata.nombre}' no esta siendo manejada"
-            loggear(LoggerNivel.FATAL, mensaje)
-            raise Exception(mensaje)
+            raise ErrorParseo(mensaje)
 
         datos = []
         descripcion = BloqueTexto(archivo.contenido)
@@ -108,19 +107,17 @@ class Coleccion(Dato):
         if type(nombre) is str:
             nuevo_nombre = TipoColeccion.de_texto(nombre)
             if nuevo_nombre is None:
-                mensaje = (
+                raise ErrorParseo(
                     f"El nombre de coleccion {nombre} no es posible para obtener clave"
                 )
-                loggear(LoggerNivel.FATAL, mensaje)
-                raise Exception(mensaje)
+
             nombre = nuevo_nombre
 
-        if type(nombre) is TipoColeccion:
-            return Clave.de_texto(TipoNodo.COLECCION, f"{nombre}-{nombre}")
+        if type(nombre) is not TipoColeccion:
+            mensaje = f"El {nombre} con type {type(nombre)} no es un string o un nombre, por lo que no se puede obtener clave"
+            raise ErrorParseo(mensaje)
 
-        mensaje = f"El {nombre} con type {type(nombre)} no es un string o un nombre, por lo que no se puede obtener clave"
-        loggear(LoggerNivel.FATAL, mensaje)
-        raise Exception(mensaje)
+        return Clave.de_texto(TipoNodo.COLECCION, f"{nombre}-{nombre}")
 
     def obtener_link(self) -> link.Link:
         return Coleccion._obtener_link(self.obtener_clave())

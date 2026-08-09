@@ -4,9 +4,8 @@ from dataclasses import dataclass
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
-from contenido.errores import ErrorInsertar
+from contenido.errores import ErrorInsertar, ErrorParseo
 from dependencias import Clave, Dato
-from logger import LoggerNivel, loggear
 
 from .referencia import Referencia
 from .tablas import TablaWikipedia as Tabla
@@ -31,9 +30,8 @@ class ReferenciaWikipedia(Dato):
                 )
             ]
 
-        except Exception as e:
-            loggear(LoggerNivel.FATAL, f"Al crear referencia de wikipedia")
-            raise e
+        except Exception as err:
+            raise ErrorParseo("Al crear referencia de wikipedia", err)
 
     def dependo(self) -> list[Clave]:
         return [self.clave_referencia]
