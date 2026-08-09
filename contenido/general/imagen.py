@@ -2,7 +2,8 @@ import sqlite3 as sql
 from dataclasses import dataclass
 from enum import StrEnum
 
-from archivos import Archivo, Extension
+from archivos import Extension
+from contenido.archivo import ArchivoImagen
 from contenido.dependencias import TipoNodo
 from contenido.errores import ErrorIdNoGenerado, ErrorInsertar, ErrorParseo
 from dependencias import Clave, Dato, Nodo
@@ -35,7 +36,7 @@ class Imagen(Dato):
     blob: bytes
 
     @classmethod
-    def parsear(cls, archivo: Archivo) -> list[Dato]:
+    def parsear(cls, archivo: ArchivoImagen) -> list[Dato]:
         tipo = TipoImagen.de_extension(archivo.metadata.extension)
         if tipo is None:
             raise ErrorParseo(

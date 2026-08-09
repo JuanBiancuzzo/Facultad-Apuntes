@@ -1,6 +1,6 @@
 import sqlite3 as sql
-from dataclasses import dataclass
 from collections.abc import Iterable
+from dataclasses import dataclass
 
 from contenido.archivo import Archivo, Seccion, Texto
 from contenido.dependencias import TipoNodo

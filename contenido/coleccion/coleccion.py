@@ -6,8 +6,7 @@ from typing import Self
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
-from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
-from contenido.errores import ErrorParseo
+from contenido.errores import ErrorIdNoGenerado, ErrorInsertar, ErrorParseo
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.embedding import Embedding
 from contenido.links import coleccion as link
@@ -37,7 +36,7 @@ class TipoColeccion(Enum):
         texto = texto.strip().lower()
         for extension in cls:
             valor_extension = (extension.value, extension.texto())
-            if any(map(lambda v: v.lower() == texto, valor_extension)):
+            if any(v.lower() == texto for v in valor_extension):
                 return extension
         return None
 

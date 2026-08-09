@@ -6,7 +6,7 @@ from typing import Any
 
 from docopt import docopt  # Libreria docopt-ng
 
-DEFAULT_BATCH = 20
+DEFAULT_BATCH = 4
 DEFAULT_NOMBRE_SCHEMA = "schema.sql"
 DEFAULT_NOMBRE_BDD = "datos.db"
 

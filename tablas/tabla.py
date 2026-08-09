@@ -10,14 +10,12 @@ _tablas_registradas = []
 
 
 def registrar_tabla(cls):
-    global _tablas_registradas
     _tablas_registradas.append(cls)
     return cls
 
 
 def tablas_registradas() -> Iterable[Tabla]:
-    global _tablas_registradas
-    return map(lambda tabla: tabla(), _tablas_registradas)
+    return (tabla() for tabla in _tablas_registradas)
 
 
 class Tabla(ABC):
@@ -27,6 +25,19 @@ class Tabla(ABC):
     @abstractmethod
     def crear(self, conn: Conn) -> None:
         """Crear tablas"""
+
+    @classmethod
+    def _filtrar(
+        cls, cursor: Cursor, parametros: list[str], condicion: str | None = None
+    ) -> Iterable[dict[str, Any]]:
+        parametros = ", ".join(parametros)
+        condicion = "" if condicion is None else f"WHERE {condicion}"
+        cursor.execute(f"SELECT {parametros} FROM {cls.nombre} {condicion}")
+
+        return (
+            {nombre: valor for nombre, valor in zip(parametros, fila)}
+            for fila in cursor.fetchall()
+        )
 
     @classmethod
     def _insertar(cls, cursor: Cursor, valores: dict[str, Any]) -> int | None:

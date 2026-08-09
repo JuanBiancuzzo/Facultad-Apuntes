@@ -5,8 +5,7 @@ from enum import Enum
 
 from contenido.archivo import Archivo
 from contenido.dependencias import TipoNodo
-from contenido.errores import ErrorIdNoGenerado, ErrorInsertar
-from contenido.errores import ErrorParseo
+from contenido.errores import ErrorIdNoGenerado, ErrorInsertar, ErrorParseo
 from dependencias import Clave, Dato, Nodo
 from logger import LoggerNivel, loggear
 

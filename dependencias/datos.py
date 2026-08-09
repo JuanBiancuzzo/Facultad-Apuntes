@@ -1,6 +1,5 @@
-from sqlite3 import Cursor
-
 from abc import ABC, abstractmethod
+from sqlite3 import Cursor
 
 from .clave import Clave
 from .nodo import Nodo

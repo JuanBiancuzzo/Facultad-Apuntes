@@ -1,13 +1,16 @@
-from sqlite3 import Connection as Conn, Cursor
+from sqlite3 import Connection as Conn
+from sqlite3 import Cursor
 from typing import Any
-from tablas import Tabla, registrar_tabla
 
 from contenido.tablas import (
-    TablasGenerales as Tablas,
-    TablasReferencias,
     TablasColeccion,
     TablasFacultad,
+    TablasReferencias,
 )
+from contenido.tablas import (
+    TablasGenerales as Tablas,
+)
+from tablas import Tabla, registrar_tabla
 
 
 @registrar_tabla
@@ -170,7 +173,7 @@ class TablaLink(Tabla):
     def insertar(
         cls, cursor: Cursor, tabla: str, id_dato: int, info: bytes | None
     ) -> int | None:
-        valores: Dict[str, Any] = {
+        valores: dict[str, Any] = {
             "tabla": tabla,
             "id_dato": id_dato,
             "dato_entero": 1,

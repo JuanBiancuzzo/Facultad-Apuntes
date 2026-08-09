@@ -1,25 +1,28 @@
 import os
 import sqlite3 as sql
+from functools import partial
 
 import logger
 from archivos import Archivo
 from argumentos import Argumentos
-from contenido import registrar
+from contenido import postprocesar, preprocesar, registrar
 from dependencias import ManagerDependencias
 from lectura import Procesar, procesar_archivos
 from tablas import crear_tablas
+from workers import worker_sin_salida
 
 
 def cargar_datos(args: Argumentos, conn: sql.Connection):
     # Intentamos crear tablas en orden de dependencias
-    crear_tablas(conn)
+    tablas_creadas = crear_tablas(conn)
 
     archivos = procesar_archivos(
         Procesar(
             args.input_path,
-            lambda nombre: Archivo.parsear(nombre, args.input_path),
+            lambda nombre: preprocesar(Archivo.parsear(nombre, args.input_path)),
             args.directorios_omitir,
             args.archivos_omitir,
+            args.tamanio_batch,
         )
     )
 
@@ -31,11 +34,26 @@ def cargar_datos(args: Argumentos, conn: sql.Connection):
             conn.commit()
             cursor.close()
 
-    except Exception as err:
+    finally:
         manager.close()
-        raise err
 
-    manager.close()
+    for tabla in tablas_creadas[::-1]:
+        resultado = postprocesar(tabla)
+        if resultado is None:
+            continue
+
+        cursor = conn.cursor()
+
+        filas, procesar = resultado
+        worker_sin_salida(
+            filas,
+            partial(procesar, cursor),
+            cant_threads=args.tamanio_batch,
+            bloquear=True,
+        )
+
+        cursor.close()
+        conn.commit()
 
 
 def guardar_schema(conn: sql.Connection, path_schema: str):
@@ -58,26 +76,20 @@ def main(args: Argumentos) -> None:
         os.remove(path_bdd)
 
     conn = sql.connect(path_bdd)
-    error = None
 
     try:
         if args.logs_path:
             logger.inicializar(args.logs_path)
         cargar_datos(args, conn)
 
-    except Exception as err:
-        error = err
+    finally:
+        conn.commit()
+        conn.execute("VACUUM")
 
-    conn.commit()
-    conn.execute("VACUUM")
+        guardar_schema(conn, path_schema)
 
-    guardar_schema(conn, path_schema)
-
-    conn.close()
-    logger.terminar()
-
-    if error is not None:
-        raise error
+        conn.close()
+        logger.terminar()
 
 
 if __name__ == "__main__":

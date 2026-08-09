@@ -2,19 +2,24 @@ from sqlite3 import Connection as Conn
 
 from logger import LoggerNivel, loggear
 
-from .tabla import Tabla, Tablas, tablas_registradas
+from .tabla import Tabla, tablas_registradas
+from .tabla import Tablas as NombreTablas
 
 
-def cumple_dependencias(necesito: list[Tablas], creadas: list[Tablas]) -> bool:
+def cumple_dependencias(
+    necesito: list[NombreTablas], creadas: list[NombreTablas]
+) -> bool:
     if len(necesito) == 0:
         return True
     return all(nombre in creadas for nombre in necesito)
 
 
-def crear_tablas(conn: Conn):
-    creadas: list[Tablas] = []
-    tablas_pendientes: dict[Tablas, Tabla] = {}
-    dependencias: dict[Tablas, list[Tablas]] = {}
+def crear_tablas(conn: Conn) -> list[Tabla]:
+    creadas: list[NombreTablas] = []
+    orden_tablas: list[Tabla] = []
+
+    tablas_pendientes: dict[NombreTablas, Tabla] = {}
+    dependencias: dict[NombreTablas, list[NombreTablas]] = {}
 
     for tabla in tablas_registradas():
         if not cumple_dependencias(tabla.necesito_tablas, creadas):
@@ -36,6 +41,7 @@ def crear_tablas(conn: Conn):
         loggear(LoggerNivel.INFO, f"Creando tabla: {tabla.nombre}")
 
         creadas.append(tabla.nombre)
+        orden_tablas.append(tabla)
 
         pendientes = dependencias.pop(tabla.nombre, [])
         while len(pendientes) > 0:
@@ -48,6 +54,9 @@ def crear_tablas(conn: Conn):
             pendiente.crear(conn)
             loggear(LoggerNivel.INFO, f"Creando tabla: {pendiente.nombre}")
             creadas.append(pendiente.nombre)
+            orden_tablas.append(pendiente)
             pendientes.extend(dependencias.pop(pendiente.nombre, []))
 
         conn.commit()
+
+    return orden_tablas

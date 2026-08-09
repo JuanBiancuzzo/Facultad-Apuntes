@@ -1,12 +1,14 @@
 import os
-import queue
 import threading
 from collections.abc import Callable, Iterator
 from dataclasses import dataclass
+from typing import Any
 
-from archivos import Archivo
+from workers import worker_con_salida
 
-type FnProcesar = Callable[[str], Archivo | None]
+from .iterable_queue import IterQueue
+
+type FnProcesar = Callable[[str], Any | None]
 
 
 @dataclass
@@ -17,6 +19,7 @@ class Procesar:
         procesar: FnProcesar,
         omitir_directorios: list[str] | None = None,
         omitir_archivos: list[str] | None = None,
+        cant_threads: int = 2,
     ):
         if omitir_directorios is None:
             omitir_directorios = []
@@ -37,33 +40,22 @@ class Procesar:
         )
 
 
-def procesar_archivos(datos: Procesar) -> Iterator[Archivo]:
-    queue_archivos = queue.Queue()
+def procesar_archivos(datos: Procesar) -> Iterator[Any]:
+    queue_salida = IterQueue()
 
-    def procesar():
-        for path_archivo in _leer_directorios(
-            datos.path_directorio, datos.omitir_directorios, datos.omitir_archivos
-        ):
-            try:
-                archivo = datos.procesado(path_archivo)
-                if archivo is not None:
-                    queue_archivos.put(archivo)
+    datos_directorio = _leer_directorios(
+        datos.path_directorio,
+        datos.omitir_directorios,
+        datos.omitir_archivos,
+    )
 
-            except Exception as error:
-                print(f"En el archivo {path_archivo}, ocurrio el error: {error}")
+    threading.Thread(
+        target=worker_con_salida,
+        args=(datos_directorio, datos.procesar, queue_salida, datos.cant_threads),
+        daemon=True,
+    ).start()
 
-        queue_archivos.shutdown(immediate=False)
-
-    threading.Thread(target=procesar, daemon=True).start()
-
-    while True:
-        try:
-            archivo = queue_archivos.get()
-            queue_archivos.task_done()
-            yield archivo
-
-        except queue.ShutDown:
-            break
+    return queue_salida
 
 
 def _leer_directorios(
