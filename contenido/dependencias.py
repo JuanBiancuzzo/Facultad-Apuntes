@@ -1,5 +1,6 @@
 from enum import IntEnum, auto
 
+
 class TipoNodo(IntEnum):
     _INICIO = 0
 
@@ -10,6 +11,7 @@ class TipoNodo(IntEnum):
     EDITORIAL = auto()
     IMAGEN = auto()
     LINK = auto()
+    RELACION = auto()
 
     BIBLIOGRAFIA = auto()
     GUIAS_POR_DATO = auto()
@@ -18,7 +20,7 @@ class TipoNodo(IntEnum):
     CARRERA = auto()
     MATERIA = auto()
     CUATRIMESTRE = auto()
-    PLAN_DE_ESTUDIO = auto() 
+    PLAN_DE_ESTUDIO = auto()
 
     # Coleccion
     COLECCION = auto()

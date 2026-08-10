@@ -69,4 +69,5 @@ class TablasGenerales(StrEnum):
     BIBLIOGRAFIA = "Bibliografia"
     GUIAS = "GuiasPorElemento"
     EVALUACIONES = "EvaluacionesPorElemento"
+    RELACIONES = "RelacionesEntreDatos"
 

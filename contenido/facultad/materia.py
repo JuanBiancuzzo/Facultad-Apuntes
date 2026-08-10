@@ -12,6 +12,7 @@ from contenido.general.embedding import Embedding
 from contenido.general.etapa import Etapa
 from contenido.general.evaluaciones import EvaluacionPorDato as EvaluacionesDeMateria
 from contenido.general.guias import GuiaPorDato as GuiasDeMateria
+from contenido.general.relacion import Relacion
 from contenido.links import facultad as link
 from contenido.referencias.referencia import Referencia
 from dependencias import Clave, Dato, Nodo
@@ -85,7 +86,11 @@ class Materia(Dato):
         datos.append(materia)
 
         clave_materia = materia.obtener_clave()
-        datos.append(Materia._obtener_link(clave_materia))
+        link_materia = Materia._obtener_link(clave_materia)
+        datos.append(link_materia)
+
+        relacion = Relacion.parsear(link_materia, Carrera._obtener_link(clave_carrera))
+        datos.append(relacion)
 
         for num_referencia in (
             int(num) for num in archivo.extra.get("referencias", [])
@@ -107,10 +112,10 @@ class Materia(Dato):
         clave_nommbre = link.Materia.gen_nombre(clave_materia)
         datos.extend(Embedding.parsear((clave_nommbre, nombre)))
 
-        if bloque_resumen is not None:
+        if bloque_mapa_contenido is not None:
             pares: Iterable[tuple[link.Link, str]] = (
                 (link.Materia.gen_resumen(clave_materia, id), texto)
-                for id, texto in bloque_resumen.texto.chunks()
+                for id, texto in bloque_mapa_contenido.texto.chunks()
             )
             datos.extend((link for link, _ in pares))
             datos.extend(Embedding.parsear(*pares))

@@ -9,6 +9,7 @@ from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.embedding import Embedding
 from contenido.general.etapa import Etapa
 from contenido.general.guias import GuiaPorDato as GuiasDeCapitulo
+from contenido.general.relacion import Relacion
 from contenido.links import coleccion as link
 from contenido.referencias.capitulo import ReferenciaCapitulo
 from contenido.referencias.libro import ReferenciaLibro
@@ -59,7 +60,11 @@ class Capitulo(Dato):
                 datos.append(GuiasDeCapitulo.capitulo_libro(clave_capitulo, clave_guia))
 
             # Link con embbedings
-            datos.append(capitulo._obtener_link(clave_capitulo))
+            link_capitulo = capitulo._obtener_link(clave_capitulo)
+            datos.append(link_capitulo)
+
+            relacion = Relacion.parsear(link_capitulo, Libro._obtener_link(clave_libro))
+            datos.append(relacion)
 
             if "nombreCapitulo" in extra_capitulo:
                 nombre = ReferenciaCapitulo.nombre_representativo(

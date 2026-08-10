@@ -8,6 +8,7 @@ from contenido.general.bibliografia import Bibliografia
 from contenido.general.bloque_texto import BloqueTexto
 from contenido.general.embedding import Embedding
 from contenido.general.etapa import Etapa
+from contenido.general.relacion import Relacion
 from contenido.links import facultad as link
 from contenido.referencias.referencia import Referencia
 from dependencias import Clave, Dato, Nodo
@@ -82,7 +83,11 @@ class Tema(Dato):
             )
 
         clave_tema = tema.obtener_clave()
-        datos.append(Tema._obtener_link(clave_tema))
+        link_tema = Tema._obtener_link(clave_tema)
+        datos.append(link_tema)
+
+        relacion = Relacion.parsear(link_tema, Materia._obtener_link(clave_materia))
+        datos.append(relacion)
 
         for num_referencia in (
             int(num) for num in archivo.extra.get("referencias", [])

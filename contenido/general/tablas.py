@@ -201,8 +201,8 @@ class TablaRelaciones(Tabla):
         """)
 
     @classmethod
-    def insertar(cls, cursor: Cursor, id_dato: int, id_relacionado: int) -> int | None:
-        return cls._insertar(
+    def insertar(cls, cursor: Cursor, id_dato: int, id_relacionado: int) -> None:
+        cls._insertar(
             cursor,
             {
                 "id_dato": id_dato,
