@@ -4,9 +4,8 @@ from collections.abc import Callable, Iterator
 from dataclasses import dataclass
 from typing import Any
 
+from iterable_queue import IterQueue
 from workers import worker_con_salida
-
-from .iterable_queue import IterQueue
 
 type FnProcesar = Callable[[str], Any | None]
 
@@ -27,7 +26,8 @@ class Procesar:
             omitir_archivos = []
 
         self.path_directorio = path_directorio
-        self.procesado = procesar
+        self.procesar = procesar
+        self.cant_threads = cant_threads
 
         full_path = lambda path: os.path.join(path_directorio, path)
         existe_path = lambda path: os.path.exists(path)

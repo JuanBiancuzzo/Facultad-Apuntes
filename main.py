@@ -3,7 +3,7 @@ import sqlite3 as sql
 from functools import partial
 
 import logger
-from archivos import Archivo
+from archivos import ArchivoGeneral
 from argumentos import Argumentos
 from contenido import postprocesar, preprocesar, registrar
 from dependencias import ManagerDependencias
@@ -19,7 +19,7 @@ def cargar_datos(args: Argumentos, conn: sql.Connection):
     archivos = procesar_archivos(
         Procesar(
             args.input_path,
-            lambda nombre: preprocesar(Archivo.parsear(nombre, args.input_path)),
+            lambda nombre: preprocesar(ArchivoGeneral.parsear(nombre, args.input_path)),
             args.directorios_omitir,
             args.archivos_omitir,
             args.tamanio_batch,

@@ -1,4 +1,4 @@
-from archivos import Archivo as ArchivoGeneral
+from archivos import ArchivoGeneral
 from archivos import Extension
 from contenido.archivo import Archivo, ArchivoImagen, ArchivoMarkdown
 from contenido.general import TipoImagen

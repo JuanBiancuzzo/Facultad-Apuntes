@@ -90,7 +90,7 @@ def _registrar_markdown(tag: str, archivo: Archivo) -> list[Dato]:
     return datos
 
 
-def registrar_archivos(archivo: Archivo) -> list[Dato]:
+def registrar(archivo: Archivo) -> list[Dato]:
     datos = []
     match type(archivo):
         case ArchivoMarkdown(archivo):

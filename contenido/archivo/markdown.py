@@ -4,8 +4,8 @@ from typing import Any
 
 import yaml
 
-from archivos.archivo import Archivo as ArchivoGeneral
-from archivos.metadata import Extension, Metadata
+from archivos import ArchivoGeneral
+from archivos import Extension, Metadata
 from contenido.errores import ErrorParseo
 from logger import LoggerNivel, loggear
 

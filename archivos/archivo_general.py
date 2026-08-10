@@ -3,18 +3,18 @@ import os
 from dataclasses import dataclass
 from pathlib import Path
 
-from contenido.errores import ErrorParseo
+from logger import LoggerNivel, loggear
 
 from .metadata import Extension, Metadata
 
 
 @dataclass
-class Archivo:
+class ArchivoGeneral:
     metadata: Metadata
     contenido: bytes
 
     @classmethod
-    def parsear(cls, nombre_archivo: str, root_path: str) -> Archivo:
+    def parsear(cls, nombre_archivo: str, root_path: str) -> ArchivoGeneral:
         basename = os.path.basename(nombre_archivo)
         filename, ext = os.path.splitext(basename)
 
@@ -23,13 +23,15 @@ class Archivo:
 
         extension = Extension.de_texto(ext.replace(".", ""))
         if extension is None:
-            raise ErrorParseo(f"La extension '{extension}' no esta registrada")
+            mensaje = f"La extension '{extension}' no esta registrada"
+            loggear(LoggerNivel.FATAL, mensaje)
+            raise Exception(mensaje)
 
         with open(nombre_archivo, "rb") as fd_archivo:
             blob = fd_archivo.read()
 
         stadisticas = Path(nombre_archivo).stat()
-        return Archivo(
+        return ArchivoGeneral(
             Metadata(
                 filename,
                 directorio,

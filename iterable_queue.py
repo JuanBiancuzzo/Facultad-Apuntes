@@ -3,7 +3,7 @@ import queue
 
 class IterQueue(queue.Queue):
     def __init__(self):
-        self.super().__init__()
+        super().__init__()
 
     def __iter__(self):
         while True:

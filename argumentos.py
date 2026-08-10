@@ -106,7 +106,7 @@ Options:
             argumentos.logs_path = path
 
         try:
-            argumentos.tamanio_batch = int(dicc_args["--batch"])
+            argumentos.tamanio_batch = int(dicc_args["--tamanio-bloque"])
             if argumentos.tamanio_batch <= 0:
                 return argumentos, ErrorArgumentos.BATCH_NO_POSITIVO
         except:

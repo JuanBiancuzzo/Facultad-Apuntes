@@ -1,6 +1,6 @@
 from sqlite3 import Connection as Conn
 from sqlite3 import Cursor
-from typing import Any, dict
+from typing import Any
 
 from contenido.tablas import TablasFacultad as Tablas
 from contenido.tablas import TablasGenerales

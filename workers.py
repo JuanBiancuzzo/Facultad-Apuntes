@@ -1,6 +1,6 @@
 import threading
 from collections.abc import Callable, Iterable
-from queue import Queue, ShutDown
+from queue import Queue
 from typing import Any
 
 from iterable_queue import IterQueue
@@ -42,6 +42,7 @@ def worker_con_salida(
 ) -> None:
     _worker(
         entrada,
+        True,
         (procesar, salida),
         cant_threads,
         batch,
@@ -58,6 +59,7 @@ def worker_sin_salida(
 ) -> None:
     _worker(
         entrada,
+        False,
         procesar,
         cant_threads,
         batch,
@@ -67,6 +69,7 @@ def worker_sin_salida(
 
 def _worker(
     entrada: Iterable[Any],
+    con_salida: bool,
     procesar: tuple[FnProcesarSalida, Queue] | FnProcesarSinSalida,
     cant_threads: int,
     batch: int,
@@ -86,24 +89,17 @@ def _worker(
     for _ in range(cant_threads):
         queue_entrada = IterQueue()
 
-        if type(procesar) is tuple[FnProcesarSalida, Queue]:
+        if con_salida:
             args = (queue_entrada, *procesar)
             thread = threading.Thread(
                 target=_thread_procesar_salida, args=args, daemon=True
             )
 
-        elif type(procesar) is FnProcesarSinSalida:
+        else:
             args = (queue_entrada, procesar)
             thread = threading.Thread(
                 target=_thread_procesar_sin_salida, args=args, daemon=True
             )
-
-        else:
-            loggear(
-                LoggerNivel.ERROR,
-                "Se logró crear un worker pero sin un tipo de procesamiento definido",
-            )
-            continue
 
         queues.append(queue_entrada)
         threads.append(thread)
@@ -117,7 +113,8 @@ def _worker(
 
         if len(elementos) >= batch:
             queues[queue_actual].put(elementos)
-            queue_actual = (queue_actual + 1) % threads
+            queue_actual = (queue_actual + 1) % len(queues)
+            elementos = []
 
     if len(elementos) > 0:
         queues[queue_actual].put(elementos)
@@ -126,3 +123,6 @@ def _worker(
         queue.shutdown(immediate=False)
         if bloquear:
             thread.join()
+
+    if con_salida:
+        procesar[1].shutdown(immediate=False)

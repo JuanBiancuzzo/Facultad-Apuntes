@@ -2,6 +2,7 @@
   "logs": "_resultado/log.json",
   "base-de-datos": "datos.db",
   "schema": "schema.sql",
+  "tamanio-bloque": 4,
   "excluir": [
     ".git",
     ".obsidian",

@@ -1,32 +1,12 @@
 import sqlite3 as sql
 from dataclasses import dataclass
-from enum import StrEnum
 
-from archivos import Extension
-from contenido.archivo import ArchivoImagen
+from contenido.archivo import ArchivoImagen, TipoImagen
 from contenido.dependencias import TipoNodo
 from contenido.errores import ErrorIdNoGenerado, ErrorInsertar, ErrorParseo
 from dependencias import Clave, Dato, Nodo
 
 from .tablas import TablaImagen as Tabla
-
-
-class TipoImagen(StrEnum):
-    PNG = Extension.PNG
-    WEBP = Extension.WEBP
-    JPG = Extension.JPG
-    JPEG = Extension.JPEG
-    SVG = Extension.SVG
-
-    @classmethod
-    def es_imagen(cls, extension: Extension) -> bool:
-        return any(tipo == extension for tipo in cls)
-
-    @classmethod
-    def de_extension(cls, extension: Extension) -> TipoImagen | None:
-        if cls.es_imagen(extension):
-            return TipoImagen(extension)
-        return None
 
 
 @dataclass

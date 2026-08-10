@@ -1,2 +1,2 @@
-from .metadata import Metadata, Extension
-from .archivo import Archivo
+from .archivo_general import ArchivoGeneral
+from .metadata import Extension, Metadata
