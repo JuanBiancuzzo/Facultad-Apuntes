@@ -1,3 +1,4 @@
+from dataclasses import field
 from sqlite3 import Connection as Conn
 from sqlite3 import Cursor
 from typing import Any
@@ -9,7 +10,7 @@ from tablas import Tabla, registrar_tabla
 
 class TablaCarrera(Tabla):
     nombre = Tablas.CARRERAS
-    necesito_tablas = []
+    necesito_tablas = field(default_factory=[])
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -40,7 +41,7 @@ class TablaCarrera(Tabla):
 @registrar_tabla
 class TablaPlanDeEstudio(Tabla):
     nombre = Tablas.PLANES_DE_ESTUDIO
-    necesito_tablas = [Tablas.CARRERAS]
+    necesito_tablas = field(default_factory=[Tablas.CARRERAS])
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -65,7 +66,7 @@ class TablaPlanDeEstudio(Tabla):
 @registrar_tabla
 class TablaCuatrimestre(Tabla):
     nombre = Tablas.CUATRI
-    necesito_tablas = []
+    necesito_tablas = field(default_factory=[])
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -90,12 +91,14 @@ class TablaCuatrimestre(Tabla):
 @registrar_tabla
 class TablaMateria(Tabla):
     nombre = Tablas.MATERIAS
-    necesito_tablas = [
-        TablasGenerales.BLOQUE_TEXTO,
-        Tablas.PLANES_DE_ESTUDIO,
-        Tablas.CARRERAS,
-        Tablas.CUATRI,
-    ]
+    necesito_tablas = field(
+        default_factory=[
+            TablasGenerales.BLOQUE_TEXTO,
+            Tablas.PLANES_DE_ESTUDIO,
+            Tablas.CARRERAS,
+            Tablas.CUATRI,
+        ]
+    )
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -144,7 +147,9 @@ class TablaMateria(Tabla):
 @registrar_tabla
 class TablaTema(Tabla):
     nombre = Tablas.TEMA
-    necesito_tablas = [TablasGenerales.BLOQUE_TEXTO, Tablas.MATERIAS]
+    necesito_tablas = field(
+        default_factory=[TablasGenerales.BLOQUE_TEXTO, Tablas.MATERIAS]
+    )
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""

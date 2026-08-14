@@ -1,3 +1,4 @@
+from dataclasses import field
 from sqlite3 import Connection as Conn
 from sqlite3 import Cursor
 from typing import Any
@@ -16,7 +17,7 @@ from tablas import Tabla, registrar_tabla
 @registrar_tabla
 class TablaAutore(Tabla):
     nombre = Tablas.AUTORES
-    necesito_tablas = []
+    necesito_tablas = field(default_factory=[])
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -41,7 +42,7 @@ class TablaAutore(Tabla):
 @registrar_tabla
 class TablaEmbedding(Tabla):
     nombre = Tablas.EMBEDDING
-    necesito_tablas = [Tablas.LINK]
+    necesito_tablas = field(default_factory=[Tablas.LINK])
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -65,7 +66,7 @@ class TablaEmbedding(Tabla):
 @registrar_tabla
 class TablaBloqueTexto(Tabla):
     nombre = Tablas.BLOQUE_TEXTO
-    necesito_tablas = []
+    necesito_tablas = field(default_factory=[])
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -88,7 +89,7 @@ class TablaBloqueTexto(Tabla):
 @registrar_tabla
 class TablaEditorial(Tabla):
     nombre = Tablas.EDITORIAL
-    necesito_tablas = []
+    necesito_tablas = field(default_factory=[])
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -111,7 +112,7 @@ class TablaEditorial(Tabla):
 @registrar_tabla
 class TablaImagen(Tabla):
     nombre = Tablas.IMAGENES
-    necesito_tablas = []
+    necesito_tablas = field(default_factory=[])
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -136,19 +137,21 @@ class TablaImagen(Tabla):
 @registrar_tabla
 class TablaLink(Tabla):
     nombre = Tablas.LINK
-    necesito_tablas = [
-        TablasColeccion.COLECCION,
-        TablasColeccion.AJEDREZ,
-        TablasColeccion.DICCIONARIO,
-        TablasColeccion.EJERCICIOS,
-        TablasColeccion.LIBRO,
-        TablasColeccion.CAPITULO,
-        TablasColeccion.PAPER,
-        # TablasColeccion.CURSO,
-        TablasFacultad.CARRERAS,
-        TablasFacultad.MATERIAS,
-        TablasFacultad.TEMA,
-    ]
+    necesito_tablas = field(
+        default_factory=[
+            TablasColeccion.COLECCION,
+            TablasColeccion.AJEDREZ,
+            TablasColeccion.DICCIONARIO,
+            TablasColeccion.EJERCICIOS,
+            TablasColeccion.LIBRO,
+            TablasColeccion.CAPITULO,
+            TablasColeccion.PAPER,
+            # TablasColeccion.CURSO,
+            TablasFacultad.CARRERAS,
+            TablasFacultad.MATERIAS,
+            TablasFacultad.TEMA,
+        ]
+    )
 
     # Ver si se puede hacer info BLOB sea un BLOB y un TEXT, asi tal vez usar la
     #   buscar texto en ese texto
@@ -190,7 +193,7 @@ class TablaLink(Tabla):
 @registrar_tabla
 class TablaRelaciones(Tabla):
     nombre = Tablas.RELACIONES
-    necesito_tablas = [Tablas.LINK]
+    necesito_tablas = field(default_factory=[Tablas.LINK])
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -214,12 +217,14 @@ class TablaRelaciones(Tabla):
 @registrar_tabla
 class TablaBibliografia(Tabla):
     nombre = Tablas.BIBLIOGRAFIA
-    necesito_tablas = [
-        TablasReferencias.REFERENCIAS,
-        TablasFacultad.MATERIAS,
-        TablasFacultad.TEMA,
-        # TablasColeccion.CURSO,
-    ]
+    necesito_tablas = field(
+        default_factory=[
+            TablasReferencias.REFERENCIAS,
+            TablasFacultad.MATERIAS,
+            TablasFacultad.TEMA,
+            # TablasColeccion.CURSO,
+        ]
+    )
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -245,12 +250,14 @@ class TablaBibliografia(Tabla):
 @registrar_tabla
 class TablaGuias(Tabla):
     nombre = Tablas.GUIAS
-    necesito_tablas = [
-        TablasColeccion.GUIAS,
-        TablasFacultad.MATERIAS,
-        TablasColeccion.CAPITULO,
-        # TablasColeccion.CURSO,
-    ]
+    necesito_tablas = field(
+        default_factory=[
+            TablasColeccion.GUIAS,
+            TablasFacultad.MATERIAS,
+            TablasColeccion.CAPITULO,
+            # TablasColeccion.CURSO,
+        ]
+    )
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -276,11 +283,13 @@ class TablaGuias(Tabla):
 @registrar_tabla
 class TablaEvaluaciones(Tabla):
     nombre = Tablas.EVALUACIONES
-    necesito_tablas = [
-        TablasColeccion.EVALUACION,
-        TablasFacultad.MATERIAS,
-        # TablasColeccion.CURSO,
-    ]
+    necesito_tablas = field(
+        default_factory=[
+            TablasColeccion.EVALUACION,
+            TablasFacultad.MATERIAS,
+            # TablasColeccion.CURSO,
+        ]
+    )
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""

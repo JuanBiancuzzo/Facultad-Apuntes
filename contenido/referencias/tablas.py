@@ -1,4 +1,5 @@
 import datetime as dt
+from dataclasses import field
 from sqlite3 import Connection as Conn
 from sqlite3 import Cursor
 from typing import Any
@@ -11,7 +12,7 @@ from tablas import Tabla, registrar_tabla
 @registrar_tabla
 class TablaReferencia(Tabla):
     nombre = Tablas.REFERENCIAS
-    necesito_tablas = []
+    necesito_tablas = field(default_factory=[])
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -38,7 +39,7 @@ class TablaReferencia(Tabla):
 @registrar_tabla
 class TablaWebsite(Tabla):
     nombre = Tablas.WEB
-    necesito_tablas = [Tablas.REFERENCIAS]
+    necesito_tablas = field(default_factory=[Tablas.REFERENCIAS])
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -77,7 +78,7 @@ class TablaWebsite(Tabla):
 @registrar_tabla
 class TablaWikipedia(Tabla):
     nombre = Tablas.WIKIPEDIA
-    necesito_tablas = [Tablas.REFERENCIAS]
+    necesito_tablas = field(default_factory=[Tablas.REFERENCIAS])
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -108,7 +109,7 @@ class TablaWikipedia(Tabla):
 @registrar_tabla
 class TablaYoutube(Tabla):
     nombre = Tablas.YOUTUBE
-    necesito_tablas = [Tablas.REFERENCIAS]
+    necesito_tablas = field(default_factory=[Tablas.REFERENCIAS])
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -147,7 +148,9 @@ class TablaYoutube(Tabla):
 @registrar_tabla
 class TablaLibro(Tabla):
     nombre = Tablas.LIBRO
-    necesito_tablas = [Tablas.REFERENCIAS, TablasGenerales.EDITORIAL]
+    necesito_tablas = field(
+        default_factory=[Tablas.REFERENCIAS, TablasGenerales.EDITORIAL]
+    )
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -199,7 +202,7 @@ class TablaLibro(Tabla):
 @registrar_tabla
 class TablaCapitulo(Tabla):
     nombre = Tablas.CAPITULOS
-    necesito_tablas = [Tablas.REFERENCIAS, Tablas.LIBRO]
+    necesito_tablas = field(default_factory=[Tablas.REFERENCIAS, Tablas.LIBRO])
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -248,7 +251,7 @@ class TablaCapitulo(Tabla):
 @registrar_tabla
 class TablaPaper(Tabla):
     nombre = Tablas.PAPER
-    necesito_tablas = [Tablas.REFERENCIAS]
+    necesito_tablas = field(default_factory=[Tablas.REFERENCIAS])
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -293,7 +296,9 @@ class TablaPaper(Tabla):
 @registrar_tabla
 class TablaDiccionario(Tabla):
     nombre = Tablas.DICCIONARIO
-    necesito_tablas = [Tablas.REFERENCIAS, TablasGenerales.EDITORIAL]
+    necesito_tablas = field(
+        default_factory=[Tablas.REFERENCIAS, TablasGenerales.EDITORIAL]
+    )
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -336,7 +341,7 @@ class TablaDiccionario(Tabla):
 @registrar_tabla
 class TablaCursoOnline(Tabla):
     nombre = Tablas.CURSO_ONLINE
-    necesito_tablas = [Tablas.REFERENCIAS]
+    necesito_tablas = field(default_factory=[Tablas.REFERENCIAS])
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -376,7 +381,7 @@ class TablaCursoOnline(Tabla):
 @registrar_tabla
 class TablaTema(Tabla):
     nombre = Tablas.TEMA
-    necesito_tablas = [Tablas.REFERENCIAS, Tablas.CURSO_ONLINE]
+    necesito_tablas = field(default_factory=[Tablas.REFERENCIAS, Tablas.CURSO_ONLINE])
 
     def crear(self, conn: Conn):
         conn.execute(f"""
@@ -415,15 +420,17 @@ class TablaTema(Tabla):
 @registrar_tabla
 class TablaReferenciaAutore(Tabla):
     nombre = Tablas.AUTORES_REFERENCIAS
-    necesito_tablas = [
-        TablasGenerales.AUTORES,
-        Tablas.WEB,
-        Tablas.LIBRO,
-        Tablas.CAPITULOS,
-        Tablas.PAPER,
-        Tablas.CURSO_ONLINE,
-        Tablas.TEMA,
-    ]
+    necesito_tablas = field(
+        default_factory=[
+            TablasGenerales.AUTORES,
+            Tablas.WEB,
+            Tablas.LIBRO,
+            Tablas.CAPITULOS,
+            Tablas.PAPER,
+            Tablas.CURSO_ONLINE,
+            Tablas.TEMA,
+        ]
+    )
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""

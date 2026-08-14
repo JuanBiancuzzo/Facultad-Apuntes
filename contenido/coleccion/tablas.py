@@ -1,4 +1,5 @@
 import datetime as dt
+from dataclasses import field
 from sqlite3 import Connection as Conn
 from sqlite3 import Cursor
 from typing import Any
@@ -10,7 +11,7 @@ from tablas import Tabla, registrar_tabla
 
 class TablaColeccion(Tabla):
     nombre = Tablas.COLECCION
-    necesito_tablas = [TablasGenerales.BLOQUE_TEXTO]
+    necesito_tablas = field(default_factory=[TablasGenerales.BLOQUE_TEXTO])
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -40,7 +41,7 @@ class TablaColeccion(Tabla):
 @registrar_tabla
 class TablaEjercicio(Tabla):
     nombre = Tablas.EJERCICIOS
-    necesito_tablas = [TablasGenerales.BLOQUE_TEXTO]
+    necesito_tablas = field(default_factory=[TablasGenerales.BLOQUE_TEXTO])
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -80,7 +81,7 @@ class TablaEjercicio(Tabla):
 @registrar_tabla
 class TablaGuia(Tabla):
     nombre = Tablas.GUIAS
-    necesito_tablas = []
+    necesito_tablas = field(default_factory=[])
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -103,7 +104,7 @@ class TablaGuia(Tabla):
 @registrar_tabla
 class TablaEjerciciosGuia(Tabla):
     nombre = Tablas.GUIA_EJERCICIOS
-    necesito_tablas = [Tablas.GUIAS, Tablas.EJERCICIOS]
+    necesito_tablas = field(default_factory=[Tablas.GUIAS, Tablas.EJERCICIOS])
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -127,7 +128,7 @@ class TablaEjerciciosGuia(Tabla):
 @registrar_tabla
 class TablaEvaluacion(Tabla):
     nombre = Tablas.EVALUACION
-    necesito_tablas = []
+    necesito_tablas = field(default_factory=[])
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -150,7 +151,7 @@ class TablaEvaluacion(Tabla):
 @registrar_tabla
 class TablaEjerciciosEvaluacion(Tabla):
     nombre = Tablas.EVALUACION_EJERCICIOS
-    necesito_tablas = [Tablas.EVALUACION, Tablas.EJERCICIOS]
+    necesito_tablas = field(default_factory=[Tablas.EVALUACION, Tablas.EJERCICIOS])
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -174,11 +175,13 @@ class TablaEjerciciosEvaluacion(Tabla):
 @registrar_tabla
 class TablaLibro(Tabla):
     nombre = Tablas.LIBRO
-    necesito_tablas = [
-        TablasGenerales.IMAGENES,
-        TablasGenerales.BLOQUE_TEXTO,
-        TablasReferencias.LIBRO,
-    ]
+    necesito_tablas = field(
+        default_factory=[
+            TablasGenerales.IMAGENES,
+            TablasGenerales.BLOQUE_TEXTO,
+            TablasReferencias.LIBRO,
+        ]
+    )
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -215,11 +218,13 @@ class TablaLibro(Tabla):
 @registrar_tabla
 class TablaCapitulo(Tabla):
     nombre = Tablas.CAPITULO
-    necesito_tablas = [
-        Tablas.LIBRO,
-        TablasGenerales.BLOQUE_TEXTO,
-        TablasReferencias.CAPITULOS,
-    ]
+    necesito_tablas = field(
+        default_factory=[
+            Tablas.LIBRO,
+            TablasGenerales.BLOQUE_TEXTO,
+            TablasReferencias.CAPITULOS,
+        ]
+    )
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -255,10 +260,12 @@ class TablaCapitulo(Tabla):
 @registrar_tabla
 class TablaPaper(Tabla):
     nombre = Tablas.PAPER
-    necesito_tablas = [
-        TablasGenerales.BLOQUE_TEXTO,
-        TablasReferencias.PAPER,
-    ]
+    necesito_tablas = field(
+        default_factory=[
+            TablasGenerales.BLOQUE_TEXTO,
+            TablasReferencias.PAPER,
+        ]
+    )
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
@@ -287,10 +294,12 @@ class TablaPaper(Tabla):
 @registrar_tabla
 class TablaDiccionario(Tabla):
     nombre = Tablas.DICCIONARIO
-    necesito_tablas = [
-        TablasGenerales.BLOQUE_TEXTO,
-        TablasReferencias.DICCIONARIO,
-    ]
+    necesito_tablas = field(
+        default_factory=[
+            TablasGenerales.BLOQUE_TEXTO,
+            TablasReferencias.DICCIONARIO,
+        ]
+    )
 
     def crear(self, conn: Conn) -> None:
         conn.execute(f"""
