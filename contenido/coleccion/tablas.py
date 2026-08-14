@@ -38,38 +38,6 @@ class TablaColeccion(Tabla):
 
 
 @registrar_tabla
-class TablaAjedrez(Tabla):
-    nombre = Tablas.AJEDREZ
-    necesito_tablas = []
-
-    def crear(self, conn: Conn) -> None:
-        conn.execute(f"""
-            CREATE TABLE IF NOT EXISTS {self.nombre} (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                nombre TEXT NOT NULL,
-                tipo TEXT NOT NULL,
-                inicio TEXT NOT NULL,
-                movimientos TEXT NOT NULL
-            );
-        """)
-
-    @classmethod
-    def insertar(
-        cls, cursor: Cursor, nombre: str, tipo: str, inicio: str, movimientos: list[str]
-    ) -> int | None:
-        movimientos_conjunto = ";".join(movimientos)
-        return cls._insertar(
-            cursor,
-            {
-                "nombre": nombre,
-                "tipo": tipo,
-                "inicio": inicio,
-                "movimientos": movimientos_conjunto,
-            },
-        )
-
-
-@registrar_tabla
 class TablaEjercicio(Tabla):
     nombre = Tablas.EJERCICIOS
     necesito_tablas = [TablasGenerales.BLOQUE_TEXTO]

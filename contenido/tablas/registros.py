@@ -2,6 +2,7 @@ from enum import StrEnum
 
 type Tablas = TablasFacultad | TablasReferencias | TablasColeccion | TablasGenerales
 
+
 class TablasFacultad(StrEnum):
     # Carrera
     CARRERAS = "Carreras"
@@ -15,6 +16,7 @@ class TablasFacultad(StrEnum):
 
     # Tema
     TEMA = "TemasCarrera"
+
 
 class TablasReferencias(StrEnum):
     REFERENCIAS = "Referencias"
@@ -32,6 +34,7 @@ class TablasReferencias(StrEnum):
     CURSO_ONLINE = "ReferenciasCursoOnline"
     TEMA = "ReferenciasTemaCurso"
 
+
 class TablasColeccion(StrEnum):
     COLECCION = "Colecciones"
 
@@ -42,8 +45,13 @@ class TablasColeccion(StrEnum):
     EVALUACION = "Evaluaciones"
     EVALUACION_EJERCICIOS = "EjercicioPorEvaluacion"
 
-    # Ajedrez
-    AJEDREZ = "MovimientosAjedrez"
+    # Juegos
+    JUGADOR = "Jugadores"
+
+    PARTIDA_AJEDREZ = "PartidasAjedrez"
+    MOVIMIENTOS_AJEDREZ = "MovimientosAjedrez"
+    ESTADISTICA_PARTIDA_AJEDREZ = "EstadisticasPartidasAjedrez"
+    TEORIA_AJEDREZ = "TeoriaAjedrez"
 
     # Biblioteca
     LIBRO = "Libros"
@@ -58,6 +66,7 @@ class TablasColeccion(StrEnum):
     # Cursos
     CURSO = "Cursos"
 
+
 class TablasGenerales(StrEnum):
     AUTORES = "Autores"
     EMBEDDING = "Embeddings"
@@ -70,4 +79,3 @@ class TablasGenerales(StrEnum):
     GUIAS = "GuiasPorElemento"
     EVALUACIONES = "EvaluacionesPorElemento"
     RELACIONES = "RelacionesEntreDatos"
-

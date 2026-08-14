@@ -1,7 +1,7 @@
 from .coleccion import Coleccion
 
-# Ajedrez
-from .ajedrez import Ajedrez
+# Juegos
+from .juegos.ajedrez import Ajedrez
 
 # Diccionario
 from .diccionario import Diccionario
