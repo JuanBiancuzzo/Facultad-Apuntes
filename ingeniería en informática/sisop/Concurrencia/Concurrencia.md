@@ -35,11 +35,12 @@ vinculoFacultad:
 ---
 Un programa concurrente, las diferentes partes de un programa se ejecutan independientemente. No necesariamente al mismo tiempo
 
-Este programa consiste de un conjunto finito de procesos secuenciales. Y estos [[Proceso|procesos]] están compuestos por un conjunto finito de instrucciones atómicas
+Este programa consiste de un conjunto finito de procesos secuenciales. Y estos [[Proceso|procesos]] están compuestos por un conjunto finito de [[Instrucción atómica|instrucciones atómicas]]
 
 El proceso concurrente, es intercalar estas instrucciones atómicas del conjunto de procesos secuenciales
 
 Este también es un desafío para un [[Sistema operativo|sistema operativo]], al tener que manejar los procesos de manera de [[Mínimo|minimizar]] el tiempo sin hacer nada
+
 ## Modelos
 ---
 * [[Fork-join|Paralelismo fork-join]]

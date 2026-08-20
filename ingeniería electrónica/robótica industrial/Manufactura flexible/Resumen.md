@@ -1,9 +1,9 @@
 ---
 tags:
   - facultad/resumen
-  - carrera/ingeniería-electrónica/robótica-industrial/Tema-1
-nombreResumen: Tema 1
-capitulo: 1
+  - carrera/ingeniería-electrónica/robótica-industrial/Manufactura-flexible
+nombreResumen: Manufactura flexible
+capitulo: 10
 referencias: []
 infoTemaMateria:
   materia: Robótica industrial

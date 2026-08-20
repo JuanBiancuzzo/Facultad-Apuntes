@@ -1,12 +1,12 @@
 ---
-etapa: empezado
-estado: Cursandola
+etapa: sin-empezar
+estado: Curso el proximo cuatrimestre
 tags:
   - facultad/materia
   - carrera/ingeniería-en-informática/taller-de-seguridad
 nombreMateria: Taller de seguridad informática
 nombreReducido: taller de seguridad
-cuatri: 26C2
+cuatri: 27C1
 plan: "2023"
 codigo: TA051
 referencias: []
