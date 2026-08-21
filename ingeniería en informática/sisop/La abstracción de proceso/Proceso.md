@@ -3,13 +3,13 @@ dia: 2023-08-26
 tags:
   - carrera/ingeniería-electrónica/control/Respuesta-dinámica
   - carrera/ingeniería-en-informática/ingenieria-software-1/Diseño-de-software
-  - carrera/ingeniería-en-informática/concurrentes/Introducción
   - carrera/ingeniería-en-informática/sisop/La-abstracción-de-proceso
   - carrera/ingeniería-electrónica/quimica/Termodinámica
   - colección/diccionario/palabra
   - referencia/diccionarioonline
   - nota/colección
   - nota/facultad
+  - carrera/ingeniería-en-informática/concurrentes/Introducción
 referencias:
   - "871"
   - "898"

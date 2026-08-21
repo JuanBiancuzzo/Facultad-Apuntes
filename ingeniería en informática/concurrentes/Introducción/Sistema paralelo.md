@@ -1,11 +1,11 @@
 ---
 dia: 2024-12-24
 etapa: ampliar
-referencias: 
+referencias:
 tags:
-  - carrera/ingeniería-en-informática/concurrentes/Introducción
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
   - nota/facultad
+  - carrera/ingeniería-en-informática/concurrentes/Introducción
 aliases:
   - Camino crítico#^camino-critico
 vinculoFacultad:

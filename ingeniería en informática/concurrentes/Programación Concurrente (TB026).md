@@ -15,7 +15,9 @@ cuatri: 26C2
 nombreMateria: Programación Concurrente
 nombreReducido: concurrentes
 nombreCarrera: Ingeniería en informática
-referencias: []
+referencias: 
+  - "1169"
+  - "1183"
 evaluaciones: []
 ---
 # Apuntes

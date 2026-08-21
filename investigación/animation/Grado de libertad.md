@@ -6,6 +6,7 @@ referencias:
 tags:
   - investigación/animation
   - investigación/juegos/game-engine/Animation-Engine
+  - carrera/ingeniería-electrónica/robótica-móvil/Locomoción
   - nota/investigacion
 aliases:
   - Degrees of freedom

@@ -2,11 +2,11 @@
 dia: 2023-03-29
 tags:
   - carrera/ingeniería-electrónica/taller/Concurrencia
-  - carrera/ingeniería-en-informática/concurrentes/Introducción
   - carrera/ingeniería-en-informática/distribuidos/Introducción
   - carrera/ingeniería-en-informática/sisop/Concurrencia
   - carrera/ingeniería-en-informática/taller/Concurrencia
   - nota/facultad
+  - carrera/ingeniería-en-informática/concurrentes/Introducción
 referencias:
   - "787"
 etapa: empezado
@@ -27,6 +27,8 @@ vinculoFacultad:
     capitulo: 4
     materia: Taller de programación 1
     carrera: Ingeniería en informática
+aliases:
+  - Modelo de concurrencia#Modelos
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
@@ -43,35 +45,29 @@ Este también es un desafío para un [[Sistema operativo|sistema operativo]], al
 
 ## Modelos
 ---
+* [[Estado mutable compartido|Estado mutable compartido]]
 * [[Fork-join|Paralelismo fork-join]]
+* [[Concurrencia por canales|Canales/mensajes]]
 * [[Programación asincrónica|Programación asincrónica]]
+* [[Concurrencia por actores|Actores]]
 
 ## Desafíos
 ---
-Se necesita sincronizar y comunicar entre procesos diferentes.
-
-### Sincronizar
-Coordinación temporal entre distintos procesos.
-
-### Comunicar
-Datos que necesitan compartir los procesos para cumplir la función del programa.
-
+Se necesita sincronizar y comunicar entre procesos diferentes
+* Sincronización
+	* Coordinación temporal entre distintos procesos
+* Comunicación
+	* Datos que necesitan compartir los procesos para cumplir la función del programa
 
 ## Problemas
 ---
-### Condiciones de carrera
-![[Race condition#Definición]]
-
-### Atomicity violation
-El deseo de la serialización entre múltiples accesos a memoria es violado.
-
-### Order violation
-El orden deseado entre accesos a memoria se ha cambiado.
-
-### Deadlocks
-![[Deadlock#Definición]]
-
-
+Al programar de forma concurrente, aparecen problemas que en un programa secuencia no ocurriría
+*  [[Race condition#Definición|Condiciones de carrera]]
+* Atomicity violation
+	* El deseo de la serialización entre múltiples accesos a memoria es violado
+* Order violation
+	* El orden deseado entre accesos a memoria se ha cambiado
+* [[ingeniería en informática/sisop/Concurrencia/Deadlock|Deadlocks]]
 
 # Referencias
 ---

@@ -1,10 +1,10 @@
 ---
 dia: 2024-12-24
 etapa: ampliar
-referencias: 
+referencias:
 tags:
-  - carrera/ingeniería-en-informática/concurrentes/Introducción
   - nota/facultad
+  - carrera/ingeniería-en-informática/concurrentes/Introducción
 vinculoFacultad:
   - tema: Introducción
     capitulo: 1

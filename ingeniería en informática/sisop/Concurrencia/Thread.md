@@ -2,7 +2,6 @@
 dia: 2023-11-09
 tags:
   - carrera/ingeniería-electrónica/taller/Concurrencia
-  - carrera/ingeniería-en-informática/concurrentes/Introducción
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
   - carrera/ingeniería-en-informática/sisop/Concurrencia
   - carrera/ingeniería-en-informática/taller/Concurrencia
@@ -10,6 +9,7 @@ tags:
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust
   - nota/facultad
   - nota/investigacion
+  - carrera/ingeniería-en-informática/concurrentes/Introducción
 aliases:
   - Multithreading
   - Multihilos
@@ -59,7 +59,7 @@ En la actualidad hay dos formas de que los threads se relacionen entre sí:
 ---
 Tenemos varios casos de comparación
 1. Un thread por proceso
-	* Un proceso con una única secuencia de instrucciones ejecutándose de inicio a fin. Esto es equivalente a un bloque de instrucción delimitado por `{` y `}`. Lo que todos los programadores de [[Modelo secuencial|modelo secuencial]] conocemos
+	* Un proceso con una única secuencia de instrucciones ejecutándose de inicio a fin. Esto es equivalente a un bloque de instrucción delimitado en un scope. Lo que todos los programadores de [[Modelo secuencial|modelo secuencial]] conocemos
 2. Muchos thread por proceso
 	* Un [[ingeniería en informática/sisop/La abstracción de proceso/Programa|programa]] es visto como thread ejecutándose dentro de un proceso con derechos restringidos. En dado un $t_i$ algunos threads pueden estar corriendo y otros estar suspendidos. 
 	  Cuando se detecta por ejemplo una operación de I/O por alguna [[Interrupción|interrupción]], el [[Kernel|Kernel]] desaloja ([[Preempt|preempt]]) a algunos de los threads que están corriendo, atiende la interrupción y al terminar de manejar la interrupción vuelve a correr el thread nuevamente.
