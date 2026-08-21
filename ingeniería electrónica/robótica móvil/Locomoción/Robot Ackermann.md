@@ -18,5 +18,9 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Este tipo de [[investigación/robótica/robótica móvil/Robótica móvil|robot]] se caracteriza
+Este tipo de [[investigación/robótica/robótica móvil/Robótica móvil|robot]] se caracteriza por su disposición de las ruedas, especificamente $2$ [[ingeniería electrónica/robótica móvil/Locomoción/Locomoción terrestre#^fija|ruedas fijas]] y $2$ [[ingeniería electrónica/robótica móvil/Locomoción/Locomoción terrestre#^direccional|ruedas direccionales]]
+
+![[ingeniería electrónica/robótica móvil/Locomoción/img/Robot Ackermann.png|150]]
+
+Por ser la configuración que tiene un [[Automóvil|auto]], también se lo llama robot car-like
 

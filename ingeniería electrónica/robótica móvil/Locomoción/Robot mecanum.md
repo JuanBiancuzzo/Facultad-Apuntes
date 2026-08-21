@@ -17,5 +17,6 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Este tipo de [[investigación/robótica/robótica móvil/Robótica móvil|robot]] se caracteriza
+Este tipo de [[investigación/robótica/robótica móvil/Robótica móvil|robot]] se caracteriza por su disposición de las ruedas, especificamente $4$ [[ingeniería electrónica/robótica móvil/Locomoción/Locomoción terrestre#^macanum|ruedas mecanum]]
 
+![[ingeniería electrónica/robótica móvil/Locomoción/img/Robot mecanum.png|150]]

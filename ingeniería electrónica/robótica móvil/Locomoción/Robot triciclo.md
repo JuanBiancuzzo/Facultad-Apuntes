@@ -17,5 +17,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Este tipo de [[investigación/robótica/robótica móvil/Robótica móvil|robot]] se caracteriza
+Este tipo de [[investigación/robótica/robótica móvil/Robótica móvil|robot]] se caracteriza por su disposición de las ruedas, especificamente $2$ [[ingeniería electrónica/robótica móvil/Locomoción/Locomoción terrestre#^fija|ruedas fijas]] y una [[ingeniería electrónica/robótica móvil/Locomoción/Locomoción terrestre#^direccional|rueda direccional]]
+
+![[ingeniería electrónica/robótica móvil/Locomoción/img/Robot triciclo.png|150]]
 

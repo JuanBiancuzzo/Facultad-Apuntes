@@ -17,5 +17,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Este tipo de [[investigación/robótica/robótica móvil/Robótica móvil|robot]] se caracteriza
+Este tipo de [[investigación/robótica/robótica móvil/Robótica móvil|robot]] se caracteriza por su disposición de las ruedas, especificamente $3$ [[ingeniería electrónica/robótica móvil/Locomoción/Locomoción terrestre#^omni|ruedas omnidireccionales]] 
+
+![[ingeniería electrónica/robótica móvil/Locomoción/img/Robot omni-wheel.png|150]]
 
