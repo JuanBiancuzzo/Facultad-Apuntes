@@ -19,6 +19,8 @@ Vamos a ver que es necesario para poder usar la placa ESP 32, para poder usarla 
 ---
 ESP32 es la denominación de una familia de chips [[System on a Chip|SoC]] de bajo coste y consumo de energía, con tecnología [[Wireless Fidelity|Wi-Fi]] y [[Bluetooth]] de modo dual integrada. El ESP32 emplea un [[Microprocesadores|microprocesador]] Tensilica Xtensa LX6 en sus variantes de simple y doble núcleo e incluye interruptores de antena, balun de radiofrecuencia, amplificador de potencia, amplificador receptor de bajo ruido, filtros, y módulos de administración de energía<sup><a href="#ref-420" style="color: inherit; text-decoration: none;">[420]</a></sup> 
 
+Su datasheet particular, está dado en [página de alldatasheet](https://www.alldatasheet.com/datasheet-pdf/view/1179101/ESPRESSIF/ESP-WROOM-32.html)
+
 ## Archivos
 ---
 ```dataviewjs
