@@ -10,6 +10,8 @@ cuatri: 26C2
 plan: "2023"
 codigo: TA155
 referencias: []
+guias: 
+  - 40
 evaluaciones: []
 correlativas:
   - tipo: Materia
@@ -25,6 +27,12 @@ nombreCarrera: Ingeniería electrónica
 ## Resumen
 ---
  
+# Guías
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/contenido/guiasAcumuladas", { archivo: dv.current() });
+```
+
 
 # Evaluaciones
 ---
