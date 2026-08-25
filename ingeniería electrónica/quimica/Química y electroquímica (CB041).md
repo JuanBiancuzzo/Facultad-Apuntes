@@ -1,6 +1,6 @@
 ---
 etapa: empezado
-estado: Falta últimos temas
+estado: Falta reacciones químicas parte 2, equlibrio iónico y mejorar la sección de sólidos
 tags:
   - facultad/materia
   - carrera/ingeniería-electrónica/quimica

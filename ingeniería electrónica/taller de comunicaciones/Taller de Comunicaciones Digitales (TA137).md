@@ -26,6 +26,8 @@ guias:
   - 22
   - 23
   - 24
+evaluaciones:
+  - 10
 correlativas:
   - tipo: Equivalente
     materia: Redes
@@ -131,6 +133,12 @@ nombreCarrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/contenido/guiasAcumuladas", { archivo: dv.current() });
+```
+
+# Evaluaciones
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/contenido/evaluacionesAcumuladas", { archivo: dv.current() });
 ```
 
 # Bibliografía
