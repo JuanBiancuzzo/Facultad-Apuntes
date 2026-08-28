@@ -9,7 +9,13 @@ vinculoFacultad:
     capitulo: 2
     materia: Álgebra 2 A
     carrera: Ingeniería en informática
+etapa: empezado
+referencias: []
+aliases: []
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
  * $cos(a)^2 + sin(a)^2 = 1$

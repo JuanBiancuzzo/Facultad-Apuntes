@@ -24,6 +24,6 @@ Tomando estas como funciones [[Función senoidal|senoidales]] $$ \begin{align}
 	v(t) &= V_m cos(\omega t + \theta_v) \\
 	i(t) &= I_m cos(\omega t + \theta_i)
 \end{align} $$
-y usando [[Propiedades trigonométricas|propiedades trigonométricas]] nos queda la potencia instantánea $$ p(t) = \frac{1}{2} V_m I_m cos(\theta_v - \theta_i) + \frac{1}{2} V_m I_m cos(2 \omega t + \theta_v + \theta_i) $$
+y usando [[ingeniería en informática/algebra 2/Transformaciones lineales/Identidades trigonométricas|propiedades trigonométricas]] nos queda la potencia instantánea $$ p(t) = \frac{1}{2} V_m I_m cos(\theta_v - \theta_i) + \frac{1}{2} V_m I_m cos(2 \omega t + \theta_v + \theta_i) $$
 Por lo que la potencia media es $$ P_m = \frac{1}{2} V_m I_m cos(\theta_v - \theta_i) $$
 Con [[Fasor|fasores]] $$ P_m = \frac{1}{2} Re\left(V ~ I^* \right) $$ donde $I^*$ es el [[Valor conjutado|conjugada]] de la corriente.

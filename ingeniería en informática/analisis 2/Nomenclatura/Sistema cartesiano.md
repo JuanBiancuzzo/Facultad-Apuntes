@@ -8,12 +8,18 @@ aliases:
   - Coordenadas cartesianas
   - Transformar coordenadas cartesianas a cilíndricas#^cartesianas-cilindricas
   - Transformar coordenadas cartesianas a esféricas#^cartesianas-esfericas
+  - Terna
 vinculoFacultad:
   - tema: Nomenclatura
     capitulo: 1
     materia: Análisis matemático 2 A
     carrera: Ingeniería en informática
+etapa: ampliar
+referencias: []
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 En el sistema cartesiano, la posición de un punto $P$ en el [[Espacio|espacio]] se describe mediante las [[Proyección ortogonal|proyecciones]] del vector posición sobre los $n$ ejes rectos mutuamente [[Ortogonalidad|perpendiculares]] que se cruzan en el origen de coordenadas 
@@ -50,6 +56,7 @@ En el caso que $n$ sea igual a $3$ podemos describir el punto $P$ como $$ P = (x
 \end{tikzpicture}
 \end{document}
 ```
+
 ## Transformar coordenadas
 ---
 Para pasarlo a [[Sistema cilíndrico|coordenadas cilíndricas]] 

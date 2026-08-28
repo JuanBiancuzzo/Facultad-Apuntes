@@ -3,7 +3,7 @@ dia: 2026-08-25
 tags:
   - colección/ejercicios/guia
 numero: 40
-nombre: Tira de ejercicios N°0
+nombre: Sistema de referencia
 ejercicios:
   - 623
   - 624

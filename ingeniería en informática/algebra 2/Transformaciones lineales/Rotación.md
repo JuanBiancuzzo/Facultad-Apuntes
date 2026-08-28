@@ -2,11 +2,13 @@
 dia: 2023-01-22
 tags:
   - carrera/ingeniería-electrónica/algebra-2/Transformaciones-lineales
+  - carrera/ingeniería-electrónica/robótica-industrial/Sistema-de-referencias
   - carrera/ingeniería-en-informática/algebra-2/Transformaciones-lineales
   - carrera/ingeniería-electrónica/robótica-móvil/Repaso-álgebra
   - nota/facultad
 aliases:
   - Matriz de rotación
+  - Formula de Rodrigues matricial#^rodrigues
 vinculoFacultad:
   - tema: Transformaciones lineales
     capitulo: 2
@@ -16,12 +18,57 @@ vinculoFacultad:
     capitulo: 1
     materia: Robótica móvil
     carrera: Ingeniería electrónica
+  - tema: Sistema de referencias
+    capitulo: 2
+    materia: Robótica industrial
+    carrera: Ingeniería electrónica
 ---
 # Definición
 ---
-Vamos a usar 
-![[Propiedades trigonométricas#Definición]]
+Se define la [[ingeniería en informática/algebra 2/Transformaciones lineales/Transformación lineal|transformación lineal]] $R$ como una rotación, dado un [[Sistema coordenado|sistema coodenado]] [[ingeniería en informática/analisis 2/Nomenclatura/Base ortonormal|ortonormal]] derecho, en el caso de $2$ [[ingeniería en informática/algebra 2/Espacios Vectoriales/Dimensión|dimensiones]] dado por los [[ingeniería electrónica/robótica móvil/Repaso álgebra/Vector|versores]] $\hat{x}$ e $\hat{y}$ $$ R(\theta) \begin{bmatrix} x \\ y \end{bmatrix} := \begin{bmatrix} 
+    \cos(\theta) & -\sin(\theta) \\ 
+    \sin(\theta) & \cos(\theta) 
+\end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} $$
+Para $3$ dimensiones, con los versores $\hat{x}$, $\hat{y}$ y $\hat{z}$ existen $3$ marices de rotación, alrededor de cada eje dado por $$ R(\hat{x},~ \theta) = \begin{bmatrix} 
+    1 & 0 & 0 \\ 0 & \cos \theta & -\sin \theta \\ 0 & \sin \theta & \cos \theta
+\end{bmatrix} ~~~~ R(\hat{y},~ \theta) = \begin{bmatrix} 
+    \cos \theta & 0 & -\sin \theta \\ 0 & 1 & 0 \\ \sin \theta & 0 & \cos \theta
+\end{bmatrix} ~~~~ R(\hat{z},~ \theta) = \begin{bmatrix} 
+    \cos \theta & -\sin \theta & 0 \\ \sin \theta & \cos \theta & 0 \\ 0 & 0 & 1 
+\end{bmatrix} $$
+De manera arbitraria, se puede tener un eje $\vec{k} = \begin{bmatrix} k_x & k_y & k_z \end{bmatrix}^T$  y un ángulo de rotación $\theta$, se tiene expresandola como la suma entre una [[Matriz simétrica|matriz simétrica]] y [[Matriz simétrica|matriz antisimétrica]] $$ \begin{align}
+	R(\vec{k},~ \theta) =& \begin{bmatrix}
+		k_x k_x (1 - \cos\theta) + \cos\theta &
+		k_x k_y (1 - \cos\theta) &
+		k_x k_z (1 - \cos\theta) \\
+		k_y k_x (1 - \cos\theta) &
+		k_y k_y (1 - \cos\theta) + \cos\theta &
+		k_y k_z (1 - \cos\theta) \\
+		k_z k_x (1 - \cos\theta) &
+		k_z k_y (1 - \cos\theta) &
+		k_z k_z (1 - \cos\theta) + \cos\theta \\
+	\end{bmatrix} \\
+	&+ \begin{bmatrix}
+		0 & -k_z ~ \sin\theta & -k_y ~ \sin\theta \\
+		k_z ~ \sin\theta & -0 & k_x ~ \sin\theta \\
+		-k_y ~ \sin\theta & -k_x ~ \sin\theta & 0 \\
+	\end{bmatrix}
+\end{align} $$
+También se puede ver como tiene la forma de la [[Formula de Rodrigues|formula de Rodrigues]] de forma matricial $$ R(\vec{k},~ \theta) = \underbrace{\cos\theta \mathbb{I} + (1 - \cos\theta) \vec{k} \vec{k}^T}_\text{simétrica} + \underbrace{\sin\theta ~ S(\vec{k})}_\text{antisimétrica} $$ ^rodrigues
+Donde $S(\vec{k})$ es la matriz antisimétrica del vector $\vec{k}$ dado por $$ S(\vec{k}) = \begin{bmatrix}
+	0 & -k_z & k_y \\
+	k_z & 0 & -k_x \\
+	k_y & k_x & 0 \\
+\end{bmatrix} $$ que tiene la propiedad fundamental $S(\vec{k}) \vec{v} = \vec{k} \times \vec{v}$ 
 
+## Propiedades
+---
+* La [[ingeniería en informática/algebra 2/Espacios Vectoriales/Matriz#Matriz transpuesta|matriz transpuesta]] es la [[ingeniería en informática/algebra 2/Espacios Vectoriales/Matriz#Matriz inversa|matriz inversa]], es decir que $R^T ~ R = \mathbb{I}$
+  > [!demostracion]- Demostración
+  > Pendiente
+
+## Deducción caso de $2$ dimensiones
+---
 Partiendo de una situación como esta
 
 ```tikz
@@ -66,12 +113,11 @@ Partiendo de una situación como esta
 \end{document}
 ```
 
-Nosotros queremos rotar nuestro plano $\mathbb{R}^2$ por un ángulo de $50.42\degree$, entonces si la [[Transformación lineal|transformación lineal]] la llamamos $R$, entonces necesitamos determinar
-
-$$ R{1 \choose 0} = ~~ ? $$
-$$ R{0 \choose 1} = ~~ ? $$
-
-Entonces veamos el caso ${1 \choose 0}$:
+Nosotros queremos rotar nuestro plano $\mathbb{R}^2$ por un ángulo de $50.42\degree$, si la [[Transformación lineal|transformación lineal]] la llamamos $R$, entonces necesitamos determinar $$ \begin{align} 
+	R \cdot \begin{bmatrix} 1 \\ 0 \end{bmatrix} &= ~~ ? \\
+	R \cdot \begin{bmatrix} 0 \\ 1 \end{bmatrix} &= ~~ ?
+\end{align} $$
+Entonces veamos el caso $\begin{bmatrix} 1 \\ 0 \end{bmatrix}$
 
 ```tikz
 \begin{document}
@@ -106,7 +152,7 @@ Entonces veamos el caso ${1 \choose 0}$:
 ```
 
 
-Podemos ver el triangulo rectángulo, entonces la posición en $x$ esta dado por el $cos(50.42\degree)$ y la $y$ esta dado por $sin(50.42\degree)$, entonces $$ R_{50.42\degree} ~ \begin{bmatrix}1 \\ 0 \end{bmatrix} = \begin{bmatrix} 
+Podemos ver el triangulo rectángulo, entonces la posición en $x$ esta dado por el $\cos(50.42\degree)$ y la $y$ esta dado por $\sin(50.42\degree)$, entonces $$ R(50.42\degree) ~ \begin{bmatrix}1 \\ 0 \end{bmatrix} = \begin{bmatrix} 
     \cos\left( 50.42\degree \right) \\
     \sin\left( 50.42\degree \right) \\
 \end{bmatrix} $$
@@ -145,17 +191,10 @@ Ahora en el caso de $\begin{bmatrix} 0 \\ 1 \end{bmatrix}$:
 \end{document}
 ```
 
-En este caso, la posición en $x$ esta dado por $\sin(50.42\degree + \pi)$ y la $y$ esta dado por $\cos(50.42\degree)$, que es el equivalente a $-\sin(50.42\degree)$, entonces nos queda$$ R_{50.42\degree} ~ \begin{bmatrix} 1 \\ 0 \end{bmatrix} = \begin{bmatrix} -\sin\left( 50.42\degree \right) \\ \cos\left( 50.42\degree \right) \end{bmatrix} $$
+En este caso, la posición en $x$ esta dado por $\sin(50.42\degree + \pi)$ y la $y$ esta dado por $\cos(50.42\degree)$, que es el equivalente a $-\sin(50.42\degree)$, entonces nos queda$$ R(50.42\degree) ~ \begin{bmatrix} 1 \\ 0 \end{bmatrix} = \begin{bmatrix} -\sin\left( 50.42\degree \right) \\ \cos\left( 50.42\degree \right) \end{bmatrix} $$
 
-Por lo tanto podemos escribir la [[ingeniería en informática/algebra 2/Espacios Vectoriales/Matriz|matriz]] de rotación, para cualquier ángulo $$ R_\theta \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} := \begin{bmatrix} 
+Por lo tanto podemos escribir la [[ingeniería en informática/algebra 2/Espacios Vectoriales/Matriz|matriz]] de rotación, para cualquier ángulo $$ R(\theta) \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} := \begin{bmatrix} 
     \cos(\theta) & -\sin(\theta) \\ 
     \sin(\theta) & \cos(\theta) 
 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} $$ donde esta matriz de rotación es una [[ingeniería en informática/analisis 2/Nomenclatura/Ortogonalidad#Para matrices|matriz ortogonal]] con [[ingeniería en informática/algebra 2/Espacios Vectoriales/Matriz#Determinante|determinante]] igual a $\pm 1$
 
-Para $3$ [[ingeniería en informática/algebra 2/Espacios Vectoriales/Dimensión|dimensiones]] existen $3$ marices de rotación $$ R_x(\theta) = \begin{bmatrix} 
-    1 & 0 & 0 \\ 0 & \cos \theta & -\sin \theta \\ 0 & \sin \theta & \cos \theta
-\end{bmatrix} ~~~~ R_y(\theta) = \begin{bmatrix} 
-    \cos \theta & 0 & -\sin \theta \\ 0 & 1 & 0 \\ \sin \theta & 0 & \cos \theta
-\end{bmatrix} ~~~~ R_z(\theta) = \begin{bmatrix} 
-    \cos \theta & -\sin \theta & 0 \\ \sin \theta & \cos \theta & 0 \\ 0 & 0 & 1 
-\end{bmatrix} $$
