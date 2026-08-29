@@ -7,6 +7,9 @@ tags:
   - carrera/ingeniería-en-informática/algebra-2
   - facultad/materia
 etapa: empezado
+guias: 
+ - 41
+evaluaciones:
 nombreMateria: Álgebra 2 A
 nombreReducido: algebra 2
 pathCarrera: "[[ingeniería en informática/Ingeniería en informática.md]]"
@@ -16,6 +19,18 @@ nombreCarrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
+```
+
+# Guías
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/contenido/guiasAcumuladas", { archivo: dv.current() });
+```
+
+# Evaluaciones
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/contenido/evaluacionesAcumuladas", { archivo: dv.current() });
 ```
 
 # Bibliografía
