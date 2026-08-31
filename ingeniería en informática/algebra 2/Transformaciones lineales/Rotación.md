@@ -61,11 +61,32 @@ Donde $S(\vec{k})$ es la matriz antisimétrica del vector $\vec{k}$ dado por $$ 
 	k_y & k_x & 0 \\
 \end{bmatrix} $$ que tiene la propiedad fundamental $S(\vec{k}) \vec{v} = \vec{k} \times \vec{v}$ 
 
+En el caso de obtener de una matriz de rotación, y querer obtener $\theta$ y $\vec{k}$, se tiene $$ \begin{align}
+	\theta &= \arccos\left( \frac{1}{2} \Big( \text{tr}(R) - 1 \Big) \right) \\
+	k_x &= \frac{R_{3,2} - R_{2,3}}{2 \sin\theta} \\
+	k_y &= \frac{R_{3,1} - R_{1,3}}{2 \sin\theta} \\
+	k_z &= \frac{R_{2,1} - R_{1,2}}{2 \sin\theta} \\
+\end{align} $$donde se toma que $R_{i,j}$ donde $i$ es la fila (empezando en $1$) y $j$ es la columna (nuevamente, empezando en $1$)
+
+Notemos que existe una [[ingeniería electrónica/analisis 3/Series de Laurent/Singularidad|singularidad]] cuando $\theta = 0$, donde la matriz esta dada por la [[Matriz identidad|identidad]] y el versor $\vec{k}$ puede ser cualquiera
+
 ## Propiedades
 ---
 * La [[ingeniería en informática/algebra 2/Espacios Vectoriales/Matriz#Matriz transpuesta|matriz transpuesta]] es la [[ingeniería en informática/algebra 2/Espacios Vectoriales/Matriz#Matriz inversa|matriz inversa]], es decir que $R^T ~ R = \mathbb{I}$
   > [!demostracion]- Demostración
   > Pendiente
+
+## Restricciones
+---
+Tomando como ejemplo el caso de $3$ dimensiones, donde aunque la matriz de rotación se tiene $9$ posibles valores para definir una matriz de $3 \times 3$, existe la restricción de tener una base ortonormal dado por $$ \begin{align}
+	\hat{x} \cdot \hat{y} &= 0 & \lVert \hat{x} \rVert &= 1 \\
+	\hat{x} \cdot \hat{z} &= 0 & \lVert \hat{y} \rVert &= 1 \\
+	\hat{y} \cdot \hat{z} &= 0 & \lVert \hat{z} \rVert &= 1 \\
+\end{align} $$ por lo que reduciendo a únicamente $3$ [[investigación/animation/Grado de libertad|grados de libertad]]
+
+Notemos que si se expresa un vector $\vec{k}$ y un ángulo de rotación $\theta$, ya que $\lVert \vec{k} \rVert = 1$, se tiene de nuevo $3$ grados de libertad 
+
+De forma general, siendo $d$ la dimensión, entonces se tienen $d$ restricciones, ya que los $d$ versores tienen [[ingeniería en informática/algebra 2/Espacios euclídeos/Norma|norma]] $1$, y luego las combinaciones entre todos los versores donde entre ellos tienen un [[ingeniería en informática/algebra 2/Espacios euclídeos/Producto interno|producto]] nulo, finalmente dando $$ \frac{(d + 1) ~ d}{2} $$ 
 
 ## Deducción caso de $2$ dimensiones
 ---

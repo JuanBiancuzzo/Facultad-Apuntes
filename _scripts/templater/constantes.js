@@ -337,6 +337,7 @@ module.exports = () => ({
         NOTA: {
             etapa: "etapa",
             referencias: "referencias",
+            ejercicios: "ejercicios",
             nombrePrincipal: "nombre",
             seudonimos: "aliases",
         },

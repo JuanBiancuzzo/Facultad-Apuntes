@@ -335,6 +335,7 @@ async function crearNotaFacultad(tp) {
                 ...tp.user.obtenerTag(tp, resumen[DATOS_ARCHIVO.tags]),
                 `${TAGS_NOTA.self}/${TAGS_NOTA.carrera}`,
             ],
+            [DATOS_NOTA.ejercicios]: [],
             "vinculoFacultad": [
                 {
                     "tema": resumen[DATOS_RESUMEN.nombre],
