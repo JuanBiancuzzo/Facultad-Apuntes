@@ -15,4 +15,36 @@ Luego obtener los [[Cuaternión|cuaterniones]] $Q_1$ y $Q_2$ asociados a cada ro
 
 # Resolución
 ---
-
+Recordemos que $$ \begin{align}
+	R\left( \hat{x},~ \theta = \frac{\pi}{2} \right) &= \begin{bmatrix}
+	    1 & 0 & 0 \\ 
+	    0 & \cos \theta & -\sin \theta \\ 
+	    0 & \sin \theta & \cos \theta
+	\end{bmatrix} = \begin{bmatrix}
+	    1 & 0 & 0 \\ 
+	    0 & 0 & -1 \\ 
+	    0 & 1 & 0
+	\end{bmatrix} = R_1 \\\\
+	R\left( \hat{z},~ \theta = \frac{\pi}{2} \right) &= \begin{bmatrix}
+	    \cos \theta & -\sin \theta & 0 \\ 
+	    \sin \theta & \cos \theta & 0 \\
+	    0 & 0 & 1 
+	\end{bmatrix} = \begin{bmatrix}
+	    0 & -1 & 0 \\ 
+	    1 & 0 & 0 \\ 
+	    0 & 0 & 1
+	\end{bmatrix} = R_2
+\end{align} $$ por lo que la rotación final $R$ está dado por $$ R = \begin{bmatrix}
+	1 & 0 & 0 \\ 
+	0 & 0 & -1 \\ 
+	0 & 1 & 0
+\end{bmatrix} \cdot \begin{bmatrix}
+	0 & -1 & 0 \\ 
+	1 & 0 & 0 \\ 
+	0 & 0 & 1
+\end{bmatrix} = \begin{bmatrix}
+	0 & -1 & 0 \\ 
+	0 & 0 & -1 \\ 
+	1 & 0 & 0
+\end{bmatrix} $$
+Utilizando 

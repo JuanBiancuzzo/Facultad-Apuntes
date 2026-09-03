@@ -1,8 +1,8 @@
 ---
 tags:
   - facultad/resumen
-  - carrera/ingeniería-en-informática/ebt-1/Tema-1
-nombreResumen: Tema 1
+  - carrera/ingeniería-en-informática/ebt-1/Empresas-de-Base-Tecnológica
+nombreResumen: Empresas de Base Tecnológica
 capitulo: 1
 referencias: []
 infoTemaMateria:

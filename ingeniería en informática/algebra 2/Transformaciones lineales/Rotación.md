@@ -30,7 +30,9 @@ Se define la [[ingeniería en informática/algebra 2/Transformaciones lineales/T
     \sin(\theta) & \cos(\theta) 
 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} $$
 Para $3$ dimensiones, con los versores $\hat{x}$, $\hat{y}$ y $\hat{z}$ existen $3$ marices de rotación, alrededor de cada eje dado por $$ R(\hat{x},~ \theta) = \begin{bmatrix} 
-    1 & 0 & 0 \\ 0 & \cos \theta & -\sin \theta \\ 0 & \sin \theta & \cos \theta
+    1 & 0 & 0 \\ 
+    0 & \cos \theta & -\sin \theta \\ 
+    0 & \sin \theta & \cos \theta
 \end{bmatrix} ~~~~ R(\hat{y},~ \theta) = \begin{bmatrix} 
     \cos \theta & 0 & -\sin \theta \\ 0 & 1 & 0 \\ \sin \theta & 0 & \cos \theta
 \end{bmatrix} ~~~~ R(\hat{z},~ \theta) = \begin{bmatrix} 

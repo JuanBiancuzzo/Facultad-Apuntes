@@ -6,7 +6,9 @@ aliases: []
 tags:
   - carrera/ingeniería-electrónica/robótica-industrial/Sistema-de-referencias
   - nota/facultad
-ejercicios: []
+ejercicios: 
+  - 623
+  - 624
 vinculoFacultad:
   - tema: Sistema de referencias
     capitulo: 2
@@ -27,4 +29,9 @@ Como también utilizando las relaciones $$ \begin{matrix}
 	ij = -ji = k  && jk = -kj = i && ki = -ik = j
 \end{matrix} $$
 Donde si se busca tener la rotación de un vector $\vec{r}$, utilizando un cuaternión, se puede obtener de forma vectorial $$ \vec{r}' = \vec{r} + 2g ~ (\vec{q} \times \vec{r}) + 2 \vec{q} \times (\vec{q} \times \vec{r}) $$
+De esta forma, se puede generar la matriz de rotación utilizando los versores $\hat{x}$, $\hat{y}$ y $\hat{z}$, obteniendo $$ R(Q) = \begin{bmatrix}
+	2 q_x q_x + 2g^2 - 1 & 2q_x q_y - 2 g q_z & 2q_x q_z + 2 g q_y \\
+	2q_x q_y + 2 g q_z & 2 q_y q_y + 2g^2 - 1 & 2q_z q_y - 2 g q_x \\
+	2q_x q_z - 2 g q_y & 2q_y q_z + 2 g q_x & 2 q_z q_z + 2g^2 - 1 \\
+\end{bmatrix} $$
 
