@@ -12,6 +12,7 @@ codigo: TA155
 referencias: []
 guias: 
   - 40
+  - 42
 evaluaciones: []
 correlativas:
   - tipo: Materia
@@ -32,7 +33,6 @@ nombreCarrera: Ingeniería electrónica
 ```dataviewjs
 	await dv.view("_scripts/dataview/contenido/guiasAcumuladas", { archivo: dv.current() });
 ```
-
 
 # Evaluaciones
 ---
