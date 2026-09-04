@@ -5,7 +5,7 @@ tags:
   - nota/colección
 numero: 624
 nombre: Problema inverso cuaterniones 2
-etapa: empezado
+etapa: terminado
 ---
 # Enunciado
 ---
