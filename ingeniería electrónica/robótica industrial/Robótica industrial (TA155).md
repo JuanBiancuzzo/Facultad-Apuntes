@@ -13,7 +13,9 @@ referencias: []
 guias: 
   - 40
   - 42
-evaluaciones: []
+evaluaciones: 
+  - 12
+  - 13
 correlativas:
   - tipo: Materia
     materia: Taller de Automatización y Control
