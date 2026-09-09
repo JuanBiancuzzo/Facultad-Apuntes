@@ -7,10 +7,18 @@ for (let ejercicio of dv.pages("#colección/ejercicios/ejercicio")) {
 
 const infoEjercicios = Object.entries(ejercicios).map(([indice, numEjercicio]) => {
     const ejercicio = ejerciciosGeneral[parseInt(numEjercicio, 10)];
-    const nombre = `Ejercicio N°${parseInt(indice, 10) + 1}${ejercicio.nombre != undefined ? `: ${ejercicio.nombre}` : ""}`;
+    const numero = parseInt(indice, 10) + 1;
+    const nombre = `Ejercicio N°${numero}${ejercicio.nombre != undefined ? `: ${ejercicio.nombre}` : ""}`;
+    let estado = "⚫";
+    switch (ejercicio.etapa) {
+        case "sin-empezar": estado = "🔵"; break;
+        case "empezado": estado = "🟠"; break;
+        case "ampliar": estado = "🟣"; break;
+        case "terminado": estado = "🟢"; break;
+    }
 
     let link = crearReferencia(ejercicio.file.path, nombre);
-    return `<li> ${link} </li>`;
+    return `<li> ${estado} ${link} </li>`;
 });
 
 dv.el("div", `<ul> ${infoEjercicios.join("")} </ul>`);
