@@ -39,7 +39,7 @@ Se puede representar en la curva de demanda dada por la expresión $$ Q_D = f\le
 
 \begin{document}
 	\definecolor{azul}{RGB}{23, 65, 125}
-	\definecolor{rojo}{RGB}{218, 111, 142}
+	\definecolor{demanda}{RGB}{218, 111, 142}
 	\tikzmath { \largoTexto = 2.5; \altoTexto = 0.3; }	
 	\tikzset{ 
 	    table/.style={
@@ -118,10 +118,10 @@ Se puede representar en la curva de demanda dada por la expresión $$ Q_D = f\le
 					node [left=2pt] {$\j$};
 			}
 
-			\draw[rojo] (0, {relacion(0) * \sepY}) 
+			\draw[demanda] (0, {relacion(0) * \sepY}) 
 				-- ({\maxLargo * \sepX}, {relacion(\maxLargo) * \sepY});
 			\foreach \i in {0, 2, ..., \maxLargo} {
-				\fill[rojo] ({\i * \sepX}, {relacion(\i) * \sepY}) 
+				\fill[demanda] ({\i * \sepX}, {relacion(\i) * \sepY}) 
 					circle (\radio);
 			}
 		\end{scope}

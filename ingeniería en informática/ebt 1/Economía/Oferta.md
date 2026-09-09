@@ -40,7 +40,7 @@ Se puede representar en la curva de oferta dada por la expresión $$ Q_O = f\lef
 
 \begin{document}
 	\definecolor{azul}{RGB}{23, 65, 125}
-	\definecolor{rojo}{RGB}{218, 111, 142}
+	\definecolor{oferta}{RGB}{0, 127, 204}
 	\tikzmath { \largoTexto = 2.5; \altoTexto = 0.3; }	
 	\tikzset{ 
 	    table/.style={
@@ -119,10 +119,10 @@ Se puede representar en la curva de oferta dada por la expresión $$ Q_O = f\lef
 					node [left=2pt] {$\j$};
 			}
 
-			\draw[rojo] (0, {relacion(0) * \sepY}) 
+			\draw[oferta] (0, {relacion(0) * \sepY}) 
 				-- ({5 * \sepX}, {relacion(5) * \sepY});
 			\foreach \i in {0, 1, ..., 5} {
-				\fill[rojo] ({\i * \sepX}, {relacion(\i) * \sepY}) 
+				\fill[oferta] ({\i * \sepX}, {relacion(\i) * \sepY}) 
 					circle (\radio);
 			}
 		\end{scope}
