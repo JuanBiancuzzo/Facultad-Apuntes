@@ -13,4 +13,5 @@ Incluir
 * [[Pandas|Pandas de Python]]
 * [[TensorFlow|TensorFlow de Python]]
 * [[investigación/ciencias de la computación/lenguajes de programación/lenguaje Rust/bevy/Índice|Bevy de Rust]]
+* [[investigación/ciencias de la computación/lenguajes de programación/lenguaje Rust/rayon/Índice|Rayon de Rust]]
 * [[investigación/ciencias de la computación/lenguajes de programación/lenguaje Rust/yew/Índice|Yew de Rust]]
