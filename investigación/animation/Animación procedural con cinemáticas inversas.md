@@ -23,7 +23,7 @@ El principal motivo por el cual se usa animación procedural es la libertad de c
 
 ## Mover un personaje
 ---
-Vamos a usar [[Inverse kinematics|IK]] para mover puntos que podrían el [[Skeleton for animation (Esquelo para animar)|esqueleto]] de un personaje, y el [[Inverse kinematics#Algoritmos|algoritmo de IK]] dado un punto final, nos permite determinar como debería colocarse el esqueleto para llegar a ese punto
+Vamos a usar [[investigación/animation/Cinemática inversa|IK]] para mover puntos que podrían el [[Skeleton for animation (Esquelo para animar)|esqueleto]] de un personaje, y el [[investigación/animation/Cinemática inversa#Algoritmos|algoritmo de IK]] dado un punto final, nos permite determinar como debería colocarse el esqueleto para llegar a ese punto
 
 En general se usa [[investigación/juegos/game engine/técnicas/Ray casting|ray casting]] como una herramienta para entender el ambiente alrededor del personaje. Puede usarse para ver la [[Distancia euclidiana|distancia]] al piso, o la distancia a una pared. Se usa esa información para generar puntos a los cuales se le puede pasar al algoritmo de IK para crear nuevas posiciones y orientaciones del esqueleto
 

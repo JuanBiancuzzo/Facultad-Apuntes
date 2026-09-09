@@ -8,6 +8,7 @@ tags:
   - nota/facultad
 aliases:
   - Matriz de rotación
+  - Orientación
   - Formula de Rodrigues matricial#^rodrigues
 vinculoFacultad:
   - tema: Transformaciones lineales

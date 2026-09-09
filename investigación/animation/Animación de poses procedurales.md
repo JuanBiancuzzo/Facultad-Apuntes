@@ -20,7 +20,7 @@ Se propone desacoplar las animaciones del [[Skeleton for animation (Esquelo para
 La intención es que se puede aplicar keyframes a este nuevo rig, o modificar su movimiento, y este modificará el rig que esta por debajo. Esto nos va a permitir crear una animación y variaciones intercambiables y combinables, para un solo rig (el rig externo) y aplicarlo a cualquier rig que tenga la misma estructura física
 
 >[!quote]
->The technique for converting animation on any rig into a set of [[Inverse kinematics|IK]] chains, application of context aware adjustments to these chains and conversion of result to any other rig, runtime or offline<sup><a href="#ref-26" style="color: inherit; text-decoration: none;">[26]</a></sup> 
+>The technique for converting animation on any rig into a set of [[investigación/animation/Cinemática inversa|IK]] chains, application of context aware adjustments to these chains and conversion of result to any other rig, runtime or offline<sup><a href="#ref-26" style="color: inherit; text-decoration: none;">[26]</a></sup> 
 
 Se propone usar reglas para controlar el rig externo, y de esta forma poder afectar (con o sin parámetros) al rig debajo. Ejemplos pueden ser
 * Llevar algo en una mano, donde depende del peso y la fuerza del personaje, el como afecta su movimiento
