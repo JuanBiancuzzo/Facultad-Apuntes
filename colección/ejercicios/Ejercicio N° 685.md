@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 685
-etapa: amplicar
+etapa: ampliar
 ---
 # Enunciado
 ---
