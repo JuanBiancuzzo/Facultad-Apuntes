@@ -32,7 +32,9 @@ Dado los [[ingeniería electrónica/robótica móvil/Repaso álgebra/Vector|vers
 | $\hat{x} ~ \hat{z} ~ \hat{x}$ | $\hat{x} ~ \hat{z} ~ \hat{y}$ |
 | $\hat{x} ~ \hat{y} ~ \hat{x}$ | $\hat{y} ~ \hat{x} ~ \hat{z}$ |
 
-Tomando la convensión de $\hat{z} ~ \hat{y} ~ \hat{z}$, por lo tanto se puede representar estos ángulos de Euler como la matriz de rotación $$ R( \varphi, \theta, \psi ) = R(\hat{z},~ \varphi) ~ R(\hat{y},~ \theta) ~ R(\hat{z},~ \psi) $$
+## Ángulos de Euler ZYZ
+---
+Usando $\hat{z} ~ \hat{y} ~ \hat{z}$, por lo tanto se puede representar estos ángulos de Euler como la matriz de rotación $$ R( \varphi, \theta, \psi ) = R(\hat{z},~ \varphi) ~ R(\hat{y},~ \theta) ~ R(\hat{z},~ \psi) $$
 En el caso de obtener de una matriz de rotación, los $3$ ángulos, se tiene $$ \begin{align}
 	\theta &= \arccos(R_{3,3}) \\
 	\varphi &= \arccos\left( \frac{R_{1,3}}{\sin\theta} \right) \\
@@ -46,3 +48,7 @@ De forma más robusta, se tiene $$ \begin{align}
 	\theta &= \text{atan}2\left( R_{1,3} ~ \cos\varphi + R_{2,3} ~ \sin\varphi,~ R_{3,3} \right) \\
 	\psi &= \text{atan}2\left( -R_{1,1} ~ \sin\varphi + R_{2,1} ~ \cos\varphi,~ -R_{1,2} ~ \sin\varphi + R_{2,2} ~ \cos\varphi \right) \\
 \end{align} $$
+
+## Ángulos de Tait-Bryan  XYZ
+---
+Usando $\hat{x} ~ \hat{y} ~ \hat{z}$, por lo tanto se puede representar estos ángulos de Tait-Bryan como la matriz de rotación $$ R( \varphi, \theta, \psi ) = R(\hat{z},~ \varphi) ~ R(\hat{y},~ \theta) ~ R(\hat{z},~ \psi) $$

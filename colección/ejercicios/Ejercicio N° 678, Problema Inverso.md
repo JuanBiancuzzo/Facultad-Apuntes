@@ -9,7 +9,7 @@ etapa: empezado
 ---
 # Enunciado
 ---
-Para el [[Robot Scara|robot Scara]] se pide
+Para el [[ingeniería electrónica/robótica industrial/Cinemática y estática/Robot SCARA|robot Scara]] se pide
 1. Resolver el [[investigación/animation/Cinemática inversa|problema inverso]] ^parte-1
 2. Establecer las condiciones que determinan si un punto distinto es alcanzable ^parte-2
 3. Expresar los indicadores de configuración ^parte-3

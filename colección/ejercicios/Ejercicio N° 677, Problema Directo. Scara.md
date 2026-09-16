@@ -9,7 +9,7 @@ etapa: empezado
 ---
 # Enunciado
 ---
-Para el [[Robot Scara|robot Scara]] se pide 
+Para el [[ingeniería electrónica/robótica industrial/Cinemática y estática/Robot SCARA|robot Scara]] se pide 
 1. Identificar los eslabones y las articulaciones ^parte-1
 2. Definir la tabla de parámetros [[Método de Denavit-Hartemberg|DH]] ^parte-2
 3. Obtener las [[ingeniería en informática/algebra 2/Transformaciones lineales/Rototranslación|matrices de transformación]] $A_{i - 1}^{i}$ ^parte-3

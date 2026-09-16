@@ -18,7 +18,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Este tipo de [[investigación/robótica/Robot|robot]] corresponden a un conjunto de [[colección/componentes/actuadores/Actuadores|actuadores]] en serie, donde el punto final del mismo es la suma de todos los acuadores 
+Este tipo de [[investigación/robótica/Robótica|robot]] corresponden a un conjunto de [[colección/componentes/actuadores/Actuadores|actuadores]] en serie, donde el punto final del mismo es la suma de todos los acuadores 
 
 ![[ingeniería electrónica/robótica industrial/Introducción/img/Robot en cadena abierta.png|500]]
 

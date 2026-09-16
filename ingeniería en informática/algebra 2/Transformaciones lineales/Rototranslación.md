@@ -2,7 +2,8 @@
 dia: 2026-08-31
 etapa: empezado
 referencias: []
-aliases: []
+aliases: 
+  - Matriz de rototranslación
 tags:
   - carrera/ingeniería-en-informática/algebra-2/Transformaciones-lineales
   - carrera/ingeniería-electrónica/algebra-2/Transformaciones-lineales
@@ -38,4 +39,8 @@ Se puede representar la rototranslación inversa como $$ \left( A_0^1 \right)^{-
 	\left( R_0^1 \right)^T & -\left( R_0^1 \right)^T \vec{p}_{01} \\
 	\vec{0}^T & 1
 \end{bmatrix}$$
+## Notación
+---
+Estas rototranslaciones las usaremos para describir la rototraslación entre $2$ [[ingeniería en informática/analisis 2/Nomenclatura/Sistema cartesiano|ternas]] por lo tanto usaremos la notación $$ A^1_0 $$ la cual refiere una rotatraslación de la terna $1$ vista desde el punto de vista de la terna $0$
 
+Esta notación nos permite interpretar las rotatraslaciones consecutivas entre ternas, y de forma general, se tiene $$ A^m_i = A^j_i ~ A^k_j ~ A^m_k $$ obteniendo la rotatraslación de la terna $m$ vista desde la terna $i$

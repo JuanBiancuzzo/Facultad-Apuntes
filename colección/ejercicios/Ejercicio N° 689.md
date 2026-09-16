@@ -8,7 +8,7 @@ etapa: empezado
 ---
 # Enunciado
 ---
-Una pieza está definida por `POSE_tool = [[0; 0; 100]; [cos(5°); 0; 0; -sin(5°)]]`, que expresa la [[Traslación|posición]] y [[ingeniería en informática/algebra 2/Transformaciones lineales/Rotación|orientación]] de la [[ingeniería en informática/analisis 2/Nomenclatura/Sistema cartesiano|terna]] $\text{tool}$ respecto de la $\text{tool}0$ ubicada en la brida de montaje del [[investigación/robótica/Robot|robot]] 
+Una pieza está definida por `POSE_tool = [[0; 0; 100]; [cos(5°); 0; 0; -sin(5°)]]`, que expresa la [[Traslación|posición]] y [[ingeniería en informática/algebra 2/Transformaciones lineales/Rotación|orientación]] de la [[ingeniería en informática/analisis 2/Nomenclatura/Sistema cartesiano|terna]] $\text{tool}$ respecto de la $\text{tool}0$ ubicada en la brida de montaje del [[investigación/robótica/Robótica|robot]] 
 
 La [[colección/data structures/Estructura de datos|estructura de datos]] para definir la [[ingeniería electrónica/robótica móvil/Repaso álgebra/Pose|pose]] tiene en el primer componente un [[ingeniería en informática/algo 1/Lenguaje C/Array|vector]] (traslación) y el segundo un [[ingeniería electrónica/robótica industrial/Sistema de referencias/Cuaternión|cuaternión]] (rotación)
 

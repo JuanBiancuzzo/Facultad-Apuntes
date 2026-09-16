@@ -17,7 +17,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-La pose (posición y orientación) de un [[investigación/robótica/Robot|robot]] es la [[ingeniería en informática/algebra 2/Transformaciones lineales/Transformación lineal|transformación]] [[Rototranslación|rototranslacional]] dada por la posición y orientación del robot en el espación 
+La pose (posición y orientación) de un [[investigación/robótica/Robótica|robot]] es la [[ingeniería en informática/algebra 2/Transformaciones lineales/Transformación lineal|transformación]] [[Rototranslación|rototranslacional]] dada por la posición y orientación del robot en el espación 
 
 Esta pose es una transformación que toma elementos en coordenadas del robot y los devuelve en coordenadas del mundo
 

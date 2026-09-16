@@ -1,4 +1,4 @@
-# Mind Side Quest
+# Énouement
 ---
 Voy a ir poniendo mis apuntes acá, y estoy usando [Obsidian](https://obsidian.md) para escribir y crear los vínculos entre las páginas por lo que es recomendable para poder navegar los apuntes.
 
@@ -123,7 +123,7 @@ Para eso usaré obsidian, y pdfs, donde en obsidian todo sería archivos markdow
 | [Reglas APA](investigación/reglas%20APA/Reglas%20APA.md)                                                                   | Falta resumir                                                                                                                                                                                    |
 | [Rendering](investigación/rendering/Rendering.md)                                                                          | Falta resumir                                                                                                                                                                                    |
 | [Rendering Engine](investigación/rendering/Rendering%20Engine.md)                                                          | Sin empezar                                                                                                                                                                                      |
-| [Robótica](investigación/robótica/Robótica.md)                                                                             | Sin empezar                                                                                                                                                                                      |
+| [Robótica](investigación/robótica/Robótica.md)                                                                             | Empezando con el contenido de la facultad                                                                                                                                                        |
 | [Storytelling](investigación/storytelling/Storytelling.md)                                                                 | Falta resumir                                                                                                                                                                                    |
 | [Testing](investigación/testing/Testing.md)                                                                                | Sin empezar                                                                                                                                                                                      |
 ## Proyectos

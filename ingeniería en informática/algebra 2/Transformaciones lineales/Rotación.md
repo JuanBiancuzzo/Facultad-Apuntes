@@ -39,7 +39,7 @@ Para $3$ dimensiones, con los versores $\hat{x}$, $\hat{y}$ y $\hat{z}$ existen 
 \end{bmatrix} ~~~~ R(\hat{z},~ \theta) = \begin{bmatrix} 
     \cos \theta & -\sin \theta & 0 \\ \sin \theta & \cos \theta & 0 \\ 0 & 0 & 1 
 \end{bmatrix} $$
-De manera arbitraria, se puede tener un eje $\vec{k} = \begin{bmatrix} k_x & k_y & k_z \end{bmatrix}^T$  y un ángulo de rotación $\theta$, se tiene expresandola como la suma entre una [[Matriz simétrica|matriz simétrica]] y [[Matriz simétrica|matriz antisimétrica]] $$ \begin{align}
+De manera arbitraria, se puede tener un eje $\vec{k} = \begin{bmatrix} k_x & k_y & k_z \end{bmatrix}^T$  donde $\lVert \vec{k} \rVert^2 = 1$y un ángulo de rotación $\theta$, se tiene expresandola como la suma entre una [[Matriz simétrica|matriz simétrica]] y [[Matriz simétrica|matriz antisimétrica]] $$ \begin{align}
 	R(\vec{k},~ \theta) =& \begin{bmatrix}
 		k_x k_x (1 - \cos\theta) + \cos\theta &
 		k_x k_y (1 - \cos\theta) &
@@ -72,6 +72,12 @@ En el caso de obtener de una matriz de rotación, y querer obtener $\theta$ y $\
 \end{align} $$donde se toma que $R_{i,j}$ donde $i$ es la fila (empezando en $1$) y $j$ es la columna (nuevamente, empezando en $1$)
 
 Notemos que existe una [[ingeniería electrónica/analisis 3/Series de Laurent/Singularidad|singularidad]] cuando $\theta = 0$, donde la matriz esta dada por la [[Matriz identidad|identidad]] y el versor $\vec{k}$ puede ser cualquiera
+
+## Notación
+---
+Estas rotaciones las usaremos para describir la rotación entre $2$ [[ingeniería en informática/analisis 2/Nomenclatura/Sistema cartesiano|ternas]] por lo tanto usaremos la notación $$ R^1_0 $$ la cual refiere una rotación de la terna $1$ vista desde el punto de vista de la terna $0$
+
+Esta notación nos permite interpretar rotaciones consecutivas entre ternas, y de forma general, se tiene $$ R^m_i = R^j_i ~ R^k_j ~ R^m_k $$ obteniendo la rotación de la terna $m$ vista desde la terna $i$
 
 ## Propiedades
 ---

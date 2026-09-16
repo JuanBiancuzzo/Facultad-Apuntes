@@ -9,7 +9,7 @@ etapa: empezado
 ---
 # Enunciado
 ---
-1. Para un [[Robot Scara|robot Scara]] con $a_1 = a_2 = a$ obtener las $2$ soluciones que llevan al punto $$ \text{POSE}_1 = \left[ \begin{array}{ccc:c}
+1. Para un [[ingeniería electrónica/robótica industrial/Cinemática y estática/Robot SCARA|robot Scara]] con $a_1 = a_2 = a$ obtener las $2$ soluciones que llevan al punto $$ \text{POSE}_1 = \left[ \begin{array}{ccc:c}
 	   1 & 0 & 0 & a \\ 
 	   0 & 1 & 0 & a \\ 
 	   0 & 0 & 1 & 0 \\ \hdashline
