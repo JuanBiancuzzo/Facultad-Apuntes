@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 684
-etapa: empezado
+etapa: ampliar
 ---
 # Enunciado
 ---
@@ -18,3 +18,4 @@ Calcular el [[Traslación|desplazamiento]] que debo hacer para ir desde el orige
 
 # Resultado
 ---
+El resultado es $-1.585$

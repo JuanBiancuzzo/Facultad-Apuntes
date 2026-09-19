@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 692
-etapa: empezado
+etapa: ampliar
 ---
 # Enunciado
 ---
@@ -16,3 +16,4 @@ Si el eje de una rotación se define por $\vec{k} = \begin{bmatrix} 0.57735 & 0.
 
 # Resultado
 ---
+La respuesta es $-0.2128$

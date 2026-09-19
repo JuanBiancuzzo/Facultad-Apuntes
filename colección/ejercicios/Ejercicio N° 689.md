@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 689
-etapa: empezado
+etapa: ampliar
 ---
 # Enunciado
 ---
@@ -25,3 +25,4 @@ Se realiza una modificaciń en la placa de montaje a la brida de manera que la p
 
 # Resultado
 ---
+La respuesta correcta es el [[colección/ejercicios/Ejercicio N° 689#punto-3|punto 3]]

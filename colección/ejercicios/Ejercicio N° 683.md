@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 683
-etapa: empezado
+etapa: ampliar
 ---
 # Enunciado
 ---
@@ -32,3 +32,4 @@ Notas importantes:
 
 # Resultado
 ---
+Las respuestas correctas son los puntos: [[colección/ejercicios/Ejercicio N° 683#^parte-1|punto 1]], [[colección/ejercicios/Ejercicio N° 683#^parte-3|punto 3]] y [[colección/ejercicios/Ejercicio N° 683#^parte-5|punto 5]]

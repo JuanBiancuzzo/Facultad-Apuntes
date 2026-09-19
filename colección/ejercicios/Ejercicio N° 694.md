@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 694
-etapa: empezado
+etapa: ampliar
 ---
 # Enunciado
 ---
@@ -21,3 +21,4 @@ Hallar $\psi$ de los [[ingeniería electrónica/robótica industrial/Sistema de 
 
 # Resultado
 ---
+El resultado es $20.00$

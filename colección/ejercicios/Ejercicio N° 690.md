@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 690
-etapa: empezado
+etapa: ampliar
 ---
 # Enunciado
 ---
@@ -23,3 +23,4 @@ La definición en expresar la [[ingeniería en informática/algebra 2/Transforma
 
 # Resultado
 ---
+La respuesta correcta es el [[colección/ejercicios/Ejercicio N° 690#^parte-1|punto 1]]

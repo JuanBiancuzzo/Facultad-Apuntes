@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 693
-etapa: empezado
+etapa: ampliar
 ---
 # Enunciado
 ---
@@ -16,3 +16,4 @@ Calcular el componente $x$ del vector $r = \begin{bmatrix} 10 & 5 & 15 \end{bmat
 
 # Resultado
 ---
+El resultado es $12.65$
