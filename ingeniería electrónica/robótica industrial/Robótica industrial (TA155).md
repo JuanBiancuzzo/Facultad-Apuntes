@@ -19,6 +19,7 @@ evaluaciones:
   - 14
   - 15
   - 16
+  - 17
 correlativas:
   - tipo: Materia
     materia: Taller de Automatización y Control
