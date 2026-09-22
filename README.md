@@ -145,7 +145,7 @@ Estos proyectos tienen una aplicación como resultado final
 | [Porfolio](proyecto%20práctico/porfolio/Porfolio.md)                                                                                                                            | Sin empezar                                    |
 | [Better animations in my humble opinion](proyecto%20práctico/better%20animations%20in%20my%20humble%20opinion/Better%20animations%20in%20my%20humble%20opinion.md)              | Sin empezar                                    |
 | [Obsidian Static Site Generator](proyecto%20práctico/obsidian%20static%20site%20generator/Obsidian%20Static%20Site%20Generator.md)                                              | Archivado, no se va a seguir con este proyecto |
-| [Own wiki](proyecto%20práctico/own%20wiki/Own%20wiki.md)                                                                                                                        | Haciendo el backend                            |
+| [Own wiki](proyecto%20práctico/own%20wiki/Own%20wiki.md)                                                                                                                        | Replanteando el proyecto, nuevamente           |
 
 ### Proyectos de investigación
 ---

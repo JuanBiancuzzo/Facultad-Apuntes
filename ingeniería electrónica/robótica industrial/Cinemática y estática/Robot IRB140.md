@@ -34,7 +34,7 @@ Con [[ingeniería electrónica/robótica industrial/Cinemática y estática/Cine
 
 Vamos a modificar esta table, donde por medio de $2$ nuevas [[ingeniería en informática/algebra 2/Transformaciones lineales/Rototranslación|matriz de rototranslación]] $A_\text{base}^0$ y $A_6^\text{tool}$, podemos simplicar la tabla de parámetros, signando $d_1 = d_6 = 0$, donde la matriz de base a la terna $0$ está dada por una traslación $T(\hat{z}_0,~ d_1)$ y la matriz de la terna $6$ a la tool por una translación $T(\hat{z}_5,~ d_4)$ 
 
-Con esta nueva tabla se tienen el [[ingeniería electrónica/robótica industrial/Cinemática y estática/Cinemática Directa|problema de cinemática directo]] resulto dando las matrices de rototranslación $$ \begin{align}
+Con esta nueva tabla se tienen el [[ingeniería electrónica/robótica industrial/Cinemática y estática/Cinemática directa|problema de cinemática directo]] resulto dando las matrices de rototranslación $$ \begin{align}
 	A_\text{base}^0 &= \begin{bmatrix}
 		1 & 0 & 0 & 0 \\
 		0 & 1 & 0 & 0 \\
