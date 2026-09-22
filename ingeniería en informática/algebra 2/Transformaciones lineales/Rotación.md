@@ -39,7 +39,9 @@ Para $3$ dimensiones, con los versores $\hat{x}$, $\hat{y}$ y $\hat{z}$ existen 
 \end{bmatrix} ~~~~ R(\hat{z},~ \theta) = \begin{bmatrix} 
     \cos \theta & -\sin \theta & 0 \\ \sin \theta & \cos \theta & 0 \\ 0 & 0 & 1 
 \end{bmatrix} $$
-De manera arbitraria, se puede tener un eje $\vec{k} = \begin{bmatrix} k_x & k_y & k_z \end{bmatrix}^T$  donde $\lVert \vec{k} \rVert^2 = 1$y un ángulo de rotación $\theta$, se tiene expresandola como la suma entre una [[Matriz simétrica|matriz simétrica]] y [[Matriz simétrica|matriz antisimétrica]] $$ \begin{align}
+De manera arbitraria, se puede tener un eje $\vec{k} = \begin{bmatrix} k_x & k_y & k_z \end{bmatrix}^T$  donde $\lVert \vec{k} \rVert^2 = 1$y un ángulo de rotación $\theta$, se tiene expresandola como la suma entre una [[Matriz simétrica|matriz simétrica]] y [[Matriz simétrica|matriz antisimétrica]] 
+
+$$ \begin{align}
 	R(\vec{k},~ \theta) =& \begin{bmatrix}
 		k_x k_x (1 - \cos\theta) + \cos\theta &
 		k_x k_y (1 - \cos\theta) &
@@ -57,6 +59,9 @@ De manera arbitraria, se puede tener un eje $\vec{k} = \begin{bmatrix} k_x & k_y
 		-k_y ~ \sin\theta & -k_x ~ \sin\theta & 0 \\
 	\end{bmatrix}
 \end{align} $$
+
+^expresion-versor-angulo
+
 También se puede ver como tiene la forma de la [[Formula de Rodrigues|formula de Rodrigues]] de forma matricial $$ R(\vec{k},~ \theta) = \underbrace{\cos\theta \mathbb{I} + (1 - \cos\theta) \vec{k} \vec{k}^T}_\text{simétrica} + \underbrace{\sin\theta ~ S(\vec{k})}_\text{antisimétrica} $$ ^rodrigues
 Donde $S(\vec{k})$ es la matriz antisimétrica del vector $\vec{k}$ dado por $$ S(\vec{k}) = \begin{bmatrix}
 	0 & -k_z & k_y \\
@@ -147,6 +152,9 @@ Nosotros queremos rotar nuestro plano $\mathbb{R}^2$ por un ángulo de $50.42\de
 	R \cdot \begin{bmatrix} 1 \\ 0 \end{bmatrix} &= ~~ ? \\
 	R \cdot \begin{bmatrix} 0 \\ 1 \end{bmatrix} &= ~~ ?
 \end{align} $$
+
+^4fd9d5
+
 Entonces veamos el caso $\begin{bmatrix} 1 \\ 0 \end{bmatrix}$
 
 ```tikz
