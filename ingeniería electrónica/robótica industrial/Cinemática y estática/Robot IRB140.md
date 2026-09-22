@@ -100,7 +100,7 @@ Para resolver el [[investigación/animation/Cinemática inversa|problema de cine
 	q_6 &= \text{atan2}\left( \text{conf}_3 ~ s'_z;~ -\text{conf}_3 ~ n'_z \right) \\
 \end{align} $$ donde $$ \begin{align} 
 	s_3 &= \frac{\left( p_x c_1 + p_y s_1 - a_1 \right)^2 + p_z^2 - \left( a_2^2 + d_4^2 \right)}{2 a_2 d_4} &
-	c_3 &= \text{conf}_2 ~ \sqrt{1 - c_3^2} \\
+	c_3 &= \text{conf}_2 ~ \sqrt{1 - s_3^2} \\
 	R_3^6(q_4,~ q_5,~ q_6) &= \begin{bmatrix}
 		n'_x & s'_x & a'_x \\
 		n'_y & s'_y & a'_y \\

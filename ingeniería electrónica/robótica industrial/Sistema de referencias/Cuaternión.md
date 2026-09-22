@@ -2,11 +2,12 @@
 dia: 2026-08-31
 etapa: empezado
 referencias: []
-aliases: []
+aliases:
+  - Quaternion
 tags:
   - carrera/ingeniería-electrónica/robótica-industrial/Sistema-de-referencias
   - nota/facultad
-ejercicios: 
+ejercicios:
   - 623
   - 624
 vinculoFacultad:
@@ -26,7 +27,7 @@ En el caso de una rotación, se puede expresar como un ángulo $\theta$ y una di
 
 Tiene la propiedad que la multiplicación de cuaterniones, representa la concatenación de rotaciones, ya sea utilizando la expresión vectorial, siendo $Q_1 = (g_1,~ \vec{q}_1)$ y $Q_2 = (g_2,~ \vec{q}_2)$ entonces $$ Q_1 \cdot Q_2 = (g_1 g_2 - \vec{q}_1 \cdot \vec{q}_2,~ g_1 ~ \vec{q}_2 + g_2 ~ \vec{q}_1 + \vec{q}_1 \times \vec{q}_2) $$
 Como también utilizando las relaciones $$ \begin{matrix}
-	ij = -ji = k  && jk = -kj = i && ki = -ik = j
+	ij = -ji = k && jk = -kj = i && ki = -ik = j
 \end{matrix} $$
 Donde si se busca tener la rotación de un vector $\vec{r}$, utilizando un cuaternión, se puede obtener de forma vectorial $$ \vec{r}' = \vec{r} + 2g ~ (\vec{q} \times \vec{r}) + 2 \vec{q} \times (\vec{q} \times \vec{r}) $$
 De esta forma, se puede generar la matriz de rotación utilizando los versores $\hat{x}$, $\hat{y}$ y $\hat{z}$, obteniendo $$ R(Q) = \begin{bmatrix}

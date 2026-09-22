@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 700
-etapa: empezado
+etapa: ampliar
 ---
 # Enunciado
 ---
@@ -34,3 +34,4 @@ Indicar cuáles de las siguientes afirmaciones son correctas
 
 # Resultado
 ---
+La respuesta correcta es el [[colección/ejercicios/Ejercicio N° 700#^parte-1|punto 1]]
