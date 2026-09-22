@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 701
-etapa: empezado
+etapa: ampliar
 ---
 # Enunciado
 ---
@@ -25,3 +25,4 @@ Calcular la [[Translación|posición]] en $\hat{y}$ alcanzada con el origen de l
 
 # Resultado
 ---
+El resultado es $-0.256$

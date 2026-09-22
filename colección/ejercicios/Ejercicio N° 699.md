@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 699
-etapa: empezado
+etapa: ampliar
 ---
 # Enunciado
 ---
@@ -33,3 +33,4 @@ Calcular el [[ingeniería en informática/numerico/Errores/Error absoluto|error 
 
 # Resultado
 ---
+El resultado es $0.0605$

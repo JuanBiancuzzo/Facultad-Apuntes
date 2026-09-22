@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 704
-etapa: empezado
+etapa: ampliar
 ---
 # Enunciado
 ---
@@ -25,3 +25,4 @@ Calcular la [[ingeniería en informática/algebra 2/Transformaciones lineales/Ro
 
 # Resultado
 ---
+El resultado es $-0.84$
