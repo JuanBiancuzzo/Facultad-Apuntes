@@ -28,21 +28,23 @@ La modulación permite adaptar el espectro de frecuencias del mensaje a transmit
 
 %% Reemplazar imagen por diagrama hecho por mi %%
 
-### Modulación de amplitud
+### Señal analógica
 ---
-Para [[Modulación analógica|modulaciones analógicas]], existen $4$ variantes de modulación de amplitud de la portadora
-1. [[Doble Banda Lateral - Portadora Suprimida|Doble Banda Lateral - Portadora Suprimida (DBL-PS)]]
-2. [[Doble Banda Lateral - Portadora Fuerte|Doble Banda Lateral - Portadora Fuerte (DBL-PF o AM)]]
-3. [[Banda Lateral Única|Banda Lateral Única (BLU)]]
-4. [[Banda Lateral Vestigial|Banda Lateral Vestigial (BLV)]]
+Para [[Modulación analógica|modulaciones analógicas]] se tiene
+* [[Doble Banda Lateral - Portadora Suprimida|Doble Banda Lateral - Portadora Suprimida (DBL-PS)]]
+* [[Doble Banda Lateral - Portadora Fuerte|Doble Banda Lateral - Portadora Fuerte (DBL-PF o AM)]]
+* [[Modulación de frecuencia|Modulación de frecuencia (FM)]]
+* [[Banda Lateral Única|Banda Lateral Única (BLU)]]
+* [[Banda Lateral Vestigial|Banda Lateral Vestigial (BLV)]]
 
 Para [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Modulación digital|modulaciones digitales]] se tiene
+* [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Amplitude Shift Keying|Amplitude Shift Keying (ASK)]]
+* [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Frequency Shift Keying|Frequency Shift Keying (FSK)]]
+* [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Phase Shift Keying|Phase Shift Keying (PSK)]]
+* [[ingeniería electrónica/taller de comunicaciones/Modulación digital/Quadrature Amplitud Modulation|Quadrature Amplitud Modulation (QAM)]]
 
-### Modulación de fase
+### Señal digital
 ---
-Existe una variante de modulación de fase de la portadora
-1. Modulación de fase
-
-### Modulación de frecuencia
----
-[[Modulación de frecuencia|Modulación de frecuencia (FM)]]
+Para modulación analógica, se tiene
+* [[ingeniería electrónica/embebidos/Estrategias de control de periféricos/Modulación por ancho de pulsos|Pulse Width Modulation (PWM)]]
+* [[Pulse Position Modulation (PPM)|Pulse Position Modulation (PPM)]]
