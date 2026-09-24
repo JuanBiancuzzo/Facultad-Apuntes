@@ -3,11 +3,10 @@ dia: 2024-10-15
 cuatri: 25C1
 codigo: TA053
 plan: 2023
-etapa: empezado
-estado: Estamos buscando información sobre el tema
+etapa: ampliar
+estado: Terminada el trabajo profesional, pero falta anotar lo definido
 tags:
   - proyecto/práctico
-  - carrera/ingeniería-en-informática/tpp
   - carrera/ingeniería-en-informática/tpp
   - proyecto/investigación
   - facultad/materia

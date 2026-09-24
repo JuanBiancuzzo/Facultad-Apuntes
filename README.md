@@ -38,35 +38,36 @@ Un listado de materias, sus códigos y su estado actual
 | [Taller de diseño de circuitos electrónicos](ingeniería%20electrónica/circuitos%202/Taller%20de%20diseño%20de%20circuitos%20electrónicos%20(TA138).md) | TA138  | Falta entrar en detalle en todas las secciones                                            |
 | [Taller de Procesamiento de Señales](ingeniería%20electrónica/taller%20de%20señales/Taller%20de%20Procesamiento%20de%20Señales%20(TA136).md)           | TA136  | Falta aprendizaje no supervisado y modelos bayesianos                                     |
 | [Taller de sistemas embebidos](ingeniería%20electrónica/embebidos/Taller%20de%20sistemas%20embebidos%20(TA134).md)                                     | TA134  | Falta terminar los protocolos y hacer la parte de sistemas operativos en tiempo real      |
+| [Tesis de Ingeniería Electrónica](ingeniería%20electrónica/tesis/Tesis%20de%20Ingeniería%20Electrónica.md)                                             | 6600   | Definiendo la propuesta                                                                   |
 
 ### Ingeniería en informática
 ---
 Un listado de materias, sus códigos y su estado actual
 
-| Materia                                                                                                                                     | Código | Estado                                              |
-| ------------------------------------------------------------------------------------------------------------------------------------------- | ------ | --------------------------------------------------- |
-| [Álgebra 2 A](ingeniería%20en%20informática/algebra%202/Álgebra%202%20A%20(6108).md)                                                        | 6108   | Falta terminar de pasar el resumen                  |
-| [Algoritmos y programación 1](ingeniería%20en%20informática/algo%201/Algoritmos%20y%20programación%201%20(7540).md)                         | 7540   | Terminado                                           |
-| [Algoritmos y programación 2](ingeniería%20en%20informática/algo%202/Algoritmos%20y%20programación%202%20(7541).md)                         | 7541   | Falta hacer el resumen                              |
-| [Algoritmos y programación 3](ingeniería%20en%20informática/algo%203/Algoritmos%20y%20programación%203%20(7507).md)                         | 7507   | Falta hacer el resumen                              |
-| [Análisis matemático 2 A](ingeniería%20en%20informática/analisis%202/Análisis%20matemático%202%20A%20(6103).md)                             | 6103   | Falta terminar de pasar el resumen                  |
-| [Análisis numérico](ingeniería%20en%20informática/numerico/Análisis%20numérico%20(7512).md)                                                 | 7512   | Falta pasar el resumen                              |
-| [Base de datos](ingeniería%20en%20informática/bdd/Base%20de%20datos%20(TA044).md)                                                           | TA044  | Falta ampliar                                       |
-| [Empresas de Bases Tecnológicas 1](ingeniería%20en%20informática/ebt%201/Empresas%20de%20Bases%20Tecnológicas%201%20(TC018).md)             | TC018  | Cursandola                                          |
-| [Estructura del computador](ingeniería%20en%20informática/estructura/Estructura%20del%20computador%20(6670).md)                             | 6670   | Terminado                                           |
-| [Física 1 A](ingeniería%20en%20informática/fisica%201/Física%201%20A%20(6201).md)                                                           | 6201   | Falta pasar el resumen                              |
-| [Física 2 A](ingeniería%20en%20informática/fisica%202/Física%202%20A%20(6203).md)                                                           | 6203   | Terminado                                           |
-| [Ingeniería de Software 1](ingeniería%20en%20informática/ingenieria%20de%20software%201/Ingeniería%20de%20Software%201%20(TA046).md)        | TA046  | Terminado                                           |
-| [Matemática discreta](ingeniería%20en%20informática/discreta/Matemática%20discreta%20(6107).md)                                             | 6107   | Terminado                                           |
-| [Organización de datos](ingeniería%20en%20informática/orga/Organización%20de%20datos%20(7506).md)                                           | 7506   | Falta pasar los videos de los últimos temas         |
-| [Probabilidad y estadística B](ingeniería%20en%20informática/proba/Probabilidad%20y%20estadística%20B%20(6109).md)                          | 6109   | Terminado                                           |
-| [Programación Concurrente](ingeniería%20en%20informática/concurrentes/Programación%20Concurrente%20(TB026).md)                              | TB026  | Cursandola                                          |
-| [Redes](ingeniería%20en%20informática/redes/Redes%20(TA048).md)                                                                             | TA048  | Terminado                                           |
-| [Sistemas Distribuidos 1](ingeniería%20en%20informática/distribuidos/Sistemas%20Distribuidos%201%20(TA050).md)                              | TA050  | Terminando la clase 10                              |
-| [Sistemas operativos](ingeniería%20en%20informática/sisop/Sistemas%20operativos%20(7508).md)                                                | 7508   | Terminado                                           |
-| [Taller de programación 1](ingeniería%20en%20informática/taller/Taller%20de%20programación%201%20(9508).md)                                 | 9508   | Falta pasar las presentaciones de los últimos temas |
-| [Taller de seguridad informática](ingeniería%20en%20informática/taller%20de%20seguridad/Taller%20de%20seguridad%20informática%20(TA051).md) | TA051  | Curso el proximo cuatrimestre                       |
-| [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md) | TA053  | Estamos buscando información sobre el tema          |
+| Materia                                                                                                                                     | Código | Estado                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | ------ | --------------------------------------------------------------- |
+| [Álgebra 2 A](ingeniería%20en%20informática/algebra%202/Álgebra%202%20A%20(6108).md)                                                        | 6108   | Falta terminar de pasar el resumen                              |
+| [Algoritmos y programación 1](ingeniería%20en%20informática/algo%201/Algoritmos%20y%20programación%201%20(7540).md)                         | 7540   | Terminado                                                       |
+| [Algoritmos y programación 2](ingeniería%20en%20informática/algo%202/Algoritmos%20y%20programación%202%20(7541).md)                         | 7541   | Falta hacer el resumen                                          |
+| [Algoritmos y programación 3](ingeniería%20en%20informática/algo%203/Algoritmos%20y%20programación%203%20(7507).md)                         | 7507   | Falta hacer el resumen                                          |
+| [Análisis matemático 2 A](ingeniería%20en%20informática/analisis%202/Análisis%20matemático%202%20A%20(6103).md)                             | 6103   | Falta terminar de pasar el resumen                              |
+| [Análisis numérico](ingeniería%20en%20informática/numerico/Análisis%20numérico%20(7512).md)                                                 | 7512   | Falta pasar el resumen                                          |
+| [Base de datos](ingeniería%20en%20informática/bdd/Base%20de%20datos%20(TA044).md)                                                           | TA044  | Falta ampliar                                                   |
+| [Empresas de Bases Tecnológicas 1](ingeniería%20en%20informática/ebt%201/Empresas%20de%20Bases%20Tecnológicas%201%20(TC018).md)             | TC018  | Cursandola                                                      |
+| [Estructura del computador](ingeniería%20en%20informática/estructura/Estructura%20del%20computador%20(6670).md)                             | 6670   | Terminado                                                       |
+| [Física 1 A](ingeniería%20en%20informática/fisica%201/Física%201%20A%20(6201).md)                                                           | 6201   | Falta pasar el resumen                                          |
+| [Física 2 A](ingeniería%20en%20informática/fisica%202/Física%202%20A%20(6203).md)                                                           | 6203   | Terminado                                                       |
+| [Ingeniería de Software 1](ingeniería%20en%20informática/ingenieria%20de%20software%201/Ingeniería%20de%20Software%201%20(TA046).md)        | TA046  | Terminado                                                       |
+| [Matemática discreta](ingeniería%20en%20informática/discreta/Matemática%20discreta%20(6107).md)                                             | 6107   | Terminado                                                       |
+| [Organización de datos](ingeniería%20en%20informática/orga/Organización%20de%20datos%20(7506).md)                                           | 7506   | Falta pasar los videos de los últimos temas                     |
+| [Probabilidad y estadística B](ingeniería%20en%20informática/proba/Probabilidad%20y%20estadística%20B%20(6109).md)                          | 6109   | Terminado                                                       |
+| [Programación Concurrente](ingeniería%20en%20informática/concurrentes/Programación%20Concurrente%20(TB026).md)                              | TB026  | Cursandola                                                      |
+| [Redes](ingeniería%20en%20informática/redes/Redes%20(TA048).md)                                                                             | TA048  | Terminado                                                       |
+| [Sistemas Distribuidos 1](ingeniería%20en%20informática/distribuidos/Sistemas%20Distribuidos%201%20(TA050).md)                              | TA050  | Terminando la clase 10                                          |
+| [Sistemas operativos](ingeniería%20en%20informática/sisop/Sistemas%20operativos%20(7508).md)                                                | 7508   | Terminado                                                       |
+| [Taller de programación 1](ingeniería%20en%20informática/taller/Taller%20de%20programación%201%20(9508).md)                                 | 9508   | Falta pasar las presentaciones de los últimos temas             |
+| [Taller de seguridad informática](ingeniería%20en%20informática/taller%20de%20seguridad/Taller%20de%20seguridad%20informática%20(TA051).md) | TA051  | Curso el proximo cuatrimestre                                   |
+| [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md) | TA053  | Terminada el trabajo profesional, pero falta anotar lo definido |
 
 ### Licenciatura en Ciencias de Datos
 ---
@@ -134,29 +135,31 @@ Un listado de los proyectos y su estado actual
 ---
 Estos proyectos tienen una aplicación como resultado final
 
-| Proyecto                                                                                                                                                                        | Estado                                         |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
-| [8-bit computer](proyecto%20práctico/8-bit%20computer/8-bit%20computer.md)                                                                                                      | Empezando por la ALU                           |
-| [PhADAR](proyecto%20práctico/PhADAR/PhADAR.md)                                                                                                                                  | En etapa de investigación                      |
-| [Sistema operativo distribuido](proyecto%20práctico/os-distribuido/Sistema%20operativo%20distribuido.md)                                                                        | sin-empezar                                    |
-| [Overengineered drone](proyecto%20práctico/overengineered%20drone/Overengineered%20drone.md)                                                                                    | Planeamiento el proyecto                       |
-| [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)                                     | Estamos buscando información sobre el tema     |
-| [Primer proyecto de robótica - Auto remoto](proyecto%20práctico/primer%20proyecto%20de%20robótica%20-%20auto%20remoto/Primer%20proyecto%20de%20robótica%20-%20Auto%20remoto.md) | Terminado                                      |
-| [Porfolio](proyecto%20práctico/porfolio/Porfolio.md)                                                                                                                            | Sin empezar                                    |
-| [Better animations in my humble opinion](proyecto%20práctico/better%20animations%20in%20my%20humble%20opinion/Better%20animations%20in%20my%20humble%20opinion.md)              | Sin empezar                                    |
-| [Obsidian Static Site Generator](proyecto%20práctico/obsidian%20static%20site%20generator/Obsidian%20Static%20Site%20Generator.md)                                              | Archivado, no se va a seguir con este proyecto |
-| [Own wiki](proyecto%20práctico/own%20wiki/Own%20wiki.md)                                                                                                                        | Replanteando el proyecto, nuevamente           |
+| Proyecto                                                                                                                                                                        | Estado                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| [Tesis de Ingeniería Electrónica](ingeniería%20electrónica/tesis/Tesis%20de%20Ingeniería%20Electrónica.md)                                                                      | Definiendo la propuesta                                         |
+| [8-bit computer](proyecto%20práctico/8-bit%20computer/8-bit%20computer.md)                                                                                                      | Empezando por la ALU                                            |
+| [PhADAR](proyecto%20práctico/PhADAR/PhADAR.md)                                                                                                                                  | En etapa de investigación                                       |
+| [Overengineered drone](proyecto%20práctico/overengineered%20drone/Overengineered%20drone.md)                                                                                    | Planeamiento el proyecto                                        |
+| [Sistema operativo distribuido](proyecto%20práctico/os-distribuido/Sistema%20operativo%20distribuido.md)                                                                        | sin-empezar                                                     |
+| [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)                                     | Terminada el trabajo profesional, pero falta anotar lo definido |
+| [Primer proyecto de robótica - Auto remoto](proyecto%20práctico/primer%20proyecto%20de%20robótica%20-%20auto%20remoto/Primer%20proyecto%20de%20robótica%20-%20Auto%20remoto.md) | Terminado                                                       |
+| [Porfolio](proyecto%20práctico/porfolio/Porfolio.md)                                                                                                                            | Sin empezar                                                     |
+| [Better animations in my humble opinion](proyecto%20práctico/better%20animations%20in%20my%20humble%20opinion/Better%20animations%20in%20my%20humble%20opinion.md)              | Sin empezar                                                     |
+| [Obsidian Static Site Generator](proyecto%20práctico/obsidian%20static%20site%20generator/Obsidian%20Static%20Site%20Generator.md)                                              | Archivado, no se va a seguir con este proyecto                  |
+| [Own wiki](proyecto%20práctico/own%20wiki/Own%20wiki.md)                                                                                                                        | Replanteando el proyecto, nuevamente                            |
 
 ### Proyectos de investigación
 ---
 Estos proyectos tienen como objetivo investigar y crear pruebas para llegar a un resultado
 
-| Proyecto                                                                                                                                                                       | Estado                                     |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------ |
-| [Ray Marching con a diagramas de Voronói](proyecto%20investigación/ray%20marching%20con%20a%20diagramas%20de%20voronói/Ray%20Marching%20con%20a%20diagramas%20de%20Voronói.md) | Sin empezar                                |
-| [Ray Marching con A estrella](proyecto%20investigación/ray%20marching%20con%20a-estrella/Ray%20Marching%20con%20A%20estrella.md)                                               | Sin empezar                                |
-| [Lagrangian Physics Engine](proyecto%20investigación/lagrangian%20physics%20engine/Lagrangian%20Physics%20Engine.md)                                                           | Sin empezar                                |
-| [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)                                    | Estamos buscando información sobre el tema |
+| Proyecto                                                                                                                                                                       | Estado                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------- |
+| [Tesis de Ingeniería Electrónica](ingeniería%20electrónica/tesis/Tesis%20de%20Ingeniería%20Electrónica.md)                                                                     | Definiendo la propuesta                                         |
+| [Ray Marching con a diagramas de Voronói](proyecto%20investigación/ray%20marching%20con%20a%20diagramas%20de%20voronói/Ray%20Marching%20con%20a%20diagramas%20de%20Voronói.md) | Sin empezar                                                     |
+| [Ray Marching con A estrella](proyecto%20investigación/ray%20marching%20con%20a-estrella/Ray%20Marching%20con%20A%20estrella.md)                                               | Sin empezar                                                     |
+| [Lagrangian Physics Engine](proyecto%20investigación/lagrangian%20physics%20engine/Lagrangian%20Physics%20Engine.md)                                                           | Sin empezar                                                     |
+| [Trabajo Profesional de Ingeniería Informática](ingeniería%20en%20informática/tpp/Trabajo%20Profesional%20de%20Ingeniería%20Informática.md)                                    | Terminada el trabajo profesional, pero falta anotar lo definido |
 
 ### Cursos
 ---
