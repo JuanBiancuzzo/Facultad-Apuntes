@@ -18,12 +18,29 @@ nombreCarrera: Ingeniería en informática
 referencias: 
   - "1169"
   - "1183"
-evaluaciones: []
+evaluaciones: 
+  - 18
+  - 19
 ---
 # Apuntes
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
+```
+
+## Resumen
+---
+ 
+# Guías
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/contenido/guiasAcumuladas", { archivo: dv.current() });
+```
+
+# Evaluaciones
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/contenido/evaluacionesAcumuladas", { archivo: dv.current() });
 ```
 
 # Bibliografía
