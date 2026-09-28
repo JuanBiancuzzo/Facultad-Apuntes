@@ -24,7 +24,7 @@ vinculoFacultad:
 ---
 La cinemática, es el estudio del movimiento sin tener en cuenta las causas. En general, sin la descripción de la geometría del movimiento
 
-En el ambito de la [[investigación/robótica/Robótica|robótica]], utilizando la simplificación de que un robot es la unión de eslabónes unidos por [[ingeniería electrónica/robótica industrial/Cinemática y estática/Articulación#^articulacion-simple|articulaciones simples]], representando cada eslabón con su propia [[ingeniería en informática/analisis 2/Nomenclatura/Sistema cartesiano|terna]] y un eje dado por cada articulación 
+En el ambito de la [[investigación/robótica/Robótica|robótica]], utilizando la simplificación de que un robot es la unión de eslabónes unidos por [[ingeniería electrónica/robótica industrial/Cinemática y estática/Articulación#^articulacion-simple|articulaciones simples]], representando cada eslabón con su propia [[ingeniería en informática/analisis 2/Nomenclatura/Sistema cartesiano|terna]] y un eje dado por cada articulación
 
 ## Asignación de ternas
 ---
@@ -89,3 +89,7 @@ Multiplicando estas $4$ matrices, obtenemos la forma genérica de expresar la re
 		0 & 0 & 0 & 1 \\
 	\end{bmatrix}
 \end{align} $$
+
+## Velocidades
+---
+Recordando que tomamos a los eslabones como cuerpos rígidos, podemos expresar para cualquier punto del mismo su velocidad como $$ v_p = v_0 + \omega \times (p - o) $$ donde la velocidad angular estaría dado por $\omega$ que es igual en todo punto del cuerpo

@@ -30,6 +30,7 @@ vinculoFacultad:
 En [[investigación/animation/Animación|animación]] y en [[investigación/robótica/Robótica|robótica]], IK es un proceso matemático para calcular los parámetros de una unión entre huesos de un [[Skeleton for animation (Esquelo para animar)|esqueleto]] para que la cadena de huesos termine en el lugar deseado. Esto puede ser manipular un robot o el esqueleto de un personaje
 
 Hablando desde el lado de robótica, se utiiza la pose del [[End-effector|end-effector]], y en animación sería la parte del esqueleto que se quiera ubicar. En ambos casos usaremos una pose como punto final, y buscaremos las variables articulables, que llamaremos $q$ tal que por [[ingeniería electrónica/robótica industrial/Cinemática y estática/Cinemática directa|cinemática directa]] nos de la pose que buscamos, de otra forma, si $\text{POSE} = f(q)$ entonces $$ q = f^{-1}(\text{POSE}) $$
+Donde un pequeño desplazamiento en las coordenadas articulares $\delta q$ produce un incremento en $\delta A$, es decir en posición $\delta p$ y $\delta R$, y por lo tanto podemos expresar la solución invesa como $$ \dot{q} = \begin{bmatrix} J_v(q) \\ J_\omega(q) \end{bmatrix}^{-1} ~ \begin{bmatrix} v \\ \omega \end{bmatrix} $$ donde $J$ representa el [[ingeniería en informática/analisis 2/Funciones de varias variables/Jacobiana|Jacobiano]], y suponiendo que es inversible
 
 ## Soluciones analíticas
 ---

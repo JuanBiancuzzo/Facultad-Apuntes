@@ -32,6 +32,7 @@ El end-effector lo podemos representar con una [[ingeniería electrónica/robót
 epresentando cada eslabón con su propia [[ingeniería en informática/analisis 2/Nomenclatura/Sistema cartesiano|terna]], podemos representar su movimiento por [[ingeniería en informática/algebra 2/Transformaciones lineales/Rototranslación|matrices de rototranslación]], tomando que la base la llamaremos eslabón $0$ y la tool el eslabón $n$, podemos representar el problema directo como $$ 
 	A_\text{base}^\text{tool} = A_0^1(q_1) \cdot A_1^2(q_2) \cdots A_{n-1}^n(q_n)
  $$
+Donde un pequeño desplazamiento en las coordenadas articulares $\delta q$ produce un incremento en $\delta A$, es decir en posición $\delta p$ y $\delta R$, y por lo tanto podemos expresar $$ \begin{bmatrix} v \\ \omega \end{bmatrix} = \begin{bmatrix} J_v(q) \\ J_\omega(q) \end{bmatrix} ~ \dot{q} $$ donde $J$ representa el [[ingeniería en informática/analisis 2/Funciones de varias variables/Jacobiana|Jacobiano]]
 
 # Referencias
 ---
