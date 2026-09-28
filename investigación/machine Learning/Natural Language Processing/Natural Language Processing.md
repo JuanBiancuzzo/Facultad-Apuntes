@@ -9,6 +9,7 @@ tags:
   - nota/investigacion
 aliases:
   - NLP
+  - Procesamiento de Lenguaje Natural
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });
