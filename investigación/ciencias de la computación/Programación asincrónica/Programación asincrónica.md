@@ -5,6 +5,11 @@ tags:
   - investigación/índice
   - nota/investigacion
 estado: Sin empezar
+vinculoFacultad:
+  - tema: Programación Asincrónica
+    capitulo: 3
+    materia: Programación Concurrente
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

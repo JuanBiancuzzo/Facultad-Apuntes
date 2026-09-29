@@ -4,6 +4,11 @@ tags:
   - investigación/índice
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust/rayon
 estado: Falta resumir
+vinculoFacultad:
+  - tema: Fork join
+    capitulo: 2
+    materia: Programación Concurrente
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

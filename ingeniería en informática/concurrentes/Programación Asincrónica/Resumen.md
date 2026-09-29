@@ -1,14 +1,16 @@
 ---
-capitulo: 4
+capitulo: 3
 tags:
-  - carrera/ingeniería-en-informática/concurrentes/Programación-Asincrónica
   - investigación/ciencias-de-la-computación/Programación-asincrónica
   - facultad/resumen
+  - carrera/ingeniería-en-informática/concurrentes/Programación-Asincrónica
 nombreResumen: Programación Asincrónica
 materiaResumen: ingeniería en informática/concurrentes/Programación Concurrente (TB026).md
 infoTemaMateria:
   materia: Programación Concurrente
   carrera: Ingeniería en informática
+referencias:
+  - "1226"
 ---
 # Índice
 ---

@@ -4,11 +4,11 @@ etapa: empezado
 referencias: []
 aliases: []
 tags:
-  - carrera/ingeniería-en-informática/concurrentes/Fork-join
   - nota/facultad
+  - carrera/ingeniería-en-informática/concurrentes/Fork-join
 vinculoFacultad:
   - tema: Fork join
-    capitulo: 3
+    capitulo: 2
     materia: Programación Concurrente
     carrera: Ingeniería en informática
 ---
