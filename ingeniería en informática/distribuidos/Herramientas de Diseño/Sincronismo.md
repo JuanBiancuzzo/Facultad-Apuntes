@@ -23,7 +23,7 @@ Los términos sincrónico/asincrónico dependen del contexto
 
 ### Ejecución de eventos
 ---
-Este es el caso de la [[Sincronización de un programa multithreading|sincronización entre programas multithreading]], donde 
+Este es el caso de la [[ingeniería en informática/sisop/Concurrencia/Sincronización de un programa concurrente|sincronización entre programas multithreading]], donde 
 * Sincrónico implica bloqueante
 * Asincrónico implica no bloqueante
 

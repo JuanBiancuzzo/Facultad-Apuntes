@@ -1,5 +1,5 @@
 ---
-capitulo: 6
+capitulo: 7
 tags:
   - carrera/ingeniería-en-informática/concurrentes/Redes-de-Petri
   - facultad/resumen

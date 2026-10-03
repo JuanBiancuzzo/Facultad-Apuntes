@@ -1,5 +1,5 @@
 ---
-capitulo: 8
+capitulo: 6
 tags:
   - carrera/ingeniería-en-informática/concurrentes/Channels-y-Actors
   - facultad/resumen

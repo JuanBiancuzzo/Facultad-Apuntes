@@ -1,13 +1,18 @@
 ---
-capitulo: 7
+capitulo: 5
 tags:
-  - carrera/ingeniería-en-informática/concurrentes/Semaphores-y-Barriers-Condvars
   - facultad/resumen
-nombreResumen: Semaphores y Barriers Condvars
+  - carrera/ingeniería-en-informática/concurrentes/Semaphores-Barriers-y-Condvars
+nombreResumen: Semaphores, Barriers y Condvars
 materiaResumen: ingeniería en informática/concurrentes/Programación Concurrente (TB026).md
 infoTemaMateria:
   materia: Programación Concurrente
   carrera: Ingeniería en informática
+referencias:
+  - "1175"
+  - "1259"
+  - "1176"
+  - "1261"
 ---
 # Índice
 ---

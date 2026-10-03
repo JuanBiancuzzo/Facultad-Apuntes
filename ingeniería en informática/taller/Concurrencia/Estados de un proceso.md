@@ -4,12 +4,17 @@ tags:
   - carrera/ingeniería-electrónica/taller/Concurrencia
   - carrera/ingeniería-en-informática/taller/Concurrencia
   - nota/facultad
+  - carrera/ingeniería-en-informática/concurrentes/Sincronización
 aliases:
   - Proceso bloqueado#Blocked
 vinculoFacultad:
   - tema: Concurrencia
     capitulo: 4
     materia: Taller de programación 1
+    carrera: Ingeniería en informática
+  - tema: Sincronización
+    capitulo: 4
+    materia: Programación Concurrente
     carrera: Ingeniería en informática
 ---
 # Definición

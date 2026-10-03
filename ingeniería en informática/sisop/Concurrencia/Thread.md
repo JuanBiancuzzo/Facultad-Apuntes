@@ -13,6 +13,7 @@ tags:
 aliases:
   - Multithreading
   - Multihilos
+  - Hilo
   - POSIX Threads#Representación en C
 etapa: ampliar
 vinculoFacultad:

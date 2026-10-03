@@ -1,13 +1,17 @@
 ---
-capitulo: 5
+capitulo: 4
 tags:
-  - carrera/ingeniería-en-informática/concurrentes/Sincronización
   - facultad/resumen
+  - carrera/ingeniería-en-informática/concurrentes/Sincronización
 nombreResumen: Sincronización
 materiaResumen: ingeniería en informática/concurrentes/Programación Concurrente (TB026).md
 infoTemaMateria:
   materia: Programación Concurrente
   carrera: Ingeniería en informática
+referencias:
+  - "1170"
+  - "1171"
+  - "1238"
 ---
 # Índice
 ---
