@@ -7,8 +7,8 @@ estado: Falta resumir
 aliases:
   - Crate Std-Semaphore
 vinculoFacultad:
-  - tema: Semaphores, Barriers y Condvars
-    capitulo: 5
+  - tema: Sincronización
+    capitulo: 4
     materia: Programación Concurrente
     carrera: Ingeniería en informática
 ---
@@ -21,7 +21,7 @@ Se busca entender la [[colección/librerias/Librerias|librería]] `std-semaphore
 
 ## Resumen
 ---
- #carrera/ingeniería-en-informática/concurrentes/Semaphores-Barriers-y-Condvars
+ #carrera/ingeniería-en-informática/concurrentes/Sincronización
 
 ## Archivos
 ---

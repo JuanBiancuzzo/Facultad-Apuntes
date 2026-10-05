@@ -11,7 +11,10 @@ infoTemaMateria:
 referencias:
   - "1170"
   - "1171"
+  - "1175"
+  - "1176"
   - "1238"
+  - "1259"
 ---
 # Índice
 ---

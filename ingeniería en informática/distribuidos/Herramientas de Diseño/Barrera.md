@@ -11,8 +11,8 @@ vinculoFacultad:
     capitulo: 1
     materia: Sistemas Distribuidos 1
     carrera: Ingeniería en informática
-  - tema: Semaphores, Barriers y Condvars
-    capitulo: 5
+  - tema: Sincronización
+    capitulo: 4
     materia: Programación Concurrente
     carrera: Ingeniería en informática
 aliases:

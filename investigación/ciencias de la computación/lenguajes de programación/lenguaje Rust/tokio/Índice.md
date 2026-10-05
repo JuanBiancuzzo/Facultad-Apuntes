@@ -4,7 +4,7 @@ tags:
   - investigación/índice
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-Rust/tokio
 estado: Falta resumir
-aliases: Tokio
+aliases: Crate Tokio
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

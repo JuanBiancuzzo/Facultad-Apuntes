@@ -6,11 +6,11 @@ aliases:
   - CondVar
 tags:
   - nota/facultad
-  - carrera/ingeniería-en-informática/concurrentes/Semaphores-Barriers-y-Condvars
+  - carrera/ingeniería-en-informática/concurrentes/Sincronización
 ejercicios: []
 vinculoFacultad:
-  - tema: Semaphores, Barriers y Condvars
-    capitulo: 5
+  - tema: Sincronización
+    capitulo: 4
     materia: Programación Concurrente
     carrera: Ingeniería en informática
 ---
@@ -39,6 +39,8 @@ Esta tiene $3$ operaciones
 		}
 	}
 ```
+
+^op-signal
 
 * ```
 	void breadcast(&cond_var) {

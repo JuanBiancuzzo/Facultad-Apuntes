@@ -5,11 +5,11 @@ referencias: []
 aliases: []
 tags:
   - nota/facultad
-  - carrera/ingeniería-en-informática/concurrentes/Semaphores-Barriers-y-Condvars
+  - carrera/ingeniería-en-informática/concurrentes/Sincronización
 ejercicios: []
 vinculoFacultad:
-  - tema: Semaphores, Barriers y Condvars
-    capitulo: 5
+  - tema: Sincronización
+    capitulo: 4
     materia: Programación Concurrente
     carrera: Ingeniería en informática
 ---
@@ -32,7 +32,7 @@ Los procesos pueden tomar distintos estados
 * Ejecutando el monitor (con exlusión mutua, implica que solo un proceso lo ejecuta a la vez)
 * Bloqueado en [[First In First Out (FIFO)|FIFO]] de condition variables
 * Recién liberado del `wait`
-* Recién completó una operación de `signal`
+* Recién completó una operación de [[ingeniería en informática/concurrentes/Semaphores y Barriers Condvars/Condition Variables#^op-signal|signal]]
 
 ## Comparación con un semáforo
 ---

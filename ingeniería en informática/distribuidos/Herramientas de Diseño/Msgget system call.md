@@ -5,6 +5,7 @@ referencias:
 tags:
   - carrera/ingeniería-en-informática/distribuidos/Herramientas-de-Diseño
   - investigación/ciencias-de-la-computación/lenguajes-de-programación/lenguaje-c/System-call/Intercomunicación-entre-procesos-system-call
+  - carrera/ingeniería-en-informática/concurrentes/Channels-y-Actors
   - nota/facultad
   - nota/investigacion
 aliases:
@@ -13,6 +14,10 @@ vinculoFacultad:
   - tema: Herramientas de Diseño
     capitulo: 1
     materia: Sistemas Distribuidos 1
+    carrera: Ingeniería en informática
+  - tema: Channels y Actors
+    capitulo: 6
+    materia: Programación Concurrente
     carrera: Ingeniería en informática
 ---
 ```dataviewjs
@@ -27,4 +32,4 @@ El campo `mtype`
 * El sender debe enviar un mensaje con `mtype` $> 0$
 * El receptor con `mtype` $= 0$
 
-Los mensajes que fueron recibidos son eliminados de la [[Queue|queue]]
+Los mensajes enviados se guardan en una [[Queue|queue]] que puede ser con [[cursos/introduction to algorithms/Sorting and Trees/Priority Queue|queue con prioridad]]

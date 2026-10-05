@@ -1,6 +1,7 @@
 ---
 dia: 2026-07-30
 etapa: sin-empezar
+numReferencias: 1267
 tags:
   - referencia/paper
   - colección/archive/paper

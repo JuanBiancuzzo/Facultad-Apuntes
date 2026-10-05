@@ -8,7 +8,13 @@ vinculoFacultad:
     capitulo: 4
     materia: Análisis de la información
     carrera: Ingeniería en informática
+etapa: empezado
+referencias: []
+aliases: []
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
-Una entidad con algún tipo de comportamiento que interactúa con el [[Sistema]], como una persona, una organización u otros sistemas.
+Una entidad con algún tipo de comportamiento que interactúa con el [[ingeniería electrónica/señales/Señales y sistemas/Sistema|sistema]], como una persona, una organización u otros sistemas

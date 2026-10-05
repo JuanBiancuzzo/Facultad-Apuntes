@@ -20,7 +20,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Esta [[ingeniería en informática/analisis 2/Nomenclatura/Función#Expresión en Rust|función]] sincrónica que produce el valor final de una función [[investigación/ciencias de la computación/Programación asincrónica/Programación asincrónica|asincrónica]], esto en [[investigación/ciencias de la computación/lenguajes de programación/lenguaje Rust/Lenguaje Rust|Rust]] lo logra, iterativamente llamando a la [[ingeniería en informática/concurrentes/Programación Asincrónica/Tarea asincrónica|tarea asincrónica]] hasta que el [[ingeniería en informática/concurrentes/Programación Asincrónica/Future|Future]] devuelva `Poll<Self::Output>::Ready(output)`
+Esta [[ingeniería en informática/analisis 2/Nomenclatura/Función#Expresión en Rust|función]] sincrónica que produce el valor final de una función [[investigación/ciencias de la computación/Programación asincrónica/Programación asincrónica|asincrónica]], esto en [[investigación/ciencias de la computación/lenguajes de programación/lenguaje Rust/Lenguaje Rust|Rust]] lo logra, iterativamente llamando a la [[investigación/ciencias de la computación/Programación asincrónica/Programación asincrónica|tarea asincrónica]] hasta que el [[ingeniería en informática/concurrentes/Programación Asincrónica/Future|Future]] devuelva `Poll<Self::Output>::Ready(output)`
 
 ## Ejemplo
 ---

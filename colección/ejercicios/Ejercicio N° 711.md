@@ -8,7 +8,7 @@ etapa: empezado
 ---
 # Enunciado
 ---
-Modelar una [[Red de Petri|Red de Petri]] para el [[Problema del Lector-Escritor|problema del Lector-Escritor]] sin preferencia. Luego, modele una solución que contemple preferencia de escritura
+Modelar una [[Red de Petri|Red de Petri]] para el [[colección/ejercicios/Problema del lector-escritor|problema del Lector-Escritor]] sin preferencia. Luego, modele una solución que contemple preferencia de escritura
 
 # Resolución
 ---

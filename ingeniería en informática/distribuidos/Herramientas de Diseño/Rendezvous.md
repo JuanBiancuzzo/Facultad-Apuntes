@@ -16,7 +16,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Una rendezvous es un [[Mecanismo de sincronización|mecanismo de sincronización]] el cual bloquea un proceso hasta recibir un mensaje de otro proceso para compensar un procedimiento
+Una rendezvous es un [[ingeniería en informática/sisop/Concurrencia/Sincronización de un programa concurrente|mecanismo de sincronización]] el cual bloquea un proceso hasta recibir un mensaje de otro proceso para compensar un procedimiento
 
 ![[Rendezvous.png]]
 

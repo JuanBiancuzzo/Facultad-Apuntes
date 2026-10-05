@@ -30,7 +30,6 @@ Como dato de color, en [[Linux|linux]] todos los IPCs son vistos como diferentes
 ## Categorías
 ---
 Existen distintos mecanismos de comunicación entre procesos como
-* [[Semáforo|Semáforo]]
 * [[Shmget system call|Shared Memory]]
 * [[Flock system call|File lock]]
 * Hay multiples implementaciones del mecanismo de [[Rendezvous|rendezvous]]

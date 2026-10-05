@@ -7,6 +7,7 @@ referencias:
   - "865"
 tags:
   - carrera/ingeniería-en-informática/distribuidos/Fundamentos-de-Sistemas-Distribuidos
+  - carrera/ingeniería-en-informática/concurrentes/Channels-y-Actors
   - carrera/ingeniería-en-informática/tpp/Propuesta
   - investigación/ciencias-de-la-computación/Networking
   - investigación/networking
@@ -25,6 +26,10 @@ vinculoFacultad:
   - tema: Propuesta
     capitulo: 1
     materia: Trabajo Profesional de Ingeniería Informática
+    carrera: Ingeniería en informática
+  - tema: Channels y Actors
+    capitulo: 6
+    materia: Programación Concurrente
     carrera: Ingeniería en informática
 ---
 ```dataviewjs
@@ -45,7 +50,7 @@ A diferencia de ejecutar localmente un procedimiento, un RPC puede no ser ejecut
 ---
 Se tiene $4$ componentes
 1. Cliente
-    * Se encuentra conectado a un stub
+    * Se encuentra conectado a un [[Stub|stub]]
     * Realiza llamadas de forma transparente al [[Servidor|servidos]]
 2. Servidor
     * Se encuentra conectado a un stub del cual recibe parámetros
