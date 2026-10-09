@@ -681,6 +681,7 @@ module.exports = () => ({
             evaluacion: {
                 fecha: "fecha",
                 numero: "numero",
+                descripcion: "descripción",
                 ejercicios: "ejercicios",
             },
             ejercicio: {

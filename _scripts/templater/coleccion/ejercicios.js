@@ -24,6 +24,7 @@ class Evaluacion {
             .sort(ejercicio => ejercicio[this.configEjercicio.numero]);
 
         this.fecha = representacionPrevia[this.config.fecha];
+        this.descripcion = representacionPrevia[this.config.descripcion];
         if (this.config.ejercicios in representacionPrevia) {
             this.ejercicios = representacionPrevia[this.config.ejercicios];
 
@@ -89,6 +90,12 @@ class Evaluacion {
                     generarError.Quit("No se ingresó la fecha de la evaluacion")
                 );
                 break;
+
+            case this.config.descripcion:
+                this.descripcion = await generarPreguntas.prompt(
+                    "Descripción del tipo de evaluación",
+                    generarError.Quit("No se ingresó descripción de la evaluación"),
+                );
 
             case MODIFICAR_EJERCICIO:
                 await generarPreguntas.formulario(this.ejercicios[indice], "Modificar información del ejercicio");
@@ -186,6 +193,12 @@ class Evaluacion {
             : ` ${this.simbolos.agregar} Fecha de la evaluacion`
         );
 
+        opciones.push(this.config.descripcion);
+        valores.push(this.descripcion
+            ? ` ${this.simbolos.modificar} Modificar la descripción de la evaluación, donde era ${this.descripcion}`
+            : ` ${this.simbolos.agregar} ${this.simbolos.opcional} Descripción de la evaluación`
+        );
+
         for (let [indice, ejercicio] of this.ejercicios.entries()) {
             let descripcionEjercicio = ejercicio.titulo();
             opciones.push(`${MODIFICAR_EJERCICIO}-${indice}`);
@@ -215,6 +228,7 @@ class Evaluacion {
         return {
             [this.config.numero]: this.numero,
             [this.config.fecha]: this.fecha,
+            [this.config.descripcion]: this.descripcion,
             [this.config.ejercicios]: this.ejercicios
                 .map(ejercicio => ejercicio[this.configEjercicio.numero]),
         }
