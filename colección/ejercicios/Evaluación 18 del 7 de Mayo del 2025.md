@@ -4,6 +4,7 @@ tags:
   - colección/ejercicios/evaluacion
 numero: 18
 fecha: 2025-05-07
+descripción: Parcial
 ejercicios:
   - 705
   - 706

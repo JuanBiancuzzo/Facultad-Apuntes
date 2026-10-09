@@ -4,6 +4,7 @@ tags:
   - colección/ejercicios/evaluacion
 numero: 10
 fecha: 2026-02-18
+descripción: Final
 ejercicios:
   - 621
   - 622

@@ -4,6 +4,7 @@ tags:
   - colección/ejercicios/evaluacion
 numero: 19
 fecha: 2024-10-16
+descripción: Parcial
 ejercicios:
   - 710
   - 711

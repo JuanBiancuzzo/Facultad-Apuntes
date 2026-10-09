@@ -4,6 +4,7 @@ tags:
   - colección/ejercicios/evaluacion
 numero: 7
 fecha: 2026-05-18
+descripción: Parcial
 ejercicios:
   - 215
   - 613

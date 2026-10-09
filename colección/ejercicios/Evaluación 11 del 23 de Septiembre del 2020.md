@@ -4,6 +4,7 @@ tags:
   - colección/ejercicios/evaluacion
 numero: 11
 fecha: 2020-09-23
+descripción: Parcial
 ejercicios:
   - 663
   - 664

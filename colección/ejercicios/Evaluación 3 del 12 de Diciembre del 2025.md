@@ -4,6 +4,7 @@ tags:
   - colección/ejercicios/evaluacion
 numero: 3
 fecha: 2025-12-12
+descripción: Final
 ejercicios:
   - 218
   - 223

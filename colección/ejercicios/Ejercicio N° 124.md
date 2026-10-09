@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 124
-etapa: emepzado
+etapa: empezado
 ---
 # Enunciado
 ---

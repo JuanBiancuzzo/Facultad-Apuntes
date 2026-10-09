@@ -4,6 +4,7 @@ tags:
   - colección/ejercicios/evaluacion
 numero: 9
 fecha: 2026-08-07
+descripción: Final
 ejercicios:
   - 619
   - 620
