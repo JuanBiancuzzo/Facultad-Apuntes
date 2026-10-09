@@ -4,6 +4,7 @@ tags:
   - colección/ejercicios/evaluacion
 numero: 13
 fecha: 2026-08-29
+descripción: Cuestionario 1
 ejercicios:
   - 688
   - 689

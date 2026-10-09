@@ -4,6 +4,7 @@ tags:
   - colección/ejercicios/evaluacion
 numero: 17
 fecha: 2026-09-21
+descripción: Cuestionario 2
 ejercicios:
   - 703
   - 699

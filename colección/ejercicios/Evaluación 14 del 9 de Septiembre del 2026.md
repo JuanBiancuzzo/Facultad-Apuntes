@@ -4,6 +4,7 @@ tags:
   - colección/ejercicios/evaluacion
 numero: 14
 fecha: 2026-09-09
+descripción: Cuestionario 1
 ejercicios:
   - 692
   - 693
