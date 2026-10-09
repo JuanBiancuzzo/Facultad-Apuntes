@@ -6,14 +6,17 @@ const numeroEvaluaciones = archivo.evaluaciones;
 if (numeroEvaluaciones !== undefined) {
     const evaluaciones = dv.pages("#colección/ejercicios/evaluacion")
         .filter(evaluacion => numeroEvaluaciones.contains(evaluacion.numero))
-        .sort(evaluacion => evaluacion.fecha)
-        .map(evaluacion => {
-            const tipoEvaluacion = evaluacion["descripción"] ?? "Evaluacion";
+        .groupBy(evaluacion => evaluacion["descripción"])
+        .map(({ key: descripcion, rows }) => rows
+            .sort(evaluacion => evaluacion.fecha)
+            .map(evaluacion => {
+            const tipoEvaluacion = descripcion ?? "Evaluacion";
             return {
                 path: evaluacion.file.path,
                 nombre: `${tipoEvaluacion} del ${describirFecha(evaluacion.fecha)}`,
             };
-        })
+        }))
+        .flatMap(rows => rows)
         .map(({ path, nombre }) => crearReferencia(path, nombre));
     dv.list(evaluaciones);
 
