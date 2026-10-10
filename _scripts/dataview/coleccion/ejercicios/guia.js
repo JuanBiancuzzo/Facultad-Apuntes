@@ -24,9 +24,8 @@ Object.entries(ejercicios).map(([indice, numEjercicio]) => {
         .split("\n")
         .map(linea => `> ${linea}`)
         .join("\n");
-    console.log(enunciado);
 
-    dv.el("p", ` > [!${estadoCallout}]+ ${link}\n > ${enunciado}`);
+    dv.el("p", ` > [!${estadoCallout}]+ ${link}\n${enunciado}`);
 });
 
 function obtenerEnunciado(archivo) {
