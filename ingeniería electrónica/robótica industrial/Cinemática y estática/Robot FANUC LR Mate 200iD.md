@@ -20,8 +20,7 @@ vinculoFacultad:
 ---
 
 
-![[colección/ejercicios/img/Robot collaborative Z-ARM 2140C.png|500]]
-
+![[colección/ejercicios/img/Robot FANUC LR Mate 200iD.png|500]]
 
 ```tikz
 \usetikzlibrary{fit, matrix}
@@ -33,55 +32,50 @@ vinculoFacultad:
     table/.style={
 	    matrix of nodes,    
 	    text depth=0.5ex,
-        text height=2ex,
+        text height=1.2em,
         nodes in empty cells,
             
         nodes={ 
 	        align=center,
-	        text width=7em
+	        text width=8em
 	    },        
         row 1/.style={
             nodes={ fill=azul }
         },
-		column 4/.style={
-			nodes={ text width=20em }
+		column 3/.style={
+			nodes={ text width=22em }
 		},
     }
 }
 \begin{tikzpicture}
-	\tikzmath { \columnas = 4; \filas = 23; }
+	\tikzmath { \columnas = 3; \filas = 18; }
     \matrix (table) [table] {
-		& & & Datos \\
-		& & Arm length & $200$ mm \\
-		& & Rotaion angle & $\pm 90$ \\
-		& & Arm length & $200$ mm \\
-		& & Rotaion angle & $\pm 164$ \\
-		& Z-axis & Stroke & $210$ mm \\
-		& R-axixs & Rotaion angle & $\pm 180$ \\
-		& & & $1023.79$ mm/s ($2$kg payload) \\
-		& & & $\pm 0.03$ mm \\
-		& & & $2$ kg \\
-		& & & $3$ kg \\
-		& & & $4$ \\
-		& & & $200$ V/$110$ V $50$~$60$ Hz \\
-		& & & Wifi/Ethernet \\
-		& & & Provides 10 I/O \\
-		& & & $5$ \\
-		& & & $5$ \\
-		& & & $565$ mm \\
-		& & & $19$ kg \\
-		& & & $250$ mm $\cdot$ $250$ mm $\cdot$ $10$ mm \\
-		& & & $200$ mm $\cdot$ $200$ mm \\
-		& & & Yes \\
-		& & & Yes \\
+		& & Datos \\
+		& & $7$ \\
+		& & $717$ \\
+		& & $6$ \\
+		& & $\pm 0.01$ \\
+		& & $25$ \\
+		& J1 & $340$ ($360$) \\
+		& J2 & $245$ \\
+		& J3 & $420$ \\
+		& J4 & $380$ \\
+		& J5 & $250$ \\
+		& J6 & $720$ \\
+		& J1 & $450$ \\
+		& J2 & $380$ \\
+		& J3 & $520$ \\
+		& J4 & $550$ \\
+		& J5 & $545$ \\
+		& J6 & $1000$ \\
     };
-
-	\tikzmath { \fila = 1; \colInicio = 1; \colFinal = 3; }
+	
+	\tikzmath { \fila = 1; \colInicio = 1; \colFinal = 2; }
 	\filldraw[fill=azul] (table-\fila-\colInicio.north -| table-\fila-\colInicio.west)
 		rectangle (table-\fila-\colFinal.south -| table-\fila-\colFinal.east)
 			node[midway, align=center] {Parameter};
 
-	\foreach \columna/\filaInicio/\filaFinal in {2/6/7, 3/2/7, 4/1/\filas} {
+	\foreach \columna/\filaInicio/\filaFinal in {2/7/18, 3/1/\filas} {
 		\foreach \fila in {\filaInicio, ..., \filaFinal} {
 			\draw (table-\fila-\columna.north -| table-\fila-\columna.east)
 				rectangle (table-\fila-\columna.south -| table-\fila-\columna.west);
@@ -90,22 +84,11 @@ vinculoFacultad:
 	
 	% Misma fila, multiples columnas
 	\def\elementos{{ 
-		{1, 3,  8, "Linear velocity"},
-		{1, 3,  9, "Repeatability"},
-		{1, 3, 10, "Rated payload"},
-		{1, 3, 11, "Maximum payload"},
-		{1, 3, 12, "Degree of freedom"},
-		{1, 3, 13, "Power"},
-		{1, 3, 14, "Communication"},
-		{1, 3, 15, "Extensibility"},
-		{2, 3, 16, "Digital input (isolated)"},
-		{2, 3, 17, "Digital output (isolated)"},
-		{1, 3, 18, "Height"},
-		{1, 3, 19, "Weight"},
-		{2, 3, 20, "Overall size"},
-		{2, 3, 21, "Mounting hole spacing"},
-		{1, 3, 22, "Collision detection"},
-		{1, 3, 23, "Handhold teaching"}
+		{1, 2, 2, "Max. load capacity at writst $[$kg$]$"},
+		{1, 2, 3, "Reach $[$mm$]$"},
+		{1, 2, 4, "Controlled axes"},
+		{1, 2, 5, "Repeatability $[$mm$]$"},
+		{1, 2, 6, "Mechanical weight $[$kg$]$"}
 	}}
 	\tikzmath { \cantidad = dim(\elementos); }
 	\foreach \i [parse=true] in {0, ..., \cantidad - 1} {
@@ -120,11 +103,8 @@ vinculoFacultad:
 
 	% Misma columna, multiples filas
 	\def\elementos{{ 
-		{2, 7, 1, "Basic\\Information"},
-		{2, 3, 2, "J1-axis"},
-		{4, 5, 2, "J2-axis"},
-		{16, 17, 1, "I/O"},
-		{20, 21, 1, "Base\\installation\\parameters"}
+		{ 7, 12, 1, "Motion range"},
+		{13, 18, 1, "Maximum speed"}
 	}}
 	\tikzmath { \cantidad = dim(\elementos); }
 	\foreach \i [parse=true] in {0, ..., \cantidad - 1} {
@@ -141,4 +121,3 @@ vinculoFacultad:
 \end{document}
 ``` 
 ^parametros
-
