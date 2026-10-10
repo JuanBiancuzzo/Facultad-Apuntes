@@ -48,8 +48,6 @@ Considerar que el tiempo de aceleración es de $100 ~ \text{ms}$, y las especifi
     }
 }
 \begin{tikzpicture}
-    \tikzmath { \n = 5; \filas = (\n * (\n + 1)) / 2 + 1; }
-
     \matrix (table) [table] {
 		 & & & & & & & & & & & & & & & & \\
 		 & & & & & J1 & J2 & J3 & J4 & J5 & J6 & J1 & J2 & J3 & J4 & J5 & J6 \\

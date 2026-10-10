@@ -8,6 +8,8 @@ tags:
   - nota/facultad
 aliases:
   - Matriz Jacobiana
+  - Jacobiano
+  - Matriz Jacobiano
 vinculoFacultad:
   - tema: Funciones de varias variables
     capitulo: 4
