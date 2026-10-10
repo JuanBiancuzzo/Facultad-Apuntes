@@ -36,6 +36,7 @@ nombreCarrera: Ingeniería electrónica
 
 ## Resumen
 ---
+
  
 # Guías
 ---
