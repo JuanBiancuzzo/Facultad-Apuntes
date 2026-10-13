@@ -9,7 +9,14 @@ vinculoFacultad:
     capitulo: 2
     materia: Álgebra 2 A
     carrera: Ingeniería en informática
+etapa: empezado
+referencias: []
+aliases:
+  - Preimagen de una matriz
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 La preimagen es bastante parecida a la [[Imagen de una transformación lineal]], pero en la preimagen es el conjunto de vectores para los cuales existe una transformación lineal de ellos, lo que en funciones llamaríamos dominio de la función.

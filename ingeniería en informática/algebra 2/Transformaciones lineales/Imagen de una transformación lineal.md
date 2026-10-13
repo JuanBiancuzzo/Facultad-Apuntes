@@ -9,7 +9,14 @@ vinculoFacultad:
     capitulo: 2
     materia: Álgebra 2 A
     carrera: Ingeniería en informática
+etapa: empezado
+referencias: []
+aliases:
+  - Imagen de una matriz
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 Siendo $T: \mathbb{V} \to \mathbb{W}$ , la imagen de $T$ son todos los vectores de $\mathbb{W}$ que son resultado de la [[Transformación lineal|transformación lineal]]

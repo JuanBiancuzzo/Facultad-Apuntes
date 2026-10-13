@@ -9,10 +9,17 @@ vinculoFacultad:
     capitulo: 2
     materia: Álgebra 2 A
     carrera: Ingeniería en informática
+etapa: empezado
+referencias: []
+aliases:
+  - Núcleo de una matriz
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
-El núcleo de la transformada es el [[Conjunto]] de vectores que si se le aplica la [[Transformación lineal]] estos terminan siendo el $0_\mathbb{W}$
+El núcleo de la transformada es el [[ingeniería en informática/algebra 2/Espacios Vectoriales/Conjunto|conjunto]] de vectores que si se le aplica la [[ingeniería en informática/algebra 2/Transformaciones lineales/Transformación lineal|transformación lineal]] estos terminan siendo el $0_\mathbb{W}$
 
 ```tikz
 \begin{document} 
@@ -39,9 +46,8 @@ El núcleo de la transformada es el [[Conjunto]] de vectores que si se le aplica
 Entonces se puede expresar como 
 $$Nu(t) := \{v \in \mathbb{V} : T(v) = 0_\mathbb{W} \}$$
 
-Que se puede ver como un caso particular de la [[Preimagen de una transformación lineal]] donde el intervalo, o conjunto es el $0_\mathbb{W}$
+Que se puede ver como un caso particular de la [[Preimagen de una transformación lineal|preimagen de una transformación lineal]] donde el intervalo, o conjunto es el $0_\mathbb{W}$
 
 ## Relación con la matriz de la transformación lineal
 ---
-Con $\{[x_1]^{B_1}, [x_2]^{B_1}, \cdots, [x_r]^{B_1} \}$ es una base de $nul([T]_{B_1}^{B_2})$ si y solo si, $\{x_1, x_2, \cdots, x_r \}$ es una base de $Nu(T)$, entonces  
-$$dim(Nu(T)) = dim(nul([T]_{B_1}^{B_2}))$$
+Con $\{[x_1]^{B_1}, [x_2]^{B_1}, \cdots, [x_r]^{B_1} \}$ es una base de $nul([T]_{B_1}^{B_2})$ si y solo si, $\{x_1, x_2, \cdots, x_r \}$ es una base de $Nu(T)$, entonces  $$ \text{dim}(\text{Nu}(T)) = \text{dim}(\text{nul}([T]_{B_1}^{B_2}))$$
