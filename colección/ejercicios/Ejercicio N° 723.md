@@ -8,7 +8,7 @@ etapa: empezado
 ---
 # Enunciado
 ---
-Se desean realizar los siguientes [[Movimiento Joint|movimientos Joint]], en el [[Robot FANUC LR Mate 200iD|robot FANUC LR Mate 200iD]], tal que
+Se desean realizar los siguientes [[ingeniería electrónica/robótica industrial/Generación de trayectorias/Interpolación Joint|movimientos Joint]], en el [[Robot FANUC LR Mate 200iD|robot FANUC LR Mate 200iD]], tal que
 * Parte de reposo de la posición de ejes $q_0$
 * Luego va hacia $q_1$ en un tiempo deseado de $0.5 \cdot a$ , pasando sin detenerse
 * Por último va a $q_2$ a velocidad máxima, deteniéndose en el punto

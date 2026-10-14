@@ -9,7 +9,8 @@ nombreReducido: robótica industrial
 cuatri: 26C2
 plan: "2023"
 codigo: TA155
-referencias: []
+referencias:
+  - "1267"
 guias: 
   - 40
   - 42

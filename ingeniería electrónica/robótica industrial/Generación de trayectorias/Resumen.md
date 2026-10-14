@@ -4,7 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/robótica-industrial/Generación-de-trayectorias
 nombreResumen: Generación de trayectorias
 capitulo: 5
-referencias: []
+referencias:
+  - "1271"
 infoTemaMateria:
   materia: Robótica industrial
   carrera: Ingeniería electrónica

@@ -4,7 +4,9 @@ tags:
   - carrera/ingeniería-electrónica/robótica-industrial/Cinemática-y-estática
 nombreResumen: Cinemática y estática
 capitulo: 3
-referencias: []
+referencias:
+  - "1269"
+  - "1270"
 infoTemaMateria:
   materia: Robótica industrial
   carrera: Ingeniería electrónica

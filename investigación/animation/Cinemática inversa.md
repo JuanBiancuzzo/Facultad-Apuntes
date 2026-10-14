@@ -7,9 +7,9 @@ referencias:
 tags:
   - investigación/animation
   - investigación/juegos/game-engine/Animation-Engine
-  - carrera/ingeniería-electrónica/robótica-industrial/Cinemática-y-estática
   - nota/facultad
   - nota/investigacion
+  - carrera/ingeniería-electrónica/robótica-industrial/Cinemática-y-estática
 aliases:
   - Inverse kinematics
   - IK

@@ -11,6 +11,10 @@ vinculoFacultad:
     capitulo: 1
     materia: Robótica móvil
     carrera: Ingeniería electrónica
+  - tema: Sistema de referencias
+    capitulo: 2
+    materia: Robótica industrial
+    carrera: Ingeniería electrónica
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })

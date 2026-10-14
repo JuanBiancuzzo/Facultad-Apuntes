@@ -6,8 +6,8 @@ aliases:
   - Ángulo de Tait-Bryan
   - Ángulo de navegación
 tags:
-  - carrera/ingeniería-electrónica/robótica-industrial/Sistema-de-referencias
   - nota/facultad
+  - carrera/ingeniería-electrónica/robótica-industrial/Sistema-de-referencias
 vinculoFacultad:
   - tema: Sistema de referencias
     capitulo: 2

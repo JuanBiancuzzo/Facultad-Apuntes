@@ -3,18 +3,18 @@ dia: 2026-09-16
 etapa: empezado
 referencias:
   - "1206"
-aliases: 
+aliases:
   - Articulación simple#^articulacion-simple
   - Articulación de revolución#^articulacion-simple-revolucion
   - Articulación prismatica#^articulacion-simple-prismatica
   - Articulación compuesta#^articulacion-compuesta
   - Rótula fija#^rotula-fija
 tags:
-  - carrera/ingeniería-electrónica/robótica-industrial/Cinemática-y-estática
   - nota/facultad
   - referencia/diccionarioonline
   - colección/diccionario/palabra
   - nota/colección
+  - carrera/ingeniería-electrónica/robótica-industrial/Cinemática-y-estática
 ejercicios: []
 tipoCita: DiccionarioOnline
 numReferencia: 1205

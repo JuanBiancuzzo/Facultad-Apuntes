@@ -5,8 +5,8 @@ referencias: []
 aliases:
   - Quaternion
 tags:
-  - carrera/ingeniería-electrónica/robótica-industrial/Sistema-de-referencias
   - nota/facultad
+  - carrera/ingeniería-electrónica/robótica-industrial/Sistema-de-referencias
 ejercicios:
   - 623
   - 624

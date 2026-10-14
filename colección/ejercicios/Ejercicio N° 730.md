@@ -8,7 +8,7 @@ etapa: empezado
 ---
 # Enunciado
 ---
-Para el [[Robot MyCobot Pro-600|robot MyCobot Pro-600]], se desa realizar con este robot un [[Movimiento Joint|movimiento Joint]] según el siguiente recorrido para el segundo eje
+Para el [[Robot MyCobot Pro-600|robot MyCobot Pro-600]], se desa realizar con este robot un [[ingeniería electrónica/robótica industrial/Generación de trayectorias/Interpolación Joint|movimiento Joint]] según el siguiente recorrido para el segundo eje
 * Parte de reposo en $0\degree$
 * Se desea llegar a $120 \degree$ sin detenerse en un tiempo deseado $t_d = 1 ~ \text{s}$
 * Por último, regresa a $0 \degree$ a velocidad máxima, deteniéndose en el punto

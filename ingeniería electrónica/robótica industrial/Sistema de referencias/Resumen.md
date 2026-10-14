@@ -4,7 +4,8 @@ tags:
   - carrera/ingeniería-electrónica/robótica-industrial/Sistema-de-referencias
 nombreResumen: Sistema de referencias
 capitulo: 2
-referencias: []
+referencias:
+  - "1269"
 infoTemaMateria:
   materia: Robótica industrial
   carrera: Ingeniería electrónica

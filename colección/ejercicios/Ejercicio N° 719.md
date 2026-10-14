@@ -8,7 +8,7 @@ etapa: empezado
 ---
 # Enunciado
 ---
-Un [[Robot RPR|robot RPR]] como el que se muestra a continuación, parte de reposo en la posición $\theta_1 = \begin{bmatrix} 90 & 0 & -90 \end{bmatrix}^T$ con [[Movimiento Joint|movimiento Joint]] hacia $\theta_2 = \begin{bmatrix} 0 & l & 0 \end{bmatrix}^T$ y sin detenerse vuelve a $\theta_1$, donde termina en reposo
+Un [[Robot RPR|robot RPR]] como el que se muestra a continuación, parte de reposo en la posición $\theta_1 = \begin{bmatrix} 90 & 0 & -90 \end{bmatrix}^T$ con [[ingeniería electrónica/robótica industrial/Generación de trayectorias/Interpolación Joint|movimiento Joint]] hacia $\theta_2 = \begin{bmatrix} 0 & l & 0 \end{bmatrix}^T$ y sin detenerse vuelve a $\theta_1$, donde termina en reposo
 
 ![[colección/ejercicios/img/Robot RPR.png|500]]
 

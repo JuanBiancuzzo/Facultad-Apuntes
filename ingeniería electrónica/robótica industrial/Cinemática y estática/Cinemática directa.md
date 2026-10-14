@@ -9,8 +9,8 @@ aliases:
   - Forward Kinematics
   - FK
 tags:
-  - carrera/ingeniería-electrónica/robótica-industrial/Cinemática-y-estática
   - nota/facultad
+  - carrera/ingeniería-electrónica/robótica-industrial/Cinemática-y-estática
 ejercicios: []
 vinculoFacultad:
   - tema: Cinemática y estática

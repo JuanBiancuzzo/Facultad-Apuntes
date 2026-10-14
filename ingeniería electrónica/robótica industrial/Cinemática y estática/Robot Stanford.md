@@ -4,9 +4,9 @@ etapa: empezado
 referencias: []
 aliases: []
 tags:
-  - carrera/ingeniería-electrónica/robótica-industrial/Cinemática-y-estática
   - nota/facultad
-ejercicios: 
+  - carrera/ingeniería-electrónica/robótica-industrial/Cinemática-y-estática
+ejercicios:
   - 675
 vinculoFacultad:
   - tema: Cinemática y estática
