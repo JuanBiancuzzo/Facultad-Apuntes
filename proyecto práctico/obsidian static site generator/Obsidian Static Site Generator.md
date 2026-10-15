@@ -4,6 +4,7 @@ tags:
   - proyecto/práctico
   - proyecto-práctico/obsidian-static-site-generator
 estado: Archivado, no se va a seguir con este proyecto
+etapa: Archivado
 ---
 # Propuesta
 ---

@@ -12,7 +12,7 @@ Crear un sistema operativo, basado en al estructura de UNIX, el cual logre distr
 
 # Presentar
 ---
-![](https://juanbiancuzzo.github.io/8-bit-computer/)
+%% Podría ser una animación/presentación que muestre la completitud del proyecto %%
 
 
 # Notas
