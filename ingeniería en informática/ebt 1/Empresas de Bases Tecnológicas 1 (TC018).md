@@ -10,7 +10,8 @@ cuatri: 26C2
 plan: "2023"
 codigo: TC018
 referencias: []
-evaluaciones: []
+evaluaciones: 
+  - 23
 correlativas: []
 nombreCarrera: Ingeniería en informática
 ---

@@ -4,6 +4,8 @@ etapa: empezado
 referencias:
   - "1103"
 aliases: []
+ejercicios: 
+  - 750
 tags:
   - carrera/ingeniería-electrónica/legal/Derecho-societario
   - nota/facultad

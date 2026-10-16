@@ -18,7 +18,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Todo activo generalmente aceptado como medio de pago. Es un activo plenamente [[Liqudez|líquido]] que evita las inexactitudes del trueque 
+Todo activo generalmente aceptado como medio de pago. Es un activo plenamente [[ingeniería en informática/ebt 1/Economía/Liquidez|líquido]] que evita las inexactitudes del trueque 
 
 Se puede categorizar como
 * Mercancía, donde vale por lo que es
