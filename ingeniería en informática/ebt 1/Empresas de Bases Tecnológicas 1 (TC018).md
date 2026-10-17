@@ -12,6 +12,7 @@ codigo: TC018
 referencias: []
 evaluaciones: 
   - 23
+  - 24
 correlativas: []
 nombreCarrera: Ingeniería en informática
 ---
