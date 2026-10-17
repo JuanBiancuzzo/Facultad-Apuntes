@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 747
-etapa: empezado
+etapa: ampliar
 ---
 # Enunciado
 ---
@@ -26,3 +26,4 @@ El valor tiempo del dinero considera variables como
 
 # Resultado
 ---
+La respuesta correcta es el [[colección/ejercicios/Ejercicio N° 747#^parte-3|punto 3]] 

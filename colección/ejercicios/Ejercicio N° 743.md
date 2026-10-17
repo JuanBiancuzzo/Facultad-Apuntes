@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 743
-etapa: empezado
+etapa: ampliar
 ---
 # Enunciado
 ---
@@ -35,3 +35,4 @@ Los [[Estado contable|estados contables]] contienen
 
 # Resultado
 ---
+La respuesta correcta es el [[colección/ejercicios/Ejercicio N° 743#^parte-6|punto 6]] 

@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 739
-etapa: empezado
+etapa: ampliar
 ---
 # Enunciado
 ---
@@ -28,3 +28,4 @@ etapa: empezado
 
 # Resultado
 ---
+La respuesta correcta es el [[colección/ejercicios/Ejercicio N° 739#^parte-1|punto 1]] 

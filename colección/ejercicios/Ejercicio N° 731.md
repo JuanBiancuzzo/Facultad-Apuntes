@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 731
-etapa: empezado
+etapa: ampliar
 ---
 # Enunciado
 ---
@@ -26,3 +26,4 @@ Una [[ingeniería en informática/ebt 1/Empresas de Base Tecnológica/Empresa de
 
 # Resultado
 ---
+La respuesta correcta es el [[colección/ejercicios/Ejercicio N° 731#parte-3|punto 3]] 

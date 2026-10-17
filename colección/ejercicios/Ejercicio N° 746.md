@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 746
-etapa: empezado
+etapa: ampliar
 ---
 # Enunciado
 ---
@@ -86,3 +86,4 @@ Analice el siguiente extracto de un libro diario y responda
 
 # Resultado
 ---
+La respuesta correcta es el [[colección/ejercicios/Ejercicio N° 746#^parte-5|punto 5]] 
