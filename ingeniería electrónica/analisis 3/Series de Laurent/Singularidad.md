@@ -27,11 +27,11 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Una singularidad de una función $f : D \to \mathbb{C}$ [[Holomorfa|holomorfa]] en un [[Conjunto abierto|abierto]] $D \subset \mathbb{C}$ es un punto $z_0 \in \mathbb{C} - D$
+Una singularidad de una [[ingeniería en informática/analisis 2/Nomenclatura/Función|función]] $f : D \to \mathbb{C}$ [[Holomorfa|holomorfa]] en un [[Conjunto abierto|abierto]] $D \subset \mathbb{C}$ es un punto $z_0 \in \mathbb{C} - D$
 
 ## Robótica
 ---
-Se puede entiende las singularidades de un [[investigación/robótica/robótica industrial/Robótica industrial|robot]], como las variables [[ingeniería electrónica/robótica industrial/Cinemática y estática/Articulación|articulares]] $q$ donde para la misma [[ingeniería en informática/analisis 2/Nomenclatura/Sistema cartesiano|terna]] del [[End-effector|end-effector]], existen un [[ingeniería en informática/algebra 2/Espacios Vectoriales/Conjunto|conjunto]] no finito de combinaciones de variables articulares
+Se puede entiende las singularidades de un [[investigación/robótica/robótica industrial/Robótica industrial|robot]], como las variables [[ingeniería electrónica/robótica industrial/Cinemática y estática/Articulación|articulares]] $q$ donde para la misma [[ingeniería en informática/analisis 2/Nomenclatura/Sistema cartesiano|terna]] del [[End-effector|end-effector]], existen un [[ingeniería en informática/algebra 2/Espacios Vectoriales/Conjunto|conjunto]] no finito de combinaciones de variables articulares, por lo que la función que toma una terna a variables articulares tiene una singularidad para ese valor
 
 También se puede entender, que el [[ingeniería en informática/analisis 2/Funciones de varias variables/Jacobiana|Jacobiano]] $J$ de velocidades [[ingeniería en informática/analisis 2/Nomenclatura/Sistema cartesiano|cartesianas]] cuando tiene un [[ingeniería en informática/algebra 2/Transformaciones lineales/Núcleo de una transformación lineal|núcleo]] con [[ingeniería en informática/algebra 2/Espacios Vectoriales/Dimensión|dimensión]] mayor a $0$, que representa que existe una [[Velocidad|velocidad]] y/o [[Velocidad angular|velocidad angular]] de la terna del end-effector, a pesar de desarrollar velocidades en los ejes, permanece inmóvil
 

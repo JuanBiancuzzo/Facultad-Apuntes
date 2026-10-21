@@ -89,7 +89,7 @@ Dando finalmente, con un $t \in [-t_{acc},~ t_{acc})$, se tiene $$ \begin{align}
 Se tiene un tiempo de trayectoria $T$ pero para definir esto necesitamos considerar $3$ cosas
 1. El tiempo deseado por el usuario $t_d$
 2. El tiempo mínimo que necesita el algoritmo $2 t_{acc}$
-3. El tiempo necesario para cada articulación $i$, para transladarse $q_{1,~ i} - q_{0,~ i}$ a su velocidad máxima $\dot{q}_{i,~ \text{max}}$ dado como $$ t_\text{min} = \max_i \frac{q_{1,~ i} - q_{0,~ i}}{\dot{q}_{i,~ \text{max}}} $$
+3. El tiempo necesario para cada articulación $i$, para transladarse $q_{1,~ i} - q_{0,~ i}$ a su velocidad máxima $\dot{q}_{i,~ \text{max}}$ dado como $$ t_\text{min} = \max_i \frac{|q_{1,~ i} - q_{0,~ i}|}{\dot{q}_{i,~ \text{max}}} $$
 Por lo tanto se puede calcular la trayectoria como $$ T = \max\Set{ t_d,~ t_\text{min},~ 2 t_{acc} } $$
 
 ## Encadenamiento de movimientos

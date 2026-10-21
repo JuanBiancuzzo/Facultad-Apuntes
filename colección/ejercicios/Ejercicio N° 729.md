@@ -8,7 +8,7 @@ etapa: empezado
 ---
 # Enunciado
 ---
-Para el [[Robot MyCobot Pro-600|robot MyCobot Pro-600]], con datos en la tabla ![[ingeniería electrónica/robótica industrial/Cinemática y estática/Robot MyCobot Pro-600#^parametros]]
+Para el [[Robot MyCobot Pro-600|robot MyCobot Pro-600]]
 
 ![[colección/ejercicios/img/Robot MyCobot Pro-600.png|250]]
 
