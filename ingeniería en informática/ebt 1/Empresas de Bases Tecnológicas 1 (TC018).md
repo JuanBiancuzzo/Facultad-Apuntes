@@ -13,6 +13,7 @@ referencias: []
 evaluaciones: 
   - 23
   - 24
+  - 25
 correlativas: []
 nombreCarrera: Ingeniería en informática
 ---
