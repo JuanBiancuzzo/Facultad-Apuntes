@@ -4,6 +4,7 @@ etapa: empezado
 referencias: []
 aliases: 
   - Circuito macroeconomico abierto#Circuito abierto
+  - Cuenta corriente del pais#^cuenta-corriente-pais
 tags:
   - carrera/ingeniería-en-informática/ebt-1/Economía
   - nota/facultad
@@ -119,8 +120,8 @@ Donde aparecen las identidades del circuito
 * Sector externo $$ \Delta R = CKF + (X - M) + RF $$
 * Familias $$ YN_d = YN - T = SNP + C $$
 * Sector financiero $$ I + \Delta R = SNP + CKF + SG $$
-* Cuenta corriente del país $$ CC = RF + X - M $$
-	* Para $CC < 0$ es insostenible en el largo plazo, y en corto plazo, hay que financiarla tomando deuda ($CKF > 0$) y reducir las reservas ($Delta R < 0$)
+* Cuenta corriente del país $$ CC = RF + X - M $$ ^cuenta-corriente-pais
+	* Para $CC < 0$ es insostenible en el largo plazo, y en corto plazo, hay que financiarla tomando deuda ($CKF > 0$) y reducir las reservas ($\Delta R < 0$)
 	* Para $CC > 0$ signifca que el país está acumulando poder de compra externo
 
 Se toma la convensión que es positivo la entrada de [[Divisa|divisas]], por exportaciones, deuda nueva e inversión que entra, y negativo la salida, por importanciones, pago de deuda y giro de dividendos

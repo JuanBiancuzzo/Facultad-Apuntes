@@ -18,8 +18,7 @@ Demostrar las siguientes propiedades sobre la paridad las [[ingeniería electró
 
 # Resolución
 ---
-> [!ejercicio]
-> ![[colección/ejercicios/Ejercicio N° 231#^punto-1|1.]] 
+> [!ejercicio] ![[colección/ejercicios/Ejercicio N° 231#^punto-1]] 
 
 Si $x(t)$ es impar podemos decir que $x(t) = -x(-t)$ y que existe una función $y(t)$ tal que $$ x(t) = \frac{y(t) - y(-t)}{2} $$
 
@@ -40,8 +39,7 @@ Por lo tanto, reemplazando en la ecuación anterior $$ \begin{align*}
     &= \frac{1}{2} \left( \int_{-\infty}^{\infty} y(t) ~ dt - \int_{-\infty}^{\infty} y(z) ~ dz \right) = 0
 \end{align*} $$
 
-> [!ejercicio]
-> ![[colección/ejercicios/Ejercicio N° 231#^punto-2|2.]] 
+> [!ejercicio] ![[colección/ejercicios/Ejercicio N° 231#^punto-2]] 
 
 Si $x(t)$ es par podemos decir que $x(t) = x(-t)$, y usando esta propiedad, podemos hacer lo siguiente
 
@@ -58,8 +56,7 @@ Por lo tanto, reemplazando en la ecuación anterior $$ \begin{align*}
     &=  \int_{0}^{\infty} x(t) ~ dt + \int_{0}^{\infty} x(t) ~ dt = 2 ~ \int_{0}^{\infty} x(t) ~ dt 
 \end{align*} $$
 
-> [!ejercicio]
-> ![[colección/ejercicios/Ejercicio N° 231#^punto-3|3.]] 
+> [!ejercicio] ![[colección/ejercicios/Ejercicio N° 231#^punto-3]] 
 
 Calculemos el producto $x_1(t) ~ x_2(t)$, donde vamos a considerar que existen las funciones $y_1(t)$ e $y_2(t)$ donde $$ x_1(t) = \frac{y_1(t) + y_1(t)}{2}, ~~~ x_2(t) = \frac{y_2(t) - y_2(t)}{2} $$ respectivamente, por lo tanto $$ \begin{align*}
     x_1(t) ~ x_2(t) &= \left( \frac{y_1(t) + y_1(-t)}{2} \right) \left( \frac{y_2(t) - y_2(-t)}{2} \right) \\
@@ -71,8 +68,7 @@ De esta forma, podemos decir que existe una función $h(t) = y_1(t) ~ y_2(t)$ ta
 
 Demostrando que el producto de $x_1(t)$ con $x_2(t)$, siendo par e impar, resulta ser impar
 
-> [!ejercicio]
-> ![[colección/ejercicios/Ejercicio N° 231#^punto-4|4.]] 
+> [!ejercicio] ![[colección/ejercicios/Ejercicio N° 231#^punto-4]] 
  
 Calculemos el producto $x_1(t) ~ x_2(t)$, donde vamos a considerar que existen las funciones $y_1(t)$ e $y_2(t)$ donde $$ x_i(t) = \frac{y_i(t) + y_i(t)}{2}, ~~i = 1, 2 $$por lo tanto $$ \begin{align*}
     x_1(t) ~ x_2(t) &= \left( \frac{y_1(t) + y_1(-t)}{2} \right) \left( \frac{y_2(t) + y_2(-t)}{2} \right) \\
@@ -84,8 +80,7 @@ De esta forma, podemos decir que existe una función $h(t) = y_1(t) ~ y_2(t)$ ta
 
 Demostrando que el producto de $x_1(t)$ con $x_2(t)$, siendo ambas pares, resulta ser par
 
-> [!ejercicio]
-> ![[colección/ejercicios/Ejercicio N° 231#^punto-5|5.]] 
+> [!ejercicio] ![[colección/ejercicios/Ejercicio N° 231#^punto-5]] 
 
 Calculemos el producto $x_1(t) ~ x_2(t)$, donde vamos a considerar que existen las funciones $y_1(t)$ e $y_2(t)$ donde $$ x_i(t) = \frac{y_i(t) - y_i(t)}{2}, ~~i = 1, 2 $$por lo tanto $$ \begin{align*}
     x_1(t) ~ x_2(t) &= \left( \frac{y_1(t) - y_1(-t)}{2} \right) \left( \frac{y_2(t) - y_2(-t)}{2} \right) \\
