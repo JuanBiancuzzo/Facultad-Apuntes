@@ -7,7 +7,8 @@
       "demostracion",
       "corolario",
       "definicion",
-      "propiedad"
+      "propiedad",
+      "ejercicio"
     ],
     "settings": {
       "teorema": [
@@ -91,6 +92,27 @@
           "changes": {
             "icon": "lucide-codepen",
             "color": "238, 233, 180"
+          }
+        }
+      ],
+      "ejercicio": [
+        {
+          "changes": {
+            "icon": "lucide-list"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {}
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "168, 130, 255"
           }
         }
       ]
