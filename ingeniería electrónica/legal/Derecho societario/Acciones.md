@@ -6,6 +6,7 @@ referencias:
 aliases: []
 ejercicios: 
   - 750
+  - 757
 tags:
   - carrera/ingeniería-electrónica/legal/Derecho-societario
   - nota/facultad
@@ -21,6 +22,12 @@ vinculoFacultad:
 # Definición
 ---
 "Una acción en el mercado financiero es un título emitido por una [[ingeniería electrónica/legal/Derecho societario/Sociedad Anónima|Sociedad Anónima]] o [[ingeniería electrónica/legal/Derecho societario/Sociedad en comandita por acciones|Sociedad comandita por acciones]] que representa el valor de una de las fracciones iguales en que se divide su capital social" <sup>1103</sup>
+
+También son instrumentos de renta variable en los cuales la promesa de [[ingeniería en informática/ebt 1/Economía/Dinero|dinero]] que ofrecen varía en el tiempo y depende de la performance de la empresa y de cómo reparten los beneficios
+
+Las acciones está en el [[Pasivo|pasivo]] del [[Agente económico|ente]] que lo emite y en el [[Activo|activo]] de quién lo compra
+
+Además, las acciones otorgan a su titular la potestad de votar en la junta de [[ingeniería electrónica/legal/Derecho societario/Sociedad Anónima#De gobierno|accionistas]] como también participar de las decisiones [[investigación/storytelling/worldbuilding/Economía|económicas]] de la [[ingeniería en informática/ebt 1/Finanzas/Empresa|empresa]] y disfrutar de sus beneficios
 
 ## Clasificación 
 ---

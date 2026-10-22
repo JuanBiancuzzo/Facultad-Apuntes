@@ -7,6 +7,7 @@ aliases:
   - Sociedad anónima con participación estatal mayoritaria#Participación estatal mayoritaria
   - Sociedad Anónima Unipersonal#Sociedad Anónima Unipersonal
   - SAU#Sociedad Anónima Unipersonal
+  - Accionistas#De gobierno
 tags:
   - carrera/ingeniería-electrónica/legal/Derecho-societario
   - nota/facultad
