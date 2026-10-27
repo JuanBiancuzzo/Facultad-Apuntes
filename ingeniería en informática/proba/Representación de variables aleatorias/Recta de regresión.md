@@ -1,7 +1,7 @@
 ---
 dia: 2023-01-23
 tags:
-  - "#investigación/matemática/Estadística/Machine-learning"
+  - investigación/matemática/Estadística/Machine-learning
   - carrera/ingeniería-electrónica/proba/Representación-de-variables-aleatorias
   - carrera/ingeniería-en-informática/orga/Machine-learning
   - carrera/ingeniería-en-informática/proba/Representación-de-variables-aleatorias
