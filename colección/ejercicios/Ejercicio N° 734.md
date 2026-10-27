@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 734
-etapa: terminad
+etapa: terminado
 ---
 # Enunciado
 ---
