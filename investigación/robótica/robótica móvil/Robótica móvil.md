@@ -5,6 +5,8 @@ tags:
   - investigación/índice
   - investigación/robótica/robótica-móvil
   - nota/investigacion
+aliases: 
+  - Robot móvil
 ---
 ```dataviewjs
 await dv.view("_scripts/dataview/investigacion/superTema", { indice: dv.current() });

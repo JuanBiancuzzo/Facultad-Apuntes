@@ -27,7 +27,7 @@ Para describir el [[Cinemática|movimiento del robot]] en términos de movimient
 
 ![[ingeniería electrónica/robótica móvil/Locomoción/img/Terna robot diferencial.png|300]]
 
-Utilizando una [[ingeniería en informática/algebra 2/Transformaciones lineales/Rotación|matriz de rotación]] ${}^{R}R_{I} = R(\theta)$, se puede mapear las velocidades $\left( \dot{x},~ \dot{y},~ \dot{\theta} \right)$ en el marco de referencia global $\Set{ X_I,~ Y_I }$ a velocidades en términos del marco de referencia local $\Set{ X_R,~ Y_R }$ $$ \dot{R}_{\xi} = {}^R R_I ~ \dot{I}_{\xi} $$
+Utilizando una [[ingeniería en informática/algebra 2/Transformaciones lineales/Rotación|matriz de rotación]] $R_{I}^{R} = R(\theta)$, se puede mapear las velocidades $\left( \dot{x},~ \dot{y},~ \dot{\theta} \right)$ en el marco de referencia global $\Set{ X_I,~ Y_I }$ a velocidades en términos del marco de referencia local $\Set{ X_R,~ Y_R }$ $$ \dot{R}_{\xi} = R_I^R ~ \dot{I}_{\xi} $$
 ![[ingeniería electrónica/robótica móvil/Locomoción/img/Cinemática directa de robot diferencial.png|500]]
 
 El modelo de cinemática, se plantea en términos del marco de referencia local $I_{\xi}$ y está dado por $$ \dot{I}_{\xi} = \begin{bmatrix} \dot{x} \\ \dot{y} \\ \dot{\theta} \end{bmatrix} = f\left( l,~ r,~ \theta,~ \dot{\varphi}_1,~ \dot{\varphi}_2 \right) $$ donde

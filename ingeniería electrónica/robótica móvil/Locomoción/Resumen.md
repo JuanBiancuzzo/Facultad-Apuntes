@@ -23,6 +23,15 @@ La locomoción en [[investigación/robótica/Robótica|robótica]] se refiere al
 * [[Locomoción anfibia|Anfibia]]
 * [[Locomoción aérea|Aérea]]
 * [[Locomoción espacial|Espacial]]
+donde se da prioridad a los terrestres para esta materia
+
+Veremos entre ellos los siguientes robots
+* [[Robot diferencial|Diferencial]]
+* [[Robot skid-steer|Skid-steer]]
+* [[Robot triciclo|Triciclo]]
+* [[Robot Ackermann|Ackermann]]
+* [[Robot omni-wheel|Omni-wheel]]
+* [[Robot mecanum|Mecanum]]
 
 # Bibliografía
 ---
