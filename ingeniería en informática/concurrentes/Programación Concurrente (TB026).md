@@ -25,6 +25,8 @@ referencias:
 evaluaciones: 
   - 18
   - 19
+  - 26
+  - 27
 ---
 # Apuntes
 ---

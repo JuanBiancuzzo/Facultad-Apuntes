@@ -71,7 +71,7 @@ Veamos los objetivos que tiene un middleware
 * Abarcando
     * Availability
     * Reliability
-    * [[Seguridad (Safety)|Safety]]
+    * [[ingeniería en informática/sisop/Concurrencia/Concurrencia#^safety|Safety]]
     * Maintainability
 
 ### Acceso a recursos compartidos

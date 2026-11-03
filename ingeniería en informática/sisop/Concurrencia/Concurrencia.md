@@ -35,7 +35,9 @@ vinculoFacultad:
 aliases:
   - Programación concurrente
   - Modelo de concurrencia#Modelos
-  - Corrección de un programa asincrónico#Corrección
+  - Corrección de un programa concurrencia#Corrección
+  - Safety de un programa concurrencia#^safety
+  - Liveness de un programa concurrencia#^liveness
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
@@ -171,10 +173,10 @@ Al programar de forma concurrente, aparecen problemas que en un programa secuenc
 Mientras que en programas secuenciales es suficiene con debuggear para encontrar errores, ya que ante una misma entrada se obtiene siempre la misma salida. En programas concurrentes, la salida puede depender del escenario que resultó en la ejecución
 
 La corrección ó correctness de un programa concurrente tiene las propiedades de 
-* Safety, que implica que siempre es correcto el resultado
+* Safety, que implica que siempre es correcto el resultado ^safety
 	* Exclusión mutua, $2$ procesos no deben intercalar ciertas subcuencias de instruccióones
 	* Ausencia de [[ingeniería en informática/sisop/Concurrencia/Deadlock|deadlock]], un [[ingeniería electrónica/señales/Señales y sistemas/Sistema|sistema]] que aún no finalizo debe poder continuar realizando su tarea, es decir, avanzar productivamente
-* Liveness, que implica que se vuelve correcto el resultado
+* Liveness, que implica que se vuelve correcto el resultado ^liveness
 	* Ausencia de starvation, todo proceso que esté listo para utilizar un recurso debe recibir dicho recurso eventualmente
 	* Fairness, un escenario es (débilmente) fair, si en algún estado en el escenario, una instrucción que está continuamente habilitada, eventualmente aparece en el escenario
 
