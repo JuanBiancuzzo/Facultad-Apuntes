@@ -10,7 +10,7 @@ tags:
 ejercicios: []
 vinculoFacultad:
   - tema: Generación de trayectorias
-    capitulo: 5
+    capitulo: 4
     materia: Robótica industrial
     carrera: Ingeniería electrónica
 ---

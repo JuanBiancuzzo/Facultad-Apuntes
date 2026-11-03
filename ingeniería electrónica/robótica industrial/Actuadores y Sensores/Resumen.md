@@ -1,9 +1,9 @@
 ---
 tags:
   - facultad/resumen
-  - carrera/ingeniería-electrónica/robótica-industrial/Programación
-nombreResumen: Programación
-capitulo: 4
+  - carrera/ingeniería-electrónica/robótica-industrial/Actuadores-y-Sensores
+nombreResumen: Actuadores y Sensores
+capitulo: 6
 referencias: []
 infoTemaMateria:
   materia: Robótica industrial

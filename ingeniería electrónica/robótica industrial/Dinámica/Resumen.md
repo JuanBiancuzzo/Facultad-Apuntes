@@ -3,7 +3,7 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/robótica-industrial/Dinámica
 nombreResumen: Dinámica
-capitulo: 6
+capitulo: 5
 referencias: []
 infoTemaMateria:
   materia: Robótica industrial

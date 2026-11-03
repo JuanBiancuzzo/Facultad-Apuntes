@@ -3,7 +3,7 @@ tags:
   - facultad/resumen
   - carrera/ingeniería-electrónica/robótica-industrial/Generación-de-trayectorias
 nombreResumen: Generación de trayectorias
-capitulo: 5
+capitulo: 4
 referencias:
   - "1271"
 infoTemaMateria:
