@@ -21,12 +21,20 @@ Se pide
 
 # Resolución
 ---
-[[colección/ejercicios/Ejercicio N° 729#^parte-1|1.]] 
+> [!ejercicio] ![[colección/ejercicios/Ejercicio N° 729#^parte-1|1.]] 
 
-[[colección/ejercicios/Ejercicio N° 729#^parte-2|2.]] 
 
-[[colección/ejercicios/Ejercicio N° 729#^parte-3|3.]] 
 
-[[colección/ejercicios/Ejercicio N° 729#^parte-4|4.]] 
+> [!ejercicio] ![[colección/ejercicios/Ejercicio N° 729#^parte-2|2.]] 
 
-[[colección/ejercicios/Ejercicio N° 729#^parte-5|5.]] 
+
+
+> [!ejercicio] ![[colección/ejercicios/Ejercicio N° 729#^parte-3|3.]] 
+
+
+
+> [!ejercicio] ![[colección/ejercicios/Ejercicio N° 729#^parte-4|4.]] 
+
+
+
+> [!ejercicio] ![[colección/ejercicios/Ejercicio N° 729#^parte-5|5.]] 

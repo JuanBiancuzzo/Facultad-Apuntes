@@ -7,6 +7,7 @@ aliases:
   - Convensión Denavit-Hartemberg#Asignación de ternas
   - Parámetros de Denavit-Hartemberg#Asignación de ternas
   - Parámetros DH#Asignación de ternas
+  - Cinemática de velocidad#Velocidades
   - Destreza#^destreza
   - Ellipse de manipulabilidad#^manipulabilidad
 tags:
