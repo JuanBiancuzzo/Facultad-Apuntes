@@ -2,6 +2,7 @@
 tags:
   - facultad/resumen
   - carrera/ingeniería-en-informática/ebt-1/Contabilidad-y-costos
+  - carrera/ingeniería-electrónica/gestión-de-proyectos-electrónicos
 nombreResumen: Contabilidad y costos
 capitulo: 3
 referencias: []

@@ -2,6 +2,7 @@
 tags:
   - facultad/resumen
   - carrera/ingeniería-en-informática/ebt-1/Finanzas
+  - carrera/ingeniería-electrónica/gestión-de-proyectos-electrónicos
 nombreResumen: Finanzas
 capitulo: 4
 referencias: []

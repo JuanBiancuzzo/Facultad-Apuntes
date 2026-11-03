@@ -2,6 +2,7 @@
 tags:
   - facultad/resumen
   - carrera/ingeniería-en-informática/ebt-1/Economía
+  - carrera/ingeniería-electrónica/gestión-de-proyectos-electrónicos
 nombreResumen: Economía
 capitulo: 2
 referencias: []
