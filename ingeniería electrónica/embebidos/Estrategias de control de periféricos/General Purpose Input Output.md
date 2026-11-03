@@ -44,7 +44,7 @@ Veamos el diagrama de bloques, que también contiene esquemas que modelan un pin
 
 ![[GPIO en la placa STM32.png]]
 
-Podemos ver que el pin de entrada/salida, que tiene conectados circuitos robustos de [[Sensores#Protección|protección contra sobretensiones]]
+Podemos ver que el pin de entrada/salida, que tiene conectados circuitos robustos de [[ingeniería electrónica/embebidos/Estrategias de control de periféricos/Contact switch#Protección|protección contra sobretensiones]]
 
 El pin GPIO está protegido hasta un nivel de entrada aplicado de $5~V$ a pesar de que el suministro de voltaje principal de la [[Microcontrolador|MCU]] es de $3.3~V$ y los voltajes del [[Microprocesadores|procesador]] central son de $1.8~V$ 
 
