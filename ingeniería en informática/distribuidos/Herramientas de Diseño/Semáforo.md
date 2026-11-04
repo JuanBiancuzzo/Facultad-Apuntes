@@ -35,17 +35,6 @@ Para lograr el funcionamiento, este está compuesto por dos campos
 Tiene dos [[ingeniería en informática/sisop/Concurrencia/Operación atómica|operaciones atómicas]] que operan sobre un semáforo $S$
 * ```
 	signal(S) {
-		if (S.V > 0) {
-			S.V := S.V - 1;
-		} else {
-			S.L add p // Siendo p el proceso que lo llamó
-			p.state := blocked
-		}
-	}
-  ``` 
-  
-* ```
-	wait(S) {
 		if (S.L is empty) {
 			S.V := S.V + 1;
 		} else {
@@ -54,9 +43,22 @@ Tiene dos [[ingeniería en informática/sisop/Concurrencia/Operación atómica|o
 		}
 	}
   ``` 
+  
+* ```
+	wait(S) {
+		if (S.V > 0) {
+			S.V := S.V - 1;
+		} else {
+			S.L add p // Siendo p el proceso que lo llamó
+			p.state := blocked
+		}
+	}
+  ``` 
   En proceso `q` puede ser cualquier proceso bloqueado previamente, y no está definido cual debería ser, pero debería ser [[ingeniería en informática/sisop/Concurrencia/Concurrencia#Corrección|justo]]
 
 En el caso de que se llame a `signal` pero $S$ este en su valor máximo, el [[Proceso|proceso]] que lo llamo se queda [[Estados de un proceso#Blocked|bloqueado]] hasta que algún otro proceso use `wait` liberando ese recurso
+
+%% Hacer representación con red de petri %%
 
 ## En rust
 ---

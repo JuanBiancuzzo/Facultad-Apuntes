@@ -28,8 +28,10 @@ Esta tiene $3$ operaciones
 	void wait(&cond_var) {
 		cond_var.procesos.append(p); // Donde p es el proceso que lo llamó
 		p.state = blocked;
+		conv_var.monitor.releaseLock();
 	}
 ```
+	donde el [[ingeniería en informática/concurrentes/Semaphores y Barriers Condvars/Monitor|monitor]] utilizado, es para poder crear un [[ingeniería en informática/sisop/Concurrencia/Lock|lock]] de las variables utilizadas en la condición 
 
 * ```
 	void signal(&cond_var) {

@@ -38,4 +38,4 @@ Esta técnica permite el pasaje de [[Información|información]] directa entre $
     * Viven en el [[Sistema operativo|sistema operativo]] por lo cual excede la vida del proceso
     * Se pueden crear en [[ingeniería en informática/sisop/Kernel/Linux|Linux]] con el comando [[colección/programas/Comandos de linux/Mkfifo|mkfifo]]
 
-Ambos cumple el [[ingeniería en informática/concurrentes/Channels y Actors/Modelo de canales|modelo de canales]], por lo que se pueden utilizar con la misma lógica
+Ambos cumple el [[ingeniería en informática/concurrentes/Channels y Actors/Canal|modelo de canales]], por lo que se pueden utilizar con la misma lógica

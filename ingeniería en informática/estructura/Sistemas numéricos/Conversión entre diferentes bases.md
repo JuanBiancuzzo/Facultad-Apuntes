@@ -9,7 +9,13 @@ vinculoFacultad:
     capitulo: 1
     materia: Estructura del computador
     carrera: Ingeniería en informática
+etapa: empezado
+referencias: []
+aliases: []
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
 Hay 4 casos para esta conversión entre [[ingeniería en informática/estructura/Sistemas numéricos/Base numérica|base]]:

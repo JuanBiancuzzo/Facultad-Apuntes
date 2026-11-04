@@ -19,7 +19,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-El actor es la primitiva principal del [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]], encapsulando el comportamiento y el estado. A diferencia de un [[ingeniería en informática/sisop/Concurrencia/Thread|thread]], el actor es un elemento liviano para poder crear tantos como el problema requiera. Los actores son aislados de otros actores, por lo que no comparten [[ingeniería en informática/sisop/Virtualización de memoria/Memoria|memoria]], el estado privado solo puede cambiarse a partir de procesar [[ingeniería en informática/concurrentes/Channels y Actors/Modelo de canales|mensajes]] y pueden manejar un mensaje por vez ^actor
+El actor es la primitiva principal del [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelo]], encapsulando el comportamiento y el estado. A diferencia de un [[ingeniería en informática/sisop/Concurrencia/Thread|thread]], el actor es un elemento liviano para poder crear tantos como el problema requiera. Los actores son aislados de otros actores, por lo que no comparten [[ingeniería en informática/sisop/Virtualización de memoria/Memoria|memoria]], el estado privado solo puede cambiarse a partir de procesar [[ingeniería en informática/concurrentes/Channels y Actors/Canal|mensajes]] y pueden manejar un mensaje por vez ^actor
 
 Este modelo tiene muchas similitudes con el [[Paradigma Orientado a Objetos (POO) (OOP)|paradigma orientado a objetos]], ya que los actores actuan de objetos, y los métodos/mensajes que se intercambian, los objetos, son el concepto de mensajes que se intercambian los actores
 
@@ -40,4 +40,4 @@ El ciclo de vida de un actor está dado por
 
 ## En Rust
 ---
-En [[investigación/ciencias de la computación/lenguajes de programación/lenguaje Rust/Lenguaje Rust|Rust]], se puede utilizar el 
+En [[investigación/ciencias de la computación/lenguajes de programación/lenguaje Rust/Lenguaje Rust|Rust]], se puede utilizar el [[investigación/ciencias de la computación/lenguajes de programación/lenguaje Rust/actix/Índice|crate Actix]] donde dispone de toda la funcionalidad y mantiene el ciclo de vida de los actores

@@ -20,7 +20,7 @@ Este patrón de mensajería es similar al [[ingeniería en informática/algo 3/P
 
 ![[Patrón de mensajería producer-consumer.png]]
 
-Se utiliza los [[Socket|sockets]] `pus`/`pull` para marcar el rol de cada extremo
+Se utiliza los [[Socket|sockets]] `push`/`pull` para marcar el rol de cada extremo
 
 ## Para ZeroMQ
 ---

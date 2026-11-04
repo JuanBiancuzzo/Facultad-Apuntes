@@ -146,7 +146,7 @@ Este también es un desafío para un [[Sistema operativo|sistema operativo]], al
 ---
 * [[ingeniería en informática/sisop/Concurrencia/Estado mutable compartido|Estado mutable compartido]]
 * [[ingeniería en informática/concurrentes/Fork join/Fork-join|Paralelismo fork-join]]
-* [[ingeniería en informática/concurrentes/Channels y Actors/Modelo de canales|Canales/mensajes]]
+* [[ingeniería en informática/concurrentes/Channels y Actors/Canal|Canales/mensajes]]
 * [[investigación/ciencias de la computación/Programación asincrónica/Programación asincrónica|Programación asincrónica]]
 * [[ingeniería en informática/concurrentes/Channels y Actors/Modelo de Actores|Actores]]
 

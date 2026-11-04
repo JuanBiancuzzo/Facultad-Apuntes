@@ -20,34 +20,7 @@ vinculoFacultad:
 ```
 # Definición
 ---
-Se puede [[ingeniería en informática/ingenieria de software 1/Ingeniería de software/Modelo|modelar]] un canal con esta estructura
-
-```tikz
-\usetikzlibrary{math}
-\usetikzlibrary{calc}
-
-\begin{document} 
-\begin{tikzpicture}[scale=1.3, transform shape, thick]
-    \tikzmath { 
-        \ancho = 2.5; \alto = 1.5; \largo = 1.5;
-        \scale = 0.9; 
-    }
-    
-    \draw (0, 0) rectangle ++(\ancho, \alto)
-        node[midway, scale=\scale, align=center]{Canal};
-    
-    \begin{scope}[shorten <=0.5em, shorten >=0.5em]
-        \draw[<-] (0, {\alto / 2}) -- ++({-\largo}, 0)
-            node[pos=1.1, scale=\scale] {$X$};
-        \draw[->] (\ancho, {\alto / 2}) -- ++(\largo, 0)
-            node[pos=1.1, scale=\scale] {$Y$};
-    \end{scope}
-    
-\end{tikzpicture}
-\end{document}
-```
-
-Donde $X$ es la entrada al canal, e $Y$ es la salida del canal, que termina siendo una versión con [[ingeniería electrónica/seguridad/Protección auditiva/Ruido|ruido]] de $X$
+Se define un [[ingeniería en informática/concurrentes/Channels y Actors/Canal|canal]] modelado como ![[ingeniería en informática/concurrentes/Channels y Actors/Canal#^modelo]] donde la salida $Y$ es una versión con [[ingeniería electrónica/seguridad/Protección auditiva/Ruido|ruido]] de la entrada $X$
 
 Cada uno define un [[ingeniería en informática/discreta/Autómatas/Alfabeto|alfabeto]], donde no necesariamente el [[licenciatura en ciencias matemáticas/algebra 1/Números naturales e Inducción/Cardinalidad|cardinal (tamaño)]] de los alfabetos tiene que coincidir $$ \begin{align} 
     \mathcal{X} &= \Set{x_0,~ x_1,~ \cdots,~ x_{J - 1}} \\

@@ -6,7 +6,6 @@ tags:
 nombreResumen: Channels y Actors
 materiaResumen: ingeniería en informática/concurrentes/Programación Concurrente (TB026).md
 referencias:
-  - "1017"
   - "1226"
   - "1266"
 infoTemaMateria:
