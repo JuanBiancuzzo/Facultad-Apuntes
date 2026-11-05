@@ -19,6 +19,7 @@ nombreCarrera: Ingeniería electrónica
 evaluaciones: 
   - 29
   - 30
+  - 31
 guias: [] 
 ---
 # Apuntes
