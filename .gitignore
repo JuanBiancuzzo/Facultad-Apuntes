@@ -4,8 +4,9 @@
 .obsidian/appearance.json                     
 .obsidian/backlink.json                     
 
-.obsidian/plugins/git/data.json
-.obsidian/plugins/oz-clear-unused-images/data.json
+.obsidian/plugins
+# .obsidian/plugins/git/data.json
+# .obsidian/plugins/oz-clear-unused-images/data.json
 
 .trash
 temp/
