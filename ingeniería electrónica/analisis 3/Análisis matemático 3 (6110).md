@@ -16,11 +16,29 @@ nombreMateria: Análisis matemático 3
 nombreReducido: analisis 3
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
 nombreCarrera: Ingeniería electrónica
+evaluaciones: 
+  - 29
+guias: [] 
 ---
 # Apuntes
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
+```
+
+## Resumen
+---
+ 
+# Guías
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/contenido/guiasAcumuladas", { archivo: dv.current() });
+```
+
+# Evaluaciones
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/contenido/evaluacionesAcumuladas", { archivo: dv.current() });
 ```
 
 # Bibliografía
