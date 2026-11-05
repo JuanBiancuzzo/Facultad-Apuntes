@@ -18,6 +18,7 @@ pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
 nombreCarrera: Ingeniería electrónica
 evaluaciones: 
   - 29
+  - 30
 guias: [] 
 ---
 # Apuntes
