@@ -3,10 +3,11 @@
 .obsidian/workspace-mobile.json
 .obsidian/appearance.json                     
 .obsidian/backlink.json                     
+.obsidian/graph.json                     
+.obsidian/community-plugins.json                     
 
-.obsidian/plugins
-# .obsidian/plugins/git/data.json
-# .obsidian/plugins/oz-clear-unused-images/data.json
+.obsidian/plugins/git/data.json
+.obsidian/plugins/oz-clear-unused-images/data.json
 
 .trash
 temp/
